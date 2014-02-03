@@ -25,6 +25,9 @@
         <link rel="stylesheet" href="css/prettyPhoto.css">
         <!-- Sunshine specific style sheet -->
         <link rel="stylesheet" href="css/styles.css" />
+        <!-- Prism code highlighting -->
+        <link rel="stylesheet" href="css/prism.css" />
+
         <!-- STYLESHEETS END -->
 
         <!-- FONTS START 
@@ -43,7 +46,7 @@
                         <span class="fa fa-bars"></span>
                     </button>
                     <!-- LOGO COMES HERE -->
-                    <a class="navbar-brand scroll" href="#header"><span class="glyphicon glyphicon-repeat"></span> LoopBack</a>
+                    <a class="navbar-brand scroll" href="#header">LoopBack</a>
                 </div>
 
                 <!-- NAV ITEMS START -->
@@ -64,7 +67,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-xs-10 col-xs-offset-1 col-sm-5" id="intro">
-                            <h1><span class="glyphicon glyphicon-repeat"></span> <strong>LoopBack</strong> is here</h1>
+                            <h1><strong>LoopBack</strong> is here</h1>
                             <br>
                             <!-- TICKER START -->
                             <div class="ticker">
@@ -157,28 +160,26 @@
 <p>Assuming you have already installed Node...</p>
 
 <h3>Install</h3> 
-<pre>$ slc install -g strong-cli</pre>
+<pre class="language-bash"><code>$ npm install -g strong-cli</code></pre>
 
 <h3>Create app</h3>
 
-<pre>$ slc lb project my-app</pre>
+<pre class="language-bash"><code>$ slc lb project my-app</code></pre>
 
 <h3>Create models</h3>
-<pre>
-$ slc lb model bank
+<pre class="language-bash"><code>$ slc lb model bank
 $ slc lb model account
 $ slc lb model transaction
-</pre>
+</code></pre>
 
 <h3>Secure with access control</h3>
-<pre>
-$ slc lb acl --all-models --deny --everyone
+<pre class="language-bash"><code>$ slc lb acl --all-models --deny --everyone
 $ slc lb acl --allow --everyone --read --model bank
 $ slc lb acl --allow --everyone --call create --model user
 $ slc lb acl --allow --owner --all --model user
 $ slc lb acl --allow --owner --read --model account
 $ slc lb acl --allow --owner --write --model account
-</pre>
+</code></pre>
 
 <h3>Interact with data</h3>
 <ul>
@@ -205,101 +206,98 @@ $ slc lb acl --allow --owner --write --model account
                                 <li><a href="https://github.com/strongloop-community/loopback-mobile-getting-started">LoopBack Mobile Getting Started App</a> - Basic example app with both iOs and Android front-ends.</li>
                                 <li><a href="https://github.com/strongloop-community/loopback-mysql-example">MySQL example</a> - back-end only example illustraing connecting to MySQL database.</li>                                
                             </ul>
-<p>The following are from the Banking App</p>
+<p>The following are from the banking example app</p>
 
 <h3>Create backend app and models</h3>
-<pre>
-$ slc lb project my-bank-app
+<pre class="language-bash"><code>$ slc lb project my-bank-app
 $ cd my-bank-app
 $ slc lb model bank
 $ slc lb model account
 $ slc lb model transaction
-</pre>
+</code></pre>
+
 <h3>Create a secure REST API using command-line tools</h3>
-<pre>
-$ slc lb acl --all-models --deny --everyone
+<pre class="language-bash"><code>$ slc lb acl --all-models --deny --everyone
 $ slc lb acl --allow --everyone --read --model bank
 $ slc lb acl --allow --everyone --call create --model user
 $ slc lb acl --allow --owner --all --model user
 $ slc lb acl --allow --owner --read --model account
 $ slc lb acl --allow --owner --write --model account
-</pre>
+</code></pre>
 
 <h3>Easily persist data</h3>
-<pre>
-MyProduct = loopback.Model.extend('my-product');
+<pre class="language-javascript"><code>MyProduct = loopback.Model.extend('my-product');
 app.model(MyProduct);
 MyProduct.create({
-  name: 'Pencil',
-  price: 0.99
+    name: 'Pencil',
+    price: 0.99
 });
-</pre>
+</code></pre>
 
 <h3>Run ad-hoc queries</h3>
-<pre>
-MyProduct.find({
-  where: {price: {lt: 100}},
-  order: 'price ASC',
-  limit: 3
+<pre class="language-javascript"><code>MyProduct.find({
+    where: {price: {lt: 100}},
+    order: 'price ASC',
+    limit: 3
 }, function(err, products) {
   ...
 });
-</pre>
+</code></pre>
+
 <h3>Build data model with command-line tools</h3>
-<pre>
-var Model = require('loopback').Model;
+<pre class="language-javascript"><code>var Model = require('loopback').Model;
 var Product = Model.extend('product');
 var Inventory = Model.extend('customer');
+
 // Attach data sources
 var db = loopback.createDataSource({
-  connector: require('loopback-connector-mongodb')
+    connector: require('loopback-connector-mongodb')
 });
+
 // Enable the model to use the MongoDB API
 Product.attachTo(db);
+
 // Create a new product in the database
 Product.create({ name: 'widget', price: 99.99 },
-  function(err, widget) {
-    // The product's id, added by MongoDB
-    console.log(widget.id);
+    function(err, widget) {
+        console.log(widget.id);  // The product's id, added by MongoDB
 });
-</pre>
+</code></pre>
 
 <h3>Connect to Oracle database</h3>
-<pre>
-var loopback = require('loopback'); 
+<pre class="language-javascript"><code>var loopback = require('loopback'); 
 var ds = loopback.createDataSource('oracle', { 
-               "host": "demo.strongloop.com", 
-               "port": 1521, 
-               "database": "XE", 
-               "username": "demo", 
-               "password": "L00pBack" 
-           });	
-</pre>
+    "host": "demo.strongloop.com", 
+    "port": 1521, 
+    "database": "XE", 
+    "username": "demo", 
+    "password": "L00pBack" 
+});	
+</code></pre>
 
 <h3>Automatically discover and expose database tables through REST API</h3>
 
-<pre>
-var ds = require('../data-sources/db.js')('oracle');	
+<pre class="language-javascript"><code>var ds = require('../data-sources/db.js')('oracle');	
 	
 // Discover and build models from INVENTORY table	
 ds.discoverAndBuildModels('INVENTORY', 
-   {visited: {}, owner: 'LOOPBACK', associations: true}, 
-   function (err, models) {	
-       models.Inventory.findOne({}, function (err, inv) {
-       if (err) {	
-          console.error(err);	
-          return;	
-       }	
-    console.log("\nInventory: ", inv);	
-    inv.product(function (err, prod) {	
-       console.log(err);	
-       console.log("\nProduct: ", prod);	
-       console.log("\n ------------- ");	
-     });	
-   });
-</pre>
-
-                       
+    {visited: {}, owner: 'LOOPBACK', associations: true}, 
+    function (err, models) {	
+        models.Inventory.findOne({}, function (err, inv) {
+            if (err) {	
+                console.error(err);	
+                return;	
+            }	
+            console.log("\nInventory: ", inv);	
+            inv.product(function (err, prod) {	
+                console.log(err);	
+                console.log("\nProduct: ", prod);	
+                console.log("\n ------------- ");	
+            });	
+        });
+    }
+)
+</code></pre>
                         </div>
 
                 </div>
@@ -336,9 +334,10 @@ ds.discoverAndBuildModels('INVENTORY',
         <script src="js/jquery.parallax-1.1.3.js" type="text/javascript"></script>
         <!-- Mixitup Filters script -->
         <script src="js/jquery.mixitup.min.js" type="text/javascript"></script>
-
         <!-- Sunshine specific Scripts -->
         <script src="js/scripts.js" type="text/javascript"></script>
+        <!-- Prism code highlighting -->
+        <script src="js/prism.js" type="text/javascript"></script>        
         <!-- JAVASCRIPT END -->
     </body>
 </html>
