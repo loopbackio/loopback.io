@@ -1,10 +1,344 @@
-<!doctype html>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+        <meta name="description" content="LoopBack open-source mobile backend powered by Node.js">
+        <meta name="keywords" content="LoopBack mobile backend Node.js Node JavaScript REST API">
 
-<html lang="en">
-<head>
-    <title>LoopBack - Open-source Mobile Backend Powered by Node.js</title>
-</head>
-<body>
-    TBD
-</body>
+        <title>LoopBack</title>
+
+        <link href="favicon1.ico" rel="icon" type="image/x-icon" />
+
+        <!-- PRE-LOADER JAVASCRIPT START -->
+        <script src="js/pace.min.js" type="text/javascript"></script>
+        <!-- PRE-LOADER JAVASCRIPT END -->
+
+        <!-- STYLESHEETS START -->
+        <!-- Bootstrap style sheet -->
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <!-- Font Awesome style sheet -->
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <!-- Ion Icons style sheet -->
+        <link rel="stylesheet" href="css/ionicons.min.css">
+        <!-- Pretty photo style sheet -->
+        <link rel="stylesheet" href="css/prettyPhoto.css">
+        <!-- Sunshine specific style sheet -->
+        <link rel="stylesheet" href="css/styles.css" />
+        <!-- STYLESHEETS END -->
+
+        <!-- FONTS START 
+        <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet" type="text/css"> -->
+        <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono' rel='stylesheet' type='text/css'>
+        <!-- FONTS END -->
+    </head>
+    <body data-spy="scroll" data-target="#top-navigation">
+        <!-- PAGE START -->
+        <div id="page">
+            <!-- MAIN NAV START -->
+            <nav id="top-navigation" class="navbar navbar-default navbar-transparent navbar-fixed-top" role="navigation">
+                <div class="navbar-header">
+                    <button id="menu-mobile" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+                        <span class="fa fa-bars"></span>
+                    </button>
+                    <!-- LOGO COMES HERE -->
+                    <a class="navbar-brand scroll" href="#header"><span class="glyphicon glyphicon-repeat"></span> LoopBack</a>
+                </div>
+
+                <!-- NAV ITEMS START -->
+                <div class="collapse navbar-collapse" id="navbar-collapse-1"> 
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#header" class="scroll">Home</a></li>
+                        <li><a href="#about" class="scroll">About</a></li>
+                        <li><a href="#gs" class="scroll">Getting Started</a></li>
+                        <li><a href="#examples" class="scroll">Examples</a></li>                        
+                    </ul>
+                </div>
+                <!-- NAV ITEMS END -->
+            </nav>
+            <!-- MAIN NAV END -->
+            
+            <!-- HOME START -->
+            <header id="header">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-10 col-xs-offset-1 col-sm-5" id="intro">
+                            <h1><span class="glyphicon glyphicon-repeat"></span> <strong>LoopBack</strong> is here</h1>
+                            <br>
+                            <!-- TICKER START -->
+                            <div class="ticker">
+                                <h3>On-premises or in the cloud</h3>
+                                <h3>Dynamically save data from mobile clients</h3>
+                                <h3>Unlock enterprise data for mobile apps</h3>
+                                <h3>Create dynamic REST APIs</h3>
+                                <h3>Android and iOS SDKs</h3>
+                                <h3>Push and Geolocation services built in</h3>
+                            </div>
+                            <!-- TICKER END -->
+                            <p>Open-source mobile backend powered by Node.js</p>
+                            <br>
+                            <a href="#about" class="btn btn-transparent scroll"><strong>LEARN MORE</strong></a>
+                            <a href="#gs" class="btn btn-link btn-white scroll">Get LoopBack <i class="fa fa-angle-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- HOME END -->
+
+            <!-- ABOUT START -->
+            <section id="about">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <p class="fancy"><span>About LoopBack</span></p>
+                        </div>
+                    </div>
+                    <div class="article">
+                        <h3 class="item">Easily connect to backend data stores.</h3>
+                        <ul>
+                            <li>MySQL, Oracle, MongoDB, and others</li>
+                            <li>Discovery APIs for Oracle and MySQL</li>
+                        </ul>
+                        
+                        <h3 class="item">Use CLI to create backend app and models</h3>
+                        <ul>
+                            <li>Create models based on your schema (if you have one).</li>
+                            <li>If your data is schema-less, easily create dynamic models.</li>
+                        </ul>
+                        
+                        <h3 class="item">Create a secure REST API using command-line tools.</h3>
+                        <ul>
+                            <li>Built-in role-based access controls</li>
+                            <li>Easily add custom policies using CLI or JSON</li>
+                        </ul>
+                        
+                        <h3 class="item">Easily persist data to your data store.</h3>
+                        <ul>
+                            <li>Use direct API calls from Android, iOS, or Node</li>
+                        </ul>
+                        
+                        <h3 class="item">Run ad-hoc queries.</h3>
+                        <ul>
+                            <li>Enable users to create dynamic queries</li>
+                            <li>Filter results by geolocation</li>
+                            <li>Support for NoSQL-style queries against relational databases</li>                            
+                        </ul>                        
+                        
+                        <h3 class="item">Easily add push notifications</h3>
+                        <ul>
+                            <li>Simple Android and iOS push notification API calls and backend</li>
+                        </ul>                        
+                        
+                        <h3 class="item">Model relation support</h3>
+                        
+                        <h3 class="item">MIT open-source license </h3>
+                        
+                        <h3 class="item">More information</h3>
+                        <ul>
+                            <li><a href="http://docs.strongloop.com">Documentation</a></li>
+                            <li><a href="http://blog.strongloop.com">StrongLoop blog</a></li>
+                            <li><a href="http://strongloop.com/strongloop-suite/subscription-plans/">Professional support</a></li>
+                        </ul>                      
+                </div>
+
+            </section>
+            <!-- ABOUT END -->
+
+            <!-- GETTING STARTED START -->
+            <section id="gs">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <p class="fancy"><span>Getting Started</span></p>
+                        </div>
+                    </div>
+                    <div class="article">
+<p>Assuming you have already installed Node...</p>
+
+<h3>Install</h3> 
+<pre>$ slc install -g strong-cli</pre>
+
+<h3>Create app</h3>
+
+<pre>$ slc lb project my-app</pre>
+
+<h3>Create models</h3>
+<pre>
+$ slc lb model bank
+$ slc lb model account
+$ slc lb model transaction
+</pre>
+
+<h3>Secure with access control</h3>
+<pre>
+$ slc lb acl --all-models --deny --everyone
+$ slc lb acl --allow --everyone --read --model bank
+$ slc lb acl --allow --everyone --call create --model user
+$ slc lb acl --allow --owner --all --model user
+$ slc lb acl --allow --owner --read --model account
+$ slc lb acl --allow --owner --write --model account
+</pre>
+
+<h3>Interact with data</h3>
+<ul>
+    <li>iOS</li>
+    <li>Android</li>
+    <li>REST</li>
+    <li>Node</li>
+</ul>                 
+</div>
+            </section>
+            <!-- GETTING STARTED END -->
+
+            <!-- EXAMPLES START -->
+            <section id="examples">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <p class="fancy"><span>Examples</span></p>
+                        </div>
+                    </div>
+                        <div class="article">
+                            <ul>
+                                <li><a href="https://github.com/strongloop/loopback-example-access-control">Banking App</a> - Simple mobile illustrates how to impose access controls.  Front-end uses Angular, Cordova, and Ionic.</li>
+                                <li><a href="https://github.com/strongloop-community/loopback-mobile-getting-started">LoopBack Mobile Getting Started App</a> - Basic example app with both iOs and Android front-ends.</li>
+                                <li><a href="https://github.com/strongloop-community/loopback-mysql-example">MySQL example</a> - back-end only example illustraing connecting to MySQL database.</li>                                
+                            </ul>
+<p>The following are from the Banking App</p>
+
+<h3>Create backend app and models</h3>
+<pre>
+$ slc lb project my-bank-app
+$ cd my-bank-app
+$ slc lb model bank
+$ slc lb model account
+$ slc lb model transaction
+</pre>
+<h3>Create a secure REST API using command-line tools</h3>
+<pre>
+$ slc lb acl --all-models --deny --everyone
+$ slc lb acl --allow --everyone --read --model bank
+$ slc lb acl --allow --everyone --call create --model user
+$ slc lb acl --allow --owner --all --model user
+$ slc lb acl --allow --owner --read --model account
+$ slc lb acl --allow --owner --write --model account
+</pre>
+
+<h3>Easily persist data</h3>
+<pre>
+MyProduct = loopback.Model.extend('my-product');
+app.model(MyProduct);
+MyProduct.create({
+  name: 'Pencil',
+  price: 0.99
+});
+</pre>
+
+<h3>Run ad-hoc queries</h3>
+<pre>
+MyProduct.find({
+  where: {price: {lt: 100}},
+  order: 'price ASC',
+  limit: 3
+}, function(err, products) {
+  ...
+});
+</pre>
+<h3>Build data model with command-line tools</h3>
+<pre>
+var Model = require('loopback').Model;
+var Product = Model.extend('product');
+var Inventory = Model.extend('customer');
+// Attach data sources
+var db = loopback.createDataSource({
+  connector: require('loopback-connector-mongodb')
+});
+// Enable the model to use the MongoDB API
+Product.attachTo(db);
+// Create a new product in the database
+Product.create({ name: 'widget', price: 99.99 },
+  function(err, widget) {
+    // The product's id, added by MongoDB
+    console.log(widget.id);
+});
+</pre>
+
+<h3>Connect to Oracle database</h3>
+<pre>
+var loopback = require('loopback'); 
+var ds = loopback.createDataSource('oracle', { 
+               "host": "demo.strongloop.com", 
+               "port": 1521, 
+               "database": "XE", 
+               "username": "demo", 
+               "password": "L00pBack" 
+           });	
+</pre>
+
+<h3>Automatically discover and expose database tables through REST API</h3>
+
+<pre>
+var ds = require('../data-sources/db.js')('oracle');	
+	
+// Discover and build models from INVENTORY table	
+ds.discoverAndBuildModels('INVENTORY', 
+   {visited: {}, owner: 'LOOPBACK', associations: true}, 
+   function (err, models) {	
+       models.Inventory.findOne({}, function (err, inv) {
+       if (err) {	
+          console.error(err);	
+          return;	
+       }	
+    console.log("\nInventory: ", inv);	
+    inv.product(function (err, prod) {	
+       console.log(err);	
+       console.log("\nProduct: ", prod);	
+       console.log("\n ------------- ");	
+     });	
+   });
+</pre>
+
+                       
+                        </div>
+
+                </div>
+            </section>
+            <!-- EXAMPLES END -->
+
+            <!-- FOOTER START -->
+            <footer id="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="github-btns">
+                            <iframe src="http://ghbtns.com/github-btn.html?user=strongloop&repo=loopback&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
+                            <iframe src="http://ghbtns.com/github-btn.html?user=strongloop&repo=loopback&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="95" height="20"></iframe>
+                            <iframe src="http://ghbtns.com/github-btn.html?user=strongloop&repo=loopback&type=follow" allowtransparency="true" frameborder="0" scrolling="0" width="165" height="20"></iframe>
+                        </div>
+                        <div class="col-xs-12">
+                            <p class="text-muted">&copy; Copyright 2014 StrongLoop, Inc.</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- FOOTER END -->
+        </div>
+        <!-- PAGE END -->
+
+        <!-- JAVASCRIPT START -->
+        <!-- jQuery script -->
+        <script src="js/jquery-1.10.2.min.js" type="text/javascript"></script>
+        <!-- Bootstrap script -->
+        <script src="js/bootstrap.min.js" type="text/javascript"></script>
+        <!-- Pretty photo script -->
+        <script src="js/jquery.prettyPhoto.js" type="text/javascript"></script>
+        <!-- Parallax script -->
+        <script src="js/jquery.parallax-1.1.3.js" type="text/javascript"></script>
+        <!-- Mixitup Filters script -->
+        <script src="js/jquery.mixitup.min.js" type="text/javascript"></script>
+
+        <!-- Sunshine specific Scripts -->
+        <script src="js/scripts.js" type="text/javascript"></script>
+        <!-- JAVASCRIPT END -->
+    </body>
 </html>
