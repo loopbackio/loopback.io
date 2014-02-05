@@ -32,14 +32,14 @@ p {
 }
 
 a, a:focus {
-    color: #00C1D5;
+    color: #7DBD33; /* #00C1D5;*/
     cursor: pointer;
 }
 
 a:active {color: #D4470F;}
 
 a:hover {
-    color: #ff9632;
+    color: #08592B; /*  #ff9632; */
 }
 
 /* STRONGLOOP */
@@ -143,6 +143,7 @@ pre {
     line-height: 0;
     text-align: center;
     margin-bottom: 35px;
+    color: #08592B;
 }
 .fancy span {
     display: inline-block;
@@ -196,7 +197,7 @@ pre {
 }
 
 .btn-white:hover {
-    color: #eee;
+    color: #FF7F41;
     text-decoration: none;
 }
 
@@ -237,7 +238,7 @@ pre {
     position: absolute;
     top: 25%;
     padding-bottom: 20px;
-    background-color: rgba(128, 128, 128, 0.75); /* rgba(160, 140, 120, 0.85);*/
+    background-color: rgba(8, 89, 43, 0.85); /* rgba(128, 128, 128, 0.75);  rgba(160, 140, 120, 0.85);*/
     color: #fff;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
@@ -273,11 +274,14 @@ pre {
 }
 
 /* START: SECTIONS*/
+
+.article {margin-left: 10px;}
+
 #examples .article h3, #gs .article h3, #about .article h3 {
     margin-top: 30px;
     margin-bottom: 15px;
     font-weight: 700;
-    font-size: 32px;
+    font-size: 30px;
 }
 
 #examples .article p, #gs .article p, #about .article p {
@@ -348,8 +352,10 @@ pre {font-size: 16px;}
 
 /* STRONGLOOP */
 .github-btns {
-    font-size: 20px;
-    margin: 10px;
+    padding-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 
 /* END: FOOTER SECTION*/
