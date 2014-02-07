@@ -262,8 +262,23 @@ pre {
     -o-transition:      margin-top 0.5s ease-in-out;
     transition:         margin-top 0.5s ease-in-out;
 }
+
 /* END: HOME SECTION*/
 
+/* LoopBack Diagram */
+#lb-graphic {
+    float: left;
+    margin: 0;
+    height: 373px;
+    width: 240px;
+}
+
+/* screenshots */
+.screenshot {
+    border: 1px solid black;
+    padding: 0;
+    margin: 10px;
+}
 
 /* SECTIONS */
 #about .container, #work .container, #team .container, #contact .container, #examples .container, #gs .container {
@@ -277,17 +292,37 @@ pre {
 
 .article {margin-left: 10px;}
 
-#examples .article h3, #gs .article h3, #about .article h3 {
-    margin-top: 30px;
+.category {
+    border: 1px dotted black;
+    padding: 20px;
+    margin: 10px;
+    background-color: rgba(125, 189, 51, 0.3);
+    border-radius: 7px;
+}
+
+#juggler { float: right;}
+
+.category ul {
+    margin-bottom: 20px;
+}
+
+.article h3 {
+    font-size: 24px;
+    margin-top: 20px;
     margin-bottom: 15px;
     font-weight: 700;
+}
+
+.article h2 {
     font-size: 30px;
+    font-weight: 900;
+    text-align: center;
 }
 
 #examples .article p, #gs .article p, #about .article p {
-    margin-bottom: 20px;
+    margin-bottom: 16px;
     text-align: left;
-    font-size: 22px;    
+    font-size: 16px;    
 }
 
 h3 .item {
@@ -295,8 +330,19 @@ h3 .item {
 }
 #examples .article li, #gs .article li, #about .article li {
     text-align: left;
-    font-size: 22px;
+    font-size: 16px;
     margin-bottom: 10px;
+}
+
+.gradient-box {
+    height: 100px;
+    border: 1px solid black;
+    color: white;
+    text-align: center;
+    background: -webkit-linear-gradient(#08592B, #7DBD33); 
+    background: -o-linear-gradient(#08592B, #7DBD33); 
+    background: -moz-linear-gradient(#08592B, #7DBD33); 
+    background: linear-gradient(#08592B, #7DBD33); 
 }
 
 pre {font-size: 16px;}

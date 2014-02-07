@@ -92,10 +92,10 @@
                                     allowtransparency="true" frameborder="0" scrolling="0" width="165" height="20"></iframe>
                             </div>                                   
                         </div>
-
-                    </div>             
-                </div>                    
+                    </div>
+                </div>
             </header>
+
             <!-- HOME END -->
 
             <!-- ABOUT START -->
@@ -107,43 +107,67 @@
                         </div>
                     </div>
                     <div class="article">
-                        <h3 class="item">Connect your Node app to backend data stores</h3>
-                        <ul>
-                            <li>MySQL, Oracle, MongoDB, and others</li>
-                            <li>Easily persist data with API calls directly from Android, iOS, and Node</li>
-                            <li>Discovery APIs for Oracle and MySQL</li>                            
-                        </ul>
+                        <img src="images/LoopBackGraphic.png" id="lb-graphic">
+                        <h2>Juggler</h2>                       
+                        <div class="category" id="juggler">
+                            <h3 class="item">Connect your Node app to backend data stores</h3>
+                            <ul>
+                                <li>MySQL, Oracle, MongoDB, and others</li>
+                                <li>Connect to other REST services</li>
+                                <li>Easily persist data with API calls directly from Android, iOS, and Node</li>
+                                <li>Discovery APIs for Oracle and MySQL</li>                            
+                            </ul>
+                            <h3 class="item">Run ad-hoc queries.</h3>
+                            <ul>
+                                <li>Enable users to create dynamic queries</li>
+                                <li>Filter results by geolocation</li>
+                                <li>Support for NoSQL-style queries against relational databases</li>                            
+                            </ul>                                    
+                        </div>
+                        <br clear="all"/>
+                        <h2>Core</h2> 
+                        <div class="category">
+                            <h3 class="item">Set up models and create REST APIs in minutes</h3>
+                            <ul>
+                                <li>Easy-to-use CLI wizard</li>
+                                <li>Create models based on your schema if you have one</li>
+                                <li>Create dynamic models if you don't</li>
+                                <li>Built-in API Explorer</li>
+                            </ul>
+                            
+                            <h3 class="item">Model relation support</h3>
+                            <ul>
+                                <li>Define hasMany, belongsTo, hasAndBelongsToMany relationships</li>
+                                <li>Automatically generates corresponding REST endpoints</li>
+                            </ul>
+                            
+                            <h3 class="item">Easy authentication and authorization setup</h3>
+                            <ul>
+                                <li>Built-in role-based access controls</li>
+                                <li>oAuth user and registration models baked in</li>
+                                <li>Easily add custom policies using CLI or JSON</li>
+                                <li>Browser support (JSONP and CORS)</li>
+                            </ul>
+                            <h3 class="item">MIT open-source license </h3>                            
+                        </div>
                         
-                        <h3 class="item">CLI wizard sets up models and creates REST APIs in minutes</h3>
-                        <ul>
-                            <li>Create models based on your schema if you have one</li>
-                            <li>If your data is schema-less, easily create dynamic models</li>
-                            <li>Built-in API Explorer</li>
-                        </ul>
-
-                        <h3 class="item">Easy authentication and authorization setup</h3>
-                        <ul>
-                            <li>Built-in role-based access controls</li>
-                            <li>oAuth user and registration models baked in</li>
-                            <li>Easily add custom policies using CLI or JSON</li>
-                            <li>Browser support (JSONP and CORS)</li>
-                        </ul>                        
+                        <h2>Mobile services</h2>    
+                        <div class="category">
+                            
+                            <h3 class="item">Easily add push notifications</h3>
+                            <ul>
+                                <li>Backend push system with simple API calls</li>
+                                <li>Supports both Android and iOS</li>
+                            </ul> 
+                        </div>
                         
-                        <h3 class="item">Run ad-hoc queries.</h3>
-                        <ul>
-                            <li>Enable users to create dynamic queries</li>
-                            <li>Filter results by geolocation</li>
-                            <li>Support for NoSQL-style queries against relational databases</li>                            
-                        </ul>                        
-                        
-                        <h3 class="item">Easily add push notifications</h3>
-                        <ul>
-                            <li>Simple Android and iOS push notification API calls and backend</li>
-                        </ul>                        
-                        
-                        <h3 class="item">Model relation support</h3>
-                        
-                        <h3 class="item">MIT open-source license </h3>
+                        <h2>Client SDKs</h2>
+                        <div class="category">
+                            <ul><li>Android, iOS</li>
+                                <li>JavaScript web client coming soon</li>
+                            </ul>
+                            
+                        </div>
                         
                         <h3 class="item">More information</h3>
                         <ul>
@@ -165,37 +189,58 @@
                         </div>
                     </div>
                     <div class="article">
+
+                    <p>Create a "Hello World" LoopBack application.</p>
+<h3>Install</h3>
 <p>Assuming you have already installed Node...</p>
 
-<h3>Install</h3> 
 <pre class="language-bash"><code>$ npm install -g strong-cli</code></pre>
+<p>This installs the StrongLoop command-line tool that you use to create LoopBack applications.</p>
 
 <h3>Create app</h3>
 
-<pre class="language-bash"><code>$ slc lb project my-app</code></pre>
+<pre class="language-bash"><code>$ slc lb project hello-world</code></pre>
 
 <h3>Create models</h3>
-<pre class="language-bash"><code>$ slc lb model bank
-$ slc lb model account
-$ slc lb model transaction
+<pre class="language-bash"><code>$ cd helloworld
+$ slc lb model person -i
+</code></pre>
+The CLI wizard guides you through creating your model.
+
+<pre class="language-bash"><code>This tool will walk you through creating a model configuration.
+...
+Plural Name (people):
 </code></pre>
 
-<h3>Secure with access control</h3>
-<pre class="language-bash"><code>$ slc lb acl --all-models --deny --everyone
-$ slc lb acl --allow --everyone --read --model bank
-$ slc lb acl --allow --everyone --call create --model user
-$ slc lb acl --allow --owner --all --model user
-$ slc lb acl --allow --owner --read --model account
-$ slc lb acl --allow --owner --write --model account
+Press RETURN.
+
+<pre class="language-bash"><code>Property Names:
 </code></pre>
 
-<h3>Interact with data</h3>
-<ul>
-    <li>iOS</li>
-    <li>Android</li>
-    <li>REST</li>
-    <li>Node</li>
-</ul>                 
+Enter:
+<pre class="language-bash"><code>$ first last 
+</code></pre>
+Press RETURN twice to accept the default String data type for each property.
+
+<pre class="language-bash"><code>Done defining model person (people).
+
+  - first (string)
+  - last (string)
+
+Create this model? (yes):
+</code></pre>
+Press RETURN a last time to create the model.
+
+<h3>Run the application</h3>
+
+<pre class="language-bash"><code>$ sl-run 
+</code></pre>
+
+<h3>Explore your REST APIs</h3>
+Load <a href="http://0.0.0.0:3000/explorer">http://0.0.0.0:3000/explorer</a>.
+
+<img src="images/helloworld-api-explorer.png" class="screenshot" width="798" height="611">
+
 </div>
             </section>
             <!-- GETTING STARTED END -->
@@ -305,6 +350,23 @@ ds.discoverAndBuildModels('INVENTORY',
         });
     }
 )
+</code></pre>
+<h3>Define model relations</h3>
+<pre class="language-javascript"><code>
+app.model('artist', {
+    options: { 
+        relations: {
+            albums: {
+                type: "hasMany",
+                model: "album"
+            }
+        }
+    }
+})
+
+artist.findOne({name: "The Beatles", function(err, beatles) {
+    beatles.albums(console.log);
+})
 </code></pre>
                         </div>
 
