@@ -263,6 +263,13 @@ pre {
     transition:         margin-top 0.5s ease-in-out;
 }
 
+#sponsored-by {
+    float: right;
+    top: 0;
+    padding-right: 20px;
+    font-size: 12px;
+}
+
 /* END: HOME SECTION*/
 
 /* LoopBack Diagram */
