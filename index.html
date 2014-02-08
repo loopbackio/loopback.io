@@ -45,7 +45,7 @@
                         <span class="fa fa-bars"></span>
                     </button>
                     <!-- LOGO COMES HERE -->
-                    <a class="navbar-brand scroll" href="#header">LoopBack</a>
+                    <a class="navbar-brand scroll" href="#header"><img src="images/sl_icon_loopback.jpg" id="header-img"> LoopBack</a>
                 </div>
 
                 <!-- NAV ITEMS START -->
@@ -107,9 +107,48 @@
                         </div>
                     </div>
                     <div class="article">
-                        <img src="images/LoopBackGraphic.png" id="lb-graphic">
-                        <h2>Juggler</h2>                       
-                        <div class="category" id="juggler">
+                        
+                        <h2>Core</h2>
+                        <img src="images/LoopBackGraphic.png" id="lb-img">                        
+                        <div class="category right">
+                            <h3 class="item">Set up models and create REST APIs in minutes</h3>
+                            <ul>
+                                <li>Easy-to-use CLI wizard</li>
+                                <li>Create models based on your schema if you have one</li>
+                                <li>Create dynamic models if you don't</li>
+                                <li>Built-in API Explorer</li>
+                            </ul>
+                            
+                            <h3 class="item">Easy authentication and authorization setup</h3>
+                            <ul>
+                                <li>Built-in role-based access controls</li>
+                                <li>oAuth user and registration models baked in</li>
+                                <li>Add custom policies using CLI or JSON</li>
+                                <li>Browser support (JSONP and CORS)</li>
+                            </ul>
+                           <h3 class="item">Model relation support</h3>
+                            <ul>
+                                <li>Define hasMany, belongsTo, hasAndBelongsToMany relationships</li>
+                                <li>Automatically generates corresponding REST endpoints</li>
+                            </ul>
+                                                        
+                            <h3 class="item">MIT open-source license </h3>                            
+                        </div>
+                        <br clear="all"/>
+                        
+                        <h2>Client SDKs</h2>
+                        <img src="images/sdks.png" id="sdks-img">                                                
+                        <div class="category left">
+                            <ul><li>Android, iOS</li>
+                                <li>JavaScript web client coming soon</li>
+                            </ul>
+                        </div>
+                        <br clear="all"/>
+                        
+                        <h2>Juggler</h2>
+                        <img src="http://strongloop.com/wp-content/uploads/2014/01/Places-server-database-icon.png" id="db-img">
+                        
+                        <div class="category right">
                             <h3 class="item">Connect your Node app to backend data stores</h3>
                             <ul>
                                 <li>MySQL, Oracle, MongoDB, and others</li>
@@ -125,51 +164,25 @@
                             </ul>                                    
                         </div>
                         <br clear="all"/>
-                        <h2>Core</h2> 
-                        <div class="category">
-                            <h3 class="item">Set up models and create REST APIs in minutes</h3>
-                            <ul>
-                                <li>Easy-to-use CLI wizard</li>
-                                <li>Create models based on your schema if you have one</li>
-                                <li>Create dynamic models if you don't</li>
-                                <li>Built-in API Explorer</li>
-                            </ul>
-                            
-                            <h3 class="item">Model relation support</h3>
-                            <ul>
-                                <li>Define hasMany, belongsTo, hasAndBelongsToMany relationships</li>
-                                <li>Automatically generates corresponding REST endpoints</li>
-                            </ul>
-                            
-                            <h3 class="item">Easy authentication and authorization setup</h3>
-                            <ul>
-                                <li>Built-in role-based access controls</li>
-                                <li>oAuth user and registration models baked in</li>
-                                <li>Easily add custom policies using CLI or JSON</li>
-                                <li>Browser support (JSONP and CORS)</li>
-                            </ul>
-                            <h3 class="item">MIT open-source license </h3>                            
-                        </div>
                         
                         <h2>Mobile services</h2>    
-                        <div class="category">
-                            
+                        <img src="http://strongloop.com/wp-content/uploads/2014/01/push-notification.png" id="services-img">
+                        <div class="category left">
                             <h3 class="item">Easily add push notifications</h3>
                             <ul>
                                 <li>Backend push system with simple API calls</li>
                                 <li>Supports both Android and iOS</li>
-                            </ul> 
-                        </div>
-                        
-                        <h2>Client SDKs</h2>
-                        <div class="category">
-                            <ul><li>Android, iOS</li>
-                                <li>JavaScript web client coming soon</li>
                             </ul>
                             
+                            <h3 class="item">Geolocation</h3>
+                            <ul>
+                                <li>Provide location information for the device, such as latitude and longitude</li>  
+                            </ul>
+
                         </div>
+                        <br clear="all"/>
                         
-                        <h3 class="item">More information</h3>
+                        <h2 class="item">More information</h2>
                         <ul>
                             <li><a href="http://docs.strongloop.com">Documentation</a></li>
                             <li><a href="http://blog.strongloop.com">StrongLoop blog</a></li>
@@ -233,7 +246,7 @@ Press RETURN a last time to create the model.
 
 <h3>Run the application</h3>
 
-<pre class="language-bash"><code>$ sl-run 
+<pre class="language-bash"><code>$ node . 
 </code></pre>
 
 <h3>Explore your REST APIs</h3>
