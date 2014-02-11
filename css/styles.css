@@ -266,7 +266,7 @@ pre {
 #sponsored-by {
     float: right;
     top: 0;
-    padding-right: 20px;
+    padding: 0 20px 0 0;
     font-size: 12px;
 }
 
@@ -283,8 +283,8 @@ pre {
 #services-img {
     float: right;
     margin: 0;
-    height: 304px;
-    width: 282px;
+    height: 258px;
+    width: 229px;
 }
 
 #header-img {
@@ -296,17 +296,15 @@ pre {
 
 #sdks-img {
     float: right;
-    height: 120px;
-    width: 125px;
-    margin: 0;
+    height: 180px;
+    width: 185px;
+    margin: 10px 0 0 0;
     padding: 0;
 }
 
 #db-img {
     float: left;
-    height: 205px;
-    width: 205px;
-    margin: 0;
+    margin: 10px 0 0 0;
     padding: 0;
 }
 
@@ -357,7 +355,7 @@ pre {
     text-align: center;
 }
 
-#examples .article p, #gs .article p, #about .article p {
+.article p {
     margin-bottom: 16px;
     text-align: left;
     font-size: 16px;    
@@ -366,7 +364,8 @@ pre {
 h3 .item {
     text-align: left;
 }
-#examples .article li, #gs .article li, #about .article li {
+
+.article li {
     text-align: left;
     font-size: 16px;
     margin-bottom: 10px;
