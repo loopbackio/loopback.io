@@ -45,7 +45,6 @@ a:hover {
 /* STRONGLOOP */
 pre {
     font-family: 'Ubuntu Mono', sans-serif;
-    background: #CCEBD6;
 }
 /* END: GLOBAL STYLES */
 
@@ -219,6 +218,8 @@ pre {
     border-radius: 4px;
 
 }
+
+code {color: black;}
 /* END: COMMON UI ELEMENTS */
 
 /* START: HOME SECTION*/
@@ -231,7 +232,7 @@ pre {
     -o-background-size: cover;
     background-size: cover;
     background-attachment: fixed;
-   height: 80%; 
+    height: 80%; 
 }
 
 #intro {
@@ -263,70 +264,7 @@ pre {
     transition:         margin-top 0.5s ease-in-out;
 }
 
-#sponsored-by {
-    float: right;
-    top: 0;
-    padding: 0 20px 0 0;
-    font-size: 12px;
-}
-
 /* END: HOME SECTION*/
-
-.center-block {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#sdk-block { 
-    height: 200px;
-    width: 580px;
-}
-
-/* LoopBack Diagram */
-#lb-img {
-    float: left;
-    margin: 0;
-    height: 432px;
-    width: 240px;
-}
-
-#services-img {
-    float: right;
-    margin: 0;
-    height: 155px;
-    width: 137px;
-}
-
-#header-img {
-    height: 20px;
-    width: 20px;
-    margin: 0;
-    padding: 0;
-}
-
-#sdks-img {
-    float: right;
-    height: 120px;
-    width: 125px;
-    margin: 10px 0 0 0;
-    padding: 0;
-}
-
-#db-img {
-    float: left;
-    margin: 10px 0 0 0;
-    padding: 0;
-    height: 165px;
-    width: 145px;
-}
-
-/* screenshots */
-.screenshot {
-    border: 1px solid black;
-    padding: 3px;
-    margin: 10px;
-}
 
 /* SECTIONS */
 .container {
@@ -338,34 +276,39 @@ pre {
 
 /* START: SECTIONS*/
 
-.article {margin-left: 10px;}
+.row h2 {
+    font-size: 30px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .category {
     border: 1px dotted black;
-    padding: 20px;
-    margin: 10px;
-    background-color: rgba(125, 189, 51, 0.2);
     border-radius: 2px;
+    padding: 0 10px 20px 20px;
+    /* margin: 10px; */
+    background-color: rgba(125, 189, 51, 0.2);
 }
 
-.right { float: right;}
-.left { float: left;}
+li, p {
+    font-size: 16px;
+}
 
 .category ul {
     margin-bottom: 20px;
 }
 
+.article {margin-left: 10px;}
+
+/*
 .article h3 {
     font-size: 24px;
-    margin-top: 20px;
-    margin-bottom: 15px;
     font-weight: 700;
-}
-
-.article h2 {
-    font-size: 30px;
-    font-weight: 900;
-    text-align: center;
 }
 
 .article p {
@@ -374,26 +317,12 @@ pre {
     font-size: 16px;    
 }
 
-h3 .item {
-    text-align: left;
-}
-
 .article li {
     text-align: left;
     font-size: 16px;
     margin-bottom: 10px;
 }
-
-.gradient-box {
-    height: 100px;
-    border: 1px solid black;
-    color: white;
-    text-align: center;
-    background: -webkit-linear-gradient(#08592B, #7DBD33); 
-    background: -o-linear-gradient(#08592B, #7DBD33); 
-    background: -moz-linear-gradient(#08592B, #7DBD33); 
-    background: linear-gradient(#08592B, #7DBD33); 
-}
+*/
 
 pre {font-size: 16px;}
 
@@ -451,7 +380,6 @@ pre {font-size: 16px;}
     padding-top: 20px;
     margin-left: auto;
     margin-right: auto;
-
 }
 
 /* END: FOOTER SECTION*/
