@@ -46,6 +46,7 @@ a:hover {
 pre {
     font-family: 'Ubuntu Mono', sans-serif;
 }
+
 /* END: GLOBAL STYLES */
 
 /* START: PRELOADER BAR ON THE TOP*/
@@ -236,8 +237,10 @@ code {color: black;}
 }
 
 #intro {
+    /*
     position: absolute;
-    top: 25%;
+    top: 25%; */
+    margin-top: 40px;
     padding-bottom: 20px;
     background-color: rgba(8, 89, 43, 0.85); /* rgba(128, 128, 128, 0.75);  rgba(160, 140, 120, 0.85);*/
     color: #fff;
@@ -265,9 +268,12 @@ code {color: black;}
 }
 
 /* END: HOME SECTION*/
+.logo {
+    padding-top: 30px; 
+}
 
 /* SECTIONS */
-.container {
+#about .container, #gs .container, #examples .container {
     background-color: rgba(255, 255, 255, 1);
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
