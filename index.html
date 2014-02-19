@@ -145,13 +145,14 @@
                     
                     <div class="row">
                         <h2 class="col-xs-12">Client SDKs</h2>
-                        <div class="category col-md-4 col-md-offset-2 col-xs-8">
+                        <div class="category col-xs-offset-2 col-xs-4 ">
                             <h3>Native mobile client SDKs</h3>
                             <ul><li>Android, iOS</li>
                                 <li>JavaScript web client coming soon</li>
                             </ul>
                         </div>
-                        <img src="images/sdks.png" class="img-responsive col-md-3" >
+                        <div class="col-xs-1"></div>
+                        <img src="images/sdks.png" class="img-responsive " >
                         <div class="col-md-3 col-xs-3"></div>
                     </div> <!-- end class="row" -->
                     <br clear="all"/>
@@ -333,41 +334,37 @@ MyProduct.create({
     <div class="col-md-6">
         <p>Node.js:</p>
         <pre class="language-javascript"><code>MyProduct.find({
-            where: {price: {lt: 100}},
-            order: 'price ASC',
-            limit: 3
-        }, function(err, products) {
-          ...
-        });
-        </code></pre>
+    where: {price: {lt: 100}},
+    order: 'price ASC',
+    limit: 3
+}, function(err, products) {
+    ...
+});</code></pre>
     </div>
     <div class="col-md-6">
         <p>iOS Objective-C:</p>
         <pre class="language-clike"><code>[MyProduct createWithDictionary:@{
-          @"name": @"Pencil",
-          @"price": @0.99
-        }]
-        </code></pre>
+    @"name": @"Pencil",
+    @"price": @0.99
+}]</code></pre>
     </div>
 </div>
 <div class="row">
     <div class="col-md-6">
         <p>Android Java:</p>
         <pre class="language-java"><code>MyProductRepository repo =
-            adapter.createRepository(MyProduct.class);
-        MyProduct pencil = repo.create();
-        pencil.name = "Pencil";
-        pencil.price = 0.99;
-        pencil.save();
-        </code></pre>
+    adapter.createRepository(MyProduct.class);
+    MyProduct pencil = repo.create();
+    pencil.name = "Pencil";
+    pencil.price = 0.99;
+    pencil.save();</code></pre>
     </div>
     <div class="col-md-6">
         <p>HTML5:</p>
         <pre class="language-javascript"><code>MyProduct.create({
-          name: 'Pencil',
-          price: 0.99
-        });
-        </code></pre>
+    name: 'Pencil',
+    price: 0.99
+});</code></pre>
     </div>
 </div>
 
