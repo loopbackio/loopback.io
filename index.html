@@ -54,9 +54,12 @@
                         <li><a href="#header" class="scroll">Home</a></li>
                         <li><a href="#about" class="scroll">About</a></li>
                         <li><a href="#gs" class="scroll">Getting Started</a></li>
-                        <li><a href="#examples" class="scroll">Examples</a></li>                        
+                        <li><a href="#examples" class="scroll">Examples</a></li>
+                        <li><div style="width:125px;"></div></li>
                     </ul>
                 </div>
+                <a href="https://github.com/strongloop/loopback"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://github-camo.global.ssl.fastly.net/e7bbb0521b397edbd5fe43e7f760759336b5e05f/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png"></a>
+                
                 <!-- NAV ITEMS END -->
             </nav>
             <!-- MAIN NAV END -->
@@ -192,7 +195,7 @@
                             
                             <h3>Geolocation</h3>
                             <ul>
-                                <li>Provide location information for the device, such as latitude and longitude</li>  
+                                <li>Ability to query geolocation data.</li>  
                             </ul>
                         </div>                        
                         <img src="images/hex-phone.png" class="img-responsive col-md-2 col-xs-2">                            
@@ -234,7 +237,7 @@
                         <pre class="language-bash"><code>$ slc lb project hello-world</code></pre>
                         
                         <h3>Create models</h3>
-<pre class="language-bash"><code>$ cd helloworld
+<pre class="language-bash"><code>$ cd hello-world
 $ slc lb model person -i
 </code></pre>
                         <p>The CLI wizard guides you through creating your model.</p>
@@ -286,7 +289,7 @@ Create this model? (yes):
                 </div> <!-- end container -->
             </section>
             <!-- GETTING STARTED END -->
-
+<!-- <iframe src="//player.vimeo.com/video/77870965" width="500" height="281" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> -->
             <!-- EXAMPLES START -->
             <section id="examples">
                 <div class="container">
@@ -303,7 +306,7 @@ Create this model? (yes):
                             </ul>
 <p>The following two examples are from the banking example app</p>
 
-<h3>Create backend app and models</h3>
+<h3>Create backend app and models using CLI</h3>
 <pre class="language-bash"><code>$ slc lb project my-bank-app
 $ cd my-bank-app
 $ slc lb model bank
@@ -311,7 +314,7 @@ $ slc lb model account
 $ slc lb model transaction
 </code></pre>
 
-<h3>Create a secure REST API using command-line tools</h3>
+<h3>Create a secure REST API</h3>
 <pre class="language-bash"><code>$ slc lb acl --all-models --deny --everyone
 $ slc lb acl --allow --everyone --read --model bank
 $ slc lb acl --allow --everyone --call create --model user
@@ -367,26 +370,6 @@ MyProduct.create({
 });</code></pre>
     </div>
 </div>
-
-<h3>Build data model</h3>
-<pre class="language-javascript"><code>var Model = require('loopback').Model;
-var Product = Model.extend('product');
-var Inventory = Model.extend('customer');
-
-// Attach data sources
-var db = loopback.createDataSource({
-    connector: require('loopback-connector-mongodb')
-});
-
-// Enable the model to use the MongoDB API
-Product.attachTo(db);
-
-// Create a new product in the database
-Product.create({ name: 'widget', price: 99.99 },
-    function(err, widget) {
-        console.log(widget.id);  // Product's ID, added by MongoDB
-});
-</code></pre>
 
 <h3>Connect to Oracle database</h3>
 <pre class="language-javascript"><code>var loopback = require('loopback'); 
