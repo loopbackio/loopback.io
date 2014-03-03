@@ -36,16 +36,15 @@
         <!-- FONTS END -->
     </head>
     <body data-spy="scroll" data-target="#top-navigation">
-        <!-- PAGE START -->
-        <div id="page">
-            <!-- MAIN NAV START -->
-            <nav id="top-navigation" class="navbar navbar-default navbar-transparent navbar-fixed-top" role="navigation">
+        <nav id="top-navigation" class="navbar navbar-default navbar-transparent navbar-fixed-top" role="navigation">
+            <div class="container">
                 <div class="navbar-header">
                     <button id="menu-mobile" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
                         <span class="fa fa-bars"></span>
                     </button>
                     <!-- LOGO COMES HERE -->
-                    <a class="navbar-brand scroll" href="#header"><img src="images/sl_icon_loopback.jpg"> LoopBack</a>
+                    <a class="navbar-brand scroll" href="#header">LoopBack</a>
+                    <a href="http://strongloop.com" class="navbar-brand scroll by-strongloop">By StrongLoop</a>
                 </div>
 
                 <!-- NAV ITEMS START -->
@@ -58,35 +57,30 @@
                         <li><div style="width:125px;"></div></li>
                     </ul>
                 </div>
-                <a class="hidden-xs" href="https://github.com/strongloop/loopback"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://github-camo.global.ssl.fastly.net/e7bbb0521b397edbd5fe43e7f760759336b5e05f/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png"></a>
-                
-                <!-- NAV ITEMS END -->
-            </nav>
-            <!-- MAIN NAV END -->
+                <a class="hidden-xs" href="https://github.com/strongloop/loopback"><img style="position: absolute; top: 0; right: 0; border: 0;" src="images/fork.png" alt="Fork me on GitHub" data-canonical-src=""></a>                
+            </div>
             
-            <!-- HOME START -->
-            <section id="header">
-                <div class="container" >
+            <!-- NAV ITEMS END -->
+        </nav>
+        <!-- PAGE START -->
+        <div id="page">
+            <!-- MAIN NAV START -->
+            <!-- MAIN NAV END -->
+            <div class="container">
+
+                <!-- HOME START -->
+                <div id="header">
                     <div class="row" >
-                        <div class="col-xs-10 col-xs-offset-1 col-sm-8" id="intro">
-                            <h1 class="hidden-xs">LoopBack is here</h1>
-                            <h1 class="visible-xs">LoopBack</h1>
-                            <br>
-                            <!-- TICKER START -->
-                            <div class="ticker hidden-xs">
-                                <h3>On-premises or in the cloud</h3>
-                                <h3>Dynamically save data from mobile clients</h3>
-                                <h3>Unlock enterprise data for mobile apps</h3>
-                                <h3>Create dynamic REST APIs</h3>
-                                <h3>Android and iOS SDKs</h3>
-                                <h3>Push and Geolocation services</h3>
-                            </div>
-                            <!-- TICKER END -->
-                            <h4 style="line-height: 130%;">Open-source mobile backend powered by Node.js</h4>
-                            <br>
-                            <a href="#about" class="btn btn-transparent scroll"><strong>LEARN MORE</strong></a>
-                            <a href="#gs" class="btn btn-link btn-white scroll">Get LoopBack <i class="fa fa-angle-right"></i></a>
-                            <br>
+                        <img class="masthead img-responsive center-block" src="images/masthead.png" />
+                    </div>
+                    <div class="row" >
+                        <img class="terminal  img-responsive center-block" src="images/terminal.png" />
+                    </div>
+                    <div class="row">
+                        <div class="pull-left col-md-6">
+                            <a href="#gs" class="btn btn-primary">Get LoopBack</a>
+                        </div>
+                        <div class="col-md-6 pull-right" style="text-align: right;">
                             <div class="github-btns">
                                 <iframe src="http://ghbtns.com/github-btn.html?user=strongloop&repo=loopback&type=watch&count=true"
                                     allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
@@ -94,142 +88,116 @@
                                     allowtransparency="true" frameborder="0" scrolling="0" width="95" height="20"></iframe>
                                 <iframe src="http://ghbtns.com/github-btn.html?user=strongloop&repo=loopback&type=follow"
                                     allowtransparency="true" frameborder="0" scrolling="0" width="165" height="20"></iframe>
-                            </div>                         
+                            </div>  
                         </div>
                     </div>
-    
-                        <div class="col-xs-4 col-sm-3 col-md-2 pull-right logo" >
-                            <img src="images/logo-strongloop.png" class="img-responsive">
-                        </div>
-                    </div>
-            </section>
-                                 
-            <!-- HOME END -->
+                </div>
+                                     
+                <!-- HOME END -->
 
-            <!-- ABOUT START -->
-            <section id="about">
-                <div class="container">
+                <!-- ABOUT START -->
+                <a id="about" class="anchor"></a>
+                <section>
+                    <h2>About <strong>LoopBack</strong></h2>
                     <div class="row">
-                        <div class="col-xs-12 hidden-xs">
-                            <p class="fancy"><span>About LoopBack</span></p>
+                        <div class="col-lg-4">
+                            <ul class="about-list">
+                                <li>Connect devices and browsers to data and services</li>
+                                <li>Use the WorkSpace to generate REST APIs</li>
+                                <li>Open Source and extensible</li>
+                            </ul>
                         </div>
-                        <div class="col-xs-12 visible-xs">
-                            <p class="fancy"><span style="line-height: 1.1;">About LoopBack</span></p>
-                        </div>                        
-                        <div class="row">
-                            <h2 class="col-xs-12">Core</h2>
+                        <div class="col-lg-8" style="text-align: right;">
+                            <img src="images/diagram.png" />
                         </div>
-                        <img src="images/LoopBackGraphic.png" class="img-responsive col-xs-4 col-sm-3" alt="LoopBack Architecture Diagram">
-                        <div class="category col-xs-7 col-sm-8">
-                            <h3>Set up models and create REST APIs in minutes</h3>
+                    </div>
+                    <h3>Core</h3>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <h4>Set up models and create REST APIs in minutes</h4>
                             <ul>
                                 <li>Easy-to-use CLI wizard</li>
                                 <li>Create models based on your schema if you have one</li>
                                 <li>Create dynamic models if you don't</li>
                                 <li>Built-in API Explorer</li>
                             </ul>
-                            
-                            <h3>Easy authentication and authorization setup</h3>
+                            <h4>Easy authentication and authorization setup</h4>
                             <ul>
                                 <li>Built-in role-based access controls</li>
                                 <li>oAuth user and registration models baked in</li>
                                 <li>Add custom policies using CLI or JSON</li>
                                 <li>Browser support (JSONP and CORS)</li>
                             </ul>
-                           <h3>Model relation support</h3>
+                           <h4>Model relation support</h4>
                             <ul>
                                 <li>Define hasMany, belongsTo, hasAndBelongsToMany relationships</li>
                                 <li>Automatically generates corresponding REST endpoints</li>
                             </ul>
                                                         
-                            <h3>MIT open-source license </h3>                            
+                            <h4>MIT open-source license</h4>   
                         </div>
-                        <div class="col-xs-1"></div>
-                                
-                    </div> <!-- end class="row" -->
-                    <br clear="all"/>
-                    
+                    </div>
+                    <h3>Client SDKs</h3>
                     <div class="row">
-                        <h2 class="col-xs-12">Client SDKs</h2>
-                        <div class="category col-xs-offset-2 col-xs-4 ">
-                            <h3>Native mobile client SDKs</h3>
-                            <ul><li>Android, iOS</li>
-                                <li>JavaScript web client coming soon</li>
+                        <div class="col-lg-6">
+                            <h4>Native Mobile and Browser SDKs</h4>
+                            <ul>
+                                <li>Easily persist data with a database API on the client</li>
+                                <li>Store files, send push notifications, and call custom server side code</li>
+                                <li>Android / Java</li>
+                                <li>iOS</li>
+                                <li>Browser JavaScript (Angular)</li>
                             </ul>
                         </div>
-                        <div class="col-xs-1"></div>
-                        <img src="images/sdks.png" class="img-responsive " >
-                        <div class="col-md-3 col-xs-3"></div>
-                    </div> <!-- end class="row" -->
-                    <br clear="all"/>
-                        
-                    <div class="row">                        
-                        <h2>Juggler</h2>
-                        <img src="images/hex-globe.png" class="img-responsive col-md-2 col-md-offset-2 col-xs-2">
-                        
-                        <div class="category col-xs-8 col-md-7">
-                            <h3>Connect your Node app to backend data stores</h3>
+                    </div>
+                    <h3>Juggler</h3>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <h4>Connect to backend data stores</h4>
                             <ul>
                                 <li>MySQL, Oracle, MongoDB, and others</li>
-                                <li>Connect to other REST services</li>
-                                <li>Easily persist data with API calls directly from Android, iOS, and Node</li>
+                                <li>Other REST services</li>
                                 <li>Discovery APIs for Oracle and MySQL</li>                            
                             </ul>
-                            <h3>Run ad-hoc queries.</h3>
+                            <h4>Run ad-hoc queries.</h4>
                             <ul>
-                                <li>Enable users to create dynamic queries</li>
-                                <li>Filter results by geolocation</li>
-                                <li>Support for NoSQL-style queries against relational databases</li>                            
-                            </ul>                                    
+                                <li>Run dynamic queries on devices, browsers and the server</li>
+                                <li>Support for NoSQL-style queries against relational databases</li>
+                            </ul>   
                         </div>
-                        <div class="col-xs-1"></div>                        
-                    </div> <!-- end class="row" -->
-                    <br clear="all"/>
-
-                    <div class="row">                                            
-                        <h2>Mobile services</h2>    
-                        <div class="category col-xs-10 col-md-8 col-md-offset-2">
-                            
-                            <h3>Easily add push notifications</h3>
+                    </div>
+                    <h3>Mobile Services</h3>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <h4>Send push notifications</h4>
                             <ul>
                                 <li>Backend push system with simple API calls</li>
-                                <li>Supports both Android and iOS</li>
+                                <li>Supports both Android and iOS</li>                            
                             </ul>
-                            
-                            <h3>Geolocation</h3>
+                            <h4>Geolocation</h4>
                             <ul>
-                                <li>Ability to query geolocation data.</li>  
-                            </ul>
-                        </div>                        
-                        <img src="images/hex-phone.png" class="img-responsive col-md-2 col-xs-2">                            
-                    </div> <!-- end class="row" -->
-                    <br clear="all"/>
-
-                    <div class="row">                                                                
-                        <h2>More information</h2>
-                        <div class="center" style="width: 200px;">
-                            <ul>
+                                <li>Validate and store geolocations</li>
+                                <li>Find nearby results with geo filters</li>
+                            </ul>   
+                        </div>
+                    </div>
+                    <h3>More Info</h3>
+                    <div class="row">
+                        <div class="col-lg-6">
+                             <ul>
                                 <li><a href="http://docs.strongloop.com">Documentation</a></li>
                                 <li><a href="http://strongloop.com/strongblog/category/loopback-2/">StrongLoop blog</a></li>
                                 <li><a href="http://strongloop.com/strongloop-suite/subscription-plans/">Professional support</a></li>
                             </ul>
                         </div>
-                    </div> <!-- end class="row" -->
-                    <br/>
-            </section>
-            <!-- ABOUT END -->
-
-            <!-- GETTING STARTED START -->
-            <section id="gs">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xs-12 hidden-xs">
-                            <p class="fancy"><span>Getting Started</span></p>
-                        </div>
-                        <div class="col-xs-12 visible-xs">
-                            <p class="fancy"><span style="line-height: 1.1;">Getting Started</span></p>
-                        </div>                        
                     </div>
+                </section>
+                <!-- ABOUT END -->
+
+                <!-- GETTING STARTED START -->
+                <a id="gs" class="anchor"></a>
+                <section>
+                    <h2>Getting Started</h2>
                     <div class="article">
                         <h3>Install</h3>
                         <p>Assuming you have already installed Node...</p>
@@ -292,35 +260,32 @@ Create this model? (yes):
                             <div class="xs-col-12">&nbsp;</div>
                         </div>
                     </div> <!-- end article -->
-                </div> <!-- end container -->
-            </section>
-            <!-- GETTING STARTED END -->
-<!-- <iframe src="//player.vimeo.com/video/77870965" width="500" height="281" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> -->
-            <!-- EXAMPLES START -->
-            <section id="examples">
-                <div class="container">
-                    <div class="row">                     
-                        <div class="col-xs-12">
-                            <p class="fancy"><span>Examples</span></p>
-                        </div>
-                    </div>
-                        <div class="article">
-                            <ul>
-                                <li><a href="https://github.com/strongloop/loopback-example-access-control">Banking App</a> - Simple mobile illustrates how to impose access controls.  Front-end uses Angular, Cordova, and Ionic.</li>
-                                <li><a href="https://github.com/strongloop-community/loopback-mobile-getting-started">LoopBack Mobile Getting Started App</a> - Basic example app with both iOs and Android front-ends.</li>
-                                <li><a href="https://github.com/strongloop-community/loopback-mysql-example">MySQL example</a> - back-end only example illustraing connecting to MySQL database.</li>                                
-                            </ul>
-<p>The following two examples are from the banking example app</p>
 
-<h3>Create backend app and models using CLI</h3>
-<pre class="language-bash"><code>$ slc lb project my-bank-app
-$ cd my-bank-app
-$ slc lb model bank
-$ slc lb model account
-$ slc lb model transaction
-</code></pre>
+                </section>
+                <!-- GETTING STARTED END -->
 
-<h3>Create a secure REST API</h3>
+                <!-- EXAMPLES START -->
+                <a id="examples" class="anchor"></a>
+                <section>
+
+                        <h2>Examples</h2>
+                            <div class="article">
+                                <ul>
+                                    <li><a href="https://github.com/strongloop/loopback-example-access-control">Banking App</a> - Simple mobile illustrates how to impose access controls.  Front-end uses Angular, Cordova, and Ionic.</li>
+                                    <li><a href="https://github.com/strongloop-community/loopback-mobile-getting-started">LoopBack Mobile Getting Started App</a> - Basic example app with both iOs and Android front-ends.</li>
+                                    <li><a href="https://github.com/strongloop-community/loopback-mysql-example">MySQL example</a> - back-end only example illustraing connecting to MySQL database.</li>                                
+                                </ul>
+    <p>The following two examples are from the banking example app</p>
+
+    <h3>Create backend app and models using CLI</h3>
+    <pre class="language-bash"><code>$ slc lb project my-bank-app
+    $ cd my-bank-app
+    $ slc lb model bank
+    $ slc lb model account
+    $ slc lb model transaction
+    </code></pre>
+
+    <h3>Create a secure REST API</h3>
 <pre class="language-bash"><code>$ slc lb acl --all-models --deny --everyone
 $ slc lb acl --allow --everyone --read --model bank
 $ slc lb acl --allow --everyone --call create --model user
@@ -355,24 +320,25 @@ MyProduct.create({
         <pre class="language-clike"><code>[MyProduct createWithDictionary:@{
     @"name": @"Pencil",
     @"price": @0.99
-}]</code></pre>
+}];</code></pre>
     </div>
 </div>
 <div class="row">
     <div class="col-md-6">
-        <p>Android Java:</p>
-        <pre class="language-java"><code>MyProductRepository repo =
-    adapter.createRepository(MyProduct.class);
-    MyProduct pencil = repo.create();
-    pencil.name = "Pencil";
-    pencil.price = 0.99;
-    pencil.save();</code></pre>
-    </div>
-    <div class="col-md-6">
-        <p>HTML5:</p>
-        <pre class="language-javascript"><code>MyProduct.create({
-    name: 'Pencil',
-    price: 0.99
+<p>Android Java:</p>
+<pre class="language-java"><code>MyProductRepository repo =
+adapter.createRepository(MyProduct.class);
+
+MyProduct pencil = repo.create();
+pencil.name = "Pencil";
+pencil.price = 0.99;
+pencil.save();</code></pre>
+</div>
+<div class="col-md-6">
+<p>HTML5:</p>
+<pre class="language-javascript"><code>MyProduct.create({
+name: 'Pencil',
+price: 0.99
 });</code></pre>
     </div>
 </div>
@@ -385,28 +351,22 @@ var ds = loopback.createDataSource('oracle', {
     "database": "XE", 
     "username": "demo", 
     "password": "L00pBack" 
-});	
+}); 
 </code></pre>
 
 <h3>Automatically discover and expose database tables through REST API</h3>
 
-<pre class="language-javascript"><code>var ds = require('../data-sources/db.js')('oracle');	
-	
-// Discover and build models from INVENTORY table	
+<pre class="language-javascript"><code>var ds = require('../data-sources/db.js')('oracle'); 
+    
+// Discover and build models from INVENTORY table   
 ds.discoverAndBuildModels('INVENTORY', 
     {visited: {}, owner: 'LOOPBACK', associations: true}, 
-    function (err, models) {	
+    function (err, models) {    
         models.Inventory.findOne({}, function (err, inv) {
-            if (err) {	
-                console.error(err);	
-                return;	
-            }	
-            console.log("\nInventory: ", inv);	
-            inv.product(function (err, prod) {	
-                console.log(err);	
-                console.log("\nProduct: ", prod);	
-                console.log("\n ------------- ");	
-            });	
+            console.log("Inventory: ", inv);  
+            inv.product(function (err, prod) {  
+                console.log("Product: ", prod);
+            }); 
         });
     }
 )
@@ -421,18 +381,17 @@ ds.discoverAndBuildModels('INVENTORY',
             }
         }
     }
-})
+});
 
 artist.findOne({name: "The Beatles", function(err, beatles) {
     beatles.albums(console.log);
-})
+});
 </code></pre>
-                        </div>
-
-                </div>
-            </section>
-            <!-- EXAMPLES END -->
-
+                    </div>
+                </section>
+                <!-- EXAMPLES END -->
+            </div>
+            <!-- CONTAINER END -->
             <!-- FOOTER START -->
             <footer id="footer">
                 <div class="container">
