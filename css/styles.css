@@ -42,9 +42,9 @@ h3 {
 
 h4 {
     display: inline-block;
-    border-bottom: solid 2px;
-    padding-bottom: 4px;
-    margin-bottom: 4px;
+    /* border-bottom: solid 2px; */
+    padding-bottom: 7px;
+    margin-bottom: 7px;
 }
 
 .tagline {
