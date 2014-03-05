@@ -47,6 +47,12 @@ h4 {
     margin-bottom: 4px;
 }
 
+.tagline {
+    font-size: 18px;
+    color: #90d1ad;
+    margin: 15px 0 0 380px;
+}
+
 body {
     background-color: #ECF0F1;
     background: url(../images/bg.jpg) fixed;
