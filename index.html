@@ -271,40 +271,84 @@ Create this model? (yes):
 
                         <h2>Examples</h2>
                             <div class="article">
-                                <ul>
-                                    <li><a href="https://github.com/strongloop/loopback-example-access-control">Banking App</a> - Simple mobile illustrates how to impose access controls.  Front-end uses Angular, Cordova, and Ionic.</li>
-                                    <li><a href="https://github.com/strongloop-community/loopback-mobile-getting-started">LoopBack Mobile Getting Started App</a> - Basic example app with both iOs and Android front-ends.</li>
-                                    <li><a href="https://github.com/strongloop-community/loopback-mysql-example">MySQL example</a> - back-end only example illustraing connecting to MySQL database.</li>                                
-                                </ul>
-    <p>The following two examples are from the banking example app</p>
+                            <ul>
+                                <li><a href="https://github.com/strongloop/loopback-example-office-supplies/">Office Supplies App</a> - a simple example that illustrates creating models, relations between models, and basic access control.</li>
+                                <li><a href="https://github.com/strongloop/loopback-example-access-control">Banking App</a> - Simple mobile illustrates how to impose access controls.  Front-end uses Angular, Cordova, and Ionic.</li>
+                                <li><a href="https://github.com/strongloop-community/loopback-mobile-getting-started">LoopBack Mobile Getting Started App</a> - Basic example app with both iOs and Android front-ends.</li>
+                                <li><a href="https://github.com/strongloop-community/loopback-mysql-example">MySQL example</a> - back-end only example illustraing connecting to MySQL database.</li>                                
+                            </ul>
 
-    <h3>Create backend app and models using CLI</h3>
-    <pre class="language-bash"><code>$ slc lb project my-bank-app
-    $ cd my-bank-app
-    $ slc lb model bank
-    $ slc lb model account
-    $ slc lb model transaction
-    </code></pre>
 
-    <h3>Create a secure REST API</h3>
+<h3>Create backend app and models</h3>
+<div class="row">
+    <p class="col-sm-5">Use the StrongLoop CLI tool to create the project and three models for banking app.</p>
+<div class="col-sm-7">
+<pre class="language-bash"><code>$ mkdir office-supplies
+$ cd office-supplies
+$ slc lb project server
+$ cd server
+$ slc lb model product
+$ slc lb model category
+</code></pre></div>
+</div> <!-- end row -->
+
+<h3>Create a secure REST API</h3>
+<div class="row">
+    <div class="col-sm-5">
+    <p>Secure all the model APIs, then allow admins to modify products.</p>
+</div>
+<div class="col-sm-7">
 <pre class="language-bash"><code>$ slc lb acl --all-models --deny --everyone
-$ slc lb acl --allow --everyone --read --model bank
-$ slc lb acl --allow --everyone --call create --model user
-$ slc lb acl --allow --owner --all --model user
-$ slc lb acl --allow --owner --read --model account
-$ slc lb acl --allow --owner --write --model account
+$ slc lb acl --model product --allow --owner --all
 </code></pre>
+</div>
+</div> <!-- end row -->
 
 <h3>Easily persist data</h3>
-<pre class="language-javascript"><code>MyProduct = loopback.Model.extend('my-product');
-app.model(MyProduct);
-MyProduct.create({
-    name: 'Pencil',
-    price: 0.99
+<div class="row">
+    <p class="col-sm-5">LoopBack models have a full set of methods for create, read, update, and delete (CRUD) operations.  For example: </p>
+<div class="col-sm-7">
+<pre class="language-javascript"><code>category.create({name: 'stationery', id: 1});
+product.create({
+  categoryId: 1,
+  name: 'Pencil',
+  price: 0.99
 });
 </code></pre>
+</div>
+</div> <!-- end row -->
+
+<h3>Define model relations</h3>
+<div class="row">
+    <p class="col-sm-5">Use simple JSON declarative syntax to set up relations between models.  For example, the following
+specifies that a product belongs to one category (identified by categoryId) and has one owner (identified by ownerId).    
+    </p>
+    <div class="col-sm-7">
+<pre class="language-javascript"><code>"product": { 
+    "options": {
+      "relations": {
+        "category": {
+          "model": "category",
+          "type": "belongsTo",
+          "foreignKey": "categoryId"
+        },
+        "owner": {
+          "model": "category",
+          "type": "belongsTo",
+          "foreignKey": "ownerId"
+        }
+      }
+    },
+    "properties": {},
+    "public": true,
+    "dataSource": "db"
+  },
+</code></pre>
+    </div>
+</div> <!-- end row -->
 
 <h3>Run ad-hoc queries</h3>
+<p class="col-xs-12">Call directly into the LoopBack APIs directly from iOS, Android, or client JavaScript. </p>
 <div class="row">
     <div class="col-md-6">
         <p>Node.js:</p>
@@ -321,30 +365,32 @@ MyProduct.create({
         <pre class="language-clike"><code>[MyProduct createWithDictionary:@{
     @"name": @"Pencil",
     @"price": @0.99
-}];</code></pre>
+}]</code></pre>
     </div>
 </div>
 <div class="row">
     <div class="col-md-6">
-<p>Android Java:</p>
-<pre class="language-java"><code>MyProductRepository repo =
-adapter.createRepository(MyProduct.class);
-
-MyProduct pencil = repo.create();
-pencil.name = "Pencil";
-pencil.price = 0.99;
-pencil.save();</code></pre>
-</div>
-<div class="col-md-6">
-<p>HTML5:</p>
-<pre class="language-javascript"><code>MyProduct.create({
-name: 'Pencil',
-price: 0.99
+        <p>Android Java:</p>
+        <pre class="language-java"><code>MyProductRepository repo =
+    adapter.createRepository(MyProduct.class);
+    MyProduct pencil = repo.create();
+    pencil.name = "Pencil";
+    pencil.price = 0.99;
+    pencil.save();</code></pre>
+    </div>
+    <div class="col-md-6">
+        <p>HTML5:</p>
+        <pre class="language-javascript"><code>MyProduct.create({
+    name: 'Pencil',
+    price: 0.99
 });</code></pre>
     </div>
 </div>
 
 <h3>Connect to Oracle database</h3>
+<div class="row">
+        <p class="col-sm-5">Easily connect to backend databases such as Oracle. </p>
+        <div class="col-sm-7">
 <pre class="language-javascript"><code>var loopback = require('loopback'); 
 var ds = loopback.createDataSource('oracle', { 
     "host": "demo.strongloop.com", 
@@ -352,43 +398,38 @@ var ds = loopback.createDataSource('oracle', {
     "database": "XE", 
     "username": "demo", 
     "password": "L00pBack" 
-}); 
+});	
 </code></pre>
+    </div>
+</div> <!-- end row -->
 
-<h3>Automatically discover and expose database tables through REST API</h3>
-
-<pre class="language-javascript"><code>var ds = require('../data-sources/db.js')('oracle'); 
-    
-// Discover and build models from INVENTORY table   
+<h3>Automatically discover and expose database tables (Oracle and MySQL) through REST APIs.</h3>
+<div class="row">
+        <p class="col-sm-5">The Oracle and MySQL connectors provide APIs that enable you to "discover" model definition information from existing databases,
+        including schema information such as column names and datatypes and relation information such as primary and foreign keys.  </p>
+        <div class="col-sm-7">
+<pre class="language-javascript"><code>var ds = require('../data-sources/db.js')('oracle');	
+// Discover and build models from INVENTORY table	
 ds.discoverAndBuildModels('INVENTORY', 
     {visited: {}, owner: 'LOOPBACK', associations: true}, 
-    function (err, models) {    
+    function (err, models) {	
         models.Inventory.findOne({}, function (err, inv) {
-            console.log("Inventory: ", inv);  
-            inv.product(function (err, prod) {  
-                console.log("Product: ", prod);
-            }); 
+            if (err) {	
+                console.error(err);	
+                return;	
+            }	
+            console.log("\nInventory: ", inv);	
+            inv.product(function (err, prod) {	
+                console.log(err);	
+                console.log("\nProduct: ", prod);	
+                console.log("\n ------------- ");	
+            });	
         });
     }
 )
 </code></pre>
-<h3>Define model relations</h3>
-<pre class="language-javascript"><code>app.model('artist', {
-    options: { 
-        relations: {
-            albums: {
-                type: "hasMany",
-                model: "album"
-            }
-        }
-    }
-});
-
-artist.findOne({name: "The Beatles", function(err, beatles) {
-    beatles.albums(console.log);
-});
-</code></pre>
-                    </div>
+    </div>
+</div> <!-- end row -->
                 </section>
                 <!-- EXAMPLES END -->
             </div>
