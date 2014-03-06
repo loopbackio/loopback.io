@@ -50,7 +50,13 @@ h4 {
 .tagline {
     font-size: 18px;
     color: #90d1ad;
-    margin: 15px 0 0 380px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    /*margin: 15px 0 0 380px;*/
+}
+
+.slug {
+    font-size: 16px;
 }
 
 body {

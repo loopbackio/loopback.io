@@ -57,7 +57,8 @@
                         <li><div style="width:125px;"></div></li>
                     </ul>
                 </div>
-                <a class="hidden-xs" href="https://github.com/strongloop/loopback"><img style="position: absolute; top: 0; right: 0; border: 0;" src="images/fork.png" alt="Fork me on GitHub" data-canonical-src=""></a>
+                <a class="hidden-xs" href="https://github.com/strongloop/loopback"><img style="position: absolute; top: 0; right: 0; border: 0;"
+                    src="images/fork.png" alt="Fork me on GitHub" data-canonical-src=""></a>
             </div>
             
             <!-- NAV ITEMS END -->
@@ -72,8 +73,19 @@
                 <div id="header">
                     <div class="row" >
                         <img class="masthead img-responsive center-block" src="images/masthead.png" />
-                        <h1 class="tagline">Open-source Mobile Backend Powered by Node.js</h1>
+                        <h1 class="tagline col-sm-5 col-sm-offset-3">Open-source Mobile Backend Powered by Node.js</h1>
                     </div>
+                <div class="row" >
+                    <div class="col-sm-4 col-sm-offset-4">
+                        <ul>
+                            <li class="slug">On-premises or in the cloud</li>
+                            <li class="slug">Unlock enterprise data for mobile apps</li>
+                            <li class="slug">Create dynamic REST APIs</li>
+                            <li class="slug">Android and iOS SDKs</li>
+                            <li class="slug">Push and Geolocation services</li>
+                        </ul>
+                        </div>
+                </div>   
                     <div class="row" >
                         <img class="terminal  img-responsive center-block" src="images/terminal.png" />
                     </div>
@@ -403,7 +415,7 @@ var ds = loopback.createDataSource('oracle', {
     </div>
 </div> <!-- end row -->
 
-<h3>Automatically discover and expose database tables (Oracle and MySQL) through REST APIs.</h3>
+<h3>Automatically discover and expose database tables</h3>
 <div class="row">
         <p class="col-sm-5">The Oracle and MySQL connectors provide APIs that enable you to "discover" model definition information from existing databases,
         including schema information such as column names and datatypes and relation information such as primary and foreign keys.  </p>
@@ -412,18 +424,12 @@ var ds = loopback.createDataSource('oracle', {
 // Discover and build models from INVENTORY table	
 ds.discoverAndBuildModels('INVENTORY', 
     {visited: {}, owner: 'LOOPBACK', associations: true}, 
-    function (err, models) {	
+    function (err, models) {    
         models.Inventory.findOne({}, function (err, inv) {
-            if (err) {	
-                console.error(err);	
-                return;	
-            }	
-            console.log("\nInventory: ", inv);	
-            inv.product(function (err, prod) {	
-                console.log(err);	
-                console.log("\nProduct: ", prod);	
-                console.log("\n ------------- ");	
-            });	
+            console.log("Inventory: ", inv);  
+            inv.product(function (err, prod) {  
+                console.log("Product: ", prod);
+            }); 
         });
     }
 )
