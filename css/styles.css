@@ -15,36 +15,37 @@ html, body, #page {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     color: #eeeeda;
-    /* font-family: "Open Sans";*/
     font-family: "Ubuntu";
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-weight: normal;
-    font-family: "Ubuntu"; /*"Open Sans";*/
+   /* font-weight: normal;*/
+    font-family: "Ubuntu"; 
     font-weight: 300;
     margin: 0;
 }
 
 h2 {
-    height: 53px;
-    margin: 0 -15px 15px -15px;
-    padding: 0 0 0 15px;
-    background: 0 33px url('../images/hr.png') no-repeat;
+    height: 60px;
+    margin: 0 -15px 15px -5px;
+    padding: 0 0 0x 15px;
+    background: 0 40px url('../images/hr.png') no-repeat;
+    font-size: 40px;
 }
 
 h3 {
-    height: 39px;
+    height: 46px;
     margin: 30px -15px 15px -15px;
     padding: 0 0 0 15px;
-    background: 0 17px url('../images/hr2.png') no-repeat;
+    background: 0 21px url('../images/hr2.png') no-repeat;
+    font-size: 27px;
 }
 
 h4 {
     display: inline-block;
-    /* border-bottom: solid 2px; */
-    padding-bottom: 7px;
+    padding-bottom: 5px;
     margin-bottom: 7px;
+  /*  font-size: 150%;*/
 }
 
 .tagline {
@@ -55,8 +56,9 @@ h4 {
     /*margin: 15px 0 0 380px;*/
 }
 
-.slug {
-    font-size: 16px;
+.top-list {
+    width: 400px;
+    font-size: 18px;
 }
 
 body {
@@ -65,7 +67,7 @@ body {
 }
 
 p {
-    line-height: 28px;
+   /* line-height: 28px;*/
 }
 
 a, a:focus {
@@ -74,7 +76,7 @@ a, a:focus {
 }
 
 .container {
-    width: 1050px;
+    /*width: 1050px;*/
 }
 
 #header {
@@ -82,11 +84,25 @@ a, a:focus {
 }
 
 .masthead {
-    margin: 30px auto 0 auto;
+    /* margin: 30px auto 0 auto; */
+    margin-top: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .terminal {
-    margin: 30px auto 30px auto;
+    margin: 0 auto 0 auto;
+    color: #FFFFFF;
+    font-family: "Courier New", Courier, monospace;
+    white-space: pre;
+    background-color: #2d4638;
+    padding: 10px;
+    max-width: 1020px;
+    font-size: 140%;
+}
+
+.comment {
+    color: #5b8e71;
 }
 
 .github-btns {
@@ -271,6 +287,14 @@ section {
 
 .about-list {
     font-size: 150%;
+}
+
+.about-items li {
+    font-size: 120%;
+}
+
+.about-items ul {
+    margin-bottom: 20px;
 }
 
 .anchor {
