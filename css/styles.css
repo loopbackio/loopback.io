@@ -61,12 +61,17 @@ h4 {
     font-size: 18px;
 }
 
+li {
+    font-size: 18px;
+}
+
 body {
     background-color: #ECF0F1;
     background: url(../images/bg.jpg) fixed;
 }
 
 p {
+    font-size: 18px;
    /* line-height: 28px;*/
 }
 
