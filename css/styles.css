@@ -88,6 +88,10 @@ a, a:focus {
     padding-top: 53px;
 }
 
+#hdr-buttons {
+    margin: 0;
+}
+
 .masthead {
     /* margin: 30px auto 0 auto; */
     margin-top: 30px;
@@ -112,6 +116,13 @@ a, a:focus {
 
 .github-btns {
     padding-top: 5px;
+    margin: 0;
+    float: right;
+}
+
+.btn-primary {
+    float: left;
+    margin: 0;
 }
 
 .btn {
