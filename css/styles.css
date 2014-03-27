@@ -286,6 +286,7 @@ section {
     padding: 15px;
     background: rgba(0, 0, 0, 0.5) url('../images/random-bg.png') repeat-y;
     background-position: center;
+    max-width: 1018px;
 }
 
 /* ABOUT */
