@@ -53,15 +53,12 @@
                     </ul>
                 </div>
                 <a class="hidden-xs" href="https://github.com/strongloop/loopback"><img style="position: absolute; top: 0; right: 0; border: 0;"
-                    src="images/fork.png" alt="Fork me on GitHub" data-canonical-src=""></a>
+                    src="images/fork.png" alt="Fork me on GitHub"></a>
             </div>
-            
             <!-- NAV ITEMS END -->
         </nav>
         <!-- PAGE START -->
         <div id="page">
-            <!-- MAIN NAV START -->
-            <!-- MAIN NAV END -->
             <div class="container">
 
                 <!-- HOME START -->
@@ -83,21 +80,24 @@
                     </div>
                     <br/>
 
-                        <div class="row hidden-xs" >
-                            <img class="img-responsive center-block" src="images/terminal-hdr.png" />
-                            <div class="terminal">&Omega; npm install strong-cli         <span class="comment">// Install the tools</span>
+                    <div id="top-container" class="row">
+                        <div class="hidden-sm hidden-xs" >
+                            <div class="terminal-container">
+                            <img style="margin: 0; padding: 0; float: left;" src="images/terminal-hdr2.png" /> 
+                            <div class="terminal">
+&Omega; npm install strong-cli         <span class="comment">// Install the tools</span>
 &Omega; slc lb project my-new-project  <span class="comment">// Create your first project</span>
 &Omega; cd my-new-project      
 &Omega; slc lb model my-model          <span class="comment">// Create your first model</span>
 &Omega; node app                       <span class="comment">// Start your application</span>
-</div>
-                            <div style="margin: 20px auto 20px auto; width: 600px;">
-                                <p>Now you can explore your working API at <a href="http://localhost:3000/explorer">http://localhost:3000/explorer</a>.</p>
-                            </div>
+</div></div>
+
+                            <p id="explore">Now you can explore your working API at <a href="http://localhost:3000/explorer">http://localhost:3000/explorer</a>.</p>
                         </div>
-                        <div id="hdr-buttons">
-                        <a href="#gs" class="btn btn-primary">Get LoopBack</a>
-                        <div class="github-btns">
+                        <div class="hidden-sm hidden-xs">
+                            <a href="#gs" class="btn btn-primary pull-left">Get LoopBack</a>
+                        </div>
+                        <div class="github-btns pull-right hidden-sm hidden-xs">
                             <iframe src="http://ghbtns.com/github-btn.html?user=strongloop&repo=loopback&type=watch&count=true"
                                 allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
                             <iframe src="http://ghbtns.com/github-btn.html?user=strongloop&repo=loopback&type=fork&count=true"
@@ -105,6 +105,17 @@
                             <iframe src="http://ghbtns.com/github-btn.html?user=strongloop&repo=loopback&type=follow"
                                 allowtransparency="true" frameborder="0" scrolling="0" width="165" height="20"></iframe>
                         </div>  
+                    </div> <!-- top-container -->
+                    <div class="hidden-md hidden-lg" style="margin-bottom: 30px;">
+                        <a href="#gs" class="btn btn-primary pull-left">Get LoopBack</a>
+                        <div class="github-btns pull-right" >
+                            <iframe src="http://ghbtns.com/github-btn.html?user=strongloop&repo=loopback&type=watch&count=true"
+                                allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
+                            <iframe src="http://ghbtns.com/github-btn.html?user=strongloop&repo=loopback&type=fork&count=true"
+                                allowtransparency="true" frameborder="0" scrolling="0" width="95" height="20"></iframe>
+                            <iframe src="http://ghbtns.com/github-btn.html?user=strongloop&repo=loopback&type=follow"
+                                allowtransparency="true" frameborder="0" scrolling="0" width="165" height="20"></iframe>
+                        </div>                          
                     </div>
                 </div>
                 <!-- HOME END -->
@@ -114,7 +125,7 @@
                 <section>
                     <h2>About LoopBack</h2>
                     <div class="row">
-                        <div class="col-lg-4">
+                        <div class="col-lg-4 col-md-12">
                             <ul class="about-list">
                                 <li>Use the CLI to generate REST APIs</li>                                
                                 <li>Connect devices and browsers to data and services</li>

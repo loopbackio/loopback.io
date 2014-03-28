@@ -99,15 +99,30 @@ a, a:focus {
     padding-right: 10px;
 }
 
-.terminal {
+#top-container {
     margin: 0 auto 0 auto;
+    padding: 0;
+    width: 800px;
+}
+
+.terminal-container{
+    margin: 0 auto 0 auto;
+    width: 800px;
+}
+
+.terminal {
     color: #FFFFFF;
     font-family: "Courier New", Courier, monospace;
     white-space: pre;
     background-color: #2d4638;
     padding: 10px;
-    max-width: 1020px;
+    width: 800px;
     font-size: 140%;
+}
+
+#explore {
+    margin: 20px auto 20px auto;
+    width: 600px;
 }
 
 .comment {
@@ -116,7 +131,7 @@ a, a:focus {
 
 .github-btns {
     padding-top: 5px;
-    margin: 0;
+    margin: 0 -30px 0 0;
     float: right;
 }
 
