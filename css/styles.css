@@ -107,7 +107,7 @@ a, a:focus {
 
 .terminal-container{
     margin: 0 auto 0 auto;
-    width: 800px;
+    width: 900px;
 }
 
 .terminal {
@@ -116,8 +116,8 @@ a, a:focus {
     white-space: pre;
     background-color: #2d4638;
     padding: 10px;
-    width: 800px;
-    font-size: 140%;
+    width: 900px;
+    font-size: 125%;
 }
 
 #explore {
@@ -127,6 +127,10 @@ a, a:focus {
 
 .comment {
     color: #5b8e71;
+}
+
+.userentry {
+    color: #35bbc8;
 }
 
 .github-btns {
