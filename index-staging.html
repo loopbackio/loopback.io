@@ -71,11 +71,11 @@
                     <div class="row" >
                         <div class="top-list center-block">  
                             <ul>
-                                <li>On-premises or in the cloud</li>
                                 <li>Create dynamic REST APIs</li>
+                                <li>Android, iOS, and AngularJS SDKs</li>
                                 <li>Unlock enterprise data for mobile apps</li>                            
                                 <li>Push, geolocation, and file services</li>
-                                <li>Android, iOS, and JavaScript SDKs</li>                            
+                                <li>On-premises or in the cloud</li>
                             </ul>
                         </div>
                     </div>
@@ -86,11 +86,27 @@
                             <div class="terminal-container">
                             <img style="margin: 0; padding: 0; float: left;" src="images/terminal-hdr2.png" /> 
                             <div class="terminal">
-&Omega; npm install -g strong-cli      <span class="comment">// Install the tools</span>
-&Omega; slc lb project my-new-project  <span class="comment">// Create your first project</span>
+&Omega; npm install -g strongloop        <span class="comment">// Install the framework</span>
+&Omega; slc update                       <span class="comment">// Update to the latest CLI</span>
+&Omega; yo loopback                      <span class="comment">// Create your project using Yeoman</span>
+[?] Enter a directory name where to create the project: my-new-project
+<span class="comment">// At the prompt enter the directory where your project will live</span>
+[?] What's the name of your application? my-new-app
+<span class="comment">// Hit Enter to name your project the same thing</span>
 &Omega; cd my-new-project      
-&Omega; slc lb model my-model          <span class="comment">// Create your first model</span>
-&Omega; node app                       <span class="comment">// Start your application</span>
+&Omega; yo loopback:model my-model        <span class="comment">// Create your first model</span>
+[?] Enter the model name: my-model  <span class="comment">// Name the model</span>
+[?] Select the data-source to attach my-model to: db (memory)
+                                    <span class="comment">// Hit Enter to accept the defaults</span>
+[?] Expose my-model via the REST API? Yes
+[?] Custom plural form (used to build REST URL): 
+Let's add some my-model properties now.
+Enter an empty property name when done.
+[?] Property name: property1        <span class="comment">// Name the first property in the model</span>
+   invoke   loopback:property
+[?] Property type: string           <span class="comment">// Hit Enter to accept the default type, string</span>
+[?] Required? No                    <span class="comment">// Hit Enter to accept the default (not required)</span>
+&Omega; node .                            <span class="comment">// Start your application</span>
 </div></div>
 
                             <p id="explore">Now you can explore your working API at <a href="http://localhost:3000/explorer">http://localhost:3000/explorer</a>.</p>
@@ -235,13 +251,16 @@
                         <h3>Install</h3>
                         <p>Assuming you have already installed Node...</p>
                         
-                        <pre class="language-bash"><code>$ npm install -g strong-cli</code></pre>
-                        <p>This installs the StrongLoop command-line tool that you use to create LoopBack applications.</p>
+                        <pre class="language-bash"><code>$ npm install -g strongloop</code></pre>
+                        <p>This installs the LoopBack framework and associated StrongLoop tools and modules.</p>
+                        
+                        <pre class="language-bash"><code>$ slc update</code></pre>
+                        <p>Get the latest updates and update dependencies.</p>
                         
                         <h3>Create app</h3>
                         <p>Create a "Hello World" LoopBack application.</p>
                         
-                        <pre class="language-bash"><code>$ slc lb project hello-world</code></pre>
+                        <pre class="language-bash"><code>$ yo loopback</code></pre>
                         
                         <h3>Create models</h3>
 <pre class="language-bash"><code>$ cd hello-world
