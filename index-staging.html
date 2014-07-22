@@ -355,14 +355,13 @@ $ yo loopback:model
 
 <h3>Create backend app and models</h3>
 <div class="row">
-    <p class="col-sm-5">Use the StrongLoop CLI tool to create the project and two models for office supplies app.</p>
+    <p class="col-sm-5">Use the LoopBack Yeaoman generator to create the project and two models for office supplies app.</p>
 <div class="col-sm-7">
 <pre class="language-bash"><code>$ mkdir office-supplies
 $ cd office-supplies
-$ slc lb project server
-$ cd server
-$ slc lb model product
-$ slc lb model category
+$ yo loopback
+$ yo loopback:model product
+$ yo loopback:model category
 </code></pre></div>
 </div> <!-- end row -->
 
@@ -372,8 +371,7 @@ $ slc lb model category
     <p>Secure all the model APIs, then allow admins to modify products.</p>
 </div>
 <div class="col-sm-7">
-<pre class="language-bash"><code>$ slc lb acl --all-models --deny --everyone
-$ slc lb acl --model product --allow --owner --all
+<pre class="language-bash"><code>$ yo loopbacK:acl
 </code></pre>
 </div>
 </div> <!-- end row -->
