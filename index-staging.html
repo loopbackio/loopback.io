@@ -84,29 +84,27 @@
                     <div id="top-container" class="row">
                         <div class="hidden-sm hidden-xs" >
                             <div class="terminal-container">
-                            <img style="margin: 0; padding: 0; float: left;" src="images/terminal-hdr2.png" />
+                            <img style="margin: 0; padding: 0; float: left;" width=900 src="images/terminal-hdr2.png" />
                             <div class="terminal">
 &Omega; npm install -g strongloop        <span class="comment">// Install the framework</span>
-&Omega; slc update                       <span class="comment">// Update to the latest CLI</span>
+&Omega; slc update                       <span class="comment">// If you installed slc before, update it</span>
 &Omega; yo loopback                      <span class="comment">// Create your project using Yeoman</span>
-[?] Enter a directory name where to create the project: my-new-project
-<span class="comment">// At the prompt enter the directory where your project will live</span>
-[?] What's the name of your application? my-new-app
-<span class="comment">// Hit Enter to name your project the same thing</span>
+[?] Enter a directory name where to create the project: <span class="userentry">my-new-project</span>
+[?] What's the name of your application? <span class="userentry">my-new-app</span>
 &Omega; cd my-new-project
-&Omega; yo loopback:model my-model        <span class="comment">// Create your first model</span>
-[?] Enter the model name: my-model  <span class="comment">// Name the model</span>
+&Omega; yo loopback:model                <span class="comment">// Create your first model</span>
+[?] Enter the model name: <span class="userentry">my-model</span>  <span class="comment">// Name the model</span>
 [?] Select the data-source to attach my-model to: db (memory)
-                                    <span class="comment">// Hit Enter to accept the defaults</span>
-[?] Expose my-model via the REST API? Yes
-[?] Custom plural form (used to build REST URL):
+                                    <span class="comment">// Hit Enter to accept defaults</span>
+[?] Expose my-model via the REST API? <span class="userentry">Yes</span>
+[?] Custom plural form (used to build REST URL):  <span class="comment">// Default is 'my-models'</span>
 Let's add some my-model properties now.
 Enter an empty property name when done.
-[?] Property name: property1        <span class="comment">// Name the first property in the model</span>
+[?] Property name: <span class="userentry">property1</span>  <span class="comment">// Name the first property in the model</span>
    invoke   loopback:property
-[?] Property type: string           <span class="comment">// Hit Enter to accept the default type, string</span>
-[?] Required? No                    <span class="comment">// Hit Enter to accept the default (not required)</span>
-&Omega; node .                            <span class="comment">// Start your application</span>
+[?] Property type: <span class="userentry">string</span>     <span class="comment">// Hit Enter to accept default type, string</span>
+[?] Required? <span class="userentry">No</span>              <span class="comment">// Hit Enter to accept default (not required)</span>
+&Omega; node .                      <span class="comment">// Start your application</span>
 </div></div>
 
                             <p id="explore">Now you can explore your working API at <a href="http://localhost:3000/explorer">http://localhost:3000/explorer</a>.</p>
@@ -264,37 +262,42 @@ Enter an empty property name when done.
                     <div class="article">
                         <h3>Install</h3>
                         <p>Assuming you have already installed Node...</p>
+                        <p>Install the StrongLoop tools for LoopBack applications.</p>
 
                         <pre class="language-bash"><code>$ npm install -g strongloop</code></pre>
-                        <p>This installs the StrongLoop tools and modules to develop and run LoopBack applications.</p>
 
+                        <p>If you installed slc before, update it.</p>                        
                         <pre class="language-bash"><code>$ slc update</code></pre>
-                        <p>Get the latest updates and update dependencies.</p>
 
                         <h3>Create app</h3>
                         <p>Create a "Hello World" LoopBack application.</p>
 
-                        <pre class="language-bash"><code>$ yo loopback</code></pre>
-
+                        <pre class="language-bash"><code>$ yo loopback
+[?] Enter a directory name where to create the project: <span class="userentry">hello-world</span>
+[?] What's the name of your application? <span class="userentry">hello-world</span></code></pre>
+                        
                         <h3>Create models</h3>
 <pre class="language-bash"><code>$ cd hello-world
 $ yo loopback:model
 </code></pre>
-                        <p>The generator guides you through creating your model.</p>
+                        <p>The generator guides you through creating your model.  
+                        Enter the values highlighted in blue.  
+                        To accept the default, just press Enter.</p>
 
-<pre class="language-bash"><code>This generator will walk you through creating a model configuration.
-...
-[?] Custom plural form (used to build REST URL): people
+<pre class="language-none"><code>[?] Enter the model name: <span class="userentry">person</span>
+[?] Select the data-source to attach person to: <span class="userentry">db (memory)</span>
+[?] Expose person via the REST API? <span class="userentry">Yes</span>
+[?] Custom plural form (used to build REST URL): <span class="userentry">people</span>
+Let's add some person properties now.
 </code></pre>
 
                         <p>Define a firstname property for the person model</p>
 
-                        <pre class="language-bash"><code>Enter an empty property name when done.
-[?] Property name: firstname
- </code></pre>
+                        <pre class="language-none"><code>Enter an empty property name when done.
+[?] Property name: <span class="userentry">firstname</span></code></pre>
 
-                        <p>Select string type using your arrow keys:</p>
-                        <pre class="language-bash"><code>[?] Property type: (Use arrow keys)
+                        <p>Hit Enter to accept the default string type:</p>
+                        <pre class="language-none"><code>[?] Property type: (Use arrow keys)
 ❯ string
   number
   boolean
@@ -306,15 +309,17 @@ $ yo loopback:model
   (other)
 </code></pre>
                         <p>Make the property required.</p>
-                        <pre class="language-bash"><code>
-[?] Required? (y/N) Y
+                        <pre class="language-none"><code>[?] Required? (y/N) <span class="userentry">y</span>
 </code></pre>
-                        <p>Repeat the steps above for lastname property.</p>
-                        <p>Press RETURN to enter an empty property to create the model.</p>
+                        <p>Repeat these steps for lastname property.</p>
+                        <p>Press Enter when prompted for a property name to finish up and create the model.</p>
 
                         <h3>Run the application</h3>
 
-                        <pre class="language-bash"><code>$ slc run . </code></pre>
+                        <pre class="language-bash"><code>$ slc run </code></pre>
+                        <p>This command runs the apps just like <code>node .</code> but enables you to monitor your app with strong agent,
+run and control a multi-process cluster, and has lots of other devops features.
+See <a href="http://docs.strongloop.com/display/SLC/Getting+started+with+slc">Getting started with slc</a> for details.</p>
 
 
                                 <h3>Explore your REST API</h3>
