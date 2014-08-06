@@ -87,12 +87,11 @@
                             <img style="margin: 0; padding: 0; float: left;" width=900 src="images/terminal-hdr2.png" />
                             <div class="terminal">
 &Omega; npm install -g strongloop        <span class="comment">// Install the framework</span>
-&Omega; slc update                       <span class="comment">// If you installed slc before, update it</span>
-&Omega; yo loopback                      <span class="comment">// Create your project using Yeoman</span>
+&Omega; slc loopback                     <span class="comment">// Create your project</span>
 [?] Enter a directory name where to create the project: <span class="userentry">my-new-project</span>
 [?] What's the name of your application? <span class="userentry">my-new-app</span>
 &Omega; cd my-new-project
-&Omega; yo loopback:model                <span class="comment">// Create your first model</span>
+&Omega; slc loopback:model                <span class="comment">// Create your first model</span>
 [?] Enter the model name: <span class="userentry">my-model</span>  <span class="comment">// Name the model</span>
 [?] Select the data-source to attach my-model to: db (memory)
                                     <span class="comment">// Hit Enter to accept defaults</span>
@@ -272,13 +271,13 @@ Enter an empty property name when done.
                         <h3>Create app</h3>
                         <p>Create a "Hello World" LoopBack application.</p>
 
-                        <pre class="language-bash"><code>$ yo loopback
+                        <pre class="language-bash"><code>$ slc loopback
 [?] Enter a directory name where to create the project: <span class="userentry">hello-world</span>
 [?] What's the name of your application? <span class="userentry">hello-world</span></code></pre>
                         
                         <h3>Create models</h3>
 <pre class="language-bash"><code>$ cd hello-world
-$ yo loopback:model
+$ slc loopback:model
 </code></pre>
                         <p>The generator guides you through creating your model.  
                         Enter the values highlighted in blue.  
@@ -364,9 +363,9 @@ See <a href="http://docs.strongloop.com/display/SLC/Getting+started+with+slc">Ge
 <div class="col-sm-7">
 <pre class="language-bash"><code>$ mkdir office-supplies
 $ cd office-supplies
-$ yo loopback
-$ yo loopback:model product
-$ yo loopback:model category
+$ slc loopback
+$ slc loopback:model product
+$ slc loopback:model category
 </code></pre></div>
 </div> <!-- end row -->
 
