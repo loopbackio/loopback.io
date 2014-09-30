@@ -1,635 +1,231 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
-        <meta name="description" content="LoopBack open-source Node.js framework">
-        <meta name="keywords" content="LoopBack mobile backend Node.js Node JavaScript REST API">
-
-        <title>LoopBack</title>
-
-        <link href="favicon1.ico" rel="icon" type="image/x-icon" />
-
-        <!-- PRE-LOADER JAVASCRIPT START -->
-        <script src="js/pace.min.js" type="text/javascript"></script>
-        <!-- PRE-LOADER JAVASCRIPT END -->
-
-        <!-- STYLESHEETS START -->
-        <!-- Bootstrap style sheet -->
-        <link rel="stylesheet" href="css/bootstrap.min.css" />
-        <!-- Sunshine specific style sheet -->
-        <link rel="stylesheet" href="css/styles.css" />
-        <!-- Prism code highlighting -->
-        <link rel="stylesheet" href="css/prism.css" />
-
-        <!-- STYLESHEETS END -->
-
-        <!-- FONTS START -->
-        <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono' rel='stylesheet' type='text/css'>
-        <!-- FONTS END -->
-    </head>
-    <body data-spy="scroll" data-target="#top-navigation">
-        <nav id="top-navigation" class="navbar navbar-default navbar-transparent navbar-fixed-top" role="navigation">
-            <div class="container">
-                <div class="navbar-header">
-                    <button id="menu-mobile" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
-                        <span class="fa fa-bars"></span>
-                    </button>
-                    <!-- LOGO COMES HERE -->
-                    <a class="navbar-brand scroll" href="#header">LoopBack</a>
-                    <a href="http://strongloop.com" class="navbar-brand by-strongloop">By StrongLoop</a>
-                </div>
-
-                <!-- NAV ITEMS START -->
-                <div class="collapse navbar-collapse" id="navbar-collapse-1">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#header" class="scroll">Home</a></li>
-                        <li><a href="#about" class="scroll">About</a></li>
-                        <li><a href="#gs" class="scroll">Getting Started</a></li>
-                        <li><a href="#examples" class="scroll">Examples</a></li>
-                        <li><a href="#docs" class="scroll">Docs & Blogs</a></li>
-                        <li><div style="width:225px;"></div></li>
-                    </ul>
-                </div>
-                <a class="hidden-xs" href="https://github.com/strongloop/loopback"><img style="position: absolute; top: 0; right: 0; border: 0;"
-                    src="images/fork.png" alt="Fork me on GitHub"></a>
-            </div>
-            <!-- NAV ITEMS END -->
-        </nav>
-        <!-- PAGE START -->
-        <div id="page">
-            <div class="container">
-
-                <!-- HOME START -->
-                <div id="header">
-                    <div class="row" >
-                        <img class="img-responsive col-xs-2 col-xs-offset-2" src="images/loopback-logo-anti-aliased-124px.png" />
-                        <img style="margin-top: 15px;" class="img-responsive col-xs-7" src="images/masthead-cropped.png" />
-                    </div>
-                    <div class="row" >
-                        <h1 style="width: 420px;" class="tagline center-block">Open-source Node.js framework</h1>
-                        <div class="top-list center-block">
-                            <ul>
-                                <li>Create dynamic REST APIs</li>
-                                <li>Android, iOS, and AngularJS SDKs</li>
-                                <li>Unlock enterprise data for mobile apps</li>
-                                <li>Push, geolocation, and file services</li>
-                                <li>On-premises or in the cloud</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <br/>
-
-                    <div id="top-container" class="row">
-                        <div class="hidden-sm hidden-xs" >
-                            <div class="terminal-container">
-                            <img style="margin: 0; padding: 0; float: left;" width=900 src="images/terminal-hdr2.png" />
-                            <div class="terminal">
-&Omega; npm install -g strongloop        <span class="comment">// Install the framework</span>
-&Omega; slc loopback                     <span class="comment">// Create your project</span>
-[?] Enter a directory name where to create the project: <span class="userentry">my-new-project</span>
-[?] What's the name of your application? <span class="userentry">my-new-app</span>
-&Omega; cd my-new-project
-&Omega; slc loopback:model                <span class="comment">// Create your first model</span>
-[?] Enter the model name: <span class="userentry">my-model</span>  <span class="comment">// Name the model</span>
-[?] Select the data-source to attach my-model to: db (memory)
-                                    <span class="comment">// Hit Enter to accept defaults</span>
-[?] Expose my-model via the REST API? <span class="userentry">Yes</span>
-[?] Custom plural form (used to build REST URL):  <span class="comment">// Default is 'my-models'</span>
-Let's add some my-model properties now.
-Enter an empty property name when done.
-[?] Property name: <span class="userentry">property1</span>  <span class="comment">// Name the first property in the model</span>
-   invoke   loopback:property
-[?] Property type: <span class="userentry">string</span>     <span class="comment">// Hit Enter to accept default type, string</span>
-[?] Required? <span class="userentry">No</span>              <span class="comment">// Hit Enter to accept default (not required)</span>
-&Omega; node .                      <span class="comment">// Start your application</span>
-</div></div>
-
-                            <p id="explore">Now you can explore your working API at <a href="http://localhost:3000/explorer">http://localhost:3000/explorer</a>.</p>
-                        </div>
-                        <div class="hidden-sm hidden-xs">
-                            <a href="#gs" class="btn btn-primary pull-left">Get LoopBack</a>
-                        </div>
-                        <div class="github-btns pull-right hidden-sm hidden-xs">
-                            <iframe src="http://ghbtns.com/github-btn.html?user=strongloop&repo=loopback&type=watch&count=true"
-                                allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
-                            <iframe src="http://ghbtns.com/github-btn.html?user=strongloop&repo=loopback&type=fork&count=true"
-                                allowtransparency="true" frameborder="0" scrolling="0" width="95" height="20"></iframe>
-                            <iframe src="http://ghbtns.com/github-btn.html?user=strongloop&repo=loopback&type=follow"
-                                allowtransparency="true" frameborder="0" scrolling="0" width="165" height="20"></iframe>
-                        </div>
-                    </div> <!-- top-container -->
-                    <div class="hidden-md hidden-lg" style="margin-bottom: 30px;">
-                        <a href="#gs" class="btn btn-primary pull-left">Get LoopBack</a>
-                        <div class="github-btns pull-right" >
-                            <iframe src="http://ghbtns.com/github-btn.html?user=strongloop&repo=loopback&type=watch&count=true"
-                                allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
-                            <iframe src="http://ghbtns.com/github-btn.html?user=strongloop&repo=loopback&type=fork&count=true"
-                                allowtransparency="true" frameborder="0" scrolling="0" width="95" height="20"></iframe>
-                            <iframe src="http://ghbtns.com/github-btn.html?user=strongloop&repo=loopback&type=follow"
-                                allowtransparency="true" frameborder="0" scrolling="0" width="165" height="20"></iframe>
-                        </div>
-                    </div>
-                </div>
-                <!-- HOME END -->
-
-                <!-- ABOUT START -->
-                <a id="about" class="anchor"></a>
-                <section>
-                    <h2>About LoopBack</h2>
-                    <div class="row">
-                        <div class="col-lg-4 col-md-12">
-                            <ul class="about-list">
-                                <li>Use the CLI to generate REST APIs</li>
-                                <li>Connect devices and browsers to data and services</li>
-                                <li>Open source and extensible</li>
-                            </ul>
-                        </div>
-                        <div class="col-lg-8">
-                            <img class="img-responsive" src="images/daigram.png" />
-                        </div>
-                    </div>
-                    <h3>Core</h3>
-                    <div class="row">
-                        <div class="col-md-6 about-items">
-                            <h4>Set up models and create REST APIs in minutes</h4>
-                            <ul>
-                                <li>Easy-to-use CLI wizard</li>
-                                <li>Create models based on your schema if you have one</li>
-                                <li>Create dynamic models if you don't</li>
-                                <li>Built-in API Explorer</li>
-                            </ul>
-                           <h4>Model relation support</h4>
-                            <ul>
-                                <li>Define hasMany, belongsTo, hasAndBelongsToMany relationships</li>
-                                <li>Automatically generates corresponding REST endpoints</li>
-                            </ul>
-                        </div>
-                        <div class="col-md-6 about-items">
-                            <h4>Easy authentication and authorization setup</h4>
-                            <ul>
-                                <li>Built-in role-based access controls</li>
-                                <li>oAuth user and registration models baked in</li>
-                                <li>Add custom policies using CLI or JSON</li>
-                                <li>Browser support (JSONP and CORS)</li>
-                            </ul>
-
-                            <h4>MIT open-source license</h4>
-                        </div>
-                    </div>
-                    <h3>Client SDKs</h3>
-                    <div class="row">
-                        <div class="col-lg-6 about-items">
-                            <h4>Native Mobile and Browser SDKs</h4>
-                            <ul>
-                                <li>Easily persist data with a database API on the client</li>
-                                <li>Store files, send push notifications, and call custom server-side code</li>
-                                <li>Android / Java</li>
-                                <li>iOS</li>
-                                <li>Browser JavaScript (Angular)</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <h3>Juggler</h3>
-                    <div class="row">
-                        <div class="col-md-6 about-items">
-                            <h4>Connect to backend data stores</h4>
-                            <ul>
-                                <li>MySQL, Oracle, MongoDB, and others</li>
-                                <li>Other REST services</li>
-                                <li>Discovery APIs for Oracle and MySQL</li>
-                            </ul>
-                        </div>
-                        <div class="col-md-6 about-items">
-                            <h4>Run ad-hoc queries</h4>
-                            <ul>
-                                <li>Run dynamic queries on devices, browsers and the server</li>
-                                <li>Support for NoSQL-style queries against relational databases</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <h3>Add-on Components</h3>
-                    <div class="row">
-                        <div class="col-md-6 about-items">
-                            <h4>Push notifications</h4>
-                            <ul>
-                                <li>Backend push system with simple API calls</li>
-                                <li>Supports both Android and iOS</li>
-                            </ul>
-                        </div>
-                        <div class="col-md-6 about-items">
-                            <h4>Storage service</h4>
-                            <ul>
-                                <li>Integrate with cloud storage providers</li>
-                                <li>Organize data in containers and files</li>
-                            </ul>
-                        </div>
-                        <div class="col-md-6 about-items">
-                            <h4>Third party login</h4>
-                            <ul>
-                                <li>Use third party login providers like Facebook, GitHub etc</li>
-                                <li>Map inbound and outbound credentials to users</li>
-                            </ul>
-                        </div>
-                        <div class="col-md-6 about-items">
-                            <h4>Geolocation</h4>
-                            <ul>
-                                <li>Validate and store geolocations</li>
-                                <li>Find nearby results with geo filters</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <h3>More Information</h3>
-                    <div class="row">
-                        <div class="col-md-6">
-                             <ul>
-                                <li><a href="http://docs.strongloop.com/display/LB">LoopBack Documentation</a></li>
-                                 <li><a href="http://apidocs.strongloop.com/loopback/">API docs</a></li>
-                                <li><a href="http://strongloop.com/strongblog/category/loopback-2/">StrongLoop blog</a></li>
-                                <li><a href="http://strongloop.com/strongloop-suite/subscription-plans/">Professional support</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
-                <!-- ABOUT END -->
-
-                <!-- GETTING STARTED START -->
-                <a id="gs" class="anchor"></a>
-                <section>
-                    <h2>Getting Started</h2>
-                    <div class="article">
-                        <h3>Install</h3>
-                        <p>Assuming you have already installed Node...</p>
-                        <p>Install the StrongLoop tools for LoopBack applications.</p>
-
-                        <pre class="language-bash"><code>$ npm install -g strongloop</code></pre>
-
-                        <p>If you installed slc before, update it.</p>                        
-                        <pre class="language-bash"><code>$ slc update</code></pre>
-
-                        <h3>Create app</h3>
-                        <p>Create a "Hello World" LoopBack application.</p>
-
-                        <pre class="language-bash"><code>$ slc loopback
-[?] Enter a directory name where to create the project: <span class="userentry">hello-world</span>
-[?] What's the name of your application? <span class="userentry">hello-world</span></code></pre>
-                        
-                        <h3>Create models</h3>
-<pre class="language-bash"><code>$ cd hello-world
-$ slc loopback:model
-</code></pre>
-                        <p>The generator guides you through creating your model.  
-                        Enter the values highlighted in blue.  
-                        To accept the default, just press Enter.</p>
-
-<pre class="language-none"><code>[?] Enter the model name: <span class="userentry">person</span>
-[?] Select the data-source to attach person to: <span class="userentry">db (memory)</span>
-[?] Expose person via the REST API? <span class="userentry">Yes</span>
-[?] Custom plural form (used to build REST URL): <span class="userentry">people</span>
-Let's add some person properties now.
-</code></pre>
-
-                        <p>Define a firstname property for the person model</p>
-
-                        <pre class="language-none"><code>Enter an empty property name when done.
-[?] Property name: <span class="userentry">firstname</span></code></pre>
-
-                        <p>Hit Enter to accept the default string type:</p>
-                        <pre class="language-none"><code>[?] Property type: (Use arrow keys)
-❯ string
-  number
-  boolean
-  object
-  array
-  date
-  buffer
-  geopoint
-  (other)
-</code></pre>
-                        <p>Make the property required.</p>
-                        <pre class="language-none"><code>[?] Required? (y/N) <span class="userentry">y</span>
-</code></pre>
-                        <p>Repeat these steps for lastname property.</p>
-                        <p>Press Enter when prompted for a property name to finish up and create the model.</p>
-
-                        <h3>Run the application</h3>
-
-                        <pre class="language-bash"><code>$ slc run </code></pre>
-                        <p>This command runs the apps just like <code>node .</code> but enables you to monitor your app with strong agent,
-run and control a multi-process cluster, and has lots of other devops features.
-See <a href="http://docs.strongloop.com/display/SLC/Getting+started+with+slc">Getting started with slc</a> for details.</p>
-
-
-                                <h3>Explore your REST API</h3>
-                                <p>
-                                Load <a href="http://0.0.0.0:3000/explorer">http://0.0.0.0:3000/explorer</a> to see the built-in API Explorer..
-                                </p><p>
-                                The API Explorer enables you to exercise all the generated API endpoints.
-                                There are create, read, update, and delete (CRUD) endpoints for the <code>people</code> model you just created.
-                                </p>
-                                <p>For more information, see the <a href="http://docs.strongloop.com/display/LB/Use+API+Explorer">Using the API Explorer</a> in the documentation.
-                                You may also want to follow the <a href="http://docs.strongloop.com/display/LB/Getting+Started+with+LoopBack">Getting Started</a> tutorial.
-                                </p>
-                        <div class="row">
-                            <img src="images/helloworld-api-explorer.png" class="img-responsive col-xs-8 col-xs-offset-2 img-thumbnail">
-                            <br clear="all"/>
-                            <div class="xs-col-12">&nbsp;</div>
-                        </div>
-                    </div> <!-- end article -->
-                </section>
-                <!-- GETTING STARTED END -->
-
-                <!-- EXAMPLES START -->
-                <a id="examples" class="anchor"></a>
-                <section>
-
-                        <h2>Examples</h2>
-                            <div class="article">
-                            <ul>
-                                <li><a href="https://github.com/strongloop/loopback-example-office-supplies/">Office Supplies App</a> - a simple example that illustrates creating models, relations between models, and basic access control.</li>
-                                <li><a href="https://github.com/strongloop/loopback-example-access-control">Banking App</a> - Simple mobile app that illustrates how to impose access controls.  Front-end uses Angular, Cordova, and Ionic.</li>
-                                <li><a href="https://github.com/strongloop-community/loopback-mobile-getting-started">LoopBack Mobile Getting Started App</a> - Basic example app with both iOs and Android front-ends.</li>
-                                <li><a href="https://github.com/strongloop-community/loopback-example-database">Database connector example</a> - illustrates connecting to MySQL, Oracle, PostgreSQL, and MS SQL Server databases. Each database connector has its own branch in the GitHub repository.</li>
-                                <li><a href="https://github.com/strongloop-community/loopback-example-datagraph">Datagraph example</a> - illustrates model relationship APIs over REST.</li>
-                                <li><a href="https://github.com/strongloop/loopback-example-access-control">Access control example</a> - Example using authentication and authorization.</li>
-
-                            </ul>
-
-
-<h3>Create backend app and models</h3>
-<div class="row">
-    <p class="col-sm-5">Use the LoopBack Yeoman generator to create the project and two models for office supplies app.</p>
-<div class="col-sm-7">
-<pre class="language-bash"><code>$ mkdir office-supplies
-$ cd office-supplies
-$ slc loopback
-$ slc loopback:model product
-$ slc loopback:model category
-</code></pre></div>
-</div> <!-- end row -->
-
-<h3>Create a secure REST API</h3>
-<div class="row">
-    <div class="col-sm-5">
-    <p>Secure all the model APIs, then allow admins to modify products.</p>
-</div>
-<div class="col-sm-7">
-<pre class="language-bash"><code>$ slc loopback:acl
-</code></pre>
-</div>
-</div> <!-- end row -->
-
-<h3>Easily persist data</h3>
-<div class="row">
-    <p class="col-sm-5">LoopBack models have a full set of methods for create, read, update, and delete (CRUD) operations.  For example: </p>
-<div class="col-sm-7">
-<pre class="language-javascript"><code>category.create({name: 'stationery', id: 1});
-product.create({
-  categoryId: 1,
-  name: 'Pencil',
-  price: 0.99
-});
-</code></pre>
-</div>
-</div> <!-- end row -->
-
-<h3>Define model relations</h3>
-<div class="row">
-    <p class="col-sm-5">Use simple JSON declarative syntax to set up relations between models.  For example, the following
-specifies that a product belongs to one category (identified by categoryId) and has one owner (identified by ownerId).
-    </p>
-    <div class="col-sm-7">
-<pre class="language-javascript"><code>"product": {
-    "options": {
-      "relations": {
-        "category": {
-          "model": "category",
-          "type": "belongsTo",
-          "foreignKey": "categoryId"
-        },
-        "owner": {
-          "model": "category",
-          "type": "belongsTo",
-          "foreignKey": "ownerId"
-        }
-      }
-    },
-    "properties": {},
-    "public": true,
-    "dataSource": "db"
-  },
-</code></pre>
-    </div>
-</div> <!-- end row -->
-
-<h3>Run ad-hoc queries</h3>
-<p class="col-xs-12">Call directly into the LoopBack APIs directly from iOS, Android, or client JavaScript. </p>
-<div class="row">
-    <div class="col-md-6">
-        <p>Node.js:</p>
-        <pre class="language-javascript"><code>MyProduct.find({
-    where: {price: {lt: 100}},
-    order: 'price ASC',
-    limit: 3
-}, function(err, products) {
-    ...
-});</code></pre>
-    </div>
-    <div class="col-md-6">
-        <p>iOS Objective-C:</p>
-        <pre class="language-clike"><code>[MyProduct createWithDictionary:@{
-    @"name": @"Pencil",
-    @"price": @0.99
-}]</code></pre>
-    </div>
-</div>
-<div class="row">
-    <div class="col-md-6">
-        <p>Android Java:</p>
-        <pre class="language-java"><code>MyProductRepository repo =
-    adapter.createRepository(MyProduct.class);
-    MyProduct pencil = repo.create();
-    pencil.name = "Pencil";
-    pencil.price = 0.99;
-    pencil.save();</code></pre>
-    </div>
-    <div class="col-md-6">
-        <p>HTML5:</p>
-        <pre class="language-javascript"><code>MyProduct.create({
-    name: 'Pencil',
-    price: 0.99
-});</code></pre>
-    </div>
-</div>
-
-<h3>Connect to Oracle database</h3>
-<div class="row">
-        <p class="col-sm-5">Easily connect to backend databases such as Oracle. </p>
-        <div class="col-sm-7">
-<pre class="language-javascript"><code>var loopback = require('loopback');
-var ds = loopback.createDataSource('oracle', {
-    "host": "demo.strongloop.com",
-    "port": 1521,
-    "database": "XE",
-    "username": "demo",
-    "password": "L00pBack"
-});
-</code></pre>
-    </div>
-</div> <!-- end row -->
-
-<h3>Automatically discover and expose database tables</h3>
-<div class="row">
-        <p class="col-sm-5">The Oracle and MySQL connectors provide APIs that enable you to "discover" model definition information from existing databases,
-        including schema information such as column names and datatypes and relation information such as primary and foreign keys.  </p>
-        <div class="col-sm-7">
-<pre class="language-javascript"><code>var ds = require('../data-sources/db.js')('oracle');
-// Discover and build models from INVENTORY table
-ds.discoverAndBuildModels('INVENTORY',
-    {visited: {}, owner: 'LOOPBACK', associations: true},
-    function (err, models) {
-        models.Inventory.findOne({}, function (err, inv) {
-            console.log("Inventory: ", inv);
-            inv.product(function (err, prod) {
-                console.log("Product: ", prod);
-            });
-        });
-    }
-)
-</code></pre>
-    </div>
-</div> <!-- end row -->
-                </section>
-                <!-- EXAMPLES END -->
-
-
-                <!-- DOCS START -->
-                <a id="docs" class="anchor"></a>
-                <section>
-                    <h2>Documentation, Blogs, and Tutorials</h2>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <ul class="about-list">
-                                <li><a href="http://docs.strongloop.com/display/LB" target="_blank">Official LoopBack documentation</a></li>
-                                <li>Blogs:
-                                <ul>
-                                    <li>General
-                                        <ul>
-                                            <li><a href="http://strongloop.com/strongblog/compare-express-restify-hapi-loopback/" target="_blank">Comparing Express, Restify, hapi and LoopBack for building RESTful APIs</a></li>
-                                            <li><a href="http://strongloop.com/strongblog/full-stack-javascript-isomorphic-loopback-browse/" target="_blank">Full Stack JavaScript in Action with LoopBack’s Browser Support</a></li>
-                                            <li><a href="http://strongloop.com/strongblog/nodejs-loopback-deployd-api-serve/" target="_blank">Node.js is Required for Next Generation API Servers</a></li>
-                                            <li><a href="http://strongloop.com/strongblog/node-js-api-tier-enterprise/" target="_blank">Why the Enterprise needs an API Tier built in Node.js</a></li>
-                                            <li><a href="http://strongloop.com/strongblog/how-to-migrate-an-mbaas-deployd-to-loopback/" target="_blank">How to Migrate an mBaaS: Deployd to LoopBack</a></li>
-                                            <li><a href="http://strongloop.com/strongblog/how-to-run-node-js-on-the-jvm-with-avatar-js-and-loopback/" target="_blank">How to run Node.js on the JVM with Avatar.js and LoopBack</a></li>
-                                        </ul>
-                                    </li>
-                                    <li>Modeling
-                                    <ul>
-                                        <li><a href="http://strongloop.com/strongblog/defining-and-mapping-data-relations-with-loopback-connected-models/" target="_blank">Defining and Mapping Data Relations with LoopBack Connected Models</a></li>
-                                        <li><a href="http://strongloop.com/strongblog/recipes-for-loopback-models-part-1-of-5-open-models/" target="_blank">Recipes for LoopBack Models Part 1: Open Models</a></li>
-                                        <li><a href="http://strongloop.com/strongblog/recipes-for-loopback-models-part-2-of-5-models-with-schema-definitions/" target="_blank">Recipes for LoopBack Models Part 2: Models with Schema Definitions</a></li>
-                                        <li><a href="http://strongloop.com/strongblog/recipes-for-loopback-models-part-3-of-5-model-discovery-with-relational-databases/" target="_blank">Recipes for LoopBack Models Part 3: Model Discovery with Relational Databases</a></li>
-                                        <li><a href="http://strongloop.com/strongblog/recipes-for-loopback-models-part-4-of-5-models-by-instance-introspection/" target="_blank">Recipes for LoopBack Models Part 4: Models by Instance Introspection</a></li>
-                                        <li><a href="http://strongloop.com/strongblog/recipes-for-loopback-models-part-5-of-5-model-synchronization-with-relational-databases/" target="_blank">Recipes for LoopBack Models Part 5: Model Synchronozation with Relational Databases</a></li>
-
-                                    </ul>
-                                    </li>
-                                    <li>Connectors
-                                    <ul>
-                                        <li><a href="http://strongloop.com/strongblog/authenticate-loopback-google-facebook-github/" target="_blank">Announcing Support for Google, Facebook and GitHub Authentication in LoopBack</a></li>
-                                        <li><a href="http://strongloop.com/strongblog/postgresql-node-js-apis-loopback-connector/" target="_blank">Getting Started with the PostgreSQL Connector for LoopBack</a></li>
-                                        <li><a href="http://strongloop.com/strongblog/soap-into-rest-apis-with-loopback-node-js/" target="_blank">Turn SOAP into REST APIs with LoopBack</a></li>
-                                        <li><a href="http://strongloop.com/strongblog/managing-nodejs-loopback-storage-service-provider/" target="_blank">Managing Objects in LoopBack with the Storage Provider of Your Choice</a></li>
-                                        <li><a href="http://strongloop.com/strongblog/getting-started-with-the-mysql-connector-for-loopback/" target="_blank">Getting Started with the MySQL Connector for LoopBack</a></li>
-                                    </ul>
-                                    </li>
-                                    <li>Client SDKs
-                                    <ul>
-                                        <li><a href="http://strongloop.com/strongblog/how-to-setup-push-notifications-private-mbaas-amazon-aws-part-1/" target="_blank">Enable Push Notifications With a Private mBaaS Hosted on Amazon – Intro to LoopBack (Four parts)</a></li>
-                                        <li><a href="http://strongloop.com/strongblog/angular-js-sdk-loopbac/" target="_blank">Announcing the AngularJS SDK for LoopBack</a></li>
-                                        <li><a href="http://strongloop.com/strongblog/push-notifications-ios7-looback-node-js/" target="_blank">Getting Started with iOS Push Notifications in LoopBack</a></li>
-                                        <li><a href="http://strongloop.com/strongblog/android-push-notifications-loopback-node-js/" target="_blank">Getting Started with Android Push Notifications in LoopBack</a></li>
-                                        <li><a href="http://strongloop.com/strongblog/how-to-crud-ios-nodejs-loopback-api-server-part-1/" target="_blank">How-to Build CRUD Enabled iOS Apps with the LoopBack API Server – Part 1</a> and <a href="http://strongloop.com/strongblog/how-to-crud-ios-nodejs-loopback-api-server-part-2/" target="_blank">Part 2</a></li>
-                                        <li><a href="http://strongloop.com/strongblog/announcing-loopback-android-sdk/" target="_blank">Announcing LoopBack Android SDK</a>
-                                    </ul>
-                                    </li>
-                                    <li>Cloud providers:
-                                    <ul>
-                                        <li><a href="http://strongloop.com/strongblog/install-node-js-monitoring-and-a-mobile-backend-on-nodejitsu/" target="_blank">Install Node.js monitoring and a mobile backend on Nodejitsu</a>
-                                        <li><a href="http://strongloop.com/strongblog/node-js-monitoring-elastic-beanstalk/" target="_blank">Installing Node.js Monitoring and an API Server on Elastic Beanstalk</a></li>
-                                        <li><a href="http://strongloop.com/strongblog/install-node-js-loopback-and-strongops-on-digital-ocean/" target="_blank">Install Node.js, LoopBack and StrongOps on Digital Ocean</a></li>
-                                        <li><a href="http://strongloop.com/strongblog/deploying-loopback-mbaas-on-rackspace/" target="_blank">Deploying LoopBack mBaaS on Rackspace</a></li>
-                                        <li><a href="http://strongloop.com/strongblog/getting-started-with-strongloop-on-cloud9-ide/" target="_blank">Getting Started with StrongLoop on Cloud9 IDE</a></li>
-
-                                    </ul>
-
-                                    </li>
-                                </ul>
-                                </ul>
-                            </ul>
-                        <h3>Powered by LoopBack logo</h3>
-                        <p>Add the logo to your LoopBack-powered site or app:</p>
-                        <div class="powered-by">50px x 64px: <img src="images/powered-by-LB-xs.png"></div>
-                        <div class="powered-by">100px x 129px: <img src="images/powered-by-LB-sm.png"></div>
-                        <div class="powered-by">200px x 258px: <img src="images/powered-by-LB-med.png"></div>                            
-                    </div>
-                </section>
-                <!-- DOCS END -->
-
-            </div>
-            <!-- CONTAINER END -->
-            <!-- FOOTER START -->
-            <footer id="footer">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <p class="text-muted">&copy; Copyright 2014 StrongLoop, Inc.</p>
-                        </div>
-                    </div>
-                </div>
-            </footer>
-            <!-- FOOTER END -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>LoopBack</title>
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Ubuntu:300,400,500,300italic,400italic,500italic">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Ubuntu+Mono">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/prism.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <script src="//code.jquery.com/jquery-1.10.2.min.js"></script><script src="//cdnjs.cloudflare.com/ajax/libs/jquery-placeholder/2.0.7/jquery.placeholder.min.js"></script><script src="//cdnjs.cloudflare.com/ajax/libs/fastclick/0.6.11/fastclick.min.js"></script><script src="/js/prism.js"></script><script>$('input, textarea').placeholder();</script><!--[if lt IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js"></script><![endif]--><script src="/js/main.js"></script>
+  </head>
+  <body class="l-page-index -index js-body">
+    <div class="c-wrapper js-wrapper">
+      <header class="c-masthead">
+        <div class="c-container x-flex-v js-masthead-container">
+          <a href="/" class="_logo x-flex-v">
+            <h1 class="c-heading -h3">LoopBack</h1>
+          </a>
+          <nav class="_nav js-masthead-nav">
+            <ul class="_nav-list js-nav-list">
+              <li class="_nav-item -active"><a href="/">About</a></li>
+              <li class="_nav-item "><a href="/getting-started">Getting started</a></li>
+              <li class="_nav-item "><a href="/examples">Examples</a></li>
+              <li class="_nav-item "><a href="/resources">Resources</a></li>
+              <li class="_nav-item"><a href="https://github.com/strongloop/loopback">GitHub</a></li>
+            </ul>
+          </nav>
+          <button class="_menu js-menu"><i class="fa fa-bars"> </i><span class="x-hide">Menu</span></button><iframe src="http://ghbtns.com/github-btn.html?user=strongloop&amp;repo=loopback&amp;type=watch&amp;count=true" class="c-github-star js-github-star"></iframe>
         </div>
-        <!-- PAGE END -->
-
-        <!-- JAVASCRIPT START -->
-        <!-- jQuery script -->
-        <script src="js/jquery-1.10.2.min.js" type="text/javascript"></script>
-        <!-- Bootstrap script -->
-        <script src="js/bootstrap.min.js" type="text/javascript"></script>
-        <!-- Pretty photo script
-        <script src="js/jquery.prettyPhoto.js" type="text/javascript"></script> -->
-        <!-- Parallax script -->
-        <script src="js/jquery.parallax-1.1.3.js" type="text/javascript"></script>
-        <!-- Mixitup Filters script -->
-        <script src="js/jquery.mixitup.min.js" type="text/javascript"></script>
-        <!-- Sunshine specific Scripts -->
-        <script src="js/scripts.js" type="text/javascript"></script>
-        <!-- Prism code highlighting -->
-        <script src="js/prism.js" type="text/javascript"></script>
-        <!-- JAVASCRIPT END -->
-<!-- <script type="text/javascript">
-var _gaq = _gaq || [];
-_gaq.push(['_setAccount', 'UA-37775386-1']);
-_gaq.push(['_setDomainName', 'loopback.io']);
-_gaq.push(['_trackPageview']);
-(function() {
- var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
- ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
- var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-})();
-</script>
--->
-<script type="text/javascript">
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-37775386-1', 'strongloop.com');
-  ga('send', 'pageview');
-
-</script>
-    </body>
+        <div class="c-section -intro">
+          <div class="c-container">
+            <h2 class="c-heading -h1">Powerful Node.js framework for creating APIs and easily connecting to backend data sources.</h2>
+            <div class="c-grid">
+              <div class="_col -col-1-2 -offset-1-4">
+                <div class="c-terminal">
+                  <p>$ npm install -g strongloop</p>
+                </div>
+              </div>
+            </div>
+            <p class="learn-more x-center"><a href="/getting-started" class="c-button -lg x-center">Get Started</a></p>
+          </div>
+        </div>
+      </header>
+      <main class="c-content">
+        <section class="c-section">
+          <div class="c-container -padded">
+            <div class="c-grid">
+              <div class="_col -col-1-2">
+                <h1 class="c-heading -h2">About</h1>
+                <p>LoopBack is a highly-extensible, open-source Node.js framework</p>
+                <ul class="-check">
+                  <li><i class="fa fa-check"></i> Use the CLI to create dynamic end-to-end REST APIs</li>
+                  <li><i class="fa fa-check"></i> Connect devices and browsers to data and services</li>
+                  <li><i class="fa fa-check"></i> Easily create client apps using Android, iOS, and JavaScript SDKs</li>
+                  <li><i class="fa fa-check"></i> Add-on components for push, file management, 3rd-party login, and geolocation</li>
+                  <li><i class="fa fa-check"></i> Runs on-premises or in the cloud</li>
+                  <li><i class="fa fa-check"></i> Use Studio graphical (in beta release) tool to create and work with LoopBack apps</li>
+                </ul>
+              </div>
+              <div class="_col -col-1-2 x-flex-e"><img src="/images/comb.svg" class="c-fleximg -pull-down -last"/></div>
+            </div>
+          </div>
+        </section>
+        <section class="c-section x-greylight">
+          <div class="c-container -padded">
+            <h2 class="c-heading -h3">Core</h2>
+            <div class="c-grid">
+              <div class="_col -col-1-2">
+                <h3 class="c-heading -h5">Set up models and create REST APIs in minutes</h3>
+                <ul>
+                  <li>Easy-to-use CLI wizard</li>
+                  <li>Create models based on your schema if you have one</li>
+                  <li>Create dynamic models if you don't</li>
+                  <li>Built-in API Explorer</li>
+                </ul>
+                <h3 class="c-heading -h5">Model relation support</h3>
+                <ul>
+                  <li>Define hasMany, belongsTo, hasAndBelongsToMany relationships</li>
+                  <li>Automatically generates corresponding relational REST endpoints</li>
+                </ul>
+              </div>
+              <div class="_col -col-1-2">
+                <h3 class="c-heading -h5">Easy authentication and authorization setup</h3>
+                <ul>
+                  <li>Built-in role-based access controls</li>
+                  <li>oAuth user and registration models baked in</li>
+                  <li>Add custom policies using CLI or JSON</li>
+                  <li>Browser support (JSONP and CORS)</li>
+                </ul>
+                <h3 class="c-heading -h5">MIT Open-Source license</h3>
+                <ul>
+                  <li>Dual Licensed: MIT open-source license or StrongLoop license</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="c-section">
+          <div class="c-container -padded">
+            <div class="c-grid">
+              <div class="_col -col-1-2 x-flex-e x-flex-order-2"><img src="/images/sdk.svg" class="c-fleximg -pull-down"/></div>
+              <div class="_col -col-1-2 x-flex-order-1">
+                <h2 class="c-heading -h3">Client SDKs</h2>
+                <h3 class="c-heading -h5">Native Mobile and Browser SDKs</h3>
+                <ul>
+                  <li>Easily persist data with a database API on the client</li>
+                  <li>Store files, send push notifications, and call custom server-side code</li>
+                  <li>Android / Java</li>
+                  <li>iOS</li>
+                  <li>Browser JavaScript (Angular)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="c-section x-greylight">
+          <div class="c-container -padded">
+            <h2 class="c-heading -h3">Juggler</h2>
+            <div class="c-grid">
+              <div class="_col -col-1-2">
+                <h3 class="c-heading -h5">Connect to backend data stores</h3>
+                <ul>
+                  <li>MySQL, Oracle, MongoDB, Postgres and others</li>
+                  <li>Other REST services</li>
+                  <li>Discovery APIs for Oracle, MySQL, PostgreSQL and SQL Server</li>
+                </ul>
+              </div>
+              <div class="_col -col-1-2">
+                <h3 class="c-heading -h5">Run Ad-hoc queries</h3>
+                <ul>
+                  <li>Run dynamic queries on devices, browsers and the server</li>
+                  <li>Support for NoSQL-style queries against relational databases</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="c-section">
+          <div class="c-container -padded">
+            <h2 class="c-heading -h3">Add-on components</h2>
+            <div class="c-grid">
+              <div class="_col -col-1-2">
+                <h3 class="c-heading -h5">Push notifications</h3>
+                <ul>
+                  <li>Backend push system with simple API calls</li>
+                  <li>Supports both Android and iOS</li>
+                </ul>
+                <h3 class="c-heading -h5">Third party login</h3>
+                <ul>
+                  <li>Use third party login providers like Facebook, GitHub etc</li>
+                  <li>Map inbound and outbound credentials to users</li>
+                </ul>
+              </div>
+              <div class="_col -col-1-2">
+                <h3 class="c-heading -h5">Storage service</h3>
+                <ul>
+                  <li>Integrate with cloud storage providers</li>
+                  <li>Organize data in containers and files</li>
+                </ul>
+                <h3 class="c-heading -h5">Geolocation</h3>
+                <ul>
+                  <li>Validate and store geolocations</li>
+                  <li>Find nearby results with geo filters</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="c-section x-greylight">
+          <div class="c-container -padded">
+            <h2 class="c-heading -h3">StrongLoop Studio</h2>
+            <div class="c-grid">
+              <div class="_col -col-1-2">
+                <p>StrongLoop Studio is a browser-based graphical tool for working LoopBack applications and for controlling LoopBack and other Node applications in production.  It is currently in early beta release, and enables you to: </p>
+                <ul>
+                  <li>Create and modify LoopBack models and datasources. </li>
+                  <li>Automatically create database schemas based on your application models.</li>
+                </ul>
+                <h3 class="c-heading -h5">For more information</h3>
+                <p>For more information, see <br><a href="http://docs.strongloop.com/pages/viewpage.action?pageId=3179029">StrongLoop Studio (private beta)</a>.</p>
+              </div>
+              <div class="_col -col-1-2">
+                <h3 class="c-heading -h5">Upcoming releases will add the ability to:</h3>
+                <ul>
+                  <li>Run discovery API against supported database.</li>
+                  <li>Automatically build multiple models and choose properties for each model based on schema, through discovery.</li>
+                  <li>Start, stop, and restart your LoopBack project app.</li>
+                  <li>Explore and operate your REST APIs live - as you develop your model through a richer form-driven interface instead of JSON.</li>
+                  <li>Scaffold a static web application based on your LoopBack models and data sources.</li>
+                  <li>Enter data for the models you have created through a form-based web application.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="c-section">
+          <div class="c-container -padded">
+            <h2 class="c-heading -h3">More information</h2>
+            <div class="c-grid">
+              <div class="_col -col-1-2">
+                <ul>
+                  <li><a href="http://docs.strongloop.com/display/LB">LoopBack Documentation</a></li>
+                  <li><a href="http://apidocs.strongloop.com/loopback/">API docs</a></li>
+                  <li><a href="http://strongloop.com/strongblog/category/loopback-2/">StrongLoop blog</a></li>
+                  <li><a href="http://strongloop.com/strongloop-suite/subscription-plans/">Professional support</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="c-footer x-green">
+        <div class="c-container -padded">
+          <nav class="_nav">
+            <ul class="_nav-list js-nav-list">
+              <li class="_nav-item -active"><a href="/">About</a></li>
+              <li class="_nav-item "><a href="/getting-started">Getting started</a></li>
+              <li class="_nav-item "><a href="/examples">Examples</a></li>
+              <li class="_nav-item "><a href="/resources">Resources</a></li>
+              <li class="_nav-item"><a href="https://github.com/strongloop/loopback">GitHub</a></li>
+            </ul>
+          </nav>
+          <p class="_copyright">© Copyright 2014 StrongLoop, Inc.</p>
+          <iframe src="http://ghbtns.com/github-btn.html?user=strongloop&amp;repo=loopback&amp;type=follow" class="c-github-follow"></iframe>
+        </div>
+      </footer>
+    </div>
+  </body>
 </html>
