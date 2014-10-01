@@ -49,20 +49,27 @@
           <div class="c-container -padded">
             <div class="c-grid">
               <div class="_col -col-2-3">
-                <h2 class="c-heading -h3"><a href="https://github.com/strongloop/loopback-example-office-supplies/">Office Supplies App</a></h2>
-                <p>Simple example that illustrates creating models, relations between models, and basic access control. <a href="https://github.com/strongloop/loopback-example-office-supplies/" class="fa fa-long-arrow-right"></a></p>
-                <hr/>
-                <h2 class="c-heading -h3"><a href="https://github.com/strongloop/loopback-example-access-control">Banking App</a></h2>
-                <p>Simple mobile app that illustrates how to impose access controls. Front-end uses Angular, Cordova, and Ionic. <a href="https://github.com/strongloop/loopback-example-access-control" class="fa fa-long-arrow-right"></a></p>
-                <hr/>
                 <h2 class="c-heading -h3"><a href="https://github.com/strongloop-community/loopback-example-database">Database connector example</a></h2>
-                <p>illustrates connecting to MySQL, Oracle, PostgreSQL, and MS SQL Server databases. Each database connector has its own branch in the GitHub repository. <a href="https://github.com/strongloop-community/loopback-example-database" class="fa fa-long-arrow-right"></a></p>
+                <p>Demonstrates connecting to MySQL, Oracle, PostgreSQL, and MS SQL Server databases. Each database connector has its own branch in the GitHub repository. <a href="https://github.com/strongloop-community/loopback-example-database" class="fa fa-long-arrow-right"></a></p>
                 <hr/>
-                <h2 class="c-heading -h3"><a href="https://github.com/strongloop-community/loopback-example-datagraph">Datagraph example</a></h2>
-                <p>illustrates model relationship APIs over REST. <a href="https://github.com/strongloop-community/loopback-example-datagraph" class="fa fa-long-arrow-right"></a></p>
+                <h2 class="c-heading -h3"><a href="https://github.com/strongloop-community/loopback-example-relation">Relations example</a></h2>
+                <p>Demonstrates setting up model relations. <a href="https://github.com/strongloop-community/loopback-example-relation" class="fa fa-long-arrow-right"></a></p>
                 <hr/>
                 <h2 class="c-heading -h3"><a href="https://github.com/strongloop/loopback-example-access-control">Access control example</a></h2>
                 <p>Example using authentication and authorization. <a href="https://github.com/strongloop/loopback-example-access-control" class="fa fa-long-arrow-right"></a></p>
+                <hr/>
+                <h2 class="c-heading -h3"><a href="https://github.com/strongloop/loopback-example-passport/">Third-party login example</a></h2>
+                <p>Demonstrates how to use LoopBack's user authentication and authorization models with <a href="http://passportjs.org/">Passport</a> to interact with other auth providers.
+                <a href="https://github.com/strongloop/loopback-example-passport/" class="fa fa-long-arrow-right"></a></p>
+                <hr/>
+                <h2 class="c-heading -h3"><a href="https://github.com/strongloop/loopback-example-ssl/">SSL example</a></h2>
+                <p>Demonstrates how to set up SSL for LoopBack applications so the REST APIs can be called using HTTPs. <a href="https://github.com/strongloop/loopback-example-ssl/" class="fa fa-long-arrow-right"></a></p>
+                <hr/>
+                <h2 class="c-heading -h3"><a href="https://github.com/strongloop/loopback-example-app/">LoopBack iCars example</a></h2>
+                <p>Comprehensive example that illustrates authentication, using geolocation, and basic model operations with JQuery front-end. <a href="https://github.com/strongloop/loopback-example-app/" class="fa fa-long-arrow-right"></a></p>
+                <hr/>
+                <h2 class="c-heading -h3"><a href="https://github.com/strongloop/loopback-example-office-supplies/">Office Supplies App</a></h2>
+                <p>Simple example that illustrates creating models, relations between models, and basic access control. <a href="https://github.com/strongloop/loopback-example-office-supplies/" class="fa fa-long-arrow-right"></a></p>
               </div>
             </div>
           </div>
@@ -186,18 +193,9 @@ product.create({
             <div class="c-grid">
               <div class="_col -col-1-2">
                 <h3 class="c-heading -h4">Android Java</h3>
-                <pre><code class="language-java">ProductRepository *repository = (ProductRepository *)[adapter repositoryWithClass:[ProductRepository class]];
-   
-Product *product = (Product *)[repository modelWithDictionary:@{
-   @"name": @"Pencil",
-   @"price": @0.99
-}];</code></pre>
-              </div>
-              <div class="_col -col-1-2">
-                <h3 class="c-heading -h4">Angular JS</h3>
-                <pre><code class="language-javascript">Product product = new Product(
+                <pre><code class="language-java">Product product = new Product(
   ImmutableMap.of("name", "Pencil"));
- 
+
 product.save(new Model.Callback() {
   @Override
   public void onSuccess() {
@@ -209,6 +207,26 @@ product.save(new Model.Callback() {
   }
 });</code></pre>
               </div>
+              <div class="_col -col-1-2">
+                <h3 class="c-heading -h4">Angular JS</h3>
+                <pre><code class="language-javascript">$scope.products = MyProduct.find({
+  filter: {
+    where: {price: {lt: 100}},
+    order: 'price ASC',
+    limit: 3
+  }
+});</code></pre>
+              </div>
+              <div class="_col -col-1-2">
+                <h3 class="c-heading -h4">Isomorphic LoopBack</h3>
+                <pre><code class="language-javascript">MyProduct.find({
+  where: {price: {lt: 100}},
+  order: 'price ASC',
+  limit: 3
+}, function(err, products) {
+  console.log(products); // => Array of MyProduct
+});</code></pre>
+              </div>
             </div>
           </div>
         </section>
@@ -216,19 +234,37 @@ product.save(new Model.Callback() {
           <div class="c-container -padded">
             <h2 class="c-heading -h3">Connect to Oracle Database</h2>
             <div class="c-grid">
+              
               <div class="_col -col-1-3">
-                <p>Easily connect to backend databases such as Oracle.</p>
+                <p>Install Oracle connector</p>
               </div>
               <div class="_col -col-2-3">
-                <pre><code class="language-javascript">var loopback = require('loopback');
-var ds = loopback.createDataSource('oracle', {
+                <pre><code class="language-javascript">$ npm install loopback-connector-oracle</code></pre>
+              </div>
+              
+              <div class="_col -col-1-3">
+                <p>Run CLI to create new datasource:</p>
+              </div>
+              <div class="_col -col-2-3">
+                <pre><code class="language-javascript">$ slc loopback:datasource
+[?] Enter the data-source name: oracledb
+[?] Select the connector for oracledb: Oracle (supported by StrongLoop)</code></pre>
+              </div>
+              
+              <div class="_col -col-1-3">
+                <p>Edit <b>/server/datasources.json</b> and add your Oracle database login information:</p>
+              </div>
+              <div class="_col -col-2-3">
+                <pre><code class="language-javascript"> "oracledb": {
+    "name": "oracledb",
+    "connector": "oracle",
     "host": "demo.strongloop.com",
     "port": 1521,
-    "database": "XE",
+    "database": "Sample",
     "username": "demo",
-    "password": "L00pBack"
-});</code></pre>
-              </div>
+    "password": "secret"
+}</code></pre>
+              </div>              
             </div>
           </div>
         </section>
