@@ -17,6 +17,15 @@
     <script src="/js/main.js"></script>
   </head>
   <body class="l-page-examples -examples-index js-body">
+  <!-- Google Tag Manager -->
+  <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-5XL76H"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-5XL76H');</script>
+  <!-- End Google Tag Manager -->
     <div class="c-wrapper js-wrapper">
       <header class="c-masthead">
         <div class="c-container x-flex-v js-masthead-container">
@@ -33,7 +42,7 @@
             </ul>
           </nav>
           <button class="_menu js-menu">
-            <i class="fa fa-bars"></i> 
+            <i class="fa fa-bars"></i>
             <span class="x-hide">Menu</span>
           </button>
           <iframe src="http://ghbtns.com/github-btn.html?user=strongloop&amp;repo=loopback&amp;type=watch&amp;count=true" class="c-github-star js-github-star"></iframe>
@@ -234,14 +243,14 @@ product.save(new Model.Callback() {
           <div class="c-container -padded">
             <h2 class="c-heading -h3">Connect to Oracle Database</h2>
             <div class="c-grid">
-              
+
               <div class="_col -col-1-3">
                 <p>Install Oracle connector</p>
               </div>
               <div class="_col -col-2-3">
                 <pre><code class="language-javascript">$ npm install loopback-connector-oracle</code></pre>
               </div>
-              
+
               <div class="_col -col-1-3">
                 <p>Run CLI to create new datasource:</p>
               </div>
@@ -250,7 +259,7 @@ product.save(new Model.Callback() {
 [?] Enter the data-source name: oracledb
 [?] Select the connector for oracledb: Oracle (supported by StrongLoop)</code></pre>
               </div>
-              
+
               <div class="_col -col-1-3">
                 <p>Edit <b>/server/datasources.json</b> and add your Oracle database login information:</p>
               </div>
@@ -264,7 +273,7 @@ product.save(new Model.Callback() {
     "username": "demo",
     "password": "secret"
 }</code></pre>
-              </div>              
+              </div>
             </div>
           </div>
         </section>
