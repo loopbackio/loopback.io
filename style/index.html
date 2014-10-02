@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>LoopBack</title>
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Ubuntu:300,400,500,300italic,400italic,500italic">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Ubuntu+Mono">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/prism.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-placeholder/2.0.7/jquery.placeholder.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/fastclick/0.6.11/fastclick.min.js"></script>
+    <script src="/js/prism.js"></script><script>$('input, textarea').placeholder();</script>
+    <!--[if lt IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js"></script><![endif]-->
+    <script src="/js/main.js"></script>
+  </head>
+  <body class="l-page-style -style-index js-body">
+    <div class="c-wrapper js-wrapper">
+      <header class="c-masthead">
+        <div class="c-container x-flex-v js-masthead-container">
+          <a href="/" class="_logo x-flex-v">
+            <h1 class="c-heading -h3">LoopBack</h1>
+          </a>
+          <nav class="_nav js-masthead-nav">
+            <ul class="_nav-list js-nav-list">
+              <li class="_nav-item "><a href="/">About</a></li>
+              <li class="_nav-item "><a href="/getting-started">Getting started</a></li>
+              <li class="_nav-item "><a href="/examples">Examples</a></li>
+              <li class="_nav-item "><a href="/resources">Resources</a></li>
+              <li class="_nav-item"><a href="https://github.com/strongloop/loopback">GitHub</a></li>
+            </ul>
+          </nav>
+          <button class="_menu js-menu">
+            <i class="fa fa-bars"></i> 
+            <span class="x-hide">Menu</span>
+          </button>
+          <iframe src="http://ghbtns.com/github-btn.html?user=strongloop&amp;repo=loopback&amp;type=watch&amp;count=true" class="c-github-star js-github-star"></iframe>
+        </div>
+      </header>
+      <main class="c-content">
+        <section class="c-section">
+          <div class="c-container -padded">
+            <h1 class="c-heading -h2">Styles</h1>
+          </div>
+        </section>
+        <section class="c-section x-greylight">
+          <div class="c-container -padded">
+            <h1 class="c-heading -h3">Class Naming Convention</h1>
+            <p>All classes use a hyphenated naming convention to separate words (i.e. <code>.c-github-follow</code>).</p>
+            <table>
+              <thead>
+                <tr>
+                  <th class="c-heading -h4">Prefix</th>
+                  <th class="c-heading -h4">Purpose</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><code>.c-</code></td>
+                  <td>Classes that start with <code>.c-</code> are components. The highest level of a module, it should describe an independent module that you are creating. Components should be able to exist on their own or within other components.</td>
+                </tr>
+                <tr>
+                  <td><code>._</code></td>
+                  <td>Classes that start with <code>._</code> are subcomponents. These are a child elements of a component.</td>
+                </tr>
+                <tr>
+                  <td><code>.-</code></td>
+                  <td>Classes that start with <code>.-</code> are component modifiers. These are used to modify components or subcomponents. They should always be compounded with a component or subcomponent, never declared as stand-alone style.</td>
+                </tr>
+                <tr>
+                  <td><code>.x-</code></td>
+                  <td>Classes that start with <code>.x-</code> are generic class names that are neither a component or subcomponent. Most commonly these classes are used to identify defined states (i.e. <code>.x-hide</code>) or a generic entity that is not a component (i.e. <code>.x-base-h1</code>).</td>
+                </tr>
+                <tr>
+                  <td><code>.js-</code></td>
+                  <td>These classes are to be avoided in our stylesheets. No exceptions!</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+        <section class="c-section">
+          <div class="c-container -padded">
+            <div class="c-grid">
+              <div class="_col -col-2-3">
+                <h1 class="c-heading -h3">Headings</h1>
+                <p><code>.c-heading</code> - Apply to any level of heading to control style independently from hierarchy.</p>
+                <p><code>.c-heading.-h2</code> - Example modifier for level 2 heading style.</p>
+                <h1 class="c-heading -h1">Heading Level 1</h1>
+                <h2 class="c-heading -h2">Heading Level 2</h2>
+                <h3 class="c-heading -h3">Heading Level 3</h3>
+                <h4 class="c-heading -h4">Heading Level 4</h4>
+                <h5 class="c-heading -h5">Heading Level 5</h5>
+                <h6 class="c-heading -h6">Heading Level 6</h6>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="c-section x-greylight">
+          <div class="c-container -padded">
+            <h1 class="c-heading -h3">Grid</h1>
+            <div class="c-grid -show">
+              <div class="_col -col-1-4"><span>1/4</span></div>
+              <div class="_col -col-1-4"><span>1/4</span></div>
+              <div class="_col -col-1-4"><span>1/4</span></div>
+              <div class="_col -col-1-4"><span>1/4</span></div>
+            </div>
+            <div class="c-grid -show">
+              <div class="_col -col-1-3"><span>1/3</span></div>
+              <div class="_col -col-1-3"><span>1/3</span></div>
+              <div class="_col -col-1-3"><span>1/3</span></div>
+            </div>
+            <div class="c-grid -show">
+              <div class="_col -col-1-2"><span>1/2</span></div>
+              <div class="_col -col-1-2"><span>1/2</span></div>
+            </div>
+            <div class="c-grid -show">
+              <div class="_col -col-1-1"><span>1/1</span></div>
+            </div>
+            <div class="c-grid -show">
+              <div class="_col -col-1-4"><span>1/4</span></div>
+              <div class="_col -col-1-2"><span>1/2</span></div>
+              <div class="_col -col-1-4"><span>1/4</span></div>
+            </div>
+            <div class="c-grid -show">
+              <div class="_col -col-1-3"><span>1/3</span></div>
+              <div class="_col -col-2-3"><span>2/3</span></div>
+            </div>
+            <div class="c-grid -show">
+              <div class="_col -col-2-3"><span>2/3</span></div>
+              <div class="_col -col-1-3"><span>1/3</span></div>
+            </div>
+          </div>
+        </section>
+        <section class="c-section">
+          <div class="c-container -padded">
+            <h1 class="c-heading -h3">Buttons</h1>
+            <div class="c-grid">
+              <div class="_col -col-1-3">
+                <p>small</p>
+                <a href="#" class="c-button">button</a>
+              </div>
+              <div class="_col -col-1-3">
+                <p>disabled <code>-.disabled</code><br></p>
+                <a href="#" class="c-button x-disabled">button</a>
+              </div>
+              <div class="_col -col-1-3">
+                <p>large <code>-.lg</code><br></p>
+                <a href="#" class="c-button -lg">button</a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="c-section x-greylight">
+          <div class="c-container -padded">
+            <div class="c-grid">
+              <div class="_col -col-1-2">
+                <h2 class="c-heading -h2">Heading Level 2</h2>
+                <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nulla vitae elit libero, a pharetra augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Etiam porta sem malesuada magna mollis euismod. Cras mattis consectetur purus sit amet fermentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vestibulum id ligula porta felis euismod semper. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec sed odio dui.</p>
+              </div>
+              <div class="_col -col-1-2">
+                <h2 class="c-heading -h2">Heading Level 2</h2>
+                <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nulla vitae elit libero, a pharetra augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Etiam porta sem malesuada magna mollis euismod. Cras mattis consectetur purus sit amet fermentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vestibulum id ligula porta felis euismod semper. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec sed odio dui.</p>
+              </div>
+            </div>
+            <div class="c-grid">
+              <div class="_col -col-1-2">
+                <h3 class="c-heading -h3">Heading Level 3</h3>
+                <ul>
+                  <li>Maecenas sed diam eget risus varius blandit sit amet non magna</li>
+                  <li>
+                    Etiam porta sem malesuada magna mollis euismod
+                    <ul>
+                      <li>Vestibulum id ligula porta felis euismod semper</li>
+                      <li>Donec id elit non mi porta gravida at eget metus</li>
+                    </ul>
+                  </li>
+                  <li>Fusce dapibus, tellus ac cursus commodo</li>
+                </ul>
+                <h4 class="c-heading -h4">Heading Level 4</h4>
+                <p>Donec sed odio dui. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+                <ol>
+                  <li>Maecenas sed diam eget risus varius blandit sit amet non magna</li>
+                  <li>
+                    Etiam porta sem malesuada magna mollis euismod
+                    <ol>
+                      <li>Vestibulum id ligula porta felis euismod semper</li>
+                      <li>Donec id elit non mi porta gravida at eget metus</li>
+                    </ol>
+                  </li>
+                  <li>Fusce dapibus, tellus ac cursus commodo</li>
+                </ol>
+              </div>
+              <div class="_col -col-1-2">
+                <h3 class="c-heading -h3">Heading Level 3</h3>
+                <ul>
+                  <li>Maecenas sed diam eget risus varius blandit sit amet non magna</li>
+                  <li>
+                    Etiam porta sem malesuada magna mollis euismod
+                    <ul>
+                      <li>Vestibulum id ligula porta felis euismod semper</li>
+                      <li>Donec id elit non mi porta gravida at eget metus</li>
+                    </ul>
+                  </li>
+                  <li>Fusce dapibus, tellus ac cursus commodo</li>
+                </ul>
+                <h4 class="c-heading -h4">Heading Level 4</h4>
+                <p>Donec sed odio dui. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+                <ol>
+                  <li>Maecenas sed diam eget risus varius blandit sit amet non magna</li>
+                  <li>
+                    Etiam porta sem malesuada magna mollis euismod
+                    <ol>
+                      <li>Vestibulum id ligula porta felis euismod semper</li>
+                      <li>Donec id elit non mi porta gravida at eget metus</li>
+                    </ol>
+                  </li>
+                  <li>Fusce dapibus, tellus ac cursus commodo</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="c-footer x-green">
+        <div class="c-container -padded">
+          <nav class="_nav">
+            <ul class="_nav-list js-nav-list">
+              <li class="_nav-item "><a href="/">About</a></li>
+              <li class="_nav-item "><a href="/getting-started">Getting started</a></li>
+              <li class="_nav-item "><a href="/examples">Examples</a></li>
+              <li class="_nav-item "><a href="/resources">Resources</a></li>
+              <li class="_nav-item"><a href="https://github.com/strongloop/loopback">GitHub</a></li>
+            </ul>
+          </nav>
+          <p class="_copyright">© Copyright 2014 StrongLoop, Inc.</p>
+          <iframe src="http://ghbtns.com/github-btn.html?user=strongloop&amp;repo=loopback&amp;type=follow" class="c-github-follow"></iframe>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
