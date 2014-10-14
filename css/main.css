@@ -323,11 +323,6 @@ ul,ol,dl {
     margin: 1rem 0 1rem 1.5rem;
 }
 
-ul.-check,ol.-check,dl.-check {
-    list-style-type: none;
-    margin: 1rem 0 1rem .25rem
-}
-
 ul {
     list-style-type: disc;
 }
