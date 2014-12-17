@@ -69,13 +69,13 @@
                 <h1 class="c-heading -h2">About</h1>
                 <p>LoopBack is a highly-extensible, open-source Node.js framework</p>
                 <ul class="fa-ul">
-                  <li><i class="fa-li fa fa-check"></i> Use the CLI to create dynamic end-to-end REST APIs.</li>
-                  <li><i class="fa-li fa fa-check"></i> Connect devices and browsers to data and services.</li>
-                  <li><i class="fa-li fa fa-check"></i> Easily create client apps using Android, iOS, and JavaScript SDKs.</li>
-                  <li><i class="fa-li fa fa-check"></i> Add-on components for push, file management, 3rd-party login, and geolocation.</li>
+                  <li><i class="fa-li fa fa-check"></i> <a href="#core">Quickly create dynamic end-to-end REST APIs</a>.</li>
+                  <li><i class="fa-li fa fa-check"></i> <a href="#juggler">Connect devices and browsers</a> to data and services.</li>
+                  <li><i class="fa-li fa fa-check"></i> Use <a href="#sdks">Android, iOS, and AngularJS SDKs</a> to easily create client apps.</li>
+                  <li><i class="fa-li fa fa-check"></i> <a href="#components">Add-on components</a> for push, file management, 3rd-party login, and geolocation.</li>
+                  <li><i class="fa-li fa fa-check"></i> Use <a href="#arc">StrongLoop Arc</a> to visually edit, deploy, and monitor LoopBack apps.</li>
+                  <li><i class="fa-li fa fa-check"></i> <a href="#gateway">LoopBack API gateway</a> acts an intermediary between API consumers (clients) and API providers to externalize, secure, and manage APIs.</li>
                   <li><i class="fa-li fa fa-check"></i> Runs on-premises or in the cloud</li>
-                  <li><i class="fa-li fa fa-check"></i> Use StrongLoop Arc Composer to visually create and work with LoopBack apps.</li>
-                  <li><i class="fa-li fa fa-check"></i> LoopBack API gateway acts an intermediary between API consumers (clients) and API providers to externalize, secure, and manage APIs.</li>
                 </ul>
               </div>
               <div class="_col -col-1-2 x-flex-e"><img src="/images/comb.svg" class="c-fleximg -pull-down -last"/></div>
@@ -84,7 +84,7 @@
         </section>
         <section class="c-section x-greylight">
           <div class="c-container -padded">
-            <h2 class="c-heading -h3">Core</h2>
+            <a name="core"></a><h2 class="c-heading -h3">Core</h2>
             <div class="c-grid">
               <div class="_col -col-1-2">
                 <h3 class="c-heading -h5">Set up models and create REST APIs in minutes</h3>
@@ -116,27 +116,10 @@
             </div>
           </div>
         </section>
-        <section class="c-section">
-          <div class="c-container -padded">
-            <div class="c-grid">
-              <div class="_col -col-1-2 x-flex-e x-flex-order-2"><img src="/images/sdk.svg" class="c-fleximg -pull-down"/></div>
-              <div class="_col -col-1-2 x-flex-order-1">
-                <h2 class="c-heading -h3">Client SDKs</h2>
-                <h3 class="c-heading -h5">Native Mobile and Browser SDKs</h3>
-                <ul>
-                  <li>Easily persist data with a database API on the client</li>
-                  <li>Store files, send push notifications, and call custom server-side code</li>
-                  <li>Android / Java</li>
-                  <li>iOS</li>
-                  <li>Browser JavaScript (Angular)</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </section>
+        
         <section class="c-section x-greylight">
           <div class="c-container -padded">
-            <h2 class="c-heading -h3">Juggler</h2>
+            <a name="juggler"></a><h2 class="c-heading -h3">Juggler</h2>
             <div class="c-grid">
               <div class="_col -col-1-2">
                 <h3 class="c-heading -h5">Connect to backend data stores</h3>
@@ -156,9 +139,29 @@
             </div>
           </div>
         </section>
+        
         <section class="c-section">
           <div class="c-container -padded">
-            <h2 class="c-heading -h3">Add-on components</h2>
+            <div class="c-grid">
+              <div class="_col -col-1-2 x-flex-e x-flex-order-2"><img src="/images/sdk.svg" class="c-fleximg -pull-down"/></div>
+              <div class="_col -col-1-2 x-flex-order-1">
+                <a name="sdks"></a><h2 class="c-heading -h3">Client SDKs</h2>
+                <h3 class="c-heading -h5">Native Mobile and Browser SDKs</h3>
+                <ul>
+                  <li>Easily persist data with a database API on the client</li>
+                  <li>Store files, send push notifications, and call custom server-side code</li>
+                  <li>Android / Java</li>
+                  <li>iOS</li>
+                  <li>Browser JavaScript (Angular)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="c-section">
+          <div class="c-container -padded">
+            <a name="components"></a><h2 class="c-heading -h3">Add-on components</h2>
             <div class="c-grid">
               <div class="_col -col-1-2">
                 <h3 class="c-heading -h5">Push notifications</h3>
@@ -189,16 +192,20 @@
         </section>
         <section class="c-section x-greylight">
           <div class="c-container -padded">
-            <h2 class="c-heading -h3">StrongLoop Arc Composer</h2>
+            <a name="arc"></a><h2 class="c-heading -h3">StrongLoop Arc</h2>
             <div class="c-grid">
               <div class="_col -col-1-2">
-                <p>Composer is a StrongLoop Arc module for working with LoopBack applications.  It enables you to: </p>
+                <p>StrongLoop Arc is a graphical tool for building, deploying, managing, and monitoring LoopBack applications and APIs.
+                It enables you to: </p>
                 <ul>
                   <li>Create and modify LoopBack models and datasources. </li>
                   <li>Automatically create database schemas based on your application models.</li>
                   <li>Discover models based on relational database schemas.</li>
                   <li>Start, stop, and restart your LoopBack project app.</li>
                   <li>Explore and operate your REST APIs live, as you develop your model through a richer form-driven interface instead of JSON.</li>
+                  <li>Generate and view application CPU profiles and heap snapshots (to help diagnose memory leaks).</li>
+                  <li>Build, package, and deploy your Node application to a local or remote system.</li>
+                  <li>Gather and view performance metrics on your application.</li>
                 </ul>
               </div>
               <div class="_col -col-1-2">
@@ -214,7 +221,7 @@
         </section>
         <section class="c-section">
           <div class="c-container -padded">
-            <h2 class="c-heading -h3">LoopBack API Gateway</h2>
+            <a name="gateway"></a><h2 class="c-heading -h3">LoopBack API Gateway</h2>
             <div class="c-grid">
               <div class="_col -col-1-2">
                 <p>Incorporate API Gateway modules into a LoopBack application to provide the functions in-process or separately:</p>
