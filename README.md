@@ -1,4 +1,4 @@
 loopback.io
 ===========
 
-New LoopBack community mini-site
+LoopBack community mini-site, http://loopback.io.
