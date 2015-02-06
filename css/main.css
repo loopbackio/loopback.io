@@ -115,6 +115,10 @@ table tbody td:last-child {
     background: #383838
 }
 
+.logo-section {
+    background: #ffffff;
+}
+
 .x-green {
     background: #6cb333
 }
