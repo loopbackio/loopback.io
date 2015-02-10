@@ -115,8 +115,24 @@ table tbody td:last-child {
     background: #383838
 }
 
-.logo-section {
+.logo-section, .quote-section {
     background: #ffffff;
+}
+
+.section.c-section.quote-section { margin: 0 50px 0 50px;}
+
+.quote {
+    background: #dedede;
+    color: black;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.q-attrib {
+    background-color: #dedede;
+    color: black;
+    margin-left: 50px;
+    font-style: italic;
 }
 
 .x-green {
