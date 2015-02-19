@@ -627,6 +627,13 @@ li > ul,li > ol,li > dl {
     align-items: center;
 }
 
+.c-grid.-end-v {
+    -o-box-align: end;
+    -ms-flex-align: end;
+    -webkit-align-items: flex-end;
+    align-items: flex-end;
+}
+
 .c-grid.-show ._col {
     margin-bottom: 1rem;
 }
