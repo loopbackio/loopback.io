@@ -12,6 +12,7 @@
     <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-placeholder/2.0.7/jquery.placeholder.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/fastclick/0.6.11/fastclick.min.js"></script>
+    <script src="/js/parser.js"></script>
     <script src="/js/prism.js"></script><script>$('input, textarea').placeholder();</script>
     <!--[if lt IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js"></script><![endif]-->
     <script src="/js/main.js"></script>
@@ -87,7 +88,7 @@
             </div>
           </div>
         </section>
-        <section class="c-section x-greylight">
+        <section class="c-section">
           <div class="c-container -padded">
             <div class="c-grid">
               <div class="_col -col-2-3">
@@ -95,19 +96,19 @@
                 <p>The StrongLoop blog provides examples of newly-announced features, developer information and tips;
                 while the <a href="http://docs.strongloop.com/pages/viewpage.action?pageId=3836205">documentation</a> provides comprehensive
                 information on how to use the LoopBack framework.
-              </p>
+              </p><br/>
               </div>
             </div>
             <div class="c-grid">
-              <div class="_col -col-2-3">
-                <h3 class="c-heading -h4">General</h3>
+              <div class="_col -col-5-6">
+                <h3 class="c-heading -h4">Latest blog posts</h3>
+
                 <ul>
-                  <li><a href="http://strongloop.com/strongblog/install-node-js-windows/">Installing Node.js and StrongLoop on Windows <i class="fa fa-long-arrow-right"></i></a></li>
-                  <li><a href="http://strongloop.com/strongblog/contribute-loopback-documentation/">Getting Started with Contributing to LoopBack Documentation <i class="fa fa-long-arrow-right"></i></a></li>
-                  <li><a href="http://strongloop.com/strongblog/node-js-loopback-example-applications-and-tutorials/">New Node.js LoopBack Example Applications and Tutorials <i class="fa fa-long-arrow-right"></i></a></li>
-                  <li><a href="http://strongloop.com/strongblog/open-source-node-js-api-gateway/">Announcing the Open Source Node.js LoopBack API Gateway <i class="fa fa-long-arrow-right"></i></a></li>
-                  <li><a href="http://strongloop.com/strongblog/node-js-loopback-api-gateway-sample-applications/">Getting Started with the LoopBack API Gateway Sample Application <i class="fa fa-long-arrow-right"></i></a></li>
-                  <li><a href="http://strongloop.com/strongblog/node-js-api-geolocation/">Node.js API Tip of the Week: GeoLocation <i class="fa fa-long-arrow-right"></i></a></li>
+                <div id="loopback-rss" class="feedcontainer"></div>
+                </ul>
+
+                <h3 class="c-heading -h4">Older LoopBack blog posts</h3>
+                <ul>
                   <li><a href="http://strongloop.com/strongblog/enterprise-api-swagger-2-0-loopback/">Building Enterprise APIs with StrongLoop Support for Swagger 2.0 <i class="fa fa-long-arrow-right"></i></a></li>
                   <li><a href="http://strongloop.com/strongblog/node-js-rest-api-openshift-redhat/">How to Deploy a Node.js REST API Server on Red Hat’s OpenShift <i class="fa fa-long-arrow-right"></i></a></li>
                   <li><a href="http://strongloop.com/strongblog/node-js-java-getting-started/">Getting Started with Node.js for the Java Developer <i class="fa fa-long-arrow-right"></i></a></li>
@@ -127,15 +128,14 @@
                 </ul>
                 <h3 class="c-heading -h4">Client SDKs</h3>
                 <ul>
-                  <li><a href="http://strongloop.com/strongblog/how-to-setup-push-notifications-private-mbaas-amazon-aws-part-1/">Enable Push Notifications With a Private mBaaS Hosted on Amazon – Intro to LoopBack (Four parts) <i class="fa fa-long-arrow-right"></i></a></li>
+                  <li><a href="http://strongloop.com/strongblog/how-to-setup-push-notifications-private-mbaas-amazon-aws-part-1/">Enable Push Notifications With a Private mBaaS Hosted on Amazon (Four parts) <i class="fa fa-long-arrow-right"></i></a></li>
                   <li><a href="http://strongloop.com/strongblog/angular-js-sdk-loopbac/">Announcing the AngularJS SDK for LoopBack <i class="fa fa-long-arrow-right"></i></a></li>
                 </ul>
               </div>
-              <div class="_col -col-1-3"><img src="/images/book.svg"/></div>
             </div>
           </div>
         </section>
-        <section class="c-section">
+        <section class="c-section x-greylight">
           <div class="c-container -padded">
             <h2 class="c-heading -h3">Powered by LoopBack logo</h2>
             <p>Add the logo to your LoopBack-powered site or app.</p>
@@ -174,5 +174,11 @@
         </div>
       </footer>
     </div>
+    <script type="text/javascript">
+$(function(){
+  // running custom RSS functions
+  parseRSS('http://strongloop.com/strongblog/category/loopback-2/feed/', '#loopback-rss');
+});
+</script>
   </body>
 </html>
