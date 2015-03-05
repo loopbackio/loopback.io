@@ -1264,3 +1264,14 @@ code[class*="language-"] {
 pre[class*="language-"] {
     background: rgba(0,0,0,0.35);
 }
+
+/** Added for RSS feed in "resources" **/
+
+.feedcontainer {
+  display: block;
+  margin-bottom: 25px;
+}
+
+.feedcontainer li {
+  line-height: 1.5em;
+}
