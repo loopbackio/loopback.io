@@ -153,16 +153,20 @@ Let's add some person properties now.</code></pre>
           <div class="c-container -padded">
             <h2 class="c-heading -h3">Run the application</h2>
             <div class="c-grid">
-              <div class="_col -col-2-3">
+              <div class="_col -col-2-5">
                 <p>Run as you would any Node application.</p>
-                <p>You can also use <code>slc start</code> to start a local instance of StrongLoop Process Manager 
-                and run the app under its control.  This enables you to profile, monitor, and control clustering 
-                for the app.  See <a href="http://strong-pm.io/">strong-pm.io</a> for more information.</p>
               </div>
-              <div class="_col -col-1-3">
+              <div class="_col -col-3-5">
                 <pre><code class="language-bash">$ node .
 Browse your REST API at http://0.0.0.0:3000/explorer
 Web server listening at: http://0.0.0.0:3000/</code></pre>
+              </div>
+
+              <div class="_col -col-1-1">
+                <p>When you're ready to think about moving to production, you can use <code>slc start</code> to
+                run the app under the control of a local instance of StrongLoop Process Manager.
+                This enables you to profile, monitor, and control clustering for the app and keep it running forever.
+                See <a href="http://strong-pm.io/">strong-pm.io</a> for more information.</p>
               </div>
             </div>
           </div>
