@@ -1275,3 +1275,41 @@ pre[class*="language-"] {
 .feedcontainer li {
   line-height: 1.5em;
 }
+
+/** Comparison table **/
+
+table.comp {
+  width: 50rem;
+}
+
+th#feature {
+    width: 6rem;
+}
+
+table.comp td {
+    width: 8rem;
+}
+table.comp, table.comp tr td, table.comp tr th {
+    border: 1px solid #6e6e6e;
+}
+
+table.comp tr th {
+    font-size: 90%;
+    font-weight: bold;
+    padding: 10px;
+    background-color: #193819;
+    text-align: center;
+}
+
+table.comp tr td {
+    font-size: 80%;
+    padding: 10px 5px 10px 5px;
+}
+
+td.col1 {
+    background-color: #193819;
+}
+
+#feature {
+    background-color: #002200;
+}
