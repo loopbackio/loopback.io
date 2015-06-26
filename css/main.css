@@ -432,6 +432,10 @@ li > dl {
     border-color: rgba(255,255,255,0.5);
 }
 
+.docs-button {
+    margin-left: 0.5rem;
+}
+
 .c-container {
     width: 980px;
     margin: 0 auto;
