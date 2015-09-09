@@ -18,7 +18,7 @@ Per [issue 25](https://github.com/strongloop/loopback.io/issues/25), add Meteor 
   <td>HTTP server framework</td>
   <td>Web MVC framework</td>
   <td>REST HTTP library</td>
-  <td></td>
+  <td>Full-stack JavaScript app platform</td>
 </tr>
 
 <tr>
@@ -28,7 +28,7 @@ Per [issue 25](https://github.com/strongloop/loopback.io/issues/25), add Meteor 
   <td>Modularity, security</td>
   <td>Rails familiarity, MVC</td>
   <td>Simplicity, REST routing</td>
-  <td></td>
+  <td>Universal JavaScript, Reactive rendering, optimistic UI, websocket microservices</td>
 </tr>
 
 <tr>
@@ -38,7 +38,7 @@ Per [issue 25](https://github.com/strongloop/loopback.io/issues/25), add Meteor 
   <td>Complex web apps, APIs</td>
   <td>Web apps, APIs</td>
   <td>Simple REST APIs</td>
-  <td></td>
+  <td>web apps</td>
 </tr>
 
 <tr>
@@ -48,7 +48,7 @@ Per [issue 25](https://github.com/strongloop/loopback.io/issues/25), add Meteor 
   <td>4k</td>
   <td>10k</td>
   <td>3k</td>
-  <td></td>
+  <td>28k</td>
 </tr>
 
 <tr>
@@ -58,7 +58,7 @@ Per [issue 25](https://github.com/strongloop/loopback.io/issues/25), add Meteor 
   <td>N/A</td>
   <td>N/A</td>
   <td>Joyent</td>
-  <td></td>
+  <td>Meteor Development Group </td>
 </tr>
 
 <tr>
@@ -68,7 +68,7 @@ Per [issue 25](https://github.com/strongloop/loopback.io/issues/25), add Meteor 
   <td>None</td>
   <td>None</td>
   <td>None</td>
-  <td></td>
+  <td>JavaScript</td>
 </tr>
 
 <tr>
@@ -78,7 +78,7 @@ Per [issue 25](https://github.com/strongloop/loopback.io/issues/25), add Meteor 
   <td>None</td>
   <td>None</td>
   <td>None</td>
-  <td></td>
+  <td>?</td>
 </tr>
 
 <tr>
@@ -88,17 +88,17 @@ Per [issue 25](https://github.com/strongloop/loopback.io/issues/25), add Meteor 
   <td>Yeoman generator</td>
   <td>Yeoman generator</td>
   <td>Yeoman generator</td>
-  <td></td>
+  <td>CLI tool</td>
 </tr>
 
 <tr>
-  <td class="col1">Use StrongLoop Arc API Composer?</td>
+  <td class="col1">Visual API composition</td>
   <td>Yes</td>
   <td>No</td>
   <td>No</td>
   <td>No</td>
   <td>No</td>
-  <td></td>
+  <td>No</td>
 </tr>
 
 <tr>
@@ -108,7 +108,7 @@ Per [issue 25](https://github.com/strongloop/loopback.io/issues/25), add Meteor 
   <td>Yes</td>
   <td>Yes</td>
   <td>Yes</td>
-  <td></td>
+  <td>Yes</td>
 </tr>
 
 <tr>
@@ -118,7 +118,7 @@ Per [issue 25](https://github.com/strongloop/loopback.io/issues/25), add Meteor 
   <td>Hapi Plugins</td>
   <td></td>
   <td></td>
-  <td></td>
+  <td>?</td>
 </tr>
 
 <tr>
@@ -128,7 +128,7 @@ Per [issue 25](https://github.com/strongloop/loopback.io/issues/25), add Meteor 
   <td>None</td>
   <td>In-memory, File, PostgreSQL, MySQL, MongoDB </td>
   <td>None</td>
-  <td></td>
+  <td>MongoDB</td>
 </tr>
 
 <tr>
@@ -138,6 +138,6 @@ Per [issue 25](https://github.com/strongloop/loopback.io/issues/25), add Meteor 
   <td>No</td>
   <td>No</td>
   <td>No</td>
-  <td></td>
+  <td>?</td>
 </tr>
 </table>
