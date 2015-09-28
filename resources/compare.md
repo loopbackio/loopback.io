@@ -68,7 +68,7 @@ Per [issue 25](https://github.com/strongloop/loopback.io/issues/25), add Meteor 
   <td>None</td>
   <td>None</td>
   <td>None</td>
-  <td>JavaScript</td>
+  <td>JavaScript, Cordova for iOS and Android</td>
 </tr>
 
 <tr>
@@ -118,7 +118,7 @@ Per [issue 25](https://github.com/strongloop/loopback.io/issues/25), add Meteor 
   <td>Hapi Plugins</td>
   <td></td>
   <td></td>
-  <td>?</td>
+  <td>Own package system and repository</td>
 </tr>
 
 <tr>
@@ -138,6 +138,6 @@ Per [issue 25](https://github.com/strongloop/loopback.io/issues/25), add Meteor 
   <td>No</td>
   <td>No</td>
   <td>No</td>
-  <td>?</td>
+  <td>No</td>
 </tr>
 </table>
