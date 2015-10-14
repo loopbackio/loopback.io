@@ -23,12 +23,12 @@ Per [issue 25](https://github.com/strongloop/loopback.io/issues/25), add Meteor 
 
 <tr>
   <td class="col1">Top Features</td>
-  <td>Modularity, scaffolding, enterprise connectivity, API Explorer, generators, client SDKs, websocket microservices</td>
+  <td>Enterprise connectivity, API Explorer, generators, client SDKs, websocket microservices</td>
   <td>HTTP routing, middleware</td>
   <td>Modularity, security</td>
   <td>Rails familiarity, MVC</td>
   <td>Simplicity, REST routing</td>
-  <td>Universal JavaScript, Reactive rendering, websocket microservices</td>
+  <td>Universal JavaScript, reactive rendering, websocket microservices</td>
 </tr>
 
 <tr>
@@ -73,7 +73,7 @@ Per [issue 25](https://github.com/strongloop/loopback.io/issues/25), add Meteor 
 
 <tr>
   <td class="col1">Client SDKs</td>
-  <td>AngularJS, Browser (isomorphic), Node.js, iOS, Android, Xamarin</td>
+  <td>AngularJS, browser (isomorphic), Node.js, iOS, Android, Xamarin</td>
   <td>N/A</td>
   <td>None</td>
   <td>None</td>
@@ -88,7 +88,7 @@ Per [issue 25](https://github.com/strongloop/loopback.io/issues/25), add Meteor 
   <td>None</td>
   <td>None</td>
   <td>None</td>
-  <td>None</td>
+  <td>With meteor-rest</td>
 </tr>
 
 <tr>
