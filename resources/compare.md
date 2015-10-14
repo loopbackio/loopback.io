@@ -73,12 +73,12 @@ Per [issue 25](https://github.com/strongloop/loopback.io/issues/25), add Meteor 
 
 <tr>
   <td class="col1">Client SDKs</td>
-  <td>Angular, Browser, Node.js, iOS, Android, Xamarin</td>
+  <td>AngularJS, Browser (isomorphic), Node.js, iOS, Android, Xamarin</td>
   <td>N/A</td>
   <td>None</td>
   <td>None</td>
   <td>None</td>
-  <td>JavaScript, Cordova for iOS and Android</td>
+  <td>JavaScript, Cordova for iOS and Android, React, AngularJS</td>
 </tr>
 
 <tr>
