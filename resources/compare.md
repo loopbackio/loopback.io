@@ -23,27 +23,27 @@ Per [issue 25](https://github.com/strongloop/loopback.io/issues/25), add Meteor 
 
 <tr>
   <td class="col1">Top Features</td>
-  <td>Modularity, scaffolding, enterprise connectivity, API Explorer, generators, client SDKs</td>
+  <td>Modularity, scaffolding, enterprise connectivity, API Explorer, generators, client SDKs, websocket microservices</td>
   <td>HTTP routing, middleware</td>
   <td>Modularity, security</td>
   <td>Rails familiarity, MVC</td>
   <td>Simplicity, REST routing</td>
-  <td>Universal JavaScript, Reactive rendering, optimistic UI, websocket microservices</td>
+  <td>Universal JavaScript, Reactive rendering, websocket microservices</td>
 </tr>
 
 <tr>
   <td class="col1">Suitable For</td>
-  <td>Complex web apps, APIs</td>
+  <td>Web apps, APIs</td>
   <td>Simple web apps</td>
-  <td>Complex web apps, APIs</td>
+  <td>Web apps, APIs</td>
   <td>Web apps, APIs</td>
   <td>Simple REST APIs</td>
-  <td>web apps</td>
+  <td>Web apps</td>
 </tr>
 
 <tr>
   <td class="col1">Github Stars</td>
-  <td>4k</td>
+  <td>5k</td>
   <td>19k</td>
   <td>4k</td>
   <td>10k</td>
@@ -57,13 +57,23 @@ Per [issue 25](https://github.com/strongloop/loopback.io/issues/25), add Meteor 
   <td>StrongLoop</td>
   <td>N/A</td>
   <td>N/A</td>
-  <td>Joyent</td>
+  <td>N/A</td>
   <td>Meteor Development Group </td>
 </tr>
 
 <tr>
+  <td class="col1">Pure Node runtime</td>
+  <td>Yes</td>
+  <td>Yes</td>
+  <td>Yes</td>
+  <td>Yes</td>
+  <td>Yes</td>
+  <td>No</td>
+</tr>
+
+<tr>
   <td class="col1">Client SDKs</td>
-  <td>Angular, Browser, Node.js, iOS, Android</td>
+  <td>Angular, Browser, Node.js, iOS, Android, Xamarin</td>
   <td>N/A</td>
   <td>None</td>
   <td>None</td>
@@ -118,7 +128,7 @@ Per [issue 25](https://github.com/strongloop/loopback.io/issues/25), add Meteor 
   <td>Hapi Plugins</td>
   <td></td>
   <td></td>
-  <td>Own package system and repository</td>
+  <td>Proprietary package system and repository, npm</td>
 </tr>
 
 <tr>
@@ -128,7 +138,7 @@ Per [issue 25](https://github.com/strongloop/loopback.io/issues/25), add Meteor 
   <td>None</td>
   <td>In-memory, File, PostgreSQL, MySQL, MongoDB </td>
   <td>None</td>
-  <td>MongoDB</td>
+  <td>MongoDB, MySQL and PostgreSQL via 3rd-party packages</td>
 </tr>
 
 <tr>
@@ -138,6 +148,6 @@ Per [issue 25](https://github.com/strongloop/loopback.io/issues/25), add Meteor 
   <td>No</td>
   <td>No</td>
   <td>No</td>
-  <td>No</td>
+  <td>Basic allow/deny</td>
 </tr>
 </table>
