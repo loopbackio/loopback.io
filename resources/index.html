@@ -52,8 +52,15 @@
       <main class="c-content">
         <section class="c-section">
           <div class="c-container -padded">
-            <h1 class="c-heading -h2">Resources</h1>
-          </div>
+                <h1 class="c-heading -h2">Resources</h1>
+                <ul>
+                  <li><a href="#compare">Compare with other frameworks</a></li>
+                  <li><a href="#doc">Official documentation</a></li>
+                  <li><a href="#forum">Developer forum</a></li>
+                  <li><a href="#gitter">Gitter chat room</a></li>
+                  <li><a href="#blog">StrongLoop blog posts</a></li>
+                </ul>
+            </div>
         </section>
 
         <a name="compare"></a>
@@ -62,15 +69,15 @@
             <div class="c-grid">
               <div class="_col -col-2-3">
                 <h2 class="c-heading -h3">Compare</h2>
-
 <table border="1" class="comp">
-<tr>
-  <th id="feature">&nbsp;</th>
+<tbody><tr>
+  <th id="user-content-feature"> </th>
   <th>LoopBack</th>
   <th>Express</th>
   <th>Hapi</th>
   <th>Sails</th>
   <th>Restify</th>
+  <th>Meteor</th>
 </tr>
 
 <tr>
@@ -80,24 +87,27 @@
   <td>HTTP server framework</td>
   <td>Web MVC framework</td>
   <td>REST HTTP library</td>
+  <td>Full-stack JavaScript app platform</td>
 </tr>
 
 <tr>
   <td class="col1">Top Features</td>
-  <td>Modularity, scaffolding, enterprise connectivity, API Explorer, generators, client SDKs</td>
+  <td>Enterprise connectivity, API Explorer, generators, client SDKs, websocket microservices</td>
   <td>HTTP routing, middleware</td>
   <td>Modularity, security</td>
   <td>Rails familiarity, MVC</td>
   <td>Simplicity, REST routing</td>
+  <td>Universal JavaScript, reactive rendering, websocket microservices</td>
 </tr>
 
 <tr>
   <td class="col1">Suitable For</td>
-  <td>Complex web apps, APIs</td>
+  <td>Web apps, APIs</td>
   <td>Simple web apps</td>
-  <td>Complex web apps, APIs</td>
+  <td>Web apps, APIs</td>
   <td>Web apps, APIs</td>
   <td>Simple REST APIs</td>
+  <td>Web apps</td>
 </tr>
 
 <tr>
@@ -107,6 +117,7 @@
   <td>4k</td>
   <td>10k</td>
   <td>3k</td>
+  <td>28k</td>
 </tr>
 
 <tr>
@@ -116,6 +127,17 @@
   <td>N/A</td>
   <td>N/A</td>
   <td>N/A</td>
+  <td>Meteor Development Group </td>
+</tr>
+
+<tr>
+  <td class="col1">Pure Node runtime</td>
+  <td>Yes</td>
+  <td>Yes</td>
+  <td>Yes</td>
+  <td>Yes</td>
+  <td>Yes</td>
+  <td>No</td>
 </tr>
 
 <tr>
@@ -125,6 +147,7 @@
   <td>None</td>
   <td>None</td>
   <td>None</td>
+  <td>JavaScript, Cordova for iOS and Android, React, AngularJS</td>
 </tr>
 
 <tr>
@@ -134,6 +157,7 @@
   <td>None</td>
   <td>None</td>
   <td>None</td>
+  <td>With meteor-rest</td>
 </tr>
 
 <tr>
@@ -143,19 +167,22 @@
   <td>Yeoman generator</td>
   <td>Yeoman generator</td>
   <td>Yeoman generator</td>
+  <td>CLI tool</td>
 </tr>
 
 <tr>
-  <td class="col1">Use StrongLoop Arc API Composer?</td>
+  <td class="col1">Visual API composition</td>
   <td>Yes</td>
   <td>No</td>
   <td>No</td>
   <td>No</td>
   <td>No</td>
+  <td>No</td>
 </tr>
 
 <tr>
-  <td class="col1">StrongLoop Arc Build & Deploy, Monitoring, Profiling </td>
+  <td class="col1">StrongLoop Arc Build &amp; Deploy, Monitoring, Profiling </td>
+  <td>Yes</td>
   <td>Yes</td>
   <td>Yes</td>
   <td>Yes</td>
@@ -170,6 +197,7 @@
   <td>Hapi Plugins</td>
   <td></td>
   <td></td>
+  <td>Proprietary package system and repository, npm</td>
 </tr>
 
 <tr>
@@ -179,6 +207,7 @@
   <td>None</td>
   <td>In-memory, File, PostgreSQL, MySQL, MongoDB </td>
   <td>None</td>
+  <td>MongoDB, MySQL and PostgreSQL via 3rd-party packages</td>
 </tr>
 
 <tr>
@@ -188,15 +217,16 @@
   <td>No</td>
   <td>No</td>
   <td>No</td>
+  <td>Basic allow/deny</td>
 </tr>
-</table>
-
+</tbody></table>
               </div>
             </div>
           </div>
         </section>
 
-        <section class="c-section x-greylight">
+        <a name="doc"></a>
+        <section class="c-section">
           <div class="c-container -padded">
             <div class="c-grid">
               <div class="_col -col-2-3">
@@ -206,7 +236,9 @@
             </div>
           </div>
         </section>
-        <section class="c-section">
+
+        <a name="forum"></a>
+        <section class="c-section x-greylight">
           <div class="c-container -padded">
             <div class="c-grid">
               <div class="_col -col-2-3">
@@ -218,7 +250,9 @@
             </div>
           </div>
         </section>
-        <section class="c-section x-greylight">
+
+        <a name="gitter"></a>
+        <section class="c-section">
           <div class="c-container -padded">
             <div class="c-grid">
               <div class="_col -col-2-3">
@@ -229,7 +263,9 @@
             </div>
           </div>
         </section>
-        <section class="c-section">
+
+        <a name="blog"></a>
+        <section class="c-section x-greylight">
           <div class="c-container -padded">
             <div class="c-grid">
               <div class="_col -col-2-3">
@@ -276,7 +312,7 @@
             </div>
           </div>
         </section>
-        <section class="c-section x-greylight">
+        <section class="c-section">
           <div class="c-container -padded">
             <h2 class="c-heading -h3">Powered by LoopBack logo</h2>
             <p>Add the logo to your LoopBack-powered site or app.</p>
