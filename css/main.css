@@ -1317,3 +1317,12 @@ td.col1 {
 #feature {
     background-color: #002200;
 }
+
+.devborder {
+    border: 1px dashed red;
+}
+
+.ni-img {
+    max-width: 200px;
+}
+
