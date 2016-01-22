@@ -116,8 +116,10 @@ product.create({
           <div class="c-container -padded">
             <h2 class="c-heading -h3">Define model relations</h2>
             <div class="c-grid">
-              <div class="_col -col-3-5">
-                <p>Use simple JSON declarative syntax to set up relations between models. For example, the following specifies that a product belongs to one category (identified by categoryId) and has one owner (identified by ownerId).</p>
+              <div class="_col -col-1-1">
+                <p>Use simple JSON declarative syntax to set up relations between models.
+                For example, the following specifies that a product belongs to one category
+                (identified by categoryId) and has one owner (identified by ownerId).</p>
                 <pre><code class="language-bash">$ slc loopback:relation
 [?] Select the model to create the relationship from: product
 [?] Relation type: belongs to
@@ -125,7 +127,8 @@ product.create({
 [?] Enter the property name for the relation: category
 [?] Optionally enter a custom foreign key: categoryId</code></pre>
               </div>
-              <div class="_col -col-2-5">
+              <div class="_col -col-1-2">
+                <p>This updates the <b>product.json</b> file as follows:</p>
                 <pre style="max-height: 358px;"><code class="language-javascript">{
   "name": "product",
   "base": "PersistedModel",
@@ -153,8 +156,9 @@ product.create({
   "acls": [],
   "methods": []
 }</code></pre>
-              </div>
-            </div>
+          </div>
+            </div> <!-- /grid -->
+
           </div>
         </section>
         <section class="c-section">
@@ -231,18 +235,24 @@ product.save(new Model.Callback() {
               <div class="_col -col-2-3">
                 <pre><code class="language-javascript">$ npm install loopback-connector-oracle</code></pre>
               </div>
-
+            </div>
+<br/>
+            <div class="c-grid">
               <div class="_col -col-1-3">
                 <p>Run CLI to create new datasource:</p>
               </div>
               <div class="_col -col-2-3">
                 <pre><code class="language-javascript">$ slc loopback:datasource
 [?] Enter the data-source name: oracledb
-[?] Select the connector for oracledb: Oracle (supported by StrongLoop)</code></pre>
+[?] Select the connector for oracledb:
+   Oracle (supported by StrongLoop)</code></pre>
               </div>
+            </div>
+<br/>
 
+            <div class="c-grid">
               <div class="_col -col-1-3">
-                <p>Edit <b>/server/datasources.json</b> and add your Oracle database login information:</p>
+                <p>Edit <b>server/datasources.json</b> and add your Oracle database login information:</p>
               </div>
               <div class="_col -col-2-3">
                 <pre><code class="language-javascript"> "oracledb": {
