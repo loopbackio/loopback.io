@@ -63,7 +63,7 @@
                 <p>Install the StrongLoop tools for LoopBack applications.</p>
               </div>
               <div class="_col -col-2-3">
-                <pre><code class="language-bash">$ npm install -g strongloop</code></pre>
+                <pre class="cli"><span class="prompt">$</span> npm install -g strongloop</pre>
               </div>
             </div>
           </div>
@@ -76,9 +76,13 @@
                 <p>Create a "Hello World" LoopBack application.</p>
               </div>
               <div class="_col -col-2-3">
-                <pre><code class="language-bash">$ mkdir hello-world && cd hello-world
-$ slc loopback
-[?] What's the name of your application? hello-world</code></pre>
+                <pre class="cli"><span class="prompt">$</span> slc loopback
+<span class="prompt">[?]</span> What's the name of your application? <span class="input">hello-world</span>
+  create hello-world/
+  info change the working directory to hello-world
+  I'm all done. Running npm install for you to install
+  the required dependencies.
+  ... </pre>
               </div>
             </div>
           </div>
@@ -90,22 +94,22 @@ $ slc loopback
                 <h2 class="c-heading -h3">Create models</h2>
               </div>
               <div class="_col -col-2-3">
-                <pre><code class="language-bash">$ slc loopback:model</code></pre>
+                <pre class="cli"><span class="prompt">$</span> slc loopback:model</pre>
               </div>
             </div>
             <hr/>
             <div class="c-grid">
               <div class="_col -col-1-3">
-                <p>The generator guides you through creating your model. Enter the values highlighted in blue. To accept the default, just press Enter.</p>
+                <p>The generator guides you through creating your model. Enter the values highlighted in green. To accept the default, just press Enter.</p>
               </div>
               <div class="_col -col-2-3">
-                <pre><code class="language-bash">[?] Enter the model name: person
-[?] Select the data-source to attach person to: db (memory)
-[?] Select model's base class (PersistedModel)
-[?] Expose person via the REST API? Yes
-[?] Custom plural form (used to build REST URL): people
-[?] Common model or server only?
-Let's add some person properties now.</code></pre>
+                <pre class="cli"><span class="prompt">[?]</span> Enter the model name: <span class="input">person</span>
+<span class="prompt">[?]</span> Select the data-source to attach person to: <span class="input">db (memory)</span>
+<span class="prompt">[?]</span> Select model`s base class <span class="input">(PersistedModel)</span>
+<span class="prompt">[?]</span> Expose person via the REST API? <span class="input">Yes</span>
+<span class="prompt">[?]</span> Custom plural form (used to build REST URL): <span class="input">people</span>
+<span class="prompt">[?]</span> Common model or server only? <span class="input">common</span>
+Let's add some person properties now.</pre>
               </div>
             </div>
             <hr/>
@@ -114,8 +118,8 @@ Let's add some person properties now.</code></pre>
                 <p>Define a firstname property for the person model</p>
               </div>
               <div class="_col -col-2-3">
-                <pre><code class="language-markup">Enter an empty property name when done.
-[?] Property name: firstname</code></pre>
+                <pre class="cli">Enter an empty property name when done.
+<span class="prompt">[?]</span> Property name: <span class="input">firstname</span></pre>
               </div>
             </div>
             <hr/>
@@ -124,7 +128,7 @@ Let's add some person properties now.</code></pre>
                 <p>Hit Enter to accept the default string type:</p>
               </div>
               <div class="_col -col-2-3">
-                <pre><code class="language-markup">[?] Property type: (Use arrow keys)
+                <pre class="cli"><span class="prompt">[?]</span> Property type: (Use arrow keys)
 ❯ string
   number
   boolean
@@ -134,7 +138,7 @@ Let's add some person properties now.</code></pre>
   buffer
   geopoint
   any
-  (other)</code></pre>
+  (other)</pre>
               </div>
             </div>
             <hr/>
@@ -143,7 +147,7 @@ Let's add some person properties now.</code></pre>
                 <p>Make the property required.</p>
               </div>
               <div class="_col -col-2-3">
-                <pre><code class="language-markup">[?] Required? (y/N) y</code></pre>
+                <pre class="cli"><span class="prompt">[?]</span> Required? (y/N) <span class="input">y</span></pre>
               </div>
             </div>
             <hr/>
@@ -159,9 +163,9 @@ Let's add some person properties now.</code></pre>
                 <p>Run as you would any Node application.</p>
               </div>
               <div class="_col -col-3-5">
-                <pre><code class="language-bash">$ node .
+                <pre class="cli"><span class="prompt">$</span> node .
 Browse your REST API at http://0.0.0.0:3000/explorer
-Web server listening at: http://0.0.0.0:3000/</code></pre>
+Web server listening at: http://0.0.0.0:3000/</pre>
               </div>
 
               <div class="_col -col-1-1">
