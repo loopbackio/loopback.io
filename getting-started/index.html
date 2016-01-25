@@ -76,8 +76,8 @@
                 <p>Create a "Hello World" LoopBack application.</p>
               </div>
               <div class="_col -col-2-3">
-                <pre><code class="language-bash">$ slc loopback
-[?] Enter a directory name where to create the project: hello-world
+                <pre><code class="language-bash">$ mkdir hello-world && cd hello-world
+$ slc loopback
 [?] What's the name of your application? hello-world</code></pre>
               </div>
             </div>
@@ -90,8 +90,7 @@
                 <h2 class="c-heading -h3">Create models</h2>
               </div>
               <div class="_col -col-2-3">
-                <pre><code class="language-bash">$ cd hello-world
-$ slc loopback:model</code></pre>
+                <pre><code class="language-bash">$ slc loopback:model</code></pre>
               </div>
             </div>
             <hr/>
@@ -102,8 +101,10 @@ $ slc loopback:model</code></pre>
               <div class="_col -col-2-3">
                 <pre><code class="language-bash">[?] Enter the model name: person
 [?] Select the data-source to attach person to: db (memory)
+[?] Select model's base class (PersistedModel)
 [?] Expose person via the REST API? Yes
 [?] Custom plural form (used to build REST URL): people
+[?] Common model or server only?
 Let's add some person properties now.</code></pre>
               </div>
             </div>
@@ -132,6 +133,7 @@ Let's add some person properties now.</code></pre>
   date
   buffer
   geopoint
+  any
   (other)</code></pre>
               </div>
             </div>
