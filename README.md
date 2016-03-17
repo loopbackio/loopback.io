@@ -14,7 +14,7 @@ NOTE: The website is served from the `gh-pages` branch.
 ###Clone the repo:
 
 ```
-$ git clone -b gh-pages https://github.com/strongloop/loopback.io.git 
+$ git clone -b gh-pages https://github.com/strongloop/loopback.io.git
 $ cd loopback.io
 ```
 
@@ -24,6 +24,7 @@ $ cd loopback.io
 $ serve .
 serving /<path>/loopback.io on port 3000
 ```
+or try running `$ jekyll s`
 
 To run on a different port:
 
