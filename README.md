@@ -14,7 +14,7 @@ NOTE: The website is served from the `gh-pages` branch.
 ###Clone the repo:
 
 ```
-$ git clone -b gh-pages https://github.com/strongloop/loopback.io.git
+$ git clone https://github.com/strongloop/loopback.io.git
 $ cd loopback.io
 ```
 
