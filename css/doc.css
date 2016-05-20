@@ -1,0 +1,92 @@
+body.doc {
+  display: flex; 
+  justify-content: left;	
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+.navdiv {
+	width: 300px;
+	display: inline-block;
+	font-size: 12px;
+	margin: 0;
+    border-right: 1px solid #aaa;
+
+}
+.doc {
+	display: inline-block;
+	margin: 0;
+	padding: 10px;
+}
+
+.doc h2 {
+	margin: 0;
+}
+
+.content {
+    padding:10px;
+}
+
+/* ------- Navigation List ------ */
+#nav {
+    float: left;
+    width: 200px; 
+    border-top: 1px solid #999;
+    //border-right: 1px solid #999;
+    //border-left: 1px solid #999;
+	margin: 0;
+	padding: 0;  
+}
+
+ul#nav {
+	margin: 0;
+}
+
+#nav li a {
+    display: block;
+    padding: 3px 5px;
+    background: #ccc;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #999;
+    text-decoration: none;
+    color: #000;
+}
+#nav li a:hover, #nav li a.active {
+    background: #999;
+    color: #fff;
+}
+#nav li ul {
+    display: none; // used to hide sub-menus
+}
+
+/* Sub-menu */
+#nav li ul li a { 
+    padding: 3px 10px;
+    background: #ececec;
+    border-bottom: 1px dotted #ccc;
+}
+
+/* 2d level sub-menu */
+#nav li ul li ul li a { 
+    padding: 3px 10px;
+    background: #ececec;
+    border-bottom: 1px dotted #ccc;
+}
+
+/* 3d level sub-menu */
+#nav li ul li ul li ul li a { 
+    padding: 3px 10px;
+    background: #ececec;
+    border-bottom: 1px dotted #ccc;
+}
+
+
+#nav li {
+	list-style-type: none;
+}
+
+.navdiv ul {
+	margin-left: 5px;
+	-webkit-padding-start: 5px;
+}
+

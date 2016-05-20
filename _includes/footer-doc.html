@@ -1,0 +1,34 @@
+
+<script type="text/javascript">
+$(document).ready(function () {
+  $('#nav > li > a').click(function(){
+    if ($(this).attr('class') != 'active'){
+      $('#nav li ul').slideUp();
+      $(this).next().slideToggle();
+      $('#nav li a').removeClass('active');
+      $(this).addClass('active');
+    }
+  });
+
+// 2d-level sub-menu
+$('#nav > li > ul > li > a').click(function(){
+    if ($(this).attr('class') != 'active'){
+      $('#nav li ul li ul').slideUp();
+      $(this).next().slideToggle();
+      $('#nav li ul li a').removeClass('active');
+      $(this).addClass('active');
+    }
+  });
+
+// 3d-level sub-menu
+$('#nav > li > ul > li > ul > li > a').click(function(){
+    if ($(this).attr('class') != 'active'){
+      $('#nav li ul li ul li ul').slideUp();
+      $(this).next().slideToggle();
+      $('#nav li ul li ul li a').removeClass('active');
+      $(this).addClass('active');
+    }
+  });
+
+});
+</script>
