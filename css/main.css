@@ -908,6 +908,8 @@ li > dl {
     margin-top: 0;
 }
 
+/* Header */
+
 .c-masthead {
     padding: 2rem 0;
     background: #62b220;
@@ -1346,4 +1348,8 @@ td.col1 {
 
 .ni-img {
     max-width: 200px;
+}
+
+.border-img {
+    border: 1px solid #000;
 }
