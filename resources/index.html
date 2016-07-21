@@ -3,6 +3,15 @@ layout: page
 title: Resources
 item: resources
 ---
+<script type="text/javascript">
+$(document).ready(function(){
+  $(function(){
+    // Run custom RSS function to get blog posts
+    parseRSS('http://strongloop.com/strongblog/category/loopback-2/feed/', '#loopback-rss');
+  });
+});
+
+</script>
       <main class="c-content">
         <section class="c-section">
           <div class="c-container -padded">
