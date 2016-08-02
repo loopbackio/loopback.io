@@ -1,0 +1,23 @@
+{% if page.sidebar == "home_sidebar" %}
+  {% assign sidebar = site.data.sidebars.home_sidebar.entries %}
+{% elsif page.sidebar == "lb2_sidebar" %}
+  {% assign sidebar = site.data.sidebars.lb2_sidebar.entries %}
+{% elsif page.sidebar == "lb3_sidebar" %}
+  {% assign sidebar = site.data.sidebars.lb3_sidebar.entries %}
+  {% elsif page.sidebar == "contrib_sidebar" %}
+    {% assign sidebar = site.data.sidebars.contrib_sidebar.entries %}  
+{% else %}
+  {% assign sidebar = site.data.sidebars.home_sidebar.entries %}
+{% endif %}
+
+{% comment %}
+sidebar configuration for print files
+{% endcomment %}
+
+{% if site.product == "lb2" %}
+  {% assign sidebar_pdf = site.data.sidebars.lb2_sidebar.entries %}
+{% endif %}
+
+{% if site.product == "lb3" %}
+  {% assign sidebar_pdf = site.data.sidebars.lb3_sidebar.entries %}
+{% endif %}

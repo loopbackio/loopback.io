@@ -1,0 +1,16 @@
+# This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
+
+entries:
+- title: sidebar
+  product: LoopBack
+  version: 3.0
+  folders:
+
+  - title: Overview
+    url: /doc/lb3/index.html
+    output: web, pdf
+    folderitems:
+
+    - title: LoopBack docs
+      url: /doc/lb3/loopback_docs.html
+      output: web, pdf

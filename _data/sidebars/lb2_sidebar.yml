@@ -1,0 +1,44 @@
+# This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
+
+entries:
+- title: sidebar
+  product: asdfsadf
+  version: 2.0
+  folders:
+
+  - title: Overview
+    url: /doc/lb2/index.html
+    output: web, pdf
+    folderitems:
+
+    - title: LoopBack docs
+      url: /doc/lb2/loopback_docs.html
+      output: web, pdf
+
+entries:
+- title: sidebar
+  product: LoopBack
+  version: 3.0
+  folders:
+
+  - title: Installation
+    url: /doc/lb2/Installation.html
+    output: web, pdf
+    folderitems:
+
+    - title: Updating to the latest version
+      url: /doc/lb2/Updating-to-the-latest-version.html
+      output: web, pdf
+
+  - title: LoopBack core concepts
+    url: /doc/lb2/LoopBack-core-concepts.html
+    output: web, pdf
+    folderitems:
+
+    - title: Routing
+      url: /doc/lb2/Routing.html
+      output: web, pdf
+
+    - title: LoopBack FAQ
+      url: /doc/lb2/Loopback-FAQ.html
+      output: web, pdf

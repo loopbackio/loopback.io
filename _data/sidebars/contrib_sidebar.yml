@@ -1,0 +1,108 @@
+# This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
+
+entries:
+- title: sidebar
+  product: Contributing to LoopBack docs
+  version:
+  folders:
+
+  - title: Overview
+    url: /doc/contrib/index.html
+    output: web, pdf
+
+    folderitems:
+    - title: Getting started with Jekyll
+      url: /doc/contrib/jekyll_getting_started.html
+      output: web, pdf
+
+  - title: Authoring
+    output: web, pdf
+
+    folderitems:
+    - title: Pages
+      url: /doc/contrib/pages.html
+      output: web, pdf
+
+    - title: Conditional logic
+      url: /doc/contrib/conditional_logic.html
+      output: web, pdf
+
+    - title: Content reuse
+      url: /doc/contrib/content_reuse.html
+      output: web, pdf
+
+  - title: Navigation
+    output: web, pdf
+
+    folderitems:
+    - title: Sidebar navigation
+      url: /doc/contrib/sidebar_navigation.html
+      output: web, pdf
+
+    - title: Tags
+      url: /doc/contrib/tags.html
+      output: web, pdf
+
+    - title: Series
+      url: /doc/contrib/series.html
+      output: web, pdf
+
+  - title: Formatting
+    output: web, pdf
+
+    folderitems:
+    - title: Tooltips
+      url: /doc/contrib/adding_tooltips.html
+      output: web, pdf
+
+    - title: Alerts
+      url: /doc/contrib/alerts.html
+      output: web, pdf
+
+    - title: Icons
+      url: /doc/contrib/icons.html
+      output: web, pdf
+
+    - title: Images
+      url: /doc/contrib/images.html
+      output: web, pdf
+
+    - title: Code samples
+      url: /doc/contrib/code_samples.html
+      output: web, pdf
+
+    - title: Links
+      url: /doc/contrib/hyperlinks.html
+      output: web, pdf
+
+    - title: Navtabs
+      url: /doc/contrib/navtabs.html
+      output: web, pdf
+
+    - title: Tables
+      url: /doc/contrib/tables.html
+      output: web, pdf
+
+    - title: Syntax highlighting
+      url: /doc/contrib/syntax_highlighting.html
+      output: web, pdf
+
+  - title: Handling reviews
+    output: web, pdf
+
+    folderitems:
+    - title: Commenting on files
+      url: /doc/contrib/commenting_on_files.html
+      output: web, pdf
+
+  - title: Special layouts
+    output: web, pdf
+
+    folderitems:
+    - title: Glossary layout
+      url: /doc/contrib/glossary.html
+      output: web, pdf
+
+    - title: FAQ layout
+      url: /doc/contrib/faq_layout.html
+      output: web, pdf

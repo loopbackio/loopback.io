@@ -1,3 +1,5 @@
-source 'https://rubygems.org'
+source "https://rubygems.org"
 
+# gem "rails"
 gem 'github-pages'
+gem 'jekyll'
