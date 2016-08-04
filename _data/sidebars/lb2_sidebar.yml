@@ -40,5 +40,5 @@ entries:
       output: web, pdf
 
     - title: LoopBack FAQ
-      url: /doc/lb2/Loopback-FAQ.html
+      url: /doc/lb2/LoopBack-FAQ.html
       output: web, pdf
