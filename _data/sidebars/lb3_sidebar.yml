@@ -1,16 +1,53 @@
-# This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
-
 entries:
 - title: sidebar
   product: LoopBack
   version: 3.0
   folders:
 
-  - title: Overview
-    url: /doc/lb3/index.html
-    output: web, pdf
+  - title: Top-level sidebar item one
+    url: /doc/lb3/loopback_docs.html
+    output: web
     folderitems:
 
-    - title: LoopBack docs
+    - title: Second-level entry Num 1
       url: /doc/lb3/loopback_docs.html
-      output: web, pdf
+      output: web
+
+    - title: Second-level entry Num 2
+      url: /doc/lb3/loopback_docs.html
+      output: web
+
+  - title: Top-level sidebar item with children
+    url: /doc/lb3/loopback_docs.html
+    output: web
+    folderitems:
+
+    - title: Second-level item Num 1
+      url: /doc/lb3/loopback_docs.html
+      output: web
+
+    - title: Second-level item Num 2
+      url: /doc/lb3/loopback_docs.html
+      output: web
+
+      subfolders:
+      - title: Second-level item 3 w/children
+        url: /doc/lb3/loopback_docs.html
+        output: web
+        subfolderitems:
+
+        - title: Third-level item 1
+          url: /doc/lb3/loopback_docs.html
+          output: web
+
+        - title: Third-level item 2
+          url: /doc/lb3/loopback_docs.html
+          output: web
+
+        - title: Third-level item 3
+          url: /doc/lb3/loopback_docs.html
+          output: web
+
+    - title: Second-level item 4
+      url: /doc/lb3/loopback_docs.html
+      output: web

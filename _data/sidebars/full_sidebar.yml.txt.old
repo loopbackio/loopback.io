@@ -5,8 +5,8 @@ entries:
   version: 3.0
   folders:
 
-  - title: Installation
-    url: Installation.html
+  - title: Installing StrongLoop
+    url: Installing-StrongLoop.html
     output: web, pdf
     folderitems:
 
@@ -21,7 +21,7 @@ entries:
 
     - title: Routing
       url: Routing.html
-      output: web, pdf
+       output: web, pdf
 
     - title: LoopBack FAQ
       url: Loopback-FAQ.html
@@ -90,65 +90,65 @@ entries:
         output: web, pdf
 
     - title: Getting started part II
-      url: Getting-started-part-II.html
-      output: web, pdf
-      folderitems:
-
-      - title: Introducing the Coffee Shop Reviews app
-        url: Introducing-the-Coffee-Shop-Reviews-app.html
+        url: Getting-started-part-II.html
         output: web, pdf
+        folderitems:
 
-      - title: Create new data source
-        url: Create-new-data-source.html
+        - title: Introducing the Coffee Shop Reviews app
+          url: Introducing-the-Coffee-Shop-Reviews-app.html
+          output: web, pdf
+
+        - title: Create new data source
+          url: Create-new-data-source.html
+          output: web, pdf
+
+        - title: Create new models
+          url: Create-new-models.html
+          output: web, pdf
+
+        - title: Define model relations
+          url: Define-model-relations.html
+          output: web, pdf
+
+        - title: Define access controls
+          url: Define-access-controls.html
+          output: web, pdf
+
+        - title: Define a remote hook
+          url: Define-a-remote-hook.html
+          output: web, pdf
+
+        - title: Create AngularJS client
+          url: Create-AngularJS-client.html
+          output: web, pdf
+
+        - title: Deploying your application
+          url: Deploying-your-application.html
+          output: web, pdf
+
+        - title: Learn more
+          url: Learn-more.html
+          output: web, pdf
+
+      - title: Creating an application
+        url: Creating-an-application.html
         output: web, pdf
+        folderitems:
 
-      - title: Create new models
-        url: Create-new-models.html
-        output: web, pdf
+        - title: Using LoopBack tools
+          url: Using-LoopBack-tools.html
+          output: web, pdf
 
-      - title: Define model relations
-        url: Define-model-relations.html
-        output: web, pdf
+        - title: Environment-specific configuration
+          url: Environment-specific-configuration.html
 
-      - title: Define access controls
-        url: Define-access-controls.html
-        output: web, pdf
+        - title: Versioning your API
+          url: Versioning-your-API.html
+          output: web, pdf
 
-      - title: Define a remote hook
-        url: Define-a-remote-hook.html
-        output: web, pdf
-
-      - title: Create AngularJS client
-        url: Create-AngularJS-client.html
-        output: web, pdf
-
-      - title: Deploying your application
-        url: Deploying-your-application.html
-        output: web, pdf
-
-      - title: Learn more
-        url: Learn-more.html
-        output: web, pdf
-
-    - title: Creating an application
-      url: Creating-an-application.html
-      output: web, pdf
-      folderitems:
-
-      - title: Using LoopBack tools
-        url: Using-LoopBack-tools.html
-        output: web, pdf
-
-      - title: Environment-specific configuration
-        url: Environment-specific-configuration.html
-
-      - title: Versioning your API
-        url: Versioning-your-API.html
-        output: web, pdf
-
-      - title: Standard project structure
-        url: Standard-project-structure.html
-        output: web, pdf
+        - title: Standard project structure
+          url: Standard-project-structure.html
+          output: web, pdf
 
       - title: Managing users
         url: Managing-users.html
@@ -200,7 +200,7 @@ entries:
           url: Security-considerations.html
           output: web, pdf
 
-        - title: "Tutorial: access control"
+        - title: Tutorial: access control
           url: Tutorial%3A-access-control.html
           output: web, pdf
 
@@ -361,11 +361,10 @@ entries:
             url: Database-connectors.html
             output: web, pdf
 
-            subfolders:
+            folderitems:
             - title: Cloudant connector
               url: Cloudant-connector.html
               output: web, pdf
-              subfolderitems:
 
             - title: DB2 connector
               url: DB2-connector.html
@@ -380,6 +379,7 @@ entries:
               output: web, pdf
 
               folderitems:
+
               - title: Connecting to MongoDB
                 url: Connecting-to-MongoDB.html
                 output: web, pdf
@@ -467,16 +467,25 @@ entries:
                 output: web, pdf
                 folderitems:
 
+                  - title: REST example with SharePoint
+                    url: REST-example-with-SharePoint.html
+                    output: web, pdf
+                    folderitems:
+
+                    - title: REST example - back-end
+                      url: REST-example---creating-the-back-end.html
+                      output: web, pdf
+
+                    - title: REST example - client
+                      url: REST-example---adding-a-client-app.html
+                      output: web, pdf
+
             - title: SOAP connector
               url: SOAP-connector.html
               output: web, pdf
 
             - title: Storage connector
               url: Storage-connector.html
-              output: web, pdf
-
-            - title: Swagger connector
-              url: Swagger-connector.html
               output: web, pdf
 
         - title: Community connectors
@@ -487,22 +496,22 @@ entries:
           url: Advanced-topics%3A-data-sources.html
           output: web, pdf
 
-        - title: Building a connector
-          url: Building-a-connector.html
-          output: web, pdf
-
-          folderitems:
-          - title: Implementing auto-migration
-            url: Implementing-auto-migration.html
+          - title: Building a connector
+            url: Building-a-connector.html
             output: web, pdf
 
-          - title: Implementing create, retrieve, update, and delete methods
-            url: Implementing-create%2C-retrieve%2C-update%2C-and-delete-methods.html
-            output: web, pdf
+            folderitems:
+            - title: Implementing auto-migration
+              url: Implementing-auto-migration.html
+              output: web, pdf
 
-          - title: Implementing model discovery
-            url: Implementing-model-discovery.html
-            output: web, pdf
+            - title: Implementing create, retrieve, update, and delete methods
+              url: Implementing-create%2C-retrieve%2C-update%2C-and-delete-methods.html
+              output: web, pdf
+
+            - title: Implementing model discovery
+              url: Implementing-model-discovery.html
+              output: web, pdf
 
       - title: Working with data
           url: Working-with-data.html
@@ -606,6 +615,11 @@ entries:
           url: Working-with-LoopBack-objects.html
           output: web, pdf
 
+          folderitems:
+            - title: Prototype versus instance methods
+              url: Prototype-versus-instance-methods.html
+              output: web, pdf
+
         - title: Using current context
           url: Using-current-context.html
           output: web, pdf
@@ -619,6 +633,10 @@ entries:
         output: web, pdf
 
         folderitems:
+        - title: Running local apps with slc
+          url: Running-local-apps-with-slc.html
+          output: web, pdf
+
         - title: Setting debug strings
           url: Setting-debug-strings.html
           output: web, pdf
@@ -649,31 +667,35 @@ entries:
               url: Push-notifications-for-Android-apps.html
               output: web, pdf
 
-              - title: "Tutorial: Push notifications"
+              - title: Tutorial: Push notifications
                 url: Tutorial%3A-Push-notifications.html
                 output: web, pdf
 
-              - title: Push notification tutorial - LoopBack app
-                url: Push-notification-tutorial-LoopBack-app.html
-                output: web, pdf
+                - title: Push notification tutorial - LoopBack app
+                  url: Tutorial%3A-push-notifications-LoopBack-app.html
+                  output: web, pdf
 
-              - title: Push notification tutorial - Android client
-                url: Push-notification-tutorial-Android-client.html
-                output: web, pdf
+                - title: Push notification tutorial - Android client
+                  url: Tutorial%3A-push-notifications-Android-client.html
+                  output: web, pdf
 
-              - title: Push notification tutorial - iOS client
-                url: Push-notification-tutorial-iOS-client.html
-                output: web, pdf
+                - title: Push notification tutorial - iOS client
+                  url: Tutorial%3A-push-notifications-iOS-client.html
+                  output: web, pdf
 
-              - title: Push notification tutorial - putting it all together
-                url: Push-notification-tutorial-putting-it-all-together.html
-                output: web, pdf
+                - title: Tutorial: push notifications - putting it all together
+                  url: Tutorial%3A-push-notifications-putting-it-all-together.html
+                  output: web, pdf
 
           - title: Storage component
             url: Storage-component.html
             output: web, pdf
 
             folderitems:
+            - title: Storage component API
+              url: Storage-component-API.html
+              output: web, pdf
+
             - title: Storage component REST API
               url: Storage-component-REST-API.html
               output: web, pdf
@@ -683,11 +705,11 @@ entries:
             output: web, pdf
             folderitems:
 
-            - title: Configuring providers.json
+            - title: Configuring providers json
               url: Configuring-providers-json.html
               output: web, pdf
 
-            - title: "Tutorial: third-party login"
+            - title: Tutorial: third-party login
               url: Tutorial%3A-third-party-login.html
               output: web, pdf
 
@@ -705,7 +727,7 @@ entries:
               output: web, pdf
               folderitems:
 
-            - title: "Tutorial: Offline Synchronization"
+            - title: Tutorial: Offline Synchronization
               url: Tutorial%3A-Offline-Synchronization.html
               output: web, pdf
 
@@ -722,27 +744,43 @@ entries:
         output: web, pdf
         folderitems:
 
-        - title: Android SDK
-          url: Android-SDK.html
-          output: web, pdf
-          folderitems:
-
-          - title: Working with files using the Android SDK
-            url: Working-with-files-using-the-Android-SDK.html
+          - title: Android SDK
+            url: Android-SDK.html
             output: web, pdf
+            folderitems:
 
-          - title: Push notifications using Android SDK
-            url: Push-notifications-using-Android-SDK.html
-            output: web, pdf
+            - title: Working with files using the Android SDK
+              url: Working-with-files-using-the-Android-SDK.html
+              output: web, pdf
 
-          - title: Working with the LocalInstallation class
-            url: Working-with-the-LocalInstallation-class.html
-            output: web, pdf
+            - title: Push notifications using Android SDK
+              url: Push-notifications-using-Android-SDK.html
+              output: web, pdf
+
+            - title: Working with the LocalInstallation class
+              url: Working-with-the-LocalInstallation-class.html
+              output: web, pdf
 
           - title: iOS SDK
             url: iOS-SDK.html
             output: web, pdf
             folderitems:
+
+          - title: iOS SDK version 1.3
+            url: iOS-SDK-v1.3.html
+            output: web, pdf
+
+          - title: Creating a LoopBack iOS app: part one
+            url: Creating-a-LoopBack-iOS-app%3A-part-one.html
+            output: web, pdf
+
+          - title: Creating a LoopBack iOS app: part two
+            url: Creating-a-LoopBack-iOS-app%3A-part-two.html
+            output: web, pdf
+
+          - title: Using Cocoapods in Swift with iOS SDK
+            url: Using-Cocoapods-in-Swift-with-iOS-SDK.html
+            output: web, pdf
 
         - title: AngularJS JavaScript SDK
           url: AngularJS-JavaScript-SDK.html
@@ -755,6 +793,10 @@ entries:
 
           - title: AngularJS Grunt plugin
             url: AngularJS-Grunt-plugin.html
+            output: web, pdf
+
+          - title: Generating Angular API docs
+            url: Generating-Angular-API-docs.html
             output: web, pdf
 
         - title: Xamarin SDK
@@ -787,67 +829,72 @@ entries:
           url: Tutorials-and-examples.html
           output: web, pdf
 
-      - title: Using promises
-        url: Using-promises.html
-        output: web, pdf
+    - title: Using promises
+          url: Using-promises.html
+          output: web, pdf
 
-        - title: Command-line reference
+      - title: Reference
+          url: Reference.html
+          output: web, pdf
+          folderitems:
+
+        - title: Glossary
+          url: Glossary.html
+          output: web, pdf
+
+          - title: Command-line reference
           url: Command-line-reference.html
           output: web, pdf
           folderitems:
 
-          - title: ACL generator
-            url: ACL-generator.html
-            output: web, pdf
+            - title: ACL generator
+              url: ACL-generator.html
+              output: web, pdf
 
-          - title: API definition generator
-            url: API-definition-generator.html
-            output: web, pdf
+            - title: API definition generator
+              url: API-definition-generator.html
+              output: web, pdf
 
-          - title: Application generator
-            url: Application-generator.html
-            output: web, pdf
+            - title: Application generator
+              url: Application-generator.html
+              output: web, pdf
 
-          - title: Boot script generator
-            url: Boot-script-generator.html
-            output: web, pdf
+            - title: Boot script generator
+              url: Boot-script-generator.html
+              output: web, pdf
 
-          - title: Data source generator
-            url: Data-source-generator.html
-            output: web, pdf
+            - title: Data source generator
+              url: Data-source-generator.html
+              output: web, pdf
 
-          - title: Middleware generator
-            url: Middleware-generator.html
-            output: web, pdf
+            - title: Middleware generator
+              url: Middleware-generator.html
+              output: web, pdf
 
-          - title: Model generator
-            url: Model-generator.html
-            output: web, pdf
+            - title: Model generator
+              url: Model-generator.html
+              output: web, pdf
 
-          - title: Property generator
-            url: Property-generator.html
-            output: web, pdf
+            - title: Property generator
+              url: Property-generator.html
+              output: web, pdf
 
-          - title: Relation generator
-            url: Relation-generator.html
-            output: web, pdf
+            - title: Relation generator
+              url: Relation-generator.html
+              output: web, pdf
 
-          - title: Remote method generator
-            url: Remote-method-generator.html
-            output: web, pdf
+            - title: Remote method generator
+              url: Remote-method-generator.html
+              output: web, pdf
 
-          - title: Swagger generator
-            url: Swagger-generator.html
-            output: web, pdf
+            - title: Swagger generator
+              url: Swagger-generator.html
+              output: web, pdf
 
           - title: Project layout reference
             url: Project-layout-reference.html
             output: web, pdf
             folderitems:
-
-            - title: client directory
-              url: client-directory.html
-              output: web, pdf
 
             - title: package.json
               url: package.json.html
@@ -858,47 +905,46 @@ entries:
           output: web, pdf
           folderitems:
 
-          - title: component-config.json
-            url: component-config.json.html
-            output: web, pdf
+              - title: component-config.json
+                url: component-config.json.html
+                output: web, pdf
 
-          - title: config.json
-            url: config.json.html
-            output: web, pdf
+              - title: config.json
+                url: config.json.html
+                output: web, pdf
 
-          - title: datasources.json
-            url: datasources.json.html
-            output: web, pdf
+              - title: datasources.json
+                url: datasources.json.html
+                output: web, pdf
 
-          - title: middleware.json
-            url: middleware.json.html
-            output: web, pdf
+              - title: middleware.json
+                url: middleware.json.html
+                output: web, pdf
 
-          - title: model-config.json
-            url: model-config.json.html
-            output: web, pdf
+              - title: model-config.json
+                url: model-config.json.html
+                output: web, pdf
 
-          - title: policy-config.json
-            url: policy-config.json.html
-            output: web, pdf
+              - title: policy-config.json
+                url: policy-config.json.html
+                output: web, pdf
 
-          - title: server.js
-            url: server.js.html
-            output: web, pdf
+              - title: server.js
+                url: server.js.html
+                output: web, pdf
 
-        - title: common directory
-          url: common-directory.html
-          output: web, pdf
+              - title: common directory
+                url: common-directory.html
+                output: web, pdf
 
-          folderitems:
-          - title: Model definition JSON file
-            url: Model-definition-JSON-file.html
-            output: web, pdf
+                folderitems:
+                - title: Model definition JSON file
+                  url: Model-definition-JSON-file.html
+                  output: web, pdf
 
-      - title: Reference
-        url: Reference.html
-        output: web, pdf
-        folderitems:
+            - title: client directory
+              url: client-directory.html
+              output: web, pdf
 
         - title: Basic model object
           url: Basic-model-object.html
@@ -920,15 +966,120 @@ entries:
           url: Valid-names-in-LoopBack.html
           output: web, pdf
 
-        - title: Glossary
-          url: Glossary.html
-          output: web, pdf
-
           - title: Release notes
           url: Release-notes.html
           output: web, pdf
           folderitems:
 
+            - title: Current open issues
+          url: Current-open-issues.html
+          output: web, pdf
+
+              - title: Latest updates
+          url: Latest-updates.html
+          output: web, pdf
+          folderitems:
+
+                - title: Updates to loopback
+          url: Updates-to-loopback.html
+          output: web, pdf
+
+                - title: Updates to loopback-boot
+          url: Updates-to-loopback-boot.html
+          output: web, pdf
+          folderitems:
+
+                - title: Updates to loopback-datasource-juggler
+          url: Updates-to-loopback-datasource-juggler.html
+          output: web, pdf
+          folderitems:
+
+                - title: Updates to generator-loopback
+          url: Updates-to-generator-loopback.html
+          output: web, pdf
+          folderitems:
+
+                - title: Updates to loopback-swagger
+          url: Updates-to-loopback-swagger.html
+          output: web, pdf
+          folderitems:
+
+                - title: Updates to loopback-sdk-angular
+          url: Updates-to-loopback-sdk-angular.html
+          output: web, pdf
+          folderitems:
+
+                - title: Updates to LoopBack components
+          url: Updates-to-LoopBack-components.html
+          output: web, pdf
+
+        - title: Updates to other LoopBack modules
+          url: Updates-to-other-LoopBack-modules.html
+          output: web, pdf
+
+        - title: Updates to strong-remoting
+          url: Updates-to-strong-remoting.html
+          output: web, pdf
+          folderitems:
+
+        - title: Updates to connectors
+          url: Updates-to-connectors.html
+          output: web, pdf
+
+                - title: Change log
+          url: Change-log.html
+          output: web, pdf
+
+            - title: LoopBack 2.23
+                url: LoopBack-2.23.html
+                output: web, pdf
+
+            - title: LoopBack 2.22 release notes
+                url: LoopBack-2.22-release-notes.html
+                output: web, pdf
+
+            - title: LoopBack 2.19 release notes
+                url: LoopBack-2.19-release-notes.html
+                output: web, pdf
+
+              - title: LoopBack 2.0 release notes
+                url: LoopBack-2.0-release-notes.html
+                output: web, pdf
+
+                - title: Migrating apps to version 2.0
+                  url: Migrating-apps-to-version-2.0.html
+                  output: web, pdf
+
+
+        <a href="/pages/viewpage.action?pageId=3836228">LoopBack Definition Language (LDL)</a>
+
         - title: Error object
           url: Error-object.html
           output: web, pdf
+
+      - title: Contributing to LoopBack documentation
+          url: Contributing-to-LoopBack-documentation.html
+          output: web, pdf
+          folderitems:
+
+
+        - title: Documentation style guide
+          url: Documentation-style-guide.html
+          output: web, pdf
+
+        - title: Recent documentation updates
+          url: Recent-documentation-updates.html
+          output: web, pdf
+
+
+
+    - title: Docs in other languages
+          url: Docs-in-other-languages.html
+          output: web, pdf
+
+    - title: app-name.yaml
+                url: app-name.yaml.html
+                output: web, pdf
+
+</body>
+</html>
