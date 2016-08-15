@@ -5,32 +5,32 @@ entries:
   folders:
 
   - title: Overview
-    url: /doc/lb2/index.html
+    url: /doc/en/lb2/index.html
     output: web, pdf
     folderitems:
 
     - title: LoopBack docs
-      url: /doc/lb2/loopback_docs.html
+      url: /doc/en/lb2/loopback_docs.html
       output: web, pdf
 
   - title: Installation
-    url: /doc/lb2/Installation.html
+    url: /doc/en/lb2/Installation.html
     output: web, pdf
     folderitems:
 
     - title: Updating to the latest version
-      url: /doc/lb2/Updating-to-the-latest-version.html
+      url: /doc/en/lb2/Updating-to-the-latest-version.html
       output: web, pdf
 
   - title: LoopBack core concepts
-    url: /doc/lb2/LoopBack-core-concepts.html
+    url: /doc/en/lb2/LoopBack-core-concepts.html
     output: web, pdf
     folderitems:
 
     - title: Routing
-      url: /doc/lb2/Routing.html
+      url: /doc/en/lb2/Routing.html
       output: web, pdf
 
     - title: LoopBack FAQ
-      url: /doc/lb2/LoopBack-FAQ.html
+      url: /doc/en/lb2/LoopBack-FAQ.html
       output: web, pdf

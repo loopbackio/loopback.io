@@ -5,12 +5,12 @@ entries:
   folders:
 
   - title: Overview
-    url: /doc/contrib/index.html
+    url: /doc/en/contrib/index.html
     output: web, pdf
 
     folderitems:
     - title: Getting started with Jekyll
-      url: /doc/contrib/jekyll_getting_started.html
+      url: /doc/en/contrib/jekyll_getting_started.html
       output: web, pdf
 
   - title: Authoring
@@ -18,15 +18,15 @@ entries:
 
     folderitems:
     - title: Pages
-      url: /doc/contrib/pages.html
+      url: /doc/en/contrib/pages.html
       output: web, pdf
 
     - title: Conditional logic
-      url: /doc/contrib/conditional_logic.html
+      url: /doc/en/contrib/conditional_logic.html
       output: web, pdf
 
     - title: Content reuse
-      url: /doc/contrib/content_reuse.html
+      url: /doc/en/contrib/content_reuse.html
       output: web, pdf
 
   - title: Navigation
@@ -34,15 +34,15 @@ entries:
 
     folderitems:
     - title: Sidebar navigation
-      url: /doc/contrib/sidebar_navigation.html
+      url: /doc/en/contrib/sidebar_navigation.html
       output: web, pdf
 
     - title: Tags
-      url: /doc/contrib/tags.html
+      url: /doc/en/contrib/tags.html
       output: web, pdf
 
     - title: Series
-      url: /doc/contrib/series.html
+      url: /doc/en/contrib/series.html
       output: web, pdf
 
   - title: Formatting
@@ -50,39 +50,39 @@ entries:
 
     folderitems:
     - title: Tooltips
-      url: /doc/contrib/adding_tooltips.html
+      url: /doc/en/contrib/adding_tooltips.html
       output: web, pdf
 
     - title: Alerts
-      url: /doc/contrib/alerts.html
+      url: /doc/en/contrib/alerts.html
       output: web, pdf
 
     - title: Icons
-      url: /doc/contrib/icons.html
+      url: /doc/en/contrib/icons.html
       output: web, pdf
 
     - title: Images
-      url: /doc/contrib/images.html
+      url: /doc/en/contrib/images.html
       output: web, pdf
 
     - title: Code samples
-      url: /doc/contrib/code_samples.html
+      url: /doc/en/contrib/code_samples.html
       output: web, pdf
 
     - title: Links
-      url: /doc/contrib/hyperlinks.html
+      url: /doc/en/contrib/hyperlinks.html
       output: web, pdf
 
     - title: Navtabs
-      url: /doc/contrib/navtabs.html
+      url: /doc/en/contrib/navtabs.html
       output: web, pdf
 
     - title: Tables
-      url: /doc/contrib/tables.html
+      url: /doc/en/contrib/tables.html
       output: web, pdf
 
     - title: Syntax highlighting
-      url: /doc/contrib/syntax_highlighting.html
+      url: /doc/en/contrib/syntax_highlighting.html
       output: web, pdf
 
   - title: Handling reviews
@@ -90,7 +90,7 @@ entries:
 
     folderitems:
     - title: Commenting on files
-      url: /doc/contrib/commenting_on_files.html
+      url: /doc/en/contrib/commenting_on_files.html
       output: web, pdf
 
   - title: Special layouts
@@ -98,9 +98,9 @@ entries:
 
     folderitems:
     - title: Glossary layout
-      url: /doc/contrib/glossary.html
+      url: /doc/en/contrib/glossary.html
       output: web, pdf
 
     - title: FAQ layout
-      url: /doc/contrib/faq_layout.html
+      url: /doc/en/contrib/faq_layout.html
       output: web, pdf

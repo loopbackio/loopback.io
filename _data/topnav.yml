@@ -27,8 +27,8 @@ topnav_dropdowns:
         - title: LoopBack Overview
           url: /index.html
         - title: LoopBack 3.0
-          url: /doc/lb3/index.html
+          url: /doc/en/lb3/index.html
         - title: LoopBack 2.x
-          url: /doc/lb2/index.html
+          url: /doc/en/lb2/index.html
         - title: Contributing to documentation
-          url: /doc/contrib/index.html
+          url: /doc/en/contrib/index.html
