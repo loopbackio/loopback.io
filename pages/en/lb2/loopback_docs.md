@@ -1,5 +1,6 @@
 ---
 title: LoopBack Documentation
+lang: en
 keywords: LoopBack
 tags: [getting_started]
 sidebar: lb2_sidebar

@@ -1,0 +1,482 @@
+---
+title: "Where filter"
+lang: en
+layout: page
+keywords: LoopBack
+tags:
+sidebar: lb2_sidebar
+permalink: /doc/en/lb2/Where-filter.html
+summary:
+---
+
+A _where_ filter specifies a set of logical conditions to match, similar to a WHERE clause in a SQL query.
+
+## REST API
+
+In the first form below, the condition is equivalence, that is, it tests whether _property_ equals _value_.
+The second form below is for all other conditions.
+
+`filter[where][property]=value`
+
+`filter[where][property][op]=value`
+
+For example, if there is a cars model with a `odo` property, the following query finds instances where the `odo` is exactly equal to 5000:
+
+`/cars?filter[where][odo][gt]=5000`
+
+For example, here is a query to find cars with `odo` is less than 30,000:
+
+`/cars?filter[where][odo][lt]=30000`
+
+You can also use [stringified JSON format](/doc/en/lb2/Querying-data.html#Queryingdata-UsingstringifiedJSONinRESTqueries) in a REST query.
+
+## Node API
+
+{% include warning.html content="
+
+Methods of models in the [AngularJS client](https://docs.strongloop.com/display/APIC/AngularJS+JavaScript+SDK) have a different signature than those of the Node API.
+For more information, see [AngularJS SDK API](http://apidocs.strongloop.com/loopback-sdk-angular/).
+
+" %}
+
+### Where clause for queries
+
+For query methods such as `find()`,` findOrCreate()`, or `findOne()`, use the first form below to test equivalence, that is, whether _property_ equals _value_.
+Use the second form below for all other conditions.
+
+```javascript
+{where: {property: value}} 
+```
+
+```javascript
+{where: {property: {op: value}}}
+```
+
+Where:
+
+* _property_ is the name of a property (field) in the model being queried.
+* _value_ is a literal value. 
+* _op_ is one of the [operators](/doc/en/lb2/Where-filter.html) listed below.
+
+```javascript
+Cars.find({where: {carClass:'fullsize'}});
+```
+
+The equivalent REST query would be:
+
+`/api/cars?filter[where][carClass]=fullsize`
+
+{% include tip.html content="
+
+The above where clause syntax is for queries, and not for [`count()`](http://apidocs.strongloop.com/loopback/#persistedmodel-count).
+For all other methods, including `count()`, omit the `{ where : ... }` wrapper; see [Where clause for other methods](/doc/en/lb2/Where-filter.html) below.
+
+" %}
+
+### Where clause for other methods
+
+{% include important.html content="
+
+When you call the Node APIs _for methods other than queries_, that is for methods that update and delete
+(and [`count()`](http://apidocs.strongloop.com/loopback/#persistedmodel-count)), don't wrap the where clause in a `{ where : ... }` object,
+simply use the condition as the argument as shown below. See examples below.
+
+" %}
+
+In the first form below, the condition is equivalence, that is, it tests whether _property_ equals _value_. The second form is for all other conditions.
+
+```javascript
+{property: value}
+```
+
+```javascript
+{property: {op: value}}
+```
+
+Where:
+
+* _property_ is the name of a property (field) in the model being queried.
+* _value_ is a literal value. 
+* _op_ is one of the [operators](/doc/en/lb2/Where-filter.html) listed below.
+
+For example, below shows a where clause in a call to a model's [updateAll()](http://apidocs.strongloop.com/loopback/#persistedmodel-updateall) method.
+Note the lack of `{ where : ... }` in the argument.
+
+```javascript
+var myModel = req.app.models.Thing;
+var theId = 12;
+myModel.updateAll( {id: theId}, {regionId: null}, function(err, results) {
+	return callback(err, results);
+});
+```
+
+More examples, this time in a call to [destroyAll()](http://apidocs.strongloop.com/loopback/#persistedmodel-destroyall):
+
+```javascript
+var RoleMapping = app.models.RoleMapping;
+RoleMapping.destroyAll( { principalId: userId }, function(err, obj) { ... } );
+```
+
+To delete all records where the cost property is greater than 100:
+
+```javascript
+productModel.destroyAll({cost: {gt: 100}}, function(err, obj) { ... });
+```
+
+### Default scopes with where filters
+
+Adding a `scope` to a model definition (in the [model.json file](/doc/en/lb2/Model-definition-JSON-file.html))
+automatically adds a method to model called `defaultScope()`. LoopBack will call this method whenever a model is created, updated, or queried.
+
+{% include tip.html content="
+
+Default scopes with a `where` filter may not work as you expect!
+
+" %}
+
+Each time a model instance is created or updated, the generated `defaultScope()` method will modify the model's properties
+matching the `where` filter to enforce the values specified.
+
+If you don't want to have the default scope applied in this way, use named scopes where possible.
+
+If you must use a default scope, but don't want it to affect `upsert()`, for example, simply override the model's `defaultScope()` method prior to calling `upsert()`.
+
+For  example:
+
+```javascript
+var defaultScope = Report.defaultScope;
+  Report.defaultScope = function(){};
+  Report.upsert({id: reportId, 'deleted': true}, function(...) {
+    Report.defaultScope = defaultScope;
+    ...
+  });
+```
+
+## Operators
+
+This table describes the operators available in "where" filters. See [Examples](/doc/en/lb2/Where-filter.html) below.
+
+<table>
+  <tbody>
+    <tr>
+      <th>Operator</th>
+      <th>Description</th>
+    </tr>
+    <tr>
+      <td>and</td>
+      <td>Logical AND operator</td>
+    </tr>
+    <tr>
+      <td>or</td>
+      <td>Logical OR operator</td>
+    </tr>
+    <tr>
+      <td>gt, gte</td>
+      <td>
+        <p>Numerical greater than (&gt;); greater than or equal (&gt;=). Valid only for numerical and date values.</p>
+        <p>For Geopoint values, the units are in miles by default. See <a href="http://apidocs.strongloop.com/loopback-datasource-juggler/#geopoint" class="external-link" rel="nofollow">Geopoint</a> for more information.</p>
+      </td>
+    </tr>
+    <tr>
+      <td>lt, lte</td>
+      <td>
+        <p>Numerical less than (&lt;); less than or equal (&lt;=). Valid only for numerical and date values.</p>
+        <p>For geolocation values, the units are in miles by default. See <a href="http://apidocs.strongloop.com/loopback-datasource-juggler/#geopoint" class="external-link" rel="nofollow">Geopoint</a> for more information.</p>
+      </td>
+    </tr>
+    <tr>
+      <td>between</td>
+      <td>
+        <p>True if the value is between the two specified values: greater than or equal to first value and less than or equal to second value.</p>
+        <p>For geolocation values, the units are in miles by default. See <a href="http://apidocs.strongloop.com/loopback-datasource-juggler/#geopoint" class="external-link" rel="nofollow">Geopoint</a> for more information.</p>
+      </td>
+    </tr>
+    <tr>
+      <td>inq, nin</td>
+      <td>In / not in an array of values.</td>
+    </tr>
+    <tr>
+      <td>near</td>
+      <td>For geolocations, return the closest points, sorted in order of distance. &nbsp;Use with&nbsp;<code>limit</code>&nbsp;to return the n closest points.</td>
+    </tr>
+    <tr>
+      <td>neq</td>
+      <td>Not equal (!=)</td>
+    </tr>
+    <tr>
+      <td>like, nlike</td>
+      <td>
+        <p>LIKE / NOT LIKE operators for use with regular expressions. The regular expression format depends on the backend data source.</p>
+      </td>
+    </tr>
+    <tr>
+      <td>regexp</td>
+      <td>Regular expression.</td>
+    </tr>
+  </tbody>
+</table>
+
+### **AND and OR operators**
+
+Use the AND and OR operators to create compound logical filters based on simple where filter conditions, using the following syntax.
+
+**Node API**
+
+```javascript
+{where: {<and|or>: [condition1, condition2, ...]}}
+```
+
+**REST**
+
+`[where][<and|or>][0]condition1&[where][<and|or>]condition2...`
+
+Where_ condition1_ and_ condition2_ are a filter conditions.
+
+See [examples](/doc/en/lb2/Where-filter.html) below.
+
+### Regular expressions
+
+You can use regular expressions in a where filter, with the following syntax. You can use a regular expression in a where clause for updates and deletes, as well as queries.
+
+Essentially, `regexp` is just like an operator in which you provide a regular expression value as the comparison value.
+
+{% include tip.html content="
+
+A regular expression value can also include one or more [flags](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions#Advanced_searching_with_flags).
+For example, append `/i` to the regular expression to perform a case-insensitive match.
+
+" %}
+
+**Node API**
+
+```javascript
+{where: {property: {regexp: expression}}}
+```
+
+Where _expression_ can be a:
+
+* String defining a regular expression (for example, `'^foo'` ).
+* Regular expression literal (for example, `/^foo/` ).
+* Regular expression object (for example, `new RegExp(/John/)`).
+
+Or, in a simpler format:
+
+```javascript
+{where: {property: expression}}}
+```
+
+Where _expression_ can be a:
+
+* Regular expression literal (for example, `/^foo/` ).
+* Regular expression object (for example, `new RegExp(/John/)`).
+
+For more information on JavaScript regular expressions,
+see [Regular Expressions (Mozilla Developer Network)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions).
+
+{% include tip.html content="
+
+The above where clause syntax is for queries. For updates and deletes, omit the `{ where : ... }` wrapper.
+See [Where clause for other methods](/doc/en/lb2/Where-filter.html) below.
+
+" %}
+
+For example, this query returns all cars for which the model starts with a capital "T":
+
+```javascript
+Cars.find( {"where": {"model": {"regexp": "^T"}}} );
+```
+
+Or, using the simplified form:
+
+```javascript
+Cars.find( {"where": {"model": /^T/} } );
+```
+
+**REST**
+
+`filter[where][property][regexp]=expression`
+
+Where:
+
+* _property_ is the name of a property (field) in the model being queried.
+* _expression_ is the JavaScript regular expression string.
+See [Regular Expressions (Mozilla Developer Network)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions).
+
+A regular expression value can also include one or more [flags](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions#Advanced_searching_with_flags).
+For example, append `/i` to the regular expression to perform a case-insensitive match.
+
+{% include important.html content="
+
+When using a regular expression flag with the REST API, you _must_ precede the regular expression with a slash character (`/`).
+
+" %}
+
+The following REST query returns all cars for which the model starts with a capital "T"::
+
+`/api/cars?filter[where][model][regexp]=^T`
+
+The following REST query returns all models that start with either an uppercase "T" or lowercase "t":
+
+`/api/cars?filter[where][model][regexp]=/^t/i`
+
+Note that since the regular expression includes a flag, it is preceded by a slash (`/`).
+
+## Examples
+
+### Equivalence
+
+Weapons with name M1911:
+
+**REST**
+
+`/weapons?filter[where][name]=M1911`
+
+Cars where carClass is "fullsize":
+
+**REST**
+
+`/api/cars?filter[where][carClass]=fullsize`
+
+Equivalently, in Node:
+
+```javascript
+Cars.find({ where: {carClass:'fullsize'} });
+```
+
+### gt and lt
+
+```javascript
+ONE_MONTH = 30 * 24 * 60 * 60 * 1000;  // Month in milliseconds
+transaction.find({
+      where: {
+        userId: user.id,
+        time: {gt: Date.now() - ONE_MONTH}
+      }
+    }
+```
+
+For example, the following query returns all instances of the employee model using a _where_ filter that specifies a date property after (greater than) the specified date: 
+
+`/employees?filter[where][date][gt]=2014-04-01T18:30:00.000Z`
+
+The same query using the Node API:
+
+```javascript
+Employees.find({
+  where: { 
+    date: {gt: new Date('2014-04-01T18:30:00.000Z')}
+  }
+});
+```
+
+The top three weapons with a range over 900 meters:
+
+`/weapons?filter[where][effectiveRange][gt]=900&filter[limit]=3`
+
+Weapons with audibleRange less than 10:
+
+`/weapons?filter[where][audibleRange][lt]=10`
+
+### and / or
+
+The following code is an example of using the "and" operator to find posts where the title is "My Post" and content is "Hello".
+
+```javascript
+Post.find({where: {and: [{title: 'My Post'}, {content: 'Hello'}]}}, 
+          function (err, posts) {
+            ...
+});
+```
+
+Equivalent in REST:
+
+`?filter[where][and][0][title]=My%20Post&filter[where][and][1][content]=Hello`
+
+Example using the "or" operator to finds posts that either have title of "My Post" or content of "Hello".
+
+```javascript
+Post.find({where: {or: [{title: 'My Post'}, {content: 'Hello'}]}}, 
+          function (err, posts) {
+            ...
+});
+```
+
+More complex example. The following expresses `(field1= foo and field2=bar) OR field1=morefoo`:
+
+```javascript
+{
+   or: [
+     { and: [{ field1: 'foo' }, { field2: 'bar' }] },
+     { field1: 'morefoo' }
+   ]
+ }
+```
+
+### between
+
+Example of between operator:
+
+`filter[where][price][between][0]=0&filter[where][price][between][1]=7`
+
+In Node API:
+
+```javascript
+Shirts.find({where: {size: {between: [0,7]}}}, function (err, posts) { ... } )
+```
+
+### near
+
+Example using the **near** operator that returns the three closest locations to a given geo point:
+
+`/locations?filter[where][geo][near]=153.536,-28.1&filter[limit]=3`
+
+### like and nlike
+
+The like and nlike (not like) operators enable you to match SQL regular expressions. The regular expression format depends on the backend data source.
+
+Example of like operator:
+
+```javascript
+Post.find({where: {title: {like: 'M.+st'}}}, function (err, posts) { ... });
+```
+
+Example of nlike operator:
+
+```javascript
+Post.find({where: {title: {nlike: 'M.+XY'}}}, function (err, posts) {
+```
+
+When using the memory connector:
+
+```javascript
+User.find({where: {name: {like: '%St%'}}}, function (err, posts) { ... });
+User.find({where: {name: {nlike: 'M%XY'}}}, function (err, posts) { ... });
+```
+
+### inq
+
+The inq operator checks whether the value of the specified property matches any of the values provided in an array. The general syntax is:
+
+```javascript
+{where: { property: { inq: [val1, val2, ...]}}}
+```
+
+Where:
+
+* _property_ is the name of a property (field) in the model being queried.
+* _val1, val2_, and so on, are literal values in an array.
+
+Example of inq operator:
+
+```javascript
+Posts.find({where: {id: {inq: [123, 234]}}}, 
+  function (err, p){... });
+```
+
+REST:
+
+`/medias?filter[where][keywords][inq]=foo&filter[where][keywords][inq]=bar`
+
+Or 
+
+`?filter={"where": {"keywords": {"inq": ["foo", "bar"]}}}`
