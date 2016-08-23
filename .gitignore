@@ -15,3 +15,4 @@ _pdf
 *.swo
 node_modules
 dist
+.jekyll-metadata
