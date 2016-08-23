@@ -1,6 +1,7 @@
 _site/
 _pdf
 .idea
+*.iml
 .project
 .DS_Store
 *.sublime*

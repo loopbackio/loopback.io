@@ -1,5 +1,6 @@
 ---
 title: Installation
+lang: en
 layout: stub
 keywords: LoopBack
 tags: [getting_started]
