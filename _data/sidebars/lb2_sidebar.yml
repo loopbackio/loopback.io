@@ -5,10 +5,6 @@ entries:
     version: '2.0'
     folders:
 
-      - title: '3.0 Release Notes'
-        url: /doc/en/lb2/3.0-Release-Notes.html
-        output: 'web, pdf'
-
       - title: 'LoopBack core concepts'
         url: /doc/en/lb2/LoopBack-core-concepts.html
         output: 'web, pdf'

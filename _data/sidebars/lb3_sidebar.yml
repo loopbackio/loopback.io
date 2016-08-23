@@ -4,50 +4,10 @@ entries:
   version: 3.0
   folders:
 
-  - title: Top-level sidebar item one
-    url: /doc/en/lb3/loopback_docs.html
-    output: web
-    folderitems:
+  - title: 'LoopBack 3.0'
+    url: /doc/en/lb3/index.html
+    output: 'web, pdf'
 
-    - title: Second-level entry Num 1
-      url: /doc/en/lb3/loopback_docs.html
-      output: web
-
-    - title: Second-level entry Num 2
-      url: /doc/en/lb3/loopback_docs.html
-      output: web
-
-  - title: Top-level sidebar item with children
-    url: /doc/en/lb3/loopback_docs.html
-    output: web
-    folderitems:
-
-    - title: Second-level item Num 1
-      url: /doc/en/lb3/loopback_docs.html
-      output: web
-
-    - title: Second-level item Num 2
-      url: /doc/en/lb3/loopback_docs.html
-      output: web
-
-      subfolders:
-      - title: Second-level item 3 w/children
-        url: /doc/en/lb3/loopback_docs.html
-        output: web
-        subfolderitems:
-
-        - title: Third-level item 1
-          url: /doc/en/lb3/loopback_docs.html
-          output: web
-
-        - title: Third-level item 2
-          url: /doc/en/lb3/loopback_docs.html
-          output: web
-
-        - title: Third-level item 3
-          url: /doc/en/lb3/loopback_docs.html
-          output: web
-
-    - title: Second-level item 4
-      url: /doc/en/lb3/loopback_docs.html
-      output: web
+  - title: '3.0 Release Notes'
+    url: /doc/en/lb3/3.0-Release-Notes.html
+    output: 'web, pdf'
