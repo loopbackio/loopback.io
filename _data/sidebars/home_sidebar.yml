@@ -3,15 +3,18 @@ entries:
   levels: one
   folders:
 
-  - title: Documentation
+  - title: LoopBack Documentation
+    url: /doc/index.html
     output: web
-    folderitems:
-    - title: LoopBack 3.0
-      url: /doc/en/lb3/index.html
-      output: web
-    - title: LoopBack 2.x
-      url: /doc/en/lb2/index.html
-      output: web
-    - title: Contributing to LoopBack documentation
-      url: /doc/en/contrib/index.html
-      output: web
+    
+  - title: LoopBack 3.0
+    url: /doc/en/lb3/index.html
+    output: web
+
+  - title: LoopBack 2.x
+    url: /doc/en/lb2/index.html
+    output: web
+
+  - title: Contributing to documentation
+    url: /doc/en/contrib/index.html
+    output: web

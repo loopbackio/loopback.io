@@ -19,10 +19,8 @@ LoopBack provides connectors for:
 Also see [Community connectors](/doc/en/lb2/Community-connectors.html) for a list of connectors developed by the StrongLoop developer community.
 
 {% include important.html content="
-
 This article is for developers who want to create a new connector type to connect to a data source not currently supported.
 It walks you through the MySQL connector implementation to teach you how to develop a connector for relational databases. However, many of the concepts also apply to creating a connector to other types of data sources.
-
 " %}
 
 ## Understand a connector's responsibilities

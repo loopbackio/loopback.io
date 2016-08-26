@@ -9,12 +9,6 @@ permalink: /doc/en/lb2/Introduction-to-User-model-authentication.html
 summary:
 ---
 
-{% include warning.html content="
-
-This article is not visible in APIC space because it is focussed on using LoopBack Explorer, not the Explorer in API Connect.
-
-" %}
-
 **Related articles**:
 
 LoopBack provides a full-featured solution for authentication and authorization.

@@ -11,6 +11,8 @@ summary:
 
 This is an example of a default product YAML file for an "empty" LoopBack application.
 
+NOTE: Applicable to API Connect apps.
+
 ```
 product: '1.0.0'
 info:

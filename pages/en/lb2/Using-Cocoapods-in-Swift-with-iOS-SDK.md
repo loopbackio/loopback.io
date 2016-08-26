@@ -9,6 +9,8 @@ permalink: /doc/en/lb2/Using-Cocoapods-in-Swift-with-iOS-SDK.html
 summary:
 ---
 
+**NOTE**: This article is outdated and is not included in doc navigation.
+
 ## Overview
 
 [CocoaPods](https://cocoapods.org/about) manages library dependencies for your Xcode projects using a single text file called a Podfile. 

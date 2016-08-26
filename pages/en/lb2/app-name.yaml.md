@@ -11,6 +11,8 @@ summary:
 
 This is an example of an application YAML file for an "empty" LoopBack application.
 
+NOTE: Applicable to API Connect apps.
+
 ```
 swagger: '2.0'
 info:

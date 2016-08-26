@@ -9,6 +9,8 @@ permalink: /doc/en/lb2/Creating-a-LoopBack-iOS-app-part-one.html
 summary:
 ---
 
+**NOTE**: This article is outdated and is not included in doc navigation.
+
 * Download the [server side code](https://github.com/strongloop-community/sample-applications/tree/master/BooksServer)
 * Download the [iOS client application](https://github.com/strongloop-community/sample-applications/tree/master/BooksClient)
 

@@ -10,12 +10,9 @@ summary:
 ---
 
 {% include important.html content="
-
 **Prerequisites**
 
-* Install **[API Connect](https://developer.ibm.com/apiconnect/)** or **[StrongLoop](https://docs.strongloop.com/display/SL/Installing+StrongLoop)**.
-* Read [LoopBack core concepts](https://docs.strongloop.com/display/APIC/LoopBack+core+concepts).
-
+Install [API Connect](https://developer.ibm.com/apiconnect/) or [StrongLoop](https://docs.strongloop.com/display/SL/Installing+StrongLoop) and read [LoopBack core concepts](/doc/en/lb/LoopBack-core-concepts.html).
 " %}
 
 A _LoopBack model_ represents data in backend systems such as databases, and by default has both Node and REST APIs.
