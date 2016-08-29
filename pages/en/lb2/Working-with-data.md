@@ -24,30 +24,30 @@ All LoopBack models that are connected to persistent data stores (such as a data
     <tr>
       <td>Create</td>
       <td>
-        <p><a href="https://docs.strongloop.com/display/APIC/PersistedModel+REST+API#PersistedModelRESTAPI-Createmodelinstance">PUT /<em>modelName</em></a></p>
-        <p><a href="https://docs.strongloop.com/display/APIC/PersistedModel+REST+API#PersistedModelRESTAPI-Update/insertinstance">POST /<em>modelName</em></a></p>
+        <p><a href="/doc/en/lb2/PersistedModel-REST-API.html#PersistedModelRESTAPI-Createmodelinstance">PUT /<em>modelName</em></a></p>
+        <p><a href="/doc/en/lb2/PersistedModel-REST-API.html#PersistedModelRESTAPI-Update/insertinstance">POST /<em>modelName</em></a></p>
       </td>
       <td><code><a href="http://apidocs.strongloop.com/loopback/#persistedmodel-create" class="external-link" rel="nofollow">create()</a><sup>*</sup></code></td>
       <td>INSERT</td>
     </tr>
     <tr>
       <td>Read (Retrieve)</td>
-      <td><a href="https://docs.strongloop.com/display/APIC/PersistedModel+REST+API#PersistedModelRESTAPI-Findmatchinginstances">GET /modelName?filter=...</a></td>
+      <td><a href="/doc/en/lb2/PersistedModel-REST-API.html#PersistedModelRESTAPI-Findmatchinginstances">GET /modelName?filter=...</a></td>
       <td><code><a href="http://apidocs.strongloop.com/loopback/#persistedmodel-find" class="external-link" rel="nofollow">find()</a><sup>*</sup></code></td>
       <td>SELECT</td>
     </tr>
     <tr>
       <td>Update (Modify)</td>
       <td>
-        <p><a href="https://docs.strongloop.com/display/APIC/PersistedModel+REST+API#PersistedModelRESTAPI-Update/insertinstance">POST /<em>modelName</em></a>&nbsp;</p>
-        <p><a href="https://docs.strongloop.com/display/APIC/PersistedModel+REST+API#PersistedModelRESTAPI-Updatemodelinstanceattributes">PUT /modelName</a></p>
+        <p><a href="/doc/en/lb2/PersistedModel-REST-API.html#PersistedModelRESTAPI-Update/insertinstance">POST /<em>modelName</em></a>&nbsp;</p>
+        <p><a href="/doc/en/lb2/PersistedModel-REST-API.html#PersistedModelRESTAPI-Updatemodelinstanceattributes">PUT /modelName</a></p>
       </td>
       <td><code><a href="http://apidocs.strongloop.com/loopback/#persistedmodel-updateall" class="external-link" rel="nofollow">updateAll()</a><sup>*</sup></code></td>
       <td>UPDATE</td>
     </tr>
     <tr>
       <td>Delete (Destroy)</td>
-      <td><a href="https://docs.strongloop.com/display/APIC/PersistedModel+REST+API#PersistedModelRESTAPI-Deletemodelinstance">DELETE /<em>modelName</em>/<em>modelID</em></a></td>
+      <td><a href="/doc/en/lb2/PersistedModel-REST-API.html#PersistedModelRESTAPI-Deletemodelinstance">DELETE /<em>modelName</em>/<em>modelID</em></a></td>
       <td><code><a href="http://apidocs.strongloop.com/loopback/#persistedmodel-destroybyid" class="external-link" rel="nofollow">destroyById()</a><sup>*</sup></code></td>
       <td>DELETE</td>
     </tr>
@@ -72,7 +72,7 @@ See the following articles for more information:
 
 {% include warning.html content="
 
-Methods of models in the [AngularJS client](https://docs.strongloop.com/display/APIC/AngularJS+JavaScript+SDK) have a different signature than those of the Node API.
+Methods of models in the [AngularJS client](/doc/en/lb2/AngularJS-JavaScript-SDK.html) have a different signature than those of the Node API.
 For more information, see [AngularJS SDK API](http://apidocs.strongloop.com/loopback-sdk-angular/).
 
 " %}

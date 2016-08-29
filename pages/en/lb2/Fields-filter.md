@@ -23,7 +23,7 @@ You can also use [stringified JSON format](/doc/en/lb2/Querying-data.html#Queryi
 
 {% include warning.html content="
 
-Methods of models in the [AngularJS client](https://docs.strongloop.com/display/APIC/AngularJS+JavaScript+SDK) have a different signature than those of the Node API.
+Methods of models in the [AngularJS client](/doc/en/lb2/AngularJS-JavaScript-SDK.html) have a different signature than those of the Node API.
 For more information, see [AngularJS SDK API](http://apidocs.strongloop.com/loopback-sdk-angular/).
 
 " %}

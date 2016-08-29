@@ -28,7 +28,7 @@ By default, the basic LoopBack [Model object](http://apidocs.strongloop.com/loop
 
 * [Inclusion object](http://apidocs.strongloop.com/loopback-datasource-juggler/#inclusion) - Enables you to load relations of several objects and optimize numbers of requests.
 * [Validateable object](http://apidocs.strongloop.com/loopback-datasource-juggler/#validatable) - provides validation methods.
-  See [Validating model data](https://docs.strongloop.com/display/APIC/Validating+model+data).
+  See [Validating model data](/doc/en/lb2/Validating-model-data.html).
 
 When you define relations between models, the [RelationMixin object](http://apidocs.strongloop.com/loopback-datasource-juggler/#relationmixin) object also gets mixed in to the model object.
 

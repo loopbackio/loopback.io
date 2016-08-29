@@ -90,7 +90,7 @@ To connect a model to a data source, follow these steps:
     ```
 
     Follow the prompts to name the datasource and select the connector to use.
-    This adds the new data source to [`datasources.json`](https://docs.strongloop.com/display/APIC/datasources.json).
+    This adds the new data source to `datasources.json`
 
 2.  Edit `server/datasources.json` to add the necessary authentication credentials: typically hostname, username, password, and database name.
 
@@ -111,19 +111,19 @@ To connect a model to a data source, follow these steps:
 
     For information on the specific properties that each connector supports, see:
 
-    * [Cloudant connector](https://docs.strongloop.com/display/APIC/Cloudant+connector)
-    * [DashDB](https://docs.strongloop.com/display/APIC/DashDB)
-    * [DB2 connector](https://docs.strongloop.com/display/APIC/DB2+connector)
-    * [DB2 for z/OS](https://docs.strongloop.com/pages/viewpage.action?pageId=10354945)
-    * [Informix](https://docs.strongloop.com/display/APIC/Informix)
-    * [Memory connector](https://docs.strongloop.com/display/APIC/Memory+connector)
-    * [MongoDB connector](https://docs.strongloop.com/display/APIC/MongoDB+connector)
-    * [MySQL connector](https://docs.strongloop.com/display/APIC/MySQL+connector)
-    * [Oracle connector](https://docs.strongloop.com/display/APIC/Oracle+connector)
-    * [PostgreSQL connector](https://docs.strongloop.com/display/APIC/PostgreSQL+connector)
-    * [Redis connector](https://docs.strongloop.com/display/APIC/Redis+connector)
-    * [SQL Server connector](https://docs.strongloop.com/display/APIC/SQL+Server+connector)
-    * [SQLite3](https://docs.strongloop.com/display/APIC/SQLite3)
+    * [Cloudant connector](/doc/en/lb2/Cloudant-connector.html)
+    * [DashDB](/doc/en/lb2/DashDB.html)
+    * [DB2 connector](/doc/en/lb2/DB2-connector.html)
+    * [DB2 for z/OS](/doc/en/lb2/DB2-for-z-OS.html)
+    * [Informix](/doc/en/lb2/Informix.html)
+    * [Memory connector](/doc/en/lb2/Memory-connector.html)
+    * [MongoDB connector](/doc/en/lb2/MongoDB-connector.html)
+    * [MySQL connector](/doc/en/lb2/MySQL-connector.html)
+    * [Oracle connector](/doc/en/lb2/Oracle-connector.html)
+    * [PostgreSQL connector](/doc/en/lb2/PostgreSQL-connector.html)
+    * [Redis connector](/doc/en/lb2/Redis-connector.html)
+    * [SQL Server connector](/doc/en/lb2/SQL-Server-connector.html)
+    * [SQLite3](/doc/en/lb2/SQLite3.html)
      
 3.  Install the corresponding connector as a dependency of your app with `npm`, for example: 
 
@@ -162,14 +162,14 @@ To connect a model to a data source, follow these steps:
 
     {% include note.html content="
 
-    The model generator lists the [memory connector](https://docs.strongloop.com/display/APIC/Memory+connector), \"no data source,\"
-    and data sources listed in [`datasources.json`](https://docs.strongloop.com/display/APIC/datasources.json).
+    The model generator lists the [memory connector](/doc/en/lb2/Memory-connector.html), \"no data source,\"
+    and data sources listed in `datasources.json`.
     That's why you created the data source first in step 1.
 
     " %}
 
     You can also create models from an existing database.
-    See [Creating models](https://docs.strongloop.com/display/APIC/Creating+models) for more information.
+    See [Creating models](/doc/en/lb2/Creating-models.html) for more information.
 
 ## Environment-specific configuration
 

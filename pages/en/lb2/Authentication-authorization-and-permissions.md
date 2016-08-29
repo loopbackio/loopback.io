@@ -14,7 +14,7 @@ summary:
 **Prerequisites**
 
 * Install **[API Connect](https://developer.ibm.com/apiconnect/)** or **[StrongLoop](https://docs.strongloop.com/display/SL/Installing+StrongLoop)**.
-* Read [LoopBack core concepts](https://docs.strongloop.com/display/APIC/LoopBack+core+concepts).
+* Read [LoopBack core concepts](/doc/en/lb2/LoopBack-core-concepts.html).
 
 " %}
 
@@ -225,7 +225,7 @@ To disable a REST endpoints for related model methods, use [disableRemoteMethod
 
 {% include note.html content="
 
-For more information, see [Accessing related models](https://docs.strongloop.com/display/APIC/Accessing+related+models).
+For more information, see [Accessing related models](/doc/en/lb2/Accessing-related-models.html).
 
 " %}
 

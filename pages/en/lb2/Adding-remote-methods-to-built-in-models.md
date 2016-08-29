@@ -10,8 +10,8 @@ summary:
 ---
 
 To add a remote method to a 
-[built-in model](https://docs.strongloop.com/display/APIC/Using+built-in+models), you can either 
-[extend the model](https://docs.strongloop.com/display/APIC/Extending+built-in+models) and add the remote method to your new model,
+[built-in model](/doc/en/lb2/Using-built-in-models.html), you can either 
+[extend the model](/doc/en/lb2/Extending-built-in-models.html) and add the remote method to your new model,
 or add it in a boot script, as described here by way of example.
 
 This example adds a "greet" method the built-in User model.

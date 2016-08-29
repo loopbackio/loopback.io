@@ -19,12 +19,12 @@ to a LoopBack app running on the server. If a LoopBack app is running on `localh
 
 **See also**:
 
-* [Creating models](https://docs.strongloop.com/display/APIC/Creating+models)
-* [Customizing models](https://docs.strongloop.com/display/APIC/Customizing+models)
-* [Creating model relations](https://docs.strongloop.com/display/APIC/Creating+model+relations)
-* [Querying data](https://docs.strongloop.com/display/APIC/Querying+data)
+* [Creating models](/doc/en/lb2/Creating-models.html)
+* [Customizing models](/doc/en/lb2/Customizing-models.html)
+* [Creating model relations](/doc/en/lb2/Creating-model-relations.html)
+* [Querying data](/doc/en/lb2/Querying-data.html)
 * [Model definition JSON file](/doc/en/lb2/Model-definition-JSON-file.html)
-* [PersistedModel REST API](https://docs.strongloop.com/display/APIC/PersistedModel+REST+API)
+* [PersistedModel REST API](/doc/en/lb2/PersistedModel-REST-API.html)
 
 ## Overview
 
