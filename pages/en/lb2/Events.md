@@ -9,6 +9,11 @@ permalink: /doc/en/lb2/Events.html
 summary:
 ---
 
+The [LoopBack app object](http://apidocs.strongloop.com/loopback/#var-app-loopback) is a Node
+[EventEmitter](https://nodejs.org/api/events.html#events_class_eventemitter), and thus has
+[`app.emit()`](https://nodejs.org/api/events.html#events_emitter_emit_eventname_arg1_arg2) and
+[`app.on()`](https://nodejs.org/api/events.html#events_emitter_on_eventname_listener) methods.
+
 In addition to the [standard Node events](http://nodejs.org/api/events.html), LoopBack applications and models emit other events.
 
 ## Application events

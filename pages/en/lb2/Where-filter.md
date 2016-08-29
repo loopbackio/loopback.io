@@ -125,7 +125,7 @@ productModel.destroyAll({cost: {gt: 100}}, function(err, obj) { ... });
 
 ### Default scopes with where filters
 
-Adding a `scope` to a model definition (in the [model.json file](/doc/en/lb2/Model-definition-JSON-file.html))
+Adding a `scope` to a model definition (in the [`model.json` file](/doc/en/lb2/Model-definition-JSON-file.html))
 automatically adds a method to model called `defaultScope()`. LoopBack will call this method whenever a model is created, updated, or queried.
 
 {% include tip.html content="
@@ -426,9 +426,82 @@ Shirts.find({where: {size: {between: [0,7]}}}, function (err, posts) { ... } )
 
 ### near
 
-Example using the **near** operator that returns the three closest locations to a given geo point:
+The `where.<field>.near` filter is different from other where filters: most where filters **limit**the number of records returned,
+whereas `near` **orders** them, making it more like a SQL `order by` clause.
+By combining it with [`limit`](/doc/en/lb2/Limit-filter.html), you can create a query to get, for example, the **three records nearest to a given location**.
+
+For example:
 
 `/locations?filter[where][geo][near]=153.536,-28.1&filter[limit]=3`
+
+GeoPoints can be expressed in any of the following ways:
+
+```javascript
+location = new GeoPoint({lat: 42.266271, lng: -72.6700016}); // GeoPoint
+location = '42.266271,-72.6700016';                          // String
+location = [42.266271, -72.6700016];                         // Array
+location = {lat: 42.266271, lng: -72.6700016};               // Object Literal
+
+Restaurants.find({where: {geo: {near: location }}}, function callback(...
+```
+
+### near (ordering _and limiting by distance_)
+
+The near filter can take two additional properties:
+
+*   `maxDistance`
+*   `unit`
+
+When `maxDistance` is included in the filter, near behaves more like a typical where filter, limiting results to those within a given distance to a location.
+By default, `maxDistance` measures distance in **miles**.
+
+Example of finding the all restaurants within two miles of a given GeoPoint:
+
+```javascript
+var userLocation = new GeoPoint({
+  lat: 42.266271,
+  lng: -72.6700016
+});
+var resultsPromise = Restaurants.find({
+  where: {
+    location: {
+      near: userLocation,
+      maxDistance: 2
+    }
+  }
+});
+```
+
+To change the units of measurement, specify `unit` property to one of the following:
+
+* `kilometers`
+* `meters`
+* `miles`
+* `feet`
+* `radians`
+* `degrees`
+
+For example, to change the query above to use kilometers instead of miles:
+
+```javascript
+var resultsPromise = Restaurants.find({
+  where: {
+    location: {
+      near: userLocation,
+      maxDistance: 2,
+      unit: 'kilometers'
+    }
+  }
+});
+```
+
+{% include warning.html content="
+
+Spell Carefully!
+
+If `unit` value is mistyped, for example `'mile'` instead of `'miles'`, LoopBack will **silently ignore the filter!**
+
+" %}
 
 ### like and nlike
 

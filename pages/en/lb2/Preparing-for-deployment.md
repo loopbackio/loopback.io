@@ -26,7 +26,7 @@ has two kinds of configuration files in the server directory that you use to con
 Set `NODE_ENV` to a string reflecting the host environment, for example "development" or "production".
 
 To get ready for production, create at least two copies of these files: 
-`config.production.json` and `config.development.json`;
+`config.production.json` and `config.development.json`; and
 `datasources.production.json` and `datasources.development.json`. 
 
 You can create additional files (for example, `config.staging.json`) if desired.
@@ -96,6 +96,20 @@ var path = require('path'),
 fs = require("fs");
 exports.privateKey = fs.readFileSync(path.join(__dirname, './private/privatekey.pem')).toString();
 exports.certificate = fs.readFileSync(path.join(__dirname, './private/certificate.pem')).toString();
+```
+
+### Configure the app 
+
+```javascript
+{
+  "restApiRoot": "/api",
+  "host": "0.0.0.0",
+  "port": 3000,
+  "url": "https://localhost:3000/",
+  "swagger": {
+    "protocol": "https"
+  }
+}
 ```
 
 ### Create the HTTPS server

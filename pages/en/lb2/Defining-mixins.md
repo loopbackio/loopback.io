@@ -65,6 +65,17 @@ You can use mixins to perform different common actions on models such as observi
 
 For example:
 
+{% include warning.html content="
+
+**Different `defineProperty`!**
+
+The `defineProperty` method below is from
+[loopback-datasource-juggler's `ModelBaseClass`](http://apidocs.strongloop.com/loopback-datasource-juggler/#modelbaseclass-defineproperty),
+which is _not the same_ as JavaScript's
+[`Object.defineProperty`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperty).
+
+" %}
+
 **common/mixins/timestamp.js**
 
 ```javascript

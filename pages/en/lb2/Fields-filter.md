@@ -36,7 +36,6 @@ Where:
 
 * _propertyName_ is the name of the property (field) to include or exclude.
 * <true|false> signifies either `true` or `false` Boolean literal. Use `true` to include the property or `false` to exclude it from results.
-    You can also use 1 for true and 0 for false.
 
 By default, queries return all model properties in results. However, if you specify at least one fields filter with a value of `true`,
 then by default the query will include **only** those you specifically include with filters.

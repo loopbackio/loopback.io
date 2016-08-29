@@ -258,7 +258,11 @@ The properties key defines one or more  properties, each of which is an object 
 
 Each model property can have the properties described in the following table. Only the `type` property is required; for properties with only a `type`, you can use the following shorthand:
 
-"_propertyName_": "_type_"
+
+```javascript
+"propertyName": "type"
+```
+
 For example:
 
 ```javascript
@@ -670,7 +674,9 @@ For example:
 ## Relations
 
 The `relations` key defines relationships between models through a JSON object.
-Each key in this object is the name of a related model, and the value is a JSON object as described in the table below. For example:
+Each key in this object is the name of a related model, and the value is a JSON object as described in the table below.
+
+For example:
 
 ```javascript
 ...
