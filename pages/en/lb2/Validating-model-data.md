@@ -116,7 +116,7 @@ method on a model instance, and automatically each time model instance is create
 
 To enforce validation constraints when calling [`upsert()`](http://apidocs.strongloop.com/loopback/#persistedmodel-upsert), ensure that `validateUpsert`
 option is set to `true` in the [model definition JSON file](/doc/en/lb2/Model-definition-JSON-file.html). 
-By default, the [model generator](https://docs.strongloop.com/display/APIC/Model+generator) sets this property to true.
+By default, the [model generator](/doc/en/lb2/Model-generator.html) sets this property to true.
 
 " %}
 

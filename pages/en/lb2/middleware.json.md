@@ -12,7 +12,7 @@ summary:
 ## Overview
 
 Set up [middleware](/doc/en/lb2/Defining-middleware.html) in `middleware.json`.
-Here is the default version created by the [Application generator](https://docs.strongloop.com/display/APIC/Application+generator): 
+Here is the default version created by the [Application generator](/doc/en/lb2/Application-generator.html): 
 
 ```javascript
 {

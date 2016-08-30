@@ -22,7 +22,7 @@ This will install the module from npm and add it as a dependency to the applicat
 
 ## Creating a push data source
 
-Create a new push data source with the [data source generator](https://docs.strongloop.com/display/APIC/Data+source+generator):
+Create a new push data source with the [data source generator](/doc/en/lb2/Data-source-generator.html):
 
 ```shell
 $ apic create --type datasource

@@ -38,7 +38,7 @@ This will install the module and add it as a dependency to the application's [`
 
 ## Creating a Redis data source
 
-Use the [data source generator](https://docs.strongloop.com/display/APIC/Data+source+generator) to add a Redis data source to your application.
+Use the [data source generator](/doc/en/lb2/Data-source-generator.html) to add a Redis data source to your application.
 When prompted for the connector, choose **other,** then enter **redis** for the connector name.
 The entry in the application's `server/datasources.json` will look like this:
 

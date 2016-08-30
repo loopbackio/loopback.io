@@ -82,7 +82,7 @@ Once you've created this kind of specification, you can easily construct `apic l
 
 ## Using the ACL generator to define access control
 
-The easiest way to define access control for an app is with the [ACL generator](https://docs.strongloop.com/display/APIC/ACL+generator). 
+The easiest way to define access control for an app is with the [ACL generator](/doc/en/lb2/ACL-generator.html). 
 This enables you to create a static definition before runtime. The generator prompts you for all the necessary information:
 
 ```shell

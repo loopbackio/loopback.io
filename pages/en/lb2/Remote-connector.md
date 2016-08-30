@@ -29,7 +29,7 @@ This will install the module and add it as a dependency to the application's [`
 
 ## Creating an remote data source
 
-Create a new remote data source with the [datasource generator](https://docs.strongloop.com/display/APIC/Data+source+generator):
+Create a new remote data source with the [datasource generator](/doc/en/lb2/Data-source-generator.html):
 
 ```shell
 $ apic create --type datasource

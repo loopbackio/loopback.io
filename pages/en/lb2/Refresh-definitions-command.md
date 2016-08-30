@@ -10,7 +10,7 @@ summary:
 ---
 
 {% include important.html content="
-Before running this generator, you must create an application using the [Application generator](Application-generator.html).
+Before running this generator, you must create an application using the [Application generator](/doc/en/lb2/Application-generator.html).
 
 Then you must run the command from the root directory of the application."
 %}
@@ -18,11 +18,11 @@ Then you must run the command from the root directory of the application."
 Usage:
 
 ```shell
-apic loopback:refresh
+$ apic loopback:refresh
 ```
 
 Generate a product and an API definition from the LoopBack application models
 
-```
-  $ apic loopback:refresh
+```shell
+$ apic loopback:refresh
 ```

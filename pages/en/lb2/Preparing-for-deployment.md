@@ -15,7 +15,7 @@ When you move from deployment to production or staging, you typically want to ch
 (or even the in-memory data store) to a production database where your live application data will reside.
 Additionally, you may want to change application properties such as host name and port number.
 
-By default, a LoopBack application created with the [application generator](https://docs.strongloop.com/display/APIC/Application+generator)
+By default, a LoopBack application created with the [application generator](/doc/en/lb2/Application-generator.html)
 has two kinds of configuration files in the server directory that you use to configure production settings:
 
 * [`config.json`](/doc/en/lb2/config.json.html) containing general application configuration.

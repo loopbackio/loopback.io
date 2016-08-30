@@ -324,7 +324,7 @@ For details about the `options` object, refer to [Middleware configuration prope
 The easiest way to register middleware is in `server/middleware.json`.
 This file specifies all an application's middleware functions and the phase in which they are called.
 
-When you create an application using the [Application generator](https://docs.strongloop.com/display/APIC/Application+generator) 
+When you create an application using the [Application generator](/doc/en/lb2/Application-generator.html) 
 it creates a default `middleware.json` file that looks as follows:
 
 **server/middleware.json**

@@ -218,7 +218,7 @@ For the complete API documentation, see [LoopBack Android API](http://apidocs.s
 3.  You can now start working with your model through the generic Model object.
     Continue below to learn how to extend the `Model` Java object to directly match, and thus provide the strongly-typed interface for interaction with, your own `Model`'s members.
     Check out the [LoopBack Android API docs](http://apidocs.strongloop.com/loopback-sdk-android/api/index.html) 
-    or create more Models with the [Model generator](https://docs.strongloop.com/display/APIC/Model+generator).
+    or create more Models with the [Model generator](/doc/en/lb2/Model-generator.html).
 
 ## Creating your own LoopBack model
 

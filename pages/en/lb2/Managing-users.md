@@ -161,7 +161,7 @@ The above ACL denies all operations to everyone, then selectively allows:
 You cannot directly modify built-in models such as the User model with the ACL generator `apic loopback:acl`.
 
 However, you can create a custom model that extends the built-in User model,
-then use the [ACL generator](https://docs.strongloop.com/display/APIC/ACL+generator) to define access controls that are added to those of the default User model.
+then use the [ACL generator](/doc/en/lb2/ACL-generator.html) to define access controls that are added to those of the default User model.
 For example, you could create a Customer or Client model that [extends the built-in User model](/doc/en/lb2/Extending-built-in-models.html),
 and then modify that model's ACL with `apic loopback:acl`.
 Note that since a model doesn't inherit ACLs from its base model, you must define ACLs for the new custom model.

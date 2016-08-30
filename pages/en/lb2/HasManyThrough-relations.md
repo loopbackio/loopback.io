@@ -30,7 +30,7 @@ Use `slc loopback:relation` to create a relation between two models.
 The tool will prompt you to enter the name of the model, the name of related model, and other required information.
 The tool will then modify the [model definition JSON file](/doc/en/lb2/Model-definition-JSON-file.html) (for example, `common/models/customer.json`) accordingly.
 
-For more information, see [Relation generator](https://docs.strongloop.com/display/APIC/Relation+generator).
+For more information, see [Relation generator](/doc/en/lb2/Relation-generator.html).
 
 To create a hasManyThrough relation, respond with **Yes** to the prompt for a "through" model, then specify the model:
 

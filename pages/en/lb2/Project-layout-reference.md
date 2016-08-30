@@ -133,7 +133,7 @@ All your model JSON and JavaScript files go in the `/common/models` directory.
 
 {% include important.html content="
 
-The LoopBack [model generator](https://docs.strongloop.com/display/APIC/Model+generator) automatically converts camel-case model names (for example MyModel) to lowercase dashed names (my-model).
+The LoopBack [model generator](/doc/en/lb2/Model-generator.html) automatically converts camel-case model names (for example MyModel) to lowercase dashed names (my-model).
 For example, if you create a model named \"FooBar\" with the model generator, it creates files `foo-bar.json` and `foo-bar.js` in `common/models`. 
 However, the model name (\"FooBar\") will be preserved via the model's name property.
 

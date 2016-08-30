@@ -24,7 +24,7 @@ Use a remote method to perform operations not provided by LoopBack's [standar
 
 {% include note.html content="
 
-The easiest way to define a remote method is by using the command-line [remote method generator](https://docs.strongloop.com/display/APIC/Remote+method+generator).
+The easiest way to define a remote method is by using the command-line [remote method generator](/doc/en/lb2/Remote-method-generator.html).
 
 For an introductory example of defining a remote method, see [Extend your API](https://docs.strongloop.com/display/LB/Extend+your+API) in Getting Started.
 
@@ -35,11 +35,11 @@ For an introductory example of defining a remote method, see [Extend your API](h
 To define a remote method:
 
 1.  Edit the [Model definition JSON file](/doc/en/lb2/Model-definition-JSON-file.html) in `/common/models` directory; for example, to attach a remote method to the Person model, edit `/common/models/person.js`.
-    If you created the model with the [Model generator](https://docs.strongloop.com/display/APIC/Model+generator), then this file will already exist.
+    If you created the model with the [Model generator](/doc/en/lb2/Model-generator.html), then this file will already exist.
 
     {% include important.html content="
 
-    The LoopBack [model generator](https://docs.strongloop.com/display/APIC/Model+generator) automatically converts camel-case model names (for example MyModel) to lowercase dashed names (my-model).
+    The LoopBack [model generator](/doc/en/lb2/Model-generator.html) automatically converts camel-case model names (for example MyModel) to lowercase dashed names (my-model).
     For example, if you create a model named \"FooBar\" with the model generator, it creates files `foo-bar.json` and `foo-bar.js` in `common/models`. 
     However, the model name (\"FooBar\") will be preserved via the model's name property.
 
@@ -541,7 +541,7 @@ So a GET request to `http://localhost:3000/api/people/sayhi?msg=LoopBack%20deve
 
 ## Adding ACLs to remote methods
 
-To constrain access to custom remote methods, use the [ACL generator](https://docs.strongloop.com/display/APIC/ACL+generator) in the same way you control access to any model API.
+To constrain access to custom remote methods, use the [ACL generator](/doc/en/lb2/ACL-generator.html) in the same way you control access to any model API.
 The access type for custom remote methods is Execute.
 
 ### Basic use

@@ -75,7 +75,7 @@ All data sources support a few standard properties. Beyond that, specific proper
 
 To connect a model to a data source, follow these steps:
 
-1.  Use the [data source generator](https://docs.strongloop.com/display/APIC/Data+source+generator) to create a new data source. For example: 
+1.  Use the [data source generator](/doc/en/lb2/Data-source-generator.html) to create a new data source. For example: 
 
     ```shell
     $ apic create --type datasource
@@ -134,7 +134,7 @@ To connect a model to a data source, follow these steps:
 
     See [Connectors](/doc/en/lb2/Connecting-models-to-data-sources.html) for the list of connectors.
 
-4.  Use the [model generator](https://docs.strongloop.com/display/APIC/Using+the+model+generator) to create a model.
+4.  Use the [model generator](/doc/en/lb2/Using-the-model-generator.html) to create a model.
 
     ```shell
     $ apic create --type model

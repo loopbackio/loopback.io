@@ -55,8 +55,8 @@ Models backed by different data sources can have relations between them.
 ## Using the relation generator
 
 The easiest way to create a new relation between existing models is to use the 
-[`slc loopback:relation`](https://docs.strongloop.com/display/APIC/Relation+generator), or the
-[`apic loopback:relation`](https://docs.strongloop.com/display/APIC/Relation+generator), relation generator.
+[`slc loopback:relation`](/doc/en/lb2/Relation-generator.html), or the
+[`apic loopback:relation`](/doc/en/lb2/Relation-generator.html), relation generator.
 
 The tool will prompt you to enter the type of relation (belongsTo, hasMany, and so on) and the affected models.
 

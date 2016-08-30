@@ -23,7 +23,7 @@ You can [extend built-in models](/doc/en/lb2/Extending-built-in-models.html) to
 
 Additionally, you can [define your own custom models](/doc/en/lb2/Creating-models.html) specific to your application: 
 
-* Use the [model generator](https://docs.strongloop.com/display/APIC/Model+generator) to create custom models from scratch. 
+* Use the [model generator](/doc/en/lb2/Model-generator.html) to create custom models from scratch. 
   This creates a [Model definition JSON file](/doc/en/lb2/Model-definition-JSON-file.html) that defines your model in LoopBack.
 * Use [`Datasource.buildModelFromInstance()`](http://apidocs.strongloop.com/loopback-datasource-juggler/#datasource-prototype-buildmodelfrominstance)
   to create _dynamic_ schema-less models for data sources such as SOAP and REST services.

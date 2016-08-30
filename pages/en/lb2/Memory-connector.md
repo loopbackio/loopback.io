@@ -33,7 +33,7 @@ You can persist data between application restarts using the `file` property. See
 
 ## Creating a data source
 
-By default, an application created with the [Application generator](https://docs.strongloop.com/display/APIC/Application+generator) has a memory data source defined; for example:
+By default, an application created with the [Application generator](/doc/en/lb2/Application-generator.html) has a memory data source defined; for example:
 
 **/server/datasources.json**
 
@@ -44,7 +44,7 @@ By default, an application created with the [Application generator](https://docs
 }
 ```
 
-Use the [Data source generator](https://docs.strongloop.com/display/APIC/Data+source+generator) to add a new memory data source to your application.
+Use the [Data source generator](/doc/en/lb2/Data-source-generator.html) to add a new memory data source to your application.
 
 ### Memory connector properties
 

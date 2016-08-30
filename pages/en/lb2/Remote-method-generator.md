@@ -10,60 +10,45 @@ summary:
 ---
 
 {% include important.html content="
-Before running this generator, you must create an application using the [Application generator](Application-generator.html).
+Before running this generator, you must create an application using the [Application generator](/doc/en/lb2/Application-generator.html).
 
 Then you must run the command from the root directory of the application."
 %}
 
-### SYNOPSIS
+### Synopsis
 
 Adds a new remote method to an existing application.
 
 ```shell
-[slc | apic] loopback:remote-method [options] [<modelName>] [<methodName>]
+$ [slc | apic] loopback:remote-method [options] [<modelName>] [<methodName>]
 ```
 
-### OPTIONS
+### Options
 
-`-h, --help`  
+`-h, --help`
 Print the generator's options and usage.
 
-`--skip-cache`  
+`--skip-cache`
 Do not remember prompt answers. Default is false.
 
-`--skip-install`  
+`--skip-install`
 Do not automatically install dependencies. Default is false.
 
-### ARGUMENTS
+### Arguments
 
 All arguments are optional.
 
-<table>
-  <tbody>
-    <tr>
-      <th>Argument</th>
-      <th>Description</th>
-      <th>Type</th>
-    </tr>
-    <tr>
-      <td>modelName</td>
-      <td>Name of the model</td>
-      <td>String</td>
-    </tr>
-    <tr>
-      <td>methodName</td>
-      <td>Name of the remote method</td>
-      <td>String</td>
-    </tr>
-  </tbody>
-</table>
+| Argument      | Description               | Type   |
+|---------------|---------------------------|--------|
+| modelName     | Name of the model         | String |
+| methodName    | Name of the remote method | String |
 
-### INTERACTIVE PROMPTS
+### Interactive Prompts
 
 The tool will prompt you for:
 
-*   Name of the model to which to add the remote method.
-*   Name of the remote method.
-*   Whether the method is static (or an instance method).
-*   Description of the method.
-*   One or more HTTP endpoints, with corresponding accept and return arguments and their types.
+* Name of the model to which to add the remote method.
+* Name of the remote method.
+* Whether the method is static (or an instance method).
+* Description of the method.
+* One or more HTTP endpoints, with corresponding accept and return arguments and their types.

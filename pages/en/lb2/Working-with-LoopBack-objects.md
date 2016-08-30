@@ -93,7 +93,7 @@ You simply require `/server/server.js` as you would any Node module.
 
 ### From a model script
 
-To get a handle on the `app` object in a model scaffolded by the [Model generator](https://docs.strongloop.com/display/APIC/Model+generator),
+To get a handle on the `app` object in a model scaffolded by the [Model generator](/doc/en/lb2/Model-generator.html),
 "require" it as you would any Node module:
 
 **Model - /common/models/book.js**

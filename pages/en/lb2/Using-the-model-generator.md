@@ -18,14 +18,14 @@ See [Discovering models from relational databases](/doc/en/lb2/Discovering-model
 
 ## Overview
 
-The easiest way to create a new model is with the [model generator](https://docs.strongloop.com/display/APIC/Model+generator):
+The easiest way to create a new model is with the [model generator](/doc/en/lb2/Model-generator.html):
 
 ```shell
 $ apic create --type model
 ```
 
 When creating a new model, the generator will prompt you for the properties in the model.
-Subsequently, you can add more properties to it using the [property generator](https://docs.strongloop.com/display/APIC/Property+generator).
+Subsequently, you can add more properties to it using the [property generator](/doc/en/lb2/Property-generator.html).
 
 When you create a model (for example, called "myModel"), the tool:
 
@@ -43,7 +43,7 @@ Once you've created your model, you may want to read:
 
 ## Basic use
 
-Use the LoopBack [model generator](https://docs.strongloop.com/display/APIC/Model+generator) to create a new model.
+Use the LoopBack [model generator](/doc/en/lb2/Model-generator.html) to create a new model.
 In your application root directory, enter the command (for example, to create a "books" model):
 
 ```shell
@@ -54,7 +54,7 @@ Then the tool will prompt you to:
 
 * Choose the data source to which the model will connect. By default, there will be only the in-memory data source (named "db").
   When you create additional data sources with apic create --type datasource,
-  the [data source generator](https://docs.strongloop.com/display/APIC/Data+source+generator), they will be listed as options.
+  the [data source generator](/doc/en/lb2/Data-source-generator.html), they will be listed as options.
 
 * Choose the model's base class, from a list of [built-in models](/doc/en/lb2/Using-built-in-models.html) classes and existing custom models in the application.
 
@@ -75,7 +75,7 @@ Then the tool will prompt you to:
 
 Adding properties
 
-After you create a model, you can add more properties with the [property generator](https://docs.strongloop.com/display/APIC/Property+generator).
+After you create a model, you can add more properties with the [property generator](/doc/en/lb2/Property-generator.html).
 
 ```shell
 $ apic create --type property

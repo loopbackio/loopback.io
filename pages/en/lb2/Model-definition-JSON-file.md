@@ -20,14 +20,14 @@ summary:
 
 ## Overview
 
-The LoopBack [Model generator](https://docs.strongloop.com/display/APIC/Model+generator) creates a model JSON file for each model in either the `server/models`
+The LoopBack [Model generator](/doc/en/lb2/Model-generator.html) creates a model JSON file for each model in either the `server/models`
 or the `common/models` directory (depending on your response to the generator's prompts).
 The file is named `_model-name_.json`, where _`model-name`_ is the model name; for example, `customer.json`.
 The model JSON file defines models, relations between models, and access to models. 
 
 {% include important.html content="
 
-The LoopBack [model generator](https://docs.strongloop.com/display/APIC/Model+generator) automatically converts camel-case model names (for example MyModel)
+The LoopBack [model generator](/doc/en/lb2/Model-generator.html) automatically converts camel-case model names (for example MyModel)
 to lowercase dashed names (my-model). For example, if you create a model named \"FooBar\" with the model generator, it creates files `foo-bar.json` and `foo-bar.js` in `common/models`.
 However, the model name (\"FooBar\") will be preserved via the model's name property.
 
