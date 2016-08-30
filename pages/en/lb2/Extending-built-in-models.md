@@ -11,7 +11,7 @@ summary:
 
 ## Extending models using JSON
 
-When you create a model with the [model generator](https://docs.strongloop.com/display/APIC/Model+generator),
+When you create a model with the [model generator](/doc/en/lb2/Model-generator.html),
 you choose a base model, that is, the model that your model will "extend" and from which it will inherit methods and properties.
 The tool will set the  base property in the [model definition JSON file](/doc/en/lb2/Model-definition-JSON-file.html) accordingly.
 For example, for a model that extends [PersistedModel](http://apidocs.strongloop.com/loopback/#persistedmodel):

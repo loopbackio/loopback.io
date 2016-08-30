@@ -29,13 +29,13 @@ By default, the basic LoopBack [Model object](http://apidocs.strongloop.com/loop
 
 * [Inclusion object](http://apidocs.strongloop.com/loopback-datasource-juggler/#inclusion) - Enables you to load relations of several objects and optimize numbers of requests.
 * [Validateable object](http://apidocs.strongloop.com/loopback-datasource-juggler/#validatable) - provides validation methods.
-  See [Validating model data](https://docs.strongloop.com/display/APIC/Validating+model+data).
+  See [Validating model data](/doc/en/lb2/Validating-model-data.html).
 
 When you define relations between models, the [RelationMixin object](http://apidocs.strongloop.com/loopback-datasource-juggler/#relationmixin) object also gets mixed in to the model object.
 
 **Connected model**
 
-In addition to the methods of the [Basic model object](https://docs.strongloop.com/display/APIC/Basic+model+object),
+In addition to the methods of the [Basic model object](/doc/en/lb2/Basic-model-object.html),
 the following are mixed in when a model is connected to a data source:
 
 * [RelationMixin class](http://apidocs.strongloop.com/loopback-datasource-juggler/#relationmixin)
@@ -57,13 +57,24 @@ If it applies only to server models, put it in the `server/mixins` directory.
 
 The above locations are just recommendations.
 You are free to put mixin scripts in any project directory as long as you set the location with the `mixins` property in 
-[`model-config.js`](https://docs.strongloop.com/display/public/LB/Defining+mixins#Definingmixins-Referencemixinsinmodel-config.js).
+[`model-config.js`](/doc/en/lb2/Defining-mixins.html#Definingmixins-Referencemixinsinmodel-config.js).
 
 " %}
 
 You can use mixins to perform different common actions on models such as observing changes using [operation hooks](/doc/en/lb2/Operation-hooks.html) and adding model attributes.
 
 For example:
+
+{% include warning.html content="
+
+**Different `defineProperty`!**
+
+The `defineProperty` method below is from
+[loopback-datasource-juggler's `ModelBaseClass`](http://apidocs.strongloop.com/loopback-datasource-juggler/#modelbaseclass-defineproperty),
+which is _not the same_ as JavaScript's
+[`Object.defineProperty`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperty).
+
+" %}
 
 **common/mixins/timestamp.js**
 

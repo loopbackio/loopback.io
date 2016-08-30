@@ -44,7 +44,7 @@ The default model definition file is [common/models/user.json](https://github.c
 **IMPORTANT**
 
 You must create your own custom model (named something other than \"User,\" for example \"Customer\" or \"Client\")
-that [extends the built-in User model](https://docs.strongloop.com/display/APIC/Extending+built-in+models) rather than use the built-in User model directly.
+that [extends the built-in User model](/doc/en/lb2/Extending-built-in-models.html) rather than use the built-in User model directly.
 The built-in User model provides a great deal of commonly-used functionality that you can use via your custom model.
 
 " %}

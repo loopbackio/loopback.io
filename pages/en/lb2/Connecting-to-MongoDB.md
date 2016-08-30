@@ -13,7 +13,7 @@ summary:
 
 This example application describes using the StrongLoop `slc loopback` tool. You can also recreate the application using API Connect `apic` tool.
 Simply substitute the API Connect command for the corresponding StrongLoop command. For more information, see
-[Converting StrongLoop commands to API Connect commands](https://docs.strongloop.com/display/APIC/Command-line+reference#Command-linereference-CorrespondencebetweenStrongLoopcommandstoAPIConnectcommands).
+[Converting StrongLoop commands to API Connect commands](/doc/en/lb2/Command-line-reference.html#Command-linereference-CorrespondencebetweenStrongLoopcommandstoAPIConnectcommands).
 
 " %}
 

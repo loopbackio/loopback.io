@@ -10,54 +10,54 @@ summary:
 ---
 
 {% include important.html content="
-Before running this generator, you must create an application using the [Application generator](Application-generator.html).
+Before running this generator, you must create an application using the [Application generator](/doc/en/lb2/Application-generator.html).
 
 Then you must run the command from the root directory of the application."
 %}
 
 The models involved in the relation must also exist before running this generator.
 
-### SYNOPSIS
+### Synopsis
 
-Creates a new [model relation](Creating+model+relations.html) in a LoopBack application.
+Creates a new [model relation](/doc/en/lb2/Creating-model-relations.html) in a LoopBack application.
 
 ```shell
-[slc | apic] loopback:relation [options]
+$ [slc | apic] loopback:relation [options]
 ```
 
-### OPTIONS
+### Options
 
-`-h, --help`  
+`-h, --help`
 Print the generator's options and usage.
 
-`--skip-cache`  
+`--skip-cache`
 Do not remember prompt answers. Default is false.
 
-`--skip-install`  
+`--skip-install`
 Do not automatically install dependencies. Default is false.
 
-### INTERACTIVE PROMPTS
+### Interactive Prompts
 
 The tool will prompt you for:
 
-*   Name of the model to create the relationship from.
-*   Relation type:
- - ([HasMany](HasMany+relations.html)
- - [BelongsTo](BelongsTo+relations.html)
- - [HasAndBelongsToMany](HasAndBelongsToMany+relations.html)
- - [HasOne](HasOne+relations.html).
-*   Name of the model to create a relationship with.
-*   Name for the relation (property name).
+* Name of the model to create the relationship from.
+* Relation type:
+  * [HasMany](/doc/en/lb2/HasMany-relations.html)
+  * [BelongsTo](/doc/en/lb2/BelongsTo-relations.html)
+  * [HasAndBelongsToMany](/doc/en/lb2/HasAndBelongsToMany-relations.html)
+  * [HasOne](/doc/en/lb2/HasOne-relations.html).
+* Name of the model to create a relationship with.
+* Name for the relation (property name).
 
 {% include important.html content="
 
 The name of the relation must be different than a property it references.
 " %}
 
-*   Custom foreign key (optional)
-*   Whether a "through" model is required.  Repy "Y" to create a [HasManyThrough relations](HasManyThrough+relations.html). 
-*   Name of the "through" model, if appropriate.
+* Custom foreign key (optional)
+* Whether a "through" model is required.  Repy "Y" to create a [HasManyThrough relations](/doc/en/lb2/HasManyThrough-relations.html). 
+* Name of the "through" model, if appropriate.
 
-### OUTPUT
+### Output
 
-Updates the [Model definition JSON files](Model-definition-JSON-file.html) for the models involved in the relation.
+Updates the [Model definition JSON files](/doc/en/lb2/Model-definition-JSON-file.html) for the models involved in the relation.

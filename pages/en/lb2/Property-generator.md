@@ -10,31 +10,31 @@ summary:
 ---
 
 {% include important.html content="
-Before running this generator, you must create an application using the [Application generator](Application-generator.html).
+Before running this generator, you must create an application using the [Application generator](/doc/en/lb2/Application-generator.html).
 
 Then you must run the command from the root directory of the application."
 %}
 
-### SYNOPSIS
+### Synopsis
 
 Adds a new property to an existing LoopBack model.
 
 ```shell
-[slc | apic] loopback:property [options]
+$ [slc | apic] loopback:property [options]
 ```
 
-### OPTIONS
+### Options
 
-`-h, --help`  
+`-h, --help`
 Print the generator's options and usage.
 
-`--skip-cache`  
+`--skip-cache`
 Do not remember prompt answers. Default is false.
 
-`--skip-install`  
+`--skip-install`
 Do not automatically install dependencies. Default is false.
 
-### INTERACTIVE PROMPTS
+### Interactive Prompts
 
 The tool will prompt you for the:
 
@@ -43,6 +43,6 @@ The tool will prompt you for the:
 *   Data type of the property.
 *   Whether the property is required.
 
-### OUTPUT
+### Output
 
-The tool modifies the [Model definition JSON file](Model-definition-JSON-file.html) to add the specified property to the specified model.
+The tool modifies the [Model definition JSON file](/doc/en/lb2/Model-definition-JSON-file.html) to add the specified property to the specified model.

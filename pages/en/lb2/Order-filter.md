@@ -33,7 +33,7 @@ Default ordering can be configured in [default scope](/doc/en/lb2/Model-definiti
 
 {% include warning.html content="
 
-Methods of models in the [AngularJS client](https://docs.strongloop.com/display/APIC/AngularJS+JavaScript+SDK) have a different signature than those of the Node API.
+Methods of models in the [AngularJS client](/doc/en/lb2/AngularJS-JavaScript-SDK.html) have a different signature than those of the Node API.
 For more information, see [AngularJS SDK API](http://apidocs.strongloop.com/loopback-sdk-angular/).
 
 " %}

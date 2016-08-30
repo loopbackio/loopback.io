@@ -47,7 +47,7 @@ See [loopback-boot API docs](http://apidocs.strongloop.com/loopback-boot/) for
 
 {% include note.html content="
 
-If you create your application with the [application generator](https://docs.strongloop.com/display/APIC/Application+generator) ,
+If you create your application with the [application generator](/doc/en/lb2/Application-generator.html) ,
 then you don't need to do anything to bootstrap your application--the above code is automatically scaffolded for you!
 
 " %}
@@ -63,7 +63,7 @@ See [Boot script loading order](/doc/en/lb2/Defining-boot-scripts.html) for de
 ## Predefined boot scripts
 
 The standard scaffolded LoopBack application created by the 
-[application generator](https://docs.strongloop.com/display/APIC/Application+generator) contains the following standard boot scripts (in `/server/boot`) that performs basic initialization:
+[application generator](/doc/en/lb2/Application-generator.html) contains the following standard boot scripts (in `/server/boot`) that performs basic initialization:
 
 * `root.js` - Binds [`loopback.status()`](http://apidocs.strongloop.com/loopback/#loopback-status) middleware at the root endpoint ("/") to provide basic status information.
 
@@ -84,7 +84,7 @@ To enable user model authentication you should add this script (or the equivalen
 
 In addition to the predefined boot scripts, you can define custom boot scripts to perform your own logic when an application starts.
 
-Use the [boot script generator](https://docs.strongloop.com/display/APIC/Boot+script+generator), to quickly generate boot script templates.
+Use the [boot script generator](/doc/en/lb2/Boot-script-generator.html), to quickly generate boot script templates.
 Depending on how you respond to the generator's prompts, it will generate a template for either a synchronous or asynchronous boot script:
 
 **Synchronous boot script template**

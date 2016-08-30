@@ -20,14 +20,14 @@ Rather, the `DataSource` class provides an API to configure the underlying con
 
 The built-in [memory connector](/doc/en/lb2/Memory-connector.html) is suitable for development. To use a different data source:
 
-1.  Use the [data source generator](https://docs.strongloop.com/display/APIC/Data+source+generator) 
+1.  Use the [data source generator](/doc/en/lb2/Data-source-generator.html) 
     to create the new data source and add it to the application's `datasources.json`.
 2.  Edit [`datasources.json`](/doc/en/lb2/datasources.json.html) to add the appropriate credentials for the data source.
 3.  Create a model to connect to the data source or modify an existing model definition to use the connector.
 
 ## Add a data source
 
-To add a new data source, use the [data source generator](https://docs.strongloop.com/display/APIC/Data+source+generator):
+To add a new data source, use the [data source generator](/doc/en/lb2/Data-source-generator.html):
 
 ```shell
 $ apic create --type datasource
@@ -78,9 +78,9 @@ For example:
 
 ## Make the model use the data source
 
-When you create a new model with the [model generator](https://docs.strongloop.com/display/APIC/Model+generator),
+When you create a new model with the [model generator](/doc/en/lb2/Model-generator.html),
 you can specify the data source you want it to use from among those you've added to the application using the
-[Data source generator](https://docs.strongloop.com/display/APIC/Data+source+generator) and the default `db`
+[Data source generator](/doc/en/lb2/Data-source-generator.html) and the default `db`
 data source (that uses the [memory connector](/doc/en/lb2/Memory-connector.html)).
 
 To change the data source a model uses after you've created the model, edit the application's `server/model-config.json`

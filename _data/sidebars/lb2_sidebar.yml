@@ -241,6 +241,10 @@ entries:
         url: /doc/en/lb2/User-REST-API.html
         output: 'web, pdf'
 
+    - title: 'Adding remote methods to built-in models'
+      url: /doc/en/lb2/Adding-remote-methods-to-built-in-models.html
+      output: 'web, pdf'
+
   - title: 'Connecting models to data sources'
     url: /doc/en/lb2/Connecting-models-to-data-sources.html
     output: 'web, pdf'
@@ -564,6 +568,10 @@ entries:
         url: /doc/en/lb2/Preparing-for-deployment.html
         output: 'web, pdf'
 
+      - title: 'Using strong-error-handler'
+        url: /doc/en/lb2/Using-strong-error-handler.html
+        output: 'web, pdf'
+
   - title: 'LoopBack components'
     url: /doc/en/lb2/LoopBack-components.html
     output: 'web, pdf'
@@ -826,6 +834,10 @@ entries:
         - title: 'Model definition JSON file'
           url: /doc/en/lb2/Model-definition-JSON-file.html
           output: 'web, pdf'
+
+  - title: 'Command-line reference'
+    url: /doc/en/lb2/Command-line-reference.html
+    output: 'web, pdf'
 
   - title: 'Node reference'
     url: /doc/en/lb2/Node-reference.html

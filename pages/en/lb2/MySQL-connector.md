@@ -34,7 +34,7 @@ This will install the module from npm and add it as a dependency to the applicat
 
 ## Creating a MySQL data source
 
-Use the [Data source generator](https://docs.strongloop.com/display/APIC/Data+source+generator) to add a MySQL data source to your application.
+Use the [Data source generator](/doc/en/lb2/Data-source-generator.html) to add a MySQL data source to your application.
 The entry in the application's `/server/datasources.json` will look like this:
 
 **/server/datasources.json**

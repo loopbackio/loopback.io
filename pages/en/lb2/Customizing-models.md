@@ -9,23 +9,23 @@ permalink: /doc/en/lb2/Customizing-models.html
 summary:
 ---
 
-Once you've created a model with the [model generator](https://docs.strongloop.com/display/APIC/Model+generator), you can start customizing it.
+Once you've created a model with the [model generator](/doc/en/lb2/Model-generator.html), you can start customizing it.
 You can customize it using the command-line tool, by editing the [model definition JSON file](/doc/en/lb2/Model-definition-JSON-file.html), and by adding JavaScript code.
 
 ## Customizing a model with the command-line tool
 
 {% include note.html content="
 
-Once you've created a model with the  [model generator](https://docs.strongloop.com/display/APIC/Model+generator), you can't modify the model with the model generator.
+Once you've created a model with the  [model generator](/doc/en/lb2/Model-generator.html), you can't modify the model with the model generator.
 However, you can customize the model to some degree with the command-line tool; see below.
 
 " %}
 
 You can use the command-line tool to customize a model after you initially create it; specifically, you can:
 
-* Use the [property generator](https://docs.strongloop.com/display/APIC/Property+generator) to add a property to the model.
-* Use the [relation generator](https://docs.strongloop.com/display/APIC/Relation+generator) to add [add relations between models](/doc/en/lb2/Creating-model-relations.html).
-* Use [ACL generator](https://docs.strongloop.com/display/APIC/ACL+generator) to add [access control](/doc/en/lb2/Controlling-data-access.html) to the model.
+* Use the [property generator](/doc/en/lb2/Property-generator.html) to add a property to the model.
+* Use the [relation generator](/doc/en/lb2/Relation-generator.html) to add [add relations between models](/doc/en/lb2/Creating-model-relations.html).
+* Use [ACL generator](/doc/en/lb2/ACL-generator.html) to add [access control](/doc/en/lb2/Controlling-data-access.html) to the model.
 
 ## Customizing a model using JSON
 
@@ -55,7 +55,7 @@ For more information, see [ACL rule precedence](/doc/en/lb2/Controlling-data-ac
 ### Extending another model
 
 You can make a model extend or "inherit from" an existing model, either one of the built-in models such as User, or a custom model you've defined in your application.
-To do this with the [model generator](https://docs.strongloop.com/display/APIC/Model+generator), simply choose the desired model when you're prompted to "Select model's base class".
+To do this with the [model generator](/doc/en/lb2/Model-generator.html), simply choose the desired model when you're prompted to "Select model's base class".
 Alternatively,  you can edit the [Model definition JSON file](/doc/en/lb2/Model-definition-JSON-file.html) and set the "base" property to the name of the model you want to extend.
 
 {% include note.html content="
@@ -87,7 +87,7 @@ Currently you cannot modify a built-in model's required properties. If you need 
 
 You can create custom models that extend from a single base custom model.
 For example, to define a model called `MyModel` that extends from a custom model you defined called `mMyBaseModel`,
-create MyModel using [model generator](https://docs.strongloop.com/display/APIC/Model+generator) 
+create MyModel using [model generator](/doc/en/lb2/Model-generator.html) 
 then edit the JSON file `common/models/MyModel.json` as follows:
 
 **/common/models/model.json**
@@ -133,7 +133,7 @@ See [Model definition JSON file](/doc/en/lb2/Model-definition-JSON-file.html#Mo
 
 The basic way to extend a model programmatically is to edit the model's JavaScript file in the `common/models/` directory.
 For example, a "customer" model will have a `common/models/customer.js` file (if you create the model using the 
-[model generator](https://docs.strongloop.com/display/APIC/Model+generator)).
+[model generator](/doc/en/lb2/Model-generator.html)).
 The script is executed immediately after the model is defined.
 Treat the script as part of the model definition; use it for model configuration and registration.
 You could also add model relationships, complex validations, or default functions for certain properties: Basically, anything you cannot do in JSON.

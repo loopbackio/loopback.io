@@ -370,7 +370,3 @@ The API returns the following JSON:
     ]
   }, ... ]
 ```
-
-### Errors
-
-None

@@ -26,7 +26,7 @@ and 
 
 To connect a model to a data source, follow these steps:
 
-1.  Use the  [data source generator](https://docs.strongloop.com/display/APIC/Data+source+generator)  to create a new data source.
+1.  Use the  [data source generator](/doc/en/lb2/Data-source-generator.html)  to create a new data source.
 
     For example: 
 
@@ -269,7 +269,7 @@ This command adds the following entry to `package.json`: 
 
 ## Creating a data source
 
-Use the [data source generator](https://docs.strongloop.com/display/APIC/Data+source+generator) to create a new data source:
+Use the [data source generator](/doc/en/lb2/Data-source-generator.html) to create a new data source:
 
 ```shell
 $ apic create --type datasource

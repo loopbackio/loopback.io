@@ -11,23 +11,23 @@ summary:
 
 **See also**:
 
-* [Creating models](https://docs.strongloop.com/display/APIC/Creating+models)
-* [Customizing models](https://docs.strongloop.com/display/APIC/Customizing+models)
-* [Creating model relations](https://docs.strongloop.com/display/APIC/Creating+model+relations)
-* [Querying data](https://docs.strongloop.com/display/APIC/Querying+data)
+* [Creating models](/doc/en/lb2/Creating-models.html)
+* [Customizing models](/doc/en/lb2/Customizing-models.html)
+* [Creating model relations](/doc/en/lb2/Creating-model-relations.html)
+* [Querying data](/doc/en/lb2/Querying-data.html)
 * [Model definition JSON file](/doc/en/lb2/Model-definition-JSON-file.html)
-* [PersistedModel REST API](https://docs.strongloop.com/display/APIC/PersistedModel+REST+API)
+* [PersistedModel REST API](/doc/en/lb2/PersistedModel-REST-API.html)
 
 ## Overview
 
-The LoopBack [Model generator](https://docs.strongloop.com/display/APIC/Model+generator) creates a model JSON file for each model in either the `server/models`
+The LoopBack [Model generator](/doc/en/lb2/Model-generator.html) creates a model JSON file for each model in either the `server/models`
 or the `common/models` directory (depending on your response to the generator's prompts).
 The file is named `_model-name_.json`, where _`model-name`_ is the model name; for example, `customer.json`.
 The model JSON file defines models, relations between models, and access to models. 
 
 {% include important.html content="
 
-The LoopBack [model generator](https://docs.strongloop.com/display/APIC/Model+generator) automatically converts camel-case model names (for example MyModel)
+The LoopBack [model generator](/doc/en/lb2/Model-generator.html) automatically converts camel-case model names (for example MyModel)
 to lowercase dashed names (my-model). For example, if you create a model named \"FooBar\" with the model generator, it creates files `foo-bar.json` and `foo-bar.js` in `common/models`.
 However, the model name (\"FooBar\") will be preserved via the model's name property.
 
@@ -258,7 +258,11 @@ The properties key defines one or more  properties, each of which is an object 
 
 Each model property can have the properties described in the following table. Only the `type` property is required; for properties with only a `type`, you can use the following shorthand:
 
-"_propertyName_": "_type_"
+
+```javascript
+"propertyName": "type"
+```
+
 For example:
 
 ```javascript
@@ -670,7 +674,9 @@ For example:
 ## Relations
 
 The `relations` key defines relationships between models through a JSON object.
-Each key in this object is the name of a related model, and the value is a JSON object as described in the table below. For example:
+Each key in this object is the name of a related model, and the value is a JSON object as described in the table below.
+
+For example:
 
 ```javascript
 ...

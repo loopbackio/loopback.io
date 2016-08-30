@@ -55,7 +55,7 @@ User.create([
 };
 ```
 
-The project model JSON (created by running `apic loopback:acl`, the [ACL generator](https://docs.strongloop.com/display/APIC/ACL+generator)) 
+The project model JSON (created by running `apic loopback:acl`, the [ACL generator](/doc/en/lb2/ACL-generator.html)) 
 file specifies that the admin role has unrestricted access to view projects (`GET /api/projects`):
 
 **/common/models/model.json**

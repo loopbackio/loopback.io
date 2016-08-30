@@ -15,7 +15,7 @@ When you move from deployment to production or staging, you typically want to ch
 (or even the in-memory data store) to a production database where your live application data will reside.
 Additionally, you may want to change application properties such as host name and port number.
 
-By default, a LoopBack application created with the [application generator](https://docs.strongloop.com/display/APIC/Application+generator)
+By default, a LoopBack application created with the [application generator](/doc/en/lb2/Application-generator.html)
 has two kinds of configuration files in the server directory that you use to configure production settings:
 
 * [`config.json`](/doc/en/lb2/config.json.html) containing general application configuration.
@@ -26,7 +26,7 @@ has two kinds of configuration files in the server directory that you use to con
 Set `NODE_ENV` to a string reflecting the host environment, for example "development" or "production".
 
 To get ready for production, create at least two copies of these files: 
-`config.production.json` and `config.development.json`;
+`config.production.json` and `config.development.json`; and
 `datasources.production.json` and `datasources.development.json`. 
 
 You can create additional files (for example, `config.staging.json`) if desired.
@@ -96,6 +96,20 @@ var path = require('path'),
 fs = require("fs");
 exports.privateKey = fs.readFileSync(path.join(__dirname, './private/privatekey.pem')).toString();
 exports.certificate = fs.readFileSync(path.join(__dirname, './private/certificate.pem')).toString();
+```
+
+### Configure the app 
+
+```javascript
+{
+  "restApiRoot": "/api",
+  "host": "0.0.0.0",
+  "port": 3000,
+  "url": "https://localhost:3000/",
+  "swagger": {
+    "protocol": "https"
+  }
+}
 ```
 
 ### Create the HTTPS server

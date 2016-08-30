@@ -34,7 +34,7 @@ This will install the module from npm and add it as a dependency to the applicat
 
 ## Creating a SQL Server data source
 
-Use the [Data source generator](https://docs.strongloop.com/display/APIC/Data+source+generator) to add a SQL Server data source to your application.
+Use the [Data source generator](/doc/en/lb2/Data-source-generator.html) to add a SQL Server data source to your application.
 The generator will add the following entry to the `/server/datasources.json` file:
 
 **/server/datasources.json**

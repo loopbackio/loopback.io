@@ -10,48 +10,49 @@ summary:
 ---
 
 {% include important.html content="
-Before running this generator, you must create an application using the [Application generator](Application-generator.html).
+Before running this generator, you must create an application using the [Application generator](/doc/en/lb2/Application-generator.html).
 
 Then you must run the command from the root directory of the application."
 %}
 
-### SYNOPSIS
+### Synopsis
 
-The LoopBack boot script generator adds a new [boot script](Defining-boot-scripts.html) to a LoopBack application.
+The LoopBack boot script generator adds a new [boot script](/doc/en/lb2/Defining-boot-scripts.html) to a LoopBack application.
 
 ```shell
-[slc | apic] loopback:boot-script [options] [<name>]
+$ [slc | apic] loopback:boot-script [options] [<name>]
 ```
 
-### OPTIONS
+### Options
 
-`-h, --help`  
+`-h, --help`
 Print the generator's options and usage.
 
-`--skip-cache`  
+`--skip-cache`
 Do not remember prompt answers. Default is false.
 
-`--skip-install`  
+`--skip-install`
 Do not automatically install dependencies. Default is false.
 
-### ARGUMENTS
+### Arguments
 
 You can optionally provide the name of the boot script as an argument.  If you do, then the tool won't prompt you for the name.
 
-### INTERACTIVE PROMPTS
+### Interactive Prompts
 
 The tool will prompt you for:
 
-*   The name of the boot script, if you didn't provide it on the command-line.
-*   Whether you want to created an asynchronous or synchronous boot script.
+* The name of the boot script, if you didn't provide it on the command-line.
+* Whether you want to created an asynchronous or synchronous boot script.
 
-### OUTPUT
+### Output
 
-The tool will create a JavaScript file with the specified name in the application's `server/boot` directory.  The code will look like this, depending on your response to the prompt:
+The tool will create a JavaScript file with the specified name in the application's `server/boot` directory.
+The code will look like this, depending on your response to the prompt:
 
 Asynchronous script:
 
-```js
+```javascript
 module.exports = function(app, cb) {
   process.nextTick(cb);
 };
@@ -59,6 +60,6 @@ module.exports = function(app, cb) {
 
 Synchronous script:
 
-```js
+```javascript
 module.exports = function(app) {};
 ```
