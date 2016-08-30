@@ -10,10 +10,7 @@ summary:
 ---
 
 {% include tip.html content="
-
-For information on access control for related models, see [Accessing related models](/doc/en/lb2/Accessing-related-models.html)
-
-" %}
+For information on access control for related models, see [Accessing related models](/doc/en/lb2/Accessing-related-models.html)" %}
 
 All of the endpoints in the access token REST API are inherited from the generic [PersistedModel REST API](/doc/en/lb2/PersistedModel-REST-API.html).
 The reference is provided here for convenience.

@@ -642,6 +642,59 @@ entries:
           url: /doc/en/lb2/Tutorial-Offline-Synchronization.html
           output: 'web, pdf'
 
+  - title: 'Command-line tools'
+    url: /doc/en/lb2/Command-line-tools.html
+    output: 'web, pdf'
+    folderitems:
+
+    - title: 'ACL generator'
+      url: /doc/en/lb2/ACL-generator.html
+      output: 'web, pdf'
+
+    - title: 'API definition generator'
+      url: /doc/en/lb2/API-definition-generator.html
+      output: 'web, pdf'
+
+    - title: 'Application generator'
+      url: /doc/en/lb2/Application-generator.html
+      output: 'web, pdf'
+
+    - title: 'Boot script generator'
+      url: /doc/en/lb2/Boot-script-generator.html
+      output: 'web, pdf'
+
+    - title: 'Data source generator'
+      url: /doc/en/lb2/Data-source-generator.html
+      output: 'web, pdf'
+
+    - title: 'Middleware generator'
+      url: /doc/en/lb2/Middleware-generator.html
+      output: 'web, pdf'
+
+    - title: 'Model generator'
+      url: /doc/en/lb2/Model-generator.html
+      output: 'web, pdf'
+
+    - title: 'Property generator'
+      url: /doc/en/lb2/Property-generator.html
+      output: 'web, pdf'
+
+    - title: 'Relation generator'
+      url: /doc/en/lb2/Relation-generator.html
+      output: 'web, pdf'
+
+    - title: 'Remote method generator'
+      url: /doc/en/lb2/Remote-method-generator.html
+      output: 'web, pdf'
+
+    - title: 'Swagger generator'
+      url: /doc/en/lb2/Swagger-generator.html
+      output: 'web, pdf'
+
+    - title: 'Refresh definitions command'
+      url: /doc/en/lb2/Refresh-definitions-command.html
+      output: 'web, pdf'
+
   - title: 'Client SDKs'
     url: /doc/en/lb2/Client-SDKs.html
     output: 'web, pdf'
