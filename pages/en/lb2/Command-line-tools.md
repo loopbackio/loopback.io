@@ -8,8 +8,9 @@ sidebar: lb2_sidebar
 permalink: /doc/en/lb2/Command-line-tools.html
 summary:
 ---
-{% include note.html content="There are two similar command-line tools available for Loopback: the StrongLoop `slc loopback` commands and the IBM API Connect `apic loopback` commands.
-" %}
+Two command-line tools are available for Loopback:
+- StrongLoop `slc loopback`. 
+- IBM API Connect `apic loopback`.
 
 You use these tools to create and _scaffold_ applications.  Scaffolding simply means generating the basic code for your application.
 You can then extend and modify the code as desired for your specific needs.
@@ -31,7 +32,7 @@ Then instead of using `slc loopback <command>` use `yo loopback:<command>` inste
   <th width="270">Commands</th>
   <th width="200">See</th>
   <th>Description</th>
-  </thead>
+  </tr></thead>
   <tbody>
 <tr markdown="1">
 <td markdown="1"> `slc loopback` <br/>`apic loopback`

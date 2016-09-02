@@ -196,6 +196,10 @@ entries:
       url: /doc/en/lb2/Extending-built-in-models.html
       output: 'web, pdf'
 
+    - title: 'Adding remote methods to built-in models'
+      url: /doc/en/lb2/Adding-remote-methods-to-built-in-models.html
+      output: 'web, pdf'
+
     - title: 'Creating database tables for built-in models'
       url: /doc/en/lb2/Creating-database-tables-for-built-in-models.html
       output: 'web, pdf'
@@ -204,46 +208,46 @@ entries:
       url: /doc/en/lb2/Model-property-reference.html
       output: 'web, pdf'
 
-    - title: 'Built-in models REST API'
-      url: /doc/en/lb2/Built-in-models-REST-API.html
-      output: 'web, pdf'
-      folderitems:
+      subfolders:
+      - title: 'Built-in models REST API'
+        output: 'web'
+        subfolderitems:
 
-      - title: 'PersistedModel REST API'
-        url: /doc/en/lb2/PersistedModel-REST-API.html
-        output: 'web, pdf'
+        - title: 'Built-in models REST API'
+          url: /doc/en/lb2/Built-in-models-REST-API.html
+          output: 'web, pdf'
 
-      - title: 'Access token REST API'
-        url: /doc/en/lb2/Access-token-REST-API.html
-        output: 'web, pdf'
+        - title: 'PersistedModel REST API'
+          url: /doc/en/lb2/PersistedModel-REST-API.html
+          output: 'web, pdf'
 
-      - title: 'ACL REST API'
-        url: /doc/en/lb2/ACL-REST-API.html
-        output: 'web, pdf'
+        - title: 'Access token REST API'
+          url: /doc/en/lb2/Access-token-REST-API.html
+          output: 'web, pdf'
 
-      - title: 'Application REST API'
-        url: /doc/en/lb2/Application-REST-API.html
-        output: 'web, pdf'
+        - title: 'ACL REST API'
+          url: /doc/en/lb2/ACL-REST-API.html
+          output: 'web, pdf'
 
-      - title: 'Email REST API'
-        url: /doc/en/lb2/Email-REST-API.html
-        output: 'web, pdf'
+        - title: 'Application REST API'
+          url: /doc/en/lb2/Application-REST-API.html
+          output: 'web, pdf'
 
-      - title: 'Relation REST API'
-        url: /doc/en/lb2/Relation-REST-API.html
-        output: 'web, pdf'
+        - title: 'Email REST API'
+          url: /doc/en/lb2/Email-REST-API.html
+          output: 'web, pdf'
 
-      - title: 'Role REST API'
-        url: /doc/en/lb2/Role-REST-API.html
-        output: 'web, pdf'
+        - title: 'Relation REST API'
+          url: /doc/en/lb2/Relation-REST-API.html
+          output: 'web, pdf'
 
-      - title: 'User REST API'
-        url: /doc/en/lb2/User-REST-API.html
-        output: 'web, pdf'
+        - title: 'Role REST API'
+          url: /doc/en/lb2/Role-REST-API.html
+          output: 'web, pdf'
 
-    - title: 'Adding remote methods to built-in models'
-      url: /doc/en/lb2/Adding-remote-methods-to-built-in-models.html
-      output: 'web, pdf'
+        - title: 'User REST API'
+          url: /doc/en/lb2/User-REST-API.html
+          output: 'web, pdf'
 
   - title: 'Connecting models to data sources'
     url: /doc/en/lb2/Connecting-models-to-data-sources.html
@@ -290,7 +294,6 @@ entries:
         - title: 'MongoDB connector'
           url: /doc/en/lb2/MongoDB-connector.html
           output: 'web, pdf'
-          folderitems:
 
         - title: 'Connecting to MongoDB'
           url: /doc/en/lb2/Connecting-to-MongoDB.html
@@ -303,7 +306,6 @@ entries:
         - title: 'MySQL connector'
           url: /doc/en/lb2/MySQL-connector.html
           output: 'web, pdf'
-          folderitems:
 
         - title: 'Connecting to MySQL'
           url: /doc/en/lb2/Connecting-to-MySQL.html
@@ -312,7 +314,6 @@ entries:
         - title: 'Oracle connector'
           url: /doc/en/lb2/Oracle-connector.html
           output: 'web, pdf'
-          folderitems:
 
         - title: 'Installing the Oracle connector'
           url: /doc/en/lb2/Installing-the-Oracle-connector.html
@@ -325,7 +326,6 @@ entries:
         - title: 'PostgreSQL connector'
           url: /doc/en/lb2/PostgreSQL-connector.html
           output: 'web, pdf'
-          folderitems:
 
         - title: 'Connecting to PostgreSQL'
           url: /doc/en/lb2/Connecting-to-PostgreSQL.html
@@ -338,7 +338,6 @@ entries:
         - title: 'SQL Server connector'
           url: /doc/en/lb2/SQL-Server-connector.html
           output: 'web, pdf'
-          folderitems:
 
         - title: 'Connecting to Microsoft SQL Server'
           url: /doc/en/lb2/Connecting-to-Microsoft-SQL-Server.html
@@ -348,8 +347,7 @@ entries:
           url: /doc/en/lb2/SQLite3.html
           output: 'web, pdf'
 
-      subfolders:
-      - title: 'Non-database connectors'
+      - title: 'Other connectors'
         output: 'web'
         subfolderitems:
 
@@ -368,7 +366,6 @@ entries:
         - title: 'Remote connector'
           url: /doc/en/lb2/Remote-connector.html
           output: 'web, pdf'
-          folderitems:
 
         - title: 'Remote connector example'
           url: /doc/en/lb2/Remote-connector-example.html
@@ -398,9 +395,8 @@ entries:
         url: /doc/en/lb2/Community-connectors.html
         output: 'web, pdf'
 
-      subfolders:
       - title: 'Advanced topics'
-        output: 'web, pdf'
+        output: 'web'
         subfolderitems:
 
         - title: 'Understanding data sources'
@@ -504,10 +500,6 @@ entries:
 
     - title: 'Working with LoopBack objects'
       url: /doc/en/lb2/Working-with-LoopBack-objects.html
-      output: 'web, pdf'
-
-    - title: 'Prototype versus instance methods'
-      url: /doc/en/lb2/Prototype-versus-instance-methods.html
       output: 'web, pdf'
 
       subfolders:
@@ -751,6 +743,10 @@ entries:
 
         - title: 'Generating Angular API docs'
           url: /doc/en/lb2/Generating-Angular-API-docs.html
+          output: 'web, pdf'
+
+        - title: 'Angular 2 SDK'
+          url: /doc/en/lb2/Angular-2-SDK.html
           output: 'web, pdf'
 
       - title: 'Xamarin SDK'
