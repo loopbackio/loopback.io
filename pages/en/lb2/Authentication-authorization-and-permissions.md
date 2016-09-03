@@ -13,7 +13,7 @@ summary:
 
 **Prerequisites**
 
-* Install **[API Connect](https://developer.ibm.com/apiconnect/)** or **[StrongLoop](https://docs.strongloop.com/display/SL/Installing+StrongLoop)**.
+* Install **[API Connect](https://developer.ibm.com/apiconnect/)** or **[StrongLoop](https://docs.strongloop.com/display/SL/Installing-StrongLoop)**.
 * Read [LoopBack core concepts](/doc/en/lb2/LoopBack-core-concepts.html).
 
 " %}
@@ -23,7 +23,7 @@ summary:
 * [Managing users](/doc/en/lb2/Managing-users.html)
 * [Third-party login using Passport](/doc/en/lb2/Third-party-login-using-Passport.html)
 * [Access control models](/doc/en/lb2/Using-built-in-models.html#Usingbuilt-inmodels-Accesscontrolmodels)
-* [Tutorial: access control](https://docs.strongloop.com/display/LB/Tutorial%3A+access+control)
+* [Tutorial: access control](/doc/en/lb2/Tutorial%3A-access-control)
 * [Security considerations](/doc/en/lb2/Security-considerations.html)
 
 Most applications need to control who (or what) can access data or call services.
@@ -127,7 +127,7 @@ The general process to implement access control for an application is:
 2.  **Define access for each role and model method**.
     For example, you might enable anonymous users to read a list of banks, but not allow them to do anything else.
     LoopBack models have a set of built-in methods, and each method maps to either the READ or WRITE access type.
-    In essence, this step amounts to specifying whether access is allowed for each role and each Model + access type, as illustrated in the example below.
+    In essence, this step amounts to specifying whether access is allowed for each role and each Model - access type, as illustrated in the example below.
 3.  **Implement authentication**:
     in the application, add code to create (register) new users, login users (get and use authentication tokens), and logout users.
 

@@ -90,7 +90,7 @@ In both cases, LoopBack models return JSON.
 A REST query must include the literal string \"filter\" in the URL query string.
 The Node API call does not include the literal string \"filter\" in the JSON.
 
-[LoopBack API Explorer](https://docs.strongloop.com/display/APIC/Use+API+Explorer) adds \"filter\" to the query string,
+[LoopBack API Explorer](https://docs.strongloop.com/display/APIC/Use-API-Explorer) adds \"filter\" to the query string,
 but you must enter [Stringified JSON](/doc/en/lb2/Querying-data.html) in the **filter** field.
 Also make sure that the quotes you use are proper straight quotes ( \" ), not curved or typographic quotation marks (  “ or ” ). These can often be hard to distinguish visually.
 

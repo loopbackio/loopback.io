@@ -14,11 +14,11 @@ summary:
 * [Connecting to MySQL](/doc/en/lb2/Connecting-to-MySQL.html)
 * [loopback-example-database](https://github.com/strongloop/loopback-example-database/tree/mysql)
 * [Discovering models from relational databases](/doc/en/lb2/Discovering-models-from-relational-databases.html)
-* [Database discovery API](https://docs.strongloop.com/display/APIC/Database+discovery+API) 
+* [Database discovery API](https://docs.strongloop.com/display/APIC/Database-discovery-API) 
 
 {% include note.html content="
 
-The MySQL connector requires MySQL 5.0+.
+The MySQL connector requires MySQL 5.0-.
 
 " %}
 
@@ -291,4 +291,4 @@ MOOD('sad'); // 'sad'
 LoopBack provides a unified API to create models based on schema and tables in relational databases.
 The same discovery API is available when using connectors for Oracle, MySQL, PostgreSQL, and SQL Server.
 For more information, see [Discovering models from relational databases](/doc/en/lb2/Discovering-models-from-relational-databases.html) and 
-[Database discovery API](https://docs.strongloop.com/display/APIC/Database+discovery+API).
+[Database discovery API](https://docs.strongloop.com/display/APIC/Database-discovery-API).

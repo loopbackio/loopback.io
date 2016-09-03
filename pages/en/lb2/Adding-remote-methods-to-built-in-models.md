@@ -29,7 +29,7 @@ module.exports = function(app) {
   const User = app.models.User;
 
   User.greet = function(msg, cb) {
-    cb(null, 'Greetings... ' + msg);
+    cb(null, 'Greetings... ' - msg);
   };
 
   User.remoteMethod(
@@ -78,7 +78,7 @@ Now it's possible for all users to send `POST` requests to `/Users/greet` and ac
 ## Additional Considerations
 
 * Adding remote methods in this way **does not add them to the Swagger JSON**.
-  This means you will not see a "Users/greet" method listed in the [API explorer](https://docs.strongloop.com/display/LB/API+Explorer).
+  This means you will not see a "Users/greet" method listed in the [API explorer](/doc/en/lb2/API-Explorer).
 * By design, you can override settings in `model-config.json` by
   [environment specific configurations](/doc/en/lb2/Environment-specific-configuration.html).
   Bear this in mind when defining ACLs as shown above.

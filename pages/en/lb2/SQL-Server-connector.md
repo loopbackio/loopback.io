@@ -14,11 +14,11 @@ summary:
 **See also**:
 
 * [loopback-example-database](https://github.com/strongloop/loopback-example-database/tree/mssql)
-* [Database discovery API](https://docs.strongloop.com/display/APIC/Database+discovery+API)
+* [Database discovery API](https://docs.strongloop.com/display/APIC/Database-discovery-API)
 
 {% include note.html content="
 
-The SQL Server connector requires SQL Server 2005+.
+The SQL Server connector requires SQL Server 2005-.
 
 " %}
 
@@ -358,7 +358,7 @@ See [LoopBack types](/doc/en/lb2/LoopBack-types.html) for details on LoopBack's
     </tr>
     <tr>
       <td>POINT</td>
-      <td><a href="https://docs.strongloop.com/display/TRASH/GeoPoint+class">GeoPoint</a></td>
+      <td><a href="https://docs.strongloop.com/display/TRASH/GeoPoint-class">GeoPoint</a></td>
     </tr>
     <tr>
       <td>
@@ -379,4 +379,4 @@ See [LoopBack types](/doc/en/lb2/LoopBack-types.html) for details on LoopBack's
 
 LoopBack provides a unified API to create models based on schema and tables in relational databases.
 The same discovery API is available when using connectors for Oracle, MySQL, PostgreSQL, and SQL Server.
-For more information, see [Database discovery API](https://docs.strongloop.com/display/APIC/Database+discovery+API).
+For more information, see [Database discovery API](https://docs.strongloop.com/display/APIC/Database-discovery-API).

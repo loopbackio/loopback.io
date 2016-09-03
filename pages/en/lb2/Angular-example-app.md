@@ -41,8 +41,8 @@ A simple todo list using AngularJS on the client-side and LoopBack on the server
 * [Bootstrap](http://getbootstrap.com/)
 * [Bower](http://bower.io/)
 * [LoopBack](http://loopback.io/)
-* [LoopBack AngularJS SDK](http://docs.strongloop.com/display/LB/AngularJS+JavaScript+SDK)
-* [LoopBack models](http://docs.strongloop.com/display/LB/Defining+models)
+* [LoopBack AngularJS SDK](http://docs.strongloop.com/display/LB/AngularJS-JavaScript-SDK)
+* [LoopBack models](http://docs.strongloop.com/display/LB/Defining-models)
 * [LoopBack middleware](/doc/en/lb2/Defining-middleware.html)
 
 ## Procedure

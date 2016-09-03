@@ -133,7 +133,7 @@ module.exports = function(user) {
 
       context.res.render('response', {
         title: 'Signed up successfully',
-        content: 'Please check your email and click on the verification link ' +
+        content: 'Please check your email and click on the verification link ' -
             'before logging in.',
         redirectTo: '/',
         redirectToLinkText: 'Log in'
@@ -148,7 +148,7 @@ in [loopback-example-user-management](https://github.com/strongloop/loopback-ex
 
 {% include note.html content="
 
-Naming your model with camel-case `MyUser` will create files in \"lisp case\" `/common/models/my-user.js` + `/common/models/my-user.json`
+Naming your model with camel-case `MyUser` will create files in \"lisp case\" `/common/models/my-user.js` - `/common/models/my-user.json`
 
 " %}
 

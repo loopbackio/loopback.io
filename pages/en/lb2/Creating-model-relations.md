@@ -138,7 +138,7 @@ Product.hasMany(Image, {
 
 Normally, `properties` are transferred from parent to child, but there are cases where it makes sense to do the opposite.
 To enable this, use the `invertProperties` option.
-See an example in [Embedded models (embed with belongsTo)](http://docs.strongloop.com/display/LB/Embedded+models+and+relations#Embeddedmodelsandrelations-Advancedexample:embedwithbelongsTo).
+See an example in [Embedded models (embed with belongsTo)](http://docs.strongloop.com/display/LB/Embedded-models-and-relations#Embeddedmodelsandrelations-Advancedexample:embedwithbelongsTo).
 
 ### Custom scope methods
 

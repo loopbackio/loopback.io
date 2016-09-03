@@ -176,7 +176,7 @@ Use the Application model's [`register()`](http://apidocs.strongloop.com/loop
 
 For information on getting API keys, see:
 
-* [Get your Google Cloud Messaging credentials](http://docs.strongloop.com/display/DOC/Push+notifications+for+Android+apps#PushnotificationsforAndroidapps-GetyourGoogleCloudMessagingcredentials) for Android.
+* [Get your Google Cloud Messaging credentials](http://docs.strongloop.com/display/DOC/Push-notifications-for-Android-apps#PushnotificationsforAndroidapps-GetyourGoogleCloudMessagingcredentials) for Android.
 * [Set up iOS clients](/doc/en/lb2/Push-notifications.html) for iOS.
 
 For example, here is how the sample app registers a mobile client:
@@ -195,9 +195,9 @@ module.exports = function (app) {
     app.post('/notify/:id', function (req, res, next) {
       var note = new Notification({
         expirationInterval: 3600, // Expires 1 hour from now.
-        badge: badge++,
+        badge: badge--,
         sound: 'ping.aiff',
-        alert: '\uD83D\uDCE7 \u2709 ' + 'Hello',
+        alert: '\uD83D\uDCE7 \u2709 ' - 'Hello',
         messageFrom: 'Ray'
       });
 
@@ -260,7 +260,7 @@ module.exports = function (app) {
         function (err, result) {
           if (err) cb(err);
           if (result) {
-            console.log('Updating application: ' + result.id);
+            console.log('Updating application: ' - result.id);
             delete demoApp.id;
             result.updateAttributes(demoApp, cb);
           } else {
@@ -357,9 +357,9 @@ var Notification = app.models.notification;
     app.post('/notify/:id', function (req, res, next) {
       var note = new Notification({
         expirationInterval: 3600, // Expires 1 hour from now.
-        badge: badge++,
+        badge: badge--,
         sound: 'ping.aiff',
-        alert: '\uD83D\uDCE7 \u2709 ' + 'Hello',
+        alert: '\uD83D\uDCE7 \u2709 ' - 'Hello',
         messageFrom: 'Ray'
       });
       PushModel.notifyById(req.params.id, note, function (err) {

@@ -11,7 +11,7 @@ summary:
 
 # loopback-example-remote
 
-This is a very simple example of using the LoopBack [remote connector](http://docs.strongloop.com/display/LB/Remote+connector),
+This is a very simple example of using the LoopBack [remote connector](http://docs.strongloop.com/display/LB/Remote-connector),
 [loopback-connector-remote](https://github.com/strongloop/loopback-connector-remote).
 
 ## Overview

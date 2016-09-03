@@ -63,7 +63,7 @@ All your model JSON and JavaScript files go in the `/common/models` directory.
       <td>Scripts are automatically executed in alphabetical order.</td>
     </tr>
     <tr>
-      <td><code><a href="https://docs.strongloop.com/display/LB/component-config.json">component-config.json</a></code></td>
+      <td><code><a href="/doc/en/lb2/component-config.json">component-config.json</a></code></td>
       <td>Specifies <a href="/doc/en/lb2/LoopBack-components.html">LoopBack components</a> to load.</td>
       <td>Created by Strongloop tools only. Not used in API Connect.</td>
     </tr>
@@ -74,7 +74,7 @@ All your model JSON and JavaScript files go in the `/common/models` directory.
     </tr>
     <tr>
       <td><code><a href="/doc/en/lb2/datasources.json.html">datasources.json</a></code>&nbsp;</td>
-      <td>Data source configuration file. See <a href="/doc/en/lb2/datasources.json.html">datasources.json</a>. <span>For an example, see <a href="https://docs.strongloop.com/display/TRASH/Create+new+data+source">Create new data source</a></span><span>.</span></td>
+      <td>Data source configuration file. See <a href="/doc/en/lb2/datasources.json.html">datasources.json</a>. <span>For an example, see <a href="https://docs.strongloop.com/display/TRASH/Create-new-data-source">Create new data source</a></span><span>.</span></td>
       <td><code>app.datasources['datasource-name']</code></td>
     </tr>
     <tr>

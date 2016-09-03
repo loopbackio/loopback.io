@@ -207,7 +207,7 @@ slc loopback:model Account
 With the `account` model configured, we can generate the corresponding Oracle table using the info from the `Account` metadata in
 [`common/models/account.json`](common/models/account.json)
 via
-[auto-migration](https://docs.strongloop.com/display/public/LB/Implementing+auto-migration).
+[auto-migration](https://docs.strongloop.com/display/public/LB/Implementing-auto-migration).
 
 Start by creating a dir to store general-purpose scripts:
 
@@ -269,7 +269,7 @@ You should see:
 
 ### 8. Add a script to perform discover the database schema
 
-> [Discovery](https://docs.strongloop.com/display/public/LB/Discovering+models+from+relational+databases)
+> [Discovery](https://docs.strongloop.com/display/public/LB/Discovering-models-from-relational-databases)
 > is the process of reverse engineering a LoopBack model from an existing
 > database schema.
 
@@ -382,7 +382,7 @@ You should see:
     id: 2 } ]
 ```
 
-> See the [official docs](https://docs.strongloop.com/display/public/LB/Discovering+models+from+relational+databases)
+> See the [official docs](https://docs.strongloop.com/display/public/LB/Discovering-models-from-relational-databases)
 > for more info.
 
 * * *

@@ -18,7 +18,7 @@ The memory connector supports:
 
 * Standard query and create, read, update, and delete operations, so you can test models against an in-memory data source.
 * Geo-filtering when using the `find()` operation with an attached model.
-  See [GeoPoint class](https://docs.strongloop.com/display/TRASH/GeoPoint+class) for more information on geo-filtering.
+  See [GeoPoint class](https://docs.strongloop.com/display/TRASH/GeoPoint-class) for more information on geo-filtering.
 
 {% include important.html content="
 

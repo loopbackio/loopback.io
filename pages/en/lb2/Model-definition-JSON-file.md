@@ -616,7 +616,7 @@ This is not yet implemented. You must currently validate in code; see [Validatin
 
 " %}
 
-Specify constraints on data with `validations` properties. See also [Validatable class](https://docs.strongloop.com/display/TRASH/Validatable+class).
+Specify constraints on data with `validations` properties. See also [Validatable class](https://docs.strongloop.com/display/TRASH/Validatable-class).
 
 <table>
   <tbody>

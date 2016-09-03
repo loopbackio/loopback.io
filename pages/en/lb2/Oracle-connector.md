@@ -22,7 +22,7 @@ For a workaround, see [How to Disable SIP in OS X El Capitan](http://osxdaily.co
 * [Installing the Oracle connector](/doc/en/lb2/Installing-the-Oracle-connector.html)
 * [Connecting to Oracle](/doc/en/lb2/Connecting-to-Oracle.html)
 * [loopback-example-database](https://github.com/strongloop/loopback-example-database/tree/oracle)
-* [Database discovery API](https://docs.strongloop.com/display/APIC/Database+discovery+API) 
+* [Database discovery API](https://docs.strongloop.com/display/APIC/Database-discovery-API) 
 
 {% include note.html content="
 

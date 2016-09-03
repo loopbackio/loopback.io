@@ -71,7 +71,7 @@ The standard scaffolded LoopBack application created by the 
 
 Prior to generator-loopback v. 1.12, the application generator created two additional boot scripts, but this functionality is now handled in middleware:
 
-* `explorer.js` - Enables [API Explorer](https://docs.strongloop.com/display/APIC/Use+API+Explorer). 
+* `explorer.js` - Enables [API Explorer](https://docs.strongloop.com/display/APIC/Use-API-Explorer). 
 * `rest-api.js` - Exposes the application's models over REST using [`loopback.rest()`](http://apidocs.strongloop.com/loopback/#loopback-rest) middleware.
 
 The API Connect LoopBack generator does not create the boot script `authentication.js` that enables authentication for the application by calling

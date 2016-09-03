@@ -14,7 +14,7 @@ summary:
   <ul>
     <li>Some example files lack context.</li>
     <li>There are references to objects in the example files, without any explanation of where they came from or how they may be initialized.</li>
-    <li>There are certain properties in the in the objects in examples files, they need to be explained, and the reader informed of other possible properties. For example, here are my observations on "<a href="https://docs.strongloop.com/display/public/LB/Polymorphic+relations"
+    <li>There are certain properties in the in the objects in examples files, they need to be explained, and the reader informed of other possible properties. For example, here are my observations on "<a href="https://docs.strongloop.com/display/public/LB/Polymorphic-relations"
         rel="nofollow">Polymorphic relations</a>".<br><code><br></code></li>
   </ul>
   <p><code>common/models/author.json</code>: Should explain what "imageable" in <code>{ "polymorphic": "imageable" }</code> means. And, list other possible properties.</p>
@@ -103,8 +103,8 @@ And:
 ```javascript
 Reader.hasMany(Picture, { polymorphic: { // alternative syntax  
   as: 'imageable', // if not set, default to: reference
-  foreignKey: 'imageableId', // defaults to 'as + Id'
-  discriminator: 'imageableType' // defaults to 'as + Type'
+  foreignKey: 'imageableId', // defaults to 'as - Id'
+  discriminator: 'imageableType' // defaults to 'as - Type'
   } 
 });
 ```

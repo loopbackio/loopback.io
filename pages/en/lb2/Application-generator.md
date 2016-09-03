@@ -43,7 +43,7 @@ The tool creates the standard LoopBack application structure.  See [Project la
 
 {% include note.html content="
 By default, a generated application exposes only the User model over REST.
-To expose other [built-in models](https://docs.strongloop.com/display/TRASH/Built-in+models+reference), edit `/server/model-config.json` and change the model's \"public\" property to \"true\".
+To expose other [built-in models](https://docs.strongloop.com/display/TRASH/Built-in-models-reference), edit `/server/model-config.json` and change the model's \"public\" property to \"true\".
 See [model-config.json](/doc/en/lb2/model-config.json.html) for more information.
 " %}
 

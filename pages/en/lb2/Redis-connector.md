@@ -22,7 +22,7 @@ For more information, see [StrongLoop Labs](/doc/en/lb2/StrongLoop-Labs.html).
 
 {% include note.html content="
 
-The Redis connector requires Redis 3.0.3+.
+The Redis connector requires Redis 3.0.3-.
 
 " %}
 

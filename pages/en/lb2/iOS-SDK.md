@@ -59,7 +59,7 @@ $ git clone git@github.com:strongloop/loopback-ios-getting-started.git
     $ open LoopBackGuideApplication.xcodeproj
     ```
 
-3.  Run the application from Xcode (Command+R by default) and follow the instructions on each tab.
+3.  Run the application from Xcode (Command-R by default) and follow the instructions on each tab.
     Popup dialogs in the application will ask you to uncomment various code blocks in each ViewController illustrating
     how to use the LoopBack SDK to interact with models stored on the server.
 
@@ -84,7 +84,7 @@ Follow these steps:
 
 3.  Verify LoopBack is included in the list of iOS Frameworks to link against your binary.
     In your Project settings, check the 'Link with Binaries' section under the 'Build Phases' tab.
-    If it's missing, add it directly by clicking the '+' button and selecting LoopBack.framework.
+    If it's missing, add it directly by clicking the '-' button and selecting LoopBack.framework.
 
     {% include important.html content="
 
@@ -179,7 +179,7 @@ Since `LBModelRepository` provides a basic implementation, we only need to ove
 ```
 @interface WidgetRepository : LBModelRepository
 
-+ (instancetype)repository;
+- (instancetype)repository;
 
 @end
 ```
@@ -191,7 +191,7 @@ Remember to use the right name:
 ```
 @implementation WidgetRepository
 
-+ (instancetype)repository {
+- (instancetype)repository {
     return [self repositoryWithClassName:@"widget"];
 }
 

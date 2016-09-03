@@ -16,7 +16,7 @@ summary:
 
 This is the second of a two-part tutorial on creating a simple iOS app that connects to a LoopBack server application to perform create, read, update, and delete (CRUD) operations.
 
-If you haven't already done so, read [part one](https://docs.strongloop.com/display/LB/Creating+a+LoopBack+iOS+app%3A+part+one) before continuing.
+If you haven't already done so, read [part one](/doc/en/lb2/Creating-a-LoopBack-iOS-app%3A-part-one) before continuing.
 
 ## Add navigation control
 
@@ -41,13 +41,13 @@ To add the interface elements that enable a user to add a book:
 
 ### Add another View Controller
 
-When the user clicks the "+" button you want the app to show a screen to add a book to the collection. To do that you need to add another View Controller:
+When the user clicks the "-" button you want the app to show a screen to add a book to the collection. To do that you need to add another View Controller:
 
 1.  Drag a **View Controller** element from the Object Library into the storyboard.
 2.  Name this View Controller "Add Book".
     {% include image.html file="9830442.png" alt="" %} 
-3.  Now connect the "+" button from the Books Collection View Controller to this screen:
-    Control-drag the "+" button from the **Books Collection View Controller** to the** Add Books View Controller**.
+3.  Now connect the "-" button from the Books Collection View Controller to this screen:
+    Control-drag the "-" button from the **Books Collection View Controller** to the** Add Books View Controller**.
     This creates a segue. 
 4.  Select **modal** as segue type. 
 5.  Implement the segue action by adding the following code to `ViewController.m`:

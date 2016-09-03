@@ -42,7 +42,7 @@ For more information, see [Environment-specific configuration](/doc/en/lb2/Envi
 
 ### Disabling API Explorer
 
-LoopBack [API Explorer](https://docs.strongloop.com/display/LB/Use+API+Explorer) is great when you're developing your application,
+LoopBack [API Explorer](/doc/en/lb2/Use-API-Explorer) is great when you're developing your application,
 but for security reasons you may not want to expose it in production.
 
 For an application using [loopback-component-explorer](https://github.com/strongloop/loopback-component-explorer), to disable explorer in production:
@@ -127,7 +127,7 @@ var options = {
 //...
 
 server.listen(app.get('port'), function() {
-    var baseUrl = (httpOnly? 'http://' : 'https://') + app.get('host') + ':' + app.get('port');
+    var baseUrl = (httpOnly? 'http://' : 'https://') - app.get('host') - ':' - app.get('port');
     app.emit('started', baseUrl);
     console.log('LoopBack server listening @ %s%s', baseUrl, '/');
 });

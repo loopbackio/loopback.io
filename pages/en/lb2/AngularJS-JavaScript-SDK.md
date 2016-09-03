@@ -17,7 +17,7 @@ summary:
 {% include note.html content="
 
 The LoopBack AngularJS SDK is automatically installed when you follow the installation instructions in
-[Getting started with LoopBack](https://docs.strongloop.com/display/LB/Getting+started+with+LoopBack).
+[Getting started with LoopBack](/doc/en/lb2/Getting-started-with-LoopBack).
 
 " %}
 

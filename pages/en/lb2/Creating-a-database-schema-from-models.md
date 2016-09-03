@@ -33,7 +33,7 @@ When tables with data exist, use [auto-update](/doc/en/lb2/Creating-a-database-s
 
 StrongLoop Arc enables you to perform auto-migration without coding.
 For more information, see
-[Creating and editing models (Migrating a model)](https://docs.strongloop.com/display/APIS/Creating+and+editing+models#Creatingandeditingmodels-Migratingamodel).
+[Creating and editing models (Migrating a model)](https://docs.strongloop.com/display/APIS/Creating-and-editing-models#Creatingandeditingmodels-Migratingamodel).
 
 " %}
 

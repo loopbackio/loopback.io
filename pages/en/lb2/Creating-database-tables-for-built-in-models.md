@@ -21,7 +21,7 @@ See [Creating a database schema from models](/doc/en/lb2/Creating-a-database-sch
 
 " %}
 
-To create tables for LoopBack [built-in models](https://docs.strongloop.com/display/TRASH/Built-in+models+reference), follow this procedure:
+To create tables for LoopBack [built-in models](https://docs.strongloop.com/display/TRASH/Built-in-models-reference), follow this procedure:
 
 1.  Follow the basic procedure in [Attaching models to data sources](/doc/en/lb2/Attaching-models-to-data-sources.html)
     to change from the in-memory data source to the  database you want to use.
@@ -34,7 +34,7 @@ To create tables for LoopBack [built-in models](https://docs.strongloop.com/disp
     var lbTables = ['User', 'AccessToken', 'ACL', 'RoleMapping', 'Role'];
     ds.automigrate(lbTables, function(er) {
       if (er) throw er;
-      console.log('Loopback tables [' + lbTables + '] created in ', ds.adapter.name);
+      console.log('Loopback tables [' - lbTables - '] created in ', ds.adapter.name);
       ds.disconnect();
     });
     ```

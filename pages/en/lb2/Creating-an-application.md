@@ -13,7 +13,7 @@ summary:
 
 **Prerequisites**
 
-* Install **[API Connect](https://developer.ibm.com/apiconnect/)** or **[StrongLoop](https://docs.strongloop.com/display/SL/Installing+StrongLoop)**.
+* Install **[API Connect](https://developer.ibm.com/apiconnect/)** or **[StrongLoop](https://docs.strongloop.com/display/SL/Installing-StrongLoop)**.
 * Read [LoopBack core concepts](/doc/en/lb2/LoopBack-core-concepts.html).
 
 " %}
@@ -108,6 +108,6 @@ Start the web server.
 Emit the 'started' [event](/doc/en/lb2/Events.html).
 
 **10 - 13**:
-Start [API Explorer](/pages/createpage.action?spaceKey=APIC&title=API+Explorer&linkCreation=true&fromPageId=9634284).
+Start [API Explorer](/pages/createpage.action?spaceKey=APIC&title=API-Explorer&linkCreation=true&fromPageId=9634284).
 
 **18**: [Initialize (boot) the application](/doc/en/lb2/Events.html).

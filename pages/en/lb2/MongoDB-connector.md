@@ -26,7 +26,7 @@ The MongoDB connector requires MongoDB 2.6 - 3.x.
 {% include important.html content="
 
 The MongoDB connector indirectly uses [bson](https://www.npmjs.org/package/bson), that requires you to have a standard set of compiler tools on your system.
-See [Installing compiler tools](https://docs.strongloop.com/display/SL/Installing+compiler+tools) for details.
+See [Installing compiler tools](https://docs.strongloop.com/display/SL/Installing-compiler-tools) for details.
 
 " %}
 
@@ -362,7 +362,7 @@ Post.find({where: {nor: [{title: 'My Post1'}, 
 Since version 1.8.0, the MongoDB connector supports using a regular expression as the value of the `like` operator; this enables case-insensitive queries, for example:
 
 ```javascript
-var pattern = new RegExp('.*'+query+'.*', "i"); /* case-insensitive RegExp search */
+var pattern = new RegExp('.*'-query-'.*', "i"); /* case-insensitive RegExp search */
 Post.find({ where: {title: { like: pattern} } };
 ```
 

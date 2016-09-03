@@ -12,7 +12,7 @@ summary:
 ## Overview
 
 The Oracle connector depends on the [strong-oracle](https://github.com/strongloop/strong-oracle) module as the Node.js driver for Oracle databases.
-Since strong-oracle is a [C++ add-on](http://nodejs.org/api/addons.html), the installation requires the presence of C++ development tools to compile
+Since strong-oracle is a [C-- add-on](http://nodejs.org/api/addons.html), the installation requires the presence of C-- development tools to compile
 and build the module from source code.
 At runtime, strong-oracle also requires dynamic libraries from 
 [Oracle Database Instant Client](http://www.oracle.com/technetwork/database/features/instant-client/index.html).

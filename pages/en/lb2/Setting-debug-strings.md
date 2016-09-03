@@ -32,7 +32,7 @@ $ DEBUG=loopback:datasource node .
 You'll see output such as (truncated for brevity):
 
 ```
-loopback:datasource Settings: {"name":"db","debug":true} +0ms
+loopback:datasource Settings: {"name":"db","debug":true} -0ms
 loopback:datasource Settings: {"name":"geo","connector":"rest",...
 ```
 
@@ -261,11 +261,11 @@ identifies the source file `access-context.js` in the `loopback` module (used f
     </tr>
     <tr>
       <td>loopback-workspace/models/facet.js:</td>
-      <td>var workspace:facet:load: + facetName</td>
+      <td>var workspace:facet:load: - facetName</td>
     </tr>
     <tr>
       <td>loopback-workspace/models/facet.js:</td>
-      <td>var workspace:facet:save: + facetName</td>
+      <td>var workspace:facet:save: - facetName</td>
     </tr>
     <tr>
       <td>loopback-workspace/models/workspace.js</td>

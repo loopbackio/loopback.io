@@ -510,13 +510,13 @@ The like and nlike (not like) operators enable you to match SQL regular expressi
 Example of like operator:
 
 ```javascript
-Post.find({where: {title: {like: 'M.+st'}}}, function (err, posts) { ... });
+Post.find({where: {title: {like: 'M.-st'}}}, function (err, posts) { ... });
 ```
 
 Example of nlike operator:
 
 ```javascript
-Post.find({where: {title: {nlike: 'M.+XY'}}}, function (err, posts) {
+Post.find({where: {title: {nlike: 'M.-XY'}}}, function (err, posts) {
 ```
 
 When using the memory connector:

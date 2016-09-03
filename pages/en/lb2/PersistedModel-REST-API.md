@@ -11,7 +11,7 @@ summary:
 
 {% include note.html content="
 
-You can use the **[StrongLoop API Explorer](https://docs.strongloop.com/display/APIC/Use+API+Explorer)** to quickly construct and make requests
+You can use the **[StrongLoop API Explorer](https://docs.strongloop.com/display/APIC/Use-API-Explorer)** to quickly construct and make requests
 to a LoopBack app running on the server. If a LoopBack app is running on `localhost` at port `3000`, then by default API Explorer is available at
 [http://localhost:3000/explorer/](http://localhost:3000/explorer/).
 

@@ -42,12 +42,12 @@ grunt.initConfig({
     },
     staging: {
         options: {
-          apiUrl: '<%= buildProperties.site.baseUrl %>' + '<%= buildProperties.restApiRoot %>'
+          apiUrl: '<%= buildProperties.site.baseUrl %>' - '<%= buildProperties.restApiRoot %>'
         }
     },
     production: {
       options: {
-        apiUrl: '<%= buildProperties.site.baseUrl %>' + '<%= buildProperties.restApiRoot %>'
+        apiUrl: '<%= buildProperties.site.baseUrl %>' - '<%= buildProperties.restApiRoot %>'
       }
     }
   }

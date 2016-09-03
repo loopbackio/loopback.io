@@ -221,7 +221,7 @@ The general rule is that the context provides either an `instance` property or a
 
 This property is provided when the operation affects a single instance _and_ performs a full update/create/delete of all model properties, for example `PersistedModel.create()`.
 
-##### where + data
+##### where - data
 
 When the operation affects multiple instance (e.g. `PersistedModel.updateAll()`) _or_ performs a partial update of a subset of model properties
 (e.g. `PersistedModel.prototype.updateAttributes()`), the context provides a [where filter](/doc/en/lb2/Where-filter.html) used

@@ -8,6 +8,43 @@ entries:
   version: '2.0'
   folders:
 
+  - title: 'Installation'
+    url: /doc/en/lb2/Installation.html
+    output: 'web, pdf'
+    folderitems:
+
+      - title: 'Installing IBM API Connect'
+        url: /doc/en/lb2/Installing-IBM-API-Connect.html
+        output: 'web, pdf'
+
+      - title: 'Installing StrongLoop'
+        url: /doc/en/lb2/Installing-StrongLoop.html
+        output: 'web, pdf'
+
+      - title: 'Installing compiler tools'
+        url: /doc/en/lb2/Installing-compiler-tools.html
+        output: 'web, pdf'
+
+      - title: 'Installing on MacOS'
+        url: /doc/en/lb2/Installing-on-MacOS.html
+        output: 'web, pdf'
+
+      - title: 'Installing on Windows'
+        url: /doc/en/lb2/Installing-on-Windows.html
+        output: 'web, pdf'
+
+      - title: 'Installing on Linux'
+        url: /doc/en/lb2/Installing-on-Linux.html
+        output: 'web, pdf'
+
+      - title: 'Installation troubleshooting'
+        url: /doc/en/lb2/Installation-troubleshooting.html
+        output: 'web, pdf'
+
+      - title: 'Updating to the latest version'
+        url: /doc/en/lb2/Updating-to-the-latest-version.html
+        output: 'web, pdf'
+
   - title: 'LoopBack core concepts'
     url: /doc/en/lb2/LoopBack-core-concepts.html
     output: 'web, pdf'
@@ -23,6 +60,109 @@ entries:
 
     - title: 'StrongLoop Labs'
       url: /doc/en/lb2/StrongLoop-Labs.html
+      output: 'web, pdf'
+
+  - title: 'Getting started with LoopBack'
+    url: /doc/en/lb2/Getting-started-with-LoopBack.html
+    output: 'web, pdf'
+    folderitems:
+
+    - title: 'Create a simple API'
+      url: /doc/en/lb2/Create-a-simple-API.html
+      output: 'web, pdf'
+
+    - title: 'Use API Explorer'
+      url: /doc/en/lb2/Use-API-Explorer.html
+      output: 'web, pdf'
+
+    - title: 'Connect your API to a data source'
+      url: /doc/en/lb2/Connect-your-API-to-a-data-source.html
+      output: 'web, pdf'
+
+    - title: 'Extend your API'
+      url: /doc/en/lb2/Extend-your-API.html
+      output: 'web, pdf'
+
+    - title: 'Add a static web page'
+      url: /doc/en/lb2/Add-a-static-web-page.html
+      output: 'web, pdf'
+
+    - title: 'Add a custom Express route'
+      url: /doc/en/lb2/Add-a-custom-Express-route.html
+      output: 'web, pdf'
+
+    - title: 'Run in a cluster'
+      url: /doc/en/lb2/Run-in-a-cluster.html
+      output: 'web, pdf'
+
+    - title: 'Next steps'
+      url: /doc/en/lb2/Next-steps.html
+      output: 'web, pdf'
+
+  - title: 'Getting started part II'
+    url: /doc/en/lb2/Getting-started-part-II.html
+    output: 'web, pdf'
+    folderitems:
+
+    - title: 'Introducing the Coffee Shop Reviews app'
+      url: /doc/en/lb2/Introducing-the-Coffee-Shop-Reviews-app.html
+      output: 'web, pdf'
+
+    - title: 'Create new data source'
+      url: /doc/en/lb2/Create-new-data-source.html
+      output: 'web, pdf'
+
+    - title: 'Create new models'
+      url: /doc/en/lb2/Create-new-models.html
+      output: 'web, pdf'
+
+    - title: 'Define model relations'
+      url: /doc/en/lb2/Define-model-relations.html
+      output: 'web, pdf'
+
+    - title: 'Define access controls'
+      url: /doc/en/lb2/Define-access-controls.html
+      output: 'web, pdf'
+
+    - title: 'Define a remote hook'
+      url: /doc/en/lb2/Define-a-remote-hook.html
+      output: 'web, pdf'
+
+    - title: 'Create AngularJS client'
+      url: /doc/en/lb2/Create-AngularJS-client.html
+      output: 'web, pdf'
+
+    - title: 'Deploying your application'
+      url: /doc/en/lb2/Deploying-your-application.html
+      output: 'web, pdf'
+
+    - title: 'Learn more'
+      url: /doc/en/lb2/Learn-more.html
+      output: 'web, pdf'
+
+  - title: 'Security advisories'
+    url: /doc/en/lb2/Security-advisories.html
+    output: 'web, pdf'
+    folderitems:
+
+    - title: 'Security advisory 08-16a-2016'
+      url: /doc/en/lb2/Security-advisory-08-16a-2016.html
+      output: 'web, pdf'
+
+    - title: 'Security advisory 08-16-2016'
+      url: /doc/en/lb2/Security-advisory-08-16-2016.html
+      output: 'web, pdf'
+
+    - title: 'Security advisory 01-12-2016'
+      url: /doc/en/lb2/Security-advisory-01-12-2016.html
+      output: 'web, pdf'
+
+    - title: 'Security advisory 06-04-2015'
+      url: /doc/en/lb2/Security-advisory-06-04-2015.html
+      output: 'web, pdf'
+
+    - title: 'Security advisory 01-09-2015'
+      url: /doc/en/lb2/Security-advisory-01-09-2015.html
       output: 'web, pdf'
 
   - title: 'Creating an application'

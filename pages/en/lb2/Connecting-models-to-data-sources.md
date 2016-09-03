@@ -282,7 +282,7 @@ $ slc loopback:datasource
 Follow the prompts to add the desired data source.
 
 You can also create a data source programmatically;
-see [Advanced topics: data sources](https://docs.strongloop.com/display/LB/Advanced+topics%3A+data+sources) for more information.
+see [Advanced topics: data sources](/doc/en/lb2/Advanced-topics%3A-data-sources) for more information.
 
 ### Data source properties
 

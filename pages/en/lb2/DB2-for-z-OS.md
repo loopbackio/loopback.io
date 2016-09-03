@@ -17,7 +17,7 @@ module is the LoopBack connector for DB2z.
 
 The LoopBack DB2z connector supports:
 
-* All [CRUD operations](https://docs.strongloop.com/display/LB/Creating%2C+updating%2C+and+deleting+data).
+* All [CRUD operations](/doc/en/lb2/Creating%2C-updating%2C-and-deleting-data).
 * [Queries](/doc/en/lb2/Querying-data.html) with fields, limit, order, skip and where filters.
 
 ## Installation
@@ -36,7 +36,7 @@ Once loopback-connector-db2z is installed please copy the required license file 
 
 ## Configuration
 
-Use the [data source generator](https://docs.strongloop.com/display/LB/Data+source+generator) (`slc loopback:datasource`) to add the DB2z data source to your application.
+Use the [data source generator](/doc/en/lb2/Data-source-generator) (`slc loopback:datasource`) to add the DB2z data source to your application.
 The entry in the application's `server/datasources.json` will look something like this:
 
 ```javascript

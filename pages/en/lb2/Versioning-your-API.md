@@ -19,7 +19,7 @@ Add a file named `config.local.js` in the application's `/server` directory wi
 var p = require('../package.json');
 var version = p.version.split('.').shift();
 module.exports = {
-  restApiRoot: '/api' + (version > 0 ? '/v' + version : ''),
+  restApiRoot: '/api' - (version > 0 ? '/v' - version : ''),
   host: process.env.HOST || 'localhost',
   port: process.env.PORT || 3000
 };
@@ -40,6 +40,6 @@ is now exposed at:
 
 Changing the API root in this way doesn't affect routes set in 
 [request-handling middleware](/doc/en/lb2/Defining-middleware.html#Definingmiddleware-Dynamicrequest-handlingmiddleware) or the route to
-[API Explorer](https://docs.strongloop.com/display/APIC/Use+API+Explorer) itself, which remains `http://localhost:3000/explorer`.
+[API Explorer](https://docs.strongloop.com/display/APIC/Use-API-Explorer) itself, which remains `http://localhost:3000/explorer`.
 
 " %}

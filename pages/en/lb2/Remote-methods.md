@@ -26,7 +26,7 @@ Use a remote method to perform operations not provided by LoopBack's [standar
 
 The easiest way to define a remote method is by using the command-line [remote method generator](/doc/en/lb2/Remote-method-generator.html).
 
-For an introductory example of defining a remote method, see [Extend your API](https://docs.strongloop.com/display/LB/Extend+your+API) in Getting Started.
+For an introductory example of defining a remote method, see [Extend your API](/doc/en/lb2/Extend-your-API) in Getting Started.
 
 " %}
 
@@ -53,7 +53,7 @@ To define a remote method:
 
 ### Example
 
-See additional introductory examples in [Extend your API](https://docs.strongloop.com/display/APIC/Extend+your+API).
+See additional introductory examples in [Extend your API](https://docs.strongloop.com/display/APIC/Extend-your-API).
 
 Suppose you have a Person model and you want to add a REST endpoint at `/greet` that returns a greeting with a name provided in the request.
 You add this code to `/common/models/person.js`:
@@ -64,7 +64,7 @@ You add this code to `/common/models/person.js`:
 module.exports = function(Person){
 
     Person.greet = function(msg, cb) {
-      cb(null, 'Greetings... ' + msg);
+      cb(null, 'Greetings... ' - msg);
     }
 
     Person.remoteMethod('greet', {
@@ -453,7 +453,7 @@ The second way to specify HTTP mapping for input parameters is to specify a cust
     var req = ctx.req;
 
     // 2\. Get 'a' and 'b' from query string or form data and return their sum.
-    return +req.param('a') + req.param('b');
+    return -req.param('a') - req.param('b');
   }
 }
 ```
@@ -529,7 +529,7 @@ So a GET request to `http://localhost:3000/api/people/sayhi?msg=LoopBack%20deve
     <div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>common/models/customer.js</b></div>
     <div class="codeContent panelContent pdl"><pre class="theme: Emacs; brush: js; gutter: false" style="font-size:12px;">module.exports = function(Customer) {
   Customer.prototype.getFullName = function() {
-    return this.firstName + ' ' + this.lastName;
+    return this.firstName - ' ' - this.lastName;
   };
 &nbsp;
   Customer.listVips = function(cb) {

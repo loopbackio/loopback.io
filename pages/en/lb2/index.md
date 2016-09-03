@@ -17,7 +17,7 @@ content="LoopBack is a highly-extensible, open-source Node.js framework that ena
 - Separable components for file storage, third-party login, and OAuth 2.0.
 " %}
 
-Read <a href="/display/APIC/LoopBack+core+concepts">LoopBack core concepts</a> to learn about key concepts you need to understand to use LoopBack.
+Read <a href="/display/APIC/LoopBack-core-concepts">LoopBack core concepts</a> to learn about key concepts you need to understand to use LoopBack.
 
 Check out the <a href="https://groups.google.com/forum/#!forum/loopbackjs">LoopBack Developer Forum</a> to ask questions and discuss how you are using LoopBack.
 
@@ -33,7 +33,7 @@ content="
 For more information, see [IBM API Connect](https://developer.ibm.com/apiconnect/).
 " %}    
 
-If you are an IBM customer, for technical support see the [IBM Support Portal](http://www-01.ibm.com/support/docview.wss?uid=swg21593214).
+**If you are an IBM customer, for technical support see the [IBM Support Portal](http://www-01.ibm.com/support/docview.wss?uid=swg21593214).**
 
 ## The LoopBack framework
 
@@ -48,9 +48,9 @@ New to Node.js? Read Getting Started with Node for:
 
 The LoopBack framework is a set of Node.js modules that you can use independently or together to quickly build REST APIs.
 
-A LoopBack application interacts with data sources through the LoopBack model API, available locally within Node.js, [remotely over REST](/doc/en/lb2/Built-in+models+REST+API), and via native client APIs for [iOS, Android, and HTML5](/doc/en/lb2/Client+SDKs). Using these APIs, apps can query databases, store data, upload files, send emails, create push notifications, register users, and perform other actions provided by data sources and services.
+A LoopBack application interacts with data sources through the LoopBack model API, available locally within Node.js, [remotely over REST](/doc/en/lb2/Built-in-models-REST-API), and via native client APIs for [iOS, Android, and HTML5](/doc/en/lb2/Client-SDKs). Using these APIs, apps can query databases, store data, upload files, send emails, create push notifications, register users, and perform other actions provided by data sources and services.
 
-Clients can call LoopBack APIs directly using <a href="/display/APIC/Strong+Remoting">Strong Remoting</a>, a pluggable transport layer that enables you to provide backend APIs over REST, WebSockets, and other transports.
+Clients can call LoopBack APIs directly using <a href="/display/APIC/Strong-Remoting">Strong Remoting</a>, a pluggable transport layer that enables you to provide backend APIs over REST, WebSockets, and other transports.
 
 The following diagram illustrates key LoopBack modules, how they are related, and their dependencies.
 

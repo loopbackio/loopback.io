@@ -25,7 +25,7 @@ Before starting this tutorial:
 
 * **Install [Apple XCode](https://developer.apple.com/xcode/)** version 5 or later.
 
-* **Follow [Getting started with LoopBack](https://docs.strongloop.com/display/APIC/Getting+started+with+LoopBack)** to install the StrongLoop tools.
+* **Follow [Getting started with LoopBack](https://docs.strongloop.com/display/APIC/Getting-started-with-LoopBack)** to install the StrongLoop tools.
 * **Download the [LoopBack iOS SDK](/doc/en/lb2/iOS-SDK.html)** and extract the contents.
 
 ## Create the LoopBack books application
@@ -82,7 +82,7 @@ Follow these steps to create an iOS single view application:
         @interface booksAppDelegate : UIResponder <UIApplicationDelegate>
 
         @property (strong, nonatomic) UIWindow *window;
-        + ( LBRESTAdapter *) adapter;
+        - ( LBRESTAdapter *) adapter;
         @end
         ```
 
@@ -94,7 +94,7 @@ Follow these steps to create an iOS single view application:
         #import "booksAppDelegate.h"
         @implementation booksAppDelegate
         static LBRESTAdapter * _adapter = nil;
-        + (LBRESTAdapter *) adapter
+        - (LBRESTAdapter *) adapter
         {
             if ( !_adapter)
                 _adapter = [LBRESTAdapter adapterWithURL:[NSURL URLWithString:@"http://localhost:3000/api/"]];

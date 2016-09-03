@@ -211,7 +211,7 @@ The full names of the properties below are prefixed by \"remoting,\" for example
         <p><span style="font-size: 14.0px;line-height: 1.4285715;">List of content types that the API supports in HTTP responses.</span></p>
         <p>The response type will match that specfied <span>in the</span><span> HTTP request "accepts" header, if it is in this list of supported types.</span></p>
         <p><span><span>If this property is set, then </span><code>rest.xml</code><span> is ignored.</span></span></p>
-        <p><span><span>NOTE: <span>'application/vnd.api+json' is supported, but is not one of the default types.</span></span></span></p>
+        <p><span><span>NOTE: <span>'application/vnd.api-json' is supported, but is not one of the default types.</span></span></span></p>
       </td>
       <td>
         <p><span style="color: rgb(61,60,64);">'application/json'<br></span><span style="color: rgb(61,60,64);">'application/javascript'<br>'application/xml'<br></span><span style="color: rgb(61,60,64);">'text/javascript'<br>'text/xml'<br></span><span style="color: rgb(61,60,64);">'json'<br>'xml'</span></p>

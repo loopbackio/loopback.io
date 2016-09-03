@@ -35,7 +35,7 @@ LoopBack and how they are using it. Check it out!
 There is also a [LoopBack Gitter channel](https://gitter.im/strongloop/loopback) for realtime discussions with fellow LoopBack developers.
 
 StrongLoop also publishes a blog with topics relevant to LoopBack.
-See [Blog posts](/pages/createpage.action?spaceKey=APIC&title=Blog+posts&linkCreation=true&fromPageId=9634358) for a list of the latest posts.
+See [Blog posts](/pages/createpage.action?spaceKey=APIC&title=Blog-posts&linkCreation=true&fromPageId=9634358) for a list of the latest posts.
 
 ### What client SDKs does LoopBack have?
 
@@ -176,7 +176,7 @@ LoopBack models support:
 
 LoopBack does not support using JavaScript (instead of JSON) for configuration files such as [config.json](/doc/en/lb2/config.json.html), 
 [datasources.json](/doc/en/lb2/datasources.json.html), or [model-config.json](/doc/en/lb2/model-config.json.html), 
-to enable programmatic editing of the configuration via tools such as [StrongLoop Arc](https://docs.strongloop.com/display/APIS/Using+Arc).
+to enable programmatic editing of the configuration via tools such as [StrongLoop Arc](https://docs.strongloop.com/display/APIS/Using-Arc).
 
 ### User management questions
 
@@ -245,7 +245,7 @@ object which contains information related to the user that is requesting the pas
 
 ### Error message: loopback deprecated Routes "/methods" and "/models" are considered dangerous and should not be used
 
-If you see this error message, you need to update your version of LoopBack. This issue is fixed in LoopBack 2.14+.
+If you see this error message, you need to update your version of LoopBack. This issue is fixed in LoopBack 2.14-.
 See [LoopBack PR #1135](https://github.com/strongloop/loopback/pull/1135).
 
 If you need to use an older version of LoopBack, or want to enable these routes,

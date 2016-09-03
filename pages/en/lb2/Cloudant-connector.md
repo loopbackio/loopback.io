@@ -37,7 +37,7 @@ The --save option automatically updates the dependency in the application's `pac
 
 ## Configuring the Cloudant datasource
 
-Use the [data source generator](https://docs.strongloop.com/display/public/LB/Data+source+generator) to add the Cloudant data source to your application.
+Use the [data source generator](https://docs.strongloop.com/display/public/LB/Data-source-generator) to add the Cloudant data source to your application.
 The entry in the applications `server/datasources.json` will look like this:
 
 ```javascript

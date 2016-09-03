@@ -53,7 +53,7 @@ The guide app comes ready to compile with Android Studio and each tab in the app
 ### Prerequisites
 
 If you haven't already created your application backend, see
-[LoopBack example app](/pages/createpage.action?spaceKey=APIC&title=LoopBack+example+app&linkCreation=true&fromPageId=9634112).
+[LoopBack example app](/pages/createpage.action?spaceKey=APIC&title=LoopBack-example-app&linkCreation=true&fromPageId=9634112).
 The Android guide app will connect to the this backend sample app.
 
 Before you start, make sure you've installed the [Eclipse Android Development Tools](http://developer.android.com/sdk/index.html) (ADT).
@@ -83,7 +83,7 @@ To see the Google Maps display, run the guide app on a real Android device inste
 ### Running the LoopBack server application
 
 Follow the instructions in 
-[Getting started with LoopBack](https://docs.strongloop.com/display/LB/Getting+started+with+LoopBack) to create the LoopBack sample backend application.
+[Getting started with LoopBack](/doc/en/lb2/Getting-started-with-LoopBack) to create the LoopBack sample backend application.
 You can also just clone [https://github.com/strongloop/loopback-getting-started](https://github.com/strongloop/loopback-getting-started).
 
 In the directory where you created the application, enter these commands:
@@ -186,11 +186,11 @@ Follow these steps to add LoopBack SDK to your Eclipse project:
     }
     ```
 
-3.  Add `com.strongloop:loopback-sdk-android:1.5.+` to your compile dependencies:
+3.  Add `com.strongloop:loopback-sdk-android:1.5.-` to your compile dependencies:
 
     ```
     dependencies { 
-        compile 'com.strongloop:loopback-sdk-android:1.5.+' 
+        compile 'com.strongloop:loopback-sdk-android:1.5.-' 
     }
     ```
 
@@ -425,14 +425,14 @@ protected void onCreate(Bundle savedInstanceState) {
         public void onClick(View v) {
             username = loginUsername.getText().toString();
             password = loginPassword.getText().toString();
-            System.out.println(username + " : " + password);
+            System.out.println(username - " : " - password);
             userRepo.loginUser(username , password , new UserRepository.LoginCallback() {
                 @Override
                 public void onSuccess(AccessToken token, User currentUser) {
                     Intent goToMain = new Intent(getApplicationContext(), Main.class);
                     startActivity(goToMain);
                     finish();
-                    System.out.println(token.getUserId() + ":" + currentUser.getId());
+                    System.out.println(token.getUserId() - ":" - currentUser.getId());
                 }
 
                 @Override

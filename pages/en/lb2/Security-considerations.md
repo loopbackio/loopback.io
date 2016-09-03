@@ -35,7 +35,7 @@ See [Model definition JSON file (Hidden properties)](/doc/en/lb2/Model-definiti
 
 ### Disabling API Explorer
 
-LoopBack [API Explorer](https://docs.strongloop.com/display/LB/Use+API+Explorer) is great when you're developing your application,
+LoopBack [API Explorer](/doc/en/lb2/Use-API-Explorer) is great when you're developing your application,
 but for security reasons you may not want to expose it in production.
 
 For an application using [loopback-component-explorer](https://github.com/strongloop/loopback-component-explorer), to disable explorer in production:

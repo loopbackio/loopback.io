@@ -19,10 +19,10 @@ $ cd myapp
 $ node .
 ```
 
-When you're ready to start tuning your app, use [`slc start`](https://docs.strongloop.com/display/NODE/slc+start) to run it locally under
+When you're ready to start tuning your app, use [`slc start`](https://docs.strongloop.com/display/NODE/slc-start) to run it locally under
 the control of StrongLoop Process Manager; this enables you to profile it and monitor app metrics to help find memory leaks and optimize performance.
 See [Profiling](https://docs.strongloop.com/display/SLC/Profiling) and 
-[Monitoring app metrics](https://docs.strongloop.com/display/SLC/Monitoring+app+metrics) for more information.
+[Monitoring app metrics](https://docs.strongloop.com/display/SLC/Monitoring-app-metrics) for more information.
 
 {% include important.html content="
 

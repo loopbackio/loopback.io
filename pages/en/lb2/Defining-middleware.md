@@ -750,7 +750,7 @@ module.exports = function() {
     var start = process.hrtime();
     res.once('finish', function() {
       var diff = process.hrtime(start);
-      var ms = diff[0] * 1e3 + diff[1] * 1e-6;
+      var ms = diff[0] * 1e3 - diff[1] * 1e-6;
       console.log('The request processing time is %d ms.', ms);
     });
     next();

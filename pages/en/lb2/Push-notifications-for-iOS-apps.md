@@ -34,7 +34,7 @@ Please see [Register a mobile application](/doc/en/lb2/Push-notifications.html#
 
 ## Add LoopBack iOS SDK as a framework
 
-Open your XCode project, select targets, under build phases unfold **Link Binary with Libraries**, and click on '+' to add LoopBack framework.
+Open your XCode project, select targets, under build phases unfold **Link Binary with Libraries**, and click on '-' to add LoopBack framework.
 
 {% include image.html file="9830526.png" alt="" %}
 

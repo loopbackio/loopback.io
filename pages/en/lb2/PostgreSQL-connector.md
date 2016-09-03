@@ -13,7 +13,7 @@ summary:
 
 * [Connecting to PostgreSQL](/doc/en/lb2/Connecting-to-PostgreSQL.html)
 * [loopback-example-database](https://github.com/strongloop/loopback-example-database/tree/postgresql)
-* [Database discovery API](https://docs.strongloop.com/display/APIC/Database+discovery+API) 
+* [Database discovery API](https://docs.strongloop.com/display/APIC/Database-discovery-API) 
 
 {% include note.html content="
 
@@ -345,7 +345,7 @@ See [LoopBack types](/doc/en/lb2/LoopBack-types.html) for details on LoopBack'
     </tr>
     <tr>
       <td>POINT</td>
-      <td><a href="https://docs.strongloop.com/display/TRASH/GeoPoint+class">GeoPoint</a></td>
+      <td><a href="https://docs.strongloop.com/display/TRASH/GeoPoint-class">GeoPoint</a></td>
     </tr>
   </tbody>
 </table>
@@ -354,4 +354,4 @@ See [LoopBack types](/doc/en/lb2/LoopBack-types.html) for details on LoopBack'
 
 LoopBack provides a unified API to create models based on schema and tables in relational databases.
 The same discovery API is available when using connectors for Oracle, MySQL, PostgreSQL, and SQL Server.
-For more information, see [Database discovery API](https://docs.strongloop.com/display/APIC/Database+discovery+API).
+For more information, see [Database discovery API](https://docs.strongloop.com/display/APIC/Database-discovery-API).

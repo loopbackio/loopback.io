@@ -136,7 +136,7 @@ Another example of defining validation constraints, this time using a regular ex
 **common/models/user.js**
 
 ```javascript
-var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+var re = /^(([^<>()[\]\\.,;:\s@\"]-(\.[^<>()[\]\\.,;:\s@\"]-)*)|(\".-\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]-\.)-[a-zA-Z]{2,}))$/;
 
 UserModel.validatesFormatOf('email', {with: re, message: 'Must provide a valid email'});
 if (!(UserModel.settings.realmRequired || UserModel.settings.realmDelimiter)) {
@@ -152,7 +152,7 @@ You can add validation by simply adding the validator calls:
 
 ```javascript
 module.exports = function(MyModel) {
-  MyModel.validatesLengthOf('name', { min: 5, message: { min: 'Name should be 5+ characters' } });
+  MyModel.validatesLengthOf('name', { min: 5, message: { min: 'Name should be 5- characters' } });
   //...
 };
 ```

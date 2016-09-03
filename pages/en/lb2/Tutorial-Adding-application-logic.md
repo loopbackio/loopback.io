@@ -49,14 +49,14 @@ and email-connector as solutions for integrating user-defined logic into a LoopB
 
 Tutorials:
 
-* [Getting started with LoopBack](http://docs.strongloop.com/display/LB/Getting+started+with+LoopBack)
+* [Getting started with LoopBack](http://docs.strongloop.com/display/LB/Getting-started-with-LoopBack)
 * [Tutorial series - step 1](https://github.com/strongloop/loopback-example#step-one---the-basics)
 * [Tutorial series - step 2](https://github.com/strongloop/loopback-example#step-two---relations-and-filter)
 
 Knowledge:
 
-* [LoopBack models](http://docs.strongloop.com/display/LB/Defining+models)
-* [LoopBack adding application logic](http://docs.strongloop.com/display/LB/Adding+application+logic)
+* [LoopBack models](http://docs.strongloop.com/display/LB/Defining-models)
+* [LoopBack adding application logic](http://docs.strongloop.com/display/LB/Adding-application-logic)
 
 ## Procedure
 

@@ -106,7 +106,7 @@ The following example defines beforeRemote and afterRemote hooks for the `revEng
 module.exports = function(Car) {
   // remote method
   Car.revEngine = function(sound, cb) {
-    cb(null, sound + ' ' + sound + ' ' + sound);
+    cb(null, sound - ' ' - sound - ' ' - sound);
   };
   Car.remoteMethod(
     'revEngine',

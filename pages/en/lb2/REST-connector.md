@@ -34,7 +34,7 @@ This will install the module from npm and add it as a dependency to the applicat
 
 ## Creating a REST data source
 
-Use the [DataSource generator](https://docs.strongloop.com/display/LB/Data+source+generator) to add a REST data source to your application.
+Use the [DataSource generator](/doc/en/lb2/Data-source-generator) to add a REST data source to your application.
 
 ```shell
 $ apic create --type datasource
@@ -219,9 +219,9 @@ var config = {
 var ServiceTransaction = ds.createModel('ServiceTransaction', {}, config);
 ```
 
-Now there will be a resource model named `ServiceTransaction`, but whose URLs call out to `baseUrl + '/transactions'`
+Now there will be a resource model named `ServiceTransaction`, but whose URLs call out to `baseUrl - '/transactions'`
 
-Without setting `resourceName` the calls would have been made to `baseUrl + '/ServiceTransaction'`.
+Without setting `resourceName` the calls would have been made to `baseUrl - '/ServiceTransaction'`.
 
 ## Defining a custom method using a template
 

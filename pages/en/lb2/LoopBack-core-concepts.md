@@ -161,15 +161,15 @@ Applications don't use connectors directly, rather they go through data sources 
 
 LoopBack components provide additional "plug-in" functionality:
 
-* [Push notifications](http://docs.strongloop.com/display/LB/Push+notifications) -  enables sending information to mobile apps for immediate
+* [Push notifications](http://docs.strongloop.com/display/LB/Push-notifications) -  enables sending information to mobile apps for immediate
   display in a "badge," alert, or pop-up message on the mobile device.
-* [Storage service](http://docs.strongloop.com/display/LB/Storage+service) - enables uploading and downloading files to and from cloud storage providers
+* [Storage service](http://docs.strongloop.com/display/LB/Storage-service) - enables uploading and downloading files to and from cloud storage providers
   (Amazon, Rackspace, Openstack, and Azure) as well as the server file system.
 * [Third-party login](/doc/en/lb2/Third-party-login-using-Passport.html) - integrates [Passport](http://passportjs.org/) and enables user login (and account linking)
   using third-party credentials from Facebook, Google, Twitter, Github, or any system that supports OAuth, OAuth 2, or OpenID.
 * [Synchronization](http://docs.strongloop.com/display/LB/Synchronization) - enables mobile applications to operate offline and then synchronize
   data with the server application when reconnected.
-* [OAuth 2.0](http://docs.strongloop.com/display/LB/OAuth+2.0) -  enables LoopBack applications to function as oAuth 2.0 providers to authenticate and
+* [OAuth 2.0](http://docs.strongloop.com/display/LB/OAuth-2.0) -  enables LoopBack applications to function as oAuth 2.0 providers to authenticate and
   authorize client applications and users to access protected API endpoints.
 
 ## Examples
@@ -187,11 +187,11 @@ Refer to [https://github.com/strongloop/loopback-example](https://github.com/st
   <tbody>
     <tr>
       <td><a href="https://github.com/strongloop/loopback-getting-started" class="external-link" rel="nofollow">loopback-getting-started</a></td>
-      <td>The basics of LoopBack. Follow along in&nbsp;<a href="http://docs.strongloop.com/display/LB/Getting+started+with+LoopBack" class="external-link" rel="nofollow">Getting started with LoopBack</a>&nbsp;to build the example.</td>
+      <td>The basics of LoopBack. Follow along in&nbsp;<a href="http://docs.strongloop.com/display/LB/Getting-started-with-LoopBack" class="external-link" rel="nofollow">Getting started with LoopBack</a>&nbsp;to build the example.</td>
     </tr>
     <tr>
       <td><a href="https://github.com/strongloop/loopback-getting-started-intermediate" class="external-link" rel="nofollow">loopback-getting-started-intermediate</a></td>
-      <td>Full-stack example that builds on&nbsp;<code>loopback-getting-started</code>&nbsp;to demonstrate intermediate level features of LoopBack. Follow instructions in <a href="http://docs.strongloop.com/display/LB/Getting+started+part+II" class="external-link" rel="nofollow">Getting started part II</a>&nbsp;to build the example.</td>
+      <td>Full-stack example that builds on&nbsp;<code>loopback-getting-started</code>&nbsp;to demonstrate intermediate level features of LoopBack. Follow instructions in <a href="http://docs.strongloop.com/display/LB/Getting-started-part-II" class="external-link" rel="nofollow">Getting started part II</a>&nbsp;to build the example.</td>
     </tr>
     <tr>
       <td><a href="https://github.com/strongloop/loopback-example-mongodb" class="external-link" rel="nofollow">loopback-example-mongodb</a></td>

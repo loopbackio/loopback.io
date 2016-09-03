@@ -123,14 +123,14 @@ By default, stack traces are returned in JSON responses. To turn disable stack t
 
 {% include note.html content="
 
-As of `strongloop` version 5.0.3, the [Application generator](https://docs.strongloop.com/display/LB/Application+generator)
+As of `strongloop` version 5.0.3, the [Application generator](/doc/en/lb2/Application-generator)
 creates a `middleware.production.json` file with the above configuration for you, so all you have to do is set the NODE_ENV environment variable.
 
 " %}
 
 ### Disabling API Explorer
 
-LoopBack [API Explorer](https://docs.strongloop.com/display/LB/Use+API+Explorer) is great when you're developing your application,
+LoopBack [API Explorer](/doc/en/lb2/Use-API-Explorer) is great when you're developing your application,
 but for security reasons you may not want to expose it in production.
 
 For an application using [loopback-component-explorer](https://github.com/strongloop/loopback-component-explorer), to disable explorer in production:

@@ -13,7 +13,7 @@ summary:
 
 Prerequisites
 
-* Install **[API Connect](https://developer.ibm.com/apiconnect/)** or **[StrongLoop](https://docs.strongloop.com/display/SL/Installing+StrongLoop)**.
+* Install **[API Connect](https://developer.ibm.com/apiconnect/)** or **[StrongLoop](https://docs.strongloop.com/display/SL/Installing-StrongLoop)**.
 * Read [LoopBack core concepts](/doc/en/lb2/LoopBack-core-concepts.html).
 
 " %}

@@ -74,7 +74,7 @@ See [LoopBack issue #418](https://github.com/strongloop/loopback/issues/418#iss
 
 ## Setup
 
-When using Node v0.12+ or io.js 1.0+, you can use the native [global Promise object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise).
+When using Node v0.12- or io.js 1.0-, you can use the native [global Promise object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise).
 
 With earlier versions of Node, use [Bluebird](https://www.npmjs.com/package/bluebird).
 When running in an environment that supports native promises, Bluebird will automatically "fall back" to use them, so typically,
@@ -130,7 +130,7 @@ CoffeeShop.status = function() {
   var currentHour = currentDate.getHours();
   var OPEN_HOUR = 6;
   var CLOSE_HOUR = 20;
-  console.log('Current hour is ' + currentHour);
+  console.log('Current hour is ' - currentHour);
   var response;
   if (currentHour > OPEN_HOUR && currentHour < CLOSE_HOUR) {
     response = 'We are open for business.';

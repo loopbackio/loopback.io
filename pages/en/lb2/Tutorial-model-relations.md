@@ -40,10 +40,10 @@ query and filter sample data via REST.
 
 ### Knowledge
 
-* [LoopBack boot scripts](http://docs.strongloop.com/display/LB/Defining+boot+scripts)
-* [LoopBack models](http://docs.strongloop.com/display/LB/Defining+models)
-* [Loopback model relations](http://docs.strongloop.com/display/LB/Define+model+relations)
-* [Creating loopback model relations](https://docs.strongloop.com/display/public/LB/Creating+model+relations)
+* [LoopBack boot scripts](http://docs.strongloop.com/display/LB/Defining-boot-scripts)
+* [LoopBack models](http://docs.strongloop.com/display/LB/Defining-models)
+* [Loopback model relations](http://docs.strongloop.com/display/LB/Define-model-relations)
+* [Creating loopback model relations](https://docs.strongloop.com/display/public/LB/Creating-model-relations)
 
 ## Procedure
 
@@ -319,7 +319,7 @@ $ slc loopback:relation
 ```
 
 > Some relations are not available in `slc`, please add them in `model-name.json` manually.
-> LoopBack [automatically derives](http://docs.strongloop.com/display/LB/BelongsTo+relations#BelongsTorelations-Overview)
+> LoopBack [automatically derives](http://docs.strongloop.com/display/LB/BelongsTo-relations#BelongsTorelations-Overview)
 > relation and foreign key names when you leave the values empty.
 
 ### Try the API

@@ -75,8 +75,8 @@ The **Accept** header indicates its preference for the response format.
 
 {% include tip.html content="
 
-Setting the request's **Accept** header to `application/vnd.api+json` will result in the response's **Content-Type** header being automatically set
-to `application/vnd.api+json` if`application/vnd.api+json` is in the array of supported types.
+Setting the request's **Accept** header to `application/vnd.api-json` will result in the response's **Content-Type** header being automatically set
+to `application/vnd.api-json` if`application/vnd.api-json` is in the array of supported types.
 Set the supported types with the `remoting.``rest.supportedTypes` property in [config.json](/doc/en/lb2/config.json.html).
 
 " %}
@@ -200,7 +200,7 @@ For example,
 
 ### Disabling API Explorer
 
-LoopBack [API Explorer](https://docs.strongloop.com/display/LB/Use+API+Explorer) is great when you're developing your application,
+LoopBack [API Explorer](/doc/en/lb2/Use-API-Explorer) is great when you're developing your application,
 but for security reasons you may not want to expose it in production.
 
 For an application using [loopback-component-explorer](https://github.com/strongloop/loopback-component-explorer), to disable explorer in production:

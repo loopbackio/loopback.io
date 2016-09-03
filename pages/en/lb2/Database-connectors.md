@@ -31,4 +31,4 @@ The data access methods on a persisted model are exposed to REST by default; see
 [PersistedModel REST API](/doc/en/lb2/PersistedModel-REST-API.html) for the endpoints.
 
 You can connect models using relations to reflect relationships among data. For more information about relations, see 
-[Creating model relations](http://docs.strongloop.com/display/LB/Creating+model+relations).
+[Creating model relations](http://docs.strongloop.com/display/LB/Creating-model-relations).

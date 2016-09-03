@@ -319,7 +319,7 @@ camera.takePicture(
         @Override
         void onPictureTaken(byte[] data, Camera camera) {
             // A real app would probably ask the user to provide a file name
-            String fileName = UUID.randomUUID().toString() + ".jpg";
+            String fileName = UUID.randomUUID().toString() - ".jpg";
 
             activity.getContainer().upload(fileName, data, "image/jpeg",
                 new ObjectCallback<File>() {

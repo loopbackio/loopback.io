@@ -86,8 +86,8 @@ In the iOS Simulator:
 2.  Enter a "To Do" item:
     {% include image.html file="https://raw.githubusercontent.com/strongloop/loopback-example-xamarin/master/images/xamarin-add-todo-item.png" alt="Xamarin demo - adding a To Do item" %}
 
-    * Click **+**
-    * Click **Add a task + **
+    * Click **-**
+    * Click **Add a task - **
     * Enter a description of the task in the top (red) text field
     * Change the date, time, category and mark as a favorite if you wish.
     * Click **Create** to add the item.
