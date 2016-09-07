@@ -21,19 +21,14 @@ The memory connector supports:
   See [GeoPoint class](https://docs.strongloop.com/display/TRASH/GeoPoint-class) for more information on geo-filtering.
 
 {% include important.html content="
+The memory connector is designed for development and testing of a single-process application without setting up a database.  It cannot be used in a cluster as the worker processes will have their own isolated data not shared in the cluster.
 
-Limitations
-
-The memory connector is designed for development and testing of a single-process application without setting up a database.
-It cannot be used in a cluster as the worker processes will have their own isolated data not shared in the cluster.
-
-You can persist data between application restarts using the `file` property. See [Data persistence](/doc/en/lb2/Memory-connector.html) for more information.
-
+You can persist data between application restarts using the `file` property. See [Data persistence](Memory-connector.html) for more information.
 " %}
 
 ## Creating a data source
 
-By default, an application created with the [Application generator](/doc/en/lb2/Application-generator.html) has a memory data source defined; for example:
+By default, an application created with the [Application generator](/doc/{{page.lang}}/lb2/Application-generator.html) has a memory data source defined; for example:
 
 **/server/datasources.json**
 
@@ -44,7 +39,7 @@ By default, an application created with the [Application generator](/doc/en/lb2/
 }
 ```
 
-Use the [Data source generator](/doc/en/lb2/Data-source-generator.html) to add a new memory data source to your application.
+Use the [Data source generator](/doc/{{page.lang}}/lb2/Data-source-generator.html) to add a new memory data source to your application.
 
 ### Memory connector properties
 
@@ -77,10 +72,8 @@ Use the [Data source generator](/doc/en/lb2/Data-source-generator.html) to add
 </table>
 
 {% include important.html content="
-
 If you specify the file property, the connector will save data there that will persist when you restart the application.
 Otherwise, the memory connector does not persist data after an application stops.
-
 " %}
 
 ## Data persistence

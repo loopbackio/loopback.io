@@ -11,8 +11,8 @@ summary:
 
 **See also**:
 
-* [Authentication, authorization, and permissions](/doc/en/lb2/Authentication-authorization-and-permissions.html)
-* [Third-party login using Passport](/doc/en/lb2/Third-party-login-using-Passport.html)
+* [Authentication, authorization, and permissions](/doc/{{page.lang}}/lb2/Authentication-authorization-and-permissions.html)
+* [Third-party login using Passport](/doc/{{page.lang}}/lb2/Third-party-login-using-Passport.html)
 
 The LoopBack User model provides methods to register new users and confirm their email addresses.
 You can also use the loopback-component-passport module to integrate login with Facebook, Google, and other third-party providers.
@@ -34,17 +34,8 @@ module.exports = function(app) {
   //...
 ```
 
-{% include note.html content="
-
-Passwords are automatically hashed when persisted to the data store.
-
-" %}
-
-{% include note.html content="
-
-You can do this in a [boot script](/doc/en/lb2/Defining-boot-scripts.html) as shown above.
-
-" %}
+{% include note.html content="Passwords are automatically hashed when persisted to the data store..
+You can do this in a [boot script](Defining-boot-scripts.html) as shown above." %}
 
 Over REST, use the `POST /users` endpoint to create a new user instance, for example:
 
@@ -56,13 +47,13 @@ curl -X POST -H "Content-Type:application/json"         \
 http://localhost:3000/api/users
 ```
 
-For more information, see [User REST API](/doc/en/lb2/User-REST-API.html#UserRESTAPI-Loginuser).
+For more information, see [User REST API](/doc/{{page.lang}}/lb2/User-REST-API.html#UserRESTAPI-Loginuser).
 
 ### Adding other registration constraints
 
 Typically, you might want to add methods as part of the registration process,
 for example to see if a given username is available or if an email address is already registered.
-A good way to do this is to add methods as beforeRemote hooks on the User object. See [Remote hooks](/doc/en/lb2/Remote-hooks.html) for more information.
+A good way to do this is to add methods as beforeRemote hooks on the User object. See [Remote hooks](/doc/{{page.lang}}/lb2/Remote-hooks.html) for more information.
 
 ### Verifying email addresses
 
@@ -70,8 +61,8 @@ A good way to do this is to add methods as beforeRemote hooks on the User objec
 
 More information on Email model:
 
-* [Using the Email model](/doc/en/lb2/Using-built-in-models.html#Usingbuilt-inmodels-Emailmodel)
-* [Email connector](/doc/en/lb2/Email-connector.html)
+* [Using the Email model](/doc/{{page.lang}}/lb2/Using-built-in-models.html#Usingbuilt-inmodels-Emailmodel)
+* [Email connector](/doc/{{page.lang}}/lb2/Email-connector.html)
 
 Typically, an application will require users to verify their email addresses before being able to login.
 This will send an email to the user containing a link to verify their address.
@@ -95,15 +86,11 @@ For example:
 ```
 
 Over REST, use the `GET /users/confirm` endpoint to verify a user's email address.
-For details, see [User REST API](/doc/en/lb2/User-REST-API.html#UserRESTAPI-Confirmemailaddress).
+For details, see [User REST API](/doc/{{page.lang}}/lb2/User-REST-API.html#UserRESTAPI-Confirmemailaddress).
 
-This example creates a[remote hook](/doc/en/lb2/Remote-hooks.html) on the User model executed after the `create()` method is called.
+This example creates a[remote hook](/doc/{{page.lang}}/lb2/Remote-hooks.html) on the User model executed after the `create()` method is called.
 
-{% include important.html content="
-
-You must setup a `User` model as well as a `Mail` datasource before using the example below.
-
-" %}
+{% include important.html content="You must setup a `User` model as well as a `Mail` datasource before using the example below." %}
 
 **/common/models/user.js**
 
@@ -146,11 +133,7 @@ module.exports = function(user) {
 For a complete example, see [user.js](https://github.com/strongloop/loopback-faq-user-management/blob/master/common/models/user.js)
 in [loopback-example-user-management](https://github.com/strongloop/loopback-example-user-management).
 
-{% include note.html content="
-
-Naming your model with camel-case `MyUser` will create files in \"lisp case\" `/common/models/my-user.js` - `/common/models/my-user.json`
-
-" %}
+{% include note.html content="Naming your model with camel-case `MyUser` will create files in \"lisp case\" `/common/models/my-user.js` - `/common/models/my-user.json`" %}
 
 Then, in your view file (for example, an [EJS template](http://www.embeddedjs.com/)):
 
@@ -169,6 +152,6 @@ Use the LoopBack Passport component (loopback-component-passport) to enable use
 * Google
 * Twitter
 
-For more information, see [Third-party login using Passport](/doc/en/lb2/Third-party-login-using-Passport.html).
+For more information, see [Third-party login using Passport](/doc/{{page.lang}}/lb2/Third-party-login-using-Passport.html).
 
 <div class="sl-hidden"><strong>REVIEW COMMENT from Rand</strong><br>Ideally, we would explain basic tasks here. How do you set up 3d-party reg/login?</div>

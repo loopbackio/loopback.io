@@ -13,7 +13,7 @@ The email connector is built in to LoopBack, so you don't need to install it.
 
 ## Creating an email data source
 
-Create a new email data source with the [data source generator](/doc/en/lb2/Data-source-generator.html):
+Create a new email data source with the [data source generator](/doc/{{page.lang}}/lb2/Data-source-generator.html):
 
 ```shell
 $ apic create --type datasource

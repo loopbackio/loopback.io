@@ -37,9 +37,6 @@ is now exposed at:
 `GET http://localhost:3000/api/v2/Users`
 
 {% include important.html content="
-
 Changing the API root in this way doesn't affect routes set in 
-[request-handling middleware](/doc/en/lb2/Defining-middleware.html#Definingmiddleware-Dynamicrequest-handlingmiddleware) or the route to
-[API Explorer](https://docs.strongloop.com/display/APIC/Use-API-Explorer) itself, which remains `http://localhost:3000/explorer`.
-
-" %}
+[request-handling middleware](Defining-middleware.html#request-handling-middleware) or the route to
+[API Explorer](Use-API-Explorer.html) itself, which remains `http://localhost:3000/explorer`. " %}

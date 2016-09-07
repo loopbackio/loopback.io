@@ -9,20 +9,14 @@ permalink: /doc/en/lb2/Add-a-static-web-page.html
 summary:
 ---
 
-{% include important.html content="
-**Prerequisite**: Install StrongLoop software as described in [Installing StrongLoop](/doc/en/lb2/Installing-StrongLoop).
-
-**Recommended**: Read [LoopBack core concepts](/doc/en/lb2/LoopBack-core-concepts)." %}
+{% include content/gs-prereqs.html lang=page.lang %}
 
 LoopBack leverages [Express middleware](http://expressjs.com/guide/using-middleware.html) to make it easy to serve up static content such as web pages.
 
 {% include note.html content="
+If you followed the previous steps in the tutorial, skip down to [Introduction to middleware](#introduction-to-middleware).
 
-If you followed the previous steps in the tutorial, skip down to [Introduction to middleware](/doc/en/lb2/Add-a-static-web-page.html).
-
-If you're just jumping in, follow the steps below to catch up...
-
-" %}
+If you're just jumping in, follow the steps below to catch up..." %}
 
 Get the app (in the state following the last article) from GitHub and install all its dependencies:
 
@@ -36,10 +30,7 @@ $ npm install
 ## Introduction to middleware
 
 {% include note.html content="
-
-LoopBack is built on [Express](http://expressjs.com/), one of the most popular Node application frameworks.  The top-level LoopBack `app` object inherits all the methods and properties of the Express app object. See [Working with LoopBack objects](/doc/en/lb2/Working-with-LoopBack-objects).
-
-" %}
+LoopBack is built on [Express](http://expressjs.com/), one of the most popular Node application frameworks.  The top-level LoopBack `app` object inherits all the methods and properties of the Express app object. See [Working with LoopBack objects](/doc/en/lb2/Working-with-LoopBack-objects)." %}
 
 Before continuing, you need to understand a basic concept that LoopBack inherits from Express: middleware.  
 
@@ -52,9 +43,9 @@ _Middleware_ is simply a JavaScript function with access to the request object 
 
 LoopBack middleware is exactly like [Express middleware](http://expressjs.com/guide/using-middleware.html), except that LoopBack adds the concept of _phases_, that enables you to easily set the order in which middleware is called.  This avoids one of the tricky aspects of Express: making sure middleware gets executed when it should be. 
 
-When you create an application with the [Application generator](/doc/en/lb2/Application-generator), `slc loopback`, it creates a `server/middleware.json` file that specifies what middleware is executed in which phase.  Registering new middleware is as simple as editing this JSON file.  Expand this code to see what it looks like:
+When you create an application with the [Application generator](/doc/{{page.lang}}/lb2/Application-generator), it creates a `server/middleware.json` file that specifies what middleware is executed in which phase.  Registering new middleware is as simple as editing this JSON file:
 
-**server/middleware.json**  Expand source
+**server/middleware.json**  
 
 ```js
 {
@@ -89,7 +80,7 @@ When you create an application with the [Application generator](/doc/en/lb2/Appl
 }
 ```
 
-Each of the top-level keys in `middleware.json` defines a middleware phase: `initial`, `session`, `auth`, and so on, ending with `final`.  There are also modifiers to register middleware `before` and `after` a given phase. There's a bit more to it, but that covers the basics.  See [Defining middleware](/doc/en/lb2/Defining-middleware) for all the details.
+Each of the top-level keys in `middleware.json` defines a middleware phase: `initial`, `session`, `auth`, and so on, ending with `final`.  There are also modifiers to register middleware `before` and `after` a given phase. There's a bit more to it, but that covers the basics.  See [Defining middleware](/doc/{{page.lang}}/lb2/Defining-middleware) for all the details.
 
 ## Change or modify the default root route handler
 
@@ -143,7 +134,7 @@ Add the following:
 ...
 ```
 
-These lines define _[static middleware](/doc/en/lb2/Defining-middleware#Definingmiddleware-Staticmiddleware)_ that makes the application serve files in the `/client` directory as static content.  The `$!` characters indicate that the path is relative to the location of `middleware.json`.
+These lines define _[static middleware](/doc/{{page.lang}}/lb2/Defining-middleware#Definingmiddleware-Staticmiddleware)_ that makes the application serve files in the `/client` directory as static content.  The `$!` characters indicate that the path is relative to the location of `middleware.json`.
 
 ## Add an HTML file
 
@@ -171,4 +162,4 @@ When you load [http://0.0.0.0:3000/](http://0.0.0.0:3000/) now instead of the 
 
 {% include image.html file="5570648.png" alt="" %}
 
-Next: In [Add a custom Express route](/doc/en/lb2/Add-a-custom-Express-route.html), you'll add a simple route handler in the same way you would in an Express application.
+Next: In [Add a custom Express route](/doc/{{page.lang}}/lb2/Add-a-custom-Express-route.html), you'll add a simple route handler in the same way you would in an Express application.

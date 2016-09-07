@@ -18,7 +18,7 @@ If a LoopBack app is running on `localhost` at port `3000`, then by default API 
 
 " %}
 
-All of the endpoints in the table below are inherited from [PersistedModel REST API](/doc/en/lb2/PersistedModel-REST-API.html), except for the following:
+All of the endpoints in the table below are inherited from [PersistedModel REST API](/doc/{{page.lang}}/lb2/PersistedModel-REST-API.html), except for the following:
 
 **Quick reference**
 
@@ -158,7 +158,7 @@ All of the endpoints in the table below are inherited from [PersistedModel REST
       <td>GET</td>
       <td><span>Deny</span></td>
       <td>
-        <p><a href="http://docs.strongloop.com/display/DOC/Model-REST-API#ModelRESTAPI-Getinstancecount" class="external-link" rel="nofollow">Return number of user instances</a>&nbsp;that match specified where clause. <span>Inherited from <a href="/doc/en/lb2/PersistedModel-REST-API.html">PersistedModel API</a><span>.</span></span>
+        <p><a href="http://apidocs.strongloop.com/loopback/#persistedmodel-count" class="external-link" rel="nofollow">Return number of user instances</a>&nbsp;that match specified where clause. <span>Inherited from <a href="http://apidocs.strongloop.com/loopback/#persistedmodel">PersistedModel API</a><span>.</span></span>
         </p>
       </td>
       <td>"Where" filter specified in query parameter</td>
@@ -168,7 +168,7 @@ All of the endpoints in the table below are inherited from [PersistedModel REST
       <td>GET</td>
       <td><span>Deny</span></td>
       <td>
-        <p><a href="http://docs.strongloop.com/display/DOC/Model-REST-API#ModelRESTAPI-Checkinstanceexistence" class="external-link" rel="nofollow">Check instance existence</a>: Return true if specified user ID exists. <span>Inherited from <a href="/doc/en/lb2/PersistedModel-REST-API.html">PersistedModel API</a><span>.</span></span>
+        <p>Check instance existence: Return true if specified user ID exists. <span>Inherited from <a href="/doc/en/lb2/PersistedModel-REST-API.html">PersistedModel API</a><span>.</span></span>
         </p>
       </td>
       <td>
@@ -184,7 +184,7 @@ All of the endpoints in the table below are inherited from [PersistedModel REST
       <td>GET</td>
       <td><span>Deny</span></td>
       <td>
-        <p><a href="http://docs.strongloop.com/display/DOC/Model-REST-API#ModelRESTAPI-Findfirstinstance" class="external-link" rel="nofollow">Find first user instance</a> that matches specified filter. <span>Inherited from <a href="/doc/en/lb2/PersistedModel-REST-API.html">PersistedModel API</a><span>.</span></span>
+        <p>Find first user instance that matches specified filter. <span>Inherited from <a href="/doc/en/lb2/PersistedModel-REST-API.html">PersistedModel API</a><span>.</span></span>
         </p>
       </td>
       <td>Same as <a href="http://docs.strongloop.com/display/DOC/Model-REST-API#ModelRESTAPI-Findmatchinginstances" class="external-link" rel="nofollow">Find matching instances</a>.</td>
@@ -338,4 +338,4 @@ User.on('resetPasswordRequest', function (info) {
 });
 ```
 
-See also [Verifying email addresses](/doc/en/lb2/Registering-users.html#Registeringusers-Verifyingemailaddresses) (Registering users).
+See also [Verifying email addresses](/doc/{{page.lang}}/lb2/Registering-users.html#Registeringusers-Verifyingemailaddresses) (Registering users).

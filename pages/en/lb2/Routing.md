@@ -58,10 +58,7 @@ The extended routing details in LoopBack is best understood by understanding the
 The LoopBack middleware chain is composed of middleware added to the chain in the following order, and the request passes through them in the given order.
 
 {% include note.html content="
-
-Except 14, 15, and 16, the listed items refer to [LoopBack middleware](/doc/en/lb2/Defining-middleware.html) phases.
-
-" %}
+Except 14, 15, and 16, the listed items refer to [LoopBack middleware](Defining-middleware.html) phases." %}
 
 1.  initial:before
 2.  initial
@@ -77,8 +74,8 @@ Except 14, 15, and 16, the listed items refer to [LoopBack middleware](/doc/en/l
 12.  parse:after
 13.  routes:before
 14.  [Express middleware](http://expressjs.com/guide/writing-middleware.html)
-15.  [Components](/doc/en/lb2/LoopBack-components.html)
-16.  [Boot scripts](/doc/en/lb2/Defining-boot-scripts.html)
+15.  [Components](/doc/{{page.lang}}/lb2/LoopBack-components.html)
+16.  [Boot scripts](/doc/{{page.lang}}/lb2/Defining-boot-scripts.html)
 17.  routes
 18.  routes:after
 19.  files:before
@@ -95,26 +92,23 @@ As evident from the list above, LoopBack takes control of the loading order of t
 middleware over those loaded using Express' interface `app.use()`, components, or boot scripts.
 
 {% include note.html content="
-
 If you add middleware on the `route`or `route:after` phase, it will not execute _after_ the route is matched.
-Instead, it will be ignored because the route was already matched.
+Instead, it will be ignored because the route was already matched." %}
 
-" %}
-
-The middleware to be loaded during the middleware phases are configured in the [middleware.json](/doc/en/lb2/middleware.json.html) file of the app.
+The middleware to be loaded during the middleware phases are configured in the [middleware.json](/doc/{{page.lang}}/lb2/middleware.json.html) file of the app.
 The order of the phases in the file are semantic, and cannot be listed randomly.
 
-LoopBack also supports [custom phases](/doc/en/lb2/Defining-middleware.html#Definingmiddleware-Addingacustomphase).
+LoopBack also supports [custom phases](/doc/{{page.lang}}/lb2/Defining-middleware.html#Definingmiddleware-Addingacustomphase).
 Custom phases can be defined in any position of the middleware chain, and maybe be used to prioritize over LoopBack's built-in middleware phases.
 
 ### Loading middleware
 
-LoopBack middleware are declaratively loaded using the [middleware.json](/doc/en/lb2/middleware.json.html) file,
+LoopBack middleware are declaratively loaded using the [middleware.json](/doc/{{page.lang}}/lb2/middleware.json.html) file,
 or imperatively using the [app.middleware()](https://apidocs.strongloop.com/loopback/#app-middleware) method.
 
 Express middleware can be loaded in the `server.js` file using [`app.use()`](http://expressjs.com/4x/api.html#app.use)
 or a [route definition](http://expressjs.com/4x/api.html#app.METHOD).
 
-[LoopBack components](/doc/en/lb2/LoopBack-components.html) can load middleware using the reference to the LoopBack application instance.
+[LoopBack components](/doc/{{page.lang}}/lb2/LoopBack-components.html) can load middleware using the reference to the LoopBack application instance.
 
-[Boot scripts](/doc/en/lb2/Defining-boot-scripts.html) can load middleware using the reference to the LoopBack application instance.
+[Boot scripts](/doc/{{page.lang}}/lb2/Defining-boot-scripts.html) can load middleware using the reference to the LoopBack application instance.

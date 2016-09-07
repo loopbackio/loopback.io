@@ -14,9 +14,9 @@ The application you'll create is in the loopback-getting-started GitHub reposito
 
 You can run through the steps to create the app and get a sense for some of the things LoopBack can do, or just skip to the one that interests you:
 
-- [Create a simple API](/doc/en/lb2/Create-a-simple-API.html)
-- [Use API Explorer](/doc/en/lb2/Use-API-Explorer.html)
-- [Connect your API to a data source](/doc/en/lb2/Connect-your-API-to-a-data-source.html)
-- [Extend your API](/doc/en/lb2/Extend-your-API.html)
-- [Add a static web page](/doc/en/lb2/Add-a-static-web-page.html)
-- [Add a custom Express route](/doc/en/lb2/Add-a-custom-Express-route.html)
+- [Create a simple API](/doc/{{page.lang}}/lb2/Create-a-simple-API.html)
+- [Use API Explorer](/doc/{{page.lang}}/lb2/Use-API-Explorer.html)
+- [Connect your API to a data source](/doc/{{page.lang}}/lb2/Connect-your-API-to-a-data-source.html)
+- [Extend your API](/doc/{{page.lang}}/lb2/Extend-your-API.html)
+- [Add a static web page](/doc/{{page.lang}}/lb2/Add-a-static-web-page.html)
+- [Add a custom Express route](/doc/{{page.lang}}/lb2/Add-a-custom-Express-route.html)

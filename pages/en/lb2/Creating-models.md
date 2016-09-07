@@ -14,19 +14,19 @@ summary:
 You can create LoopBack models in various ways, depending on what kind of data source the model is based on.
 You can create models:
 
-* [With the LoopBack model generator](/doc/en/lb2/Using-the-model-generator.html).
-* [From an existing relational database](/doc/en/lb2/Discovering-models-from-relational-databases.html) using _model discovery_.
+* [With the LoopBack model generator](/doc/{{page.lang}}/lb2/Using-the-model-generator.html).
+* [From an existing relational database](/doc/{{page.lang}}/lb2/Discovering-models-from-relational-databases.html) using _model discovery_.
   Then you can keep your model synchronized with the database using LoopBack's 
-  [schema / model synchronization](/doc/en/lb2/Creating-a-database-schema-from-models.html) API.
-* [By instance introspection](/doc/en/lb2/Creating-models-from-unstructured-data.html) for free-form data in NoSQL databases or REST APIs.
+  [schema / model synchronization](/doc/{{page.lang}}/lb2/Creating-a-database-schema-from-models.html) API.
+* [By instance introspection](/doc/{{page.lang}}/lb2/Creating-models-from-unstructured-data.html) for free-form data in NoSQL databases or REST APIs.
 
 All three of these methods create a 
-[Model definition JSON file](/doc/en/lb2/Model-definition-JSON-file.html) that defines your model in LoopBack,
+[Model definition JSON file](/doc/{{page.lang}}/lb2/Model-definition-JSON-file.html) that defines your model in LoopBack,
 by convention in a LoopBack project's `common/models` directory; for example, `common/models/account.json`.
 
 You can also create and customize models programmatically using the 
 [LoopBack API](http://apidocs.strongloop.com/loopback/#loopback-createmodel), or by manually editing the 
-[model definition JSON file](/doc/en/lb2/Model-definition-JSON-file.html).
+[model definition JSON file](/doc/{{page.lang}}/lb2/Model-definition-JSON-file.html).
 In most cases, you shouldn't need to use those techniques to create models, but you generally will use them to modify and customize models.
 
 ## Getting a reference to a model in JavaScript

@@ -59,20 +59,15 @@ See [PersistedModel API documentation](http://apidocs.strongloop.com/loopback/#p
 
 See the following articles for more information:
 
-* [Creating, updating, and deleting data](/doc/en/lb2/Creating-updating-and-deleting-data.html)
-* [Querying data](/doc/en/lb2/Querying-data.html)
-  * [Fields filter](/doc/en/lb2/Fields-filter.html)
-  * [Include filter](/doc/en/lb2/Include-filter.html)
-  * [Limit filter](/doc/en/lb2/Limit-filter.html)
-  * [Order filter](/doc/en/lb2/Order-filter.html)
-  * [Skip filter](/doc/en/lb2/Skip-filter.html)
-  * [Where filter](/doc/en/lb2/Where-filter.html)
-* [Using database transactions](/doc/en/lb2/Using-database-transactions.html)
-* [Realtime server-sent events](/doc/en/lb2/Realtime-server-sent-events.html)
+* [Creating, updating, and deleting data](/doc/{{page.lang}}/lb2/Creating-updating-and-deleting-data.html)
+* [Querying data](/doc/{{page.lang}}/lb2/Querying-data.html)
+  * [Fields filter](/doc/{{page.lang}}/lb2/Fields-filter.html)
+  * [Include filter](/doc/{{page.lang}}/lb2/Include-filter.html)
+  * [Limit filter](/doc/{{page.lang}}/lb2/Limit-filter.html)
+  * [Order filter](/doc/{{page.lang}}/lb2/Order-filter.html)
+  * [Skip filter](/doc/{{page.lang}}/lb2/Skip-filter.html)
+  * [Where filter](/doc/{{page.lang}}/lb2/Where-filter.html)
+* [Using database transactions](/doc/{{page.lang}}/lb2/Using-database-transactions.html)
+* [Realtime server-sent events](/doc/{{page.lang}}/lb2/Realtime-server-sent-events.html)
 
-{% include warning.html content="
-
-Methods of models in the [AngularJS client](/doc/en/lb2/AngularJS-JavaScript-SDK.html) have a different signature than those of the Node API.
-For more information, see [AngularJS SDK API](http://apidocs.strongloop.com/loopback-sdk-angular/).
-
-" %}
+{% include content/angular-methods-caveat.html lang=page.lang %}

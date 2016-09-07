@@ -11,10 +11,10 @@ summary:
 
 **See also**:
 
-* [Connecting to MySQL](/doc/en/lb2/Connecting-to-MySQL.html)
+* [Connecting to MySQL](/doc/{{page.lang}}/lb2/Connecting-to-MySQL.html)
 * [loopback-example-database](https://github.com/strongloop/loopback-example-database/tree/mysql)
-* [Discovering models from relational databases](/doc/en/lb2/Discovering-models-from-relational-databases.html)
-* [Database discovery API](https://docs.strongloop.com/display/APIC/Database-discovery-API) 
+* [Discovering models from relational databases](/doc/{{page.lang}}/lb2/Discovering-models-from-relational-databases.html)
+* [Database discovery API](/doc/{{page.lang}}/lb2/Database-discovery-API.html) 
 
 {% include note.html content="
 
@@ -30,11 +30,11 @@ In your application root directory, enter this command to install the connector:
 $ npm install loopback-connector-mysql --save
 ```
 
-This will install the module from npm and add it as a dependency to the application's [package.json](http://docs.strongloop.com/display/LB/package.json) file.
+This will install the module from npm and add it as a dependency to the application's [package.json](/doc/{{page.lang}}/lb2/package.json.html) file.
 
 ## Creating a MySQL data source
 
-Use the [Data source generator](/doc/en/lb2/Data-source-generator.html) to add a MySQL data source to your application.
+Use the [Data source generator](/doc/{{page.lang}}/lb2/Data-source-generator.html) to add a MySQL data source to your application.
 The entry in the application's `/server/datasources.json` will look like this:
 
 **/server/datasources.json**
@@ -103,7 +103,7 @@ The `collation` value will also be used to derive the connection charset.
 
 ## Type mappings
 
-See [LoopBack types](/doc/en/lb2/LoopBack-types.html) for details on LoopBack's data types.
+See [LoopBack types](/doc/{{page.lang}}/lb2/LoopBack-types.html) for details on LoopBack's data types.
 
 ### LoopBack to MySQL types
 
@@ -290,5 +290,5 @@ MOOD('sad'); // 'sad'
 
 LoopBack provides a unified API to create models based on schema and tables in relational databases.
 The same discovery API is available when using connectors for Oracle, MySQL, PostgreSQL, and SQL Server.
-For more information, see [Discovering models from relational databases](/doc/en/lb2/Discovering-models-from-relational-databases.html) and 
+For more information, see [Discovering models from relational databases](/doc/{{page.lang}}/lb2/Discovering-models-from-relational-databases.html) and 
 [Database discovery API](https://docs.strongloop.com/display/APIC/Database-discovery-API).

@@ -12,7 +12,7 @@ summary:
 **See also**:
 
 * [Storage component API docs](https://apidocs.strongloop.com/loopback-component-storage/)
-* [Storage component REST API](/doc/en/lb2/Storage-component-REST-API.html)
+* [Storage component REST API](/doc/{{page.lang}}/lb2/Storage-component-REST-API.html)
 
 ## Overview
 

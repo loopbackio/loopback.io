@@ -11,8 +11,8 @@ summary:
 
 **See also**:
 
-* [Adding logic to models](/doc/en/lb2/Adding-logic-to-models.html)
-* [Defining middleware](/doc/en/lb2/Defining-middleware.html)
+* [Adding logic to models](/doc/{{page.lang}}/lb2/Adding-logic-to-models.html)
+* [Defining middleware](/doc/{{page.lang}}/lb2/Defining-middleware.html)
 
 ## Overview
 
@@ -26,7 +26,7 @@ When an application starts, the bootstrapper:
 * Runs boot scripts in the `/server/boot` directory.
 
 The loopback-boot module exports a `boot()` function that initializes an application.
-For example, from the standard scaffolded [server.js](/doc/en/lb2/server.js.html) script:
+For example, from the standard scaffolded [server.js](/doc/{{page.lang}}/lb2/server.js.html) script:
 
 **/server/server.js**
 
@@ -46,11 +46,8 @@ boot(app, __dirname, function(err) {
 See [loopback-boot API docs](http://apidocs.strongloop.com/loopback-boot/) for details. 
 
 {% include note.html content="
-
-If you create your application with the [application generator](/doc/en/lb2/Application-generator.html) ,
-then you don't need to do anything to bootstrap your application--the above code is automatically scaffolded for you!
-
-" %}
+If you create your application with the [application generator](pplication-generator.html) ,
+then you don't need to do anything to bootstrap your application--the above code is automatically scaffolded for you!" %}
 
 ### Using boot scripts
 
@@ -58,12 +55,12 @@ Use _boot scripts_ to perform custom initialization in addition to that perfor
 When an application starts, LoopBack loads all the scripts in the `server/boot` directory.
 By default, LoopBack loads boot scripts in alphabetical order.
 You can customize the boot script load order using the options argument of [`boot()`](http://apidocs.strongloop.com/loopback-boot/#boot).
-See [Boot script loading order](/doc/en/lb2/Defining-boot-scripts.html) for details.
+See [Boot script loading order](/doc/{{page.lang}}/lb2/Defining-boot-scripts.html) for details.
 
 ## Predefined boot scripts
 
 The standard scaffolded LoopBack application created by the 
-[application generator](/doc/en/lb2/Application-generator.html) contains the following standard boot scripts (in `/server/boot`) that performs basic initialization:
+[application generator](/doc/{{page.lang}}/lb2/Application-generator.html) contains the following standard boot scripts (in `/server/boot`) that performs basic initialization:
 
 * `root.js` - Binds [`loopback.status()`](http://apidocs.strongloop.com/loopback/#loopback-status) middleware at the root endpoint ("/") to provide basic status information.
 
@@ -71,20 +68,19 @@ The standard scaffolded LoopBack application created by the 
 
 Prior to generator-loopback v. 1.12, the application generator created two additional boot scripts, but this functionality is now handled in middleware:
 
-* `explorer.js` - Enables [API Explorer](https://docs.strongloop.com/display/APIC/Use-API-Explorer). 
+* `explorer.js` - Enables [API Explorer](Use-API-Explorer.html). 
 * `rest-api.js` - Exposes the application's models over REST using [`loopback.rest()`](http://apidocs.strongloop.com/loopback/#loopback-rest) middleware.
 
 The API Connect LoopBack generator does not create the boot script `authentication.js` that enables authentication for the application by calling
 [`app.enableAuth()`](http://apidocs.strongloop.com/loopback/#app-enableauth).
 To enable user model authentication you should add this script (or the equivalent) yourself.
-
 " %}
 
 ## Using the boot script generator
 
 In addition to the predefined boot scripts, you can define custom boot scripts to perform your own logic when an application starts.
 
-Use the [boot script generator](/doc/en/lb2/Boot-script-generator.html), to quickly generate boot script templates.
+Use the [boot script generator](/doc/{{page.lang}}/lb2/Boot-script-generator.html), to quickly generate boot script templates.
 Depending on how you respond to the generator's prompts, it will generate a template for either a synchronous or asynchronous boot script:
 
 **Synchronous boot script template**
@@ -155,11 +151,7 @@ An asynchronous boot script must export a function that takes two arguments:
 1.  The application object, `app`. This object enables you to access system-defined variables and configurations. 
 2.  A callback function that enables you to time your response according to your application logic.
 
-{% include important.html content="
-
-You must call the callback function when the script is finished to pass control back to the application.
-
-" %}
+{% include important.html content="You must call the callback function when the script is finished to pass control back to the application." %}
 
 For example, this boot script prints "hello world" and triggers the callback function after three seconds (3000 milliseconds).
 
@@ -243,10 +235,8 @@ Specify the full directory path to each script.
 NOTE: You can also specify a relative directory path.
 
 {% include important.html content="
-
 Using the technique shown above, the application will still run all the boot scripts in `/server/boot`
 in alphabetical order (unless you move or delete them) after your custom-ordered boot scripts specified in `bootScripts`.
-
 " %}
 
 If desired, you can also specify one or more directories in the `bootDirs` property, and the application will run scripts in that directory

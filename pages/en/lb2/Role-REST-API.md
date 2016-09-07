@@ -9,7 +9,7 @@ permalink: /doc/en/lb2/Role-REST-API.html
 summary:
 ---
 
-All of the endpoints in the Role REST API are inherited from the generic [PersistedModel REST API](/doc/en/lb2/PersistedModel-REST-API.html).
+All of the endpoints in the Role REST API are inherited from the generic [PersistedModel REST API](/doc/{{page.lang}}/lb2/PersistedModel-REST-API.html).
 The reference is provided here for convenience.
 
 **Quick reference**

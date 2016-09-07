@@ -17,12 +17,12 @@ For example, in an application with assemblies and parts, where each assembly ha
 ## Defining a hasAndBelongsToMany relation
 
 Use `apic loopback:relation` to create a relation between two models. The tool will prompt you to enter the name of the model, the name of related model, and other required information.
-The tool will then modify the [model definition JSON file](/doc/en/lb2/Model-definition-JSON-file.html) (for example, `common/models/customer.json`) accordingly.
+The tool will then modify the [model definition JSON file](/doc/{{page.lang}}/lb2/Model-definition-JSON-file.html) (for example, `common/models/customer.json`) accordingly.
 
 Use `slc loopback:relation` to create a relation between two models. The tool will prompt you to enter the name of the model, the name of related model, and other required information.
-The tool will then modify the [model definition JSON file](/doc/en/lb2/Model-definition-JSON-file.html) (for example, `common/models/customer.json`) accordingly.
+The tool will then modify the [model definition JSON file](/doc/{{page.lang}}/lb2/Model-definition-JSON-file.html) (for example, `common/models/customer.json`) accordingly.
 
-For more information, see [Relation generator](/doc/en/lb2/Relation-generator.html).
+For more information, see [Relation generator](/doc/{{page.lang}}/lb2/Relation-generator.html).
 
 {% include image.html file="9830483.png" alt="" %}
 

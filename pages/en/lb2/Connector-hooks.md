@@ -11,11 +11,11 @@ summary:
 
 **See also**:
 
-* [Remote methods](/doc/en/lb2/Remote-methods.html)
-* [Remote hooks](/doc/en/lb2/Remote-hooks.html)
-* [Operation hooks](/doc/en/lb2/Operation-hooks.html)
-* [Model hooks](/doc/en/lb2/Model-hooks.html)
-* [Tutorial: Adding application logic](/doc/en/lb2/Tutorial-Adding-application-logic.html)
+* [Remote methods](/doc/{{page.lang}}/lb2/Remote-methods.html)
+* [Remote hooks](/doc/{{page.lang}}/lb2/Remote-hooks.html)
+* [Operation hooks](/doc/{{page.lang}}/lb2/Operation-hooks.html)
+* [Model hooks](/doc/{{page.lang}}/lb2/Model-hooks.html)
+* [Tutorial: Adding application logic](/doc/{{page.lang}}/lb2/Tutorial-Adding-application-logic.html)
 
 ## Overview
 

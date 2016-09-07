@@ -91,10 +91,6 @@ entries:
       url: /doc/en/lb2/Add-a-custom-Express-route.html
       output: 'web, pdf'
 
-    - title: 'Run in a cluster'
-      url: /doc/en/lb2/Run-in-a-cluster.html
-      output: 'web, pdf'
-
     - title: 'Next steps'
       url: /doc/en/lb2/Next-steps.html
       output: 'web, pdf'
@@ -130,10 +126,6 @@ entries:
 
     - title: 'Create AngularJS client'
       url: /doc/en/lb2/Create-AngularJS-client.html
-      output: 'web, pdf'
-
-    - title: 'Deploying your application'
-      url: /doc/en/lb2/Deploying-your-application.html
       output: 'web, pdf'
 
     - title: 'Learn more'

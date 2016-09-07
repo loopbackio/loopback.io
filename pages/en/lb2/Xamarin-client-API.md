@@ -295,7 +295,7 @@ The SDK will create C# code for methods that are created for models connected by
 
 #### Example
 
-Suppose we have two Loopback models: Goal and TodoTask, and the relation between them is that TodoTask [belongs to](/doc/en/lb2/BelongsTo-relations.html) Goal.
+Suppose we have two Loopback models: Goal and TodoTask, and the relation between them is that TodoTask [belongs to](/doc/{{page.lang}}/lb2/BelongsTo-relations.html) Goal.
 
 Then the SDK will create, among others, the method to fetch the goal of a given todo task. You can see the generated code in the TodoTasks repository:
 

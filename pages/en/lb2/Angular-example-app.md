@@ -9,12 +9,6 @@ permalink: /doc/en/lb2/Angular-example-app.html
 summary:
 ---
 
-{% include note.html content="
-
-This article is reproduced from [loopback-example-angular](https://github.com/strongloop/loopback-example-angular)
-
-" %}
-
 # loopback-example-angular
 
 ```shell
@@ -23,7 +17,6 @@ $ cd loopback-example-angular
 $ npm install
 $ node . # then browse to localhost:3000
 ```
-
 A simple todo list using AngularJS on the client-side and LoopBack on the server-side.
 
 ## Prerequisites
@@ -41,9 +34,9 @@ A simple todo list using AngularJS on the client-side and LoopBack on the server
 * [Bootstrap](http://getbootstrap.com/)
 * [Bower](http://bower.io/)
 * [LoopBack](http://loopback.io/)
-* [LoopBack AngularJS SDK](http://docs.strongloop.com/display/LB/AngularJS-JavaScript-SDK)
-* [LoopBack models](http://docs.strongloop.com/display/LB/Defining-models)
-* [LoopBack middleware](/doc/en/lb2/Defining-middleware.html)
+* [LoopBack AngularJS SDK](/doc/{{page.lang}}/lb2/AngularJS-JavaScript-SDK)
+* [LoopBack models](/doc/{{page.lang}}/lb2/Defining-models)
+* [LoopBack middleware](/doc/{{page.lang}}/lb2/Defining-middleware.html)
 
 ## Procedure
 
@@ -174,7 +167,5 @@ $ lb-ng server/server.js client/js/services/lb-services.js
 ### Run the application
 
 From the project root, enter `node .` and browse to [`localhost:3000`](http://localhost:3000/) to view the application.
-
-* * *
 
 [More LoopBack examples](https://github.com/strongloop/loopback-example)

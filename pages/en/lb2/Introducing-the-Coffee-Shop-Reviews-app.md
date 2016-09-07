@@ -9,16 +9,7 @@ permalink: /doc/en/lb2/Introducing-the-Coffee-Shop-Reviews-app.html
 summary:
 ---
 
-{% include important.html content="
-
-**Prerequisites**:
-
-*   Install StrongLoop software as described in [Installing StrongLoop](/doc/en/lb2/Installing-StrongLoop)
-*   Follow [Getting started with LoopBack](/doc/en/lb2/Getting-started-with-LoopBack).
-
-**Recommended**: Read [LoopBack core concepts](/doc/en/lb2/LoopBack-core-concepts).
-
-" %}
+{% include content/gs-prereqs.html lang=page.lang %}
 
 "Coffee Shop Reviews" is a complete small application that illustrates many of LoopBack's basic features and how they work together.
 
@@ -32,7 +23,7 @@ The app will persist data to two different datasources: it will store reviewer d
 
 This application has three models:
 
-*   CoffeeShop (defined in [Getting started with LoopBack](Getting-started-with-LoopBack_3836320.html))
+*   CoffeeShop (defined in [Getting started with LoopBack](Getting-started-with-LoopBack.html))
 *   Review
 *   Reviewer
 
@@ -44,7 +35,7 @@ They are related as follows:
 *   A review belongs to a reviewer
 *   A reviewer has many reviews
 
-In general, users can create, edit, delete, and read reviews of coffee shops, with the following basic rules and permissions implemented through [ACLs](http://docs.strongloop.com/display/LB/Controlling-data-access):
+In general, users can create, edit, delete, and read reviews of coffee shops, with the following basic rules and permissions implemented through [ACLs](/doc/{{page.lang}}/lb2/Controlling-data-access.html):
 
 *   Anyone can read reviews, but you must be logged in to create, edit, or delete them.
 *   Anyone can register as a user; then log in and log out.
@@ -89,7 +80,7 @@ Click **Add Review** to create a new review, **My Reviews** to view only you
 
 ## Create your own app
 
-To understand all the features of the Coffee Shop Reviews app, you're going to recreate it from scratch.  The starting point is the app you created in [Getting started with LoopBack](Getting-started-with-LoopBack_3836320.html).  
+To understand all the features of the Coffee Shop Reviews app, you're going to recreate it from scratch.  The starting point is the app you created in [Getting started with LoopBack](/doc/{{page.lang}}/lb2/Getting-started-with-LoopBack.html).  
 
 So, if you followed that tutorial, simply change to that directory:
 
@@ -102,4 +93,4 @@ $ git clone https://github.com/strongloop/loopback-getting-started.git
 $ cd loopback-getting-started
 ```
 
-Next: Continue to [Create new data source](/doc/en/lb2/Create-new-data-source.html) to add a new data source that the application will use.
+Next: Continue to [Create new data source](/doc/{{page.lang}}/lb2/Create-new-data-source.html) to add a new data source that the application will use.

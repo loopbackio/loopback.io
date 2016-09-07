@@ -17,16 +17,11 @@ A _fields_ filter specifies properties (fields) to include or exclude from th
 
 Note that to include more than one field in REST, use multiple filters.
 
-You can also use [stringified JSON format](/doc/en/lb2/Querying-data.html#Queryingdata-UsingstringifiedJSONinRESTqueries) in a REST query.
+You can also use [stringified JSON format](/doc/{{page.lang}}/lb2/Querying-data.html#Queryingdata-UsingstringifiedJSONinRESTqueries) in a REST query.
 
 ### Node API
 
-{% include warning.html content="
-
-Methods of models in the [AngularJS client](/doc/en/lb2/AngularJS-JavaScript-SDK.html) have a different signature than those of the Node API.
-For more information, see [AngularJS SDK API](http://apidocs.strongloop.com/loopback-sdk-angular/).
-
-" %}
+{% include content/angular-methods-caveat.html lang=page.lang %}
 
 ```javascript
 { fields: {_propertyName_: <true|false>, _propertyName_: <true|false>, ... } }

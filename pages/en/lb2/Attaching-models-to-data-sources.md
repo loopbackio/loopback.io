@@ -18,16 +18,16 @@ REST APIs, SOAP web services, storage services, and so on. Data sources generall
 Models access data sources through _connectors_ that are extensible and customizable. In general, application code does not use a connector directly.
 Rather, the `DataSource` class provides an API to configure the underlying connector.
 
-The built-in [memory connector](/doc/en/lb2/Memory-connector.html) is suitable for development. To use a different data source:
+The built-in [memory connector](/doc/{{page.lang}}/lb2/Memory-connector.html) is suitable for development. To use a different data source:
 
-1.  Use the [data source generator](/doc/en/lb2/Data-source-generator.html) 
+1.  Use the [data source generator](/doc/{{page.lang}}/lb2/Data-source-generator.html) 
     to create the new data source and add it to the application's `datasources.json`.
-2.  Edit [`datasources.json`](/doc/en/lb2/datasources.json.html) to add the appropriate credentials for the data source.
+2.  Edit [`datasources.json`](/doc/{{page.lang}}/lb2/datasources.json.html) to add the appropriate credentials for the data source.
 3.  Create a model to connect to the data source or modify an existing model definition to use the connector.
 
 ## Add a data source
 
-To add a new data source, use the [data source generator](/doc/en/lb2/Data-source-generator.html):
+To add a new data source, use the [data source generator](/doc/{{page.lang}}/lb2/Data-source-generator.html):
 
 ```shell
 $ apic create --type datasource
@@ -78,10 +78,10 @@ For example:
 
 ## Make the model use the data source
 
-When you create a new model with the [model generator](/doc/en/lb2/Model-generator.html),
+When you create a new model with the [model generator](/doc/{{page.lang}}/lb2/Model-generator.html),
 you can specify the data source you want it to use from among those you've added to the application using the
-[Data source generator](/doc/en/lb2/Data-source-generator.html) and the default `db`
-data source (that uses the [memory connector](/doc/en/lb2/Memory-connector.html)).
+[Data source generator](/doc/{{page.lang}}/lb2/Data-source-generator.html) and the default `db`
+data source (that uses the [memory connector](/doc/{{page.lang}}/lb2/Memory-connector.html)).
 
 To change the data source a model uses after you've created the model, edit the application's `server/model-config.json`
 and set the dataSource property for the model. For example, to make myModel use the corp1 data source:

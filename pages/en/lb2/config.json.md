@@ -270,4 +270,4 @@ module.exports = {
 };
 ```
 
-For more information, see [Environment-specific configuration](/doc/en/lb2/Environment-specific-configuration.html).
+For more information, see [Environment-specific configuration](/doc/{{page.lang}}/lb2/Environment-specific-configuration.html).

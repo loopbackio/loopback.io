@@ -33,9 +33,7 @@ The properties of the include get populated into the image.html template.
 
 Here's the result:
 
-{% include image.html file="jekyll.png" url="http://jekyllrb.com" alt="Jekyll" caption="This is a sample caption" %}
-
-
+{% include image.html file="loopback_logo.png" url="http://loopback.io" alt="LoopBack" caption="This is a sample caption" %}
 
 ## Inline image includes
 

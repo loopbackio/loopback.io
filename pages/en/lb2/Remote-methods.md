@@ -11,45 +11,39 @@ summary:
 
 **See also**:
 
-* [Remote hooks](/doc/en/lb2/Remote-hooks.html)
-* [Operation hooks](/doc/en/lb2/Operation-hooks.html)
-* [Model hooks](/doc/en/lb2/Model-hooks.html)
-* [Connector hooks](/doc/en/lb2/Connector-hooks.html)
-* [Tutorial: Adding application logic](/doc/en/lb2/Tutorial-Adding-application-logic.html) 
+* [Remote hooks](/doc/{{page.lang}}/lb2/Remote-hooks.html)
+* [Operation hooks](/doc/{{page.lang}}/lb2/Operation-hooks.html)
+* [Model hooks](/doc/{{page.lang}}/lb2/Model-hooks.html)
+* [Connector hooks](/doc/{{page.lang}}/lb2/Connector-hooks.html)
+* [Tutorial: Adding application logic](/doc/{{page.lang}}/lb2/Tutorial-Adding-application-logic.html) 
 
 ## Overview
 
 A _remote method_ is a static method of a model, exposed over a custom REST endpoint.
-Use a remote method to perform operations not provided by LoopBack's [standard model REST API](/doc/en/lb2/PersistedModel-REST-API.html).
+Use a remote method to perform operations not provided by LoopBack's [standard model REST API](/doc/{{page.lang}}/lb2/PersistedModel-REST-API.html).
 
 {% include note.html content="
+The easiest way to define a remote method is by using the command-line [remote method generator](Remote-method-generator.html).
 
-The easiest way to define a remote method is by using the command-line [remote method generator](/doc/en/lb2/Remote-method-generator.html).
-
-For an introductory example of defining a remote method, see [Extend your API](/doc/en/lb2/Extend-your-API) in Getting Started.
-
-" %}
+For an introductory example of defining a remote method, see [Extend your API](Extend-your-API.html) in Getting Started." %}
 
 ## How to define a remote method
 
 To define a remote method:
 
-1.  Edit the [Model definition JSON file](/doc/en/lb2/Model-definition-JSON-file.html) in `/common/models` directory; for example, to attach a remote method to the Person model, edit `/common/models/person.js`.
-    If you created the model with the [Model generator](/doc/en/lb2/Model-generator.html), then this file will already exist.
+1.  Edit the [Model definition JSON file](/doc/{{page.lang}}/lb2/Model-definition-JSON-file.html) in `/common/models` directory; for example, to attach a remote method to the Person model, edit `/common/models/person.js`.
+If you created the model with the [Model generator](/doc/{{page.lang}}/lb2/Model-generator.html), then this file will already exist.
 
-    {% include important.html content="
-
-    The LoopBack [model generator](/doc/en/lb2/Model-generator.html) automatically converts camel-case model names (for example MyModel) to lowercase dashed names (my-model).
-    For example, if you create a model named \"FooBar\" with the model generator, it creates files `foo-bar.json` and `foo-bar.js` in `common/models`. 
-    However, the model name (\"FooBar\") will be preserved via the model's name property.
-
-    " %} 
+{% include important.html content="
+The LoopBack [model generator](Model-generator.html) automatically converts camel-case model names (for example MyModel) to lowercase dashed names (my-model).
+For example, if you create a model named \"FooBar\" with the model generator, it creates files `foo-bar.json` and `foo-bar.js` in `common/models`. 
+However, the model name (\"FooBar\") will be preserved via the model's name property." %} 
 
 2.  Define a static method that will handle the request.
 
 3.  Call [`remoteMethod()`](http://apidocs.strongloop.com/loopback/#model-remotemethod), to register the method, calling it with two parameters: 
-    1.  First parameter is a string that is the name of the method you defined in step 2 
-    2.  Second (optional) parameter provides additional configuration for the REST endpoint.
+    - First parameter is a string that is the name of the method you defined in step 2 
+    - Second (optional) parameter provides additional configuration for the REST endpoint.
 
 ### Example
 
@@ -87,11 +81,8 @@ will return:
 `Greetings... John!`
 
 {% include note.html content="
-
 Notice the REST API request above uses the plural form \"people\" instead of \"person\". LoopBack exposes the
-[plural form of model names for REST API routes](/doc/en/lb2/Exposing-models-over-REST.html#ExposingmodelsoverREST-RESTpaths).
-
-" %}
+[plural form of model names for REST API routes](Exposing-models-over-REST.html#REST-paths)." %}
 
 ## Registering a remote method
 
@@ -112,11 +103,7 @@ Where:
 The options argument is a Javascript object containing key/value pairs to configure the remote method REST endpoint.
 
 {% include important.html content="
-
-All of the options properties are optional. However, if the remote method requires arguments, you must specify `accepts`;
-if the remote method returns a value, you must specify `returns`.
-
-" %}
+All of the options properties are optional. However, if the remote method requires arguments, you must specify `accepts`; if the remote method returns a value, you must specify `returns`. " %}
 
 <table>
   <thead>
@@ -247,7 +234,6 @@ if the remote method returns a value, you must specify `returns`.
 </table>
 
 {% include important.html content="
-
 You can split long strings in the `description` and `notes` options into arrays of strings (lines) to keep line lengths manageable. For example:
 
 ```javascript
@@ -257,7 +243,6 @@ You can split long strings in the `description` and `notes` options into arrays 
  \"magna aliqua.\"
 ]
 ```
-
 " %}
 
 ### Argument descriptions
@@ -541,7 +526,7 @@ So a GET request to `http://localhost:3000/api/people/sayhi?msg=LoopBack%20deve
 
 ## Adding ACLs to remote methods
 
-To constrain access to custom remote methods, use the [ACL generator](/doc/en/lb2/ACL-generator.html) in the same way you control access to any model API.
+To constrain access to custom remote methods, use the [ACL generator](/doc/{{page.lang}}/lb2/ACL-generator.html) in the same way you control access to any model API.
 The access type for custom remote methods is Execute.
 
 ### Basic use
@@ -611,7 +596,7 @@ module.exports = function(YourModel) {
 
 ## Formatting remote method responses
 
-You can reformat the response returned by all remote methods by adding a [boot script](/doc/en/lb2/Defining-boot-scripts.html) 
+You can reformat the response returned by all remote methods by adding a [boot script](/doc/{{page.lang}}/lb2/Defining-boot-scripts.html) 
 that modifies the object returned by [`app.remotes()`](http://apidocs.strongloop.com/loopback/#app-remotes) as follows:
 
 **/server/boot/hook.js**

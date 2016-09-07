@@ -16,7 +16,7 @@ Fundamentally, a component is related code bundled together as a unit to enable 
 They are registered to the app using 
 [`component-config.json`](/pages/createpage.action?spaceKey=APIC&title=component-config.json&linkCreation=true&fromPageId=9634257).
 
-Components can be official [StrongLoop npm packages](/doc/en/lb2/LoopBack-components.html) or custom components. This page is about custom components.
+Components can be official [StrongLoop npm packages](/doc/{{page.lang}}/lb2/LoopBack-components.html) or custom components. This page is about custom components.
 
 ## How to create components
 
@@ -24,10 +24,7 @@ A LoopBack component is basically a node module which accepts a LoopBack applica
 Using the available LoopBack application instance and the configuration object, the functionality of the component can be programmed according to the requirements.
 
 {% include note.html content="
-
-If a component is not published on npm, the convention is to put the component file in the `server/components` directory.
-
-" %}
+If a component is not published on npm, the convention is to put the component file in the `server/components` directory." %}
 
 The following are some examples to help you understand the components API.
 
@@ -57,11 +54,7 @@ module.exports = function (loopbackApplication, options) {
 };
 ```
 
-{% include note.html content="
-
-To better understand how routing works in LoopBack and how it affects components, refer [Routing](/doc/en/lb2/Routing.html).
-
-" %}
+{% include note.html content="To better understand how routing works in LoopBack and how it affects components, refer [Routing](Routing.html)." %}
 
 While a lot of components mount a middleware of some kind, all components need not do so.
 For example, this component prints the `loopback` version on initialization, and does nothing more than that.

@@ -13,9 +13,9 @@ summary:
 
 LoopBack applications have the following types of configuration files:
 
-* **Application-wide configuration files**, by default [`server/config.json`](/doc/en/lb2/config.json.html).
+* **Application-wide configuration files**, by default [`server/config.json`](/doc/{{page.lang}}/lb2/config.json.html).
   You can also use `server/config.local.js` to set values that you can't with simple JSON.
-* **Data source configuration files**, by default [`server/datasources.json`](/doc/en/lb2/datasources.json.html).
+* **Data source configuration files**, by default [`server/datasources.json`](/doc/{{page.lang}}/lb2/datasources.json.html).
   You can also use `server/datasources.local.js` to set values that you can't with simple JSON.
 * **Application-level configuration of Models**, by default `server/model-config.json`.
 * **Middleware configuration files**, by default `server/middleware.json`.
@@ -46,14 +46,12 @@ where `{_env_}` is the value of NODE_ENV (typically "development," "staging," 
 This enables you to set up configurations for specific environments (for example, development, staging, and production). 
 
 {% include note.html content="
-
-A LoopBack application can load multiple configuration files, which can potentially conflict with each other.
+A LoopBack application can load multiple configuration files, that can potentially conflict with each other.
 The value set by the file with the highest priority will always take effect. The priorities are:
 
 1.  **Environment-specific configuration**, based on the value of NODE_ENV; for example, `server/config.staging.json`.
 2.  **Local configuration file**; for example, `server/config.local.json`.
 3.  **Default configuration file**; for example, `server/config.json`.
-
 " %}
 
 Here are some examples of the application configuration files:
@@ -69,14 +67,14 @@ Here are some examples of data source configuration files:
 
 Here are some examples of the middleware configuration files, the `server/middleware{._env_}.json` file:
 
-* [middleware.json](/doc/en/lb2/middleware.json.html)
+* [middleware.json](/doc/{{page.lang}}/lb2/middleware.json.html)
 * middleware.production.json
 
 For an example application, see [https://github.com/strongloop/loopback-example-full-stack/tree/master/server](https://github.com/strongloop/loopback-example-full-stack/tree/master/server).
 
 ## Application-wide configuration
 
-Define application server-side settings in [`server/config.json`](/doc/en/lb2/config.json.html).
+Define application server-side settings in [`server/config.json`](/doc/{{page.lang}}/lb2/config.json.html).
 
 You can override values that are set in `config.json` in:
 
@@ -85,11 +83,8 @@ You can override values that are set in `config.json` in:
   For example `config.production.json`.
 
 {% include important.html content="
-
 The additional files can override the top-level keys with value-types (strings, numbers) only.
-Nested objects and arrays are not supported at the moment.
-
-" %}
+Nested objects and arrays are not supported at the moment." %}
 
 For example:
 
@@ -122,15 +117,13 @@ By default, stack traces are returned in JSON responses. To turn disable stack t
 ```
 
 {% include note.html content="
-
-As of `strongloop` version 5.0.3, the [Application generator](/doc/en/lb2/Application-generator)
-creates a `middleware.production.json` file with the above configuration for you, so all you have to do is set the NODE_ENV environment variable.
-
+The [Application generator](Application-generator.html) creates a `middleware.production.json` file
+with the above configuration for you, so all you have to do is set the NODE_ENV environment variable.
 " %}
 
 ### Disabling API Explorer
 
-LoopBack [API Explorer](/doc/en/lb2/Use-API-Explorer) is great when you're developing your application,
+LoopBack [API Explorer](/doc/{{page.lang}}/lb2/Use-API-Explorer) is great when you're developing your application,
 but for security reasons you may not want to expose it in production.
 
 For an application using [loopback-component-explorer](https://github.com/strongloop/loopback-component-explorer), to disable explorer in production:
@@ -145,12 +138,6 @@ For an application using [loopback-component-explorer](https://github.com/strong
   "loopback-component-explorer": null
 }
 ```
-
-{% include tip.html content="
-
-For an application using the old `loopback-explorer` (prior to version 2.0), disable API Explorer by deleting or renaming `server/boot/explorer.js`. 
-
-" %}
 
 ### Customizing REST error handling
 
@@ -176,7 +163,7 @@ module.exports = {
 ### Exclude stack traces from HTTP responses
 
 To exclude error stack traces from HTTP responses (typical in production), set the includeStack option of LoopBack errorHandler middleware to false in 
-[middleware.json](/doc/en/lb2/middleware.json.html).
+[middleware.json](/doc/{{page.lang}}/lb2/middleware.json.html).
 
 The standard configuration for development is:
 
@@ -213,10 +200,7 @@ You can override values set in `datasources.json` in the following files:
   For example, `datasources.production.json`.
 
 {% include important.html content="
-
-The additional files can override the top-level data-source options with string and number values only. You cannot use objects or array values.
-
-" %}
+The additional files can override the top-level data-source options with string and number values only. You cannot use objects or array values." %}
 
 Example data sources:
 

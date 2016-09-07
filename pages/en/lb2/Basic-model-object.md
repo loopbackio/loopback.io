@@ -15,7 +15,7 @@ By default, the basic LoopBack [Model object](http://apidocs.strongloop.com/loop
 
 * [Inclusion object](http://apidocs.strongloop.com/loopback-datasource-juggler/#inclusion) - Enables you to load relations of several objects and optimize numbers of requests.
 * [Validateable object](http://apidocs.strongloop.com/loopback-datasource-juggler/#validatable) - provides validation methods;
-  see [Validating model data](/doc/en/lb2/Validating-model-data.html).
+  see [Validating model data](/doc/{{page.lang}}/lb2/Validating-model-data.html).
 
 When you define relations between models,
 the [RelationMixin object](http://apidocs.strongloop.com/loopback-datasource-juggler/#relationmixin) object also gets mixed in to the model object.
@@ -23,13 +23,11 @@ the [RelationMixin object](http://apidocs.strongloop.com/loopback-datasource-ju
 ## Events
 
 {% include important.html content="
-
-The following events are deprecated in favor of [operation hooks](/doc/en/lb2/Operation-hooks.html):
+The following events are deprecated in favor of [operation hooks](Operation-hooks.html):
 
 * changed
 * deleted
 * deletedAll
-
 " %}
 
 The following table summarizes the events that LoopBack models can emit.

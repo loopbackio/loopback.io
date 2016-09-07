@@ -14,7 +14,7 @@ summary:
 LoopBack provides a full-featured solution for authentication and authorization.
 Follow the steps here to get an overview of how it works with the built-in User model using StrongLoop API Explorer.
 
-First, if you haven't done so, follow the first steps in [Getting started with LoopBack](/doc/en/lb2/Getting-started-with-LoopBack) 
+First, if you haven't done so, follow the first steps in [Getting started with LoopBack](/doc/{{page.lang}}/lb2/Getting-started-with-LoopBack) 
 to download the [loopback-getting-started](https://github.com/strongloop/loopback-getting-started) application and run it.
 
 Open [http://localhost:3000/explorer](http://localhost:3000/explorer) to view StrongLoop API Explorer. Then:

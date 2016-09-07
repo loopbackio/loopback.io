@@ -9,14 +9,6 @@ permalink: /doc/en/lb2/Connecting-to-MongoDB.html
 summary:
 ---
 
-{% include important.html content="
-
-This example application describes using the StrongLoop `slc loopback` tool. You can also recreate the application using API Connect `apic` tool.
-Simply substitute the API Connect command for the corresponding StrongLoop command. For more information, see
-[Converting StrongLoop commands to API Connect commands](/doc/en/lb2/Command-line-reference.html#Command-linereference-CorrespondencebetweenStrongLoopcommandstoAPIConnectcommands).
-
-" %}
-
 # loopback-example-database
 
 A tutorial for basic database related features.
@@ -271,9 +263,5 @@ Created: { email: 'bob.doe@ibm.com',
   id: 56299d9d71c7f600719ca39f }
 ```
 
-> See the [official docs](http://docs.strongloop.com/display/LB/Creating-models-from-unstructured-data)
-> for more info.
-
-* * *
 
 [More LoopBack examples](https://github.com/strongloop/loopback-example)

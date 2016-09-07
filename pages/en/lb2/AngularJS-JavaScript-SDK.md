@@ -15,17 +15,9 @@ summary:
 * [Angular SDK built-in models API](http://apidocs.strongloop.com/loopback-sdk-angular/)
 
 {% include note.html content="
+The LoopBack AngularJS SDK is installed when you [installing StrongLoop tools](Installing-StrongLoop.html)." %}
 
-The LoopBack AngularJS SDK is automatically installed when you follow the installation instructions in
-[Getting started with LoopBack](/doc/en/lb2/Getting-started-with-LoopBack).
-
-" %}
-
-{% include important.html content="
-
-The AngularJS SDK requires Angular version 1.2.0 or newer.
-
-" %}
+{% include important.html content="The AngularJS SDK requires Angular version 1.2.0 or newer." %}
 
 ## Introduction
 
@@ -64,10 +56,7 @@ The rest of the procedure is standard for AngularJS: configure your client app t
 and tell Angular's injector which models to use in your code.
 
 {% include note.html content="
-
-At runtime, the generated lbServices module (`lb-services.js`) depends on the Angular resource script (`angular-resource.js`)
-so you must ensure that your client loads this Angular script.
-
+At runtime, the generated lbServices module (`lb-services.js`) depends on the Angular resource script (`angular-resource.js`), so you must ensure that your client loads this Angular script.
 " %}
 
 ## Generating Angular services
@@ -75,12 +64,9 @@ so you must ensure that your client loads this Angular script.
 Use the LoopBack Angular command-line tool, `lb-ng`, to generate the Angular client library for your LoopBack application.
 
 {% include tip.html content="
+Any time you modify or add models to your LoopBack app, you must re-run `lb-ng` to re-generate the Angular client library to reflect the changes." %}
 
-Any time you modify or add models to your LoopBack app, you must re-run `lb-ng` to re-generate the Angular client library to reflect the changes.
-
-" %}
-
-For example, if your application has the [standard LoopBack project layout](/doc/en/lb2/Project-layout-reference.html),
+For example, if your application has the [standard LoopBack project layout](/doc/{{page.lang}}/lb2/Project-layout-reference.html),
 then in the `/client` sub-directory, enter these commands:
 
 ```shell
@@ -95,14 +81,11 @@ In this example:
 `js/lb-services.js` is the name and path to the JavaScript file that the tool generates.
 
 {% include important.html content="
-
 If you want the AngularJS files to be somewhere else at runtime, then after generating the JavaScript file as shown above,
-simply copy it to the desired location and reference that location in your `index.html` file or equivalent.
-
-" %}
+simply copy it to the desired location and reference that location in your `index.html` file or equivalent." %}
 
 The SDK also provides a tool to generate API documentation for the AngularJS services;
-see [Generating Angular API docs](/doc/en/lb2/Generating-Angular-API-docs.html) for more information.
+see [Generating Angular API docs](/doc/{{page.lang}}/lb2/Generating-Angular-API-docs.html) for more information.
 
 ### lb-ng command
 
@@ -114,7 +97,7 @@ The general syntax of the lb-ng command is:
 
 _`path-to-server-script`_
 Relative path to the LoopBack application main script.
-In the [standard project layout](/doc/en/lb2/Project-layout-reference.html), `<_app-dir_>/server/server.js`. Required.
+In the [standard project layout](/doc/{{page.lang}}/lb2/Project-layout-reference.html), `<_app-dir_>/server/server.js`. Required.
 
 _`path-to-generated-services`_
 Relative path to the client JavaScript file to be generated containing the AngularJS $resource services.
@@ -145,11 +128,8 @@ AngularJS model names start always with a capital letter, even if your server de
 ### Setup
 
 {% include note.html content="
-
 The generated lbServices module (`lb-services.js`) depends on the Angular resource script (`angular-resource.js`) so you must ensure that your page has
-`<script src=\"angular-resource.js\"></script>` if you don't have it already.
-
-" %}
+`<script src=\"angular-resource.js\"></script>` if you don't have it already." %}
 
 Follow these steps to use the generated services inside your AngularJS application:
 
@@ -157,12 +137,8 @@ Follow these steps to use the generated services inside your AngularJS applicat
 
     `<script src="js/lb-services.js"></script>`
 
-    {% include note.html content="
-
-    You'll need to set up static middleware to serve the client script.
-    See [Defining middleware](/doc/en/lb2/Defining-middleware.html#Definingmiddleware-Staticmiddleware) for more information.
-
-    " %}
+    {% include note.html content="You'll need to set up static middleware to serve the client script.
+    See [Defining middleware](Defining-middleware.html) for more information." %}
 
 2.  Register the AngularJS module `lbServices` as a dependency of your app.
     Add `'lbServices'` to the `angular.module()` call in  the main JavaScript file of your Angular (client) app, as follows:
@@ -291,10 +267,10 @@ $scope.prod0 = Product.findById({
 });
 ```
 
-Refer to [Querying data](/doc/en/lb2/Querying-data.html) for a description of all query options.
+Refer to [Querying data](/doc/{{page.lang}}/lb2/Querying-data.html) for a description of all query options.
 The AngularJS client expects the "Node syntax" of arguments, with the differences noted above.
 
-Also, see [Querying related models](/doc/en/lb2/Accessing-related-models.html#Accessingrelatedmodels-Queryingrelatedmodels).
+Also, see [Querying related models](/doc/{{page.lang}}/lb2/Accessing-related-models.html#Accessingrelatedmodels-Queryingrelatedmodels).
 
 #### Update
 
@@ -336,7 +312,6 @@ Product.deleteById({
 The AngularJS SDK provides convenient methods for accessing and manipulating related models.
 
 {% include warning.html content="
-
 Currently, the AngularJS SDK does not support polymorphic belongsTo relations; an application with such a relation will display a warning such as this (for example):
 
 ```
@@ -344,7 +319,6 @@ Warning: scope Picture.imageable is missing _targetClass property.
 The Angular code for this scope won't be generated. Please upgrade
 to the latest version of loopback-datasource-juggler to fix the problem.
 ```
-
 " %}
 
 For example, consider the two following model definitions:

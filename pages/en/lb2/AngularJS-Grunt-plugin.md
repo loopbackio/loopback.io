@@ -9,6 +9,7 @@ permalink: /doc/en/lb2/AngularJS-Grunt-plugin.html
 summary:
 ---
 
+
 **See also**:
 
 * [loopback-example-angular](https://github.com/strongloop/loopback-example-angular)
@@ -171,29 +172,3 @@ For example, extend your existing Gruntfile as follows:
     ```shell
     $ grunt docular-server
     ```
-
-<div class="sl-hidden"><strong>Non-public Information</strong><br>
-  <p>The&nbsp;<a class="external-link" href="https://github.com/strongloop/loopback-example-full-stack" rel="nofollow">LoopBack Full Stack example application</a>&nbsp;provides an example of using AngularJS SDK with Loopback. &nbsp;Get the example application
-    as follows:</p>
-  <div class="code panel pdl" style="border-width: 1px;">
-    <div class="codeContent panelContent pdl"><pre class="theme: Emacs; brush: jscript; gutter: false" style="font-size:12px;">$ git clone https://github.com/strongloop/loopback-example-full-stack.git
-$ cd loopback-example-full-stack/server
-$ npm install grunt-docular
-$ npm install</pre></div>
-  </div>
-  <p>Now run the gruntfile:</p>
-  <div class="code panel pdl" style="border-width: 1px;">
-    <div class="codeContent panelContent pdl"><pre class="theme: Emacs; brush: jscript; gutter: false" style="font-size:12px;">$ grunt</pre></div>
-  </div>
-  <p>You'll see some output. In particular, note:</p>
-  <div class="code panel pdl" style="border-width: 1px;">
-    <div class="codeContent panelContent pdl"><pre class="theme: Emacs; brush: jscript; gutter: false" style="font-size:12px;">&gt;&gt; Generated Angular services file "../client/js/lb-services.js"</pre></div>
-  </div>
-  <p>This is the client JavaScript file that has the AngularJS services.</p>
-  <p>Run the example as follows:</p>
-  <div class="code panel pdl" style="border-width: 1px;">
-    <div class="codeContent panelContent pdl"><pre class="theme: Emacs; brush: jscript; gutter: false" style="font-size:12px;">$ apic start</pre></div>
-  </div>
-  <p>The app's home screen looks as shown below. it's a very simple banking app. You can also view the API explorer at <a href="http://0.0.0.0:3000/explorer.å" class="external-link" rel="nofollow">http://0.0.0.0:3000/explorer.å</a></p>
-  <p><img class="confluence-embedded-image confluence-external-resource" src="http://docs.strongloop.com/download/attachments/3836213/angular1.png?version=1&amp;modificationDate=1405990842000&amp;api=v2" data-image-src="http://docs.strongloop.com/download/attachments/3836213/angular1.png?version=1&amp;modificationDate=1405990842000&amp;api=v2"></p>
-</div>

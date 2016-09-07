@@ -9,45 +9,29 @@ permalink: /doc/en/lb2/Define-model-relations.html
 summary:
 ---
 
-{% include important.html content="
-
-**Prerequisites**:
-
-*   Install StrongLoop software as described in [Installing StrongLoop](/doc/en/lb2/Installing-StrongLoop)
-*   Follow [Getting started with LoopBack](/doc/en/lb2/Getting-started-with-LoopBack).
-
-**Recommended**: Read [LoopBack core concepts](/doc/en/lb2/LoopBack-core-concepts).
-
-" %}
+{% include content/gs-prereqs.html lang=page.lang %}
 
 Relations among models enable you to query related models and perform corresponding validations.
 
 Individual models are easy to understand and work with. But in reality, models are often connected or related.   For applications with multiple models, you typically need to define _relations_ between models.  
 
 {% include note.html content="
+If you followed the previous step in the tutorial, go to [Introducing model relations](#introducing-model-relations).
 
-If you followed the previous step in the tutorial, go to [Introducing model relations](/doc/en/lb2/Define-model-relations.html).
-
-If you're just jumping in, follow the steps below to catch up...
-
-" %}
+If you're just jumping in, follow the steps below to catch up..." %}
 
 Get the app (in the state following the last article) from GitHub and install all its dependencies:
 
 ```
 $ git clone https://github.com/strongloop/loopback-getting-started-intermediate.git
 $ cd loopback-getting-started-intermediate
-$ git checkout step2 
+$ git checkout step2
 $ npm install
 ```
 
 ## Introducing model relations
 
-{% include note.html content="
-
-LoopBack supports many different kinds of model relations, including: [BelongsTo](/doc/en/lb2/BelongsTo-relations), [HasMany](/doc/en/lb2/HasMany-relations), [HasManyThrough](/doc/en/lb2/HasManyThrough-relations), and [HasAndBelongsToMany](/doc/en/lb2/HasAndBelongsToMany-relations), among others. For more information, see [Creating model relations](/doc/en/lb2/Creating-model-relations).
-
-" %}
+LoopBack supports many different kinds of model relations, including: [BelongsTo](/doc/{{page.lang}}/lb2/BelongsTo-relations), [HasMany](/doc/{{page.lang}}/lb2/HasMany-relations), [HasManyThrough](/doc/{{page.lang}}/lb2/HasManyThrough-relations), and [HasAndBelongsToMany](/doc/{{page.lang}}/lb2/HasAndBelongsToMany-relations), among others. For more information, see [Creating model relations](/doc/{{page.lang}}/lb2/Creating-model-relations).
 
 In the Coffee Shop Reviews app, the models are related as follows:
 
@@ -59,7 +43,7 @@ In the Coffee Shop Reviews app, the models are related as follows:
 
 ## Define relations
 
-Now, you're going to define these relationships between the models.  In all there are five relations.  Once again, you'll use `slc loopback`, but this time you'll use the `relation` sub-command ([relation generator](/doc/en/lb2/Relation-generator)).  For each relation, enter:
+Now, you're going to define these relationships between the models.  In all there are five relations.  Once again, you'll use `slc loopback`, but this time you'll use the `relation` sub-command ([relation generator](/doc/{{page.lang}}/lb2/Relation-generator)).  For each relation, enter:
 
 `$ slc loopback:relation`
 
@@ -72,7 +56,7 @@ The tool will prompt you to provide the information required to define the relat
 ? Relation type: has many
 ? Choose a model to create a relationship with: Review
 ? Enter the property name for the relation: reviews
-? Optionally enter a custom foreign key: 
+? Optionally enter a custom foreign key:
 ? Require a through model? No
 ```
 
@@ -83,7 +67,7 @@ The tool will prompt you to provide the information required to define the relat
 ? Relation type: has many
 ? Choose a model to create a relationship with: Reviewer
 ? Enter the property name for the relation: reviewers
-? Optionally enter a custom foreign key: 
+? Optionally enter a custom foreign key:
 ? Require a through model? No
 ```
 
@@ -178,4 +162,4 @@ And `common/models/coffee-shop.json` should have this:
 ...
 ```
 
-Next: Continue to [Define access controls](/doc/en/lb2/Define-access-controls.html).
+Next: Continue to [Define access controls](/doc/{{page.lang}}/lb2/Define-access-controls.html).

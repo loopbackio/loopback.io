@@ -11,12 +11,12 @@ summary:
 
 **See also**:
 
-* [Creating models](/doc/en/lb2/Creating-models.html)
-* [Customizing models](/doc/en/lb2/Customizing-models.html)
-* [Creating model relations](/doc/en/lb2/Creating-model-relations.html)
-* [Querying data](/doc/en/lb2/Querying-data.html)
-* [Model definition JSON file](/doc/en/lb2/Model-definition-JSON-file.html)
-* [PersistedModel REST API](/doc/en/lb2/PersistedModel-REST-API.html)
+* [Creating models](/doc/{{page.lang}}/lb2/Creating-models.html)
+* [Customizing models](/doc/{{page.lang}}/lb2/Customizing-models.html)
+* [Creating model relations](/doc/{{page.lang}}/lb2/Creating-model-relations.html)
+* [Querying data](/doc/{{page.lang}}/lb2/Querying-data.html)
+* [Model definition JSON file](/doc/{{page.lang}}/lb2/Model-definition-JSON-file.html)
+* [PersistedModel REST API](/doc/{{page.lang}}/lb2/PersistedModel-REST-API.html)
 
 ## Overview of model relations
 
@@ -31,15 +31,15 @@ With connected models, LoopBack exposes as a set of APIs to interact with each o
 
 You can define the following relations between models:
 
-* [BelongsTo relations](/doc/en/lb2/BelongsTo-relations.html)
-* [HasOne relations](/doc/en/lb2/HasOne-relations.html)
-* [HasMany relations](/doc/en/lb2/HasMany-relations.html)
-* [HasManyThrough relations](/doc/en/lb2/HasManyThrough-relations.html)
-* [HasAndBelongsToMany relations](/doc/en/lb2/HasAndBelongsToMany-relations.html)
-* [Polymorphic relations](/doc/en/lb2/Polymorphic-relations.html)
-* [Embedded relations](/doc/en/lb2/Embedded-models-and-relations.html) (embedsOne and embedsMany)
+* [BelongsTo relations](/doc/{{page.lang}}/lb2/BelongsTo-relations.html)
+* [HasOne relations](/doc/{{page.lang}}/lb2/HasOne-relations.html)
+* [HasMany relations](/doc/{{page.lang}}/lb2/HasMany-relations.html)
+* [HasManyThrough relations](/doc/{{page.lang}}/lb2/HasManyThrough-relations.html)
+* [HasAndBelongsToMany relations](/doc/{{page.lang}}/lb2/HasAndBelongsToMany-relations.html)
+* [Polymorphic relations](/doc/{{page.lang}}/lb2/Polymorphic-relations.html)
+* [Embedded relations](/doc/{{page.lang}}/lb2/Embedded-models-and-relations.html) (embedsOne and embedsMany)
 
-You can define models relations in JSON in the [model definition JSON file](/doc/en/lb2/Model-definition-JSON-file.html) file or in JavaScript code.
+You can define models relations in JSON in the [model definition JSON file](/doc/{{page.lang}}/lb2/Model-definition-JSON-file.html) file or in JavaScript code.
 The end result is the same.
 
 When you define a relation for a model, LoopBack adds a set of methods to the model, as detailed in the article on each type of relation.
@@ -55,8 +55,8 @@ Models backed by different data sources can have relations between them.
 ## Using the relation generator
 
 The easiest way to create a new relation between existing models is to use the 
-[`slc loopback:relation`](/doc/en/lb2/Relation-generator.html), or the
-[`apic loopback:relation`](/doc/en/lb2/Relation-generator.html), relation generator.
+[`slc loopback:relation`](/doc/{{page.lang}}/lb2/Relation-generator.html), or the
+[`apic loopback:relation`](/doc/{{page.lang}}/lb2/Relation-generator.html), relation generator.
 
 The tool will prompt you to enter the type of relation (belongsTo, hasMany, and so on) and the affected models.
 
@@ -138,7 +138,7 @@ Product.hasMany(Image, {
 
 Normally, `properties` are transferred from parent to child, but there are cases where it makes sense to do the opposite.
 To enable this, use the `invertProperties` option.
-See an example in [Embedded models (embed with belongsTo)](http://docs.strongloop.com/display/LB/Embedded-models-and-relations#Embeddedmodelsandrelations-Advancedexample:embedwithbelongsTo).
+See an example in [Embedded models (embed with belongsTo)](/docs/{{page.lang}}/lb2/Embedded-models-and-relations.html).
 
 ### Custom scope methods
 

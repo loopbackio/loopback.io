@@ -9,22 +9,15 @@ permalink: /doc/en/lb2/Authentication-authorization-and-permissions.html
 summary:
 ---
 
-{% include important.html content="
-
-**Prerequisites**
-
-* Install **[API Connect](https://developer.ibm.com/apiconnect/)** or **[StrongLoop](https://docs.strongloop.com/display/SL/Installing-StrongLoop)**.
-* Read [LoopBack core concepts](/doc/en/lb2/LoopBack-core-concepts.html).
-
-" %}
+{% include content/gs-prereqs.html lang=page.lang %}
 
 **See also**:
 
-* [Managing users](/doc/en/lb2/Managing-users.html)
-* [Third-party login using Passport](/doc/en/lb2/Third-party-login-using-Passport.html)
-* [Access control models](/doc/en/lb2/Using-built-in-models.html#Usingbuilt-inmodels-Accesscontrolmodels)
-* [Tutorial: access control](/doc/en/lb2/Tutorial%3A-access-control)
-* [Security considerations](/doc/en/lb2/Security-considerations.html)
+* [Managing users](/doc/{{page.lang}}/lb2/Managing-users.html)
+* [Third-party login using Passport](/doc/{{page.lang}}/lb2/Third-party-login-using-Passport.html)
+* [Access control models](/doc/{{page.lang}}/lb2/Using-built-in-models.html#Usingbuilt-inmodels-Accesscontrolmodels)
+* [Tutorial: access control](/doc/{{page.lang}}/lb2/Tutorial%3A-access-control)
+* [Security considerations](/doc/{{page.lang}}/lb2/Security-considerations.html)
 
 Most applications need to control who (or what) can access data or call services.
 Typically, this involves requiring users to login to access protected data, or requiring authorization tokens for other applications to access protected data.
@@ -32,12 +25,11 @@ Typically, this involves requiring users to login to access protected data, or r
 For a simple example of implementing LoopBack access control, see the GitHub 
 [loopback-example-access-control](https://github.com/strongloop/loopback-example-access-control) repository.
 
-LoopBack apps access data through models (see [Defining models](/doc/en/lb2/Defining-models.html)),
+LoopBack apps access data through models (see [Defining models](/doc/{{page.lang}}/lb2/Defining-models.html)),
 so controlling access to data means putting restrictions on models; that is,
 specifying who or what can read/write the data or execute methods on the models. 
 
 {% include warning.html content="
-
 **Enabling LoopBack authentication**
 
 To enable access control, you must call `enableAuth()`. For example, in a boot script `server/boot/authentication.js`:
@@ -47,7 +39,6 @@ module.exports = function enableAuthentication(server) {
   server.enableAuth();
 };
 ```
-
 " %}
 
 ## Access control concepts
@@ -170,11 +161,8 @@ MyModel.disableRemoteMethod('updateAttributes', isStatic);
 ```
 
 {% include important.html content="
-
 Be sure to call `disableRemoteMethod()` on your own custom model, not one of the built-in models;
-in the example below, for instance, the calls are `MyUser.disableRemoteMethod()` _not_ `User.disableRemoteMethod()`.
-
-" %}
+in the example below, for instance, the calls are `MyUser.disableRemoteMethod()` _not_ `User.disableRemoteMethod()`." %}
 
 Here's an example of hiding all methods of the `MyUser` model, except for `login` and `logout`:
 
@@ -224,10 +212,7 @@ Product.disableRemoteMethod('createChangeStream', true);	// removes (GET|POST) /
 To disable a REST endpoints for related model methods, use [disableRemoteMethod()](https://apidocs.strongloop.com/loopback/#model-disableremotemethod).
 
 {% include note.html content="
-
-For more information, see [Accessing related models](/doc/en/lb2/Accessing-related-models.html).
-
-" %}
+For more information, see [Accessing related models](Accessing-related-models.html)." %}
 
 For example, if there are post and tag models, where a post hasMany tags, add the following code to `/common/models/post.js` 
 to disable the remote methods for the related model and the corresponding REST endpoints: 
@@ -246,4 +231,4 @@ module.exports = function(Post) {
 ### Hiding properties
 
 To hide a property of a model exposed over REST, define a hidden property.
-See [Model definition JSON file (Hidden properties)](/doc/en/lb2/Model-definition-JSON-file.html#ModeldefinitionJSONfile-Hiddenproperties).
+See [Model definition JSON file (Hidden properties)](/doc/{{page.lang}}/lb2/Model-definition-JSON-file.html#ModeldefinitionJSONfile-Hiddenproperties).

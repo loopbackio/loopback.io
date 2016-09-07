@@ -9,11 +9,7 @@ permalink: /doc/en/lb2/Middleware-generator.html
 summary:
 ---
 
-{% include important.html content="
-Before running this generator, you must create an application using the [Application generator](/doc/en/lb2/Application-generator.html).
-
-Then you must run the command from the root directory of the application.
-" %}
+{% include content/generator-create-app.html lang=page.lang %}
 
 ### Synopsis
 
@@ -51,14 +47,14 @@ The tool will prompt you for:
 
 * Name of the new middleware function.  If you supplied a name on the command-line, just hit Enter to use it.
 * Phase when the middleware function will be invoked.  You can select any of the predefined phases or a custom phase.
-  For more information about middleware phases, see [Defining middleware](/doc/en/lb2/Defining-middleware.html).
+  For more information about middleware phases, see [Defining middleware](/doc/{{page.lang}}/lb2/Defining-middleware.html).
 * Sub-phase when the middleware function will be invoked (before, regular, or after).
 * Paths (routes) that will invoke the middleware function.
 * Configuration parameters in JSON format.
 
 ### Output
 
-The tools adds the specified middleware to the application's [`middleware.json`](/doc/en/lb2/middleware.json.html) file
+The tools adds the specified middleware to the application's [`middleware.json`](/doc/{{page.lang}}/lb2/middleware.json.html) file
 
 ### EXAMPLES
 

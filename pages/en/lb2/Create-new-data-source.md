@@ -9,22 +9,13 @@ permalink: /doc/en/lb2/Create-new-data-source.html
 summary:
 ---
 
-{% include important.html content="
-
-**Prerequisites**:
-
-*   Install StrongLoop software as described in [Installing StrongLoop](/doc/en/lb2/Installing-StrongLoop)
-*   Follow [Getting started with LoopBack](/doc/en/lb2/Getting-started-with-LoopBack).
-
-**Recommended**: Read [LoopBack core concepts](/doc/en/lb2/LoopBack-core-concepts).
-
-" %}
+{% include content/gs-prereqs.html lang=page.lang %}
 
 You can easily connect a LoopBack application to multiple different data sources.
 
 ## Add a data source
 
-You're going to add a MongoDB data source in addition to the MySQL data source created in [Connect your API to a data source](/doc/en/lb2/Connect-your-API-to-a-data-source.html).
+You're going to add a MongoDB data source in addition to the MySQL data source created in [Connect your API to a data source](/doc/{{page.lang}}/lb2/Connect-your-API-to-a-data-source.html).
 
 `$ slc loopback:datasource`
 
@@ -66,4 +57,4 @@ Edit `datasources.json` to configure the data source so that it connects to the 
 }
 ```
 
-Next: Continue to [Create new models](/doc/en/lb2/Create-new-models.html).
+Next: Continue to [Create new models](/doc/{{page.lang}}/lb2/Create-new-models.html).

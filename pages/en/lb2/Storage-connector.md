@@ -17,11 +17,11 @@ If you haven't yet installed the storage component, in your application root dir
 $ npm install loopback-component-storage --save
 ```
 
-This will install the module from npm and add it as a dependency to the application's [package.json](http://docs.strongloop.com/display/LB/package.json) file.
+This will install the module from npm and add it as a dependency to the application's [package.json](/doc/{{page.lang}}/lb2/package.json.html) file.
 
 ## Creating a storage data source
 
-Create a new push data source with the [data source generator](/doc/en/lb2/Data-source-generator.html):
+Create a new push data source with the [data source generator](/doc/{{page.lang}}/lb2/Data-source-generator.html):
 
 ```shell
 $ apic create --type datasource
@@ -50,7 +50,7 @@ This creates an entry in `datasources.json` like this (for example):
 
 ## Configuring a storage data source
 
-Configure a storage data source by editing the [datasources.json](/doc/en/lb2/datasources.json.html) file,
+Configure a storage data source by editing the [datasources.json](/doc/{{page.lang}}/lb2/datasources.json.html) file,
 for example as shown in the [storage service example](https://github.com/strongloop/loopback-component-storage/blob/master/example-2.0/):
 
 **/server/datasources.json**
@@ -68,7 +68,7 @@ for example as shown in the [storage service example](https://github.com/strong
 
 ## Creating a storage model
 
-Use the [model generator](/doc/en/lb2/Model-generator.html) to create a new model, then edit the model.json file, 
+Use the [model generator](/doc/{{page.lang}}/lb2/Model-generator.html) to create a new model, then edit the model.json file, 
 as shown in the [storage service example](https://github.com/strongloop/loopback-component-storage/blob/master/example-2.0/):
 
 **/server/models/container.json**

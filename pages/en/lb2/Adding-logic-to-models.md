@@ -11,14 +11,14 @@ summary:
 
 **See also**:
 
-* [Defining boot scripts](/doc/en/lb2/Defining-boot-scripts.html)
-* [Defining middleware](/doc/en/lb2/Defining-middleware.html)
+* [Defining boot scripts](/doc/{{page.lang}}/lb2/Defining-boot-scripts.html)
+* [Defining middleware](/doc/{{page.lang}}/lb2/Defining-middleware.html)
 
 There are three ways to add custom application logic to models:
 
-* [Remote methods](/doc/en/lb2/Remote-methods.html) - REST endpoints mapped to Node functions.
-* [Remote hooks](/doc/en/lb2/Remote-hooks.html) - Logic that triggers when a remote method is executed (before or after).
-* [Operation hooks](/doc/en/lb2/Operation-hooks.html) - Logic triggered when a model performs create, read, update, and delete operations against a data source.
+* [Remote methods](/doc/{{page.lang}}/lb2/Remote-methods.html) - REST endpoints mapped to Node functions.
+* [Remote hooks](/doc/{{page.lang}}/lb2/Remote-hooks.html) - Logic that triggers when a remote method is executed (before or after).
+* [Operation hooks](/doc/{{page.lang}}/lb2/Operation-hooks.html) - Logic triggered when a model performs create, read, update, and delete operations against a data source.
 
 You can further refine the timing of custom logic by configuring how you call each method.
 In any case, you will be required to code your own logic as LoopBack simply provides the mechanisms to trigger your logic.

@@ -9,37 +9,25 @@ permalink: /doc/en/lb2/Create-new-models.html
 summary:
 ---
 
-{% include important.html content="
-
-**Prerequisites**:
-
-*   Install StrongLoop software as described in [Installing StrongLoop](/doc/en/lb2/Installing-StrongLoop)
-*   Follow [Getting started with LoopBack](/doc/en/lb2/Getting-started-with-LoopBack).
-
-**Recommended**: Read [LoopBack core concepts](/doc/en/lb2/LoopBack-core-concepts).
-
-" %}
+{% include content/gs-prereqs.html lang=page.lang %}
 
 Creating models with `slc loopback` is quick and easy.
 
-Recall in [Create a simple API](/doc/en/lb2/Create-a-simple-API.html) step of [Getting started](Getting-started-with-LoopBack_3836320.html) you created a CoffeeShop model.
+Recall in [Create a simple API](/doc/{{page.lang}}/lb2/Create-a-simple-API.html) step of [Getting started](Getting-started-with-LoopBack_3836320.html) you created a CoffeeShop model.
 
-Now you're going to create two new models, Review and Reviewer, with the `slc loopback` [model generator](/doc/en/lb2/Model-generator).
+Now you're going to create two new models, Review and Reviewer, with the `slc loopback` [model generator](/doc/{{page.lang}}/lb2/Model-generator).
 
 {% include note.html content="
+If you followed the previous step in the tutorial, go to [Define the Review model](#define-the-review-model).
 
-If you followed the previous step in the tutorial, go to [Define the Review model](/doc/en/lb2/Create-new-models.html).
-
-If you're just jumping in, follow the steps below to catch up...
-
-" %}
+If you're just jumping in, follow the steps below to catch up..." %}
 
 Get the app (in the state following the last article) from GitHub and install all its dependencies:
 
 ```
 $ git clone https://github.com/strongloop/loopback-getting-started-intermediate.git
 $ cd loopback-getting-started-intermediate
-$ git checkout step1 
+$ git checkout step1
 $ npm install
 ```
 
@@ -94,6 +82,10 @@ To exit the model generator, press RETURN when prompted for property name.
 
 Enter:
 
+`apic create --type model`
+
+Or with StrongLoop tools:
+
 `$ slc loopback:model`
 
 When prompted, enter or select the following:
@@ -110,7 +102,7 @@ To exit the model generator, press RETURN when prompted for property name.
 
 ## Update boot script to add data 
 
-Recall back in part I of [Getting started](Getting-started-with-LoopBack_3836320.html), you [added a boot script](/doc/en/lb2/Connect-your-API-to-a-data-source.html#ConnectyourAPItoadatasource-Addsometestdataandviewit) to create a database table from the model (via auto-migration) and add some data to the database.
+Recall back in part I of [Getting started](Getting-started-with-LoopBack_3836320.html), you [added a boot script](/doc/{{page.lang}}/lb2/Connect-your-API-to-a-data-source.html#ConnectyourAPItoadatasource-Addsometestdataandviewit) to create a database table from the model (via auto-migration) and add some data to the database.
 
 Now that you have some new models and a new data source, you need to update this script so it will create data structures in MongoDB and insert data via the new models.
 
@@ -126,7 +118,7 @@ This boot script has several functions:
 *   `createReviewers()` creates the Reviewer data structure in MongoDB using auto-migration and adds data to it.  
 *   `createReviews()` creates the Reviews data structure in MongoDB using auto-migration and adds data to it.
 
-See [Creating a database schema from models](/doc/en/lb2/Creating-a-database-schema-from-models) for more information on auto-migration. 
+See [Creating a database schema from models](/doc/{{page.lang}}/lb2/Creating-a-database-schema-from-models) for more information on auto-migration. 
 
 **server/boot/create-sample-models.js**
 
@@ -216,4 +208,4 @@ module.exports = function(app) {
 };
 ```
 
-Next: [Define model relations](/doc/en/lb2/Define-model-relations.html)
+Next: [Define model relations](/doc/{{page.lang}}/lb2/Define-model-relations.html)

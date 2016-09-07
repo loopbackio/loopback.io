@@ -9,33 +9,25 @@ permalink: /doc/en/lb2/Create-a-simple-API.html
 summary:
 ---
 
-{% include important.html content="
+{% include content/gs-prereqs.html lang=en %}
 
-**Prerequisite**: Install StrongLoop software as described in [Installing StrongLoop](/doc/en/lb2/Installing-StrongLoop).
-
-**Recommended**: Read [LoopBack core concepts](/doc/en/lb2/LoopBack-core-concepts).
-
-" %}
-
-Use the LoopBack command-line tool, `slc loopback`, to quickly create a LoopBack application, models, and data sources.  
-
-Use the [LoopBack command-line tool](/doc/en/lb2/Using-LoopBack-tools), `slc loopback`, to create and _scaffold_ applications.  Scaffolding simply means generating the basic code for your application to save you time.  You can then extend and modify the code as desired for your specific needs.
-
-{% include important.html content="
-
-Before following this tutorial, make sure you have the latest version of StrongLoop with:
-
-`$ npm install -g strongloop`
-
-Make sure you run this command recently (within 24 hours) to get the latest updates. We're always improving LoopBack!
-
-" %}
+Use the [application generator](/doc/{{page.lang}}/lb2/Application-generator.html) tool to quickly create a LoopBack application, models, and data sources.  
 
 ## Create new application
 
-To create a new application, run the LoopBack [application generator](/doc/en/lb2/Application-generator):
+To create a new application, run the LoopBack [application generator](/doc/{{page.lang}}/lb2/Application-generator):
 
-`$ slc loopback`
+If you're using IBM API Connect tools, the command is:
+
+```sh
+$ apic loopback
+```
+
+If using StrongLoop tools:
+
+```sh
+$ slc loopback
+```
 
 The LoopBack generator will greet you with some friendly ASCII art and prompt you for the name of the application.
 
@@ -56,14 +48,11 @@ _-----_
 ```
 
 {% include note.html content="
-
-You can use a different name for the application, but if you do, be sure to substitute your name for \"loopback-getting-started\" throughout the rest of this tutorial.
-
-" %}
+You can use a different name for the application, but if you do, be sure to substitute your name for \"loopback-getting-started\" throughout the rest of this tutorial." %}
 
 The generator will scaffold the application including:
 
-1.  Initializing the [project folder structure](/doc/en/lb2/Project-layout-reference).
+1.  Initializing the [project folder structure](/doc/{{page.lang}}/lb2/Project-layout-reference).
 2.  Creating default JSON files.
 3.  Creating default JavaScript files.
 4.  Downloading and installing dependent Node modules (as if you had manually done `npm install`).
@@ -72,10 +61,19 @@ The generator will scaffold the application including:
 
 Now that you've scaffolded the initial project, you're going to create create a _CoffeeShop_ model that will automatically have REST API endpoints.
 
-Go into your new application directory, then run the LoopBack [model generator](/doc/en/lb2/Model-generator):
+Go into your new application directory, then run the LoopBack [model generator](/doc/{{page.lang}}/lb2/Model-generator):
 
-```
+```sh
 $ cd loopback-getting-started
+```
+
+Then, using IBM API Connect developer toolkit:
+```sh
+$ apic create --type model
+```
+
+Or, using StrongLoop tools:
+```sh
 $ slc loopback:model
 ```
 
@@ -97,16 +95,16 @@ Then the generator will prompt you for the base class to use for the model.  Si
 
 ```
 [?] Select model's base class: (Use arrow keys)
-  Model 
-❯ PersistedModel 
-  ACL 
-  AccessToken 
-  Application 
-  Change 
+  Model
+❯ PersistedModel
+  ACL
+  AccessToken
+  Application
+  Change
   Checkpoint
 ```
 
-[PersistedModel ](http://apidocs.strongloop.com/loopback/#persistedmodel)is the base object for all models connected to a persistent data source such as a database.  See [LoopBack core concepts](/doc/en/lb2/LoopBack-core-concepts) for an overview of the model inheritance hierarchy.
+[PersistedModel ](http://apidocs.strongloop.com/loopback/#persistedmodel)is the base object for all models connected to a persistent data source such as a database.  See [LoopBack core concepts](/doc/{{page.lang}}/lb2/LoopBack-core-concepts) for an overview of the model inheritance hierarchy.
 
 One of the powerful advantages of LoopBack is that it automatically generates a REST API for your model.  The generator will ask whether you want to expose this REST API.
 
@@ -114,17 +112,17 @@ Hit **Enter** again to accept the default and expose the Person model via REST
 
 `[?] Expose CoffeeShop via the REST API? (Y/n) Y`
 
-LoopBack automatically creates a REST route associated with your model using the _plural_ of the model name.  By default, it pluralizes the name for you (by adding "s"), but you can specify a custom plural form if you wish.  See [Exposing models over REST](/doc/en/lb2/Exposing-models-over-REST) for all the details.  
+LoopBack automatically creates a REST route associated with your model using the _plural_ of the model name.  By default, it pluralizes the name for you (by adding "s"), but you can specify a custom plural form if you wish.  See [Exposing models over REST](/doc/{{page.lang}}/lb2/Exposing-models-over-REST) for all the details.  
 
 Press **Enter** to accept the default plural form (CoffeeShops):
 
 `[?] Custom plural form (used to build REST URL): `
 
-Next, you'll be asked whether you want to create the model on the server only or in the `/common` directory, where it can potentially be used by both server and [client LoopBack APIs](/doc/en/lb2/LoopBack-in-the-client).  Keep, the default, common, even though in this application you'll only be working with server-side models:
+Next, you'll be asked whether you want to create the model on the server only or in the `/common` directory, where it can potentially be used by both server and [client LoopBack APIs](/doc/{{page.lang}}/lb2/LoopBack-in-the-client).  Keep, the default, common, even though in this application you'll only be working with server-side models:
 
 ```
-? Common model or server only? 
-❯ common 
+? Common model or server only?
+❯ common
   server
 ```
 
@@ -172,13 +170,11 @@ The model generator will create two files in the application's `common/models` d
 
 {% include important.html content="
 
-The LoopBack [model generator](/doc/en/lb2/Model-generator), `slc loopback:model`, automatically converts camel-case model names (for example MyModel) to lowercase dashed names (my-model).  For example, if you create a model named \"FooBar\" with the model generator, it creates files `foo-bar.json` and `foo-bar.js` in `common/models`.  However, the model name (\"FooBar\") will be preserved via the model's name property.
-
-" %}
+The LoopBack [model generator](Model-generator.html),automatically converts camel-case model names (for example MyModel) to lowercase dashed names (my-model).  For example, if you create a model named \"FooBar\" with the model generator, it creates files `foo-bar.json` and `foo-bar.js` in `common/models`.  However, the model name (\"FooBar\") will be preserved via the model's name property." %}
 
 ## Check out the project structure
 
-For all the details of the canonical LoopBack application structure, see [Project layout reference](/doc/en/lb2/Project-layout-reference).
+For all the details of the canonical LoopBack application structure, see [Project layout reference](/doc/{{page.lang}}/lb2/Project-layout-reference).
 
 ## Run the application
 
@@ -192,10 +188,7 @@ Web server listening at: http://0.0.0.0:3000/
 ```
 
 {% include note.html content="
-
-Running your app with the `node` command is appropriate when you're developing on your local machine. Once you're ready to prepare for moving to production, you can run it with `slc start` to run it under control of StrongLoop Process Manager, that provides options for clustering, logging, monitoring, and much more. See [Operating Node applications](https://docs.strongloop.com/display/SLC/Operating-Node-applications) for more information on the power of the `slc` command-line tool.
-
-" %}
+Running your app with the `node` command is appropriate when you're developing on your local machine. " %}
 
 Open your browser to [http://0.0.0.0:3000/](http://0.0.0.0:3000/) (on some systems, you may need to use [http://localhost:3000](http://localhost:3000/) instead).  You'll see the default application response that displays some JSON with some status information; for example:
 
@@ -207,4 +200,4 @@ Now open your browser to [http://0.0.0.0:3000/explorer](http://0.0.0.0:3000/expl
 
 Through a set of simple steps using LoopBack, you've created a CoffeeShop model, specified its properties and then exposed it through REST. 
 
-Next: In [Use API Explorer](/doc/en/lb2/Use-API-Explorer.html), you'll explore the REST API you just created in more depth and exercise some of its operations.
+Next: In [Use API Explorer](/doc/{{page.lang}}/lb2/Use-API-Explorer.html), you'll explore the REST API you just created in more depth and exercise some of its operations.

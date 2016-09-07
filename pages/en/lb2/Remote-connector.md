@@ -12,8 +12,8 @@ summary:
 **See also**: [Example application](https://github.com/strongloop/loopback-example-connector/tree/remote)
 
 The remote connector enables you to use a LoopBack application as a data source via REST.
-The client can be a LoopBack application, a Node application, or a browser-based application running [LoopBack in the client](/doc/en/lb2/LoopBack-in-the-client.html).
-The connector uses [Strong Remoting](/doc/en/lb2/Strong-Remoting.html).
+The client can be a LoopBack application, a Node application, or a browser-based application running [LoopBack in the client](/doc/{{page.lang}}/lb2/LoopBack-in-the-client.html).
+The connector uses [Strong Remoting](/doc/{{page.lang}}/lb2/Strong-Remoting.html).
 
 In general, using the remote connector is more convenient than calling into REST API, and enables you to switch the transport later if you need to.
 
@@ -25,11 +25,11 @@ In your application root directory, enter:
 $ npm install loopback-connector-remote --save
 ```
 
-This will install the module and add it as a dependency to the application's [`package.json`](http://docs.strongloop.com/display/LB/package.json) file.
+This will install the module and add it as a dependency to the application's [`package.json`](/doc/{{page.lang}}/lb2/package.json.html) file.
 
 ## Creating an remote data source
 
-Create a new remote data source with the [datasource generator](/doc/en/lb2/Data-source-generator.html):
+Create a new remote data source with the [datasource generator](/doc/{{page.lang}}/lb2/Data-source-generator.html):
 
 ```shell
 $ apic create --type datasource

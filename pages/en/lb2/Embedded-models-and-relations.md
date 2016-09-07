@@ -14,11 +14,11 @@ summary:
 LoopBack relations enable you to create connections between models and provide navigation/aggregation APIs to deal with a graph of model instances.
 In addition to the traditional ones, LoopBack also supports the following embedded relations:
 
-* [EmbedsOne](/doc/en/lb2/Embedded-models-and-relations.html) - a model that embeds another model; for example, a Customer embeds one billingAddress.
-* [EmbedsMany](/doc/en/lb2/Embedded-models-and-relations.html) - a model that embeds many instances of another model.
+* [EmbedsOne](/doc/{{page.lang}}/lb2/Embedded-models-and-relations.html) - a model that embeds another model; for example, a Customer embeds one billingAddress.
+* [EmbedsMany](/doc/{{page.lang}}/lb2/Embedded-models-and-relations.html) - a model that embeds many instances of another model.
   For example, a Customer can have multiple email addresses and each email address is a complex object that contains label and address..
-* [EmbedsMany with belongsTo](/doc/en/lb2/Embedded-models-and-relations.html) - a model that embeds many links to related people, such as an author or a reader. 
-* [ReferencesMany](http://docs.strongloop.com/)
+* [EmbedsMany with belongsTo](/doc/{{page.lang}}/lb2/Embedded-models-and-relations.html) - a model that embeds many links to related people, such as an author or a reader. 
+* [ReferencesMany](/doc/{{page.lang}}/lb2/Embedded-models-and-relations.html)
 
 {% include important.html content="
 
@@ -113,7 +113,7 @@ For examples of these in use, see [boot scripts in loopback-example-relations](h
 
 ### Operation hooks
 
-You can define `before save` and `after save` [operation hooks](/doc/en/lb2/Operation-hooks.html) for an embedded model in an embedsOne relation.
+You can define `before save` and `after save` [operation hooks](/doc/{{page.lang}}/lb2/Operation-hooks.html) for an embedded model in an embedsOne relation.
 Then, updating or creating an instance of the container model will trigger the operation hook on the embedded model.
 When this occurs, `ctx.isNewInstance` is false, because only a new instance of the container model is created.
 
@@ -223,7 +223,7 @@ Customer.embedsOne(EmailAddress, {
 
 ### Operation hooks
 
-You can define `before save` and `after save` [operation hooks](/doc/en/lb2/Operation-hooks.html) for an embedded model in an embedsMany relation.
+You can define `before save` and `after save` [operation hooks](/doc/{{page.lang}}/lb2/Operation-hooks.html) for an embedded model in an embedsMany relation.
 Then, updating or creating an instance of the container model will trigger the operation hook on the embedded model.
 When this occurs, `ctx.isNewInstance` is false, because only a new instance of the container model is created.
 

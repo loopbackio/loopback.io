@@ -9,57 +9,46 @@ permalink: /doc/en/lb2/Creating-an-application.html
 summary:
 ---
 
-{% include important.html content="
-
-**Prerequisites**
-
-* Install **[API Connect](https://developer.ibm.com/apiconnect/)** or **[StrongLoop](https://docs.strongloop.com/display/SL/Installing-StrongLoop)**.
-* Read [LoopBack core concepts](/doc/en/lb2/LoopBack-core-concepts.html).
-
-" %}
-
-**See also**:
-
-* [Environment-specific configuration](/doc/en/lb2/Environment-specific-configuration.html)
-* [Versioning your API](/doc/en/lb2/Versioning-your-API.html)
-* [Standard project structure](/doc/en/lb2/Standard-project-structure.html)
-* [Tutorials and examples](/doc/en/lb2/Tutorials-and-examples.html)
-* [Creating models](/doc/en/lb2/Creating-models.html)
-* [Using built-in models](/doc/en/lb2/Using-built-in-models.html)
+{% include content/gs-prereqs.html lang=page.lang %}
 
 ## Creating a new application
 
 The easiest way to create an application is to use `apic loopback`.
 
-{% include note.html content="
+It is possible to create a LoopBack application by coding it from scratch, but 
+the [Application generator](Application-generator.html)
+does all the \"heavy lifting\" to create the basic scaffolding of the [standard project layout](Project-layout-reference.html).
+You can then customize the application to suit your needs using the CLI tools.
 
-It is possible to create a LoopBack application by coding it from scratch, but `apic loopback` 
-does all the \"heavy lifting\" to create the basic scaffolding of the [standard project layout](/doc/en/lb2/Project-layout-reference.html).
-You can then customize the application to suit your needs.
-When you create your application this way, you can continue to use `apic loopback` to add models, data sources, and so on.
-
-In general, the documentation assumes you've created your application using `apic loopback`.
-
-" %}
+In general, the documentation assumes you've created your application using the Application generator.
 
 Once you create your application, you may want to configure it, for example: 
 Turn off stack traces, disable API Explorer, and retrieve the values of environment variables.
-See [Environment-specific configuration](/doc/en/lb2/Environment-specific-configuration.html) for more information.
+See [Environment-specific configuration](/doc/{{page.lang}}/lb2/Environment-specific-configuration.html) for more information.
+
+See also:
+
+- [Environment-specific configuration](Environment-specific-configuration.html)
+- [Versioning your API](Versioning-your-API.html)
+- [Standard project structure](Standard-project-structure.html)
+- [Tutorials and examples](Tutorials-and-examples.html)
+- [Creating models](Creating-models.html)
+- [Using built-in models](Using-built-in-models.html)
 
 ### Standard project layout
 
-The application generator creates an application with the [standard project layout](/doc/en/lb2/Project-layout-reference.html).
+The application generator creates an application with the [standard project layout](/doc/{{page.lang}}/lb2/Project-layout-reference.html).
 
 To summarize:
 
 * `server` directory
   * `server.js` - Main application script; see below.
   * `config.json` - Global application settings, such as the REST API root, host name and port to use, and so on.
-      See [config.json](http://docs.strongloop.com/display/LB/config.json).
+      See [config.json](/doc/{{page.lang}}/lb2/config.json).
   * `model-config.json` - Binds models to data sources and specifies whether a model is exposed over REST, among other things.  
-      See [model-config.json](http://docs.strongloop.com/display/LB/model-config.json).
+      See [model-config.json](/doc/{{page.lang}}/lb2/model-config.json).
   * `datasources.json` - Data source configuration file.
-      See [datasources.json](http://docs.strongloop.com/display/LB/datasources.json).
+      See [datasources.json](h/doc/{{page.lang}}/lb2/datasources.json).
 * `client` directory (empty except for a README stub)
 * `common/models` directory - created when you create a model with the model generator, `apic create --type model`.
   * A JSON file and a JavaScript file for each model (for example, `my-model.json` and `my-model.js`).
@@ -105,9 +94,9 @@ and
 Start the web server.
 
 **7**:
-Emit the 'started' [event](/doc/en/lb2/Events.html).
+Emit the 'started' [event](/doc/{{page.lang}}/lb2/Events.html).
 
 **10 - 13**:
 Start [API Explorer](/pages/createpage.action?spaceKey=APIC&title=API-Explorer&linkCreation=true&fromPageId=9634284).
 
-**18**: [Initialize (boot) the application](/doc/en/lb2/Events.html).
+**18**: [Initialize (boot) the application](/doc/{{page.lang}}/lb2/Events.html).

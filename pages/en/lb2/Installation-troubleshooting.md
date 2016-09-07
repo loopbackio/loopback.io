@@ -15,7 +15,7 @@ Ensure you have the latest stable version of Node as stated on [http://nodejs.o
 
 ## Uninstall old versions
 
-If you installed StrongLoop software prior to Aug. 6, 2014, you must uninstall and then re-install the software.  See [Updating to the latest version](/doc/en/lb2/Updating-to-the-latest-version.html).
+If you installed StrongLoop software prior to Aug. 6, 2014, you must uninstall and then re-install the software.  See [Updating to the latest version](/doc/{{page.lang}}/lb2/Updating-to-the-latest-version.html).
 
 ## Make sure you have sufficient file privileges
 
@@ -63,7 +63,7 @@ LoopBack does not support Cygwin (Windows bash shell emulator), because Node doe
 
 ### Installation errors
 
-If you want to use LoopBack and the [slc loopback](/doc/en/lb2/Command-line-reference) command-line tool on Windows, but encounter installation errors running `npm install -g strongloop`, use the following workaround:
+If you want to use LoopBack and the [slc loopback](/doc/{{page.lang}}/lb2/Command-line-reference) command-line tool on Windows, but encounter installation errors running `npm install -g strongloop`, use the following workaround:
 
 ```
 $ npm install -g yo

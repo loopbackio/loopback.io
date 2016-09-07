@@ -11,18 +11,13 @@ summary:
 
 A _limit_ filter limits the number of records returned to the specified number (or less).
 
-{% include warning.html content="
-
-Methods of models in the [AngularJS client](/doc/en/lb2/AngularJS-JavaScript-SDK.html) have a different signature than those of the Node API.
-For more information, see [AngularJS SDK API](http://apidocs.strongloop.com/loopback-sdk-angular/).
-
-" %}
+{% include content/angular-methods-caveat.html lang=page.lang %}
 
 ### REST API
 
 `filter[limit]=_n_`
 
-You can also use [stringified JSON format](/doc/en/lb2/Querying-data.html#Queryingdata-UsingstringifiedJSONinRESTqueries) in a REST query.
+You can also use [stringified JSON format](/doc/{{page.lang}}/lb2/Querying-data.html#Queryingdata-UsingstringifiedJSONinRESTqueries) in a REST query.
 
 ### Node API
 

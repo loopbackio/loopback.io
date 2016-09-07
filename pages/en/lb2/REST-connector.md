@@ -19,8 +19,8 @@ summary:
 The LoopBack REST connector enables applications to interact with other (third party) REST APIs using a template-driven approach.
 It supports two different styles of API invocations:
 
-* [Resource operations](/doc/en/lb2/REST-connector.html)
-* [Defining a custom method using a template](/doc/en/lb2/REST-connector.html)
+* [Resource operations](/doc/{{page.lang}}/lb2/REST-connector.html)
+* [Defining a custom method using a template](/doc/{{page.lang}}/lb2/REST-connector.html)
 
 ## Installation
 
@@ -30,11 +30,11 @@ In your application root directory, enter:
 $ npm install loopback-connector-rest --save
 ```
 
-This will install the module from npm and add it as a dependency to the application's [package.json](http://docs.strongloop.com/display/LB/package.json) file.
+This will install the module from npm and add it as a dependency to the application's [package.json](/doc/{{page.lang}}/lb2/package.json.html) file.
 
 ## Creating a REST data source
 
-Use the [DataSource generator](/doc/en/lb2/Data-source-generator) to add a REST data source to your application.
+Use the [DataSource generator](/doc/{{page.lang}}/lb2/Data-source-generator) to add a REST data source to your application.
 
 ```shell
 $ apic create --type datasource
@@ -45,7 +45,7 @@ $ slc loopback:datasource
 ```
 
 When prompted, scroll down in the list of connectors and choose **REST services (supported by StrongLoop)**.
-This adds an entry to [datasources.json](/doc/en/lb2/datasources.json.html) (for example):
+This adds an entry to [datasources.json](/doc/{{page.lang}}/lb2/datasources.json.html) (for example):
 
 ```javascript
 ...
@@ -91,7 +91,7 @@ Configure the REST connector by editing `datasources.json` manually (for examp
 
 For a REST data source, you can define an array of  _operation_ objects to specify the REST API mapping. Each operation object can have the following two properties:
 
-* template: See how to define a custom method template [below](/doc/en/lb2/REST-connector.html).
+* template: See how to define a custom method template [below](/doc/{{page.lang}}/lb2/REST-connector.html).
 * functions: An object that maps a JavaScript function to a list of parameter names.
   For example, a function geocode(street, city, zipcode) will be created so that the first argument will be the value of street variable in the template, second for city, and third for zipcode. 
   The function can be executed anywhere by the server (in a boot script, through middleware, or within a model's .js file if it is attached to the REST datasource). 

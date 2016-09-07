@@ -11,7 +11,7 @@ summary:
 
 **See also**:
 
-* [middleware.json](/doc/en/lb2/middleware.json.html)
+* [middleware.json](/doc/{{page.lang}}/lb2/middleware.json.html)
 * [Example app loopback-faq-user-management](https://github.com/strongloop/loopback-faq-user-management)
 
 ## Overview
@@ -23,11 +23,11 @@ Using phases helps to avoid ordering issues that can occur with standard Express
 
 LoopBack supports the following types of middleware:
 
-* **Pre-processing middleware** for custom application logic. See [example of static middleware](/doc/en/lb2/Defining-middleware.html). 
+* **Pre-processing middleware** for custom application logic. See [example of static middleware](/doc/{{page.lang}}/lb2/Defining-middleware.html). 
 * **Dynamic request handling middleware** to serve dynamically-generated responses, for example HTML pages rendered from templates and JSON responses to REST API requests.
-  See [example of pre-processing middleware](/doc/en/lb2/Defining-middleware.html).
-* **Static middleware** to serve static client-side assets.  See [example of static middleware](/doc/en/lb2/Defining-middleware.html).
-* **Error-handling middleware** to deal with request errors. See [example of error-handling middleware](/doc/en/lb2/Defining-middleware.html).
+  See [example of pre-processing middleware](/doc/{{page.lang}}/lb2/Defining-middleware.html).
+* **Static middleware** to serve static client-side assets.  See [example of static middleware](/doc/{{page.lang}}/lb2/Defining-middleware.html).
+* **Error-handling middleware** to deal with request errors. See [example of error-handling middleware](/doc/{{page.lang}}/lb2/Defining-middleware.html).
 
 ### How to add middleware
 
@@ -35,17 +35,17 @@ To add middleware to your application:
 
 1.  **Specify the middleware function**:
     1.  If using an existing function or package, add the code to your application or install the package. 
-    2.  If you are creating a new middleware function, write it. See [Defining a new middleware handler function](/doc/en/lb2/Defining-middleware.html).
+    2.  If you are creating a new middleware function, write it. See [Defining a new middleware handler function](/doc/{{page.lang}}/lb2/Defining-middleware.html).
 
 2.  **Register the middleware**:
-    * Edit `server/middleware.json`. This is the recommended way to register middleware. See [Registering middleware in middleware.json](/doc/en/lb2/Defining-middleware.html).
-    * Alternatively, register the middleware in application code. See [Registering middleware in JavaScript](/doc/en/lb2/Defining-middleware.html).
+    * Edit `server/middleware.json`. This is the recommended way to register middleware. See [Registering middleware in middleware.json](/doc/{{page.lang}}/lb2/Defining-middleware.html).
+    * Alternatively, register the middleware in application code. See [Registering middleware in JavaScript](/doc/{{page.lang}}/lb2/Defining-middleware.html).
 
 ### Middleware phases
 
 LoopBack defines a number of _phases_, corresponding to different aspects of application execution.
 When you register middleware, you can specify the phase in which the application will call it.
-See [Registering middleware in middleware.json](/doc/en/lb2/Defining-middleware.html) and [Using the LoopBack API](/doc/en/lb2/Defining-middleware.html).
+See [Registering middleware in middleware.json](/doc/{{page.lang}}/lb2/Defining-middleware.html) and [Using the LoopBack API](/doc/{{page.lang}}/lb2/Defining-middleware.html).
 If you register middleware (or routes) with the Express API, then it is executed at the beginning of the `routes` phase.
 
 The predefined phases are:
@@ -79,7 +79,7 @@ Always explicitly order the middleware using appropriate phases when order matte
 LoopBack provides convenience middleware for commonly-used Express/Connect middleware, as described in the following table.
 
 When you use this middleware, you don't have to write any code or install any packages; you just specify in which phase you want it to be called.
-See [Registering middleware in middleware.json](/doc/en/lb2/Defining-middleware.html).
+See [Registering middleware in middleware.json](/doc/{{page.lang}}/lb2/Defining-middleware.html).
 
 <table>
   <thead>
@@ -208,9 +208,9 @@ $ npm install --save <module-name>
 ```
 
 Then simply register it so that it is called as needed.
-See [Registering middleware in middleware.json](/doc/en/lb2/Defining-middleware.html) 
+See [Registering middleware in middleware.json](/doc/{{page.lang}}/lb2/Defining-middleware.html) 
 and
-[Registering middleware in JavaScript](/doc/en/lb2/Defining-middleware.html).
+[Registering middleware in JavaScript](/doc/{{page.lang}}/lb2/Defining-middleware.html).
 
 ### Defining a new middleware handler function
 
@@ -317,14 +317,14 @@ module.exports = function(options) {
 };
 ```
 
-For details about the `options` object, refer to [Middleware configuration properties](/doc/en/lb2/Defining-middleware.html).
+For details about the `options` object, refer to [Middleware configuration properties](/doc/{{page.lang}}/lb2/Defining-middleware.html).
 
 ## Registering middleware in middleware.json
 
 The easiest way to register middleware is in `server/middleware.json`.
 This file specifies all an application's middleware functions and the phase in which they are called.
 
-When you create an application using the [Application generator](/doc/en/lb2/Application-generator.html) 
+When you create an application using the [Application generator](/doc/{{page.lang}}/lb2/Application-generator.html) 
 it creates a default `middleware.json` file that looks as follows:
 
 **server/middleware.json**
@@ -373,11 +373,11 @@ phase[:sub-phase] : {
 
 Where:
 
-* _phase_:      is one of the predefined phases listed above (initial, session, auth, and so on) or a custom phase; see [Adding a custom phase](/doc/en/lb2/Defining-middleware.html).
+* _phase_:      is one of the predefined phases listed above (initial, session, auth, and so on) or a custom phase; see [Adding a custom phase](/doc/{{page.lang}}/lb2/Defining-middleware.html).
 * _sub-phase_:  (optional) can be `before` or `after`.
-* _name_:       optional middleware name. See [Middleware configuration properties](/doc/en/lb2/Defining-middleware.html) below.
-* _middlewarePath_: path to the middleware function. See [Path to middleware function](/doc/en/lb2/Defining-middleware.html) below.
-* _paramSpec_:  value of the middleware parameters, typically a JSON object. See [Middleware configuration properties](/doc/en/lb2/Defining-middleware.html) below.
+* _name_:       optional middleware name. See [Middleware configuration properties](/doc/{{page.lang}}/lb2/Defining-middleware.html) below.
+* _middlewarePath_: path to the middleware function. See [Path to middleware function](/doc/{{page.lang}}/lb2/Defining-middleware.html) below.
+* _paramSpec_:  value of the middleware parameters, typically a JSON object. See [Middleware configuration properties](/doc/{{page.lang}}/lb2/Defining-middleware.html) below.
 * _methodSpec_: HTTP methods, such as 'GET', 'POST', and 'PUT'. If not present, applies to all methods.
 * _routeSpec_:  REST endpoint(s) that trigger the middleware.
 
@@ -386,7 +386,7 @@ Where:
 Specify the path to the middleware function (_middlewarePath)_ in the following ways:
 
 * For an external middleware module installed in the project, just use the name of the module; for example `compression`.
-  See [Using other middleware](/doc/en/lb2/Defining-middleware.html).
+  See [Using other middleware](/doc/{{page.lang}}/lb2/Defining-middleware.html).
 * For a script in a module installed in the project, use the path to the module; for example `loopback/server/middleware/rest`.
 * For a script with a custom middleware function, use the path relative to `middleware.json`, for example `./middleware/custom`.
 * Absolute path to the script file (not recommended).
@@ -513,7 +513,7 @@ For any middleware configuration property, you can specify a variable in the val
 
 Where _var_ is a property of the [`app`](https://apidocs.strongloop.com/loopback/#var-app-loopback) object. These properties include:
 
-* [Application-wide properties](/doc/en/lb2/config.json.html#config.json-Top-levelproperties) such as those defined in `config.json`.
+* [Application-wide properties](/doc/{{page.lang}}/lb2/config.json.html#config.json-Top-levelproperties) such as those defined in `config.json`.
 * [Express app object properties](http://expressjs.com/4x/api.html#app.settings.table).
 
 For example, the following `middleware.json` configuration will load LoopBack's built-in rest middleware (loopback.rest)
@@ -565,7 +565,7 @@ For example, below is a `middleware.json` file defining a new phase "log" that
 You can further customize configuration through `middleware.local.js`, `middleware.local.json`, and `middleware._env_.js` or `middleware._env_.json`,
 where _`env`_ is the value of `NODE_ENV` environment variable (typically `development` or `production`).
 
-See [Environment-specific configuration](/doc/en/lb2/Environment-specific-configuration.html) for more information.
+See [Environment-specific configuration](/doc/{{page.lang}}/lb2/Environment-specific-configuration.html) for more information.
 
 ## Registering middleware in JavaScript
 
@@ -626,9 +626,9 @@ The parameters are:
 
 1.  _`route`_, an optional parameter that specifies the URI route or "mount path" to which the middleware is bound.
     When the application receives an HTTP request at this route, it calls (or _triggers_) the handler function.
-    See [Specifying routes](/doc/en/lb2/Defining-middleware.html).
+    See [Specifying routes](/doc/{{page.lang}}/lb2/Defining-middleware.html).
 2.  The middleware handler function (or just "middleware function").
-    See [Defining a new middleware handler function](/doc/en/lb2/Defining-middleware.html).
+    See [Defining a new middleware handler function](/doc/{{page.lang}}/lb2/Defining-middleware.html).
 
 For example:
 
@@ -793,9 +793,9 @@ The request processing time is 4.281957 ms. //your results will vary
 
 ### Routing middleware
 
-For routes serving JSON, best practice is to create a new model and implement the routes as [remote methods](/doc/en/lb2/Remote-methods.html).
+For routes serving JSON, best practice is to create a new model and implement the routes as [remote methods](/doc/{{page.lang}}/lb2/Remote-methods.html).
 For routes serving non-JSON responses, best practice is to define them the standard "Express way" in `server.js` or a boot script.
-For more information, see [Routing](/doc/en/lb2/Routing.html) and [Routing (Express documentation)](http://expressjs.com/guide/routing.html).
+For more information, see [Routing](/doc/{{page.lang}}/lb2/Routing.html) and [Routing (Express documentation)](http://expressjs.com/guide/routing.html).
 
 {% include note.html content="
 
@@ -814,7 +814,7 @@ LoopBack registers two error-handling middleware by default:
   so that 404 error responses are consistent with "usual" error responses.
 * `errorhandler` middleware is from the [errorhandler](https://github.com/expressjs/errorhandler) module,
   previously available in Express v.3 as `express.errorHandler`. For information on customizing this error handler.
-  See [Customizing REST error handling](/doc/en/lb2/Environment-specific-configuration.html#Environment-specificconfiguration-CustomizingRESTerrorhandling).
+  See [Customizing REST error handling](/doc/{{page.lang}}/lb2/Environment-specific-configuration.html#Environment-specificconfiguration-CustomizingRESTerrorhandling).
 
 Example of a custom error processing middleware:
 

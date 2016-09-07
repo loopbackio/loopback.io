@@ -22,10 +22,10 @@ Many relational databases support transactions to help enforce data consistency 
 
 A LoopBack model can perform operations in a transaction when the model is attached to one of the following connectors:
 
-* [MySQL connector](/doc/en/lb2/MySQL-connector.html) (IMPORTANT: Only with InnoDB as the storage engine).
-* [PostgreSQL connector](/doc/en/lb2/PostgreSQL-connector.html)
-* [SQL Server connector](/doc/en/lb2/SQL-Server-connector.html)
-* [Oracle connector](/doc/en/lb2/Oracle-connector.html)
+* [MySQL connector](/doc/{{page.lang}}/lb2/MySQL-connector.html) (IMPORTANT: Only with InnoDB as the storage engine).
+* [PostgreSQL connector](/doc/{{page.lang}}/lb2/PostgreSQL-connector.html)
+* [SQL Server connector](/doc/{{page.lang}}/lb2/SQL-Server-connector.html)
+* [Oracle connector](/doc/{{page.lang}}/lb2/Oracle-connector.html)
 
 ## Transaction APIs
 

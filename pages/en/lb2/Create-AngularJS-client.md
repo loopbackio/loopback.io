@@ -9,27 +9,16 @@ permalink: /doc/en/lb2/Create-AngularJS-client.html
 summary:
 ---
 
-{% include important.html content="
+{% include content/gs-prereqs.html lang=page.lang %}
 
-**Prerequisite**: Install StrongLoop software as described in [Installing StrongLoop](/doc/en/lb2/Installing-StrongLoop).
-
-**Recommended**: Read [LoopBack core concepts](/doc/en/lb2/LoopBack-core-concepts).
-
-" %}{% include note.html content="
-
-To follow this step, you should have a basic understanding of [AngularJS](https://angularjs.org/).
-
-" %}
+{% include note.html content="To follow this step, you should have a basic understanding of [AngularJS](https://angularjs.org/)." %}
 
 The LoopBack AngularJS SDK automatically creates a client JavaScript API that enables you to make AngularJS calls to your LoopBack models.
 
 {% include note.html content="
+If you followed the previous step in the tutorial, go to [Introducing the AngularJS SDK](#introducing-the-angularjs-sdk).
 
-If you followed the previous step in the tutorial, go to [Introducing the AngularJS SDK](/doc/en/lb2/Create-AngularJS-client.html).
-
-If you're just jumping in, follow the steps below to catch up...
-
-" %}
+If you're just jumping in, follow the steps below to catch up..." %}
 
 Get the app (in the state following the last article plus all the client files) from GitHub and install all its dependencies:
 
@@ -42,11 +31,11 @@ $ npm install
 
 ## Introducing the AngularJS SDK
 
-[AngularJS](http://angularjs.org/)  is an open-source JavaScript [model–view–controller](http://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller) (MVC) framework for browser-based applications.  LoopBack provides an [AngularJS JavaScript SDK](/doc/en/lb2/AngularJS-JavaScript-SDK) to facilitate creating AngularJS clients for your LoopBack API server-side apps.  The SDK is installed when you install StrongLoop.
+[AngularJS](http://angularjs.org/)  is an open-source JavaScript [model–view–controller](http://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller) (MVC) framework for browser-based applications.  LoopBack provides an [AngularJS JavaScript SDK](/doc/{{page.lang}}/lb2/AngularJS-JavaScript-SDK) to facilitate creating AngularJS clients for your LoopBack API server-side apps.  The SDK is installed when you install StrongLoop.
 
 The SDK provides auto-generated AngularJS services, compatible with [`ngResource.$resource`](http://docs.angularjs.org/api/ngResource.%24resource), that provide client-side representation of the models and remote methods in the LoopBack server application.  The SDK also includes some command-line tools, including `lb-ng` that generates Angular $resource services for your LoopBack application, creating in effect a dynamic client that automatically includes client-side APIs to access your LoopBack models and methods.  You don't have to manually write any static code.
 
-For more information, see [AngularJS JavaScript SDK](/doc/en/lb2/AngularJS-JavaScript-SDK).
+For more information, see [AngularJS JavaScript SDK](/doc/{{page.lang}}/lb2/AngularJS-JavaScript-SDK).
 
 ## Generate lb-services.js
 
@@ -62,10 +51,7 @@ This command creates `client/js/services/lb-services.js`.
 ## Copy the other client files
 
 {% include note.html content="
-
-The `lb-ng` tool does the \"heavy lifting\" of creating the client JavaScript API that works with your LoopBack back-end. However, you still need to create the HTML/CSS and client JavaScript code that actually calls into this AngularJS API and defines the client-side functionality and appearance of your app. In general, creating this part of the app is entirely up to you. This tutorial includes an example of such a client implementation that you can use to understand the process.
-
-" %}
+The `lb-ng` tool does the \"heavy lifting\" of creating the client JavaScript API that works with your LoopBack back-end. However, you still need to create the HTML/CSS and client JavaScript code that actually calls into this AngularJS API and defines the client-side functionality and appearance of your app. In general, creating this part of the app is entirely up to you. This tutorial includes an example of such a client implementation that you can use to understand the process." %}
 
 If you've been following the entire tutorial (and didn't jump in and clone the project mid-way through), then you'll need to clone it now to get the client files required for this step.  Then copy the `client` sub-directory to your project directory:
 
@@ -584,7 +570,7 @@ Angular _services_ are substitutable objects that you connect  together using 
 
 The `js/services` directory contains two AngularJS services libraries: `auth.js` and `lb-services.js`.
 
-You generated the l`b-services.js` previously, and it's described in [Generate lb-services.js](/doc/en/lb2/Create-AngularJS-client.html). 
+You generated the l`b-services.js` previously, and it's described in [Generate lb-services.js](/doc/{{page.lang}}/lb2/Create-AngularJS-client.html). 
 
 The other file, `auth.js`, provides a simple interface for low-level authentication mechanisms.  It uses the `Reviewer` model (that extends the base `User` model) and defines the following services:
 
@@ -644,7 +630,7 @@ angular
 
 The `client/views` directory contains seven "partial" view templates loaded by `client/index.html` using the [ngView](https://docs.angularjs.org/api/ngRoute/directive/ngView) directive  A "partial" is a segment of a template in its own HTML file. 
 
-The [table above](/doc/en/lb2/Create-AngularJS-client.html) describes how the views correspond to states and controllers.
+The [table above](/doc/{{page.lang}}/lb2/Create-AngularJS-client.html) describes how the views correspond to states and controllers.
 
 ## Run the application
 
@@ -662,6 +648,6 @@ Now load [http://0.0.0.0:3000/](http://0.0.0.0:3000/) in your browser.  You s
 
 {% include image.html file="5570658.png" alt="" %}
 
-You should be able to run the application through its paces, as described in [Introducing the Coffee Shop Reviews app](/doc/en/lb2/Introducing-the-Coffee-Shop-Reviews-app.html).
+You should be able to run the application through its paces, as described in [Introducing the Coffee Shop Reviews app](/doc/{{page.lang}}/lb2/Introducing-the-Coffee-Shop-Reviews-app.html).
 
-Next: Go to [Deploying your application](/doc/en/lb2/Deploying-your-application.html) for an example of deploying your application to production using StrongLoop Process Manager.
+**Next** See [Learn more](/doc/{{page.lang}}/lb2/Learn-more.html) for pointers to learn more about LoopBack.

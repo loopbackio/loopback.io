@@ -9,15 +9,11 @@ permalink: /doc/en/lb2/Boot-script-generator.html
 summary:
 ---
 
-{% include important.html content="
-Before running this generator, you must create an application using the [Application generator](/doc/en/lb2/Application-generator.html).
-
-Then you must run the command from the root directory of the application."
-%}
+{% include content/generator-create-app.html lang=page.lang %}
 
 ### Synopsis
 
-The LoopBack boot script generator adds a new [boot script](/doc/en/lb2/Defining-boot-scripts.html) to a LoopBack application.
+The LoopBack boot script generator adds a new [boot script](/doc/{{page.lang}}/lb2/Defining-boot-scripts.html) to a LoopBack application.
 
 ```shell
 $ [slc | apic] loopback:boot-script [options] [<name>]

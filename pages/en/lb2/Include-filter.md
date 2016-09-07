@@ -9,32 +9,23 @@ permalink: /doc/en/lb2/Include-filter.html
 summary:
 ---
 
-**See also**: [Querying related models](/doc/en/lb2/Querying-related-models.html).
+**See also**: [Querying related models](/doc/{{page.lang}}/lb2/Querying-related-models.html).
 
 An _include_ filter enables you to include results from related models in a query, for example models that have belongsTo or hasMany relations, to optimize the number of requests.
-See [Creating model relations](/doc/en/lb2/Creating-model-relations.html) for more information.
+See [Creating model relations](/doc/{{page.lang}}/lb2/Creating-model-relations.html) for more information.
 
 The value of the include filter can be a string, an array, or an object.
 
-{% include important.html content="
-
-You can use an _include_ filter with `find(),` `findOne()` and `findById()`.
-
-" %}
+{% include important.html content="You can use an _include_ filter with `find(),` `findOne()` and `findById()`." %}
 
 ### **REST API**
 
 filter[include][_relatedModel_]=_propertyName_
-You can also use [stringified JSON format](/doc/en/lb2/Querying-data.html#Queryingdata-UsingstringifiedJSONinRESTqueries) in a REST query.
+You can also use [stringified JSON format](/doc/{{page.lang}}/lb2/Querying-data.html#Queryingdata-UsingstringifiedJSONinRESTqueries) in a REST query.
 
 ### Node API
 
-{% include warning.html content="
-
-Methods of models in the [AngularJS client](/doc/en/lb2/AngularJS-JavaScript-SDK.html) have a different signature than those of the Node API.
-For more information, see [AngularJS SDK API](http://apidocs.strongloop.com/loopback-sdk-angular/).
-
-" %}
+{% include content/angular-methods-caveat.html lang=page.lang %}
 
 ```javascript
 {include: 'relatedModel'}

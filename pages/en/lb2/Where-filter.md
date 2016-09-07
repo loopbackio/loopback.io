@@ -28,16 +28,11 @@ For example, here is a query to find cars with `odo` is less than 30,000:
 
 `/cars?filter[where][odo][lt]=30000`
 
-You can also use [stringified JSON format](/doc/en/lb2/Querying-data.html#Queryingdata-UsingstringifiedJSONinRESTqueries) in a REST query.
+You can also use [stringified JSON format](/doc/{{page.lang}}/lb2/Querying-data.html#Queryingdata-UsingstringifiedJSONinRESTqueries) in a REST query.
 
 ## Node API
 
-{% include warning.html content="
-
-Methods of models in the [AngularJS client](/doc/en/lb2/AngularJS-JavaScript-SDK.html) have a different signature than those of the Node API.
-For more information, see [AngularJS SDK API](http://apidocs.strongloop.com/loopback-sdk-angular/).
-
-" %}
+{% include content/angular-methods-caveat.html lang=page.lang %}
 
 ### Where clause for queries
 
@@ -56,7 +51,7 @@ Where:
 
 * _property_ is the name of a property (field) in the model being queried.
 * _value_ is a literal value. 
-* _op_ is one of the [operators](/doc/en/lb2/Where-filter.html) listed below.
+* _op_ is one of the [operators](/doc/{{page.lang}}/lb2/Where-filter.html) listed below.
 
 ```javascript
 Cars.find({where: {carClass:'fullsize'}});
@@ -67,20 +62,14 @@ The equivalent REST query would be:
 `/api/cars?filter[where][carClass]=fullsize`
 
 {% include tip.html content="
-
 The above where clause syntax is for queries, and not for [`count()`](http://apidocs.strongloop.com/loopback/#persistedmodel-count).
-For all other methods, including `count()`, omit the `{ where : ... }` wrapper; see [Where clause for other methods](/doc/en/lb2/Where-filter.html) below.
-
-" %}
+For all other methods, including `count()`, omit the `{ where : ... }` wrapper; see [Where clause for other methods](Where-filter.html) below." %}
 
 ### Where clause for other methods
 
 {% include important.html content="
-
 When you call the Node APIs _for methods other than queries_, that is for methods that update and delete
-(and [`count()`](http://apidocs.strongloop.com/loopback/#persistedmodel-count)), don't wrap the where clause in a `{ where : ... }` object,
-simply use the condition as the argument as shown below. See examples below.
-
+(and [`count()`](http://apidocs.strongloop.com/loopback/#persistedmodel-count)), don't wrap the where clause in a `{ where : ... }` object, simply use the condition as the argument as shown below. See examples below.
 " %}
 
 In the first form below, the condition is equivalence, that is, it tests whether _property_ equals _value_. The second form is for all other conditions.
@@ -97,7 +86,7 @@ Where:
 
 * _property_ is the name of a property (field) in the model being queried.
 * _value_ is a literal value. 
-* _op_ is one of the [operators](/doc/en/lb2/Where-filter.html) listed below.
+* _op_ is one of the [operators](/doc/{{page.lang}}/lb2/Where-filter.html) listed below.
 
 For example, below shows a where clause in a call to a model's [updateAll()](http://apidocs.strongloop.com/loopback/#persistedmodel-updateall) method.
 Note the lack of `{ where : ... }` in the argument.
@@ -125,14 +114,10 @@ productModel.destroyAll({cost: {gt: 100}}, function(err, obj) { ... });
 
 ### Default scopes with where filters
 
-Adding a `scope` to a model definition (in the [`model.json` file](/doc/en/lb2/Model-definition-JSON-file.html))
+Adding a `scope` to a model definition (in the [`model.json` file](/doc/{{page.lang}}/lb2/Model-definition-JSON-file.html))
 automatically adds a method to model called `defaultScope()`. LoopBack will call this method whenever a model is created, updated, or queried.
 
-{% include tip.html content="
-
-Default scopes with a `where` filter may not work as you expect!
-
-" %}
+{% include tip.html content="Default scopes with a `where` filter may not work as you expect!" %}
 
 Each time a model instance is created or updated, the generated `defaultScope()` method will modify the model's properties
 matching the `where` filter to enforce the values specified.
@@ -154,7 +139,7 @@ var defaultScope = Report.defaultScope;
 
 ## Operators
 
-This table describes the operators available in "where" filters. See [Examples](/doc/en/lb2/Where-filter.html) below.
+This table describes the operators available in "where" filters. See [Examples](/doc/{{page.lang}}/lb2/Where-filter.html) below.
 
 <table>
   <tbody>
@@ -232,7 +217,7 @@ Use the AND and OR operators to create compound logical filters based on simple 
 
 Where_ condition1_ and_ condition2_ are a filter conditions.
 
-See [examples](/doc/en/lb2/Where-filter.html) below.
+See [examples](/doc/{{page.lang}}/lb2/Where-filter.html) below.
 
 ### Regular expressions
 
@@ -241,10 +226,7 @@ You can use regular expressions in a where filter, with the following syntax. Y
 Essentially, `regexp` is just like an operator in which you provide a regular expression value as the comparison value.
 
 {% include tip.html content="
-
-A regular expression value can also include one or more [flags](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions#Advanced_searching_with_flags).
-For example, append `/i` to the regular expression to perform a case-insensitive match.
-
+A regular expression value can also include one or more [flags](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions#Advanced_searching_with_flags).  For example, append `/i` to the regular expression to perform a case-insensitive match.
 " %}
 
 **Node API**
@@ -274,11 +256,8 @@ For more information on JavaScript regular expressions,
 see [Regular Expressions (Mozilla Developer Network)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions).
 
 {% include tip.html content="
-
 The above where clause syntax is for queries. For updates and deletes, omit the `{ where : ... }` wrapper.
-See [Where clause for other methods](/doc/en/lb2/Where-filter.html) below.
-
-" %}
+See [Where clause for other methods](Where-filter.html) below." %}
 
 For example, this query returns all cars for which the model starts with a capital "T":
 
@@ -306,10 +285,7 @@ A regular expression value can also include one or more [flags](https://develop
 For example, append `/i` to the regular expression to perform a case-insensitive match.
 
 {% include important.html content="
-
-When using a regular expression flag with the REST API, you _must_ precede the regular expression with a slash character (`/`).
-
-" %}
+When using a regular expression flag with the REST API, you _must_ precede the regular expression with a slash character (`/`)." %}
 
 The following REST query returns all cars for which the model starts with a capital "T"::
 
@@ -428,7 +404,7 @@ Shirts.find({where: {size: {between: [0,7]}}}, function (err, posts) { ... } )
 
 The `where.<field>.near` filter is different from other where filters: most where filters **limit**the number of records returned,
 whereas `near` **orders** them, making it more like a SQL `order by` clause.
-By combining it with [`limit`](/doc/en/lb2/Limit-filter.html), you can create a query to get, for example, the **three records nearest to a given location**.
+By combining it with [`limit`](/doc/{{page.lang}}/lb2/Limit-filter.html), you can create a query to get, for example, the **three records nearest to a given location**.
 
 For example:
 
@@ -499,9 +475,7 @@ var resultsPromise = Restaurants.find({
 
 Spell Carefully!
 
-If `unit` value is mistyped, for example `'mile'` instead of `'miles'`, LoopBack will **silently ignore the filter!**
-
-" %}
+If `unit` value is mistyped, for example `'mile'` instead of `'miles'`, LoopBack will silently ignore the filter! " %}
 
 ### like and nlike
 

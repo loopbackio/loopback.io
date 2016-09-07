@@ -60,11 +60,11 @@ For more general information on promises, see:
 
 Promise support in LoopBack is still in progress. The following are complete:
 
-* [Strong Remoting](/doc/en/lb2/Strong-Remoting.html)
-* [Operation hooks](/doc/en/lb2/Operation-hooks.html)
+* [Strong Remoting](/doc/{{page.lang}}/lb2/Strong-Remoting.html)
+* [Operation hooks](/doc/{{page.lang}}/lb2/Operation-hooks.html)
 * DAO and relation methods  
 * loopback-datasource-juggler methods like `automigrate`, `autoupdate`, `discover*`, etc.
-* The following [built-in models](/doc/en/lb2/Using-built-in-models.html) support the promises API:
+* The following [built-in models](/doc/{{page.lang}}/lb2/Using-built-in-models.html) support the promises API:
 
     * [User](https://apidocs.strongloop.com/loopback/#user) 
     * [Application](https://apidocs.strongloop.com/loopback/#application) 

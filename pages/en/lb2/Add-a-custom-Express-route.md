@@ -9,25 +9,16 @@ permalink: /doc/en/lb2/Add-a-custom-Express-route.html
 summary:
 ---
 
-<div class="markdown-body">{% include important.html content="
-
-**Prerequisite**: Install StrongLoop software as described in [Installing StrongLoop](/doc/en/lb2/Installing-StrongLoop).
-
-**Recommended**: Read [LoopBack core concepts](/doc/en/lb2/LoopBack-core-concepts).
-
-" %}
+{% include content/gs-prereqs.html lang=page.lang %}
 
 Because LoopBack is built on Express, you can add custom routes just as you do in Express.
 
 In this part of the tutorial, you're going to add a new custom route.
 
 {% include note.html content="
+If you followed the previous steps in the tutorial, skip down to [Introducing boot scripts](#introducing-boot-scripts).
 
-If you followed the previous steps in the tutorial, skip down to [Introducing boot scripts](/doc/en/lb2/Add-a-custom-Express-route.html).
-
-If you're just jumping in, follow the steps below to catch up...
-
-" %}
+If you're just jumping in, follow the steps below to catch up..." %}
 
 Get the app (in the state following the last article) from GitHub and install all its dependencies:
 
@@ -42,12 +33,12 @@ $ npm install
 
 When a LoopBack application starts (or "bootstraps"), it runs the scripts in the `/server/boot` directory, known as _boot scripts_.  By default, LoopBack loads boot scripts in alphabetical order.  
 
-The standard scaffolded LoopBack application created by the [application generator](/doc/en/lb2/Application-generator) contains the following standard boot scripts (in `/server/boot`) that perform basic initialization:
+The standard scaffolded LoopBack application created by the [application generator](/doc/{{page.lang}}/lb2/Application-generator) contains the following standard boot scripts (in `/server/boot`) that perform basic initialization:
 
 *   `authentication.js` - Enables authentication for the application by calling [`app.enableAuth()`](http://apidocs.strongloop.com/loopback/#app-enableauth).
 *   `root.js` - Defines a root route to `/` that returns server status using [`loopback.status()`](https://apidocs.strongloop.com/loopback/#loopback-status) middleware.  You already encountered this in the previous step, when you renamed this file so your app could serve static content.
 
-For more information on boot scripts, see [Defining boot scripts](/doc/en/lb2/Defining-boot-scripts).
+For more information on boot scripts, see [Defining boot scripts](/doc/{{page.lang}}/lb2/Defining-boot-scripts).
 
 ## Add a new boot script
 
@@ -104,4 +95,4 @@ Now, run the application again:
 
 Load [http://0.0.0.0:3000/ping](http://0.0.0.0:3000/ping).  You'll see "pong" as the response. 
 
-Next:  Check out [Next steps](/doc/en/lb2/Next-steps.html) for information on what to read next.
+Next:  Check out [Next steps](/doc/{{page.lang}}/lb2/Next-steps.html) for information on what to read next.

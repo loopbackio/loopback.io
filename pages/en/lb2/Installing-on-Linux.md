@@ -9,11 +9,7 @@ permalink: /doc/en/lb2/Installing-on-Linux.html
 summary:
 ---
 
-{% include important.html content="
-
-Follow these instructions to install StrongLoop for development.  To install a production system, see [Setting up a production host](https://docs.strongloop.com/display/SLC/Setting-up-a-production-host).
-
-" %}
+{% include important.html content="These instructions are for a development installation, not production. " %}
 
 ## Prerequisites
 
@@ -22,17 +18,13 @@ Follow these instructions to install StrongLoop for development.  To install a 
 If you want features such as [application profiling](https://docs.strongloop.com/display/SLC/Profiling) or [monitoring](https://docs.strongloop.com/display/SLC/Monitoring-app-metrics), you may need to install compiler tools before you start.  
 
 {% include tip.html content="
-
-Many Linux distributions come with the necessary tools. See [Installing compiler tools](/doc/en/lb2/Installing-compiler-tools.html#Installingcompilertools-Linu) for detailed requirements.
-
+Many Linux distributions come with the necessary tools. See [Installing compiler tools](Installing-compiler-tools.html#linux) for detailed requirements.
 " %}
 
 ### Set directory privileges
 
 {% include warning.html content="
-
 Changing privileges like this is appropriate _only_ on your local development system. Never do this on a server system.
-
 " %}
 
 To install Node and StrongLoop , you need permissions to write to directories:
@@ -56,9 +48,7 @@ Then you don't have the required rights to create files or directories.  Either
 This command makes your user account the owner of the `/usr/local` directory. Then you won't ever have to use `sudo` to install Node or install packages globally with `npm`. For more information, see [How to Node](http://howtonode.org/introduction-to-npm).
 
 {% include warning.html content="
-
 **DO NOT** use the above `chown` command on the `/usr/bin` directory. Doing so can severely misconfigure your system.
-
 " %}
 
 If you have to use `sudo`, use the following command:
@@ -90,12 +80,9 @@ Follow these steps:
     `$ sudo npm install -g strongloop`
 
     {% include note.html content="
+    During installation, you may see a number of errors from `node-gyp` if you don't have [compiler tools](Installing-compiler-tools.html) installed. You can ignore the errors for now." %}
 
-    During installation, you may see a number of errors from `node-gyp` if you don't have [compiler tools](/doc/en/lb2/Installing-compiler-tools.html) installed. These errors only prevent you from performing certain monitoring and management functions such as [CPU profiling](https://docs.strongloop.com/display/SLC/CPU-profiling) and [Heap memory profiling](https://docs.strongloop.com/display/TRASH/Heap-memory-profiling) with `slc`; If you need those functions, then [install compiler tools](/doc/en/lb2/Installing-compiler-tools.html) before continuing. Otherwise, you can ignore the errors for now.
-
-    " %}
-
-If you run into any problems, see [Installation troubleshooting](/doc/en/lb2/Installation-troubleshooting.html).
+If you run into any problems, see [Installation troubleshooting](/doc/{{page.lang}}/lb2/Installation-troubleshooting.html).
 
 ## Errors on Ubuntu
 

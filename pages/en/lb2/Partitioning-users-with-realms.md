@@ -11,8 +11,8 @@ summary:
 
 **See also**:
 
-* [Authentication, authorization, and permissions](/doc/en/lb2/Authentication-authorization-and-permissions.html)
-* [Third-party login using Passport](/doc/en/lb2/Third-party-login-using-Passport.html)
+* [Authentication, authorization, and permissions](/doc/{{page.lang}}/lb2/Authentication-authorization-and-permissions.html)
+* [Third-party login using Passport](/doc/{{page.lang}}/lb2/Third-party-login-using-Passport.html)
 
 By default, the LoopBack User model manages all users in a global namespace. It does not isolate different applications.
 In some cases, you may want to partition users into multiple namespaces so that different applications have separate users. LoopBack uses _realms_ to support: 

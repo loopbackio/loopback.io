@@ -9,15 +9,7 @@ permalink: /doc/en/lb2/Android-SDK.html
 summary:
 ---
 
-{% include note.html content="
-
-This project provides early access to advanced or experimental functionality. It may lack usability, completeness, documentation, and robustness, and may be outdated.
-
-However, StrongLoop supports this project. Community users, please report bugs on GitHub.
-
-For more information, see [StrongLoop Labs](/doc/en/lb2/StrongLoop-Labs.html).
-
-" %}
+{% include content/strongloop-labs.html lang=en %}
 
 **See also**:
 
@@ -25,7 +17,7 @@ For more information, see [StrongLoop Labs](/doc/en/lb2/StrongLoop-Labs.html).
 * [loopback-android-getting-started](https://github.com/strongloop/loopback-android-getting-started)
 
 The Android SDK provides a simple Java API that enables your Android app to access a
-[Using LoopBack with IBM API Connect](/doc/en/lb2/Using-LoopBack-with-IBM-API-Connect.html) server application.
+[Using LoopBack with IBM API Connect](/doc/{{page.lang}}/lb2/Using-LoopBack-with-IBM-API-Connect.html) server application.
 It enables you to interact with your models and data sources in a comfortable native manner instead of using clunky interfaces like `AsyncHttpClient`, `JSONObject`. 
 **[Download Android SDK](http://81b70ddedaf4b27b1592-b5e75689411476c98957e7dab0242f50.r56.cf2.rackcdn.com/loopback-sdk-android-1.5.3-eclipse-bundle.zip)**
 
@@ -83,7 +75,7 @@ To see the Google Maps display, run the guide app on a real Android device inste
 ### Running the LoopBack server application
 
 Follow the instructions in 
-[Getting started with LoopBack](/doc/en/lb2/Getting-started-with-LoopBack) to create the LoopBack sample backend application.
+[Getting started with LoopBack](/doc/{{page.lang}}/lb2/Getting-started-with-LoopBack) to create the LoopBack sample backend application.
 You can also just clone [https://github.com/strongloop/loopback-getting-started](https://github.com/strongloop/loopback-getting-started).
 
 In the directory where you created the application, enter these commands:
@@ -206,7 +198,7 @@ For the complete API documentation, see [LoopBack Android API](http://apidocs.s
     It should be suffixed with "`/api`" in order for the underlying REST method calls to be resolved to your `Model`.
 
 2.  Once you have access to `adapter` (for the sake of example, assume the Adapter is available through our Fragment subclass),
-    you can create basic `Model` and `ModelRepository` objects. Assuming you've  previously created a [LoopBack model](/doc/en/lb2/Defining-models.html) named "product":
+    you can create basic `Model` and `ModelRepository` objects. Assuming you've  previously created a [LoopBack model](/doc/{{page.lang}}/lb2/Defining-models.html) named "product":
 
     ```
     ModelRepository productRepository = adapter.createRepository("product");
@@ -218,7 +210,7 @@ For the complete API documentation, see [LoopBack Android API](http://apidocs.s
 3.  You can now start working with your model through the generic Model object.
     Continue below to learn how to extend the `Model` Java object to directly match, and thus provide the strongly-typed interface for interaction with, your own `Model`'s members.
     Check out the [LoopBack Android API docs](http://apidocs.strongloop.com/loopback-sdk-android/api/index.html) 
-    or create more Models with the [Model generator](/doc/en/lb2/Model-generator.html).
+    or create more Models with the [Model generator](/doc/{{page.lang}}/lb2/Model-generator.html).
 
 ## Creating your own LoopBack model
 
@@ -375,7 +367,7 @@ The LoopBack Android SDK provides classes that make it easy to connect an Androi
 * [UserRepository](http://apidocs.strongloop.com/loopback-sdk-android/api/index.html?com/strongloop/android/loopback/UserRepository.html): 
   base class implementing [`ModelRepository`](http://apidocs.strongloop.com/loopback-sdk-android/api/com/strongloop/android/loopback/ModelRepository.html) for the built-in User type.
 
-See [Authentication, authorization, and permissions](/doc/en/lb2/Authentication-authorization-and-permissions.html) for instructions how to enable authentication in your LoopBack server.
+See [Authentication, authorization, and permissions](/doc/{{page.lang}}/lb2/Authentication-authorization-and-permissions.html) for instructions how to enable authentication in your LoopBack server.
 
 The Android SDK comes with a predefined implementation of UserRepository that provides loginUser and logout methods.
 However, you cannot use `UserRepository<User>` directly, because the Java runtime removes types from generic instances and therefore there is no way to pass the

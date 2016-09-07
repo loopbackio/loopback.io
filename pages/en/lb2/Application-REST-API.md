@@ -9,7 +9,7 @@ permalink: /doc/en/lb2/Application-REST-API.html
 summary:
 ---
 
-All of the endpoints in the Application REST API are inherited from the [PersistedModel REST API](/doc/en/lb2/PersistedModel-REST-API.html).
+All of the endpoints in the Application REST API are inherited from the [PersistedModel REST API](/doc/{{page.lang}}/lb2/PersistedModel-REST-API.html).
 The reference is provided here for convenience.
 
 **Quick reference**

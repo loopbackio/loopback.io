@@ -9,7 +9,7 @@ permalink: /doc/en/lb2/ACL-REST-API.html
 summary:
 ---
 
-All of the endpoints in the ACL REST API are inherited from the [PersistedModel REST API](/doc/en/lb2/PersistedModel-REST-API.html).
+All of the endpoints in the ACL REST API are inherited from the [PersistedModel REST API](/doc/{{page.lang}}/lb2/PersistedModel-REST-API.html).
 The reference is provided here for convenience.
 
 By default, the ACL REST API is not exposed. To expose it, add the following to models.json:

@@ -9,28 +9,15 @@ permalink: /doc/en/lb2/Synchronization.html
 summary:
 ---
 
-{% include note.html content="
-
-This project provides early access to advanced or experimental functionality.
-It may lack usability, completeness, documentation, and robustness, and may be outdated.
-
-However, StrongLoop supports this project. Community users, please report bugs on GitHub.
-
-For more information, see [StrongLoop Labs](/doc/en/lb2/StrongLoop-Labs.html).
-
-" %}
+{% include content/strongloop-labs.html lang=en %}
 
 **See also**:
 
 * [loopback-example-full-stack](https://github.com/strongloop/loopback-example-full-stack)
 * [loopback-example-offline-sync](https://github.com/strongloop/loopback-example-offline-sync)
 
-<object id="myFlashContent" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="400" height="300"><param name="movie" value="//vimeo.com/moogaloop.swf?clip_id=96028163&amp;amp;server=vimeo.com&amp;amp;show_title=1&amp;amp;show_byline=1&amp;amp;show_portrait=0&amp;amp;color=&amp;amp;fullscreen=1"> <param name="allowFullScreen" value="true"> <param name="allowscriptaccess" value="always"> <param name="wmode" value="opaque">  <object type="application/x-shockwave-flash" data="//vimeo.com/moogaloop.swf?clip_id=96028163&amp;amp;server=vimeo.com&amp;amp;show_title=1&amp;amp;show_byline=1&amp;amp;show_portrait=0&amp;amp;color=&amp;amp;fullscreen=1" width="400" height="300"> <param name="movie" value="//vimeo.com/moogaloop.swf?clip_id=96028163&amp;amp;server=vimeo.com&amp;amp;show_title=1&amp;amp;show_byline=1&amp;amp;show_portrait=0&amp;amp;color=&amp;amp;fullscreen=1"> <param name="allowFullScreen" value="true"> <param name="allowscriptaccess" value="always"> <param name="wmode" value="opaque">  [ {% include image.html file="https://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" %} ](https://get.adobe.com/flashplayer/)  </object></object>
-
 {% include note.html content="
-
 Synchronization is not currently a component, but will be refactored in the future to be a LoopBack component.
-
 " %}
 
 ## Overview
@@ -44,11 +31,8 @@ This means the client app must synchronize data with the server application afte
 This process is called _synchronization_ (abbreviated as _sync_).
 Sync replicates data from the _source_ to the _target_, and the target calls the LoopBack replication API.
 
-{% include important.html content="
-
-The LoopBack replication API is a JavaScript API, and thus (currently, at least) works only with a JavaScript client. 
-
-" %}
+{% include note.html content="
+The LoopBack replication API is a JavaScript API, and thus (currently, at least) works only with a JavaScript client. " %}
 
 _Replication_ means intelligently copying data from one location to another.
 LoopBack copies data that has changed from source to target, but does not overwrite data that was modified on the target since the last replication.
@@ -58,12 +42,10 @@ In general there may be conflicts when performing replication.
 So, for example, while disconnected, a user may make changes on the client that conflict with changes made on the server.
 What happens when an object or field is modified both locally and remotely?
 LoopBack handles conflict resolution for you, and enables you to easily present a user interface to allow the end user to make informed decisions to resolve conflicts when they occur.
-See [Resolving conflicts](/doc/en/lb2/Synchronization.html) below.
+See [Resolving conflicts](/doc/{{page.lang}}/lb2/Synchronization.html) below.
 
-{% include important.html content="
-
+{% include note.html content="
 Currently synchronization is built-in to LoopBack, but will be refactored into a component in the future.
-
 " %}
 
 ### LoopBack in the browser
@@ -119,11 +101,11 @@ Setup involves three steps:
 ### Enable change tracking
 
 You must enable change tracking for each model that you want to be able to access offline.
-Make the following change to the [Model definition JSON file](/doc/en/lb2/Model-definition-JSON-file.html):
+Make the following change to the [Model definition JSON file](/doc/{{page.lang}}/lb2/Model-definition-JSON-file.html):
 
 * Set `trackChanges` to `true`.
 * Change the `id` property to an auto-generated GUID; for information on GUIDs,
-  see [Model definition JSON file reference](/doc/en/lb2/Model-definition-JSON-file.html#ModeldefinitionJSONfile-Generalpropertyproperties).
+  see [Model definition JSON file reference](/doc/{{page.lang}}/lb2/Model-definition-JSON-file.html#ModeldefinitionJSONfile-Generalpropertyproperties).
 * Set `strict` property to `validate`.
 * Set the `persistUndefinedAsNull` property to `true`.
 

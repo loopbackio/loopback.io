@@ -110,15 +110,12 @@ module.exports = function(user) {
 ```
 
 {% include tip.html content="
+The validation methods are invoked when you call the 
+[`isValid()`](http://apidocs.strongloop.com/loopback-datasource-juggler/#validatable-prototype-isvalid) method on a model instance, and automatically each time model instance is created or updated. You don't have to call `isValid()` to validate data.
 
-The validation methods are invoked when you call the [`isValid()`](http://apidocs.strongloop.com/loopback-datasource-juggler/#validatable-prototype-isvalid) 
-method on a model instance, and automatically each time model instance is created or updated. You don't have to call `isValid()` to validate data.
-
-To enforce validation constraints when calling [`upsert()`](http://apidocs.strongloop.com/loopback/#persistedmodel-upsert), ensure that `validateUpsert`
-option is set to `true` in the [model definition JSON file](/doc/en/lb2/Model-definition-JSON-file.html). 
-By default, the [model generator](/doc/en/lb2/Model-generator.html) sets this property to true.
-
-" %}
+To enforce validation constraints when calling 
+[`upsert()`](http://apidocs.strongloop.com/loopback/#persistedmodel-upsert), ensure that `validateUpsert` option is set to `true` in the [model definition JSON file](Model-definition-JSON-file.html). 
+By default, the [model generator](Model-generator.html) sets this property to true." %}
 
 To invoke the validation constraints explicitly, call [`isValid()`](http://apidocs.strongloop.com/loopback-datasource-juggler/#validatable-prototype-isvalid).
 

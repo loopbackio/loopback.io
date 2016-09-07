@@ -9,16 +9,7 @@ permalink: /doc/en/lb2/Push-notifications.html
 summary:
 ---
 
-{% include note.html content="
-
-This project provides early access to advanced or experimental functionality.
-It may lack usability, completeness, documentation, and robustness, and may be outdated.
-
-However, StrongLoop supports this project. Community users, please report bugs on GitHub.
-
-For more information, see [StrongLoop Labs](/doc/en/lb2/StrongLoop-Labs.html).
-
-" %}
+{% include content/strongloop-labs.html lang=en %}
 
 **See also**:
 
@@ -44,13 +35,10 @@ The following diagram illustrates how it works.
 To send push notifications, you'll need to create a LoopBack server application, then configure your iOS and Android client apps accordingly.
 You can either use the example LoopBack push application or create your own. Using the example application is a good way to learn about LoopBack push notifications. 
 
-For more information on the architecture of the LoopBack Push Notification component, see [Architecture](/doc/en/lb2/Push-notifications.html) below.
+For more information on the architecture of the LoopBack Push Notification component, see [Architecture](/doc/{{page.lang}}/lb2/Push-notifications.html) below.
 
 {% include tip.html content="
-
-For information on how to implement real-time \"push-like\" notifications to web clients, see [Realtime server-sent events](/doc/en/lb2/Realtime-server-sent-events.html).
-
-" %}
+For information on how to implement real-time \"push-like\" notifications to web clients, see [Realtime server-sent events](Realtime-server-sent-events.html)." %}
 
 ## Installation
 
@@ -63,10 +51,7 @@ $ npm install loopback-component-push
 ## Use the LoopBack push notification sample application
 
 {% include important.html content="
-
-If you are creating your own LoopBack server application, skip this section and go to [Set up your LoopBack application to send push notifications](/doc/en/lb2/Push-notifications.html).
-
-" %}
+If you are creating your own LoopBack server application, skip this section and go to [Set up your LoopBack application to send push notifications](Push-notifications.html)." %}
 
 First, download the sample app:
 
@@ -77,7 +62,7 @@ $ git clone https://github.com/strongloop/loopback-example-push.git
 ### Set up messaging credentials for Android apps
 
 First, if you haven't already done so,
-[get your Google Cloud Messaging (GCM) credentials](/doc/en/lb2/Push-notifications-for-Android-apps.html#PushnotificationsforAndroidapps-GetyourGoogleCloudMessagingcredentials) for Android apps.
+[get your Google Cloud Messaging (GCM) credentials](/doc/{{page.lang}}/lb2/Push-notifications-for-Android-apps.html#PushnotificationsforAndroidapps-GetyourGoogleCloudMessagingcredentials) for Android apps.
 After following the instructions, you will have a GCM API key. Then edit your application's `config.js` to add them; for example, in the sample app, 
 [`loopback-2.x/server/config.js`](https://github.com/strongloop/loopback-example-push/blob/master/loopback-2.x/server/config.js):
 
@@ -108,8 +93,8 @@ If you don't have a client app yet, leave the default appName in `config.js` f
 
 Now follow the instructions in: 
 
-* [Push notifications for Android apps](/doc/en/lb2/Push-notifications-for-Android-apps.html) to set up Android client apps.
-* [Push notifications for iOS apps](/doc/en/lb2/Push-notifications-for-iOS-apps.html) to set up iOS client apps
+* [Push notifications for Android apps](/doc/{{page.lang}}/lb2/Push-notifications-for-Android-apps.html) to set up Android client apps.
+* [Push notifications for iOS apps](/doc/{{page.lang}}/lb2/Push-notifications-for-iOS-apps.html) to set up iOS client apps
 
 ### Run the sample server application
 
@@ -176,8 +161,8 @@ Use the Application model's [`register()`](http://apidocs.strongloop.com/loop
 
 For information on getting API keys, see:
 
-* [Get your Google Cloud Messaging credentials](http://docs.strongloop.com/display/DOC/Push-notifications-for-Android-apps#PushnotificationsforAndroidapps-GetyourGoogleCloudMessagingcredentials) for Android.
-* [Set up iOS clients](/doc/en/lb2/Push-notifications.html) for iOS.
+* [Get your Google Cloud Messaging credentials](/doc/{{page.lang}}/lb2/Push-notifications-for-Android-apps) for Android.
+* [Set up iOS clients](/doc/{{page.lang}}/lb2/Push-notifications.html) for iOS.
 
 For example, here is how the sample app registers a mobile client:
 
@@ -388,10 +373,7 @@ PushManager.notifyByQuery({userId: {inq: selectedUserIds}}, note, function(err) 
 #### Schedule the push notification request
 
 {% include note.html content="
-
-This feature is not yet available. When you are ready to deploy your app, contact StrongLoop for more information.
-
-" %}
+This feature is not yet available. When you are ready to deploy your app, contact StrongLoop for more information." %}
 
 ### Error handling
 

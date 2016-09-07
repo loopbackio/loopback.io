@@ -11,7 +11,7 @@ summary:
 
 ## Overview
 
-Various LoopBack methods accept type descriptions, for example [remote methods](/doc/en/lb2/Remote-methods.html) and 
+Various LoopBack methods accept type descriptions, for example [remote methods](/doc/{{page.lang}}/lb2/Remote-methods.html) and 
 [dataSource.createModel()](http://apidocs.strongloop.com/loopback-datasource-juggler/#datasource-prototype-createmodel).
 
 The following is a list of supported types.

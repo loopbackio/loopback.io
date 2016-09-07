@@ -9,11 +9,7 @@ permalink: /doc/en/lb2/Data-source-generator.html
 summary:
 ---
 
-{% include important.html content="
-Before running this generator, you must create an application using the [Application generator](/doc/en/lb2/Application-generator.html).
-
-Then you must run the command from the root directory of the application."
-%}
+{% include content/generator-create-app.html lang=page.lang %}
 
 ### Synopsis
 
@@ -51,11 +47,10 @@ The tool will prompt you for:
 * Name of the new data source.  If you supplied a name on the command-line, just hit Enter to use it.
 * Connector to use for the data source.
 
-{% include important.html content="
 
-You must install the [connector](/doc/en/lb2/Connecting-models-to-data-sources.html) for the new data source; for example: `npm install --save loopback-connector-mysql`
-" %}
+You must install the [connector](/doc/{{page.lang}}/lb2/Connecting-models-to-data-sources.html) for the new data source; for example: `npm install --save loopback-connector-mysql`
+
 
 ### Output
 
-This adds an entry to [`datasources.json`](/doc/en/lb2/datasources.json.html) with the specified settings.
+This adds an entry to [`datasources.json`](/doc/{{page.lang}}/lb2/datasources.json.html) with the specified settings.

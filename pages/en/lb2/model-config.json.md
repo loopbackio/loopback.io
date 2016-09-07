@@ -12,7 +12,7 @@ summary:
 ## Overview
 
 The file `/server/model-config.json` configures LoopBack models, for example it binds models to data sources and specifies whether a model is exposed over REST.
-The models referenced in this file must be either a [built-in models](/doc/en/lb2/Using-built-in-models.html) or custom models defined by a JSON file in the `common/models/` folder.
+The models referenced in this file must be either a [built-in models](/doc/{{page.lang}}/lb2/Using-built-in-models.html) or custom models defined by a JSON file in the `common/models/` folder.
 
 {% include note.html content="
 

@@ -9,11 +9,7 @@ permalink: /doc/en/lb2/Swagger-generator.html
 summary:
 ---
 
-{% include important.html content="
-Before running this generator, you must create an application using the [Application generator](/doc/en/lb2/Application-generator.html).
-
-Then you must run the command from the root directory of the application.
-" %}
+{% include content/generator-create-app.html lang=page.lang %}
 
 ### Synopsis
 
@@ -82,4 +78,4 @@ Creating model definition for errorModel...
 ### Output
 
 The tool generates all the files for the application based on the specified Swagger file,
-including all the [Model definition JSON files](/doc/en/lb2/Model-definition-JSON-file.html) and associated JavaScript files.
+including all the [Model definition JSON files](/doc/{{page.lang}}/lb2/Model-definition-JSON-file.html) and associated JavaScript files.

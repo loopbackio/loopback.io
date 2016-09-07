@@ -14,7 +14,7 @@ summary:
 For relational databases that have schema definitions, the connector can implement _discovery_ to reverse engineer database schemas into model definitions.
 Implementing discovery is optional for a connector.
 
-See [Discovering models from relational databases](/doc/en/lb2/Discovering-models-from-relational-databases.html) for a general introduction to LoopBack model discovery.
+See [Discovering models from relational databases](/doc/{{page.lang}}/lb2/Discovering-models-from-relational-databases.html) for a general introduction to LoopBack model discovery.
 
 ## Implementing functions to build SQL statements
 

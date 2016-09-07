@@ -10,21 +10,17 @@ summary:
 ---
 
 {% include note.html content="
-
-You can use the **[StrongLoop API Explorer](https://docs.strongloop.com/display/APIC/Use-API-Explorer)** to quickly construct and make requests
-to a LoopBack app running on the server. If a LoopBack app is running on `localhost` at port `3000`, then by default API Explorer is available at
-[http://localhost:3000/explorer/](http://localhost:3000/explorer/).
-
-" %}
+You can use the [StrongLoop API Explorer](Use-API-Explorer.html) to quickly construct and make requests
+to a LoopBack app running on the server. If a LoopBack app is running on `localhost` at port `3000`, then by default API Explorer is available at [http://localhost:3000/explorer/](http://localhost:3000/explorer/)." %}
 
 **See also**:
 
-* [Creating models](/doc/en/lb2/Creating-models.html)
-* [Customizing models](/doc/en/lb2/Customizing-models.html)
-* [Creating model relations](/doc/en/lb2/Creating-model-relations.html)
-* [Querying data](/doc/en/lb2/Querying-data.html)
-* [Model definition JSON file](/doc/en/lb2/Model-definition-JSON-file.html)
-* [PersistedModel REST API](/doc/en/lb2/PersistedModel-REST-API.html)
+* [Creating models](/doc/{{page.lang}}/lb2/Creating-models.html)
+* [Customizing models](/doc/{{page.lang}}/lb2/Customizing-models.html)
+* [Creating model relations](/doc/{{page.lang}}/lb2/Creating-model-relations.html)
+* [Querying data](/doc/{{page.lang}}/lb2/Querying-data.html)
+* [Model definition JSON file](/doc/{{page.lang}}/lb2/Model-definition-JSON-file.html)
+* [PersistedModel REST API](/doc/{{page.lang}}/lb2/PersistedModel-REST-API.html)
 
 ## Overview
 
@@ -33,19 +29,16 @@ such as databases and is also the base class for all built-in models (except [Em
 It provides all the standard create, read, update, and delete (CRUD) operations and exposes REST endpoints for them.
 
 By default, LoopBack uses `/api` as the URI root for the REST API. You can change this by changing the `restApiRoot` property in the application `/server/config.json` file.
-See [config.json](/doc/en/lb2/config.json.html) for more information.
+See [config.json](/doc/{{page.lang}}/lb2/config.json.html) for more information.
 
 Model REST API endpoints are generally the plural form of the model name. By default this is simply the name with an "s" appended.
 For example, if the model is "car" then "cars" is the plural form.
-You can customize the plural form in the [model definition JSON file](/doc/en/lb2/Model-definition-JSON-file.html#ModeldefinitionJSONfile-Top-levelproperties).
+You can customize the plural form in the [model definition JSON file](/doc/{{page.lang}}/lb2/Model-definition-JSON-file.html#ModeldefinitionJSONfile-Top-levelproperties).
 
 {% include note.html content="
-
 You can't customize the routes to PersistedModel REST API endpoints.
 However, you can control how REST API endpoints are constructed from custom models with the `rest.normalizeHttpPath` property in `server/config.json`.
-For more information, see [config.json (Remoting properties)](/doc/en/lb2/config.json_9634282.html#config.json-Remotingproperties).
-
-" %}
+For more information, see [config.json (Remoting properties)](config.json.html#remoting-properties). " %}
 
 ## Create model instance
 
@@ -160,13 +153,13 @@ Find a model instance by ID from the data source.
 
 `GET /modelName/modelID?filter=[filterType1]=<val1>&filter[filterType2]=<val2>...`
 
-See also [Accessing related models](/doc/en/lb2/Accessing-related-models.html) for an example of fetching data from related models.
+See also [Accessing related models](/doc/{{page.lang}}/lb2/Accessing-related-models.html) for an example of fetching data from related models.
 
 ### Arguments
 
 * **modelID** - Model instance ID
 * _filterType1, _filterType2_, and so on, are the filter types. This operation supports only include and fields filters.
-  See [Include filter](/doc/en/lb2/Include-filter.html) and [Fields filter](/doc/en/lb2/Fields-filter.html) for more information.
+  See [Include filter](/doc/{{page.lang}}/lb2/Include-filter.html) and [Fields filter](/doc/{{page.lang}}/lb2/Fields-filter.html) for more information.
 * _val1_, _val2_ are the corresponding values.
 
 ### Example
@@ -200,7 +193,7 @@ Pass the arguments as the value of the `filter` HTTP query parameters, where:
 * _filterType1_, _filterType2_, and so on, are the filter types.
 * _val1_, _val2_ are the corresponding values.
 
-See [Querying data](/doc/en/lb2/Querying-data.html) for an explanation of filter syntax.
+See [Querying data](/doc/{{page.lang}}/lb2/Querying-data.html) for an explanation of filter syntax.
 
 **Example**
 
@@ -244,7 +237,7 @@ Find first instance of the model matched by filter from the data source.
 
 Query parameters:
 
-* **filter** - Filter that defines where, order, fields, skip, and limit. It's same as find's filter argument. See [Querying data](/doc/en/lb2/Querying-data.html) details.
+* **filter** - Filter that defines where, order, fields, skip, and limit. It's same as find's filter argument. See [Querying data](/doc/{{page.lang}}/lb2/Querying-data.html) details.
 
 ### Example
 
@@ -282,11 +275,7 @@ Delete a model instance by ID from the data source
 
 ## Delete all matching instances
 
-{% include warning.html content="
-
-By default, this operation is not exposed over REST to prevent deleting data unintentionally.
-
-" %}
+{% include warning.html content="By default, this operation is not exposed over REST to prevent deleting data unintentionally." %}
 
 Delete model instanced from the data source that match the specified where clause.
 
@@ -294,7 +283,7 @@ Delete model instanced from the data source that match the specified where claus
 
 ### Arguments
 
-* **filter** - Filter that defines where, order, fields, skip, and limit. It's same as find's filter argument. See [Querying data](/doc/en/lb2/Querying-data.html) details.
+* **filter** - Filter that defines where, order, fields, skip, and limit. It's same as find's filter argument. See [Querying data](/doc/{{page.lang}}/lb2/Querying-data.html) details.
 
 ### Example
 
@@ -310,7 +299,7 @@ Count instances of the model  from the data source matched by where clause.
 
 ### Arguments
 
-* **where** - criteria to match model instances. See [Where filter](/doc/en/lb2/Where-filter.html) for more information.
+* **where** - criteria to match model instances. See [Where filter](/doc/{{page.lang}}/lb2/Where-filter.html) for more information.
 
 ### Example
 
@@ -374,7 +363,7 @@ Update attributes of matching model instances and persist into the data source.
 ### Arguments
 
 * data - An object containing property name/value pairs.
-* _where_ - The where object to select matching instances. See [Where filter](/doc/en/lb2/Where-filter.html) for more information.
+* _where_ - The where object to select matching instances. See [Where filter](/doc/{{page.lang}}/lb2/Where-filter.html) for more information.
 
 ### Example
 

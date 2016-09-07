@@ -2,6 +2,7 @@
 title: "Security advisories"
 lang: en
 layout: page
+toc: false
 keywords: LoopBack
 tags:
 sidebar: lb2_sidebar
@@ -11,11 +12,11 @@ summary:
 
 These are important advisories about known security issues:
 
-*   [Security advisory 08-16a-2016](/doc/en/lb2/Security-advisory-08-16a-2016.html)
-*   [Security advisory 08-16-2016](/doc/en/lb2/Security-advisory-08-16-2016.html)
-*   [Security advisory 01-12-2016](/doc/en/lb2/Security-advisory-01-12-2016.html)
-*   [Security advisory 06-04-2015](/doc/en/lb2/Security-advisory-06-04-2015.html)
-*   [Security advisory 01-09-2015](/doc/en/lb2/Security-advisory-01-09-2015.html)
+*   [Security advisory 08-16a-2016](/doc/{{page.lang}}/lb2/Security-advisory-08-16a-2016.html)
+*   [Security advisory 08-16-2016](/doc/{{page.lang}}/lb2/Security-advisory-08-16-2016.html)
+*   [Security advisory 01-12-2016](/doc/{{page.lang}}/lb2/Security-advisory-01-12-2016.html)
+*   [Security advisory 06-04-2015](/doc/{{page.lang}}/lb2/Security-advisory-06-04-2015.html)
+*   [Security advisory 01-09-2015](/doc/{{page.lang}}/lb2/Security-advisory-01-09-2015.html)
 
 {% include important.html content="
 Some advisories may require action on your part, for example to upgrade certain packages.

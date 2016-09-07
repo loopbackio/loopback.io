@@ -9,25 +9,16 @@ permalink: /doc/en/lb2/Extend-your-API.html
 summary:
 ---
 
-{% include important.html content="
-
-**Prerequisite**: Install StrongLoop software as described in [Installing StrongLoop](/doc/en/lb2/Installing-StrongLoop).
-
-**Recommended**: Read [LoopBack core concepts](/doc/en/lb2/LoopBack-core-concepts).
-
-" %} 
-
+{% include content/gs-prereqs.html lang=page.lang %}
+ 
 In LoopBack, a Node function attached to a custom REST endpoint is called a _remote method_.
 
 In this section you're going to add a custom remote method to your API.
 
 {% include note.html content="
+If you followed the previous steps in the tutorial, skip down to [Add a remote method](/#add-a-remote-method)
 
-If you followed the previous steps in the tutorial, skip down to [Add a remote method](/doc/en/lb2/Extend-your-API.html)
-
-If you're just jumping in, follow the steps below to catch up...
-
-" %}
+If you're just jumping in, follow the steps below to catch up..." %}
 
 Get the app (in the state following the last article) from GitHub and install all its dependencies:
 
@@ -45,10 +36,7 @@ Follow these steps:
 1.  Look in your application's `/common/models` directory.  You'll notice there are `coffee-shop.js` and `coffee-shop.json` files there.  
 
     {% include important.html content="
-
-    The LoopBack [model generator](/doc/en/lb2/Model-generator), `slc loopback:model`, automatically converts camel-case model names (for example MyModel) to lowercase dashed names (my-model).  For example, if you create a model named \"FooBar\" with the model generator, it creates files `foo-bar.json` and `foo-bar.js` in `common/models`.  However, the model name (\"FooBar\") will be preserved via the model's name property.
-
-    " %}
+    The LoopBack [model generator](Model-generator.html), automatically converts camel-case model names (for example MyModel) to lowercase dashed names (my-model).  For example, if you create a model named \"FooBar\" with the model generator, it creates files `foo-bar.json` and `foo-bar.js` in `common/models`.  However, the model name (\"FooBar\") will be preserved via the model's name property." %}
 2.  Open `coffee-shop.js` in your favorite editor.  By default, it contains an empty function: 
 
     ```js
@@ -90,15 +78,12 @@ Follow these steps:
 
     This defines a simple remote method called "status" that takes no arguments, and checks the time and returns a JSON status message that says either "Open for business" or "Sorry we are closed", depending on the current time.
 
-    Of course, in practice you can do much more interesting and complex things with remote methods such as manipulating input data before persisting it to a database.  You can also change the route where you call the remote method, and define complex arguments and return values.  See [Remote methods](/doc/en/lb2/Remote-methods) for all the details.
+    Of course, in practice you can do much more interesting and complex things with remote methods such as manipulating input data before persisting it to a database.  You can also change the route where you call the remote method, and define complex arguments and return values.  See [Remote methods](/doc/{{page.lang}}/lb2/Remote-methods) for all the details.
 
 4.  Save the file.
 
 {% include note.html content="
-
-If you don't want to expose a remote method to everyone, it's easy to constrain access to it using access control lists (ACLs). See [Adding ACLs to remote methods](/doc/en/lb2/Remote-methods#Remotemethods-AddingACLstoremotemethods).
-
-" %}
+If you don't want to expose a remote method to everyone, it's easy to constrain access to it using access control lists (ACLs). See [Adding ACLs to remote methods](Remote-methods#adding-acls-to-remote-methods)." %}
 
 ## Try the remote method
 
@@ -119,7 +104,7 @@ If you don't want to expose a remote method to everyone, it's easy to constrain 
 
 That's how easy it is to add remote methods with LoopBack! 
 
-For more information, see [Remote methods](/doc/en/lb2/Remote-methods).
+For more information, see [Remote methods](/doc/{{page.lang}}/lb2/Remote-methods).
 
 ## Executing create, retrieve, update, and delete methods in a remote method
 
@@ -137,7 +122,7 @@ module.exports = function(CoffeeShop) {
   }
 ...
   CoffeeShop.remoteMethod (
-        'getName', 
+        'getName',
         {
           http: {path: '/getname', verb: 'get'},
           accepts: {arg: 'id', type: 'number', http: { source: 'query' } },
@@ -159,4 +144,4 @@ You'll get the response:
 }
 ```
 
-Next: In [Add a static web page](/doc/en/lb2/Add-a-static-web-page.html), you'll add Express middleware to serve static client assets such as HTML/CSS, images, and JavaScript.
+Next: In [Add a static web page](/doc/{{page.lang}}/lb2/Add-a-static-web-page.html), you'll add Express middleware to serve static client assets such as HTML/CSS, images, and JavaScript.

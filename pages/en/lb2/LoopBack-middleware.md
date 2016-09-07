@@ -9,7 +9,7 @@ permalink: /doc/en/lb2/LoopBack-middleware.html
 summary:
 ---
 
-**See also**: [Defining middleware](/doc/en/lb2/Defining-middleware.html)
+**See also**: [Defining middleware](/doc/{{page.lang}}/lb2/Defining-middleware.html)
 
 * [loopback.context()](https://apidocs.strongloop.com/loopback/#loopback-context)
 * [loopback.favicon()](http://apidocs.strongloop.com/loopback/#loopback-favicon)

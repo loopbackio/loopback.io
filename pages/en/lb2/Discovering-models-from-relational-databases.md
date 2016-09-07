@@ -14,12 +14,12 @@ summary:
 LoopBack makes it simple to create models from an existing relational database.
 This process is called _discovery_ and is supported by the following connectors:
 
-* [MySQL connector](/doc/en/lb2/MySQL-connector.html)
-* [PostgreSQL connector](/doc/en/lb2/PostgreSQL-connector.html)
-* [Oracle connector](/doc/en/lb2/Oracle-connector.html)
-* [SQL Server connector](/doc/en/lb2/SQL-Server-connector.html)
+* [MySQL connector](/doc/{{page.lang}}/lb2/MySQL-connector.html)
+* [PostgreSQL connector](/doc/{{page.lang}}/lb2/PostgreSQL-connector.html)
+* [Oracle connector](/doc/{{page.lang}}/lb2/Oracle-connector.html)
+* [SQL Server connector](/doc/{{page.lang}}/lb2/SQL-Server-connector.html)
 
-For NoSQL databases such as MongoDB, use [instance introspection](/doc/en/lb2/Creating-models-from-unstructured-data.html) instead.
+For NoSQL databases such as MongoDB, use [instance introspection](/doc/{{page.lang}}/lb2/Creating-models-from-unstructured-data.html) instead.
 
 Data sources connected to relational databases automatically get the asynchronous 
 [Database discovery API](https://docs.strongloop.com/display/APIC/Database-discovery-API).

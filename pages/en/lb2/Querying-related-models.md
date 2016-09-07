@@ -9,7 +9,7 @@ permalink: /doc/en/lb2/Querying-related-models.html
 summary:
 ---
 
-**See also**: [Relation REST API](/doc/en/lb2/Relation-REST-API.html).
+**See also**: [Relation REST API](/doc/{{page.lang}}/lb2/Relation-REST-API.html).
 
 ## Overview
 
@@ -20,12 +20,12 @@ Often, client applications want to select relevant data from the graph, for exam
 LoopBack provides a few ways to express such requirements in queries.
 
 The [LoopBack Relations example](https://github.com/strongloop/loopback-example-relations) application provides some examples.
-For general information on queries, see [Querying data](/doc/en/lb2/Querying-data.html).
+For general information on queries, see [Querying data](/doc/{{page.lang}}/lb2/Querying-data.html).
 
 ## Inclusion
 
 To include related models in the response for a query, use the `include` property of the query object or use the `include()` method on the model class. 
-The `include` can be a string, an array, or an object. For more information, see [Include filter](/doc/en/lb2/Include-filter.html).
+The `include` can be a string, an array, or an object. For more information, see [Include filter](/doc/{{page.lang}}/lb2/Include-filter.html).
 
 The following examples illustrate valid formats.
 

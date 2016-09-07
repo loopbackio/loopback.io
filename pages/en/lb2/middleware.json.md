@@ -11,8 +11,8 @@ summary:
 
 ## Overview
 
-Set up [middleware](/doc/en/lb2/Defining-middleware.html) in `middleware.json`.
-Here is the default version created by the [Application generator](/doc/en/lb2/Application-generator.html): 
+Set up [middleware](/doc/{{page.lang}}/lb2/Defining-middleware.html) in `middleware.json`.
+Here is the default version created by the [Application generator](/doc/{{page.lang}}/lb2/Application-generator.html): 
 
 ```javascript
 {
@@ -55,7 +55,7 @@ Here is the default version created by the [Application generator](/doc/en/lb2/A
 
 ## Phases
 
-Each top-level property in `middleware.json` corresponds to one of the following [middleware phases](/doc/en/lb2/Defining-middleware.html#Definingmiddleware-Middlewarephases):  
+Each top-level property in `middleware.json` corresponds to one of the following [middleware phases](/doc/{{page.lang}}/lb2/Defining-middleware.html#Definingmiddleware-Middlewarephases):  
 
 1.  **`initial`** - The first point at which middleware can run.
 2.  **`session`** - Prepare the session object.
@@ -96,7 +96,7 @@ phase[:sub-phase] : {
 Where:
 
 * _phase_: is one of the predefined phases listed above (initial, session, auth, and so on) or a custom phase.
-  See [Adding a custom phase](/doc/en/lb2/Defining-middleware.html#Definingmiddleware-Addingacustomphase).
+  See [Adding a custom phase](/doc/{{page.lang}}/lb2/Defining-middleware.html#Definingmiddleware-Addingacustomphase).
 * _sub-phase_: (optional) can be `before` or `after`.
 * _name_: optional middleware name.
 * _middlewarePath_: path to the middleware function.
@@ -105,7 +105,7 @@ Where:
   If not present, applies to all methods.
 * _routeSpec_: REST endpoint(s) that trigger the middleware.
 
-For more information, see [Defining middleware](/doc/en/lb2/Defining-middleware.html).
+For more information, see [Defining middleware](/doc/{{page.lang}}/lb2/Defining-middleware.html).
 
 ## CORS settings
 

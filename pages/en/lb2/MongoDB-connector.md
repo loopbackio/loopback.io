@@ -11,8 +11,8 @@ summary:
 
 **See also**:
 
-* [Connecting to MongoDB](/doc/en/lb2/Connecting-to-MongoDB.html)
-* [Using MongoLab](/doc/en/lb2/Using-MongoLab.html)
+* [Connecting to MongoDB](/doc/{{page.lang}}/lb2/Connecting-to-MongoDB.html)
+* [Using MongoLab](/doc/{{page.lang}}/lb2/Using-MongoLab.html)
 * [loopback-example-database](https://github.com/strongloop/loopback-example-database)
 
 {% include note.html content="
@@ -36,11 +36,11 @@ In your application root directory, enter:
 $ npm install loopback-connector-mongodb --save
 ```
 
-This will install the module from npm and add it as a dependency to the application's [package.json](/doc/en/lb2/package.json.html) file.
+This will install the module from npm and add it as a dependency to the application's [package.json](/doc/{{page.lang}}/lb2/package.json.html) file.
 
 ## Creating a MongoDB data source 
 
-Use the [Data source generator](/doc/en/lb2/Data-source-generator.html) to add a MongoDB data source to your application.
+Use the [Data source generator](/doc/{{page.lang}}/lb2/Data-source-generator.html) to add a MongoDB data source to your application.
 The entry in the application's `/server/datasources.json` will look like this:
 
 **/server/datasources.json**
@@ -157,7 +157,7 @@ LoopBack does not currently support property mapping for MongoDB; you can custo
 ### Using MongoDB operators in update operations
 
 Enable the `allowExtendedOperators` option to include [MongoDB operators](http://docs.mongodb.org/manual/reference/operator/update/) in update operations.
-There are two ways to enable the allowExtendedOperators flag: in the [model definition JSON file](/doc/en/lb2/Model-definition-JSON-file.html) and as an option passed to the update method.
+There are two ways to enable the allowExtendedOperators flag: in the [model definition JSON file](/doc/{{page.lang}}/lb2/Model-definition-JSON-file.html) and as an option passed to the update method.
 
 To set the option in the model definition file, set the property `settings.mongodb.allowExtendedOperators` to true.
 

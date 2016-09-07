@@ -9,28 +9,16 @@ permalink: /doc/en/lb2/Tutorial-Adding-application-logic.html
 summary:
 ---
 
-{% include important.html content="
-
-This example application describes using the StrongLoop `slc loopback` tool. You can also recreate the application using API Connect `apic` tool.
-Simply substitute the API Connect command for the corresponding StrongLoop command.
-For more information, see
-[Converting StrongLoop commands to API Connect commands](/doc/en/lb2/Command-line-reference.html#Command-linereference-CorrespondencebetweenStrongLoopcommandstoAPIConnectcommands).
-
-" %}
-
 **See also**:
 
-* [Remote methods](/doc/en/lb2/Remote-methods.html)
-* [Remote hooks](/doc/en/lb2/Remote-hooks.html)
-* [Operation hooks](/doc/en/lb2/Operation-hooks.html)
-* [Model hooks](/doc/en/lb2/Model-hooks.html)
-* [Connector hooks](/doc/en/lb2/Connector-hooks.html)
+* [Remote methods](/doc/{{page.lang}}/lb2/Remote-methods.html)
+* [Remote hooks](/doc/{{page.lang}}/lb2/Remote-hooks.html)
+* [Operation hooks](/doc/{{page.lang}}/lb2/Operation-hooks.html)
+* [Model hooks](/doc/{{page.lang}}/lb2/Model-hooks.html)
+* [Connector hooks](/doc/{{page.lang}}/lb2/Connector-hooks.html)
 
 {% include note.html content="
-
-This article is reproduced from [loopback-example-app-logic](https://github.com/strongloop/loopback-example-app-logic)
-
-" %}
+This article is reproduced from [loopback-example-app-logic](https://github.com/strongloop/loopback-example-app-logic)" %}
 
 # loopback-example-app-logic
 
@@ -49,14 +37,14 @@ and email-connector as solutions for integrating user-defined logic into a LoopB
 
 Tutorials:
 
-* [Getting started with LoopBack](http://docs.strongloop.com/display/LB/Getting-started-with-LoopBack)
+* [Getting started with LoopBack](/doc/{{page.lang}}/lb2/Getting-started-with-LoopBack.html)
 * [Tutorial series - step 1](https://github.com/strongloop/loopback-example#step-one---the-basics)
 * [Tutorial series - step 2](https://github.com/strongloop/loopback-example#step-two---relations-and-filter)
 
 Knowledge:
 
-* [LoopBack models](http://docs.strongloop.com/display/LB/Defining-models)
-* [LoopBack adding application logic](http://docs.strongloop.com/display/LB/Adding-application-logic)
+* [LoopBack models](/doc/{{page.lang}}/lb2/Defining-models.html)
+* [LoopBack adding application logic](/doc/{{page.lang}}/lb2/Adding-application-logic.html)
 
 ## Procedure
 
@@ -205,7 +193,7 @@ A `car` instance has been created from a boot script: { make: 'honda', model: 'c
 This model operation hook is triggered **before** saving any `car` model instance.
 
 > Many other operation hooks are available, such as `access`, `before save`, `after save`, `before delete`, and `after delete`.
-> See the [model operation hooks documentation](/doc/en/lb2/Operation-hooks.html) for more information.
+> See the [model operation hooks documentation](/doc/{{page.lang}}/lb2/Operation-hooks.html) for more information.
 
 ### Add pre-processing middleware
 
@@ -222,7 +210,7 @@ the request processing time.
 Register the `tracker` middleware in [`middleware.json`](https://github.com/strongloop/loopback-example-app-logic/blob/master/server/middleware.json#L7).
 
 > We register `tracker` in the `initial` phase because we want it configured before other middleware.
-> See the [official middleware phases documentation](/doc/en/lb2/Defining-middleware.html#Definingmiddleware-Middlewarephases).
+> See the [official middleware phases documentation](/doc/{{page.lang}}/lb2/Defining-middleware.html#Definingmiddleware-Middlewarephases).
 
 Restart the server.
 

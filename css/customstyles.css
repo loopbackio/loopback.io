@@ -1168,3 +1168,7 @@ div.box.box1 {
 .subfolders {
   padding-left: 10px;
 }
+
+.sl-hidden {
+  display: none;
+}

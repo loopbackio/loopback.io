@@ -16,7 +16,7 @@ summary:
 * Incorporate model relationships and access controls for complex APIs.
 * Separable components for file storage, third-party login, and OAuth 2.0.
 
-**Read [LoopBack core concepts](/doc/en/lb2/LoopBack-core-concepts.html)** to learn about key concepts you need to understand to use LoopBack.
+**Read [LoopBack core concepts](/doc/{{page.lang}}/lb2/LoopBack-core-concepts.html)** to learn about key concepts you need to understand to use LoopBack.
 
 Check out the [LoopBack Developer Forum](https://groups.google.com/forum/#!forum/loopbackjs) to ask questions and discuss how you are using LoopBack.
 
@@ -46,14 +46,14 @@ For more information, see **[IBM API Connect](https://developer.ibm.com/apiconne
 The LoopBack framework is a set of Node.js modules that you can use independently or together to quickly build REST APIs.
 
 A LoopBack application interacts with data sources through the LoopBack model API, available locally within Node.js, 
-[remotely over REST](/doc/en/lb2/Built-in-models-REST-API.html), and via native client APIs for [iOS, Android, and HTML5](/doc/en/lb2/Client-SDKs.html).
+[remotely over REST](/doc/{{page.lang}}/lb2/Built-in-models-REST-API.html), and via native client APIs for [iOS, Android, and HTML5](/doc/{{page.lang}}/lb2/Client-SDKs.html).
 Using these APIs, apps can query databases, store data, upload files, send emails, create push notifications, register users,
 and perform other actions provided by data sources and services.
 
-Clients can call LoopBack APIs directly using [Strong Remoting](/doc/en/lb2/Strong-Remoting.html), a pluggable transport layer that enables you
+Clients can call LoopBack APIs directly using [Strong Remoting](/doc/{{page.lang}}/lb2/Strong-Remoting.html), a pluggable transport layer that enables you
 to provide backend APIs over REST, WebSockets, and other transports.
 
-The following diagram illustrates key [LoopBack modules](/doc/en/lb2/Using-LoopBack-with-IBM-API-Connect.html), how they are related, and their dependencies.
+The following diagram illustrates key [LoopBack modules](/doc/{{page.lang}}/lb2/Using-LoopBack-with-IBM-API-Connect.html), how they are related, and their dependencies.
 
 {% include image.html file="9830413.png" alt="" %}
 

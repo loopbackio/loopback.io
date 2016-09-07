@@ -11,26 +11,24 @@ summary:
 
 **See also**:
 
-* [Creating models](/doc/en/lb2/Creating-models.html)
-* [Customizing models](/doc/en/lb2/Customizing-models.html)
-* [Creating model relations](/doc/en/lb2/Creating-model-relations.html)
-* [Querying data](/doc/en/lb2/Querying-data.html)
-* [Model definition JSON file](/doc/en/lb2/Model-definition-JSON-file.html)
-* [PersistedModel REST API](/doc/en/lb2/PersistedModel-REST-API.html)
+* [Creating models](/doc/{{page.lang}}/lb2/Creating-models.html)
+* [Customizing models](/doc/{{page.lang}}/lb2/Customizing-models.html)
+* [Creating model relations](/doc/{{page.lang}}/lb2/Creating-model-relations.html)
+* [Querying data](/doc/{{page.lang}}/lb2/Querying-data.html)
+* [Model definition JSON file](/doc/{{page.lang}}/lb2/Model-definition-JSON-file.html)
+* [PersistedModel REST API](/doc/{{page.lang}}/lb2/PersistedModel-REST-API.html)
 
 ## Overview
 
-The LoopBack [Model generator](/doc/en/lb2/Model-generator.html) creates a model JSON file for each model in either the `server/models`
+The LoopBack [Model generator](/doc/{{page.lang}}/lb2/Model-generator.html) creates a model JSON file for each model in either the `server/models`
 or the `common/models` directory (depending on your response to the generator's prompts).
 The file is named `_model-name_.json`, where _`model-name`_ is the model name; for example, `customer.json`.
 The model JSON file defines models, relations between models, and access to models. 
 
 {% include important.html content="
-
-The LoopBack [model generator](/doc/en/lb2/Model-generator.html) automatically converts camel-case model names (for example MyModel)
+The LoopBack [model generator](Model-generator.html) automatically converts camel-case model names (for example MyModel)
 to lowercase dashed names (my-model). For example, if you create a model named \"FooBar\" with the model generator, it creates files `foo-bar.json` and `foo-bar.js` in `common/models`.
 However, the model name (\"FooBar\") will be preserved via the model's name property.
-
 " %}
 
 For example, here is an excerpt from a model definition file for a customer model that would be in `/common/models/customer.json`:
@@ -177,9 +175,7 @@ Properties are required unless otherwise designated.
 The `options` key specifies advanced options, for example data source-specific options.
 
 {% include note.html content="
-
 You can set `idInjection` here in `options` or at the top-level. The value set here takes precedence over the top-level value of `idInjection`.
-
 " %}
 
 ### Advanced options
@@ -215,7 +211,7 @@ You can set `idInjection` here in `options` or at the top-level. The value set h
 
 When a model is attached a data source of certain type such as Oracle or MySQL,
 you can specify the name of the database schema and table as properties under the key with the name of the connector type.
-The value of this key must match the value of the corresponding `connector` property in [datasources.json](/doc/en/lb2/datasources.json.html).
+The value of this key must match the value of the corresponding `connector` property in [datasources.json](/doc/{{page.lang}}/lb2/datasources.json.html).
 For example, in the snippet below, there would be an entry in `datasources.json` like this:  `"myDB": { "name": "myDB",  "connector": "mysql", ... }`.
 
 ```javascript
@@ -425,11 +421,7 @@ var InventoryDefinition = { 
 
 The composite ID is (productId, locationId) for an inventory model.
 
-{% include important.html content="
-
-Composite IDs are not currently supported as query parameters in REST APIs.
-
-" %}
+{% include important.html content="Composite IDs are not currently supported as query parameters in REST APIs." %}
 
 ### Data mapping properties
 
@@ -610,10 +602,7 @@ An example of a hidden property is User.email:
 
 ## Validations
 
-{% include warning.html content="
-
-This is not yet implemented. You must currently validate in code; see [Validating model data](/doc/en/lb2/Validating-model-data.html).
-
+{% include warning.html content="This is not yet implemented. You must currently validate in code; see [Validating model data](Validating-model-data.html).
 " %}
 
 Specify constraints on data with `validations` properties. See also [Validatable class](https://docs.strongloop.com/display/TRASH/Validatable-class).
@@ -888,7 +877,7 @@ The snippet above defines two named queries for the model:
 * vips: Find all model instances with vip flag set to true
 * top5: Find top five model instances ordered by age
 
-Within the scopes object, the keys are the names, and each value defines a filter object for [Model.find()](http://docs.strongloop.com/display/DOC/Model#modelfindfilter-callback).
+Within the scopes object, the keys are the names, and each value defines a filter object for [PersistedModel.find()](http://apidocs.strongloop.com/loopback/#persistedmodel-find).
 
 You can also define a scope programmatically using a model's `scope()` method, for example:
 
@@ -941,14 +930,10 @@ Product.find({order: "name", offset: 0, limit: 100, where: {deleted: false}}, cb
 
 ### Default scopes with where filters
 
-Adding a `scope` to a model definition (in the [`model.json` file](/doc/en/lb2/Model-definition-JSON-file.html)) automatically adds a method to model called `defaultScope()`.
+Adding a `scope` to a model definition (in the [`model.json` file](/doc/{{page.lang}}/lb2/Model-definition-JSON-file.html)) automatically adds a method to model called `defaultScope()`.
 LoopBack will call this method whenever a model is created, updated, or queried.
 
-{% include tip.html content="
-
-Default scopes with a `where` filter may not work as you expect!
-
-" %}
+{% include tip.html content="Default scopes with a `where` filter may not work as you expect!" %}
 
 Each time a model instance is created or updated, the generated `defaultScope()` method will modify the model's properties matching the `where` filter to enforce the values specified.
 
@@ -967,13 +952,9 @@ var defaultScope = Report.defaultScope;
 
 ## Methods
 
-You can declare remote methods here. Until this feature is implemented, you must declare remote methods in code. See [Remote methods](/doc/en/lb2/Remote-methods.html).
+You can declare remote methods here. Until this feature is implemented, you must declare remote methods in code. See [Remote methods](/doc/{{page.lang}}/lb2/Remote-methods.html).
 
-{% include warning.html content="
-
-This feature is not yet implemented.
-
-" %}
+{% include warning.html content="This feature is not yet implemented." %}
 
 ## Indexes
 
@@ -1007,11 +988,7 @@ The full syntax for an individual index is:
 }
 ```
 
-{% include note.html content="
-
-A key value of 1 specifies ascending order, and -1 specifies descending order.
-
-" %}
+{% include note.html content="A key value of 1 specifies ascending order, and -1 specifies descending order." %}
 
 If you don't need to specify any options, you can use a shortened form:
 

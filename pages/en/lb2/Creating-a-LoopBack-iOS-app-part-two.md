@@ -16,7 +16,7 @@ summary:
 
 This is the second of a two-part tutorial on creating a simple iOS app that connects to a LoopBack server application to perform create, read, update, and delete (CRUD) operations.
 
-If you haven't already done so, read [part one](/doc/en/lb2/Creating-a-LoopBack-iOS-app%3A-part-one) before continuing.
+If you haven't already done so, read [part one](/doc/{{page.lang}}/lb2/Creating-a-LoopBack-iOS-app%3A-part-one) before continuing.
 
 ## Add navigation control
 

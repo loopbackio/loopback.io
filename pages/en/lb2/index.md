@@ -48,7 +48,7 @@ New to Node.js? Read Getting Started with Node for:
 
 The LoopBack framework is a set of Node.js modules that you can use independently or together to quickly build REST APIs.
 
-A LoopBack application interacts with data sources through the LoopBack model API, available locally within Node.js, [remotely over REST](/doc/en/lb2/Built-in-models-REST-API), and via native client APIs for [iOS, Android, and HTML5](/doc/en/lb2/Client-SDKs). Using these APIs, apps can query databases, store data, upload files, send emails, create push notifications, register users, and perform other actions provided by data sources and services.
+A LoopBack application interacts with data sources through the LoopBack model API, available locally within Node.js, [remotely over REST](/doc/{{page.lang}}/lb2/Built-in-models-REST-API), and via native client APIs for [iOS, Android, and HTML5](/doc/{{page.lang}}/lb2/Client-SDKs). Using these APIs, apps can query databases, store data, upload files, send emails, create push notifications, register users, and perform other actions provided by data sources and services.
 
 Clients can call LoopBack APIs directly using <a href="/display/APIC/Strong-Remoting">Strong Remoting</a>, a pluggable transport layer that enables you to provide backend APIs over REST, WebSockets, and other transports.
 

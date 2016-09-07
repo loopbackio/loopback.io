@@ -13,7 +13,7 @@ summary:
 
 LoopBack models automatically have a [standard set of HTTP endpoints](http://apidocs.strongloop.com/loopback/#persistedmodel)
 that provide REST APIs for create, read, update, and delete (CRUD) operations on model data.
-The `public` property in [model-config.json](/doc/en/lb2/model-config.json.html) specifies whether to expose the model's REST APIs, for example:
+The `public` property in [model-config.json](/doc/{{page.lang}}/lb2/model-config.json.html) specifies whether to expose the model's REST APIs, for example:
 
 **/server/model-config.json**
 
@@ -33,7 +33,7 @@ To "hide" the model's REST API, simply change `public` to `false`.
 By default, the REST APIs are mounted to the plural of the model name; specifically:
 
 * `Model.settings.http.path`
-* `plural`, if defined in the [Model definition JSON file](/doc/en/lb2/Model-definition-JSON-file.html).
+* `plural`, if defined in the [Model definition JSON file](/doc/{{page.lang}}/lb2/Model-definition-JSON-file.html).
 * Automatically-pluralized model name (the default). For example, if you have a location model, by default it is mounted to `/locations`. 
 
 ### Using the REST Router
@@ -41,10 +41,7 @@ By default, the REST APIs are mounted to the plural of the model name; specifica
 By default, scaffolded applications expose models over REST using the `loopback.rest` router.
 
 {% include important.html content="
-
-If your application is scaffolded using `apic loopback`, LoopBack will automatically set up REST middleware and register public models.
-You don't need to do anything additional.
-
+If you created your application using the [application generator](Application-generator.html), LoopBack will automatically set up REST middleware and register public models.  You don't need to do anything additional.
 " %}
 
 To manually expose a model over REST with the `loopback.rest` router, use the following code, for example:
@@ -64,8 +61,8 @@ At this point, the model is schema-less and the data are not checked.
 
 You can then view generated REST documentation at [http://localhost:3000/explorer](http://localhost:3000/explorer)
 
-LoopBack provides a number of [built-in models](/doc/en/lb2/Using-built-in-models.html) that have REST APIs.
-See [Built-in models REST API](/doc/en/lb2/Built-in-models-REST-API.html) for more information.
+LoopBack provides a number of [built-in models](/doc/{{page.lang}}/lb2/Using-built-in-models.html) that have REST APIs.
+See [Built-in models REST API](/doc/{{page.lang}}/lb2/Built-in-models-REST-API.html) for more information.
 
 ### Request format
 
@@ -74,11 +71,9 @@ For POST and PUT requests, the request body can be JSON, XML or urlencoded forma
 The **Accept** header indicates its preference for the response format.
 
 {% include tip.html content="
+Setting the request's **Accept** header to `application/vnd.api-json` will result in the response's **Content-Type** header being automatically set to `application/vnd.api-json` if `application/vnd.api-json` is in the array of supported types.
 
-Setting the request's **Accept** header to `application/vnd.api-json` will result in the response's **Content-Type** header being automatically set
-to `application/vnd.api-json` if`application/vnd.api-json` is in the array of supported types.
-Set the supported types with the `remoting.``rest.supportedTypes` property in [config.json](/doc/en/lb2/config.json.html).
-
+Set the supported types with the `remoting.``rest.supportedTypes` property in [config.json](config.json.html).
 " %}
 
 #### Passing JSON object or array using HTTP query string
@@ -200,7 +195,7 @@ For example,
 
 ### Disabling API Explorer
 
-LoopBack [API Explorer](/doc/en/lb2/Use-API-Explorer) is great when you're developing your application,
+LoopBack [API Explorer](/doc/{{page.lang}}/lb2/Use-API-Explorer) is great when you're developing your application,
 but for security reasons you may not want to expose it in production.
 
 For an application using [loopback-component-explorer](https://github.com/strongloop/loopback-component-explorer), to disable explorer in production:
@@ -215,12 +210,6 @@ For an application using [loopback-component-explorer](https://github.com/strong
   "loopback-component-explorer": null
 }
 ```
-
-{% include tip.html content="
-
-For an application using the old `loopback-explorer` (prior to version 2.0), disable API Explorer by deleting or renaming `server/boot/explorer.js`. 
-
-" %}
 
 ## Predefined remote methods
 
@@ -291,11 +280,8 @@ The following example illustrates how to set `replaceOnPUT` in `location.json
 ```
 
 {% include tip.html content="
-
 The above table provides a partial list of methods and REST endpoints.
-See the [API documentation](https://apidocs.strongloop.com/loopback/#persistedmodel) for a complete list of all the Node API methods.
-See [PersistedModel REST API](/doc/en/lb2/PersistedModel-REST-API.html) for details on the REST API.
-
+See the [API documentation](https://apidocs.strongloop.com/loopback/#persistedmodel) for a complete list of all the Node API methods.  See [PersistedModel REST API](PersistedModel-REST-API.html) for details on the REST API.
 " %}
 
 ## Exposing and hiding models, methods, and endpoints
@@ -337,10 +323,7 @@ MyModel.disableRemoteMethod('updateAttributes', isStatic);
 ```
 
 {% include important.html content="
-
-Be sure to call `disableRemoteMethod()` on your own custom model, not one of the built-in models; in the example below, for instance,
-the calls are `MyUser.disableRemoteMethod()` _not_ `User.disableRemoteMethod()`.
-
+Be sure to call `disableRemoteMethod()` on your own custom model, not one of the built-in models; in the example below, for instance, the calls are `MyUser.disableRemoteMethod()` _not_ `User.disableRemoteMethod()`.
 " %}
 
 Here's an example of hiding all methods of the `MyUser` model, except for `login` and `logout`:
@@ -390,11 +373,7 @@ Product.disableRemoteMethod('createChangeStream', true);	// removes (GET|POST) /
 
 To disable a REST endpoints for related model methods, use [disableRemoteMethod()](https://apidocs.strongloop.com/loopback/#model-disableremotemethod).
 
-{% include note.html content="
-
-For more information, see [Accessing related models](/doc/en/lb2/Accessing-related-models.html).
-
-" %}
+{% include note.html content="For more information, see [Accessing related models](Accessing-related-models.html)." %}
 
 For example, if there are post and tag models, where a post hasMany tags, add the following code to `/common/models/post.js` 
 to disable the remote methods for the related model and the corresponding REST endpoints: 
@@ -413,4 +392,4 @@ module.exports = function(Post) {
 ### Hiding properties
 
 To hide a property of a model exposed over REST, define a hidden property.
-See [Model definition JSON file (Hidden properties)](/doc/en/lb2/Model-definition-JSON-file.html#ModeldefinitionJSONfile-Hiddenproperties).
+See [Model definition JSON file (Hidden properties)](/doc/{{page.lang}}/lb2/Model-definition-JSON-file.html#ModeldefinitionJSONfile-Hiddenproperties).

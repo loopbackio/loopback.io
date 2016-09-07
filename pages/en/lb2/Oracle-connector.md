@@ -19,8 +19,8 @@ For a workaround, see [How to Disable SIP in OS X El Capitan](http://osxdaily.co
 
 **See also**:
 
-* [Installing the Oracle connector](/doc/en/lb2/Installing-the-Oracle-connector.html)
-* [Connecting to Oracle](/doc/en/lb2/Connecting-to-Oracle.html)
+* [Installing the Oracle connector](/doc/{{page.lang}}/lb2/Installing-the-Oracle-connector.html)
+* [Connecting to Oracle](/doc/{{page.lang}}/lb2/Connecting-to-Oracle.html)
 * [loopback-example-database](https://github.com/strongloop/loopback-example-database/tree/oracle)
 * [Database discovery API](https://docs.strongloop.com/display/APIC/Database-discovery-API) 
 
@@ -38,7 +38,7 @@ In your application root directory, enter this command to install the connector:
 $ npm install loopback-connector-oracle --save
 ```
 
-See [Installing the Oracle connector](/doc/en/lb2/Installing-the-Oracle-connector.html) for further installation instructions.
+See [Installing the Oracle connector](/doc/{{page.lang}}/lb2/Installing-the-Oracle-connector.html) for further installation instructions.
 
 {% include warning.html content="
 
@@ -299,7 +299,7 @@ The model definition consists of the following properties:
 
 ## Type mapping
 
-See [LoopBack types](/doc/en/lb2/LoopBack-types.html) for details on LoopBack's data types.
+See [LoopBack types](/doc/{{page.lang}}/lb2/LoopBack-types.html) for details on LoopBack's data types.
 
 ### JSON to Oracle Types
 
@@ -376,7 +376,7 @@ Make sure to delete any related models first before calling delete on model's wi
 LoopBack _auto-migration_ creates a database schema based on your application's models.
 Auto-migration creates a table for each model, and a column in the table for each property in the model. 
 Once you have defined a model, LoopBack can create or update (synchronize) the database schemas accordingly, if you need to adjust the database to match the models.
-See [Creating a database schema from models](/doc/en/lb2/Creating-a-database-schema-from-models.html) for more information.
+See [Creating a database schema from models](/doc/{{page.lang}}/lb2/Creating-a-database-schema-from-models.html) for more information.
 
 After making changes to your model properties call `Model.automigrate()` or `Model.autoupdate()`.
 Call `Model.automigrate()` only on new models since it will drop existing tables.
@@ -391,4 +391,4 @@ LoopBack Oracle connector creates the following schema objects for a given model
 
 LoopBack provides a unified API to create models based on schema and tables in relational databases.
  The same discovery API is available when using connectors for Oracle, MySQL, PostgreSQL, and SQL Server.
- For more information, see [Creating a database schema from models](/doc/en/lb2/Creating-a-database-schema-from-models.html).
+ For more information, see [Creating a database schema from models](/doc/{{page.lang}}/lb2/Creating-a-database-schema-from-models.html).

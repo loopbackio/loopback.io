@@ -13,11 +13,9 @@ In addition to querying data directly through models using LoopBack APIs, nested
 To do this, you must use nestRemoting functions.
 
 {% include important.html content="
-
 In general, it is best to perform nested queries in a boot script to ensure that all models have been loaded.
-Although you can perform nested queries in [model definition JSON file](/doc/en/lb2/Model-definition-JSON-file.html), 
+Although you can perform nested queries in [model definition JSON file](Model-definition-JSON-file.html), 
 you must use events to make sure the models in question have been loaded.
-
 " %}
 
 The easiest way to understand nested queries is through an example.
@@ -30,7 +28,7 @@ Suppose an app has book, chapter, page, and image models.  And:
 
 The following blocks of JSON show the model for Book and relations for Page and Chapter models.
 
-For more information on the model relations used, see [BelongsTo relations](/doc/en/lb2/BelongsTo-relations.html) and [HasMany relations](/doc/en/lb2/HasMany-relations.html).
+For more information on the model relations used, see [BelongsTo relations](/doc/{{page.lang}}/lb2/BelongsTo-relations.html) and [HasMany relations](/doc/{{page.lang}}/lb2/HasMany-relations.html).
 
 **common/models/book.json**
 

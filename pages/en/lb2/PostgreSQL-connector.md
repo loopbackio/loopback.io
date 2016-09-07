@@ -11,7 +11,7 @@ summary:
 
 **See also**:
 
-* [Connecting to PostgreSQL](/doc/en/lb2/Connecting-to-PostgreSQL.html)
+* [Connecting to PostgreSQL](/doc/{{page.lang}}/lb2/Connecting-to-PostgreSQL.html)
 * [loopback-example-database](https://github.com/strongloop/loopback-example-database/tree/postgresql)
 * [Database discovery API](https://docs.strongloop.com/display/APIC/Database-discovery-API) 
 
@@ -29,11 +29,11 @@ In your application root directory, enter this command to install the connector:
 $ npm install loopback-connector-postgresql --save
 ```
 
-This will install the module from npm and add it as a dependency to the application's [package.json](http://docs.strongloop.com/display/LB/package.json) file.
+This will install the module from npm and add it as a dependency to the application's [package.json](h/doc/{{page.lang}}/lb2/package.json.html) file.
 
 ## Creating a data source
 
-Use the [Data source generator](/doc/en/lb2/Data-source-generator.html) to add a PostgreSQL data source to your application. 
+Use the [Data source generator](/doc/{{page.lang}}/lb2/Data-source-generator.html) to add a PostgreSQL data source to your application. 
 
 The entry in the application's `server/datasources.json` will look like this:
 
@@ -277,11 +277,11 @@ Call `Model.automigrate()` only on new models since it will drop existing tabl
 * Define a primary key for the properties whose `id` property is true (or a positive number).
 * Create a column with 'SERIAL' type if the `generated` property of the `id` property is true.
 
-See [Creating a database schema from models](/doc/en/lb2/Creating-a-database-schema-from-models.html) for more information.
+See [Creating a database schema from models](/doc/{{page.lang}}/lb2/Creating-a-database-schema-from-models.html) for more information.
 
 ## Type mapping
 
-See [LoopBack types](/doc/en/lb2/LoopBack-types.html) for details on LoopBack's data types.
+See [LoopBack types](/doc/{{page.lang}}/lb2/LoopBack-types.html) for details on LoopBack's data types.
 
 ### LoopBack to PostgreSQL types
 

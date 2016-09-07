@@ -45,8 +45,8 @@ Require LoopBack modules and set up standard objects
 
 **4**: Start the web server.
 
-**7**: Emit the 'started' [event](/doc/en/lb2/Events.html).
+**7**: Emit the 'started' [event](/doc/{{page.lang}}/lb2/Events.html).
 
 **10 - 13**: Start [API Explorer](/pages/createpage.action?spaceKey=APIC&title=API-Explorer&linkCreation=true&fromPageId=9634284).
 
-**18**: [Initialize (boot) the application](/doc/en/lb2/Defining-boot-scripts.html).
+**18**: [Initialize (boot) the application](/doc/{{page.lang}}/lb2/Defining-boot-scripts.html).

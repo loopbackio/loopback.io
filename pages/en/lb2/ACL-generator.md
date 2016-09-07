@@ -9,11 +9,7 @@ permalink: /doc/en/lb2/ACL-generator.html
 summary:
 ---
 
-{% include important.html content="
-Before running this generator, you must create an application using the [Application generator](/doc/en/lb2/Application-generator.html).
-
-Then you must run the command from the root directory of the application.
-" %}
+{% include content/generator-create-app.html lang=page.lang %}
 
 ### Synopsis
 
@@ -23,9 +19,7 @@ Adds a new access control list (ACL) entry to a LoopBack application.
 $ [slc | apic] loopback:acl [options]
 ```
 
-{% include note.html content="
-You cannot modify [built-in models](/doc/en/lb2/Using-built-in-models.html) using the ACL generator, only custom models you have defined, for example, with the [Model generator](/doc/en/lb2/Model-generator.html).
-" %}
+{% include content/generator-builtin-model-caveat.html %}
 
 ### Options
 
@@ -40,7 +34,7 @@ Do not automatically install dependencies. Default is false.
 
 ### Interactive Prompts
 
-The tool will prompt you for the necessary information and then modify the [Model definition JSON file](/doc/en/lb2/Model-definition-JSON-file.html) accordingly.
+The tool will prompt you for the necessary information and then modify the [Model definition JSON file](/doc/{{page.lang}}/lb2/Model-definition-JSON-file.html) accordingly.
 
 The generator prompts for:
 
@@ -51,4 +45,4 @@ The generator prompts for:
 * Role: all users, any unauthenticated user, any authenticated user, the object owner.
 * Permission to apply: explicitly grant access or explicitly deny access.
 
-For general information about setting up ACLs, see [Controlling data access](/doc/en/lb2/Controlling-data-access.html).
+For general information about setting up ACLs, see [Controlling data access](/doc/{{page.lang}}/lb2/Controlling-data-access.html).

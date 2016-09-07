@@ -11,20 +11,20 @@ summary:
 
 **See also**:
 
-* [Remote methods](/doc/en/lb2/Remote-methods.html)
-* [Operation hooks](/doc/en/lb2/Operation-hooks.html)
-* [Model hooks](/doc/en/lb2/Model-hooks.html)
-* [Connector hooks](/doc/en/lb2/Connector-hooks.html)
-* [Tutorial: Adding application logic](/doc/en/lb2/Tutorial-Adding-application-logic.html)
+* [Remote methods](/doc/{{page.lang}}/lb2/Remote-methods.html)
+* [Operation hooks](/doc/{{page.lang}}/lb2/Operation-hooks.html)
+* [Model hooks](/doc/{{page.lang}}/lb2/Model-hooks.html)
+* [Connector hooks](/doc/{{page.lang}}/lb2/Connector-hooks.html)
+* [Tutorial: Adding application logic](/doc/{{page.lang}}/lb2/Tutorial-Adding-application-logic.html)
 
 ## Overview
 
 LoopBack provides two kinds of hooks:
 
-* **Remote hooks**, that execute before or after calling a remote method, either a custom [remote method](/doc/en/lb2/Remote-methods.html) 
+* **Remote hooks**, that execute before or after calling a remote method, either a custom [remote method](/doc/{{page.lang}}/lb2/Remote-methods.html) 
   or a standard create, retrieve, update, and delete method inherited from [PersistedModel](http://apidocs.strongloop.com/loopback/#persistedmodel).
-  See [PersistedModel REST API](/doc/en/lb2/PersistedModel-REST-API.html) for information on how the Node methods correspond to REST operations.
-* **[Operation hooks](/doc/en/lb2/Operation-hooks.html)** that execute when models perform create, retrieve, update, and delete operations.
+  See [PersistedModel REST API](/doc/{{page.lang}}/lb2/PersistedModel-REST-API.html) for information on how the Node methods correspond to REST operations.
+* **[Operation hooks](/doc/{{page.lang}}/lb2/Operation-hooks.html)** that execute when models perform create, retrieve, update, and delete operations.
   **NOTE**: Operation hooks replace model hooks, which are now deprecated.
 
 A _remote hook_ enables you to execute a function before or after a remote method is called by a client:
@@ -78,10 +78,10 @@ _modelName_.afterRemoteError( _methodName_, function( ctx, next) {
 Where:
 
 * `_modelName_` is the name of the model to which the remote hook is attached.
-* `_methodName_` is the name of the method that triggers the remote hook. This may be a custom [remote method](/doc/en/lb2/Remote-methods.html)
+* `_methodName_` is the name of the method that triggers the remote hook. This may be a custom [remote method](/doc/{{page.lang}}/lb2/Remote-methods.html)
   or a standard create, retrieve, update, and delete method inherited from [PersistedModel](http://apidocs.strongloop.com/loopback/#persistedmodel).
   It may include wildcards to match more than one method (see below).
-* `ctx` is the [context object](/doc/en/lb2/Remote-hooks.html). 
+* `ctx` is the [context object](/doc/{{page.lang}}/lb2/Remote-hooks.html). 
 * `_modelInstance_` is the affected model instance.
 
 The syntax above includes a call to `next()` as a reminder that you must call `next()` at some point in the remote hook callback function.

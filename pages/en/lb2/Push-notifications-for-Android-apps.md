@@ -17,7 +17,7 @@ summary:
 ## Overview
 
 This article provides information on creating Android apps that can get push notifications from a LoopBack application.
-See [Push notifications](/doc/en/lb2/Push-notifications.html) for information on creating the corresponding LoopBack server application.
+See [Push notifications](/doc/{{page.lang}}/lb2/Push-notifications.html) for information on creating the corresponding LoopBack server application.
 
 To enable an Android app to receive LoopBack push notifications:
 
@@ -30,7 +30,7 @@ To enable an Android app to receive LoopBack push notifications:
 
 Before you start developing your application make sure you've performed all the prerequisite steps outlined in this section.
 
-* **Download the [LoopBack Android SDK](/doc/en/lb2/Android-SDK.html)**
+* **Download the [LoopBack Android SDK](/doc/{{page.lang}}/lb2/Android-SDK.html)**
 * **Install [Eclipse development tools](http://developer.android.com/sdk/index.html) (ADT)**
 
 ### Configure Android Development Tools
@@ -138,7 +138,7 @@ Then follow these steps to run the app:
 
 5.  Edit `src/com/google/android/gcm/demo/app/DemoActivity.java`. 
     * Set SENDER_ID to the project number from the Google Developers Console you created earlier in 
-      [Get your Google Cloud Messaging credentials](/doc/en/lb2/Push-notifications-for-Android-apps.html).
+      [Get your Google Cloud Messaging credentials](/doc/{{page.lang}}/lb2/Push-notifications-for-Android-apps.html).
 
 6.  Go back to the [https://cloud.google.com/console/project](https://cloud.google.com/console/project) and edit the Android Key to reflect
     your unique application ID. Set the value of **Android applications** to something like this:
@@ -156,7 +156,7 @@ Then follow these steps to run the app:
       </tbody>
     </table>
 
-7.  Run the [LoopBack server application](/doc/en/lb2/Push-notifications.html) you set up earlier.
+7.  Run the [LoopBack server application](/doc/{{page.lang}}/lb2/Push-notifications.html) you set up earlier.
     If you didn't set the appName in the server application's `config.js` earlier, do it now.
     Set it to "**com.google.android.gcm.demo.app.DemoActivity**".
 
@@ -205,11 +205,11 @@ Add the following key and value to the push settings of your application:
 }
 ```
 
-Replace `server-api-key` with the API key you obtained in [Get your Google Cloud Messaging credentials](/doc/en/lb2/Push-notifications-for-Android-apps.html).
+Replace `server-api-key` with the API key you obtained in [Get your Google Cloud Messaging credentials](/doc/{{page.lang}}/lb2/Push-notifications-for-Android-apps.html).
 
 ## Prepare your own Android project
 
-Follow the instructions in [Android SDK documentation](/doc/en/lb2/Android-SDK.html) to add LoopBack Android SDK to your Android project.
+Follow the instructions in [Android SDK documentation](/doc/{{page.lang}}/lb2/Android-SDK.html) to add LoopBack Android SDK to your Android project.
 
 Follow the instructions in Google's [Implementing GCM Client guide](http://developer.android.com/google/gcm/client.html) for setting up Google Play Services in your project.
 
@@ -264,7 +264,7 @@ Once you have ensured the device provides Google Play Services, the app can reg
 Rather than register with GCM every time the app starts, simply store and retrieve the registration ID (device token).
 The `LocalInstallation` class in the LoopBack SDK handles these details for you.
 
-For more information on LocallInstallation, see [Working with the LocalInstallation class](/doc/en/lb2/Working-with-the-LocalInstallation-class.html).
+For more information on LocallInstallation, see [Working with the LocalInstallation class](/doc/{{page.lang}}/lb2/Working-with-the-LocalInstallation-class.html).
 
 The example `updateRegistration()` method does the following:
 
@@ -368,4 +368,4 @@ When running your app in the Eclipse device emulator, you may encounter the foll
 `Google Play services, which some of your applications rely on, is not supported by your device. Please contact the manufacturer for assistance.`
 
 To resolve this, install a compatible version of the Google APIs platform.
-See [Prepare your Android project](/doc/en/lb2/Push-notifications-for-Android-apps.html) for more information.
+See [Prepare your Android project](/doc/{{page.lang}}/lb2/Push-notifications-for-Android-apps.html) for more information.

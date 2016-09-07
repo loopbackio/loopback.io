@@ -13,7 +13,7 @@ summary:
 
 LoopBack _components_ are predefined packages that extend a basic LoopBack application.
 Fundamentally, a component is related code bundled together as a unit to enable LoopBack applications for easy reuse.  
-You can configure components declaratively in [`component-config.json`](/doc/en/lb2/component-config.json).
+You can configure components declaratively in [`component-config.json`](/doc/{{page.lang}}/lb2/component-config.json).
 
 The bare minimum to meet the LoopBack component "contract" is to export a `function(app, options)` as the main module export.
 
@@ -40,7 +40,7 @@ that is supposed to return `function(req, res, next)` or `function(err, req, 
 
 LoopBack provides several pre-defined components, as described in the table below.
 
-The sections below describe the configuration settings for each component in [`component-config.json`](/doc/en/lb2/component-config.json).
+The sections below describe the configuration settings for each component in [`component-config.json`](/doc/{{page.lang}}/lb2/component-config.json).
 
 <table>
   <tbody>
@@ -98,8 +98,8 @@ The sections below describe the configuration settings for each component in [`
 
 ### API Explorer
 
-The `slc loopback` [application generator](/doc/en/lb2/Application-generator) will scaffold an app
-with `component-config.json` containing the default entry for [LoopBack API Explorer](/doc/en/lb2/Use-API-Explorer): 
+The `slc loopback` [application generator](/doc/{{page.lang}}/lb2/Application-generator) will scaffold an app
+with `component-config.json` containing the default entry for [LoopBack API Explorer](/doc/{{page.lang}}/lb2/Use-API-Explorer): 
 
 **server/component-config.json**
 

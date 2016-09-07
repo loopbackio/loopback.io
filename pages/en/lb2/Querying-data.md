@@ -8,23 +8,17 @@ sidebar: lb2_sidebar
 permalink: /doc/en/lb2/Querying-data.html
 summary:
 ---
-
-{% include warning.html content="
-
-Methods of models in the [AngularJS client](/doc/en/lb2/AngularJS-JavaScript-SDK.html) have a different signature than those of the Node API.
-For more information, see [AngularJS SDK API](http://apidocs.strongloop.com/loopback-sdk-angular/).
-
-" %}
+{% include content/angular-methods-caveat.html lang=page.lang %}
 
 **See also**:
 
-* [Fields filter](/doc/en/lb2/Fields-filter.html)
-* [Include filter](/doc/en/lb2/Include-filter.html)
-* [Limit filter](/doc/en/lb2/Limit-filter.html)
-* [Order filter](/doc/en/lb2/Order-filter.html)
-* [Skip filter](/doc/en/lb2/Skip-filter.html)
-* [Where filter](/doc/en/lb2/Where-filter.html)
-* [Querying related models](/doc/en/lb2/Querying-related-models.html).
+* [Fields filter](/doc/{{page.lang}}/lb2/Fields-filter.html)
+* [Include filter](/doc/{{page.lang}}/lb2/Include-filter.html)
+* [Limit filter](/doc/{{page.lang}}/lb2/Limit-filter.html)
+* [Order filter](/doc/{{page.lang}}/lb2/Order-filter.html)
+* [Skip filter](/doc/{{page.lang}}/lb2/Skip-filter.html)
+* [Where filter](/doc/{{page.lang}}/lb2/Where-filter.html)
+* [Querying related models](/doc/{{page.lang}}/lb2/Querying-related-models.html).
 
 ## Overview
 
@@ -86,36 +80,30 @@ In both cases, LoopBack models return JSON.
 </table>
 
 {% include important.html content="
-
 A REST query must include the literal string \"filter\" in the URL query string.
 The Node API call does not include the literal string \"filter\" in the JSON.
 
-[LoopBack API Explorer](https://docs.strongloop.com/display/APIC/Use-API-Explorer) adds \"filter\" to the query string,
-but you must enter [Stringified JSON](/doc/en/lb2/Querying-data.html) in the **filter** field.
-Also make sure that the quotes you use are proper straight quotes ( \" ), not curved or typographic quotation marks (  “ or ” ). These can often be hard to distinguish visually.
-
-" %}
+[LoopBack API Explorer](Use-API-Explorer.html) adds \"filter\" to the query string,
+but you must enter [Stringified JSON](Querying-data.html) in the **filter** field.
+Also make sure that the quotes you use are proper straight quotes ( \" ), not curved or typographic quotation marks (  “ or ” ). These can often be hard to distinguish visually." %}
 
 {% include tip.html content="
-
-If you are trying [query filters](/doc/en/lb2/Querying-data.html) with curl, use the `-g` or `--globoff`  option to use brackets `[` and `]` in request URLs.
-
-" %}
+If you are trying [query filters](Querying-data.html) with curl, use the `-g` or `--globoff`  option to use brackets `[` and `]` in request URLs." %}
 
 LoopBack supports the following kinds of filters:
 
-* [Fields filter](/doc/en/lb2/Fields-filter.html)
-* [Include filter](/doc/en/lb2/Include-filter.html)
-* [Limit filter](/doc/en/lb2/Limit-filter.html)
-* [Order filter](/doc/en/lb2/Order-filter.html)
-* [Skip filter](/doc/en/lb2/Skip-filter.html)
-* [Where filter](/doc/en/lb2/Where-filter.html)
+* [Fields filter](/doc/{{page.lang}}/lb2/Fields-filter.html)
+* [Include filter](/doc/{{page.lang}}/lb2/Include-filter.html)
+* [Limit filter](/doc/{{page.lang}}/lb2/Limit-filter.html)
+* [Order filter](/doc/{{page.lang}}/lb2/Order-filter.html)
+* [Skip filter](/doc/{{page.lang}}/lb2/Skip-filter.html)
+* [Where filter](/doc/{{page.lang}}/lb2/Where-filter.html)
 
-See [Filters](/doc/en/lb2/Querying-data.html) below for more information.
+See [Filters](/doc/{{page.lang}}/lb2/Querying-data.html) below for more information.
 
 ### Examples
 
-See additional examples of each kind of filter in the individual articles on filters (for example [Where filter](/doc/en/lb2/Where-filter.html)).
+See additional examples of each kind of filter in the individual articles on filters (for example [Where filter](/doc/{{page.lang}}/lb2/Where-filter.html)).
 
 An example of using the `find()` method with both a _where_ and a _limit_ filter:
 
@@ -205,17 +193,10 @@ Specify filters in the [HTTP query string](http://en.wikipedia.org/wiki/Query_s
 The number of filters that you can apply to a single request is limited only by the maximum URL length, which generally depends on the client used.
 
 {% include important.html content="
-
 There is no equal sign after `?filter` in the query string; for example
-`http://localhost:3000/api/books?filter[where][id]=1` 
+`http://localhost:3000/api/books?filter[where][id]=1` " %}
 
-" %}
-
-{% include note.html content="
-
-See [https://github.com/hapijs/qs](https://github.com/hapijs/qs) for more details.
-
-" %}
+{% include note.html content="See [https://github.com/hapijs/qs](https://github.com/hapijs/qs) for more details." %}
 
 ### Node syntax
 
@@ -229,8 +210,8 @@ There is no theoretical limit on the number of filters you can apply.
 
 Where:
 
-* _filterType_ is the filter: [where](/doc/en/lb2/Where-filter.html), [include](/doc/en/lb2/Include-filter.html), [order](/doc/en/lb2/Order-filter.html),
-  [limit](/doc/en/lb2/Limit-filter.html), [skip](/doc/en/lb2/Skip-filter.html), or [fields](/doc/en/lb2/Fields-filter.html).
+* _filterType_ is the filter: [where](/doc/{{page.lang}}/lb2/Where-filter.html), [include](/doc/{{page.lang}}/lb2/Include-filter.html), [order](/doc/{{page.lang}}/lb2/Order-filter.html),
+  [limit](/doc/{{page.lang}}/lb2/Limit-filter.html), [skip](/doc/{{page.lang}}/lb2/Skip-filter.html), or [fields](/doc/{{page.lang}}/lb2/Fields-filter.html).
 * _spec_ is the specification of the filter: for example for a _where_ filter, this is a logical condition that the results must match.
   For an _include_ filter it specifies the related fields to include.
 
@@ -244,12 +225,9 @@ To do this, simply use the JSON specified for the Node syntax, as follows:
 where _Stringified-JSON_ is the stringified JSON from Node syntax. However, in the JSON all text keys/strings must be enclosed in quotes (").
 
 {% include important.html content="
-
 When using stringified JSON, you must use an equal sign after `?filter` in the query string.
 
-For example: `http://localhost:3000/api/books?filter={%22where%22:{%22id%22:2}}` 
-
-" %}
+For example: `http://localhost:3000/api/books?filter={%22where%22:{%22id%22:2}}` " %}
 
 For example: `GET /api/activities/findOne?filter={"where":{"id":1234}}`
 
@@ -259,10 +237,7 @@ The [loopback-filters](https://github.com/strongloop/loopback-filters) module 
 Using this module, you can filter arrays of objects using the same filter syntax supported by `MyModel.find(filter)`.
 
 {% include note.html content="
-
-We plan to convert all modules to use `loopback-filter`, so it will become LoopBack's common \"built-in\" filtering mechanism.
-
-" %}
+We plan to convert all modules to use `loopback-filter`, so it will become LoopBack's common \"built-in\" filtering mechanism." %}
 
 Here is a basic example using the new module.
 

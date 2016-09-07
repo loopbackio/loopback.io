@@ -14,10 +14,10 @@ summary:
 * Download the [server side code](https://github.com/strongloop-community/sample-applications/tree/master/BooksServer)
 * Download the [iOS client application](https://github.com/strongloop-community/sample-applications/tree/master/BooksClient)
 
-This is part one of a two-part tutorial on creating a simple iOS app that connects to a [Using LoopBack with IBM API Connect](/doc/en/lb2/Using-LoopBack-with-IBM-API-Connect.html) server application to perform create, read, update, and delete (CRUD) operations:
+This is part one of a two-part tutorial on creating a simple iOS app that connects to a [Using LoopBack with IBM API Connect](/doc/{{page.lang}}/lb2/Using-LoopBack-with-IBM-API-Connect.html) server application to perform create, read, update, and delete (CRUD) operations:
 
 * Part one shows how to fetch data stored in the data source (in this case, the in-memory data source).
-* [Part two](/doc/en/lb2/Creating-a-LoopBack-iOS-app-part-two.html) explains how to connect various interface elements to the app.
+* [Part two](/doc/{{page.lang}}/lb2/Creating-a-LoopBack-iOS-app-part-two.html) explains how to connect various interface elements to the app.
 
 ## Prerequisites
 
@@ -26,7 +26,7 @@ Before starting this tutorial:
 * **Install [Apple XCode](https://developer.apple.com/xcode/)** version 5 or later.
 
 * **Follow [Getting started with LoopBack](https://docs.strongloop.com/display/APIC/Getting-started-with-LoopBack)** to install the StrongLoop tools.
-* **Download the [LoopBack iOS SDK](/doc/en/lb2/iOS-SDK.html)** and extract the contents.
+* **Download the [LoopBack iOS SDK](/doc/{{page.lang}}/lb2/iOS-SDK.html)** and extract the contents.
 
 ## Create the LoopBack books application
 
@@ -40,7 +40,7 @@ Follow these steps to create a simple LoopBack Node application using the Stron
     [?] What's the name of your application? bookes
     ```
 
-2.  Follow the instructions in [Create a LoopBack application](/doc/en/lb2/Creating-an-application.html) to create a model called "book" with the default properties.
+2.  Follow the instructions in [Create a LoopBack application](/doc/{{page.lang}}/lb2/Creating-an-application.html) to create a model called "book" with the default properties.
     Follow the instructions in the link to the section "Defining a model manually".
 3.  Run the app and load this URL in your browser to view the API explorer: [http://localhost:3000/explorer](http://0.0.0.0:3000/explorer).
 4.  Add a few books to the app by running a POST request through the API Explorer. The format of JSON for the POST request is as follows: 
@@ -239,4 +239,4 @@ Build the app and run it on a simulator. Click **Refresh** and you'll see the 
 
 {% include image.html file="9830457.png" alt="" %}
 
-**Now continue to [Part 2](/doc/en/lb2/Creating-a-LoopBack-iOS-app-part-two.html).**
+**Now continue to [Part 2](/doc/{{page.lang}}/lb2/Creating-a-LoopBack-iOS-app-part-two.html).**

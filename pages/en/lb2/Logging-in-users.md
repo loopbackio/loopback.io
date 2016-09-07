@@ -11,8 +11,8 @@ summary:
 
 **See also**:
 
-* [Authentication, authorization, and permissions](/doc/en/lb2/Authentication-authorization-and-permissions.html)
-* [Third-party login using Passport](/doc/en/lb2/Third-party-login-using-Passport.html)
+* [Authentication, authorization, and permissions](/doc/{{page.lang}}/lb2/Authentication-authorization-and-permissions.html)
+* [Third-party login using Passport](/doc/{{page.lang}}/lb2/Third-party-login-using-Passport.html)
 
 ## Login with the LoopBack User model
 
@@ -21,7 +21,7 @@ summary:
 Login (authenticate) a user by calling the [`User.login()`](http://apidocs.strongloop.com/loopback/#user-login) method and providing an object
 containing `password` and `email or username` properties as the first parameter. The method returns an access token.
 
-This example creates a route in [boot script](/doc/en/lb2/Defining-boot-scripts.html) to handle login request:
+This example creates a route in [boot script](/doc/{{page.lang}}/lb2/Defining-boot-scripts.html) to handle login request:
 
 **/server/boot/routes.js**
 
@@ -118,7 +118,7 @@ For example:
 }
 ```
 
-See [User REST API](/doc/en/lb2/User-REST-API.html#UserRESTAPI-Loginuser) for more information.
+See [User REST API](/doc/{{page.lang}}/lb2/User-REST-API.html#UserRESTAPI-Loginuser) for more information.
 
 ### Logging out
 
@@ -168,13 +168,13 @@ http://localhost:3000/api/users/logout
 curl -X VERB http://localhost:3000/api/users/logout?access_token=$ACCESS_TOKEN
 ```
 
-See [User REST API](/doc/en/lb2/User-REST-API.html#UserRESTAPI-Logoutuser) for more information.
+See [User REST API](/doc/{{page.lang}}/lb2/User-REST-API.html#UserRESTAPI-Logoutuser) for more information.
 
 ## Login using third-party systems
 
 Instead of using LoopBack's user system, you can integrate with a third-party system that supports OAuth, such as Google, Facebook, or Twitter.
 
-For more information, see [Third-party login using Passport](/doc/en/lb2/Third-party-login-using-Passport.html).
+For more information, see [Third-party login using Passport](/doc/{{page.lang}}/lb2/Third-party-login-using-Passport.html).
 
 ## Resetting a user's password
 
@@ -264,4 +264,4 @@ For a complete example, see [routes.js](https://github.com/strongloop/loopback-e
 in [loopback-example-user-management](https://github.com/strongloop/loopback-example-user-management).
 
 Over REST, use the `POST /users/reset` endpoint. It returns `200 OK` for a successful request.
-See [User REST API](/doc/en/lb2/User-REST-API.html#UserRESTAPI-Resetpassword) for more information.
+See [User REST API](/doc/{{page.lang}}/lb2/User-REST-API.html#UserRESTAPI-Resetpassword) for more information.

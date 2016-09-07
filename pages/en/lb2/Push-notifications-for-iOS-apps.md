@@ -12,7 +12,7 @@ summary:
 ## Overview
 
 This article provides information on creating iOS apps that can get push notifications from a LoopBack application.
-See [Push notifications](/doc/en/lb2/Push-notifications.html) for information on creating the corresponding LoopBack server application.
+See [Push notifications](/doc/{{page.lang}}/lb2/Push-notifications.html) for information on creating the corresponding LoopBack server application.
 
 The basic steps to set up push notifications for iOS clients are:
 
@@ -30,7 +30,7 @@ For additional useful information, see [Delivering iOS Push Notifications with 
 
 ## Configure APN push settings in your server application
 
-Please see [Register a mobile application](/doc/en/lb2/Push-notifications.html#Pushnotifications-Registeramobileapplication).
+Please see [Register a mobile application](/doc/{{page.lang}}/lb2/Push-notifications.html#Pushnotifications-Registeramobileapplication).
 
 ## Add LoopBack iOS SDK as a framework
 

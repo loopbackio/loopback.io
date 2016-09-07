@@ -12,12 +12,12 @@ summary:
 **See also**:
 
 * [Android SDK API docs](http://apidocs.strongloop.com/loopback-sdk-android/api/index.html)
-* [Storage component](/doc/en/lb2/Storage-component.html)
+* [Storage component](/doc/{{page.lang}}/lb2/Storage-component.html)
 
 ## Overview
 
 The LoopBack Android SDK provides classes that enable apps to upload, store and retrieve files from a LoopBack application using the LoopBack Storage service.
-See [Storage component](/doc/en/lb2/Storage-component.html) for information on how to create the corresponding LoopBack server application.
+See [Storage component](/doc/{{page.lang}}/lb2/Storage-component.html) for information on how to create the corresponding LoopBack server application.
 
 The relevant classes are:
 
@@ -238,7 +238,7 @@ The LoopBack server will track claims using a `Claim` model. Supporting docume
 There will be one container for every claim record.
 The Android application will enable users to view documents attached to a claim and to attach more documents.
 
-See [Storage component](/doc/en/lb2/Storage-component.html) for information on setting up the server application that uses the LoopBack storage service.
+See [Storage component](/doc/{{page.lang}}/lb2/Storage-component.html) for information on setting up the server application that uses the LoopBack storage service.
 
 ### Creating a new claim
 

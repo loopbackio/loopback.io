@@ -9,15 +9,6 @@ permalink: /doc/en/lb2/Tutorial-model-relations.html
 summary:
 ---
 
-{% include important.html content="
-
-This example application describes using the StrongLoop `slc loopback` tool. You can also recreate the application using API Connect `apic` tool.
-Simply substitute the API Connect command for the corresponding StrongLoop command.
-For more information, see
-[Converting StrongLoop commands to API Connect commands](/doc/en/lb2/Command-line-reference.html#Command-linereference-CorrespondencebetweenStrongLoopcommandstoAPIConnectcommands).
-
-" %}
-
 # loopback-example-relations
 
 ```shell

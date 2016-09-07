@@ -13,7 +13,7 @@ summary:
 
 By default, LoopBack models you create expose a 
 [standard set of HTTP endpoints](http://apidocs.strongloop.com/loopback/#persistedmodel) for create, read, update, and delete (CRUD) operations.
-The `public` property in [model-config.json](/doc/en/lb2/model-config.json.html) specifies whether to expose the model's REST APIs, for example:
+The `public` property in [model-config.json](/doc/{{page.lang}}/lb2/model-config.json.html) specifies whether to expose the model's REST APIs, for example:
 
 **/server/model-config.json**
 
@@ -31,11 +31,11 @@ To "hide" the model's REST API, simply change `public` to `false`.
 ### Hiding properties
 
 To hide a property of a model exposed over REST, define a hidden property.
-See [Model definition JSON file (Hidden properties)](/doc/en/lb2/Model-definition-JSON-file.html#ModeldefinitionJSONfile-Hiddenproperties).
+See [Model definition JSON file (Hidden properties)](/doc/{{page.lang}}/lb2/Model-definition-JSON-file.html#ModeldefinitionJSONfile-Hiddenproperties).
 
 ### Disabling API Explorer
 
-LoopBack [API Explorer](/doc/en/lb2/Use-API-Explorer) is great when you're developing your application,
+LoopBack [API Explorer](/doc/{{page.lang}}/lb2/Use-API-Explorer) is great when you're developing your application,
 but for security reasons you may not want to expose it in production.
 
 For an application using [loopback-component-explorer](https://github.com/strongloop/loopback-component-explorer), to disable explorer in production:
@@ -60,7 +60,7 @@ For an application using the old `loopback-explorer` (prior to version 2.0), dis
 ## CORS
 
 By default LoopBack enables [Cross-origin resource sharing](https://en.wikipedia.org/wiki/Cross-origin_resource_sharing)
-(CORS) using the [cors](https://www.npmjs.com/package/cors) package. Change the CORS settings in [middleware.json](/doc/en/lb2/middleware.json.html).
+(CORS) using the [cors](https://www.npmjs.com/package/cors) package. Change the CORS settings in [middleware.json](/doc/{{page.lang}}/lb2/middleware.json.html).
 
 If you are using a JavaScript client, you must also enable CORS on the client side. For example, one way to enable it with AngularJS is:
 

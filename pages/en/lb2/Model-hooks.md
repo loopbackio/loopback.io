@@ -10,20 +10,18 @@ summary:
 ---
 
 {% include warning.html content="
+Model hooks are deprecated, except for [afterInitialize](#afterInitialize).
 
-**Model hooks are deprecated, except for [afterInitialize](/doc/en/lb2/Model-hooks.html).**
-
-**Please use [operation hooks](/doc/en/lb2/Operation-hooks.html)** **instead**.
-
+Please use [operation hooks](Operation-hooks.html) instead.
 " %}
 
 **See also**:
 
-* [Remote methods](/doc/en/lb2/Remote-methods.html)
-* [Remote hooks](/doc/en/lb2/Remote-hooks.html)
-* [Operation hooks](/doc/en/lb2/Operation-hooks.html)
-* [Connector hooks](/doc/en/lb2/Connector-hooks.html)
-* [Tutorial: Adding application logic](/doc/en/lb2/Tutorial-Adding-application-logic.html) 
+* [Remote methods](/doc/{{page.lang}}/lb2/Remote-methods.html)
+* [Remote hooks](/doc/{{page.lang}}/lb2/Remote-hooks.html)
+* [Operation hooks](/doc/{{page.lang}}/lb2/Operation-hooks.html)
+* [Connector hooks](/doc/{{page.lang}}/lb2/Connector-hooks.html)
+* [Tutorial: Adding application logic](/doc/{{page.lang}}/lb2/Tutorial-Adding-application-logic.html) 
 
 ## Overview
 
@@ -80,7 +78,7 @@ This is the only hook that does not require you to explicitly call `next()` afte
 
 ## beforeValidate
 
-This hook is called before [validatation](/doc/en/lb2/Validating-model-data.html) is performed on a model.
+This hook is called before [validatation](/doc/{{page.lang}}/lb2/Validating-model-data.html) is performed on a model.
 
 ### Example
 
@@ -111,7 +109,7 @@ If you don't call `next()`, the application will appear to \"hang\".
 
 ## afterValidate
 
-This hook is called after [validation](/doc/en/lb2/Validating-model-data.html) is performed on a model.
+This hook is called after [validation](/doc/{{page.lang}}/lb2/Validating-model-data.html) is performed on a model.
 
 ### Example
 

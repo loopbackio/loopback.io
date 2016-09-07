@@ -9,16 +9,7 @@ permalink: /doc/en/lb2/LoopBack-in-the-client.html
 summary:
 ---
 
-{% include note.html content="
-
-This project provides early access to advanced or experimental functionality.
-It may lack usability, completeness, documentation, and robustness, and may be outdated.
-
-However, StrongLoop supports this project. Community users, please report bugs on GitHub.
-
-For more information, see [StrongLoop Labs](/doc/en/lb2/StrongLoop-Labs.html).
-
-" %}
+{% include content/strongloop-labs.html lang=en %}
 
 LoopBack in the client is sometimes referred to as _isomorphic LoopBack_, because it provides the exact same API as the LoopBack server framework.
 

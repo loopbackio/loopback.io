@@ -26,7 +26,7 @@ and 
 
 To connect a model to a data source, follow these steps:
 
-1.  Use the  [data source generator](/doc/en/lb2/Data-source-generator.html)  to create a new data source.
+1.  Use the  [data source generator](/doc/{{page.lang}}/lb2/Data-source-generator.html)  to create a new data source.
 
     For example: 
 
@@ -43,7 +43,7 @@ To connect a model to a data source, follow these steps:
     ```
 
     Follow the prompts to name the datasource and select the connector to use.
-    This adds the new data source to [`datasources.json`](/doc/en/lb2/datasources.json.html).
+    This adds the new data source to [`datasources.json`](/doc/{{page.lang}}/lb2/datasources.json.html).
 
 2.  Edit `server/datasources.json` to add the necessary authentication credentials: typically hostname, username, password, and database name.
 
@@ -64,19 +64,19 @@ To connect a model to a data source, follow these steps:
 
     For information on the specific properties that each connector supports, see:
 
-    * [Cloudant connector](/doc/en/lb2/Cloudant-connector.html)
-    * [DashDB](/doc/en/lb2/DashDB.html)
-    * [DB2 connector](/doc/en/lb2/DB2-connector.html)
-    * [DB2 for z/OS](/doc/en/lb2/DB2-for-z-OS.html)
-    * [Informix](/doc/en/lb2/Informix.html)
-    * [Memory connector](/doc/en/lb2/Memory-connector.html)
-    * [MongoDB connector](/doc/en/lb2/MongoDB-connector.html)
-    * [MySQL connector](/doc/en/lb2/MySQL-connector.html)
-    * [Oracle connector](/doc/en/lb2/Oracle-connector.html)
-    * [PostgreSQL connector](/doc/en/lb2/PostgreSQL-connector.html)
-    * [Redis connector](/doc/en/lb2/Redis-connector.html)
-    * [SQL Server connector](/doc/en/lb2/SQL-Server-connector.html)
-    * [SQLite3](/doc/en/lb2/SQLite3.html) 
+    * [Cloudant connector](/doc/{{page.lang}}/lb2/Cloudant-connector.html)
+    * [DashDB](/doc/{{page.lang}}/lb2/DashDB.html)
+    * [DB2 connector](/doc/{{page.lang}}/lb2/DB2-connector.html)
+    * [DB2 for z/OS](/doc/{{page.lang}}/lb2/DB2-for-z-OS.html)
+    * [Informix](/doc/{{page.lang}}/lb2/Informix.html)
+    * [Memory connector](/doc/{{page.lang}}/lb2/Memory-connector.html)
+    * [MongoDB connector](/doc/{{page.lang}}/lb2/MongoDB-connector.html)
+    * [MySQL connector](/doc/{{page.lang}}/lb2/MySQL-connector.html)
+    * [Oracle connector](/doc/{{page.lang}}/lb2/Oracle-connector.html)
+    * [PostgreSQL connector](/doc/{{page.lang}}/lb2/PostgreSQL-connector.html)
+    * [Redis connector](/doc/{{page.lang}}/lb2/Redis-connector.html)
+    * [SQL Server connector](/doc/{{page.lang}}/lb2/SQL-Server-connector.html)
+    * [SQLite3](/doc/{{page.lang}}/lb2/SQLite3.html) 
 3.  Install the corresponding connector as a dependency of your app with `npm`.
 
     For example: 
@@ -86,9 +86,9 @@ To connect a model to a data source, follow these steps:
     $ npm install --save loopback-connector-mysql
     ```
 
-    See [Connectors](/doc/en/lb2/Connecting-models-to-data-sources.html) for the list of connectors.
+    See [Connectors](/doc/{{page.lang}}/lb2/Connecting-models-to-data-sources.html) for the list of connectors.
 
-4.  Use the [model generator](/doc/en/lb2/Using-the-model-generator.html) to create a model.
+4.  Use the [model generator](/doc/{{page.lang}}/lb2/Using-the-model-generator.html) to create a model.
 
     ```shell
     $ apic create --type model
@@ -114,26 +114,19 @@ To connect a model to a data source, follow these steps:
 
     When prompted for the data source to attach to, select the one you just created. 
 
-    {% include note.html content="
+{% include note.html content="
+The model generator lists the [memory connector](Memory-connector.html), \"no data source,\" and data sources listed in [`datasources.json`](datasources.json.html).  That's why you created the data source first in step 1." %}
 
-    The model generator lists the [memory connector](/doc/en/lb2/Memory-connector.html), \"no data source,\" and data sources listed in [`datasources.json`](/doc/en/lb2/datasources.json.html).
-    That's why you created the data source first in step 1.
-
-    " %}
-
-    You can also create models from an existing database; see [Creating models](/doc/en/lb2/Creating-models.html) for more information.
+You can also create models from an existing database; see [Creating models](/doc/{{page.lang}}/lb2/Creating-models.html) for more information.
 
 ## Connectors
 
 {% include note.html content="
-
-In addition to the connectors below that IBM/StrongLoop supports, [community connectors](/doc/en/lb2/Community-connectors.html) 
+In addition to the connectors below that IBM/StrongLoop supports, [community connectors](Community-connectors.html) 
 developed and maintained by the LoopBack community enable you to connect to CouchDB, Neo4j, Elasticsearch, and many others.
-See [Community connectors](/doc/en/lb2/Community-connectors.html) for more information.
+See [Community connectors](Community-connectors.html) for more information." %}
 
-" %}
-
-The following table lists commercially-supported LoopBack connectors. For more information, see [Database connectors](/doc/en/lb2/Database-connectors.html) and [Non-database connectors](/doc/en/lb2/Non-database-connectors.html).
+The following table lists commercially-supported LoopBack connectors. For more information, see [Database connectors](/doc/{{page.lang}}/lb2/Database-connectors.html) and [Non-database connectors](/doc/{{page.lang}}/lb2/Non-database-connectors.html).
 
 <table>
   <thead>
@@ -269,7 +262,7 @@ This command adds the following entry to `package.json`: 
 
 ## Creating a data source
 
-Use the [data source generator](/doc/en/lb2/Data-source-generator.html) to create a new data source:
+Use the [data source generator](/doc/{{page.lang}}/lb2/Data-source-generator.html) to create a new data source:
 
 ```shell
 $ apic create --type datasource
@@ -282,7 +275,7 @@ $ slc loopback:datasource
 Follow the prompts to add the desired data source.
 
 You can also create a data source programmatically;
-see [Advanced topics: data sources](/doc/en/lb2/Advanced-topics%3A-data-sources) for more information.
+see [Advanced topics: data sources](/doc/{{page.lang}}/lb2/Advanced-topics%3A-data-sources) for more information.
 
 ### Data source properties
 

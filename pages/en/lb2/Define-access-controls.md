@@ -9,26 +9,14 @@ permalink: /doc/en/lb2/Define-access-controls.html
 summary:
 ---
 
-{% include important.html content="
-
-**Prerequisites**:
-
-*   Install StrongLoop software as described in [Installing StrongLoop](/doc/en/lb2/Installing-StrongLoop)
-*   Follow [Getting started with LoopBack](/doc/en/lb2/Getting-started-with-LoopBack).
-
-**Recommended**: Read [LoopBack core concepts](/doc/en/lb2/LoopBack-core-concepts).
-
-" %}
+{% include content/gs-prereqs.html lang=page.lang %}
 
 Access controls determine which users are allowed to read and write model data or execute methods on the models
 
 {% include note.html content="
+If you followed the previous step in the tutorial, go to [Introducing access controls](#introducing-access-controls).
 
-If you followed the previous step in the tutorial, go to [Introducing access controls](/doc/en/lb2/Define-access-controls.html).
-
-If you're just jumping in, follow the steps below to catch up...
-
-" %}
+If you're just jumping in, follow the steps below to catch up..." %}
 
 Get the app (in the state following the last article) from GitHub and install all its dependencies:
 
@@ -41,7 +29,7 @@ $ npm install
 
 ## Introducing access controls
 
-LoopBack applications access data through models, so controlling access to data means putting restrictions on models; that is, specifying who or what can read and write the data or execute methods on the models.   LoopBack access controls are determined by _access control lists_ or ACLs. For more information, see [Controlling data access](/doc/en/lb2/Controlling-data-access).
+LoopBack applications access data through models, so controlling access to data means putting restrictions on models; that is, specifying who or what can read and write the data or execute methods on the models.   LoopBack access controls are determined by _access control lists_ or ACLs. For more information, see [Controlling data access](/doc/{{page.lang}}/lb2/Controlling-data-access).
 
 You're going to set up access control for the Review model.  
 
@@ -131,4 +119,4 @@ When you're done, the ACL section in `common/models/review.json` should look l
 ...
 ```
 
-Next: Continue to [Define a remote hook](/doc/en/lb2/Define-a-remote-hook.html).
+Next: Continue to [Define a remote hook](/doc/{{page.lang}}/lb2/Define-a-remote-hook.html).

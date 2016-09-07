@@ -60,7 +60,7 @@ $ npm install loopback-component-passport
 ### UserIdentity model
 
 The UserIdentity model keeps track of third-party login profiles. Each user identity is uniquely identified by provider and externalId.
-The UserIdentity model has a [belongsTo](/doc/en/lb2/BelongsTo-relations.html) relation to the User model.
+The UserIdentity model has a [belongsTo](/doc/{{page.lang}}/lb2/BelongsTo-relations.html) relation to the User model.
 
 The following table describes the properties of the UserIdentity model.
 
@@ -139,7 +139,7 @@ Such credentials can be supplied from a configuration file to your server global
 But if your server accepts API requests from multiple client applications, each client application needs its own credentials.
 The ApplicationCredential model stores credentials associated with the client application, to support multi-tenancy.
 
-The ApplicationCredential model has a [belongsTo](/doc/en/lb2/BelongsTo-relations.html) relation to the Application model.
+The ApplicationCredential model has a [belongsTo](/doc/{{page.lang}}/lb2/BelongsTo-relations.html) relation to the Application model.
 
 The following table describes the properties of ApplicationCredential model
 
@@ -249,7 +249,7 @@ The following example illustrates using two providers:
 ### Configuration in providers.json
 
 Use `providers.json` (in project root directory) to set up the external authentication providers.
-For more information, see [Configuring providers.json](/doc/en/lb2/Configuring-providers.json.html). Here's an example:
+For more information, see [Configuring providers.json](/doc/{{page.lang}}/lb2/Configuring-providers.json.html). Here's an example:
 
 **providers.json**
 

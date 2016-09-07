@@ -15,12 +15,12 @@ When you move from deployment to production or staging, you typically want to ch
 (or even the in-memory data store) to a production database where your live application data will reside.
 Additionally, you may want to change application properties such as host name and port number.
 
-By default, a LoopBack application created with the [application generator](/doc/en/lb2/Application-generator.html)
+By default, a LoopBack application created with the [application generator](/doc/{{page.lang}}/lb2/Application-generator.html)
 has two kinds of configuration files in the server directory that you use to configure production settings:
 
-* [`config.json`](/doc/en/lb2/config.json.html) containing general application configuration.
+* [`config.json`](/doc/{{page.lang}}/lb2/config.json.html) containing general application configuration.
   You can override the settings in this file with `config._env_.json`, where _env_ is the value of `NODE_ENV` environment variable.
-* [`datasources.json`](/doc/en/lb2/datasources.json.html) containing data source configuration.
+* [`datasources.json`](/doc/{{page.lang}}/lb2/datasources.json.html) containing data source configuration.
   You can override the settings in this file with `datasources._env_.json`, where _env_ is the value of `NODE_ENV` environment variable.
 
 Set `NODE_ENV` to a string reflecting the host environment, for example "development" or "production".
@@ -38,11 +38,11 @@ Setting `NODE_ENV` to \"production\" will automatically turn off stack traces in
 
 " %}
 
-For more information, see [Environment-specific configuration](/doc/en/lb2/Environment-specific-configuration.html).
+For more information, see [Environment-specific configuration](/doc/{{page.lang}}/lb2/Environment-specific-configuration.html).
 
 ### Disabling API Explorer
 
-LoopBack [API Explorer](/doc/en/lb2/Use-API-Explorer) is great when you're developing your application,
+LoopBack [API Explorer](/doc/{{page.lang}}/lb2/Use-API-Explorer) is great when you're developing your application,
 but for security reasons you may not want to expose it in production.
 
 For an application using [loopback-component-explorer](https://github.com/strongloop/loopback-component-explorer), to disable explorer in production:
@@ -68,7 +68,7 @@ For an application using the old `loopback-explorer` (prior to version 2.0), dis
 
 When you move your app from development to staging, you may want to make additional changes.
 For example, you might want to customize REST error responses.
-See [Customizing REST error handling](/doc/en/lb2/Environment-specific-configuration.html#Environment-specificconfiguration-CustomizingRESTerrorhandling) for more information.
+See [Customizing REST error handling](/doc/{{page.lang}}/lb2/Environment-specific-configuration.html#Environment-specificconfiguration-CustomizingRESTerrorhandling) for more information.
 
 ## Using SSL
 

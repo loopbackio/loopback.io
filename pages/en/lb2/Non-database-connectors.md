@@ -11,13 +11,13 @@ summary:
 
 LoopBack supports a number of connectors to backend systems beyond databases:
 
-* [Email connector](/doc/en/lb2/Email-connector.html)
-* [Push connector](/doc/en/lb2/Push-connector.html)
-* [Remote connector](/doc/en/lb2/Remote-connector.html)
-* [REST connector](/doc/en/lb2/REST-connector.html)
-* [SOAP connector](/doc/en/lb2/SOAP-connector.html)
-* [Storage connector](/doc/en/lb2/Storage-connector.html)
-* [Swagger connector](/doc/en/lb2/Swagger-connector.html)
+* [Email connector](/doc/{{page.lang}}/lb2/Email-connector.html)
+* [Push connector](/doc/{{page.lang}}/lb2/Push-connector.html)
+* [Remote connector](/doc/{{page.lang}}/lb2/Remote-connector.html)
+* [REST connector](/doc/{{page.lang}}/lb2/REST-connector.html)
+* [SOAP connector](/doc/{{page.lang}}/lb2/SOAP-connector.html)
+* [Storage connector](/doc/{{page.lang}}/lb2/Storage-connector.html)
+* [Swagger connector](/doc/{{page.lang}}/lb2/Swagger-connector.html)
 
 These types of connectors often implement specific methods depending on the underlying system.
 For example, the REST connector delegates calls to REST APIs while the Push connector integrates with iOS and Android push notification services. 

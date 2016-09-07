@@ -9,16 +9,7 @@ permalink: /doc/en/lb2/iOS-SDK.html
 summary:
 ---
 
-{% include note.html content="
-
-This project provides early access to advanced or experimental functionality.
-It may lack usability, completeness, documentation, and robustness, and may be outdated.
-
-However, StrongLoop supports this project. Community users, please report bugs on GitHub.
-
-For more information, see [StrongLoop Labs](/doc/en/lb2/StrongLoop-Labs.html).
-
-" %}
+{% include content/strongloop-labs.html lang=en %}
 
 ## Overview
 
@@ -166,11 +157,8 @@ var Widget = app.model('widget', {
 Because of this the repository class name (`'widget'`, above) needs to match the name that model was given on the server. 
 
 {% include warning.html content="
-
-If you haven't created a model yet, see [Defining models](/doc/en/lb2/Defining-models.html).
-The model _must_ exist (even if the schema is empty) before your app can interact with it.
-
-" %}
+If you haven't created a model yet, see [Defining models](Defining-models.html).
+The model _must_ exist (even if the schema is empty) before your app can interact with it." %}
 
 Use this to make creating Models easier. Match the name or create your own.
 

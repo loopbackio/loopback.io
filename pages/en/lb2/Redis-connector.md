@@ -9,22 +9,9 @@ permalink: /doc/en/lb2/Redis-connector.html
 summary:
 ---
 
-{% include note.html content="
+{% include content/strongloop-labs.html lang=en %}
 
-This project provides early access to advanced or experimental functionality.
-It may lack usability, completeness, documentation, and robustness, and may be outdated.
-
-However, StrongLoop supports this project. Community users, please report bugs on GitHub.
-
-For more information, see [StrongLoop Labs](/doc/en/lb2/StrongLoop-Labs.html).
-
-" %}
-
-{% include note.html content="
-
-The Redis connector requires Redis 3.0.3-.
-
-" %}
+{% include note.html content="The Redis connector requires Redis 3.0.3+. " %}
 
 ## Installation
 
@@ -34,11 +21,11 @@ In your application root directory, enter this command to install the connector:
 $ npm install loopback-connector-redis --save
 ```
 
-This will install the module and add it as a dependency to the application's [`package.json`](http://docs.strongloop.com/display/LB/package.json) file.
+This will install the module and add it as a dependency to the application's [`package.json`](/doc/{{page.lang}}/lb2/package.json) file.
 
 ## Creating a Redis data source
 
-Use the [data source generator](/doc/en/lb2/Data-source-generator.html) to add a Redis data source to your application.
+Use the [data source generator](/doc/{{page.lang}}/lb2/Data-source-generator.html) to add a Redis data source to your application.
 When prompted for the connector, choose **other,** then enter **redis** for the connector name.
 The entry in the application's `server/datasources.json` will look like this:
 

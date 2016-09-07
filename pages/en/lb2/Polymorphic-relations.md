@@ -111,7 +111,7 @@ Reader.hasMany(Picture, { polymorphic: { // alternative syntax  
 
 ## HasManyThrough polymorphic relations
 
-To define a hasMany polymorphic relation, there must be a "through" model, similarly to a standard [HasManyThrough relation](/doc/en/lb2/HasManyThrough-relations.html).
+To define a hasMany polymorphic relation, there must be a "through" model, similarly to a standard [HasManyThrough relation](/doc/{{page.lang}}/lb2/HasManyThrough-relations.html).
 
 For example, "ImageLink":
 

@@ -9,17 +9,13 @@ permalink: /doc/en/lb2/Relation-generator.html
 summary:
 ---
 
-{% include important.html content="
-Before running this generator, you must create an application using the [Application generator](/doc/en/lb2/Application-generator.html).
-
-Then you must run the command from the root directory of the application."
-%}
+{% include content/generator-create-app.html lang=page.lang %}
 
 The models involved in the relation must also exist before running this generator.
 
 ### Synopsis
 
-Creates a new [model relation](/doc/en/lb2/Creating-model-relations.html) in a LoopBack application.
+Creates a new [model relation](/doc/{{page.lang}}/lb2/Creating-model-relations.html) in a LoopBack application.
 
 ```shell
 $ [slc | apic] loopback:relation [options]
@@ -42,22 +38,19 @@ The tool will prompt you for:
 
 * Name of the model to create the relationship from.
 * Relation type:
-  * [HasMany](/doc/en/lb2/HasMany-relations.html)
-  * [BelongsTo](/doc/en/lb2/BelongsTo-relations.html)
-  * [HasAndBelongsToMany](/doc/en/lb2/HasAndBelongsToMany-relations.html)
-  * [HasOne](/doc/en/lb2/HasOne-relations.html).
+  * [HasMany](/doc/{{page.lang}}/lb2/HasMany-relations.html)
+  * [BelongsTo](/doc/{{page.lang}}/lb2/BelongsTo-relations.html)
+  * [HasAndBelongsToMany](/doc/{{page.lang}}/lb2/HasAndBelongsToMany-relations.html)
+  * [HasOne](/doc/{{page.lang}}/lb2/HasOne-relations.html).
 * Name of the model to create a relationship with.
 * Name for the relation (property name).
 
-{% include important.html content="
-
-The name of the relation must be different than a property it references.
-" %}
+{% include important.html content="The name of the relation must be different than a property it references." %}
 
 * Custom foreign key (optional)
-* Whether a "through" model is required.  Repy "Y" to create a [HasManyThrough relations](/doc/en/lb2/HasManyThrough-relations.html). 
+* Whether a "through" model is required.  Repy "Y" to create a [HasManyThrough relations](/doc/{{page.lang}}/lb2/HasManyThrough-relations.html). 
 * Name of the "through" model, if appropriate.
 
 ### Output
 
-Updates the [Model definition JSON files](/doc/en/lb2/Model-definition-JSON-file.html) for the models involved in the relation.
+Updates the [Model definition JSON files](/doc/{{page.lang}}/lb2/Model-definition-JSON-file.html) for the models involved in the relation.

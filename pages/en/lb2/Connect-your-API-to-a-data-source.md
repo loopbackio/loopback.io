@@ -9,38 +9,29 @@ permalink: /doc/en/lb2/Connect-your-API-to-a-data-source.html
 summary:
 ---
 
-{% include important.html content="
-
-**Prerequisite**: Install StrongLoop software as described in [Installing StrongLoop](/doc/en/lb2/Installing-StrongLoop).
-
-**Recommended**: Read [LoopBack core concepts](/doc/en/lb2/LoopBack-core-concepts).
-
-" %}
+{% include content/gs-prereqs.html lang=page.lang %}
 
 LoopBack enables you to easily persist your data model to a variety of data sources without having to write code.
 
 You're going to take the app from the previous section and connect it to MySQL.   
 
 {% include note.html content="
+If you followed the previous steps in the tutorial, go to [Add a data source](#add-a-data-source).
 
-If you followed the previous steps in the tutorial, go to [Add a data source](/doc/en/lb2/Connect-your-API-to-a-data-source.html).
-
-If you're just jumping in, follow the steps below to catch up...
-
-" %}
+If you're just jumping in, follow the steps below to catch up..." %}
 
 Get the app (in the state following the last article) from GitHub and install all its dependencies:
 
 ```
 $ git clone https://github.com/strongloop/loopback-getting-started.git
 $ cd loopback-getting-started
-$ git checkout step1 
+$ git checkout step1
 $ npm install
 ```
 
 ## Add a data source
 
-Now you're going to define a data source using the [Data source generator](/doc/en/lb2/Data-source-generator):
+Now you're going to define a data source using the [Data source generator](/doc/{{page.lang}}/lb2/Data-source-generator):
 
 `$ slc loopback:datasource`
 
@@ -54,13 +45,13 @@ Next, the generator will prompt you for the type of data source:
 
 ```
 [?] Select the connector for mysqlDS: (Use arrow keys)
-  other 
-  In-memory db (supported by StrongLoop) 
-  MySQL (supported by StrongLoop) 
-  PostgreSQL (supported by StrongLoop) 
-  Oracle (supported by StrongLoop) 
-  Microsoft SQL (supported by StrongLoop) 
-  MongoDB (supported by StrongLoop) 
+  other
+  In-memory db (supported by StrongLoop)
+  MySQL (supported by StrongLoop)
+  PostgreSQL (supported by StrongLoop)
+  Oracle (supported by StrongLoop)
+  Microsoft SQL (supported by StrongLoop)
+  MongoDB (supported by StrongLoop)
 (Move up and down to reveal more choices)
 ```
 
@@ -92,12 +83,9 @@ Now add the loopback-connector-mysql module and install the dependencies:
 ## Configure data source
 
 {% include important.html content="
-
 If you have a MySQL database server that you can use, please use it. Create a new database called \"getting_started.\" If you wish, you can use a different database name. Just make sure the `mysqlDs.database` property in `datasources.json `matches it (see below).
 
-If not, you can use the StrongLoop MySQL server running on [demo.strongloop.com](http://demo.strongloop.com/). However, be aware that it is a shared resource. There is a small chance that two users may run the script that creates sample data (see [Add some test data and view it](/doc/en/lb2/Connect-your-API-to-a-data-source.html), below) at the same time and may run into race condition. For this reason, we recommend you use your own MySQL server if you have one.
-
-" %}
+If not, you can use the StrongLoop MySQL server running on [demo.strongloop.com](http://demo.strongloop.com/). However, be aware that it is a shared resource. There is a small chance that two users may run the script that creates sample data (see [Add some test data and view it](/doc/en/lb2/Connect-your-API-to-a-data-source.html), below) at the same time and may run into race condition. For this reason, we recommend you use your own MySQL server if you have one." %}
 
 Next, you need configure the data source to use the desired MySQL server.
 
@@ -133,7 +121,7 @@ add `host`, `port`, `database`, `username`, and `password` properties.  
 
 ## Connect CoffeeShop model to MySQL
 
-Now you've created a MySQL data source and you have a CoffeeShop model; you just need to connect them.  LoopBack applications use the [model-config.json](/doc/en/lb2/model-config.json) file to link models to data sources.  Edit `/server/model-config.json` and look for the CoffeeShop entry:
+Now you've created a MySQL data source and you have a CoffeeShop model; you just need to connect them.  LoopBack applications use the [model-config.json](/doc/{{page.lang}}/lb2/model-config.json) file to link models to data sources.  Edit `/server/model-config.json` and look for the CoffeeShop entry:
 
 **/server/model-config.json**
 
@@ -152,15 +140,12 @@ Change the `dataSource` property from `db` to `mysqlDs`.  This attaches th
 
 Now you have a CoffeeShop model in LoopBack, how do you  create the corresponding table in MySQL database?
 
-You could try executing some SQL statements directly...but LoopBack provides a Node API to do it for you automatically using a process called _auto-migration_.  For more information, see [Creating a database schema from models](/doc/en/lb2/Creating-a-database-schema-from-models).
+You could try executing some SQL statements directly...but LoopBack provides a Node API to do it for you automatically using a process called _auto-migration_.  For more information, see [Creating a database schema from models](/doc/{{page.lang}}/lb2/Creating-a-database-schema-from-models).
 
 The `loopback-getting-started` module contains the `create-sample-models.js` script to demonstrate auto-migration.  If you've been following along from the beginning (and didn't just clone this module), then you'll need to copy it from below or [from GitHub](https://github.com/strongloop/loopback-getting-started/blob/master/server/boot/create-sample-models.js) .  Put it in the application's `/server/boot` directory so it will get executed when the application starts.
 
 {% include note.html content="
-
-The auto-migration script below is an example of a _boot script_ that LoopBack executes when an application initially starts up. Use boot scripts for initialization and to perform any other logic your application needs to perform when it starts. See [Defining boot scripts](/doc/en/lb2/Defining-boot-scripts) for more information.
-
-" %}
+The auto-migration script below is an example of a _boot script_ that LoopBack executes when an application initially starts up. Use boot scripts for initialization and to perform any other logic your application needs to perform when it starts. See [Defining boot scripts](/doc/en/lb2/Defining-boot-scripts) for more information." %}
 
 **/server/boot/create-sample-models.js**
 
@@ -190,10 +175,7 @@ module.exports = function(app) {
 This will save some test data to the data source.
 
 {% include note.html content="
-
-The boot script containing the automigration command will run _each time_ you run your application. Since [`automigrate()`](http://apidocs.strongloop.com/loopback-datasource-juggler/#datasource-prototype-automigrate) first drops tables before trying to create new ones, it won't create duplicate tables.
-
-" %}
+The boot script containing the auto-migration command will run _each time_ you run your application. Since [`automigrate()`](http://apidocs.strongloop.com/loopback-datasource-juggler/#datasource-prototype-automigrate) first drops tables before trying to create new ones, it won't create duplicate tables." %}
 
 Now run the application:
 
@@ -223,4 +205,4 @@ You can also use the API Explorer:
 3.  Click **Try it out!**
 4.  You'll see the data for the three coffee shops created in the above script. 
 
-Next: In [Extend your API](/doc/en/lb2/Extend-your-API.html), you'll learn how to add a custom method to your model.
+Next: In [Extend your API](/doc/{{page.lang}}/lb2/Extend-your-API.html), you'll learn how to add a custom method to your model.

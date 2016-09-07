@@ -21,7 +21,7 @@ StrongLoop Process Manager does not run on Windows. Therefore, you cannot deploy
 
 ### Compiler tools
 
-If you want features such as [application profiling](https://docs.strongloop.com/display/SLC/Profiling) or [monitoring](https://docs.strongloop.com/display/SLC/Monitoring-app-metrics), you must install compiler tools and Python before you start.  See [Installing compiler tools](/doc/en/lb2/Installing-compiler-tools.html#Installingcompilertools-Windows) for more information.
+If you want features such as [application profiling](https://docs.strongloop.com/display/SLC/Profiling) or [monitoring](https://docs.strongloop.com/display/SLC/Monitoring-app-metrics), you must install compiler tools and Python before you start.  See [Installing compiler tools](/doc/{{page.lang}}/lb2/Installing-compiler-tools.html#Installingcompilertools-Windows) for more information.
 
 ### Git
 

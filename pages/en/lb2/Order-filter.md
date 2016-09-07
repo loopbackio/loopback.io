@@ -21,22 +21,15 @@ Order by two or more properties:
 
 `filter[order][0]=propertyName <ASC|DESC>&filter[order][1]propertyName]=<ASC|DESC>...`
 
-You can also use [stringified JSON format](/doc/en/lb2/Querying-data.html#Queryingdata-UsingstringifiedJSONinRESTqueries) in a REST query.
+You can also use [stringified JSON format](/doc/{{page.lang}}/lb2/Querying-data.html#Queryingdata-UsingstringifiedJSONinRESTqueries) in a REST query.
 
 {% include note.html content="
-
-Default ordering can be configured in [default scope](/doc/en/lb2/Model-definition-JSON-file.html#ModeldefinitionJSONfile-Defaultscope).
-
+Default ordering can be configured in [default scope](Model-definition-JSON-file.html#default-scope).
 " %}
 
 ### Node API
 
-{% include warning.html content="
-
-Methods of models in the [AngularJS client](/doc/en/lb2/AngularJS-JavaScript-SDK.html) have a different signature than those of the Node API.
-For more information, see [AngularJS SDK API](http://apidocs.strongloop.com/loopback-sdk-angular/).
-
-" %}
+{% include content/angular-methods-caveat.html lang=page.lang %}
 
 Order by one property:
 

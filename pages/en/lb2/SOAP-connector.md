@@ -24,11 +24,11 @@ In your application root directory, enter:
 $ npm install loopback-connector-soap --save
 ```
 
-This will install the module from npm and add it as a dependency to the application's [package.json](http://docs.strongloop.com/display/LB/package.json) file.
+This will install the module from npm and add it as a dependency to the application's [package.json](/doc/{{page.lang}}/lb2/package.json.html) file.
 
 ## Creating a data source
 
-Use the [Data source generator](/doc/en/lb2/Data-source-generator.html) to add a SOAP data source to your application.
+Use the [Data source generator](/doc/{{page.lang}}/lb2/Data-source-generator.html) to add a SOAP data source to your application.
 
 ```shell
 $ apic create --type datasource

@@ -11,9 +11,9 @@ summary:
 
 ## Extending models using JSON
 
-When you create a model with the [model generator](/doc/en/lb2/Model-generator.html),
+When you create a model with the [model generator](/doc/{{page.lang}}/lb2/Model-generator.html),
 you choose a base model, that is, the model that your model will "extend" and from which it will inherit methods and properties.
-The tool will set the  base property in the [model definition JSON file](/doc/en/lb2/Model-definition-JSON-file.html) accordingly.
+The tool will set the  base property in the [model definition JSON file](/doc/{{page.lang}}/lb2/Model-definition-JSON-file.html) accordingly.
 For example, for a model that extends [PersistedModel](http://apidocs.strongloop.com/loopback/#persistedmodel):
 
 **/common/models/model.json**
@@ -31,17 +31,15 @@ In general, use `PersistedModel` as the base model when you want to store you
 Use `Model` as the base for models that don't have CRUD semantics, for example, using connectors such as SOAP and REST.
 
 {% include tip.html content="
-
 Extend the built-in User model to create your own model that represents users or customers; this model provides capabilities to register, login, and recover passwords.
-See [Managing users](/doc/en/lb2/Managing-users.html) for more information.
+See [Managing users](Managing-users.html) for more information.
 When you extend the built-in User model, use a model name other than \"User\" such as \"customer,\" or \"client.\" Don't name it \"User\" because that will conflict with the built-in
 [User model](https://apidocs.strongloop.com/loopback/#user). To avoid confusion, it's also best to avoid \"user\" with a lowercase \"u\" .
-
 " %}
 
-See [Customizing models](/doc/en/lb2/Customizing-models.html) for general information on how to create a model that extends (or "inherits from") another model.
+See [Customizing models](/doc/{{page.lang}}/lb2/Customizing-models.html) for general information on how to create a model that extends (or "inherits from") another model.
 
-See [LoopBack types](/doc/en/lb2/LoopBack-types.html) for information on data types supported.
+See [LoopBack types](/doc/{{page.lang}}/lb2/LoopBack-types.html) for information on data types supported.
 
 ## Extending a model in JavaScript
 
@@ -84,13 +82,13 @@ var options = {
 var user = loopback.Model.extend('user', properties, options);
 ```
 
-See [LoopBack types](/doc/en/lb2/LoopBack-types.html) for information on data types supported.
+See [LoopBack types](/doc/{{page.lang}}/lb2/LoopBack-types.html) for information on data types supported.
 
 ### Mixing in model definitions
 
 You may want to create models that share a common set of properties and logic.
 LoopBack enables you to "mix-in" one or more other models into a single model.
-This is a special case of the general ability to mix in model properties and functions. See [Defining mixins](/doc/en/lb2/Defining-mixins.html) for more information.
+This is a special case of the general ability to mix in model properties and functions. See [Defining mixins](/doc/{{page.lang}}/lb2/Defining-mixins.html) for more information.
 
 For example:
 

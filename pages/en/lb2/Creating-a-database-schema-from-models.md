@@ -12,40 +12,34 @@ summary:
 LoopBack _auto-migration_ creates a database schema based on your application's models.
 In relational databases, auto-migration creates a table for each model, and a column in the table for each property in the model.
 Auto-migration creates tables for all models attached to a data source, including 
-[built-in models](/doc/en/lb2/Using-built-in-models.html)
+[built-in models](/doc/{{page.lang}}/lb2/Using-built-in-models.html)
 
 Once you have defined a model, LoopBack can create or update (synchronize) the database schemas accordingly, if you need to adjust the database to match the models.
 LoopBack provides two ways to synchronize model definitions with table schemas:
 
-* **[Auto-migrate](/doc/en/lb2/Creating-a-database-schema-from-models.html)**: Automatically create or re-create the table schemas based on the model definitions. 
-* **[Auto-update](/doc/en/lb2/Creating-a-database-schema-from-models.html)**: Automatically alter the table schemas based on the model definitions.
+* **[Auto-migrate](/doc/{{page.lang}}/lb2/Creating-a-database-schema-from-models.html)**: Automatically create or re-create the table schemas based on the model definitions. 
+* **[Auto-update](/doc/{{page.lang}}/lb2/Creating-a-database-schema-from-models.html)**: Automatically alter the table schemas based on the model definitions.
 
 {% include warning.html content="
-
 Auto-migration will drop an existing table if its name matches a model name.
-When tables with data exist, use [auto-update](/doc/en/lb2/Creating-a-database-schema-from-models.html) to avoid data loss.
-
+When tables with data exist, use [auto-update](Creating-a-database-schema-from-models.html) to avoid data loss.
 " %}
 
 ## Auto-migrate
 
 {% include note.html content="
-
-StrongLoop Arc enables you to perform auto-migration without coding.
-For more information, see
-[Creating and editing models (Migrating a model)](https://docs.strongloop.com/display/APIS/Creating-and-editing-models#Creatingandeditingmodels-Migratingamodel).
-
-" %}
+The IBM API Connect API Designer enables you to perform auto-migration without coding.
+For more information, see [Creating a database schema from models](http://www.ibm.com/support/knowledgecenter/SSFS6T/com.ibm.apic.toolkit.doc/tapim-model-update.html)." %}
 
 **See also**: [automigrate()](http://apidocs.strongloop.com/loopback-datasource-juggler/#datasource-prototype-automigrate) in LoopBack API reference.
 
 The following data sources support auto-migration:
 
-* [Oracle](/doc/en/lb2/Oracle-connector.html)
-* [PostgreSQL](/doc/en/lb2/PostgreSQL-connector.html)
-* [MySQL](/doc/en/lb2/MySQL-connector.html)
-* [SQL Server](/doc/en/lb2/SQL-Server-connector.html)
-* [MongoDB](/doc/en/lb2/MongoDB-connector.html)
+* [Oracle](/doc/{{page.lang}}/lb2/Oracle-connector.html)
+* [PostgreSQL](/doc/{{page.lang}}/lb2/PostgreSQL-connector.html)
+* [MySQL](/doc/{{page.lang}}/lb2/MySQL-connector.html)
+* [SQL Server](/doc/{{page.lang}}/lb2/SQL-Server-connector.html)
+* [MongoDB](/doc/{{page.lang}}/lb2/MongoDB-connector.html)
 
 Here's an example of auto-migration. Consider this model definition:
 

@@ -10,8 +10,8 @@ summary:
 ---
 
 To add a remote method to a 
-[built-in model](/doc/en/lb2/Using-built-in-models.html), you can either 
-[extend the model](/doc/en/lb2/Extending-built-in-models.html) and add the remote method to your new model,
+[built-in model](/doc/{{page.lang}}/lb2/Using-built-in-models.html), you can either 
+[extend the model](/doc/{{page.lang}}/lb2/Extending-built-in-models.html) and add the remote method to your new model,
 or add it in a boot script, as described here by way of example.
 
 This example adds a "greet" method the built-in User model.
@@ -50,9 +50,9 @@ module.exports = function(app) {
 ## ACLs
 
 By default, the User model ACLs deny all requests besides those explicitly whitelisted, so you have to add an ACL record for the remote method.
-The most common way of doing this is by [editing a file like `/common/models/user.json`](/doc/en/lb2/Controlling-data-access.html),
+The most common way of doing this is by [editing a file like `/common/models/user.json`](/doc/{{page.lang}}/lb2/Controlling-data-access.html),
 but again this file would override the built-in version, so that's not possible.
-Instead you can define ACLs in [`model-config.json`](/doc/en/lb2/model-config.json.html).
+Instead you can define ACLs in [`model-config.json`](/doc/{{page.lang}}/lb2/model-config.json.html).
 
 For example:
 
@@ -78,7 +78,7 @@ Now it's possible for all users to send `POST` requests to `/Users/greet` and ac
 ## Additional Considerations
 
 * Adding remote methods in this way **does not add them to the Swagger JSON**.
-  This means you will not see a "Users/greet" method listed in the [API explorer](/doc/en/lb2/API-Explorer).
+  This means you will not see a "Users/greet" method listed in the [API explorer](/doc/{{page.lang}}/lb2/API-Explorer).
 * By design, you can override settings in `model-config.json` by
-  [environment specific configurations](/doc/en/lb2/Environment-specific-configuration.html).
+  [environment specific configurations](/doc/{{page.lang}}/lb2/Environment-specific-configuration.html).
   Bear this in mind when defining ACLs as shown above.

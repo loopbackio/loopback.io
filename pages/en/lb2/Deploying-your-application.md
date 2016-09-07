@@ -9,23 +9,10 @@ permalink: /doc/en/lb2/Deploying-your-application.html
 summary:
 ---
 
-{% include important.html content="
-
-**Prerequisite**: Install StrongLoop software as described in [Installing StrongLoop](/doc/en/lb2/Installing-StrongLoop).
-
-**Recommended**: Read [LoopBack core concepts](/doc/en/lb2/LoopBack-core-concepts).
-
-" %}
+{% include content/gs-prereqs.html lang=page.lang %}
 
 [StrongLoop Process Manager](http://strong-pm.io/) manages Node applications, providing automatic restart, cluster control, profiling, monitoring and many other features.
 
-{% include note.html content="
-
-If you followed the previous step in the tutorial, go to [Running StrongLoop Process Manager](/doc/en/lb2/Deploying-your-application.html)
-
-If you're just jumping in, follow the steps below to catch up...
-
-" %}
 
 Get the application (in the state following the last article plus all the client files) from GitHub and install all its dependencies:
 
@@ -43,17 +30,15 @@ If you've followed the tutorial this far, you have an idea of how easy it is to 
 ## Running StrongLoop Process Manager
 
 {% include note.html content="
-
 In practice, when you're ready to deploy to production, you would install and run StrongLoop PM on your production host, then use Arc to deploy your app there. For more information, see [Setting up a production host](https://docs.strongloop.com/display/SLC/Setting-up-a-production-host)
 
 For the purposes of this tutorial, you'll just run StrongLoop PM locally, then deploy your app to `localhost`. It all works basically the same, but there are few differences when you're actually ready to go to production. You might want to do this, for example, to test your application's behavior under clustered mode for scaling.
-
 " %}
 
 Run StrongLoop PM with the following command. By default, StrongLoop PM listens on port 8701\. You can change this default with the `-l` option.  See [slc pm](https://docs.strongloop.com/display/NODE/slc-pm) for more information.  Process Manager will display some information in the console as it starts:
 
 ```
-$ slc pm 
+$ slc pm
 slc pm(51470): StrongLoop PM v5.1.0 (API v6.1.0) on port `8701`
 slc pm(51470): Base folder `/Users/rand/.strong-pm`
 slc pm(51470): Applications on port `3000 - service ID`
@@ -127,4 +112,4 @@ $ slc deploy http://myserver.myco.com:8701</pre></div>
   </div>
 </div>
 
-Next: Go to [Learn more](/doc/en/lb2/Learn-more.html) for some tips on what to read next.
+Next: Go to [Learn more](/doc/{{page.lang}}/lb2/Learn-more.html) for some tips on what to read next.
