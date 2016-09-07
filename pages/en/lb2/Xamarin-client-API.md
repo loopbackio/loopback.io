@@ -392,7 +392,7 @@ Checks if the server is connected.
 
 Parameter:
 
-* _timeoutMilliseconds -_ timeout for the check, in ms.
+* _timeoutMilliseconds_ - timeout for the check, in ms.
 
 Returns a Boolean value.
 

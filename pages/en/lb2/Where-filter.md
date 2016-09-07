@@ -201,7 +201,7 @@ This table describes the operators available in "where" filters. See [Examples]
   </tbody>
 </table>
 
-### **AND and OR operators**
+### AND and OR operators
 
 Use the AND and OR operators to create compound logical filters based on simple where filter conditions, using the following syntax.
 
@@ -215,7 +215,7 @@ Use the AND and OR operators to create compound logical filters based on simple 
 
 `[where][<and|or>][0]condition1&[where][<and|or>]condition2...`
 
-Where_ condition1_ and_ condition2_ are a filter conditions.
+Where _condition1_ and _condition2_ are a filter conditions.
 
 See [examples](/doc/{{page.lang}}/lb2/Where-filter.html) below.
 

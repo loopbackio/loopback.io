@@ -136,7 +136,7 @@ You can add code to [validate data](/doc/{{page.lang}}/lb2/Validating-model-data
 
 _Middleware_ refers to functions executed when HTTP requests are made to REST endpoints. Since LoopBack is based on [Express](http://expressjs.com/),
 LoopBack middleware is the same as [Express middleware](http://expressjs.com/en/guide/using-middleware.html).
-However, LoopBack adds the concept of_ phases_, to clearly define the order in which middleware is called.
+However, LoopBack adds the concept of _phases_, to clearly define the order in which middleware is called.
 Using phases helps to avoid ordering issues that can occur with standard Express middleware.
 
 See [Defining middleware](/doc/{{page.lang}}/lb2/Defining-middleware.html) for more information.
