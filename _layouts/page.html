@@ -34,11 +34,9 @@ layout: default
 
     {{content}}
 
-    <!-- {% unless jekyll.environment == "production" %} -->
       {% if site.github_editme_path %}
           <a target="_blank" href="https://github.com/{{site.github_editme_path}}{{page.url | remove: "/doc" | remove: ".html" | append: ".md"}}" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit this page</a>
       {% endif %}
-    <!-- {% endunless %} -->
 
     <div class="tags">
       {% if page.tags != null %}
