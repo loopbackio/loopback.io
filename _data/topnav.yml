@@ -13,7 +13,7 @@ topnav_dropdowns:
     - title: Resources
       folderitems:
         - title: Github Repo
-          external_url: https://github.com/stronglop/loopback
+          external_url: https://github.com/strongloop/loopback
         - title: Developer Forum
           external_url: https://groups.google.com/forum/#!forum/loopbackjs
         - title: Gitter Chat Room
