@@ -51,7 +51,7 @@ Where:
 
 * _property_ is the name of a property (field) in the model being queried.
 * _value_ is a literal value. 
-* _op_ is one of the [operators](/doc/{{page.lang}}/lb2/Where-filter.html) listed below.
+* _op_ is one of the [operators](#operators) listed below.
 
 ```javascript
 Cars.find({where: {carClass:'fullsize'}});
@@ -63,7 +63,7 @@ The equivalent REST query would be:
 
 {% include tip.html content="
 The above where clause syntax is for queries, and not for [`count()`](http://apidocs.strongloop.com/loopback/#persistedmodel-count).
-For all other methods, including `count()`, omit the `{ where : ... }` wrapper; see [Where clause for other methods](Where-filter.html) below." %}
+For all other methods, including `count()`, omit the `{ where : ... }` wrapper; see [Where clause for other methods](#where-clause-for-other-methods) below." %}
 
 ### Where clause for other methods
 
@@ -86,7 +86,7 @@ Where:
 
 * _property_ is the name of a property (field) in the model being queried.
 * _value_ is a literal value. 
-* _op_ is one of the [operators](/doc/{{page.lang}}/lb2/Where-filter.html) listed below.
+* _op_ is one of the [operators](#operators) listed below.
 
 For example, below shows a where clause in a call to a model's [updateAll()](http://apidocs.strongloop.com/loopback/#persistedmodel-updateall) method.
 Note the lack of `{ where : ... }` in the argument.
@@ -139,7 +139,7 @@ var defaultScope = Report.defaultScope;
 
 ## Operators
 
-This table describes the operators available in "where" filters. See [Examples](/doc/{{page.lang}}/lb2/Where-filter.html) below.
+This table describes the operators available in "where" filters. See [Examples](#examples) below.
 
 <table>
   <tbody>
@@ -217,7 +217,7 @@ Use the AND and OR operators to create compound logical filters based on simple 
 
 Where _condition1_ and _condition2_ are a filter conditions.
 
-See [examples](/doc/{{page.lang}}/lb2/Where-filter.html) below.
+See [examples](#examples) below.
 
 ### Regular expressions
 
@@ -257,7 +257,7 @@ see [Regular Expressions (Mozilla Developer Network)](https://developer.mozilla
 
 {% include tip.html content="
 The above where clause syntax is for queries. For updates and deletes, omit the `{ where : ... }` wrapper.
-See [Where clause for other methods](Where-filter.html) below." %}
+See [Where clause for other methods](#where-clause-for-other-methods) below." %}
 
 For example, this query returns all cars for which the model starts with a capital "T":
 

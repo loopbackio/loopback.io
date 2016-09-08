@@ -55,7 +55,7 @@ Use _boot scripts_ to perform custom initialization in addition to that perfor
 When an application starts, LoopBack loads all the scripts in the `server/boot` directory.
 By default, LoopBack loads boot scripts in alphabetical order.
 You can customize the boot script load order using the options argument of [`boot()`](http://apidocs.strongloop.com/loopback-boot/#boot).
-See [Boot script loading order](/doc/{{page.lang}}/lb2/Defining-boot-scripts.html) for details.
+See [Boot script loading order](#boot-script-loading-order) for details.
 
 ## Predefined boot scripts
 

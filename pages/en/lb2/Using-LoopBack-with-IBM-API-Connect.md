@@ -53,7 +53,7 @@ and perform other actions provided by data sources and services.
 Clients can call LoopBack APIs directly using [Strong Remoting](/doc/{{page.lang}}/lb2/Strong-Remoting.html), a pluggable transport layer that enables you
 to provide backend APIs over REST, WebSockets, and other transports.
 
-The following diagram illustrates key [LoopBack modules](/doc/{{page.lang}}/lb2/Using-LoopBack-with-IBM-API-Connect.html), how they are related, and their dependencies.
+The following diagram illustrates key [LoopBack modules](#loopback-framework-modules), how they are related, and their dependencies.
 
 {% include image.html file="9830413.png" alt="" %}
 

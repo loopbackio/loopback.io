@@ -23,11 +23,11 @@ Using phases helps to avoid ordering issues that can occur with standard Express
 
 LoopBack supports the following types of middleware:
 
-* **Pre-processing middleware** for custom application logic. See [example of static middleware](/doc/{{page.lang}}/lb2/Defining-middleware.html). 
+* **Pre-processing middleware** for custom application logic. See [example of static middleware](#static-middleware). 
 * **Dynamic request handling middleware** to serve dynamically-generated responses, for example HTML pages rendered from templates and JSON responses to REST API requests.
-  See [example of pre-processing middleware](/doc/{{page.lang}}/lb2/Defining-middleware.html).
-* **Static middleware** to serve static client-side assets.  See [example of static middleware](/doc/{{page.lang}}/lb2/Defining-middleware.html).
-* **Error-handling middleware** to deal with request errors. See [example of error-handling middleware](/doc/{{page.lang}}/lb2/Defining-middleware.html).
+  See [example of pre-processing middleware](#pre-processing-middleware).
+* **Static middleware** to serve static client-side assets.  See [example of static middleware](#static-middleware).
+* **Error-handling middleware** to deal with request errors. See [example of error-handling middleware](#error-handling-middleware).
 
 ### How to add middleware
 
@@ -35,17 +35,17 @@ To add middleware to your application:
 
 1.  **Specify the middleware function**:
     1.  If using an existing function or package, add the code to your application or install the package. 
-    2.  If you are creating a new middleware function, write it. See [Defining a new middleware handler function](/doc/{{page.lang}}/lb2/Defining-middleware.html).
+    2.  If you are creating a new middleware function, write it. See [Defining a new middleware handler function](#defining-a-new-middleware-handler-function).
 
 2.  **Register the middleware**:
-    * Edit `server/middleware.json`. This is the recommended way to register middleware. See [Registering middleware in middleware.json](/doc/{{page.lang}}/lb2/Defining-middleware.html).
-    * Alternatively, register the middleware in application code. See [Registering middleware in JavaScript](/doc/{{page.lang}}/lb2/Defining-middleware.html).
+    * Edit `server/middleware.json`. This is the recommended way to register middleware. See [Registering middleware in middleware.json](#registering-middleware-in-middlewarejson).
+    * Alternatively, register the middleware in application code. See [Registering middleware in JavaScript](#registering-middleware-in-javascript).
 
 ### Middleware phases
 
 LoopBack defines a number of _phases_, corresponding to different aspects of application execution.
 When you register middleware, you can specify the phase in which the application will call it.
-See [Registering middleware in middleware.json](/doc/{{page.lang}}/lb2/Defining-middleware.html) and [Using the LoopBack API](/doc/{{page.lang}}/lb2/Defining-middleware.html).
+See [Registering middleware in middleware.json](#registering-middleware-in-middlewarejson) and [Using the LoopBack API](#using-the-loopback-api).
 If you register middleware (or routes) with the Express API, then it is executed at the beginning of the `routes` phase.
 
 The predefined phases are:
@@ -79,7 +79,7 @@ Always explicitly order the middleware using appropriate phases when order matte
 LoopBack provides convenience middleware for commonly-used Express/Connect middleware, as described in the following table.
 
 When you use this middleware, you don't have to write any code or install any packages; you just specify in which phase you want it to be called.
-See [Registering middleware in middleware.json](/doc/{{page.lang}}/lb2/Defining-middleware.html).
+See [Registering middleware in middleware.json](#registering-middleware-in-middlewarejson).
 
 <table>
   <thead>
@@ -193,11 +193,10 @@ Best practice is to load this middleware directly via `require()` and not rely
         </tr>
       </tbody>
     </table>
-  </div>&nbsp;
-  <p></p>
-  <div>
-    <h3 class="confluenceTable" id="Definingmiddleware-Usingothermiddleware">Using other middleware</h3></div>
+  </div>
 </div>
+
+### Using other middleware
 
 You can use any middleware compatible with Express; see [Express documentation](http://expressjs.com/resources/middleware.html) for a partial list.
 
@@ -208,9 +207,9 @@ $ npm install --save <module-name>
 ```
 
 Then simply register it so that it is called as needed.
-See [Registering middleware in middleware.json](/doc/{{page.lang}}/lb2/Defining-middleware.html) 
+See [Registering middleware in middleware.json](#registering-middleware-in-middlewarejson) 
 and
-[Registering middleware in JavaScript](/doc/{{page.lang}}/lb2/Defining-middleware.html).
+[Registering middleware in JavaScript](#registering-middleware-in-javascript).
 
 ### Defining a new middleware handler function
 
@@ -317,7 +316,7 @@ module.exports = function(options) {
 };
 ```
 
-For details about the `options` object, refer to [Middleware configuration properties](/doc/{{page.lang}}/lb2/Defining-middleware.html).
+For details about the `options` object, refer to [Middleware configuration properties](#middleware-configuration-properties).
 
 ## Registering middleware in middleware.json
 
@@ -373,11 +372,11 @@ phase[:sub-phase] : {
 
 Where:
 
-* _phase_:      is one of the predefined phases listed above (initial, session, auth, and so on) or a custom phase; see [Adding a custom phase](/doc/{{page.lang}}/lb2/Defining-middleware.html).
+* _phase_:      is one of the predefined phases listed above (initial, session, auth, and so on) or a custom phase; see [Adding a custom phase](#adding-a-custom-phase).
 * _sub-phase_:  (optional) can be `before` or `after`.
-* _name_:       optional middleware name. See [Middleware configuration properties](/doc/{{page.lang}}/lb2/Defining-middleware.html) below.
-* _middlewarePath_: path to the middleware function. See [Path to middleware function](/doc/{{page.lang}}/lb2/Defining-middleware.html) below.
-* _paramSpec_:  value of the middleware parameters, typically a JSON object. See [Middleware configuration properties](/doc/{{page.lang}}/lb2/Defining-middleware.html) below.
+* _name_:       optional middleware name. See [Middleware configuration properties](#middleware-configuration-properties) below.
+* _middlewarePath_: path to the middleware function. See [Path to middleware function](#path-to-middleware-function) below.
+* _paramSpec_:  value of the middleware parameters, typically a JSON object. See [Middleware configuration properties](#middleware-configuration-properties) below.
 * _methodSpec_: HTTP methods, such as 'GET', 'POST', and 'PUT'. If not present, applies to all methods.
 * _routeSpec_:  REST endpoint(s) that trigger the middleware.
 
@@ -386,7 +385,7 @@ Where:
 Specify the path to the middleware function (_middlewarePath)_ in the following ways:
 
 * For an external middleware module installed in the project, just use the name of the module; for example `compression`.
-  See [Using other middleware](/doc/{{page.lang}}/lb2/Defining-middleware.html).
+  See [Using other middleware](#using-other-middleware).
 * For a script in a module installed in the project, use the path to the module; for example `loopback/server/middleware/rest`.
 * For a script with a custom middleware function, use the path relative to `middleware.json`, for example `./middleware/custom`.
 * Absolute path to the script file (not recommended).
@@ -626,9 +625,9 @@ The parameters are:
 
 1.  _`route`_, an optional parameter that specifies the URI route or "mount path" to which the middleware is bound.
     When the application receives an HTTP request at this route, it calls (or _triggers_) the handler function.
-    See [Specifying routes](/doc/{{page.lang}}/lb2/Defining-middleware.html).
+    See [Specifying routes](#specifying-routes).
 2.  The middleware handler function (or just "middleware function").
-    See [Defining a new middleware handler function](/doc/{{page.lang}}/lb2/Defining-middleware.html).
+    See [Defining a new middleware handler function](#defining-a-new-middleware-handler-function).
 
 For example:
 

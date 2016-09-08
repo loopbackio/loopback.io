@@ -111,7 +111,7 @@ Enter the following command to validate your Xcode license, then reinstall Stron
 
 Many Linux systems come with the necessary tools.   The specific requirements are:
 
-*   Python (v2.7 recommended; v3.x.x is **_not_** supported).  If you installed Python in a non-standard location, see [Configuring Python directory](/doc/{{page.lang}}/lb2/Installing-compiler-tools.html).
+*   Python (v2.7 recommended; v3.x.x is **_not_** supported).  If you installed Python in a non-standard location, see [Configuring Python directory](#configuring-python-directory).
 *   `make`
 *   A proper C/C-- compiler toolchain, like GCC.  **NOTE**: g-- version 4.2 or later is required.
 

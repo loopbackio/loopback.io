@@ -930,7 +930,7 @@ Product.find({order: "name", offset: 0, limit: 100, where: {deleted: false}}, cb
 
 ### Default scopes with where filters
 
-Adding a `scope` to a model definition (in the [`model.json` file](/doc/{{page.lang}}/lb2/Model-definition-JSON-file.html)) automatically adds a method to model called `defaultScope()`.
+Adding a `scope` to a model definition (in the model.json file) automatically adds a method to model called `defaultScope()`.
 LoopBack will call this method whenever a model is created, updated, or queried.
 
 {% include tip.html content="Default scopes with a `where` filter may not work as you expect!" %}

@@ -239,7 +239,7 @@ The other lines define application states.  _States_ determine which pages appe
 
 The following table summarizes the states, and how the correspond to controllers, templates, and URLs.
 
-<table>
+<table id="state-summary">
   <tbody>
     <tr>
       <th>State</th>
@@ -570,7 +570,7 @@ Angular _services_ are substitutable objects that you connect  together using 
 
 The `js/services` directory contains two AngularJS services libraries: `auth.js` and `lb-services.js`.
 
-You generated the l`b-services.js` previously, and it's described in [Generate lb-services.js](/doc/{{page.lang}}/lb2/Create-AngularJS-client.html). 
+You generated the l`b-services.js` previously, and it's described in [Generate lb-services.js](#generate-lb-servicesjs). 
 
 The other file, `auth.js`, provides a simple interface for low-level authentication mechanisms.  It uses the `Reviewer` model (that extends the base `User` model) and defines the following services:
 
@@ -630,7 +630,7 @@ angular
 
 The `client/views` directory contains seven "partial" view templates loaded by `client/index.html` using the [ngView](https://docs.angularjs.org/api/ngRoute/directive/ngView) directive  A "partial" is a segment of a template in its own HTML file. 
 
-The [table above](/doc/{{page.lang}}/lb2/Create-AngularJS-client.html) describes how the views correspond to states and controllers.
+The [table above](#state-summary) describes how the views correspond to states and controllers.
 
 ## Run the application
 

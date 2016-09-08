@@ -14,11 +14,11 @@ summary:
 LoopBack relations enable you to create connections between models and provide navigation/aggregation APIs to deal with a graph of model instances.
 In addition to the traditional ones, LoopBack also supports the following embedded relations:
 
-* [EmbedsOne](/doc/{{page.lang}}/lb2/Embedded-models-and-relations.html) - a model that embeds another model; for example, a Customer embeds one billingAddress.
-* [EmbedsMany](/doc/{{page.lang}}/lb2/Embedded-models-and-relations.html) - a model that embeds many instances of another model.
+* [EmbedsOne](#embedsone) - a model that embeds another model; for example, a Customer embeds one billingAddress.
+* [EmbedsMany](#embedsmany) - a model that embeds many instances of another model.
   For example, a Customer can have multiple email addresses and each email address is a complex object that contains label and address..
-* [EmbedsMany with belongsTo](/doc/{{page.lang}}/lb2/Embedded-models-and-relations.html) - a model that embeds many links to related people, such as an author or a reader. 
-* [ReferencesMany](/doc/{{page.lang}}/lb2/Embedded-models-and-relations.html)
+* [EmbedsMany with belongsTo](#embedsmany-with-belongsto) - a model that embeds many links to related people, such as an author or a reader. 
+* [ReferencesMany](#referencesmany)
 
 {% include important.html content="
 

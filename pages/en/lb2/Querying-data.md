@@ -84,11 +84,11 @@ A REST query must include the literal string \"filter\" in the URL query string.
 The Node API call does not include the literal string \"filter\" in the JSON.
 
 [LoopBack API Explorer](Use-API-Explorer.html) adds \"filter\" to the query string,
-but you must enter [Stringified JSON](Querying-data.html) in the **filter** field.
+but you must enter [Stringified JSON](#using-stringified-json-in-rest-queries) in the **filter** field.
 Also make sure that the quotes you use are proper straight quotes ( \" ), not curved or typographic quotation marks (  “ or ” ). These can often be hard to distinguish visually." %}
 
 {% include tip.html content="
-If you are trying [query filters](Querying-data.html) with curl, use the `-g` or `--globoff`  option to use brackets `[` and `]` in request URLs." %}
+If you are trying [query filters](#filters) with curl, use the `-g` or `--globoff`  option to use brackets `[` and `]` in request URLs." %}
 
 LoopBack supports the following kinds of filters:
 
@@ -99,7 +99,7 @@ LoopBack supports the following kinds of filters:
 * [Skip filter](/doc/{{page.lang}}/lb2/Skip-filter.html)
 * [Where filter](/doc/{{page.lang}}/lb2/Where-filter.html)
 
-See [Filters](/doc/{{page.lang}}/lb2/Querying-data.html) below for more information.
+See [Filters](#filters) below for more information.
 
 ### Examples
 

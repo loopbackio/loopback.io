@@ -42,7 +42,7 @@ In general there may be conflicts when performing replication.
 So, for example, while disconnected, a user may make changes on the client that conflict with changes made on the server.
 What happens when an object or field is modified both locally and remotely?
 LoopBack handles conflict resolution for you, and enables you to easily present a user interface to allow the end user to make informed decisions to resolve conflicts when they occur.
-See [Resolving conflicts](/doc/{{page.lang}}/lb2/Synchronization.html) below.
+See [Resolving conflicts](#conflict-resolution) below.
 
 {% include note.html content="
 Currently synchronization is built-in to LoopBack, but will be refactored into a component in the future.

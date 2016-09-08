@@ -13,10 +13,10 @@ summary:
 
 Loopback provides useful built-in models for common use cases:
 
-* **[Application model](/doc/{{page.lang}}/lb2/Using-built-in-models.html)** - contains metadata for a client application that has its own identity and associated configuration with the LoopBack server.
-* **[User model](/doc/{{page.lang}}/lb2/Using-built-in-models.html)** - register and authenticate users of your app locally or against third-party services.
-* **[Access control models](/doc/{{page.lang}}/lb2/Using-built-in-models.html)** - ACL, AccessToken, Scope, Role, and RoleMapping models for controlling access to applications, resources, and methods.
-* **[Email model](/doc/{{page.lang}}/lb2/Using-built-in-models.html)** - send emails to your app users using SMTP or third-party services.
+* **[Application model](#application-model)** - contains metadata for a client application that has its own identity and associated configuration with the LoopBack server.
+* **[User model](#user-model)** - register and authenticate users of your app locally or against third-party services.
+* **[Access control models](#access-control-models)** - ACL, AccessToken, Scope, Role, and RoleMapping models for controlling access to applications, resources, and methods.
+* **[Email model](#email-model)** - send emails to your app users using SMTP or third-party services.
 
 The built-in models (except for Email) extend [PersistedModel](http://apidocs.strongloop.com/loopback/#persistedmodel),
 so they automatically have a full complement of create, update, and delete (CRUD) operations.

@@ -81,7 +81,7 @@ Where:
 * `_methodName_` is the name of the method that triggers the remote hook. This may be a custom [remote method](/doc/{{page.lang}}/lb2/Remote-methods.html)
   or a standard create, retrieve, update, and delete method inherited from [PersistedModel](http://apidocs.strongloop.com/loopback/#persistedmodel).
   It may include wildcards to match more than one method (see below).
-* `ctx` is the [context object](/doc/{{page.lang}}/lb2/Remote-hooks.html). 
+* `ctx` is the [context object](#context-object). 
 * `_modelInstance_` is the affected model instance.
 
 The syntax above includes a call to `next()` as a reminder that you must call `next()` at some point in the remote hook callback function.

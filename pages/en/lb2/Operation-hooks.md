@@ -231,7 +231,7 @@ See the documentation of individual hooks for more information.
 
 {% include important.html content="
 Only certain connectors support `ctx.isNewInstance`. With other connectors it is undefined.
-See [Checking for support of ctx.isNewInstance](Operation-hooks.html)." %}
+See [Checking for support of ctx.isNewInstance](#checking-for-support-ofctxisnewinstance)." %}
 
 ##### currentInstance
 
@@ -475,7 +475,7 @@ Depending on which method triggered this hook, the context will have one of the 
   * `Model` - the constructor of the model that will be saved
   * `where` - the where filter describing which instances will be affected
   * `data` - the (partial) data to apply during the update
-  * `currentInstance` - the instance being affected, see [Triggering with prototype.updateAttributes](/doc/{{page.lang}}/lb2/Operation-hooks.html) below.
+  * `currentInstance` - the instance being affected, see [Triggering with prototype.updateAttributes](#triggering-with-prototypeupdateattributes) below.
 
 #### ctx.isNewInstance
 

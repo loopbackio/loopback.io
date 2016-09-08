@@ -35,7 +35,7 @@ The following diagram illustrates how it works.
 To send push notifications, you'll need to create a LoopBack server application, then configure your iOS and Android client apps accordingly.
 You can either use the example LoopBack push application or create your own. Using the example application is a good way to learn about LoopBack push notifications. 
 
-For more information on the architecture of the LoopBack Push Notification component, see [Architecture](/doc/{{page.lang}}/lb2/Push-notifications.html) below.
+For more information on the architecture of the LoopBack Push Notification component, see [Architecture](#architecture) below.
 
 {% include tip.html content="
 For information on how to implement real-time \"push-like\" notifications to web clients, see [Realtime server-sent events](Realtime-server-sent-events.html)." %}
@@ -51,7 +51,7 @@ $ npm install loopback-component-push
 ## Use the LoopBack push notification sample application
 
 {% include important.html content="
-If you are creating your own LoopBack server application, skip this section and go to [Set up your LoopBack application to send push notifications](Push-notifications.html)." %}
+If you are creating your own LoopBack server application, skip this section and go to [Set up your LoopBack application to send push notifications](#set-up-your-loopback-application-to-send-push-notifications)." %}
 
 First, download the sample app:
 
@@ -162,7 +162,7 @@ Use the Application model's [`register()`](http://apidocs.strongloop.com/loop
 For information on getting API keys, see:
 
 * [Get your Google Cloud Messaging credentials](/doc/{{page.lang}}/lb2/Push-notifications-for-Android-apps) for Android.
-* [Set up iOS clients](/doc/{{page.lang}}/lb2/Push-notifications.html) for iOS.
+* [Set up iOS clients](#set-up-messaging-credentials-for-ios-apps) for iOS.
 
 For example, here is how the sample app registers a mobile client:
 
