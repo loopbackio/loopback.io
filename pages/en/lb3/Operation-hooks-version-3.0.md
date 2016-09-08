@@ -3,10 +3,10 @@ title: "Operation hooks (version 3.0)"
 lang: en
 layout: page
 keywords: LoopBack
-tags:
-sidebar: lb2_sidebar
-permalink: /doc/en/lb2/Operation-hooks-version-3.0-.html
-summary:
+tags: application_logic
+sidebar: lb3_sidebar
+permalink: /doc/en/lb3/Operation-hooks-version-3.0.html
+summary: Numerous changes were made to operation hooks in LoopBack version 3.0.
 ---
 
 **See also**:

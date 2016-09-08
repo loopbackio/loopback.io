@@ -11,14 +11,12 @@ summary:
 
 {% include content/strongloop-labs.html lang=en %}
 
-**See also**:
-
-See also:
-
+{% include see-also.html content="
 * [API reference](http://apidocs.strongloop.com/loopback-component-push)
 * [Example server application](https://github.com/strongloop/loopback-example-push/tree/master/loopback-2.x)
 * [Example iOS app](https://github.com/strongloop/loopback-example-push/tree/master/ios)
 * [Example Android app](https://github.com/strongloop/loopback-example-push/tree/master/android)
+" %}
 
 ## Overview
 

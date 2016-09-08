@@ -9,11 +9,10 @@ permalink: /doc/en/lb2/AngularJS-Grunt-plugin.html
 summary:
 ---
 
-
-**See also**:
-
+{% include see-also.html content="
 * [loopback-example-angular](https://github.com/strongloop/loopback-example-angular)
 * [Angular SDK built-in models API](http://apidocs.strongloop.com/loopback-sdk-angular/)
+" %}
 
 ## Overview
 

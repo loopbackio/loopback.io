@@ -11,10 +11,10 @@ summary:
 
 {% include content/strongloop-labs.html lang=en %}
 
-**See also**:
-
+{% include see-also.html content="
 * [Android SDK API docs](http://apidocs.strongloop.com/loopback-sdk-android/api/index.html)
 * [loopback-android-getting-started](https://github.com/strongloop/loopback-android-getting-started)
+" %}
 
 The Android SDK provides a simple Java API that enables your Android app to access a
 [Using LoopBack with IBM API Connect](/doc/{{page.lang}}/lb2/Using-LoopBack-with-IBM-API-Connect.html) server application.

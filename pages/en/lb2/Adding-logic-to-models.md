@@ -9,10 +9,10 @@ permalink: /doc/en/lb2/Adding-logic-to-models.html
 summary:
 ---
 
-**See also**:
-
-* [Defining boot scripts](/doc/{{page.lang}}/lb2/Defining-boot-scripts.html)
-* [Defining middleware](/doc/{{page.lang}}/lb2/Defining-middleware.html)
+{% include see-also.html content="
+* [Defining boot scripts](Defining-boot-scripts.html)
+* [Defining middleware](Defining-middleware.html)
+" %}
 
 There are three ways to add custom application logic to models:
 

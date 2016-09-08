@@ -1172,3 +1172,5 @@ div.box.box1 {
 .sl-hidden {
   display: none;
 }
+
+#seealso ul {line-height:110%; }

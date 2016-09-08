@@ -1,11 +1,15 @@
 ---
 title: LoopBack Documentation
-keywords: sample homepage
+toc: false
+keywords: homepage
 tags: [getting_started]
 sidebar: home_sidebar
 permalink: /doc/index.html
-summary: This is proof-of-concept site for LoopBack open source docs, where the source is hosted in GitHub and served via Jekyll and GitHub Pages.
+summary: LoopBack is a highly-extensible, open-source Node.js framework that enables you to create dynamic end-to-end REST APIs with little or no coding.
 ---
+
+- [LoopBack 2.0](en/lb2) - Content has been migrated; tesing underway; Next migrating translated content.
+- [LoopBack 3.0](en/lb3) - Currently has a draft navigation sidebar, only some 3.0-specific content.
 
 ## Background
 
@@ -14,23 +18,12 @@ LoopBack docs are currently hosted in Confluence, and this prevents the open-sou
 This site is based on Tom Johnson's [Documentation Jekyll theme](https://github.com/tomjohnson1492/documentation-theme-jekyll).
 It has three major divisions of content:
 
-- [LoopBack 2.0](lb2) - Currently has a draft navigation sidebar, but no content.
-- [LoopBack 3.0](lb3) - Currently has a draft navigation sidebar, but no content.
 - [Contributing to LoopBack docs](contrib) - some information pulled from [http://idratherbewriting.com/documentation-theme-jekyll/](http://idratherbewriting.com/documentation-theme-jekyll/) specifically for doc. contributors.
-
-{% include note.html content="Since this is just a proof-of-concept, there are lots of
-known issues, glitches, and so on.  There is still a lot of work and refining to do, for example with the CSS styles." %}
-
-## Proposed solution
-
-Move doc content from Confluence into [this repository](https://github.com/strongloop/loopback.io), to enable public contributions/editing.
-Publish the docs to [http://loopback.io/doc](http://loopback.io/doc).  Existing content on the would remain (essentially) unaffected.
-
-{% include note.html content="That's why the current content on loopback.io still remains where it is and this site is just \"slipped in\" to the current URL scheme under `/doc`" %}
 
 ### High-level tasks
 
-1. Create Jekyll framework for documentation.  I propose to leverage Tom Johnson's [Documentation Jekyll Theme](http://idratherbewriting.com/documentation-theme-jekyll/). This has almost everything we need and is MIT-licensed.  It is responsive (uses Bootstrap) and has many useful features for documentation, e.g. sidebar navigation, note and alert templates, category tags, facilities for reviews, and so on.
+For a complete list of planned and in-progress tasks, see [tasks in the loopback.io GitHub repo](https://github.com/strongloop/loopback.io/issues).
+
 1. Migrate content from Confluence to markdown.  See [Migrating LoopBack Docs to Markdown for use with Jekyll](https://github.com/strongloop/loopback.io/wiki/Migrating-LoopBack-Docs-to-Markdown-for-use-with-Jekyll) for details. Task: [issue #29](https://github.com/strongloop/loopback.io/issues/29).
 1. Figure out how to deal with content that we currently "transclude" (dynamically include) from other GitHub repos.  Typically, these are example repo README files.  We use a special Confluence macro to "single source" this content; I think we'll probably need to use a script to pull down the markdown, since we can't use Jekyll plug-ins with GitHub Pages. Task: [issue #30](https://github.com/strongloop/loopback.io/issues/30).
 1. Use Google Custom Search to provide basic search functionality (see [implementation in current LoopBack doc site](https://docs.strongloop.com/display/APIC/Search+LoopBack+docs).  This is superior to the search functionality in [the Jekyll theme]( https://github.com/tomjohnson1492/documentation-theme-jekyll). Task: [issue #31](https://github.com/strongloop/loopback.io/issues/31).

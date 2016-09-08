@@ -31,7 +31,7 @@ exclude:
 feedback_email: rmckinn@us.ibm.com
 # used as a contact email for the Feedback link in the top navigation bar
 
-feedback_disable: true
+feedback_disable:
 # if you uncomment the previous line, the Feedback link gets removed
 
 # feedback_text: "Need help?"

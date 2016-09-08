@@ -17,7 +17,7 @@ content="LoopBack is a highly-extensible, open-source Node.js framework that ena
 - Separable components for file storage, third-party login, and OAuth 2.0.
 " %}
 
-Read <a href="/display/APIC/LoopBack-core-concepts">LoopBack core concepts</a> to learn about key concepts you need to understand to use LoopBack.
+Read <a href="/doc/{{page.lang}}/lb2/LoopBack-core-concepts.html">LoopBack core concepts</a> to learn about key concepts you need to understand to use LoopBack.
 
 Check out the <a href="https://groups.google.com/forum/#!forum/loopbackjs">LoopBack Developer Forum</a> to ask questions and discuss how you are using LoopBack.
 
@@ -37,8 +37,7 @@ For more information, see [IBM API Connect](https://developer.ibm.com/apiconnect
 
 ## The LoopBack framework
 
-{% include styled-box.html style="width: 250px; border: 1px solid green; border-radius: 5px; background-color: #E6E6E6; float: right; margin: 15px; padding: 10px; font-size: 90%;"
-content="
+{% include see-also.html title="no" content="
 New to Node.js? Read Getting Started with Node for:
 
 - [PHP Developers](http://strongloop.com/strongblog/node-js-php-get-started/)

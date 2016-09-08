@@ -11,13 +11,22 @@ summary:
 
 {% include content/gs-prereqs.html lang=page.lang %}
 
-## Creating a new application
+{% include see-also.html content="
+- [Environment-specific configuration](Environment-specific-configuration.html)
+- [Versioning your API](Versioning-your-API.html)
+- [Standard project structure](Standard-project-structure.html)
+- [Tutorials and examples](Tutorials-and-examples.html)
+- [Creating models](Creating-models.html)
+- [Using built-in models](Using-built-in-models.html)
+" %}
 
-The easiest way to create an application is to use `apic loopback`.
+## Using the application generator
+
+The easiest way to create an application is to use [Application generator](/doc/{{page.lang}}/lb2/Application-generator.html).
 
 It is possible to create a LoopBack application by coding it from scratch, but 
-the [Application generator](Application-generator.html)
-does all the \"heavy lifting\" to create the basic scaffolding of the [standard project layout](Project-layout-reference.html).
+the [Application generator](/doc/{{page.lang}}/lb2/Application-generator.html)
+does all the \"heavy lifting\" to create the basic scaffolding of the [standard project layout](/doc/{{page.lang}}/lb2/Project-layout-reference.html).
 You can then customize the application to suit your needs using the CLI tools.
 
 In general, the documentation assumes you've created your application using the Application generator.
@@ -26,16 +35,7 @@ Once you create your application, you may want to configure it, for example: 
 Turn off stack traces, disable API Explorer, and retrieve the values of environment variables.
 See [Environment-specific configuration](/doc/{{page.lang}}/lb2/Environment-specific-configuration.html) for more information.
 
-See also:
-
-- [Environment-specific configuration](Environment-specific-configuration.html)
-- [Versioning your API](Versioning-your-API.html)
-- [Standard project structure](Standard-project-structure.html)
-- [Tutorials and examples](Tutorials-and-examples.html)
-- [Creating models](Creating-models.html)
-- [Using built-in models](Using-built-in-models.html)
-
-### Standard project layout
+## Standard project layout
 
 The application generator creates an application with the [standard project layout](/doc/{{page.lang}}/lb2/Project-layout-reference.html).
 
@@ -53,7 +53,7 @@ To summarize:
 * `common/models` directory - created when you create a model with the model generator, `apic create --type model`.
   * A JSON file and a JavaScript file for each model (for example, `my-model.json` and `my-model.js`).
 
-### Main application script (server.js)
+## Main application script (server.js)
 
 ```javascript
 var loopback = require('loopback');

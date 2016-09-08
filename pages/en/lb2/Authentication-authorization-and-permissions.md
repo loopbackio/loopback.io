@@ -11,13 +11,13 @@ summary:
 
 {% include content/gs-prereqs.html lang=page.lang %}
 
-**See also**:
-
-* [Managing users](/doc/{{page.lang}}/lb2/Managing-users.html)
-* [Third-party login using Passport](/doc/{{page.lang}}/lb2/Third-party-login-using-Passport.html)
-* [Access control models](/doc/{{page.lang}}/lb2/Using-built-in-models.html#Usingbuilt-inmodels-Accesscontrolmodels)
-* [Tutorial: access control](/doc/{{page.lang}}/lb2/Tutorial%3A-access-control)
-* [Security considerations](/doc/{{page.lang}}/lb2/Security-considerations.html)
+{% include see-also.html content="
+* [Managing users](Managing-users.html)
+* [Third-party login using Passport](Third-party-login-using-Passport.html)
+* [Access control models](Using-built-in-models.html#Usingbuilt-inmodels-Accesscontrolmodels)
+* [Tutorial: access control](Tutorial%3A-access-control)
+* [Security considerations](Security-considerations.html)
+" %}
 
 Most applications need to control who (or what) can access data or call services.
 Typically, this involves requiring users to login to access protected data, or requiring authorization tokens for other applications to access protected data.
