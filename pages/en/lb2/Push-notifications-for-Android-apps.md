@@ -138,7 +138,7 @@ Then follow these steps to run the app:
 
 5.  Edit `src/com/google/android/gcm/demo/app/DemoActivity.java`. 
     * Set SENDER_ID to the project number from the Google Developers Console you created earlier in 
-      [Get your Google Cloud Messaging credentials](/doc/{{page.lang}}/lb2/Push-notifications-for-Android-apps.html).
+      [Get your Google Cloud Messaging credentials](#get-your-google-cloud-messaging-credentials).
 
 6.  Go back to the [https://cloud.google.com/console/project](https://cloud.google.com/console/project) and edit the Android Key to reflect
     your unique application ID. Set the value of **Android applications** to something like this:
@@ -205,7 +205,7 @@ Add the following key and value to the push settings of your application:
 }
 ```
 
-Replace `server-api-key` with the API key you obtained in [Get your Google Cloud Messaging credentials](/doc/{{page.lang}}/lb2/Push-notifications-for-Android-apps.html).
+Replace `server-api-key` with the API key you obtained in [Get your Google Cloud Messaging credentials](#get-your-google-cloud-messaging-credentials).
 
 ## Prepare your own Android project
 
@@ -368,4 +368,4 @@ When running your app in the Eclipse device emulator, you may encounter the foll
 `Google Play services, which some of your applications rely on, is not supported by your device. Please contact the manufacturer for assistance.`
 
 To resolve this, install a compatible version of the Google APIs platform.
-See [Prepare your Android project](/doc/{{page.lang}}/lb2/Push-notifications-for-Android-apps.html) for more information.
+See [Prepare your Android project](#prepare-your-own-android-project) for more information.

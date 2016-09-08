@@ -86,7 +86,7 @@ To connect a model to a data source, follow these steps:
     $ npm install --save loopback-connector-mysql
     ```
 
-    See [Connectors](/doc/{{page.lang}}/lb2/Connecting-models-to-data-sources.html) for the list of connectors.
+    See [Connectors](#connectors) for the list of connectors.
 
 4.  Use the [model generator](/doc/{{page.lang}}/lb2/Using-the-model-generator.html) to create a model.
 

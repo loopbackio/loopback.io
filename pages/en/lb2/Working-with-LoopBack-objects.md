@@ -107,7 +107,7 @@ module.exports = function(Book) {
 ```
 
 {% include tip.html content="
-This technique is useful to get a reference to an unrelated model; see [Getting a reference to an unrelated model](Working-with-LoopBack-objects.html) below." %}
+This technique is useful to get a reference to an unrelated model; see [Getting a reference to an unrelated model](#getting-a-reference-to-an-unrelated-model) below." %}
 
 With models, there is a special case. From anywhere except `/common/models/model.js`, you can actually get a reference to `app` through a model using `model.app`.
 

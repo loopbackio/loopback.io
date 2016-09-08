@@ -17,12 +17,12 @@ Auto-migration creates tables for all models attached to a data source, includin
 Once you have defined a model, LoopBack can create or update (synchronize) the database schemas accordingly, if you need to adjust the database to match the models.
 LoopBack provides two ways to synchronize model definitions with table schemas:
 
-* **[Auto-migrate](/doc/{{page.lang}}/lb2/Creating-a-database-schema-from-models.html)**: Automatically create or re-create the table schemas based on the model definitions. 
-* **[Auto-update](/doc/{{page.lang}}/lb2/Creating-a-database-schema-from-models.html)**: Automatically alter the table schemas based on the model definitions.
+* **[Auto-migrate](#auto-migrate)**: Automatically create or re-create the table schemas based on the model definitions. 
+* **[Auto-update](#auto-update)**: Automatically alter the table schemas based on the model definitions.
 
 {% include warning.html content="
 Auto-migration will drop an existing table if its name matches a model name.
-When tables with data exist, use [auto-update](Creating-a-database-schema-from-models.html) to avoid data loss.
+When tables with data exist, use [auto-update](#auto-update) to avoid data loss.
 " %}
 
 ## Auto-migrate
