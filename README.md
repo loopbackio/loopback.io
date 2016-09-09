@@ -39,3 +39,18 @@ Then, load [http://localhost:4000/](http://localhost:4000/) on your browser.
 Jekyll uses a variant of Markdown known as [Kramdown](http://kramdown.gettalong.org/quickref.html).
 
 Jekyll uses the [Liquid template engine](http://liquidmarkup.org/) for templating.
+
+## Getting external READMEs
+
+The documentation incorporates README files from a number of LoopBack example repositories.
+We use the [get-readmes](https://github.com/strongloop/get-readmes) utility to fetch
+the README files directly from GitHub.  Here is how to update the READMEs and save the result in the `_includes/readmes` directory:
+
+```
+$ git clone https://github.com/strongloop/get-readmes.git
+$ cd get-readmes
+$ npm i
+$ node get-readmes --repos=../_data --out=../_includes/readmes
+```
+From there, the README markdown files are incorporated into documentation articles
+using the standard Jekyll "include" syntax.
