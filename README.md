@@ -44,9 +44,10 @@ Jekyll uses the [Liquid template engine](http://liquidmarkup.org/) for templatin
 
 The documentation incorporates README files from a number of LoopBack example repositories.
 We use the [get-readmes](https://github.com/strongloop/get-readmes) utility to fetch
-the README files directly from GitHub.  Here is how to update the READMEs and save the result in the `_includes/readmes` directory:
+the README files directly from GitHub.  Here is how to update the READMEs and save the result in the `_includes/readmes` directory (assuming you've cloned this repo already):
 
 ```
+$ cd loopback.io
 $ git clone https://github.com/strongloop/get-readmes.git
 $ cd get-readmes
 $ npm i
