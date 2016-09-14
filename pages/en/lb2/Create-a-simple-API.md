@@ -9,7 +9,7 @@ permalink: /doc/en/lb2/Create-a-simple-API.html
 summary:
 ---
 
-{% include content/gs-prereqs.html lang=en %}
+{% include content/gs-prereqs.html lang=page.lang %}
 
 Use the [application generator](/doc/{{page.lang}}/lb2/Application-generator.html) tool to quickly create a LoopBack application, models, and data sources.  
 

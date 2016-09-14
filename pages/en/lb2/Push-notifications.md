@@ -9,7 +9,7 @@ permalink: /doc/en/lb2/Push-notifications.html
 summary:
 ---
 
-{% include content/strongloop-labs.html lang=en %}
+{% include content/strongloop-labs.html lang=page.lang %}
 
 {% include see-also.html content="
 * [API reference](http://apidocs.strongloop.com/loopback-component-push)

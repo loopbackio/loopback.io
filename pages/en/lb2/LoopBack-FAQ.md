@@ -35,7 +35,7 @@ LoopBack and how they are using it. Check it out!
 There is also a [LoopBack Gitter channel](https://gitter.im/strongloop/loopback) for realtime discussions with fellow LoopBack developers.
 
 StrongLoop also publishes a blog with topics relevant to LoopBack.
-See [Blog posts](/pages/createpage.action?spaceKey=APIC&title=Blog-posts&linkCreation=true&fromPageId=9634358) for a list of the latest posts.
+See [Blog posts](https://strongloop.com/strongblog/category/loopback-2/) for a list of the latest posts.
 
 ### What client SDKs does LoopBack have?
 

@@ -3,10 +3,10 @@ title: "Installing compiler tools"
 lang: en
 layout: page
 keywords: LoopBack
-tags:
+tags: [getting_started]
 sidebar: lb2_sidebar
 permalink: /doc/en/lb2/Installing-compiler-tools.html
-summary:
+summary: To install StrongLoop tools (but not API Connect), you must have compiler tools installed.
 ---
 
 **Why do I need to install a compiler?**
@@ -15,7 +15,7 @@ Some devops features such as [monitoring](https://docs.strongloop.com/display/SL
 
 ## Overview  
 
-If you don't have a C-- compiler (Visual C-- on Windows or XCode on OSX) and associated command-line tools, you won't be able to view most useful metrics, and you won't be able to perform [CPU profiling](https://docs.strongloop.com/display/SLC/CPU-profiling) or [take heap snapshots](https://docs.strongloop.com/display/SLC/Taking-heap-snapshots). 
+If you don't have a C++ compiler (Visual C++ on Windows or XCode on OSX) and associated command-line tools, you won't be able to view most useful metrics, and you won't be able to perform [CPU profiling](https://docs.strongloop.com/display/SLC/CPU-profiling) or [take heap snapshots](https://docs.strongloop.com/display/SLC/Taking-heap-snapshots). 
 
 {% include important.html content="
 

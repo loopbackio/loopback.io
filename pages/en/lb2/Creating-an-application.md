@@ -25,8 +25,7 @@ summary:
 The easiest way to create an application is to use [Application generator](/doc/{{page.lang}}/lb2/Application-generator.html).
 
 It is possible to create a LoopBack application by coding it from scratch, but 
-the [Application generator](/doc/{{page.lang}}/lb2/Application-generator.html)
-does all the \"heavy lifting\" to create the basic scaffolding of the [standard project layout](/doc/{{page.lang}}/lb2/Project-layout-reference.html).
+the application generator does all the "heavy lifting" to create the basic scaffolding of the [standard project layout](/doc/{{page.lang}}/lb2/Project-layout-reference.html).
 You can then customize the application to suit your needs using the CLI tools.
 
 In general, the documentation assumes you've created your application using the Application generator.
@@ -97,6 +96,6 @@ Start the web server.
 Emit the 'started' [event](/doc/{{page.lang}}/lb2/Events.html).
 
 **10 - 13**:
-Start [API Explorer](/pages/createpage.action?spaceKey=APIC&title=API-Explorer&linkCreation=true&fromPageId=9634284).
+Start API Explorer.
 
 **18**: [Initialize (boot) the application](/doc/{{page.lang}}/lb2/Events.html).

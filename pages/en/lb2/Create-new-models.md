@@ -11,9 +11,9 @@ summary:
 
 {% include content/gs-prereqs.html lang=page.lang %}
 
-Creating models with `slc loopback` is quick and easy.
+Creating models with the [application generator](/doc/{{page.lang}}/lb2/Application-generator) is quick and easy.
 
-Recall in [Create a simple API](/doc/{{page.lang}}/lb2/Create-a-simple-API.html) step of [Getting started](Getting-started-with-LoopBack_3836320.html) you created a CoffeeShop model.
+Recall in [Create a simple API](/doc/{{page.lang}}/lb2/Create-a-simple-API) step of [Getting started](/doc/{{page.lang}}/lb2/Getting-started-with-LoopBack) you created a CoffeeShop model.
 
 Now you're going to create two new models, Review and Reviewer, with the `slc loopback` [model generator](/doc/{{page.lang}}/lb2/Model-generator).
 
@@ -102,7 +102,7 @@ To exit the model generator, press RETURN when prompted for property name.
 
 ## Update boot script to add data 
 
-Recall back in part I of [Getting started](Getting-started-with-LoopBack_3836320.html), you [added a boot script](/doc/{{page.lang}}/lb2/Connect-your-API-to-a-data-source.html#ConnectyourAPItoadatasource-Addsometestdataandviewit) to create a database table from the model (via auto-migration) and add some data to the database.
+Recall back in part I of [Getting started](/doc/{{page.lang}}/lb2/Getting-started-with-LoopBack), you [added a boot script](/doc/{{page.lang}}/lb2/Connect-your-API-to-a-data-source.html#ConnectyourAPItoadatasource-Addsometestdataandviewit) to create a database table from the model (via auto-migration) and add some data to the database.
 
 Now that you have some new models and a new data source, you need to update this script so it will create data structures in MongoDB and insert data via the new models.
 
@@ -114,7 +114,7 @@ Then run
 
 This boot script has several functions:
 
-*   `createCoffeeShops()` creates a MySQL table for the CoffeeShop model and adds data to the table.  This is what the `create-sample-models.js` script from [Getting started](Getting-started-with-LoopBack_3836320.html) did.
+*   `createCoffeeShops()` creates a MySQL table for the CoffeeShop model and adds data to the table.  This is what the `create-sample-models.js` script from [Getting started](/doc/{{page.lang}}/lb2/Getting-started-with-LoopBack) did.
 *   `createReviewers()` creates the Reviewer data structure in MongoDB using auto-migration and adds data to it.  
 *   `createReviews()` creates the Reviews data structure in MongoDB using auto-migration and adds data to it.
 

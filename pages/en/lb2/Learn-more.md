@@ -21,7 +21,7 @@ Learn more about:
     *   [Registering users](/doc/{{page.lang}}/lb2/Registering-users)
     *   [Logging in users](/doc/{{page.lang}}/lb2/Logging-in-users)
     *   [Partitioning users with realms](/doc/{{page.lang}}/lb2/Partitioning-users-with-realms)
-*   **[Authentication, authorization, and permissions](/doc/{{page.lang}}/lb2/Authentication%2C-authorization%2C-and-permissions)**
+*   **[Authentication, authorization, and permissions](/doc/{{page.lang}}/lb2/Authentication-authorization-and-permissions.html)**
 *   **[Defining models](/doc/{{page.lang}}/lb2/Defining-models)**
     *   [Creating models](/doc/{{page.lang}}/lb2/Creating-models)
     *   [Customizing models](/doc/{{page.lang}}/lb2/Customizing-models)

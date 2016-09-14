@@ -2,6 +2,7 @@
 title: "Authentication, authorization, and permissions"
 lang: en
 layout: page
+toc: false
 keywords: LoopBack
 tags:
 sidebar: lb2_sidebar
@@ -15,9 +16,11 @@ summary:
 * [Managing users](Managing-users.html)
 * [Third-party login using Passport](Third-party-login-using-Passport.html)
 * [Access control models](Using-built-in-models.html#Usingbuilt-inmodels-Accesscontrolmodels)
-* [Tutorial: access control](Tutorial%3A-access-control)
+* [Tutorial: access control](Tutorial-access-control)
 * [Security considerations](Security-considerations.html)
 " %}
+
+{% include toc.html %}
 
 Most applications need to control who (or what) can access data or call services.
 Typically, this involves requiring users to login to access protected data, or requiring authorization tokens for other applications to access protected data.

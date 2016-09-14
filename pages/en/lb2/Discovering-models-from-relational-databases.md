@@ -22,7 +22,7 @@ This process is called _discovery_ and is supported by the following connectors:
 For NoSQL databases such as MongoDB, use [instance introspection](/doc/{{page.lang}}/lb2/Creating-models-from-unstructured-data.html) instead.
 
 Data sources connected to relational databases automatically get the asynchronous 
-[Database discovery API](https://docs.strongloop.com/display/APIC/Database-discovery-API).
+[Database discovery API](http://apidocs.strongloop.com/loopback-datasource-juggler/#datasource-prototype-discoverandbuildmodels).
 
 ### Basic procedure
 

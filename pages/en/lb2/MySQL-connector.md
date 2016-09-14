@@ -291,4 +291,4 @@ MOOD('sad'); // 'sad'
 LoopBack provides a unified API to create models based on schema and tables in relational databases.
 The same discovery API is available when using connectors for Oracle, MySQL, PostgreSQL, and SQL Server.
 For more information, see [Discovering models from relational databases](/doc/{{page.lang}}/lb2/Discovering-models-from-relational-databases.html) and 
-[Database discovery API](https://docs.strongloop.com/display/APIC/Database-discovery-API).
+[Database discovery API](http://apidocs.strongloop.com/loopback-datasource-juggler/#datasource-prototype-discoverandbuildmodels).

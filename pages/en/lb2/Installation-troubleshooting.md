@@ -63,7 +63,7 @@ LoopBack does not support Cygwin (Windows bash shell emulator), because Node doe
 
 ### Installation errors
 
-If you want to use LoopBack and the [slc loopback](/doc/{{page.lang}}/lb2/Command-line-reference) command-line tool on Windows, but encounter installation errors running `npm install -g strongloop`, use the following workaround:
+If you want to use LoopBack and the [command-line tools](/doc/{{page.lang}}/lb2/Command-line-tools) on Windows, but encounter installation errors running `npm install -g strongloop`, use the following workaround:
 
 ```
 $ npm install -g yo

@@ -279,7 +279,7 @@ div#toc ul li ul li::before {
 }
 
 div#toc >ul::before {
-    content: "Table of Contents";
+    content: "Page Contents";
     font-weight: 500;
     color: #555;
     text-align:center;
@@ -405,13 +405,13 @@ ul#mysidebar {
 }
 
 .nav ul li ul li a {
-    padding-left:40px;
+    padding-left:20px;
 }
 
 .nav li.thirdlevel > a {
     color: #248EC2;
     font-weight:bold;
-    padding-left:20px;
+    padding-left:10px;
     background-color: whitesmoke !important;
 }
 
@@ -1164,10 +1164,11 @@ div.box.box1 {
     }
 }
 
-/* Added by Rand */
+/* Added by Rand
 .subfolders {
   padding-left: 10px;
 }
+*/
 
 .sl-hidden {
   display: none;

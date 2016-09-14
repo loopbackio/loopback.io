@@ -1,4 +1,4 @@
-# 1st-level entry: 3
+trrrc# 1st-level entry: 3
 # 2nd-level entry: 5
 # 3rd-level folder (container only): 7
 # 3rd-level entry: 9
@@ -427,7 +427,7 @@ entries:
           url: /doc/en/lb2/MongoDB-connector.html
           output: 'web, pdf'
 
-        - title: 'Connecting to MongoDB'
+        - title: 'MongoDB Connector Tutorial'
           url: /doc/en/lb2/Connecting-to-MongoDB.html
           output: 'web, pdf'
 
@@ -439,7 +439,7 @@ entries:
           url: /doc/en/lb2/MySQL-connector.html
           output: 'web, pdf'
 
-        - title: 'Connecting to MySQL'
+        - title: 'MySQL Connector Tutorial'
           url: /doc/en/lb2/Connecting-to-MySQL.html
           output: 'web, pdf'
 
@@ -451,7 +451,7 @@ entries:
           url: /doc/en/lb2/Installing-the-Oracle-connector.html
           output: 'web, pdf'
 
-        - title: 'Connecting to Oracle'
+        - title: 'Oracle Connector Tutorial'
           url: /doc/en/lb2/Connecting-to-Oracle.html
           output: 'web, pdf'
 
@@ -835,13 +835,15 @@ entries:
     - title: 'iOS SDK'
       url: /doc/en/lb2/iOS-SDK.html
       output: 'web, pdf'
+      subfolders:
 
       subfolders:
       - title: 'Android SDK'
+        url: /doc/en/lb2/Android-SDK.html
         output: 'web'
         subfolderitems:
 
-        - title: 'Android SDK'
+        - title: 'Android SDK Overview'
           url: /doc/en/lb2/Android-SDK.html
           output: 'web'
 
@@ -885,7 +887,7 @@ entries:
         output: 'web'
         subfolderitems:
 
-        - title: 'Xamarin SDK'
+        - title: 'Xamarin SDK Overview'
           url: /doc/en/lb2/Xamarin-SDK.html
           output: 'web, pdf'
 
@@ -897,7 +899,7 @@ entries:
           url: /doc/en/lb2/Xamarin-example-app.html
           output: 'web, pdf'
 
-      - title: 'LoopBack in the client'
+      - title: 'Isomorphic LoopBack'
         output: 'web'
         subfolderitems:
 
@@ -963,8 +965,8 @@ entries:
           url: /doc/en/lb2/Model-definition-JSON-file.html
           output: 'web, pdf'
 
-  - title: 'Command-line reference'
-    url: /doc/en/lb2/Command-line-reference.html
+  - title: 'Command-line tools'
+    url: /doc/en/lb2/Command-line-tools.html
     output: 'web, pdf'
 
   - title: 'Node reference'

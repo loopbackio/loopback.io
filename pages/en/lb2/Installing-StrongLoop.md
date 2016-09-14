@@ -14,7 +14,7 @@ StrongLoop Node.js API Platform
 
 StrongLoop's Node API platform consists of:
 
-*   [LoopBack](/doc/{{page.lang}}/lb2/LoopBack), an open-source Node application framework based on [Express](http://expressjs.com/).
+*   [LoopBack](/doc/{{page.lang}}/lb2/index.html), an open-source Node application framework based on [Express](http://expressjs.com/).
 *   [StrongLoop Process Manager](https://strong-pm.io) and related tools for working with any Node applications to:
 
 {% include important.html content="

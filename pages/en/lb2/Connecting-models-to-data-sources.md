@@ -275,7 +275,7 @@ $ slc loopback:datasource
 Follow the prompts to add the desired data source.
 
 You can also create a data source programmatically;
-see [Advanced topics: data sources](/doc/{{page.lang}}/lb2/Advanced-topics%3A-data-sources) for more information.
+see [Advanced topics: data sources](/doc/{{page.lang}}/lb2/Advanced-topics-data-sources.html) for more information.
 
 ### Data source properties
 

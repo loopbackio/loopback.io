@@ -9,7 +9,7 @@ permalink: /doc/en/lb2/Synchronization.html
 summary:
 ---
 
-{% include content/strongloop-labs.html lang=en %}
+{% include content/strongloop-labs.html lang=page.lang %}
 
 **See also**:
 

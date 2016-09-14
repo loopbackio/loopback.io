@@ -14,7 +14,7 @@ summary:
 LoopBack _components_ are predefined packages that extend a basic LoopBack application.
 Fundamentally, a component is related code bundled together as a unit to enable LoopBack applications to easily reuse it.
 They are registered to the app using 
-[`component-config.json`](/pages/createpage.action?spaceKey=APIC&title=component-config.json&linkCreation=true&fromPageId=9634257).
+[`component-config.json`](/doc/{{page.lang}}/lb2/component-config.json.html).
 
 Components can be official [StrongLoop npm packages](/doc/{{page.lang}}/lb2/LoopBack-components.html) or custom components. This page is about custom components.
 
@@ -54,7 +54,7 @@ module.exports = function (loopbackApplication, options) {
 };
 ```
 
-{% include note.html content="To better understand how routing works in LoopBack and how it affects components, refer [Routing](Routing.html)." %}
+{% include note.html content="To better understand how routing works in LoopBack and how it affects components, see  [Routing](Routing.html)." %}
 
 While a lot of components mount a middleware of some kind, all components need not do so.
 For example, this component prints the `loopback` version on initialization, and does nothing more than that.
@@ -69,15 +69,15 @@ module.exports = function (loopbackApplication) {
 ```
 
 The `options` parameter passed to the component function is the value specified in the
-[`component-config.json`](pages/createpage.action?spaceKey=APIC&title=component-config.json&linkCreation=true&fromPageId=9634257) file for the component.
+[`component-config.json`](/doc/{{page.lang}}/lb2/component-config.json.html) file for the component.
 The value can be any valid JavaScript data type.
 The next section explains how to register components using the
-[`component-config.json`](pages/createpage.action?spaceKey=APIC&title=component-config.json&linkCreation=true&fromPageId=9634257) file, and specify its `options` property.
+[`component-config.json`](/doc/{{page.lang}}/lb2/component-config.json.html) file, and specify its `options` property.
 
 ## Registering components
 
 An application will load all components that have an entry in the
-[component-config.json](pages/createpage.action?spaceKey=APIC&title=component-config.json&linkCreation=true&fromPageId=9634257) that does not evaluate to false.
+[`component-config.json`](/doc/{{page.lang}}/lb2/component-config.json.html) that does not evaluate to false.
 If the component is installed using `npm`, use its package name as the key; if the component is a local component, specify its relative path from the `server` directory.
 
 Here is an example of a `component-config.json` file with entries for a component installed via `npm`, and the three local components described earlier.

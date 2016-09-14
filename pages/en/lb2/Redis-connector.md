@@ -9,7 +9,7 @@ permalink: /doc/en/lb2/Redis-connector.html
 summary:
 ---
 
-{% include content/strongloop-labs.html lang=en %}
+{% include content/strongloop-labs.html lang=page.lang %}
 
 {% include note.html content="The Redis connector requires Redis 3.0.3+. " %}
 

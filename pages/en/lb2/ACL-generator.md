@@ -19,7 +19,7 @@ Adds a new access control list (ACL) entry to a LoopBack application.
 $ [slc | apic] loopback:acl [options]
 ```
 
-{% include content/generator-builtin-model-caveat.html %}
+{% include content/generator-builtin-model-caveat.html lang=page.lang%}
 
 ### Options
 

@@ -11,7 +11,7 @@ summary:
 
 ## Getting Started part II
 
-If you want to continue on the tutorial track, continue on to [Getting started part II](Getting-started-part-II_4557730.html).  It covers:
+If you want to continue on the tutorial track, continue on to [Getting started part II](Getting-started-part-II.html).  It covers:
 
 *   Using multiple data sources in an single application.
 *   Relations between models.
@@ -34,7 +34,7 @@ Learn more about:
     *   [Registering users](/doc/{{page.lang}}/lb2/Registering-users)
     *   [Logging in users](/doc/{{page.lang}}/lb2/Logging-in-users)
     *   [Partitioning users with realms](/doc/{{page.lang}}/lb2/Partitioning-users-with-realms)
-*   **[Authentication, authorization, and permissions](/doc/{{page.lang}}/lb2/Authentication%2C-authorization%2C-and-permissions)**
+*   **[Authentication, authorization, and permissions](/doc/{{page.lang}}/lb2/Authentication-authorization-and-permissions)**
 *   **[Defining models](/doc/{{page.lang}}/lb2/Defining-models)**
     *   [Creating models](/doc/{{page.lang}}/lb2/Creating-models)
     *   [Customizing models](/doc/{{page.lang}}/lb2/Customizing-models)

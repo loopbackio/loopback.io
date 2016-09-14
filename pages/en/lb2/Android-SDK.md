@@ -9,7 +9,7 @@ permalink: /doc/en/lb2/Android-SDK.html
 summary:
 ---
 
-{% include content/strongloop-labs.html lang=en %}
+{% include content/strongloop-labs.html lang=page.lang %}
 
 {% include see-also.html content="
 * [Android SDK API docs](http://apidocs.strongloop.com/loopback-sdk-android/api/index.html)
@@ -22,14 +22,11 @@ It enables you to interact with your models and data sources in a comfortable na
 **[Download Android SDK](http://81b70ddedaf4b27b1592-b5e75689411476c98957e7dab0242f50.r56.cf2.rackcdn.com/loopback-sdk-android-1.5.3-eclipse-bundle.zip)**
 
 {% include warning.html content="
-
 Please ensure you have the latest version (1.5) of the Android SDK.
-
-If you are using Eclipse, you will have a `lib/loopback-sdk-android-x.y.z.jar` library, where x.y.z is the version.
-
-If you are using Android Studio with gradle-based builds, then you have a dependency entry specifying the SDK version.
-
-" %}
+If you are using Eclipse, you will have a `lib/loopback-sdk-android-x.y.z.jar` library,
+where x.y.z is the version.
+If you are using Android Studio with gradle-based builds, then you have a dependency
+entry specifying the SDK version." %}
 
 {% include image.html file="9830422.png" alt="" %} {% include image.html file="9830423.png" alt="" %}
 
@@ -45,7 +42,7 @@ The guide app comes ready to compile with Android Studio and each tab in the app
 ### Prerequisites
 
 If you haven't already created your application backend, see
-[LoopBack example app](/pages/createpage.action?spaceKey=APIC&title=LoopBack-example-app&linkCreation=true&fromPageId=9634112).
+[loopback-android-getting-started](https://github.com/strongloop/loopback-android-getting-started).
 The Android guide app will connect to the this backend sample app.
 
 Before you start, make sure you've installed the [Eclipse Android Development Tools](http://developer.android.com/sdk/index.html) (ADT).
@@ -75,7 +72,7 @@ To see the Google Maps display, run the guide app on a real Android device inste
 ### Running the LoopBack server application
 
 Follow the instructions in 
-[Getting started with LoopBack](/doc/{{page.lang}}/lb2/Getting-started-with-LoopBack) to create the LoopBack sample backend application.
+[Getting started with LoopBack](/doc/{{page.lang}}/lb2/Getting-started-with-LoopBack.html) to create the LoopBack sample backend application.
 You can also just clone [https://github.com/strongloop/loopback-getting-started](https://github.com/strongloop/loopback-getting-started).
 
 In the directory where you created the application, enter these commands:

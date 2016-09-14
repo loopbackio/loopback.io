@@ -31,7 +31,7 @@ In general, these tutorials are intended to be followed in order.
     <tr>
       <td>2</td>
       <td><a href="https://github.com/strongloop/loopback-getting-started-intermediate" class="external-link" rel="nofollow">loopback-getting-started-intermediate</a></td>
-      <td>Full-stack example that builds on&nbsp;<code>loopback-getting-started&nbsp;</code>. Follow&nbsp;<a href="h/doc/{{page.lang}}/lb2/Getting-started-part-II.html" class="external-link" rel="nofollow">Getting started part II</a>&nbsp;to understand it.</td>
+      <td>Full-stack example that builds on&nbsp;<code>loopback-getting-started&nbsp;</code>. Follow&nbsp;<a href="/doc/{{page.lang}}/lb2/Getting-started-part-II.html" class="external-link" rel="nofollow">Getting started part II</a>&nbsp;to understand it.</td>
     </tr>
     <tr>
       <td>3</td>

@@ -9,7 +9,7 @@ permalink: /doc/en/lb2/iOS-SDK.html
 summary:
 ---
 
-{% include content/strongloop-labs.html lang=en %}
+{% include content/strongloop-labs.html lang=page.lang %}
 
 ## Overview
 

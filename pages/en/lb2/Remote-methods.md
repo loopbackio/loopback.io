@@ -47,7 +47,7 @@ However, the model name (\"FooBar\") will be preserved via the model's name prop
 
 ### Example
 
-See additional introductory examples in [Extend your API](https://docs.strongloop.com/display/APIC/Extend-your-API).
+See additional introductory examples in [Extend your API](/doc/{{page.lang}}/lb2/Extend-your-API.html).
 
 Suppose you have a Person model and you want to add a REST endpoint at `/greet` that returns a greeting with a name provided in the request.
 You add this code to `/common/models/person.js`:

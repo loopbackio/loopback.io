@@ -63,7 +63,7 @@ whether LoopBack automatically adds a unique `id` property to a model. For a m
 See [ID properties](Model-definition-JSON-file.html#id-properties) for more information.
 " %}
 
-Model relations
+### Model relations
 
 You can express [relationships between models](/doc/{{page.lang}}/lb2/Creating-model-relations.html), such as 
 [BelongsTo](/doc/{{page.lang}}/lb2/BelongsTo-relations.html), 
@@ -158,7 +158,7 @@ LoopBack components provide additional "plug-in" functionality:
 
 * [Push notifications](/doc/{{page.lang}}/lb2/Push-notifications.html) -  enables sending information to mobile apps for immediate
   display in a "badge," alert, or pop-up message on the mobile device.
-* [Storage service](/doc/{{page.lang}}/lb2/Storage-service.html) - enables uploading and downloading files to and from cloud storage providers
+* [Storage component](/doc/{{page.lang}}/lb2/Storage-component.html) - enables uploading and downloading files to and from cloud storage providers
   (Amazon, Rackspace, Openstack, and Azure) as well as the server file system.
 * [Third-party login](/doc/{{page.lang}}/lb2/Third-party-login-using-Passport.html) - integrates [Passport](http://passportjs.org/) and enables user login (and account linking)
   using third-party credentials from Facebook, Google, Twitter, Github, or any system that supports OAuth, OAuth 2, or OpenID.

@@ -13,13 +13,9 @@ summary:
 
 * [Connecting to PostgreSQL](/doc/{{page.lang}}/lb2/Connecting-to-PostgreSQL.html)
 * [loopback-example-database](https://github.com/strongloop/loopback-example-database/tree/postgresql)
-* [Database discovery API](https://docs.strongloop.com/display/APIC/Database-discovery-API) 
+* [Database discovery API](http://apidocs.strongloop.com/loopback-datasource-juggler/#datasource-prototype-discoverandbuildmodels).
 
-{% include note.html content="
-
-The PostgreSQL connector requires PostgreSQL 8.x or 9.x.
-
-" %}
+{% include note.html content="The PostgreSQL connector requires PostgreSQL 8.x or 9.x." %}
 
 ## Installation
 
@@ -29,7 +25,7 @@ In your application root directory, enter this command to install the connector:
 $ npm install loopback-connector-postgresql --save
 ```
 
-This will install the module from npm and add it as a dependency to the application's [package.json](h/doc/{{page.lang}}/lb2/package.json.html) file.
+This will install the module from npm and add it as a dependency to the application's [package.json](/doc/{{page.lang}}/lb2/package.json.html) file.
 
 ## Creating a data source
 
@@ -354,4 +350,4 @@ See [LoopBack types](/doc/{{page.lang}}/lb2/LoopBack-types.html) for details o
 
 LoopBack provides a unified API to create models based on schema and tables in relational databases.
 The same discovery API is available when using connectors for Oracle, MySQL, PostgreSQL, and SQL Server.
-For more information, see [Database discovery API](https://docs.strongloop.com/display/APIC/Database-discovery-API).
+For more information, see [Database discovery API](http://apidocs.strongloop.com/loopback-datasource-juggler/#datasource-prototype-discoverandbuildmodels).
