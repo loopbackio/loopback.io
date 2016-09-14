@@ -34,6 +34,8 @@ $ bundle exec jekyll serve
 
 Then, load [http://localhost:4000/](http://localhost:4000/) on your browser.
 
+NOTE:  The docs part will be at [http://localhost:4000/doc](http://localhost:4000/doc).  It's not yet linked from the main "overview" part of the site, but will be once we launch (RSN).
+
 ## Formatting
 
 Jekyll uses a variant of Markdown known as [Kramdown](http://kramdown.gettalong.org/quickref.html).
