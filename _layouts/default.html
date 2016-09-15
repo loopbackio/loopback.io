@@ -4,7 +4,8 @@
     <script>
         $(document).ready(function() {
             // Initialize navgoco with default options
-            $("#mysidebar").navgoco({
+            var sidebar = $("#mysidebar");
+            sidebar.navgoco({
                 caretHtml: '',
                 accordion: true,
                 openClass: 'active', // open
@@ -30,6 +31,12 @@
                 $("#mysidebar").navgoco('toggle', true);
             });
 
+            // expand the current page's nav/sub nav
+            sidebar.find('li a').each(function(index, el) {
+                if (window.location.href === el.href) {
+                    $(el).parents('li').navgoco('toggle', true);
+                }
+            });
         });
 
     </script>
