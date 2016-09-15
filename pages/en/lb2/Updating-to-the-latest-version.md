@@ -12,7 +12,8 @@ summary:
 For application dependencies, npm will automatically update packages that your application requires, based on the information in the `package.json` file.  For more information on `package.json`, see the [npm documentation](https://npmjs.org/doc/json.html).  
 
 {% include warning.html content="
-See [Security advisories](Security-advisories) for important upgrade information required to address security issues." %}
+See [Security advisories](Security-advisories) for important upgrade information required to address security issues.
+" %}
 
 ## Basic update
 

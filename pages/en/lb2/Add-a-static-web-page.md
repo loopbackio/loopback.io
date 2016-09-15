@@ -16,7 +16,8 @@ LoopBack leverages [Express middleware](http://expressjs.com/guide/using-middle
 {% include note.html content="
 If you followed the previous steps in the tutorial, skip down to [Introduction to middleware](#introduction-to-middleware).
 
-If you're just jumping in, follow the steps below to catch up..." %}
+If you're just jumping in, follow the steps below to catch up...
+" %}
 
 Get the app (in the state following the last article) from GitHub and install all its dependencies:
 
@@ -30,7 +31,8 @@ $ npm install
 ## Introduction to middleware
 
 {% include note.html content="
-LoopBack is built on [Express](http://expressjs.com/), one of the most popular Node application frameworks.  The top-level LoopBack `app` object inherits all the methods and properties of the Express app object. See [Working with LoopBack objects](/doc/en/lb2/Working-with-LoopBack-objects)." %}
+LoopBack is built on [Express](http://expressjs.com/), one of the most popular Node application frameworks.  The top-level LoopBack `app` object inherits all the methods and properties of the [Express `app` object](http://expressjs.com/en/4x/api.html#app). See [Working with LoopBack objects](/doc/en/lb2/Working-with-LoopBack-objects).
+" %}
 
 Before continuing, you need to understand a basic concept that LoopBack inherits from Express: middleware.  
 

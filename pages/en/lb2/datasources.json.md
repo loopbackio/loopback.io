@@ -161,7 +161,8 @@ To connect a model to a data source, follow these steps:
     When prompted for the data source to attach to, select the one you just created. 
 
 {% include note.html content="
-The model generator lists the [memory connector](Memory-connector.html), \"no data source,\" and data sources listed in `datasources.json`.  That's why you created the data source first in step 1." %}
+The model generator lists the [memory connector](Memory-connector.html), \"no data source,\" and data sources listed in `datasources.json`.  That's why you created the data source first in step 1.
+" %}
 
     You can also create models from an existing database.
     See [Creating models](/doc/{{page.lang}}/lb2/Creating-models.html) for more information.

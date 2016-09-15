@@ -16,7 +16,8 @@ A _remote hook_ is a function that's executed before or after a remote method.
 {% include note.html content="
 If you followed the previous step in the tutorial, go to [Introducing remote hooks](#introducing-remote-hooks).
 
-If you're just jumping in, follow the steps below to catch up..." %}
+If you're just jumping in, follow the steps below to catch up...
+" %}
 
 Get the app (in the state following the last article) from GitHub and install all its dependencies:
 

@@ -13,5 +13,5 @@ entries:
     output: 'web, pdf'
 
   - title: 'Operation hooks (version 3.0)'
-    url: /doc/en/lb3/Operation-hooks-version-3.0-.html
+    url: /doc/en/lb3/Operation-hooks-version-3.0.html
     output: 'web, pdf'

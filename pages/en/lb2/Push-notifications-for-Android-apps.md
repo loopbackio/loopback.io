@@ -2,6 +2,7 @@
 title: "Push notifications for Android apps"
 lang: en
 layout: page
+toc: false
 keywords: LoopBack
 tags:
 sidebar: lb2_sidebar
@@ -9,10 +10,14 @@ permalink: /doc/en/lb2/Push-notifications-for-Android-apps.html
 summary:
 ---
 
-**See also**:
+{% include see-also.html content="
 
 * [Android SDK API docs](http://apidocs.strongloop.com/loopback-sdk-android/api/index.html)
 * [loopback-android-getting-started](https://github.com/strongloop/loopback-android-getting-started)
+* [Push notifications](Push-notifications.html)
+" %}
+
+{% include toc.html %}
 
 ## Overview
 
@@ -230,7 +235,7 @@ For example, the following code checks the device for Google Play Services APK b
 The `checkPlayServices()` method checks whether the device has the Google Play Services APK.
 If  it doesn't, it displays a dialog that allows users to download the APK from the Google Play Store or enables it in the device's system settings. 
 
-```
+```java
 @Override
 public void onCreate(final Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
@@ -274,7 +279,7 @@ The example `updateRegistration()` method does the following:
 * Lines 15-19: Check if there is a valid GCM registration ID.
   If so, then save the installation to the server; if not, get one from GCM and then save the installation.
 
-```
+```java
 private void updateRegistration() {
 
     final DemoApplication app = (DemoApplication) getApplication();
@@ -302,7 +307,7 @@ private void updateRegistration() {
 In the following code, the application obtains a new registration ID from GCM.
 Because the `register()` method is blocking, you must call it on a background thread.
 
-```
+```java
 private void registerInBackground(final LocalInstallation installation) {
     new AsyncTask<Void, Void, Exception>() {
         @Override
@@ -339,7 +344,7 @@ Once you have all Installation properties set, you can register with the LoopBac
 The first run of the application should create a new Installation record, subsequent runs should update this existing record.
 The LoopBack Android SDK handles the details. Your code just needs to call `save()`.
 
-```
+```java
 void saveInstallation(final LocalInstallation installation) {
     installation.save(new Model.Callback() {
         @Override

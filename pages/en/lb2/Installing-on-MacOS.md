@@ -18,7 +18,8 @@ If you want features such as [application profiling](https://docs.strongloop.co
 ### Set directory permissions
 
 {% include warning.html content="
-Changing privileges like this is appropriate _only_ on your local development system. Never do this on a production or public-facing server system." %}
+Changing privileges like this is appropriate _only_ on your local development system. Never do this on a production or public-facing server system.
+" %}
 
 To install Node and StrongLoop, you need to have permission to write to the following directories:
 
@@ -26,7 +27,9 @@ To install Node and StrongLoop, you need to have permission to write to the foll
 
 *   `/usr/local/lib/node_modules`
 
-{% include important.html content="If these directories do not exist, you will need to create them." %}
+{% include important.html content="
+If these directories do not exist, you will need to create them.
+" %}
 
 Although you can work around this by using `sudo`, in general, it's not a good idea. Rather, best practice is to explicitly set directory ownership and privileges explicitly as follows:
 
@@ -41,7 +44,8 @@ These commands make your user account the owner of the `/usr/local/bin`  and 
 
 If you haven't already installed Node, download the [native installer from nodejs.org](http://nodejs.org/download) and run it.
 
-{% include tip.html content="For best results, use the latest LTS (long-term support) release of Node.js." %}  
+{% include tip.html content="For best results, use the latest LTS (long-term support) release of Node.js.
+" %}  
 
 ## Install StrongLoop
 
@@ -56,6 +60,7 @@ Follow these steps:
 
     `$ sudo npm install -g strongloop`
 
-    {% include note.html content="During installation, you may see a number of errors from `node-gyp` if you don't have [compiler tools](Installing-compiler-tools.html) installed. You can ignore the errors for now." %}
+    {% include note.html content="During installation, you may see a number of errors from `node-gyp` if you don't have [compiler tools](Installing-compiler-tools.html) installed. You can ignore the errors for now.
+    " %}
 
 If you run into any problems, see [Installation troubleshooting](/doc/{{page.lang}}/lb2/Installation-troubleshooting.html).

@@ -35,7 +35,8 @@ module.exports = function(app) {
 ```
 
 {% include note.html content="Passwords are automatically hashed when persisted to the data store..
-You can do this in a [boot script](Defining-boot-scripts.html) as shown above." %}
+You can do this in a [boot script](Defining-boot-scripts.html) as shown above.
+" %}
 
 Over REST, use the `POST /users` endpoint to create a new user instance, for example:
 
@@ -90,7 +91,8 @@ For details, see [User REST API](/doc/{{page.lang}}/lb2/User-REST-API.html#User
 
 This example creates a[remote hook](/doc/{{page.lang}}/lb2/Remote-hooks.html) on the User model executed after the `create()` method is called.
 
-{% include important.html content="You must setup a `User` model as well as a `Mail` datasource before using the example below." %}
+{% include important.html content="You must setup a `User` model as well as a `Mail` datasource before using the example below.
+" %}
 
 **/common/models/user.js**
 
@@ -133,7 +135,8 @@ module.exports = function(user) {
 For a complete example, see [user.js](https://github.com/strongloop/loopback-faq-user-management/blob/master/common/models/user.js)
 in [loopback-example-user-management](https://github.com/strongloop/loopback-example-user-management).
 
-{% include note.html content="Naming your model with camel-case `MyUser` will create files in \"lisp case\" `/common/models/my-user.js` - `/common/models/my-user.json`" %}
+{% include note.html content="Naming your model with camel-case `MyUser` will create files in \"lisp case\" `/common/models/my-user.js` - `/common/models/my-user.json`
+" %}
 
 Then, in your view file (for example, an [EJS template](http://www.embeddedjs.com/)):
 

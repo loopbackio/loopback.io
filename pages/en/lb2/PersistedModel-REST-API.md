@@ -11,7 +11,8 @@ summary:
 
 {% include note.html content="
 You can use the [StrongLoop API Explorer](Use-API-Explorer.html) to quickly construct and make requests
-to a LoopBack app running on the server. If a LoopBack app is running on `localhost` at port `3000`, then by default API Explorer is available at [http://localhost:3000/explorer/](http://localhost:3000/explorer/)." %}
+to a LoopBack app running on the server. If a LoopBack app is running on `localhost` at port `3000`, then by default API Explorer is available at [http://localhost:3000/explorer/](http://localhost:3000/explorer/).
+" %}
 
 **See also**:
 
@@ -38,7 +39,8 @@ You can customize the plural form in the [model definition JSON file](/doc/{{pag
 {% include note.html content="
 You can't customize the routes to PersistedModel REST API endpoints.
 However, you can control how REST API endpoints are constructed from custom models with the `rest.normalizeHttpPath` property in `server/config.json`.
-For more information, see [config.json (Remoting properties)](config.json.html#remoting-properties). " %}
+For more information, see [config.json (Remoting properties)](config.json.html#remoting-properties).
+" %}
 
 ## Create model instance
 
@@ -275,7 +277,8 @@ Delete a model instance by ID from the data source
 
 ## Delete all matching instances
 
-{% include warning.html content="By default, this operation is not exposed over REST to prevent deleting data unintentionally." %}
+{% include warning.html content="By default, this operation is not exposed over REST to prevent deleting data unintentionally.
+" %}
 
 Delete model instanced from the data source that match the specified where clause.
 

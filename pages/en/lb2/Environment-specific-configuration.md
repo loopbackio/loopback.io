@@ -84,7 +84,8 @@ You can override values that are set in `config.json` in:
 
 {% include important.html content="
 The additional files can override the top-level keys with value-types (strings, numbers) only.
-Nested objects and arrays are not supported at the moment." %}
+Nested objects and arrays are not supported at the moment.
+" %}
 
 For example:
 
@@ -200,7 +201,8 @@ You can override values set in `datasources.json` in the following files:
   For example, `datasources.production.json`.
 
 {% include important.html content="
-The additional files can override the top-level data-source options with string and number values only. You cannot use objects or array values." %}
+The additional files can override the top-level data-source options with string and number values only. You cannot use objects or array values.
+" %}
 
 Example data sources:
 

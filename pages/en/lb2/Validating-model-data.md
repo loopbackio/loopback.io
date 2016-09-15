@@ -115,7 +115,8 @@ The validation methods are invoked when you call the 
 
 To enforce validation constraints when calling 
 [`upsert()`](http://apidocs.strongloop.com/loopback/#persistedmodel-upsert), ensure that `validateUpsert` option is set to `true` in the [model definition JSON file](Model-definition-JSON-file.html). 
-By default, the [model generator](Model-generator.html) sets this property to true." %}
+By default, the [model generator](Model-generator.html) sets this property to true.
+" %}
 
 To invoke the validation constraints explicitly, call [`isValid()`](http://apidocs.strongloop.com/loopback-datasource-juggler/#validatable-prototype-isvalid).
 

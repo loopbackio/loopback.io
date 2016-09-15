@@ -19,7 +19,8 @@ You're probably not the only one who'll use the API you just created.  That mea
 {% include note.html content="
 If you followed [Create a simple API](/doc/en/lb2/Create-a-simple-API.html), keep that app running and skip down to [Run API Explorer](#run-api-explorer).
 
-If you're just jumping in, follow the steps below to catch up..." %}
+If you're just jumping in, follow the steps below to catch up...
+" %}
 
 Get the app (in the state following the last article) from GitHub and install all its dependencies:
 

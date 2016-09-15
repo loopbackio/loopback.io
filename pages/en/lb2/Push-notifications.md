@@ -2,6 +2,7 @@
 title: "Push notifications"
 lang: en
 layout: page
+toc: false
 keywords: LoopBack
 tags:
 sidebar: lb2_sidebar
@@ -17,6 +18,8 @@ summary:
 * [Example iOS app](https://github.com/strongloop/loopback-example-push/tree/master/ios)
 * [Example Android app](https://github.com/strongloop/loopback-example-push/tree/master/android)
 " %}
+
+{% include toc.html %}
 
 ## Overview
 
@@ -36,7 +39,8 @@ You can either use the example LoopBack push application or create your own. Us
 For more information on the architecture of the LoopBack Push Notification component, see [Architecture](#architecture) below.
 
 {% include tip.html content="
-For information on how to implement real-time \"push-like\" notifications to web clients, see [Realtime server-sent events](Realtime-server-sent-events.html)." %}
+For information on how to implement real-time \"push-like\" notifications to web clients, see [Realtime server-sent events](Realtime-server-sent-events.html).
+" %}
 
 ## Installation
 
@@ -49,7 +53,8 @@ $ npm install loopback-component-push
 ## Use the LoopBack push notification sample application
 
 {% include important.html content="
-If you are creating your own LoopBack server application, skip this section and go to [Set up your LoopBack application to send push notifications](#set-up-your-loopback-application-to-send-push-notifications)." %}
+If you are creating your own LoopBack server application, skip this section and go to [Set up your LoopBack application to send push notifications](#set-up-your-loopback-application-to-send-push-notifications).
+" %}
 
 First, download the sample app:
 
@@ -360,7 +365,8 @@ var Notification = app.models.notification;
     });
 ```
 
-To select a list of devices by query, use the [`PushManager.notifyByQuery()`](http://apidocs.strongloop.com/loopback-component-push/#pushmanager-prototype-notifybyquery), for example:
+To select a list of devices by query, use the 
+[`PushManager.notifyByQuery()`](http://apidocs.strongloop.com/loopback-component-push/#pushmanager-prototype-notifybyquery), for example:
 
 ```javascript
 PushManager.notifyByQuery({userId: {inq: selectedUserIds}}, note, function(err) {
@@ -371,7 +377,8 @@ PushManager.notifyByQuery({userId: {inq: selectedUserIds}}, note, function(err) 
 #### Schedule the push notification request
 
 {% include note.html content="
-This feature is not yet available. When you are ready to deploy your app, contact StrongLoop for more information." %}
+This feature is not yet available. When you are ready to deploy your app, contact StrongLoop for more information.
+" %}
 
 ### Error handling
 

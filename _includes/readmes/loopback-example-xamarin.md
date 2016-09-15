@@ -1,4 +1,4 @@
-# LoopBack Xamarin SDK example application 
+# LoopBack Xamarin SDK example application
 
 This repository contains a mobile app that demonstrates the Loopback Xamarin SDK.  It contains:
 
@@ -23,7 +23,7 @@ You can either run the LoopBack server app yourself, or connect to the demo app 
 
 ### Run your own server app
 
-1. Go to server folder: 
+1. Go to server folder:
   ```$ cd server```
 1. Install dependencies:
   ```$ npm install```
@@ -69,7 +69,7 @@ You'll see the item appear in the "To Do" list.
 
 You can confirm that the data is also added to the LoopBack model using LoopBack API Explorer.
 
-### Links 
+### Links
 
 * [LoopBack](http://loopback.io)
 * [Perfected Tech](http://perfectedtech.com)

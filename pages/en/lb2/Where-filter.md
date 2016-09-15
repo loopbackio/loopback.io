@@ -63,7 +63,8 @@ The equivalent REST query would be:
 
 {% include tip.html content="
 The above where clause syntax is for queries, and not for [`count()`](http://apidocs.strongloop.com/loopback/#persistedmodel-count).
-For all other methods, including `count()`, omit the `{ where : ... }` wrapper; see [Where clause for other methods](#where-clause-for-other-methods) below." %}
+For all other methods, including `count()`, omit the `{ where : ... }` wrapper; see [Where clause for other methods](#where-clause-for-other-methods) below.
+" %}
 
 ### Where clause for other methods
 
@@ -117,7 +118,8 @@ productModel.destroyAll({cost: {gt: 100}}, function(err, obj) { ... });
 Adding a `scope` to a model definition (in the [`model.json` file](/doc/{{page.lang}}/lb2/Model-definition-JSON-file.html))
 automatically adds a method to model called `defaultScope()`. LoopBack will call this method whenever a model is created, updated, or queried.
 
-{% include tip.html content="Default scopes with a `where` filter may not work as you expect!" %}
+{% include tip.html content="Default scopes with a `where` filter may not work as you expect!
+" %}
 
 Each time a model instance is created or updated, the generated `defaultScope()` method will modify the model's properties
 matching the `where` filter to enforce the values specified.
@@ -257,7 +259,8 @@ see [Regular Expressions (Mozilla Developer Network)](https://developer.mozilla
 
 {% include tip.html content="
 The above where clause syntax is for queries. For updates and deletes, omit the `{ where : ... }` wrapper.
-See [Where clause for other methods](#where-clause-for-other-methods) below." %}
+See [Where clause for other methods](#where-clause-for-other-methods) below."
+%}
 
 For example, this query returns all cars for which the model starts with a capital "T":
 
@@ -285,7 +288,8 @@ A regular expression value can also include one or more [flags](https://develop
 For example, append `/i` to the regular expression to perform a case-insensitive match.
 
 {% include important.html content="
-When using a regular expression flag with the REST API, you _must_ precede the regular expression with a slash character (`/`)." %}
+When using a regular expression flag with the REST API, you _must_ precede the regular expression with a slash character (`/`)."
+%}
 
 The following REST query returns all cars for which the model starts with a capital "T"::
 
@@ -475,7 +479,8 @@ var resultsPromise = Restaurants.find({
 
 Spell Carefully!
 
-If `unit` value is mistyped, for example `'mile'` instead of `'miles'`, LoopBack will silently ignore the filter! " %}
+If `unit` value is mistyped, for example `'mile'` instead of `'miles'`, LoopBack will silently ignore the filter! "
+%}
 
 ### like and nlike
 

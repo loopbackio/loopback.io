@@ -9,7 +9,8 @@ permalink: /doc/en/lb2/Installing-on-Linux.html
 summary:
 ---
 
-{% include important.html content="These instructions are for a development installation, not production. " %}
+{% include important.html content="These instructions are for a development installation, not production.
+" %}
 
 ## Prerequisites
 

@@ -18,7 +18,8 @@ In this part of the tutorial, you're going to add a new custom route.
 {% include note.html content="
 If you followed the previous steps in the tutorial, skip down to [Introducing boot scripts](#introducing-boot-scripts).
 
-If you're just jumping in, follow the steps below to catch up..." %}
+If you're just jumping in, follow the steps below to catch up...
+" %}
 
 Get the app (in the state following the last article) from GitHub and install all its dependencies:
 

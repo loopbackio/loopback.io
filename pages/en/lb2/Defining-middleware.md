@@ -9,11 +9,6 @@ permalink: /doc/en/lb2/Defining-middleware.html
 summary:
 ---
 
-**See also**:
-
-* [middleware.json](/doc/{{page.lang}}/lb2/middleware.json.html)
-* [Example app loopback-faq-user-management](https://github.com/strongloop/loopback-faq-user-management)
-
 ## Overview
 
 _Middleware_ refers to functions executed when HTTP requests are made to REST endpoints.
@@ -38,8 +33,8 @@ To add middleware to your application:
     2.  If you are creating a new middleware function, write it. See [Defining a new middleware handler function](#defining-a-new-middleware-handler-function).
 
 2.  **Register the middleware**:
-    * Edit `server/middleware.json`. This is the recommended way to register middleware. See [Registering middleware in middleware.json](#registering-middleware-in-middlewarejson).
-    * Alternatively, register the middleware in application code. See [Registering middleware in JavaScript](#registering-middleware-in-javascript).
+    1. Edit `server/middleware.json`. This is the recommended way to register middleware. See [Registering middleware in middleware.json](#registering-middleware-in-middlewarejson).
+    1. Alternatively, register the middleware in application code. See [Registering middleware in JavaScript](#registering-middleware-in-javascript).
 
 ### Middleware phases
 
@@ -220,7 +215,9 @@ By convention, place middleware functions in the `server/middleware` directory.
 
 A middleware handler function accepts three arguments, or four arguments if it is error-handling middleware. The general form is:
 
-```javascript
+xx
+
+```js
 function myMiddlewareFunc([err,] req, res, next) {
     // ...
 }
@@ -272,7 +269,7 @@ An example of a middleware function with three arguments, called to process the 
 
 **Regular middleware**
 
-```javascript
+```js
 return function myMiddleware(req, res, next) {
     // ...
 };
@@ -282,7 +279,7 @@ Here is a constructor (factory) for this function; use this form when registerin
 
 **Regular middleware**
 
-```javascript
+```js
 module.exports = function() {
   return function myMiddleware(req, res, next) {
     // ...
@@ -294,7 +291,7 @@ An example a middleware function with four arguments, called only when an error 
 
 **Error handler middleware**
 
-```javascript
+```js
 function myErrorHandler(err, req, res, next) {
   // ...
 }
@@ -308,7 +305,7 @@ options and returns a middleware handler function; for example, as shown below.
 If you have an existing project created via `apic loopback`, to implement a new middleware handler that you can share with other projects,
 place the file with the middleware constructor in the `server/middleware` directory, for example, `server/middleware/myhandler.js`.
 
-```javascript
+```js
 module.exports = function(options) {
   return function customHandler(req, res, next) {
     // use options to control handler's behavior
@@ -328,7 +325,7 @@ it creates a default `middleware.json` file that looks as follows:
 
 **server/middleware.json**
 
-```javascript
+```js
 {
   "initial:before": {
     "loopback#favicon": {}
@@ -358,7 +355,7 @@ For example, "loopback/server/middleware/favicon" or "compression".
 
 In general, each phase has the following syntax:
 
-```javascript
+```js
 phase[:sub-phase] : {
  middlewarePath : {
    [ enabled: [true | false] ]
@@ -455,7 +452,7 @@ You can specify the following properties in each middleware section. They are al
 
 Example of a typical middleware function that takes a single "options" object parameter: 
 
-```javascript
+```js
 "compression": {
    "params": {
      "threshold": 512
@@ -465,7 +462,7 @@ Example of a typical middleware function that takes a single "options" object pa
 
 Example of a middleware function that takes more than one parameter, where you use an array of arguments: 
 
-```javascript
+```js
 "morgan": {
    "params": ["dev", {
      "buffer": true
@@ -475,7 +472,7 @@ Example of a middleware function that takes more than one parameter, where you u
 
 Example or an entry for static middleware to serve content from the `client` directory in the project's root:
 
-```javascript
+```js
 //...
 "files": {
   "loopback#static": {
@@ -487,7 +484,7 @@ Example or an entry for static middleware to serve content from the `client` d
 
 Example or an entry for static middleware to serve content from the `multiple` directories in the project's root:
 
-```javascript
+```js
 //...
 "files": {
   "loopback#static": [{
@@ -518,7 +515,7 @@ Where _var_ is a property of the [`app`](https://apidocs.strongloop.com/loopbac
 For example, the following `middleware.json` configuration will load LoopBack's built-in rest middleware (loopback.rest)
 during the routes phase at the path resolved by `app.get('restApiRoot')`, which defaults to `/api`.
 
-```javascript
+```js
 {
   "routes": {
     "loopback#rest": {
@@ -531,7 +528,7 @@ during the routes phase at the path resolved by `app.get('restApiRoot')`, which 
 The following example loads hypothetical middleware named `environmental` during the routes phase at the return value of `app.get(env)`,
 typically either `/development` or `/production`.
 
-```javascript
+```js
 {
   "routes": {
     "environmental": {
@@ -549,7 +546,7 @@ For example, below is a `middleware.json` file defining a new phase "log" that
 
 **server/middleware.json**
 
-```javascript
+```js
 {
   ...
   "parse": {},
@@ -585,7 +582,7 @@ For example:
 
 **server/server.js**
 
-```javascript
+```js
 var loopback = require('loopback');
 var morgan = require('morgan');
 var errorhandler = require('error-handler');
@@ -612,7 +609,7 @@ For more information, see [app.METHOD](http://expressjs.com/4x/api.html#app.MET
 
 Here is the general signature for `app.use()`:
 
-```javascript
+```js
 app.use([route], function([err,] req, res, next) {
   //...
   next();
@@ -633,7 +630,7 @@ For example:
 
 **server/server.js**
 
-```javascript
+```js
 var loopback = require('loopback');
 var boot = require('loopback-boot');
 
@@ -659,7 +656,7 @@ For example, to register middleware for all endpoints that start with "/greet":
 
 **/server/server.js**
 
-```javascript
+```js
 app.use('/greet', function(req, res, next ) { 
   //...
 });
@@ -675,7 +672,7 @@ To register middleware for _all_ endpoints:
 
 **server/server.js or server/boot/scripts.js**
 
-```javascript
+```js
 app.use(function(req, res, next ) {
   //...
 });
@@ -690,7 +687,7 @@ For example:
 
 **server/server.js**
 
-```javascript
+```js
 //...
 app.get('/', function(req, res, next) {
   res.send('hello from `get` route');
@@ -715,7 +712,7 @@ Doing a POST will show the console message from both the "catch-all" route and t
 
 Example or an entry for static middleware to serve content from the `client` directory in the project's root:
 
-```javascript
+```js
 //...
 "files": {
   "loopback#static": {
@@ -742,7 +739,7 @@ If you don't do this, your application will essentially "freeze." Technically, 
 
 For example:
 
-```javascript
+```js
 module.exports = function() {
   return function tracker(req, res, next) {
     console.log('Request tracking middleware triggered on %s', req.url);
@@ -766,7 +763,7 @@ You can see this middleware in action in using the basic LoopBack application fr
 
     **server/middleware.json**
 
-    ```javascript
+    ```js
     {
       "initial": {
         "./middleware/tracker": {}
@@ -817,7 +814,7 @@ LoopBack registers two error-handling middleware by default:
 
 Example of a custom error processing middleware:
 
-```javascript
+```js
 module.exports = function() { 
   return function logError(err, req, res, next) { 
     console.log('ERR', req.url, err); 
@@ -830,7 +827,7 @@ To register this middleware:
 1.  Add the code above to `/server/middleware/log-error.js`.
 2.  Edit `/server/middleware.json` and register the new middleware in the "final" phase: 
 
-    ```javascript
+    ```js
     {
       "final": {
         "./middleware/log-error": {}

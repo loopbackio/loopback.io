@@ -20,7 +20,8 @@ Now you're going to create two new models, Review and Reviewer, with the `slc lo
 {% include note.html content="
 If you followed the previous step in the tutorial, go to [Define the Review model](#define-the-review-model).
 
-If you're just jumping in, follow the steps below to catch up..." %}
+If you're just jumping in, follow the steps below to catch up...
+" %}
 
 Get the app (in the state following the last article) from GitHub and install all its dependencies:
 

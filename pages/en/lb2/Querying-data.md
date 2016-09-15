@@ -85,10 +85,12 @@ The Node API call does not include the literal string \"filter\" in the JSON.
 
 [LoopBack API Explorer](Use-API-Explorer.html) adds \"filter\" to the query string,
 but you must enter [Stringified JSON](#using-stringified-json-in-rest-queries) in the **filter** field.
-Also make sure that the quotes you use are proper straight quotes ( \" ), not curved or typographic quotation marks (  “ or ” ). These can often be hard to distinguish visually." %}
+Also make sure that the quotes you use are proper straight quotes ( \" ), not curved or typographic quotation marks (  “ or ” ). These can often be hard to distinguish visually.
+" %}
 
 {% include tip.html content="
-If you are trying [query filters](#filters) with curl, use the `-g` or `--globoff`  option to use brackets `[` and `]` in request URLs." %}
+If you are trying [query filters](#filters) with curl, use the `-g` or `--globoff`  option to use brackets `[` and `]` in request URLs.
+" %}
 
 LoopBack supports the following kinds of filters:
 
@@ -194,9 +196,11 @@ The number of filters that you can apply to a single request is limited only by 
 
 {% include important.html content="
 There is no equal sign after `?filter` in the query string; for example
-`http://localhost:3000/api/books?filter[where][id]=1` " %}
+`http://localhost:3000/api/books?filter[where][id]=1` 
+" %}
 
-{% include note.html content="See [https://github.com/hapijs/qs](https://github.com/hapijs/qs) for more details." %}
+{% include note.html content="See [https://github.com/hapijs/qs](https://github.com/hapijs/qs) for more details.
+" %}
 
 ### Node syntax
 
@@ -227,7 +231,8 @@ where _Stringified-JSON_ is the stringified JSON from Node syntax. However, in
 {% include important.html content="
 When using stringified JSON, you must use an equal sign after `?filter` in the query string.
 
-For example: `http://localhost:3000/api/books?filter={%22where%22:{%22id%22:2}}` " %}
+For example: `http://localhost:3000/api/books?filter={%22where%22:{%22id%22:2}}` 
+" %}
 
 For example: `GET /api/activities/findOne?filter={"where":{"id":1234}}`
 
@@ -237,7 +242,8 @@ The [loopback-filters](https://github.com/strongloop/loopback-filters) module 
 Using this module, you can filter arrays of objects using the same filter syntax supported by `MyModel.find(filter)`.
 
 {% include note.html content="
-We plan to convert all modules to use `loopback-filter`, so it will become LoopBack's common \"built-in\" filtering mechanism." %}
+We plan to convert all modules to use `loopback-filter`, so it will become LoopBack's common \"built-in\" filtering mechanism.
+" %}
 
 Here is a basic example using the new module.
 

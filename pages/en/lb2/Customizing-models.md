@@ -57,7 +57,8 @@ To do this with the [model generator](/doc/{{page.lang}}/lb2/Model-generator.ht
 Alternatively,  you can edit the [Model definition JSON file](/doc/{{page.lang}}/lb2/Model-definition-JSON-file.html) and set the "base" property to the name of the model you want to extend.
 
 {% include note.html content="
-In general, use `PersistedModel` as the base model when you want to store your data in a database using a connector such as MySQL or MongoDB.  Use `Model` as the base for models that don't have CRUD semantics, for example, using connectors such as SOAP and REST." %}
+In general, use `PersistedModel` as the base model when you want to store your data in a database using a connector such as MySQL or MongoDB.  Use `Model` as the base for models that don't have CRUD semantics, for example, using connectors such as SOAP and REST.
+" %}
 
 For example, here is an excerpt from a `customer.json` file that extends the built-in User model to define a new Customer model:
 
@@ -74,7 +75,8 @@ For example, here is an excerpt from a `customer.json` file that extends the b
 In general, you can extend any model this way, not just the built-in models.
 
 {% include important.html content="
-Currently you cannot modify a built-in model's required properties. If you need to do this, then create your own custom model as a replacement instead." %}
+Currently you cannot modify a built-in model's required properties. If you need to do this, then create your own custom model as a replacement instead.
+" %}
 
 You can create custom models that extend from a single base custom model.
 For example, to define a model called `MyModel` that extends from a custom model you defined called `mMyBaseModel`,

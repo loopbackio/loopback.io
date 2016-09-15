@@ -25,4 +25,5 @@ See [Profiling](https://docs.strongloop.com/display/SLC/Profiling) and 
 [Monitoring app metrics](https://docs.strongloop.com/display/SLC/Monitoring-app-metrics) for more information.
 
 {% include important.html content="
-When running an application, you can specify debug strings that the application will display to the console (or save to a file).  For more information, see [Setting debug strings](Setting-debug-strings.html)." %}
+When running an application, you can specify debug strings that the application will display to the console (or save to a file).  For more information, see [Setting debug strings](Setting-debug-strings.html).
+" %}

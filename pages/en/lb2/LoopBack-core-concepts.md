@@ -10,7 +10,8 @@ permalink: /doc/en/lb2/LoopBack-core-concepts.html
 summary:
 ---
 
-{% include tip.html content="**Read this first** to understand how LoopBack works." %}
+{% include tip.html content="**Read this first** to understand how LoopBack works.
+" %}
 
 <div style="float: right;">
 {% include image.html file="9830550.png" alt="Model inheritance diagram" caption="Model inheritance" max-width="500"%}

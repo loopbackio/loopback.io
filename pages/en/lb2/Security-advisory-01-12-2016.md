@@ -47,4 +47,5 @@ $ npm update
 ```
 
 {% include warning.html content="
-Be sure that you have updated to loopback-component-passport **version 2.0.0** or higher." %}
+Be sure that you have updated to loopback-component-passport **version 2.0.0** or higher.
+" %}

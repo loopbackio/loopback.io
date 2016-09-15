@@ -18,7 +18,8 @@ StrongLoop's Node API platform consists of:
 *   [StrongLoop Process Manager](https://strong-pm.io) and related tools for working with any Node applications to:
 
 {% include important.html content="
-StrongLoop Arc and `slc` are no longer under active development, and will soon be deprecated. Arc's features are being included in the [IBM API Connect Developer Toolkit](https://developer.ibm.com/apiconnect)." %}
+StrongLoop Arc and `slc` are no longer under active development, and will soon be deprecated. Arc's features are being included in the [IBM API Connect Developer Toolkit](https://developer.ibm.com/apiconnect).
+" %}
 
 ## What you're going to do
 

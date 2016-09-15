@@ -16,7 +16,8 @@ summary:
 Model data is also called a _model instance_;
 in database terminology, conceptually a model corresponds to a table, and a model instance corresponds to a _row_ or _record_ in the table.
 
-{% include note.html content="For information on model _read_ operations, see [Querying data](Querying-data.html)." %}
+{% include note.html content="For information on model _read_ operations, see [Querying data](Querying-data.html).
+" %}
 
 ## Creating data (model instances)
 
@@ -30,7 +31,8 @@ Use the following [PersistedModel](http://apidocs.strongloop.com/loopback/#persi
   If found, returns the object. If not found, creates a new instance (record).
 
     {% include important.html content="Be sure to include a `where` clause in the filter object.
-    Without the `where`, the `findOrCreate` finds and returns the first record in the collection, without error, which can lead to unintended behavior." %}
+    Without the `where`, the `findOrCreate` finds and returns the first record in the collection, without error, which can lead to unintended behavior.
+    " %}
 * [save](http://apidocs.strongloop.com/loopback/#persistedmodel-prototype-save) - Save model instance.
   If the instance doesn't have an ID, then calls [create](http://apidocs.strongloop.com/loopback/#persistedmodel-create) instead.
   Triggers: validate, save, update, or create.
@@ -41,10 +43,11 @@ Static method (called on the Model object):
 
 * [updateAll](http://apidocs.strongloop.com/loopback/#persistedmodel-updateall) - updates multiple instances (records) that match the specified [where clause](/doc/{{page.lang}}/lb2/Where-filter.html). 
 
-{% include important.html content="The where clause used with `updateAll()` is slightly different than that for queries.
-Omit `{ where : ... }` from the where clause. Simply provide the condition as the first argument.
+{% include important.html content="The where clause used with `updateAll()` is slightly different than that for queries.  Omit `{ where : ... }` from the where clause.
+Simply provide the condition as the first argument.
 
-For more information, see [Where filter](Where-filter.html)." %}
+For more information, see [Where filter](Where-filter.html).
+" %}
 
 Instance methods (called on a single model instance):
 

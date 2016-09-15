@@ -11,14 +11,16 @@ summary:
 
 {% include content/gs-prereqs.html lang=page.lang %}
 
-{% include note.html content="To follow this step, you should have a basic understanding of [AngularJS](https://angularjs.org/)." %}
+{% include note.html content="To follow this step, you should have a basic understanding of [AngularJS](https://angularjs.org/).
+" %}
 
 The LoopBack AngularJS SDK automatically creates a client JavaScript API that enables you to make AngularJS calls to your LoopBack models.
 
 {% include note.html content="
 If you followed the previous step in the tutorial, go to [Introducing the AngularJS SDK](#introducing-the-angularjs-sdk).
 
-If you're just jumping in, follow the steps below to catch up..." %}
+If you're just jumping in, follow the steps below to catch up...
+" %}
 
 Get the app (in the state following the last article plus all the client files) from GitHub and install all its dependencies:
 
@@ -51,7 +53,8 @@ This command creates `client/js/services/lb-services.js`.
 ## Copy the other client files
 
 {% include note.html content="
-The `lb-ng` tool does the \"heavy lifting\" of creating the client JavaScript API that works with your LoopBack back-end. However, you still need to create the HTML/CSS and client JavaScript code that actually calls into this AngularJS API and defines the client-side functionality and appearance of your app. In general, creating this part of the app is entirely up to you. This tutorial includes an example of such a client implementation that you can use to understand the process." %}
+The `lb-ng` tool does the \"heavy lifting\" of creating the client JavaScript API that works with your LoopBack back-end. However, you still need to create the HTML/CSS and client JavaScript code that actually calls into this AngularJS API and defines the client-side functionality and appearance of your app. In general, creating this part of the app is entirely up to you. This tutorial includes an example of such a client implementation that you can use to understand the process.
+" %}
 
 If you've been following the entire tutorial (and didn't jump in and clone the project mid-way through), then you'll need to clone it now to get the client files required for this step.  Then copy the `client` sub-directory to your project directory:
 

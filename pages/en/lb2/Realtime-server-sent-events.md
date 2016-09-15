@@ -9,11 +9,6 @@ permalink: /doc/en/lb2/Realtime-server-sent-events.html
 summary:
 ---
 
-**See also**:
-
-* [Angular Live-set example](https://github.com/strongloop/angular-live-set-example)
-* [Blog post](https://strongloop.com/strongblog/build-real-time-apps-with-angular-liveset-and-loopback/)
-
 ## Overview
 
 The [PersistedModel](http://apidocs.strongloop.com/loopback/#persistedmodel) API supports streaming changes from servers to clients using a combination

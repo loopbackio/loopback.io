@@ -2,6 +2,7 @@
 title: "Working with files using the Android SDK"
 lang: en
 layout: page
+toc: false
 keywords: LoopBack
 tags:
 sidebar: lb2_sidebar
@@ -9,10 +10,13 @@ permalink: /doc/en/lb2/Working-with-files-using-the-Android-SDK.html
 summary:
 ---
 
-**See also**:
+{% include see-also.html content="
 
 * [Android SDK API docs](http://apidocs.strongloop.com/loopback-sdk-android/api/index.html)
-* [Storage component](/doc/{{page.lang}}/lb2/Storage-component.html)
+* [Storage component](Storage-component.html)
+" %}
+
+{% include toc.html %}
 
 ## Overview
 
@@ -45,7 +49,7 @@ you may need to use fully qualified names to tell the compiler which class you w
 
 ### Creating a new container
 
-```
+```java
 ContainerRepository containerRepo = adapter.createRepository(ContainerRepository.class);
 
 containerRepo.create("container-name", new ObjectCallback<Container>() {
@@ -63,7 +67,7 @@ containerRepo.create("container-name", new ObjectCallback<Container>() {
 
 ### Finding a container by name
 
-```
+```java
 containerRepo.get("container-name", new ObjectCallback<Container>() {
     @Override
     public void onSuccess(Container container) {
@@ -79,7 +83,7 @@ containerRepo.get("container-name", new ObjectCallback<Container>() {
 
 ### Listing all containers
 
-```
+```java
 containerRepo.getAll(new ListCallback<Container>() {
     @Override
     public void onSuccess(List<Container> containers) {
@@ -99,7 +103,7 @@ All files live inside a container. The examples below assume you have a `contai
 
 ### Listing existing files
 
-```
+```java
 // same as container.getFileRepository().getAll(callback)
 container.getAllFiles(new ListCallback<File>() {
     @Override
@@ -116,7 +120,7 @@ container.getAllFiles(new ListCallback<File>() {
 
 ### Finding a file by name
 
-```
+```java
 // same as container.getFileRepository.get("file-name", callback)
 container.getFile("file-name", new ObjectCallback<File>() {
     @Override
@@ -133,7 +137,7 @@ container.getFile("file-name", new ObjectCallback<File>() {
 
 ### Uploading a local file
 
-```
+```java
 java.io.File localFile = new java.io.File("path/to/file.txt");
 
 // same as container.getFileRepository.upload(localFile, callback)
@@ -153,7 +157,7 @@ container.upload(localFile, new ObjectCallback<File>() {
 
 ### Uploading in-memory content
 
-```
+```java
 String fileName = "hello.txt";
 byte[] content = "Hello world".getBytes("UTF-8");
 String contentType = "text/plain";
@@ -176,7 +180,7 @@ container.upload(fileName, content, contentType,
 
 ### Downloading to a local file
 
-```
+```java
 File remoteFile; // obtained by one of the methods shown above
 java.io.File localFile = new java.io.File("path/to/file.txt");
 
@@ -195,7 +199,7 @@ remoteFile.download(localFile, new VoidCallback() {
 
 ### Downloading to memory
 
-```
+```java
 File remoteFile; // obtained by one of the methods shown above
 
 remoteFile.download(new File.DownloadCallback() {
@@ -213,7 +217,7 @@ remoteFile.download(new File.DownloadCallback() {
 
 ### Removing a remote file
 
-```
+```java
 File remoteFile; // obtained by one of the methods shown above
 
 remoteFile.delete(new Void() {
@@ -244,7 +248,7 @@ See [Storage component](/doc/{{page.lang}}/lb2/Storage-component.html) for info
 
 To avoid extra checks further down the line, the app will create the container when the user enters a new claim in the system as shown below:
 
-```
+```java
 ContainerRepository containerRepo = adapter.createRepository(ContainerRepository.class);
 
 containerRepo.create(claim.getId().toString(), new ObjectCallback<Container>() {
@@ -266,7 +270,7 @@ containerRepo.create(claim.getId().toString(), new ObjectCallback<Container>() {
 
 To display a list of documents that are already uploaded, we need to fetch all files in the container associated with the current claim as follows:
 
-```
+```java
 activity.getContainer().getAllFiles(new ListCallback<File>() {
 
     @Override
@@ -283,7 +287,7 @@ activity.getContainer().getAllFiles(new ListCallback<File>() {
 
 To display the document, the app downloads its content and builds a `Bitmap` object that it can display on the Android device:
 
-```
+```java
 void displayDocument(File remoteFile) {
 
     file.download(new File.DownloadCallback() {
@@ -307,7 +311,7 @@ To keep this example simple, we will skip details on how to take pictures in And
 [Android Camera docs](http://developer.android.com/reference/android/hardware/Camera.html)).
 Once the picture is taken, the app uploads it to the storage service and updates the list of all documents:
 
-```
+```java
 camera.takePicture(
 
     null, /* shutter callback */

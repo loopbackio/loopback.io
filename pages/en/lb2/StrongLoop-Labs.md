@@ -11,7 +11,8 @@ summary:
 
 {% include note.html content="
 _**StrongLoop Labs projects**_ provide early access to advanced or experimental functionality.
-In general, these projects may lack usability, completeness, documentation, and robustness, and may be outdated." %}
+In general, these projects may lack usability, completeness, documentation, and robustness, and may be outdated.
+" %}
 
 These are the StrongLoop Labs projects:
 

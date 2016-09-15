@@ -10,7 +10,8 @@ summary:
 ---
 
 {% include important.html content="
-These endpoints are part of the [PersistedModel REST API](PersistedModel-REST-API.html), but are presented in a separate page for ease of reference." %}
+These endpoints are part of the [PersistedModel REST API](PersistedModel-REST-API.html), but are presented in a separate page for ease of reference.
+" %}
 
 ## Get related model instances
 

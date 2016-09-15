@@ -17,7 +17,8 @@ Within this directory the standard LoopBack project structure has three sub-dire
 * `common` - Files common to client and server. The `/models` sub-directory contains all model JSON and JavaScript files.
 * `definitions` - API and product definition YAML files (**IBM API Connect only**).
 
-{% include note.html content="All model JSON and JavaScript files that are shared between client and server go in the `/common/models` directory.  Server-only files go in `/server/models`, and client-only go in`/client/models`" %}
+{% include note.html content="All model JSON and JavaScript files that are shared between client and server go in the `/common/models` directory.  Server-only files go in `/server/models`, and client-only go in`/client/models`
+" %}
 
 <table>
   <tbody>
@@ -128,4 +129,5 @@ Within this directory the standard LoopBack project structure has three sub-dire
 </table>
 
 {% include important.html content="
-The LoopBack [model generator](Model-generator.html) automatically converts camel-case model names (for example MyModel) to lowercase dashed names (my-model).  For example, if you create a model named \"FooBar\" with the model generator, it creates files `foo-bar.json` and `foo-bar.js` in `common/models`.   However, the model name (\"FooBar\") will be preserved via the model's name property. " %}
+The LoopBack [model generator](Model-generator.html) automatically converts camel-case model names (for example MyModel) to lowercase dashed names (my-model).  For example, if you create a model named \"FooBar\" with the model generator, it creates files `foo-bar.json` and `foo-bar.js` in `common/models`.   However, the model name (\"FooBar\") will be preserved via the model's name property.
+" %}

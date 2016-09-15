@@ -421,7 +421,8 @@ var InventoryDefinition = { 
 
 The composite ID is (productId, locationId) for an inventory model.
 
-{% include important.html content="Composite IDs are not currently supported as query parameters in REST APIs." %}
+{% include important.html content="Composite IDs are not currently supported as query parameters in REST APIs.
+" %}
 
 ### Data mapping properties
 
@@ -933,7 +934,8 @@ Product.find({order: "name", offset: 0, limit: 100, where: {deleted: false}}, cb
 Adding a `scope` to a model definition (in the model.json file) automatically adds a method to model called `defaultScope()`.
 LoopBack will call this method whenever a model is created, updated, or queried.
 
-{% include tip.html content="Default scopes with a `where` filter may not work as you expect!" %}
+{% include tip.html content="Default scopes with a `where` filter may not work as you expect!
+" %}
 
 Each time a model instance is created or updated, the generated `defaultScope()` method will modify the model's properties matching the `where` filter to enforce the values specified.
 
@@ -954,7 +956,8 @@ var defaultScope = Report.defaultScope;
 
 You can declare remote methods here. Until this feature is implemented, you must declare remote methods in code. See [Remote methods](/doc/{{page.lang}}/lb2/Remote-methods.html).
 
-{% include warning.html content="This feature is not yet implemented." %}
+{% include warning.html content="This feature is not yet implemented.
+" %}
 
 ## Indexes
 
@@ -988,7 +991,8 @@ The full syntax for an individual index is:
 }
 ```
 
-{% include note.html content="A key value of 1 specifies ascending order, and -1 specifies descending order." %}
+{% include note.html content="A key value of 1 specifies ascending order, and -1 specifies descending order.
+" %}
 
 If you don't need to specify any options, you can use a shortened form:
 

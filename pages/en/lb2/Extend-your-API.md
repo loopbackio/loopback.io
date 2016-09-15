@@ -18,7 +18,8 @@ In this section you're going to add a custom remote method to your API.
 {% include note.html content="
 If you followed the previous steps in the tutorial, skip down to [Add a remote method](/#add-a-remote-method)
 
-If you're just jumping in, follow the steps below to catch up..." %}
+If you're just jumping in, follow the steps below to catch up...
+" %}
 
 Get the app (in the state following the last article) from GitHub and install all its dependencies:
 
@@ -36,7 +37,8 @@ Follow these steps:
 1.  Look in your application's `/common/models` directory.  You'll notice there are `coffee-shop.js` and `coffee-shop.json` files there.  
 
     {% include important.html content="
-    The LoopBack [model generator](Model-generator.html), automatically converts camel-case model names (for example MyModel) to lowercase dashed names (my-model).  For example, if you create a model named \"FooBar\" with the model generator, it creates files `foo-bar.json` and `foo-bar.js` in `common/models`.  However, the model name (\"FooBar\") will be preserved via the model's name property." %}
+    The LoopBack [model generator](Model-generator.html), automatically converts camel-case model names (for example MyModel) to lowercase dashed names (my-model).  For example, if you create a model named \"FooBar\" with the model generator, it creates files `foo-bar.json` and `foo-bar.js` in `common/models`.  However, the model name (\"FooBar\") will be preserved via the model's name property.
+    " %}
 2.  Open `coffee-shop.js` in your favorite editor.  By default, it contains an empty function: 
 
     ```js
@@ -83,7 +85,8 @@ Follow these steps:
 4.  Save the file.
 
 {% include note.html content="
-If you don't want to expose a remote method to everyone, it's easy to constrain access to it using access control lists (ACLs). See [Adding ACLs to remote methods](Remote-methods#adding-acls-to-remote-methods)." %}
+If you don't want to expose a remote method to everyone, it's easy to constrain access to it using access control lists (ACLs). See [Adding ACLs to remote methods](Remote-methods#adding-acls-to-remote-methods).
+" %}
 
 ## Try the remote method
 

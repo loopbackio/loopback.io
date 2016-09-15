@@ -85,7 +85,8 @@ If the URL loads fine in a browser, but when you make a `curl` request to your a
 
 The cause is likely to be because of incompatible IP versions between your app and `curl`.
 
-{% include note.html content="On Mac OS 10.10 (Yosemite), `curl` uses IP v6 by default." %}
+{% include note.html content="On Mac OS 10.10 (Yosemite), `curl` uses IP v6 by default.
+" %}
 
 LoopBack, by default uses IP v4, and `curl` might be using IP v6.
 If you see IP v6 entries in your hosts file (::1 localhost, fe80::1%lo0 localhost), it is likely that `curl` is making requests using IP v6.

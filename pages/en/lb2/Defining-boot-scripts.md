@@ -28,9 +28,7 @@ When an application starts, the bootstrapper:
 The loopback-boot module exports a `boot()` function that initializes an application.
 For example, from the standard scaffolded [server.js](/doc/{{page.lang}}/lb2/server.js.html) script:
 
-**/server/server.js**
-
-```javascript
+```js
 var loopback = require('loopback');
 var boot = require('loopback-boot');
 var app = module.exports = loopback();
@@ -47,7 +45,8 @@ See [loopback-boot API docs](http://apidocs.strongloop.com/loopback-boot/) for
 
 {% include note.html content="
 If you create your application with the [application generator](application-generator.html) ,
-then you don't need to do anything to bootstrap your application--the above code is automatically scaffolded for you!" %}
+then you don't need to do anything to bootstrap your application--the above code is automatically scaffolded for you!
+" %}
 
 ### Using boot scripts
 
@@ -114,7 +113,7 @@ The signature of this function is similar for both types of boot scripts, but as
 
 ```javascript
 module.exports = function(app, [_callback_]) {
-  //...
+  ...
 }
 ```
 
@@ -151,7 +150,8 @@ An asynchronous boot script must export a function that takes two arguments:
 1.  The application object, `app`. This object enables you to access system-defined variables and configurations. 
 2.  A callback function that enables you to time your response according to your application logic.
 
-{% include important.html content="You must call the callback function when the script is finished to pass control back to the application." %}
+{% include important.html content="You must call the callback function when the script is finished to pass control back to the application.
+" %}
 
 For example, this boot script prints "hello world" and triggers the callback function after three seconds (3000 milliseconds).
 
@@ -196,9 +196,9 @@ If you add this boot script to an "empty" application, you will see this:
 **shell**
 
 ```javascript
-//...
+...
 Models: ['User', 'AccessToken', 'ACL', 'RoleMapping', 'Role']
-//...
+...
 ```
 
 ## Boot script loading order
@@ -213,20 +213,20 @@ Replace the default scaffolded function call:
 **/server/server.js**
 
 ```javascript
-//...
+...
 boot(app, __dirname);
-//...
+...
 ```
 
 With something like this:
 
 ```javascript
-//...
+...
 bootOptions = { "appRootDir": __dirname, 
                 "bootScripts" : [ "/full/path/to/boot/script/first.js", "//full/path/to/boot/script/second.js", ... ]
 };
 boot(app, bootOptions);
-//...
+...
 ```
 
 Then the application will then execute scripts in the order specified in the `bootScripts` array.

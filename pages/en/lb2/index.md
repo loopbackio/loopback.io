@@ -1,15 +1,14 @@
 ---
 lang: en
 title: LoopBack 2.x
+toc: false
 keywords: LoopBack 2.x
 tags: [getting_started]
 sidebar: lb2_sidebar
 permalink: /doc/en/lb2/index.html
-toc: false
 ---
 
-{% include styled-box.html style="font-size: 11pt; border: 1px solid #cccccc; background-color: #EBF5EB; padding: 10px; border-radius: 3px; margin: 10px auto 20px auto; width: 680px; padding: 10px;"
-content="LoopBack is a highly-extensible, open-source Node.js framework that enables you to:
+{% include styled-box.html content="LoopBack is a highly-extensible, open-source Node.js framework that enables you to:
 
 - Create dynamic end-to-end REST APIs with little or no coding.
 - Access data from major relational databases, MongoDB, SOAP and REST APIs.
@@ -21,14 +20,14 @@ Read [LoopBack core concepts](/doc/{{page.lang}}/lb2/LoopBack-core-concepts.html
 
 Check out the [LoopBack Developer Forum](https://groups.google.com/forum/#!forum/loopbackjs) to ask questions and discuss how you are using LoopBack.
 
-{% include styled-box.html style="font-size: 11pt; border: 1px solid #cccccc; background-color: #EBF5EB; padding: 10px; border-radius: 3px; margin: 10px auto 20px auto; width: 680px; padding: 10px;"
+{% include styled-box.html
 content="
-  [IBM API Connect](https://developer.ibm.com/apiconnect/) is an end-to-end API management solution that uses LoopBack to create APIs, and provides integrated build and deployment tools:
+[IBM API Connect](https://developer.ibm.com/apiconnect/) is an end-to-end API management solution that uses LoopBack to create APIs, and provides integrated build and deployment tools:
 
-  - **Integrated experience across the entire API lifecycle**, including API and micro-service creation in Node.js and Java.
-  -  **Self-service access to APIs** with built-in developer portals and social collaboration tools.
-  -  **Unified management and orchestration of Node.js and Java** for deployment on-premises and in Bluemix.
-  -  **Built-in security and gateway policies** with extensive security options and governance policies.
+- **Integrated experience across the entire API lifecycle**, including API and micro-service creation in Node.js and Java.
+-  **Self-service access to APIs** with built-in developer portals and social collaboration tools.
+-  **Unified management and orchestration of Node.js and Java** for deployment on-premises and in Bluemix.
+-  **Built-in security and gateway policies** with extensive security options and governance policies.
 
 For more information, see [IBM API Connect](https://developer.ibm.com/apiconnect/).
 " %}    
@@ -37,17 +36,11 @@ For more information, see [IBM API Connect](https://developer.ibm.com/apiconnect
 
 ## The LoopBack framework
 
-{% include see-also.html title="no" content="
-New to Node.js? Read Getting Started with Node for:
-
-- [PHP Developers](http://strongloop.com/strongblog/node-js-php-get-started/)
-- [Rails Developers](http://strongloop.com/strongblog/node-js-ruby-on-rails-getting-started/)
-- [Java Developers](http://strongloop.com/strongblog/node-js-java-getting-started/)
-" %}
-
 The LoopBack framework is a set of Node.js modules that you can use independently or together to quickly build REST APIs.
 
-A LoopBack application interacts with data sources through the LoopBack model API, available locally within Node.js, [remotely over REST](/doc/{{page.lang}}/lb2/Built-in-models-REST-API), and via native client APIs for [iOS, Android, and HTML5](/doc/{{page.lang}}/lb2/Client-SDKs). Using these APIs, apps can query databases, store data, upload files, send emails, create push notifications, register users, and perform other actions provided by data sources and services.
+A LoopBack application interacts with data sources through the LoopBack model API, available locally within Node.js, [remotely over REST](/doc/{{page.lang}}/lb2/Built-in-models-REST-API), and via native client APIs for
+[iOS, Android, and HTML5](/doc/{{page.lang}}/lb2/Client-SDKs). Using these APIs, apps can query databases,
+store data, upload files, send emails, create push notifications, register users, and perform other actions provided by data sources and services.
 
 Clients can call LoopBack APIs directly using [Strong Remoting](/doc/{{page.lang}}/lb2/Strong-Remoting.html), a pluggable transport layer that enables you to provide backend APIs over REST, WebSockets, and other transports.
 

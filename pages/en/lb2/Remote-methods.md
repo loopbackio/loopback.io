@@ -25,7 +25,8 @@ Use a remote method to perform operations not provided by LoopBack's [standar
 {% include note.html content="
 The easiest way to define a remote method is by using the command-line [remote method generator](Remote-method-generator.html).
 
-For an introductory example of defining a remote method, see [Extend your API](Extend-your-API.html) in Getting Started." %}
+For an introductory example of defining a remote method, see [Extend your API](Extend-your-API.html) in Getting Started.
+" %}
 
 ## How to define a remote method
 
@@ -37,7 +38,8 @@ If you created the model with the [Model generator](/doc/{{page.lang}}/lb2/Mode
 {% include important.html content="
 The LoopBack [model generator](Model-generator.html) automatically converts camel-case model names (for example MyModel) to lowercase dashed names (my-model).
 For example, if you create a model named \"FooBar\" with the model generator, it creates files `foo-bar.json` and `foo-bar.js` in `common/models`. 
-However, the model name (\"FooBar\") will be preserved via the model's name property." %} 
+However, the model name (\"FooBar\") will be preserved via the model's name property.
+" %} 
 
 2.  Define a static method that will handle the request.
 
@@ -82,7 +84,8 @@ will return:
 
 {% include note.html content="
 Notice the REST API request above uses the plural form \"people\" instead of \"person\". LoopBack exposes the
-[plural form of model names for REST API routes](Exposing-models-over-REST.html#REST-paths)." %}
+[plural form of model names for REST API routes](Exposing-models-over-REST.html#REST-paths).
+" %}
 
 ## Registering a remote method
 
@@ -103,7 +106,8 @@ Where:
 The options argument is a Javascript object containing key/value pairs to configure the remote method REST endpoint.
 
 {% include important.html content="
-All of the options properties are optional. However, if the remote method requires arguments, you must specify `accepts`; if the remote method returns a value, you must specify `returns`. " %}
+All of the options properties are optional. However, if the remote method requires arguments, you must specify `accepts`; if the remote method returns a value, you must specify `returns`.
+" %}
 
 <table>
   <thead>

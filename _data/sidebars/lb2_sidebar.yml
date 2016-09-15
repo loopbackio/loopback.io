@@ -511,8 +511,16 @@ entries:
           url: /doc/en/lb2/REST-connector.html
           output: 'web, pdf'
 
+        - title: 'REST connector example'
+          url: /doc/en/lb2/REST-connector-example.html
+          output: 'web, pdf'
+
         - title: 'SOAP connector'
           url: /doc/en/lb2/SOAP-connector.html
+          output: 'web, pdf'
+
+        - title: 'SOAP connector example'
+          url: /doc/en/lb2/SOAP-Connector-example.html
           output: 'web, pdf'
 
         - title: 'Storage connector'
@@ -613,6 +621,10 @@ entries:
           url: /doc/en/lb2/Realtime-server-sent-events.html
           output: 'web, pdf'
 
+        - title: 'AngularJS LiveSet example'
+          url: /doc/en/lb2/AngularJS-LiveSet-Example.html
+          output: 'web, pdf'
+
   - title: 'Adding application logic'
     url: /doc/en/lb2/Adding-application-logic.html
     output: 'web, pdf'
@@ -628,6 +640,10 @@ entries:
 
     - title: 'Defining middleware'
       url: /doc/en/lb2/Defining-middleware.html
+      output: 'web, pdf'
+
+    - title: 'Middleware example'
+      url: /doc/en/lb2/Middleware-example.html
       output: 'web, pdf'
 
     - title: 'Working with LoopBack objects'
@@ -736,6 +752,10 @@ entries:
 
         - title: 'Storage component REST API'
           url: /doc/en/lb2/Storage-component-REST-API.html
+          output: 'web, pdf'
+
+        - title: 'Storage component example'
+          url: /doc/en/lb2/Storage-example.html
           output: 'web, pdf'
 
       - title: 'Passport login component'
@@ -913,6 +933,10 @@ entries:
 
         - title: 'Using Browserify'
           url: /doc/en/lb2/Using-Browserify.html
+          output: 'web, pdf'
+
+        - title: 'Isomorphic example'
+          url: /doc/en/lb2/Isomorphic-LoopBack-example.html
           output: 'web, pdf'
 
   - title: 'Project layout reference'

@@ -17,8 +17,8 @@ In general, these tutorials are intended to be followed in order.
 <table>
   <thead>
     <tr>
-      <th>Order</th>
-      <th>Name</th>
+      <th style="width: 80px;">Order</th>
+      <th style="width: 200px;">Name</th>
       <th>Description</th>
     </tr>
   </thead>

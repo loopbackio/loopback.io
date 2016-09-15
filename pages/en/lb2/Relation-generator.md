@@ -45,7 +45,8 @@ The tool will prompt you for:
 * Name of the model to create a relationship with.
 * Name for the relation (property name).
 
-{% include important.html content="The name of the relation must be different than a property it references." %}
+{% include important.html content="The name of the relation must be different than a property it references.
+" %}
 
 * Custom foreign key (optional)
 * Whether a "through" model is required.  Repy "Y" to create a [HasManyThrough relations](/doc/{{page.lang}}/lb2/HasManyThrough-relations.html). 

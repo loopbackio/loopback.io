@@ -58,7 +58,8 @@ The extended routing details in LoopBack is best understood by understanding the
 The LoopBack middleware chain is composed of middleware added to the chain in the following order, and the request passes through them in the given order.
 
 {% include note.html content="
-Except 14, 15, and 16, the listed items refer to [LoopBack middleware](Defining-middleware.html) phases." %}
+Except 14, 15, and 16, the listed items refer to [LoopBack middleware](Defining-middleware.html) phases.
+" %}
 
 1.  initial:before
 2.  initial
@@ -93,7 +94,8 @@ middleware over those loaded using Express' interface `app.use()`, components, o
 
 {% include note.html content="
 If you add middleware on the `route`or `route:after` phase, it will not execute _after_ the route is matched.
-Instead, it will be ignored because the route was already matched." %}
+Instead, it will be ignored because the route was already matched.
+" %}
 
 The middleware to be loaded during the middleware phases are configured in the [middleware.json](/doc/{{page.lang}}/lb2/middleware.json.html) file of the app.
 The order of the phases in the file are semantic, and cannot be listed randomly.

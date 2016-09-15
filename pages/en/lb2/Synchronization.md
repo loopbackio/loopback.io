@@ -11,14 +11,12 @@ summary:
 
 {% include content/strongloop-labs.html lang=page.lang %}
 
-**See also**:
-
+{% include see-also.html content="
 * [loopback-example-full-stack](https://github.com/strongloop/loopback-example-full-stack)
 * [loopback-example-offline-sync](https://github.com/strongloop/loopback-example-offline-sync)
-
-{% include note.html content="
-Synchronization is not currently a component, but will be refactored in the future to be a LoopBack component.
 " %}
+
+{% include toc.html %}
 
 ## Overview
 
@@ -32,7 +30,8 @@ This process is called _synchronization_ (abbreviated as _sync_).
 Sync replicates data from the _source_ to the _target_, and the target calls the LoopBack replication API.
 
 {% include note.html content="
-The LoopBack replication API is a JavaScript API, and thus (currently, at least) works only with a JavaScript client. " %}
+The LoopBack replication API is a JavaScript API, and thus (currently, at least) works only with a JavaScript client. 
+" %}
 
 _Replication_ means intelligently copying data from one location to another.
 LoopBack copies data that has changed from source to target, but does not overwrite data that was modified on the target since the last replication.

@@ -11,7 +11,8 @@ summary:
 
 {% include content/strongloop-labs.html lang=page.lang %}
 
-{% include note.html content="The Redis connector requires Redis 3.0.3+. " %}
+{% include note.html content="The Redis connector requires Redis 3.0.3+.
+" %}
 
 ## Installation
 

@@ -115,16 +115,18 @@ To connect a model to a data source, follow these steps:
     When prompted for the data source to attach to, select the one you just created. 
 
 {% include note.html content="
-The model generator lists the [memory connector](Memory-connector.html), \"no data source,\" and data sources listed in [`datasources.json`](datasources.json.html).  That's why you created the data source first in step 1." %}
+The model generator lists the [memory connector](Memory-connector.html), \"no data source,\" and data sources listed in [`datasources.json`](datasources.json.html).  That's why you created the data source first in step 1.
+" %}
 
 You can also create models from an existing database; see [Creating models](/doc/{{page.lang}}/lb2/Creating-models.html) for more information.
 
 ## Connectors
 
 {% include note.html content="
-In addition to the connectors below that IBM/StrongLoop supports, [community connectors](Community-connectors.html) 
-developed and maintained by the LoopBack community enable you to connect to CouchDB, Neo4j, Elasticsearch, and many others.
-See [Community connectors](Community-connectors.html) for more information." %}
+In addition to the connectors below that IBM/StrongLoop supports,
+[community connectors](Community-connectors.html) developed and maintained by the LoopBack community enable you to connect to CouchDB, Neo4j, Elasticsearch, and many others.
+See [Community connectors](Community-connectors.html) for more information.
+" %}
 
 The following table lists commercially-supported LoopBack connectors. For more information, see [Database connectors](/doc/{{page.lang}}/lb2/Database-connectors.html) and [Non-database connectors](/doc/{{page.lang}}/lb2/Non-database-connectors.html).
 

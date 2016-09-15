@@ -165,7 +165,8 @@ MyModel.disableRemoteMethod('updateAttributes', isStatic);
 
 {% include important.html content="
 Be sure to call `disableRemoteMethod()` on your own custom model, not one of the built-in models;
-in the example below, for instance, the calls are `MyUser.disableRemoteMethod()` _not_ `User.disableRemoteMethod()`." %}
+in the example below, for instance, the calls are `MyUser.disableRemoteMethod()` _not_ `User.disableRemoteMethod()`.
+" %}
 
 Here's an example of hiding all methods of the `MyUser` model, except for `login` and `logout`:
 

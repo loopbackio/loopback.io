@@ -1175,3 +1175,14 @@ div.box.box1 {
 }
 
 #seealso ul {line-height:110%; }
+
+.highlight-box {
+  font-size: 11pt;
+  border: 1px solid #cccccc;
+  background-color: #EBF5EB;
+  padding: 10px;
+  border-radius: 3px; 
+  margin: 10px auto 20px auto;
+  width: 680px;
+  padding: 10px;
+}

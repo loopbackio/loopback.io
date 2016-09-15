@@ -2,14 +2,16 @@
 title: "iOS SDK"
 lang: en
 layout: page
+toc: false
 keywords: LoopBack
 tags:
 sidebar: lb2_sidebar
 permalink: /doc/en/lb2/iOS-SDK.html
 summary:
 ---
-
 {% include content/strongloop-labs.html lang=page.lang %}
+
+{% include toc.html %}
 
 ## Overview
 
@@ -31,9 +33,9 @@ Instead, interact with your models and data sources in a comfortable, first-clas
 The easiest way to get started with the LoopBack iOS SDK is with the LoopBack iOS guide app.
 The guide app comes ready to compile with XCode, and each tab in the app guides you through the features available to mobile apps through the SDK. Here are some representative screenshots:
 
-{% include image.html file="9830431.png" alt="" %}
-{% include image.html file="9830430.png" alt="" %}
-{% include image.html file="9830426.png" alt="" %}
+{% include image.html file="9830431.png" alt="" max-width="200" %}
+{% include image.html file="9830430.png" alt="" max-width="200" %}
+{% include image.html file="9830426.png" alt="" max-width="200" %} 
 
 From your usual projects directory:
 
@@ -158,13 +160,14 @@ Because of this the repository class name (`'widget'`, above) needs to match the
 
 {% include warning.html content="
 If you haven't created a model yet, see [Defining models](Defining-models.html).
-The model _must_ exist (even if the schema is empty) before your app can interact with it." %}
+The model _must_ exist (even if the schema is empty) before your app can interact with it.
+" %}
 
 Use this to make creating Models easier. Match the name or create your own.
 
 Since `LBModelRepository` provides a basic implementation, we only need to override its constructor to provide the appropriate name.
 
-```
+```csharp
 @interface WidgetRepository : LBModelRepository
 
 - (instancetype)repository;
@@ -176,7 +179,7 @@ Since `LBModelRepository` provides a basic implementation, we only need to ove
 
 Remember to use the right name:
 
-```
+```csharp
 @implementation WidgetRepository
 
 - (instancetype)repository {
@@ -208,7 +211,7 @@ Create a Widget:
 
 Save a Widget:
 
-```
+```csharp
 [pencil saveWithSuccess:^{
                     // Pencil now exists on the server!
                 }
@@ -219,7 +222,7 @@ Save a Widget:
 
 Find another Widget:
 
-```
+```csharp
 [repository findWithId:@2
               success:^(LBModel *model) {
                   Widget *pen = (Widget *)model;
@@ -231,7 +234,7 @@ Find another Widget:
 
 Remove a Widget:
 
-```
+```csharp
 [pencil destroyWithSuccess:^{
                        // No more pencil. Long live Pen!
                    }

@@ -9,15 +9,12 @@ permalink: /doc/en/lb2/AngularJS-JavaScript-SDK.html
 summary:
 ---
 
-**See also**:
-
-* [loopback-example-angular](https://github.com/strongloop/loopback-example-angular)
-* [Angular SDK built-in models API](http://apidocs.strongloop.com/loopback-sdk-angular/)
-
 {% include note.html content="
-The LoopBack AngularJS SDK is installed when you [installing StrongLoop tools](Installing-StrongLoop.html)." %}
+The LoopBack AngularJS SDK is installed when you [installing StrongLoop tools](Installing-StrongLoop.html).
+" %}
 
-{% include important.html content="The AngularJS SDK requires Angular version 1.2.0 or newer." %}
+{% include important.html content="The AngularJS SDK requires Angular version 1.2.0 or newer.
+" %}
 
 ## Introduction
 
@@ -64,7 +61,8 @@ At runtime, the generated lbServices module (`lb-services.js`) depends on the An
 Use the LoopBack Angular command-line tool, `lb-ng`, to generate the Angular client library for your LoopBack application.
 
 {% include tip.html content="
-Any time you modify or add models to your LoopBack app, you must re-run `lb-ng` to re-generate the Angular client library to reflect the changes." %}
+Any time you modify or add models to your LoopBack app, you must re-run `lb-ng` to re-generate the Angular client library to reflect the changes.
+" %}
 
 For example, if your application has the [standard LoopBack project layout](/doc/{{page.lang}}/lb2/Project-layout-reference.html),
 then in the `/client` sub-directory, enter these commands:
@@ -82,7 +80,8 @@ In this example:
 
 {% include important.html content="
 If you want the AngularJS files to be somewhere else at runtime, then after generating the JavaScript file as shown above,
-simply copy it to the desired location and reference that location in your `index.html` file or equivalent." %}
+simply copy it to the desired location and reference that location in your `index.html` file or equivalent.
+" %}
 
 The SDK also provides a tool to generate API documentation for the AngularJS services;
 see [Generating Angular API docs](/doc/{{page.lang}}/lb2/Generating-Angular-API-docs.html) for more information.
@@ -120,16 +119,15 @@ There is one service for each model class, with the same name as the model name 
 On top of the standard get/save/query/remove methods, the service includes functions for calling every method exposed by the remote model (for example, `User.login()`).
 
 {% include important.html content="
-
 AngularJS model names start always with a capital letter, even if your server definition starts with a lower-case letter.
-
 " %}
 
 ### Setup
 
 {% include note.html content="
 The generated lbServices module (`lb-services.js`) depends on the Angular resource script (`angular-resource.js`) so you must ensure that your page has
-`<script src=\"angular-resource.js\"></script>` if you don't have it already." %}
+`<script src=\"angular-resource.js\"></script>` if you don't have it already.
+" %}
 
 Follow these steps to use the generated services inside your AngularJS application:
 
@@ -138,7 +136,8 @@ Follow these steps to use the generated services inside your AngularJS applicat
     `<script src="js/lb-services.js"></script>`
 
     {% include note.html content="You'll need to set up static middleware to serve the client script.
-    See [Defining middleware](Defining-middleware.html) for more information." %}
+    See [Defining middleware](Defining-middleware.html) for more information.
+    " %}
 
 2.  Register the AngularJS module `lbServices` as a dependency of your app.
     Add `'lbServices'` to the `angular.module()` call in  the main JavaScript file of your Angular (client) app, as follows:

@@ -39,4 +39,5 @@ is now exposed at:
 {% include important.html content="
 Changing the API root in this way doesn't affect routes set in 
 [request-handling middleware](Defining-middleware.html#request-handling-middleware) or the route to
-[API Explorer](Use-API-Explorer.html) itself, which remains `http://localhost:3000/explorer`. " %}
+[API Explorer](Use-API-Explorer.html) itself, which remains `http://localhost:3000/explorer`.
+" %}

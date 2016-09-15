@@ -81,7 +81,8 @@ If the download doesn't start, click the **Click here** link, then on the next
 
 Run the installer, check "Visual C--" under "Programming Languages", and accept the default location.
 
-{% include note.html content="This installation may take a long time." %}
+{% include note.html content="This installation may take a long time.
+" %}
 
 ## MacOS
 

@@ -16,7 +16,8 @@ See [Creating model relations](/doc/{{page.lang}}/lb2/Creating-model-relations.
 
 The value of the include filter can be a string, an array, or an object.
 
-{% include important.html content="You can use an _include_ filter with `find(),` `findOne()` and `findById()`." %}
+{% include important.html content="You can use an _include_ filter with `find(),` `findOne()` and `findById()`.
+" %}
 
 ### **REST API**
 

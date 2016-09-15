@@ -24,7 +24,8 @@ These are all methods of [PersistedModel](https://apidocs.strongloop.com/loopbac
 Using operation hooks enables you to intercept actions that modify data independent of the specific method that invokes them (for example, `create`, `save`, or `updateOrCreate`).
 
 {% include note.html content="
-In general, use operation hooks instead of deprecated [model hooks](Model-hooks.html) to do something when a model performs a specific operation." %}
+In general, use operation hooks instead of deprecated [model hooks](Model-hooks.html) to do something when a model performs a specific operation.
+" %}
 
 The API is simple: the method `Model.observe(_name_, _observer_)`, where _`name`_ is the string name of the operation hook, for example "before save",
 and _`observer`_ is `function observer(context, callback)`. Child models inherit observers, and you can register multiple observers for a hook.
@@ -230,8 +231,8 @@ Some operations provide a flag to distinguish between a CREATE operation and an 
 See the documentation of individual hooks for more information.
 
 {% include important.html content="
-Only certain connectors support `ctx.isNewInstance`. With other connectors it is undefined.
-See [Checking for support of ctx.isNewInstance](#checking-for-support-ofctxisnewinstance)." %}
+Only certain connectors support `ctx.isNewInstance`. With other connectors it is undefined.  See [Checking for support of ctx.isNewInstance](#checking-for-support-ofctxisnewinstance).
+" %}
 
 ##### currentInstance
 
@@ -424,7 +425,8 @@ Observers may modify the query, for example by adding extra restrictions.
 Prototype methods don't trigger the `access` hook because the hook was already triggered by the method that loaded the model instance from the database.
 
 For example, when you call a prototype method via the REST API, two model calls are made: static `findById()`
-(that triggers the \"access\" hook) and then the prototype method as requested." %}
+(that triggers the \"access\" hook) and then the prototype method as requested.
+" %}
 
 Context properties
 
@@ -464,7 +466,8 @@ since they cannot determine in advance whether the model will be created or not.
 The hook is triggered _before_ [model validation](/doc/{{page.lang}}/lb2/Validating-model-data.html) functions are called.
 
 {% include tip.html content="
-Since the `before save` hook is triggered before validators are called, you can use it to ensure that empty or missing values are filled with default values." %}
+Since the `before save` hook is triggered before validators are called, you can use it to ensure that empty or missing values are filled with default values.
+" %}
 
 Depending on which method triggered this hook, the context will have one of the following sets of properties:
 
@@ -606,7 +609,8 @@ The `after save` hook provides the `ctx.isNewInstance` property whenever `c
 
 {% include important.html content="
 Only certain connectors support `ctx.isNewInstance`. With other connectors it is undefined.
-See [Checking for support of ctx.isNewInstance](#Checking-for-support-of-ctx.isNewInstance)." %}
+See [Checking for support of ctx.isNewInstance](#Checking-for-support-of-ctx.isNewInstance).
+" %}
 
 #### Embedded relations
 
@@ -642,7 +646,8 @@ The `before delete` hook is triggered before a model is removed from a dataso
 
 {% include important.html content="
 The `before delete` operation hook does not receive a list of deleted model instance IDs, because backend data stores such as relational or NoSQL databases don't provide this information.
-However, _when deleting a single model instance_ the hook receives `ctx.where` that contains the `id` of the instance being deleted" %}
+However, _when deleting a single model instance_ the hook receives `ctx.where` that contains the `id` of the instance being deleted
+" %}
 
 Context properties
 
@@ -680,7 +685,8 @@ if (subscriptions.length > 0) {
 
 {% include important.html content="
 The `after delete` operation hooks do not receive a list of deleted model instance IDs, because backend data stores such as relational or
-NoSQL databases don't provide this information. However, _when deleting a single model instance_ the hook receives `ctx.instance` that contains the instance being deleted." %}
+NoSQL databases don't provide this information. However, _when deleting a single model instance_ the hook receives `ctx.instance` that contains the instance being deleted.
+" %}
 
 The `after delete` hook is triggered after some models are removed from the datasource, specifically when the following methods of PersistedModel are called:
 
@@ -720,7 +726,8 @@ This hook is triggered by the following methods of PersistedModel:
 * [`prototype.updateAttributes()`](https://apidocs.strongloop.com/loopback/#persistedmodel-prototype-updateattributes)
 
 {% include important.html content="
-By default, `create` and `updateAttributes` do not apply database updates to the model instance returned to the callback, therefore any changes made by \"loaded\" hooks are discarded. To change this behavior, set a per-model option `updateOnLoad: true`. " %}
+By default, `create` and `updateAttributes` do not apply database updates to the model instance returned to the callback, therefore any changes made by \"loaded\" hooks are discarded. To change this behavior, set a per-model option `updateOnLoad: true`.
+" %}
 
 LoopBack invokes this hook after the connector fetches data, but before creating a model instance from that data.
 This enables hooks to decrypt data (for example). NOTE: This hook is called with the raw database data, not a full model instance.
@@ -773,7 +780,8 @@ For this hook, `ctx.isNewInstance` is:
 {% include important.html content="
 `afterInitialize` is not strictly an operation hook. It is actually the only [model hook](Model-hooks.html) that is not deprecated.
 
-It is a synchronous method and does not take a callback function: You do not need to call `next()` after performing your logic in the hook." %}
+It is a synchronous method and does not take a callback function: You do not need to call `next()` after performing your logic in the hook.
+" %}
 
 This hook is called after a model is initialized.
 

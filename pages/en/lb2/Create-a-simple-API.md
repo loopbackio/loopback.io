@@ -48,7 +48,8 @@ _-----_
 ```
 
 {% include note.html content="
-You can use a different name for the application, but if you do, be sure to substitute your name for \"loopback-getting-started\" throughout the rest of this tutorial." %}
+You can use a different name for the application, but if you do, be sure to substitute your name for \"loopback-getting-started\" throughout the rest of this tutorial.
+" %}
 
 The generator will scaffold the application including:
 
@@ -169,8 +170,8 @@ End the model creation process by pressing **Enter** when prompted for the nam
 The model generator will create two files in the application's `common/models` directory that define the model: `coffee-shop.json` and `coffee-shop.js`.
 
 {% include important.html content="
-
-The LoopBack [model generator](Model-generator.html),automatically converts camel-case model names (for example MyModel) to lowercase dashed names (my-model).  For example, if you create a model named \"FooBar\" with the model generator, it creates files `foo-bar.json` and `foo-bar.js` in `common/models`.  However, the model name (\"FooBar\") will be preserved via the model's name property." %}
+The LoopBack [model generator](Model-generator.html),automatically converts camel-case model names (for example MyModel) to lowercase dashed names (my-model).  For example, if you create a model named \"FooBar\" with the model generator, it creates files `foo-bar.json` and `foo-bar.js` in `common/models`.  However, the model name (\"FooBar\") will be preserved via the model's name property.
+" %}
 
 ## Check out the project structure
 
@@ -188,7 +189,8 @@ Web server listening at: http://0.0.0.0:3000/
 ```
 
 {% include note.html content="
-Running your app with the `node` command is appropriate when you're developing on your local machine. " %}
+Running your app with the `node` command is appropriate when you're developing on your local machine.
+" %}
 
 Open your browser to [http://0.0.0.0:3000/](http://0.0.0.0:3000/) (on some systems, you may need to use [http://localhost:3000](http://localhost:3000/) instead).  You'll see the default application response that displays some JSON with some status information; for example:
 

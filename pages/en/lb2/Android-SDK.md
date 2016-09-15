@@ -2,6 +2,7 @@
 title: "Android SDK"
 lang: en
 layout: page
+toc: false
 keywords: LoopBack
 tags:
 sidebar: lb2_sidebar
@@ -16,9 +17,12 @@ summary:
 * [loopback-android-getting-started](https://github.com/strongloop/loopback-android-getting-started)
 " %}
 
+{% include toc.html %}
+
 The Android SDK provides a simple Java API that enables your Android app to access a
 [Using LoopBack with IBM API Connect](/doc/{{page.lang}}/lb2/Using-LoopBack-with-IBM-API-Connect.html) server application.
 It enables you to interact with your models and data sources in a comfortable native manner instead of using clunky interfaces like `AsyncHttpClient`, `JSONObject`. 
+
 **[Download Android SDK](http://81b70ddedaf4b27b1592-b5e75689411476c98957e7dab0242f50.r56.cf2.rackcdn.com/loopback-sdk-android-1.5.3-eclipse-bundle.zip)**
 
 {% include warning.html content="
@@ -26,13 +30,19 @@ Please ensure you have the latest version (1.5) of the Android SDK.
 If you are using Eclipse, you will have a `lib/loopback-sdk-android-x.y.z.jar` library,
 where x.y.z is the version.
 If you are using Android Studio with gradle-based builds, then you have a dependency
-entry specifying the SDK version." %}
+entry specifying the SDK version.
+" %}
 
-{% include image.html file="9830422.png" alt="" %} {% include image.html file="9830423.png" alt="" %}
-
-{% include image.html file="9830424.png" alt="" %} {% include image.html file="9830421.png" alt="" %}
-
-{% include image.html file="9830420.png" alt="" %} {% include image.html file="9830419.png" alt="" %}
+<div style="float: right;">
+{% include image.html file="9830422.png" alt="" max-width="200" %}
+{% include image.html file="9830423.png" alt="" max-width="200" %}
+<br/>
+{% include image.html file="9830424.png" alt="" max-width="200" %}
+{% include image.html file="9830421.png" alt="" max-width="200" %}
+<br/>
+{% include image.html file="9830420.png" alt="" max-width="200"%}
+{% include image.html file="9830419.png" alt="" max-width="200"%}
+</div>
 
 ## Getting started with the guide app
 
@@ -169,7 +179,7 @@ Follow these steps to add LoopBack SDK to your Eclipse project:
 
     **build.gradle in project root**
 
-    ```
+    ```java
     repositories { 
         jcenter() 
     }
@@ -177,7 +187,7 @@ Follow these steps to add LoopBack SDK to your Eclipse project:
 
 3.  Add `com.strongloop:loopback-sdk-android:1.5.-` to your compile dependencies:
 
-    ```
+    ```java
     dependencies { 
         compile 'com.strongloop:loopback-sdk-android:1.5.-' 
     }
@@ -197,7 +207,7 @@ For the complete API documentation, see [LoopBack Android API](http://apidocs.s
 2.  Once you have access to `adapter` (for the sake of example, assume the Adapter is available through our Fragment subclass),
     you can create basic `Model` and `ModelRepository` objects. Assuming you've  previously created a [LoopBack model](/doc/{{page.lang}}/lb2/Defining-models.html) named "product":
 
-    ```
+    ```java
     ModelRepository productRepository = adapter.createRepository("product");
     Model pen = productRepository.createObject( ImmutableMap.of("name", "Awesome Pen") );
     ```
@@ -225,7 +235,7 @@ As with any Java class, the first step is to build the interface.
 If you leave custom behavior for later, then it's just a few property declarations and you're ready for the implementation.
 In this simple example, each widget has a way to be identified and a price.
 
-```
+```java
 import java.math.BigDecimal;
 import com.strongloop.android.loopback.Model;
 
@@ -278,7 +288,7 @@ Use this to make creating Models easier. Match the name or create your own.
 
 Since `ModelRepository` provides a basic implementation, you need only override its constructor to provide the appropriate name.
 
-```
+```java
 public class WidgetRepository extends ModelRepository<Widget> {
     public WidgetRepository() {
         super("widget", Widget.class);
@@ -304,14 +314,14 @@ Now you have a `WidgetRepository` instance, you can:
 
 Create a `Widget`:
 
-```
+```java
 Widget pencil = repository.createObject(ImmutableMap.of("name", "Pencil"));
 pencil.price = new BigDecimal("1.50");
 ```
 
 Save the `Widget`:
 
-```
+```java
 pencil.save(new VoidCallback() {
     @Override
     public void onSuccess() {
@@ -327,7 +337,7 @@ pencil.save(new VoidCallback() {
 
 Find another `Widget`:
 
-```
+```java
 repository.findById(2, new ObjectCallback<Widget>() {
     @Override
     public void onSuccess(Widget widget) {
@@ -342,7 +352,7 @@ repository.findById(2, new ObjectCallback<Widget>() {
 
 Remove a `Widget`:
 
-```
+```java
 pencil.destroy(new VoidCallback() {
     @Override
     public void onSuccess() {
@@ -370,7 +380,7 @@ The Android SDK comes with a predefined implementation of UserRepository that 
 However, you cannot use `UserRepository<User>` directly, because the Java runtime removes types from generic instances and therefore there is no way to pass the
 `User` class to the `UserRepository` instance created via `createRepository`. So you must create a specialized subclass:
 
-```
+```java
 package com.example.myproject;
 // Optional, you can use LoopBack's User class too
 public static class User extends com.strongloop.android.loopback.User {
@@ -388,7 +398,7 @@ public static class UserRepository·
 
 Then use it as follows: 
 
-```
+```java
 RestAdapter restAdapter = new RestAdapter("http://myserver:3000/api");
 import com.example.myproject;
 UserRepository userRepo = restAdapter.createRepository(UserRepository.class);
@@ -397,7 +407,7 @@ User user = userRepo.createUser("name@example.com", "password");
 
 Or, to log in the user:
 
-```
+```java
 @Override
 protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
@@ -448,7 +458,7 @@ The `loginUser()` method returns an access token.
 The `RestAdapter` stores the access token in and uses it for all subsequent requests.
 Because it stores the value in `SharedPreferences`, it preserves the value across application restarts.
 
-```
+```java
 userRepo.logout(new VoidCallback() {
     @Override
     public void onSuccess() {
@@ -474,7 +484,7 @@ Call `findCurrentUser` when your application starts. Then you can use the sync
 
 Example of using the `findCurrentUser()` method:
 
-```
+```java
 userRepo.findCurrentUser(new ObjectCallback<User>() {
     @Override
     public void onSuccess(User user) {
@@ -489,7 +499,7 @@ userRepo.findCurrentUser(new ObjectCallback<User>() {
 
 Example of using the `getCachedCurrentUser()` method:
 
-```
+```java
 User currentUser = userRepo.getCachedCurrentUser();
 if (currentUser != null) {
     // logged in
@@ -520,7 +530,7 @@ Consider the example of an e-shop, where the user is modeled as a `Customer`, w
 To access your customer model from the Android app,
 extend the `UserRepository` and `User` classes as you extend `ModelRepository` and `Model` when creating any other model class.
 
-```
+```java
 public class Customer extends User {
     private String address;
     public String getAddress() { return address; }
@@ -539,7 +549,7 @@ public class CustomerRepository extends UserRepository<Customer> {
 
 Now you can login a customer and access the corresponding address:
 
-```
+```java
 CustomerRepository customerRepo = restAdapter.createRepository(CustomerRepository);
 
 customerRepo.loginUser("user@example.com", "password",

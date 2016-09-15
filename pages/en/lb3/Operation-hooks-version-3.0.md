@@ -11,11 +11,11 @@ summary: Numerous changes were made to operation hooks in LoopBack version 3.0.
 
 **See also**:
 
-* [Remote methods](/doc/en/lb2/Remote-methods.html)
-* [Remote hooks](/doc/en/lb2/Remote-hooks.html)
-* [Model hooks](/doc/en/lb2/Model-hooks.html)
-* [Connector hooks](/doc/en/lb2/Connector-hooks.html)
-* [Tutorial: Adding application logic](/doc/en/lb2/Tutorial-Adding-application-logic.html)
+* [Remote methods](/doc/{{page.lang}}/lb2/Remote-methods.html)
+* [Remote hooks](/doc/{{page.lang}}/lb2/Remote-hooks.html)
+* [Model hooks](/doc/{{page.lang}}/lb2/Model-hooks.html)
+* [Connector hooks](/doc/{{page.lang}}/lb2/Connector-hooks.html)
+* [Tutorial: Adding application logic](/doc/{{page.lang}}/lb2/Tutorial-Adding-application-logic.html)
 
 ## Overview
 
@@ -24,9 +24,7 @@ These are all methods of [PersistedModel](https://apidocs.strongloop.com/loopbac
 Using operation hooks enables you to intercept actions that modify data independent of the specific method that invokes them (for example, `create`, `save`, or `updateOrCreate`).
 
 {% include note.html content="
-
-In general, use operation hooks instead of deprecated [model hooks](/doc/en/lb2/Model-hooks.html) to do something when a model performs a specific operation.
-
+In general, use operation hooks instead of deprecated [model hooks](Model-hooks.html) to do something when a model performs a specific operation.
 " %}
 
 The API is simple: the method `Model.observe(_name_, _observer_)`, where _`name`_ is the string name of the operation hook, for example "before save",
@@ -184,7 +182,7 @@ and _`observer`_ is `function observer(context, callback)`. Child models inher
 ### Operation hook context object
 
 The `context` object is specific to operation hooks and does not have any relation to the context object passed to remote hooks registered via
-`Model.beforeRemote` and `Model.afterRemote`. See [Remote hooks](/doc/en/lb2/Remote-hooks.html) for more information.
+`Model.beforeRemote` and `Model.afterRemote`. See [Remote hooks](/doc/{{page.lang}}/lb2/Remote-hooks.html) for more information.
 Note that the context object is not related to the "current context" provided by `loopback.getCurrentContext()` either.
 
 #### Properties common for all hooks and operations
@@ -251,7 +249,7 @@ for example `PersistedModel.create()`.
 ##### where + data
 
 When the operation affects multiple instances (e.g. `PersistedModel.updateAll()`) _or_ performs a partial update of a subset of model properties
-(e.g. `PersistedModel.prototype.updateAttributes()`), the context provides a [where filter](/doc/en/lb2/Where-filter.html)
+(e.g. `PersistedModel.prototype.updateAttributes()`), the context provides a [where filter](/doc/{{page.lang}}/lb2/Where-filter.html)
 used to find the affected records and plain `data` object containing the changes to be made.
 
 ##### isNewInstance
@@ -259,10 +257,8 @@ used to find the affected records and plain `data` object containing the changes
 Some operations provide a flag to distinguish between a CREATE operation and an UPDATE operation. See the documentation of individual hooks for more information.
 
 {% include important.html content="
-
 Only certain connectors support `ctx.isNewInstance`. With other connectors it is undefined.
-See [Checking for support of ctx.isNewInstance](/doc/en/lb2/Operation-hooks-version-3.0-.html).
-
+See [Checking for support of ctx.isNewInstance](Operation-hooks-version-3.0-.html).
 " %}
 
 ##### currentInstance
@@ -404,13 +400,13 @@ See the following sections for more details.
 
 LoopBack provides the following operation hooks:
 
-* [access](/doc/en/lb2/Operation-hooks.html#Operationhooks-access)
-* [before save](/doc/en/lb2/Operation-hooks.html#Operationhooks-beforesave)
-* [after save](/doc/en/lb2/Operation-hooks.html#Operationhooks-aftersave)
-* [before delete](/doc/en/lb2/Operation-hooks.html#Operationhooks-beforedelete)
-* [after delete](/doc/en/lb2/Operation-hooks.html#Operationhooks-afterdelete)
-* [loaded](/doc/en/lb2/Operation-hooks.html#Operationhooks-loaded)
-* [persist](/doc/en/lb2/Operation-hooks.html#Operationhooks-persist)
+* [access](/doc/{{page.lang}}/lb2/Operation-hooks.html#Operationhooks-access)
+* [before save](/doc/{{page.lang}}/lb2/Operation-hooks.html#Operationhooks-beforesave)
+* [after save](/doc/{{page.lang}}/lb2/Operation-hooks.html#Operationhooks-aftersave)
+* [before delete](/doc/{{page.lang}}/lb2/Operation-hooks.html#Operationhooks-beforedelete)
+* [after delete](/doc/{{page.lang}}/lb2/Operation-hooks.html#Operationhooks-afterdelete)
+* [loaded](/doc/{{page.lang}}/lb2/Operation-hooks.html#Operationhooks-loaded)
+* [persist](/doc/{{page.lang}}/lb2/Operation-hooks.html#Operationhooks-persist)
 
 The following table lists hooks that PersistedModel methods invoke.
 
@@ -472,7 +468,7 @@ The following table lists hooks that PersistedModel methods invoke.
   </tbody>
 </table>
 
-(*) When `findOrCreate` finds an existing model, the save hooks are not triggered.
+(&#42;) When `findOrCreate` finds an existing model, the save hooks are not triggered.
 However, connectors providing atomic implementation may trigger `before save` hook even when the model is not created,
 since they cannot determine in advance whether the model will be created or not.
 
@@ -483,12 +479,10 @@ and delete method of [PersistedModel](https://apidocs.strongloop.com/loopback/#p
 Observers may modify the query, for example by adding extra restrictions.
 
 {% include note.html content="
-
 Prototype methods don't trigger the `access` hook because the hook was already triggered by the method that loaded the model instance from the database.
 
 For example, when you call a prototype method via the REST API, two model calls are made: static `findById()`
 (that triggers the \"access\" hook) and then the prototype method as requested.
-
 " %}
 
 Context properties
@@ -523,16 +517,14 @@ The `before save` hook is triggered before a model instance is modified (crea
 * [replaceOrCreate()](https://apidocs.strongloop.com/loopback/#persistedmodel-replaceorcreate)
 * [prototype.replaceById()](https://apidocs.strongloop.com/loopback/#persistedmodel-replacebyid) / [replaceAttributes()](https://apidocs.strongloop.com/loopback/#persistedmodel-prototype-replaceattributes)
 
-(*) When `findOrCreate` finds an existing model, the save hooks are not triggered.
+(&#42;) When `findOrCreate` finds an existing model, the save hooks are not triggered.
 However, connectors providing atomic implementation may trigger `before save` hook even when the model is not created,
 since they cannot determine in advance whether the model will be created or not.
 
-The hook is triggered _before_ [model validation](/doc/en/lb2/Validating-model-data.html) functions are called.
+The hook is triggered _before_ [model validation](/doc/{{page.lang}}/lb2/Validating-model-data.html) functions are called.
 
 {% include tip.html content="
-
 Since the `before save` hook is triggered before validators are called, you can use it to ensure that empty or missing values are filled with default values.
-
 " %}
 
 Depending on which method triggered this hook, the context will have one of the following sets of properties:
@@ -545,7 +537,7 @@ Depending on which method triggered this hook, the context will have one of the 
   * `Model` - the constructor of the model that will be saved
   * `where` - the where filter describing which instances will be affected
   * `data` - the (partial) data to apply during the update
-  * `currentInstance` - the instance being affected, see [Triggering with prototype.updateAttributes](/doc/en/lb2/Operation-hooks-version-3.0-.html) below.
+  * `currentInstance` - the instance being affected, see [Triggering with prototype.updateAttributes](/doc/{{page.lang}}/lb2/Operation-hooks-version-3.0-.html) below.
 
 #### ctx.isNewInstance
 
@@ -557,7 +549,7 @@ The before save hook provides the `ctx.isNewInstance` property when `ctx.inst
 
 #### Embedded relations
 
-You can define a `before save` hook for a model that is [embedded in](/doc/en/lb2/Embedded-models-and-relations.html) another model.
+You can define a `before save` hook for a model that is [embedded in](/doc/{{page.lang}}/lb2/Embedded-models-and-relations.html) another model.
 Then, updating or creating an instance of the containing model will trigger the operation hook on the embedded model.
 When this occurs, `ctx.isNewInstance` is false, because only a new instance of the container model is created.
 
@@ -637,7 +629,7 @@ The `after save` hook is called after a model change was successfully persist
 * [prototye.replaceAttributes()](https://apidocs.strongloop.com/loopback/#persistedmodel-prototype-replaceattributes) / [replaceById()](https://apidocs.strongloop.com/loopback/#persistedmodel-replacebyid)
 * [replaceOrCreate()](https://apidocs.strongloop.com/loopback/#persistedmodel-replaceorcreate)
 
-(*) When `findOrCreate` finds an existing model, the save hooks are not triggered.
+(&#42;) When `findOrCreate` finds an existing model, the save hooks are not triggered.
 However, connectors providing atomic implementation may trigger `before save` hook even when the model is not created,
 since they cannot determine in advance whether the model will be created or not.
 
@@ -656,16 +648,13 @@ Depending on which method triggered this hook, the context will have one of the 
   * `where` - the where filter describing which instances were queried. See caveat below.
   * `data`- the (partial) data applied during the update. 
 
-    {% include important.html content="
-    You cannot reliably use the \"where\" query in an after save hook to find which models were affected. Consider the following call:
+    NOTE: You cannot reliably use the \"where\" query in an after save hook to find which models were affected. Consider the following call:
 
     ```javascript
     MyModel.updateAll({ color: 'yellow' }, { color: 'red' }, cb);
     ```
 
     At the time the \"after save\" hook is run, no records will match the query `{ color: 'yellow' }`.
-
-    " %}
 
 The `after save` hook provides the `ctx.isNewInstance` property whenever `ctx.instance` is set, with the following values:
 
@@ -677,12 +666,12 @@ The `after save` hook provides the `ctx.isNewInstance` property whenever `c
 
 {% include important.html content="
 Only certain connectors support `ctx.isNewInstace`. With other connectors it is undefined.
-See [Checking for support of ctx.isNewInstance](/doc/en/lb2/Operation-hooks-version-3.0-.html).
+See [Checking for support of ctx.isNewInstance](#checking-for-support-of-ctx.isnewinstance).
 " %}
 
 #### Embedded relations
 
-You can define an `after save` hook for a model that is [embedded in](/doc/en/lb2/Embedded-models-and-relations.html) another model.
+You can define an `after save` hook for a model that is [embedded in](/doc/{{page.lang}}/lb2/Embedded-models-and-relations.html) another model.
 Then, updating or creating an instance of the containing model will trigger the operation hook on the embedded model.
 When this occurs, `ctx.isNewInstance` is false, because only a new instance of the container model is created.
 
@@ -713,10 +702,8 @@ The `before delete` hook is triggered before a model is removed from a dataso
 * [`prototype.destroy()`](https://apidocs.strongloop.com/loopback/#persistedmodel-prototype-destroy) (same as `prototype.delete()`)
 
 {% include important.html content="
-
 The `before delete` operation hook does not receive a list of deleted model instance IDs, because backend data stores such as relational or NoSQL databases don't provide this information.
 However, _when deleting a single model instance_ the hook receives `ctx.instance` that contains the instance being deleted.
-
 " %}
 
 Context properties
@@ -754,10 +741,8 @@ if (subscriptions.length > 0) {
 ### after delete
 
 {% include important.html content="
-
 The `after delete` operation hooks do not receive a list of deleted model instance IDs, because backend data stores such as relational or NoSQL databases don't provide this information.
 However, _when deleting a single model instance_ the hook receives `ctx.instance` that contains the instance being deleted.
-
 " %}
 
 The `after delete` hook is triggered after some models are removed from the datasource, specifically when the following methods of PersistedModel are called:
@@ -801,10 +786,8 @@ This hook is triggered by the following methods of PersistedModel:
   / [`replaceById()`](https://apidocs.strongloop.com/loopback/#persistedmodel-replacebyid)
 
 {% include important.html content="
-
 By default, `create` and `updateAttributes` do not apply database updates to the model instance returned to the callback,
 therefore any changes made by \"loaded\" hooks are discarded. To change this behavior, set a per-model option `updateOnLoad: true`.
-
 " %}
 
 LoopBack invokes this hook after the connector fetches data, but before creating a model instance from that data.
@@ -859,11 +842,9 @@ For this hook, `ctx.isNewInstance` is:
 ## afterInitialize hook
 
 {% include important.html content="
-
-`afterInitialize` is not strictly an operation hook. It is actually the only [model hook](/doc/en/lb2/Model-hooks.html) that is not deprecated.
+`afterInitialize` is not strictly an operation hook. It is actually the only [model hook](Model-hooks.html) that is not deprecated.
 
 It is a synchronous method and does not take a callback function: You do not need to call `next()` after performing your logic in the hook.
-
 " %}
 
 This hook is called after a model is initialized.
@@ -885,7 +866,7 @@ such as HTTP requests to the `exists`, `count`, or bulk update REST endpoints.
 
 ## Migration guide
 
-The following table shows which new hook to use for each of the old [model hooks](/doc/en/lb2/Model-hooks.html):
+The following table shows which new hook to use for each of the old [model hooks](/doc/{{page.lang}}/lb2/Model-hooks.html):
 
 <table>
   <thead>

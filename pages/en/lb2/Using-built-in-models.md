@@ -23,7 +23,8 @@ so they automatically have a full complement of create, update, and delete (CRUD
 
 {% include note.html content="
 By default, only the User model is exposed over REST. To expose the other models, change the model's `public` property to true in `server/model-config.json`.
-See [Exposing models](Exposing-models-over-REST.html) for more information. **Use caution**: exposing some of these models over public API may be a security risk." %}
+See [Exposing models](Exposing-models-over-REST.html) for more information. **Use caution**: exposing some of these models over public API may be a security risk.
+" %}
 
 ## Application model
 
@@ -37,7 +38,8 @@ The User model represents users of the application or API.
 The default model definition file is [common/models/user.json](https://github.com/strongloop/loopback/blob/master/common/models/user.json) in the LoopBack repository. 
 
 {% include important.html content="
-You must create your own custom model (named something other than \"User,\" for example \"Customer\" or \"Client\") that [extends the built-in User model](Extending-built-in-models.html) rather than use the built-in User model directly.  The built-in User model provides a great deal of commonly-used functionality that you can use via your custom model." %}
+You must create your own custom model (named something other than \"User,\" for example \"Customer\" or \"Client\") that [extends the built-in User model](Extending-built-in-models.html) rather than use the built-in User model directly.  The built-in User model provides a great deal of commonly-used functionality that you can use via your custom model.
+" %}
 
 For more information, see [Managing users](/doc/{{page.lang}}/lb2/Managing-users.html).
 
@@ -155,7 +157,8 @@ module.exports = function(MyModel) {
 The default model definition file is [common/models/email.json](https://github.com/strongloop/loopback/blob/master/common/models/email.json) in the LoopBack repository. 
 
 {% include important.html content="
-The mail connector uses [nodemailer](http://www.nodemailer.com/). See the [nodemailer docs](http://www.nodemailer.com/) for more information." %}
+The mail connector uses [nodemailer](http://www.nodemailer.com/). See the [nodemailer docs](http://www.nodemailer.com/) for more information.
+" %}
 
 ### Confirming email address
 

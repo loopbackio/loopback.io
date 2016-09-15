@@ -13,7 +13,8 @@ summary:
 ## LoopBack connectors SQL injection vulnerability
 
 {% include warning.html content="
-**If you installed LoopBack connectors for PostgreSQL, Microsoft SQL Server, Oracle, or MySQL prior to 9 Jan 2015** you need update the affected packages." %}
+**If you installed LoopBack connectors for PostgreSQL, Microsoft SQL Server, Oracle, or MySQL prior to 9 Jan 2015** you need update the affected packages.
+" %}
 
 -  **Date**: 09 Jan 2015 
 -  **Security risk**: Highly critical
