@@ -9,14 +9,13 @@ permalink: /doc/en/lb2/PostgreSQL-connector.html
 summary:
 ---
 
-**See also**:
-
+{% include see-also.html content="
 * [Connecting to PostgreSQL](/doc/{{page.lang}}/lb2/Connecting-to-PostgreSQL.html)
 * [loopback-example-database](https://github.com/strongloop/loopback-example-database/tree/postgresql)
 * [Database discovery API](http://apidocs.strongloop.com/loopback-datasource-juggler/#datasource-prototype-discoverandbuildmodels).
-
-{% include note.html content="The PostgreSQL connector requires PostgreSQL 8.x or 9.x.
 " %}
+
+{% include note.html content="The PostgreSQL connector requires PostgreSQL 8.x or 9.x." %}
 
 ## Installation
 
@@ -101,9 +100,7 @@ Edit `datasources.json` to add other properties that enable you to connect the
 </table>
 
 {% include important.html content="
-
 By default, the 'public' schema is used for all tables.
-
 " %}
 
 ### Connecting to UNIX domain socket

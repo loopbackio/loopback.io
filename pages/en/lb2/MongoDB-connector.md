@@ -9,25 +9,21 @@ permalink: /doc/en/lb2/MongoDB-connector.html
 summary:
 ---
 
-**See also**:
-
-* [Connecting to MongoDB](/doc/{{page.lang}}/lb2/Connecting-to-MongoDB.html)
-* [Using MongoLab](/doc/{{page.lang}}/lb2/Using-MongoLab.html)
+{% include see-also.html content="
+* [Connecting to MongoDB](Connecting-to-MongoDB.html)
+* [Using MongoLab](Using-MongoLab.html)
 * [loopback-example-database](https://github.com/strongloop/loopback-example-database)
+"%}
 
 {% include note.html content="
-
 The MongoDB connector requires MongoDB 2.6 - 3.x.
-
 " %}
 
 ## Installation
 
 {% include important.html content="
-
 The MongoDB connector indirectly uses [bson](https://www.npmjs.org/package/bson), that requires you to have a standard set of compiler tools on your system.
 See [Installing compiler tools](https://docs.strongloop.com/display/SL/Installing-compiler-tools) for details.
-
 " %}
 
 In your application root directory, enter:
@@ -113,9 +109,7 @@ Edit `datasources.json` to add other properties that enable you to connect the
 </table>
 
 {% include important.html content="
-
 Username and password are required only if the MongoDB server has authentication enabled.
-
 " %}
 
 For example:
@@ -147,9 +141,7 @@ For example:
 ## Using the MongoDB connector
 
 {% include warning.html content="
-
 LoopBack does not currently support property mapping for MongoDB; you can customize only collection names. 
-
 " %}
 
 ### Using MongoDB operators in update operations

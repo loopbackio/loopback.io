@@ -9,10 +9,10 @@ permalink: /doc/en/lb2/Defining-boot-scripts.html
 summary:
 ---
 
-**See also**:
-
-* [Adding logic to models](/doc/{{page.lang}}/lb2/Adding-logic-to-models.html)
-* [Defining middleware](/doc/{{page.lang}}/lb2/Defining-middleware.html)
+{% include see-also.html content="
+* [Adding logic to models](Adding-logic-to-models.html)
+* [Defining middleware](Defining-middleware.html)
+" %}
 
 ## Overview
 

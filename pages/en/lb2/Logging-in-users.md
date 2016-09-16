@@ -9,10 +9,10 @@ permalink: /doc/en/lb2/Logging-in-users.html
 summary:
 ---
 
-**See also**:
-
-* [Authentication, authorization, and permissions](/doc/{{page.lang}}/lb2/Authentication-authorization-and-permissions.html)
-* [Third-party login using Passport](/doc/{{page.lang}}/lb2/Third-party-login-using-Passport.html)
+{% include see-also.html content="
+* [Authentication, authorization, and permissions](Authentication-authorization-and-permissions.html)
+* [Third-party login using Passport](Third-party-login-using-Passport.html)
+"%}
 
 ## Login with the LoopBack User model
 

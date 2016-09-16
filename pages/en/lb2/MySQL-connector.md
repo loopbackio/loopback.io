@@ -9,18 +9,14 @@ permalink: /doc/en/lb2/MySQL-connector.html
 summary:
 ---
 
-**See also**:
-
-* [Connecting to MySQL](/doc/{{page.lang}}/lb2/Connecting-to-MySQL.html)
+{% include see-also.html content="
+* [Connecting to MySQL](Connecting-to-MySQL.html)
 * [loopback-example-database](https://github.com/strongloop/loopback-example-database/tree/mysql)
-* [Discovering models from relational databases](/doc/{{page.lang}}/lb2/Discovering-models-from-relational-databases.html)
-* [Database discovery API](/doc/{{page.lang}}/lb2/Database-discovery-API.html) 
+* [Discovering models from relational databases](Discovering-models-from-relational-databases.html)
+* [Database discovery API](Database-discovery-API.html) 
+"%}
 
-{% include note.html content="
-
-The MySQL connector requires MySQL 5.0-.
-
-" %}
+{% include note.html content="The MySQL connector requires MySQL 5.0+." %}
 
 ## Installation
 

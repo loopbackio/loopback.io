@@ -9,10 +9,10 @@ permalink: /doc/en/lb2/Push-notifications-using-Android-SDK.html
 summary:
 ---
 
-**See also**:
-
+{% include see-also.html content="
 * [Android SDK API docs](http://apidocs.strongloop.com/loopback-sdk-android/api/index.html)
 * [loopback-android-getting-started](https://github.com/strongloop/loopback-android-getting-started)
+" %}
 
 ## Overview
 

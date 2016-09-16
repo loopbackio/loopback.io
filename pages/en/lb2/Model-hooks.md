@@ -15,13 +15,13 @@ Model hooks are deprecated, except for [afterInitialize](#afterInitialize).
 Please use [operation hooks](Operation-hooks.html) instead.
 " %}
 
-**See also**:
-
-* [Remote methods](/doc/{{page.lang}}/lb2/Remote-methods.html)
-* [Remote hooks](/doc/{{page.lang}}/lb2/Remote-hooks.html)
-* [Operation hooks](/doc/{{page.lang}}/lb2/Operation-hooks.html)
-* [Connector hooks](/doc/{{page.lang}}/lb2/Connector-hooks.html)
-* [Tutorial: Adding application logic](/doc/{{page.lang}}/lb2/Tutorial-Adding-application-logic.html) 
+{% include see-also.html content="
+* [Remote methods](Remote-methods.html)
+* [Remote hooks](Remote-hooks.html)
+* [Operation hooks](Operation-hooks.html)
+* [Connector hooks](Connector-hooks.html)
+* [Tutorial: Adding application logic](Tutorial-Adding-application-logic.html) 
+"%}
 
 ## Overview
 
@@ -70,9 +70,7 @@ Most operations require initializing a model before actually performing an actio
 such as HTTP requests to the `exists`, `count`, or bulk update REST endpoints.
 
 {% include important.html content="
-
 This is the only hook that does not require you to explicitly call `next()` after performing your logic.
-
 " %}
 
 ## beforeValidate
@@ -92,17 +90,13 @@ CoffeeShop.beforeValidate = function(next, modelInstance) {
 ```
 
 {% include important.html content="
-
 In the beforeValidate hook, use `this` instead of `modelInstance` to get a reference to the model being validated. In this hook, `modelInstance` is not valid.
-
 " %}
 
 You must call `next()` to let LoopBack now you're ready to go on after the hook's logic has completed.
 
 {% include warning.html content="
-
 If you don't call `next()`, the application will appear to \"hang\".
-
 " %}
 
 ## afterValidate
@@ -182,7 +176,8 @@ CoffeeShop.beforeSave = function(next, modelInstance) {
 
 LoopBack provides `modelInstance` as a reference to the model being saved.
 
-You must call `next()` to continue execution after the hook completes its logic. If you don't the application will appear to hang.
+You must call `next()` to continue execution after the hook completes its logic.
+If you don't the application will appear to hang.
 
 ## afterSave
 
@@ -236,7 +231,7 @@ This hook is called after a model is updated.
 //...
 CoffeeShop.afterUpdate = function(next) {
   //your logic goes here
-  this.name = 'New coffee shop name; //you can access the created model via `this`
+  this.name = 'New coffee shop name'; //you can access the created model via `this`
   next();
 };
 //...

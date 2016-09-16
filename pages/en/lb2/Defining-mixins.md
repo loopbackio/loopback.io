@@ -9,10 +9,10 @@ permalink: /doc/en/lb2/Defining-mixins.html
 summary:
 ---
 
-**See also**:
-
+{% include see-also.html content="
 * [loopback-example-mixins](https://github.com/strongloop/loopback-example-mixins)
 * [loopback-ds-timestamp-mixin](https://www.npmjs.com/package/loopback-ds-timestamp-mixin)
+"%}
 
 ## Overview
 

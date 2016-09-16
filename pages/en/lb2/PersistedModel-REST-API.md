@@ -14,14 +14,14 @@ You can use the [StrongLoop API Explorer](Use-API-Explorer.html) to quickly cons
 to a LoopBack app running on the server. If a LoopBack app is running on `localhost` at port `3000`, then by default API Explorer is available at [http://localhost:3000/explorer/](http://localhost:3000/explorer/).
 " %}
 
-**See also**:
-
-* [Creating models](/doc/{{page.lang}}/lb2/Creating-models.html)
-* [Customizing models](/doc/{{page.lang}}/lb2/Customizing-models.html)
-* [Creating model relations](/doc/{{page.lang}}/lb2/Creating-model-relations.html)
-* [Querying data](/doc/{{page.lang}}/lb2/Querying-data.html)
-* [Model definition JSON file](/doc/{{page.lang}}/lb2/Model-definition-JSON-file.html)
-* [PersistedModel REST API](/doc/{{page.lang}}/lb2/PersistedModel-REST-API.html)
+{% include see-also.html content="
+* [Creating models](Creating-models.html)
+* [Customizing models](Customizing-models.html)
+* [Creating model relations](Creating-model-relations.html)
+* [Querying data](Querying-data.html)
+* [Model definition JSON file](Model-definition-JSON-file.html)
+* [PersistedModel REST API](PersistedModel-REST-API.html)
+" %}
 
 ## Overview
 

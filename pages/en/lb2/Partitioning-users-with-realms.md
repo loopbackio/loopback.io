@@ -9,10 +9,10 @@ permalink: /doc/en/lb2/Partitioning-users-with-realms.html
 summary:
 ---
 
-**See also**:
-
-* [Authentication, authorization, and permissions](/doc/{{page.lang}}/lb2/Authentication-authorization-and-permissions.html)
-* [Third-party login using Passport](/doc/{{page.lang}}/lb2/Third-party-login-using-Passport.html)
+{% include see-also.html content="
+* [Authentication, authorization, and permissions](Authentication-authorization-and-permissions.html)
+* [Third-party login using Passport](Third-party-login-using-Passport.html)
+" %}
 
 By default, the LoopBack User model manages all users in a global namespace. It does not isolate different applications.
 In some cases, you may want to partition users into multiple namespaces so that different applications have separate users. LoopBack uses _realms_ to support: 

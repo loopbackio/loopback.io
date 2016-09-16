@@ -16,11 +16,7 @@ summary:
 * [loopback-example-database](https://github.com/strongloop/loopback-example-database/tree/mssql)
 * [Database discovery API](http://apidocs.strongloop.com/loopback-datasource-juggler/#datasource-prototype-discoverandbuildmodels)
 
-{% include note.html content="
-
-The SQL Server connector requires SQL Server 2005-.
-
-" %}
+{% include note.html content="The SQL Server connector requires SQL Server 2005+." %}
 
 ## Installation
 
@@ -47,8 +43,6 @@ The generator will add the following entry to the `/server/datasources.json` f
 
 Edit `datasources.json` to add other properties that enable you to connect the data source to a SQL Server database.
 
-{% include warning.html content="
-
 To connect to a SQL Server instance running in Azure, you must specify a qualified user name with hostname, and add to the following to the data source declaration:
 
 ```javascript
@@ -56,8 +50,6 @@ To connect to a SQL Server instance running in Azure, you must specify a qualifi
    \"encrypt\": true
 }
 ```
-
-" %}
 
 ### Connector settings
 

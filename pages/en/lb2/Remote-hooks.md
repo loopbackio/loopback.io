@@ -9,13 +9,13 @@ permalink: /doc/en/lb2/Remote-hooks.html
 summary:
 ---
 
-**See also**:
-
+{% include see-also.html content="
 * [Remote methods](/doc/{{page.lang}}/lb2/Remote-methods.html)
 * [Operation hooks](/doc/{{page.lang}}/lb2/Operation-hooks.html)
 * [Model hooks](/doc/{{page.lang}}/lb2/Model-hooks.html)
 * [Connector hooks](/doc/{{page.lang}}/lb2/Connector-hooks.html)
 * [Tutorial: Adding application logic](/doc/{{page.lang}}/lb2/Tutorial-Adding-application-logic.html)
+" %}
 
 ## Overview
 

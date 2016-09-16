@@ -9,13 +9,13 @@ permalink: /doc/en/lb2/Operation-hooks.html
 summary:
 ---
 
-**See also**:
-
-* [Remote methods](/doc/{{page.lang}}/lb2/Remote-methods.html)
-* [Remote hooks](/doc/{{page.lang}}/lb2/Remote-hooks.html)
-* [Model hooks](/doc/{{page.lang}}/lb2/Model-hooks.html)
-* [Connector hooks](/doc/{{page.lang}}/lb2/Connector-hooks.html)
-* [Tutorial: Adding application logic](/doc/{{page.lang}}/lb2/Tutorial-Adding-application-logic.html)
+{% include see-also.html content="
+* [Remote methods](Remote-methods.html)
+* [Remote hooks](Remote-hooks.html)
+* [Model hooks](Model-hooks.html)
+* [Connector hooks](Connector-hooks.html)
+* [Tutorial: Adding application logic](Tutorial-Adding-application-logic.html)
+" %}
 
 ## Overview
 

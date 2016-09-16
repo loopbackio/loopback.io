@@ -9,10 +9,10 @@ permalink: /doc/en/lb2/Storage-component.html
 summary:
 ---
 
-**See also**:
-
+{% include see-also.html content="
 * [Storage component API docs](https://apidocs.strongloop.com/loopback-component-storage/)
-* [Storage component REST API](/doc/{{page.lang}}/lb2/Storage-component-REST-API.html)
+* [Storage component REST API](Storage-component-REST-API.html)
+" %}
 
 ## Overview
 

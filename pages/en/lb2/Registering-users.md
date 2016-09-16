@@ -9,10 +9,10 @@ permalink: /doc/en/lb2/Registering-users.html
 summary:
 ---
 
-**See also**:
-
-* [Authentication, authorization, and permissions](/doc/{{page.lang}}/lb2/Authentication-authorization-and-permissions.html)
-* [Third-party login using Passport](/doc/{{page.lang}}/lb2/Third-party-login-using-Passport.html)
+{% include see-also.html content="
+* [Authentication, authorization, and permissions](Authentication-authorization-and-permissions.html)
+* [Third-party login using Passport](Third-party-login-using-Passport.html)
+" %}
 
 The LoopBack User model provides methods to register new users and confirm their email addresses.
 You can also use the loopback-component-passport module to integrate login with Facebook, Google, and other third-party providers.
@@ -57,12 +57,10 @@ A good way to do this is to add methods as beforeRemote hooks on the User objec
 
 ### Verifying email addresses
 
-**See also**:
-
-More information on Email model:
-
+{% include see-also.html content="
 * [Using the Email model](/doc/{{page.lang}}/lb2/Using-built-in-models.html#Usingbuilt-inmodels-Emailmodel)
 * [Email connector](/doc/{{page.lang}}/lb2/Email-connector.html)
+" %}
 
 Typically, an application will require users to verify their email addresses before being able to login.
 This will send an email to the user containing a link to verify their address.

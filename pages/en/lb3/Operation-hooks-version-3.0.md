@@ -9,13 +9,13 @@ permalink: /doc/en/lb3/Operation-hooks-version-3.0.html
 summary: Numerous changes were made to operation hooks in LoopBack version 3.0.
 ---
 
-**See also**:
-
+{% include see-also.html content="
 * [Remote methods](/doc/{{page.lang}}/lb2/Remote-methods.html)
 * [Remote hooks](/doc/{{page.lang}}/lb2/Remote-hooks.html)
 * [Model hooks](/doc/{{page.lang}}/lb2/Model-hooks.html)
 * [Connector hooks](/doc/{{page.lang}}/lb2/Connector-hooks.html)
 * [Tutorial: Adding application logic](/doc/{{page.lang}}/lb2/Tutorial-Adding-application-logic.html)
+" %}
 
 ## Overview
 

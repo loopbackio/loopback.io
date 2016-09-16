@@ -10,15 +10,15 @@ summary:
 ---
 {% include content/angular-methods-caveat.html lang=page.lang %}
 
-**See also**:
-
-* [Fields filter](/doc/{{page.lang}}/lb2/Fields-filter.html)
-* [Include filter](/doc/{{page.lang}}/lb2/Include-filter.html)
-* [Limit filter](/doc/{{page.lang}}/lb2/Limit-filter.html)
-* [Order filter](/doc/{{page.lang}}/lb2/Order-filter.html)
-* [Skip filter](/doc/{{page.lang}}/lb2/Skip-filter.html)
-* [Where filter](/doc/{{page.lang}}/lb2/Where-filter.html)
-* [Querying related models](/doc/{{page.lang}}/lb2/Querying-related-models.html).
+{% include see-also.html content="
+* [Fields filter](Fields-filter.html)
+* [Include filter](Include-filter.html)
+* [Limit filter](Limit-filter.html)
+* [Order filter](Order-filter.html)
+* [Skip filter](Skip-filter.html)
+* [Where filter](Where-filter.html)
+* [Querying related models](Querying-related-models.html).
+" %}
 
 ## Overview
 

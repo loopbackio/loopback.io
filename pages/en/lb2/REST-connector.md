@@ -9,10 +9,10 @@ permalink: /doc/en/lb2/REST-connector.html
 summary:
 ---
 
-**See also**:
-
+{% include see-also.html content="
 * [REST connector API doc](http://apidocs.strongloop.com/loopback-connector-rest/)
 * [Example](https://github.com/strongloop/loopback-example-connector/tree/rest)
+" %}
 
 ## Overview
 
