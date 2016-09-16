@@ -56,4 +56,19 @@ $ npm i
 $ node get-readmes --repos=../_data --out=../_includes/readmes
 ```
 From there, the README markdown files are incorporated into documentation articles
-using the standard Jekyll "include" syntax.
+using the standard Jekyll "include" syntax as follows (for example):
+```
+---
+title: "Angular example app"
+lang: en
+layout: readme
+source: loopback-example-angular
+keywords: LoopBack
+tags:
+sidebar: lb2_sidebar
+permalink: /doc/en/lb2/Angular-example-app.html
+summary: A brief tutorial on creating an Angular client app using the Loopback AngularJS SDK.
+---
+
+{% include readmes/loopback-example-angular.md %}
+```

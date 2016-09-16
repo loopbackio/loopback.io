@@ -1,4 +1,4 @@
-trrrc# 1st-level entry: 3
+# 1st-level entry: 3
 # 2nd-level entry: 5
 # 3rd-level folder (container only): 7
 # 3rd-level entry: 9
@@ -272,6 +272,7 @@ entries:
 
       subfolders:
       - title: 'Creating model relations'
+        url: /doc/en/lb2/Creating-model-relations.html
         output: 'web'
         subfolderitems:
 
