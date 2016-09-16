@@ -58,8 +58,8 @@ A good way to do this is to add methods as beforeRemote hooks on the User objec
 ### Verifying email addresses
 
 {% include see-also.html content="
-* [Using the Email model](/doc/{{page.lang}}/lb2/Using-built-in-models.html#Usingbuilt-inmodels-Emailmodel)
-* [Email connector](/doc/{{page.lang}}/lb2/Email-connector.html)
+* [Using the Email model](Using-built-in-models.html#Usingbuilt-inmodels-Emailmodel)
+* [Email connector](Email-connector.html)
 " %}
 
 Typically, an application will require users to verify their email addresses before being able to login.

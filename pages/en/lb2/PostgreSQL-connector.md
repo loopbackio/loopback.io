@@ -10,7 +10,7 @@ summary:
 ---
 
 {% include see-also.html content="
-* [Connecting to PostgreSQL](/doc/{{page.lang}}/lb2/Connecting-to-PostgreSQL.html)
+* [Connecting to PostgreSQL](Connecting-to-PostgreSQL.html)
 * [loopback-example-database](https://github.com/strongloop/loopback-example-database/tree/postgresql)
 * [Database discovery API](http://apidocs.strongloop.com/loopback-datasource-juggler/#datasource-prototype-discoverandbuildmodels).
 " %}
