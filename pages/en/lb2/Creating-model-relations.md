@@ -169,8 +169,7 @@ var reorderFn = function(ids, cb) {
 
 The following example demonstrates how to access connected models via REST APIs.
 
-**/server/script.js**
-
+{% include code-caption.html content="/server/script.js" %}
 ```javascript
 var db = loopback.createDataSource({connector: 'memory'});
   Customer = db.createModel('customer', {

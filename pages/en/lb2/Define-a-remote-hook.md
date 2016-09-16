@@ -2,16 +2,15 @@
 title: "Define a remote hook"
 lang: en
 layout: page
+toc: false
 keywords: LoopBack
-tags:
+tags: [getting_started]
 sidebar: lb2_sidebar
 permalink: /doc/en/lb2/Define-a-remote-hook.html
-summary:
+summary: A remote hook is a function that's executed before or after a remote method.
 ---
 
-{% include content/gs-prereqs.html lang=page.lang %}
-
-A _remote hook_ is a function that's executed before or after a remote method.
+{% include content/gs-prereqs.html two="true" lang=page.lang %}
 
 {% include note.html content="
 If you followed the previous step in the tutorial, go to [Introducing remote hooks](#introducing-remote-hooks).
@@ -49,9 +48,8 @@ Here, you're going to define a remote hook on the review model, specifically `R
 
 `Modify` `common/models/review.js`, and add the following code:
 
-**common/models/review.js**
-
-```js
+{% include code-caption.html content="common/models/review.js" %}
+```javascript
 module.exports = function(Review) {
   Review.beforeRemote('create', function(context, user, next) {
     context.args.data.date = Date.now();
@@ -66,4 +64,5 @@ This function is called before a new instance of the Review model is created.  
 *   Inserts the `publisherId` using the access token attached to the request.
 *   Sets the date of the review instance to the current date.  
 
-Next: Continue to [Create AngularJS client](/doc/{{page.lang}}/lb2/Create-AngularJS-client.html) .
+{% include next.html content="Continue to [Create AngularJS client](Create-AngularJS-client.html)."
+%}

@@ -45,8 +45,7 @@ node_modules/loopback/server/middleware/rest.js:60:32
 
 To remove this warning, disable the context middleware added by the built-in REST handler. Set the `remoting.context` property in `server/config.json` to **false**; for example:
 
-**server/config.json**
-
+{% include code-caption.html content="server/config.json" %}
 ```javascript
 {
   "remoting": {
@@ -118,8 +117,7 @@ at the right position in the middleware chain (before the middleware that depend
 
 Here's sample code which uses a middleware function to place the currently authenticated user into the context so that remote methods may use it:
 
-**/server/server.js**
-
+{% include code-caption.html content="/server/server.js" %}
 ```javascript
 ...
 // -- Add your pre-processing middleware here --
@@ -148,8 +146,7 @@ app.use(function setCurrentUser(req, res, next) {
 ...
 ```
 
-**/common/models/YourModel.js**
-
+{% include code-caption.html content="/common/models/YourModel.js" %}
 ```javascript
 var loopback = require('loopback');
 var LoopBackContext = require('loopback-context');

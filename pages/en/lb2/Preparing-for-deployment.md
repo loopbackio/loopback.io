@@ -50,8 +50,7 @@ For an application using [loopback-component-explorer](https://github.com/strong
 * Set the `NODE_ENV` environment variable to "production".
 * Then in `server/component-config.production.json`:
 
-**server/component-config.production.json**
-
+{% include code-caption.html content="server/component-config.production.json" %}
 ```javascript
 {
   "loopback-component-explorer": null
@@ -89,8 +88,7 @@ $ openssl x509 -req -in certrequest.csr -signkey privatekey.pem -out certificate
 
 Once you've generated a certificate, load it in your app, for example:
 
-**ssl-config.js**
-
+{% include code-caption.html content="ssl-config.js" %}
 ```javascript
 var path = require('path'),
 fs = require("fs");
@@ -114,8 +112,7 @@ exports.certificate = fs.readFileSync(path.join(__dirname, './private/certificat
 
 ### Create the HTTPS server
 
-**server/server.js**
-
+{% include code-caption.html content="server/server.js" %}
 ```javascript
 var https = require('https');
 var sslConfig = require('./ssl-config');

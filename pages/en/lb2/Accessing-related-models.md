@@ -10,11 +10,8 @@ summary:
 ---
 
 {% include important.html content="
-
 When accessing a related model, the active ACL is still the one for the model you are calling.
-So even if your model has DENY ALL permissions set, if the model relating to it has no ACL, then all the relation endpoints will be open.
-This can be a security risk because, for example, `GET /OpenModel/{id}/ACLSecuredModel` will allow full access to `ACLSecuredModel` through the `OpenModel` relations.
-
+So even if your model has DENY ALL permissions set, if the model relating to it has no ACL, then all the relation endpoints will be open. This can be a security risk because, for example, `GET /OpenModel/{id}/ACLSecuredModel` will allow full access to `ACLSecuredModel` through the `OpenModel` relations.
 " %}
 
 ## Restricting access to related models
@@ -25,9 +22,7 @@ LoopBack automatically creates a set of _related model methods_ corresponding 
 In the following list, _modelName_ is the name of the related model and _modelNamePlural_ is the plural form of the related model name. 
 
 {% include note.html content="
-
 In the method names below, the separators are _double_ underscores, \_\_.
-
 " %}
 
 **belongsTo**:
@@ -78,19 +73,15 @@ For example, if a **User hasMany projects**, LoopBack creates these routes (amo
 * `/api/users/:id/projects/count` - related model method is `\_\_count\_\_projects`
 
 {% include important.html content="
-
-If a model has a `DENY ALL` permission (for example a built-in model such as the User model), but related models have no ACLs,
-the related models will still not be accessible through the User model.
+If a model has a `DENY ALL` permission (for example a built-in model such as the User model), but related models have no ACLs,the related models will still not be accessible through the User model.
 So, for example, even if the books model's default ACL is `ALLOW $authenticated` for `GET /books`,
 the route `GET /user/{id}/books` default will still be DENY ALL.
-
 " %}
 
 To configure access control to such routes, set the permission on the related model methods in the model definition JSON file.
 For example, the ACL for the User model definition JSON file (`user.json`) for these routes might look like this, for example:
 
-**/common/models/user.json**
-
+{% include code-caption.html content="/common/models/user.json" %}
 ```javascript
 "acls": [{
   "principalType": "ROLE",

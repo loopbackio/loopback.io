@@ -101,8 +101,7 @@ The sections below describe the configuration settings for each component in [`
 The `slc loopback` [application generator](/doc/{{page.lang}}/lb2/Application-generator) will scaffold an app
 with `component-config.json` containing the default entry for [LoopBack API Explorer](/doc/{{page.lang}}/lb2/Use-API-Explorer): 
 
-**server/component-config.json**
-
+{% include code-caption.html content="server/component-config.json" %}
 ```javascript
 {
   "loopback-explorer": {
@@ -115,8 +114,7 @@ with `component-config.json` containing the default entry for [LoopBack API E
 
 Example:
 
-**server/component-config.json**
-
+{% include code-caption.html content="server/component-config.json" %}
 ```javascript
 {
   "loopback-component-oauth2": {

@@ -100,8 +100,7 @@ For example, use `'*.*'` to match any static method; use `'prototype.*'` to 
 
 The following example defines beforeRemote and afterRemote hooks for the `revEngine()` remote method:
 
-**common/models/car.js**
-
+{% include code-caption.html content="common/models/car.js" %}
 ```javascript
 module.exports = function(Car) {
   // remote method
@@ -132,8 +131,7 @@ module.exports = function(Car) {
 
 The following example uses wildcards in the remote method name. This remote hook is called whenever any remote method whose name ends with "save" is executed:
 
-**common/models/customer.js**
-
+{% include code-caption.html content="common/models/customer.js" %}
 ```javascript
 Customer.beforeRemote('*.save', function(ctx, unused, next) {
   if(ctx.req.accessToken) {
@@ -157,8 +155,7 @@ The second argument to the hook (`user` in the above example) is the `ctx.resu
 
 Below are more examples of remote hooks with wildcards to run a function before any remote method is called.
 
-**common/models/customer.js**
-
+{% include code-caption.html content="common/models/customer.js" %}
 ```javascript
 // ** will match both prototype.* and *.*
 Customer.beforeRemote('**', function(ctx, user, next) {
@@ -191,8 +188,7 @@ Customer.afterRemote('**', function (ctx, user, next) {
 
 A safer means of effectively white-listing the fields to be returned by copying the values into new objects:
 
-**common/models/account.js**
-
+{% include code-caption.html content="common/models/account.js" %}
 ```javascript
 var WHITE_LIST_FIELDS = ['account_id', 'account_name'];
 
@@ -223,8 +219,7 @@ Account.afterRemote('**', function(ctx, modelInstance, next) {
 
 Perform an additional action when the instance method `speak()` fails:
 
-**common/models/dog.js**
-
+{% include code-caption.html content="common/models/dog.js" %}
 ```javascript
 Dog.afterRemoteError('prototype.speak', function(ctx, next) {
   console.log('Cannot speak!', ctx.error);
@@ -234,8 +229,7 @@ Dog.afterRemoteError('prototype.speak', function(ctx, next) {
 
 Attach extra metadata to error objects:
 
-**common/models/dog.js**
-
+{% include code-caption.html content="common/models/dog.js" %}
 ```javascript
 Dog.afterRemoteError('**', function(ctx, next) {
   if (!ctx.error.details) ctx.result.details = {};
@@ -246,8 +240,7 @@ Dog.afterRemoteError('**', function(ctx, next) {
 
 Report a different error back to the caller:
 
-**common/models/dog.js**
-
+{% include code-caption.html content="common/models/dog.js" %}
 ```javascript
 Dog.afterRemoteError('prototype.speak', function(ctx, next) {
   console.error(ctx.error);

@@ -22,8 +22,7 @@ Normally, to add a remote method to the User model, you would add it in `/commo
 However, for built-in models however, this file would override the built-in model definition,
 so instead you have to create and attach our remote method in a boot script; for example:
 
-**server/boot/userRemoteMethods.js**
-
+{% include code-caption.html content="server/boot/userRemoteMethods.js" %}
 ```javascript
 module.exports = function(app) {
   const User = app.models.User;
@@ -56,8 +55,7 @@ Instead you can define ACLs in [`model-config.json`](/doc/{{page.lang}}/lb2/mode
 
 For example:
 
-**server/model-config.json**
-
+{% include code-caption.html content="server/model-config.json" %}
 ```javascript
 {
   "User": {

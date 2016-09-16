@@ -2,19 +2,19 @@
 title: "Create AngularJS client"
 lang: en
 layout: page
+toc: false
 keywords: LoopBack
-tags:
+tags: [getting_started]
 sidebar: lb2_sidebar
 permalink: /doc/en/lb2/Create-AngularJS-client.html
-summary:
+summary: The LoopBack AngularJS SDK enables you to easily creates a client JavaScript API to consume your LoopBack REST API.
 ---
 
-{% include content/gs-prereqs.html lang=page.lang %}
+{% include content/gs-prereqs.html two="true" lang=page.lang %}
 
-{% include note.html content="To follow this step, you should have a basic understanding of [AngularJS](https://angularjs.org/).
+{% include important.html content="To follow this step, you should have a basic understanding of [AngularJS](https://angularjs.org/).
 " %}
 
-The LoopBack AngularJS SDK automatically creates a client JavaScript API that enables you to make AngularJS calls to your LoopBack models.
 
 {% include note.html content="
 If you followed the previous step in the tutorial, go to [Introducing the AngularJS SDK](#introducing-the-angularjs-sdk).
@@ -104,7 +104,7 @@ Each file and directory is briefly described below
 
 The `index.html` file is the only file in the top level of the `/client` directory, and defines the application's main landing page.  Open it in your editor:
 
-**client/index.html**  Expand source
+**client/index.html**  
 
 ```
 <!DOCTYPE html>
@@ -160,8 +160,7 @@ Perusing the file, you can see the references to the stylesheet in the `/css` di
 
 The `js/app.js` file defines application configurations.
 
-**client/js/app.js**  Expand source
-
+{% include code-caption.html content="client/js/app.js" %} 
 ```js
 angular
   .module('app', [
@@ -371,8 +370,7 @@ The `client/js/controllers `directory contains two files that define controlle
 
 The controller in `auth.js` handles user registration, login, and logout.  When the user is logged in, a `currentUser` object is set in the root scope.  Other parts of the app check the `currentUser` object when performing actions.  When logging out, the `currentUser` object is destroyed.
 
-**js/controllers/auth.js**  Expand source
-
+{% include code-caption.html content="js/controllers/auth.js" %}
 ```js
 angular
   .module('app')
@@ -415,8 +413,6 @@ angular
 ```
 
 The other file, `review.js`, defines controllers for review actions.
-
- Expand source
 
 ```js
 angular
@@ -581,8 +577,7 @@ The other file, `auth.js`, provides a simple interface for low-level authentic
 *   `logout`: logs a user out.  Stores the token in browser HTML5 localstorage.
 *   `register`: registers a new user with the provided email and password, the mininum requirements for creating a new user in LoopBack.
 
-**js/services/auth.js**  Expand source
-
+{% include code-caption.html content="js/services/auth.js" %} 
 ```js
 angular
   .module('app')
@@ -653,4 +648,5 @@ Now load [http://0.0.0.0:3000/](http://0.0.0.0:3000/) in your browser.  You s
 
 You should be able to run the application through its paces, as described in [Introducing the Coffee Shop Reviews app](/doc/{{page.lang}}/lb2/Introducing-the-Coffee-Shop-Reviews-app.html).
 
-**Next** See [Learn more](/doc/{{page.lang}}/lb2/Learn-more.html) for pointers to learn more about LoopBack.
+{% include next.html content="See [Learn more](Learn-more.html) for pointers to learn more about LoopBack."
+%}

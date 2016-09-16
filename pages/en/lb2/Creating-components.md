@@ -32,8 +32,7 @@ The following are some examples to help you understand the components API.
 In this example, the component mounts a middleware on the path specified in the `path`,
 property of the `options` object, which prints a message "Your Component", when a request is made to the path.
 
-**server/components/my-component.js**
-
+{% include code-caption.html content="server/components/my-component.js" %}
 ```javascript
 module.exports = function (loopbackApplication, options) {
   loopbackApplication.use(options.path, function (req, res, next) {
@@ -44,8 +43,7 @@ module.exports = function (loopbackApplication, options) {
 
 In this example, the component mounts a middleware which prints the `options` object to the console.
 
-**server/components/show-options.js**
-
+{% include code-caption.html content="server/components/show-options.js" %}
 ```javascript
 module.exports = function (loopbackApplication, options) {
   loopbackApplication.use(function (req, res, next) {
@@ -61,8 +59,7 @@ module.exports = function (loopbackApplication, options) {
 While a lot of components mount a middleware of some kind, all components need not do so.
 For example, this component prints the `loopback` version on initialization, and does nothing more than that.
 
-**server/components/version.js**
-
+{% include code-caption.html content="server/components/version.js" %}
 ```javascript
 module.exports = function (loopbackApplication) {
   var version = loopbackApplication.loopback.version;

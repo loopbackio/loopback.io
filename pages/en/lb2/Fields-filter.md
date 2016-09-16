@@ -43,8 +43,7 @@ Return only `id`, `make`, and `model` properties:
 
 `?filter[fields][id]=true&filter[fields][make]=true&filter[fields][model]=true`
 
-**Node API**
-
+{% include code-caption.html content="Node API" %}
 ```javascript
 { fields: {id: true, make: true, model: true} }
 ```
@@ -71,8 +70,7 @@ Exclude the `vin` property:
 
 `?filter[fields][vin]=false`
 
-**Node API**
-
+{% include code-caption.html content="Node API" %}
 ```javascript
 { fields: {vin: false} }
 ```

@@ -30,8 +30,7 @@ You can use the command-line tool to customize a model after you initially cre
 You can customize a number of aspects of a model by simply editing the
 [model definition JSON file](/doc/{{page.lang}}/lb2/Model-definition-JSON-file.html) in `common/models` (for example, `customer.json`), which by default looks like this:
 
-**common/models/model.json**
-
+{% include code-caption.html content="common/models/model.json" %}
 ```javascript
 {
   "name": "myModel",
@@ -62,8 +61,7 @@ In general, use `PersistedModel` as the base model when you want to store you
 
 For example, here is an excerpt from a `customer.json` file that extends the built-in User model to define a new Customer model:
 
-**/common/models/model.json**
-
+{% include code-caption.html content="/common/models/model.json" %}
 ```javascript
 {
   "name": "Customer",
@@ -83,8 +81,7 @@ For example, to define a model called `MyModel` that extends from a custom mod
 create MyModel using [model generator](/doc/{{page.lang}}/lb2/Model-generator.html) 
 then edit the JSON file `common/models/MyModel.json` as follows:
 
-**/common/models/model.json**
-
+{% include code-caption.html content="/common/models/model.json" %}
 ```javascript
 {
   "name": "Example",
@@ -94,8 +91,7 @@ then edit the JSON file `common/models/MyModel.json` as follows:
 
 You can add new properties when you extend a model, for example:
 
-**/common/models/model.json**
-
+{% include code-caption.html content="/common/models/model.json" %}
 ```javascript
 {
    "name": "Customer",
@@ -150,8 +146,7 @@ In some cases, you might want to change the implementation; use a JavaScript fil
 For example, the following code shows how to reimplement `Note.find()` to override the built-in
 [`find()`](http://apidocs.strongloop.com/loopback/#persistedmodelfindfilter-callback) method.
 
-**/server/boot/script.js**
-
+{% include code-caption.html content="/server/boot/script.js" %}
 ```javascript
 module.exports = function(app) {
   var Note = app.models.Note;
@@ -186,8 +181,7 @@ module.exports = function(app) {
 
 Use a JavaScript file in the `common/models` directory to do this
 
-**common/models/MyModel.js**
-
+{% include code-caption.html content="common/models/MyModel.js" %}
 ```javascript
 module.exports = function(MyModel) {
   MyModel.on('dataSourceAttached', function(obj){

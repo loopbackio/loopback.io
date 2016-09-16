@@ -44,8 +44,7 @@ The following data sources support auto-migration:
 
 Here's an example of auto-migration. Consider this model definition:
 
-**/common/models/model.js**
-
+{% include code-caption.html content="/common/models/model.js" %}
 ```javascript
 var schema_v1 = {
   "name": "CustomerTest",
@@ -82,8 +81,7 @@ var schema_v1 = {
 
 Assuming the model doesn't have a corresponding table in the Oracle database, you can create the corresponding schema objects to reflect the model definition using `autoMigrate()`:
 
-**/common/models/model.js**
-
+{% include code-caption.html content="/common/models/model.js" %}
 ```javascript
 var ds = Model.app.dataSources.oracle;
 
@@ -104,8 +102,7 @@ This creates the following objects in the Oracle database:
 
 Now suppose you decide to make some changes to the model. Here is the second version:
 
-**/common/models/model.js**
-
+{% include code-caption.html content="/common/models/model.js" %}
 ```javascript
 var schema_v2 = {
   "name": "CustomerTest",
@@ -164,8 +161,7 @@ definition and alters the table accordingly. This way, the column data will be k
 
 For example:
 
-**/server/script.js**
-
+{% include code-caption.html content="/server/script.js" %}
 ```javascript
 ds.createModel(schema_v2.name, schema_v2.properties, schema_v2.options);
 ds.autoupdate(schema_v2.name, function (err, result) {
@@ -181,8 +177,7 @@ It accepts a `callback` argument that receives a Boolean value depending on da
 * False if the database structure outdated
 * True when data source and database is in sync
 
-**/server/script.js**
-
+{% include code-caption.html content="/server/script.js" %}
 ```javascript
 dataSource.isActual(models, function(err, actual) {
   if (!actual) {

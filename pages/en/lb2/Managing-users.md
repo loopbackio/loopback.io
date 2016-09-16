@@ -11,14 +11,14 @@ summary:
 
 {% include content/gs-prereqs.html lang=page.lang %}
 
-**See also**:
-
-* [Registering users](/doc/{{page.lang}}/lb2/Registering-users.html)
-* [Logging in users](/doc/{{page.lang}}/lb2/Logging-in-users.html)
-* [Partitioning users with realms](/doc/{{page.lang}}/lb2/Partitioning-users-with-realms.html)
-* [Authentication, authorization, and permissions](/doc/{{page.lang}}/lb2/Authentication-authorization-and-permissions.html)
-* [Third-party login using Passport](/doc/{{page.lang}}/lb2/Third-party-login-using-Passport.html)
-* [Example app](https://github.com/strongloop/loopback-example-user-management)
+{% include see-also.html content="
+* [Registering users](Registering-users.html)
+* [Logging in users](Logging-in-users.html)
+* [Partitioning users with realms](Partitioning-users-with-realms.html)
+* [Authentication, authorization, and permissions](Authentication-authorization-and-permissions.html)
+* [Third-party login using Passport](Third-party-login-using-Passport.html)
+* [Example app](https://github.com/strongloop/loopback-example-user-management) "
+%}
 
 ## Overview
 

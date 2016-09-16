@@ -2,16 +2,15 @@
 title: "Create a simple API"
 lang: en
 layout: page
+toc: false
 keywords: LoopBack
-tags:
+tags: [getting_started]
 sidebar: lb2_sidebar
 permalink: /doc/en/lb2/Create-a-simple-API.html
-summary:
+summary: Use the application generator tool to quickly create a LoopBack application, models, and data sources.
 ---
 
-{% include content/gs-prereqs.html lang=page.lang %}
-
-Use the [application generator](/doc/{{page.lang}}/lb2/Application-generator.html) tool to quickly create a LoopBack application, models, and data sources.  
+{% include content/gs-prereqs.html two="false" lang=page.lang %}
 
 ## Create new application
 
@@ -189,12 +188,13 @@ Web server listening at: http://0.0.0.0:3000/
 ```
 
 {% include note.html content="
-Running your app with the `node` command is appropriate when you're developing on your local machine.
+Running your app with the `node` command is appropriate when you're developing on your local machine.  
+In production, you should consider using a [process manager](http://strong-pm.io/using ).
 " %}
 
 Open your browser to [http://0.0.0.0:3000/](http://0.0.0.0:3000/) (on some systems, you may need to use [http://localhost:3000](http://localhost:3000/) instead).  You'll see the default application response that displays some JSON with some status information; for example:
 
-`{"started":"2014-11-20T21:59:47.155Z","uptime":42.054}`
+`{"started":"2016-09-10T21:59:47.155Z","uptime":42.054}`
 
 Now open your browser to [http://0.0.0.0:3000/explorer](http://0.0.0.0:3000/explorer) or [http://localhost:3000/explorer](http://localhost:3000/explorer).  You'll see the StrongLoop API Explorer:
 
@@ -202,4 +202,6 @@ Now open your browser to [http://0.0.0.0:3000/explorer](http://0.0.0.0:3000/expl
 
 Through a set of simple steps using LoopBack, you've created a CoffeeShop model, specified its properties and then exposed it through REST. 
 
-Next: In [Use API Explorer](/doc/{{page.lang}}/lb2/Use-API-Explorer.html), you'll explore the REST API you just created in more depth and exercise some of its operations.
+{% include next.html content= "
+In [Use API Explorer](Use-API-Explorer.html), you'll explore the REST API you just created in more depth and exercise some of its operations.
+" %}

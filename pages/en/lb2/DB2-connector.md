@@ -41,8 +41,7 @@ The `--save` option adds the dependency to the application's [package.json](/do
 Use the [data source generator](https://docs.strongloop.com/display/public/LB/Data-source-generator) to add the DB2 data source to your application.
 The entry in the applications `server/datasources.json` will look something like this:
 
-**server/datasources.json**
-
+{% include code-caption.html content="server/datasources.json" %}
 ```javascript
 "mydb": {
   "name": "mydb",

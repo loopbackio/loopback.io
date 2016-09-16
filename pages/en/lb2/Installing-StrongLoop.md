@@ -10,8 +10,6 @@ permalink: /doc/en/lb2/Installing-StrongLoop.html
 summary:
 ---
 
-StrongLoop Node.js API Platform
-
 StrongLoop's Node API platform consists of:
 
 *   [LoopBack](/doc/{{page.lang}}/lb2/index.html), an open-source Node application framework based on [Express](http://expressjs.com/).

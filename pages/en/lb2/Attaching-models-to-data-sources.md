@@ -44,8 +44,7 @@ You can also add and modify data sources using [StrongLoop Arc](https://docs.str
 The tool will prompt you for the name of the new data source and the connector to use; for example, MySQL, Oracle, REST, and so on.
 The tool will then add an entry such as the following to `datasources.json`:
 
-**/server/datasources.json**
-
+{% include code-caption.html content="/server/datasources.json" %}
 ```javascript
   ...
   "corp1": {
@@ -63,8 +62,7 @@ Edit `datasources.json` to add the necessary authentication credentials for th
 
 For example:
 
-**/server/datasources.json**
-
+{% include code-caption.html content="/server/datasources.json" %}
 ```javascript
 "corp1": {
     "name": "corp1",
@@ -86,8 +84,7 @@ data source (that uses the [memory connector](/doc/{{page.lang}}/lb2/Memory-con
 To change the data source a model uses after you've created the model, edit the application's `server/model-config.json`
 and set the dataSource property for the model. For example, to make myModel use the corp1 data source:
 
-**server/model-config.json**
-
+{% include code-caption.html content="server/model-config.json" %}
 ```javascript
 "myModel": {
     "dataSource": "corp1",

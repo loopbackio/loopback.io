@@ -2,17 +2,16 @@
 title: "Extend your API"
 lang: en
 layout: page
+toc: false
 keywords: LoopBack
-tags:
+tags: [getting_started]
 sidebar: lb2_sidebar
 permalink: /doc/en/lb2/Extend-your-API.html
-summary:
+summary: In LoopBack, a Node function attached to a custom REST endpoint is called a _remote method_.
 ---
 
 {% include content/gs-prereqs.html lang=page.lang %}
  
-In LoopBack, a Node function attached to a custom REST endpoint is called a _remote method_.
-
 In this section you're going to add a custom remote method to your API.
 
 {% include note.html content="
@@ -147,4 +146,5 @@ You'll get the response:
 }
 ```
 
-Next: In [Add a static web page](/doc/{{page.lang}}/lb2/Add-a-static-web-page.html), you'll add Express middleware to serve static client assets such as HTML/CSS, images, and JavaScript.
+{% include next.html content="In [Add a static web page](Add-a-static-web-page.html), you'll add Express middleware to serve static client assets such as HTML/CSS, images, and JavaScript. "
+%}

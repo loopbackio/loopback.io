@@ -110,8 +110,7 @@ Make the following change to the [Model definition JSON file](/doc/{{page.lang}}
 
 For example:
 
-**common/models/todo.json**
-
+{% include code-caption.html content="common/models/todo.json" %}
 ```javascript
 {
   "name": "Todo",
@@ -141,8 +140,7 @@ Therefore, you will need to migrate your database schema after you have enabled 
 The change-tracking records are updated in background. Any errors are reported via the static model method `handleChangeError`.
 It is recommended to provide a custom error handler in your models, as the default behavior is to throw an error.
 
-**common/models/todo.js**
-
+{% include code-caption.html content="common/models/todo.js" %}
 ```javascript
 module.exports = function(Todo) {
   Todo.handleChangeError = function(err) {
@@ -161,8 +159,7 @@ The next step is to create client-side LoopBack app. For each replicated model, 
 
 For example, for the To Do example, here is the JSON file that defines the client local model:
 
-**client/models/local-todo.json**
-
+{% include code-caption.html content="client/models/local-todo.json" %}
 ```javascript
 {
   "name": "LocalTodo",
@@ -172,8 +169,7 @@ For example, for the To Do example, here is the JSON file that defines the clien
 
 Here is the JSON file that defines the client remote local model:
 
-**client/models/remote-todo.json**
-
+{% include code-caption.html content="client/models/remote-todo.json" %}
 ```javascript
 {
   "name": "RemoteTodo",
@@ -186,8 +182,7 @@ Here is the JSON file that defines the client remote local model:
 
 And here is the client model configuration JSON file:
 
-**client/model-config.json**
-
+{% include code-caption.html content="client/model-config.json" %}
 ```javascript
 {
   "_meta": {
@@ -204,8 +199,7 @@ And here is the client model configuration JSON file:
 
 Here is the JSON file that defines the client datasources:
 
-**client/datasources.json**
-
+{% include code-caption.html content="client/datasources.json" %}
 ```javascript
 {
   "remote": {
@@ -221,8 +215,7 @@ Here is the JSON file that defines the client datasources:
 
 Now that you have all models in place, you can set up bi-directional replication between `LocalTodo `and `RemoteTodo`, for example in a client boot script:
 
-**client/boot/replication.js**
-
+{% include code-caption.html content="client/boot/replication.js" %}
 ```javascript
 module.exports = function(client) {
   var LocalTodo = client.models.LocalTodo;
@@ -280,8 +273,7 @@ Below is a simplified example packaging the client application into a browser "m
 Consult [build.js](https://github.com/strongloop/loopback-example-full-stack/blob/master/client/lbclient/build.js) 
 in loopback-example-full-stack for a full implementation that includes source-maps and error handling.
 
-**client/build.js**
-
+{% include code-caption.html content="client/build.js" %}
 ```javascript
 var b = browserify({ basedir: __dirname });
 b.require('./client.js', { expose: 'lbclient '});
@@ -303,8 +295,7 @@ Users with WRITE permissions are automatically granted REPLICATE permission too.
 
 Example ACL configuration:
 
-**common/models/car.json**
-
+{% include code-caption.html content="common/models/car.json" %}
 ```javascript
 {
   "acls": [

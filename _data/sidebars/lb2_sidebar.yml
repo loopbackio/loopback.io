@@ -395,7 +395,7 @@ entries:
         output: 'web'
         subfolderitems:
 
-        - title: 'Database connectors'
+        - title: 'Database connectors overview'
           url: /doc/en/lb2/Database-connectors.html
           output: 'web, pdf'
 
@@ -483,7 +483,7 @@ entries:
         output: 'web'
         subfolderitems:
 
-        - title: 'Non-database connectors'
+        - title: 'Other connectors overview'
           url: /doc/en/lb2/Non-database-connectors.html
           output: 'web, pdf'
 

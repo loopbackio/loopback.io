@@ -57,8 +57,7 @@ This model hook is _not_ deprecated and is still useful. It is a synchronous met
 
 ### Example
 
-**/common/models/coffee-shop.js**
-
+{% include code-caption.html content="/common/models/coffee-shop.js" %}
 ```javascript
 //...
 CoffeeShop.afterInitialize = function() {
@@ -82,8 +81,7 @@ This hook is called before [validatation](/doc/{{page.lang}}/lb2/Validating-mode
 
 ### Example
 
-**/common/models/coffee-shop.js**
-
+{% include code-caption.html content="/common/models/coffee-shop.js" %}
 ```javascript
 //...
 CoffeeShop.beforeValidate = function(next, modelInstance) {
@@ -113,8 +111,7 @@ This hook is called after [validation](/doc/{{page.lang}}/lb2/Validating-model-
 
 ### Example
 
-**/common/models/coffee-shop.js**
-
+{% include code-caption.html content="/common/models/coffee-shop.js" %}
 ```javascript
 //...
 CoffeeShop.afterValidate(next) {
@@ -132,8 +129,7 @@ This hook is called just before a model is created.
 
 ### Example
 
-**/common/models/coffee-shop.js**
-
+{% include code-caption.html content="/common/models/coffee-shop.js" %}
 ```javascript
 //...
 CoffeeShop.beforeCreate = function(next, modelInstance) {
@@ -153,8 +149,7 @@ This hook is called after a model is created.
 
 ### Example
 
-**/common/models/coffee-shop.js**
-
+{% include code-caption.html content="/common/models/coffee-shop.js" %}
 ```javascript
 //...
 CoffeeShop.afterCreate = function(next) {
@@ -175,8 +170,7 @@ This hook is called just before a model instance is saved.
 
 ### Example
 
-**/common/models/coffee-shop.js**
-
+{% include code-caption.html content="/common/models/coffee-shop.js" %}
 ```javascript
 //...
 CoffeeShop.beforeSave = function(next, modelInstance) {
@@ -196,8 +190,7 @@ This hook is called after a model is saved.
 
 ### Example
 
-**/common/models/coffee-shop.js**
-
+{% include code-caption.html content="/common/models/coffee-shop.js" %}
 ```javascript
 //...
 CoffeeShop.afterSave = function(next) {
@@ -218,8 +211,7 @@ This hook is called just before a model is updated.
 
 ### Example
 
-**/common/models/coffee-shop.js**
-
+{% include code-caption.html content="/common/models/coffee-shop.js" %}
 ```javascript
 //...
 CoffeeShop.beforeUpdate = function(next, modelInstance) {
@@ -239,8 +231,7 @@ This hook is called after a model is updated.
 
 ### Example
 
-**/common/models/coffee-shop.js**
-
+{% include code-caption.html content="/common/models/coffee-shop.js" %}
 ```javascript
 //...
 CoffeeShop.afterUpdate = function(next) {
@@ -261,8 +252,7 @@ This hook is called just before a model is destroyed.
 
 ### Example
 
-**/common/models/coffee-shop.js**
-
+{% include code-caption.html content="/common/models/coffee-shop.js" %}
 ```javascript
 //...
 CoffeeShop.beforeDestroy = function(next, modelInstance) {
@@ -282,8 +272,7 @@ This hook is called after a model is destroyed.
 
 ### Example
 
-**/common/models/coffee-shop.js**
-
+{% include code-caption.html content="/common/models/coffee-shop.js" %}
 ```javascript
 //...
 CoffeeShop.afterDestroy = function(next) {

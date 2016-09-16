@@ -60,10 +60,7 @@ Install Node.js
 
 Follow the instructions in [Installing Node.js via package manager](https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager).  See also [NodeSource Node.js and io.js Binary Distributions](https://github.com/nodesource/distributions/blob/master/README.md).
 
-{% include tip.html content="
-
-For best results, use the latest LTS (long-term support) release of Node.js.
-
+{% include tip.html content="For best results, use the latest LTS (long-term support) release of Node.js.
 " %}
 
 ## Install StrongLoop  
@@ -81,7 +78,8 @@ Follow these steps:
     `$ sudo npm install -g strongloop`
 
     {% include note.html content="
-    During installation, you may see a number of errors from `node-gyp` if you don't have [compiler tools](Installing-compiler-tools.html) installed. You can ignore the errors for now." %}
+    During installation, you may see a number of errors from `node-gyp` if you don't have [compiler tools](Installing-compiler-tools.html) installed. You can ignore the errors for now."
+    %}
 
 If you run into any problems, see [Installation troubleshooting](/doc/{{page.lang}}/lb2/Installation-troubleshooting.html).
 

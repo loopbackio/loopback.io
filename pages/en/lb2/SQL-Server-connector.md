@@ -37,8 +37,7 @@ This will install the module from npm and add it as a dependency to the applicat
 Use the [Data source generator](/doc/{{page.lang}}/lb2/Data-source-generator.html) to add a SQL Server data source to your application.
 The generator will add the following entry to the `/server/datasources.json` file:
 
-**/server/datasources.json**
-
+{% include code-caption.html content="/server/datasources.json" %}
 ```javascript
 "sqlserverdb": {
     "name": "sqlserverdb",
@@ -137,8 +136,7 @@ see [node-mssql documentation](https://github.com/patriksimek/node-mssql#config
 
 For example:
 
-**/server/datasources.json**
-
+{% include code-caption.html content="/server/datasources.json" %}
 ```javascript
 ...
 "accountDB": {
@@ -162,8 +160,7 @@ Alternatively you can use a single 'url' property that combines all the database
 
 The application will automatically load the data source when it starts. You can then refer to it in code, for example:
 
-**/server/boot/script.js**
-
+{% include code-caption.html content="/server/boot/script.js" %}
 ```javascript
 var app = require('./app');
 var dataSource = app.dataSources.accountDB;
@@ -171,8 +168,7 @@ var dataSource = app.dataSources.accountDB;
 
 Alternatively, you can create the data source in application code; for example:
 
-**/server/script.js**
-
+{% include code-caption.html content="/server/script.js" %}
 ```javascript
 var DataSource = require('loopback-datasource-juggler').DataSource;
 var dataSource = new DataSource('mssql', config);
@@ -189,8 +185,7 @@ The model definition consists of the following properties:
 
 For example:
 
-**/common/models/model.json**
-
+{% include code-caption.html content="/common/models/model.json" %}
 ```javascript
 {"name": "Inventory", 
      "options": {

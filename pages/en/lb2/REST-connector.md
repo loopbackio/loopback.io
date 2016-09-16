@@ -60,8 +60,7 @@ This adds an entry to [datasources.json](/doc/{{page.lang}}/lb2/datasources.jso
 
 Configure the REST connector by editing `datasources.json` manually (for example using the Google Maps API):
 
-**/server/datasources.json**
-
+{% include code-caption.html content="/server/datasources.json" %}
 ```javascript
 ...
 "geoRest": {
@@ -110,8 +109,7 @@ You can configure options `options` property at two levels:
 For example, the following example sets `Accept` and `Content-Type` to `"application/json"` for all requests.
 It also sets `strictSSL` to false so that the connector allows self-signed SSL certificates.
 
-**/server/datasources.json**
-
+{% include code-caption.html content="/server/datasources.json" %}
 ```javascript
 {
   "connector": "rest",
@@ -161,8 +159,7 @@ For example, the following methods would be mixed into your model class:
 
 For example:
 
-**/server/boot/script.js**
-
+{% include code-caption.html content="/server/boot/script.js" %}
 ```javascript
 module.exports = function(app) {
   var ds = app.loopback.createDataSource({

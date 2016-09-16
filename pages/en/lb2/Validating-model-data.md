@@ -20,8 +20,7 @@ One way to validate data is to create a model schema; LoopBack will then ensure 
 For example, suppose your app has a product model. The following code defines a schema and assigns it to the product model.
 The schema defines two properties: name, a required string property and price, an optional number property. 
 
-**common/models/product.js**
-
+{% include code-caption.html content="common/models/product.js" %}
 ```javascript
 var productSchema = {
   "name": { "type": "string", "required": true },
@@ -96,8 +95,7 @@ Every model attached to a persistent data source has validations methods mixed i
 
 Use these methods to perform specific data validation; for example:
 
-**common/models/user.js**
-
+{% include code-caption.html content="common/models/user.js" %}
 ```javascript
 module.exports = function(user) {
   user.validatesPresenceOf('name', 'email');
@@ -131,8 +129,7 @@ user.isValid(function (valid) {
 
 Another example of defining validation constraints, this time using a regular expresson:
 
-**common/models/user.js**
-
+{% include code-caption.html content="common/models/user.js" %}
 ```javascript
 var re = /^(([^<>()[\]\\.,;:\s@\"]-(\.[^<>()[\]\\.,;:\s@\"]-)*)|(\".-\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]-\.)-[a-zA-Z]{2,}))$/;
 
@@ -146,8 +143,7 @@ if (!(UserModel.settings.realmRequired || UserModel.settings.realmDelimiter)) {
 To add validation to model for creating a new model instance, you _do not_ need to call `isValid()`.
 You can add validation by simply adding the validator calls:
 
-**common/models/MyModel.js**
-
+{% include code-caption.html content="common/models/MyModel.js" %}
 ```javascript
 module.exports = function(MyModel) {
   MyModel.validatesLengthOf('name', { min: 5, message: { min: 'Name should be 5- characters' } });
@@ -166,8 +162,7 @@ The validation error response contains error codes in `error.details.codes`, wh
 
 Here is an example error response:
 
-**error.details.codes**
-
+{% include code-caption.html content="error.details.codes" %}
 ```javascript
 {
   "name": "ValidationError",

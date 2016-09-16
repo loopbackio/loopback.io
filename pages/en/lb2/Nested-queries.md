@@ -30,8 +30,7 @@ The following blocks of JSON show the model for Book and relations for Page and 
 
 For more information on the model relations used, see [BelongsTo relations](/doc/{{page.lang}}/lb2/BelongsTo-relations.html) and [HasMany relations](/doc/{{page.lang}}/lb2/HasMany-relations.html).
 
-**common/models/book.json**
-
+{% include code-caption.html content="common/models/book.json" %}
 ```javascript
 {
   "name": "Book",
@@ -65,8 +64,7 @@ For more information on the model relations used, see [BelongsTo relations](/doc
 }
 ```
 
-**common/models/chapter.json**
-
+{% include code-caption.html content="common/models/chapter.json" %}
 ```javascript
 {
   "name": "Chapter",
@@ -83,8 +81,7 @@ For more information on the model relations used, see [BelongsTo relations](/doc
 }
 ```
 
-**common/models/page.json**
-
+{% include code-caption.html content="common/models/page.json" %}
 ```javascript
 {
   "name": "Page",
@@ -101,8 +98,7 @@ For more information on the model relations used, see [BelongsTo relations](/doc
 }
 ```
 
-**common/models/image.json**
-
+{% include code-caption.html content="common/models/image.json" %}
 ```javascript
 {
   "name": "Image",

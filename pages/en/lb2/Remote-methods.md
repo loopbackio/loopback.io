@@ -54,8 +54,7 @@ See additional introductory examples in [Extend your API](/doc/{{page.lang}}/lb
 Suppose you have a Person model and you want to add a REST endpoint at `/greet` that returns a greeting with a name provided in the request.
 You add this code to `/common/models/person.js`:
 
-**/common/models/person.js**
-
+{% include code-caption.html content="/common/models/person.js" %}
 ```javascript
 module.exports = function(Person){
 
@@ -480,8 +479,7 @@ Following the above example, then by default the remote method is exposed at:
 
 To change the route, use the `http.path` and` http.verb` properties of the options argument to `remoteMethod()`, for example:
 
-**/common/models/model.js**
-
+{% include code-caption.html content="/common/models/model.js" %}
 ```javascript
 Person.remoteMethod('greet',{
   accepts: {arg: 'msg', type: 'string'},
@@ -563,8 +561,7 @@ $ apic loopback:acl
 
 The tool then creates the following access control specification:
 
-**/common/models/person.json**
-
+{% include code-caption.html content="/common/models/person.json" %}
 ```javascript
 ...
 "acls": [{
@@ -580,8 +577,7 @@ The tool then creates the following access control specification:
 
 Another example, to allow invocation of the a remote method only for the `$owner` of that model object:
 
-**/common/models/YourModel.js**
-
+{% include code-caption.html content="/common/models/YourModel.js" %}
 ```javascript
 module.exports = function(YourModel) {
   //...
@@ -603,8 +599,7 @@ module.exports = function(YourModel) {
 You can reformat the response returned by all remote methods by adding a [boot script](/doc/{{page.lang}}/lb2/Defining-boot-scripts.html) 
 that modifies the object returned by [`app.remotes()`](http://apidocs.strongloop.com/loopback/#app-remotes) as follows:
 
-**/server/boot/hook.js**
-
+{% include code-caption.html content="/server/boot/hook.js" %}
 ```javascript
 module.exports = function(app) {
   var remotes = app.remotes();

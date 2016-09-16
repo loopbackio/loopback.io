@@ -18,8 +18,6 @@
   { "org": "strongloop", "repoName":  "loopback-example-mixins"},
   { "org": "strongloop", "repoName":  "loopback-example-offline-sync"},
   { "org": "strongloop", "repoName":  "loopback-example-passport"},
-  { "org": "strongloop", "repoName":  "loopback-example-pubsub"},
-  { "org": "strongloop", "repoName":  "loopback-example-push"},
   { "org": "strongloop", "repoName":  "loopback-example-relations"},
   { "org": "strongloop", "repoName":  "loopback-example-storage"},
   { "org": "strongloop", "repoName":  "loopback-example-user-management"},

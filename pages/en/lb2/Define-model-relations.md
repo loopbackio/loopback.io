@@ -2,16 +2,15 @@
 title: "Define model relations"
 lang: en
 layout: page
+toc: false
 keywords: LoopBack
-tags:
+tags: [getting_started]
 sidebar: lb2_sidebar
 permalink: /doc/en/lb2/Define-model-relations.html
-summary:
+summary: Relations among models enable you to query related models and perform corresponding validations.
 ---
 
-{% include content/gs-prereqs.html lang=page.lang %}
-
-Relations among models enable you to query related models and perform corresponding validations.
+{% include content/gs-prereqs.html two="true" lang=page.lang %}
 
 Individual models are easy to understand and work with. But in reality, models are often connected or related.   For applications with multiple models, you typically need to define _relations_ between models.  
 
@@ -107,9 +106,8 @@ The tool will prompt you to provide the information required to define the relat
 
 Now, look at `common/models/review.json`.  You should see this:
 
-**common/models/review.json**
-
-```js
+{% include code-caption.html content="common/models/review.json" %}
+```javascript
 ...
 "relations": {
   "coffeeShop": {
@@ -128,9 +126,8 @@ Now, look at `common/models/review.json`.  You should see this:
 
 Likewise, `common/models/reviewer.json` should have this:
 
-**common/models/reviewer.json**
-
-```js
+{% include code-caption.html content="common/models/reviewer.json" %}
+```javascript
 ...
 "relations": {
   "reviews": {
@@ -144,9 +141,8 @@ Likewise, `common/models/reviewer.json` should have this:
 
 And `common/models/coffee-shop.json` should have this:
 
-**common/models/coffee-shop.json**
-
-```js
+{% include code-caption.html content="common/models/coffee-shop.json" %}
+```javascript
 ...
 "relations": {
   "reviews": {
@@ -163,4 +159,5 @@ And `common/models/coffee-shop.json` should have this:
 ...
 ```
 
-Next: Continue to [Define access controls](/doc/{{page.lang}}/lb2/Define-access-controls.html).
+{% include next.html content="Continue to [Define access controls](Define-access-controls.html).
+" %}

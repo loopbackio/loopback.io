@@ -30,8 +30,7 @@ You can use embedded relations with relational databases, but be aware that the 
 
 EmbedsOne is used to represent a model that embeds another model, for example, a Customer embeds one billingAddress.
 
-**Sample embedded model**
-
+{% include code-caption.html content="Sample embedded model" %}
 ```javascript
 {
   id: 1,
@@ -47,8 +46,7 @@ EmbedsOne is used to represent a model that embeds another model, for example, a
 
 ### Define the relation in code
 
-**common/models/customer.js**
-
+{% include code-caption.html content="common/models/customer.js" %}
 ```javascript
 Customer.embedsOne(Address, {
   as: 'address', // default to the relation name - address
@@ -74,8 +72,7 @@ Customer.embedsOne(Address, {
 
 ### Define the relation in JSON
 
-**common/models/customer.json**
-
+{% include code-caption.html content="common/models/customer.json" %}
 ```javascript
 {
   "name": "Customer",
@@ -124,8 +121,7 @@ For example, if `Customer embedsOne Address`, and you define a `before save` 
 Use an embedsMany relation to indicate that a model can embed many instances of another model.
 For example, a Customer can have multiple email addresses and each email address is a complex object that contains label and address.
 
-**Sample model instance with many embedded models**
-
+{% include code-caption.html content="Sample model instance with many embedded models" %}
 ```javascript
 {
   id: 1,
@@ -151,8 +147,7 @@ one for the Customer record and one for the multiple email address data.
 
 ### Define the relation in code
 
-**common/models/customer.js**
-
+{% include code-caption.html content="common/models/customer.js" %}
 ```javascript
 Customer.embedsOne(EmailAddress, {
   as: 'emails', // default to the relation name - emailAddresses
@@ -178,8 +173,7 @@ Customer.embedsOne(EmailAddress, {
 
 ### Define the relation in JSON
 
-**common/models/customer.json**
-
+{% include code-caption.html content="common/models/customer.json" %}
 ```javascript
 {
   "name": "Customer",
@@ -236,8 +230,7 @@ Use an embedsMany with belongsTo relation to indicate a model that can embed man
 embeds many links to related people, such as an author or a reader. Each link belongs to a person and it's polymorphic,
 since a person can be an Author or a Reader.
 
-**Exampel embedsMany with belongsTo model instance**
-
+{% include code-caption.html content="Exampel embedsMany with belongsTo model instance" %}
 ```javascript
 { 
   id: 1
@@ -260,8 +253,7 @@ since a person can be an Author or a Reader.
 
 ### Define the embedsMany relation for Book
 
-**common/models/book.json**
-
+{% include code-caption.html content="common/models/book.json" %}
 ```javascript
 {
   "name": "Book",
@@ -289,8 +281,7 @@ since a person can be an Author or a Reader.
 
 ### Define the polymorphic belongsTo relation for Link
 
-**common/models/link.json**
-
+{% include code-caption.html content="common/models/link.json" %}
 ```javascript
 {
   "name": "Link",
@@ -330,8 +321,7 @@ since a person can be an Author or a Reader.
 
 ## ReferencesMany
 
-**Sample referencesMany model instance**
-
+{% include code-caption.html content="Sample referencesMany model instance" %}
 ```javascript
 {
   id: 1,
@@ -360,8 +350,7 @@ since a person can be an Author or a Reader.
 
 ### Define the relation in code
 
-**common/models/customer.json**
-
+{% include code-caption.html content="common/models/customer.json" %}
 ```javascript
 {
   "name": "Customer",
@@ -403,8 +392,7 @@ since a person can be an Author or a Reader.
 
 ### Define a transient data source
 
-**server/datasources.json**
-
+{% include code-caption.html content="server/datasources.json" %}
 ```javascript
 {
   ...
@@ -417,8 +405,7 @@ since a person can be an Author or a Reader.
 
 ### Use the transient data source for embedded models
 
-**server/model-config.json**
-
+{% include code-caption.html content="server/model-config.json" %}
 ```javascript
 {
   ...

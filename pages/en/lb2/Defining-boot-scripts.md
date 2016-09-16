@@ -82,8 +82,7 @@ In addition to the predefined boot scripts, you can define custom boot scripts t
 Use the [boot script generator](/doc/{{page.lang}}/lb2/Boot-script-generator.html), to quickly generate boot script templates.
 Depending on how you respond to the generator's prompts, it will generate a template for either a synchronous or asynchronous boot script:
 
-**Synchronous boot script template**
-
+{% include code-caption.html content="Synchronous boot script template" %}
 ```javascript
 module.exports = function(app) {
 };
@@ -91,8 +90,7 @@ module.exports = function(app) {
 
 Comments are omitted here for brevity.
 
-**Asynchronous boot script template**
-
+{% include code-caption.html content="Asynchronous boot script template" %}
 ```javascript
 module.exports = function(app, cb) {
   process.nextTick(cb); // Remove if you pass `cb` to an async function yourself
@@ -155,8 +153,7 @@ An asynchronous boot script must export a function that takes two arguments:
 
 For example, this boot script prints "hello world" and triggers the callback function after three seconds (3000 milliseconds).
 
-**/server/boot/script.js**
-
+{% include code-caption.html content="/server/boot/script.js" %}
 ```javascript
 module.exports = function(app, callback) {
   setTimeout(function() {
@@ -175,8 +172,7 @@ This object enables you to access system-defined variables and configurations. 
 
 For example, this boot script retrieves the names of all models registered with the application and displays them to the console. 
 
-**/server/boot/script.js**
-
+{% include code-caption.html content="/server/boot/script.js" %}
 ```javascript
 module.exports = function(app) {
   var modelNames = Object.keys(app.models);
@@ -193,8 +189,7 @@ module.exports = function(app) {
 
 If you add this boot script to an "empty" application, you will see this:
 
-**shell**
-
+{% include code-caption.html content="shell" %}
 ```javascript
 ...
 Models: ['User', 'AccessToken', 'ACL', 'RoleMapping', 'Role']
@@ -210,8 +205,7 @@ For example before default boot scripts in `/server/boot`. 
 You can also specify the loading order with options to the [`boot()`](http://apidocs.strongloop.com/loopback-boot/#boot) function call in `/server/server.js`.
 Replace the default scaffolded function call:
 
-**/server/server.js**
-
+{% include code-caption.html content="/server/server.js" %}
 ```javascript
 ...
 boot(app, __dirname);

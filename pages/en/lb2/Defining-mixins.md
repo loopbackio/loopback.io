@@ -67,8 +67,7 @@ which is _not the same_ as JavaScript's
 [`Object.defineProperty`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperty).
 " %}
 
-**common/mixins/timestamp.js**
-
+{% include code-caption.html content="common/mixins/timestamp.js" %}
 ```javascript
 module.exports = function(Model, options) {
   // Model is the model class
@@ -83,8 +82,7 @@ Above `Timestamp` mixin adds two properties: `'created'` and `'modified'` 
 Where as, in the example below, the mixin observes the change using [`before save`](/doc/{{page.lang}}/lb2/Operation-hooks.html) operation hook and manipulates input
 (see complete example: [loopback-example-mixins](https://github.com/strongloop/loopback-example-mixins)):
 
-**/server/mixins/squirrel.js**
-
+{% include code-caption.html content="/server/mixins/squirrel.js" %}
 ```javascript
 module.exports = function(Model, options) {
   'use strict';
@@ -104,8 +102,7 @@ module.exports = function(Model, options) {
 The configuration file [`server/model-config.json`](/doc/{{page.lang}}/lb2/model-config.json.html) specifies the list of directories to be searched for mixin scripts.
 The default LoopBack configuration is:
 
-**server/model-config.json**
-
+{% include code-caption.html content="server/model-config.json" %}
 ```javascript
 {
   "_meta": {
@@ -131,8 +128,7 @@ The default LoopBack configuration is:
 To apply a mixin to a model, add "mixins" to the model definition JSON file. The value of mixins is an object keyed by normalized mixin names.
 The value for each mixin is passed into the script as the options argument and these options are implemented by mixins.
 
-**common/models/note.json**
-
+{% include code-caption.html content="common/models/note.json" %}
 ```javascript
 {
   "name": "note",

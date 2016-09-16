@@ -3,15 +3,13 @@ title: "Introducing the Coffee Shop Reviews app"
 lang: en
 layout: page
 keywords: LoopBack
-tags:
+tags: [getting_started]
 sidebar: lb2_sidebar
 permalink: /doc/en/lb2/Introducing-the-Coffee-Shop-Reviews-app.html
-summary:
+summary: Coffee Shop Reviews is a complete small application that illustrates many of LoopBack's basic features and how they work together.
 ---
 
-{% include content/gs-prereqs.html lang=page.lang %}
-
-"Coffee Shop Reviews" is a complete small application that illustrates many of LoopBack's basic features and how they work together.
+{% include content/gs-prereqs.html two="true" lang=page.lang %}
 
 ## Overview of the application
 
@@ -93,4 +91,5 @@ $ git clone https://github.com/strongloop/loopback-getting-started.git
 $ cd loopback-getting-started
 ```
 
-Next: Continue to [Create new data source](/doc/{{page.lang}}/lb2/Create-new-data-source.html) to add a new data source that the application will use.
+{% include next.html content="Continue to [Create new data source](Create-new-data-source.html) to add a new data source that the application will use."
+%}

@@ -28,8 +28,7 @@ For more information, see [Relation generator](/doc/{{page.lang}}/lb2/Relation-
 
 For example, here is an excerpt from a model JSON file for a assembly model, expressing a hasAndBelongsToMany relation between assembly and part models:
 
-**/common/models/assembly.json**
-
+{% include code-caption.html content="/common/models/assembly.json" %}
 ```javascript
 {
   "name": "Assembly",
@@ -44,8 +43,7 @@ For example, here is an excerpt from a model JSON file for a assembly model, exp
 
 You can also define a hasAndBelongsToMany relation in code, though this is not recommended in general. For example:
 
-**/common/models/assembly.js**
-
+{% include code-caption.html content="/common/models/assembly.js" %}
 ```javascript
 Part.hasAndBelongsToMany(Assembly);
 Assembly.hasAndBelongsToMany(Part);
@@ -59,8 +57,7 @@ interface an "AssemblyPart" model must exist for it to work.
 
 Most of the time you should add "hasAndBelongToMany" relations to models on server side using the method:
 
-**Example method**
-
+{% include code-caption.html content="Example method" %}
 ```javascript
 assembly.parts.add(part, function(err) {
   //...
@@ -69,8 +66,7 @@ assembly.parts.add(part, function(err) {
 
 Thus, if you need to add the relation using REST, first check if the "AssemblyPart" model exists first. Then add the relation using this code:
 
-**Rest Example Method**
-
+{% include code-caption.html content="Rest Example Method" %}
 ```javascript
 Assembly.Parts.link({id:assemblyId, fk: partId}, partInstance,  function(value, header) {
   //success

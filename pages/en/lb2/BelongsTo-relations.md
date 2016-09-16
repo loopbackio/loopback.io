@@ -56,8 +56,7 @@ For more information, see [Relation generator](/doc/{{page.lang}}/lb2/Relation-
 For example, here is the model JSON file for the order model in
 [loopback-example-relations](https://github.com/strongloop/loopback-example-relations):
 
-**common/models/order.json**
-
+{% include code-caption.html content="common/models/order.json" %}
 ```javascript
 {
   "name": "Order",
@@ -75,8 +74,7 @@ For example, here is the model JSON file for the order model in
 
 Alternatively, you can define a "belongsTo" relation in code, though in general this is not recommended:
 
-**common/models/order.js**
-
+{% include code-caption.html content="common/models/order.js" %}
 ```javascript
 Order.belongsTo(Customer, {foreignKey: 'customerId'});
 ```

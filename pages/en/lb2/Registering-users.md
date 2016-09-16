@@ -23,8 +23,7 @@ You can also use the loopback-component-passport module to integrate login with 
 
 Create a user (register a user) by adding a model instance, in the same way as for any other model; email and password are the only required properties.
 
-**/boot/server/my-boot-script.js**
-
+{% include code-caption.html content="/boot/server/my-boot-script.js" %}
 ```javascript
 module.exports = function(app) {
   var User = app.models.User;
@@ -73,8 +72,7 @@ To enforce this constraint, set the `emailVerificationRequired` user model prop
 
 For example:
 
-**server/model-config.json**
-
+{% include code-caption.html content="server/model-config.json" %}
 ```javascript
 ...
 "user": {
@@ -94,8 +92,7 @@ This example creates a[remote hook](/doc/{{page.lang}}/lb2/Remote-hooks.html) o
 {% include important.html content="You must setup a `User` model as well as a `Mail` datasource before using the example below.
 " %}
 
-**/common/models/user.js**
-
+{% include code-caption.html content="/common/models/user.js" %}
 ```javascript
 var config = require('../../server/config.json');
 var path = require('path');

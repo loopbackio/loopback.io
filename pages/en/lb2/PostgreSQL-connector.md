@@ -34,8 +34,7 @@ Use the [Data source generator](/doc/{{page.lang}}/lb2/Data-source-generator.ht
 
 The entry in the application's `server/datasources.json` will look like this:
 
-**/server/datasources.json**
-
+{% include code-caption.html content="/server/datasources.json" %}
 ```javascript
 "mydb": {
   "name": "mydb",
@@ -157,8 +156,7 @@ The model definition consists of the following properties.
 
 For example:
 
-**/common/models/model.json**
-
+{% include code-caption.html content="/common/models/model.json" %}
 ```javascript
 {
   "name": "Inventory",

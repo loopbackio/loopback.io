@@ -145,8 +145,7 @@ If you don't want to expose certain create, retrieve, update, and delete operat
 For example, following the previous example, by convention custom model code would go in the file `common/models/location.js`.
 You would add the following lines to "hide" one of the predefined remote methods:
 
-**common/models/location.js**
-
+{% include code-caption.html content="common/models/location.js" %}
 ```javascript
 var isStatic = true;
 MyModel.disableRemoteMethod('deleteById', isStatic);
@@ -156,8 +155,7 @@ Now the `deleteById()` operation and the corresponding REST endpoint will not 
 
 For a method on the prototype object, such as `updateAttributes()`:
 
-**common/models/location.js**
-
+{% include code-caption.html content="common/models/location.js" %}
 ```javascript
 var isStatic = false;
 MyModel.disableRemoteMethod('updateAttributes', isStatic);
@@ -221,8 +219,7 @@ For more information, see [Accessing related models](Accessing-related-models.h
 For example, if there are post and tag models, where a post hasMany tags, add the following code to `/common/models/post.js` 
 to disable the remote methods for the related model and the corresponding REST endpoints: 
 
-**common/models/model.js**
-
+{% include code-caption.html content="common/models/model.js" %}
 ```javascript
 module.exports = function(Post) {
   Post.disableRemoteMethod('__get__tags', false);

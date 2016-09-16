@@ -167,8 +167,7 @@ You can configure some aspects of the generated services within the AngularJS cl
 This object is available to configuration blocks only; for more information, see
 [Module Loading & Dependencies](https://docs.angularjs.org/guide/module#module-loading-dependencies) in the AngularJS documentation.
 
-**app.js**
-
+{% include code-caption.html content="app.js" %}
 ```javascript
 angular.module('my-app-module')
   .config(function(LoopBackResourceProvider) {
@@ -203,8 +202,7 @@ Look at the method `Product.find(filter, callback)` to illustrate the differen
 
 On the server, one can write the following code to find all products named 'Pen':
 
-**server-code.js**
-
+{% include code-caption.html content="server-code.js" %}
 ```javascript
 Product.find({ 
     where: {
@@ -216,8 +214,7 @@ Product.find({ 
 
 The AngularJS code to perform the same operation is:
 
-**angular-code.js**
-
+{% include code-caption.html content="angular-code.js" %}
 ```javascript
 $scope.products = Product.find({
     filter: {
@@ -322,8 +319,7 @@ to the latest version of loopback-datasource-juggler to fix the problem.
 
 For example, consider the two following model definitions:
 
-**common/models/products.json**
-
+{% include code-caption.html content="common/models/products.json" %}
 ```javascript
 {
   "name": "Product",
@@ -337,8 +333,7 @@ For example, consider the two following model definitions:
 }
 ```
 
-**common/models/categories.json**
-
+{% include code-caption.html content="common/models/categories.json" %}
 ```javascript
 {
   "name": "Category",

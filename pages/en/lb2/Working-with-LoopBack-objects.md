@@ -39,8 +39,7 @@ To get a reference to the `app` object in a boot script, pass it as the first pa
 
 Asynchronous boot script with a callback function:
 
-**Asynchronous boot script - /server/boot/your-script.js**
-
+{% include code-caption.html content="Asynchronous boot script - /server/boot/your-script.js" %}
 ```javascript
 module.exports = function(app, cb) { //app is injected by LoopBack
   //...
@@ -49,8 +48,7 @@ module.exports = function(app, cb) { //app is injected by LoopBack
 
 Synchronous boot script without a callback function:
 
-**Synchronous boot script - /server/boot/your-script.js**
-
+{% include code-caption.html content="Synchronous boot script - /server/boot/your-script.js" %}
 ```javascript
 module.exports = function(app) { //app is injected by loopback
   //...
@@ -65,8 +63,7 @@ See [Defining boot scripts](/doc/{{page.lang}}/lb2/Defining-boot-scripts.html) f
 
 LoopBack sets `app` object automatically in the `request` object in middleware (actually, under the hood, Express does it). You can access in `server/server.js` as follows:
 
-**Middleware - /server/server.js**
-
+{% include code-caption.html content="Middleware - /server/server.js" %}
 ```javascript
 ...
 app.use(function(req, res, next) {
@@ -82,8 +79,7 @@ See [Defining middleware](/doc/{{page.lang}}/lb2/Defining-middleware.html) for m
 
 If you need a reference to `app` in your own custom scripts, simply require it (as in the models example):
 
-**A custom script - /server/your-script.js**
-
+{% include code-caption.html content="A custom script - /server/your-script.js" %}
 ```javascript
 var app = require('/server/server');
 ...
@@ -96,8 +92,7 @@ You simply require `/server/server.js` as you would any Node module.
 To get a handle on the `app` object in a model scaffolded by the [Model generator](/doc/{{page.lang}}/lb2/Model-generator.html),
 "require" it as you would any Node module:
 
-**Model - /common/models/book.js**
-
+{% include code-caption.html content="Model - /common/models/book.js" %}
 ```javascript
 var app = require('../../server/server'); //require `server.js` as in any node.js app
 
@@ -123,8 +118,7 @@ Book.app
 However, the one caveat to this is that you cannot reference `model.app` in `/common/model/model.js` because this file does not add the `app` property until bootstrapping has finished.
 This means you **cannot** do the following in `/common/models/model.js`:
 
-**CANNOT do this in a model script**
-
+{% include code-caption.html content="CANNOT do this in a model script" %}
 ```javascript
 module.exports = function(Book) {
   Book.app... //won't work because `.app` has not been added to the Book object yet
@@ -171,8 +165,7 @@ module.exports = function(MyModel) {
 
 The LoopBack app object is defined in the main script as follows:
 
-**/server/server.js**
-
+{% include code-caption.html content="/server/server.js" %}
 ```javascript
 var loopback = require('loopback');
 var app = loopback();
@@ -191,8 +184,7 @@ In some places such as boot scripts, `server` is used as the name of this object
 
 Once you get a handle on the `app` object, you can get a handle on to specific models via the `models` property on the `app` object.
 
-**Boot script - /server/boot/your-script.js**
-
+{% include code-caption.html content="Boot script - /server/boot/your-script.js" %}
 ```javascript
 module.exports = function(app) {
   var app = app.models.Book;
@@ -202,8 +194,7 @@ module.exports = function(app) {
 
 In your own custom script:
 
-**A custom script - /server/your-script.js**
-
+{% include code-caption.html content="A custom script - /server/your-script.js" %}
 ```javascript
 var app = require('/server/server');
 ```
@@ -224,8 +215,7 @@ require('../../server/server')
 
 For example, suppose you want to reference the User model within an observer (hook), for example:
 
-**common/models/my-model.js**
-
+{% include code-caption.html content="common/models/my-model.js" %}
 ```javascript
 module.exports = function(MyModel) {
   var app = require('../../server/server');
@@ -244,8 +234,7 @@ module.exports = function(MyModel) {
 
 Similar to getting a handle on a model you first get a handle onto the `app` object, then you access the `app.datasources` property:
 
-**Boot script - /server/boot/your-script.js**
-
+{% include code-caption.html content="Boot script - /server/boot/your-script.js" %}
 ```javascript
 module.exports = function(app) {
   var dataSource = app.datasources.db; //db can be any registered datasource in `/server/datasources.json`
@@ -255,8 +244,7 @@ module.exports = function(app) {
 
 And in your own script:
 
-**A custom script - /server/your-script.js**
-
+{% include code-caption.html content="A custom script - /server/your-script.js" %}
 ```javascript
 var app = require('./server/server');
 ...
@@ -266,8 +254,7 @@ var datasource = app.datasources.db;
 
 In middleware:
 
-**Middleware - /server/server.js**
-
+{% include code-caption.html content="Middleware - /server/server.js" %}
 ```javascript
 ...
 app.use(function(req, res, next) {
@@ -279,8 +266,7 @@ app.use(function(req, res, next) {
 
 In models:
 
-**Model - /common/models/model.js**
-
+{% include code-caption.html content="Model - /common/models/model.js" %}
 ```javascript
 module.exports = function(Book) {
   Book.read = function() {
@@ -295,8 +281,7 @@ module.exports = function(Book) {
 
 Be careful in models, because the following _will not work_:
 
-**Model - /common/models/model.js**
-
+{% include code-caption.html content="Model - /common/models/model.js" %}
 ```javascript
 module.exports = function(Book) {
   Book.app... //`Book` is not registered yet! This WON'T WORK.

@@ -37,8 +37,7 @@ At the prompt "**Enter the connector name without the loopback-connector- prefix
 
 This creates an entry in `datasources.json` like this (for example):
 
-**/server/datasources.json**
-
+{% include code-caption.html content="/server/datasources.json" %}
 ```javascript
 ...
 "myStorageDataSource": {
@@ -53,8 +52,7 @@ This creates an entry in `datasources.json` like this (for example):
 Configure a storage data source by editing the [datasources.json](/doc/{{page.lang}}/lb2/datasources.json.html) file,
 for example as shown in the [storage service example](https://github.com/strongloop/loopback-component-storage/blob/master/example-2.0/):
 
-**/server/datasources.json**
-
+{% include code-caption.html content="/server/datasources.json" %}
 ```javascript
 ...
 "myStorageDataSource": {
@@ -71,8 +69,7 @@ for example as shown in the [storage service example](https://github.com/strong
 Use the [model generator](/doc/{{page.lang}}/lb2/Model-generator.html) to create a new model, then edit the model.json file, 
 as shown in the [storage service example](https://github.com/strongloop/loopback-component-storage/blob/master/example-2.0/):
 
-**/server/models/container.json**
-
+{% include code-caption.html content="/server/models/container.json" %}
 ```javascript
 {
   "name": "container",
@@ -87,8 +84,7 @@ as shown in the [storage service example](https://github.com/strongloop/loopbac
 
 ## Connect the model to the storage data source
 
-**/server/model-config.json**
-
+{% include code-caption.html content="/server/model-config.json" %}
 ```javascript
 ...
   "container": {

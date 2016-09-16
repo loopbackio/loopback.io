@@ -44,8 +44,7 @@ You must perform relation operations in boot scripts.
 
 In the model JavaScript file, the model is passed into the top-level function, so the model object is available directly; for example for a "customer" model:
 
-**/common/models/customer.js**
-
+{% include code-caption.html content="/common/models/customer.js" %}
 ```javascript
 module.exports = function(Customer) {
   // Customer object is available 
@@ -65,8 +64,7 @@ LoopBack also supports [Promises](https://www.promisejs.org/) in addition to cal
 
 In a boot script, use the `app.models` object to get a reference to any model; for example:
 
-**/server/boot/script.js**
-
+{% include code-caption.html content="/server/boot/script.js" %}
 ```javascript
 module.exports = function(app) {
   var User = app.models.user;

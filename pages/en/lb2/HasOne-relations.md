@@ -28,8 +28,7 @@ For more information, see [Relation generator](/doc/{{page.lang}}/lb2/Relation-
 
 For example, consider two models: supplier and account.
 
-**common/models/supplier.json**
-
+{% include code-caption.html content="common/models/supplier.json" %}
 ```javascript
 {
   "name": "supplier",
@@ -55,8 +54,7 @@ For example, consider two models: supplier and account.
 
 A supplier has one account, where the foreign  key is on the declaring model: account.supplierId -> supplier.id.
 
-**common/models/account.json**
-
+{% include code-caption.html content="common/models/account.json" %}
 ```javascript
 {
   "name": "account",
@@ -84,8 +82,7 @@ A supplier has one account, where the foreign  key is on the declaring model: a
 
 Alternatively, you can define a "hasOne" relation in code, though in general this is not recommended:
 
-**common/models/supplier.js**
-
+{% include code-caption.html content="common/models/supplier.js" %}
 ```javascript
 Supplier.hasOne(Account, {foreignKey: 'supplierId', as: 'account'});
 ```

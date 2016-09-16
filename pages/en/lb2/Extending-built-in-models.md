@@ -16,8 +16,7 @@ you choose a base model, that is, the model that your model will "extend" and fr
 The tool will set the  base property in the [model definition JSON file](/doc/{{page.lang}}/lb2/Model-definition-JSON-file.html) accordingly.
 For example, for a model that extends [PersistedModel](http://apidocs.strongloop.com/loopback/#persistedmodel):
 
-**/common/models/model.json**
-
+{% include code-caption.html content="/common/models/model.json" %}
 ```javascript
 {
   "name": "Order",
@@ -45,8 +44,7 @@ See [LoopBack types](/doc/{{page.lang}}/lb2/LoopBack-types.html) for informatio
 
 You can also extend models using JavaScript file in the model JavaScript file, `/common/models/_modelName_.js` (where _`modelName`_ is the name of the model); for example:
 
-**/common/models/user.js**
-
+{% include code-caption.html content="/common/models/user.js" %}
 ```javascript
 var properties = {
   firstName: {
@@ -92,8 +90,7 @@ This is a special case of the general ability to mix in model properties and fun
 
 For example:
 
-**common/models/myModel.js**
-
+{% include code-caption.html content="common/models/myModel.js" %}
 ```javascript
 var TimeStamp = modelBuilder.define('TimeStamp', {
   created: Date,
@@ -113,8 +110,7 @@ The `loopback.Model.extend()` function calls `setup()` so code you put in `setu
 
 For example: 
 
-**common/models/myModel.js**
-
+{% include code-caption.html content="common/models/myModel.js" %}
 ```javascript
 MyModel = Model.extend('MyModel');
 

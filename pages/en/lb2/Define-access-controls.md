@@ -2,16 +2,15 @@
 title: "Define access controls"
 lang: en
 layout: page
+toc: false
 keywords: LoopBack
-tags:
+tags: [getting_started]
 sidebar: lb2_sidebar
 permalink: /doc/en/lb2/Define-access-controls.html
-summary:
+summary: Access controls determine which users are allowed to read and write model data and execute methods on the models.
 ---
 
-{% include content/gs-prereqs.html lang=page.lang %}
-
-Access controls determine which users are allowed to read and write model data or execute methods on the models
+{% include content/gs-prereqs.html two="true" lang=page.lang %}
 
 {% include note.html content="
 If you followed the previous step in the tutorial, go to [Introducing access controls](#introducing-access-controls).
@@ -120,4 +119,5 @@ When you're done, the ACL section in `common/models/review.json` should look l
 ...
 ```
 
-Next: Continue to [Define a remote hook](/doc/{{page.lang}}/lb2/Define-a-remote-hook.html).
+{% include next.html content="Continue to [Define a remote hook](Define-a-remote-hook.html)."
+%}

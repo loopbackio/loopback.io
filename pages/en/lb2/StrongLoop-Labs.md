@@ -14,6 +14,8 @@ _**StrongLoop Labs projects**_ provide early access to advanced or experimental 
 In general, these projects may lack usability, completeness, documentation, and robustness, and may be outdated.
 " %}
 
+<div style="float:right;">{% include image.html file="9830552.png" alt="StrongLoop Labs"  %}</div>
+
 These are the StrongLoop Labs projects:
 
 * [Android SDK](/doc/{{page.lang}}/lb2/Android-SDK.html)

@@ -23,8 +23,7 @@ containing `password` and `email or username` properties as the first paramet
 
 This example creates a route in [boot script](/doc/{{page.lang}}/lb2/Defining-boot-scripts.html) to handle login request:
 
-**/server/boot/routes.js**
-
+{% include code-caption.html content="/server/boot/routes.js" %}
 ```javascript
 //...
 app.post('/login', function(req, res) {
@@ -66,8 +65,7 @@ You may also specify how long the access token is valid by providing a `ttl` (
 
 For example:
 
-**Boot script**
-
+{% include code-caption.html content="Boot script" %}
 ```javascript
 var TWO_WEEKS = 60 * 60 * 24 * 7 * 2;
 User.login({
@@ -107,8 +105,7 @@ The return value is a JSON object with an `id` property that is the access token
 
 For example:
 
-**Shell**
-
+{% include code-caption.html content="Shell" %}
 ```javascript
 {
   "id": "GOkZRwgZ61q0XXVxvxlB8TS1D6lrG7Vb9V8YwRDfy3YGAN7TM7EnxWHqdbIZfheZ",
@@ -126,8 +123,7 @@ Use the [`User.logout()`](http://apidocs.strongloop.com/loopback/#user-logout) m
 
 In the example below, a route to handle logout request is created:
 
-**/server/boot/routes.js**
-
+{% include code-caption.html content="/server/boot/routes.js" %}
 ```javascript
 //...
 //log a user out
@@ -185,8 +181,7 @@ For example, in [routes.js](https://github.com/strongloop/loopback-example-user-
 (in [loopback-example-user-management](https://github.com/strongloop/loopback-example-user-management)) below,
 a route: `/request-password-reset` is created to handle password reset request:
 
-**/server/boot/routes.js**
-
+{% include code-caption.html content="/server/boot/routes.js" %}
 ```javascript
 //send an email with instructions to reset an existing user's password
 app.post('/request-password-reset', function(req, res, next) {
@@ -214,8 +209,7 @@ The example below assumes you have setup a `User` model and `Mail` datasource.
 
 " %}
 
-**/common/models/user.js**
-
+{% include code-caption.html content="/common/models/user.js" %}
 ```javascript
 //...
 //send password reset link when password reset requested
@@ -240,8 +234,7 @@ user.on('resetPasswordRequest', function(info) {
 And when the user follows a link to reset password, temporary access token is used to find the user and update password using 
 [`updateAttribute()`](https://apidocs.strongloop.com/loopback/#persistedmodel-prototype-updateattribute) method as follows:
 
-**/server/boot/routes.js**
-
+{% include code-caption.html content="/server/boot/routes.js" %}
 ```javascript
 //...
 User.findById(req.accessToken.userId, function(err, user) {

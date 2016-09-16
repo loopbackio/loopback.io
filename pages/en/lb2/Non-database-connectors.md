@@ -1,15 +1,15 @@
 ---
-title: "Non-database connectors"
+title: "Other connectors overview"
 lang: en
 layout: page
 keywords: LoopBack
 tags:
 sidebar: lb2_sidebar
 permalink: /doc/en/lb2/Non-database-connectors.html
-summary:
+summary: LoopBack supports a number of connectors to backend systems beyond databases.
 ---
 
-LoopBack supports a number of connectors to backend systems beyond databases:
+Other LoopBack connectors include:
 
 * [Email connector](/doc/{{page.lang}}/lb2/Email-connector.html)
 * [Push connector](/doc/{{page.lang}}/lb2/Push-connector.html)
@@ -26,8 +26,7 @@ Models attached to non-database data sources can serve as controllers (a model c
 Such models usually don't have property definitions as the backing connector doesn't support CRUD operations.
 For example, to define a model for an external REST API, we can have a model as follows:
 
-**common/models/my-rest-service.json**
-
+{% include code-caption.html content="common/models/my-rest-service.json" %}
 ```javascript
 {
   "name": "MyRestService",
@@ -42,8 +41,7 @@ For example, to define a model for an external REST API, we can have a model as 
 
 The model is configured to attach to the REST data source.
 
-**server/model-config.json**
-
+{% include code-caption.html content="server/model-config.json" %}
 ```javascript
 ...
   "MyRestService": {

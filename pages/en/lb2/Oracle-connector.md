@@ -10,25 +10,19 @@ summary:
 ---
 
 {% include warning.html content="
-
 The Oracle connector does not work on Mac OSX 10.11 (El Capitan) due to [SIP](https://en.wikipedia.org/wiki/System_Integrity_Protection) runtime protections and restrictions.
 Specifically, DYLD environment variables are now ignored; hence, rendering the Oracle connector inoperable due to the DYLD_LIBRARY_PATH dependency.
 For a workaround, see [How to Disable SIP in OS X El Capitan](http://osxdaily.com/2015/10/05/disable-rootless-system-integrity-protection-mac-os-x/).
-
 " %}
 
-**See also**:
-
-* [Installing the Oracle connector](/doc/{{page.lang}}/lb2/Installing-the-Oracle-connector.html)
-* [Connecting to Oracle](/doc/{{page.lang}}/lb2/Connecting-to-Oracle.html)
+{% include see-also.html content="
+* [Installing the Oracle connector](Installing-the-Oracle-connector.html)
+* [Connecting to Oracle](Connecting-to-Oracle.html)
 * [loopback-example-database](https://github.com/strongloop/loopback-example-database/tree/oracle)
-* [Database discovery API]([Database discovery API](http://apidocs.strongloop.com/loopback-datasource-juggler/#datasource-prototype-discoverandbuildmodels). 
+* [Database discovery API]([Database discovery API](http://apidocs.strongloop.com/loopback-datasource-juggler/#datasource-prototype-discoverandbuildmodels). "
+%}
 
-{% include note.html content="
-
-The Oracle connector requires Oracle 8.x - 12.x.
-
-" %}
+{% include note.html content="The Oracle connector requires Oracle 8.x - 12.x." %}
 
 ## Installation
 
@@ -41,9 +35,7 @@ $ npm install loopback-connector-oracle --save
 See [Installing the Oracle connector](/doc/{{page.lang}}/lb2/Installing-the-Oracle-connector.html) for further installation instructions.
 
 {% include warning.html content="
-
 On 64-bit Windows systems, the Oracle connector runs only on 64-bit version of Node.js.
-
 " %}
 
 ## Connector properties
@@ -103,8 +95,7 @@ The data source then has the following settings.
 
 For example:
 
-**/server/datasources.json**
-
+{% include code-caption.html content="/server/datasources.json" %}
 ```javascript
 {
   "demoDB": {
@@ -156,8 +147,7 @@ var ds = loopback.createDataSource({
 
 Here is an example for `datasources.json`:
 
-**/server/datasources.json**
-
+{% include code-caption.html content="/server/datasources.json" %}
 ```javascript
 {
   "demoDB": {
@@ -211,8 +201,7 @@ Here is an example for `datasources.json`:
 
 For example,
 
-**/server/datasources.json**
-
+{% include code-caption.html content="/server/datasources.json" %}
 ```javascript
 {
   "demoDB": {
@@ -234,8 +223,7 @@ The model definition consists of the following properties:
 * options: Model level operations and mapping to Oracle schema/table.
 * properties: Property definitions, including mapping to Oracle column.
 
-**/common/models/model.json**
-
+{% include code-caption.html content="/common/models/model.json" %}
 ```javascript
 {
     "name":"Inventory",

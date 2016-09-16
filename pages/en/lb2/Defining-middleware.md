@@ -267,9 +267,8 @@ function myMiddlewareFunc([err,] req, res, next) {
 
 An example of a middleware function with three arguments, called to process the request when previous handlers did not report an error:
 
-**Regular middleware**
-
-```js
+{% include code-caption.html content="Regular middleware" %}
+```javascript
 return function myMiddleware(req, res, next) {
     // ...
 };
@@ -277,9 +276,8 @@ return function myMiddleware(req, res, next) {
 
 Here is a constructor (factory) for this function; use this form when registering it in `middleware.json`:
 
-**Regular middleware**
-
-```js
+{% include code-caption.html content="Regular middleware" %}
+```javascript
 module.exports = function() {
   return function myMiddleware(req, res, next) {
     // ...
@@ -289,9 +287,8 @@ module.exports = function() {
 
 An example a middleware function with four arguments, called only when an error was encountered.
 
-**Error handler middleware**
-
-```js
+{% include code-caption.html content="Error handler middleware" %}
+```javascript
 function myErrorHandler(err, req, res, next) {
   // ...
 }
@@ -323,9 +320,8 @@ This file specifies all an application's middleware functions and the phase in w
 When you create an application using the [Application generator](/doc/{{page.lang}}/lb2/Application-generator.html) 
 it creates a default `middleware.json` file that looks as follows:
 
-**server/middleware.json**
-
-```js
+{% include code-caption.html content="server/middleware.json" %}
+```javascript
 {
   "initial:before": {
     "loopback#favicon": {}
@@ -544,9 +540,8 @@ In addition to the predefined phases in `middleware.json`, you can add your own
 
 For example, below is a `middleware.json` file defining a new phase "log" that comes after "parse" and before "routes":
 
-**server/middleware.json**
-
-```js
+{% include code-caption.html content="server/middleware.json" %}
+```javascript
 {
   ...
   "parse": {},
@@ -580,9 +575,8 @@ To register middleware with the LoopBack phases API, use the following `app` m
 
 For example:
 
-**server/server.js**
-
-```js
+{% include code-caption.html content="server/server.js" %}
+```javascript
 var loopback = require('loopback');
 var morgan = require('morgan');
 var errorhandler = require('error-handler');
@@ -628,9 +622,8 @@ The parameters are:
 
 For example:
 
-**server/server.js**
-
-```js
+{% include code-caption.html content="server/server.js" %}
+```javascript
 var loopback = require('loopback');
 var boot = require('loopback-boot');
 
@@ -654,9 +647,8 @@ For more information, see the [Express documentation for app.use()](http://expr
 
 For example, to register middleware for all endpoints that start with "/greet":
 
-**/server/server.js**
-
-```js
+{% include code-caption.html content="/server/server.js" %}
+```javascript
 app.use('/greet', function(req, res, next ) { 
   //...
 });
@@ -670,9 +662,8 @@ The above middleware is triggered by all routes that begin with \"/greet\", so \
 
 To register middleware for _all_ endpoints:
 
-**server/server.js or server/boot/scripts.js**
-
-```js
+{% include code-caption.html content="server/server.js or server/boot/scripts.js" %}
+```javascript
 app.use(function(req, res, next ) {
   //...
 });
@@ -685,9 +676,8 @@ Be aware of the order of your middleware registration when using "catch-all" rou
 
 For example:
 
-**server/server.js**
-
-```js
+{% include code-caption.html content="server/server.js" %}
+```javascript
 //...
 app.get('/', function(req, res, next) {
   res.send('hello from `get` route');

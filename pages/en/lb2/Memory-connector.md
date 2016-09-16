@@ -30,8 +30,7 @@ You can persist data between application restarts using the `file` property. See
 
 By default, an application created with the [Application generator](/doc/{{page.lang}}/lb2/Application-generator.html) has a memory data source defined; for example:
 
-**/server/datasources.json**
-
+{% include code-caption.html content="/server/datasources.json" %}
 ```javascript
 "db": {
     "name": "db",
@@ -83,8 +82,7 @@ To maintain data across application restarts, specify a JSON file in which to st
 
 The simplest way to do this is by editing `server/datasources.json`; for example:
 
-**server/datasources.json**
-
+{% include code-caption.html content="server/datasources.json" %}
 ```javascript
 {
   "db": {
@@ -97,8 +95,7 @@ The simplest way to do this is by editing `server/datasources.json`; for example
 
 You can also set the persistence file in a boot script; for example:
 
-**server/boot/script.js**
-
+{% include code-caption.html content="server/boot/script.js" %}
 ```javascript
 var memory = loopback.createDataSource({
   connector: loopback.Memory,

@@ -2,16 +2,15 @@
 title: "Connect your API to a data source"
 lang: en
 layout: page
+toc: false
 keywords: LoopBack
-tags:
+tags: [getting_started]
 sidebar: lb2_sidebar
 permalink: /doc/en/lb2/Connect-your-API-to-a-data-source.html
-summary:
+summary: LoopBack enables you to easily persist your data model to a variety of data sources without having to write code.
 ---
 
 {% include content/gs-prereqs.html lang=page.lang %}
-
-LoopBack enables you to easily persist your data model to a variety of data sources without having to write code.
 
 You're going to take the app from the previous section and connect it to MySQL.   
 
@@ -60,9 +59,8 @@ Press the down-arrow key to highlight **MySQL**, then hit **Enter**.  
 
 The tool adds the data source definition to the `server/datasources.json` file, which will now look as shown below.  Notice the "mysqlDs" data source you just added, as well as in-memory data source named "db," which is there by default.
 
-**datasources.json**
-
-```js
+{% include code-caption.html content="datasources.json" %}
+```javascript
 {
   "db": {
     "name": "db",
@@ -101,9 +99,8 @@ add `host`, `port`, `database`, `username`, and `password` properties.  
 
 **To use your own MySQL server**: enter the hostname, port number, and login credentials for your server. 
 
-**/server/datasources.json**
-
-```js
+{% include code-caption.html content="/server/datasources.json" %}
+```javascript
 {
   "db": {
     "name": "db",
@@ -125,9 +122,8 @@ add `host`, `port`, `database`, `username`, and `password` properties.  
 
 Now you've created a MySQL data source and you have a CoffeeShop model; you just need to connect them.  LoopBack applications use the [model-config.json](/doc/{{page.lang}}/lb2/model-config.json) file to link models to data sources.  Edit `/server/model-config.json` and look for the CoffeeShop entry:
 
-**/server/model-config.json**
-
-```js
+{% include code-caption.html content="/server/model-config.json" %}
+```javascript
 ...
   "CoffeeShop": {
     "dataSource": "db",
@@ -150,9 +146,8 @@ The `loopback-getting-started` module contains the `create-sample-models.js`�
 The auto-migration script below is an example of a _boot script_ that LoopBack executes when an application initially starts up. Use boot scripts for initialization and to perform any other logic your application needs to perform when it starts. See [Defining boot scripts](/doc/en/lb2/Defining-boot-scripts) for more information.
 " %}
 
-**/server/boot/create-sample-models.js**
-
-```js
+{% include code-caption.html content="/server/boot/create-sample-models.js" %}
+```javascript
 module.exports = function(app) {
   app.dataSources.mysqlDs.automigrate('CoffeeShop', function(err) {
     if (err) throw err;
@@ -209,4 +204,6 @@ You can also use the API Explorer:
 3.  Click **Try it out!**
 4.  You'll see the data for the three coffee shops created in the above script. 
 
-Next: In [Extend your API](/doc/{{page.lang}}/lb2/Extend-your-API.html), you'll learn how to add a custom method to your model.
+{% include next.html content= "
+In [Extend your API](Extend-your-API.html), you'll learn how to add a custom method to your model.
+" %}

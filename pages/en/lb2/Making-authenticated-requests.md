@@ -38,8 +38,7 @@ curl -X GET http://localhost:3000/api/widgets?access_token=$ACCESS_TOKEN
 
 To use cookies for authentication, add the following to server.js (before boot):
 
-**/server/server.js**
-
+{% include code-caption.html content="/server/server.js" %}
 ```javascript
 app.use(loopback.token({
     model: app.models.accessToken
@@ -56,8 +55,7 @@ The Loopback Angular SDK doesn't support using cookies, and expects you to be u
 
 To allow the current logged in user id for REST APIs,  configure the token middleware with currentUserLiteral options. 
 
-**/server/server.js**
-
+{% include code-caption.html content="/server/server.js" %}
 ```javascript
 app.use(loopback.token({
     model: app.models.accessToken,
@@ -76,8 +74,7 @@ Please note the URL will be rewritten to `http://localhost:3000/api/users/<curr
 A user will be effectively logged out by deleting the access token they were issued at login.
 This affects only the specified access token; other tokens attached to the user will still be valid.
 
-**/server/boot/script.js**
-
+{% include code-caption.html content="/server/boot/script.js" %}
 ```javascript
 var USER_ID = 1;
 var ACCESS_TOKEN = '6Nb2ti5QEXIoDBS5FQGWIz4poRFiBCMMYJbYXSGHWuulOuy0GTEuGx2VCEVvbpBK';

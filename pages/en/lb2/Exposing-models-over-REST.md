@@ -15,8 +15,7 @@ LoopBack models automatically have a [standard set of HTTP endpoints](http://api
 that provide REST APIs for create, read, update, and delete (CRUD) operations on model data.
 The `public` property in [model-config.json](/doc/{{page.lang}}/lb2/model-config.json.html) specifies whether to expose the model's REST APIs, for example:
 
-**/server/model-config.json**
-
+{% include code-caption.html content="/server/model-config.json" %}
 ```javascript
 ...
 "MyModel": {
@@ -46,8 +45,7 @@ If you created your application using the [application generator](Application-ge
 
 To manually expose a model over REST with the `loopback.rest` router, use the following code, for example:
 
-**/server/server.js**
-
+{% include code-caption.html content="/server/server.js" %}
 ```javascript
 var app = loopback();
 app.use(loopback.rest());
@@ -203,8 +201,7 @@ For an application using [loopback-component-explorer](https://github.com/strong
 * Set the NODE_ENV environment variable to "production".
 * Then in `server/component-config.production.json`:
 
-**server/component-config.production.json**
-
+{% include code-caption.html content="server/component-config.production.json" %}
 ```javascript
 {
   "loopback-component-explorer": null
@@ -304,8 +301,7 @@ If you don't want to expose certain create, retrieve, update, and delete operat
 For example, following the previous example, by convention custom model code would go in the file `common/models/location.js`.
 You would add the following lines to "hide" one of the predefined remote methods:
 
-**common/models/location.js**
-
+{% include code-caption.html content="common/models/location.js" %}
 ```javascript
 var isStatic = true;
 MyModel.disableRemoteMethod('deleteById', isStatic);
@@ -315,8 +311,7 @@ Now the `deleteById()` operation and the corresponding REST endpoint will not 
 
 For a method on the prototype object, such as `updateAttributes()`:
 
-**common/models/location.js**
-
+{% include code-caption.html content="common/models/location.js" %}
 ```javascript
 var isStatic = false;
 MyModel.disableRemoteMethod('updateAttributes', isStatic);
@@ -358,8 +353,7 @@ MyUser.disableRemoteMethod('__updateById__accessTokens', false);
 
 You may want to only expose read-only operations on your model hiding all POST, PUT, DELETE verbs
 
-**common/models/model.js**
-
+{% include code-caption.html content="common/models/model.js" %}
 ```javascript
 Product.disableRemoteMethod('create', true);				// Removes (POST) /products
 Product.disableRemoteMethod('upsert', true);				// Removes (PUT) /products
@@ -378,8 +372,7 @@ To disable a REST endpoints for related model methods, use [disableRemoteMethod
 For example, if there are post and tag models, where a post hasMany tags, add the following code to `/common/models/post.js` 
 to disable the remote methods for the related model and the corresponding REST endpoints: 
 
-**common/models/model.js**
-
+{% include code-caption.html content="common/models/model.js" %}
 ```javascript
 module.exports = function(Post) {
   Post.disableRemoteMethod('__get__tags', false);

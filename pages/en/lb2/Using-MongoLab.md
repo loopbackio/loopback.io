@@ -14,8 +14,7 @@ since the connection string is dynamically generated.
 
 For example, the entry in `datasources.json` might look like this: 
 
-**/server/datasources.json**
-
+{% include code-caption.html content="/server/datasources.json" %}
 ```javascript
 "mongodb": {
   "defaultForType": "mongodb",

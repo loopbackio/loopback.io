@@ -2,6 +2,7 @@
 title: "Next steps"
 lang: en
 layout: page
+toc: false
 keywords: LoopBack
 tags:
 sidebar: lb2_sidebar

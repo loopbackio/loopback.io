@@ -41,8 +41,7 @@ To create a hasManyThrough relation, respond with **Yes** to the prompt for a "t
 
 For example:
 
-**common/models/physician.json**
-
+{% include code-caption.html content="common/models/physician.json" %}
 ```javascript
 {  
   "name": "Physician",
@@ -63,8 +62,7 @@ For example:
   ...
 ```
 
-**common/models/patient.json**
-
+{% include code-caption.html content="common/models/patient.json" %}
 ```javascript
 {  
   "name": "Patient",
@@ -85,8 +83,7 @@ For example:
   ...
 ```
 
-**common/models/appointment.json**
-
+{% include code-caption.html content="common/models/appointment.json" %}
 ```javascript
 {  
   "name": "Appointment",
@@ -113,8 +110,7 @@ For example:
 
 You can also define a `hasManyThrough` relation in code, though this is not generally recommended:
 
-**common/models/physician.js**
-
+{% include code-caption.html content="common/models/physician.js" %}
 ```javascript
 //...
 Appointment.belongsTo(Patient);
@@ -166,8 +162,7 @@ Here is an example of defining a hasManyThrough relation with foreign keys. Cons
 
 You can define the relations in JSON files in `common/models` as follows:
 
-**common/models/courses.json**
-
+{% include code-caption.html content="common/models/courses.json" %}
 ```javascript
 ...
   "relations": {
@@ -181,8 +176,7 @@ You can define the relations in JSON files in `common/models` as follows:
 ...
 ```
 
-**common/models/students.json**
-
+{% include code-caption.html content="common/models/students.json" %}
 ```javascript
 "relations": {
     "courses": {
@@ -199,8 +193,7 @@ You can define the relations in JSON files in `common/models` as follows:
 In some cases, you may want to define a relationship from a model to itself. For example, consider a social media application where users can follow other users.
 In this case, a user may follow many other users and may be followed by many other users. The code below shows how this might be defined, along with corresponding `keyThrough` properties:
 
-**common/models/user.js**
-
+{% include code-caption.html content="common/models/user.js" %}
 ```javascript
 User.hasMany(User, {as: 'followers', foreignKey: 'followeeId', keyThrough: 'followerId', through: Follow});
 User.hasMany(User, {as: 'following', foreignKey: 'followerId', keyThrough: 'followeeId', through: Follow});

@@ -2,16 +2,15 @@
 title: "Add a custom Express route"
 lang: en
 layout: page
+toc: false
 keywords: LoopBack
-tags:
+tags: [getting_started]
 sidebar: lb2_sidebar
 permalink: /doc/en/lb2/Add-a-custom-Express-route.html
-summary:
+summary: Because LoopBack is built on Express, you can add custom routes just as you do in Express.
 ---
 
 {% include content/gs-prereqs.html lang=page.lang %}
-
-Because LoopBack is built on Express, you can add custom routes just as you do in Express.
 
 In this part of the tutorial, you're going to add a new custom route.
 
@@ -45,9 +44,8 @@ For more information on boot scripts, see [Defining boot scripts](/doc/{{page.l
 
 For example, add a new boot script named `routes.js` in `/server/boot` directory, with this code:
 
-**/server/boot/routes.js**
-
-```js
+{% include code-caption.html content="/server/boot/routes.js" %}
+```javascript
 module.exports = function(app) {
   // Install a "/ping" route that returns "pong"
   app.get('/ping', function(req, res) {
@@ -58,9 +56,8 @@ module.exports = function(app) {
 
 As an aside, you could have just as well used [Express router middleware](http://expressjs.com/4x/api.html#router) instead, like this:
 
-**/server/boot/routes.js**
-
-```js
+{% include code-caption.html content="/server/boot/routes.js" %}
+```javascript
 module.exports = function(app) {
   var router = app.loopback.Router();
   router.get('/ping', function(req, res) {
@@ -72,9 +69,8 @@ module.exports = function(app) {
 
 In fact you can also add routes right in `server.js` using the Express API.  For example, add this call to [`app.use()`](http://expressjs.com/4x/api.html#app.use) just before the call to `app.start()`:
 
-**server/server.js**
-
-```
+{% include code-caption.html content="server/server.js" %}
+```javascript
 ...
 app.use('/express-status', function(req, res, next) {
   res.json({ running: true });
@@ -96,4 +92,5 @@ Now, run the application again:
 
 Load [http://0.0.0.0:3000/ping](http://0.0.0.0:3000/ping).  You'll see "pong" as the response. 
 
-Next:  Check out [Next steps](/doc/{{page.lang}}/lb2/Next-steps.html) for information on what to read next.
+{% include next.html content="Check out [Next steps](Next-steps.html) for information on what to read next."
+%}

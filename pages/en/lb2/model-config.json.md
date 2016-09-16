@@ -22,8 +22,7 @@ You can also use a `/client/model-config.json` for client-specific (browser) mod
 
 For example, here is the default `model-config.json` that lists all the built-in models:
 
-**model-config.json**
-
+{% include code-caption.html content="model-config.json" %}
 ```javascript
 {
   "_meta": {

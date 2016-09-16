@@ -35,8 +35,7 @@ Two settings in the User model control the realms:
 
 For example,
 
-**server/model-config.json**
-
+{% include code-caption.html content="server/model-config.json" %}
 ```javascript
 "User": {
   "dataSource": "db",

@@ -1181,8 +1181,10 @@ div.box.box1 {
   border: 1px solid #cccccc;
   background-color: #EBF5EB;
   padding: 10px;
-  border-radius: 3px; 
+  border-radius: 3px;
   margin: 10px auto 20px auto;
   width: 680px;
   padding: 10px;
 }
+
+pre.highlight {margin-top: 0;}

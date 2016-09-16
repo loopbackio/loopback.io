@@ -11,14 +11,12 @@ summary:
 
 ## Overview
 
-The Oracle connector depends on the [strong-oracle](https://github.com/strongloop/strong-oracle) module as the Node.js driver for Oracle databases.
-Since strong-oracle is a [C-- add-on](http://nodejs.org/api/addons.html), the installation requires the presence of C-- development tools to compile
-and build the module from source code.
+The Oracle connector depends on the [strong-oracle](https://github.com/strongloop/strong-oracle) module as the Node.js driver for Oracle databases.  Since strong-oracle is a [C++ add-on](http://nodejs.org/api/addons.html), the installation requires the presence of C++ development tools to compile and build the module from source code.
 At runtime, strong-oracle also requires dynamic libraries from 
 [Oracle Database Instant Client](http://www.oracle.com/technetwork/database/features/instant-client/index.html).
-The [LoopBack Oracle Installer](https://github.com/strongloop/loopback-oracle-installer)module takes care of the binary dependencies and simplifies the whole process.  
-The LoopBack Oracle installer downloads and extracts the prebuilt LoopBack Oracle binary dependencies into the parent module's `node_modules` directory
-and sets up the environment for the [Oracle Database Instant Client](http://www.oracle.com/technetwork/database/features/instant-client/index.html).
+
+The [LoopBack Oracle Installer](https://github.com/strongloop/loopback-oracle-installer) module takes care of the binary dependencies and simplifies the whole process.  
+The LoopBack Oracle installer downloads and extracts the prebuilt LoopBack Oracle binary dependencies into the parent module's `node_modules` directory and sets up the environment for the [Oracle Database Instant Client](http://www.oracle.com/technetwork/database/features/instant-client/index.html).
 
 To install the Oracle connector, use the following command:
 
@@ -55,11 +53,9 @@ Linux:
 
 Where <user> is the user name and <app-name> is the app name.
 
-{% include warning.html content="
+### Linux
 
-libaio requirement for Linux
-
-On Linux systems, the libaio library is required. If it is not present, you must install it as follows:
+On Linux systems, the `libaio` library is required. If it is not present, you must install it as follows:
 
 * On Ubuntu/Debian:
   ```shell
@@ -70,11 +66,7 @@ On Linux systems, the libaio library is required. If it is not present, you must
   $ sudo yum install libaio
   ```
 
-" %}
-
 To activate the strong-oracle settings for your terminal window, add the following statements to `$HOME/.bash_profile` (or `.profile` depending on what shell you use):
-
-**~/.bashrc | ~/.bash_profile**
 
 ```
 if [ -f ~/strong-oracle.rc ]; then
@@ -101,16 +93,12 @@ You have to activate it using one of the methods below:
 ## Installation from behind a proxy server
 
 {% include important.html content="
-
 This feature is supported by loopback-oracle-installer vesion 1.1.3 or later.
-
 " %}
 
 If your system is behind a corporate HTTP/HTTPS proxy to access the internet, you'll need to set the proxy for npm before running 'npm install'.
 
 For example,
-
-**shell**
 
 ```shell
 $ npm config set proxy http://proxy.mycompany.com:8080
@@ -118,8 +106,6 @@ $ npm config set https-proxy http://https-proxy.mycompany.com:8080
 ```
 
 If the proxy url requires username/password, you can use the following syntax:
-
-**shell**
 
 ```shell
 $ npm config set proxy http://youruser:yourpass@proxy.mycompany.com:8080
@@ -140,15 +126,14 @@ So you can configure the proxy using environment variables too.
 
 Linux or Mac:
 
-**shell**
-
-`HTTP_PROXY=http://proxy.mycompany.com:8080 npm install`
+```shell
+HTTP_PROXY=http://proxy.mycompany.com:8080 npm install
+```
 
 Windows:
 
-**shell**
 
-```
+```shell
 set HTTP_PROXY=http://proxy.mycompany.com:8080
 npm install
 ```

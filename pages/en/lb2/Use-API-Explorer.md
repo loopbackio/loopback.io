@@ -2,19 +2,17 @@
 title: "Use API Explorer"
 lang: en
 layout: page
+toc: false
 keywords: LoopBack
-tags:
+tags: [getting_started]
 sidebar: lb2_sidebar
 permalink: /doc/en/lb2/Use-API-Explorer.html
-summary:
+summary: LoopBack applications come with a built-in API Explorer you can use to test REST API operations during development.
 ---
 
 {% include content/gs-prereqs.html lang=page.lang %}
 
-
-LoopBack applications come with a built-in API Explorer you can use to test REST API operations during development.
-
-You're probably not the only one who'll use the API you just created.  That means you'll need to document your API.  Fortunately, LoopBack generates a developer portal / API Explorer for you. 
+You're not the only one who'll use the API you just created.  That means you'll need to document your API.  Fortunately, LoopBack provides API Explorer for you. 
 
 {% include note.html content="
 If you followed [Create a simple API](/doc/en/lb2/Create-a-simple-API.html), keep that app running and skip down to [Run API Explorer](#run-api-explorer).
@@ -91,4 +89,5 @@ API Explorer automatically adds \"filter\" to the query string, but you must ent
 
 You may have noticed the **accessToken** field and **Set Access Token** button at the top right of the API Explorer window. Use these to authenticate a user and "login" to an app so you can perform actions that require authentication. For more information, see [Introduction to User model authentication](/doc/{{page.lang}}/lb2/Introduction-to-User-model-authentication).
 
-Next: In [Connect your API to a data source](/doc/{{page.lang}}/lb2/Connect-your-API-to-a-data-source.html), you'll learn how to persist your data model to a database such as MongoDB.
+{% include next.html content="In [Connect your API to a data source](Connect-your-API-to-a-data-source.html), you'll learn how to persist your data model to a database such as MongoDB."
+%}

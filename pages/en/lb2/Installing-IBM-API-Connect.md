@@ -4,7 +4,7 @@ lang: en
 keywords: LoopBack
 tags: [getting_started]
 sidebar: lb2_sidebar
-permalink: /doc/en/lb2/Installing-IBM-API-Connect.html.html
+permalink: /doc/en/lb2/Installing-IBM-API-Connect.html
 summary:
 ---
 

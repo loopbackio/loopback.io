@@ -109,8 +109,7 @@ For example:
 You can also create a storage component data source programmatically with the `loopback.createDataSource()` method, putting code in `/server/server.js`. 
 For example, using local file system storage:
 
-**server/server.js**
-
+{% include code-caption.html content="server/server.js" %}
 ```javascript
 var ds = loopback.createDataSource({
     connector: require('loopback-component-storage'),
@@ -123,8 +122,7 @@ var container = ds.createModel('container');
 
 Here's another example, this time for Amazon:
 
-**server/server.js**
-
+{% include code-caption.html content="server/server.js" %}
 ```javascript
 var ds = loopback.createDataSource({
   connector: require('loopback-component-storage'),

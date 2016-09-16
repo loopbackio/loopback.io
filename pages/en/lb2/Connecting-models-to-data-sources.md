@@ -252,8 +252,7 @@ $ npm install --save loopback-connector-oracle
 
 This command adds the following entry to `package.json`: 
 
-**/package.json**
-
+{% include code-caption.html content="/package.json" %}
 ```javascript
 ...
 "dependencies": {

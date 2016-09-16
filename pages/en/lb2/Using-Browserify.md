@@ -17,8 +17,7 @@ These instructions must be included in the browser bundle together with all conf
 
 Don't worry, you don't have to understand these details. Just call `boot.compileToBrowserify()`, and it will take care of everything for you.
 
-**Build file (Gruntfile.js, gulpfile.js)**
-
+{% include code-caption.html content="Build file (Gruntfile.js, gulpfile.js)" %}
 ```javascript
 var browserify = require('browserify');
 var boot = require('loopback-boot');

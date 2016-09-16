@@ -33,8 +33,7 @@ For more information, see [Relation generator](/doc/{{page.lang}}/lb2/Relation-
 
 For example, here is the model JSON file for the customer model in [loopback-example-relations](https://github.com/strongloop/loopback-example-relations):
 
-**common/models/customer.json**
-
+{% include code-caption.html content="common/models/customer.json" %}
 ```javascript
 {
   "name": "Customer",
@@ -51,8 +50,7 @@ For example, here is the model JSON file for the customer model in [loopback-ex
 
 Alternatively, you can define the relation in code, though in general this is not recommended:
 
-**common/models/customer.js**
-
+{% include code-caption.html content="common/models/customer.js" %}
 ```javascript
 Customer.hasMany(Review, {as: 'reviews', foreignKey: 'authorId'});
 ```

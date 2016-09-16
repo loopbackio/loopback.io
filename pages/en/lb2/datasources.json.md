@@ -184,8 +184,7 @@ You cannot use objects or array values.
 
 Example data sources:
 
-**datasources.json**
-
+{% include code-caption.html content="datasources.json" %}
 ```javascript
 {
   // the key is the datasource name
@@ -197,8 +196,7 @@ Example data sources:
 }
 ```
 
-**datasources.production.json**
-
+{% include code-caption.html content="datasources.production.json" %}
 ```javascript
 {
   db: {

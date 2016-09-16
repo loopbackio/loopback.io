@@ -33,8 +33,7 @@ Return only the first five query results:
 
 `/cars?filter[limit]=5`
 
-**Node API**
-
+{% include code-caption.html content="Node API" %}
 ```javascript
 Cars.find({limit: 5},  function() {
     //...

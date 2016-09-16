@@ -15,8 +15,7 @@ By default, LoopBack models you create expose a 
 [standard set of HTTP endpoints](http://apidocs.strongloop.com/loopback/#persistedmodel) for create, read, update, and delete (CRUD) operations.
 The `public` property in [model-config.json](/doc/{{page.lang}}/lb2/model-config.json.html) specifies whether to expose the model's REST APIs, for example:
 
-**/server/model-config.json**
-
+{% include code-caption.html content="/server/model-config.json" %}
 ```javascript
 ...
   "MyModel": {
@@ -43,8 +42,7 @@ For an application using [loopback-component-explorer](https://github.com/strong
 * Set the NODE_ENV environment variable to "production".
 * Then in `server/component-config.production.json`:
 
-**server/component-config.production.json**
-
+{% include code-caption.html content="server/component-config.production.json" %}
 ```javascript
 {
   "loopback-component-explorer": null
@@ -64,8 +62,7 @@ By default LoopBack enables [Cross-origin resource sharing](https://en.wikipedi
 
 If you are using a JavaScript client, you must also enable CORS on the client side. For example, one way to enable it with AngularJS is:
 
-**/client/app.js**
-
+{% include code-caption.html content="/client/app.js" %}
 ```javascript
 var myApp = angular.module('myApp', [
     'myAppApiService']);

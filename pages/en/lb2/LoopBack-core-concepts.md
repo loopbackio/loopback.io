@@ -2,7 +2,6 @@
 title: "LoopBack core concepts"
 lang: en
 layout: page
-toc: false
 keywords: LoopBack
 tags:
 sidebar: lb2_sidebar
@@ -14,7 +13,7 @@ summary:
 " %}
 
 <div style="float: right;">
-{% include image.html file="9830550.png" alt="Model inheritance diagram" caption="Model inheritance" max-width="500"%}
+{% include image.html file="9830550.png" alt="Model inheritance diagram" caption="Model inheritance" max-width="400"%}
 </div>
 
 ## Models
@@ -87,30 +86,30 @@ with a full set of create, read, update, and delete operations from the [Persi
     <tr>
       <td>Create</td>
       <td>
-        <p><a href="/doc/en/lb2/PersistedModel-REST-API.html#PersistedModelRESTAPI-Createmodelinstance">PUT /<em>modelName</em></a></p>
-        <p><a href="/doc/en/lb2/PersistedModel-REST-API.html#PersistedModelRESTAPI-Update/insertinstance">POST /<em>modelName</em></a></p>
+        <a href="/doc/en/lb2/PersistedModel-REST-API.html#create-model-instance">PUT /<em>modelName</em></a>
+        <br/><a href="/doc/en/lb2/PersistedModel-REST-API.html#update--insert-instance">POST /<em>modelName</em></a>
       </td>
       <td><code><a href="http://apidocs.strongloop.com/loopback/#persistedmodel-create" class="external-link" rel="nofollow">create()</a><sup>*</sup></code></td>
       <td>INSERT</td>
     </tr>
     <tr>
       <td>Read (Retrieve)</td>
-      <td><a href="/doc/en/lb2/PersistedModel-REST-API.html#PersistedModelRESTAPI-Findmatchinginstances">GET /modelName?filter=...</a></td>
+      <td><a href="/doc/en/lb2/PersistedModel-REST-API.html#find-matching-instances">GET /modelName?filter=...</a></td>
       <td><code><a href="http://apidocs.strongloop.com/loopback/#persistedmodel-find" class="external-link" rel="nofollow">find()</a><sup>*</sup></code></td>
       <td>SELECT</td>
     </tr>
     <tr>
       <td>Update (Modify)</td>
       <td>
-        <p><a href="/doc/en/lb2/PersistedModel-REST-API.html#PersistedModelRESTAPI-Update/insertinstance">POST /<em>modelName</em></a>&nbsp;</p>
-        <p><a href="/doc/en/lb2/PersistedModel-REST-API.html#PersistedModelRESTAPI-Updatemodelinstanceattributes">PUT /modelName</a></p>
+      <a href="/doc/en/lb2/PersistedModel-REST-API.html#update--insert-instance">POST /<em>modelName</em></a> <br/>
+        <a href="/doc/en/lb2/PersistedModel-REST-API.html#update-model-instance-attributes">PUT /modelName</a>
       </td>
       <td><code><a href="http://apidocs.strongloop.com/loopback/#persistedmodel-updateall" class="external-link" rel="nofollow">updateAll()</a><sup>*</sup></code></td>
       <td>UPDATE</td>
     </tr>
     <tr>
       <td>Delete (Destroy)</td>
-      <td><a href="/doc/en/lb2/PersistedModel-REST-API.html#PersistedModelRESTAPI-Deletemodelinstance">DELETE /<em>modelName</em>/<em>modelID</em></a></td>
+      <td><a href="/doc/en/lb2/PersistedModel-REST-API.html#delete-model-instance">DELETE /<em>modelName</em>/<em>modelID</em></a></td>
       <td><code><a href="http://apidocs.strongloop.com/loopback/#persistedmodel-destroybyid" class="external-link" rel="nofollow">destroyById()</a><sup>*</sup></code></td>
       <td>DELETE</td>
     </tr>
@@ -167,59 +166,3 @@ LoopBack components provide additional "plug-in" functionality:
   data with the server application when reconnected.
 * [OAuth 2.0](/doc/{{page.lang}}/lb2/OAuth-2.0.html) -  enables LoopBack applications to function as oAuth 2.0 providers to authenticate and
   authorize client applications and users to access protected API endpoints.
-
-## Examples
-
-StrongLoop provides numerous LoopBack example applications. The table below lists some of the key examples.
-Refer to [https://github.com/strongloop/loopback-example](https://github.com/strongloop/loopback-example) for a complete list.
-
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="https://github.com/strongloop/loopback-getting-started" class="external-link" rel="nofollow">loopback-getting-started</a></td>
-      <td>The basics of LoopBack. Follow along in&nbsp;<a href="/doc/{{page.lang}}/lb2/Getting-started-with-LoopBack.html" class="external-link" rel="nofollow">Getting started with LoopBack</a>&nbsp;to build the example.</td>
-    </tr>
-    <tr>
-      <td><a href="https://github.com/strongloop/loopback-getting-started-intermediate" class="external-link" rel="nofollow">loopback-getting-started-intermediate</a></td>
-      <td>Full-stack example that builds on&nbsp;<code>loopback-getting-started</code>&nbsp;to demonstrate intermediate level features of LoopBack. Follow instructions in <a href="/doc/{{page.lang}}/lb2/Getting-started-part-II.html" class="external-link" rel="nofollow">Getting started part II</a>&nbsp;to build the example.</td>
-    </tr>
-    <tr>
-      <td><a href="https://github.com/strongloop/loopback-example-mongodb" class="external-link" rel="nofollow">loopback-example-mongodb</a></td>
-      <td>LoopBack with MongoDB.</td>
-    </tr>
-    <tr>
-      <td><a href="https://github.com/strongloop/loopback-example-mssql" class="external-link" rel="nofollow">loopback-example-mssql</a></td>
-      <td>LoopBack with Microsoft SQL Server.</td>
-    </tr>
-    <tr>
-      <td><a href="https://github.com/strongloop/loopback-example-mysql" class="external-link" rel="nofollow">loopback-example-mysql</a></td>
-      <td>LoopBack with MySQL.</td>
-    </tr>
-    <tr>
-      <td><a href="https://github.com/strongloop/loopback-example-oracle" class="external-link" rel="nofollow">loopback-example-oracle</a></td>
-      <td>LoopBack with Oracle.</td>
-    </tr>
-    <tr>
-      <td><a href="https://github.com/strongloop/loopback-example-postgresql" class="external-link" rel="nofollow">loopback-example-postgresql</a></td>
-      <td>LoopBack with PostgreSQL.</td>
-    </tr>
-    <tr>
-      <td><a href="https://github.com/strongloop/loopback-example-relations" class="external-link" rel="nofollow">loopback-example-relations</a></td>
-      <td>Model relations and filtering via REST</td>
-    </tr>
-    <tr>
-      <td><a href="https://github.com/strongloop/loopback-example-app-logic" class="external-link" rel="nofollow">loopback-example-app-logic</a></td>
-      <td>How to add your own logic to a LoopBack app</td>
-    </tr>
-    <tr>
-      <td><a href="https://github.com/strongloop/loopback-example-access-control" class="external-link" rel="nofollow">loopback-example-access-control</a></td>
-      <td>Controlling access to your API endpoints</td>
-    </tr>
-  </tbody>
-</table>

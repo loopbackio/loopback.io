@@ -324,8 +324,7 @@ You must the handle the '`resetPasswordRequest'` event to send a reset email co
 
 The example below shows how to get an access token that a user can use to reset their password. 
 
-**common/models/user.js**
-
+{% include code-caption.html content="common/models/user.js" %}
 ```javascript
 User.on('resetPasswordRequest', function (info) {
   console.log(info.email); // the email of the requested user

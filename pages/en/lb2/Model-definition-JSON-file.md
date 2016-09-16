@@ -33,8 +33,7 @@ However, the model name (\"FooBar\") will be preserved via the model's name prop
 
 For example, here is an excerpt from a model definition file for a customer model that would be in `/common/models/customer.json`:
 
-**customer.json**
-
+{% include code-caption.html content="customer.json" %}
 ```javascript
 {
   "name": "Customer",  // See Top-level properties below
@@ -531,8 +530,7 @@ By default, a model inherits all properties from the base. To exclude some base 
 
 For example,
 
-**common/models/customer.json**
-
+{% include code-caption.html content="common/models/customer.json" %}
 ```javascript
 ... 
 "base": "User",
@@ -552,8 +550,7 @@ The property value is an array of strings, and each string in the array must mat
 
 An example of a hidden property is User.password:
 
-**common/models/user.json**
-
+{% include code-caption.html content="common/models/user.json" %}
 ```javascript
 ...
   "properties": {
@@ -586,8 +583,7 @@ The property value is an array of strings, and each string in the array must mat
 
 An example of a hidden property is User.email:
 
-**common/models/user.json**
-
+{% include code-caption.html content="common/models/user.json" %}
 ```javascript
 ...
   "properties": {

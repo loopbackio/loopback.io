@@ -251,8 +251,7 @@ The following example illustrates using two providers:
 Use `providers.json` (in project root directory) to set up the external authentication providers.
 For more information, see [Configuring providers.json](/doc/{{page.lang}}/lb2/Configuring-providers.json.html). Here's an example:
 
-**providers.json**
-
+{% include code-caption.html content="providers.json" %}
 ```javascript
 {
  "facebook-login": {

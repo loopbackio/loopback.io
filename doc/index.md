@@ -10,10 +10,11 @@ summary: LoopBack is a highly-extensible, open-source Node.js framework that ena
 {% include warning.html content="
 This is a draft site for LoopBack documentation.  Until it goes live, please refer to
 [docs.strongloop.com](http://docs.strongloop.com/display/LB) for the official documentation.
-See [Background](#background) below for more information.
+See [Background](#background-new-documentation-site) below for more information.
 " %}
 
 This site contains draft docs for:
+
 - [LoopBack 2.x](en/lb2) - Content has been migrated; testing underway.
 - [LoopBack 3.0](en/lb3) - Currently has a draft navigation sidebar, only some 3.0-specific content.
 - [Contributing to LoopBack docs](contrib) - some information specifically for doc. contributors.

@@ -2,16 +2,15 @@
 title: "Add a static web page"
 lang: en
 layout: page
+toc: false
 keywords: LoopBack
-tags:
+tags: [getting_started]
 sidebar: lb2_sidebar
 permalink: /doc/en/lb2/Add-a-static-web-page.html
-summary:
+summary: LoopBack leverages Express middleware to make it easy to serve up static content such as web pages.
 ---
 
 {% include content/gs-prereqs.html lang=page.lang %}
-
-LoopBack leverages [Express middleware](http://expressjs.com/guide/using-middleware.html) to make it easy to serve up static content such as web pages.
 
 {% include note.html content="
 If you followed the previous steps in the tutorial, skip down to [Introduction to middleware](#introduction-to-middleware).
@@ -31,11 +30,11 @@ $ npm install
 ## Introduction to middleware
 
 {% include note.html content="
-LoopBack is built on [Express](http://expressjs.com/), one of the most popular Node application frameworks.  The top-level LoopBack `app` object inherits all the methods and properties of the [Express `app` object](http://expressjs.com/en/4x/api.html#app). See [Working with LoopBack objects](/doc/en/lb2/Working-with-LoopBack-objects).
+LoopBack is built on [Express](http://expressjs.com/), one of the most popular Node application frameworks.  The top-level LoopBack `app` object inherits all the methods and properties of the
+[Express `app` object](http://expressjs.com/en/4x/api.html#app). See [Working with LoopBack objects](/doc/en/lb2/Working-with-LoopBack-objects).
 " %}
 
-Before continuing, you need to understand a basic concept that LoopBack inherits from Express: middleware.  
-
+Before continuing, you need to understand the basics of [Express middleware](http://expressjs.com/guide/using-middleware.html).
 _Middleware_ is simply a JavaScript function with access to the request object (`req`) representing the HTTP request, the response object (`res`) representing the HTTP response, and the next middleware in line in the request-response cycle of an Express application, commonly denoted by a variable named `next`. Middleware can:
 
 *   Execute any code.
@@ -47,8 +46,7 @@ LoopBack middleware is exactly like [Express middleware](http://expressjs.com/g
 
 When you create an application with the [Application generator](/doc/{{page.lang}}/lb2/Application-generator), it creates a `server/middleware.json` file that specifies what middleware is executed in which phase.  Registering new middleware is as simple as editing this JSON file:
 
-**server/middleware.json**  
-
+{% include code-caption.html content="server/middleware.json" %}
 ```js
 {
   "initial:before": {
@@ -94,9 +92,8 @@ First, you have to disable the default route handler for the root URL.   Rememb
 
 This happens because by default the scaffolded application has a boot script named `root.js` that sets up route-handling middleware for the root route ("/"):
 
-**server/boot/root.js**
-
-```js
+{% include code-caption.html content="server/boot/root.js" %}
+```javascript
 module.exports = function(server) { // Install a `/` route that returns server status
   var router = server.loopback.Router();
   router.get('/', server.loopback.status());
@@ -114,9 +111,8 @@ Next, you need to define static middleware to serve files in the `/client` dir
 
 Edit `server/middleware.json`.  Look for the "files" entry:
 
-**server/middleware.json**
-
-```js
+{% include code-caption.html content="server/middleware.json" %}
+```javascript
 ...
 "files": {},
 ...
@@ -124,9 +120,8 @@ Edit `server/middleware.json`.  Look for the "files" entry:
 
 Add the following:
 
-**server/middleware.json**
-
-```js
+{% include code-caption.html content="server/middleware.json" %}
+```javascript
 ...
 "files": {
   "loopback#static": {
@@ -142,9 +137,9 @@ These lines define _[static middleware](/doc/{{page.lang}}/lb2/Defining-middlew
 
 Now, the application will serve any files you put in the `/client` directory as static (client-side) content.  So, to see it in action, add an HTML file to `/client`.  For example, add a file named `index.html` with this content:
 
-**/client/index.html**
+{% include code-caption.html content="/client/index.html" %}
 
-```
+```html
 <head><title>LoopBack</title></head>
 <body>
     <h1>LoopBack Rocks!</h1>
@@ -164,4 +159,5 @@ When you load [http://0.0.0.0:3000/](http://0.0.0.0:3000/) now instead of the 
 
 {% include image.html file="5570648.png" alt="" %}
 
-Next: In [Add a custom Express route](/doc/{{page.lang}}/lb2/Add-a-custom-Express-route.html), you'll add a simple route handler in the same way you would in an Express application.
+{% include next.html content="In [Add a custom Express route](Add-a-custom-Express-route.html), you'll add a simple route handler in the same way you would in an Express application."
+%}

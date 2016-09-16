@@ -45,8 +45,7 @@ For example, consider an Oracle database. First, the code sets up the Oracle dat
 Then the call to `discoverAndBuildModels()` creates models from the database tables.
 Calling it with the `associations: true` option makes the discovery follow primary/foreign key relations.
 
-**/server/bin/script.js**
-
+{% include code-caption.html content="/server/bin/script.js" %}
 ```javascript
 var loopback = require('loopback');
 var ds = loopback.createDataSource('oracle', {
@@ -82,8 +81,7 @@ function (err, models) {
 Some connectors provide discovery capability so that we can use DataSource to discover model definitions from existing database schema.
 The following APIs enable UI or code to discover database schema definitions that can be used to build LoopBack models.
 
-**/server/bin/script.js**
-
+{% include code-caption.html content="/server/bin/script.js" %}
 ```javascript
 // List database tables and/or views
 ds.discoverModelDefinitions({views: true, limit: 20}, cb);

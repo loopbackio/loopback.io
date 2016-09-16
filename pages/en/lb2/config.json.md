@@ -13,8 +13,7 @@ summary:
 
 Define application server-side settings in `/server/config.json`. For example here are the default settings:
 
-**config.json**
-
+{% include code-caption.html content="config.json" %}
 ```javascript
 {
   "restApiRoot": "/api",
@@ -261,8 +260,7 @@ The additional files can override the top-level keys with value-types (strings, 
 
 For example:
 
-**config.production.js**
-
+{% include code-caption.html content="config.production.js" %}
 ```javascript
 module.exports = {
   host: process.env.CUSTOM_HOST,

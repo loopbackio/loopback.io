@@ -43,8 +43,7 @@ This will install the module from npm and add it as a dependency to the applicat
 Use the [Data source generator](/doc/{{page.lang}}/lb2/Data-source-generator.html) to add a MongoDB data source to your application.
 The entry in the application's `/server/datasources.json` will look like this:
 
-**/server/datasources.json**
-
+{% include code-caption.html content="/server/datasources.json" %}
 ```javascript
 "mydb": {
   "name": "mydb",
@@ -121,8 +120,7 @@ Username and password are required only if the MongoDB server has authentication
 
 For example:
 
-**/server/datasources.json**
-
+{% include code-caption.html content="/server/datasources.json" %}
 ```javascript
 {
   "mongodb_dev": { 
@@ -163,8 +161,7 @@ To set the option in the model definition file, set the property `settings.mong
 
 For example:
 
-**common/models/my-model.json**
-
+{% include code-caption.html content="common/models/my-model.json" %}
 ```javascript
 {
   "name": "MyModel",
@@ -235,8 +232,7 @@ The following operators are compatible and a default value of  $set will be app
 You might want to customize the collection name for a LoopBack model. It can be done in the model definition JSON file.
 In the example below, the Post model will be mapped to the PostCollection collection in MongoDB.
 
-**/common/models/model.json**
-
+{% include code-caption.html content="/common/models/model.json" %}
 ```javascript
 {
   "name": "Post",
@@ -254,8 +250,7 @@ In the example below, the Post model will be mapped to the PostCollection collec
 The LoopBack MongoDB connector supports the replica set configuration using the [MongoDB connection string URI format](http://docs.mongodb.org/manual/reference/connection-string/).
 For example, here is a snippet for the data source configuration:
 
-**/server/datasources.json**
-
+{% include code-caption.html content="/server/datasources.json" %}
 ```javascript
 {
   "connector": "mongodb",
@@ -276,8 +271,7 @@ If your server doesn't come back within 30 seconds, the driver gives up. You can
 
 For example:
 
-**server/datasources.json**
-
+{% include code-caption.html content="server/datasources.json" %}
 ```javascript
 {
   "accountDB": {
@@ -304,8 +298,7 @@ Instead, it is transparently mapped to the `id` field, which is declared by de
 
 To access the `_id` property, you must define it explicitly as your model ID, along with its type; For example:
 
-**/server/script.js**
-
+{% include code-caption.html content="/server/script.js" %}
 ```javascript
 var ds = app.dataSources.db;
 MyModel = ds.createModel('mymodel', {
@@ -315,8 +308,7 @@ MyModel = ds.createModel('mymodel', {
 
 Example with a Number _id :
 
-**/server/script.js**
-
+{% include code-caption.html content="/server/script.js" %}
 ```javascript
 MyModel = ds.createModel('mymodel', {
   _id: { type: Number, id: true }
@@ -332,8 +324,7 @@ See [Logical Query Operators (MongoDB documentation)](http://docs.mongodb.org/m
 
 To use the logical operators with LoopBack's query filter, use a `where` clause as follows (for example):
 
-**/server/script.js**
-
+{% include code-caption.html content="/server/script.js" %}
 ```javascript
 // Find posts that have title = 'My Post' and content = 'Hello'
 Post.find({where: {and: [{title: 'My Post'}, 

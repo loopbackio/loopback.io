@@ -89,8 +89,7 @@ Nested objects and arrays are not supported at the moment.
 
 For example:
 
-**config.production.js**
-
+{% include code-caption.html content="config.production.js" %}
 ```javascript
 module.exports = {
   host: process.env.CUSTOM_HOST,
@@ -105,8 +104,7 @@ By default, stack traces are returned in JSON responses. To turn disable stack t
 * Set the NODE_ENV environment variable to "production"
 * Include the following in `server/middleware.production.json`:
 
-**server/middleware.production.json**
-
+{% include code-caption.html content="server/middleware.production.json" %}
 ```javascript
 "final:after": {
     "loopback#errorHandler": {
@@ -132,8 +130,7 @@ For an application using [loopback-component-explorer](https://github.com/strong
 * Set the NODE_ENV environment variable to "production".
 * Then in `server/component-config.production.json`:
 
-**server/component-config.production.json**
-
+{% include code-caption.html content="server/component-config.production.json" %}
 ```javascript
 {
   "loopback-component-explorer": null
@@ -144,8 +141,7 @@ For an application using [loopback-component-explorer](https://github.com/strong
 
 You can customize the REST error handler by adding the error handler callback function to `server/config.local.js` as follows:
 
-**server/config.local.js**
-
+{% include code-caption.html content="server/config.local.js" %}
 ```javascript
 module.exports = {
   remoting: {
@@ -168,8 +164,7 @@ To exclude error stack traces from HTTP responses (typical in production), set t
 
 The standard configuration for development is:
 
-**server/middleware.json**
-
+{% include code-caption.html content="server/middleware.json" %}
 ```javascript
 ...
 "final:after": {
@@ -179,8 +174,7 @@ The standard configuration for development is:
 
 For production, exclude stack traces from HTTP responses as follows:
 
-**server/middleware.production.json**
-
+{% include code-caption.html content="server/middleware.production.json" %}
 ```javascript
 ...
 "final:after": {
@@ -206,8 +200,7 @@ The additional files can override the top-level data-source options with string 
 
 Example data sources:
 
-**datasources.json**
-
+{% include code-caption.html content="datasources.json" %}
 ```javascript
 {
   // the key is the datasource name
@@ -219,8 +212,7 @@ Example data sources:
 }
 ```
 
-**datasources.production.json**
-
+{% include code-caption.html content="datasources.production.json" %}
 ```javascript
 {
   db: {

@@ -207,8 +207,7 @@ This table describes the operators available in "where" filters. See [Examples]
 
 Use the AND and OR operators to create compound logical filters based on simple where filter conditions, using the following syntax.
 
-**Node API**
-
+{% include code-caption.html content="Node API" %}
 ```javascript
 {where: {<and|or>: [condition1, condition2, ...]}}
 ```
@@ -231,8 +230,7 @@ Essentially, `regexp` is just like an operator in which you provide a regular 
 A regular expression value can also include one or more [flags](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions#Advanced_searching_with_flags).  For example, append `/i` to the regular expression to perform a case-insensitive match.
 " %}
 
-**Node API**
-
+{% include code-caption.html content="Node API" %}
 ```javascript
 {where: {property: {regexp: expression}}}
 ```

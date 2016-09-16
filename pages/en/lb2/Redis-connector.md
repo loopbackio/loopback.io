@@ -30,8 +30,7 @@ Use the [data source generator](/doc/{{page.lang}}/lb2/Data-source-generator.ht
 When prompted for the connector, choose **other,** then enter **redis** for the connector name.
 The entry in the application's `server/datasources.json` will look like this:
 
-**server/datasources.json**
-
+{% include code-caption.html content="server/datasources.json" %}
 ```javascript
 "redisDS": {
   "name": "redisDS",

@@ -51,8 +51,7 @@ To disable npm compression, delete the entry from `server/middleware.json` so i
 
 Below is a basic example using the `createChangeStream()` method in a LoopBack application.
 
-**server/boot/realtime.js**
-
+{% include code-caption.html content="server/boot/realtime.js" %}
 ```javascript
 var es = require('event-stream');
 module.exports = function(app) {
@@ -78,8 +77,7 @@ This example shows how to consume the `ChangeStream` from a browser using the [E
 which is built in to JavaScript implemented in most browsers.
 The example code below assumes a model called `MyModel` and simply logs the response to the browser JavaScript console.
 
-**Browser script**
-
+{% include code-caption.html content="Browser script" %}
 ```javascript
 var urlToChangeStream = '/api/MyModels/change-stream?_format=event-stream';
 var src = new EventSource(urlToChangeStream);

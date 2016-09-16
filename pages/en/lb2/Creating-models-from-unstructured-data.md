@@ -21,8 +21,7 @@ The following data sources support instance introspection: 
 
 For example:
 
-**/server/boot/script.js**
-
+{% include code-caption.html content="/server/boot/script.js" %}
 ```javascript
 module.exports = function(app) {
   var db = app.dataSources.db;

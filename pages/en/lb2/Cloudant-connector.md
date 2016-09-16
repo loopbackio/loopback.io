@@ -93,8 +93,7 @@ Edit the `datasources.json` to add other supported properties as required:
 
 Per-model configuration is also supported for database selection and to specify different LoopBack model to document mappings:
 
-**common/models/MyUser.json**
-
+{% include code-caption.html content="common/models/MyUser.json" %}
 ```javascript
 {
   "name": "MyUser",

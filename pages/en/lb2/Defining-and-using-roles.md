@@ -17,8 +17,7 @@ In contrast, dynamic roles aren't assigned to users and are determined during ac
 Here is an [example](https://github.com/strongloop/loopback-example-access-control/blob/master/server/boot/sample-models.js)
 defining a new static role and assigning a user to that role.
 
-**/server/boot/script.js**
-
+{% include code-caption.html content="/server/boot/script.js" %}
 ```javascript
 User.create([
     {username: 'John', email: 'john@doe.com', password: 'opensesame'},
@@ -47,8 +46,7 @@ User.create([
 Now you can use the role defined above in the access controls.
 For example, add the following to common/models/project.json to enable users in the "admin" role to call all REST APIs.
 
-**/common/models/model.json**
-
+{% include code-caption.html content="/common/models/model.json" %}
 ```javascript
 {
   "accessType": "EXECUTE",
@@ -115,8 +113,7 @@ This function takes two parameters: 
 
 For example, here is the role resolver from [loopback-example-access-control](https://github.com/strongloop/loopback-example-access-control/):
 
-**/server/boot/script.js**
-
+{% include code-caption.html content="/server/boot/script.js" %}
 ```javascript
 module.exports = function(app) {
   var Role = app.models.Role;
@@ -186,8 +183,7 @@ See [this blog post](http://blog.izs.me/post/59142742143/designing-apis-for-asyn
 
 Using the dynamic role defined above, we can restrict access of project information to users that are team members of the project.
 
-**/common/models/model.json**
-
+{% include code-caption.html content="/common/models/model.json" %}
 ```javascript
 {
   "accessType": "READ",

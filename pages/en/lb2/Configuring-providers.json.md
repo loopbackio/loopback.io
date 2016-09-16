@@ -16,8 +16,7 @@ This file contains settings for each third-party authorization provider, in prov
 
 To load the configuration, add code such as the following to `server.js`:
 
-**/server/server.js**
-
+{% include code-caption.html content="/server/server.js" %}
 ```javascript
 var loopbackPassport = require('loopback-component-passport');
 var PassportConfigurator = loopbackPassport.PassportConfigurator;
@@ -37,8 +36,7 @@ try {
 
 Below is the providers.template.json file provided with [loopback-example-passport](https://github.com/strongloop/loopback-example-passport/).
 
-**providers.template.json**
-
+{% include code-caption.html content="providers.template.json" %}
 ```javascript
 {
   "local": {

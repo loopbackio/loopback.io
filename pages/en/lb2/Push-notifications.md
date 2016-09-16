@@ -122,8 +122,7 @@ It may be helpful to refer to the [example LoopBack application](https://github
 
 The code below illustrates how to set up a push model with a MongoDB database as the data source, as shown in the push example app.
 
-**server/model-config.json**
-
+{% include code-caption.html content="server/model-config.json" %}
 ```javascript
 {
 ...
@@ -137,8 +136,7 @@ The code below illustrates how to set up a push model with a MongoDB database as
 
 To send push notifications, you must create a push model. The database is used to load and store the corresponding application/user/installation models.
 
-**server/datasources.json**
-
+{% include code-caption.html content="server/datasources.json" %}
 ```javascript
 {
   "db": {
@@ -169,8 +167,7 @@ For information on getting API keys, see:
 
 For example, here is how the sample app registers a mobile client:
 
-**loopback-2.x/server/push-demo.js**
-
+{% include code-caption.html content="loopback-2.x/server/push-demo.js" %}
 ```javascript
 module.exports = function (app) {
   var Notification = app.models.notification;

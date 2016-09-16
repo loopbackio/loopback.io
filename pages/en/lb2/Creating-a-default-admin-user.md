@@ -23,8 +23,7 @@ Because this script is in `server/boot`, it is executed when the application sta
 The following code creates three users named "John," "Jane," and "Bob,
 then (skipping the code that creates projects, project owners, and project team members) defines an "admin" role, and makes Bob an admin:
 
-**/server/boot/script.js**
-
+{% include code-caption.html content="/server/boot/script.js" %}
 ```javascript
 User.create([
     {username: 'John', email: 'john@doe.com', password: 'opensesame'},
@@ -58,8 +57,7 @@ User.create([
 The project model JSON (created by running `apic loopback:acl`, the [ACL generator](/doc/{{page.lang}}/lb2/ACL-generator.html)) 
 file specifies that the admin role has unrestricted access to view projects (`GET /api/projects`):
 
-**/common/models/model.json**
-
+{% include code-caption.html content="/common/models/model.json" %}
 ```javascript
 ...
 {

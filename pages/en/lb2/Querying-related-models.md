@@ -31,8 +31,7 @@ The following examples illustrate valid formats.
 
 Load all user posts with only one additional request:
 
-**/server/script.js**
-
+{% include code-caption.html content="/server/script.js" %}
 ```javascript
 User.find({include: 'posts'}, function() {
   //...
@@ -41,8 +40,7 @@ User.find({include: 'posts'}, function() {
 
 Or, equivalently:
 
-**/server/script.js**
-
+{% include code-caption.html content="/server/script.js" %}
 ```javascript
 User.find({include: ['posts']}, function() {
   //...
@@ -51,8 +49,7 @@ User.find({include: ['posts']}, function() {
 
 Load all user posts and orders with two additional requests:
 
-**/server/script.js**
-
+{% include code-caption.html content="/server/script.js" %}
 ```javascript
 User.find({include: ['posts', 'orders']}, function() {
   //...
@@ -61,8 +58,7 @@ User.find({include: ['posts', 'orders']}, function() {
 
 Load all post owners (users), and all orders of each owner:
 
-**/server/script.js**
-
+{% include code-caption.html content="/server/script.js" %}
 ```javascript
 Post.find({include: {owner: 'orders'}}, function() {
   //...
@@ -71,8 +67,7 @@ Post.find({include: {owner: 'orders'}}, function() {
 
 Load all post owners (users), and all friends and orders of each owner:
 
-**/server/script.js**
-
+{% include code-caption.html content="/server/script.js" %}
 ```javascript
 Post.find({include: {owner: ['friends', 'orders']}}, function() {
   //...
@@ -81,8 +76,7 @@ Post.find({include: {owner: ['friends', 'orders']}}, function() {
 
 Load all post owners (users), all posts (including images), and orders of each owner:
 
-**/server/script.js**
-
+{% include code-caption.html content="/server/script.js" %}
 ```javascript
 Post.find({include: {owner: [{posts: 'images'} , 'orders']}}, function() {
   //...
@@ -91,8 +85,7 @@ Post.find({include: {owner: [{posts: 'images'} , 'orders']}}, function() {
 
 The model class also has an `include()` method. For example, the code snippet below will populate the list of user instances with posts:
 
-**/server/script.js**
-
+{% include code-caption.html content="/server/script.js" %}
 ```javascript
 User.include(users, 'posts', function() {
   //...
@@ -103,8 +96,7 @@ User.include(users, 'posts', function() {
 
 Scoping enables you to define a query as a method to the target model class or prototype. For example,
 
-**/server/boot/script.js**
-
+{% include code-caption.html content="/server/boot/script.js" %}
 ```javascript
 User.scope('top10Vips', {where: {vip: true}, limit: 10});
 
@@ -114,8 +106,7 @@ User.top10Vips(function(err, vips) {
 
 You can create the same function using a custom method too:
 
-**/server/boot/script.js**
-
+{% include code-caption.html content="/server/boot/script.js" %}
 ```javascript
 User.top10Vips = function(cb) {
   User.find({where: {vip: true}, limit: 10}, cb);

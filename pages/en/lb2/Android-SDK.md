@@ -514,8 +514,7 @@ if (currentUser != null) {
 Most applications will need to extend the built-in User model with additional properties and methods. 
 Consider the example of an e-shop, where the user is modeled as a `Customer`, with an additional property `address`.
 
-**models.json**
-
+{% include code-caption.html content="models.json" %}
 ```javascript
 "customer": {
   "properties": {

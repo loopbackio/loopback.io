@@ -11,8 +11,7 @@ summary:
 
 In the browser, the main application file must call the function exported by the `loopback-boot` module to setup the LoopBack application by executing the instructions contained in the browser bundle:
 
-**browser-app.js**
-
+{% include code-caption.html content="browser-app.js" %}
 ```javascript
 var loopback = require('loopback');
 var boot = require('loopback-boot');
@@ -25,8 +24,7 @@ The app object created above can be accessed via `require('loopback-app')`, whe
 
 Here is a simple example demonstrating the concept:
 
-**index.html**
-
+{% include code-caption.html content="index.html" %}
 ```javascript
 <script src="app.bundle.js"> </script> 
 <script> 

@@ -48,8 +48,7 @@ The examples below use three example models: Picture, Author, and Reader, where 
 
 The usual options apply, for example: `as: 'photos'` to specify a different relation name/accessor.
 
-**common/models/author.json**
-
+{% include code-caption.html content="common/models/author.json" %}
 ```javascript
 {
   "name": "Author",
@@ -67,8 +66,7 @@ The usual options apply, for example: `as: 'photos'` to specify a different re
 
 And:
 
-**common/models/reader.json**
-
+{% include code-caption.html content="common/models/reader.json" %}
 ```javascript
 {
   "name": "Reader",
@@ -90,16 +88,14 @@ And:
 
 Alternatively, you can define the relation in code:
 
-**common/models/author.js**
-
+{% include code-caption.html content="common/models/author.js" %}
 ```javascript
 Author.hasMany(Picture, { polymorphic: 'imageable' });
 ```
 
 And:
 
-**common/models/reader.js**
-
+{% include code-caption.html content="common/models/reader.js" %}
 ```javascript
 Reader.hasMany(Picture, { polymorphic: { // alternative syntax  
   as: 'imageable', // if not set, default to: reference
@@ -115,8 +111,7 @@ To define a hasMany polymorphic relation, there must be a "through" model, simil
 
 For example, "ImageLink":
 
-**/common/models/ImageLink.json**
-
+{% include code-caption.html content="/common/models/ImageLink.json" %}
 ```javascript
 {
   "name": "ImageLink",
@@ -143,8 +138,7 @@ For example, "ImageLink":
 
 Then here's an example of a polymorphic hasManyThrough relation:
 
-**/common/models/Author.json**
-
+{% include code-caption.html content="/common/models/Author.json" %}
 ```javascript
 {
   "name": "Author",
@@ -168,8 +162,7 @@ Then here's an example of a polymorphic hasManyThrough relation:
 
 Equivalently, in JavaScript:
 
-**/common/models/Author.js**
-
+{% include code-caption.html content="/common/models/Author.js" %}
 ```javascript
 Author.hasMany(Picture, {
   as: 'pictures',
@@ -187,8 +180,7 @@ Author.hasMany(Picture, {
 Because you define the related model dynamically, you cannot declare it up front.
 So instead of passing in the related model (name), you specify the name of the polymorphic relation.
 
-**common/models/picture.json**
-
+{% include code-caption.html content="common/models/picture.json" %}
 ```javascript
 {
   "name": "Picture",
@@ -209,8 +201,7 @@ So instead of passing in the related model (name), you specify the name of the p
 
 Or, in code:
 
-**common/models/picture.js**
-
+{% include code-caption.html content="common/models/picture.js" %}
 ```javascript
 Picture.belongsTo('imageable', {
   polymorphic: true
@@ -232,8 +223,7 @@ The relations `Picture.belongsTo(PictureLink)` and `Picture.belongsTo('imagea
 
 The same is true for the needed properties on PictureLink.
 
-**/common/models/model.js**
-
+{% include code-caption.html content="/common/models/model.js" %}
 ```javascript
 Author.hasAndBelongsToMany(Picture, {
   through: PictureLink,
@@ -260,8 +250,7 @@ Picture.hasMany(Reader, {
 
 As shown here, you can specify `as: 'avatar'` to explicitly set the name of the relation. If not set, it defaults to the polymorphic name.
 
-**/common/models/model.js**
-
+{% include code-caption.html content="/common/models/model.js" %}
 ```javascript
 Picture.belongsTo('imageable', {polymorphic: true});
 Author.hasOne(Picture, {as: 'avatar', polymorphic: 'imageable'});

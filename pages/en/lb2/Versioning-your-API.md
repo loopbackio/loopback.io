@@ -13,8 +13,7 @@ You can easily add versioning to your REST API routes, based on the application 
 
 Add a file named `config.local.js` in the application's `/server` directory with the following code:
 
-**/server/config.local.js**
-
+{% include code-caption.html content="/server/config.local.js" %}
 ```javascript
 var p = require('../package.json');
 var version = p.version.split('.').shift();

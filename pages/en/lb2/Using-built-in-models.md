@@ -62,8 +62,7 @@ An ACL model connects principals to protected resources. The system grants permi
 
 Creating a new ACL instance.
 
-**server/boot/script.js**
-
+{% include code-caption.html content="server/boot/script.js" %}
 ```javascript
 ACL.create({
     principalType: ACL.USER, 
@@ -89,8 +88,7 @@ ACL.create({
 
 Set up an email data source by adding an entry to `/server/datasources.json`, such as the following (for example):
 
-**server/datasources.json**
-
+{% include code-caption.html content="server/datasources.json" %}
 ```javascript
 {
   ...
@@ -118,8 +116,7 @@ See [Email connector](/doc/{{page.lang}}/lb2/Email-connector.html) for more inf
 
 Then, reference the data source in `/server/model-config.json` as follows (for example):
 
-**server/model-config.json**
-
+{% include code-caption.html content="server/model-config.json" %}
 ```javascript
 {
   ...
@@ -134,8 +131,7 @@ Then, reference the data source in `/server/model-config.json` as follows (for e
 
 The following example illustrates how to send emails from an app. Add the following code to a file in the `/models` directory:
 
-**server/models/model.js**
-
+{% include code-caption.html content="server/models/model.js" %}
 ```javascript
 module.exports = function(MyModel) {
   // send an email

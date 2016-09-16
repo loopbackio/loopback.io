@@ -144,8 +144,7 @@ CoffeeShop.status = function() {
 
 Promises can simplify, for example, defining asynchronous remote methods. Instead of:
 
-**common/models/my-model.js**
-
+{% include code-caption.html content="common/models/my-model.js" %}
 ```javascript
 module.exports = function(MyModel) {
  MyModel.myFunc = function(input, cb) {
@@ -158,8 +157,7 @@ module.exports = function(MyModel) {
 
 With promises, this is reduced to:
 
-**common/models/my-model.js**
-
+{% include code-caption.html content="common/models/my-model.js" %}
 ```javascript
 MyModel.myFunc = function(input, cb) {
    return Todo.find()

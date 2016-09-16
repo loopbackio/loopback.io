@@ -25,8 +25,7 @@ $ slc loopback:datasource
 
 When prompted, select **Email** as the connector. This creates an entry in `datasources.json` like this (for example):
 
-**server/datasources.json**
-
+{% include code-caption.html content="server/datasources.json" %}
 ```javascript
 ...
 "myEmailDataSource": {
@@ -40,8 +39,7 @@ When prompted, select **Email** as the connector. This creates an entry in `data
 
 Configure the email data source by editing `/server/datasources.json` (for example):
 
-**server/datasources.json**
-
+{% include code-caption.html content="server/datasources.json" %}
 ```javascript
 {
   ...
@@ -77,8 +75,7 @@ and [Nodemailer - Authentication](https://github.com/andris9/nodemailer-smtp-tra
 
 For GMail, configure your email data source as follows:
 
-**server/datasources.json**
-
+{% include code-caption.html content="server/datasources.json" %}
 ```javascript
 ...
 "Email": {
@@ -103,8 +100,7 @@ For GMail, configure your email data source as follows:
 
 Then, connect models to the data source in `/server/model-config.json` as follows (for example):
 
-**server/model-config.json**
-
+{% include code-caption.html content="server/model-config.json" %}
 ```javascript
 {
   ...

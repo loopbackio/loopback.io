@@ -37,8 +37,7 @@ This will install the module from npm and add it as a dependency to the applicat
 Use the [Data source generator](/doc/{{page.lang}}/lb2/Data-source-generator.html) to add a MySQL data source to your application.
 The entry in the application's `/server/datasources.json` will look like this:
 
-**/server/datasources.json**
-
+{% include code-caption.html content="/server/datasources.json" %}
 ```javascript
 "mydb": {
     "name": "mydb",
@@ -188,8 +187,7 @@ See [LoopBack types](/doc/{{page.lang}}/lb2/LoopBack-types.html) for details o
 
 For example:
 
-**/common/models/model.json**
-
+{% include code-caption.html content="/common/models/model.json" %}
 ```javascript
 "locationId":{
     "type":"String",

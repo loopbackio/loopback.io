@@ -787,8 +787,7 @@ This hook is called after a model is initialized.
 
 ### Example
 
-**/common/models/coffee-shop.js**
-
+{% include code-caption.html content="/common/models/coffee-shop.js" %}
 ```javascript
 //...
 CoffeeShop.afterInitialize = function() {

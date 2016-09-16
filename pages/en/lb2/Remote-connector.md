@@ -46,8 +46,7 @@ When prompted:
 
 This creates an entry in `datasources.json`; Then you need to edit this to add the data source properties, for example:
 
-**/server/datasources.json**
-
+{% include code-caption.html content="/server/datasources.json" %}
 ```javascript
 ...
  "myRemoteDataSource": {

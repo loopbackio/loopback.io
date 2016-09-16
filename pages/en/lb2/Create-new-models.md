@@ -2,20 +2,20 @@
 title: "Create new models"
 lang: en
 layout: page
+toc: false
 keywords: LoopBack
-tags:
+tags: [getting_started]
 sidebar: lb2_sidebar
 permalink: /doc/en/lb2/Create-new-models.html
-summary:
+summary: Creating models with the model generator is quick and easy.
+
 ---
 
-{% include content/gs-prereqs.html lang=page.lang %}
-
-Creating models with the [application generator](/doc/{{page.lang}}/lb2/Application-generator) is quick and easy.
+{% include content/gs-prereqs.html two="true" lang=page.lang %}
 
 Recall in [Create a simple API](/doc/{{page.lang}}/lb2/Create-a-simple-API) step of [Getting started](/doc/{{page.lang}}/lb2/Getting-started-with-LoopBack) you created a CoffeeShop model.
 
-Now you're going to create two new models, Review and Reviewer, with the `slc loopback` [model generator](/doc/{{page.lang}}/lb2/Model-generator).
+Now you're going to create two new models, Review and Reviewer, with the [model generator](/doc/{{page.lang}}/lb2/Model-generator).
 
 {% include note.html content="
 If you followed the previous step in the tutorial, go to [Define the Review model](#define-the-review-model).
@@ -121,9 +121,8 @@ This boot script has several functions:
 
 See [Creating a database schema from models](/doc/{{page.lang}}/lb2/Creating-a-database-schema-from-models) for more information on auto-migration. 
 
-**server/boot/create-sample-models.js**
-
-```js
+{% include code-caption.html content="server/boot/create-sample-models.js" %}
+```javascript
 var async = require('async');
 module.exports = function(app) {
   //data sources
@@ -209,4 +208,4 @@ module.exports = function(app) {
 };
 ```
 
-Next: [Define model relations](/doc/{{page.lang}}/lb2/Define-model-relations.html)
+{% include next.html content="[Define model relations](Define-model-relations.html)" %}
