@@ -10,11 +10,11 @@ summary:
 ---
 
 {% include see-also.html content="
-* [Remote methods](/doc/{{page.lang}}/lb2/Remote-methods.html)
-* [Operation hooks](/doc/{{page.lang}}/lb2/Operation-hooks.html)
-* [Model hooks](/doc/{{page.lang}}/lb2/Model-hooks.html)
-* [Connector hooks](/doc/{{page.lang}}/lb2/Connector-hooks.html)
-* [Tutorial: Adding application logic](/doc/{{page.lang}}/lb2/Tutorial-Adding-application-logic.html)
+* [Remote methods](Remote-methods.html)
+* [Operation hooks](Operation-hooks.html)
+* [Model hooks](Model-hooks.html)
+* [Connector hooks](Connector-hooks.html)
+* [Tutorial: Adding application logic](Tutorial-Adding-application-logic.html)
 " %}
 
 ## Overview
