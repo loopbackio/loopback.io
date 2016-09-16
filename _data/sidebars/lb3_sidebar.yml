@@ -12,6 +12,10 @@ entries:
     url: /doc/en/lb3/3.0-Release-Notes.html
     output: 'web, pdf'
 
+  - title: 'Migrating apps to LoopBack 3.0'
+    url: /doc/en/lb3/Migrating-to-3.0.html
+    output: 'web, pdf'
+
   - title: 'Operation hooks (version 3.0)'
     url: /doc/en/lb3/Operation-hooks-version-3.0.html
     output: 'web, pdf'
