@@ -33,7 +33,7 @@ exclude:
 feedback_email: rmckinn@us.ibm.com
 # used as a contact email for the Feedback link in the top navigation bar
 
-feedback_disable:
+feedback_disable: true
 # if you uncomment the previous line, the Feedback link gets removed
 
 # feedback_text: "Need help?"
@@ -67,7 +67,7 @@ defaults:
       layout: "page"
       comments: true
       search: true
-      sidebar: home_sidebar
+      sidebar: lb2_sidebar
   -
     scope:
       path: ""
@@ -93,6 +93,7 @@ sidebars:
 - lb2_sidebar
 - lb3_sidebar
 - contrib_sidebar
+- community_sidebar
 
 description: "Documentation for the LoopBack framework"
 # the description is used in the feed.xml file

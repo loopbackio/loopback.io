@@ -15,6 +15,10 @@ entries:
     url: /doc/en/lb2/index.html
     output: web
 
+  - title: Community projects
+    url: /doc/community/index.html
+    output: web
+    
   - title: Contributing to documentation
     url: /doc/en/contrib/index.html
     output: web

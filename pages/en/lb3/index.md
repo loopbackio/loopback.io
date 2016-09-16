@@ -21,5 +21,5 @@ summary:
 {% include important.html content="
 LoopBack 3.0 has not yet been released.  This is documentation for the preview release.
 For documentation of the current LoopBack production release (2.x),
-see [LoopBack 2.x docs](../lb2)." 
-%}
+see [LoopBack 2.x docs](../lb2).
+" %}
