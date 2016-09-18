@@ -266,7 +266,7 @@ $scope.prod0 = Product.findById({
 Refer to [Querying data](/doc/{{page.lang}}/lb2/Querying-data.html) for a description of all query options.
 The AngularJS client expects the "Node syntax" of arguments, with the differences noted above.
 
-Also, see [Querying related models](/doc/{{page.lang}}/lb2/Accessing-related-models.html#Accessingrelatedmodels-Queryingrelatedmodels).
+Also, see [Querying related models](/doc/{{page.lang}}/lb2/Accessing-related-models.html#querying-related-models).
 
 #### Update
 

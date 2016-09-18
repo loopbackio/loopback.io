@@ -24,30 +24,30 @@ All LoopBack models that are connected to persistent data stores (such as a data
     <tr>
       <td>Create</td>
       <td>
-        <p><a href="/doc/en/lb2/PersistedModel-REST-API.html#PersistedModelRESTAPI-Createmodelinstance">PUT /<em>modelName</em></a></p>
-        <p><a href="/doc/en/lb2/PersistedModel-REST-API.html#PersistedModelRESTAPI-Update/insertinstance">POST /<em>modelName</em></a></p>
+        <p><a href="/doc/{{page.lang}}/lb2/PersistedModel-REST-API.html#create-model-instance">PUT /<em>modelName</em></a></p>
+        <p><a href="/doc/{{page.lang}}/lb2/PersistedModel-REST-API.html#update--insert-instance">POST /<em>modelName</em></a></p>
       </td>
       <td><code><a href="http://apidocs.strongloop.com/loopback/#persistedmodel-create" class="external-link" rel="nofollow">create()</a><sup>*</sup></code></td>
       <td>INSERT</td>
     </tr>
     <tr>
       <td>Read (Retrieve)</td>
-      <td><a href="/doc/en/lb2/PersistedModel-REST-API.html#PersistedModelRESTAPI-Findmatchinginstances">GET /modelName?filter=...</a></td>
+      <td><a href="/doc/{{page.lang}}/lb2/PersistedModel-REST-API.html#find-matching-instances">GET /modelName?filter=...</a></td>
       <td><code><a href="http://apidocs.strongloop.com/loopback/#persistedmodel-find" class="external-link" rel="nofollow">find()</a><sup>*</sup></code></td>
       <td>SELECT</td>
     </tr>
     <tr>
       <td>Update (Modify)</td>
       <td>
-        <p><a href="/doc/en/lb2/PersistedModel-REST-API.html#PersistedModelRESTAPI-Update/insertinstance">POST /<em>modelName</em></a>&nbsp;</p>
-        <p><a href="/doc/en/lb2/PersistedModel-REST-API.html#PersistedModelRESTAPI-Updatemodelinstanceattributes">PUT /modelName</a></p>
+        <p><a href="/doc/{{page.lang}}/lb2/PersistedModel-REST-API.html#update--insert-instance">POST /<em>modelName</em></a>&nbsp;</p>
+        <p><a href="/doc/{{page.lang}}/lb2/PersistedModel-REST-API.html#update-model-instance-attributes">PUT /modelName</a></p>
       </td>
       <td><code><a href="http://apidocs.strongloop.com/loopback/#persistedmodel-updateall" class="external-link" rel="nofollow">updateAll()</a><sup>*</sup></code></td>
       <td>UPDATE</td>
     </tr>
     <tr>
       <td>Delete (Destroy)</td>
-      <td><a href="/doc/en/lb2/PersistedModel-REST-API.html#PersistedModelRESTAPI-Deletemodelinstance">DELETE /<em>modelName</em>/<em>modelID</em></a></td>
+      <td><a href="/doc/{{page.lang}}/lb2/PersistedModel-REST-API.html#delete-model-instance">DELETE /<em>modelName</em>/<em>modelID</em></a></td>
       <td><code><a href="http://apidocs.strongloop.com/loopback/#persistedmodel-destroybyid" class="external-link" rel="nofollow">destroyById()</a><sup>*</sup></code></td>
       <td>DELETE</td>
     </tr>

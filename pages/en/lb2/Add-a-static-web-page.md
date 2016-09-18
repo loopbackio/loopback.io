@@ -131,14 +131,13 @@ Add the following:
 ...
 ```
 
-These lines define _[static middleware](/doc/{{page.lang}}/lb2/Defining-middleware#Definingmiddleware-Staticmiddleware)_ that makes the application serve files in the `/client` directory as static content.  The `$!` characters indicate that the path is relative to the location of `middleware.json`.
+These lines define [static middleware](/doc/{{page.lang}}/lb2/Defining-middleware#static-middleware) that makes the application serve files in the `/client` directory as static content.  The `$!` characters indicate that the path is relative to the location of `middleware.json`.
 
 ## Add an HTML file
 
 Now, the application will serve any files you put in the `/client` directory as static (client-side) content.  So, to see it in action, add an HTML file to `/client`.  For example, add a file named `index.html` with this content:
 
 {% include code-caption.html content="/client/index.html" %}
-
 ```html
 <head><title>LoopBack</title></head>
 <body>

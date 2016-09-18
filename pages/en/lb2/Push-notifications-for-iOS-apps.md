@@ -30,7 +30,7 @@ For additional useful information, see [Delivering iOS Push Notifications with 
 
 ## Configure APN push settings in your server application
 
-Please see [Register a mobile application](/doc/{{page.lang}}/lb2/Push-notifications.html#Pushnotifications-Registeramobileapplication).
+Please see [Register a mobile application](/doc/{{page.lang}}/lb2/Push-notifications.html#register-a-mobile-application).
 
 ## Add LoopBack iOS SDK as a framework
 

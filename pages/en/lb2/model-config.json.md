@@ -84,12 +84,12 @@ For example, here is the default `model-config.json` that lists all the built-
     <tr>
       <td>_meta.mixins</td>
       <td>Array</td>
-      <td>Array of <span>relative paths to custom mixin definitions. See <a href="/doc/en/lb2/Defining-mixins.html">Defining mixins</a> for more information.</span></td>
+      <td>Array of <span>relative paths to custom mixin definitions. See <a href="/doc/{{page.lang}}/lb2/Defining-mixins.html">Defining mixins</a> for more information.</span></td>
     </tr>
     <tr>
       <td>modelName</td>
       <td>String</td>
-      <td><span>Name of a model, either a&nbsp;</span><a href="/doc/en/lb2/Using-built-in-models.html">built-in model</a><span>&nbsp;or a custom model defined in the&nbsp;</span><code>common/models/</code><span>&nbsp;folder.</span></td>
+      <td><span>Name of a model, either a&nbsp;</span><a href="/doc/{{page.lang}}/lb2/Using-built-in-models.html">built-in model</a><span>&nbsp;or a custom model defined in the&nbsp;</span><code>common/models/</code><span>&nbsp;folder.</span></td>
     </tr>
   </tbody>
 </table>
@@ -109,7 +109,7 @@ Each JSON key is the name of a model and an object with the following properties
       <td>datasource</td>
       <td>String</td>
       <td>
-        <p>Name of the data source to which the model is connected. Must correspond to a data source defined in <a href="/doc/en/lb2/datasources.json.html">datasources.json</a>.</p>
+        <p>Name of the data source to which the model is connected. Must correspond to a data source defined in <a href="/doc/{{page.lang}}/lb2/datasources.json.html">datasources.json</a>.</p>
       </td>
     </tr>
     <tr>

@@ -237,7 +237,7 @@ function myMiddlewareFunc([err,] req, res, next) {
       <td>Required for error-handling middleware.</td>
       <td>
         <p>Use <em>only</em> for error-handling middleware.</p>
-        <p>Error object, usually an instance or <code>Error</code>; for more information, see <a href="/doc/en/lb2/Error-object.html">Error object</a>.</p>
+        <p>Error object, usually an instance or <code>Error</code>; for more information, see <a href="/doc/{{page.lang}}/lb2/Error-object.html">Error object</a>.</p>
       </td>
     </tr>
     <tr>
@@ -411,7 +411,7 @@ You can specify the following properties in each middleware section. They are al
       <td>enabled</td>
       <td>Boolean</td>
       <td>
-        <p>Whether to register or enable the middleware. You can override this property in environment-specific files, for example to disable certain middleware when running in production. For more information, see <a href="/doc/en/lb2/Defining-middleware.html">Environment-specific configuration</a></p>
+        <p>Whether to register or enable the middleware. You can override this property in environment-specific files, for example to disable certain middleware when running in production. For more information, see <a href="/doc/{{page.lang}}/lb2/Defining-middleware.html">Environment-specific configuration</a></p>
       </td>
       <td>true</td>
     </tr>
@@ -505,7 +505,7 @@ For any middleware configuration property, you can specify a variable in the val
 
 Where _var_ is a property of the [`app`](https://apidocs.strongloop.com/loopback/#var-app-loopback) object. These properties include:
 
-* [Application-wide properties](/doc/{{page.lang}}/lb2/config.json.html#config.json-Top-levelproperties) such as those defined in `config.json`.
+* [Application-wide properties](/doc/{{page.lang}}/lb2/config.json.html#top-level-properties) such as those defined in `config.json`.
 * [Express app object properties](http://expressjs.com/4x/api.html#app.settings.table).
 
 For example, the following `middleware.json` configuration will load LoopBack's built-in rest middleware (loopback.rest)
@@ -800,7 +800,7 @@ LoopBack registers two error-handling middleware by default:
   so that 404 error responses are consistent with "usual" error responses.
 * `errorhandler` middleware is from the [errorhandler](https://github.com/expressjs/errorhandler) module,
   previously available in Express v.3 as `express.errorHandler`. For information on customizing this error handler.
-  See [Customizing REST error handling](/doc/{{page.lang}}/lb2/Environment-specific-configuration.html#Environment-specificconfiguration-CustomizingRESTerrorhandling).
+  See [Customizing REST error handling](/doc/{{page.lang}}/lb2/Environment-specific-configuration.html#customizing-rest-error-handling).
 
 Example of a custom error processing middleware:
 

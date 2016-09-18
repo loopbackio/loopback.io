@@ -47,7 +47,7 @@ By default, the ACL REST API is not exposed. To expose it, add the following to 
       <td>POST</td>
       <td>Allow</td>
       <td>
-        <p><a href="/doc/en/lb2/PersistedModel-REST-API.html#PersistedModelRESTAPI-Createmodelinstance">Add ACL instance</a><span> and persist to data source.</span></p>
+        <p><a href="/doc/{{page.lang}}/lb2/PersistedModel-REST-API.html#create-model-instance">Add ACL instance</a><span> and persist to data source.</span></p>
       </td>
       <td>JSON object (in request body)</td>
     </tr>
@@ -55,7 +55,7 @@ By default, the ACL REST API is not exposed. To expose it, add the following to 
       <td><code>/acls</code></td>
       <td>GET</td>
       <td>Deny</td>
-      <td><a href="/doc/en/lb2/PersistedModel-REST-API.html#PersistedModelRESTAPI-Findmatchinginstances">Find instances</a><span> of ACLs that match specified filter.</span></td>
+      <td><a href="/doc/{{page.lang}}/lb2/PersistedModel-REST-API.html#find-matching-instances">Find instances</a><span> of ACLs that match specified filter.</span></td>
       <td>
         <p>One or more filters in query parameters:</p>
         <ul>
@@ -72,21 +72,21 @@ By default, the ACL REST API is not exposed. To expose it, add the following to 
       <td><code>/acls</code></td>
       <td>PUT</td>
       <td>Deny</td>
-      <td><a href="/doc/en/lb2/PersistedModel-REST-API.html#PersistedModelRESTAPI-Update/insertinstance">Update / insert ACL instance</a><span> and persist to data source.</span></td>
+      <td><a href="/doc/{{page.lang}}/lb2/PersistedModel-REST-API.html#update--insert-instance">Update / insert ACL instance</a><span> and persist to data source.</span></td>
       <td>JSON object (in request body)</td>
     </tr>
     <tr>
       <td><code>/acls/<em>id</em></code></td>
       <td>GET</td>
       <td>Deny</td>
-      <td><a href="/doc/en/lb2/PersistedModel-REST-API.html#PersistedModelRESTAPI-FindinstancebyID">Find ACL by ID</a><span>: Return data for the specified ACL instance ID.</span></td>
+      <td><a href="/doc/{{page.lang}}/lb2/PersistedModel-REST-API.html#find-instance-by-id">Find ACL by ID</a><span>: Return data for the specified ACL instance ID.</span></td>
       <td><em>id</em>, the ACL instance ID (in URI path)</td>
     </tr>
     <tr>
       <td><code>/acls/<em>id</em></code></td>
       <td>PUT</td>
       <td>Deny</td>
-      <td><a href="/doc/en/lb2/PersistedModel-REST-API.html#PersistedModelRESTAPI-Updatemodelinstanceattributes">Update attributes</a><span> for specified ACL ID and persist.</span></td>
+      <td><a href="/doc/{{page.lang}}/lb2/PersistedModel-REST-API.html#update-model-instance-attributes">Update attributes</a><span> for specified ACL ID and persist.</span></td>
       <td>
         <p>Query parameters:</p>
         <ul>
@@ -99,7 +99,7 @@ By default, the ACL REST API is not exposed. To expose it, add the following to 
       <td><code>/acls/<em>id</em></code></td>
       <td>DELETE</td>
       <td>Deny</td>
-      <td><a href="/doc/en/lb2/PersistedModel-REST-API.html#PersistedModelRESTAPI-Deletemodelinstance">Delete ACL</a><span> with specified instance ID.</span></td>
+      <td><a href="/doc/{{page.lang}}/lb2/PersistedModel-REST-API.html#delete-model-instance">Delete ACL</a><span> with specified instance ID.</span></td>
       <td><em>id</em>, acls ID<em> </em>(in URI path)</td>
     </tr>
     <tr>
@@ -107,7 +107,7 @@ By default, the ACL REST API is not exposed. To expose it, add the following to 
       <td>GET</td>
       <td>Deny</td>
       <td>
-        <p><a href="/doc/en/lb2/PersistedModel-REST-API.html#PersistedModelRESTAPI-Checkinstanceexistence">Check instance existence</a><span>: Return true if specified ACL ID exists.</span></p>
+        <p><a href="/doc/{{page.lang}}/lb2/PersistedModel-REST-API.html#check-instance-existence">Check instance existence</a><span>: Return true if specified ACL ID exists.</span></p>
       </td>
       <td>
         <p>URI path:</p>
@@ -121,7 +121,7 @@ By default, the ACL REST API is not exposed. To expose it, add the following to 
       <td>GET</td>
       <td>Deny</td>
       <td>
-        <p><a href="/doc/en/lb2/PersistedModel-REST-API.html#PersistedModelRESTAPI-Getinstancecount">Return the number of ACL instances</a><span>&nbsp;that matches specified where clause.</span></p>
+        <p><a href="/doc/{{page.lang}}/lb2/PersistedModel-REST-API.html#get-instance-count">Return the number of ACL instances</a><span>&nbsp;that matches specified where clause.</span></p>
       </td>
       <td>Where filter specified in query parameter</td>
     </tr>
@@ -130,9 +130,9 @@ By default, the ACL REST API is not exposed. To expose it, add the following to 
       <td>GET</td>
       <td>Deny</td>
       <td>
-        <p><a href="/doc/en/lb2/PersistedModel-REST-API.html#PersistedModelRESTAPI-Findfirstinstance">Find first ACL instance</a><span> that matches specified filter.</span></p>
+        <p><a href="/doc/{{page.lang}}/lb2/PersistedModel-REST-API.html#find-first-uinstance">Find first ACL instance</a><span> that matches specified filter.</span></p>
       </td>
-      <td>Same as <a href="/doc/en/lb2/PersistedModel-REST-API.html#PersistedModelRESTAPI-Findmatchinginstances">Find matching instances</a>.</td>
+      <td>Same as <a href="/doc/{{page.lang}}/lb2/PersistedModel-REST-API.html#find-matching-instances">Find matching instances</a>.</td>
     </tr>
   </tbody>
 </table>

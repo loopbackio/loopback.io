@@ -54,19 +54,19 @@ The sections below describe the configuration settings for each component in [`
       </th>
     </tr>
     <tr>
-      <td><a href="/doc/en/lb2/API-Explorer">API Explorer</a></td>
-      <td>Enables the Swagger UI for the API. See <a href="/doc/en/lb2/Use-API-Explorer">Use API Explorer</a> for an example.</td>
+      <td><a href="/doc/{{page.lang}}/lb2/API-Explorer">API Explorer</a></td>
+      <td>Enables the Swagger UI for the API. See <a href="/doc/{{page.lang}}/lb2/Use-API-Explorer">Use API Explorer</a> for an example.</td>
       <td><a href="https://www.npmjs.org/package/loopback-component-explorer" class="external-link" rel="nofollow">loopback-component-explorer</a></td>
     </tr>
     <tr>
-      <td><a href="/doc/en/lb2/OAuth-2.0.html">OAuth 2.0</a></td>
+      <td><a href="/doc/{{page.lang}}/lb2/OAuth-2.0.html">OAuth 2.0</a></td>
       <td>Enables LoopBack applications to function as oAuth 2.0 providers to authenticate and authorize client applications and users to access protected API endpoints.</td>
       <td><a href="https://www.npmjs.org/package/loopback-component-oauth2" class="external-link" rel="nofollow">loopback-component-oauth2</a></td>
     </tr>
     <tr>
       <td>
         <div style="width: 150px;">
-          <p><a href="/doc/en/lb2/Push-notifications.html">Push Notifications</a>&nbsp;</p>
+          <p><a href="/doc/{{page.lang}}/lb2/Push-notifications.html">Push Notifications</a>&nbsp;</p>
         </div>
       </td>
       <td>Adds push notification capabilities to your LoopBack application as a mobile back end service.</td>
@@ -77,19 +77,19 @@ The sections below describe the configuration settings for each component in [`
       </td>
     </tr>
     <tr>
-      <td><a href="/doc/en/lb2/Storage-component.html">Storage component</a></td>
+      <td><a href="/doc/{{page.lang}}/lb2/Storage-component.html">Storage component</a></td>
       <td>Adds an interface to abstract storage providers like S3, filesystem into general containers and files.</td>
       <td><a href="https://www.npmjs.org/package/loopback-component-storage" class="external-link" rel="nofollow">loopback-component-storage</a></td>
     </tr>
     <tr>
-      <td><a href="/doc/en/lb2/Synchronization.html">Synchronization</a></td>
+      <td><a href="/doc/{{page.lang}}/lb2/Synchronization.html">Synchronization</a></td>
       <td>Adds replication capability between LoopBack running in a browser or between LoopBack back-end instances to enable offline synchronization and server-to-server data synchronization.</td>
       <td>
         <p>Built into LoopBack; will be refactored into loopback-component-sync</p>
       </td>
     </tr>
     <tr>
-      <td><a href="/doc/en/lb2/Third-party-login-using-Passport.html">Third-party login using Passport</a></td>
+      <td><a href="/doc/{{page.lang}}/lb2/Third-party-login-using-Passport.html">Third-party login using Passport</a></td>
       <td>Adds third-party login capabilities to your LoopBack application like Facebook, GitHub etc.</td>
       <td><a href="https://www.npmjs.org/package/loopback-component-passport" class="external-link" rel="nofollow">loopback-component-passport</a></td>
     </tr>

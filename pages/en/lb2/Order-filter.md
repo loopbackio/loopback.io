@@ -21,7 +21,7 @@ Order by two or more properties:
 
 `filter[order][0]=propertyName <ASC|DESC>&filter[order][1]propertyName]=<ASC|DESC>...`
 
-You can also use [stringified JSON format](/doc/{{page.lang}}/lb2/Querying-data.html#Queryingdata-UsingstringifiedJSONinRESTqueries) in a REST query.
+You can also use [stringified JSON format](/doc/{{page.lang}}/lb2/Querying-data.html#using-stringified-json-in-rest-queries) in a REST query.
 
 {% include note.html content="
 Default ordering can be configured in [default scope](Model-definition-JSON-file.html#default-scope).

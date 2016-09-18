@@ -25,7 +25,7 @@ Use the following [PersistedModel](http://apidocs.strongloop.com/loopback/#persi
 
 * [create](http://apidocs.strongloop.com/loopback/#persistedmodel-create) - creates a new model instance (record).
 * [upsert](http://apidocs.strongloop.com/loopback/#persistedmodel-upsert) - checks if the instance (record) exists, based on the designated
-  [ID property](/doc/{{page.lang}}/lb2/Model-definition-JSON-file.html#ModeldefinitionJSONfile-IDproperties), which must have a unique value;
+  [ID property](/doc/{{page.lang}}/lb2/Model-definition-JSON-file.html#id-properties), which must have a unique value;
   if the instance already exists, the method updates that instance. Otherwise, it inserts a new instance.
 * [findOrCreate](http://apidocs.strongloop.com/loopback/#persistedmodel-findorcreate) - Find one instance matching the filter object provided as the first parameter.
   If found, returns the object. If not found, creates a new instance (record).

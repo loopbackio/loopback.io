@@ -43,7 +43,7 @@ The following table describes the properties you can configure.
       </td>
       <td>
         <p><span>When an authenticated user is denied access because of an ACL, by default the application returns HTTP error status code&nbsp;</span><strong>401 unauthorized</strong><span>. If you want instead to return 403 (forbidden) set the value here. This may be required, for example, when using</span><span> an AngularJS interceptor to differentiate between the need to show an access denied/request access page instead of a login dialog.</span></p>
-        <p><span>Can also set this in the <a href="/doc/en/lb2/Model-definition-JSON-file.html">Model definition JSON file</a> to define per-model.</span></p>
+        <p><span>Can also set this in the <a href="/doc/{{page.lang}}/lb2/Model-definition-JSON-file.html">Model definition JSON file</a> to define per-model.</span></p>
         <div class="sl-hidden"><strong>REVIEW COMMENT from Rand</strong><br>What happened to this?</div><span><br></span>
         <p></p>
       </td>
@@ -71,7 +71,7 @@ The following table describes the properties you can configure.
     </tr>
     <tr>
       <td>remoting</td>
-      <td>See <a href="/doc/en/lb2/config.json.html">Remoting properties</a> below.</td>
+      <td>See <a href="/doc/{{page.lang}}/lb2/config.json.html">Remoting properties</a> below.</td>
       <td>N/A</td>
     </tr>
     <tr>
@@ -137,20 +137,20 @@ The full names of the properties below are prefixed by \"remoting,\" for example
     <tr>
       <td>cors</td>
       <td>Boolean</td>
-      <td>If false, use the CORS settings in <a href="/doc/en/lb2/middleware.json.html">middleware.json</a>.</td>
+      <td>If false, use the CORS settings in <a href="/doc/{{page.lang}}/lb2/middleware.json.html">middleware.json</a>.</td>
       <td>false</td>
     </tr>
     <tr>
       <td>context.enableHttpContext</td>
       <td>Boolean</td>
-      <td>Advanced feature. For more information, see <a href="/doc/en/lb2/Using-current-context.html">Using current context</a>.</td>
+      <td>Advanced feature. For more information, see <a href="/doc/{{page.lang}}/lb2/Using-current-context.html">Using current context</a>.</td>
       <td>false</td>
     </tr>
     <tr>
       <td>errorHandler.disableStackTrace</td>
       <td><span>Boolean</span></td>
       <td>
-        <p>Set to true to disable stack traces; removes the <code>stack</code> property from the <a href="/doc/en/lb2/Error-object.html">Error object</a>.</p>
+        <p>Set to true to disable stack traces; removes the <code>stack</code> property from the <a href="/doc/{{page.lang}}/lb2/Error-object.html">Error object</a>.</p>
         <p>Ignored when NODE_ENV is "production", when stack traces are always disabled.</p>
       </td>
       <td>false</td>

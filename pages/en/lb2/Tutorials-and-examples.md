@@ -70,7 +70,7 @@ These examples illustrate specific LoopBack features.
   <tbody>
     <tr>
       <td><a href="https://github.com/strongloop/loopback-example-angular-live-set" class="external-link" rel="nofollow">loopback-example-angular-live-set</a></td>
-      <td>LoopBack/AngularJS app using HTML5&nbsp;<a href="/doc/en/lb2/Realtime-server-sent-events.html" rel="nofollow">realtime server-sent events</a>.</td>
+      <td>LoopBack/AngularJS app using HTML5&nbsp;<a href="/doc/{{page.lang}}/lb2/Realtime-server-sent-events.html" rel="nofollow">realtime server-sent events</a>.</td>
     </tr>
     <tr>
       <td><a href="https://github.com/strongloop/loopback-example-connector" class="external-link" rel="nofollow">loopback-example-connector</a></td>
@@ -82,11 +82,11 @@ These examples illustrate specific LoopBack features.
     </tr>
     <tr>
       <td><a href="https://github.com/strongloop/loopback-example-mixins" class="external-link" rel="nofollow">loopback-example-mixins</a></td>
-      <td>Loading&nbsp;<a href="/doc/en/lb2/Defining-mixins.html" rel="nofollow">mixins</a>; observing changes and adding model attributes.</td>
+      <td>Loading&nbsp;<a href="/doc/{{page.lang}}/lb2/Defining-mixins.html" rel="nofollow">mixins</a>; observing changes and adding model attributes.</td>
     </tr>
     <tr>
       <td><a href="https://github.com/strongloop/loopback-example-offline-sync" class="external-link" rel="nofollow">loopback-example-offline-sync</a></td>
-      <td><a href="/doc/en/lb2/Synchronization.html" rel="nofollow">Offline synchronization</a>&nbsp;with Loopback.</td>
+      <td><a href="/doc/{{page.lang}}/lb2/Synchronization.html" rel="nofollow">Offline synchronization</a>&nbsp;with Loopback.</td>
     </tr>
     <tr>
       <td><a href="https://github.com/strongloop/loopback-example-passport" class="external-link" rel="nofollow">loopback-example-passport</a></td>
@@ -98,7 +98,7 @@ These examples illustrate specific LoopBack features.
     </tr>
     <tr>
       <td><a href="https://github.com/strongloop/loopback-example-push" class="external-link" rel="nofollow">loopback-example-push</a></td>
-      <td>Example of&nbsp;<a href="/doc/en/lb2/Push-notifications.html" rel="nofollow">LoopBack push notifications</a>, with iOS and Android clients.</td>
+      <td>Example of&nbsp;<a href="/doc/{{page.lang}}/lb2/Push-notifications.html" rel="nofollow">LoopBack push notifications</a>, with iOS and Android clients.</td>
     </tr>
     <tr>
       <td><a href="https://github.com/strongloop/loopback-example-ssl" class="external-link" rel="nofollow">loopback-example-ssl</a></td>

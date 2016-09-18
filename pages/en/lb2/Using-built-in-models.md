@@ -158,4 +158,4 @@ The mail connector uses [nodemailer](http://www.nodemailer.com/). See the [nod
 
 ### Confirming email address
 
-See [Verifying email addresses](/doc/{{page.lang}}/lb2/Registering-users.html#Registeringusers-Verifyingemailaddresses).
+See [Verifying email addresses](/doc/{{page.lang}}/lb2/Registering-users.html#verifying-email-addresses).

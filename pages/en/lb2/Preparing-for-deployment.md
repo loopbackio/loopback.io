@@ -67,7 +67,7 @@ For an application using the old `loopback-explorer` (prior to version 2.0), dis
 
 When you move your app from development to staging, you may want to make additional changes.
 For example, you might want to customize REST error responses.
-See [Customizing REST error handling](/doc/{{page.lang}}/lb2/Environment-specific-configuration.html#Environment-specificconfiguration-CustomizingRESTerrorhandling) for more information.
+See [Customizing REST error handling](/doc/{{page.lang}}/lb2/Environment-specific-configuration.html#customizing-rest-error-handling) for more information.
 
 ## Using SSL
 

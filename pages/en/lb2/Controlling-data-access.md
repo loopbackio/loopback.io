@@ -161,7 +161,7 @@ Each incoming request is mapped to an object with three attributes:
 * accessType - The access type, '**EXECUTE'**, '**READ'**, and '**WRITE'**
 
 ACL rules are described as an array of objects, each of which consists of attributes listed at 
-[Model definition JSON file#ACLs](/doc/{{page.lang}}/lb2/Model-definition-JSON-file.html#ModeldefinitionJSONfile-ACLs). 
+[Model definition JSON file - ACLs](/doc/{{page.lang}}/lb2/Model-definition-JSON-file.html#acls). 
 
 1.  model
 2.  property

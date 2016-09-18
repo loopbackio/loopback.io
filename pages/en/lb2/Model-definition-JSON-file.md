@@ -104,7 +104,7 @@ Properties are required unless otherwise designated.
           <li><code>true</code>:&nbsp;<code>id</code>&nbsp;property is added to the model automatically. This is the default.</li>
           <li><code>false</code>:&nbsp;<code>id</code>&nbsp;property is not added to the model</li>
         </ul>
-        <p>See <a href="/doc/en/lb2/Model-definition-JSON-file.html">ID properties</a> for more information.</p>
+        <p>See <a href="/doc/{{page.lang}}/lb2/Model-definition-JSON-file.html">ID properties</a> for more information.</p>
         <p><strong>Optional</strong>; default is <code>true</code>. If present, the <code>idInjection</code> propery in <code>options</code> takes precedence.</p>
       </td>
     </tr>
@@ -135,14 +135,14 @@ Properties are required unless otherwise designated.
       </td>
       <td>Object</td>
       <td>
-        <p>JSON object that specifies model options. See <a href="/doc/en/lb2/Model-definition-JSON-file.html">Options</a> below.</p>
+        <p>JSON object that specifies model options. See <a href="/doc/{{page.lang}}/lb2/Model-definition-JSON-file.html">Options</a> below.</p>
       </td>
     </tr>
     <tr>
       <td>properties</td>
       <td>Object</td>
       <td>
-        <p>JSON object that specifies the properties in the model. See <a href="/doc/en/lb2/Model-definition-JSON-file.html">Properties</a> below.</p>
+        <p>JSON object that specifies the properties in the model. See <a href="/doc/{{page.lang}}/lb2/Model-definition-JSON-file.html">Properties</a> below.</p>
       </td>
     </tr>
     <tr>
@@ -150,7 +150,7 @@ Properties are required unless otherwise designated.
       <td>Object</td>
       <td>
         <p>Object containing relation names and relation definitions.</p>
-        <p>See <a href="/doc/en/lb2/Model-definition-JSON-file.html">Relations</a> below.</p>
+        <p>See <a href="/doc/{{page.lang}}/lb2/Model-definition-JSON-file.html">Relations</a> below.</p>
       </td>
     </tr>
     <tr>
@@ -158,13 +158,13 @@ Properties are required unless otherwise designated.
       <td>Array</td>
       <td>
         <p>Set of&nbsp;<code>ACL</code>&nbsp;specifications that describes access control for the model.</p>
-        <p>See <a href="/doc/en/lb2/Model-definition-JSON-file.html">ACLs</a> below.</p>
+        <p>See <a href="/doc/{{page.lang}}/lb2/Model-definition-JSON-file.html">ACLs</a> below.</p>
       </td>
     </tr>
     <tr>
       <td>scopes</td>
       <td>Object</td>
-      <td>See <a href="/doc/en/lb2/Model-definition-JSON-file.html">Scopes</a> below.</td>
+      <td>See <a href="/doc/{{page.lang}}/lb2/Model-definition-JSON-file.html">Scopes</a> below.</td>
     </tr>
   </tbody>
 </table>
@@ -325,7 +325,7 @@ For example:
       <td>Boolean</td>
       <td>
         <p><span>Whether the property is a unique identifier. Default is false.</span></p>
-        <p><span>See </span><a href="/doc/en/lb2/Model-definition-JSON-file.html">Id property</a><span> below.</span></p>
+        <p><span>See </span><a href="/doc/{{page.lang}}/lb2/Model-definition-JSON-file.html">Id property</a><span> below.</span></p>
       </td>
     </tr>
     <tr>
@@ -352,7 +352,7 @@ For example:
         <p>String</p>
       </td>
       <td>
-        <p><span>Property type. Can be any type described in <a href="/doc/en/lb2/LoopBack-types.html">LoopBack types</a>.</span></p>
+        <p><span>Property type. Can be any type described in <a href="/doc/{{page.lang}}/lb2/LoopBack-types.html">LoopBack types</a>.</span></p>
       </td>
     </tr>
     <tr>
@@ -699,7 +699,7 @@ For example:
     <tr>
       <td>keyThrough</td>
       <td>String</td>
-      <td>Foreign key to be used in a <a href="/doc/en/lb2/HasMany-relations.html">HasMany relation</a>.</td>
+      <td>Foreign key to be used in a <a href="/doc/{{page.lang}}/lb2/HasMany-relations.html">HasMany relation</a>.</td>
     </tr>
     <tr>
       <td>
@@ -716,7 +716,7 @@ For example:
       <td>type</td>
       <td>String</td>
       <td>
-        <p>Relation type. Required. See <a href="/doc/en/lb2/Creating-model-relations.html">Creating model relations</a> for more information.</p>
+        <p>Relation type. Required. See <a href="/doc/{{page.lang}}/lb2/Creating-model-relations.html">Creating model relations</a> for more information.</p>
         <p>One of:</p>
         <ul>
           <li>hasMany</li>

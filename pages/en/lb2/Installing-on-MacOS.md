@@ -13,7 +13,7 @@ summary:
 
 ### Compiler tools
 
-If you want features such as [application profiling](https://docs.strongloop.com/display/SLC/Profiling) or [monitoring](https://docs.strongloop.com/display/SLC/Monitoring-app-metrics), you may need to install compiler tools before you start.  See [Installing compiler tools](/doc/{{page.lang}}/lb2/Installing-compiler-tools.html#Installingcompilertools-MacOS) for more information.
+If you want features such as [application profiling](https://docs.strongloop.com/display/SLC/Profiling) or [monitoring](https://docs.strongloop.com/display/SLC/Monitoring-app-metrics), you may need to install compiler tools before you start.  See [Installing compiler tools](/doc/{{page.lang}}/lb2/Installing-compiler-tools.html#macos) for more information.
 
 ### Set directory permissions
 

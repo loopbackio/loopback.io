@@ -22,7 +22,7 @@ The value of the include filter can be a string, an array, or an object.
 ### **REST API**
 
 filter[include][_relatedModel_]=_propertyName_
-You can also use [stringified JSON format](/doc/{{page.lang}}/lb2/Querying-data.html#Queryingdata-UsingstringifiedJSONinRESTqueries) in a REST query.
+You can also use [stringified JSON format](/doc/{{page.lang}}/lb2/Querying-data.html#using-stringified-json-in-rest-queries) in a REST query.
 
 ### Node API
 

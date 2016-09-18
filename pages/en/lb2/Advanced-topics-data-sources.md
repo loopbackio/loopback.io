@@ -39,7 +39,7 @@ The [`DataSource` constructor](http://apidocs.strongloop.com/loopback-datasour
 
 * name: Optional name of the data source instance being created. 
 * settings: An object of properties to configure the connector. Must include a `connector` property, specifying the connector to use.
-  See [Connecting models to data sources (Connectors)](/doc/{{page.lang}}/lb2/Connecting-models-to-data-sources.html#Connectingmodelstodatasources-Connectors).
+  See [Connecting models to data sources (Connectors)](/doc/{{page.lang}}/lb2/Connecting-models-to-data-sources.html#connectors).
 
 For example:
 
@@ -79,7 +79,7 @@ The `settings` argument configures the connector. Settings object format and d
 * `debug`: Turn on verbose mode to debug db queries and lifecycle
 
 For more information, see 
-[Connecting models to data sources (Connectors)](/doc/{{page.lang}}/lb2/Connecting-models-to-data-sources.html#Connectingmodelstodatasources-Datasourceproperties).
+[Connecting models to data sources (Data source properties)](/doc/{{page.lang}}/lb2/Connecting-models-to-data-sources.html#datasource-properties).
 For connector-specific settings, see the connector's documentation.
 
 ## Creating a model from a data source

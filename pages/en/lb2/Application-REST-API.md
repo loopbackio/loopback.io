@@ -35,7 +35,7 @@ The reference is provided here for convenience.
       <td>POST</td>
       <td>Allow</td>
       <td>
-        <p><a href="/doc/en/lb2/PersistedModel-REST-API.html#PersistedModelRESTAPI-Createmodelinstance">Add application instance</a> and persist to data source.</p>
+        <p><a href="/doc/{{page.lang}}/lb2/PersistedModel-REST-API.html#create-model-instance">Add application instance</a> and persist to data source.</p>
       </td>
       <td>JSON object (in request body)</td>
     </tr>
@@ -43,7 +43,7 @@ The reference is provided here for convenience.
       <td><code>/applications</code></td>
       <td>GET</td>
       <td>Deny</td>
-      <td><a href="/doc/en/lb2/PersistedModel-REST-API.html#PersistedModelRESTAPI-Findmatchinginstances">Find instances</a> of applications that match specified filter.</td>
+      <td><a href="/doc/{{page.lang}}/lb2/PersistedModel-REST-API.html#find-matching-instances">Find instances</a> of applications that match specified filter.</td>
       <td>
         <p>One or more filters in query parameters:</p>
         <ul>
@@ -60,21 +60,21 @@ The reference is provided here for convenience.
       <td><code>/applications</code></td>
       <td>PUT</td>
       <td>Deny</td>
-      <td><a href="/doc/en/lb2/PersistedModel-REST-API.html#PersistedModelRESTAPI-Update/insertinstance">Update / insert application instance</a> and persist to data source.</td>
+      <td><a href="/doc/{{page.lang}}/lb2/PersistedModel-REST-API.html#update--insert-instance">Update / insert application instance</a> and persist to data source.</td>
       <td>JSON object (in request body)</td>
     </tr>
     <tr>
       <td><code>/applications/<em>id</em></code></td>
       <td>GET</td>
       <td>Deny</td>
-      <td><a href="/doc/en/lb2/PersistedModel-REST-API.html#PersistedModelRESTAPI-FindinstancebyID">Find application by ID</a>: Return data for the specified application instance ID.</td>
+      <td><a href="/doc/{{page.lang}}/lb2/PersistedModel-REST-API.html#find-instance-by-id">Find application by ID</a>: Return data for the specified application instance ID.</td>
       <td><em>id</em>, the application instance ID (in URI path)</td>
     </tr>
     <tr>
       <td><code>/applications/<em>id</em></code></td>
       <td>PUT</td>
       <td>Deny</td>
-      <td><a href="/doc/en/lb2/PersistedModel-REST-API.html#PersistedModelRESTAPI-Updatemodelinstanceattributes">Update attributes</a> for specified application ID and persist.</td>
+      <td><a href="/doc/{{page.lang}}/lb2/PersistedModel-REST-API.html#update-model-instance-attributes">Update attributes</a> for specified application ID and persist.</td>
       <td>
         <p>Query parameters:</p>
         <ul>
@@ -87,7 +87,7 @@ The reference is provided here for convenience.
       <td><code>/applications/<em>id</em></code></td>
       <td>DELETE</td>
       <td>Deny</td>
-      <td><a href="/doc/en/lb2/PersistedModel-REST-API.html#PersistedModelRESTAPI-Deletemodelinstance">Delete application</a> with specified instance ID.</td>
+      <td><a href="/doc/{{page.lang}}/lb2/PersistedModel-REST-API.html#delete-model-instance">Delete application</a> with specified instance ID.</td>
       <td><em>id</em>, application ID<em> </em>(in URI path)</td>
     </tr>
     <tr>
@@ -95,7 +95,7 @@ The reference is provided here for convenience.
       <td>GET</td>
       <td>Deny</td>
       <td>
-        <p><a href="/doc/en/lb2/PersistedModel-REST-API.html#PersistedModelRESTAPI-Checkinstanceexistence">Check instance existence</a>: Return true if specified application ID exists.</p>
+        <p><a href="/doc/{{page.lang}}/lb2/PersistedModel-REST-API.html#check-instance-existence">Check instance existence</a>: Return true if specified application ID exists.</p>
       </td>
       <td>
         <p>URI path:</p>
@@ -109,7 +109,7 @@ The reference is provided here for convenience.
       <td>GET</td>
       <td>Deny</td>
       <td>
-        <p><a href="/doc/en/lb2/PersistedModel-REST-API.html#PersistedModelRESTAPI-Getinstancecount">Return the number of application instances</a>&nbsp;that matches specified where clause.</p>
+        <p><a href="/doc/{{page.lang}}/lb2/PersistedModel-REST-API.html#get-instance-count">Return the number of application instances</a>&nbsp;that matches specified where clause.</p>
       </td>
       <td>Where filter specified in query parameter</td>
     </tr>
@@ -118,9 +118,9 @@ The reference is provided here for convenience.
       <td>GET</td>
       <td>Deny</td>
       <td>
-        <p><a href="/doc/en/lb2/PersistedModel-REST-API.html#PersistedModelRESTAPI-Findfirstinstance">Find first application instance</a> that matches specified filter.</p>
+        <p><a href="/doc/{{page.lang}}/lb2/PersistedModel-REST-API.html#find-first-instance">Find first application instance</a> that matches specified filter.</p>
       </td>
-      <td>Same as&nbsp;<a href="/doc/en/lb2/PersistedModel-REST-API.html#PersistedModelRESTAPI-Findmatchinginstances">Find matching instances</a>.</td>
+      <td>Same as&nbsp;<a href="/doc/{{page.lang}}/lb2/PersistedModel-REST-API.html#find-matching-instances">Find matching instances</a>.</td>
     </tr>
   </tbody>
 </table>

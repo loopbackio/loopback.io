@@ -244,4 +244,4 @@ If you see this error message, you need to update your version of LoopBack. This
 See [LoopBack PR #1135](https://github.com/strongloop/loopback/pull/1135).
 
 If you need to use an older version of LoopBack, or want to enable these routes,
-you can [set a property in config.json](/doc/{{page.lang}}/lb2/config.json.html#config.json-Top-levelproperties) to do so.
+you can [set a property in config.json](/doc/{{page.lang}}/lb2/config.json.html) to do so.

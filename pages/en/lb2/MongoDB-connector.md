@@ -97,7 +97,7 @@ Edit `datasources.json` to add other properties that enable you to connect the
         <p>Connection string URI; see
           <a href="http://docs.mongodb.org/manual/reference/connection-string/" class="external-link" rel="nofollow">http://docs.mongodb.org/manual/reference/connection-string/</a>.
         </p>
-        <p>See <a href="/doc/en/lb2/MongoDB-connector.html">Replica set configuration</a> below.</p>
+        <p>See <a href="/doc/{{page.lang}}/lb2/MongoDB-connector.html">Replica set configuration</a> below.</p>
       </td>
     </tr>
     <tr>

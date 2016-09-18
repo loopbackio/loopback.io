@@ -232,4 +232,4 @@ module.exports = function(Post) {
 ### Hiding properties
 
 To hide a property of a model exposed over REST, define a hidden property.
-See [Model definition JSON file (Hidden properties)](/doc/{{page.lang}}/lb2/Model-definition-JSON-file.html#ModeldefinitionJSONfile-Hiddenproperties).
+See [Model definition JSON file (Hidden properties)](/doc/{{page.lang}}/lb2/Model-definition-JSON-file.html#hidden-properties).

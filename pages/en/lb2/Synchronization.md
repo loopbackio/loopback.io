@@ -104,7 +104,7 @@ Make the following change to the [Model definition JSON file](/doc/{{page.lang}}
 
 * Set `trackChanges` to `true`.
 * Change the `id` property to an auto-generated GUID; for information on GUIDs,
-  see [Model definition JSON file reference](/doc/{{page.lang}}/lb2/Model-definition-JSON-file.html#ModeldefinitionJSONfile-Generalpropertyproperties).
+  see [Model definition JSON file reference](/doc/{{page.lang}}/lb2/Model-definition-JSON-file.html#general-property-properties).
 * Set `strict` property to `validate`.
 * Set the `persistUndefinedAsNull` property to `true`.
 

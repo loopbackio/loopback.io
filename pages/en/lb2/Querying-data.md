@@ -42,12 +42,12 @@ In both cases, LoopBack models return JSON.
       <td>
         <p><code><a href="https://apidocs.strongloop.com/loopback/#persistedmodel-find" class="external-link" rel="nofollow">find(filter, callback)</a></code></p>
         <p>Where filter is a JSON object containing the query filters.</p>
-        <p>See <a href="/doc/en/lb2/Querying-data.html">Filters</a> below.</p>
+        <p>See <a href="/doc/{{page.lang}}/lb2/Querying-data.html">Filters</a> below.</p>
       </td>
       <td>
         <p><span>&nbsp;</span><code>GET /<em>modelName</em>?filter...</code></p>
-        <p>See <a href="/doc/en/lb2/PersistedModel-REST-API.html#PersistedModelRESTAPI-Findmatchinginstances">Model REST API - Find matching instances</a>.</p>
-        <p><span>See </span><a href="/doc/en/lb2/Querying-data.html">Filters</a><span>&nbsp;</span><span> below.</span></p>
+        <p>See <a href="/doc/{{page.lang}}/lb2/PersistedModel-REST-API.html#find-matching-instances">Model REST API - Find matching instances</a>.</p>
+        <p><span>See </span><a href="/doc/{{page.lang}}/lb2/Querying-data.html">Filters</a><span>&nbsp;</span><span> below.</span></p>
       </td>
     </tr>
     <tr>
@@ -55,12 +55,12 @@ In both cases, LoopBack models return JSON.
       <td>
         <p><code><a href="https://apidocs.strongloop.com/loopback/#persistedmodel-findone" class="external-link" rel="nofollow">findOne(filter, callback)</a></code></p>
         <p>Where filter is a JSON object containing the query filters.</p>
-        <p><span>See </span><a href="/doc/en/lb2/Querying-data.html">Filters</a><span>&nbsp;</span><span> below.</span></p>
+        <p><span>See </span><a href="/doc/{{page.lang}}/lb2/Querying-data.html">Filters</a><span>&nbsp;</span><span> below.</span></p>
       </td>
       <td>
         <p><code><span>GET /<em>modelName</em>/findOne?filter...</span></code></p>
-        <p>See <a href="/doc/en/lb2/PersistedModel-REST-API.html#PersistedModelRESTAPI-Findfirstinstance">Model REST API - Find first instance</a>.&nbsp;</p>
-        <p><span>See </span><a href="/doc/en/lb2/Querying-data.html">Filters</a><span>&nbsp;</span><span> below.</span></p>
+        <p>See <a href="/doc/{{page.lang}}/lb2/PersistedModel-REST-API.html#find-first-instance">Model REST API - Find first instance</a>.&nbsp;</p>
+        <p><span>See </span><a href="/doc/{{page.lang}}/lb2/Querying-data.html">Filters</a><span>&nbsp;</span><span> below.</span></p>
       </td>
     </tr>
     <tr>
@@ -68,12 +68,12 @@ In both cases, LoopBack models return JSON.
       <td>
         <p><code><a href="https://apidocs.strongloop.com/loopback/#persistedmodel-findbyid" class="external-link" rel="nofollow">findById(id, [filter,] callback)</a></code></p>
         <p>Where optional filter is a JSON object <span>containing the query filters.</span></p>
-        <p><span><span>See </span><a href="/doc/en/lb2/Querying-data.html">Filters</a><span>&nbsp;</span><span> below.</span></span>
+        <p><span><span>See </span><a href="/doc/{{page.lang}}/lb2/Querying-data.html">Filters</a><span>&nbsp;</span><span> below.</span></span>
         </p>
       </td>
       <td>
         <p><code><span>GET /</span><em>modelName</em><span>/</span><em>modelID</em></code></p>
-        <p>See <a href="/doc/en/lb2/PersistedModel-REST-API.html#PersistedModelRESTAPI-FindinstancebyID">Model REST API - Find instance by ID</a>.</p>
+        <p>See <a href="/doc/{{page.lang}}/lb2/PersistedModel-REST-API.html#find-instance-by-id">Model REST API - Find instance by ID</a>.</p>
       </td>
     </tr>
   </tbody>
@@ -140,7 +140,7 @@ The following table describes LoopBack's filter types:
       <td>Object, Array, or String</td>
       <td>
         <p>Specify fields to include in or exclude from the response.</p>
-        <p>See <a href="/doc/en/lb2/Fields-filter.html">Fields filter</a>.</p>
+        <p>See <a href="/doc/{{page.lang}}/lb2/Fields-filter.html">Fields filter</a>.</p>
       </td>
     </tr>
     <tr>
@@ -148,7 +148,7 @@ The following table describes LoopBack's filter types:
       <td>String, Object, or Array</td>
       <td>
         <p>Include results from related models, for relations such as&nbsp;<em>belongsTo</em>&nbsp;and&nbsp;<em>hasMany</em>.</p>
-        <p>See <a href="/doc/en/lb2/Include-filter.html">Include filter</a>.</p>
+        <p>See <a href="/doc/{{page.lang}}/lb2/Include-filter.html">Include filter</a>.</p>
       </td>
     </tr>
     <tr>
@@ -156,7 +156,7 @@ The following table describes LoopBack's filter types:
       <td>Number</td>
       <td>
         <p>Limit the number of instances to return.</p>
-        <p>See <a href="/doc/en/lb2/Limit-filter.html">Limit filter</a>.</p>
+        <p>See <a href="/doc/{{page.lang}}/lb2/Limit-filter.html">Limit filter</a>.</p>
       </td>
     </tr>
     <tr>
@@ -164,7 +164,7 @@ The following table describes LoopBack's filter types:
       <td>String</td>
       <td>
         <p>Specify sort order: ascending or descending.</p>
-        <p>See <a href="/doc/en/lb2/Order-filter.html">Order filter</a>.</p>
+        <p>See <a href="/doc/{{page.lang}}/lb2/Order-filter.html">Order filter</a>.</p>
       </td>
     </tr>
     <tr>
@@ -172,7 +172,7 @@ The following table describes LoopBack's filter types:
       <td>Number</td>
       <td>
         <p>Skip the specified number of instances.</p>
-        <p>See <a href="/doc/en/lb2/Skip-filter.html">Skip filter</a>.</p>
+        <p>See <a href="/doc/{{page.lang}}/lb2/Skip-filter.html">Skip filter</a>.</p>
       </td>
     </tr>
     <tr>
@@ -180,7 +180,7 @@ The following table describes LoopBack's filter types:
       <td>Object</td>
       <td>
         <p>Specify search criteria; similar to a WHERE clause in SQL.</p>
-        <p>See <a href="/doc/en/lb2/Where-filter.html">Where filter</a>.</p>
+        <p>See <a href="/doc/{{page.lang}}/lb2/Where-filter.html">Where filter</a>.</p>
       </td>
     </tr>
   </tbody>

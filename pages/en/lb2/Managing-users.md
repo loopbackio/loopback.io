@@ -49,7 +49,7 @@ The basic process to create and authenticate users is:
     See [Logging in users](/doc/{{page.lang}}/lb2/Logging-in-users.html) for more information.
 3.  Make subsequent API calls using the access token.
     Provide the access token in the HTTP header or as a query parameter to the REST API call, as shown in 
-    [Making authenticated requests with access tokens](/doc/{{page.lang}}/lb2/Making-authenticated-requests.html#Makingauthenticatedrequests-Makingauthenticatedrequestswithaccesstokens).
+    [Making authenticated requests with access tokens](/doc/{{page.lang}}/lb2/Making-authenticated-requests.html#making-authenticated-requests-with-access-tokens).
 
 ###Performance tip
 

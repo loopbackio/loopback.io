@@ -115,7 +115,7 @@ For example:
 }
 ```
 
-See [User REST API](/doc/{{page.lang}}/lb2/User-REST-API.html#UserRESTAPI-Loginuser) for more information.
+See [User REST API](/doc/{{page.lang}}/lb2/User-REST-API.html#login-user) for more information.
 
 ### Logging out
 
@@ -164,7 +164,7 @@ http://localhost:3000/api/users/logout
 curl -X VERB http://localhost:3000/api/users/logout?access_token=$ACCESS_TOKEN
 ```
 
-See [User REST API](/doc/{{page.lang}}/lb2/User-REST-API.html#UserRESTAPI-Logoutuser) for more information.
+See [User REST API](/doc/{{page.lang}}/lb2/User-REST-API.html#logout-user) for more information.
 
 ## Login using third-party systems
 
@@ -257,4 +257,4 @@ For a complete example, see [routes.js](https://github.com/strongloop/loopback-e
 in [loopback-example-user-management](https://github.com/strongloop/loopback-example-user-management).
 
 Over REST, use the `POST /users/reset` endpoint. It returns `200 OK` for a successful request.
-See [User REST API](/doc/{{page.lang}}/lb2/User-REST-API.html#UserRESTAPI-Resetpassword) for more information.
+See [User REST API](/doc/{{page.lang}}/lb2/User-REST-API.html#reset-password) for more information.

@@ -76,7 +76,7 @@ The following table describes the SOAP data source properties you can set in `da
     <tr>
       <td>operations</td>
       <td>Object</td>
-      <td>Maps WSDL binding operations to Node.js methods. Each key in the JSON object becomes the name of a method on the model. See <a href="/doc/en/lb2/SOAP-connector.html">Operations property</a> below.</td>
+      <td>Maps WSDL binding operations to Node.js methods. Each key in the JSON object becomes the name of a method on the model. See <a href="/doc/{{page.lang}}/lb2/SOAP-connector.html">Operations property</a> below.</td>
     </tr>
   </tbody>
 </table>

@@ -55,7 +55,7 @@ Here is the default version created by the [Application generator](/doc/{{page.l
 
 ## Phases
 
-Each top-level property in `middleware.json` corresponds to one of the following [middleware phases](/doc/{{page.lang}}/lb2/Defining-middleware.html#Definingmiddleware-Middlewarephases):  
+Each top-level property in `middleware.json` corresponds to one of the following [middleware phases](/doc/{{page.lang}}/lb2/Defining-middleware.html#middleware-phases):  
 
 1.  **`initial`** - The first point at which middleware can run.
 2.  **`session`** - Prepare the session object.
@@ -96,7 +96,7 @@ phase[:sub-phase] : {
 Where:
 
 * _phase_: is one of the predefined phases listed above (initial, session, auth, and so on) or a custom phase.
-  See [Adding a custom phase](/doc/{{page.lang}}/lb2/Defining-middleware.html#Definingmiddleware-Addingacustomphase).
+  See [Adding a custom phase](/doc/{{page.lang}}/lb2/Defining-middleware.html#adding-a-custom-phase).
 * _sub-phase_: (optional) can be `before` or `after`.
 * _name_: optional middleware name.
 * _middlewarePath_: path to the middleware function.

@@ -34,7 +34,7 @@ See [config.json](/doc/{{page.lang}}/lb2/config.json.html) for more information
 
 Model REST API endpoints are generally the plural form of the model name. By default this is simply the name with an "s" appended.
 For example, if the model is "car" then "cars" is the plural form.
-You can customize the plural form in the [model definition JSON file](/doc/{{page.lang}}/lb2/Model-definition-JSON-file.html#ModeldefinitionJSONfile-Top-levelproperties).
+You can customize the plural form in the [model definition JSON file](/doc/{{page.lang}}/lb2/Model-definition-JSON-file.html#top-level-properties).
 
 {% include note.html content="
 You can't customize the routes to PersistedModel REST API endpoints.

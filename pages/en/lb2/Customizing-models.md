@@ -47,7 +47,7 @@ You can customize a number of aspects of a model by simply editing the
 
 LoopBack _adds_ the settings in the the model JSON file to those of the base model.
 In most cases, this is straightforward, but for ACL settings there can be complex interactions since some ACL settings take precedence over others.
-For more information, see [ACL rule precedence](/doc/{{page.lang}}/lb2/Controlling-data-access.html#Controllingdataaccess-ACLruleprecedence) for more information.
+For more information, see [ACL rule precedence](/doc/{{page.lang}}/lb2/Controlling-data-access.html#acl-rule-precedence) for more information.
 
 ### Extending another model
 
@@ -116,7 +116,7 @@ Here are some of the most important settings you can customize:
 * **idInjection** - Whether to automatically add an id property to the model. True by default.
 * **http.path** - customized HTTP path of REST endpoints.
 
-See [Model definition JSON file](/doc/{{page.lang}}/lb2/Model-definition-JSON-file.html#ModeldefinitionJSONfile-Top-levelproperties) for more information.
+See [Model definition JSON file](/doc/{{page.lang}}/lb2/Model-definition-JSON-file.html#top-level-properties) for more information.
 
 ## Customizing a model with JavaScript code
 
@@ -128,7 +128,7 @@ Treat the script as part of the model definition; use it for model configuration
 You could also add model relationships, complex validations, or default functions for certain properties: Basically, anything you cannot do in JSON.
 However, note that at this point the script doesn't have access to the app instance.  
 
-You can also extend a model by adding a [remote method](/doc/{{page.lang}}/lb2/Remote-methods.html) or a [model hook](/doc/{{page.lang}}/lb2/Remote-hooks.html#Remotehooks-Modelhooks).
+You can also extend a model by adding a [remote method](/doc/{{page.lang}}/lb2/Remote-methods.html) or a [model hook](/doc/{{page.lang}}/lb2/Remote-hooks.html#model-hooks).
 
 If you don't want to expose the method over REST, then just omit the `remoteMethod()` call.
 

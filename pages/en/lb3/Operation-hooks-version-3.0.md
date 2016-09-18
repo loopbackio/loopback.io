@@ -400,13 +400,13 @@ See the following sections for more details.
 
 LoopBack provides the following operation hooks:
 
-* [access](/doc/{{page.lang}}/lb2/Operation-hooks.html#Operationhooks-access)
-* [before save](/doc/{{page.lang}}/lb2/Operation-hooks.html#Operationhooks-beforesave)
-* [after save](/doc/{{page.lang}}/lb2/Operation-hooks.html#Operationhooks-aftersave)
-* [before delete](/doc/{{page.lang}}/lb2/Operation-hooks.html#Operationhooks-beforedelete)
-* [after delete](/doc/{{page.lang}}/lb2/Operation-hooks.html#Operationhooks-afterdelete)
-* [loaded](/doc/{{page.lang}}/lb2/Operation-hooks.html#Operationhooks-loaded)
-* [persist](/doc/{{page.lang}}/lb2/Operation-hooks.html#Operationhooks-persist)
+* [access](/doc/{{page.lang}}/lb2/Operation-hooks.html#access)
+* [before save](/doc/{{page.lang}}/lb2/Operation-hooks.html#before-save)
+* [after save](/doc/{{page.lang}}/lb2/Operation-hooks.html#after-save)
+* [before delete](/doc/{{page.lang}}/lb2/Operation-hooks.html#before-delete)
+* [after delete](/doc/{{page.lang}}/lb2/Operation-hooks.html#after-delete)
+* [loaded](/doc/{{page.lang}}/lb2/Operation-hooks.html#loaded)
+* [persist](/doc/{{page.lang}}/lb2/Operation-hooks.html#persist)
 
 The following table lists hooks that PersistedModel methods invoke.
 

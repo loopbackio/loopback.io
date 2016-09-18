@@ -95,4 +95,4 @@ One way to set a default value for a property is to set the "default" property 
 You can also set the defaultFn property to set the default value to a globally-unique identifer (GUID) or the timestamp.
 
 For more information, see the model JSON file 
-[General property properties](/doc/{{page.lang}}/lb2/Model-definition-JSON-file.html#ModeldefinitionJSONfile-Generalpropertyproperties) section.
+[General property properties](/doc/{{page.lang}}/lb2/Model-definition-JSON-file.html#general-property-properties) section.

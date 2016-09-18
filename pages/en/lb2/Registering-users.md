@@ -47,7 +47,7 @@ curl -X POST -H "Content-Type:application/json"         \
 http://localhost:3000/api/users
 ```
 
-For more information, see [User REST API](/doc/{{page.lang}}/lb2/User-REST-API.html#UserRESTAPI-Loginuser).
+For more information, see [User REST API](/doc/{{page.lang}}/lb2/User-REST-API.html#login-user).
 
 ### Adding other registration constraints
 
@@ -83,7 +83,7 @@ For example:
 ```
 
 Over REST, use the `GET /users/confirm` endpoint to verify a user's email address.
-For details, see [User REST API](/doc/{{page.lang}}/lb2/User-REST-API.html#UserRESTAPI-Confirmemailaddress).
+For details, see [User REST API](/doc/{{page.lang}}/lb2/User-REST-API.html#confirm-email-address).
 
 This example creates a[remote hook](/doc/{{page.lang}}/lb2/Remote-hooks.html) on the User model executed after the `create()` method is called.
 

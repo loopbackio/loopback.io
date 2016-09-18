@@ -133,7 +133,7 @@ See [LoopBack types](/doc/{{page.lang}}/lb2/LoopBack-types.html) for details o
       <td>POINT</td>
     </tr>
     <tr>
-      <td>Custom Enum type<br>(See <a href="/doc/en/lb2/MySQL-connector.html">Enum</a> below)&nbsp;</td>
+      <td>Custom Enum type<br>(See <a href="/doc/{{page.lang}}/lb2/MySQL-connector.html">Enum</a> below)&nbsp;</td>
       <td>ENUM</td>
     </tr>
   </tbody>
@@ -166,8 +166,8 @@ See [LoopBack types](/doc/{{page.lang}}/lb2/LoopBack-types.html) for details o
     <tr>
       <td>TINYINT<br>SMALLINT<br>INT<br>MEDIUMINT<br>YEAR<br>FLOAT<br>DOUBLE<br>NUMERIC<br>DECIMAL</td>
       <td>
-        <p>Number<br>For FLOAT and DOUBLE, See <a href="/doc/en/lb2/MySQL-connector.html">Floating-point types</a>.&nbsp;</p>
-        <p>For NUMERIC and DECIMAL, see <a href="/doc/en/lb2/MySQL-connector.html">Fixed-point exact value types</a></p>
+        <p>Number<br>For FLOAT and DOUBLE, See <a href="/doc/{{page.lang}}/lb2/MySQL-connector.html">Floating-point types</a>.&nbsp;</p>
+        <p>For NUMERIC and DECIMAL, see <a href="/doc/{{page.lang}}/lb2/MySQL-connector.html">Fixed-point exact value types</a></p>
       </td>
     </tr>
     <tr>

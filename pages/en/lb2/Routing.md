@@ -100,7 +100,7 @@ Instead, it will be ignored because the route was already matched.
 The middleware to be loaded during the middleware phases are configured in the [middleware.json](/doc/{{page.lang}}/lb2/middleware.json.html) file of the app.
 The order of the phases in the file are semantic, and cannot be listed randomly.
 
-LoopBack also supports [custom phases](/doc/{{page.lang}}/lb2/Defining-middleware.html#Definingmiddleware-Addingacustomphase).
+LoopBack also supports [custom phases](/doc/{{page.lang}}/lb2/Defining-middleware.html#adding-a-custom-phase).
 Custom phases can be defined in any position of the middleware chain, and maybe be used to prioritize over LoopBack's built-in middleware phases.
 
 ### Loading middleware

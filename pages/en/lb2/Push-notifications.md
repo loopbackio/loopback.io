@@ -65,7 +65,7 @@ $ git clone https://github.com/strongloop/loopback-example-push.git
 ### Set up messaging credentials for Android apps
 
 First, if you haven't already done so,
-[get your Google Cloud Messaging (GCM) credentials](/doc/{{page.lang}}/lb2/Push-notifications-for-Android-apps.html#PushnotificationsforAndroidapps-GetyourGoogleCloudMessagingcredentials) for Android apps.
+[get your Google Cloud Messaging (GCM) credentials](/doc/{{page.lang}}/lb2/Push-notifications-for-Android-apps.html#get-your-google-cloud-messaging-credentials) for Android apps.
 After following the instructions, you will have a GCM API key. Then edit your application's `config.js` to add them; for example, in the sample app, 
 [`loopback-2.x/server/config.js`](https://github.com/strongloop/loopback-example-push/blob/master/loopback-2.x/server/config.js):
 

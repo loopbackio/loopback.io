@@ -12,16 +12,14 @@ summary:
 Installing Node and StrongLoop on Windows presents some special challenges and requirements. 
 
 {% include important.html content="
-
 StrongLoop Process Manager does not run on Windows. Therefore, you cannot deploy an application _to_ a Windows system. However, you can build and deploy on a Windows system and deploy from there to a Linux or MacOS system.
-
 " %}
 
 ## Prerequisites
 
 ### Compiler tools
 
-If you want features such as [application profiling](https://docs.strongloop.com/display/SLC/Profiling) or [monitoring](https://docs.strongloop.com/display/SLC/Monitoring-app-metrics), you must install compiler tools and Python before you start.  See [Installing compiler tools](/doc/{{page.lang}}/lb2/Installing-compiler-tools.html#Installingcompilertools-Windows) for more information.
+If you want features such as [application profiling](https://docs.strongloop.com/display/SLC/Profiling) or [monitoring](https://docs.strongloop.com/display/SLC/Monitoring-app-metrics), you must install compiler tools and Python before you start.  See [Installing compiler tools](/doc/{{page.lang}}/lb2/Installing-compiler-tools.html#windows) for more information.
 
 ### Git
 
@@ -51,9 +49,7 @@ By default, Git on Windows does not support paths longer than 260 characters; to
 3.  Run the installer.
 
 {% include tip.html content="
-
 For best results, use the latest LTS (long-term support) release of Node.js.
-
 " %}
 
 ## Reinstall npm
@@ -65,9 +61,7 @@ The version of npm installed as part of the Node installation has known issues o
 ## Install StrongLoop
 
 {% include important.html content="
-
 Node does not support Cygwin. You must use the Windows Command Prompt (shell).
-
 " %}
 
 Follow these steps:
@@ -88,12 +82,10 @@ Try the following:
 
     *   `python --version`  
         Should be 2.7.x
-    *   ```
-        node --version
-        ```Should be v0.10.x or v0.12.x.
-    *   ```
-        npm --version
-        ```Should be 1.x or 2.x.
+    *   `node --version`
+        Should be v0.10.x or v0.12.x.
+    *   `npm --version`
+        Should be 1.x or 2.x.
 
 <div class="sl-hidden"><strong>REVIEW COMMENT from Rand</strong><br>FIXME any way to determine what vs-- is installed? FIXME is there any way to determine what python and msbuild node-gyp has found?</div>
 

@@ -103,7 +103,7 @@ To exit the model generator, press RETURN when prompted for property name.
 
 ## Update boot script to add data 
 
-Recall back in part I of [Getting started](/doc/{{page.lang}}/lb2/Getting-started-with-LoopBack), you [added a boot script](/doc/{{page.lang}}/lb2/Connect-your-API-to-a-data-source.html#ConnectyourAPItoadatasource-Addsometestdataandviewit) to create a database table from the model (via auto-migration) and add some data to the database.
+Recall back in part I of [Getting started](/doc/{{page.lang}}/lb2/Getting-started-with-LoopBack), you [added a boot script](/doc/{{page.lang}}/lb2/Connect-your-API-to-a-data-source.html#add-some-test-data-and-view-it) to create a database table from the model (via auto-migration) and add some data to the database.
 
 Now that you have some new models and a new data source, you need to update this script so it will create data structures in MongoDB and insert data via the new models.
 

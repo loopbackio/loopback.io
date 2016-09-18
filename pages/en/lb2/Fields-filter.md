@@ -17,7 +17,7 @@ A _fields_ filter specifies properties (fields) to include or exclude from th
 
 Note that to include more than one field in REST, use multiple filters.
 
-You can also use [stringified JSON format](/doc/{{page.lang}}/lb2/Querying-data.html#Queryingdata-UsingstringifiedJSONinRESTqueries) in a REST query.
+You can also use [stringified JSON format](/doc/{{page.lang}}/lb2/Querying-data.html#using-stringified-json-in-rest-queries) in a REST query.
 
 ### Node API
 

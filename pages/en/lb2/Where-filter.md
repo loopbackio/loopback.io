@@ -28,7 +28,7 @@ For example, here is a query to find cars with `odo` is less than 30,000:
 
 `/cars?filter[where][odo][lt]=30000`
 
-You can also use [stringified JSON format](/doc/{{page.lang}}/lb2/Querying-data.html#Queryingdata-UsingstringifiedJSONinRESTqueries) in a REST query.
+You can also use [stringified JSON format](/doc/{{page.lang}}/lb2/Querying-data.html#using-stringified-json-in-rest-queries) in a REST query.
 
 ## Node API
 

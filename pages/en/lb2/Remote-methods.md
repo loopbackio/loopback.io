@@ -125,7 +125,7 @@ All of the options properties are optional. However, if the remote method requir
         <div class="code panel pdl" style="border-width: 1px;">
           <div class="codeContent panelContent pdl"><pre class="theme: Emacs; brush: jscript; gutter: false" style="font-size:12px;">Person.greet(name, age, callback)...</pre></div>
           </div>
-        <p>`name` is the first argument, `age` is the second argument and callback is automatically provided by LoopBack (do not specify it in your `accepts` array). For more info, see <a href="/doc/en/lb2/Remote-methods.html">Argument descriptions</a>.</p>
+        <p>`name` is the first argument, `age` is the second argument and callback is automatically provided by LoopBack (do not specify it in your `accepts` array). For more info, see <a href="/doc/{{page.lang}}/lb2/Remote-methods.html">Argument descriptions</a>.</p>
         <p>Default if not provided is the empty array, <code>[]</code>.</p>
       </td>
       <td>
@@ -223,7 +223,7 @@ All of the options properties are optional. However, if the remote method requir
     <tr>
       <td>returns</td>
       <td>
-        <p>Describes the remote method's callback arguments; See&nbsp;<a href="/doc/en/lb2/Remote-methods.html">Argument descriptions</a>. The&nbsp;<code>err </code>argument is assumed; do not specify.</p>
+        <p>Describes the remote method's callback arguments; See&nbsp;<a href="/doc/{{page.lang}}/lb2/Remote-methods.html">Argument descriptions</a>. The&nbsp;<code>err </code>argument is assumed; do not specify.</p>
         <p><span>Default if not provided is the empty array, </span><span>&nbsp;</span><code>[]</code><span>.</span></p>
       </td>
       <td>
@@ -280,7 +280,7 @@ The following table describes the properties of each individual argument.
     <tr>
       <td>http</td>
       <td>Object or Function</td>
-      <td>For input arguments: a function or an object describing mapping from HTTP request to the argument value. See <a href="/doc/en/lb2/Remote-methods.html">HTTP mapping of input arguments</a> below.</td>
+      <td>For input arguments: a function or an object describing mapping from HTTP request to the argument value. See <a href="/doc/{{page.lang}}/lb2/Remote-methods.html">HTTP mapping of input arguments</a> below.</td>
     </tr>
     <tr>
       <td>http.target</td>
@@ -309,7 +309,7 @@ The following table describes the properties of each individual argument.
     <tr>
       <td>type</td>
       <td>String</td>
-      <td>Argument datatype; must be a&nbsp;<a href="/doc/en/lb2/LoopBack-types.html">Loopback type</a>. Additionally, callback arguments allow a special type "file"; see below.</td>
+      <td>Argument datatype; must be a&nbsp;<a href="/doc/{{page.lang}}/lb2/LoopBack-types.html">Loopback type</a>. Additionally, callback arguments allow a special type "file"; see below.</td>
     </tr>
     <tr>
       <td>default</td>

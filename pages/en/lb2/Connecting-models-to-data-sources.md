@@ -168,32 +168,32 @@ The following table lists commercially-supported LoopBack connectors. For more i
   </thead>
   <tbody>
     <tr>
-      <td><a href="/doc/en/lb2/Memory-connector.html">Memory connector</a></td>
+      <td><a href="/doc/{{page.lang}}/lb2/Memory-connector.html">Memory connector</a></td>
       <td>Built in to LoopBack</td>
       <td>Not required; suitable for development and debugging only.</td>
     </tr>
     <tr>
-      <td><a href="/doc/en/lb2/MongoDB-connector.html">MongoDB</a></td>
+      <td><a href="/doc/{{page.lang}}/lb2/MongoDB-connector.html">MongoDB</a></td>
       <td><a href="https://www.npmjs.com/package/loopback-connector-mongodb" class="external-link" rel="nofollow">loopback-connector-mongodb</a></td>
       <td><code>npm install --save loopback-connector-mongodb</code></td>
     </tr>
     <tr>
-      <td><a href="/doc/en/lb2/MySQL-connector.html">MySQL</a></td>
+      <td><a href="/doc/{{page.lang}}/lb2/MySQL-connector.html">MySQL</a></td>
       <td><a href="https://www.npmjs.com/package/loopback-connector-mysql" class="external-link" rel="nofollow">loopback-connector-mysql</a></td>
       <td><code>npm install <span>--save </span>loopback-connector-mysql</code></td>
     </tr>
     <tr>
-      <td><a href="/doc/en/lb2/Oracle-connector.html">Oracle</a></td>
+      <td><a href="/doc/{{page.lang}}/lb2/Oracle-connector.html">Oracle</a></td>
       <td><a href="https://www.npmjs.com/package/loopback-connector-oracle" class="external-link" rel="nofollow">loopback-connector-oracle</a></td>
       <td><code>npm install --save loopback-connector-oracle</code></td>
     </tr>
     <tr>
-      <td><a href="/doc/en/lb2/PostgreSQL-connector.html">PostgreSQL</a></td>
+      <td><a href="/doc/{{page.lang}}/lb2/PostgreSQL-connector.html">PostgreSQL</a></td>
       <td><a href="https://www.npmjs.com/package/loopback-connector-mysql" class="external-link" rel="nofollow">loopback-connector-postgresql</a></td>
       <td><code>npm install <span>--save </span>loopback-connector-postgresql</code></td>
     </tr>
     <tr>
-      <td><a href="/doc/en/lb2/SQL-Server-connector.html">SQL Server</a></td>
+      <td><a href="/doc/{{page.lang}}/lb2/SQL-Server-connector.html">SQL Server</a></td>
       <td><a href="https://www.npmjs.com/package/loopback-connector-mssql" class="external-link" rel="nofollow">loopback-connector-mssql</a></td>
       <td><code>npm install <span>--save </span>loopback-connector-mssql</code></td>
     </tr>
@@ -206,34 +206,34 @@ The following table lists commercially-supported LoopBack connectors. For more i
       <td colspan="3"><strong>Other connectors</strong></td>
     </tr>
     <tr>
-      <td><a href="/doc/en/lb2/Email-connector.html">Email connector</a></td>
+      <td><a href="/doc/{{page.lang}}/lb2/Email-connector.html">Email connector</a></td>
       <td>Built in to LoopBack</td>
       <td>
         <p>Not required</p>
       </td>
     </tr>
     <tr>
-      <td><a href="/doc/en/lb2/Push-connector.html">Push connector</a> <span>&nbsp;</span></td>
+      <td><a href="/doc/{{page.lang}}/lb2/Push-connector.html">Push connector</a> <span>&nbsp;</span></td>
       <td><a href="https://github.com/strongloop/loopback-component-push" class="external-link" rel="nofollow">loopback-component-push</a></td>
       <td><code><span>npm install </span><span>--save </span><span>loopback-component-push</span></code></td>
     </tr>
     <tr>
-      <td><a href="/doc/en/lb2/Remote-connector.html">Remote connector</a></td>
+      <td><a href="/doc/{{page.lang}}/lb2/Remote-connector.html">Remote connector</a></td>
       <td><a href="https://github.com/strongloop/loopback-connector-remote" class="external-link" rel="nofollow">loopback-connector-remote</a></td>
       <td><code><span>npm install </span><span>--save </span><span>loopback-connector-remote</span></code></td>
     </tr>
     <tr>
-      <td><a href="/doc/en/lb2/REST-connector.html">REST</a></td>
+      <td><a href="/doc/{{page.lang}}/lb2/REST-connector.html">REST</a></td>
       <td><a href="http://github.com/strongloop/loopback-connector-rest" class="external-link" rel="nofollow">loopback-connector-rest</a></td>
       <td><code>npm install <span>--save </span>loopback-connector-rest</code></td>
     </tr>
     <tr>
-      <td><a href="/doc/en/lb2/SOAP-connector.html">SOAP</a></td>
+      <td><a href="/doc/{{page.lang}}/lb2/SOAP-connector.html">SOAP</a></td>
       <td><a href="http://github.com/strongloop/loopback-connector-soap" class="external-link" rel="nofollow">loopback-connector-soap</a></td>
       <td><code><span><span>npm install <span>--save </span></span>loopback-connector-soap</span></code></td>
     </tr>
     <tr>
-      <td><a href="/doc/en/lb2/Storage-connector.html">Storage connector</a></td>
+      <td><a href="/doc/{{page.lang}}/lb2/Storage-connector.html">Storage connector</a></td>
       <td><a href="https://github.com/strongloop/loopback-component-storage" class="external-link" rel="nofollow">loopback-component-storage</a> <span>&nbsp;</span> <span>&nbsp;</span></td>
       <td><code><span>npm install </span><span>--save </span><span>loopback-component-storage</span></code></td>
     </tr>
@@ -337,7 +337,7 @@ as described in the following table.
       <td>String</td>
       <td>
         <p>Combines and overrides <code>host</code>,&nbsp;<code>port</code>,&nbsp;<code>user</code>,&nbsp;<code>password</code>, and&nbsp;<code>database</code>&nbsp;properties.</p>
-        <p>Only valid with <a href="/doc/en/lb2/MongoDB-connector.html">MongoDB connector</a>, <a href="/doc/en/lb2/PostgreSQL-connector.html">PostgreSQL connector</a>, and <a href="/doc/en/lb2/SQL-Server-connector.html">SQL Server connector</a>.</p>
+        <p>Only valid with <a href="/doc/{{page.lang}}/lb2/MongoDB-connector.html">MongoDB connector</a>, <a href="/doc/{{page.lang}}/lb2/PostgreSQL-connector.html">PostgreSQL connector</a>, and <a href="/doc/{{page.lang}}/lb2/SQL-Server-connector.html">SQL Server connector</a>.</p>
       </td>
     </tr>
     <tr>
