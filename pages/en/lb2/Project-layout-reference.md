@@ -13,7 +13,7 @@ LoopBack project files and directories are in the _application root directory_.
 Within this directory the standard LoopBack project structure has three sub-directories:
 
 * `server` - Node application scripts and configuration files.
-* `client` - Client JavaScript, HTML, and CSS files.
+* `client` - Client JavaScript, HTML, and CSS files.  NOTE: Only the [StrongLoop tools](/doc/{{page.lang}}/lb2/Installing-StrongLoop.html) create this directory; the [API Connect tools](/doc/{{page.lang}}/lb2/Installing-IBM-API-Connect.html) do not.
 * `common` - Files common to client and server. The `/models` sub-directory contains all model JSON and JavaScript files.
 * `definitions` - API and product definition YAML files (**IBM API Connect only**).
 
@@ -71,7 +71,7 @@ Within this directory the standard LoopBack project structure has three sub-dire
     </tr>
     <tr>
       <td><code><a href="/doc/{{page.lang}}/lb2/datasources.json.html">datasources.json</a></code>&nbsp;</td>
-      <td>Data source configuration file. See <a href="/doc/{{page.lang}}/lb2/datasources.json.html">datasources.json</a>. <span>For an example, see <a href="https://docs.strongloop.com/display/TRASH/Create-new-data-source">Create new data source</a></span><span>.</span></td>
+      <td>Data source configuration file. See <a href="/doc/{{page.lang}}/lb2/datasources.json.html">datasources.json</a>. <span>For an example, see <a href="/doc/{{page.lang}}/lb2/Create-new-data-source.html">Create new data source</a></span><span>.</span></td>
       <td><code>app.datasources['datasource-name']</code></td>
     </tr>
     <tr>
