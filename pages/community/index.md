@@ -7,7 +7,6 @@ sidebar: community_sidebar
 permalink: /doc/community/index.html
 ---
 
-This is where members of the LoopBack community can promote and explain their
-LoopBack-related projects.
+This is where Loopback developers can promote and explain the community projects that gives inspiration.
 
 _More details TBD_
