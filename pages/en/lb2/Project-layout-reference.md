@@ -47,12 +47,12 @@ Within this directory the standard LoopBack project structure has three sub-dire
       <td>N/A</td>
     </tr>
     <tr>
-      <td><span>&nbsp;</span><code><span>README.md</span></code></td>
+      <td> <code><span>README.md</span></code></td>
       <td>Stub file for internal documentation.</td>
       <td>N/A</td>
     </tr>
     <tr>
-      <th colspan="3"><span>/server directory - </span>Node application files<span>&nbsp;</span></th>
+      <th colspan="3"><span>/server directory - </span>Node application files </th>
     </tr>
     <tr>
       <td><code>/boot</code> directory</td>
@@ -86,7 +86,7 @@ Within this directory the standard LoopBack project structure has three sub-dire
     </tr>
     <tr>
       <td><code><a href="/doc/{{page.lang}}/lb2/model-config.json.html">model-config.json</a></code></td>
-      <td>Model configuration file. See <a href="/doc/{{page.lang}}/lb2/model-config.json.html">model-config.json</a>. <span>For more information, see </span><span>&nbsp;</span><a href="/doc/{{page.lang}}/lb2/Connecting-models-to-data-sources.html">Connecting models to data sources</a><span>.</span></td>
+      <td>Model configuration file. See <a href="/doc/{{page.lang}}/lb2/model-config.json.html">model-config.json</a>. <span>For more information, see </span> <a href="/doc/{{page.lang}}/lb2/Connecting-models-to-data-sources.html">Connecting models to data sources</a><span>.</span></td>
       <td>N/A</td>
     </tr>
     <tr>

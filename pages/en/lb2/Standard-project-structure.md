@@ -32,7 +32,7 @@ Within this directory the standard LoopBack project structure has three sub-dire
     </tr>
     <tr>
       <td><code>/node-modules</code> directory</td>
-      <td>Contains Node packages as specified as dependencies in <code>package.json</code>.&nbsp; Update with <code>npm install</code>.</td>
+      <td>Contains Node packages as specified as dependencies in <code>package.json</code>. Update with <code>npm install</code>.</td>
       <td>N/A</td>
     </tr>
     <tr>
@@ -47,12 +47,12 @@ Within this directory the standard LoopBack project structure has three sub-dire
       <td>N/A</td>
     </tr>
     <tr>
-      <td><span>&nbsp;</span><code><span>README.md</span></code></td>
+      <td><code>README.md</code></td>
       <td>Stub file for internal documentation.</td>
       <td>N/A</td>
     </tr>
     <tr>
-      <th colspan="3"><span>/server directory - </span>Node application files<span>&nbsp;</span></th>
+      <th colspan="3"><span>/server directory - </span>Node application files</th>
     </tr>
     <tr>
       <td><code>/boot</code> directory</td>
@@ -70,8 +70,8 @@ Within this directory the standard LoopBack project structure has three sub-dire
       <td><code>app.get('setting-name')</code></td>
     </tr>
     <tr>
-      <td><code><a href="/doc/{{page.lang}}/lb2/datasources.json.html">datasources.json</a></code>&nbsp;</td>
-      <td>Data source configuration file. See <a href="/doc/{{page.lang}}/lb2/datasources.json.html">datasources.json</a>. <span>For an example, see <a href="https://docs.strongloop.com/display/TRASH/Create-new-data-source">Create new data source</a></span><span>.</span></td>
+      <td><code><a href="/doc/{{page.lang}}/lb2/datasources.json.html">datasources.json</a></code></td>
+      <td>Data source configuration file. See <a href="/doc/{{page.lang}}/lb2/datasources.json.html">datasources.json</a>. <span>For an example, see <a href="/doc/{{page.lang}}/lb2/Create-new-data-source.html">Create new data source</a></span><span>.</span></td>
       <td><code>app.datasources['datasource-name']</code></td>
     </tr>
     <tr>
@@ -81,13 +81,13 @@ Within this directory the standard LoopBack project structure has three sub-dire
     </tr>
     <tr>
       <td><code>middleware.production.json</code></td>
-      <td>Middleware definition file with production configuration.&nbsp; See <a href="/doc/{{page.lang}}/lb2/Preparing-for-deployment.html">Preparing for deployment</a>.</td>
+      <td>Middleware definition file with production configuration. See <a href="/doc/{{page.lang}}/lb2/Preparing-for-deployment.html">Preparing for deployment</a>.</td>
       <td>&nbsp;</td>
     </tr>
     <tr>
       <td><code><a href="/doc/{{page.lang}}/lb2/model-config.json.html">model-config.json</a></code></td>
       <td>Model configuration file. See <a href="/doc/{{page.lang}}/lb2/model-config.json.html">model-config.json</a>. <span>For more information,
-          see </span><span>&nbsp;</span><a href="/doc/{{page.lang}}/lb2/Connecting-models-to-data-sources.html">Connecting models to data sources</a><span>.</span></td>
+          see </span><a href="/doc/{{page.lang}}/lb2/Connecting-models-to-data-sources.html">Connecting models to data sources</a><span>.</span></td>
       <td>N/A</td>
     </tr>
     <tr>

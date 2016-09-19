@@ -63,14 +63,14 @@ The data source then has the following settings.
     <tr>
       <td>host or hostname</td>
       <td>String</td>
-      <td><span>localhost</span></td>
-      <td>Host name or IP address of the Oracle <span>database</span> server</td>
+      <td>localhost</td>
+      <td>Host name or IP address of the Oracle database server</td>
     </tr>
     <tr>
       <td>port</td>
       <td>Number</td>
       <td>1521</td>
-      <td>Port number of the Oracle <span>database</span> server</td>
+      <td>Port number of the Oracle database server</td>
     </tr>
     <tr>
       <td>username or user</td>
@@ -80,9 +80,9 @@ The data source then has the following settings.
     </tr>
     <tr>
       <td>password</td>
-      <td><span>String</span></td>
+      <td>String</td>
       <td>&nbsp;</td>
-      <td><span>Password to connect to the Oracle database server</span></td>
+      <td>Password to connect to the Oracle database server</td>
     </tr>
     <tr>
       <td>database</td>
@@ -169,29 +169,29 @@ Here is an example for `datasources.json`:
       <th>Default value</th>
     </tr>
     <tr>
-      <td><span class="nx">minConn</span></td>
-      <td><span style="color: rgb(0,0,0);">Maximum number of connections in the connection pool</span></td>
+      <td>minConn</td>
+      <td>Maximum number of connections in the connection pool</td>
       <td>1</td>
     </tr>
     <tr>
-      <td style="text-align: left;"><span>maxConn</span>&nbsp;</td>
-      <td><span style="color: rgb(0,0,0);">Minimum number of connections in the connection pool</span></td>
+      <td style="text-align: left;">maxConn&nbsp;</td>
+      <td>Minimum number of connections in the connection pool</td>
       <td>10</td>
     </tr>
     <tr>
-      <td style="text-align: left;"><span>incrConn</span>&nbsp;</td>
+      <td style="text-align: left;">incrConn&nbsp;</td>
       <td>
-        <p><span style="color: rgb(0,0,0);">Incremental number of connections for the connection pool.</span></p>
+        <p>Incremental number of connections for the connection pool.</p>
       </td>
       <td>1</td>
     </tr>
     <tr>
-      <td style="text-align: left;"><span>timeout</span>&nbsp;</td>
+      <td style="text-align: left;">timeout&nbsp;</td>
       <td>
-        <p><span style="color: rgb(0,0,0);">Time-out period in seconds for a connection in the connection pool. </span>
-          <span style="line-height: 1.4285715;color: rgb(0,0,0);">The Oracle connector </span>
-          <span style="line-height: 1.4285715;color: rgb(0,0,0);">will terminate connections in this </span>
-          <span style="color: rgb(0,0,0);">connection pool that are idle longer than the time-out period.</span>
+        <p>Time-out period in seconds for a connection in the connection pool.
+          The Oracle connector
+          will terminate connections in this
+          connection pool that are idle longer than the time-out period.
         </p>
       </td>
       <td>10</td>

@@ -16,32 +16,32 @@ Alerts are little warnings, info, or other messages that you have called out in 
 Similar to [inserting images][mydoc_images]), you insert alerts through various includes that have been developed. These includes provide templates through which you pass parameters to easily populate the right HTML code.
 
 ```
-{%raw%}{% include note.html content="This is my note. All the content I type here is treated as a single paragraph." %}{% endraw%}
+{%raw%}{% include note.html content="This is my note. All the content I type here is treated as a single paragraph."
+%}{% endraw%}
 ```
 
 Here's the result:
 
-{% include note.html content="This is my note. All the content I type here is treated as a single paragraph." %}
+{% include note.html content="This is my note. All the content I type here is treated as a single paragraph.
+" %}
 
-With alerts, there's just one include property:
-
-| Property | description |
-|-------|--------|
-| content | The content for the alert. |
+With alerts, there's just one include property, `content`, that contains the content for the alert.
 
 If you need multiple paragraphs, enter `<br/><br/>` tags. This is because block level tags aren't allowed here, as Kramdown is processing the content as Markdown despite the fact that the content is surrounded by HTML tags. Here's an example with a break:
 
 ```
-{%raw%}{% include note.html content="This is my note. All the content I type here is treated as a single paragraph. <br/><br/> Now I'm typing on a  new line." %}{% endraw%}
+{%raw%}{% include note.html content="This is my note. All the content I type here is treated as a single paragraph. <br/><br/> Now I'm typing on a  new line.
+" %}{% endraw%}
 ```
 
 Here's the result:
 
-{% include note.html content="This is my note. All the content I type here is treated as a single paragraph. <br/><br/> Now I'm typing on a  new line." %}
+{% include note.html content="This is my note. All the content I type here is treated as a single paragraph. <br/><br/> Now I'm typing on a  new line.
+" %}
 
-## Types of alerts available
+## Types of alerts
 
-There are four types of alerts you can leverage:
+There are four types of alerts you can use:
 
 * note.html
 * tip.html
@@ -50,13 +50,17 @@ There are four types of alerts you can leverage:
 
 They function the same except they have a different color, icon, and alert word. You include the different types by selecting the include template you want. Here are samples of each alert:
 
-{% include note.html content="This is my note." %}
+{% include note.html content="This is my note.
+" %}
 
-{% include tip.html content="This is my tip." %}
+{% include tip.html content="This is my tip.
+" %}
 
-{% include warning.html content="This is my warning." %}
+{% include warning.html content="This is my warning.
+" %}
 
-{% include important.html content="This is my important info." %}
+{% include important.html content="This is my important info.
+" %}
 
 These alerts leverage includes stored in the \_include folder. The `content` option is a parameter that you pass to the include. In the include, the parameter is passed like this:
 
@@ -153,8 +157,9 @@ Now reference the `company_note` in your `include` parameter like this:
 
 Here's the result:
 
-{% capture company_note %}The {{site.company_name}} is pleased to announce an upcoming release.{% endcapture %}
-{% include note.html content=company_note %}
+{% capture company_note %} {{site.company_name}} is pleased to announce an upcoming release.{% endcapture %}
+{% include note-span.html content=company_note
+%}
 
 Note the omission of quotation marks with variable parameters.
 

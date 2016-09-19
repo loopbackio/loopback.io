@@ -136,7 +136,7 @@ Below is the providers.template.json file provided with [loopback-example-passp
       <td>authScheme</td>
       <td>String</td>
       <td>Default is OAuth 2.0</td>
-      <td><span>"oauth"</span></td>
+      <td><span>"oauth"</td>
       <td>oAuth 2.0</td>
     </tr>
     <tr>
@@ -148,14 +148,14 @@ Below is the providers.template.json file provided with [loopback-example-passp
     </tr>
     <tr>
       <td>module</td>
-      <td><span>String</span></td>
+      <td><span>String</td>
       <td>Node module to use</td>
-      <td><span>"passport-facebook"</span></td>
+      <td><span>"passport-facebook"</td>
       <td>&nbsp;</td>
     </tr>
     <tr>
       <td>provider</td>
-      <td><span>String</span></td>
+      <td><span>String</td>
       <td>
         <p>Identifies the provider; can be any identifier string.</p>
       </td>
@@ -165,7 +165,7 @@ Below is the providers.template.json file provided with [loopback-example-passp
     <tr>
       <td>strategy</td>
       <td>String</td>
-      <td>The name of passport strategy&nbsp;</td>
+      <td>The name of passport strategy</td>
       <td>"OAuth2Strategy"</td>
       <td>&nbsp;</td>
     </tr>
@@ -186,39 +186,39 @@ Twitter
     </tr>
     <tr>
       <td>callbackPath</td>
-      <td><span>String</span></td>
+      <td><span>String</td>
       <td>A local URL to mount the callback page</td>
-      <td><span>"/auth/facebook/callback"</span></td>
+      <td><span>"/auth/facebook/callback"</td>
     </tr>
     <tr>
       <td>callbackURL</td>
-      <td><span>String</span></td>
-      <td><span style="color: rgb(0,0,0);">A URL the Service Provider will use to redirect the User back to the Consumer when&nbsp;</span><a class="external-link" href="http://oauth.net/core/1.0/#auth_step2" rel="nofollow">Obtaining User Authorization</a><span style="color: rgb(0,0,0);">&nbsp;is complete</span></td>
-      <td><span>"</span><span class="nolink">http://localhost:3000/auth/facebook/callback</span><span>"</span></td>
+      <td><span>String</td>
+      <td>A URL the Service Provider will use to redirect the User back to the Consumer when&nbsp;<a class="external-link" href="http://oauth.net/core/1.0/#auth_step2" rel="nofollow">Obtaining User Authorization</a>&nbsp;is complete</td>
+      <td>http://localhost:3000/auth/facebook/callback</td>
     </tr>
     <tr>
       <td>consumerKey</td>
-      <td><span>String</span></td>
-      <td><span style="color: rgb(0,0,0);">A value used by the Consumer to identify itself to the Service Provider</span></td>
+      <td><span>String</td>
+      <td>A value used by the Consumer to identify itself to the Service Provider</td>
       <td>&nbsp;</td>
     </tr>
     <tr>
-      <td><span>consumerSecret</span></td>
-      <td><span>String</span></td>
-      <td><span style="color: rgb(0,0,0);">A secret used by the Consumer to establish ownership of the Consumer Key</span></td>
+      <td><span>consumerSecret</td>
+      <td><span>String</td>
+      <td>A secret used by the Consumer to establish ownership of the Consumer Key</td>
       <td>&nbsp;</td>
     </tr>
     <tr>
       <td>scope</td>
       <td>Array of String</td>
       <td>An array of oAuth 1.0 scopes</td>
-      <td><span>["email"]</span></td>
+      <td><span>["email"]</td>
     </tr>
     <tr>
       <td>successRedirect</td>
-      <td><span>String</span></td>
+      <td><span>String</td>
       <td>A local URL for the success login</td>
-      <td><span>"/auth/account"</span></td>
+      <td><span>"/auth/account"</td>
     </tr>
   </tbody>
 </table>
@@ -238,7 +238,7 @@ Google and Facebook
     <tr>
       <td>authOptions</td>
       <td>Object</td>
-      <td><span><span>In general, the properties map to those of the </span></span><a href="https://developers.facebook.com/docs/reference/dialogs/oauth" class="external-link" rel="nofollow">Facebook login dialog</a><span>, but property names and other details depend on the Passport provider's implementation; for example <a href="https://github.com/jaredhanson/passport-facebook" class="external-link" rel="nofollow">passport-facebook</a>.</span></td>
+      <td><span><span>In general, the properties map to those of the <a href="https://developers.facebook.com/docs/reference/dialogs/oauth" class="external-link" rel="nofollow">Facebook login dialog</a><span>, but property names and other details depend on the Passport provider's implementation; for example <a href="https://github.com/jaredhanson/passport-facebook" class="external-link" rel="nofollow">passport-facebook</a>.</td>
       <td>
         <p>"authOptions": {"display": "popup"}</p>
       </td>
@@ -246,19 +246,19 @@ Google and Facebook
     <tr>
       <td>callbackPath</td>
       <td>String</td>
-      <td><span>A local URL to mount the callback page</span></td>
+      <td><span>A local URL to mount the callback page</td>
       <td>"/auth/facebook/callback"</td>
     </tr>
     <tr>
       <td>callbackURL</td>
       <td>String</td>
       <td>oAuth 2.0 callback URL</td>
-      <td>"<span class="nolink"><a href="http://localhost:3000/auth/facebook/callback" class="external-link" rel="nofollow">http://localhost:3000/auth/facebook/callback</a></span>"</td>
+      <td>"<a href="http://localhost:3000/auth/facebook/callback"  rel="nofollow">http://localhost:3000/auth/facebook/callback</a>"</td>
     </tr>
     <tr>
       <td>clientID</td>
       <td>String</td>
-      <td><span style="font-size: 14.0px;line-height: 1.4285715;">The client identifier issued to the client during </span><span style="font-size: 14.0px;line-height: 1.4285715;">the registration process</span></td>
+      <td>The client identifier issued to the client during the registration process</td>
       <td>&nbsp;</td>
     </tr>
     <tr>
@@ -270,13 +270,13 @@ Google and Facebook
     <tr>
       <td>scope</td>
       <td>Array of String</td>
-      <td><span>An array of oAuth 2.0 scopes</span></td>
+      <td><span>An array of oAuth 2.0 scopes</td>
       <td>["email"]</td>
     </tr>
     <tr>
       <td>successRedirect</td>
       <td>String</td>
-      <td><span>A local URL for the success login</span></td>
+      <td><span>A local URL for the success login</td>
       <td>"/auth/account"</td>
     </tr>
   </tbody>
@@ -310,7 +310,7 @@ Google and Facebook
     <tr>
       <td>successRedirect</td>
       <td>String</td>
-      <td><span>A local URL for the success login</span></td>
+      <td><span>A local URL for the success login</td>
       <td>"/auth/account"</td>
       <td>&nbsp;</td>
     </tr>

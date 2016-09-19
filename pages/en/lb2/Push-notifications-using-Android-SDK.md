@@ -145,11 +145,11 @@ Then follow these steps to run the app:
     <table>
       <tbody>
         <tr>
-          <th><span class="ng-scope">Android applications</span></th>
+          <th>Android applications</th>
           <td>
-            <p class="ng-scope ng-binding">XX:XX:XX:XX:XX:XX:XX:<span>XX</span>:<span>XX</span>:<span>XX</span>:<span>X</span></p>
-            <p class="p1">LOOPBACK_APP_ID</p>
-            <p class="ng-scope ng-binding"><span>X</span>:<span>XX</span>:<span>XX</span>:<span>XX</span>:<span>XX</span>:<span>XX</span>:<span>XX</span>:<span>XX</span>:<span>XX</span>:<span>XX</span>;com.google.android.gcm.demo.app.DemoApplication</p>
+            <p>XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:X</p>
+            <p>LOOPBACK_APP_ID</p>
+            <p>X:XX:XX:XX:XX:XX:XX:XX:XX:XX;com.google.android.gcm.demo.app.DemoApplication</p>
           </td>
         </tr>
       </tbody>

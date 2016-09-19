@@ -21,7 +21,7 @@ Promises are an alternative for asynchronous operations that can be simpler to w
 Promises also enable you to handle asynchronous errors with something similar to a synchronous `try/catch` block.
 
 <div class="sl-hidden"><strong>REVIEW COMMENT from Rand</strong><br>
-  <p><span>See </span><a href="https://github.com/strongloop/loopback/issues/1409" class="external-link" rel="nofollow">#1409</a><span>,</span><span>&nbsp;</span><a href="https://github.com/strongloop/loopback/issues/1575" class="external-link" rel="nofollow">#1575</a><span>&nbsp;</span><span>and </span>
+  <p><span>See </span><a href="https://github.com/strongloop/loopback/issues/1409" class="external-link" rel="nofollow">#1409</a><span>,</span> <a href="https://github.com/strongloop/loopback/issues/1575" class="external-link" rel="nofollow">#1575</a> <span>and </span>
     <a
       href="https://github.com/strongloop/loopback/issues/418" class="external-link" rel="nofollow">#418</a><span>.</span></p>
   <p>Add explanation of why you might want to use Promises in LB, e.g. remote method</p>

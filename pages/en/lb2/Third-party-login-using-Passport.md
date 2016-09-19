@@ -76,24 +76,24 @@ The following table describes the properties of the UserIdentity model.
     </tr>
     <tr>
       <td>authScheme</td>
-      <td><span>String</span></td>
+      <td>String</td>
       <td>auth scheme, such as oAuth, oAuth 2.0, OpenID, OpenID Connect</td>
     </tr>
     <tr>
       <td>externalId</td>
-      <td><span>String</span></td>
+      <td>String</td>
       <td>Provider specific user ID.</td>
     </tr>
     <tr>
       <td>profile</td>
       <td>Object</td>
-      <td>User profile, see&nbsp;<span class="nolink">
-        <a href="http://passportjs.org/guide/profile" class="external-link" rel="nofollow">http://passportjs.org/guide/profile</a></span>
+      <td>User profile, see
+        <a href="http://passportjs.org/guide/profile" class="external-link" rel="nofollow">http://passportjs.org/guide/profile</a>
       </td>
     </tr>
     <tr>
       <td>credentials</td>
-      <td><span>Object</span></td>
+      <td>Object</td>
       <td>
         <ul>
           <li>User credentials</li>

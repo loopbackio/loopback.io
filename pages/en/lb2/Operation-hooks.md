@@ -36,8 +36,8 @@ and _`observer`_ is `function observer(context, callback)`. Child models inher
   <tbody>
     <tr>
       <th>
-        <p><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span>Method&nbsp;→<br>&nbsp;</p>
-        <p>Operation hook ↓</p>
+        <p> Method</p>
+        <p>Operation hook</p>
       </th>
       <th>find<br><span>findOne</span><br><span>findById</span>&nbsp;</th>
       <th>exists</th>

@@ -123,7 +123,7 @@ All of the options properties are optional. However, if the remote method requir
       <td>
         <p>Defines arguments that the remote method accepts. These arguments map to the static method you define. For the example above, you can see the function signature:</p>
         <div class="code panel pdl" style="border-width: 1px;">
-          <div class="codeContent panelContent pdl"><pre class="theme: Emacs; brush: jscript; gutter: false" style="font-size:12px;">Person.greet(name, age, callback)...</pre></div>
+          <div class="codeContent panelContent pdl"><pre>Person.greet(name, age, callback)...</pre></div>
           </div>
         <p>`name` is the first argument, `age` is the second argument and callback is automatically provided by LoopBack (do not specify it in your `accepts` array). For more info, see <a href="/doc/{{page.lang}}/lb2/Remote-methods.html">Argument descriptions</a>.</p>
         <p>Default if not provided is the empty array, <code>[]</code>.</p>
@@ -131,7 +131,7 @@ All of the options properties are optional. However, if the remote method requir
       <td>
         <div class="code panel pdl" style="border-width: 1px;">
           <div class="codeContent panelContent pdl">
-            <pre class="theme: Emacs; brush: jscript; gutter: false" style="font-size:12px;">{  ...
+            <pre>{  ...
   accepts: [
    {arg: 'name', type: 'string'},
    {arg: 'age', type: 'number'},...],
@@ -144,7 +144,7 @@ All of the options properties are optional. However, if the remote method requir
       <td>description</td>
       <td>
         <p>Text description of the method, used by API documentation generators such as Swagger.</p>
-        <p><span>You can put long strings in an array if needed (see note below).</span></p>
+        <p>You can put long strings in an array if needed (see note below).</p>
       </td>
       <td>&nbsp;</td>
     </tr>
@@ -156,7 +156,7 @@ All of the options properties are optional. However, if the remote method requir
       <td>
         <div class="code panel pdl" style="border-width: 1px;">
           <div class="codeContent panelContent pdl">
-            <pre class="theme: Emacs; brush: jscript; gutter: false" style="font-size:12px;">http: {path: '/sayhi'}</pre>
+            <pre>http: {path: '/sayhi'}</pre>
           </div>
         </div>
       </td>
@@ -177,7 +177,7 @@ All of the options properties are optional. However, if the remote method requir
       <td>
         <div class="code panel pdl" style="border-width: 1px;">
           <div class="codeContent panelContent pdl">
-            <pre class="theme: Emacs; brush: jscript; gutter: false" style="font-size:12px;">http: {path: '/sayhi', verb: 'get'}</pre>
+            <pre>http: {path: '/sayhi', verb: 'get'}</pre>
           </div>
         </div>
       </td>
@@ -195,7 +195,7 @@ All of the options properties are optional. However, if the remote method requir
     </tr>
     <tr>
       <td>http.errorStatus</td>
-      <td><span>Default HTTP status set when the callback is called with an error.</span></td>
+      <td>Default HTTP status set when the callback is called with an error.</td>
       <td>
         <div class="code panel pdl" style="border-width: 1px;">
           <div class="codeContent panelContent pdl">
@@ -206,9 +206,9 @@ All of the options properties are optional. However, if the remote method requir
     </tr>
     <tr>
       <td>isStatic</td>
-      <td><span style="color: rgb(0,0,0);">Boolean. Whether the method is static (eg.&nbsp;</span><code>MyModel.myMethod</code>
-        <span style="color: rgb(0,0,0);">). Use&nbsp;</span><code>false</code><span style="color: rgb(0,0,0);">&nbsp;to define the method on the prototype
-        (for example, </span><code>MyModel.prototype.myMethod</code><span style="color: rgb(0,0,0);">). Default is true.</span>
+      <td>Boolean. Whether the method is static (eg.&nbsp;<code>MyModel.myMethod</code>
+        ). Use&nbsp;<code>false</code>&nbsp;to define the method on the prototype
+        (for example, <code>MyModel.prototype.myMethod</code>). Default is true.
       </td>
       <td>&nbsp;</td>
     </tr>
@@ -216,7 +216,7 @@ All of the options properties are optional. However, if the remote method requir
       <td>notes</td>
       <td>
         <p>Additional notes, used by API documentation generators like Swagger.</p>
-        <p><span>You can put long strings in an array if needed (see note below).</span></p>
+        <p>You can put long strings in an array if needed (see note below).</p>
       </td>
       <td>&nbsp;</td>
     </tr>
@@ -224,12 +224,12 @@ All of the options properties are optional. However, if the remote method requir
       <td>returns</td>
       <td>
         <p>Describes the remote method's callback arguments; See&nbsp;<a href="/doc/{{page.lang}}/lb2/Remote-methods.html">Argument descriptions</a>. The&nbsp;<code>err </code>argument is assumed; do not specify.</p>
-        <p><span>Default if not provided is the empty array, </span><span>&nbsp;</span><code>[]</code><span>.</span></p>
+        <p>Default if not provided is the empty array,  <code>[]</code>.</p>
       </td>
       <td>
         <div class="code panel pdl" style="border-width: 1px;">
           <div class="codeContent panelContent pdl">
-            <pre class="theme: Emacs; brush: jscript; gutter: false" style="font-size:12px;">returns: {arg: 'greeting', type: 'string'}</pre>
+            <pre>returns: {arg: 'greeting', type: 'string'}</pre>
           </div>
         </div>
       </td>
@@ -272,9 +272,9 @@ The following table describes the properties of each individual argument.
       <td>
         <p>A text description of the argument. This is used by API documentation generators like Swagger.</p>
         <p>You can split long descriptions into arrays of strings (lines) to keep line lengths manageable.</p>
-        <pre>[<br> "<span style="color: rgb(0,0,0);">Lorem ipsum dolor sit amet, consectetur adipiscing elit,"<br></span>
-      <span style="color: rgb(0,0,0);"> "sed do eiusmod tempor incididunt ut labore et dolore",<br></span><span style="color: rgb(0,0,0);"> "magna aliqua."
-      <br></span><span style="color: rgb(0,0,0);">]&nbsp;</span></pre>
+        <pre>[<br> "Lorem ipsum dolor sit amet, consectetur adipiscing elit,"<br>
+      "sed do eiusmod tempor incididunt ut labore et dolore",<br> "magna aliqua."
+      <br>]&nbsp;</pre>
       </td>
     </tr>
     <tr>
@@ -500,7 +500,7 @@ So a GET request to `http://localhost:3000/api/people/sayhi?msg=LoopBack%20deve
 ```
 
 <div class="sl-hidden"><strong>Non-public Information</strong><br>
-  <p><strong><span style="color: rgb(34,34,34);">Extending a model</span></strong></p>
+  <p><strong>Extending a model</strong></p>
   <p>Add default functions for properties</p>
   <div class="code panel pdl" style="border-width: 1px;">
     <div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>common/models/order.js</b></div>
@@ -511,8 +511,8 @@ So a GET request to `http://localhost:3000/api/people/sayhi?msg=LoopBack%20deve
   Order.definition.rebuild(true);
 }</pre></div>
   </div>
-  <p><span style="color: rgb(0,0,0);">Add custom methods</span></p>
-  <p><span style="color: rgb(0,0,0);">&nbsp;</span></p>
+  <p>Add custom methods</p>
+  <p>&nbsp;</p>
   <div class="code panel pdl" style="border-width: 1px;">
     <div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>common/models/customer.js</b></div>
     <div class="codeContent panelContent pdl"><pre class="theme: Emacs; brush: js; gutter: false" style="font-size:12px;">module.exports = function(Customer) {

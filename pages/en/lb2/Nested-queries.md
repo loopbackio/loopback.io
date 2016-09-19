@@ -125,14 +125,14 @@ You can query pages of a specific book via regular relationships,as illustrated
       <th>Description</th>
     </tr>
     <tr>
-      <td><span>/api/books/123/pages</span></td>
-      <td><span>An array of pages data</span></td>
-      <td><span>Queries pages of a specific book</span></td>
+      <td>/api/books/123/pages</td>
+      <td>An array of pages data</td>
+      <td>Queries pages of a specific book</td>
     </tr>
     <tr>
-      <td><span>/api/books/123/pages/456</span></td>
-      <td><span>An object of a page data</span></td>
-      <td><span><span>Queries</span> a page data of a specific page under a specific book</span></td>
+      <td>/api/books/123/pages/456</td>
+      <td>An object of a page data</td>
+      <td>Queries a page data of a specific page under a specific book</td>
     </tr>
   </tbody>
 </table>
@@ -155,14 +155,14 @@ The above code enables the following nested queries:
       <th>Description</th>
     </tr>
     <tr>
-      <td><span>/api/books/123/pages/456/notes</span></td>
-      <td><span>An array of notes objects</span></td>
-      <td><span>Queries all of the notes associated with a specific page under a specific book</span></td>
+      <td>/api/books/123/pages/456/notes</td>
+      <td>An array of notes objects</td>
+      <td>Queries all of the notes associated with a specific page under a specific book</td>
     </tr>
     <tr>
-      <td><span>/api/books/123/pages/456/notes/567</span></td>
-      <td><span>An object of a note data</span></td>
-      <td><span>Queries a specific note associated with a specific page under a specific book</span></td>
+      <td>/api/books/123/pages/456/notes/567</td>
+      <td>An object of a note data</td>
+      <td>Queries a specific note associated with a specific page under a specific book</td>
     </tr>
   </tbody>
 </table>
@@ -172,19 +172,19 @@ Alternatively, since an image belongs to book instance; you can query their page
 <table>
   <tbody>
     <tr>
-      <th><span style="color: rgb(26,85,51);">Endpoint</span></th>
-      <th><span style="color: rgb(26,85,51);">Output</span></th>
-      <th><span style="color: rgb(26,85,51);">Description</span></th>
+      <th>Endpoint</th>
+      <th>Output</th>
+      <th>Description</th>
     </tr>
     <tr>
-      <td><span>/api/images/345/book/pages</span></td>
-      <td><span>An array of pages of a book</span></td>
-      <td><span>Queries all of the pages of the book, whose associated image id is 345</span></td>
+      <td>/api/images/345/book/pages</td>
+      <td>An array of pages of a book</td>
+      <td>Queries all of the pages of the book, whose associated image id is 345</td>
     </tr>
     <tr>
-      <td><span>/api/images/345/book/pages/456</span></td>
-      <td><span>An object of a page data</span></td>
-      <td><span>Queries page with the id of 456 under the book, whose associated image id is 345</span></td>
+      <td>/api/images/345/book/pages/456</td>
+      <td>An object of a page data</td>
+      <td>Queries page with the id of 456 under the book, whose associated image id is 345</td>
     </tr>
   </tbody>
 </table>

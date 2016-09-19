@@ -126,7 +126,7 @@ You can set other CORS properties as well. For more information, see [cors](http
       <td>Boolean</td>
       <td>
         <p>Configures the&nbsp;<strong>Access-Control-Allow-Origin</strong>&nbsp;CORS header.
-          Expects a string (ex: "<span class="nolink"><a href="http://example.com/" class="external-link" rel="nofollow">http://example.com/</a></span>").
+          Expects a string (for example: `http://example.com/`).
           Set to&nbsp;<code>true</code>&nbsp;to reflect the&nbsp;<a href="http://tools.ietf.org/html/draft-abarth-origin-09" class="external-link" rel="nofollow">request origin</a>,
           as defined by&nbsp;<code>req.header('Origin')</code>. Set to&nbsp;<code>false</code>&nbsp;to disable CORS. Can also be set to a function,
           which takes the request origin as the first parameter and a callback (which expects the signature&nbsp;<code>err [object], allow [bool]</code>) as the second.

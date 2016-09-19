@@ -19,7 +19,7 @@ To avoid this problem use `autoupdate()`.
 See [Creating a database schema from models](Creating-a-database-schema-from-models.html) for more information.
 " %}
 
-To create tables for LoopBack [built-in models](https://docs.strongloop.com/display/TRASH/Built-in-models-reference), follow this procedure:
+To create tables for LoopBack [built-in models](/doc/{{page.lang}}/lb2/Using-built-in-models.html), follow this procedure:
 
 1.  Follow the basic procedure in [Attaching models to data sources](/doc/{{page.lang}}/lb2/Attaching-models-to-data-sources.html)
     to change from the in-memory data source to the  database you want to use.

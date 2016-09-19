@@ -88,7 +88,7 @@ see [node-mssql documentation](https://github.com/patriksimek/node-mssql#config
     <tr>
       <td>host</td>
       <td>String</td>
-      <td><span>localhost</span></td>
+      <td>localhost</td>
       <td>Database host name</td>
     </tr>
     <tr>
@@ -100,7 +100,7 @@ see [node-mssql documentation](https://github.com/patriksimek/node-mssql#config
     <tr>
       <td>port</td>
       <td>Number</td>
-      <td><span>1433</span></td>
+      <td>1433</td>
       <td>Database TCP port</td>
     </tr>
     <tr>
@@ -121,7 +121,7 @@ see [node-mssql documentation](https://github.com/patriksimek/node-mssql#config
       <td>user</td>
       <td>String</td>
       <td>&nbsp;</td>
-      <td>Qualified username with host name, for example <span style="color: rgb(0,0,0);">"user@your.sqlserver.dns.host".</span></td>
+      <td>Qualified username with host name, for example "user@your.sqlserver.dns.host".</td>
     </tr>
   </tbody>
 </table>
@@ -297,7 +297,7 @@ See [LoopBack types](/doc/{{page.lang}}/lb2/LoopBack-types.html) for details on
     </tr>
     <tr>
       <td>Date</td>
-      <td><span>DATETIME</span></td>
+      <td>DATETIME</td>
     </tr>
     <tr>
       <td>GeoPoint</td>
@@ -313,7 +313,7 @@ See [LoopBack types](/doc/{{page.lang}}/lb2/LoopBack-types.html) for details on
         <p>JSON</p>
       </td>
       <td>
-        <p><span>NVARCHAR</span></p>
+        <p>NVARCHAR</p>
       </td>
     </tr>
   </tbody>
@@ -345,7 +345,7 @@ See [LoopBack types](/doc/{{page.lang}}/lb2/LoopBack-types.html) for details on
     </tr>
     <tr>
       <td>POINT</td>
-      <td><a href="https://docs.strongloop.com/display/TRASH/GeoPoint-class">GeoPoint</a></td>
+      <td><a href="http://apidocs.strongloop.com/loopback-datasource-juggler/#geopoint">GeoPoint</a></td>
     </tr>
     <tr>
       <td>

@@ -143,27 +143,27 @@ The following table lists commercially-supported LoopBack connectors. For more i
     <tr>
       <td><a href="https://cloudant.com/" class="external-link" rel="nofollow">IBM Cloudant</a></td>
       <td><a href="https://www.npmjs.com/package/loopback-connector-cloudant" class="external-link" rel="nofollow">loopback-connector-cloudant</a></td>
-      <td><code><span class="nolink"><span>npm install --save</span> loopback-connector-cloudant</span></code></td>
+      <td><code>npm install --save loopback-connector-cloudant</code></td>
     </tr>
     <tr>
       <td><a href="http://www.ibm.com/analytics/us/en/technology/cloud-data-services/dashdb/" class="external-link" rel="nofollow">IBM DashDB</a></td>
       <td><a href="https://www.npmjs.com/package/loopback-connector-dashdb" class="external-link" rel="nofollow">loopback-connector-dashdb</a></td>
-      <td><code><span>npm install --save loopback-connector-dashdb</span></code></td>
+      <td><code>npm install --save loopback-connector-dashdb</code></td>
     </tr>
     <tr>
       <td><a href="http://www.ibm.com/analytics/us/en/technology/db2/" class="external-link" rel="nofollow">IBM DB2</a></td>
       <td><a href="https://www.npmjs.com/package/loopback-connector-db2z" class="external-link" rel="nofollow">loopback-connector-db2</a></td>
-      <td><code><span>npm install --save loopback-connector-db2</span></code></td>
+      <td><code>npm install --save loopback-connector-db2</code></td>
     </tr>
     <tr>
-      <td><a href="https://www-01.ibm.com/software/data/db2/zos/family/" class="external-link" rel="nofollow">IBM DB2 <span>for z/OS</span></a></td>
+      <td><a href="https://www-01.ibm.com/software/data/db2/zos/family/" class="external-link" rel="nofollow">IBM DB2 for z/OS</a></td>
       <td><a href="https://www.npmjs.com/package/loopback-connector-db2z" class="external-link" rel="nofollow">loopback-connector-db2z</a></td>
-      <td><code><span>npm install --save loopback-connector-db2z</span></code></td>
+      <td><code>npm install --save loopback-connector-db2z</code></td>
     </tr>
     <tr>
       <td><a href="https://www-01.ibm.com/software/data/informix/" class="external-link" rel="nofollow">IBM Informix</a></td>
       <td><a href="https://www.npmjs.com/package/loopback-connector-informix" class="external-link" rel="nofollow">loopback-connector-informix</a></td>
-      <td><code><span>npm&nbsp;install&nbsp;loopback-connector-informix&nbsp;--save</span></code></td>
+      <td><code>npm&nbsp;install&nbsp;loopback-connector-informix&nbsp;--save</code></td>
     </tr>
   </thead>
   <tbody>
@@ -180,7 +180,7 @@ The following table lists commercially-supported LoopBack connectors. For more i
     <tr>
       <td><a href="/doc/{{page.lang}}/lb2/MySQL-connector.html">MySQL</a></td>
       <td><a href="https://www.npmjs.com/package/loopback-connector-mysql" class="external-link" rel="nofollow">loopback-connector-mysql</a></td>
-      <td><code>npm install <span>--save </span>loopback-connector-mysql</code></td>
+      <td><code>npm install --save loopback-connector-mysql</code></td>
     </tr>
     <tr>
       <td><a href="/doc/{{page.lang}}/lb2/Oracle-connector.html">Oracle</a></td>
@@ -190,17 +190,17 @@ The following table lists commercially-supported LoopBack connectors. For more i
     <tr>
       <td><a href="/doc/{{page.lang}}/lb2/PostgreSQL-connector.html">PostgreSQL</a></td>
       <td><a href="https://www.npmjs.com/package/loopback-connector-mysql" class="external-link" rel="nofollow">loopback-connector-postgresql</a></td>
-      <td><code>npm install <span>--save </span>loopback-connector-postgresql</code></td>
+      <td><code>npm install --save loopback-connector-postgresql</code></td>
     </tr>
     <tr>
       <td><a href="/doc/{{page.lang}}/lb2/SQL-Server-connector.html">SQL Server</a></td>
       <td><a href="https://www.npmjs.com/package/loopback-connector-mssql" class="external-link" rel="nofollow">loopback-connector-mssql</a></td>
-      <td><code>npm install <span>--save </span>loopback-connector-mssql</code></td>
+      <td><code>npm install --save loopback-connector-mssql</code></td>
     </tr>
     <tr>
       <td><a href="https://www.sqlite.org/" class="external-link" rel="nofollow">SQLite 3.x</a></td>
       <td><a href="https://www.npmjs.com/package/loopback-connector-sqlite3" class="external-link" rel="nofollow">loopback-connector-sqlite3</a></td>
-      <td><code><span>npm install </span><span>--save </span><span>loopback-connector-sqlite3</span></code></td>
+      <td><code>npm install --save loopback-connector-sqlite3</code></td>
     </tr>
     <tr>
       <td colspan="3"><strong>Other connectors</strong></td>
@@ -213,29 +213,29 @@ The following table lists commercially-supported LoopBack connectors. For more i
       </td>
     </tr>
     <tr>
-      <td><a href="/doc/{{page.lang}}/lb2/Push-connector.html">Push connector</a> <span>&nbsp;</span></td>
+      <td><a href="/doc/{{page.lang}}/lb2/Push-connector.html">Push connector</a>  </td>
       <td><a href="https://github.com/strongloop/loopback-component-push" class="external-link" rel="nofollow">loopback-component-push</a></td>
-      <td><code><span>npm install </span><span>--save </span><span>loopback-component-push</span></code></td>
+      <td><code>npm install --save loopback-component-push</code></td>
     </tr>
     <tr>
       <td><a href="/doc/{{page.lang}}/lb2/Remote-connector.html">Remote connector</a></td>
       <td><a href="https://github.com/strongloop/loopback-connector-remote" class="external-link" rel="nofollow">loopback-connector-remote</a></td>
-      <td><code><span>npm install </span><span>--save </span><span>loopback-connector-remote</span></code></td>
+      <td><code>npm install --save loopback-connector-remote</code></td>
     </tr>
     <tr>
       <td><a href="/doc/{{page.lang}}/lb2/REST-connector.html">REST</a></td>
       <td><a href="http://github.com/strongloop/loopback-connector-rest" class="external-link" rel="nofollow">loopback-connector-rest</a></td>
-      <td><code>npm install <span>--save </span>loopback-connector-rest</code></td>
+      <td><code>npm install --save loopback-connector-rest</code></td>
     </tr>
     <tr>
       <td><a href="/doc/{{page.lang}}/lb2/SOAP-connector.html">SOAP</a></td>
       <td><a href="http://github.com/strongloop/loopback-connector-soap" class="external-link" rel="nofollow">loopback-connector-soap</a></td>
-      <td><code><span><span>npm install <span>--save </span></span>loopback-connector-soap</span></code></td>
+      <td><code>npm install --save loopback-connector-soap</code></td>
     </tr>
     <tr>
       <td><a href="/doc/{{page.lang}}/lb2/Storage-connector.html">Storage connector</a></td>
-      <td><a href="https://github.com/strongloop/loopback-component-storage" class="external-link" rel="nofollow">loopback-component-storage</a> <span>&nbsp;</span> <span>&nbsp;</span></td>
-      <td><code><span>npm install </span><span>--save </span><span>loopback-component-storage</span></code></td>
+      <td><a href="https://github.com/strongloop/loopback-component-storage" class="external-link" rel="nofollow">loopback-component-storage</a>    </td>
+      <td><code>npm install --save loopback-component-storage</code></td>
     </tr>
   </tbody>
 </table>
@@ -298,12 +298,12 @@ as described in the following table.
         <p>Connector name; for example:</p>
         <ul>
           <li>"memory"</li>
-          <li><span>"loopback-connector-mongodb" or "mongodb"</span></li>
-          <li><span><span>"loopback-connector-mysql" or "mysql"</span></span></li>
-          <li><span><span><span>"loopback-connector-oracle" or "oracle"</span></span></span></li>
-          <li><span><span><span><span>"loopback-connector-postgresql" or "postgresql"</span></span></span></span></li>
-          <li><span><span><span><span><span>"loopback-connector-rest" or "rest"</span></span></span></span></span></li>
-          <li><span><span><span><span><span><span>"loopback-connector-mssql" or "mssql"</span></span></span></span></span></span></li>
+          <li>"loopback-connector-mongodb" or "mongodb"</li>
+          <li>"loopback-connector-mysql" or "mysql"</li>
+          <li>"loopback-connector-oracle" or "oracle"</li>
+          <li>"loopback-connector-postgresql" or "postgresql"</li>
+          <li>"loopback-connector-rest" or "rest"</li>
+          <li>"loopback-connector-mssql" or "mssql"</li>
         </ul>
       </td>
     </tr>
@@ -314,17 +314,17 @@ as described in the following table.
     </tr>
     <tr>
       <td>debug</td>
-      <td><span>Boolean</span></td>
+      <td>Boolean</td>
       <td>If true, turn on verbose mode to debug database queries and lifecycle.</td>
     </tr>
     <tr>
       <td>host</td>
-      <td><span>String</span></td>
+      <td>String</td>
       <td>Database host name</td>
     </tr>
     <tr>
       <td>password</td>
-      <td><span>String</span></td>
+      <td>String</td>
       <td>Password to connect to database</td>
     </tr>
     <tr>
@@ -342,7 +342,7 @@ as described in the following table.
     </tr>
     <tr>
       <td>username</td>
-      <td><span>String</span></td>
+      <td>String</td>
       <td>Username to connect to database</td>
     </tr>
   </tbody>

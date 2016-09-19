@@ -86,7 +86,7 @@ Each of the top-level keys in `middleware.json` defines a middleware phase: `
 
 Applications typically need to serve static content such as HTML and CSS files, client JavaScript files, images, and so on.  It's very easy to do this with the default scaffolded LoopBack application.  You're going to configure the application to serve any files in the` /client` directory as static assets.
 
-First, you have to disable the default route handler for the root URL.   Remember back in [Create a simple API](https://docs.strongloop.com/display/TRASH/New-Create-a-simple-API#NewCreateasimpleAPI-Runtheapplication) (you have been following along, haven't you?) when you loaded the application root URL, [http://localhost:3000/](http://localhost:3000/), you saw the application respond with a simple status message such as this:
+First, you have to disable the default route handler for the root URL.   Remember back in [Create a simple API](/doc/{{page.lang}}/lb2/Create-a-simple-api.html) (you have been following along, haven't you?) when you loaded the application root URL, [http://localhost:3000/](http://localhost:3000/), you saw the application respond with a simple status message such as this:
 
 `{"started":"2014-11-20T21:59:47.155Z","uptime":42.054}`
 

@@ -76,8 +76,8 @@ Properties are required unless otherwise designated.
       <td>
         <p>Optional description of the model.</p>
         <p>You can split long descriptions into arrays of strings (lines) to keep line lengths manageable.</p>
-        <pre>[<br>  "<span style="color: rgb(0,0,0);">Lorem ipsum dolor sit amet, consectetur adipiscing elit",<br></span><span style="color: rgb(0,0,0);">
-      "sed do eiusmod tempor incididunt ut labore et dolore",<br></span><span style="color: rgb(0,0,0);"> "magna aliqua."<br></span><span style="color: rgb(0,0,0);">]&nbsp;</span></pre>
+        <pre>[<br>  "Lorem ipsum dolor sit amet, consectetur adipiscing elit",<br>
+      "sed do eiusmod tempor incididunt ut labore et dolore",<br> "magna aliqua."<br>]&nbsp;</pre>
       </td>
     </tr>
     <tr>
@@ -276,7 +276,7 @@ For example:
       <th>Description</th>
     </tr>
     <tr>
-      <td><span style="color: rgb(61,60,64);">default</span></td>
+      <td>default</td>
       <td>No</td>
       <td>Any*</td>
       <td>
@@ -308,9 +308,9 @@ For example:
       <td>String or Array</td>
       <td>
         <p>Documentation for the property.</p>
-        <p><span style="line-height: 1.4285715;">You can split long descriptions into arrays of strings (lines) to keep line lengths manageable.</span></p>
-        <pre>[<br>  "<span style="color: rgb(0,0,0);">Lorem ipsum dolor sit amet, consectetur adipiscing elit",<br></span><span style="color: rgb(0,0,0);">
-      "sed do eiusmod tempor incididunt ut labore et dolore",<br></span><span style="color: rgb(0,0,0);"> "magna aliqua."<br></span><span style="color: rgb(0,0,0);">]&nbsp;</span>&nbsp;</pre>
+        <p>You can split long descriptions into arrays of strings (lines) to keep line lengths manageable.</p>
+        <pre>[<br>  "Lorem ipsum dolor sit amet, consectetur adipiscing elit",<br>
+      "sed do eiusmod tempor incididunt ut labore et dolore",<br> "magna aliqua."<br>]&nbsp;&nbsp;</pre>
       </td>
     </tr>
     <tr>
@@ -324,14 +324,14 @@ For example:
       <td>No</td>
       <td>Boolean</td>
       <td>
-        <p><span>Whether the property is a unique identifier. Default is false.</span></p>
-        <p><span>See </span><a href="/doc/{{page.lang}}/lb2/Model-definition-JSON-file.html">Id property</a><span> below.</span></p>
+        <p>Whether the property is a unique identifier. Default is false.</p>
+        <p>See <a href="/doc/{{page.lang}}/lb2/Model-definition-JSON-file.html">Id property</a> below.</p>
       </td>
     </tr>
     <tr>
       <td>index</td>
       <td>No</td>
-      <td><span>Boolean</span></td>
+      <td>Boolean</td>
       <td>Whether the property represents a column (field) that is a database index.</td>
     </tr>
     <tr>
@@ -352,7 +352,7 @@ For example:
         <p>String</p>
       </td>
       <td>
-        <p><span>Property type. Can be any type described in <a href="/doc/{{page.lang}}/lb2/LoopBack-types.html">LoopBack types</a>.</span></p>
+        <p>Property type. Can be any type described in <a href="/doc/{{page.lang}}/lb2/LoopBack-types.html">LoopBack types</a>.</p>
       </td>
     </tr>
     <tr>
@@ -486,8 +486,8 @@ For example, to map a property to a column in an Oracle database table, use the 
 ```
 
 <div class="sl-hidden"><strong>Non-public Information</strong><br>
-  <p><span>Removed until <a href="https://github.com/strongloop/loopback-datasource-juggler/issues/128" class="external-link" rel="nofollow">https://github.com/strongloop/loopback-datasource-juggler/issues/128</a> is resolved.</span></p>
-  <p><span>Conversion and formatting properties</span></p>
+  <p>Removed until <a href="https://github.com/strongloop/loopback-datasource-juggler/issues/128" class="external-link" rel="nofollow">https://github.com/strongloop/loopback-datasource-juggler/issues/128</a> is resolved.</p>
+  <p>Conversion and formatting properties</p>
   <p>Format conversions are declared in properties, as described in the following table:</p>
   <div class="table-wrap">
     <div class="table-wrap">
@@ -602,7 +602,7 @@ An example of a hidden property is User.email:
 {% include warning.html content="This is not yet implemented. You must currently validate in code; see [Validating model data](Validating-model-data.html).
 " %}
 
-Specify constraints on data with `validations` properties. See also [Validatable class](https://docs.strongloop.com/display/TRASH/Validatable-class).
+Specify constraints on data with `validations` properties. See also [Validatable class](http://apidocs.strongloop.com/loopback-datasource-juggler/#validatable).
 
 <table>
   <tbody>
@@ -819,10 +819,8 @@ The value of the `acls` key is an array of objects that describes the access 
           </li>
           <li>A static role name</li>
         </ul>
-        <div class="aui-message warning shadowed information-macro">
-          <span class="aui-icon icon-warning">Icon</span>
-          <div class="message-content">
-            <p>$related principalId is not yet implemented.</p>
+        NOTE:
+            <code>$related principalId</code> is not yet implemented.</p>
           </div>
         </div>
       </td>
@@ -844,10 +842,10 @@ The value of the `acls` key is an array of objects that describes the access 
       <td>property</td>
       <td>String<br>Array of Strings&nbsp;</td>
       <td>
-        <p><span style="color: rgb(34,34,34);">Specifies a property/method/relation on a given model. It further constrains where the ACL applies.</span></p>
-        <p><span style="color: rgb(34,34,34);">Can be:</span></p>
+        <p>Specifies a property/method/relation on a given model. It further constrains where the ACL applies.</p>
+        <p>Can be:</p>
         <ul>
-          <li><span style="color: rgb(34,34,34);">A string, for example: <code>"create"</code></span></li>
+          <li>A string, for example: <code>"create"</code></li>
           <li>An array of strings, for example: <code>["create", "update"]</code></li>
         </ul>
       </td>

@@ -337,7 +337,7 @@ See [LoopBack types](/doc/{{page.lang}}/lb2/LoopBack-types.html) for details o
     </tr>
     <tr>
       <td>POINT</td>
-      <td><a href="https://docs.strongloop.com/display/TRASH/GeoPoint-class">GeoPoint</a></td>
+      <td><a href="http://apidocs.strongloop.com/loopback-datasource-juggler/#geopoint">GeoPoint</a></td>
     </tr>
   </tbody>
 </table>

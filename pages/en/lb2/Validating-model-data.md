@@ -44,11 +44,11 @@ Every model attached to a persistent data source has validations methods mixed i
     </tr>
     <tr>
       <td><a href="https://apidocs.strongloop.com/loopback-datasource-juggler/#validatable-validatesabsenceof" class="external-link" rel="nofollow">validatesAbsenceOf</a></td>
-      <td><span style="color: rgb(0,0,0);">Validate absence of one or more specified properties. A model should not include a property to be considered valid; fails when validated field not blank.</span></td>
+      <td>Validate absence of one or more specified properties. A model should not include a property to be considered valid; fails when validated field not blank.</td>
     </tr>
     <tr>
       <td><a href="https://apidocs.strongloop.com/loopback-datasource-juggler/#validatable-validatesexclusionof" class="external-link" rel="nofollow">validatesExclusionOf</a></td>
-      <td><span style="color: rgb(0,0,0);">Validate exclusion. Require a property value not be in the specified array.</span></td>
+      <td>Validate exclusion. Require a property value not be in the specified array.</td>
     </tr>
     <tr>
       <td><a href="https://apidocs.strongloop.com/loopback-datasource-juggler/#validatable-validatesformatof" class="external-link" rel="nofollow">validatesFormatOf</a></td>
@@ -58,7 +58,7 @@ Every model attached to a persistent data source has validations methods mixed i
     </tr>
     <tr>
       <td><a href="https://apidocs.strongloop.com/loopback-datasource-juggler/#validatable-validatesinclusionof" class="external-link" rel="nofollow">validatesInclusionOf</a></td>
-      <td><span style="color: rgb(0,0,0);">Validate inclusion in set. Require a value for property to be in the specified array.</span></td>
+      <td>Validate inclusion in set. Require a value for property to be in the specified array.</td>
     </tr>
     <tr>
       <td><a href="https://apidocs.strongloop.com/loopback-datasource-juggler/#validatable-validateslengthof" class="external-link" rel="nofollow">validatesLengthOf</a></td>
@@ -73,11 +73,11 @@ Every model attached to a persistent data source has validations methods mixed i
     </tr>
     <tr>
       <td><a href="https://apidocs.strongloop.com/loopback-datasource-juggler/#validatable-validatesnumericalityof" class="external-link" rel="nofollow">validatesNumericalityOf</a></td>
-      <td><span style="color: rgb(0,0,0);">Validate numericality. Requires a value for property to be either an integer or number.</span></td>
+      <td>Validate numericality. Requires a value for property to be either an integer or number.</td>
     </tr>
     <tr>
       <td><a href="https://apidocs.strongloop.com/loopback-datasource-juggler/#validatable-validatespresenceof" class="external-link" rel="nofollow">validatesPresenceOf</a></td>
-      <td><span style="color: rgb(0,0,0);">Validate presence of one or more specified properties. Requires a model to include a property to be considered valid; fails when validated field is blank.</span></td>
+      <td>Validate presence of one or more specified properties. Requires a model to include a property to be considered valid; fails when validated field is blank.</td>
     </tr>
     <tr>
       <td><a href="https://apidocs.strongloop.com/loopback-datasource-juggler/#validatable-validatesuniquenessof" class="external-link" rel="nofollow">validatesUniquenessOf</a></td>

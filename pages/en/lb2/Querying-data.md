@@ -45,9 +45,9 @@ In both cases, LoopBack models return JSON.
         <p>See <a href="/doc/{{page.lang}}/lb2/Querying-data.html">Filters</a> below.</p>
       </td>
       <td>
-        <p><span>&nbsp;</span><code>GET /<em>modelName</em>?filter...</code></p>
+        <p> <code>GET /<em>modelName</em>?filter...</code></p>
         <p>See <a href="/doc/{{page.lang}}/lb2/PersistedModel-REST-API.html#find-matching-instances">Model REST API - Find matching instances</a>.</p>
-        <p><span>See </span><a href="/doc/{{page.lang}}/lb2/Querying-data.html">Filters</a><span>&nbsp;</span><span> below.</span></p>
+        <p><span>See </span><a href="/doc/{{page.lang}}/lb2/Querying-data.html">Filters</a> <span> below.</span></p>
       </td>
     </tr>
     <tr>
@@ -55,12 +55,12 @@ In both cases, LoopBack models return JSON.
       <td>
         <p><code><a href="https://apidocs.strongloop.com/loopback/#persistedmodel-findone" class="external-link" rel="nofollow">findOne(filter, callback)</a></code></p>
         <p>Where filter is a JSON object containing the query filters.</p>
-        <p><span>See </span><a href="/doc/{{page.lang}}/lb2/Querying-data.html">Filters</a><span>&nbsp;</span><span> below.</span></p>
+        <p><span>See </span><a href="/doc/{{page.lang}}/lb2/Querying-data.html">Filters</a> <span> below.</span></p>
       </td>
       <td>
         <p><code><span>GET /<em>modelName</em>/findOne?filter...</span></code></p>
         <p>See <a href="/doc/{{page.lang}}/lb2/PersistedModel-REST-API.html#find-first-instance">Model REST API - Find first instance</a>.&nbsp;</p>
-        <p><span>See </span><a href="/doc/{{page.lang}}/lb2/Querying-data.html">Filters</a><span>&nbsp;</span><span> below.</span></p>
+        <p><span>See </span><a href="/doc/{{page.lang}}/lb2/Querying-data.html">Filters</a> <span> below.</span></p>
       </td>
     </tr>
     <tr>
@@ -68,7 +68,7 @@ In both cases, LoopBack models return JSON.
       <td>
         <p><code><a href="https://apidocs.strongloop.com/loopback/#persistedmodel-findbyid" class="external-link" rel="nofollow">findById(id, [filter,] callback)</a></code></p>
         <p>Where optional filter is a JSON object <span>containing the query filters.</span></p>
-        <p><span><span>See </span><a href="/doc/{{page.lang}}/lb2/Querying-data.html">Filters</a><span>&nbsp;</span><span> below.</span></span>
+        <p><span><span>See </span><a href="/doc/{{page.lang}}/lb2/Querying-data.html">Filters</a> <span> below.</span></span>
         </p>
       </td>
       <td>

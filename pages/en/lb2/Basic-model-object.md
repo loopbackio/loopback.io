@@ -45,11 +45,11 @@ The following table summarizes the events that LoopBack models can emit.
     <tr>
       <td>'attached'</td>
       <td>
-        <p>Model&nbsp;is attached to an&nbsp;<span>app</span><span>.</span></p>
+        <p>Model is attached to an app.</p>
         <div style="width: 120px;">
           <p>&nbsp;</p>
         </div>
-        <p><span><br></span></p>
+        <p><br></p>
       </td>
       <td>Model class</td>
       <td>Object</td>
@@ -58,20 +58,20 @@ The following table summarizes the events that LoopBack models can emit.
     </tr>
     <tr>
       <td>'dataSourceAttached'</td>
-      <td>Model is attached to a&nbsp;Data source.</td>
+      <td>Model is attached to a Data source.</td>
       <td>Model class</td>
       <td>Object</td>
       <td>&nbsp;</td>
       <td>
         <ul>
-          <li><span class="nx">DataSource</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">createModel</span>&nbsp;<span class="o">&nbsp;</span></li>
-          <li><span class="nx">DataSource</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">define</span></li>
+          <li>DataSource.prototype.createModel </li>
+          <li>DataSource.prototype.define</li>
         </ul>
       </td>
     </tr>
     <tr>
       <td>'set'</td>
-      <td><span style="color: rgb(0,0,0);">Model property is set.</span></td>
+      <td>Model property is set.</td>
       <td>Model instance</td>
       <td>Object</td>
       <td>&nbsp;</td>
