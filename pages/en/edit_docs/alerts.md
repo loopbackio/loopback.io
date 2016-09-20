@@ -158,7 +158,7 @@ Now reference the `company_note` in your `include` parameter like this:
 Here's the result:
 
 {% capture company_note %} {{site.company_name}} is pleased to announce an upcoming release.{% endcapture %}
-{% include note-span.html content=company_note
+{% include note.html content=company_note
 %}
 
 Note the omission of quotation marks with variable parameters.
