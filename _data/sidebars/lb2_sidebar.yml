@@ -6,6 +6,7 @@ entries:
 - title: sidebar
   product: LoopBack
   version: '2.0'
+  home_url: /doc/en/lb2/index.html
   folders:
 
   - title: 'Installation'
@@ -56,6 +57,10 @@ entries:
 
     - title: 'LoopBack FAQ'
       url: /doc/en/lb2/LoopBack-FAQ.html
+      output: 'web, pdf'
+
+    - title: 'Glossary'
+      url: /doc/en/lb2/Glossary.html
       output: 'web, pdf'
 
     - title: 'StrongLoop Labs'
