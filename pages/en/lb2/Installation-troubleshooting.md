@@ -113,13 +113,11 @@ In addition to the official npm registry at [http://registry.npmjs.org](http://r
 *   [https://registry.nodejitsu.com](https://registry.nodejitsu.com/) (US East)
 *   [http://registry.cnpmjs.org](http://registry.cnpmjs.org/) (China)
 
-The unofficial registries are not always updated in realtime but may work when the official npm registry is down or overloaded.  You can use [npmrc](https://github.com/deoxxa/npmrc) to manage different configurations.
-
-To install StrongLoop software from a different registry:
+To install software from a different registry, use the command:
 
 `$ npm —registry <registry_URL> install strongloop`
 
-One you have installed `slc`, you can do more sophisticated registry management using the `slc registry` command.  See [Using multiple package registries](https://docs.strongloop.com/display/SLC/Using-multiple-package-registries) for more information.
+One you have installed `slc`, you can do more sophisticated registry management using the `slc registry` command.  
 
 #### Install modules from Github
 

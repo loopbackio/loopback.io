@@ -6,7 +6,7 @@ keywords: LoopBack
 tags:
 sidebar: lb2_sidebar
 permalink: /doc/en/lb2/LoopBack-core-concepts.html
-summary:
+summary: An introduction to the most important concepts needed to understand LoopBack.
 ---
 
 {% include tip.html content="**Read this first** to understand how LoopBack works.

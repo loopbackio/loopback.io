@@ -10,19 +10,18 @@ summary:
 ---
 
 <div class="sl-hidden"><strong>REVIEW COMMENT from Yaapa</strong><br>
-  <div>The docs for "Polymorphic relations", "HasManyThrough relations", and "Embedded models and relations" all share common areas of improvement.&nbsp;</div>
+  <div>The docs for "Polymorphic relations", "HasManyThrough relations", and "Embedded models and relations" all share common areas of improvement.</div>
   <ul>
     <li>Some example files lack context.</li>
     <li>There are references to objects in the example files, without any explanation of where they came from or how they may be initialized.</li>
-    <li>There are certain properties in the in the objects in examples files, they need to be explained, and the reader informed of other possible properties. For example, here are my observations on "<a href="https://docs.strongloop.com/display/public/LB/Polymorphic-relations"
-        rel="nofollow">Polymorphic relations</a>".<br><code><br></code></li>
+    <li>There are certain properties in the objects in examples files, they need to be explained, and the reader informed of other possible properties. For example, here are my observations on Polymorphic relations</li>
   </ul>
   <p><code>common/models/author.json</code>: Should explain what "imageable" in <code>{ "polymorphic": "imageable" }</code> means. And, list other possible properties.</p>
   <div>
-    <p><code>common/models/reader.json</code>:</p><pre>&nbsp; &nbsp; &nbsp; "polymorphic": {</pre><pre>&nbsp; &nbsp; &nbsp; &nbsp; "as": "imageable",</pre><pre>&nbsp; &nbsp; &nbsp; &nbsp; "foreignKey": "imageableId",</pre><pre>&nbsp; &nbsp; &nbsp; &nbsp; "discriminator": "imageableType"</pre><pre>&nbsp; &nbsp; &nbsp; &nbsp;}</pre>
-    <div>- The structure has changed from "common/models/author.json". Should explain "as", "foreignKey", and "discriminator".&nbsp; And, list other possible properties.</div>
+    <p><code>common/models/reader.json</code>:</p><pre>   "polymorphic": {</pre><pre>    "as": "imageable",</pre><pre>    "foreignKey": "imageableId",</pre><pre>    "discriminator": "imageableType"</pre><pre>   }</pre>
+    <div>- The structure has changed from "common/models/author.json". Should explain "as", "foreignKey", and "discriminator". And, list other possible properties.</div>
     <div><code>common/models/author.js</code> - Where does the Picture object come from?</div>
-    <div><code>common/models/picture.js</code> - &nbsp;belongsTo is undefined in Picture.</div>
+    <div><code>common/models/picture.js</code> - belongsTo is undefined in Picture.</div>
     <div><code>common/models/model.js</code> - Is this file created by default? Where do Author, Reader, Picture objects come from?</div>
   </div>
   <div>As mentioned in the beginning, "HasManyThrough relations" and "Embedded models and relations" have similar issues. I can come up with a wholesome example which includes all these three types of model relations coming week.</div>

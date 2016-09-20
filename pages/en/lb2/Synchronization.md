@@ -62,7 +62,7 @@ This is called _online sync_.
 
 ### Terminology 
 
-In addition to [standard terminology](https://docs.strongloop.com/display/NODE/Glossary), conflict resolution uses a number of specific terms.
+In addition to [standard terminology](Glossary.html), conflict resolution uses a number of specific terms.
 
 **Change list**
 

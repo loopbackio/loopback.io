@@ -31,8 +31,6 @@ $ npm cache clear
 $ npm install -g strongloop
 ```
 
-Follow the instructions in [Migrating apps to version 2.0](https://docs.strongloop.com/display/LB/Migrating+apps+to+version+2.0) to move your application to version 2.
-
 ## Updating your Node.js installation
 
 To update your version of Node, simply reinstall Node as you did previously.  See [nodejs.org](http://nodejs.org/) for details.

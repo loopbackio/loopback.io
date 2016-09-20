@@ -112,10 +112,6 @@ These examples illustrate specific LoopBack features.
       <td><a href="https://github.com/strongloop/loopback-example-user-management" class="external-link" rel="nofollow">loopback-example-user-management</a></td>
       <td>How to register, log in / log out, and verify users; how to reset a user's password.</td>
     </tr>
-    <tr>
-      <td><a href="https://github.com/strongloop/strong-gateway-demo" class="external-link" rel="nofollow">strong-gateway-demo</a></td>
-      <td>OAuth2 with&nbsp;<a href="https://docs.strongloop.com/display/LGW" rel="nofollow">StrongLoop API Gateway</a>.</td>
-    </tr>
   </tbody>
 </table>
 

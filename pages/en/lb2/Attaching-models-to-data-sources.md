@@ -30,16 +30,16 @@ The built-in [memory connector](/doc/{{page.lang}}/lb2/Memory-connector.html) 
 To add a new data source, use the [data source generator](/doc/{{page.lang}}/lb2/Data-source-generator.html):
 
 ```shell
+$ slc loopback:datasource
+```
+
+Or, with API Connect:
+
+```shell
 $ apic create --type datasource
 ```
 
 You can also add and modify data sources using the API Designer tool.
-
-```shell
-$ slc loopback:datasource
-```
-
-You can also add and modify data sources using [StrongLoop Arc](https://docs.strongloop.com/display/APIS/Using-Arc).
 
 The tool will prompt you for the name of the new data source and the connector to use; for example, MySQL, Oracle, REST, and so on.
 The tool will then add an entry such as the following to `datasources.json`:

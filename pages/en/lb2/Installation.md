@@ -5,6 +5,8 @@ keywords: LoopBack
 tags: [getting_started]
 sidebar: lb2_sidebar
 permalink: /doc/en/lb2/Installation.html
+redirect_from:
+  - /doc/ja/lb2/Installation.html
 summary:
 ---
 
