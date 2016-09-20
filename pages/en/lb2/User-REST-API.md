@@ -40,7 +40,7 @@ All of the endpoints in the table below are inherited from [PersistedModel REST
       <td>POST</td>
       <td>Allow</td>
       <td>
-        <p><a href="/doc/{{page.lang}}/lb2/PersistedModel-REST-API.html#add-model-instance">Add user instance</a> and persist to data source. Inherited from <a href="/doc/{{page.lang}}/lb2/PersistedModel-REST-API.html">PersistedModel API</a>.</p>
+        <p><a href="/doc/{{page.lang}}/lb2/PersistedModel-REST-API.html#create-model-instance">Add user instance</a> and persist to data source. Inherited from <a href="/doc/{{page.lang}}/lb2/PersistedModel-REST-API.html">PersistedModel API</a>.</p>
       </td>
       <td>
         <p>JSON object (in request body) providing <a href="http://apidocs.strongloop.com/loopback/#user" class="external-link" rel="nofollow">User object properties</a>: <code>username</code>, <code>password</code>, <code>email</code>. LoopBack sets values for <code>emailVerified</code> and <code>verificationToken</code>.</p>
@@ -344,4 +344,4 @@ User.on('resetPasswordRequest', function (info) {
 });
 ```
 
-See also [Verifying email addresses](/doc/{{page.lang}}/lb2/Registering-users.html#Registeringusers-Verifyingemailaddresses) (Registering users).
+See also [Verifying email addresses](/doc/{{page.lang}}/lb2/Registering-users.html#verifying-email-addresses) (Registering users).

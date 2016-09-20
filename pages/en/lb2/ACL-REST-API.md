@@ -130,7 +130,7 @@ By default, the ACL REST API is not exposed. To expose it, add the following to 
       <td>GET</td>
       <td>Deny</td>
       <td>
-        <p><a href="/doc/{{page.lang}}/lb2/PersistedModel-REST-API.html#find-first-uinstance">Find first ACL instance</a><span> that matches specified filter.</span></p>
+        <p><a href="/doc/{{page.lang}}/lb2/PersistedModel-REST-API.html#find-first-instance">Find first ACL instance</a><span> that matches specified filter.</span></p>
       </td>
       <td>Same as <a href="/doc/{{page.lang}}/lb2/PersistedModel-REST-API.html#find-matching-instances">Find matching instances</a>.</td>
     </tr>

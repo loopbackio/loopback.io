@@ -79,7 +79,7 @@ The `settings` argument configures the connector. Settings object format and d
 * `debug`: Turn on verbose mode to debug db queries and lifecycle
 
 For more information, see 
-[Connecting models to data sources (Data source properties)](/doc/{{page.lang}}/lb2/Connecting-models-to-data-sources.html#datasource-properties).
+[Connecting models to data sources (Data source properties)](/doc/{{page.lang}}/lb2/Connecting-models-to-data-sources.html#data-source-properties).
 For connector-specific settings, see the connector's documentation.
 
 ## Creating a model from a data source

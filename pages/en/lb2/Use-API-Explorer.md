@@ -85,7 +85,7 @@ using the **filter** field to specify a [Where filter](/doc/{{page.lang}}/lb2
 [Limit filter](/doc/{{page.lang}}/lb2/Limit-filter), and other kinds of filters on the query. 
 See [Querying data](/doc/{{page.lang}}/lb2/Querying-data) for more information.
 
-API Explorer automatically adds \"filter\" to the query string, but you must enter [Stringified JSON](/doc/{{page.lang}}/lb2/Querying-data#using-stringified-json-in-rest-queries) in the **filter** field. Also make sure that the quotes you use are proper straight quotes ( \" ), not curved or typographic quotation marks ( “ or ” ). These can often be hard to distinguish visually.
+API Explorer automatically adds \"filter\" to the query string, but you must enter [Stringified JSON](/doc/{{page.lang}}/lb2/Querying-data.html#using-stringified-json-in-rest-queries) in the **filter** field. Also make sure that the quotes you use are proper straight quotes ( \" ), not curved or typographic quotation marks ( “ or ” ). These can often be hard to distinguish visually.
 
 You may have noticed the **accessToken** field and **Set Access Token** button at the top right of the API Explorer window. Use these to authenticate a user and "login" to an app so you can perform actions that require authentication. For more information, see [Introduction to User model authentication](/doc/{{page.lang}}/lb2/Introduction-to-User-model-authentication).
 

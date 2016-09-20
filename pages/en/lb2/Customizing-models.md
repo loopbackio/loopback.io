@@ -128,7 +128,7 @@ Treat the script as part of the model definition; use it for model configuration
 You could also add model relationships, complex validations, or default functions for certain properties: Basically, anything you cannot do in JSON.
 However, note that at this point the script doesn't have access to the app instance.  
 
-You can also extend a model by adding a [remote method](/doc/{{page.lang}}/lb2/Remote-methods.html) or a [model hook](/doc/{{page.lang}}/lb2/Remote-hooks.html#model-hooks).
+You can also extend a model by adding a [remote method](/doc/{{page.lang}}/lb2/Remote-methods.html) or an  [operation hook](/doc/{{page.lang}}/lb2/Operation-hooks.html).
 
 If you don't want to expose the method over REST, then just omit the `remoteMethod()` call.
 

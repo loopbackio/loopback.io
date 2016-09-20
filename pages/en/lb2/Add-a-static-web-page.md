@@ -131,7 +131,7 @@ Add the following:
 ...
 ```
 
-These lines define [static middleware](/doc/{{page.lang}}/lb2/Defining-middleware#static-middleware) that makes the application serve files in the `/client` directory as static content.  The `$!` characters indicate that the path is relative to the location of `middleware.json`.
+These lines define [static middleware](/doc/{{page.lang}}/lb2/Defining-middleware.html#static-middleware) that makes the application serve files in the `/client` directory as static content.  The `$!` characters indicate that the path is relative to the location of `middleware.json`.
 
 ## Add an HTML file
 

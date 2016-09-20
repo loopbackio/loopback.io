@@ -29,9 +29,9 @@ The [`User.login()`](http://apidocs.strongloop.com/loopback/#user-login) functio
 
 Two settings in the User model control the realms:
 
-* `realmRequired` (Boolean): true | false (default)
-* `realmDelimiter` (string): If configured, the email or username can be prefixed as _<realm><realmDelimiter><username or email>_, for example,
-  myRealm:john or myRealm:[john@sample.com](mailto:john@sample.com). If not present, no prefix will be checked against username or email. 
+* `realmRequired` (Boolean): Default is `false`.
+* `realmDelimiter` (string): If configured, the email or username can be prefixed as `<realm><realmDelimiter><username or email>`, for example,
+  `myRealm:john` or `myRealm:john@sample.com`. If not present, no prefix will be checked against username or email. 
 
 For example,
 

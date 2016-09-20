@@ -47,7 +47,7 @@ curl -X POST -H "Content-Type:application/json"         \
 http://localhost:3000/api/users
 ```
 
-For more information, see [User REST API](/doc/{{page.lang}}/lb2/User-REST-API.html#login-user).
+For more information, see [User REST API](/doc/{{page.lang}}/lb2/User-REST-API.html#log-in-user).
 
 ### Adding other registration constraints
 

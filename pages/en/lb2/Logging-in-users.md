@@ -115,7 +115,7 @@ For example:
 }
 ```
 
-See [User REST API](/doc/{{page.lang}}/lb2/User-REST-API.html#login-user) for more information.
+See [User REST API](/doc/{{page.lang}}/lb2/User-REST-API.html#log-in-user) for more information.
 
 ### Logging out
 
@@ -164,7 +164,7 @@ http://localhost:3000/api/users/logout
 curl -X VERB http://localhost:3000/api/users/logout?access_token=$ACCESS_TOKEN
 ```
 
-See [User REST API](/doc/{{page.lang}}/lb2/User-REST-API.html#logout-user) for more information.
+See [User REST API](/doc/{{page.lang}}/lb2/User-REST-API.html#log-out-user) for more information.
 
 ## Login using third-party systems
 
