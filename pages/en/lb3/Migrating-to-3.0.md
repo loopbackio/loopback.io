@@ -158,7 +158,7 @@ details.
     at Layer.handle [as handle_request] (.../node_modules/express/lib/router/layer.js:95:5)
 ```
 
-#### Setting up "current context" in 3.x
+### Setting up "current context" in 3.x
 
 To setup "current context" feature in your LoopBack 3.x application, you
 should use [loopback-context](https://www.npmjs.com/package/loopback-context)
@@ -336,7 +336,7 @@ Use `PersistedModel` to report change-tracking errors via the existing method
 `PersistedModel.handleChangeError`. This method can be customized on a per-model
 basis to provide different error handling.
 
-## `app.model(modelName, settings)` was removed
+### `app.model(modelName, settings)` was removed
 
 `app.model(modelName, settings)`, a sugar for creating non-existing model, was
 now removed in favor of the following two methods:
