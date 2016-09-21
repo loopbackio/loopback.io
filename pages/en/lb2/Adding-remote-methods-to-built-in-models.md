@@ -76,7 +76,7 @@ Now it's possible for all users to send `POST` requests to `/Users/greet` and ac
 ## Additional Considerations
 
 * Adding remote methods in this way **does not add them to the Swagger JSON**.
-  This means you will not see a "Users/greet" method listed in the [API explorer](/doc/{{page.lang}}/lb2/API-Explorer).
+  This means you will not see a "Users/greet" method listed in the API explorer.
 * By design, you can override settings in `model-config.json` by
   [environment specific configurations](/doc/{{page.lang}}/lb2/Environment-specific-configuration.html).
   Bear this in mind when defining ACLs as shown above.

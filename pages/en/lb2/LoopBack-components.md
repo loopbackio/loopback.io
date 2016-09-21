@@ -54,8 +54,8 @@ The sections below describe the configuration settings for each component in [`
       </th>
     </tr>
     <tr>
-      <td><a href="/doc/{{page.lang}}/lb2/API-Explorer">API Explorer</a></td>
-      <td>Enables the Swagger UI for the API. See <a href="/doc/{{page.lang}}/lb2/Use-API-Explorer">Use API Explorer</a> for an example.</td>
+      <td>API Explorer</td>
+      <td>Enables the Swagger UI for the API. See <a href="/doc/{{page.lang}}/lb2/Use-API-Explorer.html">Use API Explorer</a> for an example.</td>
       <td><a href="https://www.npmjs.org/package/loopback-component-explorer" class="external-link" rel="nofollow">loopback-component-explorer</a></td>
     </tr>
     <tr>

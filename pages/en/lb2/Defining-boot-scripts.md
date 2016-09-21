@@ -44,7 +44,7 @@ boot(app, __dirname, function(err) {
 See [loopback-boot API docs](http://apidocs.strongloop.com/loopback-boot/) for details. 
 
 {% include note.html content="
-If you create your application with the [application generator](application-generator.html) ,
+If you create your application with the [application generator](Application-generator.html) ,
 then you don't need to do anything to bootstrap your application--the above code is automatically scaffolded for you!
 " %}
 

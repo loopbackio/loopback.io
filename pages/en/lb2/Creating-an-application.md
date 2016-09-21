@@ -43,11 +43,11 @@ To summarize:
 * `server` directory
   * `server.js` - Main application script; see below.
   * `config.json` - Global application settings, such as the REST API root, host name and port to use, and so on.
-      See [config.json](/doc/{{page.lang}}/lb2/config.json).
+      See [config.json](/doc/{{page.lang}}/lb2/config.json.html).
   * `model-config.json` - Binds models to data sources and specifies whether a model is exposed over REST, among other things.  
-      See [model-config.json](/doc/{{page.lang}}/lb2/model-config.json).
+      See [model-config.json](/doc/{{page.lang}}/lb2/model-config.json.html).
   * `datasources.json` - Data source configuration file.
-      See [datasources.json](h/doc/{{page.lang}}/lb2/datasources.json).
+      See [datasources.json](/doc/{{page.lang}}/lb2/datasources.json.html).
 * `client` directory (empty except for a README stub)
 * `common/models` directory - created when you create a model with the model generator, `apic create --type model`.
   * A JSON file and a JavaScript file for each model (for example, `my-model.json` and `my-model.js`).
@@ -98,4 +98,4 @@ Emit the 'started' [event](/doc/{{page.lang}}/lb2/Events.html).
 **10 - 13**:
 Start API Explorer.
 
-**18**: [Initialize (boot) the application](/doc/{{page.lang}}/lb2/Events.html).
+**18**: [Initialize (boot) the application](/doc/{{page.lang}}/lb2/Defining-boot-scripts.html).

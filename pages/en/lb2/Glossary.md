@@ -23,7 +23,7 @@ apic
 : The IBM API Connect command-line tool.  It provides commands to scaffold LoopBack applications. For more information, see [Command-line tools](Command-line-tools.html).
 
 adapter
-: Provides the transport-specific mechanisms to make remote objects (and collections thereof) available over their transport.  See [Strong remoting](Strong-remoting.html).
+: Provides the transport-specific mechanisms to make remote objects (and collections thereof) available over their transport.  See [Strong remoting](Strong-Remoting.html).
 
 Android
 : A mobile operating system created by Google, most of which is released under the Apache 2.0 and GPLv2 open source licenses.
@@ -78,7 +78,7 @@ event loop
 ## G
 
 generator
-: Interactive command-line tool that scaffolds all or part of a LoopBack application.  See [slc loopback command-line reference](Command-line-reference.html).
+: Interactive command-line tool that scaffolds all or part of a LoopBack application.  See [slc loopback command-line reference](Command-line-tools.html).
 
 ## I
 

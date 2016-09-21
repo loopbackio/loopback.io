@@ -20,7 +20,7 @@ summary:
 {% include toc.html %}
 
 The Android SDK provides a simple Java API that enables your Android app to access a
-[Using LoopBack with IBM API Connect](/doc/{{page.lang}}/lb2/Using-LoopBack-with-IBM-API-Connect.html) server application.
+LoopBack server application.
 It enables you to interact with your models and data sources in a comfortable native manner instead of using clunky interfaces like `AsyncHttpClient`, `JSONObject`. 
 
 **[Download Android SDK](http://81b70ddedaf4b27b1592-b5e75689411476c98957e7dab0242f50.r56.cf2.rackcdn.com/loopback-sdk-android-1.5.3-eclipse-bundle.zip)**
