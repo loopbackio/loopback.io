@@ -74,6 +74,55 @@ myApp.config(['$httpProvider', function($httpProvider) {
 ]);
 ```
 
+### Deprecation of built-in CORS middleware
+
+In preparation for the LoopBack 3.0 release, which removes the built-in CORS
+middleware entirely, we have deprecated the built-in CORS middleware in
+versions 2.x. Applications scaffolded by an older version of `slc loopback`
+will print the following warning when the first request is served:
+
+```
+strong-remoting deprecated The built-in CORS middleware provided by REST adapter was deprecated. See https://docs.strongloop.com/display/public/LB/Security+considerations for more details.
+```
+
+To suppress the warning, you should disable the built-in CORS middleware in
+your `server/config.json` by setting the property `remoting.cors` to `false`:
+
+```js
+{
+  // ...
+  "remoting": {
+    // ...
+    "cors": false
+  }
+}
+```
+
+If you would like to keep cross-site requests allowed, then you need to follow
+these additional steps:
+
+ 1. `npm install --save cors`
+
+ 2. Edit the `initial` section in your `server/middleware.json` and add
+  a configuration block for `cors` middleware:
+
+    ```js
+    {
+      // ...
+      "initial": {
+        // ...
+        "cors": {
+          "params": {
+            "origin": true,
+            "credentials": true,
+            "maxAge": 86400
+          }
+        }
+      },
+      // ...
+    }
+    ```
+
 ## Mitigating XSS exploits
 
 LoopBack stores the user's access token in a JavaScript object, which may make it susceptible to a cross-site scripting (XSS) security exploit.
