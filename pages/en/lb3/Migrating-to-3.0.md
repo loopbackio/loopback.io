@@ -158,7 +158,7 @@ details.
     at Layer.handle [as handle_request] (.../node_modules/express/lib/router/layer.js:95:5)
 ```
 
-#### Setting up "current context" in 3.x
+### Setting up "current context" in 3.x
 
 To setup "current context" feature in your LoopBack 3.x application, you
 should use [loopback-context](https://www.npmjs.com/package/loopback-context)
@@ -210,6 +210,40 @@ returning your Promise instances, then you have two options:
 
  2. Rework your code to use Bluebird API instead of the API provided by your
    Promise implementation.
+
+## Check your CORS configuration
+
+We have removed built-in CORS middleware from `loopback.rest()` handler. It's
+up to the applications to setup and configure application-wide CORS policies.
+
+If you have scaffolded your application with a recent version of our generators
+(`apic loopback` or `slc loopback`), then your application already comes with
+a global CORS handler configured in `server/middleware.json`.
+
+If that's not the case, and you would like to allow cross-site requests to
+your LoopBack server, then you need to follow these few steps:
+
+ 1. `npm install --save cors`
+
+ 2. Edit the `initial` section in your `server/middleware.json` and add
+  a configuration block for `cors` middleware:
+
+    ```js
+    {
+      // ...
+      "initial": {
+        // ...
+        "cors": {
+          "params": {
+            "origin": true,
+            "credentials": true,
+            "maxAge": 86400
+          }
+        }
+      },
+      // ...
+    }
+    ```
 
 ## No need to check for `ctx.instance` in "loaded" hooks
 
@@ -336,7 +370,7 @@ Use `PersistedModel` to report change-tracking errors via the existing method
 `PersistedModel.handleChangeError`. This method can be customized on a per-model
 basis to provide different error handling.
 
-## `app.model(modelName, settings)` was removed
+### `app.model(modelName, settings)` was removed
 
 `app.model(modelName, settings)`, a sugar for creating non-existing model, was
 now removed in favor of the following two methods:
