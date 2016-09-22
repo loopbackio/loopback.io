@@ -1,0 +1,15 @@
+{
+  "name": "loopback.io-workflow-scripts",
+  "version": "1.0.0",
+  "description": "This file: Node-dependant workflow scripts for the jekyll-based site",
+  "scripts": {
+    "fetch-readmes": "get-readmes --repos=./_data --out=./_includes/readmes"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Strongloop/loopback.io.git"
+  },
+  "devDependencies": {
+    "getreadmes": "github:strongloop/get-readmes"
+  }
+}
