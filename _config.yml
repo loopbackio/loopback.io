@@ -94,6 +94,11 @@ sidebars:
 - lb3_sidebar
 - contrib_sidebar
 - community_sidebar
+- fr_lb2_sidebar
+- ja_lb2_sidebar
+- ko_lb2_sidebar
+- ru_lb2_sidebar
+- zh_lb2_sidebar
 
 description: "Documentation for the LoopBack framework"
 # the description is used in the feed.xml file

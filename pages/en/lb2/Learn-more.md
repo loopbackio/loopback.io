@@ -8,4 +8,4 @@ sidebar: lb2_sidebar
 permalink: /doc/en/lb2/Learn-more.html
 summary:
 ---
-{% include references.md %}
+{% include content/references.md %}

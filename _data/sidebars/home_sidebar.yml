@@ -1,5 +1,6 @@
 entries:
 - title: Sidebar
+  home_url: /doc/index.html
   levels: one
   folders:
 
@@ -18,7 +19,7 @@ entries:
   - title: Community projects
     url: /doc/community/index.html
     output: web
-    
+
   - title: Contributing to documentation
     url: /doc/en/contrib/index.html
     output: web

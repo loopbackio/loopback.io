@@ -2,6 +2,7 @@ entries:
 - title: sidebar
   product: LoopBack
   version: 3.0
+  home_url: /doc/en/lb3/index.html
   folders:
 
   - title: 'LoopBack 3.0'

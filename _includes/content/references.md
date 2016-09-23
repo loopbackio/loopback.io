@@ -3,7 +3,6 @@ There's so much more to learn about LoopBack!  
 
 LoopBack documentation includes lots of [tutorials and examples](/doc/{{page.lang}}/lb2/Tutorials-and-examples); also read the [StrongLoop blog](http://strongloop.com/strongblog/) for great tips and information.
 
-
 Learn more about:
 
 *   **[Creating an application](/doc/{{page.lang}}/lb2/Creating-an-application)**

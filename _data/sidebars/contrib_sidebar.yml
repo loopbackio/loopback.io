@@ -2,6 +2,7 @@ entries:
 - title: sidebar
   product: Contributing to LoopBack docs
   version:
+  home_url: /doc/en/contrib/index.html
   folders:
 
   - title: Overview
@@ -103,4 +104,16 @@ entries:
 
     - title: FAQ layout
       url: /doc/en/contrib/faq_layout.html
+      output: web, pdf
+
+  - title: Translation
+    output: web, pdf
+
+    folderitems:
+    - title: Adding a new language
+      url: /doc/en/contrib/Adding_a_new_language.html
+      output: web, pdf
+
+    - title: Translating articles
+      url: /doc/en/contrib/Translating_articles.html
       output: web, pdf

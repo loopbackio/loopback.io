@@ -1,7 +1,7 @@
 {% include custom/sidebarconfigs.html %}
 <!-- NOTE: sidebar = site.data.sidebars.mydoc_sidebar.entries -->
 <ul id="mysidebar" class="nav">
-<li class="sidebarTitle">{{sidebar[0].product}} {{sidebar[0].version}}</li>
+<li class="sidebarTitle"><a href="{{sidebar[0].home_url}}">{{sidebar[0].product}} {{sidebar[0].version}}</a></li>
 {% for entry in sidebar %}
   {% for folder in entry.folders %}
     {% if folder.output contains "web" %}

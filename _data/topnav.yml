@@ -10,18 +10,6 @@ topnav:
 topnav_dropdowns:
 - title: Topnav dropdowns
   folders:
-    - title: Resources
-      folderitems:
-        - title: Docs Github Repo
-          external_url: https://github.com/strongloop/loopback.io
-        - title: Developer Forum
-          external_url: https://groups.google.com/forum/#!forum/loopbackjs
-        - title: Gitter Chat Room
-          external_url: https://gitter.im/strongloop/loopback
-        - title: LoopBack on Stack Overflow
-          external_url: http://stackoverflow.com/questions/tagged/loopbackjs
-        - title: StrongLoop Blog
-          external_url: https://strongloop.com/strongblog/category/loopback-2/
     - title: View
       folderitems:
         - title: LoopBack Overview
@@ -34,3 +22,29 @@ topnav_dropdowns:
           url: /doc/community/
         - title: Contributing to documentation
           url: /doc/en/contrib/
+    - title: Resources
+      folderitems:
+        - title: Docs Github Repo
+          external_url: https://github.com/strongloop/loopback.io
+        - title: Developer Forum
+          external_url: https://groups.google.com/forum/#!forum/loopbackjs
+        - title: Gitter Chat Room
+          external_url: https://gitter.im/strongloop/loopback
+        - title: LoopBack on Stack Overflow
+          external_url: http://stackoverflow.com/questions/tagged/loopbackjs
+        - title: StrongLoop Blog
+          external_url: https://strongloop.com/strongblog/category/loopback-2/
+    - title: Translations
+      folderitems:
+        - title: "Français"
+          url: /doc/fr/lb2/
+        - title: "한국어"
+          url: /doc/ko/lb2/
+        - title: "Português"
+          url: /doc/pt-br/lb2/
+        - title: "日本語"
+          url: /doc/ja/lb2/
+        - title: "Pусский"
+          url: /doc/ru/lb2/
+        - title: "中文"
+          url: /doc/zh/lb2/

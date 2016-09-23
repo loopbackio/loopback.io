@@ -70,55 +70,6 @@ These alerts leverage includes stored in the \_include folder. The `content` opt
 
 The content in `content="This is my note."` gets inserted into the `{% raw %}{{include.content}}}{% endraw %}` part of the template. You can follow this same pattern to build additional includes. See this [Jekyll screencast on includes](http://jekyll.tips/jekyll-casts/includes/) or [this screencast](https://www.youtube.com/watch?v=TJcn_PJ2100) for more information.
 
-## Callouts
-
-There's another type of callout available called callouts. This format is typically used for longer callout that spans more than one or two paragraphs, but really it's just a stylistic preference whether to use an alert or callout.
-
-Here's the syntax for a callout:
-
-```
-{% raw %}{% include callout.html content="This is my callout. It has a border on the left whose color you define by passing a type parameter. I typically use this style of callout when I have more information that I want to share, often spanning multiple paragraphs. " type="primary" %} {% endraw %}
-```
-
-Here's the result:
-
-{% include callout.html content="This is my callout. It has a border on the left whose color you define by passing a type parameter. I typically use this style of callout when I have more information that I want to share, often spanning multiple paragraphs." type="primary" %}
-
-The available properties for callouts are as follows:
-
-| Property | description |
-|-------|--------|
-| content | The content for the callout. |
-| type | The style for the callout. Options are `danger`, `default`, `primary`, `success`, `info`, and `warning`.|
-
-The types just define the color of the left border. Each of these callout types get inserted as a class name in the callout template. These class names correspond with styles in Bootstrap. These classes are common Bootstrap class names whose style attributes differ depending on your Bootstrap theme and style definitions.
-
-Here's an example of each different type of callout:
-
-{% include callout.html content="This is my **danger** type callout. It has a border on the left whose color you define by passing a type parameter." type="danger" %}
-
-{% include callout.html content="This is my **default** type callout. It has a border on the left whose color you define by passing a type parameter." type="default" %}
-
-{% include callout.html content="This is my **primary** type callout. It has a border on the left whose color you define by passing a type parameter." type="primary" %}
-
-{% include callout.html content="This is my **success** type callout. It has a border on the left whose color you define by passing a type parameter." type="success" %}
-
-{% include callout.html content="This is my **info** type callout. It has a border on the left whose color you define by passing a type parameter." type="info" %}
-
-{% include callout.html content="This is my **warning** type callout. It has a border on the left whose color you define by passing a type parameter." type="warning" %}
-
-Now that in contrast to alerts, callouts don't include the alert word (note, tip, warning, or important). You have to manually include it inside `content` if you want it.
-
-To include paragraph breaks, use `<br/><br/>` inside the callout:
-
-```
-{% raw %}{% include callout.html content="**Important information**: This is my callout. It has a border on the left whose color you define by passing a type parameter. I typically use this style of callout when I have more information that I want to share, often spanning multiple paragraphs. <br/><br/>Here I am starting a new paragraph, because I have lots of information to share. You may wonder why I'm using line breaks instead of paragraph tags. This is because Kramdown processes the Markdown here as a span rather than a div (for whatever reason). Be grateful that you can be using Markdown at all inside of HTML. That's usually not allowed in Markdown syntax, but it's allowed here." type="primary" %} {% endraw %}
-```
-
-Here's the result:
-
-{% include callout.html content="**Important information**: This is my callout. It has a border on the left whose color you define by passing a type parameter. I typically use this style of callout when I have more information that I want to share, often spanning multiple paragraphs. <br/><br/>Here I am starting a new paragraph, because I have lots of information to share. You may wonder why I'm using line breaks instead of paragraph tags. This is because Kramdown processes the Markdown here as a span rather than a div (for whatever reason). Be grateful that you can be using Markdown at all inside of HTML. That's usually not allowed in Markdown syntax, but it's allowed here." type="primary" %}
-
 ## Use Liquid variables inside parameters with includes
 
 Suppose you have a product name or some other property that you're storing as a variable in your configuration file (\_congfig.yml), and you want to use this variable in the `content` parameter for your alert or callout. You will get an error if you use Liquid syntax inside a include parameter. For example, this syntax will produce an error:
@@ -168,6 +119,41 @@ Also note that instead of storing the variable in your site's configuration file
 ## Markdown inside of callouts and alerts
 
 You can use Markdown inside of callouts and alerts, even though this content actually gets inserted inside of HTML in the include. This is one of the advantages of kramdown Markdown. The include template has an attribute of `markdown="span"` that allows for the processor to parse Markdown inside of HTML.
+
+NOTE: For LoopBack, we've modified the callouts to have `markdown="1"` so they can take markdown div elements such as bullet lists.
+
+## Other templates
+
+For the LoopBack project, we've added several additional include templates:
+- "See also"
+- "Code caption"
+- "Styled box"
+
+### See also
+
+```
+{%raw%}{% include see-also.html content="This is a right-aligned box where I can add relevant links and the like:
+- [Contributing to LoopBack documentation](index.html)
+- [Authoring pages](pages.html)
+- [Code samples](code_samples.html)
+" %}{% endraw%}
+```
+
+Gives:
+
+{% include see-also.html content="This is a right-aligned box where you can add relevant links and the like:
+- [Contributing to LoopBack documentation](index.html)
+- [Authoring pages](pages.html)
+- [Code samples](code_samples.html)
+" %}
+
+If you don't want the "See also" title, then add `title=false` as a parameter.
+
+### Code caption
+
+
+### Styled box
+
 
 ## Validity checking
 

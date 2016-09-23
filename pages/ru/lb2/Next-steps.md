@@ -1,12 +1,12 @@
 ---
 title: "Next steps"
-lang: en
-layout: page
+lang: ru
+layout: translation
 toc: false
 keywords: LoopBack
 tags:
-sidebar: lb2_sidebar
-permalink: /doc/en/lb2/Next-steps.html
+sidebar: ru_lb2_sidebar
+permalink: /doc/ru/lb2/Next-steps.html
 summary:
 ---
 
