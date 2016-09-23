@@ -104,7 +104,8 @@ If no sidebar assignment is found in the page frontmatter, the default sidebar (
 
 Note that your sidebar can only have 2 levels. Given that each product has its own sidebar, this depth should be sufficient (it's really like 3 levels). Deeper nesting goes against usability recommendations.
 
-{% include note.html content="Note that each level must have at least one topic before the next level starts. You can't have a second level that contains multiple third levels without having at least one standalone topic in the second level." %}
+{% include note.html content="Note that each level must have at least one topic before the next level starts. You can't have a second level that contains multiple third levels without having at least one standalone topic in the second level.
+" %}
 
 For more detail on the sidebar, see [Sidebar navigation][mydoc_sidebar_navigation].
 

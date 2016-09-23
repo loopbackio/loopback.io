@@ -45,11 +45,13 @@ Change "ACME series" to the name of your series.
 
 Save this in your \_includes/custom folder as something like series\_acme.html.
 
-{% include warning.html content="With pages, there isn't a universal namespace created from tags or categories like there is with Jekyll posts. As a result, you have to loop through all pages. If you have a lot of pages in your site (e.g., 1,000+), then this looping will create a slow build time. If this is the case, you will need to rethink the approach to looping here." %}
+{% include warning.html content="
+With pages, there isn't a universal namespace created from tags or categories like there is with Jekyll posts. As a result, you have to loop through all pages. If you have a lot of pages in your site (e.g., 1,000+), then this looping will create a slow build time. If this is the case, you will need to rethink the approach to looping here.
+" %}
 
 ## 2. Create the "next" include
 
-Now create another include for the Next button at the bottom of the page. Copy the following code, changing the series name to your series'name:
+Now create another include for the Next button at the bottom of the page. Copy the following code, changing the series name to your series' name:
 
 {% raw %}
 ```html

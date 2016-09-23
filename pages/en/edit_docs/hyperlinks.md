@@ -34,14 +34,15 @@ This method for automated links creates a master list of all links in a Markdown
 
 With this Automated links method, make sure all your pages are referenced in a sidebar or topnav data file (inside \_data > sidebars). If they're not in a sidebar or top nav (such as links to headings on a page), list them in the `other.yml` file (which is in the \_data/sidebars folder).
 
-The links.html file (in \_includes) will iterate through all your sidebars and create a list of reference-style markdown links based on the `url` properties in the sidebar items. 
+The links.html file (in \_includes) will iterate through all your sidebars and create a list of reference-style markdown links based on the `url` properties in the sidebar items.
 
-{% include note.html content="For the automated links method to work, each of your pages must have a `permalink` property in the frontmatter. The `permalink` property must match the file name. For example, if the file name is `somefile.html`, your permalink property would be `somefile.html`. See [Pages][mydoc_pages] for more details." %}
+{% include note.html content="For the automated links method to work, each of your pages must have a `permalink` property in the frontmatter. The `permalink` property must match the file name. For example, if the file name is `somefile.html`, your permalink property would be `somefile.html`. See [Pages][mydoc_pages] for more details.
+" %}
 
 To implement managed links:
 
 1.  In your \_config.yml file, list each sidebar in the `sidebars` property &mdash; including the other.yml file too:
-    
+
     ```yaml
     sidebars:
     - home_sidebar
@@ -50,13 +51,13 @@ To implement managed links:
     - product2_sidebar
     - other
     ```
-    
+
 2.  At the bottom of each topic where you plan to include links, include the links.html file:
 
     ```
     {% raw %}{% include links.html %}{% endraw %}
     ```
-    
+
 3.  To link to a topic, use reference-style Markdown links, with the referent using the file name (without the file extension). For example:
 
     ```

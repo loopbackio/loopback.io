@@ -40,11 +40,11 @@ Here's the result:
 For inline images, such as with a button that you want to appear inline with text, use the inline_image.html include, like this:
 
 ```liquid
-Click the **Android SDK Manager** button {%raw%}{% include inline_image.html
-file="androidsdkmanagericon.png" alt="SDK button" %}{%endraw%}
+Click the **Expand** icon {%raw%}{% include inline_image.html
+file="4849751.png" alt="SDK button" %}{%endraw%}
 ```
 
-Click the **Android SDK Manager** button {% include inline_image.html file="androidsdkmanagericon.png" alt="SDK button" %}
+Click the **Expand** icon {% include inline_image.html file="4849751.png" alt="SDK button" %}
 
 The inline_image.html include properties are as follows:
 
@@ -59,13 +59,12 @@ The inline_image.html include properties are as follows:
 You can also embed SVG graphics. If you use SVG, you need to use the HTML syntax so that you can define a width/container for the graphic. Here's a sample embed:
 
 ```liquid
-{% raw %}{% include image.html file="helpapi.svg" url="http://idratherbewriting.com/documentation-theme-jekyll/mydoc_help_api/" alt="Building a Help API" caption="A help API provides a JSON file at a web URL with content that can be pulled into different targets" max-width="600" %}{% endraw %}
+{% raw %}{% include image.html file="overview/book.svg" url="http://looopback.io" alt="Book icon" caption="A book icon" max-width="600" %}{% endraw %}
 ```
 
 Here's the result:
 
-
-{% include image.html file="helpapi.svg" url="http://idratherbewriting.com/documentation-theme-jekyll/mydoc_help_api/" alt="Building a Help API" caption="A help API provides a JSON file at a web URL with content that can be pulled into different targets" max-width="600" %}
+{% include image.html file="overview/book.svg" url="http://looopback.io" alt="Book icon" caption="A book icon" max-width="600" %}
 
 The stylesheet even handles SVG display in IE 9 and earlier through the following style (based on this [gist](https://gist.github.com/larrybotha/7881691)):
 
@@ -90,8 +89,6 @@ The stylesheet even handles SVG display in IE 9 and earlier through the followin
 
 Also, if you're working with SVG graphics, note that Firefox does not support SVG fonts. In Illustrator, when you do a Save As with your AI file and choose SVG, to preserve your fonts, in the Font section, select "Convert to outline" as the Type (don't choose SVG in the Font section).
 
-Also, remove the check box for "Use textpath element for text on a path". And select "Embed" rather than "Link." The following screenshot shows the settings I use. Your graphics will look great in Firefox.
-
-{% include image.html file="illustratoroptions.png" caption="Essential options for SVG with Illustrator" %}
+Also, remove the check box for "Use textpath element for text on a path". And select "Embed" rather than "Link." 
 
 {% include links.html %}

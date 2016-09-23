@@ -7,7 +7,7 @@ keywords: tags, navigation, buttons, links, association
 summary: "Tags provide another means of navigation for your content. Unlike the table of contents, tags can show the content in a variety of arrangements and groupings. Implementing tags in this Jekyll theme is somewhat of a manual process."
 sidebar: contrib_sidebar
 permalink: /doc/en/contrib/tags.html
-folder: mydoc
+folder: contrib
 ---
 
 ## Add a tag to a page
@@ -23,13 +23,15 @@ tags: [formatting, single_sourcing]
 
 ## Tags overview
 
-{% include note.html content=" With posts, tags have a namespace that you can access with <code>posts.tags.tagname</code>, where <code>tagname</code> is the name of the tag. You can then list all posts in that tag namespace. But pages don't off this same tag namespace, so you could actually use another key instead of <code>tags</code>. Nevertheless, I'm using the same <code>tags</code> approach for posts as with pages." %}
+{% include note.html content=" With posts, tags have a namespace that you can access with <code>posts.tags.tagname</code>, where <code>tagname</code> is the name of the tag. You can then list all posts in that tag namespace. But pages don't off this same tag namespace, so you could actually use another key instead of <code>tags</code>. Nevertheless, I'm using the same <code>tags</code> approach for posts as with pages.
+" %}
 
 
 To prevent tags from getting out of control and inconsistent, first make sure the tag appears in the \_data/tags.yml file. If it's not there, the tag you add to a page won't be read. I added this check just to make sure I'm using the same tags consistently and not adding new tags that don't have tag archive pages.
 
 
-{% include note.html content="In contrast to WordPress, with Jekyll to get tags on pages you have to build out the functionality for tags so that clicking a tag name shows you all pages with that tag. Tags in Jekyll are much more manual." %}
+{% include note.html content="In contrast to WordPress, with Jekyll to get tags on pages you have to build out the functionality for tags so that clicking a tag name shows you all pages with that tag. Tags in Jekyll are much more manual.
+" %}
 
 Additionally, you must create a tag archive page similar to the other pages named tag_{tagname}.html folder. This theme doesn't auto-create tag archive pages.
 
@@ -69,7 +71,8 @@ sidebar: contrib_sidebar
    ```
     {% endraw %}
 
-   {% include note.html content="In the \_includes/mydoc folder, there's a taglogic.html file. This file (included in each tag archive file) has common logic for getting the tags and listing out the pages containing the tag in a table with summaries or truncated excerpts. You don't have to do anything with the file &mdash; just leave it there because the tag archive pages reference it." %}
+   {% include note.html content="In the \_includes/mydoc folder, there's a taglogic.html file. This file (included in each tag archive file) has common logic for getting the tags and listing out the pages containing the tag in a table with summaries or truncated excerpts. You don't have to do anything with the file &mdash; just leave it there because the tag archive pages reference it.
+   " %}
 
 4. Change the title, tagName, and permalink values to be specific to the tag name you just created.
 
@@ -101,12 +104,12 @@ If you want to retrieve pages outside of a particular tag_archive page, you coul
 
 {% raw %}
 ```liquid
-Getting started pages:
+navigation pages:
 <ul>
 {% for page in site.pages %}
 {% for tag in page.tags %}
-{% if tag == "getting_started" %}
-<li><a href="{{page.url | remove: "/" }}">{{page.title}}</a></li>
+{% if tag == "navigation" %}
+<li><a href="{{page.permalink}}">{{page.title}}</a></li>
 {% endif %}
 {% endfor %}
 {% endfor %}
@@ -116,12 +119,12 @@ Getting started pages:
 
 Here's how that code renders:
 
-Getting started pages:
+navigation pages:
 <ul>
 {% for page in site.pages %}
 {% for tag in page.tags %}
-{% if tag == "getting_started" %}
-<li><a href="{{page.url | remove: "/" }}">{{page.title}}</a></li>
+{% if tag == "navigation" %}
+<li><a href="{{page.permalink}}">{{page.title}}</a></li>
 {% endif %}
 {% endfor %}
 {% endfor %}
@@ -131,13 +134,13 @@ If you want to sort the pages alphabetically, you have to apply a `sort` filter:
 
 ```liquid
 {% raw %}
-Getting started pages:
+navigation pages:
 <ul>
 {% assign sorted_pages = (site.pages | sort: 'title') %}
 {% for page in sorted_pages %}
 {% for tag in page.tags %}
-{% if tag == "getting_started" %}
-<li><a href="{{page.url | remove: "/" }}">{{page.title}}</a></li>
+{% if tag == "navigation" %}
+<li><a href="{{page.permalink}}">{{page.title}}</a></li>
 {% endif %}
 {% endfor %}
 {% endfor %}
@@ -147,13 +150,13 @@ Getting started pages:
 
 Here's how that code renders:
 
-Getting started pages:
+navigation pages:
 <ul>
 {% assign sorted_pages = (site.pages | sort: 'title') %}
 {% for page in sorted_pages %}
 {% for tag in page.tags %}
-{% if tag == "getting_started" %}
-<li><a href="{{page.url | remove: "/"}}">{{page.title}}</a></li>
+{% if tag == "navigation" %}
+<li><a href="{{page.permalink}}">{{page.title}}</a></li>
 {% endif %}
 {% endfor %}
 {% endfor %}
@@ -180,7 +183,5 @@ If you don't want tags to appear at all on your page, remove the tags property f
 ## Remembering the right tags
 
 Since you may have many tags and find it difficult to remember what tags are allowed, I recommend creating a template that prepopulates all your frontmatter with all possible tags. Then just remove the tags that don't apply.
-
-See [WebStorm Text Editor][mydoc_webstorm_text_editor] for tips on creating file templates in WebStorm.
 
 {% include links.html %}

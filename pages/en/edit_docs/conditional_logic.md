@@ -18,7 +18,8 @@ As such, the conditional logic won't have as much play as it previously did. Ins
 
 However, you can still of course use conditional logic as needed.
 
-{% include tip.html content="Definitely check out [Liquid's documentation](http://docs.shopify.com/themes/liquid-documentation/basics) for more details about how to use operators and other liquid markup. The notes here are a small, somewhat superficial sample from the site." %}
+{% include tip.html content="Definitely check out [Liquid's documentation](http://docs.shopify.com/themes/liquid-documentation/basics) for more details about how to use operators and other liquid markup. The notes here are a small, somewhat superficial sample from the site.
+" %}
 
 ## Where to store filtering values
 

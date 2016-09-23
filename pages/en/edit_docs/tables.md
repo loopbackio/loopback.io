@@ -44,7 +44,8 @@ You can use Multimarkdown syntax for tables. The following shows a sample:
 | pink lady | jazz | macintosh |
 | honeycrisp | granny smith | fuji |
 
-{% include note.html content="You can't use block level tags (paragraphs or lists) inside Markdown tables, so if you need separate paragraphs inside a cell, use `<br/><br/>`." %}
+{% include note.html content="You can't use block level tags (paragraphs or lists) inside Markdown tables, so if you need separate paragraphs inside a cell, use `<br/><br/>`.
+" %}
 
 ## HTML Tables {#htmltables}
 
@@ -228,6 +229,7 @@ Notice a few features:
 
 Read more of the [datatable documentation](https://www.datatables.net/manual/options) to get a sense of the options you can configure. You should probably only use datatables when you have long, massive tables full of information.
 
-{% include note.html content=" Try to keep the columns to 3 or 4 columns only. If you add 5+ columns, your table may create horizontal scrolling with the theme. Additionally, keep the column heading titles short." %}
+{% include note.html content=" Try to keep the columns to 3 or 4 columns only. If you add 5+ columns, your table may create horizontal scrolling with the theme. Additionally, keep the column heading titles short.
+" %}
 
 {% include links.html %}

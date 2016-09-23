@@ -96,13 +96,17 @@ This means you can insert a tip, note, warning, or important alert simply by usi
 
 Here's the result:
 
-{% include note.html content="Add your note here." %}
+{% include note.html content="Add your note here.
+" %}
 
-{% include tip.html content="Here's my tip." %}
+{% include tip.html content="Here's my tip.
+" %}
 
-{% include important.html content="This information is very important." %}
+{% include important.html content="This information is very important.
+" %}
 
-{% include warning.html content="If you overlook this, you may die." %}
+{% include warning.html content="If you overlook this, you may die.
+" %}
 
 The color scheme is the default colors from Bootstrap. You can modify the icons or colors as needed.
 
