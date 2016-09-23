@@ -58,5 +58,12 @@ As discussed in [loopback.io issue #37](https://github.com/strongloop/loopback.i
 2. Fix all links; If "xx" is the ISO language code for the language, replace:
   - Links to `http://docs.strongloop.com/display/LB/...` with link to translated page on loopback.io.
   - Links to `https://docs.strongloop.com/display/XX/...` with link to translated page on loopback.io.
-  - Links to `/doc/en/lb2/Foo.html` with `Foo.html`
+  - Links to `/doc/en/lb2/Foo.html` with `Foo.html`.
 3. Change front matter as described above.
+
+### File names
+
+In general, translations _should_ use the same file name as the English content, but just kept in a different directory (e.g. `pages/fr/lb2` instead of `pages/en/lb2`).  It seems that conversion of some translated files does not convert the file names properly, so you may need to go through and manually rename some files and make corresponding changes in the sidebar nav `.yml` file and possibly also to links to such files.
+
+### Images
+Due to the way that translated content was stored in Confluence, the migration will unfortunately create an entirely separate set of image files (and markdown referring to the image files).  However, we don't want to have duplicates of every image file for each language, so we also need to replace the image references to use the existing image files.
