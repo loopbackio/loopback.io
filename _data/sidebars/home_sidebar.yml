@@ -1,12 +1,9 @@
 entries:
 - title: Sidebar
+  product: LoopBack
   home_url: /doc/index.html
   levels: one
   folders:
-
-  - title: LoopBack Documentation
-    url: /doc/index.html
-    output: web
 
   - title: LoopBack 3.0
     url: /doc/en/lb3/index.html
