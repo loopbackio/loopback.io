@@ -50,3 +50,13 @@ Note the `translated` layout.  This adds the translation disclaimer at the top o
 
 {% include note.html content="If you add any new \"stub\" pages (pages that are not fully translated), also add `trans_complete: false` in the front matter.
 " %}
+
+## Importing existing translations
+
+As discussed in [loopback.io issue #37](https://github.com/strongloop/loopback.io/issues/37), there is some translated content on the old doc site.   When using the migration script to convert this content to HTML, you have to do a few extra things:
+
+2. Fix all links; If "xx" is the ISO language code for the language, replace:
+  - Links to `http://docs.strongloop.com/display/LB/...` with link to translated page on loopback.io.
+  - Links to `https://docs.strongloop.com/display/XX/...` with link to translated page on loopback.io.
+  - Links to `/doc/en/lb2/Foo.html` with `Foo.html`
+3. Change front matter as described above.

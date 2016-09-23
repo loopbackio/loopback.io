@@ -103,18 +103,19 @@ First, before the note I capture the content for my note's include like this:
 Now reference the `company_note` in your `include` parameter like this:
 
 ```
-{%raw%}{% include note.html content=company_note}{%endraw%}
+{%raw%}{% include note-span.html content=company_note %}{%endraw%}
 ```
 
 Here's the result:
 
 {% capture company_note %} {{site.company_name}} is pleased to announce an upcoming release.{% endcapture %}
-{% include note.html content=company_note
-%}
+{% include note-span.html content=company_note %}
 
 Note the omission of quotation marks with variable parameters.
 
-Also note that instead of storing the variable in your site's configuration file, you could also put the variable in your page's frontmatter. Then instead of using `{%raw%}{{site.company_name}}{%endraw%}` you would use `{%raw%}{{page.company_name}}{%endraw%}`.
+Instead of storing the variable in your site's configuration file, you could also put the variable in your page's frontmatter. Then instead of using `{%raw%}{{site.company_name}}{%endraw%}` you would use `{%raw%}{{page.company_name}}{%endraw%}`.
+
+Because we've modified the original alert templates to allow for markdown block elements such as lists, you have to use the `note-span.html` template instead of `note.html`.
 
 ## Markdown inside of callouts and alerts
 
@@ -142,6 +143,7 @@ For the LoopBack project, we've added several additional include templates:
 Gives:
 
 {% include see-also.html content="This is a right-aligned box where you can add relevant links and the like:
+
 - [Contributing to LoopBack documentation](index.html)
 - [Authoring pages](pages.html)
 - [Code samples](code_samples.html)
