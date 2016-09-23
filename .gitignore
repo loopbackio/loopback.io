@@ -17,3 +17,5 @@ _pdf
 node_modules
 dist
 .jekyll-metadata
+vendor
+.bundle
