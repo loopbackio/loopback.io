@@ -21,9 +21,17 @@ then you need to add the language; see [Adding a new language](Adding_a_new_lang
 To create a new translated page from an existing English page:
 
 1. Copy the file from `pages/en/lb2` (or `lb3` if it's for LoopBack version 3.0) to the directory for your language; for example if you were translating file `pages/en/lb2/Foo.html` to French, copy it to  `pages/fr/lb2/Foo.html`
-2. Edit the front matter and change the `layout` from `page` to `translation`.  
+1. Edit the front matter (see example below) and make the following changes:
+ - Change `layout` from `page` to `translation`
+ - Change `sidebar` from `lb2_sidebar` to `xx_lb2_sidebar` where `xx` is the ISO code for your language.
+ - Change `permalink` from `/doc/en/lb2/Foo.html` to `/doc/xx/lb2/Foo.html`.
+ - Add `lang` attribute with the appropriate value.  
+1. Start translating the content!
+1. Make sure your navigation sidebar `_data/sidebars/xx_lb_sidebar.yml` contains a link to your article somewhere (ideally in a logical location).
 
-When you're done, the front matter should look like this:
+### Front matter example
+
+When you're done, the page front matter should look like this:
 
 ```sh
 ---
