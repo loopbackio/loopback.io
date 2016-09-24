@@ -52,4 +52,35 @@ $(function() {
             return $this.find("a[data-toggle=tab]:first, a[data-toggle=pill]:first").tab("show");
         }
     });
+
+    setupSidebarTreeNav();
 });
+
+function setupSidebarTreeNav(){
+
+    //hide all non-active nav-lists:
+    $('.nav-list').not('#mysidebar').each(function(i, list){
+      if(!$(list).parent().is('.active')){
+        $(list).hide();
+      }
+    });
+
+    //add active class to parents of active nav elems
+    $("li.active").parentsUntil('#mysidebar', '.tree-parent')
+      .addClass('expanded')
+      .children('ul.nav-list').show();
+
+
+    //add expanded class to active tree parents
+    $('.tree-parent.active').addClass('expanded');
+
+    $('a.show-hide').click(function (e) {
+      console.log('clicked', this);
+      $(this)
+        .blur()
+        .parent().toggleClass('expanded')
+        .children('ul.nav-list').toggle(200);
+      return false;
+      // $(this).parent().children('ul.nav-list').toggle(200);
+    });
+}

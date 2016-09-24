@@ -1,45 +1,7 @@
 <!DOCTYPE html>
 <head>
     {% include head.html %}
-    <script>
-        $(document).ready(function() {
-            // Initialize navgoco with default options
-            var sidebar = $("#mysidebar");
-            sidebar.navgoco({
-                caretHtml: '',
-                accordion: true,
-                openClass: 'active', // open
-                save: false, // leave false or nav highlighting doesn't work right
-                cookie: {
-                    name: 'navgoco',
-                    expires: false,
-                    path: '/'
-                },
-                slide: {
-                    duration: 400,
-                    easing: 'swing'
-                }
-            });
-
-            $("#collapseAll").click(function(e) {
-                e.preventDefault();
-                $("#mysidebar").navgoco('toggle', false);
-            });
-
-            $("#expandAll").click(function(e) {
-                e.preventDefault();
-                $("#mysidebar").navgoco('toggle', true);
-            });
-
-            // expand the current page's nav/sub nav
-            sidebar.find('li a').each(function(index, el) {
-                if (window.location.href === el.href) {
-                    $(el).parents('li').navgoco('toggle', true);
-                }
-            });
-        });
-
-    </script>
+    
     <script>
         $(function () {
             $('[data-toggle="tooltip"]').tooltip()
@@ -68,14 +30,14 @@
     <!-- Content Row -->
     <div class="row">
         <!-- Sidebar Column -->
-        <div class="col-md-3">
-
+        <nav class="col-md-3">
           {% include sidebar.html %}
-    <!-- Content Column -->
-    <div class="col-md-9">
-        {{content}}
-    </div>
-    <!-- /.row -->
+        </nav>
+        <!-- Content Column -->
+        <div class="col-md-9">
+            {{content}}
+        </div>
+        <!-- /.row -->
 </div>
 <!-- /.container -->
     </div>
