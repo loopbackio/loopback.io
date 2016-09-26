@@ -9,11 +9,11 @@ entries:
     folderitems:
 
     - title: 'Community projects'
-      url: /doc/community/index.html
+      url: /doc/en/community/index.html
       output: 'web'
 
     - title: 'How to add a project'
-      url: /doc/community/How-to-add-a-project.html
+      url: /doc/en/community/How-to-add-a-project.html
       output: 'web'
 
   - title: 'Active projects'
@@ -21,5 +21,5 @@ entries:
     folderitems:
 
     - title: 'Sample project'
-      url: /doc/community/Sample-project.html
+      url: /doc/en/community/Sample-project.html
       output: 'web'
