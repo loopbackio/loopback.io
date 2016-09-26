@@ -1,5 +1,5 @@
 ---
-title: Pages
+title: Authoring Pages
 tags: [getting_started, formatting, content_types]
 keywords: pages, authoring, exclusion, frontmatter
 last_updated: July 3, 2016
@@ -12,14 +12,17 @@ permalink: /doc/en/contrib/pages.html
 ## Where to author content
 Use a text editor such as Sublime Text, WebStorm, IntelliJ, or Atom to create pages. Atom is recommended because it's created by Github, which is driving some of the Jekyll development through Github Pages.
 
-## Where to save pages
+## Where pages are kept
 
 All the documentation is in the `/pages` folder.  In that folder, English documentation is in `en`, and other languages are in folders with the name of the ISO language code (for example, `fr` for French).
 
 Under English, the sub-folders are:
+
 - `lb2` - LoopBack 2.x
 - `lb3` - LoopBack 3.0
-- `edit_docs` - Information on contributing to the documentation.  Currently, this is published at [http://loopback.io/doc/en/contrib/](http://loopback.io/doc/en/contrib/).
+- `contrib` - Information on contributing to the documentation, published at [http://loopback.io/doc/en/contrib/](http://loopback.io/doc/en/contrib/).
+- `community` - Area for general project contribution guidelines and processes; also where
+community members can put information about their LoopBack-related projects.
 
 ## Frontmatter
 
@@ -51,7 +54,7 @@ The following table describes each of the frontmatter that you can use with this
 | **keywords** | Optional | Synonyms and other keywords for the page. This information gets stuffed into the page's metadata to increase SEO. The user won't see the keywords, but if you search for one of the keywords, it will be picked up by the search engine.  |
 | **last_updated**  | Optional | The date the page was last updated. This information could helpful for readers trying to evaluate how current and authoritative information is. If included, the last_updated date appears in the footer of the page in rather small font.|
 | **summary** | Optional | A 1-2 word sentence summarizing the content on the page. This gets formatted into the summary section in the page layout. Adding summaries is a key way to make your content more scannable by users (check out [Jakob Nielsen's site](http://www.nngroup.com/articles/corporate-blogs-front-page-structure/) for a great example of page summaries.) The only drawback with summaries is that you can't use variables in them. |
-| **permalink**| Required | The permalink *must* match the filename in order for automated links to work. Additionally, you must include the ".html" in the filename. Do not put forward slashes around the permalink (this makes Jekyll put the file inside a folder in the output). When Jekyll builds the site, it will put the page into the root directory rather than leaving it in a subdirectory or putting it inside a folder and naming the file index.html. Having all files flattened in the root directory is essential for relative linking to work and for all paths to JS and CSS files to be valid. |
+| **permalink**| Required | The permalink *must* match the filename in order for automated links to work. Additionally, you must include the ".html" in the filename. Do not put forward slashes around the permalink (this makes Jekyll put the file inside a folder in the output). When Jekyll builds the site, it will put the page into the root directory rather than leaving it in a subdirectory or putting it inside a folder and naming the file index.html. Having all files flattened in the root directory is essential for relative linking to work and for all paths to JS and CSS files to be valid. <br/> **NOTE**: For LoopBack, we've changed this to use subdirectories, and adjusted how the CSS and JS files are referred to so it works correctly, regardless of how many subdirectories you use.|
 | **datatable** | Optional | 'true'. If you add `datatable: true` in the frontmatter, scripts for the [jQuery Datatables plugin](https://www.datatables.net/) get included on the page. You can see the scripts that conditionally appear by looking in the \_layouts/default.html page. |
 | **toc** | Optional | If you specify `toc: false` in the frontmatter, the page won't have the table of contents that appears below the title. The toc refers to the list of jump links below the page title, not the sidebar navigation. You probably want to hide the TOC on the homepage and product landing pages.|
 
@@ -61,7 +64,7 @@ If you want to use a colon in your page title, you must enclose the title's valu
 
 ## Page names and excluding files from outputs
 
-By default, everything in your project is included in the output. You can exclude all files that don't belong to that project by specifying the file name, the folder name, or by using wildcards in your configuration file:
+By default, everything in your project is included in the output. To exclude files that don't belong to that project, specify the file name, the folder name, or use wildcards in your configuration file:
 
 ```yaml
 exclude:
@@ -91,13 +94,6 @@ If you use Markdown, you can also include HTML formatting where needed. But if y
 For your Markdown files, note that a space or two indent will set text off as code or blocks, so avoid spacing indents unless intentional.
 
 If you have a lot of HTML, as long as the top and bottom tags of the HTML are flush left in a Markdown file, all the tags inside those bookend HTML tags will render as HTML, regardless of their indentation. (This can be especially useful for tables.)
-
-
-## Page names
-
-I recommend prefixing your page names with the product, such as "mydoc_pages" instead of just "pages." This way if you have other products that also have topics with generic names such as "pages," there won't be naming conflicts.
-
-Additionally, consider adding the product name in parentheses after the title, such as "Pages (Mydoc)" so that users can clearly navigate different topics for each product.
 
 ## Kramdown Markdown
 
@@ -170,7 +166,7 @@ Then you can reference it with a link like this on the same page:
 
 [Some link](#someIdTag)
 
-For details about linking to headings on different pages, see [Automated links to headings on pages][mydoc_hyperlinks.html#bookmarklinks].
+For details about linking to headings on different pages, see [Automated links to headings on pages](mydoc_hyperlinks.html#bookmarklinks).
 
 ## Specify a particular page layout
 

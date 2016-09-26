@@ -14,14 +14,11 @@ entries:
       url: /doc/en/contrib/jekyll_getting_started.html
       output: web, pdf
 
-  - title: Authoring
+  - title: Authoring pages
+    url: /doc/en/contrib/pages.html
     output: web, pdf
 
     folderitems:
-    - title: Pages
-      url: /doc/en/contrib/pages.html
-      output: web, pdf
-
     - title: Conditional logic
       url: /doc/en/contrib/conditional_logic.html
       output: web, pdf
@@ -31,6 +28,7 @@ entries:
       output: web, pdf
 
   - title: Navigation
+    url: /doc/en/contrib/navigation.html
     output: web, pdf
 
     folderitems:
@@ -47,19 +45,12 @@ entries:
       output: web, pdf
 
   - title: Formatting
+    url: /doc/en/contrib/formatting.html
     output: web, pdf
 
     folderitems:
-    - title: Tooltips
-      url: /doc/en/contrib/adding_tooltips.html
-      output: web, pdf
-
     - title: Alerts
       url: /doc/en/contrib/alerts.html
-      output: web, pdf
-
-    - title: Icons
-      url: /doc/en/contrib/icons.html
       output: web, pdf
 
     - title: Images
@@ -68,6 +59,14 @@ entries:
 
     - title: Code samples
       url: /doc/en/contrib/code_samples.html
+      output: web, pdf
+
+    - title: Tooltips
+      url: /doc/en/contrib/adding_tooltips.html
+      output: web, pdf
+
+    - title: Icons
+      url: /doc/en/contrib/icons.html
       output: web, pdf
 
     - title: Links
@@ -86,15 +85,12 @@ entries:
       url: /doc/en/contrib/syntax_highlighting.html
       output: web, pdf
 
-  - title: Handling reviews
+  - title: Review comments
+    url: /doc/en/contrib/commenting_on_files.html
     output: web, pdf
 
-    folderitems:
-    - title: Commenting on files
-      url: /doc/en/contrib/commenting_on_files.html
-      output: web, pdf
-
   - title: Special layouts
+    url: /doc/en/contrib/layouts.html
     output: web, pdf
 
     folderitems:
@@ -107,6 +103,7 @@ entries:
       output: web, pdf
 
   - title: Translation
+    url: /doc/en/contrib/translation.html
     output: web, pdf
 
     folderitems:

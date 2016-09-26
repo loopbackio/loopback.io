@@ -1,5 +1,5 @@
 ---
-title: Commenting on files
+title: Adding Review Comments
 tags:
   - navigation
 keywords: "annotations, comments, feedback"
@@ -12,7 +12,7 @@ folder: mydoc
 
 ## About the review process
 
-If you're using the doc as code approach, you might also consider using the same techniques for reviewing the doc as people use in reviewing code. This approach will involve using Github to edit the files.
+If you're using the "doc as code" approach, you might also consider using the same techniques for reviewing the doc as people use in reviewing code. This approach will involve using Github to edit the files.
 
 There's an Edit me button on each page on this theme. This button allows collaborators to edit the content on Github.
 

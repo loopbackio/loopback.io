@@ -1,6 +1,6 @@
 {% include custom/sidebarconfigs.html %}
 <!-- NOTE: sidebar = site.data.sidebars.mydoc_sidebar.entries -->
-<h2 class="sidebarTitle"><a href="{{sidebar[0].home_url}}">{{sidebar[0].product}} {{sidebar[0].version}}</a></h2>
+<div class="sidebarTitle"><a href="{{sidebar[0].home_url}}">{{sidebar[0].product}} {{sidebar[0].version}}</a></div>
 <ul id="mysidebar" class="nav nav-list">
 {% for entry in sidebar %}
   {% for folder in entry.folders %}
@@ -18,7 +18,7 @@
                 <a href="{{folderitem.url }}">{{folderitem.title}}</a> <!-- LEVEL 3 ITEMS ("folderitems") DEFAULT -->
               {% endif %} <!-- folderitem.external_url -->
             </li>
-            
+
             {% for subfolder in folderitem.subfolders %}
               {% if subfolder.output contains "web" %}
                 <li class="tree-parent {% if page.url == subfolder.url %}active{% endif %}"> <!-- LEVEL 3 ITEMS ("subfolder") -->

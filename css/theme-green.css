@@ -88,12 +88,12 @@ div.sidebarTitle {
     color: #000;
 }
 
-li.sidebarTitle, li.sidebarTitle a {
+div.sidebarTitle, div.sidebarTitle a {
     margin-top:40px;
     font-weight:normal;
     font-size:130%;
     color: #000;
-    margin-bottom:10px;
+    margin-bottom:5px;
     margin-left: 5px;
 
 }

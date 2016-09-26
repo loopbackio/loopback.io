@@ -1,5 +1,5 @@
 ---
-title: Getting started with the Documentation Theme for Jekyll
+title: Getting started with Jekyll
 keywords: Jekyll
 tags: [getting_started]
 sidebar: contrib_sidebar
@@ -7,52 +7,32 @@ permalink: /doc/en/contrib/jekyll_getting_started.html
 summary: These brief instructions will help you get started quickly with the theme. The other topics in this help provide additional information and detail about working with other aspects of this theme and Jekyll.
 ---
 
+## Preview the site
 
-## Download or clone the theme
+To preview the website locally:
 
-First download or clone the theme from the [Github repo](https://github.com/tomjohnson1492/documentation-theme-jekyll). Most likely you won't be pulling in updates once you start customizing the theme, so downloading the theme (instead of cloning it) probably makes the most sense.
+1. Install [Ruby and Bundler](https://help.github.com/articles/setting-up-your-pages-site-locally-with-jekyll/) if you don't have them already.
 
-## Build this theme
-
-If you're used to running Jekyll sites, you can type the normal jekyll command, `jekyll serve`, to build the Jekyll theme. However, if you're a new Jekyll user or if you run into issues, see the following two topics:
-
-* [Install Jekyll on Mac][mydoc_install_jekyll_on_mac]
-* [Install Jekyll on Windows][mydoc_install_jekyll_on_windows]
-
-## Customize the Gemfile
-
-The Gemfile is how project dependencies are managed. This project doesn't have any dependencies beyond core Jekyll.
-
-Open the Gemfile (in any text editor) in the Jekyll doc theme project with the following command:
+1. `cd` to the repository directory and run the following command:
 
 ```
-open Gemfile
+$ cd loopback.io
+$ bundle install
 ```
 
-The theme's gemfile looks as follows:
+Bundler will look in the Gemfile for which gems to install. The `github-pages` gem includes the same version of Jekyll and other dependencies as used by GitHub Pages, so that your local setup mirrors GitHub Pages as closely as possible.
+
+## Run and view site locally
+
+Run Jekyll using the following command:
 
 ```
-# A sample Gemfile
-source "https://rubygems.org"
-
-# gem "rails"
-gem 'github-pages'
-gem 'jekyll'
+$ bundle exec jekyll serve
 ```
 
-If you're publishing on Github Pages, leave the `github-pages` gem there. But if not, remove `github-pages` because Github sometimes has dependencies that conflict with the latest versions of the Jekyll gem and Kramdown, which can be frustrating.
+Then, load [http://localhost:4001/](http://localhost:4001/) on your browser.
 
-Use Bundler to install all the needed Ruby gems:
-
-```
-bundle install
-```
-
-Now run Jekyll serve to build the theme:
-
-```
-jekyll serve
-```
+NOTE:  The docs part will be at [http://localhost:4001/doc](http://localhost:4001/doc).  
 
 ## Configure the sidebar
 

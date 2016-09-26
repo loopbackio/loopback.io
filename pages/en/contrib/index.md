@@ -4,18 +4,17 @@ keywords: LoopBack documentation
 tags: [getting_started]
 sidebar: contrib_sidebar
 permalink: /doc/en/contrib/index.html
-summary: You can contribute to LoopBack documentation
+summary: We welcome contributions to LoopBack documentation!
 ---
-
-## Contributing to LoopBack documentation
-
-We welcome contributions to LoopBack documentation.
 
 ## How LoopBack documentation works
 
 LoopBack documentation is sourced in a GitHub repository, and this site is
 generated using Jekyll and GitHub pages.  The site theme is derived from
-Tom Johnson's Jekyll documentation theme; see [Documentation Theme for Jekyll](http://idratherbewriting.com/documentation-theme-jekyll/) for more information.
+Tom Johnson's [Documentation Theme for Jekyll](http://idratherbewriting.com/documentation-theme-jekyll/).
+
+All the pages are in the `pages` directory.  Every page also has an **Edit this page** button at the bottom
+that links to the page in the GitHub repo.
 
 ## References
 
@@ -30,30 +29,29 @@ Here are some simple examples of common formatting.
 
 ### Alerts
 
-{% include note.html content="This is my note. " %}
+{% include note.html content="This is my note.
+" %}
 
-{% include tip.html content="This is a tip." %}
+{% include tip.html content="This is a tip.
+" %}
 
-{% include warning.html content="This is a warning." %}
+{% include warning.html content="This is a warning.
+" %}
 
-{% include important.html content="This is important." %}
+{% include important.html content="This is important.
+" %}
 
 ### Styled Box
 
-{% include styled-box.html
-  style="font-size: 11pt; border: 1px solid #cccccc; background-color: #EBF5EB; padding: 10px; border-radius: 3px; margin: 10px auto 20px auto; width: 680px; padding: 10px;"
-  content="This is some content.  You can even have a bullet list:
+Puts the content in a highlight box, styled as below.  You can add/change style
+with the `style` parameter.
+
+{% include styled-box.html content="This is some content.  You can even have a bullet list:
 
 - One
 - Two
 - Three
-
- <ul>
- <li>Foo</li>
- <li>Bar</li>
- <li>Baz</li>
- </ul>
-  " %}
+" %}
 
 ### Code blocks
 

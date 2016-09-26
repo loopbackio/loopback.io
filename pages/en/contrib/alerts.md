@@ -140,7 +140,7 @@ For the LoopBack project, we've added several additional include templates:
 " %}{% endraw%}
 ```
 
-Gives:
+Displays the box shown at right.
 
 {% include see-also.html content="This is a right-aligned box where you can add relevant links and the like:
 
@@ -153,9 +153,31 @@ If you don't want the "See also" title, then add `title=false` as a parameter.
 
 ### Code caption
 
+Sometimes you want a caption on a code sample, for example to show the file name that contains the code.
+For example:
+
+    {%raw%}{% include code-caption.html content="/common/models/user.json" %}{%endraw%}
+    ```javascript
+"acls": [{
+  "principalType": "ROLE",
+  "principalId": "$authenticated",
+  "permission": "ALLOW",
+  "property": "count"
+}, {
+...
+      ```
 
 ### Styled box
 
+Puts the content in a highlight box, styled as below.  You can add/change style
+with the `style` parameter.
+
+{% include styled-box.html content="This is some content.  You can even have a bullet list:
+
+- One
+- Two
+- Three
+" %}
 
 ## Validity checking
 

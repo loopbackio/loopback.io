@@ -9,6 +9,9 @@ permalink: /doc/en/contrib/series.html
 folder: mydoc
 ---
 
+{%include note.html content="LoopBack documentation is not currently using this feature.
+" %}
+
 ## Using series for pages
 
 You create a series by looking for all pages within a tag namespace that contain certain frontmatter. Here's a [demo][mydoc_seriesdemo1]</a>.
