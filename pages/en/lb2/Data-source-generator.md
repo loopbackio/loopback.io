@@ -3,7 +3,7 @@ title: "Data source generator"
 lang: en
 layout: page
 keywords: LoopBack
-tags:
+tags: [data_sources, tools]
 sidebar: lb2_sidebar
 permalink: /doc/en/lb2/Data-source-generator.html
 summary:

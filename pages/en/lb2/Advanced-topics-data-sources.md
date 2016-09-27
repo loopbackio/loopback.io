@@ -3,7 +3,7 @@ title: "Advanced topics: data sources"
 lang: en
 layout: page
 keywords: LoopBack
-tags:
+tags: [data_sources]
 sidebar: lb2_sidebar
 permalink: /doc/en/lb2/Advanced-topics-data-sources.html
 summary:

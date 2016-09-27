@@ -3,7 +3,7 @@ title: "Adding application logic"
 lang: en
 layout: page
 keywords: LoopBack
-tags:
+tags: [application_logic]
 sidebar: lb2_sidebar
 permalink: /doc/en/lb2/Adding-application-logic.html
 summary:

@@ -3,7 +3,7 @@ title: "AngularJS JavaScript SDK"
 lang: en
 layout: page
 keywords: LoopBack
-tags:
+tags: [angularjs]
 sidebar: lb2_sidebar
 permalink: /doc/en/lb2/AngularJS-JavaScript-SDK.html
 summary:

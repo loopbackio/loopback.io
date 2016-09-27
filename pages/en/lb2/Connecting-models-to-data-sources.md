@@ -3,7 +3,7 @@ title: "Connecting models to data sources"
 lang: en
 layout: page
 keywords: LoopBack
-tags:
+tags: [data_sources]
 sidebar: lb2_sidebar
 permalink: /doc/en/lb2/Connecting-models-to-data-sources.html
 summary:

@@ -4,7 +4,7 @@ lang: en
 layout: page
 toc: false
 keywords: LoopBack
-tags: [getting_started]
+tags: [getting_started, angularjs]
 sidebar: lb2_sidebar
 permalink: /doc/en/lb2/Create-AngularJS-client.html
 summary: The LoopBack AngularJS SDK enables you to easily creates a client JavaScript API to consume your LoopBack REST API.

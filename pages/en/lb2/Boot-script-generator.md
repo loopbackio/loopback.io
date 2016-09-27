@@ -3,7 +3,7 @@ title: "Boot script generator"
 lang: en
 layout: page
 keywords: LoopBack
-tags:
+tags: [tools]
 sidebar: lb2_sidebar
 permalink: /doc/en/lb2/Boot-script-generator.html
 summary:

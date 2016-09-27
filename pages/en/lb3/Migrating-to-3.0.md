@@ -3,7 +3,7 @@ title: "Migrating apps to LoopBack 3.0"
 lang: en
 layout: page
 keywords: LoopBack
-tags:
+tags: [getting_started]
 sidebar: lb3_sidebar
 permalink: /doc/en/lb3/Migrating-to-3.0.html
 summary:

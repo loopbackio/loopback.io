@@ -1,15 +1,15 @@
 allowed-tags:
-  - getting_started
-  - reference
-  - tutorial
-  - models
-  - data_sources
+  - android
+  - angularjs
   - application_logic
-  - collaboration
-  - troubleshooting
-  - mobile
-  - iOS
-  - Android
-  - AngularJS
+  - authentication
   - contributing
   - community_project
+  - data_sources
+  - getting_started
+  - ios
+  - models
+  - reference
+  - security
+  - tools
+  - troubleshooting

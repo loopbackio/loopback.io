@@ -3,7 +3,7 @@ title: "ACL REST API"
 lang: en
 layout: page
 keywords: LoopBack
-tags:
+tags: [authentication]
 sidebar: lb2_sidebar
 permalink: /doc/en/lb2/ACL-REST-API.html
 summary:

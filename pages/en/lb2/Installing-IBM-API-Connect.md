@@ -1,5 +1,5 @@
 ---
-title: Installation
+title: Installing IBM API Connect
 lang: en
 keywords: LoopBack
 tags: [getting_started]

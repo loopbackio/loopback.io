@@ -3,7 +3,7 @@ title: "Access token REST API"
 lang: en
 layout: page
 keywords: LoopBack
-tags:
+tags: [authentication]
 sidebar: lb2_sidebar
 permalink: /doc/en/lb2/Access-token-REST-API.html
 summary:

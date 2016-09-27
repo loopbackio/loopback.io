@@ -4,7 +4,7 @@ lang: en
 layout: page
 toc: false
 keywords: LoopBack
-tags:
+tags: authentication
 sidebar: lb2_sidebar
 permalink: /doc/en/lb2/Authentication-authorization-and-permissions.html
 summary:

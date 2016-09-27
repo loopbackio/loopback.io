@@ -3,7 +3,7 @@ title: "Other connectors"
 lang: en
 layout: page
 keywords: LoopBack
-tags:
+tags: [data_sources]
 sidebar: lb2_sidebar
 permalink: /doc/en/lb2/Other-connectors.html
 summary: LoopBack supports a number of connectors to backend systems beyond databases.

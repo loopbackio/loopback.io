@@ -3,7 +3,7 @@ title: "Adding remote methods to built-in models"
 lang: en
 layout: page
 keywords: LoopBack
-tags:
+tags: [models, application_logic]
 sidebar: lb2_sidebar
 permalink: /doc/en/lb2/Adding-remote-methods-to-built-in-models.html
 summary:

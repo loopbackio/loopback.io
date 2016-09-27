@@ -3,7 +3,7 @@ title: "Angular 2 SDK"
 lang: en
 layout: page
 keywords: LoopBack
-tags:
+tags: [angularjs]
 sidebar: lb2_sidebar
 permalink: /doc/en/lb2/Angular-2-SDK.html
 summary:

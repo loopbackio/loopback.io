@@ -3,7 +3,7 @@ title: "Adding logic to models"
 lang: en
 layout: page
 keywords: LoopBack
-tags:
+tags: [models]
 sidebar: lb2_sidebar
 permalink: /doc/en/lb2/Adding-logic-to-models.html
 summary:

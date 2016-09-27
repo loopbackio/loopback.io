@@ -1,5 +1,5 @@
 ---
-title: "Getting part II"
+title: "Getting started - part II"
 lang: en
 layout: page
 keywords: LoopBack
