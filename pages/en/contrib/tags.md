@@ -23,14 +23,8 @@ tags: [formatting, single_sourcing]
 
 ## Tags overview
 
-{% include note.html content=" With posts, tags have a namespace that you can access with <code>posts.tags.tagname</code>, where <code>tagname</code> is the name of the tag. You can then list all posts in that tag namespace. But pages don't off this same tag namespace, so you could actually use another key instead of <code>tags</code>. Nevertheless, I'm using the same <code>tags</code> approach for posts as with pages.
-" %}
-
 To prevent tags from getting out of control and inconsistent, first make sure the tag appears in the `\_data/tags.yml` file. If it's not there, the tag you add to a page won't be read. This helps to ensure that you
 use tags consistently and don't add new tags without the corresponding tag archive pages.
-
-{% include note.html content="In contrast to WordPress, with Jekyll to get tags on pages you have to build out the functionality for tags so that clicking a tag name shows you all pages with that tag. Tags in Jekyll are much more manual.
-" %}
 
 Additionally, you must create a tag archive page similar to the other pages named `tag_{tagname}.html` in the `tags` folder. This theme doesn't auto-create tag archive pages.
 
