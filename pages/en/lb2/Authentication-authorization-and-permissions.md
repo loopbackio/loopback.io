@@ -211,10 +211,11 @@ Product.disableRemoteMethod('createChangeStream', true);	// removes (GET|POST) /
 
 ### Hiding endpoints for related models
 
-To disable a REST endpoints for related model methods, use [disableRemoteMethod()](https://apidocs.strongloop.com/loopback/#model-disableremotemethod).
+To disable REST endpoints for related model methods, use [disableRemoteMethod()](https://apidocs.strongloop.com/loopback/#model-disableremotemethod).
 
 {% include note.html content="
-For more information, see [Accessing related models](Accessing-related-models.html)." %}
+For more information, see [Accessing related models](Accessing-related-models.html).
+" %}
 
 For example, if there are post and tag models, where a post hasMany tags, add the following code to `/common/models/post.js` 
 to disable the remote methods for the related model and the corresponding REST endpoints: 

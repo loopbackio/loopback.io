@@ -17,7 +17,7 @@ module is the LoopBack connector for Informix.
 
 The LoopBack Informix connector supports:
 
-* All [CRUD operations](/doc/{{page.lang}}/lb2/Creating%2C-updating%2C-and-deleting-data).
+* All [CRUD operations](/doc/{{page.lang}}/lb2/Creating-updating-and-deleting-data.html).
 * [Queries](/doc/{{page.lang}}/lb2/Querying-data.html) with fields, limit, order, skip and where filters.
 
 ## Installation

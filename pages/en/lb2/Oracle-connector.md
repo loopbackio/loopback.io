@@ -22,7 +22,8 @@ For a workaround, see [How to Disable SIP in OS X El Capitan](http://osxdaily.co
 * [Database discovery API]([Database discovery API](http://apidocs.strongloop.com/loopback-datasource-juggler/#datasource-prototype-discoverandbuildmodels). "
 %}
 
-{% include note.html content="The Oracle connector requires Oracle 8.x - 12.x." %}
+{% include note.html content="The Oracle connector requires Oracle 8.x - 12.x.
+" %}
 
 ## Installation
 

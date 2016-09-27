@@ -16,7 +16,10 @@ summary:
 * [Database discovery API](Database-discovery-API.html) 
 "%}
 
-{% include note.html content="The MySQL connector requires MySQL 5.0+." %}
+{% include note.html content="The MySQL connector requires MySQL 5.0+.
+" %}
+
+<br/>
 
 ## Installation
 

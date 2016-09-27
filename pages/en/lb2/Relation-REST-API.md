@@ -68,7 +68,7 @@ Delete related model instances for specified _model-name_ identified by _insta
 
 `DELETE /model1-name/instance-ID/hasMany-relation-name`
 
-## List ****belongsTo**** related model instances 
+## List belongsTo related model instances 
 
 List the related model instances for the given model identified by _instance-ID_, for hasMany relationship.
 

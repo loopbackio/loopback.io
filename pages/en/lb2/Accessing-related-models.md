@@ -69,8 +69,8 @@ You can use these related model methods to control access to the related routes.
 For example, if a **User hasMany projects**, LoopBack creates these routes (among others) and the corresponding related model methods:
 
 * `/api/users/count` - standard method is `count`
-* ``/api/users/:id/projects`` - related model method is `\_\_get\_\_projects`
-* `/api/users/:id/projects/count` - related model method is `\_\_count\_\_projects`
+* ``/api/users/:id/projects`` - related model method is `__get__projects`
+* `/api/users/:id/projects/count` - related model method is `__count__projects`
 
 {% include important.html content="
 If a model has a `DENY ALL` permission (for example a built-in model such as the User model), but related models have no ACLs,the related models will still not be accessible through the User model.
@@ -92,21 +92,19 @@ For example, the ACL for the User model definition JSON file (`user.json`) for 
   "principalType": "ROLE",
   "principalId": "$owner",
   "permission": "ALLOW",
-  "property": "\_\_get\_\_projects"
+  "property": "__get__projects"
 }, {
   "principalType": "ROLE",
   "principalId": "$authenticated",
   "permission": "ALLOW",
-  "property": "\_\_count\_\_projects"
+  "property": "__count__projects"
 }]
 ```
 
 ## Querying related models
 
 {% include important.html content="
-
 This feature requires LoopBack 2.16.0 or later.
-
 " %}
 
 When querying a model, you may also want to return data from its related models.

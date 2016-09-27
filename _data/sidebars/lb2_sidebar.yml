@@ -233,27 +233,31 @@ entries:
       url: /doc/en/lb2/Tutorial-access-control.html
       output: 'web, pdf'
 
-  - title: 'Creating models'
-    url: /doc/en/lb2/Creating-models.html
-    output: 'web, pdf'
-    folderitems:
-
-    - title: 'Using the model generator'
-      url: /doc/en/lb2/Using-the-model-generator.html
-      output: 'web, pdf'
-
-    - title: 'Discovering models from relational databases'
-      url: /doc/en/lb2/Discovering-models-from-relational-databases.html
-      output: 'web, pdf'
-
-    - title: 'Creating models from unstructured data'
-      url: /doc/en/lb2/Creating-models-from-unstructured-data.html
-      output: 'web, pdf'
-
   - title: 'Working with models'
-    url: /doc/en/lb2/Defining-models.html
     output: 'web, pdf'
     folderitems:
+
+    - title: 'Overview of defining models'
+      url: /doc/en/lb2/Defining-models.html
+      output: 'web, pdf'
+
+      subfolders:
+      - title: 'Creating models'
+        url: /doc/en/lb2/Creating-models.html
+        output: 'web, pdf'
+        subfolderitems:
+
+        - title: 'Using the model generator'
+          url: /doc/en/lb2/Using-the-model-generator.html
+          output: 'web, pdf'
+
+        - title: 'Discovering models from relational databases'
+          url: /doc/en/lb2/Discovering-models-from-relational-databases.html
+          output: 'web, pdf'
+
+        - title: 'Creating models from unstructured data'
+          url: /doc/en/lb2/Creating-models-from-unstructured-data.html
+          output: 'web, pdf'
 
     - title: 'Customizing models'
       url: /doc/en/lb2/Customizing-models.html
@@ -276,10 +280,6 @@ entries:
         url: /doc/en/lb2/Creating-model-relations.html
         output: 'web'
         subfolderitems:
-
-        - title: 'Creating model relations'
-          url: /doc/en/lb2/Creating-model-relations.html
-          output: 'web, pdf'
 
         - title: 'Tutorial: model relations'
           url: /doc/en/lb2/Tutorial-model-relations.html

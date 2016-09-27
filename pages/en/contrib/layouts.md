@@ -9,7 +9,7 @@ summary:
 
 A page's layout determines how it looks.  
 
-The default layout is specified in `_config.yml` and is the `page` layout.
+The default layout specified in `_config.yml` is the `page` layout.
 To use a different layout,  specify it in the frontmatter like this:
 
 ```
