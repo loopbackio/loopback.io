@@ -868,7 +868,7 @@ entries:
           output: 'web, pdf'
 
       - title: 'Xamarin SDK'
-        url: /doc/en/lb2/AngularJS-JavaScript-SDK.html
+        url: /doc/en/lb2/Xamarin-SDK.html
         output: 'web'
         subfolderitems:
 
