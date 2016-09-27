@@ -9,7 +9,7 @@ permalink: /doc/en/contrib/pages.html
 
 ---
 
-## Where to author content
+## How to author content
 Use a text editor such as Sublime Text, WebStorm, IntelliJ, or Atom to create pages. Atom is recommended because it's created by Github, which is driving some of the Jekyll development through Github Pages.
 
 ## Where pages are kept
@@ -24,10 +24,26 @@ Under English, the sub-folders are:
 - `community` - Area for general project contribution guidelines and processes; also where
 community members can put information about their LoopBack-related projects.
 
+### Overview content
+
+The site includes some non-documentation content, "technical overview" information that
+pre-dates the move of the documentation to the site.  For the most part, we don't expect community
+members to edit this information, though anyone is welcome to report inaccuracies or problems.
+This content includes:
+
+- The home page, `index.html`
+- Other "overview" content pages:
+  - `contributing/index.html`
+  - `examples/index.html`
+  - `getting-started/index.html`
+  - `resources/index.html`
+  - `users/index.html`
+- Overview layout in `_layouts/overview.html`
+- Include files in `_includes/overview/`
+
 ## Frontmatter
 
 Make sure each page has frontmatter at the top like this:
-
 
 ```yaml
 ---

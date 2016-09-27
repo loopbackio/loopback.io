@@ -9,8 +9,6 @@ permalink: /doc/en/lb2/Adding-application-logic.html
 summary:
 ---
 
-# Overview
-
 When building an application, you'll generally need to implement custom logic to process data and perform other operations before responding to client requests.
 In LoopBack, there are three ways to do this:
 

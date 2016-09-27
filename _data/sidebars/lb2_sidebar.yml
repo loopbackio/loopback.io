@@ -234,10 +234,11 @@ entries:
       output: 'web, pdf'
 
   - title: 'Working with models'
+    url: '#'
     output: 'web, pdf'
     folderitems:
 
-    - title: 'Overview of defining models'
+    - title: 'Defining models'
       url: /doc/en/lb2/Defining-models.html
       output: 'web, pdf'
 
@@ -344,12 +345,9 @@ entries:
 
       subfolders:
       - title: 'Built-in models REST API'
+        url: /doc/en/lb2/Built-in-models-REST-API.html
         output: 'web'
         subfolderitems:
-
-        - title: 'Built-in models REST API'
-          url: /doc/en/lb2/Built-in-models-REST-API.html
-          output: 'web, pdf'
 
         - title: 'PersistedModel REST API'
           url: /doc/en/lb2/PersistedModel-REST-API.html
@@ -394,12 +392,9 @@ entries:
 
       subfolders:
       - title: 'Database connectors'
+        url: /doc/en/lb2/Database-connectors.html
         output: 'web'
         subfolderitems:
-
-        - title: 'Database connectors overview'
-          url: /doc/en/lb2/Database-connectors.html
-          output: 'web, pdf'
 
         - title: 'Cloudant connector'
           url: /doc/en/lb2/Cloudant-connector.html
@@ -482,12 +477,9 @@ entries:
           output: 'web, pdf'
 
       - title: 'Other connectors'
+        url: /doc/en/lb2/Other-connectors.html
         output: 'web'
         subfolderitems:
-
-        - title: 'Other connectors overview'
-          url: /doc/en/lb2/Non-database-connectors.html
-          output: 'web, pdf'
 
         - title: 'Email connector'
           url: /doc/en/lb2/Email-connector.html
@@ -538,12 +530,9 @@ entries:
         output: 'web, pdf'
 
       - title: 'Advanced topics'
+        url: /doc/en/lb2/Advanced-topics-data-sources.html
         output: 'web'
         subfolderitems:
-
-        - title: 'Understanding data sources'
-          url: /doc/en/lb2/Advanced-topics-data-sources.html
-          output: 'web, pdf'
 
         - title: 'Using database transactions'
           url: /doc/en/lb2/Using-database-transactions.html
@@ -554,12 +543,9 @@ entries:
           output: 'web, pdf'
 
       - title: 'Building a connector'
+        url: /doc/en/lb2/Building-a-connector.html
         output: 'web'
         subfolderitems:
-
-        - title: 'Building a connector'
-          url: /doc/en/lb2/Building-a-connector.html
-          output: 'web, pdf'
 
         - title: 'Implementing auto-migration'
           url: /doc/en/lb2/Implementing-auto-migration.html
@@ -584,12 +570,9 @@ entries:
 
       subfolders:
       - title: 'Querying data'
+        url: /doc/en/lb2/Querying-data.html
         output: 'web'
         subfolderitems:
-
-        - title: 'Querying data'
-          url: /doc/en/lb2/Querying-data.html
-          output: 'web, pdf'
 
         - title: 'Fields filter'
           url: /doc/en/lb2/Fields-filter.html
@@ -616,6 +599,7 @@ entries:
           output: 'web, pdf'
 
       - title: 'Advanced topics: data'
+        url: /doc/en/lb2/Advanced-topics-data.html
         output: 'web'
         subfolderitems:
 
@@ -654,12 +638,9 @@ entries:
 
       subfolders:
       - title: 'Adding logic to models'
+        url: /doc/en/lb2/Adding-logic-to-models.html
         output: 'web'
         subfolderitems:
-
-        - title: 'Adding logic to models'
-          url: /doc/en/lb2/Adding-logic-to-models.html
-          output: 'web, pdf'
 
         - title: 'Remote methods'
           url: /doc/en/lb2/Remote-methods.html
@@ -729,12 +710,9 @@ entries:
 
       subfolders:
       - title: 'Push notification component'
+        url: /doc/en/lb2/Push-notifications.html
         output: 'web, pdf'
         subfolderitems:
-
-        - title: 'Push notifications'
-          url: /doc/en/lb2/Push-notifications.html
-          output: 'web, pdf'
 
         - title: 'Push notifications for iOS apps'
           url: /doc/en/lb2/Push-notifications-for-iOS-apps.html
@@ -745,12 +723,9 @@ entries:
           output: 'web, pdf'
 
       - title: 'Storage component'
+        url: /doc/en/lb2/Storage-component.html
         output: 'web'
         subfolderitems:
-
-        - title: 'Storage component'
-          url: /doc/en/lb2/Storage-component.html
-          output: 'web, pdf'
 
         - title: 'Storage component REST API'
           url: /doc/en/lb2/Storage-component-REST-API.html
@@ -761,12 +736,9 @@ entries:
           output: 'web, pdf'
 
       - title: 'Passport login component'
+        url: /doc/en/lb2/Third-party-login-using-Passport.html
         output: 'web'
         subfolderitems:
-
-        - title: 'Third-party login using Passport'
-          url: /doc/en/lb2/Third-party-login-using-Passport.html
-          output: 'web, pdf'
 
         - title: 'Configuring providers.json'
           url: /doc/en/lb2/Configuring-providers.json.html
@@ -777,12 +749,9 @@ entries:
           output: 'web, pdf'
 
       - title: Synchronization component
+        url: /doc/en/lb2/Synchronization.html
         output: 'web,'
         subfolderitems:
-
-        - title: Synchronization
-          url: /doc/en/lb2/Synchronization.html
-          output: 'web, pdf'
 
         - title: 'Sync example app'
           url: /doc/en/lb2/Sync-example-app.html
@@ -865,10 +834,6 @@ entries:
         output: 'web'
         subfolderitems:
 
-        - title: 'Android SDK Overview'
-          url: /doc/en/lb2/Android-SDK.html
-          output: 'web'
-
         - title: 'Working with files using the Android SDK'
           url: /doc/en/lb2/Working-with-files-using-the-Android-SDK.html
           output: 'web, pdf'
@@ -882,12 +847,9 @@ entries:
           output: 'web, pdf'
 
       - title: 'AngularJS SDK'
+        url: /doc/en/lb2/AngularJS-JavaScript-SDK.html
         output: 'web'
         subfolderitems:
-
-        - title: 'AngularJS JavaScript SDK'
-          url: /doc/en/lb2/AngularJS-JavaScript-SDK.html
-          output: 'web, pdf'
 
         - title: 'Angular example app'
           url: /doc/en/lb2/Angular-example-app.html
@@ -906,12 +868,9 @@ entries:
           output: 'web, pdf'
 
       - title: 'Xamarin SDK'
+        url: /doc/en/lb2/AngularJS-JavaScript-SDK.html
         output: 'web'
         subfolderitems:
-
-        - title: 'Xamarin SDK Overview'
-          url: /doc/en/lb2/Xamarin-SDK.html
-          output: 'web, pdf'
 
         - title: 'Xamarin client API'
           url: /doc/en/lb2/Xamarin-client-API.html
@@ -922,12 +881,9 @@ entries:
           output: 'web, pdf'
 
       - title: 'Isomorphic LoopBack'
+        url: /doc/en/lb2/LoopBack-in-the-client.html
         output: 'web'
         subfolderitems:
-
-        - title: 'LoopBack in the client'
-          url: /doc/en/lb2/LoopBack-in-the-client.html
-          output: 'web, pdf'
 
         - title: 'Running LoopBack in the browser'
           url: /doc/en/lb2/Running-LoopBack-in-the-browser.html
@@ -956,6 +912,7 @@ entries:
 
       subfolders:
       - title: 'server directory'
+        url: /doc/en/lb2/server-directory.html
         output: 'web'
         subfolderitems:
 
@@ -980,20 +937,13 @@ entries:
           output: 'web, pdf'
 
       - title: 'common directory'
+        url: /doc/en/lb2/common-directory.html
         output: 'web'
         subfolderitems:
-
-        - title: 'common directory'
-          url: /doc/en/lb2/common-directory.html
-          output: 'web, pdf'
 
         - title: 'Model definition JSON file'
           url: /doc/en/lb2/Model-definition-JSON-file.html
           output: 'web, pdf'
-
-  - title: 'Command-line tools'
-    url: /doc/en/lb2/Command-line-tools.html
-    output: 'web, pdf'
 
   - title: 'Node reference'
     url: /doc/en/lb2/Node-reference.html
