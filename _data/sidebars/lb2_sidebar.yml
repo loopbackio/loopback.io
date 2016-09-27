@@ -344,12 +344,9 @@ entries:
 
       subfolders:
       - title: 'Built-in models REST API'
-        output: 'web'
+        url: /doc/en/lb2/Built-in-models-REST-API.html
+        output: 'web, pdf'
         subfolderitems:
-
-        - title: 'Built-in models REST API'
-          url: /doc/en/lb2/Built-in-models-REST-API.html
-          output: 'web, pdf'
 
         - title: 'PersistedModel REST API'
           url: /doc/en/lb2/PersistedModel-REST-API.html
@@ -394,12 +391,9 @@ entries:
 
       subfolders:
       - title: 'Database connectors'
-        output: 'web'
+        url: /doc/en/lb2/Database-connectors.html
+        output: 'web, pdf'
         subfolderitems:
-
-        - title: 'Database connectors overview'
-          url: /doc/en/lb2/Database-connectors.html
-          output: 'web, pdf'
 
         - title: 'Cloudant connector'
           url: /doc/en/lb2/Cloudant-connector.html
