@@ -14,28 +14,24 @@ entries:
       url: /doc/en/contrib/triaging-pull-requests.html
       output: web, pdf
 
-    folderitems:
     - title: Git commit message guidelines
       url: /doc/en/contrib/git-commit-messages.html
       output: web, pdf
 
-    folderitems:
     - title: Using ESLint
       url: /doc/en/contrib/eslint-guide.html
       output: web, pdf
 
-    folderitems:
-    - title:
+    - title: Code style guide
       url: /doc/en/contrib/style-guide.html
       output: web, pdf
 
-    folderitems:
-    - title:
+    - title: Functional area owners
       url: /doc/en/contrib/functional-area-owners.html
       output: web, pdf
 
-  - title: Overview
-    url: /doc/en/contrib/index.html
+  - title: Contributing to docs
+    url: /doc/en/contrib/doc-contrib.html
     output: web, pdf
 
     folderitems:

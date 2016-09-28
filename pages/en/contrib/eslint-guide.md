@@ -17,7 +17,7 @@ To make reviews easier, it is encouraged to send three separate commits:
 - [Auto-update by ESLint --fix](#auto-update-by-eslint---fix)
 - [Fix linting errors](#fix-linting-errors)
 
-###Add ESLint infrastructure
+## Add ESLint infrastructure
 
 *Refer to [this commit](https://github.com/strongloop/strong-remoting/pull/288/commits/17b3bc3e7c17d1595dab1422c1052f8d90d2c27f) for an example*
 
@@ -46,7 +46,7 @@ To make reviews easier, it is encouraged to send three separate commits:
 
 Commit with message `Add eslint infrastructure`
 
-###Auto-update by eslint --fix
+## Auto-update by eslint --fix
 
 Once `eslint` infrastructure is setup, following steps will eliminate most linting errors, such as comma-dangle errors, automatically:
 
@@ -57,7 +57,7 @@ Once `eslint` infrastructure is setup, following steps will eliminate most linti
 Above command will auto-fix linting errors as per linter rules and will also show the errors it didn't fix.
 Commit these changes with message: `Auto-update by eslint --fix`
 
-###Fix linting errors
+## Fix linting errors
 
 _When fixing errors, **DO NOT** change the original code because you might break things and it makes it harder for us to review! If you must change logic, do them in a **SEPARATE** PR._
 

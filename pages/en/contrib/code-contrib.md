@@ -14,4 +14,4 @@ The LoopBack project welcomes code contributions.  Here are some guidelines and 
 - [Coding style guide](style-guide.html)
 - [Git commit message guidelines](git-commit-messages.html)
 - [Using ESLint with LoopBack](eslint-guide.html)
-- []()
+- [Functional area owners](functional-area-owners.html)

@@ -20,7 +20,7 @@ topnav_dropdowns:
           url: /doc/en/lb2/
         - title: Community projects
           url: /doc/community/
-        - title: Contributing to documentation
+        - title: Contributing to LoopBack
           url: /doc/en/contrib/
     - title: Resources
       folderitems:
