@@ -93,7 +93,16 @@ Every model attached to a persistent data source has validations methods mixed i
   </tbody>
 </table>
 
-Use these methods to perform specific data validation; for example:
+Use these methods to perform specific data validation, as shown in the examples below.
+
+### Options object
+
+Most of the validation methods accept an `options` argument whose properties depend on the specific method being used; however it does have two properties common to all the methods:
+
+- `message` - Error message to use instead of the default message, if validation fails.
+- `allowNull` - Whether null values are allowed.
+
+### Examples
 
 {% include code-caption.html content="common/models/user.js" %}
 ```javascript
