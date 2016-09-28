@@ -17,6 +17,6 @@ entries:
     url: /doc/community/index.html
     output: web
 
-  - title: Contributing to documentation
+  - title: Contributing to LoopBack
     url: /doc/en/contrib/index.html
     output: web

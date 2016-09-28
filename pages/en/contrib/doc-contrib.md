@@ -23,6 +23,19 @@ that links to the page in the GitHub repo.
 - [GitHub repo for Jekyll Documentation Theme](https://github.com/tomjohnson1492/documentation-theme-jekyll)
 - [Current LoopBack docs in Confluence](http://docs.strongloop.com)
 
+## What to work on
+
+We use GitHub issues to track tasks and bugs.  In general:
+
+- For issues around documentation _content_ (that is the actual information), open an issue in the relevant repository, such as `loopback`, `loopback-datasource-juggler`, `loopback-connector-xxx`, and so on.
+- For issue around the documentation site, layout, or UX, [open an issue in the loopback.io repository](https://github.com/strongloop/loopback.io/issues/new).
+
+It's best practice to search first to make sure someone else hasn't already logged your issue.
+Run these helpful GitHub queries to see open documentation issues:
+
+- [Open documentation issues](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3Adoc+org%3Astrongloop+) in any strongloop repository.
+- [Open issues labeled "needs doc"](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3Aneeds-doc+org%3Astrongloop+) - these are typically code issues that need to be documented, as opposed to specific doc tasks/problems.
+
 ## Formatting examples
 
 Here are some simple examples of common formatting.
