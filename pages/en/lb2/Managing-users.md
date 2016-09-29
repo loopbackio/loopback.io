@@ -33,6 +33,8 @@ LoopBack's built-in [User](http://apidocs.strongloop.com/loopback/#user-new-user
 You must create your own custom model (named something other than \"User,\" for example \"Customer\" or \"Client\")
 that [extends the built-in User model](Extending-built-in-models.html) rather than use the built-in User model directly.
 The built-in User model provides a great deal of commonly-used functionality that you can use via your custom model.
+
+In addition, LoopBack does not support multiple models based on the User model in a single application. That is, you cannot have more than one model derived from the built-in User model in a single app.
 " %}
 
 Watch this video for an introduction to user management in LoopBack:
