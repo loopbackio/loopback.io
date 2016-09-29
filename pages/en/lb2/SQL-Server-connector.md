@@ -105,9 +105,9 @@ see [node-mssql documentation](https://github.com/patriksimek/node-mssql#config
     </tr>
     <tr>
       <td>schema</td>
+      <td>String</td>
       <td>dbo</td>
       <td>Database schema</td>
-      <td>&nbsp;</td>
     </tr>
     <tr>
       <td>url</td>
