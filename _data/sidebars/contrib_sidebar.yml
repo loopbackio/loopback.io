@@ -1,141 +1,138 @@
-entries:
-- title: sidebar
-  product: Contributing to LoopBack
-  version:
-  home_url: /doc/en/contrib/index.html
-  folders:
+title: Contributing to LoopBack
+url: /doc/en/contrib/index.html
+children:
 
-  - title: Contributing code
-    url: /doc/en/contrib/code-contrib.html
+- title: Contributing code
+  url: /doc/en/contrib/code-contrib.html
+  output: web, pdf
+
+  children:
+  - title: Triaging pull requests
+    url: /doc/en/contrib/triaging-pull-requests.html
     output: web, pdf
 
-    folderitems:
-    - title: Triaging pull requests
-      url: /doc/en/contrib/triaging-pull-requests.html
-      output: web, pdf
-
-    - title: Git commit message guidelines
-      url: /doc/en/contrib/git-commit-messages.html
-      output: web, pdf
-
-    - title: Using ESLint
-      url: /doc/en/contrib/eslint-guide.html
-      output: web, pdf
-
-    - title: Code style guide
-      url: /doc/en/contrib/style-guide.html
-      output: web, pdf
-
-    - title: Functional area owners
-      url: /doc/en/contrib/functional-area-owners.html
-      output: web, pdf
-
-  - title: Contributing to docs
-    url: /doc/en/contrib/doc-contrib.html
+  - title: Git commit message guidelines
+    url: /doc/en/contrib/git-commit-messages.html
     output: web, pdf
 
-    folderitems:
-    - title: Getting started with Jekyll
-      url: /doc/en/contrib/jekyll_getting_started.html
-      output: web, pdf
-
-  - title: Authoring pages
-    url: /doc/en/contrib/pages.html
+  - title: Using ESLint
+    url: /doc/en/contrib/eslint-guide.html
     output: web, pdf
 
-    folderitems:
-    - title: Conditional logic
-      url: /doc/en/contrib/conditional_logic.html
-      output: web, pdf
-
-    - title: Content reuse
-      url: /doc/en/contrib/content_reuse.html
-      output: web, pdf
-
-  - title: Navigation
-    url: /doc/en/contrib/navigation.html
+  - title: Code style guide
+    url: /doc/en/contrib/style-guide.html
     output: web, pdf
 
-    folderitems:
-    - title: Sidebar navigation
-      url: /doc/en/contrib/sidebar_navigation.html
-      output: web, pdf
-
-    - title: Tags
-      url: /doc/en/contrib/tags.html
-      output: web, pdf
-
-    - title: Series
-      url: /doc/en/contrib/series.html
-      output: web, pdf
-
-  - title: Formatting
-    url: /doc/en/contrib/formatting.html
+  - title: Functional area owners
+    url: /doc/en/contrib/functional-area-owners.html
     output: web, pdf
 
-    folderitems:
-    - title: Alerts
-      url: /doc/en/contrib/alerts.html
-      output: web, pdf
+- title: Contributing to docs
+  url: /doc/en/contrib/doc-contrib.html
+  output: web, pdf
 
-    - title: Images
-      url: /doc/en/contrib/images.html
-      output: web, pdf
-
-    - title: Code samples
-      url: /doc/en/contrib/code_samples.html
-      output: web, pdf
-
-    - title: Tooltips
-      url: /doc/en/contrib/adding_tooltips.html
-      output: web, pdf
-
-    - title: Icons
-      url: /doc/en/contrib/icons.html
-      output: web, pdf
-
-    - title: Links
-      url: /doc/en/contrib/hyperlinks.html
-      output: web, pdf
-
-    - title: Navtabs
-      url: /doc/en/contrib/navtabs.html
-      output: web, pdf
-
-    - title: Tables
-      url: /doc/en/contrib/tables.html
-      output: web, pdf
-
-    - title: Syntax highlighting
-      url: /doc/en/contrib/syntax_highlighting.html
-      output: web, pdf
-
-  - title: Review comments
-    url: /doc/en/contrib/commenting_on_files.html
+  children:
+  - title: Getting started with Jekyll
+    url: /doc/en/contrib/jekyll_getting_started.html
     output: web, pdf
 
-  - title: Special layouts
-    url: /doc/en/contrib/layouts.html
+- title: Authoring pages
+  url: /doc/en/contrib/pages.html
+  output: web, pdf
+
+  children:
+  - title: Conditional logic
+    url: /doc/en/contrib/conditional_logic.html
     output: web, pdf
 
-    folderitems:
-    - title: Glossary layout
-      url: /doc/en/contrib/glossary.html
-      output: web, pdf
-
-    - title: FAQ layout
-      url: /doc/en/contrib/faq_layout.html
-      output: web, pdf
-
-  - title: Translation
-    url: /doc/en/contrib/translation.html
+  - title: Content reuse
+    url: /doc/en/contrib/content_reuse.html
     output: web, pdf
 
-    folderitems:
-    - title: Adding a new language
-      url: /doc/en/contrib/Adding_a_new_language.html
-      output: web, pdf
+- title: Navigation
+  url: /doc/en/contrib/navigation.html
+  output: web, pdf
 
-    - title: Translating articles
-      url: /doc/en/contrib/Translating_articles.html
-      output: web, pdf
+  children:
+  - title: Sidebar navigation
+    url: /doc/en/contrib/sidebar_navigation.html
+    output: web, pdf
+
+  - title: Tags
+    url: /doc/en/contrib/tags.html
+    output: web, pdf
+
+  - title: Series
+    url: /doc/en/contrib/series.html
+    output: web, pdf
+
+- title: Formatting
+  url: /doc/en/contrib/formatting.html
+  output: web, pdf
+
+  children:
+  - title: Alerts
+    url: /doc/en/contrib/alerts.html
+    output: web, pdf
+
+  - title: Images
+    url: /doc/en/contrib/images.html
+    output: web, pdf
+
+  - title: Code samples
+    url: /doc/en/contrib/code_samples.html
+    output: web, pdf
+
+  - title: Tooltips
+    url: /doc/en/contrib/adding_tooltips.html
+    output: web, pdf
+
+  - title: Icons
+    url: /doc/en/contrib/icons.html
+    output: web, pdf
+
+  - title: Links
+    url: /doc/en/contrib/hyperlinks.html
+    output: web, pdf
+
+  - title: Navtabs
+    url: /doc/en/contrib/navtabs.html
+    output: web, pdf
+
+  - title: Tables
+    url: /doc/en/contrib/tables.html
+    output: web, pdf
+
+  - title: Syntax highlighting
+    url: /doc/en/contrib/syntax_highlighting.html
+    output: web, pdf
+
+- title: Review comments
+  url: /doc/en/contrib/commenting_on_files.html
+  output: web, pdf
+
+- title: Special layouts
+  url: /doc/en/contrib/layouts.html
+  output: web, pdf
+
+  children:
+  - title: Glossary layout
+    url: /doc/en/contrib/glossary.html
+    output: web, pdf
+
+  - title: FAQ layout
+    url: /doc/en/contrib/faq_layout.html
+    output: web, pdf
+
+- title: Translation
+  url: /doc/en/contrib/translation.html
+  output: web, pdf
+
+  children:
+  - title: Adding a new language
+    url: /doc/en/contrib/Adding_a_new_language.html
+    output: web, pdf
+
+  - title: Translating articles
+    url: /doc/en/contrib/Translating_articles.html
+    output: web, pdf

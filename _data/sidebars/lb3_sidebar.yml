@@ -1,22 +1,19 @@
-entries:
-- title: sidebar
-  product: LoopBack
-  version: 3.0
-  home_url: /doc/en/lb3/index.html
-  folders:
+title: LoopBack 3.0
+url: /doc/en/lb3/index.html
+children:
 
-  - title: 'LoopBack 3.0'
-    url: /doc/en/lb3/index.html
-    output: 'web, pdf'
+- title: 'LoopBack 3.0'
+  url: /doc/en/lb3/index.html
+  output: 'web, pdf'
 
-  - title: '3.0 Release Notes'
-    url: /doc/en/lb3/3.0-Release-Notes.html
-    output: 'web, pdf'
+- title: '3.0 Release Notes'
+  url: /doc/en/lb3/3.0-Release-Notes.html
+  output: 'web, pdf'
 
-  - title: 'Migrating apps to LoopBack 3.0'
-    url: /doc/en/lb3/Migrating-to-3.0.html
-    output: 'web, pdf'
+- title: 'Migrating apps to LoopBack 3.0'
+  url: /doc/en/lb3/Migrating-to-3.0.html
+  output: 'web, pdf'
 
-  - title: 'Operation hooks (version 3.0)'
-    url: /doc/en/lb3/Operation-hooks-version-3.0.html
-    output: 'web, pdf'
+- title: 'Operation hooks (version 3.0)'
+  url: /doc/en/lb3/Operation-hooks-version-3.0.html
+  output: 'web, pdf'
