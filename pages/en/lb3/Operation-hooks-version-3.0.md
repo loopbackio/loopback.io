@@ -703,7 +703,7 @@ The `before delete` hook is triggered before a model is removed from a dataso
 
 {% include important.html content="
 The `before delete` operation hook does not receive a list of deleted model instance IDs, because backend data stores such as relational or NoSQL databases don't provide this information.
-However, _when deleting a single model instance_ the hook receives `ctx.instance` that contains the instance being deleted.
+However, _when deleting a single model instance_ hook receives `ctx.where` that contains the `id` of the instance being deleted.
 " %}
 
 Context properties
@@ -742,7 +742,7 @@ if (subscriptions.length > 0) {
 
 {% include important.html content="
 The `after delete` operation hooks do not receive a list of deleted model instance IDs, because backend data stores such as relational or NoSQL databases don't provide this information.
-However, _when deleting a single model instance_ the hook receives `ctx.instance` that contains the instance being deleted.
+However, _when deleting a single model instance_ hook receives `ctx.where` that contains the `id` of the instance being deleted.
 " %}
 
 The `after delete` hook is triggered after some models are removed from the datasource, specifically when the following methods of PersistedModel are called:

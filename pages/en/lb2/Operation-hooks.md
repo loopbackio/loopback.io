@@ -582,21 +582,21 @@ Depending on which method triggered this hook, the context will have one of the 
 * `instance` - the model instance that was saved. The value is an instance of `Model` class and contains updated values computed by datastore (for example, auto-generated ID).
 
 {% include note.html content="
-The after save hook returns the changes made to `ctx.instance` to the caller (REST client), but does not persist them to the database!" %}
+The after save hook returns the changes made to `ctx.instance` to the caller (REST client), but does not persist them to the database!
+" %}
 
 * Partial update of more model instances via `Model.updateAll`:
 * `Model` - the constructor of the model that will be saved.
 * `where` - the where filter describing which instances were queried. See caveat below.
 * `data`- the (partial) data applied during the update. 
 
-{% include important.html content="
 You cannot reliably use the \"where\" query in an after save hook to find which models were affected. Consider the following call:
 
 ```javascript
 MyModel.updateAll({ color: 'yellow' }, { color: 'red' }, cb);
 ```
 
-At the time the \"after save\" hook is run, no records will match the query `{ color: 'yellow' }`." %}
+At the time the \"after save\" hook is run, no records will match the query `{ color: 'yellow' }`.
 
 The `after save` hook provides the `ctx.isNewInstance` property whenever `ctx.instance` is set, with the following values:
 
@@ -685,7 +685,7 @@ if (subscriptions.length > 0) {
 
 {% include important.html content="
 The `after delete` operation hooks do not receive a list of deleted model instance IDs, because backend data stores such as relational or
-NoSQL databases don't provide this information. However, _when deleting a single model instance_ the hook receives `ctx.instance` that contains the instance being deleted.
+NoSQL databases don't provide this information. However, _when deleting a single model instance_ the hook receives `ctx.where` that contains the `id` of the instance being deleted.
 " %}
 
 The `after delete` hook is triggered after some models are removed from the datasource, specifically when the following methods of PersistedModel are called:
