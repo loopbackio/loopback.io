@@ -659,6 +659,7 @@ ol.series li {
 
 .nav > li > a + a {
   margin-left:1em;
+  padding-left:10px;
 }
 
 li.tree-parent{
