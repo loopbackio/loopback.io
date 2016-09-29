@@ -1,25 +1,22 @@
-entries:
-- title: sidebar
-  product: LoopBack community projects
-  version:
-  folders:
+title: LoopBack community projects
+children:
+
+- title: 'Community projects'
+  output: 'web'
+  children:
 
   - title: 'Community projects'
+    url: /doc/en/community/index.html
     output: 'web'
-    folderitems:
 
-    - title: 'Community projects'
-      url: /doc/en/community/index.html
-      output: 'web'
-
-    - title: 'How to add a project'
-      url: /doc/en/community/How-to-add-a-project.html
-      output: 'web'
-
-  - title: 'Active projects'
+  - title: 'How to add a project'
+    url: /doc/en/community/How-to-add-a-project.html
     output: 'web'
-    folderitems:
 
-    - title: 'Sample project'
-      url: /doc/en/community/Sample-project.html
-      output: 'web'
+- title: 'Active projects'
+  output: 'web'
+  children:
+
+  - title: 'Sample project'
+    url: /doc/en/community/Sample-project.html
+    output: 'web'

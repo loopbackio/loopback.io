@@ -1,22 +1,19 @@
-entries:
-- title: Sidebar
-  product: LoopBack
-  home_url: /doc/index.html
-  levels: one
-  folders:
+title: LoopBack
+url: /doc/index.html
+children:
 
-  - title: LoopBack 3.0
-    url: /doc/en/lb3/index.html
-    output: web
+- title: LoopBack 3.0
+  url: /doc/en/lb3/index.html
+  output: web
 
-  - title: LoopBack 2.x
-    url: /doc/en/lb2/index.html
-    output: web
+- title: LoopBack 2.x
+  url: /doc/en/lb2/index.html
+  output: web
 
-  - title: Community projects
-    url: /doc/community/index.html
-    output: web
+- title: Community projects
+  url: /doc/community/index.html
+  output: web
 
-  - title: Contributing to LoopBack
-    url: /doc/en/contrib/index.html
-    output: web
+- title: Contributing to LoopBack
+  url: /doc/en/contrib/index.html
+  output: web
