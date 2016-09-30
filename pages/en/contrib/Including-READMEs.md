@@ -1,7 +1,7 @@
 ---
-title: Including READMEs
+title: Including READMEs from other repositories
 keywords: LoopBack documentation
-tags:
+tags: [community, contributing]
 sidebar: contrib_sidebar
 permalink: /doc/en/contrib/Including-READMEs.html
 summary:

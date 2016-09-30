@@ -35,7 +35,7 @@ Edit it as follows:
 ...    
 ```
 6. Add to `_data/topnav.yml` (under the `title: Translations` list)
-7. Ensure all pages have the proper front matter; for example:
+7. Ensure all translated pages have the proper front matter; for example:
 
 ```
 lang: xx
@@ -46,10 +46,13 @@ sidebar: xx_lb2_sidebar
 permalink: /doc/xx/lb2/Access-token-REST-API.html
 ```
 
-Note the `translated` layout.  This adds the translation disclaimer at the top of the page.
+Note the `translation` layout.  This adds the translation disclaimer at the top of the page.
 
 {% include note.html content="If you add any new \"stub\" pages (pages that are not fully translated), also add `trans_complete: false` in the front matter.
 " %}
+
+Best practices is _not_ to include untranslated pages, except for the `index.md` "front page"; even if you 
+haven't translated this page, you can include some text in the target language stating that translation into this language is underway.
 
 ## Importing existing translations
 
