@@ -1,6 +1,5 @@
 ---
 title: Reporting issues
-toc: false
 keywords: LoopBack community
 tags: [getting_started]
 sidebar: contrib_sidebar
@@ -8,28 +7,24 @@ permalink: /doc/en/contrib/Reporting-issues.html
 summary: This is a guide on what to do when you run into issues while using LoopBack.
 ---
 
+Follow the procedure outlined here when reporting issues with the LoopBack project.
+
 {% include important.html content="
 DO NOT post questions using GitHub issues
 
 Questions posted to GitHub issues will be closed IMMEDIATELY as we only accept feature requests and bug reports there.  Instead, ask your question on the [LoopBack Google Group](https://groups.google.com/forum/#!forum/loopbackjs),   [StackOverflow](http://stackoverflow.com/questions/tagged/loopbackjs+or+strongloop?sort=newest&pageSize=50), or [Gitter](https://gitter.im/strongloop/loopback)
 
-Posting to Google Group or SO is best so others may benefit.
-" %}"
+Posting to Google Group is preferred so others may benefit.
+" %}
 
-This is a guide on how to report issues with LoopBack.
-
-1. [Determine the issue type](#1-determine-the-issue-type)
-1. [Report the issue using an appropriate channel](#2-report-the-issue-using-an-appropriate-channel)
-1. [Wait for a response](#3-wait-for-a-response)
-
-##1. Determine the issue type
+## 1. Determine the issue type
 
 There are three types of issues:
 - Questions - Please post to the [developer forum (Google Group)](https://groups.google.com/forum/#!forum/loopbackjs) instead.
 - [Feature/enhancement request](#featureenhancement-request)
 - [Bug report](#bug-report)
 
-## Security issues
+### Security issues
 
 Do not report security vulnerabilities using GitHub issues. Please send an email to `callback@ibm.com` with:
 
@@ -43,7 +38,7 @@ Open a new GitHub issue at https://github.com/strongloop/loopback/issues.
 
 For feature/enhancement requests related to specific LoopBack dependencies (for example, `loopback-connector-mysql`), please create an issue in the repository itself (for example,  https://github.com/strongloop/loopback-connector-mysql/issues).
 
-###Bug report
+### Bug report
 
 To report a bug:
 
@@ -59,13 +54,13 @@ We recommend forking with STR in order to leverage community support in reproduc
 
 For  bug reports related to specific LoopBack dependencies (for example, `loopback-connector-mysql`), please create an issue in the repository itself (for example,  https://github.com/strongloop/loopback-connector-mysql/issues).
 
-##2. Report the issue using an appropriate channel
+## 2. Report the issue using an appropriate channel
 
 We officially support multiple channels for specific purposes. Please choose the **SINGLE** most appropriate channel to report your issue to.
 
 > Please try to post issues to the correct repository (for example, boot-related issues to `loopback-boot`, REST and remoting-related issues to `strong-remoting`, and so on). If you cannot determine which project to report the issue to, post the issue in the LoopBack repository itself.
 
-##3. Wait for a response
+## 3. Wait for a response
 
 We actively monitor the officially supported channels and generally respond as soon as possible. If you haven't received a response from us within two days, please remind us on [Google Groups](https://groups.google.com/forum/#!forum/loopbackjs) or ping us on [Gitter](https://gitter.im/strongloop/loopback).
 
