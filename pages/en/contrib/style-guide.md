@@ -1,5 +1,5 @@
 ---
-title: Coding style guide
+title: Code style guide
 toc: false
 tags: [contributing, community]
 keywords:

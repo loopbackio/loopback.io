@@ -18,8 +18,7 @@ You can contribute in a number of ways:
 * Ensure that your effort is aligned with the project's roadmap by
   talking to the maintainers, especially if you are going to spend a
   lot of time on it.
-* Adhere to code style outlined in the [Google C++ Style Guide][] and
-  [Google Javascript Style Guide][].
+* Adhere to code style outlined in the [style guide](style-guide.html).
 * [Sign your patches](#signing-patches) to indicate that your are
   making your contribution available under the terms of the
   [Contributor License Agreement](#contributor-license-agreement).
@@ -75,7 +74,7 @@ npm test
 
 If a test is failing, open an issue on the appropriate repositories GitHub issues page.
 
-### Signing patches
+## Agreeing to the CLA
 
 Like many open source projects, we need you to agree to a [contributor license agreement](https://github.com/strongloop/loopback/blob/master/CONTRIBUTING.md#contributor-license-agreement)
 before we can merge in your changes.
@@ -93,6 +92,8 @@ the use of free software without clear agreements around code ownership.
 That's why many open source projects collect similar agreements from
 contributors. The LoopBack CLA is based on the Apache CLA.
 
+### Signing your contributions
+
 To signify your agreement to these terms, add the following line to the
 bottom of your commit message. Use your real name and an actual e-mail
 address.
@@ -101,9 +102,9 @@ address.
 Signed-off-by: Random J Developer <random@developer.example.org>
 ```
 
-Alternatively you can use the git command line to automatically add this
+Alternatively you can use the `-s` option with the git `commit` command to automatically add a "signed-off by"
 line, as follows:
 
 ```
-$ git commit -sm "Replace rainbows by unicorns"
+$ git commit -sm "This is the commit message"
 ```
