@@ -1,6 +1,6 @@
 ---
 title: LoopBack Documentation
-toc: false
+layout: page-no-toc
 keywords: homepage
 tags: [getting_started]
 sidebar: home_sidebar
@@ -19,17 +19,19 @@ This site contains documentation for:
 
 - [LoopBack 2.x](en/lb2) - Current release
 - [LoopBack 3.0](en/lb3) - Upcoming release.
-- [Contributing to LoopBack docs](en/contrib/) - How you can contribute to the docs.
+- [Contributing to LoopBack](en/contrib/) - How you can contribute to the LoopBack project.
 - [Community projects](en/community) - Where Loopback developers can promote and explain their LoopBack-related  projects.
 
 ## LoopBack
 
+{% include styled-box.html content="
 LoopBack is a highly-extensible, open-source Node.js framework that enables you to:
 
 - Create dynamic end-to-end REST APIs with little or no coding.
 - Access data from major relational databases, MongoDB, SOAP and REST APIs.
 - Incorporate model relationships and access controls for complex APIs.
 - Separable components for file storage, third-party login, and OAuth 2.0.
+" %}
 
 ## Background: New documentation site
 

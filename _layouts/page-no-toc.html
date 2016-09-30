@@ -30,8 +30,14 @@ layout: default
 
     {{content}}
 
+      {% if page.keywords == 'homepage' %}
+        {% assign edit_url = "strongloop/loopback.io/blob/gh-pages/doc/index.md" %}
+      {% else %}
+        {% assign edit_url =  page.url | remove: "/doc" | remove: ".html" | append: ".md" | prepend: site.github_editme_path %}
+      {% endif %}
+
       {% if site.github_editme_path %}
-          <a target="_blank" href="https://github.com/{{site.github_editme_path}}{{page.url | remove: "/doc" | remove: ".html" | append: ".md"}}" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit this page</a>
+          <a target="_blank" href="https://github.com/{{edit_url}}" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit this page</a>
       {% endif %}
 
     <div class="tags">
