@@ -4,9 +4,9 @@
   {% if item.output contains "web" %}
   <li class="{% if item.children.size > 0 %} tree-parent {% endif %} {% if page.url == item.url %}active{% endif %}">
     {% if item.children.size > 0 %} <a class="show-hide" href="#"></span> {% endif %}
-    <a href="{{item.url}}">{{ item.title }}</a>
+    <a class="page-link" href="{{item.url}}">{{ item.title }}</a>
       {% if item.children.size > 0 %}
-      <ul class="nav nav-list">
+      <ul class="nav-list">
           {% include sidebar_menu_list_items.liquid menuitems=item.children %}
       </ul>
       {% endif %}

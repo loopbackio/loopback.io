@@ -637,56 +637,71 @@ ol.series li {
 }
 
 /* tree nav */
-.nav-list{
-  padding-left: 1em;
-}
+
 #mysidebar {
   display:block;
+}
+
+#mysidebar ul {
+  list-style: none;
+  margin-left:1em;
+}
+
+ul#mysidebar, #mysidebar ul{
+  list-style: none;
+  padding-left:0;
+} 
+
+#mysidebar li{
+  margin-top:.1em;
+  line-height:1.1em;
+}
+
+#mysidebar li > a{
+    display: block;
+}
+
+#mysidebar .page-link{
+  padding: 3px 5px;
+  border-radius:5px;
+}
+
+#mysidebar .tree-parent>.page-link {
+  margin-left: 1em;
+}
+
+#mysidebar .show-hide{
+  float:left;
+  width:.8em;
+  padding-left:.3em;
 }
 
 .tree-parent.expanded .nav-list{
   display:block;
 }
 
-#mysidebar .nav li {
-  margin-left:1em;
-}
-
-.nav > li > a {
-  padding:2px;
-  border-radius:10px;
-}
-
-.nav > li > a + a {
-  margin-left:1em;
-  padding-left:10px;
-}
-
-li.tree-parent{
-  margin-left:-1em;
-  padding-left:1em;
-}
-
-li.tree-parent a.show-hide{
-  width:1em;
-  float: left;
-}
-.nav > li.active > a.show-hide,
-.nav > li > a.show-hide:hover,
-.nav > li > a.show-hide:active{
+#mysidebar li.active a.show-hide,
+#mysidebar a.show-hide:hover,
+#mysidebar a.show-hide:active{
   background:none;
   border:none;
+  text-decoration: none;
 }
 
-.nav > li.active > a,
-.nav > li> a:hover{
-  background-color: lightblue;
+#mysidebar li.active>a.page-link,
+#mysidebar a.page-link:hover{
+  background: lightblue;
+  text-decoration: none;
 }
 
-li.tree-parent>a.show-hide::before{
+li.tree-parent.expanded {
+  background: linear-gradient(to right, white, white 4px, lightgray 4px, lightgray 10px, white 10px, white);
+}
+
+#mysidebar a.show-hide::before{
   content: "+";
 }
-li.tree-parent.expanded>a.show-hide::before{
+#mysidebar .expanded>a.show-hide::before{
   content: "-";
 }
 /* */
