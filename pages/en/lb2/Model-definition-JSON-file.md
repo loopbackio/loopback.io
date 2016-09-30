@@ -420,7 +420,7 @@ var InventoryDefinition = { 
 
 The composite ID is (productId, locationId) for an inventory model.
 
-{% include important.html content="Composite IDs are not currently supported as query parameters in REST APIs.
+{% include important.html content="Composite IDs are not currently supported as query parameters in REST APIs and DAO methods like `findOrCreate`, `updateOrcreate` and `replaceOrCreate`.
 " %}
 
 ### Data mapping properties
