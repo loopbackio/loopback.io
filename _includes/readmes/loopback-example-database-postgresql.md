@@ -5,7 +5,7 @@ A tutorial for basic database related features.
 - [Overview](#overview)
 - [Prerequisites](#prerequisites)
 - [Running the example](#running-the-example)
-- [Tutorial - MySQL](#tutorial---postgresql)
+- [Tutorial - PostgreSQL](#tutorial---postgresql)
 
 ## Overview
 
