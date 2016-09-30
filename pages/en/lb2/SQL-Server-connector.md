@@ -16,7 +16,8 @@ summary:
 * [loopback-example-database](https://github.com/strongloop/loopback-example-database/tree/mssql)
 * [Database discovery API](http://apidocs.strongloop.com/loopback-datasource-juggler/#datasource-prototype-discoverandbuildmodels)
 
-{% include note.html content="The SQL Server connector requires SQL Server 2005+." %}
+{% include note.html content="The SQL Server connector requires SQL Server 2005+.
+" %}
 
 ## Installation
 
