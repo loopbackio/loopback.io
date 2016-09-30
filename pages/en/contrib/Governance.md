@@ -1,7 +1,7 @@
 ---
 title: Governance
 keywords: LoopBack community
-tags: [community]
+tags: [contributing, community]
 sidebar: contrib_sidebar
 permalink: /doc/en/contrib/Governance.html
 summary: The LoopBack project governance model follows the spirit and tradition of open source by embracing consensus, forking, and individual ownership.

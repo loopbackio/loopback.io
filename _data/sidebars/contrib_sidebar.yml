@@ -6,29 +6,29 @@ children:
   url: /doc/en/contrib/Governance.html
   output: web, pdf
 
+- title: Reporting issues
+  url: /doc/en/contrib/Reporting-issues.html
+  output: web, pdf
+
 - title: Contributing code
   url: /doc/en/contrib/code-contrib.html
   output: web, pdf
-
   children:
-  - title: Reporting issues
-    url: /doc/en/contrib/Reporting-issues.html
-    output: web, pdf
 
-  - title: Triaging pull requests
-    url: /doc/en/contrib/triaging-pull-requests.html
-    output: web, pdf
-
-  - title: Git commit message guidelines
-    url: /doc/en/contrib/git-commit-messages.html
+  - title: Code style guide
+    url: /doc/en/contrib/style-guide.html
     output: web, pdf
 
   - title: Using ESLint
     url: /doc/en/contrib/eslint-guide.html
     output: web, pdf
 
-  - title: Code style guide
-    url: /doc/en/contrib/style-guide.html
+  - title: Git commit message guidelines
+    url: /doc/en/contrib/git-commit-messages.html
+    output: web, pdf
+
+  - title: Triaging pull requests
+    url: /doc/en/contrib/triaging-pull-requests.html
     output: web, pdf
 
   - title: Functional area owners
@@ -44,7 +44,7 @@ children:
     url: /doc/en/contrib/jekyll_getting_started.html
     output: web, pdf
     children:
-      
+
     - title: Including READMEs
       url: /doc/en/contrib/Including-READMEs.html
       output: web, pdf

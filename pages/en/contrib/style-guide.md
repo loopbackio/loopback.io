@@ -1,5 +1,6 @@
 ---
 title: Coding style guide
+toc: false
 tags: [contributing, community]
 keywords:
 last_updated: Sept 27, 2016
@@ -13,6 +14,13 @@ Style conventions for this document:
  - For each rule, provide examples of what's good and what's bad - use level4 heading `##### Good` and `##### Bad`
  - level3 headings are reserved to subsections within rules, e.g. `#### Exceptions`
 -->
+
+{% include see-also.html content="
+- [Google C++ Style Guide](https://google.github.io/styleguide/cppguide.html)
+- [Google Javascript Style Guide](https://google.github.io/styleguide/javascriptguide.xml)
+" %}
+
+{% include toc.html %}
 
 ## General guidelines
 
@@ -498,8 +506,3 @@ context('Model', function() {
   ...
 });
 ```
-
-## See also
-
-- [Google C++ Style Guide]: https://google-styleguide.googlecode.com/svn/trunk/cppguide.xml
-- [Google Javascript Style Guide]: https://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml

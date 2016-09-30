@@ -73,11 +73,11 @@ All LoopBack projects follow the same convention for running tests. To run a pro
 npm test
 ```
 
-If a test is failing, you should open an issue on the appropriate repositories GitHub issues page.
+If a test is failing, open an issue on the appropriate repositories GitHub issues page.
 
-#### Signing patches
+### Signing patches
 
-Like many open source projects, we need you to agree to a contributor license agreement
+Like many open source projects, we need you to agree to a [contributor license agreement](https://github.com/strongloop/loopback/blob/master/CONTRIBUTING.md#contributor-license-agreement)
 before we can merge in your changes.
 
 In summary, by submitting your code, you are granting us a right to use
