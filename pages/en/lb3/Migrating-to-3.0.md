@@ -96,6 +96,40 @@ Building on the error message shown above, you would have to change
 }
 ```
 
+## PUT methods perform full replace now
+
+In LoopBack 3.0, `PUT` endpoints no longer perform a partial update (a patch operation),
+but replace the model instance as whole. If your application is relying on
+partial updates, then you have two migration strategies available:
+
+For short-term, disable the model setting `replaceOnPUT` in your models
+affected by this change. For example, if you have a model `MyModel`, then you
+can change `common/models/my-model.json` as follows:
+
+```json
+{
+  "name": "MyModel",
+  "replaceOnPUT": false,
+  "properties": {
+    "etc."
+  }
+}
+```
+
+In longer term, please rework your clients to switch from `PUT` to
+`PATCH` endpoints, as the option `replaceOnPUT` is likely to be removed
+in a future major version of LoopBack.
+
+If you are writing client code that should work with both major versions
+of LoopBack, then you can use the following HTTP endpoints:
+
+Method | Endpoint
+-|-
+replaceOrCreate | `POST /customers/replaceOrCreate`
+replaceById | `POST /customers/:id/replace`
+updateOrCreate | `PATCH /customers`
+prototype.updateAttributes | `PATCH /customers/:id`
+
 ## Unused `User` properties were removed
 
 We have removed the following properties of the built-in `User` model that
@@ -334,6 +368,24 @@ deprecation warning.
 In this final section, we describe changes that affect only advanced usage
 of LoopBack an its internal components. Instructions described in this section
 are not applicable to typical LoopBack applications.
+
+### Use loopback-boot instead of `loopback.autoAttach`
+
+We have removed `loopback.autoAttach` method and `defaultForType` datasource
+option in LoopBack 3.0. We recommend application developers to use our
+convention-based bootstrapper module
+[loopback-boot](https://www.npmjs.com/package/loopback-boot).
+
+Alternatively, you can modify your code to explicitly attach all models to
+appropriate datasources. For example:
+
+```js
+var MyModel = app.registry.createModel(
+  'MyModel',
+  {/* properties */},
+  {/* options */});
+app.model(MyModel, { dataSource: 'db' });
+```
 
 ### Use `registerType` in `ModelBuilder` instead of `DataSource`
 
