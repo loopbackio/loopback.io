@@ -7,6 +7,10 @@ children:
   output: web, pdf
 
   children:
+  - title: Reporting issues
+    url: /doc/en/contrib/Reporting-issues.html
+    output: web, pdf
+
   - title: Triaging pull requests
     url: /doc/en/contrib/triaging-pull-requests.html
     output: web, pdf
@@ -34,6 +38,10 @@ children:
   children:
   - title: Getting started with Jekyll
     url: /doc/en/contrib/jekyll_getting_started.html
+    output: web, pdf
+
+  - title: Including READMEs from other repos
+    url: /doc/en/contrib/Including-READMEs.html
     output: web, pdf
 
 - title: Authoring pages
