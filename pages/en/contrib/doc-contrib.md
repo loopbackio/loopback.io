@@ -1,7 +1,7 @@
 ---
 title: Contributing to LoopBack documentation
 keywords: LoopBack documentation
-tags: [getting_started]
+tags: [community, contributing]
 sidebar: contrib_sidebar
 permalink: /doc/en/contrib/doc-contrib.html
 summary: We welcome contributions to LoopBack documentation!

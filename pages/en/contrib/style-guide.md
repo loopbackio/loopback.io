@@ -1,9 +1,9 @@
 ---
 title: Coding style guide
-tags: [contributing]
+tags: [contributing, community]
 keywords:
 last_updated: Sept 27, 2016
-summary: ""
+summary: "These are LoopBack's general coding style guidelines."
 sidebar: contrib_sidebar
 permalink: /doc/en/contrib/style-guide.html
 ---
@@ -16,7 +16,7 @@ Style conventions for this document:
 
 ## General guidelines
 
-### One arg per line
+### One argument per line
 
 Once you cannot fit all arguments into a single line shorter than 80 chars, it's better to place each argument on a new line.
 
@@ -498,3 +498,8 @@ context('Model', function() {
   ...
 });
 ```
+
+## See also
+
+- [Google C++ Style Guide]: https://google-styleguide.googlecode.com/svn/trunk/cppguide.xml
+- [Google Javascript Style Guide]: https://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml
