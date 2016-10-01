@@ -1,7 +1,6 @@
 ---
 title: "Database connectors overview"
 lang: en
-layout: page
 keywords: LoopBack
 tags: [data_sources]
 sidebar: lb2_sidebar

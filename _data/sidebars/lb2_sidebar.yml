@@ -145,23 +145,23 @@ children:
   output: 'web, pdf'
   children:
 
-  - title: 'Security advisory 08-16a-2016'
+  - title: '08-16a-2016'
     url: /doc/en/lb2/Security-advisory-08-16a-2016.html
     output: 'web, pdf'
 
-  - title: 'Security advisory 08-16-2016'
+  - title: '08-16-2016'
     url: /doc/en/lb2/Security-advisory-08-16-2016.html
     output: 'web, pdf'
 
-  - title: 'Security advisory 01-12-2016'
+  - title: '01-12-2016'
     url: /doc/en/lb2/Security-advisory-01-12-2016.html
     output: 'web, pdf'
 
-  - title: 'Security advisory 06-04-2015'
+  - title: '06-04-2015'
     url: /doc/en/lb2/Security-advisory-06-04-2015.html
     output: 'web, pdf'
 
-  - title: 'Security advisory 01-09-2015'
+  - title: '01-09-2015'
     url: /doc/en/lb2/Security-advisory-01-09-2015.html
     output: 'web, pdf'
 
@@ -241,31 +241,30 @@ children:
     output: 'web, pdf'
 
 - title: 'Defining models'
-  url: '#'
+  url: /doc/en/lb2/Defining-models.html
   output: 'web, pdf'
   children:
 
-  - title: 'Defining models'
-    url: /doc/en/lb2/Defining-models.html
+  - title: 'Creating models'
+    url: /doc/en/lb2/Creating-models.html
     output: 'web, pdf'
-
     children:
-    - title: 'Creating models'
-      url: /doc/en/lb2/Creating-models.html
+
+    - title: 'Using the model generator'
+      url: /doc/en/lb2/Using-the-model-generator.html
       output: 'web, pdf'
-      children:
 
-      - title: 'Using the model generator'
-        url: /doc/en/lb2/Using-the-model-generator.html
-        output: 'web, pdf'
+    - title: 'Discovering models from relational databases'
+      url: /doc/en/lb2/Discovering-models-from-relational-databases.html
+      output: 'web, pdf'
 
-      - title: 'Discovering models from relational databases'
-        url: /doc/en/lb2/Discovering-models-from-relational-databases.html
-        output: 'web, pdf'
+    - title: 'Creating models from unstructured data'
+      url: /doc/en/lb2/Creating-models-from-unstructured-data.html
+      output: 'web, pdf'
 
-      - title: 'Creating models from unstructured data'
-        url: /doc/en/lb2/Creating-models-from-unstructured-data.html
-        output: 'web, pdf'
+  - title: 'Customizing models'
+    url: doc/en/lb2/Customizing-models.html
+    output: 'web, pdf'
 
   - title: 'Attaching models to data sources'
     url: /doc/en/lb2/Attaching-models-to-data-sources.html
@@ -279,51 +278,50 @@ children:
     url: /doc/en/lb2/Validating-model-data.html
     output: 'web, pdf'
 
+  - title: 'Creating model relations'
+    url: /doc/en/lb2/Creating-model-relations.html
+    output: 'web'
     children:
-    - title: 'Creating model relations'
-      url: /doc/en/lb2/Creating-model-relations.html
-      output: 'web'
-      children:
 
-      - title: 'Tutorial: model relations'
-        url: /doc/en/lb2/Tutorial-model-relations.html
-        output: 'web, pdf'
+    - title: 'Tutorial: model relations'
+      url: /doc/en/lb2/Tutorial-model-relations.html
+      output: 'web, pdf'
 
-      - title: 'BelongsTo relations'
-        url: /doc/en/lb2/BelongsTo-relations.html
-        output: 'web, pdf'
+    - title: 'BelongsTo relations'
+      url: /doc/en/lb2/BelongsTo-relations.html
+      output: 'web, pdf'
 
-      - title: 'HasOne relations'
-        url: /doc/en/lb2/HasOne-relations.html
-        output: 'web, pdf'
+    - title: 'HasOne relations'
+      url: /doc/en/lb2/HasOne-relations.html
+      output: 'web, pdf'
 
-      - title: 'HasMany relations'
-        url: /doc/en/lb2/HasMany-relations.html
-        output: 'web, pdf'
+    - title: 'HasMany relations'
+      url: /doc/en/lb2/HasMany-relations.html
+      output: 'web, pdf'
 
-      - title: 'HasManyThrough relations'
-        url: /doc/en/lb2/HasManyThrough-relations.html
-        output: 'web, pdf'
+    - title: 'HasManyThrough relations'
+      url: /doc/en/lb2/HasManyThrough-relations.html
+      output: 'web, pdf'
 
-      - title: 'HasAndBelongsToMany relations'
-        url: /doc/en/lb2/HasAndBelongsToMany-relations.html
-        output: 'web, pdf'
+    - title: 'HasAndBelongsToMany relations'
+      url: /doc/en/lb2/HasAndBelongsToMany-relations.html
+      output: 'web, pdf'
 
-      - title: 'Polymorphic relations'
-        url: /doc/en/lb2/Polymorphic-relations.html
-        output: 'web, pdf'
+    - title: 'Polymorphic relations'
+      url: /doc/en/lb2/Polymorphic-relations.html
+      output: 'web, pdf'
 
-      - title: 'Querying related models'
-        url: /doc/en/lb2/Querying-related-models.html
-        output: 'web, pdf'
+    - title: 'Querying related models'
+      url: /doc/en/lb2/Querying-related-models.html
+      output: 'web, pdf'
 
-      - title: 'Embedded models and relations'
-        url: /doc/en/lb2/Embedded-models-and-relations.html
-        output: 'web, pdf'
+    - title: 'Embedded models and relations'
+      url: /doc/en/lb2/Embedded-models-and-relations.html
+      output: 'web, pdf'
 
-      - title: 'Nested queries'
-        url: /doc/en/lb2/Nested-queries.html
-        output: 'web, pdf'
+    - title: 'Nested queries'
+      url: /doc/en/lb2/Nested-queries.html
+      output: 'web, pdf'
 
 - title: 'Using built-in models'
   url: /doc/en/lb2/Using-built-in-models.html
@@ -346,43 +344,42 @@ children:
     url: /doc/en/lb2/Model-property-reference.html
     output: 'web, pdf'
 
+  - title: 'Built-in models REST API'
+    url: /doc/en/lb2/Built-in-models-REST-API.html
+    output: 'web'
     children:
-    - title: 'Built-in models REST API'
-      url: /doc/en/lb2/Built-in-models-REST-API.html
-      output: 'web'
-      children:
 
-      - title: 'PersistedModel REST API'
-        url: /doc/en/lb2/PersistedModel-REST-API.html
-        output: 'web, pdf'
+    - title: 'PersistedModel REST API'
+      url: /doc/en/lb2/PersistedModel-REST-API.html
+      output: 'web, pdf'
 
-      - title: 'Access token REST API'
-        url: /doc/en/lb2/Access-token-REST-API.html
-        output: 'web, pdf'
+    - title: 'Access token REST API'
+      url: /doc/en/lb2/Access-token-REST-API.html
+      output: 'web, pdf'
 
-      - title: 'ACL REST API'
-        url: /doc/en/lb2/ACL-REST-API.html
-        output: 'web, pdf'
+    - title: 'ACL REST API'
+      url: /doc/en/lb2/ACL-REST-API.html
+      output: 'web, pdf'
 
-      - title: 'Application REST API'
-        url: /doc/en/lb2/Application-REST-API.html
-        output: 'web, pdf'
+    - title: 'Application REST API'
+      url: /doc/en/lb2/Application-REST-API.html
+      output: 'web, pdf'
 
-      - title: 'Email REST API'
-        url: /doc/en/lb2/Email-REST-API.html
-        output: 'web, pdf'
+    - title: 'Email REST API'
+      url: /doc/en/lb2/Email-REST-API.html
+      output: 'web, pdf'
 
-      - title: 'Relation REST API'
-        url: /doc/en/lb2/Relation-REST-API.html
-        output: 'web, pdf'
+    - title: 'Relation REST API'
+      url: /doc/en/lb2/Relation-REST-API.html
+      output: 'web, pdf'
 
-      - title: 'Role REST API'
-        url: /doc/en/lb2/Role-REST-API.html
-        output: 'web, pdf'
+    - title: 'Role REST API'
+      url: /doc/en/lb2/Role-REST-API.html
+      output: 'web, pdf'
 
-      - title: 'User REST API'
-        url: /doc/en/lb2/User-REST-API.html
-        output: 'web, pdf'
+    - title: 'User REST API'
+      url: /doc/en/lb2/User-REST-API.html
+      output: 'web, pdf'
 
 - title: 'Connecting models to data sources'
   url: /doc/en/lb2/Connecting-models-to-data-sources.html
@@ -393,39 +390,74 @@ children:
     url: /doc/en/lb2/Creating-a-database-schema-from-models.html
     output: 'web, pdf'
 
+  - title: 'Understanding data sources'
+    url: /doc/en/lb2/Advanced-topics-data-sources.html
+    output: 'web'
     children:
-    - title: 'Database connectors'
-      url: /doc/en/lb2/Database-connectors.html
-      output: 'web'
+
+  - title: 'Using database transactions'
+    url: /doc/en/lb2/Using-database-transactions.html
+    output: 'web, pdf'
+
+  - title: 'Executing native SQL'
+    url: /doc/en/lb2/Executing-native-SQL.html
+    output: 'web, pdf'
+
+  - title: 'Building a connector'
+    url: /doc/en/lb2/Building-a-connector.html
+    output: 'web'
+    children:
+
+    - title: 'Implementing create, retrieve, update, and delete methods'
+      url: /doc/en/lb2/Implementing-create-retrieve-update-and-delete-methods.html
+      output: 'web, pdf'
+
+    - title: 'Implementing model discovery'
+      url: /doc/en/lb2/Implementing-model-discovery.html
+      output: 'web, pdf'
+
+    - title: 'Implementing auto-migration'
+      url: /doc/en/lb2/Implementing-auto-migration.html
+      output: 'web, pdf'
+
+- title: 'Connectors reference'
+  url: /doc/en/lb2/Connectors-reference.html
+  output: 'web'
+  children:
+
+  - title: 'Memory connector'
+    url: /doc/en/lb2/Memory-connector.html
+    output: 'web, pdf'
+
+  - title: 'Database connectors'
+    url: /doc/en/lb2/Database-connectors.html
+    output: 'web'
+    children:
+
+    - title: 'Cloudant connector'
+      url: /doc/en/lb2/Cloudant-connector.html
+      output: 'web, pdf'
+
+    - title: DashDB
+      url: /doc/en/lb2/DashDB.html
+      output: 'web, pdf'
+
+    - title: 'DB2 connector'
+      url: /doc/en/lb2/DB2-connector.html
+      output: 'web, pdf'
+
+    - title: 'DB2 for z/OS'
+      url: /doc/en/lb2/DB2-for-z-OS.html
+      output: 'web, pdf'
+
+    - title: Informix
+      url: /doc/en/lb2/Informix.html
+      output: 'web, pdf'
+
+    - title: 'MongoDB connector'
+      url: /doc/en/lb2/MongoDB-connector.html
+      output: 'web, pdf'
       children:
-
-      - title: 'Cloudant connector'
-        url: /doc/en/lb2/Cloudant-connector.html
-        output: 'web, pdf'
-
-      - title: DashDB
-        url: /doc/en/lb2/DashDB.html
-        output: 'web, pdf'
-
-      - title: 'DB2 connector'
-        url: /doc/en/lb2/DB2-connector.html
-        output: 'web, pdf'
-
-      - title: 'DB2 for z/OS'
-        url: /doc/en/lb2/DB2-for-z-OS.html
-        output: 'web, pdf'
-
-      - title: Informix
-        url: /doc/en/lb2/Informix.html
-        output: 'web, pdf'
-
-      - title: 'Memory connector'
-        url: /doc/en/lb2/Memory-connector.html
-        output: 'web, pdf'
-
-      - title: 'MongoDB connector'
-        url: /doc/en/lb2/MongoDB-connector.html
-        output: 'web, pdf'
 
       - title: 'MongoDB Connector Tutorial'
         url: /doc/en/lb2/Connecting-to-MongoDB.html
@@ -435,66 +467,71 @@ children:
         url: /doc/en/lb2/Using-MongoLab.html
         output: 'web, pdf'
 
-      - title: 'MySQL connector'
-        url: /doc/en/lb2/MySQL-connector.html
-        output: 'web, pdf'
+    - title: 'MySQL connector'
+      url: /doc/en/lb2/MySQL-connector.html
+      output: 'web, pdf'
+      children:
 
       - title: 'MySQL Connector Tutorial'
         url: /doc/en/lb2/Connecting-to-MySQL.html
         output: 'web, pdf'
 
-      - title: 'Oracle connector'
-        url: /doc/en/lb2/Oracle-connector.html
-        output: 'web, pdf'
+    - title: 'Oracle connector'
+      url: /doc/en/lb2/Oracle-connector.html
+      output: 'web, pdf'
+      children:
 
       - title: 'Installing the Oracle connector'
         url: /doc/en/lb2/Installing-the-Oracle-connector.html
         output: 'web, pdf'
 
-      - title: 'Oracle Connector Tutorial'
+      - title: 'Oracle connector tutorial'
         url: /doc/en/lb2/Connecting-to-Oracle.html
         output: 'web, pdf'
 
-      - title: 'PostgreSQL connector'
-        url: /doc/en/lb2/PostgreSQL-connector.html
-        output: 'web, pdf'
+    - title: 'PostgreSQL connector'
+      url: /doc/en/lb2/PostgreSQL-connector.html
+      output: 'web, pdf'
+      children:
 
-      - title: 'Connecting to PostgreSQL'
+      - title: 'PostgreSQL connector tutorial'
         url: /doc/en/lb2/Connecting-to-PostgreSQL.html
         output: 'web, pdf'
 
-      - title: 'Redis connector'
-        url: /doc/en/lb2/Redis-connector.html
-        output: 'web, pdf'
+    - title: 'Redis connector'
+      url: /doc/en/lb2/Redis-connector.html
+      output: 'web, pdf'
 
-      - title: 'SQL Server connector'
-        url: /doc/en/lb2/SQL-Server-connector.html
-        output: 'web, pdf'
+    - title: 'SQL Server connector'
+      url: /doc/en/lb2/SQL-Server-connector.html
+      output: 'web, pdf'
+      children:
 
-      - title: 'Connecting to Microsoft SQL Server'
+      - title: 'SQL Server connector tutorial'
         url: /doc/en/lb2/Connecting-to-Microsoft-SQL-Server.html
         output: 'web, pdf'
 
-      - title: SQLite3
-        url: /doc/en/lb2/SQLite3.html
-        output: 'web, pdf'
+    - title: 'SQLite3 connector'
+      url: /doc/en/lb2/SQLite3.html
+      output: 'web, pdf'
 
-    - title: 'Other connectors'
-      url: /doc/en/lb2/Other-connectors.html
-      output: 'web'
+  - title: 'Other connectors'
+    url: /doc/en/lb2/Other-connectors.html
+    output: 'web'
+    children:
+
+    - title: 'Email connector'
+      url: /doc/en/lb2/Email-connector.html
+      output: 'web, pdf'
+
+    - title: 'Push connector'
+      url: /doc/en/lb2/Push-connector.html
+      output: 'web, pdf'
+
+    - title: 'Remote connector'
+      url: /doc/en/lb2/Remote-connector.html
+      output: 'web, pdf'
       children:
-
-      - title: 'Email connector'
-        url: /doc/en/lb2/Email-connector.html
-        output: 'web, pdf'
-
-      - title: 'Push connector'
-        url: /doc/en/lb2/Push-connector.html
-        output: 'web, pdf'
-
-      - title: 'Remote connector'
-        url: /doc/en/lb2/Remote-connector.html
-        output: 'web, pdf'
 
       - title: 'Remote connector example'
         url: /doc/en/lb2/Remote-connector-example.html
@@ -504,63 +541,35 @@ children:
         url: /doc/en/lb2/Strong-Remoting.html
         output: 'web, pdf'
 
-      - title: 'REST connector'
-        url: /doc/en/lb2/REST-connector.html
-        output: 'web, pdf'
+    - title: 'REST connector'
+      url: /doc/en/lb2/REST-connector.html
+      output: 'web, pdf'
+      children:
 
       - title: 'REST connector example'
         url: /doc/en/lb2/REST-connector-example.html
         output: 'web, pdf'
 
-      - title: 'SOAP connector'
-        url: /doc/en/lb2/SOAP-connector.html
-        output: 'web, pdf'
+    - title: 'SOAP connector'
+      url: /doc/en/lb2/SOAP-connector.html
+      output: 'web, pdf'
+      children:
 
       - title: 'SOAP connector example'
         url: /doc/en/lb2/SOAP-Connector-example.html
         output: 'web, pdf'
 
-      - title: 'Storage connector'
-        url: /doc/en/lb2/Storage-connector.html
-        output: 'web, pdf'
-
-      - title: 'Swagger connector'
-        url: /doc/en/lb2/Swagger-connector.html
-        output: 'web, pdf'
-
-    - title: 'Community connectors'
-      url: /doc/en/lb2/Community-connectors.html
+    - title: 'Storage connector'
+      url: /doc/en/lb2/Storage-connector.html
       output: 'web, pdf'
 
-    - title: 'Advanced topics'
-      url: /doc/en/lb2/Advanced-topics-data-sources.html
-      output: 'web'
-      children:
+    - title: 'Swagger connector'
+      url: /doc/en/lb2/Swagger-connector.html
+      output: 'web, pdf'
 
-      - title: 'Using database transactions'
-        url: /doc/en/lb2/Using-database-transactions.html
-        output: 'web, pdf'
-
-      - title: 'Executing native SQL'
-        url: /doc/en/lb2/Executing-native-SQL.html
-        output: 'web, pdf'
-
-    - title: 'Building a connector'
-      url: /doc/en/lb2/Building-a-connector.html
-      output: 'web'
-      children:
-
-      - title: 'Implementing auto-migration'
-        url: /doc/en/lb2/Implementing-auto-migration.html
-        output: 'web, pdf'
-
-      - title: 'Implementing create, retrieve, update, and delete methods'
-        url: /doc/en/lb2/Implementing-create-retrieve-update-and-delete-methods.html
-        output: 'web, pdf'
-
-      - title: 'Implementing model discovery'
-        url: /doc/en/lb2/Implementing-model-discovery.html
-        output: 'web, pdf'
+  - title: 'Community connectors'
+    url: /doc/en/lb2/Community-connectors.html
+    output: 'web, pdf'
 
 - title: 'Working with data'
   url: /doc/en/lb2/Working-with-data.html
@@ -619,6 +628,39 @@ children:
   output: 'web, pdf'
   children:
 
+  - title: 'Working with LoopBack objects'
+    url: /doc/en/lb2/Working-with-LoopBack-objects.html
+    output: 'web, pdf'
+
+  - title: 'Adding logic to models'
+    url: /doc/en/lb2/Adding-logic-to-models.html
+    output: 'web'
+    children:
+
+    - title: 'Remote methods'
+      url: /doc/en/lb2/Remote-methods.html
+      output: 'web, pdf'
+
+    - title: 'Remote hooks'
+      url: /doc/en/lb2/Remote-hooks.html
+      output: 'web, pdf'
+
+    - title: 'Operation hooks'
+      url: /doc/en/lb2/Operation-hooks.html
+      output: 'web, pdf'
+
+    - title: 'Model hooks'
+      url: /doc/en/lb2/Model-hooks.html
+      output: 'web, pdf'
+
+    - title: 'Connector hooks'
+      url: /doc/en/lb2/Connector-hooks.html
+      output: 'web, pdf'
+
+    - title: 'Tutorial: Application logic'
+      url: /doc/en/lb2/Tutorial-Adding-application-logic.html
+      output: 'web, pdf'
+
   - title: 'Defining boot scripts'
     url: /doc/en/lb2/Defining-boot-scripts.html
     output: 'web, pdf'
@@ -634,40 +676,6 @@ children:
   - title: 'Middleware example'
     url: /doc/en/lb2/Middleware-example.html
     output: 'web, pdf'
-
-  - title: 'Working with LoopBack objects'
-    url: /doc/en/lb2/Working-with-LoopBack-objects.html
-    output: 'web, pdf'
-
-    children:
-    - title: 'Adding logic to models'
-      url: /doc/en/lb2/Adding-logic-to-models.html
-      output: 'web'
-      children:
-
-      - title: 'Remote methods'
-        url: /doc/en/lb2/Remote-methods.html
-        output: 'web, pdf'
-
-      - title: 'Remote hooks'
-        url: /doc/en/lb2/Remote-hooks.html
-        output: 'web, pdf'
-
-      - title: 'Operation hooks'
-        url: /doc/en/lb2/Operation-hooks.html
-        output: 'web, pdf'
-
-      - title: 'Model hooks'
-        url: /doc/en/lb2/Model-hooks.html
-        output: 'web, pdf'
-
-      - title: 'Connector hooks'
-        url: /doc/en/lb2/Connector-hooks.html
-        output: 'web, pdf'
-
-      - title: 'Tutorial: Adding application logic'
-        url: /doc/en/lb2/Tutorial-Adding-application-logic.html
-        output: 'web, pdf'
 
   - title: 'Using current context'
     url: /doc/en/lb2/Using-current-context.html
@@ -703,70 +711,69 @@ children:
   output: 'web, pdf'
   children:
 
-  - title: 'Creating components'
-    url: /doc/en/lb2/Creating-components.html
-    output: 'web, pdf'
-
   - title: 'OAuth 2.0 component'
     url: /doc/en/lb2/OAuth-2.0.html
     output: 'web, pdf'
 
+  - title: 'Push notification component'
+    url: /doc/en/lb2/Push-notifications.html
+    output: 'web, pdf'
     children:
-    - title: 'Push notification component'
-      url: /doc/en/lb2/Push-notifications.html
+
+    - title: 'Push notifications for iOS apps'
+      url: /doc/en/lb2/Push-notifications-for-iOS-apps.html
       output: 'web, pdf'
-      children:
 
-      - title: 'Push notifications for iOS apps'
-        url: /doc/en/lb2/Push-notifications-for-iOS-apps.html
-        output: 'web, pdf'
+    - title: 'Push notifications for Android apps'
+      url: /doc/en/lb2/Push-notifications-for-Android-apps.html
+      output: 'web, pdf'
 
-      - title: 'Push notifications for Android apps'
-        url: /doc/en/lb2/Push-notifications-for-Android-apps.html
-        output: 'web, pdf'
+  - title: 'Storage component'
+    url: /doc/en/lb2/Storage-component.html
+    output: 'web'
+    children:
 
-    - title: 'Storage component'
-      url: /doc/en/lb2/Storage-component.html
-      output: 'web'
-      children:
+    - title: 'Storage component REST API'
+      url: /doc/en/lb2/Storage-component-REST-API.html
+      output: 'web, pdf'
 
-      - title: 'Storage component REST API'
-        url: /doc/en/lb2/Storage-component-REST-API.html
-        output: 'web, pdf'
+    - title: 'Storage component example'
+      url: /doc/en/lb2/Storage-example.html
+      output: 'web, pdf'
 
-      - title: 'Storage component example'
-        url: /doc/en/lb2/Storage-example.html
-        output: 'web, pdf'
+  - title: 'Passport login component'
+    url: /doc/en/lb2/Third-party-login-using-Passport.html
+    output: 'web'
+    children:
 
-    - title: 'Passport login component'
-      url: /doc/en/lb2/Third-party-login-using-Passport.html
-      output: 'web'
-      children:
+    - title: 'Configuring providers.json'
+      url: /doc/en/lb2/Configuring-providers.json.html
+      output: 'web, pdf'
 
-      - title: 'Configuring providers.json'
-        url: /doc/en/lb2/Configuring-providers.json.html
-        output: 'web, pdf'
+    - title: 'Tutorial: third-party login'
+      url: /doc/en/lb2/Tutorial-third-party-login.html
+      output: 'web, pdf'
 
-      - title: 'Tutorial: third-party login'
-        url: /doc/en/lb2/Tutorial-third-party-login.html
-        output: 'web, pdf'
+  - title: Synchronization component
+    url: /doc/en/lb2/Synchronization.html
+    output: 'web,'
+    children:
 
-    - title: Synchronization component
-      url: /doc/en/lb2/Synchronization.html
-      output: 'web,'
-      children:
+    - title: 'Sync example app'
+      url: /doc/en/lb2/Sync-example-app.html
+      output: 'web, pdf'
 
-      - title: 'Sync example app'
-        url: /doc/en/lb2/Sync-example-app.html
-        output: 'web, pdf'
+    - title: 'Advanced topics - sync'
+      url: /doc/en/lb2/Advanced-topics-sync.html
+      output: 'web, pdf'
 
-      - title: 'Advanced topics - sync'
-        url: /doc/en/lb2/Advanced-topics-sync.html
-        output: 'web, pdf'
+    - title: 'Tutorial: Offline Synchronization'
+      url: /doc/en/lb2/Tutorial-Offline-Synchronization.html
+      output: 'web, pdf'
 
-      - title: 'Tutorial: Offline Synchronization'
-        url: /doc/en/lb2/Tutorial-Offline-Synchronization.html
-        output: 'web, pdf'
+  - title: 'Creating components'
+    url: /doc/en/lb2/Creating-components.html
+    output: 'web, pdf'
 
 - title: 'Command-line tools'
   url: /doc/en/lb2/Command-line-tools.html
@@ -829,124 +836,121 @@ children:
   - title: 'iOS SDK'
     url: /doc/en/lb2/iOS-SDK.html
     output: 'web, pdf'
+
+  - title: 'Android SDK'
+    url: /doc/en/lb2/Android-SDK.html
+    output: 'web'
     children:
 
+    - title: 'Working with files using the Android SDK'
+      url: /doc/en/lb2/Working-with-files-using-the-Android-SDK.html
+      output: 'web, pdf'
+
+    - title: 'Push notifications using Android SDK'
+      url: /doc/en/lb2/Push-notifications-using-Android-SDK.html
+      output: 'web, pdf'
+
+    - title: 'Working with the LocalInstallation class'
+      url: /doc/en/lb2/Working-with-the-LocalInstallation-class.html
+      output: 'web, pdf'
+
+  - title: 'AngularJS SDK'
+    url: /doc/en/lb2/AngularJS-JavaScript-SDK.html
+    output: 'web'
     children:
-    - title: 'Android SDK'
-      url: /doc/en/lb2/Android-SDK.html
-      output: 'web'
-      children:
 
-      - title: 'Working with files using the Android SDK'
-        url: /doc/en/lb2/Working-with-files-using-the-Android-SDK.html
-        output: 'web, pdf'
+    - title: 'Angular example app'
+      url: /doc/en/lb2/Angular-example-app.html
+      output: 'web, pdf'
 
-      - title: 'Push notifications using Android SDK'
-        url: /doc/en/lb2/Push-notifications-using-Android-SDK.html
-        output: 'web, pdf'
+    - title: 'AngularJS Grunt plugin'
+      url: /doc/en/lb2/AngularJS-Grunt-plugin.html
+      output: 'web, pdf'
 
-      - title: 'Working with the LocalInstallation class'
-        url: /doc/en/lb2/Working-with-the-LocalInstallation-class.html
-        output: 'web, pdf'
+    - title: 'Generating Angular API docs'
+      url: /doc/en/lb2/Generating-Angular-API-docs.html
+      output: 'web, pdf'
 
-    - title: 'AngularJS SDK'
-      url: /doc/en/lb2/AngularJS-JavaScript-SDK.html
-      output: 'web'
-      children:
+    - title: 'Angular 2 SDK'
+      url: /doc/en/lb2/Angular-2-SDK.html
+      output: 'web, pdf'
 
-      - title: 'Angular example app'
-        url: /doc/en/lb2/Angular-example-app.html
-        output: 'web, pdf'
+  - title: 'Xamarin SDK'
+    url: /doc/en/lb2/Xamarin-SDK.html
+    output: 'web'
+    children:
 
-      - title: 'AngularJS Grunt plugin'
-        url: /doc/en/lb2/AngularJS-Grunt-plugin.html
-        output: 'web, pdf'
+    - title: 'Xamarin client API'
+      url: /doc/en/lb2/Xamarin-client-API.html
+      output: 'web, pdf'
 
-      - title: 'Generating Angular API docs'
-        url: /doc/en/lb2/Generating-Angular-API-docs.html
-        output: 'web, pdf'
+    - title: 'Xamarin example app'
+      url: /doc/en/lb2/Xamarin-example-app.html
+      output: 'web, pdf'
 
-      - title: 'Angular 2 SDK'
-        url: /doc/en/lb2/Angular-2-SDK.html
-        output: 'web, pdf'
+  - title: 'Isomorphic LoopBack'
+    url: /doc/en/lb2/LoopBack-in-the-client.html
+    output: 'web'
+    children:
 
-    - title: 'Xamarin SDK'
-      url: /doc/en/lb2/Xamarin-SDK.html
-      output: 'web'
-      children:
+    - title: 'Running LoopBack in the browser'
+      url: /doc/en/lb2/Running-LoopBack-in-the-browser.html
+      output: 'web, pdf'
 
-      - title: 'Xamarin client API'
-        url: /doc/en/lb2/Xamarin-client-API.html
-        output: 'web, pdf'
+    - title: 'Using Browserify'
+      url: /doc/en/lb2/Using-Browserify.html
+      output: 'web, pdf'
 
-      - title: 'Xamarin example app'
-        url: /doc/en/lb2/Xamarin-example-app.html
-        output: 'web, pdf'
-
-    - title: 'Isomorphic LoopBack'
-      url: /doc/en/lb2/LoopBack-in-the-client.html
-      output: 'web'
-      children:
-
-      - title: 'Running LoopBack in the browser'
-        url: /doc/en/lb2/Running-LoopBack-in-the-browser.html
-        output: 'web, pdf'
-
-      - title: 'Using Browserify'
-        url: /doc/en/lb2/Using-Browserify.html
-        output: 'web, pdf'
-
-      - title: 'Isomorphic example'
-        url: /doc/en/lb2/Isomorphic-LoopBack-example.html
-        output: 'web, pdf'
+    - title: 'Isomorphic example'
+      url: /doc/en/lb2/Isomorphic-LoopBack-example.html
+      output: 'web, pdf'
 
 - title: 'Project layout reference'
   url: /doc/en/lb2/Project-layout-reference.html
   output: 'web, pdf'
   children:
 
-  - title: package.json
-    url: /doc/en/lb2/package.json.html
-    output: 'web, pdf'
-
   - title: 'client directory'
     url: /doc/en/lb2/client-directory.html
     output: 'web, pdf'
 
+  - title: 'common directory'
+    url: /doc/en/lb2/common-directory.html
+    output: 'web'
     children:
-    - title: 'server directory'
-      url: /doc/en/lb2/server-directory.html
-      output: 'web'
-      children:
 
-      - title: config.json
-        url: /doc/en/lb2/config.json.html
-        output: 'web, pdf'
+    - title: 'Model definition JSON file'
+      url: /doc/en/lb2/Model-definition-JSON-file.html
+      output: 'web, pdf'
+      
+  - title: package.json
+    url: /doc/en/lb2/package.json.html
+    output: 'web, pdf'
 
-      - title: datasources.json
-        url: /doc/en/lb2/datasources.json.html
-        output: 'web, pdf'
+  - title: 'server directory'
+    url: /doc/en/lb2/server-directory.html
+    output: 'web'
+    children:
 
-      - title: middleware.json
-        url: /doc/en/lb2/middleware.json.html
-        output: 'web, pdf'
+    - title: config.json
+      url: /doc/en/lb2/config.json.html
+      output: 'web, pdf'
 
-      - title: model-config.json
-        url: /doc/en/lb2/model-config.json.html
-        output: 'web, pdf'
+    - title: datasources.json
+      url: /doc/en/lb2/datasources.json.html
+      output: 'web, pdf'
 
-      - title: server.js
-        url: /doc/en/lb2/server.js.html
-        output: 'web, pdf'
+    - title: middleware.json
+      url: /doc/en/lb2/middleware.json.html
+      output: 'web, pdf'
 
-    - title: 'common directory'
-      url: /doc/en/lb2/common-directory.html
-      output: 'web'
-      children:
+    - title: model-config.json
+      url: /doc/en/lb2/model-config.json.html
+      output: 'web, pdf'
 
-      - title: 'Model definition JSON file'
-        url: /doc/en/lb2/Model-definition-JSON-file.html
-        output: 'web, pdf'
+    - title: server.js
+      url: /doc/en/lb2/server.js.html
+      output: 'web, pdf'
 
 - title: 'Node reference'
   url: /doc/en/lb2/Node-reference.html

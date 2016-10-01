@@ -1,5 +1,5 @@
 ---
-title: "Advanced topics: data sources"
+title: "Understanding data sources"
 lang: en
 layout: page
 keywords: LoopBack
@@ -9,7 +9,7 @@ permalink: /doc/en/lb2/Advanced-topics-data-sources.html
 summary:
 ---
 
-{% include image.html file="9830485.png" alt="" %}
+{% include image.html file="9830485.png" alt="Relationship between models, data sources, and connectors" %}
 
 ## Overview
 

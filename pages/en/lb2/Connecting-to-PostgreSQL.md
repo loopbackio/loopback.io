@@ -1,5 +1,5 @@
 ---
-title: "Connecting to PostgreSQL"
+title: "PostgreSQL connector tutorial"
 lang: en
 layout: readme
 source: loopback-example-database-postgresql

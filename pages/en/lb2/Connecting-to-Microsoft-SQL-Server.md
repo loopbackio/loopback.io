@@ -1,5 +1,5 @@
 ---
-title: "Microsoft SQL Server Connector Tutorial"
+title: "Microsoft SQL Server connector tutorial"
 lang: en
 layout: readme
 source: loopback-example-database-mysql
