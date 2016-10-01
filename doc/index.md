@@ -20,7 +20,7 @@ This site contains documentation for:
 - [LoopBack 2.x](en/lb2) - Current release
 - [LoopBack 3.0](en/lb3) - Upcoming release.
 - [Contributing to LoopBack](en/contrib/) - How you can contribute to the LoopBack project.
-- [Community projects](en/community) - Where Loopback developers can promote and explain their LoopBack-related  projects.
+- [Community projects](community) - Where Loopback developers can promote and explain their LoopBack-related  projects.
 
 ## LoopBack
 
