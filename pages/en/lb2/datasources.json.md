@@ -65,6 +65,10 @@ All data sources support a few standard properties. Beyond that, specific proper
       </td>
     </tr>
     <tr>
+      <td>lazyConnect</td>
+      <td>If true, then defer connection.  If false, connects to the data source when the app starts.</td>
+    </tr>    
+    <tr>
       <td>name</td>
       <td>Name of the data source being defined.</td>
     </tr>
@@ -109,22 +113,9 @@ To connect a model to a data source, follow these steps:
       }
     ```
 
-    For information on the specific properties that each connector supports, see:
+    For information on the properties that each connector supports, see
+    the specific connector documentation in [Database connectors](Database-connectors.html).
 
-    * [Cloudant connector](/doc/{{page.lang}}/lb2/Cloudant-connector.html)
-    * [DashDB](/doc/{{page.lang}}/lb2/DashDB.html)
-    * [DB2 connector](/doc/{{page.lang}}/lb2/DB2-connector.html)
-    * [DB2 for z/OS](/doc/{{page.lang}}/lb2/DB2-for-z-OS.html)
-    * [Informix](/doc/{{page.lang}}/lb2/Informix.html)
-    * [Memory connector](/doc/{{page.lang}}/lb2/Memory-connector.html)
-    * [MongoDB connector](/doc/{{page.lang}}/lb2/MongoDB-connector.html)
-    * [MySQL connector](/doc/{{page.lang}}/lb2/MySQL-connector.html)
-    * [Oracle connector](/doc/{{page.lang}}/lb2/Oracle-connector.html)
-    * [PostgreSQL connector](/doc/{{page.lang}}/lb2/PostgreSQL-connector.html)
-    * [Redis connector](/doc/{{page.lang}}/lb2/Redis-connector.html)
-    * [SQL Server connector](/doc/{{page.lang}}/lb2/SQL-Server-connector.html)
-    * [SQLite3](/doc/{{page.lang}}/lb2/SQLite3.html)
-     
 3.  Install the corresponding connector as a dependency of your app with `npm`, for example: 
 
     ```shell
@@ -176,10 +167,7 @@ You can override values set in `datasources.json` in the following files:
   For example, `datasources.production.json`.
 
 {% include important.html content="
-
-The additional files can override the top-level data-source options with string and number values only.
-You cannot use objects or array values.
-
+The additional files can override the top-level data-source options with string and number values only. You cannot use objects or array values.
 " %}
 
 Example data sources:
