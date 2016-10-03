@@ -117,7 +117,7 @@ module.exports = function(CoffeeShop) {
 ...
   CoffeeShop.getName = function(shopId, cb) {
     CoffeeShop.findById( shopId, function (err, instance) {
-        response = "Name of coffee shop is " - instance.name;
+        var response = "Name of coffee shop is " + instance.name;
         cb(null, response);
         console.log(response);
     });
