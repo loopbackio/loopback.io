@@ -636,6 +636,12 @@ ol.series li {
     border-color: #248ec2 !important;
 }
 
+/* topbar nav */
+
+.topnavlinks .nav > li > a {
+    padding: 2px;
+}
+
 /* tree nav */
 
 #mysidebar {
@@ -692,10 +698,6 @@ ul#mysidebar, #mysidebar ul{
 #mysidebar a.page-link:hover{
   background: lightblue;
   text-decoration: none;
-}
-
-li.tree-parent.expanded {
-  background: linear-gradient(to right, white, white 4px, lightgray 4px, lightgray 10px, white 10px, white);
 }
 
 #mysidebar a.show-hide::before{
