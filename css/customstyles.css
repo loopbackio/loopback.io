@@ -672,8 +672,15 @@ ul#mysidebar, #mysidebar ul{
   border-radius:5px;
 }
 
-#mysidebar .tree-parent>.page-link {
+#mysidebar .page-link {
   margin-left: 1em;
+}
+
+#mysidebar .leaf-node>.page-link::before{
+  content: "▪";
+  float:left;
+  width:1em;
+  margin-left:-1em;
 }
 
 #mysidebar .show-hide{
