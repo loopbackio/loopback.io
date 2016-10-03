@@ -23,8 +23,6 @@
   { "org": "strongloop", "repoName":  "loopback-example-user-management"},
   { "org": "strongloop", "repoName":  "loopback-example-isomorphic"},
   { "org": "strongloop", "repoName":  "loopback-example-xamarin"},
-  { "org": "strongloop", "repoName":  "loopback-getting-started"},
-  { "org": "strongloop", "repoName":  "loopback-getting-started-intermediate"},
   { "org": "strongloop", "repoName":  "loopback-ios-getting-started"}
  ]
 }

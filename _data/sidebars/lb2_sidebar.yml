@@ -759,16 +759,12 @@ children:
     output: 'web,'
     children:
 
-    - title: 'Sync example app'
-      url: /doc/en/lb2/Sync-example-app.html
+    - title: 'Tutorial: Offline Synchronization'
+      url: /doc/en/lb2/Tutorial-Offline-Synchronization.html
       output: 'web, pdf'
 
     - title: 'Advanced topics - sync'
       url: /doc/en/lb2/Advanced-topics-sync.html
-      output: 'web, pdf'
-
-    - title: 'Tutorial: Offline Synchronization'
-      url: /doc/en/lb2/Tutorial-Offline-Synchronization.html
       output: 'web, pdf'
 
   - title: 'Creating components'
@@ -836,11 +832,20 @@ children:
   - title: 'iOS SDK'
     url: /doc/en/lb2/iOS-SDK.html
     output: 'web, pdf'
+    children:
+
+    - title: 'Getting started with the iOS SDK'
+      url: /doc/en/lb2/IOS-getting-started.html
+      output: 'web, pdf'
 
   - title: 'Android SDK'
     url: /doc/en/lb2/Android-SDK.html
     output: 'web'
     children:
+
+    - title: 'Getting started with the Android SDK'
+      url: /doc/en/lb2/Tutorial-android-getting-started.html
+      output: 'web, pdf'
 
     - title: 'Working with files using the Android SDK'
       url: /doc/en/lb2/Working-with-files-using-the-Android-SDK.html
@@ -922,7 +927,7 @@ children:
     - title: 'Model definition JSON file'
       url: /doc/en/lb2/Model-definition-JSON-file.html
       output: 'web, pdf'
-      
+
   - title: package.json
     url: /doc/en/lb2/package.json.html
     output: 'web, pdf'

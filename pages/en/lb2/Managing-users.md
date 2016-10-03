@@ -1,24 +1,14 @@
 ---
 title: "Managing users"
 lang: en
-layout: page
+layout: navgroup
+navgroup: user-mgmt
 keywords: LoopBack
 tags:
 sidebar: lb2_sidebar
 permalink: /doc/en/lb2/Managing-users.html
 summary:
 ---
-
-{% include content/gs-prereqs.html lang=page.lang %}
-
-{% include see-also.html content="
-* [Registering users](Registering-users.html)
-* [Logging in users](Logging-in-users.html)
-* [Partitioning users with realms](Partitioning-users-with-realms.html)
-* [Authentication, authorization, and permissions](Authentication-authorization-and-permissions.html)
-* [Third-party login using Passport](Third-party-login-using-Passport.html)
-* [Example app](https://github.com/strongloop/loopback-example-user-management) "
-%}
 
 ## Overview
 
@@ -53,7 +43,7 @@ The basic process to create and authenticate users is:
     Provide the access token in the HTTP header or as a query parameter to the REST API call, as shown in 
     [Making authenticated requests with access tokens](/doc/{{page.lang}}/lb2/Making-authenticated-requests.html#making-authenticated-requests-with-access-tokens).
 
-###Performance tip
+### Performance tip
 
 To improve performance during login and user creation, try installing native [bcrypt](https://www.npmjs.com/package/bcrypt).
 

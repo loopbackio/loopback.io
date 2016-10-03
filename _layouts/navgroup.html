@@ -1,0 +1,8 @@
+---
+layout: page-no-toc
+---
+{% capture nav-include %}{% include navgroups/{{page.navgroup}}.md %}{% endcapture %}
+{{ nav-include | markdownify }}
+
+{% include toc.html %}
+{{content}}

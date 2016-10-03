@@ -15,7 +15,8 @@ summary:
 * [Database discovery API](http://apidocs.strongloop.com/loopback-datasource-juggler/#datasource-prototype-discoverandbuildmodels).
 " %}
 
-{% include note.html content="The PostgreSQL connector requires PostgreSQL 8.x or 9.x." %}
+{% include note.html content="The PostgreSQL connector requires PostgreSQL 8.x or 9.x.
+" %}
 
 ## Installation
 
