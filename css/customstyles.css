@@ -656,11 +656,15 @@ ol.series li {
 ul#mysidebar, #mysidebar ul{
   list-style: none;
   padding-left:0;
-} 
+}
 
 #mysidebar li{
   margin-top:.1em;
   line-height:1.1em;
+}
+
+#mysidebar li a {
+  font-size: 90%;
 }
 
 #mysidebar li > a{
