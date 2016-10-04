@@ -60,16 +60,27 @@ To report a bug:
 
 1. Fork [loopback-sandbox](https://github.com/strongloop/loopback-sandbox).
 2. Add the code required to reproduce your issue in the forked repository.
-3. Create an issue in the appropriate repository with STR (steps to reproduce) in the issue description **AND** a link to the forked repository.
+3. Create an issue in the appropriate repository with steps to reproduce (STR) in the issue description **AND** a link to the forked repository.
 
-From this point, we will clone the the forked repository and try to reproduce the issue on our own machines. Once verified, we will respond to you and prioritize the fix accordingly.
+From this point, we will clone the the forked repository and try to reproduce the issue. Once verified, we will respond to you and prioritize the fix accordingly.
 
-We recommend forking with STR in order to leverage community support in reproducing issues. By doing this, we can focus on fixing and responding to the actual issues.
+We recommend forking with STR to leverage community support in reproducing issues. By doing this, we can focus on fixing and responding to the actual issues.
 
 {% include tip.html content="We give priority to issues that follow the above process, that is, those with a forked repository for us to clone and clear STR.
 " %}
 
 For  bug reports related to specific LoopBack dependencies (for example, `loopback-connector-mysql`), please create an issue in the repository itself; for example,  [loopback-connector-mysql](https://github.com/strongloop/loopback-connector-mysql/issues).
+
+### Key information to include
+
+When reporting bugs, please include at least all the following:
+
+- Operating system version.
+- Node.js version.
+- Pertinent version of Node modules, for example LoopBack.
+- Any stack trace, error message text, or other relevant information.
+
+Consider using [NodeReport](https://developer.ibm.com/node/2016/08/18/nodereport-first-failure-data-capture-for-node-js/) to gather and report the relevant information.
 
 ### 2. Report the issue in appropriate channel
 
