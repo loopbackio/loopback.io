@@ -1,26 +1,14 @@
 ---
 title: "Authentication, authorization, and permissions"
 lang: en
-layout: page
-toc: false
+layout: navgroup
+navgroup: user-mgmt
 keywords: LoopBack
 tags: authentication
 sidebar: lb2_sidebar
 permalink: /doc/en/lb2/Authentication-authorization-and-permissions.html
-summary:
+summary: LoopBack includes built-in token-based authentication.
 ---
-
-{% include content/gs-prereqs.html lang=page.lang %}
-
-{% include see-also.html content="
-* [Managing users](Managing-users.html)
-* [Third-party login using Passport](Third-party-login-using-Passport.html)
-* [Access control models](Using-built-in-models.html#Usingbuilt-inmodels-Accesscontrolmodels)
-* [Tutorial: access control](Tutorial-access-control)
-* [Security considerations](Security-considerations.html)
-" %}
-
-{% include toc.html %}
 
 Most applications need to control who (or what) can access data or call services.
 Typically, this involves requiring users to login to access protected data, or requiring authorization tokens for other applications to access protected data.
@@ -32,7 +20,7 @@ LoopBack apps access data through models (see [Defining models](/doc/{{page.lan
 so controlling access to data means putting restrictions on models; that is,
 specifying who or what can read/write the data or execute methods on the models. 
 
-{% include warning.html content="
+{% include important.html content="
 **Enabling LoopBack authentication**
 
 To enable access control, you must call `enableAuth()`. For example, in a boot script `server/boot/authentication.js`:

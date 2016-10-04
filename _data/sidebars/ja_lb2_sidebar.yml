@@ -10,6 +10,7 @@
 
 title: Loopback 2.0 - 日本語
 url: /doc/ja/lb2/index.html
+translated: true
 children:
 
 - title: 'Installation'
@@ -51,6 +52,7 @@ children:
 
 - title: 'LoopBack コアコンセプト'
   url: /doc/ja/lb2/LoopBack-core-concepts.html
+  translated: true
   output: 'web, pdf'
   children:
 

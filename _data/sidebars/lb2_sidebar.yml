@@ -203,6 +203,10 @@ children:
     url: /doc/en/lb2/Partitioning-users-with-realms.html
     output: 'web, pdf'
 
+  - title: 'User management example'
+    url: /doc/en/lb2/User-management-example.html
+    output: 'web, pdf'
+
 - title: 'Authentication, authorization, and permissions'
   url: /doc/en/lb2/Authentication-authorization-and-permissions.html
   output: 'web, pdf'

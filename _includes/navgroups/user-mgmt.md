@@ -1,9 +1,13 @@
-{% include see-also.html content="
+{% capture navgroup_content %}
+  {% unless page.permalink contains 'Managing-users.html' %}
+  * [Managing users](Managing-users.html)
+  {% endunless %}{% unless page.permalink contains 'Authentication-authorization-and-permissions.html' %}
+  * [Authentication, authorization, and permissions](Authentication-authorization-and-permissions.html)
+  {% endunless %}{% unless page.permalink contains 'Third-party-login-using-Passport.html' %}
+  * [Third-party login using Passport](Third-party-login-using-Passport.html)
+  {% endunless %}{% unless page.permalink contains 'User-management-example.html' %}
+  * [Example app](User-management-example.html)
+  {% endunless %}
+{% endcapture %}
 
-* [Registering users](Registering-users.html)
-* [Logging in users](Logging-in-users.html)
-* [Partitioning users with realms](Partitioning-users-with-realms.html)
-* [Authentication, authorization, and permissions](Authentication-authorization-and-permissions.html)
-* [Third-party login using Passport](Third-party-login-using-Passport.html)
-* [Example app](https://github.com/strongloop/loopback-example-user-management) "
-%}
+{% include see-also.html content=navgroup_content %}

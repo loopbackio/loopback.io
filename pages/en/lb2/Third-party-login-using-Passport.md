@@ -1,7 +1,8 @@
 ---
 title: "Third-party login using Passport"
 lang: en
-layout: page
+layout: navgroup
+navgroup: user-mgmt
 keywords: LoopBack
 tags:
 sidebar: lb2_sidebar
@@ -11,12 +12,6 @@ summary:
 
 {% include important.html content="
 To use this component, you should be familiar with [Passport](http://passportjs.org/)
-" %}
-
-{% include see-also.html content="
-* [Example application](https://github.com/strongloop-community/loopback-example-passport)
-* [API documentation](http://apidocs.strongloop.com/loopback-component-passport/) for loopback-component-passport
-* [Passport](http://passportjs.org/guide/) documentation
 " %}
 
 ## Overview
