@@ -100,7 +100,7 @@ In general, a property will have `undefined` value if no explicit or default v
 
 {% include important.html content="
 
- The type name is case-insensitive; so for example you can use either \"Number\" or \"number.\"
+ The type name is case-insensitive; so for example you can use either \"Number\" or \"number\".
 
 " %}
 
