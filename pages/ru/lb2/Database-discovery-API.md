@@ -5,7 +5,7 @@ layout: translation
 keywords: LoopBack
 tags:
 sidebar: ru_lb2_sidebar
-permalink: /doc/ru/lb2/API-.html
+permalink: /doc/ru/lb2/Database-discovery-API.html
 summary:
 ---
 
@@ -305,7 +305,7 @@ datasource.discoverModelDefinitions(function(err, models) {
     tableName: 'INVENTORY',
     columnName: 'LOCATION_ID',
     keySeq: 2,
-    pkName: 'ID_PK' }, 
+    pkName: 'ID_PK' },
 ...
 }
 ```

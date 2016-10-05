@@ -13,7 +13,7 @@ summary:
 
 **Требования для выполнения данного руководства**:
 
-*   Установленный StrongLoop как описано в [Установка StrongLoop](https://docs.strongloop.com/pages/viewpage.action?pageId=5310693)
+*   Установленный StrongLoop как описано в [Установка StrongLoop](Installing-StrongLoop.html)
 *   Прохождение [Начало работы с LoopBack](https://docs.strongloop.com/pages/viewpage.action?pageId=5310598).
 
 **Рекомендации**: Прочтите [Основные понятия LoopBack](LoopBack-core-concepts.html).

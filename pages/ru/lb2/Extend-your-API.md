@@ -1,5 +1,5 @@
 ---
-title: "Extend your API"
+title: "Расширьте свой API"
 lang: ru
 layout: translation
 toc: false

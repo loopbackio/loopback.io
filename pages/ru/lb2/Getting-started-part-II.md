@@ -5,14 +5,12 @@ layout: translation
 keywords: LoopBack
 tags:
 sidebar: ru_lb2_sidebar
-permalink: /doc/ru/lb2/-LoopBack-II.html
+permalink: /doc/ru/lb2/Getting-started-part-II.html
 summary:
 ---
 
 {% include note.html content="
-
 Это руководство является продолжением к [Начало работы с LoopBack](/doc/ru/lb2/-LoopBack.html), и это предполагает, что вы понимаете основыне принципы и задачи изложенные в первой части.
-
 " %}
 
 Этот учебник включает в себя:

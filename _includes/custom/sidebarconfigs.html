@@ -30,10 +30,18 @@
 
 {% elsif page.sidebar == "zh_lb2_sidebar" %}
     {% assign sidebar = site.data.sidebars.zh_lb2_sidebar %}
-    
+
 {% else %}
   {% assign sidebar = site.data.sidebars.home_sidebar %}
 {% endif %}
+
+
+{% if sidebar.translated %}
+  {% assign the_sidebar = "sidebar_menu_list_items_trans.liquid" %}
+{% else %}
+  {% assign the_sidebar = "sidebar_menu_list_items.liquid" %}
+{% endif %}
+
 
 {% comment %}
 sidebar configuration for print files

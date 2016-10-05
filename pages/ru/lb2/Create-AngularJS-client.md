@@ -5,20 +5,18 @@ layout: translation
 keywords: LoopBack
 tags:
 sidebar: ru_lb2_sidebar
-permalink: /doc/ru/lb2/-AngularJS.html
+permalink: /doc/ru/lb2/Create-AngularJS-client.html
 summary:
 ---
 
 {% include important.html content="
-
-**Необходимое условие**:Установите StrongLoop, как описано в [Установка StrongLoop](https://docs.strongloop.com/pages/viewpage.action?pageId=5310693).
+**Необходимое условие**:Установите StrongLoop, как описано в [Установка StrongLoop](Installing-StrongLoop.html).
 
 **Рекомендации**: Прочитайте [Основные понятия LoopBack](LoopBack-core-concepts.html).
+" %}
 
-" %}{% include note.html content="
-
+{% include note.html content="
 Чтоб выполнить данный шаг, у вас должно быть базовое понимание [AngularJS](https://angularjs.org/).
-
 " %}
 
 LoopBack AngularJS SDK автоматически создает клиентский API, который позволяет вам вызывать ваш LoopBack Node API.
@@ -85,7 +83,7 @@ $ cp -r loopback-getting-started-intermediate/client <your-app-dir>
 
 Файл `index.html` единственный файл в верхнем уровне папки `/client`, и определяет основную целевую страницу приложенияand.  Давайте откроем его в редакторе:
 
-**client/index.html**  Expand source
+**client/index.html**
 
 ```
 <!DOCTYPE html>
@@ -143,7 +141,7 @@ $ cp -r loopback-getting-started-intermediate/client <your-app-dir>
 
 В `js/app.js` файле определяется конфигурация приложения.
 
-**js/app.js**  Expand source
+**js/app.js**  
 
 ```js
 angular
@@ -346,7 +344,7 @@ angular
 
 ### Контроллеры
 
-ВAngular, _контроллер  _это функция JavaScript конструктора которая используется для усиления [Angular Scope](https://docs.angularjs.org/guide/scope).
+ВAngular, контроллер  это функция JavaScript конструктора которая используется для усиления [Angular Scope](https://docs.angularjs.org/guide/scope).
 
 Когда контролер подключен к DOM через директивы [ng-controller](https://docs.angularjs.org/api/ng/directive/ngController), Angular будет создавать новый Controller  объект, используя функцию конструктора. Новый дочерняя область (scope) будут доступны в виде инъекционного параметра функции конструктора `$scope`. Для получения более, see [Understanding Controllers](https://docs.angularjs.org/guide/controller) (AngularJS documentation).
 
@@ -354,7 +352,7 @@ angular
 
 Контролер `auth.js обрабатывает регистрацию пользователей, авторизацию и выход`.  Когда пользователь входит в систему, в `currentUser` объект установлен в корневой области (scope).  Другие части приложения проверяют `currentUser` объект при выполнении действии.  Когда пользователь выходит, `currentUser объект разрушается`.
 
-**js/controllers/auth.js**  Expand source
+**js/controllers/auth.js**  
 
 ```js
 angular

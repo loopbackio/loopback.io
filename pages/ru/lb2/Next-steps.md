@@ -1,5 +1,5 @@
 ---
-title: "Next steps"
+title: "Узнать больше"
 lang: ru
 layout: translation
 toc: false

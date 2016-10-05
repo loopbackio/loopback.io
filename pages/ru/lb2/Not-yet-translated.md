@@ -1,9 +1,9 @@
 ---
 title: "Not yet translated"
-lang: ja
+lang: ru
 layout: stub
-sidebar: ja_lb2_sidebar
-permalink: /doc/ja/lb2/Not-yet-translated.html
+sidebar: ru_lb2_sidebar
+permalink: /doc/ru/lb2/Not-yet-translated.html
 summary:
 ---
 

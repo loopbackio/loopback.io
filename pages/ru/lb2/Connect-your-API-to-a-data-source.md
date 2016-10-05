@@ -11,7 +11,7 @@ summary:
 
 {% include important.html content="
 
-**Необходимое условие**:Установите StrongLoop, как описано в [Установка StrongLoop](https://docs.strongloop.com/pages/viewpage.action?pageId=5310693).
+**Необходимое условие**:Установите StrongLoop, как описано в [Установка StrongLoop](Installing-StrongLoop.html).
 
 **Рекомендации**: Прочитайте [Основные понятия LoopBack](LoopBack-core-concepts.html).
 

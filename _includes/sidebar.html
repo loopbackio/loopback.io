@@ -2,5 +2,5 @@
 <!-- NOTE: sidebar = site.data.sidebars.mydoc_sidebar.entries -->
 <div class="sidebarTitle"><a href="{{sidebar.url}}">{{sidebar.title}}</a></div>
 <ul id="mysidebar" class="nav-list">
-  {% include sidebar_menu_list_items.liquid menuitems=sidebar.children %}
+  {% include {{the_sidebar}} menuitems=sidebar.children %}
 </ul>

@@ -9,12 +9,6 @@ permalink: /doc/ru/lb2/Installing-StrongLoop.html
 summary:
 ---
 
-{% include important.html content="
-
-Если вы установили StrongLoop ранее 6 августа 2014 г., то вам будет полезно прочитать  [Обновление до последней версии](https://docs.strongloop.com/display/SL/Updating+to+the+latest+version).
-
-" %}
-
 ## С чего следует начать
 
 Во-первых, если вы еще не сделали этого, то вам следует [установить Node.js](http://nodejs.org/download/), который включает `npm`, менеджер пакетов. 
