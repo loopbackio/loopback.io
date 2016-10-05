@@ -23,7 +23,7 @@ The built-in models are:
 * [Access token REST API](/doc/{{page.lang}}/lb2/Access-token-REST-API.html)
 * [ACL REST API](/doc/{{page.lang}}/lb2/ACL-REST-API.html)
 * [Application REST API](/doc/{{page.lang}}/lb2/Application-REST-API.html)
-* [Email REST API](/doc/{{page.lang}}/lb2/Email-REST-API.html)
+* Email (See the [email connector](/doc/en/lb2/Email-connector.html) page)
 * [Relation REST API](/doc/{{page.lang}}/lb2/Relation-REST-API.html)
 * [Role REST API](/doc/{{page.lang}}/lb2/Role-REST-API.html)
 * [User REST API](/doc/{{page.lang}}/lb2/User-REST-API.html)
