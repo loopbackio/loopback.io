@@ -148,7 +148,7 @@ children:
     output: 'web, pdf'
 
   - title: 'Learn more'
-    url: /doc/ru/lb2/Learn-more.html  
+    url: /doc/ru/lb2/Learn-more.html
     output: 'web, pdf'
 
 - title: 'Security advisories'
@@ -392,13 +392,10 @@ children:
       url: /doc/ru/lb2/Application-REST-API.html
       output: 'web, pdf'
 
-    - title: 'Email REST API'
-      url: /doc/ru/lb2/Email-REST-API.html
-      output: 'web, pdf'
-
     - title: 'Relation REST API'
       url: /doc/ru/lb2/Relation-REST-API.html
       output: 'web, pdf'
+
 
     - title: 'Role REST API'
       url: /doc/ru/lb2/Role-REST-API.html

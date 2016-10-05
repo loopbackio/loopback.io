@@ -16,7 +16,7 @@ Loopback provides useful built-in models for common use cases:
 * **[Application model](#application-model)** - contains metadata for a client application that has its own identity and associated configuration with the LoopBack server.
 * **[User model](#user-model)** - register and authenticate users of your app locally or against third-party services.
 * **[Access control models](#access-control-models)** - ACL, AccessToken, Scope, Role, and RoleMapping models for controlling access to applications, resources, and methods.
-* **[Email model](#email-model)** - send emails to your app users using SMTP or third-party services.
+* **Email model (see [email connector](/doc/{{page.lang}}/lb2/Email-connector.html))** - send emails to your app users using SMTP or third-party services.
 
 The built-in models (except for Email) extend [PersistedModel](http://apidocs.strongloop.com/loopback/#persistedmodel),
 so they automatically have a full complement of create, update, and delete (CRUD) operations.
@@ -85,79 +85,3 @@ ACL.create({
     }
 );
 ```
-
-## Email model
-
-Set up an email data source by adding an entry to `/server/datasources.json`, such as the following (for example):
-
-{% include code-caption.html content="server/datasources.json" %}
-```javascript
-{
-  ...
-  "myEmailDataSource": {
-     "connector": "mail",
-     "transports": [{
-       "type": "smtp",
-       "host": "smtp.private.com",
-       "secure": false,
-       "port": 587,
-       "tls": {
-         "rejectUnauthorized": false
-       },
-       "auth": {
-         "user": "me@private.com",
-         "pass": "password"
-       }
-     }]
-  }
-  ...
-}
-```
-
-See [Email connector](/doc/{{page.lang}}/lb2/Email-connector.html) for more information on email data sources.
-
-Then, reference the data source in `/server/model-config.json` as follows (for example):
-
-{% include code-caption.html content="server/model-config.json" %}
-```javascript
-{
-  ...
-  "Email": {
-    "dataSource": "myEmailDataSource",
-  },
-  ...
-}
-```
-
-### Send email messages
-
-The following example illustrates how to send emails from an app. Add the following code to a file in the `/models` directory:
-
-{% include code-caption.html content="server/models/model.js" %}
-```javascript
-module.exports = function(MyModel) {
-  // send an email
-  MyModel.sendEmail = function(cb) {
-    MyModel.app.models.Email.send({
-      to: 'foo@bar.com',
-      from: 'you@gmail.com',
-      subject: 'my subject',
-      text: 'my text',
-      html: 'my <em>html</em>'
-    }, function(err, mail) {
-      console.log('email sent!');
-      cb(err);
-    });
-  }
-};
-```
-
-The default model definition file is [common/models/email.json](https://github.com/strongloop/loopback/blob/master/common/models/email.json) in the LoopBack repository. 
-
-{% include important.html content="
-The mail connector uses [nodemailer](http://www.nodemailer.com/). See the [nodemailer docs](http://www.nodemailer.com/) for more information.
-" %}
-
-### Confirming email address
-
-See [Verifying email addresses](/doc/{{page.lang}}/lb2/Registering-users.html#verifying-email-addresses).

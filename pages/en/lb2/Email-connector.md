@@ -11,6 +11,12 @@ summary:
 
 The email connector is built in to LoopBack, so you don't need to install it.
 
+{% include important.html title="Nodemailer: Where to Find Documentation" content="
+
+The email connector is essentially a LoopBack-integrated interface to the [nodemailer](https://nodemailer.com/) library. This page gives a usage example; for full documentation of configuration options, **refer to the [nodemailer documention](https://github.com/nodemailer/nodemailer#setting-up)**.
+
+" %}
+
 ## Creating an email data source
 
 Create a new email data source with the [data source generator](/doc/{{page.lang}}/lb2/Data-source-generator.html):
@@ -63,6 +69,12 @@ Configure the email data source by editing `/server/datasources.json` (for exa
 }
 ```
 
+{% include note.html title="More Configuration Options" content="
+
+For full documentation of configuration options, **refer to the [nodemailer documention](https://github.com/nodemailer/nodemailer#setting-up)**.
+
+" %}
+
 ### Using GMail
 
 {% include tip.html content="
@@ -110,3 +122,32 @@ Then, connect models to the data source in `/server/model-config.json` as follow
   ...
 }
 ```
+
+## Sending email messages
+
+The following example illustrates how to send emails from an app. Add the following code to a file in the `/models` directory:
+
+{% include code-caption.html content="server/models/model.js" %}
+```javascript
+module.exports = function(MyModel) {
+  // send an email
+  MyModel.sendEmail = function(cb) {
+    MyModel.app.models.Email.send({
+      to: 'foo@bar.com',
+      from: 'you@gmail.com',
+      subject: 'my subject',
+      text: 'my text',
+      html: 'my <em>html</em>'
+    }, function(err, mail) {
+      console.log('email sent!');
+      cb(err);
+    });
+  }
+};
+```
+
+The default model definition file is [common/models/email.json](https://github.com/strongloop/loopback/blob/master/common/models/email.json) in the LoopBack repository. 
+
+## Confirming email address
+
+See [Verifying email addresses](/doc/{{page.lang}}/lb2/Registering-users.html#verifying-email-addresses).
