@@ -2,23 +2,7 @@
 layout: page-no-toc
 ---
 {% assign en_url = page.permalink | replace: page.lang, "en" %}
-
-{% case page.lang %}
-  {% when 'fr' %}
-    {% assign language = "French" %}
-  {% when 'ja' %}
-    {% assign language = "Japanese" %}
-  {% when 'ko' %}
-    {% assign language = "Korean" %}
-  {% when 'pt-br' %}
-    {% assign language = "Portuguese" %}
-  {% when 'ru' %}
-    {% assign language = "Russian" %}
-  {% when 'zh' %}
-    {% assign language = "Chinese" %}
-  {% else %}
-    {% assign language = "(unknown language)" %}
-{% endcase %}
+{% include custom/langconfigs.html %}
 
 {% if page.trans_complete == false %}
   <div class="alert alert-danger" role="alert">

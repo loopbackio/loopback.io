@@ -1,42 +1,37 @@
 ---
-title: "Использование LoopBack инструментов"
+title: "Command-line reference (slc loopback)"
 lang: ru
 layout: translation
 keywords: LoopBack
 tags:
 sidebar: ru_lb2_sidebar
-permalink: /doc/ru/lb2/Command-line-tools.html
+permalink: Command-line-reference-slc-loopback-.html
 summary:
 ---
 
-LoopBack предоставляет два мощных инструмента для создания и работы с приложениями:
+{% include important.html content="
 
-*   [инструмент командной строки slc loopback](/doc/ru/lb2/Command-line-reference-slc-loopback-.html).
-*   [StrongLoop Arc](https://docs.strongloop.com/display/ARC/StrongLoop+Arc), графический инструмент.
+**Необходимые условия**: Установите StrongLoop, следуя инструкции [Начало работы с LoopBack](-LoopBack.html).
 
-##  slc loopback инструмент командной строки
+" %}
 
 Используйте команду slc loopbac для создания шаблона приложения. Базовый шаблон генерирует лишь стандартный код для вашего приложения. В дальнейшем вы можите модифицировать и изменять его под свои нужды.
 
-Команда slc loopback- представляет из себя [Генератор приложения](https://docs.strongloop.com/display/RU/Application+generator) для создания нового LoopBack приложения и нескольких дополнительных генераторов для создания базового шаблона приложения.
+Команда slc loopback- представляет из себя [Генератор приложения](Application-generator.html) для создания нового LoopBack приложения и нескольких дополнительных генераторов для создания базового шаблона приложения.
 
-*   [ACL generator](https://docs.strongloop.com/display/RU/ACL+generator)
-*   [Application generator](https://docs.strongloop.com/display/RU/Application+generator)
-*   [Data source generator](https://docs.strongloop.com/display/RU/Data+source+generator)
-*   [Example generator](https://docs.strongloop.com/display/RU/Example+generator)
-*   [Model generator](https://docs.strongloop.com/display/RU/Model+generator)
-*   [Property generator](https://docs.strongloop.com/display/RU/Property+generator)
-*   [Relation generator](https://docs.strongloop.com/display/RU/Relation+generator)
-*   [Swagger generator](https://docs.strongloop.com/display/RU/Swagger+generator)
+*   [ACL generator](ACL-generator.html)
+*   [Application generator](Application-generator.html)
+*   [Data source generator](Data-source-generator.html)
+*   [Example generator](Example-generator.html)
+*   [Model generator](Model-generator.html)
+*   [Property generator](Property-generator.html)
+*   [Relation generator](Relation-generator.html)
+*   [Swagger generator](Swagger-generator.html)
 
 {% include note.html content="
 
 slc команда имеет много дополнительных суб-команд не специфичных для LoopBack, для создания, развертывания и управления Node приложением. См. [Эксплуатация Node приложений](https://docs.strongloop.com/display/SLC/Operating+Node+applications)  для получения более подробной информации и [Справочник по командам командной строки](https://docs.strongloop.com/display/NODE/Command-line+reference) для получения справки о командах.
 
-" %}
+" %} slc loopback использует [Yeoman](http://yeoman.io/) "за кулисами". Если вы уже используете Yeoman и вам удобно его использовать, то вы можите установить LoopBack генератор используя команду`npm install -g generator-loopback.`
 
-## StrongLoop Arc
-
-StrongLoop Arc - это графический инструмент для создания, развертывания и мониторинга приложений. 
-
-Для получения более детальной информации см.  [StrongLoop Arc](https://docs.strongloop.com/display/ARC/StrongLoop+Arc).
+Тогда везде, где в документации говорится использовать slc loopback, просто используйте yo loopback. Например для создания новой модели используйте `yo loopback:model`.

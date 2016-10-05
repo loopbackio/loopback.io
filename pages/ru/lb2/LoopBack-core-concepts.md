@@ -1,5 +1,5 @@
 ---
-title: "LoopBack"
+title: "Основные понятия LoopBack"
 lang: ru
 layout: translation
 keywords: LoopBack

@@ -1,5 +1,5 @@
 ---
-title: "Create a simple API"
+title: "Создание простого API"
 lang: ru
 layout: translation
 toc: false

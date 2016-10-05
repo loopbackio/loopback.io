@@ -1,5 +1,5 @@
 ---
-title: "Add a static web page"
+title: "Добавление статической веб-страницы"
 lang: ru
 layout: translation
 toc: false
