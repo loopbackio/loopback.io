@@ -28,6 +28,7 @@ To create a new translated page from an existing English page:
  - Add `lang` attribute with the appropriate value.  
 1. Start translating the content!
 1. Make sure your navigation sidebar `_data/sidebars/xx_lb_sidebar.yml` contains a link to your article somewhere (ideally in a logical location).
+1. Add the `translated: true` property for the article in the sidebar file.
 
 ### Front matter example
 
@@ -42,10 +43,10 @@ sidebar: xx_lb2_sidebar
 lang: ja
 tags:
 permalink: /doc/xx/lb2/Foo.html
-summary: <<Translate or add a summary in the target language>>"
+summary: <<Translate or add a summary in the target language>>
 ---
 ```
 
 In the example above, `xx` is the ISO language code for your language (for example `fr` for French, and so on).
 
-The `trans_completed` property indicates whether the page has been fully translated.  If there is any untranslated (English) content remaining on the page, set this property to `false` to display a notification to that effect; otherwise, omit the property.
+The `trans_complete` property indicates whether the page has been fully translated.  If there is any untranslated (English) content remaining on the page, set this property to `false` to display a notification to that effect; otherwise, omit the property.

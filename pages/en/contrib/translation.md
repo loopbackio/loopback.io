@@ -16,5 +16,6 @@ given time the content may be partially translated (even the content on a single
 content may not stay up with changes to the English content.
 
 In general, a community translator may need to perform two major tasks:
+
 - [Add a new language](Adding_a_new_language.html) to begin translation into a language that is not yet offered.
 - [Translate an article](Translating_articles.html) into an existing language.

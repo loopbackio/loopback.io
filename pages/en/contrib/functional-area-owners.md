@@ -2,455 +2,482 @@
 title: Functional area owners
 tags: [contributing]
 keywords:
-last_updated: Sept 27, 2016
+last_updated: Oct 5, 2016
 summary: "List of who oversees each functional area of Loopback"
 sidebar: contrib_sidebar
 permalink: /doc/en/contrib/functional-area-owners.html
 ---
-## API definition
+<!--
+This file is parsed programmatically by other reporting apps. Please DO NOT
+deviate from the current formatting.
+
+TLDR:
+Standard GitHub markdown (GFM) with two levels of headers, stardard set of
+list items each containing N sublist items.
+
+Example:
+# Group
+
+## N subgroups [optional]
 
 - Owner
-  - gunjpan
+ - Sublist of items
 - Backup
-  - richardpringle
-- Repos
-  - loopback-api-definition
-  - loopback-component-explorer
-  - loopback-swagger
+ - Sublist of items
+- Repo
+ - Sublist of items
 - GitHub label
-  - api-definition
+ - Sublist of items
 
-## Boot
+See the actual content below for detailed examples.
+-->
 
-- Owner
-  - davidcheung
-  - deepakrkris
-- Backup
-  - 0candy
-  - gunjpan
-  - richardpringle
-- Repos
-  - loopback-boot
-  - loopback-example-app-logic
-  - loopback-example-middleware
+# API definition
+
 - GitHub label
-  - boot
-
-## Components
-
-### Passport
-
+  - api-definition ([list of issues](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+label%3Aapi-definition+org%3Astrongloop))
 - Owner
-  - loay
+  - [gunjpan](https://github.com/gunjpan)
 - Backup
-  - jannyHou
+  - [richardpringle](https://github.com/richardpringle)
 - Repos
-  - loopback-component-passport
-  - loopback-example-passport
+  - [loopback-api-definition](https://github.com/strongloop/loopback-api-definition)
+  - [loopback-component-explorer](https://github.com/strongloop/loopback-component-explorer)
+  - [loopback-swagger](https://github.com/strongloop/loopback-swagger)
+
+# Boot
+
 - GitHub label
-  - component-push
-
-### Push notifications
-
+  - boot ([list of issues](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+label%3Aboot+org%3Astrongloop))
 - Owner
-  - superkhau
+  - [davidcheung](https://github.com/davidcheung)
+  - [deepakrkris](https://github.com/deepakrkris)
 - Backup
-  - Amir-61
-  - gunjpan
+  - [0candy](https://github.com/0candy)
+  - [gunjpan](https://github.com/gunjpan)
+  - [richardpringle](https://github.com/richardpringle)
 - Repos
-  - loopback-component-push
-  - loopback-example-push
+  - [loopback-boot](https://github.com/strongloop/loopback-boot)
+  - [loopback-example-app-logic](https://github.com/strongloop/loopback-example-app-logic)
+  - [loopback-example-middleware](https://github.com/strongloop/loopback-example-middleware)
+
+# Components
+
+## Passport
+
 - GitHub label
-  - component-passport
-
-### Storage
-
+  - component-passport ([list of issues](https://github.com/issues?utf8=✓&q=is%3Aopen+label%3Acomponent-passport+org%3Astrongloop))
 - Owner
-  - richardpringle
+  - [loay](https://github.com/loay)
 - Backup
-  - loay
+  - [jannyHou](https://github.com/jannyHou)
 - Repos
-  - loopback-component-storage
-  - loopback-example-storage
+  - [loopback-component-passport](https://github.com/strongloop/loopback-component-passport)
+  - [loopback-example-passport](https://github.com/strongloop/loopback-example-passport)
+
+## Push notifications
+
 - GitHub label
-  - component-storage
-
-## Connectors
-
-### Email
-
+  - component-push ([list of issues](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+label%3Acomponent-push+org%3Astrongloop))
 - Owner
-  - jannyHou
+  - [superkhau](https://github.com/superkhau)
 - Backup
-  - davidcheung
+  - [Amir-61](https://github.com/amir-61)
+  - [gunjpan](https://github.com/gunjpan)
 - Repos
-  - loopback-component-email
+  - [loopback-component-push](https://github.com/strongloop/loopback-component-push)
+  - [loopback-example-push](https://github.com/strongloop/loopback-example-push)
+
+## Storage
+
 - GitHub label
-  - connector-email
-
-### HTTP
-
+  - component-storage ([list of issues](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+label%3Acomponent-storage+org%3Astrongloop))
 - Owner
-  - gunjpan
+  - [richardpringle](https://github.com/richardpringle)
 - Backup
-  - richardpringle
+  - [loay](https://github.com/loay)
 - Repos
-  - loopback-connector-jsonrpc
-  - loopback-connector-remote
-  - loopback-connector-rest
-  - loopback-connector-soap
-  - loopback-connector-swagger
-  - loopback-example-connector
+  - [loopback-component-storage](https://github.com/strongloop/loopback-component-storage)
+  - [loopback-example-storage](https://github.com/strongloop/loopback-example-storage)
+
+# Connectors
+
+## Email
 - GitHub label
-  - connector-http
-
-### KeyValue
-
+  - connector-email ([list of issues](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+label%3Aconnector-email+org%3Astrongloop))
 - Owner
-  - superkhau
+  - [jannyHou](https://github.com/jannyHou)
 - Backup
-  - bajtos
+  - [davidcheung](https://github.com/davidcheung)
 - Repos
-  - loopback (remoting metadata)
-  - loopback-datasource-juggler (lib/kvao, lib/connectors/kv-memory)
-  - loopback-kv-connector-extremescale
-  - loopback-kv-connector-hazelcast
-  - loopback-kv-connector-memcached
-  - loopback-kv-connector-redis
+  - [loopback-component-email](https://github.com/strongloop/loopback-component-email)
+
+## HTTP
+
+- GitHub label
+  - connector-http ([list of issues]((https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+label%3Aconnector-http+org%3Astrongloop)))
+- Owner
+  - [gunjpan](https://github.com/gunjpan)
+- Backup
+  - [richardpringle](https://github.com/richardpringle)
+- Repos
+  - [loopback-connector-jsonrpc](https://github.com/strongloop/loopback-connector-jsonrpc)
+  - [loopback-connector-remote](https://github.com/strongloop/loopback-connector-remote)
+  - [loopback-connector-rest](https://github.com/strongloop/loopback-connector-rest)
+  - [loopback-connector-soap](https://github.com/strongloop/loopback-connector-soap)
+  - [loopback-connector-swagger](https://github.com/strongloop/loopback-connector-swagger)
+  - [loopback-example-connector](https://github.com/strongloop/loopback-example-connector)
+
+## KeyValue
+
 - GitHub label
   - connector-kv
-
-### Messaging
-
 - Owner
-  - TBD
+  - [superkhau](https://github.com/superkhau)
 - Backup
-  - TBD
+  - [bajtos](https://github.com/bajtos)
 - Repos
-  - loopback-connector-mqlight
+  - [juggler/kvao.js](https://github.com/strongloop/loopback-datasource-juggler/blob/master/lib/kvao.js)
+  - [juggler/kv-memory.js](https://github.com/strongloop/loopback-datasource-juggler/blob/master/connectors/kv-memory.js)
+  - [loopback/remoting-metadata](https://github.com/strongloop/loopback/tree/master/common/models)
+  - [loopback-connector-kv-extremescale](https://github.com/strongloop/loopback-connector-kv-extremescale)
+  - [loopback-connector-kv-hazelcast](https://github.com/strongloop/loopback-connector-kv-hazelcast)
+  - [loopback-connector-kv-memcached](https://github.com/strongloop/loopback-connector-kv-memcached)
+  - [loopback-connector-kv-redis](https://github.com/strongloop/loopback-connector-kv-redis)
+
+## Messaging
+
 - GitHub label
   - connector-messaging
-
-### NoSQL
-
 - Owner
-  - 0candy
-  - jannyHou
-  - superkhau
+  - TBD
 - Backup
-  - loay
-  - Amir-61
+  - TBD
+- Repos
+  - [loopback-connector-mqlight](https://github.com/strongloop/loopback-connector-mqlight)
+
+## NoSQL
+
+- GitHub label
+  - connector-nosql ([list of issues](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+label%3Aconnectors-nosql+org%3Astrongloop))
+- Owner
+  - [0candy](https://github.com/0candy)
+  - [jannyHou](https://github.com/jannyHou)
+  - [superkhau](https://github.com/superkhau)
+- Backup
+  - [loay](https://github.com/loay)
+  - [Amir-61](https://github.com/amir-61)
 - Repos
   - memory connector
-  - loopback-connector-cloudant
-  - loopback-connector-mongodb
-  - loopback-connector-redis
+  - [loopback-connector-cloudant](https://github.com/strongloop/loopback-connector-cloudant)
+  - [loopback-connector-mongodb](https://github.com/strongloop/loopback-connector-mongodb)
+  - [loopback-connector-redis](https://github.com/strongloop/loopback-connector-redis)
   - transient connector
+
+## SQL
+
 - GitHub label
-  - connector-nosql
-
-### SQL
-
+  - connector-sql ([list of issues](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+label%3Aconnectors-sql+org%3Astrongloop))
 - Owner
-  - 0candy
-  - deepakrkris
-  - jannyHou
-  - loay
-  - qpresley
-  - superkhau
+  - [0candy](https://github.com/0candy)
+  - [deepakrkris](https://github.com/deepakrkris)
+  - [jannyHou](https://github.com/jannyHou)
+  - [loay](https://github.com/loay)
+  - [qpresley](https://github.com/qpresley)
+  - [superkhau](https://github.com/superkhau)
 - Backup
-  - Amir-61
+  - [Amir-61](https://github.com/amir-61)
 - Repos
-  - loopback-connector
-  - loopback-connector-dashdb
-  - loopback-connector-db2
-  - loopback-connector-db2z
-  - loopback-connector-informix
-  - loopback-connector-mssql
-  - loopback-connector-mysql
-  - loopback-connector-oracle
-  - loopback-connector-postgresql
-  - loopback-connector-sqlite3
-  - loopback-example-database
-  - loopback-oracle-builder
-  - loopback-oracle-installer
+  - [loopback-connector](https://github.com/strongloop/loopback-connector)
+  - [loopback-connector-dashdb](https://github.com/strongloop/loopback-connector-dashdb)
+  - [loopback-connector-db2](https://github.com/strongloop/loopback-connector-db2)
+  - [loopback-connector-db2iseries](https://github.com/strongloop/loopback-connector-db2iseries)
+  - [loopback-connector-db2z](https://github.com/strongloop/loopback-connector-db2z)
+  - [loopback-connector-informix](https://github.com/strongloop/loopback-connector-informix)
+  - [loopback-connector-mssql](https://github.com/strongloop/loopback-connector-mssql)
+  - [loopback-connector-mysql](https://github.com/strongloop/loopback-connector-mysql)
+  - [loopback-connector-oracle](https://github.com/strongloop/loopback-connector-oracle)
+  - [loopback-connector-postgresql](https://github.com/strongloop/loopback-connector-postgresql)
+  - [loopback-connector-sqlite3](https://github.com/strongloop/loopback-connector-sqlite3)
+  - [loopback-example-database](https://github.com/strongloop/loopback-example-database)
+  - [loopback-oracle-builder](https://github.com/strongloop/loopback-oracle-builder)
+  - [loopback-oracle-installer](https://github.com/strongloop/loopback-oracle-installer)
+
+# Juggler
+
+## Composition
+
 - GitHub label
-  - connector-sql
-
-## Juggler
-
-### Composition
-
+  - juggler-composition ([list of issues](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+label%3Ajuggler-composition+org%3Astrongloop))
 - Owner
-  - Amir-61
-  - richardpringle
+  - [Amir-61](https://github.com/amir-61)
+  - [richardpringle](https://github.com/richardpringle)
 - Backup
-  - superkhau
+  - [superkhau](https://github.com/superkhau)
 - Repos
-  - mixins.js in loopback-datasource-juggler
-  - loopback-example-mixins
+  - [juggler/mixins.js](https://github.com/strongloop/loopback-datasource-juggler/blob/master/lib/mixins.js)
+  - [loopback-example-mixins](https://github.com/strongloop/loopback-example-mixins)
+
+## Model definition
+
 - GitHub label
-  - juggler-composition
-
-### Model definition
-
+  - juggler-model-definition ([list of issues](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+label%3Ajuggler-model-definition+org%3Astrongloop))
 - Owner
-  - gunjpan
-  - superkhau
+  - [gunjpan](https://github.com/gunjpan)
+  - [superkhau](https://github.com/superkhau)
 - Backup
-  - 0candy
+  - [0candy](https://github.com/0candy)
 - Repos
-  - loopback-model
-  - model-definition.js in loopback-datasource-juggler
-- GitHub label
-  - juggler-model-definition
+  - [juggler/model-definition.js](https://github.com/strongloop/loopback-datasource-juggler/blob/master/lib/model-definition.js)
+  - [loopback-model](https://github.com/strongloop/loopback-model)
 
-### Persisted Model
+## Persisted Model
 
-- Owner
-  - Amir-61
-  - superkhau
-- Backup
-  - loay
-- Repos
-  - dao.js in loopback-datasource-juggler
-  - loopback-filters
-  - loopback-model-persistence
 - GitHub Label
-  - juggler-persisted-model
-
-### Relations
-
+  - juggler-dao ([list of issues](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+label%3Ajuggler-dao+org%3Astrongloop))
 - Owner
-  - Janny
+  - [Amir-61](https://github.com/amir-61)
+  - [superkhau](https://github.com/superkhau)
 - Backup
-  - Amir-61
-  - superkhau
+  - [loay](https://github.com/loay)
 - Repos
-  - relation.js in loopback-datasource-juggler
-  - relation-definition.js in loopback-datasource-juggler
-  - loopback-example-relations
+  - [juggler/dao.js](https://github.com/strongloop/loopback-datasource-juggler/blob/master/lib/dao.js)
+  - [loopback-filters](https://github.com/strongloop/loopback-filters)
+  - [loopback-model-persistence](https://github.com/strongloop/loopback-model-persistence)
+
+## Relations
+
 - GitHub label
-  - juggler-relations
-
-### Validation
-
+  - juggler-relations ([list of issues](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+label%3Ajuggler-relations+org%3Astrongloop))
 - Owner
-  - Amir-61
+  - [jannyHou](https://github.com/jannyHou)
 - Backup
-  - davidcheung
-  - superkhau
+  - [Amir-61](https://github.com/amir-61)
+  - [superkhau](https://github.com/superkhau)
 - Repos
-  - validation.js in loopback-datasource-juggler
+  - [juggler/relation.js](https://github.com/strongloop/loopback-datasource-juggler/blob/master/lib/relation.js)
+  - [juggler/relation-definition.js](https://github.com/strongloop/loopback-datasource-juggler/blob/master/lib/relation-definition.js)
+  - [loopback-example-relations](https://github.com/strongloop/loopback-example-relations)
+
+## Validation
+
 - GitHub label
-  - juggler-validation
-
-## LoopBack
-
-### Auth
-
+  - juggler-validation ([list of issues](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+label%3Ajuggler-validation+org%3Astrongloop))
 - Owner
-  - loay
+  - [Amir-61](https://github.com/amir-61)
 - Backup
-  - richardpringle
+  - [davidcheung](https://github.com/davidcheung)
+  - [superkhau](https://github.com/superkhau)
 - Repos
-  - loopback-acl-route
-  - loopback-component-oauth2
-  - loopback-example-access-control
-  - loopback-example-ssl
-  - loopback-example-user-management
-  - loopback-policy
+  - [juggler/validation.js](https://github.com/strongloop/loopback-datasource-juggler/blob/master/lib/validation.js)
+
+# LoopBack
+
+## Auth
+
 - GitHub label
-  - auth
-
-### Glue
-
+  - loopback-auth ([list of issues](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+label%3Aloopback-auth+org%3Astrongloop))
 - Owner
-  - TBD
+  - [loay](https://github.com/loay)
 - Backup
-  - TBD
+  - [richardpringle](https://github.com/richardpringle)
 - Repos
-  - TBD
+  - [loopback-acl-route](https://github.com/strongloop/loopback-acl-route)
+  - [loopback-component-oauth2](https://github.com/strongloop/loopback-component-oauth2)
+  - [loopback-example-access-control](https://github.com/strongloop/loopback-example-access-control)
+  - [loopback-example-ssl](https://github.com/strongloop/loopback-example-ssl)
+  - [loopback-example-user-management](https://github.com/strongloop/loopback-example-user-management)
+  - [loopback-policy](https://github.com/strongloop/loopback-policy)
+
+## Glue
+
 - GitHub Label
   - glue
-
-### Logging
-
 - Owner
-  - davidcheung
+  - TBD
 - Backup
   - TBD
 - Repos
-  - loopback-logger
+  - TBD
+
+## Logging
+
 - GitHub label
   - logging
-
-### Multitenancy
-
 - Owner
-  - superkhau
+  - [davidcheung](https://github.com/davidcheung)
 - Backup
-  - richardpringle
+  - TBD
 - Repos
-  - loopback-multitenancy
-  - loopback-multitenant-poc
-  - poc-loopback-multitenancy
+  - [loopback-logger](https://github.com/strongloop/loopback-logger)
+
+## Multitenancy
+
 - GitHub label
-  - multitenancy
-
-### Registries
-
+  - multitenancy ([list of issues](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+label%3Amultitenancy+org%3Astrongloop))
 - Owner
-  - davidcheung
+  - [superkhau](https://github.com/superkhau)
+- Backup
+  - [richardpringle](https://github.com/richardpringle)
+- Repos
+  - [loopback-multitenancy](https://github.com/strongloop/loopback-multitenancy)
+  - [loopback-multitenant-poc](https://github.com/strongloop/loopback-multitenant-poc)
+
+## Registries
+
+- GitHub label
+  - loopback-registry ([list of issues](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+label%3Aloopback-registry+org%3Astrongloop))
+- Owner
+  - [davidcheung](https://github.com/davidcheung)
+  - [deepakrkris](https://github.com/deepakrkris)
+- Backup
+  - [gunjpan](https://github.com/gunjpan)
+  - [richardpringle](https://github.com/richardpringle)
+- Repos
+  - [loopback/loopback.js](https://github.com/strongloop/loopback/blob/master/lib/loopback.js)
+  - [loopback-getting-started](https://github.com/strongloop/loopback-getting-started)
+  - [loopback-getting-started-intermediate](https://github.com/strongloop/loopback-getting-started-intermediate)
+
+## Remoting
+
+- GitHub label
+  -  remoting ([list of issues](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+label%3Aremoting+org%3Astrongloop))
+- Owner
+  - [gunjpan](https://github.com/gunjpan)
+  - [richardpringle](https://github.com/richardpringle)
   - deepakrkris
 - Backup
-  - gunjpan
-  - richardpringle
+  - [0candy](https://github.com/0candy)
+  - [davidcheung](https://github.com/davidcheung)
 - Repos
-  - loopback.js in loopback
-  - loopback-getting-started
-  - loopback-getting-started-intermediate
+  - [loopback/server-app.js](https://github.com/strongloop/loopback/blob/master/lib/server-app.js)
+  - [loopback-example-isomorphic](https://github.com/strongloop/loopback-example-isomorphic)
+  - [loopback-example-offline-sync](https://github.com/strongloop/loopback-example-offline-sync)
+  - [loopback-phase](https://github.com/strongloop/loopback-phase)
+  - [strong-remoting](https://github.com/strongloop/strong-remoting)
+
+# SDKs
+
+## Android
+
 - GitHub label
-  - registries
-
-### Remoting
-
+  - sdk-android ([list of issues](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+label%3Asdk-android+org%3Astrongloop))
 - Owner
-  - gunjpan
-  - richardpringle
-  - deepakrkris
+  - [loay](https://github.com/loay)
 - Backup
-  - 0candy
-  - davidcheung
+  - [superkhau](https://github.com/superkhau)
 - Repos
-  - server-app.js in loopback
-  - loopback-example-isomorphic
-  - loopback-example-offline-sync
-  - loopback-phase
-  - strong-remoting
+  - [loopback-android-getting-started](https://github.com/strongloop/loopback-android-getting-started)
+  - [loopback-sdk-android](https://github.com/strongloop/loopback-sdk-android)
+
+## Angular 1.x
+
 - GitHub label
-  - remoting
-
-## SDKs
-
-### Android
-
+  - sdk-angular ([list of issues](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+label%3Asdk-angular+org%3Astrongloop))
 - Owner
-  - loay
+  - [davidcheung](https://github.com/davidcheung)
 - Backup
-  - superkhau
+  - [0candy](https://github.com/0candy)
 - Repos
-  - loopback-android-getting-started
-  - loopback-sdk-android
+  - [angular-live-set](https://github.com/strongloop/angular-live-set)
+  - [grunt-loopback-sdk-angular](https://github.com/strongloop/grunt-loopback-sdk-angular)
+  - [gulp-loopback-sdk-angular](https://github.com/strongloop/gulp-loopback-sdk-angular)
+  - [loopback-sdk-angular](https://github.com/strongloop/loopback-sdk-angular)
+  - [loopback-sdk-angular-cli](https://github.com/strongloop/loopback-sdk-angular-cli)
+  - [loopback-example-angular](https://github.com/strongloop/loopback-example-angular)
+  - [loopback-example-angular-live-set](https://github.com/strongloop/loopback-example-angular-live-set)
+  - [loopback-example-pubsub](https://github.com/strongloop/loopback-example-pubsub)
+
+## iOS
+
 - GitHub label
-  - sdk-android
-
-### Angular 1.x
-
+  - sdk-ios ([list of issues](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+label%3Asdk-ios+org%3Astrongloop))
 - Owner
-  - davidcheung
+  - [gunjpan](https://github.com/gunjpan)
 - Backup
-  - 0candy
+  - [jannyHou](https://github.com/jannyHou)
 - Repos
-  - angular-live-set
-  - grunt-loopback-sdk-angular
-  - gulp-loopback-sdk-angular
-  - loopback-sdk-angular
-  - loopback-sdk-angular-cli
-  - loopback-example-angular
-  - loopback-example-angular-live-set
-  - loopback-example-pubsub
+  - [loopback-sdk-ios](https://github.com/strongloop/loopback-sdk-ios)
+  - [loopback-sdk-ios-codegen](https://github.com/strongloop/loopback-sdk-ios-codegen)
+  - [loopback-sdk-ios-getting-started](https://github.com/strongloop/loopback-sdk-ios-getting-started)
+
+## Xamarin
+
 - GitHub label
-  - sdk-angular-1.x
-
-### iOS
-
+  - sdk-xamarin ([list of issues](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+label%3Asdk-xamarin+org%3Astrongloop))
 - Owner
-  - gunjpan
+  - [loay](https://github.com/loay)
 - Backup
-  - jannyHou
+  - [richardpringle](https://github.com/richardpringle)
 - Repos
-  - loopback-sdk-ios
-  - loopback-sdk-ios-codegen
-  - loopback-sdk-ios-getting-started
+  - [loopback-example-xamarin](https://github.com/strongloop/loopback-example-xamarin)
+  - [loopback-sdk-xamarin](https://github.com/strongloop/loopback-sdk-xamarin)
+
+## Workspace + generators
+
 - GitHub label
-  - sdk-ios
-
-### Xamarin
-
+  - workspace-generators ([list of issues](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+label%3Aworkspace-generator+org%3Astrongloop))
 - Owner
-  - loay
+  - [0candy](https://github.com/0candy)
+  - [jannyHou](https://github.com/jannyHou)
 - Backup
-  - richardpringle
+  - [richardpringle](https://github.com/richardpringle)
 - Repos
-  - loopback-example-xamarin
-  - loopback-sdk-xamarin
-- GitHub label
-  - sdk-xamarin
+  - [generator-loopback](https://github.com/strongloop/generator-loopback)
+  - [loopback-workspace](https://github.com/strongloop/loopback-workspace)
 
-### Workspace + generators
+# Other
 
-- Owner
-  - 0candy
-  - jannyHou
-- Backup
-  - richardpringle
-- Repos
-  - generator-loopback
-  - loopback-workspace
-- GitHub label
-  - workspace-generators
+## Administration
 
-## Other
-
-### Administration
-
-- Owner
-  - superkhau
-- Backup
-  - 0candy
-  - bajtos
-  - raymondfeng
-- Repos
-  - loopback-admin-tools
-  - strongloop-internal/loopback-knowledge-base
-  - strongloop-internal/loopback-owner
 - GitHub label
   - N/A
-
-### Coding conventions
-
 - Owner
-  - superkhau
+  - [superkhau](https://github.com/superkhau)
 - Backup
-  - bajtos
+  - [0candy](https://github.com/0candy)
+  - [bajtos](https://github.com/bajtos)
+  - [raymondfeng](https://github.com/raymondfeng)
 - Repos
-  - eslint-config-loopback
-  - loopback-contributor-docs
+  - [loopback-admin-tools](https://github.com/strongloop/loopback-admin-tools)
+  - [loopback-knowledge-base](https://github.com/strongloop-internal/loopback-knowledge-base)
+  - [loopback-owners](https://github.com/strongloop-internal/loopback-owners)
+
+## Coding conventions
+
 - GitHub label
   - N/A
-
-### Triage
-
 - Owner
-  - superkhau
+  - [superkhau](https://github.com/superkhau)
 - Backup
-  - 0candy
+  - [bajtos](https://github.com/bajtos)
 - Repos
-  - loopback-example
-  - loopback-sandbox
-  - loopback-triage
+  - [eslint-config-loopback](https://github.com/strongloop/eslint-config-loopback)
+  - [loopback-contributor-docs](https://github.com/strongloop/loopback-contributor-docs)
+
+## Triage
+
 - GitHub label
   - N/A
-
-## TBD - To deprecate or archive
-
 - Owner
-  - bajtos
+  - [superkhau](https://github.com/superkhau)
 - Backup
-  - superkhau
-  - raymondfeng
-  - ritch
+  - [0candy](https://github.com/0candy)
+- Repos
+  - [loopback-example](https://github.com/strongloop/loopback-example)
+  - [loopback-sandbox](https://github.com/strongloop/loopback-sandbox)
+  - [loopback-triage](https://github.com/strongloop/loopback-triage)
+
+# TBD - To deprecate or archive
+
+- GitHub label
+  - N/A
+- Owner
+  - [bajtos](https://github.com/bajtos)
+- Backup
+  - [superkhau](https://github.com/superkhau)
+  - [raymondfeng](https://github.com/raymondfeng)
+  - [ritch](https://github.com/ritch)
 - Repos
   - amenadiel/loopback-example-login
   - loopback-benchmarks
@@ -468,30 +495,3 @@ permalink: /doc/en/contrib/functional-area-owners.html
   - loopback-example-next
   - loopback-ldl
   - loopback-testing
-- GitHub label
-  - N/A
-
-  <!--
-  This file is parsed programmatically by other reporting apps. Please DO NOT
-  deviate from the current formatting.
-
-  TLDR:
-  Standard GitHub markdown (GFM) with two levels of headers, stardard set  of
-  list items each containing N sublist items.
-
-  Example:
-  # Group
-
-  ## N subgroups [optional]
-
-  - Owner
-   - Sublist of items
-  - Backup
-   - Sublist of items
-  - Repo
-   - Sublist of items
-  - GitHub label
-   - Sublist of items
-
-  See the actual content below for detailed examples.
-  -->

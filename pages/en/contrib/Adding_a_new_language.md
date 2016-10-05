@@ -2,7 +2,6 @@
 title: Adding a new language
 tags: [translation]
 keywords: translation, localization
-toc: false
 last_updated: Sept 22, 2016
 summary: "Translators can easily add a new language, where they can translate LoopBack docs."
 sidebar: contrib_sidebar
@@ -18,41 +17,72 @@ additional steps to set it up.
 
 In this procedure, `xx` represents the ISO language code for the language (for example, `fr` for French, `de` for German, and so on).
 
-1. Create new dir: `/pages/xx/lb2`
-2. Copy new pages there (if any).
-3. Copy the English navigation sidebar `_data/sidebars/lb2_sidebar.yml` (assuming you want to start with LoopBack version 2.x).  Name it `_data/sidebars/xx_sidebar.yml`  
-Edit it as follows:
-   - Change all occurrences in the `url` property of `/en/` to `/xx/`.  Leave the file names the same; only change the directory name.
-   - Change `home_url` to `/doc/xx/lb2/index.html`
-   - Translate titles as desired.  Best practice is to translate the sidebar titles _only_ when you translate the article, since that provides readers a clue about what's been translated and what has not.
-4. Add sidebar to `_config.yml` to the list in the `sidebars` property.
-5. Add sidebar to `_includes/custom/sidebarconfigs.html` as follows:
-
-```
+- Create new directory for your translated pages: `/pages/xx/lb2`
+- If you have any translated pages, copy them into that directory.
+- Copy the English navigation sidebar `_data/sidebars/lb2_sidebar.yml` (assuming you want to start with LoopBack version 2.x).  Name it `_data/sidebars/xx_sidebar.yml`.  
+- Edit the sidebar as described below in [Configuring the localized sidebar](#configuring-the-localized-sidebar).
+- Add sidebar to `_config.yml` to the list in the `sidebars` property.
+- Add sidebar to `_includes/custom/sidebarconfigs.html` as follows:
+<div style="margin-left:40px;">{% highlight liquid %}
 ...
 {%raw%}{% elsif page.sidebar == "xx_lb2_sidebar" %}{% endraw%}
     {%raw%}{% assign sidebar = site.data.sidebars.xx_lb2_sidebar.entries %}{% endraw%}
 ...    
-```
-6. Add to `_data/topnav.yml` (under the `title: Translations` list)
-7. Ensure all translated pages have the proper front matter; for example:
+{% endhighlight %}</div>
+- Add to `_data/topnav.yml` (under the `title: Translations` list).
+- Add a file named `Not-yet-translated.md` to `page/xx/lb2` with the content shown below.  
+This page is displayed when someone clicks on a sidebar link for page that hasn't yet been translated:
+<div style="margin-left:40px;">{% highlight yaml %}
+---
+title: 'Not yet translated'
+lang: xx
+layout: stub
+sidebar: xx_lb2_sidebar
+permalink: /doc/xx/lb2/Not-yet-translated.html
+summary:
+---
 
-```
+For instructions on how to translate, see [Translating articles](/doc/en/contrib/Translating_articles.html).
+{% endhighlight %}</div>
+- Ensure all translated pages have the proper front matter; for example:
+<div style="margin-left:40px;">{% highlight yaml %}
 lang: xx
 layout: translation
 keywords: ...
 tags:
 sidebar: xx_lb2_sidebar
 permalink: /doc/xx/lb2/Access-token-REST-API.html
-```
-
+{% endhighlight %}</div>
 Note the `translation` layout.  This adds the translation disclaimer at the top of the page.
 
-{% include note.html content="If you add any new \"stub\" pages (pages that are not fully translated), also add `trans_complete: false` in the front matter.
+{% include note.html content="In any pages that are not fully translated, also add `trans_complete: false` in the front matter.  This displays a note stating that the page is not fully translated.
 " %}
 
-Best practices is _not_ to include untranslated pages, except for the `index.md` "front page"; even if you 
-haven't translated this page, you can include some text in the target language stating that translation into this language is underway.
+Best practices is _not_ to put untranslated English pages in the localized directory `pages/xx/lb2`, except for the `index.md` "front page"; even if you haven't translated this page, you can include some text in the target language stating that translation into the language is underway.
+
+## Configuring the localized sidebar
+
+The localized (translated) sidebar file, `_data/sidebars/xx_sidebar.yml`, has the same format as the
+English sidebar YAML file, but with a few changes and additions.
+
+Edit the English sidebar as follows:
+
+- Change all occurrences in the `url` property of `/en/` to `/xx/`.  Leave the file names the same; only change the directory name.
+- Change the top-level properties in the file as follows:
+
+<div style="margin-left:40px;">{% highlight yaml %}
+title: Loopback 2.0 - <Add language name here>
+url: /doc/xx/lb2/index.html
+translated: true
+{% endhighlight %}</div>
+- For each translated article, add the `translated: true` property for the article in the sidebar file.  For example, in the Japanese sidebar:
+<div style="margin-left:40px;">{% highlight yaml %}
+- title: 'LoopBack コアコンセプト'
+  url: /doc/ja/lb2/LoopBack-core-concepts.html
+  translated: true
+{% endhighlight %}</div>
+
+- Translate titles as desired.  Best practice is to translate the sidebar titles _only_ when you translate the article, since that provides readers a clue about what's been translated and what has not.
 
 ## Importing existing translations
 

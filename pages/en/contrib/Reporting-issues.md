@@ -25,17 +25,16 @@ Posting to Google Group or StackOverflow is preferred so others may benefit from
 
 ## How to report an issue
 
-To report an issue, follow these basic steps:
+To report an issue:
 
  1. Search [existing issues](https://github.com/strongloop/loopback/issues).  It's possible someone has already reported the same problem.
  1. Make sure you have a [GitHub account](https://github.com/signup/free).
  1. Create a [new issue](https://github.com/strongloop/loopback/issues) for the bug, following the steps outlined below
 
-For more information, see [Reporting issues](Reporting-issues.html).
-
 ## 1. Determine the issue type
 
 There are three types of issues:
+
 - Questions - Please post to the [developer forum (Google Group)](https://groups.google.com/forum/#!forum/loopbackjs) instead.
 - [Feature/enhancement request](#featureenhancement-request)
 - [Bug report](#bug-report)
