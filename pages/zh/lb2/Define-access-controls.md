@@ -24,7 +24,7 @@ Access controls determine which users are allowed to read and write model data o
 
 {% include note.html content="
 
-If you followed the previous step in the tutorial, go to [Introducing access controls](/doc/{{page.lang}}/lb2/Define-access-controls.html).
+If you followed the previous step in the tutorial, go to [Introducing access controls](/doc/zh/lb2/Define-access-controls.html).
 
 If you're just jumping in, follow the steps below to catch up...
 

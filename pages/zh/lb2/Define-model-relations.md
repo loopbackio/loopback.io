@@ -26,7 +26,7 @@ Individual models are easy to understand and work with. But in reality, models a
 
 {% include note.html content="
 
-If you followed the previous step in the tutorial, go to [Introducing model relations](/doc/{{page.lang}}/lb2/Define-model-relations.html).
+If you followed the previous step in the tutorial, go to [Introducing model relations](/doc/zh/lb2/Define-model-relations.html).
 
 If you're just jumping in, follow the steps below to catch up...
 
@@ -45,7 +45,7 @@ $ npm install
 
 {% include note.html content="
 
-LoopBack supports many different kinds of model relations, including: [BelongsTo](/doc/{{page.lang}}/lb2/BelongsTo-relations.html), [HasMany](/doc/{{page.lang}}/lb2/HasMany-relations.html), [HasManyThrough](/doc/{{page.lang}}/lb2/HasManyThrough-relations.html), and [HasAndBelongsToMany](/doc/{{page.lang}}/lb2/HasAndBelongsToMany-relations.html), among others. For more information, see [Creating model relations](/doc/{{page.lang}}/lb2/Creating-model-relations.html).
+LoopBack supports many different kinds of model relations, including: [BelongsTo](/doc/zh/lb2/BelongsTo-relations.html), [HasMany](/doc/zh/lb2/HasMany-relations.html), [HasManyThrough](/doc/zh/lb2/HasManyThrough-relations.html), and [HasAndBelongsToMany](/doc/zh/lb2/HasAndBelongsToMany-relations.html), among others. For more information, see [Creating model relations](/doc/zh/lb2/Creating-model-relations.html).
 
 " %}
 

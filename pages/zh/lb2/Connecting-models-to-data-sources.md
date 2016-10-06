@@ -29,7 +29,9 @@ The easiest way to connect a model to a data source is to use the LoopBack comma
     $ Select the connector for mysql: MySQL (supported by StrongLoop)
     ```
 
-    Follow the prompts to name the datasource and select the connector to use.  See [Connecting models to data sources](/doc/{{page.lang}}/lb2/Connecting-models-to-data-sources.html) for more information.  This adds the new data source to [`datasources.json`](/doc/{{page.lang}}/lb2/datasources.json.html) .
+    Follow the prompts to name the datasource and select the connector to use.  See [Connecting models to data sources](/doc/{{page.lang}}/lb2/Connecting-models-to-data-sources.html) for more information.
+
+    This adds the new data source to [`datasources.json`](/doc/{{page.lang}}/lb2/datasources.json.html) .
 
 2.  Install the corresponding connector with `npm`, for example: 
 
@@ -37,11 +39,15 @@ The easiest way to connect a model to a data source is to use the LoopBack comma
 
     See [Connectors](/doc/{{page.lang}}/lb2/Connecting-models-to-data-sources.html) for the list of connectors.
 
-3.  Use the [model generator](/doc/{{page.lang}}/lb2/Using-the-model-generator.html), `slc loopback:model`, to create a model.  When prompted for the data source to attach to, select the one you just created. 
+3.  Use the [model generator](/doc/{{page.lang}}/lb2/Using-the-model-generator.html), `slc loopback:model`, to create a model.
+
+    When prompted for the data source to attach to, select the one you just created. 
 
     {% include note.html content="
 
-    The model generator lists the [memory connector](/doc/{{page.lang}}/lb2/Memory-connector.html), \"no data source,\" and data sources listed in [`datasources.json`](/doc/{{page.lang}}/lb2/datasources.json.html). That's why you created the data source first in step 1.
+    The model generator lists the [memory connector](/doc/zh/lb2/Memory-connector.html), \"no data source,\" and data sources listed in [`datasources.json`](/doc/zh/lb2/datasources.json.html).
+
+    That's why you created the data source first in step 1.
 
     " %}
 
@@ -139,7 +145,10 @@ The following LoopBack connectors are available:
 
 {% include note.html content="
 
-In addition to the connectors listed above that StrongLoop provides, [Community connectors](/doc/{{page.lang}}/lb2/Community-connectors.html) developed and maintained by the LoopBack community enable you to connect to CouchDB, Neo4j, Elasticsearch, and many others.  See [Community connectors](/doc/{{page.lang}}/lb2/Community-connectors.html) for more information.
+In addition to the connectors listed above that StrongLoop provides, [Community connectors](/doc/zh/lb2/Community-connectors.html) 
+developed and maintained by the LoopBack community enable you to connect to CouchDB, Neo4j, Elasticsearch, and many others.
+
+See [Community connectors](/doc/zh/lb2/Community-connectors.html) for more information.
 
 " %}
 

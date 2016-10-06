@@ -30,7 +30,7 @@ module.exports = function(app) {
 
 {% include note.html content="
 
-You can also do this in a [boot script](/doc/{{page.lang}}/lb2/6095038.html).
+You can also do this in a [boot script](/doc/zh/lb2/6095038.html).
 
 " %}
 

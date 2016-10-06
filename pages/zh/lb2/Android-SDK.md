@@ -192,7 +192,8 @@ For the complete API documentation, see [LoopBack Android API](http://apidocs.s
 
     This `RestAdapter` provides the starting point for all client interactions with the running server.  It should be suffixed with "`/api`" in order for the underlying REST method calls to be resolved to your `Model`.
 
-2.  Once you have access to `adapter` (for the sake of example, assume the Adapter is available through our Fragment subclass), you can create basic `Model` and `ModelRepository` objects. Assuming you've  previously created a [LoopBack model](/doc/{{page.lang}}/lb2/Defining-models.html) named "product":
+2.  Once you have access to `adapter` (for the sake of example, assume the Adapter is available through our Fragment subclass), you can create basic `Model` and `ModelRepository` objects.
+    Assuming you've  previously created a [LoopBack model](/doc/{{page.lang}}/lb2/Defining-models.html) named "product":
 
     ```
     ModelRepository productRepository = adapter.createRepository("product");
@@ -201,7 +202,8 @@ For the complete API documentation, see [LoopBack Android API](http://apidocs.s
 
     All the normal `Model` and `ModelRepository` methods (for example, `create`, `destroy`, `findById`) are now available through `productRepository` and `pen`!
 
-3.  You can now start working with your model through the generic Model object.  Continue below to learn how to extend the `Model` Java object to directly match, and thus provide the strongly-typed interface for interaction with, your own `Model`'s members.  Check out the [LoopBack Android API docs](http://apidocs.strongloop.com/loopback-sdk-android/api/index.html) or create more Models with the [Model generator](/doc/{{page.lang}}/lb2/Model-generator.html).
+3.  You can now start working with your model through the generic Model object.  Continue below to learn how to extend the `Model` Java object to directly match, and thus provide the strongly-typed interface for interaction with, your own `Model`'s members.  
+    Check out the [LoopBack Android API docs](http://apidocs.strongloop.com/loopback-sdk-android/api/index.html) or create more Models with the [Model generator](/doc/{{page.lang}}/lb2/Model-generator.html).
 
 ## Creating your own LoopBack model
 

@@ -33,8 +33,10 @@ So, for example, if `version` in `package.json` is 2.0.1, then the built-in mode
 
 is now exposed at:
 
-`GET http://localhost:3000/api/v2/Users`{% include important.html content="
+`GET http://localhost:3000/api/v2/Users`
 
-Changing the API root in this way doesn't affect routes set in [request-handling middleware](/doc/{{page.lang}}/lb2/Defining-middleware.html#Definingmiddleware-Dynamicrequest-handlingmiddleware) or the route to [API Explorer](/doc/{{page.lang}}/lb2/6095009.html) itself, which remains `http://localhost:3000/explorer`.
+{% include important.html content="
+
+Changing the API root in this way doesn't affect routes set in [request-handling middleware](/doc/zh/lb2/Defining-middleware.html#Definingmiddleware-Dynamicrequest-handlingmiddleware) or the route to [API Explorer](/doc/zh/lb2/6095009.html) itself, which remains `http://localhost:3000/explorer`.
 
 " %}

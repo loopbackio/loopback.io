@@ -13,7 +13,7 @@ summary:
 
 {% include warning.html content="
 
-**I**f you installed LoopBack connectors for PostgreSQL, Microsoft SQL Server, Oracle, or MySQL prior to **9 Jan 2015** you need update the affected packages.
+**If** you installed LoopBack connectors for PostgreSQL, Microsoft SQL Server, Oracle, or MySQL prior to **9 Jan 2015** you need update the affected packages.
 
 " %}
 

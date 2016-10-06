@@ -7,14 +7,10 @@
 ## top level property=================
 # entries: [ menuitem ]
 
-title: Loopback 2.0
-url: /doc/zh/lb2/index.html
-folders:
 
-- title: LoopBack
-  url: '/doc/zh/lb2/LoopBack.html'
-  output: 'web, pdf'
-  children:
+title: Loopback 2.0
+url: '/doc/zh/lb2/index.html'
+children:
 
   - title: '安装 StrongLoop'
     url: '/doc/zh/lb2/6095101.html'

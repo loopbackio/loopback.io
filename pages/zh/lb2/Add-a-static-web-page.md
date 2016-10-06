@@ -21,7 +21,7 @@ LoopBack leverages [Express middleware](http://expressjs.com/guide/using-middle
 
 {% include note.html content="
 
-If you followed the previous steps in the tutorial, skip down to [Introduction to middleware](/doc/{{page.lang}}/lb2/Add-a-static-web-page.html).
+If you followed the previous steps in the tutorial, skip down to [Introduction to middleware](/doc/zh/lb2/Add-a-static-web-page.html).
 
 If you're just jumping in, follow the steps below to catch up...
 
@@ -40,7 +40,9 @@ $ npm install
 
 {% include note.html content="
 
-LoopBack is built on [Express](http://expressjs.com/), one of the most popular Node application frameworks.  The top-level LoopBack `app` object inherits all the methods and properties of the Express app object. See [使用LoopBack对象](/doc/{{page.lang}}/lb2/6095045.html).
+LoopBack is built on [Express](http://expressjs.com/), one of the most popular Node application frameworks.
+
+The top-level LoopBack `app` object inherits all the methods and properties of the Express app object. See [使用LoopBack对象](/doc/zh/lb2/6095045.html).
 
 " %}
 
@@ -85,7 +87,9 @@ When you create an application with slc loopback, it creates a `server/middlew
 }
 ```
 
-Each of the top-level keys in `middlewre.json` defines a middleware phase: `initial`, `session`, `auth`, and so on, ending with `final`.  There are also modifiers to register middleware `before` and `after` a given phase. There's a bit more to it, but that covers the basics.  See [Defining middleware](/doc/{{page.lang}}/lb2/Defining-middleware.html) for all the details.
+Each of the top-level keys in `middlewre.json` defines a middleware phase: `initial`, `session`, `auth`, and so on, ending with `final`.  There are also modifiers to register middleware `before` and `after` a given phase. There's a bit more to it, but that covers the basics.
+
+See [Defining middleware](/doc/{{page.lang}}/lb2/Defining-middleware.html) for all the details.
 
 ## Change or modify the default root route handler
 

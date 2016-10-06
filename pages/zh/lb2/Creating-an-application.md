@@ -32,7 +32,7 @@ As you saw in [Getting Started > Create a simple API](/doc/{{page.lang}}/lb2/60
 
 {% include note.html content="
 
-It is possible to create a LoopBack application by coding it from scratch, but [`slc loopback`](/doc/{{page.lang}}/lb2/6095063.html) does all the \"heavy lifting\" to create the basic scaffolding of the [standard project layout](/doc/{{page.lang}}/lb2/6095052.html). You can then customize the application to suit your needs.  When you create your application this way, you can continue to use `slc loopback` to add models, data sources, and so on.
+It is possible to create a LoopBack application by coding it from scratch, but [`slc loopback`](/doc/zh/lb2/6095063.html) does all the \"heavy lifting\" to create the basic scaffolding of the [standard project layout](/doc/zh/lb2/6095052.html). You can then customize the application to suit your needs.  When you create your application this way, you can continue to use `slc loopback` to add models, data sources, and so on.
 
 In general, the documentation assumes you've created your application using `slc loopback`.
 

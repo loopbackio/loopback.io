@@ -23,7 +23,7 @@ In this part of the tutorial, you're going to add a new custom route.
 
 {% include note.html content="
 
-If you followed the previous steps in the tutorial, skip down to [Introducing boot scripts](/doc/{{page.lang}}/lb2/Add-a-custom-Express-route.html).
+If you followed the previous steps in the tutorial, skip down to [Introducing boot scripts](/doc/zh/lb2/Add-a-custom-Express-route.html).
 
 If you're just jumping in, follow the steps below to catch up...
 

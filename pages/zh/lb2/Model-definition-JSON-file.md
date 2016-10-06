@@ -448,7 +448,7 @@ Format conversions are declared in properties, as described in the following tab
 
 {% include warning.html content="
 
-This is not yet implemented. You must currently validate in code; see [Validating model data](/doc/{{page.lang}}/lb2/Validating-model-data.html).
+This is not yet implemented. You must currently validate in code; see [Validating model data](/doc/zh/lb2/Validating-model-data.html).
 
 " %}
 

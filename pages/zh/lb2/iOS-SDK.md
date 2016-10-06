@@ -155,7 +155,7 @@ Because of this the repository class name (`'widget'`, above) needs to match the
 
 {% include warning.html content="
 
-If you haven't created a model yet, see [Defining models](/doc/{{page.lang}}/lb2/Defining-models.html). The model _must_ exist (even if the schema is empty) before your app can interact with it.
+If you haven't created a model yet, see [Defining models](/doc/zh/lb2/Defining-models.html). The model _must_ exist (even if the schema is empty) before your app can interact with it.
 
 " %}
 

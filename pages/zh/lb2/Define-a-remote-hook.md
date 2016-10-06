@@ -24,7 +24,7 @@ A _remote hook_ is a function that's executed before or after a remote method.
 
 {% include note.html content="
 
-If you followed the previous step in the tutorial, go to [Introducing remote hooks](/doc/{{page.lang}}/lb2/Define-a-remote-hook.html).
+If you followed the previous step in the tutorial, go to [Introducing remote hooks](/doc/zh/lb2/Define-a-remote-hook.html).
 
 If you're just jumping in, follow the steps below to catch up...
 
@@ -52,7 +52,7 @@ In both cases, you provide two arguments: a string that matches the remote metho
 
 {% include note.html content="
 
-LoopBack also provides [model hooks](/doc/{{page.lang}}/lb2/6095042.html), functions that are executed before or after certain events such as creating, saving, and updating model data. 
+LoopBack also provides [model hooks](/doc/zh/lb2/6095042.html), functions that are executed before or after certain events such as creating, saving, and updating model data. 
 
 " %}
 

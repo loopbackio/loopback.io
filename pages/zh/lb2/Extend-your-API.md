@@ -23,7 +23,7 @@ In this section you're going to add a custom remote method to your API.
 
 {% include note.html content="
 
-If you followed the previous steps in the tutorial, skip down to [Add a remote method](/doc/{{page.lang}}/lb2/Extend-your-API.html)
+If you followed the previous steps in the tutorial, skip down to [Add a remote method](/doc/zh/lb2/Extend-your-API.html)
 
 If you're just jumping in, follow the steps below to catch up...
 
@@ -46,7 +46,7 @@ Follow these steps:
 
     {% include note.html content="
 
-    The LoopBack [model generator](/doc/{{page.lang}}/lb2/Model-generator.html) (`slc loopback:model`) always creates two files in `/common/models` for each model: a JSON file named `<_model-name_>.json` describing its properties and a JavaScript file named `<_model-name_>.js` where you can extend and override model behavior.
+    The LoopBack [model generator](/doc/zh/lb2/Model-generator.html) (`slc loopback:model`) always creates two files in `/common/models` for each model: a JSON file named `<_model-name_>.json` describing its properties and a JavaScript file named `<_model-name_>.js` where you can extend and override model behavior.
 
     " %}
 2.  Open `coffee-shop.js` in your favorite editor.  By default, it contains an empty function: 

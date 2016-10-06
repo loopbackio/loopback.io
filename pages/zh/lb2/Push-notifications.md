@@ -53,7 +53,7 @@ Install the LoopBack push component as usual for a Node package:
 
 {% include important.html content="
 
-If you are creating your own LoopBack server application, skip this section and go to [Set up your LoopBack application to send push notifications](/doc/{{page.lang}}/lb2/Push-notifications.html).
+If you are creating your own LoopBack server application, skip this section and go to [Set up your LoopBack application to send push notifications](/doc/zh/lb2/Push-notifications.html).
 
 " %}
 

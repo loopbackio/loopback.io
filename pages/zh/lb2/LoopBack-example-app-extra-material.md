@@ -21,7 +21,7 @@ Note that the example app is the backend functionality only; that is, the app ha
 
 {% include important.html content="
 
-You must first install StrongLoop software as described in [LoopBack初级教程](/doc/{{page.lang}}/lb2/6095006.html).
+You must first install StrongLoop software as described in [LoopBack初级教程](/doc/zh/lb2/6095006.html).
 
 If you don't have a C compiler installed, you will see error messages when you create or run the example application.  You'll still be able to run it, but you won't be able to connect to Oracle or view certain strong agent metrics.  See [Installing compiler tools](https://docs.strongloop.com/display/SL/Installing+compiler+tools) for more information.
 

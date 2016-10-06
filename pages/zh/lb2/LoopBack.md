@@ -20,9 +20,9 @@ summary:
 
 {% include note.html content="
 
-**阅读 [LoopBack 核心概念](/doc/{{page.lang}}/lb2/6095111.html)， 学习核心概念和理解LoopBack的用法。**
+**阅读 [LoopBack 核心概念](/doc/zh/lb2/6095111.html)， 学习核心概念和理解LoopBack的用法。**
 
-**根据 [LoopBack初级教程](/doc/{{page.lang}}/lb2/6095006.html)**** 了解LoopBack的一些关键功能。**
+**根据 [LoopBack初级教程](/doc/zh/lb2/6095006.html)**** 了解LoopBack的一些关键功能。**
 
 **在Google Group上订阅 [LoopBack 开发论坛](https://groups.google.com/forum/#!forum/loopbackjs) 提问，讨论，心得**
 

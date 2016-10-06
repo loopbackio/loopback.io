@@ -26,7 +26,9 @@ To change the base model, simply edit the JSON file and change the `base` prop
 
 {% include note.html content="
 
-In general, use `PersistedModel` as the base model when you want to store your data in a database using a connector such as MySQL or MongoDB.  Use `Model` as the base for models that don't have CRUD semantics, for example, using connectors such as SOAP and REST.
+In general, use `PersistedModel` as the base model when you want to store your data in a database using a connector such as MySQL or MongoDB.
+
+Use `Model` as the base for models that don't have CRUD semantics, for example, using connectors such as SOAP and REST.
 
 " %}
 

@@ -15,7 +15,9 @@ summary:
 
 **Recommended**: Read [LoopBack 核心概念](https://docs.strongloop.com/pages/viewpage.action?pageId=6095111).
 
-" %}{% include note.html content="
+" %}
+
+{% include note.html content="
 
 To follow this step, you should have a basic understanding of [AngularJS](https://angularjs.org/).
 
@@ -25,7 +27,7 @@ The LoopBack AngularJS SDK automatically creates a client JavaScript API that en
 
 {% include note.html content="
 
-If you followed the previous step in the tutorial, go to [Introducing the AngularJS SDK](/doc/{{page.lang}}/lb2/Create-AngularJS-client.html).
+If you followed the previous step in the tutorial, go to [Introducing the AngularJS SDK](/doc/zh/lb2/Create-AngularJS-client.html).
 
 If you're just jumping in, follow the steps below to catch up...
 
@@ -42,7 +44,9 @@ $ npm install
 
 ## Introducing the AngularJS SDK
 
-[AngularJS](http://angularjs.org/)  is an open-source JavaScript [model–view–controller](http://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller) (MVC) framework for browser-based applications.  LoopBack provides an [AngularJS JavaScript SDK](/doc/{{page.lang}}/lb2/AngularJS-JavaScript-SDK.html) to facilitate creating AngularJS clients for your LoopBack API server-side apps.  The SDK is installed when you install StrongLoop.
+[AngularJS](http://angularjs.org/) is an open-source JavaScript [model–view–controller](http://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller) (MVC) framework for browser-based applications.
+
+LoopBack provides an [AngularJS JavaScript SDK](/doc/{{page.lang}}/lb2/AngularJS-JavaScript-SDK.html) to facilitate creating AngularJS clients for your LoopBack API server-side apps.  The SDK is installed when you install StrongLoop.
 
 The SDK provides auto-generated AngularJS services, compatible with [`ngResource.$resource`](http://docs.angularjs.org/api/ngResource.%24resource), that provide client-side representation of the models and remote methods in the LoopBack server application.  The SDK also includes some command-line tools, including `lb-ng` that generates Angular $resource services for your LoopBack application, creating in effect a dynamic client that automatically includes client-side APIs to access your LoopBack models and methods.  You don't have to manually write any static code.
 

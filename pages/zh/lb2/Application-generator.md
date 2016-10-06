@@ -22,6 +22,6 @@ The tool creates the standard LoopBack application structure.  See [项目结�
 
 {% include note.html content="
 
-By default, a generated application exposes only the User model over REST. To expose other [built-in models](/doc/{{page.lang}}/lb2/Built-in-models-reference.html), edit `/server/model-config.json` and change the model's \"public\" property to \"true\". See [model-config.json](/doc/{{page.lang}}/lb2/model-config.json.html) for more information.
+By default, a generated application exposes only the User model over REST. To expose other [built-in models](/doc/zh/lb2/Built-in-models-reference.html), edit `/server/model-config.json` and change the model's \"public\" property to \"true\". See [model-config.json](/doc/zh/lb2/model-config.json.html) for more information.
 
 " %}

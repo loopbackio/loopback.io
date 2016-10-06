@@ -28,7 +28,7 @@ Now you're going to create two new models, Review and Reviewer, with the `slc lo
 
 {% include note.html content="
 
-If you followed the previous step in the tutorial, go to [Define the Review model](/doc/{{page.lang}}/lb2/Create-new-models.html).
+If you followed the previous step in the tutorial, go to [Define the Review model](/doc/zh/lb2/Create-new-models.html).
 
 If you're just jumping in, follow the steps below to catch up...
 

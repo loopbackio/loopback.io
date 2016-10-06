@@ -11,7 +11,7 @@ summary:
 
 {% include note.html content="
 
-This tutorial picks up where [LoopBack初级教程](/doc/{{page.lang}}/lb2/6095006.html) ended, and it assumes you understand the basic concepts and tasks introduced in the first tutorial.
+This tutorial picks up where [LoopBack初级教程](/doc/zh/lb2/6095006.html) ended, and it assumes you understand the basic concepts and tasks introduced in the first tutorial.
 
 " %}
 

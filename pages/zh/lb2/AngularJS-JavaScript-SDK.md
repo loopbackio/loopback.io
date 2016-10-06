@@ -15,9 +15,11 @@ summary:
 
 {% include note.html content="
 
-The LoopBack AngularJS SDK is automatically installed when you follow the installation instructions in [LoopBack初级教程](/doc/{{page.lang}}/lb2/6095006.html).
+The LoopBack AngularJS SDK is automatically installed when you follow the installation instructions in [LoopBack初级教程](/doc/zh/lb2/6095006.html).
 
-" %}{% include important.html content="
+" %}
+
+{% include important.html content="
 
 The AngularJS SDK requires Angular version 1.2.0 or newer.
 
@@ -55,7 +57,7 @@ Use the LoopBack Angular command-line tool, `lb-ng`, to generate the Angular c
 
 For example, if your application has the [standard LoopBack project layout](/doc/{{page.lang}}/lb2/6095052.html), then in the `/client` sub-directory, enter these commands:
 
-```
+```shell
 $ mkdir js
 $ lb-ng ../server/server.js js/lb-services.js
 ```

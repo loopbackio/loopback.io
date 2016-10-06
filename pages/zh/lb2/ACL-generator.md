@@ -11,7 +11,7 @@ summary:
 
 The LoopBack ACL generator adds a new access control list (ACL) entry to the LoopBack application.
 
-```
+```shell
 $ cd <loopback-app-dir>
 $ slc loopback:acl
 ```

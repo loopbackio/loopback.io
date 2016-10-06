@@ -68,6 +68,7 @@ See the following articles for more information:
 
 {% include warning.html content="
 
-Methods of models in the [AngularJS client](https://docs.strongloop.com/display/zh/AngularJS+JavaScript+SDK) have a different signature than those of the Node API. For more information, see [AngularJS SDK API](http://apidocs.strongloop.com/loopback-sdk-angular/).
+Methods of models in the [AngularJS client](https://docs.strongloop.com/display/zh/AngularJS+JavaScript+SDK) have a different signature than those of the Node API.
+For more information, see [AngularJS SDK API](http://apidocs.strongloop.com/loopback-sdk-angular/).
 
 " %}

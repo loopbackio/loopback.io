@@ -24,7 +24,7 @@ Limitations
 
 The memory connector is designed for development and testing of a single-process application without setting up a database. It cannot be used in a cluster as the worker processes will have their own isolated data not shared in the cluster.
 
-You can persist data between application restarts using the file property. See [Data persistence](/doc/{{page.lang}}/lb2/Memory-connector.html) for more information.
+You can persist data between application restarts using the file property. See [Data persistence](/doc/zh/lb2/Memory-connector.html) for more information.
 
 " %}
 

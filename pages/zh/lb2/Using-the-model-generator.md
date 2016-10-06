@@ -10,9 +10,8 @@ summary:
 ---
 
 {% include important.html content="
-
-If you already have a back-end schema (like a database), create models based on it using LoopBack's discovery feature. See [Discovering models from relational databases](/doc/{{page.lang}}/lb2/Discovering-models-from-relational-databases.html).
-
+If you already have a back-end schema (like a database), create models based on it using LoopBack's discovery feature.
+See [Discovering models from relational databases](/doc/zh/lb2/Discovering-models-from-relational-databases.html).
 " %}
 
 ## Overview
@@ -44,7 +43,8 @@ Then `slc` will prompt you to:
 
     {% include note.html content="
 
-    In general, use `PersistedModel` as the base model when you want to store your data in a database using a connector such as MySQL or MongoDB.  Use `Model` as the base for models that don't have CRUD semantics, for example, using connectors such as SOAP and REST.
+    In general, use `PersistedModel` as the base model when you want to store your data in a database using a connector such as MySQL or MongoDB.
+    Use `Model` as the base for models that don't have CRUD semantics, for example, using connectors such as SOAP and REST.
 
     " %}
 *   Choose whether to expose the model over REST; the default is yes. 

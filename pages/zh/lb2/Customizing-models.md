@@ -15,7 +15,8 @@ Once you've created a model with the [model generator](/doc/{{page.lang}}/lb2/M
 
 {% include note.html content="
 
-Once you've created a model with the  [model generator](/doc/{{page.lang}}/lb2/Model-generator.html) (`slc loopback:model`), you can't modify the model with the model generator. However, you can customize the model to some degree with other `slc loopback` generators; see below.
+Once you've created a model with the  [model generator](/doc/zh/lb2/Model-generator.html) (`slc loopback:model`), you can't modify the model with the model generator.
+However, you can customize the model to some degree with other `slc loopback` generators; see below.
 
 " %}
 
@@ -55,7 +56,9 @@ Edit the model JSON file and set the "base" property to the name of the model yo
 
 {% include note.html content="
 
-In general, use `PersistedModel` as the base model when you want to store your data in a database using a connector such as MySQL or MongoDB.  Use `Model` as the base for models that don't have CRUD semantics, for example, using connectors such as SOAP and REST.
+In general, use `PersistedModel` as the base model when you want to store your data in a database using a connector such as MySQL or MongoDB.
+
+Use `Model` as the base for models that don't have CRUD semantics, for example, using connectors such as SOAP and REST.
 
 " %}
 
@@ -71,12 +74,14 @@ For example, here is an excerpt from the `customer.json` file from [loopback-
   ...
 ```
 
-In general, you can extend any model this way, not just the built-in models.  
+In general, you can extend any model this way, not just the built-in models.
+ 
 {% include important.html content="
 
 Currently you cannot modify a built-in model's required properties.  If you need to do this, then create your own custom model as a replacement instead.
 
 " %}
+
 You can create custom models that extend from a single base cutom model.  For example, to define a model called `MyModel` that extends from a custom model you defined called `mMyBaseModel`, create MyModel using `slc loopback:model`, then edit the JSON file `common/models/MyModel.json` as follows:
 
 **/common/models/model.json**

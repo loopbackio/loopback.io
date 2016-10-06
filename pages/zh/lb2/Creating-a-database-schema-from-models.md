@@ -9,7 +9,9 @@ permalink: /doc/zh/lb2/Creating-a-database-schema-from-models.html
 summary:
 ---
 
-LoopBack _auto-migration_ creates a database schema based on your application's models.  In relational databases, auto-migration creates a table for each model, and a column in the table for each property in the model.  Auto-migration creates tables for all models attached to a data source, including [built-in models](/doc/{{page.lang}}/lb2/Using-built-in-models.html)
+LoopBack _auto-migration_ creates a database schema based on your application's models.
+In relational databases, auto-migration creates a table for each model, and a column in the table for each property in the model.
+Auto-migration creates tables for all models attached to a data source, including [built-in models](/doc/{{page.lang}}/lb2/Using-built-in-models.html)
 
 Once you have defined a model, LoopBack can create or update (synchronize) the database schemas accordingly, if you need to adjust the database to match the models.  LoopBack provides two ways to synchronize model definitions with table schemas:
 
@@ -18,7 +20,8 @@ Once you have defined a model, LoopBack can create or update (synchronize) the d
 
 {% include warning.html content="
 
-Auto-migration will drop an existing table if its name matches a model name. When tables with data exist, use [auto-update](/doc/{{page.lang}}/lb2/Creating-a-database-schema-from-models.html) to avoid data loss.
+Auto-migration will drop an existing table if its name matches a model name.
+When tables with data exist, use [auto-update](/doc/zh/lb2/Creating-a-database-schema-from-models.html) to avoid data loss.
 
 " %}
 

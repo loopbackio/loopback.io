@@ -22,7 +22,7 @@ The built-in models (except for Email) extend [PersistedModel](http://apidocs.
 
 {% include note.html content="
 
-By default, only the User model is exposed over REST. To expose the other models, change the model's `public` property to true in `/server/model-config.json`. See [Exposing models](/doc/{{page.lang}}/lb2/Exposing-models-over-REST.html#ExposingmodelsoverREST-Exposingmodels) for more information. **Use caution**: exposing some of these models over public public API may be a security risk.
+By default, only the User model is exposed over REST. To expose the other models, change the model's `public` property to true in `/server/model-config.json`. See [Exposing models](/doc/zh/lb2/Exposing-models-over-REST.html#ExposingmodelsoverREST-Exposingmodels) for more information. **Use caution**: exposing some of these models over public public API may be a security risk.
 
 " %}
 

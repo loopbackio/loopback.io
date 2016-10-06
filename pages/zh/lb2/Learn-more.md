@@ -11,13 +11,16 @@ summary:
 
 There's so much more to learn about LoopBack!  
 
-LoopBack documentation includes lots of [tutorials and examples](https://docs.strongloop.com/display/zh/Tutorials+and+examples); also read the [StrongLoop blog](http://strongloop.com/strongblog/) for great tips and information.
+LoopBack documentation includes lots of [tutorials and examples](https://docs.strongloop.com/display/zh/Tutorials+and+examples);
+also read the [StrongLoop blog](http://strongloop.com/strongblog/) for great tips and information.
 
 {% include tip.html content="
 
 StrongLoop Doc Tips
 
-Use the left navigation tree to browse and find doc articles; Click {% include image.html file=\"4849751.png\" alt=\"\" %} to expand subjects under a topic.
+Use the left navigation tree to browse and find doc articles;
+
+Click (+) to expand subjects under a topic.
 
 Use the search field at upper right to search the documentation. 
 
@@ -55,6 +58,6 @@ Learn more about:
 
 {% include note.html content="
 
-**Check out the [LoopBack Developer Forum](https://groups.google.com/forum/#!forum/loopbackjs) on Google Groups**, a place where devlopers can ask questions, discuss LoopBack, and how they are using it.
+**Check out the [LoopBack Developer Forum](https://groups.google.com/forum/#!forum/loopbackjs) on Google Groups**, a place where developers can ask questions, discuss LoopBack, and how they are using it.
 
 " %}
