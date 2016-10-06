@@ -38,11 +38,11 @@ If you are using Android Studio with gradle-based builds, then you have a depend
 
 " %}
 
- {% include image.html file="6258701.png" alt="" %} {% include image.html file="6258702.png" alt="" %}
+ {% include image.html file="9830422.png" alt="" %} {% include image.html file="9830423.png" alt="" %}
 
-{% include image.html file="6258703.png" alt="" %} {% include image.html file="6258700.png" alt="" %}
+{% include image.html file="9830424.png" alt="" %} {% include image.html file="9830421.png" alt="" %}
 
-{% include image.html file="6258699.png" alt="" %} {% include image.html file="6258698.png" alt="" %}
+{% include image.html file="9830420.png" alt="" %} {% include image.html file="9830419.png" alt="" %}
 
 ## Getting started with the guide app
 

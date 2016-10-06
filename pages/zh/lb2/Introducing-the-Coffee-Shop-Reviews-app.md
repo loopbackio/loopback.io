@@ -26,7 +26,7 @@ We put it together based on community feedback.
 
 ## Overview of the application
 
-{% include image.html file="6258829.png" alt="" %}
+{% include image.html file="5570658.png" alt="" %}
 
 **Coffee Shop Reviews** is a website that you can use to post reviews on coffee shops, like Yelp for coffee shops.
 
@@ -75,17 +75,17 @@ Web server listening at: http://0.0.0.0:3000/
 
 Now load [http://0.0.0.0:3000/](http://0.0.0.0:3000/) in your browser.  You'll see the application home page:
 
-{% include image.html file="6258829.png" alt="" %}
+{% include image.html file="5570658.png" alt="" %}
 
 Click on **Log in**.  You'll see the login page:
 
-{% include image.html file="6258828.png" alt="" %}
+{% include image.html file="5570659.png" alt="" %}
 
 Click **Login** to login with the provided.  Notice if you change the email or password, you can't login (but the app doesn't display an error – that's left as an excercise for the reader).
 
 After logging in, you'll see the "Add review" page by default:
 
-{% include image.html file="6258827.png" alt="" %}
+{% include image.html file="5570660.png" alt="" %}
 
 Click **Add Review** to create a new review, **My Reviews** to view only your reviews, or **All Reviews** to view all reviews again.  You can only review the three predefined coffee shops; the application does not provide the ability to add a new coffee shop as an administrator yet.
 

@@ -15,7 +15,7 @@ LoopBack models connect to backend systems such as databases via _data sources_
 
 Data sources are backed by _connectors_ that implement the data exchange logic using database drivers or other client APIs. In general, applications don't use connectors directly, rather they go through data sources using the [DataSource](http://apidocs.strongloop.com/loopback-datasource-juggler/#datasource-new-datasourcename-settings) and [PersistedModel](http://apidocs.strongloop.com/loopback/#persistedmodel-new-persistedmodel) APIs.
 
-{% include image.html file="6258759.png" alt="" %} 
+{% include image.html file="9830484.png" alt="" %} 
 
 ### Basic procedure
 

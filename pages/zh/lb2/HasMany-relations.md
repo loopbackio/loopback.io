@@ -13,7 +13,7 @@ summary:
 
 A `hasMany` relation builds a one-to-many connection with another model. You'll often find this relation on the "other side" of a `belongsTo` relation. This relation indicates that each instance of the model has zero or more instances of another model.  For example, in an application with customers and orders, a customer can have many orders, as illustrated in the diagram below.
 
-{% include image.html file="6258756.png" alt="" %}
+{% include image.html file="9830481.png" alt="" %}
 
 The target model, **Order**, has a property, **customerId**, as the foreign key to reference the declaring model (Customer) primary key **id**.
 

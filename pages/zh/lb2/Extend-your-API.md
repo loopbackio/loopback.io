@@ -101,7 +101,7 @@ Follow these steps:
     `$ slc run`
 
 2.  Go to [http://localhost:3000/explorer](http://localhost:3000/explorer) to see API Explorer.  Then click on CoffeeShops and you'll see there is a new REST endpoint, `GET/CoffeeShop/status` that calls the remote method.
-    {% include image.html file="6258793.png" alt="" %} 
+    {% include image.html file="5570643.png" alt="" %} 
 
 3.  Click **Try it Out!**
     You'll see the result of calling your remote method :

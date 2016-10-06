@@ -50,7 +50,7 @@ LoopBack 框架是由一组Node.js的模块构成的。你可以单独使用这�
 
 以下的图表展示了核心LoopBack模块，以及他们之间的关系。
 
-{% include image.html file="6258692.png" alt="" %}
+{% include image.html file="9830413.png" alt="" %}
 
 ### LoopBack 框架模块
 

@@ -52,12 +52,12 @@ Now configure Eclipse ADT as follows:
         *   Google APIs
     *   Extras: 
         *   Google Play Services
-        *   Intel x86 Emulator Accelerator (HAXM){% include image.html file="6258806.png" alt="" %} 
+        *   Intel x86 Emulator Accelerator (HAXM){% include image.html file="9830532.png" alt="" %} 
 4.  Before you start, make sure you have set up at least one Android virtual device: Choose  **Window > Android Virtual Device Manager** .
 
 5.  Configure the target virtual device as shown in the screenshot below.  See  [AVD Manager](http://developer.android.com/tools/help/avd-manager.html)  for more information.
 
-{% include image.html file="6258805.png" alt="" %}
+{% include image.html file="9830531.png" alt="" %}
 
 {% include important.html content="
 
@@ -130,7 +130,7 @@ If you want to use the sample Android client app, download the  [Push Notificat
     3.  Select **Android**.
     4.  In the Library frame, click on **Add...** and select `google-play-services_lib`.
     5.  Also under Project Build Target, set the target as Google APIs.
-        {% include image.html file="6258807.png" alt="" %}
+        {% include image.html file="9830533.png" alt="" %}
 5.  Edit `src/com/google/android/gcm/demo/app/DemoActivity.java`. 
     *   Set SENDER_ID to the project number from the Google Developers Console you created earlier in [Get your Google Cloud Messaging credentials](/doc/{{page.lang}}/lb2/Push-notifications-for-Android-apps.html).
 

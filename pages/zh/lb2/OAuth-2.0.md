@@ -48,7 +48,7 @@ It also uses the user and application model from the loopback module:
 *   User (managing resource owners)
 *   Application (managing client applications)
 
-{% include image.html file="6258817.png" alt="" %}
+{% include image.html file="9830543.png" alt="" %}
 
 ## Installation
 

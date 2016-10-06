@@ -39,7 +39,7 @@ Please see [Register a mobile application](/doc/{{page.lang}}/lb2/Push-notifica
 
 Open your XCode project, select targets, under build phases unfold **Link Binary with Libraries**, and click on '+' to add LoopBack framework.
 
-{% include image.html file="6258800.png" alt="" %}
+{% include image.html file="9830526.png" alt="" %}
 
 The LoopBack iOS SDK provides two classes to simplify push notification programming:
 

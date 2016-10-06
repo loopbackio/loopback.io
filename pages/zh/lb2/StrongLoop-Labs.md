@@ -9,7 +9,7 @@ permalink: /doc/zh/lb2/StrongLoop-Labs.html
 summary:
 ---
 
-{% include image.html file="6258822.png" alt="" %}
+{% include image.html file="9830552.png" alt="" %}
 
 _**StrongLoop Labs projects**_ provide early access to advanced or experimental functionality.  In general, these projects may lack usability, completeness, documentation, and robustness, and may be outdated.
 

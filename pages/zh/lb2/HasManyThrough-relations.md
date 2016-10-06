@@ -13,7 +13,7 @@ summary:
 
 A `hasMany through` relation is often used to set up a many-to-many connection with another model. This relation indicates that the declaring model can be matched with zero or more instances of another model by proceeding through a third model. For example, in an application for a medical practice where patients make appointments to see physicians, the relevant relation declarations might be:
 
-{% include image.html file="6258757.png" alt="" %}
+{% include image.html file="9830482.png" alt="" %}
 
 The “through” model, **Appointment**, has two foreign key properties, **physicianId** and **patientId**, that reference the primary keys in the declaring model, **Physician**, and the target model, **Patient**.
 

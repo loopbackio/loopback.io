@@ -13,7 +13,7 @@ summary:
 
 A `belongsTo` relation sets up a one-to-one connection with another model, such that each instance of the declaring model "belongs to" one instance of the other model. For example, if your application includes customers and orders, and each order can be placed by exactly one customer.
 
-{% include image.html file="6258755.png" alt="" %}
+{% include image.html file="9830480.png" alt="" %}
 
 The declaring model (Order) has a foreign key property that references the primary key property of the target model (Customer). If a primary key is not present, LoopBack will automatically add one.
 

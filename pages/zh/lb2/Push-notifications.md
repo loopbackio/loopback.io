@@ -37,7 +37,7 @@ Push notifications enable server applications (known as _providers_ in push pa
 
 The following diagram illustrates how it works.
 
-{% include image.html file="6258801.png" alt="" %}
+{% include image.html file="9830527.png" alt="" %}
 
 To send push notifications, you'll need to create a LoopBack server application, then configure your iOS and Android client apps accordingly.  You can either use the example LoopBack push application or create your own. Using the example application is a good way to learn about LoopBack push notifications. 
 
@@ -276,4 +276,4 @@ The following diagram illustrates the LoopBack push notification system architec
 *   Push connector that interacts with device registration records and push providers APNS for iOS apps and GCM for Android apps.
 *   Push model to provide high-level APIs for device-independent push notifications.
 
-{% include image.html file="6258798.png" alt="" %}
+{% include image.html file="9830524.png" alt="" %}

@@ -653,7 +653,7 @@ Web server listening at: http://0.0.0.0:3000/
 
 Now load [http://0.0.0.0:3000/](http://0.0.0.0:3000/) in your browser.  You should see the application home page:
 
-{% include image.html file="6258829.png" alt="" %}
+{% include image.html file="5570658.png" alt="" %}
 
 You should be able to run the application through its paces, as described in [Introducing the Coffee Shop Reviews app](/doc/{{page.lang}}/lb2/Introducing-the-Coffee-Shop-Reviews-app.html).
 

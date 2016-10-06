@@ -30,7 +30,7 @@ LoopBack documentation includes lots of [tutorials and examples](/doc/{{page.la
 
 StrongLoop Doc Tips
 
-Use the left navigation tree to browse and find doc articles; Click {% include image.html file=\"6258792.png\" alt=\"\" %} to expand subjects under a topic.
+Use the left navigation tree to browse and find doc articles; Click {% include image.html file=\"4849751.png\" alt=\"\" %} to expand subjects under a topic.
 
 Use the search field at upper right to search the documentation. 
 

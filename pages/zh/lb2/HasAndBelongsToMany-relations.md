@@ -13,7 +13,7 @@ summary:
 
 A hasAndBelongsToMany relation creates a direct many-to-many connection with another model, with no intervening model. For example, in an application with assemblies and parts, where each assembly has many parts and each part appears in many assemblies, you could declare the models this way:
 
-{% include image.html file="6258758.png" alt="" %}
+{% include image.html file="9830483.png" alt="" %}
 
 ## Defining a hasAndBelongsToMany relation
 

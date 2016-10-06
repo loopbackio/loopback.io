@@ -68,7 +68,7 @@ Follow these steps to build and run the example application. 
 6.  Open [`http://localhost:3000`](http://localhost:3000/) in your browser to view the running app.
 
 7.  Click [View your todo list](http://localhost:3000/my/todos) to see the main screen: 
-    {% include image.html file="6258816.png" alt="" %} 
+    {% include image.html file="9830542.png" alt="" %} 
 
 ## Try it out
 
