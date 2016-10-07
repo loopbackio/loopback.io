@@ -32,6 +32,39 @@ The same adapter model available on the server applies to clients, so you can sw
 
 The following example illustrates how to set up a basic strong-remoting server with a single remote method, user.greet.
 
+```js
+// Create a collection of remote objects.
+var remoting = require('../');
+var SharedClass = remoting.SharedClass
+var remotes = remoting.create();
+
+// define a class-like object (or constructor)
+function User() {
+
+}
+
+User.greet = function (fn) {
+  fn(null, 'hello, world!');
+}
+
+// create a shared class to allow strong-remoting to map
+// http requests to method invocations on your class
+var userSharedClass = new SharedClass('user', User);
+
+// Tell strong-remoting about your greet method
+userSharedClass.defineMethod('greet', {
+  isStatic: true, // not an instance method
+  returns: [{
+    arg: 'msg',
+    type: 'string' // define the type of the callback arguments
+  }]
+});
+// Expose it over the REST transport.
+require('http')
+  .createServer(remotes.handler('rest'))
+  .listen(3000);
+```
+
 Then, invoke `User.greet()` easily with `curl` (or any HTTP client)!
 
 ```shell
