@@ -66,3 +66,13 @@ summary: A brief tutorial on creating an Angular client app using the Loopback A
 
 {% include readmes/loopback-example-angular.md %}
 ```
+
+### Linting Readmes
+
+There is an additional `npm script` that "lints" the readmes for markdown formatting problems. It is currently "experimental", see #49 for more info.
+
+You can run this script thus:
+
+```js
+$ npm run lint-readmes
+```
