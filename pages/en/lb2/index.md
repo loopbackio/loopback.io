@@ -6,7 +6,7 @@ keywords: LoopBack 2.x
 tags: [getting_started]
 sidebar: lb2_sidebar
 permalink: /doc/en/lb2/index.html
-summary: LoopBack is a highly-extensible, open-source Node.js framework that enables you to: <ul><li>Create dynamic end-to-end REST APIs with little or no coding.</li><li>Access data from major relational and NoSQL databases, SOAP and REST APIs.</li><li>Incorporate model relationships and access controls for complex APIs.</li></ul>
+summary: LoopBack is a highly-extensible, open-source Node.js framework that enables you to&#58; <ul><li>Create dynamic end-to-end REST APIs with little or no coding.</li><li>Access data from major relational and NoSQL databases, SOAP and REST APIs.</li><li>Incorporate model relationships and access controls for complex APIs.</li></ul>
 ---
 
 Read [LoopBack core concepts](/doc/{{page.lang}}/lb2/LoopBack-core-concepts.html) to learn about key concepts you need to understand to use LoopBack.
