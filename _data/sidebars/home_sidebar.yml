@@ -11,7 +11,7 @@ children:
   output: web
 
 - title: Community projects
-  url: /doc/community/index.html
+  url: /doc/en/community/index.html
   output: web
 
 - title: Contributing to LoopBack

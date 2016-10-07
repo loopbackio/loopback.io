@@ -19,7 +19,7 @@ topnav_dropdowns:
         - title: LoopBack 2.x
           url: /doc/en/lb2/
         - title: Community projects
-          url: /doc/community/
+          url: /doc/en/community/
         - title: Contributing to LoopBack
           url: /doc/en/contrib/
     - title: Resources
