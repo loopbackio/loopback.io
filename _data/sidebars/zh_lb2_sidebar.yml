@@ -8,12 +8,14 @@
 # entries: [ menuitem ]
 
 
-title: Loopback 2.0
+title: Loopback 中文
 url: '/doc/zh/lb2/index.html'
+translated: true
 children:
 
   - title: '安装 StrongLoop'
     url: '/doc/zh/lb2/6095101.html'
+    translated: true
     output: 'web, pdf'
     children:
 
@@ -26,6 +28,7 @@ children:
       output: 'web, pdf'
 
   - title: 'LoopBack 核心概念'
+    translated: true
     url: '/doc/zh/lb2/6095111.html'
     output: 'web, pdf'
 
@@ -34,7 +37,8 @@ children:
     output: 'web, pdf'
 
   - title: '安全性建议'
-    url: '/doc/zh/lb2/6095136.html'
+    translated: true
+    url: '/doc/zh/lb2/Security-advisories.html'
     output: 'web, pdf'
     children:
 
@@ -43,20 +47,24 @@ children:
       output: 'web, pdf'
 
   - title: 'LoopBack 初级教程'
+    translated: true
     url: '/doc/zh/lb2/6095006.html'
     output: 'web, pdf'
     children:
 
     - title: '创建一个简单的API'
+      translated: true
       url: '/doc/zh/lb2/6095007.html'
       output: 'web, pdf'
 
     - title: '使用API浏览器'
+      translated: true
       url: '/doc/zh/lb2/6095009.html'
       output: 'web, pdf'
 
-    - title: '将API连接至一个数据源'
-      url: '/doc/zh/lb2/6095008.html'
+    - title: 'Connect your API to a data source'
+      translated: true
+      url: '/doc/zh/lb2/Connect-your-API-to-a-data-source.html'
       output: 'web, pdf'
 
     - title: 'Extend your API'
@@ -110,6 +118,7 @@ children:
 
     - title: 'Learn more'
       url: '/doc/zh/lb2/Learn-more.html'
+      translated: true
       output: 'web, pdf'
 
   - title: 'Creating an application'
@@ -148,6 +157,7 @@ children:
 
   - title: '用户认证和授权'
     url: '/doc/zh/lb2/6094988.html'
+    translated: true
     output: 'web, pdf'
     children:
 
@@ -176,11 +186,7 @@ children:
       output: 'web, pdf'
 
     - title: 'Tutorial: access control'
-      url: '/doc/zh/lb2/6094996.html'
-      output: 'web, pdf'
-
-    - title: 'Advanced topics: access control'
-      url: '/doc/zh/lb2/6094990.html'
+      url: '/doc/zh/lb2/Tutorial-access-control.html'
       output: 'web, pdf'
 
   - title: 'Defining models'
@@ -447,6 +453,7 @@ children:
 
     - title: '创建，更新，删除数据'
       url: '/doc/zh/lb2/6095120.html'
+      translated: true
       output: 'web, pdf'
 
     - title: 'Querying data'
@@ -456,60 +463,74 @@ children:
 
       - title: 'fields（字段）过滤器'
         url: '/doc/zh/lb2/6095114.html'
+        translated: true
         output: 'web, pdf'
 
       - title: 'Include（加载导航属性）过滤器'
         url: '/doc/zh/lb2/6095115.html'
+        translated: true
         output: 'web, pdf'
 
       - title: 'Limit（返回结果数限制）过滤器'
         url: '/doc/zh/lb2/6095117.html'
+        translated: true
         output: 'web, pdf'
 
       - title: 'Order（排序）过滤器'
         url: '/doc/zh/lb2/6095116.html'
+        translated: true
         output: 'web, pdf'
 
       - title: 'Skip过滤器'
         url: '/doc/zh/lb2/6095119.html'
+        translated: true
         output: 'web, pdf'
 
       - title: 'Where过滤器'
         url: '/doc/zh/lb2/6095118.html'
+        translated: true
         output: 'web, pdf'
 
     - title: '使用数据库事务'
       url: '/doc/zh/lb2/8880487.html'
+      translated: true
       output: 'web, pdf'
 
   - title: '添加应用逻辑'
     url: '/doc/zh/lb2/6095037.html'
+    translated: true
     output: 'web, pdf'
     children:
 
     - title: '给model添加业务逻辑'
       url: '/doc/zh/lb2/6095039.html'
+      translated: true
       output: 'web, pdf'
       children:
 
       - title: '远程方法（Remote methods）'
         url: '/doc/zh/lb2/6095040.html'
+        translated: true
         output: 'web, pdf'
 
       - title: '远程钩子'
         url: '/doc/zh/lb2/6095041.html'
+        translated: true
         output: 'web, pdf'
 
       - title: '模型钩子'
         url: '/doc/zh/lb2/6095042.html'
+        translated: true
         output: 'web, pdf'
 
       - title: '操作钩子'
         url: '/doc/zh/lb2/8880433.html'
+        translated: true
         output: 'web, pdf'
 
     - title: '定义启动脚本（boot script）'
       url: '/doc/zh/lb2/6095038.html'
+      translated: true
       output: 'web, pdf'
 
     - title: 'Defining middleware'
@@ -523,6 +544,7 @@ children:
 
     - title: '使用LoopBack对象'
       url: '/doc/zh/lb2/6095045.html'
+      translated: true
       output: 'web, pdf'
       children:
 
@@ -532,6 +554,7 @@ children:
 
     - title: '使用当前上下文'
       url: '/doc/zh/lb2/6095047.html'
+      translated: true
       output: 'web, pdf'
 
     - title: Events
@@ -540,6 +563,7 @@ children:
 
     - title: '事件'
       url: '/doc/zh/lb2/8880469.html'
+      translated: true
       output: 'web, pdf'
 
   - title: 'Running and debugging apps'
@@ -724,9 +748,6 @@ children:
       url: '/doc/zh/lb2/Blog-posts.html'
       output: 'web, pdf'
 
-    - title: 'Setting up an MBaas'
-      url: '/doc/zh/lb2/Setting-up-an-MBaas.html'
-      output: 'web, pdf'
 
   - title: Reference
     url: '/doc/zh/lb2/Reference.html'
@@ -772,6 +793,7 @@ children:
 
     - title: '项目结构参考'
       url: '/doc/zh/lb2/6095052.html'
+      translated: true
       output: 'web, pdf'
       children:
 
@@ -781,6 +803,7 @@ children:
 
       - title: 'server 文件夹'
         url: '/doc/zh/lb2/6095054.html'
+        translated: true
         output: 'web, pdf'
         children:
 
