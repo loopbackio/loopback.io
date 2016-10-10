@@ -17,16 +17,32 @@ You can also redirect the output to a file, if desired. These techniques are oft
 The LoopBack framework has a number of built-in debug strings to help with debugging.
 Specify a string on the command-line via an environment variable as follows:
 
+**MacOS and Linux**
+
 ```shell
 $ DEBUG=<pattern>[,<pattern>...] node .
 ```
 
-where <_pattern_> is a string-matching pattern specifying debug strings to match. You can specify as many matching patterns as you wish.
+**Windows**
 
-For example:
+```shell
+C:\> set DEBUG=<pattern>[,<pattern>...]
+C:\> node .
+```
+
+where &lt;_pattern_&gt; is a string-matching pattern specifying debug strings to match. You can specify as many matching patterns as you wish.
+
+For example (MacOS):
 
 ```shell
 $ DEBUG=loopback:datasource node .
+```
+
+Or, on Windows:
+
+```shell
+C:\> set DEBUG=loopback:datasource
+C:\> node .
 ```
 
 You'll see output such as (truncated for brevity):
