@@ -50,7 +50,20 @@ _-----_
 You can use a different name for the application, but if you do, be sure to substitute your name for \"loopback-getting-started\" throughout the rest of this tutorial.
 " %}
 
-The generator will scaffold the application including:
+Then the tool will ask you what kind of application to create:
+
+```
+? What kind of application do you have in mind? (Use arrow keys)
+❯ api-server (A LoopBack API server with local User auth)
+  empty-server (An empty LoopBack API, without any configured models or datasources)
+  hello-world (A project containing a controller, including a single vanilla Message and a sing
+le remote method)
+  notes (A project containing a basic working example, including a memory database)
+```  
+
+Press **Enter** to accept the default selection, `api-server`.
+
+The generator will then display messages as it scaffolds the application including:
 
 1.  Initializing the [project folder structure](/doc/{{page.lang}}/lb2/Project-layout-reference).
 2.  Creating default JSON files.
@@ -162,6 +175,7 @@ Let's add another CoffeeShop property.
 ? Property name: city
 ? Property type: string
 ? Required? Yes
+? Default value[leave blank for none]:
 ```
 
 End the model creation process by pressing **Enter** when prompted for the name of the next property.
@@ -188,8 +202,7 @@ Web server listening at: http://0.0.0.0:3000/
 ```
 
 {% include note.html content="
-Running your app with the `node` command is appropriate when you're developing on your local machine.  
-In production, consider using [API Connect](https://developer.ibm.com/apiconnect/) or a [process manager](http://strong-pm.io/) for scalability and reliability.
+Running your app with the `node` command is appropriate when you're developing on your local machine.   In production, consider using [API Connect](https://developer.ibm.com/apiconnect/) or a [process manager](http://strong-pm.io/) for scalability and reliability.
 " %}
 
 Open your browser to [http://0.0.0.0:3000/](http://0.0.0.0:3000/) (on some systems, you may need to use [http://localhost:3000](http://localhost:3000/) instead).  You'll see the default application response that displays some JSON with some status information; for example:

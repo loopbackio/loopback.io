@@ -25,7 +25,7 @@ LoopBack 是一个可扩展的开源Node.js 框架。它可以让我们
 
 根据 [LoopBack&#21021;&#32423;&#25945;&#31243;](6095006.html)
 
-了解LoopBack的一些关键功能。在Google Group上订阅 [LoopBack 开发论坛</a> 提问，讨论，心得](https://groups.google.com/forum/#!forum/loopbackjs)
+了解LoopBack的一些关键功能。在Google Group上订阅 [LoopBack 开发论坛 提问，讨论，心得](https://groups.google.com/forum/#!forum/loopbackjs)
 
 ## LoopBack 框架
 
