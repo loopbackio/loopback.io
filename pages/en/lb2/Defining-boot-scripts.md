@@ -43,8 +43,7 @@ boot(app, __dirname, function(err) {
 
 See [loopback-boot API docs](http://apidocs.strongloop.com/loopback-boot/) for details. 
 
-{% include note.html content="
-If you create your application with the [application generator](Application-generator.html) ,
+{% include note.html content="If you create your application with the [application generator](Application-generator.html) ,
 then you don't need to do anything to bootstrap your application--the above code is automatically scaffolded for you!
 " %}
 
@@ -53,27 +52,29 @@ then you don't need to do anything to bootstrap your application--the above code
 Use _boot scripts_ to perform custom initialization in addition to that performed by the LoopBack bootstrapper.
 When an application starts, LoopBack loads all the scripts in the `server/boot` directory.
 By default, LoopBack loads boot scripts in alphabetical order.
-You can customize the boot script load order using the options argument of [`boot()`](http://apidocs.strongloop.com/loopback-boot/#boot).
+You can customize the boot script load order using the options argument of [boot()](http://apidocs.strongloop.com/loopback-boot/#boot).
 See [Boot script loading order](#boot-script-loading-order) for details.
 
 ## Predefined boot scripts
 
-The standard scaffolded LoopBack application created by the 
-[application generator](/doc/{{page.lang}}/lb2/Application-generator.html) contains the following standard boot scripts (in `/server/boot`) that performs basic initialization:
+The [application generator](/doc/{{page.lang}}/lb2/Application-generator.html) creates the following boot scripts:
 
-* `root.js` - Binds [`loopback.status()`](http://apidocs.strongloop.com/loopback/#loopback-status) middleware at the root endpoint ("/") to provide basic status information.
 
-{% include important.html content="
+* `/server/boot/root.js` binds [loopback.status()](http://apidocs.strongloop.com/loopback/#loopback-status) middleware
+at the root endpoint ("/") to provide basic status information.
+* `/server/boot/authentication.js` - enables authentication for the application by calling
+[app.enableAuth()](http://apidocs.strongloop.com/loopback/#app-enableauth).
 
-Prior to generator-loopback v. 1.12, the application generator created two additional boot scripts, but this functionality is now handled in middleware:
+### Earlier versions
+
+Prior to `generator-loopback` v. 1.12, the application generator created two additional boot scripts, but this functionality is now handled in middleware:
 
 * `explorer.js` - Enables [API Explorer](Use-API-Explorer.html). 
 * `rest-api.js` - Exposes the application's models over REST using [`loopback.rest()`](http://apidocs.strongloop.com/loopback/#loopback-rest) middleware.
 
-The API Connect LoopBack generator does not create the boot script `authentication.js` that enables authentication for the application by calling
-[`app.enableAuth()`](http://apidocs.strongloop.com/loopback/#app-enableauth).
-To enable user model authentication you should add this script (or the equivalent) yourself.
-" %}
+### API Connect
+
+The API Connect LoopBack generator does not create the  `authentication.js` boot script that enables authentication.  To enable user model authentication you must add this script (or the equivalent) yourself.
 
 ## Using the boot script generator
 
@@ -110,7 +111,7 @@ The signature of this function is similar for both types of boot scripts, but as
 ### Bootstrap function arguments
 
 ```javascript
-module.exports = function(app, [_callback_]) {
+module.exports = function(app, [callback]) {
   ...
 }
 ```
@@ -202,6 +203,9 @@ LoopBack executes boot scripts in alphabetical order by file name, so the easies
 For example, you could name boot scripts `01-your-first-script.js`, `02-your-second-script.js`, and so forth. This ensures LoopBack loads scripts in the order you want.
 For example before default boot scripts in `/server/boot`. 
 
+{% include note.html content="LoopBack processes boot scripts alphabetically, one at a time (not in parallel).  This applies to both synchronous and asynchronous boot scripts.
+" %}
+
 You can also specify the loading order with options to the [`boot()`](http://apidocs.strongloop.com/loopback-boot/#boot) function call in `/server/server.js`.
 Replace the default scaffolded function call:
 
@@ -226,10 +230,9 @@ boot(app, bootOptions);
 Then the application will then execute scripts in the order specified in the `bootScripts` array.
 Specify the full directory path to each script.
 
-NOTE: You can also specify a relative directory path.
+You can also specify a relative directory path.
 
-{% include important.html content="
-Using the technique shown above, the application will still run all the boot scripts in `/server/boot`
+{% include important.html content="Using the technique shown above, the application will still run all the boot scripts in `/server/boot`
 in alphabetical order (unless you move or delete them) after your custom-ordered boot scripts specified in `bootScripts`.
 " %}
 
