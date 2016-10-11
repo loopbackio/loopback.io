@@ -33,7 +33,7 @@ The LoopBack generator will greet you with some friendly ASCII art and prompt yo
 Enter `loopback-getting-started`. Then the generator will prompt you for the name of the directory to contain the project; press Enter to accept the default (the same as the application name):
 
 ```
-_-----_
+     _-----_
     |       |    .--------------------------.
     |--(o)--|    |  Let's create a LoopBack |
    `---------´   |       application!       |
@@ -46,8 +46,7 @@ _-----_
 [?] Enter name of the directory to contain the project: loopback-getting-started
 ```
 
-{% include note.html content="
-You can use a different name for the application, but if you do, be sure to substitute your name for \"loopback-getting-started\" throughout the rest of this tutorial.
+{% include note.html content="You can use a different name for the application, but if you do, be sure to substitute your name for \"loopback-getting-started\" throughout the rest of this tutorial.
 " %}
 
 Then the tool will ask you what kind of application to create:
@@ -56,8 +55,8 @@ Then the tool will ask you what kind of application to create:
 ? What kind of application do you have in mind? (Use arrow keys)
 ❯ api-server (A LoopBack API server with local User auth)
   empty-server (An empty LoopBack API, without any configured models or datasources)
-  hello-world (A project containing a controller, including a single vanilla Message and a sing
-le remote method)
+  hello-world (A project containing a controller, including a single vanilla Message and
+    a single remote method)
   notes (A project containing a basic working example, including a memory database)
 ```  
 
@@ -182,8 +181,7 @@ End the model creation process by pressing **Enter** when prompted for the nam
 
 The model generator will create two files in the application's `common/models` directory that define the model: `coffee-shop.json` and `coffee-shop.js`.
 
-{% include important.html content="
-The LoopBack [model generator](Model-generator.html),automatically converts camel-case model names (for example MyModel) to lowercase dashed names (my-model).  For example, if you create a model named \"FooBar\" with the model generator, it creates files `foo-bar.json` and `foo-bar.js` in `common/models`.  However, the model name (\"FooBar\") will be preserved via the model's name property.
+{% include important.html content="The LoopBack [model generator](Model-generator.html),automatically converts camel-case model names (for example MyModel) to lowercase dashed names (my-model).  For example, if you create a model named \"FooBar\" with the model generator, it creates files `foo-bar.json` and `foo-bar.js` in `common/models`.  However, the model name (\"FooBar\") will be preserved via the model's name property.
 " %}
 
 ## Check out the project structure
@@ -201,8 +199,7 @@ Browse your REST API at http://0.0.0.0:3000/explorer
 Web server listening at: http://0.0.0.0:3000/
 ```
 
-{% include note.html content="
-Running your app with the `node` command is appropriate when you're developing on your local machine.   In production, consider using [API Connect](https://developer.ibm.com/apiconnect/) or a [process manager](http://strong-pm.io/) for scalability and reliability.
+{% include note.html content="Running your app with the `node` command is appropriate when you're developing on your local machine.   In production, consider using [API Connect](https://developer.ibm.com/apiconnect/) or a [process manager](http://strong-pm.io/) for scalability and reliability.
 " %}
 
 Open your browser to [http://0.0.0.0:3000/](http://0.0.0.0:3000/) (on some systems, you may need to use [http://localhost:3000](http://localhost:3000/) instead).  You'll see the default application response that displays some JSON with some status information; for example:

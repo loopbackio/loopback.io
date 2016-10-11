@@ -14,8 +14,7 @@ summary: LoopBack applications come with a built-in API Explorer you can use to 
 
 You're not the only one who'll use the API you just created.  That means you'll need to document your API.  Fortunately, LoopBack provides API Explorer for you. 
 
-{% include note.html content="
-If you followed [Create a simple API](/doc/en/lb2/Create-a-simple-API.html), keep that app running and skip down to [Run API Explorer](#run-api-explorer).
+{% include note.html content="If you followed [Create a simple API](/doc/en/lb2/Create-a-simple-API.html), keep that app running and skip down to [Run API Explorer](#run-api-explorer).
 
 If you're just jumping in, follow the steps below to catch up...
 " %}

@@ -208,12 +208,13 @@ Once you define a "hasManyThrough" relation, LoopBack adds methods with the rela
 <table>
   <tbody>
     <tr>
-      <th>Example method</th>
+      <th style="width: 400px;">Example method</th>
       <th>Description</th>
     </tr>
     <tr>
       <td>
-        <pre>physician.patients(filter, function(err, patients) {<br>  ...<br>});</pre>
+        <pre>physician.patients(filter,
+  function(err, patients) {<br>  ...<br>});</pre>
       </td>
       <td>Find patients for the physician.</td>
     </tr>
@@ -225,7 +226,8 @@ Once you define a "hasManyThrough" relation, LoopBack adds methods with the rela
     </tr>
     <tr>
       <td>
-        <pre>physician.patients.create(data, function(err, patient) {<br>  ...<br>});</pre>
+        <pre>physician.patients.create(data,
+  function(err, patient) {<br>  ...<br>});</pre>
       </td>
       <td>Create a new patient for the physician.</td>
     </tr>
@@ -237,19 +239,22 @@ Once you define a "hasManyThrough" relation, LoopBack adds methods with the rela
     </tr>
     <tr>
       <td>
-        <pre>physician.patients.add(patient, function(err, patient) {<br>  ...<br>});</pre>
+        <pre>physician.patients.add(patient,
+  function(err, patient) {<br>  ...<br>});</pre>
       </td>
       <td>Add a patient to the physician.</td>
     </tr>
     <tr>
       <td>
-        <pre>physician.patients.remove(patient, function(err) {<br>  ...<br>});</pre>
+        <pre>physician.patients.remove(patient,
+  function(err) {<br>  ...<br>});</pre>
       </td>
       <td>Remove a patient from the physician.</td>
     </tr>
     <tr>
       <td>
-        <pre>physician.patients.findById(patientId, function(err, patient) {<br>  ...<br>});</pre>
+        <pre>physician.patients.findById(patientId,
+  function(err, patient) {<br>  ...<br>});</pre>
       </td>
       <td>Find an patient by ID.</td>
     </tr>

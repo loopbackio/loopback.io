@@ -98,7 +98,7 @@ The results of method calls are cached internally and available via later synchr
 <table>
   <tbody>
     <tr>
-      <th>Example method</th>
+      <th style="width: 400px;">Example method</th>
       <th>Description</th>
     </tr>
     <tr>

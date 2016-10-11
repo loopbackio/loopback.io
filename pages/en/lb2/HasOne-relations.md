@@ -104,7 +104,7 @@ For example: `supplier.prototype.account(...)`.
 <table>
   <tbody>
     <tr>
-      <th>Example method</th>
+      <th style="width: 400px;">Example method</th>
       <th>Description</th>
     </tr>
     <tr>

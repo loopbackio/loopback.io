@@ -126,7 +126,7 @@ you can define operations against the REST API using the `operations` property
 
 For a short example, see [loopback-example-rest-connector](https://github.com/strongloop/loopback-example-rest-connector).
 
-### Can an application respond with XML instead of JSON?
+### Can an application respond to a request with XML instead of JSON?
 
 Yes: in in `server/config.json` set the `remoting.rest.xml` property to `true`.
 See [config.json](/doc/{{page.lang}}/lb2/config.json.html) for more information.

@@ -68,12 +68,13 @@ For example: `Customer.prototype.orders(...)`.
 <table>
   <tbody>
     <tr>
-      <th>Example method</th>
+      <th style="width: 400px;">Example method</th>
       <th>Description</th>
     </tr>
     <tr>
       <td>
-        <pre>customer.orders([where], function(err, orders) {<br>  ...<br>});</pre>
+        <pre>customer.orders([where],
+  function(err, orders) {<br>  ...<br>});</pre>
       </td>
       <td>Find orders for the customer by the filter</td>
     </tr>
@@ -87,9 +88,11 @@ For example: `Customer.prototype.orders(...)`.
     </tr>
     <tr>
       <td>
-        <pre>customer.orders.create(data, function(err, order) {<br>  ...<br>});</pre>
+        <pre>customer.orders.create(data,
+  function(err, order) {<br>  ...<br>});</pre>
         <p>Or, equivalently:</p>
-        <pre>Order.create({customerId: customer.id, ...}, function(err, order) {<br>  ...<br>});</pre>
+        <pre>Order.create({customerId: customer.id, ...},
+  function(err, order) {<br>  ...<br>});</pre>
       </td>
       <td>Create a new order for the customer.</td>
     </tr>
@@ -101,13 +104,15 @@ For example: `Customer.prototype.orders(...)`.
     </tr>
     <tr>
       <td>
-        <pre>customer.orders.findById(orderId, function(err, order) {<br>   ...<br>});</pre>
+        <pre>customer.orders.findById(orderId,
+  function(err, order) {<br>   ...<br>});</pre>
       </td>
       <td>Find an order by ID.</td>
     </tr>
     <tr>
       <td>
-        <pre>customer.orders.destroy(orderId, function(err) {<br>  ...<br>});</pre>
+        <pre>customer.orders.destroy(orderId,
+  function(err) {<br>  ...<br>});</pre>
       </td>
       <td>Delete an order by ID.</td>
     </tr>

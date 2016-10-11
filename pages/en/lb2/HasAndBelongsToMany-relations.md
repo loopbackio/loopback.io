@@ -81,12 +81,13 @@ For example: `assembly.parts.create(...)`.
 <table>
   <tbody>
     <tr>
-      <th>Example method</th>
+      <th style="width: 400px;">Example method</th>
       <th>Description</th>
     </tr>
     <tr>
       <td>
-        <pre>assembly.parts(filter, function(err, parts) {<br>  ...<br>});</pre>
+        <pre>assembly.parts(filter,
+  function(err, parts) {<br>  ...<br>});</pre>
       </td>
       <td>Find parts for the assembly.</td>
     </tr>
@@ -98,31 +99,36 @@ For example: `assembly.parts.create(...)`.
     </tr>
     <tr>
       <td>
-        <pre>assembly.parts.create(data, function(err, part) {<br>  ...<br>});</pre>
+        <pre>assembly.parts.create(data,
+  function(err, part) {<br>  ...<br>});</pre>
       </td>
       <td>Create a new part for the assembly.</td>
     </tr>
     <tr>
       <td>
-        <pre>assembly.parts.add(part, function(err) {<br>  ...<br>});</pre>
+        <pre>assembly.parts.add(part,
+  function(err) {<br>  ...<br>});</pre>
       </td>
       <td>Add a part to the assembly.</td>
     </tr>
     <tr>
       <td>
-        <pre>assembly.parts.remove(part, function(err) {<br>  ...<br>});</pre>
+        <pre>assembly.parts.remove(part,
+  function(err) {<br>  ...<br>});</pre>
       </td>
       <td>Remove a part from the assembly.</td>
     </tr>
     <tr>
       <td>
-        <pre>assembly.parts.findById(partId, function(err, part) {<br>  ...<br>});</pre>
+        <pre>assembly.parts.findById(partId,
+  function(err, part) {<br>  ...<br>});</pre>
       </td>
       <td>Find a part by ID.</td>
     </tr>
     <tr>
       <td>
-        <pre>assembly.parts.destroy(partId, function(err) {<br>  ...<br>});</pre>
+        <pre>assembly.parts.destroy(partId,
+function(err) {<br>  ...<br>});</pre>
       </td>
       <td>Delete a part by ID.</td>
     </tr>
