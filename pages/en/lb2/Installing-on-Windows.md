@@ -12,16 +12,16 @@ summary:
 Installing Node and StrongLoop on Windows presents some special challenges and requirements. 
 
 {% include important.html content="
-StrongLoop Process Manager does not run on Windows. Therefore, you cannot deploy an application _to_ a Windows system. However, you can build and deploy on a Windows system and deploy from there to a Linux or MacOS system.
+StrongLoop Process Manager does not run on Windows. Therefore, you cannot use it to deploy an application _to_ a Windows system. However, you can build and deploy on a Windows system and deploy from there to a Linux or MacOS system.
 " %}
 
 ## Prerequisites
 
-### Compiler tools
+### Install compiler tools
 
 If you want features such as [application profiling](https://docs.strongloop.com/display/SLC/Profiling) or [monitoring](https://docs.strongloop.com/display/SLC/Monitoring-app-metrics), you must install compiler tools and Python before you start.  See [Installing compiler tools](/doc/{{page.lang}}/lb2/Installing-compiler-tools.html#windows) for more information.
 
-### Git
+### Install Git
 
 The Node package manager tool, npm, uses Git to download packages from Github. 
 
@@ -36,25 +36,25 @@ To install Git:
     *   Modify "Adjusting your PATH environment" to "Use Git from Windows Command Prompt"
     *   Accept default "Configuring the line ending conversions"
 
-#### Configuration
+**Configuration**
 
 By default, Git on Windows does not support paths longer than 260 characters; to avoid errors you must enable long paths with the following command:
 
 `C:\> git config --system core.longpaths true`
 
-## Install Node.js
+### Install Node.js
 
-1.  Go to [http://nodejs.org/download/](http://nodejs.org/download/)
-2.  Download the latest "Windows Installer (.msi)", 32 or 64-bit, as appropriate
+1.  Go to [http://nodejs.org/download/](http://nodejs.org/download/).
+2.  Download the latest "Windows Installer (.msi)", 32 or 64-bit, as appropriate.
 3.  Run the installer.
 
 {% include tip.html content="
 For best results, use the latest LTS (long-term support) release of Node.js.
 " %}
 
-## Reinstall npm
+## Install latest version of npm
 
-The version of npm installed as part of the Node installation has known issues on Windows. To avoid these problems, reinstall npm, which actually installs [npm2](https://www.npmjs.com/package/npm2):
+The version of npm installed as part of the Node installation has known issues on Windows. To avoid these problems, install the latest version of [npm](https://www.npmjs.com/package/npm):
 
 `C:\> npm install -g npm`
 
