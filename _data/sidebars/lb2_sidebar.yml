@@ -267,7 +267,7 @@ children:
       output: 'web, pdf'
 
   - title: 'Customizing models'
-    url: doc/en/lb2/Customizing-models.html
+    url: /doc/en/lb2/Customizing-models.html
     output: 'web, pdf'
 
   - title: 'Attaching models to data sources'
