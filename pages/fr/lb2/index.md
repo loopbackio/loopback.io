@@ -1,14 +1,11 @@
 ---
 title: "LoopBack - français"
 layout: translation
-trans_complete: false
 sidebar: fr_lb2_sidebar
 lang: fr
 tags:
 permalink: /doc/fr/lb2/index.html
-summary:
+summary: S'il vous plaît aider à traduire la documentation en français.
 ---
 
-There is no French content yet.  
-The navigation sidebar shown at left links to English articles.
-When a translation is added for a given article, then link will the work.
+Il n'y a pas encore de contenu français. S'il vous plaît aider à traduire la documentation en français. Pour obtenir des instructions, reportez-vous [Translating articles](en/contrib/Translating_articles.html).
