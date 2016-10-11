@@ -1,10 +1,10 @@
 # loopback.io
 
-LoopBack community site, http://loopback.io.
+LoopBack community site, http://loopback.io.  This website now includes the LoopBack documentation.
 
 NOTE: The website is served from the `gh-pages` branch.
 
-This website now includes the LoopBack documentation.
+This repository is provided under the [MIT License](LICENSE).
 
 ##  Setup
 
