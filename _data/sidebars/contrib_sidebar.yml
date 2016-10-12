@@ -55,7 +55,7 @@ children:
 
     children:
     - title: Markdown style guide
-      url: /doc/en/contrib/markdown-style-guide.html
+      url: /doc/en/contrib/Markdown-style-guide.html
       output: web, pdf
 
     - title: Conditional logic
