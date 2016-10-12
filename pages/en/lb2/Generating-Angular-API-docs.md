@@ -10,9 +10,7 @@ summary:
 ---
 
 {% include warning.html content="
-
-This is currently hidden because of copyright issues with some code in lb-ng-doc.  That tool was removed from the SDK.
-
+This  tool was removed from the SDK.
 " %}
 
 To generate API documentation for the Angular services, enter this command:
