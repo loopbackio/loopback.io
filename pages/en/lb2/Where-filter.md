@@ -30,6 +30,37 @@ For example, here is a query to find cars with `odo` is less than 30,000:
 
 You can also use [stringified JSON format](/doc/{{page.lang}}/lb2/Querying-data.html#using-stringified-json-in-rest-queries) in a REST query.
 
+{% include important.html content="
+There is a 20 filters limitation using this format from [qs](https://github.com/ljharb/qs#parsing-arrays) where it maps arrays with over 20 indices to an object,
+which converts your filter into an `Object` where it is expecting an `Array`, See [Issue](https://github.com/strongloop/loopback/issues/2824) for more details.
+A work around would be to override the query parsing middleware, with your own options as the following, or to use a stringified JSON instead.
+" %}
+
+### How to work-around the 20 filters limit in query format
+
+**Encode the large filter object as JSON**
+```
+http://localhost:3000/api/Books
+?filter={"where":{"or":[{"id":1},{"id":2},...,{"id":20"},{"id":21}]}}
+```
+
+**Override Limit**
+
+```js
+// In `server/server.js`, before boot is called
+var loopback = require('loopback');
+var boot = require('loopback-boot');
+var qs = require('qs');
+
+var app = module.exports = loopback();
+app.set('query parser', function(value, option) {
+  return qs.parse(value, {arrayLimit: 500});
+});
+
+app.start = function() {
+  ...
+```
+
 ## Node API
 
 {% include content/angular-methods-caveat.html lang=page.lang %}
@@ -257,8 +288,8 @@ see [Regular Expressions (Mozilla Developer Network)](https://developer.mozilla
 
 {% include tip.html content="
 The above where clause syntax is for queries. For updates and deletes, omit the `{ where : ... }` wrapper.
-See [Where clause for other methods](#where-clause-for-other-methods) below."
-%}
+See [Where clause for other methods](#where-clause-for-other-methods) below.
+" %}
 
 For example, this query returns all cars for which the model starts with a capital "T":
 
