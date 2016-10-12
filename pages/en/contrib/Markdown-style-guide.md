@@ -41,13 +41,57 @@ as well as GitHub (and npm, as applicable).
 
 ## Headers
 1. Always put spaces after the hash(es)
+2. Only put one `<h1>` header in a readme (*all* `<h1>`s are removed by Jekyll, which adds its own).
+3. Precede headers with a blank line
 
 ### Examples
 ````
-# This
 ## This
+
 ### This
-#Not this
+
 ##Not this
+
 ###Not this
+
+# This gets removed
+
+# This one gets removed as well
+
+## This is fine
+
+Here's a paragraph of text
+## This isn't a heading!! Needs a newline above
 ````
+
+## Blockquotes
+
+1. Only **unfenced** code blocks may go in block quotes. If highlighting is crucial, consider removing the block from the blockquote.
+
+### Examples
+```
+> This:
+>
+>     console.log('indented 4 spaces');
+>
+> NOT this:
+> 
+> ```js
+> console.log('indented 4 spaces');
+> ```
+>
+```
+
+## Links
+
+1. To convert a URL to a link, wrap the URL in angle brackets.
+
+### Examples
+
+```
+https://this.will.not/create/a/link
+<https://this.WILL.create/a/link>
+```
+
+## Fenced Code blocks
+1. Always preceed with an empty line
