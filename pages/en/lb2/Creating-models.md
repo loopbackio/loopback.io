@@ -35,11 +35,8 @@ The way that you get a reference (or "handle") to a model in JavaScript code dep
 
 ### In model JavaScript file
 
-{% include warning.html content="
-
-In model JavaScript files (for example, for a \"foo\" model, `common/models/foo.js`) you cannot access model relations since models are are not yet loaded.
+{% include warning.html content="In model JavaScript files (for example, for a \"foo\" model, `common/models/foo.js`) you cannot access model relations since models are are not yet loaded.
 You must perform relation operations in boot scripts.
-
 " %}
 
 In the model JavaScript file, the model is passed into the top-level function, so the model object is available directly; for example for a "customer" model:
@@ -52,12 +49,8 @@ module.exports = function(Customer) {
 }
 ```
 
-{% include note.html content="
-
-Promises
-
+{% include note.html title="Promises" content="
 LoopBack also supports [Promises](https://www.promisejs.org/) in addition to callbacks for CRUD methods of a model and its related models.
-
 " %}
 
 ### In a boot script

@@ -873,10 +873,6 @@ children:
       url: /doc/en/lb2/AngularJS-Grunt-plugin.html
       output: 'web, pdf'
 
-    - title: 'Generating Angular API docs'
-      url: /doc/en/lb2/Generating-Angular-API-docs.html
-      output: 'web, pdf'
-
     - title: 'Angular 2 SDK'
       url: /doc/en/lb2/Angular-2-SDK.html
       output: 'web, pdf'
