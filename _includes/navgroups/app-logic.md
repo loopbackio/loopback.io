@@ -10,7 +10,8 @@
   {% endunless %}{% unless page.permalink contains 'Connector-hooks.html' %}
 * [Connector hooks](Connector-hooks.html)
   {% endunless %}{% unless page.permalink contains 'Tutorial-Adding-application-logic.html' %}
-* [Tutorial: Adding application logic](Tutorial-Adding-application-logic.html)    
+* [Tutorial: Adding application logic](Tutorial-Adding-application-logic.html)
+{% assign page.readme = false %}
   {% endunless %}
 {% endcapture %}
 

@@ -1,6 +1,6 @@
 ---
 title: LoopBack Documentation
-layout: page-no-toc
+toc: false
 keywords: homepage
 tags: [getting_started]
 sidebar: home_sidebar

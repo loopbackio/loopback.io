@@ -1,6 +1,12 @@
 ---
-layout: page-no-toc
+layout: page
+toc: false
+readme: true
 ---
+{% if page.permalink contains 'Tutorial-Adding-application-logic.html' %}
+  <style>h1:not(.post-title-main) { display: none; }</style>
+  <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> This page was generated from the <a href="https://github.com/strongloop/{{page.source}}">{{page.source}} README</a>.</div>
+{% endif %}
 {% capture nav-include %}{% include navgroups/{{page.navgroup}}.md %}{% endcapture %}
 {{ nav-include | markdownify }}
 
