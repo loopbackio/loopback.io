@@ -100,6 +100,7 @@ sidebars:
 - ko_lb2_sidebar
 - ru_lb2_sidebar
 - zh_lb2_sidebar
+- pt-br_lb2_sidebar
 
 description: "Documentation for the LoopBack framework"
 # the description is used in the feed.xml file
