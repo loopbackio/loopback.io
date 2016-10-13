@@ -50,7 +50,7 @@ The tool will prompt you to provide the required information, as summarized belo
 **Deny everyone all endpoints**.  This is often the starting point when defining ACLs, because then you can selectively allow access for specific actions.
 
 ```
-? Select the model to apply the ACL entry to: Review
+? Select the model to apply the ACL entry to: (all existing models)
 ? Select the ACL scope: All methods and properties
 ? Select the access type: All (match all types)
 ? Select the role: All users
