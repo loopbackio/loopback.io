@@ -1,7 +1,8 @@
 ---
 title: "Model hooks"
 lang: en
-layout: page
+layout: navgroup
+navgroup: app-logic
 keywords: LoopBack
 tags:
 sidebar: lb2_sidebar

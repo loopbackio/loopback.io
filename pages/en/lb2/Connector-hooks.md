@@ -1,22 +1,14 @@
 ---
 title: "Connector hooks"
 lang: en
-layout: page
+layout: navgroup
+navgroup: app-logic
 keywords: LoopBack
 tags:
 sidebar: lb2_sidebar
 permalink: /doc/en/lb2/Connector-hooks.html
 summary:
 ---
-
-{% include see-also.html content="
-* [Remote methods](Remote-methods.html)
-* [Remote hooks](Remote-hooks.html)
-* [Operation hooks](Operation-hooks.html)
-* [Model hooks](Model-hooks.html)
-* [Tutorial: Adding application logic](Tutorial-Adding-application-logic.html)
-" %}
-
 ## Overview
 
 Connectors are responsible for interacting with the backend systems on behalf of model methods.

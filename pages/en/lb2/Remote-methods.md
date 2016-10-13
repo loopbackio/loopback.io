@@ -1,23 +1,14 @@
 ---
 title: "Remote methods"
 lang: en
-layout: page
+layout: navgroup
+navgroup: app-logic
 keywords: LoopBack
 tags:
 sidebar: lb2_sidebar
 permalink: /doc/en/lb2/Remote-methods.html
 summary:
 ---
-
-{% include see-also.html content="
-* [Remote hooks](Remote-hooks.html)
-* [Operation hooks](Operation-hooks.html)
-* [Model hooks](Model-hooks.html)
-* [Connector hooks](Connector-hooks.html)
-* [Tutorial: Adding application logic](Tutorial-Adding-application-logic.html) 
-" %}
-
-
 ## Overview
 
 A _remote method_ is a static method of a model, exposed over a custom REST endpoint.

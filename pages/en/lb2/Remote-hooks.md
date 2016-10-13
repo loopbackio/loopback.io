@@ -1,22 +1,14 @@
 ---
 title: "Remote hooks"
 lang: en
-layout: page
+layout: navgroup
+navgroup: app-logic
 keywords: LoopBack
 tags:
 sidebar: lb2_sidebar
 permalink: /doc/en/lb2/Remote-hooks.html
 summary:
 ---
-
-{% include see-also.html content="
-* [Remote methods](Remote-methods.html)
-* [Operation hooks](Operation-hooks.html)
-* [Model hooks](Model-hooks.html)
-* [Connector hooks](Connector-hooks.html)
-* [Tutorial: Adding application logic](Tutorial-Adding-application-logic.html)
-" %}
-
 ## Overview
 
 LoopBack provides two kinds of hooks:

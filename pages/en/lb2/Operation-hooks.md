@@ -1,22 +1,14 @@
 ---
 title: "Operation hooks"
 lang: en
-layout: page
+layout: navgroup
+navgroup: app-logic
 keywords: LoopBack
 tags:
 sidebar: lb2_sidebar
 permalink: /doc/en/lb2/Operation-hooks.html
 summary:
 ---
-
-{% include see-also.html content="
-* [Remote methods](Remote-methods.html)
-* [Remote hooks](Remote-hooks.html)
-* [Model hooks](Model-hooks.html)
-* [Connector hooks](Connector-hooks.html)
-* [Tutorial: Adding application logic](Tutorial-Adding-application-logic.html)
-" %}
-
 ## Overview
 
 _Operation hooks_ are not tied to a particular method, but rather are triggered from all methods that execute a particular high-level create, read, update, or delete operation.
@@ -735,6 +727,9 @@ This enables hooks to decrypt data (for example). NOTE: This hook is called with
 Context properties
 
 * `data` - the data returned by the connector (loaded from the database)
+
+{% include note.html content="In LoopBack 2.x, the `find*` methods (`find`, `findOne`, `findById` and `findByIds`) provide `instance` in their loaded operation hook. All other methods provide the `data` object in their loaded operation hook.  This difference is corrected in version 3.0
+" %}
 
 ### persist
 
