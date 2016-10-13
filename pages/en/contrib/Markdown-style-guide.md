@@ -7,25 +7,23 @@ permalink: /doc/en/contrib/Markdown-style-guide.html
 summary:
 ---
 
-{% include note.html content="This is a work in progress.
+{% include important.html content="Follow the rules outlined here to ensure that Markdown displays consistently and accurately on this site, GitHub, and npmjs.com (where applicable).
 "%}
 
 ## Introduction
 
-Github uses [Redcarpet](https://github.com/vmg/redcarpet/) to parse readmes & other markdown files on Github. It is, generally speaking, more permissive/forgiving than [Kramdown](https://github.com/gettalong/kramdown), the markdown parser Jekyll uses.
+Github uses [Redcarpet](https://github.com/vmg/redcarpet/) to parse READMEs and other markdown files. It is, generally speaking, more permissive/forgiving than [Kramdown](https://github.com/gettalong/kramdown), the markdown parser Jekyll uses.
 
-Each has some features that the other does not. This document outlines rules to avoid syntax that **works on github, but breaks when READMEs are pulled into loopback.io or npm**.
-
-If the rules herein are followed, markdown should be parsed consistently & accurately in both settings. 
+Each has some features that the other does not. This document outlines rules to avoid syntax that works on GitHub, but breaks when READMEs are pulled into this site (loopback.io) or npmjs.com.
 
 ## Lists
 
-1. Indent nested lists by **4 spaces** (refer to [The Blog Post](http://daringfireball.net/projects/markdown/syntax#list)'s guidelines on lists.)
-2. Fenced code blocks in list items
+- Indent nested lists by **four spaces** (refer to [the original markdown blog post](http://daringfireball.net/projects/markdown/syntax#list) for guidelines on lists.)
+- Fenced code blocks in list items:
     1. Align code blocks in list item **with the first character of text in the first line of that list item**
-    2. Leave **one blank line** before code blocks in list items and **none** after
+    2. Leave **one blank line** before code blocks in list items and **none** afterward.
 
-### Examples
+Examples:
 
 ````md
 1. Top Level
@@ -43,11 +41,13 @@ If the rules herein are followed, markdown should be parsed consistently & accur
 ````
 
 ## Headers
-1. Always put spaces after the hash(es)
-2. Only put **one** `<h1>` header in a readme (*all* `<h1>`s are removed by Jekyll, which adds its own).
-3. Precede headers with a blank line
 
-### Examples
+- Always put spaces after the hash(es).
+- Only put **one** `<h1>` header in a readme (The Jekyll layout we use (`_layouts/readme.html`) removes *all* `<h1>`s are removed and replaces it with the value of the `title` page property.
+- Precede headers with a blank line.
+
+Examples:
+
 ````
 ## This
 
@@ -69,31 +69,60 @@ Here's a paragraph of text
 
 ## Links
 
-1. To convert a URL to a link, wrap the URL in angle brackets.
+### Use absolute URLs
 
-### Examples
+For links to work on this site, on <http://npmjs.com>, and on GitHub, always use absolute URLs, not relative URLs.  
+
+For example:
+
+INCORRECT:
+
+```
+...create a script named [`automigrate.js`](bin/automigrate.js).
+```
+
+Results in (broken link):
+
+...create a script named [`automigrate.js`](bin/automigrate.js).
+
+CORRECT:
+
+```
+...create a script named [`automigrate.js`](https://github.com/strongloop/loopback-example-database/blob/postgresql/bin/automigrate.js).
+```
+
+Results in a working link:
+
+...create a script named [`automigrate.js`](https://github.com/strongloop/loopback-example-database/blob/postgresql/bin/automigrate.js).
+
+### Bare URL links
+
+You can use a "bare" URL for a link instead of using the `[text](url)` syntax,
+however, with Jekyll you must wrap the URL in angle brackets for it to be made
+into a link (GitHub automatically detects URL strings and does it automatically)
+
+For example:
 
 ```
 https://this.will.not/create/a/link
 <https://this.WILL.create/a/link>
 ```
 
-## Fenced Code blocks
-1. Always preceed with an empty line
+## Fenced code blocks
 
-### Examples
+Always precede a code block with an empty line.
 
-````
-BAD: Jekyll will render the following block as inline code
+Examples:
+
+INCORRECT: Jekyll will render the following block as inline code:
 ```js
 console.log('on no! No empty line above me :(');
 console.log('Oh well.')
 ```
 
-Good: works on github & Jekyll
+CORRECT: Works on BOTH GitHub and Jekyll:
 
 ```js
 console.log('I\'m preceded by an empty line!');
 console.log('Hooray!');
 ```
-````
