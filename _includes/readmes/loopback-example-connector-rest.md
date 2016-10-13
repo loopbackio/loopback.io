@@ -1,6 +1,6 @@
 [strongloop-website]: http://strongloop.com/
 
-#loopback-example-rest-connector
+# loopback-example-rest-connector
 
 - [Overview](#Overview)
 - [Running the app](#running-the-app)
@@ -19,7 +19,7 @@ this REST API.
 $ git clone https://github.com/strongloop/loopback-example-rest-connector.git
 $ cd loopback-example-rest-connector/external-server
 $ npm install
-# node .
+$ node .
 ```
 In another shell:
 ```
@@ -35,7 +35,7 @@ explorer or by running `curl localhost:3000/api/Magazines`.
 ## FAQs
 The following are common questions related to using the REST connector.
 
-##How do you perform a GET request to a remote server?
+## How do you perform a GET request to a remote server?
 In this example, we have a REST API exposed in [model-config.json](https://github.com/strongloop/loopback-example-rest-connector/blob/master/external-server/server/model-config.json#L31)
 .
 

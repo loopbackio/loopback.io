@@ -18,6 +18,7 @@ Specify mixin locations relative to the `server/model-config.json` file.  Multip
 ### npm module
 
 This loads the [loopback-ds-timestamp-mixin](https://www.npmjs.com/package/loopback-ds-timestamp-mixin) module from the top level `node_modules` directory.  Note that this module provides a mixin file `time-stamp.js` which is registered as the camel case `TimeStamp` name.
+
 ```js
     {
       "_meta": {
@@ -43,6 +44,7 @@ This loads the [loopback-ds-timestamp-mixin](https://www.npmjs.com/package/loopb
       }
     }
 ```
+
 ### The local `server/mixins/` directory
 
 Because the `model-config.json` is within the `server` directory this loads the mixins from current mixins directory.

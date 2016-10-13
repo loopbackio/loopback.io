@@ -78,22 +78,23 @@ cd loopback-example-database
 npm install --save loopback-connector-oracle
 ```
 
-> ####Automatic PATH modification
+> #### Automatic PATH modification
+> **⚠️ DEPRECATED loopback 1.x feature**
 > During installation, you will see:
-> ```
-> ...
-> ---------------------------------------------------------------------------
-> The node-oracle module and the Oracle specific libraries have been
-> installed in /Users/sh/repos/loopback-example-database/node_modules/loopback-connector-oracle/node_modules/loopback-oracle-installer.
 >
-> The default bashrc (/etc/bashrc) or user's bash_profile (~/.bash_profile)
-> paths have been modified to use this path. If you use a shell other than
-> bash, please remember to set the DYLD_LIBRARY_PATH prior to using node.
+>     ...
+>     ---------------------------------------------------------------------------
+>     The node-oracle module and the Oracle specific libraries have been
+>     installed in /Users/sh/repos/loopback-example-database/node_modules/loopback-connector-oracle/node_modules/loopback-oracle-installer.
+>    
+>     The default bashrc (/etc/bashrc) or user's bash_profile (~/.bash_profile)
+>     paths have been modified to use this path. If you use a shell other than
+>     bash, please remember to set the DYLD_LIBRARY_PATH prior to using node.
+>    
+>     Example:
+>       $ export DYLD_LIBRARY_PATH=":/Users/$USER/repos/loopback-example-database/node_modules/loopback-connector-oracle/node_modules/instantclient:/Users/$USER/repos/loopback-example-database/node_modules/loopback-connector-oracle/node_modules/instantclient"
+>     ...
 >
-> Example:
->   $ export DYLD_LIBRARY_PATH=":/Users/$USER/repos/loopback-example-database/node_modules/loopback-connector-oracle/node_modules/instantclient:/Users/$USER/repos/loopback-example-database/node_modules/loopback-connector-oracle/node_modules/instantclient"
-> ...
-> ```
 >
 > This is a **DEPRECATED** feature from LoopBack 1.x (we will remove this
 > message in a future update. Due to concerns raised in the past regarding the

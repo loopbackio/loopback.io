@@ -1,4 +1,4 @@
-**PLEASE CREATE ISSUES AT https://github.com/strongloop/loopback/issues**
+**PLEASE CREATE ISSUES AT <https://github.com/strongloop/loopback/issues>**
 
 ---
 
