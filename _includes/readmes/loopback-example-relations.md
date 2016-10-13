@@ -250,6 +250,7 @@ Create six boot scripts:
       ```
 
 - `Book`(please add them manually)
+
   ```
   "people": {
       "type": "embedsMany",
@@ -261,20 +262,21 @@ Create six boot scripts:
   ```
 
 - `Link`(please add them manually)
-   ```
-   "linked": {
-      "type": "belongsTo",
-      "polymorphic": {
-        "idType": "number"
-      },
-      "properties": {
-        "name": "name"
-      },
-      "options": {
-        "invertProperties": true
-      }
-   }
-   ```
+
+  ```
+  "linked": {
+    "type": "belongsTo",
+    "polymorphic": {
+      "idType": "number"
+    },
+    "properties": {
+      "name": "name"
+    },
+    "options": {
+      "invertProperties": true
+    }
+  }
+  ```
 - `Order`
   - belongs to
     - `Customer`
