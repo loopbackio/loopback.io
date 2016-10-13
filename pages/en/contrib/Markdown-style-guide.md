@@ -12,8 +12,11 @@ summary:
 
 ## Introduction
 
-This page outlines how to author markdown so it will display properly on this site
-as well as GitHub (and npm, as applicable).
+Github uses [Redcarpet](https://github.com/vmg/redcarpet/) to parse readmes & other markdown files on Github. It is, generally speaking, more permissive/forgiving than [Kramdown](https://github.com/gettalong/kramdown), the markdown parser Jekyll uses.
+
+Each has some features that the other does not. This document outlines rules to avoid syntax that **works on github, but breaks when READMEs are pulled into loopback.io or npm**.
+
+If the rules herein are followed, markdown should be parsed consistently & accurately in both settings. 
 
 ## Lists
 
@@ -41,7 +44,7 @@ as well as GitHub (and npm, as applicable).
 
 ## Headers
 1. Always put spaces after the hash(es)
-2. Only put one `<h1>` header in a readme (*all* `<h1>`s are removed by Jekyll, which adds its own).
+2. Only put **one** `<h1>` header in a readme (*all* `<h1>`s are removed by Jekyll, which adds its own).
 3. Precede headers with a blank line
 
 ### Examples
@@ -64,24 +67,6 @@ Here's a paragraph of text
 ## This isn't a heading!! Needs a newline above
 ````
 
-## Blockquotes
-
-1. Only **unfenced** code blocks may go in block quotes. If highlighting is crucial, consider removing the block from the blockquote.
-
-### Examples
-```
-> This:
->
->     console.log('indented 4 spaces');
->
-> NOT this:
-> 
-> ```js
-> console.log('indented 4 spaces');
-> ```
->
-```
-
 ## Links
 
 1. To convert a URL to a link, wrap the URL in angle brackets.
@@ -95,3 +80,20 @@ https://this.will.not/create/a/link
 
 ## Fenced Code blocks
 1. Always preceed with an empty line
+
+### Examples
+
+````
+BAD: Jekyll will render the following block as inline code
+```js
+console.log('on no! No empty line above me :(');
+console.log('Oh well.')
+```
+
+Good: works on github & Jekyll
+
+```js
+console.log('I\'m preceded by an empty line!');
+console.log('Hooray!');
+```
+````
