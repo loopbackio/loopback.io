@@ -20,7 +20,7 @@ The second form below is for all other conditions.
 
 `filter[where][property][op]=value`
 
-For example, if there is a cars model with a `odo` property, the following query finds instances where the `odo` is exactly equal to 5000:
+For example, if there is a cars model with an `odo` property, the following query finds instances where the `odo` is greater than 5000:
 
 `/cars?filter[where][odo][gt]=5000`
 
