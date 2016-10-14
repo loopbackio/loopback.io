@@ -6,45 +6,55 @@ keywords: LoopBack
 tags:
 sidebar: lb2_sidebar
 permalink: /doc/en/lb2/Where-filter.html
-summary:
+summary: A <i>where</i> filter specifies a set of logical conditions to match, similar to a WHERE clause in a SQL query.
 ---
-
-A _where_ filter specifies a set of logical conditions to match, similar to a WHERE clause in a SQL query.
-
 ## REST API
 
 In the first form below, the condition is equivalence, that is, it tests whether _property_ equals _value_.
 The second form below is for all other conditions.
 
-`filter[where][property]=value`
+```
+filter[where][property]=value
+```
 
-`filter[where][property][op]=value`
+```
+filter[where][property][op]=value
+```
 
 For example, if there is a cars model with an `odo` property, the following query finds instances where the `odo` is greater than 5000:
 
-`/cars?filter[where][odo][gt]=5000`
+```
+/cars?filter[where][odo][gt]=5000
+```
 
 For example, here is a query to find cars with `odo` is less than 30,000:
 
-`/cars?filter[where][odo][lt]=30000`
+```
+/cars?filter[where][odo][lt]=30000
+```
 
 You can also use [stringified JSON format](/doc/{{page.lang}}/lb2/Querying-data.html#using-stringified-json-in-rest-queries) in a REST query.
 
-{% include important.html content="
-There is a 20 filters limitation using this format from [qs](https://github.com/ljharb/qs#parsing-arrays) where it maps arrays with over 20 indices to an object,
-which converts your filter into an `Object` where it is expecting an `Array`, See [Issue](https://github.com/strongloop/loopback/issues/2824) for more details.
+### Filter limit
+
+{% include important.html content="There is a twenty filter limit using this format from [qs](https://github.com/ljharb/qs#parsing-arrays) where it maps arrays with over twenty
+indices to an object, which converts your filter into an `Object` where it is expecting
+an `Array`, See [Issue](https://github.com/strongloop/loopback/issues/2824) for more details.
 A work around would be to override the query parsing middleware, with your own options as the following, or to use a stringified JSON instead.
 " %}
 
-### How to work-around the 20 filters limit in query format
+There are two ways to work around the filter limit:
+- Encode the large filter object as JSON.
+- Override the limit manually in `server/server.js`, before boot is called.
 
 **Encode the large filter object as JSON**
+
 ```
 http://localhost:3000/api/Books
 ?filter={"where":{"or":[{"id":1},{"id":2},...,{"id":20"},{"id":21}]}}
 ```
 
-**Override Limit**
+**Override limit**
 
 ```js
 // In `server/server.js`, before boot is called
@@ -90,17 +100,17 @@ Cars.find({where: {carClass:'fullsize'}});
 
 The equivalent REST query would be:
 
-`/api/cars?filter[where][carClass]=fullsize`
+```
+/api/cars?filter[where][carClass]=fullsize
+```
 
-{% include tip.html content="
-The above where clause syntax is for queries, and not for [`count()`](http://apidocs.strongloop.com/loopback/#persistedmodel-count).
+{% include tip.html content="The above where clause syntax is for queries, and not for [`count()`](http://apidocs.strongloop.com/loopback/#persistedmodel-count).
 For all other methods, including `count()`, omit the `{ where : ... }` wrapper; see [Where clause for other methods](#where-clause-for-other-methods) below.
 " %}
 
 ### Where clause for other methods
 
-{% include important.html content="
-When you call the Node APIs _for methods other than queries_, that is for methods that update and delete
+{% include important.html content="When you call the Node APIs _for methods other than queries_, that is for methods that update and delete
 (and [`count()`](http://apidocs.strongloop.com/loopback/#persistedmodel-count)), don't wrap the where clause in a `{ where : ... }` object, simply use the condition as the argument as shown below. See examples below.
 " %}
 
@@ -245,7 +255,9 @@ Use the AND and OR operators to create compound logical filters based on simple 
 
 **REST**
 
-`[where][<and|or>][0]condition1&[where][<and|or>]condition2...`
+```
+[where][<and|or>][0]condition1&[where][<and|or>]condition2...
+```
 
 Where _condition1_ and _condition2_ are a filter conditions.
 
@@ -257,16 +269,16 @@ You can use regular expressions in a where filter, with the following syntax. Y
 
 Essentially, `regexp` is just like an operator in which you provide a regular expression value as the comparison value.
 
-{% include tip.html content="
-A regular expression value can also include one or more [flags](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions#Advanced_searching_with_flags).  For example, append `/i` to the regular expression to perform a case-insensitive match.
+{% include tip.html content="A regular expression value can also include one or more [flags](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions#Advanced_searching_with_flags).  For example, append `/i` to the regular expression to perform a case-insensitive match.
 " %}
 
 {% include code-caption.html content="Node API" %}
+
 ```javascript
-{where: {property: {regexp: expression}}}
+{where: {property: {regexp: <expression>}}}
 ```
 
-Where _expression_ can be a:
+Where `<expression>` can be a:
 
 * String defining a regular expression (for example, `'^foo'` ).
 * Regular expression literal (for example, `/^foo/` ).
@@ -275,10 +287,10 @@ Where _expression_ can be a:
 Or, in a simpler format:
 
 ```javascript
-{where: {property: expression}}}
+{where: {property: <expression>}}}
 ```
 
-Where _expression_ can be a:
+Where `<expression>` can be a:
 
 * Regular expression literal (for example, `/^foo/` ).
 * Regular expression object (for example, `new RegExp(/John/)`).
@@ -286,8 +298,8 @@ Where _expression_ can be a:
 For more information on JavaScript regular expressions,
 see [Regular Expressions (Mozilla Developer Network)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions).
 
-{% include tip.html content="
-The above where clause syntax is for queries. For updates and deletes, omit the `{ where : ... }` wrapper.
+{% include tip.html content="The above where clause syntax is for queries.
+For updates and deletes, omit the `{ where : ... }` wrapper.
 See [Where clause for other methods](#where-clause-for-other-methods) below.
 " %}
 
@@ -305,7 +317,9 @@ Cars.find( {"where": {"model": /^T/} } );
 
 **REST**
 
-`filter[where][property][regexp]=expression`
+```
+filter[where][property][regexp]=expression
+```
 
 Where:
 
@@ -316,17 +330,22 @@ See [Regular Expressions (Mozilla Developer Network)](https://developer.mozilla
 A regular expression value can also include one or more [flags](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions#Advanced_searching_with_flags).
 For example, append `/i` to the regular expression to perform a case-insensitive match.
 
-{% include important.html content="
-When using a regular expression flag with the REST API, you _must_ precede the regular expression with a slash character (`/`)."
-%}
+{% include important.html content="When using a regular expression flag with the REST API,
+you _must_ precede the regular expression with a slash character (`/`).
+" %}
 
 The following REST query returns all cars for which the model starts with a capital "T"::
 
-`/api/cars?filter[where][model][regexp]=^T`
+```
+/api/cars?filter[where][model][regexp]=^T
+```
+
 
 The following REST query returns all models that start with either an uppercase "T" or lowercase "t":
 
-`/api/cars?filter[where][model][regexp]=/^t/i`
+```
+/api/cars?filter[where][model][regexp]=/^t/i
+```
 
 Note that since the regular expression includes a flag, it is preceded by a slash (`/`).
 
@@ -338,13 +357,17 @@ Weapons with name M1911:
 
 **REST**
 
-`/weapons?filter[where][name]=M1911`
+```
+/weapons?filter[where][name]=M1911
+```
 
 Cars where carClass is "fullsize":
 
 **REST**
 
-`/api/cars?filter[where][carClass]=fullsize`
+```
+/api/cars?filter[where][carClass]=fullsize
+```
 
 Equivalently, in Node:
 
@@ -366,7 +389,9 @@ transaction.find({
 
 For example, the following query returns all instances of the employee model using a _where_ filter that specifies a date property after (greater than) the specified date: 
 
-`/employees?filter[where][date][gt]=2014-04-01T18:30:00.000Z`
+```
+/employees?filter[where][date][gt]=2014-04-01T18:30:00.000Z
+```
 
 The same query using the Node API:
 
@@ -380,11 +405,15 @@ Employees.find({
 
 The top three weapons with a range over 900 meters:
 
-`/weapons?filter[where][effectiveRange][gt]=900&filter[limit]=3`
+```
+/weapons?filter[where][effectiveRange][gt]=900&filter[limit]=3
+```
 
 Weapons with audibleRange less than 10:
 
-`/weapons?filter[where][audibleRange][lt]=10`
+```
+/weapons?filter[where][audibleRange][lt]=10
+```
 
 ### and / or
 
@@ -399,7 +428,9 @@ Post.find({where: {and: [{title: 'My Post'}, {content: 'Hello'}]}}, 
 
 Equivalent in REST:
 
-`?filter[where][and][0][title]=My%20Post&filter[where][and][1][content]=Hello`
+```
+?filter[where][and][0][title]=My%20Post&filter[where][and][1][content]=Hello
+```
 
 Example using the "or" operator to finds posts that either have title of "My Post" or content of "Hello".
 
@@ -425,7 +456,9 @@ More complex example. The following expresses `(field1= foo and field2=bar) OR 
 
 Example of between operator:
 
-`filter[where][price][between][0]=0&filter[where][price][between][1]=7`
+```
+filter[where][price][between][0]=0&filter[where][price][between][1]=7
+```
 
 In Node API:
 
@@ -441,7 +474,9 @@ By combining it with [`limit`](/doc/{{page.lang}}/lb2/Limit-filter.html), you ca
 
 For example:
 
-`/locations?filter[where][geo][near]=153.536,-28.1&filter[limit]=3`
+```
+/locations?filter[where][geo][near]=153.536,-28.1&filter[limit]=3
+```
 
 GeoPoints can be expressed in any of the following ways:
 
@@ -504,12 +539,10 @@ var resultsPromise = Restaurants.find({
 });
 ```
 
-{% include warning.html content="
+{% include warning.html content="Spell Carefully!
 
-Spell Carefully!
-
-If `unit` value is mistyped, for example `'mile'` instead of `'miles'`, LoopBack will silently ignore the filter! "
-%}
+If `unit` value is mistyped, for example `'mile'` instead of `'miles'`, LoopBack will silently ignore the filter!
+" %}
 
 ### like and nlike
 
@@ -556,8 +589,12 @@ Posts.find({where: {id: {inq: [123, 234]}}}, 
 
 REST:
 
-`/medias?filter[where][keywords][inq]=foo&filter[where][keywords][inq]=bar`
+```
+/medias?filter[where][keywords][inq]=foo&filter[where][keywords][inq]=bar
+```
 
 Or 
 
-`?filter={"where": {"keywords": {"inq": ["foo", "bar"]}}}`
+```
+?filter={"where": {"keywords": {"inq": ["foo", "bar"]}}}
+```

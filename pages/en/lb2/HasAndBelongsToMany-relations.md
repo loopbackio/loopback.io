@@ -73,7 +73,7 @@ Assembly.Parts.link({id:assemblyId, fk: partId}, partInstance,  function(value, 
 });
 ```
 
-## **Methods added to the model**
+## Methods added to the model
 
 Once you define a "hasAndBelongsToMany" relation, LoopBack adds methods with the relation name to the declaring model class's prototype automatically.
 For example: `assembly.parts.create(...)`.
