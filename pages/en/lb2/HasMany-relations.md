@@ -73,10 +73,10 @@ For example: `Customer.prototype.orders(...)`.
     </tr>
     <tr>
       <td>
-        <pre>customer.orders([where],
+        <pre>customer.orders([filter],
   function(err, orders) {<br>  ...<br>});</pre>
       </td>
-      <td>Find orders for the customer by the filter</td>
+      <td>Find orders for the customer, optionally using provided [filter](Querying-data.html)</td>
     </tr>
     <tr>
       <td>

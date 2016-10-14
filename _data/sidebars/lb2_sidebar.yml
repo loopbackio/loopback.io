@@ -581,48 +581,47 @@ children:
     url: /doc/en/lb2/Creating-updating-and-deleting-data.html
     output: 'web, pdf'
 
+  - title: 'Querying data'
+    url: /doc/en/lb2/Querying-data.html
+    output: 'web'
     children:
-    - title: 'Querying data'
-      url: /doc/en/lb2/Querying-data.html
-      output: 'web'
-      children:
 
-      - title: 'Fields filter'
-        url: /doc/en/lb2/Fields-filter.html
-        output: 'web, pdf'
+    - title: 'Fields filter'
+      url: /doc/en/lb2/Fields-filter.html
+      output: 'web, pdf'
 
-      - title: 'Include filter'
-        url: /doc/en/lb2/Include-filter.html
-        output: 'web, pdf'
+    - title: 'Include filter'
+      url: /doc/en/lb2/Include-filter.html
+      output: 'web, pdf'
 
-      - title: 'Limit filter'
-        url: /doc/en/lb2/Limit-filter.html
-        output: 'web, pdf'
+    - title: 'Limit filter'
+      url: /doc/en/lb2/Limit-filter.html
+      output: 'web, pdf'
 
-      - title: 'Order filter'
-        url: /doc/en/lb2/Order-filter.html
-        output: 'web, pdf'
+    - title: 'Order filter'
+      url: /doc/en/lb2/Order-filter.html
+      output: 'web, pdf'
 
-      - title: 'Skip filter'
-        url: /doc/en/lb2/Skip-filter.html
-        output: 'web, pdf'
+    - title: 'Skip filter'
+      url: /doc/en/lb2/Skip-filter.html
+      output: 'web, pdf'
 
-      - title: 'Where filter'
-        url: /doc/en/lb2/Where-filter.html
-        output: 'web, pdf'
+    - title: 'Where filter'
+      url: /doc/en/lb2/Where-filter.html
+      output: 'web, pdf'
 
-    - title: 'Advanced topics: data'
-      url: /doc/en/lb2/Advanced-topics-data.html
-      output: 'web'
-      children:
+  - title: 'Advanced topics: data'
+    url: /doc/en/lb2/Advanced-topics-data.html
+    output: 'web'
+    children:
 
-      - title: 'Realtime server-sent events'
-        url: /doc/en/lb2/Realtime-server-sent-events.html
-        output: 'web, pdf'
+    - title: 'Realtime server-sent events'
+      url: /doc/en/lb2/Realtime-server-sent-events.html
+      output: 'web, pdf'
 
-      - title: 'AngularJS LiveSet example'
-        url: /doc/en/lb2/AngularJS-LiveSet-Example.html
-        output: 'web, pdf'
+    - title: 'AngularJS LiveSet example'
+      url: /doc/en/lb2/AngularJS-LiveSet-Example.html
+      output: 'web, pdf'
 
 - title: 'Adding application logic'
   url: /doc/en/lb2/Adding-application-logic.html
