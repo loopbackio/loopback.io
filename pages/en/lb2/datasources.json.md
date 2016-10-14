@@ -65,10 +65,6 @@ All data sources support a few standard properties. Beyond that, specific proper
       </td>
     </tr>
     <tr>
-      <td>lazyConnect</td>
-      <td>If true, then defer connection.  If false, connects to the data source when the app starts.</td>
-    </tr>    
-    <tr>
       <td>name</td>
       <td>Name of the data source being defined.</td>
     </tr>
