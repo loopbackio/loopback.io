@@ -238,6 +238,12 @@ This table describes the operators available in "where" filters. See [Examples]
       </td>
     </tr>
     <tr>
+      <td>ilike, nilike</td>
+      <td>
+        <p>ILIKE / NOT ILIKE operators for use with regular expressions. The regular expression format depends on the backend data source.</p>
+      </td>
+    </tr>
+    <tr>
       <td>regexp</td>
       <td>Regular expression.</td>
     </tr>
@@ -565,6 +571,29 @@ When using the memory connector:
 ```javascript
 User.find({where: {name: {like: '%St%'}}}, function (err, posts) { ... });
 User.find({where: {name: {nlike: 'M%XY'}}}, function (err, posts) { ... });
+```
+
+### ilike and nilike
+
+The ilike and nilike (not ilike) operators enable you to match case insensitive SQL regular expressions. The regular expression format depends on the backend data source.
+
+Example of ilike operator:
+
+```javascript
+Post.find({where: {title: {ilike: 'm.-st'}}}, function (err, posts) { ... });
+```
+
+Example of nilike operator:
+
+```javascript
+Post.find({where: {title: {nilike: 'm.-xy'}}}, function (err, posts) {
+```
+
+When using the memory connector:
+
+```javascript
+User.find({where: {name: {ilike: '%st%'}}}, function (err, posts) { ... });
+User.find({where: {name: {nilike: 's%xy'}}}, function (err, posts) { ... });
 ```
 
 ### inq
