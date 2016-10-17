@@ -184,71 +184,20 @@ var defaultScope = Report.defaultScope;
 
 This table describes the operators available in "where" filters. See [Examples](#examples) below.
 
-<table>
-  <tbody>
-    <tr>
-      <th>Operator</th>
-      <th>Description</th>
-    </tr>
-    <tr>
-      <td>and</td>
-      <td>Logical AND operator</td>
-    </tr>
-    <tr>
-      <td>or</td>
-      <td>Logical OR operator</td>
-    </tr>
-    <tr>
-      <td>gt, gte</td>
-      <td>
-        <p>Numerical greater than (&gt;); greater than or equal (&gt;=). Valid only for numerical and date values.</p>
-        <p>For Geopoint values, the units are in miles by default. See <a href="http://apidocs.strongloop.com/loopback-datasource-juggler/#geopoint" class="external-link" rel="nofollow">Geopoint</a> for more information.</p>
-      </td>
-    </tr>
-    <tr>
-      <td>lt, lte</td>
-      <td>
-        <p>Numerical less than (&lt;); less than or equal (&lt;=). Valid only for numerical and date values.</p>
-        <p>For geolocation values, the units are in miles by default. See <a href="http://apidocs.strongloop.com/loopback-datasource-juggler/#geopoint" class="external-link" rel="nofollow">Geopoint</a> for more information.</p>
-      </td>
-    </tr>
-    <tr>
-      <td>between</td>
-      <td>
-        <p>True if the value is between the two specified values: greater than or equal to first value and less than or equal to second value.</p>
-        <p>For geolocation values, the units are in miles by default. See <a href="http://apidocs.strongloop.com/loopback-datasource-juggler/#geopoint" class="external-link" rel="nofollow">Geopoint</a> for more information.</p>
-      </td>
-    </tr>
-    <tr>
-      <td>inq, nin</td>
-      <td>In / not in an array of values.</td>
-    </tr>
-    <tr>
-      <td>near</td>
-      <td>For geolocations, return the closest points, sorted in order of distance. &nbsp;Use with&nbsp;<code>limit</code>&nbsp;to return the n closest points.</td>
-    </tr>
-    <tr>
-      <td>neq</td>
-      <td>Not equal (!=)</td>
-    </tr>
-    <tr>
-      <td>like, nlike</td>
-      <td>
-        <p>LIKE / NOT LIKE operators for use with regular expressions. The regular expression format depends on the backend data source.</p>
-      </td>
-    </tr>
-    <tr>
-      <td>ilike, nilike</td>
-      <td>
-        <p>ILIKE / NOT ILIKE operators for use with regular expressions. The regular expression format depends on the backend data source.</p>
-      </td>
-    </tr>
-    <tr>
-      <td>regexp</td>
-      <td>Regular expression.</td>
-    </tr>
-  </tbody>
-</table>
+| Operator  | Description|
+| ------------- | ------------- |
+| = | Equivalence. See [examples](#equivalence) below.|
+| and | Logical AND operator. See [AND and OR operators](#and-and-or-operators) and [examples](#and--or) below.|
+| or | Logical OR operator. See [AND and OR operators](#and-and-or-operators) and [examples](#and--or) below.|
+| gt, gte | Numerical greater than (&gt;); greater than or equal (&gt;=). Valid only for numerical and date values. See [examples](#gt-and-lt) below. <br/><br/>  For Geopoint values, the units are in miles by default. See [Geopoint](http://apidocs.strongloop.com/loopback-datasource-juggler/#geopoint) for more information.|
+| lt, lte | Numerical less than (&lt;); less than or equal (&lt;=). Valid only for numerical and date values. <br/><br/>For geolocation values, the units are in miles by default. See [Geopoint](http://apidocs.strongloop.com/loopback-datasource-juggler/#geopoint) for more information. |
+| between | True if the value is between the two specified values: greater than or equal to first value and less than or equal to second value. See [examples](#gt-and-lt) below. <br/><br/> For geolocation values, the units are in miles by default. See [Geopoint](http://apidocs.strongloop.com/loopback-datasource-juggler/#geopoint) for more information.|
+| inq, nin | In / not in an array of values. See [examples](#inq) below.|
+| near | For geolocations, return the closest points, sorted in order of distance. Use with `limit` to return the _n_ closest points. See [examples](#near) below.|
+| neq | Not equal (!=) |
+| like, nlike | LIKE / NOT LIKE operators for use with regular expressions. The regular expression format depends on the backend data source.  See [examples](#like-and-nlike) below. |
+| ilike, nilike | ILIKE / NOT ILIKE operators for use with regular expressions. The regular expression format depends on the backend data source. See [examples](#ilike-and-nilike) below. |
+| regexp | Regular expression. See [examples](#regular-expressions) below. |
 
 ### AND and OR operators
 
