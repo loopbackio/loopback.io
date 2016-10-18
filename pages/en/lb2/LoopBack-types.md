@@ -11,7 +11,7 @@ summary:
 
 ## Overview
 
-Various LoopBack methods accept type descriptions, for example [remote methods](/doc/{{page.lang}}/lb2/Remote-methods.html) and 
+Various LoopBack methods accept type descriptions, for example [remote methods](Remote-methods.html) and 
 [dataSource.createModel()](http://apidocs.strongloop.com/loopback-datasource-juggler/#datasource-prototype-createmodel).
 
 The following table summarizes LoopBack's data types.
@@ -32,7 +32,7 @@ The following table summarizes LoopBack's data types.
       <td>array</td>
       <td>
         <p>JSON array</p>
-        <p>See <a href="/doc/{{page.lang}}/lb2/LoopBack-types.html#array-types">Array types</a> below.</p>
+        <p>See <a href="LoopBack-types.html#array-types">Array types</a> below.</p>
       </td>
       <td><code>[ "one", 2, true ]</code></td>
     </tr>
@@ -80,7 +80,7 @@ The following table summarizes LoopBack's data types.
       <td>Object</td>
       <td>
         <p>JSON object or any type</p>
-        <p>See <a href="/doc/{{page.lang}}/lb2/LoopBack-types.html#object-types">Object types</a> below.</p>
+        <p>See <a href="LoopBack-types.html#object-types">Object types</a> below.</p>
       </td>
       <td>
         <pre class="de1">{ "firstName": "John", "lastName": "Smith", "age": 25 }</pre>

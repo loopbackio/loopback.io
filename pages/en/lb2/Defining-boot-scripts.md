@@ -26,7 +26,7 @@ When an application starts, the bootstrapper:
 * Runs boot scripts in the `/server/boot` directory.
 
 The loopback-boot module exports a `boot()` function that initializes an application.
-For example, from the standard scaffolded [server.js](/doc/{{page.lang}}/lb2/server.js.html) script:
+For example, from the standard scaffolded [server.js](server.js.html) script:
 
 ```js
 var loopback = require('loopback');
@@ -57,7 +57,7 @@ See [Boot script loading order](#boot-script-loading-order) for details.
 
 ## Predefined boot scripts
 
-The [application generator](/doc/{{page.lang}}/lb2/Application-generator.html) creates the following boot scripts:
+The [application generator](Application-generator.html) creates the following boot scripts:
 
 
 * `/server/boot/root.js` binds [loopback.status()](http://apidocs.strongloop.com/loopback/#loopback-status) middleware
@@ -80,7 +80,7 @@ The API Connect LoopBack generator does not create the  `authentication.js` boo
 
 In addition to the predefined boot scripts, you can define custom boot scripts to perform your own logic when an application starts.
 
-Use the [boot script generator](/doc/{{page.lang}}/lb2/Boot-script-generator.html), to quickly generate boot script templates.
+Use the [boot script generator](Boot-script-generator.html), to quickly generate boot script templates.
 Depending on how you respond to the generator's prompts, it will generate a template for either a synchronous or asynchronous boot script:
 
 {% include code-caption.html content="Synchronous boot script template" %}

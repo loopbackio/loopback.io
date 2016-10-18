@@ -10,10 +10,10 @@ summary:
 ---
 
 {% include tip.html content="
-For information on access control for related models, see [Accessing related models](/doc/en/lb2/Accessing-related-models.html)
+For information on access control for related models, see [Accessing related models](Accessing-related-models.html)
 " %}
 
-All of the endpoints in the access token REST API are inherited from the generic [PersistedModel REST API](/doc/{{page.lang}}/lb2/PersistedModel-REST-API.html).
+All of the endpoints in the access token REST API are inherited from the generic [PersistedModel REST API](PersistedModel-REST-API.html).
 The reference is provided here for convenience.
 
 **Quick reference**
@@ -39,7 +39,7 @@ The reference is provided here for convenience.
       <td>POST</td>
       <td>Allow</td>
       <td>
-        <p><a href="/doc/{{page.lang}}/lb2/PersistedModel-REST-API.html#create-model-instance">Add access token instance</a> and persist to data source.</p>
+        <p><a href="PersistedModel-REST-API.html#create-model-instance">Add access token instance</a> and persist to data source.</p>
       </td>
       <td>JSON object (in request body)</td>
     </tr>
@@ -47,7 +47,7 @@ The reference is provided here for convenience.
       <td><code>/accessTokens</code></td>
       <td>GET</td>
       <td><span>Deny</span></td>
-      <td><a href="/doc/{{page.lang}}/lb2/PersistedModel-REST-API.html#find-matching-instances">Find instances</a> of accessTokens that match specified filter.</td>
+      <td><a href="PersistedModel-REST-API.html#find-matching-instances">Find instances</a> of accessTokens that match specified filter.</td>
       <td>
         <p>One or more filters in query parameters:</p>
         <ul>
@@ -64,21 +64,21 @@ The reference is provided here for convenience.
       <td><code>/accessTokens</code></td>
       <td>PUT</td>
       <td><span>Deny</span></td>
-      <td><a href="/doc/{{page.lang}}/lb2/PersistedModel-REST-API.html#update--insert-instance">Update / insert access token instance</a> and persist to data source.</td>
+      <td><a href="PersistedModel-REST-API.html#update--insert-instance">Update / insert access token instance</a> and persist to data source.</td>
       <td>JSON object (in request body)</td>
     </tr>
     <tr>
       <td><code>/accessTokens/<em>id</em></code></td>
       <td>GET</td>
       <td><span>Deny</span></td>
-      <td><a href="/doc/{{page.lang}}/lb2/PersistedModel-REST-API.html#find-instance-by-id">Find access token by ID</a>: Return data for the specified access token instance ID.</td>
+      <td><a href="PersistedModel-REST-API.html#find-instance-by-id">Find access token by ID</a>: Return data for the specified access token instance ID.</td>
       <td><em>id</em>, the access token instance ID (in URI path)</td>
     </tr>
     <tr>
       <td><code>/accessTokens/<em>id</em></code></td>
       <td>PUT</td>
       <td><span>Deny</span></td>
-      <td><a href="/doc/{{page.lang}}/lb2/PersistedModel-REST-API.html#update-model-instance-attributes">Update attributes</a> for specified access token ID and persist.</td>
+      <td><a href="PersistedModel-REST-API.html#update-model-instance-attributes">Update attributes</a> for specified access token ID and persist.</td>
       <td>
         <p>Query parameters:</p>
         <ul>
@@ -91,7 +91,7 @@ The reference is provided here for convenience.
       <td><code>/accessTokens/<em>id</em></code></td>
       <td>DELETE</td>
       <td><span>Deny</span></td>
-      <td><a href="/doc/{{page.lang}}/lb2/PersistedModel-REST-API.html#delete-model-instance">Delete access token</a> with specified instance ID.</td>
+      <td><a href="PersistedModel-REST-API.html#delete-model-instance">Delete access token</a> with specified instance ID.</td>
       <td><em>id</em>, access token ID<em> </em>(in URI path)</td>
     </tr>
     <tr>
@@ -99,7 +99,7 @@ The reference is provided here for convenience.
       <td>GET</td>
       <td><span>Deny</span></td>
       <td>
-        <p><a href="/doc/{{page.lang}}/lb2/PersistedModel-REST-API.html#check-instance-existence">Check instance existence</a>: Return true if specified access token ID exists.</p>
+        <p><a href="PersistedModel-REST-API.html#check-instance-existence">Check instance existence</a>: Return true if specified access token ID exists.</p>
       </td>
       <td>
         <p>URI path:</p>
@@ -113,7 +113,7 @@ The reference is provided here for convenience.
       <td>GET</td>
       <td><span>Deny</span></td>
       <td>
-        <p><a href="/doc/{{page.lang}}/lb2/PersistedModel-REST-API.html#get-instance-count">Return the number of access token instances</a>&nbsp;that matches specified where clause.</p>
+        <p><a href="PersistedModel-REST-API.html#get-instance-count">Return the number of access token instances</a>&nbsp;that matches specified where clause.</p>
       </td>
       <td>Where filter specified in query parameter</td>
     </tr>
@@ -122,9 +122,9 @@ The reference is provided here for convenience.
       <td>GET</td>
       <td><span>Deny</span></td>
       <td>
-        <p><a href="/doc/{{page.lang}}/lb2/PersistedModel-REST-API.html#find-first-instance">Find first access token instance</a> that matches specified filter.</p>
+        <p><a href="PersistedModel-REST-API.html#find-first-instance">Find first access token instance</a> that matches specified filter.</p>
       </td>
-      <td>Same as<span>&nbsp;<a href="/doc/{{page.lang}}/lb2/PersistedModel-REST-API.html#find-matching-instances">Find matching instances</a>.</span></td>
+      <td>Same as<span>&nbsp;<a href="PersistedModel-REST-API.html#find-matching-instances">Find matching instances</a>.</span></td>
     </tr>
   </tbody>
 </table>

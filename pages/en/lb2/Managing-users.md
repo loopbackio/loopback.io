@@ -37,12 +37,12 @@ Watch this video for an introduction to user management in LoopBack:
 The basic process to create and authenticate users is:
 
 1.  Register a new user with the [`User.create()`](http://apidocs.strongloop.com/loopback/#persistedmodel-create) method, inherited from the generic `PersistedModel` object.
-    See [Registering users](/doc/{{page.lang}}/lb2/Registering-users.html) for more information.
+    See [Registering users](Registering-users.html) for more information.
 2.  Log in a user by calling [`User.login()`](https://apidocs.strongloop.com/loopback/#user-login) to get an access token.
-    See [Logging in users](/doc/{{page.lang}}/lb2/Logging-in-users.html) for more information.
+    See [Logging in users](Logging-in-users.html) for more information.
 3.  Make subsequent API calls using the access token.
     Provide the access token in the HTTP header or as a query parameter to the REST API call, as shown in 
-    [Making authenticated requests with access tokens](/doc/{{page.lang}}/lb2/Making-authenticated-requests.html#making-authenticated-requests-with-access-tokens).
+    [Making authenticated requests with access tokens](Making-authenticated-requests.html#making-authenticated-requests-with-access-tokens).
 
 ### Performance tip
 
@@ -54,10 +54,10 @@ $ npm install --save bcrypt
 
 ## Understanding the built-in User model
 
-By default, a LoopBack application has a [built-in User model](/doc/{{page.lang}}/lb2/Using-built-in-models.html) 
+By default, a LoopBack application has a [built-in User model](Using-built-in-models.html) 
 defined by [user.json](https://github.com/strongloop/loopback/blob/master/common/models/user.json)
 (this file is part of the LoopBack framework.
-Don't modify it; rather, follow the procedure in [Extending built-in models](/doc/{{page.lang}}/lb2/Extending-built-in-models.html)).
+Don't modify it; rather, follow the procedure in [Extending built-in models](Extending-built-in-models.html)).
 
 {% include tip.html content="
 For a basic introduction to how the LoopBack user model performs authentication,
@@ -143,4 +143,4 @@ Since a model doesn't inherit ACLs from its base model, you must define ACLs for
 
 ### User realms
 
-See [Partitioning users with realms](/doc/{{page.lang}}/lb2/Partitioning-users-with-realms.html).
+See [Partitioning users with realms](Partitioning-users-with-realms.html).

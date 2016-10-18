@@ -100,11 +100,11 @@ Setup involves three steps:
 ### Enable change tracking
 
 You must enable change tracking for each model that you want to be able to access offline.
-Make the following change to the [Model definition JSON file](/doc/{{page.lang}}/lb2/Model-definition-JSON-file.html):
+Make the following change to the [Model definition JSON file](Model-definition-JSON-file.html):
 
 * Set `trackChanges` to `true`.
 * Change the `id` property to an auto-generated GUID; for information on GUIDs,
-  see [Model definition JSON file reference](/doc/{{page.lang}}/lb2/Model-definition-JSON-file.html#general-property-properties).
+  see [Model definition JSON file reference](Model-definition-JSON-file.html#general-property-properties).
 * Set `strict` property to `validate`.
 * Set the `persistUndefinedAsNull` property to `true`.
 

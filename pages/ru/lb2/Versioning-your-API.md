@@ -37,7 +37,7 @@ module.exports = {
 
 {% include important.html content="
 
-Changing the API root in this way doesn't affect routes set in [request-handling middleware](/doc/ru/lb2/Defining-middleware.html#Definingmiddleware-Dynamicrequest-handlingmiddleware) or the route to [API Explorer](/doc/ru/lb2/-API-Explorer.html) itself, which remains `http://localhost:3000/explorer`.
+Changing the API root in this way doesn't affect routes set in [request-handling middleware](Defining-middleware.html#Definingmiddleware-Dynamicrequest-handlingmiddleware) or the route to [API Explorer](-API-Explorer.html) itself, which remains `http://localhost:3000/explorer`.
 
 " %}
 ```shell
@@ -55,7 +55,7 @@ $ npm install
 
     {% include note.html content="
 
-    LoopBack [генератор модели](/doc/ru/lb2/Model-generator.html) (`slc loopback:model`) всегда создает два файла в `/common/models` для каждой модели: JSON файл с именем вида `<_model-name_>.json` с описанием свойств модели и JavaScript файл вида `<_model-name_>.js` где вы можите расширить и переопределить поведение модели.
+    LoopBack [генератор модели](Model-generator.html) (`slc loopback:model`) всегда создает два файла в `/common/models` для каждой модели: JSON файл с именем вида `<_model-name_>.json` с описанием свойств модели и JavaScript файл вида `<_model-name_>.js` где вы можите расширить и переопределить поведение модели.
 
     " %}
 2.  Откройте `coffee-shop.js` в вашем любимом редакторе.  По умолчанию он содержит пустую функцию: 
@@ -99,7 +99,7 @@ $ npm install
 
     Тут приведен просто удаленный метод "status" который не принимает никаких аргументов, и сверяет время и возвращает в JSON  сообщение, которое говорит "Open for business" или "Sorry we are closed" в зависимости от текущего времени.
 
-    Конечно, на практике вы можете сделать гораздо более интересные и сложные вещи используя удаленные методы (remote method), таких как манипуляции  c введенными данными, перед сохранением их в базу данных. Вы можите изменить путь где вы вызываете удаленный метод (remote method), и определять сложные аргументы и возвращаемые значения.  См. [Удаленные методы (remote methods)](/doc/ru/lb2/Remote-methods.html) для получения более подробной информации.
+    Конечно, на практике вы можете сделать гораздо более интересные и сложные вещи используя удаленные методы (remote method), таких как манипуляции  c введенными данными, перед сохранением их в базу данных. Вы можите изменить путь где вы вызываете удаленный метод (remote method), и определять сложные аргументы и возвращаемые значения.  См. [Удаленные методы (remote methods)](Remote-methods.html) для получения более подробной информации.
 
 4.  Сохраните файл.
 
@@ -109,11 +109,11 @@ $ npm install
 
     `$ slc run`
 
-2.  Перейдите по адресу [http://localhost:3000/explorer](http://localhost:3000/explorer) для просмотра API Explorer.  Затем кликнете на  CoffeeShops и вы увидите новый REST endpoint, `GET/CoffeeShop/status` который вызывает удаленный метод (remote method).  
+2.  Перейдите по адресу [http://localhost:3000/explorer](http://localhost:3000/explorer) для просмотра API Explorer.  Затем кликнете на  CoffeeShops и вы увидите новый REST endpoint, `GET/CoffeeShop/status` который вызывает удаленный метод (remote method).
     {% include image.html file="5570910.png" alt="" %} 
 
-3.  Кликните **Try it Out!**  
-    Вы увидите результат вызова удаленного метода (remote method) :  
+3.  Кликните **Try it Out!**
+    Вы увидите результат вызова удаленного метода (remote method) :
     ```js
     {
       "status": "Open for business."
@@ -122,13 +122,13 @@ $ npm install
 
 Вот как легко обавлть удаленные методы с  LoopBack! 
 
-Для получения более подробной информации, см.  [Удаленные методы](/doc/ru/lb2/Remote-methods.html).
+Для получения более подробной информации, см.  [Удаленные методы](Remote-methods.html).
 
-Next: В [Добавление статической страницы](/doc/ru/lb2/-.html), вы добавите Express промежуточное ПО для обслуживания статиеского контента такого, ак HTML/CSS, картинки, и JavaScript.ткрыть Person модель через REST:
+Next: В [Добавление статической страницы](-.html), вы добавите Express промежуточное ПО для обслуживания статиеского контента такого, ак HTML/CSS, картинки, и JavaScript.ткрыть Person модель через REST:
 
 `[?] Expose CoffeeShop via the REST API? (Y/n) Y`
 
-LoopBack автоматически создаст REST путь связи с вашей моделью используя _множественное число_ имени модели. По умолчанию это _множественное число_ имени будет создано путем добавления окончания "s", но вы можите использовать другую форму множественного числа, если захотите. См [Использование модели через REST](/doc/ru/lb2/-REST.html) для получения более подробной информации.  
+LoopBack автоматически создаст REST путь связи с вашей моделью используя _множественное число_ имени модели. По умолчанию это _множественное число_ имени будет создано путем добавления окончания "s", но вы можите использовать другую форму множественного числа, если захотите. См [Использование модели через REST](-REST.html) для получения более подробной информации.  
 
 Нажмите **Enter** для согласия с предложенным _множественным числом_ по умолчанию (CoffeeShops):
 
@@ -267,7 +267,7 @@ Enter an empty property name when done.
 
 Кроме того каталоги верхнего уровня содержат заглушку `README.md` файл, и `node_modules` папку (требующихся для Node модулей ).
 
-Для более подробной информации о канонической структуре LoopBack приложения, см [Справка по проектированию проекта](/doc/ru/lb2/Project-layout-reference.html).
+Для более подробной информации о канонической структуре LoopBack приложения, см [Справка по проектированию проекта](Project-layout-reference.html).
 
 ## Запуск приложения
 
@@ -287,7 +287,7 @@ Web server listening at: http://0.0.0.0:3000/
 
 {% include note.html content="
 
-Запуск приложения с помощью `slc` (StrongLoop Controller) происходит также как при использовании `node` команд, но `slc` предоставляет возможность кластеризации, логирования , мониторинга и других опций. См [Работа Node приложений](https://docs.strongloop.com/display/SLC/Operating+Node+applications) and [Начало работы](/doc/ru/lb2/-LoopBack.html) для получения более детальной информации о возможносятх `slc` консоли.
+Запуск приложения с помощью `slc` (StrongLoop Controller) происходит также как при использовании `node` команд, но `slc` предоставляет возможность кластеризации, логирования , мониторинга и других опций. См [Работа Node приложений](https://docs.strongloop.com/display/SLC/Operating+Node+applications) and [Начало работы](-LoopBack.html) для получения более детальной информации о возможносятх `slc` консоли.
 
 " %}
 
@@ -305,4 +305,4 @@ Web server listening at: http://0.0.0.0:3000/
 
 Путем простых шагов, используя  LoopBack, вы создали CoffeeShop модель, определили ее свойства а затем вывели ее через  REST. 
 
-Next: [Используя API Explorer](/doc/ru/lb2/-API-Explorer.html), вы можете рассмотреть REST API модель, которую вы только что создали более подробно и осуществить другие операции.
+Next: [Используя API Explorer](-API-Explorer.html), вы можете рассмотреть REST API модель, которую вы только что создали более подробно и осуществить другие операции.

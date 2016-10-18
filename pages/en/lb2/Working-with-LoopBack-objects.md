@@ -57,7 +57,7 @@ module.exports = function(app) { //app is injected by loopback
 
 As you can see from both examples, LoopBack provides the `app` object automatically as the first parameter in your boot scripts.
 
-See [Defining boot scripts](/doc/{{page.lang}}/lb2/Defining-boot-scripts.html) for more information about boot scripts.
+See [Defining boot scripts](Defining-boot-scripts.html) for more information about boot scripts.
 
 ### From middleware
 
@@ -73,7 +73,7 @@ app.use(function(req, res, next) {
 ...
 ```
 
-See [Defining middleware](/doc/{{page.lang}}/lb2/Defining-middleware.html) for more information on middleware.
+See [Defining middleware](Defining-middleware.html) for more information on middleware.
 
 ### From a custom script
 
@@ -89,7 +89,7 @@ You simply require `/server/server.js` as you would any Node module.
 
 ### From a model script
 
-To get a handle on the `app` object in a model scaffolded by the [Model generator](/doc/{{page.lang}}/lb2/Model-generator.html),
+To get a handle on the `app` object in a model scaffolded by the [Model generator](Model-generator.html),
 "require" it as you would any Node module:
 
 {% include code-caption.html content="Model - /common/models/book.js" %}
@@ -201,8 +201,8 @@ var app = require('/server/server');
 
 ### Using model objects
 
-For information on the basic model object, see [Basic model object](/doc/{{page.lang}}/lb2/Basic-model-object.html).
-For information on model object when the model is connected to a persistent data source, see [Connected model object](/doc/{{page.lang}}/lb2/Connected-model-object.html).
+For information on the basic model object, see [Basic model object](Basic-model-object.html).
+For information on model object when the model is connected to a persistent data source, see [Connected model object](Connected-model-object.html).
 
 ### Getting a reference to an unrelated model
 

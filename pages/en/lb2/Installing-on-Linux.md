@@ -31,7 +31,7 @@ Many Linux distributions come with the necessary tools. See [Installing compile
 If you haven't already installed Node, [download and install Node.js](http://nodejs.org/en/download).
 
 {% include tip.html content="For best results, use the latest LTS (long-term support) release of Node.js.
-" %}  
+" %}
 
 ## Install StrongLoop  
 
@@ -51,7 +51,7 @@ Follow these steps:
     During installation, you may see a number of errors from `node-gyp` if you don't have [compiler tools](Installing-compiler-tools.html) installed. You can ignore the errors for now."
     %}
 
-If you run into any problems, see [Installation troubleshooting](/doc/{{page.lang}}/lb2/Installation-troubleshooting.html).
+If you run into any problems, see [Installation troubleshooting](Installation-troubleshooting.html).
 
 ## Errors on Ubuntu
 

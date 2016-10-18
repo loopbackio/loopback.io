@@ -33,7 +33,7 @@ They are related as follows:
 *   A review belongs to a reviewer
 *   A reviewer has many reviews
 
-In general, users can create, edit, delete, and read reviews of coffee shops, with the following basic rules and permissions implemented through [ACLs](/doc/{{page.lang}}/lb2/Controlling-data-access.html):
+In general, users can create, edit, delete, and read reviews of coffee shops, with the following basic rules and permissions implemented through [ACLs](Controlling-data-access.html):
 
 *   Anyone can read reviews, but you must be logged in to create, edit, or delete them.
 *   Anyone can register as a user; then log in and log out.
@@ -78,7 +78,7 @@ Click **Add Review** to create a new review, **My Reviews** to view only you
 
 ## Create your own app
 
-To understand all the features of the Coffee Shop Reviews app, you're going to recreate it from scratch.  The starting point is the app you created in [Getting started with LoopBack](/doc/{{page.lang}}/lb2/Getting-started-with-LoopBack.html).  
+To understand all the features of the Coffee Shop Reviews app, you're going to recreate it from scratch.  The starting point is the app you created in [Getting started with LoopBack](Getting-started-with-LoopBack.html).  
 
 So, if you followed that tutorial, simply change to that directory:
 

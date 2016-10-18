@@ -11,7 +11,7 @@ summary:
 
 {% include important.html content="
 
-Ниже описана структура приложения, которая создается с помощью [`slc loopback`](/doc/ru/lb2/Command-line-reference-slc-loopback-.html) команд. LoopBack не требует, чтоб вы следовали данной структуры, но если вы этого не сделаете, вы не сможете использовать [`slc loopback`](/doc/ru/lb2/Command-line-reference-slc-loopback-.html) команды для изменения и расширения вашего приложения.
+Ниже описана структура приложения, которая создается с помощью [`slc loopback`](Command-line-reference-slc-loopback-.html) команд. LoopBack не требует, чтоб вы следовали данной структуры, но если вы этого не сделаете, вы не сможете использовать [`slc loopback`](Command-line-reference-slc-loopback-.html) команды для изменения и расширения вашего приложения.
 
 " %}
 
@@ -38,9 +38,9 @@ summary:
       <th colspan="3">Каталог верхнего уровня</th>
     </tr>
     <tr>
-      <td><a href="/doc/ru/lb2/package.json.html">package.json</a></td>
+      <td><a href="package.json.html">package.json</a></td>
       <td>
-        <p>Стандартные спецификации npm пакетов. См. <a href="/doc/ru/lb2/package.json.html">package.json</a></p>
+        <p>Стандартные спецификации npm пакетов. См. <a href="package.json.html">package.json</a></p>
       </td>
       <td>N/A</td>
     </tr>
@@ -48,33 +48,33 @@ summary:
       <th colspan="3"><span>/server папка- файлы </span>Node приложения<span>&nbsp;</span></th>
     </tr>
     <tr>
-      <td><code><a href="/doc/ru/lb2/server.js.html">server.js</a></code></td>
+      <td><code><a href="server.js.html">server.js</a></code></td>
       <td>Основной файл приложения (сам сервер).</td>
       <td>&nbsp;N/A</td>
     </tr>
     <tr>
-      <td><code><a href="/doc/ru/lb2/config.json.html">config.json</a></code></td>
-      <td>Настройки приложения. См. <a href="/doc/ru/lb2/config.json.html">config.json</a>.</td>
+      <td><code><a href="config.json.html">config.json</a></code></td>
+      <td>Настройки приложения. См. <a href="config.json.html">config.json</a>.</td>
       <td><code>app.get('option-name')</code></td>
     </tr>
     <tr>
-      <td><code><a href="/doc/ru/lb2/datasources.json.html">datasources.json</a></code>&nbsp;</td>
-      <td>Файл конфигурации источников данных. См. <a href="/doc/ru/lb2/datasources.json.html">datasources.json</a>.</td>
+      <td><code><a href="datasources.json.html">datasources.json</a></code>&nbsp;</td>
+      <td>Файл конфигурации источников данных. См. <a href="datasources.json.html">datasources.json</a>.</td>
       <td><code>app.datasources['datasource-name']</code></td>
     </tr>
     <tr>
-      <td><code><a href="/doc/ru/lb2/model-config.json.html">model-config.json</a></code></td>
-      <td>Файл конфигурации модели. См. <a href="/doc/ru/lb2/model-config.json.html">model-config.json</a>.</td>
+      <td><code><a href="model-config.json.html">model-config.json</a></code></td>
+      <td>Файл конфигурации модели. См. <a href="model-config.json.html">model-config.json</a>.</td>
       <td>N/A</td>
     </tr>
     <tr>
-      <td><code><a href="/doc/ru/lb2/middleware.json.html">middleware.json</a></code></td>
+      <td><code><a href="middleware.json.html">middleware.json</a></code></td>
       <td>Middleware definition file.</td>
       <td>N/A</td>
     </tr>
     <tr>
       <td><code>/boot</code> папка</td>
-      <td>Дополнительные скрипты для выполнения инициализации и настройки. См. <a href="/doc/ru/lb2/Defining-boot-scripts.html">boot scripts</a>.</td>
+      <td>Дополнительные скрипты для выполнения инициализации и настройки. См. <a href="Defining-boot-scripts.html">boot scripts</a>.</td>
       <td>Сценарии выполняются автоматически в алфавитном порядке.</td>
     </tr>
     <tr>
@@ -102,7 +102,7 @@ summary:
           <li>Определения модели по конвенции имени <code><em>modelName</em>.json</code>; например <code>customer.json</code>.</li>
           <li>Пользовательские скрипты одели по конвенции имени <code><em>modelName</em>.js</code>; например <code>customer.js</code>.</li>
         </ul>
-        <p>См. <a href="/doc/ru/lb2/Model-definition-JSON-file.html">Model definition JSON file</a>.</p>
+        <p>См. <a href="Model-definition-JSON-file.html">Model definition JSON file</a>.</p>
       </td>
       <td>
         <p>Node:<br><code>myModel = app.models.myModelName</code></p>

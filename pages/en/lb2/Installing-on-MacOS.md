@@ -13,7 +13,7 @@ summary:
 
 ### Install compiler tools
 
-If you want features such as [application profiling](https://docs.strongloop.com/display/SLC/Profiling) or [monitoring](https://docs.strongloop.com/display/SLC/Monitoring-app-metrics), you may need to install compiler tools before you start.  See [Installing compiler tools](/doc/{{page.lang}}/lb2/Installing-compiler-tools.html#macos) for more information.
+If you want features such as [application profiling](https://docs.strongloop.com/display/SLC/Profiling) or [monitoring](https://docs.strongloop.com/display/SLC/Monitoring-app-metrics), you may need to install compiler tools before you start.  See [Installing compiler tools](Installing-compiler-tools.html#macos) for more information.
 
 ### Set directory permissions
 
@@ -24,7 +24,7 @@ If you want features such as [application profiling](https://docs.strongloop.co
 If you haven't already installed Node, download the [native installer from nodejs.org](http://nodejs.org/en/download) and run it.
 
 {% include tip.html content="For best results, use the latest LTS (long-term support) release of Node.js.
-" %}  
+" %}
 
 ## Install StrongLoop
 
@@ -42,4 +42,4 @@ Follow these steps:
     {% include note.html content="During installation, you may see a number of errors from `node-gyp` if you don't have [compiler tools](Installing-compiler-tools.html) installed. You can ignore the errors for now.
     " %}
 
-If you run into any problems, see [Installation troubleshooting](/doc/{{page.lang}}/lb2/Installation-troubleshooting.html).
+If you run into any problems, see [Installation troubleshooting](Installation-troubleshooting.html).

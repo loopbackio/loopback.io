@@ -19,7 +19,7 @@ There are two variations:
 * **Auto-migration**: Drop existing schema objects if they exist, and re-create them based on model definitions. Existing data will be lost.
 * **Auto-update**: Detect the difference between schema objects and model definitions, and alter the database schema objects. Keep existing data.
 
-See [Creating a database schema from models](/doc/{{page.lang}}/lb2/Creating-a-database-schema-from-models.html) for a general introduction to auto-migration auto-update.
+See [Creating a database schema from models](Creating-a-database-schema-from-models.html) for a general introduction to auto-migration auto-update.
 
 ## Define autoupdate and automigrate functions
 

@@ -48,9 +48,9 @@ The tool will prompt you for:
 * Connector to use for the data source.
 
 
-You must install the [connector](/doc/{{page.lang}}/lb2/Connecting-models-to-data-sources.html) for the new data source; for example: `npm install --save loopback-connector-mysql`
+You must install the [connector](Connecting-models-to-data-sources.html) for the new data source; for example: `npm install --save loopback-connector-mysql`
 
 
 ### Output
 
-This adds an entry to [`datasources.json`](/doc/{{page.lang}}/lb2/datasources.json.html) with the specified settings.
+This adds an entry to [`datasources.json`](datasources.json.html) with the specified settings.

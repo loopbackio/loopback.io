@@ -14,7 +14,7 @@ summary: You can easily connect a LoopBack application to multiple different dat
 
 ## Add a data source
 
-You're going to add a MongoDB data source in addition to the MySQL data source created in [Connect your API to a data source](/doc/{{page.lang}}/lb2/Connect-your-API-to-a-data-source.html).
+You're going to add a MongoDB data source in addition to the MySQL data source created in [Connect your API to a data source](Connect-your-API-to-a-data-source.html).
 
 `$ slc loopback:datasource`
 

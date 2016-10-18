@@ -237,7 +237,7 @@ function myMiddlewareFunc([err,] req, res, next) {
       <td>Required for error-handling middleware.</td>
       <td>
         <p>Use <em>only</em> for error-handling middleware.</p>
-        <p>Error object, usually an instance or <code>Error</code>; for more information, see <a href="/doc/{{page.lang}}/lb2/Error-object.html">Error object</a>.</p>
+        <p>Error object, usually an instance or <code>Error</code>; for more information, see <a href="Error-object.html">Error object</a>.</p>
       </td>
     </tr>
     <tr>
@@ -317,7 +317,7 @@ For details about the `options` object, refer to [Middleware configuration prope
 The easiest way to register middleware is in `server/middleware.json`.
 This file specifies all an application's middleware functions and the phase in which they are called.
 
-When you create an application using the [Application generator](/doc/{{page.lang}}/lb2/Application-generator.html) 
+When you create an application using the [Application generator](Application-generator.html) 
 it creates a default `middleware.json` file that looks as follows:
 
 {% include code-caption.html content="server/middleware.json" %}
@@ -411,7 +411,7 @@ You can specify the following properties in each middleware section. They are al
       <td>enabled</td>
       <td>Boolean</td>
       <td>
-        <p>Whether to register or enable the middleware. You can override this property in environment-specific files, for example to disable certain middleware when running in production. For more information, see <a href="/doc/{{page.lang}}/lb2/Defining-middleware.html">Environment-specific configuration</a></p>
+        <p>Whether to register or enable the middleware. You can override this property in environment-specific files, for example to disable certain middleware when running in production. For more information, see <a href="Defining-middleware.html">Environment-specific configuration</a></p>
       </td>
       <td>true</td>
     </tr>
@@ -505,7 +505,7 @@ For any middleware configuration property, you can specify a variable in the val
 
 Where _var_ is a property of the [`app`](https://apidocs.strongloop.com/loopback/#var-app-loopback) object. These properties include:
 
-* [Application-wide properties](/doc/{{page.lang}}/lb2/config.json.html#top-level-properties) such as those defined in `config.json`.
+* [Application-wide properties](config.json.html#top-level-properties) such as those defined in `config.json`.
 * [Express app object properties](http://expressjs.com/4x/api.html#app.settings.table).
 
 For example, the following `middleware.json` configuration will load LoopBack's built-in rest middleware (loopback.rest)
@@ -556,7 +556,7 @@ For example, below is a `middleware.json` file defining a new phase "log" that
 You can further customize configuration through `middleware.local.js`, `middleware.local.json`, and `middleware._env_.js` or `middleware._env_.json`,
 where _`env`_ is the value of `NODE_ENV` environment variable (typically `development` or `production`).
 
-See [Environment-specific configuration](/doc/{{page.lang}}/lb2/Environment-specific-configuration.html) for more information.
+See [Environment-specific configuration](Environment-specific-configuration.html) for more information.
 
 ## Registering middleware in JavaScript
 
@@ -779,9 +779,9 @@ The request processing time is 4.281957 ms. //your results will vary
 
 ### Routing middleware
 
-For routes serving JSON, best practice is to create a new model and implement the routes as [remote methods](/doc/{{page.lang}}/lb2/Remote-methods.html).
+For routes serving JSON, best practice is to create a new model and implement the routes as [remote methods](Remote-methods.html).
 For routes serving non-JSON responses, best practice is to define them the standard "Express way" in `server.js` or a boot script.
-For more information, see [Routing](/doc/{{page.lang}}/lb2/Routing.html) and [Routing (Express documentation)](http://expressjs.com/guide/routing.html).
+For more information, see [Routing](Routing.html) and [Routing (Express documentation)](http://expressjs.com/guide/routing.html).
 
 {% include note.html content="
 
@@ -800,7 +800,7 @@ LoopBack registers two error-handling middleware by default:
   so that 404 error responses are consistent with "usual" error responses.
 * `errorhandler` middleware is from the [errorhandler](https://github.com/expressjs/errorhandler) module,
   previously available in Express v.3 as `express.errorHandler`. For information on customizing this error handler.
-  See [Customizing REST error handling](/doc/{{page.lang}}/lb2/Environment-specific-configuration.html#customizing-rest-error-handling).
+  See [Customizing REST error handling](Environment-specific-configuration.html#customizing-rest-error-handling).
 
 Example of a custom error processing middleware:
 

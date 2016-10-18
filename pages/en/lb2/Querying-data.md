@@ -42,12 +42,12 @@ In both cases, LoopBack models return JSON.
       <td>
         <p><code><a href="https://apidocs.strongloop.com/loopback/#persistedmodel-find" class="external-link" rel="nofollow">find(filter, callback)</a></code></p>
         <p>Where filter is a JSON object containing the query filters.</p>
-        <p>See <a href="/doc/{{page.lang}}/lb2/Querying-data.html">Filters</a> below.</p>
+        <p>See <a href="Querying-data.html">Filters</a> below.</p>
       </td>
       <td>
         <p> <code>GET /<em>modelName</em>?filter...</code></p>
-        <p>See <a href="/doc/{{page.lang}}/lb2/PersistedModel-REST-API.html#find-matching-instances">Model REST API - Find matching instances</a>.</p>
-        <p><span>See </span><a href="/doc/{{page.lang}}/lb2/Querying-data.html">Filters</a> <span> below.</span></p>
+        <p>See <a href="PersistedModel-REST-API.html#find-matching-instances">Model REST API - Find matching instances</a>.</p>
+        <p><span>See </span><a href="Querying-data.html">Filters</a> <span> below.</span></p>
       </td>
     </tr>
     <tr>
@@ -55,12 +55,12 @@ In both cases, LoopBack models return JSON.
       <td>
         <p><code><a href="https://apidocs.strongloop.com/loopback/#persistedmodel-findone" class="external-link" rel="nofollow">findOne(filter, callback)</a></code></p>
         <p>Where filter is a JSON object containing the query filters.</p>
-        <p><span>See </span><a href="/doc/{{page.lang}}/lb2/Querying-data.html">Filters</a> <span> below.</span></p>
+        <p><span>See </span><a href="Querying-data.html">Filters</a> <span> below.</span></p>
       </td>
       <td>
         <p><code><span>GET /<em>modelName</em>/findOne?filter...</span></code></p>
-        <p>See <a href="/doc/{{page.lang}}/lb2/PersistedModel-REST-API.html#find-first-instance">Model REST API - Find first instance</a>.&nbsp;</p>
-        <p><span>See </span><a href="/doc/{{page.lang}}/lb2/Querying-data.html">Filters</a> <span> below.</span></p>
+        <p>See <a href="PersistedModel-REST-API.html#find-first-instance">Model REST API - Find first instance</a>.&nbsp;</p>
+        <p><span>See </span><a href="Querying-data.html">Filters</a> <span> below.</span></p>
       </td>
     </tr>
     <tr>
@@ -68,12 +68,12 @@ In both cases, LoopBack models return JSON.
       <td>
         <p><code><a href="https://apidocs.strongloop.com/loopback/#persistedmodel-findbyid" class="external-link" rel="nofollow">findById(id, [filter,] callback)</a></code></p>
         <p>Where optional filter is a JSON object <span>containing the query filters.</span></p>
-        <p><span><span>See </span><a href="/doc/{{page.lang}}/lb2/Querying-data.html">Filters</a> <span> below.</span></span>
+        <p><span><span>See </span><a href="Querying-data.html">Filters</a> <span> below.</span></span>
         </p>
       </td>
       <td>
         <p><code><span>GET /</span><em>modelName</em><span>/</span><em>modelID</em></code></p>
-        <p>See <a href="/doc/{{page.lang}}/lb2/PersistedModel-REST-API.html#find-instance-by-id">Model REST API - Find instance by ID</a>.</p>
+        <p>See <a href="PersistedModel-REST-API.html#find-instance-by-id">Model REST API - Find instance by ID</a>.</p>
       </td>
     </tr>
   </tbody>
@@ -94,18 +94,18 @@ If you are trying [query filters](#filters) with curl, use the `-g` or `--globof
 
 LoopBack supports the following kinds of filters:
 
-* [Fields filter](/doc/{{page.lang}}/lb2/Fields-filter.html)
-* [Include filter](/doc/{{page.lang}}/lb2/Include-filter.html)
-* [Limit filter](/doc/{{page.lang}}/lb2/Limit-filter.html)
-* [Order filter](/doc/{{page.lang}}/lb2/Order-filter.html)
-* [Skip filter](/doc/{{page.lang}}/lb2/Skip-filter.html)
-* [Where filter](/doc/{{page.lang}}/lb2/Where-filter.html)
+* [Fields filter](Fields-filter.html)
+* [Include filter](Include-filter.html)
+* [Limit filter](Limit-filter.html)
+* [Order filter](Order-filter.html)
+* [Skip filter](Skip-filter.html)
+* [Where filter](Where-filter.html)
 
 See [Filters](#filters) below for more information.
 
 ### Examples
 
-See additional examples of each kind of filter in the individual articles on filters (for example [Where filter](/doc/{{page.lang}}/lb2/Where-filter.html)).
+See additional examples of each kind of filter in the individual articles on filters (for example [Where filter](Where-filter.html)).
 
 An example of using the `find()` method with both a _where_ and a _limit_ filter:
 
@@ -140,7 +140,7 @@ The following table describes LoopBack's filter types:
       <td>Object, Array, or String</td>
       <td>
         <p>Specify fields to include in or exclude from the response.</p>
-        <p>See <a href="/doc/{{page.lang}}/lb2/Fields-filter.html">Fields filter</a>.</p>
+        <p>See <a href="Fields-filter.html">Fields filter</a>.</p>
       </td>
     </tr>
     <tr>
@@ -148,7 +148,7 @@ The following table describes LoopBack's filter types:
       <td>String, Object, or Array</td>
       <td>
         <p>Include results from related models, for relations such as&nbsp;<em>belongsTo</em>&nbsp;and&nbsp;<em>hasMany</em>.</p>
-        <p>See <a href="/doc/{{page.lang}}/lb2/Include-filter.html">Include filter</a>.</p>
+        <p>See <a href="Include-filter.html">Include filter</a>.</p>
       </td>
     </tr>
     <tr>
@@ -156,7 +156,7 @@ The following table describes LoopBack's filter types:
       <td>Number</td>
       <td>
         <p>Limit the number of instances to return.</p>
-        <p>See <a href="/doc/{{page.lang}}/lb2/Limit-filter.html">Limit filter</a>.</p>
+        <p>See <a href="Limit-filter.html">Limit filter</a>.</p>
       </td>
     </tr>
     <tr>
@@ -164,7 +164,7 @@ The following table describes LoopBack's filter types:
       <td>String</td>
       <td>
         <p>Specify sort order: ascending or descending.</p>
-        <p>See <a href="/doc/{{page.lang}}/lb2/Order-filter.html">Order filter</a>.</p>
+        <p>See <a href="Order-filter.html">Order filter</a>.</p>
       </td>
     </tr>
     <tr>
@@ -172,7 +172,7 @@ The following table describes LoopBack's filter types:
       <td>Number</td>
       <td>
         <p>Skip the specified number of instances.</p>
-        <p>See <a href="/doc/{{page.lang}}/lb2/Skip-filter.html">Skip filter</a>.</p>
+        <p>See <a href="Skip-filter.html">Skip filter</a>.</p>
       </td>
     </tr>
     <tr>
@@ -180,7 +180,7 @@ The following table describes LoopBack's filter types:
       <td>Object</td>
       <td>
         <p>Specify search criteria; similar to a WHERE clause in SQL.</p>
-        <p>See <a href="/doc/{{page.lang}}/lb2/Where-filter.html">Where filter</a>.</p>
+        <p>See <a href="Where-filter.html">Where filter</a>.</p>
       </td>
     </tr>
   </tbody>
@@ -214,8 +214,8 @@ There is no theoretical limit on the number of filters you can apply.
 
 Where:
 
-* _filterType_ is the filter: [where](/doc/{{page.lang}}/lb2/Where-filter.html), [include](/doc/{{page.lang}}/lb2/Include-filter.html), [order](/doc/{{page.lang}}/lb2/Order-filter.html),
-  [limit](/doc/{{page.lang}}/lb2/Limit-filter.html), [skip](/doc/{{page.lang}}/lb2/Skip-filter.html), or [fields](/doc/{{page.lang}}/lb2/Fields-filter.html).
+* _filterType_ is the filter: [where](Where-filter.html), [include](Include-filter.html), [order](Order-filter.html),
+  [limit](Limit-filter.html), [skip](Skip-filter.html), or [fields](Fields-filter.html).
 * _spec_ is the specification of the filter: for example for a _where_ filter, this is a logical condition that the results must match.
   For an _include_ filter it specifies the related fields to include.
 

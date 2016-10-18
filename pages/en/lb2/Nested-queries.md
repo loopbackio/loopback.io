@@ -28,7 +28,7 @@ Suppose an app has book, chapter, page, and image models.  And:
 
 The following blocks of JSON show the model for Book and relations for Page and Chapter models.
 
-For more information on the model relations used, see [BelongsTo relations](/doc/{{page.lang}}/lb2/BelongsTo-relations.html) and [HasMany relations](/doc/{{page.lang}}/lb2/HasMany-relations.html).
+For more information on the model relations used, see [BelongsTo relations](BelongsTo-relations.html) and [HasMany relations](HasMany-relations.html).
 
 {% include code-caption.html content="common/models/book.json" %}
 ```javascript

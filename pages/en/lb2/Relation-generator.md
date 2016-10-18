@@ -15,7 +15,7 @@ The models involved in the relation must also exist before running this generato
 
 ### Synopsis
 
-Creates a new [model relation](/doc/{{page.lang}}/lb2/Creating-model-relations.html) in a LoopBack application.
+Creates a new [model relation](Creating-model-relations.html) in a LoopBack application.
 
 ```shell
 $ [slc | apic] loopback:relation [options]
@@ -38,10 +38,10 @@ The tool will prompt you for:
 
 * Name of the model to create the relationship from.
 * Relation type:
-  * [HasMany](/doc/{{page.lang}}/lb2/HasMany-relations.html)
-  * [BelongsTo](/doc/{{page.lang}}/lb2/BelongsTo-relations.html)
-  * [HasAndBelongsToMany](/doc/{{page.lang}}/lb2/HasAndBelongsToMany-relations.html)
-  * [HasOne](/doc/{{page.lang}}/lb2/HasOne-relations.html).
+  * [HasMany](HasMany-relations.html)
+  * [BelongsTo](BelongsTo-relations.html)
+  * [HasAndBelongsToMany](HasAndBelongsToMany-relations.html)
+  * [HasOne](HasOne-relations.html).
 * Name of the model to create a relationship with.
 * Name for the relation (property name).
 
@@ -49,9 +49,9 @@ The tool will prompt you for:
 " %}
 
 * Custom foreign key (optional)
-* Whether a "through" model is required.  Repy "Y" to create a [HasManyThrough relations](/doc/{{page.lang}}/lb2/HasManyThrough-relations.html). 
+* Whether a "through" model is required.  Repy "Y" to create a [HasManyThrough relations](HasManyThrough-relations.html). 
 * Name of the "through" model, if appropriate.
 
 ### Output
 
-Updates the [Model definition JSON files](/doc/{{page.lang}}/lb2/Model-definition-JSON-file.html) for the models involved in the relation.
+Updates the [Model definition JSON files](Model-definition-JSON-file.html) for the models involved in the relation.

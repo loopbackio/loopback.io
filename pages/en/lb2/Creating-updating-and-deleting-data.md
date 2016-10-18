@@ -25,7 +25,7 @@ Use the following [PersistedModel](http://apidocs.strongloop.com/loopback/#persi
 
 * [create](http://apidocs.strongloop.com/loopback/#persistedmodel-create) - creates a new model instance (record).
 * [upsert](http://apidocs.strongloop.com/loopback/#persistedmodel-upsert) - checks if the instance (record) exists, based on the designated
-  [ID property](/doc/{{page.lang}}/lb2/Model-definition-JSON-file.html#id-properties), which must have a unique value;
+  [ID property](Model-definition-JSON-file.html#id-properties), which must have a unique value;
   if the instance already exists, the method updates that instance. Otherwise, it inserts a new instance.
 * [findOrCreate](http://apidocs.strongloop.com/loopback/#persistedmodel-findorcreate) - Find one instance matching the filter object provided as the first parameter.
   If found, returns the object. If not found, creates a new instance (record).
@@ -41,7 +41,7 @@ Use the following [PersistedModel](http://apidocs.strongloop.com/loopback/#persi
 
 Static method (called on the Model object):
 
-* [updateAll](http://apidocs.strongloop.com/loopback/#persistedmodel-updateall) - updates multiple instances (records) that match the specified [where clause](/doc/{{page.lang}}/lb2/Where-filter.html). 
+* [updateAll](http://apidocs.strongloop.com/loopback/#persistedmodel-updateall) - updates multiple instances (records) that match the specified [where clause](Where-filter.html). 
 
 {% include important.html content="The where clause used with `updateAll()` is slightly different than that for queries.  Omit `{ where : ... }` from the where clause.
 Simply provide the condition as the first argument.
@@ -66,7 +66,7 @@ Instance methods (called on a single model instance):
 
 Static methods (called on the Model object):
 
-* [destroyAll](http://apidocs.strongloop.com/loopback/#persistedmodel-destroyall) - Delete all model instances that match the optional [Where filter](/doc/{{page.lang}}/lb2/Where-filter.html).
+* [destroyAll](http://apidocs.strongloop.com/loopback/#persistedmodel-destroyall) - Delete all model instances that match the optional [Where filter](Where-filter.html).
 * [destroyById](http://apidocs.strongloop.com/loopback/#persistedmodel-destroybyid) - Delete the model instance with the specified ID.
 
 {% include important.html content="

@@ -78,4 +78,4 @@ Creating model definition for errorModel...
 ### Output
 
 The tool generates all the files for the application based on the specified Swagger file,
-including all the [Model definition JSON files](/doc/{{page.lang}}/lb2/Model-definition-JSON-file.html) and associated JavaScript files.
+including all the [Model definition JSON files](Model-definition-JSON-file.html) and associated JavaScript files.

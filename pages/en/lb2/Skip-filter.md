@@ -19,7 +19,7 @@ Use `offset` as an alias for `skip`.
 
 `?filter=[skip]=n`
 
-You can also use [stringified JSON format](/doc/{{page.lang}}/lb2/Querying-data.html#using-stringified-json-in-rest-queries) in a REST query.
+You can also use [stringified JSON format](Querying-data.html#using-stringified-json-in-rest-queries) in a REST query.
 
 ### Node
 

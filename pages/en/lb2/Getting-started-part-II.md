@@ -9,7 +9,7 @@ permalink: /doc/en/lb2/Getting-started-part-II.html
 summary: This tutorial picks up where the Getting started with LoopBack tutorial ends, and it assumes you understand the basic concepts and tasks introduced in the first tutorial.
 ---
 
-This tutorial picks up where [Getting started with LoopBack](/doc/{{page.lang}}/lb2/Getting-started-with-LoopBack.html) ends
+This tutorial picks up where [Getting started with LoopBack](Getting-started-with-LoopBack.html) ends
 
 It covers:
 

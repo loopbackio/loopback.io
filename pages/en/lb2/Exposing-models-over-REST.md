@@ -13,7 +13,7 @@ summary:
 
 LoopBack models automatically have a [standard set of HTTP endpoints](http://apidocs.strongloop.com/loopback/#persistedmodel)
 that provide REST APIs for create, read, update, and delete (CRUD) operations on model data.
-The `public` property in [model-config.json](/doc/{{page.lang}}/lb2/model-config.json.html) specifies whether to expose the model's REST APIs, for example:
+The `public` property in [model-config.json](model-config.json.html) specifies whether to expose the model's REST APIs, for example:
 
 {% include code-caption.html content="/server/model-config.json" %}
 ```javascript
@@ -32,7 +32,7 @@ To "hide" the model's REST API, simply change `public` to `false`.
 By default, the REST APIs are mounted to the plural of the model name; specifically:
 
 * `Model.settings.http.path`
-* `plural`, if defined in the [Model definition JSON file](/doc/{{page.lang}}/lb2/Model-definition-JSON-file.html).
+* `plural`, if defined in the [Model definition JSON file](Model-definition-JSON-file.html).
 * Automatically-pluralized model name (the default). For example, if you have a location model, by default it is mounted to `/locations`. 
 
 ### Using the REST Router
@@ -59,8 +59,8 @@ At this point, the model is schema-less and the data are not checked.
 
 You can then view generated REST documentation at [http://localhost:3000/explorer](http://localhost:3000/explorer)
 
-LoopBack provides a number of [built-in models](/doc/{{page.lang}}/lb2/Using-built-in-models.html) that have REST APIs.
-See [Built-in models REST API](/doc/{{page.lang}}/lb2/Built-in-models-REST-API.html) for more information.
+LoopBack provides a number of [built-in models](Using-built-in-models.html) that have REST APIs.
+See [Built-in models REST API](Built-in-models-REST-API.html) for more information.
 
 ### Request format
 
@@ -193,7 +193,7 @@ For example,
 
 ### Disabling API Explorer
 
-LoopBack [API Explorer](/doc/{{page.lang}}/lb2/Use-API-Explorer) is great when you're developing your application,
+LoopBack [API Explorer](Use-API-Explorer) is great when you're developing your application,
 but for security reasons you may not want to expose it in production.
 
 For an application using [loopback-component-explorer](https://github.com/strongloop/loopback-component-explorer), to disable explorer in production:
@@ -385,4 +385,4 @@ module.exports = function(Post) {
 ### Hiding properties
 
 To hide a property of a model exposed over REST, define a hidden property.
-See [Model definition JSON file (Hidden properties)](/doc/{{page.lang}}/lb2/Model-definition-JSON-file.html#hidden-properties).
+See [Model definition JSON file (Hidden properties)](Model-definition-JSON-file.html#hidden-properties).

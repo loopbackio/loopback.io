@@ -15,7 +15,7 @@ summary: In LoopBack, a Node function attached to a custom REST endpoint is call
 In this section you're going to add a custom remote method to your API.
 
 {% include note.html content="
-If you followed the previous steps in the tutorial, skip down to [Add a remote method](/#add-a-remote-method)
+If you followed the previous steps in the tutorial, skip down to [Add a remote method](#add-a-remote-method)
 
 If you're just jumping in, follow the steps below to catch up...
 " %}
@@ -79,7 +79,7 @@ Follow these steps:
 
     This defines a simple remote method called "status" that takes no arguments, and checks the time and returns a JSON status message that says either "Open for business" or "Sorry we are closed", depending on the current time.
 
-    Of course, in practice you can do much more interesting and complex things with remote methods such as manipulating input data before persisting it to a database.  You can also change the route where you call the remote method, and define complex arguments and return values.  See [Remote methods](/doc/{{page.lang}}/lb2/Remote-methods) for all the details.
+    Of course, in practice you can do much more interesting and complex things with remote methods such as manipulating input data before persisting it to a database.  You can also change the route where you call the remote method, and define complex arguments and return values.  See [Remote methods](Remote-methods) for all the details.
 
 4.  Save the file.
 
@@ -93,11 +93,11 @@ If you don't want to expose a remote method to everyone, it's easy to constrain 
 
     `$ node .`
 
-2.  Go to [http://localhost:3000/explorer](http://localhost:3000/explorer) to see API Explorer.  Then click on CoffeeShops and you'll see there is a new REST endpoint, `GET/CoffeeShop/status` that calls the remote method.  
+2.  Go to [http://localhost:3000/explorer](http://localhost:3000/explorer) to see API Explorer.  Then click on CoffeeShops and you'll see there is a new REST endpoint, `GET/CoffeeShop/status` that calls the remote method.
     {% include image.html file="5570643.png" alt="" %} 
 
-3.  Click **Try it Out!**  
-    You'll see the result of calling your remote method :  
+3.  Click **Try it Out!**
+    You'll see the result of calling your remote method :
     ```js
     {
       "status": "Open for business."
@@ -106,7 +106,7 @@ If you don't want to expose a remote method to everyone, it's easy to constrain 
 
 That's how easy it is to add remote methods with LoopBack! 
 
-For more information, see [Remote methods](/doc/{{page.lang}}/lb2/Remote-methods).
+For more information, see [Remote methods](Remote-methods).
 
 ## Executing create, retrieve, update, and delete methods in a remote method
 

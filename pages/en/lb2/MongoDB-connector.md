@@ -32,11 +32,11 @@ In your application root directory, enter:
 $ npm install loopback-connector-mongodb --save
 ```
 
-This will install the module from npm and add it as a dependency to the application's [package.json](/doc/{{page.lang}}/lb2/package.json.html) file.
+This will install the module from npm and add it as a dependency to the application's [package.json](package.json.html) file.
 
 ## Creating a MongoDB data source 
 
-Use the [Data source generator](/doc/{{page.lang}}/lb2/Data-source-generator.html) to add a MongoDB data source to your application.
+Use the [Data source generator](Data-source-generator.html) to add a MongoDB data source to your application.
 The entry in the application's `/server/datasources.json` will look like this:
 
 {% include code-caption.html content="/server/datasources.json" %}
@@ -97,7 +97,7 @@ Edit `datasources.json` to add other properties that enable you to connect the
         <p>Connection string URI; see
           <a href="http://docs.mongodb.org/manual/reference/connection-string/" class="external-link" rel="nofollow">http://docs.mongodb.org/manual/reference/connection-string/</a>.
         </p>
-        <p>See <a href="/doc/{{page.lang}}/lb2/MongoDB-connector.html">Replica set configuration</a> below.</p>
+        <p>See <a href="MongoDB-connector.html">Replica set configuration</a> below.</p>
       </td>
     </tr>
     <tr>
@@ -147,7 +147,7 @@ LoopBack does not currently support property mapping for MongoDB; you can custo
 ### Using MongoDB operators in update operations
 
 Enable the `allowExtendedOperators` option to include [MongoDB operators](http://docs.mongodb.org/manual/reference/operator/update/) in update operations.
-There are two ways to enable the allowExtendedOperators flag: in the [model definition JSON file](/doc/{{page.lang}}/lb2/Model-definition-JSON-file.html) and as an option passed to the update method.
+There are two ways to enable the allowExtendedOperators flag: in the [model definition JSON file](Model-definition-JSON-file.html) and as an option passed to the update method.
 
 To set the option in the model definition file, set the property `settings.mongodb.allowExtendedOperators` to true.
 

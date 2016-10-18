@@ -24,11 +24,11 @@ In your application root directory, enter:
 $ npm install loopback-connector-soap --save
 ```
 
-This will install the module from npm and add it as a dependency to the application's [package.json](/doc/{{page.lang}}/lb2/package.json.html) file.
+This will install the module from npm and add it as a dependency to the application's [package.json](package.json.html) file.
 
 ## Creating a data source
 
-Use the [Data source generator](/doc/{{page.lang}}/lb2/Data-source-generator.html) to add a SOAP data source to your application.
+Use the [Data source generator](Data-source-generator.html) to add a SOAP data source to your application.
 
 ```shell
 $ apic create --type datasource
@@ -76,7 +76,7 @@ The following table describes the SOAP data source properties you can set in `da
     <tr>
       <td>operations</td>
       <td>Object</td>
-      <td>Maps WSDL binding operations to Node.js methods. Each key in the JSON object becomes the name of a method on the model. See <a href="/doc/{{page.lang}}/lb2/SOAP-connector.html">Operations property</a> below.</td>
+      <td>Maps WSDL binding operations to Node.js methods. Each key in the JSON object becomes the name of a method on the model. See <a href="SOAP-connector.html">Operations property</a> below.</td>
     </tr>
   </tbody>
 </table>

@@ -33,7 +33,7 @@ For example, here is a query to find cars with `odo` is less than 30,000:
 /cars?filter[where][odo][lt]=30000
 ```
 
-You can also use [stringified JSON format](/doc/{{page.lang}}/lb2/Querying-data.html#using-stringified-json-in-rest-queries) in a REST query.
+You can also use [stringified JSON format](Querying-data.html#using-stringified-json-in-rest-queries) in a REST query.
 
 ### Filter limit
 
@@ -156,7 +156,7 @@ productModel.destroyAll({cost: {gt: 100}}, function(err, obj) { ... });
 
 ### Default scopes with where filters
 
-Adding a `scope` to a model definition (in the [`model.json` file](/doc/{{page.lang}}/lb2/Model-definition-JSON-file.html))
+Adding a `scope` to a model definition (in the [`model.json` file](Model-definition-JSON-file.html))
 automatically adds a method to model called `defaultScope()`. LoopBack will call this method whenever a model is created, updated, or queried.
 
 {% include tip.html content="Default scopes with a `where` filter may not work as you expect!
@@ -425,7 +425,7 @@ Shirts.find({where: {size: {between: [0,7]}}}, function (err, posts) { ... } )
 
 The `where.<field>.near` filter is different from other where filters: most where filters **limit**the number of records returned,
 whereas `near` **orders** them, making it more like a SQL `order by` clause.
-By combining it with [`limit`](/doc/{{page.lang}}/lb2/Limit-filter.html), you can create a query to get, for example, the **three records nearest to a given location**.
+By combining it with [`limit`](Limit-filter.html), you can create a query to get, for example, the **three records nearest to a given location**.
 
 For example:
 

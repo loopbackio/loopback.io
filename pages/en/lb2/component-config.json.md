@@ -9,12 +9,12 @@ permalink: /doc/en/lb2/component-config.json.html
 summary:
 ---
 
-The file `component-config.json` configures and loads [components](/doc/{{page.lang}}/lb2/LoopBack-components.html) of a LoopBack application. The file contains a top-level key for each component to load, where the key is the module name of a npm package or the relative path of a local component. For a component to be loaded, the value must be a JavaScript object that does not evaluate to false.
+The file `component-config.json` configures and loads [components](LoopBack-components.html) of a LoopBack application. The file contains a top-level key for each component to load, where the key is the module name of a npm package or the relative path of a local component. For a component to be loaded, the value must be a JavaScript object that does not evaluate to false.
 
-The default file that the [Application generator](/doc/{{page.lang}}/lb2/Application-generator.html) creates is:
+The default file that the [Application generator](Application-generator.html) creates is:
 
 ```javascript
-{                                         
+{
   "loopback-component-explorer": {
     "mountPath": "/explorer"
   }

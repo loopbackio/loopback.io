@@ -33,11 +33,11 @@ $ npm install
 
 ## Introducing the AngularJS SDK
 
-[AngularJS](http://angularjs.org/)  is an open-source JavaScript [model–view–controller](http://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller) (MVC) framework for browser-based applications.  LoopBack provides an [AngularJS JavaScript SDK](/doc/{{page.lang}}/lb2/AngularJS-JavaScript-SDK) to facilitate creating AngularJS clients for your LoopBack API server-side apps.  The SDK is installed when you install StrongLoop.
+[AngularJS](http://angularjs.org/)  is an open-source JavaScript [model–view–controller](http://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller) (MVC) framework for browser-based applications.  LoopBack provides an [AngularJS JavaScript SDK](AngularJS-JavaScript-SDK) to facilitate creating AngularJS clients for your LoopBack API server-side apps.  The SDK is installed when you install StrongLoop.
 
 The SDK provides auto-generated AngularJS services, compatible with [`ngResource.$resource`](http://docs.angularjs.org/api/ngResource.%24resource), that provide client-side representation of the models and remote methods in the LoopBack server application.  The SDK also includes some command-line tools, including `lb-ng` that generates Angular $resource services for your LoopBack application, creating in effect a dynamic client that automatically includes client-side APIs to access your LoopBack models and methods.  You don't have to manually write any static code.
 
-For more information, see [AngularJS JavaScript SDK](/doc/{{page.lang}}/lb2/AngularJS-JavaScript-SDK).
+For more information, see [AngularJS JavaScript SDK](AngularJS-JavaScript-SDK).
 
 ## Generate lb-services.js
 
@@ -646,7 +646,7 @@ Now load [http://0.0.0.0:3000/](http://0.0.0.0:3000/) in your browser.  You s
 
 {% include image.html file="5570658.png" alt="" %}
 
-You should be able to run the application through its paces, as described in [Introducing the Coffee Shop Reviews app](/doc/{{page.lang}}/lb2/Introducing-the-Coffee-Shop-Reviews-app.html).
+You should be able to run the application through its paces, as described in [Introducing the Coffee Shop Reviews app](Introducing-the-Coffee-Shop-Reviews-app.html).
 
 {% include next.html content="See [Learn more](Learn-more.html) for pointers to learn more about LoopBack."
 %}

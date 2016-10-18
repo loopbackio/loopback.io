@@ -64,7 +64,7 @@ Use the LoopBack Angular command-line tool, `lb-ng`, to generate the Angular c
 Any time you modify or add models to your LoopBack app, you must re-run `lb-ng` to re-generate the Angular client library to reflect the changes.
 " %}
 
-For example, if your application has the [standard LoopBack project layout](/doc/{{page.lang}}/lb2/Project-layout-reference.html),
+For example, if your application has the [standard LoopBack project layout](Project-layout-reference.html),
 then in the `/client` sub-directory, enter these commands:
 
 ```shell
@@ -84,7 +84,7 @@ simply copy it to the desired location and reference that location in your `inde
 " %}
 
 The SDK also provides a tool to generate API documentation for the AngularJS services;
-see [Generating Angular API docs](/doc/{{page.lang}}/lb2/Generating-Angular-API-docs.html) for more information.
+see [Generating Angular API docs](Generating-Angular-API-docs.html) for more information.
 
 ### lb-ng command
 
@@ -96,7 +96,7 @@ The general syntax of the lb-ng command is:
 
 _`path-to-server-script`_
 Relative path to the LoopBack application main script.
-In the [standard project layout](/doc/{{page.lang}}/lb2/Project-layout-reference.html), `<_app-dir_>/server/server.js`. Required.
+In the [standard project layout](Project-layout-reference.html), `<_app-dir_>/server/server.js`. Required.
 
 _`path-to-generated-services`_
 Relative path to the client JavaScript file to be generated containing the AngularJS $resource services.
@@ -263,10 +263,10 @@ $scope.prod0 = Product.findById({
 });
 ```
 
-Refer to [Querying data](/doc/{{page.lang}}/lb2/Querying-data.html) for a description of all query options.
+Refer to [Querying data](Querying-data.html) for a description of all query options.
 The AngularJS client expects the "Node syntax" of arguments, with the differences noted above.
 
-Also, see [Querying related models](/doc/{{page.lang}}/lb2/Accessing-related-models.html#querying-related-models).
+Also, see [Querying related models](Accessing-related-models.html#querying-related-models).
 
 #### Update
 

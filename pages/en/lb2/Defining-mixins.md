@@ -19,7 +19,7 @@ summary:
 Use mixins to apply common logic to a set of models.
 For example, a timestamp mixin could inject "created" and "modified" properties to model definitions.
 
-You can apply mixins to any model, including [built-in models](/doc/{{page.lang}}/lb2/Extending-built-in-models.html).
+You can apply mixins to any model, including [built-in models](Extending-built-in-models.html).
 
 ### Built-in model mixins
 
@@ -29,13 +29,13 @@ By default, the basic LoopBack [Model object](http://apidocs.strongloop.com/loop
 
 * [Inclusion object](http://apidocs.strongloop.com/loopback-datasource-juggler/#inclusion) - Enables you to load relations of several objects and optimize numbers of requests.
 * [Validateable object](http://apidocs.strongloop.com/loopback-datasource-juggler/#validatable) - provides validation methods.
-  See [Validating model data](/doc/{{page.lang}}/lb2/Validating-model-data.html).
+  See [Validating model data](Validating-model-data.html).
 
 When you define relations between models, the [RelationMixin object](http://apidocs.strongloop.com/loopback-datasource-juggler/#relationmixin) object also gets mixed in to the model object.
 
 **Connected model**
 
-In addition to the methods of the [Basic model object](/doc/{{page.lang}}/lb2/Basic-model-object.html),
+In addition to the methods of the [Basic model object](Basic-model-object.html),
 the following are mixed in when a model is connected to a data source:
 
 * [RelationMixin class](http://apidocs.strongloop.com/loopback-datasource-juggler/#relationmixin)
@@ -56,7 +56,7 @@ The above locations are just recommendations.
 You are free to put mixin scripts in any project directory as long as you set the location with the `mixins` property in [`model-config.js`](#Definingmixins-Referencemixinsinmodel-config.js).
 " %}
 
-You can use mixins to perform different common actions on models such as observing changes using [operation hooks](/doc/{{page.lang}}/lb2/Operation-hooks.html) and adding model attributes.
+You can use mixins to perform different common actions on models such as observing changes using [operation hooks](Operation-hooks.html) and adding model attributes.
 
 For example:
 
@@ -79,7 +79,7 @@ module.exports = function(Model, options) {
 
 Above `Timestamp` mixin adds two properties: `'created'` and `'modified'` of type: `date`, with default values set to the current date, to `Model.json`.
 
-Where as, in the example below, the mixin observes the change using [`before save`](/doc/{{page.lang}}/lb2/Operation-hooks.html) operation hook and manipulates input
+Where as, in the example below, the mixin observes the change using [`before save`](Operation-hooks.html) operation hook and manipulates input
 (see complete example: [loopback-example-mixins](https://github.com/strongloop/loopback-example-mixins)):
 
 {% include code-caption.html content="/server/mixins/squirrel.js" %}
@@ -99,7 +99,7 @@ module.exports = function(Model, options) {
 
 ## Reference mixins in model-config.js
 
-The configuration file [`server/model-config.json`](/doc/{{page.lang}}/lb2/model-config.json.html) specifies the list of directories to be searched for mixin scripts.
+The configuration file [`server/model-config.json`](model-config.json.html) specifies the list of directories to be searched for mixin scripts.
 The default LoopBack configuration is:
 
 {% include code-caption.html content="server/model-config.json" %}

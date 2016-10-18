@@ -12,19 +12,19 @@ summary:
 ## Overview
 
 A hasOne relation sets up a one-to-one connection with another model, such that each instance of the declaring model "has one" instance of the other model.
-A hasOne relation is a degenerate case of a [hasMany relation](/doc/{{page.lang}}/lb2/HasMany-relations.html).
+A hasOne relation is a degenerate case of a [hasMany relation](HasMany-relations.html).
 
 ## Defining a hasOne relation
 
 Use `apic loopback:relation` to create a relation between two models.
 The tool will prompt you to enter the name of the model, the name of related model, and other required information.
-The tool will then modify the [model definition JSON file](/doc/{{page.lang}}/lb2/Model-definition-JSON-file.html) (for example, `common/models/customer.json`) accordingly.
+The tool will then modify the [model definition JSON file](Model-definition-JSON-file.html) (for example, `common/models/customer.json`) accordingly.
 
 Use `slc loopback:relation` to create a relation between two models.
 The tool will prompt you to enter the name of the model, the name of related model, and other required information.
-The tool will then modify the [model definition JSON file](/doc/{{page.lang}}/lb2/Model-definition-JSON-file.html) (for example, `common/models/customer.json`) accordingly.
+The tool will then modify the [model definition JSON file](Model-definition-JSON-file.html) (for example, `common/models/customer.json`) accordingly.
 
-For more information, see [Relation generator](/doc/{{page.lang}}/lb2/Relation-generator.html).
+For more information, see [Relation generator](Relation-generator.html).
 
 For example, consider two models: supplier and account.
 

@@ -47,13 +47,13 @@ curl -X POST -H "Content-Type:application/json"         \
 http://localhost:3000/api/users
 ```
 
-For more information, see [User REST API](/doc/{{page.lang}}/lb2/User-REST-API.html#log-in-user).
+For more information, see [User REST API](User-REST-API.html#log-in-user).
 
 ### Adding other registration constraints
 
 Typically, you might want to add methods as part of the registration process,
 for example to see if a given username is available or if an email address is already registered.
-A good way to do this is to add methods as beforeRemote hooks on the User object. See [Remote hooks](/doc/{{page.lang}}/lb2/Remote-hooks.html) for more information.
+A good way to do this is to add methods as beforeRemote hooks on the User object. See [Remote hooks](Remote-hooks.html) for more information.
 
 ### Verifying email addresses
 
@@ -83,9 +83,9 @@ For example:
 ```
 
 Over REST, use the `GET /users/confirm` endpoint to verify a user's email address.
-For details, see [User REST API](/doc/{{page.lang}}/lb2/User-REST-API.html#confirm-email-address).
+For details, see [User REST API](User-REST-API.html#confirm-email-address).
 
-This example creates a[remote hook](/doc/{{page.lang}}/lb2/Remote-hooks.html) on the User model executed after the `create()` method is called.
+This example creates a[remote hook](Remote-hooks.html) on the User model executed after the `create()` method is called.
 
 {% include important.html content="You must setup a `User` model as well as a `Mail` datasource before using the example below.
 " %}
@@ -150,6 +150,6 @@ Use the LoopBack Passport component (loopback-component-passport) to enable use
 * Google
 * Twitter
 
-For more information, see [Third-party login using Passport](/doc/{{page.lang}}/lb2/Third-party-login-using-Passport.html).
+For more information, see [Third-party login using Passport](Third-party-login-using-Passport.html).
 
 <div class="sl-hidden"><strong>REVIEW COMMENT from Rand</strong><br>Ideally, we would explain basic tasks here. How do you set up 3d-party reg/login?</div>

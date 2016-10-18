@@ -15,7 +15,7 @@ The `/client` directory is where you put client JavaScript, HTML, and CSS files
 Only the [StrongLoop tools](Installing-StrongLoop.html) create this directory; the [API Connect tools](Installing-IBM-API-Connect.html) do not.
 " %}
 
-The [application generator](/doc/{{page.lang}}/lb2/Application-generator.html) 
+The [application generator](Application-generator.html) 
 does not generate any files in this directory, except for a stub `README.md`. 
 
-For information on creating a client LoopBack application, see [LoopBack in the client](/doc/{{page.lang}}/lb2/LoopBack-in-the-client.html).
+For information on creating a client LoopBack application, see [LoopBack in the client](LoopBack-in-the-client.html).

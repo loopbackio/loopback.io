@@ -10,16 +10,16 @@ summary: Follow the procedure outlined here when reporting issues with the LoopB
 ## Don't use an issue to ask a question
 
 {% include warning.html content="
-DO NOT post questions as GitHub issues, which are for feature requests and bug reports _only_.  Questions will be closed IMMEDIATELY.  
+DO NOT post questions as GitHub issues, which are for feature requests and bug reports _only_.  Questions will be closed IMMEDIATELY.
 " %}
 
 If you have a question about how to do something in LoopBack, follow these steps:
 
-1. [Consult the documentation](doc/en/lb2/) and the [API documentation](http://apidocs.strongloop.com).  **NOTE**: The search box above searches _both_ of these sites.
+1. [Consult the documentation](../../) and the [API documentation](http://apidocs.strongloop.com).  **NOTE**: The search box above searches _both_ of these sites.
 1. If you don't find an answer to your question, then do one of the following:
   - Search and then ask on the [developer forum / Google group](https://groups.google.com/forum/#!forum/loopbackjs).
   - Search and then ask on  [StackOverflow](http://stackoverflow.com/questions/tagged/loopbackjs+or+strongloop?sort=newest&pageSize=50).
-  - Ask on [Gitter](https://gitter.im/strongloop/loopback).  
+  - Ask on [Gitter](https://gitter.im/strongloop/loopback).
 
 Posting to Google Group or StackOverflow is preferred so others may benefit from the answer.
 
