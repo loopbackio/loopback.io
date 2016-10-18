@@ -14,24 +14,22 @@ summary:
 Various LoopBack methods accept type descriptions, for example [remote methods](/doc/{{page.lang}}/lb2/Remote-methods.html) and 
 [dataSource.createModel()](http://apidocs.strongloop.com/loopback-datasource-juggler/#datasource-prototype-createmodel).
 
-The following is a list of supported types.
+The following table summarizes LoopBack's data types.
 
 <table>
   <tbody>
     <tr>
       <th>Type</th>
       <th>Description</th>
-      <th>
-        <p>Example</p>
-      </th>
+      <th>Example</th>
     </tr>
     <tr>
       <td>any</td>
-      <td>Any type, including Array, Object, Date, or GeoPoint</td>
-      <td>Any of: <code>true</code>, <code>123</code>, <code>"foo"</code>, <code><span>[ "one", 2, true ]</span></code></td>
+      <td>Any type, including array, object, Date, or GeoPoint</td>
+      <td>Any of: <code>true</code>, <code>123</code>, <code>"foo"</code>, <code>[ "one", 2, true ]</code></td>
     </tr>
     <tr>
-      <td>Array</td>
+      <td>array</td>
       <td>
         <p>JSON array</p>
         <p>See <a href="/doc/{{page.lang}}/lb2/LoopBack-types.html#array-types">Array types</a> below.</p>
@@ -44,14 +42,14 @@ The following is a list of supported types.
       <td><code>true</code></td>
     </tr>
     <tr>
-      <td>Buffer</td>
+      <td>buffer</td>
       <td>Node.js <a href="http://nodejs.org/api/buffer.html" class="external-link" rel="nofollow">Buffer object</a></td>
       <td>
         <pre>new Buffer(42);</pre>
       </td>
     </tr>
     <tr>
-      <td>Date</td>
+      <td>date</td>
       <td>JavaScript <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date" class="external-link" rel="nofollow">Date object</a></td>
       <td>
         <p><code>new Date("December 17, 2003 03:24:00");</code></p>
@@ -72,7 +70,7 @@ The following is a list of supported types.
       <td><code>null</code></td>
     </tr>
     <tr>
-      <td>Number</td>
+      <td>number</td>
       <td>JSON number</td>
       <td>
         <p><code>3.1415</code></p>
@@ -99,9 +97,7 @@ The following is a list of supported types.
 In general, a property will have `undefined` value if no explicit or default value is provided.
 
 {% include important.html content="
-
  The type name is case-insensitive; so for example you can use either \"Number\" or \"number\".
-
 " %}
 
 ## Array types
@@ -175,7 +171,5 @@ var User = ds.define('User', UserModel);
 ```
 
 {% include important.html content="
-
 The user model has to reference the Address constructor or the model name - `'Address'`.
-
 " %}
