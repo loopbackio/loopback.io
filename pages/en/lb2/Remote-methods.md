@@ -116,7 +116,7 @@ All of the options properties are optional. However, if the remote method requir
         <div class="code panel pdl" style="border-width: 1px;">
           <div class="codeContent panelContent pdl"><pre>Person.greet(name, age, callback)...</pre></div>
           </div>
-        <p>`name` is the first argument, `age` is the second argument and callback is automatically provided by LoopBack (do not specify it in your `accepts` array). For more info, see <a href="/doc/{{page.lang}}/lb2/Remote-methods.html">Argument descriptions</a>.</p>
+        <p>`name` is the first argument, `age` is the second argument and callback is automatically provided by LoopBack (do not specify it in your `accepts` array). For more info, see <a href="/doc/{{page.lang}}/lb2/Remote-methods.html#argument-descriptions">Argument descriptions</a>.</p>
         <p>Default if not provided is the empty array, <code>[]</code>.</p>
       </td>
       <td>
@@ -214,7 +214,7 @@ All of the options properties are optional. However, if the remote method requir
     <tr>
       <td>returns</td>
       <td>
-        <p>Describes the remote method's callback arguments; See&nbsp;<a href="/doc/{{page.lang}}/lb2/Remote-methods.html">Argument descriptions</a>. The&nbsp;<code>err </code>argument is assumed; do not specify.</p>
+        <p>Describes the remote method's callback arguments; See&nbsp;<a href="/doc/{{page.lang}}/lb2/Remote-methods.html#argument-descriptions">Argument descriptions</a>. The&nbsp;<code>err </code>argument is assumed; do not specify.</p>
         <p>Default if not provided is the empty array,  <code>[]</code>.</p>
       </td>
       <td>
