@@ -46,11 +46,6 @@ The tool will prompt you to enter the name of the model, the name of related mod
 The tool will then modify the [model definition JSON file](/doc/{{page.lang}}/lb2/Model-definition-JSON-file.html) 
 (for example, `common/models/customer.json`) accordingly.
 
-Use `slc loopback:relation` to create a relation between two models.
-The tool will prompt you to enter the name of the model, the name of related model, and other required information.
-The tool will then modify the [model definition JSON file](/doc/{{page.lang}}/lb2/Model-definition-JSON-file.html) 
-(for example, `common/models/customer.json`) accordingly.
-
 For more information, see [Relation generator](/doc/{{page.lang}}/lb2/Relation-generator.html).
 
 For example, here is the model JSON file for the order model in
