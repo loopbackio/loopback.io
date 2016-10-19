@@ -10,5 +10,5 @@ summary:
 
 You have two options for installation:
 
-- [Install StrongLoop](/doc/{{page.lang}}/lb2/Installing-StrongLoop.html)
-- [Install IBM API Connect](/doc/{{page.lang}}/lb2/Installing-IBM-API-Connect.html)
+- [Install StrongLoop](Installing-StrongLoop.html)
+- [Install IBM API Connect](Installing-IBM-API-Connect.html)

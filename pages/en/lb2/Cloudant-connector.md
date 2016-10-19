@@ -20,7 +20,7 @@ For more information, see [Getting Started with Cloudant NoSQL DB](https://www.
 ### Key features
 
 * Uses Cloudant Query (Lucene) to support ad-hoc searching.
-* [Loopback query](/doc/{{page.lang}}/lb2/Querying-data.html) support for fields, limit, order, skip and where filters.
+* [Loopback query](Querying-data.html) support for fields, limit, order, skip and where filters.
 * Performs query and filtering on the database for optimal efficiency.
 * Uses different DB instances per model definition.
 * Supports basic model discovery.

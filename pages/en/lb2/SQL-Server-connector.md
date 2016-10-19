@@ -27,11 +27,11 @@ In your application root directory, enter:
 $ npm install loopback-connector-mssql --save
 ```
 
-This will install the module from npm and add it as a dependency to the application's [package.json](/doc/{{page.lang}}/lb2/package.json.html) file.
+This will install the module from npm and add it as a dependency to the application's [package.json](package.json.html) file.
 
 ## Creating a SQL Server data source
 
-Use the [Data source generator](/doc/{{page.lang}}/lb2/Data-source-generator.html) to add a SQL Server data source to your application.
+Use the [Data source generator](Data-source-generator.html) to add a SQL Server data source to your application.
 The generator will add the following entry to the `/server/datasources.json` file:
 
 {% include code-caption.html content="/server/datasources.json" %}
@@ -272,7 +272,7 @@ For example:
 
 After making changes to model properties you must call `Model.automigrate()` or `Model.autoupdate()`.
 Call `Model.automigrate()` only on a new model, since it will drop existing tables.
-See [Creating a database schema from models](/doc/{{page.lang}}/lb2/Creating-a-database-schema-from-models.html) for more information.
+See [Creating a database schema from models](Creating-a-database-schema-from-models.html) for more information.
 
 For each model, the LoopBack SQL Server connector creates a table in the 'dbo' schema in the database.
 
@@ -282,7 +282,7 @@ Destroying models may result in errors due to foreign key integrity. First delet
 
 ## Type mapping
 
-See [LoopBack types](/doc/{{page.lang}}/lb2/LoopBack-types.html) for details on LoopBack's data types.
+See [LoopBack types](LoopBack-types.html) for details on LoopBack's data types.
 
 ### LoopBack to SQL Server types
 

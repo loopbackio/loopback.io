@@ -9,10 +9,10 @@ permalink: /doc/en/lb2/Include-filter.html
 summary:
 ---
 
-**See also**: [Querying related models](/doc/{{page.lang}}/lb2/Querying-related-models.html).
+**See also**: [Querying related models](Querying-related-models.html).
 
 An _include_ filter enables you to include results from related models in a query, for example models that have belongsTo or hasMany relations, to optimize the number of requests.
-See [Creating model relations](/doc/{{page.lang}}/lb2/Creating-model-relations.html) for more information.
+See [Creating model relations](Creating-model-relations.html) for more information.
 
 The value of the include filter can be a string, an array, or an object.
 
@@ -22,7 +22,7 @@ The value of the include filter can be a string, an array, or an object.
 ### **REST API**
 
 filter[include][_relatedModel_]=_propertyName_
-You can also use [stringified JSON format](/doc/{{page.lang}}/lb2/Querying-data.html#using-stringified-json-in-rest-queries) in a REST query.
+You can also use [stringified JSON format](Querying-data.html#using-stringified-json-in-rest-queries) in a REST query.
 
 ### Node API
 

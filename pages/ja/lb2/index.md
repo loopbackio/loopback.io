@@ -35,9 +35,9 @@ summary:
 
 LoopBackフレームワークは、Node.jsモジュールの集合体です。それぞれのモジュールは一緒に利用することも、個別に利用することも出来ます。
 
-LoopBackアプリケーションは、LoopBackモデルAPIを通して、データソースと通信します。APIはローカル環境のNode.jsでも利用できますし、[REST経由でリモートでも利用できますし](/doc/{{page.lang}}/lb2/Built-in-models-REST-API.html)、[iOS、Android及びHTML5](/doc/j{{page.lang}}/lb2/Client-SDKs.html)のネイティブクライアントAPI経由でも利用できます。これらのAPIを利用すると、データベースへの問い合わせや、データの保存、ファイルアップロード、Eメールの送信、Push通知、ユーザ登録、その他のデータソースやサービスで提供されるアクションを実行することができます。
+LoopBackアプリケーションは、LoopBackモデルAPIを通して、データソースと通信します。APIはローカル環境のNode.jsでも利用できますし、[REST経由でリモートでも利用できますし](Built-in-models-REST-API.html)、[iOS、Android及びHTML5](Client-SDKs.html)のネイティブクライアントAPI経由でも利用できます。これらのAPIを利用すると、データベースへの問い合わせや、データの保存、ファイルアップロード、Eメールの送信、Push通知、ユーザ登録、その他のデータソースやサービスで提供されるアクションを実行することができます。
 
-クライアントは[Strong Remoting](/doc/{{page.lang}}/lb2/Strong-Remoting.html)を利用して直接LoopBack APIを呼ぶことができます。Strong Remotingは、REST、WebSocketsなどの通信方法によるバックエンドを提供する、プラガブルな通信レイヤです。
+クライアントは[Strong Remoting](Strong-Remoting.html)を利用して直接LoopBack APIを呼ぶことができます。Strong Remotingは、REST、WebSocketsなどの通信方法によるバックエンドを提供する、プラガブルな通信レイヤです。
 
 以下の図は、主要なLoopBackモジュールが互いにどう関連し、どのような依存関係にあるかを説明しています。
 

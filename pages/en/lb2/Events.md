@@ -18,7 +18,7 @@ In addition to the [standard Node events](http://nodejs.org/api/events.html), Lo
 
 ## Application events
 
-By default, an application scaffolded with `apic loopback` emits a 'started' event when it starts up, after running [boot scripts](/doc/{{page.lang}}/lb2/Defining-boot-scripts.html).
+By default, an application scaffolded with `apic loopback` emits a 'started' event when it starts up, after running [boot scripts](Defining-boot-scripts.html).
 
 ## Model events
 
@@ -28,7 +28,7 @@ By default, the basic LoopBack [Model object](http://apidocs.strongloop.com/loop
 
 * [Inclusion object](http://apidocs.strongloop.com/loopback-datasource-juggler/#inclusion) - Enables you to load relations of several objects and optimize numbers of requests.
 * [Validateable object](http://apidocs.strongloop.com/loopback-datasource-juggler/#validatable) - provides validation methods.
-  See [Validating model data](/doc/{{page.lang}}/lb2/Validating-model-data.html).
+  See [Validating model data](Validating-model-data.html).
 
 When you define relations between models, the [RelationMixin object](http://apidocs.strongloop.com/loopback-datasource-juggler/#relationmixin) object also gets mixed in to the model object.
 

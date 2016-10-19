@@ -19,7 +19,7 @@ In this procedure, `xx` represents the ISO language code for the language (for e
 
 - Create new directory for your translated pages: `/pages/xx/lb2`
 - If you have any translated pages, copy them into that directory.
-- Copy the English navigation sidebar `_data/sidebars/lb2_sidebar.yml` (assuming you want to start with LoopBack version 2.x).  Name it `_data/sidebars/xx_sidebar.yml`.  
+- Copy the English navigation sidebar `_data/sidebars/lb2_sidebar.yml` (assuming you want to start with LoopBack version 2.x).  Name it `_data/sidebars/xx_sidebar.yml`.
 - Edit the sidebar as described below in [Configuring the localized sidebar](#configuring-the-localized-sidebar).
 - Add sidebar to `_config.yml` to the list in the `sidebars` property.
 - Add sidebar to `_includes/custom/sidebarconfigs.html` as follows:
@@ -27,10 +27,10 @@ In this procedure, `xx` represents the ISO language code for the language (for e
 ...
 {%raw%}{% elsif page.sidebar == "xx_lb2_sidebar" %}{% endraw%}
     {%raw%}{% assign sidebar = site.data.sidebars.xx_lb2_sidebar.entries %}{% endraw%}
-...    
+...
 {% endhighlight %}</div>
 - Add to `_data/topnav.yml` (under the `title: Translations` list).
-- Add a file named `Not-yet-translated.md` to `page/xx/lb2` with the content shown below.  
+- Add a file named `Not-yet-translated.md` to `page/xx/lb2` with the content shown below.
 This page is displayed when someone clicks on a sidebar link for page that hasn't yet been translated:
 <div style="margin-left:40px;">{% highlight yaml %}
 ---
@@ -42,7 +42,7 @@ permalink: /doc/xx/lb2/Not-yet-translated.html
 summary:
 ---
 
-For instructions on how to translate, see [Translating articles](/doc/en/contrib/Translating_articles.html).
+For instructions on how to translate, see [Translating articles](Translating_articles.html).
 {% endhighlight %}</div>
 - Ensure all translated pages have the proper front matter; for example:
 <div style="margin-left:40px;">{% highlight yaml %}

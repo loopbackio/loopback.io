@@ -17,8 +17,8 @@ module is the LoopBack connector for Informix.
 
 The LoopBack Informix connector supports:
 
-* All [CRUD operations](/doc/{{page.lang}}/lb2/Creating-updating-and-deleting-data.html).
-* [Queries](/doc/{{page.lang}}/lb2/Querying-data.html) with fields, limit, order, skip and where filters.
+* All [CRUD operations](Creating-updating-and-deleting-data.html).
+* [Queries](Querying-data.html) with fields, limit, order, skip and where filters.
 
 ## Installation
 
@@ -32,7 +32,7 @@ The `--save` option adds the dependency to the application's `package.json` file
 
 ## Configuration
 
-Use the [data source generator](/doc/{{page.lang}}/lb2/Data-source-generator) (`slc loopback:datasource`) to add the Informix data source to your application.
+Use the [data source generator](Data-source-generator) (`slc loopback:datasource`) to add the Informix data source to your application.
 The entry in the application's `server/datasources.json` will look something like this:
 
 ```javascript

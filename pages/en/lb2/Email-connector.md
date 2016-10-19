@@ -19,7 +19,7 @@ The email connector is essentially a LoopBack-integrated interface to the [nodem
 
 ## Creating an email data source
 
-Create a new email data source with the [data source generator](/doc/{{page.lang}}/lb2/Data-source-generator.html):
+Create a new email data source with the [data source generator](Data-source-generator.html):
 
 ```shell
 $ apic create --type datasource
@@ -150,4 +150,4 @@ The default model definition file is [common/models/email.json](https://github.
 
 ## Confirming email address
 
-See [Verifying email addresses](/doc/{{page.lang}}/lb2/Registering-users.html#verifying-email-addresses).
+See [Verifying email addresses](Registering-users.html#verifying-email-addresses).

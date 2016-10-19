@@ -19,7 +19,7 @@ summary:
 *   [StrongLoop Controller](https://docs.strongloop.com/display/NODE/Command-line+reference) (`slc` консольная утилита) для создания LoopBack приложения, его запуска, и управления Node приложением.
 *   [Yeoman](http://yeoman.io/) и LoopBack генераторы для автоматической генерации структуры LoopBack приложения.  
 *   [Grunt](http://gruntjs.com/) - JavaScript планировщик задач.
-*   [LoopBack Angular консольная утилита](https://github.com/strongloop/loopback-sdk-angular-cli) (`lb-ng` и `lb-ng-doc`). См. [AngularJS JavaScript SDK](/doc/ru/lb2/AngularJS-JavaScript-SDK.html) для получения подробной информации.
+*   [LoopBack Angular консольная утилита](https://github.com/strongloop/loopback-sdk-angular-cli) (`lb-ng` и `lb-ng-doc`). См. [AngularJS JavaScript SDK](AngularJS-JavaScript-SDK.html) для получения подробной информации.
 
 ## Установка для вашей операционной системы
 

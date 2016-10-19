@@ -7,4 +7,4 @@ permalink: /doc/pt-br/lb2/Not-yet-translated.html
 summary:
 ---
 
-For instructions on how to translate, see [Translating articles](/doc/en/contrib/Translating_articles.html).
+For instructions on how to translate, see [Translating articles](../contrib/Translating_articles.html).

@@ -13,7 +13,7 @@ summary:
 
 ### Synopsis
 
-The LoopBack boot script generator adds a new [boot script](/doc/{{page.lang}}/lb2/Defining-boot-scripts.html) to a LoopBack application.
+The LoopBack boot script generator adds a new [boot script](Defining-boot-scripts.html) to a LoopBack application.
 
 ```shell
 $ [slc | apic] loopback:boot-script [options] [<name>]

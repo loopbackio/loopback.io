@@ -31,7 +31,7 @@ $ npm install
 
 {% include note.html content="
 LoopBack is built on [Express](http://expressjs.com/), one of the most popular Node application frameworks.  The top-level LoopBack `app` object inherits all the methods and properties of the
-[Express `app` object](http://expressjs.com/en/4x/api.html#app). See [Working with LoopBack objects](/doc/en/lb2/Working-with-LoopBack-objects).
+[Express `app` object](http://expressjs.com/en/4x/api.html#app). See [Working with LoopBack objects](Working-with-LoopBack-objects).
 " %}
 
 Before continuing, you need to understand the basics of [Express middleware](http://expressjs.com/guide/using-middleware.html).
@@ -44,7 +44,7 @@ _Middleware_ is simply a JavaScript function with access to the request object 
 
 LoopBack middleware is exactly like [Express middleware](http://expressjs.com/guide/using-middleware.html), except that LoopBack adds the concept of _phases_, that enables you to easily set the order in which middleware is called.  This avoids one of the tricky aspects of Express: making sure middleware gets executed when it should be. 
 
-When you create an application with the [Application generator](/doc/{{page.lang}}/lb2/Application-generator), it creates a `server/middleware.json` file that specifies what middleware is executed in which phase.  Registering new middleware is as simple as editing this JSON file:
+When you create an application with the [Application generator](Application-generator), it creates a `server/middleware.json` file that specifies what middleware is executed in which phase.  Registering new middleware is as simple as editing this JSON file:
 
 {% include code-caption.html content="server/middleware.json" %}
 ```js
@@ -80,13 +80,13 @@ When you create an application with the [Application generator](/doc/{{page.lang
 }
 ```
 
-Each of the top-level keys in `middleware.json` defines a middleware phase: `initial`, `session`, `auth`, and so on, ending with `final`.  There are also modifiers to register middleware `before` and `after` a given phase. There's a bit more to it, but that covers the basics.  See [Defining middleware](/doc/{{page.lang}}/lb2/Defining-middleware) for all the details.
+Each of the top-level keys in `middleware.json` defines a middleware phase: `initial`, `session`, `auth`, and so on, ending with `final`.  There are also modifiers to register middleware `before` and `after` a given phase. There's a bit more to it, but that covers the basics.  See [Defining middleware](Defining-middleware) for all the details.
 
 ## Change or modify the default root route handler
 
 Applications typically need to serve static content such as HTML and CSS files, client JavaScript files, images, and so on.  It's very easy to do this with the default scaffolded LoopBack application.  You're going to configure the application to serve any files in the` /client` directory as static assets.
 
-First, you have to disable the default route handler for the root URL.   Remember back in [Create a simple API](/doc/{{page.lang}}/lb2/Create-a-simple-api.html) (you have been following along, haven't you?) when you loaded the application root URL, [http://localhost:3000/](http://localhost:3000/), you saw the application respond with a simple status message such as this:
+First, you have to disable the default route handler for the root URL.   Remember back in [Create a simple API](Create-a-simple-api.html) (you have been following along, haven't you?) when you loaded the application root URL, [http://localhost:3000/](http://localhost:3000/), you saw the application respond with a simple status message such as this:
 
 `{"started":"2014-11-20T21:59:47.155Z","uptime":42.054}`
 
@@ -131,7 +131,7 @@ Add the following:
 ...
 ```
 
-These lines define [static middleware](/doc/{{page.lang}}/lb2/Defining-middleware.html#static-middleware) that makes the application serve files in the `/client` directory as static content.  The `$!` characters indicate that the path is relative to the location of `middleware.json`.
+These lines define [static middleware](Defining-middleware.html#static-middleware) that makes the application serve files in the `/client` directory as static content.  The `$!` characters indicate that the path is relative to the location of `middleware.json`.
 
 ## Add an HTML file
 

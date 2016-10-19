@@ -13,7 +13,7 @@ summary:
 
 LoopBack _components_ are predefined packages that extend a basic LoopBack application.
 Fundamentally, a component is related code bundled together as a unit to enable LoopBack applications for easy reuse.  
-You can configure components declaratively in [`component-config.json`](/doc/{{page.lang}}/lb2/component-config.json).
+You can configure components declaratively in [`component-config.json`](component-config.json).
 
 The bare minimum to meet the LoopBack component "contract" is to export a `function(app, options)` as the main module export.
 
@@ -40,7 +40,7 @@ that is supposed to return `function(req, res, next)` or `function(err, req, 
 
 LoopBack provides several pre-defined components, as described in the table below.
 
-The sections below describe the configuration settings for each component in [`component-config.json`](/doc/{{page.lang}}/lb2/component-config.json).
+The sections below describe the configuration settings for each component in [`component-config.json`](component-config.json).
 
 <table>
   <tbody>
@@ -55,18 +55,18 @@ The sections below describe the configuration settings for each component in [`
     </tr>
     <tr>
       <td>API Explorer</td>
-      <td>Enables the Swagger UI for the API. See <a href="/doc/{{page.lang}}/lb2/Use-API-Explorer.html">Use API Explorer</a> for an example.</td>
+      <td>Enables the Swagger UI for the API. See <a href="Use-API-Explorer.html">Use API Explorer</a> for an example.</td>
       <td><a href="https://www.npmjs.org/package/loopback-component-explorer" class="external-link" rel="nofollow">loopback-component-explorer</a></td>
     </tr>
     <tr>
-      <td><a href="/doc/{{page.lang}}/lb2/OAuth-2.0.html">OAuth 2.0</a></td>
+      <td><a href="OAuth-2.0.html">OAuth 2.0</a></td>
       <td>Enables LoopBack applications to function as oAuth 2.0 providers to authenticate and authorize client applications and users to access protected API endpoints.</td>
       <td><a href="https://www.npmjs.org/package/loopback-component-oauth2" class="external-link" rel="nofollow">loopback-component-oauth2</a></td>
     </tr>
     <tr>
       <td>
         <div style="width: 150px;">
-          <p><a href="/doc/{{page.lang}}/lb2/Push-notifications.html">Push Notifications</a>&nbsp;</p>
+          <p><a href="Push-notifications.html">Push Notifications</a>&nbsp;</p>
         </div>
       </td>
       <td>Adds push notification capabilities to your LoopBack application as a mobile back end service.</td>
@@ -77,19 +77,19 @@ The sections below describe the configuration settings for each component in [`
       </td>
     </tr>
     <tr>
-      <td><a href="/doc/{{page.lang}}/lb2/Storage-component.html">Storage component</a></td>
+      <td><a href="Storage-component.html">Storage component</a></td>
       <td>Adds an interface to abstract storage providers like S3, filesystem into general containers and files.</td>
       <td><a href="https://www.npmjs.org/package/loopback-component-storage" class="external-link" rel="nofollow">loopback-component-storage</a></td>
     </tr>
     <tr>
-      <td><a href="/doc/{{page.lang}}/lb2/Synchronization.html">Synchronization</a></td>
+      <td><a href="Synchronization.html">Synchronization</a></td>
       <td>Adds replication capability between LoopBack running in a browser or between LoopBack back-end instances to enable offline synchronization and server-to-server data synchronization.</td>
       <td>
         <p>Built into LoopBack; will be refactored into loopback-component-sync</p>
       </td>
     </tr>
     <tr>
-      <td><a href="/doc/{{page.lang}}/lb2/Third-party-login-using-Passport.html">Third-party login using Passport</a></td>
+      <td><a href="Third-party-login-using-Passport.html">Third-party login using Passport</a></td>
       <td>Adds third-party login capabilities to your LoopBack application like Facebook, GitHub etc.</td>
       <td><a href="https://www.npmjs.org/package/loopback-component-passport" class="external-link" rel="nofollow">loopback-component-passport</a></td>
     </tr>
@@ -98,8 +98,8 @@ The sections below describe the configuration settings for each component in [`
 
 ### API Explorer
 
-The `slc loopback` [application generator](/doc/{{page.lang}}/lb2/Application-generator) will scaffold an app
-with `component-config.json` containing the default entry for [LoopBack API Explorer](/doc/{{page.lang}}/lb2/Use-API-Explorer): 
+The `slc loopback` [application generator](Application-generator) will scaffold an app
+with `component-config.json` containing the default entry for [LoopBack API Explorer](Use-API-Explorer): 
 
 {% include code-caption.html content="server/component-config.json" %}
 ```javascript

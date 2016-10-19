@@ -14,9 +14,9 @@ summary:
 LoopBack _components_ are predefined packages that extend a basic LoopBack application.
 Fundamentally, a component is related code bundled together as a unit to enable LoopBack applications to easily reuse it.
 They are registered to the app using 
-[`component-config.json`](/doc/{{page.lang}}/lb2/component-config.json.html).
+[`component-config.json`](component-config.json.html).
 
-Components can be official [StrongLoop npm packages](/doc/{{page.lang}}/lb2/LoopBack-components.html) or custom components. This page is about custom components.
+Components can be official [StrongLoop npm packages](LoopBack-components.html) or custom components. This page is about custom components.
 
 ## How to create components
 
@@ -68,15 +68,15 @@ module.exports = function (loopbackApplication) {
 ```
 
 The `options` parameter passed to the component function is the value specified in the
-[`component-config.json`](/doc/{{page.lang}}/lb2/component-config.json.html) file for the component.
+[`component-config.json`](component-config.json.html) file for the component.
 The value can be any valid JavaScript data type.
 The next section explains how to register components using the
-[`component-config.json`](/doc/{{page.lang}}/lb2/component-config.json.html) file, and specify its `options` property.
+[`component-config.json`](component-config.json.html) file, and specify its `options` property.
 
 ## Registering components
 
 An application will load all components that have an entry in the
-[`component-config.json`](/doc/{{page.lang}}/lb2/component-config.json.html) that does not evaluate to false.
+[`component-config.json`](component-config.json.html) that does not evaluate to false.
 If the component is installed using `npm`, use its package name as the key; if the component is a local component, specify its relative path from the `server` directory.
 
 Here is an example of a `component-config.json` file with entries for a component installed via `npm`, and the three local components described earlier.

@@ -11,9 +11,9 @@ summary:
 
 ## Extending models using JSON
 
-When you create a model with the [model generator](/doc/{{page.lang}}/lb2/Model-generator.html),
+When you create a model with the [model generator](Model-generator.html),
 you choose a base model, that is, the model that your model will "extend" and from which it will inherit methods and properties.
-The tool will set the  base property in the [model definition JSON file](/doc/{{page.lang}}/lb2/Model-definition-JSON-file.html) accordingly.
+The tool will set the  base property in the [model definition JSON file](Model-definition-JSON-file.html) accordingly.
 For example, for a model that extends [PersistedModel](http://apidocs.strongloop.com/loopback/#persistedmodel):
 
 {% include code-caption.html content="/common/models/model.json" %}
@@ -36,9 +36,9 @@ When you extend the built-in User model, use a model name other than \"User\" su
 [User model](https://apidocs.strongloop.com/loopback/#user). To avoid confusion, it's also best to avoid \"user\" with a lowercase \"u\" .
 " %}
 
-See [Customizing models](/doc/{{page.lang}}/lb2/Customizing-models.html) for general information on how to create a model that extends (or "inherits from") another model.
+See [Customizing models](Customizing-models.html) for general information on how to create a model that extends (or "inherits from") another model.
 
-See [LoopBack types](/doc/{{page.lang}}/lb2/LoopBack-types.html) for information on data types supported.
+See [LoopBack types](LoopBack-types.html) for information on data types supported.
 
 ## Extending a model in JavaScript
 
@@ -80,13 +80,13 @@ var options = {
 var user = loopback.Model.extend('user', properties, options);
 ```
 
-See [LoopBack types](/doc/{{page.lang}}/lb2/LoopBack-types.html) for information on data types supported.
+See [LoopBack types](LoopBack-types.html) for information on data types supported.
 
 ### Mixing in model definitions
 
 You may want to create models that share a common set of properties and logic.
 LoopBack enables you to "mix-in" one or more other models into a single model.
-This is a special case of the general ability to mix in model properties and functions. See [Defining mixins](/doc/{{page.lang}}/lb2/Defining-mixins.html) for more information.
+This is a special case of the general ability to mix in model properties and functions. See [Defining mixins](Defining-mixins.html) for more information.
 
 For example:
 

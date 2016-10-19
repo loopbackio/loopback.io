@@ -16,7 +16,7 @@ Typically, this involves requiring users to login to access protected data, or r
 For a simple example of implementing LoopBack access control, see the GitHub 
 [loopback-example-access-control](https://github.com/strongloop/loopback-example-access-control) repository.
 
-LoopBack apps access data through models (see [Defining models](/doc/{{page.lang}}/lb2/Defining-models.html)),
+LoopBack apps access data through models (see [Defining models](Defining-models.html)),
 so controlling access to data means putting restrictions on models; that is,
 specifying who or what can read/write the data or execute methods on the models. 
 
@@ -221,4 +221,4 @@ module.exports = function(Post) {
 ### Hiding properties
 
 To hide a property of a model exposed over REST, define a hidden property.
-See [Model definition JSON file (Hidden properties)](/doc/{{page.lang}}/lb2/Model-definition-JSON-file.html#hidden-properties).
+See [Model definition JSON file (Hidden properties)](Model-definition-JSON-file.html#hidden-properties).

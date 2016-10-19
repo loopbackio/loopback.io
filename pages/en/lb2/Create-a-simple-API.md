@@ -14,7 +14,7 @@ summary: Use the application generator tool to quickly create a LoopBack applic
 
 ## Create new application
 
-To create a new application, run the LoopBack [application generator](/doc/{{page.lang}}/lb2/Application-generator):
+To create a new application, run the LoopBack [application generator](Application-generator):
 
 If you're using IBM API Connect tools, the command is:
 
@@ -58,13 +58,13 @@ Then the tool will ask you what kind of application to create:
   hello-world (A project containing a controller, including a single vanilla Message and
     a single remote method)
   notes (A project containing a basic working example, including a memory database)
-```  
+```
 
 Press **Enter** to accept the default selection, `api-server`.
 
 The generator will then display messages as it scaffolds the application including:
 
-1.  Initializing the [project folder structure](/doc/{{page.lang}}/lb2/Project-layout-reference).
+1.  Initializing the [project folder structure](Project-layout-reference).
 2.  Creating default JSON files.
 3.  Creating default JavaScript files.
 4.  Downloading and installing dependent Node modules (as if you had manually done `npm install`).
@@ -73,7 +73,7 @@ The generator will then display messages as it scaffolds the application includi
 
 Now that you've scaffolded the initial project, you're going to create create a _CoffeeShop_ model that will automatically have REST API endpoints.
 
-Go into your new application directory, then run the LoopBack [model generator](/doc/{{page.lang}}/lb2/Model-generator):
+Go into your new application directory, then run the LoopBack [model generator](Model-generator):
 
 ```sh
 $ cd loopback-getting-started
@@ -116,7 +116,7 @@ Then the generator will prompt you for the base class to use for the model.  Si
   Checkpoint
 ```
 
-[PersistedModel ](http://apidocs.strongloop.com/loopback/#persistedmodel)is the base object for all models connected to a persistent data source such as a database.  See [LoopBack core concepts](/doc/{{page.lang}}/lb2/LoopBack-core-concepts) for an overview of the model inheritance hierarchy.
+[PersistedModel ](http://apidocs.strongloop.com/loopback/#persistedmodel)is the base object for all models connected to a persistent data source such as a database.  See [LoopBack core concepts](LoopBack-core-concepts) for an overview of the model inheritance hierarchy.
 
 One of the powerful advantages of LoopBack is that it automatically generates a REST API for your model.  The generator will ask whether you want to expose this REST API.
 
@@ -124,13 +124,13 @@ Hit **Enter** again to accept the default and expose the Person model via REST
 
 `[?] Expose CoffeeShop via the REST API? (Y/n) Y`
 
-LoopBack automatically creates a REST route associated with your model using the _plural_ of the model name.  By default, it pluralizes the name for you (by adding "s"), but you can specify a custom plural form if you wish.  See [Exposing models over REST](/doc/{{page.lang}}/lb2/Exposing-models-over-REST) for all the details.  
+LoopBack automatically creates a REST route associated with your model using the _plural_ of the model name.  By default, it pluralizes the name for you (by adding "s"), but you can specify a custom plural form if you wish.  See [Exposing models over REST](Exposing-models-over-REST) for all the details.  
 
 Press **Enter** to accept the default plural form (CoffeeShops):
 
 `[?] Custom plural form (used to build REST URL): `
 
-Next, you'll be asked whether you want to create the model on the server only or in the `/common` directory, where it can potentially be used by both server and [client LoopBack APIs](/doc/{{page.lang}}/lb2/LoopBack-in-the-client).  Keep, the default, common, even though in this application you'll only be working with server-side models:
+Next, you'll be asked whether you want to create the model on the server only or in the `/common` directory, where it can potentially be used by both server and [client LoopBack APIs](LoopBack-in-the-client).  Keep, the default, common, even though in this application you'll only be working with server-side models:
 
 ```
 ? Common model or server only?
@@ -186,7 +186,7 @@ The model generator will create two files in the application's `common/models` d
 
 ## Check out the project structure
 
-For all the details of the canonical LoopBack application structure, see [Project layout reference](/doc/{{page.lang}}/lb2/Project-layout-reference).
+For all the details of the canonical LoopBack application structure, see [Project layout reference](Project-layout-reference).
 
 ## Run the application
 

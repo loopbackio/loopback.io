@@ -19,7 +19,7 @@ StrongLoop Process Manager does not run on Windows. Therefore, you cannot use it
 
 ### Install compiler tools
 
-If you want features such as [application profiling](https://docs.strongloop.com/display/SLC/Profiling) or [monitoring](https://docs.strongloop.com/display/SLC/Monitoring-app-metrics), you must install compiler tools and Python before you start.  See [Installing compiler tools](/doc/{{page.lang}}/lb2/Installing-compiler-tools.html#windows) for more information.
+If you want features such as [application profiling](https://docs.strongloop.com/display/SLC/Profiling) or [monitoring](https://docs.strongloop.com/display/SLC/Monitoring-app-metrics), you must install compiler tools and Python before you start.  See [Installing compiler tools](Installing-compiler-tools.html#windows) for more information.
 
 ### Install Git
 
@@ -80,7 +80,7 @@ Try the following:
 
 2.  Verify dependencies are installed:
 
-    *   `python --version`  
+    *   `python --version`
         Should be 2.7.x
     *   `node --version`
         Should be v0.10.x or v0.12.x.

@@ -26,7 +26,7 @@ and 
 
 To connect a model to a data source, follow these steps:
 
-1.  Use the  [data source generator](/doc/{{page.lang}}/lb2/Data-source-generator.html)  to create a new data source.
+1.  Use the  [data source generator](Data-source-generator.html)  to create a new data source.
 
     For example: 
 
@@ -43,7 +43,7 @@ To connect a model to a data source, follow these steps:
     ```
 
     Follow the prompts to name the datasource and select the connector to use.
-    This adds the new data source to [`datasources.json`](/doc/{{page.lang}}/lb2/datasources.json.html).
+    This adds the new data source to [`datasources.json`](datasources.json.html).
 
 2.  Edit `server/datasources.json` to add the necessary authentication credentials: typically hostname, username, password, and database name.
 
@@ -64,19 +64,19 @@ To connect a model to a data source, follow these steps:
 
     For information on the specific properties that each connector supports, see:
 
-    * [Cloudant connector](/doc/{{page.lang}}/lb2/Cloudant-connector.html)
-    * [DashDB](/doc/{{page.lang}}/lb2/DashDB.html)
-    * [DB2 connector](/doc/{{page.lang}}/lb2/DB2-connector.html)
-    * [DB2 for z/OS](/doc/{{page.lang}}/lb2/DB2-for-z-OS.html)
-    * [Informix](/doc/{{page.lang}}/lb2/Informix.html)
-    * [Memory connector](/doc/{{page.lang}}/lb2/Memory-connector.html)
-    * [MongoDB connector](/doc/{{page.lang}}/lb2/MongoDB-connector.html)
-    * [MySQL connector](/doc/{{page.lang}}/lb2/MySQL-connector.html)
-    * [Oracle connector](/doc/{{page.lang}}/lb2/Oracle-connector.html)
-    * [PostgreSQL connector](/doc/{{page.lang}}/lb2/PostgreSQL-connector.html)
-    * [Redis connector](/doc/{{page.lang}}/lb2/Redis-connector.html)
-    * [SQL Server connector](/doc/{{page.lang}}/lb2/SQL-Server-connector.html)
-    * [SQLite3](/doc/{{page.lang}}/lb2/SQLite3.html) 
+    * [Cloudant connector](Cloudant-connector.html)
+    * [DashDB](DashDB.html)
+    * [DB2 connector](DB2-connector.html)
+    * [DB2 for z/OS](DB2-for-z-OS.html)
+    * [Informix](Informix.html)
+    * [Memory connector](Memory-connector.html)
+    * [MongoDB connector](MongoDB-connector.html)
+    * [MySQL connector](MySQL-connector.html)
+    * [Oracle connector](Oracle-connector.html)
+    * [PostgreSQL connector](PostgreSQL-connector.html)
+    * [Redis connector](Redis-connector.html)
+    * [SQL Server connector](SQL-Server-connector.html)
+    * [SQLite3](SQLite3.html) 
 3.  Install the corresponding connector as a dependency of your app with `npm`.
 
     For example: 
@@ -88,7 +88,7 @@ To connect a model to a data source, follow these steps:
 
     See [Connectors](#connectors) for the list of connectors.
 
-4.  Use the [model generator](/doc/{{page.lang}}/lb2/Using-the-model-generator.html) to create a model.
+4.  Use the [model generator](Using-the-model-generator.html) to create a model.
 
     ```shell
     $ apic create --type model
@@ -118,7 +118,7 @@ To connect a model to a data source, follow these steps:
 The model generator lists the [memory connector](Memory-connector.html), \"no data source,\" and data sources listed in [`datasources.json`](datasources.json.html).  That's why you created the data source first in step 1.
 " %}
 
-You can also create models from an existing database; see [Creating models](/doc/{{page.lang}}/lb2/Creating-models.html) for more information.
+You can also create models from an existing database; see [Creating models](Creating-models.html) for more information.
 
 ## Connectors
 
@@ -128,7 +128,7 @@ In addition to the connectors below that IBM/StrongLoop supports,
 See [Community connectors](Community-connectors.html) for more information.
 " %}
 
-The following table lists commercially-supported LoopBack connectors. For more information, see [Database connectors](/doc/{{page.lang}}/lb2/Database-connectors.html) and [Non-database connectors](/doc/{{page.lang}}/lb2/Non-database-connectors.html).
+The following table lists commercially-supported LoopBack connectors. For more information, see [Database connectors](Database-connectors.html) and [Non-database connectors](Non-database-connectors.html).
 
 <table>
   <thead>
@@ -168,32 +168,32 @@ The following table lists commercially-supported LoopBack connectors. For more i
   </thead>
   <tbody>
     <tr>
-      <td><a href="/doc/{{page.lang}}/lb2/Memory-connector.html">Memory connector</a></td>
+      <td><a href="Memory-connector.html">Memory connector</a></td>
       <td>Built in to LoopBack</td>
       <td>Not required; suitable for development and debugging only.</td>
     </tr>
     <tr>
-      <td><a href="/doc/{{page.lang}}/lb2/MongoDB-connector.html">MongoDB</a></td>
+      <td><a href="MongoDB-connector.html">MongoDB</a></td>
       <td><a href="https://www.npmjs.com/package/loopback-connector-mongodb" class="external-link" rel="nofollow">loopback-connector-mongodb</a></td>
       <td><code>npm install --save loopback-connector-mongodb</code></td>
     </tr>
     <tr>
-      <td><a href="/doc/{{page.lang}}/lb2/MySQL-connector.html">MySQL</a></td>
+      <td><a href="MySQL-connector.html">MySQL</a></td>
       <td><a href="https://www.npmjs.com/package/loopback-connector-mysql" class="external-link" rel="nofollow">loopback-connector-mysql</a></td>
       <td><code>npm install --save loopback-connector-mysql</code></td>
     </tr>
     <tr>
-      <td><a href="/doc/{{page.lang}}/lb2/Oracle-connector.html">Oracle</a></td>
+      <td><a href="Oracle-connector.html">Oracle</a></td>
       <td><a href="https://www.npmjs.com/package/loopback-connector-oracle" class="external-link" rel="nofollow">loopback-connector-oracle</a></td>
       <td><code>npm install --save loopback-connector-oracle</code></td>
     </tr>
     <tr>
-      <td><a href="/doc/{{page.lang}}/lb2/PostgreSQL-connector.html">PostgreSQL</a></td>
+      <td><a href="PostgreSQL-connector.html">PostgreSQL</a></td>
       <td><a href="https://www.npmjs.com/package/loopback-connector-mysql" class="external-link" rel="nofollow">loopback-connector-postgresql</a></td>
       <td><code>npm install --save loopback-connector-postgresql</code></td>
     </tr>
     <tr>
-      <td><a href="/doc/{{page.lang}}/lb2/SQL-Server-connector.html">SQL Server</a></td>
+      <td><a href="SQL-Server-connector.html">SQL Server</a></td>
       <td><a href="https://www.npmjs.com/package/loopback-connector-mssql" class="external-link" rel="nofollow">loopback-connector-mssql</a></td>
       <td><code>npm install --save loopback-connector-mssql</code></td>
     </tr>
@@ -206,34 +206,34 @@ The following table lists commercially-supported LoopBack connectors. For more i
       <td colspan="3"><strong>Other connectors</strong></td>
     </tr>
     <tr>
-      <td><a href="/doc/{{page.lang}}/lb2/Email-connector.html">Email connector</a></td>
+      <td><a href="Email-connector.html">Email connector</a></td>
       <td>Built in to LoopBack</td>
       <td>
         <p>Not required</p>
       </td>
     </tr>
     <tr>
-      <td><a href="/doc/{{page.lang}}/lb2/Push-connector.html">Push connector</a>  </td>
+      <td><a href="Push-connector.html">Push connector</a>  </td>
       <td><a href="https://github.com/strongloop/loopback-component-push" class="external-link" rel="nofollow">loopback-component-push</a></td>
       <td><code>npm install --save loopback-component-push</code></td>
     </tr>
     <tr>
-      <td><a href="/doc/{{page.lang}}/lb2/Remote-connector.html">Remote connector</a></td>
+      <td><a href="Remote-connector.html">Remote connector</a></td>
       <td><a href="https://github.com/strongloop/loopback-connector-remote" class="external-link" rel="nofollow">loopback-connector-remote</a></td>
       <td><code>npm install --save loopback-connector-remote</code></td>
     </tr>
     <tr>
-      <td><a href="/doc/{{page.lang}}/lb2/REST-connector.html">REST</a></td>
+      <td><a href="REST-connector.html">REST</a></td>
       <td><a href="http://github.com/strongloop/loopback-connector-rest" class="external-link" rel="nofollow">loopback-connector-rest</a></td>
       <td><code>npm install --save loopback-connector-rest</code></td>
     </tr>
     <tr>
-      <td><a href="/doc/{{page.lang}}/lb2/SOAP-connector.html">SOAP</a></td>
+      <td><a href="SOAP-connector.html">SOAP</a></td>
       <td><a href="http://github.com/strongloop/loopback-connector-soap" class="external-link" rel="nofollow">loopback-connector-soap</a></td>
       <td><code>npm install --save loopback-connector-soap</code></td>
     </tr>
     <tr>
-      <td><a href="/doc/{{page.lang}}/lb2/Storage-connector.html">Storage connector</a></td>
+      <td><a href="Storage-connector.html">Storage connector</a></td>
       <td><a href="https://github.com/strongloop/loopback-component-storage" class="external-link" rel="nofollow">loopback-component-storage</a>    </td>
       <td><code>npm install --save loopback-component-storage</code></td>
     </tr>
@@ -263,7 +263,7 @@ This command adds the following entry to `package.json`: 
 
 ## Creating a data source
 
-Use the [data source generator](/doc/{{page.lang}}/lb2/Data-source-generator.html) to create a new data source:
+Use the [data source generator](Data-source-generator.html) to create a new data source:
 
 ```shell
 $ apic create --type datasource
@@ -276,7 +276,7 @@ $ slc loopback:datasource
 Follow the prompts to add the desired data source.
 
 You can also create a data source programmatically;
-see [Advanced topics: data sources](/doc/{{page.lang}}/lb2/Advanced-topics-data-sources.html) for more information.
+see [Advanced topics: data sources](Advanced-topics-data-sources.html) for more information.
 
 ### Data source properties
 
@@ -337,7 +337,7 @@ as described in the following table.
       <td>String</td>
       <td>
         <p>Combines and overrides <code>host</code>,&nbsp;<code>port</code>,&nbsp;<code>user</code>,&nbsp;<code>password</code>, and&nbsp;<code>database</code>&nbsp;properties.</p>
-        <p>Only valid with <a href="/doc/{{page.lang}}/lb2/MongoDB-connector.html">MongoDB connector</a>, <a href="/doc/{{page.lang}}/lb2/PostgreSQL-connector.html">PostgreSQL connector</a>, and <a href="/doc/{{page.lang}}/lb2/SQL-Server-connector.html">SQL Server connector</a>.</p>
+        <p>Only valid with <a href="MongoDB-connector.html">MongoDB connector</a>, <a href="PostgreSQL-connector.html">PostgreSQL connector</a>, and <a href="SQL-Server-connector.html">SQL Server connector</a>.</p>
       </td>
     </tr>
     <tr>

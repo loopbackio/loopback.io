@@ -34,7 +34,7 @@ Do not automatically install dependencies. Default is false.
 
 ### Interactive Prompts
 
-The tool will prompt you for the necessary information and then modify the [Model definition JSON file](/doc/{{page.lang}}/lb2/Model-definition-JSON-file.html) accordingly.
+The tool will prompt you for the necessary information and then modify the [Model definition JSON file](Model-definition-JSON-file.html) accordingly.
 
 The generator prompts for:
 
@@ -45,4 +45,4 @@ The generator prompts for:
 * Role: all users, any unauthenticated user, any authenticated user, the object owner.
 * Permission to apply: explicitly grant access or explicitly deny access.
 
-For general information about setting up ACLs, see [Controlling data access](/doc/{{page.lang}}/lb2/Controlling-data-access.html).
+For general information about setting up ACLs, see [Controlling data access](Controlling-data-access.html).

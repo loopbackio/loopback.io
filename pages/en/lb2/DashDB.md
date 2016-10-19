@@ -16,8 +16,8 @@ It is optimized to deliver industry-leading performance while lowering costs. Th
 
 The LoopBack DashDB connector supports:
 
-* All [CRUD operations](/doc/{{page.lang}}/lb2/Creating%2C-updating%2C-and-deleting-data).
-* [Queries](/doc/{{page.lang}}/lb2/Querying-data.html) with fields, limit, order, skip and where filters.
+* All [CRUD operations](Creating%2C-updating%2C-and-deleting-data).
+* [Queries](Querying-data.html) with fields, limit, order, skip and where filters.
 * All supported DASHDB LUW versions as well as dashDB. Note for dashDB set supportDashDB in the loopback datasource definition.
   Column organized tables are not supported.
 
@@ -33,7 +33,7 @@ The `--save` option adds the dependency to the application's `package.json` file
 
 ## Configuration
 
-Use the [data source generator](/doc/{{page.lang}}/lb2/Data-source-generator) (`slc loopback:datasource`) to add the DASHDB data source to your application.
+Use the [data source generator](Data-source-generator) (`slc loopback:datasource`) to add the DASHDB data source to your application.
 The entry in the application's `server/datasources.json` will look something like this:
 
 ```javascript

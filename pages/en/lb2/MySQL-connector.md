@@ -29,11 +29,11 @@ In your application root directory, enter this command to install the connector:
 $ npm install loopback-connector-mysql --save
 ```
 
-This will install the module from npm and add it as a dependency to the application's [package.json](/doc/{{page.lang}}/lb2/package.json.html) file.
+This will install the module from npm and add it as a dependency to the application's [package.json](package.json.html) file.
 
 ## Creating a MySQL data source
 
-Use the [Data source generator](/doc/{{page.lang}}/lb2/Data-source-generator.html) to add a MySQL data source to your application.
+Use the [Data source generator](Data-source-generator.html) to add a MySQL data source to your application.
 The entry in the application's `/server/datasources.json` will look like this:
 
 {% include code-caption.html content="/server/datasources.json" %}
@@ -101,7 +101,7 @@ The `collation` value will also be used to derive the connection charset.
 
 ## Type mappings
 
-See [LoopBack types](/doc/{{page.lang}}/lb2/LoopBack-types.html) for details on LoopBack's data types.
+See [LoopBack types](LoopBack-types.html) for details on LoopBack's data types.
 
 ### LoopBack to MySQL types
 
@@ -136,7 +136,7 @@ See [LoopBack types](/doc/{{page.lang}}/lb2/LoopBack-types.html) for details o
       <td>POINT</td>
     </tr>
     <tr>
-      <td>Custom Enum type<br>(See <a href="/doc/{{page.lang}}/lb2/MySQL-connector.html#enum">Enum</a> below)&nbsp;</td>
+      <td>Custom Enum type<br>(See <a href="MySQL-connector.html#enum">Enum</a> below)&nbsp;</td>
       <td>ENUM</td>
     </tr>
   </tbody>
@@ -169,8 +169,8 @@ See [LoopBack types](/doc/{{page.lang}}/lb2/LoopBack-types.html) for details o
     <tr>
       <td>TINYINT<br>SMALLINT<br>INT<br>MEDIUMINT<br>YEAR<br>FLOAT<br>DOUBLE<br>NUMERIC<br>DECIMAL</td>
       <td>
-        <p>Number<br>For FLOAT and DOUBLE, See <a href="/doc/{{page.lang}}/lb2/MySQL-connector.html#floating-point-types">Floating-point types</a>.&nbsp;</p>
-        <p>For NUMERIC and DECIMAL, see <a href="/doc/{{page.lang}}/lb2/MySQL-connector.html">Fixed-point exact value types</a></p>
+        <p>Number<br>For FLOAT and DOUBLE, See <a href="MySQL-connector.html#floating-point-types">Floating-point types</a>.&nbsp;</p>
+        <p>For NUMERIC and DECIMAL, see <a href="MySQL-connector.html">Fixed-point exact value types</a></p>
       </td>
     </tr>
     <tr>
@@ -287,5 +287,5 @@ MOOD('sad'); // 'sad'
 
 LoopBack provides a unified API to create models based on schema and tables in relational databases.
 The same discovery API is available when using connectors for Oracle, MySQL, PostgreSQL, and SQL Server.
-For more information, see [Discovering models from relational databases](/doc/{{page.lang}}/lb2/Discovering-models-from-relational-databases.html) and 
+For more information, see [Discovering models from relational databases](Discovering-models-from-relational-databases.html) and 
 [Database discovery API](http://apidocs.strongloop.com/loopback-datasource-juggler/#datasource-prototype-discoverandbuildmodels).

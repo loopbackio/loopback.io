@@ -18,9 +18,9 @@ In general, these projects may lack usability, completeness, documentation, and 
 
 These are the StrongLoop Labs projects:
 
-* [Android SDK](/doc/{{page.lang}}/lb2/Android-SDK.html)
-* [iOS SDK](/doc/{{page.lang}}/lb2/iOS-SDK.html)
-* [LoopBack in the client](/doc/{{page.lang}}/lb2/LoopBack-in-the-client.html)
-* [Push notifications](/doc/{{page.lang}}/lb2/Push-notifications.html)
-* [Redis connector](/doc/{{page.lang}}/lb2/Redis-connector.html)
-* [Synchronization](/doc/{{page.lang}}/lb2/Synchronization.html)
+* [Android SDK](Android-SDK.html)
+* [iOS SDK](iOS-SDK.html)
+* [LoopBack in the client](LoopBack-in-the-client.html)
+* [Push notifications](Push-notifications.html)
+* [Redis connector](Redis-connector.html)
+* [Synchronization](Synchronization.html)

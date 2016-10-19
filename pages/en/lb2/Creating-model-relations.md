@@ -32,15 +32,15 @@ With connected models, LoopBack exposes as a set of APIs to interact with each o
 
 You can define the following relations between models:
 
-* [BelongsTo relations](/doc/{{page.lang}}/lb2/BelongsTo-relations.html)
-* [HasOne relations](/doc/{{page.lang}}/lb2/HasOne-relations.html)
-* [HasMany relations](/doc/{{page.lang}}/lb2/HasMany-relations.html)
-* [HasManyThrough relations](/doc/{{page.lang}}/lb2/HasManyThrough-relations.html)
-* [HasAndBelongsToMany relations](/doc/{{page.lang}}/lb2/HasAndBelongsToMany-relations.html)
-* [Polymorphic relations](/doc/{{page.lang}}/lb2/Polymorphic-relations.html)
-* [Embedded relations](/doc/{{page.lang}}/lb2/Embedded-models-and-relations.html) (embedsOne and embedsMany)
+* [BelongsTo relations](BelongsTo-relations.html)
+* [HasOne relations](HasOne-relations.html)
+* [HasMany relations](HasMany-relations.html)
+* [HasManyThrough relations](HasManyThrough-relations.html)
+* [HasAndBelongsToMany relations](HasAndBelongsToMany-relations.html)
+* [Polymorphic relations](Polymorphic-relations.html)
+* [Embedded relations](Embedded-models-and-relations.html) (embedsOne and embedsMany)
 
-You can define models relations in JSON in the [model definition JSON file](/doc/{{page.lang}}/lb2/Model-definition-JSON-file.html) file or in JavaScript code.
+You can define models relations in JSON in the [model definition JSON file](Model-definition-JSON-file.html) file or in JavaScript code.
 The end result is the same.
 
 When you define a relation for a model, LoopBack adds a set of methods to the model, as detailed in the article on each type of relation.
@@ -56,8 +56,8 @@ Models backed by different data sources can have relations between them.
 ## Using the relation generator
 
 The easiest way to create a new relation between existing models is to use the 
-[`slc loopback:relation`](/doc/{{page.lang}}/lb2/Relation-generator.html), or the
-[`apic loopback:relation`](/doc/{{page.lang}}/lb2/Relation-generator.html), relation generator.
+[`slc loopback:relation`](Relation-generator.html), or the
+[`apic loopback:relation`](Relation-generator.html), relation generator.
 
 The tool will prompt you to enter the type of relation (belongsTo, hasMany, and so on) and the affected models.
 
@@ -139,7 +139,7 @@ Product.hasMany(Image, {
 
 Normally, `properties` are transferred from parent to child, but there are cases where it makes sense to do the opposite.
 To enable this, use the `invertProperties` option.
-See an example in [Embedded models (embed with belongsTo)](/doc/{{page.lang}}/lb2/Embedded-models-and-relations.html).
+See an example in [Embedded models (embed with belongsTo)](Embedded-models-and-relations.html).
 
 ### Custom scope methods
 

@@ -27,11 +27,11 @@ Within this directory the standard LoopBack project structure has three sub-dire
     <tr>
       <td>
         <div style="width: 200px;">
-          <p><code><a href="/doc/{{page.lang}}/lb2/package.json.html">package.json</a></code></p>
+          <p><code><a href="package.json.html">package.json</a></code></p>
         </div>
       </td>
       <td>
-        <p>Standard npm package specification. See <a href="/doc/{{page.lang}}/lb2/package.json.html">package.json</a>.</p>
+        <p>Standard npm package specification. See <a href="package.json.html">package.json</a>.</p>
       </td>
       <td>N/A</td>
     </tr>
@@ -45,42 +45,42 @@ Within this directory the standard LoopBack project structure has three sub-dire
     </tr>
     <tr>
       <td><code>/boot</code> directory</td>
-      <td>Add scripts to perform initialization and setup. See <a href="/doc/{{page.lang}}/lb2/Events.html">boot scripts</a>.</td>
+      <td>Add scripts to perform initialization and setup. See <a href="Events.html">boot scripts</a>.</td>
       <td>Scripts are automatically executed in alphabetical order.</td>
     </tr>
     <tr>
-      <td><code><a href="/doc/{{page.lang}}/lb2/component-config.json">component-config.json</a></code></td>
-      <td>Specifies <a href="/doc/{{page.lang}}/lb2/LoopBack-components.html">LoopBack components</a> to load.</td>
+      <td><code><a href="component-config.json">component-config.json</a></code></td>
+      <td>Specifies <a href="LoopBack-components.html">LoopBack components</a> to load.</td>
       <td>Created by Strongloop tools only. Not used in API Connect.</td>
     </tr>
     <tr>
-      <td><code><a href="/doc/{{page.lang}}/lb2/config.json.html">config.json</a></code></td>
-      <td>Application settings. See <a href="/doc/{{page.lang}}/lb2/config.json.html">config.json</a>.</td>
+      <td><code><a href="config.json.html">config.json</a></code></td>
+      <td>Application settings. See <a href="config.json.html">config.json</a>.</td>
       <td><code>app.get('setting-name')</code></td>
     </tr>
     <tr>
-      <td><code><a href="/doc/{{page.lang}}/lb2/datasources.json.html">datasources.json</a></code></td>
-      <td>Data source configuration file. See <a href="/doc/{{page.lang}}/lb2/datasources.json.html">datasources.json</a>. <span>For an example, see <a href="/doc/{{page.lang}}/lb2/Create-new-data-source.html">Create new data source</a></span><span>.</span></td>
+      <td><code><a href="datasources.json.html">datasources.json</a></code></td>
+      <td>Data source configuration file. See <a href="datasources.json.html">datasources.json</a>. <span>For an example, see <a href="Create-new-data-source.html">Create new data source</a></span><span>.</span></td>
       <td><code>app.datasources['datasource-name']</code></td>
     </tr>
     <tr>
-      <td><code><a href="/doc/{{page.lang}}/lb2/middleware.json.html">middleware.json</a></code></td>
-      <td>Middleware definition file. For more information, see <a href="/doc/{{page.lang}}/lb2/Defining-middleware.html">Defining middleware</a>.</td>
+      <td><code><a href="middleware.json.html">middleware.json</a></code></td>
+      <td>Middleware definition file. For more information, see <a href="Defining-middleware.html">Defining middleware</a>.</td>
       <td>N/A</td>
     </tr>
     <tr>
       <td><code>middleware.production.json</code></td>
-      <td>Middleware definition file with production configuration. See <a href="/doc/{{page.lang}}/lb2/Preparing-for-deployment.html">Preparing for deployment</a>.</td>
+      <td>Middleware definition file with production configuration. See <a href="Preparing-for-deployment.html">Preparing for deployment</a>.</td>
       <td>&nbsp;</td>
     </tr>
     <tr>
-      <td><code><a href="/doc/{{page.lang}}/lb2/model-config.json.html">model-config.json</a></code></td>
-      <td>Model configuration file. See <a href="/doc/{{page.lang}}/lb2/model-config.json.html">model-config.json</a>. <span>For more information,
-          see </span><a href="/doc/{{page.lang}}/lb2/Connecting-models-to-data-sources.html">Connecting models to data sources</a><span>.</span></td>
+      <td><code><a href="model-config.json.html">model-config.json</a></code></td>
+      <td>Model configuration file. See <a href="model-config.json.html">model-config.json</a>. <span>For more information,
+          see </span><a href="Connecting-models-to-data-sources.html">Connecting models to data sources</a><span>.</span></td>
       <td>N/A</td>
     </tr>
     <tr>
-      <td><code><a href="/doc/{{page.lang}}/lb2/server.js.html">server.js</a></code></td>
+      <td><code><a href="server.js.html">server.js</a></code></td>
       <td>Main application program file.</td>
       <td>&nbsp;N/A</td>
     </tr>
@@ -106,10 +106,10 @@ Within this directory the standard LoopBack project structure has three sub-dire
       <td>
         <p>Custom model files:</p>
         <ul>
-          <li><a href="/doc/{{page.lang}}/lb2/Model-definition-JSON-file.html">Model definition JSON files</a>, by convention named <code><em>model-name</em>.json</code>; for example <code>customer.json</code>.</li>
+          <li><a href="Model-definition-JSON-file.html">Model definition JSON files</a>, by convention named <code><em>model-name</em>.json</code>; for example <code>customer.json</code>.</li>
           <li>Custom model scripts by convention named <code><em>model-name</em>.js</code>; for example, <code>customer.js</code>.</li>
         </ul>
-        <p>For more information, see <a href="/doc/{{page.lang}}/lb2/Model-definition-JSON-file.html">Model definition JSON file</a> and<span> <a href="/doc/{{page.lang}}/lb2/Customizing-models.html">Customizing models</a>.&nbsp; See note below.<br></span></p>
+        <p>For more information, see <a href="Model-definition-JSON-file.html">Model definition JSON file</a> and<span> <a href="Customizing-models.html">Customizing models</a>.&nbsp; See note below.<br></span></p>
       </td>
       <td>
         <p>Node:<br><code>myModel = app.models.myModelName</code></p>

@@ -11,10 +11,10 @@ summary:
 
 Это главный  скрипт приложения в стандартном приложении, созданном с помощью `slc loopback`.
 
-**  
+**
 1 - 3**: Запрашивает LoopBack модули и настраивает стандартные объекты [`loopback`](http://apidocs.strongloop.com/loopback/#loopback), [`приложение`](http://apidocs.strongloop.com/loopback/#var-app-loopback), и [`запускает`](http://apidocs.strongloop.com/loopback-boot/#boot).
 
-**6**: [Инициализация (запуск) приложения](/doc/ru/lb2/Defining-boot-scripts.html).
+**6**: [Инициализация (запуск) приложения](Defining-boot-scripts.html).
 
 **7+**: Старт приложения и web-сервера.
 

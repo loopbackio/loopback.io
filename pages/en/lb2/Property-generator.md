@@ -41,4 +41,4 @@ The tool will prompt you for the:
 
 ### Output
 
-The tool modifies the [Model definition JSON file](/doc/{{page.lang}}/lb2/Model-definition-JSON-file.html) to add the specified property to the specified model.
+The tool modifies the [Model definition JSON file](Model-definition-JSON-file.html) to add the specified property to the specified model.

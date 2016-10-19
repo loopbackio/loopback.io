@@ -17,7 +17,7 @@ It is optimized to deliver industry-leading performance while lowering costs.
 The LoopBack DB2 connector supports:
 
 * All create, retrieve, update, and delete operations.
-* [Queries](/doc/{{page.lang}}/lb2/Querying-data.html) with fields, limit, order, skip and where filters.
+* [Queries](Querying-data.html) with fields, limit, order, skip and where filters.
 
 The following features are not yet implemented:
 
@@ -34,7 +34,7 @@ Enter the following in the top-level directory of your LoopBack application:
 $ npm install loopback-connector-db2 --save
 ```
 
-The `--save` option adds the dependency to the application's [package.json](/doc/{{page.lang}}/lb2/package.json.html) file.
+The `--save` option adds the dependency to the application's [package.json](package.json.html) file.
 
 ## Configuration
 

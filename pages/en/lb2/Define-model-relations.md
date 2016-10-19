@@ -31,7 +31,7 @@ $ npm install
 
 ## Introducing model relations
 
-LoopBack supports many different kinds of model relations, including: [BelongsTo](/doc/{{page.lang}}/lb2/BelongsTo-relations), [HasMany](/doc/{{page.lang}}/lb2/HasMany-relations), [HasManyThrough](/doc/{{page.lang}}/lb2/HasManyThrough-relations), and [HasAndBelongsToMany](/doc/{{page.lang}}/lb2/HasAndBelongsToMany-relations), among others. For more information, see [Creating model relations](/doc/{{page.lang}}/lb2/Creating-model-relations).
+LoopBack supports many different kinds of model relations, including: [BelongsTo](BelongsTo-relations), [HasMany](HasMany-relations), [HasManyThrough](HasManyThrough-relations), and [HasAndBelongsToMany](HasAndBelongsToMany-relations), among others. For more information, see [Creating model relations](Creating-model-relations).
 
 In the Coffee Shop Reviews app, the models are related as follows:
 
@@ -43,7 +43,7 @@ In the Coffee Shop Reviews app, the models are related as follows:
 
 ## Define relations
 
-Now, you're going to define these relationships between the models.  In all there are five relations.  Once again, you'll use `slc loopback`, but this time you'll use the `relation` sub-command ([relation generator](/doc/{{page.lang}}/lb2/Relation-generator)).  For each relation, enter:
+Now, you're going to define these relationships between the models.  In all there are five relations.  Once again, you'll use `slc loopback`, but this time you'll use the `relation` sub-command ([relation generator](Relation-generator)).  For each relation, enter:
 
 `$ slc loopback:relation`
 
