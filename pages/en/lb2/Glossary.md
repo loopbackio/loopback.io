@@ -122,7 +122,7 @@ model
 : See _LoopBack model_.
 
 model property
-: A value attached to a model; for persisted models, corresponds to a database column or field
+: A value attached to a model; for persisted models, corresponds to a database column or field.
 
 ## N
 
