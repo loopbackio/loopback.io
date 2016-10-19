@@ -5,8 +5,6 @@
 * [Remote methods](Remote-methods.html)
   {% endunless %}{% unless page.permalink contains 'Operation-hooks.html' %}
 * [Operation hooks](Operation-hooks.html)
-  {% endunless %}{% unless page.permalink contains 'Model-hooks.html' %}
-* [Model hooks](Model-hooks.html)
   {% endunless %}{% unless page.permalink contains 'Connector-hooks.html' %}
 * [Connector hooks](Connector-hooks.html)
   {% endunless %}{% unless page.permalink contains 'Tutorial-Adding-application-logic.html' %}

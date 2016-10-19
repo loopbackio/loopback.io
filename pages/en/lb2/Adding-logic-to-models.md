@@ -1,19 +1,12 @@
 ---
 title: "Adding logic to models"
 lang: en
-layout: page
 keywords: LoopBack
 tags: [models]
 sidebar: lb2_sidebar
 permalink: /doc/en/lb2/Adding-logic-to-models.html
 summary:
 ---
-
-{% include see-also.html content="
-* [Defining boot scripts](Defining-boot-scripts.html)
-* [Defining middleware](Defining-middleware.html)
-" %}
-
 There are three ways to add custom application logic to models:
 
 * [Remote methods](Remote-methods.html) - REST endpoints mapped to Node functions.

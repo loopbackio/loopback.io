@@ -6,7 +6,7 @@
   {% endunless %}{% unless page.permalink contains 'Third-party-login-using-Passport.html' %}
   * [Third-party login using Passport](Third-party-login-using-Passport.html)
   {% endunless %}{% unless page.permalink contains 'User-management-example.html' %}
-  * [Example app](User-management-example.html)
+  * [User management example](User-management-example.html)
   {% endunless %}
 {% endcapture %}
 

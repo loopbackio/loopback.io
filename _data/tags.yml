@@ -6,6 +6,7 @@ allowed-tags:
   - contributing
   - community
   - data_sources
+  - example_app
   - getting_started
   - ios
   - models

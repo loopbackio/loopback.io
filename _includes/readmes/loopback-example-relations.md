@@ -101,7 +101,7 @@ $ slc loopback:datasource
       - String
       - Not Required
     - `city`
-      - date
+      - String
       - Not Required
     - `state`
       - String

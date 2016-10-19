@@ -4,9 +4,8 @@ lang: en
 layout: readme
 source: loopback-example-xamarin
 keywords: LoopBack
-tags:
+tags: example_app
 sidebar: lb2_sidebar
 permalink: /doc/en/lb2/Xamarin-example-app.html
-summary:
+summary: Example of creating a LoopBack client using the Xamarin SDK.
 ---
-{% include readmes/loopback-example-xamarin.md %}

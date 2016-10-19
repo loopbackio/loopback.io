@@ -1,11 +1,23 @@
 ---
 layout: page
+toc: false
 ---
-
 <style>
 h1:not(.post-title-main) { display: none; }
 </style>
+{% if page.branch %}
+  {% assign repo-branch = page.source | append: '/tree/' | append: page.branch %}
+  {% assign readme-file = page.source | append: '-' | append: page.branch %}
+{% else %}
+  {% assign repo-branch = page.source  %}
+  {% assign readme-file = page.source  %}
+{% endif %}
 
-<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> This page was generated from the <a href="https://github.com/strongloop/{{page.source}}">{{page.source}} README</a>.</div>
-
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> This page was generated from the <a href="https://github.com/strongloop/{{repo-branch}}">{{page.source}} README</a>.</div>
+{% include toc.html %}
 {{content}}
+
+{% if page.source %}
+  {% capture included-readme %}{% include readmes/{{readme-file}}.md %}{% endcapture %}
+  {{ included-readme | markdownify }}
+{% endif %}

@@ -9,5 +9,3 @@ sidebar: lb2_sidebar
 permalink: /doc/en/lb2/Angular-example-app.html
 summary: A brief tutorial on creating an Angular client app using the Loopback AngularJS SDK.
 ---
-
-{% include readmes/loopback-example-angular.md %}

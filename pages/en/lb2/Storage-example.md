@@ -4,10 +4,8 @@ lang: en
 layout: readme
 source: loopback-example-storage
 keywords: LoopBack
-tags:
+tags: example_app
 sidebar: lb2_sidebar
 permalink: /doc/en/lb2/Storage-example.html
 summary: Example of using LoopBack storage component
 ---
-
-{% include readmes/loopback-example-storage.md %}

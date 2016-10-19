@@ -1,14 +1,26 @@
 ---
 layout: page
 toc: false
-readme: true
 ---
-{% if page.permalink contains 'Tutorial-Adding-application-logic.html' %}
-  <style>h1:not(.post-title-main) { display: none; }</style>
-  <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> This page was generated from the <a href="https://github.com/strongloop/{{page.source}}">{{page.source}} README</a>.</div>
+{% if page.branch %}
+  {% assign repo-branch = page.source | append: '/tree/' | append: page.branch %}
+  {% assign readme-file = page.source | append: '-' | append: page.branch %}
+{% else %}
+  {% assign repo-branch = page.source  %}
+  {% assign readme-file = page.source  %}
 {% endif %}
+{% if page.source %}
+  <style>h1:not(.post-title-main) { display: none; }</style>
+  <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> This page was generated from the <a href="https://github.com/strongloop/{{repo-branch}}">{{page.source}} README</a>.</div>
+{% endif %}
+
 {% capture nav-include %}{% include navgroups/{{page.navgroup}}.md %}{% endcapture %}
 {{ nav-include | markdownify }}
-
 {% include toc.html %}
+
+{% if page.source %}
+  {% capture included-readme %}{% include readmes/{{page.source}}.md %}{% endcapture %}
+  {{ included-readme | markdownify }}
+{% endif %}
+
 {{content}}
