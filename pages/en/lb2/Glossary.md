@@ -32,7 +32,7 @@ AngularJS
 : Open-source client JavaScript framework.
 
 API Connect
-: IBM product that incorporates StrongLoop and LoopBack technology for creating, runnin, managing, and securing APIs.  See [DeveloperWorks &gt; API Connect](https://developer.ibm.com/apiconnect/).
+: IBM product that incorporates StrongLoop and LoopBack technology for creating, running, managing, and securing APIs.  See [DeveloperWorks &gt; API Connect](https://developer.ibm.com/apiconnect/).
 
 Arc
 : StrongLoop graphical tool suite for the API lifecycle, including tools for building, profiling and monitoring Node apps. StrongLoop Arc is no longer under active development, and will soon be deprecated.
