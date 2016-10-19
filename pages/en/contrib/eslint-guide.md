@@ -108,38 +108,6 @@ Disclaimer: this can be a tedious task.
 
 - Go to the files and fix errors manually and commit.
 
-  - **Special case:**
-    There is an issue with `one-var` rule in `eslint` which reports an error for a variable declared in a `for-loop` after an uninitialized variable declaration. for example:
-
-```
-  function reproduce(candidates) {
-    var err;
-    for (var ix in candidates) {
-      err = ix > 0;
-    }
-    console.log(err);
-  }
-```
-
-`eslint` will display the following error:
- `3:8  error  Combine this with the previous 'var' statement with uninitialized variables  one-var`
-
-See filed bug [here](https://github.com/eslint/eslint/issues/5744).
-
-**Solution (for now)**:
-
-The solution is to disable `one-var` rule where required.  For example:
-
-```
- /* eslint-disable one-var */
-  for (var key in body.error) {
-    err[key] = body.error[key];
-  }
- /* eslint-enable one-var */
-```
-
-For an example, see [this commit](https://github.com/strongloop/strong-remoting/pull/288/commits/5ede708a0017cb87ae9fbe20da682a1f372c5044).  Don't forget to enable the rule as these enable/disable directives work at file level (not at method/scope level)
-
 Push the commit with message: `Fix linting errors`
 
 That's it, open a PR for review!
