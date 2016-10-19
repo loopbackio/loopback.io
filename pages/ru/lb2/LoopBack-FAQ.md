@@ -11,25 +11,25 @@ summary:
 
 ## Следующий шаг
 
-Если вы не прошли [Начало работы с LoopBack](/doc/ru/lb2/-LoopBack.html), то сейчас самое время это сделать.  
+Если вы не прошли [Начало работы с LoopBack](-LoopBack.html), то сейчас самое время это сделать.  
 
-Для более глубокого понимания  LoopBack и того, как он работает, прочитайте [Определение модели](/doc/ru/lb2/-.html) и [Соединение модели с базой данных](/doc/ru/lb2/Connecting-models-to-data-sources.html). руководство пошаговый опишет создание простого LoopBack приложения. 
+Для более глубокого понимания  LoopBack и того, как он работает, прочитайте [Определение модели](-.html) и [Соединение модели с базой данных](Connecting-models-to-data-sources.html). руководство пошаговый опишет создание простого LoopBack приложения. 
 
 На GitHub  вы найдете репозиторий   [loopback-getting-started](https://github.com/strongloop/loopback-getting-started) с готовым приложением, создание которого будет описываться в данном руководстве. Вы можите скачать его себе и пройти шаг за шагом, которые мы для вас заблаговременно подготовили в виде тегов [tags](https://github.com/strongloop/loopback-getting-started/tags).
 
 Вы можите выполнить все пошагово для того, чтоб создать приложение и понять смысл некоторых вещей в  LoopBack , или просто перейти к тому шагу, который вас интересует:
 
-*   [Создание простого API](/doc/ru/lb2/-API.html)
-*   [Использование API Explorer](/doc/ru/lb2/-API-Explorer.html)
-*   [Подключение вашего API к хранилищам данных](/doc/ru/lb2/-API-.html)
-*   [Расширьте свой API](/doc/ru/lb2/-API.html)
-*   [Добавление статической веб-страницы](/doc/ru/lb2/-.html)
-*   [Добавить пользовательски маршрут Express](/doc/ru/lb2/-Express.html)
-*   [Узнать больше](/doc/ru/lb2/-.html)�мках Loopback:
+*   [Создание простого API](-API.html)
+*   [Использование API Explorer](-API-Explorer.html)
+*   [Подключение вашего API к хранилищам данных](-API-.html)
+*   [Расширьте свой API](-API.html)
+*   [Добавление статической веб-страницы](-.html)
+*   [Добавить пользовательски маршрут Express](-Express.html)
+*   [Узнать больше](-.html)�мках Loopback:
 
-*   iOS SDK (Objective C) для iPhone и iPad приложений.  См. [iOS SDK](/doc/ru/lb2/iOS-SDK.html) для получения более подробно информации.
-*   Android SDK (Java) для Android приложений.  См. [Android SDK](/doc/ru/lb2/Android-SDK.html) для получения более подробно информации.
-*   AngularJS (JavaScript) для HTML5 front-ends. См. [AngularJS JavaScript SDK для получения более подробно информации](/doc/ru/lb2/AngularJS-JavaScript-SDK.html).
+*   iOS SDK (Objective C) для iPhone и iPad приложений.  См. [iOS SDK](iOS-SDK.html) для получения более подробно информации.
+*   Android SDK (Java) для Android приложений.  См. [Android SDK](Android-SDK.html) для получения более подробно информации.
+*   AngularJS (JavaScript) для HTML5 front-ends. См. [AngularJS JavaScript SDK для получения более подробно информации](AngularJS-JavaScript-SDK.html).
 
 ### Какие коннекторы данных есть в LoopBack?
 
@@ -39,25 +39,25 @@ LoopBack предоставляет многочисленные коннект�
 
 Коннекторы баз данных:
 
-*   [Memory connector](/doc/ru/lb2/Memory-connector.html)
-*   [MongoDB connector](/doc/ru/lb2/MongoDB-connector.html)
-*   [MySQL connector](/doc/ru/lb2/MySQL-connector.html)
-*   [Oracle connector](/doc/ru/lb2/Oracle-connector.html)
-*   [PostgreSQL connector](/doc/ru/lb2/PostgreSQL-connector.html)
-*   [Redis connector](/doc/ru/lb2/Redis-connector.html)
-*   [SQL Server connector](/doc/ru/lb2/SQL-Server-connector.html)
+*   [Memory connector](Memory-connector.html)
+*   [MongoDB connector](MongoDB-connector.html)
+*   [MySQL connector](MySQL-connector.html)
+*   [Oracle connector](Oracle-connector.html)
+*   [PostgreSQL connector](PostgreSQL-connector.html)
+*   [Redis connector](Redis-connector.html)
+*   [SQL Server connector](SQL-Server-connector.html)
 
 Другие коннекторы:
 
-*   [ATG connector](/doc/ru/lb2/ATG-connector.html)
-*   [Email connector](/doc/ru/lb2/Email-connector.html)
-*   [Push connector](/doc/ru/lb2/Push-connector.html)
-*   [Remote connector](/doc/ru/lb2/Remote-connector.html)
-*   [REST connector](/doc/ru/lb2/REST-connector.html)
-*   [SOAP connector](/doc/ru/lb2/SOAP-connector.html)
-*   [Storage connector](/doc/ru/lb2/Storage-connector.html)
+*   [ATG connector](ATG-connector.html)
+*   [Email connector](Email-connector.html)
+*   [Push connector](Push-connector.html)
+*   [Remote connector](Remote-connector.html)
+*   [REST connector](REST-connector.html)
+*   [SOAP connector](SOAP-connector.html)
+*   [Storage connector](Storage-connector.html)
 
-Кроме того, есть [общественные соединители](/doc/ru/lb2/Community-connectors.html), созданные разработчиками в LoopBack сообществе с открытым исходным кодом.
+Кроме того, есть [общественные соединители](Community-connectors.html), созданные разработчиками в LoopBack сообществе с открытым исходным кодом.
 
 ### Почему curl запрос к моему LoopBack приложению терпит неудачу?
 
@@ -97,19 +97,19 @@ app.start = function() {
 
 ### Как вы выполняете GET запрос на удаленный сервер?
 
-Во-первых, вы должны настроить источник данных, используя  [REST коннектор](/doc/ru/lb2/REST-connector.html). В [datasources.json](/doc/ru/lb2/datasources.json.html)  файле, который конфигурирует источник данных, вы можите задать  операцию обратную REST API, используя свойства операций.
+Во-первых, вы должны настроить источник данных, используя  [REST коннектор](REST-connector.html). В [datasources.json](datasources.json.html)  файле, который конфигурирует источник данных, вы можите задать  операцию обратную REST API, используя свойства операций.
 
 В качестве короткого примера см.  [loopback-faq-rest-connector](https://github.com/strongloop/loopback-faq-rest-connector).
 
 ### Может приложение возвращать XML вместо JSON?
 
-Да: в `server/config.json` установить свойство `remoting.rest.xml` как `true`.  См. [config.json](/doc/ru/lb2/config.json.html) для получения более детальной информации.
+Да: в `server/config.json` установить свойство `remoting.rest.xml` как `true`.  См. [config.json](config.json.html) для получения более детальной информации.
 
 ### Как послать email из приложения?
 
 Вкратце:
 
-1.  Настроить источник данных для использования  [email коннекта](/doc/ru/lb2/Email-connector.html).
+1.  Настроить источник данных для использования  [email коннекта](Email-connector.html).
 2.  Спроектируйте `Email` модель в  источник данных email.
 3.  Отправить email используя модель настроенную с помощью  [`Email.send()`](http://apidocs.strongloop.com/loopback/#email-send).
 
@@ -119,8 +119,8 @@ app.start = function() {
 
 Static middleware enables an application to serve static content such as HTML, CSS, images, and client JavaScript files.  To add it:
 
-1.  Remove the contents of the default `"routes"` property in [`middleware.json`](/doc/ru/lb2/middleware.json.html).
-2.  Add the following to the `"files"` property in [`middleware.json`](/doc/ru/lb2/middleware.json.html): to serve static content from the project's `/client` directory.
+1.  Remove the contents of the default `"routes"` property in [`middleware.json`](middleware.json.html).
+2.  Add the following to the `"files"` property in [`middleware.json`](middleware.json.html): to serve static content from the project's `/client` directory.
 
     ```js
     "loopback#static": { 
@@ -130,19 +130,19 @@ Static middleware enables an application to serve static content such as HTML, C
 
     Of course, change the value to use a different directory to contain static content.
 
-See [Defining middleware](/doc/ru/lb2/Defining-middleware.html) for more information, and [loopback-faq-middleware](https://github.com/strongloop/loopback-faq-middleware) for a short example.
+See [Defining middleware](Defining-middleware.html) for more information, and [loopback-faq-middleware](https://github.com/strongloop/loopback-faq-middleware) for a short example.
 
 ### What kind of hooks do models support?
 
 Model hooks are functions that are executed when certain events occur in a model's lifecycle.  LoopBack models many different hooks, for example: `afterInitialize` after a model is initialized, `beforeValidate` / `afterValidate` (before and after  model validation), `beforeSave` / `afterSave` (before and after a model is saved), and so on.
 
-See [Model hooks](/doc/ru/lb2/Model-hooks.html) for a complete list and more information.  See [loopback-faq-model-hooks](https://github.com/strongloop/loopback-faq-model-hooks) for a brief example.
+See [Model hooks](Model-hooks.html) for a complete list and more information.  See [loopback-faq-model-hooks](https://github.com/strongloop/loopback-faq-model-hooks) for a brief example.
 
 ### Вопросы управления пользователями
 
-See [Управление пользователями](/doc/ru/lb2/-.html) for more information and [loopback-faq-user-management](https://github.com/strongloop/loopback-faq-user-management) for relevant code examples.
+See [Управление пользователями](-.html) for more information and [loopback-faq-user-management](https://github.com/strongloop/loopback-faq-user-management) for relevant code examples.
 
-См.  [Управление юзерами](/doc/ru/lb2/-.html) для получения более подробной информации и примеры кода  [loopback-faq-user-management](https://github.com/strongloop/loopback-faq-user-management) 
+См.  [Управление юзерами](-.html) для получения более подробной информации и примеры кода  [loopback-faq-user-management](https://github.com/strongloop/loopback-faq-user-management) 
 
 Примечание:
 

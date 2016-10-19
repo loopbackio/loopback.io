@@ -15,7 +15,7 @@ If a LoopBack app is running on `localhost` at port `3000`, then by default API 
 [http://localhost:3000/explorer/](http://localhost:3000/explorer/).
 " %}
 
-All of the endpoints in the table below are inherited from [PersistedModel REST API](/doc/{{page.lang}}/lb2/PersistedModel-REST-API.html), except for the following:
+All of the endpoints in the table below are inherited from [PersistedModel REST API](PersistedModel-REST-API.html), except for the following:
 
 **Quick reference**
 
@@ -40,7 +40,7 @@ All of the endpoints in the table below are inherited from [PersistedModel REST
       <td>POST</td>
       <td>Allow</td>
       <td>
-        <p><a href="/doc/{{page.lang}}/lb2/PersistedModel-REST-API.html#create-model-instance">Add user instance</a> and persist to data source. Inherited from <a href="/doc/{{page.lang}}/lb2/PersistedModel-REST-API.html">PersistedModel API</a>.</p>
+        <p><a href="PersistedModel-REST-API.html#create-model-instance">Add user instance</a> and persist to data source. Inherited from <a href="PersistedModel-REST-API.html">PersistedModel API</a>.</p>
       </td>
       <td>
         <p>JSON object (in request body) providing <a href="http://apidocs.strongloop.com/loopback/#user" class="external-link" rel="nofollow">User object properties</a>: <code>username</code>, <code>password</code>, <code>email</code>. LoopBack sets values for <code>emailVerified</code> and <code>verificationToken</code>.</p>
@@ -51,7 +51,7 @@ All of the endpoints in the table below are inherited from [PersistedModel REST
       <td><code>/users</code></td>
       <td>GET</td>
       <td>Deny</td>
-      <td><a href="/doc/{{page.lang}}/lb2/PersistedModel-REST-API.html#find-matching-instances">Find matching instances</a> of users that match specified filter. Inherited from <a href="/doc/{{page.lang}}/lb2/PersistedModel-REST-API.html">PersistedModel API</a>.
+      <td><a href="PersistedModel-REST-API.html#find-matching-instances">Find matching instances</a> of users that match specified filter. Inherited from <a href="PersistedModel-REST-API.html">PersistedModel API</a>.
       </td>
       <td>
         <p>One or more filters in query parameters:</p>
@@ -69,7 +69,7 @@ All of the endpoints in the table below are inherited from [PersistedModel REST
       <td><code>/users</code></td>
       <td>PUT</td>
       <td>Deny</td>
-      <td><a href="/doc/{{page.lang}}/lb2/PersistedModel-REST-API.html#update--insert-instance">Update / insert user instance</a> and persist to data source. Inherited from <a href="/doc/{{page.lang}}/lb2/PersistedModel-REST-API.html">PersistedModel API</a>.
+      <td><a href="PersistedModel-REST-API.html#update--insert-instance">Update / insert user instance</a> and persist to data source. Inherited from <a href="PersistedModel-REST-API.html">PersistedModel API</a>.
       </td>
       <td>
         <p>JSON object (in request body)</p>
@@ -80,7 +80,7 @@ All of the endpoints in the table below are inherited from [PersistedModel REST
       <td><code>/users/<em>id</em></code></td>
       <td>GET</td>
       <td>Deny</td>
-      <td><a href="/doc/{{page.lang}}/lb2/PersistedModel-REST-API.html#find-instance-by-id">Find user by ID</a>: Return data for the specified user ID. Inherited from <a href="/doc/{{page.lang}}/lb2/PersistedModel-REST-API.html">PersistedModel API</a>.
+      <td><a href="PersistedModel-REST-API.html#find-instance-by-id">Find user by ID</a>: Return data for the specified user ID. Inherited from <a href="PersistedModel-REST-API.html">PersistedModel API</a>.
       </td>
       <td><em>id</em>, the user ID (in URI path)</td>
     </tr>
@@ -88,7 +88,7 @@ All of the endpoints in the table below are inherited from [PersistedModel REST
       <td><code>/users/<em>id</em></code></td>
       <td>PUT</td>
       <td>Deny</td>
-      <td><a href="/doc/{{page.lang}}/lb2/PersistedModel-REST-API.html#update-model-instance-attributes">Update user attributes</a> for specified user ID and persist. Inherited from <a href="/doc/{{page.lang}}/lb2/PersistedModel-REST-API.html">PersistedModel API</a>.
+      <td><a href="PersistedModel-REST-API.html#update-model-instance-attributes">Update user attributes</a> for specified user ID and persist. Inherited from <a href="PersistedModel-REST-API.html">PersistedModel API</a>.
       </td>
       <td>
         <p>Query parameters:</p>
@@ -102,7 +102,7 @@ All of the endpoints in the table below are inherited from [PersistedModel REST
       <td><code>/users/<em>id</em></code></td>
       <td>DELETE</td>
       <td>Deny</td>
-      <td><a href="/doc/{{page.lang}}/lb2/PersistedModel-REST-API.html#delete-model-instance">Delete user</a> with specified instance ID. Inherited from <a href="/doc/{{page.lang}}/lb2/PersistedModel-REST-API.html">PersistedModel API</a>.
+      <td><a href="PersistedModel-REST-API.html#delete-model-instance">Delete user</a> with specified instance ID. Inherited from <a href="PersistedModel-REST-API.html">PersistedModel API</a>.
       </td>
       <td><em>id</em>, user ID<em> </em>(in URI path)</td>
     </tr>
@@ -140,7 +140,7 @@ All of the endpoints in the table below are inherited from [PersistedModel REST
       <td><code>/users/confirm</code></td>
       <td>GET</td>
       <td>Deny</td>
-      <td><a href="/doc/{{page.lang}}/lb2/User-REST-API.html">Confirm email address</a> for specified user.</td>
+      <td><a href="User-REST-API.html">Confirm email address</a> for specified user.</td>
       <td>
         <p>Query parameters:</p>
         <ul>
@@ -165,7 +165,7 @@ All of the endpoints in the table below are inherited from [PersistedModel REST
       <td>GET</td>
       <td>Deny</td>
       <td>
-        <p>Check instance existence: Return true if specified user ID exists. Inherited from <a href="/doc/{{page.lang}}/lb2/PersistedModel-REST-API.html">PersistedModel API</a>.
+        <p>Check instance existence: Return true if specified user ID exists. Inherited from <a href="PersistedModel-REST-API.html">PersistedModel API</a>.
         </p>
       </td>
       <td>
@@ -181,7 +181,7 @@ All of the endpoints in the table below are inherited from [PersistedModel REST
       <td>GET</td>
       <td>Deny</td>
       <td>
-        <p>Find first user instance that matches specified filter. Inherited from <a href="/doc/{{page.lang}}/lb2/PersistedModel-REST-API.html">PersistedModel API</a>.
+        <p>Find first user instance that matches specified filter. Inherited from <a href="PersistedModel-REST-API.html">PersistedModel API</a>.
         </p>
       </td>
       <td>
@@ -210,7 +210,7 @@ All of the endpoints in the table below are inherited from [PersistedModel REST
       </td>
       <td>Allow</td>
       <td>
-        <p><a href="/doc/{{page.lang}}/lb2/User-REST-API.html">Log in</a> the specified user.</p>
+        <p><a href="User-REST-API.html">Log in</a> the specified user.</p>
       </td>
       <td>
         <p>Username and password in POST body.</p>
@@ -223,14 +223,14 @@ All of the endpoints in the table below are inherited from [PersistedModel REST
       </td>
       <td>POST</td>
       <td>Allow</td>
-      <td><a href="/doc/{{page.lang}}/lb2/User-REST-API.html">Log out</a> the specified user.</td>
+      <td><a href="User-REST-API.html">Log out</a> the specified user.</td>
       <td>Access token in POST body.</td>
     </tr>
     <tr>
       <td><code>/users/reset</code></td>
       <td>POST</td>
       <td>&nbsp;</td>
-      <td><a href="/doc/{{page.lang}}/lb2/User-REST-API.html">Reset password</a> for the specified user.</td>
+      <td><a href="User-REST-API.html">Reset password</a> for the specified user.</td>
       <td>In POST body</td>
     </tr>
   </tbody>
@@ -344,4 +344,4 @@ User.on('resetPasswordRequest', function (info) {
 });
 ```
 
-See also [Verifying email addresses](/doc/{{page.lang}}/lb2/Registering-users.html#verifying-email-addresses) (Registering users).
+See also [Verifying email addresses](Registering-users.html#verifying-email-addresses) (Registering users).

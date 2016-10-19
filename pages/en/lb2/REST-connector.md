@@ -30,11 +30,11 @@ In your application root directory, enter:
 $ npm install loopback-connector-rest --save
 ```
 
-This will install the module from npm and add it as a dependency to the application's [package.json](/doc/{{page.lang}}/lb2/package.json.html) file.
+This will install the module from npm and add it as a dependency to the application's [package.json](package.json.html) file.
 
 ## Creating a REST data source
 
-Use the [DataSource generator](/doc/{{page.lang}}/lb2/Data-source-generator) to add a REST data source to your application.
+Use the [DataSource generator](Data-source-generator) to add a REST data source to your application.
 
 ```shell
 $ apic create --type datasource
@@ -45,7 +45,7 @@ $ slc loopback:datasource
 ```
 
 When prompted, scroll down in the list of connectors and choose **REST services (supported by StrongLoop)**.
-This adds an entry to [datasources.json](/doc/{{page.lang}}/lb2/datasources.json.html) (for example):
+This adds an entry to [datasources.json](datasources.json.html) (for example):
 
 ```javascript
 ...

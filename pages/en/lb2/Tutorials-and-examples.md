@@ -26,12 +26,12 @@ In general, these tutorials are intended to be followed in order.
     <tr>
       <td>1</td>
       <td><a href="https://github.com/strongloop/loopback-getting-started" class="external-link" rel="nofollow">loopback-getting-started</a></td>
-      <td><strong>START HERE</strong>&nbsp;to learn the basics of LoopBack. Follow&nbsp;<a href="/doc/{{page.lang}}/lb2/Getting-started-with-LoopBack.html" class="external-link" rel="nofollow">Getting started with LoopBack</a>&nbsp;to understand it.</td>
+      <td><strong>START HERE</strong>&nbsp;to learn the basics of LoopBack. Follow&nbsp;<a href="Getting-started-with-LoopBack.html" class="external-link" rel="nofollow">Getting started with LoopBack</a>&nbsp;to understand it.</td>
     </tr>
     <tr>
       <td>2</td>
       <td><a href="https://github.com/strongloop/loopback-getting-started-intermediate" class="external-link" rel="nofollow">loopback-getting-started-intermediate</a></td>
-      <td>Full-stack example that builds on&nbsp;<code>loopback-getting-started&nbsp;</code>. Follow&nbsp;<a href="/doc/{{page.lang}}/lb2/Getting-started-part-II.html" class="external-link" rel="nofollow">Getting started part II</a>&nbsp;to understand it.</td>
+      <td>Full-stack example that builds on&nbsp;<code>loopback-getting-started&nbsp;</code>. Follow&nbsp;<a href="Getting-started-part-II.html" class="external-link" rel="nofollow">Getting started part II</a>&nbsp;to understand it.</td>
     </tr>
     <tr>
       <td>3</td>
@@ -70,7 +70,7 @@ These examples illustrate specific LoopBack features.
   <tbody>
     <tr>
       <td><a href="https://github.com/strongloop/loopback-example-angular-live-set" class="external-link" rel="nofollow">loopback-example-angular-live-set</a></td>
-      <td>LoopBack/AngularJS app using HTML5&nbsp;<a href="/doc/{{page.lang}}/lb2/Realtime-server-sent-events.html" rel="nofollow">realtime server-sent events</a>.</td>
+      <td>LoopBack/AngularJS app using HTML5&nbsp;<a href="Realtime-server-sent-events.html" rel="nofollow">realtime server-sent events</a>.</td>
     </tr>
     <tr>
       <td><a href="https://github.com/strongloop/loopback-example-connector" class="external-link" rel="nofollow">loopback-example-connector</a></td>
@@ -82,11 +82,11 @@ These examples illustrate specific LoopBack features.
     </tr>
     <tr>
       <td><a href="https://github.com/strongloop/loopback-example-mixins" class="external-link" rel="nofollow">loopback-example-mixins</a></td>
-      <td>Loading&nbsp;<a href="/doc/{{page.lang}}/lb2/Defining-mixins.html" rel="nofollow">mixins</a>; observing changes and adding model attributes.</td>
+      <td>Loading&nbsp;<a href="Defining-mixins.html" rel="nofollow">mixins</a>; observing changes and adding model attributes.</td>
     </tr>
     <tr>
       <td><a href="https://github.com/strongloop/loopback-example-offline-sync" class="external-link" rel="nofollow">loopback-example-offline-sync</a></td>
-      <td><a href="/doc/{{page.lang}}/lb2/Synchronization.html" rel="nofollow">Offline synchronization</a>&nbsp;with Loopback.</td>
+      <td><a href="Synchronization.html" rel="nofollow">Offline synchronization</a>&nbsp;with Loopback.</td>
     </tr>
     <tr>
       <td><a href="https://github.com/strongloop/loopback-example-passport" class="external-link" rel="nofollow">loopback-example-passport</a></td>
@@ -98,7 +98,7 @@ These examples illustrate specific LoopBack features.
     </tr>
     <tr>
       <td><a href="https://github.com/strongloop/loopback-example-push" class="external-link" rel="nofollow">loopback-example-push</a></td>
-      <td>Example of&nbsp;<a href="/doc/{{page.lang}}/lb2/Push-notifications.html" rel="nofollow">LoopBack push notifications</a>, with iOS and Android clients.</td>
+      <td>Example of&nbsp;<a href="Push-notifications.html" rel="nofollow">LoopBack push notifications</a>, with iOS and Android clients.</td>
     </tr>
     <tr>
       <td><a href="https://github.com/strongloop/loopback-example-ssl" class="external-link" rel="nofollow">loopback-example-ssl</a></td>
@@ -117,7 +117,7 @@ These examples illustrate specific LoopBack features.
 
 ## Client SDK examples
 
-These examples illustrate use of LoopBack's [client SDKs](/doc/{{page.lang}}/lb2/Client-SDKs.html).
+These examples illustrate use of LoopBack's [client SDKs](Client-SDKs.html).
 
 <table>
   <thead>

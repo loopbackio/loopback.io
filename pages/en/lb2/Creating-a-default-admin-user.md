@@ -54,7 +54,7 @@ User.create([
 };
 ```
 
-The project model JSON (created by running `apic loopback:acl`, the [ACL generator](/doc/{{page.lang}}/lb2/ACL-generator.html)) 
+The project model JSON (created by running `apic loopback:acl`, the [ACL generator](ACL-generator.html)) 
 file specifies that the admin role has unrestricted access to view projects (`GET /api/projects`):
 
 {% include code-caption.html content="/common/models/model.json" %}

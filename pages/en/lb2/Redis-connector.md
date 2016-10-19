@@ -22,11 +22,11 @@ In your application root directory, enter this command to install the connector:
 $ npm install loopback-connector-redis --save
 ```
 
-This will install the module and add it as a dependency to the application's [`package.json`](/doc/{{page.lang}}/lb2/package.json) file.
+This will install the module and add it as a dependency to the application's [`package.json`](package.json) file.
 
 ## Creating a Redis data source
 
-Use the [data source generator](/doc/{{page.lang}}/lb2/Data-source-generator.html) to add a Redis data source to your application.
+Use the [data source generator](Data-source-generator.html) to add a Redis data source to your application.
 When prompted for the connector, choose **other,** then enter **redis** for the connector name.
 The entry in the application's `server/datasources.json` will look like this:
 

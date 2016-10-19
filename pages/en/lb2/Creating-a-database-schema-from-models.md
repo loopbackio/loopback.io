@@ -12,7 +12,7 @@ summary:
 LoopBack _auto-migration_ creates a database schema based on your application's models.
 In relational databases, auto-migration creates a table for each model, and a column in the table for each property in the model.
 Auto-migration creates tables for all models attached to a data source, including 
-[built-in models](/doc/{{page.lang}}/lb2/Using-built-in-models.html)
+[built-in models](Using-built-in-models.html)
 
 Once you have defined a model, LoopBack can create or update (synchronize) the database schemas accordingly, if you need to adjust the database to match the models.
 LoopBack provides two ways to synchronize model definitions with table schemas:
@@ -36,11 +36,11 @@ For more information, see [Creating a database schema from models](http://www.ib
 
 The following data sources support auto-migration:
 
-* [Oracle](/doc/{{page.lang}}/lb2/Oracle-connector.html)
-* [PostgreSQL](/doc/{{page.lang}}/lb2/PostgreSQL-connector.html)
-* [MySQL](/doc/{{page.lang}}/lb2/MySQL-connector.html)
-* [SQL Server](/doc/{{page.lang}}/lb2/SQL-Server-connector.html)
-* [MongoDB](/doc/{{page.lang}}/lb2/MongoDB-connector.html)
+* [Oracle](Oracle-connector.html)
+* [PostgreSQL](PostgreSQL-connector.html)
+* [MySQL](MySQL-connector.html)
+* [SQL Server](SQL-Server-connector.html)
+* [MongoDB](MongoDB-connector.html)
 
 Here's an example of auto-migration. Consider this model definition:
 

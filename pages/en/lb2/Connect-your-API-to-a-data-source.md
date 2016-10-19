@@ -31,7 +31,7 @@ $ npm install
 
 ## Add a data source
 
-Now you're going to define a data source using the [Data source generator](/doc/{{page.lang}}/lb2/Data-source-generator):
+Now you're going to define a data source using the [Data source generator](Data-source-generator):
 
 `$ slc loopback:datasource`
 
@@ -120,7 +120,7 @@ add `host`, `port`, `database`, `username`, and `password` properties.  
 
 ## Connect CoffeeShop model to MySQL
 
-Now you've created a MySQL data source and you have a CoffeeShop model; you just need to connect them.  LoopBack applications use the [model-config.json](/doc/{{page.lang}}/lb2/model-config.json) file to link models to data sources.  Edit `/server/model-config.json` and look for the CoffeeShop entry:
+Now you've created a MySQL data source and you have a CoffeeShop model; you just need to connect them.  LoopBack applications use the [model-config.json](model-config.json) file to link models to data sources.  Edit `/server/model-config.json` and look for the CoffeeShop entry:
 
 {% include code-caption.html content="/server/model-config.json" %}
 ```javascript
@@ -138,12 +138,12 @@ Change the `dataSource` property from `db` to `mysqlDs`.  This attaches th
 
 Now you have a CoffeeShop model in LoopBack, how do you  create the corresponding table in MySQL database?
 
-You could try executing some SQL statements directly...but LoopBack provides a Node API to do it for you automatically using a process called _auto-migration_.  For more information, see [Creating a database schema from models](/doc/{{page.lang}}/lb2/Creating-a-database-schema-from-models).
+You could try executing some SQL statements directly...but LoopBack provides a Node API to do it for you automatically using a process called _auto-migration_.  For more information, see [Creating a database schema from models](Creating-a-database-schema-from-models).
 
 The `loopback-getting-started` module contains the `create-sample-models.js` script to demonstrate auto-migration.  If you've been following along from the beginning (and didn't just clone this module), then you'll need to copy it from below or [from GitHub](https://github.com/strongloop/loopback-getting-started/blob/master/server/boot/create-sample-models.js) .  Put it in the application's `/server/boot` directory so it will get executed when the application starts.
 
 {% include note.html content="
-The auto-migration script below is an example of a _boot script_ that LoopBack executes when an application initially starts up. Use boot scripts for initialization and to perform any other logic your application needs to perform when it starts. See [Defining boot scripts](/doc/en/lb2/Defining-boot-scripts) for more information.
+The auto-migration script below is an example of a _boot script_ that LoopBack executes when an application initially starts up. Use boot scripts for initialization and to perform any other logic your application needs to perform when it starts. See [Defining boot scripts](Defining-boot-scripts) for more information.
 " %}
 
 {% include code-caption.html content="/server/boot/create-sample-models.js" %}

@@ -29,7 +29,7 @@ $ npm install
 
 ## Introducing access controls
 
-LoopBack applications access data through models, so controlling access to data means putting restrictions on models; that is, specifying who or what can read and write the data or execute methods on the models.   LoopBack access controls are determined by _access control lists_ or ACLs. For more information, see [Controlling data access](/doc/{{page.lang}}/lb2/Controlling-data-access).
+LoopBack applications access data through models, so controlling access to data means putting restrictions on models; that is, specifying who or what can read and write the data or execute methods on the models.   LoopBack access controls are determined by _access control lists_ or ACLs. For more information, see [Controlling data access](Controlling-data-access).
 
 You're going to set up access control for the Review model.  
 

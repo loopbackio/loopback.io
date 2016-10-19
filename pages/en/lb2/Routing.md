@@ -75,8 +75,8 @@ Except 14, 15, and 16, the listed items refer to [LoopBack middleware](Defining-
 12.  parse:after
 13.  routes:before
 14.  [Express middleware](http://expressjs.com/guide/writing-middleware.html)
-15.  [Components](/doc/{{page.lang}}/lb2/LoopBack-components.html)
-16.  [Boot scripts](/doc/{{page.lang}}/lb2/Defining-boot-scripts.html)
+15.  [Components](LoopBack-components.html)
+16.  [Boot scripts](Defining-boot-scripts.html)
 17.  routes
 18.  routes:after
 19.  files:before
@@ -97,20 +97,20 @@ If you add middleware on the `route`or `route:after` phase, it will not execut
 Instead, it will be ignored because the route was already matched.
 " %}
 
-The middleware to be loaded during the middleware phases are configured in the [middleware.json](/doc/{{page.lang}}/lb2/middleware.json.html) file of the app.
+The middleware to be loaded during the middleware phases are configured in the [middleware.json](middleware.json.html) file of the app.
 The order of the phases in the file are semantic, and cannot be listed randomly.
 
-LoopBack also supports [custom phases](/doc/{{page.lang}}/lb2/Defining-middleware.html#adding-a-custom-phase).
+LoopBack also supports [custom phases](Defining-middleware.html#adding-a-custom-phase).
 Custom phases can be defined in any position of the middleware chain, and maybe be used to prioritize over LoopBack's built-in middleware phases.
 
 ### Loading middleware
 
-LoopBack middleware are declaratively loaded using the [middleware.json](/doc/{{page.lang}}/lb2/middleware.json.html) file,
+LoopBack middleware are declaratively loaded using the [middleware.json](middleware.json.html) file,
 or imperatively using the [app.middleware()](https://apidocs.strongloop.com/loopback/#app-middleware) method.
 
 Express middleware can be loaded in the `server.js` file using [`app.use()`](http://expressjs.com/4x/api.html#app.use)
 or a [route definition](http://expressjs.com/4x/api.html#app.METHOD).
 
-[LoopBack components](/doc/{{page.lang}}/lb2/LoopBack-components.html) can load middleware using the reference to the LoopBack application instance.
+[LoopBack components](LoopBack-components.html) can load middleware using the reference to the LoopBack application instance.
 
-[Boot scripts](/doc/{{page.lang}}/lb2/Defining-boot-scripts.html) can load middleware using the reference to the LoopBack application instance.
+[Boot scripts](Defining-boot-scripts.html) can load middleware using the reference to the LoopBack application instance.

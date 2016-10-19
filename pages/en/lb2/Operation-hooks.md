@@ -147,7 +147,7 @@ and _`observer`_ is `function observer(context, callback)`. Child models inher
 ### Operation hook context object
 
 The `context` object is specific to operation hooks and does not have any relation to the context object passed to remote hooks registered via `Model.beforeRemote` and `Model.afterRemote`.
-See [Remote hooks](/doc/{{page.lang}}/lb2/Remote-hooks.html) for more information.
+See [Remote hooks](Remote-hooks.html) for more information.
 Note that the context object is not related to the "current context" provided by `loopback.getCurrentContext()` either.
 
 #### Properties common for all hooks and operations
@@ -214,7 +214,7 @@ This property is provided when the operation affects a single instance _and_ pe
 ##### where - data
 
 When the operation affects multiple instance (e.g. `PersistedModel.updateAll()`) _or_ performs a partial update of a subset of model properties
-(e.g. `PersistedModel.prototype.updateAttributes()`), the context provides a [where filter](/doc/{{page.lang}}/lb2/Where-filter.html) used
+(e.g. `PersistedModel.prototype.updateAttributes()`), the context provides a [where filter](Where-filter.html) used
 to find the affected records and plain `data` object containing the changes to be made.
 
 ##### isNewInstance
@@ -346,13 +346,13 @@ See the following sections for more details.
 
 LoopBack provides the following operation hooks:
 
-* [access](/doc/{{page.lang}}/lb2/Operation-hooks.html#access)
-* [before save](/doc/{{page.lang}}/lb2/Operation-hooks.html#before-save)
-* [after save](/doc/{{page.lang}}/lb2/Operation-hooks.html#after-save)
-* [before delete](/doc/{{page.lang}}/lb2/Operation-hooks.html#before-delete)
-* [after delete](/doc/{{page.lang}}/lb2/Operation-hooks.html#after-delete)
-* [loaded](/doc/{{page.lang}}/lb2/Operation-hooks.html#loaded)
-* [persist](/doc/{{page.lang}}/lb2/Operation-hooks.html#persist)
+* [access](Operation-hooks.html#access)
+* [before save](Operation-hooks.html#before-save)
+* [after save](Operation-hooks.html#after-save)
+* [before delete](Operation-hooks.html#before-delete)
+* [after delete](Operation-hooks.html#after-delete)
+* [loaded](Operation-hooks.html#loaded)
+* [persist](Operation-hooks.html#persist)
 
 The following table lists hooks that PersistedModel methods invoke.
 
@@ -455,7 +455,7 @@ NOTE: When `findOrCreate` finds an existing model, the save hooks are not trig
 However, connectors providing atomic implementation may trigger `before save` hook even when the model is not created,
 since they cannot determine in advance whether the model will be created or not.
 
-The hook is triggered _before_ [model validation](/doc/{{page.lang}}/lb2/Validating-model-data.html) functions are called.
+The hook is triggered _before_ [model validation](Validating-model-data.html) functions are called.
 
 {% include tip.html content="
 Since the `before save` hook is triggered before validators are called, you can use it to ensure that empty or missing values are filled with default values.
@@ -482,7 +482,7 @@ The before save hook provides the `ctx.isNewInstance` property when `ctx.inst
 
 #### Embedded relations
 
-You can define a `before save` hook for a model that is [embedded in](/doc/{{page.lang}}/lb2/Embedded-models-and-relations.html) another model.
+You can define a `before save` hook for a model that is [embedded in](Embedded-models-and-relations.html) another model.
 Then, updating or creating an instance of the containing model will trigger the operation hook on the embedded model.
 When this occurs, `ctx.isNewInstance` is false, because only a new instance of the container model is created.
 
@@ -606,7 +606,7 @@ See [Checking for support of ctx.isNewInstance](#Checking-for-support-of-ctx.isN
 
 #### Embedded relations
 
-You can define an `after save` hook for a model that is [embedded in](/doc/{{page.lang}}/lb2/Embedded-models-and-relations.html) another model.
+You can define an `after save` hook for a model that is [embedded in](Embedded-models-and-relations.html) another model.
 Then, updating or creating an instance of the containing model will trigger the operation hook on the embedded model.
 When this occurs, `ctx.isNewInstance` is false, because only a new instance of the embedding model is created.
 
@@ -796,7 +796,7 @@ such as HTTP requests to the `exists`, `count`, or bulk update REST endpoints.
 
 ## Migration guide
 
-The following table shows which new hook to use for each of the old [model hooks](/doc/{{page.lang}}/lb2/Model-hooks.html):
+The following table shows which new hook to use for each of the old [model hooks](Model-hooks.html):
 
 <table>
   <thead>

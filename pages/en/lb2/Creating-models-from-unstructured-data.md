@@ -15,9 +15,9 @@ Instance introspection creates a model from a single model instance using
 
 The following data sources support instance introspection: 
 
-* [MongoDB data sources](/doc/{{page.lang}}/lb2/MongoDB-connector.html)
-* [REST data sources](/doc/{{page.lang}}/lb2/REST-connector.html)
-* [SOAP data sources](/doc/{{page.lang}}/lb2/SOAP-connector.html)
+* [MongoDB data sources](MongoDB-connector.html)
+* [REST data sources](REST-connector.html)
+* [SOAP data sources](SOAP-connector.html)
 
 For example:
 

@@ -29,7 +29,7 @@ $ npm install
 
 ## Introducing remote hooks
 
-A [remote hook](/doc/{{page.lang}}/lb2/Remote-hooks) is simply a function that gets executed before or after a remote method (either a custom remote method or a built-in CRUD method).   In this example, you're going to define a remote hook that is called whenever the [`create()`](https://apidocs.strongloop.com/loopback/#persistedmodel-create) method is called on the Review model; that is, when a new review is created.
+A [remote hook](Remote-hooks) is simply a function that gets executed before or after a remote method (either a custom remote method or a built-in CRUD method).   In this example, you're going to define a remote hook that is called whenever the [`create()`](https://apidocs.strongloop.com/loopback/#persistedmodel-create) method is called on the Review model; that is, when a new review is created.
 
 You can define two kinds of remote hooks:
 
@@ -39,7 +39,7 @@ You can define two kinds of remote hooks:
 In both cases, you provide two arguments: a string that matches the remote method you want to which you want to "hook" your function, and a callback function.  Much of the power of remote hooks is that the string can include wildcards, so it is triggered by any matching method.
 
 {% include note.html content="
-LoopBack also provides [operation hooks](/doc/en/lb2/Operation-hooks), functions that are executed before or after models perform backend operations such as creating, saving, and updating model data, regardless of how those operations are invoked. In contrast, a remote hook is called only when the exact method you specify is invoked.
+LoopBack also provides [operation hooks](Operation-hooks), functions that are executed before or after models perform backend operations such as creating, saving, and updating model data, regardless of how those operations are invoked. In contrast, a remote hook is called only when the exact method you specify is invoked.
 " %}
 
 ## Create the remote hook
@@ -62,7 +62,7 @@ module.exports = function(Review) {
 This function is called before a new instance of the Review model is created.  The code:
 
 *   Inserts the `publisherId` using the access token attached to the request.
-*   Sets the date of the review instance to the current date.  
+*   Sets the date of the review instance to the current date.
 
 {% include next.html content="Continue to [Create AngularJS client](Create-AngularJS-client.html)."
 %}

@@ -76,7 +76,7 @@ This is the only hook that does not require you to explicitly call `next()` afte
 
 ## beforeValidate
 
-This hook is called before [validatation](/doc/{{page.lang}}/lb2/Validating-model-data.html) is performed on a model.
+This hook is called before [validatation](Validating-model-data.html) is performed on a model.
 
 ### Example
 
@@ -102,7 +102,7 @@ If you don't call `next()`, the application will appear to \"hang\".
 
 ## afterValidate
 
-This hook is called after [validation](/doc/{{page.lang}}/lb2/Validating-model-data.html) is performed on a model.
+This hook is called after [validation](Validating-model-data.html) is performed on a model.
 
 ### Example
 

@@ -11,9 +11,9 @@ summary:
 
 The /common directory contains files shared by the server and client parts of the application.
 When you create models that are shared by client and server, the
-[Application generator](/doc/{{page.lang}}/lb2/Application-generator.html) 
+[Application generator](Application-generator.html) 
 creates a `/models` sub-directory with one JSON file per model in the application.
-See [Model definition JSON file](/doc/{{page.lang}}/lb2/Model-definition-JSON-file.html) for a description of the format of this file. 
+See [Model definition JSON file](Model-definition-JSON-file.html) for a description of the format of this file. 
 
 {% include note.html content="
 

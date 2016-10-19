@@ -33,12 +33,12 @@ $ npm install
 
 When a LoopBack application starts (or "bootstraps"), it runs the scripts in the `/server/boot` directory, known as _boot scripts_.  By default, LoopBack loads boot scripts in alphabetical order.  
 
-The standard scaffolded LoopBack application created by the [application generator](/doc/{{page.lang}}/lb2/Application-generator) contains the following standard boot scripts (in `/server/boot`) that perform basic initialization:
+The standard scaffolded LoopBack application created by the [application generator](Application-generator) contains the following standard boot scripts (in `/server/boot`) that perform basic initialization:
 
 *   `authentication.js` - Enables authentication for the application by calling [`app.enableAuth()`](http://apidocs.strongloop.com/loopback/#app-enableauth).
 *   `root.js` - Defines a root route to `/` that returns server status using [`loopback.status()`](https://apidocs.strongloop.com/loopback/#loopback-status) middleware.  You already encountered this in the previous step, when you renamed this file so your app could serve static content.
 
-For more information on boot scripts, see [Defining boot scripts](/doc/{{page.lang}}/lb2/Defining-boot-scripts).
+For more information on boot scripts, see [Defining boot scripts](Defining-boot-scripts).
 
 ## Add a new boot script
 

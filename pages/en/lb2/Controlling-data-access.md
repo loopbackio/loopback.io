@@ -33,7 +33,7 @@ Each user type has access to various parts of the app based on their role and th
 
 ### User access types
 
-LoopBack provides a built-in [User](https://apidocs.strongloop.com/loopback/#user) model with a corresponding [REST API](/doc/{{page.lang}}/lb2/User-REST-API.html) 
+LoopBack provides a built-in [User](https://apidocs.strongloop.com/loopback/#user) model with a corresponding [REST API](User-REST-API.html) 
 that inherits all the "CRUD" (create, read, update, and delete) methods of the [PersistedModel object](https://apidocs.strongloop.com/loopback/#persistedmodel).
 Each CRUD method of the LoopBack User model maps to either the READ or WRITE access type, as follows:
 
@@ -78,7 +78,7 @@ Once you've created this kind of specification, you can easily construct `apic l
 
 ## Using the ACL generator to define access control
 
-The easiest way to define access control for an app is with the [ACL generator](/doc/{{page.lang}}/lb2/ACL-generator.html). 
+The easiest way to define access control for an app is with the [ACL generator](ACL-generator.html). 
 This enables you to create a static definition before runtime. The generator prompts you for all the necessary information:
 
 ```shell
@@ -161,7 +161,7 @@ Each incoming request is mapped to an object with three attributes:
 * accessType - The access type, '**EXECUTE'**, '**READ'**, and '**WRITE'**
 
 ACL rules are described as an array of objects, each of which consists of attributes listed at 
-[Model definition JSON file - ACLs](/doc/{{page.lang}}/lb2/Model-definition-JSON-file.html#acls). 
+[Model definition JSON file - ACLs](Model-definition-JSON-file.html#acls). 
 
 1.  model
 2.  property
@@ -182,7 +182,7 @@ ACL rules are described as an array of objects, each of which consists of attrib
 ### ACL rule precedence
 
 A single model may have several ACLs applied to it: The ACL of the base model (or models) and that of the model itself, defined in the 
-[model definition JSON file](/doc/{{page.lang}}/lb2/Model-definition-JSON-file.html).
+[model definition JSON file](Model-definition-JSON-file.html).
 LoopBack determines the ultimate ACL by _adding_ all the applicable ACLs with precedence rules for permission and access type to resolve any conflicts.
 
 Permission precedence is applied in this order:

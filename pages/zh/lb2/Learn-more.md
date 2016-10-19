@@ -51,10 +51,10 @@ Learn more about:
     *   [Events](https://docs.strongloop.com/display/zh/Events)
     *   [事件](https://docs.strongloop.com/pages/viewpage.action?pageId=8880469)
 
-*   **[AngularJS client](/doc/{{page.lang}}/lb2/Create-AngularJS-client.html) **
-    *   [AngularJS Grunt plugin](/doc/{{page.lang}}/lb2/AngularJS-Grunt-plugin.html)
-    *   [Generating Angular API docs](/doc/{{page.lang}}/lb2/Generating-Angular-API-docs.html)
-    *   [LoopBack Angular Starter example](/doc/{{page.lang}}/lb2/LoopBack-Angular-Starter-example.html)
+*   **[AngularJS client](Create-AngularJS-client.html) **
+    *   [AngularJS Grunt plugin](AngularJS-Grunt-plugin.html)
+    *   [Generating Angular API docs](Generating-Angular-API-docs.html)
+    *   [LoopBack Angular Starter example](LoopBack-Angular-Starter-example.html)
 
 {% include note.html content="
 

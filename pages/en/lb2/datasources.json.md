@@ -75,7 +75,7 @@ All data sources support a few standard properties. Beyond that, specific proper
 
 To connect a model to a data source, follow these steps:
 
-1.  Use the [data source generator](/doc/{{page.lang}}/lb2/Data-source-generator.html) to create a new data source. For example: 
+1.  Use the [data source generator](Data-source-generator.html) to create a new data source. For example: 
 
     ```shell
     $ apic create --type datasource
@@ -119,9 +119,9 @@ To connect a model to a data source, follow these steps:
     $ npm install --save loopback-connector-mysql
     ```
 
-    See [Connectors](/doc/{{page.lang}}/lb2/Connecting-models-to-data-sources.html) for the list of connectors.
+    See [Connectors](Connecting-models-to-data-sources.html) for the list of connectors.
 
-4.  Use the [model generator](/doc/{{page.lang}}/lb2/Using-the-model-generator.html) to create a model.
+4.  Use the [model generator](Using-the-model-generator.html) to create a model.
 
     ```shell
     $ apic create --type model
@@ -152,7 +152,7 @@ The model generator lists the [memory connector](Memory-connector.html), \"no da
 " %}
 
     You can also create models from an existing database.
-    See [Creating models](/doc/{{page.lang}}/lb2/Creating-models.html) for more information.
+    See [Creating models](Creating-models.html) for more information.
 
 ## Environment-specific configuration
 

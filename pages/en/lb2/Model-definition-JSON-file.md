@@ -20,7 +20,7 @@ summary:
 
 ## Overview
 
-The LoopBack [Model generator](/doc/{{page.lang}}/lb2/Model-generator.html) creates a model JSON file for each model in either the `server/models`
+The LoopBack [Model generator](Model-generator.html) creates a model JSON file for each model in either the `server/models`
 or the `common/models` directory (depending on your response to the generator's prompts).
 The file is named `_model-name_.json`, where _`model-name`_ is the model name; for example, `customer.json`.
 The model JSON file defines models, relations between models, and access to models. 
@@ -104,7 +104,7 @@ Properties are required unless otherwise designated.
           <li><code>true</code>:&nbsp;<code>id</code>&nbsp;property is added to the model automatically. This is the default.</li>
           <li><code>false</code>:&nbsp;<code>id</code>&nbsp;property is not added to the model</li>
         </ul>
-        <p>See <a href="/doc/{{page.lang}}/lb2/Model-definition-JSON-file.html">ID properties</a> for more information.</p>
+        <p>See <a href="Model-definition-JSON-file.html">ID properties</a> for more information.</p>
         <p><strong>Optional</strong>; default is <code>true</code>. If present, the <code>idInjection</code> propery in <code>options</code> takes precedence.</p>
       </td>
     </tr>
@@ -135,14 +135,14 @@ Properties are required unless otherwise designated.
       </td>
       <td>Object</td>
       <td>
-        <p>JSON object that specifies model options. See <a href="/doc/{{page.lang}}/lb2/Model-definition-JSON-file.html">Options</a> below.</p>
+        <p>JSON object that specifies model options. See <a href="Model-definition-JSON-file.html">Options</a> below.</p>
       </td>
     </tr>
     <tr>
       <td>properties</td>
       <td>Object</td>
       <td>
-        <p>JSON object that specifies the properties in the model. See <a href="/doc/{{page.lang}}/lb2/Model-definition-JSON-file.html">Properties</a> below.</p>
+        <p>JSON object that specifies the properties in the model. See <a href="Model-definition-JSON-file.html">Properties</a> below.</p>
       </td>
     </tr>
     <tr>
@@ -150,7 +150,7 @@ Properties are required unless otherwise designated.
       <td>Object</td>
       <td>
         <p>Object containing relation names and relation definitions.</p>
-        <p>See <a href="/doc/{{page.lang}}/lb2/Model-definition-JSON-file.html">Relations</a> below.</p>
+        <p>See <a href="Model-definition-JSON-file.html">Relations</a> below.</p>
       </td>
     </tr>
     <tr>
@@ -158,13 +158,13 @@ Properties are required unless otherwise designated.
       <td>Array</td>
       <td>
         <p>Set of&nbsp;<code>ACL</code>&nbsp;specifications that describes access control for the model.</p>
-        <p>See <a href="/doc/{{page.lang}}/lb2/Model-definition-JSON-file.html">ACLs</a> below.</p>
+        <p>See <a href="Model-definition-JSON-file.html">ACLs</a> below.</p>
       </td>
     </tr>
     <tr>
       <td>scopes</td>
       <td>Object</td>
-      <td>See <a href="/doc/{{page.lang}}/lb2/Model-definition-JSON-file.html">Scopes</a> below.</td>
+      <td>See <a href="Model-definition-JSON-file.html">Scopes</a> below.</td>
     </tr>
   </tbody>
 </table>
@@ -210,7 +210,7 @@ You can set `idInjection` here in `options` or at the top-level. The value set h
 
 When a model is attached a data source of certain type such as Oracle or MySQL,
 you can specify the name of the database schema and table as properties under the key with the name of the connector type.
-The value of this key must match the value of the corresponding `connector` property in [datasources.json](/doc/{{page.lang}}/lb2/datasources.json.html).
+The value of this key must match the value of the corresponding `connector` property in [datasources.json](datasources.json.html).
 For example, in the snippet below, there would be an entry in `datasources.json` like this:  `"myDB": { "name": "myDB",  "connector": "mysql", ... }`.
 
 ```javascript
@@ -325,7 +325,7 @@ For example:
       <td>Boolean</td>
       <td>
         <p>Whether the property is a unique identifier. Default is false.</p>
-        <p>See <a href="/doc/{{page.lang}}/lb2/Model-definition-JSON-file.html">Id property</a> below.</p>
+        <p>See <a href="Model-definition-JSON-file.html">Id property</a> below.</p>
       </td>
     </tr>
     <tr>
@@ -352,7 +352,7 @@ For example:
         <p>String</p>
       </td>
       <td>
-        <p>Property type. Can be any type described in <a href="/doc/{{page.lang}}/lb2/LoopBack-types.html">LoopBack types</a>.</p>
+        <p>Property type. Can be any type described in <a href="LoopBack-types.html">LoopBack types</a>.</p>
       </td>
     </tr>
     <tr>
@@ -699,7 +699,7 @@ For example:
     <tr>
       <td>keyThrough</td>
       <td>String</td>
-      <td>Foreign key to be used in a <a href="/doc/{{page.lang}}/lb2/HasMany-relations.html">HasMany relation</a>.</td>
+      <td>Foreign key to be used in a <a href="HasMany-relations.html">HasMany relation</a>.</td>
     </tr>
     <tr>
       <td>
@@ -716,7 +716,7 @@ For example:
       <td>type</td>
       <td>String</td>
       <td>
-        <p>Relation type. Required. See <a href="/doc/{{page.lang}}/lb2/Creating-model-relations.html">Creating model relations</a> for more information.</p>
+        <p>Relation type. Required. See <a href="Creating-model-relations.html">Creating model relations</a> for more information.</p>
         <p>One of:</p>
         <ul>
           <li>hasMany</li>
@@ -948,7 +948,7 @@ var defaultScope = Report.defaultScope;
 
 ## Methods
 
-You can declare remote methods here. Until this feature is implemented, you must declare remote methods in code. See [Remote methods](/doc/{{page.lang}}/lb2/Remote-methods.html).
+You can declare remote methods here. Until this feature is implemented, you must declare remote methods in code. See [Remote methods](Remote-methods.html).
 
 {% include warning.html content="This feature is not yet implemented.
 " %}

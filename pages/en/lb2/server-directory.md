@@ -13,10 +13,10 @@ The `/server` directory contains files that create the backend LoopBack (Node) a
 
 The standard files in this directory are:
 
-* [config.json](/doc/{{page.lang}}/lb2/config.json.html)
-* [datasources.json](/doc/{{page.lang}}/lb2/datasources.json.html)
-* [middleware.json](/doc/{{page.lang}}/lb2/middleware.json.html)
-* [model-config.json](/doc/{{page.lang}}/lb2/model-config.json.html)
-* [server.js](/doc/{{page.lang}}/lb2/server.js.html)
+* [config.json](config.json.html)
+* [datasources.json](datasources.json.html)
+* [middleware.json](middleware.json.html)
+* [model-config.json](model-config.json.html)
+* [server.js](server.js.html)
 
 The `boot` sub-directory contains the following boot scripts by default: `root.js`, `authentication.js`

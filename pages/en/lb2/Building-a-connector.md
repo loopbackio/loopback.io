@@ -13,10 +13,10 @@ summary:
 
 LoopBack provides connectors for:
 
-* Popular relational and NoSQL databases; see [Database connectors](/doc/{{page.lang}}/lb2/Database-connectors.html).
-* Backend systems beyond databases; see [Non-database connectors](/doc/{{page.lang}}/lb2/Non-database-connectors.html).
+* Popular relational and NoSQL databases; see [Database connectors](Database-connectors.html).
+* Backend systems beyond databases; see [Non-database connectors](Non-database-connectors.html).
 
-Also see [Community connectors](/doc/{{page.lang}}/lb2/Community-connectors.html) for a list of connectors developed by the StrongLoop developer community.
+Also see [Community connectors](Community-connectors.html) for a list of connectors developed by the StrongLoop developer community.
 
 {% include important.html content="
 This article is for developers who want to create a new connector type to connect to a data source not currently supported.

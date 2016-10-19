@@ -30,11 +30,11 @@ such as databases and is also the base class for all built-in models (except [Em
 It provides all the standard create, read, update, and delete (CRUD) operations and exposes REST endpoints for them.
 
 By default, LoopBack uses `/api` as the URI root for the REST API. You can change this by changing the `restApiRoot` property in the application `/server/config.json` file.
-See [config.json](/doc/{{page.lang}}/lb2/config.json.html) for more information.
+See [config.json](config.json.html) for more information.
 
 Model REST API endpoints are generally the plural form of the model name. By default this is simply the name with an "s" appended.
 For example, if the model is "car" then "cars" is the plural form.
-You can customize the plural form in the [model definition JSON file](/doc/{{page.lang}}/lb2/Model-definition-JSON-file.html#top-level-properties).
+You can customize the plural form in the [model definition JSON file](Model-definition-JSON-file.html#top-level-properties).
 
 {% include note.html content="
 You can't customize the routes to PersistedModel REST API endpoints.
@@ -155,13 +155,13 @@ Find a model instance by ID from the data source.
 
 `GET /modelName/modelID?filter=[filterType1]=<val1>&filter[filterType2]=<val2>...`
 
-See also [Accessing related models](/doc/{{page.lang}}/lb2/Accessing-related-models.html) for an example of fetching data from related models.
+See also [Accessing related models](Accessing-related-models.html) for an example of fetching data from related models.
 
 ### Arguments
 
 * **modelID** - Model instance ID
 * _filterType1, _filterType2_, and so on, are the filter types. This operation supports only include and fields filters.
-  See [Include filter](/doc/{{page.lang}}/lb2/Include-filter.html) and [Fields filter](/doc/{{page.lang}}/lb2/Fields-filter.html) for more information.
+  See [Include filter](Include-filter.html) and [Fields filter](Fields-filter.html) for more information.
 * _val1_, _val2_ are the corresponding values.
 
 ### Example
@@ -195,7 +195,7 @@ Pass the arguments as the value of the `filter` HTTP query parameters, where:
 * _filterType1_, _filterType2_, and so on, are the filter types.
 * _val1_, _val2_ are the corresponding values.
 
-See [Querying data](/doc/{{page.lang}}/lb2/Querying-data.html) for an explanation of filter syntax.
+See [Querying data](Querying-data.html) for an explanation of filter syntax.
 
 **Example**
 
@@ -239,7 +239,7 @@ Find first instance of the model matched by filter from the data source.
 
 Query parameters:
 
-* **filter** - Filter that defines where, order, fields, skip, and limit. It's same as find's filter argument. See [Querying data](/doc/{{page.lang}}/lb2/Querying-data.html) details.
+* **filter** - Filter that defines where, order, fields, skip, and limit. It's same as find's filter argument. See [Querying data](Querying-data.html) details.
 
 ### Example
 
@@ -286,7 +286,7 @@ Delete model instanced from the data source that match the specified where claus
 
 ### Arguments
 
-* **filter** - Filter that defines where, order, fields, skip, and limit. It's same as find's filter argument. See [Querying data](/doc/{{page.lang}}/lb2/Querying-data.html) details.
+* **filter** - Filter that defines where, order, fields, skip, and limit. It's same as find's filter argument. See [Querying data](Querying-data.html) details.
 
 ### Example
 
@@ -302,7 +302,7 @@ Count instances of the model  from the data source matched by where clause.
 
 ### Arguments
 
-* **where** - criteria to match model instances. See [Where filter](/doc/{{page.lang}}/lb2/Where-filter.html) for more information.
+* **where** - criteria to match model instances. See [Where filter](Where-filter.html) for more information.
 
 ### Example
 
@@ -366,7 +366,7 @@ Update attributes of matching model instances and persist into the data source.
 ### Arguments
 
 * data - An object containing property name/value pairs.
-* _where_ - The where object to select matching instances. See [Where filter](/doc/{{page.lang}}/lb2/Where-filter.html) for more information.
+* _where_ - The where object to select matching instances. See [Where filter](Where-filter.html) for more information.
 
 ### Example
 

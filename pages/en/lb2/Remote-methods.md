@@ -12,7 +12,7 @@ summary:
 ## Overview
 
 A _remote method_ is a static method of a model, exposed over a custom REST endpoint.
-Use a remote method to perform operations not provided by LoopBack's [standard model REST API](/doc/{{page.lang}}/lb2/PersistedModel-REST-API.html).
+Use a remote method to perform operations not provided by LoopBack's [standard model REST API](PersistedModel-REST-API.html).
 
 {% include note.html content="
 The easiest way to define a remote method is by using the command-line [remote method generator](Remote-method-generator.html).
@@ -24,8 +24,8 @@ For an introductory example of defining a remote method, see [Extend your API](E
 
 To define a remote method:
 
-1.  Edit the [Model definition JSON file](/doc/{{page.lang}}/lb2/Model-definition-JSON-file.html) in `/common/models` directory; for example, to attach a remote method to the Person model, edit `/common/models/person.js`.
-If you created the model with the [Model generator](/doc/{{page.lang}}/lb2/Model-generator.html), then this file will already exist.
+1.  Edit the [Model definition JSON file](Model-definition-JSON-file.html) in `/common/models` directory; for example, to attach a remote method to the Person model, edit `/common/models/person.js`.
+If you created the model with the [Model generator](Model-generator.html), then this file will already exist.
 
 {% include important.html content="
 The LoopBack [model generator](Model-generator.html) automatically converts camel-case model names (for example MyModel) to lowercase dashed names (my-model).
@@ -41,7 +41,7 @@ However, the model name (\"FooBar\") will be preserved via the model's name prop
 
 ### Example
 
-See additional introductory examples in [Extend your API](/doc/{{page.lang}}/lb2/Extend-your-API.html).
+See additional introductory examples in [Extend your API](Extend-your-API.html).
 
 Suppose you have a Person model and you want to add a REST endpoint at `/greet` that returns a greeting with a name provided in the request.
 You add this code to `/common/models/person.js`:
@@ -116,7 +116,7 @@ All of the options properties are optional. However, if the remote method requir
         <div class="code panel pdl" style="border-width: 1px;">
           <div class="codeContent panelContent pdl"><pre>Person.greet(name, age, callback)...</pre></div>
           </div>
-        <p>`name` is the first argument, `age` is the second argument and callback is automatically provided by LoopBack (do not specify it in your `accepts` array). For more info, see <a href="/doc/{{page.lang}}/lb2/Remote-methods.html#argument-descriptions">Argument descriptions</a>.</p>
+        <p>`name` is the first argument, `age` is the second argument and callback is automatically provided by LoopBack (do not specify it in your `accepts` array). For more info, see <a href="Remote-methods.html#argument-descriptions">Argument descriptions</a>.</p>
         <p>Default if not provided is the empty array, <code>[]</code>.</p>
       </td>
       <td>
@@ -214,7 +214,7 @@ All of the options properties are optional. However, if the remote method requir
     <tr>
       <td>returns</td>
       <td>
-        <p>Describes the remote method's callback arguments; See&nbsp;<a href="/doc/{{page.lang}}/lb2/Remote-methods.html#argument-descriptions">Argument descriptions</a>. The&nbsp;<code>err </code>argument is assumed; do not specify.</p>
+        <p>Describes the remote method's callback arguments; See&nbsp;<a href="Remote-methods.html#argument-descriptions">Argument descriptions</a>. The&nbsp;<code>err </code>argument is assumed; do not specify.</p>
         <p>Default if not provided is the empty array,  <code>[]</code>.</p>
       </td>
       <td>
@@ -271,7 +271,7 @@ The following table describes the properties of each individual argument.
     <tr>
       <td>http</td>
       <td>Object or Function</td>
-      <td>For input arguments: a function or an object describing mapping from HTTP request to the argument value. See <a href="/doc/{{page.lang}}/lb2/Remote-methods.html">HTTP mapping of input arguments</a> below.</td>
+      <td>For input arguments: a function or an object describing mapping from HTTP request to the argument value. See <a href="Remote-methods.html">HTTP mapping of input arguments</a> below.</td>
     </tr>
     <tr>
       <td>http.target</td>
@@ -300,7 +300,7 @@ The following table describes the properties of each individual argument.
     <tr>
       <td>type</td>
       <td>String</td>
-      <td>Argument datatype; must be a&nbsp;<a href="/doc/{{page.lang}}/lb2/LoopBack-types.html">Loopback type</a>. Additionally, callback arguments allow a special type "file"; see below.</td>
+      <td>Argument datatype; must be a&nbsp;<a href="LoopBack-types.html">Loopback type</a>. Additionally, callback arguments allow a special type "file"; see below.</td>
     </tr>
     <tr>
       <td>default</td>
@@ -520,7 +520,7 @@ So a GET request to `http://localhost:3000/api/people/sayhi?msg=LoopBack%20deve
 
 ## Adding ACLs to remote methods
 
-To constrain access to custom remote methods, use the [ACL generator](/doc/{{page.lang}}/lb2/ACL-generator.html) in the same way you control access to any model API.
+To constrain access to custom remote methods, use the [ACL generator](ACL-generator.html) in the same way you control access to any model API.
 The access type for custom remote methods is Execute.
 
 ### Basic use
@@ -588,7 +588,7 @@ module.exports = function(YourModel) {
 
 ## Formatting remote method responses
 
-You can reformat the response returned by all remote methods by adding a [boot script](/doc/{{page.lang}}/lb2/Defining-boot-scripts.html) 
+You can reformat the response returned by all remote methods by adding a [boot script](Defining-boot-scripts.html) 
 that modifies the object returned by [`app.remotes()`](http://apidocs.strongloop.com/loopback/#app-remotes) as follows:
 
 {% include code-caption.html content="/server/boot/hook.js" %}

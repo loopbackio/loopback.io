@@ -28,7 +28,7 @@ You can persist data between application restarts using the `file` property. See
 
 ## Creating a data source
 
-By default, an application created with the [Application generator](/doc/{{page.lang}}/lb2/Application-generator.html) has a memory data source defined; for example:
+By default, an application created with the [Application generator](Application-generator.html) has a memory data source defined; for example:
 
 {% include code-caption.html content="/server/datasources.json" %}
 ```javascript
@@ -38,7 +38,7 @@ By default, an application created with the [Application generator](/doc/{{page.
 }
 ```
 
-Use the [Data source generator](/doc/{{page.lang}}/lb2/Data-source-generator.html) to add a new memory data source to your application.
+Use the [Data source generator](Data-source-generator.html) to add a new memory data source to your application.
 
 ### Memory connector properties
 

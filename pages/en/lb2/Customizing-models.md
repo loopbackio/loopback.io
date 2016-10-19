@@ -9,8 +9,8 @@ permalink: /doc/en/lb2/Customizing-models.html
 summary:
 ---
 
-Once you've created a model with the [model generator](/doc/{{page.lang}}/lb2/Model-generator.html), you can start customizing it.
-You can customize it using the command-line tool, by editing the [model definition JSON file](/doc/{{page.lang}}/lb2/Model-definition-JSON-file.html), and by adding JavaScript code.
+Once you've created a model with the [model generator](Model-generator.html), you can start customizing it.
+You can customize it using the command-line tool, by editing the [model definition JSON file](Model-definition-JSON-file.html), and by adding JavaScript code.
 
 ## Customizing a model with the command-line tool
 
@@ -21,14 +21,14 @@ However, you can customize the model to some degree with the command-line tool; 
 
 You can use the command-line tool to customize a model after you initially create it; specifically, you can:
 
-* Use the [property generator](/doc/{{page.lang}}/lb2/Property-generator.html) to add a property to the model.
-* Use the [relation generator](/doc/{{page.lang}}/lb2/Relation-generator.html) to add [add relations between models](/doc/{{page.lang}}/lb2/Creating-model-relations.html).
-* Use [ACL generator](/doc/{{page.lang}}/lb2/ACL-generator.html) to add [access control](/doc/{{page.lang}}/lb2/Controlling-data-access.html) to the model.
+* Use the [property generator](Property-generator.html) to add a property to the model.
+* Use the [relation generator](Relation-generator.html) to add [add relations between models](Creating-model-relations.html).
+* Use [ACL generator](ACL-generator.html) to add [access control](Controlling-data-access.html) to the model.
 
 ## Customizing a model using JSON
 
 You can customize a number of aspects of a model by simply editing the
-[model definition JSON file](/doc/{{page.lang}}/lb2/Model-definition-JSON-file.html) in `common/models` (for example, `customer.json`), which by default looks like this:
+[model definition JSON file](Model-definition-JSON-file.html) in `common/models` (for example, `customer.json`), which by default looks like this:
 
 {% include code-caption.html content="common/models/model.json" %}
 ```javascript
@@ -47,13 +47,13 @@ You can customize a number of aspects of a model by simply editing the
 
 LoopBack _adds_ the settings in the the model JSON file to those of the base model.
 In most cases, this is straightforward, but for ACL settings there can be complex interactions since some ACL settings take precedence over others.
-For more information, see [ACL rule precedence](/doc/{{page.lang}}/lb2/Controlling-data-access.html#acl-rule-precedence) for more information.
+For more information, see [ACL rule precedence](Controlling-data-access.html#acl-rule-precedence) for more information.
 
 ### Extending another model
 
 You can make a model extend or "inherit from" an existing model, either one of the built-in models such as User, or a custom model you've defined in your application.
-To do this with the [model generator](/doc/{{page.lang}}/lb2/Model-generator.html), simply choose the desired model when you're prompted to "Select model's base class".
-Alternatively,  you can edit the [Model definition JSON file](/doc/{{page.lang}}/lb2/Model-definition-JSON-file.html) and set the "base" property to the name of the model you want to extend.
+To do this with the [model generator](Model-generator.html), simply choose the desired model when you're prompted to "Select model's base class".
+Alternatively,  you can edit the [Model definition JSON file](Model-definition-JSON-file.html) and set the "base" property to the name of the model you want to extend.
 
 {% include note.html content="
 In general, use `PersistedModel` as the base model when you want to store your data in a database using a connector such as MySQL or MongoDB.  Use `Model` as the base for models that don't have CRUD semantics, for example, using connectors such as SOAP and REST.
@@ -78,7 +78,7 @@ Currently you cannot modify a built-in model's required properties. If you need 
 
 You can create custom models that extend from a single base custom model.
 For example, to define a model called `MyModel` that extends from a custom model you defined called `mMyBaseModel`,
-create MyModel using [model generator](/doc/{{page.lang}}/lb2/Model-generator.html) 
+create MyModel using [model generator](Model-generator.html) 
 then edit the JSON file `common/models/MyModel.json` as follows:
 
 {% include code-caption.html content="/common/models/model.json" %}
@@ -104,7 +104,7 @@ You can add new properties when you extend a model, for example:
 }
 ```
 
-See [LoopBack types](/doc/{{page.lang}}/lb2/LoopBack-types.html) for information on data types supported.
+See [LoopBack types](LoopBack-types.html) for information on data types supported.
 
 ### Customizing other model settings
 
@@ -116,24 +116,24 @@ Here are some of the most important settings you can customize:
 * **idInjection** - Whether to automatically add an id property to the model. True by default.
 * **http.path** - customized HTTP path of REST endpoints.
 
-See [Model definition JSON file](/doc/{{page.lang}}/lb2/Model-definition-JSON-file.html#top-level-properties) for more information.
+See [Model definition JSON file](Model-definition-JSON-file.html#top-level-properties) for more information.
 
 ## Customizing a model with JavaScript code
 
 The basic way to extend a model programmatically is to edit the model's JavaScript file in the `common/models/` directory.
 For example, a "customer" model will have a `common/models/customer.js` file (if you create the model using the 
-[model generator](/doc/{{page.lang}}/lb2/Model-generator.html)).
+[model generator](Model-generator.html)).
 The script is executed immediately after the model is defined.
 Treat the script as part of the model definition; use it for model configuration and registration.
 You could also add model relationships, complex validations, or default functions for certain properties: Basically, anything you cannot do in JSON.
 However, note that at this point the script doesn't have access to the app instance.  
 
-You can also extend a model by adding a [remote method](/doc/{{page.lang}}/lb2/Remote-methods.html) or an  [operation hook](/doc/{{page.lang}}/lb2/Operation-hooks.html).
+You can also extend a model by adding a [remote method](Remote-methods.html) or an  [operation hook](Operation-hooks.html).
 
 If you don't want to expose the method over REST, then just omit the `remoteMethod()` call.
 
-See [Adding application logic](/doc/{{page.lang}}/lb2/Adding-application-logic.html) for more information on customizing a model using JavaScript.
-See [LoopBack types](/doc/{{page.lang}}/lb2/LoopBack-types.html) for information on data types supported.
+See [Adding application logic](Adding-application-logic.html) for more information on customizing a model using JavaScript.
+See [LoopBack types](LoopBack-types.html) for information on data types supported.
 
 ### Change the implementation of built-in methods
 

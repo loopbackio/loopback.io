@@ -16,7 +16,7 @@ Loopback provides useful built-in models for common use cases:
 * **[Application model](#application-model)** - contains metadata for a client application that has its own identity and associated configuration with the LoopBack server.
 * **[User model](#user-model)** - register and authenticate users of your app locally or against third-party services.
 * **[Access control models](#access-control-models)** - ACL, AccessToken, Scope, Role, and RoleMapping models for controlling access to applications, resources, and methods.
-* **Email model (see [email connector](/doc/{{page.lang}}/lb2/Email-connector.html))** - send emails to your app users using SMTP or third-party services.
+* **Email model (see [email connector](Email-connector.html))** - send emails to your app users using SMTP or third-party services.
 
 The built-in models (except for Email) extend [PersistedModel](http://apidocs.strongloop.com/loopback/#persistedmodel),
 so they automatically have a full complement of create, update, and delete (CRUD) operations.
@@ -43,7 +43,7 @@ You must create your own custom model (named something other than \"User,\" for 
 LoopBack does not support multiple models based on the User model in a single application. That is, you cannot have more than one model derived from the built-in User model in a single app.
 " %}
 
-For more information, see [Managing users](/doc/{{page.lang}}/lb2/Managing-users.html).
+For more information, see [Managing users](Managing-users.html).
 
 ## Access control models
 

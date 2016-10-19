@@ -8,7 +8,7 @@ sidebar: lb2_sidebar
 permalink: /doc/en/lb2/index.html
 summary: LoopBack is a highly-extensible, open-source Node.js framework that enables you to&#58; <ul><li>Create dynamic end-to-end REST APIs with little or no coding.</li><li>Access data from major relational and NoSQL databases, SOAP and REST APIs.</li><li>Incorporate model relationships and access controls for complex APIs.</li></ul>
 ---
-Read [LoopBack core concepts](/doc/{{page.lang}}/lb2/LoopBack-core-concepts.html) to learn about key concepts you need to understand to use LoopBack.
+Read [LoopBack core concepts](LoopBack-core-concepts.html) to learn about key concepts you need to understand to use LoopBack.
 
 Follow [Getting started with LoopBack](Getting-started-with-LoopBack.html) for a quick tutorial introduction.
 
@@ -24,7 +24,7 @@ content="
 -  **Built-in security and gateway policies** with extensive security options and governance policies.
 
 For more information, see [IBM API Connect](https://developer.ibm.com/apiconnect/).
-" %}    
+" %}
 
 **If you are an IBM customer, for technical support see the [IBM Support Portal](http://www-01.ibm.com/support/docview.wss?uid=swg21593214).**
 
@@ -32,11 +32,11 @@ For more information, see [IBM API Connect](https://developer.ibm.com/apiconnect
 
 The LoopBack framework is a set of Node.js modules that you can use independently or together to quickly build REST APIs.
 
-A LoopBack application interacts with data sources through the LoopBack model API, available locally within Node.js, [remotely over REST](/doc/{{page.lang}}/lb2/Built-in-models-REST-API), and via native client APIs for
-[iOS, Android, and HTML5](/doc/{{page.lang}}/lb2/Client-SDKs). Using these APIs, apps can query databases,
+A LoopBack application interacts with data sources through the LoopBack model API, available locally within Node.js, [remotely over REST](Built-in-models-REST-API), and via native client APIs for
+[iOS, Android, and HTML5](Client-SDKs). Using these APIs, apps can query databases,
 store data, upload files, send emails, create push notifications, register users, and perform other actions provided by data sources and services.
 
-Clients can call LoopBack APIs directly using [Strong Remoting](/doc/{{page.lang}}/lb2/Strong-Remoting.html), a pluggable transport layer that enables you to provide backend APIs over REST, WebSockets, and other transports.
+Clients can call LoopBack APIs directly using [Strong Remoting](Strong-Remoting.html), a pluggable transport layer that enables you to provide backend APIs over REST, WebSockets, and other transports.
 
 The following diagram illustrates key LoopBack modules, how they are related, and their dependencies.
 
@@ -84,7 +84,7 @@ The following diagram illustrates key LoopBack modules, how they are related, an
       <td>Enable connections to RDBMS and noSQL data sources and get back an abstracted model.</td>
       <td markdown="1">
 - loopback-connector-mongodb
-- loopback-connector-mysql   
+- loopback-connector-mysql
 - loopback-connector-postgresql
 - loopback-connector-msssql
 - loopback-connector-oracle
@@ -96,7 +96,7 @@ The following diagram illustrates key LoopBack modules, how they are related, an
       <td>General system connectors</td>
       <td>Connect to an existing system that expose APIs through common enterprise and web interfaces</td>
       <td markdown="1">
-- loopback-connector-rest   
+- loopback-connector-rest
 - loopback-connector-soap
 </td>
     </tr>
@@ -106,7 +106,7 @@ The following diagram illustrates key LoopBack modules, how they are related, an
       <td>Integrate with pre-built services packaged into components.</td>
       <td markdown="1">
 - loopback-component-push
-- loopback-component-storage  
+- loopback-component-storage
 - loopback-component-passport
 </td>
     </tr>

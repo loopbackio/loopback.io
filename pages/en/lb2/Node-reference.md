@@ -9,9 +9,9 @@ permalink: /doc/en/lb2/Node-reference.html
 summary:
 ---
 
-* [LoopBack types](/doc/{{page.lang}}/lb2/LoopBack-types.html)
-* [Valid names in LoopBack](/doc/{{page.lang}}/lb2/Valid-names-in-LoopBack.html)
-* [Basic model object](/doc/{{page.lang}}/lb2/Basic-model-object.html)
-* [Connected model object](/doc/{{page.lang}}/lb2/Connected-model-object.html)
-* [Error object](/doc/{{page.lang}}/lb2/Error-object.html)
-* [LoopBack middleware](/doc/{{page.lang}}/lb2/LoopBack-middleware.html)
+* [LoopBack types](LoopBack-types.html)
+* [Valid names in LoopBack](Valid-names-in-LoopBack.html)
+* [Basic model object](Basic-model-object.html)
+* [Connected model object](Connected-model-object.html)
+* [Error object](Error-object.html)
+* [LoopBack middleware](LoopBack-middleware.html)

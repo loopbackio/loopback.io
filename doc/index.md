@@ -20,7 +20,7 @@ This site contains documentation for:
 - [LoopBack 2.x](en/lb2) - Current release
 - [LoopBack 3.0](en/lb3) - Upcoming release.
 - [Contributing to LoopBack](en/contrib/) - How you can contribute to the LoopBack project.
-- [Community projects](community) - Where Loopback developers can promote and explain their LoopBack-related  projects.
+- [Community projects](en/community) - Where Loopback developers can promote and explain their LoopBack-related  projects.
 
 ## LoopBack
 
@@ -37,7 +37,8 @@ LoopBack is a highly-extensible, open-source Node.js framework that enables you 
 
 **LoopBack documentation has moved from `docs.strongloop.com` to this site!**
 
-Content on this site is sourced in [GitHub](https://github.com/strongloop/loopback.io/blob/gh-pages/pages/) to enable the open-source community to contribute.  For more information, see [Contributing to LoopBack documentation](en/contrib/).
+Content on this site is sourced in [GitHub](https://github.com/strongloop/loopback.io/blob/gh-pages/pages/) to enable the open-source community to contribute.
+For more information, see [Contributing to LoopBack documentation](en/contrib/).
 
 This site is based on Tom Johnson's [Documentation Jekyll theme](https://github.com/tomjohnson1492/documentation-theme-jekyll).
 

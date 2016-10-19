@@ -18,11 +18,11 @@ $ npm install loopback-component-push --save
 ```
 
 This will install the module from npm and add it as a dependency to the application's 
-[package.json](/doc/{{page.lang}}/lb2/package.json.html) file.
+[package.json](package.json.html) file.
 
 ## Creating a push data source
 
-Create a new push data source with the [data source generator](/doc/{{page.lang}}/lb2/Data-source-generator.html):
+Create a new push data source with the [data source generator](Data-source-generator.html):
 
 ```shell
 $ apic create --type datasource
@@ -67,7 +67,7 @@ For example as shown in the [push example](https:/github.com/strongloop/loopback
 
 ## Defining a push model
 
-Then define a push model in the [Model definition JSON file](/doc/{{page.lang}}/lb2/Model-definition-JSON-file.html), for example:
+Then define a push model in the [Model definition JSON file](Model-definition-JSON-file.html), for example:
 
 {% include code-caption.html content="/server/models/push.json" %}
 ```javascript

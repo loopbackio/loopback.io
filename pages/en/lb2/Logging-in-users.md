@@ -21,7 +21,7 @@ summary:
 Login (authenticate) a user by calling the [`User.login()`](http://apidocs.strongloop.com/loopback/#user-login) method and providing an object
 containing `password` and `email or username` properties as the first parameter. The method returns an access token.
 
-This example creates a route in [boot script](/doc/{{page.lang}}/lb2/Defining-boot-scripts.html) to handle login request:
+This example creates a route in [boot script](Defining-boot-scripts.html) to handle login request:
 
 {% include code-caption.html content="/server/boot/routes.js" %}
 ```javascript
@@ -115,7 +115,7 @@ For example:
 }
 ```
 
-See [User REST API](/doc/{{page.lang}}/lb2/User-REST-API.html#log-in-user) for more information.
+See [User REST API](User-REST-API.html#log-in-user) for more information.
 
 ### Logging out
 
@@ -164,13 +164,13 @@ http://localhost:3000/api/users/logout
 curl -X VERB http://localhost:3000/api/users/logout?access_token=$ACCESS_TOKEN
 ```
 
-See [User REST API](/doc/{{page.lang}}/lb2/User-REST-API.html#log-out-user) for more information.
+See [User REST API](User-REST-API.html#log-out-user) for more information.
 
 ## Login using third-party systems
 
 Instead of using LoopBack's user system, you can integrate with a third-party system that supports OAuth, such as Google, Facebook, or Twitter.
 
-For more information, see [Third-party login using Passport](/doc/{{page.lang}}/lb2/Third-party-login-using-Passport.html).
+For more information, see [Third-party login using Passport](Third-party-login-using-Passport.html).
 
 ## Resetting a user's password
 
@@ -257,4 +257,4 @@ For a complete example, see [routes.js](https://github.com/strongloop/loopback-e
 in [loopback-example-user-management](https://github.com/strongloop/loopback-example-user-management).
 
 Over REST, use the `POST /users/reset` endpoint. It returns `200 OK` for a successful request.
-See [User REST API](/doc/{{page.lang}}/lb2/User-REST-API.html#reset-password) for more information.
+See [User REST API](User-REST-API.html#reset-password) for more information.

@@ -16,7 +16,7 @@ So even if your model has DENY ALL permissions set, if the model relating to it 
 
 ## Restricting access to related models
 
-When two models have a relationship between them (see [Creating model relations](/doc/{{page.lang}}/lb2/Creating-model-relations.html)),
+When two models have a relationship between them (see [Creating model relations](Creating-model-relations.html)),
 LoopBack automatically creates a set of _related model methods_ corresponding to the API routes defined for the relationship.
 
 In the following list, _modelName_ is the name of the related model and _modelNamePlural_ is the plural form of the related model name. 
@@ -111,9 +111,9 @@ When querying a model, you may also want to return data from its related models.
 
 For example, suppose you have three models: `User`, `Report`, and `LineItem`, where:
 
-* A user can have many reports; that is, there is a [HasMany relation](/doc/{{page.lang}}/lb2/HasMany-relations.html) 
+* A user can have many reports; that is, there is a [HasMany relation](HasMany-relations.html) 
   between `User` and `Report` (User hasMany Report).
-* A report can have many line items; that is, there is a [HasMany relation](/doc/{{page.lang}}/lb2/HasMany-relations.html) 
+* A report can have many line items; that is, there is a [HasMany relation](HasMany-relations.html) 
   between `Report` and `Lineitem` (Report hasMany LineItem).
 
 Additionally, the ReportModel is configured with the following ACLs so that authenticated users can create new records and users can update their own records:

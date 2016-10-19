@@ -110,7 +110,7 @@ For examples of these in use, see [boot scripts in loopback-example-relations](h
 
 ### Operation hooks
 
-You can define `before save` and `after save` [operation hooks](/doc/{{page.lang}}/lb2/Operation-hooks.html) for an embedded model in an embedsOne relation.
+You can define `before save` and `after save` [operation hooks](Operation-hooks.html) for an embedded model in an embedsOne relation.
 Then, updating or creating an instance of the container model will trigger the operation hook on the embedded model.
 When this occurs, `ctx.isNewInstance` is false, because only a new instance of the container model is created.
 
@@ -217,7 +217,7 @@ Customer.embedsOne(EmailAddress, {
 
 ### Operation hooks
 
-You can define `before save` and `after save` [operation hooks](/doc/{{page.lang}}/lb2/Operation-hooks.html) for an embedded model in an embedsMany relation.
+You can define `before save` and `after save` [operation hooks](Operation-hooks.html) for an embedded model in an embedsMany relation.
 Then, updating or creating an instance of the container model will trigger the operation hook on the embedded model.
 When this occurs, `ctx.isNewInstance` is false, because only a new instance of the container model is created.
 

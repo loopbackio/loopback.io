@@ -11,7 +11,7 @@ summary:
 
 ## Обзор
 
-LoopBack модели автоматически имеют [стандартный набор HTTP эндпоинтов](http://apidocs.strongloop.com/loopback/#persistedmodel), который обеспечивает REST APIs операциями CRUD для работы с данными: создание, чтение, обновление и удаление.  Публичные свойства  в [model-config.json](/doc/ru/lb2/model-config.json.html) указывают следует ли использовать REST APIs  в модели, например:
+LoopBack модели автоматически имеют [стандартный набор HTTP эндпоинтов](http://apidocs.strongloop.com/loopback/#persistedmodel), который обеспечивает REST APIs операциями CRUD для работы с данными: создание, чтение, обновление и удаление.  Публичные свойства  в [model-config.json](model-config.json.html) указывают следует ли использовать REST APIs  в модели, например:
 
 **/server/model-config.json**
 
@@ -31,7 +31,7 @@ LoopBack модели автоматически имеют [стандартн�
 По умолчанию REST APIs используют множественную форму имени модели; а именно:
 
 *   `Model.settings.http.path`
-*   `Model.settings.plural`, if defined in `models.json`; см [Справочник по компоновки проекта](/doc/ru/lb2/Project-layout-reference.html) для получения более детальной информации.
+*   `Model.settings.plural`, if defined in `models.json`; см [Справочник по компоновки проекта](Project-layout-reference.html) для получения более детальной информации.
 *   Автоматически множественное имя модели (по умолчанию). например, если у вас есть модель - location, по умолчанию она монтируется на  `/locations`. 
 
 ### Использование маршрутизатора REST
@@ -59,7 +59,7 @@ After this, the `Product` model will have create, read, update, and delete (CR
 
 You can then view generated REST documentation at [http://localhost:3000/explorer](http://localhost:3000/explorer)[.](http://localhost:3000/_docs)
 
-LoopBack provides a number of [Built-in models](/doc/ru/lb2/-.html) that have REST APIs.  See [Built-in models REST API](/doc/ru/lb2/Built-in-models-REST-API.html) for more information.
+LoopBack provides a number of [Built-in models](-.html) that have REST APIs.  See [Built-in models REST API](Built-in-models-REST-API.html) for more information.
 
 ### Формат запроса
 
@@ -229,7 +229,7 @@ As an example, consider a simple model called `Location` (that provides busine
   </tbody>
 </table>
 
-The above API follows the standard LoopBack model REST API that most built-in models extend.  See [PersistedModel REST API](/doc/ru/lb2/PersistedModel-REST-API.html) for more details.
+The above API follows the standard LoopBack model REST API that most built-in models extend.  See [PersistedModel REST API](PersistedModel-REST-API.html) for more details.
 
 ## Обнаружение модели
 

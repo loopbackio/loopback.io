@@ -42,7 +42,7 @@ See also [https://github.com/pasindud/awesome-loopback](https://github.com/pasin
     <tr>
       <td><a href="http://kafka.apache.org/" class="external-link" rel="nofollow">Apache Kafka</a></td>
       <td><a href="https://www.npmjs.org/package/loopback-connector-kafka" class="external-link" rel="nofollow">loopback-connector-kafka</a></td>
-      <td>Provided as option by <a href="/doc/{{page.lang}}/lb2/Data-source-generator.html">data source generator</a>.</td>
+      <td>Provided as option by <a href="Data-source-generator.html">data source generator</a>.</td>
     </tr>
     <tr>
       <td><a href="https://www.arangodb.com/" class="external-link" rel="nofollow">ArangoDB</a></td>
@@ -68,7 +68,7 @@ See also [https://github.com/pasindud/awesome-loopback](https://github.com/pasin
       <td><a href="http://neo4j.com/" class="external-link" rel="nofollow">Neo4j</a></td>
       <td><a href="https://www.npmjs.org/package/loopback-connector-neo4j" class="external-link" rel="nofollow">loopback-connector-neo4j</a></td>
       <td>
-        <p><span>Provided as option by </span> <a href="/doc/{{page.lang}}/lb2/Data-source-generator.html">data source generator</a><span>.</span></p>
+        <p><span>Provided as option by </span> <a href="Data-source-generator.html">data source generator</a><span>.</span></p>
         <p><span>NOTE: This connector has <a href="https://groups.google.com/forum/#!topic/loopbackjs/HONEM1S3CnU" class="external-link" rel="nofollow">known issues</a>.</span></p>
       </td>
     </tr>
@@ -85,7 +85,7 @@ See also [https://github.com/pasindud/awesome-loopback](https://github.com/pasin
     <tr>
       <td><a href="http://hana.sap.com/abouthana.html" class="external-link" rel="nofollow">SAP HANA</a></td>
       <td><a href="https://www.npmjs.org/package/loopback-connector-saphana" class="external-link" rel="nofollow">loopback-connector-saphana</a></td>
-      <td><span>Provided as option by </span> <a href="/doc/{{page.lang}}/lb2/Data-source-generator.html">data source generator</a><span>.</span></td>
+      <td><span>Provided as option by </span> <a href="Data-source-generator.html">data source generator</a><span>.</span></td>
     </tr>
     <tr>
       <td><a href="http://www.sqlite.org/" class="external-link" rel="nofollow">SQLite</a></td>

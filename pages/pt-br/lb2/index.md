@@ -8,7 +8,7 @@ tags:
 permalink: /doc/pt-br/lb2/index.html
 summary: Por favor, ajudar a traduzir a documentação em Português.
 ---
-Leia [Conceitos básicos de LoopBack](/doc/{{page.lang}}/lb2/LoopBack-core-concepts.html) para entender sobre conceitos-chave de utilização do framework.
+Leia [Conceitos básicos de LoopBack](LoopBack-core-concepts.html) para entender sobre conceitos-chave de utilização do framework.
 
 Grupo de discussão: [LoopBack Developer Forum](https://groups.google.com/forum/#!forum/loopbackjs).
 
@@ -30,9 +30,9 @@ Consulte [IBM API Connect](https://developer.ibm.com/apiconnect/) para mais info
 
 O framework LoopBack é um conjunto de módulos em Node.js que podem ser usados de forma independente ou em conjunto para construir rapidamente APIs REST.
 
-Uma aplicação LoopBack interage com fonte de dados por meio da API de modelo LoopBack, disponível localmente no Node.js, [remotely over REST](/doc/{{page.lang}}/lb2/Built-in-models-REST-API), e via cliente nativo APIs para [iOS, Android, e HTML5](/doc/{{page.lang}}/lb2/Client-SDKs). Usando essas APIs, apps podem consultar bancos de dados, armazenar dados, upload de arquivos, enviar e-mails, criar notificações push, registrar usuários e executar outras ações fornecidas pelos serviços e fonte de dados.
+Uma aplicação LoopBack interage com fonte de dados por meio da API de modelo LoopBack, disponível localmente no Node.js, [remotely over REST](Built-in-models-REST-API), e via cliente nativo APIs para [iOS, Android, e HTML5](Client-SDKs). Usando essas APIs, apps podem consultar bancos de dados, armazenar dados, upload de arquivos, enviar e-mails, criar notificações push, registrar usuários e executar outras ações fornecidas pelos serviços e fonte de dados.
 
-Clientes podem chamar APIs LoopBack diretamente usando [Strong Remoting](/doc/{{page.lang}}/lb2/Strong-Remoting.html), uma conexão automática da camada de transporte, permite que você forneça métodos back-end da API em REST, WebSockets, e outros transportes.
+Clientes podem chamar APIs LoopBack diretamente usando [Strong Remoting](Strong-Remoting.html), uma conexão automática da camada de transporte, permite que você forneça métodos back-end da API em REST, WebSockets, e outros transportes.
 
 O diagrama a seguir ilustra os principais módulos do LoopBack, e como eles estão relacionados, e suas dependências.
 
@@ -41,7 +41,7 @@ O diagrama a seguir ilustra os principais módulos do LoopBack, e como eles est�
 ### LoopBack framework modules
 
 |  Category  |  Description |  Use to... |  Modules
-|  ------------- |  ------------- |  -------------- |  --------------|  
+|  ------------- |  ------------- |  -------------- |  --------------|
 | Models | Model and API server| Dynamically mock-up models and expose them as APIs without worrying about persisting. | loopback |
 | Abstraction | Model data abstraction to physical persistence| Connect to multiple data sources or services and get back an abstracted model with CRUD capabilities independent on how it is physically stored. |  loopback-datasource-juggler |
 | Initialization | Application initialization | Configure data-sources, custom models, configure models and attach them to data sources; Configure application settings and run custom boot scripts. | loopback-boot |
