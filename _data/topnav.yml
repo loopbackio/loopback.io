@@ -36,6 +36,8 @@ topnav_dropdowns:
           external_url: https://strongloop.com/strongblog/category/loopback-2/
     - title: Translations
       folderitems:
+        - title: "Español"
+          url: /doc/es/lb2/
         - title: "Français"
           url: /doc/fr/lb2/
         - title: "한국어"
