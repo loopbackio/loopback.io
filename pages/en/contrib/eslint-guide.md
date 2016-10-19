@@ -50,7 +50,6 @@ Commit with message `Add eslint infrastructure`.
 
 Once you set up `eslint` infrastructure, the following steps automatically will eliminate most linting errors, such as comma-dangle errors:
 
-- Copy [comma-dangle.js]( https://raw.githubusercontent.com/maury91/eslint/b58cd73c2825a1f71f07a2869c1968472509cc83/lib/rules/comma-dangle.js to `/node_modules/eslint/lib/rules/comma-dangle.js).  It will enable `eslint --fix` for `comma-dangle` rule.
 - In a command terminal, go to repo and run following command:
   `./node_modules/.bin/eslint --fix .`
 
