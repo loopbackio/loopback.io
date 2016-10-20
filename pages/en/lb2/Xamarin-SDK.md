@@ -2,14 +2,16 @@
 title: "Xamarin SDK"
 lang: en
 layout: page
+toc: false
 keywords: LoopBack
 tags:
 sidebar: lb2_sidebar
 permalink: /doc/en/lb2/Xamarin-SDK.html
 summary:
 ---
-
 {% include content/strongloop-labs.html lang=page.lang %}
+
+{% include toc.html %}
 
 ## Introduction
 

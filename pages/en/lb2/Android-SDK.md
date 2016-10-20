@@ -13,6 +13,7 @@ summary:
 {% include content/strongloop-labs.html lang=page.lang %}
 
 {% include see-also.html content="
+* [Download Android SDK](http://81b70ddedaf4b27b1592-b5e75689411476c98957e7dab0242f50.r56.cf2.rackcdn.com/loopback-sdk-android-1.5.3-eclipse-bundle.zip)
 * [Android SDK API docs](http://apidocs.strongloop.com/loopback-sdk-android/api/index.html)
 * [loopback-android-getting-started](https://github.com/strongloop/loopback-android-getting-started)
 " %}
@@ -23,7 +24,9 @@ The Android SDK provides a simple Java API that enables your Android app to acce
 LoopBack server application.
 It enables you to interact with your models and data sources in a comfortable native manner instead of using clunky interfaces like `AsyncHttpClient`, `JSONObject`. 
 
-**[Download Android SDK](http://81b70ddedaf4b27b1592-b5e75689411476c98957e7dab0242f50.r56.cf2.rackcdn.com/loopback-sdk-android-1.5.3-eclipse-bundle.zip)**
+<div markdown="1" style="height: 60px; line-height: 60px; margin: 15px auto 0 auto; width: 220px; border: 1px solid #aaa; background-color: #D6E7D6; font-weight: bold;" align="center">
+[Download Android SDK](http://81b70ddedaf4b27b1592-b5e75689411476c98957e7dab0242f50.r56.cf2.rackcdn.com/loopback-sdk-android-1.5.3-eclipse-bundle.zip)
+</div>
 
 {% include warning.html content="
 Please ensure you have the latest version (1.5) of the Android SDK.

@@ -9,8 +9,7 @@ permalink: /doc/en/lb2/AngularJS-JavaScript-SDK.html
 summary:
 ---
 
-{% include note.html content="
-The LoopBack AngularJS SDK is installed when you [installing StrongLoop tools](Installing-StrongLoop.html).
+{% include note.html content="To install the LoopBack AngularJS SDK, [install StrongLoop tools](Installing-StrongLoop.html).
 " %}
 
 {% include important.html content="The AngularJS SDK requires Angular version 1.2.0 or newer.
@@ -25,9 +24,7 @@ The LoopBack AngularJS SDK has three major components:
 
 * Auto-generated AngularJS services, compatible with [`ngResource.$resource`](http://docs.angularjs.org/api/ngResource.%24resource),
   that provide client-side representation of the models and remote methods in the LoopBack server application.
-* Command-line tools:
-  * `lb-ng` that generates Angular $resource services for your LoopBack application.
-
+* The `lb-ng` command-line tool that generates Angular $resource services for your LoopBack application.
 * A Grunt plugin ([grunt-loopback-sdk-angular](https://github.com/strongloop/grunt-loopback-sdk-angular)), if you want to use Grunt instead of `lb-ng`.
 
 The client is dynamic, in other words it automatically includes all the LoopBack models and methods you've defined.

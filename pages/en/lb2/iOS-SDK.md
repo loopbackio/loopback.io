@@ -18,7 +18,8 @@ summary:
 The LoopBack iOS SDK eliminates the need to use the clunky `NSURLRequest` and similar interfaces to interact with a LoopBack-based backend.
 Instead, interact with your models and data sources in a comfortable, first-class, native manner.
 
-**[Download iOS SDK](http://81b70ddedaf4b27b1592-b5e75689411476c98957e7dab0242f50.r56.cf2.rackcdn.com/LoopBackFramework-1.3.0-31.tar.gz)**
+<div markdown="1" style="height: 60px; line-height: 60px; margin: 15px auto 0 auto; width: 220px; border: 1px solid #aaa; background-color: #D6E7D6; font-weight: bold;" align="center">[Download iOS SDK](http://81b70ddedaf4b27b1592-b5e75689411476c98957e7dab0242f50.r56.cf2.rackcdn.com/LoopBackFramework-1.3.0-31.tar.gz)
+</div>
 
 ### Prerequisites
 
@@ -35,7 +36,7 @@ The guide app comes ready to compile with XCode, and each tab in the app guides 
 
 {% include image.html file="9830431.png" alt="" max-width="200" %}
 {% include image.html file="9830430.png" alt="" max-width="200" %}
-{% include image.html file="9830426.png" alt="" max-width="200" %} 
+{% include image.html file="9830426.png" alt="" max-width="200" %}
 
 From your usual projects directory:
 
