@@ -105,8 +105,8 @@ In general, a property will have `undefined` value if no explicit or default v
 LoopBack supports array types as follows:
 
 * `{emails: [String]}`
-* `{"emails": ["String"]}`
-* `{"emails": [{"type": "String", "length": 64}]}`
+* `{"emails": ["string"]}`
+* `{"emails": [{"type": "string", "length": 64}]}`
 * `{"emails": "array"}` (a shorthand notation for `{"emails": ["any"]}`)
 
 ### Array of objects
