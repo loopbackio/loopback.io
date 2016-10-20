@@ -125,6 +125,14 @@ children:
     output: web, pdf
 
     children:
+    - title: README layout
+      url: /doc/en/contrib/readmes.html
+      output: web, pdf
+
+    - title: Navgroup layout
+      url: /doc/en/contrib/navgroups.html
+      output: web, pdf
+
     - title: Glossary layout
       url: /doc/en/contrib/glossary.html
       output: web, pdf

@@ -52,6 +52,9 @@ To improve performance during login and user creation, try installing native [bc
 $ npm install --save bcrypt
 ```
 
+{% include warning.html content="To run this package, you must [install compiler tools](Installing-compiler-tools.html) on your system, since it's a binary package.
+" %}
+
 ## Understanding the built-in User model
 
 By default, a LoopBack application has a [built-in User model](Using-built-in-models.html) 
