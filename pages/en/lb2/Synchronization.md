@@ -118,17 +118,19 @@ For example:
   "strict": "validate",
   "trackChanges": true,
   "persistUndefinedAsNull": true,
-  "id": {
-    "id": true,
-    "type": "string",
-    "defaultFn": "guid"
-  },
-  "title": {
-    "type": "string",
-    "required": true
-  },
-  "description": {
-    "type": "string"
+  "properties" : {
+    "id": {
+      "id": true,
+      "type": "string",
+      "defaultFn": "guid"
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "string"
+    }
   }
 }
 ```
