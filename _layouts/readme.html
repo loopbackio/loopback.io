@@ -1,10 +1,11 @@
 ---
 layout: page
-toc: false
+toc: 'false'
 ---
 <style>
 h1:not(.post-title-main) { display: none; }
 </style>
+
 {% if page.source %}
   {% if page.branch %}
     {% assign repo-branch = page.source | append: '/tree/' | append: page.branch %}
@@ -16,11 +17,15 @@ h1:not(.post-title-main) { display: none; }
 
   <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i>
     <b>Note:</b> This page was generated from the
-    <a href="https://github.com/strongloop/{{repo-branch}}">{{page.source}} README</a>.</div>
+    <a href="https://github.com/strongloop/{{repo-branch}}">{{page.source}} README</a>.
+  </div>
 
   {% include toc.html %}
+
+  {{content}}
+
   {% capture included-readme %}{% include readmes/{{readme-file}}.md %}{% endcapture %}
   {{ included-readme | markdownify }}
 {% else %}
-  <h3>ERROR: No source for README</h3>
+  <h3>ERROR: No source specified for README</h3>
 {% endif %}
