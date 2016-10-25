@@ -31,19 +31,31 @@ We have implemented a new more secure error handler middleware available
 via the package `strong-error-handler` and encourage all uses to switch to
 this new middleware.
 
-We have removed `loopback#errorhandler` short-cut. You should explicitely
-install `errorhandler` (or even better, `strong-error-handler`) in your
-project.
+HTTP error response produced by the new error handler no longer contain
+`error.status` property, as it was renamed to `error.statusCode`. You should
+update any clients reading the HTTP status code from the response body.
 
 The new error handler no longer honours the environment variable
 `NODE_ENV=production` and is configured for production by default.
-You should enable the debug mode in `server/middleware.development.json`.
+You should enable the debug mode in `server/config.development.json`.
 Note that projects scaffolded with a recent version of `apic loopback`
 (or `slc loopback`) are already correctly configured and no change is needed.
 
-HTTP error responsed produced by the new error handler no longer contain
-`error.status` property, as it was renamed to `error.statusCode`. You should
-update any clients reading the HTTP status code from the response body.
+User can specific options in their applications in `config(.development).json` as follow:
+
+```json
+{
+  "restApiRoot": "/api",
+  "host": "0.0.0.0",
+  "port": 3000,
+  "remoting": {
+    "errorHandler": {
+      "debug": true,
+      "log": false
+    }
+  }
+}
+```
 
 ## Middleware getters from Express 3.x were removed
 
