@@ -6,134 +6,277 @@ keywords: LoopBack
 tags: [getting_started]
 sidebar: lb3_sidebar
 permalink: /doc/en/lb3/Migrating-to-3.0.html
-summary:
+summary: How to migrate applications from LoopBack 2.x to 3.x.
 ---
+## Update dependencies in package.json
 
-This document describes how to migrate applications from LoopBack 2.x to 3.x
+Make the following changes to your app's `package.json` file:
 
-## loopback-datasource-juggler is a regular dependency now
+- Change the dependency on `loopback` to specify version 3.0.
+- Remove `loopback-datasource-juggler` from dependencies, since it is [now a regular dependency](3.0-Release-Notes.html#loopback-datasource-juggler-is-now-a-regular-dependency).
+- Depending on when you initially created your app, `strong-error-handler` may not
+be listed as a dependency; if so, add it.
 
-Originally, we (ab)used peer dependencies to ensure there is only one instance
-of loopback-datasource-juggler in the dependency tree, so that there is only
-one singleton instance of model registry. This was very fragile and might not
-have worked in certain edge cases.
-
-We have reworked loopback-datasource-juggler and connectors to not rely on a
-single juggler instance anymore. As the last step, juggler became a regular
-dependency.
-
-When upgrading application from previous loopback versions, simply remove
-loopback-datasource-juggler from your dependencies.
-
-## New error handler for REST
-
-We have implemented a new more secure error handler middleware available
-via the package `strong-error-handler` and encourage all uses to switch to
-this new middleware.
-
-We have removed `loopback#errorhandler` short-cut. You should explicitely
-install `errorhandler` (or even better, `strong-error-handler`) in your
-project.
-
-The new error handler no longer honours the environment variable
-`NODE_ENV=production` and is configured for production by default.
-You should enable the debug mode in `server/middleware.development.json`.
-Note that projects scaffolded with a recent version of `apic loopback`
-(or `slc loopback`) are already correctly configured and no change is needed.
-
-HTTP error responsed produced by the new error handler no longer contain
-`error.status` property, as it was renamed to `error.statusCode`. You should
-update any clients reading the HTTP status code from the response body.
-
-## Middleware getters from Express 3.x were removed
-
-Express 4.x stopped bundling commonly-used middleware. To simplify migration of
-LoopBack 1.x applications (powered by Express 3.x) to LoopBack 2.x (powered by
-Express 4.x), we created getter properties to allow developers to keep using
-the old convention.
-
-We have removed these getters in LoopBack 3.0, here is the full list of removed
-properties together with the middleware module name to use instead:
-
- - `loopback.compress` - use `require('compression')` instead
- - `loopback.timeout` - use `require('connect-timeout')` instead
- - `loopback.cookieParser` - use `require('cookie-parser')` instead
- - `loopback.cookieSession` - use `require('cookie-session')` instead
- - `loopback.csrf` - use `require('csurf')` instead
- - `loopback.errorHandler` - use `require('errorhandler')` instead
- - `loopback.session` - use `require('express-session')` instead
- - `loopback.methodOverride` - use `require('method-override')` instead
- - `loopback.logger` - use `require('morgan')` instead
- - `loopback.responseTime` - use `require('response-time')` instead
- - `loopback.favicon` - use `require('serve-favicon')` instead
- - `loopback.directory` - use `require('serve-index')` instead
- - `loopback.vhost` - use `require('vhost')` instead
-
-## Models with auto-generated ids reject user-provided id values
-
-For security reasons, we have disabled the ability of the clients to provide
-their own `id` value when creating new instances of models that have
-an auto-generated `id` property.
-
-Such requests are rejected with the following error (replace `Product` and `1`
-with your model name and the requested id value).
+For example, change:
 
 ```
-Unhandled rejection ValidationError: The `Product` instance is not valid.
-Details: `id` can't be set (value: 1).
+"dependencies": {
+  ...
+  "serve-favicon": "^2.0.1",
+  "loopback-datasource-juggler": "^2.39.0",
+  "loopback": "^2.22.0"
+ },
+...
 ```
 
-You can disable this check by setting `forceId: false` in your model config.
+To:
 
-Building on the error message shown above, you would have to change
-`common/models/product.json`:
+```
+"dependencies": {
+  ...
+  "serve-favicon": "^2.0.1",
+  "strong-error-handler": "^1.0.1",
+  "loopback": "^3.0.0"
+```
+
+## Update use of REST error handler
+
+As described in the [release notes](3.0-Release-Notes.html#new-rest-adapter-error-handler), version 3.0 adds a new more secure error handler middleware package, `strong-error-handler`.
+
+Install it as a dependency with the following command:
+
+```
+npm install --save strong-error-handler
+```
+
+{% include tip.html content="Projects scaffolded with a recent version of `apic loopback`
+or `slc loopback` are already correctly configured and require no change.
+" %}
+
+You may need to make the following changes:
+
+- The new error handler's HTTP responses have a `error.statusCode` property
+instead of `error.status`.  Update any clients that read the HTTP status code
+from the response body.
+- Change any uses of the `loopback#errorhandler` short-cut to  `require('strong-error-handler')`.
+- Add the following to `config.json` (or `config.development.json`):
+
+```
+{
+  ...
+  "remoting": {
+    "errorHandler": {
+      "debug": true,
+      "log": false
+    }
+  }
+}
+```
+- Add the error handler as middleware in `server/middleware.json` file:
+
+```
+{
+  "final:after": {
+    "strong-error-handler": {
+      "params": {
+         "debug": false,
+         "log": true,
+       }
+    }
+  }
+}
+```
+
+## Replace LoopBack middleware "getter" properties
+
+As described in the [release notes](3.0-Release-Notes.html#new-rest-adapter-error-handler),
+you can no longer use the LoopBack convenience "getter" properties for Express middleware.
+You must replace any instances of them with the corresponding `require()` statement, as
+summarized in this table:
+
+| Change this... | To this... |
+|---|----|
+ | `loopback.compress` | `require('compression')` |
+ | `loopback.timeout` | `require('connect-timeout')` |
+ | `loopback.cookieParser` | `require('cookie-parser')` |
+ | `loopback.cookieSession` | `require('cookie-session')` |
+ | `loopback.csrf` | `require('csurf')` |
+ | `loopback.errorHandler` | `require('errorhandler')` |
+ | `loopback.session` | `require('express-session')` |
+ | `loopback.methodOverride` | `require('method-override')` |
+ | `loopback.logger` | `require('morgan')` |
+ | `loopback.responseTime` | `require('response-time')` |
+ | `loopback.favicon` | `require('serve-favicon')` |
+ | `loopback.directory` | `require('serve-index')` |
+ | `loopback.vhost` | `require('vhost')` |
+
+## Update models
+
+The changes in this section apply to _all_ LoopBack models.
+
+### Change use of PUT endpoints
+
+As described in the [release notes](3.0-Release-Notes.html#full-replace-vs-partial-update),
+in version 3.0, `PUT` endpoints no longer perform a partial update (a patch operation),
+but replace the model instance as whole. If your application relies on
+partial updates, you'll need to update it.
+
+In the short-term, disable the model setting `replaceOnPUT` in models
+affected by this change. For example, for a model `MyModel`, add the following to `common/models/my-model.json`:
+
+```js
+{
+  "name": "MyModel",
+  "replaceOnPUT": false,
+  ...
+}
+```
+
+In the long term, rework your clients to switch from `PUT` to
+`PATCH` endpoints, as the compatibility option `replaceOnPUT` will likely be removed
+at some point in the future.
+
+To write client code that works with both major versions
+of LoopBack, use the following HTTP endpoints:
+
+| Method | Endpoint
+|----|----|
+|replaceOrCreate | `POST /customers/replaceOrCreate` |
+|replaceById | `POST /customers/:id/replace` |
+|updateOrCreate | `PATCH /customers` |
+|prototype.updateAttributes | `PATCH /customers/:id` |
+
+### Remove use of undefined mixins
+
+As described in the [release notes](3.0-Release-Notes.html#undefined-model-mixins-throw-an-error),
+applying an undefined mixin to a LoopBack model throws an error.
+
+If you have a model using a mixing that's not available, you must
+either fix the configuration of your mixin sources to make the mixin available
+to LoopBack, or remove the unknown mixin from your model definition.
+
+### Update remote method definitions
+
+In version 3.0, the `isStatic` property no longer indicates that a remote method is static.
+Rather if the method name starts with `prototype.` then it an instance method, otherwise
+it is a static method.
+
+As a result, you may see many deprecation warnings after upgrading to 3.0.  To eliminate these:
+
+- For static methods, remove the `isStatic: true` property.
+- For instance methods, remove `isStatic: false` and add the `prototype.` prefix to the
+method name (the key used in model JSON file).
+
+For example, in `common/models/my-model.json`.
+
+{% include code-caption.html content="Version 2.x" %}
+```json
+{
+  "methods": {
+    "staticMethod": {
+      "isStatic": true,
+      "http": { "path": "/static" }
+    },
+    "instanceMethod": {
+      "isStatic": false,
+      "http": { "path": "/instance" }
+    }
+  }
+}
+```
+
+{% include code-caption.html content="Version 3.0" %}
+```json
+{
+  "methods": {
+    "staticMethod": {
+      "http": { "path": "/static" }
+    },
+    "prototype.instanceMethod": {
+      "http": { "path": "/instance" }
+    }
+  }
+}
+```
+
+{% include tip.html content="You typically define remote methods either in:
+
+- Model JSON file (`common/models/my-model.json`)
+- Model JavaScript file (`common/models/my-model.js`).
+
+Be sure  to check both places when looking for the source of the deprecation warning.
+" %}
+
+### Remove dots from model property names
+
+Property names containing a dot, ( for example, `customer.name`) were deprecated in 2.x.
+In 3.0, LoopBack throws an error for such properties.
+
+Update your model definitions to use a different character instead, for example an
+underscore (`customer_name`).
+
+## Update models derived from PersistedModel
+
+The changes in this section apply to all models derived from `PersistedModel`,
+backed by a persistent data store such as a database.
+
+### Use `forceId` to explicitly set model IDs
+
+As described in the [release notes](3.0-Release-Notes.html#models-with-auto-generated-ids-reject-user-provided-id-values),
+clients are no longer allowed to to provide their own `id` value when creating new instances
+of models that have an auto-generated `id` property.
+
+To enable setting an `id` explicitly, set `forceId: false` in the model JSON file.
+For example, in `common/models/product.json`:
 
 
 ```json
 {
   "name": "Product",
-  "forceId": false
+  "base": "PersistedModel",
+  "forceId": false,
+  ...
 }
 ```
 
-## PUT methods perform full replace now
+### Revise use of `PersistedModel.create()`
 
-In LoopBack 3.0, `PUT` endpoints no longer perform a partial update (a patch operation),
-but replace the model instance as whole. If your application is relying on
-partial updates, then you have two migration strategies available:
+As described in the [release notes](3.0-Release-Notes.html#persistedmodelcreate-method-no-longer-returns-created-instances),
+when invoked with a callback argument, `PersistedModel.create()` does not return anything; when invoked without a callback, it returns a promise.
 
-For short-term, disable the model setting `replaceOnPUT` in your models
-affected by this change. For example, if you have a model `MyModel`, then you
-can change `common/models/my-model.json` as follows:
+You must revise code that relies on the previous synchronous behavior to correctly
+use a promise or a callback instead.
 
-```json
-{
-  "name": "MyModel",
-  "replaceOnPUT": false,
-  "properties": {
-    "etc."
-  }
-}
-```
+### Remove check for `ctx.instance` in "loaded" operation hooks
 
-In longer term, please rework your clients to switch from `PUT` to
-`PATCH` endpoints, as the option `replaceOnPUT` is likely to be removed
-in a future major version of LoopBack.
+As described in the [release notes](3.0-Release-Notes.html#persistedmodelfind-provides-ctxdata-in-loaded-hook),
+the "loaded" hook now consistently provides `ctx.data` for all operations.
 
-If you are writing client code that should work with both major versions
-of LoopBack, then you can use the following HTTP endpoints:
+If you have a "loaded" hook handler that checks for the existence of `ctx.instance`, then you
+can remove this condition together with the branch that follows.
 
-Method | Endpoint
--|-
-replaceOrCreate | `POST /customers/replaceOrCreate`
-replaceById | `POST /customers/:id/replace`
-updateOrCreate | `PATCH /customers`
-prototype.updateAttributes | `PATCH /customers/:id`
+### Replace removed `PersisteModel` event listeners
 
-## Unused `User` properties were removed
+Version 3.0 eliminates the following deprecated `PersistedModel` events:
+`changed`, `deleted`, `deletedAll`.
 
-We have removed the following properties of the built-in `User` model that
-were not used by LoopBack:
+Instead of listening for these events, use [Operation Hooks](Operation-hooks.html) instead,
+ notably "after save" and "after delete".
+
+### Replace calls to `PersistedModel.updateOrCreate()` with array argument
+
+`PersistedModel.updateOrCreate` no longer accepts an array as input to create a
+new model instance.  Instead, use  `[PersistedModel.create()](http://apidocs.strongloop.com/loopback/#persistedmodel-create)`.
+To perform a bulk `updateOrCreate()`, use `async.each` or `Promise.all` to
+repeatedly call `updateOrCreate()` for each model instance.
+
+## Add removed User model properties explicitly
+
+<!-- Do we think this will be common?  Why would someone use any of these unused properties?
+     If uncommon, move this section down in the guide
+-->
+
+The following unused properties of the built-in `User` model were removed:
 
  - `credentials`
  - `challenges`
@@ -141,34 +284,42 @@ were not used by LoopBack:
  - `created`
  - `lastUpdated`
 
-If your application is using these properties, then you should explicitly
-define them in your custom User model.
+If your application uses any of these properties, you must define them manually
+in your custom User model JSON file; for example:
 
-## Stricter handling of input arguments
+```json
+{
+  "name": "MyUser",
+  "base": "User",
+  "properties": {
+    "credentials": { "type": "object" },
+    "challenges": { "type": "object" },
+    "status": "string",
+    "created": "date",
+    "lastUpdated": "date"
+  }
+}
+```
 
-We have significantly reworked conversion and coercion of input arguments when
-using the default REST adapter. The general approach is to make both conversion
-and coercion more strict. When we are not sure how to treat an input value, we
-rather return HTTP error `400 Bad Request` than coerce the value incorrectly.
+## Check request parameter encoding
 
-As a result, certain edge cases scenarios are handled differently in versions
-2.x and 3.x. If you start seeing 400 error responses after the upgrade,
-then please check the client code and ensure it correctly encodes
-request parameters.
+As described in the [release notes](Migrating-to-3.0.html#stricter-handling-of-input-arguments),
+the REST adapter handles input arguments more strictly.  As a result,
+versions 2.x and 3.0 handle certain edge cases differently.
 
-## The current-context feature was moved to loopback-context
+If you encounter `400 Bad Request` error responses after the upgrade,
+check the client code and ensure it correctly encodes request parameters.
 
-We have removed the following current-context-related APIs:
+## Remove use of current-context methods, middleware, and configuration settings
 
- - `loopback.getcurrentcontext`
- - `loopback.createcontext`
- - `loopback.runincontext`
+As described in the [release notes](Migrating-to-3.0.html#removed-current-context-api-and-middleware),
+version 3.0 removes deprecated a number of current-context-related methods,
+middleware, and configuration settings.
+Ensure you no longer use any of these methods and middleware.
+If you must use current-context, follow the instructions in [Using current-context in version 3.0](#using-current-context-in-version-30) below.
 
-Additionally, `loopback#context` middleware and `remoting.context` server
-config were removed too.
-
-When upgrading from LoopBack 2.x, you need to disable or remove
-`remoting.context` configuration in your server config.
+You must disable or remove `remoting.context` configuration in your server
+configuration as follows:
 
 ```js
 {
@@ -192,17 +343,29 @@ details.
     at Layer.handle [as handle_request] (.../node_modules/express/lib/router/layer.js:95:5)
 ```
 
-### Setting up "current context" in 3.x
+<!--
+  README says "We recommend AGAINST using this module." so why are we describing it here?
+-->
 
-To setup "current context" feature in your LoopBack 3.x application, you
-should use [loopback-context](https://www.npmjs.com/package/loopback-context)
-module:
+{% include warning.html content="Using the current context feature is not recommended!
 
- 1. Add `loopback-context` to your dependencies
+The implementation of loopback-context is based on  [continuation-local-storage](https://www.npmjs.com/package/continuation-local-storage),
+which is known to have many problems.
+As a result, loopback-context does not work in many situations.
+See [loopback issue #1495](https://github.com/strongloop/loopback/issues/1495) for
+updates and an alternative solution.
+" %}
 
- 2. Configure the new context middleware in your `server/middleware-config.json` file
+If you still need to use loopback-context in your LoopBack 3.x application, use the  [loopback-context](https://www.npmjs.com/package/loopback-context) module:
 
-    ```json
+ 1. Add `loopback-context` to your dependencies:
+ ```
+ npm install --save loopback-context
+ ```
+
+ 2. Configure the new context middleware in `server/middleware-config.json`:
+
+    ```js
     {
       "initial": {
         "loopback-context#per-request": {}
@@ -210,7 +373,7 @@ module:
     }
     ```
 
- 3. Replace all usages of `loopback.getCurrentContext` with the following:
+ 3. Replace all uses of `loopback.getCurrentContext()` with the following:
 
     ```js
     // at the top of your file
@@ -223,39 +386,39 @@ module:
     }
     ```
 
-## No need to polyfill Promise on Node v0.10
+## Update use of promises
 
-In version 3.0, we always use `bluebird` as our promise library instead of
-`global.Promise`. If your project is overriding `global.Promise` to
-`bluebird` (e.g. on Node v0.10 which does not providy `global.Promise` out of
-the box), then you can probably remove that code.
+As described in the [release notes](3.0-Release-Notes.html#use-bluebird-for-promises),
+version 3.0 uses `bluebird` as the promise library instead of
+`global.Promise`. If your project overrides `global.Promise` to
+`bluebird` (for example, if using Node v0.10 that does not have `global.Promise`),
+then you can remove that code.
 
-## Accomodate for Bluebird Promise API
-
-If your project uses a custom promise implementation and relying on LoopBack
+If your project uses a custom promise implementation and relies on LoopBack
 returning your Promise instances, then you have two options:
 
- 1. Wrap all Promises returned by LoopBack in your Promise API via
-   `Promise.resolve`. Example:
+- Wrap all Promises returned by LoopBack in your Promise API via `Promise.resolve`. For example:
 
     ```js
     Promise.resolve(User.login(data));
     ```
 
- 2. Rework your code to use Bluebird API instead of the API provided by your
-   Promise implementation.
+- Rework your code to use Bluebird API instead of the API provided by your promise implementation.
 
-## Check your CORS configuration
+## Check CORS configuration
 
-We have removed built-in CORS middleware from `loopback.rest()` handler. It's
-up to the applications to setup and configure application-wide CORS policies.
+As described in the [release notes](3.0-Release-Notes.html#cors-is-no-longer-enabled),
+CORS is no longer enabled by default in version 3.0.
 
-If you have scaffolded your application with a recent version of our generators
-(`apic loopback` or `slc loopback`), then your application already comes with
-a global CORS handler configured in `server/middleware.json`.
+The built-in CORS middleware was removed from `loopback.rest()` handler,
+so you must set up and configure application CORS policies explicitly.
 
-If that's not the case, and you would like to allow cross-site requests to
-your LoopBack server, then you need to follow these few steps:
+{% include tip.html content="Projects scaffolded with a recent version of `apic loopback`
+or `slc loopback` already have the global CORS handler configured in `server/middleware.json`.
+" %}
+
+Otherwise, to enable CORS and allow cross-site requests to your LoopBack application,
+follow these steps:
 
  1. `npm install --save cors`
 
@@ -278,153 +441,3 @@ your LoopBack server, then you need to follow these few steps:
       // ...
     }
     ```
-
-## No need to check for `ctx.instance` in "loaded" hooks
-
-When implementing "loaded" hook for `DAO.find` method in 2.x, we have mistakenly
-implemented a version that sets `ctx.instance` instead of `ctx.data`. This defeats
-the purpose of the "loaded" hook, which is to allow hooks to modify the raw
-data provided by the datasource before it's used to build a model instance.
-This has been fixed in 3.0 and the "loaded" hook now consistently provides
-ctx.data for all operations.
-
-If you have a "loaded" hook handler that checks `if (ctx.instance)` then you
-can remove this condition together with the branch that follows.
-
-## `PersistedModel.create` no longer returns immediately with the instance(s) created
-
-While implementing support for promises in `PersistedModel.create`, we found that this
-method returns the instance object synchronously. This is inconsistent with the
-usual convention of accessing the result via callback/promise and it may not
-work correctly in cases where some fields like the id property are generated by
-the database.
-
-We have changed the API to be consistent with other DAO methods: when invoked
-with a callback argument, the method does not return anything. When invoked
-without any callback, a promise is returned.
-
-Please rework any code relying on the synchronous behaviour to correctly
-use a promise or a callback instead.
-
-## Undefined mixins throw an error
-
-When applying an undefined mixin to a LoopBack model, a warning message was
-logged regarding the invalid mixin, which needs to be addressed rather than
-silently ignored. This has been fixed in 3.0, therefore an undefined mixin
-applied to a LoopBack model will throw an error that needs to be handled.
-
-If you happen to have a model using a mixing that's not available, the please
-either fix the configuration of your mixin sources to make the mixin available
-to LoopBack, or remove the unknown mixin from your model definition.
-
-## Model events are gone
-
-We have removed the following deprecated events emitted by `PersistedModel`:
-`changed`, `deleted`, `deletedAll`.
-
-Applications should use [Operation Hooks](https://docs.strongloop.com/display/public/LB/Operation+hooks) instead,
-most notably "after save" and "after delete".
-
-## Model property names with dot(s) generates an error
-
-Property names containing a dot, e.g. `customer.name` were deprecated in 2.x.
-In 3.x, an error is thrown when such property is detected.
-
-Please update your model definitions to use a different character instead, e.g.
-underscore (`customer_name`).
-
-## `PersistedModel.updateOrCreate` rejects arrays
-
-Allowing `updateOrCreate` to accept an array as input would only work when
-creating new model instances (not updating them), so this support has been
-removed. Please use `create` function instead (array inputs only worked to
-create new instances with this method before).
-If you would like to perform a bulk `updateOrCreate`, you could use
-`async.each` or `Promise.all` to repeatedly call `updateOrCreate` for
-each instance.
-
-## Update your remote-method definitions (eventually)
-
-In LoopBack 3.0, we have deprecated `isStatic` flag in favour of encoding
-this value in method name, where prototype methods specified by prepending
-`prototype.` prefix to their name, e.g. `prototype.updateAttributes`.
-
-As a result, you may see many deprecation warnings after the upgrade.
-
-For static methods, you should remove `isStatic: true` flag entirely.
-
-For prototype methods, you should remove `isStatic: false` and add
-`prototype.` prefix to the method name (the key used in model JSON file).
-
-Reminder: there are two commonly used ways for defining remote methods. One
-can define them in the model JSON file (`common/models/my-model.json`)
-or in the JS file alongside their implementation (`common/models/my-model.js`).
-Don't forget to check both places when looking for the source of the
-deprecation warning.
-
-
-## Advanced
-
-In this final section, we describe changes that affect only advanced usage
-of LoopBack an its internal components. Instructions described in this section
-are not applicable to typical LoopBack applications.
-
-### Use loopback-boot instead of `loopback.autoAttach`
-
-We have removed `loopback.autoAttach` method and `defaultForType` datasource
-option in LoopBack 3.0. We recommend application developers to use our
-convention-based bootstrapper module
-[loopback-boot](https://www.npmjs.com/package/loopback-boot).
-
-Alternatively, you can modify your code to explicitly attach all models to
-appropriate datasources. For example:
-
-```js
-var MyModel = app.registry.createModel(
-  'MyModel',
-  {/* properties */},
-  {/* options */});
-app.model(MyModel, { dataSource: 'db' });
-```
-
-### Use `registerType` in `ModelBuilder` instead of `DataSource`
-
-We have removed `DataSource.registerType()` method, it was a wrapper for
-`ModelBuilder.registerType`. Please use `ModelBuilder.registerType` directly.
-
-### Use `remotes.defineType` instead of `Dynamic.defineType`
-
-The `Dynamic` component was removed from strong-remoting in favour of type
-converters and a type registry.
-
-Removed APIs:
-
-```js
-RemoteObjects.convert(name, fn)
-remoteObjectsInstance.convert(name, fn)
-RemoteObjects.defineType(name, fn)
-remoteObjectsInstance.defineType(name, fn)
-```
-
-The new APIs to use instead:
-
-```js
-remoteObjectsInstance.defineType(name, converter)
-remoteObjectsInstance.defineObjectType(name, factoryFn)
-```
-
-### `Change.handleError` was removed
-
-All `Change` methods are reporting all errors to the caller via the callback
-now.
-
-Use `PersistedModel` to report change-tracking errors via the existing method
-`PersistedModel.handleChangeError`. This method can be customized on a per-model
-basis to provide different error handling.
-
-### `app.model(modelName, settings)` was removed
-
-`app.model(modelName, settings)`, a sugar for creating non-existing model, was
-now removed in favor of the following two methods:
-- `app.registry.createModel(modelName, properties, options)` to create new model
-- `app.model(modelCtor, config)` to update existing model and attach it to app

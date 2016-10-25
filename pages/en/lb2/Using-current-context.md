@@ -19,17 +19,14 @@ LoopBack applications sometimes need to access context information to implement 
 A typical request to invoke a LoopBack model method travels through multiple layers with chains of asynchronous callbacks.
 It's not always possible to pass all the information through method parameters. 
 
-{% include warning.html content="
-
-Warning: Using the current context feature is not recommended!
+{% include warning.html content="Using the current context feature is not recommended!
 
 The current implementation of loopback-context is based on the module [continuation-local-storage](https://www.npmjs.com/package/continuation-local-storage) 
 which is known to have many problems, (for example, see [issue #59](https://github.com/othiym23/node-continuation-local-storage/issues/59)).
 As a result, loopback-context does not work in many situations, as can be seen from issues reported in LoopBack's
 [issue tracker](https://github.com/strongloop/loopback/issues?utf8=%E2%9C%93&q=is%3Aissue%20getCurrentContext).
 
-Refer to loopback [issue #1495](https://github.com/strongloop/loopback/issues/1495) updates and an alternative solution.
-
+See [loopback issue #1495](https://github.com/strongloop/loopback/issues/1495) updates and an alternative solution.
 " %}
 
 ## Fixing deprecation warnings
