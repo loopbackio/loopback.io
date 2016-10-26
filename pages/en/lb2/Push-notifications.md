@@ -104,9 +104,8 @@ Now follow the instructions in: 
 First install all dependencies, then run the Node application as follows:
 
 ```shell
-$ cd loopback-example-push/loopback
+$ cd loopback-example-push/loopback-2.x
 $ npm install
-$ bower install
 #...
 $ node .
 ```
