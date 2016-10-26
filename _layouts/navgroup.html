@@ -19,7 +19,7 @@ toc: false
 {% include toc.html %}
 
 {% if page.source %}
-  {% capture included-readme %}{% include readmes/{{page.source}}.md %}{% endcapture %}
+  {% capture included-readme %}{% include_relative readmes/{{page.source}}.md %}{% endcapture %}
   {{ included-readme | markdownify }}
 {% endif %}
 

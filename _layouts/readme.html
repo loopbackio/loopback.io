@@ -24,7 +24,7 @@ h1:not(.post-title-main) { display: none; }
 
   {{content}}
 
-  {% capture included-readme %}{% include readmes/{{readme-file}}.md %}{% endcapture %}
+  {% capture included-readme %}{% include_relative readmes/{{readme-file}}.md %}{% endcapture %}
   {{ included-readme | markdownify }}
 {% else %}
   <h3>ERROR: No source specified for README</h3>

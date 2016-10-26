@@ -12,7 +12,7 @@ summary:
 {% include see-also.html content="
 * [Connecting to MongoDB](Connecting-to-MongoDB.html)
 * [Using MongoLab](Using-MongoLab.html)
-* [loopback-example-database](https://github.com/strongloop/loopback-example-database)
+* [Example app](https://github.com/strongloop/loopback-example-database)
 "%}
 
 {% include note.html content="
@@ -21,9 +21,7 @@ The MongoDB connector requires MongoDB 2.6 - 3.x.
 
 ## Installation
 
-{% include important.html content="
-The MongoDB connector indirectly uses [bson](https://www.npmjs.org/package/bson), that requires you to have a standard set of compiler tools on your system.
-See [Installing compiler tools](https://docs.strongloop.com/display/SL/Installing-compiler-tools) for details.
+{% include important.html content="The MongoDB connector indirectly uses [bson](https://www.npmjs.org/package/bson), that requires you to have a standard set of compiler tools on your system. See [Installing compiler tools](Installing-compiler-tools) for details.
 " %}
 
 In your application root directory, enter:

@@ -1,0 +1,23 @@
+{
+  "repos" : [
+  { "org": "strongloop", "repoName":  "loopback-connector-cloudant"},
+  { "org": "strongloop", "repoName":  "loopback-connector-dashdb"},
+  { "org": "strongloop", "repoName":  "loopback-connector-db2"},
+  { "org": "strongloop", "repoName":  "loopback-connector-db2iseries"},
+  { "org": "strongloop", "repoName":  "loopback-connector-db2z"},
+  { "org": "strongloop", "repoName":  "loopback-connector-informix"},
+  { "org": "strongloop", "repoName":  "loopback-connector-jsonrpc"},
+  { "org": "strongloop", "repoName":  "loopback-connector-kv-redis"},
+  { "org": "strongloop", "repoName":  "loopback-connector-mongodb"},
+  { "org": "strongloop", "repoName":  "loopback-connector-mqlight"},
+  { "org": "strongloop", "repoName":  "loopback-connector-mssql"},
+  { "org": "strongloop", "repoName":  "loopback-connector-mysql"},
+  { "org": "strongloop", "repoName":  "loopback-connector-oracle"},
+  { "org": "strongloop", "repoName":  "loopback-connector-postgresql"},
+  { "org": "strongloop", "repoName":  "loopback-connector-redis"},
+  { "org": "strongloop", "repoName":  "loopback-connector-remote"},
+  { "org": "strongloop", "repoName":  "loopback-connector-rest"},
+  { "org": "strongloop", "repoName":  "loopback-connector-soap"},
+  { "org": "strongloop", "repoName":  "loopback-connector-sqlite3"}
+ ]
+}

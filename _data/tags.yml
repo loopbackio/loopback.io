@@ -3,6 +3,7 @@ allowed-tags:
   - angularjs
   - application_logic
   - authentication
+  - connectors
   - contributing
   - community
   - data_sources
@@ -10,6 +11,7 @@ allowed-tags:
   - getting_started
   - ios
   - models
+  - readme
   - reference
   - security
   - tools

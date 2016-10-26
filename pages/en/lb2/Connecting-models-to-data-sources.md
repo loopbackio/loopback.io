@@ -62,21 +62,9 @@ To connect a model to a data source, follow these steps:
     }
     ```
 
-    For information on the specific properties that each connector supports, see:
+    For information on the  properties that each connector supports, see
+    documentation for the specific connector under [Connectors reference](Connectors-reference).
 
-    * [Cloudant connector](Cloudant-connector.html)
-    * [DashDB](DashDB.html)
-    * [DB2 connector](DB2-connector.html)
-    * [DB2 for z/OS](DB2-for-z-OS.html)
-    * [Informix](Informix.html)
-    * [Memory connector](Memory-connector.html)
-    * [MongoDB connector](MongoDB-connector.html)
-    * [MySQL connector](MySQL-connector.html)
-    * [Oracle connector](Oracle-connector.html)
-    * [PostgreSQL connector](PostgreSQL-connector.html)
-    * [Redis connector](Redis-connector.html)
-    * [SQL Server connector](SQL-Server-connector.html)
-    * [SQLite3](SQLite3.html) 
 3.  Install the corresponding connector as a dependency of your app with `npm`.
 
     For example: 
@@ -86,7 +74,7 @@ To connect a model to a data source, follow these steps:
     $ npm install --save loopback-connector-mysql
     ```
 
-    See [Connectors](#connectors) for the list of connectors.
+    See [Connectors reference](Connectors-reference). for the list of connectors.
 
 4.  Use the [model generator](Using-the-model-generator.html) to create a model.
 
@@ -114,16 +102,14 @@ To connect a model to a data source, follow these steps:
 
     When prompted for the data source to attach to, select the one you just created. 
 
-{% include note.html content="
-The model generator lists the [memory connector](Memory-connector.html), \"no data source,\" and data sources listed in [`datasources.json`](datasources.json.html).  That's why you created the data source first in step 1.
+{% include note.html content="The model generator lists the [memory connector](Memory-connector.html), \"no data source,\" and data sources listed in [`datasources.json`](datasources.json.html).  That's why you created the data source first in step 1.
 " %}
 
 You can also create models from an existing database; see [Creating models](Creating-models.html) for more information.
 
 ## Connectors
 
-{% include note.html content="
-In addition to the connectors below that IBM/StrongLoop supports,
+{% include note.html content="In addition to the connectors below that IBM/StrongLoop supports,
 [community connectors](Community-connectors.html) developed and maintained by the LoopBack community enable you to connect to CouchDB, Neo4j, Elasticsearch, and many others.
 See [Community connectors](Community-connectors.html) for more information.
 " %}
@@ -252,7 +238,7 @@ $ npm install --save loopback-connector-oracle
 
 This command adds the following entry to `package.json`: 
 
-{% include code-caption.html content="/package.json" %}
+{% include code-caption.html content="package.json" %}
 ```javascript
 ...
 "dependencies": {

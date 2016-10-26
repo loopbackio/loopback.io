@@ -1145,7 +1145,7 @@ div.box.box1 {
 }
 */
 
-.sl-hidden {
+.sl-hidden, .gh-only {
   display: none;
 }
 
@@ -1166,5 +1166,5 @@ pre.highlight {margin-top: 0;}
 
 td pre {
   margin-top: 0;
-  margin-bottom: 0;  
+  margin-bottom: 0;
   }

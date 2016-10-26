@@ -329,7 +329,7 @@ This component does not yet meet the \"contract\" to be a LoopBack component.
 
 ### Third-party login (Passport)
 
-<div class="sl-hidden"><strong>REVIEW COMMENT from Rand</strong><br>Is this the same as the <a href="https://docs.strongloop.com/pages/viewpage.action?pageId=3836277#Third-partylogin%28Passport%29-Configurationinproviders.json" rel="nofollow">configuration in providers.json</a>  and <a href="https://apidocs.strongloop.com/loopback-component-passport/#passportconfigurator" class="external-link" rel="nofollow">https://apidocs.strongloop.com/loopback-component-passport/#passportconfigurator ?&nbsp;</a></div>
+<div class="sl-hidden"><strong>REVIEW COMMENT from Rand</strong><br>Is this the same as the <a href="http://loopback.io/doc/en/lb2/Third-party-login-using-Passport.html#configuration-in-providersjson" rel="nofollow">configuration in providers.json</a>  and <a href="https://apidocs.strongloop.com/loopback-component-passport/#passportconfigurator" class="external-link" rel="nofollow">https://apidocs.strongloop.com/loopback-component-passport/#passportconfigurator</a></div>
 
 <div class="sl-hidden"><strong>Non-public Information</strong><br>
   <div class="code panel pdl" style="border-width: 1px;">
