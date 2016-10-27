@@ -981,3 +981,7 @@ children:
   - title: 'LoopBack middleware'
     url: /doc/en/lb2/LoopBack-middleware.html
     output: 'web, pdf'
+
+- title: 'All tags'
+  url: /doc/en/lb2/All-tags.html
+  output: 'web, pdf'
