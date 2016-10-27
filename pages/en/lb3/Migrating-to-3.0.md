@@ -13,7 +13,7 @@ summary: How to migrate applications from LoopBack 2.x to 3.x.
 Make the following changes to your app's `package.json` file:
 
 - Change the dependency on `loopback` to specify version 3.0.
-- Remove `loopback-datasource-juggler` from dependencies, since it is [now a regular dependency](3.0-Release-Notes.html#loopback-datasource-juggler-is-now-a-regular-dependency).
+- Remove `loopback-datasource-juggler` from dependencies, since it is [now a regular dependency](3.0-Release-Notes.html#loopback-datasource-juggler-is-now-a-regular-dependency-of-loopback).
 - Depending on when you initially created your app, `strong-error-handler` may not
 be listed as a dependency; if so, add it.
 

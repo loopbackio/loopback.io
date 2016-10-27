@@ -6,11 +6,11 @@ keywords: LoopBack 2.x
 tags: [getting_started]
 sidebar: lb2_sidebar
 permalink: /doc/en/lb2/index.html
-summary: LoopBack is a highly-extensible, open-source Node.js framework that enables you to&#58; <ul><li>Create dynamic end-to-end REST APIs with little or no coding.</li><li>Access data from major relational and NoSQL databases, SOAP and REST APIs.</li><li>Incorporate model relationships and access controls for complex APIs.</li></ul>
+summary: LoopBack 2.x is the current production release.
 ---
-Read [LoopBack core concepts](LoopBack-core-concepts.html) to learn about key concepts you need to understand to use LoopBack.
-
-Follow [Getting started with LoopBack](Getting-started-with-LoopBack.html) for a quick tutorial introduction.
+1. **[Install LoopBack tools](Installation)**, either IBM API Connect (`apic`) or StrongLoop tools (`slc`).
+1. **Read [LoopBack core concepts](LoopBack-core-concepts.html)** to learn about key concepts you need to understand to use LoopBack.
+1. **Follow [Getting started with LoopBack](Getting-started-with-LoopBack.html)** for a quick tutorial introduction.
 
 Check out the [LoopBack Developer Forum](https://groups.google.com/forum/#!forum/loopbackjs) to ask questions and discuss how you are using LoopBack.
 
