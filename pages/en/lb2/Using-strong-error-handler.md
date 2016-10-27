@@ -9,5 +9,3 @@ sidebar: lb2_sidebar
 permalink: /doc/en/lb2/Using-strong-error-handler.html
 summary: Strong-error-handler is an error handler for use in both development and production environments.
 ---
-
-{% remote_markdown https://raw.githubusercontent.com/strongloop/strong-error-handler/master/README.md %}
