@@ -1,12 +1,12 @@
 ---
-title: "DashDB"
+title: "DashDB connector"
 lang: en
 layout: page
 keywords: LoopBack
-tags:
+tags: connectors
 sidebar: lb2_sidebar
 permalink: /doc/en/lb2/DashDB.html
-summary:
+summary: The DashDB connector enables LoopBack applications to connect to DashDB data sources.
 ---
 
 # loopback-connector-dashdb

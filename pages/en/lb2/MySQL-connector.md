@@ -3,23 +3,14 @@ title: "MySQL connector"
 lang: en
 layout: page
 keywords: LoopBack
-tags:
+tags: connectors
 sidebar: lb2_sidebar
 permalink: /doc/en/lb2/MySQL-connector.html
-summary:
+summary: The MSSQL connector enables LoopBack applications to connect to Microsoft SQL Server data sources.
 ---
-
-{% include see-also.html content="
-* [Connecting to MySQL](Connecting-to-MySQL.html)
-* [loopback-example-database](https://github.com/strongloop/loopback-example-database/tree/mysql)
-* [Discovering models from relational databases](Discovering-models-from-relational-databases.html)
-* [Database discovery API](Database-discovery-API.html) 
-"%}
 
 {% include note.html content="The MySQL connector requires MySQL 5.0+.
 " %}
-
-<br/>
 
 ## Installation
 

@@ -35,7 +35,7 @@ properly on the doc site as well as in GitHub and npmjs.com.
 
 ### Hiding content from the docs
 
-To display content _only_ in GitHub, use HTML and enclose the content in a `<div class="gh-only">` tag.  The doc site has CSS to hide this content.  This is handy, for example, to hide the "see also" link to the docs, that wouldn't make sense in the docs.
+To display content _only_ in GitHub, use HTML and enclose the content in a `<p class="gh-only">...</p>` tag.  The doc site has CSS to hide this content.  This is handy, for example, to hide the "see also" link to the docs, or other content that wouldn't make sense in the docs.
 
 For example:
 

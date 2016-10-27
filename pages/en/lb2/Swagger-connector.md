@@ -3,16 +3,16 @@ title: "Swagger connector"
 lang: en
 layout: page
 keywords: LoopBack
-tags:
+tags: connectors
 sidebar: lb2_sidebar
 permalink: /doc/en/lb2/Swagger-connector.html
-summary:
+summary: The Swagger connector enables LoopBack applications to interact with other RESTful APIs described using the OpenAPI (Swagger) specification.
 ---
 
 # loopback-connector-swagger
 
 The Swagger connector enables LoopBack applications to interact with other RESTful APIs described using
-[OpenAPI Specification v.2.0 (fka The Swagger Specification)](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/2.0.md).
+[OpenAPI (Swagger) specification v.2.0](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/2.0.md).
 
 ### Configure a Swagger data source
 

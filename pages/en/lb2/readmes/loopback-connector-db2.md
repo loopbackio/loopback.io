@@ -1,13 +1,12 @@
-#loopback-connector-db2
+# loopback-connector-db2
 
 [IBM® DB2®](http://www.ibm.com/analytics/us/en/technology/db2/) is the database of choice for robust, enterprise-wide solutions handling high-volume workloads.
-It is optimized to deliver industry-leading performance while lowering costs.  The `loopback-connector-db2`
-module is the LoopBack connector for DB2.
+It is optimized to deliver industry-leading performance while lowering costs.  The `loopback-connector-db2` module is the LoopBack connector for DB2.
 
 The LoopBack DB2 connector supports:
 
-- All [CRUD operations](https://docs.strongloop.com/display/LB/Creating%2C+updating%2C+and+deleting+data).
-- [Queries](https://docs.strongloop.com/display/LB/Querying+data) with fields, limit, order, skip and where filters.
+- All [create, retrieve, update, and delete operations](http://loopback.io/doc/en/lb2/Creating-updating-and-deleting-data.html).
+- [Queries](http://loopback.io/doc/en/lb2/Querying-data.html) with fields, limit, order, skip and where filters.
 - All supported DB2 LUW versions.
 
 ## Installation
@@ -22,10 +21,10 @@ The `--save` option adds the dependency to the application's `package.json` file
 
 ## Configuration
 
-Use the [data source generator](https://docs.strongloop.com/display/LB/Data+source+generator) (`slc loopback:datasource`) to add the DB2 data source to your application.
+Use the [data source generator](http://loopback.io/doc/en/lb2/Data-source-generator.html)  to add the DB2 data source to your application.
 The entry in the application's `server/datasources.json` will look something like this:
 
-```
+```js
 "mydb": {
   "name": "mydb",
   "connector": "db2"
@@ -34,7 +33,7 @@ The entry in the application's `server/datasources.json` will look something lik
 
 Edit `server/datasources.json` to add other supported properties as required:
 
-```
+```js
 "mydb": {
   "name": "mydb",
   "connector": "db2",
@@ -63,7 +62,7 @@ supportDashDB  | Boolean | Create ROW ORGANIZED tables to support dashDB.
 Alternatively, you can create and configure the data source in JavaScript code.
 For example:
 
-```
+```js
 var DataSource = require('loopback-datasource-juggler').DataSource;
 var DB2 = require('loopback-connector-db2');
 

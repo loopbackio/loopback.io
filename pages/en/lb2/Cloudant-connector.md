@@ -3,10 +3,10 @@ title: "Cloudant connector"
 lang: en
 layout: page
 keywords: LoopBack
-tags:
+tags: connectors
 sidebar: lb2_sidebar
 permalink: /doc/en/lb2/Cloudant-connector.html
-summary:
+summary: The Cloudant connector enables LoopBack applications to connect to Cloudant data sources.
 ---
 
 **See also**: [Getting Started with LoopBack and IBM Cloudant](https://developer.ibm.com/bluemix/2015/09/10/getting-started-node-js-loopback-framework-ibm-cloudant/)

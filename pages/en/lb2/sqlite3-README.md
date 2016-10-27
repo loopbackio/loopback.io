@@ -4,8 +4,8 @@ lang: en
 layout: readme
 source: loopback-connector-sqlite3
 keywords: LoopBack, connector
-tags: [readme, connectors]
+tags: readme
 sidebar: lb2_sidebar
 permalink: /doc/en/lb2/sqlite3-README.html
-summary:
+summary: The SQLLite3 connector enables LoopBack applications to connect to SQLLite3 data sources.
 ---

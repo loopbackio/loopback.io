@@ -4,8 +4,8 @@ lang: en
 layout: readme
 source: loopback-connector-rest
 keywords: LoopBack, connector
-tags: [readme, connectors]
+tags: readme
 sidebar: lb2_sidebar
 permalink: /doc/en/lb2/rest-README.html
-summary:
+summary: The REST connector enables LoopBack applications to interact with other (third party) REST APIs.
 ---

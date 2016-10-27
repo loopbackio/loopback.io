@@ -3,10 +3,10 @@ title: "Oracle connector"
 lang: en
 layout: page
 keywords: LoopBack
-tags:
+tags: connectors
 sidebar: lb2_sidebar
 permalink: /doc/en/lb2/Oracle-connector.html
-summary:
+summary: The Oracle connector enables LoopBack applications to connect to Oracle data sources.
 ---
 
 {% include warning.html content="

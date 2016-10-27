@@ -4,8 +4,8 @@ lang: en
 layout: readme
 source: loopback-connector-soap
 keywords: LoopBack, connector
-tags: [readme, connectors]
+tags: readme
 sidebar: lb2_sidebar
 permalink: /doc/en/lb2/soap-README.html
-summary:
+summary: The SOAP connector enables LoopBack applications to interact with SOAP-based web services.
 ---

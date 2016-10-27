@@ -3,10 +3,10 @@ title: "Memory connector"
 lang: en
 layout: page
 keywords: LoopBack
-tags:
+tags: connectors
 sidebar: lb2_sidebar
 permalink: /doc/en/lb2/Memory-connector.html
-summary:
+summary: The built-in memory connector is persistent data source for development and testing.
 ---
 
 ## Overview

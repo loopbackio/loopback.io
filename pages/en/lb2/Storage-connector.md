@@ -3,11 +3,17 @@ title: "Storage connector"
 lang: en
 layout: page
 keywords: LoopBack
-tags:
+tags: connectors
 sidebar: lb2_sidebar
 permalink: /doc/en/lb2/Storage-connector.html
-summary:
+summary: The storage connector enables LoopBack applications to interact with files on cloud storage providers and the local (server) file system.
 ---
+
+{% include see-also.html content="
+* [Storage component](Storage-component.html)
+* [Storage component API docs](https://apidocs.strongloop.com/loopback-component-storage/)
+* [Storage component REST API](Storage-component-REST-API.html)
+" %}
 
 ## Installation
 
@@ -66,7 +72,7 @@ for example as shown in the [storage service example](https://github.com/strong
 
 ## Creating a storage model
 
-Use the [model generator](Model-generator.html) to create a new model, then edit the model.json file, 
+Use the [model generator](Model-generator.html) to create a new model, then edit the `model.json` file, 
 as shown in the [storage service example](https://github.com/strongloop/loopback-component-storage/blob/master/example-2.0/):
 
 {% include code-caption.html content="/server/models/container.json" %}

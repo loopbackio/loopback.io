@@ -3,10 +3,10 @@ title: "Remote connector"
 lang: en
 layout: page
 keywords: LoopBack
-tags:
+tags: connectors
 sidebar: lb2_sidebar
 permalink: /doc/en/lb2/Remote-connector.html
-summary:
+summary: The remote connector enables you to use a LoopBack application as a data source via REST.
 ---
 
 **See also**: [Example application](https://github.com/strongloop/loopback-example-connector/tree/remote)

@@ -3,7 +3,7 @@ title: "Push connector"
 lang: en
 layout: page
 keywords: LoopBack
-tags:
+tags: connectors
 sidebar: lb2_sidebar
 permalink: /doc/en/lb2/Push-connector.html
 summary:

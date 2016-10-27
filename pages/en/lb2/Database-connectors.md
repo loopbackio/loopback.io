@@ -17,18 +17,18 @@ The data access methods on a persisted model are exposed to REST by default; see
 You can connect models using relations to reflect relationships among data. For more information about relations, see 
 [Creating model relations](Creating-model-relations.html).
 
-Available connectors:
+There are officially-supported connectors for the following databases:
 
-* [Cloudant connector](Cloudant-connector.html)
+* [Cloudant](Cloudant-connector.html)
 * [DashDB](DashDB.html)
-* [DB2 connector](DB2-connector.html)
+* [DB2](DB2-connector.html)
+* [DB2 for iSeries](DB2-iSeries-connector.html)
 * [DB2 for z/OS](DB2-for-z-OS.html)
 * [Informix](Informix.html)
-* [Memory connector](Memory-connector.html)
-* [MongoDB connector](MongoDB-connector.html)
-* [MySQL connector](MySQL-connector.html)
-* [Oracle connector](Oracle-connector.html)
-* [PostgreSQL connector](PostgreSQL-connector.html)
-* [Redis connector](Redis-connector.html)
-* [SQL Server connector](SQL-Server-connector.html)
+* [MongoDB](MongoDB-connector.html)
+* [MySQL](MySQL-connector.html)
+* [Oracle](Oracle-connector.html)
+* [PostgreSQL](PostgreSQL-connector.html)
+* [Redis](Redis-connector.html)
+* [SQL Server](SQL-Server-connector.html)
 * [SQLite3](SQLite3.html)

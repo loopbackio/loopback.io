@@ -2,6 +2,7 @@
 title: "Querying data"
 lang: en
 layout: page
+toc: false
 keywords: LoopBack
 tags:
 sidebar: lb2_sidebar
@@ -19,6 +20,8 @@ summary:
 * [Where filter](Where-filter.html)
 * [Querying related models](Querying-related-models.html).
 " %}
+
+{% include toc.html %}
 
 ## Overview
 

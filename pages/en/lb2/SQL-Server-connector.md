@@ -3,18 +3,16 @@ title: "SQL Server connector"
 lang: en
 layout: page
 keywords: LoopBack
-tags:
+tags: connectors
 sidebar: lb2_sidebar
 permalink: /doc/en/lb2/SQL-Server-connector.html
-summary:
+summary: The SQL Server connector enables LoopBack applications to connect to Microsoft SQL Server data sources.
 ---
 
-**Related articles**:
-
-**See also**:
-
+{% include see-also.html content="
 * [loopback-example-database](https://github.com/strongloop/loopback-example-database/tree/mssql)
 * [Database discovery API](http://apidocs.strongloop.com/loopback-datasource-juggler/#datasource-prototype-discoverandbuildmodels)
+" %}
 
 {% include note.html content="The SQL Server connector requires SQL Server 2005+.
 " %}
@@ -46,9 +44,10 @@ Edit `datasources.json` to add other properties that enable you to connect the
 
 To connect to a SQL Server instance running in Azure, you must specify a qualified user name with hostname, and add to the following to the data source declaration:
 
-```javascript
-\"options\": {
-   \"encrypt\": true
+```js
+"options": {
+   "encrypt": true
+   ...
 }
 ```
 

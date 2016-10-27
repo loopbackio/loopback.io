@@ -3,13 +3,14 @@ title: "Storage component"
 lang: en
 layout: page
 keywords: LoopBack
-tags:
+tags: components
 sidebar: lb2_sidebar
 permalink: /doc/en/lb2/Storage-component.html
 summary:
 ---
 
 {% include see-also.html content="
+* [Storage connector](Storage-connector.html)
 * [Storage component API docs](https://apidocs.strongloop.com/loopback-component-storage/)
 * [Storage component REST API](Storage-component-REST-API.html)
 " %}
@@ -29,11 +30,9 @@ You use the storage component like any other LoopBack data source such as a data
 Like other data sources, it supports create, read, update, and delete (CRUD) operations with exactly the same LoopBack and REST APIs.
 
 {% include note.html content="
-
 This component does not yet provide metadata management \"out of the box\".
 For an example of how to store metadata along with files,
 see [How to store files with metadata in LoopBack?](http://stackoverflow.com/questions/28885282/how-to-store-files-with-meta-data-in-loopback)
-
 " %}
 
 ## Installation
@@ -49,10 +48,8 @@ $ npm install loopback-component-storage
 For an example of using the storage component, see [https://github.com/strongloop/loopback-example-storage](https://github.com/strongloop/loopback-example-storage). 
 
 {% include tip.html content="
-
 This repository contains two directories: `example-2.0` for the LoopBack 2.x app, and `example`, for the legacy LoopBack 1.x app. 
 **Use the version 2.x example** unless you are working with a legacy LoopBack 1.x app.
-
 " %}
 
 Follow these steps to run the LoopBack 2.x example:
@@ -292,7 +289,6 @@ as shown in the following table.
 
 Once you create a container, it will provide both a REST and Node API, as described in the following table.
 For details, see the complete [API documentation](http://apidocs.strongloop.com/loopback-component-storage/).
-
 
 <table>
   <tbody>

@@ -3,16 +3,16 @@ title: "SOAP connector"
 lang: en
 layout: page
 keywords: LoopBack
-tags:
+tags: connectors
 sidebar: lb2_sidebar
 permalink: /doc/en/lb2/SOAP-connector.html
-summary:
+summary: The SOAP connector enables LoopBack applications to interact with SOAP-based web services.
 ---
 
-**See also**:
-
+{% include see-also.html content="
 * [Turn SOAP into REST APIs with LoopBack](https://strongloop.com/strongblog/soap-into-rest-apis-with-loopback-node-js/) (Blog)
 * [Example app](https://github.com/strongloop/loopback-example-connector/tree/soap)
+" %}
 
 The SOAP connector enables LoopBack applications to interact with [SOAP](http://www.w3.org/TR/soap)-based web services described using [WSDL](http://www.w3.org/TR/wsdl).
 

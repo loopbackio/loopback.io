@@ -418,157 +418,6 @@ children:
       url: /doc/ja/lb2/Implementing-auto-migration.html
       output: 'web, pdf'
 
-- title: 'Connectors reference'
-  url: /doc/ja/lb2/Connectors-reference.html
-  output: 'web'
-  children:
-
-  - title: 'Memory connector'
-    url: /doc/ja/lb2/Memory-connector.html
-    output: 'web, pdf'
-
-  - title: 'Database connectors'
-    url: /doc/ja/lb2/Database-connectors.html
-    output: 'web'
-    children:
-
-    - title: 'Cloudant connector'
-      url: /doc/ja/lb2/Cloudant-connector.html
-      output: 'web, pdf'
-
-    - title: DashDB
-      url: /doc/ja/lb2/DashDB.html
-      output: 'web, pdf'
-
-    - title: 'DB2 connector'
-      url: /doc/ja/lb2/DB2-connector.html
-      output: 'web, pdf'
-
-    - title: 'DB2 for z/OS'
-      url: /doc/ja/lb2/DB2-for-z-OS.html
-      output: 'web, pdf'
-
-    - title: Informix
-      url: /doc/ja/lb2/Informix.html
-      output: 'web, pdf'
-
-    - title: 'MongoDB connector'
-      url: /doc/ja/lb2/MongoDB-connector.html
-      output: 'web, pdf'
-      children:
-
-      - title: 'MongoDB Connector Tutorial'
-        url: /doc/ja/lb2/Connecting-to-MongoDB.html
-        output: 'web, pdf'
-
-      - title: 'Using MongoLab'
-        url: /doc/ja/lb2/Using-MongoLab.html
-        output: 'web, pdf'
-
-    - title: 'MySQL connector'
-      url: /doc/ja/lb2/MySQL-connector.html
-      output: 'web, pdf'
-      children:
-
-      - title: 'MySQL Connector Tutorial'
-        url: /doc/ja/lb2/Connecting-to-MySQL.html
-        output: 'web, pdf'
-
-    - title: 'Oracle connector'
-      url: /doc/ja/lb2/Oracle-connector.html
-      output: 'web, pdf'
-      children:
-
-      - title: 'Installing the Oracle connector'
-        url: /doc/ja/lb2/Installing-the-Oracle-connector.html
-        output: 'web, pdf'
-
-      - title: 'Oracle connector tutorial'
-        url: /doc/ja/lb2/Connecting-to-Oracle.html
-        output: 'web, pdf'
-
-    - title: 'PostgreSQL connector'
-      url: /doc/ja/lb2/PostgreSQL-connector.html
-      output: 'web, pdf'
-      children:
-
-      - title: 'PostgreSQL connector tutorial'
-        url: /doc/ja/lb2/Connecting-to-PostgreSQL.html
-        output: 'web, pdf'
-
-    - title: 'Redis connector'
-      url: /doc/ja/lb2/Redis-connector.html
-      output: 'web, pdf'
-
-    - title: 'SQL Server connector'
-      url: /doc/ja/lb2/SQL-Server-connector.html
-      output: 'web, pdf'
-      children:
-
-      - title: 'SQL Server connector tutorial'
-        url: /doc/ja/lb2/Connecting-to-Microsoft-SQL-Server.html
-        output: 'web, pdf'
-
-    - title: 'SQLite3 connector'
-      url: /doc/ja/lb2/SQLite3.html
-      output: 'web, pdf'
-
-  - title: 'Other connectors'
-    url: /doc/ja/lb2/Other-connectors.html
-    output: 'web'
-    children:
-
-    - title: 'Email connector'
-      url: /doc/ja/lb2/Email-connector.html
-      output: 'web, pdf'
-
-    - title: 'Push connector'
-      url: /doc/ja/lb2/Push-connector.html
-      output: 'web, pdf'
-
-    - title: 'Remote connector'
-      url: /doc/ja/lb2/Remote-connector.html
-      output: 'web, pdf'
-      children:
-
-      - title: 'Remote connector example'
-        url: /doc/ja/lb2/Remote-connector-example.html
-        output: 'web, pdf'
-
-      - title: 'Strong Remoting'
-        url: /doc/ja/lb2/Strong-Remoting.html
-        output: 'web, pdf'
-
-    - title: 'REST connector'
-      url: /doc/ja/lb2/REST-connector.html
-      output: 'web, pdf'
-      children:
-
-      - title: 'REST connector example'
-        url: /doc/ja/lb2/REST-connector-example.html
-        output: 'web, pdf'
-
-    - title: 'SOAP connector'
-      url: /doc/ja/lb2/SOAP-connector.html
-      output: 'web, pdf'
-      children:
-
-      - title: 'SOAP connector example'
-        url: /doc/ja/lb2/SOAP-Connector-example.html
-        output: 'web, pdf'
-
-    - title: 'Storage connector'
-      url: /doc/ja/lb2/Storage-connector.html
-      output: 'web, pdf'
-
-    - title: 'Swagger connector'
-      url: /doc/ja/lb2/Swagger-connector.html
-      output: 'web, pdf'
-
-  - title: 'Community connectors'
-    url: /doc/ja/lb2/Community-connectors.html
-    output: 'web, pdf'
-
 - title: 'Working with data'
   url: /doc/ja/lb2/Working-with-data.html
   output: 'web, pdf'
@@ -903,6 +752,161 @@ children:
       url: /doc/ja/lb2/Isomorphic-LoopBack-example.html
       output: 'web, pdf'
 
+- title: 'Connectors reference'
+  url: /doc/ja/lb2/Connectors-reference.html
+  output: 'web'
+  children:
+
+  - title: 'Memory connector'
+    url: /doc/ja/lb2/Memory-connector.html
+    output: 'web, pdf'
+
+  - title: 'Database connectors'
+    url: /doc/ja/lb2/Database-connectors.html
+    output: 'web'
+    children:
+
+    - title: 'Cloudant connector'
+      url: /doc/ja/lb2/Cloudant-connector.html
+      output: 'web, pdf'
+
+    - title: DashDB
+      url: /doc/ja/lb2/DashDB.html
+      output: 'web, pdf'
+
+    - title: 'DB2 connector'
+      url: /doc/ja/lb2/DB2-connector.html
+      output: 'web, pdf'
+
+    - title: 'DB2 for z/OS'
+      url: /doc/ja/lb2/DB2-for-z-OS.html
+      output: 'web, pdf'
+
+    - title: Informix
+      url: /doc/ja/lb2/Informix.html
+      output: 'web, pdf'
+
+    - title: 'MongoDB connector'
+      url: /doc/ja/lb2/MongoDB-connector.html
+      output: 'web, pdf'
+      children:
+
+      - title: 'MongoDB Connector Tutorial'
+        url: /doc/ja/lb2/Connecting-to-MongoDB.html
+        output: 'web, pdf'
+
+      - title: 'Using MongoLab'
+        url: /doc/ja/lb2/Using-MongoLab.html
+        output: 'web, pdf'
+
+    - title: 'MySQL connector'
+      url: /doc/ja/lb2/MySQL-connector.html
+      output: 'web, pdf'
+      children:
+
+      - title: 'MySQL Connector Tutorial'
+        url: /doc/ja/lb2/Connecting-to-MySQL.html
+        output: 'web, pdf'
+
+    - title: 'Oracle connector'
+      url: /doc/ja/lb2/Oracle-connector.html
+      output: 'web, pdf'
+      children:
+
+      - title: 'Installing the Oracle connector'
+        url: /doc/ja/lb2/Installing-the-Oracle-connector.html
+        output: 'web, pdf'
+
+      - title: 'Oracle connector tutorial'
+        url: /doc/ja/lb2/Connecting-to-Oracle.html
+        output: 'web, pdf'
+
+    - title: 'PostgreSQL connector'
+      url: /doc/ja/lb2/PostgreSQL-connector.html
+      output: 'web, pdf'
+      children:
+
+      - title: 'PostgreSQL connector tutorial'
+        url: /doc/ja/lb2/Connecting-to-PostgreSQL.html
+        output: 'web, pdf'
+
+    - title: 'Redis connector'
+      url: /doc/ja/lb2/Redis-connector.html
+      output: 'web, pdf'
+
+    - title: 'SQL Server connector'
+      url: /doc/ja/lb2/SQL-Server-connector.html
+      output: 'web, pdf'
+      children:
+
+      - title: 'SQL Server connector tutorial'
+        url: /doc/ja/lb2/Connecting-to-Microsoft-SQL-Server.html
+        output: 'web, pdf'
+
+    - title: 'SQLite3 connector'
+      url: /doc/ja/lb2/SQLite3.html
+      output: 'web, pdf'
+
+  - title: 'Other connectors'
+    url: /doc/ja/lb2/Other-connectors.html
+    output: 'web'
+    children:
+
+    - title: 'Email connector'
+      url: /doc/ja/lb2/Email-connector.html
+      output: 'web, pdf'
+
+    - title: 'JSON-RPC connector'
+      url: /doc/ja/lb2/JSON-RPC-connector.html
+      output: 'web, pdf'
+
+    - title: 'Push connector'
+      url: /doc/ja/lb2/Push-connector.html
+      output: 'web, pdf'
+
+    - title: 'Remote connector'
+      url: /doc/ja/lb2/Remote-connector.html
+      output: 'web, pdf'
+      children:
+
+      - title: 'Remote connector example'
+        url: /doc/ja/lb2/Remote-connector-example.html
+        output: 'web, pdf'
+
+      - title: 'Strong Remoting'
+        url: /doc/ja/lb2/Strong-Remoting.html
+        output: 'web, pdf'
+
+    - title: 'REST connector'
+      url: /doc/ja/lb2/REST-connector.html
+      output: 'web, pdf'
+      children:
+
+      - title: 'REST connector example'
+        url: /doc/ja/lb2/REST-connector-example.html
+        output: 'web, pdf'
+
+    - title: 'SOAP connector'
+      url: /doc/ja/lb2/SOAP-connector.html
+      output: 'web, pdf'
+      children:
+
+      - title: 'SOAP connector example'
+        url: /doc/ja/lb2/SOAP-Connector-example.html
+        output: 'web, pdf'
+
+    - title: 'Storage connector'
+      url: /doc/ja/lb2/Storage-connector.html
+      output: 'web, pdf'
+
+    - title: 'Swagger connector'
+      url: /doc/ja/lb2/Swagger-connector.html
+      output: 'web, pdf'
+
+  - title: 'Community connectors'
+    url: /doc/ja/lb2/Community-connectors.html
+    output: 'web, pdf'
+    
 - title: 'Project layout reference'
   url: /doc/ja/lb2/Project-layout-reference.html
   output: 'web, pdf'

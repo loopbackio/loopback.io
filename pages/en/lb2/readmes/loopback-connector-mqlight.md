@@ -1,17 +1,15 @@
-**PLEASE CREATE ISSUES AT https://github.com/strongloop/loopback/issues**
-
----
-
 # loopback-connector-mqlight
 
-Loopback connector for MQ Light
+<p class="gh-only">
+<b>PLEASE CREATE ISSUES AT https://github.com/strongloop/loopback/issues</b>.
+</p>
 
-[IBM MQ Light®]() is a simple yet powerful AMQP based messaging API.  The loopback-connector-mqlight module is the Loopback Connector for IBM MQ Light.
+[IBM MQ Light®](https://developer.ibm.com/messaging/mq-light/) is a simple yet powerful AMQP-based messaging API.  The `loopback-connector-mqlight` module is the Loopback connector for IBM MQ Light.  
 
 The LoopBack MQ Light connector supports:
 
-- All [CRUD operations](https://docs.strongloop.com/display/LB/Creating%2C+updating%2C+and+deleting+data).
-- Sending/Receiving message from IBM MQ Light.
+- All [create, retrieve, update, and delete operations](http://loopback.io/doc/en/lb2/Creating-updating-and-deleting-data.html).
+- Sending messages to and receiving messages from IBM MQ Light.
 
 ## Installation
 
@@ -25,18 +23,18 @@ The `--save` option adds the dependency to the applications `package.json` file.
 
 ## Configuration
 
-Use the [data source generator](https://docs.strongloop.com/display/APIC/Data+source+generator) to add the data source to your application. The entry in the application's `server/datasources.json` will look something like this:
+Use the [data source generator](http://loopback.io/doc/en/lb2/Data-source-generator.html) to add the MQ Light data source to your application. The resulting entry in the application's `server/datasources.json` will look something like this:
 
-```
+```js
 "mymq": {
   "name": "mymq",
   "connector": "mqlight"
 }
 ```
 
-Edit `server/datasources.json to add other supported properties as required:
+Edit `server/datasources.json` to add other supported properties as required:
 
-```
+```js
 "mydb": {
   "name": "mymq",
   "connector": "mqlight",
