@@ -151,8 +151,8 @@ To connect a model to a data source, follow these steps:
 The model generator lists the [memory connector](Memory-connector.html), \"no data source,\" and data sources listed in `datasources.json`.  That's why you created the data source first in step 1.
 " %}
 
-    You can also create models from an existing database.
-    See [Creating models](Creating-models.html) for more information.
+You can also create models from an existing database.
+See [Creating models](Creating-models.html) for more information.
 
 ## Environment-specific configuration
 
