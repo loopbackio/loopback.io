@@ -6,7 +6,7 @@ keywords: LoopBack
 tags:
 sidebar: lb2_sidebar
 permalink: /doc/en/lb2/Command-line-tools.html
-summary: You can install either TStrongLoop or IBM API Connect.
+summary: This article summarizes LoopBack CLI tool commands.
 ---
 Two command-line tools are available for Loopback:
 
