@@ -45,6 +45,14 @@ children:
     output: web, pdf
     children:
 
+    - title: Conditional logic
+      url: /doc/en/contrib/conditional_logic.html
+      output: web, pdf
+
+    - title: Content reuse
+      url: /doc/en/contrib/content_reuse.html
+      output: web, pdf
+
     - title: Including READMEs
       url: /doc/en/contrib/Including-READMEs.html
       output: web, pdf
@@ -58,12 +66,8 @@ children:
       url: /doc/en/contrib/Markdown-style-guide.html
       output: web, pdf
 
-    - title: Conditional logic
-      url: /doc/en/contrib/conditional_logic.html
-      output: web, pdf
-
-    - title: Content reuse
-      url: /doc/en/contrib/content_reuse.html
+    - title: README guidelines
+      url: /doc/en/contrib/README-guidelines.html
       output: web, pdf
 
   - title: Navigation
