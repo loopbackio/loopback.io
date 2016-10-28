@@ -33,7 +33,6 @@ We attempt to review and merge PRs as soon as possible; in general, we'll try to
 - [Jekyll static site genertor](https://jekyllrb.com/)
 - [Liquid Templates](https://shopify.github.io/liquid/)
 - [GitHub repo for Jekyll Documentation Theme](https://github.com/tomjohnson1492/documentation-theme-jekyll)
-- [Current LoopBack docs in Confluence](http://docs.strongloop.com)
 
 ## What to work on
 
