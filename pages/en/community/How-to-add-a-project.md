@@ -32,6 +32,7 @@ To reuse your project README, follow these steps:
   - Change the `permalink` property to match the name of the file, for example `/doc/en/community/My-awesome-project.html`.
   - Add any `keywords` you want for search-engine optimization (optional).
   - If you don't want an automatically-generated page TOC, add `toc: false`.
+  - Add a short summary of the project in the `summary` property (optional).
 1. Edit the rest of the page to fill in the information for your project, replacing the sample content and instructions.
 
 ### Front matter for README page
