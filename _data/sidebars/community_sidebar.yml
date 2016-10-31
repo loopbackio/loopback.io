@@ -6,11 +6,22 @@ children:
     url: /doc/en/community/How-to-add-a-project.html
     output: 'web'
 
-  - title: 'Active projects'
-    url: /doc/en/community/Active-projects.html
+  - title: 'Elasticsearch connector'
+    url: /doc/en/community/Elasticsearch-connector.html
     output: 'web'
-    children:
 
-    - title: 'Sample project'
-      url: /doc/en/community/Sample-project.html
-      output: 'web'
+  - title: 'LoopBack SDK Builder'
+    url: /doc/en/community/SDK-builder.html
+    output: 'web'
+
+  - title: 'JSON Schemas'
+    url: /doc/en/community/JSON-schemas.html
+    output: 'web'
+
+  - title: 'IoT demo'
+    url: /doc/en/community/IoT-demo.html
+    output: 'web'
+
+  - title: 'Sample project'
+    url: /doc/en/community/Sample-project.html
+    output: 'web'

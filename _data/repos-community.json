@@ -1,0 +1,8 @@
+{
+  "repos" : [
+  { "org": "strongloop-community", "repoName":  "StrongLoop-IoT-Demo"},
+  { "org": "strongloop-community", "repoName":  "loopback-connector-elastic-search"},
+  { "org": "Sequoia", "repoName":  "loopback-json-schemas"},
+  { "org": "mean-expert-official", "repoName":  "loopback-sdk-builder"}
+ ]
+}
