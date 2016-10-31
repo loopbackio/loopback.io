@@ -11,35 +11,17 @@ permalink: /doc/en/community/Sample-project.html
 
 Prvovide a link to the community project, usually a GitHub and/or npm URL.
 
-For example:
-
-https://github.com/crcn/sift.js
-
 ## Overview
 
 Provide a brief introduction of the project's functionality here.
-
-Example: Validate objects & filter arrays with MongoDB queries.
 
 ## Features
 
 Provide a list of the features here.
 
-Example:
-
-- Querying an in-memory array of JavaScript objects in nodeJs
-- Filtering of immutable data structures
-- Etc.
-
 ## Benefits of the project
 
 Describe how your project benefits the LoopBack developer.
-
-Example:
-
-Improve our memory-connector.
-
-Use in-memory as the mechanism for regular loopback functionalities (such as building query) for handling Data (eg. ACL handling).
 
 ## Demo or sample code
 
