@@ -8,7 +8,9 @@ tags:
 permalink: /doc/pt-br/lb2/index.html
 summary: Por favor, ajudar a traduzir a documentação em Português.
 ---
-Leia [Conceitos básicos de LoopBack](LoopBack-core-concepts.html) para entender sobre conceitos-chave de utilização do framework.
+1. **[Instalar as ferramentas do LoopBack](Installation)**, com IBM API Connect (`apic`) ou Ferramenta StrongLoop (`slc`).
+1. **Leia [Conceitos básicos de LoopBack](LoopBack-core-concepts.html)** para entender melhor a utilização do framework.
+1. **Segue [Iniciando com LoopBack](Getting-started-with-LoopBack.html)** para um rápido tutorial introdutório.
 
 Grupo de discussão: [LoopBack Developer Forum](https://groups.google.com/forum/#!forum/loopbackjs).
 
@@ -24,7 +26,7 @@ content="
 Consulte [IBM API Connect](https://developer.ibm.com/apiconnect/) para mais informações.
 " %}
 
-**Se você for cliente IBM, para suporte técnico consulte [Portal de suporte IBM](http://www-01.ibm.com/support/docview.wss?uid=swg21593214).**
+**Se você é cliente IBM, para suporte técnico consulte [Portal de suporte IBM](http://www-01.ibm.com/support/docview.wss?uid=swg21593214).**
 
 ## O Framework LoopBack
 
@@ -38,15 +40,83 @@ O diagrama a seguir ilustra os principais módulos do LoopBack, e como eles est�
 
 {% include image.html file="9830413.png" alt="LoopBack modules" %}
 
-### LoopBack framework modules
+### Módulos do Framework LoopBack
 
-|  Category  |  Description |  Use to... |  Modules
-|  ------------- |  ------------- |  -------------- |  --------------|
-| Models | Model and API server| Dynamically mock-up models and expose them as APIs without worrying about persisting. | loopback |
-| Abstraction | Model data abstraction to physical persistence| Connect to multiple data sources or services and get back an abstracted model with CRUD capabilities independent on how it is physically stored. |  loopback-datasource-juggler |
-| Initialization | Application initialization | Configure data-sources, custom models, configure models and attach them to data sources; Configure application settings and run custom boot scripts. | loopback-boot |
-| Sequencing | Middleware execution | Configure middleware to be executed at various points during application lifecycle. | loopback-phase |
-| Data | RDBMS and noSQL physical data sources | Enable connections to RDBMS, noSQL data sources and get back an abstracted model. | loopback-connector-mongodb loopback-connector-mysql   loopback-connector-postgresql loopback-connector-msssql oopback-connector-oracle |
-| Integration | General system connectors | Connect to an existing system that expose APIs through common enterprise and web interfaces |  loopback-connector-rest   loopback-connector-soap   |
-| Components | Add-ons to core LoopBack | Integrate with pre-built services packaged into components. | loopback-component-push loopback-component-storage  loopback-component-passport    |
-| Clients | Client SDKs | Develop your client app using native platform objects (iOS, Android, AngularJS) that interact with LoopBack APIs via REST. | loopback-sdk-ios loopback-sdk-android loopback-sdk-angular |
+<table style="width: 1000px;">
+  <thead>
+    <tr>
+      <th style="width: 80px;">Categoria</th>
+      <th style="width:200px;">Descrição</th>
+      <th>Use para…</th>
+      <th style="width: 280px;">Módulos</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Modelos</td>
+      <td>Modelo e API do servidor</td>
+      <td>Dynamically mock-up models e mostrar como APIs sem se preocupar com persistência.</td>
+      <td>Loopback</td>
+    </tr>
+    <tr>
+      <td>Abstração</td>
+      <td>Modelo de abstração de dados para persistência física</td>
+      <td>Conecta-se a vários banco de dados ou serviços e obtendo como resposta um modelo abstrato com recursos CRUD independente do banco de dados ou serviço usado.</td>
+      <td>loopback-datasource-juggler</td>
+    </tr>
+    <tr>
+      <td>Inicialização</td>
+      <td>Inicialização do Aplicativo</td>
+      <td>Configurar base de dados, personalizar modelos, configurar modelos e vinculá-los à base de dados, definir configurações de aplicativo e executar scripts de inicialização personaliados.</td>
+      <td>loopback-boot</td>
+    </tr>
+    <tr>
+      <td>Sequenciamento</td>
+      <td>Execução de middleware</td>
+      <td>Configurar middleware para ser executado em vários pontos durante o ciclo de vida do aplicativo.</td>
+      <td>loopback-phase</td>
+    </tr>
+    <tr>
+      <td>Dados</td>
+      <td>Base de dados física de RDBMS e noSQL</td>
+      <td>Habilitar conexões com base de dados RDBMS e noSQL, recuperando um modelo abstrato.</td>
+      <td markdown="1">
+- loopback-connector-mongodb
+- loopback-connector-mysql
+- loopback-connector-postgresql
+- loopback-connector-msssql
+- loopback-connector-oracle
+- [Muitos outros...](Connectors-reference.html)
+</td>
+    </tr>
+    <tr>
+      <td>Integração</td>
+      <td>Conectores de sistema em geral</td>
+      <td>Conecta-se a um sistema existente que expoem regras de negócio comuns através de APIs e interfaces web</td>
+      <td markdown="1">
+- loopback-connector-rest
+- loopback-connector-soap
+</td>
+    </tr>
+    <tr>
+      <td>Componentes</td>
+      <td>Complementos para o núcleo LoopBack</td>
+      <td>Integrar com serviços pre-built empacotados em componentes</td>
+      <td markdown="1">
+- loopback-component-push
+- loopback-component-storage
+- loopback-component-passport
+</td>
+    </tr>
+    <tr>
+      <td>Clientes</td>
+      <td>Clientes SDKs</td>
+      <td>Desenvolver aplicativos clientes usando plataforma nativa (iOS, Android, AngularJS) que interagem com o LoopBack APIs via REST.</td>
+<td markdown="1">
+- loopback-sdk-ios
+- loopback-sdk-android
+- loopback-sdk-angular
+</td>
+    </tr>
+  </tbody>
+</table>
