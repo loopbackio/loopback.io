@@ -87,6 +87,14 @@ $ apic create --type datasource
 [?] Enter the connector name without the loopback-connector- prefix: loopback-component-storage
 ```
 
+```shell
+$ slc loopback:datasource
+[?] Enter the data-source name: myfile
+[?] Select the connector for myfile: other
+[?] Enter the connector name without the loopback-connector- prefix: loopback-component-storage
+[?] Install storage (Y/n)
+```
+
 Then edit `/server/datasources.json` and manually add the properties of the data source (properties other than "name" and "connector".
 
 For example:
