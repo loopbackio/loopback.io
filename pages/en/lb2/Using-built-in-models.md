@@ -52,12 +52,12 @@ Use access control models to control access to applications, resources, and met
 * [ACL](http://apidocs.strongloop.com/loopback/#acl)
 * [AccessToken](http://apidocs.strongloop.com/loopback/#accesstoken)
 * [Scope](http://apidocs.strongloop.com/loopback/#scope)
-* [Role](http://apidocs.strongloop.com/loopback/#role)
+* [Role](http://apidocs.strongloop.com/loopback/#role-object)
 * [RoleMapping](http://apidocs.strongloop.com/loopback/#rolemapping)
 
 ### ACL model
 
-An ACL model connects principals to protected resources. The system grants permissions to principals (users or applications, that can be grouped into roles) .
+An ACL model connects principals to protected resources. The system grants permissions to principals (users or applications, that can be grouped into roles).
 
 * Protected resources: the model data and operations (model/property/method/relation)
 * Whether a given client application or user is allowed to access (read, write, or execute) the protected resource.

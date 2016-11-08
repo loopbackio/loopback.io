@@ -2,17 +2,15 @@
 title: "PersistedModel REST API"
 lang: en
 layout: page
+toc: false
 keywords: LoopBack
-tags:
+tags: models
 sidebar: lb2_sidebar
 permalink: /doc/en/lb2/PersistedModel-REST-API.html
-summary:
+summary: PersistedModel is the base class for models connected to persistent data sources such as databases and is also the base class for all built-in models (except Email).
 ---
 
-{% include note.html content="
-You can use the [StrongLoop API Explorer](Use-API-Explorer.html) to quickly construct and make requests
-to a LoopBack app running on the server. If a LoopBack app is running on `localhost` at port `3000`, then by default API Explorer is available at [http://localhost:3000/explorer/](http://localhost:3000/explorer/).
-" %}
+{% include content/API-Explorer.md %}
 
 {% include see-also.html content="
 * [Creating models](Creating-models.html)
@@ -22,6 +20,8 @@ to a LoopBack app running on the server. If a LoopBack app is running on `localh
 * [Model definition JSON file](Model-definition-JSON-file.html)
 * [PersistedModel REST API](PersistedModel-REST-API.html)
 " %}
+
+{% include toc.html %}
 
 ## Overview
 

@@ -2,41 +2,36 @@
 title: "User REST API"
 lang: en
 layout: page
+toc: false
 keywords: LoopBack
-tags:
+tags: models
 sidebar: lb2_sidebar
 permalink: /doc/en/lb2/User-REST-API.html
-summary:
+summary: The built-in User model represents an application end-user.
 ---
 
-{% include note.html content="
-You can use the [StrongLoop API Explorer](Use-API-Explorer.html) to quickly construct and make requests to a LoopBack app running on the server.
-If a LoopBack app is running on `localhost` at port `3000`, then by default API Explorer is available at
-[http://localhost:3000/explorer/](http://localhost:3000/explorer/).
-" %}
+{% include content/API-Explorer.md %}
 
 All of the endpoints in the table below are inherited from [PersistedModel REST API](PersistedModel-REST-API.html), except for the following:
+
+- [Log in user](#log-in-user) - `POST /users/login`
+- [Log out user](#log-out-user) - `POST /users/logout`
+- [Confirm email address](#confirm-email-address) - `GET /users/confirm`
+- [Reset password](#reset-password) - `POST /users/reset`
 
 **Quick reference**
 
 <table>
   <tbody>
     <tr>
-      <th>
-        <p>URI Pattern</p>
-      </th>
+      <th>URI Pattern</th>
       <th>HTTP Verb</th>
       <th>Default Permission</th>
       <th>Description</th>
-      <th>Arguments</th>
+      <th style="width:300px;">Arguments</th>
     </tr>
     <tr>
-      <td>
-        <p><code>/users</code></p>
-        <div style="width:120px;">
-          <p>&nbsp;</p>
-        </div>
-      </td>
+      <td><code>/users</code></td>
       <td>POST</td>
       <td>Allow</td>
       <td>
@@ -140,7 +135,7 @@ All of the endpoints in the table below are inherited from [PersistedModel REST
       <td><code>/users/confirm</code></td>
       <td>GET</td>
       <td>Deny</td>
-      <td><a href="User-REST-API.html">Confirm email address</a> for specified user.</td>
+      <td><a href="#confirm-email-address">Confirm email address</a> for specified user.</td>
       <td>
         <p>Query parameters:</p>
         <ul>
@@ -197,20 +192,13 @@ All of the endpoints in the table below are inherited from [PersistedModel REST
       </td>
     </tr>
     <tr>
-      <td>
-        <p><code>/users/login[?include=user]</code></p>
-        <div style="width: 240px;">
-          <p>&nbsp;</p>
-        </div>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-      </td>
+      <td><code>/users/login[?include=user]</code></td>
       <td>
         <p>POST</p>
       </td>
       <td>Allow</td>
       <td>
-        <p><a href="User-REST-API.html">Log in</a> the specified user.</p>
+        <p><a href="#log-in-user">Log in</a> the specified user.</p>
       </td>
       <td>
         <p>Username and password in POST body.</p>
@@ -219,18 +207,18 @@ All of the endpoints in the table below are inherited from [PersistedModel REST
     </tr>
     <tr>
       <td>
-        <pre>/users/logout</pre>
+        <code>/users/logout</code>
       </td>
       <td>POST</td>
       <td>Allow</td>
-      <td><a href="User-REST-API.html">Log out</a> the specified user.</td>
+      <td><a href="#log-out-user">Log out</a> the specified user.</td>
       <td>Access token in POST body.</td>
     </tr>
     <tr>
       <td><code>/users/reset</code></td>
       <td>POST</td>
       <td>&nbsp;</td>
-      <td><a href="User-REST-API.html">Reset password</a> for the specified user.</td>
+      <td><a href="#reset-password">Reset password</a> for the specified user.</td>
       <td>In POST body</td>
     </tr>
   </tbody>

@@ -3,11 +3,12 @@ title: "Application REST API"
 lang: en
 layout: page
 keywords: LoopBack
-tags:
+tags: models
 sidebar: lb2_sidebar
 permalink: /doc/en/lb2/Application-REST-API.html
 summary:
 ---
+{% include content/API-Explorer.md %}
 
 All of the endpoints in the Application REST API are inherited from the [PersistedModel REST API](PersistedModel-REST-API.html).
 The reference is provided here for convenience.

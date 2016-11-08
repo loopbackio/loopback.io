@@ -2,28 +2,28 @@
 title: "Relation REST API"
 lang: en
 layout: page
+toc: false
 keywords: LoopBack
-tags:
+tags: models
 sidebar: lb2_sidebar
 permalink: /doc/en/lb2/Relation-REST-API.html
-summary:
+summary: The built-in Relation model represents a relationship between two models.
 ---
+{% include content/API-Explorer.md %}
 
-{% include important.html content="
-These endpoints are part of the [PersistedModel REST API](PersistedModel-REST-API.html), but are presented in a separate page for ease of reference.
-" %}
+These endpoints are part of the [PersistedModel REST API](PersistedModel-REST-API.html), but are presented here for ease of reference.
 
 ## Get related model instances
 
 Follow the relations from one model to another one to get instances of the associated model.
 
-`GET /_model1-name_/_instanceID_/_model2-name_`
+`GET /<model1-name>/<instanceID>/<model2-name>`
 
 ### Arguments
 
-* _instanceID_ - ID of instance in model1.
-* _model1-name_ - name of first model. 
-* _model2-name_ - name of second related model.
+* `<instanceID>` - ID of instance in model1.
+* `<model1-name>` - name of first model. 
+* `<model2-name>` - name of second related model.
 
 ### Example
 
@@ -52,37 +52,37 @@ Response:
 
 ## Get hasMany related model instances
 
-List related model instances for specified _model-name_ identified by the _instance-ID_, for hasMany relationship.
+List related model instances for specified `<model-name>` identified by the `instance-ID`, for hasMany relationship.
 
-`GET _/model-name/instanceID/hasManyRelationName`
+`GET /<model-name>/<instance-ID>/<hasManyRelationName>`
 
 ## Create hasMany related model instance
 
-Create a related model instance for specified _model-name_ identified by _instance-ID_, for hasMany relationship.
+Create a related model instance for specified `<model-name>` identified by `<instance-ID>`, for hasMany relationship.
 
-`POST /model1-name/instanceID/hasManyRelationName`
+`POST /<model1-name>/<instance-ID>/<hasMany-Relation-Name>`
 
 ## Delete hasMany related model instances
 
-Delete related model instances for specified _model-name_ identified by _instance-ID_, for hasMany relationship.
+Delete related model instances for specified <model-name> identified by `<instance-ID>`, for hasMany relationship.
 
-`DELETE /model1-name/instance-ID/hasMany-relation-name`
+`DELETE /<model1-name>/<instance-ID>/<hasMany-relation-name>`
 
 ## List belongsTo related model instances 
 
-List the related model instances for the given model identified by _instance-ID_, for hasMany relationship.
+List the related model instances for the given model identified by `<instance-ID>`, for hasMany relationship.
 
-`GET /model-name/instance-ID/belongsToRelationName`
+`GET /model-name/<instance-ID>/<belongsTo-relation-name>`
 
 ## Aggregate models following relations
 
 It's often desirable to include related model instances in the response to a query so that the client doesn't have to make multiple calls.
 
-`GET /model1-name?filter[include]=...`
+`GET /<model1-name>?filter[include]=...`
 
 **Arguments**
 
-* _include_ - The object that describes a hierarchy of relations to be included
+* `include` - The object that describes a hierarchy of relations to be included
 
 ### Example
 

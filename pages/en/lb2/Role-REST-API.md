@@ -3,11 +3,12 @@ title: "Role REST API"
 lang: en
 layout: page
 keywords: LoopBack
-tags:
+tags: [authentication, models]
 sidebar: lb2_sidebar
 permalink: /doc/en/lb2/Role-REST-API.html
-summary:
+summary: The built-in Role model represents a set of access controls that can apply to a specific user.  
 ---
+{% include content/API-Explorer.md %}
 
 All of the endpoints in the Role REST API are inherited from the generic [PersistedModel REST API](PersistedModel-REST-API.html).
 The reference is provided here for convenience.

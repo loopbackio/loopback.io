@@ -2,32 +2,38 @@
 title: "Access token REST API"
 lang: en
 layout: page
+toc: false
 keywords: LoopBack
-tags: [authentication]
+tags: [authentication, models]
 sidebar: lb2_sidebar
 permalink: /doc/en/lb2/Access-token-REST-API.html
-summary:
+summary: The built-in access token model represents the access token that LoopBack creates for an authenticated user.
 ---
+{% include content/API-Explorer.md %}
 
-{% include tip.html content="
-For information on access control for related models, see [Accessing related models](Accessing-related-models.html)
+{% include toc.html %}
+
+{% include see-also.html content="
+- [Accessing related models](Accessing-related-models.html)
+- [Controlling data access](Controlling-data-access.html)
+- [Tutorial access control](Tutorial-access-control.html)
 " %}
 
 All of the endpoints in the access token REST API are inherited from the generic [PersistedModel REST API](PersistedModel-REST-API.html).
 The reference is provided here for convenience.
+
+<br clear="all"/>
 
 **Quick reference**
 
 <table>
   <tbody>
     <tr>
-      <th>
-        <p>URI Pattern</p>
-      </th>
+      <th>URI Pattern</th>
       <th>HTTP Verb</th>
       <th>Default Permission</th>
       <th>Description</th>
-      <th>Arguments</th>
+      <th style="width:200px;">Arguments</th>
     </tr>
     <tr>
       <td>

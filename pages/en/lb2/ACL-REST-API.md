@@ -3,11 +3,13 @@ title: "ACL REST API"
 lang: en
 layout: page
 keywords: LoopBack
-tags: [authentication]
+tags: [authentication, models]
 sidebar: lb2_sidebar
 permalink: /doc/en/lb2/ACL-REST-API.html
-summary:
+summary: The ACL model connects principals to protected resources. The system grants permissions to principals (users or applications, that can be grouped into roles).
 ---
+
+{% include content/API-Explorer.md %}
 
 All of the endpoints in the ACL REST API are inherited from the [PersistedModel REST API](PersistedModel-REST-API.html).
 The reference is provided here for convenience.
