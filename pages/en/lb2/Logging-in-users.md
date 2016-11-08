@@ -1,20 +1,16 @@
 ---
 title: "Logging in users"
 lang: en
-layout: page
+layout: navgroup
+navgroup: user-mgmt
 keywords: LoopBack
-tags:
+tags: authentication
 sidebar: lb2_sidebar
 permalink: /doc/en/lb2/Logging-in-users.html
-summary:
+summary: The built-in User model provides methods to log in a user, log out a user, and reset a user's password.
 ---
 
-{% include see-also.html content="
-* [Authentication, authorization, and permissions](Authentication-authorization-and-permissions.html)
-* [Third-party login using Passport](Third-party-login-using-Passport.html)
-"%}
-
-## Login with the LoopBack User model
+## Using the LoopBack User model
 
 ### Logging in
 
@@ -25,7 +21,7 @@ This example creates a route in [boot script](Defining-boot-scripts.html) to han
 
 {% include code-caption.html content="/server/boot/routes.js" %}
 ```javascript
-//...
+...
 app.post('/login', function(req, res) {
   User.login({
     email: req.body.email,
@@ -51,11 +47,9 @@ app.post('/login', function(req, res) {
 ```
 
 {% include important.html content="
-
 [`User.login()`](http://apidocs.strongloop.com/loopback/#user-login) has an optional second parameter that is a string or an array of strings.
 Pass in \"user\" for this parameter to include the user information.
 For REST apis, using _?include=user_.
-
 " %}
 
 For a complete example, see [routes.js](https://github.com/strongloop/loopback-example-user-management/blob/master/server/boot/routes.js)
@@ -137,22 +131,11 @@ app.get('/logout', function(req, res, next) {
 //...
 ```
 
-To logout user from the server side:
-
-```javascript
-// logout a user (server side only)
-User.findOne({email: 'foo@bar.com'}, function(err, user) {
-  user.logout();
-});
-```
-
 Over REST, use the `POST /users/logout` endpoint, again providing the user's access token in the `sid` property of the POST payload.
 
 To destroy access tokens over REST API, use the `POST /users/logout` endpoint.
 
-**Shell**
-
-```
+```sh
 ACCESS_TOKEN=6Nb2ti5QEXIoDBS5FQGWIz4poRFiBCMMYJbYXSGHWuulOuy0GTEuGx2VCEVvbpBK
 VERB=POST # any verb is allowed
 
@@ -165,12 +148,6 @@ curl -X VERB http://localhost:3000/api/users/logout?access_token=$ACCESS_TOKEN
 ```
 
 See [User REST API](User-REST-API.html#log-out-user) for more information.
-
-## Login using third-party systems
-
-Instead of using LoopBack's user system, you can integrate with a third-party system that supports OAuth, such as Google, Facebook, or Twitter.
-
-For more information, see [Third-party login using Passport](Third-party-login-using-Passport.html).
 
 ## Resetting a user's password
 
@@ -258,3 +235,9 @@ in [loopback-example-user-management](https://github.com/strongloop/loopback-ex
 
 Over REST, use the `POST /users/reset` endpoint. It returns `200 OK` for a successful request.
 See [User REST API](User-REST-API.html#reset-password) for more information.
+
+## Login using third-party systems
+
+Instead of using LoopBack's user system, you can integrate with a third-party system that supports OAuth, such as Google, Facebook, or Twitter.
+
+For more information, see [Third-party login using Passport](Third-party-login-using-Passport.html).

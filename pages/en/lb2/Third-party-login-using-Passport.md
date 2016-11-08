@@ -10,8 +10,7 @@ permalink: /doc/en/lb2/Third-party-login-using-Passport.html
 summary:
 ---
 
-{% include important.html content="
-To use this component, you should be familiar with [Passport](http://passportjs.org/)
+{% include important.html content="To use this component, you should be familiar with [Passport](http://passportjs.org/)
 " %}
 
 ## Overview
@@ -89,16 +88,13 @@ The following table describes the properties of the UserIdentity model.
     <tr>
       <td>credentials</td>
       <td>Object</td>
-      <td>
-        <ul>
-          <li>User credentials</li>
+      <td>User credentials
           <ul>
             <li>oAuth: token, tokenSecret</li>
             <li>oAuth 2.0: accessToken, refreshToken</li>
             <li>OpenID: openId</li>
             <li>OpenID Connect: accessToken, refreshToken, profile</li>
           </ul>
-        </ul>
       </td>
     </tr>
     <tr>
@@ -156,18 +152,11 @@ The following table describes the properties of ApplicationCredential model
     <tr>
       <td>credentials</td>
       <td>Object</td>
-      <td>
-        <p>Provider-specific credentials</p>
+      <td>Provider-specific credentials:
         <ul>
-          <li>
-            <p>openId: {returnURL: String, realm: String}</p>
-          </li>
-          <li>
-            <p>oAuth2: {clientID: String, clientSecret: String, callbackURL: String}</p>
-          </li>
-          <li>
-            <p>oAuth: {consumerKey: String, consumerSecret: String, callbackURL: String}</p>
-          </li>
+          <li>openId: {returnURL: String, realm: String}</li>
+          <li>oAuth2: {clientID: String, clientSecret: String, callbackURL: String}</li>
+          <li>oAuth: {consumerKey: String, consumerSecret: String, callbackURL: String}</li>
         </ul>
       </td>
     </tr>

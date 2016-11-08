@@ -4,7 +4,7 @@ lang: en
 layout: navgroup
 navgroup: user-mgmt
 keywords: LoopBack
-tags:
+tags: authentication
 sidebar: lb2_sidebar
 permalink: /doc/en/lb2/Managing-users.html
 summary: LoopBack's built-in User model provides essential user management features.
