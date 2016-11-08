@@ -31,13 +31,13 @@ You can also use [stringified JSON format](Querying-data.html#using-stringified
 ```javascript
 {include: 'relatedModel'}
 {include: ['relatedModel1', 'relatedModel2', ...]}
-{include: {relatedModel1: [{relatedModel2: 'propertyName'} , 'relatedModel']}}
+{include: {relatedModel1: [{relatedModel2: 'relationName'} , 'relatedModel']}}
 ```
 
 Where:
 
 * _relatedModel_, _relatedModel1_, and _relatedModel2_ are the names (pluralized) of related models.
-* _propertyName_ is the name of a property in the related model.
+* _relationName_ is the name of a relation in the related model.
 
 ### Examples
 
