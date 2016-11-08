@@ -69,7 +69,7 @@ LIST_END
   if [ -z "$branch" ]; then
     # No branch means latest release, so fetch from npmjs.org
     echo "fetching $org/$repo from latest npmjs.org release..."
-    curl -s $NPMURL | jq -r '.readme' > $DEST
+    curl -s $NPMURL | jq -r '.readme|rtrimstr("\n")' > $DEST
   else
     # The loopback-example-database repo contains a separate branch for each
     # actual example project, so we need to add the branch name to the readme
