@@ -37,24 +37,23 @@ You can also use [stringified JSON format](Querying-data.html#using-stringified
 
 ### Filter limit
 
-{% include important.html content="There is a twenty filter limit using this format from [qs](https://github.com/ljharb/qs#parsing-arrays) where it maps arrays with over twenty
-indices to an object, which converts your filter into an `Object` where it is expecting
-an `Array`, See [Issue](https://github.com/strongloop/loopback/issues/2824) for more details.
-A work around would be to override the query parsing middleware, with your own options as the following, or to use a stringified JSON instead.
+{% include important.html content="There is a limit of twenty filters (combined with AND or OR) using this format, due to the use of [qs](https://github.com/ljharb/qs#parsing-arrays).  When there are more than twenty, the filter is converted into an `Object` where it is expecting
+an `Array`. See [LoopBack issue #2824](https://github.com/strongloop/loopback/issues/2824) for more details.
 " %}
 
 There are two ways to work around the filter limit:
-- Encode the large filter object as JSON.
+
+- Encode the large filter object as "stringified JSON."
 - Override the limit manually in `server/server.js`, before boot is called.
 
-**Encode the large filter object as JSON**
+**Encode filter object as JSON**
 
 ```
 http://localhost:3000/api/Books
 ?filter={"where":{"or":[{"id":1},{"id":2},...,{"id":20"},{"id":21}]}}
 ```
 
-**Override limit**
+**Override limit in `server.js`**
 
 ```js
 // In `server/server.js`, before boot is called

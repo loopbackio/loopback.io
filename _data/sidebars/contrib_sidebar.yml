@@ -66,6 +66,10 @@ children:
       url: /doc/en/contrib/Markdown-style-guide.html
       output: web, pdf
 
+    - title: Documentation style guide
+      url: /doc/en/contrib/Doc-style-guide.html
+      output: web, pdf
+
     - title: README guidelines
       url: /doc/en/contrib/README-guidelines.html
       output: web, pdf

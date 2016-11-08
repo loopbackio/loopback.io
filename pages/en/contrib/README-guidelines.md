@@ -40,9 +40,9 @@ To display content _only_ in GitHub, use HTML and enclose the content in a `<p c
 For example:
 
 ```
-<div class="gh-only">
-For more information, see the [LoopBack documentation](http://loopback.io/doc/en/lb2/Cloudant-connector).
-</div>
+<p class="gh-only">
+For more information, see the <a href="http://loopback.io/doc/en/lb2/Cloudant-connector">LoopBack documentation</a>.
+</p>
 ```
 Note that you can't use markdown inside such a `div` tag, only HTML.
 

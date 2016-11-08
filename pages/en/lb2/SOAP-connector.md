@@ -56,7 +56,13 @@ The following table describes the SOAP data source properties you can set in `da
       <td>String</td>
       <td>
         <p>URL to the SOAP web service endpoint. If not present, defaults to the&nbsp;<code>location</code>&nbsp;attribute of the SOAP address for the service/port from the WSDL document; for example:</p>
-        <p><code>&lt;wsdl:service name="Weather"&gt; &lt;wsdl:port name="WeatherSoap" binding="tns:WeatherSoap"&gt; &lt;soap:address <strong>location="http://wsf.cdyne.com/WeatherWS/Weather.asmx"</strong> /&gt; &lt;/wsdl:port&gt; ... &lt;/wsdl:service&gt;</code></p>
+        <pre><code>&lt;wsdl:service name="Weather"&gt;
+  &lt;wsdl:port name="WeatherSoap"
+    binding="tns:WeatherSoap"&gt;
+  &lt;soap:address
+    location="http://wsf.cdyne.com/WeatherWS/Weather.asmx" /&gt;
+  &lt;/wsdl:port&gt; ...
+&lt;/wsdl:service&gt;</code></pre>
       </td>
     </tr>
     <tr>
@@ -76,14 +82,14 @@ The following table describes the SOAP data source properties you can set in `da
     <tr>
       <td>operations</td>
       <td>Object</td>
-      <td>Maps WSDL binding operations to Node.js methods. Each key in the JSON object becomes the name of a method on the model. See <a href="SOAP-connector.html">Operations property</a> below.</td>
+      <td>Maps WSDL binding operations to Node.js methods. Each key in the JSON object becomes the name of a method on the model. See <a href="#operations-property">Operations property</a> below.</td>
     </tr>
   </tbody>
 </table>
 
-### **Operations property**
+### Operations property
 
-The operations property value is a JSON object that has a property (key) for each method being defined for the model. The corresponding value is an object with the following properties:
+The `operations` property value is a JSON object that has a property (key) for each method being defined for the model. The corresponding value is an object with the following properties:
 
 <table>
   <tbody>
@@ -105,14 +111,10 @@ The operations property value is a JSON object that has a property (key) for eac
     <tr>
       <td>operation</td>
       <td>String</td>
-      <td>
-        <p>WSDL operation name</p>
-      </td>
+      <td>WSDL operation name</td>
     </tr>
   </tbody>
 </table>
-
-<div class="sl-hidden"><strong>REVIEW COMMENT from $paramName</strong><br>Below--Why is the port a symbol( 'StockQuoteSoap')? Where is the numeric value defined? Is it possible to use a number directly?</div>
 
 Here is an example operations property for the stock quote service:
 

@@ -19,11 +19,7 @@ does it. There are comments for everything.
 
 ## Questions?
 
-Holler at us: [callback@strongloop.com][email]
-
-[xcode]: https://developer.apple.com/xcode/
-[strongnode]: http://docs.strongloop.com/strongnode/
-[email]: mailto:callback@strongloop.com
+See the [Developer forum / Google Group](https://groups.google.com/forum/#!forum/loopbackjs).
 
 ---
 
