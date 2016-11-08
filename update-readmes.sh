@@ -1,7 +1,12 @@
 #!/bin/bash
 
 # The following is a 3 column list of org, repo, and branch.
-# The branch is optional and will default to 'master' if omitted.
+# - If the branch is NOT specified, then the README for that project
+#   will be pulled from npmjs.org instead and will reflect the latest
+#   release.
+# - If teh branch IS specified, it will be used to fetch the README.md
+#   from the given github repo. If that branch is NOT master, then the
+#   branch name will be appended to the local readme file name.
 (cat <<LIST_END
 strongloop loopback-connector-cloudant
 strongloop loopback-connector-dashdb
@@ -55,13 +60,24 @@ strongloop loopback-component-passport
 strongloop loopback-component-oauth2
 LIST_END
 ) | while read org repo branch; do
-  # set default value for $branch
-  : ${branch:=master}
-
-  # Use github's raw content domain for downloading the raw README.md contents
-  URL="https://raw.githubusercontent.com/$org/$repo/$branch/README.md"
-
   # Write the README.md to a file named after the repo
-  echo "fetching $org/$repo/$branch..."
-  curl -s $URL > pages/en/lb2/readmes/$repo.md
+  DEST="pages/en/lb2/readmes/$repo.md"
+  # When fetching from a branch of a gh repo
+  GHURL="https://raw.githubusercontent.com/$org/$repo/$branch/README.md"
+  # When fetching from the latest release of a node module
+  NPMURL="https://registry.npmjs.org/$repo"
+  if [ -z "$branch" ]; then
+    # No branch means latest release, so fetch from npmjs.org
+    echo "fetching $org/$repo from latest npmjs.org release..."
+    curl -s $NPMURL | jq -r '.readme' > $DEST
+  else
+    # The loopback-example-database repo contains a separate branch for each
+    # actual example project, so we need to add the branch name to the readme
+    # name.
+    if [ "$branch" != "master" ]; then
+      DEST="pages/en/lb2/readmes/$repo-$branch.md"
+    fi
+    echo "fetching $org/$repo/$branch from GitHub's raw content domain..."
+    curl -s $GHURL > $DEST
+  fi
 done
