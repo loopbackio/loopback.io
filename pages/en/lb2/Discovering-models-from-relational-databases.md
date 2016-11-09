@@ -68,6 +68,7 @@ function (err, models) {
     }
     console.log("\nInventory: ", inv);
     // Navigate to the product model
+    // Assumes inventory table has a foreign key relationship to product table
     inv.product(function (err, prod) {
       console.log("\nProduct: ", prod);
       console.log("\n ------------- ");
