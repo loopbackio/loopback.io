@@ -215,6 +215,23 @@ In 3.0, LoopBack throws an error for such properties.
 Update your model definitions to use a different character instead, for example an
 underscore (`customer_name`).
 
+### Rename models called "File"
+
+If you have a model called "File", you need to give it a different name to
+prevent clash with built-in "file" type provided by strong-remoting.
+
+To preserve REST API of your application, you can set the "plural" value
+to "Files" in the renamed model.
+
+```js
+// common/models/file-model.json
+{
+  "name": "FileModel",
+  "plural": "files",
+  // ...
+}
+```
+
 ## Update models derived from PersistedModel
 
 The changes in this section apply to all models derived from `PersistedModel`,
