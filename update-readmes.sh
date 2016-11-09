@@ -8,25 +8,25 @@
 #   from the given github repo. If that branch is NOT master, then the
 #   branch name will be appended to the local readme file name.
 (cat <<LIST_END
-strongloop loopback-connector-cloudant
-strongloop loopback-connector-dashdb
-strongloop loopback-connector-db2
-strongloop loopback-connector-db2iseries
-strongloop loopback-connector-db2z
-strongloop loopback-connector-informix
-strongloop loopback-connector-jsonrpc
-strongloop loopback-connector-kv-redis
-strongloop loopback-connector-mongodb
-strongloop loopback-connector-mqlight
-strongloop loopback-connector-mssql
-strongloop loopback-connector-mysql
-strongloop loopback-connector-oracle
-strongloop loopback-connector-postgresql
-strongloop loopback-connector-redis
-strongloop loopback-connector-remote
-strongloop loopback-connector-rest
-strongloop loopback-connector-soap
-strongloop loopback-connector-sqlite3
+strongloop loopback-connector-cloudant master
+strongloop loopback-connector-dashdb master
+strongloop loopback-connector-db2 master
+strongloop loopback-connector-db2iseries master
+strongloop loopback-connector-db2z master
+strongloop loopback-connector-informix master
+strongloop loopback-connector-jsonrpc master
+strongloop loopback-connector-kv-redis master
+strongloop loopback-connector-mongodb master
+strongloop loopback-connector-mqlight master
+strongloop loopback-connector-mssql master
+strongloop loopback-connector-mysql master
+strongloop loopback-connector-oracle master
+strongloop loopback-connector-postgresql master
+strongloop loopback-connector-redis master
+strongloop loopback-connector-remote master
+strongloop loopback-connector-rest master
+strongloop loopback-connector-soap master
+strongloop loopback-connector-sqlite3 master
 strongloop loopback-android-getting-started master
 strongloop loopback-example-angular master
 strongloop loopback-example-app-logic master
@@ -51,13 +51,13 @@ strongloop loopback-example-user-management master
 strongloop loopback-example-isomorphic master
 strongloop loopback-example-xamarin master
 strongloop loopback-ios-getting-started master
-strongloop strong-error-handler
-strongloop strong-remoting
-strongloop loopback-component-storage
-strongloop loopback-component-explorer
-strongloop loopback-component-push
-strongloop loopback-component-passport
-strongloop loopback-component-oauth2
+strongloop strong-error-handler master
+strongloop strong-remoting master
+strongloop loopback-component-storage master
+strongloop loopback-component-explorer master
+strongloop loopback-component-push master
+strongloop loopback-component-passport master
+strongloop loopback-component-oauth2 master
 LIST_END
 ) | while read org repo branch; do
   # Write the README.md to a file named after the repo
