@@ -1,6 +1,6 @@
-## loopback-connector-sqlite3
+# loopback-connector-sqlite3
 
-The SQLite3 Connector module for for [loopback-datasource-juggler](http://docs.strongloop.com/loopback-datasource-juggler/).
+The official SQLite3 connector module for the LoopBack framework.
 
 ## Connector settings
 

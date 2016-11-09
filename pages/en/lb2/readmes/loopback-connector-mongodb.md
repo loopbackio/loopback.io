@@ -2,7 +2,7 @@
 
 The official MongoDB connector for the LoopBack framework.
 
-Please see the full documentation at [docs.strongloop.com](http://docs.strongloop.com/display/LB/MongoDB+connector).
+Please see the full documentation at [loopback.io](http://loopback.io/doc/en/lb2/MongoDB-connector.html).
 
 ## Customizing MongoDB configuration for tests/examples
 
@@ -14,7 +14,7 @@ of the project or the home folder.
 
 **Note**: Tests and examples in this project configure the data source using the deprecated '.loopbackrc' file method,
 which is not suppored in general.
-For information on configuring the connector in a LoopBack application, please refer to [LoopBack documentation](http://docs.strongloop.com/display/LB/MongoDB+connector).
+For information on configuring the connector in a LoopBack application, please refer to [loopback.io](http://loopback.io/doc/en/lb2/MongoDB-connector.html).
 
 The .loopbackrc file is in JSON format, for example:
 
@@ -42,7 +42,7 @@ The .loopbackrc file is in JSON format, for example:
 **Note**: username/password is only required if the MongoDB server has
 authentication enabled.
 
-###Additional Settings
+### Additional Settings
 
 allowExtendedOperators - ```false``` by default, ```true``` allows to use mongo operators like
 ```$currentDate, $inc, $max, $min, $mul, $rename, $setOnInsert, $set, $unset, $addToSet,

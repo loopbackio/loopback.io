@@ -1,4 +1,4 @@
-## Overview
+# Overview
 Objects (and, therefore, data) in Node applications commonly need to be accessible by other Node processes, browsers, and even mobile clients.   Strong remoting:
 
  * Makes local functions remotable, exported over adapters.
@@ -7,7 +7,7 @@ Objects (and, therefore, data) in Node applications commonly need to be accessib
  * Supports multiple client SDKs, including mobile clients.
 
 <div class="confluence-hide">
-Also see the <a href="http://docs.strongloop.com/display/LB/Strong+Remoting">official StrongLoop documentation</a>.</div>
+Also see the <a href="http://loopback.io/doc/en/lb2/Strong-Remoting.html">official StrongLoop documentation</a>.</div>
 
 ### Client SDK support
 

@@ -15,14 +15,14 @@ In this example, we demonstrate remote methods, remote hooks, model operation ho
 
 Tutorials:
 
-- [Getting started with LoopBack](http://docs.strongloop.com/display/LB/Getting+started+with+LoopBack)
+- [Getting started with LoopBack](http://loopback.io/doc/en/lb2/Getting-started-with-LoopBack.html)
 - [Tutorial series - step 1](https://github.com/strongloop/loopback-example#step-one---the-basics)
 - [Tutorial series - step 2](https://github.com/strongloop/loopback-example#step-two---relations-and-filter)
 
 Knowledge:
 
-- [LoopBack models](http://docs.strongloop.com/display/LB/Defining+models)
-- [LoopBack adding application logic](http://docs.strongloop.com/display/LB/Adding+application+logic)
+- [LoopBack models](http://loopback.io/doc/en/lb2/Defining-models.html)
+- [LoopBack adding application logic](http://loopback.io/doc/en/lb2/Adding-application-logic.html)
 
 ## Procedure
 

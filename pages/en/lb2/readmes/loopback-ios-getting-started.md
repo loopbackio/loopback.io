@@ -7,8 +7,8 @@ from UI to data and back again.
 
 The Guide assumes you have [XCode][xcode] installed and a running LoopBack application.
 
- 1. Clone the Guide Application: `git clone https://github.com/strongloop/loopback-guide-app`
- 1. Open the project: `open loopback-guide-app/LoopBackGuideApplication/LoopBackGuideApplication.xcodeproj/`
+ 1. Clone the Guide Application: `git clone https://github.com/strongloop/loopback-guide-app`.
+ 1. Open the project: `open loopback-guide-app/LoopBackGuideApplication/LoopBackGuideApplication.xcodeproj/`.
  1. Now in XCode, run the Application with `Cmd+R`.
 
 ## Using the Guide
@@ -19,7 +19,7 @@ does it. There are comments for everything.
 
 ## Questions?
 
-See the [Developer forum / Google Group](https://groups.google.com/forum/#!forum/loopbackjs).
+Check out the [Developer forum on Google Groups](https://groups.google.com/forum/#!forum/loopbackjs).
 
 ---
 

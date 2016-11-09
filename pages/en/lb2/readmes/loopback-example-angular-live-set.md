@@ -10,7 +10,7 @@
 
 **Favorite Colors**
 
-This is a snippet from the [colors example](client/modules/color/color-list.controller.js) that demonstrates a basic
+This is a snippet from the [colors example](https://github.com/strongloop/loopback-example-angular-live-set/blob/update-readme/client/modules/color/color-list.controller.js) that demonstrates a basic
 `LiveSet`.
 
 ```js
@@ -28,7 +28,7 @@ Color.find().$promise.then(function(results) {
 
 The drawing example creates a `LiveSet` in a similar way. The rest of the controller is fairly simple and similar to the snippet above.
 
-The draw method uses a service provided by the [loopback-angular-sdk](http://docs.strongloop.com/display/LB/AngularJS+JavaScript+SDK) to create additional points in the drawing. This data is streamed to other browser clients.
+The draw method uses a service provided by the [loopback-angular-sdk](http://loopback.io/doc/en/lb2/AngularJS-JavaScript-SDK.html) to create additional points in the drawing. This data is streamed to other browser clients.
 
 ```js
 $scope.draw = function(e) {
@@ -55,7 +55,7 @@ changes.on('data', function(update) {
 });
 ```
 
-See the entire chart example code [here](client/modules/chart).
+See the [entire chart example code](https://github.com/strongloop/loopback-example-angular-live-set/blob/update-readme/client/modules/chart).
 
 ## Creating the Colors Example
 
