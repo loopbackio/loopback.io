@@ -1,8 +1,8 @@
-## loopback-connector-mssql
+# loopback-connector-mssql
 
 `loopback-connector-mssql` is the Microsoft SQL Server connector module for [loopback-datasource-juggler](https://github.com/strongloop/loopback-datasource-juggler/).
 
-For complete documentation, see [StrongLoop Documentation | SQL Server Connector](http://docs.strongloop.com/display/LB/SQL+Server+connector).
+For complete documentation, see [Documentation | SQL Server Connector](http://loopback.io/doc/en/lb2/SQL-Server-connector.html).
 
 ## Installation
 

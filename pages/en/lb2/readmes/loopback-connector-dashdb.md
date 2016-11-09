@@ -10,8 +10,8 @@ module is the LoopBack connector for dashDB.
 
 The LoopBack DashDB connector supports:
 
-- All [CRUD operations](https://docs.strongloop.com/display/LB/Creating%2C+updating%2C+and+deleting+data).
-- [Queries](https://docs.strongloop.com/display/LB/Querying+data) with fields, limit, order, skip and where filters.
+- All [CRUD operations](http://loopback.io/doc/en/lb2/Creating-updating-and-deleting-data.html).
+- [Queries](http://loopback.io/doc/en/lb2/Querying-data.html) with fields, limit, order, skip and where filters.
 - All supported DASHDB LUW versions as well as dashDB.  Note for dashDB set supportDashDB in the loopback datasource definition.  Column organized tables are not supported.
 
 ## Installation
@@ -26,7 +26,7 @@ The `--save` option adds the dependency to the application's `package.json` file
 
 ## Configuration
 
-Use the [data source generator](https://docs.strongloop.com/display/LB/Data+source+generator) (`slc loopback:datasource`) to add the DASHDB data source to your application.
+Use the [data source generator](http://loopback.io/doc/en/lb2/Data-source-generator.html) (`slc loopback:datasource`) to add the DASHDB data source to your application.
 The entry in the application's `server/datasources.json` will look something like this:
 
 ```

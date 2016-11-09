@@ -2,7 +2,7 @@
 
 The Oracle Connector module for for [loopback-datasource-juggler](https://github.com/strongloop/loopback-datasource-juggler).
 
-For full documentation, see the official [StrongLoop  Documentation](http://docs.strongloop.com/display/LB/Oracle+connector).
+For full documentation, see the official [Documentation](http://loopback.io/doc/en/lb2/Oracle-connector.html).
 
 **NOTE**: This connector is compatible with Node v.0.10.x, v.12.x, and iojs v1.6.2.  
 

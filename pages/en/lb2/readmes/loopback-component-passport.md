@@ -8,7 +8,7 @@ linking for LoopBack applications.
 
 <img src="./ids_and_credentials.png" width="600px" />
 
-> Please see the [official documentation](http://docs.strongloop.com/pages/viewpage.action?pageId=3836277) for more information.
+> Please see the [official documentation](http://loopback.io/doc/en/lb2/Third-party-login-using-Passport.html) for more information.
 
 ## All local accounts requires verification
 

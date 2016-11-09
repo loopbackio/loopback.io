@@ -8,4 +8,4 @@ npm install loopback-connector-rest
 
 ## Documentation
 
-For complete documentation, see [StrongLoop Documentation | REST Connector](http://docs.strongloop.com/display/LB/REST+connector).
+For complete documentation, see [Documentation | REST Connector](http://loopback.io/doc/en/lb2/REST-connector.html).

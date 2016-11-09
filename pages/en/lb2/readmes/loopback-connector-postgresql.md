@@ -1,8 +1,8 @@
-## loopback-connector-postgresql
+# loopback-connector-postgresql
 
-The PostgreSQL Connector module for for [loopback-datasource-juggler](http://docs.strongloop.com/loopback-datasource-juggler/).
+The official PostgreSQL connector for the LoopBack framework.
 
-Please see the [official documentation](http://docs.strongloop.com/display/LB/PostgreSQL+connector).
+Please see the [official documentation](http://loopback.io/doc/en/lb2/PostgreSQL-connector.html).
 
 
 ## Connector settings
