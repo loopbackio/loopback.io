@@ -9,7 +9,7 @@ permalink:  /doc/en/lb2/Glossary.html
 summary: Definitions of common LoopBack terms.
 ---
 <div style="float:right;">
-{%include toc.html %}
+{% include toc.html %}
 </div>
 
 ## A

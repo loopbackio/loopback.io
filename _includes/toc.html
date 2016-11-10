@@ -1,21 +1,34 @@
 
 <!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
 <script>
-$( document ).ready(function() {
-  // Handler for .ready() called.
+;$(function() {
+  var level = parseInt({{ include.level | default: 3 }}, 10);
+  if (level === 1) {level = 'h2'}
+  if (level === 2) {level = 'h2,h3'}
+  if (level === 3) {level = 'h2,h3,h4'}
+  if (level === 4) {level = 'h2,h3,h4,h5'}
 
-$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+  var toc = $('#toc')
 
-/* this offset helps account for the space taken up by the floating toolbar. */
-$('#toc').on('click', 'a', function() {
-  var target = $(this.getAttribute('href'))
-    , scroll_target = target.offset().top
+  toc.toc({minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: level})
 
-  $(window).scrollTop(scroll_target - 10);
-  return false
+  /* this offset helps with the space taken up by the floating toolbar */
+  toc.on('click', 'a', function() {
+    var target = $(this.getAttribute('href')),
+      scroll_target = target.offset().top
+
+    $(window).scrollTop(scroll_target - 10)
+    return false
+  })
+  .on('click', '.toc-expand-button', function() {
+    toc.find('> ul').slideToggle('fast');
+  })
 })
-  
-});
 </script>
 
-<div id="toc"></div>
+<div id="toc">
+  <span class="toc-title">Page Contents</span>
+  <button type="button" class="btn btn-link toc-expand-button">
+    <i class="fa fa-bars"></i>
+  </button>
+</div>

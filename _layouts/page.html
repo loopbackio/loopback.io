@@ -29,7 +29,7 @@ layout: default
 
   {% if page.layout != 'readme' and page.layout != 'navgroup' %}
     {% unless page.toc == false %}
-      {% include toc.html %}
+      {% include toc.html level=page.toc_level %}
     {% endunless %}
   {% endif %}
 
