@@ -103,3 +103,30 @@ db.autoupdate('User', function(err) {
   });
 });
 ```
+## Testing
+
+- Go to [IBM DB2 trials](http://www.ibm.com/analytics/us/en/technology/db2/db2-trials.html) page.
+- Register for an account.
+- Download either IBM DB2 or IBM DB2 Express-C.
+- For documentation or more information about the installation or setup, see http://www.ibm.com/support/knowledgecenter/SSEPGG_11.1.0/com.ibm.db2.luw.kc.doc/welcome.html
+
+### IBM DB2 Express-C scenario on Windows.
+- Run the setup file.
+- Set user information for the DB2 Administration server.
+- Write down the user information and the password that you create. User name is `db2admin` by default but it could be modified.
+- Configure DB2 instance and write down the port number. It is 50000 by default.
+- Once setup is done, Start the `default DB2 and Database Client Interface Selection Wizard`, and proceed with the configuration.
+- Ensure that the DB2 Data server runtime client is started. The default name is `DB2COPY1`.
+- Let's assume your database name is `sample`, and schema name is `STRONGLOOP`.
+- In Windows, start the DB2 Command window-Administrator (In Mac or Linux, use terminal with proper privileges).
+- Make sure that you are in this path `...\IBM\SQLLIB\BIN` (In mac, it should be ` /Users/<userid>/sqllib\bin`), and type the following commands:
+
+```
+>set db2instance=server1
+
+>db2 connect to sample
+
+>db2 set schema to STRONGLOOP
+```
+- Go to `loopback-connector-db2\test\init.js`, and insert the proper credentials.
+- Run `npm test`.
