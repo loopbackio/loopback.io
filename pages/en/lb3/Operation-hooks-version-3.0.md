@@ -56,6 +56,7 @@ and _`observer`_ is `function observer(context, callback)`. Child models inher
       </th>
       <th>replaceById</th>
       <th>replaceOrCreate</th>
+      <th>upsertWithWhere</th>
     </tr>
     <tr>
       <th>access</th>
@@ -72,6 +73,7 @@ and _`observer`_ is `function observer(context, callback)`. Child models inher
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
+      <td><span>X</span></td>
       <td><span>X</span></td>
     </tr>
     <tr>
@@ -90,6 +92,7 @@ and _`observer`_ is `function observer(context, callback)`. Child models inher
       <td><span>X</span></td>
       <td>X</td>
       <td><span>X</span></td>
+      <td><span>X</span></td>
     </tr>
     <tr>
       <th>after save</th>
@@ -107,6 +110,7 @@ and _`observer`_ is `function observer(context, callback)`. Child models inher
       <td><span>X</span></td>
       <td>X</td>
       <td><span>X</span></td>
+      <td><span>X</span></td>
     </tr>
     <tr>
       <th>before delete</th>
@@ -120,6 +124,7 @@ and _`observer`_ is `function observer(context, callback)`. Child models inher
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td style="text-align: center;">X</td>
+      <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -141,6 +146,7 @@ and _`observer`_ is `function observer(context, callback)`. Child models inher
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
+      <td>&nbsp;</td>
     </tr>
     <tr>
       <th>loaded</th>
@@ -158,6 +164,7 @@ and _`observer`_ is `function observer(context, callback)`. Child models inher
       <td><span>X</span></td>
       <td>X</td>
       <td><span>X</span></td>
+      <td><span>X</span></td>
     </tr>
     <tr>
       <th>persist</th>
@@ -173,6 +180,7 @@ and _`observer`_ is `function observer(context, callback)`. Child models inher
       <td>&nbsp;</td>
       <td style="text-align: center;">X</td>
       <td><span>X</span></td>
+      <td>X</td>
       <td>X</td>
       <td>X</td>
     </tr>
@@ -328,6 +336,14 @@ However, depending on the operation, this instance is provided either as modifia
       <td style="text-align: center;"><span>---</span></td>
     </tr>
     <tr>
+      <td><code>upsertWithWhere</code></td>
+      <td><em>n/a*</em></td>
+      <td><code>ctx.currentInstance</code></td>
+      <td><code>ctx.instance</code></td>
+      <td style="text-align: center;"><span>---</span></td>
+      <td style="text-align: center;"><span>---</span></td>
+    </tr>
+    <tr>
       <td><code>updateAll</code></td>
       <td><em>n/a</em></td>
       <td><em>n/a</em></td>
@@ -391,7 +407,7 @@ However, depending on the operation, this instance is provided either as modifia
   </tbody>
 </table>
 
-(*) The operation `updateOrCreate` does not provide any instance in the "before save" hook.
+(*) The operation `updateOrCreate` and `upsertWithWhere`do not provide any instance in the "before save" hook.
 Because we cannot tell in advance whether the operation will result in UPDATE or CREATE, we cannot tell whether there is any existing "currentInstance" affected by the operation.
 
 See the following sections for more details.
@@ -428,6 +444,10 @@ The following table lists hooks that PersistedModel methods invoke.
     </tr>
     <tr>
       <td>upsert (aka updateOrCreate)</td>
+      <td>access, before save, after save, loaded, persist</td>
+    </tr>
+    <tr>
+      <td>upsertWithWhere</td>
       <td>access, before save, after save, loaded, persist</td>
     </tr>
     <tr>
@@ -510,6 +530,7 @@ The `before save` hook is triggered before a model instance is modified (crea
 
 * [create()](https://apidocs.strongloop.com/loopback/#persistedmodel-create)
 * [upsert()](https://apidocs.strongloop.com/loopback/#persistedmodel-upsert)
+* [upsertWithWhere()](http://apidocs.strongloop.com/loopback/#persistedmodel-upsertwithwhere)
 * [findOrCreate()](https://apidocs.strongloop.com/loopback/#persistedmodel-findorcreate)*
 * [updateAll()](https://apidocs.strongloop.com/loopback/#persistedmodel-updateall)
 * [prototype.save()](https://apidocs.strongloop.com/loopback/#persistedmodel-prototype-save)
@@ -545,7 +566,7 @@ The before save hook provides the `ctx.isNewInstance` property when `ctx.inst
 
 * True for all CREATE operations
 * False for all UPDATE and REPLACE operations
-* Undefined for `updateOrCreate`, replaceOrCreate, `prototype.save`,  `prototype.updateAttributes`, and `updateAll `operations.
+* Undefined for `updateOrCreate`, `upsertWithWhere`, replaceOrCreate, `prototype.save`,  `prototype.updateAttributes`, and `updateAll `operations.
 
 #### Embedded relations
 
@@ -622,6 +643,7 @@ The `after save` hook is called after a model change was successfully persist
 
 * [create()](https://apidocs.strongloop.com/loopback/#persistedmodel-create)
 * [upsert()](https://apidocs.strongloop.com/loopback/#persistedmodel-upsert)
+* [upsertWithWhere()](http://apidocs.strongloop.com/loopback/#persistedmodel-upsertwithwhere)
 * [findOrCreate()](https://apidocs.strongloop.com/loopback/#persistedmodel-findorcreate)*
 * [updateAll()](https://apidocs.strongloop.com/loopback/#persistedmodel-updateall)
 * [prototype.save()](https://apidocs.strongloop.com/loopback/#persistedmodel-prototype-save)
@@ -778,6 +800,7 @@ This hook is triggered by the following methods of PersistedModel:
 * [`count()`](https://apidocs.strongloop.com/loopback/#persistedmodel-count)
 * [`create()`](https://apidocs.strongloop.com/loopback/#persistedmodel-create)
 * [`upsert()`](https://apidocs.strongloop.com/loopback/#persistedmodel-upsert) (same as `updateOrCreate()`)
+* [`upsertWithWhere()`](http://apidocs.strongloop.com/loopback/#persistedmodel-upsertwithwhere)
 * [`findOrCreate()`](https://apidocs.strongloop.com/loopback/#persistedmodel-findorcreate)*
 * [`prototype.save()`](https://apidocs.strongloop.com/loopback/#persistedmodel-prototype-save)
 * [`prototype.updateAttributes()`](https://apidocs.strongloop.com/loopback/#persistedmodel-prototype-updateattributes)
@@ -803,6 +826,7 @@ This hook is triggered by operations that persist data to the datasource, specif
 
 * [`create()`](https://apidocs.strongloop.com/loopback/#persistedmodel-create)
 * [`upsert()`](https://apidocs.strongloop.com/loopback/#persistedmodel-upsert) (same as `updateOrCreate()`)
+* [`upsertWithWhere()`](http://apidocs.strongloop.com/loopback/#persistedmodel-upsertwithwhere)
 * [`findOrCreate()`](https://apidocs.strongloop.com/loopback/#persistedmodel-findorcreate)*
 * [`prototype.save()`](https://apidocs.strongloop.com/loopback/#persistedmodel-prototype-save)
 * [`prototype.updateAttributes()`](https://apidocs.strongloop.com/loopback/#persistedmodel-prototype-updateattributes)
@@ -837,7 +861,7 @@ For this hook, `ctx.isNewInstance` is:
 
 * True for all CREATE operations
 * False for all UPDATE operations
-* Undefined for updateOrCreate, replaceOrCreate, prototype.save, prototype.updateAttributes, and updateAll operations.
+* Undefined for updateOrCreate, , upsertWithWhere, replaceOrCreate, prototype.save, prototype.updateAttributes, and updateAll operations.
 
 ## afterInitialize hook
 
