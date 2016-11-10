@@ -13,6 +13,7 @@ node('linux && git') {
   }
   stage('download updates') {
     sh './update-readmes.sh'
+    sh './update-community-readmes.sh'    
   }
   stage('check updates') {
      sh 'git status'

@@ -4,7 +4,7 @@
 # - If the branch is NOT specified, then the README for that project
 #   will be pulled from npmjs.org instead and will reflect the latest
 #   release.
-# - If teh branch IS specified, it will be used to fetch the README.md
+# - If the branch IS specified, it will be used to fetch the README.md
 #   from the given github repo. If that branch is NOT master, then the
 #   branch name will be appended to the local readme file name.
 (cat <<LIST_END
