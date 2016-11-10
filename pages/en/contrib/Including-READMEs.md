@@ -4,8 +4,7 @@ keywords: LoopBack documentation
 tags: [community, contributing]
 sidebar: contrib_sidebar
 permalink: /doc/en/contrib/Including-READMEs.html
-summary: The LoopBack documentation includes a number of README files from related
-repositories, including examples, data source connectors, and components.
+summary: The LoopBack documentation includes a number of README files from related repositories, including examples, data source connectors, and components.
 ---
 Instead of manually copying the README files from their "home" repositories, we use bash scripts to automate the process.  This enables each repository to maintain its own README and yet also provide
 the same information in the documentation, with a single source to avoid differences in the information or duplication of maintenance effort.

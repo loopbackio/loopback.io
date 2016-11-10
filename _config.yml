@@ -2,6 +2,13 @@
 output: web
 # this property is useful for conditional filtering of content that is separate from the PDF.
 
+# Plugins
+whitelist:
+  - jekyll-redirect-from
+
+gems:
+  - jekyll-redirect-from
+
 topnav_title: LoopBack
 # this appears on the top navigation bar next to the home button
 

@@ -1,5 +1,7 @@
 ---
 title: "Other connectors"
+redirect_from:
+  - /doc/en/lb2/Non-database-connectors.html
 lang: en
 layout: page
 keywords: LoopBack

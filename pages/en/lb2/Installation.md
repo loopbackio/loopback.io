@@ -5,7 +5,7 @@ keywords: LoopBack
 tags: [getting_started]
 sidebar: lb2_sidebar
 permalink: /doc/en/lb2/Installation.html
-summary:
+summary: You can install LoopBack via either API Connect or StrongLoop.
 ---
 
 {% include tip.html content="Although in theory, you could code a LoopBack
@@ -16,7 +16,7 @@ your needs.  For more information, see [Command-line tools](Command-line-tools.h
 
 You have two options for LoopBack tools:
 
-- **[Install IBM API Connect](Installing-IBM-API-Connect.html)**, which includes:
+- **[Install IBM API Connect developer toolkit](Installing-IBM-API-Connect.html)**, which includes:
   - The graphical _API Designer_ tool that you can use to create and modify LoopBack applications.
   - The `apic` command-line tool for scaffolding and modifying LoopBack applications.
 

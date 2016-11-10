@@ -1,6 +1,8 @@
 ---
 lang: en
 title: LoopBack 2.x
+redirect_from:
+  - /doc/en/lb2/Using-LoopBack-with-IBM-API-Connect.html
 toc: false
 keywords: LoopBack 2.x
 tags: [getting_started]
