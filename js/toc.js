@@ -21,6 +21,7 @@
       return this.id;
     }), output = $(this);
     if (!headers.length || headers.length < settings.minimumHeaders || !output.length) {
+      output.hide();
       return;
     }
 
