@@ -1,6 +1,6 @@
 ---
 layout: page
-toc: 'false'
+toc: false
 ---
 <style>
 h1:not(.post-title-main) { display: none; }
@@ -20,7 +20,7 @@ h1:not(.post-title-main) { display: none; }
     <a href="https://github.com/{{org}}/{{repo-branch}}">{{page.source}} README</a>.
   </div>
 
-  {% include toc.html %}
+  {% include toc.html level=page.toc_level %}
 
   {{content}}
 

@@ -18,6 +18,6 @@ toc: false
 {% endif %}
 
 {% unless page.toc == false %}
-  {% include toc.html %}
+  {% include toc.html level=page.toc_level %}
 {% endunless %}
 {{content}}

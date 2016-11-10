@@ -29,10 +29,10 @@
     }
 
     var render = {
-      show: function() { output.hide().html(html).show(settings.showSpeed); },
-      slideDown: function() { output.hide().html(html).slideDown(settings.showSpeed); },
-      fadeIn: function() { output.hide().html(html).fadeIn(settings.showSpeed); },
-      none: function() { output.html(html); }
+      show: function() { output.hide().append(html).show(settings.showSpeed); },
+      slideDown: function() { output.hide().append(html).slideDown(settings.showSpeed); },
+      fadeIn: function() { output.hide().append(html).fadeIn(settings.showSpeed); },
+      none: function() { output.append(html); }
     };
 
     var get_level = function(ele) { return parseInt(ele.nodeName.replace("H", ""), 10); }

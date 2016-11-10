@@ -16,7 +16,7 @@ toc: false
 
 {% capture nav-include %}{% include navgroups/{{page.navgroup}}.md %}{% endcapture %}
 {{ nav-include | markdownify }}
-{% include toc.html %}
+{% include toc.html level=page.toc_level %}
 
 {% if page.source %}
   {% capture included-readme %}{% include_relative readmes/{{page.source}}.md %}{% endcapture %}
