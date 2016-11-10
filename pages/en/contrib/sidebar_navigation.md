@@ -9,11 +9,42 @@ permalink: /doc/en/contrib/sidebar_navigation.html
 folder: mydoc
 ---
 
-## Navgoco foundation
+## Location
 
-The original sidebar from the documentation theme used the [Navgoco jQuery plugin](https://github.com/tefra/navgoco) as its basis.
+Sidebars are defined in YAML files in the `_data/sidebars` directory.  They are
 
-We replaced it with a native Bootstrap sidebar.  
-We're still tweaking the sidebar to work as we'd like it to, so it's a work-in-progress.
+|File name| Description|
+|-------|---------|
+| lb2_sidebar.yml | LoopBack 2.x |
+| lb3_sidebar.yml | LoopBack 3.x |
+| home_sidebar.yml | Sidebar for [home page](http://loopback.io/doc/index.html) and 404 page. |
+| contrib_sidebar.yml | For "Contributing to LoopBack" |
+| community_sidebar.yml | For "Community projects" |
+| xx_lb2_sidebar.yml | Localized sidebar for language "xx" (e.g. "es" for Spanish).
 
-{% include links.html %}
+The format of the sidebar is straigthforward. Here's an example:
+
+```yaml
+title: Loopback 2.0
+url: /doc/en/lb2/index.html
+children:
+
+- title: 'Installation'
+  url: /doc/en/lb2/Installation.html
+  output: 'web, pdf'
+  children:
+
+  - title: 'Installing IBM API Connect'
+    url: /doc/en/lb2/Installing-IBM-API-Connect.html
+    output: 'web, pdf'
+
+  - title: 'Installing StrongLoop'
+    url: /doc/en/lb2/Installing-StrongLoop.html
+    output: 'web, pdf'
+    children:
+
+    - title: 'Installing compiler tools'
+      url: /doc/en/lb2/Installing-compiler-tools.html
+      output: 'web, pdf'
+...
+```
