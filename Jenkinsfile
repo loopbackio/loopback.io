@@ -13,6 +13,7 @@ node('linux && git') {
   }
   stage('download updates') {
     sh './update-readmes.sh'
+    sh './update-community-readmes.sh'
   }
   stage('check updates') {
      sh 'git status'
@@ -23,8 +24,9 @@ node('linux && git') {
       // this will add new files if the readme list grows, but removing
       // existing files will have to be done by a human for now.
       sh 'git add pages/en/lb2/readmes'
+      sh 'git add pages/en/community/readmes'
       withEnv(gitEnv) {
-        sh 'git commit -m "Update readmes from loopback repos"'
+        sh 'git commit -m "Update READMEs from other repos"'
       }
       sshagent(credentials: ['loopback-io-deploy']) {
         sh 'git push origin HEAD:$BRANCH_NAME'
