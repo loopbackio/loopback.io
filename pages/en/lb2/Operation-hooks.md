@@ -2,12 +2,13 @@
 title: "Operation hooks"
 lang: en
 layout: navgroup
+toc_level: 2
 navgroup: app-logic
 keywords: LoopBack
-tags:
+tags: application_logic
 sidebar: lb2_sidebar
 permalink: /doc/en/lb2/Operation-hooks.html
-summary:
+summary: Operation hooks are triggered by all methods that execute a particular high-level create, read, update, or delete operation.
 ---
 ## Overview
 

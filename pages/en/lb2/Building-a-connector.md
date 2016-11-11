@@ -2,11 +2,12 @@
 title: "Building a connector"
 lang: en
 layout: page
+toc_level: 1
 keywords: LoopBack
-tags:
+tags: [connectors, data_sources]
 sidebar: lb2_sidebar
 permalink: /doc/en/lb2/Building-a-connector.html
-summary:
+summary: LoopBack provides connectors for many popular relational and NoSQL databases as well as other backend data sources such as SOAP and REST services.
 ---
 
 ## Overview

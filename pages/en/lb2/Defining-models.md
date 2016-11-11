@@ -2,18 +2,15 @@
 title: "Defining models"
 lang: en
 layout: page
+toc: false
 keywords: LoopBack
-tags:
+tags: models
 sidebar: lb2_sidebar
 permalink: /doc/en/lb2/Defining-models.html
-summary:
+summary: Models are at the heart of LoopBack, and represent back-end data sources such as databases or other back-end services (REST, SOAP, and so on).
 ---
 
-{% include important.html content="
-**Prerequisites**
-
-Install [API Connect](https://developer.ibm.com/apiconnect/) or [StrongLoop](Installing-StrongLoop.html) and read [LoopBack core concepts](LoopBack-core-concepts.html).
-" %}
+{% include content/gs-prereqs.html lang=page.lang %}
 
 A _LoopBack model_ represents data in backend systems such as databases, and by default has both Node and REST APIs.
 Additionally, you can add functionality such as validation rules and business logic to models.

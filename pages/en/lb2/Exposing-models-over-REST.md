@@ -2,6 +2,7 @@
 title: "Exposing models over REST"
 lang: en
 layout: page
+toc_level: 2
 keywords: LoopBack
 tags:
 sidebar: lb2_sidebar

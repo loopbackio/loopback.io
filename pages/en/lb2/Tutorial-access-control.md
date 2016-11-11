@@ -1,7 +1,8 @@
 ---
 title: "Tutorial: access control"
 lang: en
-layout: readme
+layout: navgroup
+navgroup: access-control
 source: loopback-example-access-control
 keywords: LoopBack
 tags: example_app

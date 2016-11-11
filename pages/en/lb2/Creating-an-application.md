@@ -2,23 +2,15 @@
 title: "Creating an application"
 lang: en
 layout: page
+toc: false
 keywords: LoopBack
-tags:
+tags: [getting_started]
 sidebar: lb2_sidebar
 permalink: /doc/en/lb2/Creating-an-application.html
-summary:
+summary: Use the LoopBack application generator to create a new application.
 ---
 
 {% include content/gs-prereqs.html lang=page.lang %}
-
-{% include see-also.html content="
-- [Environment-specific configuration](Environment-specific-configuration.html)
-- [Versioning your API](Versioning-your-API.html)
-- [Standard project structure](Standard-project-structure.html)
-- [Tutorials and examples](Tutorials-and-examples.html)
-- [Creating models](Creating-models.html)
-- [Using built-in models](Using-built-in-models.html)
-" %}
 
 ## Using the application generator
 

@@ -2,6 +2,7 @@
 title: "Introducing the Coffee Shop Reviews app"
 lang: en
 layout: page
+toc: false
 keywords: LoopBack
 tags: [getting_started]
 sidebar: lb2_sidebar

@@ -2,21 +2,21 @@
 title: "Synchronization"
 lang: en
 layout: page
+toc: false
 keywords: LoopBack
 tags:
 sidebar: lb2_sidebar
 permalink: /doc/en/lb2/Synchronization.html
-summary:
+summary: Synchronization replicates data between client and server using the LoopBack replication API.
 ---
-
 {% include content/strongloop-labs.html lang=page.lang %}
 
 {% include see-also.html content="
-* [loopback-example-full-stack](https://github.com/strongloop/loopback-example-full-stack)
-* [loopback-example-offline-sync](https://github.com/strongloop/loopback-example-offline-sync)
+- [LoopBack in the client](LoopBack-in-the-client.html)
+- [Tutorial: Offline Synchronization](Tutorial-Offline-Synchronization.html)
 " %}
 
-{% include toc.html %}
+{% include toc.html level=1 %}
 
 ## Overview
 
@@ -29,8 +29,7 @@ This means the client app must synchronize data with the server application afte
 This process is called _synchronization_ (abbreviated as _sync_).
 Sync replicates data from the _source_ to the _target_, and the target calls the LoopBack replication API.
 
-{% include note.html content="
-The LoopBack replication API is a JavaScript API, and thus (currently, at least) works only with a JavaScript client. 
+{% include note.html content="The LoopBack replication API is a JavaScript API, and thus (currently, at least) works only with a JavaScript client. 
 " %}
 
 _Replication_ means intelligently copying data from one location to another.

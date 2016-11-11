@@ -2,20 +2,21 @@
 title: "Remote methods"
 lang: en
 layout: navgroup
+toc_level: 1
 navgroup: app-logic
 keywords: LoopBack
-tags:
+tags: [models, application_logic]
 sidebar: lb2_sidebar
 permalink: /doc/en/lb2/Remote-methods.html
-summary:
+summary: A remote method is a static method of a model, exposed over a custom REST endpoint.
+
 ---
 ## Overview
 
 A _remote method_ is a static method of a model, exposed over a custom REST endpoint.
 Use a remote method to perform operations not provided by LoopBack's [standard model REST API](PersistedModel-REST-API.html).
 
-{% include note.html content="
-The easiest way to define a remote method is by using the command-line [remote method generator](Remote-method-generator.html).
+{% include note.html content="The easiest way to define a remote method is by using the command-line [remote method generator](Remote-method-generator.html).
 
 For an introductory example of defining a remote method, see [Extend your API](Extend-your-API.html) in Getting Started.
 " %}
@@ -27,17 +28,16 @@ To define a remote method:
 1.  Edit the [Model definition JSON file](Model-definition-JSON-file.html) in `/common/models` directory; for example, to attach a remote method to the Person model, edit `/common/models/person.js`.
 If you created the model with the [Model generator](Model-generator.html), then this file will already exist.
 
-{% include important.html content="
-The LoopBack [model generator](Model-generator.html) automatically converts camel-case model names (for example MyModel) to lowercase dashed names (my-model).
-For example, if you create a model named \"FooBar\" with the model generator, it creates files `foo-bar.json` and `foo-bar.js` in `common/models`. 
-However, the model name (\"FooBar\") will be preserved via the model's name property.
-" %} 
-
 2.  Define a static method that will handle the request.
 
 3.  Call [`remoteMethod()`](http://apidocs.strongloop.com/loopback/#model-remotemethod), to register the method, calling it with two parameters: 
     - First parameter is a string that is the name of the method you defined in step 2 
     - Second (optional) parameter provides additional configuration for the REST endpoint.
+
+{% include important.html content="The LoopBack [model generator](Model-generator.html) automatically converts camel-case model names (for example MyModel) to lowercase dashed names (my-model).
+For example, if you create a model named \"FooBar\" with the model generator, it creates files `foo-bar.json` and `foo-bar.js` in `common/models`. 
+However, the model name (\"FooBar\") will be preserved via the model's name property.
+" %} 
 
 ### Example
 
@@ -113,22 +113,16 @@ All of the options properties are optional. However, if the remote method requir
       <td>accepts</td>
       <td>
         <p>Defines arguments that the remote method accepts. These arguments map to the static method you define. For the example above, you can see the function signature:</p>
-        <div class="code panel pdl" style="border-width: 1px;">
-          <div class="codeContent panelContent pdl"><pre>Person.greet(name, age, callback)...</pre></div>
-          </div>
+        <pre>Person.greet(name, age, callback)...</pre>
         <p>`name` is the first argument, `age` is the second argument and callback is automatically provided by LoopBack (do not specify it in your `accepts` array). For more info, see <a href="Remote-methods.html#argument-descriptions">Argument descriptions</a>.</p>
         <p>Default if not provided is the empty array, <code>[]</code>.</p>
       </td>
       <td>
-        <div class="code panel pdl" style="border-width: 1px;">
-          <div class="codeContent panelContent pdl">
-            <pre>{  ...
+        <pre>{  ...
   accepts: [
    {arg: 'name', type: 'string'},
    {arg: 'age', type: 'number'},...],
   ... }</pre>
-          </div>
-        </div>
       </td>
     </tr>
     <tr>
@@ -137,7 +131,7 @@ All of the options properties are optional. However, if the remote method requir
         <p>Text description of the method, used by API documentation generators such as Swagger.</p>
         <p>You can put long strings in an array if needed (see note below).</p>
       </td>
-      <td>&nbsp;</td>
+      <td> </td>
     </tr>
     <tr>
       <td>http.path</td>
@@ -145,11 +139,7 @@ All of the options properties are optional. However, if the remote method requir
         <p>HTTP path (relative to the model) at which the method is exposed.</p>
       </td>
       <td>
-        <div class="code panel pdl" style="border-width: 1px;">
-          <div class="codeContent panelContent pdl">
-            <pre>http: {path: '/sayhi'}</pre>
-          </div>
-        </div>
+        <pre>http: {path: '/sayhi'}</pre>
       </td>
     </tr>
     <tr>
@@ -166,42 +156,28 @@ All of the options properties are optional. However, if the remote method requir
         </ul>
       </td>
       <td>
-        <div class="code panel pdl" style="border-width: 1px;">
-          <div class="codeContent panelContent pdl">
-            <pre>http: {path: '/sayhi', verb: 'get'}</pre>
-          </div>
-        </div>
+     <pre>http: {path: '/sayhi', verb: 'get'}</pre>
       </td>
     </tr>
     <tr>
       <td>http.status</td>
       <td>Default HTTP status set when the callback is called without an error.</td>
       <td>
-        <div class="code panel pdl" style="border-width: 1px;">
-          <div class="codeContent panelContent pdl">
-            <pre class="theme: Emacs; brush: js; gutter: false" style="font-size:12px;">http: {status: 201}</pre>
-          </div>
-        </div>
+      <pre>http: {status: 201}</pre>
       </td>
     </tr>
     <tr>
       <td>http.errorStatus</td>
       <td>Default HTTP status set when the callback is called with an error.</td>
       <td>
-        <div class="code panel pdl" style="border-width: 1px;">
-          <div class="codeContent panelContent pdl">
-            <pre class="theme: Emacs; brush: js; gutter: false" style="font-size:12px;">http: {errorStatus: 400}</pre>
-          </div>
-        </div>
+        <pre>http: {errorStatus: 400}</pre>
       </td>
     </tr>
     <tr>
       <td>isStatic</td>
-      <td>Boolean. Whether the method is static (eg.&nbsp;<code>MyModel.myMethod</code>
-        ). Use&nbsp;<code>false</code>&nbsp;to define the method on the prototype
-        (for example, <code>MyModel.prototype.myMethod</code>). Default is true.
+      <td>Boolean. Whether the method is static (for example <code>MyModel.myMethod</code>). Use <code>false</code> to define the method on the prototype (for example, <code>MyModel.prototype.myMethod</code>). Default is true.
       </td>
-      <td>&nbsp;</td>
+      <td> </td>
     </tr>
     <tr>
       <td>notes</td>
@@ -209,20 +185,16 @@ All of the options properties are optional. However, if the remote method requir
         <p>Additional notes, used by API documentation generators like Swagger.</p>
         <p>You can put long strings in an array if needed (see note below).</p>
       </td>
-      <td>&nbsp;</td>
+      <td> </td>
     </tr>
     <tr>
       <td>returns</td>
       <td>
-        <p>Describes the remote method's callback arguments; See&nbsp;<a href="Remote-methods.html#argument-descriptions">Argument descriptions</a>. The&nbsp;<code>err </code>argument is assumed; do not specify.</p>
+        <p>Describes the remote method's callback arguments; See <a href="Remote-methods.html#argument-descriptions">Argument descriptions</a>. The <code>err </code>argument is assumed; do not specify.</p>
         <p>Default if not provided is the empty array,  <code>[]</code>.</p>
       </td>
       <td>
-        <div class="code panel pdl" style="border-width: 1px;">
-          <div class="codeContent panelContent pdl">
-            <pre>returns: {arg: 'greeting', type: 'string'}</pre>
-          </div>
-        </div>
+        <pre>returns: {arg: 'greeting', type: 'string'}</pre>
       </td>
     </tr>
   </tbody>
@@ -265,7 +237,7 @@ The following table describes the properties of each individual argument.
         <p>You can split long descriptions into arrays of strings (lines) to keep line lengths manageable.</p>
         <pre>[<br> "Lorem ipsum dolor sit amet, consectetur adipiscing elit,"<br>
       "sed do eiusmod tempor incididunt ut labore et dolore",<br> "magna aliqua."
-      <br>]&nbsp;</pre>
+      <br>] </pre>
       </td>
     </tr>
     <tr>
@@ -279,8 +251,8 @@ The following table describes the properties of each individual argument.
       <td>
         <p>Map the callback argument value to the HTTP response object. The following values are supported.</p>
         <ul>
-          <li><code>status</code>&nbsp;sets the&nbsp;<code>res.statusCode</code>&nbsp;to the provided value</li>
-          <li><code>header</code>&nbsp;sets the&nbsp;<code>http.header</code>&nbsp;or&nbsp;<code>arg</code>&nbsp;named header to the value</li>
+          <li><code>status</code> sets the <code>res.statusCode</code> to the provided value</li>
+          <li><code>header</code> sets the <code>http.header</code> or <code>arg</code> named header to the value</li>
         </ul>
       </td>
     </tr>
@@ -292,15 +264,15 @@ The following table describes the properties of each individual argument.
     <tr>
       <td>root</td>
       <td>Boolean</td>
-      <td>For callback arguments: set this property to&nbsp;<code>true</code>
-        &nbsp;if your function has a single callback argument to use as the root object returned to remote caller.
+      <td>For callback arguments: set this property to <code>true</code>
+         if your function has a single callback argument to use as the root object returned to remote caller.
         Otherwise the root object returned is a map (argument-name to argument-value).
       </td>
     </tr>
     <tr>
       <td>type</td>
       <td>String</td>
-      <td>Argument datatype; must be a&nbsp;<a href="LoopBack-types.html">Loopback type</a>. Additionally, callback arguments allow a special type "file"; see below.</td>
+      <td>Argument datatype; must be a <a href="LoopBack-types.html">Loopback type</a>. Additionally, callback arguments allow a special type "file"; see below.</td>
     </tr>
     <tr>
       <td>default</td>
@@ -382,9 +354,9 @@ To use the first way to specify HTTP mapping for input parameters, provide an ob
       <td>The whole request body is used as the value.</td>
     </tr>
     <tr>
-      <td>form<br>query<br>path&nbsp;</td>
+      <td>form<br>query<br>path </td>
       <td>
-        <p>The value is looked up using&nbsp;<code>req.param</code>, which searches route arguments, the request body and the query string.</p>
+        <p>The value is looked up using <code>req.param</code>, which searches route arguments, the request body and the query string.</p>
         <p>Note that <code>query</code> and <code>path</code> are aliases for <code>form</code>.</p>
       </td>
     </tr>
@@ -493,9 +465,9 @@ So a GET request to `http://localhost:3000/api/people/sayhi?msg=LoopBack%20deve
 <div class="sl-hidden"><strong>Non-public Information</strong><br>
   <p><strong>Extending a model</strong></p>
   <p>Add default functions for properties</p>
-  <div class="code panel pdl" style="border-width: 1px;">
+
     <div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>common/models/order.js</b></div>
-    <div class="codeContent panelContent pdl"><pre class="theme: Emacs; brush: js; gutter: false" style="font-size:12px;">module.exports = function(Order) {
+    <pre class="theme: Emacs; brush: js; gutter: false" style="font-size:12px;">module.exports = function(Order) {
   Order.definition.rawProperties.created.default = function() {
     return new Date();
   };
@@ -503,18 +475,18 @@ So a GET request to `http://localhost:3000/api/people/sayhi?msg=LoopBack%20deve
 }</pre></div>
   </div>
   <p>Add custom methods</p>
-  <p>&nbsp;</p>
-  <div class="code panel pdl" style="border-width: 1px;">
+  <p> </p>
+
     <div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>common/models/customer.js</b></div>
-    <div class="codeContent panelContent pdl"><pre class="theme: Emacs; brush: js; gutter: false" style="font-size:12px;">module.exports = function(Customer) {
+    <pre class="theme: Emacs; brush: js; gutter: false" style="font-size:12px;">module.exports = function(Customer) {
   Customer.prototype.getFullName = function() {
     return this.firstName - ' ' - this.lastName;
   };
-&nbsp;
+
   Customer.listVips = function(cb) {
     this.find({where: {vip: true}}, cb);
   }
-}&nbsp;</pre></div>
+} </pre></div>
   </div>
 </div>
 

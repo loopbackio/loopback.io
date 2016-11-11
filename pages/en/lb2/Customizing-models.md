@@ -1,8 +1,9 @@
 ---
 title: "Customizing models"
-layout: page
+layout: navgroup
+navgroup: models
 keywords: LoopBack
-tags:
+tags: models
 lang: en
 sidebar: lb2_sidebar
 permalink: /doc/en/lb2/Customizing-models.html
@@ -14,9 +15,7 @@ You can customize it using the command-line tool, by editing the [model definit
 
 ## Customizing a model with the command-line tool
 
-{% include note.html content="
-Once you've created a model with the  [model generator](Model-generator.html), you can't modify the model with the model generator.
-However, you can customize the model to some degree with the command-line tool; see below.
+{% include note.html content="You can't modify an existing model with the  [model generator](Model-generator.html). However, you can customize the model manually and to some degree by using the command-line tool; see below.
 " %}
 
 You can use the command-line tool to customize a model after you initially create it; specifically, you can:

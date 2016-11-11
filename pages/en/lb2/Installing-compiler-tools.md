@@ -16,14 +16,13 @@ summary: To install StrongLoop tools (but not API Connect), you must have compil
 Some devops features such as [monitoring](https://docs.strongloop.com/display/SLC/Monitoring-app-metrics) and [memory / CPU profiling](https://docs.strongloop.com/display/SLC/Profiling) require native (C++) code.  StrongLoop distributes its software with npm, but npm compiles native code upon installation.  Therefore, to take advantage of these features, you must install a compiler.  If you don't want these features, you may see error messages, but you should still be able install successfully.
 " %}
 
-{% include toc.html %}
+{% include toc.html level=1 %}
 
 ## Overview  
 
 If you don't have a C++ compiler (Visual C++ on Windows or XCode on OSX) and associated command-line tools, you won't be able to view most useful metrics, and you won't be able to perform [CPU profiling](https://docs.strongloop.com/display/SLC/CPU-profiling) or [take heap snapshots](https://docs.strongloop.com/display/SLC/Taking-heap-snapshots). 
 
-{% include important.html content="
-If you don't have compiler tools, when you run your application, you may see error messages such as \"**strong-agent could not load optional native add-on**\".
+{% include important.html content="If you don't have compiler tools, when you run your application, you may see error messages such as \"**strong-agent could not load optional native add-on**\".
 
 To eliminate the error messages and enable monitoring and tracing features, install the appropriate C++ compiler and related tools as described below.
 " %}

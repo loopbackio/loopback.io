@@ -4,15 +4,15 @@ lang: en
 layout: navgroup
 navgroup: app-logic
 keywords: LoopBack
-tags:
+tags: application_logic
 sidebar: lb2_sidebar
 permalink: /doc/en/lb2/Connector-hooks.html
-summary:
+summary: Connector hooks are triggered by actions of connectors.
 ---
 ## Overview
 
 Connectors are responsible for interacting with the backend systems on behalf of model methods.
-The connector hooks enable applications to intercept the connector execution.
+Connector hooks enable applications to intercept the connector execution.
 
 ## Hooks
 

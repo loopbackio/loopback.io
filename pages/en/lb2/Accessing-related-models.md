@@ -1,16 +1,17 @@
 ---
 title: "Accessing related models"
 lang: en
-layout: page
+layout: navgroup
+navgroup: access-control
 keywords: LoopBack
 tags: [models]
 sidebar: lb2_sidebar
 permalink: /doc/en/lb2/Accessing-related-models.html
-summary:
+summary: For related models, LoopBack automatically <i>related model methods</i> corresponding to the API routes defined for the relationship.
 ---
+<br clear="all"/>
 
-{% include important.html content="
-When accessing a related model, the active ACL is still the one for the model you are calling.
+{% include important.html content="When accessing a related model, the active ACL is still the one for the model you are calling.
 So even if your model has DENY ALL permissions set, if the model relating to it has no ACL, then all the relation endpoints will be open. This can be a security risk because, for example, `GET /OpenModel/{id}/ACLSecuredModel` will allow full access to `ACLSecuredModel` through the `OpenModel` relations.
 " %}
 

@@ -4,7 +4,7 @@ lang: en
 layout: navgroup
 navgroup: app-logic
 keywords: LoopBack
-tags:
+tags: application_logic
 sidebar: lb2_sidebar
 permalink: /doc/en/lb2/Remote-hooks.html
 summary:
@@ -17,7 +17,7 @@ LoopBack provides two kinds of hooks:
   or a standard create, retrieve, update, and delete method inherited from [PersistedModel](http://apidocs.strongloop.com/loopback/#persistedmodel).
   See [PersistedModel REST API](PersistedModel-REST-API.html) for information on how the Node methods correspond to REST operations.
 * **[Operation hooks](Operation-hooks.html)** that execute when models perform create, retrieve, update, and delete operations.
-  **NOTE**: Operation hooks replace model hooks, which are now deprecated.
+  **NOTE**: Operation hooks replace deprecated model hooks.
 
 A _remote hook_ enables you to execute a function before or after a remote method is called by a client:
 

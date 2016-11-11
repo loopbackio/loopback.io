@@ -3,11 +3,12 @@ title: "Model hooks"
 lang: en
 layout: navgroup
 navgroup: app-logic
+toc_level: 1
 keywords: LoopBack
-tags:
+tags: [models, application_logic]
 sidebar: lb2_sidebar
 permalink: /doc/en/lb2/Model-hooks.html
-summary:
+summary: Model hooks are deprecated, except for afterInitialize.
 ---
 
 {% include warning.html content="

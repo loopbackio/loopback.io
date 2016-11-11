@@ -2,11 +2,12 @@
 title: "Embedded models and relations"
 lang: en
 layout: page
+toc_level: 1
 keywords: LoopBack
-tags:
+tags: [models]
 sidebar: lb2_sidebar
 permalink: /doc/en/lb2/Embedded-models-and-relations.html
-summary:
+summary: LoopBack supports several kinds of embedded relations&#58; embedsOne, embedsMany, embedsMany with belongsTo, and referencesMany.
 ---
 
 ## Overview
@@ -20,10 +21,7 @@ In addition to the traditional ones, LoopBack also supports the following embedd
 * [EmbedsMany with belongsTo](#embedsmany-with-belongsto) - a model that embeds many links to related people, such as an author or a reader. 
 * [ReferencesMany](#referencesmany)
 
-{% include important.html content="
-
-You can use embedded relations with relational databases, but be aware that the data will be stored in stringified-JSON format.
-
+{% include important.html content="You can use embedded relations with relational databases, but data will always be stored in stringified-JSON format.
 " %}
 
 ## EmbedsOne

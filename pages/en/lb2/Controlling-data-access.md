@@ -1,23 +1,27 @@
 ---
 title: "Controlling data access"
 lang: en
-layout: page
+layout: navgroup
+navgroup: access-control
 keywords: LoopBack
-tags:
+tags: authentication
 sidebar: lb2_sidebar
 permalink: /doc/en/lb2/Controlling-data-access.html
-summary:
+summary: LoopBack uses access control lists (ACLs) to control who can access what data.
 ---
 
-{% include warning.html content="
-To enable access control, you must call `enableAuth()`. For example, in a boot script `server/boot/authentication.js`:
+## Enabling authentication
+
+When you create your app with the LoopBack [application generator](Application-generator.html), access control is automatically
+enabled, _except_ if you choose the "empty-server" application type.
+To enable access control for an "empty-server" application, you must add a boot
+script that calls `enableAuth()`. For example, in `server/boot/authentication.js`:
 
 ```javascript
 module.exports = function enableAuthentication(server) {
   server.enableAuth();
 };
 ```
-" %}
 
 ## Specifying user roles
 

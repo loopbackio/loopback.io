@@ -1,8 +1,9 @@
 ---
 title: "PersistedModel REST API"
 lang: en
-layout: page
-toc: false
+layout: navgroup
+navgroup: models
+toc_level: 1
 keywords: LoopBack
 tags: models
 sidebar: lb2_sidebar
@@ -11,17 +12,6 @@ summary: PersistedModel is the base class for models connected to persistent dat
 ---
 
 {% include content/API-Explorer.md %}
-
-{% include see-also.html content="
-* [Creating models](Creating-models.html)
-* [Customizing models](Customizing-models.html)
-* [Creating model relations](Creating-model-relations.html)
-* [Querying data](Querying-data.html)
-* [Model definition JSON file](Model-definition-JSON-file.html)
-* [PersistedModel REST API](PersistedModel-REST-API.html)
-" %}
-
-{% include toc.html %}
 
 ## Overview
 

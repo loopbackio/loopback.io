@@ -2,6 +2,7 @@
 title: "Storage component REST API"
 lang: en
 layout: page
+toc_level: 1
 keywords: LoopBack
 tags:
 sidebar: lb2_sidebar

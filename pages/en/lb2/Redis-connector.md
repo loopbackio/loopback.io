@@ -2,6 +2,7 @@
 title: "Redis connector"
 lang: en
 layout: page
+toc: false
 keywords: LoopBack
 tags: connectors
 sidebar: lb2_sidebar
@@ -10,6 +11,8 @@ summary: The Redis connector enables LoopBack applications to connect to Redis d
 ---
 
 {% include content/strongloop-labs.html lang=page.lang %}
+
+{% include toc.html %}
 
 {% include note.html content="The Redis connector requires Redis 3.0.3+.
 " %}

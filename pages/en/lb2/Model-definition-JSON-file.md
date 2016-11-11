@@ -1,28 +1,20 @@
 ---
 title: "Model definition JSON file"
 lang: en
-layout: page
+layout: navgroup
+navgroup: models
 keywords: LoopBack
-tags:
+tags: models
 sidebar: lb2_sidebar
 permalink: /doc/en/lb2/Model-definition-JSON-file.html
-summary:
+summary: The model JSON file declaratively defines a LoopBack model.
 ---
-
-{% include see-also.html content="
-* [Creating models](Creating-models.html)
-* [Customizing models](Customizing-models.html)
-* [Creating model relations](Creating-model-relations.html)
-* [Querying data](Querying-data.html)
-* [Model definition JSON file](Model-definition-JSON-file.html)
-* [PersistedModel REST API](PersistedModel-REST-API.html)
-"%}
 
 ## Overview
 
 The LoopBack [Model generator](Model-generator.html) creates a model JSON file for each model in either the `server/models`
 or the `common/models` directory (depending on your response to the generator's prompts).
-The file is named `_model-name_.json`, where _`model-name`_ is the model name; for example, `customer.json`.
+The file is named <code><i>model-name</i>.json</code>, where _`model-name`_ is the model name; for example, `customer.json`.
 The model JSON file defines models, relations between models, and access to models. 
 
 {% include important.html content="

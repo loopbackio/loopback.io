@@ -3,16 +3,11 @@ title: "Registering users"
 lang: en
 layout: page
 keywords: LoopBack
-tags:
+tags: authentication
 sidebar: lb2_sidebar
 permalink: /doc/en/lb2/Registering-users.html
-summary:
+summary: The built-in User model provides methods to register new users and confirm their email addresses.
 ---
-
-{% include see-also.html content="
-* [Authentication, authorization, and permissions](Authentication-authorization-and-permissions.html)
-* [Third-party login using Passport](Third-party-login-using-Passport.html)
-" %}
 
 The LoopBack User model provides methods to register new users and confirm their email addresses.
 You can also use the loopback-component-passport module to integrate login with Facebook, Google, and other third-party providers.

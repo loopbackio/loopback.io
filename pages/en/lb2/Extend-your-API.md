@@ -7,7 +7,7 @@ keywords: LoopBack
 tags: [getting_started]
 sidebar: lb2_sidebar
 permalink: /doc/en/lb2/Extend-your-API.html
-summary: In LoopBack, a Node function attached to a custom REST endpoint is called a _remote method_.
+summary: In LoopBack, a Node function attached to a custom REST endpoint is called a <i>remote method</i>.
 ---
 
 {% include content/gs-prereqs.html lang=page.lang %}

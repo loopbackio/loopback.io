@@ -1,12 +1,13 @@
 ---
 title: "Creating models"
 lang: en
-layout: page
+layout: navgroup
+navgroup: models
 keywords: LoopBack
-tags:
+tags: models
 sidebar: lb2_sidebar
 permalink: /doc/en/lb2/Creating-models.html
-summary:
+summary: You can create models with the model generator, by "discovery" from existing an existing database schema, and by instance introspection for non-relational data sources.
 ---
 
 ## Overview

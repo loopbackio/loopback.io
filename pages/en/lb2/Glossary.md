@@ -8,7 +8,7 @@ sidebar:  lb2_sidebar
 permalink:  /doc/en/lb2/Glossary.html
 summary: Definitions of common LoopBack terms.
 ---
-<div style="float:right;">
+<div style="float:right; width: 80px;">
 {% include toc.html %}
 </div>
 

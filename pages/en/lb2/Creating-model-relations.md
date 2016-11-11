@@ -1,23 +1,14 @@
 ---
 title: "Creating model relations"
 lang: en
-layout: page
+layout: navgroup
+navgroup: models
 keywords: LoopBack
-tags:
+tags: models
 sidebar: lb2_sidebar
 permalink: /doc/en/lb2/Creating-model-relations.html
 summary:
 ---
-
-{% include see-also.html content="
-* [Creating models](Creating-models.html)
-* [Customizing models](Customizing-models.html)
-* [Creating model relations](Creating-model-relations.html)
-* [Querying data](Querying-data.html)
-* [Model definition JSON file](Model-definition-JSON-file.html)
-* [PersistedModel REST API](PersistedModel-REST-API.html)
-"
-%}
 
 ## Overview of model relations
 
