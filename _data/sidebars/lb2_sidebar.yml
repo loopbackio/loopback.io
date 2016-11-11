@@ -468,7 +468,11 @@ children:
       url: /doc/en/lb2/Realtime-server-sent-events.html
       output: 'web, pdf'
 
-    - title: 'AngularJS LiveSet example'
+    - title: 'AngularJS Live Set'
+      url: /doc/en/lb2/AngularJS-LiveSet.html
+      output: 'web, pdf'
+
+    - title: 'AngularJS Live Set example'
       url: /doc/en/lb2/AngularJS-LiveSet-Example.html
       output: 'web, pdf'
 

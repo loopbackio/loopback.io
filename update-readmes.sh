@@ -53,6 +53,7 @@ strongloop loopback-example-xamarin master
 strongloop loopback-ios-getting-started master
 strongloop strong-error-handler master
 strongloop strong-remoting master
+strongloop angular-live-set
 strongloop loopback-component-storage master
 strongloop loopback-component-explorer master
 strongloop loopback-component-push master

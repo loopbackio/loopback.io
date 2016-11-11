@@ -20,17 +20,15 @@ LoopBack apps access data through models (see [Defining models](Defining-models
 so controlling access to data means putting restrictions on models; that is,
 specifying who or what can read/write the data or execute methods on the models. 
 
-{% include important.html content="
-**Enabling LoopBack authentication**
-
-To enable access control, you must call `enableAuth()`. For example, in a boot script `server/boot/authentication.js`:
+When you create your app with the LoopBack [application generator](Application-generator.html), access control is automatically enabled, _except_ if you choose the "empty-server" application type.
+To enable access control for an "empty-server" application, you must add a boot
+script that calls `enableAuth()`. For example, in `server/boot/authentication.js`:
 
 ```javascript
 module.exports = function enableAuthentication(server) {
   server.enableAuth();
 };
 ```
-" %}
 
 ## Access control concepts
 
