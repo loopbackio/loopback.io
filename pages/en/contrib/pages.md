@@ -6,7 +6,6 @@ last_updated: July 3, 2016
 summary: "This theme primarily uses pages. You need to make sure your pages have the appropriate frontmatter. One frontmatter tag your users might find helpful is the summary tag. This functions similar in purpose to the shortdesc element in DITA."
 sidebar: contrib_sidebar
 permalink: /doc/en/contrib/pages.html
-
 ---
 
 ## How to author content
@@ -132,6 +131,13 @@ kramdown:
 By default, a TOC appears at the top of your pages and posts. If you don't want the TOC to appear for a specific page, such as for a landing page or other homepage, add `toc: false` in the frontmatter of the page.
 
 The mini-TOC requires you to use the `##` Markdown syntax for headings. If you use `<h2>` elements, you must add an ID attribute for the heading element in order for it to appear in the mini-TOC (for example, `<h2 id="mysampleid">Heading</h2>`.
+
+By default, the table of contents will include all heading levels.  To limit the level of  headings included, use either the `toc_level` property in page frontmatter or, if using the `{% raw %}{% include toc.html %}{% endraw %}` include directly, use the `level` property.  
+
+For example, to display _only_ top-level headings (head2s or `##` headings), use:
+
+- `toc_level: 1` in frontmatter
+- `{% raw %}{% include toc.html %}{% endraw %}` inline
 
 ## Headings
 
