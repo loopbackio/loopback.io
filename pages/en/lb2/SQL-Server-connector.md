@@ -9,11 +9,6 @@ permalink: /doc/en/lb2/SQL-Server-connector.html
 summary: The SQL Server connector enables LoopBack applications to connect to Microsoft SQL Server data sources.
 ---
 
-{% include see-also.html content="
-* [loopback-example-database](https://github.com/strongloop/loopback-example-database/tree/mssql)
-* [Database discovery API](http://apidocs.strongloop.com/loopback-datasource-juggler/#datasource-prototype-discoverandbuildmodels)
-" %}
-
 {% include note.html content="The SQL Server connector requires SQL Server 2005+.
 " %}
 

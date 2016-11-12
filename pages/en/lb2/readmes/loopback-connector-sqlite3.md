@@ -4,15 +4,12 @@ The official SQLite3 connector module for the LoopBack framework.
 
 ## Connector settings
 
-The connector can be configured using the following settings from the data source.
-* file: The path to the database file or `:memory:`
-* debug (default to false)
+Configure the connector with the following data source properties:
+
+* `file`: The path to the database file or `:memory:`
+* `debug`: Display debug information. Default is false.
 
 The SQLite3 connector uses [node-sqlite3](https://github.com/mapbox/node-sqlite3) as the driver.
-
-## Discovering Models
-
-The SQLite3 connector does not currently support discovery of models.
 
 ## Model definition for SQLite3
 
@@ -76,23 +73,25 @@ The model definition consists of the following properties:
 
 ## Type Mapping
 
- - Number
-    - Primary key is stored as INTEGER
-    - Others are stored as REAL
- - Boolean
-    - Stored as INTEGER 1 or 0
- - Date
-    - Stored as INTEGER (Millis since Jan 01 1970 00:00:00 0000)
- - String
- - Complex types (GeoPoint, Point, List, Array, Object, Sub-models)
-    - Stored as TEXT in JSON form
- - JSON
-    - Stored as TEXT
-    
-SQLite3 does not enforce types. I.e. any data can be stored in any column regardless of definiton.
+| LoopBack type | Mapped to SQLite3 type |
+|-----|-----|
+| Number| Primary key stored as INTEGER, others as REAL |
+| Boolean | INTEGER 1 or 0 |
+| Date | INTEGER (ms since Jan 01 1970 00:00:00 0000) |
+| String | ? |
+| Complex types: GeoPoint, Point, List, Array, Object, and sub-models | TEXT in JSON format |
+| JSON | TEXT |
+
+SQLite3 does not enforce types. Any data can be stored in any column regardless of definiton.
 This connector attempts to check for invalid Date, Number and JSON types.
 
-## Auto Migrate / Auto Update
+## Unsupported features
+
+### Discovering Models
+
+The SQLite3 connector does not currently support model discovery.
+
+### Auto Migrate / Auto Update
 
 The SQLite3 connector does not currently support auto-migrate or auto-upgrade.
 

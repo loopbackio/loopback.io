@@ -845,6 +845,15 @@ children:
       url: /doc/en/lb2/Redis-connector.html
       output: 'web, pdf'
 
+    - title: 'Redis key-value connector'
+      url: /doc/en/lb2/kv-redis-connector.html
+      output: 'web, pdf'
+      children:
+
+      - title: 'KV connector example'
+        url: /doc/en/lb2/Example-kv-connector.html
+        output: 'web, pdf'
+
     - title: 'SQL Server connector'
       url: /doc/en/lb2/SQL-Server-connector.html
       output: 'web, pdf'
