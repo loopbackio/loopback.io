@@ -2,7 +2,7 @@
 
 `loopback-connector-mssql` is the Microsoft SQL Server connector module for [loopback-datasource-juggler](https://github.com/strongloop/loopback-datasource-juggler/).
 
-For complete documentation, see [Documentation  SQL Server Connector](http://loopback.io/doc/en/lb2/SQL-Server-connector.html).
+For complete documentation, see [Documentation | SQL Server Connector](http://loopback.io/doc/en/lb2/SQL-Server-connector.html).
 
 ## Installation
 
@@ -37,7 +37,7 @@ To use it you need `loopback-datasource-juggler`.
             database: 'mydb',
             username: 'myuser',
             password: 'mypass',
-
+            
             // You need this if using Microsoft Azure SQL database
             // options: { encrypt: true }
         });
