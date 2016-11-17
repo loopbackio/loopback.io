@@ -93,7 +93,7 @@ As evident from the list above, LoopBack takes control of the loading order of t
 middleware over those loaded using Express' interface `app.use()`, components, or boot scripts.
 
 {% include note.html content="
-If you add middleware on the `route`or `route:after` phase, it will not execute _after_ the route is matched.
+If you add middleware on the `route` or `route:after` phase, it will not execute _after_ the route is matched.
 Instead, it will be ignored because the route was already matched.
 " %}
 
@@ -101,7 +101,7 @@ The middleware to be loaded during the middleware phases are configured in the [
 The order of the phases in the file are semantic, and cannot be listed randomly.
 
 LoopBack also supports [custom phases](Defining-middleware.html#adding-a-custom-phase).
-Custom phases can be defined in any position of the middleware chain, and maybe be used to prioritize over LoopBack's built-in middleware phases.
+Custom phases can be defined in any position of the middleware chain, and may be used to prioritize over LoopBack's built-in middleware phases.
 
 ### Loading middleware
 
