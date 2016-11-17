@@ -1,9 +1,5 @@
 # loopback-connector-informix
 
-<p class="gh-only">
-<b>PLEASE CREATE ISSUES AT https://github.com/strongloop/loopback/issues</b>.
-</p>
-
 [IBM® Informix®](https://www-01.ibm.com/software/data/informix/) is the database of choice for robust, enterprise-wide solutions handling high-volume workloads.
 It is optimized to deliver industry-leading performance while lowering costs.  The `loopback-connector-informix` module is the LoopBack connector for Informix.
 

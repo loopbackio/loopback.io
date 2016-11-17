@@ -1,9 +1,5 @@
 # loopback-connector-mqlight
 
-<p class="gh-only">
-<b>PLEASE CREATE ISSUES AT https://github.com/strongloop/loopback/issues</b>.
-</p>
-
 [IBM MQ Light®](https://developer.ibm.com/messaging/mq-light/) is a simple yet powerful AMQP-based messaging API.  The `loopback-connector-mqlight` module is the Loopback connector for IBM MQ Light.  
 
 The LoopBack MQ Light connector supports:
