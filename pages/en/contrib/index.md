@@ -29,7 +29,7 @@ New issues start in an un-labelled state. During triage, if the requirements and
 
 ### Contributing to code
 
-If you're interested in contributing to the code, be sure to read the [code contribution guidelines](code-contrib.html) first. A good place to start is the [list of open issues](https://github.com/strongloop/loopback/issues?q=is%3Aopen+is%3Aissue+label%3A%22Beginner+Friendly%22).
+If you're interested in contributing to the code, be sure to read the [code contribution guidelines](code-contrib.html) first. A good place to start is the [list of open and beginner friendly issues](https://github.com/strongloop/loopback/issues?q=is%3Aopen+is%3Aissue+label%3A%22beginner-friendly%22).
 
 For code donated by community members and other community-led projects, check out the [GitHub StrongLoop Community Org](https://github.com/strongloop-community).
 
