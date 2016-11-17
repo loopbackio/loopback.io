@@ -173,8 +173,8 @@ A note about process.nextTick()
 
 In the code above, we wrap some callback invocations in `process.nextTick(()=> cb(...))`, but not others. Why?
 
-In asynchronous functions like this one that take a callback & pass results to at it at a later time,
-it's important to ensure we **always**call the callback \"at a later time\" and **never** call it right away (synchronously). 
+In asynchronous functions like this one that take a callback & pass results to it at a later time,
+it's important to ensure we **always** call the callback \"at a later time\" and **never** call it right away (synchronously). 
 We call the callback from a function passed to `process.nextTick` **in places where it would otherwise be called synchronously**.
 Calls from the `findById` or `count` callbacks are already guaranteed to happen at a later time as they access the database, an asynchronous operation, so we don't need to wrap those calls in `process.nextTick`.
 See [this blog post](http://blog.izs.me/post/59142742143/designing-apis-for-asynchrony) for more info.
