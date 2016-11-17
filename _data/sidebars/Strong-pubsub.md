@@ -1016,31 +1016,30 @@ children:
     output: 'web, pdf'
 
 - title: 'Publish-subscribe messaging'
-  url: /doc/en/lb2/Publish-subscribe-messaging.html
+  url: /doc/en/lb2/Publist-subscribe-messaging.html
   output: 'web, pdf'
-  children:
-    
+
   - title: 'Strong Pub-sub'
-    url: /doc/en/lb2/Strong-pub-sub.html
+    url: /doc/en/lb2/Strong-Pubsub.html
     output: 'web, pdf'
 
   - title: 'Pub-sub bridge'
-    url: /doc/en/lb2/Pub-sub-bridge.html
+    url: /doc/en/lb2/Pubsub-bridge.html
     output: 'web, pdf'
 
-  - title: 'MQTT adapter'
+  - title: 'MQTT Adapter'
     url: /doc/en/lb2/MQTT-adapter.html
     output: 'web, pdf'
 
-  - title: 'Redis pub-sub adapter'
-    url: /doc/en/lb2/Redis-pub-sub-adapter.html
+  - title: 'Redis pubsub adapter'
+    url: /doc/en/lb2/Redis-pubsub-adapter.html
     output: 'web, pdf'
 
-  - title: 'Primus pub-sub adapter'
-    url: /doc/en/lb2/Primus-pub-sub-adapter.html
+  - title: 'Primus pubsub adapter'
+    url: /doc/en/lb2/Primus-pubsub-adapter.html
     output: 'web, pdf'
 
-  - title: 'Node pub-sub example app'
+  - title: 'Node Pub-sub example app'
     url: /doc/en/lb2/Pub-sub-example.html
     output: 'web, pdf'
 

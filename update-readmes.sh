@@ -59,6 +59,13 @@ strongloop loopback-component-explorer master
 strongloop loopback-component-push master
 strongloop loopback-component-passport master
 strongloop loopback-component-oauth2 master
+strongloop strong-pubsub master
+strongloop strong-pubsub-bridge master
+strongloop strong-pubsub-mqtt master
+strongloop strong-pubsub-redis master
+strongloop strong-pubsub-primus master
+strongloop strong-pubsub-example master
+strongloop loopback-example-pubsub master
 LIST_END
 ) | while read org repo branch; do
   # Write the README.md to a file named after the repo

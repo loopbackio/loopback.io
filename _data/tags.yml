@@ -10,6 +10,7 @@ allowed-tags:
   - example_app
   - getting_started
   - ios
+  - messaging
   - models
   - readme
   - reference
