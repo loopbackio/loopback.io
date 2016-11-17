@@ -551,12 +551,16 @@ children:
       url: /doc/en/lb2/Setting-debug-strings.html
       output: 'web, pdf'
 
+    - title: 'Using strong-error-handler'
+      url: /doc/en/lb2/Using-strong-error-handler.html
+      output: 'web, pdf'
+
     - title: 'Preparing for deployment'
       url: /doc/en/lb2/Preparing-for-deployment.html
       output: 'web, pdf'
 
-    - title: 'Using strong-error-handler'
-      url: /doc/en/lb2/Using-strong-error-handler.html
+    - title: 'Running LoopBack on Bluemix'
+      url: /doc/en/lb2/LoopBack-on-Bluemix.html
       output: 'web, pdf'
 
 - title: 'LoopBack components'
