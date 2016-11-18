@@ -733,10 +733,6 @@ children:
       url: /doc/en/lb2/AngularJS-Grunt-plugin.html
       output: 'web, pdf'
 
-    - title: 'Angular 2 SDK'
-      url: /doc/en/lb2/Angular-2-SDK.html
-      output: 'web, pdf'
-
   - title: 'Xamarin SDK'
     url: /doc/en/lb2/Xamarin-SDK.html
     output: 'web'
@@ -1019,7 +1015,7 @@ children:
   url: /doc/en/lb2/Publish-subscribe-messaging.html
   output: 'web, pdf'
   children:
-    
+
   - title: 'Strong Pub-sub'
     url: /doc/en/lb2/Strong-pub-sub.html
     output: 'web, pdf'

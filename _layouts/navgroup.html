@@ -18,6 +18,11 @@ toc: false
 {{ nav-include | markdownify }}
 {% include toc.html level=page.toc_level %}
 
+{% if site.github_editme_path %}
+    {% assign edit_url =  page.url | remove: "/doc" | remove: ".html" | append: ".md" | prepend: site.github_editme_path %}
+    <a target="_blank" href="https://github.com/{{edit_url}}" class="btn btn-default githubEditButton-nofloat" role="button"><i class="fa fa-github fa-lg"></i> Edit this page</a>
+{% endif %}
+
 {% if page.source %}
   {% capture included-readme %}{% include_relative readmes/{{page.source}}.md %}{% endcapture %}
   {{ included-readme | markdownify }}

@@ -1,7 +1,6 @@
 ---
 title: LoopBack Documentation
-toc: false
-keywords: homepage
+layout: home
 tags: [getting_started]
 sidebar: home_sidebar
 permalink: /doc/index.html

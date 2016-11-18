@@ -8,5 +8,5 @@ keywords: LoopBack
 tags: [community]
 sidebar: community_sidebar
 permalink: /doc/en/community/SDK-builder.html
-summary: The LoopBack SDK Builder gnerates LoopBack client applications for  Angular 2 / TypeScript that can run in web, progressive, and native mobile applications using the Angular CLI, Angular Mobile Toolkit, Ionic 2, or NativeScript 2.
+summary: The LoopBack SDK Builder generates LoopBack client applications for  Angular 2 / TypeScript that can run in web, progressive, and native mobile applications using the Angular CLI, Angular Mobile Toolkit, Ionic 2, or NativeScript 2.
 ---

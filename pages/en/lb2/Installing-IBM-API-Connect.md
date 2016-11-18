@@ -5,7 +5,7 @@ keywords: LoopBack
 tags: [getting_started]
 sidebar: lb2_sidebar
 permalink: /doc/en/lb2/Installing-IBM-API-Connect.html
-summary:
+summary: Create, run, manage, and secure your APIs with IBM API Connect.
 ---
 
 To install IBM API Connect Developer Toolkit:
