@@ -101,6 +101,13 @@ Properties are required unless otherwise designated.
       </td>
     </tr>
     <tr>
+      <td>forceId</td>
+      <td>Boolean</td>
+      <td>
+        The default value is set to true whenever a model uses an auto-generated ID. If it is set to true it prevents users from setting the auto-id value manually.
+      </td>
+    </tr>
+    <tr>
       <td>http.path</td>
       <td>String</td>
       <td>Customized HTTP path for REST endpoints of this model.</td>
