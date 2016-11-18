@@ -3,9 +3,10 @@ title: "Discovering models from relational databases"
 lang: en
 layout: page
 keywords: LoopBack
-tags:
+tags: [models, data_sources]
 sidebar: lb2_sidebar
 permalink: /doc/en/lb2/Discovering-models-from-relational-databases.html
+redirect_from: "/doc/en/lb2/Database-discovery-API.html"
 summary:
 ---
 
