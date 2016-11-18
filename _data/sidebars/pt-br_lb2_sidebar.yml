@@ -13,49 +13,49 @@ url: /doc/pt-br/lb2/index.html
 translated: true
 children:
 
-- title: 'Installation'
+- title: 'Instalação'
   url: /doc/pt-br/lb2/Installation.html
   output: 'web, pdf'
   children:
 
-  - title: 'Installing IBM API Connect'
+  - title: 'Instalando o IBM API Connect'
     url: /doc/pt-br/lb2/Installing-IBM-API-Connect.html
     output: 'web, pdf'
 
-  - title: 'Installing StrongLoop'
+  - title: 'Instalando o StrongLoop'
     url: /doc/pt-br/lb2/Installing-StrongLoop.html
     output: 'web, pdf'
 
-  - title: 'Installing compiler tools'
+  - title: 'Instalando ferramentas de compilação'
     url: /doc/pt-br/lb2/Installing-compiler-tools.html
     output: 'web, pdf'
 
-  - title: 'Installing on MacOS'
+  - title: 'Instalando no MacOS'
     url: /doc/pt-br/lb2/Installing-on-MacOS.html
     output: 'web, pdf'
 
-  - title: 'Installing on Windows'
+  - title: 'Instalando no Windows'
     url: /doc/pt-br/lb2/Installing-on-Windows.html
     output: 'web, pdf'
 
-  - title: 'Installing on Linux'
+  - title: 'Instalando no Linux'
     url: /doc/pt-br/lb2/Installing-on-Linux.html
     output: 'web, pdf'
 
-  - title: 'Installation troubleshooting'
+  - title: 'Solução de problemas de instalação'
     url: /doc/pt-br/lb2/Installation-troubleshooting.html
     output: 'web, pdf'
 
-  - title: 'Updating to the latest version'
+  - title: 'Atualizando para a última versão'
     url: /doc/pt-br/lb2/Updating-to-the-latest-version.html
     output: 'web, pdf'
 
-- title: 'LoopBack core concepts'
+- title: 'Os conceitos básicos do LoopBack'
   url: /doc/pt-br/lb2/LoopBack-core-concepts.html
   output: 'web, pdf'
   children:
 
-  - title: Routing
+  - title: Roteamento
     url: /doc/pt-br/lb2/Routing.html
     output: 'web, pdf'
 
@@ -63,7 +63,7 @@ children:
     url: /doc/pt-br/lb2/LoopBack-FAQ.html
     output: 'web, pdf'
 
-  - title: 'Glossary'
+  - title: 'Glossário'
     url: /doc/pt-br/lb2/Glossary.html
     output: 'web, pdf'
 
@@ -71,12 +71,12 @@ children:
     url: /doc/pt-br/lb2/StrongLoop-Labs.html
     output: 'web, pdf'
 
-- title: 'Getting started with LoopBack'
+- title: 'Primeiros passos com o LoopBack'
   url: /doc/pt-br/lb2/Getting-started-with-LoopBack.html
   output: 'web, pdf'
   children:
 
-  - title: 'Create a simple API'
+  - title: 'Criar uma API simples'
     url: /doc/pt-br/lb2/Create-a-simple-API.html
     output: 'web, pdf'
 
@@ -84,40 +84,40 @@ children:
     url: /doc/pt-br/lb2/Use-API-Explorer.html
     output: 'web, pdf'
 
-  - title: 'Connect your API to a data source'
+  - title: 'Conectar sua API a uma base de dados'
     url: /doc/pt-br/lb2/Connect-your-API-to-a-data-source.html
     output: 'web, pdf'
 
-  - title: 'Extend your API'
+  - title: 'Estender sua API'
     url: /doc/pt-br/lb2/Extend-your-API.html
     output: 'web, pdf'
 
-  - title: 'Add a static web page'
+  - title: 'Adicionar uma página web estática'
     url: /doc/pt-br/lb2/Add-a-static-web-page.html
     output: 'web, pdf'
 
-  - title: 'Add a custom Express route'
+  - title: 'Adicionar uma rota Express personalizada'
     url: /doc/pt-br/lb2/Add-a-custom-Express-route.html
     output: 'web, pdf'
 
-  - title: 'Next steps'
+  - title: 'Próximos passos'
     url: /doc/pt-br/lb2/Next-steps.html
     output: 'web, pdf'
 
-- title: 'Getting started part II'
+- title: 'Introdução parte II'
   url: /doc/pt-br/lb2/Getting-started-part-II.html
   output: 'web, pdf'
   children:
 
-  - title: 'Introducing the Coffee Shop Reviews app'
+  - title: 'Apresentando o aplicativo Coffee Shop Reviews'
     url: /doc/pt-br/lb2/Introducing-the-Coffee-Shop-Reviews-app.html
     output: 'web, pdf'
 
-  - title: 'Create new data source'
+  - title: 'Criar nova fonte de dados'
     url: /doc/pt-br/lb2/Create-new-data-source.html
     output: 'web, pdf'
 
-  - title: 'Create new models'
+  - title: 'Criar novos models'
     url: /doc/pt-br/lb2/Create-new-models.html
     output: 'web, pdf'
 
