@@ -209,8 +209,8 @@ angular.module('LoopbackSocketIntegration')
 
 ## Defining the route for safe unsubscribing
 
-{% include note.html content=" Here **angular-ui ui-router** module is used for defining of routes as it supports [onExit](https://github.com/angular-ui/ui-router/wiki) function."
-%}
+{% include note.html content=" Here **angular-ui ui-router** module is used for defining of routes as it supports [onExit](https://github.com/angular-ui/ui-router/wiki) function.
+" %}
 
 {% include code-caption.html content="app.js" %}
 

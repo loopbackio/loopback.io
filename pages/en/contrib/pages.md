@@ -56,16 +56,16 @@ permalink: /doc/en/contrib/alerts.html
 ---
 ```
 
-Frontmatter is always formatted with three hyphens at the top and bottom. Your frontmatter must have a `title` and `permalink` value. All the other values are optional.
+Front matter is always formatted with three hyphens at the top and bottom. Your front matter must have a `title` and `permalink` value. All the other values are optional.
 
-Note that you cannot use variables in frontmatter.
+Note that you cannot use variables in front matter.
 
-The following table describes each of the frontmatter that you can use with this theme:
+The following table describes each of the front matter that you can use with this theme:
 
-| Frontmatter | Required? | Description |
+| Front matter | Required? | Description |
 |-------------|-------------|-------------|
 | **title** | Required | The title for the page |
-| **tags** | Optional | Tags for the page. Make all tags single words, with underscores if needed (rather than spaces). Separate them with commas. Enclose the whole list within brackets. Also, note that tags must be added to \_data/tags_doc.yml to be allowed entrance into the page. This prevents tags from becoming somewhat random and unstructured. You must create a tag page for each one of your tags following the pattern shown in the tags folder. (Tag pages aren't automatically created.)  |
+| **tags** | Optional | Tags for the page. Make all tags single words, with underscores if needed (rather than spaces). Separate them with commas. Enclose the whole list within brackets. Also, note that tags must be added to `_data/tags_doc.yml` to be allowed entrance into the page. This prevents tags from becoming somewhat random and unstructured. You must create a tag page for each one of your tags following the pattern shown in the tags folder. (Tag pages aren't automatically created.)  |
 | **keywords** | Optional | Synonyms and other keywords for the page. This information gets stuffed into the page's metadata to increase SEO. The user won't see the keywords, but if you search for one of the keywords, it will be picked up by the search engine.  |
 | **last_updated**  | Optional | The date the page was last updated. This information could helpful for readers trying to evaluate how current and authoritative information is. If included, the last_updated date appears in the footer of the page in rather small font.|
 | **summary** | Optional | A 1-2 word sentence summarizing the content on the page. This gets formatted into the summary section in the page layout. Adding summaries is a key way to make your content more scannable by users (check out [Jakob Nielsen's site](http://www.nngroup.com/articles/corporate-blogs-front-page-structure/) for a great example of page summaries.) The only drawback with summaries is that you can't use variables in them. |
@@ -94,7 +94,7 @@ Wildcards will exclude every match after the `*`.
 
 ## Saving pages as drafts
 
-If you add `published: false` in the frontmatter, your page won't be published. You can also move draft pages into the \_drafts folder to exclude them from the build. With posts, you can also keep them as drafts by omitting the date in the title.
+If you add `published: false` in the front matter, your page won't be published. You can also move draft pages into the \_drafts folder to exclude them from the build. With posts, you can also keep them as drafts by omitting the date in the title.
 
 ## Markdown or HTML format
 
@@ -114,7 +114,7 @@ If you have a lot of HTML, as long as the top and bottom tags of the HTML are fl
 
 Kramdown is the Markdown flavor used in the theme. This mostly aligns with Github-flavored Markdown, but with some differences in the indentation allowed within lists. Basically, Kramdown requires you to line up the indent between list items with the first starting character after the space in your list item numbering. See this [blog post on Kramdown and Rouge](http://idratherbewriting.com/2016/02/21/bug-with-kramdown-and-rouge-with-github-pages/) for more details.
 
-You can use standard Multimarkdown syntax for tables. You can also use fenced code blocks with lexers specifying the type of code. The configuration file shows the Markdown processor and extensiosn:
+You can use standard Multimarkdown syntax for tables. You can also use fenced code blocks with lexers specifying the type of code. The configuration file shows the Markdown processor and extension:
 
 ```yaml
 highlighter: rouge
@@ -128,7 +128,7 @@ kramdown:
 
 ## Automatic mini-TOCs
 
-By default, a TOC appears at the top of your pages and posts. If you don't want the TOC to appear for a specific page, such as for a landing page or other homepage, add `toc: false` in the frontmatter of the page.
+By default, a TOC appears at the top of your pages and posts. If you don't want the TOC to appear for a specific page, such as for a landing page or other homepage, add `toc: false` in the front matter of the page.
 
 The mini-TOC requires you to use the `##` Markdown syntax for headings. If you use `<h2>` elements, you must add an ID attribute for the heading element in order for it to appear in the mini-TOC (for example, `<h2 id="mysampleid">Heading</h2>`.
 
@@ -137,7 +137,9 @@ By default, the table of contents will include all heading levels.  To limit the
 For example, to display _only_ top-level headings (head2s or `##` headings), use:
 
 - `toc_level: 1` in frontmatter
-- `{% raw %}{% include toc.html %}{% endraw %}` inline
+- `{% raw %}{% include toc.html toc_level=1%}{% endraw %}` inline
+
+In both cases, the level can be from 1 to 4.
 
 ## Headings
 
