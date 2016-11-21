@@ -104,7 +104,7 @@ Properties are required unless otherwise designated.
       <td>forceId</td>
       <td>Boolean</td>
       <td>
-        The default value is set to true whenever a model uses an auto-generated ID. If it is set to true it prevents users from setting the auto-id value manually.
+        The default value is set to false. If it is set to true it prevents users from setting the auto-id value manually.
       </td>
     </tr>
     <tr>
