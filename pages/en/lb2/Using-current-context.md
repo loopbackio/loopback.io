@@ -1,5 +1,6 @@
 ---
 title: "Using current context"
+redirect_from: /doc/en/lb2/Using%20current%20context.html
 lang: en
 layout: page
 keywords: LoopBack
