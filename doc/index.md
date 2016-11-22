@@ -1,5 +1,6 @@
 ---
 title: LoopBack Documentation
+toc: false
 layout: home
 tags: [getting_started]
 sidebar: home_sidebar
