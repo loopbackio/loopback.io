@@ -10,6 +10,7 @@ summary: LoopBack connectors implement the data exchange logic to communicate wi
 ---
 
 Connectors are divided into two groups:
+
 - [Database connectors](#database-connectors) - connect to relational and NoSQL databases,
 - [Other connectors](#other-connectors) - connect to REST or SOAP APIs and other backend systems.
 
