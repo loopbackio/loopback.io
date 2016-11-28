@@ -991,6 +991,10 @@ children:
     url: /doc/en/lb2/LoopBack-types.html
     output: 'web, pdf'
 
+  - title: 'Geopoint type'
+    url: /doc/en/lb2/Geotype.html
+    output: 'web, pdf'
+    
   - title: 'Valid names in LoopBack'
     url: /doc/en/lb2/Valid-names-in-LoopBack.html
     output: 'web, pdf'

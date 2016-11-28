@@ -66,6 +66,7 @@ strongloop strong-pubsub-redis master
 strongloop strong-pubsub-primus master
 strongloop strong-pubsub-example master
 strongloop loopback-example-pubsub master
+strongloop loopback-datatype-geopoint master
 LIST_END
 ) | while read org repo branch; do
   # Write the README.md to a file named after the repo
