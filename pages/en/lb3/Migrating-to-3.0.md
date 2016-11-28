@@ -380,7 +380,7 @@ If you still need to use loopback-context in your LoopBack 3.x application, use 
  npm install --save loopback-context
  ```
 
- 2. Configure the new context middleware in `server/middleware-config.json`:
+ 2. Configure the new context middleware in `server/middleware.json`:
 
     ```js
     {

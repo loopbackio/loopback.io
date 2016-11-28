@@ -68,6 +68,7 @@ password  | String | Cloudant password
 url       | String | Cloudant URL containing both username and password
 modelIndex | String | Specify the model name to document mapping, defaults to 'loopback\_\_model\_\_name'
 
+**NOTE: Please be aware that the url will override username/password.**
 
 ### Model Specific Configuration
 
