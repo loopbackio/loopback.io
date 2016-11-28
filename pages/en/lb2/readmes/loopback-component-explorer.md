@@ -77,6 +77,23 @@ explorer(app, {
 }));
 app.use('/custom-api-root', loopback.rest());
 ```
+In applications scaffolded by `slc loopback`, you can edit the `server/component-config.json`:
+
+```json
+{
+  "loopback-component-explorer": {
+    "mountPath": "/explorer",
+    "apiInfo": {
+      "title": "My App",
+      "description": "Description of my app APIs.",
+      "termsOfServiceUrl": "http://api.mycompany.io/terms/",
+      "contact": "apiteam@mycompany.io",
+      "license": "Apache 2.0",
+      "licenseUrl": "http://www.apache.org/licenses/LICENSE-2.0.html"
+    }
+  }
+}
+```
 
 ## Options
 
