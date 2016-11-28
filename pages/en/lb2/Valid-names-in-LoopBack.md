@@ -1,5 +1,7 @@
 ---
 title: "Valid names in LoopBack"
+redirect_from:
+- /doc/en/lb3/Valid-names-in-LoopBack.html
 lang: en
 layout: page
 keywords: LoopBack
@@ -21,13 +23,8 @@ However, as a best practice, follow these more restrictive guidelines:
 * Application names can contain the dash, that is, the minus-sign character (-).
 
 {% include tip.html content="
-
 In general, LoopBack allows other characters in names, including other non-alphanumeric characters and Unicode characters,
 but using them is not recommended as a best practice. If you have questions, inquire on the [LoopBack Google Group](https://groups.google.com/forum/#!forum/loopbackjs).
 
-It is also a good idea to avoid using JavaScript [reserved words](https://mathiasbynens.be/notes/reserved-keywords) as names, since doing so may be problematic.
-
-Also, using a [predefined property name](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperty) of a JavaScript Object,
-such as `constructor`, as a property name may cause issues.
-
+It is also a good idea to avoid names that are JavaScript [reserved words](https://mathiasbynens.be/notes/reserved-keywords) or [predefined property names](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperty) of a JavaScript Objects, such as `constructor`.
 " %}

@@ -1,12 +1,14 @@
 ---
-title: "Operation hooks (version 3.0)"
+title: "Operation hooks"
+redirect_from:
+- /doc/en/lb3/Operation-hooks-version-3.0.html
 lang: en
 layout: page
 keywords: LoopBack
 tags: [application_logic]
 sidebar: lb3_sidebar
-permalink: /doc/en/lb3/Operation-hooks-version-3.0.html
-summary: Numerous changes were made to operation hooks in LoopBack version 3.0.
+permalink: /doc/en/lb3/Operation-hooks.html
+summary: Operation hooks are triggered by all methods that execute a particular high-level create, read, update, or delete operation. Numerous changes were made to operation hooks in LoopBack version 3.0.
 ---
 
 {% include see-also.html content="

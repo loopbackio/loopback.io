@@ -70,7 +70,7 @@ strongloop loopback-datatype-geopoint master
 LIST_END
 ) | while read org repo branch; do
   # Write the README.md to a file named after the repo
-  DEST="pages/en/lb2/readmes/$repo.md"
+  DEST="pages/en/lb3/readmes/$repo.md"
   # When fetching from a branch of a gh repo
   GHURL="https://raw.githubusercontent.com/$org/$repo/$branch/README.md"
   # When fetching from the latest release of a node module
@@ -84,7 +84,7 @@ LIST_END
     # actual example project, so we need to add the branch name to the readme
     # name.
     if [ "$branch" != "master" ]; then
-      DEST="pages/en/lb2/readmes/$repo-$branch.md"
+      DEST="pages/en/lb3/readmes/$repo-$branch.md"
     fi
     echo "fetching $org/$repo/$branch from GitHub's raw content domain..."
     curl -s $GHURL > $DEST
