@@ -97,5 +97,10 @@ See also [https://github.com/pasindud/awesome-loopback](https://github.com/pasin
       <td><a href="https://www.npmjs.com/package/loopback-connector-twilio" class="external-link" rel="nofollow">loopback-connector-twilio</a></td>
       <td><a href="https://github.com/dashby3000/loopback-connector-twilio/blob/master/example/example.js" class="external-link" rel="nofollow">Example</a> in GitHub.</td>
     </tr>
+    <tr>
+      <td><a href="https://www.nexmo.com/" class="external-link" rel="nofollow">Nexmo</a></td>
+      <td><a href="https://www.npmjs.com/package/loopback-connector-nexmo" class="external-link" rel="nofollow">loopback-connector-nexmo</a></td>
+      <td><a href="https://github.com/InteractiveObject/loopback-connector-nexmo/blob/master/example/example.js" class="external-link" rel="nofollow">Example</a> in GitHub.</td>
+    </tr>
   </tbody>
 </table>
