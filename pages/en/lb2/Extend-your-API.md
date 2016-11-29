@@ -127,7 +127,7 @@ module.exports = function(CoffeeShop) {
         'getName',
         {
           http: {path: '/getname', verb: 'get'},
-          accepts: {arg: 'id', type: 'number', http: { source: 'query' } },
+          accepts: {arg: 'id', type: 'string', http: { source: 'query' } },
           returns: {arg: 'name', type: 'string'}
         }
     );
