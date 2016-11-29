@@ -27,7 +27,7 @@ Get the app (in the state following the last article plus all the client files) 
 ```
 $ git clone https://github.com/strongloop/loopback-getting-started-intermediate.git
 $ cd loopback-getting-started-intermediate
-$ git checkout lb2-step6
+$ git checkout step6
 $ npm install
 ```
 

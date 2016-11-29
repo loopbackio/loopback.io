@@ -24,7 +24,7 @@ Get the app (in the state following the last article) from GitHub and install a
 ```
 $ git clone https://github.com/strongloop/loopback-getting-started.git
 $ cd loopback-getting-started
-$ git checkout lb2-step1
+$ git checkout step1
 $ npm install
 ```
 
