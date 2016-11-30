@@ -425,3 +425,5 @@ since a person can be an Author or a Reader.
   }
 }
 ```
+
+The embedded instances are stored inside their parent instance, which means you can see them in parentModel's database record. The default idType for a embedded model is "String", not the same type of its parent model id.
