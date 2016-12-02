@@ -6,13 +6,8 @@ keywords: LoopBack
 tags:
 sidebar: lb3_sidebar
 permalink: /doc/en/lb3/StrongLoop-Labs.html
-summary:
+summary: StrongLoop Labs projects provide early access to advanced or experimental functionality.  In general, these projects may lack usability, completeness, documentation, and robustness, and may be outdated.
 ---
-
-{% include note.html content="
-_**StrongLoop Labs projects**_ provide early access to advanced or experimental functionality.
-In general, these projects may lack usability, completeness, documentation, and robustness, and may be outdated.
-" %}
 
 <div style="float:right;">{% include image.html file="9830552.png" alt="StrongLoop Labs"  %}</div>
 

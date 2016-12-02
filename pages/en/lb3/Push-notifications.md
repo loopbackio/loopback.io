@@ -7,7 +7,7 @@ keywords: LoopBack
 tags:
 sidebar: lb3_sidebar
 permalink: /doc/en/lb3/Push-notifications.html
-summary:
+summary: Push notifications enable server applications to send information to mobile apps even when the app isn’t in use. 
 ---
 
 {% include content/strongloop-labs.html lang=page.lang %}

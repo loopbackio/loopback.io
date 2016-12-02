@@ -7,7 +7,7 @@ keywords: LoopBack
 tags: [android]
 sidebar: lb3_sidebar
 permalink: /doc/en/lb3/Android-SDK.html
-summary:
+summary: The Android SDK provides a simple Java API that enables an Android app to interact with a LoopBack server application.
 ---
 
 {% include content/strongloop-labs.html lang=page.lang %}

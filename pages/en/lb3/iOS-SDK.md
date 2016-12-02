@@ -7,7 +7,7 @@ keywords: LoopBack
 tags:
 sidebar: lb3_sidebar
 permalink: /doc/en/lb3/iOS-SDK.html
-summary:
+summary: The LoopBack iOS SDK provides a native iOS API that enables an iOS app to interact with a LoopBack server application.
 ---
 {% include content/strongloop-labs.html lang=page.lang %}
 

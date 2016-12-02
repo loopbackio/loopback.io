@@ -148,31 +148,6 @@ children:
     url: /doc/en/lb3/Learn-more.html
     output: 'web, pdf'
 
-- title: 'Security advisories'
-  url: /doc/en/lb3/Security-advisories.html
-  output: 'web, pdf'
-  children:
-
-  - title: '08-16a-2016'
-    url: /doc/en/lb3/Security-advisory-08-16a-2016.html
-    output: 'web, pdf'
-
-  - title: '08-16-2016'
-    url: /doc/en/lb3/Security-advisory-08-16-2016.html
-    output: 'web, pdf'
-
-  - title: '01-12-2016'
-    url: /doc/en/lb3/Security-advisory-01-12-2016.html
-    output: 'web, pdf'
-
-  - title: '06-04-2015'
-    url: /doc/en/lb3/Security-advisory-06-04-2015.html
-    output: 'web, pdf'
-
-  - title: '01-09-2015'
-    url: /doc/en/lb3/Security-advisory-01-09-2015.html
-    output: 'web, pdf'
-
 - title: 'Creating an application'
   url: /doc/en/lb3/Creating-an-application.html
   output: 'web, pdf'
