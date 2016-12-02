@@ -16,19 +16,17 @@ summary: Use the application generator tool to quickly create a LoopBack applic
 
 To create a new application, run the LoopBack [application generator](Application-generator):
 
-{% include tooltab.html
-apic="If you're using IBM API Connect tools, the command is:
+If you're using IBM API Connect tools, the command is:
 
 ```sh
 $ apic loopback
 ```
-"
-slc="If using StrongLoop tools:
+
+If using StrongLoop tools:
 
 ```sh
 $ slc loopback
 ```
-" %}
 
 The LoopBack generator will greet you with some friendly ASCII art and prompt you for the name of the application.
 
@@ -53,8 +51,8 @@ Enter `loopback-getting-started`. Then the generator will prompt you for the na
 
 Then the tool will ask you what kind of application to create:
 
-{% include tooltab.html
-apic="
+If using `apic`:
+
 ```
 ? What kind of application do you have in mind? (Use arrow keys)
 ❯ empty-server (An empty LoopBack API, without any configured models or datasources)
@@ -62,19 +60,21 @@ apic="
     a single remote method)
   notes (A project containing a basic working example, including a memory database)
 ```
-"
-slc="
+
+Press **Enter** to accept the default selection, `empty server`.
+
+If using `slc`:
+
 ```
 ? What kind of application do you have in mind? (Use arrow keys)
-❯ api-server (A LoopBack API server with local User auth)
+  api-server (A LoopBack API server with local User auth)
   empty-server (An empty LoopBack API, without any configured models or datasources)
-  hello-world (A project containing a controller, including a single vanilla Message and
+❯ hello-world (A project containing a controller, including a single vanilla Message and
     a single remote method)
   notes (A project containing a basic working example, including a memory database)
 ```
-" %}
 
-Press **Enter** to accept the default selection, `api-server`.
+Arrow down and choose `hello-world`.
 
 The generator will then display messages as it scaffolds the application including:
 
@@ -89,23 +89,25 @@ Now that you've scaffolded the initial project, you're going to create create a�
 
 Go into your new application directory, then run the LoopBack [model generator](Model-generator):
 
-```sh
+```
 $ cd loopback-getting-started
 ```
 
 Then, using IBM API Connect developer toolkit:
-```sh
+```
 $ apic create --type model
 ```
 
 Or, using StrongLoop tools:
-```sh
+```
 $ slc loopback:model
 ```
 
 The generator will prompt for a model name.  Enter **CoffeeShop**:
 
-`[?] Enter the model name: CoffeeShop`
+```
+[?] Enter the model name: CoffeeShop
+```
 
 It will ask if you want to attach the model to any data sources that have already been defined.  
 
@@ -195,7 +197,7 @@ End the model creation process by pressing **Enter** when prompted for the nam
 
 The model generator will create two files in the application's `common/models` directory that define the model: `coffee-shop.json` and `coffee-shop.js`.
 
-{% include important.html content="The LoopBack [model generator](Model-generator.html),automatically converts camel-case model names (for example MyModel) to lowercase dashed names (my-model).  For example, if you create a model named \"FooBar\" with the model generator, it creates files `foo-bar.json` and `foo-bar.js` in `common/models`.  However, the model name (\"FooBar\") will be preserved via the model's name property.
+{% include note.html content="The LoopBack [model generator](Model-generator.html),automatically converts camel-case model names (for example MyModel) to lowercase dashed names (my-model).  For example, if you create a model named \"FooBar\" with the model generator, it creates files `foo-bar.json` and `foo-bar.js` in `common/models`.  However, the model name (\"FooBar\") will be preserved via the model's name property.
 " %}
 
 ## Check out the project structure
