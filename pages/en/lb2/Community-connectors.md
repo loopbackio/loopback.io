@@ -78,6 +78,11 @@ See also [https://github.com/pasindud/awesome-loopback](https://github.com/pasin
       <td>&nbsp;</td>
     </tr>
     <tr>
+      <td><a href="https://aws.amazon.com/redshift/" class="external-link" rel="nofollow">Redshift</a></td>
+      <td><a href="https://www.npmjs.com/package/loopback-connector-redshift" class="external-link" rel="nofollow">loopback-connector-redshift</a></td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
       <td><a href="http://basho.com/riak/" class="external-link" rel="nofollow">Riak</a></td>
       <td><a href="https://www.npmjs.com/package/loopback-connector-riak" class="external-link" rel="nofollow">loopback-connector-riak</a></td>
       <td>&nbsp;</td>
