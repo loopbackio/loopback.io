@@ -39,56 +39,24 @@ Edit `datasources.json` to add other properties that enable you to connect the d
 
 ### Properties
 
-<table>
-  <tbody>
-    <tr>
-      <th>Property</th>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-    <tr>
-      <td>connector</td>
-      <td>String</td>
-      <td>
-        <p>Connector name, either "loopback-connector-mysql" or "mysql"</p>
-      </td>
-    </tr>
-    <tr>
-      <td>database</td>
-      <td>String</td>
-      <td>Database name</td>
-    </tr>
-    <tr>
-      <td>debug</td>
-      <td>Boolean</td>
-      <td>If true, turn on verbose mode to debug database queries and lifecycle.</td>
-    </tr>
-    <tr>
-      <td>host</td>
-      <td>String</td>
-      <td>Database host name</td>
-    </tr>
-    <tr>
-      <td>password</td>
-      <td>String</td>
-      <td>Password to connect to database</td>
-    </tr>
-    <tr>
-      <td>port</td>
-      <td>Number</td>
-      <td>Database TCP port</td>
-    </tr>
-    <tr>
-      <td>username</td>
-      <td>String</td>
-      <td>Username to connect to database</td>
-    </tr>
-  </tbody>
-</table>
+| Property | Type | Description |
+|----------|------|-------------|
+| collation | String | Determines the charset for the connection.  Default is 'utf8_general_ci'. |
+| connector | String | Connector name, either "loopback-connector-mysql" or "mysql". |
+| connectionLimit | Number | The maximum number of connections to create at once.  Default is 10. |
+| database | String | Database name |
+| debug | Boolean | If true, turn on verbose mode to debug database queries and lifecycle. |
+| host | String | Database host name |
+| password | String | Password to connect to database |
+| port | Number | Database TCP port |
+| socketPath | String | The path to a unix domain socket to connect to. When used host and port are ignored. |
+| supportBigNumbers | Boolean | Enable this option to deal with big numbers (BIGINT and DECIMAL columns) in the database. Default is false. |
+| timeZone | String| Defaults is 'local'. |
+| url | String | Connection URL.  Overrides other connection settings. |
+| username | String | Username to connect to database |
 
-In addition to these properties, you can use additional parameters supported by [`node-mysql`](https://github.com/felixge/node-mysql),
-for example `password` and `collation`. `Collation` currently defaults to `utf8_general_ci`.
-The `collation` value will also be used to derive the connection charset.
+{% include note.html content="In addition to these properties, you can use additional parameters supported by [`node-mysql`](https://github.com/felixge/node-mysql).
+" %}
 
 ## Type mappings
 
