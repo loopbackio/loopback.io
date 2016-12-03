@@ -51,7 +51,7 @@ Edit `datasources.json` to add other properties that enable you to connect the d
 | port | Number | Database TCP port |
 | socketPath | String | The path to a unix domain socket to connect to. When used host and port are ignored. |
 | supportBigNumbers | Boolean | Enable this option to deal with big numbers (BIGINT and DECIMAL columns) in the database. Default is false. |
-| timeZone | String| Defaults is 'local'. |
+| timeZone | String| The timezone used to store local dates.  Default is 'local'. |
 | url | String | Connection URL.  Overrides other connection settings. |
 | username | String | Username to connect to database |
 
