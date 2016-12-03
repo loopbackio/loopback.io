@@ -134,13 +134,9 @@ For example, a Customer can have multiple email addresses and each email address
 }
 ```
 
-{% include important.html content="
-
-Treat `embedsMany` as an actual relation, no different from `hasMany`, for example.
-This means that you cannot just POST the full object with embedded/nested data to create everything all at once.
-So using the example above to add a Customer and multiple email addresses would require two POST operations,
+{% include note.html content="You cannot POST the full object with embedded/nested data to create everything all at once.
+So the example above in which a Customer has multiple email addresses, adding an instance would require two POST operations,
 one for the Customer record and one for the multiple email address data.
-
 " %}
 
 ### Define the relation in code
