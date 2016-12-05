@@ -1,12 +1,12 @@
 ---
-title: Code style guide
+title: Code style guide (2.x/ES5)
 toc: false
 tags: [contributing, community]
 keywords:
 last_updated: Sept 27, 2016
-summary: "These are LoopBack's general coding style guidelines."
+summary: "These are LoopBack's general coding style guidelines for pre-ES6 branches, e.g. 2.x release lines."
 sidebar: contrib_sidebar
-permalink: /doc/en/contrib/style-guide.html
+permalink: /doc/en/contrib/style-guide-es5.html
 ---
 <!--
 Style conventions for this document:
@@ -15,8 +15,18 @@ Style conventions for this document:
  - level3 headings are reserved to subsections within rules, e.g. `#### Exceptions`
 -->
 
+{% include important.html content="
+
+This document describes the coding style we were using in EcmaScript5 code base
+before upgrading to EcmaScript6 in LoopBack 3.0. Follow these rules when
+back-porting bug fixes to older versions.
+
+See the [current style guide](style-guide.html) for up-to-date conventions
+used for new development.
+
+" %}
+
 {% include see-also.html content="
-- [ES5 style guide for LoopBack 2.x](style-guide-es5.html)
 - [Google C++ Style Guide](https://google.github.io/styleguide/cppguide.html)
 - [Google Javascript Style Guide](https://google.github.io/styleguide/javascriptguide.xml)
 " %}
@@ -24,152 +34,6 @@ Style conventions for this document:
 {% include toc.html %}
 
 ## General guidelines
-
-{% include important.html content="
-
-The rules described in this document are evolving, therefore not all of our
-code-base is following them yet. This is expected and OK. Our approach is to
-incrementally improve the parts that are changing most often, i.e. fix the
-coding style only as part of changes needed for a bug fix/new feature.
-
-" %}
-
-### Variable declarations
-
-Prefer to use immutable variables declared with `const` keyword:
-
-### Good
-
-```js
-const user = app.models.User;
-const saltWorkFactor = user.settings.saltWorkFactor;
-```
-
-#### Bad
-
-```js
-var user = app.models.User;
-var saltWorkFactor = user.settings.saltWorkFactor;
-```
-
-In the rare cases where you need to split variable declaration and
-initialization, prefer to use `let` over `var`:
-
-```js
-let discount = 0;
-
-if (customer.isPreferred) {
-  discount = 0.1;
-} else if (customer.address.state = 'CA') {
-  discount = 0.05;
-}
-```
-
-In most cases, it's possible to rewrite such code by extracting the
-conditional logic into a standalone function, which is preferred:
-
-```js
-const discount = customer.getDiscount();
-
-// Inside Customer model:
-customer.prototype.getDiscount = function() {
-  if (customer.isPreferred) {
-    return 0.1;
-  }
-
-  if (customer.address.state = 'CA') {
-    return 0.05;
-  }
-
-  return 0;
-}
-```
-
-### Arrow functions
-
-The are two considerations to keep in mind when deciding whether to use an
-arrow function or a regular function:
-
- - Arrow function preserves `this` from the outer scope. This is much more
-   perfomant than the usual workaround of storing `this` in a `self` variable.
-
- - If you are accessing `this` provided by Mocha to your test cases and
-   before/after hooks, then you cannot use an arrow function.
-
- - Arrow functions are anonymous, there is no easy way for assigning them a
-   descriptive name. This makes it difficult to understand stack traces.
-
-The rules to follow:
-
- - Always use arrow functions if you need to access `this` from outside.
-
- - Try to structure your code in such way that your callbacks are short
-   (can be written using an arrow function) and delegate most of the work
-   to named functions (with a descriptive name).
-
- - Use arrow functions in your Mocha tests, unless you need to access Mocha's
-   `this` context.
-
-#### Good
-
-```js
-class Foo {
-  bar(cb) {
-    doSomethingElse((err, data) => {
-      if (err) return cb(err);
-      const result = this.processData(data);
-      cb(null, result);
-    });
-  }
-}
-```
-
-#### Bad
-
-```js
-class Foo {
-  bar(cb) {
-    const self = this;
-    doSomethingElse(function(err, data) {
-      if (err) return cb(err);
-      const result = self.processData(data);
-      cb(null, result);
-    });
-  }
-}
-```
-
-### Classes
-
-ES6 introduced syntax-sugar for defining classes, start using its' advantages
-over old `require('util').inherits` approach.
-
-#### Good
-
-```js
-class MyConnector extends BaseConnector {
-  constructor(settings, dataSource) {
-    // ...
-  }
-
- set(modelName, key, value, options, callback) {
-    // ...
-  }
-}
-```
-
-#### Bad
-
-```js
-function MyConnector(settings, dataSource) {
-  // ...
-}
-util.inherits(MyConnector, BaseConnector);
-
-MyConnector.prototype.set = function(modelName, key, value, options, callback) {
-  // ...
-};
-```
 
 ### One argument per line
 
@@ -283,7 +147,7 @@ Good:
 Best:
 
 ```js
-const matchesInEquality = testInEquality({ gte: example.between[0] }, value) &&
+var matchesInEquality = testInEquality({ gte: example.between[0] }, value) &&
     testInEquality({lte: example.between[1]}, value) &&
     testInEquality({lte: example.between[2]}, value);
 if (matchesInEquality) {
@@ -318,7 +182,7 @@ if (testInEquality({gte: example.between[0]}, value) &&
 Good:
 
 ```
-const titles = [
+ var titles = [
   {title: 'Title A', subject: 'B'},
   {title: 'Title Z', subject: 'A'},
   {title: 'Title M', subject: 'C'},
@@ -331,7 +195,7 @@ const titles = [
 Bad:
 
 ```
-const titles = [{title: 'Title A', subject: 'B'},
+  var titles = [{title: 'Title A', subject: 'B'},
                 {title: 'Title Z', subject: 'A'},
                 {title: 'Title M', subject: 'C'},
                 {title: 'Title A', subject: 'A'},
@@ -340,7 +204,7 @@ const titles = [{title: 'Title A', subject: 'B'},
 ```
 
 ```
-const titles = [{ title: 'Title A', subject: 'B' },
+  var titles = [{ title: 'Title A', subject: 'B' },
   {title: 'Title Z', subject: 'A'},
   {title: 'Title M', subject: 'C'},
   {title: 'Title A', subject: 'A'},
@@ -355,7 +219,7 @@ In general, group related lines together (with a single empty line in between gr
 ```
 if (err) return done(err);
 
-const cat = new Cat();
+var cat = new Cat();
 cat.eat();
 cat.meow();
 cat.sleep();
@@ -399,13 +263,13 @@ done();
 
 Good:
 ```js
-const validCredentials = {email: `original@example.com`, password: 'bar'}
+var validCredentials = {email: `original@example.com`, password: 'bar'}
 ```
 
 Bad:
 
 ```js
-const validCredentials = {email: `updated@bar.com`, password: 'bar'}
+var validCredentials = {email: `updated@bar.com`, password: 'bar'}
 ```
 
 ### Hooks
@@ -452,7 +316,7 @@ When using hooks like beforeEach/before, it's best to use named functions that a
 Good:
 
 ```js
-describe('strong-error-handler', () => {
+describe('strong-error-handler', function() {
   before(setupHttpServerAndClient);
   beforeEach(resetRequestHandler)
 
@@ -480,7 +344,7 @@ describe('strong-error-handler', () => {
 Bad:
 
 ```js
-describe('strong-error-handler', () => {
+describe('strong-error-handler', function() {
   before(setupHttpServerAndClient);
   beforeEach(resetRequestHandler)
 
@@ -510,7 +374,7 @@ Anonymous functions are even worse
 
 ```js
 describe('strong-error-handler', function() {
-  before((done) => {
+  before(function(done)
     // long setup
     // .
     // .
@@ -523,7 +387,7 @@ describe('strong-error-handler', function() {
     done();
   });
 
-  beforeEach((done) => {
+  beforeEach(function(done) {
     // reset
   });
 
@@ -541,8 +405,8 @@ blocks may be placed in the outer scope.
 Good:
 
 ```js
-describe('my class', () => {
-  let app;
+describe('my class', function() {
+  var app;
   beforeEach(function setupApp);
 
   it('does something');
@@ -569,13 +433,13 @@ Run `mocha -R spec` to review test names.
 Good:
 
 ```js
-describe('strong-error-handler', () => {
+describe('strong-error-handler', function() {
   it('returns status 500 by default');
   // reads as: strong-error-handler returns status 500 by default
  });
 
-describe('User', () => {
-  describe('login()', () => {
+describe('User', function() {
+  describe('login()', function() {
     it('accepts valid credentials');
     // reads as: User login() accepts valid credentials
     it('creates an access token');
@@ -587,13 +451,13 @@ describe('User', () => {
 Bad:
 
 ```js
-describe('strong-error-handler', () => {
+describe('strong-error-handler', function() {
   it('default status');
   it('should return status 500 by default');
 });
 
-describe('User', () => {
-  describe('login()', () => {
+describe('User', function() {
+  describe('login()', function() {
     it('works');
     it('should create a token');
   });
@@ -611,10 +475,10 @@ test cases.
 ##### Good
 
 ```js
-describe('Model', () => {
-  describe('find()', () => {
-    context('with "include" filter', () => {
-      it('adds related models to the result', () => {
+describe('Model', function() {
+  describe('find()', function() {
+    context('with "include" filter', function() {
+      it('adds related models to the result', function() {
         // Model find() returns filtered results
       });
     });
@@ -627,10 +491,10 @@ describe('Model', () => {
 Bad:
 
 ```js
-describe('Model', () => {
-  describe('find()', () => {
-    describe('with "include" filter', () => {
-      it('adds related models to the result', () => {
+describe('Model', function() {
+  describe('find()', function() {
+    describe('with "include" filter', function() {
+      it('adds related models to the result', function() {
         // Model find() returns filtered results
       });
     });
@@ -641,10 +505,10 @@ describe('Model', () => {
 ```
 
 ```js
-context('Model', () => {
-  context('find()', () => {
-    context('with "include" filter', () => {
-      it('adds related models to the result', () => {
+context('Model', function() {
+  context('find()', function() {
+    context('with "include" filter', function() {
+      it('adds related models to the result', function() {
         // Model find() returns filtered results
       });
     });
