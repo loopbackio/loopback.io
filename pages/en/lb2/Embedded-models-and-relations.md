@@ -224,7 +224,7 @@ Use an embedsMany with belongsTo relation to indicate a model that can embed man
 embeds many links to related people, such as an author or a reader. Each link belongs to a person and it's polymorphic,
 since a person can be an Author or a Reader.
 
-{% include code-caption.html content="Exampel embedsMany with belongsTo model instance" %}
+{% include code-caption.html content="Sample embedsMany with belongsTo model instance" %}
 ```javascript
 { 
   id: 1
