@@ -28,7 +28,7 @@ Style conventions for this document:
 {% include important.html content="
 
 The rules described in this document are evolving, therefore not all of our
-code-base is following them yet. This is expected and OK. Our approach is to
+code-base are following them yet. This is expected and OK. Our approach is to
 incrementally improve the parts that are changing most often, i.e. fix the
 coding style only as part of changes needed for a bug fix/new feature.
 
@@ -36,19 +36,26 @@ coding style only as part of changes needed for a bug fix/new feature.
 
 ### Variable declarations
 
-Prefer to use immutable variables declared with `const` keyword:
+Prefer to use immutable variables declared with `const` keyword.
+
+{% include note.html content="
+
+`const` makes only the reference immutable, the referenced object is still
+mutable.
+
+" %}
 
 ### Good
 
 ```js
-const user = app.models.User;
-const saltWorkFactor = user.settings.saltWorkFactor;
+const User = app.models.User;
+const { saltWorkFactor } = User.settings;
 ```
 
 #### Bad
 
 ```js
-var user = app.models.User;
+var User = app.models.User;
 var saltWorkFactor = user.settings.saltWorkFactor;
 ```
 
@@ -60,7 +67,7 @@ let discount = 0;
 
 if (customer.isPreferred) {
   discount = 0.1;
-} else if (customer.address.state = 'CA') {
+} else if (customer.address.state === 'CA') {
   discount = 0.05;
 }
 ```
@@ -77,7 +84,7 @@ customer.prototype.getDiscount = function() {
     return 0.1;
   }
 
-  if (customer.address.state = 'CA') {
+  if (customer.address.state === 'CA') {
     return 0.05;
   }
 
@@ -85,19 +92,40 @@ customer.prototype.getDiscount = function() {
 }
 ```
 
+{% include important.html content="
+
+`let` currently has a small caveat in that using it in loop constructs causes
+V8 to deoptimize the function, i.e., for now you should write:
+
+```js
+for (var i = 0; i < 42; ++i) doit(i);
+```
+
+Instead of:
+
+```js
+for (let i = 0; i < 42; ++i) doit(i);
+```
+
+This will be fixed in node.js v8.x but probably won't be fixed in v4.x and v6.x.
+
+" %}
+
 ### Arrow functions
 
-The are two considerations to keep in mind when deciding whether to use an
+There are two considerations to keep in mind when deciding whether to use an
 arrow function or a regular function:
 
  - Arrow function preserves `this` from the outer scope. This is much more
-   perfomant than the usual workaround of storing `this` in a `self` variable.
+   performant than the usual workaround of storing `this` in a `self` variable.
 
  - If you are accessing `this` provided by Mocha to your test cases and
    before/after hooks, then you cannot use an arrow function.
 
- - Arrow functions are anonymous, there is no easy way for assigning them a
-   descriptive name. This makes it difficult to understand stack traces.
+ - Arrow functions are anonymous by default, which makes it difficult to
+   understand stack traces. The workaround is to assign an arrow function
+   to a variable, since V8 does a fairly good job of inferring a name
+   in such case.
 
 The rules to follow:
 
@@ -141,7 +169,7 @@ class Foo {
 
 ### Classes
 
-ES6 introduced syntax-sugar for defining classes, start using its' advantages
+ES6 introduced syntax-sugar for defining classes, start using its advantages
 over old `require('util').inherits` approach.
 
 #### Good
