@@ -87,7 +87,7 @@ If you have a MySQL database server that you can use, please use it. Create a ne
 If not, you can use the StrongLoop MySQL server running on [demo.strongloop.com](http://demo.strongloop.com/). However, be aware that it is a shared resource. There is a small chance that two users may run the script that creates sample data (see [Add some test data and view it](#add-some-test-data-and-view-it), below) at the same time and may run into race condition. For this reason, we recommend you use your own MySQL server if you have one.
 " %}
 
-Next, you need configure the data source to use the desired MySQL server.
+Next, you need to configure the data source to use the desired MySQL server.
 
 Edit `/server/datasources.json` and after the line
 
