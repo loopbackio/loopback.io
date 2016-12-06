@@ -71,7 +71,7 @@ The generator will then display messages as it scaffolds the application includi
 
 ## Create models
 
-Now that you've scaffolded the initial project, you're going to create create a _CoffeeShop_ model that will automatically have REST API endpoints.
+Now that you've scaffolded the initial project, you're going to create a _CoffeeShop_ model that will automatically have REST API endpoints.
 
 Go into your new application directory, then run the LoopBack [model generator](Model-generator):
 
@@ -181,7 +181,7 @@ End the model creation process by pressing **Enter** when prompted for the nam
 
 The model generator will create two files in the application's `common/models` directory that define the model: `coffee-shop.json` and `coffee-shop.js`.
 
-{% include important.html content="The LoopBack [model generator](Model-generator.html),automatically converts camel-case model names (for example MyModel) to lowercase dashed names (my-model).  For example, if you create a model named \"FooBar\" with the model generator, it creates files `foo-bar.json` and `foo-bar.js` in `common/models`.  However, the model name (\"FooBar\") will be preserved via the model's name property.
+{% include important.html content="The LoopBack [model generator](Model-generator.html), automatically converts camel-case model names (for example MyModel) to lowercase dashed names (my-model).  For example, if you create a model named \"FooBar\" with the model generator, it creates files `foo-bar.json` and `foo-bar.js` in `common/models`.  However, the model name (\"FooBar\") will be preserved via the model's name property.
 " %}
 
 ## Check out the project structure

@@ -565,15 +565,15 @@ The following table describes the controllers defined in `review.js`.
 
 ### Services
 
-Angular _services_ are substitutable objects that you connect  together using [dependency injection (DI)](https://docs.angularjs.org/guide/di). You can use services to organize and share code across your app.
+Angular _services_ are substitutable objects that you connect together using [dependency injection (DI)](https://docs.angularjs.org/guide/di). You can use services to organize and share code across your app.
 
 The `js/services` directory contains two AngularJS services libraries: `auth.js` and `lb-services.js`.
 
-You generated the l`b-services.js` previously, and it's described in [Generate lb-services.js](#generate-lb-servicesjs). 
+You generated the `lb-services.js` previously, and it's described in [Generate lb-services.js](#generate-lb-servicesjs). 
 
 The other file, `auth.js`, provides a simple interface for low-level authentication mechanisms.  It uses the `Reviewer` model (that extends the base `User` model) and defines the following services:
 
-*   `login`: logs a user inLoopback automatically manages the authentication token is stored in browser HTML5 localstorage.
+*   `login`: logs a user in.  Loopback automatically manages the authentication token that is stored in browser HTML5 localstorage.
 *   `logout`: logs a user out.  Stores the token in browser HTML5 localstorage.
 *   `register`: registers a new user with the provided email and password, the mininum requirements for creating a new user in LoopBack.
 
@@ -626,7 +626,7 @@ angular
 
 ### Views
 
-The `client/views` directory contains seven "partial" view templates loaded by `client/index.html` using the [ngView](https://docs.angularjs.org/api/ngRoute/directive/ngView) directive  A "partial" is a segment of a template in its own HTML file. 
+The `client/views` directory contains seven "partial" view templates loaded by `client/index.html` using the [ngView](https://docs.angularjs.org/api/ngRoute/directive/ngView) directive A "partial" is a segment of a template in its own HTML file. 
 
 The [table above](#state-summary) describes how the views correspond to states and controllers.
 
