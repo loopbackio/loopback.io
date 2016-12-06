@@ -26,7 +26,7 @@ $ apic create --type model
 Or with StrongLoop tools:
 
 ```shell
-$ slc create --type model
+$ slc loopback:model
 ```
 
 When creating a new model, the generator will prompt you for the properties in the model.
