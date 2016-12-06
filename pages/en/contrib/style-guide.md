@@ -21,38 +21,32 @@ Style conventions for this document:
 - [Google Javascript Style Guide](https://google.github.io/styleguide/javascriptguide.xml)
 " %}
 
-{% include toc.html %}
+{% include toc.html level=2 %}
 
 ## General guidelines
 
-{% include important.html content="
-
-The rules described in this document are evolving, therefore not all of our
+{% include important.html content="The rules described in this document are evolving, therefore not all of our
 code-base are following them yet. This is expected and OK. Our approach is to
 incrementally improve the parts that are changing most often, i.e. fix the
 coding style only as part of changes needed for a bug fix/new feature.
-
 " %}
 
 ### Variable declarations
 
 Prefer to use immutable variables declared with `const` keyword.
 
-{% include note.html content="
-
-`const` makes only the reference immutable, the referenced object is still
+{% include note.html content="`const` makes only the reference immutable, the referenced object is still
 mutable.
-
 " %}
 
-### Good
+**Good**:
 
 ```js
 const User = app.models.User;
 const { saltWorkFactor } = User.settings;
 ```
 
-#### Bad
+**Bad**:
 
 ```js
 var User = app.models.User;
@@ -92,9 +86,7 @@ customer.prototype.getDiscount = function() {
 }
 ```
 
-{% include important.html content="
-
-`let` currently has a small caveat in that using it in loop constructs causes
+{% include important.html content="`let` currently has a small caveat in that using it in loop constructs causes
 V8 to deoptimize the function, i.e., for now you should write:
 
 ```js
@@ -108,7 +100,6 @@ for (let i = 0; i < 42; ++i) doit(i);
 ```
 
 This will be fixed in node.js v8.x but probably won't be fixed in v4.x and v6.x.
-
 " %}
 
 ### Arrow functions
@@ -138,7 +129,7 @@ The rules to follow:
  - Use arrow functions in your Mocha tests, unless you need to access Mocha's
    `this` context.
 
-#### Good
+**Good**:
 
 ```js
 class Foo {
@@ -152,7 +143,7 @@ class Foo {
 }
 ```
 
-#### Bad
+**Bad**:
 
 ```js
 class Foo {
@@ -169,10 +160,10 @@ class Foo {
 
 ### Classes
 
-ES6 introduced syntax-sugar for defining classes, start using its advantages
-over old `require('util').inherits` approach.
+ES6 introduced syntax-sugar for defining classes.  Uee this syntax instead of the
+old `require('util').inherits` approach.
 
-#### Good
+**Good**:
 
 ```js
 class MyConnector extends BaseConnector {
@@ -182,11 +173,11 @@ class MyConnector extends BaseConnector {
 
   set(modelName, key, value, options, callback) {
     // ...
-  }
+   }
 }
 ```
 
-#### Bad
+**Bad**:
 
 ```js
 function MyConnector(settings, dataSource) {
@@ -201,9 +192,9 @@ MyConnector.prototype.set = function(modelName, key, value, options, callback) {
 
 ### One argument per line
 
-Once you cannot fit all arguments into a single line shorter than 80 chars, it's better to place each argument on a new line.
+Once you cannot fit all arguments into a single line shorter than 80 characterss, it's better to place each argument on a new line.
 
-Good:
+**Good**:
 
 ```js
 TestModel.find(
@@ -214,7 +205,7 @@ TestModel.find(
   });
 ```
 
-Bad:
+**Bad**:
 
 ```js
 TestModel.find(
@@ -224,6 +215,8 @@ TestModel.find(
   });
 ```
 
+**Bad**:
+
 ```js
 TestModel.find({where: {id: '1'}},
   {notify: false},
@@ -232,11 +225,10 @@ TestModel.find({where: {id: '1'}},
   });
 ```
 
-### Exception
+{% include note.html title="EXCEPTION:" content="When the callback function is the only argument that overflows character limit, you can put only this argument on a new line.
+" %}
 
-When the callback function is the only argument that overflows char limit, you can put only this argument on a new line.
-
-Good:
+For example:
 
 ```js
 TestModel.find({where: {id: '1'}},
@@ -245,7 +237,10 @@ TestModel.find({where: {id: '1'}},
   });
 ```
 
-When fixing existing code, it's better to preserve indentation of the inner function body and do not indent the second line:
+{% include note.html title="EXCEPTION:" content="When fixing existing code, it's better to preserve indentation of the inner function body and do not indent the second line.
+" %}
+
+For example:
 
 ```js
 TestModel.find({where: {id: '1'}},
@@ -254,11 +249,10 @@ function(err, list) {
 });
 ```
 
-### Exception
+{% include note.html title="EXCEPTION:" content="When the arguments are only short primitive values (strings, numbers) or short variable/property references, you can collapse them on the same line.
+" %}
 
-When the arguments are only short primitive values (strings, numbers) or short variable/property references, one can collapse them on the same line.
-
-Good:
+**Good**:
 
 ```js
 console.error('Unhandled array of errors for request %s %s\n',
@@ -269,7 +263,7 @@ console.error(
   req.method, req.url, errors);
 ```
 
-Bad:
+**Bad**:
 
 ```js
 console.error(
@@ -283,7 +277,7 @@ console.error(
 
 Indent the second and all next lines by one level.
 
-Good:
+**Good**:
 
 ```js
 return (testInEquality({gte: example.between[0]}, value) &&
@@ -291,7 +285,7 @@ return (testInEquality({gte: example.between[0]}, value) &&
   testInEquality({lte: example.between[2]}, value));
 ```
 
-Bad:
+**Bad**:
 
 ```js
 return (testInEquality({gte: example.between[0]}, value) &&
@@ -305,10 +299,13 @@ Prefer to extract the multi-line expression to a variable, as it is easiest to r
 
 When not feasible, then indent the second and next lines by two levels.
 
-Good:
-(?)
+**Good**:
 
-Best:
+```
+TBD
+```
+
+**Best**:
 
 ```js
 const matchesInEquality = testInEquality({ gte: example.between[0] }, value) &&
@@ -329,7 +326,7 @@ if (testInEquality({gte: example.between[0]}, value) &&
 }
 ```
 
-Bad:
+**Bad**:
 
 One level of indentation makes it difficult to tell the difference between the condition and the branch body.
 
@@ -343,7 +340,7 @@ if (testInEquality({gte: example.between[0]}, value) &&
 
 ### Multiline Array
 
-Good:
+**Good**:
 
 ```
 const titles = [
@@ -356,7 +353,7 @@ const titles = [
 ];
 ```
 
-Bad:
+**Bad**:
 
 ```
 const titles = [{title: 'Title A', subject: 'B'},
@@ -393,7 +390,7 @@ return cat;
 
 However, if the method is short (3-5 lines) then just group it all together.
 
-Good:
+**Good**:
 
 ```
 if (err) return done(err);
@@ -401,7 +398,7 @@ expect(result).to...;
 done();
 ```
 
-Bad:
+**Bad**:
 
 ```
 if (err) return done(err);
@@ -411,7 +408,7 @@ expect(result).to...;
 done();
 ```
 
-## Testing-related
+## Style guidelines for tests
 
 ### Sandbox directories
 
@@ -425,12 +422,13 @@ done();
 - All test-related email examples should be of the format `email@example.com`.
 - The `example.com` domain was created to be used for examples in documents, and could be used without prior coordination or asking for permission.
 
-Good:
+**Good**:
+
 ```js
 const validCredentials = {email: `original@example.com`, password: 'bar'}
 ```
 
-Bad:
+**Bad**:
 
 ```js
 const validCredentials = {email: `updated@bar.com`, password: 'bar'}
@@ -438,7 +436,7 @@ const validCredentials = {email: `updated@bar.com`, password: 'bar'}
 
 ### Hooks
 
-Good:
+**Good**:
 
 ```js
 beforeEach(namedFunction);
@@ -463,9 +461,10 @@ beforeEach('some description', function namedFunction() {
 
 The first example shows up in test output, but not stack traces. The second and third example shows up in test output and stack traces, but is a bit redundant to type two descriptions (one in the string and a duplicate in the function name)
 
-> Each of the above styles are acceptable and a decision will be made in the future as to which one is preferred. For now, feel free to pick the one that suits you.
+{% include tip.html content="Each of the above styles is acceptable and a decision will be made in the future as to which one is preferred. For now, feel free to pick the one that suits you.
+" %}
 
-Bad:
+**Bad**:
 
 ```js
 beforeEach(function() {
@@ -477,7 +476,7 @@ beforeEach(function() {
 
 When using hooks like beforeEach/before, it's best to use named functions that are then defined at the bottom of the test file. The idea is to make it easy to find the meat of a test file, which are the unit-tests. The method names used for hooks should make it clear enough what's their purpose, allowing most readers to not need to know implementation details and skip directly to unit-tests.
 
-Good:
+**Good**:
 
 ```js
 describe('strong-error-handler', () => {
@@ -560,13 +559,11 @@ describe('strong-error-handler', function() {
  });
 ```
 
-### Exception
-
-Variables initialized by helpers and used from tests should be declared
-at the top of the `describe` block. Variables shared by multiple `describe`
+{% include note.html title="EXCEPTION:" content="Variables initialized by helpers and used from tests should be declared at the top of the `describe` block. Variables shared by multiple `describe`
 blocks may be placed in the outer scope.
+" %}
 
-Good:
+For example:
 
 ```js
 describe('my class', () => {
@@ -588,13 +585,14 @@ Test names should describe the expected outcome under certain conditions. They s
 
 Use imperative mood, **do not** start test names with `should`.
 
-The test name should make it clear:
- - what is being tested, what are the conditions specific to this test case
- - what is the expected outcome
+The test name should make clear:
+
+ - What is being tested, and the conditions specific to this test case.
+ - Expected outcome.
 
 Run `mocha -R spec` to review test names.
 
-Good:
+**Good**:
 
 ```js
 describe('strong-error-handler', () => {
@@ -612,7 +610,7 @@ describe('User', () => {
 );
 ```
 
-Bad:
+**Bad**:
 
 ```js
 describe('strong-error-handler', () => {
@@ -636,7 +634,7 @@ being tested. In this particular example, both `Model` and `find()` should use
 `describe`. The goal is to create a human readable prefix to stand for `it` in the
 test cases.
 
-##### Good
+**Good**:
 
 ```js
 describe('Model', () => {
@@ -652,7 +650,7 @@ describe('Model', () => {
 });
 ```
 
-Bad:
+**Bad**:
 
 ```js
 describe('Model', () => {
