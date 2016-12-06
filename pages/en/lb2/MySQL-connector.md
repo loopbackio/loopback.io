@@ -6,7 +6,7 @@ keywords: LoopBack
 tags: connectors
 sidebar: lb2_sidebar
 permalink: /doc/en/lb2/MySQL-connector.html
-summary: The MSSQL connector enables LoopBack applications to connect to Microsoft SQL Server data sources.
+summary: The MySQL connector enables LoopBack applications to connect to MySQL data sources.
 ---
 
 {% include note.html content="The MySQL connector requires MySQL 5.0+.
