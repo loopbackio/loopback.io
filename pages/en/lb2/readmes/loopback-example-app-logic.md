@@ -63,7 +63,7 @@ $ slc loopback:model car
 
 ### Define a remote method
 
-Define a [remote method in `car.js`](https://github.com/strongloop/loopback-example-app-logic/blob/master/common/models/car.js#L2-L13).
+Define a [remote method in `car.js`](https://github.com/strongloop/loopback-example-app-logic/blob/master/common/models/car.js#L7-L18).
 
 > The remote method takes a "sound" and repeats it three times.
 
@@ -80,7 +80,7 @@ You should see:
 
 ### Define a remote method before hook
 
-Define a [remote method before hook in `car.js`](https://github.com/strongloop/loopback-example-app-logic/blob/master/common/models/car.js#L15-L19).
+Define a [remote method before hook in `car.js`](https://github.com/strongloop/loopback-example-app-logic/blob/master/common/models/car.js#L20-L24).
 
 > The second parameter `unused` must be provided for legacy reasons. You may simply ignore it, but you must declare it to ensure `next` is the third parameter. This is a side effect of inheriting from the [`jugglingdb`](https://github.com/1602/jugglingdb) library.
 
@@ -103,7 +103,7 @@ Putting in the car key, starting the engine.
 
 ### Define a remote method after hook
 
-Define a [remote method after hook in `car.js`](https://github.com/strongloop/loopback-example-app-logic/blob/master/common/models/car.js#L21-L25).
+Define a [remote method after hook in `car.js`](https://github.com/strongloop/loopback-example-app-logic/blob/master/common/models/car.js#L54-L58).
 
 This method is triggered after `revEngine` finishes execution and prints a message to the console.
 
@@ -142,7 +142,7 @@ Models:  [ 'User', 'AccessToken', 'ACL', 'RoleMapping', 'Role', 'car' ]
 
 ### Define a model operation hook
 
-Define [a model operation hook in `car.js`](https://github.com/strongloop/loopback-example-app-logic/blob/master/common/models/car.js#L27-L35).
+Define [a model operation hook in `car.js`](https://github.com/strongloop/loopback-example-app-logic/blob/master/common/models/car.js#L61-L68).
 
 Copy the `create-car.js` script to the `server/boot` directory.
 
