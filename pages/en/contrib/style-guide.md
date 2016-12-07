@@ -180,7 +180,7 @@ class MyConnector extends BaseConnector {
     // ...
   }
 
- set(modelName, key, value, options, callback) {
+  set(modelName, key, value, options, callback) {
     // ...
   }
 }
