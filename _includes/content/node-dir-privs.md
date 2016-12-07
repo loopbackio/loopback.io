@@ -1,3 +1,5 @@
+### Set directory privileges
+
 {% include warning.html content="
 Changing privileges like this is appropriate _only_ on your local development system. Never do this on a server system.
 " %}
@@ -29,7 +31,3 @@ This command makes your user account the owner of the `/usr/local` directory. 
 If you have to use `sudo`, use the following command:
 
 `$ sudo npm install -g --unsafe-perm install strongloop`
-
-Install Node.js
-
-Follow the instructions in [Installing Node.js via package manager](https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager).  See also [NodeSource Node.js and io.js Binary Distributions](https://github.com/nodesource/distributions/blob/master/README.md).
