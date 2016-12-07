@@ -85,7 +85,7 @@ using the **filter** field to specify a [Where filter](Where-filter), 
 See [Querying data](Querying-data) for more information.
 
 {% include tip.html content="
-API Explorer automatically adds \"filter\" to the query string, but you must enter [Stringified JSON](Querying-data.html#using-stringified-json-in-rest-queries) in the **filter** field. Also make sure that the quotes you use are proper straight quotes ( \" ), not curved or typographic quotation marks ( “ or ” ). These can often be hard to distinguish visually.
+API Explorer automatically adds \"filter\" to the query string, but you must enter [Stringified JSON](Querying-data.html#using-stringified-json-in-rest-queries) in the **filter** field. Also make sure that the quotes you use are proper straight quotes ( &quot; ), not curved or typographic quotation marks ( “ or ” ). These can often be hard to distinguish visually.
 " %}
 
 You may have noticed the **accessToken** field and **Set Access Token** button at the top right of the API Explorer window. Use these to authenticate a user and "login" to an app so you can perform actions that require authentication. For more information, see [Introduction to User model authentication](Introduction-to-User-model-authentication).
