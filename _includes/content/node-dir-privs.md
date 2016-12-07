@@ -20,7 +20,9 @@ npm ERR! Please try running this command again as root/Administrator
 
 Then you don't have the required rights to create files or directories.  Either change the rights for the specified directories, or run the command using `sudo`.  In general, it's better to fix the directory rights as follows:
 
-`$ sudo chown -R $USER /usr/local`
+```
+$ sudo chown -R $USER /usr/local
+```
 
 This command makes your user account the owner of the `/usr/local` directory. Then you won't ever have to use `sudo` to install Node or install packages globally with `npm`. For more information, see [How to Node](http://howtonode.org/introduction-to-npm).
 
@@ -30,4 +32,6 @@ This command makes your user account the owner of the `/usr/local` directory. 
 
 If you have to use `sudo`, use the following command:
 
-`$ sudo npm install -g --unsafe-perm install strongloop`
+```
+$ sudo npm install -g --unsafe-perm install strongloop
+```

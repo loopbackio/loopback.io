@@ -3,7 +3,7 @@
 Follow these steps:
 
 1.  Open a terminal window
-2.  Enter this command:
+2.  Enter this command: 
 
     ```
     $ npm install -g strongloop

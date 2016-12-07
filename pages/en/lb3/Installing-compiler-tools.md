@@ -4,7 +4,7 @@ lang: en
 layout: page
 toc: false
 keywords: LoopBack
-tags: [getting_started]
+tags: [installation]
 sidebar: lb3_sidebar
 permalink: /doc/en/lb3/Installing-compiler-tools.html
 summary: To install StrongLoop tools (but not API Connect), you must have compiler tools installed.

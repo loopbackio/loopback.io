@@ -3,7 +3,7 @@ title: "Installing on Linux"
 lang: en
 layout: page
 keywords: LoopBack
-tags:
+tags: installation
 sidebar: lb3_sidebar
 permalink: /doc/en/lb3/Installing-on-Linux.html
 summary: Follow the procedure below to install StrongLoop on Linux.
@@ -16,8 +16,7 @@ summary: Follow the procedure below to install StrongLoop on Linux.
 
 {% include content/install-compiler-tools.md %} 
 
-{% include tip.html content="
-Many Linux distributions come with the necessary tools. See [Installing compiler tools](Installing-compiler-tools.html#linux) for detailed requirements.
+{% include tip.html content="Many Linux distributions come with the necessary tools. See [Installing compiler tools](Installing-compiler-tools.html#linux) for detailed requirements.
 " %}
 
 {% include content/node-dir-privs.md %}

@@ -3,7 +3,7 @@ title: "Installation troubleshooting"
 lang: en
 layout: page
 keywords: LoopBack
-tags:
+tags: installation
 sidebar: lb3_sidebar
 permalink: /doc/en/lb3/Installation-troubleshooting.html
 summary:

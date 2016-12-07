@@ -3,7 +3,7 @@ title: "Installing on Windows"
 lang: en
 layout: page
 keywords: LoopBack
-tags:
+tags: installation
 sidebar: lb3_sidebar
 permalink: /doc/en/lb3/Installing-on-Windows.html
 summary: Follow the procedure below to install StrongLoop on MacOS.

@@ -4,7 +4,7 @@ lang: en
 layout: page
 toc: false
 keywords: LoopBack
-tags:
+tags: installation
 sidebar: lb3_sidebar
 permalink: /doc/en/lb3/Installing-StrongLoop.html
 summary:
