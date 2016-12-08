@@ -78,6 +78,7 @@ children:
     - title: 'Add a custom Express route'
       url: '/doc/zh/lb2/Add-a-custom-Express-route.html'
       output: 'web, pdf'
+      translated: true
 
     - title: 'Next steps'
       url: '/doc/zh/lb2/Next-steps.html'
@@ -173,9 +174,10 @@ children:
       url: '/doc/zh/lb2/Defining-and-using-roles.html'
       output: 'web, pdf'
 
-    - title: 'Restricting access to related models'
-      url: '/doc/zh/lb2/Restricting-access-to-related-models.html'
+    - title: 'Accessing related models'
+      url: '/doc/zh/lb2/Accessing-related-models.html'
       output: 'web, pdf'
+      translated: true
 
     - title: 'Creating a default admin user'
       url: '/doc/zh/lb2/Creating-a-default-admin-user.html'
@@ -413,10 +415,12 @@ children:
       - title: 'Access token REST API'
         url: '/doc/zh/lb2/Access-token-REST-API.html'
         output: 'web, pdf'
+        translated: true
 
       - title: 'ACL REST API'
         url: '/doc/zh/lb2/ACL-REST-API.html'
         output: 'web, pdf'
+        translated: true
 
       - title: 'Application REST API'
         url: '/doc/zh/lb2/Application-REST-API.html'
@@ -762,6 +766,8 @@ children:
       - title: 'ACL generator'
         url: '/doc/zh/lb2/ACL-generator.html'
         output: 'web, pdf'
+        translated: true
+
 
       - title: 'Application generator'
         url: '/doc/zh/lb2/Application-generator.html'
