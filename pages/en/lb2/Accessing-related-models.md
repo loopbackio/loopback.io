@@ -7,7 +7,7 @@ keywords: LoopBack
 tags: [models]
 sidebar: lb2_sidebar
 permalink: /doc/en/lb2/Accessing-related-models.html
-summary: For related models, LoopBack automatically <i>related model methods</i> corresponding to the API routes defined for the relationship.
+summary: For related models, LoopBack automatically adds <i>related model methods</i> corresponding to the API routes defined for the relationship.
 ---
 <br clear="all"/>
 
