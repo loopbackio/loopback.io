@@ -90,12 +90,12 @@ Properties are required unless otherwise designated.
       <td>idInjection</td>
       <td>Boolean</td>
       <td>
-        Whether to automatically add an id property to the model:
+        Whether to automatically add an <code>id</code> property to the model:
         <ul>
-          <li><code>true</code>:&nbsp;<code>id</code>&nbsp;property is added to the model automatically. This is the default.</li>
-          <li><code>false</code>:&nbsp;<code>id</code>&nbsp;property is not added to the model</li>
+          <li><code>true</code>: <code>id</code> property is added to the model automatically. This is the default.</li>
+          <li><code>false</code>: <code>id</code> property is not added to the model</li>
         </ul>
-        See <a href="Model-definition-JSON-file.html">ID properties</a> for more information.  <strong>Optional</strong>; default is <code>true</code>. If present, the <code>idInjection</code> propery in <code>options</code> takes precedence.
+        See <a href="#id-properties">ID properties</a> for more information.  <strong>Optional</strong>; default is <code>true</code>. If present, the <code>idInjection</code> property in <code>options</code> takes precedence.
       </td>
     </tr>
     <tr>
@@ -132,14 +132,14 @@ Properties are required unless otherwise designated.
       </td>
       <td>Object</td>
       <td>
-        JSON object that specifies model options. See <a href="Model-definition-JSON-file.html">Options</a> below.
+        JSON object that specifies model options. See <a href="#options">Options</a> below.
       </td>
     </tr>
     <tr>
       <td>properties</td>
       <td>Object</td>
       <td>
-        JSON object that specifies the properties in the model. See <a href="Model-definition-JSON-file.html">Properties</a> below.
+        JSON object that specifies the properties in the model. See <a href="#properties">Properties</a> below.
       </td>
     </tr>
     <tr>
@@ -147,21 +147,21 @@ Properties are required unless otherwise designated.
       <td>Object</td>
       <td>
         Object containing relation names and relation definitions.
-        See <a href="Model-definition-JSON-file.html">Relations</a> below.
+        See <a href="#relations">Relations</a> below.
       </td>
     </tr>
     <tr>
       <td>acls</td>
       <td>Array</td>
       <td>
-        Set of&nbsp;<code>ACL</code>&nbsp;specifications that describes access control for the model.
-        See <a href="Model-definition-JSON-file.html">ACLs</a> below.
+        Set of <code>ACL</code> specifications that describes access control for the model.
+        See <a href="#acls">ACLs</a> below.
       </td>
     </tr>
     <tr>
       <td>scopes</td>
       <td>Object</td>
-      <td>See <a href="Model-definition-JSON-file.html">Scopes</a> below.</td>
+      <td>See <a href="#scopes">Scopes</a> below.</td>
     </tr>
   </tbody>
 </table>
@@ -177,7 +177,7 @@ The `options` key specifies advanced options, for example data source-specific o
 
 | Property | Type | Description |
 | -------- | ---- | ----------- |
-| `validateUpsert` | Boolean | By default, the `[upsert()](http://apidocs.strongloop.com/loopback/#persistedmodel-upsert)` method (also known as `updateOrCreate()` ) does not enforce valid model data. Instead, it logs validation errors to the console. This is not optimal, but necessary to preserve backwards compatibility with older 2.x versions. <br/><br/>Set this property to true to ensure that `upsert()` returns an error when validation fails. The next major version of LoopBack will enable this option (set as true) by default.<br/><br/> Set this property to false to prevent `upsert()` from calling any validators at all. <br/><br/> By default, `upsert()` calls all validators and reports any validation errors to the console log.|
+| `validateUpsert` | Boolean | By default, the <a href="http://apidocs.strongloop.com/loopback/#persistedmodel-upsert">upsert()</a> method (also known as `updateOrCreate()` ) does not enforce valid model data. Instead, it logs validation errors to the console. This is not optimal, but necessary to preserve backwards compatibility with older 2.x versions. <br/><br/>Set this property to true to ensure that `upsert()` returns an error when validation fails. The next major version of LoopBack will enable this option (set as true) by default.<br/><br/> Set this property to false to prevent `upsert()` from calling any validators at all. <br/><br/> By default, `upsert()` calls all validators and reports any validation errors to the console log.|
 | `allowEternalTokens` | Boolean | Allow access tokens that never expire. |
 
 ### Data source-specific options
