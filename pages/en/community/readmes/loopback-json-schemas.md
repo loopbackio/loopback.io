@@ -1,16 +1,60 @@
 # LoopBack JSON Schemas
 This repository contains [JSONSchemas](http://json-schema.org/) for the [LoopBack](http://loopback.io/) framework.
 
-:warning: **These schemas are a work in progress & _do not_ capture every feature & setting.** [Consult docs](https://docs.strongloop.com/display/APIC/Using+LoopBack+with+IBM+API+Connect) for best results :+1:.
+:warning: **These schemas are a work in progress & _do not_ capture every feature & setting.** [Consult docs](http://loopback.io/) for best results :+1:.
 
 :information_source: These schemas target loopback **version 3** which is not 100% compatible with most loopback applications currently in production. I chose to target the next version in the interest of being forward looking & because time is limited.
 
 # Contributing
 
-* [Roadmap in `TODO.md`](TODO.md). :point_left: This is where to contribute if you'd like to help!
-* **In order to get your changes into the `dist` version, you must run `npm run build`!** Please do this before submitting PR. 
+[Roadmap in `TODO.md`](TODO.md). :point_left: This is where to contribute if you'd like to help!
+
+## 1. Setup
+
+1. Clone this repository
+2. `npm install`
+
+## 2. Working on schemas
+
+1. Work on schemas in `src`. Use **localhost URLs for references** (these will be replaced before publish)
+2. Serve them from localhost using `npm run serve`.
+   * You can now point to the **local** versions of these schemas for testing from **a different VSCode window with a test project**. Example: <http://localhost:8090/loopback-datasources-config.json>
+3. To try them out with a JSON document in vscode, create a document like this:
+   ```
+   {
+     "$schema": "http://localhost:8090/loopback-datasources-config.json",
+     "db": {
+       "name": "db",
+       "connector": "memory"
+     },
+     "mysql": {
+       "host": "localhost",
+       "url": "",
+       "database": "boston",
+       "name": "mysql",
+       "connector": "mysql",
+       "user": "root"
+     }
+   }
+   ``` 
+4. To get VSCode to reload your schema after changing it, add a query string to the end of the `$schema` URL:
+  1. Edit schema in `src`
+  2. in your test project window: `"$schema": "http://localhost:8090/loopback-datasources-config.json?x=1"`
+  3. Edit schema in `src`
+  4. in your test project window: `"$schema": "http://localhost:8090/loopback-datasources-config.json?x=2"`
+  5. etc.
+
+## 3. Publishing/Submitting PR
+
+Production schemas are served from the `dist` directory. 
+
+1. run `npm run build` in order to get your changes into the `dist` directory
+2. commit, push, submit PR
+
+PRs *must* have changes committed to both the `src` & `dist` directories. 
 
 # Using the schemas
+
 ## Method 1. Point json files to schemas
 Using an IDE that supports JSONSchemas (I recommend [VS Code](https://code.visualstudio.com/)), point to a schema thus:
 `common/models/customer.json`
