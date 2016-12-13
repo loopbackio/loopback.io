@@ -9,10 +9,7 @@ permalink: /doc/en/lb3/Model-property-reference.html
 summary:
 ---
 
-{% include important.html content="
-
-This reference information is being moved to the API documentation. Until that is complete, it is provided here.
-
+{% include important.html content="This reference information is being moved to the API documentation. Until that is complete, it is provided here.
 " %}
 
 ## Application properties

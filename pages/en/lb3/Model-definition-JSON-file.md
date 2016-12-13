@@ -66,8 +66,8 @@ Properties are required unless otherwise designated.
       <td>description</td>
       <td>String or Array</td>
       <td>
-        <p>Optional description of the model.</p>
-        <p>You can split long descriptions into arrays of strings (lines) to keep line lengths manageable.</p>
+        Optional description of the model.<br/><br/>
+        You can split long descriptions into arrays of strings (lines) to keep line lengths manageable.
         <pre>[<br>  "Lorem ipsum dolor sit amet, consectetur adipiscing elit",<br>
       "sed do eiusmod tempor incididunt ut labore et dolore",<br> "magna aliqua."<br>]&nbsp;</pre>
       </td>
@@ -76,28 +76,26 @@ Properties are required unless otherwise designated.
       <td>plural</td>
       <td>String</td>
       <td>
-        <p>Plural form of the model name.</p>
-        <p><strong>Optional</strong>: Defaults to plural of name property using standard English conventions.</p>
+        Plural form of the model name.  <strong>Optional</strong>: Defaults to plural of name property using standard English conventions.
       </td>
     </tr>
     <tr>
       <td>base</td>
       <td>String</td>
       <td>
-        <p>Name of another model that this model extends. The model will "inherit" properties and methods of the base model.</p>
+        Name of another model that this model extends. The model will "inherit" properties and methods of the base model.
       </td>
     </tr>
     <tr>
       <td>idInjection</td>
       <td>Boolean</td>
       <td>
-        <p>Whether to automatically add an id property to the model:</p>
+        Whether to automatically add an id property to the model:
         <ul>
           <li><code>true</code>:&nbsp;<code>id</code>&nbsp;property is added to the model automatically. This is the default.</li>
           <li><code>false</code>:&nbsp;<code>id</code>&nbsp;property is not added to the model</li>
         </ul>
-        <p>See <a href="Model-definition-JSON-file.html">ID properties</a> for more information.</p>
-        <p><strong>Optional</strong>; default is <code>true</code>. If present, the <code>idInjection</code> propery in <code>options</code> takes precedence.</p>
+        See <a href="Model-definition-JSON-file.html">ID properties</a> for more information.  <strong>Optional</strong>; default is <code>true</code>. If present, the <code>idInjection</code> propery in <code>options</code> takes precedence.
       </td>
     </tr>
     <tr>
@@ -116,7 +114,7 @@ Properties are required unless otherwise designated.
       <td>strict</td>
       <td>Boolean</td>
       <td>
-        <p>Specifies whether the model accepts only predefined properties or not. One of:</p>
+        Specifies whether the model accepts only predefined properties or not. One of:
         <ul>
           <li><code>true</code>: Only properties defined in the model are accepted. Use if you want to ensure the model accepts only predefined properties.</li>
           <li><code>false</code>: The model is an open model and accepts all properties, including ones not predefined in the model.
@@ -130,34 +128,34 @@ Properties are required unless otherwise designated.
     </tr>
     <tr>
       <td>
-        <p>options</p>
+        options
       </td>
       <td>Object</td>
       <td>
-        <p>JSON object that specifies model options. See <a href="Model-definition-JSON-file.html">Options</a> below.</p>
+        JSON object that specifies model options. See <a href="Model-definition-JSON-file.html">Options</a> below.
       </td>
     </tr>
     <tr>
       <td>properties</td>
       <td>Object</td>
       <td>
-        <p>JSON object that specifies the properties in the model. See <a href="Model-definition-JSON-file.html">Properties</a> below.</p>
+        JSON object that specifies the properties in the model. See <a href="Model-definition-JSON-file.html">Properties</a> below.
       </td>
     </tr>
     <tr>
       <td>relations</td>
       <td>Object</td>
       <td>
-        <p>Object containing relation names and relation definitions.</p>
-        <p>See <a href="Model-definition-JSON-file.html">Relations</a> below.</p>
+        Object containing relation names and relation definitions.
+        See <a href="Model-definition-JSON-file.html">Relations</a> below.
       </td>
     </tr>
     <tr>
       <td>acls</td>
       <td>Array</td>
       <td>
-        <p>Set of&nbsp;<code>ACL</code>&nbsp;specifications that describes access control for the model.</p>
-        <p>See <a href="Model-definition-JSON-file.html">ACLs</a> below.</p>
+        Set of&nbsp;<code>ACL</code>&nbsp;specifications that describes access control for the model.
+        See <a href="Model-definition-JSON-file.html">ACLs</a> below.
       </td>
     </tr>
     <tr>
@@ -172,38 +170,15 @@ Properties are required unless otherwise designated.
 
 The `options` key specifies advanced options, for example data source-specific options.
 
-{% include note.html content="
-You can set `idInjection` here in `options` or at the top-level. The value set here takes precedence over the top-level value of `idInjection`.
+{% include note.html content="You can set `idInjection` here in `options` or at the top-level. The value set here takes precedence over the top-level value of `idInjection`.
 " %}
 
 ### Advanced options
 
-<table>
-  <tbody>
-    <tr>
-      <th>Property</th>
-      <th>Type</th>
-      <th>
-        <p>Description</p>
-      </th>
-    </tr>
-    <tr>
-      <td><code>validateUpsert</code></td>
-      <td><code>Boolean</code></td>
-      <td>
-        <p>By default, the <code><a href="http://apidocs.strongloop.com/loopback/#persistedmodel-upsert" class="external-link" rel="nofollow">upsert()</a></code>
-          method (also known as <code>updateOrCreate()</code> ) does not enforce valid model data. Instead, it logs validation errors to the console.
-          This is not optimal, but necessary to preserve backwards compatibility with older 2.x versions.
-        </p>
-        <p>Set this property to <code>true</code> to ensure that <code>upsert()</code> returns an error when validation fails.
-          The next major version of LoopBack will enable this option (set the property to true) by default.
-        </p>
-        <p>Set this property to <code>false</code> to prevent <code>upsert()</code> from calling any validators at all.</p>
-        <p>By default, <code>upsert()</code> calls all validators and reports any validation errors to the console log.</p>
-      </td>
-    </tr>
-  </tbody>
-</table>
+| Property | Type | Description |
+| -------- | ---- | ----------- |
+| `validateUpsert` | Boolean | By default, the `[upsert()](http://apidocs.strongloop.com/loopback/#persistedmodel-upsert)` method (also known as `updateOrCreate()` ) does not enforce valid model data. Instead, it logs validation errors to the console. This is not optimal, but necessary to preserve backwards compatibility with older 2.x versions. <br/><br/>Set this property to true to ensure that `upsert()` returns an error when validation fails. The next major version of LoopBack will enable this option (set as true) by default.<br/><br/> Set this property to false to prevent `upsert()` from calling any validators at all. <br/><br/> By default, `upsert()` calls all validators and reports any validation errors to the console log.|
+| `allowEternalTokens` | Boolean | Allow access tokens that never expire. |
 
 ### Data source-specific options
 
@@ -279,7 +254,7 @@ For example:
       <td>No</td>
       <td>Any*</td>
       <td>
-        <p>Default value for the property. The type must match that specified by <code>type</code>.&nbsp;</p>
+        Default value for the property. The type must match that specified by <code>type</code>.
       </td>
     </tr>
     <tr>
@@ -287,18 +262,17 @@ For example:
       <td>No</td>
       <td>String</td>
       <td>
-        <p>A name of the function to call to set the default value for the property. Must be one of:</p>
+        A name of the function to call to set the default value for the property. Must be one of:
         <ul>
           <li>
-            <p><code>"guid"</code>: generate a new globally unique identifier (GUID) using the computer MAC address and current time (UUID version 1).</p>
+            <code>"guid"</code>: generate a new globally unique identifier (GUID) using the computer MAC address and current time (UUID version 1).
           </li>
           <li><code>"uuid"</code>: generate a new universally unique identifier (UUID) using the computer MAC address and current time (UUID version 1).</li>
           <li><code>"uuidv4"</code>: generate a new universally unique identifier using the UUID version 4 algorithm.</li>
           <li>"<code>now"</code>: use the current date and time as returned by <code>new Date()</code></li>
         </ul>
-        <p>NOTE: For discussion of providing additional options, see
+        NOTE: For discussion of providing additional options, see
           <a href="https://github.com/strongloop/loopback/issues/292" class="external-link" rel="nofollow">LoopBack issue 292</a> on GitHub.
-        </p>
       </td>
     </tr>
     <tr>
@@ -306,8 +280,8 @@ For example:
       <td>No</td>
       <td>String or Array</td>
       <td>
-        <p>Documentation for the property.</p>
-        <p>You can split long descriptions into arrays of strings (lines) to keep line lengths manageable.</p>
+        Documentation for the property.
+        You can split long descriptions into arrays of strings (lines) to keep line lengths manageable. For example:
         <pre>[<br>  "Lorem ipsum dolor sit amet, consectetur adipiscing elit",<br>
       "sed do eiusmod tempor incididunt ut labore et dolore",<br> "magna aliqua."<br>]&nbsp;&nbsp;</pre>
       </td>
@@ -323,8 +297,8 @@ For example:
       <td>No</td>
       <td>Boolean</td>
       <td>
-        <p>Whether the property is a unique identifier. Default is false.</p>
-        <p>See <a href="Model-definition-JSON-file.html">Id property</a> below.</p>
+        Whether the property is a unique identifier. Default is false.
+        See <code>Id</code> property below.
       </td>
     </tr>
     <tr>
@@ -338,20 +312,20 @@ For example:
       <td>No</td>
       <td>Boolean</td>
       <td>
-        <p>Whether a value for the property is required. If true, then adding or updating a model instance requires a value for the property.</p>
-        <p>Default is false.</p>
+        Whether a value for the property is required. If true, then adding or updating a model instance requires a value for the property.<br/><br/>
+        Default is false.
       </td>
     </tr>
     <tr>
       <td>
-        <p>type</p>
+        type
       </td>
       <td>Yes</td>
       <td>
-        <p>String</p>
+        String
       </td>
       <td>
-        <p>Property type. Can be any type described in <a href="LoopBack-types.html">LoopBack types</a>.</p>
+        Property type. Can be any type described in <a href="LoopBack-types.html">LoopBack types</a>.
       </td>
     </tr>
     <tr>
@@ -485,7 +459,7 @@ For example, to map a property to a column in an Oracle database table, use the 
 ```
 
 <div class="sl-hidden"><strong>Non-public Information</strong><br>
-  <p>Removed until <a href="https://github.com/strongloop/loopback-datasource-juggler/issues/128" class="external-link" rel="nofollow">https://github.com/strongloop/loopback-datasource-juggler/issues/128</a> is resolved.</p>
+  Removed until <a href="https://github.com/strongloop/loopback-datasource-juggler/issues/128" class="external-link" rel="nofollow">https://github.com/strongloop/loopback-datasource-juggler/issues/128</a> is resolved.
   <p>Conversion and formatting properties</p>
   <p>Format conversions are declared in properties, as described in the following table:</p>
   <div class="table-wrap">
@@ -603,47 +577,14 @@ An example of a hidden property is User.email:
 
 Specify constraints on data with `validations` properties. See also [Validatable class](http://apidocs.strongloop.com/loopback-datasource-juggler/#validatable).
 
-<table>
-  <tbody>
-    <tr>
-      <th>Key</th>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-    <tr>
-      <td>default</td>
-      <td>Any</td>
-      <td>Default value of the property.</td>
-    </tr>
-    <tr>
-      <td>required</td>
-      <td>Boolean</td>
-      <td>Whether the property is required.</td>
-    </tr>
-    <tr>
-      <td>pattern</td>
-      <td>String</td>
-      <td>Regular expression pattern that a string should match</td>
-    </tr>
-    <tr>
-      <td>max</td>
-      <td>
-        <p>Number</p>
-      </td>
-      <td>Maximum length for string types.</td>
-    </tr>
-    <tr>
-      <td>min</td>
-      <td>Number</td>
-      <td>Minimum length for string types.&nbsp;</td>
-    </tr>
-    <tr>
-      <td>length</td>
-      <td>Number</td>
-      <td>Maximum size of a specific type, for example for CHAR types.</td>
-    </tr>
-  </tbody>
-</table>
+| Key | Type | Description |
+|---|---|---|
+| default | Any | Default value of the property. |
+| required | Boolean | Whether the property is required. |
+| pattern | String | Regular expression pattern that a string should match |
+| max | Number| Maximum length for string types. |
+| min | Number | Minimum length for string types.  |
+| length | Number | Maximum size of a specific type, for example for CHAR types. |
 
 For example:
 
@@ -772,7 +713,7 @@ The value of the `acls` key is an array of objects that describes the access 
       <td>accessType</td>
       <td>String</td>
       <td>
-        <p>The type of access to apply. One of:</p>
+        The type of access to apply. One of:
         <ul>
           <li>READ</li>
           <li>WRITE</li>
@@ -783,15 +724,14 @@ The value of the `acls` key is an array of objects that describes the access 
     </tr>
     <tr>
       <td>
-        <p>permission</p>
+        permission
       </td>
       <td>
-        <p>String</p>
-        <p>&nbsp;</p>
+        String
       </td>
       <td>
-        <p>Type of permission granted. Required.</p>
-        <p>One of:</p>
+        Type of permission granted. Required.
+        One of:
         <ul>
           <li><strong>ALLOW</strong>&nbsp;- Explicitly grants access to the resource.</li>
           <li><strong>DENY</strong>&nbsp;- Explicitly denies access to the resource.</li>
@@ -802,8 +742,8 @@ The value of the `acls` key is an array of objects that describes the access 
       <td>principalId</td>
       <td>String</td>
       <td>
-        <p>Principal identifier. Required.</p>
-        <p>The value must be one of:</p>
+        Principal identifier. Required.
+        The value must be one of:
         <ul>
           <li>A user ID (String|number|any)</li>
           <li>
@@ -819,17 +759,15 @@ The value of the `acls` key is an array of objects that describes the access 
           <li>A static role name</li>
         </ul>
         NOTE:
-            <code>$related principalId</code> is not yet implemented.</p>
-          </div>
-        </div>
+            <code>$related principalId</code> is not yet implemented.
       </td>
     </tr>
     <tr>
       <td>principalType</td>
       <td>String</td>
       <td>
-        <p>Type of the principal. Required.</p>
-        <p>One of:</p>
+        Type of the principal. Required.
+        One of:
         <ul>
           <li>Application</li>
           <li>User</li>
@@ -841,8 +779,8 @@ The value of the `acls` key is an array of objects that describes the access 
       <td>property</td>
       <td>String<br>Array of Strings&nbsp;</td>
       <td>
-        <p>Specifies a property/method/relation on a given model. It further constrains where the ACL applies.</p>
-        <p>Can be:</p>
+        Specifies a property/method/relation on a given model. It further constrains where the ACL applies.
+        Can be:
         <ul>
           <li>A string, for example: <code>"create"</code></li>
           <li>An array of strings, for example: <code>["create", "update"]</code></li>
