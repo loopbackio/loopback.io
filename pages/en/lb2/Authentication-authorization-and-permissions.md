@@ -34,68 +34,12 @@ module.exports = function enableAuthentication(server) {
 
 LoopBack's access control system is built around a few core concepts. 
 
-<table>
-  <tbody>
-    <tr>
-      <th>Term</th>
-      <th>Description</th>
-      <th>Responsibility</th>
-      <th>Example</th>
-    </tr>
-    <tr>
-      <td>Principal</td>
-      <td>An entity that can be identified or authenticated.</td>
-      <td>Represents identities of a request to protected resources.</td>
-      <td>
-        <ul style="list-style-type: square;">
-          <li>A user</li>
-          <li>An application</li>
-          <li>A role (please note a role is also a principal)</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td>Role</td>
-      <td>A group of principals with the same permissions.</td>
-      <td>Organizes principals into groups so they can be used.</td>
-      <td>
-        <ul style="list-style-type: square;">
-          <li>
-            Dynamic role:&nbsp;
-            <ul style="list-style-type: square;">
-              <li>$everyone (for all users)</li>
-              <li>$unauthenticated (unauthenticated users)</li>
-              <li>$owner (the principal is owner of the model instance)<br><br></li>
-            </ul>
-          </li>
-          <li>Static role: admin (a defined role for administrators)</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td>RoleMapping</td>
-      <td>Assign principals to roles</td>
-      <td>Statically assigns principals to roles.</td>
-      <td>
-        <ul style="list-style-type: square;">
-          <li>Assign user with id 1 to role 1</li>
-          <li>Assign role 'admin' to role 1</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td>ACL</td>
-      <td>Access control list</td>
-      <td><span>Controls if a principal can perform a certain operation against a model.</span></td>
-      <td>
-        <ul style="list-style-type: square;">
-          <li>Deny everyone to access the project model</li>
-          <li>Allow 'admin' role to execute find() method on the project model</li>
-        </ul>
-      </td>
-    </tr>
-  </tbody>
-</table>
+| Term | Description | Responsibility | Example |
+|---|---|---|---|
+| Principal | An entity that can be identified or authenticated. | Represents identities of a request to protected resources. | A user <br/> An application <br/> A role (please note a role is also a principal) |
+| Role | A group of principals with the same permissions. | Organizes principals into groups so they can be used. | **Dynamic role**: <br/>`$everyone` (for all users) <br/>`$unauthenticated` (unauthenticated users) <br/> `$owner` (the principal is owner of the model instance), which can be:<br/>&nbsp;&nbsp;&#9702; A simple property called `userId`<br/>&nbsp;&nbsp;&#9702; A simple property called `owner`<br/>&nbsp;&nbsp;&#9702; A relation to a model that extends User.  <br/><br/> **Static role**: admin (a defined role for administrators) |
+| RoleMapping | Assign principals to roles | Statically assigns principals to roles. | Assign user with id 1 to role 1 <br/> Assign role 'admin' to role 1 |
+| ACL | Access control list | Controls if a principal can perform a certain operation against a model. | Deny everyone to access the project model.<br/> Allow 'admin' role to execute `find()` method on the project model. |
 
 ## General process
 
@@ -186,7 +130,7 @@ You may want to only expose read-only operations on your model hiding all POST, 
 
 **common/models/model.js**
 
-```
+```js
 Product.disableRemoteMethod('create', true);				// Removes (POST) /products
 Product.disableRemoteMethod('upsert', true);				// Removes (PUT) /products
 Product.disableRemoteMethod('deleteById', true);			// Removes (DELETE) /products/:id
