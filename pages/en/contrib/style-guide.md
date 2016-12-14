@@ -578,6 +578,37 @@ describe('my class', () => {
   }
 });
 ```
+### Callback function moved to the next line
+
+The following examples show the preferred style when callback needs to move to the next line due to line length exceeding max line length defined by eslint:
+
+**Good**:
+
+```js
+it('my long test description ...',
+function(done) {
+  ...
+});
+```
+
+**Bad**:
+
+```js
+it('my long test description ...', 
+  function(done) {
+    …
+  });
+```
+
+**Bad**:
+
+```js
+it('my long test description ...', 
+  function(done) {
+    …
+  }
+);
+```
 
 ### Test naming
 
