@@ -22,34 +22,26 @@ strongloop loopback-connector-mssql master
 strongloop loopback-connector-mysql master
 strongloop loopback-connector-oracle master
 strongloop loopback-connector-postgresql master
-strongloop loopback-connector-redis master
 strongloop loopback-connector-remote master
 strongloop loopback-connector-rest master
 strongloop loopback-connector-soap master
-strongloop loopback-connector-sqlite3 master
 strongloop loopback-android-getting-started master
 strongloop loopback-example-angular master
 strongloop loopback-example-app-logic master
 strongloop loopback-example-access-control master
 strongloop loopback-example-angular-live-set master
-strongloop loopback-example-connector remote
-strongloop loopback-example-connector rest
-strongloop loopback-example-connector soap
 strongloop loopback-example-database mssql
 strongloop loopback-example-database mysql
 strongloop loopback-example-database oracle
 strongloop loopback-example-database postgresql
 strongloop loopback-example-database master
 strongloop loopback-example-kv-connectors master
-strongloop loopback-example-middleware master
 strongloop loopback-example-mixins master
 strongloop loopback-example-offline-sync master
 strongloop loopback-example-passport master
 strongloop loopback-example-relations master
 strongloop loopback-example-storage master
 strongloop loopback-example-user-management master
-strongloop loopback-example-isomorphic master
-strongloop loopback-example-xamarin master
 strongloop loopback-ios-getting-started master
 strongloop strong-error-handler master
 strongloop strong-remoting master
@@ -65,8 +57,16 @@ strongloop strong-pubsub-mqtt master
 strongloop strong-pubsub-redis master
 strongloop strong-pubsub-primus master
 strongloop strong-pubsub-example master
-strongloop loopback-example-pubsub master
 strongloop loopback-datatype-geopoint master
+strongloop-community loopback-example-pubsub master
+strongloop-community loopback-connector-redis master
+strongloop-community loopback-connector-sqlite3 master
+strongloop-community loopback-example-connector remote
+strongloop-community loopback-example-connector rest
+strongloop-community loopback-example-connector soap
+strongloop-community loopback-example-middleware master
+strongloop-community loopback-example-isomorphic master
+strongloop-community loopback-example-xamarin master
 LIST_END
 ) | while read org repo branch; do
   # Write the README.md to a file named after the repo
