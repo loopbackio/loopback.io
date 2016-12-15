@@ -499,7 +499,7 @@ i.border {
 }
 
 a[data-toggle] {
-    color: #248EC2;
+    color: #72ac4a;
 }
 
 .summary {
@@ -526,11 +526,6 @@ h4 {color: #808080; font-weight:normal; font-size:120%; font-style:italic;}
 
 .alert, .callout {
     overflow: hidden;
-}
-
-.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
-    background-color: #248ec2;
-    color: white;
 }
 
 ol li ol li {list-style-type: lower-alpha;}
@@ -1008,9 +1003,11 @@ span.label.label-primary {
     color: black;
     }
 
+/*
 a code {
     color: #248EC2;
 }
+*/
 
 code + a > code {
     margin-left: -7px;
@@ -1184,3 +1181,26 @@ td pre {
   margin-top: 0;
   margin-bottom: 0;
   }
+
+/* Navtabs customization */
+
+.tab-content {
+    padding: 15px;
+    background-color: #FAFAFA;
+    border: 1px solid #d9d9d9;
+    border-radius: 3px;
+    margin-top: -10px;
+}
+
+.nav-tabs { border-bottom: none;}
+
+.tab-content { padding-top: 0;}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+    background-color: #72ac4a;
+    color: white;
+}
+
+/*
+.tab-pane > h2 { margin-top: 0; }
+*/
