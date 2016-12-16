@@ -188,7 +188,6 @@ So instead of passing in the related model (name), you specify the name of the p
   "relations": {
     "author": {
       "type": "belongsTo",
-      "model": "Author",
       "polymorphic": {
         "foreignKey": "imageableId",
         "discriminator": "imageableType"
