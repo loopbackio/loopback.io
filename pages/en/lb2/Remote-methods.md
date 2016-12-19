@@ -51,7 +51,7 @@ You add this code to `/common/models/person.js`:
 module.exports = function(Person){
 
     Person.greet = function(msg, cb) {
-      cb(null, 'Greetings... ' - msg);
+      cb(null, 'Greetings... ' + msg);
     }
 
     Person.remoteMethod('greet', {
