@@ -11,7 +11,7 @@ children:
   output: web, pdf
 
 - title: Long-term support
-  url: /doc/en/contrib/Long-Term-Support.html
+  url: /doc/en/contrib/Long-term-support.html
   output: web
 
 - title: Contributing code

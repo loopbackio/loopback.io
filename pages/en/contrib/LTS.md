@@ -2,7 +2,7 @@
 title: Long-term support
 toc: true
 keywords: LoopBack, versioning, long-term support
-sidebar: home_sidebar
+sidebar: contrib_sidebar
 permalink: /doc/en/contrib/Long-term-support.html
 summary: LoopBack maintains a current version, a long-term support (LTS) version, and a maintenance version.
 ---
@@ -12,7 +12,7 @@ In general, LoopBack version numbers adhere to [semantic versioning](http://semv
 The LoopBack project maintains:
 
 - A _Current_ version where most of the development occurs.
-- An _LTS_ version that does not add new features but keeps receiving bug fixes.
+- A _Long-term suppoort (LTS)_ version that does not add new features but gets bug fixes.
 - One (or more) _maintenance_ versions that receive only critical bug fixes.
 
 ## LTS versions

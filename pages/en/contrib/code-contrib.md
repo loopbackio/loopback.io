@@ -31,7 +31,7 @@ Also, please read the source code before contributing. If something is confusing
 
 ### LoopBack versions
 
-LoopBack maintains a current version, a long-term support (LTS) version, and a maintenance version.  New features go into the current version; bug fixes can go into the LTS and maintenance versions, depending on the nature of the bug.  For more information, see [Long-term support](LTS.html).
+LoopBack maintains a current version, a long-term support (LTS) version, and a maintenance version.  New features go into the current version; bug fixes can go into the LTS and maintenance versions, depending on the nature of the bug.  For more information, see [Long-term support](Long-term-support.html).
 
 ### Recommended Node.js version
 
