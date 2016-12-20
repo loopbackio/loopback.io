@@ -132,7 +132,17 @@ Now you've created a MySQL data source and you have a CoffeeShop model; you just
   ...
 ```
 
-Change the `dataSource` property from `db` to `mysqlDs`.  This attaches the CoffeeShop model to the MySQL datasource you just created and configured.
+Change the `dataSource` property from `db` to `mysqlDs`.  This attaches the CoffeeShop model to the MySQL datasource you just created and configured:
+
+{% include code-caption.html content="/server/model-config.json" %}
+```javascript
+...
+  "CoffeeShop": {
+    "dataSource": "mysqlDs",
+    "public": true
+  }
+  ...
+```
 
 ## Add some test data and view it
 
