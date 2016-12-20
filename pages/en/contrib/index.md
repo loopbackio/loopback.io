@@ -15,7 +15,7 @@ LoopBack has an active and growing open-source community. All work on the projec
 *   [loopback-phase](https://github.com/strongloop/loopback-phase)
 *   [generator-loopback](https://github.com/strongloop/generator-loopback)
 
-See [LoopBack 2.x](../index.html#the-loopback-framework) for a complete list of repositories.
+See [LoopBack 2.x](/doc/en/lb2/index.html) for a complete list of repositories.
 
 ## Contributing
 
