@@ -69,129 +69,11 @@ Always explicitly order the middleware using appropriate phases when order matte
 
 ## Specifying a middleware function
 
-### Using built-in middleware
 
-LoopBack provides convenience middleware for commonly-used Express/Connect middleware, as described in the following table.
+### Using Express middleware
 
-When you use this middleware, you don't have to write any code or install any packages; you just specify in which phase you want it to be called.
-See [Registering middleware in middleware.json](#registering-middleware-in-middlewarejson).
-
-<table>
-  <thead>
-    <tr>
-      <th>Middleware ID</th>
-      <th>Code accessor</th>
-      <th>External package</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><code>loopback#favicon</code></td>
-      <td><code>loopback.favicon()</code></td>
-      <td><a href="https://github.com/expressjs/serve-favicon" class="external-link" rel="nofollow">serve-favicon</a></td>
-    </tr>
-    <tr>
-      <td><code>loopback#rest</code></td>
-      <td><code><a href="http://apidocs.strongloop.com/loopback/#loopback-rest" class="external-link" rel="nofollow">loopback.rest()</a></code></td>
-      <td>N/A</td>
-    </tr>
-    <tr>
-      <td><code>loopback#static</code></td>
-      <td><code>loopback.static()</code></td>
-      <td><a href="https://github.com/expressjs/serve-static" class="external-link" rel="nofollow">serve-static</a></td>
-    </tr>
-    <tr>
-      <td><code>loopback#status</code></td>
-      <td><code><a href="http://apidocs.strongloop.com/loopback/#loopback-status" class="external-link" rel="nofollow">loopback.status()</a></code></td>
-      <td>N/A</td>
-    </tr>
-    <tr>
-      <td><code>loopback#token</code></td>
-      <td><code><a href="http://apidocs.strongloop.com/loopback/#loopback-token" class="external-link" rel="nofollow">loopback.token()</a></code></td>
-      <td>N/A</td>
-    </tr>
-    <tr>
-      <td><code>loopback#urlNotFound</code></td>
-      <td><code><a href="http://apidocs.strongloop.com/loopback/#loopback-urlNotFound" class="external-link" rel="nofollow">loopback.urlNotFound()</a></code></td>
-      <td>N/A</td>
-    </tr>
-  </tbody>
-</table>
-
-To simplify migration from LoopBack 1.x and Express 3.x, LoopBack provides middleware that was built-in to in Express 3.x, as shown in the following table.
-Best practice is to load this middleware directly via `require()` and not rely on LoopBack's compatibility layer.
-
-<div class="sl-hidden">
-  <p>&nbsp;</p>
-  <div class="table-wrap">
-    <table>
-      <tbody>
-        <tr>
-          <th>
-            <div class="tablesorter-header-inner">LoopBack middleware</div>
-          </th>
-          <th>
-            <div class="tablesorter-header-inner">Express/Connect middleware</div>
-          </th>
-        </tr>
-        <tr>
-          <td>loopback.body-parser()</td>
-          <td><a class="external-link" href="https://github.com/expressjs/body-parser" rel="nofollow">body-parser</a>&nbsp;</td>
-        </tr>
-        <tr>
-          <td>loopback.compress()</td>
-          <td><a class="external-link" href="https://github.com/expressjs/compression" rel="nofollow">compression</a></td>
-        </tr>
-        <tr>
-          <td>loopback.timeout()</td>
-          <td><a class="external-link" href="https://github.com/expressjs/timeout" rel="nofollow">connect-timeout</a>&nbsp;</td>
-        </tr>
-        <tr>
-          <td>loopback.cookieParser()</td>
-          <td><a class="external-link" href="https://github.com/expressjs/cookie-parser" rel="nofollow">cookie-parser</a></td>
-        </tr>
-        <tr>
-          <td>loopback.cookieSession()</td>
-          <td><a class="external-link" href="https://github.com/expressjs/cookie-session" rel="nofollow">cookie-session</a></td>
-        </tr>
-        <tr>
-          <td>loopback.csrf()</td>
-          <td><a class="external-link" href="https://github.com/expressjs/csurf" rel="nofollow">csurf</a></td>
-        </tr>
-        <tr>
-          <td>loopback.errorHandler()</td>
-          <td><a class="external-link" href="https://github.com/expressjs/errorhandler" rel="nofollow">errorhandler</a></td>
-        </tr>
-        <tr>
-          <td>loopback.session()</td>
-          <td><a class="external-link" href="https://github.com/expressjs/session" rel="nofollow">express-session</a>&nbsp;</td>
-        </tr>
-        <tr>
-          <td>loopback.methodOverride()</td>
-          <td><a class="external-link" href="https://github.com/expressjs/method-override" rel="nofollow">method-override</a></td>
-        </tr>
-        <tr>
-          <td>loopback.logger()</td>
-          <td><a class="external-link" href="https://github.com/expressjs/morgan" rel="nofollow">morgan</a></td>
-        </tr>
-        <tr>
-          <td>loopback.responseTime()</td>
-          <td><a class="external-link" href="https://github.com/expressjs/response-time" rel="nofollow">response-time</a></td>
-        </tr>
-        <tr>
-          <td>loopback.directory()</td>
-          <td><a class="external-link" href="https://github.com/expressjs/serve-index" rel="nofollow">serve-index</a></td>
-        </tr>
-        <tr>
-          <td>loopback.vhost()</td>
-          <td><a class="external-link" href="https://github.com/expressjs/vhost" rel="nofollow">vhost</a></td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-</div>
-
-### Using other middleware
+{% include note.html content="LoopBack v.3 does not provide convenience methods for Express
+middleware.  For details, see the [Release notes](3.0-Release-Notes.html#removed-getters-for-express-3x-middleware)." %}
 
 You can use any middleware compatible with Express; see [Express documentation](http://expressjs.com/resources/middleware.html) for a partial list.
 
@@ -203,8 +85,7 @@ $ npm install --save <module-name>
 
 Then simply register it so that it is called as needed.
 See [Registering middleware in middleware.json](#registering-middleware-in-middlewarejson) 
-and
-[Registering middleware in JavaScript](#registering-middleware-in-javascript).
+and [Registering middleware in JavaScript](#registering-middleware-in-javascript).
 
 ### Defining a new middleware handler function
 
@@ -214,8 +95,6 @@ To register the middleware function in `middleware.json`, you need to create a c
 By convention, place middleware functions in the `server/middleware` directory.
 
 A middleware handler function accepts three arguments, or four arguments if it is error-handling middleware. The general form is:
-
-xx
 
 ```js
 function myMiddlewareFunc([err,] req, res, next) {

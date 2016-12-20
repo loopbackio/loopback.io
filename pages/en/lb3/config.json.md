@@ -39,28 +39,26 @@ The following table describes the properties you can configure.
     </tr>
     <tr>
       <td>
-        <p>aclErrorStatus</p>
+        aclErrorStatus
       </td>
       <td>
-        <p>When an authenticated user is denied access because of an ACL, by default the application returns HTTP error status code&nbsp;<strong>401 unauthorized</strong>. If you want instead to return 403 (forbidden) set the value here. This may be required, for example, when using an AngularJS interceptor to differentiate between the need to show an access denied/request access page instead of a login dialog.</p>
-        <p>Can also set this in the <a href="Model-definition-JSON-file.html">Model definition JSON file</a> to define per-model.</p>
-        <div class="sl-hidden"><strong>REVIEW COMMENT from Rand</strong><br>What happened to this?</div><br>
-        <p></p>
+        When an authenticated user is denied access because of an ACL, by default the application returns HTTP error status code <strong>401 unauthorized</strong>. If you want instead to return <strong>403 (forbidden)</strong> set the value here. This may be required, for example, when using an AngularJS interceptor to differentiate between the need to show an access denied/request access page instead of a login dialog.
+        Can also set this in the <a href="Model-definition-JSON-file.html">Model definition JSON file</a> to define per-model.
       </td>
       <td>401</td>
     </tr>
     <tr>
       <td>host</td>
       <td>
-        <p>Host or IP address used to create the Node HTTP server. If a request comes to a different host or IP address, then the application won't accept the connection. See <a href="http://nodejs.org/api/http.html#http_server_listen_port_hostname_backlog_callback" class="external-link" rel="nofollow">server.listen()</a> for more information.</p>
+        Host or IP address used to create the Node HTTP server. If a request comes to a different host or IP address, then the application won't accept the connection. See <a href="http://nodejs.org/api/http.html#http_server_listen_port_hostname_backlog_callback" class="external-link" rel="nofollow">server.listen()</a> for more information.
       </td>
       <td>0.0.0.0</td>
     </tr>
     <tr>
       <td>legacyExplorer</td>
       <td>
-        <p>Set to&nbsp;<code>false</code>&nbsp;to disable old routes <code>/models</code>&nbsp;and&nbsp;<code>/routes</code> that are exposed, but no longer used by API Explorer; use&nbsp;<code>true</code>&nbsp;or omit the option to keep them enabled.</p>
-        <p>When upgrading to <code>v2.14.0</code>, set&nbsp;<code>"legacyExplorer": false</code></p>
+        Set to <code>false</code> to disable old routes <code>/models</code> and <code>/routes</code> that are exposed, but no longer used by API Explorer; use <code>true</code> or omit the option to keep them enabled.
+        When upgrading to <code>v2.14.0</code>, set <code>"legacyExplorer": false</code>
       </td>
       <td>true</td>
     </tr>
@@ -71,7 +69,7 @@ The following table describes the properties you can configure.
     </tr>
     <tr>
       <td>remoting</td>
-      <td>See <a href="config.json.html">Remoting properties</a> below.</td>
+      <td>See <a href="#remoting-properties">Remoting properties</a> below.</td>
       <td>N/A</td>
     </tr>
     <tr>
@@ -82,57 +80,52 @@ The following table describes the properties you can configure.
   </tbody>
 </table>
 
-To access the settings in application code, use `app.get('_property_')`.
+To access the settings in application code, use `app.get('property-name')`.
 
 You can also retrieve [Express `app` object properties](http://expressjs.com/4x/api.html#app.settings.table) with this method.
 See [`app.get()` in Express documentation](http://expressjs.com/4x/api.html#app.get) for more information.
 
 ### Remoting properties
 
-Properties under the `remoting` top-level property determine how the application performs remote operations using
-[strong-remoting](http://apidocs.strongloop.com/strong-remoting/); for example:
+Properties under the `remoting` top-level property determine how the application performs remote operations using [strong-remoting](Strong-remoting.html); for example:
 
 ```javascript
 ...
-  "remoting": {
-    "context": {
-      "enableHttpContext": false
-    },
-    "rest": {
-      "normalizeHttpPath": false,
-      "xml": false
-    },
-    "json": {
-      "strict": false,
-      "limit": "100kb"
-    },
-    "urlencoded": {
-      "extended": true,
-      "limit": "100kb"
-    },
-    "cors": false,
-    "errorHandler": {
-      "disableStackTrace": false
-    }
+"remoting": {
+  "context": false,
+  "rest": {
+    "normalizeHttpPath": false,
+    "xml": false
   },
+  "json": {
+    "strict": false,
+    "limit": "100kb"
+  },
+  "urlencoded": {
+    "extended": true,
+    "limit": "100kb"
+  },
+  "cors": false,
+  "errorHandler": {
+      "debug": true,
+      "log": false
+    }
+}
 ...
 ```
 
-The following table describes the remoting properties.
+The following table describes the remoting properties.  For more information on error-handler properties, see [Using strong-error-handler](Using-strong-error-handler.html).
 
-{% include tip.html content="
-
-The full names of the properties below are prefixed by \"remoting,\" for example, `remoting.json.limit`.
-
+{% include tip.html content="The full names of the properties below are prefixed by \"remoting,\" for example, `remoting.json.limit`.
 " %}
 
-<table>
+<table style="width: 800px;">
   <tbody>
     <tr>
       <th>Property</th>
       <th>Type</th>
       <th>Description</th>
-      <th>Default</th>
+      <th >Default</th>
     </tr>
     <tr>
       <td>cors</td>
@@ -141,26 +134,34 @@ The full names of the properties below are prefixed by \"remoting,\" for example
       <td>false</td>
     </tr>
     <tr>
-      <td>context.enableHttpContext</td>
+      <td>context</td>
       <td>Boolean</td>
       <td>Advanced feature. For more information, see <a href="Using-current-context.html">Using current context</a>.</td>
       <td>false</td>
     </tr>
+
     <tr>
-      <td>errorHandler.disableStackTrace</td>
+      <td>errorHandler.debug</td>
       <td>Boolean</td>
-      <td>
-        <p>Set to true to disable stack traces; removes the <code>stack</code> property from the <a href="Error-object.html">Error object</a>.</p>
-        <p>Ignored when NODE_ENV is "production", when stack traces are always disabled.</p>
-      </td>
+      <td>When enabled, HTTP responses include all error properties, including sensitive data such as file paths, URLs and stack traces.  Set to <code>true</code> during development and debugging; <code>false</code> in production.<br/><br/>
+      For more information, see <a href="Using-strong-error-handler.html">Using strong-error-handler</a>.</td>
       <td>false</td>
     </tr>
+
+    <tr>
+      <td>errorHandler.log</td>
+      <td>Boolean</td>
+      <td>When enabled, all errors are printed via <code>console.error</code>, including an array of fields (custom error properties) that are safe to include in response messages (both 4xx and 5xx). When not enabled, it only sends the error back in the response.<br/><br/>
+      For more information, see <a href="Using-strong-error-handler.html">Using strong-error-handler</a>. </td>
+      <td>true</td>
+    </tr>
+
     <tr>
       <td>json.limit</td>
       <td>String</td>
       <td>
-        <p>Maximum request body size.</p>
-        <p>You can set other JSON propertis as well; see <a href="https://www.npmjs.com/package/body-parser#bodyparser-json-options-" class="external-link" rel="nofollow">body-parser.json()</a>.</p>
+        Maximum request body size.
+        You can set other JSON propertis as well; see <a href="https://www.npmjs.com/package/body-parser#bodyparser-json-options-" class="external-link" rel="nofollow">body-parser.json()</a>.
       </td>
       <td>100kb</td>
     </tr>
@@ -168,23 +169,23 @@ The full names of the properties below are prefixed by \"remoting,\" for example
       <td>json.strict</td>
       <td>Boolean</td>
       <td>
-        <p>Parse only objects and arrays.</p>
-        <p>You can set other JSON propertis as well; see <a href="https://www.npmjs.com/package/body-parser#bodyparser-json-options-" class="external-link" rel="nofollow">body-parser.json()</a>.</p>
+        Parse only objects and arrays.
+        You can set other JSON propertis as well; see <a href="https://www.npmjs.com/package/body-parser#bodyparser-json-options-" class="external-link" rel="nofollow">body-parser.json()</a>.
       </td>
       <td>false</td>
     </tr>
     <tr>
-      <td>rest.handleErrors</td>
+      <td>handleErrors</td>
       <td>Boolean</td>
-      <td>If true (the default), then the REST adapter handles all errors by sending back a JSON-formatted error response. If false, then errors are passed to the top-level application error-handler.</td>
+      <td>If true, then the REST adapter handles all errors by sending back a JSON-formatted error response. If false, then errors are passed to the top-level application error-handler.</td>
       <td>true</td>
     </tr>
     <tr>
       <td>rest.handleUnknownPaths</td>
       <td>Boolean</td>
       <td>
-        <p>If true (the default), then the REST adapter emits a 404 error for unknown paths. The REST error handler or the application error handler then handle this error; rest.handleErrors above.</p>
-        <p>If false, then the REST adapter delegates handling unknown paths to the top-level application by calling <code>next()</code>.</p>
+        If true, then the REST adapter emits a 404 error for unknown paths. The REST error handler or the application error handler then handle this error; rest.handleErrors above.
+        If false, then the REST adapter delegates handling unknown paths to the top-level application by calling <code>next()</code>.
       </td>
       <td>true</td>
     </tr>
@@ -192,14 +193,14 @@ The full names of the properties below are prefixed by \"remoting,\" for example
       <td>rest.normalizeHttpPath</td>
       <td>Boolean</td>
       <td>
-        <p>If <code>true</code>, in HTTP paths, converts:</p>
+        If <code>true</code>, in HTTP paths, converts:
         <ul>
           <li>Uppercase letters to lowercase.</li>
           <li>Underscores (&#95;) to dashes (-).</li>
           <li>CamelCase to dash-delimited.</li>
         </ul>
-        <p>Does not affect placeholders (for example ":id").</p>
-        <p>For example, "MyClass" or "My_class" becomes "my-class".</p>
+        Does not affect placeholders (for example ":id").
+        For example, "MyClass" or "My_class" becomes "my-class".
       </td>
       <td>false</td>
     </tr>
@@ -207,20 +208,20 @@ The full names of the properties below are prefixed by \"remoting,\" for example
       <td>rest.supportedTypes</td>
       <td>Array</td>
       <td>
-        <p>List of content types that the API supports in HTTP responses.</p>
-        <p>The response type will match that specfied in the HTTP request "accepts" header, if it is in this list of supported types.</p>
-        <p>If this property is set, then <code>rest.xml</code> is ignored.</p>
-        <p>NOTE: 'application/vnd.api-json' is supported, but is not one of the default types.</p>
+        List of content types that the API supports in HTTP responses.
+        The response type will match that specfied in the HTTP request "accepts" header, if it is in this list of supported types.
+        If this property is set, then <code>rest.xml</code> is ignored.<br/><br/>
+        NOTE: 'application/vnd.api-json' is supported, but is not one of the default types.
       </td>
       <td>
-        <p>'application/json'<br>'application/javascript'<br>'application/xml'<br>'text/javascript'<br>'text/xml'<br>'json'<br>'xml'</p>
+        'application/json'<br>'application/javascript'<br>'application/xml'<br>'text/javascript'<br>'text/xml'<br>'json'<br>'xml'
       </td>
     </tr>
     <tr>
       <td>rest.xml</td>
       <td>Boolean</td>
       <td>
-        <p>If true, then 'xml' is added to the supported content types. Then, the API will then respond with XML when the HTTP request "accepts" type contains 'xml'.</p>
+        If true, then 'xml' is added to the supported content types. Then, the API will then respond with XML when the HTTP request "accepts" type contains 'xml'.
       </td>
       <td>false</td>
     </tr>
@@ -228,8 +229,8 @@ The full names of the properties below are prefixed by \"remoting,\" for example
       <td>urlencoded.extended</td>
       <td>Boolean</td>
       <td>
-        <p>Parse extended syntax with the&nbsp;<a href="https://www.npmjs.org/package/qs?__hstc=72727564.8bea7847eb7a72bf24c79993a9239205.1418422131685.1420668516065.1420670994111.11&amp;__hssc=72727564.1.1420670994111&amp;__hsfp=1793697232#readme" class="external-link" rel="nofollow">qs</a>&nbsp;module.</p>
-        <p>For more information, see <a href="https://www.npmjs.com/package/body-parser#bodyparser-urlencoded-options-" style="line-height: 1.4285715;" class="external-link" rel="nofollow">bodyParser.urlencoded()</a>.</p>
+        Parse extended syntax with the <a href="https://www.npmjs.org/package/qs?__hstc=72727564.8bea7847eb7a72bf24c79993a9239205.1418422131685.1420668516065.1420670994111.11&amp;__hssc=72727564.1.1420670994111&amp;__hsfp=1793697232#readme" class="external-link" rel="nofollow">qs</a> module.
+        For more information, see <a href="https://www.npmjs.com/package/body-parser#bodyparser-urlencoded-options-" style="line-height: 1.4285715;" class="external-link" rel="nofollow">bodyParser.urlencoded()</a>.
       </td>
       <td>true</td>
     </tr>
@@ -237,8 +238,8 @@ The full names of the properties below are prefixed by \"remoting,\" for example
       <td>urlencoded.limit</td>
       <td>String</td>
       <td>
-        <p>Maximum request body size.</p>
-        <p>For more information, see <a href="https://www.npmjs.com/package/body-parser#bodyparser-urlencoded-options-" class="external-link" rel="nofollow">bodyParser.urlencoded()</a>.</p>
+        Maximum request body size.
+        For more information, see <a href="https://www.npmjs.com/package/body-parser#bodyparser-urlencoded-options-" class="external-link" rel="nofollow">bodyParser.urlencoded()</a>.
       </td>
       <td>100kb</td>
     </tr>
@@ -252,10 +253,7 @@ You can override values that are set in `config.json` in:
 * `config.local.js` or `config.local.json`
 * `config._env_.js` or `config._env_.json`, where _`env`_ is the value of `NODE_ENV` (typically `development` or `production`); so, for example `config.production.json`.
 
-{% include important.html content="
-
-The additional files can override the top-level keys with value-types (strings, numbers) only. Nested objects and arrays are not supported at the moment.
-
+{% include important.html content="The additional files can override the top-level keys with value-types (strings, numbers) only. Nested objects and arrays are not supported at the moment.
 " %}
 
 For example:

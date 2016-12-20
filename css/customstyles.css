@@ -1204,3 +1204,11 @@ td pre {
 /*
 .tab-pane > h2 { margin-top: 0; }
 */
+
+.v3notice {
+  border: 1px solid #800000;
+  border-radius: 3px;
+  margin: 10px 10px 0 10px;
+  background-color: #ffcccc;
+  padding: 10px;
+}

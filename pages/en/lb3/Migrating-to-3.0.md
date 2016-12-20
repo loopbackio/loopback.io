@@ -89,7 +89,7 @@ from the response body.
 
 ## Replace LoopBack middleware "getter" properties
 
-As described in the [release notes](3.0-Release-Notes.html#new-rest-adapter-error-handler),
+As described in the [release notes](3.0-Release-Notes.html#removed-getters-for-express-3x-middleware),
 you can no longer use the LoopBack convenience "getter" properties for Express middleware.
 You must replace any instances of them with the corresponding `require()` statement, as
 summarized in this table:
@@ -97,17 +97,17 @@ summarized in this table:
 | Change this... | To this... |
 |---|----|
  | `loopback.compress` | `require('compression')` |
- | `loopback.timeout` | `require('connect-timeout')` |
  | `loopback.cookieParser` | `require('cookie-parser')` |
  | `loopback.cookieSession` | `require('cookie-session')` |
  | `loopback.csrf` | `require('csurf')` |
- | `loopback.errorHandler` | `require('errorhandler')` |
- | `loopback.session` | `require('express-session')` |
- | `loopback.methodOverride` | `require('method-override')` |
- | `loopback.logger` | `require('morgan')` |
- | `loopback.responseTime` | `require('response-time')` |
- | `loopback.favicon` | `require('serve-favicon')` |
  | `loopback.directory` | `require('serve-index')` |
+ | `loopback.errorHandler` | `require('errorhandler')` |
+ | `loopback.favicon` | `require('serve-favicon')` |
+ | `loopback.logger` | `require('morgan')` |
+ | `loopback.methodOverride` | `require('method-override')` |
+ | `loopback.responseTime` | `require('response-time')` |
+ | `loopback.session` | `require('express-session')` |
+ | `loopback.timeout` | `require('connect-timeout')` |
  | `loopback.vhost` | `require('vhost')` |
 
 ## Update models
