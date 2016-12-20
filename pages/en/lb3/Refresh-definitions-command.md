@@ -11,6 +11,10 @@ summary:
 
 {% include content/generator-create-app.html lang=page.lang %}
 
+{%include warning.html content="API Connect Developer Toolkit does not currently support LoopBack 3.0.
+Use StrongLoop tools instead; see [Installation](Installation.html).
+" %}
+
 Usage:
 
 ```shell

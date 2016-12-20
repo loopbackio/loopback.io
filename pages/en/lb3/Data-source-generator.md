@@ -15,11 +15,13 @@ summary:
 
 Adds a new data source definition to a LoopBack application.
 
+<div id="lb3apic" class="sl-hidden" markdown="1">
 ```shell
 $ apic create --type datasource [options] [<name>]
 ```
 
 Or
+</div>
 
 ```shell
 $ slc loopback:datasource [options] [<name>]

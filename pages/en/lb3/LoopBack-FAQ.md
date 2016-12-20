@@ -27,6 +27,10 @@ LoopBack is an open-source project that is available for free (without support) 
 **[IBM API Connect](https://developer.ibm.com/apiconnect/)**.
 See [http://strongloop.com/node-js/subscription-plans/](http://strongloop.com/node-js/subscription-plans/) for more information.
 
+{%include warning.html content="API Connect Developer Toolkit does not currently support LoopBack 3.0.
+Use StrongLoop tools instead; see [Installation](Installation.html).
+" %}
+
 ### Is there a developer forum or mailing list?
 
 Yes! The [LoopBack Google Group](https://groups.google.com/forum/#!forum/loopbackjs) is a place for developers to ask questions and discuss

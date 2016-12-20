@@ -16,7 +16,7 @@ summary:
 Exports a Swagger API definition for a LoopBack application.
 
 ```shell
-$ [slc | apic] loopback:export-api-def [options]
+$ slc loopback:export-api-def [options]
 ```
 
 ### Options

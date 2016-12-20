@@ -14,12 +14,13 @@ summary:
 ### Synopsis
 
 Adds a new model to a LoopBack application.
-
-```shell
+<div id="lb3apic" class="sl-hidden" markdown="1">
+```
 apic create --type model [options] [<name>]
 ```
 
 Or:
+</div>
 
 ```shell
 slc loopback:model

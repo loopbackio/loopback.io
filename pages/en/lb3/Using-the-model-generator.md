@@ -16,6 +16,8 @@ See [Discovering models from relational databases](Discovering-models-from-relat
 ## Overview
 
 The easiest way to create a new model is with the [model generator](Model-generator.html);
+
+<div id="lb3apic" class="sl-hidden" markdown="1">
 With IBM API Connect:
 
 ```shell
@@ -23,6 +25,7 @@ $ apic create --type model
 ```
 
 Or with StrongLoop tools:
+</div>
 
 ```shell
 $ slc loopback:model
@@ -53,18 +56,18 @@ In your application root directory, enter the command (for example, to create a 
 ```shell
 $ slc loopback:model book
 ```
-
+<div id="lb3apic" class="sl-hidden" markdown="1">
 Or, using `apic`:
 
 ```shell
 $ apic create --type model book
 ```
+</div>
 
 Then the tool will prompt you to:
 
 * Choose the data source to which the model will connect. By default, there will be only the in-memory data source (named "db").
-  When you create additional data sources with apic create --type datasource,
-  the [data source generator](Data-source-generator.html), they will be listed as options.
+  When you create additional data sources with the [data source generator](Data-source-generator.html), they will be listed as options.
 
 * Choose the model's base class, from a list of [built-in models](Using-built-in-models.html) classes and existing custom models in the application.
 
@@ -85,7 +88,7 @@ Use `Model` as the base for models that don't have CRUD semantics, for example
 After you create a model, you can add more properties with the [property generator](Property-generator.html).
 
 ```shell
-$ [ slc | apic ] loopback:property
+$ slc loopback:property
 ```
 
 The tool will prompt you to choose the model to which you want to add the property, along with the other property settings (as before).

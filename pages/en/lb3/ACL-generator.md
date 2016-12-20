@@ -16,7 +16,7 @@ summary:
 Adds a new access control list (ACL) entry to a LoopBack application.
 
 ```shell
-$ [slc | apic] loopback:acl [options]
+$ slc loopback:acl [options]
 ```
 
 {% include content/generator-builtin-model-caveat.html lang=page.lang%}

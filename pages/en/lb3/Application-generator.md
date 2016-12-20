@@ -14,7 +14,7 @@ summary:
 Creates a new LoopBack application.
 
 ```shell
-$ [slc | apic] loopback:app [options] [<name>]
+$ slc loopback [options] [<name>]
 ```
 
 ### Options
@@ -41,8 +41,7 @@ The generator will prompt you for:
 
 The tool creates the standard LoopBack application structure.  See [Project layout reference](Project-layout-reference.html) for details.
 
-{% include note.html content="
-By default, a generated application exposes only the User model over REST.
+{% include note.html content="By default, a generated application exposes only the User model over REST.
 To expose other [built-in models](Using-built-in-models.html), edit `/server/model-config.json` and change the model's \"public\" property to \"true\".
 See [model-config.json](model-config.json.html) for more information.
 " %}
@@ -60,4 +59,6 @@ After you create an application, you can run additional generators from the appl
 * [Relation generator](Relation-generator.html)
 * [Remote method generator](Remote-method-generator.html)
 * [Swagger generator](Swagger-generator.html)
+<div id="lb3apic" class="sl-hidden" markdown="1">
 * [Refresh definitions command](Refresh-definitions-command.html)
+</div>

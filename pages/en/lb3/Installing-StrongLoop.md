@@ -15,7 +15,7 @@ StrongLoop's Node API platform consists of:
 *   [LoopBack](index.html), an open-source Node application framework based on [Express](http://expressjs.com/).
 *   [StrongLoop Process Manager](https://strong-pm.io) and related devops tools for Node applications.
 
-{% include important.html content="StrongLoop Arc and `slc` are no longer under active development, and will soon be deprecated. Arc's features are being included in the [IBM API Connect Developer Toolkit](https://developer.ibm.com/apiconnect).
+{% include important.html content="StrongLoop Arc and `slc` are no longer under active development, and will soon be deprecated. Arc's features are being included in the [IBM API Connect Developer Toolkit](https://developer.ibm.com/apiconnect).  API Connect does not currently support LoopBack 3.0.
 " %}
 
 ## What you're going to do

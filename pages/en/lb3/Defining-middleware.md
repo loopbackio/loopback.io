@@ -178,7 +178,7 @@ function myErrorHandler(err, req, res, next) {
 To share middleware across multiple projects, create a package that exports a middleware constructor (factory) function that accepts configuration 
 options and returns a middleware handler function; for example, as shown below.
 
-If you have an existing project created via `apic loopback`, to implement a new middleware handler that you can share with other projects,
+If you have an existing project created with the [application generator](Application-generator.html), to implement a new middleware handler that you can share with other projects,
 place the file with the middleware constructor in the `server/middleware` directory, for example, `server/middleware/myhandler.js`.
 
 ```js

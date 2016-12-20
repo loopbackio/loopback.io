@@ -29,9 +29,11 @@ This will install the module from npm and add it as a dependency to the applicat
 
 Create a new push data source with the [data source generator](Data-source-generator.html):
 
+<div id="lb3apic" class="sl-hidden" markdown="1">
 ```shell
 $ apic create --type datasource
 ```
+</div>
 
 ```shell
 $ slc loopback:datasource

@@ -22,7 +22,7 @@ that reference the primary keys in the declaring model, **Physician**, and the 
 
 ## Defining a hasManyThrough relation
 
-Use `apic loopback:relation` to create a relation between two models.
+Use the [relation generator](Relation-generator.html) to create a relation between two models.
 The tool will prompt you to enter the name of the model, the name of related model, and other required information.
 The tool will then modify the [model definition JSON file](Model-definition-JSON-file.html) (for example, `common/models/customer.json`) accordingly.
 

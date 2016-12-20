@@ -514,7 +514,7 @@ $ slc loopback:acl
 **shell**
 
 ```shell
-$ apic loopback:acl
+$ slc loopback:acl
 [?] Select the model to apply the ACL entry to: Person
 [?] Select the ACL scope: A single method
 [?] Enter the method name: greet

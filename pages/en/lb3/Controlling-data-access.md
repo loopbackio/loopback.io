@@ -60,7 +60,7 @@ For other methods, the default access type is EXECUTE; for example, a custom met
 
 ## Defining access control
 
-Use the ACL generator (`apic loopback:acl`) to set up access control for an application.
+Use the [ACL generator](ACL-generator.html) to set up access control for an application.
 Before you do that, though, you must have a clear idea of how you're going to configure access control for your application.
 
 For example, here is how [loopback-example-access-control](https://github.com/strongloop/loopback-example-access-control) sets up users and their rights:
@@ -78,7 +78,7 @@ For example, here is how [loopback-example-access-control](https://github.com/st
   * Role = $everyone, $authenticated, admin
   * Can access all functions except "Withdraw"
 
-Once you've created this kind of specification, you can easily construct `apic loopback:acl` commands to set up access control, as illustrated below.
+Once you've created this kind of specification, you can easily construct commands to set up access control, as illustrated below.
 
 ## Using the ACL generator to define access control
 
@@ -87,10 +87,6 @@ This enables you to create a static definition before runtime. The generator pro
 
 ```shell
 $ slc loopback:acl
-```
-
-```shell
-$ apic loopback:acl
 ```
 
 ### Example
@@ -152,8 +148,6 @@ Allow owners access to POST `/api/projects/withdraw`
 * Select the access type: Execute
 * Select the role: The user owning the object
 * Select the permission to apply: Explicitly grant access
-
-For more information, see the online help (`apic loopback:acl -h`) .
 
 ## Applying access control rules
 

@@ -39,6 +39,12 @@ To:
   "loopback": "^3.0.0"
 ```
 
+Then update application dependencies by entering this command in the application root directory:
+
+```
+npm install
+```
+
 ## Update use of REST error handler
 
 As described in the [release notes](3.0-Release-Notes.html#new-rest-adapter-error-handler), version 3.0 adds a new more secure error handler middleware package, `strong-error-handler`.
@@ -49,8 +55,7 @@ Install it as a dependency with the following command:
 npm install --save strong-error-handler
 ```
 
-{% include tip.html content="Projects scaffolded with a recent version of `apic loopback`
-or `slc loopback` are already correctly configured and require no change.
+{% include tip.html content="Projects scaffolded with a recent version of `slc loopback` are already correctly configured and require no change.
 " %}
 
 You may need to make the following changes:
@@ -354,7 +359,7 @@ received:
 ```
 Unhandled error for request GET /api/Users:
 Error: remoting.context option was removed in version 3.0.
-See https://docs.strongloop.com/display/APIC/Using%20current%20context for more
+See https://loopback.io/doc/en/lb3/Using-current-context.html for more
 details.
     at restApiHandler (.../node_modules/loopback/server/middleware/rest.js:44:15)
     at Layer.handle [as handle_request] (.../node_modules/express/lib/router/layer.js:95:5)
@@ -430,8 +435,7 @@ CORS is no longer enabled by default in version 3.0.
 The built-in CORS middleware was removed from `loopback.rest()` handler,
 so you must set up and configure application CORS policies explicitly.
 
-{% include tip.html content="Projects scaffolded with a recent version of `apic loopback`
-or `slc loopback` already have the global CORS handler configured in `server/middleware.json`.
+{% include tip.html content="Projects scaffolded with a recent version `slc loopback` already have the global CORS handler configured in `server/middleware.json`.
 " %}
 
 Otherwise, to enable CORS and allow cross-site requests to your LoopBack application,

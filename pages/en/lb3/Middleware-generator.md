@@ -22,7 +22,7 @@ If you're adding third-party middleware, you must install the middleware package
 " %}
 
 ```shell
-$ [slc | apic] loopback:middleware [options] [<name>]
+$ slc loopback:middleware [options] [<name>]
 ```
 
 ### Options
@@ -60,8 +60,8 @@ The tools adds the specified middleware to the application's [`middleware.json`]
 
 Here is an example to add a middleware to an existing phase.
 
-```shell
-$ apic loopback:middleware
+```
+$ slc loopback:middleware
 ? Enter the middleware name: m1
 ? Select the phase for m1: 5. routes
 ? Select the sub phase for m1: 1. before
@@ -77,8 +77,8 @@ Middleware m1 is added to phase routes.
 
 The following is an example to add a middleware to a custom phase.
 
-```shell
-$ apic loopback:middleware
+```
+$ slc loopback:middleware
 ? Enter the middleware name: m2
 ? Select the phase for m2: (custom phase)
 ? Enter the phase name: p1

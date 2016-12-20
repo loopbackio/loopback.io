@@ -36,7 +36,9 @@ $ npm install
 
 Enter:
 
-`$ slc loopback:model`
+```
+$ slc loopback:model
+```
 
 When prompted, enter or select the following:
 
@@ -45,7 +47,6 @@ When prompted, enter or select the following:
 *   **Base class**: Use the down-arrow key to select **PersistedModel**.
 *   **Expose Reviewer via the REST API?** Press RETURN to accept the default, Yes.
 *   **Custom plural form (used to build REST URL)**:  Press RETURN to accept the default, Yes.
-
 *   **Common model or server only**: Press RETURN to accept the default, common model.
 
 Then, follow the prompts to add these properties:
@@ -82,12 +83,16 @@ To exit the model generator, press RETURN when prompted for property name.
 ## Define the Reviewer model
 
 Enter:
-
-`apic create --type model`
+<div id="lb3apic" class="sl-hidden" markdown="1">
+```
+apic create --type model
+```
 
 Or with StrongLoop tools:
-
-`$ slc loopback:model`
+</div>
+```
+$ slc loopback:model
+```
 
 When prompted, enter or select the following:
 
@@ -111,7 +116,9 @@ Now that you have some new models and a new data source, you need to update this
 
 Then run
 
-`$ npm install --save async`
+```
+$ npm install --save async
+```
 
 This boot script has several functions:
 

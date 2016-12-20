@@ -9,7 +9,8 @@ permalink: /doc/en/lb3/server.js.html
 summary:
 ---
 
-This is the main application script in the standard scaffolded application, as created by `apic loopback`.
+This is the main application script in the standard scaffolded application, as created by
+the [application generator](Application-generator.html).
 
 ```javascript
 var loopback = require('loopback');

@@ -37,7 +37,7 @@ After upgrading an existing application to a recent LoopBack version, you will s
 
 ```
 loopback deprecated loopback#context middleware is deprecated.
-See https://docs.strongloop.com/display/APIC/Using%20current%20context for more details.
+See https://loopback.io/doc/en/lb3/Using-current-context.html for more details.
 node_modules/loopback/server/middleware/rest.js:60:32
 ```
 

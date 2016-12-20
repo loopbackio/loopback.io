@@ -29,12 +29,13 @@ To connect a model to a data source, follow these steps:
 1.  Use the  [data source generator](Data-source-generator.html)  to create a new data source.
 
     For example: 
-
+    <div id="lb3apic" class="sl-hidden" markdown="1" >
     ```shell
     $ apic create --type datasource
     ? Enter the data-source name: mysql-corp
     ? Select the connector for mysql: MySQL (supported by StrongLoop)
     ```
+    </div>    
 
     ```shell
     $ slc loopback:datasource
@@ -77,6 +78,7 @@ To connect a model to a data source, follow these steps:
     See [Connectors reference](Connectors-reference). for the list of connectors.
 
 4.  Use the [model generator](Using-the-model-generator.html) to create a model.
+<div id="lb3apic" class="sl-hidden" markdown="1">
 
     ```shell
     $ apic create --type model
@@ -88,7 +90,7 @@ To connect a model to a data source, follow these steps:
     Let's add some test2 properties now.
     ...
     ```
-
+</div>
     ```shell
     $ slc loopback:model
     ? Enter the model name: myModel
@@ -250,10 +252,11 @@ This command adds the following entry to `package.json`: 
 ## Creating a data source
 
 Use the [data source generator](Data-source-generator.html) to create a new data source:
-
+<div id="lb3apic" class="sl-hidden" markdown="1">
 ```shell
 $ apic create --type datasource
 ```
+</div>
 
 ```shell
 $ slc loopback:datasource

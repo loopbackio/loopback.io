@@ -43,7 +43,9 @@ The access controls should enforce the following rules:
 
 Once again, you'll use `slc loopback`, but this time you'll use the `acl` sub-command; for each ACL, enter:
 
-`$ slc loopback:acl`
+```
+$ slc loopback:acl
+```
 
 The tool will prompt you to provide the required information, as summarized below.
 

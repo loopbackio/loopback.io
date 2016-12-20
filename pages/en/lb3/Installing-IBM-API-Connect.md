@@ -7,6 +7,9 @@ sidebar: lb3_sidebar
 permalink: /doc/en/lb3/Installing-IBM-API-Connect.html
 summary: Create, run, manage, and secure your APIs with IBM API Connect.
 ---
+{%include warning.html content="API Connect Developer Toolkit does not currently support LoopBack 3.0.
+Use StrongLoop tools instead; see [Installation](Installation.html).
+" %}
 
 {% include styled-box.html
 content="

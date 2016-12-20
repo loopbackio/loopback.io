@@ -80,8 +80,8 @@ You can create a storage component data source either using the command-line too
 
 Create a new data source as follows:
 
-```shell
-$ apic create --type datasource
+```
+$ slc create --type datasource
 [?] Enter the data-source name: myfile
 [?] Select the connector for myfile: other
 [?] Enter the connector name without the loopback-connector- prefix: loopback-component-storage

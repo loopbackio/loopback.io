@@ -41,7 +41,7 @@ To summarize:
   * `datasources.json` - Data source configuration file.
       See [datasources.json](datasources.json.html).
 * `client` directory (empty except for a README stub)
-* `common/models` directory - created when you create a model with the model generator, `apic create --type model`.
+* `common/models` directory - created when you create a model with the model generator](Model-generator.html).
   * A JSON file and a JavaScript file for each model (for example, `my-model.json` and `my-model.js`).
 
 ## Main application script (server.js)
@@ -72,7 +72,8 @@ boot(app, __dirname, function(err) {
 });
 ```
 
-This is the main application script in the standard scaffolded application, as created by `apic loopback`.
+This is the main application script in the standard scaffolded application
+created by the [application generator](Application-generator.html).
 
 **1 - 3**:
 Require LoopBack modules and set up standard objects

@@ -16,7 +16,7 @@ summary:
 Adds a new remote method to an existing application.
 
 ```shell
-$ [slc | apic] loopback:remote-method [options] [<modelName>] [<methodName>]
+$ slc loopback:remote-method [options] [<modelName>] [<methodName>]
 ```
 
 ### Options

@@ -16,10 +16,6 @@ children:
   output: 'web, pdf'
   children:
 
-  - title: 'Installing IBM API Connect'
-    url: /doc/en/lb3/Installing-IBM-API-Connect.html
-    output: 'web, pdf'
-
   - title: 'Installing StrongLoop'
     url: /doc/en/lb3/Installing-StrongLoop.html
     output: 'web, pdf'
@@ -661,10 +657,6 @@ children:
 
   - title: 'Swagger generator'
     url: /doc/en/lb3/Swagger-generator.html
-    output: 'web, pdf'
-
-  - title: 'Refresh definitions command'
-    url: /doc/en/lb3/Refresh-definitions-command.html
     output: 'web, pdf'
 
 - title: 'Client SDKs'

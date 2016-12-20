@@ -16,7 +16,7 @@ summary:
 Adds a new property to an existing LoopBack model.
 
 ```shell
-$ [slc | apic] loopback:property [options]
+$ slc loopback:property [options]
 ```
 
 ### Options

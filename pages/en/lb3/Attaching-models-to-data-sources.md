@@ -32,13 +32,13 @@ To add a new data source, use the [data source generator](Data-source-generator
 ```shell
 $ slc loopback:datasource
 ```
-
+<div id="lb3apic" class="sl-hidden" markdown="1">
 Or, with API Connect:
 
 ```shell
 $ apic create --type datasource
 ```
-
+</div>
 You can also add and modify data sources using the API Designer tool.
 
 The tool will prompt you for the name of the new data source and the connector to use; for example, MySQL, Oracle, REST, and so on.

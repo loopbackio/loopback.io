@@ -24,14 +24,16 @@ all the changes between 2.x and 3.0.
 
 ## Getting started
 
-1. **[Install LoopBack tools](Installation)**, either IBM API Connect (`apic`) or StrongLoop tools (`slc`).
+1. **[Install LoopBack tools](Installation)**.  Currently only StrongLoop tools (`slc`) support LoopBack 3.0.
 1. **Read [LoopBack core concepts](LoopBack-core-concepts.html)** to learn about key concepts you need to understand to use LoopBack.
 1. **Follow [Getting started with LoopBack](Getting-started-with-LoopBack.html)** for a quick tutorial introduction.
 
 Check out the [LoopBack Developer Forum](https://groups.google.com/forum/#!forum/loopbackjs) to ask questions and discuss how you are using LoopBack.
 
+<div id="lb3apic" class="sl-hidden" markdown="1">
 {% include note.html content ="[IBM API Connect](https://developer.ibm.com/apiconnect/) is an end-to-end API management solution that uses LoopBack to create APIs, and provides integrated build and deployment tools.  For more information, see [Installing IBM API Connect](Installing-IBM-API-Connect.html).
 " %}
+</div>
 
 **If you are an IBM customer, for technical support see the [IBM Support Portal](http://www-01.ibm.com/support/docview.wss?uid=swg21593214).**
 

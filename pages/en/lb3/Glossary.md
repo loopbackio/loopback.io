@@ -20,7 +20,7 @@ API
 : Application Programming Interface.  An interface that allows an application program that is written in a high-level language to use specific data or functions of the operating system or another program.
 
 apic
-: The IBM API Connect command-line tool.  It provides commands to scaffold LoopBack applications. For more information, see [Command-line tools](Command-line-tools.html).
+: The IBM API Connect command-line tool.  It provides commands to scaffold LoopBack applications. For more information, see [Command-line tools](Command-line-tools.html).  **NOTE**: The `apic` command-line tool does not currently support LoopBack 3.0.
 
 adapter
 : Provides the transport-specific mechanisms to make remote objects (and collections thereof) available over their transport.  See [Strong remoting](Strong-Remoting.html).

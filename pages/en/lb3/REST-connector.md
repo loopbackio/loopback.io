@@ -35,10 +35,11 @@ This will install the module from npm and add it as a dependency to the applicat
 ## Creating a REST data source
 
 Use the [DataSource generator](Data-source-generator) to add a REST data source to your application.
-
+<div id="lb3apic" class="sl-hidden" markdown="1">
 ```shell
 $ apic create --type datasource
 ```
+</div>
 
 ```shell
 $ slc loopback:datasource

@@ -18,7 +18,7 @@ The models involved in the relation must also exist before running this generato
 Creates a new [model relation](Creating-model-relations.html) in a LoopBack application.
 
 ```shell
-$ [slc | apic] loopback:relation [options]
+$ slc loopback:relation [options]
 ```
 
 ### Options

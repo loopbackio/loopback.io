@@ -46,7 +46,7 @@ LoopBack also provides [operation hooks](Operation-hooks), functions that are e
 
 Here, you're going to define a remote hook on the review model, specifically `Review.beforeRemote`.
 
-`Modify` `common/models/review.js`, and add the following code:
+Modify `common/models/review.js`, and add the following code:
 
 {% include code-caption.html content="common/models/review.js" %}
 ```javascript

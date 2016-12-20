@@ -11,18 +11,18 @@ summary: This article summarizes LoopBack CLI tool commands.
 Two command-line tools are available for Loopback:
 
 - StrongLoop command-line tools: `slc loopback`.
-- IBM API Connect developer toolkit CLI: `apic loopback`.
+- IBM API Connect developer toolkit CLI: `apic loopback`.  **NOTE**: API Connect does not yet support LoopBack 3.0; use StrongLoop tools.
 
 You use these tools to create and _scaffold_ applications.  Scaffolding simply means generating the basic code for your application.
 You can then extend and modify the code as desired for your specific needs.
 
-The command-line tools provide an [Application generator](Application-generator.html) to create a new LoopBack application
-and a number of sub-generators to scaffold an application, as described in the following table.
+The command-line tools provide an [Application generator](Application-generator.html) to create a new LoopBack application and a number of sub-generators to scaffold an application, as described in the following table.
 The commands are listed roughly in the order that you would use them.
 
 ## Commands
 
-Commands table here.
+{% include warning.html content="API Connect tools (`apic` and the API Designer) do not currently support LoopBack 3.0; use StrongLoop tools instead.
+" %}
 
 {% include content/commands.html %}
 

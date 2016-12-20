@@ -36,19 +36,15 @@ The end result is the same.
 
 When you define a relation for a model, LoopBack adds a set of methods to the model, as detailed in the article on each type of relation.
 
-{% include note.html content="
-
-It's important to understand that all models inherit from the
+{% include note.html content="It's important to understand that all models inherit from the
 [Model class](https://apidocs.strongloop.com/loopback/#model) and they can have relations between them regardless of the specific type of model or the backing data source.
 Models backed by different data sources can have relations between them.
-
 " %}
 
 ## Using the relation generator
 
 The easiest way to create a new relation between existing models is to use the 
-[`slc loopback:relation`](Relation-generator.html), or the
-[`apic loopback:relation`](Relation-generator.html), relation generator.
+[relation generator](Relation-generator.html).
 
 The tool will prompt you to enter the type of relation (belongsTo, hasMany, and so on) and the affected models.
 

@@ -16,7 +16,9 @@ summary: You can easily connect a LoopBack application to multiple different dat
 
 You're going to add a MongoDB data source in addition to the MySQL data source created in [Connect your API to a data source](Connect-your-API-to-a-data-source.html).
 
-`$ slc loopback:datasource`
+```
+$ slc loopback:datasource
+```
 
 When prompted, respond as follows:
 
@@ -27,12 +29,13 @@ When prompted, respond as follows:
 
 ## Install MongoDB connector
 
-`$ npm install --save loopback-connector-mongodb`
+```
+$ npm install --save loopback-connector-mongodb
+```
 
 ## Configure data source
 
-{% include important.html content="
-If you have a MongoDB database server that you can use, please do so. Create a new database called \"getting_started_intermediate\". If you wish, you can use a different database name. Just make sure the `mongoDs.database` property in `datasources.json` matches it (see below).
+{% include important.html content="If you have a MongoDB database server that you can use, please do so. Create a new database called \"getting_started_intermediate\". If you wish, you can use a different database name. Just make sure the `mongoDs.database` property in `datasources.json` matches it (see below).
 
 If not, you can use the StrongLoop MongoDB server running on [demo.strongloop.com](http://demo.strongloop.com/). However, be aware that it is a shared resource. There is a small chance that two users may perform operations that conflict. For this reason, we recommend you use your own MongoDB server if you have one.
 " %}

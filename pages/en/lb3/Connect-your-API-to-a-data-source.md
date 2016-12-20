@@ -33,11 +33,15 @@ $ npm install
 
 Now you're going to define a data source using the [Data source generator](Data-source-generator):
 
-`$ slc loopback:datasource`
+```
+$ slc loopback:datasource
+```
 
 The generator will prompt you to name the data source:
 
-`[?] Enter the data-source name:`
+```
+[?] Enter the data-source name:
+```
 
 Enter **mysqlDs** and hit **Enter**.
 
@@ -77,12 +81,13 @@ The tool adds the data source definition to the `server/datasources.json` fil
 
 Now add the loopback-connector-mysql module and install the dependencies:
 
-`$ npm install loopback-connector-mysql --save`
+```
+$ npm install loopback-connector-mysql --save
+```
 
 ## Configure data source
 
-{% include important.html content="
-If you have a MySQL database server that you can use, please use it. Create a new database called \"getting_started.\" If you wish, you can use a different database name. Just make sure the `mysqlDs.database` property in `datasources.json `matches it (see below).
+{% include important.html content="If you have a MySQL database server that you can use, please use it. Create a new database called \"getting_started.\" If you wish, you can use a different database name. Just make sure the `mysqlDs.database` property in `datasources.json `matches it (see below).
 
 If not, you can use the StrongLoop MySQL server running on [demo.strongloop.com](http://demo.strongloop.com/). However, be aware that it is a shared resource. There is a small chance that two users may run the script that creates sample data (see [Add some test data and view it](#add-some-test-data-and-view-it), below) at the same time and may run into race condition. For this reason, we recommend you use your own MySQL server if you have one.
 " %}
@@ -142,8 +147,7 @@ You could try executing some SQL statements directly...but LoopBack provides a N
 
 The `loopback-getting-started` module contains the `create-sample-models.js` script to demonstrate auto-migration.  If you've been following along from the beginning (and didn't just clone this module), then you'll need to copy it from below or [from GitHub](https://github.com/strongloop/loopback-getting-started/blob/master/server/boot/create-sample-models.js) .  Put it in the application's `/server/boot` directory so it will get executed when the application starts.
 
-{% include note.html content="
-The auto-migration script below is an example of a _boot script_ that LoopBack executes when an application initially starts up. Use boot scripts for initialization and to perform any other logic your application needs to perform when it starts. See [Defining boot scripts](Defining-boot-scripts) for more information.
+{% include note.html content="The auto-migration script below is an example of a _boot script_ that LoopBack executes when an application initially starts up. Use boot scripts for initialization and to perform any other logic your application needs to perform when it starts. See [Defining boot scripts](Defining-boot-scripts) for more information.
 " %}
 
 {% include code-caption.html content="/server/boot/create-sample-models.js" %}
@@ -172,13 +176,14 @@ module.exports = function(app) {
 
 This will save some test data to the data source.
 
-{% include note.html content="
-The boot script containing the auto-migration command will run _each time_ you run your application. Since [`automigrate()`](http://apidocs.strongloop.com/loopback-datasource-juggler/#datasource-prototype-automigrate) first drops tables before trying to create new ones, it won't create duplicate tables.
+{% include note.html content="The boot script containing the auto-migration command will run _each time_ you run your application. Since [`automigrate()`](http://apidocs.strongloop.com/loopback-datasource-juggler/#datasource-prototype-automigrate) first drops tables before trying to create new ones, it won't create duplicate tables.
 " %}
 
 Now run the application:
 
-`$ node .`
+```
+$ node .
+```
 
 In the console, you'll see this:
 

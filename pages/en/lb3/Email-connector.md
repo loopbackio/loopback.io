@@ -18,11 +18,11 @@ The email connector is essentially a LoopBack-integrated interface to the [nodem
 ## Creating an email data source
 
 Create a new email data source with the [data source generator](Data-source-generator.html):
-
+<div id="lb3apic" class="sl-hidden" markdown="1">
 ```shell
 $ apic create --type datasource
 ```
-
+</div>
 ```shell
 $ slc loopback:datasource
 ```

@@ -18,7 +18,7 @@ In addition to the [standard Node events](http://nodejs.org/api/events.html), Lo
 
 ## Application events
 
-By default, an application scaffolded with `apic loopback` emits a 'started' event when it starts up, after running [boot scripts](Defining-boot-scripts.html).
+By default, an application created with the [application generator](Application-generator.html) emits a 'started' event when it starts up, after running [boot scripts](Defining-boot-scripts.html).
 
 ## Model events
 
