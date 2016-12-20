@@ -5,7 +5,7 @@ keywords: LoopBack
 tags: [installation]
 sidebar: lb3_sidebar
 permalink: /doc/en/lb3/Installation.html
-summary: You can install LoopBack via either API Connect or StrongLoop.
+summary: Install StrongLoop to develope LoopBack 3.0 apps.
 ---
 
 {% include tip.html content="Although in theory, you could code a LoopBack
