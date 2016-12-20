@@ -10,10 +10,6 @@ children:
   url: /doc/en/lb2/index.html
   output: web
 
-- title: Long Term Support
-  url: /doc/en/Long-Term-Support.html
-  output: web
-
 - title: Community projects
   url: /doc/en/community/index.html
   output: web
