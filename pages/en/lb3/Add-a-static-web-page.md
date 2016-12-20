@@ -60,6 +60,24 @@ When you create an application with the [Application generator](Application-gene
         "credentials": true,
         "maxAge": 86400
       }
+    },
+    "helmet#xssFilter": {},
+    "helmet#frameguard": {
+      "params": [
+        "deny"
+      ]
+    },
+    "helmet#hsts": {
+      "params": {
+        "maxAge": 0,
+        "includeSubdomains": true
+      }
+    },
+    "helmet#hidePoweredBy": {},
+    "helmet#ieNoOpen": {},
+    "helmet#noSniff": {},
+    "helmet#noCache": {
+      "enabled": false
     }
   },
   "session": {},
@@ -67,7 +85,9 @@ When you create an application with the [Application generator](Application-gene
   "parse": {},
   "routes": {
     "loopback#rest": {
-      "paths": ["${restApiRoot}"]
+      "paths": [
+        "${restApiRoot}"
+      ]
     }
   },
   "files": {},
@@ -75,7 +95,7 @@ When you create an application with the [Application generator](Application-gene
     "loopback#urlNotFound": {}
   },
   "final:after": {
-    "loopback#errorHandler": {}
+    "strong-error-handler": {}
   }
 }
 ```
