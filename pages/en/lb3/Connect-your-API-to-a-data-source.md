@@ -48,61 +48,46 @@ Enter **mysqlDs** and hit **Enter**.
 Next, the generator will prompt you for the type of data source:
 
 ```
-[?] Select the connector for mysqlDS: (Use arrow keys)
-  other
-  In-memory db (supported by StrongLoop)
-  MySQL (supported by StrongLoop)
-  PostgreSQL (supported by StrongLoop)
-  Oracle (supported by StrongLoop)
-  Microsoft SQL (supported by StrongLoop)
+? Select the connector for mysqlDs: (Use arrow keys)
+❯ In-memory db (supported by StrongLoop)
+  IBM DB2 (supported by StrongLoop)
+  IBM DashDB (supported by StrongLoop)
+  IBM MQ Light (supported by StrongLoop)
+  IBM Cloudant DB (supported by StrongLoop)
+  IBM DB2 for z/OS (supported by StrongLoop)
   MongoDB (supported by StrongLoop)
 (Move up and down to reveal more choices)
 ```
 
-Press the down-arrow key to highlight **MySQL**, then hit **Enter**.  
+Press the down-arrow key to highlight **MySQL (supported by StrongLoop)**, then hit **Enter**.  
 
-The tool adds the data source definition to the `server/datasources.json` file, which will now look as shown below.  Notice the "mysqlDs" data source you just added, as well as in-memory data source named "db," which is there by default.
-
-{% include code-caption.html content="datasources.json" %}
-```javascript
-{
-  "db": {
-    "name": "db",
-    "connector": "memory"
-  },
-  "mysqlDs": {
-    "name": "mysqlDs",
-    "connector": "mysql"
-  }
-}
-```
-
-## Install MySQL connector 
-
-Now add the loopback-connector-mysql module and install the dependencies:
+Then the tool will prompt you for the data source configuration settings.
+For MySQL, you can either enter all the settings in URL format, or individually.
 
 ```
-$ npm install loopback-connector-mysql --save
+Connector-specific configuration:
+? Connection String url to override other settings (eg: mysql://user:pass@host/db):
 ```
-
-## Configure data source
+Press **Enter** to skip the URL connection string, since you'll enter the settings individually.
 
 {% include important.html content="If you have a MySQL database server that you can use, please use it. Create a new database called \"getting_started.\" If you wish, you can use a different database name. Just make sure the `mysqlDs.database` property in `datasources.json `matches it (see below).
 
 If not, you can use the StrongLoop MySQL server running on [demo.strongloop.com](http://demo.strongloop.com/). However, be aware that it is a shared resource. There is a small chance that two users may run the script that creates sample data (see [Add some test data and view it](#add-some-test-data-and-view-it), below) at the same time and may run into race condition. For this reason, we recommend you use your own MySQL server if you have one.
 " %}
 
-Next, you need configure the data source to use the desired MySQL server.
+To use the StrongLoop MySQL server enter the settings shown below.
+To use your own MySQL server, enter the hostname, port number, and login credentials for your server. 
 
-Edit `/server/datasources.json` and after the line
+```
+? host: demo.strongloop.com
+? port: 3306
+? user: demo
+? password: L00pBack
+? database: getting_started
+? Install loopback-connector-mysql@^2.2 Yes
+```
 
-`    "connector": "mysql"`
-
-add `host`, `port`, `database`, `username`, and `password` properties.  
-
-**To use the StrongLoop MySQL server**: running on [demo.strongloop.com](http://demo.strongloop.com/), then enter the values shown below.  
-
-**To use your own MySQL server**: enter the hostname, port number, and login credentials for your server. 
+When the tool prompts you to install the connector, hit **Enter** to make the tool run `npm install loopback-connector-mysql --save`.  The toll will also add the data source definition to the `server/datasources.json` file, which will look as shown below.  Notice the "mysqlDs" data source you just added, as well as in-memory data source named "db," which is there by default.
 
 {% include code-caption.html content="/server/datasources.json" %}
 ```javascript

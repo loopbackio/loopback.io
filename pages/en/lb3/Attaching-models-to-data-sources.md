@@ -38,8 +38,8 @@ Or, with API Connect:
 ```shell
 $ apic create --type datasource
 ```
-</div>
 You can also add and modify data sources using the API Designer tool.
+</div>
 
 The tool will prompt you for the name of the new data source and the connector to use; for example, MySQL, Oracle, REST, and so on.
 The tool will then add an entry such as the following to `datasources.json`:

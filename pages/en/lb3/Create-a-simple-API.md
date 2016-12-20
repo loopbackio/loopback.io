@@ -62,11 +62,11 @@ If using `apic`:
     a single remote method)
   notes (A project containing a basic working example, including a memory database)
 ```
-</div>
+
 Press **Enter** to accept the default selection, `empty server`.
 
 If using `slc`:
-
+</div>
 ```
 ? What kind of application do you have in mind? (Use arrow keys)
   api-server (A LoopBack API server with local User auth)

@@ -112,7 +112,7 @@ For more information, see [Remote methods](Remote-methods).
 
 The `status` remote method is trivial, but a remote method can also access any of the standard model create, retrieve, update, and delete methods to perform data processes and validation.  Here is a simple example (this is not in the `loopback-getting-started` repository):
 
-```
+```js
 module.exports = function(CoffeeShop) {
 ...
   CoffeeShop.getName = function(shopId, cb) {
