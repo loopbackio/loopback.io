@@ -51,10 +51,9 @@ For example, here is an excerpt from a model definition file for a customer mode
 Properties are required unless otherwise designated.
 
 <table>
-  <tbody>
     <tr>
       <th>Property</th>
-      <th>Type</th>
+      <th width="100">Type</th>
       <th>Description</th>
     </tr>
     <tr>
@@ -67,9 +66,9 @@ Properties are required unless otherwise designated.
       <td>String or Array</td>
       <td>
         Optional description of the model.<br/><br/>
-        You can split long descriptions into arrays of strings (lines) to keep line lengths manageable.
-        <pre>[<br>  "Lorem ipsum dolor sit amet, consectetur adipiscing elit",<br>
-      "sed do eiusmod tempor incididunt ut labore et dolore",<br> "magna aliqua."<br>]&nbsp;</pre>
+        You can split long descriptions into arrays of strings (lines) to keep line lengths manageable; for example:
+        <pre>[ "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+"sed do eiusmod tempor incididunt ut labore et dolore",<br> "magna aliqua." ] </pre>
       </td>
     </tr>
     <tr>
@@ -102,7 +101,8 @@ Properties are required unless otherwise designated.
       <td>forceId</td>
       <td>Boolean</td>
       <td>
-        The default value is set to false. If it is set to true it prevents users from setting the auto-id value manually.
+        If true, prevents clients from setting the auto-generated ID value manually.
+        The default is false.
       </td>
     </tr>
     <tr>
@@ -163,7 +163,11 @@ Properties are required unless otherwise designated.
       <td>Object</td>
       <td>See <a href="#scopes">Scopes</a> below.</td>
     </tr>
-  </tbody>
+    <tr>
+      <td>replaceOnPUT</td>
+      <td>Boolean</td>
+      <td>If true, <a href="https://apidocs.strongloop.com/loopback/#persistedmodel-replaceorcreate">replaceOrCreate()</a>  and <a href="https://apidocs.strongloop.com/loopback/#persistedmodel-replacebyid">replaceById()</a> use the HTTP PUT method; if false, updateOrCreate() and <a href="https://apidocs.strongloop.com/loopback/#persistedmodel-prototype-updateattributes">updateAttributes()</a>/patchAttributes() use the HTTP PUT method.</td>
+    </tr>    
 </table>
 
 ## Options

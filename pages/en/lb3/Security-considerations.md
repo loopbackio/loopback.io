@@ -49,16 +49,50 @@ For an application using [loopback-component-explorer](https://github.com/strong
 }
 ```
 
-{% include tip.html content="
-
-For an application using the old `loopback-explorer` (prior to version 2.0), disable API Explorer by deleting or renaming `server/boot/explorer.js`. 
-
+{% include tip.html content="For an application using the old `loopback-explorer` (prior to version 2.0), disable API Explorer by deleting or renaming `server/boot/explorer.js`. 
 " %}
 
 ## CORS
 
-By default LoopBack enables [Cross-origin resource sharing](https://en.wikipedia.org/wiki/Cross-origin_resource_sharing)
-(CORS) using the [cors](https://www.npmjs.com/package/cors) package. Change the CORS settings in [middleware.json](middleware.json.html).
+LoopBack applications use the [cors](https://www.npmjs.com/package/cors) middleware package
+for [cross-origin resource sharing](https://en.wikipedia.org/wiki/Cross-origin_resource_sharing)
+(CORS), but it is **disabled by default** for applications created with the [application generator](Application-generator.html).
+
+To enable CORS, edit the `remoting` section in your `server/config.json` and set `cors` to `true`:
+
+```js
+{
+  ...
+  "remoting": {
+    ...
+    "cors": true,  // false by default
+    "handleErrors": false
+  }
+}
+```
+
+To configure CORS settings, edit the `initial` section in the `server/middleware.json` file:
+
+```js
+{
+  // ...
+  "initial": {
+    // ...
+    "cors": {
+      "params": {
+        "origin": true,
+        "credentials": true,
+        "maxAge": 86400
+      }
+    }
+  },
+  // ...
+}
+```
+
+For information on CORS configuration options, see [cors documentation](https://github.com/expressjs/cors#configuration-options).
+
+### Enabling CORS on the client
 
 If you are using a JavaScript client, you must also enable CORS on the client side. For example, one way to enable it with AngularJS is:
 
@@ -73,55 +107,6 @@ myApp.config(['$httpProvider', function($httpProvider) {
     }
 ]);
 ```
-
-### Deprecation of built-in CORS middleware
-
-In preparation for the LoopBack 3.0 release, which removes the built-in CORS
-middleware entirely, we have deprecated the built-in CORS middleware in
-versions 2.x. Applications scaffolded by an older version of `slc loopback`
-will print the following warning when the first request is served:
-
-```
-strong-remoting deprecated The built-in CORS middleware provided by REST adapter was deprecated. See https://docs.strongloop.com/display/public/LB/Security+considerations for more details.
-```
-
-To suppress the warning, you should disable the built-in CORS middleware in
-your `server/config.json` by setting the property `remoting.cors` to `false`:
-
-```js
-{
-  // ...
-  "remoting": {
-    // ...
-    "cors": false
-  }
-}
-```
-
-If you would like to keep cross-site requests allowed, then you need to follow
-these additional steps:
-
- 1. `npm install --save cors`
-
- 2. Edit the `initial` section in your `server/middleware.json` and add
-  a configuration block for `cors` middleware:
-
-    ```js
-    {
-      // ...
-      "initial": {
-        // ...
-        "cors": {
-          "params": {
-            "origin": true,
-            "credentials": true,
-            "maxAge": 86400
-          }
-        }
-      },
-      // ...
-    }
-    ```
 
 ## Mitigating XSS exploits
 

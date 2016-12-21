@@ -441,7 +441,11 @@ so you must set up and configure application CORS policies explicitly.
 Otherwise, to enable CORS and allow cross-site requests to your LoopBack application,
 follow these steps:
 
- 1. `npm install --save cors`
+ 1. Install the `cors` middleware package:
+
+     ```
+     npm install --save cors
+     ```
 
  2. Edit the `initial` section in your `server/middleware.json` and add
   a configuration block for `cors` middleware:
@@ -463,15 +467,14 @@ follow these steps:
     }
     ```
 
- 3. Edit the `remoting` section in your `server/config.json` and set `cors` to
-  `false`:
+ 3. Edit the `remoting` section in your `server/config.json` and set `cors` to `true`:
 
     ```js
     {
       // ...
       "remoting": {
         // ...
-        "cors": false,
+        "cors": true,
         // ...
       }
     }
