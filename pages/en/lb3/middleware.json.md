@@ -116,38 +116,34 @@ You can set other CORS properties as well. For more information, see [cors](http
 <table>
   <tbody>
     <tr>
-      <th>Property</th>
-      <th>Type</th>
+      <th width="200">Property</th>
+      <th width="100">Type</th>
       <th>Description</th>
       <th>Default</th>
     </tr>
     <tr>
       <td>cors.params.origin</td>
       <td>Boolean</td>
-      <td>
-        <p>Configures the&nbsp;<strong>Access-Control-Allow-Origin</strong>&nbsp;CORS header.
+      <td>Configures the <strong>Access-Control-Allow-Origin</strong> CORS header.
           Expects a string (for example: `http://example.com/`).
-          Set to&nbsp;<code>true</code>&nbsp;to reflect the&nbsp;<a href="http://tools.ietf.org/html/draft-abarth-origin-09" class="external-link" rel="nofollow">request origin</a>,
-          as defined by&nbsp;<code>req.header('Origin')</code>. Set to&nbsp;<code>false</code>&nbsp;to disable CORS. Can also be set to a function,
-          which takes the request origin as the first parameter and a callback (which expects the signature&nbsp;<code>err [object], allow [bool]</code>) as the second.
-        </p>
-        <p>&nbsp;</p>
-      </td>
+          Set to <code>true</code> to reflect the <a href="http://tools.ietf.org/html/draft-abarth-origin-09" class="external-link" rel="nofollow">request origin</a>,
+          as defined by <code>req.header('Origin')</code>. Set to <code>false</code> to disable CORS. Can also be set to a function,
+          which takes the request origin as the first parameter and a callback (which expects the signature <code>err [object], allow [bool]</code>) as the second.</td>
       <td>true</td>
     </tr>
     <tr>
       <td>cors.params.credentials</td>
       <td>Boolean</td>
       <td>
-        <p>Configures the&nbsp;<strong>Access-Control-Allow-Credentials</strong>&nbsp;CORS header. Set to&nbsp;<code>true</code>&nbsp;to pass the header, otherwise it is omitted.</p>
-        <p>You can set other cors properties as well. For more information, see <a href="https://www.npmjs.com/package/cors" class="external-link" rel="nofollow">cors</a>.</p>
+        Configures the <strong>Access-Control-Allow-Credentials</strong> CORS header. Set to <code>true</code> to pass the header, otherwise it is omitted.
+        You can set other cors properties as well. For more information, see <a href="https://www.npmjs.com/package/cors" class="external-link" rel="nofollow">cors</a>.
       </td>
       <td>true</td>
     </tr>
     <tr>
       <td>cors.params.maxAge</td>
       <td>Number</td>
-      <td><span>Configures the&nbsp;</span><strong>Access-Control-Allow-Max-Age</strong><span>&nbsp;CORS header. Set to an integer to pass the header,
+      <td><span>Configures the </span><strong>Access-Control-Allow-Max-Age</strong><span> CORS header. Set to an integer to pass the header,
         otherwise it is omitted.</span>
       </td>
       <td>86400</td>

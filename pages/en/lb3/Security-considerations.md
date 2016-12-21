@@ -90,7 +90,7 @@ To configure CORS settings, edit the `initial` section in the `server/middleware
 }
 ```
 
-For information on CORS configuration options, see [cors documentation](https://github.com/expressjs/cors#configuration-options).
+For information on CORS configuration options, see [middleware.json (CORS settings)](middleware.json.html#cors-settings).
 
 ### Enabling CORS on the client
 
