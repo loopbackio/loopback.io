@@ -19,7 +19,7 @@ Order by one property: 
 
 Order by two or more properties:
 
-`filter[order][0]=propertyName <ASC|DESC>&filter[order][1]propertyName]=<ASC|DESC>...`
+`filter[order][0]=propertyName <ASC|DESC>&filter[order][1][propertyName]=<ASC|DESC>...`
 
 You can also use [stringified JSON format](Querying-data.html#using-stringified-json-in-rest-queries) in a REST query.
 
