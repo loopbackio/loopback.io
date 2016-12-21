@@ -8,21 +8,25 @@ sidebar: lb3_sidebar
 permalink: /doc/en/lb3/Migrating-to-3.0.html
 summary: How to migrate applications from LoopBack 2.x to 3.x.
 ---
-## Update dependencies in package.json
+## Update LoopBack version
+
+To move your app from LoopBack 2.x to 3.x, edit the `package.json` file, then
+install dependencies from npm.
+
+### Edit package.json
 
 Make the following changes to your app's `package.json` file:
 
 - Change the dependency on `loopback` to specify version 3.0.
 - Remove `loopback-datasource-juggler` from dependencies, since it is [now a regular dependency](3.0-Release-Notes.html#loopback-datasource-juggler-is-now-a-regular-dependency-of-loopback).
 - Depending on when you initially created your app, `strong-error-handler` may not
-be listed as a dependency; if so, add it.
+be listed as a dependency; if it isn't, add it.
 
 For example, change:
 
 ```
 "dependencies": {
   ...
-  "serve-favicon": "^2.0.1",
   "loopback-datasource-juggler": "^2.39.0",
   "loopback": "^2.22.0"
  },
@@ -34,12 +38,13 @@ To:
 ```
 "dependencies": {
   ...
-  "serve-favicon": "^2.0.1",
   "strong-error-handler": "^1.0.1",
   "loopback": "^3.0.0"
 ```
 
-Then update application dependencies by entering this command in the application root directory:
+### Update dependencies with npm
+
+After editing `package.json`, enter this command (in the project root directory) to update application dependencies:
 
 ```
 npm install
@@ -334,9 +339,8 @@ check the client code and ensure it correctly encodes request parameters.
 
 ## Remove use of current-context methods, middleware, and configuration settings
 
-As described in the [release notes](Migrating-to-3.0.html#removed-current-context-api-and-middleware),
-version 3.0 removes deprecated a number of current-context-related methods,
-middleware, and configuration settings.
+As described in the [release notes](3.0-Release-Notes.html#current-context-api-and-middleware-removed),
+version 3.0 removes a number of deprecated methods related to current-context, middleware, and configuration settings.
 Ensure you no longer use any of these methods and middleware.
 If you must use current-context, follow the instructions in [Using current-context in version 3.0](#using-current-context-in-version-30) below.
 
