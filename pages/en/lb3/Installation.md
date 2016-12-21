@@ -5,7 +5,7 @@ keywords: LoopBack
 tags: [installation]
 sidebar: lb3_sidebar
 permalink: /doc/en/lb3/Installation.html
-summary: Install StrongLoop to develope LoopBack 3.0 apps.
+summary: Install StrongLoop to create and develop LoopBack 3.0 apps.
 ---
 
 {% include tip.html content="Although in theory, you could code a LoopBack

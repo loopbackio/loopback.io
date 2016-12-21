@@ -9,17 +9,16 @@ permalink: /doc/en/lb3/Updating-to-the-latest-version.html
 summary:
 ---
 
-For application dependencies, npm will automatically update packages that your application requires, based on the information in the `package.json` file.  For more information on `package.json`, see the [npm documentation](https://npmjs.org/doc/json.html).  
-
-{% include warning.html content="
-See [Security advisories](Security-advisories) for important upgrade information required to address security issues.
-" %}
+When you run `npm install` in an application root directory, npm will update
+application dependencies, as specified by the `package.json` file.  For more information on `package.json`, see [npm documentation](https://npmjs.org/doc/json.html).  
 
 ## Basic update
 
 Update your installation with this command:
 
-`$ npm install -g strongloop`
+```
+$ npm install -g strongloop
+```
 
 ## Performing a clean re-installation
 

@@ -1208,7 +1208,8 @@ td pre {
 .v3notice {
   border: 1px solid #800000;
   border-radius: 3px;
-  margin: 10px 10px 0 10px;
+  margin: 10px 10px -20px 10px;
   background-color: #ffcccc;
-  padding: 10px;
+  padding: 7px;
+  font-size: 80%;
 }

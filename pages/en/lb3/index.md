@@ -6,13 +6,23 @@ keywords: LoopBack 3.0
 tags: [getting_started]
 sidebar: lb3_sidebar
 permalink: /doc/en/lb3/index.html
-summary: LoopBack 3.0 is currently in pre-release.
+summary: LoopBack 3.0 is the current release.
 ---
 
-{% include important.html content="LoopBack 3.0 is a pre-release.  It is not yet
-certified for production use. For documentation of the current LoopBack production release,
-see [LoopBack 2.x docs](../lb2).
+{% include important.html content="LoopBack 3.0 is the current production release.
+It was released for general availability on 21 Dec 2016; see the [release announcement](https://strongloop.com/strongblog/announcing-loopback-3-0-ga/).
+LoopBack 2.0 is now the [LTS release](/doc/en/contrib/Long-term-support.html).
 " %}
+
+## Upgrading to version 3.0
+
+To upgrade to LoopBack 3.0, simply enter this command:
+
+```
+npm install -g strongloop
+```
+
+For more information, see [Updating to the latest version](Updating-to-the-latest-version.html).
 
 ## Migrating your app to version 3.0
 
