@@ -2,7 +2,7 @@
 title: Functional area owners
 tags: [contributing]
 keywords:
-last_updated: Oct 5, 2016
+last_updated: Dec 22, 2016
 summary: "List of who oversees each functional area of Loopback"
 sidebar: contrib_sidebar
 permalink: /doc/en/contrib/functional-area-owners.html
@@ -37,9 +37,7 @@ See the actual content below for detailed examples.
 - GitHub label
   - api-definition ([list of issues](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+label%3Aapi-definition+org%3Astrongloop))
 - Owner
-  - [gunjpan](https://github.com/gunjpan)
-- Backup
-  - TBD
+  - [Epitome](https://github.com/orgs/strongloop/teams/sq-lb-epitome)
 - Repos
   - [loopback-api-definition](https://github.com/strongloop/loopback-api-definition)
   - [loopback-component-explorer](https://github.com/strongloop/loopback-component-explorer)
@@ -50,11 +48,7 @@ See the actual content below for detailed examples.
 - GitHub label
   - boot ([list of issues](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+label%3Aboot+org%3Astrongloop))
 - Owner
-  - [davidcheung](https://github.com/davidcheung)
-  - [deepakrkris](https://github.com/deepakrkris)
-- Backup
-  - [0candy](https://github.com/0candy)
-  - [gunjpan](https://github.com/gunjpan)
+  - [Asteroid](https://github.com/orgs/strongloop/teams/sq-lb-asteroid)
 - Repos
   - [loopback-boot](https://github.com/strongloop/loopback-boot)
   - [loopback-example-app-logic](https://github.com/strongloop/loopback-example-app-logic)
@@ -66,9 +60,7 @@ See the actual content below for detailed examples.
 - GitHub label
   - component-passport ([list of issues](https://github.com/issues?utf8=✓&q=is%3Aopen+label%3Acomponent-passport+org%3Astrongloop))
 - Owner
-  - [loay](https://github.com/loay)
-- Backup
-  - [jannyHou](https://github.com/jannyHou)
+  - [Epitome](https://github.com/orgs/strongloop/teams/sq-lb-epitome)
 - Repos
   - [loopback-component-passport](https://github.com/strongloop/loopback-component-passport)
   - [loopback-example-passport](https://github.com/strongloop/loopback-example-passport)
@@ -78,10 +70,7 @@ See the actual content below for detailed examples.
 - GitHub label
   - component-push ([list of issues](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+label%3Acomponent-push+org%3Astrongloop))
 - Owner
-  - [superkhau](https://github.com/superkhau)
-- Backup
-  - [Amir-61](https://github.com/amir-61)
-  - [gunjpan](https://github.com/gunjpan)
+  - [Epitome](https://github.com/orgs/strongloop/teams/sq-lb-epitome)
 - Repos
   - [loopback-component-push](https://github.com/strongloop/loopback-component-push)
   - [loopback-example-push](https://github.com/strongloop/loopback-example-push)
@@ -91,9 +80,7 @@ See the actual content below for detailed examples.
 - GitHub label
   - component-storage ([list of issues](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+label%3Acomponent-storage+org%3Astrongloop))
 - Owner
-  - [Amir-61](https://github.com/amir-61)
-- Backup
-  - [loay](https://github.com/loay)
+  - [Epitome](https://github.com/orgs/strongloop/teams/sq-lb-epitome)
 - Repos
   - [loopback-component-storage](https://github.com/strongloop/loopback-component-storage)
   - [loopback-example-storage](https://github.com/strongloop/loopback-example-storage)
@@ -104,9 +91,7 @@ See the actual content below for detailed examples.
 - GitHub label
   - connector-email ([list of issues](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+label%3Aconnector-email+org%3Astrongloop))
 - Owner
-  - [jannyHou](https://github.com/jannyHou)
-- Backup
-  - [davidcheung](https://github.com/davidcheung)
+  - [Epitome](https://github.com/orgs/strongloop/teams/sq-lb-epitome)
 - Repos
   - [loopback-component-email](https://github.com/strongloop/loopback-component-email)
 
@@ -115,14 +100,11 @@ See the actual content below for detailed examples.
 - GitHub label
   - connector-http ([list of issues]((https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+label%3Aconnector-http+org%3Astrongloop)))
 - Owner
-  - [gunjpan](https://github.com/gunjpan)
-- Backup
-  - TBD
+  - [Epitome](https://github.com/orgs/strongloop/teams/sq-lb-epitome)
 - Repos
   - [loopback-connector-jsonrpc](https://github.com/strongloop/loopback-connector-jsonrpc)
   - [loopback-connector-remote](https://github.com/strongloop/loopback-connector-remote)
   - [loopback-connector-rest](https://github.com/strongloop/loopback-connector-rest)
-  - [loopback-connector-soap](https://github.com/strongloop/loopback-connector-soap)
   - [loopback-connector-swagger](https://github.com/strongloop/loopback-connector-swagger)
 
 ## KeyValue
@@ -130,9 +112,7 @@ See the actual content below for detailed examples.
 - GitHub label
   - connector-kv
 - Owner
-  - [superkhau](https://github.com/superkhau)
-- Backup
-  - [bajtos](https://github.com/bajtos)
+  - [Asteroid](https://github.com/orgs/strongloop/teams/sq-lb-asteroid)
 - Repos
   - [juggler/kvao.js](https://github.com/strongloop/loopback-datasource-juggler/blob/master/lib/kvao.js)
   - [juggler/kv-memory.js](https://github.com/strongloop/loopback-datasource-juggler/blob/master/connectors/kv-memory.js)
@@ -147,9 +127,7 @@ See the actual content below for detailed examples.
 - GitHub label
   - connector-messaging
 - Owner
-  - TBD
-- Backup
-  - TBD
+  - [Epitome](https://github.com/orgs/strongloop/teams/sq-lb-epitome)
 - Repos
   - [loopback-connector-mqlight](https://github.com/strongloop/loopback-connector-mqlight)
 
@@ -158,12 +136,7 @@ See the actual content below for detailed examples.
 - GitHub label
   - connector-nosql ([list of issues](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+label%3Aconnectors-nosql+org%3Astrongloop))
 - Owner
-  - [0candy](https://github.com/0candy)
-  - [jannyHou](https://github.com/jannyHou)
-  - [superkhau](https://github.com/superkhau)
-- Backup
-  - [loay](https://github.com/loay)
-  - [Amir-61](https://github.com/amir-61)
+  - [Apex](https://github.com/orgs/strongloop/teams/sq-lb-apex)
 - Repos
   - memory connector
   - [loopback-connector-cloudant](https://github.com/strongloop/loopback-connector-cloudant)
@@ -175,9 +148,7 @@ See the actual content below for detailed examples.
 - GitHub label
   - connector-soap
 - Owner
-  - [rashmihunt](https://github.com/rashmihunt)
-- Backup
-  - [deepakrkris](https://github.com/deepakrkris)
+  - [Asteroid](https://github.com/orgs/strongloop/teams/sq-lb-asteroid)
 - Repos
   - [loopback-connector-soap](https://github.com/strongloop/loopback-connector-soap)
   - [strong-soap](https://github.com/strongloop/strong-soap)
@@ -187,14 +158,7 @@ See the actual content below for detailed examples.
 - GitHub label
   - connector-sql ([list of issues](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+label%3Aconnectors-sql+org%3Astrongloop))
 - Owner
-  - [0candy](https://github.com/0candy)
-  - [deepakrkris](https://github.com/deepakrkris)
-  - [jannyHou](https://github.com/jannyHou)
-  - [loay](https://github.com/loay)
-  - [qpresley](https://github.com/qpresley)
-  - [superkhau](https://github.com/superkhau)
-- Backup
-  - [Amir-61](https://github.com/amir-61)
+  - [Apex](https://github.com/orgs/strongloop/teams/sq-lb-apex)
 - Repos
   - [loopback-connector](https://github.com/strongloop/loopback-connector)
   - [loopback-connector-dashdb](https://github.com/strongloop/loopback-connector-dashdb)
@@ -217,10 +181,7 @@ See the actual content below for detailed examples.
 - GitHub label
   - juggler-composition ([list of issues](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+label%3Ajuggler-composition+org%3Astrongloop))
 - Owner
-  - [Amir-61](https://github.com/amir-61)
-  - TBD
-- Backup
-  - [superkhau](https://github.com/superkhau)
+  - [Apex](https://github.com/orgs/strongloop/teams/sq-lb-apex)
 - Repos
   - [juggler/mixins.js](https://github.com/strongloop/loopback-datasource-juggler/blob/master/lib/mixins.js)
   - [loopback-example-mixins](https://github.com/strongloop/loopback-example-mixins)
@@ -230,10 +191,7 @@ See the actual content below for detailed examples.
 - GitHub label
   - juggler-model-definition ([list of issues](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+label%3Ajuggler-model-definition+org%3Astrongloop))
 - Owner
-  - [gunjpan](https://github.com/gunjpan)
-  - [superkhau](https://github.com/superkhau)
-- Backup
-  - [0candy](https://github.com/0candy)
+  - [Apex](https://github.com/orgs/strongloop/teams/sq-lb-apex)
 - Repos
   - [juggler/model-definition.js](https://github.com/strongloop/loopback-datasource-juggler/blob/master/lib/model-definition.js)
   - [loopback-model](https://github.com/strongloop/loopback-model)
@@ -243,10 +201,7 @@ See the actual content below for detailed examples.
 - GitHub Label
   - juggler-dao ([list of issues](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+label%3Ajuggler-dao+org%3Astrongloop))
 - Owner
-  - [Amir-61](https://github.com/amir-61)
-  - [superkhau](https://github.com/superkhau)
-- Backup
-  - [loay](https://github.com/loay)
+  - [Apex](https://github.com/orgs/strongloop/teams/sq-lb-apex)
 - Repos
   - [juggler/dao.js](https://github.com/strongloop/loopback-datasource-juggler/blob/master/lib/dao.js)
   - [loopback-filters](https://github.com/strongloop/loopback-filters)
@@ -257,10 +212,7 @@ See the actual content below for detailed examples.
 - GitHub label
   - juggler-relations ([list of issues](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+label%3Ajuggler-relations+org%3Astrongloop))
 - Owner
-  - [jannyHou](https://github.com/jannyHou)
-- Backup
-  - [Amir-61](https://github.com/amir-61)
-  - [superkhau](https://github.com/superkhau)
+  - [Apex](https://github.com/orgs/strongloop/teams/sq-lb-apex)
 - Repos
   - [juggler/relation.js](https://github.com/strongloop/loopback-datasource-juggler/blob/master/lib/relation.js)
   - [juggler/relation-definition.js](https://github.com/strongloop/loopback-datasource-juggler/blob/master/lib/relation-definition.js)
@@ -271,10 +223,7 @@ See the actual content below for detailed examples.
 - GitHub label
   - juggler-validation ([list of issues](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+label%3Ajuggler-validation+org%3Astrongloop))
 - Owner
-  - [Amir-61](https://github.com/amir-61)
-- Backup
-  - [davidcheung](https://github.com/davidcheung)
-  - [superkhau](https://github.com/superkhau)
+  - [Apex](https://github.com/orgs/strongloop/teams/sq-lb-apex)
 - Repos
   - [juggler/validation.js](https://github.com/strongloop/loopback-datasource-juggler/blob/master/lib/validation.js)
 
@@ -285,9 +234,7 @@ See the actual content below for detailed examples.
 - GitHub label
   - loopback-auth ([list of issues](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+label%3Aloopback-auth+org%3Astrongloop))
 - Owner
-  - [loay](https://github.com/loay)
-- Backup
-  - TBD
+  - [Epitome](https://github.com/orgs/strongloop/teams/sq-lb-epitome)
 - Repos
   - [loopback-component-oauth2](https://github.com/strongloop/loopback-component-oauth2)
   - [loopback-example-access-control](https://github.com/strongloop/loopback-example-access-control)
@@ -300,9 +247,7 @@ See the actual content below for detailed examples.
 - GitHub Label
   - glue
 - Owner
-  - TBD
-- Backup
-  - TBD
+  - [Asteroid](https://github.com/orgs/strongloop/teams/sq-lb-asteroid)
 - Repos
   - TBD
 
@@ -311,9 +256,7 @@ See the actual content below for detailed examples.
 - GitHub label
   - logging
 - Owner
-  - [davidcheung](https://github.com/davidcheung)
-- Backup
-  - TBD
+  - [Epitome](https://github.com/orgs/strongloop/teams/sq-lb-epitome)
 - Repos
   - [loopback-logger](https://github.com/strongloop/loopback-logger)
 
@@ -322,9 +265,7 @@ See the actual content below for detailed examples.
 - GitHub label
   - multitenancy ([list of issues](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+label%3Amultitenancy+org%3Astrongloop))
 - Owner
-  - [superkhau](https://github.com/superkhau)
-- Backup
-  - TBD
+  - [Asteroid](https://github.com/orgs/strongloop/teams/sq-lb-asteroid)
 - Repos
   - [loopback-multitenancy](https://github.com/strongloop/loopback-multitenancy)
   - [loopback-multitenant-poc](https://github.com/strongloop/loopback-multitenant-poc)
@@ -334,10 +275,7 @@ See the actual content below for detailed examples.
 - GitHub label
   - loopback-registry ([list of issues](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+label%3Aloopback-registry+org%3Astrongloop))
 - Owner
-  - [davidcheung](https://github.com/davidcheung)
-  - [deepakrkris](https://github.com/deepakrkris)
-- Backup
-  - [gunjpan](https://github.com/gunjpan)
+  - [Epitome](https://github.com/orgs/strongloop/teams/sq-lb-epitome)
 - Repos
   - [loopback/loopback.js](https://github.com/strongloop/loopback/blob/master/lib/loopback.js)
   - [loopback-getting-started](https://github.com/strongloop/loopback-getting-started)
@@ -348,11 +286,7 @@ See the actual content below for detailed examples.
 - GitHub label
   -  remoting ([list of issues](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+label%3Aremoting+org%3Astrongloop))
 - Owner
-  - [gunjpan](https://github.com/gunjpan)
-  - [deepakrkris](https://github.com/deepakrkris)
-- Backup
-  - [0candy](https://github.com/0candy)
-  - [davidcheung](https://github.com/davidcheung)
+  - [Epitome](https://github.com/orgs/strongloop/teams/sq-lb-epitome)
 - Repos
   - [loopback/server-app.js](https://github.com/strongloop/loopback/blob/master/lib/server-app.js)
   - [loopback-example-offline-sync](https://github.com/strongloop/loopback-example-offline-sync)
@@ -366,9 +300,7 @@ See the actual content below for detailed examples.
 - GitHub label
   - sdk-android ([list of issues](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+label%3Asdk-android+org%3Astrongloop))
 - Owner
-  - [loay](https://github.com/loay)
-- Backup
-  - [superkhau](https://github.com/superkhau)
+  - [Epitome](https://github.com/orgs/strongloop/teams/sq-lb-epitome)
 - Repos
   - [loopback-android-getting-started](https://github.com/strongloop/loopback-android-getting-started)
   - [loopback-sdk-android](https://github.com/strongloop/loopback-sdk-android)
@@ -378,9 +310,7 @@ See the actual content below for detailed examples.
 - GitHub label
   - sdk-angular ([list of issues](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+label%3Asdk-angular+org%3Astrongloop))
 - Owner
-  - [davidcheung](https://github.com/davidcheung)
-- Backup
-  - [0candy](https://github.com/0candy)
+  - [Epitome](https://github.com/orgs/strongloop/teams/sq-lb-epitome)
 - Repos
   - [angular-live-set](https://github.com/strongloop/angular-live-set)
   - [grunt-loopback-sdk-angular](https://github.com/strongloop/grunt-loopback-sdk-angular)
@@ -395,9 +325,7 @@ See the actual content below for detailed examples.
 - GitHub label
   - sdk-ios ([list of issues](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+label%3Asdk-ios+org%3Astrongloop))
 - Owner
-  - [gunjpan](https://github.com/gunjpan)
-- Backup
-  - [jannyHou](https://github.com/jannyHou)
+  - [Epitome](https://github.com/orgs/strongloop/teams/sq-lb-epitome)
 - Repos
   - [loopback-sdk-ios](https://github.com/strongloop/loopback-sdk-ios)
   - [loopback-sdk-ios-codegen](https://github.com/strongloop/loopback-sdk-ios-codegen)
@@ -408,11 +336,7 @@ See the actual content below for detailed examples.
 - GitHub label
   - workspace-generators ([list of issues](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+label%3Aworkspace-generator+org%3Astrongloop))
 - Owner
-  - [0candy](https://github.com/0candy)
-  - [deepakrkris](https://github.com/deepakrkris)
-  - [jannyHou](https://github.com/jannyHou)
-- Backup
-  - [rashmihunt](https://github.com/rashmihunt)
+  - [Asteroid](https://github.com/orgs/strongloop/teams/sq-lb-asteroid)
 - Repos
   - [generator-loopback](https://github.com/strongloop/generator-loopback)
   - [loopback-workspace](https://github.com/strongloop/loopback-workspace)
@@ -422,11 +346,9 @@ See the actual content below for detailed examples.
 - GitHub label
   - N/A
 - Owner
-  - [0candy](https://github.com/0candy)
-  - [bajtos](https://github.com/bajtos)
-  - [superkhau](https://github.com/superkhau)
-- Backup
-  - [raymondfeng](https://github.com/raymondfeng)
+  - [Apex](https://github.com/orgs/strongloop/teams/sq-lb-apex)
+  - [Asteroid](https://github.com/orgs/strongloop/teams/sq-lb-asteroid)
+  - [Epitome](https://github.com/orgs/strongloop/teams/sq-lb-epitome)
 - Repos
   - [eslint-config-loopback](https://github.com/strongloop/eslint-config-loopback)
   - [loopback-knowledge-base](https://github.com/strongloop-internal/loopback-knowledge-base)
