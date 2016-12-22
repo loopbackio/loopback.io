@@ -297,7 +297,7 @@ new model instance.  Instead, use  `[PersistedModel.create()](http://apidocs.str
 To perform a bulk `updateOrCreate()`, use `async.each` or `Promise.all` to
 repeatedly call `updateOrCreate()` for each model instance.
 
-## Add removed User model properties explicitly
+## Explicitly add User model properties that were removed
 
 <!-- Do we think this will be common?  Why would someone use any of these unused properties?
      If uncommon, move this section down in the guide
@@ -330,7 +330,7 @@ in your custom User model JSON file; for example:
 
 ## Check request parameter encoding
 
-As described in the [release notes](Migrating-to-3.0.html#stricter-handling-of-input-arguments),
+As described in the [release notes](3.0-Release-Notes.html#cleanup-in-conversion-and-coercion-of-input-arguments),
 the REST adapter handles input arguments more strictly.  As a result,
 versions 2.x and 3.0 handle certain edge cases differently.
 

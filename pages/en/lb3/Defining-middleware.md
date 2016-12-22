@@ -73,7 +73,8 @@ Always explicitly order the middleware using appropriate phases when order matte
 ### Using Express middleware
 
 {% include note.html content="LoopBack v.3 does not provide convenience methods for Express
-middleware.  For details, see the [Release notes](3.0-Release-Notes.html#removed-getters-for-express-3x-middleware)." %}
+middleware.  For details, see the [Release notes](3.0-Release-Notes.html#removed-getters-for-express-3x-middleware).
+" %}
 
 You can use any middleware compatible with Express; see [Express documentation](http://expressjs.com/resources/middleware.html) for a partial list.
 
@@ -105,8 +106,8 @@ function myMiddlewareFunc([err,] req, res, next) {
 <table>
   <tbody>
     <tr>
-      <th>Name</th>
-      <th>Type</th>
+      <th width="60">Name</th>
+      <th width="100">Type</th>
       <th>Optional?</th>
       <th>Description</th>
     </tr>

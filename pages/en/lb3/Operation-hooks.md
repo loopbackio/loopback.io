@@ -3,7 +3,8 @@ title: "Operation hooks"
 redirect_from:
 - /doc/en/lb3/Operation-hooks-version-3.0.html
 lang: en
-layout: page
+layout: navgroup
+navgroup: app-logic
 keywords: LoopBack
 tags: [application_logic]
 sidebar: lb3_sidebar
@@ -11,23 +12,11 @@ permalink: /doc/en/lb3/Operation-hooks.html
 summary: Operation hooks are triggered by all methods that execute a particular high-level create, read, update, or delete operation. Numerous changes were made to operation hooks in LoopBack version 3.0.
 ---
 
-{% include see-also.html content="
-* [Remote methods](Remote-methods.html)
-* [Remote hooks](Remote-hooks.html)
-* [Model hooks](Model-hooks.html)
-* [Connector hooks](Connector-hooks.html)
-* [Tutorial: Adding application logic](Tutorial-Adding-application-logic.html)
-" %}
-
 ## Overview
 
 _Operation hooks_ are not tied to a particular method, but rather are triggered from all methods that execute a particular high-level create, read, update, or delete operation.
 These are all methods of [PersistedModel](https://apidocs.strongloop.com/loopback/#persistedmodel) that application models inherit.
 Using operation hooks enables you to intercept actions that modify data independent of the specific method that invokes them (for example, `create`, `save`, or `updateOrCreate`).
-
-{% include note.html content="
-In general, use operation hooks instead of deprecated [model hooks](Model-hooks.html) to do something when a model performs a specific operation.
-" %}
 
 The API is simple: the method `Model.observe(_name_, _observer_)`, where _`name`_ is the string name of the operation hook, for example "before save",
 and _`observer`_ is `function observer(context, callback)`. Child models inherit observers, and you can register multiple observers for a hook.
@@ -38,23 +27,22 @@ and _`observer`_ is `function observer(context, callback)`. Child models inher
   <tbody>
     <tr>
       <th>
-        <p><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span>Method&nbsp;→<br>&nbsp;</p>
+        <p>Method&nbsp;→<br>&nbsp;</p>
         <p>Operation hook ↓</p>
       </th>
-      <th>find<br><span>findOne</span><br><span>findById</span>&nbsp;</th>
+      <th>find<br>findOne<br>findById</th>
       <th>exists</th>
       <th>count</th>
       <th>create</th>
       <th>upsert</th>
       <th>findOrCreate</th>
-      <th>deleteAll<br>deleteById&nbsp;</th>
+      <th>deleteAll<br>deleteById </th>
       <th>updateAll</th>
       <th>prototype<br>.save</th>
       <th>prototype<br>.delete</th>
       <th>prototype<br>.updateAttributes</th>
       <th>
-        <span style="color: rgb(26,85,51);">prototype</span><br><span style="color: rgb(26,85,51);">.replaceAttributes</span>
-        <p>&nbsp;</p>
+        prototype<br>.replaceAttributes
       </th>
       <th>replaceById</th>
       <th>replaceOrCreate</th>
@@ -75,8 +63,8 @@ and _`observer`_ is `function observer(context, callback)`. Child models inher
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td><span>X</span></td>
-      <td><span>X</span></td>
+      <td>X</td>
+      <td>X</td>
     </tr>
     <tr>
       <th>before save</th>
@@ -91,10 +79,10 @@ and _`observer`_ is `function observer(context, callback)`. Child models inher
       <td style="text-align: center;">X</td>
       <td>&nbsp;</td>
       <td style="text-align: center;">X</td>
-      <td><span>X</span></td>
       <td>X</td>
-      <td><span>X</span></td>
-      <td><span>X</span></td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
     </tr>
     <tr>
       <th>after save</th>
@@ -109,10 +97,10 @@ and _`observer`_ is `function observer(context, callback)`. Child models inher
       <td style="text-align: center;">X</td>
       <td>&nbsp;</td>
       <td style="text-align: center;">X</td>
-      <td><span>X</span></td>
       <td>X</td>
-      <td><span>X</span></td>
-      <td><span>X</span></td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
     </tr>
     <tr>
       <th>before delete</th>
@@ -163,10 +151,10 @@ and _`observer`_ is `function observer(context, callback)`. Child models inher
       <td style="text-align: center;">X</td>
       <td>&nbsp;</td>
       <td style="text-align: center;">X</td>
-      <td><span>X</span></td>
       <td>X</td>
-      <td><span>X</span></td>
-      <td><span>X</span></td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
     </tr>
     <tr>
       <th>persist</th>
@@ -181,7 +169,7 @@ and _`observer`_ is `function observer(context, callback)`. Child models inher
       <td style="text-align: center;">X</td>
       <td>&nbsp;</td>
       <td style="text-align: center;">X</td>
-      <td><span>X</span></td>
+      <td>X</td>
       <td>X</td>
       <td>X</td>
       <td>X</td>
@@ -319,71 +307,71 @@ However, depending on the operation, this instance is provided either as modifia
       <td><code>ctx.currentInstance</code></td>
       <td><code>ctx.instance</code></td>
       <td style="text-align: center;">---</td>
-      <td style="text-align: center;"><span>---</span></td>
+      <td style="text-align: center;">---</span></td>
     </tr>
     <tr>
       <td><code>findOrCreate</code></td>
       <td><code>ctx.instance</code></td>
       <td><code>ctx.currentInstance</code></td>
       <td><code>ctx.instance</code></td>
-      <td style="text-align: center;"><span>---</span></td>
-      <td style="text-align: center;"><span>---</span></td>
+      <td style="text-align: center;">---</td>
+      <td style="text-align: center;">---</td>
     </tr>
     <tr>
       <td><code>updateOrCreate</code></td>
       <td><em>n/a*</em></td>
       <td><code>ctx.currentInstance</code></td>
       <td><code>ctx.instance</code></td>
-      <td style="text-align: center;"><span>---</span></td>
-      <td style="text-align: center;"><span>---</span></td>
+      <td style="text-align: center;">---</td>
+      <td style="text-align: center;">---</td>
     </tr>
     <tr>
       <td><code>upsertWithWhere</code></td>
       <td><em>n/a*</em></td>
       <td><code>ctx.currentInstance</code></td>
       <td><code>ctx.instance</code></td>
-      <td style="text-align: center;"><span>---</span></td>
-      <td style="text-align: center;"><span>---</span></td>
+      <td style="text-align: center;">---</td>
+      <td style="text-align: center;">---</td>
     </tr>
     <tr>
       <td><code>updateAll</code></td>
       <td><em>n/a</em></td>
       <td><em>n/a</em></td>
       <td><em>n/a</em></td>
-      <td style="text-align: center;"><span>---</span></td>
-      <td style="text-align: center;"><span>---</span></td>
+      <td style="text-align: center;">---</td>
+      <td style="text-align: center;">---</td>
     </tr>
     <tr>
       <td><code>prototype.save</code></td>
       <td><code>ctx.instance</code></td>
       <td><code>ctx.currentInstance</code></td>
       <td><code>ctx.instance</code></td>
-      <td style="text-align: center;"><span>---</span></td>
-      <td style="text-align: center;"><span>---</span></td>
+      <td style="text-align: center;">---</td>
+      <td style="text-align: center;">---</td>
     </tr>
     <tr>
       <td><code>prototype.updateAttributes</code></td>
       <td><code><span>ctx.currentInstance</span></code></td>
       <td><code><span>ctx.currentInstance</span></code></td>
       <td><code><span>ctx.instance</span></code></td>
-      <td style="text-align: center;"><span>---</span></td>
-      <td style="text-align: center;"><span>---</span></td>
+      <td style="text-align: center;">---</td>
+      <td style="text-align: center;">---</td>
     </tr>
     <tr>
       <td>
         <p><code>prototype.delete</code></p>
       </td>
-      <td style="text-align: center;"><span>---</span></td>
-      <td style="text-align: center;"><span>---</span></td>
-      <td style="text-align: center;"><span>---</span></td>
+      <td style="text-align: center;">---</td>
+      <td style="text-align: center;">---</td>
+      <td style="text-align: center;">---</td>
       <td><code><span>ctx.where.id</span></code></td>
       <td><code><span>ctx.where.id</span></code></td>
     </tr>
     <tr>
       <td><code>deleteAll</code></td>
-      <td style="text-align: center;"><span>---</span></td>
-      <td style="text-align: center;"><span>---</span></td>
-      <td style="text-align: center;"><span>---</span></td>
+      <td style="text-align: center;">---</td>
+      <td style="text-align: center;">---</td>
+      <td style="text-align: center;">---</td>
       <td><em>n/a</em></td>
       <td><em>n/a</em></td>
     </tr>
@@ -393,7 +381,7 @@ However, depending on the operation, this instance is provided either as modifia
       <td><code>ctx.currentInstance</code></td>
       <td><code>ctx.instance</code></td>
       <td>---</td>
-      <td><span>---</span></td>
+      <td>---</td>
     </tr>
     <tr>
       <td>
@@ -403,13 +391,13 @@ However, depending on the operation, this instance is provided either as modifia
       <td><code>ctx.instance</code></td>
       <td><code>ctx.currentInstance</code></td>
       <td><code>ctx.instance</code></td>
-      <td><span>---</span></td>
-      <td><span>---</span></td>
+      <td>---</td>
+      <td>---</td>
     </tr>
   </tbody>
 </table>
 
-(*) The operation `updateOrCreate` and `upsertWithWhere`do not provide any instance in the "before save" hook.
+(&#42;) The operation `updateOrCreate` and `upsertWithWhere`do not provide any instance in the "before save" hook.
 Because we cannot tell in advance whether the operation will result in UPDATE or CREATE, we cannot tell whether there is any existing "currentInstance" affected by the operation.
 
 See the following sections for more details.
@@ -431,12 +419,12 @@ The following table lists hooks that PersistedModel methods invoke.
 <table>
   <tbody>
     <tr>
-      <th>Method name</th>
+      <th width="160">Method name</th>
       <th>Hooks invoked</th>
     </tr>
     <tr>
       <td>
-        <p>all<br>find<br>findOne&nbsp;<br>findById&nbsp;&nbsp;<br>exists<br>count&nbsp;</p>
+        <p>all<br>find<br>findOne <br>findById  <br>exists<br>count </p>
       </td>
       <td>access, loaded</td>
     </tr>
@@ -457,7 +445,7 @@ The following table lists hooks that PersistedModel methods invoke.
       <td>access, before save*, after save*, loaded, persist</td>
     </tr>
     <tr>
-      <td>deleteAll (aka destroyAll)<br>deleteById&nbsp;(aka destroyById)</td>
+      <td>deleteAll (destroyAll)<br>deleteById (destroyById)</td>
       <td>access, before delete, after delete</td>
     </tr>
     <tr>
@@ -473,7 +461,7 @@ The following table lists hooks that PersistedModel methods invoke.
       <td>before delete, after delete</td>
     </tr>
     <tr>
-      <td>prototype.updateAttributes</td>
+      <td>prototype.<br/>updateAttributes</td>
       <td>before save, after save, loaded, persist</td>
     </tr>
     <tr>
@@ -481,9 +469,8 @@ The following table lists hooks that PersistedModel methods invoke.
       <td>access, before save, after save, loaded, persist</td>
     </tr>
     <tr>
-      <td>
-        <p>prototype.replaceAttributes</p>
-        <p>replaceById</p>
+      <td>prototype.<br/>replaceAttributes
+        <br/>replaceById<
       </td>
       <td>before save, after save, loaded, persist</td>
     </tr>
@@ -868,7 +855,7 @@ For this hook, `ctx.isNewInstance` is:
 ## afterInitialize hook
 
 {% include important.html content="
-`afterInitialize` is not strictly an operation hook. It is actually the only [model hook](Model-hooks.html) that is not deprecated.
+`afterInitialize` is not strictly an operation hook. It is actually the only [model hook](/doc/en/lb2/Model-hooks.html) that is not deprecated.
 
 It is a synchronous method and does not take a callback function: You do not need to call `next()` after performing your logic in the hook.
 " %}
@@ -892,7 +879,7 @@ such as HTTP requests to the `exists`, `count`, or bulk update REST endpoints.
 
 ## Migration guide
 
-The following table shows which new hook to use for each of the old [model hooks](Model-hooks.html):
+The following table shows which new hook to use for each of the old [model hooks](/doc/en/lb2/Model-hooks.html):
 
 <table>
   <thead>
@@ -904,9 +891,7 @@ The following table shows which new hook to use for each of the old [model hook
   <tbody>
     <tr>
       <td>beforeValidate</td>
-      <td>
-        <p>before save</p>
-      </td>
+      <td>before save</td>
     </tr>
     <tr>
       <td>afterValidate</td>

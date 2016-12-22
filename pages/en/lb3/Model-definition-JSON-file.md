@@ -116,12 +116,12 @@ Properties are required unless otherwise designated.
       <td>
         Specifies whether the model accepts only predefined properties or not. One of:
         <ul>
-          <li><code>true</code>: Only properties defined in the model are accepted. Use if you want to ensure the model accepts only predefined properties.</li>
+          <li><code>true</code>: Only properties defined in the model are accepted. Use if you want to ensure the model accepts only predefined properties.
+          If you try to save a model instance with properties that are not predefined, LoopBack throws a `ValidationError`.
+          </li>
           <li><code>false</code>: The model is an open model and accepts all properties, including ones not predefined in the model.
             This mode is useful to store free-form JSON data to a schema-less database such as MongoDB.
           </li>
-          <li>"validate": The unknown properties will be reported as validation errors.</li>
-          <li>"throw": Throws an exception if properties not defined for the model are used in an operation.</li>
           <li>Undefined: Defaults to false unless the data source is backed by a relational database such as Oracle or MySQL.</li>
         </ul>
       </td>

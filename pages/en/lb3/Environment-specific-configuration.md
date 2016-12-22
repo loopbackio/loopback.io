@@ -97,9 +97,9 @@ module.exports = {
 };
 ```
 
-### Turning off stack traces
+### Ensure stack traces are not returned
 
-By default, stack traces are returned in JSON responses. To turn disable stack traces in JSON responses:
+By default, stack traces are not returned in JSON responses, but if they were enabled for development and debugging, ensure they are turned off for production.
 
 * Set the NODE_ENV environment variable to "production"
 * Include the following in `server/middleware.production.json`:
@@ -107,17 +107,13 @@ By default, stack traces are returned in JSON responses. To turn disable stack t
 {% include code-caption.html content="server/middleware.production.json" %}
 ```javascript
 "final:after": {
-    "loopback#errorHandler": {
-      "params": {
-        "includeStack": false
-      }
-    }
+    "strong-error-handler": {}
   }
 ```
 
 {% include note.html content="
-The [Application generator](Application-generator.html) creates a `middleware.production.json` file
-with the above configuration for you, so all you have to do is set the NODE_ENV environment variable.
+The [Application generator](Application-generator.html) creates a `middleware.developmnet.json` file
+with the above configuration for you, so all you have to do is set the NODE_ENV environment variable is not `development`.
 " %}
 
 ### Disabling API Explorer

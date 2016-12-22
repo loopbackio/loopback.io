@@ -101,9 +101,8 @@ module.exports = function(Book) {
 };
 ```
 
-{% include tip.html content="
-This technique is useful to get a reference to an unrelated model; see [Getting a reference to an unrelated model](#getting-a-reference-to-an-unrelated-model) below."
-%}
+{% include tip.html content="This technique is useful to get a reference to an unrelated model; see [Getting a reference to an unrelated model](#getting-a-reference-to-an-unrelated-model) below.
+" %}
 
 With models, there is a special case. From anywhere except `/common/models/model.js`, you can actually get a reference to `app` through a model using `model.app`.
 
@@ -174,9 +173,8 @@ var app = loopback();
 The app object extends the [Express app object;](http://expressjs.com/4x/api.html#application) it inherits all of its properties and methods,
 as well as all the additional properties and methods of the [LoopBack app object](http://apidocs.strongloop.com/loopback/#var-app-loopback).
 
-{% include important.html content="
-In some places such as boot scripts, `server` is used as the name of this object instead of `app`."
-%}
+{% include important.html content="In some places such as boot scripts, `server` is used as the name of this object instead of `app`.
+" %}
 
 ## Working with model objects
 
@@ -290,5 +288,5 @@ module.exports = function(Book) {
 
 ### Using data source objects
 
-{% include note.html content="This section is still in progress. Thanks for your patience."
-%}
+{% include note.html content="This section is still in progress. Thanks for your patience.
+" %}

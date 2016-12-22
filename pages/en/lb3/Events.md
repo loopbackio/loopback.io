@@ -32,49 +32,6 @@ By default, the basic LoopBack [Model object](http://apidocs.strongloop.com/loop
 
 When you define relations between models, the [RelationMixin object](http://apidocs.strongloop.com/loopback-datasource-juggler/#relationmixin) object also gets mixed in to the model object.
 
-### changed
-
-Emitted after a model has been successfully created, saved, or updated. Argument: `inst`, model instance, object.
-
-For example:
-
-```javascript
-MyModel.on('changed', function(inst) {
-  console.log('model with id %s has been changed', inst.id);
-  // => model with id 1 has been changed
-});
-```
-
-### deleted
-
-Emitted after an individual model has been deleted. Argument: `id`, model ID (number).
-
-For example:
-
-```javascript
-MyModel.on('deleted', function(id) {
-  console.log('model with id %s has been deleted', id);
-  // => model with id 1 has been deleted
-});
-```
-
-### deletedAll
-
-Emitted after an individual model has been deleted. Argument: `where` (optional), where filter, JSON object.
-
-For example:
-
-```javascript
-MyModel.on('deletedAll', function(where) {
-  if (where) {
-    console.log('all models where ', where, ' have been deleted');
-    // => all models where
-    // => {price: {gt: 100}}
-    // => have been deleted
-  }
-});
-```
-
 ### attached
 
 Emitted after a `Model` has been attached to an `app`.

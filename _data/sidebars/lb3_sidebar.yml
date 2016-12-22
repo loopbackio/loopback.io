@@ -484,10 +484,6 @@ children:
       url: /doc/en/lb3/Operation-hooks.html
       output: 'web, pdf'
 
-    - title: 'Model hooks'
-      url: /doc/en/lb3/Model-hooks.html
-      output: 'web, pdf'
-
     - title: 'Connector hooks'
       url: /doc/en/lb3/Connector-hooks.html
       output: 'web, pdf'

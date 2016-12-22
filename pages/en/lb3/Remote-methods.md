@@ -28,7 +28,7 @@ To define a remote method:
 1.  Edit the [Model definition JSON file](Model-definition-JSON-file.html) in `/common/models` directory; for example, to attach a remote method to the Person model, edit `/common/models/person.js`.
 If you created the model with the [Model generator](Model-generator.html), then this file will already exist.
 
-2.  Define a static method that will handle the request.
+2.  Define a method that will handle the request. The method name determines whether a remote method is static or an instance method.  A method name starting with `prototype.` indicates an instance method; otherwise, it's a static method.
 
 3.  Call [`remoteMethod()`](http://apidocs.strongloop.com/loopback/#model-remotemethod), to register the method, calling it with two parameters: 
     - First parameter is a string that is the name of the method you defined in step 2 
@@ -73,8 +73,7 @@ will return:
 
 `Greetings... John!`
 
-{% include note.html content="
-Notice the REST API request above uses the plural form \"people\" instead of \"person\". LoopBack exposes the
+{% include note.html content="Notice the REST API request above uses the plural form \"people\" instead of \"person\". LoopBack exposes the
 [plural form of model names for REST API routes](Exposing-models-over-REST.html#REST-paths).
 " %}
 
@@ -96,47 +95,47 @@ Where:
 
 The options argument is a Javascript object containing key/value pairs to configure the remote method REST endpoint.
 
-{% include important.html content="
-All of the options properties are optional. However, if the remote method requires arguments, you must specify `accepts`; if the remote method returns a value, you must specify `returns`.
+{% include important.html content="All of the options properties are optional. However, if the remote method requires arguments, you must specify `accepts`; if the remote method returns a value, you must specify `returns`.
 " %}
 
-<table>
+<table width="800">
   <thead>
     <tr>
-      <th>Option</th>
+      <th width="50">Option</th>
       <th>Description</th>
-      <th>Example</th>
+      <th width="260">Example</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td>accepts</td>
       <td>
-        <p>Defines arguments that the remote method accepts. These arguments map to the static method you define. For the example above, you can see the function signature:</p>
-        <pre>Person.greet(name, age, callback)...</pre>
-        <p>`name` is the first argument, `age` is the second argument and callback is automatically provided by LoopBack (do not specify it in your `accepts` array). For more info, see <a href="Remote-methods.html#argument-descriptions">Argument descriptions</a>.</p>
-        <p>Default if not provided is the empty array, <code>[]</code>.</p>
+        Defines arguments that the remote method accepts that map to the static method you define. For the example above, the function signature is <pre>Person.greet(name, age, callback)...</pre> so
+        <code>name</code> is the first argument, <code>age</code> is the second argument and callback is automatically provided by LoopBack (do not specify it in your <code>accepts</code> array). For more information, see <a href="Remote-methods.html#argument-descriptions">Argument descriptions</a>.<br/><br/>
+        The default value is the empty array, <code>[ ]</code>.
       </td>
       <td>
-        <pre>{  ...
+        <pre style="font-size: 80%;">{  ...
   accepts: [
-   {arg: 'name', type: 'string'},
-   {arg: 'age', type: 'number'},...],
+   {arg: 'name',
+    type: 'string'},
+   {arg: 'age',
+    type: 'number'}, ...],
   ... }</pre>
       </td>
     </tr>
     <tr>
       <td>description</td>
       <td>
-        <p>Text description of the method, used by API documentation generators such as Swagger.</p>
-        <p>You can put long strings in an array if needed (see note below).</p>
+        Text description of the method, used by API documentation generators such as Swagger.
+        You can put long strings in an array if needed (see note below).
       </td>
       <td> </td>
     </tr>
     <tr>
       <td>http.path</td>
       <td>
-        <p>HTTP path (relative to the model) at which the method is exposed.</p>
+        HTTP path (relative to the model) at which the method is exposed.
       </td>
       <td>
         <pre>http: {path: '/sayhi'}</pre>
@@ -145,7 +144,7 @@ All of the options properties are optional. However, if the remote method requir
     <tr>
       <td>http.verb</td>
       <td>
-        <p>HTTP method (verb) at which the method is available. One of:</p>
+        HTTP method (verb) at which the method is available. One of:
         <ul>
           <li>get</li>
           <li>post (default)</li>
@@ -156,7 +155,8 @@ All of the options properties are optional. However, if the remote method requir
         </ul>
       </td>
       <td>
-     <pre>http: {path: '/sayhi', verb: 'get'}</pre>
+     <pre>http: {path: '/sayhi',
+verb: 'get'}</pre>
       </td>
     </tr>
     <tr>
@@ -174,34 +174,28 @@ All of the options properties are optional. However, if the remote method requir
       </td>
     </tr>
     <tr>
-      <td>isStatic</td>
-      <td>Boolean. Whether the method is static (for example <code>MyModel.myMethod</code>). Use <code>false</code> to define the method on the prototype (for example, <code>MyModel.prototype.myMethod</code>). Default is true.
-      </td>
-      <td> </td>
-    </tr>
-    <tr>
       <td>notes</td>
       <td>
-        <p>Additional notes, used by API documentation generators like Swagger.</p>
-        <p>You can put long strings in an array if needed (see note below).</p>
+        Additional notes, used by API documentation generators like Swagger.
+        You can put long strings in an array if needed (see note below).
       </td>
       <td> </td>
     </tr>
     <tr>
       <td>returns</td>
       <td>
-        <p>Describes the remote method's callback arguments; See <a href="Remote-methods.html#argument-descriptions">Argument descriptions</a>. The <code>err </code>argument is assumed; do not specify.</p>
-        <p>Default if not provided is the empty array,  <code>[]</code>.</p>
+        Describes the remote method's callback arguments; See <a href="Remote-methods.html#argument-descriptions">Argument descriptions</a>. The <code>err </code>argument is assumed; do not specify.
+        Default if not provided is the empty array,  <code>[]</code>.
       </td>
       <td>
-        <pre>returns: {arg: 'greeting', type: 'string'}</pre>
+        <pre>returns: {arg: 'greeting',
+type: 'string'}</pre>
       </td>
     </tr>
   </tbody>
 </table>
 
-{% include important.html content="
-You can split long strings in the `description` and `notes` options into arrays of strings (lines) to keep line lengths manageable. For example:
+{% include tip.html content="You can split long strings in the `description` and `notes` options into arrays of strings (lines) to keep line lengths manageable. For example:
 
 ```javascript
 [
@@ -221,7 +215,7 @@ The following table describes the properties of each individual argument.
   <tbody>
     <tr>
       <th>Property (key)</th>
-      <th>Type</th>
+      <th width="100">Type</th>
       <th>Description</th>
     </tr>
     <tr>
@@ -233,11 +227,8 @@ The following table describes the properties of each individual argument.
       <td>description</td>
       <td>String or Array</td>
       <td>
-        <p>A text description of the argument. This is used by API documentation generators like Swagger.</p>
-        <p>You can split long descriptions into arrays of strings (lines) to keep line lengths manageable.</p>
-        <pre>[<br> "Lorem ipsum dolor sit amet, consectetur adipiscing elit,"<br>
-      "sed do eiusmod tempor incididunt ut labore et dolore",<br> "magna aliqua."
-      <br>] </pre>
+        A text description of the argument. This is used by API documentation generators like Swagger.
+        You can put long strings in an array if needed (see note above).
       </td>
     </tr>
     <tr>
@@ -249,7 +240,7 @@ The following table describes the properties of each individual argument.
       <td>http.target</td>
       <td>String</td>
       <td>
-        <p>Map the callback argument value to the HTTP response object. The following values are supported.</p>
+        Map the callback argument value to the HTTP response object. The following values are supported.
         <ul>
           <li><code>status</code> sets the <code>res.statusCode</code> to the provided value</li>
           <li><code>header</code> sets the <code>http.header</code> or <code>arg</code> named header to the value</li>
@@ -321,7 +312,6 @@ module.exports = function(MyModel) {
   };
 
   MyModel.remoteMethod('download', {
-    isStatic: true,
     returns: [
       {arg: 'body', type: 'file', root: true},
       {arg: 'Content-Type', type: 'string', http: { target: 'header' }}
@@ -356,8 +346,8 @@ To use the first way to specify HTTP mapping for input parameters, provide an ob
     <tr>
       <td>form<br>query<br>path </td>
       <td>
-        <p>The value is looked up using <code>req.param</code>, which searches route arguments, the request body and the query string.</p>
-        <p>Note that <code>query</code> and <code>path</code> are aliases for <code>form</code>.</p>
+        The value is looked up using <code>req.param</code>, which searches route arguments, the request body and the query string.
+        Note that <code>query</code> and <code>path</code> are aliases for <code>form</code>.
       </td>
     </tr>
     <tr>
@@ -466,19 +456,18 @@ So a GET request to `http://localhost:3000/api/people/sayhi?msg=LoopBack%20deve
   <p><strong>Extending a model</strong></p>
   <p>Add default functions for properties</p>
 
-    <div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>common/models/order.js</b></div>
-    <pre class="theme: Emacs; brush: js; gutter: false" style="font-size:12px;">module.exports = function(Order) {
+<b>common/models/order.js</b>
+    <pre>module.exports = function(Order) {
   Order.definition.rawProperties.created.default = function() {
     return new Date();
   };
   Order.definition.rebuild(true);
-}</pre></div>
-  </div>
-  <p>Add custom methods</p>
-  <p> </p>
+}</pre>
 
-    <div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>common/models/customer.js</b></div>
-    <pre class="theme: Emacs; brush: js; gutter: false" style="font-size:12px;">module.exports = function(Customer) {
+  <p>Add custom methods</p>
+
+  <b>common/models/customer.js</b>
+    <pre>module.exports = function(Customer) {
   Customer.prototype.getFullName = function() {
     return this.firstName - ' ' - this.lastName;
   };
@@ -486,8 +475,7 @@ So a GET request to `http://localhost:3000/api/people/sayhi?msg=LoopBack%20deve
   Customer.listVips = function(cb) {
     this.find({where: {vip: true}}, cb);
   }
-} </pre></div>
-  </div>
+} </pre>
 </div>
 
 ## Adding ACLs to remote methods
@@ -577,3 +565,10 @@ module.exports = function(app) {
   });
 };
 ```
+
+## Disabling a remote method
+
+To disable a remote method use `Model.disableRemoteMethod(name, isStatic)` and `Model.disableRemoteMethodByName(name)`.  For more information, see:
+
+- [Model.disableRemoteMethod](http://apidocs.strongloop.com/loopback/#model-disableremotemethod)
+- [Model.disableRemoteMethodByName](http://apidocs.strongloop.com/loopback/#model-disableremotemethodbyname)

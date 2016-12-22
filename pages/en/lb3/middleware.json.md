@@ -48,7 +48,7 @@ Here is the default version created by the [Application generator](Application-g
     "loopback#urlNotFound": {}
   },
   "final:after": {
-    "loopback#errorHandler": {}
+    "strong-error-handler": {}
   }
 }
 ```

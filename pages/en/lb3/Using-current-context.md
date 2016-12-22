@@ -10,16 +10,6 @@ permalink: /doc/en/lb3/Using-current-context.html
 summary:
 ---
 
-**See also**: [Example in LoopBack repository](https://github.com/strongloop/loopback/blob/master/example/context/app.js).
-
-LoopBack applications sometimes need to access context information to implement the business logic, for example to:
-
-* Access the currently logged-in user.
-* Access the HTTP request (such as URL and headers).
-
-A typical request to invoke a LoopBack model method travels through multiple layers with chains of asynchronous callbacks.
-It's not always possible to pass all the information through method parameters. 
-
 {% include warning.html content="Using the current context feature is not recommended!
 
 The current implementation of loopback-context is based on the module [continuation-local-storage](https://www.npmjs.com/package/continuation-local-storage) 
@@ -30,15 +20,29 @@ As a result, loopback-context does not work in many situations, as can be seen f
 See [loopback issue #1495](https://github.com/strongloop/loopback/issues/1495) updates and an alternative solution.
 " %}
 
-## Fixing deprecation warnings
+LoopBack applications sometimes need to access context information to implement the business logic, for example to:
 
-All context-related LoopBack APIs are deprecated starting with version 2.30.0.
-After upgrading an existing application to a recent LoopBack version, you will see the following deprecation warning:
+* Access the currently logged-in user.
+* Access the HTTP request (such as URL and headers).
+
+A typical request to invoke a LoopBack model method travels through multiple layers with chains of asynchronous callbacks. It's not always possible to pass all the information through method parameters. 
+
+**See also**: [Example in LoopBack repository](https://github.com/strongloop/loopback/blob/master/example/context/app.js).
+
+## Error messages
+
+LoopBack 3.0 [removed current-context APIs](3.0-Release-Notes.html#current-context-api-and-middleware-removed).
+An application that uses current-context will print the following error message
+when it receives its first HTTP request:
 
 ```
-loopback deprecated loopback#context middleware is deprecated.
-See https://loopback.io/doc/en/lb3/Using-current-context.html for more details.
-node_modules/loopback/server/middleware/rest.js:60:32
+Unhandled error for request GET /api/Users:
+Error: remoting.context option was removed in version 3.0.
+For more information, see https://loopback.io/doc/en/lb3/Using-current-context.html
+for more details.
+    at restApiHandler (.../node_modules/loopback/server/middleware/rest.js:44:15)
+    at Layer.handle [as handle_request] (.../node_modules/express/lib/router/layer.js:95:5)
+    ...
 ```
 
 To remove this warning, disable the context middleware added by the built-in REST handler. Set the `remoting.context` property in `server/config.json` to **false**; for example:
@@ -48,19 +52,21 @@ To remove this warning, disable the context middleware added by the built-in RES
 {
   "remoting": {
     "context": false,
-    // etc.
+    ...
   },
-  // etc.
+  ...
 }
 ```
 
-If your application relies on `loopback.getCurrentContext`, then you should rework your code to use `loopback-context` directly, per the following instructions.
+If your application relies on `loopback.getCurrentContext`, rework your code to use `loopback-context` directly, per the following instructions.
 
 ## Install loopback-context
 
 Add `loopback-context` to your project dependencies
 
-`$ npm install --save loopback-context`
+```
+$ npm install --save loopback-context
+```
 
 ## Configure context propagation
 
@@ -75,11 +81,7 @@ To setup your LoopBack application to create a new context for each incoming HTT
 }
 ```
 
-{% include important.html content="
-
-By default, the HTTP req/res objects are not set onto the current context.
-You need to set `enableHttpContext` to true to enable automatic population of req/res objects.
-
+{% include important.html content="By default, the HTTP req/res objects are not set onto the current context. You need to set `enableHttpContext` to true to enable automatic population of req/res objects.
 " %}
 
 ## Use the current context

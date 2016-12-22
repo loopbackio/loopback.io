@@ -13,6 +13,8 @@ This is the main application script in the standard scaffolded application, as c
 the [application generator](Application-generator.html).
 
 ```javascript
+'use strict';
+
 var loopback = require('loopback');
 var boot = require('loopback-boot');
 var app = module.exports = loopback();
