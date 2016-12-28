@@ -61,5 +61,5 @@ module.exports = function(app) {
       console.log('Found: ', u2.toObject());
     });
   });
-});
+};
 ```
