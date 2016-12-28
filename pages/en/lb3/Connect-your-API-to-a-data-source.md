@@ -97,14 +97,15 @@ When the tool prompts you to install the connector, hit **Enter** to make the to
     "connector": "memory"
   },
   "mysqlDs": {
-    "name": "mysqlDs",
-    "connector": "mysql",
-    "host": "demo.strongloop.com",
-    "port": 3306,
-    "database": "getting_started",
-    "username": "demo",
-    "password": "L00pBack"
-  }
+      "host": "demo.strongloop.com",
+      "port": 3306,
+      "url": "",
+      "database": "getting_started",
+      "password": "L00pBack",
+      "name": "mysqlDs",
+      "user": "demo",
+      "connector": "mysql"
+    }
 }
 ```
 
