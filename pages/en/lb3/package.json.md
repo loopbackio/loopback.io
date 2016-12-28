@@ -22,25 +22,30 @@ For example:
   "version": "1.0.0",
   "main": "server/server.js",
   "scripts": {
+    "lint": "eslint .",
     "start": "node .",
-    "pretest": "jshint ."
+    "posttest": "npm run lint && nsp check"
   },
   "dependencies": {
     "compression": "^1.0.3",
     "cors": "^2.5.2",
-    "loopback": "^2.22.0",
+    "helmet": "^1.3.0",
     "loopback-boot": "^2.6.5",
-    "loopback-component-explorer": "^2.1.0",
-    "loopback-datasource-juggler": "^2.39.0",
-    "serve-favicon": "^2.0.1"
+    "serve-favicon": "^2.0.1",
+    "strong-error-handler": "^1.0.1",
+    "loopback-component-explorer": "^4.0.0",
+    "loopback": "^3.0.0"
   },
   "devDependencies": {
-    "jshint": "^2.5.6"
+    "eslint": "^2.13.1",
+    "eslint-config-loopback": "^4.0.0",
+    "nsp": "^2.1.0"
   },
   "repository": {
     "type": "",
     "url": ""
   },
+  "license": "UNLICENSED",
   "description": "myapp"
 }
 ```
