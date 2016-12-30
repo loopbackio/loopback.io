@@ -9,6 +9,7 @@ permalink: /doc/en/lb3/Tutorials-and-examples.html
 summary: There are many LoopBack example apps and tutorials.
 redirect_from:
 - /example-apps/
+- /tutorials/
 ---
 ## Tutorials
 
@@ -22,7 +23,7 @@ In general, these tutorials are intended to be followed in order.
       <th style="width: 260px;">Name</th>
       <th style="width: 300px;">Description</th>
     </tr>
-    </thead>    
+    </thead>
     <tbody>
     <tr>
       <td>1</td>
