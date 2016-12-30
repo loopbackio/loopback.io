@@ -13,12 +13,10 @@ summary: A remote method is a static method of a model, exposed over a custom R
 ---
 ## Overview
 
-A _remote method_ is a static method of a model, exposed over a custom REST endpoint.
+A _remote method_ is a method of a model, exposed over a custom REST endpoint.
 Use a remote method to perform operations not provided by LoopBack's [standard model REST API](PersistedModel-REST-API.html).
 
-{% include note.html content="The easiest way to define a remote method is by using the command-line [remote method generator](Remote-method-generator.html).
-
-For an introductory example of defining a remote method, see [Extend your API](Extend-your-API.html) in Getting Started.
+{% include note.html content="The easiest way to define a remote method is by using the command-line [remote method generator](Remote-method-generator.html).  For an introductory example of defining a remote method, see [Extend your API](Extend-your-API.html) in Getting Started.
 " %}
 
 ## How to define a remote method
@@ -28,13 +26,13 @@ To define a remote method:
 1.  Edit the [Model definition JSON file](Model-definition-JSON-file.html) in `/common/models` directory; for example, to attach a remote method to the Person model, edit `/common/models/person.js`.
 If you created the model with the [Model generator](Model-generator.html), then this file will already exist.
 
-2.  Define a method that will handle the request. The method name determines whether a remote method is static or an instance method.  A method name starting with `prototype.` indicates an instance method; otherwise, it's a static method.
+2.  Define a method that will handle the request. The method name determines whether a remote method is static or an instance method.  A method name starting with `prototype.` indicates an instance method; otherwise, it's a static method. **NOTE**: By default, a remote method is static.  You must specify `prototype.` in the method name to create an instance method.
 
 3.  Call [`remoteMethod()`](http://apidocs.strongloop.com/loopback/#model-remotemethod), to register the method, calling it with two parameters: 
     - First parameter is a string that is the name of the method you defined in step 2 
     - Second (optional) parameter provides additional configuration for the REST endpoint.
 
-{% include important.html content="The LoopBack [model generator](Model-generator.html) automatically converts camel-case model names (for example MyModel) to lowercase dashed names (my-model).
+{% include tip.html content="The LoopBack [model generator](Model-generator.html) automatically converts camel-case model names (for example MyModel) to lowercase dashed names (my-model).
 For example, if you create a model named \"FooBar\" with the model generator, it creates files `foo-bar.json` and `foo-bar.js` in `common/models`. 
 However, the model name (\"FooBar\") will be preserved via the model's name property.
 " %} 

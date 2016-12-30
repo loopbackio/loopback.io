@@ -168,8 +168,8 @@ to LoopBack, or remove the unknown mixin from your model definition.
 ### Update remote method definitions
 
 In version 3.0, the `isStatic` property no longer indicates that a remote method is static.
-Rather if the method name starts with `prototype.` then it an instance method, otherwise
-it is a static method.
+Rather if the method name starts with `prototype.` then the remote method is an instance method,
+otherwise (by default) it's a static method.
 
 As a result, you may see many deprecation warnings after upgrading to 3.0.  To eliminate these:
 
@@ -184,7 +184,7 @@ For example, in `common/models/my-model.json`.
 {
   "methods": {
     "staticMethod": {
-      "isStatic": true,
+      "isStatic": true, 
       "http": { "path": "/static" }
     },
     "instanceMethod": {

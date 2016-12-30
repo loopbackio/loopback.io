@@ -37,7 +37,7 @@ To connect a model to a data source, follow these steps:
     ```
     </div>    
 
-    ```shell
+    ```
     $ slc loopback:datasource
     ? Enter the data-source name: mysql-corp
     ? Select the connector for mysql: MySQL (supported by StrongLoop)
@@ -75,23 +75,11 @@ To connect a model to a data source, follow these steps:
     $ npm install --save loopback-connector-mysql
     ```
 
-    See [Connectors reference](Connectors-reference). for the list of connectors.
+    See [Connectors reference](Connectors-reference) for the list of connectors.
 
 4.  Use the [model generator](Using-the-model-generator.html) to create a model.
-<div id="lb3apic" class="sl-hidden" markdown="1">
 
-    ```shell
-    $ apic create --type model
-    ? Enter the model name: myModel
-    ? Select the data-source to attach myModel to: mysql (mysql)
-    ? Select model's base class: PersistedModel
-    ? Expose myModel via the REST API? Yes
-    ? Custom plural form (used to build REST URL):
-    Let's add some test2 properties now.
-    ...
     ```
-</div>
-    ```shell
     $ slc loopback:model
     ? Enter the model name: myModel
     ? Select the data-source to attach myModel to: mysql (mysql)
@@ -101,7 +89,18 @@ To connect a model to a data source, follow these steps:
     Let's add some test2 properties now.
     ...
     ```
-
+    <div id="lb3apic" class="sl-hidden" markdown="1">
+        ```shell
+        $ apic create --type model
+        ? Enter the model name: myModel
+        ? Select the data-source to attach myModel to: mysql (mysql)
+        ? Select model's base class: PersistedModel
+        ? Expose myModel via the REST API? Yes
+        ? Custom plural form (used to build REST URL):
+        Let's add some test2 properties now.
+        ...
+        ```
+    </div>
     When prompted for the data source to attach to, select the one you just created. 
 
 {% include note.html content="The model generator lists the [memory connector](Memory-connector.html), \"no data source,\" and data sources listed in [`datasources.json`](datasources.json.html).  That's why you created the data source first in step 1.
@@ -121,40 +120,41 @@ The following table lists commercially-supported LoopBack connectors. For more i
 <table>
   <thead>
     <tr>
-      <td colspan="3" data-highlight-colour="red" style="text-align: center;"><strong>Database connectors</strong></td>
+      <th style="text-align: center; width: 150px">Connector</th>
+      <th style="width: 250px;">Module</th>
+      <th style="width: 300px;">Install with <code>npm install --save ...</code></th>
+    </tr>
+    </thead>
+    <tbody>  
+    <tr>
+      <td colspan="3" style="text-align: center;"><strong>Database connectors</strong></td>
+    </tr>      
+    <tr>
+      <td><a href="https://cloudant.com/" class="external-link">IBM Cloudant</a></td>
+      <td><a href="https://www.npmjs.com/package/loopback-connector-cloudant" class="external-link">loopback-connector-cloudant</a></td>
+      <td><code>loopback-connector-cloudant</code></td>
     </tr>
     <tr>
-      <th style="text-align: center;">Connector</th>
-      <th>Module</th>
-      <th>Installation</th>
+      <td><a href="http://www.ibm.com/analytics/us/en/technology/cloud-data-services/dashdb/" class="external-link">IBM DashDB</a></td>
+      <td><a href="https://www.npmjs.com/package/loopback-connector-dashdb" class="external-link">loopback-connector-dashdb</a></td>
+      <td><code>loopback-connector-dashdb</code></td>
     </tr>
     <tr>
-      <td><a href="https://cloudant.com/" class="external-link" rel="nofollow">IBM Cloudant</a></td>
-      <td><a href="https://www.npmjs.com/package/loopback-connector-cloudant" class="external-link" rel="nofollow">loopback-connector-cloudant</a></td>
-      <td><code>npm install --save loopback-connector-cloudant</code></td>
+      <td><a href="http://www.ibm.com/analytics/us/en/technology/db2/" class="external-link">IBM DB2</a></td>
+      <td><a href="https://www.npmjs.com/package/loopback-connector-db2z" class="external-link">loopback-connector-db2</a></td>
+      <td><code>loopback-connector-db2</code></td>
     </tr>
     <tr>
-      <td><a href="http://www.ibm.com/analytics/us/en/technology/cloud-data-services/dashdb/" class="external-link" rel="nofollow">IBM DashDB</a></td>
-      <td><a href="https://www.npmjs.com/package/loopback-connector-dashdb" class="external-link" rel="nofollow">loopback-connector-dashdb</a></td>
-      <td><code>npm install --save loopback-connector-dashdb</code></td>
+      <td><a href="https://www-01.ibm.com/software/data/db2/zos/family/" class="external-link">IBM DB2 for z/OS</a></td>
+      <td><a href="https://www.npmjs.com/package/loopback-connector-db2z" class="external-link">loopback-connector-db2z</a></td>
+      <td><code>loopback-connector-db2z</code></td>
     </tr>
     <tr>
-      <td><a href="http://www.ibm.com/analytics/us/en/technology/db2/" class="external-link" rel="nofollow">IBM DB2</a></td>
-      <td><a href="https://www.npmjs.com/package/loopback-connector-db2z" class="external-link" rel="nofollow">loopback-connector-db2</a></td>
-      <td><code>npm install --save loopback-connector-db2</code></td>
+      <td><a href="https://www-01.ibm.com/software/data/informix/" class="external-link">IBM Informix</a></td>
+      <td><a href="https://www.npmjs.com/package/loopback-connector-informix" class="external-link">loopback-connector-informix</a></td>
+      <td><code>loopback-connector-informix</code></td>
     </tr>
-    <tr>
-      <td><a href="https://www-01.ibm.com/software/data/db2/zos/family/" class="external-link" rel="nofollow">IBM DB2 for z/OS</a></td>
-      <td><a href="https://www.npmjs.com/package/loopback-connector-db2z" class="external-link" rel="nofollow">loopback-connector-db2z</a></td>
-      <td><code>npm install --save loopback-connector-db2z</code></td>
-    </tr>
-    <tr>
-      <td><a href="https://www-01.ibm.com/software/data/informix/" class="external-link" rel="nofollow">IBM Informix</a></td>
-      <td><a href="https://www.npmjs.com/package/loopback-connector-informix" class="external-link" rel="nofollow">loopback-connector-informix</a></td>
-      <td><code>npm&nbsp;install&nbsp;loopback-connector-informix&nbsp;--save</code></td>
-    </tr>
-  </thead>
-  <tbody>
+
     <tr>
       <td><a href="Memory-connector.html">Memory connector</a></td>
       <td>Built in to LoopBack</td>
@@ -162,36 +162,36 @@ The following table lists commercially-supported LoopBack connectors. For more i
     </tr>
     <tr>
       <td><a href="MongoDB-connector.html">MongoDB</a></td>
-      <td><a href="https://www.npmjs.com/package/loopback-connector-mongodb" class="external-link" rel="nofollow">loopback-connector-mongodb</a></td>
-      <td><code>npm install --save loopback-connector-mongodb</code></td>
+      <td><a href="https://www.npmjs.com/package/loopback-connector-mongodb" class="external-link">loopback-connector-mongodb</a></td>
+      <td><code>loopback-connector-mongodb</code></td>
     </tr>
     <tr>
       <td><a href="MySQL-connector.html">MySQL</a></td>
-      <td><a href="https://www.npmjs.com/package/loopback-connector-mysql" class="external-link" rel="nofollow">loopback-connector-mysql</a></td>
-      <td><code>npm install --save loopback-connector-mysql</code></td>
+      <td><a href="https://www.npmjs.com/package/loopback-connector-mysql" class="external-link">loopback-connector-mysql</a></td>
+      <td><code>loopback-connector-mysql</code></td>
     </tr>
     <tr>
       <td><a href="Oracle-connector.html">Oracle</a></td>
-      <td><a href="https://www.npmjs.com/package/loopback-connector-oracle" class="external-link" rel="nofollow">loopback-connector-oracle</a></td>
-      <td><code>npm install --save loopback-connector-oracle</code></td>
+      <td><a href="https://www.npmjs.com/package/loopback-connector-oracle" class="external-link">loopback-connector-oracle</a></td>
+      <td><code>loopback-connector-oracle</code></td>
     </tr>
     <tr>
       <td><a href="PostgreSQL-connector.html">PostgreSQL</a></td>
-      <td><a href="https://www.npmjs.com/package/loopback-connector-mysql" class="external-link" rel="nofollow">loopback-connector-postgresql</a></td>
-      <td><code>npm install --save loopback-connector-postgresql</code></td>
+      <td><a href="https://www.npmjs.com/package/loopback-connector-mysql" class="external-link">loopback-connector-postgresql</a></td>
+      <td><code>loopback-connector-postgresql</code></td>
     </tr>
     <tr>
       <td><a href="SQL-Server-connector.html">SQL Server</a></td>
-      <td><a href="https://www.npmjs.com/package/loopback-connector-mssql" class="external-link" rel="nofollow">loopback-connector-mssql</a></td>
-      <td><code>npm install --save loopback-connector-mssql</code></td>
+      <td><a href="https://www.npmjs.com/package/loopback-connector-mssql" class="external-link">loopback-connector-mssql</a></td>
+      <td><code>loopback-connector-mssql</code></td>
     </tr>
     <tr>
-      <td><a href="https://www.sqlite.org/" class="external-link" rel="nofollow">SQLite 3.x</a></td>
-      <td><a href="https://www.npmjs.com/package/loopback-connector-sqlite3" class="external-link" rel="nofollow">loopback-connector-sqlite3</a></td>
-      <td><code>npm install --save loopback-connector-sqlite3</code></td>
+      <td><a href="https://www.sqlite.org/" class="external-link">SQLite 3.x</a></td>
+      <td><a href="https://www.npmjs.com/package/loopback-connector-sqlite3" class="external-link">loopback-connector-sqlite3</a></td>
+      <td><code>loopback-connector-sqlite3</code></td>
     </tr>
     <tr>
-      <td colspan="3"><strong>Other connectors</strong></td>
+      <td colspan="3" style="text-align: center;"><strong>Other connectors</strong></td>
     </tr>
     <tr>
       <td><a href="Email-connector.html">Email connector</a></td>
@@ -202,35 +202,35 @@ The following table lists commercially-supported LoopBack connectors. For more i
     </tr>
     <tr>
       <td><a href="Push-connector.html">Push connector</a>  </td>
-      <td><a href="https://github.com/strongloop/loopback-component-push" class="external-link" rel="nofollow">loopback-component-push</a></td>
-      <td><code>npm install --save loopback-component-push</code></td>
+      <td><a href="https://github.com/strongloop/loopback-component-push" class="external-link">loopback-component-push</a></td>
+      <td><code>loopback-component-push</code></td>
     </tr>
     <tr>
       <td><a href="Remote-connector.html">Remote connector</a></td>
-      <td><a href="https://github.com/strongloop/loopback-connector-remote" class="external-link" rel="nofollow">loopback-connector-remote</a></td>
-      <td><code>npm install --save loopback-connector-remote</code></td>
+      <td><a href="https://github.com/strongloop/loopback-connector-remote" class="external-link">loopback-connector-remote</a></td>
+      <td><code>loopback-connector-remote</code></td>
     </tr>
     <tr>
       <td><a href="REST-connector.html">REST</a></td>
-      <td><a href="http://github.com/strongloop/loopback-connector-rest" class="external-link" rel="nofollow">loopback-connector-rest</a></td>
-      <td><code>npm install --save loopback-connector-rest</code></td>
+      <td><a href="http://github.com/strongloop/loopback-connector-rest" class="external-link">loopback-connector-rest</a></td>
+      <td><code>loopback-connector-rest</code></td>
     </tr>
     <tr>
       <td><a href="SOAP-connector.html">SOAP</a></td>
-      <td><a href="http://github.com/strongloop/loopback-connector-soap" class="external-link" rel="nofollow">loopback-connector-soap</a></td>
-      <td><code>npm install --save loopback-connector-soap</code></td>
+      <td><a href="http://github.com/strongloop/loopback-connector-soap" class="external-link">loopback-connector-soap</a></td>
+      <td><code>loopback-connector-soap</code></td>
     </tr>
     <tr>
       <td><a href="Storage-connector.html">Storage connector</a></td>
-      <td><a href="https://github.com/strongloop/loopback-component-storage" class="external-link" rel="nofollow">loopback-component-storage</a>    </td>
-      <td><code>npm install --save loopback-component-storage</code></td>
+      <td><a href="https://github.com/strongloop/loopback-component-storage" class="external-link">loopback-component-storage</a>    </td>
+      <td><code>loopback-component-storage</code></td>
     </tr>
   </tbody>
 </table>
 
 ## Installing a connector
 
-Run `npm install --save <_connector-module_>` in your application root directory to add the dependency to `package.json`;
+Run `npm install --save <connector-module>` in your application root directory to add the dependency to `package.json`;
 for example, to install the Oracle database connector:
 
 ```shell
