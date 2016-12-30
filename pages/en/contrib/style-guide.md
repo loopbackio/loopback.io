@@ -7,6 +7,8 @@ last_updated: Sept 27, 2016
 summary: "These are LoopBack's general coding style guidelines."
 sidebar: contrib_sidebar
 permalink: /doc/en/contrib/style-guide.html
+redirect_from:
+- /style-guide/
 ---
 <!--
 Style conventions for this document:
@@ -594,7 +596,7 @@ function(done) {
 **Bad**:
 
 ```js
-it('my long test description ...', 
+it('my long test description ...',
   function(done) {
     …
   });
@@ -603,7 +605,7 @@ it('my long test description ...',
 **Bad**:
 
 ```js
-it('my long test description ...', 
+it('my long test description ...',
   function(done) {
     …
   }
