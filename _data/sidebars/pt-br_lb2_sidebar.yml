@@ -15,42 +15,46 @@ children:
 
 - title: 'Instalação'
   url: /doc/pt-br/lb2/Installation.html
+  translated: true
   output: 'web, pdf'
   children:
 
   - title: 'Instalando o IBM API Connect'
     url: /doc/pt-br/lb2/Installing-IBM-API-Connect.html
+    translated: true
     output: 'web, pdf'
 
   - title: 'Instalando o StrongLoop'
     url: /doc/pt-br/lb2/Installing-StrongLoop.html
+    translated: true
     output: 'web, pdf'
+    children:
 
-  - title: 'Instalando ferramentas de compilação'
-    url: /doc/pt-br/lb2/Installing-compiler-tools.html
-    output: 'web, pdf'
+    - title: 'Instalando ferramentas de compilação'
+      url: /doc/pt-br/lb2/Installing-compiler-tools.html
+      output: 'web, pdf'
 
-  - title: 'Instalando no MacOS'
-    url: /doc/pt-br/lb2/Installing-on-MacOS.html
-    output: 'web, pdf'
+    - title: 'Instalando no MacOS'
+      url: /doc/pt-br/lb2/Installing-on-MacOS.html
+      output: 'web, pdf'
 
-  - title: 'Instalando no Windows'
-    url: /doc/pt-br/lb2/Installing-on-Windows.html
-    output: 'web, pdf'
+    - title: 'Instalando no Windows'
+      url: /doc/pt-br/lb2/Installing-on-Windows.html
+      output: 'web, pdf'
 
-  - title: 'Instalando no Linux'
-    url: /doc/pt-br/lb2/Installing-on-Linux.html
-    output: 'web, pdf'
+    - title: 'Instalando no Linux'
+      url: /doc/pt-br/lb2/Installing-on-Linux.html
+      output: 'web, pdf'
 
-  - title: 'Solução de problemas de instalação'
-    url: /doc/pt-br/lb2/Installation-troubleshooting.html
-    output: 'web, pdf'
+    - title: 'Solucionando problemas de instalação'
+      url: /doc/pt-br/lb2/Installation-troubleshooting.html
+      output: 'web, pdf'
 
-  - title: 'Atualizando para a última versão'
-    url: /doc/pt-br/lb2/Updating-to-the-latest-version.html
-    output: 'web, pdf'
+    - title: 'Atualizando para a última versão'
+      url: /doc/pt-br/lb2/Updating-to-the-latest-version.html
+      output: 'web, pdf'
 
-- title: 'Os conceitos básicos do LoopBack'
+- title: 'Conceitos básicos do LoopBack'
   url: /doc/pt-br/lb2/LoopBack-core-concepts.html
   output: 'web, pdf'
   children:
@@ -80,11 +84,11 @@ children:
     url: /doc/pt-br/lb2/Create-a-simple-API.html
     output: 'web, pdf'
 
-  - title: 'Use API Explorer'
+  - title: 'Use o API Explorer'
     url: /doc/pt-br/lb2/Use-API-Explorer.html
     output: 'web, pdf'
 
-  - title: 'Conectar sua API a uma base de dados'
+  - title: 'Conectado sua API a uma base de dados'
     url: /doc/pt-br/lb2/Connect-your-API-to-a-data-source.html
     output: 'web, pdf'
 
@@ -121,27 +125,27 @@ children:
     url: /doc/pt-br/lb2/Create-new-models.html
     output: 'web, pdf'
 
-  - title: 'Define model relations'
+  - title: 'Definir relacionamentos de modelos'
     url: /doc/pt-br/lb2/Define-model-relations.html
     output: 'web, pdf'
 
-  - title: 'Define access controls'
+  - title: 'Definir controle de acessos'
     url: /doc/pt-br/lb2/Define-access-controls.html
     output: 'web, pdf'
 
-  - title: 'Define a remote hook'
+  - title: 'Definir um remote hook'
     url: /doc/pt-br/lb2/Define-a-remote-hook.html
     output: 'web, pdf'
 
-  - title: 'Create AngularJS client'
+  - title: 'Criar aplicação cliente AngularJS'
     url: /doc/pt-br/lb2/Create-AngularJS-client.html
     output: 'web, pdf'
 
-  - title: 'Learn more'
+  - title: 'Saiba mais'
     url: /doc/pt-br/lb2/Learn-more.html
     output: 'web, pdf'
 
-- title: 'Security advisories'
+- title: 'Alerta de segurança'
   url: /doc/pt-br/lb2/Security-advisories.html
   output: 'web, pdf'
   children:
@@ -166,33 +170,33 @@ children:
     url: /doc/pt-br/lb2/Security-advisory-01-09-2015.html
     output: 'web, pdf'
 
-- title: 'Creating an application'
+- title: 'Criando uma aplicação'
   url: /doc/pt-br/lb2/Creating-an-application.html
   output: 'web, pdf'
   children:
 
-  - title: 'Environment-specific configuration'
+  - title: 'Configurações específicas de ambiente'
     url: /doc/pt-br/lb2/Environment-specific-configuration.html
     output: 'web, pdf'
 
-  - title: 'Versioning your API'
+  - title: 'Versionando sua API'
     url: /doc/pt-br/lb2/Versioning-your-API.html
     output: 'web, pdf'
 
-  - title: 'Standard project structure'
+  - title: 'Estrutura padrão do projeto'
     url: /doc/pt-br/lb2/Standard-project-structure.html
     output: 'web, pdf'
 
-  - title: 'Tutorials and examples'
+  - title: 'Tutoriais e exemplos'
     url: /doc/pt-br/lb2/Tutorials-and-examples.html
     output: 'web, pdf'
 
-- title: 'Managing users'
+- title: 'Gerenciamento de usuários'
   url: /doc/pt-br/lb2/Managing-users.html
   output: 'web, pdf'
   children:
 
-  - title: 'Registering users'
+  - title: 'Registrando usuários'
     url: /doc/pt-br/lb2/Registering-users.html
     output: 'web, pdf'
 
@@ -825,8 +829,9 @@ children:
     url: /doc/pt-br/lb2/Refresh-definitions-command.html
     output: 'web, pdf'
 
-- title: 'Client SDKs'
+- title: 'SDKs Clientes'
   url: /doc/pt-br/lb2/Client-SDKs.html
+  translated: true
   output: 'web, pdf'
   children:
 

@@ -6,27 +6,17 @@ sidebar: pt-br_lb2_sidebar
 lang: pt-br
 tags:
 permalink: /doc/pt-br/lb2/index.html
-summary: Por favor, ajudar a traduzir a documentação em Português.
+summary: LoopBack 2.x é a versão com um longo prazo para suporte (LTS).
 ---
-1. **[Instalar as ferramentas do LoopBack](Installation)**, com IBM API Connect (`apic`) ou Ferramenta StrongLoop (`slc`).
-1. **Leia [Conceitos básicos de LoopBack](LoopBack-core-concepts.html)** para entender melhor a utilização do framework.
-1. **Segue [Iniciando com LoopBack](Getting-started-with-LoopBack.html)** para um rápido tutorial introdutório.
-
-Grupo de discussão: [LoopBack Developer Forum](https://groups.google.com/forum/#!forum/loopbackjs).
-
-{% include styled-box.html
-content="
-[IBM API Connect](https://developer.ibm.com/apiconnect/) é uma solução de gerenciamento de APIs end-to-end que usa o LoopBack para criação de APIs fornecendo ferramentas de build e deployment integradas:
-
-- **Experiência integrada em todo o ciclo de vida da API**, incluindo a API e a criação de micro-serviços em Node.js e Java.
-- **Self-service access to APIs** com portais de desenvolvedores e ferramentas de colaboração.
-- **Gerenciamento unificado e dirigido em Node.js e Java** para deployment on-premises e no Bluemix.
-- **Inclui políticas de segurança e gateway** com vasta opções de segurança e políticas de controle.
-
-Consulte [IBM API Connect](https://developer.ibm.com/apiconnect/) para mais informações.
+{% include important.html content="Se você estiver começando com o framework LoopBack, use a versão atual, [LoopBack 3.0](/doc/pt-br/lb3/index.html).
 " %}
 
-**Se você é cliente IBM, para suporte técnico consulte [Portal de suporte IBM](http://www-01.ibm.com/support/docview.wss?uid=swg21593214).**
+Para perguntas e discuções sobre como usar o LoopBack, visite o [Forum do Desenvolvedor](https://groups.google.com/forum/#!forum/loopbackjs) .
+
+{% include note.html content ="[IBM API Connect](https://developer.ibm.com/apiconnect/) é uma solução para gerenciamento de API end-to-end, que usa o LoopBack para criação de APIs, e fornece ferramentas de implantação e compilação integradas. Para mas informações, veja [Instalando o IBM API Connect](Installing-IBM-API-Connect.html).
+
+**Se você é cliente IBM, para suporte técnico visite [Portal de Suporte IBM](http://www-01.ibm.com/support/docview.wss?uid=swg21593214).**
+"%}
 
 ## O Framework LoopBack
 

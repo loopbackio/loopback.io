@@ -9,7 +9,7 @@ summary: Você pode instalar o LoopBack via API Connect ou StrongLoop.
 ---
 
 {% include tip.html content="Embora em teoria, você possa codificar uma aplicação LoopBack
-do zero, instalando as ferramentas torna-se muito mais fácil começar.
+do zero, instalando as ferramentas torna-se mais fácil começar.
 Eles vão do scaffold a um aplicativo que você pode personallizar para atender as suas necessidades.
 Para mais informações, veja [Ferramentas de linha de comando](Command-line-tools.html).
 " %}
