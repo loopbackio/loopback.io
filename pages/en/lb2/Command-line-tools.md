@@ -34,4 +34,4 @@ Under the hood, the command-line tools use [Yeoman](http://yeoman.io/). If you a
 $ npm install -g generator-loopback.
 ```
 
-Then instead of using `slc loopback <command>` use `yo loopback:<command>` instead. For example, to create a new model, use `yo loopback:model`.
+Then instead of using `slc loopback:<command>` use `yo loopback:<command>` instead. For example, to create a new model, use `yo loopback:model`.

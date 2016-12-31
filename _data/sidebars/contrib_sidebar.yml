@@ -10,6 +10,10 @@ children:
   url: /doc/en/contrib/Reporting-issues.html
   output: web, pdf
 
+- title: Long-term support
+  url: /doc/en/contrib/Long-term-support.html
+  output: web
+
 - title: Contributing code
   url: /doc/en/contrib/code-contrib.html
   output: web, pdf

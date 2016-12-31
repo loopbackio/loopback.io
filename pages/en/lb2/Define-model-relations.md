@@ -25,7 +25,7 @@ Get the app (in the state following the last article) from GitHub and install a
 ```
 $ git clone https://github.com/strongloop/loopback-getting-started-intermediate.git
 $ cd loopback-getting-started-intermediate
-$ git checkout step2
+$ git checkout lb2-step2
 $ npm install
 ```
 

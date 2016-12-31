@@ -134,13 +134,9 @@ For example, a Customer can have multiple email addresses and each email address
 }
 ```
 
-{% include important.html content="
-
-Treat `embedsMany` as an actual relation, no different from `hasMany`, for example.
-This means that you cannot just POST the full object with embedded/nested data to create everything all at once.
-So using the example above to add a Customer and multiple email addresses would require two POST operations,
+{% include note.html content="You cannot POST the full object with embedded/nested data to create everything all at once.
+So the example above in which a Customer has multiple email addresses, adding an instance would require two POST operations,
 one for the Customer record and one for the multiple email address data.
-
 " %}
 
 ### Define the relation in code
@@ -228,7 +224,7 @@ Use an embedsMany with belongsTo relation to indicate a model that can embed man
 embeds many links to related people, such as an author or a reader. Each link belongs to a person and it's polymorphic,
 since a person can be an Author or a Reader.
 
-{% include code-caption.html content="Exampel embedsMany with belongsTo model instance" %}
+{% include code-caption.html content="Sample embedsMany with belongsTo model instance" %}
 ```javascript
 { 
   id: 1
@@ -425,3 +421,5 @@ since a person can be an Author or a Reader.
   }
 }
 ```
+
+The embedded instances are stored inside their parent instance, which means you can see them in parentModel's database record. The default idType for a embedded model is "String", not the same type of its parent model id.

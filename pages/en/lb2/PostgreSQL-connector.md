@@ -97,6 +97,11 @@ Edit `datasources.json` to add other properties that enable you to connect the
       <td>String</td>
       <td>Username to connect to database</td>
     </tr>
+    <tr>
+      <td>ssl</td>
+      <td>Boolean or Object</td>
+      <td>Connect to database using SSL. Set to <code>true</code> for username/password authentication. You can also add a TLS object to establish a cert based connection (you must also omit the password property). See <a href="https://nodejs.org/dist/latest-v4.x/docs/api/tls.html#tls_tls_connect_options_callback">TLS (SSL) of nodejs for more info.</a></td>
+    </tr>
   </tbody>
 </table>
 

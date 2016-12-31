@@ -1,7 +1,7 @@
 ---
 title: LoopBack Documentation
 toc: false
-keywords: homepage
+layout: home
 tags: [getting_started]
 sidebar: home_sidebar
 permalink: /doc/index.html
@@ -17,8 +17,8 @@ New to Node.js? Read Getting Started with Node for:
 
 This site contains documentation for:
 
-- **[LoopBack 2.x](en/lb2)** - Current release.
-- **[LoopBack 3.0](en/lb3)** - Pre-release is available; not yet ready for production use.
+- **[LoopBack 3.0](en/lb3)** - Current production release.
+- **[LoopBack 2.x](en/lb2)** - [Long-term support](/doc/en/contrib/Long-term-support.html) release.
 - **[Contributing to LoopBack](en/contrib/)** - How to contribute to the LoopBack project.
 - **[Community projects](en/community)** - Where Loopback developers can promote and explain their LoopBack-related  projects.
 
@@ -31,13 +31,12 @@ This site contains documentation for:
 - Separable components for file storage, third-party login, and OAuth 2.0.
 " %}
 
-## New LoopBack documentation site
+## LoopBack documentation
 
-This is the official documentation site for LoopBack. The [previous documentation site](http://docs.strongloop.com) is deprecated.
-
-Content on this site is sourced in [GitHub](https://github.com/strongloop/loopback.io/blob/gh-pages/pages/) to enable the open-source community to contribute.
+This is the official documentation site for LoopBack.
+Content on this site is sourced in [GitHub](https://github.com/strongloop/loopback.io/blob/gh-pages/pages/).
 For more information, see [Contributing to LoopBack documentation](en/contrib/).
 
-For a complete list of planned and in-progress tasks, see [tasks in the loopback.io GitHub repo](https://github.com/strongloop/loopback.io/issues).
+For a complete list of planned and in-progress documentation tasks, see [tasks in the loopback.io GitHub repo](https://github.com/strongloop/loopback.io/issues).  View and open non-documentation issues in the [loopback GitHub repo](https://github.com/strongloop/loopback/issues).
 
 This site is based on Tom Johnson's [Documentation Jekyll theme](https://github.com/tomjohnson1492/documentation-theme-jekyll).

@@ -7,6 +7,8 @@ last_updated: Sept 27, 2016
 summary: "These are LoopBack's general coding style guidelines."
 sidebar: contrib_sidebar
 permalink: /doc/en/contrib/style-guide.html
+redirect_from:
+- /style-guide/
 ---
 <!--
 Style conventions for this document:
@@ -16,19 +18,185 @@ Style conventions for this document:
 -->
 
 {% include see-also.html content="
+- [ES5 style guide for LoopBack 2.x](style-guide-es5.html)
 - [Google C++ Style Guide](https://google.github.io/styleguide/cppguide.html)
 - [Google Javascript Style Guide](https://google.github.io/styleguide/javascriptguide.xml)
 " %}
 
-{% include toc.html %}
+{% include toc.html level=2 %}
 
 ## General guidelines
 
+{% include important.html content="The rules described in this document are evolving, therefore not all of our
+code-base are following them yet. This is expected and OK. Our approach is to
+incrementally improve the parts that are changing most often, i.e. fix the
+coding style only as part of changes needed for a bug fix/new feature.
+" %}
+
+### Variable declarations
+
+Prefer to use immutable variables declared with `const` keyword.
+
+{% include note.html content="`const` makes only the reference immutable, the referenced object is still
+mutable.
+" %}
+
+**Good**:
+
+```js
+const User = app.models.User;
+const { saltWorkFactor } = User.settings;
+```
+
+**Bad**:
+
+```js
+var User = app.models.User;
+var saltWorkFactor = user.settings.saltWorkFactor;
+```
+
+In the rare cases where you need to split variable declaration and
+initialization, prefer to use `let` over `var`:
+
+```js
+let discount = 0;
+
+if (customer.isPreferred) {
+  discount = 0.1;
+} else if (customer.address.state === 'CA') {
+  discount = 0.05;
+}
+```
+
+In most cases, it's possible to rewrite such code by extracting the
+conditional logic into a standalone function, which is preferred:
+
+```js
+const discount = customer.getDiscount();
+
+// Inside Customer model:
+customer.prototype.getDiscount = function() {
+  if (customer.isPreferred) {
+    return 0.1;
+  }
+
+  if (customer.address.state === 'CA') {
+    return 0.05;
+  }
+
+  return 0;
+}
+```
+
+{% include important.html content="`let` currently has a small caveat in that using it in loop constructs causes
+V8 to deoptimize the function, i.e., for now you should write:
+
+```js
+for (var i = 0; i < 42; ++i) doit(i);
+```
+
+Instead of:
+
+```js
+for (let i = 0; i < 42; ++i) doit(i);
+```
+
+This will be fixed in node.js v8.x but probably won't be fixed in v4.x and v6.x.
+" %}
+
+### Arrow functions
+
+There are two considerations to keep in mind when deciding whether to use an
+arrow function or a regular function:
+
+ - Arrow function preserves `this` from the outer scope. This is much more
+   performant than the usual workaround of storing `this` in a `self` variable.
+
+ - If you are accessing `this` provided by Mocha to your test cases and
+   before/after hooks, then you cannot use an arrow function.
+
+ - Arrow functions are anonymous by default, which makes it difficult to
+   understand stack traces. The workaround is to assign an arrow function
+   to a variable, since V8 does a fairly good job of inferring a name
+   in such case.
+
+The rules to follow:
+
+ - Always use arrow functions if you need to access `this` from outside.
+
+ - Try to structure your code in such way that your callbacks are short
+   (can be written using an arrow function) and delegate most of the work
+   to named functions (with a descriptive name).
+
+ - Use arrow functions in your Mocha tests, unless you need to access Mocha's
+   `this` context.
+
+**Good**:
+
+```js
+class Foo {
+  bar(cb) {
+    doSomethingElse((err, data) => {
+      if (err) return cb(err);
+      const result = this.processData(data);
+      cb(null, result);
+    });
+  }
+}
+```
+
+**Bad**:
+
+```js
+class Foo {
+  bar(cb) {
+    const self = this;
+    doSomethingElse(function(err, data) {
+      if (err) return cb(err);
+      const result = self.processData(data);
+      cb(null, result);
+    });
+  }
+}
+```
+
+### Classes
+
+ES6 introduced syntax-sugar for defining classes.  Uee this syntax instead of the
+old `require('util').inherits` approach.
+
+**Good**:
+
+```js
+class MyConnector extends BaseConnector {
+  constructor(settings, dataSource) {
+    // ...
+  }
+
+  set(modelName, key, value, options, callback) {
+    // ...
+   }
+}
+```
+
+**Bad**:
+
+```js
+function MyConnector(settings, dataSource) {
+  // ...
+}
+util.inherits(MyConnector, BaseConnector);
+
+MyConnector.prototype.set = function(modelName, key, value, options, callback) {
+  // ...
+};
+```
+
 ### One argument per line
 
-Once you cannot fit all arguments into a single line shorter than 80 chars, it's better to place each argument on a new line.
+Once you cannot fit all arguments into a single line shorter than 80 characterss, it's better to place each argument on a new line.
 
-Good:
+**Good**:
 
 ```js
 TestModel.find(
@@ -39,7 +207,7 @@ TestModel.find(
   });
 ```
 
-Bad:
+**Bad**:
 
 ```js
 TestModel.find(
@@ -49,6 +217,8 @@ TestModel.find(
   });
 ```
 
+**Bad**:
+
 ```js
 TestModel.find({where: {id: '1'}},
   {notify: false},
@@ -57,11 +227,10 @@ TestModel.find({where: {id: '1'}},
   });
 ```
 
-### Exception
+{% include note.html title="EXCEPTION:" content="When the callback function is the only argument that overflows character limit, you can put only this argument on a new line.
+" %}
 
-When the callback function is the only argument that overflows char limit, you can put only this argument on a new line.
-
-Good:
+For example:
 
 ```js
 TestModel.find({where: {id: '1'}},
@@ -70,7 +239,10 @@ TestModel.find({where: {id: '1'}},
   });
 ```
 
-When fixing existing code, it's better to preserve indentation of the inner function body and do not indent the second line:
+{% include note.html title="EXCEPTION:" content="When fixing existing code, it's better to preserve indentation of the inner function body and do not indent the second line.
+" %}
+
+For example:
 
 ```js
 TestModel.find({where: {id: '1'}},
@@ -79,11 +251,10 @@ function(err, list) {
 });
 ```
 
-### Exception
+{% include note.html title="EXCEPTION:" content="When the arguments are only short primitive values (strings, numbers) or short variable/property references, you can collapse them on the same line.
+" %}
 
-When the arguments are only short primitive values (strings, numbers) or short variable/property references, one can collapse them on the same line.
-
-Good:
+**Good**:
 
 ```js
 console.error('Unhandled array of errors for request %s %s\n',
@@ -94,7 +265,7 @@ console.error(
   req.method, req.url, errors);
 ```
 
-Bad:
+**Bad**:
 
 ```js
 console.error(
@@ -108,7 +279,7 @@ console.error(
 
 Indent the second and all next lines by one level.
 
-Good:
+**Good**:
 
 ```js
 return (testInEquality({gte: example.between[0]}, value) &&
@@ -116,7 +287,7 @@ return (testInEquality({gte: example.between[0]}, value) &&
   testInEquality({lte: example.between[2]}, value));
 ```
 
-Bad:
+**Bad**:
 
 ```js
 return (testInEquality({gte: example.between[0]}, value) &&
@@ -130,13 +301,16 @@ Prefer to extract the multi-line expression to a variable, as it is easiest to r
 
 When not feasible, then indent the second and next lines by two levels.
 
-Good:
-(?)
+**Good**:
 
-Best:
+```
+TBD
+```
+
+**Best**:
 
 ```js
-var matchesInEquality = testInEquality({ gte: example.between[0] }, value) &&
+const matchesInEquality = testInEquality({ gte: example.between[0] }, value) &&
     testInEquality({lte: example.between[1]}, value) &&
     testInEquality({lte: example.between[2]}, value);
 if (matchesInEquality) {
@@ -154,7 +328,7 @@ if (testInEquality({gte: example.between[0]}, value) &&
 }
 ```
 
-Bad:
+**Bad**:
 
 One level of indentation makes it difficult to tell the difference between the condition and the branch body.
 
@@ -168,10 +342,10 @@ if (testInEquality({gte: example.between[0]}, value) &&
 
 ### Multiline Array
 
-Good:
+**Good**:
 
 ```
- var titles = [
+const titles = [
   {title: 'Title A', subject: 'B'},
   {title: 'Title Z', subject: 'A'},
   {title: 'Title M', subject: 'C'},
@@ -181,10 +355,10 @@ Good:
 ];
 ```
 
-Bad:
+**Bad**:
 
 ```
-  var titles = [{title: 'Title A', subject: 'B'},
+const titles = [{title: 'Title A', subject: 'B'},
                 {title: 'Title Z', subject: 'A'},
                 {title: 'Title M', subject: 'C'},
                 {title: 'Title A', subject: 'A'},
@@ -193,7 +367,7 @@ Bad:
 ```
 
 ```
-  var titles = [{ title: 'Title A', subject: 'B' },
+const titles = [{ title: 'Title A', subject: 'B' },
   {title: 'Title Z', subject: 'A'},
   {title: 'Title M', subject: 'C'},
   {title: 'Title A', subject: 'A'},
@@ -208,7 +382,7 @@ In general, group related lines together (with a single empty line in between gr
 ```
 if (err) return done(err);
 
-var cat = new Cat();
+const cat = new Cat();
 cat.eat();
 cat.meow();
 cat.sleep();
@@ -218,7 +392,7 @@ return cat;
 
 However, if the method is short (3-5 lines) then just group it all together.
 
-Good:
+**Good**:
 
 ```
 if (err) return done(err);
@@ -226,7 +400,7 @@ expect(result).to...;
 done();
 ```
 
-Bad:
+**Bad**:
 
 ```
 if (err) return done(err);
@@ -236,7 +410,7 @@ expect(result).to...;
 done();
 ```
 
-## Testing-related
+## Style guidelines for tests
 
 ### Sandbox directories
 
@@ -250,20 +424,21 @@ done();
 - All test-related email examples should be of the format `email@example.com`.
 - The `example.com` domain was created to be used for examples in documents, and could be used without prior coordination or asking for permission.
 
-Good:
+**Good**:
+
 ```js
-var validCredentials = {email: `original@example.com`, password: 'bar'}
+const validCredentials = {email: `original@example.com`, password: 'bar'}
 ```
 
-Bad:
+**Bad**:
 
 ```js
-var validCredentials = {email: `updated@bar.com`, password: 'bar'}
+const validCredentials = {email: `updated@bar.com`, password: 'bar'}
 ```
 
 ### Hooks
 
-Good:
+**Good**:
 
 ```js
 beforeEach(namedFunction);
@@ -288,9 +463,10 @@ beforeEach('some description', function namedFunction() {
 
 The first example shows up in test output, but not stack traces. The second and third example shows up in test output and stack traces, but is a bit redundant to type two descriptions (one in the string and a duplicate in the function name)
 
-> Each of the above styles are acceptable and a decision will be made in the future as to which one is preferred. For now, feel free to pick the one that suits you.
+{% include tip.html content="Each of the above styles is acceptable and a decision will be made in the future as to which one is preferred. For now, feel free to pick the one that suits you.
+" %}
 
-Bad:
+**Bad**:
 
 ```js
 beforeEach(function() {
@@ -302,10 +478,10 @@ beforeEach(function() {
 
 When using hooks like beforeEach/before, it's best to use named functions that are then defined at the bottom of the test file. The idea is to make it easy to find the meat of a test file, which are the unit-tests. The method names used for hooks should make it clear enough what's their purpose, allowing most readers to not need to know implementation details and skip directly to unit-tests.
 
-Good:
+**Good**:
 
 ```js
-describe('strong-error-handler', function() {
+describe('strong-error-handler', () => {
   before(setupHttpServerAndClient);
   beforeEach(resetRequestHandler)
 
@@ -333,7 +509,7 @@ describe('strong-error-handler', function() {
 Bad:
 
 ```js
-describe('strong-error-handler', function() {
+describe('strong-error-handler', () => {
   before(setupHttpServerAndClient);
   beforeEach(resetRequestHandler)
 
@@ -363,7 +539,7 @@ Anonymous functions are even worse
 
 ```js
 describe('strong-error-handler', function() {
-  before(function(done)
+  before((done) => {
     // long setup
     // .
     // .
@@ -376,7 +552,7 @@ describe('strong-error-handler', function() {
     done();
   });
 
-  beforeEach(function(done) {
+  beforeEach((done) => {
     // reset
   });
 
@@ -385,17 +561,15 @@ describe('strong-error-handler', function() {
  });
 ```
 
-### Exception
-
-Variables initialized by helpers and used from tests should be declared
-at the top of the `describe` block. Variables shared by multiple `describe`
+{% include note.html title="EXCEPTION:" content="Variables initialized by helpers and used from tests should be declared at the top of the `describe` block. Variables shared by multiple `describe`
 blocks may be placed in the outer scope.
+" %}
 
-Good:
+For example:
 
 ```js
-describe('my class', function() {
-  var app;
+describe('my class', () => {
+  let app;
   beforeEach(function setupApp);
 
   it('does something');
@@ -406,6 +580,37 @@ describe('my class', function() {
   }
 });
 ```
+### Callback function moved to the next line
+
+The following examples show the preferred style when callback needs to move to the next line due to line length exceeding max line length defined by eslint:
+
+**Good**:
+
+```js
+it('my long test description ...',
+function(done) {
+  ...
+});
+```
+
+**Bad**:
+
+```js
+it('my long test description ...',
+  function(done) {
+    …
+  });
+```
+
+**Bad**:
+
+```js
+it('my long test description ...',
+  function(done) {
+    …
+  }
+);
+```
 
 ### Test naming
 
@@ -413,22 +618,23 @@ Test names should describe the expected outcome under certain conditions. They s
 
 Use imperative mood, **do not** start test names with `should`.
 
-The test name should make it clear:
- - what is being tested, what are the conditions specific to this test case
- - what is the expected outcome
+The test name should make clear:
+
+ - What is being tested, and the conditions specific to this test case.
+ - Expected outcome.
 
 Run `mocha -R spec` to review test names.
 
-Good:
+**Good**:
 
 ```js
-describe('strong-error-handler', function() {
+describe('strong-error-handler', () => {
   it('returns status 500 by default');
   // reads as: strong-error-handler returns status 500 by default
  });
 
-describe('User', function() {
-  describe('login()', function() {
+describe('User', () => {
+  describe('login()', () => {
     it('accepts valid credentials');
     // reads as: User login() accepts valid credentials
     it('creates an access token');
@@ -437,16 +643,16 @@ describe('User', function() {
 );
 ```
 
-Bad:
+**Bad**:
 
 ```js
-describe('strong-error-handler', function() {
+describe('strong-error-handler', () => {
   it('default status');
   it('should return status 500 by default');
 });
 
-describe('User', function() {
-  describe('login()', function() {
+describe('User', () => {
+  describe('login()', () => {
     it('works');
     it('should create a token');
   });
@@ -461,13 +667,13 @@ being tested. In this particular example, both `Model` and `find()` should use
 `describe`. The goal is to create a human readable prefix to stand for `it` in the
 test cases.
 
-##### Good
+**Good**:
 
 ```js
-describe('Model', function() {
-  describe('find()', function() {
-    context('with "include" filter', function() {
-      it('adds related models to the result', function() {
+describe('Model', () => {
+  describe('find()', () => {
+    context('with "include" filter', () => {
+      it('adds related models to the result', () => {
         // Model find() returns filtered results
       });
     });
@@ -477,13 +683,13 @@ describe('Model', function() {
 });
 ```
 
-Bad:
+**Bad**:
 
 ```js
-describe('Model', function() {
-  describe('find()', function() {
-    describe('with "include" filter', function() {
-      it('adds related models to the result', function() {
+describe('Model', () => {
+  describe('find()', () => {
+    describe('with "include" filter', () => {
+      it('adds related models to the result', () => {
         // Model find() returns filtered results
       });
     });
@@ -494,10 +700,10 @@ describe('Model', function() {
 ```
 
 ```js
-context('Model', function() {
-  context('find()', function() {
-    context('with "include" filter', function() {
-      it('adds related models to the result', function() {
+context('Model', () => {
+  context('find()', () => {
+    context('with "include" filter', () => {
+      it('adds related models to the result', () => {
         // Model find() returns filtered results
       });
     });

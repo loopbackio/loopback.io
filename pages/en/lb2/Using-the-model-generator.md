@@ -9,8 +9,7 @@ permalink: /doc/en/lb2/Using-the-model-generator.html
 summary:
 ---
 
-{% include important.html content="
-If you already have a back-end schema (like a database), create models based on it using LoopBack's discovery feature.
+{% include important.html content="If you already have a back-end schema (like a database), create models based on it using LoopBack's discovery feature.
 See [Discovering models from relational databases](Discovering-models-from-relational-databases.html).
 " %}
 
@@ -26,7 +25,7 @@ $ apic create --type model
 Or with StrongLoop tools:
 
 ```shell
-$ slc create --type model
+$ slc loopback:model
 ```
 
 When creating a new model, the generator will prompt you for the properties in the model.
@@ -52,7 +51,7 @@ Use the LoopBack [model generator](Model-generator.html) to create a new model
 In your application root directory, enter the command (for example, to create a "books" model):
 
 ```shell
-$ apic create --type model book
+$ [ slc | apic ] loopback:property
 ```
 
 Then the tool will prompt you to:
@@ -63,12 +62,9 @@ Then the tool will prompt you to:
 
 * Choose the model's base class, from a list of [built-in models](Using-built-in-models.html) classes and existing custom models in the application.
 
-  {% include note.html content="
-
-  In general, use `PersistedModel` as the base model when you want to store your data in a database using a connector such as MySQL or MongoDB.
-  Use `Model` as the base for models that don't have CRUD semantics, for example, using connectors such as SOAP and REST.
-
-  " %}
+{% include note.html content="In general, use `PersistedModel` as the base model when you want to store your data in a database using a connector such as MySQL or MongoDB.
+Use `Model` as the base for models that don't have CRUD semantics, for example, using connectors such as SOAP and REST.
+" %}
 
 * Choose whether to expose the model over REST; the default is yes. 
 * Enter a custom plural form; the default is to use standard plural (for example, "books").
@@ -78,12 +74,12 @@ Then the tool will prompt you to:
     This sets the `type` property in the [model definition JSON file](Model-definition-JSON-file.html).
   * Whether the property is required. This sets the `required` property in the [model definition JSON file](Model-definition-JSON-file.html).
 
-Adding properties
+### Adding properties
 
 After you create a model, you can add more properties with the [property generator](Property-generator.html).
 
 ```shell
-$ apic create --type property
+$ [ slc | apic ] loopback:property
 ```
 
 The tool will prompt you to choose the model to which you want to add the property, along with the other property settings (as before).

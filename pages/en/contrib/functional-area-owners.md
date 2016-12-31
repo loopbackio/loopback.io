@@ -58,7 +58,6 @@ See the actual content below for detailed examples.
 - Repos
   - [loopback-boot](https://github.com/strongloop/loopback-boot)
   - [loopback-example-app-logic](https://github.com/strongloop/loopback-example-app-logic)
-  - [loopback-example-middleware](https://github.com/strongloop/loopback-example-middleware)
 
 # Components
 
@@ -125,7 +124,6 @@ See the actual content below for detailed examples.
   - [loopback-connector-rest](https://github.com/strongloop/loopback-connector-rest)
   - [loopback-connector-soap](https://github.com/strongloop/loopback-connector-soap)
   - [loopback-connector-swagger](https://github.com/strongloop/loopback-connector-swagger)
-  - [loopback-example-connector](https://github.com/strongloop/loopback-example-connector)
 
 ## KeyValue
 
@@ -170,7 +168,6 @@ See the actual content below for detailed examples.
   - memory connector
   - [loopback-connector-cloudant](https://github.com/strongloop/loopback-connector-cloudant)
   - [loopback-connector-mongodb](https://github.com/strongloop/loopback-connector-mongodb)
-  - [loopback-connector-redis](https://github.com/strongloop/loopback-connector-redis)
   - transient connector
 
 ## Soap
@@ -209,7 +206,6 @@ See the actual content below for detailed examples.
   - [loopback-connector-mysql](https://github.com/strongloop/loopback-connector-mysql)
   - [loopback-connector-oracle](https://github.com/strongloop/loopback-connector-oracle)
   - [loopback-connector-postgresql](https://github.com/strongloop/loopback-connector-postgresql)
-  - [loopback-connector-sqlite3](https://github.com/strongloop/loopback-connector-sqlite3)
   - [loopback-example-database](https://github.com/strongloop/loopback-example-database)
   - [loopback-oracle-builder](https://github.com/strongloop/loopback-oracle-builder)
   - [loopback-oracle-installer](https://github.com/strongloop/loopback-oracle-installer)
@@ -293,7 +289,6 @@ See the actual content below for detailed examples.
 - Backup
   - TBD
 - Repos
-  - [loopback-acl-route](https://github.com/strongloop/loopback-acl-route)
   - [loopback-component-oauth2](https://github.com/strongloop/loopback-component-oauth2)
   - [loopback-example-access-control](https://github.com/strongloop/loopback-example-access-control)
   - [loopback-example-ssl](https://github.com/strongloop/loopback-example-ssl)
@@ -360,7 +355,6 @@ See the actual content below for detailed examples.
   - [davidcheung](https://github.com/davidcheung)
 - Repos
   - [loopback/server-app.js](https://github.com/strongloop/loopback/blob/master/lib/server-app.js)
-  - [loopback-example-isomorphic](https://github.com/strongloop/loopback-example-isomorphic)
   - [loopback-example-offline-sync](https://github.com/strongloop/loopback-example-offline-sync)
   - [loopback-phase](https://github.com/strongloop/loopback-phase)
   - [strong-remoting](https://github.com/strongloop/strong-remoting)
@@ -395,7 +389,6 @@ See the actual content below for detailed examples.
   - [loopback-sdk-angular-cli](https://github.com/strongloop/loopback-sdk-angular-cli)
   - [loopback-example-angular](https://github.com/strongloop/loopback-example-angular)
   - [loopback-example-angular-live-set](https://github.com/strongloop/loopback-example-angular-live-set)
-  - [loopback-example-pubsub](https://github.com/strongloop/loopback-example-pubsub)
 
 ## iOS
 
@@ -409,18 +402,6 @@ See the actual content below for detailed examples.
   - [loopback-sdk-ios](https://github.com/strongloop/loopback-sdk-ios)
   - [loopback-sdk-ios-codegen](https://github.com/strongloop/loopback-sdk-ios-codegen)
   - [loopback-sdk-ios-getting-started](https://github.com/strongloop/loopback-sdk-ios-getting-started)
-
-## Xamarin
-
-- GitHub label
-  - sdk-xamarin ([list of issues](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+label%3Asdk-xamarin+org%3Astrongloop))
-- Owner
-  - [loay](https://github.com/loay)
-- Backup
-  - TBD
-- Repos
-  - [loopback-example-xamarin](https://github.com/strongloop/loopback-example-xamarin)
-  - [loopback-sdk-xamarin](https://github.com/strongloop/loopback-sdk-xamarin)
 
 ## Workspace + generators
 
@@ -451,33 +432,3 @@ See the actual content below for detailed examples.
   - [loopback-knowledge-base](https://github.com/strongloop-internal/loopback-knowledge-base)
   - [loopback-sandbox](https://github.com/strongloop/loopback-sandbox)
   - [loopback-triage](https://github.com/strongloop/loopback-triage)
-
-# TBD - To deprecate or archive
-
-- GitHub label
-  - N/A
-- Owner
-  - [bajtos](https://github.com/bajtos)
-- Backup
-  - [superkhau](https://github.com/superkhau)
-  - [raymondfeng](https://github.com/raymondfeng)
-  - [ritch](https://github.com/ritch)
-- Repos
-  - amenadiel/loopback-example-login
-  - loopback-benchmarks
-  - loopback-benchmark-mongodb
-  - loopback-connector-atg
-  - loopback-connector-salesforce
-  - [loopback-contributor-docs](https://github.com/strongloop/loopback-contributor-docs)
-  - loopback-editor
-  - [loopback-example](https://github.com/strongloop/loopback-example)
-  - loopback-faq-model-hooks
-  - loopback-example-composite
-  - loopback-example-java
-  - loopback-example-fitness
-  - loopback-example-icars-mockup
-  - loopback-example-ishop
-  - loopback-example-login
-  - loopback-example-next
-  - loopback-ldl
-  - loopback-testing

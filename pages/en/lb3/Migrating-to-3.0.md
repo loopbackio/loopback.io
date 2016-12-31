@@ -8,21 +8,25 @@ sidebar: lb3_sidebar
 permalink: /doc/en/lb3/Migrating-to-3.0.html
 summary: How to migrate applications from LoopBack 2.x to 3.x.
 ---
-## Update dependencies in package.json
+## Update LoopBack version
+
+To move your app from LoopBack 2.x to 3.x, edit the `package.json` file, then
+install dependencies from npm.
+
+### Edit package.json
 
 Make the following changes to your app's `package.json` file:
 
 - Change the dependency on `loopback` to specify version 3.0.
 - Remove `loopback-datasource-juggler` from dependencies, since it is [now a regular dependency](3.0-Release-Notes.html#loopback-datasource-juggler-is-now-a-regular-dependency-of-loopback).
 - Depending on when you initially created your app, `strong-error-handler` may not
-be listed as a dependency; if so, add it.
+be listed as a dependency; if it isn't, add it.
 
 For example, change:
 
 ```
 "dependencies": {
   ...
-  "serve-favicon": "^2.0.1",
   "loopback-datasource-juggler": "^2.39.0",
   "loopback": "^2.22.0"
  },
@@ -34,9 +38,16 @@ To:
 ```
 "dependencies": {
   ...
-  "serve-favicon": "^2.0.1",
   "strong-error-handler": "^1.0.1",
   "loopback": "^3.0.0"
+```
+
+### Update dependencies with npm
+
+After editing `package.json`, enter this command (in the project root directory) to update application dependencies:
+
+```
+npm install
 ```
 
 ## Update use of REST error handler
@@ -49,8 +60,7 @@ Install it as a dependency with the following command:
 npm install --save strong-error-handler
 ```
 
-{% include tip.html content="Projects scaffolded with a recent version of `apic loopback`
-or `slc loopback` are already correctly configured and require no change.
+{% include tip.html content="Projects scaffolded with a recent version of `slc loopback` are already correctly configured and require no change.
 " %}
 
 You may need to make the following changes:
@@ -89,7 +99,7 @@ from the response body.
 
 ## Replace LoopBack middleware "getter" properties
 
-As described in the [release notes](3.0-Release-Notes.html#new-rest-adapter-error-handler),
+As described in the [release notes](3.0-Release-Notes.html#removed-getters-for-express-3x-middleware),
 you can no longer use the LoopBack convenience "getter" properties for Express middleware.
 You must replace any instances of them with the corresponding `require()` statement, as
 summarized in this table:
@@ -97,17 +107,17 @@ summarized in this table:
 | Change this... | To this... |
 |---|----|
  | `loopback.compress` | `require('compression')` |
- | `loopback.timeout` | `require('connect-timeout')` |
  | `loopback.cookieParser` | `require('cookie-parser')` |
  | `loopback.cookieSession` | `require('cookie-session')` |
  | `loopback.csrf` | `require('csurf')` |
- | `loopback.errorHandler` | `require('errorhandler')` |
- | `loopback.session` | `require('express-session')` |
- | `loopback.methodOverride` | `require('method-override')` |
- | `loopback.logger` | `require('morgan')` |
- | `loopback.responseTime` | `require('response-time')` |
- | `loopback.favicon` | `require('serve-favicon')` |
  | `loopback.directory` | `require('serve-index')` |
+ | `loopback.errorHandler` | `require('errorhandler')` |
+ | `loopback.favicon` | `require('serve-favicon')` |
+ | `loopback.logger` | `require('morgan')` |
+ | `loopback.methodOverride` | `require('method-override')` |
+ | `loopback.responseTime` | `require('response-time')` |
+ | `loopback.session` | `require('express-session')` |
+ | `loopback.timeout` | `require('connect-timeout')` |
  | `loopback.vhost` | `require('vhost')` |
 
 ## Update models
@@ -158,8 +168,8 @@ to LoopBack, or remove the unknown mixin from your model definition.
 ### Update remote method definitions
 
 In version 3.0, the `isStatic` property no longer indicates that a remote method is static.
-Rather if the method name starts with `prototype.` then it an instance method, otherwise
-it is a static method.
+Rather if the method name starts with `prototype.` then the remote method is an instance method,
+otherwise (by default) it's a static method.
 
 As a result, you may see many deprecation warnings after upgrading to 3.0.  To eliminate these:
 
@@ -174,7 +184,7 @@ For example, in `common/models/my-model.json`.
 {
   "methods": {
     "staticMethod": {
-      "isStatic": true,
+      "isStatic": true, 
       "http": { "path": "/static" }
     },
     "instanceMethod": {
@@ -287,7 +297,7 @@ new model instance.  Instead, use  `[PersistedModel.create()](http://apidocs.str
 To perform a bulk `updateOrCreate()`, use `async.each` or `Promise.all` to
 repeatedly call `updateOrCreate()` for each model instance.
 
-## Add removed User model properties explicitly
+## Explicitly add User model properties that were removed
 
 <!-- Do we think this will be common?  Why would someone use any of these unused properties?
      If uncommon, move this section down in the guide
@@ -320,7 +330,7 @@ in your custom User model JSON file; for example:
 
 ## Check request parameter encoding
 
-As described in the [release notes](Migrating-to-3.0.html#stricter-handling-of-input-arguments),
+As described in the [release notes](3.0-Release-Notes.html#cleanup-in-conversion-and-coercion-of-input-arguments),
 the REST adapter handles input arguments more strictly.  As a result,
 versions 2.x and 3.0 handle certain edge cases differently.
 
@@ -329,9 +339,8 @@ check the client code and ensure it correctly encodes request parameters.
 
 ## Remove use of current-context methods, middleware, and configuration settings
 
-As described in the [release notes](Migrating-to-3.0.html#removed-current-context-api-and-middleware),
-version 3.0 removes deprecated a number of current-context-related methods,
-middleware, and configuration settings.
+As described in the [release notes](3.0-Release-Notes.html#current-context-api-and-middleware-removed),
+version 3.0 removes a number of deprecated methods related to current-context, middleware, and configuration settings.
 Ensure you no longer use any of these methods and middleware.
 If you must use current-context, follow the instructions in [Using current-context in version 3.0](#using-current-context-in-version-30) below.
 
@@ -354,7 +363,7 @@ received:
 ```
 Unhandled error for request GET /api/Users:
 Error: remoting.context option was removed in version 3.0.
-See https://docs.strongloop.com/display/APIC/Using%20current%20context for more
+See https://loopback.io/doc/en/lb3/Using-current-context.html for more
 details.
     at restApiHandler (.../node_modules/loopback/server/middleware/rest.js:44:15)
     at Layer.handle [as handle_request] (.../node_modules/express/lib/router/layer.js:95:5)
@@ -380,7 +389,7 @@ If you still need to use loopback-context in your LoopBack 3.x application, use 
  npm install --save loopback-context
  ```
 
- 2. Configure the new context middleware in `server/middleware-config.json`:
+ 2. Configure the new context middleware in `server/middleware.json`:
 
     ```js
     {
@@ -430,14 +439,17 @@ CORS is no longer enabled by default in version 3.0.
 The built-in CORS middleware was removed from `loopback.rest()` handler,
 so you must set up and configure application CORS policies explicitly.
 
-{% include tip.html content="Projects scaffolded with a recent version of `apic loopback`
-or `slc loopback` already have the global CORS handler configured in `server/middleware.json`.
+{% include tip.html content="Projects scaffolded with a recent version `slc loopback` already have the global CORS handler configured in `server/middleware.json`.
 " %}
 
 Otherwise, to enable CORS and allow cross-site requests to your LoopBack application,
 follow these steps:
 
- 1. `npm install --save cors`
+ 1. Install the `cors` middleware package:
+
+     ```
+     npm install --save cors
+     ```
 
  2. Edit the `initial` section in your `server/middleware.json` and add
   a configuration block for `cors` middleware:
@@ -459,15 +471,14 @@ follow these steps:
     }
     ```
 
- 3. Edit the `remoting` section in your `server/config.json` and set `cors` to
-  `false`:
+ 3. Edit the `remoting` section in your `server/config.json` and set `cors` to `true`:
 
     ```js
     {
       // ...
       "remoting": {
         // ...
-        "cors": false,
+        "cors": true,
         // ...
       }
     }

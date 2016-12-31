@@ -1,25 +1,16 @@
 ---
 layout: default
 ---
+{% if page.sidebar contains 'lb3' %}
+  {% include content/v3notice.html %}
+{% endif %}
 <div class="post-header">
    <h1 class="post-title-main">{{ page.title }}</h1>
+   {% if site.github_editme_path and page.layout != 'readme' %}
+       {% assign edit_url =  page.url | remove: "/doc" | remove: ".html" | append: ".md" | prepend: site.github_editme_path %}
+       <a target="_blank" href="https://github.com/{{edit_url}}" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit this page</a>
+   {% endif %}
 </div>
-
-{% if page.simple_map == true %}
-  <script>
-      $(document).ready ( function(){
-          $('.box{{page.box_number}}').addClass('active');
-      });
-  </script>
-  {% include custom/{{page.map_name}}.html %}
-{% elsif page.complex_map == true %}
-  <script>
-      $(document).ready ( function(){
-          $('.modalButton{{page.box_number}}').addClass('active');
-      });
-  </script>
-  {% include custom/{{page.map_name}}.html %}
-{% endif %}
 
 <div class="post-content">
 
@@ -35,15 +26,6 @@ layout: default
 
     {{content}}
 
-    {% if site.github_editme_path %}
-      {% if page.keywords == 'homepage' %}
-        {% assign edit_url = "strongloop/loopback.io/blob/gh-pages/doc/index.md" %}
-      {% else %}
-        {% assign edit_url =  page.url | remove: "/doc" | remove: ".html" | append: ".md" | prepend: site.github_editme_path %}
-      {% endif %}
-        <a target="_blank" href="https://github.com/{{edit_url}}" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit this page</a>
-    {% endif %}
-
     <div class="tags">
       {% if page.tags != null %}
         <b>Tags: </b>
@@ -55,10 +37,6 @@ layout: default
         {% endfor %}
       {% endif %}
     </div>
-
-    {% if site.disqus %}
-      {% include disqus.html %}
-    {% endif %}
 </div>
 
 {{site.data.alerts.hr_shaded}}

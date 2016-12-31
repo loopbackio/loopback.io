@@ -19,7 +19,9 @@ See [Security advisories](Security-advisories) for important upgrade information
 
 Update your installation with this command:
 
-`$ npm install -g strongloop`
+```
+$ npm install -g strongloop
+```
 
 ## Performing a clean re-installation
 

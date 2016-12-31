@@ -9,6 +9,7 @@ allowed-tags:
   - data_sources
   - example_app
   - getting_started
+  - installation
   - ios
   - messaging
   - models

@@ -19,13 +19,12 @@ Under English, the sub-folders are:
 
 - `lb2` - LoopBack 2.x
 - `lb3` - LoopBack 3.0
-- `contrib` - Information on contributing to the documentation, published at [http://loopback.io/doc/en/contrib/](http://loopback.io/doc/en/contrib/).
-- `community` - Area for general project contribution guidelines and processes; also where
-community members can put information about their LoopBack-related projects.
+- `contrib` - Information on contributing to the project, published at [http://loopback.io/doc/en/contrib/](http://loopback.io/doc/en/contrib/).
+- `community` - Area where community members can put information about their LoopBack-related projects.
 
 ### Overview content
 
-The site includes some non-documentation content, "technical overview" information that
+The site includes some non-documentation "technical overview" information that
 pre-dates the move of the documentation to the site.  For the most part, we don't expect community
 members to edit this information, though anyone is welcome to report inaccuracies or problems.
 This content includes:
@@ -137,13 +136,15 @@ By default, the table of contents will include all heading levels.  To limit the
 For example, to display _only_ top-level headings (head2s or `##` headings), use:
 
 - `toc_level: 1` in frontmatter
-- `{% raw %}{% include toc.html toc_level=1%}{% endraw %}` inline
+- `{% raw %}{% include toc.html level=1 %}{% endraw %}` inline
 
 In both cases, the level can be from 1 to 4.
 
 ## Headings
 
 Use pound signs before the heading title to designate the level. Note that kramdown requires headings to have one space before and after the heading. Without this space above and below, the heading won't render into HTML.
+
+Since the page title is considered the "top-level" heading, highest-level headings in a page are "second-level" headings.
 
 ```
 ## Second-level heading
@@ -190,13 +191,11 @@ Then you can reference it with a link like this on the same page:
 
 [Some link](#someIdTag)
 
-For details about linking to headings on different pages, see [Automated links to headings on pages](mydoc_hyperlinks.html#bookmarklinks).
-
 ## Specify a particular page layout
 
-The configuration file sets the default layout for pages as the "page" layout.
+The default layout for pages is "page" layout.
 
-You can create other layouts inside the layouts folder. If you create a new layout, you can specify that your page use your new layout by adding `layout: mylayout.html` in the page's frontmatter. Whatever layout you specify in the frontmatter of a page will override the layout default set in the configuration file.
+To specify a different layout, use the `layout` property in the page's frontmatter. 
 
 ## Comments
 

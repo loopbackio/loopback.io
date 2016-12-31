@@ -1,5 +1,5 @@
 ---
-title: "Database connectors reference"
+title: "LoopBack data source connectors"
 lang: en
 toc: false
 keywords: LoopBack
@@ -9,11 +9,14 @@ permalink: /doc/en/lb2/Connectors-reference.html
 summary: LoopBack connectors implement the data exchange logic to communicate with backend systems such as relational or NoSQL databases, or other REST, or SOAP API.
 ---
 
-Connectors are divided into two groups: database connectors, that connect to relational and NoSQL databases, and other connectors, that connect to other APIs, and other backend systems.
+Connectors are divided into two groups:
 
-Additionally, the built-in [memory connector](Memory-connector.html) acts like a database connector, in that it supports standard query and create, read, update, and delete (CRUD) operations. It is intended for development and testing without connecting to an actual persistent data source.
+- [Database connectors](#database-connectors) - connect to relational and NoSQL databases,
+- [Other connectors](#other-connectors) - connect to REST or SOAP APIs and other backend systems.
 
-## Database connectors:
+The built-in [memory connector](Memory-connector.html) acts like a database connector, in that it supports standard query and create, read, update, and delete (CRUD) operations. It is intended for development and testing without connecting to an actual persistent data source.
+
+## Database connectors
 
 * [Cloudant connector](Cloudant-connector.html)
 * [DashDB](DashDB.html)
@@ -29,7 +32,7 @@ Additionally, the built-in [memory connector](Memory-connector.html) acts like a
 * [SQL Server connector](SQL-Server-connector.html)
 * [SQLite3](SQLite3.html)
 
-## Other connectors:
+## Other connectors
 
 * [Email connector](Email-connector.html)
 * [Push connector](Push-connector.html)

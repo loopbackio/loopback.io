@@ -29,14 +29,16 @@ If you are looking to contribute, but aren't sure where to start, review open pu
 
 Also, please read the source code before contributing. If something is confusing, poorly documented, poorly commented, or could otherwise be improved: open a GitHub issue and link to the file and line of code with a useful description of what you would like to see or think is missing.
 
-### Recommended Node.js version for code contributions
+### LoopBack versions
 
-Code contributions should only be using features and language constructs available in v0.10.
+LoopBack maintains a current version, a long-term support (LTS) version, and a maintenance version.  New features go into the current version; bug fixes can go into the LTS and maintenance versions, depending on the nature of the bug.  For more information, see [Long-term support](Long-term-support.html).
+
+### Recommended Node.js version
 
 {% include note.html content="Check your Node.js version with the command `node -v`.
 " %}
 
-At this time, we are still supporting Node.js v0.10 and do not transpile. We would like to change this in the near future (ie. drop support for versions older than 4/6 or transpile), but extra caution is required as this update would affect a large number of users. Thanks for your patience.
+LoopBack 2.x supports Node.js v0.10 and v0.12, but LoopBack 3.0 does not support Node.js v0.10 or v0.12.  For details, see the blog post [LoopBack Drops Support for Node 0.10 and 0.12](https://strongloop.com/strongblog/loopback-drops-support-for-node-0-10-and-0-12/).
 
 ## Submitting a pull request
 
