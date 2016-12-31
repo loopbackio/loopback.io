@@ -642,7 +642,7 @@ Web server listening at: http://0.0.0.0:3000/
 > models created sucessfully
 ```
 
-Now load [http://0.0.0.0:3000/](http://0.0.0.0:3000/) in your browser.  You should see the application home page:
+Now load [http://0.0.0.0:3000/client/](http://0.0.0.0:3000/client/) in your browser.  You should see the application home page:
 
 {% include image.html file="5570658.png" alt="" %}
 
