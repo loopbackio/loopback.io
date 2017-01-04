@@ -90,7 +90,7 @@ from the response body.
     "strong-error-handler": {
       "params": {
          "debug": false,
-         "log": true,
+         "log": true
        }
     }
   }
