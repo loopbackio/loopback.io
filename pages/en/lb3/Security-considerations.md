@@ -116,23 +116,14 @@ As a best practice to mitigate such threats, use appropriate Express middleware,
 * [Lusca](https://www.npmjs.org/package/lusca)
 * [Helmet](https://www.npmjs.org/package/helmet)
 
+{% include note.html content="Standard scaffolded LoopBack 3.0 applications load a number of Helmet middleware functions, including [xssFilter](https://helmetjs.github.io/docs/xss-filter), [frameguard](https://helmetjs.github.io/docs/frameguard/), [hsts](https://helmetjs.github.io/docs/hsts/),
+[hidePoweredBy](https://helmetjs.github.io/docs/hide-powered-by),
+[ieNoOpen](https://helmetjs.github.io/docs/ienoopen),
+[noSniff](https://helmetjs.github.io/docs/dont-sniff-mimetype/), and
+[noCache](https://helmetjs.github.io/docs/nocache).
+" %}
+
 See also:
 
 * Express 3.x [csrf() function](http://expressjs.com/3x/api.html#csrf).
 * [Cookies vs Tokens. Getting auth right with Angular.JS](https://auth0.com/blog/2014/01/07/angularjs-authentication-with-cookies-vs-token/)
-
-<div class="sl-hidden"><strong>REVIEW COMMENT from Rand</strong><br>
-  <ul>
-    <li>security concerns<br>
-      <ul>
-        <li>disabling the api explorer
-          <ul>
-            <li>user defined models are exposed by default...</li>
-            <li>link to creating an application - disabling api explorer section for more details</li>
-          </ul>
-        </li>
-        <li>acls to restrict access LINK to acl section</li>
-      </ul>
-    </li>
-  </ul>
-</div>

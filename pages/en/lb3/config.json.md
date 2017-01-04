@@ -20,9 +20,8 @@ Define application server-side settings in `/server/config.json`. For example 
   "host": "0.0.0.0",
   "port": 3000,
   "remoting": {
-    ... // See below
-  },
-  "legacyExplorer": false
+    // See below
+  }
 }
 ```
 
@@ -31,12 +30,14 @@ Define application server-side settings in `/server/config.json`. For example 
 The following table describes the properties you can configure.
 
 <table>
-  <tbody>
+  <thead>
     <tr>
-      <th>Property</th>
+      <th width="150">Property</th>
       <th>Description</th>
       <th>Default</th>
     </tr>
+  </thead>
+  <tbody>    
     <tr>
       <td>
         aclErrorStatus
@@ -58,7 +59,6 @@ The following table describes the properties you can configure.
       <td>legacyExplorer</td>
       <td>
         Set to <code>false</code> to disable old routes <code>/models</code> and <code>/routes</code> that are exposed, but no longer used by API Explorer; use <code>true</code> or omit the option to keep them enabled.
-        When upgrading to <code>v2.14.0</code>, set <code>"legacyExplorer": false</code>
       </td>
       <td>true</td>
     </tr>
@@ -120,13 +120,15 @@ The following table describes the remoting properties.  For more information on 
 " %}
 
 <table style="width: 800px;">
-  <tbody>
+  <thead>
     <tr>
-      <th>Property</th>
-      <th>Type</th>
+      <th width="150">Property</th>
+      <th width="150">Type</th>
       <th>Description</th>
       <th >Default</th>
     </tr>
+  </thead>
+  <tbody>
     <tr>
       <td>cors</td>
       <td>Boolean</td>
@@ -181,7 +183,7 @@ The following table describes the remoting properties.  For more information on 
       <td>true</td>
     </tr>
     <tr>
-      <td>rest.handleUnknownPaths</td>
+      <td>rest.<br/>handleUnknownPaths</td>
       <td>Boolean</td>
       <td>
         If true, then the REST adapter emits a 404 error for unknown paths. The REST error handler or the application error handler then handle this error; rest.handleErrors above.
@@ -190,7 +192,7 @@ The following table describes the remoting properties.  For more information on 
       <td>true</td>
     </tr>
     <tr>
-      <td>rest.normalizeHttpPath</td>
+      <td>rest.<br/>normalizeHttpPath</td>
       <td>Boolean</td>
       <td>
         If <code>true</code>, in HTTP paths, converts:
@@ -205,7 +207,7 @@ The following table describes the remoting properties.  For more information on 
       <td>false</td>
     </tr>
     <tr>
-      <td>rest.supportedTypes</td>
+      <td>rest.<br/>supportedTypes</td>
       <td>Array</td>
       <td>
         List of content types that the API supports in HTTP responses.
@@ -226,11 +228,11 @@ The following table describes the remoting properties.  For more information on 
       <td>false</td>
     </tr>
     <tr>
-      <td>urlencoded.extended</td>
+      <td>urlencoded.<br/>extended</td>
       <td>Boolean</td>
       <td>
-        Parse extended syntax with the <a href="https://www.npmjs.org/package/qs?__hstc=72727564.8bea7847eb7a72bf24c79993a9239205.1418422131685.1420668516065.1420670994111.11&amp;__hssc=72727564.1.1420670994111&amp;__hsfp=1793697232#readme" class="external-link" rel="nofollow">qs</a> module.
-        For more information, see <a href="https://www.npmjs.com/package/body-parser#bodyparser-urlencoded-options-" style="line-height: 1.4285715;" class="external-link" rel="nofollow">bodyParser.urlencoded()</a>.
+        Parse extended syntax with the <a href="https://www.npmjs.org/package/qs" class="external-link">qs</a> module.
+        For more information, see <a href="https://www.npmjs.com/package/body-parser#bodyparser-urlencoded-options"  class="external-link">bodyParser.urlencoded()</a>.
       </td>
       <td>true</td>
     </tr>
@@ -239,7 +241,7 @@ The following table describes the remoting properties.  For more information on 
       <td>String</td>
       <td>
         Maximum request body size.
-        For more information, see <a href="https://www.npmjs.com/package/body-parser#bodyparser-urlencoded-options-" class="external-link" rel="nofollow">bodyParser.urlencoded()</a>.
+        For more information, see <a href="https://www.npmjs.com/package/body-parser#bodyparser-urlencoded-options-" class="external-link">bodyParser.urlencoded()</a>.
       </td>
       <td>100kb</td>
     </tr>

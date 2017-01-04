@@ -19,8 +19,12 @@ The default file that the [Application generator](Application-generator.html) cr
     "mountPath": "/explorer"
   }
 }
-When configuring a local component, the .js extension is optional.
-Following is an example of a component-config.json file that loads a component installed using npm, and two local components.
+```
+
+When configuring a local component, the `.js` extension is optional.
+Following is an example of a `component-config.json` file that loads a component installed using npm, and two local components.
+
+```javascript
 {
   "loopback-component-explorer": {
     "mountPath": "/explorer"

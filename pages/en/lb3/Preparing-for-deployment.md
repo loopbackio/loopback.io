@@ -19,9 +19,9 @@ By default, a LoopBack application created with the [application generator](App
 has two kinds of configuration files in the server directory that you use to configure production settings:
 
 * [`config.json`](config.json.html) containing general application configuration.
-  You can override the settings in this file with `config._env_.json`, where _env_ is the value of `NODE_ENV` environment variable.
+  You can override the settings in this file with <code>config.<i>env</i>.json</code>, where _env_ is the value of `NODE_ENV` environment variable.
 * [`datasources.json`](datasources.json.html) containing data source configuration.
-  You can override the settings in this file with `datasources._env_.json`, where _env_ is the value of `NODE_ENV` environment variable.
+  You can override the settings in this file with <code>datasources.<i>env</i>.json</code>, where _env_ is the value of `NODE_ENV` environment variable.
 
 Set `NODE_ENV` to a string reflecting the host environment, for example "development" or "production".
 
@@ -32,10 +32,7 @@ To get ready for production, create at least two copies of these files: 
 You can create additional files (for example, `config.staging.json`) if desired.
 Then, make sure on your development system you set the `NODE_ENV` to "development" and on your production system you set `NODE_ENV` to "production".
 
-{% include note.html content="
-
-Setting `NODE_ENV` to \"production\" will automatically turn off stack traces in JSON responses.
-
+{% include note.html content="Setting `NODE_ENV` to \"production\" will automatically turn off stack traces in JSON responses.
 " %}
 
 For more information, see [Environment-specific configuration](Environment-specific-configuration.html).
@@ -57,10 +54,7 @@ For an application using [loopback-component-explorer](https://github.com/strong
 }
 ```
 
-{% include tip.html content="
-
-For an application using the old `loopback-explorer` (prior to version 2.0), disable API Explorer by deleting or renaming `server/boot/explorer.js`. 
-
+{% include tip.html content="For an application using the old `loopback-explorer` (prior to version 2.0), disable API Explorer by deleting or renaming `server/boot/explorer.js`. 
 " %}
 
 ### Other changes
