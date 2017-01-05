@@ -55,18 +55,6 @@ MyModel.on('set', function(inst) {
 
 Arguments: data, an object.
 
-## PersistedModel events
-
-PersistedModels also have a changed event that listens for model changes.
-
-For example:
-
-```javascript
-MyPersistedModel.on('changed', function(obj) {
-   console.log(obj) // => the changed model
-});
-```
-
 ## User model events
 
 The User model [`User.resetPassword()`](http://apidocs.strongloop.com/loopback/#user-resetpassword) method emits the 'resetPasswordRequest' event.

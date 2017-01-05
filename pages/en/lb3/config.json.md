@@ -106,10 +106,7 @@ Properties under the `remoting` top-level property determine how the application
     "limit": "100kb"
   },
   "cors": false,
-  "errorHandler": {
-      "debug": true,
-      "log": false
-    }
+  "handleErrors": false
 }
 ...
 ```

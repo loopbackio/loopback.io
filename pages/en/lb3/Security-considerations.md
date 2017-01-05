@@ -49,9 +49,6 @@ For an application using [loopback-component-explorer](https://github.com/strong
 }
 ```
 
-{% include tip.html content="For an application using the old `loopback-explorer` (prior to version 2.0), disable API Explorer by deleting or renaming `server/boot/explorer.js`. 
-" %}
-
 ## CORS
 
 LoopBack applications use the [cors](https://www.npmjs.com/package/cors) middleware package

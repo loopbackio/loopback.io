@@ -69,19 +69,31 @@ You may need to make the following changes:
 instead of `error.status`.  Update any clients that read the HTTP status code
 from the response body.
 - Change any uses of the `loopback#errorhandler` short-cut to  `require('strong-error-handler')`.
-- Add the following to `config.json` (or `config.development.json`):
+- Add the following to `config.json`:
 
 ```
-{
   ...
   "remoting": {
+    ...,
+    "handleErrors": false
+  }
+```
+
+This setting will not return stack traces in HTTP responses nor print errors to the console.
+
+For development, to return stack traces in HTTP responses, instead set `errorHandler.debug` to `true`;
+by default `errorHandler.log` is `true`, so the app will display errors to the console:
+
+```
+  ...
+  "remoting": {
+    ...,
     "errorHandler": {
-      "debug": true,
-      "log": false
+      "debug": true
     }
   }
-}
 ```
+
 - Add the error handler as middleware in `server/middleware.json` file:
 
 ```
@@ -184,7 +196,7 @@ For example, in `common/models/my-model.json`.
 {
   "methods": {
     "staticMethod": {
-      "isStatic": true, 
+      "isStatic": true,
       "http": { "path": "/static" }
     },
     "instanceMethod": {

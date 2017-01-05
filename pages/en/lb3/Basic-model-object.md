@@ -22,35 +22,23 @@ the [RelationMixin object](http://apidocs.strongloop.com/loopback-datasource-ju
 
 ## Events
 
-{% include important.html content="
-The following events are deprecated in favor of [operation hooks](Operation-hooks.html):
-
-* changed
-* deleted
-* deletedAll
-" %}
-
 The following table summarizes the events that LoopBack models can emit.
 
 <table>
-  <tbody>
+  <thead>
     <tr>
-      <th>Event</th>
-      <th>Emitted when...</th>
+      <th width="200">Event</th>
+      <th width="200">Emitted when...</th>
       <th>Arguments</th>
       <th>Argument type</th>
-      <th>Class methods that emit</th>
-      <th>Instance methods that emit</th>
+      <th width="180">Class methods that emit</th>
+      <th width="180">Instance methods that emit</th>
     </tr>
+  </thead>
+  <tbody>    
     <tr>
       <td>'attached'</td>
-      <td>
-        <p>Model is attached to an app.</p>
-        <div style="width: 120px;">
-          <p>&nbsp;</p>
-        </div>
-        <p><br></p>
-      </td>
+      <td>Model is attached to an app.</td>
       <td>Model class</td>
       <td>Object</td>
       <td>app.model(<em>modelName</em>)</td>
@@ -62,11 +50,8 @@ The following table summarizes the events that LoopBack models can emit.
       <td>Model class</td>
       <td>Object</td>
       <td>&nbsp;</td>
-      <td>
-        <ul>
-          <li>DataSource.prototype.createModel </li>
-          <li>DataSource.prototype.define</li>
-        </ul>
+      <td>DataSource.prototype.createModel
+          <br/>DataSource.prototype.define
       </td>
     </tr>
     <tr>
@@ -75,9 +60,7 @@ The following table summarizes the events that LoopBack models can emit.
       <td>Model instance</td>
       <td>Object</td>
       <td>&nbsp;</td>
-      <td>
-        <p>Model.prototype.setAttributes()</p>
-      </td>
+      <td>Model.prototype.setAttributes()</td>
     </tr>
   </tbody>
 </table>
