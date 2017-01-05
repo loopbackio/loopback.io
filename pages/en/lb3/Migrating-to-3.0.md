@@ -102,7 +102,7 @@ by default `errorHandler.log` is `true`, so the app will display errors to the c
     "strong-error-handler": {
       "params": {
          "debug": false,
-         "log": true,
+         "log": true
        }
     }
   }
