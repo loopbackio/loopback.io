@@ -600,6 +600,17 @@ In this case, since the `GET /` middleware ends the response chain, the "catch
 However, when you make a POST request to /, the "catch-all" route is triggered because it is declared **before** the post route.
 Doing a POST will show the console message from both the "catch-all" route and the `POST / `route.
 
+## Default middleware
+
+LoopBack (via strong-remoting) registers two error-handling middleware by default:
+
+  * `urlNotFound`: A catch-all handler converting all requests that reach the middleware into an Error object with status 404, so that 404 error responses are consistent with "usual" error responses.
+  * `errorHandler`: An instance of the [`strong-error-handler`](https://github.com/strongloop/strong-error-handler).
+
+The presence of these middleware is controlled by configuration in [`config.json`](config.json.html).
+
+Note: Scaffolded apps have strong-remoting's `errorHandler` disabled in favor of middleware.json config for `strong-error-handler`.
+
 ## Examples
 
 ### Static middleware
@@ -690,17 +701,10 @@ Instead, it will be ignored because the route was already matched.
 
 ### Error-handling middleware
 
-Use error-handling middleware to deal with request errors.
+Use error-handling middleware to deal with request errors. The  [`strong-error-handler`](https://github.com/strongloop/strong-error-handler/) middleware is scaffolded by default and sufficient for many projects, but additional custom error-handling middleware may be registered as necessary.
 While you are free to register any number of error-handling middleware, be sure to register them in the "final" phase.
-LoopBack registers two error-handling middleware by default:
 
-* `urlNotFound` middleware converts all requests that reach the middleware into an Error object with status 404,
-  so that 404 error responses are consistent with "usual" error responses.
-* `errorhandler` middleware is from the [errorhandler](https://github.com/expressjs/errorhandler) module,
-  previously available in Express v.3 as `express.errorHandler`. For information on customizing this error handler.
-  See [Customizing REST error handling](Environment-specific-configuration.html#customizing-rest-error-handling).
-
-Example of a custom error processing middleware:
+Example of a custom error-handling middleware:
 
 ```js
 module.exports = function() { 
@@ -725,3 +729,5 @@ To register this middleware:
 
 3.  Start the application.
 4.  Load [http://localhost:3000/url-does-not-exist](http://localhost:3000/url-does-not-exist) in your browser.
+
+Note: This middleware prints errors much like the `strong-error-handler` middleware. The `strong-error-handler` can be configured to not print errors by setting its [`log`](https://github.com/strongloop/strong-error-handler#log) parameter to `false`.

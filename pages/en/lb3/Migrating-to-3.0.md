@@ -68,42 +68,32 @@ You may need to make the following changes:
 - The new error handler's HTTP responses have a `error.statusCode` property
 instead of `error.status`.  Update any clients that read the HTTP status code
 from the response body.
-- Change any uses of the `loopback#errorhandler` short-cut to  `require('strong-error-handler')`.
-- Add the following to `config.json`:
+- Change any use of the `loopback#errorhandler` short-cut to `require('strong-error-handler')`.
+- Enable `strong-error-handler` by adding it to the `final:after` phase in your middleware config file (`server/middleware.json`):
 
 ```
   ...
-  "remoting": {
-    ...,
-    "handleErrors": false
-  }
-```
-
-This setting will not return stack traces in HTTP responses nor print errors to the console.
-
-For development, to return stack traces in HTTP responses, instead set `errorHandler.debug` to `true`;
-by default `errorHandler.log` is `true`, so the app will display errors to the console:
-
-```
-  ...
-  "remoting": {
-    ...,
-    "errorHandler": {
-      "debug": true
-    }
-  }
-```
-
-- Add the error handler as middleware in `server/middleware.json` file:
-
-```
-{
   "final:after": {
     "strong-error-handler": {
       "params": {
          "debug": false,
          "log": true
        }
+    }
+  }
+```
+
+- In your `config.json` file, disable `remoting.rest.handleErrors`. This will
+  instruct Loopback to respect your middleware-based configuration of the error handler:
+
+```
+{
+  ...
+  "remoting": {
+    ...
+    "rest": {
+      ...
+      "handleErrors": false
     }
   }
 }

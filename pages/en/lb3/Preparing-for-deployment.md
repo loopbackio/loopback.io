@@ -60,8 +60,8 @@ For an application using [loopback-component-explorer](https://github.com/strong
 ### Other changes
 
 When you move your app from development to staging, you may want to make additional changes.
-For example, you might want to customize REST error responses.
-See [Customizing REST error handling](Environment-specific-configuration.html#customizing-rest-error-handling) for more information.
+For example, you might want to install your own custom error-handling middleware.
+See [Error-handling middleware](Defining-middleware.html#error-handling-middleware) for more information.
 
 ## Using SSL
 

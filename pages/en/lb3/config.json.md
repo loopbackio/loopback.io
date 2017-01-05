@@ -95,7 +95,8 @@ Properties under the `remoting` top-level property determine how the application
   "context": false,
   "rest": {
     "normalizeHttpPath": false,
-    "xml": false
+    "xml": false,
+    "handleErrors": false
   },
   "json": {
     "strict": false,
@@ -105,8 +106,7 @@ Properties under the `remoting` top-level property determine how the application
     "extended": true,
     "limit": "100kb"
   },
-  "cors": false,
-  "handleErrors": false
+  "cors": false
 }
 ...
 ```
@@ -138,23 +138,12 @@ The following table describes the remoting properties.  For more information on 
       <td>Advanced feature. For more information, see <a href="Using-current-context.html">Using current context</a>.</td>
       <td>false</td>
     </tr>
-
     <tr>
-      <td>errorHandler.debug</td>
-      <td>Boolean</td>
-      <td>When enabled, HTTP responses include all error properties, including sensitive data such as file paths, URLs and stack traces.  Set to <code>true</code> during development and debugging; <code>false</code> in production.<br/><br/>
-      For more information, see <a href="Using-strong-error-handler.html">Using strong-error-handler</a>.</td>
+      <td>errorHandler</td>
+      <td>Object</td>
+      <td>Configuration passed to the strong-error-handler middleware injected by strong-remoting when <code>rest.handleErrors</code> is set true. This is typically not used, as the error handler is more commonly configured via middleware config. See <a href="Using-strong-error-handler.html">Using strong-error-handler</a></td>
       <td>false</td>
     </tr>
-
-    <tr>
-      <td>errorHandler.log</td>
-      <td>Boolean</td>
-      <td>When enabled, all errors are printed via <code>console.error</code>, including an array of fields (custom error properties) that are safe to include in response messages (both 4xx and 5xx). When not enabled, it only sends the error back in the response.<br/><br/>
-      For more information, see <a href="Using-strong-error-handler.html">Using strong-error-handler</a>. </td>
-      <td>true</td>
-    </tr>
-
     <tr>
       <td>json.limit</td>
       <td>String</td>
@@ -174,16 +163,16 @@ The following table describes the remoting properties.  For more information on 
       <td>false</td>
     </tr>
     <tr>
-      <td>handleErrors</td>
+      <td>rest.<br/>handleErrors</td>
       <td>Boolean</td>
-      <td>If true, then the REST adapter handles all errors by sending back a JSON-formatted error response. If false, then errors are passed to the top-level application error-handler.</td>
+      <td>If true, then the REST adapter handles all errors by sending back a JSON-formatted error response. If false, then errors are passed to the top-level application error-handler. This is often set to <code>false</code> to allow for error handling middleware to be set up and configured via the app's middleware config.</td>
       <td>true</td>
     </tr>
     <tr>
       <td>rest.<br/>handleUnknownPaths</td>
       <td>Boolean</td>
       <td>
-        If true, then the REST adapter emits a 404 error for unknown paths. The REST error handler or the application error handler then handle this error; rest.handleErrors above.
+        If true, then the REST adapter emits a 404 error for unknown paths. The REST error handler or the application error handler then handle this error. See rest.handleErrors above.
         If false, then the REST adapter delegates handling unknown paths to the top-level application by calling <code>next()</code>.
       </td>
       <td>true</td>
@@ -208,7 +197,7 @@ The following table describes the remoting properties.  For more information on 
       <td>Array</td>
       <td>
         List of content types that the API supports in HTTP responses.
-        The response type will match that specfied in the HTTP request "accepts" header, if it is in this list of supported types.
+        The response type will match that specified in the HTTP request "accepts" header, if it is in this list of supported types.
         If this property is set, then <code>rest.xml</code> is ignored.<br/><br/>
         NOTE: 'application/vnd.api-json' is supported, but is not one of the default types.
       </td>

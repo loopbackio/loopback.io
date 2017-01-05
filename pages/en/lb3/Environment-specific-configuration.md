@@ -130,26 +130,6 @@ For an application using [loopback-component-explorer](https://github.com/strong
 }
 ```
 
-### Customizing REST error handling
-
-You can customize the REST error handler by adding the error handler callback function to `server/config.local.js` as follows:
-
-{% include code-caption.html content="server/config.local.js" %}
-```javascript
-module.exports = {
-  remoting: {
-    errorHandler: {
-      handler: function(err, req, res, next) {
-        // custom error handling logic
-        var log = require('debug')('server:rest:errorHandler'); // example
-        log(req.method, req.originalUrl, res.statusCode, err);
-        next(); // call next() to fall back to the default error handler
-      }
-    }
-  }
-};
-```
-
 ### Include stack traces in HTTP responses
 
 By default, LoopBack 3.0 applications exclude error stack traces from HTTP responses (typical in production).  For development and debugging, you may wish to include them; to do so, set the `NODE_ENV` environment variable to `development` so the app will use `middleware.development.json`.
