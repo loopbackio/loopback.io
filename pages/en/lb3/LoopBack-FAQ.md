@@ -175,7 +175,7 @@ LoopBack models support:
 
 LoopBack does not support using JavaScript (instead of JSON) for configuration files such as [config.json](config.json.html), 
 [datasources.json](datasources.json.html), or [model-config.json](model-config.json.html), 
-to enable programmatic editing of the configuration via tools such as [StrongLoop Arc](https://docs.strongloop.com/display/APIS/Using-Arc).
+to enable programmatic editing of the configuration via tools.
 
 ### User management questions
 
@@ -239,13 +239,3 @@ Notes:
 Note: For the `resetPasswordRequest` handler callback, you are provided with an 
 [`info`](https://github.com/strongloop/loopback-faq-user-management/blob/master/common/models/user.js#L38) 
 object which contains information related to the user that is requesting the password reset.
-
-## Troubleshooting
-
-### Error message: loopback deprecated Routes "/methods" and "/models" are considered dangerous and should not be used
-
-If you see this error message, you need to update your version of LoopBack. This issue is fixed in LoopBack 2.14-.
-See [LoopBack PR #1135](https://github.com/strongloop/loopback/pull/1135).
-
-If you need to use an older version of LoopBack, or want to enable these routes,
-you can [set a property in config.json](config.json.html) to do so.
