@@ -17,7 +17,7 @@ Use `offset` as an alias for `skip`.
 
 ### REST API
 
-`?filter=[skip]=n`
+`?filter[skip]=n`
 
 You can also use [stringified JSON format](Querying-data.html#using-stringified-json-in-rest-queries) in a REST query.
 
