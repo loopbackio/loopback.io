@@ -87,7 +87,7 @@ To use your own MySQL server, enter the hostname, port number, and login credent
 ? Install loopback-connector-mysql@^2.2 Yes
 ```
 
-When the tool prompts you to install the connector, hit **Enter** to make the tool run `npm install loopback-connector-mysql --save`.  The toll will also add the data source definition to the `server/datasources.json` file, which will look as shown below.  Notice the "mysqlDs" data source you just added, as well as in-memory data source named "db," which is there by default.
+When the tool prompts you to install the connector, hit **Enter** to make the tool run `npm install loopback-connector-mysql --save`.  The tool will also add the data source definition to the `server/datasources.json` file, which will look as shown below.  Notice the "mysqlDs" data source you just added, as well as in-memory data source named "db," which is there by default.
 
 {% include code-caption.html content="/server/datasources.json" %}
 ```javascript
