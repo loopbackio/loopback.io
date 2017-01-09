@@ -1,5 +1,5 @@
 ---
-title: "Cloudant connector README"
+title: "Cloudant connector"
 lang: en
 layout: readme
 source: loopback-connector-cloudant

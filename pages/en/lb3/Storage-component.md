@@ -1,19 +1,14 @@
 ---
 title: "Storage component"
 lang: en
-layout: page
+layout: navgroup
+navgroup: storage
 keywords: LoopBack
 tags: components
 sidebar: lb3_sidebar
 permalink: /doc/en/lb3/Storage-component.html
-summary:
+summary: The LoopBack storage component enables you to upload and download files to cloud storage providers and the local (server) file system.  It has Node.js and REST APIs.
 ---
-
-{% include see-also.html content="
-* [Storage connector](Storage-connector.html)
-* [Storage component API docs](https://apidocs.strongloop.com/loopback-component-storage/)
-* [Storage component REST API](Storage-component-REST-API.html)
-" %}
 
 ## Overview
 
@@ -80,12 +75,14 @@ You can create a storage component data source either using the command-line too
 
 Create a new data source as follows:
 
+<div id="lb3apic" class="sl-hidden" markdown="1">
 ```
-$ slc create --type datasource
+$ apic create --type datasource
 [?] Enter the data-source name: myfile
 [?] Select the connector for myfile: other
 [?] Enter the connector name without the loopback-connector- prefix: loopback-component-storage
 ```
+
 
 ```shell
 $ slc loopback:datasource
@@ -154,34 +151,31 @@ Provide these credentials as properties of the JSON object argument to `createDa
 as shown in the following table.
 
 <table>
-  <tbody>
+  <thead>
     <tr>
       <th>Provider</th>
       <th>Property</th>
       <th>Description</th>
       <th>Example</th>
     </tr>
+  </thead>
+  <tbody>    
     <tr>
       <td rowspan="3">
-        <p><strong>Amazon</strong></p>
-        <p>&nbsp;</p>
+        <strong>Amazon</strong>
       </td>
-      <td>provider: 'amazon'</td>
-      <td>&nbsp;</td>
+      <td>provider</td>
+      <td>'amazon'</td>
       <td rowspan="3">
-        <div class="code panel pdl" style="border-width: 1px;">
-          <div class="codeContent panelContent pdl">
-            <pre class="theme: Emacs; brush: jscript; gutter: false" style="font-size:12px;">{
+<pre style="font-size:11px;">{
   provider: 'amazon',
   key: '...',
   keyId: '...'
 }</pre>
-          </div>
-        </div>
       </td>
     </tr>
     <tr>
-      <td>key<br><br></td>
+      <td>key</td>
       <td>Amazon key</td>
     </tr>
     <tr>
@@ -190,22 +184,16 @@ as shown in the following table.
     </tr>
     <tr>
       <td rowspan="3">
-        <p><strong>Rackspace</strong></p>
+        <strong>Rackspace</strong>
       </td>
-      <td>
-        <p>provider: 'rackspace'</p>
-      </td>
-      <td>&nbsp;</td>
+      <td>provider</td>
+      <td>'rackspace'</td>
       <td rowspan="3">
-        <div class="code panel pdl" style="border-width: 1px;">
-          <div class="codeContent panelContent pdl">
-            <pre class="theme: Emacs; brush: jscript; gutter: false" style="font-size:12px;">{
+<pre style="font-size:11px;">{
   provider: 'rackspace',
   username: '...',
   apiKey: '...'
 }</pre>
-          </div>
-        </div>
       </td>
     </tr>
     <tr>
@@ -218,20 +206,14 @@ as shown in the following table.
     </tr>
     <tr>
       <td rowspan="3"><strong>Azure</strong></td>
-      <td>
-        <p>provider: 'azure'</p>
-      </td>
-      <td>&nbsp;</td>
+      <td>provider</td>
+      <td>'azure'</td>
       <td rowspan="3">
-        <div class="code panel pdl" style="border-width: 1px;">
-          <div class="codeContent panelContent pdl">
-            <pre class="theme: Emacs; brush: jscript; gutter: false" style="font-size:12px;">{
+<pre style="font-size:11px;">{
  provider: 'azure',
  storageAccount: '...',
  storageAccessKey: '...'
 }</pre>
-          </div>
-        </div>
       </td>
     </tr>
     <tr>
@@ -244,19 +226,15 @@ as shown in the following table.
     </tr>
     <tr>
       <td rowspan="4"><strong>OpenStack</strong></td>
-      <td>provider: 'openstack'</td>
-      <td>&nbsp;</td>
+      <td>provider</td>
+      <td>'openstack'</td>
       <td rowspan="4">
-        <div class="code panel pdl" style="border-width: 1px;">
-          <div class="codeContent panelContent pdl">
-            <pre class="theme: Emacs; brush: jscript; gutter: false" style="font-size:12px;">{
+<pre style="font-size:11px;">{
  provider: 'openstack',
  username: '...',
  password: '...',
  authUrl: 'https://your-identity-service'
 }</pre>
-          </div>
-        </div>
       </td>
     </tr>
     <tr>
@@ -273,17 +251,13 @@ as shown in the following table.
     </tr>
     <tr>
       <td rowspan="2"><strong>Local File System</strong></td>
-      <td>provider: 'filesystem'</td>
-      <td>&nbsp;</td>
+      <td>provider</td>
+      <td>'filesystem'</td>
       <td rowspan="2">
-        <div class="code panel pdl" style="border-width: 1px;">
-          <div class="codeContent panelContent pdl">
-            <pre class="theme: Emacs; brush: jscript; gutter: false" style="font-size:12px;">{
+<pre style="font-size:11px;">{
   provider: 'filesystem',
   root: '/tmp/storage'
 }</pre>
-          </div>
-        </div>
       </td>
     </tr>
     <tr>
@@ -293,7 +267,7 @@ as shown in the following table.
   </tbody>
 </table>
 
-**API**
+## API
 
 Once you create a container, it will provide both a REST and Node API, as described in the following table.
 For details, see the complete [API documentation](http://apidocs.strongloop.com/loopback-component-storage/).
@@ -303,17 +277,17 @@ For details, see the complete [API documentation](http://apidocs.strongloop.com/
     <tr>
       <th>Description</th>
       <th>
-        <p>Container Model Method</p>
+        Container Model Method
       </th>
       <th>REST URI</th>
     </tr>
     <tr>
       <td>List all containers.</td>
       <td>
-        <p>getContainers(cb)</p>
+        getContainers(cb)
         <div style="300px;">
-          <p>&nbsp;</p>
-        </div>
+          &nbsp;
+
       </td>
       <td><span>GET<br></span><span>/api/containers</span></td>
     </tr>

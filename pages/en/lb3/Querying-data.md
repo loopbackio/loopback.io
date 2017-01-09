@@ -31,52 +31,53 @@ The capabilities and options of the two APIs are the same–the only difference 
 In both cases, LoopBack models return JSON.
 
 <table>
-  <tbody>
+  <thead>
     <tr>
       <th>Query</th>
       <th>Model API (Node)</th>
       <th>REST API</th>
     </tr>
+  </thead>
+  <tbody>    
     <tr>
       <td>
-        <p>Find all model instances using specified filters.&nbsp;</p>
-        <p>&nbsp;</p>
+        Find all model instances using specified filters.
       </td>
       <td>
-        <p><code><a href="https://apidocs.strongloop.com/loopback/#persistedmodel-find" class="external-link" rel="nofollow">find(filter, callback)</a></code></p>
-        <p>Where filter is a JSON object containing the query filters.</p>
-        <p>See <a href="Querying-data.html">Filters</a> below.</p>
+        <code><a href="https://apidocs.strongloop.com/loopback/#persistedmodel-find" class="external-link">find(filter, callback)</a></code>
+        Where filter is a JSON object containing the query filters.
+        See <a href="Querying-data.html">Filters</a> below.
       </td>
       <td>
-        <p> <code>GET /<em>modelName</em>?filter...</code></p>
-        <p>See <a href="PersistedModel-REST-API.html#find-matching-instances">Model REST API - Find matching instances</a>.</p>
-        <p><span>See </span><a href="Querying-data.html">Filters</a> <span> below.</span></p>
+         <code>GET /<em>modelName</em>?filter...</code>
+        See <a href="PersistedModel-REST-API.html#find-matching-instances">Model REST API - Find matching instances</a>.
+        <span>See </span><a href="Querying-data.html">Filters</a> <span> below.</span>
       </td>
     </tr>
     <tr>
       <td>Find first model instance using specified filters.</td>
       <td>
-        <p><code><a href="https://apidocs.strongloop.com/loopback/#persistedmodel-findone" class="external-link" rel="nofollow">findOne(filter, callback)</a></code></p>
-        <p>Where filter is a JSON object containing the query filters.</p>
-        <p><span>See </span><a href="Querying-data.html">Filters</a> <span> below.</span></p>
+        <code><a href="https://apidocs.strongloop.com/loopback/#persistedmodel-findone" class="external-link">findOne(filter, callback)</a></code>
+        Where filter is a JSON object containing the query filters.
+        <span>See </span><a href="Querying-data.html">Filters</a> <span> below.</span>
       </td>
       <td>
-        <p><code><span>GET /<em>modelName</em>/findOne?filter...</span></code></p>
-        <p>See <a href="PersistedModel-REST-API.html#find-first-instance">Model REST API - Find first instance</a>.&nbsp;</p>
-        <p><span>See </span><a href="Querying-data.html">Filters</a> <span> below.</span></p>
+        <code><span>GET /<em>modelName</em>/findOne?filter...</span></code>
+        See <a href="PersistedModel-REST-API.html#find-first-instance">Model REST API - Find first instance</a>.
+        <span>See </span><a href="Querying-data.html">Filters</a> <span> below.</span>
       </td>
     </tr>
     <tr>
       <td>Find instance by ID.</td>
       <td>
-        <p><code><a href="https://apidocs.strongloop.com/loopback/#persistedmodel-findbyid" class="external-link" rel="nofollow">findById(id, [filter,] callback)</a></code></p>
-        <p>Where optional filter is a JSON object <span>containing the query filters.</span></p>
-        <p><span><span>See </span><a href="Querying-data.html">Filters</a> <span> below.</span></span>
-        </p>
+        <code><a href="https://apidocs.strongloop.com/loopback/#persistedmodel-findbyid" class="external-link">findById(id, [filter,] callback)</a></code>
+        Where optional filter is a JSON object <span>containing the query filters.</span>
+        <span><span>See </span><a href="Querying-data.html">Filters</a> <span> below.</span></span>
+
       </td>
       <td>
-        <p><code><span>GET /</span><em>modelName</em><span>/</span><em>modelID</em></code></p>
-        <p>See <a href="PersistedModel-REST-API.html#find-instance-by-id">Model REST API - Find instance by ID</a>.</p>
+        <code><span>GET /</span><em>modelName</em><span>/</span><em>modelID</em></code>
+        See <a href="PersistedModel-REST-API.html#find-instance-by-id">Model REST API - Find instance by ID</a>.
       </td>
     </tr>
   </tbody>
@@ -142,48 +143,48 @@ The following table describes LoopBack's filter types:
       <td>fields</td>
       <td>Object, Array, or String</td>
       <td>
-        <p>Specify fields to include in or exclude from the response.</p>
-        <p>See <a href="Fields-filter.html">Fields filter</a>.</p>
+        Specify fields to include in or exclude from the response.
+        See <a href="Fields-filter.html">Fields filter</a>.
       </td>
     </tr>
     <tr>
       <td>include</td>
       <td>String, Object, or Array</td>
       <td>
-        <p>Include results from related models, for relations such as&nbsp;<em>belongsTo</em>&nbsp;and&nbsp;<em>hasMany</em>.</p>
-        <p>See <a href="Include-filter.html">Include filter</a>.</p>
+        Include results from related models, for relations such as<em>belongsTo</em>and<em>hasMany</em>.
+        See <a href="Include-filter.html">Include filter</a>.
       </td>
     </tr>
     <tr>
       <td>limit</td>
       <td>Number</td>
       <td>
-        <p>Limit the number of instances to return.</p>
-        <p>See <a href="Limit-filter.html">Limit filter</a>.</p>
+        Limit the number of instances to return.
+        See <a href="Limit-filter.html">Limit filter</a>.
       </td>
     </tr>
     <tr>
       <td>order</td>
       <td>String</td>
       <td>
-        <p>Specify sort order: ascending or descending.</p>
-        <p>See <a href="Order-filter.html">Order filter</a>.</p>
+        Specify sort order: ascending or descending.
+        See <a href="Order-filter.html">Order filter</a>.
       </td>
     </tr>
     <tr>
       <td>skip (offset)</td>
       <td>Number</td>
       <td>
-        <p>Skip the specified number of instances.</p>
-        <p>See <a href="Skip-filter.html">Skip filter</a>.</p>
+        Skip the specified number of instances.
+        See <a href="Skip-filter.html">Skip filter</a>.
       </td>
     </tr>
     <tr>
       <td>where</td>
       <td>Object</td>
       <td>
-        <p>Specify search criteria; similar to a WHERE clause in SQL.</p>
-        <p>See <a href="Where-filter.html">Where filter</a>.</p>
+        Specify search criteria; similar to a WHERE clause in SQL.
+        See <a href="Where-filter.html">Where filter</a>.
       </td>
     </tr>
   </tbody>
