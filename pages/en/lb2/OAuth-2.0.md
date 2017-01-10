@@ -141,7 +141,7 @@ The following options are available for an authorization server:
     </tr>
     <tr>
       <td>&nbsp;decisionPath</td>
-      <td><span>String or</span><br><span>Boolean (only false)</span></td>
+      <td><span><br>String or</span><br><span>Boolean (only false)</span></td>
       <td>
         <p><span>If String, specifies the p</span>ath to mount the decision endpoint.</p>
         <p>If false, do not set up the decision endpoint</p>
@@ -150,7 +150,7 @@ The following options are available for an authorization server:
     </tr>
     <tr>
       <td>decisionView</td>
-      <td>String</td>
+      <td><br>String</td>
       <td>
         <p>Server-side view name to render the decision dialog. The input for the view is:</p>
         <ul>
@@ -165,7 +165,7 @@ The following options are available for an authorization server:
     </tr>
     <tr>
       <td>decisionPage</td>
-      <td>String</td>
+      <td><br>String</td>
       <td>
         <p>URL to the decision dialog page. Overrides decisionView. The query parameters are:</p>
         <ul class="task-list">
