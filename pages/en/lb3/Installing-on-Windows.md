@@ -6,7 +6,7 @@ keywords: LoopBack
 tags: installation
 sidebar: lb3_sidebar
 permalink: /doc/en/lb3/Installing-on-Windows.html
-summary: Follow the procedure below to install StrongLoop on MacOS.
+summary: Follow the procedure below to install StrongLoop on Windows.
 ---
 
 Installing Node and StrongLoop on Windows presents some special challenges and requirements. 
