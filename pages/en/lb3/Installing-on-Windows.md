@@ -127,3 +127,14 @@ set GYP_MSVS_VERSION=2012
 ```
 
 Or append `npm --msvs_version=2012` or `--msvs_version=2013` (as appropriate) to the end of npm install commands, for example: `npm install -g strongloop --msvs_version=2012`.
+
+If you are behind a corporate proxy, you may need to configure npm to use it:
+
+```
+npm config set proxy http://proxy.company.com:8080
+npm config set https-proxy http://proxy.company.com:8080
+```
+
+
+
+
