@@ -10,6 +10,8 @@ permalink: /doc/en/lb3/Using-current-context.html
 summary:
 ---
 
+## Overview
+
 LoopBack applications sometimes need to access context information to implement the business logic, for example to:
 
 * Access the currently logged-in user.
@@ -26,12 +28,12 @@ As a result, the current-context feature does not work in many situations,
 see [loopback-context issues](https://github.com/strongloop/loopback-context/issues)
 and [related issues in loopback](https://github.com/strongloop/loopback/issues?utf8=%E2%9C%93&q=is%3Aissue%20getCurrentContext).
 
-To address this problem, LoopBack 3.0 moves all current-context-related code to
+To address this problem, LoopBack 3.0 moved all current-context-related code to
 [loopback-context](https://github.com/strongloop/loopback-context) module
 and removed all current-context APIs (see
 [Release Notes](3.0-Release-Notes.html#current-context-api-and-middleware-removed)).
 
-However, applications clearly need to acces information like the currently
+However, applications clearly need to access information like the currently
 logged-in user in application logic, for example in
 [Operation hooks](Operation-hooks.html). Until there is a reliable
 implementation of continuation-local-storage available for Node.js,
@@ -50,6 +52,7 @@ as `context.options`.
 You must safely initialize the `options` parameter when a method is invoked
 via REST API, ensuring that clients cannot override sensitive information like
 the currently logged-in user.  Doing so requires two steps:
+
 - Annotate "options" parameter in remoting metadata
 - Customize the value provided to "options"
 
@@ -90,11 +93,14 @@ method returns an object with a single property `accessToken` containing
 the `AccessToken` instance used to authenticate the request.
 
 There are several ways to customize this value:
+
 - Override `createOptionsFromRemotingContext` in your model.
 - Use a "beforeRemote" hook.
 - Use a custom strong-remoting phase.
 
 ### Override `createOptionsFromRemotingContext` in your model
+
+For example:
 
 ```js
 MyModel.createOptionsFromRemotingContext = function(ctx) {
@@ -105,13 +111,13 @@ MyModel.createOptionsFromRemotingContext = function(ctx) {
 };
 ```
 
-A better approach is to write a mixin that overrides this method and that can
+A better approach is to write a mix-in that overrides this method and that can
 be shared between multiple models.
 
 ### Use a "beforeRemote" hook
 
 Because the "options" parameter is a regular method parameter, you can access
-it from remote hooks via `ctx.args.options`.
+it from remote hooks via `ctx.args.options`; for example:
 
 ```js
 MyModel.beforeRemote('saveOptions', function(ctx, unused, next) {
@@ -124,7 +130,7 @@ MyModel.beforeRemote('saveOptions', function(ctx, unused, next) {
 })
 ```
 
-Again, a hook like this can be reused by placing the code in a mixin.
+Again, you can reuse a hook like this by placing the code in a mix-in.
 
 It may not always be possible to control the order in which remote hooks are
 executed. If you need to control the order, then use a custom
