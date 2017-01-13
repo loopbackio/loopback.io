@@ -187,6 +187,24 @@ Example data sources:
 }
 ```
 
+You can also configure your datasource._\_env\__.js file to use environment variables:
+
+{% include code-caption.html content="datasources.production.json" %}
+```javascript
+module.exports = {
+  db: {
+    connector: 'mongodb',
+    hostname: process.env.DB_HOST,
+    port: process.env.DB_PORT || 27017,
+    user: process.env.DB_USER,
+    password: process.env.DB_PASSWORD,
+    database: 'myapp',
+  }
+```
+
+In the above example, running `export PRODUCTION=true` (or `set PRODUCTION=true` for Windows) will load
+the datasource.
+
 ## Getting values from environment variables
 
 You can easily set an environment variable when you run an application. The command you use depends on your operating system.
