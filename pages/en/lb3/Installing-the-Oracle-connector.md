@@ -23,24 +23,26 @@ The Oracle connector version 3.0.0 or above depends on the [oracledb](https://g
 The [LoopBack Oracle Installer](https://github.com/strongloop/loopback-oracle-installer) module takes care of the binary dependencies and simplifies the whole process. The installer automatically downloads and extracts the prebuilt `oracledb` to /loopback-connector-oracle/node_modules directory and Oracle Database Instant Client into `<UserHomeDirectory>/oracle-instant-client`. 
 If a prebuilt bundle does not exist for your client platform and node version, the installer prompts the user to install oracle pre-requisites offline following instructions for their OS in https://github.com/oracle/node-oracledb/blob/master/INSTALL.md. 
 
-Additional steps on OS X: 
-```
-ln -s libocci.dylib.12.1 libocci.dylib
-export OCI_INCLUDE_DIR=~/instantclient_11_2/sdk/include
-```
 Once oracle pre-requisites are installed, user needs to re install loopback-connector-oracle node module by executing 'npm install loopback-connector-oracle --save' which will internally execute 'npm install oracledb' installing oracledb node module successfully. 
 
 Troubleshooting Tip: If you have problem installing loopback-connector-oracle make sure these env variables are set and these symbolic links exist. For e.g on OS X
 
-```
-export OCI_HOME=$HOME/instantclient_11_2
-export OCI_LIB_DIR=$OCI_HOME
-export OCI_INCLUDE_DIR=$OCI_HOME/sdk/include
-export OCI_INC_DIR=$OCI_INCLUDE_DIR
+``` 
+export OCI_LIB_DIR=$HOME/oracle-instant-client 
+export OCI_INC_DIR=$HOME/oracle-instant-client/sdk/include
 
-libclntsh.dylib -> libclntsh.dylib.11.1
-libocci.dylib -> libocci.dylib.11.1
+If a prebuilt bundle does not exist for your client platform and node version, and you have installed 
+oracle pre-requisites as per https://github.com/oracle/node-oracledb/blob/master/INSTALL.md then,
+
+export OCI_LIB_DIR=/opt/oracle/instantclient
+export OCI_INC_DIR=/opt/oracle/instantclient/sdk/include
+
 ```
+
+```
+libclntsh.dylib -> libclntsh.dylib.11.1
+```
+
 
 ## Post installation setup
 
