@@ -36,7 +36,6 @@ If you created the model with the [Model generator](Model-generator.html), then
 For example, if you create a model named \"FooBar\" with the model generator, it creates files `foo-bar.json` and `foo-bar.js` in `common/models`. 
 However, the model name (\"FooBar\") will be preserved via the model's name property.
 " %} 
-
 ### Example
 
 See additional introductory examples in [Extend your API](Extend-your-API.html).
@@ -99,7 +98,7 @@ The options argument is a Javascript object containing key/value pairs to config
 <table width="800">
   <thead>
     <tr>
-      <th width="50">Option</th>
+      <th width="120">Option</th>
       <th>Description</th>
       <th width="260">Example</th>
     </tr>
@@ -140,7 +139,7 @@ The options argument is a Javascript object containing key/value pairs to config
       </td>
     </tr>
     <tr>
-      <td>http.verb</td>
+      <td><a name="http.verb"></a>http.verb</td>
       <td>
         HTTP method (verb) at which the method is available. One of:
         <ul>
@@ -210,12 +209,14 @@ The `accepts` and `returns` options properties define either a single argume
 The following table describes the properties of each individual argument.
 
 <table>
-  <tbody>
+  <thead>
     <tr>
-      <th>Property (key)</th>
+      <th width="100">Property (key)</th>
       <th width="100">Type</th>
       <th>Description</th>
     </tr>
+  </thead>
+  <tbody>    
     <tr>
       <td>arg</td>
       <td>String</td>
@@ -484,20 +485,6 @@ The access type for custom remote methods is Execute.
 ### Basic use
 
 For example, to deny invocation of the `greet` method used in the examples above:
-
-**shell**
-
-```shell
-$ slc loopback:acl
-[?] Select the model to apply the ACL entry to: Person
-[?] Select the ACL scope: A single method
-[?] Enter the method name: greet
-[?] Select the access type: Execute
-[?] Select the role: All users
-[?] Select the permission to apply: Explicitly deny access
-```
-
-**shell**
 
 ```shell
 $ slc loopback:acl

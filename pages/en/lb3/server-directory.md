@@ -13,6 +13,7 @@ The `/server` directory contains files that create the backend LoopBack (Node) a
 
 The standard files in this directory are:
 
+* [component-config.json](component-config.json.html)
 * [config.json](config.json.html)
 * [datasources.json](datasources.json.html)
 * [middleware.json](middleware.json.html)

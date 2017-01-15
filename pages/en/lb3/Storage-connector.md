@@ -1,19 +1,14 @@
 ---
 title: "Storage connector"
 lang: en
-layout: page
+layout: navgroup
+navgroup: storage
 keywords: LoopBack
 tags: connectors
 sidebar: lb3_sidebar
 permalink: /doc/en/lb3/Storage-connector.html
 summary: The storage connector enables LoopBack applications to interact with files on cloud storage providers and the local (server) file system.
 ---
-
-{% include see-also.html content="
-* [Storage component](Storage-component.html)
-* [Storage component API docs](https://apidocs.strongloop.com/loopback-component-storage/)
-* [Storage component REST API](Storage-component-REST-API.html)
-" %}
 
 ## Installation
 
@@ -43,7 +38,7 @@ When prompted, select **other** as the connector.
 
 At the prompt "**Enter the connector name without the loopback-connector- prefix,**" enter **storage**.
 
-This creates an entry in `datasources.json` like this (for example):
+This creates an entry in `datasources.json` like this (for example): 
 
 {% include code-caption.html content="/server/datasources.json" %}
 ```javascript

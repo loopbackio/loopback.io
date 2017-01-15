@@ -116,8 +116,8 @@ function myMiddlewareFunc([err,] req, res, next) {
       <td>Object</td>
       <td>Required for error-handling middleware.</td>
       <td>
-        <p>Use <em>only</em> for error-handling middleware.</p>
-        <p>Error object, usually an instance or <code>Error</code>; for more information, see <a href="Error-object.html">Error object</a>.</p>
+        Use <em>only</em> for error-handling middleware.
+        Error object, usually an instance or <code>Error</code>; for more information, see <a href="Error-object.html">Error object</a>.
       </td>
     </tr>
     <tr>
@@ -125,7 +125,7 @@ function myMiddlewareFunc([err,] req, res, next) {
       <td>Object</td>
       <td>No</td>
       <td>
-        <p>The Express <a href="http://expressjs.com/4x/api.html#request" class="external-link" rel="nofollow">request object</a>.</p>
+        The Express <a href="http://expressjs.com/4x/api.html#request" class="external-link" rel="nofollow">request object</a>.
       </td>
     </tr>
     <tr>
@@ -133,7 +133,7 @@ function myMiddlewareFunc([err,] req, res, next) {
       <td>Object</td>
       <td>No</td>
       <td>
-        <p>The Express <a href="http://expressjs.com/4x/api.html#response" class="external-link" rel="nofollow">response object</a>.</p>
+        The Express <a href="http://expressjs.com/4x/api.html#response" class="external-link" rel="nofollow">response object</a>.
       </td>
     </tr>
     <tr>
@@ -207,18 +207,49 @@ it creates a default `middleware.json` file that looks as follows:
     "loopback#favicon": {}
   },
   "initial": {
-    "compression": {}
+    "compression": {},
+    "cors": {
+      "params": {
+        "origin": true,
+        "credentials": true,
+        "maxAge": 86400
+      }
+    },
+    "helmet#xssFilter": {},
+    "helmet#frameguard": {
+      "params": [
+        "deny"
+      ]
+    },
+    "helmet#hsts": {
+      "params": {
+        "maxAge": 0,
+        "includeSubdomains": true
+      }
+    },
+    "helmet#hidePoweredBy": {},
+    "helmet#ieNoOpen": {},
+    "helmet#noSniff": {},
+    "helmet#noCache": {
+      "enabled": false
+    }
   },
   "session": {},
   "auth": {},
   "parse": {},
-  "routes": {},
+  "routes": {
+    "loopback#rest": {
+      "paths": [
+        "${restApiRoot}"
+      ]
+    }
+  },
   "files": {},
   "final": {
     "loopback#urlNotFound": {}
   },
   "final:after": {
-    "errorhandler": {}
+    "strong-error-handler": {}
   }
 }
 ```
@@ -274,13 +305,15 @@ Additionally, you can use the shorthand format `{_module_}#{_fragment_}`, wher
 You can specify the following properties in each middleware section. They are all optional:
 
 <table>
-  <tbody>
+  <thead>
     <tr>
-      <th>Property</th>
-      <th>Type</th>
+      <th width="100">Property</th>
+      <th width="100">Type</th>
       <th>Description</th>
       <th>Default</th>
     </tr>
+  </thead>
+  <tbody>
     <tr>
       <td>name</td>
       <td>String</td>
@@ -291,7 +324,7 @@ You can specify the following properties in each middleware section. They are al
       <td>enabled</td>
       <td>Boolean</td>
       <td>
-        <p>Whether to register or enable the middleware. You can override this property in environment-specific files, for example to disable certain middleware when running in production. For more information, see <a href="Defining-middleware.html">Environment-specific configuration</a></p>
+        Whether to register or enable the middleware. You can override this property in environment-specific files, for example to disable certain middleware when running in production. For more information, see <a href="Defining-middleware.html">Environment-specific configuration</a>
       </td>
       <td>true</td>
     </tr>
@@ -299,22 +332,22 @@ You can specify the following properties in each middleware section. They are al
       <td>params</td>
       <td>Object or Array</td>
       <td>
-        <p>Parameters to pass to the middleware handler (constructor) function. Most middleware constructors take a single "options" object parameter; in that case the&nbsp;<code>params</code>&nbsp;value is that object.</p>
-        <p>To specify a project-relative path (for example, to a directory containing static assets), start the string with the prefix&nbsp;<code>$!</code>. Such values are interpreted as paths relative to the file&nbsp;<code>middleware.json</code>. &nbsp;</p>
-        <p>See examples below.</p>
+        Parameters to pass to the middleware handler (constructor) function. Most middleware constructors take a single "options" object parameter; in that case the <code>params</code> value is that object.
+        To specify a project-relative path (for example, to a directory containing static assets), start the string with the prefix <code>$!</code>. Such values are interpreted as paths relative to the file <code>middleware.json</code>.  
+        See examples below.
       </td>
       <td>N/A</td>
     </tr>
     <tr>
       <td>methods</td>
-      <td>String[]</td>
+      <td>String[ ]</td>
       <td>Specifies the HTTP methods, such as 'GET', 'POST', and 'PUT'. If not present, it will apply to all methods.</td>
       <td>N/A</td>
     </tr>
     <tr>
       <td>paths</td>
-      <td>String[]</td>
-      <td>Specifies the REST endpoint(s) that trigger the middleware. In addition to a literal string, route can be a path matching pattern, a regular expression, or an array including all these types. For more information, see the&nbsp;<a href="http://expressjs.com/4x/api.html#app.use" class="external-link" rel="nofollow">app.use (Express documentation)</a>.&nbsp;</td>
+      <td>String[ ]</td>
+      <td>Specifies the REST endpoint(s) that trigger the middleware. In addition to a literal string, route can be a path matching pattern, a regular expression, or an array including all these types. For more information, see the <a href="http://expressjs.com/4x/api.html#app.use" class="external-link" rel="nofollow">app.use (Express documentation)</a>. </td>
       <td>Triggers on all routes</td>
     </tr>
     <tr>
@@ -323,7 +356,7 @@ You can specify the following properties in each middleware section. They are al
       <td>Specify whether the middleware is optional. Optional middleware do not throw, even if they are not installed or cannot be resolved in the file system.</td>
       <td>N/A</td>
     </tr>
-  </tbody>
+  </tbody>    
 </table>
 
 Example of a typical middleware function that takes a single "options" object parameter: 
@@ -381,9 +414,9 @@ Example or an entry for static middleware to serve content from the `multiple`�
 
 For any middleware configuration property, you can specify a variable in the value using the following syntax:
 
-`${_var_}`
+`${ <var> }`
 
-Where _var_ is a property of the [`app`](https://apidocs.strongloop.com/loopback/#var-app-loopback) object. These properties include:
+Where `<var>` is a property of the [`app`](https://apidocs.strongloop.com/loopback/#var-app-loopback) object. These properties include:
 
 * [Application-wide properties](config.json.html#top-level-properties) such as those defined in `config.json`.
 * [Express app object properties](http://expressjs.com/4x/api.html#app.settings.table).
@@ -401,8 +434,7 @@ during the routes phase at the path resolved by `app.get('restApiRoot')`, which 
 }
 ```
 
-The following example loads hypothetical middleware named `environmental` during the routes phase at the return value of `app.get(env)`,
-typically either `/development` or `/production`.
+The following example loads hypothetical middleware named `environmental` during the routes phase at the return value of `app.get(env)`, typically either `/development` or `/production`.
 
 ```js
 {
@@ -433,7 +465,7 @@ For example, below is a `middleware.json` file defining a new phase "log" that
 
 ### Environment-specific configuration
 
-You can further customize configuration through `middleware.local.js`, `middleware.local.json`, and `middleware._env_.js` or `middleware._env_.json`,
+You can further customize configuration through `middleware.local.js`, `middleware.local.json`, and <code>middleware.<i>env</i>.js</code> or <code>middleware.<i>env</i>.json</code>,
 where _`env`_ is the value of `NODE_ENV` environment variable (typically `development` or `production`).
 
 See [Environment-specific configuration](Environment-specific-configuration.html) for more information.
@@ -459,21 +491,16 @@ For example:
 ```javascript
 var loopback = require('loopback');
 var morgan = require('morgan');
-var errorhandler = require('error-handler');
 
 var app = loopback();
 
 app.middleware('routes:before', morgan('dev'));
-app.middleware('final', errorhandler());
 app.middleware('routes', loopback.rest());
 ```
 
 ### Using the Express API
 
-{% include important.html content="
-
-When you register middleware with the Express API, it is always executed at the beginning of the `routes` phase.
-
+{% include important.html content="When you register middleware with the Express API, it is always executed at the beginning of the `routes` phase.
 " %}
 
 You can define middleware the "regular way" you do with Express in the main application script file, `/server/server.js` by calling 
@@ -520,9 +547,9 @@ app.use('/status', function(req, res, next) {
 
 #### Specifying routes
 
-The `_route_` parameter is a string that specifies the REST endpoint that will trigger the middleware.
+The _`route`_ parameter is a string that specifies the REST endpoint that will trigger the middleware.
 If you don't provide the parameter, then the middleware will trigger on all routes.
-In addition to a literal string, `_route_` can be a path matching pattern, a regular expression, or an array including all these types.
+In addition to a literal string, _`route`_ can be a path matching pattern, a regular expression, or an array including all these types.
 For more information, see the [Express documentation for app.use()](http://expressjs.com/4x/api.html#app.use).
 
 For example, to register middleware for all endpoints that start with "/greet":
@@ -534,10 +561,7 @@ app.use('/greet', function(req, res, next ) { 
 });
 ```
 
-{% include important.html content="
-
-The above middleware is triggered by all routes that begin with \"/greet\", so \"/greet/you\", \"greet/me/and/you\" will all trigger it..
-
+{% include important.html content="The above middleware is triggered by all routes that begin with \"/greet\", so \"/greet/you\", \"greet/me/and/you\" will all trigger it..
 " %}
 
 To register middleware for _all_ endpoints:
@@ -576,6 +600,17 @@ In this case, since the `GET /` middleware ends the response chain, the "catch
 However, when you make a POST request to /, the "catch-all" route is triggered because it is declared **before** the post route.
 Doing a POST will show the console message from both the "catch-all" route and the `POST / `route.
 
+## Default middleware
+
+LoopBack (via strong-remoting) registers two error-handling middleware by default:
+
+  * `urlNotFound`: A catch-all handler converting all requests that reach the middleware into an Error object with status 404, so that 404 error responses are consistent with "usual" error responses.
+  * `errorHandler`: An instance of the [`strong-error-handler`](https://github.com/strongloop/strong-error-handler).
+
+The presence of these middleware is controlled by configuration in [`config.json`](config.json.html).
+
+Note: Scaffolded apps have strong-remoting's `errorHandler` disabled in favor of middleware.json config for `strong-error-handler`.
+
 ## Examples
 
 ### Static middleware
@@ -597,10 +632,7 @@ Example or an entry for static middleware to serve content from the `client` d
 Use pre-processing middleware to apply custom logic for various endpoints in your application.
 Do this by registering handler functions to perform certain operations when HTTP requests are made to specific endpoint or endpoints.
 
-{% include important.html content="
-
-Always register pre-processing middleware in a phase before `routes`, for example `initial` or `parse`.
-
+{% include important.html content="Always register pre-processing middleware in a phase before `routes`, for example `initial` or `parse`.
 " %}
 
 Pre-processing middleware must call `next()` at the end of the handler function to pass control to the next middleware.
@@ -624,7 +656,7 @@ module.exports = function() {
 };
 ```
 
-This middleware tells the server to display the time it takes to process the incoming HTTP request on all application routes.
+This middleware function tells the server to display the time it takes to process the incoming HTTP request on all application routes.
 
 You can see this middleware in action in using the basic LoopBack application from Getting started with LoopBack (or any standard LoopBack application):
 
@@ -663,26 +695,16 @@ For routes serving JSON, best practice is to create a new model and implement
 For routes serving non-JSON responses, best practice is to define them the standard "Express way" in `server.js` or a boot script.
 For more information, see [Routing](Routing.html) and [Routing (Express documentation)](http://expressjs.com/guide/routing.html).
 
-{% include note.html content="
-
-If you add middleware on the `route` or `route:after` phase, it will not execute _after_ the route is matched.
+{% include note.html content="If you add middleware on the `route` or `route:after` phase, it will not execute _after_ the route is matched.
 Instead, it will be ignored because the route was already matched.
-
 " %}
 
 ### Error-handling middleware
 
-Use error-handling middleware to deal with request errors.
+Use error-handling middleware to deal with request errors. The  [`strong-error-handler`](https://github.com/strongloop/strong-error-handler/) middleware is scaffolded by default and sufficient for many projects, but additional custom error-handling middleware may be registered as necessary.
 While you are free to register any number of error-handling middleware, be sure to register them in the "final" phase.
-LoopBack registers two error-handling middleware by default:
 
-* `urlNotFound` middleware converts all requests that reach the middleware into an Error object with status 404,
-  so that 404 error responses are consistent with "usual" error responses.
-* `errorhandler` middleware is from the [errorhandler](https://github.com/expressjs/errorhandler) module,
-  previously available in Express v.3 as `express.errorHandler`. For information on customizing this error handler.
-  See [Customizing REST error handling](Environment-specific-configuration.html#customizing-rest-error-handling).
-
-Example of a custom error processing middleware:
+Example of a custom error-handling middleware:
 
 ```js
 module.exports = function() { 
@@ -707,3 +729,5 @@ To register this middleware:
 
 3.  Start the application.
 4.  Load [http://localhost:3000/url-does-not-exist](http://localhost:3000/url-does-not-exist) in your browser.
+
+Note: This middleware prints errors much like the `strong-error-handler` middleware. The `strong-error-handler` can be configured to not print errors by setting its [`log`](https://github.com/strongloop/strong-error-handler#log) parameter to `false`.

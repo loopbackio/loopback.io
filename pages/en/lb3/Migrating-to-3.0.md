@@ -68,30 +68,32 @@ You may need to make the following changes:
 - The new error handler's HTTP responses have a `error.statusCode` property
 instead of `error.status`.  Update any clients that read the HTTP status code
 from the response body.
-- Change any uses of the `loopback#errorhandler` short-cut to  `require('strong-error-handler')`.
-- Add the following to `config.json` (or `config.development.json`):
+- Change any use of the `loopback#errorhandler` short-cut to `require('strong-error-handler')`.
+- Enable `strong-error-handler` by adding it to the `final:after` phase in your middleware config file (`server/middleware.json`):
+
+```
+  ...
+  "final:after": {
+    "strong-error-handler": {
+      "params": {
+         "debug": false,
+         "log": true
+       }
+    }
+  }
+```
+
+- In your `config.json` file, disable `remoting.rest.handleErrors`. This will
+  instruct Loopback to respect your middleware-based configuration of the error handler:
 
 ```
 {
   ...
   "remoting": {
-    "errorHandler": {
-      "debug": true,
-      "log": false
-    }
-  }
-}
-```
-- Add the error handler as middleware in `server/middleware.json` file:
-
-```
-{
-  "final:after": {
-    "strong-error-handler": {
-      "params": {
-         "debug": false,
-         "log": true,
-       }
+    ...
+    "rest": {
+      ...
+      "handleErrors": false
     }
   }
 }
@@ -184,7 +186,7 @@ For example, in `common/models/my-model.json`.
 {
   "methods": {
     "staticMethod": {
-      "isStatic": true, 
+      "isStatic": true,
       "http": { "path": "/static" }
     },
     "instanceMethod": {
@@ -478,7 +480,7 @@ follow these steps:
       // ...
       "remoting": {
         // ...
-        "cors": true,
+        "cors": false,
         // ...
       }
     }

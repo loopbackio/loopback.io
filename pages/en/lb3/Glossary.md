@@ -4,8 +4,8 @@ toc: false
 lang:  en
 keywords:  LoopBack
 tags:  [reference]
-sidebar:  lb2_sidebar
-permalink:  /doc/en/lb2/Glossary.html
+sidebar:  lb3_sidebar
+permalink:  /doc/en/lb3/Glossary.html
 summary: Definitions of common LoopBack terms.
 ---
 <div style="float:right; width: 80px;">

@@ -20,9 +20,8 @@ Define application server-side settings in `/server/config.json`. For example 
   "host": "0.0.0.0",
   "port": 3000,
   "remoting": {
-    ... // See below
-  },
-  "legacyExplorer": false
+    // See below
+  }
 }
 ```
 
@@ -31,12 +30,14 @@ Define application server-side settings in `/server/config.json`. For example 
 The following table describes the properties you can configure.
 
 <table>
-  <tbody>
+  <thead>
     <tr>
-      <th>Property</th>
+      <th width="150">Property</th>
       <th>Description</th>
       <th>Default</th>
     </tr>
+  </thead>
+  <tbody>    
     <tr>
       <td>
         aclErrorStatus
@@ -58,7 +59,6 @@ The following table describes the properties you can configure.
       <td>legacyExplorer</td>
       <td>
         Set to <code>false</code> to disable old routes <code>/models</code> and <code>/routes</code> that are exposed, but no longer used by API Explorer; use <code>true</code> or omit the option to keep them enabled.
-        When upgrading to <code>v2.14.0</code>, set <code>"legacyExplorer": false</code>
       </td>
       <td>true</td>
     </tr>
@@ -95,7 +95,8 @@ Properties under the `remoting` top-level property determine how the application
   "context": false,
   "rest": {
     "normalizeHttpPath": false,
-    "xml": false
+    "xml": false,
+    "handleErrors": false
   },
   "json": {
     "strict": false,
@@ -105,11 +106,7 @@ Properties under the `remoting` top-level property determine how the application
     "extended": true,
     "limit": "100kb"
   },
-  "cors": false,
-  "errorHandler": {
-      "debug": true,
-      "log": false
-    }
+  "cors": false
 }
 ...
 ```
@@ -120,13 +117,15 @@ The following table describes the remoting properties.  For more information on 
 " %}
 
 <table style="width: 800px;">
-  <tbody>
+  <thead>
     <tr>
-      <th>Property</th>
-      <th>Type</th>
+      <th width="150">Property</th>
+      <th width="150">Type</th>
       <th>Description</th>
       <th >Default</th>
     </tr>
+  </thead>
+  <tbody>
     <tr>
       <td>cors</td>
       <td>Boolean</td>
@@ -139,23 +138,12 @@ The following table describes the remoting properties.  For more information on 
       <td>Advanced feature. For more information, see <a href="Using-current-context.html">Using current context</a>.</td>
       <td>false</td>
     </tr>
-
     <tr>
-      <td>errorHandler.debug</td>
-      <td>Boolean</td>
-      <td>When enabled, HTTP responses include all error properties, including sensitive data such as file paths, URLs and stack traces.  Set to <code>true</code> during development and debugging; <code>false</code> in production.<br/><br/>
-      For more information, see <a href="Using-strong-error-handler.html">Using strong-error-handler</a>.</td>
+      <td>errorHandler</td>
+      <td>Object</td>
+      <td>Configuration passed to the strong-error-handler middleware injected by strong-remoting when <code>rest.handleErrors</code> is set true. This is typically not used, as the error handler is more commonly configured via middleware config. See <a href="Using-strong-error-handler.html">Using strong-error-handler</a></td>
       <td>false</td>
     </tr>
-
-    <tr>
-      <td>errorHandler.log</td>
-      <td>Boolean</td>
-      <td>When enabled, all errors are printed via <code>console.error</code>, including an array of fields (custom error properties) that are safe to include in response messages (both 4xx and 5xx). When not enabled, it only sends the error back in the response.<br/><br/>
-      For more information, see <a href="Using-strong-error-handler.html">Using strong-error-handler</a>. </td>
-      <td>true</td>
-    </tr>
-
     <tr>
       <td>json.limit</td>
       <td>String</td>
@@ -175,22 +163,22 @@ The following table describes the remoting properties.  For more information on 
       <td>false</td>
     </tr>
     <tr>
-      <td>handleErrors</td>
+      <td>rest.<br/>handleErrors</td>
       <td>Boolean</td>
-      <td>If true, then the REST adapter handles all errors by sending back a JSON-formatted error response. If false, then errors are passed to the top-level application error-handler.</td>
+      <td>If true, then the REST adapter handles all errors by sending back a JSON-formatted error response. If false, then errors are passed to the top-level application error-handler. This is often set to <code>false</code> to allow for error handling middleware to be set up and configured via the app's middleware config.</td>
       <td>true</td>
     </tr>
     <tr>
-      <td>rest.handleUnknownPaths</td>
+      <td>rest.<br/>handleUnknownPaths</td>
       <td>Boolean</td>
       <td>
-        If true, then the REST adapter emits a 404 error for unknown paths. The REST error handler or the application error handler then handle this error; rest.handleErrors above.
+        If true, then the REST adapter emits a 404 error for unknown paths. The REST error handler or the application error handler then handle this error. See rest.handleErrors above.
         If false, then the REST adapter delegates handling unknown paths to the top-level application by calling <code>next()</code>.
       </td>
       <td>true</td>
     </tr>
     <tr>
-      <td>rest.normalizeHttpPath</td>
+      <td>rest.<br/>normalizeHttpPath</td>
       <td>Boolean</td>
       <td>
         If <code>true</code>, in HTTP paths, converts:
@@ -205,11 +193,11 @@ The following table describes the remoting properties.  For more information on 
       <td>false</td>
     </tr>
     <tr>
-      <td>rest.supportedTypes</td>
+      <td>rest.<br/>supportedTypes</td>
       <td>Array</td>
       <td>
         List of content types that the API supports in HTTP responses.
-        The response type will match that specfied in the HTTP request "accepts" header, if it is in this list of supported types.
+        The response type will match that specified in the HTTP request "accepts" header, if it is in this list of supported types.
         If this property is set, then <code>rest.xml</code> is ignored.<br/><br/>
         NOTE: 'application/vnd.api-json' is supported, but is not one of the default types.
       </td>
@@ -226,11 +214,11 @@ The following table describes the remoting properties.  For more information on 
       <td>false</td>
     </tr>
     <tr>
-      <td>urlencoded.extended</td>
+      <td>urlencoded.<br/>extended</td>
       <td>Boolean</td>
       <td>
-        Parse extended syntax with the <a href="https://www.npmjs.org/package/qs?__hstc=72727564.8bea7847eb7a72bf24c79993a9239205.1418422131685.1420668516065.1420670994111.11&amp;__hssc=72727564.1.1420670994111&amp;__hsfp=1793697232#readme" class="external-link" rel="nofollow">qs</a> module.
-        For more information, see <a href="https://www.npmjs.com/package/body-parser#bodyparser-urlencoded-options-" style="line-height: 1.4285715;" class="external-link" rel="nofollow">bodyParser.urlencoded()</a>.
+        Parse extended syntax with the <a href="https://www.npmjs.org/package/qs" class="external-link">qs</a> module.
+        For more information, see <a href="https://www.npmjs.com/package/body-parser#bodyparser-urlencoded-options"  class="external-link">bodyParser.urlencoded()</a>.
       </td>
       <td>true</td>
     </tr>
@@ -239,7 +227,7 @@ The following table describes the remoting properties.  For more information on 
       <td>String</td>
       <td>
         Maximum request body size.
-        For more information, see <a href="https://www.npmjs.com/package/body-parser#bodyparser-urlencoded-options-" class="external-link" rel="nofollow">bodyParser.urlencoded()</a>.
+        For more information, see <a href="https://www.npmjs.com/package/body-parser#bodyparser-urlencoded-options-" class="external-link">bodyParser.urlencoded()</a>.
       </td>
       <td>100kb</td>
     </tr>

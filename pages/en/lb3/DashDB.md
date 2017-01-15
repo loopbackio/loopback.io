@@ -1,5 +1,5 @@
 ---
-title: "DashDB connector README"
+title: "DashDB connector"
 lang: en
 layout: readme
 source: loopback-connector-dashdb

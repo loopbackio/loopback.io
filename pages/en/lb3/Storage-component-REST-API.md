@@ -1,23 +1,19 @@
 ---
 title: "Storage component REST API"
 lang: en
-layout: page
+layout: navgroup
+navgroup: storage
 toc_level: 1
 keywords: LoopBack
 tags:
 sidebar: lb3_sidebar
 permalink: /doc/en/lb3/Storage-component-REST-API.html
-summary:
+summary: The LoopBack storage component enables you to upload and download files to cloud storage providers and the local (server) file system.  It has Node.js and REST APIs.
 ---
-
-{% include see-also.html content="
-* [Storage component](Storage-component.html)
-* [Storage component API docs](https://apidocs.strongloop.com/loopback-component-storage/)
-" %}
 
 ## List containers
 
-List all containers for the current storage provider.
+List all containers for the current storage provider. 
 
 `GET /api/containers`
 
@@ -29,11 +25,11 @@ None.
 
 Get information about specified container.
 
-`GET /api/containers/container-name`
+`GET /api/containers/<container-name>`
 
 ### Arguments
 
-* _container-name_ - name of container for which to return information.
+* `<container-name>` - name of container for which to return information.
 
 ## Create container
 
@@ -49,31 +45,31 @@ Container specification in POST body.
 
 Delete the specified container.
 
-`DELETE /api/containers/container-name`
+`DELETE /api/containers/<container-name>`
 
 ### Arguments
 
-* _container-name_ - name of container to delete.
+* `<container-name>` - name of container to delete.
 
 ## List files in container
 
 List all files within a given container by name.
 
-`GET /api/containers/container-name/files`
+`GET /api/containers/<container-name>/files`
 
 ### Arguments
 
-* _container-name_ - name of container for which to list files.
+* `<container-name>` - name of container for which to list files.
 
 ## Get file information
 
 Get information for a file within a given container by name
 
-`GET /api/containers/container-name/files/file-name`
+`GET /api/containers/<container-name>/files/file-name`
 
 ### Arguments
 
-* _container-name_ - name of container.
+* `<container-name>` - name of container.
 * file-name - name of file for which to get information.
 
 ## Delete file
@@ -84,7 +80,7 @@ Delete specified file within specified container.
 
 ### Arguments
 
-* _container-name_ - name of container.
+* `<container-name>` - name of container.
 * file-name - name of file to delete.
 
 ## Upload files
@@ -96,7 +92,7 @@ The request body should use [multipart/form-data](https://www.ietf.org/rfc/rfc2
 
 ### Arguments
 
-* _container-name_ - name of container to which to upload files.
+* `<container-name>` - name of container to which to upload files.
 
 ## Download file
 
@@ -106,5 +102,5 @@ Download specified file within specified container.
 
 ### Arguments
 
-* _container-name_ - name of container from which to download file.
+* `<container-name>` - name of container from which to download file.
 * file-name - name of file to download.

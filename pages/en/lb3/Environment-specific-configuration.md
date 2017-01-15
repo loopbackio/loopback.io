@@ -19,7 +19,7 @@ LoopBack applications have the following types of configuration files:
   You can also use `server/datasources.local.js` to set values that you can't with simple JSON.
 * **Application-level configuration of Models**, by default `server/model-config.json`.
 * **Middleware configuration files**, by default `server/middleware.json`.
-* **Configuration files for LoopBack components**, by default server/component-config.json.
+* **Configuration files for LoopBack components**, by default `server/component-config.json`.
 
 LoopBack will always load the following configuration files, if they exist:
 
@@ -36,14 +36,14 @@ LoopBack will always load the following configuration files, if they exist:
 
 Additionally, when the NODE_ENV environment variable is set, LoopBack will load configuration from:
 
-* `server/config.{_env_``}.json/js`
-* `server/datasources.{_env_``}.json/js`
-* `server/model-config.{_env_``}.json/js`
-* `server/middleware.{_env_``}.json/js`
-* `server/component-config.{_env_``}.json/js `
+* <code>server/config.<i>env</i>.json/js</code>
+* <code>server/datasources.<i>env</i>.json/js</code>
+* <code>server/model-config.<i>env</i>.json/js</code>
+* <code>server/middleware.<i>env</i>.json/js</code>
+* <code>server/component-config.<i>env</i>.json/js</code>
 
-where `{_env_}` is the value of NODE_ENV (typically "development," "staging," or "production").
-This enables you to set up configurations for specific environments (for example, development, staging, and production). 
+where _`env`_ is the value of NODE_ENV (typically "development," "staging," or "production").
+This enables you to set up configurations for development, staging, and production environments. 
 
 {% include note.html content="
 A LoopBack application can load multiple configuration files, that can potentially conflict with each other.
@@ -79,12 +79,10 @@ Define application server-side settings in [`server/config.json`](config.json.
 You can override values that are set in `config.json` in:
 
 * `config.local.js` or `config.local.json`
-* `config._env_.js` or `config._env_.json`, where _`env`_ is the value of `NODE_ENV` (typically `development` or `production`).
+* <code>config.<i>env</i>.js</code> or <code>config.<i>env</i>.json</code>, where _`env`_ is the value of `NODE_ENV` (typically `development` or `production`).
   For example `config.production.json`.
 
-{% include important.html content="
-The additional files can override the top-level keys with value-types (strings, numbers) only.
-Nested objects and arrays are not supported at the moment.
+{% include important.html content="The additional files can override the top-level keys with value-types (strings, numbers) only.  Nested objects and arrays are not supported.
 " %}
 
 For example:
@@ -111,9 +109,8 @@ By default, stack traces are not returned in JSON responses, but if they were en
   }
 ```
 
-{% include note.html content="
-The [Application generator](Application-generator.html) creates a `middleware.developmnet.json` file
-with the above configuration for you, so all you have to do is set the NODE_ENV environment variable is not `development`.
+{% include note.html content="The [Application generator](Application-generator.html) creates a `middleware.developmnet.json` file
+with the above configuration for you, so all you have to do is ensure that the NODE_ENV environment variable is not `development`.
 " %}
 
 ### Disabling API Explorer
@@ -133,50 +130,20 @@ For an application using [loopback-component-explorer](https://github.com/strong
 }
 ```
 
-### Customizing REST error handling
+### Include stack traces in HTTP responses
 
-You can customize the REST error handler by adding the error handler callback function to `server/config.local.js` as follows:
+By default, LoopBack 3.0 applications exclude error stack traces from HTTP responses (typical in production).  For development and debugging, you may wish to include them; to do so, set the `NODE_ENV` environment variable to `development` so the app will use `middleware.development.json`.
 
-{% include code-caption.html content="server/config.local.js" %}
-```javascript
-module.exports = {
-  remoting: {
-    errorHandler: {
-      handler: function(err, req, res, next) {
-        // custom error handling logic
-        var log = require('debug')('server:rest:errorHandler'); // example
-        log(req.method, req.originalUrl, res.statusCode, err);
-        next(); // call next() to fall back to the default error handler
+This file includes the following that will include stack traces in HTTP responses:
+
+```
+{
+  "final:after": {
+    "strong-error-handler": {
+      "params": {
+        "debug": true,
+        "log": true
       }
-    }
-  }
-};
-```
-
-### Exclude stack traces from HTTP responses
-
-To exclude error stack traces from HTTP responses (typical in production), set the includeStack option of LoopBack errorHandler middleware to false in 
-[middleware.json](middleware.json.html).
-
-The standard configuration for development is:
-
-{% include code-caption.html content="server/middleware.json" %}
-```javascript
-...
-"final:after": {
-  "loopback#errorHandler": {}
-}
-```
-
-For production, exclude stack traces from HTTP responses as follows:
-
-{% include code-caption.html content="server/middleware.production.json" %}
-```javascript
-...
-"final:after": {
-  "loopback#errorHandler": {
-    "params": {
-      "includeStack": false
     }
   }
 }
@@ -187,7 +154,7 @@ For production, exclude stack traces from HTTP responses as follows:
 You can override values set in `datasources.json` in the following files:
 
 * `datasources.local.js` or `datasources.local.json`
-* `datasources._env_.js` or `datasources._env_.json`, where _`env`_ is the value of `NODE_ENV` environment variable (typically `development` or `production`).
+* <code>datasources.<i>env</i>.js<c/ode> or <code>datasources.<i>env</i>.json</code>, where _`env`_ is the value of `NODE_ENV` environment variable (typically `development` or `production`).
   For example, `datasources.production.json`.
 
 {% include important.html content="

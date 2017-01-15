@@ -224,7 +224,7 @@ Attach extra metadata to error objects:
 {% include code-caption.html content="common/models/dog.js" %}
 ```javascript
 Dog.afterRemoteError('**', function(ctx, next) {
-  if (!ctx.error.details) ctx.result.details = {};
+  if (!ctx.error.details) ctx.error.details = {};
   ctx.error.details.info = 'intercepted by a hook';
   next();
 })
