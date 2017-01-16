@@ -11,24 +11,38 @@ summary:
 
 ## Overview
 
-The Oracle connector depends on the [strong-oracle](https://github.com/strongloop/strong-oracle) module as the Node.js driver for Oracle databases.  Since strong-oracle is a [C++ add-on](http://nodejs.org/api/addons.html), the installation requires the presence of C++ development tools to compile and build the module from source code.
-At runtime, strong-oracle also requires dynamic libraries from 
-[Oracle Database Instant Client](http://www.oracle.com/technetwork/database/features/instant-client/index.html).
-
-The [LoopBack Oracle Installer](https://github.com/strongloop/loopback-oracle-installer) module takes care of the binary dependencies and simplifies the whole process.  
-The LoopBack Oracle installer downloads and extracts the prebuilt LoopBack Oracle binary dependencies into the parent module's `node_modules` directory and sets up the environment for the [Oracle Database Instant Client](http://www.oracle.com/technetwork/database/features/instant-client/index.html).
-
 To install the Oracle connector, use the following command:
 
-```shell
+```
 $ npm install loopback-connector-oracle --save
 ```
 
-{% include important.html content="
 
-If you need to use the Oracle driver directly, see [https://github.com/strongloop/strong-oracle](https://github.com/strongloop/strong-oracle)
+The Oracle connector version 3.0.0 or above depends on the [oracledb](https://github.com/oracle/node-oracledb) module as the Node.js driver for Oracle databases.  Since `oracledb` is a [C++ add-on](http://nodejs.org/api/addons.html), the installation requires the presence of C++ development tools to compile and build the module from source code. At runtime, `oracledb` also requires dynamic libraries from [Oracle Database Instant Client](http://www.oracle.com/technetwork/database/features/instant-client/index.html).
 
-" %}
+The [LoopBack Oracle Installer](https://github.com/strongloop/loopback-oracle-installer) module takes care of the binary dependencies and simplifies the whole process. The installer automatically downloads and extracts the prebuilt `oracledb` to /loopback-connector-oracle/node_modules directory and Oracle Database Instant Client into `<UserHomeDirectory>/oracle-instant-client`. 
+If a prebuilt bundle does not exist for your client platform and node version, the installer prompts the user to install oracle pre-requisites offline following instructions for their OS in https://github.com/oracle/node-oracledb/blob/master/INSTALL.md. 
+
+Once oracle pre-requisites are installed, user needs to re install loopback-connector-oracle node module by executing 'npm install loopback-connector-oracle --save' which will internally execute 'npm install oracledb' installing oracledb node module successfully. 
+
+Troubleshooting Tip: If you have problem installing loopback-connector-oracle make sure these env variables are set and these symbolic links exist. For e.g on OS X
+
+``` 
+export OCI_LIB_DIR=$HOME/oracle-instant-client 
+export OCI_INC_DIR=$HOME/oracle-instant-client/sdk/include
+
+If a prebuilt bundle does not exist for your client platform and node version, and you have installed 
+oracle pre-requisites as per https://github.com/oracle/node-oracledb/blob/master/INSTALL.md then,
+
+export OCI_LIB_DIR=/opt/oracle/instantclient
+export OCI_INC_DIR=/opt/oracle/instantclient/sdk/include
+
+```
+
+```
+libclntsh.dylib -> libclntsh.dylib.11.1
+```
+
 
 ## Post installation setup
 
@@ -41,17 +55,13 @@ from Oracle Instant Client will be available to your Node process.
 
 ### MacOS X or Linux
 
-During npm install, add the following to `$HOME/strong-oracle.rc`.
-
-MacOS X:
-
-`export DYLD_LIBRARY_PATH="$DYLD_LIBRARY_PATH:/Users/<_user_>/<_app-name_>/node_modules/loopback-connector-oracle/node_modules/instantclient"`
-
 Linux:
 
-`export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/Users/<_user_>/<_app-name_>/node_modules/loopback-connector-oracle/node_modules/instantclient"`
+`export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:$HOME/oracle-instant-client"`
 
-Where <user> is the user name and <app-name> is the app name.
+If a prebuilt bundle does not exist for your client platform and node version, and you have installed oracle pre-requisites as per https://github.com/oracle/node-oracledb/blob/master/INSTALL.md then
+
+`export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:$OCI_LIB_DIR"`
 
 ### Linux
 
@@ -65,20 +75,6 @@ On Linux systems, the `libaio` library is required. If it is not present, you mu
   ```shell
   $ sudo yum install libaio
   ```
-
-To activate the strong-oracle settings for your terminal window, add the following statements to `$HOME/.bash_profile` (or `.profile` depending on what shell you use):
-
-```
-if [ -f ~/strong-oracle.rc ]; then
-  source ~/strong-oracle.rc
-fi
-```
-
-Then to make the change take effect, use this command:
-
-```shell
-$ source ~/.bash_profile
-```
 
 ### Windows
 
