@@ -338,3 +338,32 @@ for(var s in config) {
  passportConfigurator.configureProvider(s, c);
 }
 ```
+
+#### Customize Loopback User created
+Some users might need to configure the Loopback users created by the component if the UniqueID provided comes in an email format ([see issue for details](https://github.com/strongloop/loopback-component-passport/issues/158)),
+this can be configured by passing in `options` in `passportConfigurator.configureProvider()`, User will need to provide their own function
+to build their Loopback User object similar to following example, then provide it in `options` of `passportConfigurator.configureProvider()`
+
+```js
+function customProfileToUser(provider, profile, options) {
+  var userInfo = {
+    username: profile.username,
+    password: 'secret',
+    email: profile.email,
+  };
+  return userInfo;
+}
+```
+
+```js
+//following loopback-example-passport's server.js
+var config = require('../providers.json');
+
+for (var s in config) {
+  var c = config[s];
+  c.session = c.session !== false;
+  // overriding default user object
+  c.profileToUser = customProfileToUser;
+  passportConfigurator.configureProvider(s, c);
+}
+```
