@@ -15,39 +15,45 @@ children:
 
 - title: 'Instalação'
   url: /doc/pt-br/lb2/Installation.html
+  translated: true
   output: 'web, pdf'
   children:
 
   - title: 'Instalando o IBM API Connect'
     url: /doc/pt-br/lb2/Installing-IBM-API-Connect.html
+    translated: true
     output: 'web, pdf'
 
   - title: 'Instalando o StrongLoop'
     url: /doc/pt-br/lb2/Installing-StrongLoop.html
+    translated: true
     output: 'web, pdf'
+    children:
 
-  - title: 'Instalando ferramentas de compilação'
-    url: /doc/pt-br/lb2/Installing-compiler-tools.html
-    output: 'web, pdf'
+    - title: 'Instalando ferramentas de compilação'
+      url: /doc/pt-br/lb2/Installing-compiler-tools.html
+      translated: true
+      output: 'web, pdf'
 
-  - title: 'Instalando no MacOS'
-    url: /doc/pt-br/lb2/Installing-on-MacOS.html
-    output: 'web, pdf'
+    - title: 'Instalando no MacOS'
+      url: /doc/pt-br/lb2/Installing-on-MacOS.html
+      translated: true
+      output: 'web, pdf'
 
-  - title: 'Instalando no Windows'
-    url: /doc/pt-br/lb2/Installing-on-Windows.html
-    output: 'web, pdf'
+    - title: 'Instalando no Windows'
+      url: /doc/pt-br/lb2/Installing-on-Windows.html
+      output: 'web, pdf'
 
-  - title: 'Instalando no Linux'
-    url: /doc/pt-br/lb2/Installing-on-Linux.html
-    output: 'web, pdf'
+    - title: 'Instalando no Linux'
+      url: /doc/pt-br/lb2/Installing-on-Linux.html
+      output: 'web, pdf'
+
+    - title: 'Atualizando para a última versão'
+      url: /doc/pt-br/lb2/Updating-to-the-latest-version.html
+      output: 'web, pdf'
 
   - title: 'Solução de problemas de instalação'
     url: /doc/pt-br/lb2/Installation-troubleshooting.html
-    output: 'web, pdf'
-
-  - title: 'Atualizando para a última versão'
-    url: /doc/pt-br/lb2/Updating-to-the-latest-version.html
     output: 'web, pdf'
 
 - title: 'Os conceitos básicos do LoopBack'
