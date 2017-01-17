@@ -21,6 +21,7 @@ strongloop loopback-connector-mqlight master
 strongloop loopback-connector-mssql master
 strongloop loopback-connector-mysql master
 strongloop loopback-connector-oracle master
+strongloop loopback-oracle-installer master
 strongloop loopback-connector-postgresql master
 strongloop loopback-connector-remote master
 strongloop loopback-connector-rest master
