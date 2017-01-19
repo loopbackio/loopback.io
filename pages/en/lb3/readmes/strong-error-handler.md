@@ -1,37 +1,25 @@
 # strong-error-handler
 
-Error handler for use in development (debug) and production environments.
+This package is an error handler for use in both development (debug) and production environments.
 
-## Production mode
+In production mode, `strong-error-handler` omits details from error responses to prevent leaking sensitive information:
 
-- error responses are purposely left without detail in order to prevent leaking sensitive information.
 - For 5xx errors, the output contains only the status code and the status name from the HTTP specification.
 - For 4xx errors, the output contains the full error message (`error.message`) and the contents of the `details`
-  property (`error.details`). The latter is typically used by `ValidationError` to provide machine-readable details
-  about the validation problems.
+  property (`error.details`) that `ValidationError` typically uses to provide machine-readable details
+  about validation problems.
 
-## Debug Mode
+In debug mode, `strong-error-handler` returns full error stack traces and internal details of any error objects to the client in the HTTP responses.
 
-- Full error stack traces and internal details of any object passed as the error will be sent back to the client
-  in the HTTP responses when an error occurs.
-
-## Response Format
-
-- `strong-error-handler` currently supports HTML and JSON responses.
-- When the object is a standard Error object, the string provided by the stack property will be returned in HTML/text
-  responses.
-- When the object is a non-Error object, the result of `util.inspect` will be returned in HTML/text responses.
-- For JSON responses, the result will be an object with all enumerable properties from the object in the response.
-
-## Install
+## Installation
 
 ```bash
-$ npm install strong-error-handler
+$ npm install --save strong-error-handler
 ```
 
-## Usage
+## Use
 
-In an express-based application:
+In an Express-based application:
 
 ```js
 var express = require('express');
@@ -49,8 +37,7 @@ app.use(errorHandler({
 app.listen(3000);
 ```
 
-In LoopBack applications, add the following entry to your
-`server/middleware.json` file.
+In LoopBack applications, add the following entry to `server/middleware.json`:
 
 ```json
 {
@@ -58,81 +45,121 @@ In LoopBack applications, add the following entry to your
     "strong-error-handler": {
       "params": {
          "debug": false,
-         "log": true,
+         "log": true
        }
     }
   }
 }
 ```
 
-## Content Type
+In general, `strong-error-handler` must be the last middleware function registered.
 
-Depending on the request header's `Accepts`, response will be returned in
- the corresponding content-type, current supported types include:
-- JSON (`json`/`application/json`)
-- HTML (`html`/`text/html`)
+The above configuration will log errors to the server console, but not return stack traces in HTTP responses.
+For details on configuration options, see below.
+
+### Response format and content type
+
+The `strong-error-handler` package supports HTML and JSON responses:
+
+- When the object is a standard Error object, it returns the string provided by the stack property in HTML/text
+  responses.
+- When the object is a non-Error object, it returns the result of `util.inspect` in HTML/text responses.
+- For JSON responses, the result is an object with all enumerable properties from the object in the response.
+
+The content type of the response depends on the request's `Accepts` header.
+
+-  For Accepts header `json` or `application/json`, the response content type is JSON.
+-  For Accepts header `html` or `text/html`, the response content type is HTML.
 
 *There are plans to support other formats such as Text and XML.*
 
 ## Options
 
-#### debug
+| Option | Type | Default | Description |
+| ---- | ---- | ---- | ---- |
+| debug | Boolean&nbsp;&nbsp;&nbsp; | `false` | If `true`, HTTP responses include all error properties, including sensitive data such as file paths, URLs and stack traces. See [Example output](#example) below. |
+| log | Boolean | `true` |  If `true`, all errors are printed via `console.error`, including an array of fields (custom error properties) that are safe to include in response messages (both 4xx and 5xx). <br/> If `false`, sends only the error back in the response. |
 
-`boolean`, defaults to `false`.
+### Customizing log format
 
-If you need to set the environment to development mode, you will need to change the value to `true`.
+**Express** 
 
-When enabled, HTTP responses include all error properties, including
-sensitive data such as file paths, URLs and stack traces. *See Examples below*
-
-#### log
-
-`boolean`, defaults to `true`.
-
-When enabled, all errors are printed via `console.error`. That includes an array of fields (custom error properties)
- that are safe to include in response messages (both 4xx and 5xx).
-
-When not enabled, it only sends the error back in the response.
-
-Customization of the log format is intentionally not allowed. If you would like
-to use a different format/logger, disable this option and add your own custom
-error-handling middleware.
+To use a different log format, add your own custom error-handling middleware then disable `errorHandler.log`. 
+For example, in an Express application:
 
 ```js
 app.use(myErrorLogger());
 app.use(errorHandler({ log: false }));
 ```
 
-## Migration to strong-error-handler for existing LoopBack applications
+In general, add `strong-error-handler` as the last middleware function, just before calling `app.listen()`.
 
-1. In package.json dependencies, remove ` "errorhandler": "^x.x.x”,`
-1. Run `npm install --save strong-error-handler`
-1. In `./server/config.json`, remove:
+**LoopBack**
 
-  ```
-  "errorHandler": {
-    "disableStackTrace": false
-  }
-  ```
-  and replace it with `"handleErrors": false`.
-1. In `server/middleware.json`, remove
+For LoopBack applications, put custom error-logging middleware in a separate file; for example, `server/middleware/error-logger.js`:
 
-  ```
-    "final:after": {
-    "loopback#errorHandler": {}
-  }
-  ```
-  and replace it with:
-  ```
+```
+module.exports = function(options) {
+  return function logError(err, req, res, next) {
+    console.log('unhandled error' ,err);
+    next(err);
+  };
+};
+```
+
+Then in `server/middleware.json`, specify your custom error logging function as follows:
+
+```
+{
+  // ...
   "final:after": {
-    "strong-error-handler": {}
-  }
-  ```
-1. In the `./server`, delete `middleware.production.json`.
-1. In the `./server`, create `middleware.development.json` containing:
+    "./middleware/error-logger": {},
+    "strong-error-handler": {
+      "params": {
+        log: false
+      }
+    }
+}
+```
 
-  ```
-  {
+The default `middleware.development.json` file explicitly enables logging in strong-error-handler params, so you will need to change that file too.
+
+## Migration from old LoopBack error handler
+
+NOTE: This is only required for applications scaffolded with old versions of the `slc loopback` tool.
+
+To migrate a LoopBack 2.x application to use `strong-error-handler`:
+
+1. In `package.json` dependencies, remove `"errorhandler": "^x.x.x”,`
+1. Install the new error handler by entering the command:
+    <pre>npm install --save strong-error-handler</pre>
+1. In `server/config.json`, remove:
+    <pre>
+    "remoting": {
+      ...
+      "errorHandler": {
+        "disableStackTrace": false
+      }</pre>
+  and replace it with:
+  <pre>
+  "remoting": {
+    ...,
+    "rest": {
+      "handleErrors": false
+    }</pre>
+1. In `server/middleware.json`, remove:
+    <pre>
+    "final:after": {
+      "loopback#errorHandler": {}
+    }</pre>
+  and replace it with:
+    <pre>
+    "final:after": {
+      "strong-error-handler": {}
+    }</pre>
+1. Delete `server/middleware.production.json`.
+1. Create `server/middleware.development.json` containing:
+  <pre>
   "final:after": {
     "strong-error-handler": {
       "params": {
@@ -141,10 +168,12 @@ app.use(errorHandler({ log: false }));
       }
     }
   }
-}
-```
+</pre>
 
-## Examples:
+For more information, see 
+[Migrating apps to LoopBack 3.0](http://loopback.io/doc/en/lb3/Migrating-to-3.0.html#update-use-of-rest-error-handler).
+
+## Example
 
 Error generated when `debug: false` :
 
@@ -159,5 +188,16 @@ Error generated when `debug: true` :
   { statusCode: 500,
   name: 'Error',
   message: 'a test error message',
-  stack: 'Error: a test error message\n    at Context.<anonymous> (User/strong-error-handler/test/handler.test.js:220:21)\n    at callFnAsync (User/strong-error-handler/node_modules/mocha/lib/runnable.js:349:8)\n    at Test.Runnable.run (User/strong-error-handler/node_modules/mocha/lib/runnable.js:301:7)\n    at Runner.runTest (User/strong-error-handler/node_modules/mocha/lib/runner.js:422:10)\n    at User/strong-error-handler/node_modules/mocha/lib/runner.js:528:12\n    at next (User/strong-error-handler/node_modules/mocha/lib/runner.js:342:14)\n    at User/strong-error-handler/node_modules/mocha/lib/runner.js:352:7\n    at next (User/strong-error-handler/node_modules/mocha/lib/runner.js:284:14)\n    at Immediate._onImmediate (User/strong-error-handler/node_modules/mocha/lib/runner.js:320:5)\n    at tryOnImmediate (timers.js:543:15)\n    at processImmediate [as _immediateCallback] (timers.js:523:5)' }}
+  stack: 'Error: a test error message    
+  at Context.<anonymous> (User/strong-error-handler/test/handler.test.js:220:21)    
+  at callFnAsync (User/strong-error-handler/node_modules/mocha/lib/runnable.js:349:8)    
+  at Test.Runnable.run (User/strong-error-handler/node_modules/mocha/lib/runnable.js:301:7)    
+  at Runner.runTest (User/strong-error-handler/node_modules/mocha/lib/runner.js:422:10)    
+  at User/strong-error-handler/node_modules/mocha/lib/runner.js:528:12    
+  at next (User/strong-error-handler/node_modules/mocha/lib/runner.js:342:14)    
+  at User/strong-error-handler/node_modules/mocha/lib/runner.js:352:7    
+  at next (User/strong-error-handler/node_modules/mocha/lib/runner.js:284:14)    
+  at Immediate._onImmediate (User/strong-error-handler/node_modules/mocha/lib/runner.js:320:5)    
+  at tryOnImmediate (timers.js:543:15)    
+  at processImmediate [as _immediateCallback] (timers.js:523:5)' }}
 ```

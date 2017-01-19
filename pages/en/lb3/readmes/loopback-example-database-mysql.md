@@ -102,7 +102,7 @@ server. Edit `server/datasources.json` to set the MySQL configs:
   ...
   "accountDS": {
     "name": "accountDS",
-    "connector": "mongodb",
+    "connector": "mysql",
     "host": "demo.strongloop.com",
     "port": 3306,
     "database": "loopback-example-mysql",

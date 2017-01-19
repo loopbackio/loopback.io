@@ -4,10 +4,8 @@
 The `loopback-connector-mssql` module is the Microsoft SQL Server connector for the LoopBack framework.
 
 <div class="gh-only">
-For more information, see [LoopBack documentation | SQL Server Connector](http://loopback.io/doc/en/lb2/SQL-Server-connector.html).
+For more information, see <a href="http://loopback.io/doc/en/lb3/SQL-Server-connector.html">LoopBack documentation</a>.
 </div>
-
-If you create a SQL Server data source using the data source generator as described below, you don't have to do this, since the generator will run `npm install` for you.
 
 ## Installation
 
@@ -18,6 +16,8 @@ $ npm install loopback-connector-mssql --save
 ```
 
 This will install the module from npm and add it as a dependency to the application's `package.json` file.
+
+If you create a SQL Server data source using the data source generator as described below, you don't have to do this, since the generator will run `npm install` for you.
 
 ## Creating a SQL Server data source
 
@@ -43,7 +43,7 @@ The entry in the application's `/server/datasources.json` will look like this (f
 
 Edit `datasources.json` to add other properties that enable you to connect the data source to a SQL Server database.
 
-To connect to a SQL Server instance running in Azure, you must specify a qualified user name with hostname, and add to the following to the data source declaration:
+To connect to a SQL Server instance running in Azure, you must specify a qualified user name with hostname, and add the following to the data source declaration:
 
 ```js
 "options": {
@@ -154,7 +154,6 @@ var dataSource = new DataSource('mssql', config);
 config = { ... };  // JSON object as specified above in "Connector settings"
 ```
 
-## Discovery and auto-migration
 
 ### Model discovery
 
@@ -169,7 +168,7 @@ For each model, the LoopBack SQL Server connector creates a table in the 'dbo' 
 
 For more information on auto-migration, see [Creating a database schema from models](https://loopback.io/doc/en/lb3/Creating-a-database-schema-from-models.html) for more information.
 
-Destroying models may result in errors due to foreign key integrity. First delete any related models first calling delete on models with relationships.
+Destroying models may result in errors due to foreign key integrity. First delete any related models by calling delete on models with relationships.
 
 ## Defining models
 

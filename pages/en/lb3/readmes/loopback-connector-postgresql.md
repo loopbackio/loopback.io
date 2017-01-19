@@ -3,8 +3,8 @@
 [PostgreSQL](https://www.postgresql.org/), is a popular open-source object-relational database.
 The `loopback-connector-postgresql` module is the PostgreSQL connector for the LoopBack framework.
 
-<div class="gh-only">For more information, see the [documentation](http://loopback.io/doc/en/lb2/PostgreSQL-connector.html).
-
+<div class="gh-only">For more information, see the <a href="http://loopback.io/doc/en/lb3/PostgreSQL-connector.html">documentation</a>.
+<br/><br/>
 NOTE: The PostgreSQL connector requires PostgreSQL 8.x or 9.x.
 </div>
 
@@ -346,7 +346,7 @@ The auto-migrate method:
 * Defines a primary key for the properties whose `id` property is true (or a positive number).
 * Creates a column with 'SERIAL' type if the `generated` property of the `id` property is true.
 
-Destroying models may result in errors due to foreign key integrity. First delete any related models first calling delete on models with relationships.
+Destroying models may result in errors due to foreign key integrity. First delete any related models by calling delete on models with relationships.
 
 ## Running tests
 

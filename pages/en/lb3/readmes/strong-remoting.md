@@ -16,6 +16,14 @@ Also see the <a href="http://loopback.io/doc/en/lb2/Strong-Remoting.html">offici
 
 For higher-level transports, such as REST and Socket.IO, existing clients will work well. If you want to be able to swap out your transport, use one of our supported clients. The same adapter model available on the server applies to clients, so you can switch transports on both the server and all clients without changing your application-specific code.
 
+### Supported versions
+
+Current|Long Term Support
+:-:|:-:
+3.x|2.x
+
+Learn more about our LTS plan in [docs](http://loopback.io/doc/en/contrib/Long-term-support.html).
+
 ## Installation
 
 ```sh

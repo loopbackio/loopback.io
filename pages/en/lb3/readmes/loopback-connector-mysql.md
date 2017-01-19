@@ -2,9 +2,9 @@
 
 [MySQL](https://www.mysql.com/) is a popular open-source relational database management system (RDBMS).  The `loopback-connector-mysql` module provides the MySQL connector module for the LoopBack framework.
 
-<div class="gh-only">See also [LoopBack MySQL Connector](http://loopback.io/doc/en/lb3/MySQL-connector.html) in LoopBack documentation.
-
-**NOTE**: The MySQL connector requires MySQL 5.0+.
+<div class="gh-only">See also <a href="http://loopback.io/doc/en/lb3/MySQL-connector.html">LoopBack MySQL Connector</a> in LoopBack documentation.
+<br/><br/>
+<b>NOTE</b>: The MySQL connector requires MySQL 5.0+.
 </div>
 
 ## Installation

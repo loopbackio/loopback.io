@@ -2,6 +2,19 @@
 
 Browse and test your LoopBack app's APIs.
 
+## Supported versions
+
+Current|Long Term Support
+:-:|:-:
+4.x|2.x
+
+Learn more about our LTS plan in [docs](http://loopback.io/doc/en/contrib/Long-term-support.html).
+
+*The only difference between 3.x and 4.x versions is which Node.js versions
+are supported (loopback-component-explorer 4.x dropped support for pre-v4
+versions of Node.js). Therefore we decided to not maintain 3.x version line and
+provide LTS support for the 2.x version line instead.*
+
 ## Basic Usage
 
 Below is a simple LoopBack application. The explorer is mounted at `/explorer`.
@@ -76,6 +89,23 @@ explorer(app, {
   version: '0.1-unreleasable'
 }));
 app.use('/custom-api-root', loopback.rest());
+```
+In applications scaffolded by `slc loopback`, you can edit the `server/component-config.json`:
+
+```json
+{
+  "loopback-component-explorer": {
+    "mountPath": "/explorer",
+    "apiInfo": {
+      "title": "My App",
+      "description": "Description of my app APIs.",
+      "termsOfServiceUrl": "http://api.mycompany.io/terms/",
+      "contact": "apiteam@mycompany.io",
+      "license": "Apache 2.0",
+      "licenseUrl": "http://www.apache.org/licenses/LICENSE-2.0.html"
+    }
+  }
+}
 ```
 
 ## Options
