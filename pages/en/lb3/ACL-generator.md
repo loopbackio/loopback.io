@@ -15,7 +15,13 @@ summary:
 
 Adds a new access control list (ACL) entry to a LoopBack application.
 
-```shell
+```
+lb acl [options]
+```
+
+With legacy StrongLoop tools:
+
+```
 $ slc loopback:acl [options]
 ```
 

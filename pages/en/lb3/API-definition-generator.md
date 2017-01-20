@@ -15,7 +15,13 @@ summary:
 
 Exports a Swagger API definition for a LoopBack application.
 
-```shell
+```
+lb export-api-def [options]
+```
+
+With legacy StrongLoop tools:
+
+```
 $ slc loopback:export-api-def [options]
 ```
 
@@ -30,7 +36,7 @@ Do not remember prompt answers. Default is false.
 `--skip-install`
 Do not automatically install dependencies. Default is false.
 
-### ADDITIONAL OPTIONS
+### Additional options
 
 `-o,   --output`
 Name and full path to the output file. By default, the generator displays the API definition to the screen (stdout). Use this option to save the definition to a file instead.

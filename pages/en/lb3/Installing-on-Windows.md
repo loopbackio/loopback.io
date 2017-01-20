@@ -8,6 +8,7 @@ sidebar: lb3_sidebar
 permalink: /doc/en/lb3/Installing-on-Windows.html
 summary: Follow the procedure below to install StrongLoop on Windows.
 ---
+{% include content/slc-warning.md %}
 
 Installing Node and StrongLoop on Windows presents some special challenges and requirements. 
 
@@ -41,7 +42,12 @@ By default, Git on Windows does not support paths longer than 260 characters; to
 C:\> git config --system core.longpaths true
 ```
 
-{% include content/install-nodejs.md %}
+### Install Node.js
+
+If you haven't already installed Node, [download and install Node.js](http://nodejs.org/en/download).  For best results, use the latest LTS (long-term support) release of Node.js.
+
+{% include warning.html content="LoopBack does not support Node.js versions prior to 4.x.
+" %}
 
 ## Install latest version of npm
 
@@ -134,7 +140,3 @@ If you are behind a corporate proxy, you may need to configure npm to use it:
 npm config set proxy http://proxy.company.com:8080
 npm config set https-proxy http://proxy.company.com:8080
 ```
-
-
-
-

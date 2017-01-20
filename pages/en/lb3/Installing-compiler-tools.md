@@ -9,6 +9,7 @@ sidebar: lb3_sidebar
 permalink: /doc/en/lb3/Installing-compiler-tools.html
 summary: To install StrongLoop tools (but not API Connect), you must have compiler tools installed.
 ---
+{% include content/slc-warning.md %}
 
 {% include see-also.html title="no" content="
 **Why do I need to install a compiler?**

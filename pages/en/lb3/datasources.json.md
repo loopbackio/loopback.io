@@ -84,7 +84,7 @@ To connect a model to a data source, follow these steps:
     ```
     </div>
     ```shell
-    $ slc loopback:datasource
+    $ lb datasource
     ? Enter the data-source name: mysql-corp
     ? Select the connector for mysql: MySQL (supported by StrongLoop)
     ```
@@ -135,7 +135,7 @@ To connect a model to a data source, follow these steps:
     ```
     </div>
     ```
-    $ slc loopback:model
+    $ lb model
     ? Enter the model name: myModel
     ? Select the data-source to attach myModel to: mysql (mysql)
     ? Select model's base class: PersistedModel

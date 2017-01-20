@@ -15,15 +15,21 @@ summary:
 
 Adds a new data source definition to a LoopBack application.
 
-<div id="lb3apic" class="sl-hidden" markdown="1">
-```shell
-$ apic create --type datasource [options] [<name>]
+```
+$ lb datasource [options] [<name>]
 ```
 
-Or
+Adds a new model to a LoopBack application.
+
+<div id="lb3apic" class="sl-hidden" markdown="1">
+```
+apic create --type datasource [options] [<name>]
+```
 </div>
 
-```shell
+With legacy StrongLoop tools:
+
+```
 $ slc loopback:datasource [options] [<name>]
 ```
 
@@ -49,9 +55,7 @@ The tool will prompt you for:
 * Name of the new data source.  If you supplied a name on the command-line, just hit Enter to use it.
 * Connector to use for the data source.
 
-
 You must install the [connector](Connecting-models-to-data-sources.html) for the new data source; for example: `npm install --save loopback-connector-mysql`
-
 
 ### Output
 

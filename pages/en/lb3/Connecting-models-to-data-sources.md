@@ -38,7 +38,7 @@ To connect a model to a data source, follow these steps:
     </div>    
 
     ```
-    $ slc loopback:datasource
+    $ lb datasource
     ? Enter the data-source name: mysql-corp
     ? Select the connector for mysql: MySQL (supported by StrongLoop)
     ```
@@ -80,7 +80,7 @@ To connect a model to a data source, follow these steps:
 4.  Use the [model generator](Using-the-model-generator.html) to create a model.
 
     ```
-    $ slc loopback:model
+    $ lb model
     ? Enter the model name: myModel
     ? Select the data-source to attach myModel to: mysql (mysql)
     ? Select model's base class: PersistedModel
@@ -259,7 +259,7 @@ $ apic create --type datasource
 </div>
 
 ```shell
-$ slc loopback:datasource
+$ lb datasource
 ```
 
 Follow the prompts to add the desired data source.

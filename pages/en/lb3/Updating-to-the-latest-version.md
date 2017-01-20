@@ -8,6 +8,7 @@ sidebar: lb3_sidebar
 permalink: /doc/en/lb3/Updating-to-the-latest-version.html
 summary:
 ---
+{% include content/slc-warning.md %}
 
 When you run `npm install` in an application root directory, npm will update
 application dependencies, as specified by the `package.json` file.  For more information on `package.json`, see [npm documentation](https://npmjs.org/doc/json.html).  

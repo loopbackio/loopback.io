@@ -16,8 +16,14 @@ summary:
 Creates a fully-functional application with an API defined using the [Swagger](http://swagger.io/) 2.0 specification.
 For more information on Swagger, see [Swagger RESTful API Documentation Specification (version 2.0)](https://github.com/swagger-api/swagger-spec/blob/master/versions/2.0.md).
 
-```shell
-$ slc loopback:swagger [options] [<_name_>]
+```
+$ lb swagger [options] [<name>]
+```
+
+With legacy StrongLoop tools:
+
+```
+$ slc loopback:swagger [options] [<url>]
 ```
 
 ### Options
@@ -33,7 +39,7 @@ Do not automatically install dependencies. Default is false.
 
 ### Arguments
 
-You can optionally provide the URL of the Swagger specification file to use.  If you do, then the tool will use that as the default in the interactive prompts.
+`<url>` - Optional URL of the Swagger specification file to use.  If provided, then the tool will use that as the default in the interactive prompts.
 
 ### Interactive Prompts
 
@@ -45,7 +51,7 @@ The tool will prompt you for:
   Then press Return to generate all the selected models.
 * Data source to use.
 
-### EXAMPLE
+### Example
 
 For example, if you enter the Swagger simple pet store example URL:
 
@@ -53,7 +59,7 @@ For example, if you enter the Swagger simple pet store example URL:
 
 The tool will display:
 
-```shell
+```
 [?] Select models to be generated:
 ❯⬢ swagger_api
  ⬢ pet
@@ -66,7 +72,7 @@ Then press Return to generate all the selected models.
 
 The tool will prompt you for the display information on what it's doing; for example:
 
-```shell
+```
 [?] Select the data-source to attach models to: db (memory)
 Creating model definition for swagger_api...
 Creating model definition for pet...

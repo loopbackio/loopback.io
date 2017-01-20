@@ -43,10 +43,10 @@ In the Coffee Shop Reviews app, the models are related as follows:
 
 ## Define relations
 
-Now, you're going to define these relationships between the models.  In all there are five relations.  Once again, you'll use `slc loopback`, but this time you'll use the `relation` sub-command ([relation generator](Relation-generator)).  For each relation, enter:
+Now, you're going to define these relationships between the models.  In all there are five relations.  Once again, you'll use the `lb` command, but this time you'll use the `relation` sub-command ([relation generator](Relation-generator)).  For each relation, enter:
 
 ```
-$ slc loopback:relation
+$ lb relation
 ```
 
 The tool will prompt you to provide the information required to define the relation, as summarized below.

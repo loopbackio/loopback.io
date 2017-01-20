@@ -14,15 +14,21 @@ It was released for general availability on 21 Dec 2016; see the [release announ
 LoopBack 2.0 is now the [LTS release](/doc/en/contrib/Long-term-support.html).
 " %}
 
-## Upgrading to version 3.0
+## Install LoopBack tools
 
-To upgrade to LoopBack 3.0, simply enter this command:
+Install the LoopBack command-line interface (CLI) tool to create and modify LoopBack apps
+
+To install the LoopBack CLI tool, enter this command:
 
 ```
-npm install -g strongloop
+npm install -g loopback-cli
 ```
 
-For more information, see [Updating to the latest version](Updating-to-the-latest-version.html).
+For more information, see [Installation](Installation).
+
+## Upgrading an existing StrongLoop installation to version 3.0
+
+For instructions to upgrade existing StrongLoop installation, see [Updating to the latest version](Updating-to-the-latest-version.html).
 
 ## Migrating your app to version 3.0
 
@@ -34,7 +40,7 @@ all the changes between 2.x and 3.0.
 
 ## Getting started
 
-1. **[Install LoopBack tools](Installation)**.  Currently only StrongLoop tools (`slc`) support LoopBack 3.0.
+1. **[Install LoopBack tools](Installation)**.  
 1. **Read [LoopBack core concepts](LoopBack-core-concepts.html)** to learn about key concepts you need to understand to use LoopBack.
 1. **Follow [Getting started with LoopBack](Getting-started-with-LoopBack.html)** for a quick tutorial introduction.
 

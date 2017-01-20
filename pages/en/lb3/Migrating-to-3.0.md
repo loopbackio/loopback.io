@@ -60,7 +60,7 @@ Install it as a dependency with the following command:
 npm install --save strong-error-handler
 ```
 
-{% include tip.html content="Projects scaffolded with a recent version of `slc loopback` are already correctly configured and require no change.
+{% include tip.html content="Projects scaffolded with a recent version of StrongLoop/LoopBack tools are already correctly configured and require no change.
 " %}
 
 You may need to make the following changes:
@@ -441,7 +441,7 @@ CORS is no longer enabled by default in version 3.0.
 The built-in CORS middleware was removed from `loopback.rest()` handler,
 so you must set up and configure application CORS policies explicitly.
 
-{% include tip.html content="Projects scaffolded with a recent version `slc loopback` already have the global CORS handler configured in `server/middleware.json`.
+{% include tip.html content="Projects scaffolded with a recent version StrongLoop/LoopBack tools already have the global CORS handler configured in `server/middleware.json`.
 " %}
 
 Otherwise, to enable CORS and allow cross-site requests to your LoopBack application,

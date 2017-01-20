@@ -52,7 +52,13 @@ and tell Angular's injector which models to use in your code.
 
 ## Installation
 
-To install the LoopBack AngularJS SDK, [install StrongLoop tools](Installing-StrongLoop.html).
+To install the LoopBack AngularJS SDK, enter this command:
+
+```
+$ npm install -g loopback-sdk-angular-cli
+```
+
+This installs the `lb-ng` command-line tool.
 
 ## Generating Angular services
 

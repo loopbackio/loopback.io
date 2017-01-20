@@ -30,7 +30,7 @@ $ apic create --type datasource
 </div>
 
 ```shell
-$ slc loopback:datasource
+$ lb datasource
 ```
 
 When prompted, select **other** as the connector.  

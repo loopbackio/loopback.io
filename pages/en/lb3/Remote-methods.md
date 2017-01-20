@@ -487,7 +487,7 @@ The access type for custom remote methods is Execute.
 For example, to deny invocation of the `greet` method used in the examples above:
 
 ```shell
-$ slc loopback:acl
+$ lb acl
 [?] Select the model to apply the ACL entry to: Person
 [?] Select the ACL scope: A single method
 [?] Enter the method name: greet
