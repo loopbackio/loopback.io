@@ -18,11 +18,16 @@ item: examples
                 <p>Use the LoopBack generator to create the project and two models for office supplies app.</p>
               </div>
               <div class="_col -col-2-3">
-                <pre class="cli"><span class="prompt">$</span> mkdir office-supplies
-<span class="prompt">$</span> cd office-supplies
-<span class="prompt">$</span> slc loopback
-<span class="prompt">$</span> slc loopback:model product
-<span class="prompt">$</span> slc loopback:model category</pre>
+                <pre class="cli"><span class="prompt">$</span> lb app office-supplies
+<span class="prompt">?</span> What's the name of your application? <span class="input">(office-supplies)</span>
+<span class="prompt">?</span> Enter name of the directory to contain the project: <span class="input">(office-supplies)</span>
+
+<span class="prompt">?</span> Which version of LoopBack would you like to use? 3.x (current)
+<span class="prompt">?</span> What kind of application do you have in mind? <span class="input">empty-server (An empty LoopBack API,
+  without any configured models or datasources)</span>
+...
+<span class="prompt">$</span> lb model product
+<span class="prompt">$</span> lb model category</pre>
               </div>
             </div>
           </div>
@@ -35,7 +40,7 @@ item: examples
                 <p>Secure all the model APIs, then allow admins to modify products.</p>
               </div>
               <div class="_col -col-2-3">
-                <pre class="cli"><span class="prompt">$</span> slc loopback:acl</pre>
+                <pre class="cli"><span class="prompt">$</span> lb acl</pre>
               </div>
             </div>
           </div>
@@ -66,7 +71,7 @@ product.create({
                 <p>Use simple JSON declarative syntax to set up relations between models.
                 For example, the following specifies that a product belongs to one category
                 (identified by categoryId) and has one owner (identified by ownerId).</p>
-                <pre class="cli"><span class="prompt">$</span> slc loopback:relation
+                <pre class="cli"><span class="prompt">$</span> lb relation
 <span class="prompt">[?]</span> Select the model to create the relationship from: product
 <span class="prompt">[?]</span> Relation type: belongs to
 <span class="prompt">[?]</span> Choose a model to create a relationship with: category
@@ -131,7 +136,7 @@ product.create({
               </div>
             </div>
             <div class="c-grid">
-              <div class="_col -col-1-2">
+              <div class="_col -col-1-2"><br/>
                 <h3 class="c-heading -h4">Android Java</h3>
                 <pre><code class="language-java">Product product = new Product(
   ImmutableMap.of("name", "Pencil"));
@@ -157,7 +162,7 @@ product.save(new Model.Callback() {
   }
 });</code></pre>
               </div>
-              <div class="_col -col-1-2">
+              <div class="_col -col-1-2"><br/>
                 <h3 class="c-heading -h4">Isomorphic LoopBack</h3>
                 <pre><code class="language-javascript">MyProduct.find({
   where: {price: {lt: 100}},
@@ -178,7 +183,7 @@ product.save(new Model.Callback() {
                 <p>Create new datasource:</p>
               </div>
               <div class="_col -col-2-3">
-                <pre class="cli"><span class="prompt">$</span> slc loopback:datasource
+                <pre class="cli"><span class="prompt">$</span> lb datasource
 <span class="prompt">?</span> Enter the data-source name: <span class="input">oracledb</span>
 <span class="prompt">?</span> Select the connector for oracledb: <span class="input">Oracle (supported by StrongLoop)</span>
 <span class="prompt">?</span> Connection String tns <span class="input">[Press Enter]</span>
@@ -201,7 +206,7 @@ product.save(new Model.Callback() {
             <div class="c-grid">
               <div class="_col -col-1-3">
                 <p>Connectors for Oracle, MySQL, PostgreSQL, and SQL Server provide APIs that enable you to "discover" model definition information from existing databases, including schema information such as column names and datatypes and relation information such as primary and foreign keys.</p>
-                <p>Using IBM API Designer you can accomplish the same thing without any coding!</p>
+                <p>Using <a href="https://developer.ibm.com/apiconnect/">IBM API Designer</a> you can accomplish the same thing without any coding!</p>
               </div>
               <div class="_col -col-2-3">
                 <pre><code class="language-javascript">var ds = require('../data-sources/db.js')('oracle');

@@ -31,14 +31,14 @@ $ apic create --type datasource
 </div>
 
 ```shell
-$ slc loopback:datasource
+$ lb datasource
 ```
 
 When prompted, select **other** as the connector.
 
 At the prompt "**Enter the connector name without the loopback-connector- prefix,**" enter **storage**.
 
-This creates an entry in `datasources.json` like this (for example): 
+This creates an entry in `datasources.json` like this (for example):
 
 {% include code-caption.html content="/server/datasources.json" %}
 ```javascript

@@ -22,8 +22,6 @@ The commands are listed roughly in the order that you would use them.
 
 ## Commands
 
-Commands table here.
-
 {% include content/commands.html %}
 
 ## Using Yeoman

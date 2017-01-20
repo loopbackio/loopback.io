@@ -15,13 +15,16 @@ summary:
 
 Adds a new middleware configuration to an existing LoopBack application.
 
-{% include note.html content="
-
-If you're adding third-party middleware, you must install the middleware package for your application with `npm install -save <middleware-package>`.
-
+{% include note.html content="If you're adding third-party middleware, you must install the middleware package for your application with `npm install -save <middleware-package>`.
 " %}
 
-```shell
+```
+$ lb middleware [options] [<name>]
+```
+
+With legacy StrongLoop tools:
+
+```
 $ slc loopback:middleware [options] [<name>]
 ```
 
@@ -41,7 +44,7 @@ Do not automatically install dependencies. Default is false.
 You can optionally provide the name of the middleware function to create as an argument. 
 If you do, the tool will use that as the default when it prompts for the name.
 
-### Interactive Prompts
+### Interactive prompts
 
 The tool will prompt you for:
 
@@ -56,12 +59,12 @@ The tool will prompt you for:
 
 The tools adds the specified middleware to the application's [`middleware.json`](middleware.json.html) file
 
-### EXAMPLES
+### Examples
 
-Here is an example to add a middleware to an existing phase.
+Here is an example of adding middleware to an existing phase.
 
 ```
-$ slc loopback:middleware
+$ lb middleware
 ? Enter the middleware name: m1
 ? Select the phase for m1: 5. routes
 ? Select the sub phase for m1: 1. before
@@ -78,7 +81,7 @@ Middleware m1 is added to phase routes.
 The following is an example to add a middleware to a custom phase.
 
 ```
-$ slc loopback:middleware
+$ lb middleware
 ? Enter the middleware name: m2
 ? Select the phase for m2: (custom phase)
 ? Enter the phase name: p1

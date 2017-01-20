@@ -25,11 +25,11 @@ $ apic loopback
 
 If using StrongLoop tools:
 </div>
-```sh
-$ slc loopback
+```
+$ lb
 ```
 
-The LoopBack generator will greet you with some friendly ASCII art and prompt you for the name of the application.
+The LoopBack application generator will greet you with some friendly ASCII art and prompt you for the name of the application.
 
 Enter `loopback-getting-started`. Then the generator will prompt you for the name of the directory to contain the project; press Enter to accept the default (the same as the application name):
 
@@ -103,7 +103,7 @@ $ apic create --type model
 </div>
 Using StrongLoop tools:
 ```
-$ slc loopback:model
+$ lb model
 ```
 
 The generator will prompt for a model name.  Enter **CoffeeShop**:
@@ -141,13 +141,17 @@ One of the powerful advantages of LoopBack is that it automatically generates a
 
 Hit **Enter** again to accept the default and expose the Person model via REST:
 
-`[?] Expose CoffeeShop via the REST API? (Y/n) Y`
+```
+[?] Expose CoffeeShop via the REST API? (Y/n) Y
+```
 
 LoopBack automatically creates a REST route associated with your model using the _plural_ of the model name.  By default, it pluralizes the name for you (by adding "s"), but you can specify a custom plural form if you wish.  See [Exposing models over REST](Exposing-models-over-REST) for all the details.  
 
 Press **Enter** to accept the default plural form (CoffeeShops):
 
-`[?] Custom plural form (used to build REST URL): `
+```
+[?] Custom plural form (used to build REST URL):
+```
 
 Next, you'll be asked whether you want to create the model on the server only or in the `/common` directory, where it can potentially be used by both server and [client LoopBack APIs](LoopBack-in-the-client).  Keep, the default, common, even though in this application you'll only be working with server-side models:
 
@@ -223,7 +227,9 @@ Web server listening at: http://0.0.0.0:3000/
 
 Open your browser to [http://0.0.0.0:3000/](http://0.0.0.0:3000/) (on some systems, you may need to use [http://localhost:3000](http://localhost:3000/) instead).  You'll see the default application response that displays some JSON with some status information; for example:
 
-`{"started":"2016-09-10T21:59:47.155Z","uptime":42.054}`
+```
+{"started":"2016-09-10T21:59:47.155Z","uptime":42.054}
+```
 
 Now open your browser to [http://0.0.0.0:3000/explorer](http://0.0.0.0:3000/explorer) or [http://localhost:3000/explorer](http://localhost:3000/explorer).  You'll see the StrongLoop API Explorer:
 

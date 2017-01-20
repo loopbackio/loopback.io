@@ -86,7 +86,7 @@ The easiest way to define access control for an app is with the [ACL generator]
 This enables you to create a static definition before runtime. The generator prompts you for all the necessary information:
 
 ```shell
-$ slc loopback:acl
+$ lb acl
 ```
 
 ### Example

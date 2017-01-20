@@ -37,7 +37,7 @@ $ npm install
 Enter:
 
 ```
-$ slc loopback:model
+$ lb model
 ```
 
 When prompted, enter or select the following:
@@ -91,7 +91,7 @@ apic create --type model
 Or with StrongLoop tools:
 </div>
 ```
-$ slc loopback:model
+$ lb model
 ```
 
 When prompted, enter or select the following:

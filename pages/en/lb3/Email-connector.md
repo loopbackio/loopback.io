@@ -24,7 +24,7 @@ $ apic create --type datasource
 ```
 </div>
 ```shell
-$ slc loopback:datasource
+$ lb datasource
 ```
 
 When prompted, select **Email** as the connector. This creates an entry in `datasources.json` like this (for example):

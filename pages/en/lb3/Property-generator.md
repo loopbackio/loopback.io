@@ -15,7 +15,13 @@ summary:
 
 Adds a new property to an existing LoopBack model.
 
-```shell
+```
+$ lb property [options]
+```
+
+With legacy StrongLoop tools:
+
+```
 $ slc loopback:property [options]
 ```
 

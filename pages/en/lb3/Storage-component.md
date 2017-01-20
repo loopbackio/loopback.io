@@ -85,7 +85,7 @@ $ apic create --type datasource
 
 
 ```shell
-$ slc loopback:datasource
+$ lb datasource
 [?] Enter the data-source name: myfile
 [?] Select the connector for myfile: other
 [?] Enter the connector name without the loopback-connector- prefix: loopback-component-storage

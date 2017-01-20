@@ -34,7 +34,7 @@ $ npm install
 Now you're going to define a data source using the [Data source generator](Data-source-generator):
 
 ```
-$ slc loopback:datasource
+$ lb datasource
 ```
 
 The generator will prompt you to name the data source:
