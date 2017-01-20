@@ -16,6 +16,8 @@ StrongLoop's Node API platform consists of:
 *   [StrongLoop Process Manager](https://strong-pm.io) and related devops tools for Node applications.
 
 {% include important.html content="StrongLoop Arc and `slc` are no longer under active development, and will soon be deprecated. Arc's features are being included in the [IBM API Connect Developer Toolkit](https://developer.ibm.com/apiconnect).
+
+If you're new to LoopBack, [install the LoopBack CLI tool](../lb3/Installation.html) instead.  It supports both LoopBack 2.x and 3.x.
 " %}
 
 ## What you're going to do

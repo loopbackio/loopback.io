@@ -24,4 +24,9 @@ You have two options for LoopBack tools:
   - The `slc` command-line tool for scaffolding and modifying LoopBack applications.
   - Tools for the [AngularJS client SDK](AngularJS-JavaScript-SDK.html).
   - [StrongLoop Process Manager](http://strong-pm.io/) and related devops tools.
-  - The graphical _StrongLoop Arc_ tool for creating and modifying LoopBack applications. NOTE: Soon to be deprecated.
+  - The graphical _StrongLoop Arc_ tool for creating and modifying LoopBack applications. 
+
+  {% include important.html content="StrongLoop Arc and `slc` are no longer under active development, and will soon be deprecated. Arc's features are being included in the [IBM API Connect Developer Toolkit](https://developer.ibm.com/apiconnect).
+
+  If you're new to LoopBack, [install the LoopBack CLI tool](../lb3/Installation.html) instead.  It supports both LoopBack 2.x and 3.x.
+  " %}
