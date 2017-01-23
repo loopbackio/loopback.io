@@ -17,44 +17,71 @@ LoopBack applications sometimes need to access context information to implement 
 * Access the currently logged-in user.
 * Access the HTTP request (such as URL and headers).
 
-A typical request to invoke a LoopBack model method travels through multiple layers with chains of asynchronous callbacks. It's not always possible to pass all the information through method parameters. 
+Ideally, the context data would be stored in storage similar to
+[thread-local-storage](https://en.wikipedia.org/wiki/Thread-local_storage),
+a storage that is preserved across asynchronous operations. Unfortunately,
+there is no such reliable solution available for Node.js at this moment and
+we have to use a different mechanism for passing the context through the
+continuation chain.
 
-LoopBack 2.x introduced current-context APIs using the module
-[continuation-local-storage](https://www.npmjs.com/package/continuation-local-storage)
-to provide a context object preserved across asynchronous operations.
-Unfortunately, this module is not reliable and has many known problems (for
-example, see [issue #59](https://github.com/othiym23/node-continuation-local-storage/issues/59)).
-As a result, the current-context feature does not work in many situations,
-see [loopback-context issues](https://github.com/strongloop/loopback-context/issues)
-and [related issues in loopback](https://github.com/strongloop/loopback/issues?utf8=%E2%9C%93&q=is%3Aissue%20getCurrentContext).
+{% include note.html content='
+LoopBack 2.x introduced current-context APIs using the module [continuation-local-storage](https://www.npmjs.com/package/continuation-local-storage) to provide a context object preserved across asynchronous operations. Unfortunately, this module is not reliable and has many known problems - see [node-continuation-local-storage#59](https://github.com/othiym23/node-continuation-local-storage/issues/59),
+[loopback-context issues](https://github.com/strongloop/loopback-context/issues) and [related issues in loopback](https://github.com/strongloop/loopback/issues?utf8=%E2%9C%93&q=is%3Aissue%20getCurrentContext). LoopBack 3.0 removed all current-context APIs and moved their implementation to [loopback-context](https://github.com/strongloop/loopback-context) module.
+' %}
 
-To address this problem, LoopBack 3.0 moved all current-context-related code to
-[loopback-context](https://github.com/strongloop/loopback-context) module
-and removed all current-context APIs (see
-[Release Notes](3.0-Release-Notes.html#current-context-api-and-middleware-removed)).
+The current solution for context propagation in LoopBack has the following parts:
 
-However, applications clearly need to access information like the currently
-logged-in user in application logic, for example in
-[Operation hooks](Operation-hooks.html). Until there is a reliable
-implementation of continuation-local-storage available for Node.js,
-explicitly pass any additional context via `options` parameter
-of (remote) methods.
+ - Any additional context is passed in the "options" argument. Built-in methods
+  such as
+  [PersistedModel.find](http://apidocs.strongloop.com/loopback/#persistedmodel-find)
+  or
+  [PersistedModel.create](http://apidocs.strongloop.com/loopback/#persistedmodel-create)
+  already accept this argument, custom user methods must be modified to accept it
+  too.
 
-Built-in methods such as
-[PersistedModel.find](http://apidocs.strongloop.com/loopback/#persistedmodel-find)
-or
-[PersistedModel.create](http://apidocs.strongloop.com/loopback/#persistedmodel-create)
-accept an `options` argument.
+ - Whenever a method invokes another method, the "options" argument must be passed
+ down the invocation chain.
 
+ - To seed the "options" argument when a method is invoked via a REST call, the
+  "options" argument must be annotated in remoting metadata with a specific
+  value set in the "http" property.
+
+ - Optionally, applications can customize the value provided to "options"
+   when invoked via REST.
+
+This way, the context is explicitly propagated through function calls,
+irrespective of sync/async flow. Because the initial value of the "options"
+argument is built by a server-side function, the client REST API remains
+unchanged. Sensitive context data like "currently logged-in user" remain safe
+from client-side manipulations.
+
+{% include tip.html content='
 [Operation hooks](Operation-hooks.html) expose the `options` argument
 as `context.options`.
+' %}
 
-You must safely initialize the `options` parameter when a method is invoked
-via REST API, ensuring that clients cannot override sensitive information like
-the currently logged-in user.  Doing so requires two steps:
+## Write a custom remote method with "options"
 
-- Annotate "options" parameter in remoting metadata
-- Customize the value provided to "options"
+The example code shows how to write a custom method `MyModel.log()` which
+includes the information about the currently logged-in user in the log
+message.
+
+```js
+// common/models/my-model.js
+module.exports = function(MyModel) {
+  MyModel.log = function(messageId, options) {
+    const Message = this.app.models.Message;
+    // IMPORTANT: forward the options arg
+    return Message.findById(messageId, options)
+      .then(msg => {
+        const token = options && options.accessToken;
+        const userId = token && token.userId;
+        const user = userId ? 'user#' + userId : '<anonymous>';
+        console.log('(%s) %s', user, msg.text));
+      });
+  };
+};
+```
 
 ## Annotate "options" parameter in remoting metadata
 
@@ -63,10 +90,19 @@ remoting metadata and set the `http` property to the special string value
 `"optionsFromRequest"`.
 
 ```json
+// common/models/my-model.json
 {
-  "arg": "options",
-  "type": "object",
-  "http": "optionsFromRequest"
+  "name": "MyModel",
+  // ...
+  "methods": {
+    "log": {
+      "accepts": [
+        {"arg": "messageId", "type": "number", "required": true},
+        {"arg": "options", "type": "object", "http": "optionsFromRequest"}
+      ],
+      "http": {"verb": "POST", "path": "/log/:messageId"}
+    }
+  }
 }
 ```
 
@@ -84,6 +120,27 @@ parameter.
 {% include note.html content='
 In LoopBack 2.x, this feature is disabled by default for compatibility reasons.  To enable, add `"injectOptionsFromRemoteContext": true` to your model JSON file.
 ' %}
+
+## Access the context from Operation hooks
+
+The example below implements a simple audit log printing information
+about which user accessed which model instance.
+
+```js
+// common/models/my-model.js
+module.exports = function(MyModel) {
+  MyModel.observe('access', function(ctx, next) {
+    const token = ctx.options && ctx.options.accessToken;
+    const userId = token && token.userId;
+    const user = userId ? 'user#' + userId : '<anonymous>';
+
+    const modelName = ctx.Model.modelName;
+    const scope = ctx.where ? JSON.stringify(ctx.where) : '<all records>';
+    console.log('%s: %s accessed %s:%s', new Date(), user, modelName, scope);
+    next();
+  });
+};
+```
 
 ## Customize the value provided to "options"
 
