@@ -473,7 +473,7 @@ follow these steps:
     }
     ```
 
- 3. Edit the `remoting` section in your `server/config.json` and set `cors` to `true`:
+ 3. Edit the `remoting` section in your `server/config.json` and set `cors` to `false`:
 
     ```js
     {
