@@ -19,10 +19,8 @@ LoopBack applications sometimes need to access context information to implement 
 
 Ideally, the context data would be stored in storage similar to
 [thread-local-storage](https://en.wikipedia.org/wiki/Thread-local_storage),
-a storage that is preserved across asynchronous operations. Unfortunately,
-there is no such reliable solution available for Node.js at this moment and
-we have to use a different mechanism for passing the context through the
-continuation chain.
+which persists across asynchronous operations. Unfortunately,
+a reliable solution is not currently available for Node.js, so LoopBack uses a different mechanism for passing the context through the continuation chain.
 
 {% include note.html content='
 LoopBack 2.x introduced current-context APIs using the module [continuation-local-storage](https://www.npmjs.com/package/continuation-local-storage) to provide a context object preserved across asynchronous operations. Unfortunately, this module is not reliable and has many known problems - see [node-continuation-local-storage#59](https://github.com/othiym23/node-continuation-local-storage/issues/59),
