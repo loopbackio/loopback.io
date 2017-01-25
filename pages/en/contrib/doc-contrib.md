@@ -26,6 +26,9 @@ Follow these steps:
 1. Commit to your fork/branch.
 1. Open a PR for your changes.  If there is an associated issue, please reference it in your PR.
 
+{% include important.html content="When you submit your PR, be sure to agree to the contributor license agreement; see below.
+" %}
+
 We attempt to review and merge PRs as soon as possible; in general, we'll try to do so within 24 hours during the business week.  Please allow longer over weekends or holidays.
 
 {% include content/cla.md %}
