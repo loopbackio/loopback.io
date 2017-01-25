@@ -2,12 +2,10 @@
 title: Tables
 tags: [formatting]
 keywords: datatables, tables, grids, markdown, multimarkdown, jquery plugins
-last_updated: July 3, 2016
 datatable: true
 summary: "You can format tables using either multimarkdown syntax or HTML. You can also use jQuery datatables (a plugin) if you need more robust tables."
 sidebar: contrib_sidebar
 permalink: /doc/en/contrib/tables.html
-folder: mydoc
 ---
 
 {% unless site.output == "pdf" %}
@@ -49,7 +47,7 @@ You can use Multimarkdown syntax for tables. The following shows a sample:
 
 ## HTML Tables {#htmltables}
 
-If you need a more sophisticated table syntax, use HTML syntax for the table. Although you're using HTML, you can use Markdown inside the table cells by adding `markdown="1"` as an attribute for the `td` tag, as shown in the following table. You can also control the column widths.
+If you need a more sophisticated table syntax, use HTML syntax for the table. Although you're using HTML, you can use Markdown inside the table cells by adding `` as an attribute for the `td` tag, as shown in the following table. You can also control the column widths.
 
 ```html
 <table>
@@ -65,12 +63,12 @@ If you need a more sophisticated table syntax, use HTML syntax for the table. Al
 </thead>
 <tbody>
 <tr>
-<td align="left" markdown="1">First column **fields**</td>
-<td align="left" markdown="1">Some descriptive text. This is a markdown link to [Google](http://google.com). Or see [some link][mydoc_tags].</td>
+<td align="left">First column **fields**</td>
+<td align="left">Some descriptive text. This is a markdown link to [Google](http://google.com). Or see [some link][tags.html.</td>
 </tr>
 <tr>
-<td align="left" markdown="1">Second column **fields**</td>
-<td align="left" markdown="1">Some more descriptive text. Here we have a Markdown-formatted list:
+<td align="left">Second column **fields**</td>
+<td align="left">Some more descriptive text. Here we have a Markdown-formatted list:
 
 * first item
 * second item
@@ -80,7 +78,9 @@ If you need a more sophisticated table syntax, use HTML syntax for the table. Al
 </tbody>
 </table>
 ```
+
 **Result:**
+
 <table>
 <colgroup>
 <col width="30%" />
@@ -94,17 +94,13 @@ If you need a more sophisticated table syntax, use HTML syntax for the table. Al
 </thead>
 <tbody>
 <tr>
-<td align="left" markdown="1">First column **fields**</td>
-<td align="left" markdown="1">Some descriptive text. This is a markdown link to [Google](http://google.com). Or see [some link][mydoc_tags].</td>
+  <td align="left">First column fields</td>
+  <td align="left">Some descriptive text. This is a markdown link to <a href="http://google.com">Google</a>. Or see [some link][tags.html.</td>
 </tr>
 <tr>
-<td align="left" markdown="1">Second column **fields**</td>
-<td align="left" markdown="1">Some more descriptive text. Here we have a Markdown-formatted list:
-
-* first item
-* second item
-* third item
-</td>
+  <td align="left">Second column fields</td>
+  <td align="left">Some more descriptive text.
+  </td>
 </tr>
 </tbody>
 </table>

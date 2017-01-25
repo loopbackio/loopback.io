@@ -3,7 +3,6 @@ title: Code style guide
 toc: false
 tags: [contributing, community]
 keywords:
-last_updated: Sept 27, 2016
 summary: "These are LoopBack's general coding style guidelines."
 sidebar: contrib_sidebar
 permalink: /doc/en/contrib/style-guide.html

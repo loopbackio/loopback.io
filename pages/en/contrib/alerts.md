@@ -2,7 +2,6 @@
 title: Alerts
 tags: [formatting]
 keywords: notes, tips, cautions, warnings, admonitions
-last_updated: July 3, 2016
 summary: "You can insert notes, tips, warnings, and important alerts in your content. These notes make use of Bootstrap styling and are available through data references such as site.data.alerts.note."
 sidebar: contrib_sidebar
 permalink: /doc/en/contrib/alerts.html
@@ -13,7 +12,7 @@ Alerts are little warnings, info, or other messages that you have called out in 
 
 ## Alerts
 
-Similar to [inserting images][mydoc_images]), you insert alerts through various includes that have been developed. These includes provide templates through which you pass parameters to easily populate the right HTML code.
+Similar to [inserting images][images.html]), you insert alerts through various includes that have been developed. These includes provide templates through which you pass parameters to easily populate the right HTML code.
 
 ```
 {%raw%}{% include note.html content="This is my note. All the content I type here is treated as a single paragraph."
@@ -187,7 +186,7 @@ with the `style` parameter.
 If you have some of the syntax wrong with an alert or callout, you'll see an error when Jekyll tries to build your site. The error may look like this:
 
 ```
-{% raw %}Liquid Exception: Invalid syntax for include tag: content="This is my **info** type callout. It has a border on the left whose color you define by passing a type parameter. type="info" Valid syntax: {% include file.ext param='value' param2='value' %} in mydoc/en/mydoc_alerts.md {% endraw %}
+{% raw %}Liquid Exception: Invalid syntax for include tag: content="This is my **info** type callout. It has a border on the left whose color you define by passing a type parameter. type="info" Valid syntax: {% include file.ext param='value' param2='value' %} in /en/alerts.md {% endraw %}
 ```
 
 These errors are a good thing, because it lets you know there's an error in your syntax. Without the errors, you may not realize that you coded something incorrectly until you see the lack of alert or callout styling in your output.

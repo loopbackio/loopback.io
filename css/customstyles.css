@@ -1215,3 +1215,5 @@ td pre {
   background-color: #f2f2f2;
   font-weight: bold;
 }
+
+blockquote p { font-size: 100%; }

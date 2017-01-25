@@ -3,13 +3,12 @@ title: FAQ layout
 sidebar: contrib_sidebar
 tags: [special_layouts]
 keywords: frequently asked questions, FAQ, question and answer, collapsible sections, expand, collapse
-last_updated: November 30, 2015
 summary: "You can use an accordion-layout that takes advantage of Bootstrap styling. This is useful for an FAQ page."
 toc: false
 permalink: /doc/en/contrib/faq_layout.html
 ---
 
-<p>If you want to use an FAQ format, use the syntax shown on the faq.html page. Rather than including code samples here (which are bulky with a lot of nested <code>div</code> tags), just look at the source in the mydoc_faq.html theme file.</p>
+<p>If you want to use an FAQ format, use the syntax shown on the faq.html page. Rather than including code samples here (which are bulky with a lot of nested <code>div</code> tags), just look at the source in the `faq.html` theme file.</p>
 
 <div class="panel-group" id="accordion">
                     <div class="panel panel-default">

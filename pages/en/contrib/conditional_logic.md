@@ -2,11 +2,10 @@
 title: Conditional logic
 tags: [single_sourcing]
 keywords: if else logic, conditions, conditional attributes, conditional filtering
-last_updated: July 3, 2016
 summary: "You can implement advanced conditional logic that includes if statements, or statements, unless, and more. This conditional logic facilitates single sourcing scenarios in which you're outputting the same content for different audiences."
 sidebar: contrib_sidebar
 permalink: /doc/en/contrib/conditional_logic.html
-folder: mydoc
+
 ---
 
 ## About Liquid and conditional statements
@@ -14,7 +13,7 @@ If you want to create different outputs for different audiences, you can do all 
 
 But I soon found that having lots of separate outputs for a project was undesirable. If you have 10 different outputs that have different nuances for different audiences, it's hard to manage and maintain. In this latest version of the theme, I consolidated all information into the same output to explicitly do away with the multi-output approach.
 
-As such, the conditional logic won't have as much play as it previously did. Instead of conditions, you'll probably want to incorporate [navtabs](mydoc_navtabs) to split up the information.
+As such, the conditional logic won't have as much play as it previously did. Instead of conditions, you'll probably want to incorporate [navtabs](navtabs.html) to split up the information.
 
 However, you can still of course use conditional logic as needed.
 
@@ -134,7 +133,7 @@ For example, suppose you have 2 projects: alpha and beta. You might store all th
 In your alpha configuration file, specify the data source like this:
 
 ```
-data_source: data_amydoc_content_reuselpha
+data_source: data_alpha
 ```
 
 Then create a folder called \_data_alpha.

@@ -76,20 +76,20 @@ Never end a list item with a comma, semicolon, or colon.
 
 Use [alerts](alerts.html) to highlight text for notes, warnings, and so on.
 
-## Spelling, grammar, and usage
+## Spelling, grammar, and style
 
 Use American spelling and grammar: "behavior" instead of "behaviour," "color" instead of "colour," and so on.
 
 Collective nouns, such as corporations, are singular, not plural:
 
-*   CORRECT: IBM is a company that helps promote Node.js (standard American usage).
-*   INCORRECT: IBM are a company that helps promote Node.js (standard British usage).
+*   CORRECT: IBM is a company that helps promote Node.js (standard American use).
+*   INCORRECT: IBM are a company that helps promote Node.js (standard British use).
 
 In lists of three or more items, use the [serial comma](http://grammar.about.com/od/grammarfaq/f/QAoxfordcomma.htm).
 
 Spell out acronyms and abbreviations upon first use, with the acronym in parenthesis. For example:
 
-This enables you to create a service-oriented architecture (SOA).
+> This enables you to create a service-oriented architecture (SOA).
 
 Do not use Latin abbreviations, which may not be understood by all readers. Instead use the English equivalent:
 
@@ -97,13 +97,11 @@ Do not use Latin abbreviations, which may not be understood by all readers. Inst
 *   Instead of "e.g." use "for example".
 *   Instead of "etc." use "and so on".
 
-Put punctation inside quotation marks when they appear. For example:
-
-Use American spelling and grammar: "behavior" instead of "behaviour," "color" instead of "colour," and so on.
+Put punctation inside quotation marks when they appear.
 
 EXCEPTION: If the item within the quotes is a literal such as used in keystroke entry, or if the meaning would otherwise be unclear, put the comma outside of the quotation mark. For example:
 
-At the prompt enter "Y", then hit Enter.
+> At the prompt enter "Y", then hit Enter.
 
 ### Capitalization
 
@@ -111,7 +109,7 @@ Capitalize proper nouns such as product and company names. Avoid gratuitous capi
 
 When product, tool, or names other names don't begin with a capital letter (npm, io.js, iPhone, eBay) capitalize them when starting a sentence. For example:
 
-> npm is the Node package manager, but apparently doesn't stand for "Node Package Manager."
+> Npm is the Node package manager, but apparently doesn't stand for "Node Package Manager."
 
 When a sentence begins with something rendered in monospace font, don't capitalize it:
 

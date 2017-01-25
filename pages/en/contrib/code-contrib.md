@@ -2,7 +2,6 @@
 title: Contributing code
 tags: [community, contributing]
 keywords: LoopBack, open-source
-last_updated: Sept 27, 2016
 summary: "This article explains the process and guidelines for contributing code to the LoopBack project."
 sidebar: contrib_sidebar
 permalink: /doc/en/contrib/code-contrib.html

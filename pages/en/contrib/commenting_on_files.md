@@ -3,11 +3,10 @@ title: Adding Review Comments
 tags:
   - navigation
 keywords: "annotations, comments, feedback"
-last_updated: "November 30, 2016"
 summary: "You can add a button to your pages that allows people to add comments."
 sidebar: contrib_sidebar
 permalink: /doc/en/contrib/commenting_on_files.html
-folder: mydoc
+
 ---
 
 ## About the review process

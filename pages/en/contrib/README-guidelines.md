@@ -78,6 +78,10 @@ But include any other steps or requirements.
 
 ### Basic use
 
+{% include tip.html content='This section is often titled "Usage," but we prefer
+"Use" because it is a shorter and more common word, and means the same thing.
+' %}
+
 - Focus should be on using the module on its own, independently of other modules.  StrongLoop documentation will describe how to use it with other modules (as part of the larger framework).
 - Start with a very simple example in the README, then link to further examples in the `/examples` directory, if provided.  
 - Briefly explain the most common use cases.
@@ -97,7 +101,7 @@ Information relevant to contributors, including any specific steps needed to set
 
 Suggested blurb:
 
-IBM/StrongLoop is an active supporter of open source and welcomes contributions to our projects as well as those of the Node.js community in general. For more information on how to contribute please refer to the [Contribution Guide](https://github.com/strongloop/loopback/blob/master/CONTRIBUTING.md).
+> IBM/StrongLoop is an active supporter of open source and welcomes contributions to our projects as well as those of the Node.js community in general. For more information on how to contribute please refer to the [Contribution Guide](https://github.com/strongloop/loopback/blob/master/CONTRIBUTING.md).
 
 ### Tests
 
@@ -105,7 +109,7 @@ What tests are included; how to run them. The convention for running tests is `n
 
 ### Contributors
 
-Names of module "owners" (SL lead developers) and other developers who have contributed.
+Names of module "owners" and other developers who have contributed.
 
 ### License
 

@@ -2,7 +2,6 @@
 title: Functional area owners
 tags: [contributing]
 keywords:
-last_updated: Oct 5, 2016
 summary: "List of who oversees each functional area of Loopback"
 sidebar: contrib_sidebar
 permalink: /doc/en/contrib/functional-area-owners.html

@@ -2,11 +2,10 @@
 title: Images
 tags: [formatting]
 keywords: images, screenshots, vectors, svg, markdown syntax
-last_updated: July 3, 2016
 summary: "Store images in the images folder and use the image.html include to insert images. This include has several options, including figcaptions, that extract the content from the formatting."
 sidebar: contrib_sidebar
 permalink: /doc/en/contrib/images.html
-folder: mydoc
+
 ---
 
 ## Image Include Template
@@ -89,6 +88,6 @@ The stylesheet even handles SVG display in IE 9 and earlier through the followin
 
 Also, if you're working with SVG graphics, note that Firefox does not support SVG fonts. In Illustrator, when you do a Save As with your AI file and choose SVG, to preserve your fonts, in the Font section, select "Convert to outline" as the Type (don't choose SVG in the Font section).
 
-Also, remove the check box for "Use textpath element for text on a path". And select "Embed" rather than "Link." 
+Also, remove the check box for "Use textpath element for text on a path". And select "Embed" rather than "Link."
 
 {% include links.html %}
