@@ -1,7 +1,7 @@
 ## Agreeing to the CLA
 
-Like many open source projects, we need you to agree to a [contributor license agreement](https://github.com/strongloop/loopback/blob/master/CONTRIBUTING.md#contributor-license-agreement)
-before we can merge in your changes.
+Like many open source projects, you must agree to the [contributor license agreement (CLA)](https://cla.strongloop.com/agreements/strongloop/loopback.io)
+before we can accept (merge) your changes.
 
 In summary, by submitting your code or doc contributions, you are granting us a right to use
 that code/content under the terms of this agreement, including providing it to
