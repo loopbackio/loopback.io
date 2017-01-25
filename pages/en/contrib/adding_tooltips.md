@@ -7,6 +7,8 @@ sidebar: contrib_sidebar
 permalink: /doc/en/contrib/adding_tooltips.html
 ---
 
+{% include note.html content="LoopBack documentation does not currently use tooltips. " %}
+
 ## Creating tooltips
 Because this theme is built on Bootstrap, you can simply use a specific attribute on an element to insert a tooltip.
 
