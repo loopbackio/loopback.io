@@ -23,7 +23,7 @@ Or:
 </div>
 
 ```
-$ lb [options] [<name>]
+$ lb model [options] [<name>]
 ```
 
 With legacy StrongLoop tools:
