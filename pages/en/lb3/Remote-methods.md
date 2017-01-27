@@ -36,6 +36,7 @@ If you created the model with the [Model generator](Model-generator.html), then
 For example, if you create a model named \"FooBar\" with the model generator, it creates files `foo-bar.json` and `foo-bar.js` in `common/models`. 
 However, the model name (\"FooBar\") will be preserved via the model's name property.
 " %} 
+
 ### Example
 
 See additional introductory examples in [Extend your API](Extend-your-API.html).
@@ -60,15 +61,15 @@ module.exports = function(Person){
 
 Now, for example, a request to
 
-`POST /api/people/greet`
+```
+POST /api/people/greet
+```
 
-with data `{"msg": "John"}`
+with data `{"msg": "John"}` will return:
 
-will return:
-
-**shell**
-
-`Greetings... John!`
+```
+Greetings... John!
+```
 
 {% include note.html content="Notice the REST API request above uses the plural form \"people\" instead of \"person\". LoopBack exposes the
 [plural form of model names for REST API routes](Exposing-models-over-REST.html#REST-paths).

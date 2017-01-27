@@ -1,9 +1,10 @@
 ---
 title: "Configuring providers.json"
 lang: en
-layout: page
+layout: navgroup
+navgroup: user-mgmt
 keywords: LoopBack
-tags:
+tags: authentication
 sidebar: lb3_sidebar
 permalink: /doc/en/lb3/Configuring-providers.json.html
 summary:
