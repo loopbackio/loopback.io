@@ -9,6 +9,8 @@
   * [Third-party login using Passport](Third-party-login-using-Passport.html)
   {% endunless %}{% unless page.permalink contains 'User-management-example.html' %}
   * [User management example](User-management-example.html)
+  {% endunless %}{% unless page.permalink contains 'Tutorial-third-party-login.html' %}
+  * [Tutorial: third-party login](Tutorial-third-party-login.html)
   {% endunless %}
 {% endcapture %}
 
