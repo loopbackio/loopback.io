@@ -147,3 +147,7 @@ Since a model doesn't inherit ACLs from its base model, you must define ACLs for
 ### User realms
 
 See [Partitioning users with realms](Partitioning-users-with-realms.html).
+
+## Security considerations
+
+See [Access token invalidation](AccessToken-invalidation.html).

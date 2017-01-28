@@ -147,3 +147,16 @@ Since a model doesn't inherit ACLs from its base model, you must define ACLs for
 ### User realms
 
 See [Partitioning users with realms](Partitioning-users-with-realms.html).
+
+## Security considerations
+
+When a user's account is compromised (for example their password is leaked or the attacker gains 
+access to their email account), the app needs to be able to prevent continued use of the hijacked account.
+
+To address this case, LoopBack invalidates access tokens (logs out sessions)
+when a change of password or email is detected. The access token used to
+request the change (the current session) is preserved.
+
+{% include important.html content="
+To preserve backwards compatibility, LoopBack 2.x LTS does not enable this functionality by default, but prints a startup warning to notify the application developer about a potential security issue. See [AccessToken invalidation in LB 2.x](/doc/en/lb2/AccessToken-invalidation) for more details.
+"%}
