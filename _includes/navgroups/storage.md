@@ -7,6 +7,7 @@
 * [Storage component REST API](Storage-component-REST-API.html)
 {% endunless %}
 * [Storage component API docs](https://apidocs.strongloop.com/loopback-component-storage/)
+* [Blog: Working with File Storage and LoopBack](https://strongloop.com/strongblog/working-with-file-storage-and-loopback/)
   {% assign page.readme = false %}
 {% endcapture %}
 
