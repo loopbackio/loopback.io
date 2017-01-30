@@ -1,0 +1,25 @@
+{% if include.list %}
+  {% assign last = include.list.size | minus: 1 %}
+
+  {% for i in (0..last) %}
+    {% assign text=include.list[i] %}
+
+    {% case include.type %}
+    {% when 'repo' %}
+      {% assign url=https://github.com/strongloop/{{include.list[i]} %}
+
+    {% when 'team' %}
+      {% assign url=https://github.com/orgs/strongloop/teams/{{include.list[i]}} %}
+
+    {% when 'file' %}
+      {% assign url={{include.list[i]}} %}
+      {% assign text = include.list[i] | split: "/" | last %}
+
+    {% when 'person' %}
+      {% assign url=https://github.com/{{include.list[i]}} %}
+    {% endcase %}
+
+      <a href="{{url}}">{{text}}</a>
+      <br/>
+  {% endfor %}
+{% endif %}
