@@ -1,14 +1,12 @@
 ---
 title: "Valid names in LoopBack"
-redirect_from:
-- /doc/en/lb3/Valid-names-in-LoopBack.html
 lang: en
 layout: page
 keywords: LoopBack
 tags:
 sidebar: lb2_sidebar
 permalink: /doc/en/lb2/Valid-names-in-LoopBack.html
-summary:
+summary: This article explains the rules for naming LoopBack 2.x applications, models, data sources, and other project artifacts.
 ---
 
 In general, names of names of LoopBack applications, models, data sources, and so on must at a minimum be
