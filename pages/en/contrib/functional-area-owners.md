@@ -15,12 +15,12 @@ permalink: /doc/en/contrib/functional-area-owners.html
 {% for category in site.data.fa-owners %}
   <h2>{{category[0]}}</h2>
 
-  <table border="1">
+  <table width="800" border="1">
   <thead><tr>
-    <th>GitHub Label</th>
-    <th>Owner</th>
-    <th>Repo(s)</th>
-    <th>SME(s)</th>
+    <th width="170">GitHub Label</th>
+    <th width="150">Owner</th>
+    <th width="300">Repo(s)</th>
+    <th width="180">SME(s)</th>
   </tr></thead>
   <tbody>
     {% for fa in category[1] %}
