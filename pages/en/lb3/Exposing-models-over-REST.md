@@ -399,7 +399,7 @@ Product.disableMethodByName('createChangeStream');         // Removes (GET|POST)
 
 ### Hiding endpoints for related models
 
-To disable a REST endpoints for related model methods, use [disableMethodByName()](https://apidocs.strongloop.com/loopback/#model-disableMethodByName).
+To disable a REST endpoints for related model methods, use [disableRemoteMethodByName()](https://apidocs.strongloop.com/loopback/#model-disableRemoteMethodByName).
 
 {% include note.html content="For more information, see [Accessing related models](Accessing-related-models.html)." %}
 
