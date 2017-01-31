@@ -5,6 +5,11 @@ keywords:
 summary: "List of who oversees each functional area of Loopback"
 sidebar: contrib_sidebar
 permalink: /doc/en/contrib/functional-area-owners.html
+redirect_from:
+- /fa-owner/
+- /fa-owners/
+- /functional-area-owner/
+- /functional-area-owners/
 ---
 
 **Missing ownership for strong-error handler, strong-docs, apidocs-strongloop.com**
