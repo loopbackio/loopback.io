@@ -28,6 +28,7 @@ LoopBack lead maintainers include:
 *   [Miroslav Bajtoš](https://github.com/bajtos)
 *   [Raymond Feng](https://github.com/raymondfeng)
 *   [Ritchie Martori](https://github.com/ritch)
+*   [Simon Ho](https://github.com/superkhau)
 
 For more details, see [Functional area owners](functional-area-owners.html).
 
