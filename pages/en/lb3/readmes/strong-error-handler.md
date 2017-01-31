@@ -79,6 +79,7 @@ The content type of the response depends on the request's `Accepts` header.
 | ---- | ---- | ---- | ---- |
 | debug | Boolean&nbsp;&nbsp;&nbsp; | `false` | If `true`, HTTP responses include all error properties, including sensitive data such as file paths, URLs and stack traces. See [Example output](#example) below. |
 | log | Boolean | `true` |  If `true`, all errors are printed via `console.error`, including an array of fields (custom error properties) that are safe to include in response messages (both 4xx and 5xx). <br/> If `false`, sends only the error back in the response. |
+| safeFields | [String] | `[]` |  Specifies property names on errors that are allowed to be passed through in 4xx and 5xx responses. See [Safe error fields](#safe-error-fields) below. |
 
 ### Customizing log format
 
@@ -123,6 +124,34 @@ Then in `server/middleware.json`, specify your custom error logging function as 
 ```
 
 The default `middleware.development.json` file explicitly enables logging in strong-error-handler params, so you will need to change that file too.
+
+### Safe error fields
+
+By default, `strong-error-handler` will only pass through the `name`, `message` and `details` properties of an error. Additional error
+properties may be allowed through on 4xx and 5xx status code errors using the `safeFields` option to pass in an array of safe field names:
+
+```
+{
+  "final:after": {
+    "strong-error-handler": {
+      "params": {
+        "safeFields": ["errorCode"]
+      }
+    }
+}
+```
+
+Using the above configuration, an error containing an `errorCode` property will produce the following response:
+
+```
+{
+  "error": {
+    "statusCode": 500,
+    "message": "Internal Server Error",
+    "errorCode": "INTERNAL_SERVER_ERROR"
+  }
+}
+```
 
 ## Migration from old LoopBack error handler
 
