@@ -2,7 +2,6 @@
 title: Using ESLint with LoopBack repositories
 tags: [contributing, community]
 keywords: ESLint
-last_updated: Sept 27, 2016
 summary: "ESLint is a pluggable linting utility for JavaScript. Here are the guidelines for using it with LoopBack. "
 sidebar: contrib_sidebar
 permalink: /doc/en/contrib/eslint-guide.html

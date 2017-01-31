@@ -30,7 +30,7 @@ The built-in [memory connector](Memory-connector.html) is suitable for develop
 To add a new data source, use the [data source generator](Data-source-generator.html):
 
 ```shell
-$ slc loopback:datasource
+$ lb datasource
 ```
 <div id="lb3apic" class="sl-hidden" markdown="1">
 Or, with API Connect:

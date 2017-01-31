@@ -4,8 +4,8 @@ toc: false
 lang:  en
 keywords:  LoopBack
 tags:  [reference]
-sidebar:  lb2_sidebar
-permalink:  /doc/en/lb2/Glossary.html
+sidebar:  lb3_sidebar
+permalink:  /doc/en/lb3/Glossary.html
 summary: Definitions of common LoopBack terms.
 ---
 <div style="float:right; width: 80px;">
@@ -78,7 +78,7 @@ event loop
 ## G
 
 generator
-: Interactive command-line tool that scaffolds all or part of a LoopBack application.  See [slc loopback command-line reference](Command-line-tools.html).
+: Interactive command-line tool that scaffolds all or part of a LoopBack application.  See [command-line tools](Command-line-tools.html).
 
 ## I
 
@@ -91,6 +91,10 @@ JSON
 : JavaScript Object Notation; a lightweight data-interchange format that is based on the object-literal notation of JavaScript. JSON is programming-language neutral but uses conventions from various languages.
 
 ## L
+
+lb
+: The LoopBack command-line interface (CLI) tool for scaffolding and developing LoopBack applications.
+Replaces the legacy `slc` tool.
 
 LDL
 : LoopBack Definition Language, a form of JSON used to define LoopBack models and other configurations.
@@ -174,7 +178,7 @@ SDK
 : Software development kit.  A set of tools, APIs, and documentation to assist with the development of software in a specific computer language or for a particular operating environment.
 
 slc
-: The StrongLoop command-line tool for development and operations. It provides commands to scaffold LoopBack applications. For more information, see [Command-line tools](Command-line-tools.html).
+: The legacy StrongLoop command-line tool for development and operations. It's replaced by the LoopBack CLI tool, `lb`.
 
 synchronization
 : The process by which data consistency is achieved between two endpoints such as a provider application and a mobile application. During this process, at either endpoint, data can be updated, created, or deleted.  See [Synchronization](Synchronization.html).

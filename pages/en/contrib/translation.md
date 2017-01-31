@@ -1,12 +1,11 @@
 ---
 title: Translation
 tags: [getting_started]
-last_updated: Sept 26, 2016
 keywords: localization, internationalization, globalization
 summary: "There is an infrastructure and process to translate LoopBack docs into languages other than English"
 sidebar: contrib_sidebar
 permalink: /doc/en/contrib/translation.html
-folder: mydoc
+
 ---
 
 This site supports translating documentation into other languages.

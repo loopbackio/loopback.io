@@ -16,42 +16,17 @@ children:
   output: 'web, pdf'
   children:
 
-  - title: 'Installing StrongLoop'
-    url: /doc/en/lb3/Installing-StrongLoop.html
-    output: 'web, pdf'
-    children:
-
-    - title: 'Installing compiler tools'
-      url: /doc/en/lb3/Installing-compiler-tools.html
-      output: 'web, pdf'
-
-    - title: 'Installing on MacOS'
-      url: /doc/en/lb3/Installing-on-MacOS.html
-      output: 'web, pdf'
-
-    - title: 'Installing on Windows'
-      url: /doc/en/lb3/Installing-on-Windows.html
-      output: 'web, pdf'
-
-    - title: 'Installing on Linux'
-      url: /doc/en/lb3/Installing-on-Linux.html
-      output: 'web, pdf'
-
-    - title: 'Updating to the latest version'
-      url: /doc/en/lb3/Updating-to-the-latest-version.html
-      output: 'web, pdf'
-
-  - title: '3.0 Release Notes'
-    url: /doc/en/lb3/3.0-Release-Notes.html
-    output: 'web, pdf'
-
-  - title: 'Migrating apps to v3.0'
-    url: /doc/en/lb3/Migrating-to-3.0.html
-    output: 'web, pdf'
-
   - title: 'Installation troubleshooting'
     url: /doc/en/lb3/Installation-troubleshooting.html
     output: 'web, pdf'
+
+- title: '3.0 Release Notes'
+  url: /doc/en/lb3/3.0-Release-Notes.html
+  output: 'web, pdf'
+
+- title: 'Migrating apps to v3.0'
+  url: /doc/en/lb3/Migrating-to-3.0.html
+  output: 'web, pdf'
 
 - title: 'LoopBack core concepts'
   url: /doc/en/lb3/LoopBack-core-concepts.html
@@ -932,6 +907,10 @@ children:
     output: 'web'
     children:
 
+    - title: component-config.json
+      url: /doc/en/lb3/component-config.json.html
+      output: 'web, pdf'
+
     - title: config.json
       url: /doc/en/lb3/config.json.html
       output: 'web, pdf'
@@ -942,6 +921,10 @@ children:
 
     - title: middleware.json
       url: /doc/en/lb3/middleware.json.html
+      output: 'web, pdf'
+
+    - title: middleware.development.json
+      url: /doc/en/lb3/middleware.development.json.html
       output: 'web, pdf'
 
     - title: model-config.json

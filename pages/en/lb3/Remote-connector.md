@@ -38,7 +38,7 @@ $ apic create --type datasource
 </div>
 
 ```shell
-$ slc loopback:datasource
+$ lb datasource
 ```
 
 When prompted:

@@ -71,7 +71,7 @@ In each page's frontmatter, you must specify the sidebar you want that page to u
 title: Alerts
 tags: [formatting]
 keywords: notes, tips, cautions, warnings, admonitions
-last_updated: July 3, 2016
+
 summary: "You can insert notes, tips, warnings, and important alerts in your content. These notes are stored as shortcodes made available through the linksrefs.hmtl include."
 <span class="red">sidebar: contrib_sidebar</span>
 permalink: /doc/en/contrib/alerts
@@ -87,7 +87,7 @@ Note that your sidebar can only have 2 levels. Given that each product has its o
 {% include note.html content="Note that each level must have at least one topic before the next level starts. You can't have a second level that contains multiple third levels without having at least one standalone topic in the second level.
 " %}
 
-For more detail on the sidebar, see [Sidebar navigation][mydoc_sidebar_navigation].
+For more detail on the sidebar, see [Sidebar navigation][sidebar_navigation.html.
 
 ## Sidebar syntax
 
@@ -163,7 +163,7 @@ To accommodate the title page and table of contents in PDF outputs, each product
 
 Leave the output as `output: pdf` for these frontmatter pages so that they don't appear in the web output.
 
-For more detail on the sidebar, see [Sidebar navigation][mydoc_sidebar_navigation] and [YAML tutorial][mydoc_yaml_tutorial].
+For more detail on the sidebar, see [Sidebar navigation][sidebar_navigation] and [YAML tutorial][mydoc_yaml_tutorial.html.
 
 ## Relative links and offline viewing
 
@@ -180,7 +180,7 @@ When you write pages, include these same frontmatter properties with each page:
 title: "Some title"
 tags: [sample1, sample2]
 keywords: keyword1, keyword2, keyword3
-last_updated: Month day, year
+
 summary: "optional summary here"
 sidebar: sidebarname
 permalink: /doc/en/contrib/filename.html
@@ -199,7 +199,7 @@ If you don't want the mini-TOC to show on a page (such as for the homepage or la
 
 The `permalink` value should be the same as your filename and include the ".html" file extension.
 
-For more detail, see [Pages][mydoc_pages].
+For more detail, see [Pages][pages.html].
 
 ## Where to store your documentation topics
 
@@ -207,7 +207,7 @@ You can store your files for each product inside subfolders following the patter
 
 Note that product1, product2, and mydoc are all just sample content to demonstrate how to add multiple products into the theme. You can freely delete that content.
 
-For more information, see [Pages][mydoc_pages] and [Posts][mydoc_posts].
+For more information, see [Pages][pages.html].
 
 ## Configure the top navigation
 
@@ -223,17 +223,7 @@ If you want to generate PDF, you'll need a license for [Prince XML](http://www.p
 
 If you're on Windows, install [Git Bash client](https://git-for-windows.github.io/) rather than using the default Windows command prompt.
 
-Open up the css/printstyles.css file and customize the email address (`youremail@domain.com`) that is listed there. This email address appears in the bottom left footer of the PDF output. You'll also need to create a PDF configuration file following the examples shown in the pdfconfigs folder, and also customize some build scripts following the same pattern shown in the root: pdf-product1.sh
-
-See the section on [Generating PDFs][mydoc_generating_pdfs] for more details about setting the theme up for this output.
-
-## Blogs / News
-
-For blog posts, create your markdown files in the \_posts folder following the sample formats. Post file names always begin with the date (YYYY-MM-DD-title).
-
-The news/news.html file displays the posts, and the news_archive.html file shows a yearly history of posts. In documentation, you might use the news to highlight product features outside of your documentation, or to provide release notes and other updates.
-
-See [Posts][mydoc_posts] for more information.
+Open up the `css/printstyles.css` file and customize the email address (`youremail@domain.com`) that is listed there. This email address appears in the bottom left footer of the PDF output. You'll also need to create a PDF configuration file following the examples shown in the pdfconfigs folder, and also customize some build scripts following the same pattern shown in the root: `pdf-product1.sh`.
 
 ## Markdown
 
@@ -262,13 +252,3 @@ When you want to insert paragraphs, notes, code snippets, or other matter in bet
 ```
 
 See the topics under "Formatting" in the sidebar for more information.
-
-## Automated links
-
-If you want to use an automated system for managing links, see [Automated Links][mydoc_hyperlinks.html#automatedlinks]. This approach automatically creates a list of Markdown references to simplify linking.
-
-## Other instructions
-
-The content here is just a getting started guide only. For other details in working with the theme, see the various sections in the sidebar.
-
-{% include links.html %}

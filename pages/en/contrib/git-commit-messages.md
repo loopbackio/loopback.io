@@ -2,7 +2,6 @@
 title: Git Commit Message Guidelines
 tags: [contributing]
 keywords:
-last_updated: Sept 27, 2016
 summary: "Follow these guidelines for your Git commit messages."
 sidebar: contrib_sidebar
 permalink: /doc/en/contrib/git-commit-messages.html

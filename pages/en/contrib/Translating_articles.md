@@ -3,7 +3,6 @@ title: Translating articles
 tags: [translation]
 keywords: translation, localization
 toc: false
-last_updated: Sept 22, 2016
 summary: "Translating an individual article from English is straightforward."
 sidebar: contrib_sidebar
 permalink: /doc/en/contrib/Translating_articles.html

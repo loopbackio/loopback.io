@@ -20,11 +20,15 @@ This will install the module from npm and add it as a dependency to the applicat
 
 ## Creating a REST data source
 
-Use the [data source generator](http://loopback.io/doc/en/lb2/Data-source-generator) to add a REST data source to your application:
+Use the [data source generator](http://loopback.io/doc/en/lb2/Data-source-generator) to add a REST data source to your application.
+
+For LoopBack 2.x:
 
 ```shell
 $ apic create --type datasource
 ```
+
+For LoopBack 2.x or 3.0:
 
 ```shell
 $ slc loopback:datasource

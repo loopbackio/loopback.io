@@ -129,7 +129,7 @@ th {
     text-align: left;
 }
 table {
-    max-width: 90%;
+    /* max-width: 90%; */
     margin-bottom: 20px;
     border: 1px solid #dedede;
 }
@@ -180,11 +180,12 @@ table th[class*="col-"] {
     float: none;
 }
 
-
+/*
 table td:first-child {
     width: 150px;
-    /*font-weight:bold;*/
+    font-weight:bold;
 }
+*/
 
 table.boldFirstColumn td:first-child {
     font-weight: bold;
@@ -1206,10 +1207,13 @@ td pre {
 */
 
 .v3notice {
-  border: 1px solid #800000;
+  border: 1px solid #264d00;
+  margin: 5px 20px;
+  padding: 5px;
+  font-size: 90%;
   border-radius: 3px;
-  margin: 10px 10px -20px 10px;
-  background-color: #ffcccc;
-  padding: 7px;
-  font-size: 80%;
+  background-color: #f2f2f2;
+  font-weight: bold;
 }
+
+blockquote p { font-size: 100%; }

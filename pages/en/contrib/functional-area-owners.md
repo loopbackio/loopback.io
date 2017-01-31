@@ -21,6 +21,7 @@ permalink: /doc/en/contrib/functional-area-owners.html
     <th width="150">Owner</th>
     <th width="300">Repo(s)</th>
     <th width="180">SME(s)</th>
+
   </tr></thead>
   <tbody>
     {% for fa in category[1] %}

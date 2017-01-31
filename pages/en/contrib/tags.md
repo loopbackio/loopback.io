@@ -2,7 +2,6 @@
 title: Tags
 audience: writer, designer
 tags: [community, contributing]
-last_updated: July 3, 2016
 keywords: tags, navigation, buttons, links, association
 summary: "Tags provide another means of navigation for your content. Unlike the table of contents, tags can show the content in a variety of arrangements and groupings. Implementing tags in this Jekyll theme is somewhat of a manual process."
 sidebar: contrib_sidebar
@@ -98,7 +97,7 @@ sidebar: contrib_sidebar
 
 Because this code appears on the \_layouts/page.html file by default, you don't need to do anything in your page to get the tags to appear. However, if you want to alter the placement or change the button color, you can do so within the \_includes/taglogic.html file.
 
-You can change the button color by changing the class on the button from `btn-info` to one of the other button classes bootstrap provides. See [Labels][mydoc_labels] for more options on button class names.
+You can change the button color by changing the class on the button from `btn-info` to one of the other button classes bootstrap provides. See [Labels][labels.html for more options on button class names.
 
 ## Retrieving pages for a specific tag
 

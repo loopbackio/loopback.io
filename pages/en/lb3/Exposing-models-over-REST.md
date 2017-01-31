@@ -65,8 +65,12 @@ See [Built-in models REST API](Built-in-models-REST-API.html) for more informat
 
 ### Request format
 
-For POST and PUT requests, the request body can be JSON, XML or urlencoded format, with the **Content-Type** header set to 
-`application/json, application/xml, or application/x-www-form-urlencoded`.
+For POST and PUT requests, the request body can be JSON, XML or URL-encoded format, with the **Content-Type** header set to one of:
+
+- `application/json`
+- `application/xml`
+- `application/x-www-form-urlencoded`
+
 The **Accept** header indicates its preference for the response format.
 
 {% include tip.html content="
@@ -89,48 +93,59 @@ http://localhost:3000/api/users?filter[where][username]=john&filter[where][email
 http://localhost:3000/api/users?filter={"where":{"username":"john","email":"callback@strongloop.com"}}
 ```
 
-The table below illustrates how to encode the JSON object/array can be encoded in different styles:
+The table below illustrates how to encode the JSON object/array in different styles:
 
-<table>
-  <tbody>
+<table style="width: 800px;">
+  <thead>
     <tr>
-      <th>JSON object/array for the filter object</th>
+      <th>JSON object/array</th>
       <th>qs style</th>
       <th>Stringified JSON</th>
     </tr>
+  </thead>
+  <tbody>    
     <tr>
       <td>
         <pre><code>{
 where: {
   username: 'john',
-  email: 'callback@strongloop.com'
+  email: 'a@b.com'
   }
 }</code></pre>
       </td>
       <td>
-        <pre><code>?filter[where][username]=john<br>&amp;</code>filter[where][email]=callback@strongloop.com</pre>
+        <pre>?filter[where][username]=john
+&filter[where][email]=a@b.com</pre>
       </td>
       <td>
-        <pre><code>?filter={"where":
-{"username":"john",
- "email":"callback@strongloop.com"}
+        <pre><code>?filter={
+  "where": {
+    "username":"john",
+    "email":"a@b.com"
+  }
 }</code></pre>
       </td>
     </tr>
     <tr>
       <td>
         <pre><code>{
-where: {
-    username: {inq: ['john', 'mary']}
+  where: {
+    username: {inq:
+      ['john', 'mary']}
   }
 }</code></pre>
       </td>
       <td>
-        <pre>?filter[where][username][inq][0]=john<br>&amp;filter[where][username][inq][1]=mary</pre>
+        <pre>?filter[where][username][inq][0]=john
+&filter[where][username][inq][1]=mary</pre>
       </td>
       <td>
-        <pre><code>?filter={"where":
-  {"username":{"inq":["john","mary"]}}
+        <pre><code>?filter={
+  "where": {
+    "username": {
+      "inq":["john","mary"]
+    }
+  }
 }</code></pre>
       </td>
     </tr>
@@ -141,10 +156,12 @@ where: {
 }</code></pre>
       </td>
       <td>
-        <pre><code>?filter[include]=a&amp;filter[include]=b</code></pre>
+        <pre><code>?filter[include]=a&filter[include]=b</code></pre>
       </td>
       <td>
-        <pre><code>?filter={"include":["a","b"]}</code></pre>
+        <pre><code>?filter={
+  "include": ["a","b"]
+}</code></pre>
       </td>
     </tr>
   </tbody>
@@ -277,15 +294,14 @@ To expose a model over REST, set the `public` property to true in `/server/mode
 
 ### Hiding methods and REST endpoints
 
-If you don't want to expose certain create, retrieve, update, and delete operations, you can easily hide them by calling 
-[`disableRemoteMethod()`](https://apidocs.strongloop.com/loopback/#model-disableremotemethod) on the model. 
+If you don't want to expose certain operations, hide them by calling 
+[`disableRemoteMethodByName()`](http://apidocs.strongloop.com/loopback/#model-disableremotemethodbyname) on the model. 
 For example, following the previous example, by convention custom model code would go in the file `common/models/location.js`.
 You would add the following lines to "hide" one of the predefined remote methods:
 
 {% include code-caption.html content="common/models/location.js" %}
 ```javascript
-var isStatic = true;
-MyModel.disableRemoteMethod('deleteById', isStatic);
+Location.disableRemoteMethodByName('deleteById');
 ```
 
 Now the `deleteById()` operation and the corresponding REST endpoint will not be publicly available.
@@ -294,15 +310,11 @@ For a method on the prototype object, such as `updateAttributes()`:
 
 {% include code-caption.html content="common/models/location.js" %}
 ```javascript
-var isStatic = false;
-MyModel.disableRemoteMethod('updateAttributes', isStatic);
+Location.disableRemoteMethodByName('prototype.updateAttributes');
 ```
 
-{% include important.html content="
-Be sure to call `disableRemoteMethod()` on your own custom model, not one of the built-in models; in the example below, for instance, the calls are `MyUser.disableRemoteMethod()` _not_ `User.disableRemoteMethod()`.
+{% include important.html content="Be sure to call `disableRemoteMethodByName()` on your own custom model, not one of the built-in models; in the example below, for instance, the calls are `MyUser.disableRemoteMethodByName()` _not_ `User.disableRemoteMethodByName()`.
 " %}
-
-
 
 Here's an example of hiding all methods of the `MyUser` model through configuration, except for `login` and `logout`:
 
@@ -339,35 +351,35 @@ You can also hide common methods across all models through `config.json`'s `remo
 ```
 
 {% include warning.html content="
-Current implementation does not disable methods generated by relations. See filed issue [here](https://github.com/strongloop/loopback/issues/2860)
+Current implementation does not disable methods generated by relations. See the  [GitHub issue](https://github.com/strongloop/loopback/issues/2860).
 " %}
 
 Alternatively you can also disable remoteMethods through javascript in your `myUser.js` model:
 
 ```javascript
-MyUser.disableRemoteMethod("create", true);
-MyUser.disableRemoteMethod("upsert", true);
-MyUser.disableRemoteMethod("updateAll", true);
-MyUser.disableRemoteMethod("updateAttributes", false);
+MyUser.disableRemoteMethodByName('create');
+MyUser.disableRemoteMethodByName('upsert');
+MyUser.disableRemoteMethodByName('updateAll');
+MyUser.disableRemoteMethodByName('prototype.updateAttributes');
 
-MyUser.disableRemoteMethod("find", true);
-MyUser.disableRemoteMethod("findById", true);
-MyUser.disableRemoteMethod("findOne", true);
+MyUser.disableRemoteMethodByName('find');
+MyUser.disableRemoteMethodByName('findById');
+MyUser.disableRemoteMethodByName('findOne');
 
-MyUser.disableRemoteMethod("deleteById", true);
+MyUser.disableRemoteMethodByName('deleteById');
 
-MyUser.disableRemoteMethod("confirm", true);
-MyUser.disableRemoteMethod("count", true);
-MyUser.disableRemoteMethod("exists", true);
-MyUser.disableRemoteMethod("resetPassword", true);
+MyUser.disableRemoteMethodByName('confirm');
+MyUser.disableRemoteMethodByName('count');
+MyUser.disableRemoteMethodByName('exists');
+MyUser.disableRemoteMethodByName('resetPassword');
 
-MyUser.disableRemoteMethod('__count__accessTokens', false);
-MyUser.disableRemoteMethod('__create__accessTokens', false);
-MyUser.disableRemoteMethod('__delete__accessTokens', false);
-MyUser.disableRemoteMethod('__destroyById__accessTokens', false);
-MyUser.disableRemoteMethod('__findById__accessTokens', false);
-MyUser.disableRemoteMethod('__get__accessTokens', false);
-MyUser.disableRemoteMethod('__updateById__accessTokens', false);
+MyUser.disableRemoteMethodByName('prototype.__count__accessTokens');
+MyUser.disableRemoteMethodByName('prototype.__create__accessTokens');
+MyUser.disableRemoteMethodByName('prototype.__delete__accessTokens');
+MyUser.disableRemoteMethodByName('prototype.__destroyById__accessTokens');
+MyUser.disableRemoteMethodByName('prototype.__findById__accessTokens');
+MyUser.disableRemoteMethodByName('prototype.__get__accessTokens');
+MyUser.disableRemoteMethodByName('prototype.__updateById__accessTokens');
 ```
 
 ### Read-Only endpoints example
@@ -376,19 +388,22 @@ You may want to only expose read-only operations on your model hiding all POST, 
 
 {% include code-caption.html content="common/models/model.js" %}
 ```javascript
-Product.disableRemoteMethod('create', true);				// Removes (POST) /products
-Product.disableRemoteMethod('upsert', true);				// Removes (PUT) /products
-Product.disableRemoteMethod('deleteById', true);			// Removes (DELETE) /products/:id
-Product.disableRemoteMethod("updateAll", true);				// Removes (POST) /products/update
-Product.disableRemoteMethod("updateAttributes", false);		// Removes (PUT) /products/:id
-Product.disableRemoteMethod('createChangeStream', true);	// removes (GET|POST) /products/change-stream
+Product.disableRemoteMethodByName('create');     // Removes (POST) /products
+Product.disableRemoteMethodByName('upsert');     // Removes (PUT) /products
+Product.disableRemoteMethodByName('deleteById'); // Removes (DELETE) /products/:id
+Product.disableRemoteMethodByName('updateAll');  // Removes (POST) /products/update
+Product.disableRemoteMethodByName('prototype.updateAttributes');
+    // Removes (PUT) /products/:id
+Product.disableRemoteMethodByName('createChangeStream');
+    // Removes (GET|POST) /products/change-stream
 ```
 
 ### Hiding endpoints for related models
 
-To disable a REST endpoints for related model methods, use [disableRemoteMethod()](https://apidocs.strongloop.com/loopback/#model-disableremotemethod).
+To disable a REST endpoints for related model methods, use [disableRemoteMethodByName()](https://apidocs.strongloop.com/loopback/#model-disableRemoteMethodByName).
 
-{% include note.html content="For more information, see [Accessing related models](Accessing-related-models.html)." %}
+{% include note.html content="For more information, see [Accessing related models](Accessing-related-models.html).
+" %}
 
 For example, if there are post and tag models, where a post hasMany tags, add the following code to `/common/models/post.js` 
 to disable the remote methods for the related model and the corresponding REST endpoints: 
@@ -396,10 +411,10 @@ to disable the remote methods for the related model and the corresponding REST e
 {% include code-caption.html content="common/models/model.js" %}
 ```javascript
 module.exports = function(Post) {
-  Post.disableRemoteMethod('__get__tags', false);
-  Post.disableRemoteMethod('__create__tags', false);
-  Post.disableRemoteMethod('__destroyById__accessTokens', false); // DELETE
-  Post.disableRemoteMethod('__updateById__accessTokens', false); // PUT
+  Post.disableRemoteMethodByName('prototype.__get__tags');
+  Post.disableRemoteMethodByName('prototype.__create__tags');
+  Post.disableRemoteMethodByName('prototype.__destroyById__accessTokens'); // DELETE
+  Post.disableRemoteMethodByName('prototype.__updateById__accessTokens'); // PUT
 };
 ```
 

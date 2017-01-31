@@ -11,14 +11,16 @@ summary:
 
 {% include content/generator-create-app.html lang=page.lang %}
 
-Usage:
+Use:
 
 ```shell
 $ apic loopback:refresh
 ```
 
-Generate a product and an API definition from the LoopBack application models
+Creates or re-creates product and an API definition files from the LoopBack application models.
+The generator creates or re-creates two files in the `definitions` directory:
 
-```shell
-$ apic loopback:refresh
-```
+- `<project-name>.yaml` - API definition in [OpenAPI 2.0 (Swagger)](http://swagger.io/specification/) format.
+- `<project-name>-product.yaml` - Product definition file in YAML format.  See the [API Connect documentation](http://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.toolkit.doc/capim_cli_product_yaml_example.html) for an example.
+
+Where `<project-name>` is the name of the project (app).

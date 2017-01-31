@@ -5,6 +5,8 @@ Remote REST API connector for [loopback](https://github.com/strongloop/loopback)
 - The version range 3.x is compatible with LoopBack v3 and newer.
 - Use the older range 1.x for applications using LoopBack v2.
 
+Learn more about our LTS plan in [docs](http://loopback.io/doc/en/contrib/Long-term-support.html).
+
 ## Quick Explanation
 
 Use this connector to create a datasource from another Loopback application.  Below is a quick example:

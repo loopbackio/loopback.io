@@ -124,6 +124,13 @@ User.attachTo(ds); // The create, retrieve, update, and delete
                    // methods will be mixed into the User constructor
 ```
 
+### Define data sources for environments
+
+You can also define datasources for particular environments, as well as configure them to make use of
+environment variables rather than hard-coded values.
+
+See [Environment-specific configuration](datasources.json.html#environment-specific-configuration) for more details.
+
 ### Creating a data source for a connector
 
 Application code does not directly use a connector. Rather, you create a DataSource to interact with the connector.

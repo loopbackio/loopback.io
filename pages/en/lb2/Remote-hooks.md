@@ -224,7 +224,7 @@ Attach extra metadata to error objects:
 {% include code-caption.html content="common/models/dog.js" %}
 ```javascript
 Dog.afterRemoteError('**', function(ctx, next) {
-  if (!ctx.error.details) ctx.result.details = {};
+  if (!ctx.error.details) ctx.error.details = {};
   ctx.error.details.info = 'intercepted by a hook';
   next();
 })
@@ -248,7 +248,7 @@ Applications that use [loopback.rest()](https://apidocs.strongloop.com/loopback
 
 * `ctx.req`: Express [Request](http://expressjs.com/api.html#req) object. 
 
-* `ctx.result`: Express [Response](http://expressjs.com/api.html#res) object.
+* `ctx.res`: Express [Response](http://expressjs.com/api.html#res) object.
 
 The context object passed to `afterRemoteError()` hooks has an additional property `ctx.error` set to the Error reported by the remote method.
 

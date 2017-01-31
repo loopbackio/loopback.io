@@ -52,7 +52,7 @@ Right now, you're going to "drill down" on the CoffeeShop model. Click on **Cof
 
 Scan down the rows of the API endpoints: you can see that they cover all the normal create, read, update, and delete (CRUD) operations, and then some.
 
-Click on the first row, **POST  /CoffeeShops **   **Create a new instance of the model and persist it into the data source **to expand that operation:
+Click on  **POST  /CoffeeShops **   **Create a new instance of the model and persist it into the data source **to expand that operation:
 
 {% include image.html file="5570641.png" alt="" %}
 

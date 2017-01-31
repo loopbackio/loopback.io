@@ -7,36 +7,32 @@ item: examples
         <section class="c-section">
           <div class="c-container -padded">
             <h1 class="c-heading -h2">Examples</h1>
-            <p>StrongLoop provides complete example apps for all LoopBack's major features, including connecting to various kinds of data sources, creating model relations, adding access control, using all the SDKs, and so on.  </p>
+            <p>StrongLoop provides complete example apps for all LoopBack's major features, including connecting to various kinds of data sources, creating model relations, adding access control, using all the SDKs, and so on.  For a complete list, see <a href="https://loopback.io/doc/en/lb3/Tutorials-and-examples.html">Tutorials and examples.</a></p>
           </div>
-        </section>
+
         <section class="c-section x-greylight">
-          <div class="c-container -padded">
-            <div class="c-grid">
-              <div class="_col -col-2-3">
-                <h2 class="c-heading -h3"><a href="https://github.com/strongloop/loopback-example">LoopBack example module</a></h2>
-                <p>Provides links to all the LoopBack example apps <a href="https://github.com/strongloop/loopback-example" class="fa fa-long-arrow-right"></a></p>
-            </div>
-          </div>
-        </section>
-        <section class="c-section">
           <div class="c-container -padded">
             <h2 class="c-heading -h3">Create backend APIs through models</h2>
             <div class="c-grid">
               <div class="_col -col-1-3">
-                <p>Use the LoopBack Yeoman generator to create the project and two models for office supplies app.</p>
+                <p>Use the LoopBack generator to create the project and two models for office supplies app.</p>
               </div>
               <div class="_col -col-2-3">
-                <pre><code class="language-bash">$ mkdir office-supplies
-$ cd office-supplies
-$ slc loopback
-$ slc loopback:model product
-$ slc loopback:model category</code></pre>
+                <pre class="cli"><span class="prompt">$</span> lb app office-supplies
+<span class="prompt">?</span> What's the name of your application? <span class="input">(office-supplies)</span>
+<span class="prompt">?</span> Enter name of the directory to contain the project: <span class="input">(office-supplies)</span>
+
+<span class="prompt">?</span> Which version of LoopBack would you like to use? 3.x (current)
+<span class="prompt">?</span> What kind of application do you have in mind? <span class="input">empty-server (An empty LoopBack API,
+  without any configured models or datasources)</span>
+...
+<span class="prompt">$</span> lb model product
+<span class="prompt">$</span> lb model category</pre>
               </div>
             </div>
           </div>
         </section>
-        <section class="c-section x-greylight">
+        <section class="c-section">
           <div class="c-container -padded">
             <h2 class="c-heading -h3">Create a secure REST API</h2>
             <div class="c-grid">
@@ -44,12 +40,12 @@ $ slc loopback:model category</code></pre>
                 <p>Secure all the model APIs, then allow admins to modify products.</p>
               </div>
               <div class="_col -col-2-3">
-                <pre><code class="language-bash">$ slc loopback:acl</code></pre>
+                <pre class="cli"><span class="prompt">$</span> lb acl</pre>
               </div>
             </div>
           </div>
         </section>
-        <section class="c-section">
+        <section class="c-section x-greylight">
           <div class="c-container -padded">
             <h2 class="c-heading -h3">Easily persist data</h2>
             <div class="c-grid">
@@ -67,7 +63,7 @@ product.create({
             </div>
           </div>
         </section>
-        <section class="c-section x-greylight">
+        <section class="c-section">
           <div class="c-container -padded">
             <h2 class="c-heading -h3">Define model relations</h2>
             <div class="c-grid">
@@ -75,12 +71,12 @@ product.create({
                 <p>Use simple JSON declarative syntax to set up relations between models.
                 For example, the following specifies that a product belongs to one category
                 (identified by categoryId) and has one owner (identified by ownerId).</p>
-                <pre><code class="language-bash">$ slc loopback:relation
-[?] Select the model to create the relationship from: product
-[?] Relation type: belongs to
-[?] Choose a model to create a relationship with: category
-[?] Enter the property name for the relation: category
-[?] Optionally enter a custom foreign key: categoryId</code></pre>
+                <pre class="cli"><span class="prompt">$</span> lb relation
+<span class="prompt">[?]</span> Select the model to create the relationship from: product
+<span class="prompt">[?]</span> Relation type: belongs to
+<span class="prompt">[?]</span> Choose a model to create a relationship with: category
+<span class="prompt">[?]</span> Enter the property name for the relation: category
+<span class="prompt">[?]</span> Optionally enter a custom foreign key: categoryId</pre>
               </div>
               <div class="_col -col-1-2">
                 <p>This updates the <b>product.json</b> file as follows:</p>
@@ -116,7 +112,7 @@ product.create({
 
           </div>
         </section>
-        <section class="c-section">
+        <section class="c-section x-greylight">
           <div class="c-container -padded">
             <h2 class="c-heading -h3">Run ad-hoc queries</h2>
             <p>Call directly into the LoopBack APIs directly from iOS, Android, or client JavaScript.</p>
@@ -140,7 +136,7 @@ product.create({
               </div>
             </div>
             <div class="c-grid">
-              <div class="_col -col-1-2">
+              <div class="_col -col-1-2"><br/>
                 <h3 class="c-heading -h4">Android Java</h3>
                 <pre><code class="language-java">Product product = new Product(
   ImmutableMap.of("name", "Pencil"));
@@ -166,7 +162,7 @@ product.save(new Model.Callback() {
   }
 });</code></pre>
               </div>
-              <div class="_col -col-1-2">
+              <div class="_col -col-1-2"><br/>
                 <h3 class="c-heading -h4">Isomorphic LoopBack</h3>
                 <pre><code class="language-javascript">MyProduct.find({
   where: {price: {lt: 100}},
@@ -179,56 +175,38 @@ product.save(new Model.Callback() {
             </div>
           </div>
         </section>
-        <section class="c-section x-greylight">
+        <section class="c-section">
           <div class="c-container -padded">
             <h2 class="c-heading -h3">Connect to Oracle Database</h2>
             <div class="c-grid">
-
               <div class="_col -col-1-3">
-                <p>Install Oracle connector</p>
+                <p>Create new datasource:</p>
               </div>
               <div class="_col -col-2-3">
-                <pre><code class="language-javascript">$ npm install loopback-connector-oracle</code></pre>
-              </div>
-            </div>
-<br/>
-            <div class="c-grid">
-              <div class="_col -col-1-3">
-                <p>Run CLI to create new datasource:</p>
-              </div>
-              <div class="_col -col-2-3">
-                <pre><code class="language-javascript">$ slc loopback:datasource
-[?] Enter the data-source name: oracledb
-[?] Select the connector for oracledb:
-   Oracle (supported by StrongLoop)</code></pre>
-              </div>
+                <pre class="cli"><span class="prompt">$</span> lb datasource
+<span class="prompt">?</span> Enter the data-source name: <span class="input">oracledb</span>
+<span class="prompt">?</span> Select the connector for oracledb: <span class="input">Oracle (supported by StrongLoop)</span>
+<span class="prompt">?</span> Connection String tns <span class="input">[Press Enter]</span>
+<span class="prompt">?</span> host: <span class="input">demo.strongloop.com</span>
+<span class="prompt">?</span> port: <span class="input">1521</span>
+<span class="prompt">?</span> user: <span class="input">Sample</span>
+<span class="prompt">?</span> password: <span class="input">demo</span>
+<span class="prompt">?</span> database: <span class="input">secret</span>
+<span class="prompt">?</span> Install loopback-connector-oracle@^3.0 <span class="input">Yes</span></pre>
+              <p>The CLI will automatically run npm to install the LoopBack Oracle connector.
+              Now your app can connect to the specified Oracle database.</p></div>
             </div>
 <br/>
 
-            <div class="c-grid">
-              <div class="_col -col-1-3">
-                <p>Edit <b>server/datasources.json</b> and add your Oracle database login information:</p>
-              </div>
-              <div class="_col -col-2-3">
-                <pre><code class="language-javascript"> "oracledb": {
-    "name": "oracledb",
-    "connector": "oracle",
-    "host": "demo.strongloop.com",
-    "port": 1521,
-    "database": "Sample",
-    "username": "demo",
-    "password": "secret"
-}</code></pre>
-              </div>
-            </div>
           </div>
         </section>
-        <section class="c-section">
+        <section class="c-section x-greylight">
           <div class="c-container -padded">
             <h2 class="c-heading -h3">Automatically Discover and Expose Database Tables</h2>
             <div class="c-grid">
               <div class="_col -col-1-3">
                 <p>Connectors for Oracle, MySQL, PostgreSQL, and SQL Server provide APIs that enable you to "discover" model definition information from existing databases, including schema information such as column names and datatypes and relation information such as primary and foreign keys.</p>
+                <p>Using <a href="https://developer.ibm.com/apiconnect/">IBM API Designer</a> you can accomplish the same thing without any coding!</p>
               </div>
               <div class="_col -col-2-3">
                 <pre><code class="language-javascript">var ds = require('../data-sources/db.js')('oracle');

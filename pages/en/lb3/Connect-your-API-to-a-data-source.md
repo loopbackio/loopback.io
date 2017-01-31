@@ -34,7 +34,7 @@ $ npm install
 Now you're going to define a data source using the [Data source generator](Data-source-generator):
 
 ```
-$ slc loopback:datasource
+$ lb datasource
 ```
 
 The generator will prompt you to name the data source:
@@ -87,7 +87,7 @@ To use your own MySQL server, enter the hostname, port number, and login credent
 ? Install loopback-connector-mysql@^2.2 Yes
 ```
 
-When the tool prompts you to install the connector, hit **Enter** to make the tool run `npm install loopback-connector-mysql --save`.  The toll will also add the data source definition to the `server/datasources.json` file, which will look as shown below.  Notice the "mysqlDs" data source you just added, as well as in-memory data source named "db," which is there by default.
+When the tool prompts you to install the connector, hit **Enter** to make the tool run `npm install loopback-connector-mysql --save`.  The tool will also add the data source definition to the `server/datasources.json` file, which will look as shown below.  Notice the "mysqlDs" data source you just added, as well as in-memory data source named "db," which is there by default.
 
 {% include code-caption.html content="/server/datasources.json" %}
 ```javascript
@@ -97,14 +97,15 @@ When the tool prompts you to install the connector, hit **Enter** to make the to
     "connector": "memory"
   },
   "mysqlDs": {
-    "name": "mysqlDs",
-    "connector": "mysql",
-    "host": "demo.strongloop.com",
-    "port": 3306,
-    "database": "getting_started",
-    "username": "demo",
-    "password": "L00pBack"
-  }
+      "host": "demo.strongloop.com",
+      "port": 3306,
+      "url": "",
+      "database": "getting_started",
+      "password": "L00pBack",
+      "name": "mysqlDs",
+      "user": "demo",
+      "connector": "mysql"
+    }
 }
 ```
 

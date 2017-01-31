@@ -6,8 +6,9 @@ keywords: LoopBack
 tags:
 sidebar: lb3_sidebar
 permalink: /doc/en/lb3/Valid-names-in-LoopBack.html
-summary:
+summary: This article explains the rules for naming LoopBack 3.x applications, models, data sources, and other project artifacts.
 ---
+## General rules
 
 In general, names of LoopBack applications, models, data sources, and so on must at a minimum be
 [valid JavaScript identifiers](https://mathiasbynens.be/notes/javascript-identifiers),

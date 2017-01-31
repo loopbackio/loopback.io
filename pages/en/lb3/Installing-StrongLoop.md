@@ -9,8 +9,9 @@ sidebar: lb3_sidebar
 permalink: /doc/en/lb3/Installing-StrongLoop.html
 summary:
 ---
+{% include content/slc-warning.md %}
 
-StrongLoop's Node API platform consists of:
+StrongLoop's Node platform consists of:
 
 *   [LoopBack](index.html), an open-source Node application framework based on [Express](http://expressjs.com/).
 *   [StrongLoop Process Manager](https://strong-pm.io) and related devops tools for Node applications.

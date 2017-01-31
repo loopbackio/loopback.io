@@ -3,10 +3,11 @@ title: Code style guide
 toc: false
 tags: [contributing, community]
 keywords:
-last_updated: Sept 27, 2016
 summary: "These are LoopBack's general coding style guidelines."
 sidebar: contrib_sidebar
 permalink: /doc/en/contrib/style-guide.html
+redirect_from:
+- /style-guide/
 ---
 <!--
 Style conventions for this document:
@@ -594,7 +595,7 @@ function(done) {
 **Bad**:
 
 ```js
-it('my long test description ...', 
+it('my long test description ...',
   function(done) {
     …
   });
@@ -603,7 +604,7 @@ it('my long test description ...',
 **Bad**:
 
 ```js
-it('my long test description ...', 
+it('my long test description ...',
   function(done) {
     …
   }
@@ -710,3 +711,44 @@ context('Model', () => {
   ...
 });
 ```
+
+### Asserting a rejected Promise
+
+Checking that a promise was rejected is tricky and makes it easy to introduce
+subtle bugs. Always use the following pattern:
+
+**Good**
+
+```js
+// use a different test name, one that's appropriate for your test
+it('fails when arguments are invalid', () => {
+  return doSomethingThatShouldFail().then(
+    function onSuccess() {
+      throw new Error('doSomething() should have failed');
+    },
+    function onError(err) {
+      // verify that "err" is the expected error
+    });
+});
+```
+
+**Bad**
+
+```js
+it('fails when arguments are invalid', () => {
+  return doSomethingThatShouldFail()
+    .then(result => {
+      assert(false);
+    })
+    .catch(err => {
+      // verify that "err" is the expected error
+    });
+});
+```
+
+When `doSomethingThatShouldFail()` passes and `assert(false)` throws an error,
+this AssertionError is then handled by the `catch` block. If the "verify" step
+is written correctly, then the test fails because the AssertionError was not
+the expected error; however the failure message is misleading. If the "verify"
+step is not specific enough (e.g. any `Error` is accepted), then the test
+incorrectly passes.

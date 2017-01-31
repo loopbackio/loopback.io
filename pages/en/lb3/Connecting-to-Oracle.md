@@ -1,7 +1,8 @@
 ---
 title: "Oracle Connector Tutorial"
 lang: en
-layout: readme
+layout: navgroup
+navgroup: oracle
 source: loopback-example-database
 branch: oracle
 keywords: LoopBack

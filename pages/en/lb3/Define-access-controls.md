@@ -41,10 +41,10 @@ The access controls should enforce the following rules:
 
 ## Define access controls
 
-Once again, you'll use `slc loopback`, but this time you'll use the `acl` sub-command; for each ACL, enter:
+Once again, you'll use the `lb` tool, but this time you'll use the `acl` sub-command; for each ACL, enter:
 
 ```
-$ slc loopback:acl
+$ lb acl
 ```
 
 The tool will prompt you to provide the required information, as summarized below.
@@ -82,7 +82,7 @@ The tool will prompt you to provide the required information, as summarized belo
 Now, **enable the author of a review (its "owner") to make any changes to it**.
 
 ```
-$ slc loopback:acl
+$ lb acl
 ? Select the model to apply the ACL entry to: Review
 ? Select the ACL scope: All methods and properties
 ? Select the access type: Write

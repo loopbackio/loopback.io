@@ -1,5 +1,3 @@
-### Set directory privileges
-
 {% include warning.html content="
 Changing privileges like this is appropriate _only_ on your local development system. Never do this on a server system.
 " %}

@@ -17,7 +17,13 @@ The models involved in the relation must also exist before running this generato
 
 Creates a new [model relation](Creating-model-relations.html) in a LoopBack application.
 
-```shell
+```
+$ lb relation [options]
+```
+
+With legacy StrongLoop tools:
+
+```
 $ slc loopback:relation [options]
 ```
 

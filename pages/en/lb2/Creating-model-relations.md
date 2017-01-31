@@ -148,13 +148,13 @@ For example:
 var reorderFn = function(ids, cb) {
   console.log(this.name); // `this` refers to the RelationDefinition  - `images` (relation name) 
   // Do some reordering here & save cb(null, [3, 2, 1]); }; 
-  // Manually declare remoting params 
-  reorderFn.shared = true; 
-  reorderFn.accepts = { arg: 'ids', type: 'array', http: { source: 'body' } }; 
-  reorderFn.returns = { arg: 'ids', type: 'array', root: true }; 
-  reorderFn.http = { verb: 'put', path: '/images/reorder' }; 
-  Product.hasMany(Image, { scopeMethods: { reorder: reorderFn } });
 }
+// Manually declare remoting params 
+reorderFn.shared = true; 
+reorderFn.accepts = { arg: 'ids', type: 'array', http: { source: 'body' } }; 
+reorderFn.returns = { arg: 'ids', type: 'array', root: true }; 
+reorderFn.http = { verb: 'put', path: '/images/reorder' }; 
+Product.hasMany(Image, { scopeMethods: { reorder: reorderFn } });
 ```
 
 ## Exposing REST APIs for related models

@@ -1,176 +1,352 @@
 # loopback-connector-postgresql
 
-The official PostgreSQL connector for the LoopBack framework.
+[PostgreSQL](https://www.postgresql.org/), is a popular open-source object-relational database.
+The `loopback-connector-postgresql` module is the PostgreSQL connector for the LoopBack framework.
 
-Please see the [official documentation](http://loopback.io/doc/en/lb2/PostgreSQL-connector.html).
+<div class="gh-only">For more information, see the <a href="http://loopback.io/doc/en/lb3/PostgreSQL-connector.html">documentation</a>.
+<br/><br/>
+NOTE: The PostgreSQL connector requires PostgreSQL 8.x or 9.x.
+</div>
 
+## Installation
 
-## Connector settings
+In your application root directory, enter this command to install the connector:
 
-The connector can be configured using the following settings from the data source.
-* url: The URL to the database, such as 'postgres://test:mypassword@localhost:5432/dev'
-* host or hostname (default to 'localhost'): The host name or ip address of the PostgreSQL DB server
-* port (default to 5432): The port number of the PostgreSQL DB server
-* username or user: The user name to connect to the PostgreSQL DB
-* password: The password
-* database: The PostgreSQL database name
-* debug (default to false)
+```shell
+$ npm install loopback-connector-postgresql --save
+```
+
+This installs the module from npm and adds it as a dependency to the application's `package.json` file.
+
+If you create a PostgreSQL data source using the data source generator as described below, you don't have to do this, since the generator will run `npm install` for you.
+
+## Creating a data source
+
+Use the [Data source generator](http://loopback.io/doc/en/lb3/Data-source-generator.html) to add a PostgreSQL data source to your application.  
+The generator will prompt for the database server hostname, port, and other settings
+required to connect to a PostgreSQL database.  It will also run the `npm install` command above for you.
+
+The entry in the application's `/server/datasources.json` will look like this:
+
+{% include code-caption.html content="/server/datasources.json" %}
+```javascript
+"mydb": {
+  "name": "mydb",
+  "connector": "postgresql"
+
+  "host": "mydbhost",
+      "port": 5432,
+      "url": "postgres://admin:admin@myhost/db",
+      "database": "db1",
+      "password": "admin",
+      "user": "admin"
+}
+```
+
+Edit `datasources.json` to add other properties that enable you to connect the data source to a PostgreSQL database.
+
+### Properties
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+    <tbody>    
+    <tr>
+      <td>connector</td>
+      <td>String</td>
+      <td>
+        Connector name, either "loopback-connector-postgresql" or "postgresql"
+      </td>
+    </tr>
+    <tr>
+      <td>database</td>
+      <td>String</td>
+      <td>Database name</td>
+    </tr>
+    <tr>
+      <td>debug</td>
+      <td>Boolean</td>
+      <td>If true, turn on verbose mode to debug database queries and lifecycle.</td>
+    </tr>
+    <tr>
+      <td>host</td>
+      <td>String</td>
+      <td>Database host name</td>
+    </tr>
+    <tr>
+      <td>password</td>
+      <td>String</td>
+      <td>Password to connect to database</td>
+    </tr>
+    <tr>
+      <td>port</td>
+      <td>Number</td>
+      <td>Database TCP port</td>
+    </tr>
+    <tr>
+      <td>url</td>
+      <td>String</td>
+      <td>Use instead of the<code>host</code>,<code>port</code>,<code>user</code>,<code>password</code>,
+        and<code>database</code>properties. For example:'postgres://test:mypassword@localhost:5432/dev'.
+      </td>
+    </tr>
+    <tr>
+      <td>username</td>
+      <td>String</td>
+      <td>Username to connect to database</td>
+    </tr>
+  </tbody>
+</table>
 
 **NOTE**: By default, the 'public' schema is used for all tables.
 
-The PostgreSQL connector uses [node-postgres](https://github.com/brianc/node-postgres) as the driver. See more
-information about configuration parameters, check [https://github.com/brianc/node-postgres/wiki/Client#constructors](https://github.com/brianc/node-postgres/wiki/Client#constructors).
+The PostgreSQL connector uses [node-postgres](https://github.com/brianc/node-postgres) as the driver. For more
+information about configuration parameters, see [node-postgres documentation](https://github.com/brianc/node-postgres/wiki/Client#constructors).
 
-## Discovering Models
+### Connecting to UNIX domain socket
 
-PostgreSQL data sources allow you to discover model definition information from existing postgresql databases. See the following APIs:
+A common PostgreSQL configuration is to connect to the UNIX domain socket `/var/run/postgresql/.s.PGSQL.5432` instead of using the TCP/IP port. For example:
 
- - [dataSource.discoverModelDefinitions([username], fn)](https://github.com/strongloop/loopback#datasourcediscovermodeldefinitionsusername-fn)
- - [dataSource.discoverSchema([owner], name, fn)](https://github.com/strongloop/loopback#datasourcediscoverschemaowner-name-fn)
-
-
-## Model definition for PostgreSQL
-
-The model definition consists of the following properties:
-
-* name: Name of the model, by default, it's the camel case of the table
-* options: Model level operations and mapping to PostgreSQL schema/table
-* properties: Property definitions, including mapping to PostgreSQL column
-
-```json
-
-    {"name": "Inventory", "options": {
-      "idInjection": false,
-      "postgresql": {
-        "schema": "strongloop",
-        "table": "inventory"
-      }
-    }, "properties": {
-      "id": {
-        "type": "String",
-        "required": false,
-        "length": 64,
-        "precision": null,
-        "scale": null,
-        "postgresql": {
-          "columnName": "id",
-          "dataType": "character varying",
-          "dataLength": 64,
-          "dataPrecision": null,
-          "dataScale": null,
-          "nullable": "NO"
-        }
-      },
-      "productId": {
-        "type": "String",
-        "required": false,
-        "length": 20,
-        "precision": null,
-        "scale": null,
-        "id": 1,
-        "postgresql": {
-          "columnName": "product_id",
-          "dataType": "character varying",
-          "dataLength": 20,
-          "dataPrecision": null,
-          "dataScale": null,
-          "nullable": "YES"
-        }
-      },
-      "locationId": {
-        "type": "String",
-        "required": false,
-        "length": 20,
-        "precision": null,
-        "scale": null,
-        "id": 1,
-        "postgresql": {
-          "columnName": "location_id",
-          "dataType": "character varying",
-          "dataLength": 20,
-          "dataPrecision": null,
-          "dataScale": null,
-          "nullable": "YES"
-        }
-      },
-      "available": {
-        "type": "Number",
-        "required": false,
-        "length": null,
-        "precision": 32,
-        "scale": 0,
-        "postgresql": {
-          "columnName": "available",
-          "dataType": "integer",
-          "dataLength": null,
-          "dataPrecision": 32,
-          "dataScale": 0,
-          "nullable": "YES"
-        }
-      },
-      "total": {
-        "type": "Number",
-        "required": false,
-        "length": null,
-        "precision": 32,
-        "scale": 0,
-        "postgresql": {
-          "columnName": "total",
-          "dataType": "integer",
-          "dataLength": null,
-          "dataPrecision": 32,
-          "dataScale": 0,
-          "nullable": "YES"
-        }
-      }
-    }}
-
+```javascript
+{
+  "postgres": {
+    "host": "/var/run/postgresql/",
+    "port": "5432",
+    "database": "dbname",
+    "username": "dbuser",
+    "password": "dbpassword",
+    "name": "postgres",
+    "debug": true,
+    "connector": "postgresql"
+  }
+}
 ```
 
-## Type Mapping
+## Defining models
 
- - Number
- - Boolean
- - String
- - Object
- - Date
- - Array
- - Buffer
+The model definition consists of the following properties.
 
-### JSON to PostgreSQL Types
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Default</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>    
+    <tr>
+      <td>name</td>
+      <td>Camel-case of the database table name</td>
+      <td>Name of the model.</td>
+    </tr>
+    <tr>
+      <td>options</td>
+      <td>N/A</td>
+      <td>Model level operations and mapping to PostgreSQL schema/table</td>
+    </tr>
+    <tr>
+      <td>properties</td>
+      <td>N/A</td>
+      <td>Property definitions, including mapping to PostgreSQL column</td>
+    </tr>
+  </tbody>
+</table>
 
-* String|JSON|Text|default: VARCHAR, default length is 1024
-* Number: INTEGER
-* Date: TIMESTAMP WITH TIME ZONE
-* Timestamp: TIMESTAMP WITH TIME ZONE
-* Boolean: BOOLEAN
+For example:
 
-### PostgreSQL Types to JSON
+{% include code-caption.html content="/common/models/model.json" %}
+```javascript
+{
+  "name": "Inventory",
+  "options": {
+    "idInjection": false,
+    "postgresql": {
+      "schema": "strongloop",
+      "table": "inventory"
+    }
+  },
+  "properties": {
+    "id": {
+      "type": "String",
+      "required": false,
+      "length": 64,
+      "precision": null,
+      "scale": null,
+      "postgresql": {
+        "columnName": "id",
+        "dataType": "character varying",
+        "dataLength": 64,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "NO"
+      }
+    },
+    "productId": {
+      "type": "String",
+      "required": false,
+      "length": 20,
+      "precision": null,
+      "scale": null,
+      "id": 1,
+      "postgresql": {
+        "columnName": "product_id",
+        "dataType": "character varying",
+        "dataLength": 20,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "YES"
+      }
+    },
+    "locationId": {
+      "type": "String",
+      "required": false,
+      "length": 20,
+      "precision": null,
+      "scale": null,
+      "id": 1,
+      "postgresql": {
+        "columnName": "location_id",
+        "dataType": "character varying",
+        "dataLength": 20,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "YES"
+      }
+    },
+    "available": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 32,
+      "scale": 0,
+      "postgresql": {
+        "columnName": "available",
+        "dataType": "integer",
+        "dataLength": null,
+        "dataPrecision": 32,
+        "dataScale": 0,
+        "nullable": "YES"
+      }
+    },
+    "total": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 32,
+      "scale": 0,
+      "postgresql": {
+        "columnName": "total",
+        "dataType": "integer",
+        "dataLength": null,
+        "dataPrecision": 32,
+        "dataScale": 0,
+        "nullable": "YES"
+      }
+    }
+  }
+}
+```
 
-* BOOLEAN: Boolean
-* VARCHAR|CHARACTER VARYING|CHARACTER|CHAR|TEXT: String
-* BYTEA: Binary;
-* SMALLINT|INTEGER|BIGINT|DECIMAL|NUMERIC|REAL|DOUBLE|SERIAL|BIGSERIAL: Number
-* DATE|TIMESTAMP|TIME: Date
-* POINT: GeoPoint
+## Type mapping
 
-## Destroying Models
+See [LoopBack types](http://loopback.io/doc/en/lb3/LoopBack-types.html) for details on LoopBack's data types.
 
-Destroying models may result in errors due to foreign key integrity. Make sure
-to delete any related models first before calling delete on model's with
-relationships.
+### LoopBack to PostgreSQL types
 
-## Auto Migrate / Auto Update
+<table>
+  <tbody>
+    <tr>
+      <th>LoopBack Type</th>
+      <th>PostgreSQL Type</th>
+    </tr>
+    <tr>
+      <td>String<br>JSON<br>Text<br>Default</td>
+      <td>
+        VARCHAR2<br/>
+        Default length is 1024
+      </td>
+    </tr>
+    <tr>
+      <td>Number</td>
+      <td>INTEGER</td>
+    </tr>
+    <tr>
+      <td>Date</td>
+      <td>TIMESTAMP WITH TIME ZONE</td>
+    </tr>
+    <tr>
+      <td>Boolean</td>
+      <td>BOOLEAN</td>
+    </tr>
+  </tbody>
+</table>
 
-After making changes to your model properties you must call `Model.automigrate()`
-or `Model.autoupdate()`. Only call `Model.automigrate()` on new models
-as it will drop existing tables.
+### PostgreSQL types to LoopBack
+
+<table>
+  <tbody>
+    <tr>
+      <th>PostgreSQL Type</th>
+      <th>LoopBack Type</th>
+    </tr>
+    <tr>
+      <td>BOOLEAN</td>
+      <td>Boolean</td>
+    </tr>
+    <tr>
+      <td>
+        VARCHAR<br>CHARACTER VARYING<br>CHARACTER<br>CHAR<br>TEXT
+      </td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>BYTEA</td>
+      <td>Node.js <a href="http://nodejs.org/api/buffer.html">Buffer object</a></td>
+    </tr>
+    <tr>
+      <td>SMALLINT<br>INTEGER<br>BIGINT<br>DECIMAL<br>NUMERIC<br>REAL<br>DOUBLE<br>SERIAL<br>BIGSERIAL</td>
+      <td>Number</td>
+    </tr>
+    <tr>
+      <td>DATE<br>TIMESTAMP<br>TIME</td>
+      <td>Date</td>
+    </tr>
+    <tr>
+      <td>POINT</td>
+      <td><a href="http://apidocs.strongloop.com/loopback-datasource-juggler/#geopoint">GeoPoint</a></td>
+    </tr>
+  </tbody>
+</table>
+
+## Discovery and auto-migration
+
+### Model discovery
+
+The PostgreSQL connector supports _model discovery_ that enables you to create LoopBack models
+based on an existing database schema using the unified [database discovery API](http://apidocs.strongloop.com/loopback-datasource-juggler/#datasource-prototype-discoverandbuildmodels).  For more information on discovery, see [Discovering models from relational databases](https://loopback.io/doc/en/lb3/Discovering-models-from-relational-databases.html).
+
+### Auto-migratiion
+
+The PostgreSQL connector also supports _auto-migration_ that enables you to create a database schema
+from LoopBack models using the [LoopBack automigrate method](http://apidocs.strongloop.com/loopback-datasource-juggler/#datasource-prototype-automigrate).
+
+For more information on auto-migration, see [Creating a database schema from models](https://loopback.io/doc/en/lb3/Creating-a-database-schema-from-models.html) for more information.
 
 LoopBack PostgreSQL connector creates the following schema objects for a given
-model:
+model: a table, for example, PRODUCT under the 'public' schema within the database.
 
-* A table, for example, PRODUCT under the 'public' schema within the database
+The auto-migrate method:
 
+* Defines a primary key for the properties whose `id` property is true (or a positive number).
+* Creates a column with 'SERIAL' type if the `generated` property of the `id` property is true.
+
+Destroying models may result in errors due to foreign key integrity. First delete any related models by calling delete on models with relationships.
 
 ## Running tests
 

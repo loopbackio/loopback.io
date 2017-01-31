@@ -23,7 +23,7 @@ A LoopBack application itself is nothing more than a grouping of components with
 
 To be a LoopBack component, a module must export a function with the following signature as the main module export:
 
-```javascript
+```
 function(app, options)
 ```
 
@@ -98,7 +98,7 @@ The sections below describe the configuration settings for each component in [`
 
 ### API Explorer
 
-The `slc loopback` [application generator](Application-generator) will scaffold an app
+The [application generator](Application-generator) will scaffold an app
 with `component-config.json` containing the default entry for [LoopBack API Explorer](Use-API-Explorer): 
 
 {% include code-caption.html content="server/component-config.json" %}

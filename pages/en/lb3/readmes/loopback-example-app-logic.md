@@ -16,8 +16,6 @@ In this example, we demonstrate remote methods, remote hooks, model operation ho
 Tutorials:
 
 - [Getting started with LoopBack](http://loopback.io/doc/en/lb2/Getting-started-with-LoopBack.html)
-- [Tutorial series - step 1](https://github.com/strongloop/loopback-example#step-one---the-basics)
-- [Tutorial series - step 2](https://github.com/strongloop/loopback-example#step-two---relations-and-filter)
 
 Knowledge:
 
@@ -63,7 +61,7 @@ $ slc loopback:model car
 
 ### Define a remote method
 
-Define a [remote method in `car.js`](https://github.com/strongloop/loopback-example-app-logic/blob/master/common/models/car.js#L2-L13).
+Define a [remote method in `car.js`](https://github.com/strongloop/loopback-example-app-logic/blob/master/common/models/car.js#L7-L18).
 
 > The remote method takes a "sound" and repeats it three times.
 
@@ -80,7 +78,7 @@ You should see:
 
 ### Define a remote method before hook
 
-Define a [remote method before hook in `car.js`](https://github.com/strongloop/loopback-example-app-logic/blob/master/common/models/car.js#L15-L19).
+Define a [remote method before hook in `car.js`](https://github.com/strongloop/loopback-example-app-logic/blob/master/common/models/car.js#L20-L24).
 
 > The second parameter `unused` must be provided for legacy reasons. You may simply ignore it, but you must declare it to ensure `next` is the third parameter. This is a side effect of inheriting from the [`jugglingdb`](https://github.com/1602/jugglingdb) library.
 
@@ -103,7 +101,7 @@ Putting in the car key, starting the engine.
 
 ### Define a remote method after hook
 
-Define a [remote method after hook in `car.js`](https://github.com/strongloop/loopback-example-app-logic/blob/master/common/models/car.js#L21-L25).
+Define a [remote method after hook in `car.js`](https://github.com/strongloop/loopback-example-app-logic/blob/master/common/models/car.js#L26-L30).
 
 This method is triggered after `revEngine` finishes execution and prints a message to the console.
 
@@ -124,11 +122,11 @@ Turning off the engine, removing the key.
 
 Create [`print-models.js`](https://github.com/strongloop/loopback-example-app-logic/blob/master/server/boot/print-models.js) in the [`boot` directory](/server/boot).
 
-> NOTE: The [`app` argument](https://github.com/strongloop/loopback-example-app-logic/blob/master/server/boot/print-models.js#L1) is provided by LoopBack. You can use it to access the application context, which is required when you want to retrieve models, configs, and so on.
+> NOTE: The [`app` argument](https://github.com/strongloop/loopback-example-app-logic/blob/master/server/boot/print-models.js#L6) is provided by LoopBack. You can use it to access the application context, which is required when you want to retrieve models, configs, and so on.
 
 #### Asynchronous boot scripts
 
-To use asynchronous boot scripts, you have to modify [`boot`](https://github.com/strongloop/loopback-example-app-logic/blob/master/examples/async-boot-scripts/server.js#L1) to take  callback. You will also need to provide an additional [`callback` argument](https://github.com/strongloop/loopback-example-app-logic/blob/master/examples/async-boot-script/create-car.js#L1) in your boot scripts.
+To use asynchronous boot scripts, you have to modify [`boot`](https://github.com/strongloop/loopback-example-app-logic/blob/master/examples/async-boot-scripts/server.js#L8) to take  callback. You will also need to provide an additional [`callback` argument](https://github.com/strongloop/loopback-example-app-logic/blob/master/examples/async-boot-script/create-car.js#L6) in your boot scripts.
 
 Restart the server.
 
@@ -142,7 +140,7 @@ Models:  [ 'User', 'AccessToken', 'ACL', 'RoleMapping', 'Role', 'car' ]
 
 ### Define a model operation hook
 
-Define [a model operation hook in `car.js`](https://github.com/strongloop/loopback-example-app-logic/blob/master/common/models/car.js#L27-L35).
+Define [a model operation hook in `car.js`](https://github.com/strongloop/loopback-example-app-logic/blob/master/common/models/car.js#L34-L38).
 
 Copy the `create-car.js` script to the `server/boot` directory.
 
@@ -200,7 +198,7 @@ The request processing time is 28.472051 ms.
 
 Create the [`datetime` middleware](https://github.com/strongloop/loopback-example-app-logic/blob/master/server/middleware/datetime.js), which responds with the current date and time when a request is made to [`localhost:3000/datetime`](http://localhost:3000/datetime).
 
-Register the `datetime` middleware in [`middleware.json`](https://github.com/strongloop/loopback-example-app-logic/blob/master/server/middleware.json#L19-L21).
+Register the `datetime` middleware in [`middleware.json`](https://github.com/strongloop/loopback-example-app-logic/blob/master/server/middleware.json#L26-L28).
 
 [Create a shell script](https://github.com/strongloop/loopback-example-app-logic/blob/master/bin/datetime-request) to test the middleware.
 
@@ -214,7 +212,7 @@ You should see:
 
 ```
 ...
-{"started":"2015-01-14T22:54:35.708Z","uptime":3.494}
+{"datetime":"2015-01-14T22:54:35.708Z"}
 ```
 
 > Your date and time will be different.
@@ -225,7 +223,7 @@ How do you send email?
 
 1. Configure an [email datasource](https://github.com/strongloop/loopback-example-app-logic/blob/master/server/datasources.json#L6-L21)
 2. Map the built-in `Email` model to the [the email datasource](https://github.com/strongloop/loopback-example-app-logic/blob/master/server/model-config.json#L33-L35)
-3. Send an email using the [configured model](https://github.com/strongloop/loopback-example-app-logic/blob/master/server/boot/send-email.js#L6-L16)
+3. Send an email using the [configured model](https://github.com/strongloop/loopback-example-app-logic/blob/master/server/bin/send-email.js#L12-L23)
 
 Notes:
 

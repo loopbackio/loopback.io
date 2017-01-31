@@ -208,6 +208,10 @@ children:
     url: /doc/en/lb2/User-management-example.html
     output: 'web, pdf'
 
+  - title: 'AccessToken invalidation'
+    url: /doc/en/lb2/AccessToken-invalidation.html
+    output: 'web, pdf'
+
 - title: 'Authentication, authorization, and permissions'
   url: /doc/en/lb2/Authentication-authorization-and-permissions.html
   output: 'web, pdf'
@@ -994,7 +998,7 @@ children:
   - title: 'Geopoint type'
     url: /doc/en/lb2/Geotype.html
     output: 'web, pdf'
-    
+
   - title: 'Valid names in LoopBack'
     url: /doc/en/lb2/Valid-names-in-LoopBack.html
     output: 'web, pdf'

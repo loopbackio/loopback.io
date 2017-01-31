@@ -13,7 +13,13 @@ summary:
 
 Creates a new LoopBack application.
 
-```shell
+```
+$ lb [app] [options] [<name>]
+```
+
+With legacy StrongLoop tools:
+
+```
 $ slc loopback [options] [<name>]
 ```
 

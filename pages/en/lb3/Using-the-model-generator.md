@@ -28,7 +28,7 @@ Or with StrongLoop tools:
 </div>
 
 ```shell
-$ slc loopback:model
+$ lb model
 ```
 
 When creating a new model, the generator will prompt you for the properties in the model.
@@ -54,7 +54,7 @@ Use the LoopBack [model generator](Model-generator.html) to create a new model
 In your application root directory, enter the command (for example, to create a "books" model):
 
 ```shell
-$ slc loopback:model book
+$ lb model book
 ```
 <div id="lb3apic" class="sl-hidden" markdown="1">
 Or, using `apic`:
@@ -88,7 +88,7 @@ Use `Model` as the base for models that don't have CRUD semantics, for example
 After you create a model, you can add more properties with the [property generator](Property-generator.html).
 
 ```shell
-$ slc loopback:property
+$ lb property
 ```
 
 The tool will prompt you to choose the model to which you want to add the property, along with the other property settings (as before).

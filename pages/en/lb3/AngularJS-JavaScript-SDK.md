@@ -8,11 +8,9 @@ sidebar: lb3_sidebar
 permalink: /doc/en/lb3/AngularJS-JavaScript-SDK.html
 summary:
 ---
-
-{% include note.html content="To install the LoopBack AngularJS SDK, [install StrongLoop tools](Installing-StrongLoop.html).
-" %}
-
 {% include important.html content="The AngularJS SDK requires Angular version 1.2.0 or newer.
+
+If you wish to use Angular 2, the [LoopBack SDK Builder](/doc/en/community/SDK-builder.html) community project enables you to create an [Angular 2](http://angular.io/) client SDK for a LoopBack application.  
 " %}
 
 ## Introduction
@@ -49,9 +47,18 @@ This way the resource object provides an API very similar to that of your backen
 The rest of the procedure is standard for AngularJS: configure your client app to include and load the `lbServices` module,
 and tell Angular's injector which models to use in your code.
 
-{% include note.html content="
-At runtime, the generated lbServices module (`lb-services.js`) depends on the Angular resource script (`angular-resource.js`), so you must ensure that your client loads this Angular script.
+{% include note.html content="At runtime, the generated lbServices module (`lb-services.js`) depends on the Angular resource script (`angular-resource.js`), so you must ensure that your client loads this Angular script.
 " %}
+
+## Installation
+
+To install the LoopBack AngularJS SDK, enter this command:
+
+```
+$ npm install -g loopback-sdk-angular-cli
+```
+
+This installs the `lb-ng` command-line tool.
 
 ## Generating Angular services
 
@@ -87,19 +94,19 @@ see [Generating Angular API docs](Generating-Angular-API-docs.html) for more in
 
 The general syntax of the lb-ng command is:
 
-`lb-ng [options] path-to-server-script [path-to-generated-services]`
+<pre>
+lb-ng [options] <em>path-to-server-script</em> [<em>path-to-generated-services</em>]
+</pre>
 
-**ARGUMENTS:**
+**Arguments:**
 
-_`path-to-server-script`_
-Relative path to the LoopBack application main script.
-In the [standard project layout](Project-layout-reference.html), `<_app-dir_>/server/server.js`. Required.
+_`path-to-server-script`_ - Relative path to the LoopBack application main script.
+In the [standard project layout](Project-layout-reference.html), `<app-dir>/server/server.js`. Required.
 
-_`path-to-generated-services`_
-Relative path to the client JavaScript file to be generated containing the AngularJS $resource services.
-Optional; default is stdout.
+_`path-to-generated-services`_ - Relative path to the client JavaScript file to be generated containing the AngularJS `$resource` services.
+Optional; default is `stdout`.
 
-**OPTIONS**:
+**Options**:
 
 **`-m, --module-name [_name_]`**  
 The name for generated Angular module. Default is "lbServices".
@@ -115,14 +122,12 @@ See the [example](http://docs.angularjs.org/api/ngResource.%24resource#example) 
 There is one service for each model class, with the same name as the model name (for example, `User`).
 On top of the standard get/save/query/remove methods, the service includes functions for calling every method exposed by the remote model (for example, `User.login()`).
 
-{% include important.html content="
-AngularJS model names start always with a capital letter, even if your server definition starts with a lower-case letter.
+{% include important.html content="AngularJS model names start always with a capital letter, even if your server definition starts with a lower-case letter.
 " %}
 
 ### Setup
 
-{% include note.html content="
-The generated lbServices module (`lb-services.js`) depends on the Angular resource script (`angular-resource.js`) so you must ensure that your page has
+{% include note.html content="The generated lbServices module (`lb-services.js`) depends on the Angular resource script (`angular-resource.js`) so you must ensure that your page has
 `<script src=\"angular-resource.js\"></script>` if you don't have it already.
 " %}
 
@@ -145,7 +150,8 @@ Follow these steps to use the generated services inside your AngularJS applicat
     ```
 
 3.  To call a method on a model from your controller, add the model name as a dependency of the controller; for example:
-    ```
+
+    ```javascript
     // access User model
     module.controller('LoginCtrl', function($scope, User, $location) {
       $scope.login = function() {
@@ -313,7 +319,7 @@ The Angular code for this scope won't be generated. Please upgrade
 to the latest version of loopback-datasource-juggler to fix the problem.
 ```
 " %}
-
+'
 For example, consider the two following model definitions:
 
 {% include code-caption.html content="common/models/products.json" %}
@@ -346,7 +352,7 @@ For example, consider the two following model definitions:
 
 #### Querying related models
 
-The SDK creates a Category.products() method that can be used to list all products in a given category.
+The SDK creates a `Category.products()` method that can be used to list all products in a given category.
 
 ```javascript
 $scope.products = Category.products({
@@ -421,7 +427,7 @@ $httpProvider.interceptors.push(function($q, $location, LoopBackAuth) {
   return {
     responseError: function(rejection) {
       if (rejection.status == 401) {
-		//Now clearing the loopback values from client browser for safe logout...
+      // Clearing the loopback values from client browser for safe logout...
         LoopBackAuth.clearUser();
         LoopBackAuth.clearStorage();
         $location.nextAfterLogin = $location.path();

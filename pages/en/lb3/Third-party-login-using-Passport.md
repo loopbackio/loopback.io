@@ -4,10 +4,10 @@ lang: en
 layout: navgroup
 navgroup: user-mgmt
 keywords: LoopBack
-tags:
+tags: authentication
 sidebar: lb3_sidebar
 permalink: /doc/en/lb3/Third-party-login-using-Passport.html
-summary:
+summary: Use the LoopBack Passport component to enable third-party login, so users can log in using existing accounts such as Facebook, Google, Twitter, Github, and integrate with enterprise security services.
 ---
 
 {% include important.html content="To use this component, you should be familiar with [Passport](http://passportjs.org/)
@@ -46,6 +46,11 @@ Install the third-party login (Passport) component as usual for a Node package:
 ```shell
 $ npm install loopback-component-passport
 ```
+
+## Configuration
+
+Use the `providers.json` file (in the project root directory) to configure third-party login. This file contains settings for each third-party authorization provider.
+For more information, see [Configuring providers.json](Configuring-providers.json.html).
 
 ## Models
 

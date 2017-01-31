@@ -2,7 +2,6 @@
 title: Authoring Pages
 tags: [getting_started, formatting, content_types]
 keywords: pages, authoring, exclusion, frontmatter
-last_updated: July 3, 2016
 summary: "This theme primarily uses pages. You need to make sure your pages have the appropriate frontmatter. One frontmatter tag your users might find helpful is the summary tag. This functions similar in purpose to the shortdesc element in DITA."
 sidebar: contrib_sidebar
 permalink: /doc/en/contrib/pages.html
@@ -48,7 +47,7 @@ Make sure each page has frontmatter at the top like this:
 title: Alerts
 tags: [formatting]
 keywords: notes, tips, cautions, warnings, admonitions
-last_updated: July 3, 2016
+
 summary: "You can insert notes, tips, warnings, and important alerts in your content."
 sidebar: contrib_sidebar
 permalink: /doc/en/contrib/alerts.html
@@ -61,7 +60,7 @@ Note that you cannot use variables in front matter.
 
 The following table describes each of the front matter that you can use with this theme:
 
-| Front matter | Required? | Description |
+| Frontmatter | Required? | Description |
 |-------------|-------------|-------------|
 | **title** | Required | The title for the page |
 | **tags** | Optional | Tags for the page. Make all tags single words, with underscores if needed (rather than spaces). Separate them with commas. Enclose the whole list within brackets. Also, note that tags must be added to `_data/tags_doc.yml` to be allowed entrance into the page. This prevents tags from becoming somewhat random and unstructured. You must create a tag page for each one of your tags following the pattern shown in the tags folder. (Tag pages aren't automatically created.)  |
@@ -195,7 +194,7 @@ Then you can reference it with a link like this on the same page:
 
 The default layout for pages is "page" layout.
 
-To specify a different layout, use the `layout` property in the page's frontmatter. 
+To specify a different layout, use the `layout` property in the page's frontmatter.
 
 ## Comments
 

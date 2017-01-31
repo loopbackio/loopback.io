@@ -18,6 +18,10 @@ children:
     url: /doc/en/community/JSON-schemas.html
     output: 'web'
 
+  - title: 'DynamoDB Connector'
+    url: /doc/en/community/dynamo-connector.html
+    output: 'web'
+
   - title: 'IoT demo'
     url: /doc/en/community/IoT-demo.html
     output: 'web'

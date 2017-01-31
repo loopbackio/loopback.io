@@ -7,6 +7,7 @@ tags:
 sidebar: lb3_sidebar
 permalink: /doc/en/lb3/Refresh-definitions-command.html
 summary:
+published: false
 ---
 
 {% include content/generator-create-app.html lang=page.lang %}
@@ -15,7 +16,7 @@ summary:
 Use StrongLoop tools instead; see [Installation](Installation.html).
 " %}
 
-Usage:
+Use:
 
 ```shell
 $ apic loopback:refresh

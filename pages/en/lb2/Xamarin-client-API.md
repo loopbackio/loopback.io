@@ -309,7 +309,7 @@ public static async Task<Goal> getGoal(string id, [optional parameters])
 }
 ```
 
-Then a usage example is:
+Example of using it:
 
 ```
 var TodoTaskID = "10034";
@@ -360,7 +360,7 @@ Then once we compile an SDK using lb-xm, a method will be created in the C# code
 Task<double> determineMeaning(string str)
 ```
 
-If you go into the _Logic_s repository code you can see the generated code for the method:
+If you go into the Logics repository code you can see the generated code for the method:
 
 ```
 /*

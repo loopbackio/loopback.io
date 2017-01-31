@@ -3,7 +3,6 @@ title: Code style guide (2.x/ES5)
 toc: false
 tags: [contributing, community]
 keywords:
-last_updated: Sept 27, 2016
 summary: "These are LoopBack's general coding style guidelines for pre-ES6 branches, e.g. 2.x release lines."
 sidebar: contrib_sidebar
 permalink: /doc/en/contrib/style-guide-es5.html

@@ -60,7 +60,7 @@ Install it as a dependency with the following command:
 npm install --save strong-error-handler
 ```
 
-{% include tip.html content="Projects scaffolded with a recent version of `slc loopback` are already correctly configured and require no change.
+{% include tip.html content="Projects scaffolded with a recent version of StrongLoop/LoopBack tools are already correctly configured and require no change.
 " %}
 
 You may need to make the following changes:
@@ -68,30 +68,32 @@ You may need to make the following changes:
 - The new error handler's HTTP responses have a `error.statusCode` property
 instead of `error.status`.  Update any clients that read the HTTP status code
 from the response body.
-- Change any uses of the `loopback#errorhandler` short-cut to  `require('strong-error-handler')`.
-- Add the following to `config.json` (or `config.development.json`):
+- Change any use of the `loopback#errorhandler` short-cut to `require('strong-error-handler')`.
+- Enable `strong-error-handler` by adding it to the `final:after` phase in your middleware config file (`server/middleware.json`):
+
+```
+  ...
+  "final:after": {
+    "strong-error-handler": {
+      "params": {
+         "debug": false,
+         "log": true
+       }
+    }
+  }
+```
+
+- In your `config.json` file, disable `remoting.rest.handleErrors`. This will
+  instruct Loopback to respect your middleware-based configuration of the error handler:
 
 ```
 {
   ...
   "remoting": {
-    "errorHandler": {
-      "debug": true,
-      "log": false
-    }
-  }
-}
-```
-- Add the error handler as middleware in `server/middleware.json` file:
-
-```
-{
-  "final:after": {
-    "strong-error-handler": {
-      "params": {
-         "debug": false,
-         "log": true,
-       }
+    ...
+    "rest": {
+      ...
+      "handleErrors": false
     }
   }
 }
@@ -168,8 +170,8 @@ to LoopBack, or remove the unknown mixin from your model definition.
 ### Update remote method definitions
 
 In version 3.0, the `isStatic` property no longer indicates that a remote method is static.
-Rather if the method name starts with `prototype.` then it an instance method, otherwise
-it is a static method.
+Rather if the method name starts with `prototype.` then the remote method is an instance method,
+otherwise (by default) it's a static method.
 
 As a result, you may see many deprecation warnings after upgrading to 3.0.  To eliminate these:
 
@@ -439,7 +441,7 @@ CORS is no longer enabled by default in version 3.0.
 The built-in CORS middleware was removed from `loopback.rest()` handler,
 so you must set up and configure application CORS policies explicitly.
 
-{% include tip.html content="Projects scaffolded with a recent version `slc loopback` already have the global CORS handler configured in `server/middleware.json`.
+{% include tip.html content="Projects scaffolded with a recent version StrongLoop/LoopBack tools already have the global CORS handler configured in `server/middleware.json`.
 " %}
 
 Otherwise, to enable CORS and allow cross-site requests to your LoopBack application,
@@ -471,14 +473,14 @@ follow these steps:
     }
     ```
 
- 3. Edit the `remoting` section in your `server/config.json` and set `cors` to `true`:
+ 3. Edit the `remoting` section in your `server/config.json` and set `cors` to `false`:
 
     ```js
     {
       // ...
       "remoting": {
         // ...
-        "cors": true,
+        "cors": false,
         // ...
       }
     }

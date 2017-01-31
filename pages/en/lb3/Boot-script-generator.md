@@ -15,7 +15,13 @@ summary:
 
 The LoopBack boot script generator adds a new [boot script](Defining-boot-scripts.html) to a LoopBack application.
 
-```shell
+```
+$ lb boot-script [options] [<name>]
+```
+
+With legacy StrongLoop tools:
+
+```
 $ slc loopback:boot-script [options] [<name>]
 ```
 

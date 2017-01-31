@@ -69,9 +69,10 @@ Here's a paragraph of text
 
 ## Links
 
-### Use absolute URLs
+### Use absolute URLs in READMEs
 
-For links to work on this site, on <http://npmjs.com>, and on GitHub, always use absolute URLs, not relative URLs.  
+When authoring READMEs in external repositories for use in the LoopBack documentation (see [Including READMEs from other repositories](Including-READMEs.html)),
+always use absolute URLs, not relative URLs.  
 
 For example:
 

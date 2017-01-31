@@ -15,7 +15,13 @@ summary:
 
 Adds a new remote method to an existing application.
 
-```shell
+```
+$ lb  remote-method [options] [<modelName>] [<methodName>]
+```
+
+With legacy StrongLoop tools:
+
+```
 $ slc loopback:remote-method [options] [<modelName>] [<methodName>]
 ```
 

@@ -13,12 +13,10 @@ summary: A remote method is a static method of a model, exposed over a custom R
 ---
 ## Overview
 
-A _remote method_ is a static method of a model, exposed over a custom REST endpoint.
+A _remote method_ is a method of a model, exposed over a custom REST endpoint.
 Use a remote method to perform operations not provided by LoopBack's [standard model REST API](PersistedModel-REST-API.html).
 
-{% include note.html content="The easiest way to define a remote method is by using the command-line [remote method generator](Remote-method-generator.html).
-
-For an introductory example of defining a remote method, see [Extend your API](Extend-your-API.html) in Getting Started.
+{% include note.html content="The easiest way to define a remote method is by using the command-line [remote method generator](Remote-method-generator.html).  For an introductory example of defining a remote method, see [Extend your API](Extend-your-API.html) in Getting Started.
 " %}
 
 ## How to define a remote method
@@ -28,13 +26,13 @@ To define a remote method:
 1.  Edit the [Model definition JSON file](Model-definition-JSON-file.html) in `/common/models` directory; for example, to attach a remote method to the Person model, edit `/common/models/person.js`.
 If you created the model with the [Model generator](Model-generator.html), then this file will already exist.
 
-2.  Define a method that will handle the request. The method name determines whether a remote method is static or an instance method.  A method name starting with `prototype.` indicates an instance method; otherwise, it's a static method.
+2.  Define a method that will handle the request. The method name determines whether a remote method is static or an instance method.  A method name starting with `prototype.` indicates an instance method; otherwise, it's a static method. **NOTE**: By default, a remote method is static.  You must specify `prototype.` in the method name to create an instance method.
 
 3.  Call [`remoteMethod()`](http://apidocs.strongloop.com/loopback/#model-remotemethod), to register the method, calling it with two parameters: 
     - First parameter is a string that is the name of the method you defined in step 2 
     - Second (optional) parameter provides additional configuration for the REST endpoint.
 
-{% include important.html content="The LoopBack [model generator](Model-generator.html) automatically converts camel-case model names (for example MyModel) to lowercase dashed names (my-model).
+{% include tip.html content="The LoopBack [model generator](Model-generator.html) automatically converts camel-case model names (for example MyModel) to lowercase dashed names (my-model).
 For example, if you create a model named \"FooBar\" with the model generator, it creates files `foo-bar.json` and `foo-bar.js` in `common/models`. 
 However, the model name (\"FooBar\") will be preserved via the model's name property.
 " %} 
@@ -63,15 +61,15 @@ module.exports = function(Person){
 
 Now, for example, a request to
 
-`POST /api/people/greet`
+```
+POST /api/people/greet
+```
 
-with data `{"msg": "John"}`
+with data `{"msg": "John"}` will return:
 
-will return:
-
-**shell**
-
-`Greetings... John!`
+```
+Greetings... John!
+```
 
 {% include note.html content="Notice the REST API request above uses the plural form \"people\" instead of \"person\". LoopBack exposes the
 [plural form of model names for REST API routes](Exposing-models-over-REST.html#REST-paths).
@@ -101,7 +99,7 @@ The options argument is a Javascript object containing key/value pairs to config
 <table width="800">
   <thead>
     <tr>
-      <th width="50">Option</th>
+      <th width="120">Option</th>
       <th>Description</th>
       <th width="260">Example</th>
     </tr>
@@ -142,7 +140,7 @@ The options argument is a Javascript object containing key/value pairs to config
       </td>
     </tr>
     <tr>
-      <td>http.verb</td>
+      <td><a name="http.verb"></a>http.verb</td>
       <td>
         HTTP method (verb) at which the method is available. One of:
         <ul>
@@ -212,12 +210,14 @@ The `accepts` and `returns` options properties define either a single argume
 The following table describes the properties of each individual argument.
 
 <table>
-  <tbody>
+  <thead>
     <tr>
-      <th>Property (key)</th>
+      <th width="100">Property (key)</th>
       <th width="100">Type</th>
       <th>Description</th>
     </tr>
+  </thead>
+  <tbody>    
     <tr>
       <td>arg</td>
       <td>String</td>
@@ -487,22 +487,8 @@ The access type for custom remote methods is Execute.
 
 For example, to deny invocation of the `greet` method used in the examples above:
 
-**shell**
-
 ```shell
-$ slc loopback:acl
-[?] Select the model to apply the ACL entry to: Person
-[?] Select the ACL scope: A single method
-[?] Enter the method name: greet
-[?] Select the access type: Execute
-[?] Select the role: All users
-[?] Select the permission to apply: Explicitly deny access
-```
-
-**shell**
-
-```shell
-$ slc loopback:acl
+$ lb acl
 [?] Select the model to apply the ACL entry to: Person
 [?] Select the ACL scope: A single method
 [?] Enter the method name: greet

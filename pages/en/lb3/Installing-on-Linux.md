@@ -8,6 +8,7 @@ sidebar: lb3_sidebar
 permalink: /doc/en/lb3/Installing-on-Linux.html
 summary: Follow the procedure below to install StrongLoop on Linux.
 ---
+{% include content/slc-warning.md %}
 
 {% include important.html content="These instructions are for a development installation, not production.
 " %}
@@ -21,7 +22,12 @@ summary: Follow the procedure below to install StrongLoop on Linux.
 
 {% include content/node-dir-privs.md %}
 
-{% include content/install-nodejs.md %}
+### Install Node.js
+
+If you haven't already installed Node, [download and install Node.js](http://nodejs.org/en/download).  For best results, use the latest LTS (long-term support) release of Node.js.
+
+{% include warning.html content="LoopBack does not support Node.js versions prior to 4.x.
+" %}
 
 {% include content/install-sl.md %}
 

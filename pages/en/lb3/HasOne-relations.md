@@ -20,11 +20,6 @@ Use the [relation generator](Relation-generator.html) to create a relation bet
 The tool will prompt you to enter the name of the model, the name of related model, and other required information.
 The tool will then modify the [model definition JSON file](Model-definition-JSON-file.html) (for example, `common/models/customer.json`) accordingly.
 
-Use `slc loopback:relation` to create a relation between two models.
-The tool will prompt you to enter the name of the model, the name of related model, and other required information.
-The tool will then modify the [model definition JSON file](Model-definition-JSON-file.html) (for example, `common/models/customer.json`) accordingly.
-
-For more information, see [Relation generator](Relation-generator.html).
 
 For example, consider two models: supplier and account.
 
@@ -44,7 +39,8 @@ For example, consider two models: supplier and account.
     "supplier_acct": {
       "type": "hasOne",
       "model": "account",
-      "foreignKey": "supplierId"
+      "foreignKey": "supplierId",
+      "primaryKey": "id" // optional
     }
   },
   "acls": [],

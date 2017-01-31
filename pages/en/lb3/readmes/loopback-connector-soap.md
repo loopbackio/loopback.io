@@ -25,13 +25,13 @@ This will install the module from npm and add it as a dependency to the applicat
 Use the [Data source generator](http://loopback.io/doc/en/lb2/Data-source-generator.html) to add a SOAP data source
 to your application.
 
-With the API Connect toolkit:
+For LoopBack 2.x, with the API Connect toolkit:
 
 ```shell
 $ apic create --type datasource
 ```
 
-With StrongLoop tools:
+For LoopBack 2.x or 3.0, with StrongLoop tools:
 
 ```shell
 $ slc loopback:datasource

@@ -51,19 +51,25 @@ For example, here is an excerpt from a model definition file for a customer mode
 Properties are required unless otherwise designated.
 
 <table>
+  <thead>
     <tr>
-      <th>Property</th>
+      <th width="120">Property</th>
       <th width="100">Type</th>
+      <th>Default</th>
       <th>Description</th>
     </tr>
+    </thead>
+    <tbody>
     <tr>
       <td>name</td>
       <td>String</td>
+      <td>None</td>
       <td>Name of the model.</td>
     </tr>
     <tr>
       <td>description</td>
       <td>String or Array</td>
+      <td>None</td>
       <td>
         Optional description of the model.<br/><br/>
         You can split long descriptions into arrays of strings (lines) to keep line lengths manageable; for example:
@@ -74,13 +80,15 @@ Properties are required unless otherwise designated.
     <tr>
       <td>plural</td>
       <td>String</td>
+      <td>Plural of <code>name</code> property using standard English conventions.</td>       
       <td>
-        Plural form of the model name.  <strong>Optional</strong>: Defaults to plural of name property using standard English conventions.
+        Plural form of the model name.  
       </td>
     </tr>
     <tr>
       <td>base</td>
       <td>String</td>
+      <td>None</td>
       <td>
         Name of another model that this model extends. The model will "inherit" properties and methods of the base model.
       </td>
@@ -88,49 +96,50 @@ Properties are required unless otherwise designated.
     <tr>
       <td>idInjection</td>
       <td>Boolean</td>
+      <td><code>true</code></td>       
       <td>
         Whether to automatically add an <code>id</code> property to the model:
         <ul>
           <li><code>true</code>: <code>id</code> property is added to the model automatically. This is the default.</li>
           <li><code>false</code>: <code>id</code> property is not added to the model</li>
         </ul>
-        See <a href="#id-properties">ID properties</a> for more information.  <strong>Optional</strong>; default is <code>true</code>. If present, the <code>idInjection</code> property in <code>options</code> takes precedence.
+        See <a href="#id-properties">ID properties</a> for more information.  The <code>idInjection</code> property in <code>options</code> (if present) takes precedence.
       </td>
     </tr>
     <tr>
       <td>forceId</td>
       <td>Boolean</td>
+      <td><code>false</code></td>      
       <td>
         If true, prevents clients from setting the auto-generated ID value manually.
-        The default is false.
       </td>
     </tr>
     <tr>
       <td>http.path</td>
+      <td>None</td>
       <td>String</td>
       <td>Customized HTTP path for REST endpoints of this model.</td>
     </tr>
     <tr>
       <td>strict</td>
       <td>Boolean</td>
+      <td><code>false</code>.<br/>If the data source is backed by a relational database, then default is  <code>true</code>.</td>
       <td>
         Specifies whether the model accepts only predefined properties or not. One of:
         <ul>
           <li><code>true</code>: Only properties defined in the model are accepted. Use if you want to ensure the model accepts only predefined properties.
-          If you try to save a model instance with properties that are not predefined, LoopBack throws a `ValidationError`.
+          If you try to save a model instance with properties that are not predefined, LoopBack throws a ValidationError.
           </li>
           <li><code>false</code>: The model is an open model and accepts all properties, including ones not predefined in the model.
             This mode is useful to store free-form JSON data to a schema-less database such as MongoDB.
           </li>
-          <li>Undefined: Defaults to false unless the data source is backed by a relational database such as Oracle or MySQL.</li>
         </ul>
       </td>
     </tr>
     <tr>
-      <td>
-        options
-      </td>
+      <td>options</td>
       <td>Object</td>
+      <td>N/A</td>
       <td>
         JSON object that specifies model options. See <a href="#options">Options</a> below.
       </td>
@@ -138,6 +147,7 @@ Properties are required unless otherwise designated.
     <tr>
       <td>properties</td>
       <td>Object</td>
+      <td>N/A</td>
       <td>
         JSON object that specifies the properties in the model. See <a href="#properties">Properties</a> below.
       </td>
@@ -145,6 +155,7 @@ Properties are required unless otherwise designated.
     <tr>
       <td>relations</td>
       <td>Object</td>
+      <td>N/A</td>
       <td>
         Object containing relation names and relation definitions.
         See <a href="#relations">Relations</a> below.
@@ -153,6 +164,7 @@ Properties are required unless otherwise designated.
     <tr>
       <td>acls</td>
       <td>Array</td>
+      <td>N/A</td>
       <td>
         Set of <code>ACL</code> specifications that describes access control for the model.
         See <a href="#acls">ACLs</a> below.
@@ -161,13 +173,16 @@ Properties are required unless otherwise designated.
     <tr>
       <td>scopes</td>
       <td>Object</td>
+      <td>N/A</td>
       <td>See <a href="#scopes">Scopes</a> below.</td>
     </tr>
     <tr>
       <td>replaceOnPUT</td>
       <td>Boolean</td>
-      <td>If true, <a href="https://apidocs.strongloop.com/loopback/#persistedmodel-replaceorcreate">replaceOrCreate()</a>  and <a href="https://apidocs.strongloop.com/loopback/#persistedmodel-replacebyid">replaceById()</a> use the HTTP PUT method; if false, updateOrCreate() and <a href="https://apidocs.strongloop.com/loopback/#persistedmodel-prototype-updateattributes">updateAttributes()</a>/patchAttributes() use the HTTP PUT method.</td>
-    </tr>    
+      <td><code>false</code></td>
+      <td>If true, <a href="https://apidocs.strongloop.com/loopback/#persistedmodel-replaceorcreate">replaceOrCreate()</a>  and <a href="https://apidocs.strongloop.com/loopback/#persistedmodel-replacebyid">replaceById()</a> use the HTTP PUT method; if false, updateOrCreate() and <a href="https://apidocs.strongloop.com/loopback/#persistedmodel-prototype-updateattributes">updateAttributes()</a>/patchAttributes() use the HTTP PUT method.<br/>For more information, see <a href="Exposing-models-over-REST.html#replaceonput-flag">Exposing models over REST</a>.</td>
+    </tr>
+  </tbody>
 </table>
 
 ## Options
@@ -179,10 +194,28 @@ The `options` key specifies advanced options, for example data source-specific o
 
 ### Advanced options
 
-| Property | Type | Description |
-| -------- | ---- | ----------- |
-| `validateUpsert` | Boolean | By default, the <a href="http://apidocs.strongloop.com/loopback/#persistedmodel-upsert">upsert()</a> method (also known as `updateOrCreate()` ) does not enforce valid model data. Instead, it logs validation errors to the console. This is not optimal, but necessary to preserve backwards compatibility with older 2.x versions. <br/><br/>Set this property to true to ensure that `upsert()` returns an error when validation fails. The next major version of LoopBack will enable this option (set as true) by default.<br/><br/> Set this property to false to prevent `upsert()` from calling any validators at all. <br/><br/> By default, `upsert()` calls all validators and reports any validation errors to the console log.|
-| `allowEternalTokens` | Boolean | Allow access tokens that never expire. |
+<table>
+  <thead>
+    <tr>
+      <th width="170">Property</th>
+      <th width="100">Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>validateUpsert</code></td>
+      <td>Boolean</td>
+      <td>By default, the <a href="http://apidocs.strongloop.com/loopback/#persistedmodel-upsert">upsert()</a> (<code>updateOrCreate()</code>) method does not enforce valid model data. Instead, it logs validation errors to the console. This preserves backwards compatibility with older 2.x versions. <br /><br />Set this property to true to ensure that <code>upsert()</code> returns an error when validation fails. The next major version of LoopBack will enable this option (set as true) by default.<br /><br /> Set this property to false to prevent <code>upsert()</code> from calling any validators at all. <br /><br /> By default, <code>upsert()</code> calls all validators and reports any validation errors to the console log.</td>
+    </tr>
+    <tr>
+      <td><code>allowEternalTokens</code></td>
+      <td>Boolean</td>
+      <td>Allow access tokens that never expire.</td>
+    </tr>
+  </tbody>
+</table>
+
 
 ### Data source-specific options
 

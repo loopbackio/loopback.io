@@ -2,15 +2,14 @@
 title: Content reuse
 tags: [single_sourcing]
 keywords: includes, conref, dita, transclusion, transclude, inclusion, reference
-last_updated: July 3, 2016
 summary: "You can reuse chunks of content by storing these files in the includes folder. You then choose to include the file where you need it. This works similar to conref in DITA, except that you can include the file in any content type."
 sidebar: contrib_sidebar
 permalink: /doc/en/contrib/content_reuse.html
-folder: mydoc
+
 ---
 
 ## About content reuse
-You can embed content from one file inside another using includes. Put the file containing content you want to reuse (e.g., mypage.html) inside the \_includes/custom folder and then use a tag like this: 
+You can embed content from one file inside another using includes. Put the file containing content you want to reuse (e.g., mypage.html) inside the \_includes/custom folder and then use a tag like this:
 
 {% raw %}
 ```

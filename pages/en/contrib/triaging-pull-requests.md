@@ -3,7 +3,6 @@ title: Triaging pull requests
 tags: [contributing]
 toc: false
 keywords:
-last_updated: Sept 27, 2016
 summary: "This document describes the triage process for community pull requests."
 sidebar: contrib_sidebar
 permalink: /doc/en/contrib/triaging-pull-requests.html

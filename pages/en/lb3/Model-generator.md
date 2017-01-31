@@ -22,8 +22,14 @@ apic create --type model [options] [<name>]
 Or:
 </div>
 
-```shell
-slc loopback:model
+```
+$ lb model [options] [<name>]
+```
+
+With legacy StrongLoop tools:
+
+```
+slc loopback:model [options] [<name>]
 ```
 
 ### Options
@@ -39,8 +45,8 @@ Do not automatically install dependencies. Default is false.
 
 ### Arguments
 
-You can optionally provide the name of the model to create as an argument to the command. 
-If you do, the tool will use that as the default when it prompts for the name.
+`<name>` - Optional name of the model to create as an argument to the command. 
+If provided, the tool will use that as the default when it prompts for the name.
 
 ### Interactive Prompts
 

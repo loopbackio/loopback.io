@@ -1,12 +1,11 @@
 ---
 title: Sidebar Navigation
 tags: [getting_started]
-last_updated: July 3, 2016
 keywords: sidebar, accordion, yaml, iteration, for loop, navigation, attributes, conditional filtering
 summary:
 sidebar: contrib_sidebar
 permalink: /doc/en/contrib/sidebar_navigation.html
-folder: mydoc
+
 ---
 
 ## Location
