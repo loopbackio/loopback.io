@@ -1,0 +1,353 @@
+'API definition':
+  - area: 'API definition'
+    label: api-definition
+    owner:
+    - sq-lb-epitome
+    repos:
+    - loopback-api-definition
+    - loopback-component-explorer
+    - loopback-swagger
+
+'Boot':
+  - area: Boot
+    label: boot
+    owner:
+    - sq-lb-asteroid
+    repos:
+    - loopback-boot
+    - loopback-example-app-logic
+    smes:
+    - davidcheung
+    - deepakrkris
+
+'Components':
+  - area: 'Passport'
+    label: component-passport
+    owner:
+    - sq-lb-epitome
+    repos:
+    - loopback-component-passport
+    - loopback-example-passport
+    smes:
+    - loay
+
+  - area: 'Push notifications'
+    label: component-push
+    owner:
+    - sq-lb-epitome
+    repos:
+    - loopback-component-push
+    - loopback-example-push
+    smes:
+    - superkhau
+
+  - area: 'Storage'
+    label: component-storage
+    owner:
+    - sq-lb-epitome
+    repos:
+    - loopback-component-storage
+    - loopback-example-storage
+    smes:
+    - Amir-61
+
+'Connectors':
+  - area: 'Email'
+    label: connector-email
+    owner:
+    - sq-lb-epitome
+    repos:
+    - loopback-component-email
+    smes:
+    - jannyHou
+    - davidcheung
+
+  - area: 'HTTP'
+    label: connector-http
+    owner:
+    - sq-lb-epitome
+    repos:
+    - loopback-connector-jsonrpc
+    - loopback-connector-remote
+    - loopback-connector-rest
+    - loopback-connector-swagger
+    smes:
+    - gunjpan
+
+  - area: 'KeyValue'
+    label: connector-kv
+    owner:
+    - sq-lb-asteroid
+    repos:
+    - loopback-connector-kv-extremescale
+    - loopback-connector-kv-hazelcast
+    - loopback-connector-kv-memcached
+    - loopback-connector-kv-redis
+    files:
+    - https://github.com/strongloop/loopback/tree/master/common/models
+    - https://github.com/strongloop/loopback-datasource-juggler/blob/master/connectors/kv-memory.js
+    - https://github.com/strongloop/loopback-datasource-juggler/blob/master/lib/kvao.js
+    smes:
+    - superkhau
+    - bajtos
+
+  - area: 'Messaging'
+    label: connector-messaging
+    owner:
+    - sq-lb-epitome
+    repos:
+    - loopback-connector-mqlight
+    smes:
+
+  - area: 'NoSQL'
+    label: connector-nosql
+    owner:
+    - sq-lb-apex
+    repos:
+    - memory connector
+    - loopback-connector-cloudant
+    - loopback-connector-mongodb
+    - transient connector
+    smes:
+    - 0candy
+    - jannyHou
+    - superkhau
+
+  - area: 'SOAP'
+    label: connector-soap
+    owner:
+    - sq-lb-asteroid
+    repos:
+    - loopback-connector-soap
+    - strong-soap
+    smes:
+    - rashmihunt
+    - deepakrkris
+
+  - area: 'SQL'
+    label: connector-sql
+    owner:
+    - sq-lb-apex
+    repos:
+    - loopback-connector
+    - loopback-connector-dashdb
+    - loopback-connector-db2
+    - loopback-connector-db2iseries
+    - loopback-connector-db2z
+    - loopback-connector-informix
+    - loopback-connector-mssql
+    - loopback-connector-mysql
+    - loopback-connector-oracle
+    - loopback-connector-postgresql
+    - loopback-example-database
+    - loopback-oracle-builder
+    - loopback-oracle-installer
+    smes:
+    - 0candy
+    - deepakrkris
+    - jannyHou
+    - loay
+    - qpresley
+    - superkhau
+    - Amir-61
+
+'Juggler':
+  - area: 'Composition'
+    label: juggler-composition
+    owner:
+    - sq-lb-apex
+    repos:
+    - loopback-example-mixins
+    files:
+    - https://github.com/strongloop/loopback-datasource-juggler/blob/master/lib/mixins.js
+    smes:
+    - Amir-61
+    - superkhau
+
+  - area: 'Model definition'
+    label: juggler-model-definition
+    owner:
+    - sq-lb-apex
+    repos:
+    - loopback-model
+    files:
+    - https://github.com/strongloop/loopback-datasource-juggler/blob/master/lib/model-definition.js
+    smes:
+    - gunjpan
+    - superkhau
+    - 0candy
+
+  - area: 'Persisted Model'
+    label: juggler-dao
+    owner:
+    - sq-lb-apex
+    repos:
+    - loopback-filters
+    - loopback-model-persistence
+    files:
+    - https://github.com/strongloop/loopback-datasource-juggler/blob/master/lib/dao.js
+    smes:
+    - Amir-61
+    - superkhau
+    - loay
+
+  - area: 'Relations'
+    label: juggler-relations
+    owner:
+    - sq-lb-apex
+    repos:
+    - loopback-example-relations
+    files:
+    - https://github.com/strongloop/loopback-datasource-juggler/blob/master/lib/relation.js
+    - https://github.com/strongloop/loopback-datasource-juggler/blob/master/lib/relation-definition.js
+    smes:
+    - jannyHou
+    - Amir-61
+    - superkhau
+
+  - area: 'Validation'
+    label: juggler-validation
+    owner:
+    - sq-lb-apex
+    files:
+    - https://github.com/strongloop/loopback-datasource-juggler/blob/master/lib/validation.js
+    smes:
+    - Amir-61
+    - davidcheung
+    - superkhau
+
+'LoopBack':
+  - area: 'Auth'
+    label: loopback-auth
+    owner:
+    - sq-lb-epitome
+    repos:
+    - loopback-component-oauth2
+    - loopback-example-access-control
+    - loopback-example-ssl
+    - loopback-example-user-management
+    - loopback-policy
+    smes:
+    - loay
+
+  - area: 'Glue'
+    label: glue
+    owner:
+    - sq-lb-asteroid
+    repos:
+    - TBD
+
+  - area: 'Logging'
+    label: logging
+    owner:
+    - sq-lb-epitome
+    repos:
+    - loopback-logger
+    smes:
+    - davidcheung
+
+  - area: 'Multitenancy'
+    label: multitenancy
+    owner:
+    - sq-lb-asteroid
+    repos:
+    - loopback-multitenancy
+    - loopback-multitenant-poc
+    smes:
+    - superkhau
+
+  - area: 'Registries'
+    label: loopback-registry
+    owner:
+    - sq-lb-epitome
+    repos:
+    - loopback-getting-started
+    - loopback-getting-started-intermediate
+    files:
+    - https://github.com/strongloop/loopback/blob/master/lib/loopback.js
+    smes:
+    - davidcheung
+    - deepakrkris
+    - gunjpan
+
+  - area: 'Remoting'
+    label:  remoting
+    owner:
+    - sq-lb-epitome
+    repos:
+    - loopback-example-offline-sync
+    - loopback-phase
+    - strong-remoting
+    files:
+    - https://github.com/strongloop/loopback/blob/master/lib/server-app.js
+    smes:
+    - gunjpan
+    - deepakrkris
+    - 0candy
+    - davidcheung
+
+'SDKs':
+  - area: 'Android'
+    label: sdk-android
+    owner:
+    - sq-lb-epitome
+    repos:
+    - loopback-android-getting-started
+    - loopback-sdk-android
+    smes:
+    - loay
+    - superkhau
+
+  - area: 'Angular 1.x'
+    label: sdk-angular
+    owner:
+    - sq-lb-epitome
+    repos:
+    - angular-live-set
+    - grunt-loopback-sdk-angular
+    - gulp-loopback-sdk-angular
+    - loopback-sdk-angular
+    - loopback-sdk-angular-cli
+    - loopback-example-angular
+    - loopback-example-angular-live-set
+    smes:
+    - davidcheung
+    - 0candy
+
+  - area: 'iOS'
+    label: sdk-ios
+    owner:
+    - sq-lb-epitome
+    repos:
+    - loopback-sdk-ios
+    - loopback-sdk-ios-codegen
+    - loopback-sdk-ios-getting-started
+    smes:
+
+  - area: 'Workspace + generators'
+    label: workspace-generators
+    owner:
+    - sq-lb-asteroid
+    repos:
+    - generator-loopback
+    - loopback-workspace
+    smes:
+    - 0candy
+    - deepakrkris
+    - jannyHou
+    - rashmihunt
+
+'Other':
+  - area: Other
+    label: N/A
+    owner:
+    - sq-lb-apex
+    - sq-lb-asteroid
+    - sq-lb-epitome
+    repos:
+    - eslint-config-loopback
+    - loopback-sandbox
+    - loopback-triage
+    files:
+    - https://github.com/strongloop-internal/loopback-knowledge-base
+    smes:
