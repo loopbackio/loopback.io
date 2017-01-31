@@ -304,6 +304,7 @@ docker-compose up
   1. should create `feature` branches from the `develop` branch
   1. should merge `feature` into `develop` then create a `release` branch to:
     1. update the changelog
+    1. close related issues and mention release version
     1. update the readme
     1. fix any bugs from final testing
     1. commit locally and run `npm-release x.x.x -m "<some comment>"`
