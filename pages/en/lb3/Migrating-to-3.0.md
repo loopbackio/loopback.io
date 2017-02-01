@@ -284,7 +284,7 @@ the "loaded" hook now consistently provides `ctx.data` for all operations.
 If you have a "loaded" hook handler that checks for the existence of `ctx.instance`, then you
 can remove this condition together with the branch that follows.
 
-### Replace removed `PersisteModel` event listeners
+### Replace removed `PersistedModel` event listeners
 
 Version 3.0 eliminates the following deprecated `PersistedModel` events:
 `changed`, `deleted`, `deletedAll`.
