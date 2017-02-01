@@ -5,12 +5,13 @@ layout: page
 keywords: LoopBack
 tags: authentication
 sidebar: lb2_sidebar
+v2only: true
 permalink: /doc/en/lb2/AccessToken-invalidation.html
 summary: When a user changes their email or password, other sessions are logged out for security reasons.
 ---
 
-When a user's account is compromised (for example their password is leaked or 
-an attacker gains access to their email account), the app needs to be able to 
+When a user's account is compromised (for example their password is leaked or
+an attacker gains access to their email account), the app needs to be able to
 prevent continued use of the hijacked account.
 
 To address this case, LoopBack invalidates access tokens (logs out sessions)
@@ -39,10 +40,10 @@ Example:
 }
 ```
 
-To allow the access-token invalidation code to detect and preserve current sessions, 
+To allow the access-token invalidation code to detect and preserve current sessions,
 enable context propagation via the "options" argument
 in the settings of your User model. You can't change this setting in the
-built-in User model.  Instead,  configure a custom model that 
+built-in User model.  Instead,  configure a custom model that
 [extends the built-in User model](Extending-built-in-models.html).
 
 Example of a `Customer` model extending the built-in `User` model:
@@ -62,5 +63,3 @@ Example of a `Customer` model extending the built-in `User` model:
   "methods": {}
 }
 ```
-
-
