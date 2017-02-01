@@ -119,6 +119,10 @@ children:
     url: /doc/en/lb3/Learn-more.html
     output: 'web, pdf'
 
+- title: 'Tutorials and examples'
+  url: /doc/en/lb3/Tutorials-and-examples.html
+  output: 'web, pdf'
+
 - title: 'Creating an application'
   url: /doc/en/lb3/Creating-an-application.html
   output: 'web, pdf'
@@ -134,10 +138,6 @@ children:
 
   - title: 'Standard project structure'
     url: /doc/en/lb3/Standard-project-structure.html
-    output: 'web, pdf'
-
-  - title: 'Tutorials and examples'
-    url: /doc/en/lb3/Tutorials-and-examples.html
     output: 'web, pdf'
 
 - title: 'Managing users'
@@ -863,6 +863,10 @@ children:
       url: /doc/en/lb3/SOAP-connector.html
       output: 'web, pdf'
       children:
+
+      - title: 'Strong-soap'
+        url: /doc/en/lb3/Strong-soap.html
+        output: 'web, pdf'
 
       - title: 'SOAP connector example'
         url: /doc/en/lb3/SOAP-Connector-example.html
