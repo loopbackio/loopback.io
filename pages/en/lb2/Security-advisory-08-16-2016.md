@@ -7,6 +7,7 @@ keywords: LoopBack
 tags:
 sidebar: lb2_sidebar
 permalink: /doc/en/lb2/Security-advisory-08-16-2016.html
+v2only: true
 summary:
 ---
 
