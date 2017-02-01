@@ -88,12 +88,14 @@ The app instance will be used to set up middleware and routes. The data source p
 Two option properties indicate if you want to set up the OAuth 2.0 provider as an authorization server, a resource server, or both.
 
 <table>
-  <tbody>
+  <thead>
     <tr>
       <th>Property</th>
       <th>Type</th>
       <th>Description</th>
     </tr>
+  </thead>    
+  <tbody>
     <tr>
       <td>authorizationServer</td>
       <td>Boolean</td>
@@ -101,7 +103,7 @@ Two option properties indicate if you want to set up the OAuth 2.0 provider as a
     </tr>
     <tr>
       <td>resourceServer</td>
-      <td><span>Boolean</span></td>
+      <td>Boolean</td>
       <td>If true, set up the resource server.</td>
     </tr>
   </tbody>
@@ -112,47 +114,49 @@ Two option properties indicate if you want to set up the OAuth 2.0 provider as a
 The following options are available for an authorization server:
 
 <table>
-  <tbody>
+  <thead>
     <tr>
-      <th>Property</th>
-      <th>Type</th>
+      <th width="150">Property</th>
+      <th width="120">Type</th>
       <th>Description</th>
       <th>Default</th>
     </tr>
+  </thead>
+  <tbody>
     <tr>
       <td>authorizePath</td>
       <td>
-        <p>String or<br>Boolean (only false)</p>
+        String or<br>Boolean (only false)
       </td>
       <td>
-        <p>If String, specifies the path to mount the authorization endpoint.</p>
-        <p>If false, do not set up the authorization endpoint.</p>
+        If String, specifies the path to mount the authorization endpoint.
+        If false, do not set up the authorization endpoint.
       </td>
-      <td><code><span>/oauth/authorize</span></code></td>
+      <td><code>/oauth/authorize</code></td>
     </tr>
     <tr>
       <td>&nbsp;tokenPath</td>
-      <td><span>String or</span><br><span>Boolean (only false)</span></td>
+      <td>String or<br>Boolean (only false)</td>
       <td>
-        <p><span>If String, specifies the p</span>ath to mount the token endpoint.</p>
-        <p><span>If false, do not set up the token endpoint</span></p>
+        If String, specifies the path to mount the token endpoint.
+        If false, do not set up the token endpoint
       </td>
-      <td><span>POST <code>/oauth/token</code></span></td>
+      <td>POST <code>/oauth/token</code></td>
     </tr>
     <tr>
       <td>&nbsp;decisionPath</td>
-      <td><span>String or</span><br><span>Boolean (only false)</span></td>
+      <td>String or<br>Boolean (only false)</td>
       <td>
-        <p><span>If String, specifies the p</span>ath to mount the decision endpoint.</p>
-        <p>If false, do not set up the decision endpoint</p>
+        If String, specifies the path to mount the decision endpoint.
+        If false, do not set up the decision endpoint
       </td>
-      <td><span>POST <code>/oauth/authorize/decision</code></span></td>
+      <td>POST <code>/oauth/authorize/decision</code></td>
     </tr>
     <tr>
       <td>decisionView</td>
       <td>String</td>
       <td>
-        <p>Server-side view name to render the decision dialog. The input for the view is:</p>
+        Server-side view name to render the decision dialog. The input for the view is:
         <ul>
           <li>transactionId: An internal token to prevent forging</li>
           <li>user: user/resource owner object</li>
@@ -167,8 +171,8 @@ The following options are available for an authorization server:
       <td>decisionPage</td>
       <td>String</td>
       <td>
-        <p>URL to the decision dialog page. Overrides decisionView. The query parameters are:</p>
-        <ul class="task-list">
+        URL to the decision dialog page. Overrides decisionView. The query parameters are:
+        <ul>
           <li>transactionId: An internal token to prevent forging</li>
           <li>userId: user/resource owner ID</li>
           <li>clientId: client application ID</li>
@@ -180,17 +184,17 @@ The following options are available for an authorization server:
     </tr>
     <tr>
       <td>loginPath</td>
-      <td><span>String or</span><br><span>Boolean (only false)</span></td>
+      <td>String or<br>Boolean (only false)</td>
       <td>
-        <p>Path to mount the user login endpoint.</p>
+        Path to mount the user login endpoint.
       </td>
-      <td><span>POST <code>/login</code></span></td>
+      <td>POST <code>/login</code></td>
     </tr>
     <tr>
       <td>loginPage</td>
       <td>String</td>
       <td>URL to the login dialog page.</td>
-      <td><code><span>/login</span></code></td>
+      <td><code>/login</code></td>
     </tr>
   </tbody>
 </table>

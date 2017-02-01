@@ -117,13 +117,15 @@ module.exports = function(app, [callback]) {
 ```
 
 <table>
-  <tbody>
+  <thead>
     <tr>
-      <th>Name</th>
-      <th>Type</th>
+      <th width="100">Name</th>
+      <th width="100">Type</th>
       <th>Required</th>
       <th>Description</th>
     </tr>
+  </thead>    
+  <tbody>    
     <tr>
       <td>app</td>
       <td>Object</td>
@@ -136,7 +138,7 @@ module.exports = function(app, [callback]) {
     <tr>
       <td>callback</td>
       <td>Function</td>
-      <td>Only for asynchronous boot scripts</td>
+      <td>For asynchronous boot scripts</td>
       <td>Call the callback function when your application logic is done.</td>
     </tr>
   </tbody>
@@ -190,7 +192,6 @@ module.exports = function(app) {
 
 If you add this boot script to an "empty" application, you will see this:
 
-{% include code-caption.html content="shell" %}
 ```javascript
 ...
 Models: ['User', 'AccessToken', 'ACL', 'RoleMapping', 'Role']

@@ -62,12 +62,14 @@ The UserIdentity model has a [belongsTo](BelongsTo-relations.html) relation to 
 The following table describes the properties of the UserIdentity model.
 
 <table>
-  <tbody>
+  <thead>
     <tr>
       <th>Property</th>
       <th>Type</th>
       <th>Description</th>
     </tr>
+  </thead>    
+  <tbody>    
     <tr>
       <td>provider</td>
       <td>String</td>
@@ -135,15 +137,17 @@ The ApplicationCredential model stores credentials associated with the client ap
 
 The ApplicationCredential model has a [belongsTo](BelongsTo-relations.html) relation to the Application model.
 
-The following table describes the properties of ApplicationCredential model
+The following table describes the properties of ApplicationCredential model:
 
 <table>
-  <tbody>
+  <thead>
     <tr>
       <th>Property</th>
       <th>Type</th>
       <th>Description</th>
     </tr>
+    </thead>
+  <tbody>    
     <tr>
       <td>provider</td>
       <td>String</td>
@@ -177,6 +181,7 @@ The following table describes the properties of ApplicationCredential model
     </tr>
   </tbody>
 </table>
+
 
 ## PassportConfigurator
 

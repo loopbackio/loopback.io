@@ -82,7 +82,7 @@ $ apic create --type datasource
 [?] Select the connector for myfile: other
 [?] Enter the connector name without the loopback-connector- prefix: loopback-component-storage
 ```
-
+</div>
 
 ```shell
 $ lb datasource
@@ -249,6 +249,7 @@ as shown in the following table.
       <td>authUrl</td>
       <td>Your identity service</td>
     </tr>
+
     <tr>
       <td rowspan="2"><strong>Local File System</strong></td>
       <td>provider</td>
@@ -260,6 +261,7 @@ as shown in the following table.
 }</pre>
       </td>
     </tr>
+
     <tr>
       <td>root</td>
       <td>File path to storage root directory.</td>
@@ -269,76 +271,74 @@ as shown in the following table.
 
 ## API
 
-Once you create a container, it will provide both a REST and Node API, as described in the following table.
-For details, see the complete [API documentation](http://apidocs.strongloop.com/loopback-component-storage/).
+Once you create a container, it will provide both a REST and Node API, as described in the following table. For details, see the complete [API documentation](http://apidocs.strongloop.com/loopback-component-storage/).
 
 <table>
-  <tbody>
+  <thead>
     <tr>
       <th>Description</th>
-      <th>
+      <th width="200">
         Container Model Method
       </th>
       <th>REST URI</th>
     </tr>
+  </thead>    
+  <tbody>    
     <tr>
       <td>List all containers.</td>
       <td>
         getContainers(cb)
-        <div style="300px;">
-          &nbsp;
-
       </td>
-      <td><span>GET<br></span><span>/api/containers</span></td>
+      <td>GET<br>/api/containers</td>
     </tr>
     <tr>
       <td>Get information about specified container.</td>
       <td>getContainer(container, cb)</td>
-      <td><span>GET<br></span><span>/api/containers/:container</span></td>
+      <td>GET<br>/api/containers/:container</td>
     </tr>
     <tr>
       <td>Create a new container.</td>
       <td>createContainer(options, cb)</td>
-      <td><span>POST<br></span><span>/api/containers</span></td>
+      <td>POST<br>/api/containers</td>
     </tr>
     <tr>
       <td>Delete specified container.</td>
       <td>destroyContainer(container, cb)</td>
-      <td><span>DELETE<br></span><span>/api/containers/:container</span></td>
+      <td>DELETE<br>/api/containers/:container</td>
     </tr>
     <tr>
       <td>List all files within specified container.</td>
       <td>getFiles(container, download, cb)</td>
-      <td><span>GET<br></span><span>/api/containers/:container/files</span></td>
+      <td>GET<br>/api/containers/:container/files</td>
     </tr>
     <tr>
       <td>Get information for specified file within specified container.</td>
       <td>getFile(container, file, cb)</td>
-      <td><span>GET<br></span><span>/api/containers/:container/files/:file</span></td>
+      <td>GET<br>/api/containers/:container/files/:file</td>
     </tr>
     <tr>
       <td>Delete a file within a given container by name.</td>
       <td>removeFile(container, file, cb)</td>
-      <td><span>DELETE </span><span>/api/containers/:container/files/:file</span></td>
+      <td>DELETE /api/containers/:container/files/:file</td>
     </tr>
     <tr>
       <td>Upload one or more files into the specified container. The request body must use multipart/form-data which the file input type for HTML uses.</td>
       <td>upload(req, res, cb)</td>
-      <td><span>POST<br></span><span>/api/containers/:container/upload</span></td>
+      <td>POST<br>/api/containers/:container/upload</td>
     </tr>
     <tr>
       <td>Download a file within specified container.</td>
       <td>download(container, file, res, cb)</td>
-      <td><span>GET<br></span><span>/api/containers/:container/download/:file</span></td>
+      <td>GET<br>/api/containers/:container/download/:file</td>
     </tr>
     <tr>
       <td>Get a stream for uploading.</td>
-      <td><span>uploadStream(container, file, options, cb)</span></td>
+      <td>uploadStream(container, file, options, cb)</td>
       <td>&nbsp;</td>
     </tr>
     <tr>
       <td>Get a stream for downloading.</td>
-      <td><span>downloadStream(container, file, options, cb)</span></td>
+      <td>downloadStream(container, file, options, cb)</td>
       <td>&nbsp;</td>
     </tr>
   </tbody>

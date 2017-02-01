@@ -45,8 +45,8 @@ the following are mixed in when a model is connected to a data source:
 
 Mixin scripts are JavaScript files in one of the following folders, depending on the scope of the mixin:
 
-* `common/mixins/_mixinName_.js`, for example `common/mixins/timeStamp.js`.
-* `server/mixins/_mixinName_.js`, for example `server/mixins/timeStamp.js`.
+* `common/mixins/<mixin-Name>.js`, for example `common/mixins/timeStamp.js`.
+* `server/mixins/<mixin-Name>.js`, for example `server/mixins/timeStamp.js`.
 
 If the mixin applies to both client and server models, put it in the `common/mixins` directory.
 If it applies only to server models, put it in the `server/mixins` directory.

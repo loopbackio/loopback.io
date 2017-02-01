@@ -18,7 +18,7 @@ _Operation hooks_ are not tied to a particular method, but rather are triggered
 These are all methods of [PersistedModel](https://apidocs.strongloop.com/loopback/#persistedmodel) that application models inherit.
 Using operation hooks enables you to intercept actions that modify data independent of the specific method that invokes them (for example, `create`, `save`, or `updateOrCreate`).
 
-The API is simple: the method `Model.observe(_name_, _observer_)`, where _`name`_ is the string name of the operation hook, for example "before save",
+The API is simple: the method <code>Model.observe(<i>name</i>, <i>observer</i>)</code>, where _`name`_ is the string name of the operation hook, for example "before save",
 and _`observer`_ is `function observer(context, callback)`. Child models inherit observers, and you can register multiple observers for a hook.
 
  The following table summarizes the operation hooks invoked by PersistedModel create, retrieve, update, and delete methods.
@@ -228,11 +228,11 @@ MyModel.updateOrCreate({
 
 ##### Shared hookState property
 
-The `ctx.hookState` property is preserved across all hooks invoked for a single operation.
+Use the `ctx.hookState` property to share data between hooks (for example, "before save" and "after save").  The value of the `ctx.hookState` property is preserved across all hooks invoked for a single operation.
 
-For example, "access", "before save" and "after save" invoked for `Model.create()` have the same object passed in `ctx.hookState`.
+For example, "access", "before save" and "after save" hooks that are invoked for `MyModel.create()` have the same object passed in `ctx.hookState`.
 
-This way the hooks can pass state date between "before" and "after" hook.
+In contrast, `ctx.options` is set using options argument provided to PersistedModel methods like `MyModel.find()` or `MyModel.create()`. If an options argument was provided, then `ctx.options` is set to an empty object, so that hooks don't have to check whether `ctx.options` is set.
 
 #### Hook and operation specific properties
 
@@ -291,105 +291,104 @@ Operations affecting a single instance only  (all create, retrieve, update,
 and delete operations except `PersistedModel.deleteAll` and `PersistedModel.updateAll`) usually provide the affected instance in the context object.
 However, depending on the operation, this instance is provided either as modifiable `ctx.instance` or as read-only `ctx.currentInstance:`
 
-<table>
-  <tbody>
+<table width="800">
+  <thead>
     <tr>
-      <th>&nbsp;</th>
-      <th>before save</th>
-      <th>persist</th>
-      <th>after save</th>
+      <th width="220">Method</th>
+      <th width="200">before save</th>
+      <th width="200">persist</th>
+      <th width="160">after save</th>
       <th>before delete</th>
       <th>after delete</th>
     </tr>
+  </thead>
+  <tbody style="font-size: 85%;">    
     <tr>
       <td><code>create</code></td>
       <td><code>ctx.instance</code></td>
-      <td><code>ctx.currentInstance</code></td>
+      <td><code>ctx<br/>.currentInstance</code></td>
       <td><code>ctx.instance</code></td>
       <td style="text-align: center;">---</td>
-      <td style="text-align: center;">---</span></td>
+      <td style="text-align: center;">---</td>
     </tr>
     <tr>
       <td><code>findOrCreate</code></td>
       <td><code>ctx.instance</code></td>
-      <td><code>ctx.currentInstance</code></td>
+      <td><code>ctx<br/>.currentInstance</code></td>
       <td><code>ctx.instance</code></td>
       <td style="text-align: center;">---</td>
       <td style="text-align: center;">---</td>
     </tr>
     <tr>
       <td><code>updateOrCreate</code></td>
-      <td><em>n/a*</em></td>
-      <td><code>ctx.currentInstance</code></td>
+      <td>n/a*</td>
+      <td><code>ctx<br/>.currentInstance</code></td>
       <td><code>ctx.instance</code></td>
       <td style="text-align: center;">---</td>
       <td style="text-align: center;">---</td>
     </tr>
     <tr>
       <td><code>upsertWithWhere</code></td>
-      <td><em>n/a*</em></td>
-      <td><code>ctx.currentInstance</code></td>
+      <td>n/a*</td>
+      <td><code>ctx<br/>.currentInstance</code></td>
       <td><code>ctx.instance</code></td>
       <td style="text-align: center;">---</td>
       <td style="text-align: center;">---</td>
     </tr>
     <tr>
       <td><code>updateAll</code></td>
-      <td><em>n/a</em></td>
-      <td><em>n/a</em></td>
-      <td><em>n/a</em></td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>n/a</td>
       <td style="text-align: center;">---</td>
       <td style="text-align: center;">---</td>
     </tr>
     <tr>
       <td><code>prototype.save</code></td>
       <td><code>ctx.instance</code></td>
-      <td><code>ctx.currentInstance</code></td>
+      <td><code>ctx<br/>.currentInstance</code></td>
       <td><code>ctx.instance</code></td>
       <td style="text-align: center;">---</td>
       <td style="text-align: center;">---</td>
     </tr>
     <tr>
-      <td><code>prototype.updateAttributes</code></td>
-      <td><code><span>ctx.currentInstance</span></code></td>
-      <td><code><span>ctx.currentInstance</span></code></td>
-      <td><code><span>ctx.instance</span></code></td>
+      <td><code>prototype<br/>.updateAttributes</code></td>
+      <td><code>ctx<br/>.currentInstance</code></td>
+      <td><code>ctx<br/>.currentInstance</code></td>
+      <td><code>ctx.instance</code></td>
       <td style="text-align: center;">---</td>
       <td style="text-align: center;">---</td>
     </tr>
     <tr>
-      <td>
-        <p><code>prototype.delete</code></p>
-      </td>
+      <td><code>prototype.delete</code></td>
       <td style="text-align: center;">---</td>
       <td style="text-align: center;">---</td>
       <td style="text-align: center;">---</td>
-      <td><code><span>ctx.where.id</span></code></td>
-      <td><code><span>ctx.where.id</span></code></td>
+      <td><code>ctx.where.id</code></td>
+      <td><code>ctx.where.id</code></td>
     </tr>
     <tr>
       <td><code>deleteAll</code></td>
       <td style="text-align: center;">---</td>
       <td style="text-align: center;">---</td>
       <td style="text-align: center;">---</td>
-      <td><em>n/a</em></td>
-      <td><em>n/a</em></td>
+      <td>n/a</td>
+      <td>n/a</td>
     </tr>
     <tr>
-      <td><span>replaceOrCreate</span></td>
+      <td><code>replaceOrCreate</code></td>
       <td><code>ctx.instance</code></td>
-      <td><code>ctx.currentInstance</code></td>
+      <td><code>ctx<br/>.currentInstance</code></td>
       <td><code>ctx.instance</code></td>
       <td>---</td>
       <td>---</td>
     </tr>
     <tr>
-      <td>
-        <p><span>prototype.replaceAttributes/</span></p>
-        <p><span>replaceById</span></p>
+      <td><code>prototype<br/>.replaceAttributes<br/>
+replaceById</code>
       </td>
       <td><code>ctx.instance</code></td>
-      <td><code>ctx.currentInstance</code></td>
+      <td><code>ctx<br/>.currentInstance</code></td>
       <td><code>ctx.instance</code></td>
       <td>---</td>
       <td>---</td>
@@ -397,8 +396,7 @@ However, depending on the operation, this instance is provided either as modifia
   </tbody>
 </table>
 
-(&#42;) The operation `updateOrCreate` and `upsertWithWhere`do not provide any instance in the "before save" hook.
-Because we cannot tell in advance whether the operation will result in UPDATE or CREATE, we cannot tell whether there is any existing "currentInstance" affected by the operation.
+(&#42;) The operations `updateOrCreate` and `upsertWithWhere` do not provide an instance in the "before save" hook. Since it's impossible tell in advance whether the operation will result in UPDATE or CREATE, there is no way to know whether an existing "currentInstance" is affected by the operation.
 
 See the following sections for more details.
 
@@ -470,7 +468,7 @@ The following table lists hooks that PersistedModel methods invoke.
     </tr>
     <tr>
       <td>prototype.<br/>replaceAttributes
-        <br/>replaceById<
+        <br/>replaceById
       </td>
       <td>before save, after save, loaded, persist</td>
     </tr>
@@ -877,9 +875,9 @@ CoffeeShop.afterInitialize = function() {
 Most operations require initializing a model before actually performing an action, but there are a few cases where the initialize event is not triggered,
 such as HTTP requests to the `exists`, `count`, or bulk update REST endpoints.
 
-## Migration guide
+## Migrating from model hooks
 
-The following table shows which new hook to use for each of the old [model hooks](/doc/en/lb2/Model-hooks.html):
+The following table shows which new hook to use for each of the deprecated [model hooks](/doc/en/lb2/Model-hooks.html):
 
 <table>
   <thead>

@@ -30,12 +30,6 @@ function(app, options)
 Compare that with Express middleware, which exports `function(_options_)` 
 that is supposed to return `function(req, res, next)` or `function(err, req, res, next)`.
 
-<div class="sl-hidden">
-    <strong>REVIEW COMMENT from Rand</strong>
-    <br>Take a look at the changes made to the module:&nbsp;
-    <a href="https://github.com/strongloop/loopback-component-explorer/pull/104" class="external-link" rel="nofollow">https://github.com/strongloop/loopback-component-explorer/pull/104</a>.
-</div>
-
 ## Pre-defined LoopBack components
 
 LoopBack provides several pre-defined components, as described in the table below.
@@ -43,16 +37,14 @@ LoopBack provides several pre-defined components, as described in the table belo
 The sections below describe the configuration settings for each component in [`component-config.json`](component-config.json).
 
 <table>
-  <tbody>
+  <thead>
     <tr>
-      <th>
-        <p>Component</p>
-      </th>
+      <th>Component</th>
       <th>Description</th>
-      <th>
-        <p>Module</p>
-      </th>
+      <th>Module</th>
     </tr>
+  </thead>
+  <tbody>    
     <tr>
       <td>API Explorer</td>
       <td>Enables the Swagger UI for the API. See <a href="Use-API-Explorer.html">Use API Explorer</a> for an example.</td>
