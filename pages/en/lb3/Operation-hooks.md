@@ -232,7 +232,7 @@ Use the `ctx.hookState` property to share data between hooks (for example, "befo
 
 For example, "access", "before save" and "after save" hooks that are invoked for `MyModel.create()` have the same object passed in `ctx.hookState`.
 
-In contrast, `ctx.options` is set using options argument provided to PersistedModel methods like `MyModel.find()` or `MyModel.create()`. If an options argument was provided, then `ctx.options` is set to an empty object, so that hooks don't have to check whether `ctx.options` is set.
+In contrast, `ctx.options` is set using options argument provided to PersistedModel methods like `MyModel.find()` or `MyModel.create()`. If no options argument was provided, then `ctx.options` is set to an empty object, so that hooks don't have to check whether `ctx.options` is set.
 
 #### Hook and operation specific properties
 
