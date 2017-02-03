@@ -26,6 +26,7 @@ strongloop loopback-connector-postgresql master
 strongloop loopback-connector-remote master
 strongloop loopback-connector-rest master
 strongloop loopback-connector-soap master
+strongloop strong-soap master
 strongloop loopback-android-getting-started master
 strongloop loopback-example-angular master
 strongloop loopback-example-app-logic master

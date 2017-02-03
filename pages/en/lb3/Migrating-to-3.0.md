@@ -2,12 +2,20 @@
 title: "Migrating apps to LoopBack 3.0"
 lang: en
 layout: page
+toc: false
 keywords: LoopBack
 tags: [getting_started]
 sidebar: lb3_sidebar
 permalink: /doc/en/lb3/Migrating-to-3.0.html
 summary: How to migrate applications from LoopBack 2.x to 3.x.
 ---
+{% include see-also.html content="
+- [3.0 Release notes](3.0-Release-Notes.html)
+- [Change log](http://strongloop.github.io/changelog/) (latest updates)
+" %}
+
+{% include toc.html %}
+
 ## Update LoopBack version
 
 To move your app from LoopBack 2.x to 3.x, edit the `package.json` file, then
