@@ -11,4 +11,4 @@ summary: The Cloudant connector enables LoopBack applications to connect to Clou
 ---
 {% include see-also.html content="
 - [Getting Started with LoopBack and IBM Cloudant](https://developer.ibm.com/bluemix/2015/09/10/getting-started-node-js-loopback-framework-ibm-cloudant/)
-" %}
+" %} 
