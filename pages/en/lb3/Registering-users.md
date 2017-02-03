@@ -80,7 +80,7 @@ For example:
 Over REST, use the `GET /users/confirm` endpoint to verify a user's email address.
 For details, see [User REST API](User-REST-API.html#confirm-email-address).
 
-This example creates a[remote hook](Remote-hooks.html) on the User model executed after the `create()` method is called.
+This example creates a [remote hook](Remote-hooks.html) on the User model executed after the `create()` method is called.
 
 {% include important.html content="You must setup a `User` model as well as a `Mail` datasource before using the example below.
 " %}
