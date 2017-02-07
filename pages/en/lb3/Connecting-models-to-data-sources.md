@@ -141,7 +141,7 @@ The following table lists commercially-supported LoopBack connectors. For more i
     </tr>
     <tr>
       <td><a href="http://www.ibm.com/analytics/us/en/technology/db2/" class="external-link">IBM DB2</a></td>
-      <td><a href="https://www.npmjs.com/package/loopback-connector-db2z" class="external-link">loopback-connector-db2</a></td>
+      <td><a href="https://www.npmjs.com/package/loopback-connector-db2" class="external-link">loopback-connector-db2</a></td>
       <td><code>loopback-connector-db2</code></td>
     </tr>
     <tr>
