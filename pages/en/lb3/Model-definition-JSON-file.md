@@ -109,7 +109,7 @@ Properties are required unless otherwise designated.
     <tr>
       <td>forceId</td>
       <td>Boolean</td>
-      <td><code>false</code></td>      
+      <td><code>true</code></td>      
       <td>
         If true, prevents clients from setting the auto-generated ID value manually.
       </td>
