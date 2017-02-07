@@ -36,7 +36,7 @@ For more information, see [config.json (Remoting properties)](config.json.html#r
 
 Create a new instance of the model and persist it to the data source.
 
-`POST /_modelName_`
+<pre class="query_syntax">POST /<i>modelName</i></pre>
 
 ### Arguments
 
@@ -71,7 +71,7 @@ It won't remove  existing ones unless the value is set to null.
 Performs [upsert](http://apidocs.strongloop.com/loopback/#persistedmodelupsert)to detect if there is a matching instance.
 If not, then inserts (creates) a new instance. If there is a matching instance, updates it.
 
-`PUT /_modelName_`
+<pre class="query_syntax">PUT /<i>modelName</i></pre>
 
 ### Arguments
 
@@ -122,11 +122,11 @@ If not, then inserts (creates) a new instance. If there is a matching instance, 
 
 Check whether a model instance exists by ID in the data source.
 
-`GET /_modelName_/_modelID_/exists`
+<pre class="query_syntax">GET /<i>modelName</i>/<i>modelID</i>/exists</pre>
 
 ### Arguments
 
-* _modelID_ - model instance ID
+* <i>modelID</i> - model instance ID
 
 ### Example
 
@@ -143,16 +143,16 @@ Check whether a model instance exists by ID in the data source.
 
 Find a model instance by ID from the data source.
 
-`GET /modelName/modelID?filter=[filterType1]=<val1>&filter[filterType2]=<val2>...`
+<pre class="query_syntax">GET /modelName/modelID?filter=[<i>filterType1</i>]=<i>val1</i>&filter[<i>filterType2</i>]=<i>val2</i>...</pre>
 
 See also [Accessing related models](Accessing-related-models.html) for an example of fetching data from related models.
 
 ### Arguments
 
 * **modelID** - Model instance ID
-* _filterType1, _filterType2_, and so on, are the filter types. This operation supports only include and fields filters.
+* <i>filterType1</i>, <i>filterType2</i>, and so on, are the filter types. This operation supports only include and fields filters.
   See [Include filter](Include-filter.html) and [Fields filter](Fields-filter.html) for more information.
-* _val1_, _val2_ are the corresponding values.
+* <i>val1</i>, <i>val2</i> are the corresponding values.
 
 ### Example
 
@@ -176,14 +176,14 @@ See also [Accessing related models](Accessing-related-models.html) for an examp
 
 Find all instances of the model matched by filter from the data source.
 
-`GET /modelName?filter=[filterType1]=<val1>&filter[filterType2]=<val2>...`
+<pre class="query_syntax">GET /modelName?filter=[<i>filterType1</i>]=<i>val1</i>&filter[<i>filterType2</i>]=<i>val2</i>...</pre>
 
 ### Arguments
 
 Pass the arguments as the value of the `filter` HTTP query parameters, where:
 
-* _filterType1_, _filterType2_, and so on, are the filter types.
-* _val1_, _val2_ are the corresponding values.
+* <i>filterType1</i>, <i>filterType2</i>, and so on, are the filter types.
+* <i>val1</i>, <i>val2</i> are the corresponding values.
 
 See [Querying data](Querying-data.html) for an explanation of filter syntax.
 
@@ -223,13 +223,16 @@ Request with a filter to limit response to two records:
 
 Find first instance of the model matched by filter from the data source.
 
-`GET /modelName/findOne?filter=[filterType1]=<val1>&filter[filterType2]=<val2>...`
+<pre class="query_syntax">GET /modelName/findOne?filter=[<i>filterType1</i>]=<i>val1</i>&filter[<i>filterType2</i>]=<i>val2</i>...</pre>
 
 ### Arguments
 
 Query parameters:
 
-* **filter** - Filter that defines where, order, fields, skip, and limit. It's same as find's filter argument. See [Querying data](Querying-data.html) details.
+* <i>filterType1</i>, <i>filterType2</i>, and so on, are the filter types.
+* <i>val1</i>, <i>val2</i> are the corresponding values.
+
+See [Querying data](Querying-data.html) for an explanation of filter syntax.
 
 ### Example
 
@@ -253,7 +256,7 @@ Query parameters:
 
 Delete a model instance by ID from the data source
 
-`DELETE /modelName/modelID`
+<pre class="query_syntax">DELETE /modelName/modelID</pre>
 
 ### Arguments
 
@@ -272,11 +275,16 @@ Delete a model instance by ID from the data source
 
 Delete model instanced from the data source that match the specified where clause.
 
-`DELETE /modelName?filter=[filterType1]=<val1>&filter[filterType2]=<val2>...`
+<pre class="query_syntax">DELETE /modelName?filter=[<i>filterType1</i>]=<i>val1</i>&filter[<i>filterType2</i>]=<i>val2</i>...</pre>
 
 ### Arguments
 
-* **filter** - Filter that defines where, order, fields, skip, and limit. It's same as find's filter argument. See [Querying data](Querying-data.html) details.
+Query parameters:
+
+* <i>filterType1</i>, <i>filterType2</i>, and so on, are the filter types.
+* <i>val1</i>, <i>val2</i> are the corresponding values.
+
+See [Querying data](Querying-data.html) for an explanation of filter syntax.
 
 ### Example
 
@@ -288,7 +296,7 @@ Delete model instanced from the data source that match the specified where claus
 
 Count instances of the model  from the data source matched by where clause.
 
-`GET /modelName/count?where[property]=value`
+<pre class="query_syntax">GET /modelName/count?where[<i>property</i>]=<i>value</i></pre>
 
 ### Arguments
 
@@ -316,12 +324,13 @@ Count with a "where" filter
 
 Update attributes of a model instance and persist into the data source.
 
-`PUT /model/modelID`
+<pre class="query_syntax">PUT /<i>model</i>/</i>modelID</i></pre>
 
 ### Arguments
 
 * data - An object containing property name/value pairs
-* _modelID_ - The model instance ID
+* <i>model</i> - The model name
+* <i>modelID</i> - The model instance ID
 
 ### Example
 
@@ -351,12 +360,12 @@ Update attributes of a model instance and persist into the data source.
 
 Update attributes of matching model instances and persist into the data source.
 
-`POST /modelName/update?where[property]=value`
+<pre class="query_syntax">POST /modelName/update?where[property]=value...</pre>
 
 ### Arguments
 
 * data - An object containing property name/value pairs.
-* _where_ - The where object to select matching instances. See [Where filter](Where-filter.html) for more information.
+* <i>where</i> - The where object to select matching instances. See [Where filter](Where-filter.html) for more information.
 
 ### Example
 
@@ -374,7 +383,7 @@ Update attributes of matching model instances and persist into the data source.
 
 Create a new change stream.
 
-`POST /modelName/change-stream?format=event-stream`
+<pre class="query_syntax">POST /modelName/change-stream?format=event-stream</pre>
 
 ### Arguments
 
@@ -394,4 +403,4 @@ Create a new change stream.
 
 Fetch a change stream.
 
-`GET /modelName/change-stream?format=event-stream`
+<pre class="query_syntax">GET /<i>mode</i>/change-stream?format=event-stream</pre>
