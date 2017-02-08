@@ -70,7 +70,7 @@ module.exports = function(MyModel) {
   MyModel.log = function(messageId, options) {
     const Message = this.app.models.Message;
     // IMPORTANT: forward the options arg
-    return Message.findById(messageId, options)
+    return Message.findById(messageId, null, options)
       .then(msg => {
         const token = options && options.accessToken;
         const userId = token && token.userId;
