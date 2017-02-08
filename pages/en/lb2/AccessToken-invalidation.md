@@ -54,6 +54,7 @@ Example of a `Customer` model extending the built-in `User` model:
   "base": "User",
   "idInjection": true,
   "options": {
+    "injectOptionsFromRemoteContext": true,
     "validateUpsert": true
   },
   "properties": {},
