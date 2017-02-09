@@ -101,7 +101,8 @@ lb relation
   ...
 ```
 
-You will execute two more lb relations for the belongsTo relation
+
+Then, in the Physician/Patient/Appointment example, you would run the lb relation command twice to create the belongsTo relations:
 
 ```
 lb relation
