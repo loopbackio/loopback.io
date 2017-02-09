@@ -34,6 +34,17 @@ To create a hasManyThrough relation, respond with **Yes** to the prompt for a "t
 ```
 
 For example:
+```
+lb relation
+[?] Select the model to create the relationship from: Physician
+[?] Relation type: has many
+[?] Choose a model to create a relationship with: Patient
+[?] Enter the property name for the relation: patients
+[?] Optionally enter a custom foreign key: physicianId
+[?] Require a through model? Yes
+[?] Choose a through model: Appointment
+```
+
 
 {% include code-caption.html content="common/models/physician.json" %}
 ```javascript
@@ -56,6 +67,19 @@ For example:
   ...
 ```
 
+For example:
+```
+lb relation
+[?] Select the model to create the relationship from: Patient
+[?] Relation type: has many
+[?] Choose a model to create a relationship with: Physician
+[?] Enter the property name for the relation: physicians
+[?] Optionally enter a custom foreign key: patientId
+[?] Require a through model? Yes
+[?] Choose a through model: Appointment
+```
+
+
 {% include code-caption.html content="common/models/patient.json" %}
 ```javascript
 {  
@@ -68,7 +92,7 @@ For example:
   },
   "validations": [],
   "relations": {
-    "physicans": {
+    "physicians": {
       "type": "hasMany",
       "model": "Physician",
       "foreignKey": "patientId",
@@ -76,6 +100,26 @@ For example:
     },
   ...
 ```
+
+
+Then, in the Physician/Patient/Appointment example, you would run the lb relation command twice to create the belongsTo relations:
+
+```
+lb relation
+[?] Select the model to create the relationship from: Appointment
+[?] Relation type: belongs to
+[?] Choose a model to create a relationship with: Physician
+[?] Optionally enter a custom foreign key: physicianId
+```
+
+```
+lb relation
+[?] Select the model to create the relationship from: Appointment
+[?] Relation type: belongs to
+[?] Choose a model to create a relationship with: Patient
+[?] Optionally enter a custom foreign key: patientId
+```
+
 
 {% include code-caption.html content="common/models/appointment.json" %}
 ```javascript
