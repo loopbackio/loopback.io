@@ -22,6 +22,21 @@ can link to other documentation that describes how it is used.
 
 Normally, the README should not be more than a few screens long.  If you need to provide additional information, create a `docs` directory containing additional markdown files with further details.
 
+### Adding a table of contents
+
+For READMEs longer than a few screens, it's often useful to add a table of contents.
+One easy way to do this is with [doctoc](https://www.npmjs.com/package/doctoc), a simple command-line tool that adds a linked TOC.  
+
+If your README has its own table of contents, then you should suppress the automatically-generated page TOC when the README is incorporated into the documentation (as explained below).  To do this, set `toc: false` in the page front-matter, for example:
+
+```
+title: "SOAP client and server (strong-soap)"
+lang: en
+layout: readme
+toc: false
+...
+```
+
 ## Using READMEs in documentation
 
 As explained in [Including READMEs](Including-READMEs.html), the LoopBack documentation
@@ -55,6 +70,7 @@ The top-level of the README should be the name of the repository; for example:
 ```
 
 Remaining headers should be second-level (`##`) and so on.
+
 
 The README should have the following sections:
 
