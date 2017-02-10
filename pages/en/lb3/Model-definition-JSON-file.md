@@ -788,15 +788,13 @@ The value of the `acls` key is an array of objects that describes the access 
             <ul>
               <li><code>$everyone</code>&nbsp;- Everyone</li>
               <li><code>$owner</code>&nbsp;- Owner of the object</li>
-              <li><code>$related</code>&nbsp;- Any user with a relationship to the object</li>
+              <li><code>$related</code>&nbsp;- Any user with a relationship to the object (not implemented yet!)</li>
               <li><code>$authenticated</code>&nbsp;- Authenticated user</li>
               <li><code>$unauthenticated</code>&nbsp;- Unauthenticated user</li>
             </ul>
           </li>
           <li>A static role name</li>
         </ul>
-        NOTE:
-            <code>$related principalId</code> is not yet implemented.
       </td>
     </tr>
     <tr>
@@ -806,9 +804,9 @@ The value of the `acls` key is an array of objects that describes the access 
         Type of the principal. Required.
         One of:
         <ul>
-          <li>Application</li>
-          <li>User</li>
-          <li>Role</li>
+          <li>APPLICATION</li>
+          <li>USER</li>
+          <li>ROLE</li>
         </ul>
       </td>
     </tr>
@@ -874,10 +872,10 @@ For example:
   "name": "Product",
   "properties": {
     ...
-  }
+  },
   "scope": {
     "order": "name",
-    "limit": 100
+    "limit": 100,
     "where": {
       "deleted": false
     }
