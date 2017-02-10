@@ -44,9 +44,10 @@ git checkout mysql
 
 Before starting this tutorial, make sure you have the following installed:
 
-- Node
-- NPM
-- [StrongLoop Controller](https://github.com/strongloop/strongloop)
+- Node.js
+- LoopBack CLI tools; see [lb](http://loopback.io/doc/en/lb3/Installation.html)
+
+
 
 ## Running the example
 
@@ -67,7 +68,7 @@ npm start
 - Dir to contain the project: `loopback-example-database`
 
 ```
-slc loopback loopback-example-database
+lb app loopback-example-database
 ... # follow the prompts
 ```
 
@@ -86,7 +87,7 @@ npm install --save loopback-connector-mssql
 - Select the connector for `accountDS`: `Microsoft SQL`
 
 ```
-slc loopback:datasource accountDS
+lb datasource accountDS
 ... # follow the prompts
 ```
 
@@ -136,7 +137,7 @@ server. Edit `server/datasources.json` to set the MSSQL configs:
     - Not required
 
 ```
-slc loopback:model Account
+lb model Account
 ... # follow the prompts
 ```
 

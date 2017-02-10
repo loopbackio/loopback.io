@@ -45,8 +45,7 @@ git checkout postgresql
 Before starting this tutorial, make sure you have the following installed:
 
 - Node
-- NPM
-- [StrongLoop Controller](https://github.com/strongloop/strongloop)
+- LoopBack CLI tools; see [lb](http://loopback.io/doc/en/lb3/Installation.html)
 
 ## Running the example
 
@@ -67,7 +66,7 @@ npm start
 - Dir to contain the project: `loopback-example-database`
 
 ```
-slc loopback loopback-example-database
+lb app loopback-example-database
 ... # follow the prompts
 ```
 
@@ -86,7 +85,7 @@ npm install --save loopback-connector-postgresql
 - Select the connector for `accountDS`: `PostgreSQL`
 
 ```
-slc loopback:datasource accountDS
+lb datasource accountDS
 ... # follow the prompts
 ```
 
@@ -137,7 +136,7 @@ PostgreSQL server. Edit `server/datasources.json` to set the PostgreSQL configs:
     - Not required
 
 ```
-slc loopback:model Account
+lb model Account
 ... # follow the prompts
 ```
 

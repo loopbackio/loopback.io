@@ -21,7 +21,7 @@ The `--save` option adds the dependency to the application's `package.json` file
 
 ## Configuration
 
-Use the [data source generator](http://loopback.io/doc/en/lb2/Data-source-generator.html)  to add the DB2 data source to your application.
+Use the [data source generator](http://loopback.io/doc/en/lb3/Data-source-generator.html)  to add the DB2 data source to your application.
 The entry in the application's `server/datasources.json` will look something like this:
 
 ```js

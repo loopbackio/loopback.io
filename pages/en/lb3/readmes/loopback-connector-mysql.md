@@ -27,7 +27,6 @@ required to connect to a MySQL database.  It will also run the `npm install` com
 
 The entry in the application's `/server/datasources.json` will look like this:
 
-{% include code-caption.html content="/server/datasources.json" %}
 ```javascript
 "mydb": {
   "name": "mydb",

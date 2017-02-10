@@ -67,7 +67,7 @@ npm start
 - Dir to contain the project: `loopback-example-database`
 
 ```
-slc loopback loopback-example-database
+lb app loopback-example-database
 ... # follow the prompts
 ```
 
@@ -86,7 +86,7 @@ npm install --save loopback-connector-mongodb
 - Select the connector for `accountDS`: `MongoDB`
 
 ```
-slc loopback:datasource accountDS
+lb datasource accountDS
 ... # follow the prompts
 ```
 
@@ -117,6 +117,11 @@ server. Edit `server/datasources.json` to set the MongoDB configs:
 > above to match your own.
 
 ### 5. Create a new model
+
+```
+lb model
+... # follow the prompts
+```
 
 #### Model Info
 

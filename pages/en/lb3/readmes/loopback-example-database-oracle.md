@@ -45,8 +45,7 @@ git checkout mysql
 Before starting this tutorial, make sure you have the following installed:
 
 - Node
-- NPM
-- [StrongLoop Controller](https://github.com/strongloop/strongloop)
+- LoopBack CLI tools; see [lb](http://loopback.io/doc/en/lb3/Installation.html)
 
 ## Running the example
 
@@ -67,7 +66,7 @@ npm start
 - Dir to contain the project: `loopback-example-database`
 
 ```
-slc loopback loopback-example-database
+lb app loopback-example-database
 ... # follow the prompts
 ```
 
@@ -116,7 +115,7 @@ source $HOME/strong-oracle.rc
 - Select the connector for `accountDS`: `Oracle`
 
 ```
-slc loopback:datasource accountDS
+lb datasource accountDS
 ... # follow the prompts
 ```
 
@@ -167,7 +166,7 @@ Oracle server. Edit `server/datasources.json` to set the Oracle configs:
     - Not required
 
 ```
-slc loopback:model Account
+lb model Account
 ... # follow the prompts
 ```
 
