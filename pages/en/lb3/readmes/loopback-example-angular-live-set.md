@@ -28,7 +28,7 @@ Color.find().$promise.then(function(results) {
 
 The drawing example creates a `LiveSet` in a similar way. The rest of the controller is fairly simple and similar to the snippet above.
 
-The draw method uses a service provided by the [loopback-angular-sdk](http://loopback.io/doc/en/lb2/AngularJS-JavaScript-SDK.html) to create additional points in the drawing. This data is streamed to other browser clients.
+The draw method uses a service provided by the [loopback-angular-sdk](http://loopback.io/doc/en/lb3/AngularJS-JavaScript-SDK.html) to create additional points in the drawing. This data is streamed to other browser clients.
 
 ```js
 $scope.draw = function(e) {
@@ -82,14 +82,14 @@ build the application.
 
 **Step 2: The API**
 
-This example was created first by running `slc loopback`. If you are unfamiliar
+This example was created first by running `lb app`. If you are unfamiliar
 with creating LoopBack apps read more about it here.
 
 Once you have the LoopBack API scaffolded, you can add a model. We'll start with
 a simple `Color` model just to get some data on the page.
 
 ```
-slc loopback:model
+lb model
 ```
 
 Create the property `val`. Select `string` for the type. Add another property

@@ -23,10 +23,8 @@ application's ACL (access control list) entries.
 
 ### Tutorials
 
-- [Getting started with LoopBack](http://docs.strongloop.com/display/LB/Getting+started+with+LoopBack)
-- [Tutorial series - step 1](https://github.com/strongloop/loopback-example#step-one---the-basics)
-- [Tutorial series - step 2](https://github.com/strongloop/loopback-example#step-two---relations-and-filter)
-- [Tutorial series - step 3](https://github.com/strongloop/loopback-example#step-three---adding-application-logic)
+- [Getting started with LoopBack](http://loopback.io/doc/en/lb3/Getting-started-with-LoopBack.html)
+- [Other tutorials and examples](http://loopback.io/doc/en/lb3/Tutorials-and-examples.html)
 
 ### Knowledge
 
@@ -46,7 +44,7 @@ application's ACL (access control list) entries.
 - Directory to contain the project: `loopback-example-access-control`
 
 ```
-$ slc loopback loopback-example-access-control
+$ lb app loopback-example-access-control
 ... # follow the prompts
 $ cd loopback-example-access-control
 ```
@@ -90,7 +88,7 @@ $ cd loopback-example-access-control
 > the built-in `User` model by specifying it as the base class.
 
 ```
-$ slc loopback:model user
+$ lb model user
 ... # follow the prompts, repeat for `team` and `project`
 ```
 
@@ -232,7 +230,7 @@ Create [`role-resolver.js`](https://github.com/strongloop/loopback-example-acces
   - Select the permission to apply: `Explicitly grant access`
 
 ```
-$ slc loopback:acl
+$ lb acl
 # follow the prompts, repeat for each ACL listed above
 ```
 

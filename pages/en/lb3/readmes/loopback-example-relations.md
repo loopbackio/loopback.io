@@ -13,6 +13,10 @@ query and filter sample data via REST.
 
 ## Prerequisites
 
+Before starting this tutorial, you must install:
+- Node.js
+- LoopBack CLI tools; see [lb](http://loopback.io/doc/en/lb3/Installation.html)
+
 ### Tutorials
 
 - [Getting started with LoopBack](https://github.com/strongloop/loopback-getting-started)
@@ -35,7 +39,7 @@ query and filter sample data via REST.
 - Directory to contain the project: `loopback-example-relations`
 
 ```
-$ slc loopback loopback-example-relations
+$ lb app loopback-example-relations
 ... # follow the prompts
 $ cd loopback-example-relations
 ```
@@ -47,7 +51,7 @@ $ cd loopback-example-relations
   - Name: `transient`
 
 ```
-$ slc loopback:datasource
+$ lb datasource
 ... # follow the prompts, choose `other` to define custom connector
 ```
 
@@ -166,7 +170,7 @@ $ slc loopback:datasource
       - Not Required
 
 ```
-$ slc loopback:model Customer
+$ lb model Customer
 ... # follow the prompts, repeat for other models
 ```
 > Upper-case in model's name would be interpreted as '-' in model's file name, eg: EmailAddress has `email-address.json`
@@ -284,7 +288,7 @@ Create six boot scripts:
       - Custom foreign key: *Leave blank*
 
 ```
-$ slc loopback:relation
+$ lb relation
 ? Select the model to create the relationship from:
 ...
 > Customer

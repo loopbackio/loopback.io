@@ -55,7 +55,7 @@ app.use('/explorer', explorer(app, options);
 app.use('/explorer', explorer.routes(app, options));
 ```
 
-In applications scaffolded by `slc loopback`, the idiomatic way is to register
+In applications scaffolded by `lb app`, the idiomatic way is to register
 loopback-component-explorer in `server/component-config.json`:
 
 ```json
@@ -90,7 +90,7 @@ explorer(app, {
 }));
 app.use('/custom-api-root', loopback.rest());
 ```
-In applications scaffolded by `slc loopback`, you can edit the `server/component-config.json`:
+In applications scaffolded by `lb app`, you can edit the `server/component-config.json`:
 
 ```json
 {
