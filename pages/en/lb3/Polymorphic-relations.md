@@ -57,7 +57,7 @@ The usual options apply, for example: `as: 'photos'` to specify a different re
     "pictures": {
       "type": "hasMany",
       "model": "Picture",
-      { "polymorphic": "imageable" }
+      "polymorphic": "imageable"
     }
   }
 ...
