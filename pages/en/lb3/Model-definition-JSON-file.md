@@ -58,8 +58,8 @@ Properties are required unless otherwise designated.
       <th>Default</th>
       <th>Description</th>
     </tr>
-    </thead>
-    <tbody>
+  </thead>
+  <tbody>
     <tr>
       <td>name</td>
       <td>String</td>
@@ -279,13 +279,15 @@ For example:
 ```
 
 <table>
-  <tbody>
+  <thead>
     <tr>
-      <th>Key</th>
+      <th width="100">Key</th>
       <th>Required?</th>
       <th>Type</th>
       <th>Description</th>
     </tr>
+  </thead>
+  <tbody>    
     <tr>
       <td>default</td>
       <td>No</td>
@@ -319,8 +321,11 @@ For example:
       <td>
         Documentation for the property.
         You can split long descriptions into arrays of strings (lines) to keep line lengths manageable. For example:
-        <pre>[<br>  "Lorem ipsum dolor sit amet, consectetur adipiscing elit",<br>
-      "sed do eiusmod tempor incididunt ut labore et dolore",<br> "magna aliqua."<br>]&nbsp;&nbsp;</pre>
+        <pre>[
+"Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+"sed do eiusmod tempor incididunt ut labore et dolore",
+"magna aliqua."
+]</pre>
       </td>
     </tr>
     <tr>
@@ -438,12 +443,14 @@ The composite ID is (productId, locationId) for an inventory model.
 When using a relational database data source, you can specify the following properties that describe the columns in the database.
 
 <table>
-  <tbody>
+  <thead>
     <tr>
       <th>Property</th>
       <th>Type</th>
       <th>Description</th>
     </tr>
+  </thead>    
+  <tbody>    
     <tr>
       <td>columnName</td>
       <td>String</td>
@@ -499,8 +506,6 @@ For example, to map a property to a column in an Oracle database table, use the 
   Removed until <a href="https://github.com/strongloop/loopback-datasource-juggler/issues/128" class="external-link" rel="nofollow">https://github.com/strongloop/loopback-datasource-juggler/issues/128</a> is resolved.
   <p>Conversion and formatting properties</p>
   <p>Format conversions are declared in properties, as described in the following table:</p>
-  <div class="table-wrap">
-    <div class="table-wrap">
       <table>
         <tbody>
           <tr>
@@ -531,8 +536,6 @@ For example, to map a property to a column in an Oracle database table, use the 
         </tbody>
       </table>
     </div>
-  </div>
-</div>
 
 ## Exclude properties from base model
 
@@ -662,12 +665,14 @@ For example:
 ```
 
 <table>
-  <tbody>
+  <thead>
     <tr>
       <th>Key</th>
       <th>Type</th>
       <th>Description</th>
     </tr>
+  </thead>
+    <tbody>
     <tr>
       <td>foreignKey</td>
       <td>String</td>
@@ -679,22 +684,15 @@ For example:
       <td>Foreign key to be used in a <a href="HasMany-relations.html">HasMany relation</a>.</td>
     </tr>
     <tr>
-      <td>
-        <p>model</p>
-      </td>
-      <td>
-        <p>String</p>
-      </td>
-      <td>
-        <p>Name of the related model. Required.</p>
-      </td>
+      <td>model</td>
+      <td>String</td>
+      <td>Name of the related model. Required.</td>
     </tr>
     <tr>
       <td>type</td>
       <td>String</td>
       <td>
-        <p>Relation type. Required. See <a href="Creating-model-relations.html">Creating model relations</a> for more information.</p>
-        <p>One of:</p>
+        Relation type. Required. See <a href="Creating-model-relations.html">Creating model relations</a> for more information.  One of:
         <ul>
           <li>hasMany</li>
           <li>belongsTo</li>
@@ -740,12 +738,14 @@ The value of the `acls` key is an array of objects that describes the access 
 ```
 
 <table>
-  <tbody>
+  <thead>
     <tr>
       <th>Key</th>
       <th>Type</th>
       <th>Description</th>
     </tr>
+  </thead>
+  <tbody>    
     <tr>
       <td>accessType</td>
       <td>String</td>
