@@ -32,7 +32,7 @@ Application information:
 - Directory to contain the project: `loopback-example-app-logic`
 
 ```
-$ slc loopback loopback-example-app-logic
+$ lb app loopback-example-app-logic
 ... # follow the prompts
 $ cd loopback-example-app-logic
 ```
@@ -55,7 +55,7 @@ Model information:
       - Not required
 
 ```
-$ slc loopback:model car
+$ lb model car
 ... # follow the prompts
 ```
 
