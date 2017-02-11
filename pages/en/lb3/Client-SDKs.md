@@ -2,6 +2,7 @@
 title: "Client SDKs"
 lang: en
 layout: page
+toc: false
 keywords: LoopBack
 tags:
 sidebar: lb3_sidebar
@@ -12,11 +13,10 @@ summary:
 LoopBack provides the following software development kits (SDKs):
 
 * [iOS SDK](iOS-SDK.html). See also:
-  * [LoopBack iOS API reference](http://apidocs.strongloop.com/loopback-clients/ios/api/annotated.html).
   * [Push notifications for iOS apps](Push-notifications-for-iOS-apps.html)
   * [Tutorial: push notifications - iOS client](Push-notifications-for-iOS-apps.html)
 * [Android SDK](Android-SDK.html). See also:
-  * [LoopBack Android API reference.](http://apidocs.strongloop.com/loopback-android/api/index.html)
+  * [LoopBack Android API reference.](http://apidocs.strongloop.com/loopback-sdk-android/api/index.html)
   * [Push notifications for Android apps](Push-notifications-for-Android-apps.html)
   * [Tutorial: push notifications - Android client](Push-notifications-for-Android-apps.html)
 * [AngularJS JavaScript SDK](AngularJS-JavaScript-SDK.html)
@@ -28,3 +28,4 @@ See:
 
 * [iOS SDK](iOS-SDK.html)
 * [Android SDK](Android-SDK.html)
+* [Angular JS SDK](AngularJS-JavaScript-SDK.html)

@@ -504,6 +504,25 @@ a[data-toggle] {
 }
 
 .summary {
+    font-size:110%;
+    color: #808080;
+    margin:20px 50px 20px 50px;
+    border: 1px solid #999;
+    border-radius: 3px;
+    padding: 5px 10px 5px 10px;
+    box-shadow: 6px 6px 20px #999;
+}
+
+.post-title-main {
+  display: inline;
+}
+
+.post-header {
+  margin: 20px 0 10px 0;
+}
+
+/*
+.summary {
     font-size:120%;
     color: #808080;
     margin:20px 0px 20px 0px;
@@ -512,10 +531,12 @@ a[data-toggle] {
 
 }
 
+
 .summary:before {
     content: "Summary: ";
     font-weight: bold;
 }
+*/
 
 
 a.fa.fa-envelope-o.mailto {
@@ -831,9 +852,8 @@ span.soft {
 }
 
 .githubEditButton {
-    margin-bottom:7px;
-    margin-left: 10px;
-    float: right;
+  margin: 10px;
+  float: right;
 }
 
 .githubEditButton-nofloat {

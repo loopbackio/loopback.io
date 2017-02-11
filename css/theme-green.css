@@ -89,7 +89,7 @@ div.sidebarTitle {
 }
 
 div.sidebarTitle, div.sidebarTitle a {
-    margin-top:40px;
+    margin-top: 10px;
     font-weight:normal;
     font-size:130%;
     color: #000;
