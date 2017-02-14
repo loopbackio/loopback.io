@@ -188,9 +188,17 @@ The model generator will create two files in the application's `common/models` d
 
 For all the details of the canonical LoopBack application structure, see [Project layout reference](Project-layout-reference).
 
-## Run the application
+## Run the application (API Connect toolkit)
 
-Start the application:
+If you are using the `apic` command-line tool, follow the instructions in
+[Testing a LoopBack project](https://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.toolkit.doc/tutorial_cli_project_test.html?view=kc#topic_qt2_kqz_2v__explorer) to run the project locally and
+explore the API.
+
+## Run the application (StrongLoop tools)
+
+If you are using the `slc` command-line tool, follow the steps below to to run the project locally and explore the API.
+
+First, start the application:
 
 ```
 $ node .
@@ -204,7 +212,7 @@ Web server listening at: http://0.0.0.0:3000/
 
 Open your browser to [http://0.0.0.0:3000/](http://0.0.0.0:3000/) (on some systems, you may need to use [http://localhost:3000](http://localhost:3000/) instead).  You'll see the default application response that displays some JSON with some status information; for example:
 
-`{"started":"2016-09-10T21:59:47.155Z","uptime":42.054}`
+`{"started":"2017-03-10T21:59:47.155Z","uptime":42.054}`
 
 Now open your browser to [http://0.0.0.0:3000/explorer](http://0.0.0.0:3000/explorer) or [http://localhost:3000/explorer](http://localhost:3000/explorer).  You'll see the StrongLoop API Explorer:
 

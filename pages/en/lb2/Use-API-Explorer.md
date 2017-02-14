@@ -30,6 +30,13 @@ $ npm install
 
 ## Run API Explorer
 
+{% include note.html content="API Designer Explorer's functionality is the same as StrongLoop Explorer. The instructions and screenshots below are for the StrongLoop tools.  
+
+If you are using the `apic` command-line tool, follow the instructions in
+[Testing a LoopBack project](https://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.toolkit.doc/tutorial_cli_project_test.html?view=kc#topic_qt2_kqz_2v__explorer) to run the project locally and
+explore the API.  
+" %}
+
 Run the application:
 
 `$ node .`
