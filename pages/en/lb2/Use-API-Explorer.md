@@ -45,11 +45,12 @@ Now go to [http://localhost:3000/explorer](http://localhost:3000/explorer).  Y
 
 {% include image.html file="5570639.png" alt="" %}
 
-In addition to the CoffeeShop model that you defined, by default Loopback generates the User model and its endpoints for every application.  
-
 ## About LoopBack built-in models
 
-Actually, LoopBack creates several other [built-in models](Using-built-in-models) for common use cases:
+In addition to the CoffeeShop model that you defined, by default Loopback generates the User model and its endpoints for every application.  
+
+LoopBack creates several other models for common use cases.  For more information, see
+[built-in models](Using-built-in-models) .
 
 ## Exploring the CoffeeShop model
 
