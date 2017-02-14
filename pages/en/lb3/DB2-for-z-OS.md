@@ -1,5 +1,5 @@
 ---
-title: "DB2 for z/OS README"
+title: "DB2 for z/OS connector"
 lang: en
 layout: readme
 source: loopback-connector-db2z
