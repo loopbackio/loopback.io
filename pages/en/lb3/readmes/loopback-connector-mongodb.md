@@ -39,56 +39,27 @@ The entry in the application's `/server/datasources.json` will look like this:
 
 Edit `datasources.json` to add any other additional properties that you require.
 
-### Properties
+### Connection properties
 
-<table>
-  <thead>
-    <tr>
-    <th width="150">Property</th>
-    <th width="80">Type</th>
-    <th>Description</th>
-    </tr>
-  </thead> 
-  <tbody>
-    <tr>
-      <td>connector</td>
-      <td>String</td>
-      <td>Connector name, either “loopback-connector-mongodb” or “mongodb”.</td>  
-    </tr>  
-    <tr>
-      <td>database</td>
-      <td>String</td>
-      <td>Database name</td> 
-      </tr>
-    <tr>
-      <td>host</td>
-      <td>String</td>
-      <td>Database host name</td>
-    <tr>
-      <td>password</td>
-      <td>String</td>
-      <td>Password to connect to database</td> 
-    </tr>
-    <tr>
-      <td>port</td>
-      <td>Number</td>
-      <td>Database TCP port</td> 
-    </tr>
-    <tr>
-      <td>url</td>
-      <td>String</td>
-      <td>Connection URL of form <code>mongodb://user:password@host/db</code>.  
-      Overrides other connection settings (see below).</td> 
-    </tr>
-    <tr>
-       <td>username</td> 
-       <td>String</td>
-       <td>Username to connect to database</td>
-    </tr>
-  </tbody>
-</table>
+| Property | Type&nbsp;&nbsp; | Description |
+| --- | --- | --- |
+| connector | String | Connector name, either “loopback-connector-mongodb” or “mongodb”. |
+| database | String | Database name |
+| host | String | Database host name |
+| password | String | Password to connect to database |
+| port | Number | Database TCP port |
+| url | String | Connection URL of form `mongodb://user:password@host/db`. Overrides other connection settings (see below). |
+| username | String | Username to connect to database |
 
 **NOTE**: In addition to these properties, you can use additional Single Server Connection parameters supported by [`node-mongodb-native`](http://mongodb.github.io/node-mongodb-native/core/driver/reference/connecting/connection-settings/).
+
+### Additional properties
+
+- **allowExtendedOperators**: Set to `true` to enable using MongoDB operators such as
+`$currentDate`, `$inc`, `$max`, `$min`, `$mul`, `$rename`, `$setOnInsert`, `$set`, `$unset`, `$addToSet`,
+`$pop`, `$pullAll`, `$pull`, `$pushAll`, `$push`, and `$bit`.  Default is `false`.
+- **enableGeoIndexing**: Set to `true` to enable 2dsphere indexing for model properties
+of type `GeoPoint`. This allows for indexed ```near``` queries.  Default is `false`.
 
 ### Setting the url property in datasource.json
 
@@ -160,16 +131,6 @@ The .loopbackrc file is in JSON format, for example:
 **Note**: username/password is only required if the MongoDB server has
 authentication enabled.
 
-### Additional Settings
-
-allowExtendedOperators - ```false``` by default, ```true``` allows to use mongo operators like
-```$currentDate, $inc, $max, $min, $mul, $rename, $setOnInsert, $set, $unset, $addToSet,
-$pop, $pullAll, $pull, $pushAll, $push,  $bit ```.
-
-
-enableGeoIndexing - ```false``` by default, ```true``` enables 2dsphere indexing for model properties
-of type ```GeoPoint```. This allows for indexed ```near``` queries etc.
-
 ## Running tests
 
 The tests in this repository are mainly integration tests, meaning you will need
@@ -179,17 +140,7 @@ to run them using our preconfigured test server.
    credentials on your machine
 2. `npm test`
 
-## Running benchmarks
-
-**Benchmarks must be run on a Unix-like operating system.**
-
-```
-make benchmarks
-```
-
-The results will be output in `./benchmarks/results.md`.
-
-## Leak detection
+### Leak detection
 
 Tests run for 100 iterations by default, but can be increased by setting the
 env var `ITERATIONS`.
@@ -203,6 +154,16 @@ or
 ```
 ITERATIONS=1000 make leak-detection # run 1000 iterations
 ```
+
+## Running benchmarks
+
+**Benchmarks must be run on a Unix-like operating system.**
+
+```
+make benchmarks
+```
+
+The results will be output in `./benchmarks/results.md`.
 
 ## Release notes
 
