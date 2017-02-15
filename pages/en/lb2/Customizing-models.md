@@ -170,7 +170,7 @@ module.exports = function(app) {
           cache[key] = results;
         }
         cb(err, results);
-      });;
+      });
     }
   }
 }
