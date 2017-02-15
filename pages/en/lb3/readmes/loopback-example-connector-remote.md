@@ -1,6 +1,6 @@
-# loopback-example-remote
+# loopback-example-connector (remote)
 
-This is a very simple example of using the LoopBack [remote connector](http://docs.strongloop.com/display/LB/Remote+connector), [loopback-connector-remote](https://github.com/strongloop/loopback-connector-remote).
+This is a very simple example of using the LoopBack [remote connector](http://loopback.io/doc/en/lb3/Remote-connector.html), [loopback-connector-remote](https://github.com/strongloop/loopback-connector-remote).
 
 ## Overview
 
@@ -14,6 +14,14 @@ one model: `Person`, with a single property, `name`.
  * `create.js`: A simple example script that creates a new Person record (instance).
 
 ## How to run the examples
+
+**Clone the repo**
+
+```
+$ git clone https://github.com/strongloop/loopback-example-connector.git
+$ cd loopback-example-connector
+$ git checkout remote
+```
 
 **Starting the Server**
 
@@ -58,10 +66,10 @@ In **Response Body**, you will see the record that `create.js` created via the N
 
 This example demonstrates the following basic tasks (using the remote connector):
 
- - registering a user 
- - logging in as a user
- - defining a custom remote method
- - securing access to custom methods
+ - Registering a user 
+ - Logging in as a user
+ - Defining a custom remote method
+ - Securing access to custom methods
 
 After running the server, you can run the `examples/auth.js` example in a 
 separate shell.
@@ -77,6 +85,3 @@ Logged out and unset the acces token for future invocations
 Got error (Authorization Required) when trying to call method without auth
 ```
 
----
-
-[More LoopBack examples](https://github.com/strongloop/loopback-example)

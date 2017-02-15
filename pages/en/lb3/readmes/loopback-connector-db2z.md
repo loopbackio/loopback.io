@@ -49,7 +49,7 @@ Edit `server/datasources.json` to add other supported properties as required:
 
 The following table describes the connector properties.
 
-Property       | Type    | Description
+Property&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Type&nbsp;&nbsp;    | Description
 ---------------| --------| --------
 database       | String  | Database name
 schema         | String  | Specifies the default schema name that is used to qualify unqualified database objects in dynamically prepared SQL statements. The value of this property sets the value in the CURRENT SCHEMA special register on the database server. The schema name is case-sensitive, and must be specified in uppercase characters
