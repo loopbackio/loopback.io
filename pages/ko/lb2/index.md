@@ -19,60 +19,60 @@ LoopBack 사용에 대한 질문과 논의는 [LoopBack 개발자 포럼](https:
 **IBM 고객인 경우, 기술지원을 받으려면 [IBM Support Portal](http://www-01.ibm.com/support/docview.wss?uid=swg21593214)을 참고하세요.**
 "%}
 
-## The LoopBack framework
+## LoopBack 프레임워크
 
-The LoopBack framework is a set of Node.js modules that you can use independently or together to quickly build REST APIs.
+LoopBack 프레임워크는 독립적으로 혹은 복합적으로 사용하여 REST API를 빠르게 빌드할 수 있는 Node.js 모듈입니다.
 
-A LoopBack application interacts with data sources through the LoopBack model API, available locally within Node.js, [remotely over REST](Built-in-models-REST-API), and via native client APIs for
-[iOS, Android, and HTML5](Client-SDKs). Using these APIs, apps can query databases,
-store data, upload files, send emails, create push notifications, register users, and perform other actions provided by data sources and services.
+LoopBack 애플리케이션은 LoopBack 모델 API를 통해 데이터 소스와 상호 작용하며 Node.js 내에서 로컬로, [REST를 통한 원격](Built-in-models-REST-API)으로, [iOS, Android 및 HTML5](Client-SDKs)용 네이티브 클라이언트 API를 통해 상호 작용할 수 있습니다. 이러한 API를 사용하여 앱은 데이터베이스 쿼리, 데이터 저장, 파일 업로드, 이메일 보내기, 푸시 알림 생성, 사용자 등록 및 데이터 소스 및 서비스에서 제공하는 다른 작업 수행할 수 있습니다.
 
-Clients can call LoopBack APIs directly using [Strong Remoting](Strong-Remoting.html), a pluggable transport layer that enables you to provide backend APIs over REST, WebSockets, and other transports.
+Clients can call LoopBack APIs directly using Strong Remoting, a pluggable transport layer that enables you to provide backend APIs over REST, WebSockets, and other transports.
 
-The following diagram illustrates key LoopBack modules, how they are related, and their dependencies.
+클라이언트는 REST, WebSocket 및 기타 전송을 통해 백엔드 API를 제공 하는 장착형 전송계층인 [Strong Remoting](Strong-Remoting.html)을 사용하여 LoopBack API를 직접 호출 할 수 있습니다.
 
-{% include image.html file="9830413.png" alt="LoopBack modules" %}
+아래의 표는 주요 LoopBack 모듈과 모듈과의 관계 및 종속성을 보여줍니다.
 
-### LoopBack framework modules
+{% include image.html file="9830413.png" alt="LoopBack 모듈" %}
+
+### LoopBack 프레임워크 모듈
 
 <table style="width: 1000px;">
   <thead>
     <tr>
-      <th style="width: 80px;">Category</th>
-      <th style="width:200px;">Description</th>
-      <th>Use to…</th>
-      <th style="width: 280px;">Modules</th>
+      <th style="width: 80px;">카테고리</th>
+      <th style="width:200px;">설명</th>
+      <th>용도…</th>
+      <th style="width: 280px;">모듈</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>Models</td>
-      <td>Model and API server</td>
-      <td>Dynamically mock-up models and expose them as APIs without worrying about persisting.</td>
+      <td>모델</td>
+      <td>모델과 API 서버</td>
+      <td>동적으로 목업을 통한 모델을 만들고 지속성 가능한 API를 제공합니다.</td>
       <td>loopback</td>
     </tr>
     <tr>
-      <td>Abstraction</td>
-      <td>Model data abstraction to physical persistence</td>
-      <td>Connect to multiple data sources or services and get back an abstracted model with CRUD capabilities independent of backing data source.</td>
+      <td>추상화</td>
+      <td>물리적 데이터에 대한 추상화 모델링</td>
+      <td>다양한 데이터 소스나 서비스에 연결하고 백업 데이터 소스와 독립적인 CURD 기능으로 추상 모델을 복원합니다.</td>
       <td>loopback-datasource-juggler</td>
     </tr>
     <tr>
-      <td>Initialization</td>
-      <td>Application initialization</td>
-      <td>Configure data sources, customize models, configure models and attach them to data sources; Configure application settings and run custom boot scripts.</td>
+      <td>초기화</td>
+      <td>어플리케이션 </td>
+      <td>데이터 소스 설정, 사용자 정의 모델, 모델 구성 및 데이터 소스를 연결합니다; 응용 프로그램 설정 구성 및 사용자 지정 부팅 스크립트를 실행합니다.</td>
       <td>loopback-boot</td>
-    </tr>
-    <tr>
-      <td>Sequencing</td>
-      <td>Middleware execution</td>
-      <td>Configure middleware to be executed at various points during application lifecycle.</td>
+    </tr>
+    <tr>
+      <td>시퀀스</td>
+      <td>미들웨어 실행</td>
+      <td>애플리케이션 라이프 사이클 동안 다양한 시점에서 실행될 미들웨어를 구성합니다.</td>
       <td>loopback-phase</td>
     </tr>
     <tr>
       <td>Data</td>
-      <td>RDBMS and noSQL physical data sources</td>
-      <td>Enable connections to RDBMS and noSQL data sources and get back an abstracted model.</td>
+      <td>RDBMS 및 NoSQL 물리적 데이터 소스</td>
+      <td>RDBMS 및 NoSQL 데이터 소스에 대한 연결을 활성화하고 추상화 된 모델 제공합니다.</td>
       <td markdown="1">
 - loopback-connector-mongodb
 - loopback-connector-mysql
@@ -83,18 +83,19 @@ The following diagram illustrates key LoopBack modules, how they are related, an
 </td>
     </tr>
     <tr>
-      <td>Integration</td>
-      <td>General system connectors</td>
-      <td>Connect to an existing system that expose APIs through common enterprise and web interfaces</td>
+      <td>통합</td>
+      <td>일반적인 시스템 연결</td>
+      <td>일반적인 엔터프라이즈 및 웹 인터페이스를 통한 API를 제공하는 기존 시스템에 연결합니다.
+      </td>
       <td markdown="1">
 - loopback-connector-rest
 - loopback-connector-soap
 </td>
     </tr>
     <tr>
-      <td>Components</td>
-      <td>Add-ons to core LoopBack</td>
-      <td>Integrate with pre-built services packaged into components.</td>
+      <td>컴포넌트</td>
+      <td>코어 LoopBack 부가기능 추가</td>
+      <td>컴포넌트 내부에 패키지된 사전 구축 된 서비스와 통합 합니다.</td>
       <td markdown="1">
 - loopback-component-push
 - loopback-component-storage
@@ -102,9 +103,9 @@ The following diagram illustrates key LoopBack modules, how they are related, an
 </td>
     </tr>
     <tr>
-      <td>Clients</td>
-      <td>Client SDKs</td>
-      <td>Develop client app using native platform objects (iOS, Android, AngularJS) that interact with LoopBack APIs via REST.</td>
+      <td>클라이언트</td>
+      <td>클라이언트 SDK</td>
+      <td>REST를 통해 LoopBack API와 상호 작용하는 네이티브 플랫폼 객체 (iOS, Android, AngularJS)를 사용하여 클라이언트 응용 프로그램을 개발합니다.</td>
 <td markdown="1">
 - loopback-sdk-ios
 - loopback-sdk-android
