@@ -7,7 +7,7 @@ keywords: LoopBack
 tags:
 sidebar: lb3_sidebar
 permalink: /doc/en/lb3/Push-notifications.html
-summary: Push notifications enable server applications to send information to mobile apps even when the app isn’t in use. 
+summary: Push notifications enable server applications to send information to mobile apps even when the app isn’t in use.
 ---
 
 {% include content/strongloop-labs.html lang=page.lang %}
@@ -67,7 +67,7 @@ $ git clone https://github.com/strongloop/loopback-example-push.git
 First, if you haven't already done so,
 [get your Google Cloud Messaging (GCM) credentials](Push-notifications-for-Android-apps.html#get-your-google-cloud-messaging-credentials) for Android apps.
 After following the instructions, you will have a GCM API key. Then edit your application's `config.js` to add them; for example, in the sample app, 
-[`loopback-2.x/server/config.js`](https://github.com/strongloop/loopback-example-push/blob/master/loopback-2.x/server/config.js):
+[`loopback-3.x/server/config.js`](https://github.com/strongloop/loopback-example-push/blob/master/loopback-3.x/server/config.js):
 
 `exports.gcmServerApiKey = 'Your-server-api-key';`
 
@@ -79,18 +79,17 @@ exports.gcmServerApiKey = 'AIzaSyDEPWYN9Dxf3xDOqbQluCwuHsGfK4aJehc';
 
 ### Set up messaging credentials for iOS apps
 
-If you have not already done so, [create your APNS certificates](https://identity.apple.com/pushcert/) for iOS apps.
-After following the instructions, you will have APNS certificates on your system.
+If you have not already done so, [create your APNS auth key](https://developer.apple.com/account/ios/certificate/key) for iOS apps.
+After following the instructions, you will have APNS key (.p8 extension), and key-id on your system. You can also check your team-id on developer page.
 Then edit your application's `config.js` to add them; for example, in the sample app,
-[`loopback-2.x/server/config.js`](https://github.com/strongloop/loopback-example-push/blob/master/loopback-2.x/server/config.js):
+[`loopback-3.x/server/config.js`](https://github.com/strongloop/loopback-example-push/blob/master/loopback-3.x/server/config.js):
 
 ```javascript
-exports.apnsCertData = readCredentialsFile('apns_cert_dev.pem');
-exports.apnsKeyData = readCredentialsFile('apns_key_dev.pem');
+exports.apnsTokenKeyPath = './server/private/notification/apns.p8';
+exports.apnsTokenKeyId = 'xxxxxxxx';
+exports.apnsTokenTeamId = 'xxxxxxxx';
+exports.apnsBundleId = 'com.company.app';
 ```
-
-Replace the file names with the names of the files containing your APNS certificates.
-By default, `readCredentialsFile()` looks in the `/credentials` sub-directory for your APNS certificates.
 
 If you don't have a client app yet, leave the default appName in `config.js` for now. Once you have created your client app, update the appName.
 
@@ -104,7 +103,7 @@ Now follow the instructions in: 
 First install all dependencies, then run the Node application as follows:
 
 ```shell
-$ cd loopback-example-push/loopback-2.x
+$ cd loopback-example-push/loopback-3.x
 $ npm install
 #...
 $ node .
@@ -115,7 +114,7 @@ The server application will be available at [http://localhost:3000/](http://loc
 ## Set up your LoopBack application to send push notifications
 
 Follow the directions in this section to configure your own LoopBack application to send push notifications.
-It may be helpful to refer to the [example LoopBack application](https://github.com/strongloop/loopback-example-push/tree/master/loopback-2.x/server).
+It may be helpful to refer to the [example LoopBack application](https://github.com/strongloop/loopback-example-push/tree/master/loopback-3.x/server).
 
 ### Create a push model
 
@@ -213,15 +212,20 @@ module.exports = function (app) {
       description: 'LoopBack Push Notification Demo Application',
       pushSettings: {
         apns: {
-          certData: config.apnsCertData,
-          keyData: config.apnsKeyData,
           pushOptions: {
             // Extra options can go here for APN
+            port: "2197"
           },
           feedbackOptions: {
             batchFeedback: true,
             interval: 300
-          }
+          },
+          token: {
+            keyId: config.apnsTokenKeyId,
+            key: config.apnsTokenKeyPath,
+            teamId: config.apnsTokenTeamId
+          },
+          bundle: config.apnsBundleId
         },
         gcm: {
           serverApiKey: config.gcmServerApiKey
