@@ -34,6 +34,25 @@ For more details, see [Functional area owners](functional-area-owners.html).
 
 ## Scrum board
 
-The LoopBack project uses [Waffle](https://waffle.io/), an agile development tool built on the GitHub API. Waffle provides a easy way to track work and provide project transparency in real time. We use it to groom and maintain our backlog and track what the team and community are working on in each sprint.
+The LoopBack project uses [ZenHub](https://www.zenhub.com/), an agile development tool built on the GitHub API. ZenHub provides an easy way to track work and provide project transparency in real time. We use it to groom and maintain our backlog and track what the team and community are working on in each sprint.
 
-See the [LoopBack Waffle Scrum Board](https://waffle.io/strongloop/loopback) for a realtime view of the project. For details on how the LoopBack team uses Waffle, see [the related blog post](https://strongloop.com/strongblog/an-update-on-the-loopback-roadmap-and-backlog/).
+See the [LoopBack Board](https://github.com/strongloop/loopback#boards) for a realtime view of the project. You will need to install ZenHub extension to your browser first, please click on "Add ZenHub to GitHub" button at ZenHub's [homepage](https://www.zenhub.com/).
+
+### Columns
+
+ZenHub uses "Pipeline" to track the status of issues from "new" through "in
+progress" to "done".
+
+Pipeline|Description
+:-:|:-:
+Needs&nbsp;triage|New issues are places into this column by default.
+Triaging|The issue is triaged to ensure we have enough information to understand the problem and reproduce it on our machines.
+Needs&nbsp;priority|The issue is accepted as a bug/feature and waiting to get prioritized.
+Backlog|A currated list of items we want to work on in the near future.
+Planning|A short list of the most important issue, we use this list to pick the stories for our Sprint backlog during our bi-weekly planning session.
+Commited|Stories commited to the current sprint (Sprint Backlog)
+In&nbsp;Progress|Issues that we are actively working on
+Paused|Stories we put on hold.
+Review|Items waiting for peer review. Pull requests typically go to this column.
+Verify|Stories waiting for QA verification.
+Closed|Finished stories end up in this column.
