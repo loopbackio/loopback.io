@@ -356,3 +356,38 @@ to run them using our preconfigured test server.
 1. Ask a core developer for instructions on how to set up test server
    credentials on your machine
 2. `npm test`
+
+If you wish to run the tests using your own test database instance,
+
+__Set up the database__
+
+1. Go to pgAdmin.  
+By default, the local database is one of the servers under Server Groups > Servers.  
+2. Under Login Roles, add a user called ```strongloop```.
+
+__Change configuration for database connection__
+
+In ```test\init.js```, change the value of ```config``` to be pointing to the local database.  For example, 
+```
+  var config = {
+    host: 'localhost',
+    port: '5432',
+    database:'strongloop',
+    username: 'postgres',
+    password: 'postgres',
+  };
+```
+
+__Troubleshooting__
+
+When running npm test, it runs the ```pretest.js``` which eventually runs ```schema.sql``` to set up the database and tables. 
+If there is problem, you can run the ```schema.sql``` manually.  To do this:
+
+1. Go to SQL Shell (psql)
+2. Run:
+```
+\i <<file path>>
+
+For example on Windows,
+\i c:\somepath\test\schema.sql
+```
