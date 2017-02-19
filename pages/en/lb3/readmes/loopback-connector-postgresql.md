@@ -350,8 +350,7 @@ Destroying models may result in errors due to foreign key integrity. First delet
 
 ## Running tests
 
-The tests in this repository are mainly integration tests, meaning you will need
-to run them using our preconfigured test server.
+The tests in this repository are mainly integration tests, meaning you will need to run them using our preconfigured test server.
 
 1. Ask a core developer for instructions on how to set up test server
    credentials on your machine
@@ -378,9 +377,11 @@ In ```test\init.js```, change the value of ```config``` to be pointing to the lo
   };
 ```
 
+2. (`Linux Only`) `CI=true PGHOST=localhost PGPORT=<pgport> PGDATABASE=<dbname> PGUSER=<username> PGPASSWORD=<password> npm test`
+
 __Troubleshooting__
 
-When running npm test, it runs the ```pretest.js``` which eventually runs ```schema.sql``` to set up the database and tables. 
+When running `npm test`, it runs the ```pretest.js``` which eventually runs ```schema.sql``` to set up the database and tables. 
 If there is problem, you can run the ```schema.sql``` manually.  To do this:
 
 1. Go to SQL Shell (psql)
