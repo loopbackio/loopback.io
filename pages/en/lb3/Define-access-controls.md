@@ -79,6 +79,17 @@ The tool will prompt you to provide the required information, as summarized belo
 ? Select the permission to apply: Explicitly grant access
 ```
 
+
+**Allow authenticated users to read coffeeshops**; that is, if you're logged in, you can view all coffeeshops.
+
+```
+? Select the model to apply the ACL entry to: CoffeeShop
+? Select the ACL scope: All methods and properties
+? Select the access type: Read
+? Select the role Any authenticated user
+? Select the permission to apply Explicitly grant access
+```
+
 Now, **enable the author of a review (its "owner") to make any changes to it**.
 
 ```
