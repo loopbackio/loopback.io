@@ -59,15 +59,10 @@ body {
     color: #5bc0de;
 }
 
-
 .gi-2x{font-size: 2em;}
 .gi-3x{font-size: 3em;}
 .gi-4x{font-size: 4em;}
 .gi-5x{font-size: 5em;}
-
-
-
-
 
 .breadcrumb > .active {color: #777 !important;}
 
@@ -210,20 +205,19 @@ p.post-meta {font-size: 80%; color: #777;}
 
 .entry-date{font-size:14px;font-size:0.875rem;line-height:1.71429;margin-bottom:0;text-transform:uppercase;}
 
-/* search area */
+/* search area
 #search-demo-container ul#results-container {
     list-style: none;
     font-size: 12px;
     background-color: white;
     position: absolute;
-    top: 40px; /* if you change anything about the nav, you'll prob. need to reset the top and left values here.*/
+    top: 40px;
     left: 20px;
     z-index: -1;
     width:223px;
     border-left: 1px solid #dedede;
     box-shadow: 2px 3px 2px #dedede;
 }
-
 
 ul#results-container a {
     background-color: transparent;
@@ -232,7 +226,6 @@ ul#results-container a {
 ul#results-container a: hover {
     color: black;
 }
-
 
 #search-demo-container a:hover {
     color: black;
@@ -961,7 +954,7 @@ a.no_icon:after
     margin-bottom: 10px;
 }
 
-/* algolia search */
+/* algolia search
 
 .search {
     text-align: left;
@@ -979,7 +972,7 @@ a.no_icon:after
     padding: 0;
 }
 
-/* algolia */
+/* algolia
 
 div.results {
     position: absolute;
@@ -1016,7 +1009,7 @@ span.label.label-primary {
     background-color: #f0ad4e;
 }
 .col-lg-12 .nav li a {background-color: white}
-
+*/
 
 .nav li.active > a.subfoldersTitle {
     background-color: whitesmoke;
@@ -1240,4 +1233,25 @@ blockquote p { font-size: 100%; }
 
 pre.query_syntax {
   margin: 0;
+}
+
+/* Google Custom Search override */
+.cse .gsc-control-cse, .gsc-control-cse {
+  padding: 0 !important;
+  border-style: none !important;
+}
+
+table.gsc-search-box, form.gsc-search-box, div.gsc-control-wrapper-cse, div.gsc-control-cse.gsc-control-cse-en, #___gcse_0 {
+  border-style: none !important;
+}
+
+table.gsc-search-box, table.gsc-search-box td.gsc-input {
+  padding-left: 10px;
+  padding-right: 0;
+  border: 0;
+}
+
+td.gsc-input, td.gsc-search-button, td.gsc-clear-button {
+  background-color: #72ac4a;
+  border-style: none !important;
 }

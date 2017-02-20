@@ -48,34 +48,24 @@
                 {% if site.feedback_disable == null or site.feedback_disable == false %}
 			{% include feedback.html %}
 		{% endif %}
-                <!--comment out this block if you want to hide search
+                <!-- comment out this block if you want to hide search -->
                 <li>
-                    <div style="max-width: 300px; padding: 0;">
-                      <div id='cse' style='width: 100%;'>Loading</div>
-                    </div>
+                  <div style="max-width: 400px; height: 50px; background-color: #72ac4a; margin-left: 10px;"><!-- Google Custom Search -->
+                    <script>
+                      (function() {
+                        var cx = '017255310470807938662:w4ma7xmlpfi';
+                        var gcse = document.createElement('script');
+                        gcse.type = 'text/javascript';
+                        gcse.async = true;
+                        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+                        var s = document.getElementsByTagName('script')[0];
+                        s.parentNode.insertBefore(gcse, s);
+                      })();
+                    </script>
+                    <gcse:search></gcse:search>
+                  </div><!-- Google Custom Search -->
                 </li>
-                -->
             </ul>
         </div>
-        </div>
-        <!-- /.container -->
-<!-- Google Custom Search 
-<script src='//www.google.com/jsapi' type='text/javascript'></script>
-<script type='text/javascript'>
-google.load('search', '1', {language: 'en', style: google.loader.themes.DEFAULT});
-google.setOnLoadCallback(function() {
-  var customSearchOptions = {};
-  var orderByOptions = {};
-  orderByOptions['keys'] = [{label: 'Relevance', key: ''} , {label: 'Date', key: 'date'}];
-  customSearchOptions['enableOrderBy'] = true;
-  customSearchOptions['orderByOptions'] = orderByOptions;
-  customSearchOptions['overlayResults'] = true;
-  var customSearchControl =   new google.search.CustomSearchControl('017255310470807938662:w4ma7xmlpfi', customSearchOptions);
-  customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);
-  var options = new google.search.DrawOptions();
-  options.setAutoComplete(true);
-  customSearchControl.draw('cse', options);
-}, true);
-</script>
--->
+      </div>
 </nav>
