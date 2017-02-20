@@ -38,6 +38,9 @@ The LoopBack project uses [ZenHub](https://www.zenhub.com/), an agile developmen
 
 See the [LoopBack Board](https://github.com/strongloop/loopback#boards) for a realtime view of the project. You will need to install ZenHub extension to your browser first, please click on "Add ZenHub to GitHub" button at ZenHub's [homepage](https://www.zenhub.com/).
 
+{% include tip.html content= "LoopBack switched from using Waffle to ZenHub for its scrum board in early 2017.
+"%}
+
 ### Columns
 
 ZenHub uses "Pipeline" to track the status of issues from "new" through "in
