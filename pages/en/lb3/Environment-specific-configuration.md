@@ -154,7 +154,7 @@ This file includes the following that will include stack traces in HTTP response
 You can override values set in `datasources.json` in the following files:
 
 * `datasources.local.js` or `datasources.local.json`
-* <code>datasources.<i>env</i>.js<c/ode> or <code>datasources.<i>env</i>.json</code>, where _`env`_ is the value of `NODE_ENV` environment variable (typically `development` or `production`).
+* <code>datasources.<i>env</i>.js</code> or <code>datasources.<i>env</i>.json</code>, where _`env`_ is the value of `NODE_ENV` environment variable (typically `development` or `production`).
   For example, `datasources.production.json`.
 
 {% include important.html content="
