@@ -69,7 +69,7 @@ The tool will prompt you to provide the required information, as summarized belo
 ? Select the permission to apply: Explicitly grant access
 ```
 
-**Allow authenticated users to write a review**; that is, if you're logged in, you can add a review.
+**Allow authenticated users to write a review**; that is, if you're logged in, you can add reviews.
 
 ```
 ? Select the model to apply the ACL entry to: Review
