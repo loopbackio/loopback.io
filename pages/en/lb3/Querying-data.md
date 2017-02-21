@@ -312,3 +312,29 @@ As a LoopBack user this is a pretty powerful thing.
 Typically, you will have learned how to write some complex queries using the `find()` filter syntax; before you would need to figure out how to do the
 same thing in JavaScript (perhaps using a library such as underscore). Now with the `loopback-filters` module, in your client application you can re-use
 the same exact filter object you were sending to the server to filter the database without having to interact with a LoopBack server at all.
+
+### Filtering nested properties
+
+Loopback supports filtering nested properties in three NoSQL connectors: Mongodb, Cloudant, Memory.
+
+For example, model `User` contains a nested property `user.address.tags.tag`:
+
+```javascript
+db.define('User', {
+  name: {type: String, index: true},
+  email: {type: String, index: true},
+  address: {
+    street: String,
+    city: String,
+    tags: [
+      {
+        tag: String,
+      }
+    ]
+  }
+});
+```
+
+users can do a nested query like `User.find({where: {'address.tags.tag': 'business'}}`.
+
+Data source connectors for relational databases don't support filtering nested properties.
