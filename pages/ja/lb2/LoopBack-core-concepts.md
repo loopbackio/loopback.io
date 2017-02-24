@@ -148,7 +148,7 @@ LoopBackは２つの主要な開発ツールを提供してします:
 
 ## Examples
 
-StrongLoop provides numerous LoopBack example applications.  The table below lists some of the key examples.  Refer to [https://github.com/strongloop/loopback-example](https://github.com/strongloop/loopback-example) for a complete list.
+StrongLoop provides numerous LoopBack example applications.  The table below lists some of the key examples.  Refer to [https://github.com/strongloop/loopback-example](https://loopback.io/doc/en/lb3/Tutorials-and-examples.html) for a complete list.
 
 <table>
   <thead>

@@ -220,4 +220,4 @@ Open two separate browser windows and navigate to `http://localhost:3000` in bot
 
 ---
 
-[More LoopBack examples](https://github.com/strongloop/loopback-example)
+[More LoopBack examples](https://loopback.io/doc/en/lb3/Tutorials-and-examples.html)
