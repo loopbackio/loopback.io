@@ -96,6 +96,7 @@ npm install loopback-connector-es --save --save-exact
           }
     ],
     "apiVersion": "<apiVersion>",
+    "refreshOn": ["save","create", "updateOrCreate"],
     "log": "trace",
     "defaultSize": <defaultSize>,
     "requestTimeout": 30000,
@@ -263,6 +264,37 @@ docker-compose up
   * You can dump all the data from your ES index, via cmd-line too: `curl -X POST username:password@my.es.cluster.com/shakespeare/_search -d '{"query": {"match_all": {}}}'`
 6. To test a specific filter via GET method, use for example: `{"q" : "friends, romans, countrymen"}`
 
+## How to achieve Instant search
+
+From version 1.3.4, `refresh` option is added which support's instant search after `create` and `update`. This option is configurable and one can activate or deactivate it according to their need. `By default refresh is true` which makes response to come only after documents are indexed(searchable). 
+To know more about `refresh` go through this [article](https://www.elastic.co/guide/en/elasticsearch/reference/current/docs-refresh.html) 
+
+* [Related Issue](https://github.com/strongloop-community/loopback-connector-elastic-search/issues/72)
+* [Related PR](https://github.com/strongloop-community/loopback-connector-elastic-search/pull/81)
+##### Ways to configure refresh 
+Datasource File: Pass `refreshOn` array from datasource file including methods name in which you want this to be `true`
+```
+    "es": {
+        "name": "es",
+        "refreshOn": ["save","create", "updateOrCreate"],
+        .....
+```
+Model.json file: Configurable on per model and operation level (`true`, `false`, `wait_for`)
+```
+    "elasticsearch": {
+         "create": {
+             "refresh": false
+         },
+         "destroy": {
+             "refresh": false
+         },
+         "destroyAll": {
+             "refresh": "wait_for"
+         }
+    }
+```
+###### NOTE:- *While a refresh is useful, it still has a performance cost. A manual refresh can be useful, but avoid manual refresh every time you index a document in production; it will hurt your performance. Instead, your application needs to be aware of the near real-time nature of Elasticsearch and make allowances for it.*
+
 ## Troubleshooting
 
 1. Do you have both `elasticsearch-ssl` and `elasticsearch-plain` in your `datasources.json` file? You just need one of them (not both), based on how you've setup your ES instance.
@@ -355,5 +387,12 @@ docker-compose up
     User.find({order: 'name'}, function (err, users) {..}
     // this will treat 'George Harrison' as two tokens: 'george' and 'harrison' in a search
     User.find({order: 'name', where: {'name.native': 'Harrison'}}, function (err, users) {..}
+    ```
+  * Release `1.3.4` add's support for updateAll for elasticsearch `v-2.3` and above. To make updateAll work you will have to add below options in your `elasticsearch.yml` config file
+    ```
+     script.inline: true
+     script.indexed: true
+     script.engine.groovy.inline.search: on
+     script.engine.groovy.inline.update: on
     ```
   * TBD
