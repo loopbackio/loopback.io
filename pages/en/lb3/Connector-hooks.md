@@ -99,7 +99,7 @@ Where:
 - `req` is the request object being passed to [request](https://github.com/request/request) module.
 - `res` is the response object received from [request](https://github.com/request/request) module.
 
-Connector hooks gives you access to the Loopback context object, `ctx`, that contains information that won’t make it to the end of your method.  Typically, at the end of a call you get the body of the response, so the headers are only available in the `ctx` object.
+Connector hooks give you access to the Loopback context object, `ctx`, that contains information that won’t make it to the end of your method.  Typically, at the end of a call you get the body of the response, so the headers are only available in the `ctx` object.
 
 You have to use the connector hook during application boot; for example:
 
@@ -114,17 +114,17 @@ module.exports = function(server) {
 };
 ```
 
-Now inside this function you have access to all the information you need:
+Now inside this function you have access to this information:
 
 - Response headers: `ctx.res.headers`.
 - HTTP response code: `ctx.res.body.code`.
 - HTTP method of the request: `ctx.req.method`.
 
-Remember, the hook is triggered every time the connector is called, so every request with the REST connector will go through this function.
+The hook is triggered every time the connector is called, so every request with the REST connector will go through this function.
 
 However, every call to the API won’t go through this hook because it does not call the `next()` function yet.
 
-To hook every POST request the server makes and put the location from the header inside the body.
+To hook every POST request the server makes and put the location from the header inside the body, for example:
 
 ```js
 module.exports = function(server) {
@@ -141,7 +141,7 @@ module.exports = function(server) {
 };
 ```
 
-The `ctx.end` method needs three arguments: `err`, `ctx`, and `result`. The result is what is sent in the end, when the method of MyAPI is called.
+The `ctx.end` method needs three arguments: `err`, `ctx`, and `result`. The result is what is sent in the end, when the remote method is called.
 
 {% include note.html title="Caution" content="With the above code, for example, the connector never sends any errors after a POST request for instance. "
 %}
