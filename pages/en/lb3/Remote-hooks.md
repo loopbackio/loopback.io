@@ -7,7 +7,7 @@ keywords: LoopBack
 tags: application_logic
 sidebar: lb3_sidebar
 permalink: /doc/en/lb3/Remote-hooks.html
-summary:
+summary: A remote hook runs before or after execution of a model's remote method.
 ---
 ## Overview
 

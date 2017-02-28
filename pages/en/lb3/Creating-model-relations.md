@@ -7,7 +7,7 @@ keywords: LoopBack
 tags: models
 sidebar: lb3_sidebar
 permalink: /doc/en/lb3/Creating-model-relations.html
-summary:
+summary: Relations enable you to specify how models are related to each other, with "BelongsTo,"  "HasOne", and "HasMany" relations, among others.
 ---
 
 ## Overview of model relations
