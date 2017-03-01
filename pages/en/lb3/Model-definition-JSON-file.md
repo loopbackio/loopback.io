@@ -186,7 +186,7 @@ Properties are required unless otherwise designated.
     </tr>
 
     <tr>
-      <td>rest.<br/>normalizeHttpPath</td>
+      <td>remoting.<br/>normalizeHttpPath</td>
       <td>Boolean</td>
       <td>false</td>
       <td>
