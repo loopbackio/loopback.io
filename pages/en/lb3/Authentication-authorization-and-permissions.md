@@ -54,9 +54,10 @@ The general process to implement access control for an application is:
 
 When you create your app with the LoopBack [application generator](Application-generator.html), access control is automatically enabled, _except_ if you choose the "empty-server" application type.
 To enable access control for an "empty-server" application, you must add a boot
-script that calls `enableAuth()`. For example, in `server/boot/authentication.js`:
+script that calls [`enableAuth()`](https://apidocs.strongloop.com/loopback/#app-enableauth) as shown in the following example:
 
-```js
+{% include code-caption.html content="server/boot/authentication.js" %}
+```javascript
 module.exports = function enableAuthentication(server) {
   server.enableAuth();
 };
@@ -66,12 +67,17 @@ module.exports = function enableAuthentication(server) {
 
 Then you need to make sure the `User`, and optionaly the `AccessToken` models are configured appropriately according to your set-up.
 
-{% include note.html content="
-Usually you don't need any extra configuration regarding built-in models `Role`, `RoleMapping`, and `ACL` which you can use without any customization. Just make sure they are declared in the `model-config.json` configuration file.
-" %}
-
-<br>
 Normally you should have already implemented at least one custom user model, extending the built-in `User` model, as described in [this section](Using-built-in-models.html#user-model).
+
+Usually you don't need any extra configuration regarding built-in models `Role`, `RoleMapping`, and `ACL` which you can be use without any customization. Just make sure they are declared in the `model-config.json` configuration file, or in case you don't require either to customize the `AccessToken` model that you pass a datasource to the `enableAuth()` method as follows:
+
+```javascript
+server.enableAuth({ datasource: 'db' });
+```
+
+{% include note.html content="
+Passing a <b>`datasource`</b> to the <b>`enableAuth()`</b> method as shown here will let Loopback take care of attaching any built-in model required by the Access Control feature, which is perfectly suited for most applications.
+" %}
 
 {% include tip.html content="
 Whether you can use the built-in `AccessToken` model or **require** to create a custom accessToken model extending the built-in model depends on whether you plan to use a single or several user models extending the built-in `User` model. Both cases are covered in the next two sections.
@@ -81,10 +87,10 @@ Whether you can use the built-in `AccessToken` model or **require** to create a 
 
 In the case your application leverages only one type of user extending the built-in `User` model (which should the case in a majority of configurations), you barely have no further configuration to do.
 
-1.  Rely on the built-in AccessToken model.  
+1.  Rely on the built-in `AccessToken` model.  
 2.  Make sure your custom user model implements a hasMany relation with the AccessToken model as follows:
 
-{% include code-caption.html content="/common/models/custom-user.json" %}
+{% include code-caption.html content="common/models/custom-user.json" %}
 ```json
 ...
 "relations": {
@@ -122,16 +128,20 @@ Such circumstances require the application to actually manage these different ty
 
 ##### Setup
 
+{% include important.html content="
+When using multiple user models, you should not let Loopback auto-attach built-in models required by the Access Control feature. <b>Instead</b>, call the <b>`enableAuth()`</b> method with no argument and manually define all models required in the `server/model-config.json` configuration file.
+" %}
+
 In order to allow the Loopback access control system to work with several models extending the built-in `User` model. The relations between the `users` models and the `AccessToken` should be modified to allow a single `AccessToken` model to host access tokens for multiple types of users while at the same time allowing each `user` models instances to be linked to their related access tokens in a non ambiguous way.  
 
-This is achieved by changing the **hasMany** relation from `User` to `AccessToken` and the **belongsTo** relation from `AccessToken` to `User` by their [polymorphic](Polymorphic-relations) equivalents, in which the `principalType` property is used as a **_discriminator_** to resolve which of the potential `user` model instance an 'accessToken' instance belongs to.
+This is achieved by changing the **hasMany** relation from `User` to `AccessToken` and the **belongsTo** relation from `AccessToken` to `User` by their [polymorphic](Polymorphic-relations.html) equivalents, in which the `principalType` property is used as a **_discriminator_** to resolve which of the potential `user` model instance an 'accessToken' instance belongs to.
 
 <br>
 {% include note.html content="
 Adapt the following configuration snippets in your custom <code>users</code> and <code>accessToken</code> model definitions.
 "%}
 
-{% include code-caption.html content="/common/models/any-custom-user.json" %}
+{% include code-caption.html content="common/models/any-custom-user.json" %}
 ```json
 ...
 "relations": {
@@ -150,7 +160,7 @@ Adapt the following configuration snippets in your custom <code>users</code> and
 ...
 ```
 
-{% include code-caption.html content="/common/models/custom-access-token.json" %}
+{% include code-caption.html content="common/models/custom-access-token.json" %}
 ```json
 ...
 "relations": {
@@ -178,8 +188,24 @@ In particular, pay attention to:
 " %}
 
 <br>
-**Last but not least**, do not forget to tell Loopback to use the newly defined custom `accessToken` model by including these lines in the `server.js` file or in a boot script, once again paying attention to the _name_ of the custom `accessToken` model.
+**Last but not least**, do not forget to tell Loopback to use the newly defined custom `accessToken` model by configuring accordingly
 
+{% include code-caption.html content="server/middleware.json" %}
+```json
+{
+  "auth": {
+    "loopback#token": {
+      "params": {
+        "model": "customAccessToken"
+      }
+    }
+  }
+}
+```
+
+**Note**: this can also be achieved by including these lines in the `server.js` file or in a boot script, once again paying attention to the _name_ of the custom `accessToken` model.
+
+{% include code-caption.html content="server/server.js" %}
 ```javascript
 var loopback = require('loopback');
 ...
