@@ -11,8 +11,9 @@ summary: For related models, LoopBack automatically <i>related model methods</i>
 ---
 <br clear="all"/>
 
-{% include important.html content="When accessing a related model, the active ACL is still the one for the model you are calling.
-So even if your model has DENY ALL permissions set, if the model relating to it has no ACL, then all the relation endpoints will be open. This can be a security risk because, for example, `GET /OpenModel/{id}/ACLSecuredModel` will allow full access to `ACLSecuredModel` through the `OpenModel` relations.
+{% include important.html content="When accessing a related model, the effective ACL (the one considered to resolve access permission) is the one for the model you are primarily calling.
+So if a given model has no ACL, then all the endpoints accessible through the model relations will be open, even if a related model has DENY ALL permissions set.<br>
+This can be a security risk since, for example, `GET /OpenModel/{id}/ACLSecuredModel` will allow full access to `ACLSecuredModel` through the `OpenModel` relations.
 " %}
 
 ## Restricting access to related models

@@ -783,17 +783,23 @@ The value of the `acls` key is an array of objects that describes the access 
         The value must be one of:
         <ul>
           <li>A user ID (String|number|any)</li>
+          <li>An application ID (String|number|any)</li>
           <li>
             One of the following predefined dynamic roles:
             <ul>
               <li><code>$everyone</code>&nbsp;- Everyone</li>
               <li><code>$owner</code>&nbsp;- Owner of the object</li>
-              <li><code>$related</code>&nbsp;- Any user with a relationship to the object (not implemented yet!)</li>
               <li><code>$authenticated</code>&nbsp;- Authenticated user</li>
               <li><code>$unauthenticated</code>&nbsp;- Unauthenticated user</li>
             </ul>
           </li>
-          <li>A static role name</li>
+          <li>
+            A custom role name, either:
+            <ul>
+              <li><b>static</b>, directly mapped to a principal</li>
+              <li><b>dynamic</b>, registered with a custom role resolver</li>
+            </ul>
+          </li>
         </ul>
       </td>
     </tr>
@@ -804,7 +810,7 @@ The value of the `acls` key is an array of objects that describes the access 
         Type of the principal. Required.
         One of:
         <ul>
-          <li>APPLICATION</li>
+          <li>APP</li>
           <li>USER</li>
           <li>ROLE</li>
         </ul>
