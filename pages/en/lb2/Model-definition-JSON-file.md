@@ -818,10 +818,7 @@ The value of the `acls` key is an array of objects that describes the access 
           </li>
           <li>A static role name</li>
         </ul>
-        NOTE:
-            <code>$related principalId</code> is not yet implemented.</p>
-          </div>
-        </div>
+        <p>NOTE:<code>$related principalId</code> is not yet implemented.</p>
       </td>
     </tr>
     <tr>
