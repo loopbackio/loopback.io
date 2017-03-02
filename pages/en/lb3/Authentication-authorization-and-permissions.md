@@ -79,7 +79,7 @@ server.enableAuth({ datasource: 'db' });
 ```
 
 {% include note.html content="
-Passing a <b>`datasource`</b> to the <b>`enableAuth()`</b> method as shown here will let Loopback take care of attaching any built-in model required by the access control feature, which is perfectly suited for most applications.
+Passing a `datasource` to the `enableAuth()` method as shown here will let LoopBack take care of attaching any built-in models required by the access control feature, which is suitable for most applications.
 " %}
 
 {% include tip.html content="
