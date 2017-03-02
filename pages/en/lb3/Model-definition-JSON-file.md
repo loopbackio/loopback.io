@@ -740,7 +740,7 @@ The value of the `acls` key is an array of objects that describes the access 
 <table>
   <thead>
     <tr>
-      <th>Key</th>
+      <th width="120">Key</th>
       <th>Type</th>
       <th>Description</th>
     </tr>

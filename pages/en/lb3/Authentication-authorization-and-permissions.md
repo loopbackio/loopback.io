@@ -2,6 +2,7 @@
 title: "Authentication, authorization, and permissions"
 lang: en
 layout: navgroup
+toc_level: 2
 navgroup: user-mgmt
 keywords: LoopBack
 tags: authentication
@@ -24,7 +25,7 @@ specifying who or what can read/write the data or execute methods on the models.
 
 LoopBack's access control system is built around a few core concepts, as summarized in the following table. 
 
-| Term | Description | Responsibility | Example |
+| Term&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Description | Responsibility | Example |
 |---|---|---|---|
 | Principal | An entity that can be identified or authenticated. | Represents identities of a request to protected resources. | A user <br/> An application <br/> A role (please note a role is also a principal) |
 | Role | A group of principals with the same permissions. | Organizes principals into groups so they can be used. | **Dynamic role**: <br/>`$everyone` (for all users) <br/>`$unauthenticated` (unauthenticated users) <br/> `$owner` (the principal is owner of the model instance), which can be:<br/>&nbsp;&nbsp;&#9702; A simple property called `userId`<br/>&nbsp;&nbsp;&#9702; A simple property called `owner`<br/>&nbsp;&nbsp;&#9702; A relation to a model that extends User.  <br/><br/> **Static role**: admin (a defined role for administrators) |
@@ -36,25 +37,27 @@ LoopBack's access control system is built around a few core concepts, as summari
 The general process to implement access control for an application is:
 
 1.  **Implement authentication**:
-    In the application, add code to create (register) new users, login users (get and use authentication tokens), and logout users.
+    In the application, add code to create (register) new users, log in users (get and use authentication tokens), and log out users.
 2.  **Specify user roles**.
     Define the user roles that your application requires.
     For example, you might create roles for anonymous users, authenticated users, group members, and administrators. 
 3.  **Define access for each role and model method**.
     For example, you might enable anonymous users to read a list of banks, but not allow them to do anything else.
     LoopBack models have a set of built-in methods, and each method maps to either the READ or WRITE access type.
-    In essence, this step amounts to specifying whether access is allowed for each role and each Model - access type, as illustrated in the example below.<br>
-		_NOTE: you can also map directly access rights to specific users or applications._
-4.  **Set-up access control for users**:
-		This can be achieved either by statically mapping users with any role you may have earlier created using the Role model, **or** by adding code to register dynamic role resolvers that will at runtime resolve whether a user, given a preconfigured set of conditions, has a given role.
+    In essence, this step amounts to specifying whether access is allowed for each role and each Model/access type, as illustrated in the example below.<br/><br/>
+		NOTE: you can also map access rights directly to specific users or applications.
+4.  **Set-up access control for users**.  Do one of:
+  - Statically map users with any role previously created using the Role model.  For more information, see [Static roles](Defining-and-using-roles.html#static-roles).
+  - Add code to register dynamic role resolvers that at runtime resolve whether a user, given a preconfigured set of conditions, has a given role.  For more information, see [Dynamic roles](Defining-and-using-roles.html#dynamic-roles).
 
 ## Initial setup
 
-### Enabling Access control
+### Enabling access control
 
-When you create your app with the LoopBack [application generator](Application-generator.html), access control is automatically enabled, _except_ if you choose the "empty-server" application type.
-To enable access control for an "empty-server" application, you must add a boot
-script that calls [`enableAuth()`](https://apidocs.strongloop.com/loopback/#app-enableauth) as shown in the following example:
+Applications created with the LoopBack [application generator](Application-generator.html)
+have access control enabled by default, _except_ for the "empty-server" application type.
+To enable access control for an "empty-server" application, add a boot
+script that calls [`enableAuth()`](https://apidocs.strongloop.com/loopback/#app-enableauth); for example:
 
 {% include code-caption.html content="server/boot/authentication.js" %}
 ```javascript
@@ -63,29 +66,29 @@ module.exports = function enableAuthentication(server) {
 };
 ```
 
-### Preparing Access control models
+### Preparing access control models
 
-Then you need to make sure the `User`, and optionaly the `AccessToken` models are configured appropriately according to your set-up.
+Make sure the `User` model, (and possibly the `AccessToken` model) is configured appropriately according to your set-up.
 
-Normally you should have already implemented at least one custom user model, extending the built-in `User` model, as described in [this section](Using-built-in-models.html#user-model).
+Normally you should have already implemented at least one custom user model, extending the built-in `User` model, as described in [Using built-in models](Using-built-in-models.html#user-model).
 
-Usually you don't need any extra configuration regarding built-in models `Role`, `RoleMapping`, and `ACL` which you can be use without any customization. Just make sure they are declared in the `model-config.json` configuration file, or in case you don't require either to customize the `AccessToken` model that you pass a datasource to the `enableAuth()` method as follows:
+Usually you don't need to extend or customize the built-in models `Role`, `RoleMapping`, and `ACL`. Just make sure they are declared in the `model-config.json` configuration file, or in case you don't require either to customize the `AccessToken` model that you pass a datasource to the `enableAuth()` method as follows:
 
 ```javascript
 server.enableAuth({ datasource: 'db' });
 ```
 
 {% include note.html content="
-Passing a <b>`datasource`</b> to the <b>`enableAuth()`</b> method as shown here will let Loopback take care of attaching any built-in model required by the Access Control feature, which is perfectly suited for most applications.
+Passing a <b>`datasource`</b> to the <b>`enableAuth()`</b> method as shown here will let Loopback take care of attaching any built-in model required by the access control feature, which is perfectly suited for most applications.
 " %}
 
 {% include tip.html content="
-Whether you can use the built-in `AccessToken` model or **require** to create a custom accessToken model extending the built-in model depends on whether you plan to use a single or several user models extending the built-in `User` model. Both cases are covered in the next two sections.
+Whether you can use the built-in `AccessToken` model or create a custom accessToken model extending the built-in model depends on whether you plan to use one or several user models extending the built-in `User` model. Both cases are covered in the next two sections.
 " %}
 
-#### Access Control with a single user model
+#### Access control with a single user model
 
-In the case your application leverages only one type of user extending the built-in `User` model (which should the case in a majority of configurations), you barely have no further configuration to do.
+If your application leverages only one type of user extending the built-in `User` model (which should the case in a majority of configurations), you have little further configuration to do.
 
 1.  Rely on the built-in `AccessToken` model.  
 2.  Make sure your custom user model implements a hasMany relation with the AccessToken model as follows:
@@ -106,39 +109,41 @@ In the case your application leverages only one type of user extending the built
 ...
 ```
 
-#### Access Control with multiple user models
+#### Access control with multiple user models
 
-##### Purpose
+Having multiple user models may be required in certain situations to deal with significantly different types of users in an application.
 
-While this is not a day-to-day scenario, it may be required in more advanced situations to deal with significantly different types of users in a Loopback application.
+If the types of users differ by just a few properties, then it's easiest to overload a single custom user model with all properties required, and differentiate access control behavior with static roles mapped to the different user types.
 
-In some of these situations where the different types of users mostly differ by a limited amount of properties a standard fallback consists in overloading a single custom user model with all properties required by all types of users and differentiate the access control behavior with static roles mapped to the different types of users.
+A more complex situation is when the different types of users differ not just in their properties, but also by their access rights and relations with other models. For example, applications where the concept of an _organization_ is involved, creating intertwined layers of relationships and thus of access control.
+Such circumstances require the application to manage the different user types in separate models.
 
-On the other hand one could be facing situations where the types of users involved not only differ from one another by their properties, but also by their nature in the application and thus by their relations with other models. Examples of such applications include for example applications where the concept of Organization is involved, inducing intertwined layers of relationships and thus of access control.
-
-<br>
 Consider the following example:  
+
 - **Application** has `Users`: _app-admins, app-managers, app-auditors, etc._  
 - **Application** has Organizations  
 - **Organizations** have `Users`: _org-admins, org-managers, org-marketing, org-sales_  
 - **Organizations** have Customers (which are also `Users`)
 
-Such an application sums up 3 different types of users in the application : `App-Managers`, `Org-Managers`, `Org-Customers`. Each of these 3 types of users have very different relations and rights with the models composing the application.  
-Such circumstances require the application to actually manage these different types of users in separated models.
+Such an application has three different types of users:
+
+- `App-Managers`
+- `Org-Managers`
+- `Org-Customers`
+
+Each type of user has different relations with and access rights to the models composing the application.  
 
 ##### Setup
 
 {% include important.html content="
-When using multiple user models, you should not let Loopback auto-attach built-in models required by the Access Control feature. <b>Instead</b>, call the <b>`enableAuth()`</b> method with no argument and manually define all models required in the `server/model-config.json` configuration file.
+When using multiple user models, you should not let LoopBack auto-attach built-in models required by the access control feature.  Instead, call the `enableAuth()` method with no argument and manually define all models required in the `server/model-config.json` configuration file.
 " %}
 
-In order to allow the Loopback access control system to work with several models extending the built-in `User` model. The relations between the `users` models and the `AccessToken` should be modified to allow a single `AccessToken` model to host access tokens for multiple types of users while at the same time allowing each `user` models instances to be linked to their related access tokens in a non ambiguous way.  
+To use several models extending the built-in `User` model, you must modify the relations between the `users` models and the `AccessToken` models to allow a single `AccessToken` model to host access tokens for multiple types of users while at the same time allowing each `user` model instance to be linked to unique related access tokens.  
 
-This is achieved by changing the **hasMany** relation from `User` to `AccessToken` and the **belongsTo** relation from `AccessToken` to `User` by their [polymorphic](Polymorphic-relations.html) equivalents, in which the `principalType` property is used as a **_discriminator_** to resolve which of the potential `user` model instance an 'accessToken' instance belongs to.
+This is achieved by changing the **hasMany** relation from `User` to `AccessToken` and the **belongsTo** relation from `AccessToken` to `User` by their [polymorphic](Polymorphic-relations.html) equivalents, in which the `principalType` property is used as a _discriminator_ to resolve which of the potential `user` model instance an 'accessToken' instance belongs to.
 
-<br>
-{% include note.html content="
-Adapt the following configuration snippets in your custom <code>users</code> and <code>accessToken</code> model definitions.
+{% include note.html content="Adapt the following configuration snippets in your custom `users` and `accessToken` model definitions.
 "%}
 
 {% include code-caption.html content="common/models/any-custom-user.json" %}
@@ -179,16 +184,14 @@ Adapt the following configuration snippets in your custom <code>users</code> and
 
 {% include important.html content="
 In particular, pay attention to:  
-<ul>
-  <li>the <code>model</code> name used to refer to the access token model in the different user models (here named \"customAccessToken\")</li>
-  <li>the <code>idName</code> used for the foreignKey in the access token model referring to the user instance (here named \"id\")</li>
-  <li>the <code>idType</code> used for this foreignKey, according to the type of connector used for the related user models (here using \"string\" for a MongoDB connector for example)</li>
-  <li>use <b>\"principalType\"</b> for the <code>discriminator</code> name, this is mandatory and cannot be changed</li>
-</ul>
+
+*  The `model` name used to refer to the access token model in the different user models (here named \"customAccessToken\")
+*  The `idName` used for the foreignKey in the access token model referring to the user instance (here named \"id\")
+*  The `idType` used for this foreignKey, according to the type of connector used for the related user models (here using \"string\" for a MongoDB connector for example)
+*  Use \"principalType\" for the `discriminator` name. This is mandatory and cannot be changed
 " %}
 
-<br>
-**Last but not least**, do not forget to tell Loopback to use the newly defined custom `accessToken` model by configuring accordingly
+Don't forget to specify the custom `accessToken` model as follows:
 
 {% include code-caption.html content="server/middleware.json" %}
 ```json
@@ -203,7 +206,7 @@ In particular, pay attention to:
 }
 ```
 
-**Note**: this can also be achieved by including these lines in the `server.js` file or in a boot script, once again paying attention to the _name_ of the custom `accessToken` model.
+**Note**: Alternatively, you can put these lines in the `server.js` file or in a boot script, once again paying attention to the _name_ of the custom `accessToken` model.
 
 {% include code-caption.html content="server/server.js" %}
 ```javascript
@@ -213,10 +216,8 @@ app.use(loopback.token({
   model: app.models.customAccessToken
 }));
 ```
-<br>
-{% include tip.html content="
-**Well done, you're all set!**  
-From this point you should be able to use Loopback access control over multiple user models extending the built-in `User` model, with barely no modification compared to the way you're used to handle it with a single user model.  
+
+{% include tip.html content="From this point you should be able to use LoopBack access control over multiple user models extending the built-in `User` model, with barely no modification compared to the way you're used to handle it with a single user model.  
 " %}
 
 ##### Methods and parameters impacted when using multiple user models
@@ -225,7 +226,7 @@ From this point you should be able to use Loopback access control over multiple 
 Pay attention to the following methods and parameters impacted by the switch to multiple user models support.
 " %}
 
-* Anytime a method is expecting the **principalType** for a principal of the `User` type (as-is or nested in an [AccessContext](https://apidocs.strongloop.com/loopback/#accesscontext) object), provide the name of the targeted `user` model name (e.g. `'oneCustomUserModelName'`) instead of the usual `Principal.USER` (or `'USER'`).<br>
+Anytime a method is expecting the **principalType** for a principal of the `User` type (as-is or nested in an [AccessContext](https://apidocs.strongloop.com/loopback/#accesscontext) object), provide the name of the targeted `user` model name (e.g. `'oneCustomUserModelName'`) instead of the usual `Principal.USER` (or `'USER'`).<br>
 Such methods include: `Role.getRoles()` and `Role.isInRole()`. For example:
 
 ```javascript
@@ -235,7 +236,7 @@ Role.getRoles({
 });
 ```
 
-* `Role` instance method `Role.prototype.users()`: the method which return all the users mapped with a given role instance should now be called with the following syntax:
+`Role` instance method `Role.prototype.users()`: the method which return all the users mapped with a given role instance should now be called with the following syntax:
 
 ```javascript
 roleInstance.users({where: {
@@ -243,7 +244,7 @@ roleInstance.users({where: {
 });
 ```
 
-* `RoleMapping` static methods: these methods either accessed directly or through the relation `principals` of the `Role` model should also use the new `principalType` syntax, for example:
+`RoleMapping` static methods: these methods either accessed directly or through the relation `principals` of the `Role` model should also use the new `principalType` syntax, for example:
 
 ```javascript
 roleInstance.principals.create({
@@ -321,9 +322,9 @@ MyUser.disableRemoteMethod('__get__accessTokens', false);
 MyUser.disableRemoteMethod('__updateById__accessTokens', false);
 ```
 
-### Read-Only endpoints example
+### Read-only endpoints example
 
-You may want to only expose read-only operations on your model hiding all POST, PUT, DELETE verbs
+You may want to only expose read-only operations on your model; in other words hiding all operations that use HTTP POST, PUT, DELETE method.
 
 **common/models/model.js**
 
