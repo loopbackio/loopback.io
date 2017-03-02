@@ -44,10 +44,8 @@ For more information, see [AngularJS JavaScript SDK](AngularJS-JavaScript-SDK).
 To generate the Angular services for a LoopBack application, use the AngularJS SDK `lb-ng` command-line tool.  You may need to install `lb-ng` with the following command.  
 
 ```
-$ npm install -g apiconnect
+$ npm install -g loopback-sdk-angular-cli
 ```
-
-On Windows you may find that you still can't execute `lb-ng` from the command line once the previous step has been completed.  If this is the case, you should update your path environment variable to include `C:\Users\[username]\AppData\Roaming\npm\node_modules\apiconnect\node_modules\.bin`.
 
 Next, create the `client/js/services` directory, if you don't already have it (by using the `mkdir` command, for example), then in the project root directory, enter the `lb-ng` command as follows:
 
