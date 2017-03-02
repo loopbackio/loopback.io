@@ -223,7 +223,7 @@ Request with a filter to limit response to two records:
 
 Find first instance of the model matched by filter from the data source.
 
-`GET /modelName/findOne?filter=[filterType1]=<val1>&filter[filterType2]=<val2>...`
+`GET /modelName/findOne?filter[filterType1]=<val1>&filter[filterType2]=<val2>...`
 
 ### Arguments
 
