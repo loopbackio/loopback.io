@@ -161,21 +161,19 @@ Each incoming request is mapped to an object with three attributes:
 ACL rules are described as an array of objects, each of which consists of attributes listed at 
 [Model definition JSON file - ACLs](Model-definition-JSON-file.html#acls). 
 
-1.  model
-2.  property
-3.  accessType
-4.  principalType
-    1.  USER
-    2.  APP
-    3.  ROLE
-        1.  custom roles
-        2.  $owner
-        3.  $authenticated
-        4.  $unauthenticated
-        5.  $everyone
-5.  permission
-    1.  DENY
-    2.  ALLOW
+*  model
+*  property
+*  accessType
+*  principalType
+    *  USER: a user ID
+    *  APP: an application ID
+    *  ROLE: a role name
+        *  _built-in dynamic roles_, one of [`$everyone`, `$unauthenticated`, `$authenticated`, `$owner`]
+        *  [_custom static roles_](Defining-and-using-roles.html#static-roles), directly mapped to principals
+        *  [_custom dynamic roles_](Defining-and-using-roles.html#dynamic-roles), registered with custom role resolvers
+*  permission
+    *  DENY
+    *  ALLOW
 
 ### ACL rule precedence
 
