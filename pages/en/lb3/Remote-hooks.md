@@ -7,17 +7,21 @@ keywords: LoopBack
 tags: application_logic
 sidebar: lb3_sidebar
 permalink: /doc/en/lb3/Remote-hooks.html
+<<<<<<< HEAD
+summary: A remote hook executes a function before or after a remote method is called.
+=======
 summary: A remote hook runs before or after execution of a model's remote method.
+>>>>>>> gh-pages
 ---
 ## Overview
 
-LoopBack provides two kinds of hooks:
+LoopBack provides three kinds of hooks:
 
 * **Remote hooks**, that execute before or after calling a remote method, either a custom [remote method](Remote-methods.html) 
   or a standard create, retrieve, update, and delete method inherited from [PersistedModel](http://apidocs.strongloop.com/loopback/#persistedmodel).
   See [PersistedModel REST API](PersistedModel-REST-API.html) for information on how the Node methods correspond to REST operations.
-* **[Operation hooks](Operation-hooks.html)** that execute when models perform create, retrieve, update, and delete operations.
-  **NOTE**: Operation hooks replace deprecated model hooks.
+* **[Operation hooks](Operation-hooks.html)** that execute when models perform create, retrieve, update, and delete operations.  Operation hooks replace deprecated model hooks.
+- **[Connector hooks](Connector-hooks.html)** that execute before requests to a data source connector or after the connector's response.
 
 A _remote hook_ enables you to execute a function before or after a remote method is called by a client:
 
@@ -25,14 +29,11 @@ A _remote hook_ enables you to execute a function before or after a remote met
 * `afterRemote()` runs after the remote method has finished successfully.
 * `afterRemoteError()` runs after the remote method has finished with an error.
 
-{% include tip.html content="
-
-Use beforeRemote hooks to validate and sanitize inputs to a remote method.
+{% include tip.html content="Use beforeRemote hooks to validate and sanitize inputs to a remote method.
 Because a beforeRemote hook runs _before_ the remote method is executed, it can access the inputs to the remote method, but not the result.
 
 Use afterRemote hooks to modify, log, or otherwise use the results of a remote method before sending it to a remote client.
 Because an afterRemote hook runs _after_ the remote method is executed, it can access the result of the remote method, but cannot modify the input arguments.
-
 " %}
 
 ### Signature
@@ -42,17 +43,22 @@ Both `beforeRemote()` and `afterRemote()` have the same signature; below syntax 
 For static custom remote methods:
 
 ```javascript
-_modelName_.beforeRemote( _methodName_, function( ctx, next) {
+modelName.beforeRemote( methodName, function( ctx, next) {
     //...
     next();
 });
 ```
 
+Where:
+
+- `modelName` is the name of the model that has the remote method.
+- `methodName` is the name of the remote method.
+
 Instance methods and static built-in methods such as [`upsert()`](http://apidocs.strongloop.com/loopback/#persistedmodel-upsert) or 
 [`create()`](http://apidocs.strongloop.com/loopback/#persistedmodel-create) require a third argument in the callback:
 
 ```javascript
-_modelName_.beforeRemote( _methodName_, function( ctx, _modelInstance_, next) {
+modelName.beforeRemote( methodName, function( ctx, modelInstance, next) {
     //...
     next();
 });
@@ -61,7 +67,7 @@ _modelName_.beforeRemote( _methodName_, function( ctx, _modelInstance_, next) {
 The hook `afterRemoteError()` has a slightly different signature: The handler function has only two arguments:
 
 ```javascript
-_modelName_.afterRemoteError( _methodName_, function( ctx, next) {
+modelName.afterRemoteError( methodName, function( ctx, next) {
     //...
     next();
 });
@@ -69,19 +75,19 @@ _modelName_.afterRemoteError( _methodName_, function( ctx, next) {
 
 Where:
 
-* `_modelName_` is the name of the model to which the remote hook is attached.
-* `_methodName_` is the name of the method that triggers the remote hook. This may be a custom [remote method](Remote-methods.html)
+* `modelName` is the name of the model to which the remote hook is attached.
+* `methodName` is the name of the method that triggers the remote hook. This may be a custom [remote method](Remote-methods.html)
   or a standard create, retrieve, update, and delete method inherited from [PersistedModel](http://apidocs.strongloop.com/loopback/#persistedmodel).
   It may include wildcards to match more than one method (see below).
 * `ctx` is the [context object](#context-object). 
-* `_modelInstance_` is the affected model instance.
+* `modelInstance` is the affected model instance.
 
 The syntax above includes a call to `next()` as a reminder that you must call `next()` at some point in the remote hook callback function.
 It doesn't necessarily have to come at the end of the function, but must be called at some point before the function completes.
 
 #### Wildcards
 
-You can use the following wildcard characters in `_methodName_`:
+You can use the following wildcard characters in `methodName`:
 
 * Asterisk `'*'` to match any character, up to the first occurrence of the delimiter character `'.'` (period).
 * Double-asterisk to match any character, including the delimiter character `'.'` (period).
