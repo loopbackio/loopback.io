@@ -18,11 +18,14 @@ layout: default
   <div class="summary">{{page.summary}}</div>
  {% endif %}
 
-  {% if page.layout != 'readme' and page.layout != 'navgroup' %}
-    {% unless page.toc == false %}
-      {% include toc.html level=page.toc_level %}
-    {% endunless %}
-  {% endif %}
+{% if page.layout == 'navgroup' %}
+  {% capture nav-include %}{% include navgroups/{{page.navgroup}}.md %}{% endcapture %}
+  {{ nav-include | markdownify }}
+{% endif %}
+
+ {% unless page.toc == false %}
+   {% include toc.html level=page.toc_level %}
+ {% endunless %}
 
     {{content}}
 

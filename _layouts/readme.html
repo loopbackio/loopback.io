@@ -19,10 +19,6 @@ h1:not(.post-title-main) { display: none; }
     <a href="https://github.com/{{org}}/{{repo-branch}}">{{page.source}} README</a>.
   </div>
 
-{% if page.toc %}
-  {% include toc.html level=page.toc_level %}
-{% endif %}
-
   {{content}}
 
   {% capture included-readme %}{% include_relative readmes/{{readme-file}}.md %}{% endcapture %}

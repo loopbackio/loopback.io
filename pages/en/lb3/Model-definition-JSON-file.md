@@ -41,7 +41,10 @@ For example, here is an excerpt from a model definition file for a customer mode
   "acls": [...],  // See ACLs below
   "scopes": {...},  // See Scopes below
   "indexes" : { ...}, // See Indexes below
-  "methods": [...],  // See Methods below - New for LB2.0 - Remoting metadata
+  "methods": [...],  // See Methods below
+  "remoting": {
+      "normalizeHttpPath": true
+    },  
   "http": {"path": "/foo/mypath"}
 }
 ```
@@ -53,38 +56,24 @@ Properties are required unless otherwise designated.
 <table>
   <thead>
     <tr>
-      <th width="120">Property</th>
+      <th width="160">Property</th>
       <th width="100">Type</th>
       <th>Default</th>
       <th>Description</th>
     </tr>
   </thead>
+
   <tbody>
     <tr>
-      <td>name</td>
-      <td>String</td>
-      <td>None</td>
-      <td>Name of the model.</td>
-    </tr>
-    <tr>
-      <td>description</td>
-      <td>String or Array</td>
-      <td>None</td>
+      <td>acls</td>
+      <td>Array</td>
+      <td>N/A</td>
       <td>
-        Optional description of the model.<br/><br/>
-        You can split long descriptions into arrays of strings (lines) to keep line lengths manageable; for example:
-        <pre>[ "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-"sed do eiusmod tempor incididunt ut labore et dolore",<br> "magna aliqua." ] </pre>
+        Set of <code>ACL</code> specifications that describes access control for the model.
+        See <a href="#acls">ACLs</a> below.
       </td>
     </tr>
-    <tr>
-      <td>plural</td>
-      <td>String</td>
-      <td>Plural of <code>name</code> property using standard English conventions.</td>       
-      <td>
-        Plural form of the model name.  
-      </td>
-    </tr>
+
     <tr>
       <td>base</td>
       <td>String</td>
@@ -93,19 +82,19 @@ Properties are required unless otherwise designated.
         Name of another model that this model extends. The model will "inherit" properties and methods of the base model.
       </td>
     </tr>
+
     <tr>
-      <td>idInjection</td>
-      <td>Boolean</td>
-      <td><code>true</code></td>       
+      <td>description</td>
+      <td>String or Array</td>
+      <td>None</td>
       <td>
-        Whether to automatically add an <code>id</code> property to the model:
-        <ul>
-          <li><code>true</code>: <code>id</code> property is added to the model automatically. This is the default.</li>
-          <li><code>false</code>: <code>id</code> property is not added to the model</li>
-        </ul>
-        See <a href="#id-properties">ID properties</a> for more information.  The <code>idInjection</code> property in <code>options</code> (if present) takes precedence.
+        Optional description of the model.<br/><br/>
+        You can split long descriptions into arrays of strings (lines) to keep line lengths manageable; for example:
+        <pre style="font-size: 75%;">[ "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+  "sed do eiusmod tempor incididunt ut labore et dolore",<br>  "magna aliqua." ] </pre>
       </td>
     </tr>
+
     <tr>
       <td>forceId</td>
       <td>Boolean</td>
@@ -114,6 +103,7 @@ Properties are required unless otherwise designated.
         If true, prevents clients from setting the auto-generated ID value manually.
       </td>
     </tr>
+
     <tr>
       <td>http.path</td>
       <td>None</td>
@@ -136,6 +126,28 @@ Properties are required unless otherwise designated.
         </ul>
       </td>
     </tr>
+
+    <tr>
+      <td>idInjection</td>
+      <td>Boolean</td>
+      <td><code>true</code></td>       
+      <td>
+        Whether to automatically add an <code>id</code> property to the model:
+        <ul>
+          <li><code>true</code>: <code>id</code> property is added to the model automatically. This is the default.</li>
+          <li><code>false</code>: <code>id</code> property is not added to the model</li>
+        </ul>
+        See <a href="#id-properties">ID properties</a> for more information.  The <code>idInjection</code> property in <code>options</code> (if present) takes precedence.
+      </td>
+    </tr>
+
+    <tr>
+      <td>name</td>
+      <td>String</td>
+      <td>None</td>
+      <td>Name of the model.</td>
+    </tr>
+
     <tr>
       <td>options</td>
       <td>Object</td>
@@ -144,6 +156,16 @@ Properties are required unless otherwise designated.
         JSON object that specifies model options. See <a href="#options">Options</a> below.
       </td>
     </tr>
+
+    <tr>
+      <td>plural</td>
+      <td>String</td>
+      <td>Plural of <code>name</code> property using standard English conventions.</td>       
+      <td>
+        Plural form of the model name.  
+      </td>
+    </tr>
+
     <tr>
       <td>properties</td>
       <td>Object</td>
@@ -152,6 +174,7 @@ Properties are required unless otherwise designated.
         JSON object that specifies the properties in the model. See <a href="#properties">Properties</a> below.
       </td>
     </tr>
+
     <tr>
       <td>relations</td>
       <td>Object</td>
@@ -161,26 +184,35 @@ Properties are required unless otherwise designated.
         See <a href="#relations">Relations</a> below.
       </td>
     </tr>
+
     <tr>
-      <td>acls</td>
-      <td>Array</td>
-      <td>N/A</td>
+      <td>remoting.<br/>normalizeHttpPath</td>
+      <td>Boolean</td>
+      <td>false</td>
       <td>
-        Set of <code>ACL</code> specifications that describes access control for the model.
-        See <a href="#acls">ACLs</a> below.
+        If <code>true</code>, in HTTP paths, converts:
+        <ul>
+          <li>Uppercase letters to lowercase.</li>
+          <li>Underscores (&#95;) to dashes (-).</li>
+          <li>CamelCase to dash-delimited.</li>
+        </ul>
+        Does not affect placeholders (for example ":id").
+        For example, "MyClass" or "My_class" becomes "my-class".
       </td>
     </tr>
-    <tr>
-      <td>scopes</td>
-      <td>Object</td>
-      <td>N/A</td>
-      <td>See <a href="#scopes">Scopes</a> below.</td>
-    </tr>
+
     <tr>
       <td>replaceOnPUT</td>
       <td>Boolean</td>
       <td><code>false</code></td>
       <td>If true, <a href="https://apidocs.strongloop.com/loopback/#persistedmodel-replaceorcreate">replaceOrCreate()</a>  and <a href="https://apidocs.strongloop.com/loopback/#persistedmodel-replacebyid">replaceById()</a> use the HTTP PUT method; if false, updateOrCreate() and <a href="https://apidocs.strongloop.com/loopback/#persistedmodel-prototype-updateattributes">updateAttributes()</a>/patchAttributes() use the HTTP PUT method.<br/>For more information, see <a href="Exposing-models-over-REST.html#replaceonput-flag">Exposing models over REST</a>.</td>
+    </tr>
+
+    <tr>
+      <td>scopes</td>
+      <td>Object</td>
+      <td>N/A</td>
+      <td>See <a href="#scopes">Scopes</a> below.</td>
     </tr>
   </tbody>
 </table>
@@ -740,7 +772,7 @@ The value of the `acls` key is an array of objects that describes the access 
 <table>
   <thead>
     <tr>
-      <th>Key</th>
+      <th width="120">Key</th>
       <th>Type</th>
       <th>Description</th>
     </tr>
@@ -783,17 +815,23 @@ The value of the `acls` key is an array of objects that describes the access 
         The value must be one of:
         <ul>
           <li>A user ID (String|number|any)</li>
+          <li>An application ID (String|number|any)</li>
           <li>
             One of the following predefined dynamic roles:
             <ul>
               <li><code>$everyone</code>&nbsp;- Everyone</li>
               <li><code>$owner</code>&nbsp;- Owner of the object</li>
-              <li><code>$related</code>&nbsp;- Any user with a relationship to the object (not implemented yet!)</li>
               <li><code>$authenticated</code>&nbsp;- Authenticated user</li>
               <li><code>$unauthenticated</code>&nbsp;- Unauthenticated user</li>
             </ul>
           </li>
-          <li>A static role name</li>
+          <li>
+            A custom role name, either:
+            <ul>
+              <li><b>static</b>, directly mapped to a principal</li>
+              <li><b>dynamic</b>, registered with a custom role resolver</li>
+            </ul>
+          </li>
         </ul>
       </td>
     </tr>
@@ -804,7 +842,7 @@ The value of the `acls` key is an array of objects that describes the access 
         Type of the principal. Required.
         One of:
         <ul>
-          <li>APPLICATION</li>
+          <li>APP</li>
           <li>USER</li>
           <li>ROLE</li>
         </ul>
