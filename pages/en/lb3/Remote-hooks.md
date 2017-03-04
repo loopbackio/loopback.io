@@ -7,11 +7,7 @@ keywords: LoopBack
 tags: application_logic
 sidebar: lb3_sidebar
 permalink: /doc/en/lb3/Remote-hooks.html
-<<<<<<< HEAD
-summary: A remote hook executes a function before or after a remote method is called.
-=======
 summary: A remote hook runs before or after execution of a model's remote method.
->>>>>>> gh-pages
 ---
 ## Overview
 
