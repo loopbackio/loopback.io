@@ -60,6 +60,11 @@ See also [https://github.com/pasindud/awesome-loopback](https://github.com/pasin
       <td>&nbsp;</td>
     </tr>
     <tr>
+      <td><a href="http://fabric-composer.org/" class="external-link" rel="nofollow">Fabric Composer</a></td>
+      <td><a href="https://www.npmjs.org/package/loopback-connector-composer" class="external-link" rel="nofollow">loopback-connector-composer</a></td>
+      <td>Enables integration with Blockchain applications that are built with Fabric Composer for Hyperledger Fabric</td>
+    </tr>
+    <tr>
       <td><a href="https://mandrill.com/" class="external-link" rel="nofollow">Mandrill</a></td>
       <td><a href="https://www.npmjs.org/package/lb-connector-mandrill" class="external-link" rel="nofollow">lb-connector-mandrill</a></td>
       <td>Enables applications to send emails via Mandrill</td>
