@@ -59,7 +59,7 @@ LoopBack 框架是由一组Node.js的模块构成的。你可以单独使用这�
 <tr><td>抽象方式</td><td>数据模型的抽象层，用与实现和不同数据库的交互</td><td>可以连接到不同的数据库或服务，并且提供一个对象用于CRUD，通过这个对象用户不必关心数据层具体使用的是什么数据库，可以是RDBS, MongoDB, Memory。</td><td><div style="width: 200px;">loopback-datasource-juggler</div></td></tr>
 <tr><td>初始化</td><td>初始化应用</td><td>用于配置数据源, 定制/设置数据模型，并且将数据模型加载到指定的数据源上。同时可以 配置应用本身和执行启动脚本。</td><td>loopback-boot</td></tr>
 <tr><td>执行序列</td><td>执行Express中间件</td><td>设置中间件，使得这些中间件可以在应用程序的不同阶段被执行。</td><td>loopback-phase</td></tr>
-<tr><td>数据</td><td>连接RDBMS 和 noSQL 数据库</td><td>用于连接各种<span style="line-height: 1.4285715;">RDBMS和noSQL数据源的模块。</td><td>loopback-connector-mongodb
+<tr><td>数据</td><td>连接RDBMS 和 noSQL 数据库</td><td>用于连接各种<span style="line-height: 1.4285715;">RDBMS和noSQL数据源的模块。</span></td><td>loopback-connector-mongodb
 loopback-connector-mysql
 loopback-connector-postgresql
 loopback-connector-msssql
