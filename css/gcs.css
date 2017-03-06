@@ -3,7 +3,7 @@
  *
  */
 /* Slight reset to make the preview have ample padding. */
-.gsc-branding-user-defined. .gsc-branding-img, .gsc-branding-text, table.gsc-branding { display: none; }
+.gsc-branding-user-defined, .gsc-branding-img, .gsc-branding-text, table.gsc-branding { display: none !important; }
 
 .cse .gsc-control-cse,
 .gsc-control-cse {
