@@ -36,17 +36,19 @@ topnav_dropdowns:
           external_url: https://strongloop.com/strongblog/category/loopback-2/
     - title: Translations
       folderitems:
-        - title: "Español"
+        - title: "Español (v2)"
           url: /doc/es/lb2/
-        - title: "Français"
+        - title: "Français (v2)"
           url: /doc/fr/lb2/
-        - title: "한국어"
+        - title: "한국어 (v3)"
+          url: /doc/ko/lb3/
+        - title: "한국어 (v2)"
           url: /doc/ko/lb2/
-        - title: "Português"
+        - title: "Português (v2)"
           url: /doc/pt-br/lb2/
-        - title: "日本語"
+        - title: "日本語 (v2)"
           url: /doc/ja/lb2/
-        - title: "Pусский"
+        - title: "Pусский (v2)"
           url: /doc/ru/lb2/
-        - title: "中文"
+        - title: "中文 (v2)"
           url: /doc/zh/lb2/

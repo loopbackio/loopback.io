@@ -1,10 +1,11 @@
 ---
 lang: ko
+layout: translation
 title: "LoopBack 3.0 - 한국어"
 toc: false
 keywords: LoopBack 3.0
 tags: [getting_started]
-sidebar: lb3_sidebar
+sidebar: ko_lb3_sidebar
 permalink: /doc/ko/lb3/index.html
 summary: LoopBack 3.0 is the current release.
 ---
