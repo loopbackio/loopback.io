@@ -19,6 +19,7 @@ Basic Elasticsearch datasource connector for [Loopback](http://strongloop.com/no
   - [Run both example and ES in docker](#run-both-example-and-es-in-docker)
   - [Run example locally and ES in docker](#run-example-locally-and-es-in-docker)
   - [Run example locally](#run-example-locally)
+- [How to achieve Instant search](#how-to-achieve-instant-search)
 - [Troubleshooting](#troubleshooting)
 - [Testing](#testing)
 - [Contributing](#contributing)
@@ -73,6 +74,7 @@ npm install loopback-connector-es --save --save-exact
 ### Optional:
 - **log:** sets elasticsearch client's logging, you can refer to the docs [here](https://www.elastic.co/guide/en/elasticsearch/client/javascript-api/current/configuration.html#config-log)
 - **defaultSize:** total number of results to return per page.
+- **refreshOn** optional array with method names you want to set refresh option as true
 - **requestTimeout:** this value is in milliseconds
 - **ssl:** useful for setting up a secure channel
 - **protocol:** can be `http` or `https` (`http` is the default if none specified) ... *must* be `https` if you're using `ssl`
@@ -271,15 +273,16 @@ To know more about `refresh` go through this [article](https://www.elastic.co/gu
 
 * [Related Issue](https://github.com/strongloop-community/loopback-connector-elastic-search/issues/72)
 * [Related PR](https://github.com/strongloop-community/loopback-connector-elastic-search/pull/81)
-##### Ways to configure refresh 
-Datasource File: Pass `refreshOn` array from datasource file including methods name in which you want this to be `true`
+
+### Ways to configure refresh 
+**Datasource File:** Pass `refreshOn` array from datasource file including methods name in which you want this to be `true`
 ```
     "es": {
         "name": "es",
         "refreshOn": ["save","create", "updateOrCreate"],
         .....
 ```
-Model.json file: Configurable on per model and operation level (`true`, `false`, `wait_for`)
+**Model.json file:** Configurable on per model and operation level (`true`, `false`, `wait_for`)
 ```
     "elasticsearch": {
          "create": {
@@ -389,6 +392,7 @@ Model.json file: Configurable on per model and operation level (`true`, `false`,
     User.find({order: 'name', where: {'name.native': 'Harrison'}}, function (err, users) {..}
     ```
   * Release `1.3.4` add's support for updateAll for elasticsearch `v-2.3` and above. To make updateAll work you will have to add below options in your `elasticsearch.yml` config file
+  
     ```
      script.inline: true
      script.indexed: true
