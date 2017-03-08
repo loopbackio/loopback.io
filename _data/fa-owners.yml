@@ -7,6 +7,8 @@
     - loopback-api-definition
     - loopback-component-explorer
     - loopback-swagger
+    community:
+    - STRML
 
 'Boot':
   - area: Boot
@@ -84,7 +86,7 @@
     - loopback-connector-kv-memcached
     - loopback-connector-kv-redis
     files:
-    - https://github.com/strongloop/loopback/tree/master/common/models
+    - https://github.com/strongloop/loopback/tree/master/common/models/key-value-model.js
     - https://github.com/strongloop/loopback-datasource-juggler/blob/master/connectors/kv-memory.js
     - https://github.com/strongloop/loopback-datasource-juggler/blob/master/lib/kvao.js
     smes:
@@ -204,6 +206,9 @@
     - jannyHou
     - Amir-61
     - superkhau
+    community:
+    - fabien
+    - clarkorz
 
   - area: 'Validation'
     label: juggler-validation
@@ -217,7 +222,7 @@
     - superkhau
 
 'LoopBack':
-  - area: 'Auth'
+  - area: 'Authentication and access control'
     label: loopback-auth
     owner:
     - sq-lb-epitome
@@ -227,8 +232,16 @@
     - loopback-example-ssl
     - loopback-example-user-management
     - loopback-policy
+    files:
+    - https://github.com/strongloop/loopback/tree/master/common/models/access-token.js
+    - https://github.com/strongloop/loopback/tree/master/common/models/acl.js
+    - https://github.com/strongloop/loopback/tree/master/common/models/role-mapping.js
+    - https://github.com/strongloop/loopback/tree/master/common/models/role.js
+    - https://github.com/strongloop/loopback/tree/master/lib/acces-context.js
     smes:
     - loay
+    community:
+    - ebarault
 
   - area: 'Glue'
     label: glue
@@ -313,6 +326,8 @@
     smes:
     - davidcheung
     - 0candy
+    community:
+    - zmln
 
   - area: 'iOS'
     label: sdk-ios
@@ -338,7 +353,7 @@
     - rashmihunt
 
 'Other':
-  - area: Other
+  - area: Project infrastructure
     label: N/A
     owner:
     - sq-lb-apex
@@ -351,3 +366,14 @@
     files:
     - https://github.com/strongloop-internal/loopback-knowledge-base
     smes:
+
+  - area: loopback-context
+    label: N/A
+    owner:
+    - qs-lb-asteroid
+    repos:
+    - loopback-context
+    smes:
+    - bajtos
+    community:
+    - josieusa
