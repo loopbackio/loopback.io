@@ -4,7 +4,7 @@ lang: ko
 keywords: LoopBack
 tags: [installation]
 sidebar: lb3_sidebar
-permalink: /doc/en/lb3/Installation.html
+permalink: /doc/ko/lb3/Installation.html
 summary: Install the LoopBack CLI tool to create and develop LoopBack 3.0 apps.
 ---
 
