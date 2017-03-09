@@ -56,7 +56,11 @@ The tool will then add an entry such as the following to `datasources.json`:
 
 This example creates a MySQL data source called "corp1". The identifier determines the name by which you refer to the data source and can be any string.
 
+If you wish to hide data source credentials outside the source code, and instead use environment variables, you can define a datasource programmatically. In order for a programmatically defined data source to be registered for use in attaching to a model ... TBC
+
 ## Add data source credentials
+
+For security reasons, it is better not to include credentials in the source code, and instead extract them from environment variables when defining the datasource.
 
 Edit `datasources.json` to add the necessary authentication credentials for the data source; typically hostname, username, password, and database name.
 
@@ -93,3 +97,9 @@ and set the dataSource property for the model. For example, to make myModel use 
 ```
 
 By default, the model generator creates models to use the `db` data source.
+
+In order for programmatically defined datasources to be associated with a model without encountering errors ... TBC
+
+The API documentation includes a Registry class which includes a function Register.createDataSource the purpose of which is .... TBC ...
+
+The difference between loopback.createDataSource vs app.dataSource vs new DataSource() is ... TBC
