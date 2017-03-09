@@ -26,6 +26,8 @@ topnav_dropdowns:
       folderitems:
         - title: Docs Github Repo
           external_url: https://github.com/strongloop/loopback.io
+        - title: Announcements Mailing List
+          external_url: https://groups.google.com/forum/#!forum/loopbackjs-announcements
         - title: Developer Forum
           external_url: https://groups.google.com/forum/#!forum/loopbackjs
         - title: Gitter Chat Room
