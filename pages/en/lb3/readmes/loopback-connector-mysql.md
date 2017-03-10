@@ -220,7 +220,7 @@ For example:
     "mysql":
     {
         "columnName":"LOCATION_ID",
-        "dataType":"VARCHAR2",
+        "dataType":"VARCHAR",
         "dataLength":20,
         "nullable":"N"
     }
