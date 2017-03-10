@@ -146,6 +146,10 @@ children:
   output: 'web, pdf'
   children:
 
+  - title: '03-10-2016'
+    url: /doc/en/lb2/Security-advisory-03-10-2017.html
+    output: 'web, pdf'
+
   - title: '08-16a-2016'
     url: /doc/en/lb2/Security-advisory-08-16a-2016.html
     output: 'web, pdf'
