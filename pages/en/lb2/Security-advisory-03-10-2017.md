@@ -32,7 +32,7 @@ Ensure that your application's `package.json` has the following line:
 ```js
 "dependencies": {
    ...
-  "loopback-component-storage": "^3.0.0",
+  "loopback-component-storage": "^3.0.1",
    ...
  },
 ```
