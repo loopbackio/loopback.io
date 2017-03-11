@@ -11,7 +11,7 @@ summary:
 
 ## Overview
 
-{% include image.html file="9830484.png" alt="" %} 
+{% include image.html file="9830484.png" alt="Models, data sources, and connectors" %} 
 
 LoopBack models connect to backend systems such as databases via _data sources_ that provide create, retrieve, update, and delete (CRUD) functions.
 LoopBack also generalizes other backend services, such as REST APIs, SOAP web services, and storage services, and so on, as data sources.
@@ -65,6 +65,9 @@ To connect a model to a data source, follow these steps:
 
     For information on the  properties that each connector supports, see
     documentation for the specific connector under [Connectors reference](Connectors-reference).
+
+    {% include warning.html content="Don't put production database credentials in JSON or JavaScript files, where they could be a security vulnerability.  Instead, load the values from environment variables.  For more information, see [Specifying database credentials with environment variables](Attaching-models-to-data-sources.html#specifying-database-credentials-with-environment-variables)
+    "%}
 
 3.  Install the corresponding connector as a dependency of your app with `npm`.
 
@@ -274,17 +277,18 @@ However, data sources for database connectors (Oracle, MySQL, PostgreSQL, MongoD
 as described in the following table.
 
 <table>
-  <tbody>
+  <thead>
     <tr>
-      <th>Property</th>
-      <th>Type</th>
+      <th width="100">Property</th>
+      <th width="80">Type</th>
       <th>Description</th>
     </tr>
+  </thead>
+  <tbody>    
     <tr>
       <td>connector</td>
       <td>String</td>
-      <td>
-        <p>Connector name; for example:</p>
+      <td>Connector name; for example:
         <ul>
           <li>"memory"</li>
           <li>"loopback-connector-mongodb" or "mongodb"</li>
@@ -324,9 +328,8 @@ as described in the following table.
     <tr>
       <td>url</td>
       <td>String</td>
-      <td>
-        <p>Combines and overrides <code>host</code>,&nbsp;<code>port</code>,&nbsp;<code>user</code>,&nbsp;<code>password</code>, and&nbsp;<code>database</code>&nbsp;properties.</p>
-        <p>Only valid with <a href="MongoDB-connector.html">MongoDB connector</a>, <a href="PostgreSQL-connector.html">PostgreSQL connector</a>, and <a href="SQL-Server-connector.html">SQL Server connector</a>.</p>
+      <td>Combines and overrides <code>host</code>, <code>port</code>, <code>user</code>, <code>password</code>, and <code>database</code> properties.
+      Only valid with certain connectors; see connector documentation.
       </td>
     </tr>
     <tr>

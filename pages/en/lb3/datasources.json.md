@@ -33,22 +33,23 @@ For example:
 }
 ```
 
-To access data sources in application code, use `app.datasources._datasourceName_`.
+To access data sources in application code, use <code>app.datasources.<i>datasourceName</i></code>.
 
 ## Standard properties
 
 All data sources support a few standard properties. Beyond that, specific properties and defaults depend on the connector being used.
 
 <table>
-  <tbody>
+  <thead>
     <tr>
       <th>Property</th>
       <th>Description</th>
     </tr>
+  </thead>
+  <tbody>    
     <tr>
       <td>connector</td>
-      <td>
-        <p>LoopBack connector to use; one of:</p>
+      <td>LoopBack connector to use:
         <ul>
           <li>memory</li>
           <li>loopback-connector-oracle or just "oracle"</li>
@@ -57,10 +58,9 @@ All data sources support a few standard properties. Beyond that, specific proper
           <li>loopback-connector-postgresql or just "postgresql"</li>
           <li>loopback-connector-soap or just "soap"</li>
           <li>loopback-connector-mssql or just "mssql"</li>
-          <li>
-            <p>loopback-connector-rest or just "rest"</p>
-          </li>
+          <li>loopback-connector-rest or just "rest"</li>
           <li>loopback-storage-service</li>
+          <li>Another LoopBack data source connector</li>
         </ul>
       </td>
     </tr>
@@ -112,6 +112,9 @@ To connect a model to a data source, follow these steps:
     For information on the properties that each connector supports, see
     the specific connector documentation in [Database connectors](Database-connectors.html).
 
+    {% include warning.html content="Don't put production database credentials in JSON or JavaScript files, where they could be a security vulnerability.  Instead, load the values from environment variables.  For more information, see [Specifying database credentials with environment variables](Attaching-models-to-data-sources.html#specifying-database-credentials-with-environment-variables)
+    "%}
+
 3.  Install the corresponding connector as a dependency of your app with `npm`, for example: 
 
     ```shell
@@ -159,7 +162,7 @@ See [Creating models](Creating-models.html) for more information.
 You can override values set in `datasources.json` in the following files:
 
 * `datasources.local.js` or `datasources.local.json`
-* `datasources._env_.js` or `datasources._env_.json`, where _`env`_ is the value of `NODE_ENV` environment variable (typically `development` or `production`).
+* <code>datasources.<i>env</i>.js</code> or <code>datasources.<i>env</i>.json</code>, where <i>env</i> is the value of `NODE_ENV` environment variable (typically `development` or `production`).
   For example, `datasources.production.json`.
 
 {% include important.html content="
@@ -168,12 +171,11 @@ The additional files can override the top-level data-source options with string 
 
 Example data sources:
 
+In the JSON, the key is the datasource name and the value is the configuration object to pass to `app.dataSource(name, config)`.
+
 {% include code-caption.html content="datasources.json" %}
 ```javascript
 {
-  // the key is the datasource name
-  // the value is the config object to pass to
-  // app.dataSource(name, config).
   db: {
     connector: 'memory'
   }

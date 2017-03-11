@@ -56,7 +56,11 @@ The tool will then add an entry such as the following to `datasources.json`:
 
 This example creates a MySQL data source called "corp1". The identifier determines the name by which you refer to the data source and can be any string.
 
-## Add data source credentials
+## Add database credentials
+
+{% include tip.html content="Putting production database credentials in a JSON file is not recommended for security reasons.
+Instead, create the data source programmatically and load the credentials from environment variables, as explained [below](#specifying-database-credentials-with-environment-variables).
+"%}
 
 Edit `datasources.json` to add the necessary authentication credentials for the data source; typically hostname, username, password, and database name.
 
@@ -73,6 +77,31 @@ For example:
     "database": "your-db-name"
   }
 ```
+
+### Specifying database credentials with environment variables
+
+Best practice is not to put production database credentials explicitly in JSON or JavaScript files, where they could be  a security vulnerability.  Instead, define datasources in a JavaScript file then load the values from environment variables.
+
+For example, assuming you have set a valid MongoDB username and password in the
+environment variables MONGO_USER and MONGO_PASS, respectively:
+
+{% include code-caption.html content="datasources.production.js" %}
+```javascript
+var DataSource = require('loopback-datasource-juggler').DataSource;
+
+var dataSource = new DataSource({
+   connector: require('loopback-connector-mongodb'),
+   host: 'localhost',
+   port: 27017,
+   database: 'mydb',
+   username: process.env.MONGO_USER,
+   password: process.env.MONGO_PASS
+});
+ ```
+
+You can use different credentials for development and production by using the NODE_ENV 
+environment variable, as explained in [Environment-specific configuration](Environment-specific-configuration.html#data-source-configuration).  
+
 
 ## Make the model use the data source
 

@@ -166,9 +166,6 @@ Example data sources:
 {% include code-caption.html content="datasources.json" %}
 ```javascript
 {
-  // the key is the datasource name
-  // the value is the config object to pass to
-  // app.dataSource(name, config).
   db: {
     connector: 'memory'
   }
@@ -207,7 +204,7 @@ the datasource.
 
 ## Getting values from environment variables
 
-You can easily set an environment variable when you run an application. The command you use depends on your operating system.
+You can easily get the value of an environment variable in an application. The command you use depends on your operating system.
 
 ### MacOS and Linux
 
