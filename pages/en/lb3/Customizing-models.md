@@ -195,6 +195,6 @@ module.exports = function(MyModel) {
 
 References:
 
-* [https://github.com/strongloop/loopback/issues/443](https://github.com/strongloop/loopback/issues/443)
-* [https://github.com/strongloop/loopback-datasource-juggler/issues/427](https://github.com/strongloop/loopback-datasource-juggler/issues/427)
-* [https://github.com/strongloop/loopback/issues/1077](https://github.com/strongloop/loopback/issues/1077)
+* [A way to override remote methods](https://github.com/strongloop/loopback/issues/443)
+* [Override User.find not working on juggler 2.15.0](https://github.com/strongloop/loopback-datasource-juggler/issues/427)
+* [How to override 'find' function in model](https://github.com/strongloop/loopback/issues/1077)
