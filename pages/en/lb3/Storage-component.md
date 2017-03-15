@@ -271,7 +271,7 @@ as shown in the following table.
 
 ## Automatic Unique Filenames
 
-As documented above, a file uploaded with the same name as an existing file will be overwritten. By adding the configuration key `nameConflict' with the value `makeUnique`, files will automatically be renamed with a UUID and the existing file extension of the original file name. Most likely this is an option that you will want to enable, otherwise you will need to ensure uniqueness on the code calling the API.
+As documented above, a file uploaded with the same name as an existing file will be overwritten. By adding the configuration key `nameConflict` with the value `makeUnique`, files will automatically be renamed with a UUID and the existing file extension of the original file name. Most likely this is an option that you will want to enable, otherwise you will need to ensure uniqueness on the code calling the API.
 
 ## API
 
