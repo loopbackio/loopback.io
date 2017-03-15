@@ -280,7 +280,8 @@ as shown in the following table.
           <div class="codeContent panelContent pdl">
             <pre class="theme: Emacs; brush: jscript; gutter: false" style="font-size:12px;">{
   provider: 'filesystem',
-  root: '/tmp/storage'
+  root: '/tmp/storage',
+  maxFileSize: "10485760"
 }</pre>
           </div>
         </div>
