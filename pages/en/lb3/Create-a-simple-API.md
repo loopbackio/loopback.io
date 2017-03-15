@@ -139,7 +139,7 @@ Then the generator will prompt you for the base class to use for the model.  Si
 
 One of the powerful advantages of LoopBack is that it automatically generates a REST API for your model.  The generator will ask whether you want to expose this REST API.
 
-Hit **Enter** again to accept the default and expose the Person model via REST:
+Hit **Enter** again to accept the default and expose the CoffeeShop model via REST:
 
 ```
 [?] Expose CoffeeShop via the REST API? (Y/n) Y
