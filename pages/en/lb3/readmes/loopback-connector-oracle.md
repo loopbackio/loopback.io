@@ -8,7 +8,7 @@ For more information, see the <a href="http://loopback.io/doc/en/lb3/Oracle-conn
 
 ## Prerequisites
 
-**Node.js**: The Oracle connector is compatible with Node v.0.10.x, v.12.x, and later.  
+**Node.js**: The Oracle connector requires Node.js version 4.x or 6.x.  
 
 **Windows**: On 32-bit Windows systems, you must use the 32-bit version of Node.js.  On 64-bit Windows systems, you must use the 64-bit version of Node.js.  For more information, see [Node-oracledb Installation on Windows](https://github.com/oracle/node-oracledb/blob/master/INSTALL.md#-7-node-oracledb-installation-on-windows).
 
