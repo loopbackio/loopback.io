@@ -94,7 +94,6 @@ Properties under the `remoting` top-level property determine how the application
 "remoting": {
   "context": false,
   "rest": {
-    "normalizeHttpPath": false,
     "xml": false,
     "handleErrors": false
   },
@@ -176,21 +175,6 @@ The following table describes the remoting properties.  For more information on 
         If false, then the REST adapter delegates handling unknown paths to the top-level application by calling <code>next()</code>.
       </td>
       <td>true</td>
-    </tr>
-    <tr>
-      <td>rest.<br/>normalizeHttpPath</td>
-      <td>Boolean</td>
-      <td>
-        If <code>true</code>, in HTTP paths, converts:
-        <ul>
-          <li>Uppercase letters to lowercase.</li>
-          <li>Underscores (&#95;) to dashes (-).</li>
-          <li>CamelCase to dash-delimited.</li>
-        </ul>
-        Does not affect placeholders (for example ":id").
-        For example, "MyClass" or "My_class" becomes "my-class".
-      </td>
-      <td>false</td>
     </tr>
     <tr>
       <td>rest.<br/>supportedTypes</td>

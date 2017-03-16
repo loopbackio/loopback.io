@@ -32,7 +32,7 @@ C:\> node .
 
 where &lt;_pattern_&gt; is a string-matching pattern specifying debug strings to match. You can specify as many matching patterns as you wish.
 
-For example (MacOS):
+For example (MacOS and Linux):
 
 ```shell
 $ DEBUG=loopback:datasource node .

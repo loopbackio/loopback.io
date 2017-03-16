@@ -133,7 +133,7 @@ See [Creating a database schema from models](Creating-a-database-schema-from-mo
 var async = require('async');
 module.exports = function(app) {
   //data sources
-  var mongoDs = app.dataSources.mongoDs;
+  var mongoDs = app.dataSources.mongoDs; // 'name' of your mongo connector, you can find it in datasource.json
   var mysqlDs = app.dataSources.mysqlDs;
   //create all models
   async.parallel({

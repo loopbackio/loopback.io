@@ -26,7 +26,7 @@ Bundler will look in the Gemfile for which gems to install. The `github-pages` g
 Run Jekyll using the following command:
 
 ```
-$ bundle exec jekyll serve
+$ npm start
 ```
 
 Then, load [http://localhost:4001/](http://localhost:4001/) on your browser.

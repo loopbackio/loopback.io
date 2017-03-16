@@ -2,12 +2,13 @@
 title: "Customizing models"
 layout: navgroup
 navgroup: models
+to_level: 2
 keywords: LoopBack
 tags: models
 lang: en
 sidebar: lb3_sidebar
 permalink: /doc/en/lb3/Customizing-models.html
-summary:
+summary: You can customize a basic model through JSON or JavaScript code.
 ---
 
 Once you've created a model with the [model generator](Model-generator.html), you can start customizing it.
@@ -170,7 +171,7 @@ module.exports = function(app) {
           cache[key] = results;
         }
         cb(err, results);
-      });;
+      });
     }
   }
 }
@@ -194,6 +195,6 @@ module.exports = function(MyModel) {
 
 References:
 
-* [https://github.com/strongloop/loopback/issues/443](https://github.com/strongloop/loopback/issues/443)
-* [https://github.com/strongloop/loopback-datasource-juggler/issues/427](https://github.com/strongloop/loopback-datasource-juggler/issues/427)
-* [https://github.com/strongloop/loopback/issues/1077](https://github.com/strongloop/loopback/issues/1077)
+* [A way to override remote methods](https://github.com/strongloop/loopback/issues/443)
+* [Override User.find not working on juggler 2.15.0](https://github.com/strongloop/loopback-datasource-juggler/issues/427)
+* [How to override 'find' function in model](https://github.com/strongloop/loopback/issues/1077)

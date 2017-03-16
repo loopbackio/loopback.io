@@ -81,7 +81,7 @@ var schema_v1 = {
 };
 ```
 
-Assuming the model doesn't have a corresponding table in the Oracle database, you can create the corresponding schema objects to reflect the model definition using `autoMigrate()`:
+Assuming the model doesn't have a corresponding table in the Oracle database, you can create the corresponding schema objects to reflect the model definition using `automigrate()`:
 
 {% include code-caption.html content="/common/models/model.js" %}
 ```javascript
@@ -148,7 +148,7 @@ var schema_v2 = {
 
 ### MongoDB indexes
 
-Running `autoMigrate()` creates missing indexes but it doesn't modify them if their definitions change.
+Running `automigrate()` creates missing indexes but it doesn't modify them if their definitions change.
 If a model's index definitions change, you must either modify them via the MongoDB shell, or delete them and re-create them.
 For more information, see the [MongoDB documentation](http://docs.mongodb.org/manual/reference/method/db.collection.ensureIndex/#behaviors).
 
@@ -156,7 +156,7 @@ For more information, see the [MongoDB documentation](http://docs.mongodb.org/m
 
 **See also**: See also [autoupdate()](http://apidocs.strongloop.com/loopback-datasource-juggler/#datasource-prototype-autoupdate) in LoopBack API reference.
 
-If there are existing tables in a database, running `autoMigrate()` will drop and re-create the tables: Therefore, data will be lost.
+If there are existing tables in a database, running `automigrate()` will drop and re-create the tables: Therefore, data will be lost.
 To avoid this problem use `auto-update()`.
 Instead of dropping tables and recreating them, `autoupdate()` calculates the difference between the LoopBack model and the database table
 definition and alters the table accordingly. This way, the column data will be kept as long as the property is not deleted from the model.

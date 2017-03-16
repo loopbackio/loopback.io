@@ -65,7 +65,7 @@ The storage component organizes content as _containers_ and _files_. A containe
 * **Container** groups files, similar to a directory or folder. A container defines the namespace for objects and is uniquely identified by its name, typically within a user account.
   **NOTE**: A container cannot have child containers.
 * **File** stores the data, such as a document or image. A file is always in one (and only one) container. Within a container, each file has a unique name.
-  Files in different containers can have the same name.
+  Files in different containers can have the same name. By default, files with the same name will overwrite each other. 
 
 ## Creating a storage component data source
 
@@ -268,6 +268,10 @@ as shown in the following table.
     </tr>
   </tbody>
 </table>
+
+## Automatic Unique Filenames
+
+As documented above, a file uploaded with the same name as an existing file will be overwritten. By adding the configuration key `nameConflict` with the value `makeUnique`, files will automatically be renamed with a UUID and the existing file extension of the original file name. Most likely this is an option that you will want to enable, otherwise you will need to ensure uniqueness on the code calling the API.
 
 ## API
 

@@ -171,3 +171,7 @@ To run the tests:
 ```
 CLOUDANT_USERNAME=username CLOUDANT_PASSWORD=password CLOUDANT_DATABASE=database npm test
 ```
+
+## More Info
+For more detailed information regarding connector-specific functions and behaviour,
+see the [docs section](https://github.com/strongloop/loopback-connector-cloudant/tree/master/doc).

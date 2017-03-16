@@ -77,7 +77,7 @@ defaults:
       layout: "page"
       comments: true
       search: true
-      sidebar: lb2_sidebar
+      sidebar: lb3_sidebar
   -
     scope:
       path: ""
@@ -107,6 +107,7 @@ sidebars:
 - es_lb2_sidebar
 - fr_lb2_sidebar
 - ja_lb2_sidebar
+- ko_lb3_sidebar
 - ko_lb2_sidebar
 - ru_lb2_sidebar
 - zh_lb2_sidebar
