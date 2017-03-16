@@ -1,12 +1,12 @@
 ---
 lang: ko
-title: "LoopBack 3.0"
+title: "LoopBack 3.0 - 한국"
 toc: false
 keywords: LoopBack 3.0
 tags: [getting_started]
 sidebar: lb3_sidebar
 permalink: /doc/ko/lb3/index.html
-summary: LoopBack 3.0 is the current release.
+summary: LoopBack 3.0이 현재 릴리즈 입니다.
 ---
 
 {% include important.html content="LoopBack 3.0은 현재 제품의 릴리즈 이며, 2016년 12월 21일에 출시 되었습니다. 자세한 사항은 [릴리즈 발표](https://strongloop.com/strongblog/announcing-loopback-3-0-ga/)를 참고하세요. LoopBack 2.0은 [LTS 릴리즈](/doc/en/contrib/Long-term-support.html)로 전환 되었습니다." %}
