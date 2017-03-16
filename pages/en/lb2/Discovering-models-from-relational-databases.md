@@ -83,6 +83,9 @@ function (err, models) {
 Some connectors provide discovery capability so that we can use DataSource to discover model definitions from existing database schema.
 The following APIs enable UI or code to discover database schema definitions that can be used to build LoopBack models.
 
+`discoverModelDefinitions()` by default discovers database schema definitions owned by the userid used to connect to the database.  
+Calling it with the `all: true` option makes the discovery include the database schema definitions of all owners.
+
 {% include code-caption.html content="/server/bin/script.js" %}
 ```javascript
 // List database tables and/or views
