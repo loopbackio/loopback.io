@@ -1,9 +1,11 @@
 ---
 lang: ko
 title: "LoopBack 3.0 - 한국"
+layout: translation
+trans_complete: true
 toc: false
 keywords: LoopBack 3.0
-tags: [getting_started]
+tags: [시작하기]
 sidebar: lb3_sidebar
 permalink: /doc/ko/lb3/index.html
 summary: LoopBack 3.0이 현재 릴리즈 입니다.
@@ -41,7 +43,7 @@ LoopBack 3.0 업그레이드 지침은 [마이그레이션 가이드](Migrating-
 LoopBack 사용에 대한 질문과 논의는 [LoopBack 개발자 포럼](https://groups.google.com/forum/#!forum/loopbackjs)을 확인하세요.
 
 <div id="lb3apic" class="sl-hidden" markdown="1">
-{% include note.html content ="[IBM API Connect](https://developer.ibm.com/apiconnect/) is an end-to-end API management solution that uses LoopBack to create APIs, and provides integrated build and deployment tools.  For more information, see [Installing IBM API Connect](Installing-IBM-API-Connect.html).
+{% include note.html content ="[IBM API Connect](https://developer.ibm.com/apiconnect/) 은 LoopBack을 사용하여 API를 작성하고 통합 빌드 및 배치 도구를 제공하는 엔드-투-엔드 API 관리 솔루션입니다. 보다 자세한 내용은 [Installing IBM API Connect](Installing-IBM-API-Connect.html) 를 참고하세요.
 " %}
 </div>
 
