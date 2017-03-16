@@ -1,19 +1,17 @@
 ---
 lang: ko
+title: "LoopBack 3.0 - 한국"
 layout: translation
-title: "LoopBack 3.0 - 한국어"
+trans_complete: true
 toc: false
 keywords: LoopBack 3.0
-tags: [getting_started]
-sidebar: ko_lb3_sidebar
+tags: [시작하기]
+sidebar: lb3_sidebar
 permalink: /doc/ko/lb3/index.html
-summary: LoopBack 3.0 is the current release.
+summary: LoopBack 3.0이 현재 릴리즈 입니다.
 ---
 
-{% include important.html content="LoopBack 3.0 is the current production release.
-It was released for general availability on 21 Dec 2016; see the [release announcement](https://strongloop.com/strongblog/announcing-loopback-3-0-ga/).
-LoopBack 2.0 is now the [LTS release](/doc/en/contrib/Long-term-support.html).
-" %}
+{% include important.html content="LoopBack 3.0은 현재 제품의 릴리즈 이며, 2016년 12월 21일에 출시 되었습니다. 자세한 사항은 [릴리즈 발표](https://strongloop.com/strongblog/announcing-loopback-3-0-ga/)를 참고하세요. LoopBack 2.0은 [LTS 릴리즈](/doc/en/contrib/Long-term-support.html)로 전환 되었습니다." %}
 
 ## LoopBack 툴 설치하기
 
@@ -40,12 +38,12 @@ LoopBack 3.0 업그레이드 지침은 [마이그레이션 가이드](Migrating-
 
 1. **[LoopBack 툴 설치하기](Installation)**.  
 1. LoopBack을 사용하기 위해 알아야 할 주요 개념 학습을 위해 **[LoopBack 핵심 개념](LoopBack-core-concepts.html)**을 읽어보세요.
-1. **Follow [Getting started with LoopBack](Getting-started-with-LoopBack.html)** for a quick tutorial introduction.
+1. 빠른 자습서 소개 **[LoopBack 시작하기](Getting-started-with-LoopBack.html)**를 참고하세요.
 
 LoopBack 사용에 대한 질문과 논의는 [LoopBack 개발자 포럼](https://groups.google.com/forum/#!forum/loopbackjs)을 확인하세요.
 
 <div id="lb3apic" class="sl-hidden" markdown="1">
-{% include note.html content ="[IBM API Connect](https://developer.ibm.com/apiconnect/) is an end-to-end API management solution that uses LoopBack to create APIs, and provides integrated build and deployment tools.  For more information, see [Installing IBM API Connect](Installing-IBM-API-Connect.html).
+{% include note.html content ="[IBM API Connect](https://developer.ibm.com/apiconnect/) 은 LoopBack을 사용하여 API를 작성하고 통합 빌드 및 배치 도구를 제공하는 엔드-투-엔드 API 관리 솔루션입니다. 보다 자세한 내용은 [Installing IBM API Connect](Installing-IBM-API-Connect.html) 를 참고하세요.
 " %}
 </div>
 
@@ -109,7 +107,7 @@ LoopBack 애플리케이션은 LoopBack 모델 API를 통해 데이터 소스와
 - loopback-connector-postgresql
 - loopback-connector-msssql
 - loopback-connector-oracle
-- [Many others...](Connectors-reference.html)
+- [그 외 다른것들...](Connectors-reference.html)
 </td>
     </tr>
     <tr>
