@@ -1,8 +1,10 @@
 ---
 title: 설치하기
+layout: translation
+trans_complete: false
 lang: ko
 keywords: LoopBack
-tags: [installation]
+tags: [설치하기]
 sidebar: lb3_sidebar
 permalink: /doc/ko/lb3/Installation.html
 summary: Install the LoopBack CLI tool to create and develop LoopBack 3.0 apps.
