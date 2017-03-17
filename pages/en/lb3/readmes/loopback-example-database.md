@@ -69,15 +69,15 @@ npm start
 ```
 lb app loopback-example-database
 
-     _-----_     
+     _-----_
     |       |    ╭──────────────────────────╮
     |--(o)--|    │  Let's create a LoopBack │
    `---------´   │       application!       │
     ( _´U`_ )    ╰──────────────────────────╯
     /___A___\   /
-     |  ~  |     
-   __'.___.'__   
- ´   `  |° ´ Y ` 
+     |  ~  |
+   __'.___.'__
+ ´   `  |° ´ Y `
 
 ? What's the name of your application? loopback-example-database
 ? Enter name of the directory to contain the project: loopback-example-database
@@ -271,4 +271,4 @@ Created: { email: 'bob.doe@ibm.com',
 
 ---
 
-[More LoopBack examples](https://github.com/strongloop/loopback-example)
+[More LoopBack examples](https://loopback.io/doc/en/lb3/Tutorials-and-examples.html)
