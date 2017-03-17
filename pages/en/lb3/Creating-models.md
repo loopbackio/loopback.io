@@ -36,7 +36,7 @@ The way that you get a reference (or "handle") to a model in JavaScript code dep
 
 ### In model JavaScript file
 
-{% include warning.html content="In model JavaScript files (for example, for a \"foo\" model, `common/models/foo.js`) you cannot access model relations since models are are not yet loaded.
+{% include warning.html content="In model JavaScript files (for example, for a \"foo\" model, `common/models/foo.js`) you cannot access model relations since models are not yet loaded.
 You must perform relation operations in boot scripts.
 " %}
 
