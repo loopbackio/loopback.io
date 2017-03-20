@@ -7,7 +7,7 @@ keywords: LoopBack
 tags: [getting_started, angularjs]
 sidebar: lb3_sidebar
 permalink: /doc/en/lb3/Create-AngularJS-client.html
-summary: The LoopBack AngularJS SDK enables you to easily creates a client JavaScript API to consume your LoopBack REST API.
+summary: The LoopBack AngularJS SDK enables you to easily create a client JavaScript API to consume your LoopBack REST API.
 ---
 
 {% include content/gs-prereqs.html two="true" lang=page.lang %}
