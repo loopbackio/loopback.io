@@ -6,12 +6,13 @@ keywords: LoopBack
 tags:
 sidebar: lb3_sidebar
 permalink: /doc/en/lb3/datasources.json.html
-summary:
+summary: Configure data sources in <code>datasources.json</code>.
 ---
 
 ## Overview
 
-Configure data sources in `/server/datasources.json`. You can set up as many data sources as you want in this file.
+Configure data sources in `/server/datasources.json`. You can set up as many data sources as you want in this file. The easiest way to set up a new data source is to use the [data source generator](Data-source-generator.html), which will prompt your for all the
+appropriate settings, add them to `/server/datasources.json`, and then install the connector from npm.
 
 For example:
 
@@ -21,8 +22,8 @@ For example:
     "name": "db",
     "connector": "memory"
   },
-  "myDB": {
-    "name": "myDB",
+  "mySQLdb": {
+    "name": "mySQLdb",
     "connector": "mysql",
     "host": "demo.strongloop.com",
     "port": 3306,
@@ -71,125 +72,65 @@ All data sources support a few standard properties. Beyond that, specific proper
   </tbody>
 </table>
 
-## Properties for database connectors
+## Database connector properties
 
-To connect a model to a data source, follow these steps:
+Although each data source connector has a different set of properties,
+database connectors typically have properties that include
+properties for the database server and credentials to log in to it.
 
-1.  Use the [data source generator](Data-source-generator.html) to create a new data source. For example: 
-    <div id="lb3apic" class="sl-hidden" markdown="1">
-    ```shell
-    $ apic create --type datasource
-    ? Enter the data-source name: mysql-corp
-    ? Select the connector for mysql: MySQL (supported by StrongLoop)
-    ```
-    </div>
-    ```shell
-    $ lb datasource
-    ? Enter the data-source name: mysql-corp
-    ? Select the connector for mysql: MySQL (supported by StrongLoop)
-    ```
+For information on the properties that each connector supports, see
+the specific connector documentation in [Database connectors](Database-connectors.html).
 
-    Follow the prompts to name the datasource and select the connector to use.
-    This adds the new data source to `datasources.json`
+{% include warning.html content="Don't put production database credentials in configuration files, where they could be a security vulnerability.  Instead, load the values from environment variables.  For more information, see [Specifying database credentials with environment variables](Attaching-models-to-data-sources.html#specifying-database-credentials-with-environment-variables)
+"%}
 
-2.  Edit `server/datasources.json` to add the necessary authentication credentials: typically hostname, username, password, and database name.
+The following table list common properties that most database connectors provide.
+See documentation for the specific connector for full details.
 
-    For example:
+<table>
+  <thead>
+    <tr>
+      <th width="150">Property</th>
+      <th width="80">Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
 
-    **server/datasources.json**
+    <tr>
+      <td>database</td>
+      <td>String</td>
+      <td>Database name</td>
+    </tr>
 
-    ```javascript
-    "mysql-corp": {
-        "name": "mysql-corp",
-        "connector": "mysql",
-        "host": "your-mysql-server.foo.com",
-        "user": "db-username",
-        "password": "db-password",
-        "database": "your-db-name"
-      }
-    ```
+    <tr>
+      <td>host</td>
+      <td>String</td>
+      <td>Database host name</td>
+    </tr>
 
-    For information on the properties that each connector supports, see
-    the specific connector documentation in [Database connectors](Database-connectors.html).
+    <tr>
+      <td>password</td>
+      <td>String</td>
+      <td>Password to connect to database</td>
+    </tr>
 
-    {% include warning.html content="Don't put production database credentials in JSON or JavaScript files, where they could be a security vulnerability.  Instead, load the values from environment variables.  For more information, see [Specifying database credentials with environment variables](Attaching-models-to-data-sources.html#specifying-database-credentials-with-environment-variables)
-    "%}
+    <tr>
+      <td>port</td>
+      <td>Number</td>
+      <td>Database TCP port</td>
+    </tr>
 
-3.  Install the corresponding connector as a dependency of your app with `npm`, for example: 
+    <tr>
+      <td>url</td>
+      <td>String</td>
+      <td>Connection URL that overrides other connection settings.</td>
+    </tr>
 
-    ```shell
-    $ cd <your-app>
-    $ npm install --save loopback-connector-mysql
-    ```
-
-    See [Connectors](Connecting-models-to-data-sources.html) for the list of connectors.
-
-4.  Use the [model generator](Using-the-model-generator.html) to create a model.
-    <div id="lb3apic" class="sl-hidden" markdown="1">
-    ```
-    $ apic create --type model
-    ? Enter the model name: myModel
-    ? Select the data-source to attach myModel to: mysql (mysql)
-    ? Select model's base class: PersistedModel
-    ? Expose myModel via the REST API? Yes
-    ? Custom plural form (used to build REST URL):
-    Let's add some test2 properties now.
-    ...
-    ```
-    </div>
-    ```
-    $ lb model
-    ? Enter the model name: myModel
-    ? Select the data-source to attach myModel to: mysql (mysql)
-    ? Select model's base class: PersistedModel
-    ? Expose myModel via the REST API? Yes
-    ? Custom plural form (used to build REST URL):
-    Let's add some test2 properties now.
-    ...
-    ```
-
-    When prompted for the data source to attach to, select the one you just created. 
-
-{% include note.html content="
-The model generator lists the [memory connector](Memory-connector.html), \"no data source,\" and data sources listed in `datasources.json`.  That's why you created the data source first in step 1.
-" %}
-
-You can also create models from an existing database.
-See [Creating models](Creating-models.html) for more information.
-
-## Environment-specific configuration
-
-You can override values set in `datasources.json` in the following files:
-
-* `datasources.local.js` or `datasources.local.json`
-* <code>datasources.<i>env</i>.js</code> or <code>datasources.<i>env</i>.json</code>, where <i>env</i> is the value of `NODE_ENV` environment variable (typically `development` or `production`).
-  For example, `datasources.production.json`.
-
-{% include important.html content="
-The additional files can override the top-level data-source options with string and number values only. You cannot use objects or array values.
-" %}
-
-Example data sources:
-
-In the JSON, the key is the datasource name and the value is the configuration object to pass to `app.dataSource(name, config)`.
-
-{% include code-caption.html content="datasources.json" %}
-```javascript
-{
-  db: {
-    connector: 'memory'
-  }
-}
-```
-
-{% include code-caption.html content="datasources.production.json" %}
-```javascript
-{
-  db: {
-    connector: 'mongodb',
-    database: 'myapp',
-    user: 'myapp',
-    password: 'secret'
-  }
-}
-```
+    <tr>
+      <td>username</td>
+      <td>String</td>
+      <td>Username to connect to database</td>
+    </tr>
+  </tbody>
+</table>

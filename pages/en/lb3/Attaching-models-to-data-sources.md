@@ -41,26 +41,22 @@ $ apic create --type datasource
 You can also add and modify data sources using the API Designer tool.
 </div>
 
-The tool will prompt you for the name of the new data source and the connector to use; for example, MySQL, Oracle, REST, and so on.
+The tool will prompt you for the name of the new data source and the connector to use; for example, MongoDB, MySQL, Oracle, REST, and so on.
 The tool will then add an entry such as the following to `datasources.json`:
 
 {% include code-caption.html content="/server/datasources.json" %}
 ```javascript
   ...
   "corp1": {
-    "name": "corp1",
-    "connector": "mysql"
+    "name": "mongo1",
+    "connector": "mongodb"
   }
   ...
 ```
 
-This example creates a MySQL data source called "corp1". The identifier determines the name by which you refer to the data source and can be any string.
+This example creates a MongoDB data source called "mongo1". The identifier determines the name by which you refer to the data source and can be any string.
 
 ## Add database credentials
-
-{% include tip.html content="Putting production database credentials in a JSON file is not recommended for security reasons.
-Instead, load the credentials from environment variables, as explained [below](#specifying-database-credentials-with-environment-variables).
-"%}
 
 Edit `datasources.json` to add the necessary authentication credentials for the data source; typically hostname, username, password, and database name.
 
@@ -70,13 +66,17 @@ For example:
 ```javascript
 "corp1": {
     "name": "corp1",
-    "connector": "mysql",
-    "host": "your-mysql-server.foo.com",
+    "connector": "mongodb",
+    "host": "your-mongodb-server.foo.com",
     "user": "db-username",
     "password": "db-password",
     "database": "your-db-name"
   }
 ```
+
+{% include warning.html content="Putting production database credentials in a JSON file is not recommended for security reasons.
+Instead, load the credentials from environment variables, as explained [below](#specifying-database-credentials-with-environment-variables).
+"%}
 
 ### Specifying database credentials with environment variables
 
@@ -87,28 +87,38 @@ environment variables MONGO_USER and MONGO_PASS, respectively:
 
 {% include code-caption.html content="datasources.json" %}
 ```javascript
-{
-  "db": {
+  ...
+  "accountDS": {
+    "name": "accountDS",
+    "connector": "mongodb",
+    "host": "demo.strongloop.com",
+    "port": 27017,
+    "database": "demo",
     "username": "${MONGO_USER}",
     "password": "${MONGO_PASS}"
   }
-}
+  ...
  ```
 
-You can use different credentials for development and production by using the NODE_ENV
+You can use different data source definitions (including database credentials) for development and production by using the NODE_ENV
 environment variable, as explained in [Environment-specific configuration](Environment-specific-configuration.html#data-source-configuration),
 for example `datasources.production.json` for production environment when NODE_ENV is 'production'.
 
-{% include note.html content="LooopBack merges configurations environment-specific configuration (for example in `datasources.production.json`) with the baseline configuration in `datasources.json`. As a result, it's difficult to clear extra settings in environment-specific files, so best practice is to use the single `url` connection string setting (where available) that overrides the other settings.  See the example below. 
-" %}
+### Using multiple data source configurations
+
+LoopBack merges environment-specific configurations (for example in `datasources.production.json`) with the baseline configuration in `datasources.json`.
+Environment-specific configurations can override the top-level values with string and number values only. You cannot use objects or array values.
+
+It can be difficult to clear extra datasource settings inherited from the top-level `datasources.json` file in environment-specific files.  To avoid issues, use a single `datasources.json` file that includes both individual settings such as `host`, `port`, and `database` for local environment and a `url` connection string setting that  overrides the other settings for staging and production. For example:
 
 {% include code-caption.html content="datasources.json" %}
 ```js
 {
   "db": {
     "connector": "mongodb",
+    // The url setting will be used only when MONGODB_URL env var is defined
     "url": "${MONGODB_URL}",
-    // configuration below is for Development/Test environments only
+    // configuration below is for development/staging environments only
     "host": "localhost",
     "database": "my-database-name",
     ...
