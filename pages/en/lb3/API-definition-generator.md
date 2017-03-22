@@ -27,19 +27,10 @@ $ slc loopback:export-api-def [options]
 
 ### Options
 
-`-h, --help`
-Print the generator's options and usage.
-
-`--skip-cache`
-Do not remember prompt answers. Default is false.
-
-`--skip-install`
-Do not automatically install dependencies. Default is false.
-
-### Additional options
-
 `-o,   --output`
-Name and full path to the output file. By default, the generator displays the API definition to the screen (stdout). Use this option to save the definition to a file instead.
+: Name and full path to the output file. By default, the generator displays the API definition to the screen (stdout). Use this option to save the definition to a file instead.
 
 `--json`
-By default, the generator exports the API definition in YAML format. Use this option to export in JSON format instead; or specify a file with a `.json` format.
+: By default, the generator exports the API definition in YAML format. Use this option to export in JSON format instead; or specify a file with a `.json` format.
+
+{% include_relative includes/CLI-std-options.md %}

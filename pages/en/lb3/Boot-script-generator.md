@@ -27,14 +27,7 @@ $ slc loopback:boot-script [options] [<name>]
 
 ### Options
 
-`-h, --help`
-Print the generator's options and usage.
-
-`--skip-cache`
-Do not remember prompt answers. Default is false.
-
-`--skip-install`
-Do not automatically install dependencies. Default is false.
+{% include_relative includes/CLI-std-options.md title='no' %}
 
 ### Arguments
 

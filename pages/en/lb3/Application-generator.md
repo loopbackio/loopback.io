@@ -25,14 +25,16 @@ $ slc loopback [options] [<name>]
 
 ### Options
 
-`-h, --help`
-Print the generator's options and usage.
+`--bluemix`
+: Prompts for Bluemix configuration options and creates Bluemix deployment artifacts.
 
-`--skip-cache`
-Do not remember prompt answers. Default is false.
+`--explorer`
+: Add Loopback Explorer to the project. Default is true.
 
-`--skip-install`
-Do not automatically install dependencies. Default is false.
+`--skip-next-steps`
+: Do not print "next steps" information.
+
+{% include_relative includes/CLI-std-options.md %}
 
 ### Arguments
 

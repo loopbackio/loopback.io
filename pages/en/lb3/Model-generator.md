@@ -34,14 +34,10 @@ slc loopback:model [options] [<name>]
 
 ### Options
 
-`-h, --help`
-Print the generator's options and usage.
+`--bluemix`
+: Lists only Bluemix datasources in the datasource option for the new model.
 
-`--skip-cache`
-Do not remember prompt answers. Default is false.
-
-`--skip-install`
-Do not automatically install dependencies. Default is false.
+{% include_relative includes/CLI-std-options.md %}
 
 ### Arguments
 
