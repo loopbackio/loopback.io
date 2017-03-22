@@ -171,34 +171,34 @@ To migrate a LoopBack 2.x application to use `strong-error-handler`:
       "errorHandler": {
         "disableStackTrace": false
       }</pre>
-  and replace it with:
-  <pre>
-  "remoting": {
-    ...,
-    "rest": {
-      "handleErrors": false
-    }</pre>
+    and replace it with:
+    <pre>
+    "remoting": {
+      ...,
+      "rest": {
+        "handleErrors": false
+      }</pre>
 1. In `server/middleware.json`, remove:
     <pre>
     "final:after": {
       "loopback#errorHandler": {}
     }</pre>
-  and replace it with:
+    and replace it with:
     <pre>
     "final:after": {
       "strong-error-handler": {}
     }</pre>
 1. Delete `server/middleware.production.json`.
 1. Create `server/middleware.development.json` containing:
-  <pre>
-  "final:after": {
-    "strong-error-handler": {
-      "params": {
-        "debug": true,
-        "log": true
+    <pre>
+    "final:after": {
+      "strong-error-handler": {
+        "params": {
+          "debug": true,
+          "log": true
+        }
       }
     }
-  }
 </pre>
 
 For more information, see 
