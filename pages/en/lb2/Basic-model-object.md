@@ -22,8 +22,7 @@ the [RelationMixin object](http://apidocs.strongloop.com/loopback-datasource-ju
 
 ## Events
 
-{% include important.html content="
-The following events are deprecated in favor of [operation hooks](Operation-hooks.html):
+{% include note.html content="The following events are deprecated in favor of [operation hooks](Operation-hooks.html):
 
 * changed
 * deleted
@@ -31,25 +30,23 @@ The following events are deprecated in favor of [operation hooks](Operation-hook
 " %}
 
 The following table summarizes the events that LoopBack models can emit.
+For more information, see [Events](Events.html).
 
 <table>
-  <tbody>
+  <thead>
     <tr>
-      <th>Event</th>
-      <th>Emitted when...</th>
+      <th width="150">Event</th>
+      <th width="180">Emitted when...</th>
       <th>Arguments</th>
       <th>Argument type</th>
       <th>Class methods that emit</th>
-      <th>Instance methods that emit</th>
+      <th width="230">Instance methods that emit</th>
     </tr>
+  </thead>
+  <tbody style="font-size: 90%;">    
     <tr>
       <td>'attached'</td>
-      <td>
-        <p>Model is attached to an app.</p>
-        <div style="width: 120px;">
-          <p>&nbsp;</p>
-        </div>
-        <p><br></p>
+      <td>Model is attached to an app.
       </td>
       <td>Model class</td>
       <td>Object</td>
@@ -62,11 +59,8 @@ The following table summarizes the events that LoopBack models can emit.
       <td>Model class</td>
       <td>Object</td>
       <td>&nbsp;</td>
-      <td>
-        <ul>
-          <li>DataSource.prototype.createModel </li>
-          <li>DataSource.prototype.define</li>
-        </ul>
+      <td>DataSource.prototype<br/>.createModel
+          <br/>DataSource.prototype<br/>.define
       </td>
     </tr>
     <tr>
@@ -75,8 +69,7 @@ The following table summarizes the events that LoopBack models can emit.
       <td>Model instance</td>
       <td>Object</td>
       <td>&nbsp;</td>
-      <td>
-        <p>Model.prototype.setAttributes()</p>
+      <td>Model.prototype<br/>.setAttributes()
       </td>
     </tr>
   </tbody>
