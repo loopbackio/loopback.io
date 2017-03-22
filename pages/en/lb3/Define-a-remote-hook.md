@@ -36,7 +36,7 @@ You can define two kinds of remote hooks:
 *   `beforeRemote()` runs before the remote method.
 *   `afterRemote()` runs after the remote method.
 
-In both cases, you provide two arguments: a string that matches the remote method which you want to "hook" your function, and a callback function.  Much of the power of remote hooks is that the string can include wildcards, so it is triggered by any matching method.
+In both cases, you provide two arguments: a string that matches the remote method to which you want to "hook" your function, and a callback function.  Much of the power of remote hooks is that the string can include wildcards, so it is triggered by any matching method.
 
 {% include note.html content="
 LoopBack also provides [operation hooks](Operation-hooks), functions that are executed before or after models perform backend operations such as creating, saving, and updating model data, regardless of how those operations are invoked. In contrast, a remote hook is called only when the exact method you specify is invoked.
