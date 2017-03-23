@@ -29,7 +29,7 @@ Generate Dockerfile.
 Generate Bluemix manifest file.
 
 `--toolchain`     
-Set up Bluemix toolchain.
+Set up Bluemix toolchain. Creates a `.bluemix` directory containing the toolchain file.
 
 {% include_relative includes/CLI-std-options.md %}
 
@@ -47,6 +47,6 @@ The generator will prompt you for:
 - Subdomain of the app (default is the app name).
 - Amount of disk space to allocate for the app (default is 1GB).
 - Whether to create a Dockerfile (default is yes).
-- Whether to create toolchain files (default is yes).
-- Whether to enable autoscaling (default is yes).
-- Whether to enable Node application metrics (default is yes).
+- Whether to create toolchain files (default is yes). For more information, see [Working with toolchains](https://console.ng.bluemix.net/docs/services/ContinuousDelivery/toolchains_working.html).
+- Whether to enable autoscaling (default is yes).  For more information, see [Bluemix autoscaling agent](https://www.npmjs.com/package/bluemix-autoscaling-agent).
+- Whether to enable Node application metrics (default is yes). For more information, see [Node application metrics dashboard](https://www.npmjs.com/package/appmetrics-dash).

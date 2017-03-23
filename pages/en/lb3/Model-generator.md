@@ -68,4 +68,4 @@ Then, the tool will invoke the [Property generator](Property-generator.html) an
 
 ### Output
 
-Depending your response to the last prompt, the tool will create a new file defining the model; either `/common/models/_model-name_.json` (for use by client and server) or `/server/models/_model-name_.json` (server only).  See [Model definition JSON file](Model-definition-JSON-file.html) for details.
+Depending your response to the last prompt, the tool will create a new file defining the model; either <code>/common/models/<i>model-name</i>.json</code> (for use by client and server) or <code>/server/models/<i>model-name</i>.json</code> (server only).  See [Model definition JSON file](Model-definition-JSON-file.html) for details.
