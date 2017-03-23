@@ -23,13 +23,15 @@ $ lb bluemix [options]
 ### Options
 
 `--docker`        
-Generate Dockerfile.
+: Generate Dockerfile.  For more information on using Dockerfiles with Bluemix, see
+[Creating your own images with the command line interface (CLI)](https://console.ng.bluemix.net/docs/containers/container_images_building.html)
 
 `--manifest`      
-Generate Bluemix manifest file.
+: Generate Bluemix manifest file.  For more information on manifests, see [Bluemix docs - manifest](https://console.ng.bluemix.net/docs/manageapps/depapps.html#appmanifest).
 
 `--toolchain`     
-Set up Bluemix toolchain. Creates a `.bluemix` directory containing the toolchain file.
+: Set up Bluemix toolchain. Creates a `.bluemix` directory containing the toolchain file.
+For more information on Bluemix toolchains, see [Working with toolchains](https://console.ng.bluemix.net/docs/services/ContinuousDelivery/toolchains_working.html).
 
 {% include_relative includes/CLI-std-options.md %}
 
