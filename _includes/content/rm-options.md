@@ -27,6 +27,23 @@ accepts: [
       </td>
     </tr>
     <tr>
+      <td>accessScopes</td>
+      <td>
+        Defines <em>access scopes</em>. A user will be allowed to invoke this remote
+        method only when their access token was granted at least one of
+        the scopes defined by `accessScopes` list. See also
+        <a href="/doc/en/lb3/Controlling-data-access.html#authorization-scopes">Authorization scopes</a>.
+        <br/><br/>
+        The default value is a list with a single scope <code>DEFAULT</code>.
+      </td>
+      <td>
+        <pre>accessScopes: [
+  'read',
+  'read:user'
+]</pre>
+      </td>
+    </tr>
+    <tr>
       <td>description</td>
       <td>
         Text description of the method, used by API documentation generators such as Swagger.
@@ -146,7 +163,7 @@ The following table describes the properties of each individual argument.
       <th>Description</th>
     </tr>
   </thead>
-  <tbody>    
+  <tbody>
     <tr>
       <td>arg</td>
       <td>String</td>
