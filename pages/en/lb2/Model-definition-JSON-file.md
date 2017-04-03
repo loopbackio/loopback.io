@@ -551,16 +551,19 @@ An example of a hidden property is User.password:
 
 {% include code-caption.html content="common/models/user.json" %}
 ```javascript
-...
+{
+  ...
   "properties": {
     ...
     "password": {
       "type": "string",
       "required": true
     },
-...
-   "hidden": ["password"],
-...
+    ...
+  },
+  "hidden": ["password", "verificationToken"],
+  ...
+}
 ```
 
 If you want to white-list the fields returned instead of black-listing them, consider:
@@ -580,20 +583,23 @@ Author will have personal information such as social security number etc, and th
 the author of the book will not get those information back (from [GitHub](https://github.com/strongloop/loopback-datasource-juggler/pull/400) pull request).
 The property value is an array of strings, and each string in the array must match a property name defined for the model.
 
-An example of a hidden property is User.email:
+An example of a protected property is User.email:
 
 {% include code-caption.html content="common/models/user.json" %}
 ```javascript
-...
+{
+  ...
   "properties": {
     ...
     "email": {
       "type": "string",
       "required": true
     },
-...
-   "protected": ["email"],
-...
+    ...
+  },
+  "protected": ["email"],
+  ...
+}
 ```
 
 ## Validations
