@@ -547,7 +547,7 @@ For example,
 A hidden property is not sent in the JSON data in the application's HTTP response.
 The property value is an array of strings, and each string in the array must match a property name defined for the model.
 
-An example of a hidden property is User.password:
+An example of a hidden property is `User.password`:
 
 {% include code-caption.html content="common/models/user.json" %}
 ```javascript
@@ -577,13 +577,15 @@ See discussion of white-listing on [GitHub](https://github.com/strongloop/loopb
 
 ## Protected properties
 
-A protected property is not sent in the JSON data in the application's HTTP response if the object is nested inside another object.
-For instance if you have an Author object and a Book object. A book has a relation to with Author, and book is public API.
-Author will have personal information such as social security number etc, and they can now be "protected" such that anyone looking up
-the author of the book will not get those information back (from [GitHub](https://github.com/strongloop/loopback-datasource-juggler/pull/400) pull request).
-The property value is an array of strings, and each string in the array must match a property name defined for the model.
+The `protected` property is an array of strings, and each string in the array must match a property name defined for the model.
 
-An example of a protected property is User.email:
+A protected property is not sent in HTTP response JSON data if the object is nested inside another object.
+For instance, suppose there is an Author object and a Book object. Book has a relation to Author, and Book is a public API.
+The Author model has personal information (such as social security number) which should be "protected" so anyone looking up the author of the book will not get that information.
+
+{% include content/hidden-vs-protected.html %}
+
+An example configuring `email` as a protected property:
 
 {% include code-caption.html content="common/models/user.json" %}
 ```javascript
