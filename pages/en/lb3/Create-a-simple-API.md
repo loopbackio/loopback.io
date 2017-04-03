@@ -16,15 +16,6 @@ summary: Use the application generator tool to quickly create a LoopBack applic
 
 To create a new application, run the LoopBack [application generator](Application-generator):
 
-<div id="lb3apic" class="sl-hidden" markdown="1">
-If you're using IBM API Connect tools, the command is:
-
-```sh
-$ apic loopback
-```
-
-If using StrongLoop tools:
-</div>
 ```
 $ lb
 ```
@@ -52,7 +43,6 @@ Enter `loopback-getting-started`. Then the generator will prompt you for the na
 
 Then the tool will ask you what kind of application to create:
 
-<div id="lb3apic" class="sl-hidden" markdown="1">
 If using `apic`:
 
 ```
@@ -66,7 +56,7 @@ If using `apic`:
 Press **Enter** to accept the default selection, `empty server`.
 
 If using `slc`:
-</div>
+
 ```
 ? What kind of application do you have in mind? (Use arrow keys)
   api-server (A LoopBack API server with local User auth)
@@ -95,12 +85,11 @@ Go into your new application directory, then run the LoopBack [model generator]
 $ cd loopback-getting-started
 ```
 
-<div id="lb3apic" class="sl-hidden" markdown="1">
 Then, using IBM API Connect developer toolkit:
 ```
 $ apic create --type model
 ```
-</div>
+
 Using StrongLoop tools:
 ```
 $ lb model

@@ -17,16 +17,25 @@ Creates a fully-functional application with an API defined using the [Swagger](h
 For more information on Swagger, see [Swagger RESTful API Documentation Specification (version 2.0)](https://github.com/swagger-api/swagger-spec/blob/master/versions/2.0.md).
 
 ```
-$ lb swagger [options] [<name>]
+lb swagger [options] [<name>]
+```
+
+With API Connect developer toolkit:
+
+```
+apic loopback:swagger [options]
 ```
 
 With legacy StrongLoop tools:
 
 ```
-$ slc loopback:swagger [options] [<url>]
+slc loopback:swagger [options] [<url>]
 ```
 
 ### Options
+
+`-n, --name`
+Name of the middleware function (only with IBM API Connect developer toolkit).
 
 `-h, --help`
 Print the generator's options and usage.

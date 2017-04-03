@@ -32,14 +32,13 @@ To add a new data source, use the [data source generator](Data-source-generator
 ```shell
 $ lb datasource
 ```
-<div id="lb3apic" class="sl-hidden" markdown="1">
+
 Or, with API Connect:
 
 ```shell
 $ apic create --type datasource
 ```
 You can also add and modify data sources using the API Designer tool.
-</div>
 
 The tool will prompt you for the name of the new data source and the connector to use; for example, MongoDB, MySQL, Oracle, REST, and so on.
 The tool will then add an entry such as the following to `datasources.json`:

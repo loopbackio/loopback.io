@@ -29,18 +29,17 @@ To connect a model to a data source, follow these steps:
 1.  Use the  [data source generator](Data-source-generator.html)  to create a new data source.
 
     For example: 
-    <div id="lb3apic" class="sl-hidden" markdown="1" >
-    ```shell
-    $ apic create --type datasource
-    ? Enter the data-source name: mysql-corp
-    ? Select the connector for mysql: MySQL (supported by StrongLoop)
-    ```
-    </div>    
 
     ```
     $ lb datasource
     ? Enter the data-source name: mysql-corp
     ? Select the connector for mysql: MySQL (supported by StrongLoop)
+    ```
+
+    Using API Connect developer toolkit:
+    ```
+    $ apic create --type datasource
+    ...
     ```
 
     Follow the prompts to name the datasource and select the connector to use.
@@ -92,7 +91,7 @@ To connect a model to a data source, follow these steps:
     Let's add some test2 properties now.
     ...
     ```
-    <div id="lb3apic" class="sl-hidden" markdown="1">
+
         ```shell
         $ apic create --type model
         ? Enter the model name: myModel
@@ -103,7 +102,7 @@ To connect a model to a data source, follow these steps:
         Let's add some test2 properties now.
         ...
         ```
-    </div>
+
     When prompted for the data source to attach to, select the one you just created. 
 
 {% include note.html content="The model generator lists the [memory connector](Memory-connector.html), \"no data source,\" and data sources listed in [`datasources.json`](datasources.json.html).  That's why you created the data source first in step 1.
@@ -255,14 +254,15 @@ This command adds the following entry to `package.json`: 
 ## Creating a data source
 
 Use the [data source generator](Data-source-generator.html) to create a new data source:
-<div id="lb3apic" class="sl-hidden" markdown="1">
-```shell
-$ apic create --type datasource
-```
-</div>
 
 ```shell
 $ lb datasource
+```
+
+Or, with API Connect developer toolkit:
+
+```shell
+$ apic create --type datasource
 ```
 
 Follow the prompts to add the desired data source.
