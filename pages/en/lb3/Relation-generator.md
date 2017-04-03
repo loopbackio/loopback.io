@@ -18,13 +18,19 @@ The models involved in the relation must also exist before running this generato
 Creates a new [model relation](Creating-model-relations.html) in a LoopBack application.
 
 ```
-$ lb relation [options]
+lb relation [options]
+```
+
+With API Connect developer toolkit:
+
+```
+apic loopback:relation [options]
 ```
 
 With legacy StrongLoop tools:
 
 ```
-$ slc loopback:relation [options]
+$ slc relation [options]
 ```
 
 ### Options

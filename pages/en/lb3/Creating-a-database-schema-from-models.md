@@ -27,12 +27,10 @@ When tables with data exist, use [auto-update](#auto-update) to avoid data loss.
 
 ## Auto-migrate
 
-<div id="lb3apic" class="sl-hidden" markdown="1">
 {% include note.html content="
 The API Designer tool in IBM API Connect enables you to perform auto-migration without coding.
 For more information, see [Creating a database schema from models](http://www.ibm.com/support/knowledgecenter/SSFS6T/com.ibm.apic.toolkit.doc/tapim-model-update.html).
 " %}
-</div>
 
 **See also**: [automigrate()](http://apidocs.strongloop.com/loopback-datasource-juggler/#datasource-prototype-automigrate) in LoopBack API reference.
 

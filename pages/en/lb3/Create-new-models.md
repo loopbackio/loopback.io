@@ -83,13 +83,13 @@ To exit the model generator, press RETURN when prompted for property name.
 ## Define the Reviewer model
 
 Enter:
-<div id="lb3apic" class="sl-hidden" markdown="1">
+
 ```
 apic create --type model
 ```
 
-Or with StrongLoop tools:
-</div>
+Or with LoopBack tools:
+
 ```
 $ lb model
 ```

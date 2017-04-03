@@ -627,6 +627,10 @@ children:
     url: /doc/en/lb3/Property-generator.html
     output: 'web, pdf'
 
+  - title: 'Refresh definitions command'
+    url: /doc/en/lb3/Refresh-definitions-command.html
+    output: 'web, pdf'
+
   - title: 'Relation generator'
     url: /doc/en/lb3/Relation-generator.html
     output: 'web, pdf'

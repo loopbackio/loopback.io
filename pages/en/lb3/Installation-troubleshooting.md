@@ -22,7 +22,9 @@ Ensure you have the latest stable version of Node as stated on [http://nodejs.o
 
 If you have to use `sudo`, use the following command:
 
-`$ sudo npm install -g --unsafe-perm install strongloop`
+```
+$ sudo npm install -g --unsafe-perm install strongloop
+```
 
 ## Windows issues
 
@@ -32,17 +34,22 @@ LoopBack does not support Cygwin (Windows bash shell emulator), because Node doe
 
 ## Xcode license issues
 
-{% include note.html content="Xcode is only required with the old [StrongLoop package](Installing-StrongLoop.html).  It is not required for the LoopBack CLI tool. "%}
+{% include note.html content="Xcode is only required with the old [StrongLoop package](Installing-StrongLoop.html).  It is not required for the LoopBack CLI tool.
+" %}
 
 If you see errors such as:
 
-`Agreeing to the Xcode/iOS license requires admin privileges, please re-run as root via sudo.`
+```
+Agreeing to the Xcode/iOS license requires admin privileges, please re-run as root via sudo.
+```
 
 Then you recently upgraded or installed Xcode and haven't agreed to the license yet. 
 
 Enter the following command to validate your Xcode license, then reinstall StrongLoop:
 
-`$ sudo xcode-select`
+```
+$ sudo xcode-select
+```
 
 ## Errors with npm
 
@@ -54,7 +61,9 @@ If you encounter `peerDependency` conflicts with modules that are already insta
 
 A firewall may block npm installation because it blocks `git:/`/ URLs.  You can configure Git to use HTTPS instead as follows:
 
-`$ git config --global url."https://".insteadOf git://`
+```
+$ git config --global url."https://".insteadOf git://
+```
 
 See [Git is blocked, how to install npm modules (StackOverflow)](http://stackoverflow.com/questions/15903275/git-is-blocked-how-to-install-npm-modules) for more details.
 
@@ -75,9 +84,9 @@ In addition to the official npm registry at [http://registry.npmjs.org](http://r
 
 To install software from a different registry, use the command:
 
-`$ npm —registry <registry_URL> install strongloop`
-
-One you have installed `slc`, you can do more sophisticated registry management using the `slc registry` command.  
+```
+$ npm —registry <registry_URL> install loopback-cli
+```
 
 #### Install modules from Github
 
@@ -101,4 +110,6 @@ npm ERR! not ok code 0
 
 To fix this, enter the following command:
 
-`$ update-alternatives --install /usr/bin/node node /usr/bin/nodejs 99`
+```
+$ update-alternatives --install /usr/bin/node node /usr/bin/nodejs 99
+```

@@ -16,24 +16,27 @@ summary:
 Adds a new data source definition to a LoopBack application.
 
 ```
-$ lb datasource [options] [<name>]
+lb datasource [options] [<name>]
 ```
 
-Adds a new model to a LoopBack application.
+With IBM API Connect developer toolkit:
 
-<div id="lb3apic" class="sl-hidden" markdown="1">
 ```
-apic create --type datasource [options] [<name>]
+apic create --type datasource [options] --name [<name>]
 ```
-</div>
 
 With legacy StrongLoop tools:
 
 ```
-$ slc loopback:datasource [options] [<name>]
+slc loopback:datasource [options] [<name>]
 ```
 
 ### Options
+
+`-n, --name`
+With IBM API Connect developer toolkit only, optionally provide the name of the
+data source as the value of this option. 
+If provided, the tool will use that as the default when it prompts for the name.
 
 `-h, --help`
 Print the generator's options and usage.

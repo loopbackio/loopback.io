@@ -14,25 +14,29 @@ summary:
 ### Synopsis
 
 Adds a new model to a LoopBack application.
-<div id="lb3apic" class="sl-hidden" markdown="1">
-```
-apic create --type model [options] [<name>]
-```
-
-Or:
-</div>
 
 ```
-$ lb model [options] [<name>]
+lb model [options] [<name>]
+```
+
+With IBM API Connect developer toolkit:
+
+```
+apic create --type model [options] [--name <name>]
 ```
 
 With legacy StrongLoop tools:
 
 ```
-slc loopback:model [options] [<name>]
+slc model [options] [<name>]
 ```
 
 ### Options
+
+`-n, --name`
+With IBM API Connect developer toolkit only, optionally provide the name of the model
+as the value of this option. 
+If provided, the tool will use that as the default when it prompts for the name.
 
 `-h, --help`
 Print the generator's options and usage.
@@ -72,4 +76,4 @@ Then, the tool will invoke the [Property generator](Property-generator.html) an
 
 ### Output
 
-Depending your response to the last prompt, the tool will create a new file defining the model; either `/common/models/_model-name_.json` (for use by client and server) or `/server/models/_model-name_.json` (server only).  See [Model definition JSON file](Model-definition-JSON-file.html) for details.
+Depending your response to the last prompt, the tool will create a new file defining the model; either `/common/models/<model-name>.json` (for use by client and server) or `/server/models/_model-name_.json` (server only).  See [Model definition JSON file](Model-definition-JSON-file.html) for details.
