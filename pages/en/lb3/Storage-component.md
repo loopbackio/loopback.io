@@ -324,7 +324,7 @@ Once you create a container, it will provide both a REST and Node API, as descri
       <td>DELETE /api/containers/:container/files/:file</td>
     </tr>
     <tr>
-      <td>Upload one or more files into the specified container. The request body must use multipart/form-data which the file input type for HTML uses.</td>
+      <td>Upload one or more files into the specified container. The request body must use multipart/form-data which is the file input type for HTML uses.</td>
       <td>upload(req, res, cb)</td>
       <td>POST<br>/api/containers/:container/upload</td>
     </tr>
