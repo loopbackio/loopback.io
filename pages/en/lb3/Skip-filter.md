@@ -17,13 +17,17 @@ Use `offset` as an alias for `skip`.
 
 ### REST API
 
-`?filter[skip]=n`
+<pre>
+?filter[skip]=<i>n</i>
+</pre>
 
 You can also use [stringified JSON format](Querying-data.html#using-stringified-json-in-rest-queries) in a REST query.
 
 ### Node
 
-`{skip: n}`
+<pre>
+{skip: <i>n</i>}
+</pre>
 
 Where _n_ is the number of records to skip.
 

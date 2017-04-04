@@ -15,13 +15,17 @@ A _limit_ filter limits the number of records returned to the specified number
 
 ### REST API
 
-`filter[limit]=_n_`
+<pre>
+filter[limit]=<i>n</i>
+</pre>
 
 You can also use [stringified JSON format](Querying-data.html#using-stringified-json-in-rest-queries) in a REST query.
 
 ### Node API
 
-`{limit: _n_}`
+<pre>
+{ limit: <i>n</i> }
+</pre>
 
 Where _n_ is the maximum number of results (records) to return.
 
