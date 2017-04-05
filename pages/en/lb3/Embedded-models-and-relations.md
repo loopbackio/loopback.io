@@ -196,6 +196,21 @@ Customer.embedsOne(EmailAddress, {
   }
 ```
 
+{% include code-caption.html content="common/models/email.json" %}
+```javascript
+{
+  "name": "Email",
+  "base": "Model",
+  "idInjection": true,
+  "properties": {
+    "id": {
+      "type": "string",
+      "id": true,
+      "defaultFn": "uuid"
+    }
+  }
+```
+
 ### Helper methods
 
 * customer.emails()
