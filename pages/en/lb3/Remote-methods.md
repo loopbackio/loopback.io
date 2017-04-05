@@ -234,7 +234,7 @@ The following table describes the properties of each individual argument.
     <tr>
       <td>http</td>
       <td>Object or Function</td>
-      <td>For input arguments: a function or an object describing mapping from HTTP request to the argument value. See <a href="Remote-methods.html">HTTP mapping of input arguments</a> below.</td>
+      <td>For input arguments: a function or an object describing mapping from HTTP request to the argument value. See <a href="#http-mapping-of-input-arguments">HTTP mapping of input arguments</a> below.</td>
     </tr>
     <tr>
       <td>http.target</td>
