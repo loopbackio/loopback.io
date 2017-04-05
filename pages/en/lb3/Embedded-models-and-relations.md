@@ -301,6 +301,7 @@ since a person can be an Author or a Reader.
   "relations": {
     "linked": {
       "type": "belongsTo",
+      "model": "Person",
       "polymorphic": {
         "idType": "number"
       },
