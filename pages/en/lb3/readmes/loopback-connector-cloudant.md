@@ -119,6 +119,37 @@ User.destroyAll (function () {
 })
 ```
 
+#### Note on using `updateOrCreate` functionality:
+**Cloudant does not support the idea of updating a document. All "updates" on a document are _destructive_ replacements.**
+
+For example:
+
+```
+// original document
+{
+  "id": ...,
+  "_rev": ...,
+  "prop1": "1",
+  "prop2": "2",
+}
+
+// data to be updated
+ds.updateOrCreate('User', {
+  prop1: 'updated1',
+}, function (err, res) {});
+
+// document after update
+{
+  "id": ...,
+  "_rev": ...,
+  "prop1": "updated1",
+}
+```
+
+**Please note how property `prop2` was completely dropped upon update.**
+
+**Solution:** Do not pass partial values for the data object to be updated. If there are properties that are not being updated, please include the old value to keep data persistent.
+
 ## Feature backlog
 
 * Index-only model properties marked with index=true
