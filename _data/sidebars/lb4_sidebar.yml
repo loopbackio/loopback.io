@@ -1,0 +1,28 @@
+## definition of `menuitem`===========
+# title: string
+# url: string
+# output: [ enum{web, pdf} ] (expressed as comma separated string in YAML)
+# children?: [ menuitem ]
+
+## top level property=================
+# entries: [ menuitem ]
+
+title: LoopBack 4.0
+url: /doc/en/lb4/index.html
+children:
+
+- title: 'Roadmap'
+  url: /doc/en/lb4/Roadmap.html
+  output: 'web, pdf'
+
+- title: 'Installation'
+  url: /doc/en/lb4/Installation.html
+  output: 'web, pdf'
+
+- title: 'Getting started'
+  url: /doc/en/lb4/Getting-started.html
+  output: 'web, pdf'
+
+- title: 'Examples & Tutorials'
+  url: /doc/en/lb4/Examples-and-tutorials.html
+  output: 'web, pdf'
