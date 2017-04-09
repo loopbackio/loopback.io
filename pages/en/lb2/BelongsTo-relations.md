@@ -66,7 +66,8 @@ For example, here is the model JSON file for the order model in
     "customer": {
       "type": "belongsTo",
       "model": "Customer",
-      "foreignKey": ""
+      "foreignKey": "",
+      "primaryKey": "id" // optional
     }
   },
   ...

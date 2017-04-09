@@ -44,7 +44,8 @@ For example, consider two models: supplier and account.
     "supplier_acct": {
       "type": "hasOne",
       "model": "account",
-      "foreignKey": "supplierId"
+      "foreignKey": "supplierId",
+      "primaryKey": "id" // optional
     }
   },
   "acls": [],
