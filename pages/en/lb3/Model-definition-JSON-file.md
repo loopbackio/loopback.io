@@ -973,6 +973,12 @@ You can declare remote methods here. Until this feature is implemented, you must
 
 ## Indexes
 
+{% include warning.html content="Indexes will not be automatically created for
+you, even with NoSQL datasource connectors like MongoDB. You must run
+[automigrate](Creating-a-database-schema-from-models.html#auto-migrate) or
+[autoupdate](Creating-a-database-schema-from-models.html#auto-update)
+create your indexes!" %}
+
 Declare indexes for a model with the `indexes` property, for example:
 
 ```javascript
