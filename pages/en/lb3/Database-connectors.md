@@ -19,6 +19,7 @@ You can connect models using relations to reflect relationships among data. For 
 
 There are officially-supported connectors for the following databases:
 
+* [Cassandra](Cassandra-connector.html)
 * [Cloudant](Cloudant-connector.html)
 * [DashDB](DashDB.html)
 * [DB2](DB2-connector.html)
