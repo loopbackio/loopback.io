@@ -743,6 +743,10 @@ children:
     output: 'web'
     children:
 
+    - title: 'Cassandra connector'
+      url: /doc/en/lb3/Cassandra-connector.html
+      output: 'web, pdf'
+
     - title: 'Cloudant connector'
       url: /doc/en/lb3/Cloudant-connector.html
       output: 'web, pdf'

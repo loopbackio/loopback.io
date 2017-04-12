@@ -8,6 +8,7 @@
 #   from the given github repo. If that branch is NOT master, then the
 #   branch name will be appended to the local readme file name.
 (cat <<LIST_END
+strongloop loopback-connector-cassandra master
 strongloop loopback-connector-cloudant master
 strongloop loopback-connector-dashdb master
 strongloop loopback-connector-db2 master
