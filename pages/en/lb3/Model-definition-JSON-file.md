@@ -112,7 +112,7 @@ Properties are required unless otherwise designated.
     </tr>
     <tr>
       <td>strict</td>
-      <td>Boolean</td>
+      <td>Boolean or String</td>
       <td><code>false</code>.<br/>If the data source is backed by a relational database, then default is  <code>true</code>.</td>
       <td>
         Specifies whether the model accepts only predefined properties or not. One of:
@@ -122,6 +122,9 @@ Properties are required unless otherwise designated.
           </li>
           <li><code>false</code>: The model is an open model and accepts all properties, including ones not predefined in the model.
             This mode is useful to store free-form JSON data to a schema-less database such as MongoDB.
+          </li>
+          <li><code>"filter"</code>: Only properties defined in the model are accepted.
+          If you load or save a model instance with properties that are not predefined, LoopBack will ignore them. This is particularly useful when dealing with old data that you wish to lose without a migration script.
           </li>
         </ul>
       </td>
