@@ -106,8 +106,8 @@ Properties are required unless otherwise designated.
 
     <tr>
       <td>http.path</td>
+      <td>String</td>      
       <td>None</td>
-      <td>String</td>
       <td>Customized HTTP path for REST endpoints of this model.</td>
     </tr>
     <tr>

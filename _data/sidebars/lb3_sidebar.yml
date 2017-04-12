@@ -362,6 +362,10 @@ children:
     url: /doc/en/lb3/Using-database-transactions.html
     output: 'web, pdf'
 
+  - title: 'Connecting to SOAP web services'
+    url: /doc/en/lb3/Connecting-to-SOAP.html
+    output: 'web, pdf'
+
   - title: 'Executing native SQL'
     url: /doc/en/lb3/Executing-native-SQL.html
     output: 'web, pdf'
@@ -637,6 +641,10 @@ children:
 
   - title: 'Remote method generator'
     url: /doc/en/lb3/Remote-method-generator.html
+    output: 'web, pdf'
+
+  - title: 'SOAP generator'
+    url: /doc/en/lb3/SOAP-generator.html
     output: 'web, pdf'
 
   - title: 'Swagger generator'
