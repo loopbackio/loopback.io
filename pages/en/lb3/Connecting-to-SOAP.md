@@ -28,8 +28,8 @@ To support the "API design first" approach, the [SOAP generator](SOAP-generator.
 
 ## Example
 
-This example demonstrates how you can start with a SOAP WSDL document and
-use the [SOAP generator](SOAP-generator.html) to:
+This example demonstrates using the [SOAP generator](SOAP-generator.html) to
+connect a LoopBack application to a SOAP data source to:
 
 - Generate models and remote methods to invoke SOAP operations.
 - Play with the live APIs served by LoopBack using the API Explorer.
@@ -132,15 +132,6 @@ The tool generates the following model definition files in the `server/models` d
 - `get-atomic-weight.js`: GetAtomicWeight model extension.
 - `soap-periodictable-soap.json`: Model to host all APIs.
 - `soap-periodictable-soap.js`: Methods that invoke web service operations.
-
-### Install strong-soap
-
-Install the `strong-soap` Node module. This is a workaround until the ability to use
-the SOAP datasource instead of WSDL is supported.
-
-```
-npm install strong-soap --save
-```
 
 ### Run the application
 
