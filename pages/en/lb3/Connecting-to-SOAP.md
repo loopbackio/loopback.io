@@ -14,7 +14,7 @@ summary: The LoopBack CLI enables you to easily create models based on a SOAP we
 Web services enable applications to communicate with each other independent
 of platform and language. A web service is a software interface that describes a collection
 of operations that can be invoked over the network through standardized XML messaging using
-Simple Object Access Protocol ([SOAP](https://www.w3.org/TR/soap/). Web Services Description Language ([WSDL](https://www.w3.org/TR/wsdl20/)) is an
+Simple Object Access Protocol ([SOAP](https://www.w3.org/TR/soap/)). Web Services Description Language ([WSDL](https://www.w3.org/TR/wsdl20/)) is an
 XML document that describes web service endpoints, bindings, operations and schema.
 
 {% include image.html file="loopback-soap-integration.png" alt="LoopBack SOAP integration" %}
@@ -40,30 +40,56 @@ use the [SOAP generator](SOAP-generator.html) to:
 The first step is to create a new LoopBack application. For example:
 
 ```sh
-lb app soap-demo
+$ lb app soap-demo
 ```
 
 When prompted, select either LoopBack 3.x or 2.x and `empty-server` application.
 
-### Generate APIs from WSDL
+### Generate SOAP data source
 
-Now use the [SOAP generator](SOAP-generator.html) to generate APIs from the WSDL document.
+Next, create a data source for the SOAP web service.  
+This example will use the publicly-available [Periodic table web service](http://www.webservicex.net/New/Home/ServiceDetail/19).
+
+Create a new data source using the [data source generator](Data-source-gnerator.html):
+
+```
+$ cd soap-demo
+$ lb datasource
+```
+
+When prompted, respond as follows:
+
+- Enter the data-source name, for example "periodicSoapDS".
+- Select "Soap Webservices (supported by StrongLoop)" from the list of connectors.
+- Enter http://www.webservicex.net/periodictable.asmx for "URL to the SOAP web service endpoint" prompt.
+- Enter http://www.webservicex.net/periodictable.asmx?WSDL for "HTTP URL or local fie system path to WSDL file" prompt.
+- Enter "y" to Expose operations as REST APIs.
+- Leave blank to "Maps WSDL binding operations to Node.js methods".
+- Select "y" to "Install "loopback-connector-soap" prompt.  This runs `npm install -s loopback-connector-soap`.
+
+For more information on SOAP datasource properties, see [SOAP data source properties](http://loopback.io/doc/en/lb3/SOAP-connector.html).
+
+### Generate APIs from the SOAP data source
+
+Now use the [SOAP generator](SOAP-generator.html) to generate models from the SOAP data source.
 
 ```sh
-cd soap-demo
-lb soap
-```
-When prompted, provide the following URL to a WSDL for the [Periodic table web service](http://www.webservicex.net/New/Home/ServiceDetail/19):
-
-```
-http://www.webservicex.net/periodictable.asmx?WSDL
+$ lb soap
 ```
 
-The generator loads the WSDL and discovers services that the WSDL defines.  
+This command lists the SOAP data sources defined for this application;
+for this example, it will list the one you just created.
+
+```
+? Select the datasource for SOAP discovery
+❯ periodicSoapDS
+```
+
+The generator loads the WSDL for the selected SOAP data source and discovers
+services that the WSDL defines.  
 It then prompts you to select the service from a list (in this example, there is only one).
 
 ```
-? Enter the WSDL url or file path: http://www.webservicex.net/periodictable.asmx?WSDL
 ? Select the service: periodictable
 ```
 
@@ -75,8 +101,7 @@ Select the `periodictableSoap` binding.
 ? Select the binding: periodictableSoap
 ```
 
-After you choose a binding, the tool discovers and lists SOAP operations that the selected binding defines.
-Select one or more SOAP operations.
+After you choose a binding, the tool discovers and lists SOAP operations that the selected binding defines.  Press the space bar to select all of the listed SOAP operations.
 
 ```
 ◉ GetAtoms
@@ -95,12 +120,12 @@ from the SOAP service.
 
 The tool generates the following model definition files in the `server/models` directory:
 
-- `get-atomic-number-response.json` / `.js`
-- `get-atomic-weight-response.json` / `.js`
-- `get-atoms-response.json` / `.js`
-- `get-atoms.json` / `.js`
-- `get-element-symbol-response.json` / `.js`
-- `get-element-symbol.json` / `.js`
+- `get-atomic-number-response.json` / `.js`: GetAtomicNumberResponse definition / extension.
+- `get-atomic-weight-response.json` / `.js`: GetAtomicWeightResponse definition / extension.
+- `get-atoms-response.json` / `.js`: GetAtomsResponse definition / extension.
+- `get-atoms.json` / `.js`: Getatoms definition / extension.
+- `get-element-symbol-response.json` / `.js`: GetelementsymbolResponse definition / extension.
+- `get-element-symbol.json` / `.js`: Getelementsymbol definition / extension.
 - `get-atomic-number.json`: GetAtomicNumber definition.
 - `get-atomic-number.js`: GetAtomicNumber extension.
 - `get-atomic-weight.json`: GetAtomicWeight model definition.
