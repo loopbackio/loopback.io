@@ -7,17 +7,18 @@ keywords: LoopBack
 tags: models
 sidebar: lb3_sidebar
 permalink: /doc/en/lb3/Model-definition-JSON-file.html
-summary: The model JSON file declaratively defines a LoopBack model.
+summary: The model JSON file declaratively defines a LoopBack model.  It's in either the <code>server</code> or <code>common</code> project sub-directory, depending on whether the model is server-only or defined for both server and client.
 ---
 
 ## Overview
 
-The LoopBack [Model generator](Model-generator.html) creates a model JSON file for each model in either the `server/models`
-or the `common/models` directory (depending on your response to the generator's prompts).
+The LoopBack [model generator](Model-generator.html) creates a model JSON file for each model in either the `server/models`
+or the `common/models` directory (depending on whether the model is server-only or
+defined on both server and client).
 The file is named <code><i>model-name</i>.json</code>, where _`model-name`_ is the model name; for example, `customer.json`.
 The model JSON file defines models, relations between models, and access to models. 
 
-{% include important.html content="
+{% include note.html content="
 The LoopBack [model generator](Model-generator.html) automatically converts camel-case model names (for example MyModel)
 to lowercase dashed names (my-model). For example, if you create a model named \"FooBar\" with the model generator, it creates files `foo-bar.json` and `foo-bar.js` in `common/models`.
 However, the model name (\"FooBar\") will be preserved via the model's name property.
@@ -969,10 +970,46 @@ var defaultScope = Report.defaultScope;
 
 ## Methods
 
-You can declare remote methods here. Until this feature is implemented, you must declare remote methods in code. See [Remote methods](Remote-methods.html).
+The `methods` key defines [remote methods](Remote-methods.html) for the model.
+Its value is an object with a string key for each remote method name:
+- Instance method names must start with `prototype.`.
+- Static method names can be any [legal name](Valid-names-in-LoopBack.html).
 
-{% include warning.html content="This feature is not yet implemented.
-" %}
+For example, the following defines a static remote method called "greet"
+and an instance method called "getProfile".
+
+```
+...
+  "methods": {
+    "greet": {
+      "accepts": [
+        {
+          "arg": "msg",
+          "type": "string",
+          "http": {
+            "source": "query"
+          }
+        }
+      ],
+      "returns": {
+        "arg": "greeting",
+        "type": "string"
+      },
+      "http": {
+        "verb": "get"
+      }
+    },
+  "prototype.getProfile": {
+      ... // Instance remote method - options
+    }
+...
+```
+
+### Remote method options
+
+You specify remote method options when you register a remote method, either as an argument to the `Model.remoteMethod()` method if you [register it in code](Remote-methods.html#registering-a-remote-method), or in the `methods` key if you register it in JSON.  Either way, it's a JavaScript object with the same set of properties.
+
+{% include content/rm-options.md %}
 
 ## Indexes
 
@@ -980,7 +1017,8 @@ You can declare remote methods here. Until this feature is implemented, you must
 you, even with NoSQL datasource connectors like MongoDB. You must run
 [automigrate](Creating-a-database-schema-from-models.html#auto-migrate) or
 [autoupdate](Creating-a-database-schema-from-models.html#auto-update)
-create your indexes!" %}
+create your indexes!
+" %}
 
 Declare indexes for a model with the `indexes` property, for example:
 

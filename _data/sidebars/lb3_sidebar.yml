@@ -927,6 +927,10 @@ children:
       url: /doc/en/lb3/Model-definition-JSON-file.html
       output: 'web, pdf'
 
+    - title: 'Model extension file'
+      url: /doc/en/lb3/Model-extension-file.html
+      output: 'web, pdf'
+
   - title: package.json
     url: /doc/en/lb3/package.json.html
     output: 'web, pdf'
