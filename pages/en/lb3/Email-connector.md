@@ -90,7 +90,6 @@ For GMail, configure your email data source as follows:
 ...
 "Email": {
   "name": "mail",
-  "defaultForType": "mail",
   "connector": "mail",
   "transports": [{
     "type": "SMTP",
