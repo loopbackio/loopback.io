@@ -410,7 +410,7 @@ table td {
     hyphens: auto;
 }
 
-/** 
+/**
 prevent hypens of config property names.
 Many tables show || propName | description | default ||
 "propName" should NOT be hyphenated to prop-Name
@@ -1265,4 +1265,15 @@ table.gsc-search-box, table.gsc-search-box td.gsc-input {
 td.gsc-input, td.gsc-search-button, td.gsc-clear-button {
   background-color: #72ac4a;
   border-style: none !important;
+}
+
+/*
+For printing
+*/
+
+@media print
+{
+    .sidebar-col, .githubEditButton {
+        display: none !important;
+    }
 }
