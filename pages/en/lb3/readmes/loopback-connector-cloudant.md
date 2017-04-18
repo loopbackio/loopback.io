@@ -37,11 +37,26 @@ look something like this:
 "mydb": {
   "name": "mydb",
   "connector": "cloudant",
+  "url": "https://<username>:<password>@<host>"
+  "database": "test"
+}
+```
+or
+
+```
+"mydb": {
+  "name": "mydb",
+  "connector": "cloudant",
   "username": "XXXX-bluemix",
   "password": "YYYYYYYYYYYY",
   "database": "test"
 }
 ```
+
+Only specify the `username` and `password` fields if you are using the root/admin user for the cloudant server which has the same
+string as the hostname for the cloudant server, because the cloudant driver used by the connector appends `.cloudant.com` to the
+`username` field when `username` and `password` fields are specified. Therefore, it is good practice to use the `url` field instead
+of `username` and `password` if your host is not `username.cloudant.com`.
 
 Edit `datasources.json` to add other supported properties as required:
 
