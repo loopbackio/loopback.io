@@ -4,8 +4,8 @@ lang: en
 layout: page
 keywords: LoopBack
 tags:
-sidebar: lb2_sidebar
-permalink: /doc/en/lb2/Basic-model-object.html
+sidebar: lb3_sidebar
+permalink: /doc/en/lb3/Basic-model-object.html
 summary:
 ---
 
