@@ -28,10 +28,6 @@ functionality that you can use via your custom model.
 In addition, LoopBack does not support multiple models based on the User model in a single application. That is, you cannot have more than one model derived from the built-in User model in a single app.
 " %}
 
-Watch this video for an introduction to user management in LoopBack:
-
-<iframe class="youtube-player" type="text/html" style="width: 400px; height: 300px" src="//www.youtube.com/embed/UdsOcOVg_0M?wmode=opaque" frameborder="0"></iframe>
-
 ## Creating and authenticating users
 
 The basic process to create and authenticate users is:
@@ -150,7 +146,7 @@ See [Partitioning users with realms](Partitioning-users-with-realms.html).
 
 ## Security considerations
 
-When a user's account is compromised (for example their password is leaked or the attacker gains 
+When a user's account is compromised (for example their password is leaked or the attacker gains
 access to their email account), the app needs to be able to prevent continued use of the hijacked account.
 
 To address this case, LoopBack invalidates access tokens (logs out sessions)
