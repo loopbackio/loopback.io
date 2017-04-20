@@ -102,6 +102,7 @@ defaults:
 sidebars:
 - lb2_sidebar
 - lb3_sidebar
+- lb4_sidebar
 - contrib_sidebar
 - community_sidebar
 - es_lb2_sidebar

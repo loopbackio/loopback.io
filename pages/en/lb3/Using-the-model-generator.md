@@ -17,18 +17,16 @@ See [Discovering models from relational databases](Discovering-models-from-relat
 
 The easiest way to create a new model is with the [model generator](Model-generator.html);
 
-<div id="lb3apic" class="sl-hidden" markdown="1">
-With IBM API Connect:
+With LoopBack tools:
 
-```shell
-$ apic create --type model
+```
+$ lb model <model-name>
 ```
 
-Or with StrongLoop tools:
-</div>
+With IBM API Connect developer toolkit:
 
-```shell
-$ lb model
+```
+$ apic create --type model --name <model-name>
 ```
 
 When creating a new model, the generator will prompt you for the properties in the model.
@@ -56,13 +54,12 @@ In your application root directory, enter the command (for example, to create a 
 ```shell
 $ lb model book
 ```
-<div id="lb3apic" class="sl-hidden" markdown="1">
-Or, using `apic`:
+
+Or, using IBM API Connect developer toolkit:
 
 ```shell
 $ apic create --type model book
 ```
-</div>
 
 Then the tool will prompt you to:
 

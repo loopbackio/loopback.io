@@ -37,11 +37,26 @@ look something like this:
 "mydb": {
   "name": "mydb",
   "connector": "cloudant",
+  "url": "https://<username>:<password>@<host>"
+  "database": "test"
+}
+```
+or
+
+```
+"mydb": {
+  "name": "mydb",
+  "connector": "cloudant",
   "username": "XXXX-bluemix",
   "password": "YYYYYYYYYYYY",
   "database": "test"
 }
 ```
+
+Only specify the `username` and `password` fields if you are using the root/admin user for the cloudant server which has the same
+string as the hostname for the cloudant server, because the cloudant driver used by the connector appends `.cloudant.com` to the
+`username` field when `username` and `password` fields are specified. Therefore, it is good practice to use the `url` field instead
+of `username` and `password` if your host is not `username.cloudant.com`.
 
 Edit `datasources.json` to add other supported properties as required:
 
@@ -118,6 +133,37 @@ User.destroyAll (function () {
   console.log ('test complete');
 })
 ```
+
+#### Note on using `updateOrCreate` functionality:
+**Cloudant does not support the idea of updating a document. All "updates" on a document are _destructive_ replacements.**
+
+For example:
+
+```
+// original document
+{
+  "id": ...,
+  "_rev": ...,
+  "prop1": "1",
+  "prop2": "2",
+}
+
+// data to be updated
+ds.updateOrCreate('User', {
+  prop1: 'updated1',
+}, function (err, res) {});
+
+// document after update
+{
+  "id": ...,
+  "_rev": ...,
+  "prop1": "updated1",
+}
+```
+
+**Please note how property `prop2` was completely dropped upon update.**
+
+**Solution:** Do not pass partial values for the data object to be updated. If there are properties that are not being updated, please include the old value to keep data persistent.
 
 ## Feature backlog
 

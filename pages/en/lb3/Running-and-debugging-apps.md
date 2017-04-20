@@ -14,7 +14,7 @@ This enables you to see stack traces and console output immediately.
 
 For example:
 
-```shell
+```
 $ cd myapp
 $ node .
 ```
@@ -27,6 +27,4 @@ Doing this enables you to profile the app and monitor app metrics to help find m
 See [Profiling](https://docs.strongloop.com/display/SLC/Profiling) and 
 [Monitoring app metrics](https://docs.strongloop.com/display/SLC/Monitoring-app-metrics) for more information.
 
-<div id="lb3apic" class="sl-hidden" markdown="1">
 With API Connect, to run your application and the MicroGateway, use the `apic start` command.  You can also [run your app using the API Designer](https://developer.ibm.com/apiconnect/getting-started/run-your-api/).
-</div>

@@ -14,22 +14,21 @@ summary:
 ### Synopsis
 
 Adds a new model to a LoopBack application.
-<div id="lb3apic" class="sl-hidden" markdown="1">
-```
-apic create --type model [options] [<name>]
-```
-
-Or:
-</div>
 
 ```
-$ lb model [options] [<name>]
+lb model [options] [<name>]
+```
+
+With IBM API Connect developer toolkit:
+
+```
+apic create --type model [options] [--name <name>]
 ```
 
 With legacy StrongLoop tools:
 
 ```
-slc loopback:model [options] [<name>]
+slc model [options] [<name>]
 ```
 
 ### Options

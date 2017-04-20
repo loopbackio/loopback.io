@@ -7,23 +7,29 @@ tags:
 sidebar: lb3_sidebar
 permalink: /doc/en/lb3/Refresh-definitions-command.html
 summary:
-published: false
 ---
 
 {% include content/generator-create-app.html lang=page.lang %}
 
-{%include warning.html content="API Connect Developer Toolkit does not currently support LoopBack 3.0.
-Use StrongLoop tools instead; see [Installation](Installation.html).
-" %}
+### Synopsis
 
-Use:
+Generates a product definition and API definition YAML files from LoopBack models.
 
-```shell
-$ apic loopback:refresh
+```
+apic loopback:refresh
 ```
 
-Generate a product and an API definition from the LoopBack application models
+### Options
 
-```shell
-$ apic loopback:refresh
-```
+`-h, --help`
+Print the generator's options and usage.
+
+`--skip-cache`
+Do not remember prompt answers. Default is false.
+
+`--skip-install`
+Do not automatically install dependencies. Default is false.
+
+### Arguments
+
+None.

@@ -16,27 +16,31 @@ summary:
 Adds a new data source definition to a LoopBack application.
 
 ```
-$ lb datasource [options] [<name>]
+lb datasource [options] [<name>]
 ```
 
-Adds a new model to a LoopBack application.
+With IBM API Connect developer toolkit:
 
-<div id="lb3apic" class="sl-hidden" markdown="1">
 ```
-apic create --type datasource [options] [<name>]
+apic create --type datasource [options] --name [<name>]
 ```
-</div>
 
 With legacy StrongLoop tools:
 
 ```
-$ slc loopback:datasource [options] [<name>]
+slc loopback:datasource [options] [<name>]
 ```
 
 ### Options
 
 `--bluemix`
- : Fetch  provisioned datasource services from Bluemix and present them in the list of choices for datasource to add. Currently only Cloudant and MongoDB services are supported.
+ : Fetch  provisioned data source services from Bluemix and present them in the list of choices for 
+ data source to add. Currently lists only Cloudant and MongoDB services.
+
+`-n, --name`
+With IBM API Connect developer toolkit only, optionally provide the name of the
+data source as the value of this option. 
+If provided, the tool will use that as the default when it prompts for the name.
 
  {% include_relative includes/CLI-std-options.md %}
 

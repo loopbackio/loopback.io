@@ -16,18 +16,29 @@ summary:
 Adds a new property to an existing LoopBack model.
 
 ```
-$ lb property [options]
+lb property [options]
+```
+
+With IBM API Connect developer toolkit:
+
+```
+apic create --type model [options]
 ```
 
 With legacy StrongLoop tools:
 
 ```
-$ slc loopback:property [options]
+slc loopback:property [options]
 ```
 
 ### Options
 
 {% include_relative includes/CLI-std-options.md title='no' %}
+
+`-n, --name`
+With IBM API Connect developer toolkit only, optionally provide the name of the
+property as the value of this option. 
+If provided, the tool will use that as the default when it prompts for the name.
 
 ### Interactive Prompts
 

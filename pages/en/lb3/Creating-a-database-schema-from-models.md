@@ -27,12 +27,10 @@ When tables with data exist, use [auto-update](#auto-update) to avoid data loss.
 
 ## Auto-migrate
 
-<div id="lb3apic" class="sl-hidden" markdown="1">
 {% include note.html content="
 The API Designer tool in IBM API Connect enables you to perform auto-migration without coding.
 For more information, see [Creating a database schema from models](http://www.ibm.com/support/knowledgecenter/SSFS6T/com.ibm.apic.toolkit.doc/tapim-model-update.html).
 " %}
-</div>
 
 **See also**: [automigrate()](http://apidocs.strongloop.com/loopback-datasource-juggler/#datasource-prototype-automigrate) in LoopBack API reference.
 
@@ -157,7 +155,7 @@ For more information, see the [MongoDB documentation](http://docs.mongodb.org/m
 **See also**: See also [autoupdate()](http://apidocs.strongloop.com/loopback-datasource-juggler/#datasource-prototype-autoupdate) in LoopBack API reference.
 
 If there are existing tables in a database, running `automigrate()` will drop and re-create the tables: Therefore, data will be lost.
-To avoid this problem use `auto-update()`.
+To avoid this problem, use `autoupdate()`.
 Instead of dropping tables and recreating them, `autoupdate()` calculates the difference between the LoopBack model and the database table
 definition and alters the table accordingly. This way, the column data will be kept as long as the property is not deleted from the model.
 

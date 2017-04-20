@@ -103,7 +103,7 @@ Edit `datasources.json` to add any other additional properties that you require.
       <td>Enable this option to deal with big numbers (BIGINT and DECIMAL columns) in the database. Default is false.</td>
     </tr>
     <tr>
-      <td>timeZone</td>
+      <td>timezone</td>
       <td>String</td>
       <td>The timezone used to store local dates.  Default is ‘local’.</td>
     </tr>
@@ -280,6 +280,45 @@ Example:
 }
 ```
 
+### Date types
+
+For TIMESTAMP and DATE types, use the `dateType` option to specify custom type. By default it is DATETIME.
+
+Example:
+
+```javascript
+{ startTime :
+  { type: Date,
+    dataType: 'timestamp'
+  }
+}
+```
+
+**Note:** When quering a `DATE` type, please be aware that values sent to the server via REST API call will be converted to a Date object using the server timezone. Then, only `YYYY-MM-DD` part of the date will be used for the SQL query.
+
+For example, if the client and the server is in GMT+2 and GMT -2 timezone respectively. Performing the following operation at `02:00 on 2016/11/22` from the client side:
+
+```javascript
+var products = Product.find({where:{expired:new Date(2016,11,22)}});
+```
+
+will result in the REST URL to look like: `/api/Products/?filter={"where":{"expired":"2016-12-21T22:00:00Z"}}` and the SQL will be like this:
+
+```SQL
+SELECT * FROM Product WHERE expired = '2016-12-21'
+```
+which is not correct.
+
+**Solution:** The workaround to avoid such edge case boundaries with timezones is to use the `DATE` type field as a **_string_** type in the LoopBack model definition.
+
+```javascript
+{ birthday :
+  { type: String, 
+    dataType: 'date'
+  }
+}
+```
+
 ### Other types
 
 Convert String / DataSource.Text / DataSource.JSON to the following MySQL types:
@@ -308,18 +347,6 @@ Example: 
 { biography :
   { type: String,
   dataType: 'longtext'
-  }
-}
-```
-
-Convert JSON Date types to  datetime or timestamp
-
-Example: 
-
-```javascript
-{ startTime :
-  { type: Date,
-    dataType: 'timestamp'
   }
 }
 ```

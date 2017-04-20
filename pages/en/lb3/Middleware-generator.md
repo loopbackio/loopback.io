@@ -19,13 +19,19 @@ Adds a new middleware configuration to an existing LoopBack application.
 " %}
 
 ```
-$ lb middleware [options] [<name>]
+lb middleware [options] [<name>]
+```
+
+With IBM API Connect developer toolkit:
+
+```
+apic loopback:middleware [options]
 ```
 
 With legacy StrongLoop tools:
 
 ```
-$ slc loopback:middleware [options] [<name>]
+slc loopback:middleware [options] [<name>]
 ```
 
 ### Options

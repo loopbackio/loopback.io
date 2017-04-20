@@ -2,7 +2,7 @@
 title: "Remote methods"
 lang: en
 layout: navgroup
-toc_level: 1
+toc_level: 2
 navgroup: app-logic
 keywords: LoopBack
 tags: [models, application_logic]
@@ -19,27 +19,22 @@ Use a remote method to perform operations not provided by LoopBack's [standar
 {% include note.html content="The easiest way to define a remote method is by using the command-line [remote method generator](Remote-method-generator.html).  For an introductory example of defining a remote method, see [Extend your API](Extend-your-API.html) in Getting Started.
 " %}
 
-## How to define a remote method
+## How to add a remote method to a model
 
-To define a remote method:
+To add a remote method to a model:
 
-1.  Edit the [Model definition JSON file](Model-definition-JSON-file.html) in `/common/models` directory; for example, to attach a remote method to the Person model, edit `/common/models/person.js`.
-If you created the model with the [Model generator](Model-generator.html), then this file will already exist.
+1.  Create a function in the [model extension file](Model-extension-file.html). The method name determines whether a remote method is static or an instance method.  A method name starting with `prototype.` indicates an instance method; otherwise, it's a static method. **NOTE**: By default, a remote method is static.  You must specify `prototype.` in the method name to create an instance method.
 
-2.  Define a method that will handle the request. The method name determines whether a remote method is static or an instance method.  A method name starting with `prototype.` indicates an instance method; otherwise, it's a static method. **NOTE**: By default, a remote method is static.  You must specify `prototype.` in the method name to create an instance method.
-
-3.  Call [`remoteMethod()`](http://apidocs.strongloop.com/loopback/#model-remotemethod), to register the method, calling it with two parameters: 
-    - First parameter is a string that is the name of the method you defined in step 2 
-    - Second (optional) parameter provides additional configuration for the REST endpoint.
-
-{% include tip.html content="The LoopBack [model generator](Model-generator.html) automatically converts camel-case model names (for example MyModel) to lowercase dashed names (my-model).
-For example, if you create a model named \"FooBar\" with the model generator, it creates files `foo-bar.json` and `foo-bar.js` in `common/models`. 
-However, the model name (\"FooBar\") will be preserved via the model's name property.
-" %} 
+1.  Register the remote method one of these two ways:
+   - Register using JSON in the [model definition JSON file](Model-definition-JSON-file.html).
+   For more information, see [Registering a remote method in JSON](#registering-a-remote-method-in-json).
+   - Register using JavaScript code in the [model extension file](Model-extension-file.html)  calling [`remoteMethod()`](http://apidocs.strongloop.com/loopback/#model-remotemethod).
+   For more information, see [Registering a remote method in code](#registering-a-remote-method-in-code).
 
 ### Example
 
-See additional introductory examples in [Extend your API](Extend-your-API.html).
+{% include tip.html content="See another example of a remote method in [Extend your API](Extend-your-API.html).
+" %}
 
 Suppose you have a Person model and you want to add a REST endpoint at `/greet` that returns a greeting with a name provided in the request.
 You add this code to `/common/models/person.js`:
@@ -77,349 +72,53 @@ Greetings... John!
 
 ## Registering a remote method
 
-All LoopBack models have a [`remoteMethod()`](http://apidocs.strongloop.com/loopback/#model-remotemethod) static method that you use to register a remote method:
+There are two ways to register a remote method:
+- [In code](#registering-a-remote-method-in-code), in the [model extension file](Model-extension-file.html)  (`modelName.js`).
+- [In JSON](#registering-a-remote-method-in-json), in the [model definition JSON file](Model-definition-JSON-file.html#methods) (`modelName.json`).
+
+### Registering a remote method in code
+
+LoopBack models have a [`remoteMethod()`](http://apidocs.strongloop.com/loopback/#model-remotemethod) static method that you use to register a remote method:
 
 ```javascript
-model.remoteMethod(requestHandlerFunctionName, [options])
+Model.remoteMethod(requestHandlerFunctionName, [options])
 ```
 
 Where:
 
 * _`model`_ is the model object to which you're adding the remote method. In our example, `Person`.
 * _`requestHandlerFunctionName`_ is a string that specifies name of the remote method, for example `'greet'`.
-* _`options`_ is an object that specifies parameters to configure the REST endpoint; see below.
+* _`options`_ is an object that specifies parameters to configure the REST endpoint; see [Options](#options) below.
 
-### Options
+### Registering a remote method in JSON
 
-The options argument is a Javascript object containing key/value pairs to configure the remote method REST endpoint.
+To register a remote method in the [model definition JSON file](Model-definition-JSON-file.html#methods),
+add the method name as a key under `methods`.  To define an instance method, prepend `prototype.` to the method name.
 
-{% include important.html content="All of the options properties are optional. However, if the remote method requires arguments, you must specify `accepts`; if the remote method returns a value, you must specify `returns`.
-" %}
-
-<table width="800">
-  <thead>
-    <tr>
-      <th width="120">Option</th>
-      <th>Description</th>
-      <th width="260">Example</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>accepts</td>
-      <td>
-        Defines arguments that the remote method accepts that map to the static method you define. For the example above, the function signature is <pre>Person.greet(name, age, callback)...</pre> so
-        <code>name</code> is the first argument, <code>age</code> is the second argument and callback is automatically provided by LoopBack (do not specify it in your <code>accepts</code> array). For more information, see <a href="Remote-methods.html#argument-descriptions">Argument descriptions</a>.<br/><br/>
-        The default value is the empty array, <code>[ ]</code>.
-      </td>
-      <td>
-        <pre style="font-size: 80%;">{  ...
-  accepts: [
-   {arg: 'name',
-    type: 'string'},
-   {arg: 'age',
-    type: 'number'}, ...],
-  ... }</pre>
-      </td>
-    </tr>
-    <tr>
-      <td>description</td>
-      <td>
-        Text description of the method, used by API documentation generators such as Swagger.
-        You can put long strings in an array if needed (see note below).
-      </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>http.path</td>
-      <td>
-        HTTP path (relative to the model) at which the method is exposed.
-      </td>
-      <td>
-        <pre>http: {path: '/sayhi'}</pre>
-      </td>
-    </tr>
-    <tr>
-      <td><a name="http.verb"></a>http.verb</td>
-      <td>
-        HTTP method (verb) at which the method is available. One of:
-        <ul>
-          <li>get</li>
-          <li>post (default)</li>
-          <li>patch</li>
-          <li>put</li>
-          <li>del</li>
-          <li>all</li>
-        </ul>
-      </td>
-      <td>
-     <pre>http: {path: '/sayhi',
-verb: 'get'}</pre>
-      </td>
-    </tr>
-    <tr>
-      <td>http.status</td>
-      <td>Default HTTP status set when the callback is called without an error.</td>
-      <td>
-      <pre>http: {status: 201}</pre>
-      </td>
-    </tr>
-    <tr>
-      <td>http.errorStatus</td>
-      <td>Default HTTP status set when the callback is called with an error.</td>
-      <td>
-        <pre>http: {errorStatus: 400}</pre>
-      </td>
-    </tr>
-    <tr>
-      <td>notes</td>
-      <td>
-        Additional notes, used by API documentation generators like Swagger.
-        You can put long strings in an array if needed (see note below).
-      </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>returns</td>
-      <td>
-        Describes the remote method's callback arguments; See <a href="Remote-methods.html#argument-descriptions">Argument descriptions</a>. The <code>err </code>argument is assumed; do not specify.
-        Default if not provided is the empty array,  <code>[]</code>.
-      </td>
-      <td>
-        <pre>returns: {arg: 'greeting',
-type: 'string'}</pre>
-      </td>
-    </tr>
-  </tbody>
-</table>
-
-{% include tip.html content="You can split long strings in the `description` and `notes` options into arrays of strings (lines) to keep line lengths manageable. For example:
-
-```javascript
-[
- \"Lorem ipsum dolor sit amet, consectetur adipiscing elit,\",
- \"sed do eiusmod tempor incididunt ut labore et dolore\",
- \"magna aliqua.\"
-]
 ```
-" %}
-
-### Argument descriptions
-
-The `accepts` and `returns` options properties define either a single argument as an object or an ordered set of arguments as an array.
-The following table describes the properties of each individual argument.
-
-<table>
-  <thead>
-    <tr>
-      <th width="100">Property (key)</th>
-      <th width="100">Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>    
-    <tr>
-      <td>arg</td>
-      <td>String</td>
-      <td>Argument name</td>
-    </tr>
-    <tr>
-      <td>description</td>
-      <td>String or Array</td>
-      <td>
-        A text description of the argument. This is used by API documentation generators like Swagger.
-        You can put long strings in an array if needed (see note above).
-      </td>
-    </tr>
-    <tr>
-      <td>http</td>
-      <td>Object or Function</td>
-      <td>For input arguments: a function or an object describing mapping from HTTP request to the argument value. See <a href="Remote-methods.html">HTTP mapping of input arguments</a> below.</td>
-    </tr>
-    <tr>
-      <td>http.target</td>
-      <td>String</td>
-      <td>
-        Map the callback argument value to the HTTP response object. The following values are supported.
-        <ul>
-          <li><code>status</code> sets the <code>res.statusCode</code> to the provided value</li>
-          <li><code>header</code> sets the <code>http.header</code> or <code>arg</code> named header to the value</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td>required</td>
-      <td>Boolean</td>
-      <td>True if argument is required; false otherwise.</td>
-    </tr>
-    <tr>
-      <td>root</td>
-      <td>Boolean</td>
-      <td>For callback arguments: set this property to <code>true</code>
-         if your function has a single callback argument to use as the root object returned to remote caller.
-        Otherwise the root object returned is a map (argument-name to argument-value).
-      </td>
-    </tr>
-    <tr>
-      <td>type</td>
-      <td>String</td>
-      <td>Argument datatype; must be a <a href="LoopBack-types.html">Loopback type</a>. Additionally, callback arguments allow a special type "file"; see below.</td>
-    </tr>
-    <tr>
-      <td>default</td>
-      <td>String</td>
-      <td>Default value that will be used to populate loopback-explorer input fields and swagger documentation.
-        <strong>Note</strong>: This value will not be passed into remote methods function if argument is not present.
-      </td>
-    </tr>
-  </tbody>
-</table>
-
-For example, a single argument, specified as an object:
-
-```javascript
-{arg: 'myArg', type: 'number'}
+"methods": {
+    "prototype.getProfile": {
+      "accepts": [],
+      "returns": { "arg": "data", "type": "User", "root": true},
+      "http": {"verb": "get", "path": "/profile"},
+      "accessScopes": ["read", "read:profile"]
+    },
+    "someStaticMethod" : { ... }
 ```
 
-Multiple arguments, specified as an array:
+The value of each key under `methods` is the options object described below.
 
-```javascript
-[
-  {arg: 'arg1', type: 'number', required: true},
-  {arg: 'arg2', type: 'array'}
-]
-```
+## Options
 
-#### Returning a file (stream) response
+The options argument is a Javascript object that defines how the remote method works.
 
-You can specify `{ type: 'file', root: true }` for a callback argument that will be sent directly as the response body. A file argument can be set to one of the following values:
-
-* String
-* [Buffer](https://nodejs.org/api/buffer.html)
-* [ReadableStream](https://nodejs.org/api/stream.html#stream_class_stream_readable) (anything that exposes `.pipe()` method)
-
-Example:
-
-```javascript
-module.exports = function(MyModel) {
-  MyModel.download = function(cb) {
-    // getTheStreamBody() can be implemented by calling http.request() or fs.readFile() for example
-    getTheStreamBody(function(err, stream) {
-      if (err) return cb(err);
-      // stream can be any of: string, buffer, ReadableStream (e.g. http.IncomingMessage)
-      cb(null, stream, 'application/octet-stream');
-    });
-  };
-
-  MyModel.remoteMethod('download', {
-    returns: [
-      {arg: 'body', type: 'file', root: true},
-      {arg: 'Content-Type', type: 'string', http: { target: 'header' }}
-    ]
-  });
-};
-```
-
-### HTTP mapping of input arguments
-
-There are two ways to specify HTTP mapping for input parameters (what the method accepts):
-
-* Provide an object with a `source` property
-* Specify a custom mapping function
-
-**Using an object with a source property**
-
-To use the first way to specify HTTP mapping for input parameters, provide an object with a `source` property that has one of the values shown in the following table.
-
-<table>
-  <thead>
-    <tr>
-      <th>Value of source property</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>body</td>
-      <td>The whole request body is used as the value.</td>
-    </tr>
-    <tr>
-      <td>form<br>query<br>path </td>
-      <td>
-        The value is looked up using <code>req.param</code>, which searches route arguments, the request body and the query string.
-        Note that <code>query</code> and <code>path</code> are aliases for <code>form</code>.
-      </td>
-    </tr>
-    <tr>
-      <td>req</td>
-      <td>The <a href="http://expressjs.com/4x/api.html#req" class="external-link" rel="nofollow">Express HTTP request object</a>.</td>
-    </tr>
-    <tr>
-      <td>res</td>
-      <td>The <a href="http://expressjs.com/4x/api.html#res" class="external-link" rel="nofollow">Express HTTP response object</a>.</td>
-    </tr>
-    <tr>
-      <td>context</td>
-      <td>The whole context object, which holds request and response objects.</td>
-    </tr>
-  </tbody>
-</table>
-
-For example, an argument getting the whole request body as the value:
-
-```javascript
-{ arg: 'data', type: 'object', http: { source: 'body' } }
-```
-
-Another example showing the Express HTTP request and response objects:
-
-```javascript
-[
- {arg: 'req', type: 'object', 'http': {source: 'req'}},
- {arg: 'res', type: 'object', 'http': {source: 'res'}}
-]
-```
-
-**Using a custom mapping function**
-
-The second way to specify HTTP mapping for input parameters is to specify a custom mapping function; for example:
-
-```javascript
-{
-  arg: 'custom',
-  type: 'number',
-  http: function(ctx) {
-    // ctx is LoopBack Context object
-
-    // 1\. Get the HTTP request object as provided by Express
-    var req = ctx.req;
-
-    // 2\. Get 'a' and 'b' from query string or form data and return their sum.
-    return -req.param('a') - req.param('b');
-  }
-}
-```
-
-If you don't specify a mapping, LoopBack will determine the value as follows (assuming `name` as the name of the input parameter to resolve):
-
-1.  If there is an HTTP request parameter `args` with JSON content, then it uses the value of `args['name']`.
-2.  Otherwise, it uses `req.param('name')`.
-
-### Returning data outside of a JSON field
-
-Specifying a return argument with the _arg_ property will automatically return a JSON object with your data stored within a field of the same name.
-
-If you want to return data as the main response, for example an array, you can do so by setting the _root_ property within the returns object and omitting _arg_. 
-
-```javascript
-returns: {type: 'array', root: true}
-```
+{% include content/rm-options.md %}
 
 ## Setting a remote method route
 
 By default, a remote method is exposed at:
 
-`POST http://apiRoot/modelName/methodName`
+<pre><code>POST http://<i>apiRoot</i>/<i>modelName</i>/<i>methodName</i></code></pre>
 
 Where
 
@@ -427,9 +126,11 @@ Where
 * _modelName_ is the plural name of the model.
 * _methodName_ is the function name.
 
-Following the above example, then by default the remote method is exposed at:
+Following the above example, by default the remote method is exposed at:
 
-`POST /api/people/greet`
+```
+POST /api/people/greet
+```
 
 To change the route, use the `http.path` and` http.verb` properties of the options argument to `remoteMethod()`, for example:
 
@@ -444,39 +145,15 @@ Person.remoteMethod('greet',{
 
 This call changes the default route to 
 
-`GET /api/people/sayhi`
+```
+GET /api/people/sayhi
+```
 
 So a GET request to `http://localhost:3000/api/people/sayhi?msg=LoopBack%20developer` returns:
 
 ```javascript
 {"greeting": "Greetings... LoopBack developer"}
 ```
-
-<div class="sl-hidden"><strong>Non-public Information</strong><br>
-  <p><strong>Extending a model</strong></p>
-  <p>Add default functions for properties</p>
-
-<b>common/models/order.js</b>
-    <pre>module.exports = function(Order) {
-  Order.definition.rawProperties.created.default = function() {
-    return new Date();
-  };
-  Order.definition.rebuild(true);
-}</pre>
-
-  <p>Add custom methods</p>
-
-  <b>common/models/customer.js</b>
-    <pre>module.exports = function(Customer) {
-  Customer.prototype.getFullName = function() {
-    return this.firstName - ' ' - this.lastName;
-  };
-
-  Customer.listVips = function(cb) {
-    this.find({where: {vip: true}}, cb);
-  }
-} </pre>
-</div>
 
 ## Adding ACLs to remote methods
 

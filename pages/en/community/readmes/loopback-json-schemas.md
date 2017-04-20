@@ -1,61 +1,17 @@
-# LoopBack JSON Schemas
-This repository contains [JSONSchemas](http://json-schema.org/) for the [LoopBack](http://loopback.io/) framework.
+# LoopBack **3** JSON Schemas
+This repository contains [JSONSchemas](http://json-schema.org/) for the [LoopBack](http://loopback.io/) framework. Loopback uses lots of complex json files for configuration, by linking these files to a json schema you can get "intellisense" style type-ahead and some schema validation (detection of illegal properties or types).
 
-:warning: **These schemas are a work in progress & _do not_ capture every feature & setting.** [Consult docs](http://loopback.io/) for best results :+1:.
+:warning: **These schemas _do not_ capture every feature & setting.** They are for hints & discovery while coding. [Consult docs](http://loopback.io/) for best results :+1:.
 
-:information_source: These schemas target loopback **version 3** which is not 100% compatible with most loopback applications currently in production. I chose to target the next version in the interest of being forward looking & because time is limited.
-
-# Contributing
-
-[Roadmap in `TODO.md`](TODO.md). :point_left: This is where to contribute if you'd like to help!
-
-## 1. Setup
-
-1. Clone this repository
-2. `npm install`
-
-## 2. Working on schemas
-
-1. Work on schemas in `src`. Use **localhost URLs for references** (these will be replaced before publish)
-2. Serve them from localhost using `npm run serve`.
-   * You can now point to the **local** versions of these schemas for testing from **a different VSCode window with a test project**. Example: <http://localhost:8090/loopback-datasources-config.json>
-3. To try them out with a JSON document in vscode, create a document like this:
-   ```
-   {
-     "$schema": "http://localhost:8090/loopback-datasources-config.json",
-     "db": {
-       "name": "db",
-       "connector": "memory"
-     },
-     "mysql": {
-       "host": "localhost",
-       "url": "",
-       "database": "boston",
-       "name": "mysql",
-       "connector": "mysql",
-       "user": "root"
-     }
-   }
-   ``` 
-4. To get VSCode to reload your schema after changing it, add a query string to the end of the `$schema` URL:
-  1. Edit schema in `src`
-  2. in your test project window: `"$schema": "http://localhost:8090/loopback-datasources-config.json?x=1"`
-  3. Edit schema in `src`
-  4. in your test project window: `"$schema": "http://localhost:8090/loopback-datasources-config.json?x=2"`
-  5. etc.
-
-## 3. Publishing/Submitting PR
-
-Production schemas are served from the `dist` directory. 
-
-1. run `npm run build` in order to get your changes into the `dist` directory
-2. commit, push, submit PR
-
-PRs *must* have changes committed to both the `src` & `dist` directories. 
+:information_source: These schemas target loopback **version 3**.
 
 # Using the schemas
 
-## Method 1. Point json files to schemas
+## Method 1. Use the VS Code plugin :white_check_mark: *recommended*
+
+:point_right: **The [VS Code Plugin](https://marketplace.visualstudio.com/items?itemName=sequoia.loopback-json-schemas) is the easiest way to use these schemas while writing LoopBack applications!** :point_left:
+
+## Method 2. Point json files to schemas
 Using an IDE that supports JSONSchemas (I recommend [VS Code](https://code.visualstudio.com/)), point to a schema thus:
 `common/models/customer.json`
 ```
@@ -63,7 +19,14 @@ Using an IDE that supports JSONSchemas (I recommend [VS Code](https://code.visua
   "$schema" : "https://raw.githubusercontent.com/Sequoia/loopback-json-schemas/master/dist/loopback-model-definition.json"
 }
 ```
-## Method 2. Map schemas to file by file paths (VS Code)
+
+:warning: **Your editor or IDE must support `$ref`s for JSONSchema!** [Not all do.](https://github.com/bali182/autocomplete-json/issues/64).
+
+If you use a different tool than VSCode and it works with JSONSchema (and `$ref`s!), please send a PR so I can list it here. [These tools](http://json-schema.org/implementations.html#editors) are worth trying!
+
+## Method 3. Map schemas to file by **file paths** (VS Code)
+*:information_source: If you're using VSCode you may as well use method 1*
+
 Edit your `jsconfig.json` in VS Code to [map schemas to file paths in your project](https://code.visualstudio.com/Docs/languages/json#_json-schemas-settings):
 ```
 
@@ -74,22 +37,18 @@ Edit your `jsconfig.json` in VS Code to [map schemas to file paths in your proje
     {
 ```
 
-This will automatically link schemas to paths so you don't have to use **Method 1**. [Read more](https://code.visualstudio.com/Docs/languages/json#_json-schemas-settings).
+This will automatically link schemas to paths so you don't have to use **Method 2**. [Read more](https://code.visualstudio.com/Docs/languages/json#_json-schemas-settings).
 
-## Method 3. Use the VS Code plugin
-:warning: WIP! [VS Code Plugin](https://marketplace.visualstudio.com/items?itemName=sequoia.loopback-json-schemas)
+# Currently Implemented Schemas
 
-This will automatically link schemas to paths so you don't have to use **Method 2**.
+Schemas in this repository cover the following files:
 
-# Developing
-* Clone repository & run `npm install`
-* Run `npm serve` to serve for local testing
-  * You can create a separate project (e.g. in [VS Code](https://code.visualstudio.com/)) and point to your local definitions from a json file thus:
-    ```
-    {
-      "$schema" : "http://localhost:8090/shared-refs.json"
-    }
-    ```
-* When you're ready to push & submit a PR, run `npm run build` which
-  1. copies files from `src` to `dist`
-  2. replaces `http://localhost:8090` with the real base url for the schemas. This is currently github but will likely be schema store later.
+1. `model-config.json`
+1. `datasources.json`
+1. `config.json`
+1. `*/models/[Model].json`
+1. `middleware.json`
+
+# Contributing
+
+See [`CONTRIBUTING.md`](CONTRIBUTING.md)

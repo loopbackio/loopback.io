@@ -11,7 +11,7 @@ summary:
 
 ## Overview
 
-{% include image.html file="9830484.png" alt="" %} 
+{% include image.html file="9830484.png" alt="Models, data sources, and connectors" %} 
 
 LoopBack models connect to backend systems such as databases via _data sources_ that provide create, retrieve, update, and delete (CRUD) functions.
 LoopBack also generalizes other backend services, such as REST APIs, SOAP web services, and storage services, and so on, as data sources.
@@ -29,18 +29,17 @@ To connect a model to a data source, follow these steps:
 1.  Use the  [data source generator](Data-source-generator.html)  to create a new data source.
 
     For example: 
-    <div id="lb3apic" class="sl-hidden" markdown="1" >
-    ```shell
-    $ apic create --type datasource
-    ? Enter the data-source name: mysql-corp
-    ? Select the connector for mysql: MySQL (supported by StrongLoop)
-    ```
-    </div>    
 
     ```
     $ lb datasource
     ? Enter the data-source name: mysql-corp
     ? Select the connector for mysql: MySQL (supported by StrongLoop)
+    ```
+
+    Using API Connect developer toolkit:
+    ```
+    $ apic create --type datasource
+    ...
     ```
 
     Follow the prompts to name the datasource and select the connector to use.
@@ -66,6 +65,9 @@ To connect a model to a data source, follow these steps:
     For information on the  properties that each connector supports, see
     documentation for the specific connector under [Connectors reference](Connectors-reference).
 
+    {% include warning.html content="Don't put production database credentials in JSON or JavaScript files, where they could be a security vulnerability.  Instead, load the values from environment variables.  For more information, see [Specifying database credentials with environment variables](Attaching-models-to-data-sources.html#specifying-database-credentials-with-environment-variables)
+    "%}
+
 3.  Install the corresponding connector as a dependency of your app with `npm`.
 
     For example: 
@@ -89,7 +91,7 @@ To connect a model to a data source, follow these steps:
     Let's add some test2 properties now.
     ...
     ```
-    <div id="lb3apic" class="sl-hidden" markdown="1">
+
         ```shell
         $ apic create --type model
         ? Enter the model name: myModel
@@ -100,7 +102,7 @@ To connect a model to a data source, follow these steps:
         Let's add some test2 properties now.
         ...
         ```
-    </div>
+
     When prompted for the data source to attach to, select the one you just created. 
 
 {% include note.html content="The model generator lists the [memory connector](Memory-connector.html), \"no data source,\" and data sources listed in [`datasources.json`](datasources.json.html).  That's why you created the data source first in step 1.
@@ -252,14 +254,15 @@ This command adds the following entry to `package.json`: 
 ## Creating a data source
 
 Use the [data source generator](Data-source-generator.html) to create a new data source:
-<div id="lb3apic" class="sl-hidden" markdown="1">
-```shell
-$ apic create --type datasource
-```
-</div>
 
 ```shell
 $ lb datasource
+```
+
+Or, with API Connect developer toolkit:
+
+```shell
+$ apic create --type datasource
 ```
 
 Follow the prompts to add the desired data source.
@@ -274,17 +277,18 @@ However, data sources for database connectors (Oracle, MySQL, PostgreSQL, MongoD
 as described in the following table.
 
 <table>
-  <tbody>
+  <thead>
     <tr>
-      <th>Property</th>
-      <th>Type</th>
+      <th width="100">Property</th>
+      <th width="80">Type</th>
       <th>Description</th>
     </tr>
+  </thead>
+  <tbody>    
     <tr>
       <td>connector</td>
       <td>String</td>
-      <td>
-        <p>Connector name; for example:</p>
+      <td>Connector name; for example:
         <ul>
           <li>"memory"</li>
           <li>"loopback-connector-mongodb" or "mongodb"</li>
@@ -324,9 +328,8 @@ as described in the following table.
     <tr>
       <td>url</td>
       <td>String</td>
-      <td>
-        <p>Combines and overrides <code>host</code>,&nbsp;<code>port</code>,&nbsp;<code>user</code>,&nbsp;<code>password</code>, and&nbsp;<code>database</code>&nbsp;properties.</p>
-        <p>Only valid with <a href="MongoDB-connector.html">MongoDB connector</a>, <a href="PostgreSQL-connector.html">PostgreSQL connector</a>, and <a href="SQL-Server-connector.html">SQL Server connector</a>.</p>
+      <td>Combines and overrides <code>host</code>, <code>port</code>, <code>user</code>, <code>password</code>, and <code>database</code> properties.
+      Only valid with certain connectors; see connector documentation.
       </td>
     </tr>
     <tr>

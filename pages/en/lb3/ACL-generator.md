@@ -19,10 +19,16 @@ Adds a new access control list (ACL) entry to a LoopBack application.
 lb acl [options]
 ```
 
+With IBM API Connect developer toolkit:
+
+```
+apic loopback:acl [options]
+```
+
 With legacy StrongLoop tools:
 
 ```
-$ slc loopback:acl [options]
+slc loopback:acl [options]
 ```
 
 {% include content/generator-builtin-model-caveat.html lang=page.lang%}

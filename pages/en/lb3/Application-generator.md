@@ -14,19 +14,32 @@ summary:
 Creates a new LoopBack application.
 
 ```
-$ lb [app] [options] [<name>]
+lb [app] [options] [<name>]
 ```
+
+With IBM API Connect developer toolkit:
+
+```
+apic loopback --type api [options]
+```
+
+{% include note.html content="The `apic` tool has a number of additional command options that are
+not available with `lb` or `slc`.  Consult the CLI help for details.
+" %}
 
 With legacy StrongLoop tools:
 
 ```
-$ slc loopback [options] [<name>]
+slc loopback [options] [<name>]
 ```
 
 ### Options
 
-`--bluemix`
-: Prompts for Bluemix configuration options and creates Bluemix deployment artifacts.
+`-n, --name <name>`
+Only with IBM API Connect developer toolkit; specify name of LoopBack application project.
+
+`-h, --help`
+Print the generator's options and usage.
 
 `--explorer`
 : Add Loopback Explorer to the project. Default is true.
@@ -38,7 +51,7 @@ $ slc loopback [options] [<name>]
 
 ### Arguments
 
-Provide the application name as an optional argument.  The tool will create a directory of that name to contain the application.
+Provide the application name as an optional argument (or, with API Connect, as value of `--name` option).  The tool will create a directory of that name to contain the application.
 
 ### Interactive Prompts
 
@@ -67,6 +80,4 @@ After you create an application, you can run additional generators from the appl
 * [Relation generator](Relation-generator.html)
 * [Remote method generator](Remote-method-generator.html)
 * [Swagger generator](Swagger-generator.html)
-<div id="lb3apic" class="sl-hidden" markdown="1">
 * [Refresh definitions command](Refresh-definitions-command.html)
-</div>

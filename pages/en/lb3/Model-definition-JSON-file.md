@@ -7,17 +7,18 @@ keywords: LoopBack
 tags: models
 sidebar: lb3_sidebar
 permalink: /doc/en/lb3/Model-definition-JSON-file.html
-summary: The model JSON file declaratively defines a LoopBack model.
+summary: The model JSON file declaratively defines a LoopBack model.  It's in either the <code>server</code> or <code>common</code> project sub-directory, depending on whether the model is server-only or defined for both server and client.
 ---
 
 ## Overview
 
-The LoopBack [Model generator](Model-generator.html) creates a model JSON file for each model in either the `server/models`
-or the `common/models` directory (depending on your response to the generator's prompts).
+The LoopBack [model generator](Model-generator.html) creates a model JSON file for each model in either the `server/models`
+or the `common/models` directory (depending on whether the model is server-only or
+defined on both server and client).
 The file is named <code><i>model-name</i>.json</code>, where _`model-name`_ is the model name; for example, `customer.json`.
 The model JSON file defines models, relations between models, and access to models. 
 
-{% include important.html content="
+{% include note.html content="
 The LoopBack [model generator](Model-generator.html) automatically converts camel-case model names (for example MyModel)
 to lowercase dashed names (my-model). For example, if you create a model named \"FooBar\" with the model generator, it creates files `foo-bar.json` and `foo-bar.js` in `common/models`.
 However, the model name (\"FooBar\") will be preserved via the model's name property.
@@ -106,13 +107,13 @@ Properties are required unless otherwise designated.
 
     <tr>
       <td>http.path</td>
+      <td>String</td>      
       <td>None</td>
-      <td>String</td>
       <td>Customized HTTP path for REST endpoints of this model.</td>
     </tr>
     <tr>
       <td>strict</td>
-      <td>Boolean</td>
+      <td>Boolean or String</td>
       <td><code>false</code>.<br/>If the data source is backed by a relational database, then default is  <code>true</code>.</td>
       <td>
         Specifies whether the model accepts only predefined properties or not. One of:
@@ -122,6 +123,9 @@ Properties are required unless otherwise designated.
           </li>
           <li><code>false</code>: The model is an open model and accepts all properties, including ones not predefined in the model.
             This mode is useful to store free-form JSON data to a schema-less database such as MongoDB.
+          </li>
+          <li><code>"filter"</code>: Only properties defined in the model are accepted.
+          If you load or save a model instance with properties that are not predefined, LoopBack will ignore them. This is particularly useful when dealing with old data that you wish to lose without a migration script.
           </li>
         </ul>
       </td>
@@ -593,20 +597,23 @@ For example,
 A hidden property is not sent in the JSON data in the application's HTTP response.
 The property value is an array of strings, and each string in the array must match a property name defined for the model.
 
-An example of a hidden property is User.password:
+An example of a hidden property is `User.password`:
 
 {% include code-caption.html content="common/models/user.json" %}
 ```javascript
-...
+{
+  ...
   "properties": {
     ...
     "password": {
       "type": "string",
       "required": true
     },
-...
-   "hidden": ["password"],
-...
+    ...
+  },
+  "hidden": ["password", "verificationToken"],
+  ...
+}
 ```
 
 If you want to white-list the fields returned instead of black-listing them, consider:
@@ -620,26 +627,31 @@ See discussion of white-listing on [GitHub](https://github.com/strongloop/loopb
 
 ## Protected properties
 
-A protected property is not sent in the JSON data in the application's HTTP response if the object is nested inside another object.
-For instance if you have an Author object and a Book object. A book has a relation to with Author, and book is public API.
-Author will have personal information such as social security number etc, and they can now be "protected" such that anyone looking up
-the author of the book will not get those information back (from [GitHub](https://github.com/strongloop/loopback-datasource-juggler/pull/400) pull request).
-The property value is an array of strings, and each string in the array must match a property name defined for the model.
+The `protected` property is an array of strings, and each string in the array must match a property name defined for the model.
 
-An example of a hidden property is User.email:
+A protected property is not sent in HTTP response JSON data if the object is nested inside another object.
+For instance, suppose there is an Author object and a Book object. Book has a relation to Author, and Book is a public API.
+The Author model has personal information (such as social security number) which should be "protected" so anyone looking up the author of the book will not get that information.
+
+{% include content/hidden-vs-protected.html %}
+
+An example configuring `email` as a protected property:
 
 {% include code-caption.html content="common/models/user.json" %}
 ```javascript
-...
+{
+  ...
   "properties": {
     ...
     "email": {
       "type": "string",
       "required": true
     },
-...
-   "protected": ["email"],
-...
+    ...
+  },
+  "protected": ["email"],
+  ...
+}
 ```
 
 ## Validations
@@ -958,12 +970,55 @@ var defaultScope = Report.defaultScope;
 
 ## Methods
 
-You can declare remote methods here. Until this feature is implemented, you must declare remote methods in code. See [Remote methods](Remote-methods.html).
+The `methods` key defines [remote methods](Remote-methods.html) for the model.
+Its value is an object with a string key for each remote method name:
+- Instance method names must start with `prototype.`.
+- Static method names can be any [legal name](Valid-names-in-LoopBack.html).
 
-{% include warning.html content="This feature is not yet implemented.
-" %}
+For example, the following defines a static remote method called "greet"
+and an instance method called "getProfile".
+
+```
+...
+  "methods": {
+    "greet": {
+      "accepts": [
+        {
+          "arg": "msg",
+          "type": "string",
+          "http": {
+            "source": "query"
+          }
+        }
+      ],
+      "returns": {
+        "arg": "greeting",
+        "type": "string"
+      },
+      "http": {
+        "verb": "get"
+      }
+    },
+  "prototype.getProfile": {
+      ... // Instance remote method - options
+    }
+...
+```
+
+### Remote method options
+
+You specify remote method options when you register a remote method, either as an argument to the `Model.remoteMethod()` method if you [register it in code](Remote-methods.html#registering-a-remote-method), or in the `methods` key if you register it in JSON.  Either way, it's a JavaScript object with the same set of properties.
+
+{% include content/rm-options.md %}
 
 ## Indexes
+
+{% include warning.html content="Indexes will not be automatically created for
+you, even with NoSQL datasource connectors like MongoDB. You must run
+[automigrate](Creating-a-database-schema-from-models.html#auto-migrate) or
+[autoupdate](Creating-a-database-schema-from-models.html#auto-update)
+create your indexes!
+" %}
 
 Declare indexes for a model with the `indexes` property, for example:
 

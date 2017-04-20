@@ -362,6 +362,10 @@ children:
     url: /doc/en/lb3/Using-database-transactions.html
     output: 'web, pdf'
 
+  - title: 'Connecting to SOAP web services'
+    url: /doc/en/lb3/Connecting-to-SOAP.html
+    output: 'web, pdf'
+
   - title: 'Executing native SQL'
     url: /doc/en/lb3/Executing-native-SQL.html
     output: 'web, pdf'
@@ -631,12 +635,20 @@ children:
     url: /doc/en/lb3/Property-generator.html
     output: 'web, pdf'
 
+  - title: 'Refresh definitions command'
+    url: /doc/en/lb3/Refresh-definitions-command.html
+    output: 'web, pdf'
+
   - title: 'Relation generator'
     url: /doc/en/lb3/Relation-generator.html
     output: 'web, pdf'
 
   - title: 'Remote method generator'
     url: /doc/en/lb3/Remote-method-generator.html
+    output: 'web, pdf'
+
+  - title: 'SOAP generator'
+    url: /doc/en/lb3/SOAP-generator.html
     output: 'web, pdf'
 
   - title: 'Swagger generator'
@@ -734,6 +746,10 @@ children:
     url: /doc/en/lb3/Database-connectors.html
     output: 'web'
     children:
+
+    - title: 'Cassandra connector'
+      url: /doc/en/lb3/Cassandra-connector.html
+      output: 'web, pdf'
 
     - title: 'Cloudant connector'
       url: /doc/en/lb3/Cloudant-connector.html
@@ -913,6 +929,10 @@ children:
 
     - title: 'Model definition JSON file'
       url: /doc/en/lb3/Model-definition-JSON-file.html
+      output: 'web, pdf'
+
+    - title: 'Model extension file'
+      url: /doc/en/lb3/Model-extension-file.html
       output: 'web, pdf'
 
   - title: package.json
