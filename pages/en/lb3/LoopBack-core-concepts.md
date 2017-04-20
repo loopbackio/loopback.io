@@ -101,7 +101,6 @@ with a full set of create, read, update, and delete operations from the [Persi
     <tr>
       <td>Update (Modify)</td>
       <td>
-      <a href="PersistedModel-REST-API.html#update--insert-instance">POST /<em>modelName</em></a> <br/>
         <a href="PersistedModel-REST-API.html#update-model-instance-attributes">PUT /modelName</a>
       </td>
       <td><code><a href="http://apidocs.strongloop.com/loopback/#persistedmodel-updateall" class="external-link" rel="nofollow">updateAll()</a><sup>*</sup></code></td>
