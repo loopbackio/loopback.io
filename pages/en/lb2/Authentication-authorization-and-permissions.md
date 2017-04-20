@@ -135,7 +135,7 @@ Product.disableRemoteMethod('create', true);				// Removes (POST) /products
 Product.disableRemoteMethod('upsert', true);				// Removes (PUT) /products
 Product.disableRemoteMethod('deleteById', true);			// Removes (DELETE) /products/:id
 Product.disableRemoteMethod("updateAll", true);				// Removes (POST) /products/update
-Product.disableRemoteMethod("updateAttributes", false);		// Removes (PUT) /products/:id
+Product.disableRemoteMethod("updateAttributes", true);		// Removes (PUT) /products/:id
 Product.disableRemoteMethod('createChangeStream', true);	// removes (GET|POST) /products/change-stream
 ```
 
