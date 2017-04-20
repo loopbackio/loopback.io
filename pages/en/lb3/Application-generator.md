@@ -23,6 +23,10 @@ With IBM API Connect developer toolkit:
 apic loopback --type api [options]
 ```
 
+{% include note.html content="The `apic` tool has a number of additional command options that are
+not available with `lb` or `slc`.  Consult the CLI help for details.
+" %}
+
 With legacy StrongLoop tools:
 
 ```
@@ -31,21 +35,19 @@ slc loopback [options] [<name>]
 
 ### Options
 
-{% include note.html content="The `apic` tool has a number of additional command options that are
-not available with `lb` or `slc`.  Consult the CLI help for details.
-" %}
-
 `-n, --name <name>`
 Only with IBM API Connect developer toolkit; specify name of LoopBack application project.
 
 `-h, --help`
 Print the generator's options and usage.
 
-`--skip-cache`
-Do not remember prompt answers. Default is false.
+`--explorer`
+: Add Loopback Explorer to the project. Default is true.
 
-`--skip-install`
-Do not automatically install dependencies. Default is false.
+`--skip-next-steps`
+: Do not print "next steps" information.
+
+{% include_relative includes/CLI-std-options.md %}
 
 ### Arguments
 

@@ -33,19 +33,10 @@ slc model [options] [<name>]
 
 ### Options
 
-`-n, --name`
-With IBM API Connect developer toolkit only, optionally provide the name of the model
-as the value of this option. 
-If provided, the tool will use that as the default when it prompts for the name.
+`--bluemix`
+: Lists only Bluemix datasources in the datasource option for the new model.
 
-`-h, --help`
-Print the generator's options and usage.
-
-`--skip-cache`
-Do not remember prompt answers. Default is false.
-
-`--skip-install`
-Do not automatically install dependencies. Default is false.
+{% include_relative includes/CLI-std-options.md %}
 
 ### Arguments
 
@@ -76,4 +67,4 @@ Then, the tool will invoke the [Property generator](Property-generator.html) an
 
 ### Output
 
-Depending your response to the last prompt, the tool will create a new file defining the model; either `/common/models/<model-name>.json` (for use by client and server) or `/server/models/_model-name_.json` (server only).  See [Model definition JSON file](Model-definition-JSON-file.html) for details.
+Depending your response to the last prompt, the tool will create a new file defining the model; either <code>/common/models/<i>model-name</i>.json</code> (for use by client and server) or <code>/server/models/<i>model-name</i>.json</code> (server only).  See [Model definition JSON file](Model-definition-JSON-file.html) for details.

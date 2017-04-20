@@ -611,6 +611,10 @@ children:
     url: /doc/en/lb3/Application-generator.html
     output: 'web, pdf'
 
+  - title: 'Bluemix configuration generator'
+    url: /doc/en/lb3/Bluemix-config-generator.html
+    output: 'web, pdf'
+
   - title: 'Boot script generator'
     url: /doc/en/lb3/Boot-script-generator.html
     output: 'web, pdf'

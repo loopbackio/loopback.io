@@ -33,19 +33,16 @@ slc loopback:datasource [options] [<name>]
 
 ### Options
 
+`--bluemix`
+ : Fetch  provisioned data source services from Bluemix and present them in the list of choices for 
+ data source to add. Currently lists only Cloudant and MongoDB services.
+
 `-n, --name`
 With IBM API Connect developer toolkit only, optionally provide the name of the
 data source as the value of this option. 
 If provided, the tool will use that as the default when it prompts for the name.
 
-`-h, --help`
-Print the generator's options and usage.
-
-`--skip-cache`
-Do not remember prompt answers. Default is false.
-
-`--skip-install`
-Do not automatically install dependencies. Default is false.
+ {% include_relative includes/CLI-std-options.md %}
 
 ### Arguments
 
