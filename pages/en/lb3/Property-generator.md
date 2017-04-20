@@ -36,7 +36,7 @@ slc loopback:property [options]
 {% include_relative includes/CLI-std-options.md title='no' %}
 
 `-n, --name`
-With IBM API Connect developer toolkit only, optionally provide the name of the
+: With IBM API Connect developer toolkit only, optionally provide the name of the
 property as the value of this option. 
 If provided, the tool will use that as the default when it prompts for the name.
 

@@ -24,7 +24,7 @@ $ lb bluemix [options]
 
 `--docker`        
 : Generate Dockerfile.  For more information on using Dockerfiles with Bluemix, see
-[Creating your own images with the command line interface (CLI)](https://console.ng.bluemix.net/docs/containers/container_images_building.html)
+[Adding Docker images to your organization's private Bluemix images registry](https://console.ng.bluemix.net/docs/containers/container_images_adding_ov.html)
 
 `--manifest`      
 : Generate Bluemix manifest file.  For more information on manifests, see [Bluemix docs - manifest](https://console.ng.bluemix.net/docs/manageapps/depapps.html#appmanifest).

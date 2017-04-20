@@ -35,14 +35,14 @@ slc loopback [options] [<name>]
 
 ### Options
 
-`-n, --name <name>`
-Only with IBM API Connect developer toolkit; specify name of LoopBack application project.
-
-`-h, --help`
-Print the generator's options and usage.
+`--bluemix`
+: Configure the app for deployment to Bluemix. With this option, the tool will present   additional prompts for generating Bluemix application artifacts.
 
 `--explorer`
 : Add Loopback Explorer to the project. Default is true.
+
+`-n, --name <name>`
+: Only with IBM API Connect developer toolkit; specify name of LoopBack application project.
 
 `--skip-next-steps`
 : Do not print "next steps" information.
