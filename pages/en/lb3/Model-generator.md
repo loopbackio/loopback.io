@@ -47,6 +47,9 @@ Do not remember prompt answers. Default is false.
 `--skip-install`
 Do not automatically install dependencies. Default is false.
 
+`--bluemix`
+Bind to a Bluemix datasource.
+
 ### Arguments
 
 `<name>` - Optional name of the model to create as an argument to the command. 
@@ -59,9 +62,10 @@ The tool will prompt you for:
 * Name of the model.  
   If you supplied a name on the command-line, just hit Enter to use it.
 * Data source to which to attach the model. 
-  The tool will list all data sources defined in the application's [`datasources.json`](datasources.json.html) file.
+  If you ran the generator without the `--bluemix` option, the tool will list all datasources defined in the application's [`datasources.json`](datasources.json.html) file.
   By default, only the [Memory connector](Memory-connector.html) data source exists. 
-  Add additional data sources using the [Data source generator](Data-source-generator.html).
+  Add additional data sources using the [Data source generator](Data-source-generator.html). 
+  If you ran the generator with the `--bluemix` option, you will be prompted to select a Bluemix datasource. If no Bluemix datasource was added, the generator will exit with an error message.
 * Whether you want to expose the model over a REST API.
   If the model is exposed over REST, then all the standard create, read, update, and delete (CRUD) operations are available via REST endpoints.
   See [PersistedModel REST API](PersistedModel-REST-API.html) for more information.
