@@ -52,3 +52,21 @@ The generator will prompt you for:
 - Whether to create toolchain files (default is yes). For more information, see [Working with toolchains](https://console.ng.bluemix.net/docs/services/ContinuousDelivery/toolchains_working.html).
 - Whether to enable autoscaling (default is yes).  For more information, see [Bluemix autoscaling agent](https://www.npmjs.com/package/bluemix-autoscaling-agent).
 - Whether to enable Node application metrics (default is yes). For more information, see [Node application metrics dashboard](https://www.npmjs.com/package/appmetrics-dash).
+
+If you run the generator with the `--manifest` option, only the first five prompts will be presented.
+
+If you run the generator with the `--docker` option, Docker related files will be generated without any prompts.
+
+If you run the generator with the `--toolchain` option, toolchain files will be generated without any prompts.
+
+### Output
+
+Running the generator without any options, will generate the [manifest.yml](https://docs.cloudfoundry.org/devguide/deploy-apps/manifest.html) file, if it doesn't exist already; if it exist, the configurations will be updated.
+
+If you answered "Y" to the prompt about generating Docker related files, or ran the generator with the `--docker` option, Docker files will be generated.
+
+If you answered "Y" to the prompt about generating toolchain files, or ran the generator with the `--toolchain` option, Docker files will be generated.
+
+If you answered "Y" to the prompt about enabling autoscaling, the server file will be updated to include `bluemix-autoscaling-agent` and the `package.json` file updated to include it in the dependecies.
+
+If you answered "Y" to the prompt about enabling appmetrics, the server file will be updated to include `appmetrics-dash` and the `package.json` file updated to include it in the dependecies.

@@ -50,8 +50,9 @@ The tool will prompt you for:
 * Name of the model.  
   If you supplied a name on the command-line, just hit Enter to use it.
 * Data source to which to attach the model. 
-  The tool will list all data sources defined in the application's [`datasources.json`](datasources.json.html) file.
+  If you run the generator without the `--bluemix` option, the tool will list all data sources defined in the application's [`datasources.json`](datasources.json.html) file.
   By default, only the [Memory connector](Memory-connector.html) data source exists. 
+  If you run the generator with the `--bluemix` option, you will be prompted to select a Bluemix datasource. If no Bluemix datasource was added, the generator will exit with an error message. 
   Add additional data sources using the [Data source generator](Data-source-generator.html).
 * Whether you want to expose the model over a REST API.
   If the model is exposed over REST, then all the standard create, read, update, and delete (CRUD) operations are available via REST endpoints.
