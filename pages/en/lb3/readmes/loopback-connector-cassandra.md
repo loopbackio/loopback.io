@@ -19,26 +19,55 @@ If you create a Cassandra data source using the data source generator as describ
 
 ## Creating a Cassandra data source
 
-Use the [Data source generator](http://loopback.io/doc/en/lb3/Data-source-generator.html) to add a Cassandra data source to your application.  
-The generator will prompt for the database server hostname, port, and other settings
-required to connect to a Cassandra database.  It will also run the `npm install` command above for you.
-
-The entry in the application's `/server/datasources.json` will look like this:
-
-```javascript
-"mycass": {
-  "name": "mycass",
-  "connector": "cassandra",
-  "host": "cassserver",
-  "port": 9042,
-  "database": "mycassdb",
-  "password": "mypassword",
-  "user": "admin"
- }
+Use the [Data source generator](http://loopback.io/doc/en/lb3/Data-source-generator.html) to add a Cassandra data source to your application.  Select `Cassandra` connector as follows:
+```
+$ lb datasource
+? Enter the data-source name: mycass
+? Select the connector for mycass: 
+  IBM Cloudant DB (supported by StrongLoop) 
+  IBM DB2 for z/OS (supported by StrongLoop) 
+  IBM WebSphere eXtreme Scale key-value connector (supported by StrongLoop) 
+❯ Cassandra (supported by StrongLoop) 
+  Redis key-value connector (supported by StrongLoop) 
+  MongoDB (supported by StrongLoop) 
+  MySQL (supported by StrongLoop) 
+(Move up and down to reveal more choices)
+```
+The generator will then prompt for the database server hostname, port, and other settings
+required to connect to a Cassandra database.  It will also run the `npm install` command for you.
+```
+$ lb datasource
+? Enter the data-source name: mycass
+? Select the connector for mycass: Cassandra (supported by StrongLoop)
+Connector-specific configuration:
+? host: localhost
+? port: 9042
+? user: 
+? password: 
+? database: test
+? connectTimeout(ms): 30000
+? readTimeout(ms): 30000
+? Install loopback-connector-cassandra@^1.0.0 Yes
+loopback-connector-cassandra@1.0.0 node_modules/loopback-connector-cassandra
+...
 ```
 
-Edit `datasources.json` to add any other additional properties such as `connectTimeout` and `readTimeout` supported by
- [`cassandra-driver`](https://github.com/datastax/nodejs-driver) as `socketOptions`.
+The entry in the application's `/server/datasources.json` will look like this:
+```javascript
+"mycass": {
+  "host": "localhost",
+  "port": 9042,
+  "database": "test",
+  "password": "",
+  "name": "mycass",
+  "user": "",
+  "connectTimeout": 30000,
+  "readTimeout": 30000,
+  "connector": "cassandra"
+}
+```
+
+Edit `datasources.json` to add any other additional properties supported by [`cassandra-driver`](https://github.com/datastax/nodejs-driver).
 
 ## Type mappings
 
@@ -80,18 +109,18 @@ In case no `id` is defined, LoopBack adds ***id*** with Cassandra connector's de
 LoopBack notation:
 
 ```javascript
-    cass = db.define('cass', {
-      str: String,
-      num: Number,
-      });
+zipCodes = db.define('zipCodes', {
+  state: String,
+  zipCode: Number,
+  });
 ```
 
 Cql equivalent:
 
 ```sql
-CREATE TABLE cass (
-   str VARCHAR,
-   num INT,
+CREATE TABLE zipCodes (
+   state VARCHAR,
+   zipCode INT,
    id UUID,
    PRIMARY KEY (id)
 );
@@ -104,23 +133,23 @@ LoopBack notation:
 When `id: true` is defined, LoopBack does not add `id` and uses it as a partition key.
 
 ```javascript
-tupletime = db.define('tupletime', {
-  tuple: {type: 'Tuple'},
-  str: String,
-  num: Number,
-  time: {type: 'TimeUuid', id: true},
+customers = db.define('customers', {
+  name: {type: 'Tuple'},
+  state: String,
+  zipCode: Number,
+  userId: {type: 'TimeUuid', id: true},
   });
 ```
 
 Cql equivalent:
 
 ```sql
-CREATE TABLE tupletime (
-   tuple TUPLE,
-   str VARCHAR,
-   num INT,
-   time TIMEUUID,
-   PRIMARY KEY (time)
+CREATE TABLE customers (
+   name TUPLE,
+   state VARCHAR,
+   zipCode INT,
+   userId TIMEUUID,
+   PRIMARY KEY (userId)
 );
 ```
 
@@ -132,44 +161,118 @@ LoopBack notation:
 then boolean.  In case conflict, first-come first-served.
 
 ```javascript
-compound = db.define('compound', {
-  patBool: {type: Boolean, id: 2},
-  str: String,
-  patStr: {type: String, id: true},
-  num: Number,
-  patNum: {type: Number, id: 1},
+customers = db.define('customers', {
+  isSignedUp: {type: Boolean, id: 2},
+  state: String,
+  contactSalesRep: {type: String, id: true},
+  zipCode: Number,
+  userId: {type: Number, id: 1},
   });
 ```
 
 Cql equivalent:
 
 ```sql
-CREATE TABLE compound (
-   patBool BOOLEAN,
-   str VARCHAR,
-   patStr VARCHAR,
-   num INT,
-   patNum INT,
-   PRIMARY KEY ((patNum, patBool, patStr))
+CREATE TABLE customers (
+   isSignedUp BOOLEAN,
+   state VARCHAR,
+   contactSalesRep VARCHAR,
+   zipCode INT,
+   userId INT,
+   PRIMARY KEY ((userId, isSignedUp, contactSalesRep))
 );
 ```
 
 ## Clustering keys and Sorting
+
+Cassandra stores data on each node according to the hashed TOKEN value of the partition key in the range that the node is responsible for.
+Since hashed TOKEN values are generally random, `find` with `limit: 10` filter will return apparently random 10 (or less) rows.
+The Cassandra connector supports on-disk sorting by setting `clustering key` as ASCending or DESCending at table creation time.
+`order` filter is ignored.  Since sorting is done on node by node basis, the returned result is property sorted only when the partition key is specified.
+
+For example, in case you want to find the most recently added row, create a table with time-based column as a clustering key with DESC property.
+Then, use `find` with `limit: 1` or `findOne`.
+
+Concrete example is as follows assuming all the rows fall in the same partition range.
+Note that `clusteringKeys` is defined as an array because the order of the sorting keys is important:
+
+<table>
+  <thead>
+    <tr>
+      <th>isSignedUp</th>
+      <th>state</th>
+      <th>contactSalesRep</th>
+      <th>zipCode</th>
+      <th>userId</th>
+    </tr>
+  </thead>
+  <tbody>    
+    <tr>
+      <td>true</td>
+      <td>Arizona</td>
+      <td>Ted Johnson</td>
+      <td>85003</td>
+      <td>20170302003</td>
+    </tr>
+    <tr>
+      <td>false</td>
+      <td>Arizona</td>
+      <td>David Smith</td>
+      <td>85002</td>
+      <td>20170516002</td>
+    </tr>
+    <tr>
+      <td>false</td>
+      <td>Arizona</td>
+      <td>Mary Parker</td>
+      <td>85001</td>
+      <td>20170415001</td>
+    </tr>
+    <tr>
+      <td>true</td>
+      <td>California</td>
+      <td>David Smith</td>
+      <td>90001</td>
+      <td>20170121002</td>
+    </tr>
+    <tr>
+      <td>false</td>
+      <td>Colorado</td>
+      <td>Mary Parker</td>
+      <td>80002</td>
+      <td>20170202010</td>
+    </tr>
+    <tr>
+      <td>true</td>
+      <td>Colorado</td>
+      <td>Jane Miller</td>
+      <td>80001</td>
+      <td>20170312002</td>
+    </tr>
+    <tr>
+      <td>false</td>
+      <td>Nevada</td>
+      <td>Ted Johnson</td>
+      <td>75173</td>
+      <td>20170128006</td>
+    </tr>
+  </tbody>
+</table>
 
 LoopBack notation:
 
 Cassandra connector supports clustering key as a custom option.  Sorting order can be associated with clustering keys as `ASC` or `DESC`.
 
 ```javascript
-compound = db.define('compound', {
-  patBool: {type: Boolean, id: 2},
-  str: String,
-  patStr: {type: String, id: true},
-  num: Number,
-  patNum: {type: Number, id: 1},
+customers = db.define('customers', {
+  isSignedUp: {type: Boolean, id: 2},
+  state: String,
+  contactSalesRep: {type: String, id: true},
+  zipCode: Number,
+  userId: {type: Number, id: 1},
   }, {
   cassandra: {
-    clusteringKeys: ['str', 'num DESC'],
+    clusteringKeys: ['state', 'zipCode DESC'],
     },
   });
 ```
@@ -177,38 +280,40 @@ compound = db.define('compound', {
 Cql equivalent:
 
 ```sql
-CREATE TABLE compound (
-   patBool BOOLEAN,
-   str VARCHAR,
-   patStr VARCHAR,
-   num INT,
-   patNum INT,
-   PRIMARY KEY ((patNum, patBool, patStr), str, num)
-) WITH CLUSTERING ORDER BY (str ASC, num DESC);
+CREATE TABLE customers (
+   isSignedUp BOOLEAN,
+   state VARCHAR,
+   contactSalesRep VARCHAR,
+   zipCode INT,
+   userId INT,
+   PRIMARY KEY ((userId, isSignedUp, contactSalesRep), state, zipCode)
+) WITH CLUSTERING ORDER BY (state ASC, zipCode DESC);
 ```
 
 ## Secondary Indexes
 
-Additional searchable fields can be defined as secondary indexes.
+Additional searchable fields can be defined as secondary indexes.  For example, in case the table `customers` below is defined with `name` as just `{type: String}`,
+ then `find` with `where: {name: "Martin Taylor"}` filter will fail.  However, `find` with `where: {namee: "Martin Taylor"}` filter will succeed on the table defined with `index: true` as follows:
+
 
 LoopBack notation:
 
 ```javascript
-searchable = db.define('searchable', {
-  str: {type: String, index: true},
-  timeuuid: {type: TimeUuid, id: true},
+customers = db.define('customers', {
+  name: {type: String, index: true},
+  userId: {type: Number, id: true},
   });
 ```
 
 Cql equivalent:
 
 ```sql
-CREATE TABLE searchable (
-   str VARCHAR,
-   timeuuid TIMEUUID,
-   PRIMARY KEY (timeuuid)
+CREATE TABLE customers (
+   name VARCHAR,
+   userId INT,
+   PRIMARY KEY (userId)
 );
-CREATE INDEX ON searchable (str);
+CREATE INDEX ON customers (name);
 ```
 
 ## V1 Limitations
@@ -219,7 +324,7 @@ Other filter conditions are not supported.
 ### `order` filter not supported
 
 Use clustering keys for sorting.  The database side sorting determines the order or rows to be return
-when ordering matters such as `where limit` or `findOne`.  Adhoc sorting with `sort` filter is ignored.
+when ordering matters such as `where limit` or `findOne`.  Ad hoc sorting with `sort` filter is not supported.
 
 ### `or` filter not supported
 
