@@ -52,11 +52,14 @@ You can optionally provide the name of the data source to create as an argument.
 
 The tool will prompt you for:
 
-* Name of the new data source.  If you supplied a name on the command-line, just hit Enter to use it.
+* Name of the new data source.  If you supplied a name on the command-line, just hit Enter to use it.
 * Connector to use for the data source.
+  If you run the generator with the `--bluemix` option, you will be presented with a list of provisioned data services from Bluemix.
 
 You must install the [connector](Connecting-models-to-data-sources.html) for the new data source; for example: `npm install --save loopback-connector-mysql`
 
 ### Output
 
-This adds an entry to [`datasources.json`](datasources.json.html) with the specified settings.
+This adds an entry to [`datasources.json`](datasources.json.html) with the specified settings.
+
+If you selected a Bluemix datasource, it will be entered in the `.bluemix/datasources-config.json` file.
