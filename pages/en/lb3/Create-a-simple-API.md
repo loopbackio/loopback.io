@@ -15,12 +15,23 @@ summary: Use the application generator tool to quickly create a LoopBack applic
 ## Create new application
 
 To create a new application, run the LoopBack [application generator](Application-generator):
+If using `loopback-cli`:
 
 ```
 $ lb
 ```
+If using `apic`:
+```
+$ apic loopback
+```
+
+If using `slc`:
+```
+$ slc loopback
+```
 
 The LoopBack application generator will greet you with some friendly ASCII art and prompt you for the name of the application.
+(For `apic` or `slc` it may show slightly differently, but still request for the application name.)
 
 Enter `loopback-getting-started`. Then the generator will prompt you for the name of the directory to contain the project; press Enter to accept the default (the same as the application name):
 
