@@ -17,7 +17,7 @@ A security leak exposing `loopback-component-storage` to directory traversal att
 
 ### Reported by
 
-Pratibha Rikh
+Juho Nurminen at 2NS - Second Nature Security Oy.
 
 ### Versions affected
 
