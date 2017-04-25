@@ -24,7 +24,7 @@ LoopBack models are JavaScript objects with both Node and REST APIs.
 **A key powerful feature of LoopBack is that when you define a model it automatically comes with a predefined REST API
 with a full set of create, read, update, and delete operations.**  
 
-The [Basic model object](Basic-model-object.html) has methods for adding [hooks](Model-hooks.html) and for [validating data](Validating-model-data.html).
+The [Basic model object](Basic-model-object.html) has methods for adding [hooks](Operation-hooks.html) and for [validating data](Validating-model-data.html).
 Other model objects all "inherit from" it. Models have an inheritance hierarchy, as shown at right:
 When you attach a model to a persistent data source it becomes a [connected model](Connected-model-object.html) with create, retrieve, update, and delete operations.
 LoopBack's built-in models inherit from it.
@@ -101,7 +101,6 @@ with a full set of create, read, update, and delete operations from the [Persi
     <tr>
       <td>Update (Modify)</td>
       <td>
-      <a href="PersistedModel-REST-API.html#update--insert-instance">POST /<em>modelName</em></a> <br/>
         <a href="PersistedModel-REST-API.html#update-model-instance-attributes">PUT /modelName</a>
       </td>
       <td><code><a href="http://apidocs.strongloop.com/loopback/#persistedmodel-updateall" class="external-link" rel="nofollow">updateAll()</a><sup>*</sup></code></td>

@@ -12,7 +12,7 @@ In general, LoopBack version numbers adhere to [semantic versioning](http://semv
 The LoopBack project maintains:
 
 - A _Current_ version where most of the development occurs.
-- A _Long-term suppoort (LTS)_ version that does not add new features but gets bug fixes.
+- A _Long-term support (LTS)_ version that does not add new features but gets bug fixes.
 - One (or more) _maintenance_ versions that receive only critical bug fixes.
 
 ## LTS versions
