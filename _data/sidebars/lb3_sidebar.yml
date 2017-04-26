@@ -631,6 +631,10 @@ children:
     url: /doc/en/lb3/Model-generator.html
     output: 'web, pdf'
 
+  - title: 'Oracle installer command'
+    url: /doc/en/lb3/Oracle-installer-command.html
+    output: 'web, pdf'
+
   - title: 'Property generator'
     url: /doc/en/lb3/Property-generator.html
     output: 'web, pdf'
