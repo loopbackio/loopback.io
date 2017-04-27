@@ -63,6 +63,15 @@ Follow the [GitHub Flow](http://scottchacon.com/2011/08/31/github-flow.html).
  1. Request a code review. Add a specific committer to speed up this process. (for example, `@bajtos`, `@raymondfeng`).
  1. Make any requested changes and push to your fork. Make sure your changes are still based on the latest code (use `git rebase upstream/master`).
 
+ ### How to rebase your branch ###
+
+Our code base is always getting updated and being able to successfully rebase your PR is very important. Here are some simple steps to rebase your code:
+- Checkout your branch which you are submitting the pull request against `git checkout <my_branch>`
+- Add an upstream remote from your fork `git remote add upstream <upstream_repo>`
+- Fetch the latest from the **_upstream_** remote `git fetch upstream`
+- Rebase your code using the interactive mode `git rebase -i upstream/master`
+- If you are happy with the changes and there are no merge conflicts, push the code to your remote branch `git push origin <my_branch>`
+
 ## Running tests
 
 All LoopBack projects follow the same convention for running tests. To run a projects test suite, change to the project's directory and run:
