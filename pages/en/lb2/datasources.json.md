@@ -80,13 +80,13 @@ To connect a model to a data source, follow these steps:
     ```shell
     $ apic create --type datasource
     ? Enter the data-source name: mysql-corp
-    ? Select the connector for mysql: MySQL (supported by StrongLoop)
+    ? Select the connector for mysql-corp: MySQL (supported by StrongLoop)
     ```
 
     ```shell
     $ slc loopback:datasource
     ? Enter the data-source name: mysql-corp
-    ? Select the connector for mysql: MySQL (supported by StrongLoop)
+    ? Select the connector for mysql-corp: MySQL (supported by StrongLoop)
     ```
 
     Follow the prompts to name the datasource and select the connector to use.
