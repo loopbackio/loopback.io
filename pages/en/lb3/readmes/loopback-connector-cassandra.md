@@ -119,7 +119,7 @@ Cql equivalent:
 
 ```sql
 CREATE TABLE zipCodes (
-   state VARCHAR,
+   state TEXT,
    zipCode INT,
    id UUID,
    PRIMARY KEY (id)
@@ -134,7 +134,7 @@ When `id: true` is defined, LoopBack does not add `id` and uses it as a partitio
 
 ```javascript
 customers = db.define('customers', {
-  name: {type: 'Tuple'},
+  name: String,
   state: String,
   zipCode: Number,
   userId: {type: 'TimeUuid', id: true},
@@ -145,8 +145,8 @@ Cql equivalent:
 
 ```sql
 CREATE TABLE customers (
-   name TUPLE,
-   state VARCHAR,
+   name TEXT,
+   state TEXT,
    zipCode INT,
    userId TIMEUUID,
    PRIMARY KEY (userId)
@@ -175,8 +175,8 @@ Cql equivalent:
 ```sql
 CREATE TABLE customers (
    isSignedUp BOOLEAN,
-   state VARCHAR,
-   contactSalesRep VARCHAR,
+   state TEXT,
+   contactSalesRep TEXT,
    zipCode INT,
    userId INT,
    PRIMARY KEY ((userId, isSignedUp, contactSalesRep))
@@ -212,49 +212,49 @@ Note that `clusteringKeys` is defined as an array because the order of the sorti
       <td>Arizona</td>
       <td>Ted Johnson</td>
       <td>85003</td>
-      <td>20170302003</td>
+      <td>2003</td>
     </tr>
     <tr>
-      <td>false</td>
+      <td>true</td>
       <td>Arizona</td>
       <td>David Smith</td>
       <td>85002</td>
-      <td>20170516002</td>
+      <td>16002</td>
     </tr>
     <tr>
-      <td>false</td>
+      <td>true</td>
       <td>Arizona</td>
       <td>Mary Parker</td>
       <td>85001</td>
-      <td>20170415001</td>
+      <td>15001</td>
     </tr>
     <tr>
       <td>true</td>
       <td>California</td>
       <td>David Smith</td>
       <td>90001</td>
-      <td>20170121002</td>
+      <td>21002</td>
     </tr>
     <tr>
-      <td>false</td>
+      <td>true</td>
       <td>Colorado</td>
       <td>Mary Parker</td>
       <td>80002</td>
-      <td>20170202010</td>
+      <td>2010</td>
     </tr>
     <tr>
       <td>true</td>
       <td>Colorado</td>
       <td>Jane Miller</td>
       <td>80001</td>
-      <td>20170312002</td>
+      <td>12002</td>
     </tr>
     <tr>
-      <td>false</td>
+      <td>true</td>
       <td>Nevada</td>
       <td>Ted Johnson</td>
       <td>75173</td>
-      <td>20170128006</td>
+      <td>28006</td>
     </tr>
   </tbody>
 </table>
@@ -265,11 +265,11 @@ Cassandra connector supports clustering key as a custom option.  Sorting order c
 
 ```javascript
 customers = db.define('customers', {
-  isSignedUp: {type: Boolean, id: 2},
+  isSignedUp: {type: Boolean, id: true},
   state: String,
-  contactSalesRep: {type: String, id: true},
+  contactSalesRep: String,
   zipCode: Number,
-  userId: {type: Number, id: 1},
+  userId: Number,
   }, {
   cassandra: {
     clusteringKeys: ['state', 'zipCode DESC'],
@@ -282,11 +282,11 @@ Cql equivalent:
 ```sql
 CREATE TABLE customers (
    isSignedUp BOOLEAN,
-   state VARCHAR,
-   contactSalesRep VARCHAR,
+   state TEXT,
+   contactSalesRep TEXT,
    zipCode INT,
    userId INT,
-   PRIMARY KEY ((userId, isSignedUp, contactSalesRep), state, zipCode)
+   PRIMARY KEY (isSignedUp, state, zipCode)
 ) WITH CLUSTERING ORDER BY (state ASC, zipCode DESC);
 ```
 
@@ -309,7 +309,7 @@ Cql equivalent:
 
 ```sql
 CREATE TABLE customers (
-   name VARCHAR,
+   name TEXT,
    userId INT,
    PRIMARY KEY (userId)
 );
