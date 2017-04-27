@@ -19,4 +19,4 @@ See the documentation for the LoopBack [storage component](https://docs.stronglo
 
 ---
 
-[More LoopBack examples](https://github.com/strongloop/loopback-example)
+[More LoopBack examples](https://loopback.io/doc/en/lb3/Tutorials-and-examples.html)
