@@ -55,9 +55,26 @@ The tool will then add an entry such as the following to `datasources.json`:
 
 This example creates a MongoDB data source called "mongo1". The identifier determines the name by which you refer to the data source and can be any string.
 
+Next, the generator will prompt you to type the datasource settings, such as
+host, port, user, password and database name, as well as to install the database connector.
+
+```shell
+? Enter the datasource name: mongo1
+? Select the connector for mongo1: MongoDB (supported by StrongLoop)
+? Connection String url to override other settings (eg: mongodb://username:password@hostname:port/database):
+? host: your-mongodb-server.foo.com
+? port: 27017
+? user: demo
+? password: ****
+? database: demo
+? Install loopback-connector-mongodb@^1.4 Yes
+```
+
+If you don't have the tool install the database connector when it prompts you , then you must install it yourself using `npm install`. If you do not enter the database credentials when prompted, then you must add them manually to server/datasources.json as shown below.
+
 ## Add database credentials
 
-Edit `datasources.json` to add the necessary authentication credentials for the data source; typically hostname, username, password, and database name.
+Edit `server/datasources.json` to add the necessary authentication credentials for the data source; typically hostname, username, password, and database name.
 
 For example:
 
@@ -131,6 +148,14 @@ When you create a new model with the [model generator](Model-generator.html),
 you can specify the data source you want it to use from among those you've added to the application using the
 [Data source generator](Data-source-generator.html) and the default `db`
 data source (that uses the [memory connector](Memory-connector.html)).
+
+```shell
+? Enter the model name: myModel
+? Select the data-source to attach myModel to:
+  db (memory)
+❯ mongodb (mongodb)
+  (no data-source)
+```
 
 To change the data source a model uses after you've created the model, edit the application's `server/model-config.json`
 and set the dataSource property for the model. For example, to make myModel use the corp1 data source:
