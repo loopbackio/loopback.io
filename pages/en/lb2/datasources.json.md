@@ -80,17 +80,17 @@ To connect a model to a data source, follow these steps:
     ```shell
     $ apic create --type datasource
     ? Enter the data-source name: mysql-corp
-    ? Select the connector for mysql: MySQL (supported by StrongLoop)
+    ? Select the connector for mysql-corp: MySQL (supported by StrongLoop)
     ```
 
     ```shell
     $ slc loopback:datasource
     ? Enter the data-source name: mysql-corp
-    ? Select the connector for mysql: MySQL (supported by StrongLoop)
+    ? Select the connector for mysql-corp: MySQL (supported by StrongLoop)
     ```
 
-    Follow the prompts to name the datasource and select the connector to use.
-    This adds the new data source to `datasources.json`
+    Respond to the prompts to set data source properties such as database credentials.
+    To change the data source properties, edit `server/datasources.json`.
 
 2.  Edit `server/datasources.json` to add the necessary authentication credentials: typically hostname, username, password, and database name.
 
