@@ -40,7 +40,7 @@ host, port, user, password and database name, as well as to install the database
 ? Install loopback-connector-mongodb@^1.4 Yes
 ```
 
-If you choose not to type the database credentials, and/or `no` for installing the database connector, then you can install it manually and edit `server/datasources.json` as in the following steps.
+Install the database connector when it prompts you or if you wish to install separately you can do so by `npm install loopback-connector-<connector_name> --save`. If you do not enter the database credentials when prompted, then you must add them manually to `server/datasources.json` as shown below.
 
 ## Install MongoDB connector
 

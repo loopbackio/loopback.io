@@ -89,8 +89,8 @@ To connect a model to a data source, follow these steps:
     ? Select the connector for mysql-corp: MySQL (supported by StrongLoop)
     ```
 
-    Follow the prompts to fill in the connector configurations.
-    This adds the new data source to `server/datasources.json` which can be later used to update the config if needed.
+    Respond to the prompts to set data source properties such as database credentials.
+    To change the data source properties, edit `server/datasources.json`.
 
 2.  Edit `server/datasources.json` to add the necessary authentication credentials: typically hostname, username, password, and database name.
 

@@ -71,7 +71,7 @@ host, port, user, password and database name, as well as to install the database
 ? Install loopback-connector-mysql@^1.4 Yes
 ```
 
- If you choose not to type the database credentials, and/or select `no` for installing the database connector, then you can install it manually and edit `server/datasources.json` as in the following steps.
+Install the database connector when it prompts you or if you wish to install separately you can do so by `npm install loopback-connector-<connector_name> --save`. If you do not enter the database credentials when prompted, then you must add them manually to `server/datasources.json` as shown below.
 
 ## Add data source credentials
 
@@ -97,6 +97,8 @@ When you create a new model with the [model generator](Model-generator.html),
 you can specify the data source you want it to use from among those you've added to the application using the
 [Data source generator](Data-source-generator.html) and the default `db`
 data source (that uses the [memory connector](Memory-connector.html)).
+
+To create a model, run `slc loopback:model` or `apic create --type model`.
 
 ```shell
 ? Enter the model name: myModel
