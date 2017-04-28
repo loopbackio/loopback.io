@@ -39,7 +39,8 @@ For example, here is the model JSON file for the customer model in [loopback-ex
     "reviews": {
       "type": "hasMany",
       "model": "Review",
-      "foreignKey": "authorId"
+      "foreignKey": "authorId",
+      "primaryKey": "id" // optional
     },
   ...
 ```
