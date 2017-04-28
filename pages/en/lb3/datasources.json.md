@@ -33,6 +33,19 @@ For example:
   }
 }
 ```
+To store data in a file for memory connector, add <code> "file": <i>"file_name"</i></code>. For more information see [Memory connector - data persistence](https://loopback.io/doc/en/lb3/Memory-connector.html#data-persistence).
+
+For example:
+
+```javascript
+{
+  "db": {
+    "name": "db",
+    "connector": "memory",
+    "file": "db.json",
+  },
+}
+```
 
 To access data sources in application code, use <code>app.datasources.<i>datasourceName</i></code>.
 
@@ -134,3 +147,5 @@ See documentation for the specific connector for full details.
     </tr>
   </tbody>
 </table>
+
+To connect a model to a data source, [follow these steps](https://loopback.io/doc/en/lb2/datasources.json.html#properties-for-database-connectors) to create a datasource.
