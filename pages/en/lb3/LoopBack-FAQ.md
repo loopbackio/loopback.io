@@ -239,3 +239,5 @@ Notes:
 Note: For the `resetPasswordRequest` handler callback, you are provided with an 
 [`info`](https://github.com/strongloop/loopback-faq-user-management/blob/master/common/models/user.js#L38) 
 object which contains information related to the user that is requesting the password reset.
+
+Note: Do not forget to configure the `bodyParser` and use `loopback.token()` in your app. You can see examples in [server.js](https://github.com/strongloop/loopback-example-user-management/blob/master/server/server.js)
