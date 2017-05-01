@@ -65,6 +65,17 @@ The following table summarizes LoopBack's data types.
       </td>
     </tr>
     <tr>
+      <td>DateString</td>
+      <td>
+        <p>LoopBack<a href="http://apidocs.strongloop.com/loopback-datasource-juggler/#datestring" class="external-link" rel="nofollow"> DateString</a> object</p>
+      </td>
+      <td>
+        <p><code>"2000-01-01T00:00:00.000Z"</code></p>
+        <p><code>"2000-01-01"</code></p>
+        <p><code>"2000-01-01 12:00:00"</code></p>
+      </td>
+    </tr>
+    <tr>
       <td>null</td>
       <td>JSON null</td>
       <td><code>null</code></td>
