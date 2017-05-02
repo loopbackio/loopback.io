@@ -117,21 +117,27 @@ User = db.define ('User', {
   name: { type: String },
   email: { type: String }
 });
+// wait for connected event on the
+// datasource before doing any database
+// operations since we connect asynchronously
+db.once('connected', function() {
+  User.create ({
+    name: "Tony",
+    email: "tony@t.com"
+  }, function (err, user) {
+    console.log (user);
+  });
 
-User.create ({
-  name: "Tony",
-  email: "tony@t.com"
-}, function (err, user) {
-  console.log (user);
+  User.find ({ where: { name: "Tony" }}, function (err, users) {
+    console.log (users);
+  });
+
+  User.destroyAll (function () {
+    console.log ('test complete');
+  });
 });
 
-User.find ({ where: { name: "Tony" }}, function (err, users) {
-  console.log (users);
-});
 
-User.destroyAll (function () {
-  console.log ('test complete');
-})
 ```
 
 #### Note on using `updateOrCreate` functionality:
