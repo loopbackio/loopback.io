@@ -173,9 +173,7 @@ LoopBack models support:
 
 ### Does LoopBack support JavaScript configuration files (not just JSON)?
 
-LoopBack does not support using JavaScript (instead of JSON) for configuration files such as [config.json](config.json.html), 
-[datasources.json](datasources.json.html), or [model-config.json](model-config.json.html), 
-to enable programmatic editing of the configuration via tools.
+Yes, LoopBack does support _overriding_ the default `.json` files with `.js` files. See the page on [environment-specific configuration](Environment-specific-configuration.html) for details.
 
 ### User management questions
 
