@@ -71,8 +71,6 @@ Connector-specific configuration:
 Press **Enter** to skip the URL connection string, since you'll enter the settings individually.
 
 {% include important.html content="If you have a MySQL database server that you can use, please use it. Create a new database called \"getting_started.\" If you wish, you can use a different database name. Just make sure the `mysqlDs.database` property in `datasources.json `matches it (see below).
-
-If not, you can use the StrongLoop MySQL server running on [demo.strongloop.com](http://demo.strongloop.com/). However, be aware that it is a shared resource. There is a small chance that two users may run the script that creates sample data (see [Add some test data and view it](#add-some-test-data-and-view-it), below) at the same time and may run into race condition. For this reason, we recommend you use your own MySQL server if you have one.
 " %}
 
 To use the StrongLoop MySQL server enter the settings shown below.
