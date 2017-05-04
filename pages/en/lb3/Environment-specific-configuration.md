@@ -21,6 +21,12 @@ LoopBack applications have the following types of configuration files:
 * **Middleware configuration files**, by default `server/middleware.json`.
 * **Configuration files for LoopBack components**, by default `server/component-config.json`.
 
+{% include note.html content="Using `*.js` files to configure a LoopBack application will only work
+when the original `.json` files are kept in place. Rather than replacing `.json` files with `.js`
+files, you should be overriding values from `.json` files in `.js` files. That said, by leaving
+the default `.json` files empty, all configuration can be done in `.js` files.
+"%}
+
 LoopBack will always load the following configuration files, if they exist:
 
 * `server/config.json`.
