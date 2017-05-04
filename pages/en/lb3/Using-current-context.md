@@ -104,6 +104,33 @@ remoting metadata and set the `http` property to the special string value
 }
 ```
 
+For example:
+```js
+  MyObject.remoteMethod(
+    'myMethod',
+    {
+      http: {path: '/myMethod', verb: 'get'},
+      accepts: [
+        {arg: 'someArgument', type: 'string'},
+        {
+          arg: 'accessToken',
+          type: 'object',
+          http: function(ctx) {
+            return ctx.req.accessToken;
+          }
+        }
+        ],
+      returns: {arg: 'someResponse', type: 'string'}
+    }
+  );
+  MyObject.myMethod = function(someArgument, accessToken, cb) {
+    // ...
+    // accessToken.userId
+    // ...
+    cb(null, "Response blah blah...");
+  }
+```
+
 Under the hood, `Model.remoteMethod` converts this special string value
 to a function that will be called by strong-remoting for each incoming request
 to build the value for this parameter.
