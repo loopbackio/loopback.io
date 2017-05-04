@@ -128,7 +128,7 @@ children:
   output: 'web, pdf'
   children:
 
-  - title: '03-10-2016'
+  - title: '03-10-2017'
     url: /doc/en/lb3/Security-advisory-03-10-2017.html
     output: 'web, pdf'
 
