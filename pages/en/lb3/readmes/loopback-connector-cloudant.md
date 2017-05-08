@@ -7,141 +7,51 @@ Local.
 
 For more information, see [Getting started with Cloudant NoSQL DB](https://www.ng.bluemix.net/docs/services/Cloudant/index.html)
 
-The `loopback-connector-cloudant` module is the Cloudant connector for the Loopback framework.
+The `loopback-connector-cloudant` module is the Cloudant connector for the LoopBack framework.
+<!-- TOC -->
 
-## Key features
+- [Getting Started](#getting-started)
+    - [Design](#design)
+        - [Partial Update](#partial-update)
+        - [Frequent Modification](#frequent-modification)
+        - [Conflict Control](#conflict-control)
+    - [Model](#model)
+        - [Map Between Model And Document](#map-between-model-and-document)
+        - [Model-specific Configuration](#model-specific-configuration)
+        - [_rev Property](#_rev-property)
+- [Setup Cloudant Instance](#setup-cloudant-instance)
+- [Installation](#installation)
+- [Configuration](#configuration)
+    - [Generate Datasource](#generate-datasource)
+    - [Datasource Config(`url` vs `username` & `password`)](#datasource-configurl-vs-username--password)
+    - [Requests Plugin](#requests-plugin)
+    - [Example Usage](#example-usage)
+- [CRUD](#crud)
+    - [Update](#update)
+- [Migration](#migration)
+    - [autoupdate vs automigrate](#autoupdate-vs-automigrate)
+    - [isActual](#isactual)
+    - [Example Code](#example-code)
+- [Discovery](#discovery)
+- [Query](#query)
+- [Testing](#testing)
+- [More Info](#more-info)
+- [Feature backlog](#feature-backlog)
+    - [View](#view)
+    - [Index](#index)
 
-* Uses Cloudant Query (Lucene) to support ad-hoc searching.
-* [Loopback query](http://loopback.io/doc/en/lb3/Querying-data.html) support for: fields, limit, order, skip and where filters.
-* Query and filtering is performed on the database for optimal efficiency.
-* Use different DB instances per model definition.
-* Supports basic model discovery.
+<!-- /TOC -->
 
-## Installation
+# Getting Started
 
-Enter the following in the top-level directory of your LoopBack application:
+## Design
+LoopBack tries best to fit its model to a specific database's design, while limited by the nature of database, it's not always possible to support all LoopBack features perfectly, and user should be aware of some key features about Cloudant before they start to design a Cloudant model.
 
-```
-$ npm install loopback-connector-cloudant --save
-```
+### Partial Update
 
-The `--save` option adds the dependency to the application’s `package.json` file.
+*Cloudant does not support the idea of updating a document. All "updates" on a document are _destructive_ replacements.*
 
-## Configuration
-
-Use the [Data source generator](http://loopback.io/doc/en/lb3/Data-source-generator.html) to add the Cloudant data source to your
-application. The entry in the applications `/server/datasources.json` will
-look something like this:
-
-```
-"mydb": {
-  "name": "mydb",
-  "connector": "cloudant",
-  "url": "https://<username>:<password>@<host>"
-  "database": "test"
-}
-```
-or
-
-```
-"mydb": {
-  "name": "mydb",
-  "connector": "cloudant",
-  "username": "XXXX-bluemix",
-  "password": "YYYYYYYYYYYY",
-  "database": "test"
-}
-```
-
-Only specify the `username` and `password` fields if you are using the root/admin user for the cloudant server which has the same
-string as the hostname for the cloudant server, because the cloudant driver used by the connector appends `.cloudant.com` to the
-`username` field when `username` and `password` fields are specified. Therefore, it is good practice to use the `url` field instead
-of `username` and `password` if your host is not `username.cloudant.com`.
-
-Edit `datasources.json` to add other supported properties as required:
-
-Property  | Type | Description
-----------| -----| --------
-database  | String | Database name
-username  | String | Cloudant username, use either 'url' or username/password
-password  | String | Cloudant password
-url       | String | Cloudant URL containing both username and password
-modelIndex | String | Specify the model name to document mapping, defaults to `loopback__model__name`
-
-**NOTE: The `url` property will override other settings.**
-
-## Model-specific configuration
-
-You can also specify per-model configuration for database selection and to
-map a model to a different document:
-
-**common/models/_model-name_.json**
-
-```
-{
-  "name": "User",
-  "base": "PersistedModel",
-  "idInjection": true,
-  ...
-  "cloudant": {
-    "modelIndex": "custom_doc_type_property_name",
-    "modelSelector": { "doc_type": "user" },
-    "database": "test2"
-  },
-  ...
-```
-
-Model-specific configuration settings:
-
-Property&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  | Type | Description
-----------| -----| --------
-database  | String | Database name
-modelIndex | String | Specify the model name to document mapping, defaults to `loopback__model__name`.
-modelSelector | JSON | Use the Cloudant Query selector syntax to associate models to existing data. NOTE: modelSelector and modelIndex are mutually exclusive; see [Selector syntax](https://docs.cloudant.com/cloudant_query.html#selector-syntax).
-
-## Example usage
-
-```javascript
-var DataSource = require ('loopback-datasource-juggler').DataSource,
-    Cloudant   = require ('loopback-connector-cloudant');
-
-var config = {
-    username: 'XXXXX-bluemix',
-    password: 'YYYYYYYYYYYYY',
-    database: 'test'
-};
-
-var db = new DataSource (Cloudant, config);
-
-User = db.define ('User', {
-  name: { type: String },
-  email: { type: String }
-});
-// wait for connected event on the
-// datasource before doing any database
-// operations since we connect asynchronously
-db.once('connected', function() {
-  User.create ({
-    name: "Tony",
-    email: "tony@t.com"
-  }, function (err, user) {
-    console.log (user);
-  });
-
-  User.find ({ where: { name: "Tony" }}, function (err, users) {
-    console.log (users);
-  });
-
-  User.destroyAll (function () {
-    console.log ('test complete');
-  });
-});
-
-
-```
-
-#### Note on using `updateOrCreate` functionality:
-**Cloudant does not support the idea of updating a document. All "updates" on a document are _destructive_ replacements.**
+It implies that if you do want to partially update a document, please make sure unchanged values are included in the update object.
 
 For example:
 
@@ -167,26 +77,113 @@ ds.updateOrCreate('User', {
 }
 ```
 
-**Please note how property `prop2` was completely dropped upon update.**
+*Please note how property `prop2` was completely dropped upon update.*
 
-**Solution:** Do not pass partial values for the data object to be updated. If there are properties that are not being updated, please include the old value to keep data persistent.
+We have some discussion on update methods, the issue link can be found in [Feature Backlog](https://github.com/strongloop/loopback-connector-cloudant##feature-backlog) section
 
-## Feature backlog
+### Frequent Modification
 
-* Index-only model properties marked with index=true
-* Configurable "view based" or JSON indexes. [More Info>>](https://cloudant.com/blog/mango-json-vs-text-indexes)
+Cloudant is not designed to change same document frequently and multiple times. It stores status changes by creating different documents and including the same unique id to tell that they are attached to the same item, not updating the same document.
 
-## Setup Cloudant instance
+By modeling the data in separate documents that are only written once, we can reduce the chance of concurrent access to the same document by separate processes.
 
-There is no free version of local Cloudant to download, so to develop or test with Cloudant connector, you must set up either a Cloudant DBaas instance or a Bluemix Cloudant instance.
+And by properly controlling the conflict, developer can still do a safe modify. For details, refer to [Conflict Control](https://github.com/strongloop/loopback-connector-cloudant#conflict-control)
 
-### Create Cloudant DBaaS account
+### Conflict Control
 
-  - Limited free trial.
-  - Sign up with https://cloudant.com/sign-up/ then you will see your Cloudant dashboard.
+The basic idea is when modifying a document, user needs to control conflict by handling the revision of a document, currently the connector controls this process, after retriving the latest revision, connector uses it to update/delete doc, and returns 409 conflict error if doc changes during that time slot. In the middle, user could not interfere and provide their own conflict solution.
 
-### Setup Cloudant on Bluemix
+More examples to be updated after we complete the `_rev` property refactor.
 
+## Model 
+
+### Map Between Model And Document
+
+Unlike relational db or mongodb, Cloudant doesn't have a concept as 'table' or 'collection', data in a Cloudant database are all stored as documents.
+
+The connector uses a design document to represent a LoopBack model, and common documents to represent model instances.
+
+The following is a comparison among different databases:
+
+|               | Model                        | Model Property                        | Model Instance         |
+|---------------|------------------------------|---------------------------------------|------------------------|
+| Relational DB | table                        | column in table                       | row in table           |
+| Mongodb       | collection                   | createIndex if property.index is true | document in collection |
+| Cloudant      | Design documents in database | NOT stored in document                     | common documents in database  |
+
+To create a model, the connector creates a design document with the following config:
+
+```
+type: 'text',
+name: 'lb-index-' + modelName,
+ddoc: 'lb-index-ddoc-' + modelName,
+index: {
+  default_field: {
+    enabled: false,
+  },
+  selector: {
+    [modelIndex]: modelName
+  },
+},
+```
+
+By default, `modelIndex` is 'loopback__model__name', and `modelSelector` is {[modelIndex]: modelName}. User can customize `modelSelector` and `modelIndex` in datasource's json file, for details please check [model-specific configuration](https://github.com/strongloop/loopback-connector-cloudant##model-specific-configuration)
+
+To create a model instance, the connector creates a non-design document with value of property 'loopback__model__name' equals to `modelName`. 
+
+For model properties, we plan to create index for property that has config `index: true`. In the future, it will be the same way as what mongodb connector does.
+
+### Model-specific Configuration
+
+You can specify configurations per model for database selection and to
+map a model to a different document:
+
+*common/models/_model-name_.json*
+
+```
+{
+  "name": "User",
+  "base": "PersistedModel",
+  "idInjection": true,
+  ...
+  "cloudant": {
+    "modelIndex": "custom_doc_type_property_name",
+    "modelSelector": { "doc_type": "user" },
+    "database": "test2"
+  },
+  ...
+```
+
+Model-specific configuration settings:
+
+Property&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  | Type | Description
+----------| -----| --------
+database  | String | Database name
+modelIndex | String | Specify the model name to document mapping, defaults to `loopback__model__name`.
+modelSelector | JSON | Use the Cloudant Query selector syntax to associate models to existing data. NOTE: modelSelector and modelIndex are mutually exclusive; see [Selector syntax](https://docs.cloudant.com/cloudant_query.html#selector-syntax).
+
+### _rev Property
+
+In a document, property `_rev` is the latest doc revision and must be provided when modifying the doc. Currently when updating/deleting a doc, the connector first retrieves that doc, then gets its `_rev`, then calls a modify api with `_rev` included. It makes three calls to the database and this would easily result in race condition.
+  
+Considering the nature of Cloudant, we plan to give user the flexibility to define `_rev` property in model and provide `_rev` by themselves instead of the connector. In such way user can get the revision and control conflict before using that revision to modify the document.
+
+# Setup Cloudant Instance
+
+For user that don't have a cloudant server to develop or test, here are some suggestions can help you quickly setup one.
+
+For development use, a docker container of Cloudant local is easy to setup and there is no request limit per second.
+
+Bluemix Cloudant will be more stable for production.
+
+- Cloudant local (docker image)
+
+  - No request limit.
+  - Please follow https://hub.docker.com/r/ibmcom/cloudant-developer/ to create your Cloudant local instance
+
+- Cloudant on Bluemix
+
+  - Limit request per second by default.
   - Choose Bluemix Cloudant if you already have a Bluemix account with a better situation than limited-days' free trial.
 
   - Setup steps:
@@ -200,19 +197,230 @@ There is no free version of local Cloudant to download, so to develop or test wi
     1. Click on the icon, and it will direct you to the database page. Check "Service Credentials" on the left to see your credentials.
     1. Check "Manage" then click on button "LAUNCH" to see your Cloudant dashboard.
 
+- Cloudant DBaaS account
+  
+  - Limit request per second.
+  - Limited free trial.
+  - Sign up with https://cloudant.com/sign-up/ then you will see your Cloudant dashboard.
+  
 To view the Cloudant dashboard on both DBaaS and Bluemix, [sign in](https://cloudant.com/sign-in/) with your Cloudant username and password.
 
-## Testing
+# Installation
 
-After creating a Cloudant instance, you will need three configuration properties to run the tests: `username`, `password`, `database`
+Enter the following in the top-level directory of your LoopBack application:
 
-### Cloudant DBaaS account
+```
+$ npm install loopback-connector-cloudant --save
+```
+
+The `--save` option adds the dependency to the application’s `package.json` file.
+
+# Configuration
+
+## Generate Datasource
+
+Use the [Data source generator](http://loopback.io/doc/en/lb3/Data-source-generator.html) to add the Cloudant data source to your
+application. The entry in the applications `/server/datasources.json` will
+look something like this:
+
+```
+"mydb": {
+  "name": "mydb",
+  "connector": "cloudant",
+  "url": "https://<username>:<password>@<host>"
+  "database": "test"
+}
+```
+or
+
+```
+"mydb": {
+  "name": "mydb",
+  "connector": "cloudant",
+  "username": "XXXX-bluemix",
+  "password": "YYYYYYYYYYYY",
+  "database": "test"
+}
+```
+
+## Datasource Config(`url` vs `username` & `password`)
+
+- *NOTE: The `url` property will override `username` and `password`.*
+
+- It means only when missing `url`, cloudant will use `username` and `password` to create connection. 
+
+- If `url` is wrong, even user provide correct `username` and `password`, the connection still fails.
+
+- Only specify the `username` and `password` fields if you are using the root/admin user for the Cloudant server which has the same
+string as the hostname for the Cloudant server, because the Cloudant driver used by the connector appends `.cloudant.com` to the
+`username` field when `username` and `password` fields are specified. Therefore, it is good practice to use the `url` field instead
+of `username` and `password` if your host is not `username.cloudant.com`.
+
+- Edit `datasources.json` to add other supported properties as required:
+
+Property  | Type | Description
+----------| -----| --------
+database  | String | Database name
+username  | String | Cloudant username, use either 'url' or username/password
+password  | String | Cloudant password
+url       | String | Cloudant URL containing both username and password
+modelIndex | String | Specify the model name to document mapping, defaults to `loopback__model__name`
+
+## Requests Plugin
+
+User can provide plugin name and parameters in datasource object. For example, connect to a Cloudant server with plugin called `retry`, with parameters `retryAttempts` and `retryTimeout`:
+
+```
+"mydb": {
+  "name": "mydb",
+  "connector": "cloudant",
+  "url": "https://<username>:<password>@<host>"
+  "database": "test",
+  "plugin": "retry",
+  "retryAttempts": 5,
+  "retryTimeout": 1000
+}
+```
+
+Please note user can only use one of the plugins list in Cloudant driver's doc, not multiple:
+https://github.com/cloudant/nodejs-cloudant#request-plugins
+
+## Example Usage
+
+*/server/script.js*
+```javascript
+var util = require('util');
+
+// Here we create datasource dynamically.
+// If you already define a static datasource in server/datasources.json,
+// please check how to load it in 
+// https://github.com/cloudant/nodejs-cloudant#example-code
+var DataSource = require ('loopback-datasource-juggler').DataSource,
+    Cloudant   = require ('loopback-connector-cloudant');
+
+var config = {
+    username: 'your_cloudant_username',
+    password: 'your_cloudant_password',
+    database: 'your_cloudant_database'
+};
+
+var db = new DataSource (Cloudant, config);
+
+Test = db.define ('Test', {
+  name: { type: String },
+});
+
+// wait for connected event on the
+// datasource before doing any database
+// operations since we connect asynchronously
+db.once('connected', function() {
+  Test.create({
+    name: "Tony",
+  }).then(function(test) {
+    console.log('create instance ' + util.inspect(test, 4));
+    return Test.find({ where: { name: "Tony" }});
+  }).then(function(test) {
+    console.log('find instance: ' + util.inspect(test, 4));
+    return Test.destroyAll();
+  }).then(function(test) {
+    console.log('destroy instance!');
+  }).catch(err);
+});
+```
+
+- Use different DB instances per model definition. Refer to https://github.com/strongloop/loopback-connector-cloudant/blob/master/doc/multiple-db-instances.md
+
+# CRUD
+
+User can find most CRUD operation apis documented in https://loopback.io/doc/en/lb3/Built-in-models-REST-API.html
+
+Please note that after the `_rev` property refactor done, cloudant model api will assume user include the `_rev` when modifying data, so please make sure you handle document's revision properly before you call a POST/PATCH/DELETE api. For details, refer to https://github.com/strongloop/loopback-connector-cloudant#_rev-property
+
+We are still in progress of refactoring some methods, more details to be updated.
+
+## Update
+
+Currently `update` does the same thing as `replace`, for details, refer to https://github.com/strongloop/loopback-connector-cloudant#no-partial-update
+
+# Migration
+
+After attaching a model to a Cloudant datasource, either statically with `model.json` file or dynamically in boot script code, user need to run `automigrate` or `autoupdate` to migrate models to database. Cloudant connector does NOT automatically migrate them.
+
+The following migration functions take either an array of multiple model's name, or a string of a single model's name. The example code will show how to do it.
+
+## autoupdate vs automigrate
+
+`autoupdate` does not destroy existing model instances if model already defined in database. It only creates design document for new models. 
+Under the hood Cloudant allows creating same design doc multiple times, it doesn't return error, but returns `existed` as result to tell is it a new design doc or existing one.
+
+`automigrate` destroys existing model instances if model already defined in database. Please make sure you do want to clean up data before running `automigrate`. Then it does same thing as `autoupdate`
+
+## isActual
+
+User can call this function to check if model exists in database.
+
+## Example Code
+
+*/server/script.js*
+```javascript
+module.export = function migrateData(app) {
+  // Suppose you already define a datasource called `cloudantDS` 
+  // in server/datasources.json
+  var ds = app.models.cloudantDS;
+  
+  // static model created with model.json file
+  var StaticModel = app.models.StaticModel;
+  // dynamic model created in boot script
+  var DynamicModel = ds.define('DynamicModel', {
+      name: {type: String},
+      description: {type: String},
+  });
+
+  // Write the three examples in parallel just to avoid dup code,
+  // please try ONLY ONE of them at one time.
+  ds.once('connected', function() {
+    // try autoupdate example - multiple models
+    ds.autoupdate(['StaticModel', 'DynamicModel'], function(err) {});
+    // OR
+    // try automigrate example - single model
+    ds.automigrate('StaticModel', function(err) {});
+    // OR
+    // try isActual example - if any model exist, run autoupdate, otherwise automigrate
+    ds.isActual(['StaticModel', 'DynamicModel'], function(err, exist) {
+      if (exist) {
+        ds.autoupdate(['StaticModel', 'DynamicModel'], function(err){})
+      } else {
+        ds.automigate(['StaticModel', 'DynamicModel'], function(err){});
+      }
+    });
+  });
+}
+```
+
+# Discovery
+
+Not implemented yet, track it in story https://github.com/strongloop/loopback-connector-cloudant/issues/118 
+
+# Query
+
+-  Uses Cloudant Query (Lucene) to support ad-hoc searching.
+-  [LoopBack query](http://loopback.io/doc/en/lb3/Querying-data.html) support for: fields, limit, order, skip and where filters.
+- Please check [Advanced Queries](https://github.com/strongloop/loopback-connector-cloudant/blob/master/doc/advanced-queries.md) for details about regex filter, nested filter and order.
+
+# Testing
+
+- Cloudant local(docker image)
+  
+  - url: given the dashboard address 'http://myhost:8080/dashboard.html', the connection url would be 'http://admin:pass@myhost:8080'
+  - database: create your own database for testing
+
+- Cloudant DBaaS account
 
   - username: your sign up username
   - password: your sign up password
   - database: create your own database for testing
 
-### Cloudant on Bluemix
+- Cloudant on Bluemix
 
   - username: see services credentials
   - password: see services credentials
@@ -221,9 +429,33 @@ After creating a Cloudant instance, you will need three configuration properties
 To run the tests:
 
 ```
+CLOUDANT_URL=url CLOUDANT_DATABASE=database npm test
+```
+OR
+```
 CLOUDANT_USERNAME=username CLOUDANT_PASSWORD=password CLOUDANT_DATABASE=database npm test
 ```
 
-## More Info
+Currently the imported test cases from juggler doesn't fit Cloudant connector, to skip them, set `CI=1` in command when run tests.
+
+# More Info
 For more detailed information regarding connector-specific functions and behaviour,
 see the [docs section](https://github.com/strongloop/loopback-connector-cloudant/tree/master/doc).
+
+# Feature backlog
+
+* [Support model property `_rev`](https://github.com/strongloop/loopback-connector-cloudant/issues/55)
+* [Partial update](https://github.com/strongloop/loopback-connector-cloudant/issues/35)
+* [Discovery](https://github.com/strongloop/loopback-connector-cloudant/issues/118)
+* Index-only model properties marked with index=true
+* Configurable "view based" or JSON indexes. [More Info>>](https://cloudant.com/blog/mango-json-vs-text-indexes)
+* [Support uuid](https://github.com/strongloop/loopback-connector-cloudant/issues/104)
+
+## View
+
+Not implemented yet, track it in https://github.com/strongloop/loopback-connector-cloudant/issues/67
+
+## Index
+
+To be updated
+
