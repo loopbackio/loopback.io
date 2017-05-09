@@ -116,13 +116,14 @@ The following options are available for an authorization server:
 <table>
   <thead>
     <tr>
-      <th width="150">Property</th>
+      <th width="120">Property</th>
       <th width="120">Type</th>
       <th>Description</th>
-      <th>Default</th>
+      <th width="150">Default</th>
     </tr>
   </thead>
   <tbody>
+
     <tr>
       <td>authorizePath</td>
       <td>
@@ -132,41 +133,9 @@ The following options are available for an authorization server:
         If String, specifies the path to mount the authorization endpoint.
         If false, do not set up the authorization endpoint.
       </td>
-      <td><code>/oauth/authorize</code></td>
+      <td><code>/oauth<br/>/authorize</code></td>
     </tr>
-    <tr>
-      <td>&nbsp;tokenPath</td>
-      <td>String or<br>Boolean (only false)</td>
-      <td>
-        If String, specifies the path to mount the token endpoint.
-        If false, do not set up the token endpoint
-      </td>
-      <td>POST <code>/oauth/token</code></td>
-    </tr>
-    <tr>
-      <td>&nbsp;decisionPath</td>
-      <td>String or<br>Boolean (only false)</td>
-      <td>
-        If String, specifies the path to mount the decision endpoint.
-        If false, do not set up the decision endpoint
-      </td>
-      <td>POST <code>/oauth/authorize/decision</code></td>
-    </tr>
-    <tr>
-      <td>decisionView</td>
-      <td>String</td>
-      <td>
-        Server-side view name to render the decision dialog. The input for the view is:
-        <ul>
-          <li>transactionId: An internal token to prevent forging</li>
-          <li>user: user/resource owner object</li>
-          <li>client: client application object</li>
-          <li>scope: OAuth 2.0 scope(s)</li>
-          <li>redirectURI: redirect URI after the decision is made</li>
-        </ul>
-      </td>
-      <td>&nbsp;</td>
-    </tr>
+
     <tr>
       <td>decisionPage</td>
       <td>String</td>
@@ -182,6 +151,40 @@ The following options are available for an authorization server:
       </td>
       <td>&nbsp;</td>
     </tr>
+
+    <tr>
+      <td>decisionPath</td>
+      <td>String or<br>Boolean (only false)</td>
+      <td>
+        If String, specifies the path to mount the decision endpoint.
+        If false, do not set up the decision endpoint
+      </td>
+      <td>POST<br/> <code>/oauth<br/>/authorize<br/>/decision</code></td>
+    </tr>
+
+    <tr>
+      <td>decisionView</td>
+      <td>String</td>
+      <td>
+        Server-side view name to render the decision dialog. The input for the view is:
+        <ul>
+          <li>transactionId: An internal token to prevent forging</li>
+          <li>user: user/resource owner object</li>
+          <li>client: client application object</li>
+          <li>scope: OAuth 2.0 scope(s)</li>
+          <li>redirectURI: redirect URI after the decision is made</li>
+        </ul>
+      </td>
+      <td>&nbsp;</td>
+    </tr>
+
+    <tr>
+      <td>loginPage</td>
+      <td>String</td>
+      <td>URL to the login dialog page.</td>
+      <td><code>/login</code></td>
+    </tr>
+
     <tr>
       <td>loginPath</td>
       <td>String or<br>Boolean (only false)</td>
@@ -190,11 +193,15 @@ The following options are available for an authorization server:
       </td>
       <td>POST <code>/login</code></td>
     </tr>
+
     <tr>
-      <td>loginPage</td>
-      <td>String</td>
-      <td>URL to the login dialog page.</td>
-      <td><code>/login</code></td>
+      <td>tokenPath</td>
+      <td>String or<br>Boolean (only false)</td>
+      <td>
+        If String, specifies the path to mount the token endpoint.
+        If false, do not set up the token endpoint
+      </td>
+      <td>POST <code>/oauth/token</code></td>
     </tr>
   </tbody>
 </table>
