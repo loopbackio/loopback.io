@@ -33,6 +33,12 @@ $ lb bluemix [options]
 : Set up Bluemix toolchain. Creates a `.bluemix` directory containing the toolchain file.
 For more information on Bluemix toolchains, see [Working with toolchains](https://console.ng.bluemix.net/docs/services/ContinuousDelivery/toolchains_working.html).
 
+`--login`
+: Log in to Bluemix by either specifying your email and password, or by providing a one-time password via single sign-on (SSO). Required only if you don't have the Cloud Foundry  [`cf`](https://docs.cloudfoundry.org/cf-cli/) command-line tool installed and authenticated.
+
+`--sso`
+: Log in to Bluemix with SSO. Required only if you don't have the Cloud Foundry  [`cf`](https://docs.cloudfoundry.org/cf-cli/) command-line tool installed and authenticated.
+
 {% include_relative includes/CLI-std-options.md %}
 
 ### Arguments
