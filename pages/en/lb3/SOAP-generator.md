@@ -1,13 +1,16 @@
 ---
 title: "SOAP generator"
-lang: en
+toc: false
 layout: page
 keywords: LoopBack
 tags: [authentication]
 sidebar: lb3_sidebar
 permalink: /doc/en/lb3/SOAP-generator.html
-summary:
+summary: The SOAP generator creates models from a SOAP web service.
 ---
+{% include navgroups/soap.md %}
+{% include toc.html %}
+<br clear="all"/>
 
 {% include content/generator-create-app.html lang=page.lang %}
 

@@ -1,6 +1,6 @@
 ---
 title: "Connecting to SOAP web services"
-lang: en
+toc: false
 layout: page
 keywords: LoopBack
 tags:
@@ -8,6 +8,8 @@ sidebar: lb3_sidebar
 permalink: /doc/en/lb3/Connecting-to-SOAP.html
 summary: The LoopBack CLI enables you to easily create models based on a SOAP web service.
 ---
+{% include navgroups/soap.md %}
+{% include toc.html %}
 
 ## Overview
 
