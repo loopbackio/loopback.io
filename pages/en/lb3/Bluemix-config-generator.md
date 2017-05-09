@@ -34,10 +34,10 @@ $ lb bluemix [options]
 For more information on Bluemix toolchains, see [Working with toolchains](https://console.ng.bluemix.net/docs/services/ContinuousDelivery/toolchains_working.html).
 
 `--login`
-: Log into Bluemix by either specifying your email and password, or by speifying an OTP via SSO. This required only if you don't have [`cf` command-line tool])(https://docs.cloudfoundry.org/cf-cli/) installed and authenticated.
+: Log in to Bluemix by either specifying your email and password, or by providing a one-time password via single sign-on (SSO). Required only if you don't have the Cloud Foundry  [`cf`](https://docs.cloudfoundry.org/cf-cli/) command-line tool installed and authenticated.
 
 `--sso`
-: Log into Bluemix with SSO. This required only if you don't have [`cf` command-line tool])(https://docs.cloudfoundry.org/cf-cli/) installed and authenticated.
+: Log in to Bluemix with SSO. Required only if you don't have the Cloud Foundry  [`cf`](https://docs.cloudfoundry.org/cf-cli/) command-line tool installed and authenticated.
 
 {% include_relative includes/CLI-std-options.md %}
 
