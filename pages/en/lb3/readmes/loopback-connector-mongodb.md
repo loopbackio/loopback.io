@@ -133,12 +133,28 @@ authentication enabled.
 
 ## Running tests
 
-The tests in this repository are mainly integration tests, meaning you will need
-to run them using our preconfigured test server.
+### Own instance
+If you have a local or remote MongoDB instance and would like to use that to run the test suite, use the following command:
+- Linux
+```bash
+MONGODB_HOST=<HOST> MONGODB_PORT=<PORT> MONGODB_DATABASE=<DATABASE> CI=true npm test
+```
+- Windows
+```bash
+SET MONGODB_HOST=<HOST> SET MONGODB_PORT=<PORT> SET MONGODB_DATABASE=<DATABASE> SET CI=true npm test
+```
 
-1. Ask a core developer for instructions on how to set up test server
-   credentials on your machine
-2. `npm test`
+### Docker
+If you do not have a local MongoDB instance, you can also run the test suite with very minimal requirements.
+- Assuming you have [Docker](https://docs.docker.com/engine/installation/) installed, run the following script which would spawn a MongoDB instance on your local:
+```bash
+source setup.sh <HOST> <PORT> <DATABASE>
+```
+where `<HOST>`, `<PORT>` and `<DATABASE>` are optional parameters. The default values are `localhost`, `27017` and `testdb` respectively.
+- Run the test:
+```bash
+npm test
+```
 
 ### Leak detection
 

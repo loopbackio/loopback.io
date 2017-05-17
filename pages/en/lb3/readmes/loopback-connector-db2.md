@@ -103,7 +103,52 @@ db.autoupdate('User', function(err) {
   });
 });
 ```
-## Testing
+
+## Testing (using Docker)
+
+The proper (and current) way of installing Docker locally in a developer worstation is:
+
+* Windows 10 Pro: enable Hyper-V and install Docker for Windows
+* Windows (other): download and install Docker Toolbox
+* Mac: install Docker for Mac
+* Linux: install the Docker package from your current distro *or* install it Docker's repository for your distro
+
+### Running DB2 container
+
+A DB2 container can be started and bound to its known TCP port by the command below:
+
+```sh
+docker run --name db2 -d \
+  -p 50000:50000 \
+  -e DB2INST1_PASSWORD=password \
+  -e LICENSE=accept \
+  ibmcom/db2express-c db2start
+```
+
+Optionally you can populate this new DB2 instance with the SAMPLE database with the command below:
+
+```sh
+docker exec -ti db2 su - db2inst1 -c db2sampl
+```
+
+To run the test against the sample database you must set a few variables:
+
+```
+export DB2_USERNAME=db2inst1
+export DB2_PASSWORD=password
+export DB2_PORTNUM=50000
+export DB2_DATABASE=SAMPLE
+export DB2_SCHEMA=DB2INST1
+``` 
+
+Finally, run the test:
+
+```sh
+npm install
+npm test
+```
+
+## Testing (the traditional way)
 
 - Go to [IBM DB2 trials](http://www.ibm.com/analytics/us/en/technology/db2/db2-trials.html) page.
 - Register for an account.
