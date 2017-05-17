@@ -37,7 +37,7 @@ LoopBack maintains a current version, a long-term support (LTS) version, and a m
 {% include note.html content="Check your Node.js version with the command `node -v`.
 " %}
 
-LoopBack 2.x supports Node.js v0.10 and v0.12, but LoopBack 3.0 does not support Node.js v0.10 or v0.12.  For details, see the blog post [LoopBack Drops Support for Node 0.10 and 0.12](https://strongloop.com/strongblog/loopback-drops-support-for-node-0-10-and-0-12/).
+LoopBack 2.x supports Node.js v0.10 and v0.12, but LoopBack 3.0 does not support Node.js v0.10 or v0.12.  
 
 ## Submitting a pull request
 
