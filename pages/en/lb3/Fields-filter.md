@@ -26,16 +26,14 @@ You can also use [stringified JSON format](Querying-data.html#using-stringified-
 {% include content/angular-methods-caveat.html lang=page.lang %}
 
 <pre>
-{ fields: {<i>propertyName</i>: <true|false>, <i>propertyName</i>: <true|false>, ... } }
+{ fields: ['<i>propertyName</i>', '<i>propertyName</i>', ... ] }
 </pre>
 
 Where:
 
-* _propertyName_ is the name of the property (field) to include or exclude.
-* `<true|false>` signifies either `true` or `false` Boolean literal. Use `true` to include the property or `false` to exclude it from results.
+* _propertyName_ is the name of the property (field) to include.
 
-By default, queries return all model properties in results. However, if you specify at least one fields filter with a value of `true`,
-then by default the query will include **only** those you specifically include with filters.
+By default, queries return all model properties in results. However, if you specify a fields filter, then the query will include **only** those fields specified.
 
 ### Examples
 
@@ -43,11 +41,13 @@ Return only `id`, `make`, and `model` properties:
 
 **REST**
 
-`?filter[fields][id]=true&filter[fields][make]=true&filter[fields][model]=true`
+```
+?filter[fields][id]=true&filter[fields][make]=true&filter[fields][model]=true
+```
 
 {% include code-caption.html content="Node API" %}
 ```javascript
-{ fields: {id: true, make: true, model: true} }
+{ fields: ["id", "make", "model"] }
 ```
 
 Returns:
@@ -70,7 +70,9 @@ Exclude the `vin` property:
 
 **REST**
 
-`?filter[fields][vin]=false`
+```
+?filter[fields][vin]=false
+```
 
 {% include code-caption.html content="Node API" %}
 ```javascript
