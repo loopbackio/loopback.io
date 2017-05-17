@@ -88,7 +88,7 @@ The generator will then display messages as it scaffolds the application includi
 
 ## Create models
 
-Now that you've scaffolded the initial project, you're going to create create a _CoffeeShop_ model that will automatically have REST API endpoints.
+Now that you've scaffolded the initial project, you're going to create  a _CoffeeShop_ model that will automatically have REST API endpoints.
 
 Go into your new application directory, then run the LoopBack [model generator](Model-generator):
 

@@ -81,7 +81,7 @@ For example, to define a model called `MyModel` that extends from a custom mod
 create MyModel using [model generator](Model-generator.html) 
 then edit the JSON file `common/models/MyModel.json` as follows:
 
-{% include code-caption.html content="/common/models/model.json" %}
+{% include code-caption.html content="/common/models/MyModel.json" %}
 ```javascript
 {
   "name": "Example",
@@ -91,7 +91,7 @@ then edit the JSON file `common/models/MyModel.json` as follows:
 
 You can add new properties when you extend a model, for example:
 
-{% include code-caption.html content="/common/models/model.json" %}
+{% include code-caption.html content="/common/models/MyModel.json" %}
 ```javascript
 {
    "name": "Customer",

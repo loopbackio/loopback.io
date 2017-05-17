@@ -25,7 +25,7 @@ or \"Client\") that [extends the built-in User model](Extending-built-in-models
 the built-in User model directly. The built-in User model provides a great deal of commonly-used
 functionality that you can use via your custom model.
 
-In addition, LoopBack does not support multiple models based on the User model in a single application. That is, you cannot have more than one model derived from the built-in User model in a single app.
+In addition, a LoopBack app can use only one model based on the User model to manage users (generate tokens, login, logout, and so on.).  For more information, see [Introduction to User model authentication](Introduction-to-User-model-authentication.html).
 " %}
 
 ## Creating and authenticating users
