@@ -366,7 +366,7 @@ User can call this function to check if model exists in database.
 module.export = function migrateData(app) {
   // Suppose you already define a datasource called `cloudantDS` 
   // in server/datasources.json
-  var ds = app.models.cloudantDS;
+  var ds = app.datasources.cloudantDS;
   
   // static model created with model.json file
   var StaticModel = app.models.StaticModel;

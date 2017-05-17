@@ -360,9 +360,25 @@ See [LoopBack types](http://loopback.io/doc/en/lb3/LoopBack-types.html) for det
 
 ## Running tests
 
-The tests in this repository are mainly integration tests, meaning you will need
-to run them using our preconfigured test server.
+### Own instance
+If you have a local or remote MSSQL instance and would like to use that to run the test suite, use the following command:
+- Linux
+```bash
+MSSQL_HOST=<HOST> MSSQL_PORT=<PORT> MSSQL_USER=<USER> MSSQL_PASSWORD=<PASSWORD> MSSQL_DATABASE=<DATABASE> CI=true npm test
+```
+- Windows
+```bash
+SET MSSQL_HOST=<HOST> SET MSSQL_PORT=<PORT> SET MSSQL_USER=<USER> SET MSSQL_PASSWORD=<PASSWORD> SET MSSQL_DATABASE=<DATABASE> SET CI=true npm test
+```
 
-1. Ask a core developer for instructions on how to set up test server
-   credentials on your machine
-2. `npm test`
+### Docker
+If you do not have a local MSSQL instance, you can also run the test suite with very minimal requirements.
+- Assuming you have [Docker](https://docs.docker.com/engine/installation/) installed, run the following script which would spawn a MSSQL instance on your local:
+```bash
+source setup.sh <HOST> <PORT> <USER> <PASSWORD> <DATABASE>
+```
+where `<HOST>`, `<PORT>`, `<USER>`, `<PASSWORD>` and `<DATABASE>` are optional parameters. The default values are `localhost`, `1433`, `sa`, `M55sqlT35t` and `master` respectively.
+- Run the test:
+```bash
+npm test
+```
