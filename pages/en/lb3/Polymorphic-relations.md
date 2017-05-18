@@ -176,7 +176,9 @@ To define a belongsTo polymorphic relation, you need to provide the following pa
       - `discriminator` is generated as `relationName + 'Type'`
 
 *Please note:*
+
 *Do not provide `model` field in relation definition, if you define it, LoopBack throws an error as relation validation.*
+
 *Do not provide `selector` or `as` inside polymorphic object.*
 
 {% include code-caption.html content="common/models/picture.json" %}
