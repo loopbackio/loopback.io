@@ -438,6 +438,17 @@ CLOUDANT_USERNAME=username CLOUDANT_PASSWORD=password CLOUDANT_DATABASE=database
 
 Currently the imported test cases from juggler doesn't fit Cloudant connector, to skip them, set `CI=1` in command when run tests.
 
+### Docker
+- Assuming you have [Docker](https://docs.docker.com/engine/installation/) installed, run the following script which would spawn a Cloudant instance on your local:
+```bash
+source setup.sh <HOST> <USER> <PASSWORD> <PORT> <DATABASE>
+```
+where `<HOST>`, `<PORT>`, `<USER>`, `<PASSWORD>` and `<DATABASE>` are optional parameters. The default values are `localhost`, `8080` `admin`, `pass` and `test-db` respectively.
+- Run the test:
+```bash
+npm test
+```
+
 # More Info
 For more detailed information regarding connector-specific functions and behaviour,
 see the [docs section](https://github.com/strongloop/loopback-connector-cloudant/tree/master/doc).
