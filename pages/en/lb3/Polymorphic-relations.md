@@ -64,7 +64,7 @@ To define a hasMany polymorphic relation, you need to provide the following para
 - `model`: name of modelTo
 - `polymorphic`:
   - typeOf `polymorphic` === `Object`(complete declaration)
-    - `selector` or `as`(`as` will be deprecated in LoopBack4): matching **belongsTo** relation name
+    - `selector`(suggested) or `as`: matching **belongsTo** relation name
       - (required) if both foreignKey and discriminator are **NOT** provided
       - (extraneous) throws error if **BOTH** foreignKey and discriminator are provided
     - `foreignKey`:  A property of modelTo, representing the fk to modelFrom's id. 
@@ -75,6 +75,8 @@ To define a hasMany polymorphic relation, you need to provide the following para
     - matching **belongsTo** relation name
       - `foreignKey` is generated as `polymorphic + 'Id'`,
       - `discriminator` is generated as `polymorphic + 'Type'`
+
+*Please note `as` inside `polymorphic` object will be deprecated in LoopBack 4, we suggest use `selector`.*
 
 In the following example, model 'Author' defines the relation with a shorthand declaration, and model 'Reader' defines it with a complete polymorphic object declaration.
 
@@ -165,15 +167,17 @@ To define a belongsTo polymorphic relation, you need to provide the following pa
 
 - `type`: the relation type, in this case is 'belongsTo'
 - `as`: redefines **this** relation's name (optional)
-- ~~`model`~~: **NOT EXPECTED**: throws an error as relation validation
 - `polymorphic`:
   - typeOf `polymorphic` === `Object`
     - `foreignKey`:  A property of modelTo, representing the fk to modelFrom's id. 
     - `discriminator`: A property of modelTo, representing the actual modelFrom to be looked up and defined dynamically.
-    - ~~`selector` or `as`~~: **NOT EXPECTED**: throws an error at relation validation
   - typeOf `polymorphic` === `Boolean`
       - `foreignKey` is generated as `relationName + 'Id'`,
       - `discriminator` is generated as `relationName + 'Type'`
+
+*Please note:*
+*Do not provide `model` field in relation definition, if you define it, LoopBack throws an error as relation validation.*
+*Do not provide `selector` or `as` inside polymorphic object.*
 
 {% include code-caption.html content="common/models/picture.json" %}
 
