@@ -73,7 +73,7 @@ All data sources support a few standard properties. Beyond that, specific proper
           <li>loopback-connector-soap or just "soap"</li>
           <li>loopback-connector-mssql or just "mssql"</li>
           <li>loopback-connector-rest or just "rest"</li>
-          <li>loopback-storage-service</li>
+          <li>loopback-component-storage</li>
           <li>Another LoopBack data source connector</li>
         </ul>
       </td>
@@ -148,4 +148,4 @@ See documentation for the specific connector for full details.
   </tbody>
 </table>
 
-To connect a model to a data source, [follow these steps](https://loopback.io/doc/en/lb2/datasources.json.html#properties-for-database-connectors) to create a datasource.
+To connect a model to a data source, [follow these steps](#properties-for-database-connectors) to create a datasource.

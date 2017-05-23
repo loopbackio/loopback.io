@@ -67,6 +67,22 @@ For more information, see [Installing the API Connect Developer Toolkit](http://
 {% include important.html content="**If you are an IBM customer, for technical support see the [IBM Support Portal](http://www-01.ibm.com/support/docview.wss?uid=swg21593214).**
 " %}
 
+## Updating your installation
+
+Update your installation with this command:
+
+```
+$ npm install -g strongloop
+```
+
+If you encounter any problems, you may need to perform a clean reinstallation.  Follow these steps:
+
+```
+$ npm uninstall -g strongloop
+$ npm cache clear
+$ npm install -g strongloop
+```
+
 ## Next steps
 
 Follow [Getting started with LoopBack](Getting-started-with-LoopBack.html)
