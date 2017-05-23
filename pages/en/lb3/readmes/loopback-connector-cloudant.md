@@ -19,6 +19,7 @@ The `loopback-connector-cloudant` module is the Cloudant connector for the LoopB
         - [Map Between Model And Document](#map-between-model-and-document)
         - [Model-specific Configuration](#model-specific-configuration)
         - [_rev Property](#_rev-property)
+          - [Example CRUD operations with _rev](#example-crud-operations-with-_rev)
 - [Setup Cloudant Instance](#setup-cloudant-instance)
 - [Installation](#installation)
 - [Configuration](#configuration)
@@ -93,8 +94,6 @@ And by properly controlling the conflict, developer can still do a safe modify. 
 
 The basic idea is when modifying a document, user needs to control conflict by handling the revision of a document, currently the connector controls this process, after retriving the latest revision, connector uses it to update/delete doc, and returns 409 conflict error if doc changes during that time slot. In the middle, user could not interfere and provide their own conflict solution.
 
-More examples to be updated after we complete the `_rev` property refactor.
-
 ## Model 
 
 ### Map Between Model And Document
@@ -164,9 +163,117 @@ modelSelector | JSON | Use the Cloudant Query selector syntax to associate model
 
 ### _rev Property
 
-In a document, property `_rev` is the latest doc revision and must be provided when modifying the doc. Currently when updating/deleting a doc, the connector first retrieves that doc, then gets its `_rev`, then calls a modify api with `_rev` included. It makes three calls to the database and this would easily result in race condition.
-  
-Considering the nature of Cloudant, we plan to give user the flexibility to define `_rev` property in model and provide `_rev` by themselves instead of the connector. In such way user can get the revision and control conflict before using that revision to modify the document.
+In a document, property `_rev` is the latest doc revision and must be provided when modifying the doc.
+
+Our connector allows the user to retrieve back the `_rev` property upon all CRUD operations, however does not add it to the model definition.
+
+If you would like to have a `_rev` property on your model, as an end user, the onus is on you to add the property in the model definition.
+
+**Note:** All CRUD operations require `_rev` (except create) and __it is up to the user to specify them__. The connector does not handle such cases due to possibilities of race condition when two users try to update the same document.
+
+#### Example CRUD operations with `_rev`
+
+`model.json`
+``` json
+{
+  ... 
+  "properties": {
+    "_rev": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    }
+  },
+  ...
+}
+```
+
+- Create
+
+```javascript
+  Model.create([{
+    name: 'Foo',
+  }, {
+    name: 'Bar',
+  }], function(err, result) {
+    if (err) throw err;
+    console.log('Created instance: ' + JSON.stringify(result));
+  });
+```
+
+**Note:** Cloudant does not allow customized `_rev` value, hence creating an instance with a `_rev` value will give an error. The onus is on the user if they fail to comply to this rule.
+
+Let's say we have an instance in the database:
+```json
+{
+   "id":"2",
+   "_rev":"2-abcedf",
+   "name":"Bar"
+}
+```
+
+- Find
+
+  - find
+
+  ```javascript
+    Model.findById('2', function(err, result) {
+      if (err) throw err;
+      console.log('Found instance with id: ' + JSON.stringify(result));
+    });
+  ```
+
+  - findById
+
+  ```javascript
+    Model.find(function(err, result) {
+      if (err) throw err;
+      console.log('Found all instances: ' + JSON.stringify(result));
+    });
+  ```
+
+- Replace
+
+  - replaceOrCreate
+
+  ```javascript
+    Model.replaceOrCreate({
+      id:'2',
+      _rev:'2-abcedf',
+      name:'Bar2'
+    }, function(err, result) {
+      if (err) throw err;
+      console.log('Replace an existing instance: ' + JSON.stringify(result));
+    });
+  ```
+
+  - replaceById
+
+  ```javascript
+    Model.replaceById('2', {
+      _rev:'2-abcedf',
+      name:'Bar3'
+    }, function(err, result) {
+      if (err) throw err;
+      console.log('Replace an existing instance with id: ' + JSON.stringify(result));
+    });
+  ```
+
+- Update
+
+  - updateOrCreate
+
+  ```javascript
+    Model.updateOrCreate({
+      id:'2',
+      _rev:'2-abcedf',
+      name:'Bar4'
+    }, function(err, result) {
+      if (err) throw err;
+      console.log('Update an existing instance: ' + JSON.stringify(result));
+    });
+  ```
 
 # Setup Cloudant Instance
 
@@ -334,8 +441,6 @@ db.once('connected', function() {
 
 User can find most CRUD operation apis documented in https://loopback.io/doc/en/lb3/Built-in-models-REST-API.html
 
-Please note that after the `_rev` property refactor done, cloudant model api will assume user include the `_rev` when modifying data, so please make sure you handle document's revision properly before you call a POST/PATCH/DELETE api. For details, refer to https://github.com/strongloop/loopback-connector-cloudant#_rev-property
-
 We are still in progress of refactoring some methods, more details to be updated.
 
 ## Update
@@ -455,7 +560,6 @@ see the [docs section](https://github.com/strongloop/loopback-connector-cloudant
 
 # Feature backlog
 
-* [Support model property `_rev`](https://github.com/strongloop/loopback-connector-cloudant/issues/55)
 * [Partial update](https://github.com/strongloop/loopback-connector-cloudant/issues/35)
 * [Discovery](https://github.com/strongloop/loopback-connector-cloudant/issues/118)
 * Index-only model properties marked with index=true

@@ -469,9 +469,30 @@ Destroying models may result in errors due to foreign key integrity. First delet
 
 ## Running tests
 
-The tests in this repository are mainly integration tests, meaning you will need
-to run them using our preconfigured test server.
+### Own instance
+If you have a local or remote Oracle instance and would like to use that to run the test suite, use the following command:
+- Linux
+```bash
+ORACLE_HOST=<HOST> ORACLE_PORT=<PORT> ORACLE_USER=<USER> ORACLE_PASSWORD=<PASSWORD> ORACLE_DATABASE=<DATABASE> npm test
+```
+- Windows
+```bash
+SET ORACLE_HOST=<HOST>
+SET ORACLE_PORT=<PORT>
+SET ORACLE_USER=<USER>
+SET ORACLE_PASSWORD=<PASSWORD>
+SET ORACLE_DATABASE=<DATABASE>
+npm test
+```
 
-1. Ask a core developer for instructions on how to set up test server
-   credentials on your machine
-2. `npm test`
+### Docker
+If you do not have a local Oracle instance, you can also run the test suite with very minimal requirements.
+- Assuming you have [Docker](https://docs.docker.com/engine/installation/) installed, run the following script which would spawn an Oracle instance on your local machine:
+```bash
+source setup.sh <HOST> <PORT>
+```
+where `<HOST>`, `<PORT>`, `<USER>`, and `PASSWORD` are optional parameters. The default values are `localhost`, `1521`, `admin`, and `0raclep4ss` respectively. The `DATABASE` setting is always `XE`.
+- Run the test:
+```bash
+npm test
+```

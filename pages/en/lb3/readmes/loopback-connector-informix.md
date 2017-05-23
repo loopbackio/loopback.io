@@ -100,3 +100,37 @@ db.autoupdate('User', function(err) {
   });
 });
 ```
+
+## Running tests
+
+### Own instance
+If you have a local or remote Informix instance and would like to use that to run the test suite, use the following command:
+- Linux
+```bash
+INFORMIX_HOSTNAME=<HOST> INFORMIX_PORTNUM=<PORT> INFORMIX_USERNAME=<USER> INFORMIX_PASSWORD=<PASSWORD> INFORMIX_DATABASE=<DATABASE> INFORMIX_PROTOCOL=<PROTOCOL> INFORMIX_SERVER=<SERVER> INFORMIX_DRIVER=<DRIVER> INFORMIX_AUTH=<AUTH> CI=true npm test
+```
+- Windows
+```bash
+SET INFORMIX_HOSTNAME=<HOST>
+SET INFORMIX_PORTNUM=<PORT>
+SET INFORMIX_USERNAME=<USER>
+SET INFORMIX_PASSWORD=<PASSWORD>
+SET INFORMIX_DATABASE=<DATABASE>
+SET INFORMIX_PROTOCOL=<PROTOCOL>
+SET INFORMIX_SERVER=<SERVER>
+SET INFORMIX_DRIVER=<DRIVER>
+SET INFORMIX_AUTH=<AUTH>
+SET CI=true
+npm test
+```
+
+### Docker
+If you do not have a local Informix instance, you can also run the test suite with very minimal requirements.
+- Assuming you have [Docker](https://docs.docker.com/engine/installation/) installed, run the following script which would spawn an Informix instance on your local:
+```bash
+source setup.sh
+```
+- Run the test:
+```bash
+npm test
+```

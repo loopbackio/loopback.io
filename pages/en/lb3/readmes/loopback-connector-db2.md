@@ -104,58 +104,35 @@ db.autoupdate('User', function(err) {
 });
 ```
 
-## Testing (using Docker)
+## Running tests
 
-The proper (and current) way of installing Docker locally in a developer worstation is:
+### Own instance
 
-* Windows 10 Pro: enable Hyper-V and install Docker for Windows
-* Windows (other): download and install Docker Toolbox
-* Mac: install Docker for Mac
-* Linux: install the Docker package from your current distro *or* install it Docker's repository for your distro
-
-### Running DB2 container
-
-A DB2 container can be started and bound to its known TCP port by the command below:
-
-```sh
-docker run --name db2 -d \
-  -p 50000:50000 \
-  -e DB2INST1_PASSWORD=password \
-  -e LICENSE=accept \
-  ibmcom/db2express-c db2start
+If you have a local or remote DB2 instance and would like to use that to run the test suite, use the following command:
+- Linux
+```bash
+DB2_HOSTNAME=<HOST> DB2_PORTNUM=<PORT> DB2_USERNAME=<USER> DB2_PASSWORD=<PASSWORD> DB2_DATABASE=<DATABASE> DB2_SCHEMA=<SCHEMA> CI=true npm test
 ```
-
-Optionally you can populate this new DB2 instance with the SAMPLE database with the command below:
-
-```sh
-docker exec -ti db2 su - db2inst1 -c db2sampl
-```
-
-To run the test against the sample database you must set a few variables:
-
-```
-export DB2_USERNAME=db2inst1
-export DB2_PASSWORD=password
-export DB2_PORTNUM=50000
-export DB2_DATABASE=SAMPLE
-export DB2_SCHEMA=DB2INST1
-``` 
-
-Finally, run the test:
-
-```sh
-npm install
+- Windows
+```bash
+SET DB2_HOSTNAME=<HOST>
+SET DB2_PORTNUM=<PORT>
+SET DB2_USERNAME=<USER>
+SET DB2_PASSWORD=<PASSWORD>
+SET DB2_DATABASE=<DATABASE>
+SET DB2_SCHEMA=<SCHEMA>
+SET CI=true
 npm test
 ```
 
-## Testing (the traditional way)
+#### How to get a local DB2 instance:
 
 - Go to [IBM DB2 trials](http://www.ibm.com/analytics/us/en/technology/db2/db2-trials.html) page.
 - Register for an account.
 - Download either IBM DB2 or IBM DB2 Express-C.
 - For documentation or more information about the installation or setup, see http://www.ibm.com/support/knowledgecenter/SSEPGG_11.1.0/com.ibm.db2.luw.kc.doc/welcome.html
 
-### IBM DB2 Express-C scenario on Windows.
+#### IBM DB2 Express-C scenario on Windows:
 - Run the setup file.
 - Set user information for the DB2 Administration server.
 - Write down the user information and the password that you create. User name is `db2admin` by default but it could be modified.
@@ -173,5 +150,15 @@ npm test
 
 >db2 set schema to STRONGLOOP
 ```
-- Go to `loopback-connector-db2\test\init.js`, and insert the proper credentials.
-- Run `npm test`.
+
+### Docker
+If you do not have a local DB2 instance, you can also run the test suite with very minimal requirements.
+- Assuming you have [Docker](https://docs.docker.com/engine/installation/) installed, run the following script which would spawn a DB2 instance on your local:
+```bash
+source setup.sh <HOST> <PORT> <PASSWORD> <DATABASE>
+```
+where `<HOST>`, `<PORT>`, `<PASSWORD>` and `<DATABASE>` are optional parameters. By default, the user is `db2inst1`.
+- Run the test:
+```bash
+npm test
+```
