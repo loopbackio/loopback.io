@@ -1,5 +1,5 @@
 ---
-title: "Using MongoLab"
+title: "Using mLab*"
 lang: en
 layout: page
 keywords: LoopBack
