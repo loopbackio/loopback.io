@@ -334,12 +334,31 @@ when ordering matters such as `where limit` or `findOne`.  Ad hoc sorting with `
 
 Pagination is not supported in V1.
 
-
 ## Running tests
 
-The tests in this repository are mainly integration tests, meaning you will need to run them using our pre-configured test server.
+### Own instance
+If you have a local or remote Cassandra instance and would like to use that to run the test suite, use the following command:
+- Linux
+```bash
+CASSANDRA_HOST=<HOST> CASSANDRA_PORT=<PORT> CASSANDRA_KEYSPACE=<KEYSPACE> CI=true npm test
+```
+- Windows
+```bash
+SET CASSANDRA_HOST=<HOST>
+SET CASSANDRA_PORT=<PORT>
+SET CASSANDRA_KEYSPACE=<KEYSPACE>
+SET CI=true
+npm test
+```
 
-1. Ask a core developer for instructions on how to set up test server credentials on your machine
-2. `npm test`
-
-The Cassandra connector package has its custom test cases under **test** directory.  They are good examples of Cassandra specific table definition and operations in action.
+### Docker
+If you do not have a local Cassandra instance, you can also run the test suite with very minimal requirements.
+- Assuming you have [Docker](https://docs.docker.com/engine/installation/) installed, run the following script which would spawn a Cassandra instance on your local:
+```bash
+source setup.sh <HOST> <PORT> <KEYSPACE>
+```
+where `<HOST>`, `<PORT>` and `<KEYSPACE>` are optional parameters. The default values are `localhost`, `9042` and `test` respectively.
+- Run the test:
+```bash
+npm test
+```
