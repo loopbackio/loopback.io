@@ -551,7 +551,7 @@ source setup.sh <HOST> <USER> <PASSWORD> <PORT> <DATABASE>
 where `<HOST>`, `<PORT>`, `<USER>`, `<PASSWORD>` and `<DATABASE>` are optional parameters. The default values are `localhost`, `8080` `admin`, `pass` and `test-db` respectively.
 - Run the test:
 ```bash
-npm test
+npm run mocha
 ```
 
 # More Info
@@ -573,4 +573,3 @@ Not implemented yet, track it in https://github.com/strongloop/loopback-connecto
 ## Index
 
 To be updated
-
