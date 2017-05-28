@@ -17,7 +17,6 @@ For example, the entry in `datasources.json` might look like this: 
 {% include code-caption.html content="/server/datasources.json" %}
 ```javascript
 "mongodb": {
-  "defaultForType": "mongodb",
   "connector": "loopback-connector-mongodb",
   "url": "mongodb://localhost:27017/mydb"
 }
