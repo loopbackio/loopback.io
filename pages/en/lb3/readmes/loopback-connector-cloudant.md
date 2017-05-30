@@ -19,13 +19,15 @@ The `loopback-connector-cloudant` module is the Cloudant connector for the LoopB
         - [Map Between Model And Document](#map-between-model-and-document)
         - [Model-specific Configuration](#model-specific-configuration)
         - [_rev Property](#_rev-property)
-          - [Example CRUD operations with _rev](#example-crud-operations-with-_rev)
+            - [Example CRUD operations with `_rev`](#example-crud-operations-with-_rev)
 - [Setup Cloudant Instance](#setup-cloudant-instance)
 - [Installation](#installation)
 - [Configuration](#configuration)
     - [Generate Datasource](#generate-datasource)
-    - [Datasource Config(`url` vs `username` & `password`)](#datasource-configurl-vs-username--password)
-    - [Requests Plugin](#requests-plugin)
+    - [Datasource Config](#datasource-config)
+        - [`url` vs `username` & `password`](#url-vs-username--password)
+        - [Advanced configuration](#advanced-configuration)
+        - [Requests Plugin](#requests-plugin)
     - [Example Usage](#example-usage)
 - [CRUD](#crud)
     - [Update](#update)
@@ -36,6 +38,7 @@ The `loopback-connector-cloudant` module is the Cloudant connector for the LoopB
 - [Discovery](#discovery)
 - [Query](#query)
 - [Testing](#testing)
+        - [Docker](#docker)
 - [More Info](#more-info)
 - [Feature backlog](#feature-backlog)
     - [View](#view)
@@ -80,7 +83,7 @@ ds.updateOrCreate('User', {
 
 *Please note how property `prop2` was completely dropped upon update.*
 
-We have some discussion on update methods, the issue link can be found in [Feature Backlog](https://github.com/strongloop/loopback-connector-cloudant##feature-backlog) section
+We have some discussion on update methods, the issue link can be found in [Feature Backlog](https://github.com/strongloop/loopback-connector-cloudant#feature-backlog) section
 
 ### Frequent Modification
 
@@ -126,7 +129,7 @@ index: {
 },
 ```
 
-By default, `modelIndex` is 'loopback__model__name', and `modelSelector` is {[modelIndex]: modelName}. User can customize `modelSelector` and `modelIndex` in datasource's json file, for details please check [model-specific configuration](https://github.com/strongloop/loopback-connector-cloudant##model-specific-configuration)
+By default, `modelIndex` is 'loopback__model__name', and `modelSelector` is {[modelIndex]: modelName}. User can customize `modelSelector` and `modelIndex` in datasource's json file, for details please check [model-specific configuration](https://github.com/strongloop/loopback-connector-cloudant#model-specific-configuration)
 
 To create a model instance, the connector creates a non-design document with value of property 'loopback__model__name' equals to `modelName`. 
 
@@ -350,8 +353,9 @@ or
 }
 ```
 
-## Datasource Config(`url` vs `username` & `password`)
+## Datasource Config
 
+### `url` vs `username` & `password`
 - *NOTE: The `url` property will override `username` and `password`.*
 
 - It means only when missing `url`, cloudant will use `username` and `password` to create connection. 
@@ -373,7 +377,22 @@ password  | String | Cloudant password
 url       | String | Cloudant URL containing both username and password
 modelIndex | String | Specify the model name to document mapping, defaults to `loopback__model__name`
 
-## Requests Plugin
+### Advanced configuration
+Besides the basic configuration properties, user can provide advanced configuration information, for example proxy, in `requestDefaults`:
+
+```
+"mydb": {
+  "name": "mydb",
+  "connector": "cloudant",
+  "url": "https://<username>:<password>@<host>"
+  "database": "test",
+  "requestDefaults": {"proxy": "http://localhost:8080"}
+}
+```
+
+For details, refer to the [driver(nodejs-cloudant) document](https://github.com/cloudant/nodejs-cloudant#advanced-configuration)
+
+### Requests Plugin
 
 User can provide plugin name and parameters in datasource object. For example, connect to a Cloudant server with plugin called `retry`, with parameters `retryAttempts` and `retryTimeout`:
 
@@ -548,10 +567,10 @@ Currently the imported test cases from juggler doesn't fit Cloudant connector, t
 ```bash
 source setup.sh <HOST> <USER> <PASSWORD> <PORT> <DATABASE>
 ```
-where `<HOST>`, `<PORT>`, `<USER>`, `<PASSWORD>` and `<DATABASE>` are optional parameters. The default values are `localhost`, `8080` `admin`, `pass` and `test-db` respectively.
+where `<HOST>`, `<PORT>`, `<USER>`, `<PASSWORD>` and `<DATABASE>` are optional parameters. The default values are `localhost`, `8080` `admin`, `pass` and `testdb` respectively.
 - Run the test:
 ```bash
-npm test
+npm run mocha
 ```
 
 # More Info
@@ -573,4 +592,3 @@ Not implemented yet, track it in https://github.com/strongloop/loopback-connecto
 ## Index
 
 To be updated
-

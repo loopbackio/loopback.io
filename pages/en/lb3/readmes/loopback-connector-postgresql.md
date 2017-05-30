@@ -45,6 +45,30 @@ The entry in the application's `/server/datasources.json` will look like this:
 
 Edit `datasources.json` to add other properties that enable you to connect the data source to a PostgreSQL database.
 
+### Connection Pool Settings
+
+You can also specify connection pool settings in `datasources.json`. For instance you can specify the minimum and the maximum pool size, and the maximum pool client's idle time before closing the client.
+
+Example of `datasource.json`:
+```
+{
+  "mypostgresdb": {
+    "host": "mydbhost",
+    "port": 5432,
+    "url": "postgres://admin:admin@myhost/db",
+    "database": "db1",
+    "password": "password1",
+    "name": "mypostgresdb",
+    "user": "admin",
+    "connector": "postgresql",
+    "min": 5,
+    "max": 200,
+    "idleTimeoutMillis": 60000
+  }
+}
+```
+Check out [node-pg-pool](https://github.com/brianc/node-pg-pool) and [node postgres pooling example](https://github.com/brianc/node-postgres#pooling-example) for more information.
+
 ### Properties
 
 <table>
@@ -99,6 +123,21 @@ Edit `datasources.json` to add other properties that enable you to connect the
       <td>username</td>
       <td>String</td>
       <td>Username to connect to database</td>
+    </tr>
+    <tr>
+      <td>min</td>
+      <td>Integer</td>
+      <td>Minimum number of clients in the connection pool</td>
+    </tr>
+    <tr>
+      <td>max</td>
+      <td>Integer</td>
+      <td>Maximum number of clients in the connection pool</td>
+    </tr>
+    <tr>
+      <td>idleTimeoutMillis</td>
+      <td>Integer</td>
+      <td>Maximum time a client in the pool has to stay idle before closing it<td>
     </tr>
   </tbody>
 </table>
