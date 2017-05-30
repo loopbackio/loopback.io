@@ -123,7 +123,7 @@ for example `datasources.production.json` for production environment when NODE_E
 ### Using multiple data source configurations
 
 LoopBack merges environment-specific configurations (for example in `datasources.production.json`) with the baseline configuration in `datasources.json`.
-Environment-specific configurations can override the top-level values with string and number values only. You cannot use objects or array values.
+Environment-specific configurations can override the top-level values with string,  number, object, and array values.
 
 It can be difficult to clear extra datasource settings inherited from the top-level `datasources.json` file in environment-specific files.  To avoid issues, use a single `datasources.json` file that includes both individual settings such as `host`, `port`, and `database` for local environment and a `url` connection string setting that  overrides the other settings for staging and production. For example:
 

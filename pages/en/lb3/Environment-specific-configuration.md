@@ -163,9 +163,6 @@ You can override values set in `datasources.json` in the following files:
 * <code>datasources.<i>env</i>.js</code> or <code>datasources.<i>env</i>.json</code>, where _`env`_ is the value of `NODE_ENV` environment variable (typically `development` or `production`).
   For example, `datasources.production.json`.
 
-{% include important.html content="The additional files can override the top-level data-source options with string and number values only. You cannot use objects or array values.
-" %}
-
 Example data sources:
 
 {% include code-caption.html content="datasources.json" %}
