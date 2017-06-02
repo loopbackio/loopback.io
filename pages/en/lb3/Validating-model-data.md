@@ -90,6 +90,12 @@ Every model attached to a persistent data source has validations methods mixed i
         </ul>
       </td>
     </tr>
+    <tr>
+      <td><a href="https://apidocs.strongloop.com/loopback-datasource-juggler/#validatable-validatesDateOf" class="external-link" rel="nofollow">validatesDateOf</a></td>
+      <td>
+        <p>Validate if a value for a property is a Date. Requires a model value for property to be of type Date.</p>
+      </td>
+    </tr>
   </tbody>
 </table>
 
