@@ -37,11 +37,11 @@ The `loopback-connector-cloudant` module is the Cloudant connector for the LoopB
     - [Example Code](#example-code)
 - [Discovery](#discovery)
 - [Query](#query)
+- [View](#view)
 - [Testing](#testing)
         - [Docker](#docker)
 - [More Info](#more-info)
 - [Feature backlog](#feature-backlog)
-    - [View](#view)
     - [Index](#index)
 
 <!-- /TOC -->
@@ -531,6 +531,36 @@ Not implemented yet, track it in story https://github.com/strongloop/loopback-co
 -  [LoopBack query](http://loopback.io/doc/en/lb3/Querying-data.html) support for: fields, limit, order, skip and where filters.
 - Please check [Advanced Queries](https://github.com/strongloop/loopback-connector-cloudant/blob/master/doc/advanced-queries.md) for details about regex filter, nested filter and order.
 
+# View
+
+Given a design doc name and the view name in it, user can use a connector level function `viewDocs` to query the view.
+
+Since `viewDocs` is a specific api for Cloudant connector only, it is not attached to the dataSource Object defined in loopback-datasource-juggler, which means the correct way to call it is `ds.connector.viewDocs`:
+
+*/server/script.js*
+```javascript
+module.exports = function(server) {
+  // Get Cloudant dataSource as `ds`
+  // 'cloudantDB' is the name of Cloudant datasource created in 
+  // 'server/datasources.json' file
+  var ds = server.datasources.cloudantDB;
+
+  ds.once('connected', function() {
+    // 1. Please note `ds.connector.viewDocs()` is the correct way to call it,
+    // NOT `ds.viewDocs()`
+    // 2. This api matches the Cloudant endpoint:
+    // GET /db/_design/<design-doc>/_view/<view-name>
+    ds.connector.viewDocs('design_doc', 'view_name', function(err, results) {
+      // `results` would be the data returned by quering that view
+    });
+
+    // Alternatively user can also specify the filter for view query
+    ds.connector.viewDocs('design_doc', 'view_name', {key: 'filter'}, 
+      function(err, results) {});
+  });
+};
+```
+
 # Testing
 
 - Cloudant local(docker image)
@@ -584,10 +614,6 @@ see the [docs section](https://github.com/strongloop/loopback-connector-cloudant
 * Index-only model properties marked with index=true
 * Configurable "view based" or JSON indexes. [More Info>>](https://cloudant.com/blog/mango-json-vs-text-indexes)
 * [Support uuid](https://github.com/strongloop/loopback-connector-cloudant/issues/104)
-
-## View
-
-Not implemented yet, track it in https://github.com/strongloop/loopback-connector-cloudant/issues/67
 
 ## Index
 

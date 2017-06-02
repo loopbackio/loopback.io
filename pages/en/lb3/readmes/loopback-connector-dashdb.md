@@ -104,3 +104,28 @@ db.autoupdate('User', function(err) {
   });
 });
 ```
+
+## Running tests
+
+### Own instance
+
+If you have a local or remote DashDB instance and would like to use that to run the test suite, use the following command:
+- Linux
+```bash
+DASHDB_HOSTNAME=<HOST> DASHDB_PORTNUM=<PORT> DASHDB_USERNAME=<USER> DASHDB_PASSWORD=<PASSWORD> DASHDB_DATABASE=<DATABASE> DASHDB_SCHEMA=<SCHEMA> CI=true npm test
+```
+- Windows
+```bash
+SET DASHDB_HOSTNAME=<HOST>
+SET DASHDB_PORTNUM=<PORT>
+SET DASHDB_USERNAME=<USER>
+SET DASHDB_PASSWORD=<PASSWORD>
+SET DASHDB_DATABASE=<DATABASE>
+SET DASHDB_SCHEMA=<SCHEMA>
+SET CI=true
+npm test
+```
+
+### Docker
+- DashDB has a docker image which could be signed up for a trial version and be used for testing. For more information, please visit: [DashDB Docker](https://hub.docker.com/r/dashdb/local/)
+- Once the instance is ready, please follow the above information on how to run tests using your [own instance](https://github.com/strongloop/loopback-connector-dashdb/tree/master#own-instance)

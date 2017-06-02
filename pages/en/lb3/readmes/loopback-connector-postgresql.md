@@ -137,7 +137,7 @@ Check out [node-pg-pool](https://github.com/brianc/node-pg-pool) and [node postg
     <tr>
       <td>idleTimeoutMillis</td>
       <td>Integer</td>
-      <td>Maximum time a client in the pool has to stay idle before closing it<td>
+      <td>Maximum time a client in the pool has to stay idle before closing it</td>
     </tr>
   </tbody>
 </table>
