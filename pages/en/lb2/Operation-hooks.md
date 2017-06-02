@@ -20,7 +20,7 @@ Using operation hooks enables you to intercept actions that modify data independ
 In general, use operation hooks instead of deprecated [model hooks](Model-hooks.html) to do something when a model performs a specific operation.
 " %}
 
-The API is simple: the method `Model.observe(_name_, _observer_)`, where _`name`_ is the string name of the operation hook, for example "before save",
+The API is simple: the method <code>Model.observe(<i>name</i>, <i>observer</i>)</code>, where _`name`_ is the string name of the operation hook, for example "before save",
 and _`observer`_ is `function observer(context, callback)`. Child models inherit observers, and you can register multiple observers for a hook.
 
  The following table summarizes the operation hooks invoked by PersistedModel create, retrieve, update, and delete methods.
@@ -262,12 +262,12 @@ However, depending on the operation, this instance is provided either as modifia
 <table>
   <tbody>
     <tr>
-      <th>&nbsp;</th>
-      <th>before save</th>
-      <th>persist</th>
-      <th>after save</th>
-      <th>before delete</th>
-      <th>after delete</th>
+      <th width="120">Operation</th>
+      <th width="120">before save</th>
+      <th width="140">persist</th>
+      <th width="140">after save</th>
+      <th width="60">before delete</th>
+      <th width="60">after delete</th>
     </tr>
     <tr>
       <td><code>create</code></td>
