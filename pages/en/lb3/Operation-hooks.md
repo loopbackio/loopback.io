@@ -674,7 +674,7 @@ The `after save` hook provides the `ctx.isNewInstance` property whenever `c
   When the connector does not support this feature yet (see below), the value is undefined.
 
 {% include important.html content="
-Only certain connectors support `ctx.isNewInstace`. With other connectors it is undefined.
+Only certain connectors support `ctx.isNewInstance`. With other connectors it is undefined.
 See [Checking for support of ctx.isNewInstance](#checking-for-support-of-ctx.isnewinstance).
 " %}
 
