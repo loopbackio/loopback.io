@@ -15,7 +15,7 @@ See [Discovering models from relational databases](Discovering-models-from-relat
 
 ## Overview
 
-The easiest way to create a new model is with the [model generator](Model-generator.html);
+The easiest way to create a new model is with the [model generator](Model-generator.html).
 
 With LoopBack tools:
 

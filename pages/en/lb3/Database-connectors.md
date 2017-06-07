@@ -14,8 +14,7 @@ When you attach a model to a data source backed by one of the database connector
 The data access methods on a persisted model are exposed to REST by default; see 
 [PersistedModel REST API](PersistedModel-REST-API.html) for the endpoints.
 
-You can connect models using relations to reflect relationships among data. For more information about relations, see 
-[Creating model relations](Creating-model-relations.html).
+You can connect models using relations to reflect relationships among data. For more information about relations, see [Creating model relations](Creating-model-relations.html).
 
 The officially-supported database connectors are:
 
