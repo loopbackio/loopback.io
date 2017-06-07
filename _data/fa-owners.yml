@@ -67,7 +67,7 @@
   - area: 'HTTP'
     label: connector-http
     owner:
-    - sq-lb-epitome
+    - sq-lb-apex
     repos:
     - loopback-connector-jsonrpc
     - loopback-connector-remote
@@ -96,7 +96,7 @@
   - area: 'Messaging'
     label: connector-messaging
     owner:
-    - sq-lb-epitome
+    - sq-lb-apex
     repos:
     - loopback-connector-mqlight
     smes:
