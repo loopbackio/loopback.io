@@ -29,7 +29,7 @@ summary:
 
 {% include warning.html content="
 
-This documentation is still a work in progress.
+This documentation for embeds polymorphic relations is still a work in progress.
 
 " %}
 
