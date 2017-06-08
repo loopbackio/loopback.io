@@ -38,6 +38,7 @@ The `loopback-connector-cloudant` module is the Cloudant connector for the LoopB
 - [Discovery](#discovery)
 - [Query](#query)
 - [View](#view)
+- [Bulk replace](#bulk-replace)
 - [Testing](#testing)
         - [Docker](#docker)
 - [More Info](#more-info)
@@ -277,6 +278,29 @@ Let's say we have an instance in the database:
       console.log('Update an existing instance: ' + JSON.stringify(result));
     });
   ```
+
+  - update/updateAll
+
+    - with `_rev` property
+      ```javascript
+        Model.updateAll({
+          _rev:'2-abcedf',
+          name:'Bar4'
+        }, {name: 'Bar4-updated', _rev: '2-abcedf'}, function(err, result) {
+          if (err) throw err;
+          console.log('Update an existing instance: ' + JSON.stringify(result));
+        });
+      ```
+
+    - without `_rev` property
+      ```javascript
+        Model.updateAll({
+          name:'Bar4'
+        }, {name: 'Bar4-updated'}, function(err, result) {
+          if (err) throw err;
+          console.log('Update an existing instance: ' + JSON.stringify(result));
+        });
+      ```
 
 # Setup Cloudant Instance
 
@@ -557,6 +581,71 @@ module.exports = function(server) {
     // Alternatively user can also specify the filter for view query
     ds.connector.viewDocs('design_doc', 'view_name', {key: 'filter'}, 
       function(err, results) {});
+  });
+};
+```
+
+# Bulk replace
+
+Given an array of data to be updated, Cloudant supports the idea of performing bulk replace on a model instance. Please note, unlike other CRUD operations, bulk replace does not invoke any operation hooks.
+
+**Note:** To perform bulk replace, each data in the array data set needs to have the `id` and `_rev` property corresponding to the documents `id` and `_rev` property in the database.
+
+Example:
+
+```server/boot/script.js```
+
+```javascript
+var dataToCreate = [
+  {id: 1, name: 'Foo', age: 1},
+  {id: 2, name: 'Bar', age: 1},
+  {id: 3, name: 'Baz', age: 2},
+  {id: 4, name: 'A', age: 4},
+  {id: 5, name: 'B', age: 5},
+  {id: 6, name: 'C', age: 6},
+  {id: 7, name: 'D', age: 7},
+  {id: 8, name: 'E', age: 8},
+ ];
+var dataToUpdate = [
+ {id: 1, name: 'Foo-change', age: 11},
+ {id: 5, name: 'B-change', age: 51},
+ {id: 8, name: 'E-change', age: 91}
+];
+
+module.exports = function(app) {
+  var db = app.dataSources.cloudantDS;
+  var Employee = app.models.Employee;
+
+  db.once('connected', function() {
+    db.automigrate(function(err) {
+      if (err) throw err;
+
+      Employee.create(dataToCreate, function(err, result) {
+        if (err) throw err;
+        console.log('\nCreated instance: ' + JSON.stringify(result));
+
+        dataToUpdate[0].id = result[0].id;
+        dataToUpdate[0]._rev = result[0]._rev;
+        dataToUpdate[1].id = result[4].id;
+        dataToUpdate[1]._rev = result[4]._rev;
+        dataToUpdate[2].id = result[7].id;
+        dataToUpdate[2]._rev = result[7]._rev;
+
+        // note: it is called `db.connector.bulkReplace`
+        // rather than `Employee.bulkReplace`
+        db.connector.bulkReplace('Employee', dataToUpdate, function(err, result) {
+          if (err) throw err;
+
+          console.log('\nBulk replace performed: ' + JSON.stringify(result));
+
+          Employee.find(function(err, result) {
+            if (err) throw err;
+
+            console.log('\nFound all instances: ' + JSON.stringify(result));
+          });
+        });
+      });
+    });
   });
 };
 ```
