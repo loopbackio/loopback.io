@@ -14,15 +14,15 @@ summary:
   <ul>
     <li>Some example files lack context.</li>
     <li>There are references to objects in the example files, without any explanation of where they came from or how they may be initialized.</li>
-    <li>There are certain properties in the objects in examples files, they need to be explained, and the reader informed of other possible properties. For example, here are my observations on Polymorphic relations</li>
+    <li>There are certain properties in the objects in examples files, they need to be explained, and the product informed of other possible properties. For example, here are my observations on Polymorphic relations</li>
   </ul>
-  <p><code>common/models/author.json</code>: Should explain what "imageable" in <code>{ "polymorphic": "imageable" }</code> means. And, list other possible properties.</p>
+  <p><code>common/models/employee.json</code>: Should explain what "imageable" in <code>{ "polymorphic": "imageable" }</code> means. And, list other possible properties.</p>
   <div>
-    <p><code>common/models/reader.json</code>:</p><pre>   "polymorphic": {</pre><pre>    "as": "imageable",</pre><pre>    "foreignKey": "imageableId",</pre><pre>    "discriminator": "imageableType"</pre><pre>   }</pre>
-    <div>- The structure has changed from "common/models/author.json". Should explain "as", "foreignKey", and "discriminator". And, list other possible properties.</div>
-    <div><code>common/models/author.js</code> - Where does the Picture object come from?</div>
+    <p><code>common/models/product.json</code>:</p><pre>   "polymorphic": {</pre><pre>    "as": "imageable",</pre><pre>    "foreignKey": "imageableId",</pre><pre>    "discriminator": "imageableType"</pre><pre>   }</pre>
+    <div>- The structure has changed from "common/models/employee.json". Should explain "as", "foreignKey", and "discriminator". And, list other possible properties.</div>
+    <div><code>common/models/employee.js</code> - Where does the Picture object come from?</div>
     <div><code>common/models/picture.js</code> - belongsTo is undefined in Picture.</div>
-    <div><code>common/models/model.js</code> - Is this file created by default? Where do Employee, Reader, Picture objects come from?</div>
+    <div><code>common/models/model.js</code> - Is this file created by default? Where do Employee, Product, Picture objects come from?</div>
   </div>
   <div>As mentioned in the beginning, "HasManyThrough relations" and "Embedded models and relations" have similar issues. I can come up with a wholesome example which includes all these three types of model relations coming week.</div>
 </div>
@@ -34,12 +34,12 @@ This documentation for embeds polymorphic relations is still a work in progress.
 " %}
 
 LoopBack supports _polymorphic relations_ in which a model can belong to more than one other model, on a single association.
-For example, you might have a Picture model that belongs to either an Employee model or a Reader model. 
+For example, you might have a Picture model that belongs to either an Employee model or a Product model. 
 
-The examples below use three example models: Picture, Employee, and Reader, where a picture can belong to either an author or a reader.
+The examples below use three example models: Picture, Employee, and Product, where a picture can belong to either an employee or a product.
 
 <div class="sl-hidden"><strong>REVIEW COMMENT from Rand</strong><br>
-  <p>Is it actually "... a picture can belong to <em>both</em> an author and a reader." ?</p>
+  <p>Is it actually "... a picture can belong to <em>both</em> an employee and a product." ?</p>
   <p>Do polymorphic relations add methods to the models as the standard relations do? If so, what?</p>
 </div>
 
@@ -47,13 +47,13 @@ The examples below use three example models: Picture, Employee, and Reader, wher
 
 Take the following scenario as example:
 
-> A Picture model belongs to either an Employee model or a Reader model 
+> A Picture model belongs to either an Employee model or a Product model 
 
 A hasMany polymorphic relation means: 
 
-- There are two properties created in model Picture, one serves as a discriminator, which states what model the picture belongs to, and the other one serves as a foreignKey, which is the id(or primaryKey) value of either the author or reader. 
+- There are two properties created in model Picture, one serves as a discriminator, which states what model the picture belongs to, and the other one serves as a foreignKey, which is the id(or primaryKey) value of either the employee or product. 
 
-- There are CRUD apis added to modelFrom(Employee and Reader), by which you can create/modify/delete modelTo instance that belongsTo it. For example, `author.pictures.create()` creates a new picture belongsTo author.
+- There are CRUD apis added to modelFrom(Employee and Product), by which you can create/modify/delete modelTo instance that belongsTo it. For example, `employee.pictures.create()` creates a new picture belongsTo employee.
 
 If you want to have the api which retrieves the model that a modelTo instance belongsTo, which in our case is `picture.imageable()`, make sure you also define the corresponding belongsTo relation described in the next section [BelongsTo polymorphic relations](#belongsto-polymorphic-relations) 
 
@@ -88,9 +88,9 @@ If you want to have the api which retrieves the model that a modelTo instance be
 
 *Please note `as` inside `polymorphic` object will be deprecated in LoopBack 4, we suggest use `selector`.*
 
-In the following example, model 'Employee' defines the relation with a shorthand declaration, and model 'Reader' defines it with a complete polymorphic object declaration.
+In the following example, model 'Employee' defines the relation with a shorthand declaration, and model 'Product' defines it with a complete polymorphic object declaration.
 
-{% include code-caption.html content="common/models/author.json" %}
+{% include code-caption.html content="common/models/employee.json" %}
 ```javascript
 {
   "name": "Employee",
@@ -108,10 +108,10 @@ In the following example, model 'Employee' defines the relation with a shorthand
 
 And:
 
-{% include code-caption.html content="common/models/reader.json" %}
+{% include code-caption.html content="common/models/product.json" %}
 ```javascript
 {
-  "name": "Reader",
+  "name": "Product",
   "base": "PersistedModel",
   ...
   "relations": {
@@ -128,7 +128,7 @@ And:
 
 // Alternately provide `selector` in `polymorphic` object
 {
-  "name": "Reader",
+  "name": "Product",
   "base": "PersistedModel",
   ...
   "relations": {
@@ -145,16 +145,16 @@ And:
 
 Alternatively, you can define the relation in code:
 
-{% include code-caption.html content="common/models/author.js" %}
+{% include code-caption.html content="common/models/employee.js" %}
 ```javascript
 Employee.hasMany(Picture, { polymorphic: 'imageable' });
 ```
 
 And:
 
-{% include code-caption.html content="common/models/reader.js" %}
+{% include code-caption.html content="common/models/product.js" %}
 ```javascript
-Reader.hasMany(Picture, { polymorphic: {
+Product.hasMany(Picture, { polymorphic: {
   foreignKey: 'imageableId',
   discriminator: 'imageableType'
   } 
@@ -162,7 +162,7 @@ Reader.hasMany(Picture, { polymorphic: {
 
 // Alternative use `selector`
 
-Reader.hasMany(Picture, { polymorphic: {
+Product.hasMany(Picture, { polymorphic: {
   selector: "imageable"
   } 
 });
@@ -253,10 +253,10 @@ The following code shows how to dynamically define a 'HasOne' polymorphic relati
 ```javascript
 Picture.belongsTo('imageable', {polymorphic: true});
 Employee.hasOne(Picture, {as: 'avatar', polymorphic: 'imageable'});
-Reader.hasOne(Picture, {polymorphic: {as: 'imageable'}});
+Product.hasOne(Picture, {polymorphic: {as: 'imageable'}});
 
-// To create a picture belongs to an author, you can use the method below
-author.avatar.create();
+// To create a picture belongs to an employee, you can use the method below
+employee.avatar.create();
 ```
 
 ## HasManyThrough polymorphic relations
@@ -265,9 +265,9 @@ To define a hasManyThrough polymorphic relation, there must be a "through" model
 
 > Employee hasMany Picture through ImageLink polymorphically
 >
-> Reader hasMany Picture through ImageLink polymorphically
+> Product hasMany Picture through ImageLink polymorphically
 
-A hasManyThrough polymorphic relation means the through model has three properties created. The first two are same as those created in the toModel in a hasMany polymorphic relation: one is discriminator(the value is either `Employee` or `Reader`) and the other one is foreignKey(the id(primarykey) value of either an author or a reader). The third property is a foreignKey property reference model Picture.
+A hasManyThrough polymorphic relation means the through model has three properties created. The first two are same as those created in the toModel in a hasMany polymorphic relation: one is discriminator(the value is either `Employee` or `Product`) and the other one is foreignKey(the id(primarykey) value of either an employee or a product). The third property is a foreignKey property reference model Picture.
 
 Then here's an example of a polymorphic hasManyThrough relation:
 
@@ -294,7 +294,7 @@ First define relations in through model ImageLink.
 }
 ```
 
-Then in the Employee(or Reader) model.
+Then in the Employee(or Product) model.
 {% include code-caption.html content="/common/models/Employee.json" %}
 ```javascript
 {
@@ -323,16 +323,16 @@ OPTIONAL in model Picture.
   "base": "PersistedModel",
   ...
   "relations": {
-    "authors": {
+    "employees": {
       "type": "hasMany",
       "model": "Employee",
       "through": "ImageLink",
       "invert": true,
       "polymorphic": "imageable"
     },
-    "readers": {
+    "products": {
       "type": "hasMany",
-      "model": "Reader",
+      "model": "Product",
       "through": "ImageLink",
       "invert": true,
       "polymorphic": "imageable"
@@ -354,7 +354,7 @@ Employee.hasMany(Picture, {
   },
   through: ImageLink
 });
-Reader.hasMany(Picture, {
+Product.hasMany(Picture, {
   as: 'pictures',
   polymorphic: {
     foreignKey: 'imageableId',
@@ -367,7 +367,7 @@ ImageLink.belongsTo(ImageLink, {polymorphic: true});
 
 // Optional define invert hasMany relation in Picture
 Picture.hasMany(Employee, {through: ImageLink, polymorphic: 'imageable', invert: true});
-Picture.hasMany(Reader, {through: ImageLink, polymorphic: 'imageable', invert: true});
+Picture.hasMany(Product, {through: ImageLink, polymorphic: 'imageable', invert: true});
 ```
 
 ## HasAndBelongsToMany polymorphic relations
@@ -383,7 +383,7 @@ Employee.hasAndBelongsToMany(Picture, {
   through: PictureLink,
   polymorphic: 'imageable'
 });
-Reader.hasAndBelongsToMany(Picture, {
+Product.hasAndBelongsToMany(Picture, {
   through: PictureLink,
   polymorphic: 'imageable'
 });
@@ -393,7 +393,7 @@ Picture.hasMany(Employee, {
   polymorphic: 'imageable',
   invert: true
 });
-Picture.hasMany(Reader, {
+Picture.hasMany(Product, {
   through: PictureLink,
   polymorphic: 'imageable',
   invert: true
@@ -415,7 +415,7 @@ The example below should provide the following results:
   id: 1
 }, {
   url: 'joe.jpg',
-  imageableType: 'Reader',
+  imageableType: 'Product',
   imageableId: '1',
   id: 2
 }]
@@ -425,7 +425,7 @@ Employees: [{
   id: 1
 }]
 
-Readers: [{
+Products: [{
   name: 'Joe',
   id: 1
 }]
@@ -433,7 +433,7 @@ Readers: [{
 
 ```javascript
 var Employee = app.models.Employee;
-var Reader = app.models.Reader;
+var Product = app.models.Product;
 var Picture = app.models.Picture;
 
 Employee.hasOne(Picture, {
@@ -444,7 +444,7 @@ Employee.hasOne(Picture, {
   }
 });
 
-Reader.hasOne(Picture, {
+Product.hasOne(Picture, {
   as: 'imageable',
   polymorphic: {
     foreignKey: 'imageableId',
@@ -461,12 +461,12 @@ Picture.belongsTo('owner', {
   }
 });
 
-//Creating demo author, reader pictures then listing them
+//Creating demo employee, product pictures then listing them
 function createEmployee(cb) {
   Employee.create({
     username: "John"
-  }).then(function(author) {
-    author.avatar.create({
+  }).then(function(employee) {
+    employee.avatar.create({
       url: "john.jpg"
     }, function() {
       cb();
@@ -474,11 +474,11 @@ function createEmployee(cb) {
   });
 }
 
-function createReader(cb) {
-  Reader.create({
+function createProduct(cb) {
+  Product.create({
     name: "Joe"
-  }).then(function(reader) {
-    reader.imageable.create({
+  }).then(function(product) {
+    product.imageable.create({
       url: "joe.jpg"
     }, function() {
       cb();
@@ -492,9 +492,9 @@ function listPictures() {
   })
 }
 
-function listReaders() {
-  Reader.find(function(err, res) {
-    console.log("\nReaders:\n", res);
+function listProducts() {
+  Product.find(function(err, res) {
+    console.log("\nProducts:\n", res);
   })
 }
 
@@ -506,10 +506,10 @@ function listEmployees() {
 
 //executing the demo
 createEmployee(function() {
-  createReader(function() {
+  createProduct(function() {
     listPictures();
     listEmployees();
-    listReaders();
+    listProducts();
   });
 });
 ```
