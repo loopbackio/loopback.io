@@ -41,6 +41,10 @@ There are three types of issues:
 
 ### Security issues
 
+We take security vulnerabilities in LoopBack very seriously for our users.
+
+It is recommended to never debug log anything in production that may contain sensitive data. For example, do not log the data payload for `PersistedModel.create` requests as it may contain sensitive data sent from the client.
+
 Do not report security vulnerabilities using GitHub issues. Please send an email to `callback@ibm.com` with:
 
 - Description of the vulnerability.
