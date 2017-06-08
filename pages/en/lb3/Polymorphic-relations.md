@@ -175,15 +175,16 @@ So, instead of passing in the related model (name), you specify the name of the 
 
 To define a belongsTo polymorphic relation, you need to provide the following parameters:
 
-- `type`: the relation type, in this case is 'belongsTo'
-- `as`: redefines **this** relation's name (optional)
-- `polymorphic`:
-  - typeOf `polymorphic` === `Object`
-    - `foreignKey`:  A property of modelTo, representing the fk to modelFrom's id. 
-    - `discriminator`: A property of modelTo, representing the actual modelFrom to be looked up and defined dynamically.
-  - typeOf `polymorphic` === `Boolean`
-      - `foreignKey` is generated as `relationName + 'Id'`,
-      - `discriminator` is generated as `relationName + 'Type'`
+* type: the relation type, in this case is 'belongsTo'
+* as: redefines **this** relation's name (optional)
+* polymorphic:
+
+    typeOf `polymorphic` === `Object`
+      * foreignKey:  A property of modelTo, representing the fk to modelFrom's id. 
+      * discriminator: A property of modelTo, representing the actual modelFrom to be looked up and defined dynamically.
+    typeOf `polymorphic` === `Boolean`
+      * `foreignKey` is generated as `relationName + 'Id'`,
+      * `discriminator` is generated as `relationName + 'Type'`
 
 *Please note:*
 
