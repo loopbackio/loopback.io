@@ -43,7 +43,7 @@ There are three types of issues:
 
 We take security vulnerabilities in LoopBack very seriously for our users.
 
-It is recommended to never debug log anything in production that may contain sensitive data. For example, do not log the data payload for `PersistedModel.create` requests as it may contain sensitive data sent from the client.
+In production, do not enable debug logs that may contain sensitive data; for example, the payload of `PersistedModel.create` should not be exposed in production. Logging this type of information is acceptable in development, but not in production.
 
 Do not report security vulnerabilities using GitHub issues. Please send an email to `callback@ibm.com` with:
 
