@@ -14,32 +14,32 @@ summary:
   <ul>
     <li>Some example files lack context.</li>
     <li>There are references to objects in the example files, without any explanation of where they came from or how they may be initialized.</li>
-    <li>There are certain properties in the objects in examples files, they need to be explained, and the reader informed of other possible properties. For example, here are my observations on Polymorphic relations</li>
+    <li>There are certain properties in the objects in examples files, they need to be explained, and the product informed of other possible properties. For example, here are my observations on Polymorphic relations</li>
   </ul>
-  <p><code>common/models/author.json</code>: Should explain what "imageable" in <code>{ "polymorphic": "imageable" }</code> means. And, list other possible properties.</p>
+  <p><code>common/models/employee.json</code>: Should explain what "imageable" in <code>{ "polymorphic": "imageable" }</code> means. And, list other possible properties.</p>
   <div>
-    <p><code>common/models/reader.json</code>:</p><pre>   "polymorphic": {</pre><pre>    "as": "imageable",</pre><pre>    "foreignKey": "imageableId",</pre><pre>    "discriminator": "imageableType"</pre><pre>   }</pre>
-    <div>- The structure has changed from "common/models/author.json". Should explain "as", "foreignKey", and "discriminator". And, list other possible properties.</div>
-    <div><code>common/models/author.js</code> - Where does the Picture object come from?</div>
+    <p><code>common/models/product.json</code>:</p><pre>   "polymorphic": {</pre><pre>    "as": "imageable",</pre><pre>    "foreignKey": "imageableId",</pre><pre>    "discriminator": "imageableType"</pre><pre>   }</pre>
+    <div>- The structure has changed from "common/models/employee.json". Should explain "as", "foreignKey", and "discriminator". And, list other possible properties.</div>
+    <div><code>common/models/employee.js</code> - Where does the Picture object come from?</div>
     <div><code>common/models/picture.js</code> - belongsTo is undefined in Picture.</div>
-    <div><code>common/models/model.js</code> - Is this file created by default? Where do Author, Reader, Picture objects come from?</div>
+    <div><code>common/models/model.js</code> - Is this file created by default? Where do Employee, Product, Picture objects come from?</div>
   </div>
   <div>As mentioned in the beginning, "HasManyThrough relations" and "Embedded models and relations" have similar issues. I can come up with a wholesome example which includes all these three types of model relations coming week.</div>
 </div>
 
 {% include warning.html content="
 
-This documentation is still a work in progress.
+This documentation for embeds polymorphic relations is still a work in progress.
 
 " %}
 
 LoopBack supports _polymorphic relations_ in which a model can belong to more than one other model, on a single association.
-For example, you might have a Picture model that belongs to either an Author model or a Reader model. 
+For example, you might have a Picture model that belongs to either an Employee model or a Product model. 
 
-The examples below use three example models: Picture, Author, and Reader, where a picture can belong to either an author or a reader.
+The examples below use three example models: Picture, Employee, and Product, where a picture can belong to either an employee or a product.
 
 <div class="sl-hidden"><strong>REVIEW COMMENT from Rand</strong><br>
-  <p>Is it actually "... a picture can belong to <em>both</em> an author and a reader." ?</p>
+  <p>Is it actually "... a picture can belong to <em>both</em> an employee and a product." ?</p>
   <p>Do polymorphic relations add methods to the models as the standard relations do? If so, what?</p>
 </div>
 
@@ -47,43 +47,53 @@ The examples below use three example models: Picture, Author, and Reader, where 
 
 Take the following scenario as example:
 
-> A Picture model belongs to either an Author model or a Reader model 
+> A Picture model belongs to either an Employee model or a Product model 
 
 A hasMany polymorphic relation means: 
 
-- There are two properties created in model Picture, one serves as a discriminator, which states what model the picture belongs to, and the other one serves as a foreignKey, which is the id(or primaryKey) value of either the author or reader. 
+- There are two properties created in model Picture, one serves as a discriminator, which states what model the picture belongs to, and the other one serves as a foreignKey, which is the id(or primaryKey) value of either the employee or product. 
 
-- There are CRUD apis added to modelFrom(Author and Reader), by which you can create/modify/delete modelTo instance that belongsTo it. For example, `author.pictures.create()` creates a new picture belongsTo author.
+- There are CRUD apis added to modelFrom(Employee and Product), by which you can create/modify/delete modelTo instance that belongsTo it. For example, `employee.pictures.create()` creates a new picture belongsTo employee.
 
 If you want to have the api which retrieves the model that a modelTo instance belongsTo, which in our case is `picture.imageable()`, make sure you also define the corresponding belongsTo relation described in the next section [BelongsTo polymorphic relations](#belongsto-polymorphic-relations) 
 
-To define a hasMany polymorphic relation, you need to provide the following parameters:
+### Parameters for the definition
 
-- `type`: the relation type, in this case is 'hasMany'
-- `as`: redefines **this** relation's name (optional)
-- `model`: name of modelTo
-- `polymorphic`:
-  - typeOf `polymorphic` === `Object`(complete declaration)
-    - `selector`(suggested) or `as`: matching **belongsTo** relation name
-      - (required) if both foreignKey and discriminator are **NOT** provided
-      - (extraneous) throws error if **BOTH** foreignKey and discriminator are provided
-    - `foreignKey`:  A property of modelTo, representing the fk to modelFrom's id. 
-      - generated by default as `as + 'Id'`
-    - `discriminator`: A property of modelTo, representing the actual modelFrom to be looked up and defined dynamically 
-      - generated by default as `as + 'Type'`
-  - typeOf `polymorphic` === `String`(shorthand declaration)
-    - matching **belongsTo** relation name
-      - `foreignKey` is generated as `polymorphic + 'Id'`,
-      - `discriminator` is generated as `polymorphic + 'Type'`
+* type - the relation type, in this case is 'hasMany'
+* as - redefines **this** relation's name (optional)
+* model - name of modelTo
+* polymorphic
+
+  typeof `polymorphic` === `Object`(complete declaration)
+    * selector(suggested) or as - matching **belongsTo** relation name
+
+      (required) if both foreignKey and discriminator are **NOT** provided
+
+      (extraneous) throws error if **BOTH** foreignKey and discriminator are provided
+
+    * foreignKey:  A property of modelTo, representing the fk to modelFrom's id
+
+      generated by default as `as + 'Id'`
+    * discriminator: A property of modelTo, representing the actual modelFrom to be looked up and defined dynamically 
+
+      generated by default as `as + 'Type'`
+
+  typeOf `polymorphic` === `String`(shorthand declaration)
+
+  matching **belongsTo** relation name
+
+  `foreignKey` is generated as `polymorphic + 'Id'`
+
+  `discriminator` is generated as `polymorphic + 'Type'`
 
 *Please note `as` inside `polymorphic` object will be deprecated in LoopBack 4, we suggest use `selector`.*
 
-In the following example, model 'Author' defines the relation with a shorthand declaration, and model 'Reader' defines it with a complete polymorphic object declaration.
+In the following example, model 'Employee' defines the relation with a shorthand declaration, and model 'Product' defines it with a complete polymorphic object declaration.
 
-{% include code-caption.html content="common/models/author.json" %}
+{% include code-caption.html content="common/models/employee.json" %}
 ```javascript
 {
-  "name": "Author",
+  "name": "Employee",
   "base": "PersistedModel",
   ...
   "relations": {
@@ -98,10 +108,10 @@ In the following example, model 'Author' defines the relation with a shorthand d
 
 And:
 
-{% include code-caption.html content="common/models/reader.json" %}
+{% include code-caption.html content="common/models/product.json" %}
 ```javascript
 {
-  "name": "Reader",
+  "name": "Product",
   "base": "PersistedModel",
   ...
   "relations": {
@@ -118,7 +128,7 @@ And:
 
 // Alternately provide `selector` in `polymorphic` object
 {
-  "name": "Reader",
+  "name": "Product",
   "base": "PersistedModel",
   ...
   "relations": {
@@ -135,16 +145,16 @@ And:
 
 Alternatively, you can define the relation in code:
 
-{% include code-caption.html content="common/models/author.js" %}
+{% include code-caption.html content="common/models/employee.js" %}
 ```javascript
-Author.hasMany(Picture, { polymorphic: 'imageable' });
+Employee.hasMany(Picture, { polymorphic: 'imageable' });
 ```
 
 And:
 
-{% include code-caption.html content="common/models/reader.js" %}
+{% include code-caption.html content="common/models/product.js" %}
 ```javascript
-Reader.hasMany(Picture, { polymorphic: {
+Product.hasMany(Picture, { polymorphic: {
   foreignKey: 'imageableId',
   discriminator: 'imageableType'
   } 
@@ -152,7 +162,7 @@ Reader.hasMany(Picture, { polymorphic: {
 
 // Alternative use `selector`
 
-Reader.hasMany(Picture, { polymorphic: {
+Product.hasMany(Picture, { polymorphic: {
   selector: "imageable"
   } 
 });
@@ -165,15 +175,16 @@ So, instead of passing in the related model (name), you specify the name of the 
 
 To define a belongsTo polymorphic relation, you need to provide the following parameters:
 
-- `type`: the relation type, in this case is 'belongsTo'
-- `as`: redefines **this** relation's name (optional)
-- `polymorphic`:
-  - typeOf `polymorphic` === `Object`
-    - `foreignKey`:  A property of modelTo, representing the fk to modelFrom's id. 
-    - `discriminator`: A property of modelTo, representing the actual modelFrom to be looked up and defined dynamically.
-  - typeOf `polymorphic` === `Boolean`
-      - `foreignKey` is generated as `relationName + 'Id'`,
-      - `discriminator` is generated as `relationName + 'Type'`
+* type: the relation type, in this case is 'belongsTo'
+* as: redefines **this** relation's name (optional)
+* polymorphic:
+
+    typeOf `polymorphic` === `Object`
+      * foreignKey:  A property of modelTo, representing the fk to modelFrom's id. 
+      * discriminator: A property of modelTo, representing the actual modelFrom to be looked up and defined dynamically.
+    typeOf `polymorphic` === `Boolean`
+      * `foreignKey` is generated as `relationName + 'Id'`,
+      * `discriminator` is generated as `relationName + 'Type'`
 
 *Please note:*
 
@@ -241,22 +252,22 @@ The following code shows how to dynamically define a 'HasOne' polymorphic relati
 {% include code-caption.html content="/common/models/model.js" %}
 ```javascript
 Picture.belongsTo('imageable', {polymorphic: true});
-Author.hasOne(Picture, {as: 'avatar', polymorphic: 'imageable'});
-Reader.hasOne(Picture, {polymorphic: {as: 'imageable'}});
+Employee.hasOne(Picture, {as: 'avatar', polymorphic: 'imageable'});
+Product.hasOne(Picture, {polymorphic: {as: 'imageable'}});
 
-// To create a picture belongs to an author, you can use the method below
-author.avatar.create();
+// To create a picture belongs to an employee, you can use the method below
+employee.avatar.create();
 ```
 
 ## HasManyThrough polymorphic relations
 
 To define a hasManyThrough polymorphic relation, there must be a "through" model, for example:
 
-> Author hasMany Picture through ImageLink polymorphically
+> Employee hasMany Picture through ImageLink polymorphically
 >
-> Reader hasMany Picture through ImageLink polymorphically
+> Product hasMany Picture through ImageLink polymorphically
 
-A hasManyThrough polymorphic relation means the through model has three properties created. The first two are same as those created in the toModel in a hasMany polymorphic relation: one is discriminator(the value is either `Author` or `Reader`) and the other one is foreignKey(the id(primarykey) value of either an author or a reader). The third property is a foreignKey property reference model Picture.
+A hasManyThrough polymorphic relation means the through model has three properties created. The first two are same as those created in the toModel in a hasMany polymorphic relation: one is discriminator(the value is either `Employee` or `Product`) and the other one is foreignKey(the id(primarykey) value of either an employee or a product). The third property is a foreignKey property reference model Picture.
 
 Then here's an example of a polymorphic hasManyThrough relation:
 
@@ -283,11 +294,11 @@ First define relations in through model ImageLink.
 }
 ```
 
-Then in the Author(or Reader) model.
-{% include code-caption.html content="/common/models/Author.json" %}
+Then in the Employee(or Product) model.
+{% include code-caption.html content="/common/models/Employee.json" %}
 ```javascript
 {
-  "name": "Author",
+  "name": "Employee",
   "base": "PersistedModel",
   ...
   "relations": {
@@ -312,16 +323,16 @@ OPTIONAL in model Picture.
   "base": "PersistedModel",
   ...
   "relations": {
-    "authors": {
+    "employees": {
       "type": "hasMany",
-      "model": "Author",
+      "model": "Employee",
       "through": "ImageLink",
       "invert": true,
       "polymorphic": "imageable"
     },
-    "readers": {
+    "products": {
       "type": "hasMany",
-      "model": "Reader",
+      "model": "Product",
       "through": "ImageLink",
       "invert": true,
       "polymorphic": "imageable"
@@ -335,7 +346,7 @@ Equivalently, in JavaScript:
 
 {% include code-caption.html content="/server/boot/boot-script.js" %}
 ```javascript
-Author.hasMany(Picture, {
+Employee.hasMany(Picture, {
   as: 'pictures',
   polymorphic: {
     foreignKey: 'imageableId',
@@ -343,7 +354,7 @@ Author.hasMany(Picture, {
   },
   through: ImageLink
 });
-Reader.hasMany(Picture, {
+Product.hasMany(Picture, {
   as: 'pictures',
   polymorphic: {
     foreignKey: 'imageableId',
@@ -355,8 +366,8 @@ ImageLink.belongsTo(Picture, {});
 ImageLink.belongsTo(ImageLink, {polymorphic: true});
 
 // Optional define invert hasMany relation in Picture
-Picture.hasMany(Author, {through: ImageLink, polymorphic: 'imageable', invert: true});
-Picture.hasMany(Reader, {through: ImageLink, polymorphic: 'imageable', invert: true});
+Picture.hasMany(Employee, {through: ImageLink, polymorphic: 'imageable', invert: true});
+Picture.hasMany(Product, {through: ImageLink, polymorphic: 'imageable', invert: true});
 ```
 
 ## HasAndBelongsToMany polymorphic relations
@@ -368,21 +379,21 @@ The difference between them is that, hasAndBelongsToMany will automatically setu
 
 {% include code-caption.html content="/common/models/model.js" %}
 ```javascript
-Author.hasAndBelongsToMany(Picture, {
+Employee.hasAndBelongsToMany(Picture, {
   through: PictureLink,
   polymorphic: 'imageable'
 });
-Reader.hasAndBelongsToMany(Picture, {
+Product.hasAndBelongsToMany(Picture, {
   through: PictureLink,
   polymorphic: 'imageable'
 });
 // Optionally, define inverse hasMany relations with '(invert: true)'
-Picture.hasMany(Author, {
+Picture.hasMany(Employee, {
   through: PictureLink,
   polymorphic: 'imageable',
   invert: true
 });
-Picture.hasMany(Reader, {
+Picture.hasMany(Product, {
   through: PictureLink,
   polymorphic: 'imageable',
   invert: true
@@ -399,33 +410,33 @@ The example below should provide the following results:
 ```javascript
 [{
   url: 'john.jpg',
-  imageableType: 'Author',
+  imageableType: 'Employee',
   imageableId: '1',
   id: 1
 }, {
   url: 'joe.jpg',
-  imageableType: 'Reader',
+  imageableType: 'Product',
   imageableId: '1',
   id: 2
 }]
 
-Authors: [{
+Employees: [{
   username: 'John',
   id: 1
 }]
 
-Readers: [{
+Products: [{
   name: 'Joe',
   id: 1
 }]
 ```
 
 ```javascript
-var Author = app.models.Author;
-var Reader = app.models.Reader;
+var Employee = app.models.Employee;
+var Product = app.models.Product;
 var Picture = app.models.Picture;
 
-Author.hasOne(Picture, {
+Employee.hasOne(Picture, {
   as: 'avatar',
   polymorphic: {
     foreignKey: 'imageableId',
@@ -433,7 +444,7 @@ Author.hasOne(Picture, {
   }
 });
 
-Reader.hasOne(Picture, {
+Product.hasOne(Picture, {
   as: 'imageable',
   polymorphic: {
     foreignKey: 'imageableId',
@@ -444,18 +455,18 @@ Reader.hasOne(Picture, {
 Picture.belongsTo('owner', {
   idName: 'username',
   polymorphic: {
-    idType: Author.definition.properties.username.type,
+    idType: Employee.definition.properties.username.type,
     foreignKey: 'imageableId',
     discriminator: 'imageableType'
   }
 });
 
-//Creating demo author, reader pictures then listing them
-function createAuthor(cb) {
-  Author.create({
+//Creating demo employee, product pictures then listing them
+function createEmployee(cb) {
+  Employee.create({
     username: "John"
-  }).then(function(author) {
-    author.avatar.create({
+  }).then(function(employee) {
+    employee.avatar.create({
       url: "john.jpg"
     }, function() {
       cb();
@@ -463,11 +474,11 @@ function createAuthor(cb) {
   });
 }
 
-function createReader(cb) {
-  Reader.create({
+function createProduct(cb) {
+  Product.create({
     name: "Joe"
-  }).then(function(reader) {
-    reader.imageable.create({
+  }).then(function(product) {
+    product.imageable.create({
       url: "joe.jpg"
     }, function() {
       cb();
@@ -481,24 +492,24 @@ function listPictures() {
   })
 }
 
-function listReaders() {
-  Reader.find(function(err, res) {
-    console.log("\nReaders:\n", res);
+function listProducts() {
+  Product.find(function(err, res) {
+    console.log("\nProducts:\n", res);
   })
 }
 
-function listAuthors() {
-  Author.find(function(err, res) {
-    console.log("\nAuthors:\n", res);
+function listEmployees() {
+  Employee.find(function(err, res) {
+    console.log("\nEmployees:\n", res);
   })
 }
 
 //executing the demo
-createAuthor(function() {
-  createReader(function() {
+createEmployee(function() {
+  createProduct(function() {
     listPictures();
-    listAuthors();
-    listReaders();
+    listEmployees();
+    listProducts();
   });
 });
 ```
