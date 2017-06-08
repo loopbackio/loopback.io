@@ -7,7 +7,7 @@ keywords: LoopBack
 tags: [connectors, data_sources]
 sidebar: lb3_sidebar
 permalink: /doc/en/lb3/Building-a-connector.html
-summary: LoopBack provides connectors for many popular relational and NoSQL databases as well as other backend data sources such as SOAP and REST services.
+summary: This article explains how to implement a new data source connector by walking  through the MySQL connector implementation. 
 ---
 
 ## Overview

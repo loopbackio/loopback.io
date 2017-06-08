@@ -6,8 +6,10 @@ keywords: LoopBack
 tags:
 sidebar: lb3_sidebar
 permalink: /doc/en/lb3/Creating-a-database-schema-from-models.html
-summary:
+redirect_from: "/doc/en/lb3/Creating-database-tables-for-built-in-models.html"
+summary: LoopBack auto-migration enables you to create and update a database schema based on application  models.
 ---
+## Overview
 
 LoopBack _auto-migration_ creates a database schema based on your application's models.
 In relational databases, auto-migration creates a table for each model, and a column in the table for each property in the model.
@@ -20,8 +22,7 @@ LoopBack provides two ways to synchronize model definitions with table schemas:
 * **[Auto-migrate](#auto-migrate)**: Automatically create or re-create the table schemas based on the model definitions. 
 * **[Auto-update](#auto-update)**: Automatically alter the table schemas based on the model definitions.
 
-{% include warning.html content="
-Auto-migration will drop an existing table if its name matches a model name.
+{% include warning.html content="Auto-migration will drop an existing table if its name matches a model name.
 When tables with data exist, use [auto-update](#auto-update) to avoid data loss.
 " %}
 
@@ -32,7 +33,8 @@ The API Designer tool in IBM API Connect enables you to perform auto-migration w
 For more information, see [Creating a database schema from models](http://www.ibm.com/support/knowledgecenter/SSFS6T/com.ibm.apic.toolkit.doc/tapim-model-update.html).
 " %}
 
-**See also**: [automigrate()](http://apidocs.strongloop.com/loopback-datasource-juggler/#datasource-prototype-automigrate) in LoopBack API reference.
+{% include see-also.html content="[automigrate()](http://apidocs.strongloop.com/loopback-datasource-juggler/#datasource-prototype-automigrate) in LoopBack API reference.
+" %}
 
 The following data sources support auto-migration:
 
@@ -152,7 +154,8 @@ For more information, see the [MongoDB documentation](http://docs.mongodb.org/m
 
 ## Auto-update
 
-**See also**: See also [autoupdate()](http://apidocs.strongloop.com/loopback-datasource-juggler/#datasource-prototype-autoupdate) in LoopBack API reference.
+{% include see-also.html content="[autoupdate()](http://apidocs.strongloop.com/loopback-datasource-juggler/#datasource-prototype-autoupdate) in LoopBack API reference.
+" %}
 
 If there are existing tables in a database, running `automigrate()` will drop and re-create the tables: Therefore, data will be lost.
 To avoid this problem, use `autoupdate()`.
@@ -187,3 +190,40 @@ dataSource.isActual(models, function(err, actual) {
   }
 });
 ```
+
+## Creating database tables for built-in models
+
+LoopBack applications come with a small set of [built-in models](Using-built-in-models.html).
+To create database tables for these models, follow the general procedure for 
+[creating a database schema from models](Creating-a-database-schema-from-models.html) using _auto-migration_.
+
+{% include important.html content="
+If the database has existing tables, running `automigrate()` will drop and re-create the tables and thus may lead to loss of data.
+To avoid this problem use `autoupdate()`.
+See [Creating a database schema from models](Creating-a-database-schema-from-models.html) for more information.
+" %}
+
+To create tables for LoopBack [built-in models](Using-built-in-models.html), follow this procedure:
+
+1.  Follow the basic procedure in [Attaching models to data sources](Attaching-models-to-data-sources.html)
+    to change from the in-memory data source to the  database you want to use.
+
+2.  Create `server/create-lb-tables.js` file with the following:
+
+    ```javascript
+    var server = require('./server');
+    var ds = server.dataSources.db;
+    var lbTables = ['User', 'AccessToken', 'ACL', 'RoleMapping', 'Role'];
+    ds.automigrate(lbTables, function(er) {
+      if (er) throw er;
+      console.log('Loopback tables [' - lbTables - '] created in ', ds.adapter.name);
+      ds.disconnect();
+    });
+    ```
+
+3.  Run the script manually:
+
+    ```shell
+    $ cd server
+    $ node create-lb-tables.js
+    ```

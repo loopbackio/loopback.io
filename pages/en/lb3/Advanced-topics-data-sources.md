@@ -1,12 +1,12 @@
 ---
-title: "Understanding data sources"
+title: "Advanced topics: Data sources"
 lang: en
 layout: page
 keywords: LoopBack
 tags: [data_sources]
 sidebar: lb3_sidebar
 permalink: /doc/en/lb3/Advanced-topics-data-sources.html
-summary:
+summary: The DataSource object provides an abstraction to interact with backend services that decouples business logic from plumbing technologies.
 ---
 
 {% include image.html file="9830485.png" alt="Relationship between models, data sources, and connectors" %}
@@ -30,7 +30,7 @@ The `DataSource` object is the unified interface for LoopBack applications to 
 It's a factory for data access logic around model classes. With the ability to plug in various connectors,
 `DataSource` provides the necessary abstraction to interact with databases or services to decouple the business logic from plumbing technologies.
 
-## Creating a DataSource programmatically
+## Creating a data source programmatically
 
 {% include warning.html content="Don't put production database credentials explicitly in JSON or JavaScript files, where they could be a security vulnerability.  Instead, load the values from environment variables.  For more information, see [Specifying database credentials with environment variables](Attaching-models-to-data-sources.html#specifying-database-credentials-with-environment-variables)
 "%}
