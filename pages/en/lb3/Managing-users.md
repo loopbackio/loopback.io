@@ -19,14 +19,7 @@ LoopBack's built-in [User](http://apidocs.strongloop.com/loopback/#user-new-user
 * Creating an access token.
 * Password reset.
 
-{% include important.html content="
-You must create your own custom model (named something other than \"User,\" for example \"Customer\"
-or \"Client\") that [extends the built-in User model](Extending-built-in-models.html) rather than use
-the built-in User model directly. The built-in User model provides a great deal of commonly-used
-functionality that you can use via your custom model.
-
-In addition, a LoopBack app can use only one model based on the User model to manage users (generate tokens, login, logout, and so on.).  For more information, see [Introduction to User model authentication](Introduction-to-User-model-authentication.html).
-" %}
+{% include_relative includes/User-model-note.md %}
 
 ## Creating and authenticating users
 

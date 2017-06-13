@@ -37,11 +37,7 @@ The default model definition file is [common/models/application.json](https://g
 The User model represents users of the application or API.
 The default model definition file is [common/models/user.json](https://github.com/strongloop/loopback/blob/master/common/models/user.json) in the LoopBack repository. 
 
-{% include important.html content="
-You must create your own custom model (named something other than \"User,\" for example \"Customer\" or \"Client\") that [extends the built-in User model](Extending-built-in-models.html) rather than use the built-in User model directly.  The built-in User model provides a great deal of commonly-used functionality that you can use via your custom model.
-
-Starting with version 3.3.0, LoopBack supports applications with multiple models based on the User model. For more information, see [Access control with multiple user models](Authentication-authorization-and-permissions.html#access-control-with-multiple-user-models).
-" %}
+{% include_relative includes/User-model-note.md %}
 
 For more information, see [Managing users](Managing-users.html).
 

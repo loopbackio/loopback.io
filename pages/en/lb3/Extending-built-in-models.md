@@ -17,7 +17,7 @@ The tool will set the  base property in the [model definition JSON file](Mod
 For example, for a model that extends [PersistedModel](http://apidocs.strongloop.com/loopback/#persistedmodel):
 
 {% include code-caption.html content="/common/models/model.json" %}
-```javascript
+```
 {
   "name": "Order",
   "base": "PersistedModel",
@@ -29,10 +29,10 @@ To change the base model, simply edit the JSON file and change the `base` prop
 In general, use `PersistedModel` as the base model when you want to store your data in a database using a connector such as MySQL or MongoDB.
 Use `Model` as the base for models that don't have CRUD semantics, for example, using connectors such as SOAP and REST.
 
-{% include tip.html content="
-Extend the built-in User model to create your own model that represents users or customers; this model provides capabilities to register, login, and recover passwords.
+{% include tip.html content="The built-in User model provides capabilities to register, authenticate user logins, and recover passwords.  However, it has only `email` and `password` properites; if your application requires a user model with more properties, extend the built-in User model.
 See [Managing users](Managing-users.html) for more information.
-When you extend the built-in User model, use a model name other than \"User\" such as \"customer,\" or \"client.\" Don't name it \"User\" because that will conflict with the built-in
+
+When you extend the built-in User model, use a model name other than \"User\" such as \"customer,\" or \"client\" so it doesn't conflict with the built-in
 [User model](https://apidocs.strongloop.com/loopback/#user). To avoid confusion, it's also best to avoid \"user\" with a lowercase \"u\" .
 " %}
 
