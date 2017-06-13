@@ -206,7 +206,7 @@ If you would like to have a `_rev` property on your model, as an end user, the o
   });
 ```
 
-**Note:** Cloudant does not allow customized `_rev` value, hence creating an instance with a `_rev` value will give an error. The onus is on the user if they fail to comply to this rule.
+**Note:** Cloudant does not allow customized `_rev` value, hence creating an instance with a `_rev` value will not give the expected result (i.e Cloudant's CREATE operation ignores the `_rev` value when provided and generates a random unique one). The onus is on the user if they fail to comply to this rule.
 
 Let's say we have an instance in the database:
 ```json
