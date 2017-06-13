@@ -11,6 +11,9 @@ summary:
 
 Utilities to install and troubleshoot [loopback-connector-oracle](https://github.com/strongloop/loopback-connector-oracle) module.
 
+{% include note.html content="This command requires LoopBack CLI version 2.4.0+. Install the latest version of LoopBack CLI by entering the command `npm i -g loopback-cli`.
+" %}
+
 ### Synopsis
 
 ```
@@ -25,11 +28,10 @@ lb oracle [options]
 `--driver`
 : Install oracledb module.
 
-`-h, --help`
-: Print the generator's options and usage.
-
 `--verbose`
 : Print verbose information
+
+{% include_relative includes/CLI-std-options.md %}
 
 ### Interactive Prompts
 
