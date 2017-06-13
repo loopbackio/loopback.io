@@ -2,7 +2,7 @@
   - area: 'API definition'
     label: api-definition
     owner:
-    - sq-lb-epitome
+    - sq-lb-asteroid
     repos:
     - loopback-api-definition
     - loopback-component-explorer
@@ -36,7 +36,7 @@
   - area: 'Push notifications'
     label: component-push
     owner:
-    - sq-lb-epitome
+    - sq-lb-asteroid
     repos:
     - loopback-component-push
     - loopback-example-push
@@ -46,7 +46,7 @@
   - area: 'Storage'
     label: component-storage
     owner:
-    - sq-lb-epitome
+    - sq-lb-asteroid
     repos:
     - loopback-component-storage
     - loopback-example-storage
@@ -57,7 +57,7 @@
   - area: 'Email'
     label: connector-email
     owner:
-    - sq-lb-epitome
+    - sq-lb-apex
     repos:
     - loopback-component-email
     smes:
@@ -253,7 +253,7 @@
   - area: 'Logging'
     label: logging
     owner:
-    - sq-lb-epitome
+    - sq-lb-asteroid
     repos:
     - loopback-logger
     smes:
@@ -272,7 +272,7 @@
   - area: 'Registries'
     label: loopback-registry
     owner:
-    - sq-lb-epitome
+    - sq-lb-asteroid
     repos:
     - loopback-getting-started
     - loopback-getting-started-intermediate
@@ -286,7 +286,7 @@
   - area: 'Remoting'
     label:  remoting
     owner:
-    - sq-lb-apex
+    - sq-lb-asteroid
     repos:
     - loopback-example-offline-sync
     - loopback-phase
@@ -358,7 +358,6 @@
     owner:
     - sq-lb-apex
     - sq-lb-asteroid
-    - sq-lb-epitome
     repos:
     - eslint-config-loopback
     - loopback-sandbox
