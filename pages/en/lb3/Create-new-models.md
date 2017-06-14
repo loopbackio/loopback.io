@@ -45,7 +45,7 @@ When prompted, enter or select the following:
 *   **Model name**: Review
 *   **Data source**: mongoDs (mongodb)
 *   **Base class**: Use the down-arrow key to select **PersistedModel**.
-*   **Expose Reviewer via the REST API?** Press RETURN to accept the default, Yes.
+*   **Expose Review via the REST API?** Press RETURN to accept the default, Yes.
 *   **Custom plural form (used to build REST URL)**:  Press RETURN to accept the default, Yes.
 *   **Common model or server only**: Press RETURN to accept the default, common model.
 
