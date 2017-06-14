@@ -740,6 +740,26 @@ For example:
       <td>String</td>
       <td>Name of model creating hasManyThrough relation. See example below.</td>
     </tr>
+    <tr>
+      <td>options</td>
+      <td>object</td>
+      <td>
+        <table>
+	  <tbody>
+	    <tr>
+	      <th>Key</th>
+              <th>Type</th>
+              <th>Description</th>
+	    </tr>
+	    <tr>
+	      <td>disableInclude</td>
+	      <td>boolean</td>
+	      <td>Does not fetch the data if the relation is used in an include statement</td>
+	    </tr>
+	  </tbody>
+	</table>
+      </td>
+    </tr>
   </tbody>
 </table>
 
