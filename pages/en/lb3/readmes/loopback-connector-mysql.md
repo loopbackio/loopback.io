@@ -352,7 +352,97 @@ from LoopBack models using the [LoopBack automigrate method](http://apidocs.stro
 
 For more information on auto-migration, see [Creating a database schema from models](https://loopback.io/doc/en/lb3/Creating-a-database-schema-from-models.html) for more information.
 
-Destroying models may result in errors due to foreign key integrity. First delete any related models first calling delete on models with relationships.
+#### Auto-migrate/Auto-update models with foreign keys
+
+MySQL handles the foreign key integrity of the related models upon auto-migrate or auto-update operation. It first deletes any related models before calling delete on the models with the relationship.
+
+Example:
+
+**model-definiton.json**
+```json
+{
+  "name": "Book",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "properties": {
+    "name": {
+      "type": "string"
+    }, "isbn": {
+      "type": "string"
+    },
+  },
+  "validations": [],
+  "relations": {
+    "author": {
+      "type": "belongsTo",
+      "model": "Author",
+      "foreignKey": "authorId",
+      "primaryKey": "id"
+    }
+  },
+  "acls": [],
+  "methods": {},
+  "foreignKeys": {
+    "authorId": {
+      "name": "authorId",
+      "foreignKey": "authorId",
+      "entityKey": "id",
+      "entity": "Author"
+    }
+  }
+}
+```
+
+```json
+{
+  "name": "Author",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "properties": {
+    "name": {
+      "type": "string"
+    }, "dob": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "books": {
+      "type": "hasMany",
+      "model": "Book",
+      "foreignKey": "bookId",
+      "primaryKey": "id"
+    }
+  },
+  "acls": [],
+  "methods": {},
+  "foreignKeys": {
+    "bookId": {
+      "name": "bookId",
+      "foreignKey": "bookId",
+      "entityKey": "id",
+      "entity": "Book"
+    }
+  }
+}
+```
+
+**boot-script.js**
+```js
+module.exports = function(app) {
+  var mysqlDs = app.dataSources.mysqlDS;
+  var Book = app.models.Book;
+  var Author = app.models.Author;
+
+  mysqlDs.automigrate(function(err) {
+    if (err) throw err;
+
+    // at this point the database tables `Book` and `Author`
+    // should have the foreign keys (`bookId` and `authorId`) integrated
+  });
+};
+```
+
 
 ## Running tests
 
