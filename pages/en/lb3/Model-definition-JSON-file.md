@@ -788,24 +788,9 @@ For example:
       <td>Name of model creating hasManyThrough relation. See example below.</td>
     </tr>
     <tr>
-      <td>options</td>
-      <td>Object</td>
-      <td>
-        <table>
-	  <tbody>
-	    <tr>
-	      <th>Key</th>
-              <th>Type</th>
-              <th>Description</th>
-	    </tr>
-	    <tr>
-	      <td>disableInclude</td>
-	      <td>Boolean</td>
-	      <td>Does not fetch the data if the relation is used in an include statement</td>
-	    </tr>
-	  </tbody>
-	</table>
-      </td>
+      <td>options.disableInclude</td>
+      <td>Boolean</td>
+      <td>Does not fetch the data if the relation is used in an include statement</td>
     </tr>
   </tbody>
 </table>
