@@ -753,7 +753,7 @@ For example:
 	    </tr>
 	    <tr>
 	      <td>disableInclude</td>
-	      <td>boolean</td>
+	      <td>Boolean</td>
 	      <td>Does not fetch the data if the relation is used in an include statement</td>
 	    </tr>
 	  </tbody>
