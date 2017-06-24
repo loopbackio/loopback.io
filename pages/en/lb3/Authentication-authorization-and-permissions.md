@@ -312,14 +312,13 @@ To expose a model over REST, set the `public` property to true in `/server/mode
 ### Hiding methods and REST endpoints
 
 If you don't want to expose certain create, retrieve, update, and delete operations, you can easily hide them by calling 
-[`disableRemoteMethod()`](https://apidocs.strongloop.com/loopback/#model-disableremotemethod) on the model. 
+[`disableRemoteMethodByName()`](https://apidocs.strongloop.com/loopback/#model-disableremotemethodbyname) on the model. 
 For example, following the previous example, by convention custom model code would go in the file `common/models/location.js`.
 You would add the following lines to "hide" one of the predefined remote methods:
 
 {% include code-caption.html content="common/models/location.js" %}
 ```javascript
-var isStatic = true;
-MyModel.disableRemoteMethod('deleteById', isStatic);
+MyModel.disableRemoteMethodByName('deleteById');
 ```
 
 Now the `deleteById()` operation and the corresponding REST endpoint will not be publicly available.
@@ -328,41 +327,40 @@ For a method on the prototype object, such as `updateAttributes()`:
 
 {% include code-caption.html content="common/models/location.js" %}
 ```javascript
-var isStatic = false;
-MyModel.disableRemoteMethod('updateAttributes', isStatic);
+MyModel.disableRemoteMethod('prototype.updateAttributes');
 ```
 
 {% include important.html content="
-Be sure to call `disableRemoteMethod()` on your own custom model, not one of the built-in models;
-in the example below, for instance, the calls are `MyUser.disableRemoteMethod()` _not_ `User.disableRemoteMethod()`.
+Be sure to call `disableRemoteMethodByName()` on your own custom model, not one of the built-in models;
+in the example below, for instance, the calls are `MyUser.disableRemoteMethodByName()` _not_ `User.disableRemoteMethodByName()`.
 " %}
 
 Here's an example of hiding all methods of the `MyUser` model, except for `login` and `logout`:
 
 ```javascript
-MyUser.disableRemoteMethod("create", true);
-MyUser.disableRemoteMethod("upsert", true);
-MyUser.disableRemoteMethod("updateAll", true);
-MyUser.disableRemoteMethod("updateAttributes", false);
+MyUser.disableRemoteMethodByName("create");
+MyUser.disableRemoteMethodByName("upsert");
+MyUser.disableRemoteMethodByName("updateAll");
+MyUser.disableRemoteMethodByName("prototype.updateAttributes");
 
-MyUser.disableRemoteMethod("find", true);
-MyUser.disableRemoteMethod("findById", true);
-MyUser.disableRemoteMethod("findOne", true);
+MyUser.disableRemoteMethodByName("find");
+MyUser.disableRemoteMethodByName("findById");
+MyUser.disableRemoteMethodByName("findOne");
 
-MyUser.disableRemoteMethod("deleteById", true);
+MyUser.disableRemoteMethodByName("deleteById");
 
-MyUser.disableRemoteMethod("confirm", true);
-MyUser.disableRemoteMethod("count", true);
-MyUser.disableRemoteMethod("exists", true);
-MyUser.disableRemoteMethod("resetPassword", true);
+MyUser.disableRemoteMethodByName("confirm");
+MyUser.disableRemoteMethodByName("count");
+MyUser.disableRemoteMethodByName("exists");
+MyUser.disableRemoteMethodByName("resetPassword");
 
-MyUser.disableRemoteMethod('__count__accessTokens', false);
-MyUser.disableRemoteMethod('__create__accessTokens', false);
-MyUser.disableRemoteMethod('__delete__accessTokens', false);
-MyUser.disableRemoteMethod('__destroyById__accessTokens', false);
-MyUser.disableRemoteMethod('__findById__accessTokens', false);
-MyUser.disableRemoteMethod('__get__accessTokens', false);
-MyUser.disableRemoteMethod('__updateById__accessTokens', false);
+MyUser.disableRemoteMethodByName('prototype.__count__accessTokens');
+MyUser.disableRemoteMethodByName('prototype.__create__accessTokens');
+MyUser.disableRemoteMethodByName('prototype.__delete__accessTokens');
+MyUser.disableRemoteMethodByName('prototype.__destroyById__accessTokens');
+MyUser.disableRemoteMethodByName('prototype.__findById__accessTokens');
+MyUser.disableRemoteMethodByName('prototype.__get__accessTokens');
+MyUser.disableRemoteMethodByName('prototype.__updateById__accessTokens');
 ```
 
 ### Read-only endpoints example
@@ -372,17 +370,17 @@ You may want to only expose read-only operations on your model; in other words h
 **common/models/model.js**
 
 ```js
-Product.disableRemoteMethod('create', true);		// Removes (POST) /products
-Product.disableRemoteMethod('upsert', true);		// Removes (PUT) /products
-Product.disableRemoteMethod('deleteById', true);	// Removes (DELETE) /products/:id
-Product.disableRemoteMethod("updateAll", true);		// Removes (POST) /products/update
-Product.disableRemoteMethod("updateAttributes", false); // Removes (PUT) /products/:id
-Product.disableRemoteMethod('createChangeStream', true); // removes (GET|POST) /products/change-stream
+Product.disableRemoteMethodByName('create');		// Removes (POST) /products
+Product.disableRemoteMethodByName('upsert');		// Removes (PUT) /products
+Product.disableRemoteMethodByName('deleteById');	// Removes (DELETE) /products/:id
+Product.disableRemoteMethodByName("updateAll");		// Removes (POST) /products/update
+Product.disableRemoteMethodByName("prototype.updateAttributes"); // Removes (PUT) /products/:id
+Product.disableRemoteMethodByName('createChangeStream'); // Removes (GET|POST) /products/change-stream
 ```
 
 ### Hiding endpoints for related models
 
-To disable REST endpoints for related model methods, use [disableRemoteMethod()](https://apidocs.strongloop.com/loopback/#model-disableremotemethod).
+To disable REST endpoints for related model methods, use [disableRemoteMethodByName()](https://apidocs.strongloop.com/loopback/#model-disableremotemethodbyname).
 
 {% include note.html content="For more information, see [Accessing related models](Accessing-related-models.html).
 " %}
@@ -393,10 +391,10 @@ to disable the remote methods for the related model and the corresponding REST e
 {% include code-caption.html content="common/models/model.js" %}
 ```javascript
 module.exports = function(Post) {
-  Post.disableRemoteMethod('__get__tags', false);
-  Post.disableRemoteMethod('__create__tags', false);
-  Post.disableRemoteMethod('__destroyById__accessTokens', false); // DELETE
-  Post.disableRemoteMethod('__updateById__accessTokens', false); // PUT
+  Post.disableRemoteMethodByName('prototype.__get__tags');
+  Post.disableRemoteMethodByName('prototype.__create__tags');
+  Post.disableRemoteMethodByName('prototype.__destroyById__accessTokens'); // DELETE
+  Post.disableRemoteMethodByName('prototype.__updateById__accessTokens'); // PUT
 };
 ```
 
