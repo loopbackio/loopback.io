@@ -181,6 +181,66 @@ make benchmarks
 
 The results will be output in `./benchmarks/results.md`.
 
+## strictObjectIDCoercion flag
+
+In version 1.17.0, the id of string type is being converted to ObjectID, when the string length is 12 or 24 and has the format of an ObjectID i.e /^[0-9a-fA-F]{24}$/. To avoid this issue, the strictObjectIDCoercion flag should be set to true in the model-definition file.
+
+model-definition.js
+
+```js
+{
+  "name": "myModelName",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true,
+    "strictObjectIDCoercion": true
+  },
+...
+}
+```
+boot-script.js
+
+```js
+'use strict';
+var util = require('util');
+
+module.exports = function(app) {
+  var db = app.dataSources.mongoDs;
+  var myModelName = app.models.myModelName;
+
+  db.automigrate(function(err) {
+    if (err) throw err;
+    console.log('Automigrate complete');
+
+    myModelName.create([{
+      id: '59460487e9532ae90c324b59',
+      name: 'Bob',
+    }, {
+      id: '59460487e9532ae90c324b5a',
+      name: 'Sam',
+    }, {
+      id: '420',
+      name: 'Foo',
+      age: 1,
+    }, {
+      id: '21',
+      name: 'Bar',
+    }], function(err, result) {
+      if (err) throw err;
+      console.log('\nCreated instances of myModelName: ' + util.inspect(result, 4));
+
+      myModelName.find({where: {id: {inq: ['59460487e9532ae90c324b59',
+        '59460487e9532ae90c324b5a']}}},
+      function(err, result) {
+        if (err) throw err;
+        console.log('\nFound instance with inq: ' + util.inspect(result, 4));
+      });
+    });
+  });
+};
+```
+
 ## Release notes
 
   * 1.1.7 - Do not return MongoDB-specific _id to client API, except if specifically specified in the model definition
