@@ -3,7 +3,7 @@ title: Links
 audience: writer, designer
 tags: [formatting, navigation]
 keywords: links, hyperlinks, cross references, related links, relationship tables
-summary: "When creating links, you can use standard HTML or Markdown formatting. "
+summary: "You can use standard HTML or Markdown formatting for links. "
 sidebar: contrib_sidebar
 permalink: /doc/en/contrib/hyperlinks.html
 
@@ -11,18 +11,29 @@ permalink: /doc/en/contrib/hyperlinks.html
 
 ## Create an external link
 
-When linking to an external site, use Markdown formatting because it's simplest:
+When linking to an external site, use Markdown formatting:
 
 ```
 [Google](http://google.com)
 ```
 
-## Linking to internal pages
+## Create an internal pages
 
-When linking to internal pages, you can manually link to the pages like this:
+To link to another page, use the standard markdown formatting:
 
 ```
 [Icons](icons.html)
 ```
+Yields: [Icons](icons.html)
 
-However, if you change the file name, you'll have to update all of your links. It's much easier to use Automated links, as described in the next section.
+Because all files for a given version and language are in the same
+directory, you don't need to specify language or version.  If you need to link
+to documentation for another version, you have to include the full path, for example:
+```
+For LoopBack version 2 information, see
+[Managing users](/doc/en/lb2/Managing-users.html)
+```
+
+Yields:
+
+For LoopBack version 2 information, see [Managing users](/doc/en/lb2/Managing-users.html)
