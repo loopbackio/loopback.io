@@ -151,6 +151,9 @@ The value of the address is the definition of the `address` type, which can be
 If you intend to reuse the address model, define it independently and reference it in the user model. For example:
 
 ```javascript
+var DataSource = require('loopback-datasource-juggler').DataSource;
+var ds = new DataSource('memory');
+
 var AddressModel = {
     street: String,
     city: String,
