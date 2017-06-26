@@ -363,6 +363,12 @@ See [LoopBack types](http://loopback.io/doc/en/lb3/LoopBack-types.html) for de
   </tbody>
 </table>
 
+## Numeric Data Type
+
+**Note**: The [node.js driver for postgres](https://github.com/brianc/node-postgres) by default casts `Numeric` type as a string on `GET` operation. This is to avoid _data precision loss_ since `Numeric` types in postgres cannot be safely converted to JavaScript `Number`.
+
+For details, see the corresponding [driver issue](https://github.com/brianc/node-pg-types/issues/28).
+
 ## Discovery and auto-migration
 
 ### Model discovery
