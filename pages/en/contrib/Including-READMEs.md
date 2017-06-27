@@ -6,12 +6,10 @@ sidebar: contrib_sidebar
 permalink: /doc/en/contrib/Including-READMEs.html
 summary: The LoopBack documentation includes a number of README files from related repositories, including examples, data source connectors, and components.
 ---
-LoopBack comprises dozens of GitHub repositories, including:
-- Core repos: `loopback`, `loopback-datasource-juggler`, `loopback-boot`, `loopback-phase`, and others.
-- Tools: `generator-loopback`, `loopback-workspace`
-- Components: `loopback-component-explorer`, `loopback-component-oauth2`, `loopback-component-push`, `loopback-component-storage`, `loopback-component-passport`.
-- Connectors: `loopback-connector-rest`, `loopback-connector-mongodb`, `loopback-connector-soap`, dozens of others; see [LoopBack data source connectors](Connectors-reference.html).
-- Examples: `loopback-getting-started`, many others; see [Tutorials and examples](Tutorials-and-examples.html).
+LoopBack comprises dozens of GitHub repositories.  Beyond the core repositories such as `loopback`, `loopback-datasource-juggler`, and `loopback-boot`, there are dozens of ancillary modules, that fall into three main categories:
+- **Components**: `loopback-component-oauth2`, `loopback-component-storage`, `loopback-component-passport`, and so on.
+- **Connectors**: `loopback-connector-rest`, `loopback-connector-mongodb`, `loopback-connector-soap`, dozens of others; see [LoopBack data source connectors](Connectors-reference.html).
+- **Examples**: `loopback-getting-started`, many others; see [Tutorials and examples](Tutorials-and-examples.html).
 
 Each of these repositories has its own documentation in the repository README file.  It makes sense to maintain the documentation there, close to the code, where it can be updated as part of related pull requests to that module.  At the same time, it's useful to aggregate all the documentation on this site.  So, essentially we want to keep the module-specific documentation in the README as well as in this repo (loopback.io).
 
