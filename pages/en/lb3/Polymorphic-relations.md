@@ -9,88 +9,44 @@ permalink: /doc/en/lb3/Polymorphic-relations.html
 summary:
 ---
 
-<div class="sl-hidden"><strong>REVIEW COMMENT from Yaapa</strong><br>
-  <div>The docs for "Polymorphic relations", "HasManyThrough relations", and "Embedded models and relations" all share common areas of improvement.</div>
-  <ul>
-    <li>Some example files lack context.</li>
-    <li>There are references to objects in the example files, without any explanation of where they came from or how they may be initialized.</li>
-    <li>There are certain properties in the objects in examples files, they need to be explained, and the product informed of other possible properties. For example, here are my observations on Polymorphic relations</li>
-  </ul>
-  <p><code>common/models/employee.json</code>: Should explain what "imageable" in <code>{ "polymorphic": "imageable" }</code> means. And, list other possible properties.</p>
-  <div>
-    <p><code>common/models/product.json</code>:</p><pre>   "polymorphic": {</pre><pre>    "as": "imageable",</pre><pre>    "foreignKey": "imageableId",</pre><pre>    "discriminator": "imageableType"</pre><pre>   }</pre>
-    <div>- The structure has changed from "common/models/employee.json". Should explain "as", "foreignKey", and "discriminator". And, list other possible properties.</div>
-    <div><code>common/models/employee.js</code> - Where does the Picture object come from?</div>
-    <div><code>common/models/picture.js</code> - belongsTo is undefined in Picture.</div>
-    <div><code>common/models/model.js</code> - Is this file created by default? Where do Employee, Product, Picture objects come from?</div>
-  </div>
-  <div>As mentioned in the beginning, "HasManyThrough relations" and "Embedded models and relations" have similar issues. I can come up with a wholesome example which includes all these three types of model relations coming week.</div>
-</div>
-
-{% include warning.html content="
-
-This documentation for embeds polymorphic relations is still a work in progress.
-
-" %}
-
 LoopBack supports _polymorphic relations_ in which a model can belong to more than one other model, on a single association.
 For example, you might have a Picture model that belongs to either an Employee model or a Product model. 
 
 The examples below use three example models: Picture, Employee, and Product, where a picture can belong to either an employee or a product.
 
-<div class="sl-hidden"><strong>REVIEW COMMENT from Rand</strong><br>
-  <p>Is it actually "... a picture can belong to <em>both</em> an employee and a product." ?</p>
-  <p>Do polymorphic relations add methods to the models as the standard relations do? If so, what?</p>
-</div>
-
 ## HasMany polymorphic relations
 
 Take the following scenario as example:
 
-> A Picture model belongs to either an Employee model or a Product model 
+> A Picture model belongs to either an Employee model or a Product model
 
-A hasMany polymorphic relation means: 
+A hasMany polymorphic relation means:
 
-- There are two properties created in model Picture, one serves as a discriminator, which states what model the picture belongs to, and the other one serves as a foreignKey, which is the id(or primaryKey) value of either the employee or product. 
+- There are two properties created in model Picture, one serves as a discriminator, which states what model the picture belongs to, and the other one serves as a foreignKey, which is the id(or primaryKey) value of either the employee or product.
 
 - There are CRUD apis added to modelFrom(Employee and Product), by which you can create/modify/delete modelTo instance that belongsTo it. For example, `employee.pictures.create()` creates a new picture belongsTo employee.
 
-If you want to have the api which retrieves the model that a modelTo instance belongsTo, which in our case is `picture.imageable()`, make sure you also define the corresponding belongsTo relation described in the next section [BelongsTo polymorphic relations](#belongsto-polymorphic-relations) 
+If you want to have the api which retrieves the model that a modelTo instance belongsTo, which in our case is `picture.imageable()`, make sure you also define the corresponding belongsTo relation described in the next section [BelongsTo polymorphic relations](#belongsto-polymorphic-relations)
 
 ### Parameters for the definition
 
-* type - the relation type, in this case is 'hasMany'
-* as - redefines **this** relation's name (optional)
-* model - name of modelTo
-* polymorphic
+* `type` - the relation type, in this case is 'hasMany'
+* `as` - redefines **this** relation's name (optional)
+* `model` - name of modelTo
+* When the `polymorphic` property is an `Object`:
+  - `selector` (suggested) or as - matching **belongsTo** relation name (required) if both foreignKey and discriminator are **NOT** provided (extraneous) throws error if **BOTH** foreignKey and discriminator are provided
+  - `foreignKey`:  A property of modelTo, representing the fk to modelFrom's id generated by default as `as + 'Id'`
+  - `discriminator`: A property of modelTo, representing the actual modelFrom to be looked up and defined dynamically generated by default as `as + 'Type'`
+* When the `polymorphic` property is a  `String` (shorthand declaration):
+  - Matching **belongsTo** relation name `foreignKey` is generated as `polymorphic + 'Id'`
+  - `discriminator` is generated as `polymorphic + 'Type'`
 
-  typeof `polymorphic` === `Object`(complete declaration)
-    * selector(suggested) or as - matching **belongsTo** relation name
-
-      (required) if both foreignKey and discriminator are **NOT** provided
-
-      (extraneous) throws error if **BOTH** foreignKey and discriminator are provided
-
-    * foreignKey:  A property of modelTo, representing the fk to modelFrom's id
-
-      generated by default as `as + 'Id'`
-    * discriminator: A property of modelTo, representing the actual modelFrom to be looked up and defined dynamically 
-
-      generated by default as `as + 'Type'`
-
-  typeOf `polymorphic` === `String`(shorthand declaration)
-
-  matching **belongsTo** relation name
-
-  `foreignKey` is generated as `polymorphic + 'Id'`
-
-  `discriminator` is generated as `polymorphic + 'Type'`
-
-*Please note `as` inside `polymorphic` object will be deprecated in LoopBack 4, we suggest use `selector`.*
+Note that `as` inside `polymorphic` object will be deprecated in LoopBack 4.  Use `selector` instead.
 
 In the following example, model 'Employee' defines the relation with a shorthand declaration, and model 'Product' defines it with a complete polymorphic object declaration.
 
 {% include code-caption.html content="common/models/employee.json" %}
+
 ```javascript
 {
   "name": "Employee",
@@ -125,8 +81,10 @@ And:
     }
   }
 ...
+```
+Alternately, provide `selector` in the `polymorphic` object:
 
-// Alternately provide `selector` in `polymorphic` object
+```javascript
 {
   "name": "Product",
   "base": "PersistedModel",
@@ -143,7 +101,7 @@ And:
 ...
 ```
 
-Alternatively, you can define the relation in code:
+You can also define a polymorphic hasMany relation in code:
 
 {% include code-caption.html content="common/models/employee.js" %}
 ```javascript
@@ -159,9 +117,11 @@ Product.hasMany(Picture, { polymorphic: {
   discriminator: 'imageableType'
   } 
 });
+```
 
-// Alternative use `selector`
+Alternatively, use `selector`:
 
+```javascript
 Product.hasMany(Picture, { polymorphic: {
   selector: "imageable"
   } 
@@ -173,24 +133,21 @@ Product.hasMany(Picture, { polymorphic: {
 Because you define the related model dynamically, you cannot declare it up front.
 So, instead of passing in the related model (name), you specify the name of the polymorphic relation.
 
-To define a belongsTo polymorphic relation, you need to provide the following parameters:
+To define a belongsTo polymorphic relation, provide the following parameters:
 
-* type: the relation type, in this case is 'belongsTo'
-* as: redefines **this** relation's name (optional)
-* polymorphic:
+* `type`: the relation type, in this case is 'belongsTo'
+* `as`: redefines **this** relation's name (optional)
+* `polymorphic`: Can be either an object or a Boolean value.
+  - When its value is an object:
+    * foreignKey:  A property of modelTo, representing the foreign key to modelFrom's id.
+    * discriminator: A property of modelTo, representing the actual modelFrom to be looked up and defined dynamically.
+  - When its value is Boolean:
+    * `foreignKey` is generated as `relationName + 'Id'`.
+    * `discriminator` is generated as `relationName + 'Type'`.
 
-    typeOf `polymorphic` === `Object`
-      * foreignKey:  A property of modelTo, representing the fk to modelFrom's id. 
-      * discriminator: A property of modelTo, representing the actual modelFrom to be looked up and defined dynamically.
-    typeOf `polymorphic` === `Boolean`
-      * `foreignKey` is generated as `relationName + 'Id'`,
-      * `discriminator` is generated as `relationName + 'Type'`
-
-*Please note:*
-
-*Do not provide `model` field in relation definition, if you define it, LoopBack throws an error as relation validation.*
-
-*Do not provide `selector` or `as` inside polymorphic object.*
+{% include note.html content="Do not provide a `model` field in the relation definition.  If you define it, LoopBack throws an error as relation validation.
+Also, do not provide `selector` or `as` inside polymorphic object.
+" %}
 
 {% include code-caption.html content="common/models/picture.json" %}
 
@@ -206,9 +163,11 @@ To define a belongsTo polymorphic relation, you need to provide the following pa
     }
   },
 ...
+```
 
-// Alternatively, use an object for setup
+Alternatively, use an object for setup:
 
+```javascript
 {
   "name": "Picture",
   "base": "PersistedModel",
@@ -243,9 +202,9 @@ Picture.belongsTo('imageable', {
 
 ## HasOne polymorphic relations
 
-The difference between hasOne and hasMany is that, hasOne represents a "one-to-one" relation while hasMany represents a "one-to-many" relation. For details, refer to [hasMany relations](HasMany-relations.md) and [hasOne relations](HasOne-relations.md).
+A hasOne relation represents a "one-to-one" relation between models while a hasMany relation represents a "one-to-many" relation. For details, see [hasMany relations](HasMany-relations.html) and [hasOne relations](HasOne-relations.html).
 
-The relation definitions in 'HasOne' is almost same as 'HasMany', the only difference is `type` should be 'hasOne', for details, refer to [HasMany polymorphic relations](#hasmany-polymorphic-relations).
+The relation definitions in 'HasOne' is almost same as 'HasMany'; the only difference is `type` should be 'hasOne'.  For details, refer to [HasMany polymorphic relations](#hasmany-polymorphic-relations).
 
 The following code shows how to dynamically define a 'HasOne' polymorphic relation, and also redefines the relation name with `as`: you can specify `as: 'avatar'` to explicitly set the name of the relation. If not set, it defaults to the polymorphic relation name.
 
@@ -267,7 +226,12 @@ To define a hasManyThrough polymorphic relation, there must be a "through" model
 >
 > Product hasMany Picture through ImageLink polymorphically
 
-A hasManyThrough polymorphic relation means the through model has three properties created. The first two are same as those created in the toModel in a hasMany polymorphic relation: one is discriminator(the value is either `Employee` or `Product`) and the other one is foreignKey(the id(primarykey) value of either an employee or a product). The third property is a foreignKey property reference model Picture.
+A hasManyThrough polymorphic relation creates three properties in the the "through" model:
+- The discriminator (the value is either `Employee` or `Product`)
+- The foreign key (the ID or primary key value of either an employee or a product).
+- A `foreignKey` property that references the Picture model.
+
+The first two properties above are same as in the "to" model in a hasMany polymorphic relation.
 
 Then here's an example of a polymorphic hasManyThrough relation:
 
@@ -313,7 +277,7 @@ Then in the Employee(or Product) model.
 }
 ```
 
-OPTIONAL in model Picture.
+Optionally, in the Picture model.
 
 {% include code-caption.html content="/common/models/Picture.json" %}
 ```javascript
@@ -372,10 +336,10 @@ Picture.hasMany(Product, {through: ImageLink, polymorphic: 'imageable', invert: 
 
 ## HasAndBelongsToMany polymorphic relations
 
-hasAndBelongsToMany polymorphic relation is similar to [hasManyThrough polymorphic relation](#hasmanythrough-polymorphic-relations).
-It also requires an explicit 'through' model, in our example: ImageLink
+A hasAndBelongsToMany polymorphic relation is similar to a [hasManyThrough polymorphic relation](#hasmanythrough-polymorphic-relations).
+It also requires an explicit 'through' model, in our example: `ImageLink`.
 
-The difference between them is that, hasAndBelongsToMany will automatically setup belongsTo relations in through model: `ImageLink.belongsTo(Picture, {})` and `ImageLink.belongsTo(ImageLink, {polymorphic: true})`.
+However a hasAndBelongsToMany relation will automatically set up a belongsTo relations in through model, like this: `ImageLink.belongsTo(Picture, {})` and `ImageLink.belongsTo(ImageLink, {polymorphic: true})`.
 
 {% include code-caption.html content="/common/models/model.js" %}
 ```javascript
@@ -402,8 +366,7 @@ Picture.hasMany(Product, {
 
 ## Dealing with polymorphic.idType
 
-Because `modelTo` is unknown up-front (it's polymorphic), you cannot rely on `modelTo` for getting the `foreignKey` type. 
-You can explicitly declare the idType as shown below. 
+Because `modelTo` is unknown up-front (it's polymorphic), you cannot rely on `modelTo` for getting the `foreignKey` type.  You can explicitly declare the idType as shown below. 
 
 The example below should provide the following results:
 
