@@ -18,6 +18,9 @@ Each of these repositories has its own documentation in the repository README fi
 Instead of manually copying the README files from their "home" repositories, we use Bash scripts to automate the process.  This enables each repository to maintain its own README and yet also provide
 the same information in the documentation, with a _single source_ to avoid divergence or duplication of effort.
 
+{% include important.html content="Due to this system of single-sourcing READMEs, to update one of the files in the `readmes` directory, you **must** open a PR in the corresponding repository, not here in the loopback.io repo.  For example, to update the file `pages/lb3/readmes/loopback-connector-mongodb.md`, edit [`strongloop/loopback-connector-mongodb/README.md`](https://github.com/strongloop/loopback-connector-mongodb/blob/master/README.md) and open a PR in the `loopback-connector-mongodb` repository.
+" %}
+
 There are two Bash scripts:
 
 - [`update-readmes.sh`](https://github.com/strongloop/loopback.io/blob/gh-pages/update-readmes.sh) - Gets example, connector, and component READMEs and puts them into `pages/en/lb2/readmes`.
