@@ -12,10 +12,10 @@ node stock-ws.js
 
 ### Example 2
 
-Get weather and forecast information for a given zip code:
+Get Periodic Table element information:
 
 ```
-node weather-rest.js
+node periodictable-rest.js
 ```
 
 ### Example 3
@@ -23,10 +23,13 @@ node weather-rest.js
 To expose REST APIs to proxy the SOAP web services, run:
 
 ```
-node weather-ws.js
+node periodictable-ws.js
 ```
 
 then browse to [http://localhost:3000/explorer](http://localhost:3000/explorer)
+
+In API explorer's operations list, select `GET /PeriodictableServices/GetAtomicNumber` or `GET /PeriodictableServices/GetAtomicWeight`, then enter `elementName` and click on `Try it out`. 
+
 
 ---
 
