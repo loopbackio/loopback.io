@@ -258,7 +258,7 @@ First define relations in through model ImageLink.
 }
 ```
 
-Then in the Employee(or Product) model.
+Then in the Employee (or Product) model.
 {% include code-caption.html content="/common/models/Employee.json" %}
 ```javascript
 {
@@ -277,11 +277,10 @@ Then in the Employee(or Product) model.
 }
 ```
 
-Optionally, in the Picture model.
+Optionally, you can define an `invert hasMany` relation in the Picture model.
 
 {% include code-caption.html content="/common/models/Picture.json" %}
 ```javascript
-// Optional, define invert hasMany relation in Picture
 {
   "name": "Picture",
   "base": "PersistedModel",
@@ -329,7 +328,7 @@ Product.hasMany(Picture, {
 ImageLink.belongsTo(Picture, {});
 ImageLink.belongsTo(ImageLink, {polymorphic: true});
 
-// Optional define invert hasMany relation in Picture
+// Optionally define invert hasMany relation in Picture
 Picture.hasMany(Employee, {through: ImageLink, polymorphic: 'imageable', invert: true});
 Picture.hasMany(Product, {through: ImageLink, polymorphic: 'imageable', invert: true});
 ```
@@ -339,7 +338,7 @@ Picture.hasMany(Product, {through: ImageLink, polymorphic: 'imageable', invert: 
 A hasAndBelongsToMany polymorphic relation is similar to a [hasManyThrough polymorphic relation](#hasmanythrough-polymorphic-relations).
 It also requires an explicit 'through' model, in our example: `ImageLink`.
 
-However a hasAndBelongsToMany relation will automatically set up a belongsTo relations in through model, like this: `ImageLink.belongsTo(Picture, {})` and `ImageLink.belongsTo(ImageLink, {polymorphic: true})`.
+However, a hasAndBelongsToMany relation will automatically set up a belongsTo relation in through model, like this: `ImageLink.belongsTo(Picture, {})` and `ImageLink.belongsTo(ImageLink, {polymorphic: true})`.
 
 {% include code-caption.html content="/common/models/model.js" %}
 ```javascript

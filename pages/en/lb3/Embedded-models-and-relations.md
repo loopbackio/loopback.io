@@ -95,7 +95,6 @@ Customer.embedsOne(Address, {
     ...
   }
 ```
-```
 
 ### Helper methods
 
@@ -135,13 +134,6 @@ For example, a Customer can have multiple email addresses in an `emailList` prop
   }]
 }
 ```
-
-{% include important.html content="
-Treat `embedsMany` as an actual relation, no different from `hasMany`, for example.
-This means that you cannot just POST the full object with embedded/nested data to create everything all at once.
-So using the example above to add a Customer and multiple email addresses would require two POST operations,
-one for the Customer record and one for the multiple email address data.
-" %}
 
 ### Define the relation in code
 
@@ -243,7 +235,7 @@ Use an embedsMany with belongsTo relation to indicate a model that can embed man
 embeds many links to related people, such as an author or a reader. Each link belongs to a person and it&#39;s polymorphic,
 since a person can be an Author or a Reader.
 
-{% include code-caption.html content="Exampel embedsMany with belongsTo model instance" %}
+{% include code-caption.html content="Example embedsMany with belongsTo model instance" %}
 ```javascript
 { 
   id: 1
@@ -367,6 +359,7 @@ A `ReferencesMany` relation embeds an array of foreign keys to reference other o
 ### Define the relation in code
 
 {% include code-caption.html content="common/models/customer.json" %}
+
 ```javascript
 {
   "name": "Customer",
