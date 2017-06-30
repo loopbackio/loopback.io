@@ -12,6 +12,7 @@ strongloop-community StrongLoop-IoT-Demo master
 strongloop-community loopback-connector-elastic-search master
 Sequoia loopback-json-schemas master
 mean-expert-official loopback-sdk-builder master
+BoLaMN loopback-supertest-models master
 LIST_END
 ) | while read org repo branch; do
   # Write the README.md to a file named after the repo
