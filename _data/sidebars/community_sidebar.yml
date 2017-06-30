@@ -30,6 +30,6 @@ children:
     url: /doc/en/community/Sample-project.html
     output: 'web'
     
-  - title: 'Supertest models'
-    url: /doc/en/community/Supertest-models.html
+  - title: 'SuperTest models'
+    url: /doc/en/community/SuperTest-models.html
     output: 'web'
