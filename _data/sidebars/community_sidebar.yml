@@ -29,3 +29,7 @@ children:
   - title: 'Sample project'
     url: /doc/en/community/Sample-project.html
     output: 'web'
+    
+  - title: 'SuperTest models'
+    url: /doc/en/community/SuperTest-models.html
+    output: 'web'

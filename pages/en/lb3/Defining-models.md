@@ -33,7 +33,7 @@ You can also create and customize models programmatically using the 
 [LoopBack API](http://apidocs.strongloop.com/loopback/#loopback-createmodel), or by manually editing the [model definition JSON file](Model-definition-JSON-file.html).
 In most cases, you shouldn't need to use those techniques to create models, but you generally will use them to modify and customize models.
 
-Once you've created a model, you can [customize it](Customizing-models.html) to suit your needs, and also add [data validation](Validating-model-data.html) and create [relationships among models](http://localhost:4001/doc/en/lb3/Creating-model-relations.html).
+Once you've created a model, you can [customize it](Customizing-models.html) to suit your needs, and also add [data validation](Validating-model-data.html) and create [relationships among models](Creating-model-relations.html).
 
 Models come with a standard set of REST endpoints for create, read, update, and delete (CRUD) operations on model data.  You can customize a model's endpoints; see [Exposing models over REST](Exposing-models-over-REST.html).
 

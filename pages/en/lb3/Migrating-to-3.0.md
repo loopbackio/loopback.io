@@ -261,7 +261,7 @@ backed by a persistent data store such as a database.
 ### Use `forceId` to explicitly set model IDs
 
 As described in the [release notes](3.0-Release-Notes.html#models-with-auto-generated-ids-reject-user-provided-id-values),
-clients are no longer allowed to to provide their own `id` value when creating new instances
+clients are no longer allowed to provide their own `id` value when creating new instances
 of models that have an auto-generated `id` property.
 
 To enable setting an `id` explicitly, set `forceId: false` in the model JSON file.
