@@ -1,5 +1,3 @@
-# loopback-example-connector (SOAP)
-
 The SOAP connector enables LoopBack applications to interact with
 [SOAP](http://www.w3.org/TR/soap)-based web services described using
 [WSDL](http://www.w3.org/TR/wsdl).  This example app illustrates calling a [periodic table SOAP web service](http://www.webservicex.net/periodictable.asmx) from a LoopBack app,

@@ -71,7 +71,8 @@ Customer.embedsOne(Address, {
 ### Define the relation in JSON
 
 {% include code-caption.html content="common/models/customer.json" %}
-```javascript
+
+```js
 {
   "name": "Customer",
   "base": "PersistedModel",
@@ -117,7 +118,7 @@ For example, if `Customer embedsOne Address`, and you define a `before save` 
 ## EmbedsMany
 
 Use an embedsMany relation to indicate that a model can embed many instances of another model.
-For example, a Customer can have multiple email addresses and each email address is a complex object that contains label and address.
+For example, a Customer can have multiple email addresses in an `emailList` property whose value is an array of objects; and each element in the array is an object with label and address properties.
 
 {% include code-caption.html content="Sample model instance with many embedded models" %}
 ```javascript
@@ -133,15 +134,6 @@ For example, a Customer can have multiple email addresses and each email address
   }]
 }
 ```
-
-{% include important.html content="
-
-Treat `embedsMany` as an actual relation, no different from `hasMany`, for example.
-This means that you cannot just POST the full object with embedded/nested data to create everything all at once.
-So using the example above to add a Customer and multiple email addresses would require two POST operations,
-one for the Customer record and one for the multiple email address data.
-
-" %}
 
 ### Define the relation in code
 
@@ -240,10 +232,10 @@ creating a new Customer instance will trigger the operation hook.
 ## EmbedsMany with belongsTo
 
 Use an embedsMany with belongsTo relation to indicate a model that can embed many links to other models; for example a book model that
-embeds many links to related people, such as an author or a reader. Each link belongs to a person and it's polymorphic,
+embeds many links to related people, such as an author or a reader. Each link belongs to a person and it&#39;s polymorphic,
 since a person can be an Author or a Reader.
 
-{% include code-caption.html content="Exampel embedsMany with belongsTo model instance" %}
+{% include code-caption.html content="Example embedsMany with belongsTo model instance" %}
 ```javascript
 { 
   id: 1
@@ -335,6 +327,8 @@ since a person can be an Author or a Reader.
 
 ## ReferencesMany
 
+A `ReferencesMany` relation embeds an array of foreign keys to reference other objects. For example:
+
 {% include code-caption.html content="Sample referencesMany model instance" %}
 ```javascript
 {
@@ -365,6 +359,7 @@ since a person can be an Author or a Reader.
 ### Define the relation in code
 
 {% include code-caption.html content="common/models/customer.json" %}
+
 ```javascript
 {
   "name": "Customer",
