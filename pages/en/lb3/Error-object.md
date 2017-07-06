@@ -46,6 +46,6 @@ The following table describes the properties of the error object.
 
 {% include note.html content="
 
-Any other properties of the error object are copied to the error output.
+Any other properties of the error object are copied to the error output, unless you are using strong-error-handler, in which case you may need to [whitelist the properties you wish to add](https://github.com/strongloop/strong-error-handler#safe-error-fields).
 
 " %}
