@@ -888,6 +888,10 @@ children:
         url: /doc/en/lb3/Strong-soap.html
         output: 'web, pdf'
 
+      - title: 'SOAP connector example'
+        url: /doc/en/lb3/SOAP-Connector-example.html
+        output: 'web, pdf'
+
       - title: 'Connecting to SOAP web services'
         url: /doc/en/lb3/Connecting-to-SOAP.html
         output: 'web, pdf'

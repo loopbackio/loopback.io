@@ -6,7 +6,7 @@
   {% endunless %}{% unless page.permalink contains 'SOAP-connector.html' %}
 * [SOAP connector](SOAP-connector.html)
   {% endunless %}{% unless page.permalink contains 'SOAP-connector-example.html' %}
-* [SOAP example](SOAP-connector-example.html)
+* [SOAP example](SOAP-Connector-example.html)
   {% endunless %}
 {% endcapture %}
 
