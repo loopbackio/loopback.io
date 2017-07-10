@@ -5,7 +5,8 @@ A tutorial for setting up a basic passport example.
 - [Overview](#overview)
 - [Prerequisites](#prerequisites)
 - [Client ids/secrets from third party](#client-idssecrets-from-third-party)
-- [Tutorial](#tutorial---facebook)
+- [Tutorial - Facebook](#tutorial---facebook)
+- [Tutorial - LDAP](#tutorial---ldap)
 
 ## Overview
 
@@ -121,8 +122,59 @@ $ node .
 ```
 
 - Open your browser to `http://localhost:3000`
+- Click on 'Log in' (in the header, on the rigth)
 - Click on 'Login with Facebook'.
 - Sign up using a local account, then link to your Facebook account.
+
+## Tutorial - LDAP
+
+### 1. Clone the application
+Clone the application as describe [above](#1-clone-the-application).
+
+### 2. Create providers.json
+
+- Copy providers.json.template to providers.json
+- Update providers.json with your own values for `profileAttributesFromLDAP` and `server` section
+
+```
+  "ldap": {
+    "provider": "ldap",
+    "authScheme":"ldap",
+    "module": "passport-ldapauth",
+    "authPath": "/auth/ldap",
+    "successRedirect": "/auth/account",
+    "failureRedirect": "/ldap",
+    "session": true,
+    "failureFlash": true,
+    "profileAttributesFromLDAP": {
+      "login": "uid",
+      "username": "uid",
+      "displayName": "displayName",
+      "email": "mail",
+      "externalId": "uid"
+    },
+    "server":{
+      "url": "ldap://ldap-server:1234",
+      "searchBase": "dc=domain,dc=fr",
+      "searchFilter": "(cn={{username}})"
+    }
+  },
+```
+Here, in `profileAttributesFromLDAP` section, we have configured the mapping to get
+ - `login`, `username` and `extranalId`from LDAP's `uid`,
+ - `displayName`from LDAP's `displayName`
+ - `email`from LDAP's `mail`
+
+### 6. Run the application
+
+```
+$ node .
+```
+
+- Open your browser to `http://localhost:3000`
+- Click on 'Log in' (in the header, on the rigth)
+- Click on 'Login with ldap account'
+- Enter credential from your LDAP account and click 'Submit' to see your LDAP data
 
 ---
 
