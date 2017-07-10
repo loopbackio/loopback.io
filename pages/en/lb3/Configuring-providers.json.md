@@ -324,5 +324,12 @@ Used by Google and Facebook.
       <td>"/auth/account"</td>
       <td>&nbsp;</td>
     </tr>
+    <tr>
+      <td>setAccessToken</td>
+      <td>Boolean</td>
+      <td>Return user profile with `accessToken` information in passport callback</td>
+      <td>true</td>
+      <td>false</td>
+    </tr>
   </tbody>
 </table>
