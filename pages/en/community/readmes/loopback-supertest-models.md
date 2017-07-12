@@ -40,4 +40,27 @@ describe('GET /api/pokemon/?filter={"name": "pikachu"}', function() {
 });
 ```
 
+## Spy
+
+Spy on when a remote method is called 
+
+```javascript
+describe('GET /api/pokemon/?filter={"name": "pikachu"}', function() {
+  it('respond with pikachu', function() {
+    models.Pokemon.on('find', function(ctx) {
+      console.log('on', ctx.filter);
+    })
+    models.Pokemon.once('find', function(ctx) {
+      console.log('once', ctx.filter);
+    })
+    return models.Pokemon
+      .find()
+      .expect(200)
+      .end(function(err, res) {
+        if (err) return done(err);
+        done();
+      });
+  });
+});
+```
 License: MIT
