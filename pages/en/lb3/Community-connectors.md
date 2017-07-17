@@ -78,6 +78,11 @@ The following table lists some of the community connectors. See [npmjs.org](http
       <td>&nbsp;</td>
     </tr>
     <tr>
+      <td><a href="https://www.rethinkdb.com/" class="external-link" rel="nofollow">RethinkDB</a></td>
+      <td><a href="https://www.npmjs.com/package/loopback-connector-rethinkdb" class="external-link" rel="nofollow">loopback-connector-rethinkdb</a></td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
       <td><a href="http://basho.com/riak/" class="external-link" rel="nofollow">Riak</a></td>
       <td><a href="https://www.npmjs.com/package/loopback-connector-riak" class="external-link" rel="nofollow">loopback-connector-riak</a></td>
       <td>&nbsp;</td>
