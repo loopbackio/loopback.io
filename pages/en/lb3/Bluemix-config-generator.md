@@ -80,7 +80,7 @@ If you run the generator with the `--docker` option, the tool creates Docker-rel
 
 If you run the generator with the `--toolchain` option, the tool creates Bluemix toolchain files without any prompts.
 
-If you run the generator with the `--provision` option, you will be prompted for a name and and asked to select a plan for the service; none of the artifacts will be generated with this option.
+If you run the generator with the `--provision` option, you will be prompted for a name and asked to select a plan for the service; none of the artifacts will be generated with this option.
 
 ### Output
 
