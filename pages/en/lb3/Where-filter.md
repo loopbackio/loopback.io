@@ -196,7 +196,7 @@ This table describes the operators available in "where" filters. See [Examples]
 | neq | Not equal (!=) |
 | like, nlike | LIKE / NOT LIKE operators for use with regular expressions. The regular expression format depends on the backend data source.  See [examples](#like-and-nlike) below. |
 | like, nlike, options: i| LIKE / NOT LIKE operators for use with regular expressions with the case insensitive flag. It is supported by the memory and MongoDB connectors. The options property set to 'i' tells LoopBack that it should do case-insensitive matching on the required property.  See [examples](#like-and-nlike-insensitive) below. |
-| ilike, nilike | ILIKE / NOT ILIKE operators for use with regular expressions. The operator is supported only by the memory connector. See [examples](#ilike-and-nilike) below. |
+| ilike, nilike | ILIKE / NOT ILIKE operators for use with regular expressions. The operator is supported only by the memory and Postgresql connectors. See [examples](#ilike-and-nilike) below. |
 | regexp | Regular expression. See [examples](#regular-expressions) below. |
 
 ### AND and OR operators
