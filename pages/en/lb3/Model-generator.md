@@ -34,7 +34,7 @@ slc model [options] [<name>]
 ### Options
 
 `--bluemix`
-: Lists only Bluemix datasources in the datasource option for the new model.
+: Lists only Bluemix data sources in the datasource option for the new model.
 
 {% include_relative includes/CLI-std-options.md %}
 
