@@ -35,7 +35,7 @@ slc loopback:datasource [options] [<name>]
 
 `--bluemix`
  : Fetch provisioned data source services from Bluemix and present them in the list of choices for
- data source to add. Currently lists only Cloudant and MongoDB services. You will be prompted to log in if you are not already authenticated.
+ data source to add. Currently lists only Cloudant, MongoDB, and IBM Object Storage services. You will be prompted to log in if you are not already authenticated.
 
 `-n, --name`
 : With IBM API Connect developer toolkit only, optionally provide the name of the
@@ -62,4 +62,4 @@ You must install the [connector](Connecting-models-to-data-sources.html) for the
 
 This adds an entry to [`datasources.json`](datasources.json.html) with the specified settings.
 
-If you selected a Bluemix datasource, it will be entered in the `.bluemix/datasources-config.json` file.
+If you selected a Bluemix data source, it will be entered in the `.bluemix/datasources-config.json` file.

@@ -20,6 +20,18 @@ Add Bluemix deployment artifacts to a LoopBack application.
 $ lb bluemix [options]
 ```
 
+The Bluemix artifacts consists of:
+
+- `manifest.yml`, for configuring deployment to Bluemix.
+- `.cfignore`, for configuring which files and directories not to upload to Bluemix when deploying an app.
+- `Dockerfile`, for generating Docker container image of the app.
+- `.dockerignore`, for configuring which files and directories not to include in the Docker image.
+- `.bluemix`, a hidden directory for containing Bluemix-related files which should ideally not be manually tampered with.
+- `.bluemix/datasources-config.json`, for configuring data sources set up on Bluemix.
+- `.bluemix/deploy.json`, for defining custom form/fields in toolchain configuration.
+- `.bluemix/pipeline.yml`, for describing stages of input/trigger/job.
+- `.bluemix/toolchain.yml`, for descibing git repos, builds, and deployment for multiple pipelines.
+
 ### Options
 
 `--docker`        
@@ -38,6 +50,9 @@ For more information on Bluemix toolchains, see [Working with toolchains](https:
 
 `--sso`
 : Log in to Bluemix with SSO. Required only if you don't have the Cloud Foundry  [`cf`](https://docs.cloudfoundry.org/cf-cli/) command-line tool installed and authenticated.
+
+`--provision`
+: Provision a Bluemix data service.
 
 {% include_relative includes/CLI-std-options.md %}
 
@@ -65,14 +80,19 @@ If you run the generator with the `--docker` option, the tool creates Docker-rel
 
 If you run the generator with the `--toolchain` option, the tool creates Bluemix toolchain files without any prompts.
 
+If you run the generator with the `--provision` option, you will be prompted for a name and and asked to select a plan for the service; none of the artifacts will be generated with this option.
+
 ### Output
 
-Without any options, the tool will create a [manifest.yml](https://docs.cloudfoundry.org/devguide/deploy-apps/manifest.html) file, if it doesn't exist already; if it does exist, it will update the configurations based on your responses to the prompts.
+Without any options, the tool will create a [manifest.yml](https://console.bluemix.net/docs/manageapps/depapps.html#appmanifest) file, if it doesn't exist already; if it does exist, it will update the configurations based on your responses to the prompts.
 
-If you answered "Y" to the prompt about generating Docker-related files, or ran the generator with the `--docker` option, the tool will create Docker files.
+If you answered "Y" to the prompt about generating [Docker-related files](https://docs.docker.com/engine/reference/builder/), or ran the generator with the `--docker` option, the tool will create Docker files.
 
-If you answered "Y" to the prompt about generating toolchain files, or ran the generator with the `--toolchain` option, the tool will create Bluemix toolchain files.
+If you answered "Y" to the prompt about generating toolchain files, or ran the generator with the `--toolchain` option, the tool will create [Bluemix toolchain files](https://console.bluemix.net/docs/services/ContinuousDelivery/toolchains_working.html#toolchains_getting_started).
 
-If you answered "Y" to the prompt about enabling autoscaling, the tool will add `bluemix-autoscaling-agent` to `server.js`  add the dependency to the `package.json` file.
+If you answered "Y" to the prompt about enabling autoscaling, the tool will add `[bluemix-autoscaling-agent](https://www.npmjs.com/package/bluemix-autoscaling-agent)` to `server.js`  add the dependency to the `package.json` file.
 
-If you answered "Y" to the prompt about enabling appmetrics, the tool will add  `appmetrics-dash` to `server.js` and add the dependency to `package.json`.
+If you answered "Y" to the prompt about enabling appmetrics, the tool will add `[appmetrics-dash](https://www.npmjs.com/package/appmetrics-dash)` to `server.js` and add the dependency to `package.json`.
+
+- `server/datasources.bluemix.js` - to discover and load data sources configured on Bluemix.
+- `.bluemix/datasource-config.json` - configuration for data sources on Bluemix.
