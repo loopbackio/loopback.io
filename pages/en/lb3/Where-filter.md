@@ -195,7 +195,8 @@ This table describes the operators available in "where" filters. See [Examples]
 | near | For geolocations, return the closest points, sorted in order of distance. Use with `limit` to return the _n_ closest points. See [examples](#near) below.|
 | neq | Not equal (!=) |
 | like, nlike | LIKE / NOT LIKE operators for use with regular expressions. The regular expression format depends on the backend data source.  See [examples](#like-and-nlike) below. |
-| ilike, nilike | ILIKE / NOT ILIKE operators for use with regular expressions. The regular expression format depends on the backend data source. See [examples](#ilike-and-nilike) below. |
+| like, nlike, options: i| LIKE / NOT LIKE operators for use with regular expressions with the case insensitive flag. It is supported by the memory and MongoDB connectors. The options property set to 'i' tells LoopBack that it should do case-insensitive matching on the required property.  See [examples](#like-and-nlike-insensitive) below. |
+| ilike, nilike | ILIKE / NOT ILIKE operators for use with regular expressions. The operator is supported only by the memory and Postgresql connectors. See [examples](#ilike-and-nilike) below. |
 | regexp | Regular expression. See [examples](#regular-expressions) below. |
 
 ### AND and OR operators
@@ -521,9 +522,19 @@ User.find({where: {name: {like: '%St%'}}}, function (err, posts) { ... });
 User.find({where: {name: {nlike: 'M%XY'}}}, function (err, posts) { ... });
 ```
 
+### like and nlike insensitive
+```javascript
+var pattern = new RegExp('.*'+query+'.*', "i"); /* case-insensitive RegExp search */
+Post.find({ where: {title: { like: pattern} } },
+```
+Via the REST API:
+```
+?filter={"where":{"title":{"like":"someth.*","options":"i"}}}
+```
+
 ### ilike and nilike
 
-The ilike and nilike (not ilike) operators enable you to match case insensitive SQL regular expressions. The regular expression format depends on the backend data source.
+The ilike and nilike (not ilike) operators enable you to match case insensitive regular expressions. It is supported by the memory connector and Post connectors.
 
 Example of ilike operator:
 
@@ -542,6 +553,12 @@ When using the memory connector:
 ```javascript
 User.find({where: {name: {ilike: '%st%'}}}, function (err, posts) { ... });
 User.find({where: {name: {nilike: 's%xy'}}}, function (err, posts) { ... });
+```
+
+When using the Postgresql connector:
+
+```javascript
+User.find({where: {name: {ilike: 'john%'}}}, function (err, posts) { ... });
 ```
 
 ### inq
