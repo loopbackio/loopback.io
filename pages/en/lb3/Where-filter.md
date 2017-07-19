@@ -534,7 +534,7 @@ Via the REST API:
 
 ### ilike and nilike
 
-The ilike and nilike (not ilike) operators enable you to match case insensitive regular expressions. It is supported by the memory connector.
+The ilike and nilike (not ilike) operators enable you to match case insensitive regular expressions. It is supported by the memory connector and Post connectors.
 
 Example of ilike operator:
 
@@ -553,6 +553,12 @@ When using the memory connector:
 ```javascript
 User.find({where: {name: {ilike: '%st%'}}}, function (err, posts) { ... });
 User.find({where: {name: {nilike: 's%xy'}}}, function (err, posts) { ... });
+```
+
+When using the Postgresql connector:
+
+```javascript
+User.find({where: {name: {ilike: 'john%'}}}, function (err, posts) { ... });
 ```
 
 ### inq
