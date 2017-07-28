@@ -180,7 +180,7 @@ See [LoopBack types](http://loopback.io/doc/en/lb3/LoopBack-types.html) for de
       <td>String</td>
     </tr>
     <tr>
-      <td>CHAR(1)</td>
+      <td>BIT(1)<br>CHAR(1)<br>TINYINT(1)</td>
       <td>Boolean</td>
     </tr>
     <tr>
@@ -204,6 +204,15 @@ See [LoopBack types](http://loopback.io/doc/en/lb3/LoopBack-types.html) for de
     </tr>
   </tbody>
 </table>
+
+*NOTE* as of v3.0.0 of MySQL Connector, the following flags were introduced:
+
+* `treatCHAR1AsString`
+  default `false` - treats CHAR(1) as a String instead of a Boolean
+* `treatBIT1AsBit`
+  default `true` - treats BIT(1) as a Boolean instead of a Binary
+* `treatTINYINT1AsTinyInt`
+  default `true` - treats TINYINT(1) as a Boolean instead of a Number
 
 ## Using the datatype field/column option with MySQL
 

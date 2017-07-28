@@ -105,6 +105,34 @@ db.autoupdate('User', function(err) {
 });
 ```
 
+## Operators
+
+Here is a list of operators supported by the connector:
+
+- `regexp` operator
+```js
+  Employee.find({where: {taskCode: {regexp: /tsk/i}}}, function(err, result) {
+    if (err) throw err;
+    console.log('Found instance with regexp: ' + JSON.stringify(result));
+  });
+```
+
+- `like` operator
+```js
+  Employee.find({where: {taskCode: {like: 'TSK%'}}}, function(err, result) {
+    if (err) throw err;
+    console.log('Found instance with like: ' + JSON.stringify(result));
+  });
+```
+
+- `nlike` operator
+```js
+  Employee.find({where: {taskCode: {nlike: 'TSK%'}}}, function(err, result) {
+    if (err) throw err;
+    console.log('Found instance with like: ' + JSON.stringify(result));
+  });
+```
+
 ## Running tests
 
 ### Own instance
