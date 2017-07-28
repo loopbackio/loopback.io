@@ -60,7 +60,7 @@ for example as shown in the [storage service example](https://github.com/strong
 ## Creating a storage model
 
 Use the [model generator](Model-generator.html) to create a new model, then edit the `model.json` file, 
-as shown in the [storage service example](https://github.com/strongloop/loopback-component-storage/blob/master/example-2.0/):
+as shown in the [storage service example](https://github.com/strongloop/loopback-example-storage):
 
 {% include code-caption.html content="/server/models/container.json" %}
 ```javascript
