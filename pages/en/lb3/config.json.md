@@ -94,6 +94,7 @@ Properties under the `remoting` top-level property determine how the application
 "remoting": {
   "context": false,
   "rest": {
+    "normalizeHttpPath": false,
     "xml": false,
     "handleErrors": false
   },
@@ -167,6 +168,20 @@ The following table describes the remoting properties.  For more information on 
       <td>If true, then the REST adapter handles all errors by sending back a JSON-formatted error response. If false, then errors are passed to the top-level application error-handler. This is often set to <code>false</code> to allow for error handling middleware to be set up and configured via the app's middleware config.</td>
       <td>true</td>
     </tr>
+    <tr>
+      <td>rest.normalizeHttpPath</td>
+      <td>Boolean</td>
+      <td>If <code>true</code>, in HTTP paths, converts:
+        <ul>
+          <li>Uppercase letters to lowercase.</li>
+          <li>Underscores (&#95;) to dashes (-).</li>
+          <li>CamelCase to dash-delimited.</li>
+        </ul>
+        <p>Does not affect placeholders (for example ":id").</p>
+        <p>For example, "MyClass" or "My_class" becomes "my-class".</p>
+      </td>
+      <td>false</td>
+    </tr>    
     <tr>
       <td>rest.<br/>handleUnknownPaths</td>
       <td>Boolean</td>
