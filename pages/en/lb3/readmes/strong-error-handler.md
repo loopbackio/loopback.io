@@ -121,7 +121,7 @@ Then in `server/middleware.json`, specify your custom error logging function as 
     "./middleware/error-logger": {},
     "strong-error-handler": {
       "params": {
-        log: false
+        "log": false
       }
     }
 }
