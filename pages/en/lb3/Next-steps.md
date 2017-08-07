@@ -14,7 +14,7 @@ summary:
 
 If you want to continue on the tutorial track, continue on to [Getting started part II](Getting-started-part-II.html).  It covers:
 
-*   Using multiple data sources in an single application.
+*   Using multiple data sources in a single application.
 *   Relations between models.
 *   Remote hooks.
 *   Using access control lists to protect REST endpoints.
