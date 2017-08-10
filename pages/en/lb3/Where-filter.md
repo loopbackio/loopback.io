@@ -534,7 +534,7 @@ Via the REST API:
 
 ### ilike and nilike
 
-The ilike and nilike (not ilike) operators enable you to match case insensitive regular expressions. It is supported by the memory connector and Post connectors.
+The ilike and nilike (not ilike) operators enable you to match case insensitive regular expressions. It is supported by the memory connector and Postgresql connectors.
 
 Example of ilike operator:
 
