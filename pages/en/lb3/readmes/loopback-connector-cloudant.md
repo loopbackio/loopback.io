@@ -222,18 +222,18 @@ Let's say we have an instance in the database:
   - find
 
   ```javascript
-    Model.findById('2', function(err, result) {
+    Model.find(function(err, result) {
       if (err) throw err;
-      console.log('Found instance with id: ' + JSON.stringify(result));
+      console.log('Found all instances: ' + JSON.stringify(result));
     });
   ```
 
   - findById
 
   ```javascript
-    Model.find(function(err, result) {
+    Model.findById('2', function(err, result) {
       if (err) throw err;
-      console.log('Found all instances: ' + JSON.stringify(result));
+      console.log('Found instance with id: ' + JSON.stringify(result));
     });
   ```
 
