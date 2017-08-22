@@ -46,7 +46,6 @@ The following data sources support auto-migration:
 * [SAP HANA](https://www.npmjs.org/package/loopback-connector-saphana) - Not officially supported; see [Community connectors](Community-connectors.html).
 * [SQL Server](SQL-Server-connector.html)
 
-
 Here's an example of auto-migration. Consider this model definition:
 
 {% include code-caption.html content="/common/models/model.js" %}
