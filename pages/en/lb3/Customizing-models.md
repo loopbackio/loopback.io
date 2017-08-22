@@ -77,7 +77,7 @@ Currently you cannot modify a built-in model's required properties. If you need 
 " %}
 
 You can create custom models that extend from a single base custom model.
-For example, to define a model called `MyModel` that extends from a custom model you defined called `mMyBaseModel`,
+For example, to define a model called `MyModel` that extends from a custom model you defined called `MyBaseModel`,
 create MyModel using [model generator](Model-generator.html) 
 then edit the JSON file `common/models/MyModel.json` as follows:
 
