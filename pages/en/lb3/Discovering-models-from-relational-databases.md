@@ -18,6 +18,7 @@ This process is called _discovery_ and is supported by the following connectors:
 * [MySQL connector](MySQL-connector.html)
 * [PostgreSQL connector](PostgreSQL-connector.html)
 * [Oracle connector](Oracle-connector.html)
+* [SAP HANA](https://www.npmjs.org/package/loopback-connector-saphana) - Not officially supported; see [Community connectors](Community-connectors.html).
 * [SQL Server connector](SQL-Server-connector.html)
 
 For NoSQL databases such as MongoDB, use [instance introspection](Creating-models-from-unstructured-data.html) instead.

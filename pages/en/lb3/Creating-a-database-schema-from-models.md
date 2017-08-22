@@ -38,11 +38,14 @@ For more information, see [Creating a database schema from models](http://www.ib
 
 The following data sources support auto-migration:
 
+* [Cassandra](Cassandra-connector.html)
+* [MongoDB](MongoDB-connector.html)
+* [MySQL](MySQL-connector.html)
 * [Oracle](Oracle-connector.html)
 * [PostgreSQL](PostgreSQL-connector.html)
-* [MySQL](MySQL-connector.html)
+* [SAP HANA](https://www.npmjs.org/package/loopback-connector-saphana) - Not officially supported; see [Community connectors](Community-connectors.html).
 * [SQL Server](SQL-Server-connector.html)
-* [MongoDB](MongoDB-connector.html)
+
 
 Here's an example of auto-migration. Consider this model definition:
 
