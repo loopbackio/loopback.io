@@ -101,7 +101,7 @@ For example: `assembly.parts.create(...)`.
     </tr>
     <tr>
       <td>
-        <pre>assembly.parts.add(part,
+        <pre>assembly.parts.add(partId,
   function(err) {<br>  ...<br>});</pre>
       </td>
       <td>Add a part to the assembly.</td>
