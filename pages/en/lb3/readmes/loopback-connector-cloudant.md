@@ -20,6 +20,7 @@ The `loopback-connector-cloudant` module is the Cloudant connector for the LoopB
         - [Model-specific Configuration](#model-specific-configuration)
         - [_rev Property](#_rev-property)
             - [Example CRUD operations with `_rev`](#example-crud-operations-with-_rev)
+        - [Force Id](#force-id)
 - [Setup Cloudant Instance](#setup-cloudant-instance)
 - [Installation](#installation)
 - [Configuration](#configuration)
@@ -301,6 +302,146 @@ Let's say we have an instance in the database:
           console.log('Update an existing instance: ' + JSON.stringify(result));
         });
       ```
+
+# Force Id
+
+In loopback `forceId` means user can specify the value of the primary key when creating a model instance, instead of using an auto-generated one. Learn more about LoopBack's [forceId](https://loopback.io/doc/en/lb3/Model-definition-JSON-file.html).
+
+We recommend user to be careful when creating customized model id instead of using the auto-generated one because data belonging to different models can interfere with each other.
+
+Every document stored in Cloudant has an unique id, stored as `_id`, and the database has built-in index for it. Retrieving data by its `_id` gives a better performance than querying by other field. Therefore, the connector always assign the `_id` field as the loopback model's primary key.
+
+If you have two models that allow customized `_id` as primary key set with ```"forceId": false``` in the model definition, it could result in a document update conflict.
+
+For example:
+```
+{_id: 'myid', loopback__model__name: 'Foo'}
+{_id: 'myid', loopback__model__name: 'Bar'}
+```
+
+Here is an example of a case that would result in a document update conflict using ```"forceId": false```:
+
+### model-definitions
+
+```json
+{
+  "name": "Employee",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "forceId": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "_id": {
+      "type": "number",
+      "id": true,
+      "required": true
+    },
+    "name": {
+      "type": "string"
+    },
+    "age": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
+
+```
+
+```json
+{
+  "name": "Car",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "forceId": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "_id": {
+      "type": "number",
+      "id": true,
+      "required": true
+    },
+    "make": {
+      "type": "string"
+    },
+    "model": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
+```
+
+### boot-script
+
+```js
+'use strict';
+
+var util = require('util');
+var _ = require('lodash');
+
+module.exports = function(app) {
+  var db = app.datasources.cloudantDs;
+  var Employee = app.models.Employee;
+  var Car = app.models.Car;
+
+  db.once('connected', function() {
+    db.automigrate(function(err) {
+      if (err) throw err;
+      console.log('\nAutomigrate completed');
+
+      Employee.create([{
+        _id: 1,
+        name: 'Foo',
+      }, {
+        _id: 2,
+        name: 'Bar',
+      }], function(err, result) {
+        if (err) throw err;
+        console.log('\nCreated employee instance: ' + util.inspect(result));
+
+        Car.create([{
+          _id: 1,
+          make: 'Toyota',
+        }, {
+          _id: 2,
+          name: 'BMW',
+        }], function(err, result) {
+          if (err) throw err;
+          console.log('\nCreated car instance: ' + util.inspect(result));
+        });
+      });
+    });
+  });
+};
+```
+
+Running the above script will throw a document update conflict because there exists a model instance with `_id` value of 1 and 2.
+
+```bash
+Web server listening at: http://localhost:3000
+Browse your REST API at http://localhost:3000/explorer
+
+Automigrate completed
+Created employee instance: [ { _id: '1', name: 'Foo' }, { _id: '2', name: 'Bar' } ]
+
+/Users/ssh/workspace/sandbox/loopback-sandbox/apps/cloudant/cloudant-forceId-app/server/boot/script.js:33
+          if (err) throw err;
+                   ^
+Error: Document update conflict. (duplicate?),Error: Document update conflict. (duplicate?)
+```
+
+In order to avoid this pitfall, please set ```"forceId": true``` on either of the model definition which would allow one of the models to have an auto-generated id or do not set ```"forceId": false``` on either of the model definitions.
 
 # Setup Cloudant Instance
 
