@@ -4,6 +4,7 @@ redirect_from:
 - /doc/en/lb3/Operation-hooks-version-3.0.html
 lang: en
 layout: navgroup
+toc_level: 2
 navgroup: app-logic
 keywords: LoopBack
 tags: [application_logic]
@@ -518,16 +519,12 @@ The `before save` hook is triggered before a model instance is modified (crea
 * [create()](https://apidocs.strongloop.com/loopback/#persistedmodel-create)
 * [upsert()](https://apidocs.strongloop.com/loopback/#persistedmodel-upsert)
 * [upsertWithWhere()](http://apidocs.strongloop.com/loopback/#persistedmodel-upsertwithwhere)
-* [findOrCreate()](https://apidocs.strongloop.com/loopback/#persistedmodel-findorcreate)*
+* [findOrCreate()](https://apidocs.strongloop.com/loopback/#persistedmodel-findorcreate) - When `findOrCreate` finds an existing model, it does not trigger save hooks. However, connectors providing atomic implementation may trigger `before save` hook even when the model is not created, since they cannot determine in advance whether the model will be created or not.
 * [updateAll()](https://apidocs.strongloop.com/loopback/#persistedmodel-updateall)
 * [prototype.save()](https://apidocs.strongloop.com/loopback/#persistedmodel-prototype-save)
 * [prototype.updateAttributes()](https://apidocs.strongloop.com/loopback/#persistedmodel-prototype-updateattributes)
 * [replaceOrCreate()](https://apidocs.strongloop.com/loopback/#persistedmodel-replaceorcreate)
 * [prototype.replaceById()](https://apidocs.strongloop.com/loopback/#persistedmodel-replacebyid) / [replaceAttributes()](https://apidocs.strongloop.com/loopback/#persistedmodel-prototype-replaceattributes)
-
-(&#42;) When `findOrCreate` finds an existing model, the save hooks are not triggered.
-However, connectors providing atomic implementation may trigger `before save` hook even when the model is not created,
-since they cannot determine in advance whether the model will be created or not.
 
 The hook is triggered _before_ [model validation](Validating-model-data.html) functions are called.
 
@@ -545,15 +542,15 @@ Depending on which method triggered this hook, the context will have one of the 
   * `Model` - the constructor of the model that will be saved
   * `where` - the where filter describing which instances will be affected
   * `data` - the (partial) data to apply during the update
-  * `currentInstance` - the instance being affected, see [Triggering with prototype.updateAttributes](Operation-hooks-version-3.0-.html) below.
+  * `currentInstance` - the affected instance.
 
 #### ctx.isNewInstance
 
 The before save hook provides the `ctx.isNewInstance` property when `ctx.instance` is set, with the following values:
 
-* True for all CREATE operations
-* False for all UPDATE and REPLACE operations
-* Undefined for `updateOrCreate`, `upsertWithWhere`, replaceOrCreate, `prototype.save`,  `prototype.updateAttributes`, and `updateAll `operations.
+* True for all CREATE operations.
+* False for all UPDATE and REPLACE operations.
+* Undefined for `updateOrCreate`, `upsertWithWhere`, `replaceOrCreate`, `prototype.save`,  `prototype.updateAttributes`, and `updateAll `operations.
 
 #### Embedded relations
 
