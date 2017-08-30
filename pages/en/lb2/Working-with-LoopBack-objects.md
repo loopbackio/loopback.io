@@ -115,7 +115,7 @@ Book.app
 ...
 ```
 
-However, the one caveat to this is that you cannot reference `model.app` in `/common/model/model.js` because this file does not add the `app` property until bootstrapping has finished.
+However, the one caveat to this is that you cannot reference `model.app` in `/common/models/model.js` because this file does not add the `app` property until bootstrapping has finished.
 This means you **cannot** do the following in `/common/models/model.js`:
 
 {% include code-caption.html content="CANNOT do this in a model script" %}
