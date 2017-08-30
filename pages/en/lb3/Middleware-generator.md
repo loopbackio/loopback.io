@@ -19,25 +19,24 @@ Adds a new middleware configuration to an existing LoopBack application.
 " %}
 
 ```
-$ lb middleware [options] [<name>]
+lb middleware [options] [<name>]
+```
+
+With IBM API Connect developer toolkit:
+
+```
+apic loopback:middleware [options]
 ```
 
 With legacy StrongLoop tools:
 
 ```
-$ slc loopback:middleware [options] [<name>]
+slc loopback:middleware [options] [<name>]
 ```
 
 ### Options
 
-`-h, --help`
-Print the generator's options and usage.
-
-`--skip-cache`
-Do not remember prompt answers. Default is false.
-
-`--skip-install`
-Do not automatically install dependencies. Default is false.
+{% include_relative includes/CLI-std-options.md title='no' %}
 
 ### Arguments
 

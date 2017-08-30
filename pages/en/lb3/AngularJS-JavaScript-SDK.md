@@ -6,7 +6,7 @@ keywords: LoopBack
 tags: [angularjs]
 sidebar: lb3_sidebar
 permalink: /doc/en/lb3/AngularJS-JavaScript-SDK.html
-summary:
+summary: The LoopBack AngularJS SDK provides tools to create a client-side representation of your LoopBack models so you can access them directly from client AngularJS code.
 ---
 {% include important.html content="The AngularJS SDK requires Angular version 1.2.0 or newer.
 
@@ -266,10 +266,36 @@ $scope.prod0 = Product.findById({
 });
 ```
 
-Refer to [Querying data](Querying-data.html) for a description of all query options.
+For a description of all query options, see [Querying data](Querying-data.html).
 The AngularJS client expects the "Node syntax" of arguments, with the differences noted above.
 
 Also, see [Querying related models](Accessing-related-models.html#querying-related-models).
+
+**Case-insensitive queries**
+
+Let's say you are using AngularJS with `ui-bootstrap`'s `uib-typeahead` component:
+
+```javascript
+<input ng-model="vm.chosenMember"
+       uib-typeahead="item as item.name for item in vm.getMembers($viewValue)">
+angular.module(...).controller(.., function(...) {
+...
+  vm.getMembers = function(val) {
+    ...
+    // case-insensitive, match any substring:
+    var filter = { where: { name: { like: val, options: 'i'} } };
+    return Member.find({filter: filter, ... }).$promise;
+  };
+...
+```
+
+In the example above, the `like` property is an operator that, in its basic form above, matches any substring (for example in the `name` property). The options property set to `'i'` specfies case-insensitive matching on `name`. If you want case-sensitive matching, simply remove the `'i'`, thus:
+
+```js
+var filter = { where: { name: { like: val } } };
+```
+
+For any other variation (for example, matching only the first part of a name), you need to either use the datasource-specific expression syntax or use the [regular expression operator](Where-filter.html#regular-expressions).
 
 #### Update
 

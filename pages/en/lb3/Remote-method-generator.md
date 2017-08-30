@@ -16,25 +16,24 @@ summary:
 Adds a new remote method to an existing application.
 
 ```
-$ lb  remote-method [options] [<modelName>] [<methodName>]
+lb remote-method [options] [<modelName>] [<methodName>]
+```
+
+With API Connect developer toolkit:
+
+```
+apic loopback:remote-method [options]
 ```
 
 With legacy StrongLoop tools:
 
 ```
-$ slc loopback:remote-method [options] [<modelName>] [<methodName>]
+slc loopback:remote-method [options] [<modelName>] [<methodName>]
 ```
 
 ### Options
 
-`-h, --help`
-Print the generator's options and usage.
-
-`--skip-cache`
-Do not remember prompt answers. Default is false.
-
-`--skip-install`
-Do not automatically install dependencies. Default is false.
+{% include_relative includes/CLI-std-options.md title='no' %}
 
 ### Arguments
 

@@ -11,7 +11,7 @@ summary:
 
 **See also**: [Defining middleware](Defining-middleware.html)
 
-* [loopback.context()](https://apidocs.strongloop.com/loopback/#loopback-context)
+* [loopback.context()](https://github.com/strongloop/loopback-context)
 * [loopback.favicon()](http://apidocs.strongloop.com/loopback/#loopback-favicon)
 * [loopback.rest()](http://apidocs.strongloop.com/loopback/#loopback-rest)
 * [loopback.static()](http://apidocs.strongloop.com/loopback/#loopback-static)

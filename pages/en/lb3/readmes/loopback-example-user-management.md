@@ -15,14 +15,14 @@ $ node .
 - [How do you perform a password reset for a registered user](https://github.com/strongloop/loopback-example-user-management#how-do-you-perform-a-password-reset-for-a-registered-user)
 
 ###### Notes
-- You will need to [configure LoopBack to send email](https://docs.strongloop.com/display/public/LB/Email+connector) for email related features
+- You will need to [configure LoopBack to send email](http://loopback.io/doc/en/lb3/Email-connector.html) for email related features
 - If you're using GMail, you can simply [replace the user and pass](https://github.com/strongloop/loopback-example-user-management/blob/master/server/datasources.json#L19-L20) with your own credentials.
 - With GMail, you might need to temporarily allow "less secure" apps to access you email account. See [Allowing less secure apps to access your account](https://support.google.com/accounts/answer/6010255) for more information.
 
 ## Project Layout
-- `common/models` contains the extended user files. `user.js` contains user the logic for sending emails and password reset, while `user.json` contains the model definition.
+- `common/models` contains the extended user files. `user.js` contains the logic for sending emails and password reset, while `user.json` contains the model definition.
 - `server/boot/authentication.js` enables authentication middleware with the `enableAuth()` method. It's this middleware that finds the access token id string (usually from the query string) and appends entire token instance onto the express request object as `req.accessToken`. From there, you can find the user's ID: `req.accessToken.userId` (used in the `routes.js` file, see directly below).
-- `server/boot/routes.js` contains all the routing logic. In this example, we have used [ExpressJS](http://expressjs.com/) to configure the routing since each LoopBack app is an extended version of an Express app.
+- `server/boot/routes.js` contains all the routing logic. In this example, we have used [Express](http://expressjs.com/) to configure the routing since each LoopBack app is an extended version of an Express app.
 - `server/views`contains all the views (or pages) rendered by Express using the [EJS templating framework](http://www.embeddedjs.com/)
 - `server/datasources.json` contains the datasource configurations. Here is where we add an email datasource.
 - `server/model-config.json` contains the all the model configurations. Here is where we configure the extended user model (lowercase 'u') and the email model. The rest of the models are all built-in LoopBack models.
@@ -37,7 +37,7 @@ All other files have not been modified from their defaults.
 ###### Notes
 - Upon execution, [`user.verify`](https://github.com/strongloop/loopback-example-user-management/blob/master/common/models/user.js#L19) sends an email using the provided [options](https://github.com/strongloop/loopback-example-user-management/blob/master/common/models/user.js#L9-L17)
 - The verification email is configured to [redirect the user to the `/verified` route](https://github.com/strongloop/loopback-example-user-management/blob/master/common/models/user.js#L15) in our example. For your app, you should configure the redirect to match your use case
-- The [options](https://github.com/strongloop/loopback-example-user-management/blob/master/common/models/user.js#L9-L17) are self-explanitory except `type`, `template` and `user`
+- The [options](https://github.com/strongloop/loopback-example-user-management/blob/master/common/models/user.js#L9-L17) are self-explanatory except `type`, `template` and `user`
   - `type` - value must be `email`
   - `template` - the path to the template to use for the verification email
   - `user` - when provided, the information in the object will be used in the verification link email
@@ -63,8 +63,8 @@ See [step 2](https://github.com/strongloop/loopback-example-user-management#how-
 4. Create a [password reset form](https://github.com/strongloop/loopback-example-user-management/blob/master/server/views/password-reset.ejs#L2-L17) for the user to enter and confirm their new password
 5. Create an [endpoint to process the password reset](https://github.com/strongloop/loopback-example-user-management/blob/master/server/boot/routes.js#L76-L99)
 
-- For the `resetPasswordRequest` handler callback, you are provided with an [`info`](https://github.com/strongloop/loopback-example-user-management/blob/master/common/models/user.js#L38) object which contains information related to the user that is requesting the password reset. Note that this example is set up to send an initial email to yourself (the FROM and TO fields are the same). You will eventually want to change the address in the FROM field. 
+- For the `resetPasswordRequest` handler callback, you are provided with an [`info`](https://github.com/strongloop/loopback-example-user-management/blob/master/common/models/user.js#L38) object which contains information related to the user that is requesting the password reset. Note that this example is set up to send an initial email to yourself (the FROM and TO fields are the same). You will eventually want to change the address in the FROM field.
 
 ---
 
-[More LoopBack examples](https://github.com/strongloop/loopback-example)
+[More LoopBack examples](https://loopback.io/doc/en/lb3/Tutorials-and-examples.html)

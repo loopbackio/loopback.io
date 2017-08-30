@@ -65,7 +65,7 @@ The storage component organizes content as _containers_ and _files_. A containe
 * **Container** groups files, similar to a directory or folder. A container defines the namespace for objects and is uniquely identified by its name, typically within a user account.
   **NOTE**: A container cannot have child containers.
 * **File** stores the data, such as a document or image. A file is always in one (and only one) container. Within a container, each file has a unique name.
-  Files in different containers can have the same name.
+  Files in different containers can have the same name. By default, files with the same name will overwrite each other.
 
 ## Creating a storage component data source
 
@@ -75,21 +75,19 @@ You can create a storage component data source either using the command-line too
 
 Create a new data source as follows:
 
-<div id="lb3apic" class="sl-hidden" markdown="1">
 ```
-$ apic create --type datasource
-[?] Enter the data-source name: myfile
-[?] Select the connector for myfile: other
-[?] Enter the connector name without the loopback-connector- prefix: loopback-component-storage
-```
-</div>
-
-```shell
 $ lb datasource
 [?] Enter the data-source name: myfile
 [?] Select the connector for myfile: other
 [?] Enter the connector name without the loopback-connector- prefix: loopback-component-storage
 [?] Install storage (Y/n)
+```
+
+Using IBM API Connect developer toolkit, use this command:
+
+```
+$ apic create --type datasource
+...
 ```
 
 Then edit `/server/datasources.json` and manually add the properties of the data source (properties other than "name" and "connector".
@@ -269,6 +267,10 @@ as shown in the following table.
   </tbody>
 </table>
 
+## Automatic Unique Filenames
+
+As documented above, a file uploaded with the same name as an existing file will be overwritten. By adding the configuration key `nameConflict` with the value `makeUnique`, files will automatically be renamed with a UUID and the existing file extension of the original file name. Most likely this is an option that you will want to enable, otherwise you will need to ensure uniqueness on the code calling the API.
+
 ## API
 
 Once you create a container, it will provide both a REST and Node API, as described in the following table. For details, see the complete [API documentation](http://apidocs.strongloop.com/loopback-component-storage/).
@@ -322,7 +324,7 @@ Once you create a container, it will provide both a REST and Node API, as descri
       <td>DELETE /api/containers/:container/files/:file</td>
     </tr>
     <tr>
-      <td>Upload one or more files into the specified container. The request body must use multipart/form-data which the file input type for HTML uses.</td>
+      <td>Upload one or more files into the specified container. The request body must use multipart/form-data which is the file input type for HTML uses.</td>
       <td>upload(req, res, cb)</td>
       <td>POST<br>/api/containers/:container/upload</td>
     </tr>

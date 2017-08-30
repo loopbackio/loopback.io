@@ -85,11 +85,11 @@ npm install --save loopback-connector-oracle
 >     ---------------------------------------------------------------------------
 >     The node-oracle module and the Oracle specific libraries have been
 >     installed in /Users/sh/repos/loopback-example-database/node_modules/loopback-connector-oracle/node_modules/loopback-oracle-installer.
->    
+>
 >     The default bashrc (/etc/bashrc) or user's bash_profile (~/.bash_profile)
 >     paths have been modified to use this path. If you use a shell other than
 >     bash, please remember to set the DYLD_LIBRARY_PATH prior to using node.
->    
+>
 >     Example:
 >       $ export DYLD_LIBRARY_PATH=":/Users/$USER/repos/loopback-example-database/node_modules/loopback-connector-oracle/node_modules/instantclient:/Users/$USER/repos/loopback-example-database/node_modules/loopback-connector-oracle/node_modules/instantclient"
 >     ...
@@ -367,4 +367,4 @@ You should see:
 
 ---
 
-[More LoopBack examples](https://github.com/strongloop/loopback-example)
+[More LoopBack examples](https://loopback.io/doc/en/lb3/Tutorials-and-examples.html)

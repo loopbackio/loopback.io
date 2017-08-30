@@ -10,3 +10,5 @@ sidebar: lb3_sidebar
 permalink: /doc/en/lb3/SOAP-Connector-example.html
 summary: Example of using the LoopBack SOAP connector.
 ---
+{% include navgroups/soap.md %}
+<br/>

@@ -25,7 +25,6 @@ StrongLoop supports the following operating systems:
 
 LoopBack is an open-source project that is available for free (without support) and a commercial version with full support is also available as part of
 **[IBM API Connect](https://developer.ibm.com/apiconnect/)**.
-See [http://strongloop.com/node-js/subscription-plans/](http://strongloop.com/node-js/subscription-plans/) for more information.
 
 {%include warning.html content="API Connect Developer Toolkit does not currently support LoopBack 3.0.
 Use StrongLoop tools instead; see [Installation](Installation.html).
@@ -39,7 +38,7 @@ LoopBack and how they are using it. Check it out!
 There is also a [LoopBack Gitter channel](https://gitter.im/strongloop/loopback) for realtime discussions with fellow LoopBack developers.
 
 StrongLoop also publishes a blog with topics relevant to LoopBack.
-See [Blog posts](https://strongloop.com/strongblog/category/loopback-2/) for a list of the latest posts.
+See [Blog posts](https://strongloop.com/strongblog/tag_LoopBack.html) for a list of the latest posts.
 
 ### What client SDKs does LoopBack have?
 
@@ -173,9 +172,7 @@ LoopBack models support:
 
 ### Does LoopBack support JavaScript configuration files (not just JSON)?
 
-LoopBack does not support using JavaScript (instead of JSON) for configuration files such as [config.json](config.json.html), 
-[datasources.json](datasources.json.html), or [model-config.json](model-config.json.html), 
-to enable programmatic editing of the configuration via tools.
+Yes, LoopBack does support _overriding_ the default `.json` files with `.js` files. See the page on [environment-specific configuration](Environment-specific-configuration.html) for details.
 
 ### User management questions
 
@@ -239,3 +236,5 @@ Notes:
 Note: For the `resetPasswordRequest` handler callback, you are provided with an 
 [`info`](https://github.com/strongloop/loopback-faq-user-management/blob/master/common/models/user.js#L38) 
 object which contains information related to the user that is requesting the password reset.
+
+Note: Do not forget to configure the `bodyParser` and use `loopback.token()` in your app. You can see examples in [server.js](https://github.com/strongloop/loopback-example-user-management/blob/master/server/server.js)

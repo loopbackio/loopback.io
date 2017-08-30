@@ -13,6 +13,7 @@ summary:
 
 These are important advisories about known security issues:
 
+*   [Security advisory 03-10-2017](Security-advisory-03-10-2017.html)
 *   [Security advisory 08-16a-2016](Security-advisory-08-16a-2016.html)
 *   [Security advisory 08-16-2016](Security-advisory-08-16-2016.html)
 *   [Security advisory 01-12-2016](Security-advisory-01-12-2016.html)

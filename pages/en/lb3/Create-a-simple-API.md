@@ -15,21 +15,23 @@ summary: Use the application generator tool to quickly create a LoopBack applic
 ## Create new application
 
 To create a new application, run the LoopBack [application generator](Application-generator):
+If using `loopback-cli`:
 
-<div id="lb3apic" class="sl-hidden" markdown="1">
-If you're using IBM API Connect tools, the command is:
-
-```sh
-$ apic loopback
-```
-
-If using StrongLoop tools:
-</div>
 ```
 $ lb
 ```
+If using `apic`:
+```
+$ apic loopback
+```
+
+If using `slc`:
+```
+$ slc loopback
+```
 
 The LoopBack application generator will greet you with some friendly ASCII art and prompt you for the name of the application.
+(For `apic` or `slc` it may show slightly differently, but still request for the application name.)
 
 Enter `loopback-getting-started`. Then the generator will prompt you for the name of the directory to contain the project; press Enter to accept the default (the same as the application name):
 
@@ -52,7 +54,6 @@ Enter `loopback-getting-started`. Then the generator will prompt you for the na
 
 Then the tool will ask you what kind of application to create:
 
-<div id="lb3apic" class="sl-hidden" markdown="1">
 If using `apic`:
 
 ```
@@ -66,7 +67,7 @@ If using `apic`:
 Press **Enter** to accept the default selection, `empty server`.
 
 If using `slc`:
-</div>
+
 ```
 ? What kind of application do you have in mind? (Use arrow keys)
   api-server (A LoopBack API server with local User auth)
@@ -87,7 +88,7 @@ The generator will then display messages as it scaffolds the application includi
 
 ## Create models
 
-Now that you've scaffolded the initial project, you're going to create create a _CoffeeShop_ model that will automatically have REST API endpoints.
+Now that you've scaffolded the initial project, you're going to create  a _CoffeeShop_ model that will automatically have REST API endpoints.
 
 Go into your new application directory, then run the LoopBack [model generator](Model-generator):
 
@@ -95,12 +96,11 @@ Go into your new application directory, then run the LoopBack [model generator]
 $ cd loopback-getting-started
 ```
 
-<div id="lb3apic" class="sl-hidden" markdown="1">
 Then, using IBM API Connect developer toolkit:
 ```
 $ apic create --type model
 ```
-</div>
+
 Using StrongLoop tools:
 ```
 $ lb model
@@ -139,7 +139,7 @@ Then the generator will prompt you for the base class to use for the model.  Si
 
 One of the powerful advantages of LoopBack is that it automatically generates a REST API for your model.  The generator will ask whether you want to expose this REST API.
 
-Hit **Enter** again to accept the default and expose the Person model via REST:
+Hit **Enter** again to accept the default and expose the CoffeeShop model via REST:
 
 ```
 [?] Expose CoffeeShop via the REST API? (Y/n) Y

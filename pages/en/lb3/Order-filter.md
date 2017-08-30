@@ -15,16 +15,24 @@ An _order_ filter specifies how to sort the results: ascending (ASC) or descen
 
 Order by one property: 
 
-`filter[order]=propertyName <ASC|DESC>`
+<pre>
+filter[order]=<i>propertyName</i> <ASC|DESC>
+</pre>
 
 Order by two or more properties:
 
-`filter[order][0]=propertyName <ASC|DESC>&filter[order][1]propertyName]=<ASC|DESC>...`
+<pre>
+filter[order][0]=<i>propertyName</i> <ASC|DESC>&filter[order][1]<i>propertyName</i>]=<ASC|DESC>...
+</pre>
+
+Where:
+
+* _propertyName_ is the name of the property (field) to sort by. 
+* `<ASC|DESC>` signifies either ASC for ascending order or DESC for descending order.
 
 You can also use [stringified JSON format](Querying-data.html#using-stringified-json-in-rest-queries) in a REST query.
 
-{% include note.html content="
-Default ordering can be configured in [default scope](Model-definition-JSON-file.html#default-scope).
+{% include note.html content="Configure default ordering in [default scope](Model-definition-JSON-file.html#default-scope).
 " %}
 
 ### Node API
@@ -33,11 +41,15 @@ Default ordering can be configured in [default scope](Model-definition-JSON-file
 
 Order by one property:
 
-`{ order: 'propertyName <ASC|DESC>' }`
+<pre>
+{ order: '<i>propertyName</i> <ASC|DESC>' }
+</pre>
 
 Order by two or more properties:
 
-`{ order: ['propertyName <ASC|DESC>', 'propertyName <ASC|DESC>',...] }`
+<pre>
+{ order: ['<i>propertyName</i> <ASC|DESC>', '<i>propertyName</i> <ASC|DESC>',...] }
+</pre>
 
 Where:
 

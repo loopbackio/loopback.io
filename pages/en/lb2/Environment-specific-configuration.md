@@ -72,6 +72,10 @@ Here are some examples of the middleware configuration files, the `server/midd
 
 For an example application, see [https://github.com/strongloop/loopback-example-full-stack/tree/master/server](https://github.com/strongloop/loopback-example-full-stack/tree/master/server).
 
+{% include important.html content="
+Even with environment-specific configuration files, LoopBack still requires the default base file(s). An empty object within the JSON file is sufficient.
+" %}
+
 ## Application-wide configuration
 
 Define application server-side settings in [`server/config.json`](config.json.html).

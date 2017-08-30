@@ -11,29 +11,25 @@ summary:
 
 In addition to the connectors that StrongLoop provides and maintains, there are a number of connectors created by the open-source community.
 
-{% include warning.html content="
-
-IBM and StrongLoop do not support the connectors listed here; they are maintained by the LoopBack community and are listed here for convenience.
+{% include warning.html content="IBM and StrongLoop do not support the connectors listed here; they are maintained by the LoopBack community and are listed here for convenience.
 
 Please contact IBM/StrongLoop to request support for one of these connectors or to request an additional connector.
-
 " %}
 
 The following table lists some of the community connectors. See [npmjs.org](https://www.npmjs.org/search?q=loopback-connector) for a complete list.
 
-{% include note.html content="
-
-See also [https://github.com/pasindud/awesome-loopback](https://github.com/pasindud/awesome-loopback) for an extensive list of LoopBack community resources.
-
+{% include note.html content="See also [https://github.com/pasindud/awesome-loopback](https://github.com/pasindud/awesome-loopback) for an extensive list of LoopBack community resources.
 " %}
 
 <table>
-  <tbody>
+  <thead>
     <tr>
-      <th>Data source</th>
-      <th>Connector</th>
+      <th width="160">Data source</th>
+      <th width="280">Connector</th>
       <th>Notes</th>
     </tr>
+  </thead>
+  <tbody>
     <tr>
       <td><a href="http://couchdb.apache.org/" class="external-link" rel="nofollow">Apache CouchDB</a></td>
       <td><a href="https://www.npmjs.org/package/loopback-connector-couch" class="external-link" rel="nofollow">loopback-connector-couch</a></td>
@@ -56,8 +52,13 @@ See also [https://github.com/pasindud/awesome-loopback](https://github.com/pasin
     </tr>
     <tr>
       <td><a href="http://www.elasticsearch.org/" class="external-link" rel="nofollow">Elasticsearch</a></td>
-      <td><a href="https://www.npmjs.org/package/loopback-connector-elastic-search" class="external-link" rel="nofollow">loopback-connector-elastic-search</a></td>
+      <td><a href="https://www.npmjs.com/package/loopback-connector-es" class="external-link" rel="nofollow">loopback-connector-es</a></td>
       <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><a href="http://fabric-composer.org/" class="external-link" rel="nofollow">Fabric Composer</a></td>
+      <td><a href="https://www.npmjs.org/package/loopback-connector-composer" class="external-link" rel="nofollow">loopback-connector-composer</a></td>
+      <td>Enables integration with Blockchain applications that are built with Fabric Composer for Hyperledger Fabric</td>
     </tr>
     <tr>
       <td><a href="https://mandrill.com/" class="external-link" rel="nofollow">Mandrill</a></td>
@@ -67,14 +68,18 @@ See also [https://github.com/pasindud/awesome-loopback](https://github.com/pasin
     <tr>
       <td><a href="http://neo4j.com/" class="external-link" rel="nofollow">Neo4j</a></td>
       <td><a href="https://www.npmjs.org/package/loopback-connector-neo4j" class="external-link" rel="nofollow">loopback-connector-neo4j</a></td>
-      <td>
-        <p><span>Provided as option by </span> <a href="Data-source-generator.html">data source generator</a><span>.</span></p>
-        <p><span>NOTE: This connector has <a href="https://groups.google.com/forum/#!topic/loopbackjs/HONEM1S3CnU" class="external-link" rel="nofollow">known issues</a>.</span></p>
+      <td>Provided as option by <a href="Data-source-generator.html">data source generator</a>.
+        <br/>NOTE: This connector has <a href="https://groups.google.com/forum/#!topic/loopbackjs/HONEM1S3CnU" class="external-link" rel="nofollow">known issues</a>.
       </td>
     </tr>
     <tr>
       <td><a href="http://ravendb.net/" class="external-link" rel="nofollow">RavenDB</a></td>
       <td><a href="https://www.npmjs.org/package/loopback-connector-ravendb" class="external-link" rel="nofollow">loopback-connector-ravendb</a></td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.rethinkdb.com/" class="external-link" rel="nofollow">RethinkDB</a></td>
+      <td><a href="https://www.npmjs.com/package/loopback-connector-rethinkdb" class="external-link" rel="nofollow">loopback-connector-rethinkdb</a></td>
       <td>&nbsp;</td>
     </tr>
     <tr>
@@ -97,5 +102,3 @@ See also [https://github.com/pasindud/awesome-loopback](https://github.com/pasin
       <td><a href="https://www.npmjs.com/package/loopback-connector-twilio" class="external-link" rel="nofollow">loopback-connector-twilio</a></td>
       <td><a href="https://github.com/dashby3000/loopback-connector-twilio/blob/master/example/example.js" class="external-link" rel="nofollow">Example</a> in GitHub.</td>
     </tr>
-  </tbody>
-</table>

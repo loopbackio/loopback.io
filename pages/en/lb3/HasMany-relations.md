@@ -34,10 +34,11 @@ For example, here is the model JSON file for the customer model in [loopback-ex
   "base": "PersistedModel",
   ...
   "relations": {
-    "reviews": {
+    "orders": {
       "type": "hasMany",
-      "model": "Review",
-      "foreignKey": "authorId"
+      "model": "Order",
+      "foreignKey": "customerId",
+      "primaryKey": "id" // optional
     },
   ...
 ```

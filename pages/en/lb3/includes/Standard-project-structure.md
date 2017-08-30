@@ -1,12 +1,12 @@
 LoopBack project files and directories are in the _application root directory_.
-Within this directory the standard LoopBack project structure has three sub-directories:
+Within this directory the standard LoopBack project structure has these sub-directories:
 
 * `server` - Node application scripts and configuration files.
-* `client` - Client JavaScript, HTML, and CSS files.
-* `common` - Files common to client and server. The `/models` sub-directory contains all model JSON and JavaScript files.
+* `client` - Client JavaScript, HTML, and CSS files (**LoopBack tools only**).
+* `common` - Files common to client and server. The `/models` sub-directory contains model JSON and JavaScript files.  
 * `definitions` - API and product definition YAML files (**IBM API Connect only**).
 
-{% include note.html content="All model JSON and JavaScript files that are shared between client and server go in the `/common/models` directory.  Server-only files go in `/server/models`, and client-only go in`/client/models`
+{% include note.html content="Model JSON and JavaScript files that are shared between client and server go in the `/common/models` directory.  Server-only files go in `/server/models`, and client-only go in`/client/models`
 " %}
 
 <table style="font-size: 90%;">
@@ -19,7 +19,7 @@ Within this directory the standard LoopBack project structure has three sub-dire
   </thead>
   <tbody>    
     <tr>
-      <th colspan="3" style="text-align: center;">Top-level application directory</th>
+      <th colspan="3" style="text-align: center; background-color: #bfbfbf;">Top-level application directory</th>
     </tr>
     <tr>
       <td><code>/node-modules</code> directory</td>
@@ -41,13 +41,18 @@ Within this directory the standard LoopBack project structure has three sub-dire
       <td>N/A</td>
     </tr>
     <tr>
-      <th colspan="3" style="text-align: center;">/server directory - Node application files</th>
+      <th colspan="3" style="text-align: center; background-color: #bfbfbf;">/server directory - Node application files</th>
     </tr>
     <tr>
       <td><code>/boot</code> directory</td>
       <td>Add scripts to perform initialization and setup. See <a href="Events.html">boot scripts</a>.</td>
       <td>Scripts are automatically executed in alphabetical order.</td>
     </tr>
+    <tr>
+      <td><code>/models</code> directory</td>
+      <td>Server-only model definitions.</td>
+      <td>Node:<br><code>myModel = <br/>app.models.myModelName</code></td>
+    </tr>    
     <tr>
       <td><code><a href="component-config.json">component-config.json</a></code></td>
       <td>Specifies <a href="LoopBack-components.html">LoopBack components</a> to load.</td>
@@ -87,7 +92,7 @@ Within this directory the standard LoopBack project structure has three sub-dire
       <td>N/A</td>
     </tr>
     <tr>
-      <th colspan="3" style="text-align: center;">/client directory - Client application files</th>
+      <th colspan="3" style="text-align: center; background-color: #bfbfbf;">/client directory - Client application files</th>
     </tr>
     <tr>
       <td>README.md</td>
@@ -100,7 +105,7 @@ Within this directory the standard LoopBack project structure has three sub-dire
       <td>&nbsp;</td>
     </tr>
     <tr>
-      <th colspan="3" style="text-align: center;">/common directory - shared application files</th>
+      <th colspan="3" style="text-align: center; background-color: #bfbfbf;">/common directory - shared application files</th>
     </tr>
     <tr>
       <td><code>/models</code> directory</td>

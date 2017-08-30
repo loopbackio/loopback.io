@@ -20,7 +20,7 @@ Before starting this tutorial, you must install:
 ### Tutorials
 
 - [Getting started with LoopBack](https://github.com/strongloop/loopback-getting-started)
-- [Tutorial series - Step 1](https://github.com/strongloop/loopback-example#step1)
+- [Tutorial series - Step 1](https://github.com/strongloop/loopback-getting-started/tree/step1)
 
 ### Knowledge
 
@@ -295,7 +295,7 @@ $ lb relation
 ... # follow the prompts, repeat for other models
 ```
 
-> Some relations are not available in `slc`, please add them in `model-name.json` manually.
+> Some relations are not available in `lb`, please add them in `model-name.json` manually.
 > LoopBack [automatically derives](http://docs.strongloop.com/display/LB/BelongsTo+relations#BelongsTorelations-Overview)
 > relation and foreign key names when you leave the values empty.
 
@@ -350,4 +350,4 @@ You should see various links. Each endpoint is defined as follows:
 
 ---
 
-[More LoopBack examples](https://github.com/strongloop/loopback-example)
+[More LoopBack examples](https://loopback.io/doc/en/lb3/Tutorials-and-examples.html)

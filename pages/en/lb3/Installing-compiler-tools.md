@@ -40,51 +40,12 @@ For more information, see the [node-gyp documentation](https://github.com/TooTa
 
 ## Windows
 
-Install the following:
+Install [windows-build-tools](https://github.com/felixrieseberg/windows-build-tools):
 
-*   [Python](http://www.python.org/getit/windows) ([v2.7.3](http://www.python.org/download/releases/2.7.3#download) recommended, v3.x.x is **_not_** supported). 
-*   [Microsoft Visual Studio](http://www.visualstudio.com/) C++ 2013 (or later) for Windows Desktop.  The [Express](http://go.microsoft.com/) version works well.
+`C:\> npm install --global --production windows-build-tools`
 
-For Windows 7:
-
-*   For 64-bit builds of Node and native modules you will also need the [Windows 7 64-bit SDK](http://www.microsoft.com/en-us/download/details.aspx).  If the install fails, try uninstalling any C++ 2010 x64&x86 Redistributable that you have installed first.
-*   If you get errors that the 64-bit compilers are not installed you may also need the [compiler update for the Windows SDK 7.1](http://www.microsoft.com/en-us/download/details.aspx).
-
-### Python
-
-`npm` uses Python 2.7 (not 3.x, and not 2.6.x or earlier) to install packages with compiled add-ons (such as strong-agent, or websocket support).
-
-Download Python 2.7.x from [http://python.org](http://python.org/):
-
-1.  Go to [https://www.python.org/downloads/windows/](https://www.python.org/downloads/windows/)
-2.  Download latest stable 2.7.x Windows MSI Installer, either x86 or x86-64, as appropriate
-3.  Run installer, and make sure to add to Path:
-    *   Accept the default, **Install for all users**.
-    *   Accept default "c:\Python27" for Python files.
-    *   Enable the option **Add python.exe to Path**.
-
-### Visual Studio
-
-{% include note.html content="
-Visual Studio Community is free, and more than adequate to support Node.js.
-
-Node.js does not support gcc, mingw, Cygwin, and other ports of non-Microsoft compilers to Windows.
-" %}
-
-`npm` uses Visual Studio 2012 or later to install packages with compiled add-ons (like strong-agent, or websocket support).  
-
-For Windows 7 and 8, use **Microsoft Visual Studio 2015** (Community):
-
-1.  Go to: [https://www.visualstudio.com/downloads/download-visual-studio-vs](https://www.visualstudio.com/downloads/download-visual-studio-vs)
-2.  Select "Download Community Free", then download "**vs_community_ENU.exe**" , and next
-
-If the download doesn't start, click the **Click here** link, then on the next download page, click the **Click here** link beside **vs_community_ENU.exe**.
-
-Run the installer, check "Visual C++" under "Programming Languages", and accept the default location.
-
-{% include note.html content="This installation may take a long time.
-" %}
-
+This downloads Python 2.7.x and and Visual C++ Build Tools 2015. These tools are required to compile popular native modules. It will also configure your machine and npm appropriately. Both installations are conflict-free, meaning that they do not mess with existing installations of Visual Studio, C++ Build Tools, or Python.
+ 
 ## MacOS
 
 Install:

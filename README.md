@@ -12,8 +12,11 @@ To preview the website locally:
 
 1. Install [Ruby and Bundler](https://help.github.com/articles/setting-up-your-pages-site-locally-with-jekyll/) if you don't have them already.
 
-1. `cd` to the repository directory and run the following command:
-
+2. Clone this repo (you might use the SSH URL instead of HTTPS).:
+```
+git clone https://github.com/strongloop/loopback.io.git
+```
+3. `cd` to the repository directory and run the following command:
 ```
 $ cd loopback.io
 $ bundle install
@@ -26,7 +29,7 @@ Bundler will look in the Gemfile for which gems to install. The `github-pages` g
 Run Jekyll using the following command:
 
 ```
-$ bundle exec jekyll serve
+$ npm start
 ```
 
 Then, load [http://localhost:4001/](http://localhost:4001/) on your browser.
@@ -69,7 +72,7 @@ summary: A brief tutorial on creating an Angular client app using the Loopback A
 
 ### Linting Readmes
 
-There is an additional `npm script` that "lints" the readmes for markdown formatting problems. It is currently "experimental", see #49 for more info.
+There is an additional `npm script` that "lints" the readmes for markdown formatting problems. It is currently "experimental", see [this issue](https://github.com/strongloop/loopback.io/issues/49#issuecomment-253672668) for more info.
 
 You can run this script thus:
 

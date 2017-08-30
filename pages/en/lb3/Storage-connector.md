@@ -22,17 +22,7 @@ This will install the module from npm and add it as a dependency to the applicat
 
 ## Creating a storage data source
 
-Create a new push data source with the [data source generator](Data-source-generator.html):
-
-<div id="lb3apic" class="sl-hidden" markdown="1">
-```shell
-$ apic create --type datasource
-```
-</div>
-
-```shell
-$ lb datasource
-```
+Create a new push data source with the [data source generator](Data-source-generator.html).
 
 When prompted, select **other** as the connector.
 
@@ -70,7 +60,7 @@ for example as shown in the [storage service example](https://github.com/strong
 ## Creating a storage model
 
 Use the [model generator](Model-generator.html) to create a new model, then edit the `model.json` file, 
-as shown in the [storage service example](https://github.com/strongloop/loopback-component-storage/blob/master/example-2.0/):
+as shown in the [storage service example](https://github.com/strongloop/loopback-example-storage):
 
 {% include code-caption.html content="/server/models/container.json" %}
 ```javascript

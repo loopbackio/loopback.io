@@ -12,7 +12,7 @@ summary:
 The `/client` directory is where you put client JavaScript, HTML, and CSS files.
 
 {% include note.html content="
-Only the [StrongLoop tools](Installing-StrongLoop.html) create this directory; the [API Connect tools](Installing-IBM-API-Connect.html) do not.
+Only the LoopBack CLI tool (`lb`) creates this directory; the IBM API Connect tools do not.
 " %}
 
 The [application generator](Application-generator.html) 

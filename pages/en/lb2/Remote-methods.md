@@ -479,14 +479,13 @@ So a GET request to `http://localhost:3000/api/people/sayhi?msg=LoopBack%20deve
 
     <div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>common/models/customer.js</b></div>
     <pre class="theme: Emacs; brush: js; gutter: false" style="font-size:12px;">module.exports = function(Customer) {
-  Customer.prototype.getFullName = function() {
-    return this.firstName - ' ' - this.lastName;
-  };
-
-  Customer.listVips = function(cb) {
-    this.find({where: {vip: true}}, cb);
-  }
-} </pre></div>
+    Customer.prototype.getFullName = function() {
+      return this.firstName - ' ' - this.lastName;
+    };
+    Customer.listVips = function(cb) {
+      this.find({where: {vip: true}}, cb);
+    }
+    } </pre></div>
   </div>
 </div>
 

@@ -7,7 +7,7 @@ keywords: LoopBack
 tags: [getting_started, angularjs]
 sidebar: lb3_sidebar
 permalink: /doc/en/lb3/Create-AngularJS-client.html
-summary: The LoopBack AngularJS SDK enables you to easily creates a client JavaScript API to consume your LoopBack REST API.
+summary: The LoopBack AngularJS SDK enables you to easily create a client JavaScript API to consume your LoopBack REST API.
 ---
 
 {% include content/gs-prereqs.html two="true" lang=page.lang %}
@@ -41,7 +41,13 @@ For more information, see [AngularJS JavaScript SDK](AngularJS-JavaScript-SDK).
 
 ## Generate lb-services.js
 
-To generate the Angular services for a LoopBack application, use the AngularJS SDK `lb-ng` command-line tool.  First, create the `client/js/services` directory, if you don't already have it (by using the `mkdir` command, for example), then in the project root directory, enter the `lb-ng` command as follows:
+To generate the Angular services for a LoopBack application, use the AngularJS SDK `lb-ng` command-line tool.  You may need to install `lb-ng` with the following command.  
+
+```
+$ npm install -g loopback-sdk-angular-cli
+```
+
+Next, create the `client/js/services` directory, if you don't already have it (by using the `mkdir` command, for example), then in the project root directory, enter the `lb-ng` command as follows:
 
 ```
 $ mkdir -p client/js/services

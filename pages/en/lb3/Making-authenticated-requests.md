@@ -51,9 +51,9 @@ The Loopback Angular SDK doesn't support using cookies, and expects you to be u
 
 " %}
 
-## Using current user id as a literal in URLs for REST
+## Enable vanity user URLs
 
-To allow the current logged in user id for REST APIs,  configure the token middleware with currentUserLiteral options. 
+To display vanity user URLs, configure the token middleware with currentUserLiteral options. 
 
 {% include code-caption.html content="/server/server.js" %}
 ```javascript

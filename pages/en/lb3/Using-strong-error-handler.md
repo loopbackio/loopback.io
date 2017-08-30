@@ -2,6 +2,7 @@
 title: "Using strong-error-handler"
 lang: en
 layout: readme
+toc: true
 source: strong-error-handler
 keywords: LoopBack
 tags:

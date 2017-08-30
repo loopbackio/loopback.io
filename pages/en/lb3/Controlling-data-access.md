@@ -161,21 +161,19 @@ Each incoming request is mapped to an object with three attributes:
 ACL rules are described as an array of objects, each of which consists of attributes listed at 
 [Model definition JSON file - ACLs](Model-definition-JSON-file.html#acls). 
 
-1.  model
-2.  property
-3.  accessType
-4.  principalType
-    1.  USER
-    2.  APP
-    3.  ROLE
-        1.  custom roles
-        2.  $owner
-        3.  $authenticated
-        4.  $unauthenticated
-        5.  $everyone
-5.  permission
-    1.  DENY
-    2.  ALLOW
+*  model
+*  property
+*  accessType
+*  principalType
+    *  USER: a user ID
+    *  APP: an application ID
+    *  ROLE: a role name
+        *  _built-in dynamic roles_, one of [`$everyone`, `$unauthenticated`, `$authenticated`, `$owner`]
+        *  [_custom static roles_](Defining-and-using-roles.html#static-roles), directly mapped to principals
+        *  [_custom dynamic roles_](Defining-and-using-roles.html#dynamic-roles), registered with custom role resolvers
+*  permission
+    *  DENY
+    *  ALLOW
 
 ### ACL rule precedence
 
@@ -206,10 +204,10 @@ It calculates the specifics by checking the access request against each ACL rule
 At each level, the matching yields three points:
 
 * 3: exact match
-* 2: wildcard match ('*')
+* 2: wildcard match (`'*'`)
 * -1: no match
 
-Higher-level matches take precedence over lower-level matches. For example, the exact match at model level will overweight the wildcard match.
+Higher-level matches take precedence over lower-level matches. For example, the exact match at model level will override the wildcard match.
 
 For example, consider the following access request:
 
@@ -255,7 +253,102 @@ Assuming the following ACL rules are defined:
 ]
 ```
 
-The order of ACL rules will be #3, #2, #1\. As a result, the request will be rejected as the permission set by rule #3 is 'DENY' .
+The order of ACL rules will be #3, #2, #1. As a result, the request will be rejected since the permission set by rule #3 is 'DENY'.
+
+## Authorization scopes
+
+{% include warning.html content="
+The current implementation of authorization scopes is very low-level and may not suit all users. Please join the discussion in [issue #3339](https://github.com/strongloop/loopback/issues/3339) to help us build the best high-level API for this feature.
+" %}
+
+LoopBack's built-in authorization algorithm allows application to limit
+access to remote methods using the concept of _authorization scopes_. The implementation
+is similar to [oAuth2 Access Token Scope](https://tools.ietf.org/html/rfc6749#section-3.3).
+
+Authorization scopes work together with role/ACL-based authorization as follows:
+ 1. The authorization algorithm checks whether the access token
+    was granted by at least one of the scopes required by the accessed resource.
+    If this check fails, then the request is denied as not authorized.
+ 2. Next, the ACL rules are checked to make sure the established principal
+    is allowed to access the protected resource. If this check fails, then the request is denied.
+ 3. If both scope and ACL checks passed, the request is authorized
+    and the remote method is executed.
+
+To use this feature, follow these steps:
+
+ 1. Define scopes required by remote methods
+ 2. Add API for creating scoped AccessTokens
+
+{% include note.html content="
+LoopBack provides the built-in scope `DEFAULT` that is used whenever a method does not define any scopes or an access token does not contain any allowed scopes. This preserves backwards compatibility for existing applications.
+" %}
+
+### Define scopes required by remote methods
+
+The `methods.accessScopes` property in the model JSON file defines scopes as part of remoting metadata.
+A user can invoke the remote method if their access token
+is granted by at least one of the scopes listed in `accessScopes` array.
+
+Example configuration:
+
+{% include code-caption.html content="common/models/user.json" %}
+```json
+{
+  // ...
+  "methods": {
+    "prototype.getProfile": {
+      "accepts": [],
+      "returns": { "arg": "data", "type": "User", "root": true},
+      "http": {"verb": "get", "path": "/profile"},
+      "accessScopes": ["read", "read:profile"]
+    }
+  }
+}
+```
+
+All built-in methods (for example, `PersistedModel.create`) have the default
+`DEFAULT` scope. There is no straightforward way to customize the scopes
+of built-in remote methods; please join the discussion in
+[issue #3339](https://github.com/strongloop/loopback/issues/3339)
+to help us find the best solution.
+
+### Create scoped access tokens
+
+The built-in `User.login` method creates an access token with no scopes, that is,
+with the built-in `DEFAULT` scope. This allows users to invoke all
+built-in methods and any custom methods added before the scoping feature was
+introduced.
+
+It's up to the application developer to decide how to generate access tokens
+limited to a different set of scopes.
+
+The example below shows how to create a new remote method to issue tokens
+for external applications that allow these apps to read only a user's profile
+data.
+
+{% include code-caption.html content="common/models/user.js" %}
+```js
+module.exports = function(User) {
+  User.instance.createTokenForExternalApp = function(cb) {
+    this.accessTokens.create({
+      ttl: -1,
+      scopes: ['read:profile'],
+    }, cb);
+  };
+};
+```
+
+### Migration
+
+To upgrade an application from an earlier version of LoopBack 3.x, follow these steps:
+
+ - As common with semver-minor updates, update database schemas
+   to accomodate any newly-added properties. For more information, see
+   [Creating a database schema from models (Auto-update)](Creating-a-database-schema-from-models.html#auto-update).
+
+ - If the application was already using a custom `AccessToken.scopes`
+   property with a type different from an array, then update the relevant code
+   to work with the type "array of strings".
 
 ## Debugging
 

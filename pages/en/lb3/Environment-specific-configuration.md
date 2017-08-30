@@ -21,6 +21,12 @@ LoopBack applications have the following types of configuration files:
 * **Middleware configuration files**, by default `server/middleware.json`.
 * **Configuration files for LoopBack components**, by default `server/component-config.json`.
 
+{% include note.html content="Using `*.js` files to configure a LoopBack application will only work
+when the original `.json` files are kept in place. Rather than replacing `.json` files with `.js`
+files, you should be overriding values from `.json` files in `.js` files. That said, by leaving
+the default `.json` files empty, all configuration can be done in `.js` files.
+"%}
+
 LoopBack will always load the following configuration files, if they exist:
 
 * `server/config.json`.
@@ -54,23 +60,27 @@ The value set by the file with the highest priority will always take effect. The
 3.  **Default configuration file**; for example, `server/config.json`.
 " %}
 
-Here are some examples of the application configuration files:
+Examples of the application configuration files:
 
 * [config.json](https://github.com/strongloop/loopback-example-full-stack/blob/master/server/config.json)
 * [config.local.js](https://github.com/strongloop/loopback-example-full-stack/blob/master/server/config.local.js)
 
-Here are some examples of data source configuration files:
+Examples of data source configuration files:
 
 * [datasources.json](https://github.com/strongloop/loopback-example-full-stack/blob/master/server/datasources.json)
 * [datasources.production.js](https://github.com/strongloop/loopback-example-full-stack/blob/master/server/datasources.production.js)
 * [datasources.staging.js](https://github.com/strongloop/loopback-example-full-stack/blob/master/server/datasources.staging.js)
 
-Here are some examples of the middleware configuration files, the `server/middleware{._env_}.json` file:
+Examples of the middleware configuration files:
 
 * [middleware.json](middleware.json.html)
-* middleware.production.json
+* [middleware.development.json](middleware.development.json.html)
 
 For an example application, see [https://github.com/strongloop/loopback-example-full-stack/tree/master/server](https://github.com/strongloop/loopback-example-full-stack/tree/master/server).
+
+{% include important.html content="
+Even with environment-specific configuration files, LoopBack still requires the default base file(s). An empty object within the JSON file is sufficient.
+" %}
 
 ## Application-wide configuration
 
@@ -154,21 +164,14 @@ This file includes the following that will include stack traces in HTTP response
 You can override values set in `datasources.json` in the following files:
 
 * `datasources.local.js` or `datasources.local.json`
-* <code>datasources.<i>env</i>.js<c/ode> or <code>datasources.<i>env</i>.json</code>, where _`env`_ is the value of `NODE_ENV` environment variable (typically `development` or `production`).
+* <code>datasources.<i>env</i>.js</code> or <code>datasources.<i>env</i>.json</code>, where _`env`_ is the value of `NODE_ENV` environment variable (typically `development` or `production`).
   For example, `datasources.production.json`.
-
-{% include important.html content="
-The additional files can override the top-level data-source options with string and number values only. You cannot use objects or array values.
-" %}
 
 Example data sources:
 
 {% include code-caption.html content="datasources.json" %}
 ```javascript
 {
-  // the key is the datasource name
-  // the value is the config object to pass to
-  // app.dataSource(name, config).
   db: {
     connector: 'memory'
   }
@@ -187,9 +190,9 @@ Example data sources:
 }
 ```
 
-You can also configure your datasource._\_env\__.js file to use environment variables:
+You can also configure your <code>datasource.<i>env</i>.js</code> file to use environment variables:
 
-{% include code-caption.html content="datasources.production.json" %}
+{% include code-caption.html content="datasources.production.js" %}
 ```javascript
 module.exports = {
   db: {
@@ -207,7 +210,7 @@ the datasource.
 
 ## Getting values from environment variables
 
-You can easily set an environment variable when you run an application. The command you use depends on your operating system.
+You can easily get the value of an environment variable in an application. The command you use depends on your operating system.
 
 ### MacOS and Linux
 

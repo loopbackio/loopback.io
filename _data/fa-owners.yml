@@ -2,11 +2,13 @@
   - area: 'API definition'
     label: api-definition
     owner:
-    - sq-lb-epitome
+    - sq-lb-asteroid
     repos:
     - loopback-api-definition
     - loopback-component-explorer
     - loopback-swagger
+    community:
+    - STRML
 
 'Boot':
   - area: Boot
@@ -24,7 +26,7 @@
   - area: 'Passport'
     label: component-passport
     owner:
-    - sq-lb-epitome
+    - sq-lb-apex
     repos:
     - loopback-component-passport
     - loopback-example-passport
@@ -34,7 +36,7 @@
   - area: 'Push notifications'
     label: component-push
     owner:
-    - sq-lb-epitome
+    - sq-lb-asteroid
     repos:
     - loopback-component-push
     - loopback-example-push
@@ -44,7 +46,7 @@
   - area: 'Storage'
     label: component-storage
     owner:
-    - sq-lb-epitome
+    - sq-lb-asteroid
     repos:
     - loopback-component-storage
     - loopback-example-storage
@@ -55,7 +57,7 @@
   - area: 'Email'
     label: connector-email
     owner:
-    - sq-lb-epitome
+    - sq-lb-apex
     repos:
     - loopback-component-email
     smes:
@@ -65,7 +67,7 @@
   - area: 'HTTP'
     label: connector-http
     owner:
-    - sq-lb-epitome
+    - sq-lb-apex
     repos:
     - loopback-connector-jsonrpc
     - loopback-connector-remote
@@ -84,7 +86,7 @@
     - loopback-connector-kv-memcached
     - loopback-connector-kv-redis
     files:
-    - https://github.com/strongloop/loopback/tree/master/common/models
+    - https://github.com/strongloop/loopback/tree/master/common/models/key-value-model.js
     - https://github.com/strongloop/loopback-datasource-juggler/blob/master/connectors/kv-memory.js
     - https://github.com/strongloop/loopback-datasource-juggler/blob/master/lib/kvao.js
     smes:
@@ -94,7 +96,7 @@
   - area: 'Messaging'
     label: connector-messaging
     owner:
-    - sq-lb-epitome
+    - sq-lb-apex
     repos:
     - loopback-connector-mqlight
     smes:
@@ -204,6 +206,9 @@
     - jannyHou
     - Amir-61
     - superkhau
+    community:
+    - fabien
+    - clarkorz
 
   - area: 'Validation'
     label: juggler-validation
@@ -217,18 +222,26 @@
     - superkhau
 
 'LoopBack':
-  - area: 'Auth'
+  - area: 'Authentication and access control'
     label: loopback-auth
     owner:
-    - sq-lb-epitome
+    - sq-lb-apex
     repos:
     - loopback-component-oauth2
     - loopback-example-access-control
     - loopback-example-ssl
     - loopback-example-user-management
     - loopback-policy
+    files:
+    - https://github.com/strongloop/loopback/tree/master/common/models/access-token.js
+    - https://github.com/strongloop/loopback/tree/master/common/models/acl.js
+    - https://github.com/strongloop/loopback/tree/master/common/models/role-mapping.js
+    - https://github.com/strongloop/loopback/tree/master/common/models/role.js
+    - https://github.com/strongloop/loopback/tree/master/lib/acces-context.js
     smes:
     - loay
+    community:
+    - ebarault
 
   - area: 'Glue'
     label: glue
@@ -240,7 +253,7 @@
   - area: 'Logging'
     label: logging
     owner:
-    - sq-lb-epitome
+    - sq-lb-asteroid
     repos:
     - loopback-logger
     smes:
@@ -259,7 +272,7 @@
   - area: 'Registries'
     label: loopback-registry
     owner:
-    - sq-lb-epitome
+    - sq-lb-asteroid
     repos:
     - loopback-getting-started
     - loopback-getting-started-intermediate
@@ -273,7 +286,7 @@
   - area: 'Remoting'
     label:  remoting
     owner:
-    - sq-lb-epitome
+    - sq-lb-asteroid
     repos:
     - loopback-example-offline-sync
     - loopback-phase
@@ -290,7 +303,7 @@
   - area: 'Android'
     label: sdk-android
     owner:
-    - sq-lb-epitome
+    - sq-lb-apex
     repos:
     - loopback-android-getting-started
     - loopback-sdk-android
@@ -301,7 +314,7 @@
   - area: 'Angular 1.x'
     label: sdk-angular
     owner:
-    - sq-lb-epitome
+    - sq-lb-apex
     repos:
     - angular-live-set
     - grunt-loopback-sdk-angular
@@ -313,11 +326,13 @@
     smes:
     - davidcheung
     - 0candy
+    community:
+    - zmln
 
   - area: 'iOS'
     label: sdk-ios
     owner:
-    - sq-lb-epitome
+    - sq-lb-apex
     repos:
     - loopback-sdk-ios
     - loopback-sdk-ios-codegen
@@ -338,12 +353,11 @@
     - rashmihunt
 
 'Other':
-  - area: Other
+  - area: Project infrastructure
     label: N/A
     owner:
     - sq-lb-apex
     - sq-lb-asteroid
-    - sq-lb-epitome
     repos:
     - eslint-config-loopback
     - loopback-sandbox
@@ -351,3 +365,14 @@
     files:
     - https://github.com/strongloop-internal/loopback-knowledge-base
     smes:
+
+  - area: loopback-context
+    label: N/A
+    owner:
+    - qs-lb-asteroid
+    repos:
+    - loopback-context
+    smes:
+    - bajtos
+    community:
+    - josieusa

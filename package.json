@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "This file: Node-dependant workflow scripts for the jekyll-based site",
   "scripts": {
+    "start": "bundle exec jekyll serve --incremental",
     "fetch-readmes": "get-readmes --repos=./_data --out=./_includes/readmes",
     "lint-readmes" : "markdownlint _includes/readmes/"
   },

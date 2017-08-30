@@ -11,6 +11,8 @@ permalink: /doc/en/lb3/Other-connectors.html
 summary: LoopBack supports a number of connectors to backend systems beyond databases.
 ---
 
+## Overview
+
 These types of connectors often implement specific methods depending on the underlying system.
 For example, the REST connector delegates calls to REST APIs while the Push connector integrates with iOS and Android push notification services. 
 
@@ -45,14 +47,8 @@ The model is configured to attach to the REST data source.
 
 ## Available connectors
 
-Officially-supported non-database connectors include:
+The officially-supported non-database connectors are:
 
-* [Email connector](Email-connector.html)
-* [JSON-RPC connector](JSON-RPC-connector.html)
-* [MQ Light connector](MQLight-connector.html)
-* [Push connector](Push-connector.html)
-* [Remote connector](Remote-connector.html)
-* [REST connector](REST-connector.html)
-* [SOAP connector](SOAP-connector.html)
-* [Storage connector](Storage-connector.html)
-* [Swagger connector](Swagger-connector.html)
+{% for item in site.data.sidebars.lb3_sidebar.children %}
+  {% include list-children.html children=item.children title=page.title %}  
+{% endfor %}

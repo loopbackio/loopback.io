@@ -56,9 +56,26 @@ The tool will then add an entry such as the following to `datasources.json`:
 
 This example creates a MySQL data source called "corp1". The identifier determines the name by which you refer to the data source and can be any string.
 
+Next, the generator will prompt you to type the datasource settings, such as
+host, port, user, password and database name, as well as to install the database connector.
+
+```shell
+? Enter the datasource name: corp1
+? Select the connector for corp1: MySQL (supported by StrongLoop)
+? Connection String url to override other settings (eg: mysql://user:pass@host/db):
+? host: your-mysql-server.foo.com
+? port: 3306
+? user: demo
+? password: ****
+? database: demo
+? Install loopback-connector-mysql@^1.4 Yes
+```
+
+Install the database connector when it prompts you or if you wish to install separately you can do so by `npm install loopback-connector-<connector_name> --save`. If you do not enter the database credentials when prompted, then you must add them manually to `server/datasources.json` as shown below.
+
 ## Add data source credentials
 
-Edit `datasources.json` to add the necessary authentication credentials for the data source; typically hostname, username, password, and database name.
+Edit `server/datasources.json` to add the necessary authentication credentials for the data source; typically hostname, username, password, and database name.
 
 For example:
 
@@ -80,6 +97,16 @@ When you create a new model with the [model generator](Model-generator.html),
 you can specify the data source you want it to use from among those you've added to the application using the
 [Data source generator](Data-source-generator.html) and the default `db`
 data source (that uses the [memory connector](Memory-connector.html)).
+
+To create a model, run `slc loopback:model` or `apic create --type model`.
+
+```shell
+? Enter the model name: myModel
+? Select the data-source to attach myModel to:
+   db (memory)
+ ❯ corp1 (mysql)
+   (no data-source) 
+```
 
 To change the data source a model uses after you've created the model, edit the application's `server/model-config.json`
 and set the dataSource property for the model. For example, to make myModel use the corp1 data source:

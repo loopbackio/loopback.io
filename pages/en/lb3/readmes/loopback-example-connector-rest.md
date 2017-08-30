@@ -1,13 +1,13 @@
 [strongloop-website]: http://strongloop.com/
 
-# loopback-example-rest-connector
+# loopback-example-connector (REST)
 
 - [Overview](#Overview)
 - [Running the app](#running-the-app)
 - [FAQs](#faqs)
 
 ## Overview
-This example demonstrates basic usage of [loopback-connector-rest](https://github.com/strongloop/loopback-connector-rest). 
+This example demonstrates basic use of [loopback-connector-rest](https://github.com/strongloop/loopback-connector-rest). 
 
 The project has two servers: `local-server` and `external-server`. The "external" server
 serves a simple REST API, while the local server fetches data using
@@ -16,8 +16,10 @@ this REST API.
 ## Running the app
 
 ```
-$ git clone https://github.com/strongloop/loopback-example-rest-connector.git
-$ cd loopback-example-rest-connector/external-server
+$ git clone https://github.com/strongloop-community/loopback-example-connector.git
+$ cd loopback-example-connector
+$ git checkout rest
+$ cd external-server
 $ npm install
 $ node .
 ```
@@ -55,7 +57,3 @@ request. For example, we name our property `find` because we will trigger the
 request using `Magazine.find()...`.
 
 The idea is to use [`find`](https://github.com/strongloop/loopback-example-rest-connector/blob/master/local-server/server/datasources.json#L16) to make a [`GET`](https://github.com/strongloop/loopback-example-rest-connector/blob/master/local-server/server/datasources.json#L12) request to a [`url`](https://github.com/strongloop/loopback-example-rest-connector/blob/master/local-server/server/datasources.json#L13) we specify.
-
----
-
-[More LoopBack examples](https://github.com/strongloop/loopback-example)

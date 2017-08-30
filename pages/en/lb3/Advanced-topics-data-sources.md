@@ -1,12 +1,12 @@
 ---
-title: "Understanding data sources"
+title: "Advanced topics: Data sources"
 lang: en
 layout: page
 keywords: LoopBack
 tags: [data_sources]
 sidebar: lb3_sidebar
 permalink: /doc/en/lb3/Advanced-topics-data-sources.html
-summary:
+summary: The DataSource object provides an abstraction to interact with backend services that decouples business logic from plumbing technologies.
 ---
 
 {% include image.html file="9830485.png" alt="Relationship between models, data sources, and connectors" %}
@@ -17,12 +17,9 @@ The diagram illustrates the relationship between LoopBack `Model`, `DataSource
 
 1.  Define the model.
 
-2.  Create an instance of `ModelBuilder` or `DataSource`. `DataSource` extends from `ModelBuilder`.
-    ModelBuilder is responsible for compiling model definitions to JavaScript constructors representing model classes.
-    DataSource inherits that function from ModelBuilder.
+2.  Create an instance of `ModelBuilder` or `DataSource`. `DataSource` extends from `ModelBuilder`. `ModelBuilder` is responsible for compiling model definitions to JavaScript constructors representing model classes.  `DataSource` inherits that function from ModelBuilder.
 
-3.  Use `ModelBuilder` or `DataSource` to build a JavaScript constructor (i.e. the model class) from the model definition.
-    Model classes built from `ModelBuilder` can be later attached to a DataSource to receive the mixin of data access functions.
+3.  Use `ModelBuilder` or `DataSource` to build a JavaScript constructor (i.e. the model class) from the model definition.  Model classes built from `ModelBuilder` can be later attached to a DataSource to receive the mixin of data access functions.
 
 4.  As part of step 2, `DataSource` initializes the underlying `Connector` with a settings object which provides configurations to the connector instance. 
     `Connector` collaborates with `DataSource` to define the functions as `DataAccessObject` to be mixed into the model class.
@@ -33,7 +30,10 @@ The `DataSource` object is the unified interface for LoopBack applications to 
 It's a factory for data access logic around model classes. With the ability to plug in various connectors,
 `DataSource` provides the necessary abstraction to interact with databases or services to decouple the business logic from plumbing technologies.
 
-## Creating a DataSource programmatically
+## Creating a data source programmatically
+
+{% include warning.html content="Don't put production database credentials explicitly in JSON or JavaScript files, where they could be a security vulnerability.  Instead, load the values from environment variables.  For more information, see [Specifying database credentials with environment variables](Attaching-models-to-data-sources.html#specifying-database-credentials-with-environment-variables)
+"%}
 
 The [`DataSource` constructor](http://apidocs.strongloop.com/loopback-datasource-juggler/#datasource) accepts the following arguments:
 

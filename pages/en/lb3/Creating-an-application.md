@@ -14,34 +14,34 @@ summary: Use the LoopBack application generator to create a new application.
 
 ## Using the application generator
 
-The easiest way to create an application is to use [Application generator](Application-generator.html).
+The easiest way to create an application is to use [Application generator](Application-generator.html).
 
-It is possible to create a LoopBack application by coding it from scratch, but 
-the application generator does all the "heavy lifting" to create the basic scaffolding of the [standard project layout](Project-layout-reference.html).
+It is possible to create a LoopBack application by coding it from scratch, but
+the application generator does all the "heavy lifting" to create the basic scaffolding of the [standard project layout](Project-layout-reference.html).
 You can then customize the application to suit your needs using the CLI tools.
 
 In general, the documentation assumes you've created your application using the Application generator.
 
-Once you create your application, you may want to configure it, for example: 
-Turn off stack traces, disable API Explorer, and retrieve the values of environment variables.
+Once you create your application, you may want to configure it, for example:
+Turn off stack traces, disable API Explorer, and retrieve the values of environment variables.
 See [Environment-specific configuration](Environment-specific-configuration.html) for more information.
 
 ## Standard project layout
 
-The application generator creates an application with the [standard project layout](Project-layout-reference.html).
+The application generator creates an application with the [standard project layout](Project-layout-reference.html).
 
 To summarize:
 
 * `server` directory
   * `server.js` - Main application script; see below.
-  * `config.json` - Global application settings, such as the REST API root, host name and port to use, and so on.
-      See [config.json](config.json.html).
-  * `model-config.json` - Binds models to data sources and specifies whether a model is exposed over REST, among other things.  
-      See [model-config.json](model-config.json.html).
-  * `datasources.json` - Data source configuration file.
-      See [datasources.json](datasources.json.html).
+  * `config.json` - Global application settings, such as the REST API root, host name and port to use, and so on.
+      See [config.json](config.json.html).
+  * `model-config.json` - Binds models to data sources and specifies whether a model is exposed over REST, among other things.
+      See [model-config.json](model-config.json.html).
+  * `datasources.json` - Data source configuration file.
+      See [datasources.json](datasources.json.html).
 * `client` directory (empty except for a README stub)
-* `common/models` directory - created when you create a model with the model generator](Model-generator.html).
+* `common/models` directory - created when you create a model with the [model generator](Model-generator.html).
   * A JSON file and a JavaScript file for each model (for example, `my-model.json` and `my-model.js`).
 
 ## Main application script (server.js)

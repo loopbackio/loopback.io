@@ -2,12 +2,13 @@
 title: "Customizing models"
 layout: navgroup
 navgroup: models
+to_level: 2
 keywords: LoopBack
 tags: models
 lang: en
 sidebar: lb3_sidebar
 permalink: /doc/en/lb3/Customizing-models.html
-summary:
+summary: You can customize a basic model through JSON or JavaScript code.
 ---
 
 Once you've created a model with the [model generator](Model-generator.html), you can start customizing it.
@@ -76,11 +77,11 @@ Currently you cannot modify a built-in model's required properties. If you need 
 " %}
 
 You can create custom models that extend from a single base custom model.
-For example, to define a model called `MyModel` that extends from a custom model you defined called `mMyBaseModel`,
+For example, to define a model called `MyModel` that extends from a custom model you defined called `MyBaseModel`,
 create MyModel using [model generator](Model-generator.html) 
 then edit the JSON file `common/models/MyModel.json` as follows:
 
-{% include code-caption.html content="/common/models/model.json" %}
+{% include code-caption.html content="/common/models/MyModel.json" %}
 ```javascript
 {
   "name": "Example",
@@ -90,7 +91,7 @@ then edit the JSON file `common/models/MyModel.json` as follows:
 
 You can add new properties when you extend a model, for example:
 
-{% include code-caption.html content="/common/models/model.json" %}
+{% include code-caption.html content="/common/models/MyModel.json" %}
 ```javascript
 {
    "name": "Customer",
@@ -170,7 +171,7 @@ module.exports = function(app) {
           cache[key] = results;
         }
         cb(err, results);
-      });;
+      });
     }
   }
 }
@@ -194,6 +195,6 @@ module.exports = function(MyModel) {
 
 References:
 
-* [https://github.com/strongloop/loopback/issues/443](https://github.com/strongloop/loopback/issues/443)
-* [https://github.com/strongloop/loopback-datasource-juggler/issues/427](https://github.com/strongloop/loopback-datasource-juggler/issues/427)
-* [https://github.com/strongloop/loopback/issues/1077](https://github.com/strongloop/loopback/issues/1077)
+* [A way to override remote methods](https://github.com/strongloop/loopback/issues/443)
+* [Override User.find not working on juggler 2.15.0](https://github.com/strongloop/loopback-datasource-juggler/issues/427)
+* [How to override 'find' function in model](https://github.com/strongloop/loopback/issues/1077)

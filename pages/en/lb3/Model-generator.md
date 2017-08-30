@@ -14,34 +14,29 @@ summary:
 ### Synopsis
 
 Adds a new model to a LoopBack application.
-<div id="lb3apic" class="sl-hidden" markdown="1">
-```
-apic create --type model [options] [<name>]
-```
-
-Or:
-</div>
 
 ```
-$ lb model [options] [<name>]
+lb model [options] [<name>]
+```
+
+With IBM API Connect developer toolkit:
+
+```
+apic create --type model [options] [--name <name>]
 ```
 
 With legacy StrongLoop tools:
 
 ```
-slc loopback:model [options] [<name>]
+slc model [options] [<name>]
 ```
 
 ### Options
 
-`-h, --help`
-Print the generator's options and usage.
+`--bluemix`
+: Lists only Bluemix data sources in the datasource option for the new model.
 
-`--skip-cache`
-Do not remember prompt answers. Default is false.
-
-`--skip-install`
-Do not automatically install dependencies. Default is false.
+{% include_relative includes/CLI-std-options.md %}
 
 ### Arguments
 
@@ -55,8 +50,9 @@ The tool will prompt you for:
 * Name of the model.  
   If you supplied a name on the command-line, just hit Enter to use it.
 * Data source to which to attach the model. 
-  The tool will list all data sources defined in the application's [`datasources.json`](datasources.json.html) file.
+  If you run the generator without the `--bluemix` option, the tool will list all data sources defined in the application's [`datasources.json`](datasources.json.html) file.
   By default, only the [Memory connector](Memory-connector.html) data source exists. 
+  If you run the generator with the `--bluemix` option, you will be prompted to select a Bluemix datasource. If no Bluemix datasource was added, the generator will exit with an error message. 
   Add additional data sources using the [Data source generator](Data-source-generator.html).
 * Whether you want to expose the model over a REST API.
   If the model is exposed over REST, then all the standard create, read, update, and delete (CRUD) operations are available via REST endpoints.
@@ -72,4 +68,4 @@ Then, the tool will invoke the [Property generator](Property-generator.html) an
 
 ### Output
 
-Depending your response to the last prompt, the tool will create a new file defining the model; either `/common/models/_model-name_.json` (for use by client and server) or `/server/models/_model-name_.json` (server only).  See [Model definition JSON file](Model-definition-JSON-file.html) for details.
+Depending your response to the last prompt, the tool will create a new file defining the model; either <code>/common/models/<i>model-name</i>.json</code> (for use by client and server) or <code>/server/models/<i>model-name</i>.json</code> (server only).  See [Model definition JSON file](Model-definition-JSON-file.html) for details.

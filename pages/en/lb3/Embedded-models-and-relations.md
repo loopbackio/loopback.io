@@ -64,14 +64,15 @@ Customer.embedsOne(Address, {
 
 ### Options
 
-* forceId - force generation of ida for embedded items, default to false
+* forceId - force generation of id for embedded items, default to false
 * validate - denote if the embedded items should be validated, default to true
 * persistent - denote if the embedded items should be persisted, default to false
 
 ### Define the relation in JSON
 
 {% include code-caption.html content="common/models/customer.json" %}
-```javascript
+
+```js
 {
   "name": "Customer",
   "base": "PersistedModel",
@@ -117,14 +118,14 @@ For example, if `Customer embedsOne Address`, and you define a `before save` 
 ## EmbedsMany
 
 Use an embedsMany relation to indicate that a model can embed many instances of another model.
-For example, a Customer can have multiple email addresses and each email address is a complex object that contains label and address.
+For example, a Customer can have multiple email addresses in an `emailList` property whose value is an array of objects; and each element in the array is an object with label and address properties.
 
 {% include code-caption.html content="Sample model instance with many embedded models" %}
 ```javascript
 {
   id: 1,
   name: 'John Smith',
-  emails: [{
+  emailList: [{
     label: 'work',
     address: 'john@xyz.com'
   }, {
@@ -134,20 +135,11 @@ For example, a Customer can have multiple email addresses and each email address
 }
 ```
 
-{% include important.html content="
-
-Treat `embedsMany` as an actual relation, no different from `hasMany`, for example.
-This means that you cannot just POST the full object with embedded/nested data to create everything all at once.
-So using the example above to add a Customer and multiple email addresses would require two POST operations,
-one for the Customer record and one for the multiple email address data.
-
-" %}
-
 ### Define the relation in code
 
 {% include code-caption.html content="common/models/customer.js" %}
 ```javascript
-Customer.embedsOne(EmailAddress, {
+Customer.embedsMany(EmailAddress, {
   as: 'emails', // default to the relation name - emailAddresses
   property: 'emailList' // default to emailAddressItems
 });
@@ -155,19 +147,19 @@ Customer.embedsOne(EmailAddress, {
 
 ### Parameters for the definition
 
-* methods
-* properties
-* scope
-* options
-* default
-* property
-* as
+* methods - Scoped methods for the given relation
+* properties - Properties taken from the parent object
+* scope - Default scope
+* options - Options
+* default - Default value
+* property - Name of the property for the embedded item
+* as - Name of the relation
 
 ### Options
 
-* forceId
-* validate
-* persistent
+* forceId - force generation of id for embedded items, default to false
+* validate - denote if the embedded items should be validated, default to true
+* persistent - denote if the embedded items should be persisted, default to false
 
 ### Define the relation in JSON
 
@@ -196,6 +188,21 @@ Customer.embedsOne(EmailAddress, {
   }
 ```
 
+{% include code-caption.html content="common/models/email.json" %}
+```javascript
+{
+  "name": "EmailAddress",
+  "base": "Model",
+  "idInjection": true,
+  "properties": {
+    "id": {
+      "type": "string",
+      "id": true,
+      "defaultFn": "uuid"
+    }
+  }
+```
+
 ### Helper methods
 
 * customer.emails()
@@ -219,16 +226,16 @@ You can define `before save` and `after save` [operation hooks](Operation-hoo
 Then, updating or creating an instance of the container model will trigger the operation hook on the embedded model.
 When this occurs, `ctx.isNewInstance` is false, because only a new instance of the container model is created.
 
-For example, if `Customer embedsOne Address`, and you define a `before save` hook on the Address model,
+For example, if `Customer embedsMany EmailAddress`, and you define a `before save` hook on the EmailAddress model,
 creating a new Customer instance will trigger the operation hook.
 
 ## EmbedsMany with belongsTo
 
 Use an embedsMany with belongsTo relation to indicate a model that can embed many links to other models; for example a book model that
-embeds many links to related people, such as an author or a reader. Each link belongs to a person and it's polymorphic,
+embeds many links to related people, such as an author or a reader. Each link belongs to a person and it&#39;s polymorphic,
 since a person can be an Author or a Reader.
 
-{% include code-caption.html content="Exampel embedsMany with belongsTo model instance" %}
+{% include code-caption.html content="Example embedsMany with belongsTo model instance" %}
 ```javascript
 { 
   id: 1
@@ -301,6 +308,7 @@ since a person can be an Author or a Reader.
   "relations": {
     "linked": {
       "type": "belongsTo",
+      "model": "Person",
       "polymorphic": {
         "idType": "number"
       },
@@ -319,6 +327,8 @@ since a person can be an Author or a Reader.
 
 ## ReferencesMany
 
+A `ReferencesMany` relation embeds an array of foreign keys to reference other objects. For example:
+
 {% include code-caption.html content="Sample referencesMany model instance" %}
 ```javascript
 {
@@ -332,23 +342,24 @@ since a person can be an Author or a Reader.
 
 ### Parameters for the definition
 
-* methods
-* properties
-* foreignKey
-* scope
-* options
-* default
-* as
+* methods - Scoped methods for the given relation
+* properties - Properties taken from the parent object
+* foreignKey - Camel case of the declaring model name appended with Id
+* scope - Default scope
+* options - Options
+* default - Default value
+* as - Name of the relation
 
 ### Options
 
-* forceId
-* validate
-* persistent
+* forceId - force generation of id for embedded items, default to false
+* validate - denote if the embedded items should be validated, default to true
+* persistent - denote if the embedded items should be persisted, default to false
 
 ### Define the relation in code
 
 {% include code-caption.html content="common/models/customer.json" %}
+
 ```javascript
 {
   "name": "Customer",

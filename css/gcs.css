@@ -3,6 +3,8 @@
  *
  */
 /* Slight reset to make the preview have ample padding. */
+.gsc-branding-user-defined, .gsc-branding-img, .gsc-branding-text, table.gsc-branding { display: none !important; }
+
 .cse .gsc-control-cse,
 .gsc-control-cse {
   padding: 0;
@@ -35,7 +37,7 @@
 .gsc-resultsHeader {
   border: block;
 }
-table.gsc-search-box td.gsc-input {
+table.gsc-search-box, table.gsc-search-box td.gsc-input {
   padding-left: 10px;
   padding-right: 0;
   border: 0;

@@ -19,24 +19,23 @@ Adds a new access control list (ACL) entry to a LoopBack application.
 lb acl [options]
 ```
 
+With IBM API Connect developer toolkit:
+
+```
+apic loopback:acl [options]
+```
+
 With legacy StrongLoop tools:
 
 ```
-$ slc loopback:acl [options]
+slc loopback:acl [options]
 ```
 
 {% include content/generator-builtin-model-caveat.html lang=page.lang%}
 
 ### Options
 
-`-h, --help`
-Print the generator's options and usage.
-
-`--skip-cache`
-Do not remember prompt answers. Default is false.
-
-`--skip-install`
-Do not automatically install dependencies. Default is false.
+{% include_relative includes/CLI-std-options.md title='no' %}
 
 ### Interactive Prompts
 

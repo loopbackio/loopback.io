@@ -123,6 +123,15 @@ children:
   url: /doc/en/lb3/Tutorials-and-examples.html
   output: 'web, pdf'
 
+- title: 'Security advisories'
+  url: /doc/en/lb3/Security-advisories.html
+  output: 'web, pdf'
+  children:
+
+  - title: '03-10-2017'
+    url: /doc/en/lb3/Security-advisory-03-10-2017.html
+    output: 'web, pdf'
+
 - title: 'Creating an application'
   url: /doc/en/lb3/Creating-an-application.html
   output: 'web, pdf'
@@ -140,92 +149,64 @@ children:
     url: /doc/en/lb3/Standard-project-structure.html
     output: 'web, pdf'
 
-- title: 'Managing users'
-  url: /doc/en/lb3/Managing-users.html
+- title: 'Defining data sources'
+  url: /doc/en/lb3/Defining-data-sources.html
   output: 'web, pdf'
   children:
 
-  - title: 'Registering users'
-    url: /doc/en/lb3/Registering-users.html
+  - title: 'Creating a database schema from models'
+    url: /doc/en/lb3/Creating-a-database-schema-from-models.html
     output: 'web, pdf'
 
-  - title: 'Logging in users'
-    url: /doc/en/lb3/Logging-in-users.html
-    output: 'web, pdf'
+  - title: 'Data sources: advanced topics'
+    url: /doc/en/lb3/Advanced-topics-data-sources.html
+    output: 'web'
+    children:
 
-  - title: 'Partitioning users with realms'
-    url: /doc/en/lb3/Partitioning-users-with-realms.html
-    output: 'web, pdf'
+    - title: 'Using database transactions'
+      url: /doc/en/lb3/Using-database-transactions.html
+      output: 'web, pdf'
 
-  - title: 'User management example'
-    url: /doc/en/lb3/User-management-example.html
-    output: 'web, pdf'
+    - title: 'Executing native SQL'
+      url: /doc/en/lb3/Executing-native-SQL.html
+      output: 'web, pdf'
 
-- title: 'Authentication, authorization, and permissions'
-  url: /doc/en/lb3/Authentication-authorization-and-permissions.html
-  output: 'web, pdf'
-  children:
+  - title: 'Building a connector'
+    url: /doc/en/lb3/Building-a-connector.html
+    output: 'web'
+    children:
 
-  - title: 'Introduction to User model authentication'
-    url: /doc/en/lb3/Introduction-to-User-model-authentication.html
-    output: 'web, pdf'
+    - title: 'Implementing CRUD methods'
+      url: /doc/en/lb3/Implementing-create-retrieve-update-and-delete-methods.html
+      output: 'web, pdf'
 
-  - title: 'Controlling data access'
-    url: /doc/en/lb3/Controlling-data-access.html
-    output: 'web, pdf'
+    - title: 'Implementing model discovery'
+      url: /doc/en/lb3/Implementing-model-discovery.html
+      output: 'web, pdf'
 
-  - title: 'Making authenticated requests'
-    url: /doc/en/lb3/Making-authenticated-requests.html
-    output: 'web, pdf'
-
-  - title: 'Defining and using roles'
-    url: /doc/en/lb3/Defining-and-using-roles.html
-    output: 'web, pdf'
-
-  - title: 'Accessing related models'
-    url: /doc/en/lb3/Accessing-related-models.html
-    output: 'web, pdf'
-
-  - title: 'Creating a default admin user'
-    url: /doc/en/lb3/Creating-a-default-admin-user.html
-    output: 'web, pdf'
-
-  - title: 'Security considerations'
-    url: /doc/en/lb3/Security-considerations.html
-    output: 'web, pdf'
-
-  - title: 'Tutorial: access control'
-    url: /doc/en/lb3/Tutorial-access-control.html
-    output: 'web, pdf'
+    - title: 'Implementing auto-migration'
+      url: /doc/en/lb3/Implementing-auto-migration.html
+      output: 'web, pdf'
 
 - title: 'Defining models'
   url: /doc/en/lb3/Defining-models.html
   output: 'web, pdf'
   children:
 
-  - title: 'Creating models'
-    url: /doc/en/lb3/Creating-models.html
+  - title: 'Using the model generator'
+    url: /doc/en/lb3/Using-the-model-generator.html
     output: 'web, pdf'
-    children:
 
-    - title: 'Using the model generator'
-      url: /doc/en/lb3/Using-the-model-generator.html
-      output: 'web, pdf'
+  - title: 'Discovering models from relational databases'
+    url: /doc/en/lb3/Discovering-models-from-relational-databases.html
+    output: 'web, pdf'
 
-    - title: 'Discovering models from relational databases'
-      url: /doc/en/lb3/Discovering-models-from-relational-databases.html
-      output: 'web, pdf'
-
-    - title: 'Creating models from unstructured data'
-      url: /doc/en/lb3/Creating-models-from-unstructured-data.html
-      output: 'web, pdf'
+  - title: 'Creating models from unstructured data'
+    url: /doc/en/lb3/Creating-models-from-unstructured-data.html
+    output: 'web, pdf'
 
   - title: 'Customizing models'
     url: /doc/en/lb3/Customizing-models.html
-    output: 'web, pdf'
-
-  - title: 'Attaching models to data sources'
-    url: /doc/en/lb3/Attaching-models-to-data-sources.html
     output: 'web, pdf'
 
   - title: 'Exposing models over REST'
@@ -294,10 +275,6 @@ children:
     url: /doc/en/lb3/Adding-remote-methods-to-built-in-models.html
     output: 'web, pdf'
 
-  - title: 'Creating database tables for built-in models'
-    url: /doc/en/lb3/Creating-database-tables-for-built-in-models.html
-    output: 'web, pdf'
-
   - title: 'Model property reference'
     url: /doc/en/lb3/Model-property-reference.html
     output: 'web, pdf'
@@ -335,44 +312,67 @@ children:
       url: /doc/en/lb3/User-REST-API.html
       output: 'web, pdf'
 
-- title: 'Connecting models to data sources'
-  url: /doc/en/lb3/Connecting-models-to-data-sources.html
+- title: 'Attaching models to data sources'
+  url: /doc/en/lb3/Attaching-models-to-data-sources.html
+  output: 'web, pdf'
+
+- title: 'Managing users'
+  url: /doc/en/lb3/Managing-users.html
   output: 'web, pdf'
   children:
 
-  - title: 'Creating a database schema from models'
-    url: /doc/en/lb3/Creating-a-database-schema-from-models.html
+  - title: 'Registering users'
+    url: /doc/en/lb3/Registering-users.html
     output: 'web, pdf'
 
-  - title: 'Understanding data sources'
-    url: /doc/en/lb3/Advanced-topics-data-sources.html
-    output: 'web'
-    children:
-
-  - title: 'Using database transactions'
-    url: /doc/en/lb3/Using-database-transactions.html
+  - title: 'Logging in users'
+    url: /doc/en/lb3/Logging-in-users.html
     output: 'web, pdf'
 
-  - title: 'Executing native SQL'
-    url: /doc/en/lb3/Executing-native-SQL.html
+  - title: 'Partitioning users with realms'
+    url: /doc/en/lb3/Partitioning-users-with-realms.html
     output: 'web, pdf'
 
-  - title: 'Building a connector'
-    url: /doc/en/lb3/Building-a-connector.html
-    output: 'web'
-    children:
+  - title: 'User management example'
+    url: /doc/en/lb3/User-management-example.html
+    output: 'web, pdf'
 
-    - title: 'Implementing create, retrieve, update, and delete methods'
-      url: /doc/en/lb3/Implementing-create-retrieve-update-and-delete-methods.html
-      output: 'web, pdf'
+- title: 'Authentication, authorization, and permissions'
+  url: /doc/en/lb3/Authentication-authorization-and-permissions.html
+  output: 'web, pdf'
+  children:
 
-    - title: 'Implementing model discovery'
-      url: /doc/en/lb3/Implementing-model-discovery.html
-      output: 'web, pdf'
+  - title: 'Introduction to User model authentication'
+    url: /doc/en/lb3/Introduction-to-User-model-authentication.html
+    output: 'web, pdf'
 
-    - title: 'Implementing auto-migration'
-      url: /doc/en/lb3/Implementing-auto-migration.html
-      output: 'web, pdf'
+  - title: 'Controlling data access'
+    url: /doc/en/lb3/Controlling-data-access.html
+    output: 'web, pdf'
+
+  - title: 'Making authenticated requests'
+    url: /doc/en/lb3/Making-authenticated-requests.html
+    output: 'web, pdf'
+
+  - title: 'Defining and using roles'
+    url: /doc/en/lb3/Defining-and-using-roles.html
+    output: 'web, pdf'
+
+  - title: 'Accessing related models'
+    url: /doc/en/lb3/Accessing-related-models.html
+    output: 'web, pdf'
+
+  - title: 'Creating a default admin user'
+    url: /doc/en/lb3/Creating-a-default-admin-user.html
+    output: 'web, pdf'
+
+  - title: 'Security considerations'
+    url: /doc/en/lb3/Security-considerations.html
+    output: 'web, pdf'
+
+  - title: 'Tutorial: access control'
+    url: /doc/en/lb3/Tutorial-access-control.html
+    output: 'web, pdf'
 
 - title: 'Working with data'
   url: /doc/en/lb3/Working-with-data.html
@@ -598,6 +598,10 @@ children:
     url: /doc/en/lb3/Application-generator.html
     output: 'web, pdf'
 
+  - title: 'Bluemix configuration generator'
+    url: /doc/en/lb3/Bluemix-config-generator.html
+    output: 'web, pdf'
+
   - title: 'Boot script generator'
     url: /doc/en/lb3/Boot-script-generator.html
     output: 'web, pdf'
@@ -614,8 +618,16 @@ children:
     url: /doc/en/lb3/Model-generator.html
     output: 'web, pdf'
 
+  - title: 'Oracle installer command'
+    url: /doc/en/lb3/Oracle-installer-command.html
+    output: 'web, pdf'
+
   - title: 'Property generator'
     url: /doc/en/lb3/Property-generator.html
+    output: 'web, pdf'
+
+  - title: 'Refresh definitions command'
+    url: /doc/en/lb3/Refresh-definitions-command.html
     output: 'web, pdf'
 
   - title: 'Relation generator'
@@ -624,6 +636,10 @@ children:
 
   - title: 'Remote method generator'
     url: /doc/en/lb3/Remote-method-generator.html
+    output: 'web, pdf'
+
+  - title: 'SOAP generator'
+    url: /doc/en/lb3/SOAP-generator.html
     output: 'web, pdf'
 
   - title: 'Swagger generator'
@@ -721,6 +737,10 @@ children:
     url: /doc/en/lb3/Database-connectors.html
     output: 'web'
     children:
+
+    - title: 'Cassandra connector'
+      url: /doc/en/lb3/Cassandra-connector.html
+      output: 'web, pdf'
 
     - title: 'Cloudant connector'
       url: /doc/en/lb3/Cloudant-connector.html
@@ -872,6 +892,10 @@ children:
         url: /doc/en/lb3/SOAP-Connector-example.html
         output: 'web, pdf'
 
+      - title: 'Connecting to SOAP web services'
+        url: /doc/en/lb3/Connecting-to-SOAP.html
+        output: 'web, pdf'
+
     - title: 'Storage connector'
       url: /doc/en/lb3/Storage-connector.html
       output: 'web, pdf'
@@ -900,6 +924,10 @@ children:
 
     - title: 'Model definition JSON file'
       url: /doc/en/lb3/Model-definition-JSON-file.html
+      output: 'web, pdf'
+
+    - title: 'Model extension file'
+      url: /doc/en/lb3/Model-extension-file.html
       output: 'web, pdf'
 
   - title: package.json

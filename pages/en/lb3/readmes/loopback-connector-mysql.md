@@ -180,7 +180,7 @@ See [LoopBack types](http://loopback.io/doc/en/lb3/LoopBack-types.html) for de
       <td>String</td>
     </tr>
     <tr>
-      <td>CHAR(1)</td>
+      <td>BIT(1)<br>CHAR(1)<br>TINYINT(1)</td>
       <td>Boolean</td>
     </tr>
     <tr>
@@ -205,6 +205,15 @@ See [LoopBack types](http://loopback.io/doc/en/lb3/LoopBack-types.html) for de
   </tbody>
 </table>
 
+*NOTE* as of v3.0.0 of MySQL Connector, the following flags were introduced:
+
+* `treatCHAR1AsString`
+  default `false` - treats CHAR(1) as a String instead of a Boolean
+* `treatBIT1AsBit`
+  default `true` - treats BIT(1) as a Boolean instead of a Binary
+* `treatTINYINT1AsTinyInt`
+  default `true` - treats TINYINT(1) as a Boolean instead of a Number
+
 ## Using the datatype field/column option with MySQL
 
 Use the `mysql` model property to specify additional MySQL-specific properties for a LoopBack model.
@@ -220,7 +229,7 @@ For example:
     "mysql":
     {
         "columnName":"LOCATION_ID",
-        "dataType":"VARCHAR2",
+        "dataType":"VARCHAR",
         "dataLength":20,
         "nullable":"N"
     }
@@ -248,6 +257,37 @@ Use the `limit` option to alter the display width. Example:
   }
 }
 ```
+
+### Default Clause/Constant
+Use the `default` property to have MySQL handle setting column `DEFAULT` value.
+```javascript
+"status": {
+  "type": "string",
+  "mysql": {
+    "default": "pending"
+  }
+},
+"number": {
+  "type": "number",
+  "mysql": {
+    "default": 256
+  }
+}
+```
+For the date or timestamp types use `CURRENT_TIMESTAMP` or `now`:
+```javascript
+"last_modified": {
+  "type": "date",
+  "mysql": {
+    "default":"CURRENT_TIMESTAMP"
+  }
+}
+```
+**NOTE**: The following column types do **NOT** supported [MySQL Default Values](https://dev.mysql.com/doc/refman/5.7/en/data-type-defaults.html):
+- BLOB
+- TEXT
+- GEOMETRY
+- JSON
 
 ### Floating-point types
 
@@ -345,18 +385,183 @@ MOOD('sad'); // 'sad'
 The MySQL connector supports _model discovery_ that enables you to create LoopBack models
 based on an existing database schema using the unified [database discovery API](http://apidocs.strongloop.com/loopback-datasource-juggler/#datasource-prototype-discoverandbuildmodels).  For more information on discovery, see [Discovering models from relational databases](https://loopback.io/doc/en/lb3/Discovering-models-from-relational-databases.html).
 
-### Auto-migratiion
+### Auto-migration
 
 The MySQL connector also supports _auto-migration_ that enables you to create a database schema
 from LoopBack models using the [LoopBack automigrate method](http://apidocs.strongloop.com/loopback-datasource-juggler/#datasource-prototype-automigrate).
 
 For more information on auto-migration, see [Creating a database schema from models](https://loopback.io/doc/en/lb3/Creating-a-database-schema-from-models.html) for more information.
 
-Destroying models may result in errors due to foreign key integrity. First delete any related models first calling delete on models with relationships.
+#### Auto-migrate/Auto-update models with foreign keys
+
+MySQL handles the foreign key integrity of the related models upon auto-migrate or auto-update operation. It first deletes any related models before calling delete on the models with the relationship.
+
+Example:
+
+**model-definiton.json**
+```json
+{
+  "name": "Book",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "properties": {
+    "bId": {
+      "type": "number",
+      "id": true,
+      "required": true
+    },
+    "name": {
+      "type": "string"
+    },
+    "isbn": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "author": {
+      "type": "belongsTo",
+      "model": "Author",
+      "foreignKey": "authorId"
+    }
+  },
+  "acls": [],
+  "methods": {},
+  "foreignKeys": {
+    "authorId": {
+      "name": "authorId",
+      "foreignKey": "authorId",
+      "entityKey": "aId",
+      "entity": "Author"
+    }
+  }
+}
+```
+
+```json
+{
+  "name": "Author",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "properties": {
+    "aId": {
+      "type": "number",
+      "id": true,
+      "required": true
+    },
+    "name": {
+      "type": "string"
+    },
+    "dob": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
+```
+
+**boot-script.js**
+```js
+module.exports = function(app) {
+  var mysqlDs = app.dataSources.mysqlDS;
+  var Book = app.models.Book;
+  var Author = app.models.Author;
+
+  // first autoupdate the `Author` model to avoid foreign key constraint failure
+  mysqlDs.autoupdate('Author', function(err) {
+    if (err) throw err;
+    console.log('\nAutoupdated table `Author`.');
+
+    mysqlDs.autoupdate('Book', function(err) {
+      if (err) throw err;
+      console.log('\nAutoupdated table `Book`.');
+      // at this point the database table `Book` should have one foreign key `authorId` integrated
+    });
+  });
+};
+```
+#### Breaking Changes with GeoPoint since 5.x
+Prior to `loopback-connector-mysql@5.x`, MySQL connector was saving and loading GeoPoint properties from the MySQL database in reverse.
+MySQL expects values to be POINT(X, Y) or POINT(lng, lat), but the connector was saving them in the opposite order(i.e. POINT(lat,lng)).
+If you have an application with a model that has a GeoPoint property using previous versions of this connector, you can migrate your models
+using the following programmatic approach:
+**NOTE** Please back up the database tables that have your application data before performing any of the steps.
+1. Create a boot script under `server/boot/` directory with the following:
+```js
+'use strict';
+module.exports = function(app) {
+  function findAndUpdate() {
+    var teashop = app.models.teashop;
+    //find all instances of the model we'd like to migrate
+    teashop.find({}, function(err, teashops) {
+      teashops.forEach(function(teashopInstance) {
+        //what we fetch back from the db is wrong, so need to revert it here
+        var newLocation = {lng: teashopInstance.location.lat, lat: teashopInstance.location.lng};
+        //only update the GeoPoint property for the model
+        teashopInstance.updateAttribute('location', newLocation, function(err, inst) {
+          if (err)
+            console.log('update attribute failed ', err);
+          else
+        console.log('updateAttribute successful');
+        });
+      });
+    });
+  }
+
+  findAndUpdate();
+};
+```
+2. Run the boot script by simply running your application or `node .`
+
+For the above example, the model definition is as follows:
+```json
+{
+  "name": "teashop",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "default": "storename"
+    },
+    "location": {
+      "type": "geopoint"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
+```
 
 ## Running tests
 
-The tests in this repository are mainly integration tests, meaning you will need to run them using our preconfigured test server.
+### Own instance
+If you have a local or remote MySQL instance and would like to use that to run the test suite, use the following command:
+- Linux
+```bash
+MYSQL_HOST=<HOST> MYSQL_PORT=<PORT> MYSQL_USER=<USER> MYSQL_PASSWORD=<PASSWORD> MYSQL_DATABASE=<DATABASE> CI=true npm test
+```
+- Windows
+```bash
+SET MYSQL_HOST=<HOST> SET MYSQL_PORT=<PORT> SET MYSQL_USER=<USER> SET MYSQL_PASSWORD=<PASSWORD> SET MYSQL_DATABASE=<DATABASE> SET CI=true npm test
+```
 
-1. Ask a core developer for instructions on how to set up test server credentials on your machine
-2. `npm test`
+### Docker
+If you do not have a local MySQL instance, you can also run the test suite with very minimal requirements.
+- Assuming you have [Docker](https://docs.docker.com/engine/installation/) installed, run the following script which would spawn a MySQL instance on your local:
+```bash
+source setup.sh <HOST> <PORT> <USER> <PASSWORD> <DATABASE>
+```
+where `<HOST>`, `<PORT>`, `<USER>`, `<PASSWORD>` and `<DATABASE>` are optional parameters. The default values are `localhost`, `3306`, `root`, `pass` and `testdb` respectively.
+- Run the test:
+```bash
+npm test
+```

@@ -16,25 +16,24 @@ summary:
 The LoopBack boot script generator adds a new [boot script](Defining-boot-scripts.html) to a LoopBack application.
 
 ```
-$ lb boot-script [options] [<name>]
+lb boot-script [options] [<name>]
+```
+
+With IBM API Connect developer toolkit:
+
+```
+apic loopback:boot-script [options] [<name>]
 ```
 
 With legacy StrongLoop tools:
 
 ```
-$ slc loopback:boot-script [options] [<name>]
+slc loopback:boot-script [options] [<name>]
 ```
 
 ### Options
 
-`-h, --help`
-Print the generator's options and usage.
-
-`--skip-cache`
-Do not remember prompt answers. Default is false.
-
-`--skip-install`
-Do not automatically install dependencies. Default is false.
+{% include_relative includes/CLI-std-options.md title='no' %}
 
 ### Arguments
 

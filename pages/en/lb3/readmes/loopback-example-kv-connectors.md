@@ -2,8 +2,20 @@
 
 KeyValue connector examples.
 
-- [Usage](https://github.com/strongloop/loopback-example-kv-connectors#usage)
 - [Examples list](https://github.com/strongloop/loopback-example-kv-connectors#examples-list)
+- [Usage](https://github.com/strongloop/loopback-example-kv-connectors#usage)
+
+## Examples list
+
+- IBM WebSphere eXtreme Scale with:
+  - [LoopBack 2.x](extreme-scale.lb2x/test)
+  - [LoopBack 3.x](extreme-scale.lb3x/test)
+- KeyValue-memory with:
+  - [LoopBack 2.x](kv-memory.lb2x/test)
+  - [LoopBack 3.x](kv-memory.lb3x/test)
+- Redis with:
+  - [LoopBack 2.x](redis.lb2x/test)
+  - [LoopBack 3.x](redis.lb3x/test)
 
 ## Usage
 
@@ -48,15 +60,6 @@ kill 12345
 
 > We intentionally skip over configuration details like setting up data sources
 > and models as these topics are already covered in [our tutorials](http://github.com/strongloop/loopback-example#tutorials).
-
-## Examples list
-
-LoopBack|Connector
-:-:|:--
-2.x|[KeyValue-memory](kv-memory-lb2x/test)
-2.x|[Redis](redis-lb2x/test)
-3.x|[KeyValue-memory](kv-memory-lb3x/test)
-3.x|[Redis](redis-lb3x/test)
 
 ---
 

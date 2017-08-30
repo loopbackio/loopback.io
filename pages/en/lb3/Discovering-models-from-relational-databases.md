@@ -18,6 +18,7 @@ This process is called _discovery_ and is supported by the following connectors:
 * [MySQL connector](MySQL-connector.html)
 * [PostgreSQL connector](PostgreSQL-connector.html)
 * [Oracle connector](Oracle-connector.html)
+* [SAP HANA](https://www.npmjs.org/package/loopback-connector-saphana) - Not officially supported; see [Community connectors](Community-connectors.html).
 * [SQL Server connector](SQL-Server-connector.html)
 
 For NoSQL databases such as MongoDB, use [instance introspection](Creating-models-from-unstructured-data.html) instead.
@@ -29,7 +30,8 @@ Data sources connected to relational databases automatically get the asynchronou
 
 Follow these basic steps:
 
-1.  Use a script such as that below to discover the schema.
+1.  Run a script to discover the model definitions for use in your application.
+See the [example below](#additional-discovery-functions) for details.
 2.  Use `fs.writeFile()` to save the output in `common/models/model-name.json`.
 3.  Add the new model entry to `server/model-config.json`.
 4.  Run the app:
@@ -82,6 +84,9 @@ function (err, models) {
 
 Some connectors provide discovery capability so that we can use DataSource to discover model definitions from existing database schema.
 The following APIs enable UI or code to discover database schema definitions that can be used to build LoopBack models.
+
+`discoverModelDefinitions()` by default discovers database schema definitions owned by the userid used to connect to the database.  
+Calling it with the `all: true` option makes the discovery include the database schema definitions of all owners.
 
 {% include code-caption.html content="/server/bin/script.js" %}
 ```javascript

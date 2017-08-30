@@ -77,6 +77,7 @@ You may need to make the following changes:
 instead of `error.status`.  Update any clients that read the HTTP status code
 from the response body.
 - Change any use of the `loopback#errorhandler` short-cut to `require('strong-error-handler')`.
+- Remove any use of `errorHandler.disableStackTrace`.
 - Enable `strong-error-handler` by adding it to the `final:after` phase in your middleware config file (`server/middleware.json`):
 
 ```
@@ -260,7 +261,7 @@ backed by a persistent data store such as a database.
 ### Use `forceId` to explicitly set model IDs
 
 As described in the [release notes](3.0-Release-Notes.html#models-with-auto-generated-ids-reject-user-provided-id-values),
-clients are no longer allowed to to provide their own `id` value when creating new instances
+clients are no longer allowed to provide their own `id` value when creating new instances
 of models that have an auto-generated `id` property.
 
 To enable setting an `id` explicitly, set `forceId: false` in the model JSON file.

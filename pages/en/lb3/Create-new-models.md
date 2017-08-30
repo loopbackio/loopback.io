@@ -45,7 +45,7 @@ When prompted, enter or select the following:
 *   **Model name**: Review
 *   **Data source**: mongoDs (mongodb)
 *   **Base class**: Use the down-arrow key to select **PersistedModel**.
-*   **Expose Reviewer via the REST API?** Press RETURN to accept the default, Yes.
+*   **Expose Review via the REST API?** Press RETURN to accept the default, Yes.
 *   **Custom plural form (used to build REST URL)**:  Press RETURN to accept the default, Yes.
 *   **Common model or server only**: Press RETURN to accept the default, common model.
 
@@ -83,13 +83,13 @@ To exit the model generator, press RETURN when prompted for property name.
 ## Define the Reviewer model
 
 Enter:
-<div id="lb3apic" class="sl-hidden" markdown="1">
+
 ```
 apic create --type model
 ```
 
-Or with StrongLoop tools:
-</div>
+Or with LoopBack tools:
+
 ```
 $ lb model
 ```
@@ -133,7 +133,7 @@ See [Creating a database schema from models](Creating-a-database-schema-from-mo
 var async = require('async');
 module.exports = function(app) {
   //data sources
-  var mongoDs = app.dataSources.mongoDs;
+  var mongoDs = app.dataSources.mongoDs; // 'name' of your mongo connector, you can find it in datasource.json
   var mysqlDs = app.dataSources.mysqlDs;
   //create all models
   async.parallel({

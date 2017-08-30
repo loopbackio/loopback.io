@@ -60,6 +60,10 @@ Edit `datasources.json` to add any other additional properties that you require.
 `$pop`, `$pullAll`, `$pull`, `$pushAll`, `$push`, and `$bit`.  Default is `false`.
 - **enableGeoIndexing**: Set to `true` to enable 2dsphere indexing for model properties
 of type `GeoPoint`. This allows for indexed ```near``` queries.  Default is `false`.
+- **lazyConnect**: 
+  - Default is `false`.
+  - If set to `true`, the database instance will not be attached to the datasource and the connection is deferred.
+  - It will try to establish the connection automatically once users hit the endpoint. If the mongodb server is offline, the app will start, however, the endpoints will not work.
 
 ### Setting the url property in datasource.json
 
@@ -133,12 +137,28 @@ authentication enabled.
 
 ## Running tests
 
-The tests in this repository are mainly integration tests, meaning you will need
-to run them using our preconfigured test server.
+### Own instance
+If you have a local or remote MongoDB instance and would like to use that to run the test suite, use the following command:
+- Linux
+```bash
+MONGODB_HOST=<HOST> MONGODB_PORT=<PORT> MONGODB_DATABASE=<DATABASE> CI=true npm test
+```
+- Windows
+```bash
+SET MONGODB_HOST=<HOST> SET MONGODB_PORT=<PORT> SET MONGODB_DATABASE=<DATABASE> SET CI=true npm test
+```
 
-1. Ask a core developer for instructions on how to set up test server
-   credentials on your machine
-2. `npm test`
+### Docker
+If you do not have a local MongoDB instance, you can also run the test suite with very minimal requirements.
+- Assuming you have [Docker](https://docs.docker.com/engine/installation/) installed, run the following script which would spawn a MongoDB instance on your local:
+```bash
+source setup.sh <HOST> <PORT> <DATABASE>
+```
+where `<HOST>`, `<PORT>` and `<DATABASE>` are optional parameters. The default values are `localhost`, `27017` and `testdb` respectively.
+- Run the test:
+```bash
+npm test
+```
 
 ### Leak detection
 
@@ -164,6 +184,66 @@ make benchmarks
 ```
 
 The results will be output in `./benchmarks/results.md`.
+
+## strictObjectIDCoercion flag
+
+In version 1.17.0, the id of string type is being converted to ObjectID, when the string length is 12 or 24 and has the format of an ObjectID i.e /^[0-9a-fA-F]{24}$/. To avoid this issue, the strictObjectIDCoercion flag should be set to true in the model-definition file.
+
+model-definition.js
+
+```js
+{
+  "name": "myModelName",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true,
+    "strictObjectIDCoercion": true
+  },
+...
+}
+```
+boot-script.js
+
+```js
+'use strict';
+var util = require('util');
+
+module.exports = function(app) {
+  var db = app.dataSources.mongoDs;
+  var myModelName = app.models.myModelName;
+
+  db.automigrate(function(err) {
+    if (err) throw err;
+    console.log('Automigrate complete');
+
+    myModelName.create([{
+      id: '59460487e9532ae90c324b59',
+      name: 'Bob',
+    }, {
+      id: '59460487e9532ae90c324b5a',
+      name: 'Sam',
+    }, {
+      id: '420',
+      name: 'Foo',
+      age: 1,
+    }, {
+      id: '21',
+      name: 'Bar',
+    }], function(err, result) {
+      if (err) throw err;
+      console.log('\nCreated instances of myModelName: ' + util.inspect(result, 4));
+
+      myModelName.find({where: {id: {inq: ['59460487e9532ae90c324b59',
+        '59460487e9532ae90c324b5a']}}},
+      function(err, result) {
+        if (err) throw err;
+        console.log('\nFound instance with inq: ' + util.inspect(result, 4));
+      });
+    });
+  });
+};
+```
 
 ## Release notes
 

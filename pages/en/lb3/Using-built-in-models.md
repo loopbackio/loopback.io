@@ -11,7 +11,7 @@ summary:
 
 ## Overview
 
-Loopback provides useful built-in models for common use cases:
+LoopBack provides useful built-in models for common use cases:
 
 * **[Application model](#application-model)** - contains metadata for a client application that has its own identity and associated configuration with the LoopBack server.
 * **[User model](#user-model)** - register and authenticate users of your app locally or against third-party services.
@@ -37,11 +37,7 @@ The default model definition file is [common/models/application.json](https://g
 The User model represents users of the application or API.
 The default model definition file is [common/models/user.json](https://github.com/strongloop/loopback/blob/master/common/models/user.json) in the LoopBack repository. 
 
-{% include important.html content="
-You must create your own custom model (named something other than \"User,\" for example \"Customer\" or \"Client\") that [extends the built-in User model](Extending-built-in-models.html) rather than use the built-in User model directly.  The built-in User model provides a great deal of commonly-used functionality that you can use via your custom model.
-
-LoopBack does not support multiple models based on the User model in a single application. That is, you cannot have more than one model derived from the built-in User model in a single app.
-" %}
+{% include_relative includes/User-model-note.md %}
 
 For more information, see [Managing users](Managing-users.html).
 

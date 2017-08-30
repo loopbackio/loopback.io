@@ -18,13 +18,15 @@ The email connector is essentially a LoopBack-integrated interface to the [nodem
 ## Creating an email data source
 
 Create a new email data source with the [data source generator](Data-source-generator.html):
-<div id="lb3apic" class="sl-hidden" markdown="1">
-```shell
-$ apic create --type datasource
-```
-</div>
+
 ```shell
 $ lb datasource
+```
+
+With API Connect developer toolkit:
+
+```shell
+$ apic create --type datasource
 ```
 
 When prompted, select **Email** as the connector. This creates an entry in `datasources.json` like this (for example):
@@ -88,7 +90,6 @@ For GMail, configure your email data source as follows:
 ...
 "Email": {
   "name": "mail",
-  "defaultForType": "mail",
   "connector": "mail",
   "transports": [{
     "type": "SMTP",

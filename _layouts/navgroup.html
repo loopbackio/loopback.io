@@ -11,16 +11,12 @@ toc: false
     {% assign readme-file = page.source  %}
   {% endif %}
   <style>h1:not(.post-title-main) { display: none; }</style>
+
+  {{content}}
   <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> This page was generated from the <a href="https://github.com/strongloop/{{repo-branch}}">{{page.source}} README</a>.</div>
-{% endif %}
-
-{% capture nav-include %}{% include navgroups/{{page.navgroup}}.md %}{% endcapture %}
-{{ nav-include | markdownify }}
-{% include toc.html level=page.toc_level %}
-
-{% if page.source %}
+  
   {% capture included-readme %}{% include_relative readmes/{{page.source}}.md %}{% endcapture %}
   {{ included-readme | markdownify }}
+{% else %}
+  {{content}}
 {% endif %}
-
-{{content}}

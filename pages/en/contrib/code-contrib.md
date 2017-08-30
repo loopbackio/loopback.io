@@ -37,7 +37,7 @@ LoopBack maintains a current version, a long-term support (LTS) version, and a m
 {% include note.html content="Check your Node.js version with the command `node -v`.
 " %}
 
-LoopBack 2.x supports Node.js v0.10 and v0.12, but LoopBack 3.0 does not support Node.js v0.10 or v0.12.  For details, see the blog post [LoopBack Drops Support for Node 0.10 and 0.12](https://strongloop.com/strongblog/loopback-drops-support-for-node-0-10-and-0-12/).
+LoopBack 2.x supports Node.js v0.10 and v0.12, but LoopBack 3.0 does not support Node.js v0.10 or v0.12.  
 
 ## Submitting a pull request
 
@@ -62,6 +62,15 @@ Follow the [GitHub Flow](http://scottchacon.com/2011/08/31/github-flow.html).
     yet.
  1. Request a code review. Add a specific committer to speed up this process. (for example, `@bajtos`, `@raymondfeng`).
  1. Make any requested changes and push to your fork. Make sure your changes are still based on the latest code (use `git rebase upstream/master`).
+
+ ### How to rebase your branch ###
+
+Our code base is always getting updated and being able to successfully rebase your PR is very important. Here are some simple steps to rebase your code:
+- Checkout your branch which you are submitting the pull request against `git checkout <my_branch>`
+- Add an upstream remote from your fork `git remote add upstream <upstream_repo>`
+- Fetch the latest from the **_upstream_** remote `git fetch upstream`
+- Rebase your code using the interactive mode `git rebase -i upstream/master`
+- If you are happy with the changes and there are no merge conflicts, push the code to your remote branch `git push origin <my_branch>`
 
 ## Running tests
 
