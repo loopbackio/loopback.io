@@ -56,7 +56,7 @@ See also [https://github.com/pasindud/awesome-loopback](https://github.com/pasin
     </tr>
     <tr>
       <td><a href="http://www.elasticsearch.org/" class="external-link" rel="nofollow">Elasticsearch</a></td>
-      <td><a href="https://www.npmjs.org/package/loopback-connector-elastic-search" class="external-link" rel="nofollow">loopback-connector-elastic-search</a></td>
+      <td><a href="https://www.npmjs.com/package/loopback-connector-es" class="external-link" rel="nofollow">loopback-connector-es</a></td>
       <td>&nbsp;</td>
     </tr>
     <tr>
