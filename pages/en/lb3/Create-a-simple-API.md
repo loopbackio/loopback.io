@@ -15,6 +15,7 @@ summary: Use the application generator tool to quickly create a LoopBack applic
 ## Create new application
 
 To create a new application, run the LoopBack [application generator](Application-generator):
+
 If using `loopback-cli`:
 
 ```
