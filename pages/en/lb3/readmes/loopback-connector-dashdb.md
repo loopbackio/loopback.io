@@ -58,6 +58,8 @@ hostname       | String  | DASHDB server hostname or IP address
 port           | String  | DASHDB server TCP port number
 useLimitOffset | Boolean | LIMIT and OFFSET must be configured on the DASHDB server before use (compatibility mode)
 supportDashDB  | Boolean | Create ROW ORGANIZED tables to support dashDB.
+minPoolSize | Number | Set the minimum size of the connection pool |
+maxPoolSize | Number | Set the maximum size of the connection pool |
 
 
 Alternatively, you can create and configure the data source in JavaScript code.
