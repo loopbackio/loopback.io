@@ -54,14 +54,14 @@ Most of the time you should add "hasAndBelongToMany" relations to models on serv
 
 {% include code-caption.html content="Example method" %}
 ```javascript
-assembly.parts.add(part, function(err) {
+assembly.parts.add(partId, function(err) {
   //...
 });
 ```
 
 Thus, if you need to add the relation using REST, first check if the "AssemblyPart" model exists first. Then add the relation using this code:
 
-{% include code-caption.html content="Rest Example Method" %}
+{% include code-caption.html content="REST example method" %}
 ```javascript
 Assembly.Parts.link({id:assemblyId, fk: partId}, partInstance,  function(value, header) {
   //success
@@ -101,7 +101,7 @@ For example: `assembly.parts.create(...)`.
     </tr>
     <tr>
       <td>
-        <pre>assembly.parts.add(part,
+        <pre>assembly.parts.add(partId,
   function(err) {<br>  ...<br>});</pre>
       </td>
       <td>Add a part to the assembly.</td>
