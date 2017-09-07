@@ -106,7 +106,7 @@ This creates the following objects in the Oracle database:
 
 Now suppose you decide to make some changes to the model. Here is the second version:
 
-{% include code-caption.html content="/common/models/model.js" %}
+{% include code-caption.html content="/common/models/model.json" %}
 ```javascript
 var schema_v2 = {
   "name": "CustomerTest",
