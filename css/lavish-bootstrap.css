@@ -717,7 +717,7 @@ pre code {
 .col-sm-12,
 .col-md-1,
 .col-md-2,
-/* .col-md-3, To make sidebar fixed */
+.col-md-3
 .col-md-4,
 .col-md-5,
 .col-md-6,
@@ -5895,13 +5895,4 @@ td.visible-print {
   td.hidden-print {
     display: none !important;
   }
-}
-
-/* To make sidebar fixed */
-.col-md-3
-{
-  position: fixed;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
 }
