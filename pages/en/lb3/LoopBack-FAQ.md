@@ -26,10 +26,6 @@ StrongLoop supports the following operating systems:
 LoopBack is an open-source project that is available for free (without support) and a commercial version with full support is also available as part of
 **[IBM API Connect](https://developer.ibm.com/apiconnect/)**.
 
-{%include warning.html content="API Connect Developer Toolkit does not currently support LoopBack 3.0.
-Use StrongLoop tools instead; see [Installation](Installation.html).
-" %}
-
 ### Is there a developer forum or mailing list?
 
 Yes! The [LoopBack Google Group](https://groups.google.com/forum/#!forum/loopbackjs) is a place for developers to ask questions and discuss
