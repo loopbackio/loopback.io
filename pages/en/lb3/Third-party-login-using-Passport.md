@@ -303,15 +303,15 @@ Add "./node_modules/loopback-component-passport/lib/models" to the sources
 Add following models
 ```javascript
 "ApplicationCredential": {
-    "dataSource": "mlab",
+    "dataSource": "db",
     "public": true
   },
   "UserCredential": {
-    "dataSource": "mlab",
+    "dataSource": "db",
     "public": true
   },
   "UserIdentity": {
-    "dataSource": "mlab",
+    "dataSource": "db",
     "public": true
   }
 
