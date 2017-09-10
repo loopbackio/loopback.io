@@ -297,6 +297,24 @@ For more information, see [Configuring providers.json](Configuring-providers.js
 }
 ```
 
+### Configuration in model-config.json
+
+Add "./node_modules/loopback-component-passport/lib/models" to the sources
+Add following models
+```javascript
+"ApplicationCredential": {
+    "dataSource": "mlab",
+    "public": true
+  },
+  "UserCredential": {
+    "dataSource": "mlab",
+    "public": true
+  },
+  "UserIdentity": {
+    "dataSource": "mlab",
+    "public": true
+  }
+
 ### Set up in application code
 
 Add code such as the following to `server/server.js` to load provider configurations, as illustrated in 
