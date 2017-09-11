@@ -116,13 +116,13 @@ The following table describes the remoting properties.  For more information on 
 {% include tip.html content="The full names of the properties below are prefixed by \"remoting,\" for example, `remoting.json.limit`.
 " %}
 
-<table style="width: 800px;">
+<table style="width: 800px;" border="1">
   <thead>
     <tr>
-      <th width="150">Property</th>
-      <th width="150">Type</th>
+      <th width="120">Property</th>
+      <th width="100">Type</th>
       <th>Description</th>
-      <th >Default</th>
+      <th width="150">Default</th>
     </tr>
   </thead>
   <tbody>
@@ -169,7 +169,7 @@ The following table describes the remoting properties.  For more information on 
       <td>true</td>
     </tr>
     <tr>
-      <td>rest.normalizeHttpPath</td>
+      <td>rest.<br/>normalizeHttpPath</td>
       <td>Boolean</td>
       <td>If <code>true</code>, in HTTP paths, converts:
         <ul>

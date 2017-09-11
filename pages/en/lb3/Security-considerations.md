@@ -57,18 +57,21 @@ LoopBack applications use the [cors](https://www.npmjs.com/package/cors) middlew
 for [cross-origin resource sharing](https://en.wikipedia.org/wiki/Cross-origin_resource_sharing)
 (CORS), but it is **disabled by default** for applications created with the [application generator](Application-generator.html).
 
-To enable CORS, edit the `remoting` section in your `server/config.json` and set `cors` to `true`:
+To enable CORS, ensure that `remoting.cors` is set to `false` in `server/config.json`.  This disables remoting-level CORS (used in earlier versions of LoopBack).  
 
 ```js
 {
   ...
   "remoting": {
     ...
-    "cors": true,  // false by default
+    "cors": false,  
     "handleErrors": false
   }
 }
 ```
+
+{% include tip.html content="Projects scaffolded with a recent version StrongLoop/LoopBack tools already have remoting-level CORS disabled as shown above and the global CORS handler configured in `server/middleware.json` as shown below.
+" %}
 
 To configure CORS settings, edit the `initial` section in the `server/middleware.json` file:
 
