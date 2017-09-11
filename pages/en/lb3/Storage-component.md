@@ -148,16 +148,17 @@ Each cloud storage provider requires different credentials to authenticate.
 Provide these credentials as properties of the JSON object argument to `createDataSource()`, in addition to the `connector` property,
 as shown in the following table.
 
-<table>
+
+<table width="800">
   <thead>
     <tr>
       <th>Provider</th>
       <th>Property</th>
       <th>Description</th>
-      <th>Example</th>
+      <th width="350">Example</th>
     </tr>
   </thead>
-  <tbody>    
+  <tbody>
     <tr>
       <td rowspan="3">
         <strong>Amazon</strong>
@@ -202,6 +203,7 @@ as shown in the following table.
       <td>apiKey</td>
       <td>Your API key</td>
     </tr>
+
     <tr>
       <td rowspan="3"><strong>Azure</strong></td>
       <td>provider</td>
@@ -247,7 +249,31 @@ as shown in the following table.
       <td>authUrl</td>
       <td>Your identity service</td>
     </tr>
-
+    <tr>
+      <td rowspan="4"><strong>Google Cloud</strong></td>
+      <td>provider</td>
+      <td>'google'</td>
+      <td rowspan="4">
+<pre style="font-size:11px;">{
+ provider: 'google',
+ 'keyFilename': 'path/to/keyfile.json',
+ 'projectId': '...',
+ 'nameConflict': 'makeUnique'
+}</pre>
+      </td>
+    </tr>
+    <tr>
+      <td>keyFilename</td>
+      <td>Path to key file.</td>
+    </tr>
+    <tr>
+      <td>projectID</td>
+      <td>Google Cloud project ID.</td>
+    </tr>
+    <tr>
+      <td>nameConflict</td>
+      <td>Optional; Use 'makeUnique' to specify unique names.</td>
+    </tr>
     <tr>
       <td rowspan="2"><strong>Local File System</strong></td>
       <td>provider</td>
@@ -259,13 +285,13 @@ as shown in the following table.
 }</pre>
       </td>
     </tr>
-
     <tr>
       <td>root</td>
       <td>File path to storage root directory.</td>
     </tr>
   </tbody>
 </table>
+
 
 ## Automatic Unique Filenames
 
@@ -275,13 +301,12 @@ As documented above, a file uploaded with the same name as an existing file will
 
 Once you create a container, it will provide both a REST and Node API, as described in the following table. For details, see the complete [API documentation](http://apidocs.strongloop.com/loopback-component-storage/).
 
-<table>
+
+<table >
   <thead>
     <tr>
       <th>Description</th>
-      <th width="200">
-        Container Model Method
-      </th>
+      <th width="320">Container Model Method</th>
       <th>REST URI</th>
     </tr>
   </thead>    
