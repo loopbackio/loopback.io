@@ -299,8 +299,12 @@ For more information, see [Configuring providers.json](Configuring-providers.js
 
 ### Configuration in model-config.json
 
-Add "./node_modules/loopback-component-passport/lib/models" to the sources
-Add following models
+loopback-component-passport comes with ApplicationCredential, UserCredential and UserIdentity models. These need to be configured in model-config.json.
+
+Add "./node_modules/loopback-component-passport/lib/models" to the sources array.
+
+Add the following into the list of models in the same file. Make sure you change the dataSource property to match the databse name.
+
 ```javascript
 "ApplicationCredential": {
     "dataSource": "db",
