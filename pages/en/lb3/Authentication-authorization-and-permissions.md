@@ -342,6 +342,7 @@ MyUser.disableRemoteMethodByName("create");
 MyUser.disableRemoteMethodByName("upsert");
 MyUser.disableRemoteMethodByName("updateAll");
 MyUser.disableRemoteMethodByName("prototype.updateAttributes");
+MyUser.disableRemoteMethodByName("prototype.patchAttributes");
 
 MyUser.disableRemoteMethodByName("find");
 MyUser.disableRemoteMethodByName("findById");
@@ -375,6 +376,7 @@ Product.disableRemoteMethodByName('upsert');		// Removes (PUT) /products
 Product.disableRemoteMethodByName('deleteById');	// Removes (DELETE) /products/:id
 Product.disableRemoteMethodByName("updateAll");		// Removes (POST) /products/update
 Product.disableRemoteMethodByName("prototype.updateAttributes"); // Removes (PUT) /products/:id
+Product.disableRemoteMethodByName("prototype.patchAttributes");  // Removes (PATCH) /products/:id
 Product.disableRemoteMethodByName('createChangeStream'); // Removes (GET|POST) /products/change-stream
 ```
 
