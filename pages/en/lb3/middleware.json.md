@@ -123,9 +123,7 @@ For more information, see [Defining middleware](Defining-middleware.html).
 
 ## CORS settings
 
-Set Cross-origin resource sharing (CORS) settings as `cors.params` properties in the initial phase.
-
-You can set other CORS properties as well. For more information, see [cors](https://www.npmjs.com/package/cors).
+Set Cross-origin resource sharing (CORS) settings as `cors.params` properties in the initial phase. Here are the default CORS properties as created by the [Application generator](Application-generator.html):
 
 <table>
   <thead>
@@ -139,9 +137,10 @@ You can set other CORS properties as well. For more information, see [cors](http
   <tbody>    
     <tr>
       <td>cors.params.origin</td>
-      <td>Boolean</td>
+      <td>Boolean|String|RegExp|Array|Function</td>
       <td>Configures the <strong>Access-Control-Allow-Origin</strong> CORS header.
-          Expects a string (for example: "http://example.com/").
+          For a full description of all the options, see <a href="https://www.npmjs.com/package/cors" class="external-link" >cors</a>.
+          Expects a string (for example: "http://example.com/") or array of strings.
           Set to <code>true</code> to reflect the <a href="http://tools.ietf.org/html/draft-abarth-origin-09" class="external-link">request origin</a>,
           as defined by <code>req.header('Origin')</code>. Set to <code>false</code> to disable CORS. Can also be set to a function,
           which takes the request origin as the first parameter and a callback (which expects the signature <code>err [object], allow [bool]</code>) as the second.</td>
@@ -152,7 +151,6 @@ You can set other CORS properties as well. For more information, see [cors](http
       <td>Boolean</td>
       <td>
         Configures the <strong>Access-Control-Allow-Credentials</strong> CORS header. Set to <code>true</code> to pass the header, otherwise it is omitted.
-        You can set other cors properties as well. For more information, see <a href="https://www.npmjs.com/package/cors" class="external-link" >cors</a>.
       </td>
       <td>true</td>
     </tr>
@@ -166,3 +164,5 @@ You can set other CORS properties as well. For more information, see [cors](http
     </tr>
   </tbody>
 </table>
+
+You can set other CORS properties as well. For more information, see [cors](https://www.npmjs.com/package/cors). 
