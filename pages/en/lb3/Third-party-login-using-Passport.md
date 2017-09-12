@@ -309,7 +309,7 @@ Add "./node_modules/loopback-component-passport/lib/models" to the sources array
       "loopback/server/models",
       "../common/models",
       "./models",
-      "./node_modules/loopback-component-passport/lib/models"
+      "../node_modules/loopback-component-passport/lib/models"
     ]
 ```
 
