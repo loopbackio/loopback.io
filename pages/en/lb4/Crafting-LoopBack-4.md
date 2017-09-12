@@ -9,106 +9,107 @@ summary:
 ---
 ## Background
 
-[LoopBack](http://loopback.io) is an open source [Node.js](https://nodejs.org) framework built for API developers. Its primary goal is to help create APIs as microservices from existing services/databases and expose them as endpoints for client applications, such as Web, Mobile, and IoT. LoopBack connects the dots between accepting API requests and interacting with backend resources. By facilitating developers to implement API logic with out of box integration capabilities, LoopBack establishes itself as the API composition layer to [differentiate](http://loopback.io/resources/#compare) from other frameworks, such as [Express](https://expressjs.com), [Hapi](https://hapijs.com), and [Sails](http://sailsjs.com).
+[LoopBack](http://loopback.io) is an open-source [Node.js](https://nodejs.org) framework built for API developers. Its primary goal is to help create APIs as microservices from existing services/databases and expose them as endpoints for client applications, such as web, mobile, and IoT. LoopBack connects the dots between accepting API requests and interacting with backend resources. By facilitating developers to implement API logic with out of box integration capabilities, LoopBack establishes itself as the API composition layer to [differentiate](http://loopback.io/resources/#compare) from other frameworks, such as [Express](https://expressjs.com), [Hapi](https://hapijs.com), and [Sails](http://sailsjs.com).
 
 ![loopback-composition](/images/lb4/loopback-composition.png)
 
-Up to version 3.x, LoopBack is built on top of the popular [Express framework](https://expressjs.com). In retrospect, that was the right and wise decision we made four years ago when LookBack was born. Standing on the shoulders of Express, LoopBack can focus on adding values for better API creation experience without reinventing the wheel. It also has been benefiting from the Express ecosystem, especially around ready-to-use middleware modules from NPM as well as valuable knowledge and support by the community.
+Up to version 3.x, LoopBack is built on top of the popular [Express framework](https://expressjs.com). In retrospect, basing LoopBack on Express was the right decision: Standing on the shoulders of Express, LoopBack can focus on adding value for API creation experience without reinventing the wheel. LoopBack also has benefitted from the Express ecosystem, especially ready-to-use middleware modules from npm as well as valuable knowledge and support by the community.
 
-With LoopBack, developers can create and expose APIs just like cooking your own dishes by following recipes and adding ingredients. LoopBack introduces a set of core concepts to represent the key aspects of API implementation. Descriptions for such building blocks can be found at http://loopback.io/doc/en/lb3/LoopBack-core-concepts.html. To create APIs out of existing databases or services, developers can simply scaffold a LoopBack application, then add necessary JSON declarations and Node.js code to get your APIs up and running in a few minutes.
+With LoopBack, developers can create and expose APIs just like cooking meals by following recipes and adding ingredients. LoopBack introduces a set of [core concepts](http://loopback.io/doc/en/lb3/LoopBack-core-concepts.html) that represent the key aspects of API implementation.  To create APIs out of existing databases or services, developers can simply scaffold a LoopBack application, then add necessary JSON declarations and Node.js code to get their APIs up and running in a few minutes.
 
-Behind the scene, LoopBack uses Express routing and middleware as the plumbing to build its flavor of request/response pipeline for API use cases, such as authentication, authorization, and routing. Beyond the inbound HTTP processing, LoopBack provides integration facilities such as models, datasources and connectors to allow API logic to interact with various backend systems, including but not limited to, databases, REST APIs, SOAP Web Services and gRPC microservices. The ability to glue inbound communication and outbound integration makes LoopBack a very powerful framework for API developers. The diagram below illustrates how LoopBack fits into a typical end-to-end API processing flow.
+Behind the scenes, LoopBack uses Express routing and middleware as the plumbing to build its flavor of request/response pipeline for API use cases, such as authentication, authorization, and routing. Beyond the inbound HTTP processing, LoopBack provides integration facilities such as models, datasources and connectors to allow API logic to interact with various backend systems, including but not limited to, databases, REST APIs, SOAP web services and gRPC microservices. The ability to glue inbound communication and outbound integration makes LoopBack a very powerful framework for API developers. The diagram below illustrates how LoopBack fits into a typical end-to-end API processing flow.
 
 ![loopback-overview](/images/lb4/loopback-overview.png)
 
-With many years of development and multiple releases, LoopBack has grown significantly in features and users. Many good parts of LoopBack are well received. As an indication, [many extensions](https://github.com/pasindud/awesome-loopback) have been developed by our community members. We the core team have also learned a lot from what we have done as well as great feedback from the community.
+With many years of development and multiple releases, LoopBack has grown significantly in features and users. Many good parts of LoopBack are well received. As an indication, the community has developed [many extensions](https://github.com/pasindud/awesome-loopback). The core team has also learned a lot from what we have done as well as great feedback from the community.
 
-## Why LoopBack Next?
+## Why LoopBack-Next?
 
-Like many projects, we start to experience the growing pains with LoopBack too, especially around the following observations:
+Like many projects, we've started to experience growing pains with LoopBack too, especially around the following observations:
 
 1. The code base becomes more complicated over time with more modules and more functionality. We would like to have more maintainers and contributors to help out. But the learning curve is getting steep. One of the things to blame is JavaScript itself, which is weakly-typed and lack of constructs such as interfaces to explicitly define contracts between code. There is quite a bit hidden knowledge that is not explicit or obvious for new comers.
 
 2. Technical debts are accumulating, such as inconsistent designs across modules and feature flags for different behaviors. Here are a few examples:
-    - Multiple registries are introduced by various modules to manage different types of artifacts, such as remoting metadata, models, datasources, and middleware. 
+    - Multiple registries are introduced by various modules to manage different types of artifacts, such as remoting metadata, models, datasources, and middleware.
     - Different flavors are used to allow custom logic to intercept requests/responses at various layers, such as middleware, remote hooks, CRUD operation hooks, and connector hooks.
-    - More and more feature flags are added over time to keep backward compatibility while allowing users to opt into new behaviors.
+    - More feature flags were added over time to keep backward compatibility while enabling users to opt-in to new behaviors.
 
-3. It is becoming more difficult to add new features or fix bugs as some areas start to reach the limit of the current design. 
+3. It is becoming more difficult to add new features or fix bugs as some areas start to reach the limit of the current design.
     - The loopback-datasource-juggler module is a kitchen sink for many things, such as typing, data modeling, validation, aggregation, persistence, and service integration.
     - Models are overloaded with multiple responsibilities, such as data representation, persistence, and mapping to REST. Models are tied to datasources and it's not easy to reuse the same model definition against different datasources.
 
 4. It's not very easy to extend the framework without requesting the core team to make code changes in LoopBack modules. The current version of LoopBack has ad-hoc extensibility at various layers. Extension points are not consistently defined. For example,
-    - Use Express to register middleware
-    - Use remoting hooks to intercept remote method invocations
-    - Use CRUD hooks to add logic around CRUD operations
+    - Use Express to register middleware.
+    - Use remoting hooks to intercept remote method invocations.
+    - Use CRUD hooks to add logic around CRUD operations.
 
 5. More projects start to use LoopBack as the underlying platform. Such use cases require more knowledge of LoopBack internals and more flexibility and dynamicity to leverage LoopBack to manage and compose artifacts using a metadata driven approach. Some good examples are:
-    - Multi-tenancy which requires artifact isolation between tenants
-    - Metadata APIs to manage/activate model definitions and datasources
-    - New interaction patterns for connectors, such as eventing or messaging
-    - Extra metadata for model definitions
+    - Multi-tenancy which requires artifact isolation between tenants.
+    - Metadata APIs to manage/activate model definitions and datasources.
+    - New interaction patterns for connectors, such as eventing or messaging.
+    - Extra metadata for model definitions.
 
-Since the release of 3.x, the team have been brainstorming around how to sustain and advance LoopBack. We have done a lot of homework, such as triaging existing github issues, reaching out to community members and downstream products, and evaluating relevant frameworks and technologies. The team is trying to find answers to the following questions to decide what's next for LoopBack.  
+Since the release of 3.x, the team has been brainstorming around how to sustain and advance LoopBack. We have done a lot of homework, such as triaging existing GitHub issues, reaching out to community members and downstream products, and evaluating relevant frameworks and technologies to find answers to the following questions to decide what's next for LoopBack:
 
-- Who are the target audience of LoopBack? Why are they interested in LoopBack? What do they use LoopBack for and how do they use it?
+- Who is the target audience of LoopBack? Why are they interested in LoopBack? What do they use LoopBack for and how do they use it?
 - What are the critical pain points? Can we address them incrementally without rebuilding a new foundation?
 - What are the most requested features? Is it possible to add such features with the current design?
 - What are latest and greatest technologies in our space? What value will they bring in if we start to adopt them?
 - How to scale the development and maintenance of LoopBack? How do we allow larger development teams to collaborate on creating APIs using LoopBack?
 - How to further grow the community and expand its ecosystem? What can we do to bring more users and contributors to LoopBack?
 
-The team realize that LoopBack has gained traction among a spectrum of users beyond Node.js application developers. 
+LoopBack has gained traction among a spectrum of users beyond Node.js application developers,
+including:
 
-1. API Developers - use LoopBack to create APIs in Node.js
-2. LoopBack Maintainers and Contributors - build and maintain modules by the LoopBack project 
-2. Extension Developers - contribute extensions to LoopBack to augment the framework
-3. Platform Developers - leverage LoopBack as the base to build their value-added offerings
+- **API developers** - Use LoopBack to create APIs in Node.js.
+- **LoopBack maintainers and contributors** - Build and maintain modules by the LoopBack project .
+- **Extension developers** - Contribute extensions to LoopBack to augment the framework.
+- **Platform developers** - Leverage LoopBack as the base to build their value-added offerings.
 
 ![loopback-ecosystem](/images/lb4/loopback-ecosystem.png)
 
-The consensus from the core team is to take a bold move and rebuild LoopBack to meet the needs of all above. The decision leads to the inception of LoopBack Next - a new generation of API creation platform. 
+The consensus from the core team is to take a bold move and rebuild LoopBack to meet the needs of all above. The decision leads to the inception of LoopBack Next, a new generation of API creation platform.
 See more information at https://strongloop.com/strongblog/announcing-loopback-next/
 
-## Objectives for LoopBack Next
+## Objectives
 
-LoopBack Next is designated to meet the following objectives which will further evolve the framework for even better API creation experiences. 
+LoopBack Next is designated to meet the following objectives to further evolve the framework for even better API creation experiences:
 
-1. Catch up with latest and greatest technology advances
-   - Adopt [ES2016/2017](http://exploringjs.com/es2016-es2017/index.html) and [TypeScript](https://www.typescriptlang.org/) for ease of maintenance and productivity
-   - Embrace new industrial standards such as [OpenAPI Spec](https://www.openapis.org/) and [GraphQL](http://graphql.org/)
+1. Catch up with latest and greatest technology advances.
+   - Adopt [ES2016/2017](http://exploringjs.com/es2016-es2017/index.html) and [TypeScript](https://www.typescriptlang.org/) for ease of maintenance and productivity.
+   - Embrace new industrial standards such as [OpenAPI Spec](https://www.openapis.org/) and [GraphQL](http://graphql.org/).
 
-2. Promote extensibility to grow the ecosystem
-   - A framework cannot solve all problems out of box. What's important is to allow itself to be extended or customized. 
-   - Open the door for more [extension points and extensions](https://github.com/strongloop/loopback-next/issues/512)
+2. Promote extensibility to grow the ecosystem.
+   - A framework cannot solve all problems out of the box. It must be extendable or customizable.
+   - Open the door for more [extension points and extensions](https://github.com/strongloop/loopback-next/issues/512).
 
-3. Align with cloud native experience for microservices
-   - Adopt cloud native microservices by adopting initiatives such as [Cloud Native Computing Foundation](https://www.cncf.io/)
-   - Make LoopBack a first-class citizen of the microservices ecosystem
-  
-4. Remove the complexity and inconsistency across modules
-   - Use a consistent registry and APIs to manage artifacts and their dependencies
-   - Pay down the technical debts by refactoring complex modules
+3. Align with cloud native experience for microservices.
+   - Adopt cloud native microservices by adopting initiatives such as [Cloud Native Computing Foundation](https://www.cncf.io/).
+   - Make LoopBack a first-class citizen of the microservices ecosystem.
 
-5. Separate concerns for better composability
-   - Introduce new concepts such as controllers and repositories to represent different responsibilities
-   - Break down the runtime as a set of services and utilize the extension points/extensions pattern to manage the registration, resolution and composition
+4. Remove the complexity and inconsistency across modules.
+   - Use a consistent registry and APIs to manage artifacts and their dependencies.
+   - Pay down the technical debts by refactoring complex modules.
 
-# Strategies toward LoopBack Next
+5. Separate concerns for better composability.
+   - Introduce new concepts such as controllers and repositories to represent different responsibilities.
+   - Break down the runtime as a set of services and utilize the extension points/extensions pattern to manage the registration, resolution, and composition.
 
-We decide not to take a big-bang approach to build LoopBack next. Instead, we are doing it incrementally in multiple stages with smaller steps. This approach allows us to better engage the community from the beginning. We also follow the principles below to pursue architectural simplicity and extensibility. 
+## Strategy
 
-1. Imperative first, declarative later
+We decided not to take a "big-bang" approach to build LoopBack-Next. Instead, we are doing it incrementally in multiple stages with smaller steps. This approach allows us to better engage the community from the beginning. We are following the principles below to pursue architectural simplicity and extensibility:
+
+1. **Imperative first, declarative later**
 
    Everything can be done by code via `APIs`. The LoopBack team or community contributors can then create varieties of user experiences with such APIs. For example, with APIs to define models, we allow applications to declare models in JSON or YAML files so that they can be discovered and loaded. An extension can parse other forms of model definition, such as JSON schemas, ES6 classes with decorators, schemas in OpenAPI spec, or even XML schemas into LoopBack model definitions.
 
    We can also leverage programming constructs such as [decorators](https://www.typescriptlang.org/docs/handbook/decorators.html) allow developers to supply metadata in code. Furthermore, LoopBack artifacts can be declared in JSON or YAML files, which will be handy for users to generate and manipulate them by hand or tooling.
 
-2. Build minimum features and add more later if necessary
+2. **Build minimum features and add more later if necessary**
 
    Apply YAGNI (You Aint’t Gonna Need). Design and build for what is needed now, not for what you think you may need in the future. There are many different perspectives in API creation and people ask for a lot of features. Starting with MVP allow us to reach the root of the issues without being derailed by noises and build the absolutely necessary features as the core building blocks.  
 
-3. Developer experience first
+3. **Developer experience first**
 
    Always keep in mind that LoopBack are built for developers by developers. Our first priority is to make API developers' life easier. When we design APIs and user interfaces such as CLI or UI, we want to make sure they are intuitive to our users and natural to their thought process.  
 
@@ -248,29 +249,29 @@ Representation of such knowledge base is the most critical construct for LoopBac
 
 Do we need to build our own core foundation? Can we continue to use Express? Our conclusion is no. Here are the gaps between what Express and LoopBack's need.
 
-- Lack of extensibility
+- **Lack of extensibility**.  
 
-Express is a routing and middleware web framework that has minimal functionality of its own: An Express application is essentially a series of middleware function calls. See more information at http://expressjs.com/en/guide/using-middleware.html.
+  Express is a routing and middleware web framework with minimal functionality of its own: An Express application is essentially a series of middleware function calls. For details, see [Using middleware](http://expressjs.com/en/guide/using-middleware.html).
 
-Express is only extensibile via middleware.  It neither exposes a registry nor provides APIs to manage artifacts such as middleware or routers. For its purpose, Express only deals with middleware-like extensions that intercept http requests/responses. LoopBack needs much more extension points and extensions.
+  Express is only extensibile via middleware.  It neither exposes a registry nor provides APIs to manage artifacts such as middleware or routers. For its purpose, Express only deals with middleware-like extensions that intercept http requests/responses. LoopBack needs much more extension points and extensions.
 
-- Lack of composability
+- **Lack of composability**.
 
-For example, `app.use()` is the only way to register a middleware. The order of middleware is determined by the order of `app.use`. This simplistic approach works for a single monolithic application where all middleware are known and arranged ahead of time. But it does not support the case that middleware from other components need to be added between existing ones. LoopBack has to introduce phase based extension and hack the Express to allow so.    
+  Express is not composable. For example, `app.use()` is the only way to register a middleware. The order of middleware is determined by the order of `app.use`. This simplistic approach works for a single monolithic application where all middleware are known and arranged ahead of time. But it does not support the case when middleware from other components need to be added between existing ones. LoopBack has to introduce a phase-based extension and hack Express to provide this capability.
 
-Express doesn't provide any ways to manage dependencies between artifact instances either.
+  Express doesn't provide any way to manage dependencies between artifact instances either.
 
-- Lack of declarative support
+- **Lack of declarative support**.  
 
-In Express, everything is done by JavaScript code as it works exactly as the web site claims: `Fast, unopinionated, minimalist web framework for Node.js`. On contrast, LoopBack is designed to facilitate API creations and compositions by conventions and patterns as best practices. More types of constructs are introduced.   
+  In Express, everything is done by JavaScript code as it works exactly as the web site claims: `Fast, unopinionated, minimalist web framework for Node.js`. In contrast, LoopBack is designed to facilitate API creation and composition by conventions and patterns as best practices. More types of constructs are introduced.   
 
 ## Deep-diving into the building blocks
 
-### Service Registry/Container
+### Service registry/container
 
 ![loopback-ioc](/images/lb4/loopback-ioc.png)
 
-### Dependency Injection
+### Dependency injection
 
 ### Component as the packaging model for extensions
 

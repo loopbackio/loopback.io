@@ -9,7 +9,8 @@ summary:
 ---
 ## Introduction
 
-Target audience of this blog is new LoopBack Next developers who have done LoopBack application development in the following environment:
+This article is for developers familiar with LoopBack who are interested in
+learning and using LoopBack-Next.
 
 - Nodejs v4, v6, or v8
 - Using JavaScript, more precisely [ECMAScript 5](https://en.wikipedia.org/wiki/ECMAScript#5th_Edition),
@@ -51,11 +52,7 @@ describe('api spec', () => {
 
 Secondly, there are several new technologies we use in LoopBack Next and each of them is significantly different from what I got used to.  Mentioned [ECMAScript 5](https://en.wikipedia.org/wiki/ECMAScript#5th_Edition) and [TypeScript](https://www.typescriptlang.org/) earlier; and [OpenAPI](https://www.openapis.org/) is another.  They are cool new technologies that make LoopBack Next shine, but I felt being pulled out of my comfort zone many times a day.
 
-This blog will cover all those `conceptual roadblocks`(to me) in `Foundation` chapter in the first half of this blog, and `LoopBack Next` in the second half.  I thought it makes sense to spend the first half for the foundation technologies because "divide and conquer" seems to be the right strategy here, i.e., start from the most basic stuff that has much less dependencies and build the next layer on top of it.  At the same time, we want to keep the clear goal in mind, i.e., LoopBack Next programming so that we can selectively study key topics in the foundation technologies, move on to LoopBack Next space, then come back to the foundation when needed.
-
-In the `LoopBack Next` chapter, our focus will be three core concepts: controllers, components, and sequence.
-
-Alright, let's get the foundation techniques under the belt.
+This blog will cover these "conceptual roadblocks" in the following ("Foundation") section.  The remainder covers LoopBack-Next with focus on three core concepts: Controllers, Components, and Sequence.
 
 ## Foundation
 
@@ -65,11 +62,11 @@ LoopBack Next is built on TypeScript and OpenAPI.  TypeScript is built on ECMASc
 
 ## [ECMAScript 8](https://en.wikipedia.org/wiki/ECMAScript#8th_Edition_-_ECMAScript_2017)
 
-1. [ECMAScript 5 vs. 6 — New Features: Overview & Comparison](http://es6-features.org/#Constants) -- http://es6-features.org/#Constants
+1. [ECMAScript 5 vs. 6 — New Features: Overview and Comparison](http://es6-features.org/#Constants) -- http://es6-features.org/#Constants
 2. [The ECMAScript 8 specification](https://www.ecma-international.org/publications/files/ECMA-ST/Ecma-262.pdf) -- https://www.ecma-international.org/publications/files/ECMA-ST/Ecma-262.pdf
 3. [async/await, a.k.a "async functions"](https://tc39.github.io/ecmascript-asyncawait/) -- https://tc39.github.io/ecmascript-asyncawait/
 
-The ES5 vs. ES6 overview & comparison site was very helpful to me.  Reading through the short list of code comparison between ES5 and ES6 gave me a good perspective.  I still go back to the site occasionaly.  When I wanted to understand what's not covered there, I went to the spec and other options, but that rarely occurred.
+The ES5 vs. ES6 overview and comparison site was very helpful to me.  Reading through the short list of code comparison between ES5 and ES6 gave me a good perspective.  I still go back to the site occasionaly.  When I wanted to understand what's not covered there, I went to the spec and other options, but that rarely occurred.
 
 `Async Functions and Await` is the notation LoopBack Next uses all over the place for asynchronous operations.  Great news to me was that the standard `try-catch` clause could be used to catch errors.  That is the ultimate.  Here is my opinionated historical view of `asynchronous operations` in Nodejs.
 
@@ -110,9 +107,9 @@ function callback2() {
 setInterval(plainCallback, 500);
 ```
 
-### Asynchronous Pattern 2 : [`async` package](https://caolan.github.io/async/)
+### Asynchronous Pattern 2 : async
 
-It counts 2 million daily download.  It provides a set of programming interfaces for various asynchronous runtime structure. It's easy to visually understand the dynamic behavior.  In this example, you can easily switch between sequential execution and parallel execution of the callback function.  I bet many of you are already using it heavily.  `series` and `parallel` used below are just two of dozens of interfaces `async` package supports.
+The [`async`](https://caolan.github.io/async/) package counts two million daily downloads.  It provides a set of programming interfaces for various asynchronous runtime structure. It's easy to visually understand the dynamic behavior.  In this example, you can easily switch between sequential execution and parallel execution of the callback function.  I bet many of you are already using it.  `series` and `parallel` used below are just two of dozens of interfaces `async` package supports.
 
 ```js
 declare function require(name:string): any;
@@ -150,11 +147,11 @@ function asyncSeries() {
 setInterval(asyncSeries, 500);
 ```
 
-### Asynchronous Pattern 3 : Promise
+### Asynchronous Pattern 3 : Promises
 
-With Promise, runtime behavior of asynchronous operations such as error case handling is visually easier to understand, i.e., error propagation in async calls.  But, don't forget try-catch for synchronous error handling.  We need both.
+With Promises, runtime behavior of asynchronous operations such as error case handling is visually easier to understand, i.e., error propagation in async calls.  But don't forget try-catch for synchronous error handling.  We need both.
 
-***Note that Promise and Async/Await comparison below is clear in the examples below.  They are applie to apple comparison.  However, `async package` is a different breed.***
+***Note that Promise and Async/Await comparison below is clear in the examples below.  They are apples-to-apples comparison.  However, `async package` is a different breed.***
 
 ```js
 
@@ -186,7 +183,7 @@ setInterval(promiseThenCatch, 500);
 
 ### Asynchronous Pattern 4 : Async/Await
 
-This is the ultimate.  It does not look like asynchronous anymore.  You can examine the transpiled JS code to see how elegant the TS code is.
+This is the ultimate.  It does not look like asynchronous anymore.  You can examine the transpiled JavaScript code to see how elegant the TS code is.
 
 ```js
 async function asyncAwait() {
@@ -228,13 +225,13 @@ awaitDelay();
 
 ## Overview of TypeScript
 
-[TypeScript](https://www.typescriptlang.org/) proivdes a type system for ECMAScript 8.
+[TypeScript](https://www.typescriptlang.org/) provides a type system for ECMAScript 8.
 
 1. Getting Started With TypeScript -- https://basarat.gitbooks.io/typescript/docs/types/type-system.html
 2. Declaration Files -- https://basarat.gitbooks.io/typescript/docs/types/ambient/d.ts.html
 3. Decorators -- https://www.typescriptlang.org/docs/handbook/decorators.html
 
-I like the `Getting Started With TypeScript` and have read from the beggining to the end.  By the way, when you need to `npm install passport`, make sure you've got the accompanying Type Definition file as well: `npm install -S @types/passport`
+I like the `Getting Started With TypeScript` and have read from the beginning to the end.  By the way, when you need to `npm install passport`, make sure you've got the accompanying Type Definition file as well: `npm install -S @types/passport`
 
 ## [OpenAPI](https://www.openapis.org/)
 
@@ -242,7 +239,7 @@ I like the `Getting Started With TypeScript` and have read from the beggining to
 
 In LoopBack Next, we define all of our endpoints in a declarative fashion, namely, OpneAPI spec.  I found [the swagger editor](https://editor.swagger.io) very useful to study OpenAPI spec as well as to debug and build a complex API spec.
 
-Note (LoopBack Next specific): In a LoopBack Next app, typically you don't put the header portion of the api spec(see below) because LoopBack Next adds it in @api decorator (we'll discuss "decorator" later in this blog).  [The swagger editor](https://editor.swagger.io), which is out side of LoopBack Next, will complain without the header portion.
+Note (LoopBack Next specific): In a LoopBack Next app, typically you don't put the header portion of the API spec(see below) because LoopBack Next adds it in @api decorator (we'll discuss "decorator" later in this blog).  [The swagger editor](https://editor.swagger.io), which is out side of LoopBack Next, will complain without the header portion.
 ```js
 {
   "swagger": "2.0",
@@ -260,7 +257,7 @@ Also note that LoopBack Next provides `validateApiSpec` in the testlab so that y
 
 ## LoopBack Next
 
-We're going to study three key concepts: controller & API spec, components & providers, and custom sequence.  Working sample codes are available in several places, one of which is [Hello World](https://github.com/strongloop/loopback-next-hello-world).  I'm going to discuss specific conceptual roadblocks I stumbled upon.
+We're going to study three key concepts: controller and API spec, components and providers, and custom sequence.  Working sample codes are available in several places, one of which is [Hello World](https://github.com/strongloop/loopback-next-hello-world).  I'm going to discuss specific conceptual roadblocks I stumbled upon.
 
 Skeleton of the client code looks like this:
 ```js
@@ -368,7 +365,9 @@ export class LoggerComponent implements Component {
   }
 }
 ```
-  Note: What's computed property name ?  See http://es6-features.org/#ComputedPropertyNames
+
+Note: What's computed property name ?  See http://es6-features.org/#ComputedPropertyNames
+
 ```js
 import {Provider} from '@loopback/context';
 
@@ -417,10 +416,6 @@ class MySequence extends DefaultSequence {
 }
 
 ```
-
-
-____________________________________________
-# Bonus
 
 ## How to test/validate API spec
 
