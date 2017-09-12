@@ -35,7 +35,7 @@ This creates an entry in `datasources.json` like this (for example):
 ...
 "myStorageDataSource": {
   "name": "myStorageDataSource",
-  "connector": "storage"
+  "connector": "loopback-component-storage"
 }
 ...
 ```
@@ -50,7 +50,7 @@ for example as shown in the [storage service example](https://github.com/strong
 ...
 "myStorageDataSource": {
   "name": "myStorageDataSource",
-  "connector": "storage",
+  "connector": "loopback-component-storage",
   "provider": "filesystem",
   "root": "./server/storage"
 }
