@@ -11,7 +11,7 @@ summary:
 
 [LoopBack](http://loopback.io) is an open source [Node.js](https://nodejs.org) framework built for API developers. Its primary goal is to help create APIs as microservices from existing services/databases and expose them as endpoints for client applications, such as Web, Mobile, and IoT. LoopBack connects the dots between accepting API requests and interacting with backend resources. By facilitating developers to implement API logic with out of box integration capabilities, LoopBack establishes itself as the API composition layer to [differentiate](http://loopback.io/resources/#compare) from other frameworks, such as [Express](https://expressjs.com), [Hapi](https://hapijs.com), and [Sails](http://sailsjs.com).
 
-![loopback-composition](/images/loopback-composition.png)
+![loopback-composition](/images/lb4/loopback-composition.png)
 
 Up to version 3.x, LoopBack is built on top of the popular [Express framework](https://expressjs.com). In retrospect, that was the right and wise decision we made four years ago when LookBack was born. Standing on the shoulders of Express, LoopBack can focus on adding values for better API creation experience without reinventing the wheel. It also has been benefiting from the Express ecosystem, especially around ready-to-use middleware modules from NPM as well as valuable knowledge and support by the community.
 
@@ -19,7 +19,7 @@ With LoopBack, developers can create and expose APIs just like cooking your own 
 
 Behind the scene, LoopBack uses Express routing and middleware as the plumbing to build its flavor of request/response pipeline for API use cases, such as authentication, authorization, and routing. Beyond the inbound HTTP processing, LoopBack provides integration facilities such as models, datasources and connectors to allow API logic to interact with various backend systems, including but not limited to, databases, REST APIs, SOAP Web Services and gRPC microservices. The ability to glue inbound communication and outbound integration makes LoopBack a very powerful framework for API developers. The diagram below illustrates how LoopBack fits into a typical end-to-end API processing flow.
 
-![loopback-overview](/images/loopback-overview.png)
+![loopback-overview](/images/lb4/loopback-overview.png)
 
 With many years of development and multiple releases, LoopBack has grown significantly in features and users. Many good parts of LoopBack are well received. As an indication, [many extensions](https://github.com/pasindud/awesome-loopback) have been developed by our community members. We the core team have also learned a lot from what we have done as well as great feedback from the community.
 
@@ -65,7 +65,7 @@ The team realize that LoopBack has gained traction among a spectrum of users bey
 2. Extension Developers - contribute extensions to LoopBack to augment the framework
 3. Platform Developers - leverage LoopBack as the base to build their value-added offerings
 
-![loopback-ecosystem](/images/loopback-ecosystem.png)
+![loopback-ecosystem](/images/lb4/loopback-ecosystem.png)
 
 The consensus from the core team is to take a bold move and rebuild LoopBack to meet the needs of all above. The decision leads to the inception of LoopBack Next - a new generation of API creation platform. 
 See more information at https://strongloop.com/strongblog/announcing-loopback-next/
@@ -114,7 +114,7 @@ We decide not to take a big-bang approach to build LoopBack next. Instead, we ar
 
 Here are the stages we are marching through toward the final version of LoopBack Next as illustrated below.
 
-![loopback-stack](/images/loopback-stack.png)
+![loopback-stack](/images/lb4/loopback-stack.png)
 
 1. Rebase and rewrite the core
     - TypeScript - Language advantages
@@ -268,13 +268,13 @@ In Express, everything is done by JavaScript code as it works exactly as the web
 
 ### Service Registry/Container
 
-![loopback-ioc](/images/loopback-ioc.png)
+![loopback-ioc](/images/lb4/loopback-ioc.png)
 
 ### Dependency Injection
 
 ### Component as the packaging model for extensions
 
-![loopback-component](/images/loopback-component.png)
+![loopback-component](/images/lb4/loopback-component.png)
 
 ## Rebuilding LoopBack on top of the new core
 
