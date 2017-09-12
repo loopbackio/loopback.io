@@ -67,7 +67,7 @@ When a binding is created via `.toClass()`, [[Context]] will create a new instan
 
 Note that the dependencies to be injected could be classes themselves, in which case [[Context]] will recursively instantiate these classes first, resolving their dependencies as needed.
 
-In this particular example, the class is a [Provider](https://github.com/strongloop/loopback-next/wiki/Writing-Components#providers). Providers allow you to customize the way how a value is created by the Context, possibly depending on other Context values. A provider is typically bound using `.toProvider()` API:
+In this particular example, the class is a [Provider](Writing-Components#providers). Providers allow you to customize the way how a value is created by the Context, possibly depending on other Context values. A provider is typically bound using `.toProvider(.html)` API:
 
 ```js
 app.bind('authentication.provider').toProvider(AuthenticationProvider);

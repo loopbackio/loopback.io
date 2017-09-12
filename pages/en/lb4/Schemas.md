@@ -7,6 +7,8 @@ sidebar: lb4_sidebar
 permalink: /doc/en/lb4/Schemas.html
 summary:
 ---
+{% include content/tbd.html %}
+
 > Stub page per [#554](https://github.com/strongloop/loopback-next/issues/554).
 
 - What is a Schema?

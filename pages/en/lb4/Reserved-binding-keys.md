@@ -7,7 +7,7 @@ sidebar: lb4_sidebar
 permalink: /doc/en/lb4/Reserved-binding-keys.html
 summary:
 ---
-Since [Dependency Injection](https://github.com/strongloop/loopback-next/wiki/Dependency-Injection) was introduced in LoopBack-Next, here some things to keep in mind when using it with regards to binding keys.
+Since [Dependency Injection](Dependency-injection.html) was introduced in LoopBack-Next, here some things to keep in mind when using it with regards to binding keys.
 
 Different packages and components for LoopBack-Next may have some binding already defined. You can change the default behaviour by overriding the default binding, but you must ensure the interface of the new Binding is the same as the default (but behaviour can be different).
 

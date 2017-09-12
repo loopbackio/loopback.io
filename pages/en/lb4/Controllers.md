@@ -15,7 +15,7 @@ A `Controller` operates only on processed input and abstractions of backend serv
 
 ### Review questions
 
-> Below is from [[Documentation-outline-(old)#controllers]]
+{% include content/tbd.html %}
 
 Simplest possible example of a Controller
 - app.controller()
@@ -135,7 +135,7 @@ class MyController {
 app.controller(MyController);
 ```
 
-## Writing Controller Methods
+## Writing Controller methods
 
 Below is an example Controller that uses several built in helpers (decorators). These helpers give LoopBack hints about the Controller methods.
 

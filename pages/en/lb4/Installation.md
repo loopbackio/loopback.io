@@ -7,9 +7,13 @@ sidebar: lb4_sidebar
 permalink: /doc/en/lb4/Installation.html
 summary:
 ---
-Make sure you have the following installed:
 
-- [Node.js](https://nodejs.org/en/download/current/) >= 8.0.0
+## Prerequisites
+
+Make sure you have installed
+[Node.js](https://nodejs.org/en/download/current/) version 8.0.0 or higher.
+
+## Install LoopBack core
 
 Then add LoopBack.next as a dependency to your Node.js project:
 
@@ -17,7 +21,11 @@ Then add LoopBack.next as a dependency to your Node.js project:
 npm install --save @loopback/core
 ```
 
-## JavaScript project
+## Create a Hello World project
+
+With LoopBack 4 you can code in JavaScript or TypeScript.
+
+### JavaScript project
 
 Create `index.js`:
 
@@ -34,10 +42,12 @@ app.get('hello').then(value => {
 Then run `index.js`:
 
 ```shell
-node index.js # you should see "world"
+node index.js
 ```
 
-## TypeScript project
+You should see "world" written to the console.
+
+### TypeScript project
 
 In your `tsconfig.json` `compilerOptions` configuration, add `"target": "es2017"`:
 
@@ -70,8 +80,10 @@ Then run `index.ts`.  Do one of the following:
     ```
 1. Run the app:
     ```
-    ts-node index.ts # you should see "world"
+    ts-node index.ts
     ```
+
+You should see "world" written to the console.
 
 OR:
 
@@ -88,5 +100,7 @@ OR:
 
 1. Run the compiled JavaScript output file by entering this command:
    ```
-   node index.js # you should see "world"
+   node index.js
    ```
+
+   You should see "world" written to the console.

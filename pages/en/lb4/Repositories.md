@@ -233,7 +233,7 @@ async updateAccount(where, data) {
 }
 ```
 
-Please See [Testing Your Application](https://github.com/strongloop/loopback-next/wiki/Testing-Your-Application) section in order to set up and write unit, acceptance, and integration tests for your application.
+Please See [Testing Your Application](Testing-Your-Application.html) section in order to set up and write unit, acceptance, and integration tests for your application.
 
 ## Persisting Data without Juggler [Using MySQL database]
 LoopBack Next gives you the flexibility to create your own custom Datasources which utilize your own custom connector for your favourite back end database. You can then fine tune your CRUD methods to your liking.
@@ -272,7 +272,7 @@ export class newRepository extends CrudRepositoryImpl<Account, string> {
 You can override the functions it provides, which ultimately call on your connector's implementation of them, or write new ones.
 
 ### Controller configuration (wire up your new DataSource to your controller)
-This step is essentially the same as [above](https://github.com/strongloop/loopback-next/wiki/Persisting-Data-with-Repositories#controller-configuration), but can also be done as follows using DI:
+This step is essentially the same as [above](Persisting-Data-with-Repositories#controller-configuration.html), but can also be done as follows using DI:
 1. Bind instance of your repository to a certain key in your application class
 ```javascript
 class AccountMicroservice extends Application {

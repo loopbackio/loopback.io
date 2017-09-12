@@ -18,7 +18,7 @@ summary: LoopBack 4 is a completely new framework, sometimes referred to as Loop
 
 ### What’s the timeline for LoopBack 4?
 
-See [Upcoming releases](https://github.com/strongloop/loopback-next/wiki/Upcoming-Releases).
+See [Upcoming releases](Upcoming-Releases.html).
 
 ### When can we see a demo?
 

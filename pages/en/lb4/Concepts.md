@@ -8,4 +8,6 @@ permalink: /doc/en/lb4/Concepts.html
 summary:
 ---
 
-TBD.  Perhaps this should be [Thinking in LoopBack](Thinking-in-LoopBack.html).
+{% include content/tbd.html %}
+
+Perhaps this should be [Thinking in LoopBack](Thinking-in-LoopBack.html).

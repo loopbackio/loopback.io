@@ -9,7 +9,7 @@ summary:
 ---
 > Cover "What is a decorator?"
 
-As explained in [Using Components](https://github.com/strongloop/loopback-next/wiki/Using-Components), a typical LoopBack component is an npm package exporting a Component class.
+As explained in [Using Components](Using-components.html), a typical LoopBack component is an npm package exporting a Component class.
 
 ```js
 import MyController from './controllers/my-controller';
@@ -33,7 +33,7 @@ The example `MyComponent` above will add `MyController` to application's API and
 
 ## Providers
 
-Providers are the mechanism allowing components to export values that can be used by the target application or other components. A provider is a class that provides `value()` function, this function is called by [Context](https://github.com/strongloop/loopback-next/wiki/Context) whenever another entity requests a value to be injected.
+Providers are the mechanism allowing components to export values that can be used by the target application or other components. A provider is a class that provides `value()` function, this function is called by [Context](Context.html) whenever another entity requests a value to be injected.
 
 ```js
 import {Provider} from '@loopback/context';
@@ -83,7 +83,7 @@ class MyController {
 }
 ```
 
-A note on binding names: In order to avoid name conflicts, always add a unique prefix to your binding key (`my-component.` in the example above). See [Reserved binding keys](https://github.com/strongloop/loopback-next/wiki/Reserved-binding-keys) for the list of keys reserved for the framework use.
+A note on binding names: In order to avoid name conflicts, always add a unique prefix to your binding key (`my-component.` in the example above). See [Reserved binding keys](Reserved-binding-keys.html) for the list of keys reserved for the framework use.
 
 ### Asynchronous providers
 
@@ -128,7 +128,7 @@ A frequent use case for components is to modify the way how all requests are han
 
 The idiomatic solution has two parts:
 
- 1. The component should define and bind a new [Sequence action](https://github.com/strongloop/loopback-next/wiki/Sequence#actions), for example `authentication.actions.authenticate`:
+ 1. The component should define and bind a new [Sequence action](Sequence.html#actions), for example `authentication.actions.authenticate`:
 
     ```js
     class AuthenticationComponent {
@@ -232,7 +232,7 @@ export class AuthenticationProvider {
 
 More often than not, the component may want to offer different value providers depending on the configuration. For example, a component providing Email API may offer different transports (stub, SMTP, etc.).
 
-Components should use constructor-level [Dependency Injection](https://github.com/strongloop/loopback-next/wiki/Context#dependency-injection) to receive the configuration from the application.
+Components should use constructor-level [Dependency Injection](Context.html#dependency-injection) to receive the configuration from the application.
 
 ```js
 class EmailComponent {

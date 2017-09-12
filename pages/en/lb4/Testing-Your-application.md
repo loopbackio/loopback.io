@@ -14,7 +14,7 @@ summary:
 
 NOTE: Currently loopback-cli does not yet support LoopBack v4.
 
-If you are just getting started with LoopBack, we recommend using `loopback-cli`. It's ready to use and installs simply by `npm install -g loopback-cli`. You don't need to do any extra steps for setup, and can head straight to the [next section](https://github.com/strongloop/loopback-next/wiki/Testing-Your-Application#acceptance-testing).
+If you are just getting started with LoopBack, we recommend using `loopback-cli`. It's ready to use and installs simply by `npm install -g loopback-cli`. You don't need to do any extra steps for setup, and can head straight to the [next section](Testing-Your-Application#acceptance-testing.html).
 
 ### Without `loopback-cli`
 
@@ -368,17 +368,17 @@ Takeaways:
 
 That's all there is to it. We can summarize the entire process to:
 
-1. Write a failing acceptance test
-1. Write just enough code to make it pass
-1. Write a failing unit test(s)
-1. Write just enough code to make it pass
-1. Rinse and repeat writing unit tests until satisfied
-1. Write integration tests to ensure capatibility between multiple units
-1. Write just enough code to make it pass
-1. Rinse and repeat writing integration tests until satisfied
-1. Run the acceptance test to ensure everything continues to work together as a whole
-1. Rinse and repeat all the above
+1. Write a failing acceptance test.
+1. Write just enough code to make it pass.
+1. Write a failing unit test(s).
+1. Write just enough code to make it pass.
+1. Rinse and repeat writing unit tests until satisfied.
+1. Write integration tests to ensure compatibility between multiple units.
+1. Write just enough code to make it pass.
+1. Rinse and repeat writing integration tests until satisfied.
+1. Run the acceptance test to ensure everything continues to work together as a whole.
+1. Rinse and repeat all the above.
 
 The combination of all the testing above will ensure your application is robust and production ready! You've now completed the basics of testing your LoopBack-next application.
 
-For more in-depth guides, recommendations, and advanced testing topics, see [[Testing Your Application (Advanced)]].
+For more in-depth recommendations and advanced testing topics, see [Testing Your Application (Advanced)](Testing-your-app-advanced.html).

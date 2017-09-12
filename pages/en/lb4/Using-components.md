@@ -29,10 +29,10 @@ const app = new Application({
 
 In general, components can contribute the following items:
 
- - [Controllers](https://github.com/strongloop/loopback-next/wiki/Controllers)
- - Providers of additional [Context values](https://github.com/strongloop/loopback-next/wiki/Context)
+ - [Controllers](Controllers.html)
+ - Providers of additional [Context values](Context.html)
 
 In the future (before the GA release), components will be able to contribute additional items:
 
  - Models
- - [Repositories](https://github.com/strongloop/loopback-next/wiki/Repositories)
+ - [Repositories](Repositories.html)

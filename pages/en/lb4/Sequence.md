@@ -10,7 +10,7 @@ summary:
 
 ## What is a Sequence?
 
-A `Sequence` is a stateless grouping of Actions that allow you to control how an `Application` produces responses for requests.  An application has exactly one sequence.
+A `Sequence` is a stateless grouping of [Actions](#actions) that control how an `Application`  responds to requests.  An application has exactly one Sequence.
 
 ```js
 app.handler((sequence, request, response) => {
@@ -167,7 +167,7 @@ How to get query string param values.
 
 Parsing and validating arguments from the request url, headers, and body.
 
-### Invoking controller methods 
+### Invoking controller methods
 
 {% include content/tbd.html %}
 

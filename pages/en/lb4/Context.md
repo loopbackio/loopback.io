@@ -106,7 +106,7 @@ Please refer to [[Dependency Injection]] for further details.
 
 ## Context metadata and sugar decorators
 
-Other interesting decorators can be used to help give LoopBack hints to additional metadata you may want to provide in order to automatically set things up. For example, let's take the previous example and make it available on the 'GET /greet` route.
+Other interesting decorators can be used to help give LoopBack hints to additional metadata you may want to provide in order to automatically set things up. For example, let's take the previous example and make it available on the `GET /greet` route.
 
 ```js
 class HelloController {

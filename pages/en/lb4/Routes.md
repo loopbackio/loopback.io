@@ -25,7 +25,7 @@ function greet(name) {
 
 ## Parameters
 
-`name`, in the example above, is a Parameter. Parameters are values, usually parsed from a `Request` by a `Sequence`, passed as arguments to an Operation. Parameters are defined as part of a `Route` using the OpenAPI specification. They can be parsed from the following parts of the `Request`:
+In the example above, `name` is a Parameter. Parameters are values, usually parsed from a `Request` by a `Sequence`, passed as arguments to an Operation. Parameters are defined as part of a `Route` using the OpenAPI specification. They can be parsed from the following parts of the `Request`:
 
  - `body`
  - `query` string
@@ -54,7 +54,7 @@ app.route(route);
 app.start();
 ```
 
-## Declaring Routes with API Specifications
+## Declaring Routes with API specifications
 
 Below is an example [Open API Specification](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/2.0.md#swagger-object) that defines the same operation as the example above. This a declarative approach to defining operations. The `x-operation` field in the example below references the handler JavaScript function for the API operation, and should not be confused with `x-operation-name`, which is a string for the Controller method name.
 
@@ -80,7 +80,7 @@ const spec = {
 app.api(spec);
 ```
 
-## Invoking Operations using Routes
+## Invoking operations using Routes
 
 This example breaks down how `Sequences` determine and call the matching operation for any given request.
 
