@@ -11,18 +11,93 @@ title: LoopBack 4.0
 url: /doc/en/lb4/index.html
 children:
 
-- title: 'Roadmap'
-  url: /doc/en/lb4/Roadmap.html
+- title: 'Key concepts'
+  url: /doc/en/lb4/Concepts.html
   output: 'web, pdf'
+  children:
 
-- title: 'Installation'
-  url: /doc/en/lb4/Installation.html
-  output: 'web, pdf'
+  - title: 'LoopBack 4 vs. LoopBack 3'
+    url: /doc/en/lb4/LB-3-vs-4.html
+    output: 'web, pdf'
+
+  - title: 'Thinking in LoopBack'
+    url: /doc/en/lb4/Thinking-in-LoopBack.html
+    output: 'web, pdf'
+
+  - title: 'Sequence'
+    url: /doc/en/lb4/Sequence.html
+    output: 'web, pdf'
+
+  - title: 'Routes'
+    url: /doc/en/lb4/Routes.html
+    output: 'web, pdf'
+
+  - title: 'Controllers'
+    url: /doc/en/lb4/Controllers.html
+    output: 'web, pdf'
+
+  - title: 'Context'
+    url: /doc/en/lb4/Context.html
+    output: 'web, pdf'
+
+  - title: 'Dependency Injection'
+    url: /doc/en/lb4/Dependency-injection.html
+    output: 'web, pdf'
+
+  - title: 'Repositories'
+    url: /doc/en/lb4/Repositories.html
+    output: 'web, pdf'
 
 - title: 'Getting started'
   url: /doc/en/lb4/Getting-started.html
   output: 'web, pdf'
+  children:
 
-- title: 'Examples & Tutorials'
-  url: /doc/en/lb4/Examples-and-tutorials.html
+  - title: 'Installation'
+    url: /doc/en/lb4/Installation.html
+    output: 'web, pdf'
+
+  - title: 'Examples & Tutorials'
+    url: /doc/en/lb4/Examples-and-tutorials.html
+    output: 'web, pdf'
+
+  - title: 'FAQ'
+    url: /doc/en/lb4/FAQ.html
+    output: 'web, pdf'
+
+- title: 'Using Components'
+  url: /doc/en/lb4/Using-components.html
   output: 'web, pdf'
+
+- title: 'Creating Components'
+  url: /doc/en/lb4/Creating-components.html
+  output: 'web, pdf'
+
+- title: 'Calling other APIs'
+  url: /doc/en/lb4/Calling-other-APIs-and-web-services.html
+  output: 'web, pdf'
+
+- title: 'Testing Your Application'
+  url: /doc/en/lb4/Testing-your-application.html
+  output: 'web, pdf'
+
+- title: 'Testing Your Application (Advanced)'
+  url: /doc/en/lb4/Testing-your-app-advanced.html
+  output: 'web, pdf'
+
+- title: 'Migration guide'
+  url: /doc/en/lb4/Migration-guide.html
+  output: 'web, pdf'
+
+- title: 'Reference'
+  url: /doc/en/lb4/Reference.html
+  output: 'web, pdf'
+  children:
+
+  - title: 'Glossary'
+    url: /doc/en/lb4/Glossary.html
+    output: 'web, pdf'
+
+  - title: 'Reserved binding keys'
+    url: /doc/en/lb4/Reserved-binding-keys.html
+    output: 'web, pdf'

@@ -8,4 +8,4 @@ permalink: /doc/en/lb4/Roadmap.html
 summary: LoopBack 4.0 is the upcoming release.
 ---
 
-See https://github.com/strongloop/loopback-next/wiki/Roadmap.
+TBD.
