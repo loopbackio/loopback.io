@@ -96,3 +96,34 @@ div.sidebarTitle, div.sidebarTitle a {
     margin-bottom:5px;
     /* margin-left: 5px; */
 }
+
+@media (min-width: 992px) {
+    .col-md-3 {
+        height: 100%;
+        overflow-y: auto;
+        position: fixed;
+        width: 26%;
+        z-index: 999;
+    }
+    .col-md-9 {
+        margin-left: 28%;
+    }
+}
+
+@media (min-width: 1065px) {
+    .col-md-3 {
+        width: 24%;
+    }
+}
+
+@media (min-width: 1115px) {
+    .col-md-3 {
+        width: 23%;
+    }
+}
+
+@media (min-width: 1230px) {
+    .col-md-3 {
+        width: 21%;
+    }
+}
