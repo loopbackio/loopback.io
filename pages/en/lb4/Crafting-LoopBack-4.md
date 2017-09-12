@@ -25,16 +25,16 @@ With many years of development and multiple releases, LoopBack has grown signifi
 
 ## Why LoopBack Next?
 
-Like any other framework, we start to experience the growing pains with LoopBack too, especially around the following observations:
+Like many projects, we start to experience the growing pains with LoopBack too, especially around the following observations:
 
 1. The code base becomes more complicated over time with more modules and more functionality. We would like to have more maintainers and contributors to help out. But the learning curve is getting steep. One of the things to blame is JavaScript itself, which is weakly-typed and lack of constructs such as interfaces to explicitly define contracts between code. There is quite a bit hidden knowledge that is not explicit or obvious for new comers.
 
 2. Technical debts are accumulating, such as inconsistent designs across modules and feature flags for different behaviors. Here are a few examples:
-    - Multiple registries are introduced by various modules to manage different types of artifacts, such as remoting metadata, models, datasources, and middleware.
+    - Multiple registries are introduced by various modules to manage different types of artifacts, such as remoting metadata, models, datasources, and middleware. 
     - Different flavors are used to allow custom logic to intercept requests/responses at various layers, such as middleware, remote hooks, CRUD operation hooks, and connector hooks.
-    - More and more feature flags are added over time to keep backward compatibility while allowing users to opt in new behaviors.
+    - More and more feature flags are added over time to keep backward compatibility while allowing users to opt into new behaviors.
 
-3. It is becoming more difficult to add new features or fix bugs as some areas start to reach the limit of the current design.
+3. It is becoming more difficult to add new features or fix bugs as some areas start to reach the limit of the current design. 
     - The loopback-datasource-juggler module is a kitchen sink for many things, such as typing, data modeling, validation, aggregation, persistence, and service integration.
     - Models are overloaded with multiple responsibilities, such as data representation, persistence, and mapping to REST. Models are tied to datasources and it's not easy to reuse the same model definition against different datasources.
 
@@ -44,57 +44,59 @@ Like any other framework, we start to experience the growing pains with LoopBack
     - Use CRUD hooks to add logic around CRUD operations
 
 5. More projects start to use LoopBack as the underlying platform. Such use cases require more knowledge of LoopBack internals and more flexibility and dynamicity to leverage LoopBack to manage and compose artifacts using a metadata driven approach. Some good examples are:
-    - Multi-tenancy
+    - Multi-tenancy which requires artifact isolation between tenants
     - Metadata APIs to manage/activate model definitions and datasources
-    - New interaction patterns for connectors, such as event stream or real time messaging based
-    - Extensions for model definitions
+    - New interaction patterns for connectors, such as eventing or messaging
+    - Extra metadata for model definitions
 
 Since the release of 3.x, the team have been brainstorming around how to sustain and advance LoopBack. We have done a lot of homework, such as triaging existing github issues, reaching out to community members and downstream products, and evaluating relevant frameworks and technologies. The team is trying to find answers to the following questions to decide what's next for LoopBack.  
 
 - Who are the target audience of LoopBack? Why are they interested in LoopBack? What do they use LoopBack for and how do they use it?
-- What are the critical pain points? Can we address them incrementally without a bold move to rebuild a new foundation?
+- What are the critical pain points? Can we address them incrementally without rebuilding a new foundation?
 - What are the most requested features? Is it possible to add such features with the current design?
-- What are latest and greatest technologies in our space? What value will they bring in if we start to adopt them for LoopBack?
+- What are latest and greatest technologies in our space? What value will they bring in if we start to adopt them?
 - How to scale the development and maintenance of LoopBack? How do we allow larger development teams to collaborate on creating APIs using LoopBack?
 - How to further grow the community and expand its ecosystem? What can we do to bring more users and contributors to LoopBack?
 
-The team realize that LoopBack has gained traction among a spectrum of users beyond Node.js application developers.
+The team realize that LoopBack has gained traction among a spectrum of users beyond Node.js application developers. 
 
 1. API Developers - use LoopBack to create APIs in Node.js
-2. LoopBack Maintainers and Contributors - build and maintain modules by the LoopBack project
+2. LoopBack Maintainers and Contributors - build and maintain modules by the LoopBack project 
 2. Extension Developers - contribute extensions to LoopBack to augment the framework
 3. Platform Developers - leverage LoopBack as the base to build their value-added offerings
 
 ![loopback-ecosystem](/images/loopback-ecosystem.png)
 
-The consensus from the core team is to take a bold move and rebuild LoopBack to meet the needs of all above. The decision leads to the inception of LoopBack Next - a new generation of API creation platform.
+The consensus from the core team is to take a bold move and rebuild LoopBack to meet the needs of all above. The decision leads to the inception of LoopBack Next - a new generation of API creation platform. 
 See more information at https://strongloop.com/strongblog/announcing-loopback-next/
 
 ## Objectives for LoopBack Next
 
-LoopBack Next is designated to meet the following objectives which will further evolve the framework for even better API creation experiences.
+LoopBack Next is designated to meet the following objectives which will further evolve the framework for even better API creation experiences. 
 
 1. Catch up with latest and greatest technology advances
-   - ES2016/2017, TypeScript
-   - OpenAPI Spec, GraphQL, ...
+   - Adopt [ES2016/2017](http://exploringjs.com/es2016-es2017/index.html) and [TypeScript](https://www.typescriptlang.org/) for ease of maintenance and productivity
+   - Embrace new industrial standards such as [OpenAPI Spec](https://www.openapis.org/) and [GraphQL](http://graphql.org/)
 
 2. Promote extensibility to grow the ecosystem
-   - A framework cannot solve all problems out of box. What's important is to allow itself to be extended or customized.
-   - https://github.com/strongloop/loopback-next/issues/512
+   - A framework cannot solve all problems out of box. What's important is to allow itself to be extended or customized. 
+   - Open the door for more [extension points and extensions](https://github.com/strongloop/loopback-next/issues/512)
 
 3. Align with cloud native experience for microservices
    - Adopt cloud native microservices by adopting initiatives such as [Cloud Native Computing Foundation](https://www.cncf.io/)
    - Make LoopBack a first-class citizen of the microservices ecosystem
-
+  
 4. Remove the complexity and inconsistency across modules
-   - Pay down the technical debts
+   - Use a consistent registry and APIs to manage artifacts and their dependencies
+   - Pay down the technical debts by refactoring complex modules
 
 5. Separate concerns for better composability
-   -
+   - Introduce new concepts such as controllers and repositories to represent different responsibilities
+   - Break down the runtime as a set of services and utilize the extension points/extensions pattern to manage the registration, resolution and composition
 
-## Strategies toward LoopBack Next
+# Strategies toward LoopBack Next
 
-We decide not to take a big-bang approach to build LoopBack next. Instead, we are doing it incrementally in multiple stages with smaller steps following the principles that allow us to pursue architectural simplicity and extensibility.
+We decide not to take a big-bang approach to build LoopBack next. Instead, we are doing it incrementally in multiple stages with smaller steps. This approach allows us to better engage the community from the beginning. We also follow the principles below to pursue architectural simplicity and extensibility. 
 
 1. Imperative first, declarative later
 
