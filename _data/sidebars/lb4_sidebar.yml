@@ -11,14 +11,6 @@ title: LoopBack 4.0
 url: /doc/en/lb4/index.html
 children:
 
-- title: 'Crafting LoopBack-Next'
-  url: /doc/en/lb4/Crafting-LoopBack-Next.html
-  output: 'web, pdf'
-
-- title: 'LoopBack 4 vs. LoopBack 3'
-  url: /doc/en/lb4/LB-3-vs-4.html
-  output: 'web, pdf'
-
 - title: 'Thinking in LoopBack'
   url: /doc/en/lb4/Thinking-in-LoopBack.html
   output: 'web, pdf'
@@ -90,8 +82,16 @@ children:
     url: /doc/en/lb4/Testing-your-app-advanced.html
     output: 'web, pdf'
 
+- title: 'LoopBack 4 vs. LoopBack 3'
+  url: /doc/en/lb4/LB-3-vs-4.html
+  output: 'web, pdf'
+
 - title: 'Migration guide'
   url: /doc/en/lb4/Migration-guide.html
+  output: 'web, pdf'
+
+- title: 'Crafting LoopBack-Next'
+  url: /doc/en/lb4/Crafting-LoopBack-Next.html
   output: 'web, pdf'
 
 - title: 'Reference'
