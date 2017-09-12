@@ -185,10 +185,9 @@ export let TypeDefinition = (type: any): DefinitionsObject => ({
 Given the pattern function above, we can now create the OpenAPI fragment that
 represents the `ProductController` portion of the full specification.
 In this example, we use [lodash](https://lodash.com/) to help with merging
-our generated definitions together.
+our generated definitions together.  Install lodash with this command:
 
 ```shell
-# Don't forget to install it!
 npm install --save lodash
 ```
 
@@ -238,7 +237,7 @@ _.merge(ProductAPI, ProductDefinition, ProductGetResource,
 export default ProductAPI;
 ```
 
-# Connect the OpenAPI Fragments to your Controllers
+## Connect OpenAPI fragments to Controllers
 
 By separating each of our individual "Model"-level API exports, we can link
 them to their corresponding controllers throughout the application.
@@ -270,7 +269,7 @@ export class ProductController {
 }
 ```
 
-## Putting The Final API Together
+## Putting the final API together
 
 Now that we've built the OpenAPI fragments we need for each of our controllers,
 we can put them all together to produce the final OpenAPI spec.
@@ -326,7 +325,7 @@ export class YourMicroservice extends Application {
 }
 ```
 
-# Validate your API specification
+## Validate your API specification
 
 [The OpenAPI swagger editor](https://editor.swagger.io) is a handy tool for editing OpenAPI specifications which comes with a built-in validator, you may find it useful to get started with OpenAPI Spec and manually validate  your OpenAPI specification.
 
@@ -347,23 +346,28 @@ describe('API specification', () => {
 });
 ```
 
-# Smoke test your API input/output
+## Smoke test your API input/output
 
 Once we confirm the specification of our API is valid, it's time to verify that our application implements the API as we have specified it.  We use [Dredd](https://www.npmjs.com/package/dredd) in the input/output testing described below.  We use `hello-world` in this section.  Concrete sample code of `hello-world` can be found in [the hello-world tutorial](https://github.com/strongloop/loopback-next-hello-world) github.com repository.  Although the sample code includes a validated API spec and fully functional `hello-world` controller, let's pretend the controller is completely empty.  You can try it yourself cloning the `hello-world` from github.
 
 For our input/output testing, we are going to create three parts: 1. the input data definition, 2. expected output response definition, and 3. test code.  1. and 2. are included in the API specification.  The input data is given as `x-example` as follows:
+
 ```js
-            "x-example": "Ted"
+"x-example": "Ted"
 ```
-and the expected output as `examples`:
+
+The expected output as `examples`:
+
 ```js
-            "examples": {
-              "text/plain": "Hello world Ted."
-            }
+"examples": {
+  "text/plain": "Hello world Ted."
+}
 ```
-`x-example` is reserved by `Dredd` to set the input parameter.  [`examples` object](https://swagger.io/specification/#examples-object-92) is defined in the OpenAPI standard as a map from `MIME type` to the content value.  In our case here, it's `text/plain` MIME type.  As you see, they are a pair, i.e. when you change the input value `x-example`, you need to change `examples` value as well.
+
+The `Dredd` module reserves `x-example` to set the input parameter.  the OpenAPI standard defines the [`examples` object](https://swagger.io/specification/#examples-object-92) as a map from `MIME type` to the content value.  In our case here, it's `text/plain` MIME type.  As you see, they are a pair: When you change the input value `x-example`, you must change `examples` value as well.
 
 The complete `hello-world` API specification is the following:
+
 ```js
 export const controllerSpec =
 {
@@ -400,8 +404,10 @@ export const controllerSpec =
   }
 }
 ```
+
 The third piece is the test code.  To initialize the test environment, we need to create a `Dredd` instance specifying the configuration. There are two required fields in the configuration object: `server` and `options.path`.
  `localhostAndPort + \'/swagger.json\'` is the predefined end point LoopBack.Next uses for the client to access the API specification of the service API.
+
 ```js
   async function initEnvironment() {
     // By default, the port is set to 3000.
@@ -426,7 +432,9 @@ The third piece is the test code.  To initialize the test environment, we need t
     dredd = new Dredd(config);
   }
 ```
+
 Since the specification we created above includes definition of input data and the expected output, we have all the pieces to write the test code:
+
 ```js
 describe('Api Spec End Points', () => {
   let dredd: any;
@@ -491,7 +499,9 @@ body:
 complete: 0 passing, 1 failing, 0 errors, 0 skipped, 1 total
 complete: Tests took 27ms
 ```
+
 The test report correctly shows that the input is `name=Ted` and the expected result is `Hello world Ted`, but the actual result was `statusCode: 500` which does not match the expectation.  When the `hello-world` API is implemented, the result would be something like the following:
+
 ```shell
 $ npm test
 
@@ -501,15 +511,13 @@ complete: 1 passing, 0 failing, 0 errors, 0 skipped, 1 total
 complete: Tests took 21ms
 ```
 
-Note that it's a powerful proposition to use the API spec not only for API declaration but for test case declaration.  What we discussed so far paves the road to "automated controller wireframe-code generation and test-driven development" based on the OpenAPI standard.
+It's a powerful proposition to use the API spec not only for API declaration but for test case declaration.  What we discussed so far paves the road to "automated controller wireframe-code generation and test-driven development" based on the OpenAPI standard.
 
 At this point, we are ready to make these tests pass by coding up your business logic.
 
-# Define your testing strategy
+## Define your testing strategy
 
 It may be tempting to overlook the importance of a good testing strategy when starting a new project. Initially, as the project is small and we mostly keep adding new code, even badly-written test suite seem to work well. However, as the project grows and matures, inefficiencies in the test suite can severely slow down the progress.
-
-## The ideal test suite
 
 In our experience, an ideal test suite has the following properties:
 
@@ -584,7 +592,7 @@ For example, when writing a unit test to verify that the search endpoint is buil
 
  - [Growing Object-Oriented Software Guided by Tests](http://www.growing-object-oriented-software.com/)
 
-# Incrementally implement the features
+## Incrementally implement the features
 
 Let's recapitulate the status of our new project:
 
@@ -600,7 +608,7 @@ We will start with `GET /product/{slug}` in this guide.
 
 ## Write an acceptance test
 
-> One "acceptance test", where we start the application, make an HTTP request to search for a given product name, and verify that expected products were returned. This verifies that all parts of our application are correctly wired together.
+One "acceptance test", where we start the application, make an HTTP request to search for a given product name, and verify that expected products were returned. This verifies that all parts of our application are correctly wired together.
 
 Create `tests/acceptance/product.acceptance.ts` with the following contents:
 
@@ -667,7 +675,7 @@ describe('Product (acceptance)', () => {
 });
 ```
 
-Notice there are few missing pieces annotated with TODO comment, we will get back to them very soon. Remember, when practicing TDD in small steps,
+Notice there are few missing pieces annotated with TODO commentd, we will get back to them very soon. Remember, when practicing TDD in small steps,
 the goal is to add as little test code as needed to uncover a missing piece in the production code, and then add just enough production code to
 make our new test pass (while keeping all existing tests passing too).
 
@@ -797,7 +805,6 @@ Let's take a closer look at our new test. In order to make it fail with the curr
 
 The next step in front of us is bigger than is usual in incremental TDD workflow. We need to connect to our database and define classes to work with the data.
 
-
 ## Define Product model, repository and data-source
 
 LoopBack is rather agnostic when it comes to accessing databases, you can choose any package from the npm module ecosystem. On the other hand, we also want LoopBack users to have a recommended solution that's covered by our support. Welcome to `@loopback/repository`, a TypeScript facade for the existing `loopback-datasource-juggler` implementation from LoopBack 3.x.
@@ -861,7 +868,7 @@ LoopBack is rather agnostic when it comes to accessing databases, you can choose
     }
     ```
 
-See [[Persisting Data with Repositories]] for more details on this topic.
+See [Repositories](Repositories.html) for more details on this topic.
 
 ## Update test helpers and the controller use real model and repository
 
@@ -934,9 +941,10 @@ class ProductController {
 }
 ```
 
-_A note for people familiar with pure test-driven development: If we wanted to follow pure test-driven development, then we would define a minimal repository interface describing only the methods actually used by our controller. This will allow us to discover the best repository API that serves the need of our controller. However, we don't want to design a new repository API, we want to re-use the repository implementation provided by LoopBack. Therefore using the actual Repository class/interface is the right approach._
+{% include tip.html content="For those familiar with pure test-driven development: If we wanted to follow pure test-driven development, then we would define a minimal repository interface describing only the methods actually used by our controller. This will allow us to discover the best repository API that serves the need of our controller. However, we don't want to design a new repository API, we want to re-use the repository implementation provided by LoopBack. Therefore using the actual Repository class/interface is the right approach.
+" %}
 
-In traditional OOP languages like Java or C#, in order to allow the unit tests to provide a custom implementation of the repository API, the controller needs to depend on an interface describing the API, and the repository implementation needs to implement this interface. The situation is easier in JavaScript and TypeScript. Thanks to the dynamic nature of the language, it's possible to mock/stub entire classes. The [(sinon]http://sinonjs.org/), which comes bundled in `@loopback/testlab`, makes this very easy.
+In traditional object-oriented languages like Java or C#, in order to allow the unit tests to provide a custom implementation of the repository API, the controller needs to depend on an interface describing the API, and the repository implementation needs to implement this interface. The situation is easier in JavaScript and TypeScript. Thanks to the dynamic nature of the language, it's possible to mock/stub entire classes. The [(sinon]http://sinonjs.org/), which comes bundled in `@loopback/testlab`, makes this very easy.
 
 Here is the updated unit test leveraging dependency injection:
 
@@ -1024,17 +1032,16 @@ export class ProductController {
 }
 ```
 
----
-
-**EVERYTHING BELOW THIS LINE IS TO BE DONE**
-
----
-
 # Custom sequence
+
+{% include content/tbd.html %}
 
  - customize your sequence to add app wide functionality
 
 # Preparing your API for consumption
+
+{% include content/tbd.html %}
+
 - Documentation
 - Public endpoint for the swagger spec (for discovery)
 - more?

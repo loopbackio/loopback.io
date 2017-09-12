@@ -18,7 +18,7 @@ summary:
 Why is it important to you?
 
 - You can use the context as a way to give loopback more "info" so that other dependencies in your app may retrieve it (ie. a centralized place/global builtin/in-memory storage mechanism).
-- LoopBack can help "manage" your resources automatically (through [[Dependency Injection]] and decorators).
+- LoopBack can help "manage" your resources automatically (through [Dependency Injection](Dependency-injection.html) and decorators).
 - You have full access to updated/real-time application+request state at all times.
 
 LoopBack supports two types of context: Application-level and Request-level
@@ -73,12 +73,12 @@ console.log(app.getSync('hello')); // => 'world'
 
 In this case, we bind the 'world' string ContextValue to the 'hello' ContextKey. When we fetch the ContextValue via `getSync`, we give it the ContextKey and it returns the ContextValue that was initially bound (we can do other fancy things too -- ie. instantiate your classes, etc)
 
-The process of registering a ContextValue into the Context is known as [[Binding]]. Sequence level bindings work the same way (shown 2 examples before).
+The process of registering a ContextValue into the Context is known as _binding_. Sequence-level bindings work the same way (shown 2 examples before).
 
 ## Dependency injection
 
-- many configs are adding to the Context during app instantiation/boot time by you/developer
-- when things are registered, the Context provides a way to use your deps during runtime
+- Many configs are adding to the Context during app instantiation/boot time by you/developer.
+- When things are registered, the Context provides a way to use your dependencies during runtime.
 
 How you access these things is via low level helpers like `app.getSync` or the `sequence` class that is provided to you as shown in the example in the previous section.
 
@@ -102,7 +102,7 @@ class HelloController {
 
 Notice we just use the default name as though it were available to the constructor. Context allows LoopBack to give you the necessary information at runtime even if you do not know the value when writing up the Controller. The above will print `Hello John` at run time.
 
-Please refer to [[Dependency Injection]] for further details.
+Please refer to [Dependency injection](Dependency-injection.html) for further details.
 
 ## Context metadata and sugar decorators
 

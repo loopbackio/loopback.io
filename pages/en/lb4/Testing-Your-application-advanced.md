@@ -8,17 +8,6 @@ permalink: /doc/en/lb4/Testing-your-app-advanced.html
 summary:
 ---
 
-## Dependency injection
-
-Dependency Injection is a technique where the construction of dependencies of a class or function is separated from its behavior, in order to keep the code loosely coupled. See [[Dependency Injection]] for a longer introduction.
-
-- Introduce TypeScript as it is needed here to get the benefits of DI via decorators
-- Build on top of the last step of the hello world application
-- Inject the routeHandler in the constructor
-- Introduce about test doubles (spies, stubs)
-- Swap the routeHandler with a stub (also mention stub is also a spy)
-- Go into mocking, swap the routeHandler with mockHandler
-
 ## Overview
 
 Testing is important to ensure your apps work as expected (before deployment).
@@ -110,6 +99,17 @@ expect(home.owner.fullName()).to.equal('John Doe');
 ```
 
 As you can see here, we're testing two separate units to make sure that Home and Person classes work together. When a home owner is registered, a new Person should be instantiated and we should be able to get relevant information about the home owner (ie. `home.owner.fullName`).
+
+## Dependency injection
+
+Dependency Injection is a technique where the construction of dependencies of a class or function is separated from its behavior, in order to keep the code loosely coupled. See [Dependency Injection](Dependency-injection.html) for a longer introduction.
+
+- Introduce TypeScript as it is needed here to get the benefits of DI via decorators
+- Build on top of the last step of the hello world application
+- Inject the routeHandler in the constructor
+- Introduce about test doubles (spies, stubs)
+- Swap the routeHandler with a stub (also mention stub is also a spy)
+- Go into mocking, swap the routeHandler with mockHandler
 
 ## Testing process
 
