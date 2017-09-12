@@ -14,7 +14,7 @@ A `Route` is the mapping between your API specification and an Operation (JavaSc
 
 ## Operations
 
-Operations are JavaScript functions that accept Parameters. They can be implemented as plain JavaScript functions or as methods in [[Controllers]].
+Operations are JavaScript functions that accept Parameters. They can be implemented as plain JavaScript functions or as methods in [Controllers](Controllers.html).
 
 ```js
 // greet is a basic operation

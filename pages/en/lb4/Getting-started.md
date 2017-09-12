@@ -48,4 +48,4 @@ To see what the complete application looks like, see [loopback-next-hello-world]
 
 The following guides introduce the fundamental concepts of LoopBack.next required to build scalable, maintainable, and consistent APIs.
 
-If you want to try it out locally follow the instructions on the [[Installation]] guide.  Let's go!
+If you want to try it out locally follow the instructions in [Installation](Installation.html).  Let's go!

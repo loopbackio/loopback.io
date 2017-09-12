@@ -38,7 +38,7 @@ See [loopback-next-example](https://github.com/strongloop/loopback-next-example)
 - Advanced declarative caching support
 - New DSL for defining APIs / Models
 - Completely new tooling w/ Visual Studio Code integration
-- More at [[Feature proposals]]
+- More at [Feature proposals](https://github.com/strongloop/loopback-next/wiki/Feature-proposals)
 
 Add your feature requests at [loopback-next/issues/new](https://github.com/strongloop/loopback-next/issues/new).
 

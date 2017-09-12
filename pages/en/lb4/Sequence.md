@@ -149,7 +149,7 @@ class MySequence extends DefaultSequence {
 }
 ```
 
-## Using Sequence actions
+### Using Sequence actions
 
 {% include content/tbd.html %}
 
@@ -176,7 +176,7 @@ Parsing and validating arguments from the request url, headers, and body.
  - Mention caching use case
  - Can I call invoke multiple times?
 
-### Writing the Response
+### Writing the response
 
 {% include content/tbd.html %}
 

@@ -113,8 +113,6 @@ Takeaways:
 - Reran the tests to verify the application returns the expected outcome
 - Have something in place to prevent regressions
 
-The code for this example is available at [[examples/acceptance-testing]].
-
 ## Unit testing
 
 Some interesting things to note above is how the business logic of the application is coupled to the sequence.
@@ -215,15 +213,15 @@ Takeaways:
 1. Unit tests are good enough to ensure isolated code works standalone
 1. Acceptance tests help us ensure everything continues to work together (and to ensure we don't accidentally break/change existing functionality)
 
-The code for this example is available at [[examples/unit-testing]].
+<!-- The code for this example is available at [[examples/unit-testing]]. -->
 
 ## Integration testing - WIP
 
 While acceptance tests and unit tests get us most of the way there, sometimes we only want to test a few units together in isolation. As long as those units together, we can be fairly sure the entire application will continue to work as expected.
 
-To show an example of this, say we want to organize our routes into a [[Controller]]. In this case, we only care about how a few units working together (ie. a controller that works together with the route handler above to return "hello world"). As long as the controller method being called returns the expected values and the sequence calls the correct method, we can be fairly sure the entire app will still work as expected (the acceptance tests will ensure this).
+To show an example of this, say we want to organize our routes into a [Controller](Controllers.html). In this case, we only care about how a few units working together (ie. a controller that works together with the route handler above to return "hello world"). As long as the controller method being called returns the expected values and the sequence calls the correct method, we can be fairly sure the entire app will still work as expected (the acceptance tests will ensure this).
 
-Let's begin by refactoring the application to use a [[Controller]] together with the route handler. As usual, start by writing a test:
+Let's begin by refactoring the application to use a [Controller](Controllers.html) together with the route handler. As usual, start by writing a test:
 
 ```
 // prod.comproot.json
@@ -340,7 +338,7 @@ exports.createApp = () => {
 };
 ```
 
-Notice how the code is much simpler. By providing a [[Controller]] directly, LoopBack can figure out how to respond to requests based on the routing metadata you provided via `@get` in the Controller implementation (ie. `@get('/'` for HTTP GET / requests, call the corresponding controller method).
+Notice how the code is much simpler. By providing a [Controller](Controllers.html) directly, LoopBack can figure out how to respond to requests based on the routing metadata you provided via `@get` in the Controller implementation (ie. `@get('/'` for HTTP GET / requests, call the corresponding controller method).
 
 Run tests to make sure everything works as expected:
 

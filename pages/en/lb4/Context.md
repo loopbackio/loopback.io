@@ -37,7 +37,7 @@ class MySequence { ... }
 app.sequence(MySequence);
 ```
 
-In this case, you are using our sequence sugar/helper to register a new default sequence. The important point to note is `MySequence` is actually registered into the Application Context (`app` is a [[Context]]).
+In this case, you are using our sequence sugar/helper to register a new default sequence. The important point to note is `MySequence` is actually registered into the Application Context (`app` is a Context).
 
 ## Request-level context (request)
 
