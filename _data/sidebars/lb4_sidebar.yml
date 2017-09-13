@@ -28,6 +28,10 @@ children:
     url: /doc/en/lb4/Routes.html
     output: 'web, pdf'
 
+  - title: 'Schemas'
+    url: /doc/en/lb4/Schemas.html
+    output: 'web, pdf'
+
   - title: 'Controllers'
     url: /doc/en/lb4/Controllers.html
     output: 'web, pdf'
