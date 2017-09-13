@@ -87,7 +87,7 @@ The instructions assume the name of the new model is 'MyModel'.
 
  1. Create a file `models/my-model.json`, put the model definition there.
   Use `models/todo.json` as an example, see
-  [loopback-boot docs](http://apidocs.loopback.io/loopback-boot) for
+  [loopback-boot docs](http://apidocs.strongloop.com/loopback-boot) for
   more details about the file format.
 
  2. (Optional) Add `models/my-model.js` and implement your custom model

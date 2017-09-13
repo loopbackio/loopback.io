@@ -66,4 +66,4 @@ bridge.before(action, function(ctx, next) {
 
 ## API
 
-[See the API docs.](http://apidocs.loopback.io/strong-pubsub-bridge)
+[See the API docs.](http://apidocs.strongloop.com/strong-pubsub-bridge)
