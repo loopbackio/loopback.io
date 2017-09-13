@@ -17,9 +17,10 @@ makes it easy to upload and download files to cloud storage providers and the lo
 It has Node.js and REST APIs for managing binary content in cloud providers, including:
 
 * Amazon
-* Rackspace
-* Openstack
 * Azure
+* Google Cloud
+* Openstack
+* Rackspace
 
 You use the storage component like any other LoopBack data source such as a database.
 Like other data sources, it supports create, read, update, and delete (CRUD) operations with exactly the same LoopBack and REST APIs.
@@ -250,10 +251,10 @@ as shown in the following table.
       <td>Your identity service</td>
     </tr>
     <tr>
-      <td rowspan="4"><strong>Google Cloud</strong></td>
+      <td rowspan="3"><strong>Google Cloud</strong></td>
       <td>provider</td>
       <td>'google'</td>
-      <td rowspan="4">
+      <td rowspan="3">
 <pre style="font-size:11px;">{
  provider: 'google',
  'keyFilename': 'path/to/keyfile.json',
@@ -270,10 +271,7 @@ as shown in the following table.
       <td>projectID</td>
       <td>Google Cloud project ID.</td>
     </tr>
-    <tr>
-      <td>nameConflict</td>
-      <td>Optional; Use 'makeUnique' to specify unique names.</td>
-    </tr>
+
     <tr>
       <td rowspan="2"><strong>Local File System</strong></td>
       <td>provider</td>
