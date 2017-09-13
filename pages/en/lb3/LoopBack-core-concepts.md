@@ -38,8 +38,8 @@ Every LoopBack application has a set of predefined 
 
 You can [define your own custom models](Creating-models.html) specific to your application. 
 You can make your custom models [extend built-in models](Extending-built-in-models.html) to build on the predefined functionality of
-[User](https://apidocs.strongloop.com/loopback/#user), 
-[Application](https://apidocs.strongloop.com/loopback/#application),
+[User](https://apidocs.loopback.io/loopback/#user), 
+[Application](https://apidocs.loopback.io/loopback/#application),
 and other built-in models.
 
 You can create LoopBack models in various ways, depending on what kind of data source the model is based on. You can create models:
@@ -53,7 +53,7 @@ You can create LoopBack models in various ways, depending on what kind of data s
 All three of these methods create a [Model definition JSON file](Model-definition-JSON-file.html) that defines your model in LoopBack,
 by convention in a LoopBack project's `common/models` directory; for example, `common/models/account.json`.
 
-You can also create and customize models programmatically using the [LoopBack API](http://apidocs.strongloop.com/loopback/#loopback-createmodel),
+You can also create and customize models programmatically using the [LoopBack API](http://apidocs.loopback.io/loopback/#loopback-createmodel),
 or by manually editing the [model definition JSON file](Model-definition-JSON-file.html).
 In most cases, you shouldn't need to use those techniques to create models, but you generally will use them to modify and customize models.
 
@@ -73,7 +73,7 @@ You can express [relationships between models](Creating-model-relations.html), 
 ### Model create, retrieve, update, and delete operations
 
 When you connect a model to a persistent data source such as a database, it becomes a _[connected model](Connected-model-object.html)_ 
-with a full set of create, read, update, and delete operations from the [PersistedModel](http://apidocs.strongloop.com/loopback/#persistedmodel) class:
+with a full set of create, read, update, and delete operations from the [PersistedModel](http://apidocs.loopback.io/loopback/#persistedmodel) class:
 
 <table>
   <tbody>
@@ -89,13 +89,13 @@ with a full set of create, read, update, and delete operations from the [Persi
         <a href="PersistedModel-REST-API.html#create-model-instance">PUT /<em>modelName</em></a>
         <br/><a href="PersistedModel-REST-API.html#update--insert-instance">POST /<em>modelName</em></a>
       </td>
-      <td><code><a href="http://apidocs.strongloop.com/loopback/#persistedmodel-create" class="external-link" rel="nofollow">create()</a><sup>*</sup></code></td>
+      <td><code><a href="http://apidocs.loopback.io/loopback/#persistedmodel-create" class="external-link" rel="nofollow">create()</a><sup>*</sup></code></td>
       <td>INSERT</td>
     </tr>
     <tr>
       <td>Read (Retrieve)</td>
       <td><a href="PersistedModel-REST-API.html#find-matching-instances">GET /modelName?filter=...</a></td>
-      <td><code><a href="http://apidocs.strongloop.com/loopback/#persistedmodel-find" class="external-link" rel="nofollow">find()</a><sup>*</sup></code></td>
+      <td><code><a href="http://apidocs.loopback.io/loopback/#persistedmodel-find" class="external-link" rel="nofollow">find()</a><sup>*</sup></code></td>
       <td>SELECT</td>
     </tr>
     <tr>
@@ -103,13 +103,13 @@ with a full set of create, read, update, and delete operations from the [Persi
       <td>
         <a href="PersistedModel-REST-API.html#update-model-instance-attributes">PUT /modelName</a>
       </td>
-      <td><code><a href="http://apidocs.strongloop.com/loopback/#persistedmodel-updateall" class="external-link" rel="nofollow">updateAll()</a><sup>*</sup></code></td>
+      <td><code><a href="http://apidocs.loopback.io/loopback/#persistedmodel-updateall" class="external-link" rel="nofollow">updateAll()</a><sup>*</sup></code></td>
       <td>UPDATE</td>
     </tr>
     <tr>
       <td>Delete (Destroy)</td>
       <td><a href="PersistedModel-REST-API.html#delete-model-instance">DELETE /<em>modelName</em>/<em>modelID</em></a></td>
-      <td><code><a href="http://apidocs.strongloop.com/loopback/#persistedmodel-destroybyid" class="external-link" rel="nofollow">destroyById()</a><sup>*</sup></code></td>
+      <td><code><a href="http://apidocs.loopback.io/loopback/#persistedmodel-destroybyid" class="external-link" rel="nofollow">destroyById()</a><sup>*</sup></code></td>
       <td>DELETE</td>
     </tr>
   </tbody>
@@ -117,7 +117,7 @@ with a full set of create, read, update, and delete operations from the [Persi
 
 (*) Methods listed are just prominent examples; other methods may provide similar functionality; for example: `findById()`, `findOne()`, and `findOrCreate()`. 
 
-See [PersistedModel API documentation](http://apidocs.strongloop.com/loopback/#persistedmodel) for more information.
+See [PersistedModel API documentation](http://apidocs.loopback.io/loopback/#persistedmodel) for more information.
 
 ## Application logic
 
@@ -148,8 +148,8 @@ LoopBack generalizes backend services such as databases, REST APIs, SOAP web ser
 
 Data sources are backed by _connectors_ that then communicate directly with the database or other back-end service.
 Applications don't use connectors directly, rather they go through data sources using the 
-[DataSource](https://apidocs.strongloop.com/loopback-datasource-juggler/#datasource) and 
-[PersistedModel](http://apidocs.strongloop.com/loopback/#persistedmodel) APIs.
+[DataSource](https://apidocs.loopback.io/loopback-datasource-juggler/#datasource) and 
+[PersistedModel](http://apidocs.loopback.io/loopback/#persistedmodel) APIs.
 
 ## LoopBack components
 

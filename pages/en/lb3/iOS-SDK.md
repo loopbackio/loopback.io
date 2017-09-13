@@ -109,7 +109,7 @@ Follow these steps:
 
     All the normal `LBModel` and `LBModelRepository` methods (for example, `create`, `destroy`, and `findById`) are now available through `Product` and `pen`!
 
-6.  Go forth and develop! Check out the [API docs](http://apidocs.strongloop.com/loopback-sdk-ios/api/annotated.html) or create more models with the command-line tool.
+6.  Go forth and develop! Check out the [API docs](http://apidocs.loopback.io/loopback-sdk-ios/api/annotated.html) or create more models with the command-line tool.
 
 ## Creating a sub-class of LBModel
 

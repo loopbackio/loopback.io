@@ -16,11 +16,11 @@ summary:
 
 The application model represents the metadata for a client application that has its own identity and associated configuration with the LoopBack server.
 
-See [http://apidocs.strongloop.com/loopback/#application](http://apidocs.strongloop.com/loopback/#application) for a list of the application model properties.
+See [http://apidocs.loopback.io/loopback/#application](http://apidocs.loopback.io/loopback/#application) for a list of the application model properties.
 
 ## ACL properties
 
-See [http://apidocs.strongloop.com/loopback/#acl](http://apidocs.strongloop.com/loopback/#acl) for a list of ACL model properties.
+See [http://apidocs.loopback.io/loopback/#acl](http://apidocs.loopback.io/loopback/#acl) for a list of ACL model properties.
 
 ## Role properties
 

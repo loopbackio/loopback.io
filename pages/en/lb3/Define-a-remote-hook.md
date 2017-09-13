@@ -29,7 +29,7 @@ $ npm install
 
 ## Introducing remote hooks
 
-A [remote hook](Remote-hooks) is simply a function that gets executed before or after a remote method (either a custom remote method or a built-in CRUD method).   In this example, you're going to define a remote hook that is called whenever the [`create()`](https://apidocs.strongloop.com/loopback/#persistedmodel-create) method is called on the Review model; that is, when a new review is created.
+A [remote hook](Remote-hooks) is simply a function that gets executed before or after a remote method (either a custom remote method or a built-in CRUD method).   In this example, you're going to define a remote hook that is called whenever the [`create()`](https://apidocs.loopback.io/loopback/#persistedmodel-create) method is called on the Review model; that is, when a new review is created.
 
 You can define two kinds of remote hooks:
 

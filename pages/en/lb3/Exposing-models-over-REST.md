@@ -12,7 +12,7 @@ summary:
 
 ## Overview
 
-LoopBack models automatically have a [standard set of HTTP endpoints](http://apidocs.strongloop.com/loopback/#persistedmodel)
+LoopBack models automatically have a [standard set of HTTP endpoints](http://apidocs.loopback.io/loopback/#persistedmodel)
 that provide REST APIs for create, read, update, and delete (CRUD) operations on model data.
 The `public` property in [model-config.json](model-config.json.html) specifies whether to expose the model's REST APIs, for example:
 
@@ -238,21 +238,21 @@ The following table describes remote methods exposed in LoopBack 3.x:
 
 | Model (Node) API | HTTP Method | Example Path |
 |---|---|---|
-| [create()](https://apidocs.strongloop.com/loopback/#persistedmodel-create)                                        | POST   | /locations                 |
-| [replaceOrCreate()](https://apidocs.strongloop.com/loopback/#persistedmodel-replaceorcreate)                      | PUT    | /locations                 |
-| [patchOrCreate()](https://apidocs.strongloop.com/loopback/#persistedmodel-upsert)                                 | PATCH  | /locations                 |
-| [exists()](https://apidocs.strongloop.com/loopback/#persistedmodel-exists)                                        | GET    | /locations/:id/exists      |
-| [findById()](https://apidocs.strongloop.com/loopback/#persistedmodel-findbyid)                                    | GET    | /locations/:id             |
-| [find()](https://apidocs.strongloop.com/loopback/#persistedmodel-find)                                            | GET    | /locations                 |
-| [findOne()](https://apidocs.strongloop.com/loopback/#persistedmodel-findone)                                      | GET    | /locations/findOne         |
-| [destroyById() or deleteById()](https://apidocs.strongloop.com/loopback/#persistedmodel-destroybyid)              | DELETE | /locations/:id             |
-| [count()](https://apidocs.strongloop.com/loopback/#persistedmodel-count)                                          | GET    | /locations/count           |
-| [replaceById()](https://apidocs.strongloop.com/loopback/#persistedmodel-replacebyid)                              | PUT    | /locations/:id             |
-| [prototype.patchAttributes()](https://apidocs.strongloop.com/loopback/#persistedmodel-prototype-updateattributes) | PATCH  | /locations/:id             |
-| [createChangeStream()](https://apidocs.strongloop.com/loopback/#persistedmodel-createchangestream)                | POST   | /locations/change-stream   |
-| [updateAll()](https://apidocs.strongloop.com/loopback/#persistedmodel-updateall)                                  | POST   | /locations/update          |
-| [replaceOrCreate()](https://apidocs.strongloop.com/loopback/#persistedmodel-replaceorcreate)                      | POST   | /locations/replaceOrCreate |
-| [replaceById()](https://apidocs.strongloop.com/loopback/#persistedmodel-replacebyid)                              | POST   | /locations/:id/replace     |
+| [create()](https://apidocs.loopback.io/loopback/#persistedmodel-create)                                        | POST   | /locations                 |
+| [replaceOrCreate()](https://apidocs.loopback.io/loopback/#persistedmodel-replaceorcreate)                      | PUT    | /locations                 |
+| [patchOrCreate()](https://apidocs.loopback.io/loopback/#persistedmodel-upsert)                                 | PATCH  | /locations                 |
+| [exists()](https://apidocs.loopback.io/loopback/#persistedmodel-exists)                                        | GET    | /locations/:id/exists      |
+| [findById()](https://apidocs.loopback.io/loopback/#persistedmodel-findbyid)                                    | GET    | /locations/:id             |
+| [find()](https://apidocs.loopback.io/loopback/#persistedmodel-find)                                            | GET    | /locations                 |
+| [findOne()](https://apidocs.loopback.io/loopback/#persistedmodel-findone)                                      | GET    | /locations/findOne         |
+| [destroyById() or deleteById()](https://apidocs.loopback.io/loopback/#persistedmodel-destroybyid)              | DELETE | /locations/:id             |
+| [count()](https://apidocs.loopback.io/loopback/#persistedmodel-count)                                          | GET    | /locations/count           |
+| [replaceById()](https://apidocs.loopback.io/loopback/#persistedmodel-replacebyid)                              | PUT    | /locations/:id             |
+| [prototype.patchAttributes()](https://apidocs.loopback.io/loopback/#persistedmodel-prototype-updateattributes) | PATCH  | /locations/:id             |
+| [createChangeStream()](https://apidocs.loopback.io/loopback/#persistedmodel-createchangestream)                | POST   | /locations/change-stream   |
+| [updateAll()](https://apidocs.loopback.io/loopback/#persistedmodel-updateall)                                  | POST   | /locations/update          |
+| [replaceOrCreate()](https://apidocs.loopback.io/loopback/#persistedmodel-replaceorcreate)                      | POST   | /locations/replaceOrCreate |
+| [replaceById()](https://apidocs.loopback.io/loopback/#persistedmodel-replacebyid)                              | POST   | /locations/:id/replace     |
 
 As you see the only difference between LoopBack 2.x and 3.0 in default configuration is the behaviour of HTTP PUT endpoints (both `PUT /api/my-models` and `PUT /api/my-models/:id`). By default in LoopBack 2.x, these endpoints invoke patch methods and perform a partial update, while in LoopBack 3.0, these methods perform a full replace.
 
@@ -276,7 +276,7 @@ The following example illustrates how to set `replaceOnPUT` in `location.json
 
 {% include tip.html content="
 The above table provides a partial list of methods and REST endpoints.
-See the [API documentation](https://apidocs.strongloop.com/loopback/#persistedmodel) for a complete list of all the Node API methods.  See [PersistedModel REST API](PersistedModel-REST-API.html) for details on the REST API.
+See the [API documentation](https://apidocs.loopback.io/loopback/#persistedmodel) for a complete list of all the Node API methods.  See [PersistedModel REST API](PersistedModel-REST-API.html) for details on the REST API.
 " %}
 
 ## Exposing and hiding models, methods, and endpoints
@@ -295,7 +295,7 @@ To expose a model over REST, set the `public` property to true in `/server/mode
 ### Hiding methods and REST endpoints
 
 If you don't want to expose certain operations, hide them by calling 
-[`disableRemoteMethodByName()`](http://apidocs.strongloop.com/loopback/#model-disableremotemethodbyname) on the model. 
+[`disableRemoteMethodByName()`](http://apidocs.loopback.io/loopback/#model-disableremotemethodbyname) on the model. 
 For example, following the previous example, by convention custom model code would go in the file `common/models/location.js`.
 You would add the following lines to "hide" one of the predefined remote methods:
 
@@ -400,7 +400,7 @@ Product.disableRemoteMethodByName('createChangeStream');
 
 ### Hiding endpoints for related models
 
-To disable a REST endpoints for related model methods, use [disableRemoteMethodByName()](https://apidocs.strongloop.com/loopback/#model-disableRemoteMethodByName).
+To disable a REST endpoints for related model methods, use [disableRemoteMethodByName()](https://apidocs.loopback.io/loopback/#model-disableRemoteMethodByName).
 
 {% include note.html content="For more information, see [Accessing related models](Accessing-related-models.html).
 "

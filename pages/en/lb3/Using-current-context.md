@@ -31,9 +31,9 @@ The current solution for context propagation in LoopBack has the following parts
 
  - Any additional context is passed in the "options" argument. Built-in methods
   such as
-  [PersistedModel.find](http://apidocs.strongloop.com/loopback/#persistedmodel-find)
+  [PersistedModel.find](http://apidocs.loopback.io/loopback/#persistedmodel-find)
   or
-  [PersistedModel.create](http://apidocs.strongloop.com/loopback/#persistedmodel-create)
+  [PersistedModel.create](http://apidocs.loopback.io/loopback/#persistedmodel-create)
   already accept this argument, custom user methods must be modified to accept it
   too.
 

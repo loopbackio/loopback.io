@@ -11,7 +11,7 @@ summary:
 
 Once you have defined a model, then you can use create, read, update, and delete (CRUD) operations to add data to the model, manipulate the data, and query it.
 All LoopBack models that are connected to persistent data stores (such as a database) automatically have the create, retrieve, update, and delete operations of the
-[PersistedModel](http://apidocs.strongloop.com/loopback/#persistedmodel-new-persistedmodel) class.
+[PersistedModel](http://apidocs.loopback.io/loopback/#persistedmodel-new-persistedmodel) class.
 
 <table>
   <thead>
@@ -29,13 +29,13 @@ All LoopBack models that are connected to persistent data stores (such as a data
         <a href="PersistedModel-REST-API.html#create-model-instance">PUT /<em>modelName</em></a>
         <br/><a href="PersistedModel-REST-API.html#update--insert-instance">POST /<em>modelName</em></a>
       </td>
-      <td><code><a href="http://apidocs.strongloop.com/loopback/#persistedmodel-create" class="external-link" rel="nofollow">create()</a><sup>&#42;</sup></code></td>
+      <td><code><a href="http://apidocs.loopback.io/loopback/#persistedmodel-create" class="external-link" rel="nofollow">create()</a><sup>&#42;</sup></code></td>
       <td>INSERT</td>
     </tr>
     <tr>
       <td>Read (Retrieve)</td>
       <td><a href="PersistedModel-REST-API.html#find-matching-instances">GET /<em>modelName</em>?filter=...</a></td>
-      <td><code><a href="http://apidocs.strongloop.com/loopback/#persistedmodel-find" class="external-link" rel="nofollow">find()</a><sup>&#42;</sup></code></td>
+      <td><code><a href="http://apidocs.loopback.io/loopback/#persistedmodel-find" class="external-link" rel="nofollow">find()</a><sup>&#42;</sup></code></td>
       <td>SELECT</td>
     </tr>
     <tr>
@@ -44,20 +44,20 @@ All LoopBack models that are connected to persistent data stores (such as a data
         <a href="PersistedModel-REST-API.html#update--insert-instance">POST /<em>modelName</em></a>
         <br/><a href="PersistedModel-REST-API.html#update-model-instance-attributes">PUT /<em>modelName</em></a>
       </td>
-      <td><code><a href="http://apidocs.strongloop.com/loopback/#persistedmodel-updateall" class="external-link" rel="nofollow">updateAll()</a><sup>&#42;</sup></code></td>
+      <td><code><a href="http://apidocs.loopback.io/loopback/#persistedmodel-updateall" class="external-link" rel="nofollow">updateAll()</a><sup>&#42;</sup></code></td>
       <td>UPDATE</td>
     </tr>
     <tr>
       <td>Delete (Destroy)</td>
       <td><a href="PersistedModel-REST-API.html#delete-model-instance">DELETE /<em>modelName</em>/<em>modelID</em></a></td>
-      <td><code><a href="http://apidocs.strongloop.com/loopback/#persistedmodel-destroybyid" class="external-link" rel="nofollow">destroyById()</a><sup>&#42;</sup></code></td>
+      <td><code><a href="http://apidocs.loopback.io/loopback/#persistedmodel-destroybyid" class="external-link" rel="nofollow">destroyById()</a><sup>&#42;</sup></code></td>
       <td>DELETE</td>
     </tr>
   </tbody>
 </table>
 
 (&#42;) Methods listed are just prominent examples; other methods may provide similar functionality; for example: `findById()`, `findOne()`, and `findOrCreate()`. 
-See [PersistedModel API documentation](http://apidocs.strongloop.com/loopback/#persistedmodel) for more information.
+See [PersistedModel API documentation](http://apidocs.loopback.io/loopback/#persistedmodel) for more information.
 
 See the following articles for more information:
 

@@ -44,9 +44,9 @@ boot(app, __dirname, function(err) {
 
 **1 - 3**:
 Require LoopBack modules and set up standard objects
-[`loopback`](http://apidocs.strongloop.com/loopback/#loopback),
-[`app`](http://apidocs.strongloop.com/loopback/#var-app-loopback), and
-[`boot`](http://apidocs.strongloop.com/loopback-boot/#boot).
+[`loopback`](http://apidocs.loopback.io/loopback/#loopback),
+[`app`](http://apidocs.loopback.io/loopback/#var-app-loopback), and
+[`boot`](http://apidocs.loopback.io/loopback-boot/#boot).
 
 **4**: Start the web server.
 

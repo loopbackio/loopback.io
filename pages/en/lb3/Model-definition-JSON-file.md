@@ -218,7 +218,7 @@ Properties are required unless otherwise designated.
       <td>replaceOnPUT</td>
       <td>Boolean</td>
       <td><code>false</code></td>
-      <td>If true, <a href="https://apidocs.strongloop.com/loopback/#persistedmodel-replaceorcreate">replaceOrCreate()</a>  and <a href="https://apidocs.strongloop.com/loopback/#persistedmodel-replacebyid">replaceById()</a> use the HTTP PUT method; if false, updateOrCreate() and <a href="https://apidocs.strongloop.com/loopback/#persistedmodel-prototype-updateattributes">updateAttributes()</a>/patchAttributes() use the HTTP PUT method.<br/>For more information, see <a href="Exposing-models-over-REST.html#replaceonput-flag">Exposing models over REST</a>.</td>
+      <td>If true, <a href="https://apidocs.loopback.io/loopback/#persistedmodel-replaceorcreate">replaceOrCreate()</a>  and <a href="https://apidocs.loopback.io/loopback/#persistedmodel-replacebyid">replaceById()</a> use the HTTP PUT method; if false, updateOrCreate() and <a href="https://apidocs.loopback.io/loopback/#persistedmodel-prototype-updateattributes">updateAttributes()</a>/patchAttributes() use the HTTP PUT method.<br/>For more information, see <a href="Exposing-models-over-REST.html#replaceonput-flag">Exposing models over REST</a>.</td>
     </tr>
 
     <tr>
@@ -251,7 +251,7 @@ The `options` key specifies advanced options, for example data source-specific o
     <tr>
       <td><code>validateUpsert</code></td>
       <td>Boolean</td>
-      <td>By default, the <a href="http://apidocs.strongloop.com/loopback/#persistedmodel-upsert">upsert()</a> (<code>updateOrCreate()</code>) method does not enforce valid model data. Instead, it logs validation errors to the console. This preserves backwards compatibility with older 2.x versions. <br /><br />Set this property to true to ensure that <code>upsert()</code> returns an error when validation fails. The next major version of LoopBack will enable this option (set as true) by default.<br /><br /> Set this property to false to prevent <code>upsert()</code> from calling any validators at all. <br /><br /> By default, <code>upsert()</code> calls all validators and reports any validation errors to the console log.</td>
+      <td>By default, the <a href="http://apidocs.loopback.io/loopback/#persistedmodel-upsert">upsert()</a> (<code>updateOrCreate()</code>) method does not enforce valid model data. Instead, it logs validation errors to the console. This preserves backwards compatibility with older 2.x versions. <br /><br />Set this property to true to ensure that <code>upsert()</code> returns an error when validation fails. The next major version of LoopBack will enable this option (set as true) by default.<br /><br /> Set this property to false to prevent <code>upsert()</code> from calling any validators at all. <br /><br /> By default, <code>upsert()</code> calls all validators and reports any validation errors to the console log.</td>
     </tr>
     <tr>
       <td><code>allowEternalTokens</code></td>
@@ -694,7 +694,7 @@ An example configuring `email` as a protected property:
 {% include warning.html content="This is not yet implemented. You must currently validate in code; see [Validating model data](Validating-model-data.html).
 " %}
 
-Specify constraints on data with `validations` properties. See also [Validatable class](http://apidocs.strongloop.com/loopback-datasource-juggler/#validatable).
+Specify constraints on data with `validations` properties. See also [Validatable class](http://apidocs.loopback.io/loopback-datasource-juggler/#validatable).
 
 | Key | Type | Description |
 |---|---|---|
@@ -934,7 +934,7 @@ The snippet above defines two named queries for the model:
 * vips: Find all model instances with vip flag set to true
 * top5: Find top five model instances ordered by age
 
-Within the scopes object, the keys are the names, and each value defines a filter object for [PersistedModel.find()](http://apidocs.strongloop.com/loopback/#persistedmodel-find).
+Within the scopes object, the keys are the names, and each value defines a filter object for [PersistedModel.find()](http://apidocs.loopback.io/loopback/#persistedmodel-find).
 
 You can also define a scope programmatically using a model's `scope()` method, for example:
 

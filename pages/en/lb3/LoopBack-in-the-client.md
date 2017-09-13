@@ -18,7 +18,7 @@ You can create models and use the memory adapter and have your LoopBack app full
 To further extend this, you can seamlessly connect models using the Remote Connector to connect LoopBack to LoopBack.
 For example, browser to server or server to server.
 
-This capability is implemented in [strong-remoting](http://apidocs.strongloop.com/strong-remoting/) which can accept and return ModelTypes in addition to the JSON and JSON primitives.
+This capability is implemented in [strong-remoting](http://apidocs.loopback.io/strong-remoting/) which can accept and return ModelTypes in addition to the JSON and JSON primitives.
 Because models don't need to know where they are being run other than in LoopBack, you can share the same API regardless of where your code is running, thus making the API isomorphic.
 
 Models are referenced through one way, "local" versus "remote" as seen in [loopback-example-offline-sync](https://github.com/strongloop/loopback-example-offline-sync).

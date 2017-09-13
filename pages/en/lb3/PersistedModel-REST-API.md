@@ -15,8 +15,8 @@ summary: PersistedModel is the base class for models connected to persistent dat
 
 ## Overview
 
-[PersistedModel](http://apidocs.strongloop.com/loopback/#persistedmodel) is the base class for models connected to persistent data sources
-such as databases and is also the base class for all built-in models (except [Email](https://apidocs.strongloop.com/loopback/#email)).
+[PersistedModel](http://apidocs.loopback.io/loopback/#persistedmodel) is the base class for models connected to persistent data sources
+such as databases and is also the base class for all built-in models (except [Email](https://apidocs.loopback.io/loopback/#email)).
 It provides all the standard create, read, update, and delete (CRUD) operations and exposes REST endpoints for them.
 
 By default, LoopBack uses `/api` as the URI root for the REST API. You can change this by changing the `restApiRoot` property in the application `/server/config.json` file.
@@ -68,7 +68,7 @@ Update an existing model instance or insert a new one into the data source. 
 The update will override any specified attributes in the request data object.
 It won't remove  existing ones unless the value is set to null.
 
-Performs [upsert](http://apidocs.strongloop.com/loopback/#persistedmodelupsert)to detect if there is a matching instance.
+Performs [upsert](http://apidocs.loopback.io/loopback/#persistedmodelupsert)to detect if there is a matching instance.
 If not, then inserts (creates) a new instance. If there is a matching instance, updates it.
 
 <pre class="query_syntax">PUT /<i>modelName</i></pre>

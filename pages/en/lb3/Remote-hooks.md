@@ -14,7 +14,7 @@ summary: A remote hook runs before or after execution of a model's remote method
 LoopBack provides three kinds of hooks:
 
 * **Remote hooks**, that execute before or after calling a remote method, either a custom [remote method](Remote-methods.html) 
-  or a standard create, retrieve, update, and delete method inherited from [PersistedModel](http://apidocs.strongloop.com/loopback/#persistedmodel).
+  or a standard create, retrieve, update, and delete method inherited from [PersistedModel](http://apidocs.loopback.io/loopback/#persistedmodel).
   See [PersistedModel REST API](PersistedModel-REST-API.html) for information on how the Node methods correspond to REST operations.
 * **[Operation hooks](Operation-hooks.html)** that execute when models perform create, retrieve, update, and delete operations.  Operation hooks replace deprecated model hooks.
 - **[Connector hooks](Connector-hooks.html)** that execute before requests to a data source connector or after the connector's response.
@@ -50,8 +50,8 @@ Where:
 - `modelName` is the name of the model that has the remote method.
 - `methodName` is the name of the remote method.
 
-Instance methods and static built-in methods such as [`upsert()`](http://apidocs.strongloop.com/loopback/#persistedmodel-upsert) or 
-[`create()`](http://apidocs.strongloop.com/loopback/#persistedmodel-create) require a third argument in the callback:
+Instance methods and static built-in methods such as [`upsert()`](http://apidocs.loopback.io/loopback/#persistedmodel-upsert) or 
+[`create()`](http://apidocs.loopback.io/loopback/#persistedmodel-create) require a third argument in the callback:
 
 ```javascript
 modelName.beforeRemote( methodName, function( ctx, modelInstance, next) {
@@ -73,7 +73,7 @@ Where:
 
 * `modelName` is the name of the model to which the remote hook is attached.
 * `methodName` is the name of the method that triggers the remote hook. This may be a custom [remote method](Remote-methods.html)
-  or a standard create, retrieve, update, and delete method inherited from [PersistedModel](http://apidocs.strongloop.com/loopback/#persistedmodel).
+  or a standard create, retrieve, update, and delete method inherited from [PersistedModel](http://apidocs.loopback.io/loopback/#persistedmodel).
   It may include wildcards to match more than one method (see below).
 * `ctx` is the [context object](#context-object). 
 * `modelInstance` is the affected model instance.
@@ -246,7 +246,7 @@ Dog.afterRemoteError('prototype.speak', function(ctx, next) {
 
 Remote hooks are provided with a Context `ctx` object that contains transport-specific data (for HTTP: `req` and `res`). The `ctx` object also has a set of consistent APIs across transports.
 
-Applications that use [loopback.rest()](https://apidocs.strongloop.com/loopback/#loopback-rest) middleware provide the following additional `ctx` properties:
+Applications that use [loopback.rest()](https://apidocs.loopback.io/loopback/#loopback-rest) middleware provide the following additional `ctx` properties:
 
 * `ctx.req`: Express [Request](http://expressjs.com/api.html#req) object. 
 

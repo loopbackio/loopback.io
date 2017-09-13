@@ -103,14 +103,14 @@ The equivalent REST query would be:
 /api/cars?filter[where][carClass]=fullsize
 ```
 
-{% include tip.html content="The above where clause syntax is for queries, and not for [`count()`](http://apidocs.strongloop.com/loopback/#persistedmodel-count).
+{% include tip.html content="The above where clause syntax is for queries, and not for [`count()`](http://apidocs.loopback.io/loopback/#persistedmodel-count).
 For all other methods, including `count()`, omit the `{ where : ... }` wrapper; see [Where clause for other methods](#where-clause-for-other-methods) below.
 " %}
 
 ### Where clause for other methods
 
 {% include important.html content="When you call the Node APIs _for methods other than queries_, that is for methods that update and delete
-(and [`count()`](http://apidocs.strongloop.com/loopback/#persistedmodel-count)), don't wrap the where clause in a `{ where : ... }` object, simply use the condition as the argument as shown below. See examples below.
+(and [`count()`](http://apidocs.loopback.io/loopback/#persistedmodel-count)), don't wrap the where clause in a `{ where : ... }` object, simply use the condition as the argument as shown below. See examples below.
 " %}
 
 In the first form below, the condition is equivalence, that is, it tests whether _property_ equals _value_. The second form is for all other conditions.
@@ -129,7 +129,7 @@ Where:
 * _value_ is a literal value. 
 * _op_ is one of the [operators](#operators) listed below.
 
-For example, below shows a where clause in a call to a model's [updateAll()](http://apidocs.strongloop.com/loopback/#persistedmodel-updateall) method.
+For example, below shows a where clause in a call to a model's [updateAll()](http://apidocs.loopback.io/loopback/#persistedmodel-updateall) method.
 Note the lack of `{ where : ... }` in the argument.
 
 ```javascript
@@ -140,7 +140,7 @@ myModel.updateAll( {id: theId}, {regionId: null}, function(err, results) {
 });
 ```
 
-More examples, this time in a call to [destroyAll()](http://apidocs.strongloop.com/loopback/#persistedmodel-destroyall):
+More examples, this time in a call to [destroyAll()](http://apidocs.loopback.io/loopback/#persistedmodel-destroyall):
 
 ```javascript
 var RoleMapping = app.models.RoleMapping;
@@ -188,9 +188,9 @@ This table describes the operators available in "where" filters. See [Examples]
 | = | Equivalence. See [examples](#equivalence) below.|
 | and | Logical AND operator. See [AND and OR operators](#and-and-or-operators) and [examples](#and--or) below.|
 | or | Logical OR operator. See [AND and OR operators](#and-and-or-operators) and [examples](#and--or) below.|
-| gt, gte | Numerical greater than (&gt;); greater than or equal (&gt;=). Valid only for numerical and date values. See [examples](#gt-and-lt) below. <br/><br/>  For Geopoint values, the units are in miles by default. See [Geopoint](http://apidocs.strongloop.com/loopback-datasource-juggler/#geopoint) for more information.|
-| lt, lte | Numerical less than (&lt;); less than or equal (&lt;=). Valid only for numerical and date values. <br/><br/>For geolocation values, the units are in miles by default. See [Geopoint](http://apidocs.strongloop.com/loopback-datasource-juggler/#geopoint) for more information. |
-| between | True if the value is between the two specified values: greater than or equal to first value and less than or equal to second value. See [examples](#gt-and-lt) below. <br/><br/> For geolocation values, the units are in miles by default. See [Geopoint](http://apidocs.strongloop.com/loopback-datasource-juggler/#geopoint) for more information.|
+| gt, gte | Numerical greater than (&gt;); greater than or equal (&gt;=). Valid only for numerical and date values. See [examples](#gt-and-lt) below. <br/><br/>  For Geopoint values, the units are in miles by default. See [Geopoint](http://apidocs.loopback.io/loopback-datasource-juggler/#geopoint) for more information.|
+| lt, lte | Numerical less than (&lt;); less than or equal (&lt;=). Valid only for numerical and date values. <br/><br/>For geolocation values, the units are in miles by default. See [Geopoint](http://apidocs.loopback.io/loopback-datasource-juggler/#geopoint) for more information. |
+| between | True if the value is between the two specified values: greater than or equal to first value and less than or equal to second value. See [examples](#gt-and-lt) below. <br/><br/> For geolocation values, the units are in miles by default. See [Geopoint](http://apidocs.loopback.io/loopback-datasource-juggler/#geopoint) for more information.|
 | inq, nin | In / not in an array of values. See [examples](#inq) below.|
 | near | For geolocations, return the closest points, sorted in order of distance. Use with `limit` to return the _n_ closest points. See [examples](#near) below.|
 | neq | Not equal (!=) |

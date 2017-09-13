@@ -136,7 +136,7 @@ Then the generator will prompt you for the base class to use for the model.  Si
   Checkpoint
 ```
 
-[PersistedModel ](http://apidocs.strongloop.com/loopback/#persistedmodel)is the base object for all models connected to a persistent data source such as a database.  See [LoopBack core concepts](LoopBack-core-concepts) for an overview of the model inheritance hierarchy.
+[PersistedModel ](http://apidocs.loopback.io/loopback/#persistedmodel)is the base object for all models connected to a persistent data source such as a database.  See [LoopBack core concepts](LoopBack-core-concepts) for an overview of the model inheritance hierarchy.
 
 One of the powerful advantages of LoopBack is that it automatically generates a REST API for your model.  The generator will ask whether you want to expose this REST API.
 

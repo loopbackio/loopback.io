@@ -37,7 +37,7 @@ The end result is the same.
 When you define a relation for a model, LoopBack adds a set of methods to the model, as detailed in the article on each type of relation.
 
 {% include note.html content="It's important to understand that all models inherit from the
-[Model class](https://apidocs.strongloop.com/loopback/#model) and they can have relations between them regardless of the specific type of model or the backing data source.
+[Model class](https://apidocs.loopback.io/loopback/#model) and they can have relations between them regardless of the specific type of model or the backing data source.
 Models backed by different data sources can have relations between them.
 " %}
 

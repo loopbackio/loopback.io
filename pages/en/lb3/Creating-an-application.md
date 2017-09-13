@@ -77,10 +77,10 @@ created by the [application generator](Application-generator.html).
 
 **1 - 3**:
 Require LoopBack modules and set up standard objects
-[`loopback`](http://apidocs.strongloop.com/loopback/#loopback),
-[`app`](http://apidocs.strongloop.com/loopback/#var-app-loopback),
+[`loopback`](http://apidocs.loopback.io/loopback/#loopback),
+[`app`](http://apidocs.loopback.io/loopback/#var-app-loopback),
 and
-[`boot`](http://apidocs.strongloop.com/loopback-boot/#boot).
+[`boot`](http://apidocs.loopback.io/loopback-boot/#boot).
 
 **4**:
 Start the web server.

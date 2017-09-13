@@ -16,7 +16,7 @@ LoopBack provides the following software development kits (SDKs):
   * [Push notifications for iOS apps](Push-notifications-for-iOS-apps.html)
   * [Tutorial: push notifications - iOS client](Push-notifications-for-iOS-apps.html)
 * [Android SDK](Android-SDK.html). See also:
-  * [LoopBack Android API reference.](http://apidocs.strongloop.com/loopback-sdk-android/api/index.html)
+  * [LoopBack Android API reference.](http://apidocs.loopback.io/loopback-sdk-android/api/index.html)
   * [Push notifications for Android apps](Push-notifications-for-Android-apps.html)
   * [Tutorial: push notifications - Android client](Push-notifications-for-Android-apps.html)
 * [AngularJS JavaScript SDK](AngularJS-JavaScript-SDK.html)

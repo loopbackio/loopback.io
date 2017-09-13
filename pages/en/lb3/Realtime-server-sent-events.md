@@ -11,8 +11,8 @@ summary:
 
 ## Overview
 
-The [PersistedModel](http://apidocs.strongloop.com/loopback/#persistedmodel) API supports streaming changes from servers to clients using a combination
-of the CRUD methods and the [`createChangeStream()`](http://apidocs.strongloop.com/loopback/#persistedmodel-createchangestream) method.
+The [PersistedModel](http://apidocs.loopback.io/loopback/#persistedmodel) API supports streaming changes from servers to clients using a combination
+of the CRUD methods and the [`createChangeStream()`](http://apidocs.loopback.io/loopback/#persistedmodel-createchangestream) method.
 
 A ChangeStream enables a server to send model changes to a client. A client makes an initial request to be notified of changes and then the server "pushes" these changes to the client.
 

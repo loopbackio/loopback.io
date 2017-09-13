@@ -9,7 +9,7 @@ permalink: /doc/en/lb3/Events.html
 summary:
 ---
 
-The [LoopBack app object](http://apidocs.strongloop.com/loopback/#var-app-loopback) is a Node
+The [LoopBack app object](http://apidocs.loopback.io/loopback/#var-app-loopback) is a Node
 [EventEmitter](https://nodejs.org/api/events.html#events_class_eventemitter), and thus has
 [`app.emit()`](https://nodejs.org/api/events.html#events_emitter_emit_eventname_arg1_arg2) and
 [`app.on()`](https://nodejs.org/api/events.html#events_emitter_on_eventname_listener) methods.
@@ -24,13 +24,13 @@ By default, an application created with the [application generator](Application-
 
 All models emit the following events:
 
-By default, the basic LoopBack [Model object](http://apidocs.strongloop.com/loopback/#model) has properties and methods "mixed in" from:
+By default, the basic LoopBack [Model object](http://apidocs.loopback.io/loopback/#model) has properties and methods "mixed in" from:
 
-* [Inclusion object](http://apidocs.strongloop.com/loopback-datasource-juggler/#inclusion) - Enables you to load relations of several objects and optimize numbers of requests.
-* [Validateable object](http://apidocs.strongloop.com/loopback-datasource-juggler/#validatable) - provides validation methods.
+* [Inclusion object](http://apidocs.loopback.io/loopback-datasource-juggler/#inclusion) - Enables you to load relations of several objects and optimize numbers of requests.
+* [Validateable object](http://apidocs.loopback.io/loopback-datasource-juggler/#validatable) - provides validation methods.
   See [Validating model data](Validating-model-data.html).
 
-When you define relations between models, the [RelationMixin object](http://apidocs.strongloop.com/loopback-datasource-juggler/#relationmixin) object also gets mixed in to the model object.
+When you define relations between models, the [RelationMixin object](http://apidocs.loopback.io/loopback-datasource-juggler/#relationmixin) object also gets mixed in to the model object.
 
 ### attached
 
@@ -57,4 +57,4 @@ Arguments: data, an object.
 
 ## User model events
 
-The User model [`User.resetPassword()`](http://apidocs.strongloop.com/loopback/#user-resetpassword) method emits the 'resetPasswordRequest' event.
+The User model [`User.resetPassword()`](http://apidocs.loopback.io/loopback/#user-resetpassword) method emits the 'resetPasswordRequest' event.

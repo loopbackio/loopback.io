@@ -29,7 +29,7 @@ A LoopBack model can perform operations in a transaction when the model is atta
 
 ## Transaction APIs
 
-See the [API reference](http://apidocs.strongloop.com/loopback-datasource-juggler/#transactionmixin) for full transaction API documentation.
+See the [API reference](http://apidocs.loopback.io/loopback-datasource-juggler/#transactionmixin) for full transaction API documentation.
 
 Performing operations in a transaction typically involves the following steps:
 
@@ -39,7 +39,7 @@ Performing operations in a transaction typically involves the following steps:
 
 ### Start transaction
 
-Use the [beginTransaction](http://apidocs.strongloop.com/loopback-datasource-juggler/#transactionmixin-begintransaction) method to start a new transaction.
+Use the [beginTransaction](http://apidocs.loopback.io/loopback-datasource-juggler/#transactionmixin-begintransaction) method to start a new transaction.
 
 For example, for a `Post` model:
 
@@ -76,9 +76,9 @@ For more information about database-specific isolation levels, see:
 ### Perform operations in a transaction
 
 To perform create, retrieve, update, and delete operations in the transaction, add a second argument consisting of the transaction object to the standard 
-[`create()`](http://apidocs.strongloop.com/loopback/#persistedmodel-create),
-[`upsert()`](http://apidocs.strongloop.com/loopback/#persistedmodel-upsert),
-[`destroyAll()`](http://apidocs.strongloop.com/loopback/#persistedmodel-destroyall) (and so on) methods.
+[`create()`](http://apidocs.loopback.io/loopback/#persistedmodel-create),
+[`upsert()`](http://apidocs.loopback.io/loopback/#persistedmodel-upsert),
+[`destroyAll()`](http://apidocs.loopback.io/loopback/#persistedmodel-destroyall) (and so on) methods.
 
 For example, again assuming a `Post` model:
 

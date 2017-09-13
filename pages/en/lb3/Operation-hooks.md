@@ -16,7 +16,7 @@ summary: Operation hooks are triggered by all methods that execute a particular 
 ## Overview
 
 _Operation hooks_ are not tied to a particular method, but rather are triggered from all methods that execute a particular high-level create, read, update, or delete operation.
-These are all methods of [PersistedModel](https://apidocs.strongloop.com/loopback/#persistedmodel) that application models inherit.
+These are all methods of [PersistedModel](https://apidocs.loopback.io/loopback/#persistedmodel) that application models inherit.
 Using operation hooks enables you to intercept actions that modify data independent of the specific method that invokes them (for example, `create`, `save`, or `updateOrCreate`).
 
 The API is simple: the method <code>Model.observe(<i>name</i>, <i>observer</i>)</code>, where _`name`_ is the string name of the operation hook, for example "before save",
@@ -483,7 +483,7 @@ since they cannot determine in advance whether the model will be created or not.
 ### access
 
 The `access` hook is triggered whenever a database is queried for models, that is when _any_ create, retrieve, update,
-and delete method of [PersistedModel](https://apidocs.strongloop.com/loopback/#persistedmodel) is called.
+and delete method of [PersistedModel](https://apidocs.loopback.io/loopback/#persistedmodel) is called.
 Observers may modify the query, for example by adding extra restrictions.
 
 {% include note.html content="
@@ -516,15 +516,15 @@ MyModel.observe('access', function limitToTenant(ctx, next) {
 
 The `before save` hook is triggered before a model instance is modified (created, updated), specifically when the following methods of PersistedModel are called:
 
-* [create()](https://apidocs.strongloop.com/loopback/#persistedmodel-create)
-* [upsert()](https://apidocs.strongloop.com/loopback/#persistedmodel-upsert)
-* [upsertWithWhere()](http://apidocs.strongloop.com/loopback/#persistedmodel-upsertwithwhere)
-* [findOrCreate()](https://apidocs.strongloop.com/loopback/#persistedmodel-findorcreate) - When `findOrCreate` finds an existing model, it does not trigger save hooks. However, connectors providing atomic implementation may trigger `before save` hook even when the model is not created, since they cannot determine in advance whether the model will be created or not.
-* [updateAll()](https://apidocs.strongloop.com/loopback/#persistedmodel-updateall)
-* [prototype.save()](https://apidocs.strongloop.com/loopback/#persistedmodel-prototype-save)
-* [prototype.updateAttributes()](https://apidocs.strongloop.com/loopback/#persistedmodel-prototype-updateattributes)
-* [replaceOrCreate()](https://apidocs.strongloop.com/loopback/#persistedmodel-replaceorcreate)
-* [prototype.replaceById()](https://apidocs.strongloop.com/loopback/#persistedmodel-replacebyid) / [replaceAttributes()](https://apidocs.strongloop.com/loopback/#persistedmodel-prototype-replaceattributes)
+* [create()](https://apidocs.loopback.io/loopback/#persistedmodel-create)
+* [upsert()](https://apidocs.loopback.io/loopback/#persistedmodel-upsert)
+* [upsertWithWhere()](http://apidocs.loopback.io/loopback/#persistedmodel-upsertwithwhere)
+* [findOrCreate()](https://apidocs.loopback.io/loopback/#persistedmodel-findorcreate) - When `findOrCreate` finds an existing model, it does not trigger save hooks. However, connectors providing atomic implementation may trigger `before save` hook even when the model is not created, since they cannot determine in advance whether the model will be created or not.
+* [updateAll()](https://apidocs.loopback.io/loopback/#persistedmodel-updateall)
+* [prototype.save()](https://apidocs.loopback.io/loopback/#persistedmodel-prototype-save)
+* [prototype.updateAttributes()](https://apidocs.loopback.io/loopback/#persistedmodel-prototype-updateattributes)
+* [replaceOrCreate()](https://apidocs.loopback.io/loopback/#persistedmodel-replaceorcreate)
+* [prototype.replaceById()](https://apidocs.loopback.io/loopback/#persistedmodel-replacebyid) / [replaceAttributes()](https://apidocs.loopback.io/loopback/#persistedmodel-prototype-replaceattributes)
 
 The hook is triggered _before_ [model validation](Validating-model-data.html) functions are called.
 
@@ -625,15 +625,15 @@ This completely removes the field and prevents inserting spurious data into the 
 
 The `after save` hook is called after a model change was successfully persisted to the datasource, specifically when the following methods of PersistedModel are called:
 
-* [create()](https://apidocs.strongloop.com/loopback/#persistedmodel-create)
-* [upsert()](https://apidocs.strongloop.com/loopback/#persistedmodel-upsert)
-* [upsertWithWhere()](http://apidocs.strongloop.com/loopback/#persistedmodel-upsertwithwhere)
-* [findOrCreate()](https://apidocs.strongloop.com/loopback/#persistedmodel-findorcreate)*
-* [updateAll()](https://apidocs.strongloop.com/loopback/#persistedmodel-updateall)
-* [prototype.save()](https://apidocs.strongloop.com/loopback/#persistedmodel-prototype-save)
-* [prototype.updateAttributes()](https://apidocs.strongloop.com/loopback/#persistedmodel-prototype-updateattributes)
-* [prototye.replaceAttributes()](https://apidocs.strongloop.com/loopback/#persistedmodel-prototype-replaceattributes) / [replaceById()](https://apidocs.strongloop.com/loopback/#persistedmodel-replacebyid)
-* [replaceOrCreate()](https://apidocs.strongloop.com/loopback/#persistedmodel-replaceorcreate)
+* [create()](https://apidocs.loopback.io/loopback/#persistedmodel-create)
+* [upsert()](https://apidocs.loopback.io/loopback/#persistedmodel-upsert)
+* [upsertWithWhere()](http://apidocs.loopback.io/loopback/#persistedmodel-upsertwithwhere)
+* [findOrCreate()](https://apidocs.loopback.io/loopback/#persistedmodel-findorcreate)*
+* [updateAll()](https://apidocs.loopback.io/loopback/#persistedmodel-updateall)
+* [prototype.save()](https://apidocs.loopback.io/loopback/#persistedmodel-prototype-save)
+* [prototype.updateAttributes()](https://apidocs.loopback.io/loopback/#persistedmodel-prototype-updateattributes)
+* [prototye.replaceAttributes()](https://apidocs.loopback.io/loopback/#persistedmodel-prototype-replaceattributes) / [replaceById()](https://apidocs.loopback.io/loopback/#persistedmodel-replacebyid)
+* [replaceOrCreate()](https://apidocs.loopback.io/loopback/#persistedmodel-replaceorcreate)
 
 (&#42;) When `findOrCreate` finds an existing model, the save hooks are not triggered.
 However, connectors providing atomic implementation may trigger `before save` hook even when the model is not created,
@@ -703,9 +703,9 @@ MyModel.observe('after save', function(ctx, next) {
 
 The `before delete` hook is triggered before a model is removed from a datasource, specifically when the following methods of PersistedModel are called:
 
-* [`destroyAll()`](https://apidocs.strongloop.com/loopback/#persistedmodel-destroyall) (same as `deleteAll()`)
-* [`destroyById()`](https://apidocs.strongloop.com/loopback/#persistedmodel-destroybyid)(same as `deleteById()`)
-* [`prototype.destroy()`](https://apidocs.strongloop.com/loopback/#persistedmodel-prototype-destroy) (same as `prototype.delete()`)
+* [`destroyAll()`](https://apidocs.loopback.io/loopback/#persistedmodel-destroyall) (same as `deleteAll()`)
+* [`destroyById()`](https://apidocs.loopback.io/loopback/#persistedmodel-destroybyid)(same as `deleteById()`)
+* [`prototype.destroy()`](https://apidocs.loopback.io/loopback/#persistedmodel-prototype-destroy) (same as `prototype.delete()`)
 
 {% include important.html content="
 The `before delete` operation hook does not receive a list of deleted model instance IDs, because backend data stores such as relational or NoSQL databases don't provide this information.
@@ -753,9 +753,9 @@ However, _when deleting a single model instance_ hook receives `ctx.where` that
 
 The `after delete` hook is triggered after some models are removed from the datasource, specifically when the following methods of PersistedModel are called:
 
-* [`destroyAll()`](https://apidocs.strongloop.com/loopback/#persistedmodel-destroyall) (same as `deleteAll()`)
-* [`destroyById()`](https://apidocs.strongloop.com/loopback/#persistedmodel-destroybyid)(same as `deleteById()`)
-* [`prototype.destroy()`](https://apidocs.strongloop.com/loopback/#persistedmodel-prototype-destroy) (same as `prototype.delete()`)
+* [`destroyAll()`](https://apidocs.loopback.io/loopback/#persistedmodel-destroyall) (same as `deleteAll()`)
+* [`destroyById()`](https://apidocs.loopback.io/loopback/#persistedmodel-destroybyid)(same as `deleteById()`)
+* [`prototype.destroy()`](https://apidocs.loopback.io/loopback/#persistedmodel-prototype-destroy) (same as `prototype.delete()`)
 
 Context properties
 
@@ -777,20 +777,20 @@ MyModel.observe('after delete', function(ctx, next) {
 
 This hook is triggered by the following methods of PersistedModel:
 
-* [`find()`](https://apidocs.strongloop.com/loopback/#persistedmodel-find)
-* [`findOne()`](https://apidocs.strongloop.com/loopback/#persistedmodel-findone)
-* [`findById()`](https://apidocs.strongloop.com/loopback/#persistedmodel-findbyid)
-* [`exists()`](https://apidocs.strongloop.com/loopback/#persistedmodel-exists)
-* [`count()`](https://apidocs.strongloop.com/loopback/#persistedmodel-count)
-* [`create()`](https://apidocs.strongloop.com/loopback/#persistedmodel-create)
-* [`upsert()`](https://apidocs.strongloop.com/loopback/#persistedmodel-upsert) (same as `updateOrCreate()`)
-* [`upsertWithWhere()`](http://apidocs.strongloop.com/loopback/#persistedmodel-upsertwithwhere)
-* [`findOrCreate()`](https://apidocs.strongloop.com/loopback/#persistedmodel-findorcreate)*
-* [`prototype.save()`](https://apidocs.strongloop.com/loopback/#persistedmodel-prototype-save)
-* [`prototype.updateAttributes()`](https://apidocs.strongloop.com/loopback/#persistedmodel-prototype-updateattributes)
-* [`replaceOrCreate()`](https://apidocs.strongloop.com/loopback/#persistedmodel-replaceorcreate)
-* [`prototype.replaceAttributes()`](https://apidocs.strongloop.com/loopback/#persistedmodel-prototype-replaceattributes)
-  / [`replaceById()`](https://apidocs.strongloop.com/loopback/#persistedmodel-replacebyid)
+* [`find()`](https://apidocs.loopback.io/loopback/#persistedmodel-find)
+* [`findOne()`](https://apidocs.loopback.io/loopback/#persistedmodel-findone)
+* [`findById()`](https://apidocs.loopback.io/loopback/#persistedmodel-findbyid)
+* [`exists()`](https://apidocs.loopback.io/loopback/#persistedmodel-exists)
+* [`count()`](https://apidocs.loopback.io/loopback/#persistedmodel-count)
+* [`create()`](https://apidocs.loopback.io/loopback/#persistedmodel-create)
+* [`upsert()`](https://apidocs.loopback.io/loopback/#persistedmodel-upsert) (same as `updateOrCreate()`)
+* [`upsertWithWhere()`](http://apidocs.loopback.io/loopback/#persistedmodel-upsertwithwhere)
+* [`findOrCreate()`](https://apidocs.loopback.io/loopback/#persistedmodel-findorcreate)*
+* [`prototype.save()`](https://apidocs.loopback.io/loopback/#persistedmodel-prototype-save)
+* [`prototype.updateAttributes()`](https://apidocs.loopback.io/loopback/#persistedmodel-prototype-updateattributes)
+* [`replaceOrCreate()`](https://apidocs.loopback.io/loopback/#persistedmodel-replaceorcreate)
+* [`prototype.replaceAttributes()`](https://apidocs.loopback.io/loopback/#persistedmodel-prototype-replaceattributes)
+  / [`replaceById()`](https://apidocs.loopback.io/loopback/#persistedmodel-replacebyid)
 
 {% include important.html content="
 By default, `create` and `updateAttributes` do not apply database updates to the model instance returned to the callback,
@@ -808,16 +808,16 @@ Context properties
 
 This hook is triggered by operations that persist data to the datasource, specifically, the following methods of PersistedModel:
 
-* [`create()`](https://apidocs.strongloop.com/loopback/#persistedmodel-create)
-* [`upsert()`](https://apidocs.strongloop.com/loopback/#persistedmodel-upsert) (same as `updateOrCreate()`)
-* [`upsertWithWhere()`](http://apidocs.strongloop.com/loopback/#persistedmodel-upsertwithwhere)
-* [`findOrCreate()`](https://apidocs.strongloop.com/loopback/#persistedmodel-findorcreate)*
-* [`prototype.save()`](https://apidocs.strongloop.com/loopback/#persistedmodel-prototype-save)
-* [`prototype.updateAttributes()`](https://apidocs.strongloop.com/loopback/#persistedmodel-prototype-updateattributes)
-* [`updateAll()`](https://apidocs.strongloop.com/loopback/#persistedmodel-updateall)
-* [`replaceOrCreate()`](https://apidocs.strongloop.com/loopback/#persistedmodel-replaceorcreate)
-* [`prototype.replaceAttributes()`](https://apidocs.strongloop.com/loopback/#persistedmodel-prototype-replaceattributes)
-  / [`replaceById()`](https://apidocs.strongloop.com/loopback/#persistedmodel-replacebyid)
+* [`create()`](https://apidocs.loopback.io/loopback/#persistedmodel-create)
+* [`upsert()`](https://apidocs.loopback.io/loopback/#persistedmodel-upsert) (same as `updateOrCreate()`)
+* [`upsertWithWhere()`](http://apidocs.loopback.io/loopback/#persistedmodel-upsertwithwhere)
+* [`findOrCreate()`](https://apidocs.loopback.io/loopback/#persistedmodel-findorcreate)*
+* [`prototype.save()`](https://apidocs.loopback.io/loopback/#persistedmodel-prototype-save)
+* [`prototype.updateAttributes()`](https://apidocs.loopback.io/loopback/#persistedmodel-prototype-updateattributes)
+* [`updateAll()`](https://apidocs.loopback.io/loopback/#persistedmodel-updateall)
+* [`replaceOrCreate()`](https://apidocs.loopback.io/loopback/#persistedmodel-replaceorcreate)
+* [`prototype.replaceAttributes()`](https://apidocs.loopback.io/loopback/#persistedmodel-prototype-replaceattributes)
+  / [`replaceById()`](https://apidocs.loopback.io/loopback/#persistedmodel-replacebyid)
 
 Don't confuse this hook with the "before save" hook:
 

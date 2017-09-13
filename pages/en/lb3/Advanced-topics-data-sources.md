@@ -35,7 +35,7 @@ It's a factory for data access logic around model classes. With the ability to p
 {% include warning.html content="Don't put production database credentials explicitly in JSON or JavaScript files, where they could be a security vulnerability.  Instead, load the values from environment variables.  For more information, see [Specifying database credentials with environment variables](Attaching-models-to-data-sources.html#specifying-database-credentials-with-environment-variables)
 "%}
 
-The [`DataSource` constructor](http://apidocs.strongloop.com/loopback-datasource-juggler/#datasource) accepts the following arguments:
+The [`DataSource` constructor](http://apidocs.loopback.io/loopback-datasource-juggler/#datasource) accepts the following arguments:
 
 * name: Optional name of the data source instance being created. 
 * settings: An object of properties to configure the connector. Must include a `connector` property, specifying the connector to use.

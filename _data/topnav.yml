@@ -4,7 +4,7 @@ topnav:
 - title: Topnav
   items:
     - title: API Docs
-      external_url: http://apidocs.strongloop.com
+      external_url: http://apidocs.loopback.io
 
 #Topnav dropdowns
 topnav_dropdowns:

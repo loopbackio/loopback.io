@@ -34,7 +34,7 @@ Also, since `name` is a required value, the model will _only_ be saved if th
 
 ## Using validation methods
 
-Every model attached to a persistent data source has validations methods mixed in from [Validatable](http://apidocs.strongloop.com/loopback-datasource-juggler/#validatable).
+Every model attached to a persistent data source has validations methods mixed in from [Validatable](http://apidocs.loopback.io/loopback-datasource-juggler/#validatable).
 
 <table>
   <tbody>
@@ -43,25 +43,25 @@ Every model attached to a persistent data source has validations methods mixed i
       <th>Description</th>
     </tr>
     <tr>
-      <td><a href="https://apidocs.strongloop.com/loopback-datasource-juggler/#validatable-validatesabsenceof" class="external-link" rel="nofollow">validatesAbsenceOf</a></td>
+      <td><a href="https://apidocs.loopback.io/loopback-datasource-juggler/#validatable-validatesabsenceof" class="external-link" rel="nofollow">validatesAbsenceOf</a></td>
       <td>Validate absence of one or more specified properties. A model should not include a property to be considered valid; fails when validated field not blank.</td>
     </tr>
     <tr>
-      <td><a href="https://apidocs.strongloop.com/loopback-datasource-juggler/#validatable-validatesexclusionof" class="external-link" rel="nofollow">validatesExclusionOf</a></td>
+      <td><a href="https://apidocs.loopback.io/loopback-datasource-juggler/#validatable-validatesexclusionof" class="external-link" rel="nofollow">validatesExclusionOf</a></td>
       <td>Validate exclusion. Require a property value not be in the specified array.</td>
     </tr>
     <tr>
-      <td><a href="https://apidocs.strongloop.com/loopback-datasource-juggler/#validatable-validatesformatof" class="external-link" rel="nofollow">validatesFormatOf</a></td>
+      <td><a href="https://apidocs.loopback.io/loopback-datasource-juggler/#validatable-validatesformatof" class="external-link" rel="nofollow">validatesFormatOf</a></td>
       <td>
         <p>Validate format. Require a model to include a property that matches the given format.</p>
       </td>
     </tr>
     <tr>
-      <td><a href="https://apidocs.strongloop.com/loopback-datasource-juggler/#validatable-validatesinclusionof" class="external-link" rel="nofollow">validatesInclusionOf</a></td>
+      <td><a href="https://apidocs.loopback.io/loopback-datasource-juggler/#validatable-validatesinclusionof" class="external-link" rel="nofollow">validatesInclusionOf</a></td>
       <td>Validate inclusion in set. Require a value for property to be in the specified array.</td>
     </tr>
     <tr>
-      <td><a href="https://apidocs.strongloop.com/loopback-datasource-juggler/#validatable-validateslengthof" class="external-link" rel="nofollow">validatesLengthOf</a></td>
+      <td><a href="https://apidocs.loopback.io/loopback-datasource-juggler/#validatable-validateslengthof" class="external-link" rel="nofollow">validatesLengthOf</a></td>
       <td>
         <p>Validate length. Require a property length to be within a specified range. Three kinds of validations: "min," "max," and "is." Default error messages are:</p>
         <ul>
@@ -72,15 +72,15 @@ Every model attached to a persistent data source has validations methods mixed i
       </td>
     </tr>
     <tr>
-      <td><a href="https://apidocs.strongloop.com/loopback-datasource-juggler/#validatable-validatesnumericalityof" class="external-link" rel="nofollow">validatesNumericalityOf</a></td>
+      <td><a href="https://apidocs.loopback.io/loopback-datasource-juggler/#validatable-validatesnumericalityof" class="external-link" rel="nofollow">validatesNumericalityOf</a></td>
       <td>Validate numericality. Requires a value for property to be either an integer or number.</td>
     </tr>
     <tr>
-      <td><a href="https://apidocs.strongloop.com/loopback-datasource-juggler/#validatable-validatespresenceof" class="external-link" rel="nofollow">validatesPresenceOf</a></td>
+      <td><a href="https://apidocs.loopback.io/loopback-datasource-juggler/#validatable-validatespresenceof" class="external-link" rel="nofollow">validatesPresenceOf</a></td>
       <td>Validate presence of one or more specified properties. Requires a model to include a property to be considered valid; fails when validated field is blank.</td>
     </tr>
     <tr>
-      <td><a href="https://apidocs.strongloop.com/loopback-datasource-juggler/#validatable-validatesuniquenessof" class="external-link" rel="nofollow">validatesUniquenessOf</a></td>
+      <td><a href="https://apidocs.loopback.io/loopback-datasource-juggler/#validatable-validatesuniquenessof" class="external-link" rel="nofollow">validatesUniquenessOf</a></td>
       <td>
         <p>Validate uniqueness. Ensure the value of the property is unique for the model. Not available for all connectors. Currently supported with these connectors:</p>
         <ul>
@@ -91,7 +91,7 @@ Every model attached to a persistent data source has validations methods mixed i
       </td>
     </tr>
     <tr>
-      <td><a href="https://apidocs.strongloop.com/loopback-datasource-juggler/#validatable-validatesDateOf" class="external-link" rel="nofollow">validatesDateOf</a></td>
+      <td><a href="https://apidocs.loopback.io/loopback-datasource-juggler/#validatable-validatesDateOf" class="external-link" rel="nofollow">validatesDateOf</a></td>
       <td>
         <p>Validate if a value for a property is a Date. Requires a model value for property to be of type Date.</p>
       </td>
@@ -124,14 +124,14 @@ module.exports = function(user) {
 
 {% include tip.html content="
 The validation methods are invoked when you call the 
-[`isValid()`](http://apidocs.strongloop.com/loopback-datasource-juggler/#validatable-prototype-isvalid) method on a model instance, and automatically each time model instance is created or updated. You don't have to call `isValid()` to validate data.
+[`isValid()`](http://apidocs.loopback.io/loopback-datasource-juggler/#validatable-prototype-isvalid) method on a model instance, and automatically each time model instance is created or updated. You don't have to call `isValid()` to validate data.
 
 To enforce validation constraints when calling 
-[`upsert()`](http://apidocs.strongloop.com/loopback/#persistedmodel-upsert), ensure that `validateUpsert` option is set to `true` in the [model definition JSON file](Model-definition-JSON-file.html). 
+[`upsert()`](http://apidocs.loopback.io/loopback/#persistedmodel-upsert), ensure that `validateUpsert` option is set to `true` in the [model definition JSON file](Model-definition-JSON-file.html). 
 By default, the [model generator](Model-generator.html) sets this property to true.
 " %}
 
-To invoke the validation constraints explicitly, call [`isValid()`](http://apidocs.strongloop.com/loopback-datasource-juggler/#validatable-prototype-isvalid).
+To invoke the validation constraints explicitly, call [`isValid()`](http://apidocs.loopback.io/loopback-datasource-juggler/#validatable-prototype-isvalid).
 
 For example:
 
@@ -167,8 +167,8 @@ module.exports = function(MyModel) {
 ```
 
 Use `isValid()` as an additional _ad-hoc _way to check validity.
-You can also call [`validate()`](https://apidocs.strongloop.com/loopback-datasource-juggler/#validatable-validate)
-or [`validateAsync()`](https://apidocs.strongloop.com/loopback-datasource-juggler/#validatable-validateasync) with custom validation functions.
+You can also call [`validate()`](https://apidocs.loopback.io/loopback-datasource-juggler/#validatable-validate)
+or [`validateAsync()`](https://apidocs.loopback.io/loopback-datasource-juggler/#validatable-validateasync) with custom validation functions.
 
 ## Localizing validation messages
 

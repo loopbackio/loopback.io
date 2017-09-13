@@ -22,7 +22,7 @@ In some cases, you may want to partition users into multiple namespaces so that 
 * Each application is a unique realm and each user belongs to an application (via a realm). 
 
 Each application or user instance still has a unique ID across realms. When an application/user is signed up, it can be assigned to a realm.
-The [`User.login()`](http://apidocs.strongloop.com/loopback/#user-login) function:
+The [`User.login()`](http://apidocs.loopback.io/loopback/#user-login) function:
 
 * Honors the realm property from the user credential.
 * Allows the realm to be extracted from the prefix of username/email.

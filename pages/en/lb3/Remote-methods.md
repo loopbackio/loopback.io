@@ -28,7 +28,7 @@ To add a remote method to a model:
 1.  Register the remote method one of these two ways:
    - Register using JSON in the [model definition JSON file](Model-definition-JSON-file.html).
    For more information, see [Registering a remote method in JSON](#registering-a-remote-method-in-json).
-   - Register using JavaScript code in the [model extension file](Model-extension-file.html)  calling [`remoteMethod()`](http://apidocs.strongloop.com/loopback/#model-remotemethod).
+   - Register using JavaScript code in the [model extension file](Model-extension-file.html)  calling [`remoteMethod()`](http://apidocs.loopback.io/loopback/#model-remotemethod).
    For more information, see [Registering a remote method in code](#registering-a-remote-method-in-code).
 
 ### Example
@@ -78,7 +78,7 @@ There are two ways to register a remote method:
 
 ### Registering a remote method in code
 
-LoopBack models have a [`remoteMethod()`](http://apidocs.strongloop.com/loopback/#model-remotemethod) static method that you use to register a remote method:
+LoopBack models have a [`remoteMethod()`](http://apidocs.loopback.io/loopback/#model-remotemethod) static method that you use to register a remote method:
 
 ```javascript
 Model.remoteMethod(requestHandlerFunctionName, [options])
@@ -212,7 +212,7 @@ module.exports = function(YourModel) {
 ## Formatting remote method responses
 
 You can reformat the response returned by all remote methods by adding a [boot script](Defining-boot-scripts.html) 
-that modifies the object returned by [`app.remotes()`](http://apidocs.strongloop.com/loopback/#app-remotes) as follows:
+that modifies the object returned by [`app.remotes()`](http://apidocs.loopback.io/loopback/#app-remotes) as follows:
 
 {% include code-caption.html content="/server/boot/hook.js" %}
 ```javascript
@@ -233,5 +233,5 @@ module.exports = function(app) {
 
 To disable a remote method use `Model.disableRemoteMethod(name, isStatic)` and `Model.disableRemoteMethodByName(name)`.  For more information, see:
 
-- [Model.disableRemoteMethod](http://apidocs.strongloop.com/loopback/#model-disableremotemethod)
-- [Model.disableRemoteMethodByName](http://apidocs.strongloop.com/loopback/#model-disableremotemethodbyname)
+- [Model.disableRemoteMethod](http://apidocs.loopback.io/loopback/#model-disableremotemethod)
+- [Model.disableRemoteMethodByName](http://apidocs.loopback.io/loopback/#model-disableremotemethodbyname)

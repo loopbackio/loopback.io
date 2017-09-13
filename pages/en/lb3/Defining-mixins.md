@@ -25,21 +25,21 @@ You can apply mixins to any model, including [built-in models](Extending-built-
 
 **Basic model**
 
-By default, the basic LoopBack [Model object](http://apidocs.strongloop.com/loopback/#model) has properties and methods "mixed in" from:
+By default, the basic LoopBack [Model object](http://apidocs.loopback.io/loopback/#model) has properties and methods "mixed in" from:
 
-* [Inclusion object](http://apidocs.strongloop.com/loopback-datasource-juggler/#inclusion) - Enables you to load relations of several objects and optimize numbers of requests.
-* [Validateable object](http://apidocs.strongloop.com/loopback-datasource-juggler/#validatable) - provides validation methods.
+* [Inclusion object](http://apidocs.loopback.io/loopback-datasource-juggler/#inclusion) - Enables you to load relations of several objects and optimize numbers of requests.
+* [Validateable object](http://apidocs.loopback.io/loopback-datasource-juggler/#validatable) - provides validation methods.
   See [Validating model data](Validating-model-data.html).
 
-When you define relations between models, the [RelationMixin object](http://apidocs.strongloop.com/loopback-datasource-juggler/#relationmixin) object also gets mixed in to the model object.
+When you define relations between models, the [RelationMixin object](http://apidocs.loopback.io/loopback-datasource-juggler/#relationmixin) object also gets mixed in to the model object.
 
 **Connected model**
 
 In addition to the methods of the [Basic model object](Basic-model-object.html),
 the following are mixed in when a model is connected to a data source:
 
-* [RelationMixin class](http://apidocs.strongloop.com/loopback-datasource-juggler/#relationmixin)
-* [PersistedModel class](http://apidocs.strongloop.com/loopback/#persistedmodel)
+* [RelationMixin class](http://apidocs.loopback.io/loopback-datasource-juggler/#relationmixin)
+* [PersistedModel class](http://apidocs.loopback.io/loopback/#persistedmodel)
 
 ## Create a mixin script
 
@@ -62,7 +62,7 @@ For example:
 
 {% include warning.html content="
 
-The `defineProperty` method below is from [loopback-datasource-juggler's `ModelBaseClass`](http://apidocs.strongloop.com/loopback-datasource-juggler/#modelbaseclass-defineproperty),
+The `defineProperty` method below is from [loopback-datasource-juggler's `ModelBaseClass`](http://apidocs.loopback.io/loopback-datasource-juggler/#modelbaseclass-defineproperty),
 which is _not the same_ as JavaScript's
 [`Object.defineProperty`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperty).
 " %}

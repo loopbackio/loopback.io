@@ -66,9 +66,9 @@ Promise support in LoopBack is still in progress. The following are complete:
 * loopback-datasource-juggler methods like `automigrate`, `autoupdate`, `discover*`, etc.
 * The following [built-in models](Using-built-in-models.html) support the promises API:
 
-    * [User](https://apidocs.strongloop.com/loopback/#user) 
-    * [Application](https://apidocs.strongloop.com/loopback/#application) 
-    * [PersistedModel](https://apidocs.strongloop.com/loopback/#persistedmodel) 
+    * [User](https://apidocs.loopback.io/loopback/#user) 
+    * [Application](https://apidocs.loopback.io/loopback/#application) 
+    * [PersistedModel](https://apidocs.loopback.io/loopback/#persistedmodel) 
 
 See [LoopBack issue #418](https://github.com/strongloop/loopback/issues/418#issue-38984704) for details.
 
@@ -100,7 +100,7 @@ If using CoffeeScript, make sure your models don't accidentally return a Promise
 
 " %}
 
-For example, here is how you would call a CRUD operation on a model that extends [PersistedModel](https://apidocs.strongloop.com/loopback/#persistedmodel) with standard callbacks:
+For example, here is how you would call a CRUD operation on a model that extends [PersistedModel](https://apidocs.loopback.io/loopback/#persistedmodel) with standard callbacks:
 
 ```javascript
 MyModel.find(function(err, result){

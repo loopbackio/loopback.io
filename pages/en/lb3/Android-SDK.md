@@ -14,7 +14,7 @@ summary: The Android SDK provides a simple Java API that enables an Android app 
 
 {% include see-also.html content="
 * [Download Android SDK](http://81b70ddedaf4b27b1592-b5e75689411476c98957e7dab0242f50.r56.cf2.rackcdn.com/loopback-sdk-android-1.5.3-eclipse-bundle.zip)
-* [Android SDK API docs](http://apidocs.strongloop.com/loopback-sdk-android/api/index.html)
+* [Android SDK API docs](http://apidocs.loopback.io/loopback-sdk-android/api/index.html)
 * [loopback-android-getting-started](https://github.com/strongloop/loopback-android-getting-started)
 " %}
 
@@ -198,7 +198,7 @@ Follow these steps to add LoopBack SDK to your Eclipse project:
 
 ### Working with the SDK
 
-For the complete API documentation, see [LoopBack Android API](http://apidocs.strongloop.com/loopback-sdk-android/api/index.html).
+For the complete API documentation, see [LoopBack Android API](http://apidocs.loopback.io/loopback-sdk-android/api/index.html).
 
 1.  You need an adapter to tell the SDK where to find the server:
 
@@ -219,7 +219,7 @@ For the complete API documentation, see [LoopBack Android API](http://apidocs.s
 
 3.  You can now start working with your model through the generic Model object.
     Continue below to learn how to extend the `Model` Java object to directly match, and thus provide the strongly-typed interface for interaction with, your own `Model`'s members.
-    Check out the [LoopBack Android API docs](http://apidocs.strongloop.com/loopback-sdk-android/api/index.html) 
+    Check out the [LoopBack Android API docs](http://apidocs.loopback.io/loopback-sdk-android/api/index.html) 
     or create more Models with the [Model generator](Model-generator.html).
 
 ## Creating your own LoopBack model
@@ -373,9 +373,9 @@ pencil.destroy(new VoidCallback() {
 
 The LoopBack Android SDK provides classes that make it easy to connect an Android client app to a server application using LoopBack's authentication and authorization model: 
 
-* [User](http://apidocs.strongloop.com/loopback-sdk-android/api/index.html?com/strongloop/android/loopback/User.html): represents on the client a user instance on the server.
-* [UserRepository](http://apidocs.strongloop.com/loopback-sdk-android/api/index.html?com/strongloop/android/loopback/UserRepository.html): 
-  base class implementing [`ModelRepository`](http://apidocs.strongloop.com/loopback-sdk-android/api/com/strongloop/android/loopback/ModelRepository.html) for the built-in User type.
+* [User](http://apidocs.loopback.io/loopback-sdk-android/api/index.html?com/strongloop/android/loopback/User.html): represents on the client a user instance on the server.
+* [UserRepository](http://apidocs.loopback.io/loopback-sdk-android/api/index.html?com/strongloop/android/loopback/UserRepository.html): 
+  base class implementing [`ModelRepository`](http://apidocs.loopback.io/loopback-sdk-android/api/com/strongloop/android/loopback/ModelRepository.html) for the built-in User type.
 
 See [Authentication, authorization, and permissions](Authentication-authorization-and-permissions.html) for instructions how to enable authentication in your LoopBack server.
 

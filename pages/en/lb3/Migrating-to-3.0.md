@@ -304,7 +304,7 @@ Instead of listening for these events, use [Operation Hooks](Operation-hooks.htm
 ### Replace calls to `PersistedModel.updateOrCreate()` with array argument
 
 `PersistedModel.updateOrCreate` no longer accepts an array as input to create a
-new model instance.  Instead, use  `[PersistedModel.create()](http://apidocs.strongloop.com/loopback/#persistedmodel-create)`.
+new model instance.  Instead, use  `[PersistedModel.create()](http://apidocs.loopback.io/loopback/#persistedmodel-create)`.
 To perform a bulk `updateOrCreate()`, use `async.each` or `Promise.all` to
 repeatedly call `updateOrCreate()` for each model instance.
 

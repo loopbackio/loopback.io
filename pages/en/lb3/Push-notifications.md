@@ -13,7 +13,7 @@ summary: Push notifications enable server applications to send information to mo
 {% include content/strongloop-labs.html lang=page.lang %}
 
 {% include see-also.html content="
-* [API reference](http://apidocs.strongloop.com/loopback-component-push)
+* [API reference](http://apidocs.loopback.io/loopback-component-push)
 * [Example server application](https://github.com/strongloop/loopback-example-push/tree/master/loopback-2.x)
 * [Example iOS app](https://github.com/strongloop/loopback-example-push/tree/master/ios)
 * [Example Android app](https://github.com/strongloop/loopback-example-push/tree/master/android)
@@ -156,7 +156,7 @@ To send push notifications, you must create a push model. The database is used t
 #### Register a mobile application
 
 The mobile application needs to register with LoopBack so it can have an identity for the application and corresponding settings for push services. 
-Use the Application model's [`register()`](http://apidocs.strongloop.com/loopback/#application-register) function for sign-up. 
+Use the Application model's [`register()`](http://apidocs.loopback.io/loopback/#application-register) function for sign-up. 
 
 For information on getting API keys, see:
 
@@ -328,9 +328,9 @@ Most likely, the mobile application registers the device with LoopBack using RES
 
 LoopBack provides two Node.js methods to select devices and send notifications to them:
 
-* [`notifyById()`](http://apidocs.strongloop.com/loopback-component-push/#pushmanagernotifybyidinstallationid-notification-cb):
+* [`notifyById()`](http://apidocs.loopback.io/loopback-component-push/#pushmanagernotifybyidinstallationid-notification-cb):
   Select a device by registration ID and send a notification to it.
-* [`notifyByQuery()`](http://apidocs.strongloop.com/loopback-component-push/#pushmanagernotifybyqueryinstallationquery-notification-cb):
+* [`notifyByQuery()`](http://apidocs.loopback.io/loopback-component-push/#pushmanagernotifybyqueryinstallationquery-notification-cb):
   Get a list of devices using a query (same as the **where** property for `Installation.find()`) and send a notification to all of them.
 
 For example, the code below creates a custom endpoint to send out a dummy notification for the selected device:
@@ -366,7 +366,7 @@ var Notification = app.models.notification;
 ```
 
 To select a list of devices by query, use the 
-[`PushManager.notifyByQuery()`](http://apidocs.strongloop.com/loopback-component-push/#pushmanager-prototype-notifybyquery), for example:
+[`PushManager.notifyByQuery()`](http://apidocs.loopback.io/loopback-component-push/#pushmanager-prototype-notifybyquery), for example:
 
 ```javascript
 PushManager.notifyByQuery({userId: {inq: selectedUserIds}}, note, function(err) {

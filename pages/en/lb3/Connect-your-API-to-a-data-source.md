@@ -172,7 +172,7 @@ module.exports = function(app) {
 
 This will save some test data to the data source.
 
-{% include note.html content="The boot script containing the auto-migration command will run _each time_ you run your application. Since [`automigrate()`](http://apidocs.strongloop.com/loopback-datasource-juggler/#datasource-prototype-automigrate) first drops tables before trying to create new ones, it won't create duplicate tables.
+{% include note.html content="The boot script containing the auto-migration command will run _each time_ you run your application. Since [`automigrate()`](http://apidocs.loopback.io/loopback-datasource-juggler/#datasource-prototype-automigrate) first drops tables before trying to create new ones, it won't create duplicate tables.
 " %}
 
 Now run the application:

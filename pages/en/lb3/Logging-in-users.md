@@ -14,7 +14,7 @@ summary: The built-in User model provides methods to log in a user, log out a us
 
 ### Logging in
 
-Login (authenticate) a user by calling the [`User.login()`](http://apidocs.strongloop.com/loopback/#user-login) method and providing an object
+Login (authenticate) a user by calling the [`User.login()`](http://apidocs.loopback.io/loopback/#user-login) method and providing an object
 containing `password` and `email or username` properties as the first parameter. The method returns an access token.
 
 This example creates a route in [boot script](Defining-boot-scripts.html) to handle login request:
@@ -47,7 +47,7 @@ app.post('/login', function(req, res) {
 ```
 
 {% include important.html content="
-[`User.login()`](http://apidocs.strongloop.com/loopback/#user-login) has an optional second parameter that is a string or an array of strings.
+[`User.login()`](http://apidocs.loopback.io/loopback/#user-login) has an optional second parameter that is a string or an array of strings.
 Pass in \"user\" for this parameter to include the user information.
 For REST apis, using _?include=user_.
 " %}
@@ -113,7 +113,7 @@ See [User REST API](User-REST-API.html#log-in-user) for more information.
 
 ### Logging out
 
-Use the [`User.logout()`](http://apidocs.strongloop.com/loopback/#user-logout) method to log out a user, providing the user's access token as the parameter.
+Use the [`User.logout()`](http://apidocs.loopback.io/loopback/#user-logout) method to log out a user, providing the user's access token as the parameter.
 
 In the example below, a route to handle logout request is created:
 
@@ -151,7 +151,7 @@ See [User REST API](User-REST-API.html#log-out-user) for more information.
 
 ## Resetting a user's password
 
-Use the [`User.resetPassword()`](http://apidocs.strongloop.com/loopback/#user-resetpassword) method to reset a user's password.
+Use the [`User.resetPassword()`](http://apidocs.loopback.io/loopback/#user-resetpassword) method to reset a user's password.
 This method creates a short-lived access token for temporary login that allows users to change passwords if forgotten.
 
 For example, in [routes.js](https://github.com/strongloop/loopback-example-user-management/blob/master/server/boot/routes.js)
@@ -209,7 +209,7 @@ user.on('resetPasswordRequest', function(info) {
 ```
 
 And when the user follows a link to reset password, temporary access token is used to find the user and update password using 
-[`updateAttribute()`](https://apidocs.strongloop.com/loopback/#persistedmodel-prototype-updateattribute) method as follows:
+[`updateAttribute()`](https://apidocs.loopback.io/loopback/#persistedmodel-prototype-updateattribute) method as follows:
 
 {% include code-caption.html content="/server/boot/routes.js" %}
 ```javascript

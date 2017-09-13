@@ -18,7 +18,7 @@ The memory connector supports:
 
 * Standard query and create, read, update, and delete operations, so you can test models against an in-memory data source.
 * Geo-filtering when using the `find()` operation with an attached model.
-  See [GeoPoint class](http://apidocs.strongloop.com/loopback-datasource-juggler/#geopoint) for more information on geo-filtering.
+  See [GeoPoint class](http://apidocs.loopback.io/loopback-datasource-juggler/#geopoint) for more information on geo-filtering.
 
 {% include important.html content="
 The memory connector is designed for development and testing of a single-process application without setting up a database.  It cannot be used in a cluster as the worker processes will have their own isolated data not shared in the cluster.
