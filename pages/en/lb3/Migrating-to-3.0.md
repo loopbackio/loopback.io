@@ -453,8 +453,7 @@ so you must set up and configure application CORS policies explicitly.
 {% include tip.html content="Projects scaffolded with a recent version StrongLoop/LoopBack tools already have the global CORS handler configured in `server/middleware.json`.
 " %}
 
-Otherwise, to enable CORS and allow cross-site requests to your LoopBack application,
-follow these steps:
+If your application was created with an earlier version of the tools, then you will need to enable CORS manually; Follow these steps:
 
  1. Install the `cors` middleware package:
 
@@ -482,7 +481,7 @@ follow these steps:
     }
     ```
 
- 3. Edit the `remoting` section in your `server/config.json` and set `cors` to `false`:
+ 3. Disable remoting-level CORS.  Edit the `remoting` section in your `server/config.json` and set `cors` to `false`:
 
     ```js
     {
