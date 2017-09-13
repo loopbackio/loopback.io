@@ -63,4 +63,4 @@ Some of the examples use ES6 syntax. We encourage you to get familiar with ES6 c
 
 ### LoopBack 3 vs LoopBack 4
 
-See [Differences between LoopBack v3 and v4](LB-3-vs-4.html).
+See [Differences between LoopBack v3 and v4](Migration-guide.html#lb3-vs-lb4).

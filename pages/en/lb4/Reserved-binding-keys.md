@@ -2,72 +2,101 @@
 lang: en
 title: 'Reserved binding keys'
 keywords: LoopBack 4.0, LoopBack-Next
+toc_level: 1
 tags:
 sidebar: lb4_sidebar
 permalink: /doc/en/lb4/Reserved-binding-keys.html
 summary:
 ---
-Since [Dependency Injection](Dependency-injection.html) was introduced in LoopBack-Next, here some things to keep in mind when using it with regards to binding keys.
+## Overview
 
-Different packages and components for LoopBack-Next may have some binding already defined. You can change the default behaviour by overriding the default binding, but you must ensure the interface of the new Binding is the same as the default (but behaviour can be different).
+When using [dependency injection](Dependency-injection.html) there are a few things to keep in mind with regards to binding keys.
 
-Following is a list that documents the binding keys in use by various `@loopback` packages and their `Type` so you can easily look at their interface in the [API Docs]().
+Different packages and components for LoopBack-Next may have some bindings already defined. You can change the default behavior by overriding the default binding, but you must ensure the interface of the new binding is the same as the default (but behavior can be different).
 
-It is recommended to use the CONSTANT defined for each Binding Key in it's respective namespace. You can import a namespace and access the binding key in your application as follows:
+Following is a list that documents the binding keys in use by various `@loopback` packages and their `Type` so you can easily look at their interface in the [API Docs](http://apidocs.loopback.io).
 
-```
+It is recommended to use the CONSTANT defined for each binding key in it's respective namespace. You can import a namespace and access the binding key in your application as follows:
+
+```js
 import { BindingKeyNameSpace } from 'package-name';
 app.bind(BindKeyNameSpace.KeyName).to('value');
 ```
 
-**Note for declaring new binding keys**
+{% include note.html title="Declaring new binding keys" content="For component developers creating a new Binding, to avoid conflict with other packages, it is recommended that the binding key start with the package name as the prefix. Example: `@loopback/authentication` component uses the prefix `authentication` for its binding keys.
+" %}
 
-For component developers creating new Binding, to avoid conflict with other packages, it is recommended that the binding key start with the package name as the prefix. Example: `@loopback/authentication` component uses the prefix `authentication` for it's binding keys.
+## Package: authentication
 
----
+**Reserved prefixes:**  
 
-# Package: authentication
-## Reserved Prefix
-* `authentication.*`
+```
+authentication.*
+```
 
-## CONSTANT Namespace
-`import { AuthenticationBindings } from '@loopback/authentication'`
+### CONSTANT Namespace
 
-## Binding Keys
-### Sequence Actions Bindings Keys
-|Name|CONSTANT|Type|Description|
+```js
+import { AuthenticationBindings } from '@loopback/authentication'
+```
+
+### Binding keys
+
+**Sequence Actions binding keys**
+
+|Name|CONSTANT|`Type        `|Description|
 |---|---|---|---|
 |`authentication.actions.authenticate`|`AUTH_ACTION`|`AuthenticateFn`|Provides the authenticate function to be called in Sequence action.|
 
-### Other Binding Keys
+**Other binding keys**
+
 |Name|CONSTANT|Type|Description|
 |---|---|---|---|
 |`authentication.currentUser`|`CURRENT_USER`|`UserProfile`|Authenticated user profile for the current request|
 |`authentication.operationMetadata`|`METADATA`|`AuthenticationMetadata`|Authentication Metadata|
 |`authentication.strategy`|`STRATEGY`|`Strategy`|Provider for a [passport](http://passportjs.org/) strategy|
 
-# Package: context
-## Reserved Prefix
-* `context.*`
+## Package: context
 
-## Binding Keys
+**Reserved prefixes:**
+
+```
+context.*
+```
+
+### Binding keys
+
 _None_
 
-# Package: core
-## Reserved Prefixes
-* `core.*`
-* `controllers.*`
+## Package: core
 
-## CONSTANT Namespace
-`import { CoreBindings } from '@loopback/authentication'`
+**Reserved prefixes:**
 
-## Binding Keys
-### Sequence Actions Binding Keys
-To use the Sequence Actions CONSTANT's, bind/inject to `CoreBindings.SequenceActions.CONSTANT` *OR*
 ```
+core.*
+```
+
+```
+controllers.*
+```
+
+### CONSTANT Namespace
+
+```js
+import { CoreBindings } from '@loopback/authentication'
+```
+
+### Binding keys
+
+**Sequence Actions binding keys**
+
+To use the Sequence Actions CONSTANT's, bind/inject to `CoreBindings.SequenceActions.CONSTANT` *OR*
+
+```js
 const SequenceActions = CoreBindings.SequenceActions;
 SequenceActions.CONSTANT // CONSTANT to bind/inject
 ```
+
 |Name|CONSTANT|Type|Description|
 |---|---|---|---|
 |`sequence.actions.findRoute`|`FIND_ROUTE`|`FindRoute`|Sequence action to find the route for a given request|
@@ -77,7 +106,8 @@ SequenceActions.CONSTANT // CONSTANT to bind/inject
 |`sequence.actions.reject`|`REJECT`|`Reject`|Sequence action to reject the request with an error|
 |`sequence.actions.send`|`SEND`|`Send`|Sequence action to send the response back to client|
 
-### Other Binding Keys
+**Other binding keys**
+
 |Name|CONSTANT|Type|Description|
 |---|---|---|---|
 |`application.apiSpec`|`API_SPEC`|`OpenApiSpec`|OpenAPI Specification describing your application's routes|
@@ -86,7 +116,7 @@ SequenceActions.CONSTANT // CONSTANT to bind/inject
 |`controllers.${controller.name}`||`ControllerClass`|The controller's bound to the application|
 |`controller.current.ctor`|`CONTROLLER_CLASS`|`ControllerClass`|The controller for the current request|
 |`controller.current.operation`|`CONTROLLER_METHOD_NAME`|`string`|Name of the operation for the current request|
-|`controller.method.meta`|`CONTROLLER_METHOD_META`|ControllerMetaData|Metadata for a given controller|
+|`controller.method.meta`|`CONTROLLER_METHOD_META`|`ControllerMetaData`|Metadata for a given controller|
 |`getFromContext`|`GET_FROM_CONTEXT`|`GetFromContext`|Convenience provider function to return the `BoundValue` from the `Context`|
 |`http.handler`|`HTTP_HANDLER`|`HttpHandler`|The HTTP Request Handler|
 |`http.port`|`HTTP_PORT`|`number`|HTTP Port the application will run on|
@@ -96,37 +126,63 @@ SequenceActions.CONSTANT // CONSTANT to bind/inject
 |`routes.${route.verb}.${route.path}`||`RouteEntry`|Route entry specified in api-spec|
 |`sequence`|`SEQUENCE`|`SequenceHandler`|Class that implements the sequence for your application|
 
-# Package: openapi-spec
-## Reserved Prefix
-* `api-spec.*`
+## Package: openapi-spec
 
-## Binding Keys
+**Reserved prefixes:**
+
+```
+api-spec.*
+```
+
+### Binding keys
 _None_
 
-# Package: openapi-spec-builder
-## Reserved Prefix
-* `spec-builder.*`
+## Package: openapi-spec-builder
 
-## Binding Keys
+**Reserved prefixes:**
+
+```
+spec-builder.*
+```
+
+### Binding keys
 _None_
 
-# Package: repository
-## Reserved Prefixes
-* `repository.*`
-* `repositories.*`
-* `datasources.*`
-* `models.*`
+## Package: repository
 
-## Binding Keys
+**Reserved prefixes:**
+
+```
+repository.*
+```
+
+```
+repositories.*`
+```
+
+```
+datasources.*
+```
+
+```
+models.*
+```
+
+### Binding keys
+
 |Name|CONSTANT|Type|Description|
 |---|---|---|---|
 |`datasources.${dataSourceName}`||`DataSource`|Instance of a given datasource|
 |`models.${modelName}`||`Model`|Instance of a given model|
 |`repositories.${repositoryName}`||`Repository`|Instance of a given repository|
 
-# Package: testlab
-## Reserved Prefix
-* `testlab.*`
+## Package: testlab
 
-## Binding Keys
+**Reserved prefixes:**
+
+```
+testlab.*
+```
+
+### Binding keys
 _None_

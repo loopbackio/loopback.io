@@ -1070,6 +1070,9 @@ table thead th code.highlighter-rouge {
     background-color: transparent;
 }
 
+td code.highlighter-rouge {
+  white-space: nowrap;
+}
 
 .box {
     padding: 10px;
