@@ -41,7 +41,7 @@ boot(app, __dirname, function(err) {
 });
 ```
 
-See [loopback-boot API docs](http://apidocs.strongloop.com/loopback-boot/) for details. 
+See [loopback-boot API docs](http://apidocs.loopback.io/loopback-boot/) for details. 
 
 {% include note.html content="If you create your application with the [application generator](Application-generator.html) ,
 then you don't need to do anything to bootstrap your application--the above code is automatically scaffolded for you!
@@ -52,7 +52,7 @@ then you don't need to do anything to bootstrap your application--the above code
 Use _boot scripts_ to perform custom initialization in addition to that performed by the LoopBack bootstrapper.
 When an application starts, LoopBack loads all the scripts in the `server/boot` directory.
 By default, LoopBack loads boot scripts in alphabetical order.
-You can customize the boot script load order using the options argument of [boot()](http://apidocs.strongloop.com/loopback-boot/#boot).
+You can customize the boot script load order using the options argument of [boot()](http://apidocs.loopback.io/loopback-boot/#boot).
 See [Boot script loading order](#boot-script-loading-order) for details.
 
 ## Predefined boot scripts
@@ -60,17 +60,17 @@ See [Boot script loading order](#boot-script-loading-order) for details.
 The [application generator](Application-generator.html) creates the following boot scripts:
 
 
-* `/server/boot/root.js` binds [loopback.status()](http://apidocs.strongloop.com/loopback/#loopback-status) middleware
+* `/server/boot/root.js` binds [loopback.status()](http://apidocs.loopback.io/loopback/#loopback-status) middleware
 at the root endpoint ("/") to provide basic status information.
 * `/server/boot/authentication.js` - enables authentication for the application by calling
-[app.enableAuth()](http://apidocs.strongloop.com/loopback/#app-enableauth).
+[app.enableAuth()](http://apidocs.loopback.io/loopback/#app-enableauth).
 
 ### Earlier versions
 
 Prior to `generator-loopback` v. 1.12, the application generator created two additional boot scripts, but this functionality is now handled in middleware:
 
 * `explorer.js` - Enables [API Explorer](Use-API-Explorer.html). 
-* `rest-api.js` - Exposes the application's models over REST using [`loopback.rest()`](http://apidocs.strongloop.com/loopback/#loopback-rest) middleware.
+* `rest-api.js` - Exposes the application's models over REST using [`loopback.rest()`](http://apidocs.loopback.io/loopback/#loopback-rest) middleware.
 
 ### API Connect
 
@@ -207,7 +207,7 @@ For example before default boot scripts in `/server/boot`. 
 {% include note.html content="LoopBack processes boot scripts alphabetically, one at a time (not in parallel).  This applies to both synchronous and asynchronous boot scripts.
 " %}
 
-You can also specify the loading order with options to the [`boot()`](http://apidocs.strongloop.com/loopback-boot/#boot) function call in `/server/server.js`.
+You can also specify the loading order with options to the [`boot()`](http://apidocs.loopback.io/loopback-boot/#boot) function call in `/server/server.js`.
 Replace the default scaffolded function call:
 
 {% include code-caption.html content="/server/server.js" %}

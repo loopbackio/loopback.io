@@ -57,7 +57,7 @@ The general process to implement access control for an application is:
 Applications created with the LoopBack [application generator](Application-generator.html)
 have access control enabled by default, _except_ for the "empty-server" application type.
 To enable access control for an "empty-server" application, add a boot
-script that calls [`enableAuth()`](https://apidocs.strongloop.com/loopback/#app-enableauth); for example:
+script that calls [`enableAuth()`](https://apidocs.loopback.io/loopback/#app-enableauth); for example:
 
 {% include code-caption.html content="server/boot/authentication.js" %}
 ```javascript
@@ -269,7 +269,7 @@ app.use(loopback.token({
 Pay attention to the following methods and parameters impacted by the switch to multiple user models support.
 " %}
 
-Anytime a method is expecting the **principalType** for a principal of the `User` type (as-is or nested in an [AccessContext](https://apidocs.strongloop.com/loopback/#accesscontext) object), provide the name of the targeted `user` model name (e.g. `'oneCustomUserModelName'`) instead of the usual `Principal.USER` (or `'USER'`).<br>
+Anytime a method is expecting the **principalType** for a principal of the `User` type (as-is or nested in an [AccessContext](https://apidocs.loopback.io/loopback/#accesscontext) object), provide the name of the targeted `user` model name (e.g. `'oneCustomUserModelName'`) instead of the usual `Principal.USER` (or `'USER'`).<br>
 Such methods include: `Role.getRoles()` and `Role.isInRole()`. For example:
 
 ```javascript
@@ -312,7 +312,7 @@ To expose a model over REST, set the `public` property to true in `/server/mode
 ### Hiding methods and REST endpoints
 
 If you don't want to expose certain create, retrieve, update, and delete operations, you can easily hide them by calling 
-[`disableRemoteMethodByName()`](https://apidocs.strongloop.com/loopback/#model-disableremotemethodbyname) on the model. 
+[`disableRemoteMethodByName()`](https://apidocs.loopback.io/loopback/#model-disableremotemethodbyname) on the model. 
 For example, following the previous example, by convention custom model code would go in the file `common/models/location.js`.
 You would add the following lines to "hide" one of the predefined remote methods:
 
@@ -382,7 +382,7 @@ Product.disableRemoteMethodByName('createChangeStream'); // Removes (GET|POST) /
 
 ### Hiding endpoints for related models
 
-To disable REST endpoints for related model methods, use [disableRemoteMethodByName()](https://apidocs.strongloop.com/loopback/#model-disableremotemethodbyname).
+To disable REST endpoints for related model methods, use [disableRemoteMethodByName()](https://apidocs.loopback.io/loopback/#model-disableremotemethodbyname).
 
 {% include note.html content="For more information, see [Accessing related models](Accessing-related-models.html).
 " %}

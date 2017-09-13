@@ -18,7 +18,7 @@ LoopBack provides useful built-in models for common use cases:
 * **[Access control models](#access-control-models)** - ACL, AccessToken, Scope, Role, and RoleMapping models for controlling access to applications, resources, and methods.
 * **Email model (see [email connector](Email-connector.html))** - send emails to your app users using SMTP or third-party services.
 
-The built-in models (except for Email) extend [PersistedModel](http://apidocs.strongloop.com/loopback/#persistedmodel),
+The built-in models (except for Email) extend [PersistedModel](http://apidocs.loopback.io/loopback/#persistedmodel),
 so they automatically have a full complement of create, update, and delete (CRUD) operations.
 
 {% include note.html content="
@@ -28,7 +28,7 @@ See [Exposing models](Exposing-models-over-REST.html) for more information. **Us
 
 ## Application model
 
-Use the [Application model](http://apidocs.strongloop.com/loopback/#application-new-application) to manage client applications and organize their users.
+Use the [Application model](http://apidocs.loopback.io/loopback/#application-new-application) to manage client applications and organize their users.
 
 The default model definition file is [common/models/application.json](https://github.com/strongloop/loopback/blob/master/common/models/application.json) in the LoopBack repository.
 
@@ -45,11 +45,11 @@ For more information, see [Managing users](Managing-users.html).
 
 Use access control models to control access to applications, resources, and methods. These models include:
 
-* [ACL](http://apidocs.strongloop.com/loopback/#acl)
-* [AccessToken](http://apidocs.strongloop.com/loopback/#accesstoken)
-* [Scope](http://apidocs.strongloop.com/loopback/#scope)
-* [Role](http://apidocs.strongloop.com/loopback/#role-object)
-* [RoleMapping](http://apidocs.strongloop.com/loopback/#rolemapping)
+* [ACL](http://apidocs.loopback.io/loopback/#acl)
+* [AccessToken](http://apidocs.loopback.io/loopback/#accesstoken)
+* [Scope](http://apidocs.loopback.io/loopback/#scope)
+* [Role](http://apidocs.loopback.io/loopback/#role-object)
+* [RoleMapping](http://apidocs.loopback.io/loopback/#rolemapping)
 
 ### ACL model
 

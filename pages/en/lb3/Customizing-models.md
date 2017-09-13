@@ -140,11 +140,11 @@ See [LoopBack types](LoopBack-types.html) for information on data types support
 #### Via server boot script
 
 When you attach a model to a persistent data source, it becomes a _persisted model_ that extends
-[PersistedModel](https://apidocs.strongloop.com/loopback/#persistedmodel),
+[PersistedModel](https://apidocs.loopback.io/loopback/#persistedmodel),
 and LoopBack automatically adds a set of built-in methods for CRUD operations.
 In some cases, you might want to change the implementation; use a JavaScript file in the `/server/boot` directory to do this.
 For example, the following code shows how to reimplement `Note.find()` to override the built-in
-[`find()`](http://apidocs.strongloop.com/loopback/#persistedmodelfindfilter-callback) method.
+[`find()`](http://apidocs.loopback.io/loopback/#persistedmodelfindfilter-callback) method.
 
 {% include code-caption.html content="/server/boot/script.js" %}
 ```javascript

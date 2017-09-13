@@ -136,7 +136,7 @@ In brief:
 
 1.  Configure a datasource to use the [email connector](Email-connector.html).
 2.  Map the built-in `Email` model to the the email datasource.
-3.  Send an email using the configured model with [`Email.send()`](http://apidocs.strongloop.com/loopback/#email-send).
+3.  Send an email using the configured model with [`Email.send()`](http://apidocs.loopback.io/loopback/#email-send).
 
 See [loopback-example-app-logic](https://github.com/strongloop/loopback-example-app-logic#add-an-email-connector) for a short example.
 

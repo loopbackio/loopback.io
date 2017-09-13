@@ -12,7 +12,7 @@ summary:
 ## Overview
 
 Various LoopBack methods accept type descriptions, for example [remote methods](Remote-methods.html) and 
-[dataSource.createModel()](http://apidocs.strongloop.com/loopback-datasource-juggler/#datasource-prototype-createmodel).
+[dataSource.createModel()](http://apidocs.loopback.io/loopback-datasource-juggler/#datasource-prototype-createmodel).
 
 The following table summarizes LoopBack's data types.
 
@@ -58,7 +58,7 @@ The following table summarizes LoopBack's data types.
     <tr>
       <td>GeoPoint</td>
       <td>
-        <p>LoopBack <a href="http://apidocs.strongloop.com/loopback-datasource-juggler/#geopoint" class="external-link" rel="nofollow">GeoPoint</a> object</p>
+        <p>LoopBack <a href="http://apidocs.loopback.io/loopback-datasource-juggler/#geopoint" class="external-link" rel="nofollow">GeoPoint</a> object</p>
       </td>
       <td>
         <pre>new GeoPoint({lat: 10.32424, lng: 5.84978});</pre>
@@ -67,7 +67,7 @@ The following table summarizes LoopBack's data types.
     <tr>
       <td>DateString</td>
       <td>
-        <p>LoopBack<a href="http://apidocs.strongloop.com/loopback-datasource-juggler/#datestring" class="external-link" rel="nofollow"> DateString</a> object</p>
+        <p>LoopBack<a href="http://apidocs.loopback.io/loopback-datasource-juggler/#datestring" class="external-link" rel="nofollow"> DateString</a> object</p>
       </td>
       <td>
         <p><code>"2000-01-01T00:00:00.000Z"</code></p>

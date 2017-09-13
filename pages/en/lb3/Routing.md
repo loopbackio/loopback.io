@@ -106,7 +106,7 @@ Custom phases can be defined in any position of the middleware chain, and may be
 ### Loading middleware
 
 LoopBack middleware are declaratively loaded using the [middleware.json](middleware.json.html) file,
-or imperatively using the [app.middleware()](https://apidocs.strongloop.com/loopback/#app-middleware) method.
+or imperatively using the [app.middleware()](https://apidocs.loopback.io/loopback/#app-middleware) method.
 
 Express middleware can be loaded in the `server.js` file using [`app.use()`](http://expressjs.com/4x/api.html#app.use)
 or a [route definition](http://expressjs.com/4x/api.html#app.METHOD).

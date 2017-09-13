@@ -297,7 +297,7 @@ As documented above, a file uploaded with the same name as an existing file will
 
 ## API
 
-Once you create a container, it will provide both a REST and Node API, as described in the following table. For details, see the complete [API documentation](http://apidocs.strongloop.com/loopback-component-storage/).
+Once you create a container, it will provide both a REST and Node API, as described in the following table. For details, see the complete [API documentation](http://apidocs.loopback.io/loopback-component-storage/).
 
 
 <table >

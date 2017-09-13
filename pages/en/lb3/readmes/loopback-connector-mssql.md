@@ -158,12 +158,12 @@ config = { ... };  // JSON object as specified above in "Connector settings"
 ### Model discovery
 
 The SQL Server connector supports _model discovery_ that enables you to create LoopBack models
-based on an existing database schema using the unified [database discovery API](http://apidocs.strongloop.com/loopback-datasource-juggler/#datasource-prototype-discoverandbuildmodels).  For more information on discovery, see [Discovering models from relational databases](https://loopback.io/doc/en/lb3/Discovering-models-from-relational-databases.html).
+based on an existing database schema using the unified [database discovery API](http://apidocs.loopback.io/loopback-datasource-juggler/#datasource-prototype-discoverandbuildmodels).  For more information on discovery, see [Discovering models from relational databases](https://loopback.io/doc/en/lb3/Discovering-models-from-relational-databases.html).
 
 ### Auto-migratiion
 
 The SQL Server connector also supports _auto-migration_ that enables you to create a database schema
-from LoopBack models using the [LoopBack automigrate method](http://apidocs.strongloop.com/loopback-datasource-juggler/#datasource-prototype-automigrate).
+from LoopBack models using the [LoopBack automigrate method](http://apidocs.loopback.io/loopback-datasource-juggler/#datasource-prototype-automigrate).
 For each model, the LoopBack SQL Server connector creates a table in the 'dbo' schema in the database.
 
 For more information on auto-migration, see [Creating a database schema from models](https://loopback.io/doc/en/lb3/Creating-a-database-schema-from-models.html) for more information.
@@ -341,7 +341,7 @@ See [LoopBack types](http://loopback.io/doc/en/lb3/LoopBack-types.html) for det
     </tr>
     <tr>
       <td>POINT</td>
-      <td><a href="http://apidocs.strongloop.com/loopback-datasource-juggler/#geopoint">GeoPoint</a></td>
+      <td><a href="http://apidocs.loopback.io/loopback-datasource-juggler/#geopoint">GeoPoint</a></td>
     </tr>
     <tr>
       <td>

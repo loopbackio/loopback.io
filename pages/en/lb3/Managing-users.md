@@ -12,7 +12,7 @@ summary: LoopBack's built-in User model provides essential user management featu
 
 ## Overview
 
-LoopBack's built-in [User](http://apidocs.strongloop.com/loopback/#user-new-user) model provides essential user management features such as:
+LoopBack's built-in [User](http://apidocs.loopback.io/loopback/#user-new-user) model provides essential user management features such as:
 
 * Registration and confirmation via email.
 * Login and logout.
@@ -25,9 +25,9 @@ LoopBack's built-in [User](http://apidocs.strongloop.com/loopback/#user-new-user
 
 The basic process to create and authenticate users is:
 
-1.  Register a new user with the [`User.create()`](http://apidocs.strongloop.com/loopback/#persistedmodel-create) method, inherited from the generic `PersistedModel` object.
+1.  Register a new user with the [`User.create()`](http://apidocs.loopback.io/loopback/#persistedmodel-create) method, inherited from the generic `PersistedModel` object.
     See [Registering users](Registering-users.html) for more information.
-2.  Log in a user by calling [`User.login()`](https://apidocs.strongloop.com/loopback/#user-login) to get an access token.
+2.  Log in a user by calling [`User.login()`](https://apidocs.loopback.io/loopback/#user-login) to get an access token.
     See [Logging in users](Logging-in-users.html) for more information.
 3.  Make subsequent API calls using the access token.
     Provide the access token in the HTTP header or as a query parameter to the REST API call, as shown in 
@@ -118,10 +118,10 @@ The built-in User model has the following ACL:
 
 The above ACL denies all operations to everyone, then selectively allows:
 
-* Anyone to [create a new user](http://apidocs.strongloop.com/loopback/#persistedmodel-create) (User instance).
-* Anyone to [log in](http://apidocs.strongloop.com/loopback/#user-login), [log out](http://apidocs.strongloop.com/loopback/#user-logout),
-  [confirm their identity](http://apidocs.strongloop.com/loopback/#user-confirm), and
-  [reset their own password](http://apidocs.strongloop.com/loopback/#user-resetpassword).
+* Anyone to [create a new user](http://apidocs.loopback.io/loopback/#persistedmodel-create) (User instance).
+* Anyone to [log in](http://apidocs.loopback.io/loopback/#user-login), [log out](http://apidocs.loopback.io/loopback/#user-logout),
+  [confirm their identity](http://apidocs.loopback.io/loopback/#user-confirm), and
+  [reset their own password](http://apidocs.loopback.io/loopback/#user-resetpassword).
 * A user to perform deleteById, findById, and updateAttributes on their own User record (instance).
 
 {% include important.html content="

@@ -121,7 +121,7 @@ module.exports = function(server) { // Install a `/` route that returns server s
 };
 ```
 
-This code says that for any GET request to the root URI ("/"), the application will return the results of [`loopback.status()`](http://apidocs.strongloop.com/loopback/#loopbackstatus).
+This code says that for any GET request to the root URI ("/"), the application will return the results of [`loopback.status()`](http://apidocs.loopback.io/loopback/#loopbackstatus).
 
 To make your application serve static content you need to disable this script.  **Either delete it or just rename it** to something without a `.js` ending (that ensures the application won't execute it).
 

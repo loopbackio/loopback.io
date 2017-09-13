@@ -35,8 +35,8 @@ When a LoopBack application starts (or "bootstraps"), it runs the scripts in the
 
 The standard scaffolded LoopBack application created by the [application generator](Application-generator) contains the following standard boot scripts (in `/server/boot`) that perform basic initialization:
 
-*   `authentication.js` - Enables authentication for the application by calling [`app.enableAuth()`](http://apidocs.strongloop.com/loopback/#app-enableauth).
-*   `root.js` - Defines a root route to `/` that returns server status using [`loopback.status()`](https://apidocs.strongloop.com/loopback/#loopback-status) middleware.  You already encountered this in the previous step, when you renamed this file so your app could serve static content.
+*   `authentication.js` - Enables authentication for the application by calling [`app.enableAuth()`](http://apidocs.loopback.io/loopback/#app-enableauth).
+*   `root.js` - Defines a root route to `/` that returns server status using [`loopback.status()`](https://apidocs.loopback.io/loopback/#loopback-status) middleware.  You already encountered this in the previous step, when you renamed this file so your app could serve static content.
 
 For more information on boot scripts, see [Defining boot scripts](Defining-boot-scripts).
 

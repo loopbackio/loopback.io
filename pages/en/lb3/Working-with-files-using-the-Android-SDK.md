@@ -12,7 +12,7 @@ summary:
 
 {% include see-also.html content="
 
-* [Android SDK API docs](http://apidocs.strongloop.com/loopback-sdk-android/api/index.html)
+* [Android SDK API docs](http://apidocs.loopback.io/loopback-sdk-android/api/index.html)
 * [Storage component](Storage-component.html)
 " %}
 
@@ -25,13 +25,13 @@ See [Storage component](Storage-component.html) for information on how to crea
 
 The relevant classes are:
 
-* [`ContainerRepository`](http://apidocs.strongloop.com/loopback-sdk-android/api/index.html?com/strongloop/android/loopback/ContainerRepository.html) 
+* [`ContainerRepository`](http://apidocs.loopback.io/loopback-sdk-android/api/index.html?com/strongloop/android/loopback/ContainerRepository.html) 
   provides methods for creating and querying containers.
-* [`FileRepository`](http://apidocs.strongloop.com/loopback-sdk-android/api/index.html?com/strongloop/android/loopback/FileRepository.html) 
+* [`FileRepository`](http://apidocs.loopback.io/loopback-sdk-android/api/index.html?com/strongloop/android/loopback/FileRepository.html) 
   provides methods for querying existing files and uploading new files.
-* [`Container`](http://apidocs.strongloop.com/loopback-sdk-android/api/index.html?com/strongloop/android/loopback/Container.html) 
+* [`Container`](http://apidocs.loopback.io/loopback-sdk-android/api/index.html?com/strongloop/android/loopback/Container.html) 
   represents an instance of a server-side container and provides shortcuts for some of the `FileRepository` methods.
-* [`File`](http://apidocs.strongloop.com/loopback-sdk-android/api/index.html?com/strongloop/android/loopback/File.html)
+* [`File`](http://apidocs.loopback.io/loopback-sdk-android/api/index.html?com/strongloop/android/loopback/File.html)
   represents an instance of a server-side file, exposes additional metadata like the public URL and provides methods for downloading the file to the Android device.
 
 {% include note.html content="

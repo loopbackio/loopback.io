@@ -9,7 +9,7 @@ summary: LoopBack provides connectors for popular relational and NoSQL database
 ---
 
 LoopBack database connectors implement create, retrieve, update, and delete operations as a common set of methods of
-[PersistedModel](https://apidocs.strongloop.com/loopback/#persistedmodel).
+[PersistedModel](https://apidocs.loopback.io/loopback/#persistedmodel).
 When you attach a model to a data source backed by one of the database connectors, the model automatically acquires the create, retrieve, update, and delete methods from  PersistedModel. 
 The data access methods on a persisted model are exposed to REST by default; see 
 [PersistedModel REST API](PersistedModel-REST-API.html) for the endpoints.

@@ -13,9 +13,9 @@ summary:
 
 The primary LoopBack JavaScript objects are:
 
-* [App](http://apidocs.strongloop.com/loopback/#var-app-loopback) object
-* [Models](http://apidocs.strongloop.com/loopback/#model)
-* [Data sources](http://apidocs.strongloop.com/loopback-datasource-juggler/#define-new-datasource)
+* [App](http://apidocs.loopback.io/loopback/#var-app-loopback) object
+* [Models](http://apidocs.loopback.io/loopback/#model)
+* [Data sources](http://apidocs.loopback.io/loopback-datasource-juggler/#define-new-datasource)
 
 How to get a reference to these objects depends on where the code is
 (in a boot script, in a model JavaScript file `/common/models/model.js`, and so on) as well as which object you want to reference.
@@ -171,7 +171,7 @@ var app = loopback();
 ```
 
 The app object extends the [Express app object;](http://expressjs.com/4x/api.html#application) it inherits all of its properties and methods,
-as well as all the additional properties and methods of the [LoopBack app object](http://apidocs.strongloop.com/loopback/#var-app-loopback).
+as well as all the additional properties and methods of the [LoopBack app object](http://apidocs.loopback.io/loopback/#var-app-loopback).
 
 {% include important.html content="In some places such as boot scripts, `server` is used as the name of this object instead of `app`.
 " %}

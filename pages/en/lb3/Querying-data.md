@@ -44,7 +44,7 @@ In both cases, LoopBack models return JSON.
         Find all model instances using specified filters.
       </td>
       <td>
-        <code><a href="https://apidocs.strongloop.com/loopback/#persistedmodel-find" class="external-link">find(filter, callback)</a></code>
+        <code><a href="https://apidocs.loopback.io/loopback/#persistedmodel-find" class="external-link">find(filter, callback)</a></code>
         Where filter is a JSON object containing the query filters.
         See <a href="Querying-data.html">Filters</a> below.
       </td>
@@ -57,7 +57,7 @@ In both cases, LoopBack models return JSON.
     <tr>
       <td>Find first model instance using specified filters.</td>
       <td>
-        <code><a href="https://apidocs.strongloop.com/loopback/#persistedmodel-findone" class="external-link">findOne(filter, callback)</a></code>
+        <code><a href="https://apidocs.loopback.io/loopback/#persistedmodel-findone" class="external-link">findOne(filter, callback)</a></code>
         Where filter is a JSON object containing the query filters.
         <span>See </span><a href="Querying-data.html">Filters</a> <span> below.</span>
       </td>
@@ -70,7 +70,7 @@ In both cases, LoopBack models return JSON.
     <tr>
       <td>Find instance by ID.</td>
       <td>
-        <code><a href="https://apidocs.strongloop.com/loopback/#persistedmodel-findbyid" class="external-link">findById(id, [filter,] callback)</a></code>
+        <code><a href="https://apidocs.loopback.io/loopback/#persistedmodel-findbyid" class="external-link">findById(id, [filter,] callback)</a></code>
         Where optional filter is a JSON object <span>containing the query filters.</span>
         <span><span>See </span><a href="Querying-data.html">Filters</a> <span> below.</span></span>
 
@@ -126,7 +126,7 @@ Equivalent using REST:
 In both REST and Node API, you can use any number of filters to define a query.
 
 LoopBack supports a specific filter syntax: it's a lot like SQL, but designed specifically to serialize safely without injection and to be native to JavaScript.
-Previously, only the [`PersistedModel.find()`](http://apidocs.strongloop.com/loopback/#persistedmodel-find) method (and related methods) supported this syntax.
+Previously, only the [`PersistedModel.find()`](http://apidocs.loopback.io/loopback/#persistedmodel-find) method (and related methods) supported this syntax.
 
 The following table describes LoopBack's filter types:
 

@@ -106,7 +106,7 @@ This article focuses on building a connector for databases that provide full cr
 
 LoopBack unifies database connectors so that a model can choose to attach to any of the supported database. There are a few classes involved here:
 
-1.  [PersistedModelClass](http://apidocs.strongloop.com/loopback/#persistedmodel) defines all the methods mixed into a model for persistence.
+1.  [PersistedModelClass](http://apidocs.loopback.io/loopback/#persistedmodel) defines all the methods mixed into a model for persistence.
 
 2.  [The DAO facade](https://github.com/strongloop/loopback-datasource-juggler/blob/master/lib/dao.js) maps the PersistedModel methods to connector implementations.
 

@@ -11,7 +11,7 @@ summary: LoopBack generalizes backend services such as databases as data sources
 ---
 ## Overview
 
-LoopBack _data sources_ represent backend systems such as databases, external REST APIs, SOAP web services, and storage services.  Data sources provide create, retrieve, update, and delete (CRUD) functions through the  [DataSource](http://apidocs.strongloop.com/loopback-datasource-juggler/#datasource-new-datasourcename-settings) and [PersistedModel](http://apidocs.strongloop.com/loopback/#persistedmodel-new-persistedmodel) APIs.
+LoopBack _data sources_ represent backend systems such as databases, external REST APIs, SOAP web services, and storage services.  Data sources provide create, retrieve, update, and delete (CRUD) functions through the  [DataSource](http://apidocs.loopback.io/loopback-datasource-juggler/#datasource-new-datasourcename-settings) and [PersistedModel](http://apidocs.loopback.io/loopback/#persistedmodel-new-persistedmodel) APIs.
 
 Data source _connectors_ implement data exchange logic using database drivers or other client APIs.
 

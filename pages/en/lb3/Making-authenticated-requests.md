@@ -11,10 +11,10 @@ summary:
 
 The basic process for an application to create and authenticate users is:
 
-1.  Register a new user with the [`User.create()`](http://apidocs.strongloop.com/loopback/#persistedmodel-create) method,
-    inherited from the [`PersistedModel`](https://apidocs.strongloop.com/loopback/#persistedmodel) object.
+1.  Register a new user with the [`User.create()`](http://apidocs.loopback.io/loopback/#persistedmodel-create) method,
+    inherited from the [`PersistedModel`](https://apidocs.loopback.io/loopback/#persistedmodel) object.
     See [Registering users](Registering-users.html) for details.
-2.  Call [`User.login()`](https://apidocs.strongloop.com/loopback/#user-login) to request an access token from the client application on behalf of the user.
+2.  Call [`User.login()`](https://apidocs.loopback.io/loopback/#user-login) to request an access token from the client application on behalf of the user.
     See [Logging in users](Logging-in-users.html) for details.
 3.  Invoke an API using the access token. Provide the access token in the HTTP header or as a query parameter to the REST API call, as illustrated below.
 

@@ -10,7 +10,7 @@ summary:
 ---
 
 {% include see-also.html content="
-* [Android SDK API docs](http://apidocs.strongloop.com/loopback-sdk-android/api/index.html)
+* [Android SDK API docs](http://apidocs.loopback.io/loopback-sdk-android/api/index.html)
 * [loopback-android-getting-started](https://github.com/strongloop/loopback-android-getting-started)
 " %}
 

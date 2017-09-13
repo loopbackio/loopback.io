@@ -103,7 +103,7 @@ The check for $owner is only performed for a remote method that has ':id' on the
 
 " %}
 
-Use [`Role.registerResolver()`](http://apidocs.strongloop.com/loopback/#role-registerresolver) 
+Use [`Role.registerResolver()`](http://apidocs.loopback.io/loopback/#role-registerresolver) 
 to set up a custom role handler in a [boot script](Defining-boot-scripts.html).
 This function takes two parameters: 
 

@@ -14,7 +14,7 @@ summary:
 When you create a model with the [model generator](Model-generator.html),
 you choose a base model, that is, the model that your model will "extend" and from which it will inherit methods and properties.
 The tool will set the  base property in the [model definition JSON file](Model-definition-JSON-file.html) accordingly.
-For example, for a model that extends [PersistedModel](http://apidocs.strongloop.com/loopback/#persistedmodel):
+For example, for a model that extends [PersistedModel](http://apidocs.loopback.io/loopback/#persistedmodel):
 
 {% include code-caption.html content="/common/models/model.json" %}
 ```
@@ -33,7 +33,7 @@ Use `Model` as the base for models that don't have CRUD semantics, for example
 See [Managing users](Managing-users.html) for more information.
 
 When you extend the built-in User model, use a model name other than \"User\" such as \"customer,\" or \"client\" so it doesn't conflict with the built-in
-[User model](https://apidocs.strongloop.com/loopback/#user). To avoid confusion, it's also best to avoid \"user\" with a lowercase \"u\" .
+[User model](https://apidocs.loopback.io/loopback/#user). To avoid confusion, it's also best to avoid \"user\" with a lowercase \"u\" .
 " %}
 
 See [Customizing models](Customizing-models.html) for general information on how to create a model that extends (or "inherits from") another model.

@@ -38,7 +38,7 @@ All of the endpoints in the table below are inherited from [PersistedModel REST
         <p><a href="PersistedModel-REST-API.html#create-model-instance">Add user instance</a> and persist to data source. Inherited from <a href="PersistedModel-REST-API.html">PersistedModel API</a>.</p>
       </td>
       <td>
-        <p>JSON object (in request body) providing <a href="http://apidocs.strongloop.com/loopback/#user" class="external-link" rel="nofollow">User object properties</a>: <code>username</code>, <code>password</code>, <code>email</code>. LoopBack sets values for <code>emailVerified</code> and <code>verificationToken</code>.</p>
+        <p>JSON object (in request body) providing <a href="http://apidocs.loopback.io/loopback/#user" class="external-link" rel="nofollow">User object properties</a>: <code>username</code>, <code>password</code>, <code>email</code>. LoopBack sets values for <code>emailVerified</code> and <code>verificationToken</code>.</p>
         <p>NOTE: A value for <code>username</code> is not required, but a value for <code>email</code> is. LoopBack validates a unique value for <code>password</code> is provided. LoopBack does not automatically maintain values of the <code>created</code> and <code>lastUpdated</code> properties; you can set them manually if you wish.</p>
       </td>
     </tr>
@@ -150,7 +150,7 @@ All of the endpoints in the table below are inherited from [PersistedModel REST
       <td>GET</td>
       <td>Deny</td>
       <td>
-        <p><a href="http://apidocs.strongloop.com/loopback/#persistedmodel-count" class="external-link" rel="nofollow">Return number of user instances</a>&nbsp;that match specified where clause. Inherited from <a href="http://apidocs.strongloop.com/loopback/#persistedmodel">PersistedModel API</a>.
+        <p><a href="http://apidocs.loopback.io/loopback/#persistedmodel-count" class="external-link" rel="nofollow">Return number of user instances</a>&nbsp;that match specified where clause. Inherited from <a href="http://apidocs.loopback.io/loopback/#persistedmodel">PersistedModel API</a>.
         </p>
       </td>
       <td>"Where" filter specified in query parameter</td>

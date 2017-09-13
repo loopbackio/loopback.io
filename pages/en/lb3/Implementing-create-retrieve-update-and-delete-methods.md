@@ -47,7 +47,7 @@ The result should be one of following forms:
 * `{sql: "'John'", params: []}`
 * `"John"`
 
-The function returns database column value as an [ParameterizedSQL](http://apidocs.strongloop.com/loopback-connector/#parameterizedsql) object
+The function returns database column value as an [ParameterizedSQL](http://apidocs.loopback.io/loopback-connector/#parameterizedsql) object
 
 Parameters are:
 
@@ -82,7 +82,7 @@ Define an `applyPagniation()` method to build a new SQL statement with paginat
 The parameters are:
 
 * `model`: String model name
-* `stmt`: The SQL statement as a [ParameterizedSQL](http://apidocs.strongloop.com/loopback-connector/#parameterizedsql) object.
+* `stmt`: The SQL statement as a [ParameterizedSQL](http://apidocs.loopback.io/loopback-connector/#parameterizedsql) object.
 * `filter` The filter object from the query
 
 ```javascript
@@ -163,7 +163,7 @@ SqlConnector.prototype.getPlaceholderForValue = function(key) {
 
 There are a list of methods that serve as default implementations in the SqlConnector.
 The connector can choose to override such methods to customize the behaviors.
-Please see a complete list at[http://apidocs.strongloop.com/loopback-connector/](http://apidocs.strongloop.com/loopback-connector/).
+Please see a complete list at[http://apidocs.loopback.io/loopback-connector/](http://apidocs.loopback.io/loopback-connector/).
 
 ## Implementing transaction methods
 

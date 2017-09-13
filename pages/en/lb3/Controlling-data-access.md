@@ -37,24 +37,24 @@ Each user type has access to various parts of the app based on their role and th
 
 ### User access types
 
-LoopBack provides a built-in [User](https://apidocs.strongloop.com/loopback/#user) model with a corresponding [REST API](User-REST-API.html) 
-that inherits all the "CRUD" (create, read, update, and delete) methods of the [PersistedModel object](https://apidocs.strongloop.com/loopback/#persistedmodel).
+LoopBack provides a built-in [User](https://apidocs.loopback.io/loopback/#user) model with a corresponding [REST API](User-REST-API.html) 
+that inherits all the "CRUD" (create, read, update, and delete) methods of the [PersistedModel object](https://apidocs.loopback.io/loopback/#persistedmodel).
 Each CRUD method of the LoopBack User model maps to either the READ or WRITE access type, as follows:
 
 READ:
 
-* [exists](https://apidocs.strongloop.com/loopback/#persistedmodel-exists) - Boolean method that determines whether a user exists.
-* [findById](https://apidocs.strongloop.com/loopback/#persistedmodel-findbyid) - Find a user by ID.
-* [find](https://apidocs.strongloop.com/loopback/#persistedmodel-find) - Find all users that match specified conditions.
-* [findOne](https://apidocs.strongloop.com/loopback/#persistedmodel-findone)  - Finds a single user instance that matches specified conditions.
-* [count](https://apidocs.strongloop.com/loopback/#persistedmodel-count) - Returns the number of users that match the specified conditions.
+* [exists](https://apidocs.loopback.io/loopback/#persistedmodel-exists) - Boolean method that determines whether a user exists.
+* [findById](https://apidocs.loopback.io/loopback/#persistedmodel-findbyid) - Find a user by ID.
+* [find](https://apidocs.loopback.io/loopback/#persistedmodel-find) - Find all users that match specified conditions.
+* [findOne](https://apidocs.loopback.io/loopback/#persistedmodel-findone)  - Finds a single user instance that matches specified conditions.
+* [count](https://apidocs.loopback.io/loopback/#persistedmodel-count) - Returns the number of users that match the specified conditions.
 
 WRITE:
 
-* [create](http://apidocs.strongloop.com/loopback/#persistedmodel-create) - create a new user.
-* [updateAttributes](http://apidocs.strongloop.com/loopback/#persistedmodel-updateattributes) (update) - update a user record.
-* [upsert](http://apidocs.strongloop.com/loopback/#persistedmodel-upsert) (update or insert) - update or insert a new user record.
-* [destroyById](https://apidocs.strongloop.com/loopback/#persistedmodel-destroybyid) (equivalent to removeById or deleteById) - delete the user with the specified ID.
+* [create](http://apidocs.loopback.io/loopback/#persistedmodel-create) - create a new user.
+* [updateAttributes](http://apidocs.loopback.io/loopback/#persistedmodel-updateattributes) (update) - update a user record.
+* [upsert](http://apidocs.loopback.io/loopback/#persistedmodel-upsert) (update or insert) - update or insert a new user record.
+* [destroyById](https://apidocs.loopback.io/loopback/#persistedmodel-destroybyid) (equivalent to removeById or deleteById) - delete the user with the specified ID.
 
 For other methods, the default access type is EXECUTE; for example, a custom method maps to the EXECUTE access type.
 

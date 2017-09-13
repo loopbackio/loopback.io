@@ -33,7 +33,7 @@ The API Designer tool in IBM API Connect enables you to perform auto-migration w
 For more information, see [Creating a database schema from models](http://www.ibm.com/support/knowledgecenter/SSFS6T/com.ibm.apic.toolkit.doc/tapim-model-update.html).
 " %}
 
-{% include see-also.html content="[automigrate()](http://apidocs.strongloop.com/loopback-datasource-juggler/#datasource-prototype-automigrate) in LoopBack API reference.
+{% include see-also.html content="[automigrate()](http://apidocs.loopback.io/loopback-datasource-juggler/#datasource-prototype-automigrate) in LoopBack API reference.
 " %}
 
 The following data sources support auto-migration:
@@ -156,7 +156,7 @@ For more information, see the [MongoDB documentation](http://docs.mongodb.org/m
 
 ## Auto-update
 
-{% include see-also.html content="[autoupdate()](http://apidocs.strongloop.com/loopback-datasource-juggler/#datasource-prototype-autoupdate) in LoopBack API reference.
+{% include see-also.html content="[autoupdate()](http://apidocs.loopback.io/loopback-datasource-juggler/#datasource-prototype-autoupdate) in LoopBack API reference.
 " %}
 
 If there are existing tables in a database, running `automigrate()` will drop and re-create the tables: Therefore, data will be lost.

@@ -40,8 +40,8 @@ Open your XCode project, select targets, under build phases unfold **Link Binar
 
 The LoopBack iOS SDK provides two classes to simplify push notification programming:
 
-* [LBInstallation](http://apidocs.strongloop.com/loopback-sdk-ios/api/interface_l_b_installation.html) - enables the iOS application to register mobile devices with LoopBack. 
-* [LBPushNotification](http://apidocs.strongloop.com/loopback-sdk-ios/api/interface_l_b_push_notification.html) - provides a set of helper methods to handle common tasks for push notifications.
+* [LBInstallation](http://apidocs.loopback.io/loopback-sdk-ios/api/interface_l_b_installation.html) - enables the iOS application to register mobile devices with LoopBack. 
+* [LBPushNotification](http://apidocs.loopback.io/loopback-sdk-ios/api/interface_l_b_push_notification.html) - provides a set of helper methods to handle common tasks for push notifications.
 
 ## Initialize LBRESTAdapter
 

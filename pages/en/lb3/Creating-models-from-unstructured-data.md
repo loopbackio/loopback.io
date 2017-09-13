@@ -11,7 +11,7 @@ summary:
 
 For unstructured data such as that in NoSQL databases and REST services, you can create models using _instance introspection_.
 Instance introspection creates a model from a single model instance using
-[`buildModelFromInstance()`](http://apidocs.strongloop.com/loopback-datasource-juggler/#datasource-prototype-buildmodelfrominstance).
+[`buildModelFromInstance()`](http://apidocs.loopback.io/loopback-datasource-juggler/#datasource-prototype-buildmodelfrominstance).
 
 The following data sources support instance introspection: 
 

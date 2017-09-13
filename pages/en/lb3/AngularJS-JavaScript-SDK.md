@@ -166,7 +166,7 @@ Follow these steps to use the generated services inside your AngularJS applicat
 ### Client configuration
 
 You can configure some aspects of the generated services within the AngularJS client application using the 
-[LoopBackResourceProvider](http://apidocs.strongloop.com/loopback-sdk-angular/#loopbackresourceprovider) object, as illustrated below.
+[LoopBackResourceProvider](http://apidocs.loopback.io/loopback-sdk-angular/#loopbackresourceprovider) object, as illustrated below.
 This object is available to configuration blocks only; for more information, see
 [Module Loading & Dependencies](https://docs.angularjs.org/guide/module#module-loading-dependencies) in the AngularJS documentation.
 
@@ -183,7 +183,7 @@ angular.module('my-app-module')
   });
 ```
 
-See [LoopBackResourceProvider API docs](http://apidocs.strongloop.com/loopback-sdk-angular/#loopbackresourceprovider) for the list of all available options.
+See [LoopBackResourceProvider API docs](http://apidocs.loopback.io/loopback-sdk-angular/#loopbackresourceprovider) for the list of all available options.
 
 ### Model resource API
 
@@ -196,7 +196,7 @@ Angular's `$resource` objects have a different API compared to LoopBack's API 
 
 See "Returns" section in [$resource Usage docs](https://docs.angularjs.org/api/ngResource/service/$resource#usage)
 for more information about the AngularJS API and 
-[AngularJS client API docs](http://apidocs.strongloop.com/loopback-sdk-angular/#angular-client-api)
+[AngularJS client API docs](http://apidocs.loopback.io/loopback-sdk-angular/#angular-client-api)
 for a reference of methods available on the built-in loopback models.
 
 #### Example
@@ -413,7 +413,7 @@ Category.products.destroyAll({ id: $scope.category.id });
 
 The SDK provides first-class support for authenticated requests.
 
-Basic use is simple: Call [`User.login()`](http://apidocs.strongloop.com/loopback-sdk-angular/#user-login)
+Basic use is simple: Call [`User.login()`](http://apidocs.loopback.io/loopback-sdk-angular/#user-login)
 with correct credentials and the SDK will handle everything else for you.
 It will store the access token provided in login response and send this token in all subsequent requests.
 
@@ -424,9 +424,9 @@ User.login({
 });
 ```
 
-Other useful methods include [`User.isAuthenticated()`](http://apidocs.strongloop.com/loopback-sdk-angular/#user-isauthenticated),
+Other useful methods include [`User.isAuthenticated()`](http://apidocs.loopback.io/loopback-sdk-angular/#user-isauthenticated),
 to determine if the current user is logged in, and
-[`User.getCurrentId()`](http://apidocs.strongloop.com/loopback-sdk-angular/#user-getcurrentid), to get the ID of the currently logged-in user.
+[`User.getCurrentId()`](http://apidocs.loopback.io/loopback-sdk-angular/#user-getcurrentid), to get the ID of the currently logged-in user.
 
 #### Persisting the access token
 

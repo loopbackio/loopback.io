@@ -416,7 +416,7 @@ For any middleware configuration property, you can specify a variable in the val
 
 `${ <var> }`
 
-Where `<var>` is a property of the [`app`](https://apidocs.strongloop.com/loopback/#var-app-loopback) object. These properties include:
+Where `<var>` is a property of the [`app`](https://apidocs.loopback.io/loopback/#var-app-loopback) object. These properties include:
 
 * [Application-wide properties](config.json.html#top-level-properties) such as those defined in `config.json`.
 * [Express app object properties](http://expressjs.com/4x/api.html#app.settings.table).
@@ -481,9 +481,9 @@ You can register middleware in JavaScript code with: 
 
 To register middleware with the LoopBack phases API, use the following `app` methods:
 
-* [`middleware()`](http://apidocs.strongloop.com/loopback/#app-middleware)`
-* [`middlewareFromConfig()`](http://apidocs.strongloop.com/loopback/#app-middlewarefromconfig)` 
-* [`defineMiddlewarePhases()`](http://apidocs.strongloop.com/loopback/#app-definemiddlewarephases)`
+* [`middleware()`](http://apidocs.loopback.io/loopback/#app-middleware)`
+* [`middlewareFromConfig()`](http://apidocs.loopback.io/loopback/#app-middlewarefromconfig)` 
+* [`defineMiddlewarePhases()`](http://apidocs.loopback.io/loopback/#app-definemiddlewarephases)`
 
 For example:
 
@@ -517,7 +517,7 @@ app.use([route], function([err,] req, res, next) {
 });
 ```
 
-As usual, [`app`](http://apidocs.strongloop.com/loopback/#loopback) is the LoopBack application object: `app = loopback()`. 
+As usual, [`app`](http://apidocs.loopback.io/loopback/#loopback) is the LoopBack application object: `app = loopback()`. 
 
 The parameters are:
 

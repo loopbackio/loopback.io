@@ -30,7 +30,7 @@ Additionally, you can [define your own custom models](Creating-models.html) spec
 These methods all create a [Model definition JSON file](Model-definition-JSON-file.html) that defines your model in LoopBack.
 
 You can also create and customize models programmatically using the 
-[LoopBack API](http://apidocs.strongloop.com/loopback/#loopback-createmodel), or by manually editing the [model definition JSON file](Model-definition-JSON-file.html).
+[LoopBack API](http://apidocs.loopback.io/loopback/#loopback-createmodel), or by manually editing the [model definition JSON file](Model-definition-JSON-file.html).
 In most cases, you shouldn't need to use those techniques to create models, but you generally will use them to modify and customize models.
 
 Once you've created a model, you can [customize it](Customizing-models.html) to suit your needs, and also add [data validation](Validating-model-data.html) and create [relationships among models](Creating-model-relations.html).

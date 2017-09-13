@@ -12,7 +12,7 @@ summary:
 ## Model REST APIs
 
 By default, LoopBack models you create expose a 
-[standard set of HTTP endpoints](http://apidocs.strongloop.com/loopback/#persistedmodel) for create, read, update, and delete (CRUD) operations.
+[standard set of HTTP endpoints](http://apidocs.loopback.io/loopback/#persistedmodel) for create, read, update, and delete (CRUD) operations.
 The `public` property in [model-config.json](model-config.json.html) specifies whether to expose the model's REST APIs, for example:
 
 {% include code-caption.html content="/server/model-config.json" %}

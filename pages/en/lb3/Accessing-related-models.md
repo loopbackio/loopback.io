@@ -139,7 +139,7 @@ Additionally, the ReportModel is configured with the following ACLs so that aut
 Assume the LineItem model has the same ACL defined.
 
 Now, suppose you want to fetch a model owned by your user and also get at its related models.
-Here is how you do it with [`findById()`](http://apidocs.strongloop.com/loopback/#persistedmodel-findbyid) using the Node API:
+Here is how you do it with [`findById()`](http://apidocs.loopback.io/loopback/#persistedmodel-findbyid) using the Node API:
 
 ```javascript
 Report.findById({

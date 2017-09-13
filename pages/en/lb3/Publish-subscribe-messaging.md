@@ -35,19 +35,19 @@ The following table summarizes all the pub-sub related modules.
       <td><a href="https://github.com/strongloop/strong-pubsub">strong-pubsub</a></td>
       <td>
       <a href="Strong-pub-sub.html">Strong Pub-sub</a>
-      <br/><a href="http://apidocs.strongloop.com/strong-pubsub">API documentation</a>
+      <br/><a href="http://apidocs.loopback.io/strong-pubsub">API documentation</a>
       </td>
       <td>Main StrongLoop pub-sub module. It exports a <code class="highlighter-rouge">Client</code> class that provides a unified pubsub client in Node.js and browser (client JavaScript). It supports subscribing to topics. Clients can connect to brokers or proxies that support the client adapter’s protocol.</td>
     </tr>
     <tr>
       <td><a href="https://github.com/strongloop/strong-pubsub-bridge">strong-pubsub-bridge</a></td>
       <td><a href="Pub-sub-bridge.html">Pub-sub bridge</a>
-      <br/><a href="http://apidocs.strongloop.com/strong-pubsub-bridge">API documentation</a></td>
+      <br/><a href="http://apidocs.loopback.io/strong-pubsub-bridge">API documentation</a></td>
       <td>Enables Clients to connect to a broker indirectly so a client using one protocol can connect to a broker that requires another andc reating hooks to inject logic between the client and the broker to implement authentication and authorization.</td>
     </tr>
     <tr>
       <td><a href="https://github.com/strongloop/strong-pubsub-connection-mqtt">strong-pubsub-connection-mqtt</a></td>
-      <td><a href="http://apidocs.strongloop.com/strong-pubsub-connection-mqtt">API documentation</a></td>
+      <td><a href="http://apidocs.loopback.io/strong-pubsub-connection-mqtt">API documentation</a></td>
       <td>Upgrade a Socket into a strong-pubsub MQTT Connection.</td>
     </tr>
     <tr>
