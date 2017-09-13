@@ -15,7 +15,7 @@ LoopBack 4 is more than just a framework: It's an ecosystem that encourages deve
 - [Validate your API](#validate-your-api-specification)
 - [Smoke test your API input/output](#smoke-test-your-api-inputoutput)
 - [Define your testing strategy](#define-your-testing-strategy)
-- [Incrementally implement the features](#incrementally-implement-the-features)
+- [Incrementally implement features](#incrementally-implement-features)
 
 To be done:
 
@@ -71,7 +71,7 @@ This is where it's useful to determine similarities between our Resources (eg. t
  - `/{pluralName}?{query}` - search with a query and the resource plural name
  - `/{name}/{slug}` - get details about the resource
 
-## Using patterns to reduce duplication
+### Using patterns to reduce duplication
 Determining which patterns our API should be based on is a tricky task. We'll likely want to change it in the future. In order to keep our patterns flexible, we can define these patterns via simple TypeScript functions (but you can do this in JavaScript as well). For our API, lets start with a `SearchableResource` pattern, since all of our resources will have support the same search and listing operations.
 
 The `SearchableResource` pattern will define all of the semantics for an OpenAPI fragment that supports search.
@@ -237,7 +237,7 @@ _.merge(ProductAPI, ProductDefinition, ProductGetResource,
 export default ProductAPI;
 ```
 
-## Connect OpenAPI fragments to Controllers
+### Connect OpenAPI fragments to Controllers
 
 By separating each of our individual "Model"-level API exports, we can link
 them to their corresponding controllers throughout the application.
@@ -269,10 +269,10 @@ export class ProductController {
 }
 ```
 
-## Putting the final API together
+### Putting together the final API specification
 
-Now that we've built the OpenAPI fragments we need for each of our controllers,
-we can put them all together to produce the final OpenAPI spec.
+Now that you've built the OpenAPI fragments for each of the controllers,
+you can put them all together to produce the final OpenAPI spec.
 
 {% include code-caption.html content="/apidefs/swagger.ts" %}
 
@@ -348,7 +348,7 @@ describe('API specification', () => {
 
 ## Smoke test your API input/output
 
-Once we confirm the specification of our API is valid, it's time to verify that our application implements the API as we have specified it.  We use [Dredd](https://www.npmjs.com/package/dredd) in the input/output testing described below.  We use `hello-world` in this section.  Concrete sample code of `hello-world` can be found in [the hello-world tutorial](https://github.com/strongloop/loopback-next-hello-world) github.com repository.  Although the sample code includes a validated API spec and fully functional `hello-world` controller, let's pretend the controller is completely empty.  You can try it yourself cloning the `hello-world` from github.
+Once we confirm the specification of our API is valid, it's time to verify that our application implements the API as we have specified it.  We use [Dredd](https://www.npmjs.com/package/dredd) in the input/output testing described below.  We use `hello-world` in this section.  Concrete sample code of `hello-world` can be found in the [hello-world tutorial](https://github.com/strongloop/loopback-next-hello-world) repository.  Although the sample code includes a validated API spec and fully functional `hello-world` controller, let's pretend the controller is completely empty.  You can try it yourself cloning the `hello-world` from github.
 
 For our input/output testing, we are going to create three parts: 1. the input data definition, 2. expected output response definition, and 3. test code.  1. and 2. are included in the API specification.  The input data is given as `x-example` as follows:
 
@@ -519,32 +519,24 @@ At this point, we are ready to make these tests pass by coding up your business 
 
 It may be tempting to overlook the importance of a good testing strategy when starting a new project. Initially, as the project is small and we mostly keep adding new code, even badly-written test suite seem to work well. However, as the project grows and matures, inefficiencies in the test suite can severely slow down the progress.
 
-In our experience, an ideal test suite has the following properties:
+An good test suite has the following properties:
 
- - Speed
- - Reliability
- - Isolation of failures
- - Resilience
+ - **Speed**: The test suite should complete quickly. A fast test suite encourages short red-green-refactor cycle, which makes it easier to spot problems, because there have been only few changes made since the last test run that passed. It also shortens deployment times, making it easy to frequently ship small changes, reducing the risk of major breakages.
+ - **Reliability**: The test suite should be reliable. No developer enjoys debugging a failing test only to find out it was poorly written and failures are not related to any problem in the tested code. Flaky tests reduce the trust we have in our tests, up to point where we learn to ignore these failures, which will eventually lead to a situation when a test failed legitimately because of a bug in the application, but we did not notice.
+ - **Isolation of failures**: The test suite should make it easy to isolate the source of test failures. To fix a failing test, developers need to find the specific place that does not work as expected. When the project contains thousands of lines and the test failure can be caused by any part of the system, then finding the bug is very difficult, time consuming and demotivating.
+ - **Resilience**: The test implementation should be robust and resilient to changes in the tested code. As the project grows and matures, we often need to change existing behavior. With a brittle test suite, each change may break dozens of tests, for example when we have many end-to-end/UI tests that rely on specificy UI layout. This makes change prohibitively expensive, up to a point where we may start questioning the value of such test suite.
 
-### Speed
+References:
 
-The test suite should complete quickly. A fast test suite encourages short red-green-refactor cycle, which makes it easier to spot problems, because there have been only few changes made since the last test run that passed. It also shortens deployment times, making it easy to frequently ship small changes, reducing the risk of major breakages.
+- [Test Pyramid](https://martinfowler.com/bliki/TestPyramid.html) by Martin Fowler
+- [The testing pyramid](http://www.agilenutshell.com/episodes/41-testing-pyramid) by Jonathan Rasmusson
+- [Just say no to more end-to-end tests](https://testing.googleblog.com/2015/04/just-say-no-to-more-end-to-end-tests.html)
+- [100,000 e2e selenium tests? Sounds like a nightmare!](https://watirmelon.blog/2014/05/14/100000-e2e-selenium-tests-sounds-like-a-nightmare/)
+- [Growing Object-Oriented Software Guided by Tests](http://www.growing-object-oriented-software.com/)
 
-### Reliability
+### How to build a great test suite
 
-The test suite should be reliable. No developer enjoys debugging a failing test only to find out it was poorly written and failures are not related to any problem in the tested code. Flaky tests reduce the trust we have in our tests, up to point where we learn to ignore these failures, which will eventually lead to a situation when a test failed legitimately because of a bug in the application, but we did not notice.
-
-### Isolation of failures
-
-The test suite should make it easy to isolate the source of test failures. To fix a failing test, developers need to find the specific place that does not work as expected. When the project contains thousands of lines and the test failure can be caused by any part of the system, then finding the bug is very difficult, time consuming and demotivating.
-
-### Resilience
-
-The test implementation should be robust and resilient to changes in the tested code. As the project grows and matures, we often need to change existing behaviour. With a brittle test suite, each change may break dozens of tests, for example when we have many end-to-end/UI tests that rely on specificy UI layout. This makes change prohibitely expensive, up to a point where we may start questioning the value of such test suite.
-
-## How to build a great test suite
-
-How to create a great test suite? By thinking smaller and favouring fast, focused unit-tests over slow application-wide end-to-end tests.
+How to create a great test suite? By thinking smaller and favoring fast, focused unit-tests over slow application-wide end-to-end tests.
 
 Let's say we are implementing the "search" endpoint of the Product resource described earlier. We may write the following tests:
 
@@ -554,9 +546,9 @@ Let's say we are implementing the "search" endpoint of the Product resource desc
 
  3. Many "unit tests" where we test `ProductController` in isolation and verify that the controller handles all different situations, including error paths and edge cases.
 
-## Example workflow
+### Testing workflow
 
-Here is how your workflow may look like:
+Here is what your testing workflow might look like:
 
  1. Write an acceptance test demonstrating the new feature you are going to build. Watch the test fail with a helpful error message. Use this new test as a reminder of what is the scope of your current work. When the new tests passes then you are done.
 
@@ -574,39 +566,27 @@ When writing new unit tests, watch out for situations where your tests are asser
 
 For example, when writing a unit test to verify that the search endpoint is building a correct database query, we would usually assert that the controller invoked the model repository method with an expected query. While this gives us confidence about the way the controller is building queries, it does not tell us whether such queries will actually work when they are executed by the database server. An integration test is needed here.
 
-## Summary
+To summarize:
 
 - Pay attention to your test code, it's as important as the "real" code you are shipping to production.
 - Prefer fast and focused unit tests over slow app-wide end-to-end tests.
 - Watch out for integration points that are not covered by unit-tests and add integration tests to verify your units work well together.
 
-## Further reading:
-
- - [Test Pyramid](https://martinfowler.com/bliki/TestPyramid.html) by Martin Fowler
-
- - [The testing pyramid](http://www.agilenutshell.com/episodes/41-testing-pyramid) by Jonathan Rasmusson
-
- - [Just say no to more end-to-end tests](https://testing.googleblog.com/2015/04/just-say-no-to-more-end-to-end-tests.html)
-
- - [100,000 e2e selenium tests? Sounds like a nightmare!](https://watirmelon.blog/2014/05/14/100000-e2e-selenium-tests-sounds-like-a-nightmare/)
-
- - [Growing Object-Oriented Software Guided by Tests](http://www.growing-object-oriented-software.com/)
-
-## Incrementally implement the features
+## Incrementally implement features
 
 Let's recapitulate the status of our new project:
 
  - We have defined our application's API and described it in an OpenAPI Spec document.
  - We have empty controllers backing our new operations.
- - Our project has a test verifying the validity of our API spec, this test is passing.
+ - Our project has a test verifying the validity of our API spec. This test passes.
  - Our test suite includes a smoke test to verify conformance of our implementation
-   with the API spec, these checks are all failing now.
+   with the API spec.  These checks are all failing now.
 
 Now it's time to put our testing strategy outlined in the previous section into practice. Pick one of the new API operations, preferably the one that's easiest to implement, and get to work!
 
 We will start with `GET /product/{slug}` in this guide.
 
-## Write an acceptance test
+### Write an acceptance test
 
 One "acceptance test", where we start the application, make an HTTP request to search for a given product name, and verify that expected products were returned. This verifies that all parts of our application are correctly wired together.
 
@@ -675,11 +655,11 @@ describe('Product (acceptance)', () => {
 });
 ```
 
-Notice there are few missing pieces annotated with TODO commentd, we will get back to them very soon. Remember, when practicing TDD in small steps,
+Notice there are few missing pieces annotated with TODO comments. Well come back to them very soon. Remember, when practicing TDD in small steps,
 the goal is to add as little test code as needed to uncover a missing piece in the production code, and then add just enough production code to
 make our new test pass (while keeping all existing tests passing too).
 
-Run the tests and watch the new test to fail:
+Run the tests and watch the new test fail:
 
 ```
   1) Product (acceptance) retrieves product details:
@@ -692,7 +672,7 @@ When you scroll up in the test output, you will see more information about the 4
 Unhandled error in GET /product/ink-pen: 404 Error: Controller method not found: ProductController.getDetails
 ```
 
-## Write a unit-test for the new controller method
+### Write a unit-test for the new controller method
 
 Our new acceptance test is failing because there is no `getDetails` method implemented by `ProductController`. Let's start with a unit-test to drive the implementation of this new method.
 
@@ -744,7 +724,7 @@ with a different error now - the response does not contain all expected product 
 
 While it's possible to further iterate by adding more unit tests, a more valuable next step is to write an integration test to verify that our new API is using data from our backing database.
 
-## Write an integration test for the new controller method
+### Write an integration test for the new controller method
 
 Create `tests/integration/product-controller.integration.ts` with the following contents:
 
@@ -803,11 +783,11 @@ AssertionError: expected Object { name: 'Ink Pen', slug: 'ink-pen' } to equal Ob
 
 Let's take a closer look at our new test. In order to make it fail with the current implementation, we need to find a different scenario compared to what is covered by our unit test. We could simply change the data, but that would add only little value to our test suite. Instead, we took this opportunity to cover another requirement of "get product details" operation - it should return the details of the product that matches the "slug" parameter passed in the arguments.
 
-The next step in front of us is bigger than is usual in incremental TDD workflow. We need to connect to our database and define classes to work with the data.
+The next step is bigger than is usual in an incremental TDD workflow. We need to connect to our database and define classes to work with the data.
 
-## Define Product model, repository and data-source
+### Define Product model, repository, and data source
 
-LoopBack is rather agnostic when it comes to accessing databases, you can choose any package from the npm module ecosystem. On the other hand, we also want LoopBack users to have a recommended solution that's covered by our support. Welcome to `@loopback/repository`, a TypeScript facade for the existing `loopback-datasource-juggler` implementation from LoopBack 3.x.
+LoopBack is agnostic when it comes to accessing databases. You can choose any package from the npm module ecosystem. On the other hand, we also want LoopBack users to have a recommended solution that's covered by our support. Welcome to `@loopback/repository`, a TypeScript facade for the `loopback-datasource-juggler` implementation in LoopBack 3.x.
 
  1. Define `Product` model in `src/models/product.model.ts`
 
@@ -839,7 +819,7 @@ LoopBack is rather agnostic when it comes to accessing databases, you can choose
 
     **TODO(bajtos) Find out how to re-use ProductBaseSchema for the model definition**
 
- 2. Define a datasource representing a single source of data, typically a database. In this text, we will be using in-memory storage. In real applications, just replace `memory` connector with the connector for your database (`postgresql`, `mongodb`, etc.).
+ 2. Define a data source representing a single source of data, typically a database. In this examle, we will be using in-memory storage. In real applications, replace the `memory` connector with the actual database connector  (`postgresql`, `mongodb`, etc.).
 
     Create `src/datasources/db.datasource.ts` with the following content:
 
@@ -870,7 +850,7 @@ LoopBack is rather agnostic when it comes to accessing databases, you can choose
 
 See [Repositories](Repositories.html) for more details on this topic.
 
-## Update test helpers and the controller use real model and repository
+### Update test helpers and the controller use real model and repository
 
 Rework `givenEmptyDatabase` and `givenProduct` as follows:
 
@@ -912,8 +892,9 @@ export class ProductController {
   }
 }
 ```
+### Run tests
 
-Run the tests again and observe few facts that may surprise you.
+Run the tests again.  These results may surprise you:
 
  1. The acceptance test is failing: the response contains some expected properties (slug, name),
    but is missing most of other properties.
@@ -929,7 +910,7 @@ To find out why the API smoke test is failing, you can start the application via
 Now back to our first unit test. It may be a puzzle to figure out why the test is passing, although the answer is simple: our integration and acceptance tests are setting up data in the database, the unit test does not clear the database (because it should not use it at all!) and accidentally happen
 to expect the same data as one of the other tests.
 
-## Decouple Controller from Repository
+### Decouple Controller from Repository
 
 This shows us a flaw in our current design of the ProductController - it's difficult to test it in isolation. Let's fix that by making the dependency on `ModelRepository` explicit and allow controller users to provide a custom implementation.
 
@@ -941,10 +922,10 @@ class ProductController {
 }
 ```
 
-{% include tip.html content="For those familiar with pure test-driven development: If we wanted to follow pure test-driven development, then we would define a minimal repository interface describing only the methods actually used by our controller. This will allow us to discover the best repository API that serves the need of our controller. However, we don't want to design a new repository API, we want to re-use the repository implementation provided by LoopBack. Therefore using the actual Repository class/interface is the right approach.
+{% include tip.html content="If we wanted to follow pure test-driven development, then we would define a minimal repository interface describing only the methods actually used by our controller. This will allow us to discover the best repository API that serves the need of our controller. However, we don't want to design a new repository API, we want to re-use the repository implementation provided by LoopBack. Therefore using the actual Repository class/interface is the right approach.
 " %}
 
-In traditional object-oriented languages like Java or C#, in order to allow the unit tests to provide a custom implementation of the repository API, the controller needs to depend on an interface describing the API, and the repository implementation needs to implement this interface. The situation is easier in JavaScript and TypeScript. Thanks to the dynamic nature of the language, it's possible to mock/stub entire classes. The [(sinon]http://sinonjs.org/), which comes bundled in `@loopback/testlab`, makes this very easy.
+In traditional object-oriented languages like Java or C#, in order to allow the unit tests to provide a custom implementation of the repository API, the controller needs to depend on an interface describing the API, and the repository implementation needs to implement this interface. The situation is easier in JavaScript and TypeScript. Thanks to the dynamic nature of the language, it's possible to mock/stub entire classes. The [sinon](http://sinonjs.org/) testing module, which comes bundled in `@loopback/testlab`, makes this very easy.
 
 Here is the updated unit test leveraging dependency injection:
 
@@ -991,7 +972,7 @@ The new unit test is passing now, but our integration and acceptance tests are b
  2. Fix the acceptance test by annotating `ProductController`'s `repository` argument with `@inject('repositories.Product')`
     and binding the `ProductRepository` in the main application file where we are also binding controllers.
 
-## Handle product not found
+### Handle 'product not found' error
 
 When we wrote the first implementation of `getDetails`, we assumed the slug always refer to an existing product, which obviously is not always true. Let's fix our controller to correctly handle this error situation.
 
@@ -1032,13 +1013,13 @@ export class ProductController {
 }
 ```
 
-# Custom sequence
+### Implement a custom Sequence
 
 {% include content/tbd.html %}
 
  - customize your sequence to add app wide functionality
 
-# Preparing your API for consumption
+## Preparing your API for consumption
 
 {% include content/tbd.html %}
 
@@ -1046,38 +1027,35 @@ export class ProductController {
 - Public endpoint for the swagger spec (for discovery)
 - more?
 
-# Closing thoughts
+## Closing thoughts
 
 Congratulations! You now have successfully created and tested an API with LoopBack Next. We hope you enjoy the test-drive. Your feedback matters and please share your thoughts with us.
 
-We would like to remind you that this is just the beginning of the full LoopBack Next Experience. The first beta release lays out the new foundation of LoopBack for extension developers. It also demonstrates a path to create REST APIs from OpenAPI specs together with Controllers and Repositories. More and more features will be added in the coming weeks and months. Here is a sneak peek of what's coming:
+This is just the beginning of the full LoopBack-Next developer experience. The first beta release lays out the new foundation of LoopBack for extension developers. It also demonstrates a path to create REST APIs from OpenAPI specs together with Controllers and Repositories. More features will be added in the coming weeks and months.
 
-- More extension points and extensions
-  - https://github.com/strongloop/loopback-next/issues/512
+Here is a sneak peek of what's coming:
 
-- Authorization component
-  - https://github.com/strongloop/loopback-next/issues/538
+- More extensions and extension points an: [lopback-next issue #512](https://github.com/strongloop/loopback-next/issues/512)
 
-- Fully-fledged API explorer
-  - https://github.com/strongloop/loopback-next/issues/559
+- Authorization component: [loopback-next issue #538](https://github.com/strongloop/loopback-next/issues/538)
+
+- Fully-fledged API explorer: [loopback-next issue #559](https://github.com/strongloop/loopback-next/issues/559)
 
 - Complete repository/service story for backend interactions
-  - https://github.com/strongloop/loopback-next/issues/419
-  - https://github.com/strongloop/loopback-next/issues/537
-  - https://github.com/strongloop/loopback-next/issues/522
+  - [loopback-next issue #419](https://github.com/strongloop/loopback-next/issues/419)
+  - [loopback-next issue #537](https://github.com/strongloop/loopback-next/issues/537)
+  - [loopback-next issue #522](https://github.com/strongloop/loopback-next/issues/522)
 
 - Declarative support for various constructs
-  - https://github.com/strongloop/loopback-next/issues/441
-  - https://github.com/strongloop/loopback-next/issues/461
+  - [loopback-next issue #441](https://github.com/strongloop/loopback-next/issues/441)
+  - [loopback-next issue #461](https://github.com/strongloop/loopback-next/issues/461)
 
 - Alignment of microservices and cloud native experience
-  - https://github.com/strongloop/loopback-next/issues/442
-  - https://github.com/strongloop/loopback-next/issues/25
+  - [loopback-next issue #442](https://github.com/strongloop/loopback-next/issues/442)
+  - [loopback-next issue #25](https://github.com/strongloop/loopback-next/issues/25)
 
-- Tooling
-  - https://github.com/strongloop/loopback-next/issues/361
+- Tooling: [loopback-next issue #361](https://github.com/strongloop/loopback-next/issues/361)
 
-- Plain JavaScript
-  - https://github.com/strongloop/loopback-next/issues/560
+- Plain JavaScript: [loopback-next issue #560](https://github.com/strongloop/loopback-next/issues/560)
 
-The train is moving and welcome on board. Your participation and contribution will make LoopBack Next an even more powerful framework and greater community/ecosystem. The team is very excited about the new journey. We look forward to working with you on more ideas, more pull requests, and more extension modules. Let's make LoopBack Next rock together.
+The train is moving and welcome on board! Your participation and contribution will make LoopBack Next an even more powerful framework and greater community/ecosystem. The team is very excited about the new journey. We look forward to working with you on more ideas, more pull requests, and more extension modules. Let's make LoopBack Next rock together.
