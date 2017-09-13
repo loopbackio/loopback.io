@@ -233,13 +233,14 @@ awaitDelay();
 
 I like the `Getting Started With TypeScript` and have read from the beginning to the end.  By the way, when you need to `npm install passport`, make sure you've got the accompanying Type Definition file as well: `npm install -S @types/passport`
 
-## [OpenAPI](https://www.openapis.org/)
+## OpenAPI
 
-1. https://editor.swagger.io
+[OpenAPI](https://www.openapis.org/) (previously know as Swagger), is a specification for machine-readable interface files for describing, producing, consuming, and visualizing REST web services.
 
-In LoopBack Next, we define all of our endpoints in a declarative fashion, namely, OpneAPI spec.  I found [the swagger editor](https://editor.swagger.io) very useful to study OpenAPI spec as well as to debug and build a complex API spec.
+LoopBack-Next defines all endpoints declaratively using the OpenAPI specification.  The [Swagger editor](https://editor.swagger.io) is useful to debug and build complex APIs.
 
-Note (LoopBack Next specific): In a LoopBack Next app, typically you don't put the header portion of the API spec(see below) because LoopBack Next adds it in @api decorator (we'll discuss "decorator" later in this blog).  [The swagger editor](https://editor.swagger.io), which is out side of LoopBack Next, will complain without the header portion.
+In a LoopBack Next app, typically you don't put the header portion of the API spec(see below) because LoopBack Next adds it in @api decorator (we'll discuss "decorator" later in this blog).  [The swagger editor](https://editor.swagger.io), which is out side of LoopBack Next, will complain without the header portion.
+
 ```js
 {
   "swagger": "2.0",
@@ -253,7 +254,8 @@ Note (LoopBack Next specific): In a LoopBack Next app, typically you don't put t
   }
 }
 ```
-Also note that LoopBack Next provides `validateApiSpec` in the testlab so that you can validate it in `npm test` of your app.  Isn't that cool?
+
+LoopBack-Next also provides `validateApiSpec` in the testlab so that you can validate it in `npm test` of your app.  
 
 ## LoopBack Next
 
@@ -268,7 +270,7 @@ Skeleton of the client code looks like this:
   app.sequence(MySequence);
 ```
 
-## Controllers and API spec
+### Controllers and API spec
 
 Let's take a look at HelloWorldController code and associated API spec first, then we examine what they do.
 
@@ -287,8 +289,8 @@ export class HelloWorldController {
       return `Hello world ${name}!`
   }
 }
-
 ```
+
 ```js
 // hello-world.api.ts
 export const apiSpec =
@@ -316,6 +318,7 @@ export const apiSpec =
   }
 }
 ```
+
 `@api` is a [class decorator](https://www.typescriptlang.org/docs/handbook/decorators.html).  The class decorator,
 `api` is a function that is called when the class, HelloWorldController is defined (only once).  In this case, `api` function attaches the API specification to HelloWorldController class.  The decorator website describes some relatively complex concept, but we can just read the class decorator section to get a high-level understanding of decorator.  The concept is similar for other types of decorators.  That's enough for now.
 
@@ -337,13 +340,14 @@ In this case, the argument `name` is replaced with the value bound to the key `d
 
 Who binds `defaultName` key to the value?  It depends.  You can do that by app.bind(`defaultName`).to('Ted Johnson').  You can `get` the value string by app.getSync('defaultName').  The main usage of `@inject` is discussed in `Components and Providers` section.
 
-## Components and Providers
+### Components and providers
 
 Component defines a functionality.  LoopBack Next application can be viewed as a collection of components.  In a component, one or more providers implement the functionality.  In the Logger provider example below, (a) 'logger' key is  bound to the provider instance when Application is instantiated, and (b) the client is acquiring the logger instance by `app.get('logger')` and using the logger to display the message, 'My application has started.'.  Please also note that another component, `AuthenticationComponent` is attached to the application.
 
 Let's take a close look at `LoggerComponent` implementation.  Please note that the key `logger` is bound to the logger instance.  With the binding, the client can access the logger instance by `app.get('logger')`.
 
 Client:
+
 ```js
 const app = new Application({
   components: [AuthenticationComponent, LoggerComponent],
@@ -351,10 +355,10 @@ const app = new Application({
 
 const logger = await app.get('logger');
 logger.info('My application has started.');
-
 ```
 
 Implementor:
+
 ```js
 import {Component} from '@loopback/core';
 const key = 'logger';
@@ -378,7 +382,7 @@ export class LoggerProvider implements Provider<Logger> {
 }
 ```
 
-## Custom Sequence
+### Custom Sequence
 
 Controllers implement end points and business logic for each end point of the application.   Sequence defines the functional structure of the application.  There can be many end points associated with the application.  There is only one sequence per application.
 
@@ -388,11 +392,12 @@ Client:
 ```js
 const app = new Application();
 app.sequence(MySequence);
-
 ```
+
 Below is an example implementation of sequence.  We've studied `@inject` as a parameter decorator.  The four `sequence.actions` keys are bound to the corresponding essential sequence actions.  Since the essential sequence actions are implemented by LoopBack Next, you can simply inject them in your custom sequence as shown below.
 
 The custom sequence below is defined to do something special with req and res objects.  That's the sole purpose of MySequence.
+
 ```js
 import {DefaultSequence, FindRoute, InvokeMethod, Reject, Send, inject} from '@loopback/core';
 
@@ -414,10 +419,9 @@ class MySequence extends DefaultSequence {
     await super.handle(req, res);
   }
 }
-
 ```
 
-## How to test/validate API spec
+## How to test and validate an API spec
 
 As we saw in early part of this blog, the API spec is attached to the application controller.
 Once attached, the loaded API spec can be accessed by `app.getApiSpec()`.
@@ -444,7 +448,8 @@ describe('Application\'s Api Spec', () => {
 ## How to debug API spec
 
 [The Swagger Editor](https://editor.swagger.io) is useful to interactively debug your OpenAPI specs.
-You can start with JSON or YAML.  Just cut and paste the helloworld API spec (below) into the swagger editor window.  It will ask you to use JSON or covert it to YAML and build the API spec in YAML.
+You can start with JSON or YAML.  Just cut and paste the `helloworld` API spec (below) into the swagger editor window.  It will ask you to use JSON or covert it to YAML and build the API spec in YAML.
+
 ```js
 {
   "swagger": "2.0",
