@@ -19,6 +19,24 @@ Legacy juggler support has been enabled in `loopback-next` and can be imported f
 
 You can then install your favorite connector by saving it as part of your application dependencies.
 
+## Repository Mixin
+`@loopback/repository` provides a mixin for your Application that enables convenience methods that automatically bind repository classes for you. Repositories declared by components are also bound automatically.
+
+Repositories are bound to `repositories.${ClassName}`. See example below for usage.
+```ts
+import { Application } from '@loopback/core';
+import { RepositoryMixin } from '@loopback/repository';
+import { MyRepository } from './repository';
+
+// Using the Mixin
+class MyApplication extends RepositoryMixin(Application) {}
+
+// MyRepository will be bound to key `repositories.MyRepository`
+const app = new MyApplication({repositories: [MyRepository]});
+// MyRepository2 will be bound to key `repositories.MyRepository2`
+app.repository(MyRepository2);
+```
+
 ## Configure datasources
 
 You can define a DataSource using legacy Juggler in your LoopBack Next app as follows:
