@@ -26,7 +26,7 @@ Repositories are bound to `repositories.${ClassName}`. See example below for usa
 ```ts
 import { Application } from '@loopback/core';
 import { RepositoryMixin } from '@loopback/repository';
-import { MyRepository } from './repository';
+import { MyRepository, MyRepository2 } from './repository';
 
 // Using the Mixin
 class MyApplication extends RepositoryMixin(Application) {}
