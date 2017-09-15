@@ -96,7 +96,7 @@ Properties are required unless otherwise designated.
           <li><code>true</code>:&nbsp;<code>id</code>&nbsp;property is added to the model automatically. This is the default.</li>
           <li><code>false</code>:&nbsp;<code>id</code>&nbsp;property is not added to the model</li>
         </ul>
-        <p>See <a href="Model-definition-JSON-file.html">ID properties</a> for more information.</p>
+        <p>See <a href="Model-definition-JSON-file.html#id-properties">ID properties</a> for more information.</p>
         <p><strong>Optional</strong>; default is <code>true</code>. If present, the <code>idInjection</code> propery in <code>options</code> takes precedence.</p>
       </td>
     </tr>
@@ -134,14 +134,14 @@ Properties are required unless otherwise designated.
       </td>
       <td>Object</td>
       <td>
-        <p>JSON object that specifies model options. See <a href="Model-definition-JSON-file.html">Options</a> below.</p>
+        <p>JSON object that specifies model options. See <a href="Model-definition-JSON-file.html#options">Options</a> below.</p>
       </td>
     </tr>
     <tr>
       <td>properties</td>
       <td>Object</td>
       <td>
-        <p>JSON object that specifies the properties in the model. See <a href="Model-definition-JSON-file.html">Properties</a> below.</p>
+        <p>JSON object that specifies the properties in the model. See <a href="Model-definition-JSON-file.html#properties">Properties</a> below.</p>
       </td>
     </tr>
     <tr>
@@ -149,7 +149,7 @@ Properties are required unless otherwise designated.
       <td>Object</td>
       <td>
         <p>Object containing relation names and relation definitions.</p>
-        <p>See <a href="Model-definition-JSON-file.html">Relations</a> below.</p>
+        <p>See <a href="Model-definition-JSON-file.html#relations">Relations</a> below.</p>
       </td>
     </tr>
     <tr>
@@ -157,13 +157,13 @@ Properties are required unless otherwise designated.
       <td>Array</td>
       <td>
         <p>Set of&nbsp;<code>ACL</code>&nbsp;specifications that describes access control for the model.</p>
-        <p>See <a href="Model-definition-JSON-file.html">ACLs</a> below.</p>
+        <p>See <a href="Model-definition-JSON-file.html#acls">ACLs</a> below.</p>
       </td>
     </tr>
     <tr>
       <td>scopes</td>
       <td>Object</td>
-      <td>See <a href="Model-definition-JSON-file.html">Scopes</a> below.</td>
+      <td>See <a href="Model-definition-JSON-file.html#scopes">Scopes</a> below.</td>
     </tr>
   </tbody>
 </table>
