@@ -47,6 +47,10 @@ children:
   - title: 'Repositories'
     url: /doc/en/lb4/Repositories.html
     output: 'web, pdf'
+  
+  - title: 'Decorators'
+    url: /doc/en/lb4/Decorators.html
+    output: 'web, pdf'
 
 - title: 'Getting started'
   url: /doc/en/lb4/Getting-started.html
