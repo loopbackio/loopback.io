@@ -94,7 +94,7 @@ properties for the database server and credentials to log in to it.
 For information on the properties that each connector supports, see
 the specific connector documentation in [Database connectors](Database-connectors.html).
 
-{% include warning.html content="Don't put production database credentials in configuration files, where they could be a security vulnerability.  Instead, load the values from environment variables.  For more information, see [Specifying database credentials with environment variables](Attaching-models-to-data-sources.html#specifying-database-credentials-with-environment-variables)
+{% include warning.html content="Don't put production database credentials in configuration files, where they could be a security vulnerability.  Instead, load the values from environment variables.  For more information, see [Specifying database credentials with environment variables](Defining-data-sources.html#specifying-database-credentials-with-environment-variables)
 "%}
 
 The following table list common properties that most database connectors provide.

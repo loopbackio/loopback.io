@@ -115,8 +115,10 @@ This command adds the following entry to `package.json`: 
 
 ## Specifying database credentials with environment variables
 
-Best practice is not to put production database credentials explicitly in JSON or JavaScript files, where they could be  a security vulnerability.  Instead, define the values in environment variables and reference them in the data source configuration file.
+Don't put production database credentials explicitly in JSON or JavaScript files, where they could be a security vulnerability.  Instead, define the values in environment variables and reference them in the data source configuration file.
 
+Refer to an environment variable in JSON as <code>${<i>varname</i>}</code>, where <i>varname</i>
+is the name of the environment variable.
 For example, assuming you have set a valid MongoDB username and password in the
 environment variables MONGO_USER and MONGO_PASS, respectively:
 
