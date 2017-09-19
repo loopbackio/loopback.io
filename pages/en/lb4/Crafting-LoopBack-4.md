@@ -13,7 +13,7 @@ summary:
 
 ![loopback-composition](/images/lb4/loopback-composition.png)
 
-Up to version 3.x, LoopBack is built on top of the popular [Express framework](https://expressjs.com). In retrospect, basing LoopBack on Express was the right decision: Standing on the shoulders of Express, LoopBack can focus on adding value for API creation experience without reinventing the wheel. LoopBack also has benefitted from the Express ecosystem, especially ready-to-use middleware modules from npm as well as valuable knowledge and support by the community.
+Up to version 3.x, LoopBack built on the popular [Express framework](https://expressjs.com). In retrospect, basing LoopBack on Express was the right decision: Standing on the shoulders of Express enabled LoopBack to focus on adding value for API creation experience without reinventing the wheel. LoopBack also has benefitted from the Express ecosystem, especially ready-to-use middleware modules from npm as well as valuable knowledge and support by the community.
 
 With LoopBack, developers can create and expose APIs just like cooking meals by following recipes and adding ingredients. LoopBack introduces a set of [core concepts](http://loopback.io/doc/en/lb3/LoopBack-core-concepts.html) that represent the key aspects of API implementation.  To create APIs out of existing databases or services, developers can simply scaffold a LoopBack application, then add necessary JSON declarations and Node.js code to get their APIs up and running in a few minutes.
 
@@ -49,7 +49,7 @@ Like many projects, we've started to experience growing pains with LoopBack too,
     - New interaction patterns for connectors, such as eventing or messaging.
     - Extra metadata for model definitions.
 
-Since the release of 3.x, the team has been brainstorming around how to sustain and advance LoopBack. We have done a lot of homework, such as triaging existing GitHub issues, reaching out to community members and downstream products, and evaluating relevant frameworks and technologies to find answers to the following questions to decide what's next for LoopBack:
+Since the release of 3.x, the team has been brainstorming about how to sustain and advance LoopBack. We have done a lot of homework, triaged existing GitHub issues, reached out to community members and downstream products, and evaluated relevant frameworks and technologies to answer to the following questions:
 
 - Who is the target audience of LoopBack? Why are they interested in LoopBack? What do they use LoopBack for and how do they use it?
 - What are the critical pain points? Can we address them incrementally without rebuilding a new foundation?
