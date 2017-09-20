@@ -29,7 +29,80 @@ A LoopBack model can perform operations in a transaction when the model is atta
 
 ## Transaction APIs
 
-See the [API reference](http://apidocs.loopback.io/loopback-datasource-juggler/#transactionmixin) for full transaction API documentation.
+As of [v3.12.0](https://github.com/strongloop/loopback-datasource-juggler/tree/v3.12.0) of DataSource Juggler, there are two ways to handle transactions in LoopBack:
+
+* The [`TransactionMixin`](http://apidocs.loopback.io/loopback-datasource-juggler/#transactionmixin) gives access to the lower-level transaction API, leaving it up to the user to create and manage transaction objects, commit them on success or roll them back at the end of all intended operations.  
+  See [Lower-level Transaction API](#lower-level-transaction-api) below for more details.
+
+* To simplify and streamline the handling of transactions, [`dataSource.transaction()`](https://apidocs.strongloop.com/loopback-datasource-juggler/#datasource-prototype-transaction) offers a higher-level abstraction over the lower-level transaction API through a single method.  
+  See [Higher-level Transaction API](#higher-level-transaction-api) below for more details.
+
+## Higher-level Transaction API
+
+Inspired by the way [Objection.js](https://github.com/Vincit/objection.js) is handling transactions by [binding them to models](http://vincit.github.io/objection.js/#binding-models-to-a-transaction), the method [`dataSource.transaction(execute, options, cb)`](https://apidocs.strongloop.com/loopback-datasource-juggler/#datasource-prototype-transaction) offers an interface into a simple way to create transactions and bind them to models, so that the transaction object never needs to be explicitly created, passed along to Model database methods, or committed / rolled-back.
+
+Calling the `transaction(execute, options, cb)` method instead creates the transaction for you, then calls the passed `execute` function if it is provided and passes a `models` argument to it containing all models in this data-source, but as versions that are automatically bound to the transaction that was just created. Smart caching is used to only created the bound models for the properties of `models` that are actually requested.
+
+At the end, `transaction.commit()` or `transaction.rollback()` are then automatically called, based on whether exceptions happen during execution or not. If no callback is provided to be called at the end of the execution, a Promise object is returned that is resolved or rejected as soon as the execution is completed, and the transaction is committed or rolled back.
+
+### Examples
+
+Here is how to create an successfully commit a transaction:
+```js
+await app.dataSources.db.transaction(async models => {
+  const {MyModel} = models;
+  console.log(await MyModel.count()); // 0
+  await MyModel.create({foo: 'bar'});
+  console.log(await MyModel.count()); // 1
+})
+console.log(await app.models.MyModel.count()); // 1
+```
+
+But if there are exceptions during execution, the transaction is automatically rolled back:
+```js
+try {
+  await app.dataSources.db.transaction(async models => {
+    const {MyModel} = models;
+    console.log(await MyModel.count()); // 0
+    await MyModel.create({foo: 'bar'});
+    console.log(await MyModel.count()); // 1
+    throw new Error('Oops');
+  });
+} catch (e) {
+  console.log(e); // Oops
+}
+console.log(await app.models.MyModel.count()); // 0
+```
+
+### Options
+
+The same options are supported as by the `options` argument of the lower-level [`beginTransaction()`](http://apidocs.loopback.io/loopback-datasource-juggler/#transactionmixin-begintransaction) method:
+
+* `otions.isolationLevel`: See [Isolation levels](#isolation-levels)
+* `otions.timeout`: See [Timeout Handling](#timeout-handling)
+
+### Timeout Handling
+
+Because the user never actually sees the transaction object in the higher-level API, timeouts are handled a bit differently than in the lower-level API (see [Set up timeout](#set-up-timeout)). If a timeout occurs during execution, then the callback is called with an error object and `error.code` is set to `'TRANSACTION_TIMEOUT'`. If no callback is provided but a promise is returned instead, then the promise is rejected with the error:
+
+```js
+try {
+  await app.dataSources.db.transaction(async models => {
+    await Promise.delay(100);
+    await models.MyModel.create({foo: 'bar'});
+  }, {
+    timeout: 50
+  })
+} catch (e) {
+  console.log(e); // Error: Transaction is rolled back due to timeout
+  console.log(e.code); // TRANSACTION_TIMEOUT
+}
+```
+
+
+## Lower-level Transaction API
+
+See the [API reference](http://apidocs.loopback.io/loopback-datasource-juggler/#transactionmixin) for full transaction lower-level API documentation.
 
 Performing operations in a transaction typically involves the following steps:
 
@@ -39,7 +112,7 @@ Performing operations in a transaction typically involves the following steps:
 
 ### Start transaction
 
-Use the [beginTransaction](http://apidocs.loopback.io/loopback-datasource-juggler/#transactionmixin-begintransaction) method to start a new transaction.
+Use the [`beginTransaction()`](http://apidocs.loopback.io/loopback-datasource-juggler/#transactionmixin-begintransaction) method to start a new transaction.
 
 For example, for a `Post` model:
 
@@ -51,12 +124,12 @@ Post.beginTransaction({isolationLevel: Post.Transaction.READ_COMMITTED}, functio
 
 #### Isolation levels
 
-When you call beginTransaction(), you can optionally specify a transaction isolation level. LoopBack transactions support the following isolation levels:
+When you call `beginTransaction()`, you can optionally specify a transaction isolation level. LoopBack transactions support the following isolation levels:
 
-* Transaction.READ_UNCOMMITTED
-* Transaction.READ_COMMITTED (default)
-* Transaction.REPEATABLE_READ
-* Transaction.SERIALIZABLE
+* `Transaction.READ_UNCOMMITTED`
+* `Transaction.READ_COMMITTED` (default)
+* `Transaction.REPEATABLE_READ`
+* `Transaction.SERIALIZABLE`
 
 If you don't specify an isolation level, the transaction uses READ_COMMITTED .
 
@@ -152,11 +225,11 @@ Post.create({title: 't1', content: 'c1'}, options, function(err, post) {
 
 There are four types of observable events for a transaction:
 
-* before commit
-* after commit
-* before rollback
-* after rollback
-* timeout
+* `before commit`
+* `after commit`
+* `before rollback`
+* `after rollback`
+* `timeout`
 
 ```javascript
 tx.observe('before commit', function(context, next) {
