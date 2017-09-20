@@ -80,7 +80,7 @@ LoopBack Next is designated to meet the following objectives to further evolve t
    - Embrace new industrial standards such as [OpenAPI Spec](https://www.openapis.org/) and [GraphQL](http://graphql.org/).
 
 2. Promote extensibility to grow the ecosystem.
-   - A framework cannot solve all problems out of the box. It must be extendable or customizable.
+   - Build a minimal core and everything else are extensions
    - Open the door for more [extension points and extensions](https://github.com/strongloop/loopback-next/issues/512).
 
 3. Align with cloud native experience for microservices.
@@ -117,27 +117,32 @@ Here are the stages we are marching through toward the final version of LoopBack
 
 ![loopback-stack](/images/lb4/loopback-stack.png)
 
-1. Rebase and rewrite the core
-    - TypeScript - Language advantages
+1. **Rebase and rewrite the core**
+    - Leverage TypeScript for better code quality and productivity
       * Provide optional type system for JavaScript.
       * Provide planned features from future JavaScript editions to current JavaScript engines
 
-    - Promise & Async/Await - Async programming model
-      * 100% promise-based APIs and async/await as first-class async programming style.
+    - Unify the asynchronous programming model/style
+      * 100% promise-based APIs 
+      * Async/Await as first-class async programming style
 
-    - IoC Container - Key enabler for the framework for better visibility and extensibility
-      * Universal registry
-      * Dependency injection
+    - Implement an IoC Container for better visibility and extensibility
+      * Universal registry across different modules
+      * Dependency injection as a pattern to manage dependencies
 
-    - Component - packaging model for extensions  
+    - Introduce Component as packaging model for extensions  
+      * Component can be a npm module or a local directory
+      * Component encapsulates a list of extensions as a whole 
 
-2. Validate the core design by implementing an HTTP invocation chain
-    - Add top-down REST API creation with OpenAPI spec
+2. **Validate the core design by implementing an REST/HTTP invocation chain**
+    - Add top-down REST API creation which starts with OpenAPI specs
+
     - Build sequence of actions for inbound http processing
       - Introduce sequence as the composition of actions
-      - Typical actions
+      - Implement the most critical actions to fulfill the REST API routing and invocation
 
     - Introduce controllers as entry points for API related business logic
+
       In current versions of LoopBack, models are the center pieces of the whole application. They take multiple responsibilities:
 
         - Data modeling
@@ -147,27 +152,45 @@ Here are the stages we are marching through toward the final version of LoopBack
 
     - Authentication as a component
 
-3. Rebuild our integration and composition capabilities
+      Implement the core functionality of authentication as a component, which includes:
+      - Decorators to denote authentication requirement
+      - `authenticate` action to handle authentication
+      - Extension points for various authentication strategies 
 
-    - Introduce repositories
+3. **Rebuild our integration and composition capabilities**
+    - Introduce repositories to represent data access patterns such as CRUD or Key/Value stores
     - Provide a reference implementation of CRUD and KV flavors of repository interfaces using the legacy juggler and connectors
     - Refactor/rewrite the juggler into separate modules
-    - Define interfaces for connectors
+      - Typing system
+      - Model and relation definition
+      - Validation
+      - Query and mutation language
+      - DataSource
+      - Repository interfaces and implementations for data access
+      - Service interfaces and implementations for service invocations
+    - Define interfaces and metadata for connectors
     - Rewrite connectors
 
-4. Declarative metadata and bootstrapping
+4. **Declarative metadata and bootstrapping**
 
-5. Enable cloud native experience
+    LoopBack manages a set of artifacts, such as models, relations, datasources, connectors, ACLs, controllers, repositories, actions, sequences, components, utility functions, and OpenAPI specs. In addition to the programmatic approach to describe these artifacts by code (apis and decorators), we would like to add declarative support so that they can be declared in JSON/YAML files.
+
+    - Define a LB Next definition language (DSL) in JSON/YAML format and corresponding templates
+    - Define the project layout to organize LB next artifacts
+    - Leverage the IoC Context to manage metadata/instances of such artifacts following the extension point/extension pattern
+    - Define the life cycle and serialization/de-serialization requirements for each type of artifact
+    - Add a boot component to discover/load/resolve/activate the artifacts. The boot process can be tailored for both tooling and runtime
+
+5. **Enable cloud native experience**
     - Allow controllers to be exposed as gRPC services
     - Allow interaction with other gRPC services
     - Integration with microservices deployment infrastructure such as Docker and Kubernetes
     - Integration with service mesh  
 
-6. Tooling (CLI & UI)
-    - Add CLIand UI  tools to:
+6. **Tooling (CLI & UI)**
+    - Add CLI and UI  tools to:
       - Scaffold LoopBack Next applications
       - Manage artifacts such as sequences, actions, controllers, repositories, services, datasources and models  
-
 
 ## A new core foundation
 
@@ -272,6 +295,8 @@ Do we need to build our own core foundation? Can we continue to use Express? Our
 ![loopback-ioc](/images/lb4/loopback-ioc.png)
 
 ### Dependency injection
+
+See [Dependency injection](Dependency-injection.html)
 
 ### Component as the packaging model for extensions
 
