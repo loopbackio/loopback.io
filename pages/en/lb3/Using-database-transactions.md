@@ -39,15 +39,15 @@ As of [v3.12.0](https://github.com/strongloop/loopback-datasource-juggler/tree/v
 
 ## Higher-level Transaction API
 
-Inspired by the way [Objection.js](https://github.com/Vincit/objection.js) is handling transactions by [binding them to models](http://vincit.github.io/objection.js/#binding-models-to-a-transaction), the method [`dataSource.transaction(execute, options, cb)`](https://apidocs.strongloop.com/loopback-datasource-juggler/#datasource-prototype-transaction) offers an interface into a simple way to create transactions and bind them to models, so that the transaction object never needs to be explicitly created, passed along to Model database methods, or committed / rolled-back.
+Inspired by how [Objection.js](http://vincit.github.io/objection.js/#binding-models-to-a-transaction) handles transactions, the method [`dataSource.transaction(execute, options, cb)`](https://apidocs.strongloop.com/loopback-datasource-juggler/#datasource-prototype-transaction) creates transactions and binds them to models. Thus, you don't need to explicitly create a transaction object, passed it along to Model database methods, nor or do you need to commit it or roll it back at the end.
 
-Calling the `transaction(execute, options, cb)` method instead creates the transaction for you, then calls the passed `execute` function if it is provided and passes a `models` argument to it containing all models in this data-source, but as versions that are automatically bound to the transaction that was just created. Smart caching is used to only created the bound models for the properties of `models` that are actually requested.
+Calling the `transaction(execute, options, cb)` method instead creates the transaction for you, then calls the `execute` function argument if it is provided and passes a `models` argument to it containing references to all models in this data-source. These model references are different from the ones in `app.models` in that they are automatically bound to the transaction that was just created. Smart caching is used to only created the bound models for the properties of the `models` argument that are actually accessed.
 
-At the end, `transaction.commit()` or `transaction.rollback()` are then automatically called, based on whether exceptions happen during execution or not. If no callback is provided to be called at the end of the execution, a Promise object is returned that is resolved or rejected as soon as the execution is completed, and the transaction is committed or rolled back.
+At the end, `transaction.commit()` or `transaction.rollback()` is then automatically called, based on whether exceptions happen during execution or not. If no callback is provided to be called at the end of the execution, a Promise object is returned that is resolved or rejected as soon as the execution is completed, and the transaction is committed or rolled back.
 
 ### Examples
 
-Here is how to create an successfully commit a transaction:
+Here is how to create and commit a transaction:
 ```js
 await app.dataSources.db.transaction(async models => {
   const {MyModel} = models;
@@ -78,8 +78,8 @@ console.log(await app.models.MyModel.count()); // 0
 
 The same options are supported as by the `options` argument of the lower-level [`beginTransaction()`](http://apidocs.loopback.io/loopback-datasource-juggler/#transactionmixin-begintransaction) method:
 
-* `otions.isolationLevel`: See [Isolation levels](#isolation-levels)
-* `otions.timeout`: See [Timeout Handling](#timeout-handling)
+* `options.isolationLevel`: See [Isolation levels](#isolation-levels)
+* `options.timeout`: See [Timeout Handling](#timeout-handling)
 
 ### Timeout Handling
 
