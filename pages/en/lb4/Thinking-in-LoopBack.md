@@ -16,10 +16,10 @@ LoopBack 4 is more than just a framework: It's an ecosystem that encourages deve
 - [Smoke test your API input/output](#smoke-test-your-api-inputoutput)
 - [Define your testing strategy](#define-your-testing-strategy)
 - [Incrementally implement features](#incrementally-implement-features)
+- [Implement a custom Sequence](#implement-a-custom-sequence)
 
 To be done:
 
-- [Custom Sequence](#custom-sequence)
 - [Preparing your API for consumption](#preparing-your-api-for-consumption)
 - [Closing thoughts](#closing-thoughts)
 
@@ -1015,9 +1015,111 @@ export class ProductController {
 
 ### Implement a custom Sequence
 
-{% include content/tbd.html %}
+LoopBack 3.x is using Express middleware to customize the sequence of actions executed to handle an incoming request: body-parser middleware is converting the request body from JSON to a JavaScript object, strong-error-handler is creating an error response when the request failed.
 
- - customize your sequence to add app wide functionality
+Express middleware has several shortcomings:
+ - It's based on callback flow control and does not support async functions returning Promises.
+ - The order in which middleware needs to be registered can be confusing, for example request logging middleware must be registered as the first one, despite the fact that the log is written only at the end, once the response has been sent.
+ - The invocation of middleware handlers is controlled by the framework, application developers have very little choices.
+
+In LoopBack Next, we decided to abandon Express/Koa-like middleware and design a different approach that puts the application developer in the front seat. Please refer to [Sequence](./Sequence.md) documentation to learn more about this concept.
+
+In this guide, we are going to modify request handling in our application to print a line in the [Common Log Format](https://en.wikipedia.org/wiki/Common_Log_Format) for each request handled.
+
+Start by writing an acceptance test. Create a new test file (e.g. `sequence.acceptance.ts`) and add the following test:
+
+```ts
+describe('Sequence (acceptance)', () => {
+  let app: HelloWorldApp;
+  let request: Client;
+
+  before(givenEmptyDatabase);
+  beforeEach(givenRunningApp);
+
+  it('prints a log line for each incoming request', async () => {
+    const logs: string[] = [];
+    app.bind('sequence.actions.commonLog').to((msg: string) => logs.push(msg));
+
+    const product = await givenProduct({name: 'Pen', slug: 'pen'});
+    await request.get('/product/pen');
+    expect(logs).to.have.length(1);
+    expect(logs[0]).to.match(
+      /^(::ffff:)?127\.0\.0\.1 - - \[[^]+\] "GET \/product\/pen HTTP\/1.1" 200 -$/,
+    );
+  });
+});
+```
+
+Run the test suite and watch the test to fail.
+
+In the next step, copy the default Sequence implementation to a new project file `src/server/sequence.ts`:
+
+```ts
+const CoreSequenceActions = CoreBindings.SequenceActions;
+
+export class MySequence implements SequenceHandler {
+  constructor(
+    @inject(CoreSequenceActions.FIND_ROUTE) protected findRoute: FindRoute,
+    @inject(CoreSequenceActions.PARSE_PARAMS) protected parseParams: ParseParams,
+    @inject(CoreSequenceActions.INVOKE_METHOD) protected invoke: InvokeMethod,
+    @inject(CoreSequenceActions.SEND) protected send: Send,
+    @inject(CoreSequenceActions.REJECT) protected reject: Reject,
+  ) {}
+
+  async handle(req: ParsedRequest, res: ServerResponse) {
+    try {
+      const route = this.findRoute(req);
+      const args = await this.parseParams(req, route);
+      const result = await this.invoke(route, args);
+      this.send(res, result);
+    } catch (err) {
+      this.reject(res, req, err);
+    }
+  }
+}
+```
+
+Register your new sequence with your `Application`, e.g. by calling `app.sequence(MySequence)`. Run your tests to verify that everything works the same way as before and the new acceptance test is still failing.
+
+Now it's time to customize the default sequence to print a common log line. Edit the `handle` method as follows:
+
+```ts
+async handle(req: ParsedRequest, res: ServerResponse) {
+  try {
+    const route = this.findRoute(req);
+    const args = await this.parseParams(req, route);
+    const result = await this.invoke(route, args);
+    this.send(res, result);
+    this.log([
+      req.socket.remoteAddress,
+      '-',
+      '-',
+      `[${strftime('%d/%b/%Y:%H:%M:%S %z', new Date())}]`,
+      `"${req.method} ${req.path} HTTP/${req.httpVersion}"`,
+      res.statusCode,
+      '-',
+    ].join(' '));
+  } catch (err) {
+    this.reject(res, req, err);
+  }
+}
+```
+
+The new method `log` should be injected - add the following line to `MySequence` constructor arguments:
+
+```ts
+@inject('sequence.actions.log') protected log: (msg: string) => void
+```
+
+When you run the tests now, you will see that our new acceptance tests for logging passes, but some of the older acceptance tests started to fail. This is because `sequence.actions.log` is not bound in our application. Fix that by adding the following line to your application constructor:
+
+```ts
+this.bind('sequence.actions.log').to((msg: String) => console.log(msg));
+```
+
+With this last change in place, your test suite should be all green again.
+
+We will leave the next task as an exercise for our readers: modify the `catch` block to print a common log entry too. Start by writing a unit-test that invokes `MySequence` directly.
 
 ## Preparing your API for consumption
 
