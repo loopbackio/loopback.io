@@ -54,7 +54,7 @@ await app.dataSources.db.transaction(async models => {
   console.log(await MyModel.count()); // 0
   await MyModel.create({foo: 'bar'});
   console.log(await MyModel.count()); // 1
-})
+});
 console.log(await app.models.MyModel.count()); // 1
 ```
 
@@ -92,7 +92,7 @@ try {
     await models.MyModel.create({foo: 'bar'});
   }, {
     timeout: 50
-  })
+  });
 } catch (e) {
   console.log(e); // Error: Transaction is rolled back due to timeout
   console.log(e.code); // TRANSACTION_TIMEOUT
