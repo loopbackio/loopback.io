@@ -26,15 +26,15 @@ Repositories are bound to `repositories.${ClassName}`. See example below for usa
 ```ts
 import { Application } from '@loopback/core';
 import { RepositoryMixin } from '@loopback/repository';
-import { MyRepository, MyRepository2 } from './repository';
+import { AccountRepository, CategoryRepository } from './repository';
 
 // Using the Mixin
 class MyApplication extends RepositoryMixin(Application) {}
 
-// MyRepository will be bound to key `repositories.MyRepository`
-const app = new MyApplication({repositories: [MyRepository]});
-// MyRepository2 will be bound to key `repositories.MyRepository2`
-app.repository(MyRepository2);
+// AccountRepository will be bound to key `repositories.AccountRepository`
+const app = new MyApplication({repositories: [AccountRepository]});
+// CategoryRepository will be bound to key `repositories.CategoryRepository`
+app.repository(CategoryRepository);
 ```
 
 ## Configure datasources
@@ -64,7 +64,7 @@ TypeScript version:
 import {Entity, model, property} from '@loopback/repository';
 
 @model()
-export class Product extends Entity {
+export class Account extends Entity {
   @property({type: 'number', id: true})
   id: number;
 
@@ -83,9 +83,9 @@ import {
   ModelDefinition
 } from '@loopback/repository';
 
-export class Product extends Entity {
+export class Account extends Entity {
   static definition = new ModelDefinition({
-    name: 'Product',
+    name: 'Account',
     properties: {
       id: {type: 'number', id: true},
       name: {type: 'string', required: true},
@@ -102,15 +102,15 @@ TypeScript version:
 
 ```ts
 import {DefaultCrudRepository} from '@loopback/repository';
-import {Product} from '../models/product.model';
+import {Account} from '../models/account.model';
 import {db} from '../datasources/db.datasource';
 
-export class ProductRepository extends DefaultCrudRepository<
-  Product,
-  typeof Product.prototype.id
+export class AccountRepository extends DefaultCrudRepository<
+  Account,
+  typeof Account.prototype.id
 > {
   constructor() {
-    super(Product, db);
+    super(Account, db);
   }
 }
 ```
@@ -119,12 +119,12 @@ JavaScript version:
 
 ```ts
 import {DefaultCrudRepository} from '@loopback/repository';
-import {Product} from '../models/product.model';
+import {Account} from '../models/account.model';
 import {db} from '../datasources/db.datasource';
 
-export class ProductRepository extends DefaultCrudRepository {
+export class AccountRepository extends DefaultCrudRepository {
   constructor() {
-    super(Product, db);
+    super(Account, db);
   }
 }
 ```
@@ -136,8 +136,8 @@ Once your DataSource is defined for your repository, all the CRUD methods you ca
 ```js
 export class AccountController {
   constructor(
-    @inject('repositories.Product')
-    public repository: ProductRepository
+    @inject('repositories.account')
+    public repository: AccountRepository
   ) {}
 }
 ```
@@ -300,7 +300,7 @@ class AccountMicroservice extends Application {
     super();
     const app = this;
     app.controller(AccountController);
-    app.bind('repositories.account').toClass(accountRepository);
+    app.bind('repositories.account').toClass(AccountRepository);
   }
 ```
 2. Inject the bound instance into the repository property of your controller. `inject` can be imported from `@loopback/context`.
