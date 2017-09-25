@@ -1,10 +1,10 @@
 ---
 lang: en
-title: 'Crafting LoopBack Next'
-keywords: LoopBack 4.0, LoopBack-Next
+title: 'Crafting LoopBack 4'
+keywords: LoopBack 4.0, LoopBack 4
 tags:
 sidebar: lb4_sidebar
-permalink: /doc/en/lb4/Crafting-LoopBack-Next.html
+permalink: /doc/en/lb4/Crafting-LoopBack-4.html
 summary:
 ---
 ## Background
@@ -23,7 +23,7 @@ Behind the scenes, LoopBack uses Express routing and middleware as the plumbing 
 
 With many years of development and multiple releases, LoopBack has grown significantly in features and users. Many good parts of LoopBack are well received. As an indication, the community has developed [many extensions](https://github.com/pasindud/awesome-loopback). The core team has also learned a lot from what we have done as well as great feedback from the community.
 
-## Why LoopBack-Next?
+## Why LoopBack 4?
 
 Like many projects, we've started to experience growing pains with LoopBack too, especially around the following observations:
 
@@ -68,12 +68,12 @@ including:
 
 ![loopback-ecosystem](/images/lb4/loopback-ecosystem.png)
 
-The consensus from the core team is to take a bold move and rebuild LoopBack to meet the needs of all above. The decision leads to the inception of LoopBack Next, a new generation of API creation platform.
+The consensus from the core team is to take a bold move and rebuild LoopBack to meet the needs of all above. The decision leads to the inception of LoopBack 4, a new generation of API creation platform.
 See more information at https://strongloop.com/strongblog/announcing-loopback-next/
 
 ## Objectives
 
-LoopBack Next is designated to meet the following objectives to further evolve the framework for even better API creation experiences:
+LoopBack 4 is designated to meet the following objectives to further evolve the framework for even better API creation experiences:
 
 1. Catch up with latest and greatest technology advances.
    - Adopt [ES2016/2017](http://exploringjs.com/es2016-es2017/index.html) and [TypeScript](https://www.typescriptlang.org/) for ease of maintenance and productivity.
@@ -97,7 +97,7 @@ LoopBack Next is designated to meet the following objectives to further evolve t
 
 ## Strategy
 
-We decided not to take a "big-bang" approach to build LoopBack-Next. Instead, we are doing it incrementally in multiple stages with smaller steps. This approach allows us to better engage the community from the beginning. We are following the principles below to pursue architectural simplicity and extensibility:
+We decided not to take a "big-bang" approach to build LoopBack 4. Instead, we are doing it incrementally in multiple stages with smaller steps. This approach allows us to better engage the community from the beginning. We are following the principles below to pursue architectural simplicity and extensibility:
 
 1. **Imperative first, declarative later**
 
@@ -113,7 +113,7 @@ We decided not to take a "big-bang" approach to build LoopBack-Next. Instead, we
 
    Always keep in mind that LoopBack are built for developers by developers. Our first priority is to make API developers' life easier. When we design APIs and user interfaces such as CLI or UI, we want to make sure they are intuitive to our users and natural to their thought process.  
 
-Here are the stages we are marching through toward the final version of LoopBack Next as illustrated below.
+Here are the stages we are marching through toward the final version of LoopBack 4 as illustrated below.
 
 ![loopback-stack](/images/lb4/loopback-stack.png)
 
@@ -123,7 +123,7 @@ Here are the stages we are marching through toward the final version of LoopBack
       * Provide planned features from future JavaScript editions to current JavaScript engines
 
     - Unify the asynchronous programming model/style
-      * 100% promise-based APIs 
+      * 100% promise-based APIs
       * Async/Await as first-class async programming style
 
     - Implement an IoC Container for better visibility and extensibility
@@ -132,7 +132,7 @@ Here are the stages we are marching through toward the final version of LoopBack
 
     - Introduce Component as packaging model for extensions  
       * Component can be a npm module or a local directory
-      * Component encapsulates a list of extensions as a whole 
+      * Component encapsulates a list of extensions as a whole
 
 2. **Validate the core design by implementing an REST/HTTP invocation chain**
     - Add top-down REST API creation which starts with OpenAPI specs
@@ -155,7 +155,7 @@ Here are the stages we are marching through toward the final version of LoopBack
       Implement the core functionality of authentication as a component, which includes:
       - Decorators to denote authentication requirement
       - `authenticate` action to handle authentication
-      - Extension points for various authentication strategies 
+      - Extension points for various authentication strategies
 
 3. **Rebuild our integration and composition capabilities**
     - Introduce repositories to represent data access patterns such as CRUD or Key/Value stores
@@ -189,7 +189,7 @@ Here are the stages we are marching through toward the final version of LoopBack
 
 6. **Tooling (CLI & UI)**
     - Add CLI and UI  tools to:
-      - Scaffold LoopBack Next applications
+      - Scaffold LoopBack 4 applications
       - Manage artifacts such as sequences, actions, controllers, repositories, services, datasources and models  
 
 ## A new core foundation
@@ -316,13 +316,13 @@ See [Sequence and actions](Sequence.html).
 
 ## Example for application developers
 
-Before we go further, let's try to build a 'hello world' application with LoopBack next.
+Before we go further, let's try to build a 'hello world' application with LoopBack 4.
 
 ### Hello-World
 
 ## Example for extension developers
 
-LoopBack next
+LoopBack 4
 ### Hello-Extension
 
 ## References

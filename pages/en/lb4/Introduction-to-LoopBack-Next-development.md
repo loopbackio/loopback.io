@@ -1,7 +1,7 @@
 ---
 lang: en
 title: 'Introduction to LoopBack 4 development'
-keywords: LoopBack 4.0, LoopBack-Next
+keywords: LoopBack 4.0, LoopBack 4
 tags:
 sidebar: lb4_sidebar
 permalink: /doc/en/lb4/Intro-to-LB4-development.html
@@ -10,16 +10,16 @@ summary:
 ## Introduction
 
 This article is for developers familiar with LoopBack who are interested in
-learning and using LoopBack-Next.
+learning and using LoopBack 4.
 
 - Nodejs v4, v6, or v8
 - Using JavaScript, more precisely [ECMAScript 5](https://en.wikipedia.org/wiki/ECMAScript#5th_Edition),
   which means that no clear patterns of object oriented programming such as `class`, `implements` (abstract class), and `extends` (inheritance).  Instead, used [util.inherits](https://nodejs.org/docs/latest/api/util.html#util_util_inherits_constructor_superconstructor) everywhere.  For asynchronous programming, `async` package or `Promise` is our standard technique.
 - Not using [TypeScript](https://www.typescriptlang.org/) -- no compile-time type checks; free-fall scripting. :-)
 
-When I started to look around LoopBack Next code base, I quickly got confused.  A couple of examples among others:
+When I started to look around LoopBack 4 code base, I quickly got confused.  A couple of examples among others:
 
-First, the LoopBack Next source code does not look like JavaScript.  For example,
+First, the LoopBack 4 source code does not look like JavaScript.  For example,
 
 - What are the [square brackets](http://es6-features.org/#ComputedPropertyNames) around object property name?
 ```js
@@ -50,15 +50,15 @@ describe('api spec', () => {
 });
 ```
 
-Secondly, there are several new technologies we use in LoopBack Next and each of them is significantly different from what I got used to.  Mentioned [ECMAScript 5](https://en.wikipedia.org/wiki/ECMAScript#5th_Edition) and [TypeScript](https://www.typescriptlang.org/) earlier; and [OpenAPI](https://www.openapis.org/) is another.  They are cool new technologies that make LoopBack Next shine, but I felt being pulled out of my comfort zone many times a day.
+Secondly, there are several new technologies we use in LoopBack 4 and each of them is significantly different from what I got used to.  Mentioned [ECMAScript 5](https://en.wikipedia.org/wiki/ECMAScript#5th_Edition) and [TypeScript](https://www.typescriptlang.org/) earlier; and [OpenAPI](https://www.openapis.org/) is another.  They are cool new technologies that make LoopBack 4 shine, but I felt being pulled out of my comfort zone many times a day.
 
-This blog will cover these "conceptual roadblocks" in the following ("Foundation") section.  The remainder covers LoopBack-Next with focus on three core concepts: Controllers, Components, and Sequence.
+This blog will cover these "conceptual roadblocks" in the following ("Foundation") section.  The remainder covers LoopBack 4 with focus on three core concepts: Controllers, Components, and Sequence.
 
 ## Foundation
 
 I'm going to summarize a few key concepts and a list of tools I found useful.  That way, we can quickly understand the big picture without getting bogged down to details of each technology; and with the list of tools, we can go back to the details when needed.
 
-LoopBack Next is built on TypeScript and OpenAPI.  TypeScript is built on ECMAScript 8.  Quickly browsing those technologies will help solidify our footage.
+LoopBack 4 is built on TypeScript and OpenAPI.  TypeScript is built on ECMAScript 8.  Quickly browsing those technologies will help solidify our footage.
 
 ### ECMAScript
 
@@ -71,7 +71,7 @@ ECMAScript is the standard for JavaScript:
 
 **[async/await, a.k.a "async functions"](https://tc39.github.io/ecmascript-asyncawait/)**
 The ECMA TC39 committee is responsible for evolving the ECMAScript programming language and authoring the specification.
-`Async Functions and Await` is the notation LoopBack Next uses all over the place for asynchronous operations.  You can use the standard `try-catch` clause to catch errors.  That is the ultimate.  Here is my opinionated historical view of `asynchronous operations` in Nodejs.
+`Async Functions and Await` is the notation LoopBack 4 uses all over the place for asynchronous operations.  You can use the standard `try-catch` clause to catch errors.  That is the ultimate.  Here is my opinionated historical view of `asynchronous operations` in Nodejs.
 
 Note that the TypeScript code piece in each pattern can be transpiled and run by: `tsc codepiece.ts; node codepiece.js`  Please note that the function `randomError` is shared by multiple functions.
 
@@ -90,9 +90,9 @@ I like the `Getting Started With TypeScript` and have read from the beginning to
 
 [OpenAPI](https://www.openapis.org/) (previously know as Swagger), is a specification for machine-readable interface files for describing, producing, consuming, and visualizing REST web services.
 
-LoopBack-Next defines all endpoints declaratively using the OpenAPI specification.  The [Swagger editor](https://editor.swagger.io) is useful to debug and build complex APIs.
+LoopBack 4 defines all endpoints declaratively using the OpenAPI specification.  The [Swagger editor](https://editor.swagger.io) is useful to debug and build complex APIs.
 
-In a LoopBack Next app, typically you don't put the header portion of the API spec(see below) because LoopBack Next adds it in @api decorator (we'll discuss "decorator" later in this blog).  [The swagger editor](https://editor.swagger.io), which is out side of LoopBack Next, will complain without the header portion.
+In a LoopBack 4 app, typically you don't put the header portion of the API spec(see below) because LoopBack 4 adds it in @api decorator (we'll discuss "decorator" later in this blog).  [The swagger editor](https://editor.swagger.io), which is out side of LoopBack 4, will complain without the header portion.
 
 ```js
 {
@@ -108,7 +108,7 @@ In a LoopBack Next app, typically you don't put the header portion of the API sp
 }
 ```
 
-LoopBack-Next also provides `validateApiSpec` in the testlab so that you can validate it in `npm test` of your app.  
+LoopBack 4 also provides `validateApiSpec` in the testlab so that you can validate it in `npm test` of your app.  
 
 ## Asynchronous patterns
 
@@ -263,7 +263,7 @@ awaitDelay();
 ```
 
 
-## LoopBack Next
+## LoopBack 4
 
 We're going to study three key concepts: controller and API spec, components and providers, and custom sequence.  Working sample codes are available in several places, one of which is [Hello World](https://github.com/strongloop/loopback-next-hello-world).  I'm going to discuss specific conceptual roadblocks I stumbled upon.
 
@@ -328,11 +328,11 @@ export const apiSpec =
 `@api` is a [class decorator](https://www.typescriptlang.org/docs/handbook/decorators.html).  The class decorator,
 `api` is a function that is called when the class, HelloWorldController is defined (only once).  In this case, `api` function attaches the API specification to HelloWorldController class.  The decorator website describes some relatively complex concept, but we can just read the class decorator section to get a high-level understanding of decorator.  The concept is similar for other types of decorators.  That's enough for now.
 
-In the above sample code, `@inject` is a `property decorator` defined by LoopBack Next.  It's a very important LoopBack Next concept.  It works this way: `@inject` acquires the value bound to the key: `defaultName` in the application's context, then assigns the value to `name` property when the class `HelloWorldControlle` is instantiated.
+In the above sample code, `@inject` is a `property decorator` defined by LoopBack 4.  It's a very important LoopBack 4 concept.  It works this way: `@inject` acquires the value bound to the key: `defaultName` in the application's context, then assigns the value to `name` property when the class `HelloWorldControlle` is instantiated.
 
-Please note that we introduced another new term, `Context`.  Context is simply a memory space where LoopBack Next maintains key-value pairs.  There are two types of context: application context and request context.  In this blog, we deal with only application context.
+Please note that we introduced another new term, `Context`.  Context is simply a memory space where LoopBack 4 maintains key-value pairs.  There are two types of context: application context and request context.  In this blog, we deal with only application context.
 
-The LoopBack Next specific decorator, `@inject` can also be used as a `parameter decorator` for constructor, e.g.:
+The LoopBack 4 specific decorator, `@inject` can also be used as a `parameter decorator` for constructor, e.g.:
 
 ```js
 class MyClass {
@@ -348,7 +348,7 @@ Who binds `defaultName` key to the value?  It depends.  You can do that by app.b
 
 ### Components and providers
 
-Component defines a functionality.  LoopBack Next application can be viewed as a collection of components.  In a component, one or more providers implement the functionality.  In the Logger provider example below, (a) 'logger' key is  bound to the provider instance when Application is instantiated, and (b) the client is acquiring the logger instance by `app.get('logger')` and using the logger to display the message, 'My application has started.'.  Please also note that another component, `AuthenticationComponent` is attached to the application.
+Component defines a functionality.  LoopBack 4 application can be viewed as a collection of components.  In a component, one or more providers implement the functionality.  In the Logger provider example below, (a) 'logger' key is  bound to the provider instance when Application is instantiated, and (b) the client is acquiring the logger instance by `app.get('logger')` and using the logger to display the message, 'My application has started.'.  Please also note that another component, `AuthenticationComponent` is attached to the application.
 
 Let's take a close look at `LoggerComponent` implementation.  Please note that the key `logger` is bound to the logger instance.  With the binding, the client can access the logger instance by `app.get('logger')`.
 
@@ -392,7 +392,7 @@ export class LoggerProvider implements Provider<Logger> {
 
 Controllers implement end points and business logic for each end point of the application.   Sequence defines the functional structure of the application.  There can be many end points associated with the application.  There is only one sequence per application.
 
-Usually, the default sequence implemented by LoopBack Next core works for many applications.  In such a case, there is nothing the application needs to do.  However, to add a piece of new functional element to the application, you will implement the entire sequence in your application.  Here is how it works:
+Usually, the default sequence implemented by LoopBack 4 core works for many applications.  In such a case, there is nothing the application needs to do.  However, to add a piece of new functional element to the application, you will implement the entire sequence in your application.  Here is how it works:
 
 Client:
 ```js
@@ -400,7 +400,7 @@ const app = new Application();
 app.sequence(MySequence);
 ```
 
-Below is an example implementation of sequence.  We've studied `@inject` as a parameter decorator.  The four `sequence.actions` keys are bound to the corresponding essential sequence actions.  Since the essential sequence actions are implemented by LoopBack Next, you can simply inject them in your custom sequence as shown below.
+Below is an example implementation of sequence.  We've studied `@inject` as a parameter decorator.  The four `sequence.actions` keys are bound to the corresponding essential sequence actions.  Since the essential sequence actions are implemented by LoopBack 4, you can simply inject them in your custom sequence as shown below.
 
 The custom sequence below is defined to do something special with req and res objects.  That's the sole purpose of MySequence.
 
@@ -432,7 +432,7 @@ class MySequence extends DefaultSequence {
 As we saw in early part of this blog, the API spec is attached to the application controller.
 Once attached, the loaded API spec can be accessed by `app.getApiSpec()`.
 
-LoopBack Next provides the OpewnAPI spec validator, `validateApiSpec` as part of LoopBack Next lestlab.
+LoopBack 4 provides the OpewnAPI spec validator, `validateApiSpec` as part of LoopBack 4 lestlab.
 
 ```js
 const validateApiSpec = require('@loopback/testlab').validateApiSpec;

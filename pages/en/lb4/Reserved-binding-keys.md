@@ -1,7 +1,7 @@
 ---
 lang: en
 title: 'Reserved binding keys'
-keywords: LoopBack 4.0, LoopBack-Next
+keywords: LoopBack 4.0, LoopBack 4
 toc_level: 1
 tags:
 sidebar: lb4_sidebar
@@ -12,7 +12,7 @@ summary:
 
 When using [dependency injection](Dependency-injection.html) there are a few things to keep in mind with regards to binding keys.
 
-Different packages and components for LoopBack-Next may have some bindings already defined. You can change the default behavior by overriding the default binding, but you must ensure the interface of the new binding is the same as the default (but behavior can be different).
+Different packages and components for LoopBack 4 may have some bindings already defined. You can change the default behavior by overriding the default binding, but you must ensure the interface of the new binding is the same as the default (but behavior can be different).
 
 Following is a list that documents the binding keys in use by various `@loopback` packages and their `Type` so you can easily look at their interface in the [API Docs](http://apidocs.loopback.io).
 

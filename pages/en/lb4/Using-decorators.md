@@ -1,7 +1,7 @@
 ---
 lang: en
 title: 'Using decorators'
-keywords: LoopBack 4.0, LoopBack-Next
+keywords: LoopBack 4.0, LoopBack 4
 tags:
 sidebar: lb4_sidebar
 permalink: /doc/en/lb4/Using-decorators.html

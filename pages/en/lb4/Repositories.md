@@ -1,7 +1,7 @@
 ---
 lang: en
 title: 'Repositories'
-keywords: LoopBack 4.0, LoopBack-Next
+keywords: LoopBack 4.0, LoopBack 4
 tags:
 sidebar: lb4_sidebar
 permalink: /doc/en/lb4/Repositories.html
@@ -39,7 +39,7 @@ app.repository(CategoryRepository);
 
 ## Configure datasources
 
-You can define a DataSource using legacy Juggler in your LoopBack Next app as follows:
+You can define a DataSource using legacy Juggler in your LoopBack 4 app as follows:
 
 ```js
 import {juggler, DataSourceConstructor} from '@loopback/repository';
@@ -254,7 +254,7 @@ async updateAccount(where, data) {
 Please See [Testing Your Application](Testing-Your-Application.html) section in order to set up and write unit, acceptance, and integration tests for your application.
 
 ## Persisting Data without Juggler [Using MySQL database]
-LoopBack Next gives you the flexibility to create your own custom Datasources which utilize your own custom connector for your favourite back end database. You can then fine tune your CRUD methods to your liking.
+LoopBack 4 gives you the flexibility to create your own custom Datasources which utilize your own custom connector for your favourite back end database. You can then fine tune your CRUD methods to your liking.
 
 ### Example Application
 You can look at [the account-without-juggler application as an example.](https://github.com/strongloop/loopback-next-example/tree/master/services/account-without-juggler)

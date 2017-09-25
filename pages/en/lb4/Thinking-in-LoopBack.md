@@ -1,7 +1,7 @@
 ---
 lang: en
 title: 'Thinking in LoopBack'
-keywords: LoopBack 4.0, LoopBack-Next
+keywords: LoopBack 4.0, LoopBack 4
 tags:
 sidebar: lb4_sidebar
 permalink: /doc/en/lb4/Thinking-in-LoopBack.html
@@ -1022,7 +1022,7 @@ Express middleware has several shortcomings:
  - The order in which middleware needs to be registered can be confusing, for example request logging middleware must be registered as the first one, despite the fact that the log is written only at the end, once the response has been sent.
  - The invocation of middleware handlers is controlled by the framework, application developers have very little choices.
 
-In LoopBack Next, we decided to abandon Express/Koa-like middleware and design a different approach that puts the application developer in the front seat. Please refer to [Sequence](./Sequence.md) documentation to learn more about this concept.
+In LoopBack 4, we decided to abandon Express/Koa-like middleware and design a different approach that puts the application developer in the front seat. Please refer to [Sequence](./Sequence.md) documentation to learn more about this concept.
 
 In this guide, we are going to modify request handling in our application to print a line in the [Common Log Format](https://en.wikipedia.org/wiki/Common_Log_Format) for each request handled.
 
@@ -1131,9 +1131,9 @@ We will leave the next task as an exercise for our readers: modify the `catch` b
 
 ## Closing thoughts
 
-Congratulations! You now have successfully created and tested an API with LoopBack Next. We hope you enjoy the test-drive. Your feedback matters and please share your thoughts with us.
+Congratulations! You now have successfully created and tested an API with LoopBack 4. We hope you enjoy the test-drive. Your feedback matters and please share your thoughts with us.
 
-This is just the beginning of the full LoopBack-Next developer experience. The first beta release lays out the new foundation of LoopBack for extension developers. It also demonstrates a path to create REST APIs from OpenAPI specs together with Controllers and Repositories. More features will be added in the coming weeks and months.
+This is just the beginning of the full LoopBack 4 developer experience. The first beta release lays out the new foundation of LoopBack for extension developers. It also demonstrates a path to create REST APIs from OpenAPI specs together with Controllers and Repositories. More features will be added in the coming weeks and months.
 
 Here is a sneak peek of what's coming:
 
@@ -1160,4 +1160,4 @@ Here is a sneak peek of what's coming:
 
 - Plain JavaScript: [loopback-next issue #560](https://github.com/strongloop/loopback-next/issues/560)
 
-The train is moving and welcome on board! Your participation and contribution will make LoopBack Next an even more powerful framework and greater community/ecosystem. The team is very excited about the new journey. We look forward to working with you on more ideas, more pull requests, and more extension modules. Let's make LoopBack Next rock together.
+The train is moving and welcome on board! Your participation and contribution will make LoopBack 4 an even more powerful framework and greater community/ecosystem. The team is very excited about the new journey. We look forward to working with you on more ideas, more pull requests, and more extension modules. Let's make LoopBack 4 rock together.

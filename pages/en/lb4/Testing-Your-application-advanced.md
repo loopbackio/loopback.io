@@ -1,7 +1,7 @@
 ---
 lang: en
 title: 'Testing your application (advanced)'
-keywords: LoopBack 4.0, LoopBack-Next
+keywords: LoopBack 4.0, LoopBack 4
 tags:
 sidebar: lb4_sidebar
 permalink: /doc/en/lb4/Testing-your-app-advanced.html
