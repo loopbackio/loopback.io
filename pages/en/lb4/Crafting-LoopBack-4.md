@@ -58,8 +58,7 @@ Since the release of 3.x, the team has been brainstorming about how to sustain a
 - How to scale the development and maintenance of LoopBack? How do we allow larger development teams to collaborate on creating APIs using LoopBack?
 - How to further grow the community and expand its ecosystem? What can we do to bring more users and contributors to LoopBack?
 
-LoopBack has gained traction among a spectrum of users beyond Node.js application developers,
-including:
+LoopBack has gained traction among a spectrum of users beyond Node.js application developers, including:
 
 - **API developers** - Use LoopBack to create APIs in Node.js.
 - **LoopBack maintainers and contributors** - Build and maintain modules by the LoopBack project .
@@ -95,7 +94,7 @@ LoopBack 4 is designated to meet the following objectives to further evolve the 
    - Introduce new concepts such as controllers and repositories to represent different responsibilities.
    - Break down the runtime as a set of services and utilize the extension points/extensions pattern to manage the registration, resolution, and composition.
 
-## Strategy
+## Design Principles
 
 We decided not to take a "big-bang" approach to build LoopBack 4. Instead, we are doing it incrementally in multiple stages with smaller steps. This approach allows us to better engage the community from the beginning. We are following the principles below to pursue architectural simplicity and extensibility:
 
@@ -113,11 +112,12 @@ We decided not to take a "big-bang" approach to build LoopBack 4. Instead, we ar
 
    Always keep in mind that LoopBack are built for developers by developers. Our first priority is to make API developers' life easier. When we design APIs and user interfaces such as CLI or UI, we want to make sure they are intuitive to our users and natural to their thought process.  
 
+## Implementation Stages
+
 Here are the stages we are marching through toward the final version of LoopBack 4 as illustrated below.
 
-![loopback-stack](/images/lb4/loopback-stack.png)
-
 1. **Rebase and rewrite the core**
+
     - Leverage TypeScript for better code quality and productivity
       * Provide optional type system for JavaScript.
       * Provide planned features from future JavaScript editions to current JavaScript engines
@@ -135,6 +135,7 @@ Here are the stages we are marching through toward the final version of LoopBack
       * Component encapsulates a list of extensions as a whole
 
 2. **Validate the core design by implementing an REST/HTTP invocation chain**
+
     - Add top-down REST API creation which starts with OpenAPI specs
 
     - Build sequence of actions for inbound http processing
@@ -158,6 +159,7 @@ Here are the stages we are marching through toward the final version of LoopBack
       - Extension points for various authentication strategies
 
 3. **Rebuild our integration and composition capabilities**
+
     - Introduce repositories to represent data access patterns such as CRUD or Key/Value stores
     - Provide a reference implementation of CRUD and KV flavors of repository interfaces using the legacy juggler and connectors
     - Refactor/rewrite the juggler into separate modules
@@ -181,22 +183,30 @@ Here are the stages we are marching through toward the final version of LoopBack
     - Define the life cycle and serialization/de-serialization requirements for each type of artifact
     - Add a boot component to discover/load/resolve/activate the artifacts. The boot process can be tailored for both tooling and runtime
 
-5. **Enable cloud native experience**
+5. **Tooling (CLI & UI)**
+
+    - Add CLI and UI  tools to:
+      - Scaffold LoopBack 4 applications
+      - Manage artifacts such as sequences, actions, controllers, repositories, services, datasources and models  
+
+6. **Enable cloud native experience**
+
     - Allow controllers to be exposed as gRPC services
     - Allow interaction with other gRPC services
     - Integration with microservices deployment infrastructure such as Docker and Kubernetes
     - Integration with service mesh  
 
-6. **Tooling (CLI & UI)**
-    - Add CLI and UI  tools to:
-      - Scaffold LoopBack 4 applications
-      - Manage artifacts such as sequences, actions, controllers, repositories, services, datasources and models  
+The high level building blocks are illustrated in the diagram below:
 
-## A new core foundation
+![loopback-stack](/images/lb4/loopback-stack.png)
 
-### Key ingredients for an ideal core
+Please note there is a common layer below the different functional areas in the stack. Let's examine the need to build a new core foundation for LoopBack 4.
 
-LoopBack itself is very modular. For example, a typical LoopBack application's dependency graph will have the following npm modules:
+## A New Core Foundation
+
+### The Core Responsibility
+
+LoopBack itself is already modular. For example, a typical LoopBack 3.x application's dependency graph will have the following npm modules:
 
 - loopback
 - strong-remoting
@@ -204,69 +214,63 @@ LoopBack itself is very modular. For example, a typical LoopBack application's d
 - loopback-connector-*
 - loopback-component-explorer
 
-Management of these artifacts is a key part of LoopBack but it's beyond the scope of Express and we have to introduce our own ways to manage them as they are added to LoopBack. Express helped LoopBack quickly got off the ground and grew with good success. But LoopBack needs a more flexible foundation to further build out its capabilities and ecosystem.
-
-LoopBack manages more and more artifacts across different modules. The following are a list of built-in types of artifacts that LoopBack support out of box:
+LoopBack manages various artifacts across different modules. The following are a list of built-in types of artifacts that LoopBack 3.x supports out of box:
 
 - Model definitions/relations: describes data models and their relations
 - Validation: validates model instances and properties
 - Model configurations: configures models and attaches them to data sources
-- Datasources: configures connectivity to the backend
-- Connectors: implements interactions with the underlying backend
-- Components: wraps a module
+- Datasources: configures connectivity to backend systems
+- Connectors: implements interactions with the underlying backend system
+- Components: wraps a module that be bootstrapped with LoopBack
 - Remoting: maps JavaScript methods to REST API operations
-- ACLs
-- Express middleware like actions
-- Utility functions
-- Built-in models
-- Remote hooks
-- CRUD operation hooks
-- Connector hooks
-
+- ACLs: controls access to protected resources
+- Built-in models: provides set of prebuilt models such as User, AccessToken, and Role
 - Hooks/interceptors
   - Express middleware
   - remote hooks
   - CRUD operation hooks
   - connector hooks
-
 - Security integration
   - Identity and token management
   - Authentication schemes
     - Passport component for various authentication strategies
-  - Authorization (ACL)
-
 - Storage component for various local/cloud object storage systems
-- Push component for IOS and Android push notifications
-
-- Different api styles
-  - jsonapi.org
+  - Local file system
+  - Amazon S3
+  - Rackspace
+  - Azure
+  - Google Cloud
+  - OpenStack
+  - IBM Cloud Object Storage
+- Push component for mobile push notifications
+  - iOS 
+  - Android
+- Different API styles
+  - REST
   - gRPC
   - GraphQL
 
-Metadata for these artifacts form the knowledge base for LoopBack to glue all the pieces together and build some magic to deal with API use cases.
+Metadata for these artifacts form the knowledge base for LoopBack to glue all the pieces together and build capabilities to handle common API use cases. 
 
-Representation of such knowledge base is the most critical construct for LoopBack. This knowledge base will bring all internal and external build blocks together by providing a consistent way to contribute and consume.     
+How to represent the metadata and their relations is the key responsibility of the LoopBack core foundation. It needs to provide a consistent way to contribute and consume such building blocks. 
+
+### Key Ingredients for the Core
+
+The core foundation for LoopBack 4 is responsible for managing various artifacts independent of the nature of such artifacts.
 
 - A consistent registry to provide visibility and addressability for all artifacts
-- Extensibility
+
+  - Visibility: Each artifact has a unique address and can be accessed via a uri or key. Artifacts can also be visible at different scopes.
+
+  - Extensibility: LoopBack artifacts can be managed by types. New artifact types can be introduced. Instances for a given type can be added, removed, or replaced. Organizing artifacts in a hierarchy of extension points/extensions decouples providers and consumers.
+
 - Ability to compose with dependency resolution
 
-- Visibility
+  - Composability: It's common that one artifact has dependencies on other artifacts. With dependency injection or service locator patterns, the core will greatly simplify how multiple artifacts work together. 
 
-  Each artifact has a unique address and can be accessed via a uri or key. Artifacts can also be visible at different scopes.
+- A packaging model for extensions
 
-- Extensibility
-
-  LoopBack artifacts are managed by types. New artifact types can be introduced. Instances for a given type can be added, removed, or replaced.
-
-- Composability
-
-  It's common that one artifact has dependencies on other artifacts.
-
-- Pluggability
-
-  Extensions can be organized and contributed as a whole. We need to have a packaging model so that extension developers can create their own modules as bundles and plug into a LoopBack application.
-
+  - Pluggability: Extensions can be organized and contributed as a whole. We need to have a packaging model so that extension developers can create their own modules as bundles and plug into a LoopBack application.
 
 ### Why not Express?
 
