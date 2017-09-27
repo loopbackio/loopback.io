@@ -90,8 +90,8 @@ children:
   url: /doc/en/lb4/Migration-guide.html
   output: 'web, pdf'
 
-- title: 'Crafting LoopBack-Next'
-  url: /doc/en/lb4/Crafting-LoopBack-Next.html
+- title: 'Crafting LoopBack 4'
+  url: /doc/en/lb4/Crafting-LoopBack-4.html
   output: 'web, pdf'
 
 - title: 'Reference'
