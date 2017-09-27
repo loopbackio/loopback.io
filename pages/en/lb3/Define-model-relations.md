@@ -41,7 +41,6 @@ In the Coffee Shop Reviews app, the models are related as follows:
 *   A review belongs to a reviewer.
 *   A reviewer has many reviews.
 
-
 ## Define relations
 
 Now, you're going to define these relationships between the models.  In all there are five relations.  Once again, you'll use the `lb` command, but this time you'll use the `relation` sub-command ([relation generator](Relation-generator)).  For each relation, enter:
