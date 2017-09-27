@@ -41,6 +41,7 @@ In the Coffee Shop Reviews app, the models are related as follows:
 *   A review belongs to a reviewer.
 *   A reviewer has many reviews.
 
+
 ## Define relations
 
 Now, you're going to define these relationships between the models.  In all there are five relations.  Once again, you'll use the `lb` command, but this time you'll use the `relation` sub-command ([relation generator](Relation-generator)).  For each relation, enter:
@@ -93,14 +94,14 @@ The tool will prompt you to provide the information required to define the relat
 ? Optionally enter a custom foreign key: publisherId
 ```
 
-**A reviewer has many reviews**; foreign key is `publisherId`.
+**A reviewer has many reviews**; No foreign key.
 
 ```
 ? Select the model to create the relationship from: Reviewer
 ? Relation type: has many
 ? Choose a model to create a relationship with: Review
 ? Enter the property name for the relation: reviews
-? Optionally enter a custom foreign key: publisherId
+? Optionally enter a custom foreign key:
 ? Require a through model? No
 ```
 
@@ -135,7 +136,7 @@ Likewise, `common/models/reviewer.json` should have this:
   "reviews": {
     "type": "hasMany",
     "model": "Review",
-    "foreignKey": "publisherId"
+    "foreignKey": ""
   }
 },
 ...
