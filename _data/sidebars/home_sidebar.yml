@@ -2,7 +2,7 @@ title: LoopBack
 url: /doc/index.html
 children:
 
-- title: LoopBack 3.0
+- title: LoopBack 3.x
   url: /doc/en/lb3/index.html
   output: web
 

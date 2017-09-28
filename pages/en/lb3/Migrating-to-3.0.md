@@ -1,5 +1,5 @@
 ---
-title: "Migrating apps to LoopBack 3.0"
+title: "Migrating apps to LoopBack 3.x"
 lang: en
 layout: page
 toc: false

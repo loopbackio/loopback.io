@@ -7,7 +7,7 @@
 ## top level property=================
 # entries: [ menuitem ]
 
-title: LoopBack 3.0
+title: LoopBack 3.x
 url: /doc/en/lb3/index.html
 children:
 
@@ -24,7 +24,7 @@ children:
   url: /doc/en/lb3/3.0-Release-Notes.html
   output: 'web, pdf'
 
-- title: 'Migrating apps to v3.0'
+- title: 'Migrating apps to v3'
   url: /doc/en/lb3/Migrating-to-3.0.html
   output: 'web, pdf'
 

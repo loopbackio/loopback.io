@@ -1,6 +1,6 @@
 ---
 lang: en
-title: LoopBack 3.0
+title: LoopBack 3.x
 toc: false
 keywords: LoopBack 3.0
 tags: [getting_started]
@@ -9,9 +9,9 @@ permalink: /doc/en/lb3/index.html
 summary: LoopBack 3.0 is the current release.
 ---
 
-{% include important.html content="LoopBack 3.0 is the current production release.
+{% include important.html content="LoopBack 3.x is the current production release.
 It was released for general availability on 21 Dec 2016; see the [release announcement](https://strongloop.com/strongblog/announcing-loopback-3-0-ga/).
-LoopBack 2.0 is now the [LTS release](/doc/en/contrib/Long-term-support.html).
+LoopBack 2.x is now the [LTS release](/doc/en/contrib/Long-term-support.html).
 " %}
 
 ## Install LoopBack tools
@@ -26,17 +26,17 @@ npm install -g loopback-cli
 
 For more information, see [Installation](Installation).
 
-## Upgrading an existing StrongLoop installation to version 3.0
+## Upgrading an existing StrongLoop installation to version 3
 
 For instructions to upgrade existing StrongLoop installation, see [Updating to the latest version](Updating-to-the-latest-version.html).
 
-## Migrating your app to version 3.0
+## Migrating your app to version 3
 
 Read the [Migration Guide](Migrating-to-3.0.html) for instructions on upgrading
 to LoopBack 3.0.
 
 The [Release Notes](3.0-Release-Notes) provide a comprehensive reference for
-all the changes between 2.x and 3.0.
+all the changes between 2.x and 3.x.
 
 ## Getting started
 
