@@ -10,24 +10,27 @@ summary:
 ## Introduction
 
 This article is for developers familiar with LoopBack who are interested in
-learning and using LoopBack 4.
+learning and using LoopBack 4, and familiar in general with:
 
-- Nodejs v4, v6, or v8
-- Using JavaScript, more precisely [ECMAScript 5](https://en.wikipedia.org/wiki/ECMAScript#5th_Edition),
-  which means that no clear patterns of object oriented programming such as `class`, `implements` (abstract class), and `extends` (inheritance).  Instead, used [util.inherits](https://nodejs.org/docs/latest/api/util.html#util_util_inherits_constructor_superconstructor) everywhere.  For asynchronous programming, `async` package or `Promise` is our standard technique.
-- Not using [TypeScript](https://www.typescriptlang.org/) -- no compile-time type checks; free-fall scripting. :-)
+- Nodejs v4, v6, or v8.
+- JavaScript, specifically [ECMAScript 5](https://en.wikipedia.org/wiki/ECMAScript#5th_Edition),
+  with no object-oriented features such as `class`, `implements` (abstract class), and `extends` (inheritance).  Instead, you use  [util.inherits](https://nodejs.org/docs/latest/api/util.html#util_util_inherits_constructor_superconstructor) everywhere.  For asynchronous programming, `async` package or `Promise` is the standard technique.
+- No experience with [TypeScript](https://www.typescriptlang.org/), that is, no compile-time type checking.
 
-When I started to look around LoopBack 4 code base, I quickly got confused.  A couple of examples among others:
+### We're not in Kansas any more
 
-First, the LoopBack 4 source code does not look like JavaScript.  For example,
+There are lot of fundamental differences between LoopBack 4 and LoopBack 3.x
+The LoopBack 4 source code does not look like JavaScript, do if you're expecting standard JavaScript, you'll quickly be disoriented.  For example:
 
-- What are the [square brackets](http://es6-features.org/#ComputedPropertyNames) around object property name?
+What are the [square brackets](http://es6-features.org/#ComputedPropertyNames) around object property name in this code sample?
 ```js
 var obj = {
   [key]: 'Ted Johnson',
 }
 ```
-- I see how [the class](http://es6-features.org/#ClassDefinition) is defined.  My source code editor such as [VS Code](https://code.visualstudio.com/) various type definitions in mouse-over pop-ups, which is super cool, but what's that [@inject](https://www.typescriptlang.org/docs/handbook/decorators.html)?
+
+I see how [the class](http://es6-features.org/#ClassDefinition) is defined.  My source code editor such as [VS Code](https://code.visualstudio.com/) shows type definitions in mouse-over pop-ups, which is cool, but what's that [@inject](https://www.typescriptlang.org/docs/handbook/decorators.html)?
+
 ```js
 export class MyProvider implements Provider<Strategy> {
   constructor(
@@ -38,7 +41,9 @@ export class MyProvider implements Provider<Strategy> {
   value() : ValueOrPromise<Strategy> {}
 }
 ```
-- Yeah, I know `async`, but wait, what's `await`?
+
+I know `async`, but wait, what's `await`?
+
 ```js
 describe('api spec', () => {
   let app = createApp();
@@ -50,20 +55,20 @@ describe('api spec', () => {
 });
 ```
 
-Secondly, there are several new technologies we use in LoopBack 4 and each of them is significantly different from what I got used to.  Mentioned [ECMAScript 5](https://en.wikipedia.org/wiki/ECMAScript#5th_Edition) and [TypeScript](https://www.typescriptlang.org/) earlier; and [OpenAPI](https://www.openapis.org/) is another.  They are cool new technologies that make LoopBack 4 shine, but I felt being pulled out of my comfort zone many times a day.
+Secondly, there are several new technologies we use in LoopBack 4 and each of them is significantly different from what we're used to.  I mentioned [ECMAScript 5](https://en.wikipedia.org/wiki/ECMAScript#5th_Edition) and [TypeScript](https://www.typescriptlang.org/) earlier; and [OpenAPI](https://www.openapis.org/) is another.  They are cool new technologies that make LoopBack 4 shine, but they will require some getting used to.
 
 This blog will cover these "conceptual roadblocks" in the following ("Foundation") section.  The remainder covers LoopBack 4 with focus on three core concepts: Controllers, Components, and Sequence.
 
 ## Foundation
 
-I'm going to summarize a few key concepts and a list of tools I found useful.  That way, we can quickly understand the big picture without getting bogged down to details of each technology; and with the list of tools, we can go back to the details when needed.
+I'm going to summarize a few key concepts and a list of tools I found useful.  That way, you can quickly understand the big picture without getting bogged down in details of each technology; and with the list of tools, you can go back to the details when needed.
 
-LoopBack 4 is built on TypeScript and OpenAPI.  TypeScript is built on ECMAScript 8.  Quickly browsing those technologies will help solidify our footage.
+LoopBack 4 is built on TypeScript and OpenAPI.  TypeScript is built on ECMAScript 8.  Quickly browsing those technologies will help you find your footing.
 
 ### ECMAScript
 
 **[ECMAScript 5 vs. 6 — New Features: Overview and Comparison](http://es6-features.org/#Constants)**
-The ES5 vs. ES6 overview and comparison site was very helpful to me.  Reading through the short list of code comparison between ES5 and ES6 gave me a good perspective.  I still go back to the site occasionaly.  When I wanted to understand what's not covered there, I went to the spec and other options, but that rarely occurred.
+The ES5 vs. ES6 overview and comparison site is helpful.  Reading through the short list of code comparison between ES5 and ES6 provides a good perspective.  
 
 ECMAScript is the standard for JavaScript:
 - [ECMAScript 8](https://en.wikipedia.org/wiki/ECMAScript#8th_Edition_-_ECMAScript_2017)
@@ -80,11 +85,13 @@ Note that the TypeScript code piece in each pattern can be transpiled and run by
 [TypeScript](https://www.typescriptlang.org/) provides a type system for ECMAScript 8.
 
 Some good references:
-- [Getting Started With TypeScript](https://basarat.gitbooks.io/typescript/docs/types/type-system.html)
+- [Getting Started With TypeScript](https://basarat.gitbooks.io/typescript/docs/types/type-system.html): a good introduction.
 - [Declaration Files](https://basarat.gitbooks.io/typescript/docs/types/ambient/d.ts.html)
 - [Decorators](https://www.typescriptlang.org/docs/handbook/decorators.html)
 
-I like the `Getting Started With TypeScript` and have read from the beginning to the end.  By the way, when you need to `npm install passport`, make sure you've got the accompanying Type Definition file as well: `npm install -S @types/passport`
+{% include tip.html content="
+When you install a module from npm, make sure you've got the accompanying type definition file as well.  For example when you install Passport with `npm install passport`, also install the type definition with: `npm install -S @types/passport`
+" %}
 
 ### OpenAPI
 
