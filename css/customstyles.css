@@ -924,6 +924,26 @@ span.soft {
     }
 }
 
+/* Added to fix issue when window is super wide */
+@media (min-width: 1410px) {
+    .col-md-3 {
+        width: 19%;
+    }
+}
+
+@media (min-width: 1680px) {
+    .col-md-3 {
+        width: 17%;
+    }
+}
+
+@media (min-width: 1880px) {
+    .col-md-3 {
+        width: 14%;
+    }
+}
+/* End media queries for super wide screen */
+
 .col-md-9 img {
     max-width: 100%;
     max-height: 100%;
