@@ -260,58 +260,69 @@ LoopBack 4 gives you the flexibility to create your own custom Datasources which
 You can look at [the account-without-juggler application as an example.](https://github.com/strongloop/loopback-next-example/tree/master/services/account-without-juggler)
 
 ### Steps to create your own concrete DataSource
+
 1. Implement the `CrudConnector` interface from `@loopback/repository` package. [Here is one way to do it](https://github.com/strongloop/loopback-next-example/blob/master/services/account-without-juggler/repositories/account/datasources/mysqlconn.ts)
-2. Implement the `DataSource` interface from `@loopback/repository`. In order to implement the `DataSource` interface, you would need to give it a name, supply your custom connector class created in Step 1), and instantiate it.
-```javascript
-export class MySQLDs implements DataSource {
-  name: 'mysqlDs'
-  connector: MySqlConn
-  settings: Object
+2. Implement the `DataSource` interface from `@loopback/repository`. To implement the `DataSource` interface, you must give it a name, supply your custom connector class created in the previous step, and instantiate it:
+    ```javascript
+    export class MySQLDs implements DataSource {
+      name: 'mysqlDs'
+      connector: MySqlConn
+      settings: Object
 
-  constructor() {
-    this.settings = require('./mysql.json'); //connection configuration
-    this.connector = new MySqlConn(this.settings);
-  }
-}
-```
-3. Extend `CrudRepositoryImpl` class from `@loopback/repository` and supply your custom DataSource and model to it.
-```javascript
-import { CrudRepositoryImpl } from '@loopback/repository';
-import { MySQLDs } from './datasources/mysqlds';
-import { Account } from './models/Account';
+      constructor() {
+        this.settings = require('./mysql.json'); //connection configuration
+        this.connector = new MySqlConn(this.settings);
+      }
+    }
+    ```
+3. Extend `CrudRepositoryImpl` class from `@loopback/repository` and supply your custom DataSource and model to it:
 
-export class newRepository extends CrudRepositoryImpl<Account, string> {
-  constructor() {
-    let ds = new MySQLDs();
-    super(ds, Account);
-  }
-}
-```
+    ```javascript
+    import { CrudRepositoryImpl } from '@loopback/repository';
+    import { MySQLDs } from './datasources/mysqlds';
+    import { Account } from './models/Account';
+
+    export class newRepository extends CrudRepositoryImpl<Account, string> {
+      constructor() {
+        let ds = new MySQLDs();
+        super(ds, Account);
+      }
+    }
+    ```
+
 You can override the functions it provides, which ultimately call on your connector's implementation of them, or write new ones.
 
-### Controller configuration (wire up your new DataSource to your controller)
-This step is essentially the same as [above](Persisting-Data-with-Repositories#controller-configuration.html), but can also be done as follows using DI:
-1. Bind instance of your repository to a certain key in your application class
-```javascript
-class AccountMicroservice extends Application {
-  private _startTime: Date;
+### Configure Controller
 
-  constructor() {
-    super();
-    const app = this;
-    app.controller(AccountController);
-    app.bind('repositories.account').toClass(AccountRepository);
-  }
-```
+The next step is to wire your new DataSource to your controller.
+This step is essentially the same as above, but can also be done as follows using DI:
+
+1. Bind instance of your repository to a certain key in your application class
+
+    ```javascript
+    class AccountMicroservice extends Application {
+      private _startTime: Date;
+
+      constructor() {
+        super();
+        const app = this;
+        app.controller(AccountController);
+        app.bind('repositories.account').toClass(AccountRepository);
+      }
+    ```
+
 2. Inject the bound instance into the repository property of your controller. `inject` can be imported from `@loopback/context`.
-```javascript
-export class AccountController {
-  @inject('repositories.account') private repository: newRepository;
-}
-```
+
+    ```javascript
+    export class AccountController {
+      @inject('repositories.account') private repository: newRepository;
+    }
+    ```
 
 ### Example custom connector CRUD methods
+
 Here is an example of a `find` function which uses the node-js `mysql` driver to retrieve all the rows that match a particular filter for a model instance.
+
 ```javascript
 public find(
   modelClass: Class<Entity>,
