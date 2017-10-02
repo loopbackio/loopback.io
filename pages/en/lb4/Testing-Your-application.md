@@ -233,7 +233,8 @@ Begin by refactoring the application to use a [Controller](Controllers.html) tog
 }
 ```
 
-{% include warning.html content= "Below doesn't seem right... " %}
+{% include warning.html content= "Below doesn't seem right...
+" %}
 
 {% include code-caption.html content="test.comproot.json" %}
 ```js
