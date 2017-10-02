@@ -9,13 +9,13 @@ summary:
 ---
 ## Introduction
 
-This article is for developers familiar with LoopBack who are interested in
-learning and using LoopBack 4, and familiar in general with:
+This article is an introduction to LoopBack 4 for LoopBack 3.x developers, who have been using:
 
 - Nodejs v4, v6, or v8.
 - JavaScript, specifically [ECMAScript 5](https://en.wikipedia.org/wiki/ECMAScript#5th_Edition),
-  with no object-oriented features such as `class`, `implements` (abstract class), and `extends` (inheritance).  Instead, you use  [util.inherits](https://nodejs.org/docs/latest/api/util.html#util_util_inherits_constructor_superconstructor) everywhere.  For asynchronous programming, `async` package or `Promise` is the standard technique.
-- No experience with [TypeScript](https://www.typescriptlang.org/), that is, no compile-time type checking.
+  with no object-oriented features such as `class`, `implements` (abstract class), and `extends` (inheritance).  Instead, you use  [util.inherits](https://nodejs.org/docs/latest/api/util.html#util_util_inherits_constructor_superconstructor) everywhere.  For asynchronous programming, you've used the `async` package or Promises.
+
+We assume you don't have experience with [TypeScript](https://www.typescriptlang.org/).
 
 ### We're not in Kansas any more
 
