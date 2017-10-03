@@ -43,10 +43,16 @@ In LoopBack, we use [Context](Context.html) to keep track of all injectable depe
 
 There are several different ways for configuring the values to inject, the simplest options is to call `app.bind(key).to(value)`. Building on top of the example above, one can configure the app to use a Basic HTTP authentication strategy as follows:
 
-```js
-import {BasicStrategy} from 'passport-http';
+```ts
+// TypeScript example
 
-app.bind('authentication.strategy').to(new BasicStrategy(loginUser));
+import {BasicStrategy} from 'passport-http';
+import {Application} from '@loopback/core';
+import {RestServer} from '@loopback/rest';
+// basic scaffolding stuff happens in between...
+
+const server = app.getServer(RestServer); // The REST server has its own context!
+server.bind('authentication.strategy').to(new BasicStrategy(loginUser));
 
 function loginUser(username, password, cb) {
   // check that username + password are valid
@@ -55,12 +61,12 @@ function loginUser(username, password, cb) {
 
 However, when you want to create a binding that will instantiate a class and automatically inject required dependencies, then you need to use `.toClass()` method:
 
-```js
-app.bind('authentication.provider').toClass(AuthenticationProvider);
+```ts
+server.bind('authentication.provider').toClass(AuthenticationProvider);
 
-const provider = await app.get('authentication.provider');
+const provider = await server.get('authentication.provider');
 // provider is an AuthenticationProvider instance
-// provider.strategy was set to the value returned by app.get('authentication.strategy')
+// provider.strategy was set to the value returned by server.get('authentication.strategy')
 ```
 
 When a binding is created via `.toClass()`, [Context](Context.html) will create a new instance of the class when resolving the value of this binding, injecting constructor arguments and property values as configured via `@inject` decorator.
