@@ -91,7 +91,7 @@ children:
     output: 'web, pdf'
 
 - title: 'Migration guide'
-  url: /doc/en/lb4/Migration-guide.html
+  url: /doc/en/lb4/LoopBack-3.x.html
   output: 'web, pdf'
 
 - title: 'Crafting LoopBack 4'
