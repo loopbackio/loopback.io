@@ -154,5 +154,5 @@ class HelloController {
 ```
 
 - A `Repository` is LoopBack's database abstraction. See [Repositories](Repositories.html) for more.
-- `@post('/messages')` creates the `Route` for the Operation using `app.route()`.
+- `@get('/messages')` creates the `Route` for the Operation using `app.route()`.
 - `@param.query.number` adds a `number` param with a source of `query`.
