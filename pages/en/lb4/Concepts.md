@@ -7,14 +7,10 @@ sidebar: lb4_sidebar
 permalink: /doc/en/lb4/Concepts.html
 summary:
 ---
+{% include content/tbd.html %}
 
 Read the following articles to understand some important LoopBack concepts:
-- [Sequence](Sequence)
-- [Controllers](Controllers)
-- [Context](Context)
-- [Dependency injection](Dependency-injection.html)
-- [Repositories](Repositories.html)
 
-{% include content/tbd.html %}
+{% include list-children.html in=site.data.sidebars.lb4_sidebar %}
 
 Perhaps this should include some of the material in [Thinking in LoopBack](Thinking-in-LoopBack.html).

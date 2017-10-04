@@ -1,12 +1,12 @@
-{% for article in include.children %}
-  {% if article.title == include.title %}
-    {% assign kids=article.children %}
-<ul>
-{% for kid in kids %}
-<li><a href="{{kid.url}}">{{kid.title}}</a> </li>
-{% endfor %}
-</ul>
-  {% elsif article.children.size > 0 %}
-    {% include list-children.html children=article.children title=include.title %}
+{% for item in include.in.children %}
+  {% if item.title == page.title %}
+  <ul>
+    {% for article in item.children %}
+      <li><a href="{{article.url}}">{{article.title}}</a> </li>
+    {% endfor %}
+  </ul>
+
+  {% elsif item.children.size > 0 %}
+{% include new-show-children.html in=item %}
   {% endif %}
 {% endfor %}

@@ -18,6 +18,4 @@ You can connect models using relations to reflect relationships among data. For 
 
 The officially-supported database connectors are:
 
-{% for item in site.data.sidebars.lb3_sidebar.children %}
-  {% include list-children.html children=item.children title=page.title %}  
-{% endfor %}
+{% include list-children.html in=site.data.sidebars.lb3_sidebar %}
