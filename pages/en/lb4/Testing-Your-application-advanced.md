@@ -30,15 +30,24 @@ We encourage writing tests from a few perspectives, mainly [black-box testing](h
 ```js
 // arrange
 const Application = require('@loopback/core').Application;
+const RestComponent = require('@loopback/rest').RestComponent;
+const RestServer = require('@loopback/rest').RestServer;
 const http = require('http');
 const request = require('request');
-const app = new Application();
-http.createServer(app.handleHttp).listen(3000);
-// act
-request.get('/hello-world').on('response', (response) => {
-  // assert
-  expect(response.statusCode).to.equal(200);
+const app = new Application({
+  components: [RestComponent],
 });
+
+(async function start() {
+  const server = await app.getServer(RestServer);
+  http.createServer(server.handleHttp).listen(3000);
+  // act
+  request.get('/hello-world').on('response', (response) => {
+    // assert
+    expect(response.statusCode).to.equal(200);
+  }); 
+})();
+
 ```
 
 In this case, we set up all things need to get a server up an running, then make a request to the server, and ensure the response is equal to what we expect. We do not care about how the application returns the response, as long as the response is what we expect (ie. HTTP 200).
@@ -225,7 +234,21 @@ describe('smoke test', () => {
   });
 });
 ```
+<!--
+  FIXME(kev): This misses the fundamental purpose of the "Red" part of Red,
+  Green, Refactor. You don't create a test that will arbitrarily fail, but
+  rather one that will call the appropriate functions/objects under test.
+  (In some languages, like TypeScript, this will require you to create empty
+  scaffolding to avoid compilation errors).
+  
+  The *reason* for this is that you want to make sure your test doesn't pass
+  without any assistance from the code under test. If it **DOES**, then you've
+  successfully demonstrated that your test itself is what's incorrect and you
+  can adjust it before getting too far down the road with the implementation.
 
+  I know this isn't a part of my PR, which is why I'm only leaving this comment
+  instead of fixing it.
+ -->
 Notice we say "expect 1 to equal 2" in the actual contents of the test. It is recommended to start with a failing test. In typical [red-green-refactor](https://en.wikipedia.org/wiki/Test-driven_development#Test-driven_development_cycle) fashion, let's make this pass by changing the following:
 
 ```
