@@ -10,21 +10,25 @@ summary:
 
 ## What is a Sequence?
 
-A `Sequence` is a stateless grouping of [Actions](#actions) that control how an `Application`  responds to requests.  An application has exactly one Sequence.
+A `Sequence` is a stateless grouping of [Actions](#actions) that control how a
+`Server` responds to requests.
 
 ```js
-app.handler((sequence, request, response) => {
+const server = await app.getServer(RestServer);
+server.handler((sequence, request, response) => {
   const spec = {parameters: {name: 'string', source: 'query'}};
   const params = sequence.parseParams(request, spec);
   sequence.send(response, `hello ${params.name}`);
 });
 ```
 
-In the following example, we define a `handler` function that uses the `Sequence` to respond to every HTTP request with `hello $name` (eg. `GET /?name=bob => 'hello bob'`).
+In the following example, we define a `handler` function that uses the
+`Sequence` to respond to every HTTP request our server instance receives
+with `hello $name` (eg. `GET /?name=bob => 'hello bob'`).
 
 ```js
 class MySequence extends DefaultSequence {
-  // this is the same as using `app.handler(handle)`
+  // this is the same as using `server.handler(handle)`
   handle(request, response) {
     const spec = {params: {name: {type: 'string', in: 'query'}}};
     const params = this.parseParams(request, spec);
@@ -33,8 +37,14 @@ class MySequence extends DefaultSequence {
 }
 ```
 
-The contract of a `Sequence` is simple: it must produce a response to a request. Creating your own `Sequence` gives you full control over how your `Application` handles requests and responses. The `DefaultSequence` looks like this:
+The contract of a `Sequence` is simple: it must produce a response to a request.
+Creating your own `Sequence` gives you full control over how your `Server`
+instances handle requests and responses. The `DefaultSequence` looks like this:
 
+<!--
+  FIXME(kev): Should we be copying this logic into the docs directly?
+  What if this code changes?
+-->
 ```js
 class DefaultSequence {
   async handle(request, response) {
@@ -100,17 +110,23 @@ class MySequence extends DefaultSequence {
 }
 ```
 
-In order for LoopBack to use your custom sequence, you must register it when constructing your `Application`:
+In order for LoopBack to use your custom sequence, you must register it on any
+applicable `Server` instances before starting your `Application`:
 
 ```js
 import {Application} from '@loopback/core';
+import {RestComponent, RestServer} from '@loopback/rest';
 
 const app = new Application({
-  sequence: MySequence
+  components: [RestComponent],
 });
 
 // or
-app.sequence(MySequence);
+(async function start() {
+  const server = await app.getServer(RestServer);
+  server.sequence(MySequence);
+  await app.start();
+})();
 ```
 
 ## Advanced topics
@@ -122,7 +138,7 @@ A custom `Sequence` enables you to control exactly how requests are routed to en
 This example demonstrates determining which endpoint (controller method) to invoke based on an API specification.
 
 ```ts
-import {findRoute} from '@loopback/core'
+import {findRoute} from '@loopback/rest'
 
 const API_SPEC = {
   basePath: '/',
