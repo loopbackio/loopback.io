@@ -88,12 +88,33 @@ import { CoreBindings } from '@loopback/authentication'
 
 ### Binding keys
 
+|Name|CONSTANT|Type|Description|
+|---|---|---|---|
+|`application.apiSpec`|`API_SPEC`|`OpenApiSpec`|OpenAPI Specification describing your application's routes|
+|`bindElement`|`BIND_ELEMENT`|`BindElement`|Convenience provider function to bind value to `Context`|
+|`components.${component.name}`||`Component`|Components used by your application|
+|`controllers.${controller.name}`||`ControllerClass`|The controller's bound to the application|
+|`controller.current.ctor`|`CONTROLLER_CLASS`|`ControllerClass`|The controller for the current request|
+|`controller.current.operation`|`CONTROLLER_METHOD_NAME`|`string`|Name of the operation for the current request|
+|`controller.method.meta`|`CONTROLLER_METHOD_META`|`ControllerMetaData`|Metadata for a given controller|
+|`getFromContext`|`GET_FROM_CONTEXT`|`GetFromContext`|Convenience provider function to return the `BoundValue` from the `Context`|
+
+## Package: rest
+
+|`rest.handler`|`HANDLER`|`HttpHandler`|The HTTP Request Handler|
+|`rest.port`|`PORT`|`number`|HTTP Port the application will run on|
+|`rest.http.request`|`Http.REQUEST`|`ServerRequest`|The raw `http` request object|
+|`rest.http.request.context`|`Http.CONTEXT`|`Context`|Request level context|
+|`rest.http.response`|`Http.RESPONSE`|`ServerResponse`|The raw `http` response object|
+|`routes.${route.verb}.${route.path}`||`RouteEntry`|Route entry specified in api-spec|
+|`rest.sequence`|`SEQUENCE`|`SequenceHandler`|Class that implements the sequence for your application|
+
 **Sequence Actions binding keys**
 
-To use the Sequence Actions CONSTANT's, bind/inject to `CoreBindings.SequenceActions.CONSTANT` *OR*
+To use the Sequence Actions CONSTANTs, bind/inject to `RestBindings.SequenceActions.CONSTANT` *OR*
 
 ```js
-const SequenceActions = CoreBindings.SequenceActions;
+const SequenceActions = RestBindings.SequenceActions;
 SequenceActions.CONSTANT // CONSTANT to bind/inject
 ```
 
@@ -105,26 +126,6 @@ SequenceActions.CONSTANT // CONSTANT to bind/inject
 |`sequence.actions.parseParams`|`PARSE_PARAMS`|`ParseParams`|Sequence action to parse a request for arguments to be passed to the controller|
 |`sequence.actions.reject`|`REJECT`|`Reject`|Sequence action to reject the request with an error|
 |`sequence.actions.send`|`SEND`|`Send`|Sequence action to send the response back to client|
-
-**Other binding keys**
-
-|Name|CONSTANT|Type|Description|
-|---|---|---|---|
-|`application.apiSpec`|`API_SPEC`|`OpenApiSpec`|OpenAPI Specification describing your application's routes|
-|`bindElement`|`BIND_ELEMENT`|`BindElement`|Convenience provider function to bind value to `Context`|
-|`components.${component.name}`||`Component`|Components used by your application|
-|`controllers.${controller.name}`||`ControllerClass`|The controller's bound to the application|
-|`controller.current.ctor`|`CONTROLLER_CLASS`|`ControllerClass`|The controller for the current request|
-|`controller.current.operation`|`CONTROLLER_METHOD_NAME`|`string`|Name of the operation for the current request|
-|`controller.method.meta`|`CONTROLLER_METHOD_META`|`ControllerMetaData`|Metadata for a given controller|
-|`getFromContext`|`GET_FROM_CONTEXT`|`GetFromContext`|Convenience provider function to return the `BoundValue` from the `Context`|
-|`http.handler`|`HTTP_HANDLER`|`HttpHandler`|The HTTP Request Handler|
-|`http.port`|`HTTP_PORT`|`number`|HTTP Port the application will run on|
-|`http.request`|`Http.REQUEST`|`ServerRequest`|The raw `http` request object|
-|`http.request.context`|`Http.CONTEXT`|`Context`|Request level context|
-|`http.response`|`Http.RESPONSE`|`ServerResponse`|The raw `http` response object|
-|`routes.${route.verb}.${route.path}`||`RouteEntry`|Route entry specified in api-spec|
-|`sequence`|`SEQUENCE`|`SequenceHandler`|Class that implements the sequence for your application|
 
 ## Package: openapi-spec
 
