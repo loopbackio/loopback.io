@@ -11,7 +11,7 @@ summary:
 ## Prerequisites
 
 Make sure you have installed
-[Node.js](https://nodejs.org/en/download/current/) version 8.0.0 or higher.
+[Node.js](https://nodejs.org/en/download/current/) version 7 or higher.
 
 ## Install LoopBack core
 
