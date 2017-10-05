@@ -78,7 +78,7 @@ Return the three loudest three weapons, sorted by the `audibleRange` property:
 {% include code-caption.html content="Node API" %}
 ```javascript
 weapons.find({
-  order: 'price DESC',
+  order: 'audibleRange DESC',
   limit: 3
 });
 ```
