@@ -51,7 +51,7 @@ import {Application} from '@loopback/core';
 import {RestServer} from '@loopback/rest';
 // basic scaffolding stuff happens in between...
 
-const server = app.getServer(RestServer); // The REST server has its own context!
+const server = await app.getServer(RestServer); // The REST server has its own context!
 server.bind('authentication.strategy').to(new BasicStrategy(loginUser));
 
 function loginUser(username, password, cb) {
