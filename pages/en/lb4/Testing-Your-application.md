@@ -245,7 +245,7 @@ module.exports = HelloWorldApp;
 Here is the swagger.json that will hook up your `GreetController` to the
 `/greet` path, and associate the `greet` function with a `GET` request.
 
-{% include code-caption.html content="src/apidef/swagger.json".js" %}
+{% include code-caption.html content="src/apidef/swagger.json" %}
 ```json
 {
   "swagger": "2.0",
