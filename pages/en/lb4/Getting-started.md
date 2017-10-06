@@ -38,7 +38,7 @@ const app = new Application({
 
 (async function start() {
   // Grab the REST server instance
-  const server = app.getServer(RestServer);
+  const server = await app.getServer(RestServer);
   // Setup our handler!
   server.handler((sequence, request, response) => {
     sequence.send(response, 'hello world');
