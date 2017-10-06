@@ -109,9 +109,9 @@ import { CoreBindings } from '@loopback/authentication'
 |`routes.${route.verb}.${route.path}`||`RouteEntry`|Route entry specified in api-spec|
 |`rest.sequence`|`SEQUENCE`|`SequenceHandler`|Class that implements the sequence for your application|
 
-**Sequence Actions binding keys**
+**Rest Sequence Action Binding Keys**
 
-To use the Sequence Actions CONSTANTs, bind/inject to `RestBindings.SequenceActions.CONSTANT` *OR*
+To use the Rest Sequence Actions CONSTANTs, bind/inject to `RestBindings.SequenceActions.CONSTANT` *OR*
 
 ```js
 const SequenceActions = RestBindings.SequenceActions;
