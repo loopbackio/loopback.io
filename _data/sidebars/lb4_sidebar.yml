@@ -11,14 +11,14 @@ title: LoopBack 4
 url: /doc/en/lb4/index.html
 children:
 
+- title: 'Installation'
+  url: /doc/en/lb4/Installation.html
+  output: 'web, pdf'
+
 - title: 'Getting started'
   url: /doc/en/lb4/Getting-started.html
   output: 'web, pdf'
   children:
-
-  - title: 'Installation'
-    url: /doc/en/lb4/Installation.html
-    output: 'web, pdf'
 
   - title: 'Examples & Tutorials'
     url: /doc/en/lb4/Examples-and-tutorials.html

@@ -57,7 +57,7 @@ For more details, see the lengthy discussion in [#6](https://github.com/stronglo
 
 ### Does JavaScript still work?
 
-LoopBack.next itself is written in [TypeScript](https://www.typescriptlang.org) (that compiles to JavaScript), but it supports applications written in both TypeScript and JavaScript. The documentation assumes you have a basic understanding of the JavaScript language; and when it says "JavaScript" it is understood to mean ECMAScript version 6 (ES6).
+LoopBack 4 itself is written in [TypeScript](https://www.typescriptlang.org) (that compiles to JavaScript), but it supports applications written in both TypeScript and JavaScript. The documentation assumes you have a basic understanding of the JavaScript language; and when it says "JavaScript" it is understood to mean ECMAScript version 6 (ES6).
 
 Some of the examples use ES6 syntax. We encourage you to get familiar with ES6 constructs such as arrow functions, classes, template literals, let, and const statements.
 

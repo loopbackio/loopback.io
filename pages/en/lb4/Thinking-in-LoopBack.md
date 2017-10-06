@@ -406,7 +406,7 @@ export const controllerSpec =
 ```
 
 The third piece is the test code.  To initialize the test environment, we need to create a `Dredd` instance specifying the configuration. There are two required fields in the configuration object: `server` and `options.path`.
- `localhostAndPort + \'/swagger.json\'` is the predefined end point LoopBack.Next uses for the client to access the API specification of the service API.
+ `localhostAndPort + \'/swagger.json\'` is the predefined end point LoopBack 4 uses for the client to access the API specification of the service API.
 
 ```js
   async function initEnvironment() {

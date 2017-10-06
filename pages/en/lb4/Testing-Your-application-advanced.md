@@ -136,7 +136,7 @@ The more tests you have, the more confident you can be with your solution. We ty
 
 - Setting up a project and running a basic smoke test
 - Setting up tests to recognize TypeScript
-- Your first LoopBack.next app test
+- Your first LoopBack 4 app test
 
 - We use [TDD](https://en.wikipedia.org/wiki/Test-driven_development) and [BDD](https://en.wikipedia.org/wiki/Behavior-driven_development).
 - We opinionate our practices and standards through @loopback/testlab (a library that make testing LBN apps easy)

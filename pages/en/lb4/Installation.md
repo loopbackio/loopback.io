@@ -14,29 +14,22 @@ Install the following:
 
 - [Node.js](https://nodejs.org/en/download/) version 7 or higher.
 - [TypeScript](https://www.typescriptlang.org/index.html#download-links) version 2 or higher:
+
    ```
    npm i -g typescript
    ```
 - [TypeScript Node](https://github.com/TypeStrong/ts-node#installation) version 3 or higher:
+
    ```
    npm i -g ts-node
    ```
 
-Then in your Node.js project root, run:
+## Install LoopBack core
+
+Then add LoopBack 4 as a dependency to your Node.js project:
 
 ```shell
 npm install -s @loopback/core
-```
-
-{% include important.html content= "Make sure you set `'target': 'es6'` in your compiler options in your `tsconfig.json` if you're using a TypeScript project. 
-" %}
-
-## Install LoopBack core
-
-Then add LoopBack.next as a dependency to your Node.js project:
-
-```shell
-npm install --save @loopback/core
 ```
 
 ## Create a Hello World project
@@ -67,7 +60,8 @@ You should see "world" written to the console.
 
 ### TypeScript project
 
-In your `tsconfig.json` `compilerOptions` configuration, add `"target": "es2017"`:
+{% include important.html content= "You must set `'target': 'es6'` in your compiler options in your `tsconfig.json`.
+" %}
 
 ```js
 {
@@ -93,10 +87,12 @@ app.get('hello').then(value => {
 Then run `index.ts`.  Do one of the following:
 
 1. Install ts-node:
+
     ```
     npm install -g ts-node
     ```
 1. Run the app:
+
     ```
     ts-node index.ts
     ```
@@ -112,11 +108,13 @@ OR:
     ```
 
 1. Compile `index.ts` by entering this command:
+
     ```
     tsc index.ts
     ```
 
 1. Run the compiled JavaScript output file by entering this command:
+
    ```
    node index.js
    ```
