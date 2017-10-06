@@ -61,8 +61,8 @@ Let's see this in action:
 ```js
 class MySequence extends DefaultSequence {
   handle(request, response) { // we provide these value for convenience (taken from the Context)
-    const req = this.ctx.getSync('rest.http.request');
-    // but it is still available in the sequence/request context
+    // but they are still available in the sequence/request context
+    const req = await this.ctx.get('rest.http.request');
     this.send(`hello ${req.params.name}`);
   }
 }
