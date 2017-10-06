@@ -11,9 +11,26 @@ title: LoopBack 4
 url: /doc/en/lb4/index.html
 children:
 
-- title: 'Thinking in LoopBack'
-  url: /doc/en/lb4/Thinking-in-LoopBack.html
+- title: 'Getting started'
+  url: /doc/en/lb4/Getting-started.html
   output: 'web, pdf'
+  children:
+
+  - title: 'Installation'
+    url: /doc/en/lb4/Installation.html
+    output: 'web, pdf'
+
+  - title: 'Examples & Tutorials'
+    url: /doc/en/lb4/Examples-and-tutorials.html
+    output: 'web, pdf'
+
+  - title: 'Thinking in LoopBack'
+    url: /doc/en/lb4/Thinking-in-LoopBack.html
+    output: 'web, pdf'
+
+  - title: 'FAQ'
+    url: /doc/en/lb4/FAQ.html
+    output: 'web, pdf'
 
 - title: 'Key concepts'
   url: /doc/en/lb4/Concepts.html
@@ -47,26 +64,9 @@ children:
   - title: 'Repositories'
     url: /doc/en/lb4/Repositories.html
     output: 'web, pdf'
-  
+
   - title: 'Decorators'
     url: /doc/en/lb4/Decorators.html
-    output: 'web, pdf'
-
-- title: 'Getting started'
-  url: /doc/en/lb4/Getting-started.html
-  output: 'web, pdf'
-  children:
-
-  - title: 'Installation'
-    url: /doc/en/lb4/Installation.html
-    output: 'web, pdf'
-
-  - title: 'Examples & Tutorials'
-    url: /doc/en/lb4/Examples-and-tutorials.html
-    output: 'web, pdf'
-
-  - title: 'FAQ'
-    url: /doc/en/lb4/FAQ.html
     output: 'web, pdf'
 
 - title: 'Using Components'
@@ -103,10 +103,10 @@ children:
   output: 'web, pdf'
   children:
 
-  - title: 'Glossary'
-    url: /doc/en/lb4/Glossary.html
-    output: 'web, pdf'
-
   - title: 'Reserved binding keys'
     url: /doc/en/lb4/Reserved-binding-keys.html
+    output: 'web, pdf'
+
+  - title: 'Glossary'
+    url: /doc/en/lb4/Glossary.html
     output: 'web, pdf'

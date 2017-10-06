@@ -19,10 +19,12 @@ The starting point of this flavor of JavaScript is [ECMAScript 6](http://www.ecm
 
 **All examples and snippets in the documentation use this flavor of JavaScript.**
 
-> the following items are not covered yet:
->  - How to install the command line utility
->  - Using the utility to scaffold the skeleton app
->  - Running the app (node ., npm start)
+{% include note.html content= "
+This article will eventually cover:
+- How to install the command line utility
+- Using the utility to scaffold the skeleton app
+- Running the app (node ., npm start)
+" %}
 
 ## A simple example
 
@@ -48,4 +50,4 @@ To see what the complete application looks like, see [loopback-next-hello-world]
 
 The following guides introduce the fundamental concepts of LoopBack.next required to build scalable, maintainable, and consistent APIs.
 
-If you want to try it out locally follow the instructions in [Installation](Installation.html).  Let's go!
+If you want to try it out locally follow the instructions in [Installation](Installation.html).  

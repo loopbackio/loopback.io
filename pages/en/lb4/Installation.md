@@ -10,8 +10,26 @@ summary:
 
 ## Prerequisites
 
-Make sure you have installed
-[Node.js](https://nodejs.org/en/download/current/) version 7 or higher.
+Install the following:
+
+- [Node.js](https://nodejs.org/en/download/) version 7 or higher.
+- [TypeScript](https://www.typescriptlang.org/index.html#download-links) version 2 or higher:
+   ```
+   npm i -g typescript
+   ```
+- [TypeScript Node](https://github.com/TypeStrong/ts-node#installation) version 3 or higher:
+   ```
+   npm i -g ts-node
+   ```
+
+Then in your Node.js project root, run:
+
+```shell
+npm install -s @loopback/core
+```
+
+{% include important.html content= "Make sure you set `'target': 'es6'` in your compiler options in your `tsconfig.json` if you're using a TypeScript project. 
+" %}
 
 ## Install LoopBack core
 
