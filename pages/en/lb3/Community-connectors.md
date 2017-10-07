@@ -104,6 +104,6 @@ The following table lists some of the community connectors. See [npmjs.org](http
     </tr>
     <tr>
       <td><a href="https://firebase.google.com/products/firestore/" class="external-link" rel="nofollow">Firebase Firestore</a></td>
-      <td><a href="https://github.com/dyaa/loopback-connector-firestore" class="external-link" rel="nofollow">loopback-connector-firestore</a></td>
+      <td><a href="https://www.npmjs.com/package/loopback-connector-firestore" class="external-link" rel="nofollow">loopback-connector-firestore</a></td>
       <td>&nbsp;</td>
     </tr>
