@@ -61,6 +61,11 @@ The following table lists some of the community connectors. See [npmjs.org](http
       <td>Enables integration with Blockchain applications that are built with Fabric Composer for Hyperledger Fabric</td>
     </tr>
     <tr>
+      <td><a href="https://firebase.google.com/products/firestore/" class="external-link" rel="nofollow">Firebase Firestore</a></td>
+      <td><a href="https://www.npmjs.com/package/loopback-connector-firestore" class="external-link" rel="nofollow">loopback-connector-firestore</a></td>
+      <td>&nbsp;</td>
+    </tr>    
+    <tr>
       <td><a href="https://mandrill.com/" class="external-link" rel="nofollow">Mandrill</a></td>
       <td><a href="https://www.npmjs.org/package/lb-connector-mandrill" class="external-link" rel="nofollow">lb-connector-mandrill</a></td>
       <td>Enables applications to send emails via Mandrill</td>
@@ -102,8 +107,6 @@ The following table lists some of the community connectors. See [npmjs.org](http
       <td><a href="https://www.npmjs.com/package/loopback-connector-twilio" class="external-link" rel="nofollow">loopback-connector-twilio</a></td>
       <td><a href="https://github.com/dashby3000/loopback-connector-twilio/blob/master/example/example.js" class="external-link" rel="nofollow">Example</a> in GitHub.</td>
     </tr>
-    <tr>
-      <td><a href="https://firebase.google.com/products/firestore/" class="external-link" rel="nofollow">Firebase Firestore</a></td>
-      <td><a href="https://www.npmjs.com/package/loopback-connector-firestore" class="external-link" rel="nofollow">loopback-connector-firestore</a></td>
-      <td>&nbsp;</td>
-    </tr>
+
+  </tbody>
+</table>
