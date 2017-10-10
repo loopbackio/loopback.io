@@ -355,6 +355,8 @@ describe('API specification', () => {
 });
 ```
 
+See [Validate your OpenAPI specification](./Testing-your-application.html#validate-your-openapi-specification) from Testing your application for more details.
+
 ## Smoke test your API input/output
 
 Once we confirm the specification of our API is valid, it's time to verify that our application implements the API as we have specified it.  We use [Dredd](https://www.npmjs.com/package/dredd) in the input/output testing described below.  We use `hello-world` in this section.  Concrete sample code of `hello-world` can be found in the [hello-world tutorial](https://github.com/strongloop/loopback-next-hello-world) repository.  Although the sample code includes a validated API spec and fully functional `hello-world` controller, let's pretend the controller is completely empty.  You can try it yourself cloning the `hello-world` from github.
@@ -525,6 +527,8 @@ It's a powerful proposition to use the API spec not only for API declaration but
 
 At this point, we are ready to make these tests pass by coding up your business logic.
 
+Please refer to [Perform an auto-generated smoke test of your REST API](./Testing-your-application.html#perform-an-auto-generated-smoke-test-of-your-rest-api) from Testing your application for more details.
+
 ## Define your testing strategy
 
 It may be tempting to overlook the importance of a good testing strategy when starting a new project. Initially, as the project is small and we mostly keep adding new code, even badly-written test suite seem to work well. However, as the project grows and matures, inefficiencies in the test suite can severely slow down the progress.
@@ -582,6 +586,8 @@ To summarize:
 - Prefer fast and focused unit tests over slow app-wide end-to-end tests.
 - Watch out for integration points that are not covered by unit-tests and add integration tests to verify your units work well together.
 
+See [Testing Your Application](./Testing-Your-application.html) for a reference manual on automated tests.
+
 ## Incrementally implement features
 
 Let's recapitulate the status of our new project:
@@ -590,7 +596,7 @@ Let's recapitulate the status of our new project:
  - We have empty controllers backing our new operations.
  - Our project has a test verifying the validity of our API spec. This test passes.
  - Our test suite includes a smoke test to verify conformance of our implementation
-   with the API spec.  These checks are all failing now.
+   with the API spec. These checks are all failing now.
 
 Now it's time to put our testing strategy outlined in the previous section into practice. Pick one of the new API operations, preferably the one that's easiest to implement, and get to work!
 
@@ -681,6 +687,8 @@ When you scroll up in the test output, you will see more information about the 4
 ```
 Unhandled error in GET /product/ink-pen: 404 Error: Controller method not found: ProductController.getDetails
 ```
+
+Learn more about acceptance testing in [Test your individual REST API endpoints](./Testing-your-application.html#test-your-individual-rest-api-endpoints) from Testing your application.
 
 ### Write a unit-test for the new controller method
 
@@ -981,6 +989,8 @@ The new unit test is passing now, but our integration and acceptance tests are b
 
  2. Fix the acceptance test by annotating `ProductController`'s `repository` argument with `@inject('repositories.Product')`
     and binding the `ProductRepository` in the main application file where we are also binding controllers.
+
+Learn more about Controller unit testing in [Unit-test your Controllers](./Testing-your-application.html#unit-test-your-controllers) from Testing your application.
 
 ### Handle 'product not found' error
 

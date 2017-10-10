@@ -8,38 +8,189 @@ permalink: /doc/en/lb4/Testing-your-application.html
 summary:
 ---
 
-## Setup
+## Overview
 
-### With LoopBack CLI
+An automated test suite is important to ensure your application works as expected, prevent regressions as new features are added and give you confidence to refactor your codebase to keep it easy to further modify.
+
+Thorough automated testing:
+- Prevents regressions from new features/bug fixes (code introductions and refactorings) (after deployment)
+- Helps new and existing developers understand different parts of the codebase (knowledge sharing)
+- Speeds up development over the long run (the code writes itself!)
+- And much more. See [benefits of software testing](http://lmgtfy.com/?q=benefits+of+software+testing)
+
+Please refer to [Thinking in LoopBack](./Thinking-in-LoopBack.html) for an introductory text that explains high-level concepts of automated testing in [Define your testing strategy](./Thinking-in-LoopBack.html#define-your-testing-strategy) and provides a step-by-step tutorial in [Incrementally implement features](Thinking-in-LoopBack.html#incrementally-implement-features).
+
+{% include important.html content="A great test suite requires you to think smaller and favor fast, focused unit-tests over slow application-wide end-to-end tests
+" %}
+
+The rest of this page contains a reference manual explaining how to write different types of tests.
+
+## Project setup
+
+An automated test suite requires a test runner - a tool that can execute all your tests and produce a test report. We use and recommend [Mocha](https://mochajs.org).
+
+In addition to a test runner, tests need various utilities like an assertion library (we recommend [Should.js](https://shouldjs.github.io)), a library for making HTTP calls and verifying their results (we recommend [supertest](https://github.com/visionmedia/supertest)), a library for creating Test doubles (we recommend [Sinon.JS](http://sinonjs.org/)). While it's possible to install all these tools individually, we found that a good setup requires additional glue to integrate all these individual tools into something that's easy to use. Especially when writing the tests in TypeScript, due to relatively lower quality of official type definitions. We have addressed all these needs by creating our own swiss-army-knife module for testing called [@loopback/testlab](https://www.npmjs.com/package/@loopback/testlab).
+
+### Setup testing infrastructure with LoopBack CLI
 
 {% include note.html content="Currently the LoopBack CLI does not yet support LoopBack 4.
 " %}
 
 If you are just getting started with LoopBack, use the LoopBack command-line tool (CLI)  `loopback-cli`. It's ready to use and installs simply by `npm install -g loopback-cli`. You don't need to do any extra steps for setup, and can head straight to the [next section](Testing-Your-Application#acceptance-testing.html).
 
-### Without LoopBack CLI
+### Setup testing infrastructure manually
 
-If you have an existing application you'll need to install a few packages to make everything work well together. Minimally, you will need `@loopback/testlab` and `mocha`.
+If you have an existing application you'll need to install `mocha` and `@loopback/testlab` to make everything work well together.
 
 ```
-npm i -D @loopback/testlab mocha
+npm install --save-dev mocha @loopback/testlab
 ```
 
 Your `package.json` should look something like:
 
 ```js
-  ...
+{
+  // ...
   "devDependencies": {
-    "@loopback/testlab": "<current-version>",
-    "mocha": "<current-version>"
+    "@loopback/testlab": "^<current-version>",
+    "mocha": "^<current-version>"
   },
   "scripts": {
     "test": "mocha"
   }
-  ...
+  // ...
+}
 ```
 
+## Unit testing
+
+Unit tests are considered as "white-box". They use "inside-out" approach, where the test knows all about the internals and controls all the variables of the system under test. Individual units are tested in isolation, their dependencies are replaced with [Test doubles](https://en.wikipedia.org/wiki/Test_double).
+
+### Use test doubles
+
+Test doubles are functions or objects that look and behave like the real variants used in production, but are actually simplified versions giving the test more control of the behavior. For example, reproducing the situation where reading from a file failed because of a hard-drive error is pretty much impossible, unless we are using a test double that's simulating file-system API and giving us control of how what each call returns.
+
+[Sinon.JS](http://sinonjs.org/) has become the de-facto standard for Test doubles in Node.js and JavaScript/TypeScript in general. We recommend our users to leverage this library, our `@loopback/testlab` package comes with Sinon preconfigured with TypeScript type definitions and integrated with Should.js assertions.
+
+There are three kinds of Test doubles provided by Sinon.JS:
+
+- [Test spies](http://sinonjs.org/releases/v4.0.1/spies/) are functions that record arguments, return value, the value of `this` and exception thrown (if any) for all its calls. There are two types of spies: Some are anonymous functions, while others wrap methods that already exist in the system under test.
+
+- [Test stubs](http://sinonjs.org/releases/v4.0.1/stubs/) are functions (spies) with pre-programmed behavior. As spies, stubs can be either anonymous, or wrap existing functions. When wrapping an existing function with a stub, the original function is not called.
+
+- [Test mocks](http://sinonjs.org/releases/v4.0.1/mocks/)  (and mock expectations) are fake methods (like spies) with pre-programmed behavior (like stubs) as well as pre-programmed expectations. A mock will fail your test if it is not used as expected.
+
+{% include note.html content="We recommend against using test mocks. With test mocks, the expectations must be defined before the tested scenario is executed, which breaks the recommended test layout 'arrange-act-assert' (or  'given-when-then') and produces code that's difficult to comprehend.
+" %}
+
+#### Create a stub Repository
+
+When writing an application accessing data in a database, it's a best practice to use [Repositories](./Repositories.html) to encapsulate all data-access/persistence-related code and let other parts of the application (typically [Controllers](./Controllers.html)) to depend on these Repositories for data access. In order to test Repository dependants (e.g. Controllers) in isolation, we need to provide a test double, usually as a test stub.
+
+Creating a test double for a repository class is very easy with Sinon.JS' utility function `createStubInstance`. It's important to create a new stub instance for each unit test in order to prevent unintended re-use of pre-programmed behaviour between (unrelated) tests.
+
+```ts
+describe('ProductController', () => {
+  let repository: ProductRepository;
+  beforeEach(givenStubbedRepository);
+
+  // your unit tests
+
+  function givenStubbedRepository() {
+    repository = sinon.createStubInstance(ProductRepository);
+  }
+});
+```
+
+In your unit-tests, you will usually want to program the behavior of stubbed methods (what should they return) and then verify that the Controller (unit under test) called the right method with the correct arguments.
+
+Configure stub's behavior at the beginning of your unit-test (in the "arrange" or "given" section):
+
+```ts
+// repository.find() will return a promise that
+// will be resolved with the provided array
+const findStub = repository.find as sinon.SinonStub;
+findStub.resolves([{id: 1, name: 'Pen'}]);
+```
+
+Verify how was the stubbed method executed at the end of your unit-test (in the "assert" or "then" section):
+
+```ts
+// expect that repository.find() was called with the first
+// argument deeply-equal to the provided object
+expect(findStub).to.be.calledWithMatch({where: {id: 1}});
+```
+
+Here is a full example:
+
+```ts
+import {ProductController, ProductRepository} from '../..';
+import {expect, sinon} from '@loopback/testlab';
+
+describe('ProductController', () => {
+  let repository: ProductRepository;
+  beforeEach(givenStubbedRepository);
+
+  describe('getDetails()', () => {
+    it('retrieves details of a product', async () => {
+      const controller = new ProductController(repository);
+      const findStub = repository.find as sinon.SinonStub;
+      findStub.resolves([{id: 1, name: 'Pen'}]);
+
+      const details = await controller.getDetails(1);
+
+      expect(details).to.containDeep({name: 'Pen'});
+      expect(findStub).to.be.calledWithMatch({where: {id: 1}});
+    });
+  });
+
+  function givenStubbedRepository() {
+    repository = sinon.createStubInstance(ProductRepository);
+  }
+});
+```
+
+#### Create a stub Service
+
+To be done. The initial Beta release does not include Services as a first-class feature.
+
+### Unit-test your Controllers
+
+### Unit-test your Models and Repositories
+
+### Unit-test your Sequence
+
+### Unit-test your Services
+
+To be done. The initial Beta release does not include Services as a first-class feature. The following GitHub issues are tracking the related work:
+
+ - Define services to represent interactions with REST APIs, SOAP Web Services, gRPC services, and more: [#522](https://github.com/strongloop/loopback-next/issues/522)
+ - Guide: Services [#451](https://github.com/strongloop/loopback-next/issues/451)
+
+## Integration testing
+
+Integration tests are considered as "white-box" too. They use "inside-out" approach that tests how multiple units work together or with external services. Test doubles may be used to isolate tested units from external variables/state that's not part of the tested scenario.
+
+### Use test data builders
+
+### Test your Repositories against a real database
+
+### Test your Controllers and Repositories together
+
+### Test your Services against real backends
+
+To be done, the initial Beta release does not include Services as a first-class feature.
+
 ## Acceptance testing
+
+### Validate your OpenAPI specification
+
+### Perform an auto-generated smoke test of your REST API
+
+### Test your individual REST API endpoints
+
+
+## EVERYTHING BELOW IS LEGACY AND SHOULD BE REMOVED BEFORE LANDING
 
 Create an application that returns "hello world" for GET / requests.
 
@@ -341,7 +492,7 @@ Run the tests again via `npm test` again to make sure you didn't break anything!
   greet-controller
     greet
       ✓ uses query param name in hello message
-  
+
   3 passing (74ms)
 ```
 
@@ -377,7 +528,7 @@ Examples:
  GET /greet?timeOfDay=afternoon&name=bob => "good afternoon, bob"
  GET /greet?timeOfDay=morning ==> "good morning, world"
  GET /greet?timeOfDay=evening&name=sarah=> "good evening, sarah"
- GET /greet ==> hello, world! 
+ GET /greet ==> hello, world!
  // etc...
 ```
 
@@ -485,7 +636,7 @@ Run your tests again!
   13 passing (86ms)
 ```
 
-Great! Now that we've got our Greeter class, we can transform our 
+Great! Now that we've got our Greeter class, we can transform our
 `GreetController` so that it can deal with deciding _which_ functions to call
 on our Greeter!
 
