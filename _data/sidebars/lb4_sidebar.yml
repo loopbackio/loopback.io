@@ -90,7 +90,7 @@ children:
     url: /doc/en/lb4/Testing-your-app-advanced.html
     output: 'web, pdf'
 
-- title: 'Migration guide'
+- title: 'What to expect for 3.x users'
   url: /doc/en/lb4/LoopBack-3.x.html
   output: 'web, pdf'
 
