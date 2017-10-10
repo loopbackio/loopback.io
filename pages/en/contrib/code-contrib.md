@@ -80,6 +80,20 @@ All LoopBack projects follow the same convention for running tests. To run a pro
 npm test
 ```
 
+## Create example repositories
+
+When you create an example repository for any usage demo, the name of repository should follow the following convention:
+
+`loopback{major_version}-example-{example_name}`
+
+Usually the `{major_version}` is the lastet major version under development.
+If the example aims at a specific version of LoopBack, then use that number as the `{major_version}`.
+The `{example_name}` is a few words briefly describes the functionality of the example,
+and joined with dash `-`.
+
+For example, we build a quick start example app for LoopBack 4 and name it as 
+[`loopback4-example-hello-world`](https://github.com/strongloop/loopback-next-hello-world).
+
 If a test is failing, open an issue on the appropriate repositories GitHub issues page.
 
 {% include content/cla.md %}
