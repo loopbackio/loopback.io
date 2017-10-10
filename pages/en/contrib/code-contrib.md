@@ -88,7 +88,7 @@ If you create an example repository for any usage demo, the name of repository s
 
 Usually the `{major_version}` is the lastest major version under development.
 If the example aims at a specific version of LoopBack, then use that number as the `{major_version}`.
-The `{example_name}` is a few words briefly describes the functionality of the example,
+The `{example_name}` is a few words which briefly describes the functionality of the example,
 and joined with `-`.
 
 For example, we build a quick start example app for LoopBack 4 and name it as 
