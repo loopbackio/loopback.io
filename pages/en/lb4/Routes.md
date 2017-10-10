@@ -12,6 +12,9 @@ summary:
 
 A `Route` is the mapping between your API specification and an Operation (JavaScript implementation). It tells LoopBack which function to `invoke()` given an HTTP request.
 
+The `Route` object and its associated types are provided as a part of the
+[(`@loopback/rest`)](https://github.com/strongloop/loopback-next/blob/master/packages/rest) package.
+
 ## Operations
 
 Operations are JavaScript functions that accept Parameters. They can be implemented as plain JavaScript functions or as methods in [Controllers](Controllers.html).
@@ -32,10 +35,11 @@ In the example above, `name` is a Parameter. Parameters are values, usually pars
  - `header`
  - `path` (url)
 
-## Creating Routes
+## Creating REST Routes
 
 The example below defines a `Route` that will be matched for `GET /`. When the `Route` is matched, the `greet` Operation (above) will be called. It accepts an OpenAPI [OperationObject](https://github.com/OAI/OpenAPI-Specification/blob/0e51e2a1b2d668f434e44e5818a0cdad1be090b4/versions/2.0.md#operationObject) which is defined using `spec`.
-
+The route is then attached to a valid server context running underneath the
+application.
 ```js
 const app = new Application();
 
@@ -48,17 +52,23 @@ const spec = {
     }
   }
 };
-const route = new Route('get', '/', spec, greet);
-app.route(route);
 
-app.start();
+(async function start() {
+  const server = await app.getServer(RestServer);
+  const route = new Route('get', '/', spec, greet);
+  server.route(route);
+  await app.start();
+})();
+
 ```
 
-## Declaring Routes with API specifications
+## Declaring REST Routes with API specifications
 
 Below is an example [Open API Specification](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/2.0.md#swagger-object) that defines the same operation as the example above. This a declarative approach to defining operations. The `x-operation` field in the example below references the handler JavaScript function for the API operation, and should not be confused with `x-operation-name`, which is a string for the Controller method name.
 
 ```js
+
+const server = await app.getServer(RestServer);
 const spec = {
   basePath: '/',
   paths: {
@@ -77,7 +87,7 @@ const spec = {
   }
 };
 
-app.api(spec);
+server.api(spec);
 ```
 
 ## Invoking operations using Routes

@@ -28,21 +28,27 @@ The starting point is [ECMAScript 6](http://www.ecma-international.org/ecma-262/
 
 Here is the most basic LoopBack 4 application:
 
-```js
+```ts
 import {Application} from '@loopback/core';
+import {RestComponent, RestServer} from '@loopback/rest';
 
-const app = new Application();
-app.handler((sequence, request, response) => {
-  sequence.send(response, 'hello world');
+const app = new Application({
+  components: [RestComponent],
 });
 
 (async function start() {
+  // Grab the REST server instance
+  const server = await app.getServer(RestServer);
+  // Setup our handler!
+  server.handler((sequence, request, response) => {
+    sequence.send(response, 'hello world');
+  });
   await app.start();
-  console.log(`The app is running on port ${app.getSync('http.port')}`);
+  console.log(`REST server listening on port ${server.getSync('rest.port')}`);
 })();
 ```
 
-The example above creates an `Application` that responds to all HTTP requests with the text "Hello World".
+The example above creates an `Application` and a `RestServer` that responds to all HTTP requests with the text "Hello World".
 
 To see what the complete application looks like, see [loopback-next-hello-world](https://github.com/strongloop/loopback-next-hello-world/).
 

@@ -306,20 +306,27 @@ You can then bind the full spec to your application.
 // This should be the export from the previous example.
 import spec from "../apidefs/swagger";
 import { Application } from "@loopback/core";
+import { RestComponent, RestServer } from "@loopback/rest";
 import { ProductController, DealController, CategoryController } from "./controllers";
 export class YourMicroservice extends Application {
 
   constructor() {
-    super();
+    super({
+      components: [RestComponent],
+    });
     const app = this;
-    // inject your spec here!
-    app.api(spec);
 
     app.controller(ProductController);
     app.controller(DealController);
     app.controller(CategoryController);
 
-    app.bind("http.port").to(3001);
+  }
+  async start() {
+    const server = await app.getServer(RestServer);
+    // inject your spec here!
+    server.api(spec);
+    server.bind("rest.port").to(3001);
+    await super.start();
   }
   // etc...
 }
@@ -336,11 +343,13 @@ However, manual validation is tedious and error prone, you should use an automat
 
 import {validateApiSpec} from '@loopback/testlab';
 import {MyApp} from '../..';
+import {RestServer} from '@loopback/rest';
 
 describe('API specification', () => {
   it('api spec is valid', async () => {
     const app = new MyApp();
-    const spec = app.getApiSpec();
+    const server = await app.getServer(RestServer);
+    const spec = server.getApiSpec();
     await validateApiSpec(apiSpec);
   });
 });
@@ -412,14 +421,15 @@ The third piece is the test code.  To initialize the test environment, we need t
   async function initEnvironment() {
     // By default, the port is set to 3000.
     const app: Application = new HelloWorldApp();
+    const server = app.getServer(RestServer);
     // For testing, we'll let the OS pick an available port by setting
-    // CoreBindings.HTTP_PORT to 0.
-    app.bind(CoreBindings.HTTP_PORT).to(0);
+    // RestBindings.PORT to 0.
+    server.bind(RestBindings.PORT).to(0);
     // app.start() starts up the HTTP server and binds the acquired port
-    // number to CoreBindings.HTTP_PORT.
+    // number to RestBindings.PORT.
     await app.start();
     // Get the real port number.
-    const port: number = await app.get(CoreBindings.HTTP_PORT);
+    const port: number = await server.get(RestBindings.PORT);
     const localhostAndPort: string = 'http://localhost:' + port;
     const config: object = {
       server: localhostAndPort, // base path to the end points
@@ -519,7 +529,7 @@ At this point, we are ready to make these tests pass by coding up your business 
 
 It may be tempting to overlook the importance of a good testing strategy when starting a new project. Initially, as the project is small and we mostly keep adding new code, even badly-written test suite seem to work well. However, as the project grows and matures, inefficiencies in the test suite can severely slow down the progress.
 
-An good test suite has the following properties:
+A good test suite has the following properties:
 
  - **Speed**: The test suite should complete quickly. A fast test suite encourages short red-green-refactor cycle, which makes it easier to spot problems, because there have been only few changes made since the last test run that passed. It also shortens deployment times, making it easy to frequently ship small changes, reducing the risk of major breakages.
  - **Reliability**: The test suite should be reliable. No developer enjoys debugging a failing test only to find out it was poorly written and failures are not related to any problem in the tested code. Flaky tests reduce the trust we have in our tests, up to point where we learn to ignore these failures, which will eventually lead to a situation when a test failed legitimately because of a bug in the application, but we did not notice.
@@ -594,7 +604,7 @@ Create `tests/acceptance/product.acceptance.ts` with the following contents:
 
 ```ts
 import {HelloWorldApp} from '../..';
-import {CoreBindings} from '@loopback/core';
+import {RestBindings, RestServer} from '@loopback/rest';
 import {expect, supertest} from '@loopback/testlab';
 
 describe('Product (acceptance)', () => {
@@ -640,11 +650,11 @@ describe('Product (acceptance)', () => {
 
   async function givenRunningApp() {
     app = new HelloWorldApp();
-
-    app.bind(CoreBindings.HTTP_PORT).to(0);
+    const server = await app.getServer(RestServer);
+    server.bind(RestBindings.PORT).to(0);
     await app.start();
 
-    const port: number = await app.get(CoreBindings.HTTP_PORT);
+    const port: number = await server.get(RestBindings.PORT);
     request = supertest(`http://127.0.0.1:${port}`);
   }
 
@@ -1038,7 +1048,8 @@ describe('Sequence (acceptance)', () => {
 
   it('prints a log line for each incoming request', async () => {
     const logs: string[] = [];
-    app.bind('sequence.actions.commonLog').to((msg: string) => logs.push(msg));
+    const server = await app.getServer(RestServer);
+    server.bind('sequence.actions.commonLog').to((msg: string) => logs.push(msg));
 
     const product = await givenProduct({name: 'Pen', slug: 'pen'});
     await request.get('/product/pen');
@@ -1055,15 +1066,15 @@ Run the test suite and watch the test to fail.
 In the next step, copy the default Sequence implementation to a new project file `src/server/sequence.ts`:
 
 ```ts
-const CoreSequenceActions = CoreBindings.SequenceActions;
+const RestSequenceActions = RestBindings.SequenceActions;
 
 export class MySequence implements SequenceHandler {
   constructor(
-    @inject(CoreSequenceActions.FIND_ROUTE) protected findRoute: FindRoute,
-    @inject(CoreSequenceActions.PARSE_PARAMS) protected parseParams: ParseParams,
-    @inject(CoreSequenceActions.INVOKE_METHOD) protected invoke: InvokeMethod,
-    @inject(CoreSequenceActions.SEND) protected send: Send,
-    @inject(CoreSequenceActions.REJECT) protected reject: Reject,
+    @inject(RestSequenceActions.FIND_ROUTE) protected findRoute: FindRoute,
+    @inject(RestSequenceActions.PARSE_PARAMS) protected parseParams: ParseParams,
+    @inject(RestSequenceActions.INVOKE_METHOD) protected invoke: InvokeMethod,
+    @inject(RestSequenceActions.SEND) protected send: Send,
+    @inject(RestSequenceActions.REJECT) protected reject: Reject,
   ) {}
 
   async handle(req: ParsedRequest, res: ServerResponse) {
@@ -1079,7 +1090,7 @@ export class MySequence implements SequenceHandler {
 }
 ```
 
-Register your new sequence with your `Application`, e.g. by calling `app.sequence(MySequence)`. Run your tests to verify that everything works the same way as before and the new acceptance test is still failing.
+Register your new sequence with your `Server`, e.g. by calling `server.sequence(MySequence)`. Run your tests to verify that everything works the same way as before and the new acceptance test is still failing.
 
 Now it's time to customize the default sequence to print a common log line. Edit the `handle` method as follows:
 
@@ -1111,10 +1122,11 @@ The new method `log` should be injected - add the following line to `MySequence`
 @inject('sequence.actions.log') protected log: (msg: string) => void
 ```
 
-When you run the tests now, you will see that our new acceptance tests for logging passes, but some of the older acceptance tests started to fail. This is because `sequence.actions.log` is not bound in our application. Fix that by adding the following line to your application constructor:
+When you run the tests now, you will see that our new acceptance tests for logging passes, but some of the older acceptance tests started to fail. This is because `sequence.actions.log` is not bound in our application. Fix that by adding the following line after you've retrieved your rest server instance:
 
 ```ts
-this.bind('sequence.actions.log').to((msg: String) => console.log(msg));
+// assuming you've called `const server = await app.getServer(RestServer)`
+server.bind('sequence.actions.log').to((msg: String) => console.log(msg));
 ```
 
 With this last change in place, your test suite should be all green again.

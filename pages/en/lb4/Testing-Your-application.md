@@ -47,20 +47,35 @@ Start by writing an acceptance test that ensures the application you're creating
 
 {% include code-caption.html content= "test/acceptance.js" %}
 ```js
-import {app} from './application';
-import {Client, expect} from '@loopback/testlab');
+
+const MyApp = require('../application');
+const createHandler = require('@loopback/testlab').createClientForRestServer;
+const expect = require('@loopback/testlab').expect;
+const RestServer = require('@loopback/rest').RestServer;
 
 describe('application', () => {
+  let app;
   let client;
   before(createClient);
+  after(stopApp);
 
   it('returns "hello world" for GET requests to /', async () => {
     const res = await client.get('/');
-    expect(res.statusCode).to.equal({statusCode: 200, body: 'hello world'});
+    expect(res.statusCode).to.eql(200);
+    expect(res.text).to.eql('hello world');
   });
 
-  function createClient() {
-    client = new Client(app); // missing
+  // Create our supertest instance and start up the application (and server!)
+  async function createClient() {
+    app = new MyApp();
+    const server = await app.getServer(RestServer);
+    await app.start();
+    client = await createHandler(server);
+  }
+
+  // Shut down the application and its server instance.
+  async function stopApp() {
+    await app.stop();
   }
 });
 ```
@@ -82,12 +97,28 @@ So now create this file at the project root:
 
 {% include code-caption.html content= "test/application.js" %}
 ```js
-const Application = require('@loopback/core'); // npm install -S @loopback/core
+// npm install -S @loopback/core @loopback/rest
+const Application = require('@loopback/core').Application;
+const RestComponent = require('@loopback/rest').RestComponent;
+const RestServer = require('@loopback/rest').RestServer;
 
-exports.createApp = () => {
-  const app = new Application();
-  app.sequence(sequence => sequence.send(200, 'hello world')); // missing
-};
+class MyApp extends Application {
+  constructor() {
+    super({
+      components: [RestComponent]
+    });
+  }
+
+  async start() {
+    const server = await this.getServer(RestServer);
+    server.handler((sequence, request, response) => {
+      sequence.send(response, 'hello world');
+    });
+    return await super.start();
+  }
+}
+
+module.exports = MyApp;
 ```
 
 When you run `npm test`, you should see:
@@ -119,19 +150,25 @@ Note how the business logic of the application is coupled to the sequence.
 2. It's hard to test the business logic for the route in isolation.
 3. It's hard to add new routes without modifying the sequence.
 
-Now decouple the business logic from the sequence through some refactoring by moving the hardcoded "hello world" to its own route handling library.  Start by writing a unit test:
+Now decouple the business logic from the sequence through some refactoring by
+moving the hardcoded "hello world" to a controller
+Start by writing a unit test:
 
-{% include code-caption.html content= "test/unit.js" %}
+{% include code-caption.html content= "test/controllers/greet-controller.js" %}
 ```js
-import {routeHandler} from '../route-handler';
-import {expect} from '@loopback/testlab';
+// We'll keep our modules in a "src" folder, and put our controller in "controllers"!
+const GreetController = require('../../src/controllers/greet.controller');
+const expect = require('@loopback/testlab').expect;
 
-describe('routeHandler.greet()', () => {
-  it('returns "hello bob"', () => {
-    const result = routeHandler.greet('bob');
-    expect(result).to.equal('hello bob');
+describe('greet-controller', () => {
+  describe('greet', () => {
+    it('uses query param name in hello message', async () => {
+      const ctrl = new GreetController();
+      expect(await ctrl.greet('bob')).to.equal('hello bob');
+    });
   });
 });
+
 ```
 
 Notes:
@@ -143,16 +180,23 @@ Run this code and see what happens:
 
 ```
 ...
-Error: Cannot find module 'route-handler'
+Error: Cannot find module '../../src/controllers/greet.controller';
 ```
 
-Great, you've seen the code fail. Fix this by implementing the `route-handler` library:
+Great, you've seen the code fail. Fix this by implementing the `greet.controller.js` file:
 
-{% include code-caption.html content= "route-handler.js" %}
+{% include code-caption.html content= "src/controllers/greet.controller.js" %}
 ```js
-exports.greet = (params) => {
-  return `hello ${params.name}`;
-};
+const get = require('@loopback/rest').get;
+
+class GreetController {
+  constructor() {}
+
+  async greet(name) {
+    return `hello ${name || 'world'}`;
+  }
+}
+module.exports = GreetController;
 ```
 
 Run the tests again:
@@ -166,43 +210,142 @@ Run the tests again:
   1 passing (7ms)
 ```
 
-Now you can guarantee your `route-handler` library returns the correct results as long as you call the `greet()` function. The power of unit testing is that you can test this in isolation, independent from the other moving parts of the application such as sequence. Now that you extracted the business logic into a separate library, register this route handler into the existing application.
+Now you can guarantee your `GreetController` returns the correct results as long
+as you call the `greet()` function. The power of unit testing is that you can
+test this in isolation, independent from the other moving parts of the
+application. Now that you've extracted the business logic into a separate
+library, we'll add an OpenAPI spec definition to wire up your controller
+to the correct route!
 
 {% include code-caption.html content="application.js" %}
 ```js
-import {routeHandler} from './route-handler';
-...
+const Application = require('@loopback/core').Application;
+const RestComponent = require('@loopback/rest').RestComponent;
+const RestServer = require('@loopback/rest').RestServer;
+const GreetController = require('./src/controllers/greet.controller');
 
-exports.createApp = () => {
-  const app = new Application();
-  app.get('/greet', {params: {name: {source: 'query'}}}, routeHandler.greet); // missing
-  app.sequence((sequence, ctx, req) => { // missing
-    const {handler, spec, pathParams} = sequence.findRoute(request); // missing
-    const params = sequence.parseParams(spec, request, pathParams); // was parseArgs, change to parseParams
-    const result = sequence.invoke(handler, params); // missing
-    sequence.send(200, result);
+class HelloWorldApp extends Application {
+  constructor() {
+    super({
+      components: [RestComponent]
+    });
+    this.controller(GreetController);
+  }
+
+  async start() {
+    const server = await this.getServer(RestServer);
+    server.api(require('./src/apidef/swagger.json'));
+    await super.start();
+  }
+}
+
+module.exports = HelloWorldApp;
+```
+
+Here is the swagger.json that will hook up your `GreetController` to the
+`/greet` path, and associate the `greet` function with a `GET` request.
+
+{% include code-caption.html content="src/apidef/swagger.json" %}
+```json
+{
+  "swagger": "2.0",
+  "basePath": "/",
+  "info": {
+    "title": "Your First App",
+    "version": "1.0"
+  },
+  "paths": {
+    "/greet": {
+      "get": {
+        "parameters": [
+          {
+            "name": "name",
+            "type": "string",
+            "in": "query"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "greet successful"
+          }
+        },
+        "x-controller-name": "GreetController",
+        "x-operation-name": "greet"
+      }
+    }
+  }
+}
+```
+
+Now that we've changed it up a bit, we're going to modify our existing
+application test so that it uses the `/greet` route for our first test,
+and add an additional test to show that it works for custom names as well!
+
+{% include code-caption.html content= "test/controllers/greet.test.js" %}
+```js
+const App = require('../application');
+const createHandler = require('@loopback/testlab').createClientForRestServer;
+const expect = require('@loopback/testlab').expect;
+const RestServer = require('@loopback/rest').RestServer;
+
+describe('application', () => {
+  let app;
+  let client;
+  before(createClient);
+  after(stopServer);
+
+  it('returns "hello world" for GET requests to /greet', async () => {
+    const res = await client.get('/greet');
+    expect(res.statusCode).to.eql(200);
+    expect(res.text).to.eql('hello world');
   });
-};
+
+  it('returns "hello bob" for GET requests to /greet?name=bob', async () => {
+    const res = await client.get('/greet?name=bob');
+    expect(res.statusCode).to.eql(200);
+    expect(res.text).to.eql('hello bob');
+  });
+
+  async function createClient() {
+    app = new App();
+    const server = await app.getServer(RestServer);
+    await app.start();
+    client = await createHandler(server);
+  }
+
+  async function stopServer() {
+    await app.stop();
+  }
+});
+
 ```
 
 Notes:
 
-1. You created a mapping between the `app` instance and the `routeHandler` via `app.get`.
-1. You let the application know when to invoke the `greet` by getting some extra information from the context (`ctx`) and routing information (`route`).
+1. You associated the `GreetController` with the app using `app.controller(GreetController)`.
+This is not done on the server level because a controller may be used with multiple server
+instances, and types!
+1. You let the application know when to invoke the `greet` by defining your
+REST server's OpenAPI spec with `server.api(require('./src/apidef/swagger.json'))`.
+The spec itself lets the RestServer's router reads the `x-controller-name` and
+`x-method-name` properties of each route and verb to match up requests with
+their handler functions.
 
 Run the tests again via `npm test` again to make sure you didn't break anything!
 
 ```
   application
-    ✓ returns "hello world" for GET requests to /
-  routeHandler.greet()
-    ✓ returns "hello world"
+    ✓ returns "hello world" for GET requests to /greet
+    ✓ returns "hello bob" for GET requests to /greet?name=bob
 
-
-  2 passing (15ms)
+  greet-controller
+    greet
+      ✓ uses query param name in hello message
+  
+  3 passing (74ms)
 ```
 
-As you can see from the example, you could "safely" refactor your code (extract out the hard-coded "hello world" into a separate library) by ensuring the application behaves in the exact same way (thanks to the acceptance test to confirm this). The unit test  ensured the `route-handler` library returned results in an expected way, independent of the application or sequence.
+As you can see from the example, you could "safely" refactor your code (extract out the hard-coded "hello world" into a separate library) by ensuring the application behaves in the exact same way (thanks to the acceptance test to confirm this). The unit test  ensured the `GreetController` returned results in an expected way, independent of the application or sequence.
 
 Takeaways:
 
@@ -217,149 +360,300 @@ Takeaways:
 
 While acceptance tests and unit tests get you most of the way there, sometimes you only want to test a few units together in isolation. As long as those units together, you can be fairly sure the entire application will continue to work as expected.
 
-To show an example of this, say you want to organize your routes into a [Controller](Controllers.html). In this case, you only need a few units working together (for example, a controller that works together with the route handler above to return "hello world"). As long as the controller method being called returns the expected values and the sequence calls the correct method, you can be fairly sure the entire app will still work as expected (the acceptance tests will ensure this).
+In our previous example, we created a `GreetController` with a `greet` function
+to handle the route, but we've coupled our logic with the controller!
+First, let's make a more interesting set of requirements for our `/greet`
+endpoint:
 
-Begin by refactoring the application to use a [Controller](Controllers.html) together with the route handler. As usual, start by writing a test:
+- We want the endpoint to be able to say "good morning", "good afternoon",
+"good evening" and "good night", based on a given time of day (timeOfDay).
+- We also want the greeter to be able to do this with the provided name, or
+fallback on "world" if none is given!
+- It should greet with "hello" if no timeOfDay is given.
+- It should add a comma if the greeting is not "hello".
 
-{% include code-caption.html content="prod.comproot.json" %}
-```json
-{
-  capitalize: '/path/to/capitalize.js#capitalize',
-  controller: {
-    GreetController: '/path/to/greet-controller.js',
-    InvitationController: '/path/to/invitation,
-  },
-  controllers: 'controllers.*'
-}
+Examples:
+```
+ GET /greet?timeOfDay=afternoon&name=bob => "good afternoon, bob"
+ GET /greet?timeOfDay=morning ==> "good morning, world"
+ GET /greet?timeOfDay=evening&name=sarah=> "good evening, sarah"
+ GET /greet ==> hello, world! 
+ // etc...
 ```
 
-{% include warning.html content= "Below doesn't seem right...
-" %}
+Yikes! That's a lot of cases! If we were to put all of this logic into our
+controller, it would quickly become a big mess.
 
-{% include code-caption.html content="test.comproot.json" %}
+We can split up these requirements into two major sections:
+- A set of functions that take the known values like name, timeOfDay and
+return greetings
+- Handling logic that determines _which_ function to call based on what
+we receive from the request
+
+To that end, we'll create a test for a Greeter class that does the parsing of
+the inputs into greetings, and then create the Greeter class!
+
+{% include code-caption.html content= "test/util/greeter.test.js" %}
 ```js
-{
-  capitalize: '/path/to/mock-capitalize.js'
-}
+const Greeter = require('../../src/util/greeter');
+const expect = require('@loopback/testlab').expect;
 
-(greetController) => {
+describe('greeter', () => {
+  const greeter = new Greeter();
+  function testGreeterFunctions(fn, name, expected) {
+    it(`${fn.name} prints ${expected}`, () => {
+      expect(greeter[fn](name)).to.equal(expected);
+    });
+  }
+  // So many cases!
+  testGreeterFunctions('morning', null, 'good morning, world');
+  testGreeterFunctions('afternoon', null, 'good afternoon, world');
+  testGreeterFunctions('evening', null, 'good evening, world');
+  testGreeterFunctions('night', null, 'good night, world');
 
-ctx.get('GreetController');
-```
+  testGreeterFunctions('morning', 'bob', 'good morning, bob');
+  testGreeterFunctions('afternoon', 'bob', 'good afternoon, bob');
+  testGreeterFunctions('evening', 'bob', 'good evening, bob');
+  testGreeterFunctions('night', 'bob', 'good night, bob');
 
-{% include code-caption.html content="test/integration.js" %}
-```js
-describe('title', ['capitalize', 'controller', (formatter, {GreetController}) { // missing
-  it('returns "Hello BOB"', () => {
-     const greetController = new GreetController(formatter);
-     expect(greetController.greet().to.equal('hello BOB');
+  it('greet prints hello, world', () => {
+    expect(greeter.greet()).to.equal('hello world');
+  });
+  it('greet prints hello, bob', () => {
+    expect(greeter.greet(null, 'bob')).to.equal('hello bob');
   });
 });
+```
 
-describe('GreetController.greet()', () => {
-  it('returns "Hello BOB"', () => {
-     const greetController = new GreetController(capitalize);
-     expect(greetController.greet()).to.equal('hello BOB');
-  });
-});
+Don't forget to run `npm test`! Making sure that your tests are actually
+checking something that will fail without code is important!
 
-export default class Test {
-  const capitalize = this.capitalize;
+Now, let's make them pass!
 
-  constructor(capitalize) {
-    this.capitalize = capitalize;
+{% include code-caption.html content= "src/util/greeter.js" %}
+```js
+class Greeter {
+  constructor() {}
+  morning(name) {
+    return this.greet('good morning', name);
   }
 
-  run() {
-    this.capitalize();
+  afternoon(name) {
+    return this.greet('good afternoon', name);
+  }
+
+  evening(name) {
+    return this.greet('good evening', name);
+  }
+
+  night(name) {
+    return this.greet('good night', name);
+  }
+
+  greet(prefix, name) {
+    return `${prefix ? prefix + ',' : 'hello'} ${name || 'world'}`;
   }
 }
+
+module.exports = Greeter;
 ```
 
-Notes:
-
-1. you only import the unit(s) (in this case only the `GreetController` and not the `routeHandler`) that are needed to make the test pass
-
-Run the tests:
-
-```
-...
-Error: Cannot find module 'greet-controller'
-```
-
-This is expected.  Fix the failing test by creating the missing controller that uses the `route-handler`:
-
-{% include code-caption.html content="capitalize.js" %}
-```js
-module.exports = str => str.toUppercase();
-```
-
-{% include code-caption.html content="controller.js" %}
-```js
-class GreetController {
-  constructor(capitalize) {
-    this.capitalize = capitalize;
-  }
-
-  @get('/greet', {params: {name: {source: 'query'}}}) // missing
-  greet(params) {
-    return capitalize(params.name);
-  }
-}
-```
-
-- **a** - route handler isolation unit
-- **b** - greet isolation unit
-
-This is fairly straight-foward. Run the tests again:
+Run your tests again!
 
 ```
   application
-    ✓ returns "hello world" for GET requests to /
-  routeHandler.greet()
-    ✓ returns "hello world"
-  GreetController.greet()
-    ✓ returns "hello world"
+    ✓ returns "hello world" for GET requests to /greet (40ms)
+    ✓ returns "hello bob" for GET requests to /greet?name=bob
+
+  greet-controller
+    greet
+      ✓ uses query param name in hello message
+
+  greeter
+    ✓ morning prints good morning, world
+    ✓ afternoon prints good afternoon, world
+    ✓ evening prints good evening, world
+    ✓ night prints good night, world
+    ✓ morning prints good morning, bob
+    ✓ afternoon prints good afternoon, bob
+    ✓ evening prints good evening, bob
+    ✓ night prints good night, bob
+    ✓ greet prints hello, world
+    ✓ greet prints hello, bob
 
 
-  3 passing (24ms)
+  13 passing (86ms)
 ```
 
-Notes:
+Great! Now that we've got our Greeter class, we can transform our 
+`GreetController` so that it can deal with deciding _which_ functions to call
+on our Greeter!
 
-1. `@get` is a "decorator". For now, just think of it as an easy way to provide routing metadata to any method you want to add to a class.
-1. Assume all the other units do their work properly to get to your result.
-1. The test is an integration test because `GreetController.greet` called `routeHandler.greet` under the hood to get the "hello world" string (hence testing both units "working together").
+First, we start with the tests (again, run them when you're done!)
 
-The important point is that you are testing **two** units together (without any reference or dependency on the application or sequence). This allows you to make specific parts of your system more robust by picking a few units and providing additional tests to address your concerns.
-
-That said, just because the two units above work together, it doesn't mean the application still works as a whole. You still need the acceptance test to make sure regressions weren't introduced as part of refactoring. Use the controller instead of the routing handler in the existing application:
-
-{% include code-caption.html content="application.js" %}
+{% include code-caption.html content= "test/controllers/greet.test.js" %}
 ```js
-...
-const GreetController = require('./greet-controller');
+const GreetController = require('../../src/controllers/greet.controller');
+const expect = require('@loopback/testlab').expect;
 
-exports.createApp = () => {
-  const app = new Application();
-  app.controller(GreetController);
-};
+describe('greet-controller', () => {
+  describe('greet', () => {
+    const ctrl = new GreetController();
+    function greetTest(test, timeOfDay, name, expected) {
+      it(`${test} should return ${expected}`, async () => {
+        expect(await ctrl.greet(timeOfDay, name)).to.equal(expected);
+      });
+    }
+
+    greetTest('no params', null, null, 'hello world');
+    greetTest('name "bob"', null, 'bob', 'hello bob');
+
+    greetTest('timeOfDay "morning"', 'morning', null, 'good morning, world');
+    greetTest('timeOfDay "afternoon"', 'afternoon', null, 'good afternoon, world');
+    greetTest('timeOfDay "evening"', 'evening', null, 'good evening, world');
+    greetTest('timeOfDay "night"', 'night', null, 'good night, world');
+
+    greetTest('timeOfDay "morning"', 'morning', 'bob', 'good morning, bob');
+    greetTest('timeOfDay "afternoon"', 'afternoon', 'bob', 'good afternoon, bob');
+    greetTest('timeOfDay "evening"', 'evening', 'bob', 'good evening, bob');
+    greetTest('timeOfDay "night"', 'night', 'bob', 'good night, bob');
+  });
+});
+
 ```
 
-Notice how the code is much simpler. By providing a [Controller](Controllers.html) directly, LoopBack can figure out how to respond to requests based on the routing metadata you provided via `@get` in the Controller implementation (i.e. `@get('/'` for HTTP GET / requests, call the corresponding controller method).
+Next, the class itself:
+
+{% include code-caption.html content= "src/controllers/greet.controller.js" %}
+```js
+const Greeter = require('../util/greeter');
+const get = require('@loopback/rest').get;
+
+class GreetController {
+  constructor() {
+    this.greeter = new Greeter();
+  }
+
+  async greet(timeOfDay, name) {
+    switch (timeOfDay) {
+      case 'morning':
+        return this.greeter.morning(name);
+      case 'afternoon':
+        return this.greeter.afternoon(name);
+      case 'evening':
+        return this.greeter.evening(name);
+      case 'night':
+        return this.greeter.night(name);
+      default:
+        return this.greeter.greet(null, name);
+    }
+  }
+}
+module.exports = GreetController;
+```
+
+After running your tests again, everything should be green!
+
+You are now testing **two** units together (without any references or dependence
+on the application or sequence). This allows you to make specific parts of your
+system more robust by picking a few units and providing additional tests to
+address your concerns.
+
+That said, just because the two units above work together, it doesn't mean the
+application still works as a whole. You still need to modify your acceptance
+test to make sure regressions weren't introduced as part of refactoring, and to
+add some new logic to cover the new functionality.
+
+{% include code-caption.html content="test/application.test.js" %}
+```js
+const App = require('../application');
+const createHandler = require('@loopback/testlab').createClientForRestServer;
+const expect = require('@loopback/testlab').expect;
+const RestServer = require('@loopback/rest').RestServer;
+
+describe('application', () => {
+  let app;
+  let client;
+  before(createClient);
+  after(stopServer);
+
+  it('returns "hello world" for GET requests to /greet', async () => {
+    const res = await client.get('/greet');
+    expect(res.statusCode).to.eql(200);
+    expect(res.text).to.eql('hello world');
+  });
+
+  it('returns "hello bob" for GET requests to /greet?name=bob', async () => {
+    const res = await client.get('/greet?name=bob');
+    expect(res.statusCode).to.eql(200);
+    expect(res.text).to.eql('hello bob');
+  });
+
+  it('returns "good morning, world" for GET requests to /greet?timeOfDay=morning', async () => {
+    const res = await client.get('/greet?timeOfDay=morning');
+    expect(res.statusCode).to.eql(200);
+    expect(res.text).to.eql('good morning, world');
+  });
+
+  it('returns "good morning, bob" for GET requests to /greet?timeOfDay=morning&name=bob', async () => {
+    const res = await client.get('/greet?timeOfDay=morning&name=bob');
+    expect(res.statusCode).to.eql(200);
+    expect(res.text).to.eql('good morning, bob');
+  });
+
+  // There are many, many more tests to add here, but we'll omit them
+  // for brevity.
+
+  async function createClient() {
+    app = new App();
+    const server = await app.getServer(RestServer);
+    await app.start();
+    client = await createHandler(server);
+  }
+
+  async function stopServer() {
+    await app.stop();
+  }
+});
+
+```
 
 Run tests to make sure everything works as expected:
 
 ```
   application
-    ✓ returns "hello world" for GET requests to /
-  routeHandler.greet()
-    ✓ returns "hello world"
-  GreetController.greet()
-    ✓ returns "hello world"
+    ✓ returns "hello world" for GET requests to /greet
+    ✓ returns "hello bob" for GET requests to /greet?name=bob
+    ✓ returns "good morning, world" for GET requests to /greet?timeOfDay=morning
+    ✓ returns "good morning, bob" for GET requests to /greet?timeOfDay=morning&name=bob
+
+  greet-controller
+    greet
+      ✓ no params should return hello world
+      ✓ name "bob" should return hello bob
+      ✓ timeOfDay "morning" should return good morning, world
+      ✓ timeOfDay "afternoon" should return good afternoon, world
+      ✓ timeOfDay "evening" should return good evening, world
+      ✓ timeOfDay "night" should return good night, world
+      ✓ timeOfDay "morning" should return good morning, bob
+      ✓ timeOfDay "afternoon" should return good afternoon, bob
+      ✓ timeOfDay "evening" should return good evening, bob
+      ✓ timeOfDay "night" should return good night, bob
+
+  greeter
+    ✓ morning prints good morning, world
+    ✓ afternoon prints good afternoon, world
+    ✓ evening prints good evening, world
+    ✓ night prints good night, world
+    ✓ morning prints good morning, bob
+    ✓ afternoon prints good afternoon, bob
+    ✓ evening prints good evening, bob
+    ✓ night prints good night, bob
+    ✓ greet prints hello, world
+    ✓ greet prints hello, bob
 
 
-  3 passing (20ms)
+  24 passing (87ms)
 ```
 
 Takeaways:
