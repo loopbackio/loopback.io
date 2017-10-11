@@ -1,6 +1,6 @@
 ---
 lang: en
-title: 'What to expect for LB 3.x users'
+title: 'For current LoopBack users'
 keywords: LoopBack 4.0, LoopBack 4
 tags:
 sidebar: lb4_sidebar
@@ -8,7 +8,9 @@ permalink: /doc/en/lb4/LoopBack-3.x.html
 summary:
 ---
 
-This topic will help existing users of LoopBack 3.x (or earlier versions) to understand the implication of LoopBack 4:
+LoopBack 4 is the next generation of the LoopBack framework, with a completely rewritten core foundation and significantly improved programming model. If you're an existing LoopBack user, read [Crafting LoopBack 4](Crafting LoopBack-4.html) to understand the motivations, strategy, and innovations behind this exciting new version.
+
+This article will help existing users understand LoopBack 4:
 
 - How to connect LoopBack 3.x concepts to LoopBack 4 terms
 - What takes to rewrite/migrate a LoopBack 3.x application to LoopBack 4
@@ -75,7 +77,38 @@ LoopBack v4 is moving to the well-known Model-(View-)Controller pattern, where t
 | Tooling               | loopback-cli and API Connect UI             | (TBA)            |
 
 
+## What's new and exciting in LoopBack 4
+
+Some of the highlights of LoopBack 4 include:
+
+- Leverage TypeScript for better code quality and productivity
+- Unify and simplify the asynchronous programming model/style around Promise and Async/Await
+- Implement an IoC Container with Dependency Injection for better visibility, extensibility and composability
+- Introduce Component as packaging model for extensions that can be plugged into LoopBack 4 applications 
+- Make everything else as components, such as REST, Authentication, and Authorization
+- Divide the responsibilities of LoopBack models into
+  - Controllers - to handle incoming API requests
+  - Repositories - to provide access to data stores
+  - Models - to define schemas for business objects
+  - Services - to interact with existing REST APIs, SOAP WebServices, and other form of services/microservices
+- Refactor the ORM into separate modules for different concerns 
+
 ## What's in the beta release
 
+The beta release is the first milestone of the LoopBack 4 journey. Although it's not functionally complete or ready for production use, it provides a preview of what's coming, including:
+
+1. A new `@loopback/context` module that implements an IoC container with dependency injection
+2. A new `@loopback/core` module that defines core artifacts such as application and component
+3. A `@loopback/rest` component that provides top-down REST API mapping using OpenAPI/Swagger specs and controllers
+4. A `@loopback/authentication` component to provide infrastructure to integrate with authentication providers
+5. An experimental `@loopback/repository` module to define repository interfaces and provide a reference implementation on top of legacy `loopback-datasource-juggler` and connectors
+6. Examples and tutorials
+
+The primary target audience of the beta release is extension developers. Please check out https://github.com/strongloop/loopback4-example-log-extension.
+
+The initial beta release provides a preview for API developers. Currently, the LoopBack CLI doesn't yet support LoopBack 4, but it will eventually. See a working application at https://github.com/strongloop/loopback-next-hello-world.    
+
 ## Tentative roadmap 
+
+- Provide a link to the roadmap
 
