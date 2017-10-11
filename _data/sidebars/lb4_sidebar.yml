@@ -90,7 +90,7 @@ children:
     url: Testing-your-app-advanced.html
     output: 'web, pdf'
 
-- title: 'What to expect for 3.x users'
+- title: 'For current LoopBack users'
   url: LoopBack-3.x.html
   output: 'web, pdf'
 
