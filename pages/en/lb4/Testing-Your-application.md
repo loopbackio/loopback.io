@@ -87,6 +87,8 @@ There are three kinds of Test doubles provided by Sinon.JS:
 
 When writing an application accessing data in a database, it's a best practice to use [Repositories](./Repositories.html) to encapsulate all data-access/persistence-related code and let other parts of the application (typically [Controllers](./Controllers.html)) to depend on these Repositories for data access. In order to test Repository dependants (e.g. Controllers) in isolation, we need to provide a test double, usually as a test stub.
 
+In traditional object-oriented languages like Java or C#, in order to allow the unit tests to provide a custom implementation of the repository API, the controller needs to depend on an interface describing the API, and the repository implementation needs to implement this interface. The situation is easier in JavaScript and TypeScript. Thanks to the dynamic nature of the language, it’s possible to mock/stub entire classes.
+
 Creating a test double for a repository class is very easy with Sinon.JS' utility function `createStubInstance`. It's important to create a new stub instance for each unit test in order to prevent unintended re-use of pre-programmed behaviour between (unrelated) tests.
 
 ```ts
@@ -121,13 +123,22 @@ Verify how was the stubbed method executed at the end of your unit-test (in the 
 expect(findStub).to.be.calledWithMatch({where: {id: 1}});
 ```
 
-Here is a full example:
+See [Unit test your controllers](#unit-test-your-controllers) for a full example.
+
+#### Create a stub Service
+
+To be done. The initial Beta release does not include Services as a first-class feature.
+
+### Unit-test your Controllers
+
+A typical unit-test creates a controller instance with dependencies replaced by Test doubles and directly calls the tested method. In the example below, we give the controller a stub implementation of its repository dependency, see [Create a stub repository](#create-a-stub-repository) for a detailed explanation.
 
 ```ts
+// test/controllers/product.controller.unit.ts
 import {ProductController, ProductRepository} from '../..';
 import {expect, sinon} from '@loopback/testlab';
 
-describe('ProductController', () => {
+describe('ProductController (unit)', () => {
   let repository: ProductRepository;
   beforeEach(givenStubbedRepository);
 
@@ -150,15 +161,46 @@ describe('ProductController', () => {
 });
 ```
 
-#### Create a stub Service
-
-To be done. The initial Beta release does not include Services as a first-class feature.
-
-### Unit-test your Controllers
-
 ### Unit-test your Models and Repositories
 
+In a typical LoopBack appliction, models and repositories are relying mostly on the behavior provided by the framework (`@loopback/repository` package) and there is no need to test the LoopBack's built-in functionality unit-test level (the functionality has been already verified by the tests in the framework). What does need new unit-tests is any additional application-specific API.
+
+For example, if our `Person` Model has properties `firstname`, `middlename` and `surname` and provides a function to obtain the full name, then we should write unit tests to verify the implementation of this additional method.
+
+```ts
+// test/unit/models/person.model.unit.ts
+import {Person} from '../../models/person.model.ts'
+import {expect} from '@loopback/testlab';
+
+describe('Person (unit)', () => {
+  // we recommend to group tests by method names
+  describe('getFullName()', () => {
+    it('uses all three parts when present', () => {
+      const person = new Person({
+        firstname: 'Jane',
+        middlename: 'Smith',
+        surname: 'Brown'
+      });
+
+      const fullName = person.getFullName();
+
+      expect(fullName).to.equal('Jane Smith Brown');
+    });
+
+    it('omits middlename when not present', () => {
+      // etc.
+    });
+  });
+});
+```
+
+Writing a unit test for a custom Repository methods is not straightforward because `CrudRepositoryImpl` is based on legacy loopback-datasource-juggler that was not designed with Dependency Injection in mind. We are recommending to use integration tests to verify the implementation of custom Repository methods, see [Test your Repositories against a real database](#test-your-repositories-against-a-real-database) in [Integration Testing](#integration-testing).
+
 ### Unit-test your Sequence
+
+While it's possible to test a custom Sequence class in isolation, we think it's better to rely on acceptance-level tests in this exceptional case. The reason is that a custom Sequence class typically has many dependencies (which makes test setup too long and complex), and at the same time it provides very little functionality on top of the injected sequence actions. Bugs are much more likely to caused by the way how the real sequence action implementations interact together (which is not covered by unit tests), instead of the sequence code itself (which is the only thing covered).
+
+See [Test Sequence customizations](#test-sequence-customizations) in [Acceptance Testing](#acceptance-testing).
 
 ### Unit-test your Services
 
@@ -175,6 +217,8 @@ Integration tests are considered as "white-box" too. They use "inside-out" appro
 
 ### Test your Repositories against a real database
 
+TODO: show how to test a custom repository method.
+
 ### Test your Controllers and Repositories together
 
 ### Test your Services against real backends
@@ -188,6 +232,8 @@ To be done, the initial Beta release does not include Services as a first-class 
 ### Perform an auto-generated smoke test of your REST API
 
 ### Test your individual REST API endpoints
+
+### Test Sequence customizations
 
 
 ## EVERYTHING BELOW IS LEGACY AND SHOULD BE REMOVED BEFORE LANDING
