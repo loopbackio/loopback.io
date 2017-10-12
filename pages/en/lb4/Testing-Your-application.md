@@ -62,6 +62,118 @@ Your `package.json` should look something like:
 }
 ```
 
+## Data handling
+
+Tests accessing a real database often require pre-existing data (e.g. a method listing all products need some products to exist in the database) and/or need to create new model instances with valid data (e.g a method creating a new product need to know how to fill in all required properties). There are various approaches for solving these two problems, many of them unfortunately make the test suite difficult to understand, difficult to maintain and prone to test failures unrelated to the changes made.
+
+Based on our experience, we recommend the following approach.
+
+### Clean the database before each test
+
+Always start with a clean database before each test. This may seem counter-intuitive: why not reset the database after the test has finished? When a test fails and the database is cleaned after the test has finished, then it's difficult to observe what was stored in the database, why the test failed. When the database is cleaned in the beginning, then any failing test will leave the database exactly in the state that caused the test to fail.
+
+This is typically achieved by setting up a `beforeEach` hook calling a helper method to clean the database.
+
+
+```ts
+// test/helpers/database.helpers.ts
+
+export async function givenEmptyDatabase() {
+  await new ProductRepository().deleteAll();
+  await new CategoryRepository().deleteAll();
+}
+
+// in your test file
+describe('ProductController (integration)', () => {
+  before(givenEmptyDatabase);
+  // etc.
+});
+```
+
+### Use Test Data Builders
+
+Avoid duplicating code for creating model data with all required properties filled in, use shared [test data builders](http://www.natpryce.com/articles/000714.html) instead. This is allow tests to provide only a small subset of properties that are strictly required by the tested scenario, which is important for multiple reasons:
+
+1. It makes tests easier to understand, because it’s immediately clear what model properties are relevant to the test. If the test was setting all required properties, it would be difficult to tell whether some of those properties may be actually relevant to the tested scenario.
+
+2. It makes tests easier to maintain. As our data model evolves, we will eventually need to add more required properties. If the tests were building model instance data manually, we would have to fix all tests to set the new required property. With a shared helper, there is only a single place where to add a value for the new required property.
+
+See [@loopback/openapi-spec-builder](https://www.npmjs.com/package/@loopback/openapi-spec-builder) for an example showing how to apply this design pattern for building OpenAPI Spec documents.
+
+In practice, a rich method-based API may be an overkill and a simple function that adds missing required properties is good enough.
+
+```ts
+export function givenProductData(data: Partial<Product>) {
+  return Object.assign({
+    name: 'a-product-name',
+    slug: 'a-product-slug',
+    price: 1,
+    description: 'a-product-description',
+    available: true,
+  }, data);
+}
+
+export async function givenProduct(data: Partial<Product>) {
+  return await new ProductRepository().create(
+    givenProductData(data));
+}
+```
+
+### Avoid sharing the same data for multiple tests
+
+It may be tempting to define a small set of data that can be shared by all tests. For example, in a e-commerce application, we may pre-populate the database with few categories, some products, an admin user and a regular user (a customer). Such approach has several downsides:
+
+- When trying to understand any individual test, it's difficult to tell what part of the pre-populated data is essential for the test and what's irrelevant. For example, in a test checking the method counting the number of products in a given category using a pre-populated category "Stationery", is it important that "Stationery" contains nested sub-categories or is that fact irrelevant? If it's irrelevant, then what are the other tests that depend on it?
+
+- As the application grows and new features are added, it's easier to add more properties to existing model instances rather than create new instances using only properties required by the new features. For example, when adding a category image, it's easier to add image to an existing category "Stationery" and perhaps keep another category "Groceries" without any image, rather than create two new categories "CategoryWithAnImage" and "CategoryMissingImage". This further amplifies the previous problem, because it's not clear that "Groceries" is the category that should be used by tests requiring a category with no image - the category name does not provide any hints on that.
+
+- As the shared dataset grows (together with the application), the time required to bring the database into initial state grows too. Instead of running few "DELETE ALL" queries before each test (which is relatively fast), we may end up with running tens to hundreds different commands creating different model instances, triggering slow index rebuilds along the way, and considerably slowing the test suite as a result.
+
+Use the test data builders described in the previous section to populate your database with the data specific to your test only.
+
+Using the e-commerce example described above, this is how integration tests for the CategoryRepository can look like:
+
+```ts
+describe('Category (integration)', () => {
+  beforeEach(givenEmptyDatabase);
+
+  describe('countProducts()', () => {
+    it('returns correct count for an empty', async () => {
+      const category = await givenCategory();
+      const count = await category.countProducts();
+      expect(count).to.equal(0);
+    });
+
+    // etc.
+
+    it('includes products in subcategories', async () => {
+      const category = await givenCategory({
+        products: [await givenProduct()],
+        subcategories: [
+          givenCategory({
+            products: [await givenProduct()]
+          })
+        ],
+      });
+
+      const count = await category.countProducts();
+      expect(count).to.equal(2);
+    });
+  });
+});
+```
+
+Write higher-level helpers to share the code for re-creating common scenarios. For example, if your application has two kinds of users (admins and customers), then you may write the following helpers to simplify writing acceptance tests checking access control:
+
+```ts
+async function givenAdminAndCustomer() {
+  return {
+    admin: await givenUser({role: Roles.ADMIN}),
+    customer: await givenUser({role: Roles.CUSTOMER}),
+  };
+}
+```
+
 ## Unit testing
 
 Unit tests are considered as "white-box". They use "inside-out" approach, where the test knows all about the internals and controls all the variables of the system under test. Individual units are tested in isolation, their dependencies are replaced with [Test doubles](https://en.wikipedia.org/wiki/Test_double).
@@ -167,30 +279,42 @@ In a typical LoopBack appliction, models and repositories are relying mostly on 
 
 For example, if our `Person` Model has properties `firstname`, `middlename` and `surname` and provides a function to obtain the full name, then we should write unit tests to verify the implementation of this additional method.
 
+Remember to use [Test data builders](#use-test-data-builders) whenever you need a valid data to create a new model instance.
+
 ```ts
 // test/unit/models/person.model.unit.ts
-import {Person} from '../../models/person.model.ts'
+import {Person} from '../../models/person.model'
+import {givenPersonData} from '../helpers/database.helpers'
 import {expect} from '@loopback/testlab';
 
 describe('Person (unit)', () => {
   // we recommend to group tests by method names
   describe('getFullName()', () => {
     it('uses all three parts when present', () => {
-      const person = new Person({
+      const person = givenPerson({
         firstname: 'Jane',
         middlename: 'Smith',
         surname: 'Brown'
-      });
+      }));
 
       const fullName = person.getFullName();
-
       expect(fullName).to.equal('Jane Smith Brown');
     });
 
     it('omits middlename when not present', () => {
-      // etc.
+      const person = givenPerson({
+        firstname: 'Mark',
+        surname: 'Twain'
+      }));
+
+      const fullName = person.getFullName();
+      expect(fullName).to.equal('Mark Twain');
     });
   });
+
+  function givenPerson(data: Partial<Person>) {
+    return new Person(givenPersonData(data));
+  }
 });
 ```
 
@@ -213,13 +337,66 @@ To be done. The initial Beta release does not include Services as a first-class 
 
 Integration tests are considered as "white-box" too. They use "inside-out" approach that tests how multiple units work together or with external services. Test doubles may be used to isolate tested units from external variables/state that's not part of the tested scenario.
 
-### Use test data builders
+### Test your repositories against a real database
 
-### Test your Repositories against a real database
+There are two common reasons for adding repository tests:
+ - Your models are using advanced configuration, e.g custom column mapping, and you want to verify this configuration is correctly picked up by the framework.
+ - Your repositories have additional methods
 
-TODO: show how to test a custom repository method.
+Integration tests are one of the places where to put the best practices in [Data handling](#data-handling) to work:
+
+ - clean the database before each test
+ - use test data builders
+ - avoid sharing the same data for multiple tests
+
+Here is an example showing how to write an integration test for a custom repository method `findByName`:
+
+```ts
+// tests/integration/repositories/category.repository.integration.ts
+import {givenEmptyDatabase} from '../../helpers/database.helpers.ts';
+
+describe('CategoryRepository (integration)', () => {
+  beforeEach(givenEmptyDatabase);
+
+  describe('findByName(name)', () => {
+    it('return the correct category', async () => {
+      const stationery = await givenCategory({name: 'Stationery'});
+      const groceries = await givenCategory({name: 'Groceries'});
+      const repository = new CategoryRepository();
+
+      const found = await repository.findByName('Stationery');
+
+      expect(found).to.deepEqual(stationery);
+    });
+  });
+});
+```
 
 ### Test your Controllers and Repositories together
+
+Integration tests running your controllers with real repositories are important to verify that your controllers are using repository API correctly, that the commands and queries produce expected results when executed on a real database. These tests are similar to repository tests, we are just adding controllers as another ingredient.
+
+```ts
+import {ProductController, ProductRepository, Product} from '../..';
+import {expect} from '@loopback/testlab';
+import {givenEmptyDatabase, givenProduct} from '../helpers/database.helpers';
+
+describe('ProductController (integration)', () => {
+  beforeEach(givenEmptyDatabase);
+
+  describe('getDetails()', () => {
+    it('retrieves details of the given product', async () => {
+      const inkPen = await givenProduct({name: 'Pen', slug: 'pen'});
+      const pencil = await givenProduct({name: 'Pencil', slug: 'pencil'});
+      const controller = new ProductController(new ProductRepository());
+
+      const details = await controller.getDetails('pen');
+
+      expect(details).to.eql(pencil);
+    });
+  });
+});
+```
 
 ### Test your Services against real backends
 
@@ -227,9 +404,84 @@ To be done, the initial Beta release does not include Services as a first-class 
 
 ## Acceptance testing
 
+Acceptance tests are considered as "black-box". They use "outside-in" approach where you do not know about the internals of the system, just simply do the same actions (send the same HTTP requests) as the clients and consumers of your API will do, and verify the results returned by the system under test are matching the expectations.
+
+Typically, acceptance tests start the application, make HTTP requests to the server, and verify the returned response. Internally in LoopBack, we are using [supertest](https://github.com/visionmedia/supertest) to make the test code executing HTTP requests and verifying responses easier to write and read.
+
 ### Validate your OpenAPI specification
 
+OpenAPI specification is a corner-stone of applications building REST APIs, it enables API consumers to leverage a whole ecosystem of related tooling. To make the spec useful, we must ensure it's a valid OpenAPI Spec document, ideally in an automated way that's an integral part of regular CI builds. LoopBack's [testlab](https://www.npmjs.com/package/@loopback/testlab) module provides a helper method `validateApiSpec` that builds on top of popular [swagger-parser](https://www.npmjs.com/package/swagger-parser) package.
+
+Example usage:
+
+```ts
+// test/acceptance/api-spec.acceptance.ts
+import {validateApiSpec} from '@loopback/testlab';
+import {MyApp} from '../..';
+import {RestServer} from '@loopback/rest';
+
+describe('API specification', () => {
+  it('api spec is valid', async () => {
+    const app = new MyApp();
+    const server = await app.getServer(RestServer);
+    const spec = server.getApiSpec();
+    await validateApiSpec(apiSpec);
+  });
+});
+```
+
 ### Perform an auto-generated smoke test of your REST API
+
+The formal validity of your application's spec does not guarantee that your implementation is actually matching the specified behavior. To keep your spec in sync with your implementation, you should use an automated tool like [Dredd](https://www.npmjs.com/package/dredd) to run a set of smoke tests to verify conformance of your app with the spec.
+
+Automated testing tools usually require little hints in your specification to tell them how to create valid requests or what response data to expect. Dredd in particular relies on response [examples](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/2.0.md#exampleObject) and request parameter [x-example](http://dredd.org/en/latest/how-to-guides.html#example-values-for-request-parameters) fields. Extending your API spec with examples is good thing on its own, developers consuming your API will find them useful too.
+
+Here is an example showing how to run Dredd to test your API against the spec:
+
+```ts
+// test/acceptance/api.acceptance.test.ts
+describe('API (acceptance)', () => {
+  let dredd: any;
+  before(initEnvironment);
+
+  it('conforms to the specification', done => {
+    dredd.run((err: Error, stats: object) => {
+      if (err) return done(err);
+      expect(stats).to.containDeep({
+        failures: 0,
+        errors: 0,
+        skipped: 0,
+      });
+      done();
+    });
+  });
+
+  async function initEnvironment() {
+    const app = new HelloWorldApp();
+    const server = app.getServer(RestServer);
+    // For testing, we'll let the OS pick an available port by setting
+    // RestBindings.PORT to 0.
+    server.bind(RestBindings.PORT).to(0);
+    // app.start() starts up the HTTP server and binds the acquired port
+    // number to RestBindings.PORT.
+    await app.start();
+    // Get the real port number.
+    const port = await server.get(RestBindings.PORT);
+    const baseUrl = `http://localhost:${port}`;
+    const config: object = {
+      server: baseUrl, // base path to the end points
+      options: {
+        level: 'fail', // report 'fail' case only
+        silent: false, // false for helpful debugging info
+        path: [`${baseUrl}/swagger.json`], // to download apiSpec from the service
+      }
+    };
+    dredd = new Dredd(config);
+  });
+})
+```
+
+The user experience is not as great as we would like it, we are looking into better solutions - see [GitHub issue #644](https://github.com/strongloop/loopback-next/issues/644). Let us know if you can recommend one!
 
 ### Test your individual REST API endpoints
 
