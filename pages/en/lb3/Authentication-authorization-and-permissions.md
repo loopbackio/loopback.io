@@ -335,33 +335,45 @@ Be sure to call `disableRemoteMethodByName()` on your own custom model, not one 
 in the example below, for instance, the calls are `MyUser.disableRemoteMethodByName()` _not_ `User.disableRemoteMethodByName()`.
 " %}
 
-Here's an example of hiding all methods of the `MyUser` model, except for `login` and `logout`:
+Here's an example of hiding all methods of the `MyUser` model, except for `login` and `logout`. It assumes `MyUser` is an extended built-in User model:
 
 ```javascript
-MyUser.disableRemoteMethodByName("create");
-MyUser.disableRemoteMethodByName("upsert");
-MyUser.disableRemoteMethodByName("updateAll");
-MyUser.disableRemoteMethodByName("prototype.updateAttributes");
-MyUser.disableRemoteMethodByName("prototype.patchAttributes");
+MyUser.disableRemoteMethodByName("upsert");                               // disables PATCH /MyUsers
+MyUser.disableRemoteMethodByName("find");                                 // disables GET /MyUsers
+MyUser.disableRemoteMethodByName("replaceOrCreate");                      // disables PUT /MyUsers
+MyUser.disableRemoteMethodByName("create");                               // disables POST /MyUsers
 
-MyUser.disableRemoteMethodByName("find");
-MyUser.disableRemoteMethodByName("findById");
-MyUser.disableRemoteMethodByName("findOne");
+MyUser.disableRemoteMethodByName("prototype.updateAttributes");           // disables PATCH /MyUsers/{id}
+MyUser.disableRemoteMethodByName("findById");                             // disables GET /MyUsers/{id}
+MyUser.disableRemoteMethodByName("exists");                               // disables HEAD /MyUsers/{id}
+MyUser.disableRemoteMethodByName("replaceById");                          // disables PUT /MyUsers/{id}
+MyUser.disableRemoteMethodByName("deleteById");                           // disables DELETE /MyUsers/{id}
 
-MyUser.disableRemoteMethodByName("deleteById");
+MyUser.disableRemoteMethodByName('prototype.__get__accessTokens');        // disable GET /MyUsers/{id}/accessTokens
+MyUser.disableRemoteMethodByName('prototype.__create__accessTokens');     // disable POST /MyUsers/{id}/accessTokens
+MyUser.disableRemoteMethodByName('prototype.__delete__accessTokens');     // disable DELETE /MyUsers/{id}/accessTokens
 
-MyUser.disableRemoteMethodByName("confirm");
-MyUser.disableRemoteMethodByName("count");
-MyUser.disableRemoteMethodByName("exists");
-MyUser.disableRemoteMethodByName("resetPassword");
+MyUser.disableRemoteMethodByName('prototype.__findById__accessTokens');   // disable GET /MyUsers/{id}/accessTokens/{fk}
+MyUser.disableRemoteMethodByName('prototype.__updateById__accessTokens'); // disable PUT /MyUsers/{id}/accessTokens/{fk}
+MyUser.disableRemoteMethodByName('prototype.__destroyById__accessTokens');// disable DELETE /MyUsers/{id}/accessTokens/{fk}
 
-MyUser.disableRemoteMethodByName('prototype.__count__accessTokens');
-MyUser.disableRemoteMethodByName('prototype.__create__accessTokens');
-MyUser.disableRemoteMethodByName('prototype.__delete__accessTokens');
-MyUser.disableRemoteMethodByName('prototype.__destroyById__accessTokens');
-MyUser.disableRemoteMethodByName('prototype.__findById__accessTokens');
-MyUser.disableRemoteMethodByName('prototype.__get__accessTokens');
-MyUser.disableRemoteMethodByName('prototype.__updateById__accessTokens');
+MyUser.disableRemoteMethodByName('prototype.__count__accessTokens');      // disable  GET /MyUsers/{id}/accessTokens/count
+
+MyUser.disableRemoteMethodByName("prototype.verify");                     // disable POST /MyUsers/{id}/verify
+MyUser.disableRemoteMethodByName("changePassword");                       // disable POST /MyUsers/change-password
+MyUser.disableRemoteMethodByName("createChangeStream");                   // disable GET and POST /MyUsers/change-stream
+
+MyUser.disableRemoteMethodByName("confirm");                              // disables GET /MyUsers/confirm
+MyUser.disableRemoteMethodByName("count");                                // disables GET /MyUsers/count
+MyUser.disableRemoteMethodByName("findOne");                              // disables GET /MyUsers/findOne
+
+//MyUser.disableRemoteMethodByName("login");                                // disables POST /MyUsers/login
+//MyUser.disableRemoteMethodByName("logout");                               // disables POST /MyUsers/logout
+
+MyUser.disableRemoteMethodByName("resetPassword");                        // disables POST /MyUsers/reset
+MyUser.disableRemoteMethodByName("setPassword");                          // disables POST /MyUsers/reset-password
+MyUser.disableRemoteMethodByName("update");                               // disables POST /MyUsers/update
+MyUser.disableRemoteMethodByName("upsertWithWhere");                      // disables POST /MyUsers/upsertWithWhere
 ```
 
 ### Read-only endpoints example
