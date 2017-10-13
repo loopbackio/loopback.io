@@ -14,9 +14,9 @@ summary:
 - Context is what LB uses to "manage" everything.
 - A global registry for anything/everything in your app (all configs, state,
 dependencies, classes, etc).
-- An IoC container used to inject dependencies into your code.
+- An An [inversion of control](https://en.wikipedia.org/wiki/Inversion_of_control) container used to inject dependencies into your code. container used to inject dependencies into your code.
 
-Why is it important to you?
+### Why is it important?
 
 - You can use the context as a way to give loopback more "info" so that other
 dependencies in your app may retrieve it (ie. a centralized place/global
