@@ -10,7 +10,7 @@ summary:
 
 ## Overview
 
-LoopBack 4 is designed to be highly extensible. For architectural rationale and motivation, see [Crafting LoopBack 4](Crafting-LoopBack-4.html). 
+LoopBack 4 is designed to be highly extensible. For architectural rationale and motivation, see [Crafting LoopBack 4](Crafting-LoopBack-4.html).
 
 ## Building blocks for extensibility
 
@@ -20,7 +20,7 @@ The `@loopback/context` module implements an IoC container (`Context`) as a serv
 
 The IoC container decouples service providers and consumers. A service provider can be bound to the context so that IT can be accessed by the binding key, which is the URI of the provider. Service consumers can then either locate the provider using the binding key or declare a dependency using `@inject('a-service-provider')` so that the service provider can be injected into the consumer class.
 
-How does the IoC container have anything to do with extensibility? 
+How does the IoC container have anything to do with extensibility?
 
 1. An alternative implementation of the service provider can be bound the context to replace the existing one. For example, we can implement different hashing functions for password encryption. The user management system can then receive a custom password hashing.
 
@@ -52,7 +52,6 @@ See [Using Components](Using-components.html)
 
 ## Types of extensions
 
-### 
 - Binding providers
 - Decorators
 - Sequence & Actions
@@ -63,11 +62,11 @@ See [Using Components](Using-components.html)
 - Models
 - Mixins
 
-See a list of candidate extensions, check out https://github.com/strongloop/loopback-next/issues/512.
+For a list of candidate extensions, see [loopback-next issue #512](https://github.com/strongloop/loopback-next/issues/512).
 
 ### System vs Application extensions
 
-Some extensions are meant to extend the programming model and integration capability of the LoopBack 4 framework. 
+Some extensions are meant to extend the programming model and integration capability of the LoopBack 4 framework.
 
 An application can be decomposed into multiple components too
 

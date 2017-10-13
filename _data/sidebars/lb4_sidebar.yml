@@ -91,8 +91,9 @@ children:
   output: 'web, pdf'
 
 - title: 'Extending LoopBack 4'
-  url: Crafting-LoopBack-4.html
+  url: Extending-LoopBack-4.html
   output: 'web, pdf'
+  children:
 
   - title: 'Creating Components'
     url: Creating-components.html
