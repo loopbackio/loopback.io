@@ -406,7 +406,13 @@ To be done, the initial Beta release does not include Services as a first-class 
 
 Acceptance tests are considered as "black-box". They use "outside-in" approach where you do not know about the internals of the system, just simply do the same actions (send the same HTTP requests) as the clients and consumers of your API will do, and verify the results returned by the system under test are matching the expectations.
 
+
 Typically, acceptance tests start the application, make HTTP requests to the server, and verify the returned response. Internally in LoopBack, we are using [supertest](https://github.com/visionmedia/supertest) to make the test code executing HTTP requests and verifying responses easier to write and read.
+Remember to follow the best practices from [Data handling](#data-handling) when setting up your database for tests:
+
+ - clean the database before each test
+ - use test data builders
+ - avoid sharing the same data for multiple tests
 
 ### Validate your OpenAPI specification
 
@@ -417,12 +423,12 @@ Example usage:
 ```ts
 // test/acceptance/api-spec.acceptance.ts
 import {validateApiSpec} from '@loopback/testlab';
-import {MyApp} from '../..';
+import {HelloWorldApp} from '../..';
 import {RestServer} from '@loopback/rest';
 
 describe('API specification', () => {
   it('api spec is valid', async () => {
-    const app = new MyApp();
+    const app = new HelloWorldApp();
     const server = await app.getServer(RestServer);
     const spec = server.getApiSpec();
     await validateApiSpec(apiSpec);
@@ -485,8 +491,69 @@ The user experience is not as great as we would like it, we are looking into bet
 
 ### Test your individual REST API endpoints
 
+You should have at least one acceptace (end-to-end) test for each of your REST API endpoints. Consider adding more tests if your endpoint depends on (custom) sequence actions to modify the behaviour when the corresponding controller method is invoked via REST, compared to behaviour observed when the controller method is invoked directly via JavaScript/TypeScript API. For example, if your endpoint returns different response to regular users and to admin users, then you should have two tests - one test for each user role.
+
+Here is an example of an acceptance test:
+
+```ts
+// test/acceptance/product.acceptance.ts
+import {HelloWorldApp} from '../..';
+import {RestBindings, RestServer} from '@loopback/rest';
+import {expect, supertest} from '@loopback/testlab';
+import {givenEmptyDatabase, givenProduct} from '../helpers/database.helpers';
+
+describe('Product (acceptance)', () => {
+  let app: HelloWorldApp;
+  let request: supertest.SuperTest<supertest.Test>;
+
+  before(givenEmptyDatabase);
+  before(givenRunningApp);
+
+  it('retrieves product details', async () => {
+    // arrange
+    const product = await givenProduct({
+      name: 'Ink Pen',
+      slug: 'ink-pen',
+      price: 1,
+      category: 'Stationery',
+      description: 'The ultimate ink-powered pen for daily writing',
+      label: 'popular',
+      available: true,
+      endDate: null,
+    });
+
+    // act
+    const response = await request.get('/product/ink-pen')
+
+    // assert
+    expect(response.body).to.deepEqual({
+      id: product.id,
+      name: 'Ink Pen',
+      slug: 'ink-pen',
+      price: 1,
+      category: 'Stationery',
+      available: true,
+      description: 'The ultimate ink-powered pen for daily writing',
+      label: 'popular',
+      endDate: null,
+    });
+  });
+
+  async function givenRunningApp() {
+    app = new HelloWorldApp();
+    const server = await app.getServer(RestServer);
+    server.bind(RestBindings.PORT).to(0);
+    await app.start();
+
+    const port: number = await server.get(RestBindings.PORT);
+    request = supertest(`http://127.0.0.1:${port}`);
+  }
+});
+```
+
 ### Test Sequence customizations
 
+Custom sequence behavior is best tested by observing changes in behavior of affected endpoints. For example, if your sequence involves authentication step that rejects anonymous requests for certain endpoints, then you can write a test making an anonymous request to such endpoint to verify that it's correctly rejected. These tests are esssentially the same as the test verifying implementation of individual endpoints as described in the previous section.
 
 ## EVERYTHING BELOW IS LEGACY AND SHOULD BE REMOVED BEFORE LANDING
 
