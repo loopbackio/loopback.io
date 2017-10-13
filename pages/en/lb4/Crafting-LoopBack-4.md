@@ -266,7 +266,7 @@ The core foundation for LoopBack 4 is responsible for managing various artifacts
 
 - Ability to compose with dependency resolution
 
-  - Composability: It's common that one artifact has dependencies on other artifacts. With dependency injection or service locator patterns, the core will greatly simplify how multiple artifacts work together.
+  - Composability: It's common that one artifact to have dependencies on other artifacts. With dependency injection or service locator patterns, the core will greatly simplify how multiple artifacts work together.
 
 - A packaging model for extensions
 
