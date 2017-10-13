@@ -1,167 +1,167 @@
 title: Contributing to LoopBack
-url: /doc/en/contrib/index.html
+url: index.html
 children:
 
 - title: Governance
-  url: /doc/en/contrib/Governance.html
+  url: Governance.html
   output: web, pdf
 
 - title: Reporting issues
-  url: /doc/en/contrib/Reporting-issues.html
+  url: Reporting-issues.html
   output: web, pdf
 
 - title: Long-term support
-  url: /doc/en/contrib/Long-term-support.html
+  url: Long-term-support.html
   output: web
 
 - title: Contributing code
-  url: /doc/en/contrib/code-contrib.html
+  url: code-contrib.html
   output: web, pdf
   children:
 
   - title: Code style guide
-    url: /doc/en/contrib/style-guide.html
+    url: style-guide.html
     output: web, pdf
 
   - title: Using ESLint
-    url: /doc/en/contrib/eslint-guide.html
+    url: eslint-guide.html
     output: web, pdf
 
   - title: Git commit message guidelines
-    url: /doc/en/contrib/git-commit-messages.html
+    url: git-commit-messages.html
     output: web, pdf
 
   - title: Triaging pull requests
-    url: /doc/en/contrib/triaging-pull-requests.html
+    url: triaging-pull-requests.html
     output: web, pdf
 
   - title: Functional area owners
-    url: /doc/en/contrib/functional-area-owners.html
+    url: functional-area-owners.html
     output: web, pdf
 
 - title: Contributing to docs
-  url: /doc/en/contrib/doc-contrib.html
+  url: doc-contrib.html
   output: web, pdf
 
   children:
   - title: Using Jekyll
-    url: /doc/en/contrib/jekyll_getting_started.html
+    url: jekyll_getting_started.html
     output: web, pdf
     children:
 
     - title: Conditional logic
-      url: /doc/en/contrib/conditional_logic.html
+      url: conditional_logic.html
       output: web, pdf
 
     - title: Content reuse
-      url: /doc/en/contrib/content_reuse.html
+      url: content_reuse.html
       output: web, pdf
 
     - title: Including READMEs
-      url: /doc/en/contrib/Including-READMEs.html
+      url: Including-READMEs.html
       output: web, pdf
 
   - title: Authoring pages
-    url: /doc/en/contrib/pages.html
+    url: pages.html
     output: web, pdf
 
     children:
     - title: Markdown style guide
-      url: /doc/en/contrib/Markdown-style-guide.html
+      url: Markdown-style-guide.html
       output: web, pdf
 
     - title: Documentation style guide
-      url: /doc/en/contrib/Doc-style-guide.html
+      url: Doc-style-guide.html
       output: web, pdf
 
     - title: README guidelines
-      url: /doc/en/contrib/README-guidelines.html
+      url: README-guidelines.html
       output: web, pdf
 
   - title: Navigation
-    url: /doc/en/contrib/navigation.html
+    url: navigation.html
     output: web, pdf
 
     children:
     - title: Sidebar navigation
-      url: /doc/en/contrib/sidebar_navigation.html
+      url: sidebar_navigation.html
       output: web, pdf
 
     - title: Tags
-      url: /doc/en/contrib/tags.html
+      url: tags.html
       output: web, pdf
 
   - title: Formatting
-    url: /doc/en/contrib/formatting.html
+    url: formatting.html
     output: web, pdf
 
     children:
     - title: Alerts
-      url: /doc/en/contrib/alerts.html
+      url: alerts.html
       output: web, pdf
 
     - title: Images
-      url: /doc/en/contrib/images.html
+      url: images.html
       output: web, pdf
 
     - title: Code samples
-      url: /doc/en/contrib/code_samples.html
+      url: code_samples.html
       output: web, pdf
 
     - title: Tooltips
-      url: /doc/en/contrib/adding_tooltips.html
+      url: adding_tooltips.html
       output: web, pdf
 
     - title: Icons
-      url: /doc/en/contrib/icons.html
+      url: icons.html
       output: web, pdf
 
     - title: Links
-      url: /doc/en/contrib/hyperlinks.html
+      url: hyperlinks.html
       output: web, pdf
 
     - title: Navtabs
-      url: /doc/en/contrib/navtabs.html
+      url: navtabs.html
       output: web, pdf
 
     - title: Tables
-      url: /doc/en/contrib/tables.html
+      url: tables.html
       output: web, pdf
 
     - title: Syntax highlighting
-      url: /doc/en/contrib/syntax_highlighting.html
+      url: syntax_highlighting.html
       output: web, pdf
 
   - title: Special layouts
-    url: /doc/en/contrib/layouts.html
+    url: layouts.html
     output: web, pdf
 
     children:
     - title: README layout
-      url: /doc/en/contrib/readmes.html
+      url: readmes.html
       output: web, pdf
 
     - title: Navgroup layout
-      url: /doc/en/contrib/navgroups.html
+      url: navgroups.html
       output: web, pdf
 
     - title: Glossary layout
-      url: /doc/en/contrib/glossary.html
+      url: glossary.html
       output: web, pdf
 
     - title: FAQ layout
-      url: /doc/en/contrib/faq_layout.html
+      url: faq_layout.html
       output: web, pdf
 
   - title: Translation
-    url: /doc/en/contrib/translation.html
+    url: translation.html
     output: web, pdf
 
     children:
     - title: Adding a new language
-      url: /doc/en/contrib/Adding_a_new_language.html
+      url: Adding_a_new_language.html
       output: web, pdf
 
     - title: Translating articles
-      url: /doc/en/contrib/Translating_articles.html
+      url: Translating_articles.html
       output: web, pdf

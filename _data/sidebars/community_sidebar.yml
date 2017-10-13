@@ -1,35 +1,31 @@
 title: Community projects
-url: /doc/en/community/index.html
+url: index.html
 children:
 
   - title: 'How to add a project'
-    url: /doc/en/community/How-to-add-a-project.html
+    url: How-to-add-a-project.html
     output: 'web'
 
   - title: 'Elasticsearch connector'
-    url: /doc/en/community/Elasticsearch-connector.html
+    url: Elasticsearch-connector.html
     output: 'web'
 
   - title: 'LoopBack SDK Builder'
-    url: /doc/en/community/SDK-builder.html
+    url: SDK-builder.html
     output: 'web'
 
   - title: 'JSON Schemas'
-    url: /doc/en/community/JSON-schemas.html
+    url: JSON-schemas.html
     output: 'web'
 
   - title: 'DynamoDB Connector'
-    url: /doc/en/community/dynamo-connector.html
+    url: dynamo-connector.html
     output: 'web'
 
   - title: 'IoT demo'
-    url: /doc/en/community/IoT-demo.html
+    url: IoT-demo.html
     output: 'web'
 
-  - title: 'Sample project'
-    url: /doc/en/community/Sample-project.html
-    output: 'web'
-    
   - title: 'SuperTest models'
-    url: /doc/en/community/SuperTest-models.html
+    url: SuperTest-models.html
     output: 'web'
