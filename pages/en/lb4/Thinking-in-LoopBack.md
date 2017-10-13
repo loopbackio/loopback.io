@@ -17,10 +17,7 @@ LoopBack 4 is more than just a framework: It's an ecosystem that encourages deve
 - [Define your testing strategy](#define-your-testing-strategy)
 - [Incrementally implement features](#incrementally-implement-features)
 - [Implement a custom Sequence](#implement-a-custom-sequence)
-
-To be done:
-
-- [Preparing your API for consumption](#preparing-your-api-for-consumption)
+- [Preparing your API for consumption](#preparing-your-api-for-consumption) (to be done)
 - [Closing thoughts](#closing-thoughts)
 
 ## Define your API
@@ -299,7 +296,9 @@ _.merge(spec, CategoryAPI);
 export default spec;
 ```
 
-You can then bind the full spec to your application.
+You can then bind the full spec to your application using `server.spec()`. This is done on the server level, because each server instance can expose a different (sub)set of API.
+
+You also need to associate the controllers implementing the spec with the app using `app.controller(GreetController)`. This is not done on the server level because a controller may be used with multiple server instances, and types!
 
 ```ts
 // application.ts
@@ -568,7 +567,7 @@ Here is what your testing workflow might look like:
 
  2. Think about the different ways how the new feature can be used and pick one that's most easy to implement. Consider error scenarios and edge cases that you need to handle too. In the example above, where we want to search for products by name, we may start with the case when no product is found.
 
- 3. Write a unit-test for this case and watch it fail with an expected (and helpful) error message. This is the "red" step in Test Driven Development (TDD).
+ 3. Write a unit-test for this case and watch it fail with an expected (and helpful) error message. This is the "red" step in Test Driven Development ([TDD](https://en.wikipedia.org/wiki/Test-driven_development)).
 
  4. Write a minimal implementation need to make your test pass. Building up on our example above, let our search method return an empty array.  This is the "green" step in TDD.
 
@@ -606,7 +605,7 @@ We will start with `GET /product/{slug}` in this guide.
 
 One "acceptance test", where we start the application, make an HTTP request to search for a given product name, and verify that expected products were returned. This verifies that all parts of our application are correctly wired together.
 
-Create `tests/acceptance/product.acceptance.ts` with the following contents:
+Create `test/acceptance/product.acceptance.ts` with the following contents:
 
 ```ts
 import {HelloWorldApp} from '../..';
@@ -715,6 +714,8 @@ describe('ProductController', () => {
 ```
 
 This test is clearly not describing a final solution, for example there is no Product model and repository involved. However, it's a good first increment that drives enough of the initial controller implementation.
+This shows the power of unit testing - you can test this new controller method in isolation, independent from the other moving parts of the
+application, even before those other parts are implemented!
 
 Run `npm test` and watch the test fail with a helpful error message:
 
@@ -724,7 +725,6 @@ test/unit/product-controller.test.ts (13,40): Property 'getDetails' does not exi
 ```
 
 Now it's time to write the first implementation of the `getDetails` method. Modify the file `src/controllers/product-controller.ts` as follows:
-
 
 ```ts
 export class ProductController {
