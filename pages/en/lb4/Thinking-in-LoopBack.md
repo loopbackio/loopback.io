@@ -354,7 +354,7 @@ describe('API specification', () => {
 });
 ```
 
-See [Validate your OpenAPI specification](./Testing-your-application.html#validate-your-openapi-specification) from Testing your application for more details.
+See [Validate your OpenAPI specification](./Testing-your-application.html#validate-your-openapi-specification) from [Testing your application](./Testing-your-application.html) for more details.
 
 ## Smoke test your API input/output
 
@@ -526,7 +526,7 @@ It's a powerful proposition to use the API spec not only for API declaration but
 
 At this point, we are ready to make these tests pass by coding up your business logic.
 
-Please refer to [Perform an auto-generated smoke test of your REST API](./Testing-your-application.html#perform-an-auto-generated-smoke-test-of-your-rest-api) from Testing your application for more details.
+Please refer to [Perform an auto-generated smoke test of your REST API](./Testing-your-application.html#perform-an-auto-generated-smoke-test-of-your-rest-api) from [Testing your application](./Testing-your-application.html) for more details.
 
 ## Define your testing strategy
 
@@ -687,11 +687,11 @@ When you scroll up in the test output, you will see more information about the 4
 Unhandled error in GET /product/ink-pen: 404 Error: Controller method not found: ProductController.getDetails
 ```
 
-Learn more about acceptance testing in [Test your individual REST API endpoints](./Testing-your-application.html#test-your-individual-rest-api-endpoints) from Testing your application.
+Learn more about acceptance testing in [Test your individual REST API endpoints](./Testing-your-application.html#test-your-individual-rest-api-endpoints) from [Testing your application](./Testing-your-application.html).
 
 ### Write a unit-test for the new controller method
 
-Our new acceptance test is failing because there is no `getDetails` method implemented by `ProductController`. Let's start with a unit-test to drive the implementation of this new method.
+Our new acceptance test is failing because there is no `getDetails` method implemented by `ProductController`. Let's start with a unit-test to drive the implementation of this new method. Please refer to [Unit-test your Controllers](./Testing-your-application.html#unit-test-your-controllers) for more details.
 
 Create `tests/unit/product-controller.test.ts` with the following contents:
 
@@ -799,7 +799,9 @@ AssertionError: expected Object { name: 'Ink Pen', slug: 'ink-pen' } to equal Ob
    }
 ```
 
-Let's take a closer look at our new test. In order to make it fail with the current implementation, we need to find a different scenario compared to what is covered by our unit test. We could simply change the data, but that would add only little value to our test suite. Instead, we took this opportunity to cover another requirement of "get product details" operation - it should return the details of the product that matches the "slug" parameter passed in the arguments.
+Please refer to [Test your Controllers and Repositories together](./Testing-your-application.html#test-your-controllers-and-repositories-together) to learn more about integration testing.
+
+Let's take a closer look at our new test now. In order to make it fail with the current implementation, we need to find a different scenario compared to what is covered by our unit test. We could simply change the data, but that would add only little value to our test suite. Instead, we took this opportunity to cover another requirement of "get product details" operation - it should return the details of the product that matches the "slug" parameter passed in the arguments.
 
 The next step is bigger than is usual in an incremental TDD workflow. We need to connect to our database and define classes to work with the data.
 
@@ -894,6 +896,8 @@ Notice that `givenProduct` is filling in required properties with sensible defau
 
  2. It makes tests easier to maintain. As our data model evolves, we will eventually need to add more required properties. If the tests were building product instances manually, we would have to fix all tests to set the new required property. With a shared helper, there is only a single place where to add a value for the new required property.
 
+You can learn more about test data builders in [Use test data builders](./Testing-your-application.html#use-test-data-builders) section of [Testing your application](./Testing-your-application.html).
+
 Now that our tests are setting up the test data correctly, it's time to rework `ProductController` to make the tests pass again.
 
 ```ts
@@ -910,6 +914,7 @@ export class ProductController {
   }
 }
 ```
+
 ### Run tests
 
 Run the tests again.  These results may surprise you:
@@ -990,7 +995,8 @@ The new unit test is passing now, but our integration and acceptance tests are b
  2. Fix the acceptance test by annotating `ProductController`'s `repository` argument with `@inject('repositories.Product')`
     and binding the `ProductRepository` in the main application file where we are also binding controllers.
 
-Learn more about Controller unit testing in [Unit-test your Controllers](./Testing-your-application.html#unit-test-your-controllers) from Testing your application.
+Learn more about this topic in [Unit-test your Controllers](./Testing-your-application.html#unit-test-your-controllers)
+and [Use test doubles](./Testing-your-application.html#use-test-doubles) from [Testing your application](./Testing-your-application.html).
 
 ### Handle 'product not found' error
 
@@ -1046,7 +1052,7 @@ In LoopBack 4, we decided to abandon Express/Koa-like middleware and design a di
 
 In this guide, we are going to modify request handling in our application to print a line in the [Common Log Format](https://en.wikipedia.org/wiki/Common_Log_Format) for each request handled.
 
-Start by writing an acceptance test. Create a new test file (e.g. `sequence.acceptance.ts`) and add the following test:
+Start by writing an acceptance test, as described in [Test sequence customizations](./Testing-your-application.html#test-sequence-customizations) from [Testing your application](./Testing-your-application.html). Create a new test file (e.g. `sequence.acceptance.ts`) and add the following test:
 
 ```ts
 describe('Sequence (acceptance)', () => {

@@ -18,16 +18,16 @@ Thorough automated testing:
 - Speeds up development over the long run (the code writes itself!)
 - And much more. See [benefits of software testing](http://lmgtfy.com/?q=benefits+of+software+testing)
 
+### Types of tests
+
+We encourage writing tests from a few perspectives, mainly [black-box testing](https://en.wikipedia.org/wiki/Black-box_testing) (acceptance) and [white-box testing](https://en.wikipedia.org/wiki/White-box_testing) (integration and unit). Tests are usually written using typical patterns such as [`act/arrange/assert`](https://msdn.microsoft.com/en-us/library/hh694602.aspx#Anchor_3) or [`given/when/then`](https://martinfowler.com/bliki/GivenWhenThen.html). While both styles work well, just pick one that you're comfortable with and start writing tests!
+
 Please refer to [Thinking in LoopBack](./Thinking-in-LoopBack.html) for an introductory text that explains high-level concepts of automated testing in [Define your testing strategy](./Thinking-in-LoopBack.html#define-your-testing-strategy) and provides a step-by-step tutorial in [Incrementally implement features](Thinking-in-LoopBack.html#incrementally-implement-features).
 
 {% include important.html content="A great test suite requires you to think smaller and favor fast, focused unit-tests over slow application-wide end-to-end tests
 " %}
 
-## Types of tests
-
-We encourage writing tests from a few perspectives, mainly [black-box testing](https://en.wikipedia.org/wiki/Black-box_testing) (acceptance) and [white-box testing](https://en.wikipedia.org/wiki/White-box_testing) (integration and unit). Tests are usually written using typical patterns such as [`act/arrange/assert`](https://msdn.microsoft.com/en-us/library/hh694602.aspx#Anchor_3) or [`given/when/then`](https://martinfowler.com/bliki/GivenWhenThen.html). While both styles work well, just pick one that you're comfortable with and start writing tests!
-
-The rest of this page contains a reference manual explaining how to write different types of tests.
+The rest of this page contains a reference manual explaining how to write common types of tests and test helpers.
 
 ## Project setup
 
