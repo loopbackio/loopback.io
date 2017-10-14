@@ -73,10 +73,6 @@ children:
   url: Using-components.html
   output: 'web, pdf'
 
-- title: 'Creating Components'
-  url: Creating-components.html
-  output: 'web, pdf'
-
 - title: 'Calling other APIs'
   url: Calling-other-APIs-and-web-services.html
   output: 'web, pdf'
@@ -93,6 +89,15 @@ children:
 - title: 'For current LoopBack users'
   url: LoopBack-3.x.html
   output: 'web, pdf'
+
+- title: 'Extending LoopBack 4'
+  url: Extending-LoopBack-4.html
+  output: 'web, pdf'
+  children:
+
+  - title: 'Creating Components'
+    url: Creating-components.html
+    output: 'web, pdf'
 
 - title: 'Crafting LoopBack 4'
   url: Crafting-LoopBack-4.html

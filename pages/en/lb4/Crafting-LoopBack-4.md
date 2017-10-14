@@ -243,16 +243,16 @@ LoopBack manages various artifacts across different modules. The following are a
   - OpenStack
   - IBM Cloud Object Storage
 - Push component for mobile push notifications
-  - iOS 
+  - iOS
   - Android
 - Different API styles
   - REST
   - gRPC
   - GraphQL
 
-Metadata for these artifacts form the knowledge base for LoopBack to glue all the pieces together and build capabilities to handle common API use cases. 
+Metadata for these artifacts form the knowledge base for LoopBack to glue all the pieces together and build capabilities to handle common API use cases.
 
-How to represent the metadata and their relations is the key responsibility of the LoopBack core foundation. It needs to provide a consistent way to contribute and consume such building blocks. 
+How to represent the metadata and their relations is the key responsibility of the LoopBack core foundation. It needs to provide a consistent way to contribute and consume such building blocks.
 
 ### Key Ingredients for the Core
 
@@ -266,7 +266,7 @@ The core foundation for LoopBack 4 is responsible for managing various artifacts
 
 - Ability to compose with dependency resolution
 
-  - Composability: It's common that one artifact has dependencies on other artifacts. With dependency injection or service locator patterns, the core will greatly simplify how multiple artifacts work together. 
+  - Composability: It's common that one artifact to have dependencies on other artifacts. With dependency injection or service locator patterns, the core will greatly simplify how multiple artifacts work together.
 
 - A packaging model for extensions
 
@@ -326,7 +326,6 @@ Before we go further, let's try to build a 'hello world' application with LoopBa
 
 ## Example for extension developers
 
-LoopBack 4
 ### Hello-Extension
 
 ## References
