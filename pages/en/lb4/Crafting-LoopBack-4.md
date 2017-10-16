@@ -292,41 +292,53 @@ Do we need to build our own core foundation? Can we continue to use Express? Our
 
   In Express, everything is done by JavaScript code as it works exactly as the web site claims: `Fast, unopinionated, minimalist web framework for Node.js`. In contrast, LoopBack is designed to facilitate API creation and composition by conventions and patterns as best practices. More types of constructs are introduced.   
 
-## Deep-diving into the building blocks
+## Deep dive into LoopBack 4 extensibility story
 
-### Service registry/container
+There are several key pillars to make extensibility a reality for LoopBack 4. 
 
-![loopback-ioc](/images/lb4/loopback-ioc.png)
+- [Context](Context.html) as the IoC container to manage services
+- [Dependency injection](Dependency-injection.html) to facilitate composition
+- [Decorators](Decorators.html) to supply metadata using annotations
+- [Component](Component.html) as the packaging model to bundle extensions
 
-### Dependency injection
+Please check out [Extending LoopBack 4](Extending-LoopBack-4.html).
 
-See [Dependency injection](Dependency-injection.html)
+## Rebuilding LoopBack experience on top of the new core
 
-### Component as the packaging model for extensions
+With the extensible foundation in place, we start to rebuild the LoopBack REST API experience by "eating your own dog food" with the following artifacts:
 
-![loopback-component](/images/lb4/loopback-component.png)
+- [Sequence and actions](Sequence.html): A sequence of actions to handle HTTP requests/responses
+- [Controllers](Controllers.html): A class with methods to implement API operations behind REST endpoints
+- [Schemas](Schemas.html): Definition of data models
+- [Repositories](Repositories.html): Interfaces of access patterns for data sources
 
-## Rebuilding LoopBack on top of the new core
+The features are provided by the following modules:
 
-With the extensible foundation in place, we start to rebuild the LoopBack REST API experience by "eating your own dog food".
-
-### Sequence and actions
-
-See [Sequence and actions](Sequence.html).
-
-### Controllers
-
-### Repositories
+- [@loopback/rest](https://github.com/strongloop/loopback-next/tree/master/packages/rest/)
+- [@loopback/repository](https://github.com/strongloop/loopback-next/tree/master/packages/repository/)
 
 ## Example for application developers
 
 Before we go further, let's try to build a 'hello world' application with LoopBack 4.
 
-### Hello-World
+### Basic Hello-World
+
+https://github.com/strongloop/loopback4-example-hello-world
+
+### Intermediate example
+ 
+https://github.com/strongloop/loopback-next-hello-world
 
 ## Example for extension developers
 
-### Hello-Extension
+### Learn from existing ones
+
+- [loopback4-example-log-extension](https://github.com/strongloop/loopback4-example-log-extension)
+- [@loopback/authentication](https://github.com/strongloop/loopback-next/tree/master/packages/authentication)
+
+### Create your own from the starter
+
+The [loopback4-extension-starter](https://github.com/strongloop/loopback4-extension-starter) project provides a template to create your own LoopBack 4 extensions as a component. Please follow the instructions to get started. 
 
 ## References
 
