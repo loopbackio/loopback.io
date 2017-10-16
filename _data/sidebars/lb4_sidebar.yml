@@ -80,11 +80,6 @@ children:
 - title: 'Testing Your Application'
   url: Testing-your-application.html
   output: 'web, pdf'
-  children:
-
-  - title: 'Advanced Testing'
-    url: Testing-your-app-advanced.html
-    output: 'web, pdf'
 
 - title: 'For current LoopBack users'
   url: LoopBack-3.x.html
