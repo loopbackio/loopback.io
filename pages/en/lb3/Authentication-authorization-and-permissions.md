@@ -111,7 +111,7 @@ and uses the built-in `AccessToken` model.  In this case, you need to change the
 {% include tip.html content="Model relations are preserved when extending models, therefore your custom `User` model will automatically have a hasMany relation to the default `AccessToken` model.
 " %}
 
-##### Customizing the AccessToken model
+#### Customizing the AccessToken model
 
 If your application needs to customize the `AccessToken` model, for example
 to add extra properties, then you need to modify the `User` model to use
