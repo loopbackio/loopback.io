@@ -38,8 +38,8 @@ Providers are the mechanism allowing components to export values that can be use
 ```js
 import {Provider} from '@loopback/context';
 
-export class MyValueProvider {
-  value() {
+export class MyValueProvider implements Provider<string>{
+  value(): string {
     return 'Hello world';
   }
 }
@@ -90,12 +90,13 @@ A note on binding names: In order to avoid name conflicts, always add a unique p
 Provider's `value()` method can be asynchronous too:
 
 ```js
+import {Provider} from '@loopback/context';
 const request = require('request-promise-native');
 const weatherUrl =
   'http://samples.openweathermap.org/data/2.5/weather?appid=b1b15e88fa797225412429c1c50c122a1'
 
-export class CurrentTemperatureProvider {
-  async value() {
+export class CurrentTemperatureProvider implement Provider<number>{
+  async value():number {
     const data = await(request(`${weatherUrl}&q=Prague,CZ`, {json:true});
     return data.main.temp;
   }
@@ -109,14 +110,15 @@ In this case, LoopBack will wait until the promise returned by `value()` is reso
 In some cases, the provider may depend on other parts of LoopBack, for example the current `request` object. Such dependencies should be listed in provider's constructor and annotated with `@inject` keyword, so that LoopBack runtime can resolve them automatically for you.
 
 ```js
+import {Provider} from '@loopback/context';
 const uuid = require('uuid/v4');
 
-class CorrelationIdProvider {
+class CorrelationIdProvider implement Provider<any>{
   constructor(@inject('http.request') request) {
     this.request = request;
   }
 
-  value() {
+  value():any {
     return this.request.headers['X-Correlation-Id'] || uuid();
   }
 }
@@ -246,3 +248,10 @@ class EmailComponent {
   }
 }
 ```
+
+## Interact with Mixin
+
+TBD.
+
+- create a new concept Mixin
+- use `RepositoryMixin` as an example to show mount component repositories in a mixin
