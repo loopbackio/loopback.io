@@ -96,11 +96,9 @@ LoopBack provides the following built-in dynamic roles.
 The first example used the "$owner" dynamic role to allow access to the owner of the requested project model. 
 
 {% include note.html content="
-
-To qualify a $owner, the target model needs to have a belongsTo relation to the User model (or a model extends from User)
+To qualify a `$owner`, the target model needs to have a belongsTo relation to the User model (or a model that extends User)
 and property matching the foreign key of the target model instance. 
-The check for $owner is only performed for a remote method that has ':id' on the path, for example, GET `/api/users/:id`.
-
+The check for `$owner` is performed only for a remote method that has ':id' on the path, for example, GET `/api/users/:id`.
 " %}
 
 Use [`Role.registerResolver()`](http://apidocs.loopback.io/loopback/#role-registerresolver) 
@@ -167,18 +165,14 @@ module.exports = function(app) {
 };
 ```
 
-{% include note.html content="
+{% include note.html content="Why does the code above wrap some callback invocations in `process.nextTick(()=> cb(...))`, but not others.
 
-A note about process.nextTick()
+In asynchronous functions like this one that take a callback and then pass results to it at a later time, you must call the callback at a later time, _not_ right away (synchronously). 
+Call the callback from a function passed to `process.nextTick` _in places where it would otherwise be called synchronously_.
 
-In the code above, we wrap some callback invocations in `process.nextTick(()=> cb(...))`, but not others. Why?
-
-In asynchronous functions like this one that take a callback & pass results to it at a later time,
-it's important to ensure we **always** call the callback \"at a later time\" and **never** call it right away (synchronously). 
-We call the callback from a function passed to `process.nextTick` **in places where it would otherwise be called synchronously**.
 Calls from the `findById` or `count` callbacks are already guaranteed to happen at a later time as they access the database, an asynchronous operation, so we don't need to wrap those calls in `process.nextTick`.
-See [this blog post](http://blog.izs.me/post/59142742143/designing-apis-for-asynchrony) for more info.
 
+For more information, see [Designing APIs for Asynchrony](http://blog.izs.me/post/59142742143/designing-apis-for-asynchrony).
 " %}
 
 Using the dynamic role defined above, we can restrict access of project information to users that are team members of the project.
