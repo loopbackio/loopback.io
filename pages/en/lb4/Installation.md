@@ -15,21 +15,32 @@ Install the following:
 - [Node.js](https://nodejs.org/en/download/) version 7 or higher.
 - [TypeScript](https://www.typescriptlang.org/index.html#download-links) version 2 or higher:
 
-   ```
-   npm i -g typescript
-   ```
-- [TypeScript Node](https://github.com/TypeStrong/ts-node#installation) version 3 or higher:
+  ```
+  $ npm i -g typescript
+  ```
 
-   ```
-   npm i -g ts-node
-   ```
+   This installs the TypeScript compiler command, `tsc`.
+- [TypeScript Node](https://www.npmjs.com/package/ts-node) version 3 or higher:
+
+  ```
+  $ npm i -g ts-node
+  ```
+
+- If your app doesn't already have a `package.json`, create a new one by entering the following command:
+
+  ```
+  $ npm init
+  ```
+
+The command will ask you a number of questions that it will use to fill out the `pacakge.json` properties.
+
 
 ## Install LoopBack core
 
-Then add LoopBack 4 as a dependency to your Node.js project:
+Then add LoopBack 4 as a dependency to your Node.js project by entering this command:
 
-```shell
-npm install -s @loopback/core
+```
+$ npm i -s @loopback/core
 ```
 
 ## Create a Hello World project
@@ -52,22 +63,27 @@ app.get('hello').then(value => {
 
 Then run `index.js`:
 
-```shell
-node index.js
+```
+$ node index.js
 ```
 
 You should see "world" written to the console.
 
 ### TypeScript project
 
-{% include important.html content= "You must set `'target': 'es6'` in your compiler options in your `tsconfig.json`.
+If your app doesn't already have a `tsconfig.json` file, create one by entering the following command:
+```
+$ tsc --init
+```
+
+{% include important.html content= "You must set `\"target\": \"ES2017\"` in your compiler options in your `tsconfig.json`.
 " %}
 
 ```js
 {
   "compilerOptions": {
     // ...
-    "target": "es2017" //<-- Add this
+    "target": "ES2017" //<-- Add this
   }
 }
 ```
@@ -84,39 +100,29 @@ app.get('hello').then(value => {
 });
 ```
 
-Then run `index.ts`.  Do one of the following:
+To run `index.ts`, do one of the following:
 
-1. Install ts-node:
-
-    ```
-    npm install -g ts-node
-    ```
-1. Run the app:
-
-    ```
-    ts-node index.ts
-    ```
+**OPTION ONE: Run directly with ts-node**
+```
+$ ts-node index.ts
+```
 
 You should see "world" written to the console.
 
-OR:
+**OPTION TWO: Compile to JavaScript and run with Node**
 
-1. Install [TypeScript](https://www.typescriptlang.org/index.html#download-links) >= 2.0.0
-
-    ```
-    npm i -g typescript
-    ```
-
-1. Compile `index.ts` by entering this command:
+1. Compile `index.ts` to JavaScript by entering this command:
 
     ```
-    tsc index.ts
+    $ tsc index.ts
     ```
 
-1. Run the compiled JavaScript output file by entering this command:
+1. Run the JavaScript output file by entering this command:
 
    ```
    node index.js
    ```
 
-   You should see "world" written to the console.
+**Result**
+
+Either way, you should see "world" written to the console.
