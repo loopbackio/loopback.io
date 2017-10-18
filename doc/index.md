@@ -7,8 +7,8 @@ sidebar: home_sidebar
 permalink: /doc/index.html
 summary: LoopBack is a highly-extensible, open-source Node.js framework that enables you to create dynamic end-to-end REST APIs with little or no coding.
 ---
-{% include see-also.html title="no" content="
-New to Node.js? Read Getting Started with Node for:
+{% include see-also.html title="New to Node.js?" content="
+Getting Started with Node for:
 
 - [Java Developers](http://strongloop.com/strongblog/node-js-java-getting-started/)
 - [Rails Developers](http://strongloop.com/strongblog/node-js-ruby-on-rails-getting-started/)
@@ -17,7 +17,7 @@ New to Node.js? Read Getting Started with Node for:
 
 This site contains documentation for:
 
-- **[LoopBack 4](en/lb4)** - Pre-beta release.  <br/> _Check out the next step in the evolution of LoopBack!_ 
+- **[LoopBack 4](en/lb4)** - Pre-beta release.  <br/> _Check out the next step in the evolution of LoopBack!_
 - **[LoopBack 3.x](en/lb3)** - Current production release.
 - **[LoopBack 2.x](en/lb2)** - [Long-term support](/doc/en/contrib/Long-term-support.html) release.
 - **[Contributing to LoopBack](en/contrib/)** - How to contribute to the LoopBack project.
