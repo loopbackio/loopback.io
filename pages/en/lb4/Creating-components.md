@@ -38,8 +38,8 @@ Providers are the mechanism allowing components to export values that can be use
 ```js
 import {Provider} from '@loopback/context';
 
-export class MyValueProvider implements Provider<string>{
-  value(): string {
+export class MyValueProvider {
+  value() {
     return 'Hello world';
   }
 }
@@ -90,13 +90,12 @@ A note on binding names: In order to avoid name conflicts, always add a unique p
 Provider's `value()` method can be asynchronous too:
 
 ```js
-import {Provider} from '@loopback/context';
 const request = require('request-promise-native');
 const weatherUrl =
   'http://samples.openweathermap.org/data/2.5/weather?appid=b1b15e88fa797225412429c1c50c122a1'
 
-export class CurrentTemperatureProvider implement Provider<number>{
-  async value():number {
+export class CurrentTemperatureProvider {
+  async value() {
     const data = await(request(`${weatherUrl}&q=Prague,CZ`, {json:true});
     return data.main.temp;
   }
@@ -110,15 +109,14 @@ In this case, LoopBack will wait until the promise returned by `value()` is reso
 In some cases, the provider may depend on other parts of LoopBack, for example the current `request` object. Such dependencies should be listed in provider's constructor and annotated with `@inject` keyword, so that LoopBack runtime can resolve them automatically for you.
 
 ```js
-import {Provider} from '@loopback/context';
 const uuid = require('uuid/v4');
 
-class CorrelationIdProvider implement Provider<any>{
+class CorrelationIdProvider {
   constructor(@inject('http.request') request) {
     this.request = request;
   }
 
-  value():any {
+  value() {
     return this.request.headers['X-Correlation-Id'] || uuid();
   }
 }
@@ -230,6 +228,66 @@ export class AuthenticationProvider {
 }
 ```
 
+## Extends Application with Mixin
+
+When binding a component to an app, you may want to extend the app with the component's 
+properties and methods. 
+This can be achieved by using mixin. 
+
+If you are not familiar with concept `mixin`, check [Mixin](Mixin.htm) to know more.
+
+An example of how a mixin leverages component would be `RepositoryMixin`:
+Suppose an app has multiple components with repositories bound to each of them, 
+you can use function `RepositoryMixin` to mount those repositories to application level context.
+
+The following snippet is an abbreviated function 
+[`RepositoryMixin`](https://github.com/strongloop/loopback-next/blob/master/packages/repository/src/repository-mixin.ts):
+
+{% include code-caption.html content="mixins/src/repository-mixin.ts" %}
+```js
+export function RepositoryMixin<T extends Class<any>>(superClass: T) {
+  return class extends superClass {
+    constructor(...args: any[]) {
+      super(...args);
+      ... ...
+      // detect components attached to the app
+      if (this.options.components) {
+        for (const component of this.options.components) {
+          this.mountComponentRepository(component);
+        }
+      }
+    }
+  }
+  mountComponentRepository(component: Class<any>) {
+    const componentKey = `components.${component.name}`;
+    const compInstance = this.getSync(componentKey);
+
+    // register a component's repositories in the app
+    if (compInstance.repositories) {
+      for (const repo of compInstance.repositories) {
+        this.repository(repo);
+      }
+    }
+  }
+}
+```
+
+Then you can extend the app with repositories in a component:
+
+{% include code-caption.html content="index.ts" %}
+
+```js
+import {RepositoryMixin} from 'mixins/src/repository-mixin';
+import {Application} from '@loopback/core';
+import {FooComponent} from 'components/src/Foo';
+
+class AppWithRepoMixin extends RepositoryMixin(Application) {};
+let app = new AppWithRepoMixin({components: [FooComponent]});
+
+// `app.find` returns all repositories in FooComponent
+app.find('repositories.*');
+```
+
 ## Configuring components
 
 More often than not, the component may want to offer different value providers depending on the configuration. For example, a component providing Email API may offer different transports (stub, SMTP, etc.).
@@ -248,10 +306,3 @@ class EmailComponent {
   }
 }
 ```
-
-## Interact with Mixin
-
-TBD.
-
-- create a new concept Mixin
-- use `RepositoryMixin` as an example to show mount component repositories in a mixin
