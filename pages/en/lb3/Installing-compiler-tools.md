@@ -11,9 +11,7 @@ summary: To install StrongLoop tools (but not API Connect), you must have compil
 ---
 {% include content/slc-warning.md %}
 
-{% include see-also.html title="no" content="
-**Why do I need to install a compiler?**
-
+{% include see-also.html title="Why do I need to install a compiler?" content="
 Some devops features such as [monitoring](https://docs.strongloop.com/display/SLC/Monitoring-app-metrics) and [memory / CPU profiling](https://docs.strongloop.com/display/SLC/Profiling) require native (C++) code.  StrongLoop distributes its software with npm, but npm compiles native code upon installation.  Therefore, to take advantage of these features, you must install a compiler.  If you don't want these features, you may see error messages, but you should still be able install successfully.
 " %}
 
@@ -45,7 +43,7 @@ Install [windows-build-tools](https://github.com/felixrieseberg/windows-build-to
 `C:\> npm install --global --production windows-build-tools`
 
 This downloads Python 2.7.x and and Visual C++ Build Tools 2015. These tools are required to compile popular native modules. It will also configure your machine and npm appropriately. Both installations are conflict-free, meaning that they do not mess with existing installations of Visual Studio, C++ Build Tools, or Python.
- 
+
 ## MacOS
 
 Install:

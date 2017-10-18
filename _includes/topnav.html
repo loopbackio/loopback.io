@@ -18,15 +18,15 @@
             <ul class="nav navbar-nav navbar-right">
                 <!-- entries without drop-downs appear here -->
                 {% for entry in site.data.topnav.topnav %}
-                {% for item in entry.items %}
-                {% if item.external_url %}
-                <li><a href="{{item.external_url}}" target="_blank">{{item.title}}</a></li>
-                {% elsif page.url contains item.url %}
-                <li class="active"><a href="{{item.url }}">{{item.title}}</a></li>
-                {% else %}
-                <li><a href="{{item.url }}">{{item.title}}</a></li>
-                {% endif %}
-                {% endfor %}
+                  {% for item in entry.items %}
+                    {% if item.external_url %}
+                    <li><a href="{{item.external_url}}" target="_blank">{{item.title}}</a></li>
+                    {% elsif page.url contains item.url %}
+                    <li class="active"><a href="{{item.url }}">{{item.title}}</a></li>
+                    {% else %}
+                    <li><a href="{{item.url }}">{{item.title}}</a></li>
+                    {% endif %}
+                  {% endfor %}
                 {% endfor %}
                 <!-- entries with drop-downs appear here -->
                 <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
@@ -36,13 +36,14 @@
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{ folder.title }}<b class="caret"></b></a>
                     <ul class="dropdown-menu">
                         {% for folderitem in folder.folderitems %}
-                        {% if folderitem.external_url %}
-                        <li><a href="{{folderitem.external_url}}" target="_blank">{{folderitem.title}}</a></li>
-                        {% elsif page.url contains folderitem.url %}
-                        <li class="dropdownActive"><a href="{{folderitem.url }}">{{folderitem.title}}</a></li>
-                        {% else %}
-                        <li><a href="{{folderitem.url }}">{{folderitem.title}}</a></li>
-                        {% endif %}
+                        <!-- page.url is {{page.url}} .... folderitem.url is {{folderitem.url}} -->
+                          {% if folderitem.external_url %}
+                            <li><a href="{{folderitem.external_url}}" target="_blank">{{folderitem.title}}</a></li>
+                          {% elsif page.url contains folderitem.url and folderitem.title != 'LoopBack Overview' %}
+                            <li class="dropdownActive"><a href="{{folderitem.url }}">{{folderitem.title}}</a></li>
+                          {% else %}
+                            <li><a href="{{folderitem.url }}">{{folderitem.title}}</a></li>
+                          {% endif %}
                         {% endfor %}
                     </ul>
                 </li>

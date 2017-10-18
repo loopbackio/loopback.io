@@ -10,9 +10,7 @@ permalink: /doc/en/lb2/Installing-compiler-tools.html
 summary: To install StrongLoop tools (but not API Connect), you must have compiler tools installed.
 ---
 
-{% include see-also.html title="no" content="
-**Why do I need to install a compiler?**
-
+{% include see-also.html title="Why do I need to install a compiler?" content="
 Some devops features such as [monitoring](https://docs.strongloop.com/display/SLC/Monitoring-app-metrics) and [memory / CPU profiling](https://docs.strongloop.com/display/SLC/Profiling) require native (C++) code.  StrongLoop distributes its software with npm, but npm compiles native code upon installation.  Therefore, to take advantage of these features, you must install a compiler.  If you don't want these features, you may see error messages, but you should still be able install successfully.
 " %}
 

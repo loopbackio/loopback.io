@@ -1,4 +1,8 @@
 <div id="seealso" markdown="1" style="width: 250px; border: 1px solid green; border-radius: 5px; background-color: #E6E6E6; float: right; margin: 10px 0 0 15px; padding: 10px; font-size: 90%;">
-{% if include.title != "no" %} <b>See also</b>: {% endif %}
+{% if include.title %}
+<b>{{include.title}}</b>
+{% else %}
+<b>See also</b>:
+{% endif %}
 {{include.content}}
 </div>
