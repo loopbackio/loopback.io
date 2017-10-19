@@ -2,29 +2,21 @@
 lang: en
 title: 'Thinking in LoopBack'
 keywords: LoopBack 4.0, LoopBack 4
+toc_level: 1
 tags:
 sidebar: lb4_sidebar
 permalink: /doc/en/lb4/Thinking-in-LoopBack.html
-summary:
+summary: LoopBack 4 is the easiest way to build complex and scalable APIs.
 ---
-LoopBack 4 is the easiest way to build complex and scalable APIs. It is a core component of various projects at IBM.
+LoopBack 4 is more than just a framework: It's an ecosystem that encourages developers to follow best practices through predefined standards. This article will walk through some important guidelines by building an example API for a catalog of products.
 
-LoopBack 4 is more than just a framework: It's an ecosystem that encourages developers to follow best practices through predefined standards. Let's walk through the following guidelines by building an API for a catalog of products using LoopBack.
+## Define the API
 
-- [Define your API](#define-your-api)
-- [Validate your API](#validate-your-api-specification)
-- [Smoke test your API input/output](#smoke-test-your-api-inputoutput)
-- [Define your testing strategy](#define-your-testing-strategy)
-- [Incrementally implement features](#incrementally-implement-features)
-- [Implement a custom Sequence](#implement-a-custom-sequence)
-- [Preparing your API for consumption](#preparing-your-api-for-consumption) (to be done)
-- [Closing thoughts](#closing-thoughts)
-
-## Define your API
+This article will follow an "API first" and test-driven development process.
 
 ### Start with data
 
-When building an API, its usually easiest to start by outlining some example data that consumers of the API will need. This can act as the first rough draft of your API specification for smaller applications / APIs. In this tutorial, we'll start by sketching out some example API response data as simple JavaScript objects:
+When building an API, its usually easiest to start by outlining some example data that consumers of the API will need. This can act as the first rough draft of the API specification for smaller applications / APIs. In this tutorial, you'll start by sketching out some example API response data as simple JavaScript objects:
 
 ```js
 const products = [
@@ -35,7 +27,7 @@ const products = [
 ];
 ```
 
-With our example data defined, we can start to get an idea of how to separate the data into individual proper nouns, which will eventually be defined in different ways. Either as resources, schemas, models, or repositories.
+With the example data defined, you can start to get an idea of how to separate the data into individual proper nouns, which will eventually be defined in different ways. Either as resources, schemas, models, or repositories.
 
 - `CatalogItem` - Each object in the array above
 - `Category` - Has a URL, and more information about the category
@@ -44,9 +36,9 @@ With our example data defined, we can start to get an idea of how to separate th
 - `Deals` - Information about promotions on a group of products
 
 ### Outline the API
-With the proper nouns of our API defined, we can now start to think about what our API will look like.
+With the proper nouns of the API defined, you can now start to think about what the API will look like.
 
-This is where we choose how fine or coarse grain our API will be. We have to decide which proper nouns above will be available as Resources. The easiest way to figure out which Resources are needed is by sketching out the URLs (without verbs) for your API:
+This is where you choose how fine or coarse grain the API will be. You have to decide which proper nouns above will be available as _Resources_. The easiest way to figure out which Resources are needed is by sketching out the URLs (without verbs) for the API:
 
  - `/products?{query}` - Search for products in the catalog
  - `/product/{slug}` - Get the details for a particular product
@@ -57,19 +49,20 @@ This is where we choose how fine or coarse grain our API will be. We have to dec
  - `/category/{slug}/products?{query}` - Search for products in a particular category
 
 ### Break down the data into resources
-With the URLs, defined, its easy to determine which resources we'll need.
+With the URLs, defined, its easy to determine which resources you'll need.
 
  - `ProductResource`
  - `DealResource`
  - `CategoryResource`
 
-This is where it's useful to determine similarities between our Resources (eg. the `ProductResource`, `DealResource`, and `CategoryResource` all have the same URL structure, with the exception of `/category/{slug}/products?{query}` path on `CategoryResource`):
+This is where it's useful to determine similarities between Resources; for example, the `ProductResource`, `DealResource`, and `CategoryResource` all have the same URL structure, with the exception of `/category/{slug}/products?{query}` path on `CategoryResource`:
 
- - `/{pluralName}?{query}` - search with a query and the resource plural name
- - `/{name}/{slug}` - get details about the resource
+ - `/{pluralName}?{query}` - Search with a query and the resource plural name
+ - `/{name}/{slug}` - Get details about the resource
 
 ### Using patterns to reduce duplication
-Determining which patterns our API should be based on is a tricky task. We'll likely want to change it in the future. In order to keep our patterns flexible, we can define these patterns via simple TypeScript functions (but you can do this in JavaScript as well). For our API, lets start with a `SearchableResource` pattern, since all of our resources will have support the same search and listing operations.
+
+It can be tricky to determine the patterns on which to base the API, since you'll likely want to change it in the future. To keep the patterns flexible, you can define these patterns via simple TypeScript functions (you can also do it in JavaScript). Start with a `SearchableResource` pattern, since all of the resources must support the same search and listing operations.
 
 The `SearchableResource` pattern will define all of the semantics for an OpenAPI fragment that supports search.
 
@@ -162,7 +155,7 @@ export let creatableResource = (resource: any, type: string) => ({
 });
 ```
 
-Lastly, we'll create a helper function for generating our type definitions in
+Lastly, you'll create a helper function for generating type definitions in
 OpenAPI.
 
 {% include code-caption.html content="/apidefs/templates/type-definition.ts" %}
@@ -179,10 +172,9 @@ export let TypeDefinition = (type: any): DefinitionsObject => ({
 });
 ```
 
-Given the pattern function above, we can now create the OpenAPI fragment that
+Given the pattern function above, you can now create the OpenAPI fragment that
 represents the `ProductController` portion of the full specification.
-In this example, we use [lodash](https://lodash.com/) to help with merging
-our generated definitions together.  Install lodash with this command:
+This example, uses [lodash](https://lodash.com/) to help with merging generated definitions together.  Install lodash with this command:
 
 ```shell
 npm install --save lodash
@@ -193,11 +185,11 @@ npm install --save lodash
 ```ts
 import * as _ from "lodash";
 
-// We'll also assume you have created your "base" schema elsewhere.
-// If there are no common properties between all of your endpoint objects,
+// Assuming you have created the "base" schema elsewhere.
+// If there are no common properties between all of the endpoint objects,
 // then you can ignore this.
 import BaseSchema from "../BaseSchema";
-// Don't forget to export your template functions under a common file!
+// Don't forget to export the template functions under a common file!
 import { SearchableResource, CreatableResource, TypeDefinition } from "./templates";
 let ProductAPI: ControllerSpec = {};
 
@@ -236,7 +228,7 @@ export default ProductAPI;
 
 ### Connect OpenAPI fragments to Controllers
 
-By separating each of our individual "Model"-level API exports, we can link
+By separating each individual "Model"-level API export, you can link
 them to their corresponding controllers throughout the application.
 
 {% include code-caption.html content="/controllers/product-controller.ts" %}
@@ -279,7 +271,7 @@ import * as OpenApiSpec from "@loopback/openapi-spec";
 import * as _ from "lodash";
 
 
-// Import your API fragments here
+// Import API fragments here
 
 export let spec = OpenApiSpec.createEmptyApiSpec();
 spec.info = {
@@ -296,7 +288,7 @@ _.merge(spec, CategoryAPI);
 export default spec;
 ```
 
-You can then bind the full spec to your application using `server.spec()`. This is done on the server level, because each server instance can expose a different (sub)set of API.
+You can then bind the full spec to the application using `server.spec()`. This is done on the server level, because each server instance can expose a different (sub)set of API.
 
 You also need to associate the controllers implementing the spec with the app using `app.controller(GreetController)`. This is not done on the server level because a controller may be used with multiple server instances, and types!
 
@@ -331,11 +323,11 @@ export class YourMicroservice extends Application {
 }
 ```
 
-## Validate your API specification
+## Validate the API specification
 
-[The OpenAPI swagger editor](https://editor.swagger.io) is a handy tool for editing OpenAPI specifications which comes with a built-in validator, you may find it useful to get started with OpenAPI Spec and manually validate  your OpenAPI specification.
+[The OpenAPI Swagger editor](https://editor.swagger.io) is a handy tool for editing OpenAPI specifications that comes with a built-in validator. It can be useful to manually validate an  OpenAPI specification.
 
-However, manual validation is tedious and error prone, you should use an automated solution that's run as part of your CI/CD workflow. LoopBack's `testlab` module provides a helper function for checking whether your specification conforms to OpenAPI Spec. Just add a new Mocha test calling this helper to your test suite:
+However, manual validation is tedious and error prone. It's better to use an automated solution that's run as part of a CI/CD workflow. LoopBack's `testlab` module provides a helper function for checking whether a specification conforms to OpenAPI Spec. Just add a new Mocha test that calls this helper function to the test suite:
 
 ```ts
 // test/acceptance/api-spec.acceptance.ts
@@ -354,13 +346,18 @@ describe('API specification', () => {
 });
 ```
 
-See [Validate your OpenAPI specification](./Testing-your-application.html#validate-your-openapi-specification) from [Testing your application](./Testing-your-application.html) for more details.
+See [Validate your OpenAPI specification](Testing-your-application.html#validate-your-openapi-specification) from [Testing your application](Testing-your-application.html) for more details.
 
-## Smoke test your API input/output
+## Smoke test API input/output
 
-Once we confirm the specification of our API is valid, it's time to verify that our application implements the API as we have specified it.  We use [Dredd](https://www.npmjs.com/package/dredd) in the input/output testing described below.  We use `hello-world` in this section.  Concrete sample code of `hello-world` can be found in the [hello-world tutorial](https://github.com/strongloop/loopback-next-hello-world) repository.  Although the sample code includes a validated API spec and fully functional `hello-world` controller, let's pretend the controller is completely empty.  You can try it yourself cloning the `hello-world` from github.
+Once you confirm that the API specification is valid, it's time to verify that the application implements the API as you have specified it.  The input/output testing described below uses [Dredd](https://www.npmjs.com/package/dredd), specifically `hello-world` in this section.  Concrete sample code of `hello-world` can be found in the [hello-world tutorial](https://github.com/strongloop/loopback-next-hello-world) repository.  Although the sample code includes a validated API spec and fully functional `hello-world` controller, let's pretend the controller is completely empty.  Try it yourself by cloning the repository from GitHub.
 
-For our input/output testing, we are going to create three parts: 1. the input data definition, 2. expected output response definition, and 3. test code.  1. and 2. are included in the API specification.  The input data is given as `x-example` as follows:
+For input/output testing, you are going to create three parts:
+1. Input data definition.
+2. Expected output response definition.
+3. Test code.  
+
+Parts one and two are included in the API specification.  The input data is given as `x-example` as follows:
 
 ```js
 "x-example": "Ted"
@@ -374,7 +371,7 @@ The expected output as `examples`:
 }
 ```
 
-The `Dredd` module reserves `x-example` to set the input parameter.  the OpenAPI standard defines the [`examples` object](https://swagger.io/specification/#examples-object-92) as a map from `MIME type` to the content value.  In our case here, it's `text/plain` MIME type.  As you see, they are a pair: When you change the input value `x-example`, you must change `examples` value as well.
+The `Dredd` module reserves `x-example` to set the input parameter.  the OpenAPI standard defines the [`examples` object](https://swagger.io/specification/#examples-object-92) as a map from `MIME type` to the content value.  Here, it's `text/plain` MIME type.  As you see, they are a pair: When you change the input value `x-example`, you must change `examples` value as well.
 
 The complete `hello-world` API specification is the following:
 
@@ -415,7 +412,7 @@ export const controllerSpec =
 }
 ```
 
-The third piece is the test code.  To initialize the test environment, we need to create a `Dredd` instance specifying the configuration. There are two required fields in the configuration object: `server` and `options.path`.
+The third piece is the test code.  To initialize the test environment, you need to create a `Dredd` instance specifying the configuration. There are two required fields in the configuration object: `server` and `options.path`.
  `localhostAndPort + \'/swagger.json\'` is the predefined end point LoopBack 4 uses for the client to access the API specification of the service API.
 
 ```js
@@ -423,7 +420,7 @@ The third piece is the test code.  To initialize the test environment, we need t
     // By default, the port is set to 3000.
     const app: Application = new HelloWorldApp();
     const server = app.getServer(RestServer);
-    // For testing, we'll let the OS pick an available port by setting
+    // For testing, you'll let the OS pick an available port by setting
     // RestBindings.PORT to 0.
     server.bind(RestBindings.PORT).to(0);
     // app.start() starts up the HTTP server and binds the acquired port
@@ -444,7 +441,7 @@ The third piece is the test code.  To initialize the test environment, we need t
   }
 ```
 
-Since the specification we created above includes definition of input data and the expected output, we have all the pieces to write the test code:
+Since the specification above includes definition of input data and the expected output, you have all the pieces to write the test code:
 
 ```js
 describe('Api Spec End Points', () => {
@@ -474,7 +471,7 @@ describe('Api Spec End Points', () => {
 })
 ```
 
-Let's try running our first test:
+Try running the first test:
 
 ```shell
 $ npm test
@@ -522,22 +519,22 @@ complete: 1 passing, 0 failing, 0 errors, 0 skipped, 1 total
 complete: Tests took 21ms
 ```
 
-It's a powerful proposition to use the API spec not only for API declaration but for test case declaration.  What we discussed so far paves the road to "automated controller wireframe-code generation and test-driven development" based on the OpenAPI standard.
+It's a powerful proposition to use the API specification not only for API declaration but for test case declaration.  The discussion so far paves the road to "automated controller wireframe-code generation and test-driven development" based on the OpenAPI standard.
 
-At this point, we are ready to make these tests pass by coding up your business logic.
+At this point, you are ready to make these tests pass by coding up your business logic.
 
-Please refer to [Perform an auto-generated smoke test of your REST API](./Testing-your-application.html#perform-an-auto-generated-smoke-test-of-your-rest-api) from [Testing your application](./Testing-your-application.html) for more details.
+Please refer to [Perform an auto-generated smoke test of your REST API](Testing-your-application.html#perform-an-auto-generated-smoke-test-of-your-rest-api) from [Testing your application](Testing-your-application.html) for more details.
 
 ## Define your testing strategy
 
-It may be tempting to overlook the importance of a good testing strategy when starting a new project. Initially, as the project is small and we mostly keep adding new code, even badly-written test suite seem to work well. However, as the project grows and matures, inefficiencies in the test suite can severely slow down the progress.
+It may be tempting to overlook the importance of a good testing strategy when starting a new project. Initially, as the project is small and you mostly keep adding new code, even a  badly-written test suite seems to work well. However, as the project grows and matures, inefficiencies in the test suite can severely slow down progress.
 
 A good test suite has the following properties:
 
- - **Speed**: The test suite should complete quickly. A fast test suite encourages short red-green-refactor cycle, which makes it easier to spot problems, because there have been only few changes made since the last test run that passed. It also shortens deployment times, making it easy to frequently ship small changes, reducing the risk of major breakages.
- - **Reliability**: The test suite should be reliable. No developer enjoys debugging a failing test only to find out it was poorly written and failures are not related to any problem in the tested code. Flaky tests reduce the trust we have in our tests, up to point where we learn to ignore these failures, which will eventually lead to a situation when a test failed legitimately because of a bug in the application, but we did not notice.
+ - **Speed**: The test suite should complete quickly. This encourages short red-green-refactor cycle, which makes it easier to spot problems, because there have been few changes made since the last test run that passed. It also shortens deployment times, making it easy to frequently ship small changes, reducing the risk of major breakages.
+ - **Reliability**: The test suite should be reliable. No developer enjoys debugging a failing test only to find out it was poorly written and failures are not related to any problem in the tested code. Flaky tests reduce the trust in your tests, up to point where you learn to ignore these failures, which will eventually lead to a situation when a test failed legitimately because of a bug in the application, but you did not notice.
  - **Isolation of failures**: The test suite should make it easy to isolate the source of test failures. To fix a failing test, developers need to find the specific place that does not work as expected. When the project contains thousands of lines and the test failure can be caused by any part of the system, then finding the bug is very difficult, time consuming and demotivating.
- - **Resilience**: The test implementation should be robust and resilient to changes in the tested code. As the project grows and matures, we often need to change existing behavior. With a brittle test suite, each change may break dozens of tests, for example when we have many end-to-end/UI tests that rely on specificy UI layout. This makes change prohibitively expensive, up to a point where we may start questioning the value of such test suite.
+ - **Resilience**: The test implementation should be robust and resilient to changes in the tested code. As the project grows and matures, you may need to change existing behavior. With a brittle test suite, each change may break dozens of tests, for example when you have many end-to-end/UI tests that rely on specific UI layout. This makes change prohibitively expensive, up to a point where you may start questioning the value of such test suite.
 
 References:
 
@@ -549,15 +546,15 @@ References:
 
 ### How to build a great test suite
 
-How to create a great test suite? By thinking smaller and favoring fast, focused unit-tests over slow application-wide end-to-end tests.
+To create a great test suite, think smaller and favor fast, focused unit-tests over slow application-wide end-to-end tests.
 
-Let's say we are implementing the "search" endpoint of the Product resource described earlier. We may write the following tests:
+Say you are implementing the "search" endpoint of the Product resource described earlier. You might write the following tests:
 
- 1. One "acceptance test", where we start the application, make an HTTP request to search for a given product name, and verify that expected products were returned. This verifies that all parts of our application are correctly wired together.
+ 1. One "acceptance test", where you start the application, make an HTTP request to search for a given product name, and verify that expected products were returned. This verifies that all parts of the application are correctly wired together.
 
- 2. Few "integration tests" where we invoke `ProductController` API from JavaScript/TypeScript, talk to a real database, and verify that the queries built by the controller work as expected when executed by our database server.
+ 2. Few "integration tests" where you invoke `ProductController` API from JavaScript/TypeScript, talk to a real database, and verify that the queries built by the controller work as expected when executed by the database server.
 
- 3. Many "unit tests" where we test `ProductController` in isolation and verify that the controller handles all different situations, including error paths and edge cases.
+ 3. Many "unit tests" where you test `ProductController` in isolation and verify that the controller handles all different situations, including error paths and edge cases.
 
 ### Testing workflow
 
@@ -565,45 +562,45 @@ Here is what your testing workflow might look like:
 
  1. Write an acceptance test demonstrating the new feature you are going to build. Watch the test fail with a helpful error message. Use this new test as a reminder of what is the scope of your current work. When the new tests passes then you are done.
 
- 2. Think about the different ways how the new feature can be used and pick one that's most easy to implement. Consider error scenarios and edge cases that you need to handle too. In the example above, where we want to search for products by name, we may start with the case when no product is found.
+ 2. Think about the different ways how the new feature can be used and pick one that's most easy to implement. Consider error scenarios and edge cases that you need to handle too. In the example above, where you want to search for products by name, you may start with the case when no product is found.
 
  3. Write a unit-test for this case and watch it fail with an expected (and helpful) error message. This is the "red" step in Test Driven Development ([TDD](https://en.wikipedia.org/wiki/Test-driven_development)).
 
- 4. Write a minimal implementation need to make your test pass. Building up on our example above, let our search method return an empty array.  This is the "green" step in TDD.
+ 4. Write a minimal implementation need to make your tests pass. Building up on the example above, let your search method return an empty array.  This is the "green" step in TDD.
 
- 5. Review the code you have written so far, apply refactorings to clean up the design. Don't forget to keep your test code clean too! This is the "refactor" step in TDD.
+ 5. Review the code you have written so far, and refactor as needed to clean up the design. Don't forget to keep your test code clean too! This is the "refactor" step in TDD.
 
  6. Repeat the steps 2-5 until your acceptance test starts passing.
 
 When writing new unit tests, watch out for situations where your tests are asserting on how the tested objects interacted with the mocked dependencies, while making implicit assumptions about what is the correct usage of the dependencies. This may indicate that you should add an integration test in addition to a unit test.
 
-For example, when writing a unit test to verify that the search endpoint is building a correct database query, we would usually assert that the controller invoked the model repository method with an expected query. While this gives us confidence about the way the controller is building queries, it does not tell us whether such queries will actually work when they are executed by the database server. An integration test is needed here.
+For example, when writing a unit test to verify that the search endpoint is building a correct database query, you would usually assert that the controller invoked the model repository method with an expected query. While this gives us confidence about the way the controller is building queries, it does not tell us whether such queries will actually work when they are executed by the database server. An integration test is needed here.
 
 To summarize:
 
-- Pay attention to your test code, it's as important as the "real" code you are shipping to production.
+- Pay attention to your test code. It's as important as the "real" code you are shipping to production.
 - Prefer fast and focused unit tests over slow app-wide end-to-end tests.
 - Watch out for integration points that are not covered by unit-tests and add integration tests to verify your units work well together.
 
-See [Testing Your Application](./Testing-Your-application.html) for a reference manual on automated tests.
+See [Testing Your Application](Testing-Your-application.html) for a reference manual on automated tests.
 
 ## Incrementally implement features
 
-Let's recapitulate the status of our new project:
+To recapitulate the status of your new project:
 
- - We have defined our application's API and described it in an OpenAPI Spec document.
- - We have empty controllers backing our new operations.
- - Our project has a test verifying the validity of our API spec. This test passes.
- - Our test suite includes a smoke test to verify conformance of our implementation
+ - You have defined your application's API and described it in an OpenAPI Spec document.
+ - You have empty controllers backing your new operations.
+ - Our project has a test verifying the validity of your API spec. This test passes.
+ - Our test suite includes a smoke test to verify conformance of your implementation
    with the API spec. These checks are all failing now.
 
-Now it's time to put our testing strategy outlined in the previous section into practice. Pick one of the new API operations, preferably the one that's easiest to implement, and get to work!
+Now it's time to put your testing strategy outlined in the previous section into practice. Pick one of the new API operations, preferably the one that's easiest to implement, and get to work!
 
-We will start with `GET /product/{slug}` in this guide.
+Start with `GET /product/{slug}` in this guide.
 
 ### Write an acceptance test
 
-One "acceptance test", where we start the application, make an HTTP request to search for a given product name, and verify that expected products were returned. This verifies that all parts of our application are correctly wired together.
+One "acceptance test", where you start the application, make an HTTP request to search for a given product name, and verify that expected products were returned. This verifies that all parts of your application are correctly wired together.
 
 Create `test/acceptance/product.acceptance.ts` with the following contents:
 
@@ -672,7 +669,7 @@ describe('Product (acceptance)', () => {
 
 Notice there are few missing pieces annotated with TODO comments. Well come back to them very soon. Remember, when practicing TDD in small steps,
 the goal is to add as little test code as needed to uncover a missing piece in the production code, and then add just enough production code to
-make our new test pass (while keeping all existing tests passing too).
+make your new test pass (while keeping all existing tests passing too).
 
 Run the tests and watch the new test fail:
 
@@ -691,7 +688,7 @@ Learn more about acceptance testing in [Test your individual REST API endpoints]
 
 ### Write a unit-test for the new controller method
 
-Our new acceptance test is failing because there is no `getDetails` method implemented by `ProductController`. Let's start with a unit-test to drive the implementation of this new method. Please refer to [Unit-test your Controllers](./Testing-your-application.html#unit-test-your-controllers) for more details.
+The new acceptance test is failing because there is no `getDetails` method implemented by `ProductController`. Start with a unit-test to drive the implementation of this new method. Please refer to [Unit-test your Controllers](./Testing-your-application.html#unit-test-your-controllers) for more details.
 
 Create `tests/unit/product-controller.test.ts` with the following contents:
 
@@ -737,10 +734,10 @@ export class ProductController {
 }
 ```
 
-Run `npm test` to see our new test pass. Notice that the Dredd-powered test of `/product/{slug}` is passing too, and our acceptance test is failing
+Run `npm test` to see your new test pass. Notice that the Dredd-powered test of `/product/{slug}` is passing too, and your acceptance test is failing
 with a different error now - the response does not contain all expected product properties.
 
-While it's possible to further iterate by adding more unit tests, a more valuable next step is to write an integration test to verify that our new API is using data from our backing database.
+While it's possible to further iterate by adding more unit tests, a more valuable next step is to write an integration test to verify that your new API is using data from your backing database.
 
 ### Write an integration test for the new controller method
 
@@ -801,13 +798,13 @@ AssertionError: expected Object { name: 'Ink Pen', slug: 'ink-pen' } to equal Ob
 
 Please refer to [Test your Controllers and Repositories together](./Testing-your-application.html#test-your-controllers-and-repositories-together) to learn more about integration testing.
 
-Let's take a closer look at our new test now. In order to make it fail with the current implementation, we need to find a different scenario compared to what is covered by our unit test. We could simply change the data, but that would add only little value to our test suite. Instead, we took this opportunity to cover another requirement of "get product details" operation - it should return the details of the product that matches the "slug" parameter passed in the arguments.
+Take a closer look at the new test. To make it fail with the current implementation, you need to find a different scenario compared to what is covered by the unit test. You could simply change the data, but that would add little value to the test suite. Instead, take this opportunity to cover another requirement of "get product details" operation: it should return the details of the product that matches the "slug" parameter passed in the arguments.
 
-The next step is bigger than is usual in an incremental TDD workflow. We need to connect to our database and define classes to work with the data.
+The next step is bigger than is usual in an incremental TDD workflow. You need to connect to the database and define classes to work with the data.
 
 ### Define Product model, repository, and data source
 
-LoopBack is agnostic when it comes to accessing databases. You can choose any package from the npm module ecosystem. On the other hand, we also want LoopBack users to have a recommended solution that's covered by our support. Welcome to `@loopback/repository`, a TypeScript facade for the `loopback-datasource-juggler` implementation in LoopBack 3.x.
+LoopBack is agnostic when it comes to accessing databases. You can choose any package from the npm module ecosystem. On the other hand, we also want LoopBack users to have a recommended solution that's covered by technical support. Welcome to `@loopback/repository`, a TypeScript facade for the `loopback-datasource-juggler` implementation in LoopBack 3.x.
 
  1. Define `Product` model in `src/models/product.model.ts`
 
@@ -839,7 +836,7 @@ LoopBack is agnostic when it comes to accessing databases. You can choose any pa
 
     **TODO(bajtos) Find out how to re-use ProductBaseSchema for the model definition**
 
- 2. Define a data source representing a single source of data, typically a database. In this examle, we will be using in-memory storage. In real applications, replace the `memory` connector with the actual database connector  (`postgresql`, `mongodb`, etc.).
+ 2. Define a data source representing a single source of data, typically a database. This example uses in-memory storage. In real applications, replace the `memory` connector with the actual database connector  (`postgresql`, `mongodb`, etc.).
 
     Create `src/datasources/db.datasource.ts` with the following content:
 
@@ -894,11 +891,11 @@ Notice that `givenProduct` is filling in required properties with sensible defau
 
  1. It makes tests easier to understand, because it's immediately clear what model properties are relevant to the test. If the test was setting all required properties, it would be difficult to tell whether some of those properties may be actually relevant to the tested scenario.
 
- 2. It makes tests easier to maintain. As our data model evolves, we will eventually need to add more required properties. If the tests were building product instances manually, we would have to fix all tests to set the new required property. With a shared helper, there is only a single place where to add a value for the new required property.
+ 2. It makes tests easier to maintain. As the data model evolves, you will eventually need to add more required properties. If the tests were building product instances manually, you would have to fix all tests to set the new required property. With a shared helper, there is only a single place where to add a value for the new required property.
 
 You can learn more about test data builders in [Use test data builders](./Testing-your-application.html#use-test-data-builders) section of [Testing your application](./Testing-your-application.html).
 
-Now that our tests are setting up the test data correctly, it's time to rework `ProductController` to make the tests pass again.
+Now that the tests are setting up the test data correctly, it's time to rework `ProductController` to make the tests pass again.
 
 ```ts
 import {ProductRepository} from '../repositories/product.repository';
@@ -926,16 +923,16 @@ Run the tests again.  These results may surprise you:
 
  3. The unit test is passing, despite the fact that it's not setting up any data at all!
 
-Let's take a look at the acceptance test first. A quick review of the source code should tell us what's the problem - the test is relying on `givenEmptyDatabase` and `givenProduct` helpers, but these helpers are not fully implemented yet. Let's fix that reusing the helpers from our integration test - move the helpers to `test/helpers/database.helpers.ts` and update both the acceptance and the integration tests to import the helpers from there.
+Examine the acceptance test first. A quick review of the source code should tell us what's the problem - the test is relying on `givenEmptyDatabase` and `givenProduct` helpers, but these helpers are not fully implemented yet. Fix that by reusing the helpers from the integration test: Move the helpers to `test/helpers/database.helpers.ts` and update both the acceptance and the integration tests to import the helpers from there.
 
-To find out why the API smoke test is failing, you can start the application via `node .` and request the tested endpoint for example using `curl`. You will see that the server responds with 200 OK and an empty response body. This is because our `getDetails` implementation returns `undefined` when no product matching the slug was found. This can be fixed by adding a `before` hook to the smoke test. The hook should populate the database with the test data assumed by the examples in the Swagger specification by leveraging existing helpers `givenEmptyDatabase` and `givenProduct`.
+To find out why the API smoke test is failing, you can start the application via `node .` and request the tested endpoint for example using `curl`. You will see that the server responds with 200 OK and an empty response body. This is because `getDetails` returns `undefined` when no product matching the slug was found. This can be fixed by adding a `before` hook to the smoke test. The hook should populate the database with the test data assumed by the examples in the Swagger specification by leveraging existing helpers `givenEmptyDatabase` and `givenProduct`.
 
-Now back to our first unit test. It may be a puzzle to figure out why the test is passing, although the answer is simple: our integration and acceptance tests are setting up data in the database, the unit test does not clear the database (because it should not use it at all!) and accidentally happen
+Now back to the first unit test. It may be a puzzle to figure out why the test is passing, although the answer is simple: the integration and acceptance tests are setting up data in the database, the unit test does not clear the database (because it should not use it at all!) and accidentally happen
 to expect the same data as one of the other tests.
 
 ### Decouple Controller from Repository
 
-This shows us a flaw in our current design of the ProductController - it's difficult to test it in isolation. Let's fix that by making the dependency on `ModelRepository` explicit and allow controller users to provide a custom implementation.
+This shows us a flaw in the current design of the `ProductController` - it's difficult to test it in isolation. Fix that by making the dependency on `ModelRepository` explicit and allow controller users to provide a custom implementation.
 
 ```ts
 class ProductController {
@@ -945,7 +942,7 @@ class ProductController {
 }
 ```
 
-{% include tip.html content="If we wanted to follow pure test-driven development, then we would define a minimal repository interface describing only the methods actually used by our controller. This will allow us to discover the best repository API that serves the need of our controller. However, we don't want to design a new repository API, we want to re-use the repository implementation provided by LoopBack. Therefore using the actual Repository class/interface is the right approach.
+{% include tip.html content="If you wanted to follow pure test-driven development, then you would define a minimal repository interface describing only the methods actually used by the controller. This will allow you to discover the best repository API that serves the need of the controller. However, you don't want to design a new repository API, you want to re-use the repository implementation provided by LoopBack. Therefore using the actual Repository class/interface is the right approach.
 " %}
 
 In traditional object-oriented languages like Java or C#, in order to allow the unit tests to provide a custom implementation of the repository API, the controller needs to depend on an interface describing the API, and the repository implementation needs to implement this interface. The situation is easier in JavaScript and TypeScript. Thanks to the dynamic nature of the language, it's possible to mock/stub entire classes. The [sinon](http://sinonjs.org/) testing module, which comes bundled in `@loopback/testlab`, makes this very easy.
@@ -988,19 +985,19 @@ describe('ProductController', () => {
 });
 ```
 
-The new unit test is passing now, but our integration and acceptance tests are broken again!
+The new unit test is passing now, but the integration and acceptance tests are broken again!
 
  1. Fix the integration test by changing how the controller is created - inject `new ProductRepository()` into the repository argument.
 
  2. Fix the acceptance test by annotating `ProductController`'s `repository` argument with `@inject('repositories.Product')`
-    and binding the `ProductRepository` in the main application file where we are also binding controllers.
+    and binding the `ProductRepository` in the main application file where you are also binding controllers.
 
 Learn more about this topic in [Unit-test your Controllers](./Testing-your-application.html#unit-test-your-controllers)
 and [Use test doubles](./Testing-your-application.html#use-test-doubles) from [Testing your application](./Testing-your-application.html).
 
 ### Handle 'product not found' error
 
-When we wrote the first implementation of `getDetails`, we assumed the slug always refer to an existing product, which obviously is not always true. Let's fix our controller to correctly handle this error situation.
+When you wrote the first implementation of `getDetails`, you assumed the slug always refer to an existing product, which obviously is not always true. Fix the controller to correctly handle this error situation.
 
 Start with a failing unit test:
 
@@ -1048,11 +1045,11 @@ Express middleware has several shortcomings:
  - The order in which middleware needs to be registered can be confusing, for example request logging middleware must be registered as the first one, despite the fact that the log is written only at the end, once the response has been sent.
  - The invocation of middleware handlers is controlled by the framework, application developers have very little choices.
 
-In LoopBack 4, we decided to abandon Express/Koa-like middleware and design a different approach that puts the application developer in the front seat. Please refer to [Sequence](./Sequence.md) documentation to learn more about this concept.
+LoopBack 4, abandons Express/Koa-like middleware for a different approach that puts the application developer in the front seat. See [Sequence](Sequence.html) documentation to learn more about this concept.
 
-In this guide, we are going to modify request handling in our application to print a line in the [Common Log Format](https://en.wikipedia.org/wiki/Common_Log_Format) for each request handled.
+Now you are going to modify request handling in the application to print a line in the [Common Log Format](https://en.wikipedia.org/wiki/Common_Log_Format) for each request handled.
 
-Start by writing an acceptance test, as described in [Test sequence customizations](./Testing-your-application.html#test-sequence-customizations) from [Testing your application](./Testing-your-application.html). Create a new test file (e.g. `sequence.acceptance.ts`) and add the following test:
+Start by writing an acceptance test, as described in [Test sequence customizations](Testing-your-application.html#test-sequence-customizations) from [Testing your application](Testing-your-application.html). Create a new test file (e.g. `sequence.acceptance.ts`) and add the following test:
 
 ```ts
 describe('Sequence (acceptance)', () => {
@@ -1077,7 +1074,7 @@ describe('Sequence (acceptance)', () => {
 });
 ```
 
-Run the test suite and watch the test to fail.
+Run the test suite and watch the test fail.
 
 In the next step, copy the default Sequence implementation to a new project file `src/server/sequence.ts`:
 
@@ -1106,7 +1103,7 @@ export class MySequence implements SequenceHandler {
 }
 ```
 
-Register your new sequence with your `Server`, e.g. by calling `server.sequence(MySequence)`. Run your tests to verify that everything works the same way as before and the new acceptance test is still failing.
+Register your new sequence with your `Server`, for example by calling `server.sequence(MySequence)`. Run your tests to verify that everything works the same way as before and the new acceptance test is still failing.
 
 Now it's time to customize the default sequence to print a common log line. Edit the `handle` method as follows:
 
@@ -1132,13 +1129,13 @@ async handle(req: ParsedRequest, res: ServerResponse) {
 }
 ```
 
-The new method `log` should be injected - add the following line to `MySequence` constructor arguments:
+To inject the new method `log`, add the following line to `MySequence` constructor arguments:
 
 ```ts
 @inject('sequence.actions.log') protected log: (msg: string) => void
 ```
 
-When you run the tests now, you will see that our new acceptance tests for logging passes, but some of the older acceptance tests started to fail. This is because `sequence.actions.log` is not bound in our application. Fix that by adding the following line after you've retrieved your rest server instance:
+When you run the tests now, you will see that the new acceptance tests for logging passes, but some of the older acceptance tests started to fail. This is because `sequence.actions.log` is not bound in the application. Fix that by adding the following line after you've retrieved your rest server instance:
 
 ```ts
 // assuming you've called `const server = await app.getServer(RestServer)`
@@ -1147,7 +1144,7 @@ server.bind('sequence.actions.log').to((msg: String) => console.log(msg));
 
 With this last change in place, your test suite should be all green again.
 
-We will leave the next task as an exercise for our readers: modify the `catch` block to print a common log entry too. Start by writing a unit-test that invokes `MySequence` directly.
+The next task is left as an exercise for the reader: \Modify the `catch` block to print a common log entry too. Start by writing a unit-test that invokes `MySequence` directly.
 
 ## Preparing your API for consumption
 
@@ -1188,4 +1185,4 @@ Here is a sneak peek of what's coming:
 
 - Plain JavaScript: [loopback-next issue #560](https://github.com/strongloop/loopback-next/issues/560)
 
-The train is moving and welcome on board! Your participation and contribution will make LoopBack 4 an even more powerful framework and greater community/ecosystem. The team is very excited about the new journey. We look forward to working with you on more ideas, more pull requests, and more extension modules. Let's make LoopBack 4 rock together.
+The train is moving and welcome on board! Your participation and contribution will make LoopBack 4 an even more powerful framework and greater community/ecosystem. The team is very excited about the new journey. We look forward to working with you on more ideas, more pull requests, and more extension modules. Let's make LoopBack 4 rock together!
