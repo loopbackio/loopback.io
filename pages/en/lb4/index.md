@@ -13,9 +13,8 @@ summary: LoopBack is a platform for building APIs and microservices in Node.js
 " %}
 
 {% include see-also.html title="GitHub Repo" content='
-LoopBack 4 framework code is being developed in one "mono-repository":
-[loopback-next](https://github.com/strongloop/loopback-next) rather than dozens of
-different repos, as in v3.  Components will be in their own individual repositories, however.
+LoopBack 4 framework code is being developed in one "mono-repository",
+[loopback-next](https://github.com/strongloop/loopback-next), rather than multiple repos, as in v3.  However, examples and externally-developed components will be in separate repositories.
 '%}
 ## Built for API developers
 
