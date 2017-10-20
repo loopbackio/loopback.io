@@ -60,7 +60,7 @@ You should see "world" written to the console.
 
 ### TypeScript project
 
-{% include important.html content= "You must set `'target': 'es6'` in your compiler options in your `tsconfig.json`.
+{% include important.html content= "You must set `'target': 'es2017'` in your compiler options in your `tsconfig.json`.
 " %}
 
 ```js
