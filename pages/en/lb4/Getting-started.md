@@ -5,35 +5,202 @@ keywords: LoopBack 4.0, LoopBack 4
 tags:
 sidebar: lb4_sidebar
 permalink: /doc/en/lb4/Getting-started.html
-summary:
+summary: Write and run a LoopBack 4 "Hello World" project
 ---
-## Prerequisites: JavaScript
+## Prerequisites
 
-Like other modern JavaScript frameworks (for example, Angular 2 and React) LoopBack 4 has an opinion about what flavor of JavaScript to use in your application.
-The starting point is [ECMAScript 6](http://www.ecma-international.org/ecma-262/6.0/), plus the following non-standard add-ons:
+Follow the instructions in [Installation](Installation.html) to install the prerequisites for a LoopBack 4 project.
 
- - Decorators
- - `async` / `await`
- - ES2015-modules
+With LoopBack 4 you can code in JavaScript or TypeScript.  Regardless of which you use, you'll need to do the following:
 
-**All examples and snippets in the documentation use this flavor of JavaScript.**
+ 1. Create a new directory called `lb4-hello-world` and make that your current directory:
+ ```
+ $ mkdir lb4-hello-world
+ $ cd lb4-hello-world
+ ```
+ 1. Create a `package.json` by following the instructions below.
 
-{% include note.html content="This article will eventually cover:
-- How to install the command line utility
-- Using the utility to scaffold the skeleton app
-- Running the app (node ., npm start)
+### Create `package.json`
+
+Regardless of whether you're going to code in JavaScript or TypeScript, you need to create  a `package.json` file.
+The easiest way to create a new one is to enter the following command:
+
+  ```
+  $ npm init
+  ```
+
+The command will prompt you for values that it will use to fill out the `pacakge.json` properties.  Press ENTER to accept the default for all of them, except for `description` enter `Hello World for LoopBack 4`.
+You can also enter values for entries like `git repository` and `keywords`,
+but they are not required.
+
+```
+package name: (lb4-hello-world)
+version: (1.0.0)
+description: Hello World for LoopBack 4
+entry point: (index.js)
+test command:
+git repository:
+keywords:
+author:
+license: (ISC)
+```
+
+The file will then contain the following:
+
+```js
+{
+  "name": "lb4-hello-world",
+  "version": "1.0.0",
+  "description": "Hello World for LoopBack 4",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
+```
+
+**To continue, follow one of these procedures**:
+
+- [JavaScript project](#javascript-project)
+- [TypeScript project](#typescript-project)
+
+## Try a JavaScript project
+
+If you're coding in JavaScript, follow these steps:
+
+1. Create `index.js` file.
+1. Run the project.
+
+### Create `index.js`
+
+Create a file named `index.js`, and copy the following into it:
+
+```js
+const Application = require('@loopback/core').Application;
+
+const app = new Application();
+app.bind('message').to('Hello worldA');
+app.get('message').then(value => {
+  console.log(value);
+});
+```
+
+### Run the project
+
+To run your project, enter this command:
+
+```shell
+node index.js
+```
+
+You should see "Hello world!" written to the console.
+
+## Try a TypeScript project
+
+If you're coding in TypeScript, follow these steps:
+
+1. Create `tsconfig.json` file.
+2. Create `index.ts` file.
+1. Run the project.
+
+### Create `tsconfig.json` file
+
+A `tsconfig.json` file in a directory indicates that it contains a TypeScript project. The `tsconfig.json` file specifies the root files and the TypeScript compiler options. For more information on `tsconfig.json`, see [TypeScript documentation](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html).
+
+Create a new `tsconfig.json` file by entering the following command:
+
+```
+$ tsc --init
+```
+
+Now edit this file, because you need to change some of the default values.
+
+{% include important.html content= "You must set the `'compilerOptions.target'` property in  your project's `tsconfig.json` file based on the version of Node you are using.
 " %}
 
-## Installation
+**With Node 6.x**:
 
-Make sure you have Node.js 8.0.0 or higher installed.
+```js
+{
+  "compilerOptions": {
+   ...
+    "target": "es6",
+    ...
+  }
+}
+```
 
-## A simple example
+**With Node 8.x**:
 
-This example creates an `Application` and a `RestServer` that responds to all HTTP requests with the text "Hello World".
+```js
+{
+  "compilerOptions": {
+    ...
+    "target": "es2017",
+    ...
+  }
+}
+```
 
-### Building a LoopBack 4 application
-First create a new folder.  Then, create three files within this folder: `index.ts`, `tsconfig.json` and `package.json`.  
+### Create `index.ts`
+
+Create a file named `index.ts` and copy the following code into it:
+
+```ts
+import {Application} from '@loopback/core';
+
+const app = new Application();
+app.bind('message').to('Hello world!');
+app.get('message').then(value => {
+  console.log(value);
+});
+```
+
+### Run the project
+
+Then run `index.ts` by entering this command:
+
+```
+ts-node index.ts
+```
+
+You should see "world" written to the console.
+
+## Try a more complex TypeScript project
+
+This example builds on the basic "Hello world" example with an `Application` and a `RestServer` that responds to all HTTP requests with the text "Hello World".
+
+{% include note.html content= "This section assumes you've already created the
+[basic TypeScript project](#try-a-typescript-project).
+" %}
+
+### Install LoopBack REST package
+
+Install the LoopBack REST package with npm by entering this command:
+
+```js
+npm i -s @loopback/rest
+```
+
+This adds the `@types/node` package to the `dependencies` property of `package.json`.
+
+
+### Install Node type definitions package
+
+Install the `@types/node` package as a development dependency by entering this command:
+
+```js
+npm i --save-dev @types/node
+```
+
+This adds the `@types/node` package to the `devDependencies` property of `package.json`.
+
+### Modify `index.ts`
+
+Copy the following code into the `index.ts` file, replacing the entire
+contents of the file:
 
 {% include code-caption.html content="index.ts" %}
 ```ts
@@ -49,15 +216,15 @@ const app = new Application({
   const server = await app.getServer(RestServer);
   // Setup our handler!
   server.handler((sequence, request, response) => {
-    sequence.send(response, 'hello world');
+    sequence.send(response, 'Hello world!');
   });
   await app.start();
   console.log(`REST server listening on port ${server.getSync('rest.port')}`);
 })();
-
 ```
+### Modify `tsconfig.json`
 
-Next, create a file called tsconfig.json to indicate that this is a TypeScript project and specify the TypeScript compiler options required.  For more details, see [TypeScript documentation](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html).
+Edit `tsconfig.json` as follows:
 
 {% include code-caption.html content="tsconfig.json" %}
 ```
@@ -66,7 +233,7 @@ Next, create a file called tsconfig.json to indicate that this is a TypeScript p
     /* Basic Options */
     "target": "es2017",                          
     "module": "commonjs",                     
-
+...
     /* Experimental Options */
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true
@@ -74,29 +241,7 @@ Next, create a file called tsconfig.json to indicate that this is a TypeScript p
 }
 ```
 
-Finally, create a file called package.json. 
-
-{% include code-caption.html content="package.json" %}
-```
-{
-  "name": "getting-started",
-  "description": "Getting Started for LoopBack 4",
-  "version": "1.0.0",
-  "scripts": {
-    "start": "tsc && node index.js"
-  },
-  "dependencies": {
-    "@loopback/core": "^4.0.0-alpha.16",
-    "@loopback/rest": "^4.0.0-alpha.3"
-  },
-  "devDependencies": {
-    "@types/node": "^8.0.34",
-    "typescript": "^2.5.3"
-  }
-}
-```
-
-### Running the application
+### Run the project
 
 To install the required packages, enter:
 ```
@@ -108,15 +253,11 @@ To run the application, enter:
 npm start
 ```
 
-On another terminal, enter:
+In another console window, enter this command:
+
 ```
 curl http://localhost:3000/helloworld
 ```
 or load http://localhost:3000/helloworld in your web browser.
 
-You should see the `Hello World` message.
-
-
-## References
-
-For more examples and tutorials, see [Examples-and-tutorials.html](http://loopback.io/doc/en/lb4/Examples-and-tutorials.html).
+You should see the `Hello world!` message.
