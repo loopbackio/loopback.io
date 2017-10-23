@@ -474,6 +474,21 @@ userRepo.logout(new VoidCallback() {
     }
 });
 ```
+The repo can also be used to to change the current user's password.
+
+```java
+userRepo.changePassword(currentPassword, newPassword, new VoidCallback(){
+    @Override
+    public void onSuccess() {
+        // Password changed
+    }
+
+    @Override
+    public void onError(Throwable t) {
+      // Password change failed
+    }
+});
+```
 
 ### Accessing data of the current user
 
