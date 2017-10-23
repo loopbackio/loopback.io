@@ -474,7 +474,7 @@ userRepo.logout(new VoidCallback() {
     }
 });
 ```
-The repo can also be used to to change the current user's password.
+The repo can also be used to change the current user's password.
 
 ```java
 userRepo.changePassword(currentPassword, newPassword, new VoidCallback(){
