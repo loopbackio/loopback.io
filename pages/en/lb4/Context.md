@@ -26,7 +26,10 @@ builtin/in-memory storage mechanism).
 - You have full access to updated/real-time application+request state at all
 times.
 
-LoopBack supports two types of context: Application-level and Request-level
+LoopBack's context system allows an unlimited amount of Context instances, 
+each of which may have a parent Context.
+
+Typically, however, an application will have three "levels" of context: application-level, server-level and request-level.
 
 ## Application-level context (global)
 
@@ -47,6 +50,37 @@ app.controller(MyController);
 In this case, you are using the `.controller` helper method to register a new
 controller. The important point to note is `MyController` is actually registered
 into the Application Context (`app` is a Context).
+
+## Server-level context
+
+Server-level context:
+- Is a child of application-level context
+- Holds configuration specific to a particular server instance
+
+Your application will typically contain one or more server instances, each of
+which will have the application-level context as its parent. This means that
+any bindings that are defined on the application will also be available to the
+server(s), unless you replace these bindings on the server instance(s) directly.
+
+For example, [`@loopback/rest`](https://github.com/strongloop/loopback-next/blob/master/packages/rest)
+has the `RestServer` class, which sets up a running HTTP/S server on a port, as
+well as defining routes on that server for a REST API. To set the port binding
+for the `RestServer`, you would bind the `RestBindings.PORT` key to a number.
+
+We can selectively re-bind this value for certain server instances to change
+what port they use:
+
+```js
+async start() {
+  // publicApi will use port 443, since it inherits this binding from the app.
+  app.bind(RestBindings.PORT).to(443);
+  const publicApi = await app.getServer('public');
+  const privateApi = await app.getServer('private');
+  // privateApi will be bound to 8080 instead.
+  privateApi.bind(RestBindings.PORT).to(8080);
+  await super.start();
+}
+```
 
 ## Request-level context (request)
 
@@ -94,6 +128,9 @@ too -- ie. instantiate your classes, etc)
 
 The process of registering a ContextValue into the Context is known as
 _binding_. Sequence-level bindings work the same way (shown 2 examples before).
+
+For a list of the available functions you can use for binding, visit
+the [Context API Docs](http://apidocs.loopback.io/@loopback%2fcontext).
 
 ## Dependency injection
 
