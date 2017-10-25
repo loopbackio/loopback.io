@@ -28,7 +28,7 @@ LIST_END
     # actual example project, so we need to add the branch name to the readme
     # name.
     if [ "$branch" != "master" ]; then
-      DEST="pages/en/lb3/readmes/$repo-$branch.md"
+      DEST="pages/en/lb4/readmes/$repo-$branch.md"
     fi
     echo "fetching $org/$repo/$branch from GitHub's raw content domain..."
     curl -s $GHURL > $DEST
