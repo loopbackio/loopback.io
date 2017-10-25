@@ -51,37 +51,32 @@ In this case, you are using the `.controller` helper method to register a new
 controller. The important point to note is `MyController` is actually registered
 into the Application Context (`app` is a Context).
 
-## Server-level context (components that make use of Server)
-- has the Application-level context as a parent
-- holds configuration specific to this particular server instance
+## Server-level context
 
-For example, [`@loopback/rest`](https://github.com/strongloop/loopback-next/blob/master/packages/rest) has the
-`RestServer` class, which sets up a running HTTP/S server on a port, as well as
-defining routes on that server for a REST API:
-```js
-async start() {
-  const publicApi = await app.getServer('public');
-  const privateApi = await app.getServer('private');
-  // Each of the servers has its own context, allowing separate configuration.
-  publicApi.bind(RestBindings.PORT).to(443);
-  privateApi.bind(RestBindings.PORT).to(8080);
-  await super.start();
-}
-```
+Server-level context:
+- Is a child of application-level context
+- Holds configuration specific to a particular server instance
 
-Additionally, since the parent context of each of the server instances is the
-Application, items bound to the Application will be available at Server-level
-contexts, unless overridden:
+Your application will typically contain one or more server instances, each of
+which will have the application-level context as its parent. This means that
+any bindings that are defined on the application will also be available to the
+server(s), unless you replace these bindings on the server instance(s) directly.
+
+For example, [`@loopback/rest`](https://github.com/strongloop/loopback-next/blob/master/packages/rest)
+has the `RestServer` class, which sets up a running HTTP/S server on a port, as
+well as defining routes on that server for a REST API. To set the port binding
+for the `RestServer`, you would bind the `RestBindings.PORT` key to a number.
+
+We can selectively re-bind this value for certain server instances to change
+what port they use:
 
 ```js
 async start() {
-  this.bind('datasources.widgetCorp').to(datasourceInstance);
-  // Unless re-bound, both publicApi and privateApi will be able to resolve
-  // the datasourceInstance using the 'datasources.widgetCorp' key.
+  // publicApi will use port 443, since it inherits this binding from the app.
+  app.bind(RestBindings.PORT).to(443);
   const publicApi = await app.getServer('public');
   const privateApi = await app.getServer('private');
-
-  publicApi.bind(RestBindings.PORT).to(443);
+  // privateApi will be bound to 8080 instead.
   privateApi.bind(RestBindings.PORT).to(8080);
   await super.start();
 }
@@ -133,6 +128,9 @@ too -- ie. instantiate your classes, etc)
 
 The process of registering a ContextValue into the Context is known as
 _binding_. Sequence-level bindings work the same way (shown 2 examples before).
+
+For a list of the available functions you can use for binding, visit
+the [Context API Docs](http://apidocs.loopback.io/@loopback%2fcontext).
 
 ## Dependency injection
 
