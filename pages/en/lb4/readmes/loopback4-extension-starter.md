@@ -18,10 +18,10 @@ Controllers are responsible for handling endpoints for different transport proto
 Decorators are functions which are capable of providing annotations for class methods and arguments. Decorators generally take the form `@decorator`. _Annotations are hints given to a method at runtime to change certain behavior._
 
 ### Mixins
-LoopBack 4 supports mixins at the `Application` level. Mixins allow you to add new methods, modify or override existing methods. 
+LoopBack 4 supports mixins at the `Application` level. Mixins allow you to add new methods, modify or override existing methods.
 
 ### Providers
-A Provider is a class which provides a `value()` function that is called by `Context` when an entity requests the value to be injected. 
+A Provider is a class which provides a `value()` function that is called by `Context` when an entity requests the value to be injected.
 
 ### Repositories
 A Repository provides an interface for interacting with a database.
@@ -32,19 +32,19 @@ Get started by either downloading this project or cloning it as follows:
 `git clone https://github.com/strongloop/loopback4-extension-starter.git`
 
 ## Basic Usage
-An extension can be made using just one of the various extension types but most complex extensions will involve multiple extension types working together. 
+An extension can be made using just one of the various extension types but most complex extensions will involve multiple extension types working together.
 
-After you have a copy of the `loopback4-extension-starter` you can modify it as needed to create your own extension by understand each extension type by reading about it and understanding it's starter example. 
+After you have a copy of the `loopback4-extension-starter` you can modify it as needed to create your own extension by understand each extension type by reading about it and understanding it's starter example.
 
 ### Project Layout
 
 #### `src/`
-This directory contains all your extension's source code. This is where you should be working to create your extension. It has a top level `index.ts` for exporting all other files, `keys.ts` for defining your binding keys and constants, `types.ts` for defining your types and interfaces. 
+This directory contains all your extension's source code. This is where you should be working to create your extension. It has a top level `index.ts` for exporting all other files, `keys.ts` for defining your binding keys and constants, `types.ts` for defining your types and interfaces.
 
-Each of the different extension types also contains a corresponding directory to keep your extension organized. 
+Each of the different extension types also contains a corresponding directory to keep your extension organized.
 
 #### `test/`
-This directory contains directories for different kinds of tests for your extension, namely `acceptance`, `integration`, and `unit`. The directory struture inside each of those should be similar to the `src/` directory. 
+This directory contains directories for different kinds of tests for your extension, namely `acceptance`, `integration`, and `unit`. The directory struture inside each of those should be similar to the `src/` directory.
 
 #### Other files
 You'll want to update the following files as needed for your extension:
