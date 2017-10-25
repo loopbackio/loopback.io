@@ -14,9 +14,9 @@ A decorator allows you to annotate or modify your class declarations and members
 
 *If you're new to Decorators in TypeScript, see [here](https://www.typescriptlang.org/docs/handbook/decorators.html) for more info.*
 
-Decorators give LoopBack the flexibility to modify your plain TypeScript classes 
-and properties in a way that allows the framework to better understand how to 
-make use of them, without the need to inherit base classes or add functions 
+Decorators give LoopBack the flexibility to modify your plain TypeScript classes
+and properties in a way that allows the framework to better understand how to
+make use of them, without the need to inherit base classes or add functions
 that tie into an API.
 
 As a default, LoopBack comes with some pre-defined decorators:
@@ -32,8 +32,8 @@ Route decorators are used to expose controller methods as REST API operations.
 If you are not familiar with the concept Route or Controller, please see [LoopBack Route](routes.htm)
 and [LoopBack Controller](controllers.htm) to learn more about them.
 
-By calling a route decorator, you provide OpenAPI specification to describe the 
-endpoint which the decorated method maps to. You can choose different decorators 
+By calling a route decorator, you provide OpenAPI specification to describe the
+endpoint which the decorated method maps to. You can choose different decorators
 accordingly or do a composition of them:
 
 ### API Decorator
@@ -42,7 +42,7 @@ accordingly or do a composition of them:
 
   `@api` is a decorator for controller constructor, it's called before a controller
   class. `@api` is used when you have a base path and a Paths Object, which
-  contains all path definitions of your controller. Please note the api specs defined 
+  contains all path definitions of your controller. Please note the api specs defined
   with `@api` will override other api specs defined inside the controller. For example:
 
   ```ts
@@ -80,8 +80,8 @@ accordingly or do a composition of them:
 
   Syntax: [`@operation(verb: string, path: string, spec?: OperationObject)`](http://apidocs.loopback.io/@loopback%2fcore/#818)
 
-  `@operation` is a controller method decorator. It exposes a Controller method as 
-  a REST API operation. You can specify the verb, path, parameters and response 
+  `@operation` is a controller method decorator. It exposes a Controller method as
+  a REST API operation. You can specify the verb, path, parameters and response
   as specification of your endpoint, for example:
 
   ```ts
@@ -100,11 +100,11 @@ accordingly or do a composition of them:
     }
   }
   ```
-  
+
 ### Commonly-used Operation Decorators
-  
+
   Syntax: [`@get(path: string, spec?: OperationObject)`](http://apidocs.loopback.io/@loopback%2fcore/#798)
-  
+
   Same Syntax for decorators [`@post`](http://apidocs.loopback.io/@loopback%2fcore/#802)
   , [`@put`](http://apidocs.loopback.io/@loopback%2fcore/#806)
   , [`@patch`](http://apidocs.loopback.io/@loopback%2fcore/#810)
@@ -128,7 +128,7 @@ accordingly or do a composition of them:
     }
   }
   ```
-  
+
   For more usage, refer to [Routing to Controllers](controllers.htm#routing-to-controllers)
 
 ### Parameter Decorator
@@ -153,7 +153,7 @@ accordingly or do a composition of them:
   ```
 
   or
-  
+
   ```ts
     // example 2: decorator `@param` applied on parameter level
     class MyController {
@@ -165,36 +165,36 @@ accordingly or do a composition of them:
     }
   ```
 
-  In the first example, we apply multiple decorators to a single declaration. 
-  The order in which the decorators are called is important because a `@param` 
-  decorator must be applied after an operation decorator. 
-  To learn more about TypeScript decorator composition, 
+  In the first example, we apply multiple decorators to a single declaration.
+  The order in which the decorators are called is important because a `@param`
+  decorator must be applied after an operation decorator.
+  To learn more about TypeScript decorator composition,
   refer to [TypeScript Decorator Documentation](https://www.typescriptlang.org/docs/handbook/decorators.html)
 
   Please note method level `@param` and parameter level `@param` are mutually exclusive,
   you can not mix and apply them to the same parameter.
-  
+
   You can also use this pattern to make it quicker to define params: `@param.${in}.${type}(${name})`
-  
+
   - in: one of the following values: `query`, `header`, `path`, `formData`, `body`
   - type: one of the following values:  `string`, `number`, `boolean`, `integer`
   - name: a `string`, name of the parameter
 
-  So an example would be `@param.query.number('offset')`. 
+  So an example would be `@param.query.number('offset')`.
   You can find the specific usage in [Writing Controller methods](controller.htm#writing-controller-methods)
-  
+
 ## Dependency Injection
 
-`@inject` is a decorator to annotate method arguments for automatic injection by 
-LoopBack's IoC container. 
+`@inject` is a decorator to annotate method arguments for automatic injection by
+LoopBack's IoC container.
 
-The injected values are applied to a constructed instance, so it can only be used on 
+The injected values are applied to a constructed instance, so it can only be used on
 non-static properties or constructor parameters of a Class.
 
-The `@inject` decorator allows you to inject dependencies bound to any implementation 
+The `@inject` decorator allows you to inject dependencies bound to any implementation
 of the [Context](#context) object, such as an Application instance or a request context instance.
-You can bind values, class definitions and provider functions to those contexts and 
-then resolve values (or the results of functions that return those values!) in other 
+You can bind values, class definitions and provider functions to those contexts and
+then resolve values (or the results of functions that return those values!) in other
 areas of your code.
 
 ```ts
@@ -215,7 +215,7 @@ class MyApp extends Application {
 }
 ```
 
-Now that we've bound the 'config.widget' key to our configuration object, 
+Now that we've bound the 'config.widget' key to our configuration object,
 and 'logger.widget' key to the function `logInfo()`,
 we can inject them in our WidgetController:
 
@@ -227,7 +227,7 @@ class WidgetController {
   // injection for property
   @inject('logger.widget')
   private logger: Function
-  
+
   // injection for constructor parameter
   constructor(
     @inject('config.widget') protected widget: any
@@ -243,7 +243,7 @@ For more information, see the [Dependency Injection](Dependency-Injection.htm) s
 
   Syntax: `@authenticate(strategyName: string, options?: Object)`
 
-  Marks a controller method as needing an authenticated user. 
+  Marks a controller method as needing an authenticated user.
   This decorator requires a strategy name as a parameter.
 
   Here's an example using 'BasicStrategy': to authenticate user in function `whoAmI`:
@@ -268,26 +268,26 @@ For more information, see the [Dependency Injection](Dependency-Injection.htm) s
 
 ## Repository Decorators
 
-  As a Domain-driven design concept, 
-  the repository is a layer between your domain object and data mapping layers 
-  using a collection-like interface for accessing domain objects. 
-  
-  In LoopBack, a domain object is usually a TypeScript/JavaScript Class instance, 
-  and a typical example of a data mappting layer module could be a database's node.js driver.
-  
-  LoopBack repository encapsulates your TypeScript/JavaScript Class instance, 
-  and its methods that communicate with your database.
-  It is an interface to implement data persistence. 
+  As a Domain-driven design concept,
+  the repository is a layer between your domain object and data mapping layers
+  using a collection-like interface for accessing domain objects.
 
-  Repository decorators are used for defining models(domain objects) for use with your chosen datasources, 
+  In LoopBack, a domain object is usually a TypeScript/JavaScript Class instance,
+  and a typical example of a data mappting layer module could be a database's node.js driver.
+
+  LoopBack repository encapsulates your TypeScript/JavaScript Class instance,
+  and its methods that communicate with your database.
+  It is an interface to implement data persistence.
+
+  Repository decorators are used for defining models(domain objects) for use with your chosen datasources,
   and the navigation strategies among models.
 
   If you are not familiar with repository related concepts like `Model`, `Entity` and `Datasource`,  
-  please see LoopBack concept [Repositories](#Repositories.htm) to learn more. 
-  
+  please see LoopBack concept [Repositories](#Repositories.htm) to learn more.
+
 ### Model Decorators
 
-  Model is a Class that LoopBack builds for you to organize the data that 
+  Model is a Class that LoopBack builds for you to organize the data that
   share same configurations and properties.
   You can use model decorators to define a model and its properties.
 
@@ -297,20 +297,20 @@ For more information, see the [Dependency Injection](Dependency-Injection.htm) s
 
   Model decorator is a Class decorator.
   In LoopBack 4, we inherit the model definition format from LoopBack 3,
-  you can find it in [Model definition JSON file](https://loopback.io/doc/en/lb3/Model-definition-JSON-file.html).
+  you can find it in [Model definition JSON file](/lb3/Model-definition-JSON-file.html).
   For usage examples, see [Define Models](Repositories.html#define-models)
 
   *Please note we will elaborate more about model and model definition in #Model.htm,*
-  *and replace the link above with LB4 link*
+  *and replace the link above with LoopBack 4 link*
 
   By using a model decorator, you can define a model as your repository's metadata,
   then you have two choices to create the repository instance:
-  
-  One is to inject your repository and resolve it with Legacy Juggler that complete 
+
+  One is to inject your repository and resolve it with Legacy Juggler that complete
   with CRUD operations for accessing the model's data.
   A use case can be found in section [Repository decorator](#repository-decorator)
 
-  The other one is defining your own repository without using legacy juggler, 
+  The other one is defining your own repository without using legacy juggler,
   and use an ORM/ODM of your choice.
 
    ```ts
@@ -324,7 +324,7 @@ For more information, see the [Dependency Injection](Dependency-Injection.htm) s
   Syntax: `@property(definition: PropertyDefinition)`
 
   The property decorator defines metadata for a property on a Model definition.
-  The format of property definitions can be found in [Property definitions](https://loopback.io/doc/en/lb2/Model-definition-JSON-file.html#properties) 
+  The format of property definitions can be found in [Property definitions](https://loopback.io/doc/en/lb2/Model-definition-JSON-file.html#properties)
 
   For usage examples, see [Define Models](Repositories.html#define-models)
 
@@ -332,25 +332,25 @@ For more information, see the [Dependency Injection](Dependency-Injection.htm) s
 
   The relation decorator defines the nature of a relationship between two models.
 
-  *This feature has not yet been released in alpha form. Documentation will be* 
+  *This feature has not yet been released in alpha form. Documentation will be*
   *added here as this feature progresses.*
 
 #### Relation Decorator
 
   Syntax: `@relation`
-  
+
   Register a general relation.
 
 #### Specfic Relation Decorator
-  
+
   Syntax:
 
-  - `@belongsTo` 
-  - `@hasOne` 
-  - `@hasMany` 
-  - `@embedsOne` 
-  - `@embedsMany` 
-  - `@referencesOne` 
+  - `@belongsTo`
+  - `@hasOne`
+  - `@hasMany`
+  - `@embedsOne`
+  - `@embedsMany`
+  - `@referencesOne`
   - `@referencesMany`
 
   Register a specific relation
@@ -359,16 +359,16 @@ For more information, see the [Dependency Injection](Dependency-Injection.htm) s
 
   Syntax: `@repository(model: string | typeof Entity, dataSource?: string | juggler.DataSource)`
 
-  This decorator either injects an existing repository or creates a repository 
+  This decorator either injects an existing repository or creates a repository
   from a model and a datasource.
 
   The injection example can be found in [Repository#controller-configuration](Repositories.html#controller-configuration)
 
-  To create a repository in a controller, you can define your model and datasource 
+  To create a repository in a controller, you can define your model and datasource
   first, then import them in your controller file:
 
   *To learn more about creating model and datasource, please see the example in [Thinking in LoopBack](Thinking-in-LoopBack.htm#define-product-model-repository-and-data-source)*
-  
+
   ```ts
   // my-controller.ts
   import { Todo } from '{path_of_Todo_model}.ts';
@@ -380,8 +380,8 @@ For more information, see the [Dependency Injection](Dependency-Injection.htm) s
     ... ...
   }
   ```
-  
-  If the model or datasource is already bound to the app, you can create the 
+
+  If the model or datasource is already bound to the app, you can create the
   repository by providing their names instead of the classes. For example:
 
   ```ts

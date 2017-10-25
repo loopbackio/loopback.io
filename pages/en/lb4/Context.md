@@ -11,7 +11,7 @@ summary:
 ## What is Context?
 
 - An abstraction of all state and dependencies in your application.
-- Context is what LB uses to "manage" everything.
+- Context is what LoopBack uses to "manage" everything.
 - A global registry for anything/everything in your app (all configs, state,
 dependencies, classes, etc).
 - An An [inversion of control](https://en.wikipedia.org/wiki/Inversion_of_control) container used to inject dependencies into your code. container used to inject dependencies into your code.
@@ -26,7 +26,7 @@ builtin/in-memory storage mechanism).
 - You have full access to updated/real-time application+request state at all
 times.
 
-LoopBack's context system allows an unlimited amount of Context instances, 
+LoopBack's context system allows an unlimited amount of Context instances,
 each of which may have a parent Context.
 
 Typically, however, an application will have three "levels" of context: application-level, server-level and request-level.
