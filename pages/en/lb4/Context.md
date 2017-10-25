@@ -26,7 +26,10 @@ builtin/in-memory storage mechanism).
 - You have full access to updated/real-time application+request state at all
 times.
 
-LoopBack supports two types of context: Application-level and Request-level
+LoopBack's context system allows an unlimited amount of Context instances, 
+each of which may have a parent Context.
+
+Typically, however, an application will have three "levels" of context: application-level, server-level and request-level.
 
 ## Application-level context (global)
 
@@ -47,6 +50,42 @@ app.controller(MyController);
 In this case, you are using the `.controller` helper method to register a new
 controller. The important point to note is `MyController` is actually registered
 into the Application Context (`app` is a Context).
+
+## Server-level context (components that make use of Server)
+- has the Application-level context as a parent
+- holds configuration specific to this particular server instance
+
+For example, [`@loopback/rest`](https://github.com/strongloop/loopback-next/blob/master/packages/rest) has the
+`RestServer` class, which sets up a running HTTP/S server on a port, as well as
+defining routes on that server for a REST API:
+```js
+async start() {
+  const publicApi = await app.getServer('public');
+  const privateApi = await app.getServer('private');
+  // Each of the servers has its own context, allowing separate configuration.
+  publicApi.bind(RestBindings.PORT).to(443);
+  privateApi.bind(RestBindings.PORT).to(8080);
+  await super.start();
+}
+```
+
+Additionally, since the parent context of each of the server instances is the
+Application, items bound to the Application will be available at Server-level
+contexts, unless overridden:
+
+```js
+async start() {
+  this.bind('datasources.widgetCorp').to(datasourceInstance);
+  // Unless re-bound, both publicApi and privateApi will be able to resolve
+  // the datasourceInstance using the 'datasources.widgetCorp' key.
+  const publicApi = await app.getServer('public');
+  const privateApi = await app.getServer('private');
+
+  publicApi.bind(RestBindings.PORT).to(443);
+  privateApi.bind(RestBindings.PORT).to(8080);
+  await super.start();
+}
+```
 
 ## Request-level context (request)
 
