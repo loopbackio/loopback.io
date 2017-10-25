@@ -136,6 +136,10 @@ children:
     url: Security-advisory-03-10-2017.html
     output: 'web, pdf'
 
+  - title: '10-24-2017'
+    url: Security-advisory-10-24-2017.html
+    output: 'web, pdf'
+
 - title: 'Creating an application'
   url: Creating-an-application.html
   output: 'web, pdf'

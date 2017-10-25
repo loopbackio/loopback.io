@@ -9,7 +9,7 @@ sidebar: lb3_sidebar
 permalink: /doc/en/lb3/Security-advisory-10-24-2017.html
 ---
 *   **Security risk**: Medium
-*   **Vulnerability**: Multi User Password Reset Exploit
+*   **Vulnerability**: Multi-user password reset exploit
 
 ### Description
 
@@ -23,7 +23,7 @@ GitHub user [sebastianfelipe](https://github.com/sebastianfelipe) via [Issue #35
 
 ### Versions affected
 
-loopback < 3.16.0 >= 3.3.0
+loopback (versions 3.3.0 or higher up till version 3.16.0)
 
 ### Solution
 
