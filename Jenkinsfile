@@ -14,6 +14,7 @@ node('linux && git') {
   stage('download updates') {
     sh './update-readmes.sh'
     sh './update-community-readmes.sh'
+    sh './update-readmes-lb4.sh'
   }
   stage('check updates') {
      sh 'git status'

@@ -20,16 +20,29 @@ children:
   output: 'web, pdf'
   children:
 
-  - title: 'Examples & Tutorials'
-    url: Examples-and-tutorials.html
-    output: 'web, pdf'
-
   - title: 'Thinking in LoopBack'
     url: Thinking-in-LoopBack.html
     output: 'web, pdf'
 
   - title: 'FAQ'
     url: FAQ.html
+    output: 'web, pdf'
+
+- title: 'Examples & Tutorials'
+  url: Examples-and-tutorials.html
+  output: 'web, pdf'
+  children:
+
+  - title: 'Hello world example'
+    url: LoopBack4-Hello-World.html
+    output: 'web, pdf'
+
+  - title: 'Microservice example'
+    url: LoopBack4-microservice-example.html
+    output: 'web, pdf'
+
+  - title: 'Extension starter example'
+    url: LoopBack4-extension-starter.html
     output: 'web, pdf'
 
 - title: 'Key concepts'
