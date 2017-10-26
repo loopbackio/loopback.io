@@ -46,7 +46,7 @@ accepts: [
     <tr>
       <td>description</td>
       <td>
-        Text description of the method, used by API documentation generators such as Swagger.
+        Text description of the method, used by API documentation generators such as OpenAPI (formerly Swagger).
         You can put long strings in an array if needed (see note below).
       </td>
       <td> </td>
@@ -62,7 +62,7 @@ accepts: [
     <tr>
       <td>notes</td>
       <td>
-        Additional notes, used by API documentation generators like Swagger.
+        Additional notes, used by OpenAPI (formerly Swagger).
         You can put long strings in an array if needed (see note below).
       </td>
       <td> </td>
@@ -70,7 +70,7 @@ accepts: [
     <tr>
       <td>documented</td>
       <td>
-        If set to <code>false</code>, this method will not be present in generated documentation.
+        If set to <code>false</code>, this method will not be present in generated OpenAPI (formerly Swagger) documentation.
       </td>
       <td> </td>
     </tr>
@@ -180,7 +180,7 @@ The following table describes the properties of each individual argument.
       <td>description</td>
       <td>String or Array</td>
       <td>
-        A text description of the argument. This is used by API documentation generators like Swagger.
+        A text description of the argument. This is used by API documentation generators like OpenAPI (formerly Swagger).
         You can put long strings in an array if needed (see note above).
       </td>
     </tr>
@@ -228,7 +228,7 @@ The following table describes the properties of each individual argument.
     <tr>
       <td>documented</td>
       <td>Boolean</td>
-      <td>If set to <code>false</code>, this parameter will not be present in generated documentation.</td>
+      <td>If set to <code>false</code>, this parameter will not be present in generated OpenAPI (formerly Swagger) documentation.</td>
     </tr>
   </tbody>
 </table>
