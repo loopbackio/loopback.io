@@ -68,6 +68,13 @@ accepts: [
       <td> </td>
     </tr>
     <tr>
+      <td>documented</td>
+      <td>
+        If set to <code>false</code>, this method will not be present in generated documentation.
+      </td>
+      <td> </td>
+    </tr>
+    <tr>
       <td>returns</td>
       <td>
         Describes the remote method's callback arguments; See <a href="Remote-methods.html#argument-descriptions">Argument descriptions</a>. The <code>err </code>argument is assumed; do not specify.
@@ -217,6 +224,11 @@ The following table describes the properties of each individual argument.
       <td>Default value that will be used to populate loopback-explorer input fields and swagger documentation.
         <strong>Note</strong>: This value will not be passed into remote methods function if argument is not present.
       </td>
+    </tr>
+    <tr>
+      <td>documented</td>
+      <td>Boolean</td>
+      <td>If set to <code>false</code>, this parameter will not be present in generated documentation.</td>
     </tr>
   </tbody>
 </table>
