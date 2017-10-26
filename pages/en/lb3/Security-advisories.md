@@ -12,8 +12,7 @@ summary:
 
 These are important advisories about known security issues:
 
-*   [Security advisory 09-21-2017](Security-advisory-09-21-2017.html)
-*   [Security advisory 03-10-2017](Security-advisory-03-10-2017.html)
+{% include list-children.html in=site.data.sidebars.lb3_sidebar %}
 
 {% include important.html content="
 Some advisories may require action on your part, for example to upgrade certain packages.
