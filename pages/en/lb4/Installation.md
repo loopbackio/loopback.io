@@ -8,115 +8,22 @@ permalink: /doc/en/lb4/Installation.html
 summary:
 ---
 
-## Prerequisites
+To get started with LoopBack 4, install the following:
 
-Install the following:
-
-- [Node.js](https://nodejs.org/en/download/) version 7 or higher.
+- Node.js, either:
+  - **Recommended**: [Version 8.x](https://nodejs.org/en/download/current/): The latest/current version.
+  - [Version 6.x](https://nodejs.org/en/download/): The long-term support (LTS) version.
 - [TypeScript](https://www.typescriptlang.org/index.html#download-links) version 2 or higher:
 
-   ```
-   npm i -g typescript
-   ```
-- [TypeScript Node](https://github.com/TypeStrong/ts-node#installation) version 3 or higher:
+  ```
+  $ npm i -g typescript
+  ```
 
-   ```
-   npm i -g ts-node
-   ```
+   This installs the TypeScript compiler command, `tsc`.
 
-## Install LoopBack core
+{% include tip.html content="
+You're installing `typescript` globally as a shortcut to get you started quickly,
+but it's not considered a best practice with Node.js.
 
-Then add LoopBack 4 as a dependency to your Node.js project:
-
-```shell
-npm install -s @loopback/core
-```
-
-## Create a Hello World project
-
-With LoopBack 4 you can code in JavaScript or TypeScript.
-
-### JavaScript project
-
-Create `index.js`:
-
-```js
-const Application = require('@loopback/core').Application;
-
-const app = new Application();
-app.bind('hello').to('world');
-app.get('hello').then(value => {
-  console.log(value);
-});
-```
-
-Then run `index.js`:
-
-```shell
-node index.js
-```
-
-You should see "world" written to the console.
-
-### TypeScript project
-
-{% include important.html content= "You must set `'target': 'es6'` in your compiler options in your `tsconfig.json`.
+Instead, a project should list build tool dependencies in `package.json` and provide scripts like `npm run build` to invoke them. This is possible because when npm invokes a package script, it automatically adds development dependencies to the project.
 " %}
-
-```js
-{
-  "compilerOptions": {
-    // ...
-    "target": "es2017" //<-- Add this
-  }
-}
-```
-
-Create `index.ts`:
-
-```ts
-import {Application} from '@loopback/core';
-
-const app = new Application();
-app.bind('hello').to('world');
-app.get('hello').then(value => {
-  console.log(value);
-});
-```
-
-Then run `index.ts`.  Do one of the following:
-
-1. Install ts-node:
-
-    ```
-    npm install -g ts-node
-    ```
-1. Run the app:
-
-    ```
-    ts-node index.ts
-    ```
-
-You should see "world" written to the console.
-
-OR:
-
-1. Install [TypeScript](https://www.typescriptlang.org/index.html#download-links) >= 2.0.0
-
-    ```
-    npm i -g typescript
-    ```
-
-1. Compile `index.ts` by entering this command:
-
-    ```
-    tsc index.ts
-    ```
-
-1. Run the compiled JavaScript output file by entering this command:
-
-   ```
-   node index.js
-   ```
-
-   You should see "world" written to the console.
