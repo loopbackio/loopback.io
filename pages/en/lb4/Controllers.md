@@ -156,3 +156,52 @@ class HelloController {
 - A `Repository` is LoopBack's database abstraction. See [Repositories](Repositories.html) for more.
 - `@get('/messages')` creates the `Route` for the Operation using `app.route()`.
 - `@param.query.number` adds a `number` param with a source of `query`.
+
+## Handling Errors in Controllers
+
+In order to specify errors for controller methods to throw, the class `HttpErrors` is used. `HttpErrors` can be found in the `@loopback/rest` package.
+
+The example below shows how `HttpErrors` can be used inside a controller method and how it can be tested.
+
+```js
+// the test
+import {HelloController} from 'path.to.controller'
+import {expect} from '@loopback/testlab'
+// ...
+
+// ...
+describe('Hello Controller', () => {
+  // ...
+  it('returns 412 Precondition Failed for non-positive limit', () => {
+    const controller = new HelloController();
+    try {
+      controller.list(0);
+      throw new Error('should have thrown an error');
+    } catch (err) {
+      expect(err).to.have.property('statusCode', 412);
+      expect(err.message).to.match(/precondition failed/i);
+    }
+  })
+  // ...
+})
+// ...
+```
+```js
+// the controller
+import 'HttpErrors' from '@loopback/rest'
+
+class HelloController {
+  constructor() {
+    this.messages = new Repository('messages');
+  }
+  @get('/messages')
+  @param.query.number('limit')
+  list(limit = 10)
+    if (limit < 1)
+      throw new HttpErrors.PreconditionFailed('limit is non-positive');
+    else if (limit > 100)
+      limit = 100; // your logic
+    return this.messages.find({limit});
+  }
+}
+```
