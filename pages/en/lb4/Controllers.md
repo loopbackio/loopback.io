@@ -159,49 +159,62 @@ class HelloController {
 
 ## Handling Errors in Controllers
 
-In order to specify errors for controller methods to throw, the class `HttpErrors` is used. `HttpErrors` can be found in the `@loopback/rest` package.
+In order to specify errors for controller methods to throw, the class `HttpErrors` is used. `HttpErrors` is a class that has been re-exported from [http-errors](https://www.npmjs.com/package/http-errors), and can be found in the `@loopback/rest` package.
+
+Listed below are some of the most common error codes. The full list of supported codes is found [here](https://github.com/jshttp/http-errors#list-of-all-constructors).
+|Status Code|Error                |
+|-----------|---------------------|
+|400        |BadRequest           |
+|401        |Unauthorized         |
+|403        |Forbidden            |
+|404        |NotFound             |
+|500        |InternalServerError  |
+|502        |BadGateway           |
+|503        |ServiceUnavailable   |
+|504        |GatewayTimeout       |
 
 The example below shows how `HttpErrors` can be used inside a controller method and how it can be tested.
 
 ```js
 // the test
-import {HelloController} from 'path.to.controller'
-import {expect} from '@loopback/testlab'
-// ...
+import {HelloController} from 'path.to.controller';
+import {HttpErrors, expect} from '@loopback/testlab';
 
-// ...
 describe('Hello Controller', () => {
-  // ...
-  it('returns 412 Precondition Failed for non-positive limit', () => {
+  it('returns 422 Unprocessable Entity for non-positive limit', () => {
     const controller = new HelloController();
+    var errCaught: HttpErrors;
     try {
-      controller.list(0);
-      throw new Error('should have thrown an error');
+      controller.list(0.4); // an HttpError should be thrown here
     } catch (err) {
-      expect(err).to.have.property('statusCode', 412);
-      expect(err.message).to.match(/precondition failed/i);
+      errCaught = err;
     }
+    // the test fails here if the error was not thrown
+    expect(errCaught).to.have.property('statusCode', 422);
+    expect(errCaught.message).to.match(/unprocessable entity/i);
   })
-  // ...
 })
-// ...
 ```
 ```js
 // the controller
-import 'HttpErrors' from '@loopback/rest'
+import 'HttpErrors' from '@loopback/rest';
+import 'HelloRepostory' from 'path.to.repository';
+import 'HelloMessage' from 'path.to.type';
 
 class HelloController {
   constructor() {
-    this.messages = new Repository('messages');
+    this.repository = new HelloRepository(); // our repository
   }
   @get('/messages')
   @param.query.number('limit')
-  list(limit = 10)
-    if (limit < 1)
-      throw new HttpErrors.PreconditionFailed('limit is non-positive');
+  async list(limit = 10): Promise<HelloMessage[]>{ // returns a list of our objects
+    // throw an error when the parameter is not a non-positive integer
+    if (limit < 1 || Math.floor(limit) !== limit)
+      Promise.resolve(
+        new HttpErrors.UnprocessableEntity('limit is non-positive'));
     else if (limit > 100)
-      limit = 100; // your logic
-    return this.messages.find({limit});
+      limit = 100;
+    return await this.repository.find({limit});
   }
 }
 ```

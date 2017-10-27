@@ -1036,6 +1036,8 @@ export class ProductController {
 }
 ```
 
+More information on `HttpErrors` can be found in [Controllers](./Controllers.html#handling-errors-in-controllers)
+
 ### Implement a custom Sequence
 
 LoopBack 3.x is using Express middleware to customize the sequence of actions executed to handle an incoming request: body-parser middleware is converting the request body from JSON to a JavaScript object, strong-error-handler is creating an error response when the request failed.
