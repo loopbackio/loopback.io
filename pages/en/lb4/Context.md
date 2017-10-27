@@ -14,7 +14,7 @@ summary:
 - Context is what LoopBack uses to "manage" everything.
 - A global registry for anything/everything in your app (all configs, state,
 dependencies, classes, etc).
-- An An [inversion of control](https://en.wikipedia.org/wiki/Inversion_of_control) container used to inject dependencies into your code. container used to inject dependencies into your code.
+- An [inversion of control](https://en.wikipedia.org/wiki/Inversion_of_control) container used to inject dependencies into your code. container used to inject dependencies into your code.
 
 ### Why is it important?
 
