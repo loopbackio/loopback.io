@@ -187,7 +187,7 @@ import {HttpErrors, expect} from '@loopback/testlab';
 describe('Hello Controller', () => {
   it('returns 422 Unprocessable Entity for non-positive limit', async () => {
     const controller = new HelloController();
-    var errCaught: HttpErrors;
+    let errCaught: Error;
     try {
       await controller.list(0.4); // an HttpError should be thrown here
     } catch (err) {
@@ -195,9 +195,9 @@ describe('Hello Controller', () => {
     }
     // the test fails here if the error was not thrown
     expect(errCaught).to.have.property('statusCode', 422);
-    expect(errCaught.message).to.match(/unprocessable entity/i);
-  })
-})
+    expect(errCaught.message).to.match(/non-positive/i);
+  });
+});
 ```
 ```js
 // the controller
@@ -206,6 +206,7 @@ import 'HelloRepostory' from 'path.to.repository';
 import 'HelloMessage' from 'path.to.type';
 
 class HelloController {
+  repository: HelloRepository; // see Dependency Injection for a better practice
   constructor() {
     this.repository = new HelloRepository();
   }
@@ -214,8 +215,7 @@ class HelloController {
   async list(limit = 10): Promise<HelloMessage[]>{
     // throw an error when the parameter is not a non-positive integer
     if (!Number.isInteger(limit) || limit < 1)
-      Promise.resolve(
-        new HttpErrors.UnprocessableEntity('limit is non-positive'));
+      throw new HttpErrors.UnprocessableEntity('limit is non-positive'));
     else if (limit > 100)
       limit = 100;
     return await this.repository.find({limit});
