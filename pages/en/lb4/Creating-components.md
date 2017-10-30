@@ -228,6 +228,66 @@ export class AuthenticationProvider {
 }
 ```
 
+## Extends Application with Mixin
+
+When binding a component to an app, you may want to extend the app with the component's 
+properties and methods. 
+This can be achieved by using mixins. 
+
+If you are not familiar with the mixin concept, check [Mixin](Mixin.htm) to learn more.
+
+An example of how a mixin leverages component would be `RepositoryMixin`:
+Suppose an app has multiple components with repositories bound to each of them, 
+you can use function `RepositoryMixin` to mount those repositories to application level context.
+
+The following snippet is an abbreviated function 
+[`RepositoryMixin`](https://github.com/strongloop/loopback-next/blob/master/packages/repository/src/repository-mixin.ts):
+
+{% include code-caption.html content="mixins/src/repository-mixin.ts" %}
+```js
+export function RepositoryMixin<T extends Class<any>>(superClass: T) {
+  return class extends superClass {
+    constructor(...args: any[]) {
+      super(...args);
+      ... ...
+      // detect components attached to the app
+      if (this.options.components) {
+        for (const component of this.options.components) {
+          this.mountComponentRepository(component);
+        }
+      }
+    }
+  }
+  mountComponentRepository(component: Class<any>) {
+    const componentKey = `components.${component.name}`;
+    const compInstance = this.getSync(componentKey);
+
+    // register a component's repositories in the app
+    if (compInstance.repositories) {
+      for (const repo of compInstance.repositories) {
+        this.repository(repo);
+      }
+    }
+  }
+}
+```
+
+Then you can extend the app with repositories in a component:
+
+{% include code-caption.html content="index.ts" %}
+
+```js
+import {RepositoryMixin} from 'mixins/src/repository-mixin';
+import {Application} from '@loopback/core';
+import {FooComponent} from 'components/src/Foo';
+
+class AppWithRepoMixin extends RepositoryMixin(Application) {};
+let app = new AppWithRepoMixin({components: [FooComponent]});
+
+// `app.find` returns all repositories in FooComponent
+app.find('repositories.*');
+```
+
 ## Configuring components
 
 More often than not, the component may want to offer different value providers depending on the configuration. For example, a component providing Email API may offer different transports (stub, SMTP, etc.).
