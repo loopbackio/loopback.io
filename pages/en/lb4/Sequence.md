@@ -64,15 +64,15 @@ class DefaultSequence {
 
 In the example above, `route`, `params`, and `result` are all Elements. When building sequences, you use LoopBack Elements to respond to a request:
 
-- [`Route`](http://apidocs.strongloop.com/loopback-next/Routes) // missing API docs link
-- [`Request`](http://apidocs.strongloop.com/loopback-next/Request) // missing API docs link
-- [`Response`](http://apidocs.strongloop.com/loopback-next/Response) // missing API docs link
-- [`OperationRetVal`](http://apidocs.strongloop.com/loopback-next/OperationRetVal) // missing API docs link
-- [`Params`](http://apidocs.strongloop.com/loopback-next/Params) // missing API docs link
-- [`OpenAPISpec`](http://apidocs.strongloop.com/loopback-next/OpenAPISpec) // missing API docs link
-- [`OperationError`](http://apidocs.strongloop.com/loopback-next/OperationError) // (TBD) missing API docs link
-- [`OperationMeta`](http://apidocs.strongloop.com/loopback-next/OperationMeta) // (TBD) missing API docs link
-- [`OperationRetMeta`](http://apidocs.strongloop.com/loopback-next/OperationRetMeta) // (TBD) missing API docs link
+- [`Route`](http://apidocs.loopback.io/@loopback%2frest/#Route)
+- [`Request`](http://apidocs.strongloop.com/loopback-next/)  - (TBD) missing API docs link
+- [`Response`](http://apidocs.strongloop.com/loopback-next/) - (TBD) missing API docs link
+- [`OperationRetVal`](http://apidocs.loopback.io/@loopback%2frest/#OperationRetval)
+- [`Params`](http://apidocs.strongloop.com/loopback-next/) - (TBD) missing API docs link
+- [`OpenAPISpec`](http://apidocs.loopback.io/@loopback%2fopenapi-spec/)
+- [`OperationError`](http://apidocs.strongloop.com/loopback-next/OperationError) - (TBD) missing API docs link
+- [`OperationMeta`](http://apidocs.strongloop.com/loopback-next/OperationMeta) - (TBD) missing API docs link
+- [`OperationRetMeta`](http://apidocs.strongloop.com/loopback-next/OperationRetMeta) - (TBD) missing API docs link
 
 ## Actions
 
