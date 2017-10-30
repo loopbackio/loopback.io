@@ -63,11 +63,11 @@ LoopBack v4 is moving to the well-known Model-(View-)Controller pattern, where t
 | Model Remoting        | JavaScript/JSON remoting metadata is used to describe method signatures and their mapping to REST/HTTP<br>Swagger specs are generated after the fact                  | Remoting metadata can be supplied by OpenAPI JSON/YAML documents or TypeScript decorators |
 | API Spec              | Swagger 2.0                                    | Swagger 2.0 and OpenAPI Spec 3.0, potentially other forms such as gRPC or GraphQL |
 | API Explorer          | Built-in UI based on swagger-ui (/explorer)            |  (Beta) Expose Swagger/OpenAPI specs and a browser redirect to editor.swagger.io          |
-| DataSource            |               |            |
-| Connector             |              |            |
-| Mixin                 | Use a utility to add methods from the mixin to the target model class | Use class extend            |
+| DataSource            | JSON and JS              |  Same as 3.x          |
+| Connector             | Plain JS             |  JS and TypeScript          |
+| Mixin                 | Use a utility to add methods from the mixin to the target model class | Use ES2015 mixin classes pattern supported by [TypeScript 2.2 and above](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-2-2.html)           |
 | Middleware            | Express middleware with phase-based registration and ordering | Sequence consists of actions            |
-| Remote hooks          | Before/After hooks for remote methods             | Controller-level sequnce/actions            |
+| Remote hooks          | Before/After hooks for remote methods             | Controller-level sequence/actions            |
 | Boot script           | Scripts to be invoked during bootstrapping             |  (TBD)          |
 | CRUD operation hooks  | Hooks for CRUD operations             |            |
 | Built-in models       | Built-in User/AccessToken/Application/ACL/Role/RoleMapping for AAA       | (TBD)           |
@@ -110,5 +110,7 @@ The initial beta release provides a preview for API developers. Currently, the L
 
 ## Tentative roadmap 
 
-- Provide a link to the roadmap
+> Disclaimer: The release plan is tentative and it's subject to changes as the core team and community contributors make progress incrementally. 
+
+- https://github.com/strongloop/loopback-next/wiki/Upcoming-Releases
 
