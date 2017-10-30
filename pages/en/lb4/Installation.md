@@ -29,7 +29,7 @@ To get started with LoopBack 4, install the following:
 
 
 {% include tip.html content="
-You're installing `typescript` globally as a shortcut to get you started quickly,
+You're installing these modules globally as a shortcut to get you started quickly,
 but it's not considered a best practice with Node.js.
 
 Instead, a project should list build tool dependencies in `package.json` and provide scripts like `npm run build` to invoke them. This is possible because when npm invokes a package script, it automatically adds development dependencies to the project.
