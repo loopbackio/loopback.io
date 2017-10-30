@@ -92,8 +92,8 @@ Now `package.json` should include these dependencies (you may see different vers
 
 **To continue, follow one of these procedures**:
 
-- [JavaScript project](#javascript-project)
-- [TypeScript project](#typescript-project)
+- [JavaScript project](#try-a-javascript-project)
+- [TypeScript project](#try-a-typescript-project)
 
 ## Try a JavaScript project
 
