@@ -21,6 +21,13 @@ To get started with LoopBack 4, install the following:
 
    This installs the TypeScript compiler command, `tsc`.
 
+  ```
+  $ npm i -g ts-node
+  ```
+
+   This installs the TypeScript execution environment command for node, `ts-node`
+
+
 {% include tip.html content="
 You're installing `typescript` globally as a shortcut to get you started quickly,
 but it's not considered a best practice with Node.js.
