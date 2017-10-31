@@ -97,9 +97,9 @@ The results of method calls are cached internally and available via later synchr
     </tr>
     <tr>
       <td>
-        <pre>order.customer(function(err, customer) {<br>  ...<br>});</pre>
+        <pre>order.customer([filter], function(err, customer) {<br>  ...<br>});</pre>
       </td>
-      <td>Get the customer for the order asynchronously</td>
+      <td>Get the customer for the order asynchronously, optionally using provided [filter]</td>
     </tr>
     <tr>
       <td>
