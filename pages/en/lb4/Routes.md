@@ -37,32 +37,12 @@ In the example above, `name` is a Parameter. Parameters are values, usually pars
 
 ## Creating REST Routes
 
-The example below defines a `Route` that will be matched for `GET /`. When the `Route` is matched, the `greet` Operation (above) will be called. It accepts an OpenAPI [OperationObject](https://github.com/OAI/OpenAPI-Specification/blob/0e51e2a1b2d668f434e44e5818a0cdad1be090b4/versions/2.0.md#operationObject) which is defined using `spec`.
-The route is then attached to a valid server context running underneath the
-application.
-```js
-const app = new Application();
+There are three distinct approaches for defining your REST Routes:
+- With an OpenAPI specification object
+- Using partial OpenAPI spec fragments with the `Route` constructor
+- Using route decorators on controller methods
 
-const spec = {
-  parameters: [{name: 'name', in: 'query', type: 'string'}],
-  responses: {
-    '200': {
-      description: 'greeting text',
-      schema: {type: 'string'},
-    }
-  }
-};
-
-(async function start() {
-  const server = await app.getServer(RestServer);
-  const route = new Route('get', '/', spec, greet);
-  server.route(route);
-  await app.start();
-})();
-
-```
-
-## Declaring REST Routes with API specifications
+### Declaring REST Routes with API specifications
 
 Below is an example [Open API Specification](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/2.0.md#swagger-object) that defines the same operation as the example above. This a declarative approach to defining operations. The `x-operation` field in the example below references the handler JavaScript function for the API operation, and should not be confused with `x-operation-name`, which is a string for the Controller method name.
 
@@ -88,6 +68,87 @@ const spec = {
 };
 
 server.api(spec);
+```
+
+### Using partial OpenAPI spec fragments
+
+The example below defines a `Route` that will be matched for `GET /`. When the `Route` is matched, the `greet` Operation (above) will be called. It accepts an OpenAPI [OperationObject](https://github.com/OAI/OpenAPI-Specification/blob/0e51e2a1b2d668f434e44e5818a0cdad1be090b4/versions/2.0.md#operationObject) which is defined using `spec`.
+The route is then attached to a valid server context running underneath the
+application.
+```ts
+import {Application} from '@loopback/core';
+import {RestServer, Route, RestComponent} from '@loopback/rest';
+import {OperationObject} from '@loopback/openapi-spec';
+
+const app = new Application({
+  components: [RestComponent]
+});
+const spec: OperationObject = {
+  parameters: [{name: 'name', in: 'query', type: 'string'}],
+  responses: {
+    '200': {
+      description: 'greeting text',
+      schema: {type: 'string'}
+    }
+  }
+};
+
+// greet is a basic operation
+function greet(name: string) {
+  return `hello ${name}`;
+}
+
+(async function start() {
+  const server = await app.getServer(RestServer);
+  const route = new Route('get', '/', spec, greet);
+  server.route(route);
+  await app.start();
+})();
+```
+
+### Using Route decorators with controller methods
+
+You can decorate your controller functions using the verb decorator functions
+within `@loopback/rest` to determine which routes they will handle.
+
+{% include code-caption.html content="/src/controllers/greet.controller.ts" %}
+```ts
+import { get, param } from '@loopback/rest';
+
+export class GreetController {
+  // Note that we can still use OperationObject fragments with the
+  // route decorators for fine-tuning their definitions and behaviours.
+  // This could simply be `@get('/')`, if desired.
+  @get('/', {
+    responses: {
+      '200': {
+        description: 'greeting text',
+        schema: { type: 'string' }
+      }
+    }
+  })
+  @param.query.string('name')
+  greet(name: string) {
+    return `hello ${name}`;
+  }
+}
+```
+
+{% include code-caption.html content="index.ts" %}
+```ts
+import { Application } from '@loopback/core';
+import { RestComponent } from '@loopback/rest';
+import { GreetController } from './src/controllers/greet.controller';
+
+const app = new Application({
+  components: [RestComponent]
+});
+
+app.controller(GreetController);
+
+(async function start() {
+  await app.start();
+})();
 ```
 
 ## Invoking operations using Routes
