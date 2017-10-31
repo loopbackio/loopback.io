@@ -1021,7 +1021,7 @@ Then fix `getDetails` implementation:
 
 ```ts
 // ...
-import {HttpErrors} from '@loopback/core';
+import {HttpErrors} from '@loopback/rest';
 
 export class ProductController {
   // ...
@@ -1035,6 +1035,8 @@ export class ProductController {
   }
 }
 ```
+
+More information on `HttpErrors` can be found in [Controllers](./Controllers.html#handling-errors-in-controllers)
 
 ### Implement a custom Sequence
 

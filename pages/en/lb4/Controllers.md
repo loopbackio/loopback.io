@@ -140,19 +140,85 @@ app.controller(MyController);
 Below is an example Controller that uses several built in helpers (decorators). These helpers give LoopBack hints about the Controller methods.
 
 ```js
+import 'HelloRepostory' from 'path.to.repository';
+import 'HelloMessage' from 'path.to.type';
+
 class HelloController {
   constructor() {
-    this.messages = new Repository('messages');
+    this.repository = new HelloRepository(); // our repository
   }
   @get('/messages')
   @param.query.number('limit')
-  list(limit = 10) {
+  async list(limit = 10): Promise<HelloMessage[]> { // returns a list of our objects
     if (limit > 100) limit = 100; // your logic
-    return this.messages.find({limit});
+    return await this.repository.find({limit}); // a CRUD method from our repository
   }
 }
 ```
 
-- A `Repository` is LoopBack's database abstraction. See [Repositories](Repositories.html) for more.
+- `HelloRepository` extends from `Repository`, which is LoopBack's database abstraction. See [Repositories](Reositories.html) for more.
+- `HelloMessage` is the arbitrary object that `list` returns a list of.
 - `@get('/messages')` creates the `Route` for the Operation using `app.route()`.
 - `@param.query.number` adds a `number` param with a source of `query`.
+
+## Handling Errors in Controllers
+
+In order to specify errors for controller methods to throw, the class `HttpErrors` is used. `HttpErrors` is a class that has been re-exported from [http-errors](https://www.npmjs.com/package/http-errors), and can be found in the `@loopback/rest` package.
+
+Listed below are some of the most common error codes. The full list of supported codes is found [here](https://github.com/jshttp/http-errors#list-of-all-constructors).
+|Status Code|Error                |
+|-----------|---------------------|
+|400        |BadRequest           |
+|401        |Unauthorized         |
+|403        |Forbidden            |
+|404        |NotFound             |
+|500        |InternalServerError  |
+|502        |BadGateway           |
+|503        |ServiceUnavailable   |
+|504        |GatewayTimeout       |
+
+The example below shows the previous controller revamped with `HttpErrors` along with a test to verify that the error is thrown properly.
+
+```js
+// the test
+import {HelloController} from 'path.to.controller';
+import {HttpErrors, expect} from '@loopback/testlab';
+
+describe('Hello Controller', () => {
+  it('returns 422 Unprocessable Entity for non-positive limit', async () => {
+    const controller = new HelloController();
+    let errCaught: Error;
+    try {
+      await controller.list(0.4); // an HttpError should be thrown here
+    } catch (err) {
+      errCaught = err;
+    }
+    // the test fails here if the error was not thrown
+    expect(errCaught).to.have.property('statusCode', 422);
+    expect(errCaught.message).to.match(/non-positive/i);
+  });
+});
+```
+```js
+// the controller
+import 'HttpErrors' from '@loopback/rest';
+import 'HelloRepostory' from 'path.to.repository';
+import 'HelloMessage' from 'path.to.type';
+
+class HelloController {
+  repository: HelloRepository; // see Dependency Injection for a better practice
+  constructor() {
+    this.repository = new HelloRepository();
+  }
+  @get('/messages')
+  @param.query.number('limit')
+  async list(limit = 10): Promise<HelloMessage[]>{
+    // throw an error when the parameter is not a non-positive integer
+    if (!Number.isInteger(limit) || limit < 1)
+      throw new HttpErrors.UnprocessableEntity('limit is non-positive'));
+    else if (limit > 100)
+      limit = 100;
+    return await this.repository.find({limit});
+  }
+}
+```
