@@ -156,7 +156,7 @@ class HelloController {
 }
 ```
 
-- `HelloRepository` extends from `Repository`, which is LoopBack's database abstraction. See [Repositories](Reositories.html) for more.
+- `HelloRepository` extends from `Repository`, which is LoopBack's database abstraction. See [Repositories](./Repositories.html) for more.
 - `HelloMessage` is the arbitrary object that `list` returns a list of.
 - `@get('/messages')` creates the `Route` for the Operation using `app.route()`.
 - `@param.query.number` adds a `number` param with a source of `query`.
@@ -166,6 +166,7 @@ class HelloController {
 In order to specify errors for controller methods to throw, the class `HttpErrors` is used. `HttpErrors` is a class that has been re-exported from [http-errors](https://www.npmjs.com/package/http-errors), and can be found in the `@loopback/rest` package.
 
 Listed below are some of the most common error codes. The full list of supported codes is found [here](https://github.com/jshttp/http-errors#list-of-all-constructors).
+
 |Status Code|Error                |
 |-----------|---------------------|
 |400        |BadRequest           |
