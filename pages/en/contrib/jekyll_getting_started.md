@@ -87,7 +87,7 @@ Note that your sidebar can only have 2 levels. Given that each product has its o
 {% include note.html content="Note that each level must have at least one topic before the next level starts. You can't have a second level that contains multiple third levels without having at least one standalone topic in the second level.
 " %}
 
-For more detail on the sidebar, see [Sidebar navigation][sidebar_navigation.html.
+For more detail on the sidebar, see [Sidebar navigation](sidebar_navigation.html).
 
 ## Sidebar syntax
 

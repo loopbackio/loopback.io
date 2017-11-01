@@ -21,7 +21,7 @@ For information on contributing to translations in languages other than English,
 
 Follow these steps:
 
-1. Click on **Edit this page** (bottom of page) to fork the repo.
+1. Click on **Edit this page** (top of page) to fork the repo.
 1. Edit the page or pages as needed.
 1. Commit to your fork/branch.
 1. Open a PR for your changes.  If there is an associated issue, please reference it in your PR.
@@ -42,7 +42,7 @@ We use GitHub issues to track tasks and bugs.  In general:
 
 For general guidelines on creating issues, see [Reporting issues](Reporting-issues.html).
 
-It's best practice to search first to make sure someone else hasn't already logged your issue.
+It is best practice to search first to make sure someone else hasn't already logged your issue.
 Run these helpful GitHub queries to see open documentation issues:
 
 - [Open documentation issues](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3Adoc+org%3Astrongloop+) in any strongloop repository.
