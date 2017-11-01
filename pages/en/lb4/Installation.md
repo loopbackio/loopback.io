@@ -8,28 +8,38 @@ permalink: /doc/en/lb4/Installation.html
 summary:
 ---
 
-## Prerequisite: Node.js
+## Prerequisite: install Node.js
 
 To get started with LoopBack 4, install Node.js:
   - **Recommended**: [Version 8.x](https://nodejs.org/en/download/current/): The latest/current version.
   - [Version 6.x](https://nodejs.org/en/download/): The long-term support (LTS) version.
 
-## Install dependencies
+## Install TypeScript
 
-{% include note.html content="If you're just learning LoopBack 4, **go straight to [Getting started](Getting-started.html)** to learn how to set up a LoopBack 4 project.
-This section outlines the general requirements to use LoopBack 4 with a project.
+To use LoopBack 4 in a project, make sure you're in your project root (use the command `$ cd <my-project-root>`), then install [TypeScript](https://www.typescriptlang.org/index.html#download-links) (version 2 or higher) as a project dependency:
+
+```
+$ npm i -s typescript
+```
+
+## Install LoopBack core package
+
+All LoopBack 4 projects require at least [LoopBack 4 core](https://www.npmjs.com/package/@loopback/core).
+Install it with the following command:
+
+```
+$ npm i -s @loopback/core
+```
+
+{% include tip.html content="The `@loopback/core` package is the bare minimum; depending on your project's requirements, you may need to install other LoopBack packages.  See [Getting started](Getting-started.html) for an example.
 " %}
 
-To use LoopBack 4 in a project, make sure you're in your project root (use the command `$ cd <my-project-root>`), then install the following packages as dependencies:
-
-- [TypeScript](https://www.typescriptlang.org/index.html#download-links) version 2 or higher:
-
-  ```
-  $ npm i -s typescript
-  ```
-
-- [TypeScript Node](https://www.npmjs.com/package/ts-node) version 3 or higher:
-
-  ```
-  $ npm i -s ts-node
-  ```
+Now `package.json` should include these dependencies (you may see different version numbers):
+```
+...
+"dependencies": {
+  "@loopback/core": "^4.0.0-alpha.16",
+  "typescript": "^2.5.3"
+}
+...
+```
