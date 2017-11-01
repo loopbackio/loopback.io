@@ -66,6 +66,12 @@ The file will then contain the following:
 
 Now you're going to use npm to add some project dependencies:
 
+- [TypeScript](https://www.typescriptlang.org/index.html#download-links) version 2 or higher:
+
+  ```
+  $ npm i -s typescript
+  ```
+  
 - [TypeScript Node](https://www.npmjs.com/package/ts-node) version 3 or higher:
 
   ```

@@ -8,29 +8,28 @@ permalink: /doc/en/lb4/Installation.html
 summary:
 ---
 
-To get started with LoopBack 4, install the following:
+## Prerequisite: Node.js
 
-- Node.js, either:
+To get started with LoopBack 4, install Node.js:
   - **Recommended**: [Version 8.x](https://nodejs.org/en/download/current/): The latest/current version.
   - [Version 6.x](https://nodejs.org/en/download/): The long-term support (LTS) version.
+
+## Install dependencies
+
+{% include note.html content="If you're just learning LoopBack 4, **go straight to [Getting started](Getting-started.html)** to learn how to set up a LoopBack 4 project.
+This section outlines the general requirements to use LoopBack 4 with a project.
+" %}
+
+To use LoopBack 4 in a project, make sure you're in your project root (use the command `$ cd <my-project-root>`), then install the following packages as dependencies:
+
 - [TypeScript](https://www.typescriptlang.org/index.html#download-links) version 2 or higher:
 
   ```
-  $ npm i -g typescript
+  $ npm i -s typescript
   ```
 
-   This installs the TypeScript compiler command, `tsc`.
+- [TypeScript Node](https://www.npmjs.com/package/ts-node) version 3 or higher:
 
   ```
-  $ npm i -g ts-node
+  $ npm i -s ts-node
   ```
-
-   This installs the TypeScript execution environment command for node, `ts-node`
-
-
-{% include tip.html content="
-You're installing these modules globally as a shortcut to get you started quickly,
-but it's not considered a best practice with Node.js.
-
-Instead, a project should list build tool dependencies in `package.json` and provide scripts like `npm run build` to invoke them. This is possible because when npm invokes a package script, it automatically adds development dependencies to the project.
-" %}
