@@ -2,17 +2,18 @@
 lang: en
 title: Examples and tutorials
 keywords: LoopBack 4.0
-tags:
+tags: LoopBack4
 sidebar: lb4_sidebar
 permalink: /doc/en/lb4/Examples-and-tutorials.html
 summary:
 ---
 
-Currently, there are two main examples:
-- "Hello World" - [loopback-next-hello-world](https://github.com/strongloop/loopback-next-hello-world).  Ultimately, this will have an accompanying tutorial to help introduce developers to LB-next.
-- [loopback-next-example](https://github.com/strongloop/loopback-next-example). This will demonstrate how to design your infrastructure using a microservices with LoopBack-next
+The LoopBack 4 examples are:
+- [Hello world example](LoopBack4-Hello-World.html) - The most basic LoopBack 4 app. Ultimately, this will have an accompanying tutorial to help introduce developers to LoopBack 4.
+- [Microservice example](LoopBack4-microservice-example.html) - Demonstrates how to create microservices with LoopBack 4.
+- [Extension starter example](LoopBack4-extension-starter.html) - Demonstrates how to make a LoopBack component / extension.
 
-**Tutorials**
+Tutorials:
 - [Testing Your Application](Testing-your-application.html)
 
 Not yet created:
