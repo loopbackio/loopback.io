@@ -36,8 +36,8 @@ topnav_dropdowns:
           external_url: https://gitter.im/strongloop/loopback
         - title: LoopBack on Stack Overflow
           external_url: http://stackoverflow.com/questions/tagged/loopbackjs
-        - title: StrongLoop Blog
-          external_url: https://strongloop.com/strongblog/category/loopback-2/
+        - title: StrongLoop Blog - LoopBack
+          external_url: https://strongloop.com/strongblog/tag_LoopBack.html
     - title: Translations
       folderitems:
         - title: "Español (v2)"
