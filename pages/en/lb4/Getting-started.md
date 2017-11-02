@@ -9,17 +9,19 @@ summary: Write and run a LoopBack 4 "Hello World" project in JavaScript and Type
 ---
 ## Prerequisites
 
-Follow the instructions in [Installation](Installation.html) to install the prerequisites for a LoopBack 4 project.
+Make sure you've installed Node.js, as explained in [Installation](Installation.html).
+
+## Create a new project
 
 With LoopBack 4 you can code in JavaScript or TypeScript.  In either case, do the following:
 
-1. Create a new directory called `lb4-hello-world` and make that your current directory:
-```
-$ mkdir lb4-hello-world
-$ cd lb4-hello-world
-```
-1. [Use npm to create a `package.json` file](#use-npm-to-create-packagejson), following the instructions below.
-1. [Install project dependencies.](#install-project-dependencies).
+1. Create a new directory called `lb4-hello-world` and make it your current directory:
+    ```
+    $ mkdir lb4-hello-world
+    $ cd lb4-hello-world
+    ```
+1. Use npm to create a `package.json` file; follow the steps below.
+1. Install project dependencies `typescript` and `@loopback/core`; follow the steps below.
 
 ### Use npm to create `package.json`
 
@@ -64,6 +66,8 @@ The file will then contain the following:
   "license": "ISC"
 }
 ```
+
+{% include_relative includes/lb4_install.md %}
 
 ### Next steps
 
@@ -188,7 +192,7 @@ You should see "Hello world!" written to the console.
 
 ### Optional: edit package.json
 
-{% include tip.html content= "It's a best practice to put define your build and run commands
+{% include tip.html content= "It's a best practice to define your build and run commands
 in `package.json` to standardize the commands used.  For a simple project like this, though
 it's optional.
 " %}
@@ -217,17 +221,6 @@ This example builds on the basic "Hello world" example with an `Application` and
 {% include note.html content= "This section assumes you've already created the
 [basic TypeScript project](#try-a-typescript-project).
 " %}
-
-### Install LoopBack REST package
-
-Install the LoopBack REST package with npm by entering this command:
-
-```js
-npm i -s @loopback/rest
-```
-
-This adds the `@types/rest` package to the `dependencies` property of `package.json`.
-
 
 ### Install Node type definitions package
 
@@ -282,12 +275,13 @@ Edit `tsconfig.json` as follows:
 
 ### Build and run the project
 
-
 Build the project by entering this command:
 
 ```
 $ ./node_modules/typescript/bin/tsc
 ```
+
+This command compiles the TypeScript in `index.ts` to JavaScript in `index.js`.
 
 If you [added the build command to `package.json`](#optional-edit-packagejson), you can use the command `npm run-script build`.
 
