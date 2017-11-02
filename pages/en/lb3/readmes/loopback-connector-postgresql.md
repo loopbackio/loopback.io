@@ -369,6 +369,37 @@ See [LoopBack types](http://loopback.io/doc/en/lb3/LoopBack-types.html) for de
 
 For details, see the corresponding [driver issue](https://github.com/brianc/node-pg-types/issues/28).
 
+## Querying JSON fields
+
+**Note** The fields you are querying should be setup to use the JSON postgresql data type - see Defining models
+
+Assuming a model such as this:
+
+```json
+{
+  "name": "Customer",
+  "properties": {
+    "address": {
+      "type": "object",
+      "postgresql": {
+        "dataType": "json"
+      }
+    }
+  }
+}
+```
+
+You can query the nested fields with dot notation:
+
+```javascript
+Customer.find({
+  where: {
+    'address.state': 'California'
+  },
+  order: 'address.city'
+})
+```
+
 ## Discovery and auto-migration
 
 ### Model discovery
