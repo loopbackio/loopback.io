@@ -10,10 +10,19 @@ summary:
 
 Server is a system that enters a working state of doing something by starting it, 
 and exits the working state by stopping it.
+Usually a Server is responsible for interacting with events outside, process incoming things
+and give corresponding responses.
 
 ## Implement a Server
 
-User can extend the context system to implement their own server and integrate it with your app.
+A Server is essencially a Context, see [Context](Context.htm) to learn more before
+you design a Server.
+
+User can extend the context system to implement their own Server and integrate it with their app.
+A Server module contains the following parts:
+
+- a Server Context class
+- a namespace for Context Binding
 
 ### Context Binding
 
@@ -22,8 +31,9 @@ Context, which inherits from the parent Application context. This way,
 any Server-specific bindings will remain local to the Server instance,
 and will avoid polluting its parent module scope.
 
-A server module can export its own Bindings as `namespace` and 
-receive app level config from `coreBindings`:
+A Server module can export its own Bindings as `namespace` and 
+receive app level config from `coreBindings`.
+Let's start with building a server that listen on some event:
 
 {% include code-caption.html content="myServer/src/keys.ts" %}
 ```js
@@ -31,33 +41,40 @@ import {CoreBindings} from '@loopback/core';
 
 export namespace MyServerBindings {
   export const CONFIG = `${CoreBindings.APPLICATION_CONFIG}#myserver`;
-  export const FOO = 'myserver.foo';
+  export const EMITTER_EVENT = 'myserver.emitter.event';
 }
 ```
 
-And the server class extends `Context` from `@loopback/context`.
+### Extend Context Class
+
+The Server class extends `Context` from `@loopback/context`.
 Its constructor takes in an `Application` instance as its parent `Context` and
-a configuration specific to a particular server instance.
+a configuration(optional) specific to a particular server instance.
 
 {% include code-caption.html content="myServer/src/MyServer.ts" %}
 ```js
 import {Context} from '@loopback/context';
 import {Server} from '@loopback/core';
 
-class MyServer extends Context implements Server {
+export class MyServer extends Context implements Server {
   constructor(
     @inject(CoreBindings.APPLICATION_INSTANCE) app: Application,
-    @inject(MyServerBindings.CONFIG) options?: RestServerConfig
+    @inject(MyServerBindings.CONFIG) options?: MyServerConfig
   ) {
     super(app);
   }  
+}
+
+export interface MyServerConfig {
+  x: string;
+  y: number;
 }
 ```
 
 ### Implement Server Functions
 
-You may already notice that the server declaration above also implements a `Server` interface.
-There are two basic functions a server must have:
+You may already notice that the Server declaration above also implements a `Server` interface.
+There are two basic functions a Server must have:
 
 - start()
 - stop()
@@ -69,42 +86,52 @@ and could interact with events from outside.
 
 {% include code-caption.html content="myServer/src/MyServer.ts" %}
 ```js
-import {Context} from '@loopback/context';
-import {Server} from '@loopback/core';
+import {Server, Application, CoreBindings} from '@loopback/core';
+import {Context, inject} from '@loopback/context';
 import * as EventEmitter from 'events';
 
 class MyEmitter extends EventEmitter {}
 
-class MyServer extends Context implements Server {
+export class MyServer extends Context implements Server {
   myEmitter: MyEmitter;
+
   constructor(
-    @inject(CoreBindings.APPLICATION_INSTANCE) app: Application,
-    @inject(MyServerBindings.CONFIG) options?: RestServerConfig
+      @inject(CoreBindings.APPLICATION_INSTANCE) public app: Application
   ) {
     super(app);
+    // an Emitter listen on a certain event whose name is returned by `getEventName()`
     this.myEmitter = new MyEmitter();
-  }  
+  }
+
+  // return the event name
+  async getEventName(): Promise<string> {
+    return await this.get('MyServerBindings.EMITTER_EVENT');
+  }
 
   async start(): Promise<void> {
-    this.myEmitter.on('event', () => {
-      console.log('an event occurred!');
+    console.log('Your server startted!');
+    let eventName = await this.getEventName();
+    // listen on an event and give some response
+    this.myEmitter.on(eventName, () => {
+      console.log('Your server is responding to an event...');
     });
     return Promise.resolve();
   }
 
   async stop(): Promise<void> {
-    this.myEmitter.removeListener('event', ()=>{
-      return Promise.resolve();
-    });
+    let eventName = await this.getEventName();
+    // remove listeners
+    this.myEmitter.removeAllListeners(eventName);
+    console.log('Your server stopped!');
+    return Promise.resolve();
   }
 }
 ```
 
-### Bind a Server
+### Bind a Server to Application
 
-Now you can create a server instance and bind it to your app. 
-When instanciating the `Application`, `start()` and `stop()` will be 
-mounted to `Application` level functions.
+Now you can bind a Server to your Application by calling `this.server()` 
+in the Application constructor.
 
 {% include code-caption.html content="application.ts" %}
 ```js
@@ -119,35 +146,48 @@ export class MyApp extends Application {
 }
 ```
 
-There are several ways to bind a server to an app
+When instanciating `MyApp`, a server instance named `serverFoo` will be 
+bound to the app, `start()` and `stop()` will be mounted to `Application` level functions.
+
+There are several ways to bind a server to an app, the strategy in the example above
+is the most staightforward one:
 
 ```js
-app.server(RestServer, 'nameOfYourServer');
+app.server(MyServer, 'nameOfYourServer');
 ```
 
-Or levarage a component to do it:
+Or you can levarage a component to do it:
 
 ```js
 const app = new MyApplication({
-  components: [RestComponent]
+  components: [MyComponent]
 });
 // OR
-app.component(RestComponent);
+app.component(MyComponent);
 ```
 
-Finally you can start your server/app by:
-(This part needs more clarification about one app with multiple server)
+Please see [Creating components](Creating-components.htm) and our implementation of 
+[RestComponent](https://github.com/strongloop/loopback-next/blob/master/packages/rest/src/rest-component.ts)
+for details.
+
+Finally you can create an app instance, start your app by `app.start()`,
+and stop it by `app.strop()`:
 
 {% include code-caption.html content="index.ts" %}
-```js
+```ts
 import { MyApp } from './src/application';
+import {MyServer} from './src/server/myServer/src/MyServer';
+
 const app = new MyApp();
+const eventName = 'working';
+app.bind('MyServerBindings.EMITTER_EVENT').to(eventName);
+
 app
   .start()
   .then(async () => {
-    const server = await app.getServer('jannyserverFoo');
-    // it doesn't work
-    server.myEmitter.emit('event');
+    // Or `const server = <MyServer> await app.getServer('serverFoo');`
+    const server = await app.getServer(MyServer);
+    setInterval(()=> {server.myEmitter.emit(eventName);}, 500);
   })
   .catch(err => {
     console.error(`Unable to start application: ${err}`);
@@ -162,77 +202,19 @@ process.on('SIGTERM', stopServer);
 process.on('SIGINT', stopServer);
 ```
 
-
-### Create Component
-
-TBD
-
+*Please note, currently each app can only have one server.*
 
 ## REST Server
 
 LoopBack implements a REST HTTP server for you to quickly get REST apis to work.
-By setting up a server, it processes the coming request on its port, 
-invokes the corresponding controller function and sends the returned result as response.
+By setting up a REST server, it processes the coming requests on its port, 
+invokes the corresponding controller functions and sends the returned result as responses.
 
 `start()` runs your server instance on a port to listen on the coming-in requests.
 
 `stop()` kills the server instance, any APIs exposed on that server will not be available.
 
-
-DRAFT, DONNOT READ PLEASE.
-
-
-Topics
-
-- create web server: context, controller, sequence, start, stop
-- create http server: use our sequence
-- relation between server, component, extension, app, controller
-
-
-### Sequence
-
-- elements
-- actions
-
-- findRoute
-- parseParams
-- invoke
-- send
-
-A `Sequence` is a stateless grouping of [Actions](#actions) that control how a
-`Server` responds to requests.
-
-The contract of a `Sequence` is simple: it must produce a response to a request.
-Creating your own `Sequence` gives you full control over how your `Server`
-instances handle requests and responses.
-
-Make sure you use LoopBack elements in your custom sequence
-
-Question: Does soap server fit well with current sequence?
-
-Register sequence to your server:
-
-```js
-import {Application} from '@loopback/core';
-import {RestComponent, RestServer} from '@loopback/rest';
-
-const app = new Application({
-  components: [RestComponent],
-});
-
-// or
-(async function start() {
-  const server = await app.getServer(RestServer);
-  server.sequence(MySequence);
-  await app.start();
-})();
-```
-
-### Controller
-
-
-In order for LoopBack to use your custom sequence, you must register it on any
-applicable `Server` instances before starting your `Application`:
-
-
-
+If you are interested in creating your own Web server by using `Sequence`, `Routing`, 
+and leveraging `Controller`, please see 
+[the implementation of `RestServer`](https://github.com/strongloop/loopback-next/tree/master/packages/rest)
+to learn more.
