@@ -10,8 +10,8 @@ summary:
 
 Server is a system that enters a working state of doing something by starting it, 
 and exits the working state by stopping it.
-Usually a Server is responsible for interacting with events outside, process incoming things
-and give corresponding responses.
+Usually a Server is responsible for interacting with events outside, processing incoming things
+and giving corresponding responses.
 
 ## Implement a Server
 
@@ -73,7 +73,7 @@ export interface MyServerConfig {
 
 ### Implement Server Functions
 
-You may already notice that the Server declaration above also implements a `Server` interface.
+You may have already noticed that the Server declaration above also implements a `Server` interface.
 There are two basic functions a Server must have:
 
 - start()
@@ -171,7 +171,7 @@ Please see [Creating components](Creating-components.htm) and our implementation
 for details.
 
 Finally you can create an app instance, start your app by `app.start()`,
-and stop it by `app.strop()`:
+and stop it by `app.stop()`:
 
 {% include code-caption.html content="index.ts" %}
 ```ts
@@ -206,7 +206,7 @@ process.on('SIGINT', stopServer);
 
 ## REST Server
 
-LoopBack implements a REST HTTP server for you to quickly get REST apis to work.
+LoopBack implements a REST HTTP server for you to quickly get REST APIs to work.
 By setting up a REST server, it processes the coming requests on its port, 
 invokes the corresponding controller functions and sends the returned result as responses.
 
