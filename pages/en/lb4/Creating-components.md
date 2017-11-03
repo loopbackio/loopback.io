@@ -234,7 +234,7 @@ When binding a component to an app, you may want to extend the app with the comp
 properties and methods. 
 This can be achieved by using mixins. 
 
-If you are not familiar with the mixin concept, check [Mixin](Mixin.htm) to learn more.
+If you are not familiar with the mixin concept, check [Mixin](Mixin.html) to learn more.
 
 An example of how a mixin leverages component would be `RepositoryMixin`:
 Suppose an app has multiple components with repositories bound to each of them, 
