@@ -35,6 +35,9 @@ children:
 
   - title: 'Application'
     url: Application.html
+    
+  - title: 'Server'
+    url: Server.html
     output: 'web, pdf'
 
   - title: 'Sequence'
