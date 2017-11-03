@@ -421,9 +421,9 @@ describe('ProductController (integration)', () => {
 
 To be done. The initial beta release does not include Services as a first-class feature.
 
-## Acceptance testing
+## Acceptance (end-to-end) testing
 
-Acceptance tests are considered "black-box" tests because they use an "outside-in" approach that is not concerned about the internals of the system, just simply do the same actions (send the same HTTP requests) as the clients and consumers of your API will do, and verify the results returned by the system under test are matching the expectations.
+Automated acceptance (end-to-end) tests are considered "black-box" tests because they use an "outside-in" approach that is not concerned about the internals of the system, just simply do the same actions (send the same HTTP requests) as the clients and consumers of your API will do, and verify the results returned by the system under test are matching the expectations.
 
 Typically, acceptance tests start the application, make HTTP requests to the server, and verify the returned response. LoopBack uses  [supertest](https://github.com/visionmedia/supertest) to make the test code that executes HTTP requests and verifies responses easier to write and read.
 Remember to follow the best practices from [Data handling](#data-handling) when setting up your database for tests:
