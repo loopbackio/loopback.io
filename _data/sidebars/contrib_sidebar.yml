@@ -49,10 +49,6 @@ children:
     output: web, pdf
     children:
 
-    - title: Conditional logic
-      url: conditional_logic.html
-      output: web, pdf
-
     - title: Content reuse
       url: content_reuse.html
       output: web, pdf
@@ -120,16 +116,8 @@ children:
       url: hyperlinks.html
       output: web, pdf
 
-    - title: Navtabs
-      url: navtabs.html
-      output: web, pdf
-
     - title: Tables
       url: tables.html
-      output: web, pdf
-
-    - title: Syntax highlighting
-      url: syntax_highlighting.html
       output: web, pdf
 
   - title: Special layouts
@@ -143,10 +131,6 @@ children:
 
     - title: Navgroup layout
       url: navgroups.html
-      output: web, pdf
-
-    - title: Glossary layout
-      url: glossary.html
       output: web, pdf
 
     - title: FAQ layout

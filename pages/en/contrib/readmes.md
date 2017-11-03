@@ -1,6 +1,7 @@
 ---
 title: Readme layout
-tags: [formatting, special_layouts]
+lang: en
+tags: [contributing]
 keywords:
 summary: You can easily incorporate README files from other repositories into the documentation.
 sidebar: contrib_sidebar

@@ -1,5 +1,6 @@
 ---
 title: Including READMEs from other repositories
+lang: en
 keywords: LoopBack documentation
 tags: [community, contributing]
 sidebar: contrib_sidebar

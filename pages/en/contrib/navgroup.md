@@ -1,6 +1,7 @@
 ---
 title: Navgroup layout
-tags: [formatting, special_layouts]
+lang: en
+tags: [contributing]
 keywords:
 summary: Use the navgroup layout to group related articles together
 sidebar: contrib_sidebar

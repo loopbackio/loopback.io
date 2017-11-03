@@ -1,24 +1,46 @@
 ---
 title: Images
-tags: [formatting]
+lang: en
+tags: [contributing]
 keywords: images, screenshots, vectors, svg, markdown syntax
-summary: "Store images in the images folder and use the image.html include to insert images. This include has several options, including figcaptions, that extract the content from the formatting."
+summary: "Store images in the images folder and use the image.html template include to insert images. This include has several options, including figcaptions, that extract the content from the formatting."
 sidebar: contrib_sidebar
 permalink: /doc/en/contrib/images.html
-
 ---
 
-## Image Include Template
+## Image folder
 
-Instead of using Markdown or HMTL syntax directly in your page for images, the syntax for images has been extracted out into an image include that allows you to pass the parameters you need. Include the image.html like this:
+All images are kept in the `images` folder.  Because the site content was originally exported from Confluence,
+most of the images are in the top-level and have automatically-generatedd numeric names, for example `4849751.png`.  However, images used in the LoopBack 4 docs are in a sub-folder, `images/lb4`; images used in the "overview" pages are in `images/overview`.  As a best practice, create a new folder for new
+releases (e.g. LoopBack 5, or other projects).
+
+## Using images
+
+You can include images in a page using the standard markdown syntax; for example:
+
+```
+![LoopBack 4 Architecture](/images/lb4/loopback-overview.png "LoopBack 4 Architecture")
+```
+
+The result is:
+
+![LoopBack 4 Architecture](/images/lb4/loopback-overview.png "LoopBack 4 Architecture")
+
+## Image include template
+
+Instead of using Markdown or HMTL syntax directly in your page for images, you can also use the image "include template" that allows you to pass some parameters that provide additional settings. For example:
 
 ```liquid
 {% raw %}
-{% include image.html file="jekyll.png" url="http://jekyllrb.com" alt="Jekyll" caption="This is a sample caption" %"}
+{% include image.html file="loopback_logo.png" url="http://loopback.io" alt="LoopBack" caption="This is a sample caption" %}
 {% endraw %}
 ```
 
-The available include properties are as follows:
+Here's the result:
+
+{% include image.html file="loopback_logo.png" url="http://loopback.io" alt="LoopBack" caption="This is a sample caption" %}
+
+The following table summarizes the image include template properties:
 
 | Property | description |
 |-------|--------|
@@ -29,10 +51,6 @@ The available include properties are as follows:
 | max-width | a maximum width for the image (in pixels). Just specify the number, not px.|
 
 The properties of the include get populated into the image.html template.
-
-Here's the result:
-
-{% include image.html file="loopback_logo.png" url="http://loopback.io" alt="LoopBack" caption="This is a sample caption" %}
 
 ## Inline image includes
 
@@ -89,5 +107,3 @@ The stylesheet even handles SVG display in IE 9 and earlier through the followin
 Also, if you're working with SVG graphics, note that Firefox does not support SVG fonts. In Illustrator, when you do a Save As with your AI file and choose SVG, to preserve your fonts, in the Font section, select "Convert to outline" as the Type (don't choose SVG in the Font section).
 
 Also, remove the check box for "Use textpath element for text on a path". And select "Embed" rather than "Link."
-
-{% include links.html %}

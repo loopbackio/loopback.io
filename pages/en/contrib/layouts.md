@@ -1,7 +1,8 @@
 ---
 title: Layouts
+lang: en
 keywords: LoopBack documentation
-tags: [contributing_to_docs]
+tags: [contributing]
 sidebar: contrib_sidebar
 permalink: /doc/en/contrib/layouts.html
 summary:

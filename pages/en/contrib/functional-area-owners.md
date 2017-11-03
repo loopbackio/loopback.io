@@ -1,5 +1,6 @@
 ---
 title: Functional area owners
+lang: en
 tags: [contributing]
 keywords:
 summary: "List of who oversees each functional area of Loopback"

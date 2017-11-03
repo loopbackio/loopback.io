@@ -1,5 +1,6 @@
 ---
 title: Git Commit Message Guidelines
+lang: en
 tags: [contributing]
 keywords:
 summary: "Follow these guidelines for your Git commit messages."

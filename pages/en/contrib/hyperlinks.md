@@ -1,7 +1,8 @@
 ---
 title: Links
+lang: en
 audience: writer, designer
-tags: [formatting, navigation]
+tags: [contributing]
 keywords: links, hyperlinks, cross references, related links, relationship tables
 summary: "You can use standard HTML or Markdown formatting for links. "
 sidebar: contrib_sidebar

@@ -1,5 +1,6 @@
 ---
 title: Code style guide (2.x/ES5)
+lang: en
 toc: false
 tags: [contributing, community]
 keywords:

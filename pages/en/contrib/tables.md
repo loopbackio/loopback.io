@@ -1,6 +1,7 @@
 ---
 title: Tables
-tags: [formatting]
+lang: en
+tags: [contributing]
 keywords: datatables, tables, grids, markdown, multimarkdown, jquery plugins
 datatable: true
 summary: "You can format tables using either multimarkdown syntax or HTML. You can also use jQuery datatables (a plugin) if you need more robust tables."
@@ -227,5 +228,3 @@ Read more of the [datatable documentation](https://www.datatables.net/manual/opt
 
 {% include note.html content=" Try to keep the columns to 3 or 4 columns only. If you add 5+ columns, your table may create horizontal scrolling with the theme. Additionally, keep the column heading titles short.
 " %}
-
-{% include links.html %}

@@ -1,6 +1,7 @@
 ---
 title: Translating articles
-tags: [translation]
+lang: en
+tags: [translation, contributing]
 keywords: translation, localization
 toc: false
 summary: "Translating an individual article from English is straightforward."

@@ -1,5 +1,6 @@
 ---
 title: Documentation style guide
+lang: en
 keywords: LoopBack documentation
 tags: [community, contributing]
 sidebar: contrib_sidebar

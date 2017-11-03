@@ -1,5 +1,6 @@
 ---
 title: Markdown style guide
+lang: en
 keywords: LoopBack documentation
 tags: [community, contributing]
 sidebar: contrib_sidebar
@@ -43,7 +44,7 @@ Examples:
 ## Headers
 
 - Always put spaces after the hash(es).
-- Only put **one** `<h1>` header in a readme (The Jekyll layout we use (`_layouts/readme.html`) removes *all* `<h1>`s are removed and replaces it with the value of the `title` page property.
+- Only put **one** `<h1>` header in a readme (The Jekyll layout we use (`_layouts/readme.html`) removes *all* `<h1>`s and replaces it with the value of the `title` page property.
 - Precede headers with a blank line.
 
 Examples:
@@ -108,6 +109,11 @@ For example:
 https://this.will.not/create/a/link
 <https://this.WILL.create/a/link>
 ```
+Results in the following:
+
+https://this.will.not/create/a/link
+
+<https://this.WILL.create/a/link>
 
 ## Fenced code blocks
 

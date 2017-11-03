@@ -1,6 +1,7 @@
 ---
 title: Contributing code
-tags: [community, contributing]
+lang: en
+tags: [community, contributing, getting_started]
 keywords: LoopBack, open-source
 summary: "This article explains the process and guidelines for contributing code to the LoopBack project."
 sidebar: contrib_sidebar
@@ -91,7 +92,7 @@ If the example aims at a specific version of LoopBack, then use that number as t
 The `{example_name}` is a few words which briefly describes the functionality of the example,
 and joined with `-`.
 
-For example, we build a quick start example app for LoopBack 4 and name it as 
+For example, we build a quick start example app for LoopBack 4 and name it as
 [`loopback4-example-hello-world`](https://github.com/strongloop/loopback-next-hello-world).
 
 If a test is failing, open an issue on the appropriate repositories GitHub issues page.

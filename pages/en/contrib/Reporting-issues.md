@@ -1,5 +1,6 @@
 ---
 title: Reporting issues
+lang: en
 keywords: LoopBack community
 tags: [community, contributing]
 sidebar: contrib_sidebar

@@ -1,6 +1,7 @@
 ---
 title: Long-term support
-toc: true
+lang: en
+tags: [contributing, community]
 keywords: LoopBack, versioning, long-term support
 sidebar: contrib_sidebar
 permalink: /doc/en/contrib/Long-term-support.html

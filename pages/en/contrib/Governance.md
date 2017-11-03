@@ -1,5 +1,6 @@
 ---
 title: Governance
+lang: en
 keywords: LoopBack community
 tags: [contributing, community]
 sidebar: contrib_sidebar

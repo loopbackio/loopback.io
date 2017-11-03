@@ -1,22 +1,20 @@
 ---
 title: Alerts
-tags: [formatting]
+lang: en
+tags: [contributing]
 keywords: notes, tips, cautions, warnings, admonitions
-summary: "You can insert notes, tips, warnings, and important alerts in your content. These notes make use of Bootstrap styling and are available through data references such as site.data.alerts.note."
+summary: "You can insert notes, tips, warnings, and important alerts in your content. "
 sidebar: contrib_sidebar
 permalink: /doc/en/contrib/alerts.html
 ---
 
 ## About alerts
-Alerts are little warnings, info, or other messages that you have called out in special formatting. In order to use these alerts or callouts, reference the appropriate value stored in the alerts.yml file as described in the following sections.
-
-## Alerts
-
-Similar to [inserting images][images.html]), you insert alerts through various includes that have been developed. These includes provide templates through which you pass parameters to easily populate the right HTML code.
+Alerts are little warnings, info, or other messages that you have called out in special formatting.
+You insert alerts by using special "include" templates; for example:
 
 ```
-{%raw%}{% include note.html content="This is my note. All the content I type here is treated as a single paragraph."
-%}{% endraw%}
+{%raw%}{% include note.html content="This is my note. All the content I type here is treated as a single paragraph.
+" %}{% endraw%}
 ```
 
 Here's the result:
@@ -24,7 +22,17 @@ Here's the result:
 {% include note.html content="This is my note. All the content I type here is treated as a single paragraph.
 " %}
 
-With alerts, there's just one include property, `content`, that contains the content for the alert.
+**IMPORTANT**: Be sure to put the ending <code>&quot; &percnt;&rbrace;</code> on a
+**new line** to make the alert lay out properly.
+
+### Parameters
+
+All alerts have a required `content` parameter that contains the text of the alert.
+
+In addition, the **important** and **note** alerts have an optional `title` parameter that you can
+use to supply a title other than the default "Important" and "Note", respectively.
+
+### Formatting
 
 If you need multiple paragraphs, enter `<br/><br/>` tags. This is because block level tags aren't allowed here, as Kramdown is processing the content as Markdown despite the fact that the content is surrounded by HTML tags. Here's an example with a break:
 
@@ -42,10 +50,10 @@ Here's the result:
 
 There are four types of alerts you can use:
 
-* note.html
-* tip.html
-* warning.html
-* important.html
+- **Note**: `note.html`
+- **Tip**: `tip.html`
+- **Warning**: `warning.html`
+- **Important**: `important.html`
 
 They function the same except they have a different color, icon, and alert word. You include the different types by selecting the include template you want. Here are samples of each alert:
 
@@ -61,7 +69,7 @@ They function the same except they have a different color, icon, and alert word.
 {% include important.html content="This is my important info.
 " %}
 
-These alerts leverage includes stored in the \_include folder. The `content` option is a parameter that you pass to the include. In the include, the parameter is passed like this:
+These alerts leverage includes stored in the `_includes` folder. The `content` option is a parameter that you pass to the include. In the include, the parameter is passed like this:
 
 ```
 {% raw %}<div markdown="span" class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> {{include.content}}{% endraw %}</div>
@@ -71,7 +79,7 @@ The content in `content="This is my note."` gets inserted into the `{% raw %}{{i
 
 ## Use Liquid variables inside parameters with includes
 
-Suppose you have a product name or some other property that you're storing as a variable in your configuration file (\_congfig.yml), and you want to use this variable in the `content` parameter for your alert or callout. You will get an error if you use Liquid syntax inside a include parameter. For example, this syntax will produce an error:
+Suppose you have a product name or some other property that you're storing as a variable in your `_config.yml` configuration file, and you want to use this variable in the `content` parameter for your alert or callout. You will get an error if you use Liquid syntax inside a include parameter. For example, this syntax will produce an error:
 
 ```
 {%raw%}{% include note.html content="The {{site.company}} is pleased to announce an upcoming release." %}{%endraw%}
@@ -85,7 +93,7 @@ Liquid Exception: Invalid syntax for include tag. File contains invalid characte
 
 To use variables in your include parameters, you must use the "variable parameter" approach. First you use a `capture` tag to capture some content. Then you reference this captured tag in your include. Here's an example.
 
-In my site configuration file (\_congfig.yml), I have a property called `company_name`.
+In my site configuration file (`_config.yml`), I have a property called `company_name`.
 
 ```yaml
 company_name: Your company
@@ -122,65 +130,6 @@ You can use Markdown inside of callouts and alerts, even though this content act
 
 NOTE: For LoopBack, we've modified the callouts to have `markdown="1"` so they can take markdown div elements such as bullet lists.
 
-## Other templates
-
-For the LoopBack project, we've added several additional include templates:
-- "See also"
-- "Code caption"
-- "Styled box"
-
-### See also
-
-```
-{%raw%}{% include see-also.html content="This is a right-aligned box where I can add relevant links and the like:
-- [Contributing to LoopBack documentation](index.html)
-- [Authoring pages](pages.html)
-- [Code samples](code_samples.html)
-" %}{% endraw%}
-```
-
-{% include see-also.html content="This is a right-aligned box where you can add relevant links and the like:
-
-- [Contributing to LoopBack documentation](index.html)
-- [Authoring pages](pages.html)
-- [Code samples](code_samples.html)
-" %}
-
-Displays the box shown at right.  Note that sometimes you may need to add `<br clear="all"/>` somewhere in your page
-to make it layout properly with the surrounding content.
-
-If you don't want the "See also" title, then add `title=false` as a parameter.
-
-<br clear="all"/>
-
-### Code caption
-
-Sometimes you want a caption on a code sample, for example to show the file name that contains the code.
-For example:
-
-    {%raw%}{% include code-caption.html content="/common/models/user.json" %}{%endraw%}
-```javascript
-"acls": [{
-  "principalType": "ROLE",
-  "principalId": "$authenticated",
-  "permission": "ALLOW",
-  "property": "count"
-}, {
-...
-```
-
-### Styled box
-
-Puts the content in a highlight box, styled as below.  You can add/change style
-with the `style` parameter.
-
-{% include styled-box.html content="This is some content.  You can even have a bullet list:
-
-- One
-- Two
-- Three
-" %}
-
 ## Validity checking
 
 If you have some of the syntax wrong with an alert or callout, you'll see an error when Jekyll tries to build your site. The error may look like this:
@@ -195,6 +144,4 @@ In this case, the quotation marks aren't set correctly. I forgot the closing quo
 
 ## Blast a warning to users on every page
 
-If you want to blast a warning to users on every page, add the alert or callout to the \_layouts/page.html page right below the frontmatter. Every page using the page layout (all, by defaut) will show this message.
-
-{% include links.html %}
+If you want to blast a warning to users on every page, add the alert or callout to the `_layouts/page.html` page right below the frontmatter. Every page using the page layout (all, by defaut) will show this message.

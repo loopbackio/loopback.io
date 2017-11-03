@@ -1,5 +1,6 @@
 ---
 title: Triaging pull requests
+lang: en
 tags: [contributing]
 toc: false
 keywords:

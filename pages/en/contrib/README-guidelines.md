@@ -1,7 +1,8 @@
 ---
 title: README guidelines
+lang: en
 keywords: READMEs, LoopBack
-tags: [contributing_to_docs]
+tags: [contributing]
 sidebar: contrib_sidebar
 permalink: /doc/en/contrib/README-guidelines.html
 summary: LoopBack documentation incorporates READMEs from many different repositories. Here are some basic guidelines for writing a README.

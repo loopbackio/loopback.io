@@ -1,6 +1,7 @@
 ---
 title: Adding a new language
-tags: [translation]
+lang: en
+tags: [contributing, translation]
 keywords: translation, localization
 summary: "Translators can easily add a new language, where they can translate LoopBack docs."
 sidebar: contrib_sidebar

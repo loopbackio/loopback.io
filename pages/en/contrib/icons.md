@@ -1,11 +1,11 @@
 ---
 title: Icons
-tags: [formatting]
+lang: en
+tags: [contributing]
 keywords: font icons, buttons, images, vectors, font awesome, glyphicons
-summary: "You can integrate font icons through the Font Awesome and Glyphical Halflings libraries. These libraries allow you to embed icons through their libraries delivered as a link reference. You don't need any image libraries downloaded in your project."
+summary: "You can integrate font icons through the Font Awesome and Glyphical Halflings libraries. These libraries allow you to embed icons as a link reference. You don't need any image files in the project."
 sidebar: contrib_sidebar
 permalink: /doc/en/contrib/icons.html
-
 ---
 
 ## Font icon options
@@ -47,71 +47,11 @@ Here's the result:
 
 <div class="alert alert-danger" role="alert"><i class="fa fa-exclamation-circle fa-lg"></i> This is a special warning message.</div>
 
-The notes, tips, warnings, etc., are pre-coded with Font Awesome and stored in the alerts.yml file. That file includes the following:
-
-{% raw %}
-```yaml
-tip: '<div class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i> <b>Tip: </b>'
-note: '<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note: </b>'
-important: '<div class="alert alert-warning" role="alert"><i class="fa fa-warning"></i> <b>Important: </b>'
-warning: '<div class="alert alert-danger" role="alert"><i class="fa fa-exclamation-circle"></i> <b>Warning: </b>'
-end: '</div>'
-
-callout_danger: '<div class="bs-callout bs-callout-danger">'
-callout_default: '<div class="bs-callout bs-callout-default">'
-callout_primary: '<div class="bs-callout bs-callout-primary">'
-callout_success: '<div class="bs-callout bs-callout-success">'
-callout_info: '<div class="bs-callout bs-callout-info">'
-callout_warning: '<div class="bs-callout bs-callout-warning">'
-
-hr_faded: '<hr class="faded"/>'
-hr_shaded: '<hr class="shaded"/>'
-```
-{% endraw %}
-
-This means you can insert a tip, note, warning, or important alert simply by using these tags.
-
-
-```liquid
-{% raw %}{% include note.html content="Add your note here." %}{% endraw %}
-```
-
-
-```liquid
-{% raw %}{% include tip.html content="Add your tip here." %}{% endraw %}
-```
-
-
-```liquid
-{% raw %}{% include important.html content="Add your important info here." %}{% endraw %}
-```
-
-
-{% raw %}
-```liquid
-{% include warning.html content="Add your warning here." %}
-```
-{% endraw %}
-
-Here's the result:
-
-{% include note.html content="Add your note here.
-" %}
-
-{% include tip.html content="Here's my tip.
-" %}
-
-{% include important.html content="This information is very important.
-" %}
-
-{% include warning.html content="If you overlook this, you may die.
-" %}
-
-The color scheme is the default colors from Bootstrap. You can modify the icons or colors as needed.
+The notes, tips, warnings, etc., are pre-coded with Font Awesome.
 
 ## Creating your own combinations
 
-You can innovate with your own combinations. Here's a similar approach with a file download icon:
+You can innovate with your own combinations. For example, here's a file download icon:
 
 ```html
 <div class="alert alert-success" role="alert"><i class="fa fa-download fa-lg"></i> This is a special tip about some file to download....</div>
@@ -224,5 +164,3 @@ You can use any of the following:
 The only difference is the color of the left bar.
 
 Callouts are explained in a bit more detail in [Alerts][alerts.html.
-
-{% include links.html %}

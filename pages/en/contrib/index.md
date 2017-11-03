@@ -1,5 +1,6 @@
 ---
 title: Contributing to LoopBack
+lang: en
 keywords: LoopBack community
 tags: [community, contributing]
 sidebar: contrib_sidebar

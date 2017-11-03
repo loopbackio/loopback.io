@@ -1,6 +1,7 @@
 ---
 title: Authoring Pages
-tags: [getting_started, formatting, content_types]
+lang: en
+tags: [contributing]
 keywords: pages, authoring, exclusion, frontmatter
 summary: "This theme primarily uses pages. You need to make sure your pages have the appropriate frontmatter. One frontmatter tag your users might find helpful is the summary tag. This functions similar in purpose to the shortdesc element in DITA."
 sidebar: contrib_sidebar
@@ -18,6 +19,7 @@ Under English, the sub-folders are:
 
 - `lb2` - LoopBack 2.x
 - `lb3` - LoopBack 3.0
+- `lb4` - LoopBack 4
 - `contrib` - Information on contributing to the project, published at [http://loopback.io/doc/en/contrib/](http://loopback.io/doc/en/contrib/).
 - `community` - Area where community members can put information about their LoopBack-related projects.
 
@@ -68,7 +70,7 @@ The following table describes each of the front matter that you can use with thi
 | **last_updated**  | Optional | The date the page was last updated. This information could helpful for readers trying to evaluate how current and authoritative information is. If included, the last_updated date appears in the footer of the page in rather small font.|
 | **summary** | Optional | A 1-2 word sentence summarizing the content on the page. This gets formatted into the summary section in the page layout. Adding summaries is a key way to make your content more scannable by users (check out [Jakob Nielsen's site](http://www.nngroup.com/articles/corporate-blogs-front-page-structure/) for a great example of page summaries.) The only drawback with summaries is that you can't use variables in them. |
 | **permalink**| Required | The permalink *must* match the filename in order for automated links to work. Additionally, you must include the ".html" in the filename. Do not put forward slashes around the permalink (this makes Jekyll put the file inside a folder in the output). When Jekyll builds the site, it will put the page into the root directory rather than leaving it in a subdirectory or putting it inside a folder and naming the file index.html. Having all files flattened in the root directory is essential for relative linking to work and for all paths to JS and CSS files to be valid. <br/> **NOTE**: For LoopBack, we've changed this to use subdirectories, and adjusted how the CSS and JS files are referred to so it works correctly, regardless of how many subdirectories you use.|
-| **datatable** | Optional | 'true'. If you add `datatable: true` in the frontmatter, scripts for the [jQuery Datatables plugin](https://www.datatables.net/) get included on the page. You can see the scripts that conditionally appear by looking in the \_layouts/default.html page. |
+| **datatable** | Optional | 'true'. If you add `datatable: true` in the frontmatter, scripts for the [jQuery Datatables plugin](https://www.datatables.net/) get included on the page. You can see the scripts that conditionally appear by looking in the `_layouts/default.html` page. |
 | **toc** | Optional | If you specify `toc: false` in the frontmatter, the page won't have the table of contents that appears below the title. The toc refers to the list of jump links below the page title, not the sidebar navigation. You probably want to hide the TOC on the homepage and product landing pages.|
 
 ## Colons in page titles
@@ -77,7 +79,7 @@ If you want to use a colon in your page title, you must enclose the title's valu
 
 ## Page names and excluding files from outputs
 
-By default, everything in your project is included in the output. To exclude files that don't belong to that project, specify the file name, the folder name, or use wildcards in your configuration file:
+By default, everything in your project is included in the output. To exclude files that don't belong to that project, specify the file name, the folder name, or use wildcards in the `_config.yml` configuration file:
 
 ```yaml
 exclude:
@@ -92,11 +94,11 @@ Wildcards will exclude every match after the `*`.
 
 ## Saving pages as drafts
 
-If you add `published: false` in the front matter, your page won't be published. You can also move draft pages into the \_drafts folder to exclude them from the build. With posts, you can also keep them as drafts by omitting the date in the title.
+If you add `published: false` in the front matter, your page won't be published. You can also move draft pages into the `_drafts` folder to exclude them from the build. With posts, you can also keep them as drafts by omitting the date in the title.
 
 ## Markdown or HTML format
 
-Pages can be either Markdown or HTML format (specified through either an .md or .html file extension).
+Pages can be either Markdown or HTML format (specified through either an `.md` or `.html` file extension).
 
 If you use Markdown, you can also include HTML formatting where needed. But if you're format is HTML, you must add a `markdown="1"` attribute to the element in order to use Markdown inside that HTML element:
 
@@ -110,9 +112,11 @@ If you have a lot of HTML, as long as the top and bottom tags of the HTML are fl
 
 ## Kramdown Markdown
 
-Kramdown is the Markdown flavor used in the theme. This mostly aligns with Github-flavored Markdown, but with some differences in the indentation allowed within lists. Basically, Kramdown requires you to line up the indent between list items with the first starting character after the space in your list item numbering. See this [blog post on Kramdown and Rouge](http://idratherbewriting.com/2016/02/21/bug-with-kramdown-and-rouge-with-github-pages/) for more details.
+This theme uses [kramdown markdown](http://kramdown.gettalong.org/).
 
-You can use standard Multimarkdown syntax for tables. You can also use fenced code blocks with lexers specifying the type of code. The configuration file shows the Markdown processor and extension:
+This mostly aligns with Github-flavored Markdown, with a few differences.
+
+The configuration file shows the Markdown processor and extension:
 
 ```yaml
 highlighter: rouge
@@ -123,6 +127,38 @@ kramdown:
  hard_wrap: false
  syntax_highlighter: rouge
 ```
+
+### List item formatting
+
+Kramdown requires you to line up the indent between list items with the first starting character after the space in your list item numbering.
+
+The spacing of the intercepting text must align with the spacing of the first character after the space of a numbered list item. Basically, with your list item numbering, use two spaces after the dot in the number, like this:
+
+```
+1.  First item
+2.  Second item
+3.  Third item
+```
+
+See this [blog post on Kramdown and Rouge](http://idratherbewriting.com/2016/02/21/bug-with-kramdown-and-rouge-with-github-pages/) for more details.
+
+When you want to insert paragraphs, notes, code snippets, or other matter in between the list items, use four spaces to indent. The four spaces will line up with the first letter of the list item (the <b>F</b>irst or <b>S</b>econd or <b>T</b>hird).
+
+```
+1.  First item
+
+    ```
+    alert("hello");
+    ```
+
+2.  Second item
+
+    Some pig!
+
+3.  Third item
+```
+
+You can use standard Multi-markdown syntax for tables. You can also use fenced code blocks with lexers specifying the type of code.
 
 ## Automatic mini-TOCs
 
@@ -200,4 +236,5 @@ To specify a different layout, use the `layout` property in the page's frontmatt
 
 Disqus, a commenting system, is integrated into the theme. In the configuration file, specify the Disqus code for the universal code, and Disqus will appear. If you don't add a Disqus value, the Disqus form isn't included.
 
-{% include links.html %}
+{% include note.html content= "The site is not currently using Disqus.
+" %}

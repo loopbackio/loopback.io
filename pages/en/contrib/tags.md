@@ -1,16 +1,17 @@
 ---
 title: Tags
-audience: writer, designer
+lang: en
 tags: [community, contributing]
 keywords: tags, navigation, buttons, links, association
-summary: "Tags provide another means of navigation for your content. Unlike the table of contents, tags can show the content in a variety of arrangements and groupings. Implementing tags in this Jekyll theme is somewhat of a manual process."
+summary: "Tags provide another means of navigation for your content. Unlike the table of contents, tags can show the content in a variety of arrangements and groupings. "
 sidebar: contrib_sidebar
 permalink: /doc/en/contrib/tags.html
 folder: contrib
 ---
 
 ## Add a tag to a page
-You can add tags to pages by adding `tags` in the frontmatter with values inside brackets, like this:
+
+Add tags to a page by adding `tags` in the frontmatter with values inside brackets, like this:
 
 ```
 ---
