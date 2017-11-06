@@ -8,6 +8,10 @@ permalink: /doc/en/lb4/Preparing-API-for-consumption.html
 summary:
 ---
 
+{% include note.html content="
+This article continues off from [Implmenting Features](./Implementing-features.html).
+" %}
+
 ## Preparing your API for consumption
 
 {% include content/tbd.html %}

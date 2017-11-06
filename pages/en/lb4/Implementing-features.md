@@ -8,6 +8,10 @@ permalink: /doc/en/lb4/Implementing-features.html
 summary:
 ---
 
+{% include note.html content="
+This article continues off from [Testing the API](./Testing-the-API.html).
+" %}
+
 ## Incrementally implement features
 
 To recapitulate the status of your new project:
