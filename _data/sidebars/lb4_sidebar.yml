@@ -20,7 +20,7 @@ children:
   output: 'web, pdf'
   children:
 
-  - title: 'Examples & Tutorials'
+  - title: 'Examples and tutorials'
     url: Examples-and-tutorials.html
     output: 'web, pdf'
 
@@ -57,7 +57,7 @@ children:
     url: Context.html
     output: 'web, pdf'
 
-  - title: 'Dependency Injection'
+  - title: 'Dependency injection'
     url: Dependency-injection.html
     output: 'web, pdf'
 
@@ -77,7 +77,7 @@ children:
   url: Calling-other-APIs-and-web-services.html
   output: 'web, pdf'
 
-- title: 'Testing Your Application'
+- title: 'Testing your application'
   url: Testing-your-application.html
   output: 'web, pdf'
 
@@ -98,7 +98,7 @@ children:
   url: Crafting-LoopBack-4.html
   output: 'web, pdf'
 
-- title: 'Language-related Concepts'
+- title: 'Language-related concepts'
   url: Language-related-concepts.html
   output: 'web, pdf'
   children:

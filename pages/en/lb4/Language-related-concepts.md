@@ -1,6 +1,6 @@
 ---
 lang: en
-title: 'Language-related Concepts'
+title: 'Language-related concepts'
 keywords: LoopBack 4.0, LoopBack 4
 tags:
 sidebar: lb4_sidebar
