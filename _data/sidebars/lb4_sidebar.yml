@@ -24,10 +24,6 @@ children:
     url: Examples-and-tutorials.html
     output: 'web, pdf'
 
-  - title: 'Thinking in LoopBack'
-    url: Thinking-in-LoopBack.html
-    output: 'web, pdf'
-
   - title: 'FAQ'
     url: FAQ.html
     output: 'web, pdf'
@@ -84,6 +80,27 @@ children:
 - title: 'For current LoopBack users'
   url: LoopBack-3.x.html
   output: 'web, pdf'
+
+- title: 'Best Practices with Loopback 4'
+  url: Best-Practices-with-Loopback-4.html
+  output: 'web, pdf'
+  children:
+
+  - title: 'Defining and Validating the API'
+    url: Defining-and-validating-the-API.html
+    output: 'web, pdf'
+
+  - title: 'Testing the API'
+    url: Testing-the-API.html
+    output: 'web, pdf'
+
+  - title: 'Implementing Features'
+    url: Implementing-features.html
+    output: 'web, pdf'
+
+  - title: 'Preparing API for Consumption'
+    url: Preparing-API-for-consumption.html
+    output: 'web, pdf'
 
 - title: 'Extending LoopBack 4'
   url: Extending-LoopBack-4.html
