@@ -1,6 +1,6 @@
 ---
 lang: en
-title: 'Implementing Features'
+title: 'Implementing features'
 keywords: LoopBack 4.0, LoopBack 4
 tags:
 sidebar: lb4_sidebar
@@ -577,5 +577,5 @@ With this last change in place, your test suite should be all green again.
 The next task is left as an exercise for the reader: \Modify the `catch` block to print a common log entry too. Start by writing a unit-test that invokes `MySequence` directly.
 
 {% include next.html content= "
-[Preparing API for Consumption](./Preparing-API-for-consumption.html)
+[Preparing the API for consumption](./Preparing-the-API-for-consumption.html)
 " %}

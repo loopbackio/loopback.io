@@ -1,6 +1,6 @@
 ---
 lang: en
-title: 'Defining and Validating the API'
+title: 'Defining and validating the API'
 keywords: LoopBack 4.0, LoopBack 4
 tags:
 sidebar: lb4_sidebar

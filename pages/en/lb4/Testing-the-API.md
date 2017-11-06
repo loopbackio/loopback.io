@@ -9,7 +9,7 @@ summary:
 ---
 
 {% include note.html content="
-This article continues off from [Defining and Validating the API](./Defining-and-validating-the-API.html).
+This article continues off from [Defining and validating the API](./Defining-and-validating-the-API.html).
 " %}
 
 ## Smoke test API input/output
@@ -249,5 +249,5 @@ To summarize:
 See [Testing Your Application](Testing-Your-application.html) for a reference manual on automated tests.
 
 {% include next.html content= "
-[Implementing Features](./Implementing-features.html)
+[Implementing features](./Implementing-features.html)
 " %}

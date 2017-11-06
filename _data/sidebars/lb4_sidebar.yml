@@ -81,12 +81,12 @@ children:
   url: LoopBack-3.x.html
   output: 'web, pdf'
 
-- title: 'Best Practices with Loopback 4'
-  url: Best-Practices-with-Loopback-4.html
+- title: 'Best practices with Loopback 4'
+  url: Best-practices-with-Loopback-4.html
   output: 'web, pdf'
   children:
 
-  - title: 'Defining and Validating the API'
+  - title: 'Defining and validating the API'
     url: Defining-and-validating-the-API.html
     output: 'web, pdf'
 
@@ -94,12 +94,12 @@ children:
     url: Testing-the-API.html
     output: 'web, pdf'
 
-  - title: 'Implementing Features'
+  - title: 'Implementing features'
     url: Implementing-features.html
     output: 'web, pdf'
 
-  - title: 'Preparing API for Consumption'
-    url: Preparing-API-for-consumption.html
+  - title: 'Preparing the API for consumption'
+    url: Preparing-the-API-for-consumption.html
     output: 'web, pdf'
 
 - title: 'Extending LoopBack 4'
