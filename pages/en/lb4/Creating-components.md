@@ -64,6 +64,7 @@ export class MyComponent {
 ### Accessing values from Providers
 
 Applications should use `@inject` decorators to access the value provided by our exported provider.
+If you’re not familiar with decorators in TypeScript, see [Key Concepts: Decorators](Decorators.html)
 
 ```js
 const app = new Application({
@@ -230,17 +231,17 @@ export class AuthenticationProvider {
 
 ## Extends Application with Mixin
 
-When binding a component to an app, you may want to extend the app with the component's 
-properties and methods. 
-This can be achieved by using mixins. 
+When binding a component to an app, you may want to extend the app with the component's
+properties and methods.
+This can be achieved by using mixins.
 
 If you are not familiar with the mixin concept, check [Mixin](Mixin.html) to learn more.
 
 An example of how a mixin leverages component would be `RepositoryMixin`:
-Suppose an app has multiple components with repositories bound to each of them, 
+Suppose an app has multiple components with repositories bound to each of them,
 you can use function `RepositoryMixin` to mount those repositories to application level context.
 
-The following snippet is an abbreviated function 
+The following snippet is an abbreviated function
 [`RepositoryMixin`](https://github.com/strongloop/loopback-next/blob/master/packages/repository/src/repository-mixin.ts):
 
 {% include code-caption.html content="mixins/src/repository-mixin.ts" %}
