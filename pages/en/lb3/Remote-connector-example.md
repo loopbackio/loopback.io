@@ -10,3 +10,7 @@ sidebar: lb3_sidebar
 permalink: /doc/en/lb3/Remote-connector-example.html
 summary: Example of using the LoopBack remote connector.
 ---
+{% include see-also.html content="
+- [Example application](Remote-connector-example.html)
+- [Strong Remoting](Strong-Remoting.html)
+" %}
