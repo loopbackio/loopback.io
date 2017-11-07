@@ -6,7 +6,7 @@ output: web
 whitelist:
   - jekyll-redirect-from
 
-gems:
+plugins:
   - jekyll-redirect-from
 
 topnav_title: LoopBack

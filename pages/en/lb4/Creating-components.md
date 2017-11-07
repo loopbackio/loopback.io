@@ -7,7 +7,7 @@ sidebar: lb4_sidebar
 permalink: /doc/en/lb4/Creating-components.html
 summary:
 ---
-> Cover "What is a decorator?"
+
 
 As explained in [Using Components](Using-components.html), a typical LoopBack component is an npm package exporting a Component class.
 
