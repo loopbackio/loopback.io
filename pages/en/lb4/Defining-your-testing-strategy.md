@@ -8,7 +8,7 @@ permalink: /doc/en/lb4/Defining-your-testing-strategy.html
 summary:
 ---
 
-{% include note.html content="
+{% include previous.html content="
 This article continues off from [Testing the API](./Testing-the-API.html).
 " %}
 

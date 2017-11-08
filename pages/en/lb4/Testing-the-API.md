@@ -8,7 +8,7 @@ permalink: /doc/en/lb4/Testing-the-API.html
 summary:
 ---
 
-{% include note.html content="
+{% include previous.html content="
 This article continues off from [Defining and validating the API](./Defining-and-validating-the-API.html).
 " %}
 

@@ -8,7 +8,7 @@ permalink: /doc/en/lb4/Preparing-the-API-for-consumption.html
 summary:
 ---
 
-{% include note.html content="
+{% include previous.html content="
 This article continues off from [Implmenting features](./Implementing-features.html).
 " %}
 

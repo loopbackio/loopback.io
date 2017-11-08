@@ -8,7 +8,7 @@ permalink: /doc/en/lb4/Implementing-features.html
 summary:
 ---
 
-{% include note.html content="
+{% include previous.html content="
 This article continues off from [Defining your testing stategy](./Defining-your-testing-strategy.html).
 " %}
 
