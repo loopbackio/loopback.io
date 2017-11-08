@@ -94,6 +94,10 @@ children:
     url: Testing-the-API.html
     output: 'web, pdf'
 
+  - title: 'Defining your testing strategy'
+    url: Defining-your-testing-strategy.html
+    output: 'web, pdf'
+
   - title: 'Implementing features'
     url: Implementing-features.html
     output: 'web, pdf'

@@ -9,7 +9,7 @@ summary:
 ---
 
 {% include note.html content="
-This article continues off from [Testing the API](./Testing-the-API.html).
+This article continues off from [Defining your testing stategy](./Defining-your-testing-strategy.html).
 " %}
 
 ## Incrementally implement features
