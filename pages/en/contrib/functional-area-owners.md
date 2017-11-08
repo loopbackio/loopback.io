@@ -13,10 +13,12 @@ redirect_from:
 - /functional-area-owners/
 ---
 
-**Missing ownership for strong-error handler, strong-docs, apidocs-strongloop.com**
-
-{%include note.html content= "Data for this table is from [fa-owners.yml](https://github.com/strongloop/loopback.io/tree/gh-pages/_data/fa-owners.yml).
+{% include warning.html content ="This page is outdated, and does not accurately
+reflect current status.
 " %}
+
+Data for this table is from [fa-owners.yml](https://github.com/strongloop/loopback.io/tree/gh-pages/_data/fa-owners.yml).
+
 
 {% for category in site.data.fa-owners %}
   <h2>{{category[0]}}</h2>
