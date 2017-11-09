@@ -54,6 +54,8 @@ export class WidgetApplication extends Application {
     const server = await app.getServer(RestServer);
     server.bind('rest.port').to(8080);
     server.api(WidgetApi);
+    // The superclass start method will call start on all servers that are
+    // bound to the application.
     return await super.start();
   }
 
@@ -61,6 +63,8 @@ export class WidgetApplication extends Application {
     // This is where you would do whatever is necessary before stopping your
     // app (graceful closing of connections, flushing buffers, etc)
     console.log('Widget application is shutting down...')
+    // The superclass stop method will call stop on all servers that are
+    // bound to the application.
     await super.stop();
   }
 }
@@ -84,14 +88,14 @@ bindings, like `component`, `server` and `controller`:
 export class MyApplication extends Application {
   constructor() {
     super();
-  }
-  this.component(MagicSuite);
-  this.server(RestServer, 'public');
-  this.server(RestServer, 'private');
+    this.component(MagicSuite);
+    this.server(RestServer, 'public');
+    this.server(RestServer, 'private');
 
-  this.controller(FooController);
-  this.controller(BarController);
-  this.controller(BazController);
+    this.controller(FooController);
+    this.controller(BarController);
+    this.controller(BazController);
+  }
 }
 ```
 
