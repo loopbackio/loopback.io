@@ -10,6 +10,11 @@ summary:
 
 LoopBack 4 introduces some new concepts that are important to understand:
 
+- [**Application**](Application.html): In LoopBack 4, the Application class is
+the central class for setting up all of your module’s components, controllers,
+servers and bindings. The Application class extends [Context](Context.html), and
+provides the controls for starting and stopping itself and its associated
+servers.
 - [**Sequence**](Sequence.html): A stateless grouping of [Actions](Sequence.html#actions) that control how a Server responds to requests.
 - [**Route**](Routes.html): Mapping between your API specification and an Operation (JavaScript implementation). It tells LoopBack which function to invoke() given an HTTP request.
 - [**Schema**](Schemas.html): Represents the definition of a model in LoopBack, with respect to the datasource juggler. The `@loopback/repository` module provides special decorators for adding metadata to TypeScript/JavaScript classes to use them with the legacy implementation of Datasource Juggler.
