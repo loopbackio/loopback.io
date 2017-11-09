@@ -54,6 +54,8 @@ export class WidgetApplication extends Application {
     const server = await app.getServer(RestServer);
     server.bind('rest.port').to(8080);
     server.api(WidgetApi);
+    // The superclass start method will call start on all servers that are
+    // bound to the application.
     return await super.start();
   }
 
@@ -61,6 +63,8 @@ export class WidgetApplication extends Application {
     // This is where you would do whatever is necessary before stopping your
     // app (graceful closing of connections, flushing buffers, etc)
     console.log('Widget application is shutting down...')
+    // The superclass stop method will call stop on all servers that are
+    // bound to the application.
     await super.stop();
   }
 }
