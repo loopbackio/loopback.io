@@ -84,14 +84,14 @@ bindings, like `component`, `server` and `controller`:
 export class MyApplication extends Application {
   constructor() {
     super();
-  }
-  this.component(MagicSuite);
-  this.server(RestServer, 'public');
-  this.server(RestServer, 'private');
+    this.component(MagicSuite);
+    this.server(RestServer, 'public');
+    this.server(RestServer, 'private');
 
-  this.controller(FooController);
-  this.controller(BarController);
-  this.controller(BazController);
+    this.controller(FooController);
+    this.controller(BarController);
+    this.controller(BazController);
+  }
 }
 ```
 
