@@ -33,6 +33,10 @@ children:
   output: 'web, pdf'
   children:
 
+  - title: 'Application'
+    url: Application.html
+    output: 'web, pdf'
+
   - title: 'Sequence'
     url: Sequence.html
     output: 'web, pdf'
