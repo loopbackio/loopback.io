@@ -339,7 +339,7 @@ transaction.find({
         userId: user.id,
         time: {gt: Date.now() - ONE_MONTH}
       }
-    }
+    })
 ```
 
 For example, the following query returns all instances of the employee model using a _where_ filter that specifies a date property after (greater than) the specified date: 
