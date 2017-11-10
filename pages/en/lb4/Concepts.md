@@ -23,6 +23,7 @@ servers.
 - [**Dependency Injection**](Dependency Injection.html): Technique that separates the construction of dependencies of a class or function from its behavior, to keep the code loosely coupled.
 - [**Repository**](Repositories.html): Type of Service that represents a collection of data within a DataSource.
 - [**Decorator**](Decorators.html): Enables you to annotate or modify your class declarations and members with metadata.
+- [**Server**](Server.html): Represents implementation for inbound transports and/or protocols such as REST over http, gRPC over http2, and graphQL over https. It typically listens for requests on a specific port, handle them, and return appropriate responses.
 
 {% include note.html title="Review Note" content="_Perhaps this should include some of the material in <a href='Thinking-in-LoopBack.html'> Thinking in LoopBack</a>_.
 " %}
