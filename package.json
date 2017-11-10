@@ -5,14 +5,21 @@
   "scripts": {
     "start": "bundle exec jekyll serve --incremental",
     "fetch-readmes": "get-readmes --repos=./_data --out=./_includes/readmes",
-    "lint-readmes" : "markdownlint _includes/readmes/"
+    "lint-readmes": "markdownlint _includes/readmes/",
+    "postinstall": "node ./api-explorer/upgrade-swagger-ui.js"
+  },
+  "engines": {
+    "node": ">=8"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Strongloop/loopback.io.git"
   },
   "devDependencies": {
+    "fs-extra": "^4.0.2",
     "getreadmes": "github:strongloop/get-readmes",
-    "markdownlint-cli": "github:sequoia/markdownlint-cli"
-  }
+    "markdownlint-cli": "github:sequoia/markdownlint-cli",
+    "swagger-ui-dist": "^3.4.4"
+  },
+  "license": "MIT"
 }
