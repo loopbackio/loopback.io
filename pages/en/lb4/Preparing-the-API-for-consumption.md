@@ -14,11 +14,23 @@ This article continues off from [Implmenting features](./Implementing-features.
 
 ## Preparing your API for consumption
 
-{% include content/tbd.html %}
+### Interacting with you API
 
-- Documentation
-- Public endpoint for the swagger spec (for discovery)
-- more?
+When your application is run, its documentation is generated into `swagger.json` file and can be accessed from your server through `/swagger.json`. You can also interact with the API endpoints defined in `swagger.json` file through Swagger UI (`/swagger-ui`), which allows users to directly interact with the documented API endpoints of the application.
+
+We'll use the repo [loopback4-example-getting-started](https://github.com/strongloop/loopback4-example-getting-started) to demonstrate how Swagger UI can be used to test your endpoints.
+
+{% include image.html file="lb4/10000000.png" alt="" %}
+
+Here we can see all of the endpoints defined in your application.
+
+{% include image.html file="lb4/10000001.png" alt="" %}
+
+Clicking on one of the endpoints will show the endpoint's documentation as defined in your API spec. Next, click on Try It Out to allow a request to be sent to the endpoint. If the endpoint takes in parameters, they can be given values here before the request is sent. If the parameter involves a body, a template is given for you to edit as specified in your spec. Hit Execute to send the request:
+
+{% include image.html file="lb4/10000002.png" alt="" %}
+
+The response to the request can be seen below the Execute button, where the response code and the body are displayed. Ideally, each endpoint should be tested with good and bad inputs to confirm that the given responses are as expected.
 
 ## Closing thoughts
 
@@ -28,7 +40,7 @@ This is just the beginning of the full LoopBack 4 developer experience. The firs
 
 Here is a sneak peek of what's coming:
 
-- More extensions and extension points an: [lopback-next issue #512](https://github.com/strongloop/loopback-next/issues/512)
+- More extensions and extension points an: [loopback-next issue #512](https://github.com/strongloop/loopback-next/issues/512)
 
 - Authorization component: [loopback-next issue #538](https://github.com/strongloop/loopback-next/issues/538)
 
