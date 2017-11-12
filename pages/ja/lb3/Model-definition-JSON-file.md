@@ -668,7 +668,7 @@ A protected property is not sent in HTTP response JSON data if the object is nes
 For instance, suppose there is an Author object and a Book object. Book has a relation to Author, and Book is a public API.
 The Author model has personal information (such as social security number) which should be "protected" so anyone looking up the author of the book will not get that information.
 
-{% include content/hidden-vs-protected.html %}
+{% include content/hidden-vs-protected.html lang=page.lang %}
 
 An example configuring `email` as a protected property:
 

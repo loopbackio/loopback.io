@@ -1,5 +1,5 @@
 ---
-title: "Customizing models"
+title: "モデルのカスタマイズ"
 layout: navgroup
 navgroup: models
 to_level: 2
@@ -8,27 +8,27 @@ tags: models
 lang: ja
 sidebar: ja_lb3_sidebar
 permalink: /doc/ja/lb3/Customizing-models.html
-summary: You can customize a basic model through JSON or JavaScript code.
+summary: 基本的なモデルを、JSONやJavaScriptを使ってカスタマイズできます。
 ---
 
-Once you've created a model with the [model generator](Model-generator.html), you can start customizing it.
-You can customize it using the command-line tool, by editing the [model definition JSON file](Model-definition-JSON-file.html), and by adding JavaScript code.
+[モデル生成ツール](Model-generator.html)でモデルを作成したら、それをカスタマイズできます。
+コマンドラインツールを使ったり、[モデル定義JSONファイル](Model-definition-JSON-file.html)を編集したり、JavaScriptのコードを追加したりすることで、カスタマイズ可能です。
 
-## Customizing a model with the command-line tool
+## コマンドラインツールによるカスタマイズ
 
-{% include note.html content="You can't modify an existing model with the  [model generator](Model-generator.html). However, you can customize the model manually and to some degree by using the command-line tool; see below.
+{% include note.html content="既存のモデルを[モデル生成ツール](Model-generator.html)で変更することはできません。しかし、コマンドラインツールを使えば、ある程度のカスタマイズが可能です。以下をご覧ください。
 " %}
 
-You can use the command-line tool to customize a model after you initially create it; specifically, you can:
+モデルを最初に作成したあとで、~コマンドラインツール~を使ってカスタマイズすることができます。以下のことが可能です。
 
-* Use the [property generator](Property-generator.html) to add a property to the model.
-* Use the [relation generator](Relation-generator.html) to add [add relations between models](Creating-model-relations.html).
-* Use [ACL generator](ACL-generator.html) to add [access control](Controlling-data-access.html) to the model.
+*  [プロパティ生成ツール](Property-generator.html) を使って、モデルにプロパティを追加する。
+*  [リレーション生成ツール](Relation-generator.html) を使って、 [モデル間のリレーションを追加する](Creating-model-relations.html)。
+* [ACL生成ツール](ACL-generator.html) を使って、モデルに [アクセス制御](Controlling-data-access.html) を追加する。
 
-## Customizing a model using JSON
+## JSONを使ってモデルをカスタマイズする
 
-You can customize a number of aspects of a model by simply editing the
-[model definition JSON file](Model-definition-JSON-file.html) in `common/models` (for example, `customer.json`), which by default looks like this:
+ `common/models` にある[モデル定義JSONファイル](Model-definition-JSON-file.html) (例えば `customer.json`) を単純に編集することで、
+幾つもの側面をカスタマイズできます。既定の状態は以下のようになっています。
 
 {% include code-caption.html content="common/models/model.json" %}
 ```javascript
@@ -45,21 +45,23 @@ You can customize a number of aspects of a model by simply editing the
 }
 ```
 
-LoopBack _adds_ the settings in the the model JSON file to those of the base model.
-In most cases, this is straightforward, but for ACL settings there can be complex interactions since some ACL settings take precedence over others.
-For more information, see [ACL rule precedence](Controlling-data-access.html#acl-rule-precedence) for more information.
+LoopBack はこれらの基本モデルに対して、モデルJSONファイルの設定を_追加する_。
+多くの場合とても簡単ですが、ACL設定に関しては、何らかのACL設定が他のものに優先されることがあるため、複雑になることがあります。
+詳細は、 [ACLルール優先順位](Controlling-data-access.html#acl-rule-precedence) を参照してください。
 
-### Extending another model
 
-You can make a model extend or "inherit from" an existing model, either one of the built-in models such as User, or a custom model you've defined in your application.
-To do this with the [model generator](Model-generator.html), simply choose the desired model when you're prompted to "Select model's base class".
-Alternatively,  you can edit the [Model definition JSON file](Model-definition-JSON-file.html) and set the "base" property to the name of the model you want to extend.
+### 他のモデルを拡張する
+
+Userのようなビルトインモデルや、アプリケーションのカスタムモデルのいずれかについて、モデルを拡張したり、既存のモデルを「継承」したりすることができます。
+[モデル生成ツール](Model-generator.html) を使ってこれらのことを実施するには、「モデルの基本クラスを選択してください」と尋ねられたときに、単に希望するモデルを選択します。
+代わりに、拡張したいモデル名の[モデル定義JSONファイル](Model-definition-JSON-file.html)を編集して、「base」プロパティを設定することもできます。
 
 {% include note.html content="
-In general, use `PersistedModel` as the base model when you want to store your data in a database using a connector such as MySQL or MongoDB.  Use `Model` as the base for models that don't have CRUD semantics, for example, using connectors such as SOAP and REST.
+一般的に、MySQLやMongoDBといったデータベースにデータを保存したい場合は、基本モデルとして  `PersistedModel`  を使います。
+ `Model`  は、CRUD操作を持たないモデル、例えばSOAPやRESTのようなコネクタを使用する場合に使います。
 " %}
 
-For example, here is an excerpt from a `customer.json` file that extends the built-in User model to define a new Customer model:
+例えば以下は、組み込みのUserモデルを拡張した、Customerモデルを定義している `customer.json` ファイルの抜粋です。
 
 {% include code-caption.html content="/common/models/model.json" %}
 ```javascript
@@ -70,16 +72,15 @@ For example, here is an excerpt from a `customer.json` file that extends the b
 ...
 ```
 
-In general, you can extend any model this way, not just the built-in models.
+一般的に、この方法では組み込みモデル以外のあらゆるモデルを拡張できます。
 
 {% include important.html content="
-Currently you cannot modify a built-in model's required properties. If you need to do this, then create your own custom model as a replacement instead.
+現在は、組み込みモデルの必須プロパティを変更することはできません。もしそうする必要がある場合、それらの置き換えとして独自のモデルを作成してください。
 " %}
 
-You can create custom models that extend from a single base custom model.
-For example, to define a model called `MyModel` that extends from a custom model you defined called `MyBaseModel`,
-create MyModel using [model generator](Model-generator.html) 
-then edit the JSON file `common/models/MyModel.json` as follows:
+一つの基本独自モデルを拡張した独自モデルを作ることができます。
+例えば、自分で定義した`MyBaseModel`を拡張して `MyModel` というモデルを定義するには、 [モデル生成ツール](Model-generator.html) を使って MyModel を作り、
+JSONファイル  `common/models/MyModel.json`  を以下のように編集します。
 
 {% include code-caption.html content="/common/models/MyModel.json" %}
 ```javascript
@@ -89,7 +90,7 @@ then edit the JSON file `common/models/MyModel.json` as follows:
 }
 ```
 
-You can add new properties when you extend a model, for example:
+モデルを拡張する時に、新しいプロパティを追加できます。例えば以下のように。
 
 {% include code-caption.html content="/common/models/MyModel.json" %}
 ```javascript
@@ -104,47 +105,46 @@ You can add new properties when you extend a model, for example:
 }
 ```
 
-See [LoopBack types](LoopBack-types.html) for information on data types supported.
+サポートしているデータ型については、[LoopBackの型](LoopBack-types.html) を参照してください。
 
-### Customizing other model settings
+### 他のモデル設定のカスタマイズ
 
-Here are some of the most important settings you can customize:
+カスタマイズできる最も重要な設定が幾つかあります。
 
-* **plural** - set to a custom string value to use, instead of the default standard plural form.
-* **strict** - set to true to make the model save only instances that have the predefined set of properties.
-  Any additional properties in a save or update operation are not persisted to the data source. False by default.
-* **idInjection** - Whether to automatically add an id property to the model. True by default.
-* **http.path** - customized HTTP path of REST endpoints.
+* **plural（複数形）** - 標準的な複数形の形を使う代わりに、独自の文字列を使用する場合に設定します。
+* **strict（厳密な）** - 事前に定義されたプロパティだけを持つインスタンスしか、保存できないようにする場合にtrueを設定します。
+  保存・更新の操作において、追加のプロパティはデータソースに永続化されません。既定では false です。
+* **idInjection（ID注入）** - モデルに、自動的に id プロパティを追加するかどうかを設定します。既定では true です。
+* **http.path** - REST エンドポイントの HTTP パスをカスタマイズします。
 
-See [Model definition JSON file](Model-definition-JSON-file.html#top-level-properties) for more information.
+詳細は、[モデル定義JSONファイル](Model-definition-JSON-file.html#top-level-properties) を参照してください。
 
-## Customizing a model with JavaScript code
+## JavaScript でモデルをカスタマイズする
 
-The basic way to extend a model programmatically is to edit the model's JavaScript file in the `common/models/` directory.
-For example, a "customer" model will have a `common/models/customer.js` file (if you create the model using the 
-[model generator](Model-generator.html)).
-The script is executed immediately after the model is defined.
-Treat the script as part of the model definition; use it for model configuration and registration.
-You could also add model relationships, complex validations, or default functions for certain properties: Basically, anything you cannot do in JSON.
-However, note that at this point the script doesn't have access to the app instance.  
+プログラム的にモデルを拡張する基本的な方法は、 `common/models/`  ディレクトリにある、モデルのJavaScriptファイルを編集することです。
+例えば、「customer」モデルには、 `common/models/customer.js`  があります（モデルを[モデル生成ツール](Model-generator.html)
+で作成した場合）。
+このスクリプトは、モデルが定義された後、すぐに実行されます。
+これは、モデルの設定や登録に使われるので、モデル定義の一部とみなすことができます。
+モデルの関係・複雑な検証・幾つかのプロパティに関する既定の関数など、基本的にJSONではできないことでも可能です。
+しかし、この時点ではスクリプトはappインスタンスにはアクセス出来ないことに注意してください。
 
-You can also extend a model by adding a [remote method](Remote-methods.html) or an  [operation hook](Operation-hooks.html).
+ [リモートメソッド](Remote-methods.html) や、[運用フック](Operation-hooks.html)を追加することで、モデルを拡張することもできる。
 
-If you don't want to expose the method over REST, then just omit the `remoteMethod()` call.
+もし、REST経由でメソッドを公開したくない場合、単に `remoteMethod()` の呼出しをやめるだけでできます。
 
-See [Adding application logic](Adding-application-logic.html) for more information on customizing a model using JavaScript.
-See [LoopBack types](LoopBack-types.html) for information on data types supported.
+JavaScriptを使ってモデルをカスタマイズする方法については、 [アプリケーションロジックを追加する](Adding-application-logic.html) を参照してください。
+サポートしているデータ型については、 [LoopBackの型](LoopBack-types.html) を参照してください。
 
-### Change the implementation of built-in methods
+### 組み込みメソッドの実装を変更する
 
-#### Via server boot script
+#### サーバ起動スクリプト経由
 
-When you attach a model to a persistent data source, it becomes a _persisted model_ that extends
-[PersistedModel](https://apidocs.loopback.io/loopback/#persistedmodel),
-and LoopBack automatically adds a set of built-in methods for CRUD operations.
-In some cases, you might want to change the implementation; use a JavaScript file in the `/server/boot` directory to do this.
-For example, the following code shows how to reimplement `Note.find()` to override the built-in
-[`find()`](http://apidocs.loopback.io/loopback/#persistedmodelfindfilter-callback) method.
+モデルを永続的なデータソースに紐付けると、それは、[PersistedModel](https://apidocs.loopback.io/loopback/#persistedmodel)を拡張した _永続化モデル_ となり、
+LoopBackは自動的にCRUD操作用の組み込みメソッド一式を追加します。
+しばしば、その実装を変更したいと思うでしょう。`/server/boot` ディレクトリ内のJavaScriptファイルを使うとこれができます。
+例えば、以下のコードは、組み込みの [`find()`](http://apidocs.loopback.io/loopback/#persistedmodelfindfilter-callback) メソッドを上書きするために
+`Note.find()` を再実装する方法を示しています。
 
 {% include code-caption.html content="/server/boot/script.js" %}
 ```javascript
@@ -177,9 +177,9 @@ module.exports = function(app) {
 }
 ```
 
-#### Via your model's script
+#### モデルのスクリプト経由
 
-Use a JavaScript file in the `common/models` directory to do this
+ `common/models` ディレクトリのJavaScriptを使うこともできます。
 
 {% include code-caption.html content="common/models/MyModel.js" %}
 ```javascript
@@ -193,8 +193,8 @@ module.exports = function(MyModel) {
 };
 ```
 
-References:
+参照（外部サイト）：
 
-* [A way to override remote methods](https://github.com/strongloop/loopback/issues/443)
-* [Override User.find not working on juggler 2.15.0](https://github.com/strongloop/loopback-datasource-juggler/issues/427)
-* [How to override 'find' function in model](https://github.com/strongloop/loopback/issues/1077)
+* [リモートメソッドを上書きする方法](https://github.com/strongloop/loopback/issues/443)
+* [juggler 2.15.0でUser.findの上書きができない](https://github.com/strongloop/loopback-datasource-juggler/issues/427)
+* [モデルの「find」関数を上書きする方法](https://github.com/strongloop/loopback/issues/1077)

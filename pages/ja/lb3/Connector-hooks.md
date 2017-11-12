@@ -1,5 +1,5 @@
 ---
-title: "Connector hooks"
+title: "コネクタフック"
 lang: ja
 layout: navgroup
 navgroup: app-logic
@@ -7,21 +7,21 @@ keywords: LoopBack
 tags: application_logic
 sidebar: ja_lb3_sidebar
 permalink: /doc/ja/lb3/Connector-hooks.html
-summary: Connector hooks are triggered by actions of connectors.
+summary: コネクタフックは、コネクタの動作によって起動されます。
 ---
-## Overview
+## 概要
 
-Connectors are responsible for interacting with the backend systems on behalf of model methods.
-Connector hooks enable applications to intercept the connector execution.
+コネクタは、モデルメソッドに代わってバックエンドシステムと対話する役割を担います。
+コネクタフックにより、アプリケーションはコネクタの実行に介入できます。
 
-Two connector hooks are available:
+2つのコネクタフックを使用できます。
 
 - 'before execute'
 - 'after execute'
 
 ### before execute
 
-The 'before execute' hook is invoked before a connector sends a request to the backend data source.
+'before execute'フックは、コネクタがバックエンドデータソースに要求を送信する前に呼び出されます。
 
 ```javascript
 var connector = MyModel.getDataSource().connector;
@@ -31,7 +31,7 @@ connector.observe('before execute', function(ctx, next) {
 });
 ```
 
-To terminate the invocation, call `ctx.end(err, result)`, for example:
+呼び出しを終了するには、次のように`ctx.end(err, result)`を呼び出します。
 
 ```javascript
 var connector = MyModel.getDataSource().connector;
@@ -43,7 +43,7 @@ connector.observe('before execute', function(ctx, next) {
 
 ### after execute
 
-The 'after execute' hook is invoked after the connector receives a response from the backend data source.
+'after execute'フックは、コネクタがバックエンドデータソースから応答を受け取った後に呼び出されます。
 
 ```javascript
 connector.observe('after execute', function(ctx, next) {
@@ -52,13 +52,13 @@ connector.observe('after execute', function(ctx, next) {
 });
 ```
 
-## Context
+## コンテキスト
 
-The context object contains information for the hooks to act on. It varies based on the type of connectors. 
+コンテキストオブジェクトには、フックが動作するための情報が含まれています。コネクタの種類によって異なります。
 
-### Relational database connectors
+### リレーショナルデータベースコネクタ
 
-[Relational database connectors](Database-connectors.html) include connectors for  MySQL, PostgreSQL, SQL Server, Oracle, and so on.
+[リレーショナルデータベースコネクタ](Database-connectors.html) には、MySQL・PostgreSQL・SQL Server・Oracle コネクタなどが含まれます。
 
 ```
 before: {req: {sql: 'SELECT ...', params: [1, 2]}, end: ...}
@@ -68,7 +68,7 @@ before: {req: {sql: 'SELECT ...', params: [1, 2]}, end: ...}
 after: {req: {sql: 'SELECT ...', params: [1, 2]}, res: ..., end: ...}
 ```
 
-### MongoDB connector
+### MongoDB コネクタ
 
 ```
 before: {req: {command: ..., params: ...}, end: ...}
@@ -78,13 +78,13 @@ before: {req: {command: ..., params: ...}, end: ...}
 after: {req: {...}, res: {...}, end: ...}
 ```
 
-Where:
+ここで、
 
-- `req.command` is the command for the [MongoDB collection](http://mongodb.github.io/node-mongodb-native/2.0/api/Collection.html).
-- `req.params` is the request parameters passing to the [MongoDB driver](https://github.com/mongodb/node-mongodb-native).
-- `res` is the response object received from the [MongoDB driver](https://github.com/mongodb/node-mongodb-native).
+- `req.command` は [MongoDB collection](http://mongodb.github.io/node-mongodb-native/2.0/api/Collection.html) への命令です。
+- `req.params` は [MongoDB driver](https://github.com/mongodb/node-mongodb-native) に渡されるリクエストパラメータです。
+- `res` は [MongoDB driver](https://github.com/mongodb/node-mongodb-native)から受け取ったレスポンスオブジェクトです。
 
-### REST connector
+### REST コネクタ
 
 ```
 before: {req: {...}, end: ...}
@@ -94,14 +94,14 @@ before: {req: {...}, end: ...}
 after: {req: {...}, res: {...}, end: ...}
 ```
 
-Where:
+ここで、
 
-- `req` is the request object being passed to [request](https://github.com/request/request) module.
-- `res` is the response object received from [request](https://github.com/request/request) module.
+- `req` は [request](https://github.com/request/request) モジュールに渡される要求オブジェクトです。
+- `res` は [request](https://github.com/request/request) モジュールから受け取った応答オブジェクトです。
 
-Connector hooks give you access to the Loopback context object, `ctx`, that contains information that won’t make it to the end of your method.  Typically, at the end of a call you get the body of the response, so the headers are only available in the `ctx` object.
+コネクタフックは、メソッドの最後までは情報を持たない LoopBackコンテキストオブジェクト `ctx` にアクセスできるようにします。通常、呼び出しの最後には応答の本体が得られるので、ヘッダーは`ctx`オブジェクト内でのみ使用できます。
 
-You have to use the connector hook during application boot; for example:
+アプリケーションの起動時にコネクタフックを使用する必要があります。例えば：
 
 {% include code-caption.html content="server/boot/set-headers-in-body.js" %}
 ```js
@@ -114,17 +114,17 @@ module.exports = function(server) {
 };
 ```
 
-Now inside this function you have access to this information:
+この関数の中で以下の情報にアクセスできます。
 
-- Response headers: `ctx.res.headers`.
-- HTTP response code: `ctx.res.body.code`.
-- HTTP method of the request: `ctx.req.method`.
+- レスポンスヘッダ： `ctx.res.headers`
+- HTTP レスポンスコード： `ctx.res.body.code`
+- リクエストのHTTPメソッド： `ctx.req.method`
 
-The hook is triggered every time the connector is called, so every request with the REST connector will go through this function.
+フックは、コネクタが呼び出されるたびに起動されるため、RESTコネクタを使用するすべての要求はこの関数を経由します。
 
-However, every call to the API won’t go through this hook because it does not call the `next()` function yet.
+ただし、APIの呼出しはnext()関数を呼び出さないため、APIを呼び出すたびにはこの呼び出しは行われません。
 
-To hook every POST request the server makes and put the location from the header inside the body, for example:
+すべてのPOST要求をフックするには、サーバーはヘッダのlocationをボディ内にコピーします。たとえば、次のようにします。
 
 ```js
 module.exports = function(server) {
@@ -141,12 +141,13 @@ module.exports = function(server) {
 };
 ```
 
-The `ctx.end` method needs three arguments: `err`, `ctx`, and `result`. The result is what is sent in the end, when the remote method is called.
+`ctx.end` メソッドは、3つの引数を必要とします。`err`・`ctx`・`result`です。result は、リモートメソッドが呼び出されたときに最後に送信されるものです。
 
-{% include note.html title="Caution" content="With the above code, for example, the connector never sends any errors after a POST request for instance. "
-%}
+{% include note.html title="注意" content="
+たとえば、上記のコードでは、たとえば、POSTリクエストの後にコネクターがエラーを送信することはありません。
+" %}
 
-To avoid most bugs, specify the cases where you touch `ctx`; for example:
+多くのバグを回避するために、`ctx`に触る場所で、場合分けをしておきます。例えば以下のようにします。
 
 ```js
 if (ctx.req.method === 'POST'
@@ -156,11 +157,11 @@ if (ctx.req.method === 'POST'
     }
 ```
 
-#### Error handling
+#### エラー処理
 
-There are many uses of a connector hook, such as reformatting responses from the API, useful for APIs that return XML.  You can also use a connector hook to handle errors from the API before it comes to your model inside your promise.
+コネクタフックには、APIからの応答を再フォーマットするような、XMLを返すAPIに有効な、多くの用途があります。また、コネクタフックを使用して、APIからのエラーを、プロミス内のモデルに伝わる前に処理することもできます。
 
-If you're using an API gateway, every error sent may be a HTTP error `502 Bad Gateway` when it should be `403 Forbidden`.  To avoid confusion between server errors and gateway errors, customize error handling in the hook; for example:
+APIゲートウェイを使用している場合、HTTPエラー`502 Bad Gateway`送信されうるすべてのエラーは、`403 Forbidden`であるべきです。サーバーエラーとゲートウェイエラーの混乱を避けるため、フックでエラー処理をカスタマイズしてください。例えば以下のようにします。
 
 ```js
 module.exports = function(server) {
@@ -181,7 +182,7 @@ module.exports = function(server) {
 ```
 
 
-### SOAP connector
+### SOAP コネクタ
 
 ```
 before: {req: {...}, end: ...}
@@ -191,7 +192,7 @@ before: {req: {...}, end: ...}
 after: {req: {...}, res: {...}, end: ...}
 ```
 
-Where:
+ここで、
 
-- `req` is the request object being passed to [request](https://github.com/request/request) module.
-- `res` is the response object received from [request](https://github.com/request/request) module.
+- `req` は [request](https://github.com/request/request) モジュールに渡される要求オブジェクトです。
+- `res` は [request](https://github.com/request/request) モジュールから返される応答オブジェクトです。

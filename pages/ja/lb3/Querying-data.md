@@ -1,5 +1,5 @@
 ---
-title: "Querying data"
+title: "データの検索"
 lang: ja
 layout: page
 toc: false
@@ -12,91 +12,90 @@ summary:
 {% include content/angular-methods-caveat.html lang=page.lang %}
 
 {% include see-also.html content="
-* [Fields filter](Fields-filter.html)
-* [Include filter](Include-filter.html)
-* [Limit filter](Limit-filter.html)
-* [Order filter](Order-filter.html)
-* [Skip filter](Skip-filter.html)
-* [Where filter](Where-filter.html)
-* [Querying related models](Querying-related-models.html).
+* [Fields フィルタ](Fields-filter.html)
+* [Include フィルタ](Include-filter.html)
+* [Limit フィルタ](Limit-filter.html)
+* [Order フィルタ](Order-filter.html)
+* [Skip フィルタ](Skip-filter.html)
+* [Where フィルタ](Where-filter.html)
+* [関連するモデルの検索](Querying-related-models.html).
 " %}
 
 {% include toc.html %}
 
-## Overview
+## 概要
 
-A _query_ is a read operation on models that returns a set of data or results.
-You can query LoopBack models using a Node API and a REST API, using _filters_, as outlined in the following table. Filters specify criteria for the returned data set.
-The capabilities and options of the two APIs are the same–the only difference is the syntax used in HTTP requests versus Node function calls.
-In both cases, LoopBack models return JSON.
+_検索_ は、データまたは結果のセットを返すモデルの読取操作です。
+次の表に示すように、_フィルタ_ を使用して、Node APIとREST APIでLoopBackモデルを検索することができます。フィルタは、戻されるデータセットの基準を指定します。
+2つのAPIの機能とオプションは同じですが、唯一の違いはHTTPリクエストとNode関数呼び出しで使用される構文です。
+いずれの場合も、LoopBackモデルはJSONを返します。
 
 <table>
   <thead>
     <tr>
-      <th>Query</th>
-      <th>Model API (Node)</th>
+      <th>検索</th>
+      <th>モデル API (Node)</th>
       <th>REST API</th>
     </tr>
   </thead>
   <tbody>    
     <tr>
       <td>
-        Find all model instances using specified filters.
+        指定したフィルタを使用して、すべてのモデルインスタンスを検索します。
       </td>
       <td>
         <code><a href="https://apidocs.loopback.io/loopback/#persistedmodel-find" class="external-link">find(filter, callback)</a></code>
-        Where filter is a JSON object containing the query filters.
-        See <a href="Querying-data.html">Filters</a> below.
+        ここで filter は検索フィルタを含むJSONオブジェクトです。
+        以下の<a href="Querying-data.html">フィルタ</a>を参照してください。
       </td>
       <td>
          <code>GET /<em>modelName</em>?filter...</code>
-        See <a href="PersistedModel-REST-API.html#find-matching-instances">Model REST API - Find matching instances</a>.
-        <span>See </span><a href="Querying-data.html">Filters</a> <span> below.</span>
+        <a href="PersistedModel-REST-API.html#find-matching-instances">モデル REST API - 一致するインスタンスの検索</a>を参照してください。
+        以下の<a href="Querying-data.html">フィルタ</a>を参照してください。
       </td>
     </tr>
     <tr>
-      <td>Find first model instance using specified filters.</td>
+      <td>指定したフィルタを使用して最初のモデルインスタンスを検索します。</td>
       <td>
         <code><a href="https://apidocs.loopback.io/loopback/#persistedmodel-findone" class="external-link">findOne(filter, callback)</a></code>
-        Where filter is a JSON object containing the query filters.
-        <span>See </span><a href="Querying-data.html">Filters</a> <span> below.</span>
+        ここで filter は検索フィルタを含むJSONオブジェクトです。
+        以下の<a href="Querying-data.html">フィルタ</a>を参照してください。
       </td>
       <td>
         <code><span>GET /<em>modelName</em>/findOne?filter...</span></code>
-        See <a href="PersistedModel-REST-API.html#find-first-instance">Model REST API - Find first instance</a>.
-        <span>See </span><a href="Querying-data.html">Filters</a> <span> below.</span>
+        <a href="PersistedModel-REST-API.html#find-matching-instances">モデル REST API - 最初のインスタンスの検索</a>を参照してください。
+        以下の<a href="Querying-data.html">フィルタ</a>を参照してください。
       </td>
     </tr>
     <tr>
-      <td>Find instance by ID.</td>
+      <td>IDでインスタンスを検索します。</td>
       <td>
         <code><a href="https://apidocs.loopback.io/loopback/#persistedmodel-findbyid" class="external-link">findById(id, [filter,] callback)</a></code>
-        Where optional filter is a JSON object <span>containing the query filters.</span>
-        <span><span>See </span><a href="Querying-data.html">Filters</a> <span> below.</span></span>
-
+        ここで省略可の filter は検索フィルタを含むJSONオブジェクトです。
+        以下の<a href="Querying-data.html">フィルタ</a>を参照してください。
       </td>
       <td>
         <code><span>GET /</span><em>modelName</em><span>/</span><em>modelID</em></code>
-        See <a href="PersistedModel-REST-API.html#find-instance-by-id">Model REST API - Find instance by ID</a>.
+        <a href="PersistedModel-REST-API.html#find-matching-instances">モデル REST API - IDによる検索</a>を参照してください。
       </td>
     </tr>
   </tbody>
 </table>
 
 {% include important.html content="
-A REST query must include the literal string \"filter\" in the URL query string.
-The Node API call does not include the literal string \"filter\" in the JSON.
+RESTによる検索は、URLクエリ文字列にリテラル文字列「filter」を含める必要があります。
+Node API呼び出しには、JSONのリテラル文字列「filter」を含めません。
 
-[LoopBack API Explorer](Use-API-Explorer.html) adds \"filter\" to the query string,
-but you must enter [Stringified JSON](#using-stringified-json-in-rest-queries) in the **filter** field.
-Also make sure that the quotes you use are proper straight quotes ( \" ), not curved or typographic quotation marks (  “ or ” ). These can often be hard to distinguish visually.
+[LoopBack APIエクスプローラ](Use-API-Explorer.html)は検索文字列に「filter」を追加しますが、
+**filter** フィールドに[文字列化したJSON](#using-stringified-json-in-rest-queries)を入力する必要があります。
+また、あなたが使用している引用符が、丸くなっていたり活字風だったりの引用符（“ や ”）ではなく、適切なストレート引用符（\"）であることを確認してください。これらは、しばしば視覚的に区別することが難しい場合があります。
 " %}
 
 {% include tip.html content="
-If you are trying [query filters](#filters) with curl, use the `-g` or `--globoff`  option to use brackets `[` and `]` in request URLs.
+[検索フィルタ](#filters)をcurlで試す場合、`-g` または `--globoff` オプションを使ってブラケット（`[`と`]`）をリクエストURLの中で使えるようにしてください。
 " %}
 
-LoopBack supports the following kinds of filters:
+LoopBackは、次の種類のフィルタをサポートしています。
 
 * [Fields filter](Fields-filter.html)
 * [Include filter](Include-filter.html)
@@ -105,151 +104,151 @@ LoopBack supports the following kinds of filters:
 * [Skip filter](Skip-filter.html)
 * [Where filter](Where-filter.html)
 
-See [Filters](#filters) below for more information.
+詳細は以下の[フィルタ](#filters) を参照してください。
 
-### Examples
+### 例
 
-See additional examples of each kind of filter in the individual articles on filters (for example [Where filter](Where-filter.html)).
+フィルタに関する追加の例は、各種類のフィルタの記事を参照してください（例：[Whereフィルタ](Where-filter.html)）。
 
-An example of using the `find()` method with both a _where_ and a _limit_ filter:
+`find()`メソッドで _where_ と _limit_ フィルタの両方を使用する例：
 
 ```javascript
 Account.find({where: {name: 'John'}, limit: 3}, function(err, accounts) { /* ... */ });
 ```
 
-Equivalent using REST:
+RESTを使った等価な例：
 
 `/accounts?filter[where][name]=John&filter[limit]=3`
 
-## Filters
+## フィルタ
 
-In both REST and Node API, you can use any number of filters to define a query.
+RESTとNode APIの両方で、任意の数のフィルタを使用して検索を定義できます。
 
-LoopBack supports a specific filter syntax: it's a lot like SQL, but designed specifically to serialize safely without injection and to be native to JavaScript.
-Previously, only the [`PersistedModel.find()`](http://apidocs.loopback.io/loopback/#persistedmodel-find) method (and related methods) supported this syntax.
+LoopBackは、特定のフィルタ構文をサポートしています。SQLによく似ていますが、インジェクションなしで安全にシリアル化でき、JavaScriptネイティブであるように特別に設計されています。
+以前は、この構文をサポートしていたのは[`PersistedModel.find()`](http://apidocs.loopback.io/loopback/#persistedmodel-find)メソッド（および関連するメソッド）のみでした。
 
 The following table describes LoopBack's filter types:
 
 <table>
   <thead>
     <tr>
-      <th>Filter type</th>
-      <th>Type</th>
-      <th>Description</th>
+      <th>フィルタ種別</th>
+      <th>型</th>
+      <th>説明</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td>fields</td>
-      <td>Object, Array, or String</td>
+      <td>Object・Array・String</td>
       <td>
-        Specify fields to include in or exclude from the response.
-        See <a href="Fields-filter.html">Fields filter</a>.
+        応答に含めたり除外したりするフィールドを指定します。
+        <a href="Fields-filter.html">Fields フィルタ</a>を参照してください。
       </td>
     </tr>
     <tr>
       <td>include</td>
-      <td>String, Object, or Array</td>
+      <td>String・Object・Array</td>
       <td>
-        Include results from related models, for relations such as<em>belongsTo</em>and<em>hasMany</em>.
-        See <a href="Include-filter.html">Include filter</a>.
+        <em>belongsTo</em>や<em>hasMany</em>などの関係について、関連するモデルの結果を含めます。
+        <a href="Include-filter.html">Include フィルタ</a>を参照してください。
       </td>
     </tr>
     <tr>
       <td>limit</td>
       <td>Number</td>
       <td>
-        Limit the number of instances to return.
-        See <a href="Limit-filter.html">Limit filter</a>.
+        返すインスタンスの数を制限します。
+        <a href="Limit-filter.html">Limit フィルタ</a>を参照してください。
       </td>
     </tr>
     <tr>
       <td>order</td>
       <td>String</td>
       <td>
-        Specify sort order: ascending or descending.
-        See <a href="Order-filter.html">Order filter</a>.
+        ソート順を指定指定します。（昇順・降順）
+        <a href="Order-filter.html">Order フィルタ</a>を参照してください。
       </td>
     </tr>
     <tr>
-      <td>skip (offset)</td>
+      <td>skip (オフセット)</td>
       <td>Number</td>
       <td>
-        Skip the specified number of instances.
-        See <a href="Skip-filter.html">Skip filter</a>.
+        指定した数のインスタンスを飛ばします。
+        <a href="Skip-filter.html">Skip フィルタ</a>を参照してください。
       </td>
     </tr>
     <tr>
       <td>where</td>
       <td>Object</td>
       <td>
-        Specify search criteria; similar to a WHERE clause in SQL.
-        See <a href="Where-filter.html">Where filter</a>.
+        検索条件を指定します。SQLのWHERE句に似ています。
+        <a href="Where-filter.html">Where フィルタ</a>を参照してください。
       </td>
     </tr>
   </tbody>
 </table>
 
-### REST syntax
+### REST 構文
 
-Specify filters in the [HTTP query string](http://en.wikipedia.org/wiki/Query_string):
+[HTTP クエリ文字列](http://en.wikipedia.org/wiki/Query_string)にフィルタを指定するには以下のようにします。
 
 `?filter_filterType_=_spec_&_filterType_=_spec_....`
 
-The number of filters that you can apply to a single request is limited only by the maximum URL length, which generally depends on the client used.
+１回のリクエストに適用できるフィルタの数は、URLの最大長によってのみ、制限されます。これは一般的に使用するクライアントに依存します。
 
 {% include important.html content="
-There is no equal sign after `?filter` in the query string; for example
+クエリ文字列では、`?filter` の直後に等号は書きません。例：
 `http://localhost:3000/api/books?filter[where][id]=1` 
 " %}
 
-{% include note.html content="See [https://github.com/hapijs/qs](https://github.com/hapijs/qs) for more details.
+{% include note.html content="詳細は [https://github.com/hapijs/qs](https://github.com/hapijs/qs) を参照してください。
 " %}
 
-### Node syntax
+### Node 構文
 
-Specify filters as the first argument to `find()` and `findOne()`: 
+`find()` や `findOne()`の最初の引数としてフィルタを指定するには以下のようにします。
 
 ```javascript
 { filterType: spec, filterType: spec, ... }
 ```
 
-There is no theoretical limit on the number of filters you can apply.
+適用できるフィルタの数に理論的な限界はありません。
 
-Where:
+ここで、
 
-* _filterType_ is the filter: [where](Where-filter.html), [include](Include-filter.html), [order](Order-filter.html),
-  [limit](Limit-filter.html), [skip](Skip-filter.html), or [fields](Fields-filter.html).
-* _spec_ is the specification of the filter: for example for a _where_ filter, this is a logical condition that the results must match.
-  For an _include_ filter it specifies the related fields to include.
+* _filterType_ はフィルタの種類： [where](Where-filter.html)・[include](Include-filter.html)・[order](Order-filter.html)・
+  [limit](Limit-filter.html)・[skip](Skip-filter.html)・[fields](Fields-filter.html)のいずれかです。
+* _spec_  はフィルタの仕様です。例えば _where_ フィルタなら、 結果が一致しなければならない条件を書きます。
+  _include_ フィルタなら、結果に含める関連フィールドを指定します。
 
-### Using "stringified" JSON in REST queries
+### REST 検索で「文字列化した」JSON を使う
 
-Instead of the standard REST syntax described above, you can also use "stringified JSON" in REST queries.
-To do this, simply use the JSON specified for the Node syntax, as follows:
+上記の標準的なREST構文の代わりに、REST検索で「文字列化されたJSON」を使用することもできます。
+これを行うには、次のようにNode構文用のJSONを使用します。
 
 `?filter={ Stringified-JSON }`
 
-where _Stringified-JSON_ is the stringified JSON from Node syntax. However, in the JSON all text keys/strings must be enclosed in quotes (").
+_Stringified-JSON_ はNode構文に沿った文字列化したJSONです。ただし、JSONではすべてのテキストキー/文字列を引用符（"）で囲む必要があります。
 
 {% include important.html content="
-When using stringified JSON, you must use an equal sign after `?filter` in the query string.
+文字列化されたJSONを使用する場合、クエリ文字列の`?filter` の直後に等号を使用する必要があります。
 
-For example: `http://localhost:3000/api/books?filter={%22where%22:{%22id%22:2}}` 
+例： `http://localhost:3000/api/books?filter={%22where%22:{%22id%22:2}}` 
 " %}
 
-For example: `GET /api/activities/findOne?filter={"where":{"id":1234}}`
+例： `GET /api/activities/findOne?filter={"where":{"id":1234}}`
 
-### Filtering arrays of objects
+### オブジェクトの配列をフィルタリングする
 
-The [loopback-filters](https://github.com/strongloop/loopback-filters) module implements LoopBack's filter syntax.
-Using this module, you can filter arrays of objects using the same filter syntax supported by `MyModel.find(filter)`.
+[loopback-filters](https://github.com/strongloop/loopback-filters) モジュールは、LoopBackのフィルタ構文を実装します。
+このモジュールを使用すると、`MyModel.find(filter)`でサポートされているのと同じフィルタ構文を使用して、オブジェクトの配列をフィルタリングできます。
 
 {% include note.html content="
-We plan to convert all modules to use `loopback-filter`, so it will become LoopBack's common \"built-in\" filtering mechanism.
+すべてのモジュールが`loopback-filter`を使用するように変換する予定です。このモジュールはLoopBackの一般的な「組み込み」フィルタリング機構になるでしょう。
 " %}
 
-Here is a basic example using the new module.
+ここでは、新しいモジュールを使用した基本的な例を示します。
 
 ```javascript
 var data = [{n: 1}, {n: 2}, {n: 3, id: 123}];
@@ -258,10 +257,10 @@ var filtered = require('loopback-filters')(data, filter);
 console.log(filtered); // => [{n: 3}]
 ```
 
-For a bit more detail, say you are parsing a comma-separated value (CSV) file, and you need to output all values where the price column is between 10 and 100.
-To use the LoopBack filter syntax you would need to either create your own CSV connector or use the memory connector, both of which require some extra work not related to your actual goal.
+もう少し詳しく説明すると、コンマ区切り値（CSV）ファイルを解析して、価格列が10〜100のすべての値を出力する必要があるとします。
+LoopBackフィルタ構文を使用するには、CSVコネクタか、メモリコネクタを使用する必要があります。両方とも、実際の目的には関係ない余分な作業が必要です。
 
-Once you've parsed the CSV (with a module like `node-csv`) you will have an array of objects like this, for example (but with, say, 10,000 unique items):
+CSVを（`node-csv`のようなモジュールを使って）解析すると、次のようなオブジェクトの配列が得られます（ユニークなアイテムは10,000個あるとします）。
 
 ```javascript
 [
@@ -271,7 +270,7 @@ Once you've parsed the CSV (with a module like `node-csv`) you will have an arr
 ]
 ```
 
-To filter the rows you could use generic JavaScript like this:
+これらの行をフィルタするには、以下のように一般的なJavaScriptを使うこともできます。
 
 ```javascript
 data.filter(function(item) {
@@ -279,10 +278,10 @@ data.filter(function(item) {
 });
 ```
 
-This is pretty simple for filtering, but sorting, field selection, and more advanced operations become a bit tricky.
-On top of that, you are usually accepting the parameters as input.
+これはフィルタリングには非常に簡単ですが、ソート、フィールド選択、さらに高度な操作はややこしくなります。
+さらに、通常は入力としてパラメータを受け入れます。
 
-For example:
+例えば以下のようなものです。
 
 ```javascript
 var userInput = {min: 10, max: 100}
@@ -292,30 +291,28 @@ data.filter(function(item) {
 });
 ```
 
-You can rewrite this easily as a LoopBack filter:
+これを簡単にループバックフィルタとして書き直すことができます。
 
 ```javascript
 filter(data, {where: {input: {gt: userInput.min, lt: userInput.max}}})
 ```
 
-Or if you just adopt the filter object syntax as user input:
+または、フィルタオブジェクト構文をユーザー入力として採用するだけの場合は、次のようにします。
 
 ```javascript
 filter(data, userInput)
 ```
 
-But `loopback-filter`s supports more than just excluding and including.
-It supports field selection (including / excluding fields), sorting, geo/distance sorting, limiting and skipping.
-All in a declarative syntax that is easily created from user input.
+しかし  loopback-filter、単に除外したり、含めたりするだけではありません。
+フィールドの選択（フィールドを含む/除外する）・並べ替え・位置情報/距離の並べ替え・制限とスキップをサポートしています。
+すべてがユーザー入力から簡単に作成できる宣言構文です。
 
-As a LoopBack user this is a pretty powerful thing.
-Typically, you will have learned how to write some complex queries using the `find()` filter syntax; before you would need to figure out how to do the
-same thing in JavaScript (perhaps using a library such as underscore). Now with the `loopback-filters` module, in your client application you can re-use
-the same exact filter object you were sending to the server to filter the database without having to interact with a LoopBack server at all.
+LoopBackユーザーにとって、これは非常に強力なものです。
+`find()` フィルタ構文を使用して複雑なクエリを作成する典型的な方法を学びました。前提として、JavaScriptで（underscore.jsなどのライブラリを使用して）同じことを行う方法を理解する必要があります。一方、`loopback-filters` モジュールを使えば、LoopBackサーバーと全く対話することなく、データベースをフィルタするためにサーバーに送信したのと正確に同じフィルタオブジェクトを、クライアントアプリケーションで再利用することができます。
 
-### Filtering nested properties
+### 入れ子になったプロパティのフィルタリング
 
-Loopback supports filtering nested properties in three NoSQL connectors: Mongodb, Cloudant, Memory.
+Loopbackは、Mongodb、Cloudant、Memoryの3つのNoSQLコネクタで、入れ子になったプロパティをフィルタリングすることをサポートしています。
 
 For example, model `User` contains a nested property `user.address.tags.tag`:
 
@@ -337,4 +334,4 @@ db.define('User', {
 
 users can do a nested query like `User.find({where: {'address.tags.tag': 'business'}}`.
 
-Data source connectors for relational databases don't support filtering nested properties.
+リレーショナル・データベースのコネクタは、入れ子になったプロパティのフィルタリングをサポートしていません。
