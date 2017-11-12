@@ -50,8 +50,6 @@ topnav_dropdowns:
           url: /doc/ko/lb2/
         - title: "Português (v2)"
           url: /doc/pt-br/lb2/
-        - title: "日本語 (v3)"
-          url: /doc/ja/lb3/
         - title: "日本語 (v2)"
           url: /doc/ja/lb2/
         - title: "Pусский (v2)"
