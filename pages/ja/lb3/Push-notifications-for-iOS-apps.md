@@ -1,13 +1,21 @@
 ---
 title: "Push notifications for iOS apps"
-lang: ja
+lang: en
 layout: page
+toc: false
 keywords: LoopBack
 tags:
 sidebar: ja_lb3_sidebar
 permalink: /doc/ja/lb3/Push-notifications-for-iOS-apps.html
 summary:
 ---
+
+
+{% include warning.html content="
+As a former StrongLoop Labs project, the iOS SDK may lack usability, completeness, documentation, and robustness, and may be outdated. StrongLoop/IBM is no longer maintaining this project actively, however we do provide support for our paying customers through usual IBM support channels.
+" %}
+
+{% include toc.html %}
 
 ## Overview
 

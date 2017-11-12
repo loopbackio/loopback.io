@@ -33,13 +33,13 @@ The entry in the application's `/server/datasources.json` will look like this:
 "mydb": {
   "name": "mydb",
   "connector": "postgresql"
-
   "host": "mydbhost",
-      "port": 5432,
-      "url": "postgres://admin:admin@myhost/db",
-      "database": "db1",
-      "password": "admin",
-      "user": "admin"
+  "port": 5432,
+  "url": "postgres://admin:admin@mydbhost:5432/db1?ssl=false",
+  "database": "db1",
+  "password": "admin",
+  "user": "admin",
+  "ssl": false
 }
 ```
 
@@ -55,7 +55,7 @@ Example of `datasource.json`:
   "mypostgresdb": {
     "host": "mydbhost",
     "port": 5432,
-    "url": "postgres://admin:admin@myhost/db",
+    "url": "postgres://admin:password1@mydbhost:5432/db1?ssl=false",
     "database": "db1",
     "password": "password1",
     "name": "mypostgresdb",
@@ -63,7 +63,8 @@ Example of `datasource.json`:
     "connector": "postgresql",
     "min": 5,
     "max": 200,
-    "idleTimeoutMillis": 60000
+    "idleTimeoutMillis": 60000,
+    "ssl": false
   }
 }
 ```
@@ -138,6 +139,11 @@ Check out [node-pg-pool](https://github.com/brianc/node-pg-pool) and [node postg
       <td>idleTimeoutMillis</td>
       <td>Integer</td>
       <td>Maximum time a client in the pool has to stay idle before closing it</td>
+    </tr>
+    <tr>
+      <td>ssl</td>
+      <td>Boolean</td>
+      <td>Whether to try SSL/TLS to connect to server</td>
     </tr>
   </tbody>
 </table>

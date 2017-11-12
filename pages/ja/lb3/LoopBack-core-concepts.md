@@ -1,167 +1,157 @@
 ---
-title: "LoopBack core concepts"
+title: "LoopBack の核となる概念"
 lang: ja
 layout: page
 keywords: LoopBack
 tags:
 sidebar: ja_lb3_sidebar
 permalink: /doc/ja/lb3/LoopBack-core-concepts.html
-summary: An introduction to the most important concepts needed to understand LoopBack.
+summary: LoopBackを理解するために必要な最重要概念の導入。
 ---
 
-{% include tip.html content="**Read this first** to understand how LoopBack works.
+{% include tip.html content="LoopBackがどのように動作するかを理解するために **最初に読むこと**。
 " %}
 
 <div style="float: right;">
-{% include image.html file="9830550.png" alt="Model inheritance diagram" caption="Model inheritance" max-width="400"%}
+{% include image.html file="9830550.png" alt="モデル継承図" caption="モデルの継承" max-width="400"%}
 </div>
 
-## Models
+## モデル
 
-_Models_ are at the heart of LoopBack, and represent back-end data sources such as databases or other back end services (REST, SOAP, and so on).
-LoopBack models are JavaScript objects with both Node and REST APIs.
+_モデル_ はLoopBackの心臓部であり、データベースやその他のバックエンドサービス（REST、SOAPなど）のようなバックエンドのデータソースを表現します。
+LoopBackのモデルは、NodeやREST API で使用するJavaScriptのオブジェクトです。
 
-**A key powerful feature of LoopBack is that when you define a model it automatically comes with a predefined REST API
-with a full set of create, read, update, and delete operations.**  
+**モデルを定義すると、自動的に作成・読取・更新・削除の全ての操作が揃った、定義済みのREST APIがついてくるのは、LoopBackの重要かつ強力な機能です。**
 
-The [Basic model object](Basic-model-object.html) has methods for adding [hooks](Operation-hooks.html) and for [validating data](Validating-model-data.html).
-Other model objects all "inherit from" it. Models have an inheritance hierarchy, as shown at right:
-When you attach a model to a persistent data source it becomes a [connected model](Connected-model-object.html) with create, retrieve, update, and delete operations.
-LoopBack's built-in models inherit from it.
+[基本的なモデルオブジェクト](Basic-model-object.html) は [フック](Operation-hooks.html) を追加したり、[データを検証](Validating-model-data.html)したりするためのメソッドを持っています。
+その他のモデルオブジェクトは、これらを全て継承しています。モデルには、右図のような継承の階層があります。
+モデルを永続化データソースに紐付けると、それは作成・読取・更新・削除の操作を備えた[接続済みモデル](Connected-model-object.html)になります。
+LoopBackの組み込みモデルもこれらを継承しています。
 
-### Built-in models
+### 組み込みモデル
 
-Every LoopBack application has a set of predefined 
-[built-in models](Using-built-in-models.html) such as User, Role, and Application, so you don't have to create these common models from scratch.
+全てのLoopBackアプリケーションは、User・Role・Application など、幾つかの [組み込みモデル](Using-built-in-models.html)を持っており、これらの一般的なモデルをゼロから作る必要はありません。
 
-### Custom models
+### 独自モデル
 
-You can [define your own custom models](Creating-models.html) specific to your application. 
-You can make your custom models [extend built-in models](Extending-built-in-models.html) to build on the predefined functionality of
-[User](https://apidocs.loopback.io/loopback/#user), 
-[Application](https://apidocs.loopback.io/loopback/#application),
-and other built-in models.
+アプリケーションに固有の [独自モデルを定義する](Creating-models.html) ことができます。
+[組み込みモデルを拡張](Extending-built-in-models.html)して、[User](https://apidocs.loopback.io/loopback/#user)・[Application](https://apidocs.loopback.io/loopback/#application) やその他の組み込みモデルが予め持っている機能の上に
+独自のモデルを作ることもできます。
 
-You can create LoopBack models in various ways, depending on what kind of data source the model is based on. You can create models:
+LoopBackモデルは、モデルが基づくデータソースの種類によって、いくつかの方法で作ることができます。
 
-* [With the LoopBack model generator](Using-the-model-generator.html).
-* [From an existing relational database](Discovering-models-from-relational-databases.html) using _model discovery_.
-  Then you can keep your model synchronized with the database using
-  LoopBack's [schema / model synchronization](Creating-a-database-schema-from-models.html) API.
-* [By instance introspection](Creating-models-from-unstructured-data.html) for free-form data in NoSQL databases or REST APIs.
+* [LoopBackモデル生成ツールを使用する](Using-the-model-generator.html)。
+* [既存のリレーショナルデータベースから](Discovering-models-from-relational-databases.html) _モデルの発見_ を使って。
+  この場合、モデルとデータベースを LoopBack の [スキーマ / モデル同期](Creating-a-database-schema-from-models.html) APIを使用して同期することができます。
+* NoSQL データベースや REST API の自由形式データの[インスタンス内部調査](Creating-models-from-unstructured-data.html)によって。
 
-All three of these methods create a [Model definition JSON file](Model-definition-JSON-file.html) that defines your model in LoopBack,
-by convention in a LoopBack project's `common/models` directory; for example, `common/models/account.json`.
+3つの方法はすべて、LoopBackのモデルを定義する[モデル定義JSONファイル](Model-definition-JSON-file.html)を、LoopBackプロジェクトの規約に従って `common/models` ディレクトリ内に作成します。例えば、`common/models/account.json` のようなファイルです。
 
-You can also create and customize models programmatically using the [LoopBack API](http://apidocs.loopback.io/loopback/#loopback-createmodel),
-or by manually editing the [model definition JSON file](Model-definition-JSON-file.html).
-In most cases, you shouldn't need to use those techniques to create models, but you generally will use them to modify and customize models.
+また、[LoopBack API](http://apidocs.loopback.io/loopback/#loopback-createmodel) を使って独自のモデルをプログラム的に作成したり、
+[モデル定義JSONファイル](Model-definition-JSON-file.html) を手作業で編集したりできます。
+ほとんどの場合、モデルを作成するときにこれらの方法は不要ですが、モデルを変更したりカスタマイズしたりするときにはよく使うでしょう。
 
 {% include note.html content="
-The [Model definition JSON file](Model-definition-JSON-file.html) includes an `idInjection` property that indicates
-whether LoopBack automatically adds a unique `id` property to a model. For a model connected to a database, the id property corresponds to the primary key. 
-See [ID properties](Model-definition-JSON-file.html#id-properties) for more information.
+[モデル定義JSONファイル](Model-definition-JSON-file.html) は LoopBack が自動的に一意の `id` プロパティを追加するかどうかを示す
+`idInjection` プロパティを持っています。データベースに紐付けられたモデルでは、idプロパティはプライマリキーに対応します。
+詳細は、[ID プロパティ](Model-definition-JSON-file.html#id-properties) を参照してください。
 " %}
 
-### Model relations
+### モデルのリレーション
 
-You can express [relationships between models](Creating-model-relations.html), such as 
-[BelongsTo](BelongsTo-relations.html), 
-[HasMany](HasMany-relations.html), and 
-[HasAndBelongsToMany](HasAndBelongsToMany-relations.html). 
+[多対１](BelongsTo-relations.html)・
+[１対多](HasMany-relations.html)・
+[多対多](HasAndBelongsToMany-relations.html) などの、[モデル同士のリレーション](Creating-model-relations.html)を表現できます。
 
-### Model create, retrieve, update, and delete operations
+### モデルの作成・読取・更新・削除操作
 
-When you connect a model to a persistent data source such as a database, it becomes a _[connected model](Connected-model-object.html)_ 
-with a full set of create, read, update, and delete operations from the [PersistedModel](http://apidocs.loopback.io/loopback/#persistedmodel) class:
+モデルを永続化データソースに紐付けると、それは、[PersistedModel](http://apidocs.loopback.io/loopback/#persistedmodel) クラスに由来する、作成・読取・更新・削除の操作を備えた _[接続済みモデル](Connected-model-object.html)_ になります。
 
 <table>
   <tbody>
     <tr>
-      <th>Operation</th>
+      <th>操作</th>
       <th>REST</th>
-      <th>LoopBack model method<br>(Node API)*</th>
-      <th>Corresponding SQL<br>Operation</th>
+      <th>LoopBack モデルのメソッド<br>(Node API)* </th>
+      <th>対応する SQLの<br>操作</th>
     </tr>
     <tr>
-      <td>Create</td>
+      <td>作成</td>
       <td>
         <a href="PersistedModel-REST-API.html#create-model-instance">PUT /<em>modelName</em></a>
         <br/><a href="PersistedModel-REST-API.html#update--insert-instance">POST /<em>modelName</em></a>
       </td>
-      <td><code><a href="http://apidocs.loopback.io/loopback/#persistedmodel-create" class="external-link" rel="nofollow">create()</a><sup>*</sup></code></td>
+      <td><code><a href="http://apidocs.loopback.io/loopback/#persistedmodel-create" class="external-link" rel="nofollow">create()</a><sup>* </sup></code></td>
       <td>INSERT</td>
     </tr>
     <tr>
-      <td>Read (Retrieve)</td>
+      <td>読取（取得）</td>
       <td><a href="PersistedModel-REST-API.html#find-matching-instances">GET /modelName?filter=...</a></td>
-      <td><code><a href="http://apidocs.loopback.io/loopback/#persistedmodel-find" class="external-link" rel="nofollow">find()</a><sup>*</sup></code></td>
+      <td><code><a href="http://apidocs.loopback.io/loopback/#persistedmodel-find" class="external-link" rel="nofollow">find()</a><sup>* </sup></code></td>
       <td>SELECT</td>
     </tr>
     <tr>
-      <td>Update (Modify)</td>
+      <td>更新（変更）</td>
       <td>
         <a href="PersistedModel-REST-API.html#update-model-instance-attributes">PUT /modelName</a>
       </td>
-      <td><code><a href="http://apidocs.loopback.io/loopback/#persistedmodel-updateall" class="external-link" rel="nofollow">updateAll()</a><sup>*</sup></code></td>
+      <td><code><a href="http://apidocs.loopback.io/loopback/#persistedmodel-updateall" class="external-link" rel="nofollow">updateAll()</a><sup>* </sup></code></td>
       <td>UPDATE</td>
     </tr>
     <tr>
-      <td>Delete (Destroy)</td>
+      <td>削除（破壊）</td>
       <td><a href="PersistedModel-REST-API.html#delete-model-instance">DELETE /<em>modelName</em>/<em>modelID</em></a></td>
-      <td><code><a href="http://apidocs.loopback.io/loopback/#persistedmodel-destroybyid" class="external-link" rel="nofollow">destroyById()</a><sup>*</sup></code></td>
+      <td><code><a href="http://apidocs.loopback.io/loopback/#persistedmodel-destroybyid" class="external-link" rel="nofollow">destroyById()</a><sup>* </sup></code></td>
       <td>DELETE</td>
     </tr>
   </tbody>
 </table>
 
-(*) Methods listed are just prominent examples; other methods may provide similar functionality; for example: `findById()`, `findOne()`, and `findOrCreate()`. 
+(* ) 記載されたメソッドは代表例です。同様な機能のメソッドが他にもあります。例：`findById()`・`findOne()`・`findOrCreate()`
 
-See [PersistedModel API documentation](http://apidocs.loopback.io/loopback/#persistedmodel) for more information.
+詳細は、[PersistedModel API documentation](http://apidocs.loopback.io/loopback/#persistedmodel) を参照してください。
 
-## Application logic
+## アプリケーションロジック
 
-You can add custom application logic in several ways; you can:
+いくつかの方法で、独自のアプリケーションロジックを追加できます。
 
-* [Add application logic to models](Adding-logic-to-models.html) through [remote methods](Remote-methods.html) (custom REST endpoints),
-  [remote hooks](Remote-hooks.html) that are triggered by remote methods, and [operation hooks](Operation-hooks.html) that are triggered by model create,
-  retrieve, update, and delete methods.
-* Add boot scripts that run when the application starts.
-* Define custom [middleware](Defining-middleware.html), similar to Express middleware.
+* [リモートメソッド](Remote-methods.html) (独自のRESTエンドポイント)や、リモートメソッドによって起動される [リモートフック](Remote-hooks.html)、あるいはモデルの作成・読取・更新・削除操作によって起動される [操作フック](Operation-hooks.html) として、[モデルにアプリケーションロジックを追加する](Adding-logic-to-models.html)。
+* アプリケーション開始時に実行される起動スクリプトを追加する。
+* Expressのミドルウェアに似た、独自の [ミドルウェア](Defining-middleware.html) を定義する。
 
-You can add code to [validate data](Validating-model-data.html) before saving it to the model and back-end data store.
+モデルやバックエンドのデータベースに保存する前に、[データを検証する](Validating-model-data.html)コードを追加できます。
 
-### Middleware phases
+### ミドルウェアのフェーズ
 
-_Middleware_ refers to functions executed when HTTP requests are made to REST endpoints. Since LoopBack is based on [Express](http://expressjs.com/),
-LoopBack middleware is the same as [Express middleware](http://expressjs.com/en/guide/using-middleware.html).
-However, LoopBack adds the concept of _phases_, to clearly define the order in which middleware is called.
-Using phases helps to avoid ordering issues that can occur with standard Express middleware.
+_ミドルウェア_ は、HTTPリクエストがRESTエンドポイントに届いた時に、実行される関数のことです。
+LoopBack は [Express](http://expressjs.com/)にもとづいているので、LoopBackのミドルウェアは、[Expressのミドルウェア](http://expressjs.com/en/guide/using-middleware.html)と同じです。
+しかし、LoopBackは _フェーズ_ の概念を追加し、ミドルウェアが呼び出される順番を明快に定義しました。
+フェーズを使うことで、標準的な Express のミドルウェアで起こりうる呼出し順の問題を回避しています。
 
-See [Defining middleware](Defining-middleware.html) for more information.
+詳細は、[ミドルウェアの定義](Defining-middleware.html) を参照してください。
 
-## Data sources and connectors
+## データソースとコネクタ
 
 {% include image.html file="9830484.png" alt="" %}
 
-LoopBack generalizes backend services such as databases, REST APIs, SOAP web services, and storage services as _data sources_.
+LoopBackは、データベース・REST API・SOAP Webサービスといったバックエンドービスを、_データソース_ として一般化しています。
 
-Data sources are backed by _connectors_ that then communicate directly with the database or other back-end service.
-Applications don't use connectors directly, rather they go through data sources using the 
-[DataSource](https://apidocs.loopback.io/loopback-datasource-juggler/#datasource) and 
-[PersistedModel](http://apidocs.loopback.io/loopback/#persistedmodel) APIs.
+データソースの背後には _コネクタ_ があり、データベースやその他のバックエンドサービスと直接通信します。
+アプリケーションが直接コネクタを使用することはなく、[DataSource](https://apidocs.loopback.io/loopback-datasource-juggler/#datasource)・
+[PersistedModel](http://apidocs.loopback.io/loopback/#persistedmodel) API を使用してデータソース経由で使用します。
 
-## LoopBack components
+## LoopBack コンポーネント
 
-LoopBack components provide additional "plug-in" functionality:
+LoopBack コンポーネントは、追加の「プラグイン」機能を提供します。
 
-* [Push notifications](Push-notifications.html) -  enables sending information to mobile apps for immediate
-  display in a "badge," alert, or pop-up message on the mobile device.
-* [Storage component](Storage-component.html) - enables uploading and downloading files to and from cloud storage providers
-  (Amazon, Rackspace, Openstack, and Azure) as well as the server file system.
-* [Third-party login](Third-party-login-using-Passport.html) - integrates [Passport](http://passportjs.org/) and enables user login (and account linking)
-  using third-party credentials from Facebook, Google, Twitter, Github, or any system that supports OAuth, OAuth 2, or OpenID.
-* [Synchronization](Synchronization.html) - enables mobile applications to operate offline and then synchronize
-  data with the server application when reconnected.
-* [OAuth 2.0](OAuth-2.0.html) -  enables LoopBack applications to function as oAuth 2.0 providers to authenticate and
-  authorize client applications and users to access protected API endpoints.
+* [プッシュ通知](Push-notifications.html) -  モバイルアプリに情報を送信し、
+  モバイルデバイス上にバッジ・アラート・ポップアップメッセージが直ちに表示できるようにします。
+* [ストレージコンポーネント](Storage-component.html) - サーバのファイルシステムと同様に、クラウドストレージ(Amazon・Rackspace・Openstack・Azureなど)と
+  ファイルのアップロード・ダウンロードが行えるようにします。
+* [サードパーティーのログイン](Third-party-login-using-Passport.html) - [Passport](http://passportjs.org/) を統合し、
+  ユーザが、Facebook・Google・Twitter・GitHub などのOAuth・OAuth2・OpenID をサポートする、サードパーティーの資格情報を使って
+  ログイン（そしてアカウントのリンク）を行えるようにします。
+* [同期](Synchronization.html) - モバイルアプリケーションがオフラインでも動作し、
+  再接続時にサーバアプリケーションとデータを同期できるようにします。
+* [OAuth 2.0](OAuth-2.0.html) - LoopBack アプリケーションが OAuth 2.0 プロバイダとして機能できるようにし、
+  保護されたAPIエンドポイントにアクセスしようとするクライアントアプリケーションやユーザを認証できるようにします。

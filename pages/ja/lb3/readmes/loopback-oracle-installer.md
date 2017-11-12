@@ -1,62 +1,63 @@
 # loopback-oracle-installer
 
-The Oracle connector version 3.0.0 or above depends on the [oracledb](https://github.com/oracle/node-oracledb) module as the Node.js driver for Oracle databases. Since `oracledb` is a [C++ add-on](http://nodejs.org/api/addons.html), the installation requires C++ development tools to compile and build the module from source code.  For more information, see [Installing compiler tools](http://loopback.io/doc/ja/lb3/Installing-compiler-tools.html).
+Oracleコネクタバージョン3.0.0以上は、Node.js用のOracleデータベースドライバとして、[oracledb](https://github.com/oracle/node-oracledb) モジュールに依存しています。`oracledb` は、[C++ add-on](http://nodejs.org/api/addons.html) であるため、インストールにはソースをコンパイルしてモジュールをビルドする C++ 開発ツールが必要です。詳しくは、[Installing compiler tools](http://loopback.io/doc/ja/lb3/Installing-compiler-tools.html) を参照してください。
 
-At runtime, strong-oracle also requires dynamic libraries from 
-[Oracle Database Instant Client](http://www.oracle.com/technetwork/database/features/instant-client/index.html).
+実行時には、strong-oracle が [Oracle Database Instant Client](http://www.oracle.com/technetwork/database/features/instant-client/index.html) の動的ライブラリを必要とします。
 
-The `loopback-oracle-installer` module takes care of the binary dependencies and simplifies the whole process.  
+`loopback-oracle-installer` モジュールはバイナリの依存関係を考慮し、Orackeコネクタインストールの手順を単純にします。
 
-The installer automatically downloads and extracts the prebuilt `oracledb` to the `/loopback-connector-oracle/node_modules` directory and Oracle Database Instant Client into `<UserHomeDirectory>/oracle-instant-client`.  If a prebuilt bundle does not exist for your client platform and Node version, the installer prompts you to install Oracle prerequisites.
-For more information, see  [Installing node-oracledb](https://github.com/oracle/node-oracledb/blob/master/INSTALL.md).
+インストーラは自動的に、事前ビルド済みの`oracledb`をダウンロードし、`/loopback-connector-oracle/node_modules`ディレクトリに展開します。同様に、Oracle データベースインスタントクライアントを `<UserHomeDirectory>/oracle-instant-client` に展開します。、インストーラは Oracle の前提条件をインストールするか尋ねます。
+詳細は、[Installing node-oracledb](https://github.com/oracle/node-oracledb/blob/master/INSTALL.md) を参照してください。
 
-Once you've installed the Oracle prerequisites, re-install the Oracle connector by entering following command:
+Oracle の前提条件をインストールしたら、以下のコマンドでOracleコネクタを再インストールします。
 
 ```shell
 $ npm install loopback-connector-oracle --save
 ```
 
-This internally executes the `npm install oracledb` command.
+これは、内部で `npm install oracledb` コマンドを実行します。
 
-## Troubleshooting
+## トラブルシューティング
 
-If you have problems installing `loopback-connector-oracle`, make sure this symbolic link exists:
+`loopback-connector-oracle` のインストールで問題が起きたら、以下のシンボリックリンクが存在することを確認してください。
 
 ```
 libclntsh.dylib -> libclntsh.dylib.11.1
 ```
 
-Make sure you've set the following environment variables (for example on OS X):
+また、以下の環境変数がセットされていることを確認してください。
 
 ```
 $ export OCI_LIB_DIR=$HOME/oracle-instant-client
 $ export OCI_INC_DIR=$HOME/oracle-instant-client/sdk/include
 ```
 
-If a prebuilt bundle does not exist for your client platform and Node version, and you have installed
-Oracle pre-requisites as described in [Installing node-oracledb](https://github.com/oracle/node-oracledb/blob/master/INSTALL.md), then
-set the environment variables as follows:
+もし、プラットフォームやNodeのバージョンに合った事前ビルド済みのバンドルが存在せず、
+[Installing node-oracledb](https://github.com/oracle/node-oracledb/blob/master/INSTALL.md) に記載されたOracleの前提条件をインストールした場合、
+以下のように環境変数をセットしてください。
 
 ```
 $ export OCI_LIB_DIR=/opt/oracle/instantclient
 $ export OCI_INC_DIR=/opt/oracle/instantclient/sdk/include
 ```
 
-## Post-installation setup
+## インストール後のセットアップ
 
-{% include warning.html content="Before you run the application, you **MUST** configure the environment variable depending on the target platform to make sure the dynamic libraries
-from Oracle Instant Client are available to your Node process.
+{% include warning.html content="Oracleインスタントクライアントが Node プロセスから利用可能にするために、アプリケーションを実行する前に、
+対象とするプラットフォームによる環境変数を **設定しなければなりません** 。
 " %}
 
-### MacOS X or Linux
+### MacOS X または Linux
 
-Enter this command to set the `LD_LIBRARY_PATH` environment variable:
+以下のコマンドを実行して、`LD_LIBRARY_PATH` 環境変数をセットします。
 
 ```
 $ export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:$HOME/oracle-instant-client"
 ```
 
-If a prebuilt bundle does not exist for your client platform and Node version, and you have installed Oracle prerequisites as per [Installing node-oracledb](https://github.com/oracle/node-oracledb/blob/master/INSTALL.md), then set the environment variables as follows:
+もし、プラットフォームやNodeのバージョンに合った事前ビルド済みのバンドルが存在せず、
+[Installing node-oracledb](https://github.com/oracle/node-oracledb/blob/master/INSTALL.md) に記載されたOracleの前提条件をインストールした場合、
+以下のように環境変数をセットしてください。
 
 ```
 $ export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:$OCI_LIB_DIR"
@@ -64,7 +65,7 @@ $ export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:$OCI_LIB_DIR"
 
 ### Linux
 
-On Linux systems, the `libaio` library is required. If it is not present, you must install it as follows:
+Linuxでは、`libaio` ライブラリが必要です。もし存在しない場合、以下のようにインストールしなければなりません。
 
 Ubuntu/Debian:
 
@@ -80,13 +81,14 @@ $ sudo yum install libaio
 
 ### Windows
 
-Set the PATH environment variable for the logged-in user.  Note however that the PATH setting will NOT be effective immediately. You  must activate it using one of the methods below:
+ログインユーザのPATH環境変数を設定します。PATHの設定は直ちに効果が出ないことに注意してください。
+以下の方法で、設定を有効にしなければなりません。
 
-1.  Log off the current user session and log in again.
-2.  Follow these steps to reset environment variables:
-    - Open Control Panel --> System --> Advanced System Settings --> Environment Variables.
-    - Examine the **Path** under **User variables**, and click **OK** to activate it.
-    - Open a new Command Prompt then enter the 'path' command to verify.
+1.  現在のセッションからログオフし、再度ログインする。
+2.  以下の手順に従って、環境変数をリセットする。
+    - コントロールパネルを開く --> システム --> システムの詳細設定 --> 環境変数
+    - **ユーザ環境変数** の中にある **Path** を編集し、**OK** をクリックして有効化する。
+    - 新しいコマンドプロンプトを開き、'path'と入力して確認する。
 
 ## Installation behind a proxy server
 

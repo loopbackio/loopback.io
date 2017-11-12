@@ -2,6 +2,7 @@
 title: "Push notifications using Android SDK"
 lang: ja
 layout: page
+toc: false
 keywords: LoopBack
 tags:
 sidebar: ja_lb3_sidebar
@@ -9,10 +10,16 @@ permalink: /doc/ja/lb3/Push-notifications-using-Android-SDK.html
 summary:
 ---
 
+{% include warning.html content="
+As a former StrongLoop Labs project, the Android SDK may lack usability, completeness, documentation, and robustness, and may be outdated. StrongLoop/IBM is no longer maintaining this project actively, however we do provide support for our paying customers through usual IBM support channels.
+" %}
+
 {% include see-also.html content="
 * [Android SDK API docs](http://apidocs.loopback.io/loopback-sdk-android/api/index.html)
-* [loopback-android-getting-started](https://github.com/strongloop/loopback-android-getting-started)
+* [loopback-android-getting-started](https://github.com/strongloop-community/loopback-android-getting-started)
 " %}
+
+{% include toc.html %}
 
 ## Overview
 

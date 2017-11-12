@@ -1,5 +1,5 @@
 ---
-title: "Oracle connector"
+title: "Oracle コネクタ"
 lang: ja
 layout: navgroup
 navgroup: oracle
@@ -8,10 +8,8 @@ keywords: LoopBack
 tags: connectors
 sidebar: ja_lb3_sidebar
 permalink: /doc/ja/lb3/Oracle-connector.html
-summary: The Oracle connector enables LoopBack applications to connect to Oracle data sources.
+summary: Oracle コネクタを使うと、LoopBackアプリケーションが Oracle データソースに接続できます。
 ---
 {% include tip.html content="
-Use the [Oracle installer command](Oracle-installer-command.html), `lb oracle`,
-to easily install and troubleshoot installing `loopback-oracle-installer`
-and the Oracle data source connector.  
+`loopback-oracle-installer` と Oracle データソースコネクタのインストールおよびトラブル解決を簡単にするために、[Oracle インストーラコマンド](Oracle-installer-command.html), `lb oracle`, を使用すること。
 " %}

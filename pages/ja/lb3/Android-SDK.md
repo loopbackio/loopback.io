@@ -10,12 +10,15 @@ permalink: /doc/ja/lb3/Android-SDK.html
 summary: The Android SDK provides a simple Java API that enables an Android app to interact with a LoopBack server application.
 ---
 
-{% include content/ja/strongloop-labs.html %}
+{% include warning.html content="
+As a former StrongLoop Labs project, the Android SDK may lack usability, completeness, documentation, and robustness, and may be outdated. StrongLoop/IBM is no longer maintaining this project actively, however we do provide support for our paying customers through usual IBM support channels.
+" %}
+
 
 {% include see-also.html content="
 * [Download Android SDK](http://81b70ddedaf4b27b1592-b5e75689411476c98957e7dab0242f50.r56.cf2.rackcdn.com/loopback-sdk-android-1.5.3-eclipse-bundle.zip)
 * [Android SDK API docs](http://apidocs.loopback.io/loopback-sdk-android/api/index.html)
-* [loopback-android-getting-started](https://github.com/strongloop/loopback-android-getting-started)
+* [loopback-android-getting-started](https://github.com/strongloop-community/loopback-android-getting-started)
 " %}
 
 {% include toc.html %}
@@ -55,7 +58,7 @@ The guide app comes ready to compile with Android Studio and each tab in the app
 ### Prerequisites
 
 If you haven't already created your application backend, see
-[loopback-android-getting-started](https://github.com/strongloop/loopback-android-getting-started).
+[loopback-android-getting-started](https://github.com/strongloop-community/loopback-android-getting-started).
 The Android guide app will connect to the this backend sample app.
 
 Before you start, make sure you've installed the [Eclipse Android Development Tools](http://developer.android.com/sdk/index.html) (ADT).
@@ -153,7 +156,7 @@ Click the LoopBack app icon in the home screen to view the LoopBack Android guid
 **Problem**: Build fails with the message `Unable to resolve target 'android-18'`.
 
 **Resolution**: You need to install Android 4.3 (API 18) SDK.
-See [Prerequisites](https://github.com/strongloop/loopback-android/blob/master/docs/GettingStarted.md#prerequisites) 
+See [Prerequisites](https://github.com/strongloop-community/loopback-android/blob/master/docs/GettingStarted.md#prerequisites) 
 for instructions on how to install SDK components.
 
 If you don't want to install an older SDK and want to use the most recent one (for example, Android 4.4 API 19), follow these steps:
@@ -284,7 +287,7 @@ var Widget = app.model('widget', {
 ```
 
 Because of this the class name (`'widget'`, above) needs to match the name that model was given on the server.
-If you don't have a model, [see the LoopBack documentation](https://github.com/strongloop/loopback-sdk-android/blob/master/docs/Subclassing.md) for more information. 
+If you don't have a model, [see the LoopBack documentation](https://github.com/strongloop-community/loopback-sdk-android/blob/master/docs/Subclassing.md) for more information. 
 The model _must_ exist (even if the schema is empty) before it can be interacted with.
 
 Use this to make creating Models easier. Match the name or create your own.
