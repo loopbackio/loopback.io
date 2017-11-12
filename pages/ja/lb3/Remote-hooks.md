@@ -1,5 +1,5 @@
 ---
-title: "Remote hooks"
+title: "リモートフック"
 lang: ja
 layout: navgroup
 navgroup: app-logic
@@ -7,36 +7,36 @@ keywords: LoopBack
 tags: application_logic
 sidebar: ja_lb3_sidebar
 permalink: /doc/ja/lb3/Remote-hooks.html
-summary: A remote hook runs before or after execution of a model's remote method.
+summary: リモートフックは、モデルのリモートメソッドが実行される前か、実行された後に動きます。
 ---
-## Overview
+## 概要
 
-LoopBack provides three kinds of hooks:
+LoopBackは３種類のフックを提供しています。
 
-* **Remote hooks**, that execute before or after calling a remote method, either a custom [remote method](Remote-methods.html) 
-  or a standard create, retrieve, update, and delete method inherited from [PersistedModel](http://apidocs.loopback.io/loopback/#persistedmodel).
-  See [PersistedModel REST API](PersistedModel-REST-API.html) for information on how the Node methods correspond to REST operations.
-* **[Operation hooks](Operation-hooks.html)** that execute when models perform create, retrieve, update, and delete operations.  Operation hooks replace deprecated model hooks.
-- **[Connector hooks](Connector-hooks.html)** that execute before requests to a data source connector or after the connector's response.
+* **リモートフック** リモートメソッドの呼出し前または呼出し後に実行する。メソッドは独自の[リモートメソッド](Remote-methods.html)でも、
+  [PersistedModel](http://apidocs.loopback.io/loopback/#persistedmodel) から継承した標準的な作成・取得・更新・削除メソッドでもよい。
+  REST操作に対応するNodeメソッドについては[PersistedModelのREST API](PersistedModel-REST-API.html)を参照。
+* **[操作フック](Operation-hooks.html)** モデルが作成・取得・更新・削除の操作を行った時に実行する。操作フックは、非推奨になったモデルフックを置き換えるものである。
+- **[コネクタフック](Connector-hooks.html)** はリクエストがデータソースコネクタを要求する前か、コネクタの応答後に実行する。
 
-A _remote hook_ enables you to execute a function before or after a remote method is called by a client:
+_リモートフック_ は、クライアントによって呼び出されたリモートメソッドが実行される前、または後に、関数を実行できるようにするものです。
 
-* `beforeRemote()` runs before the remote method.
-* `afterRemote()` runs after the remote method has finished successfully.
-* `afterRemoteError()` runs after the remote method has finished with an error.
+* `beforeRemote()` はリモートメソッドの前に実行します。
+* `afterRemote()` はリモートメソッドが正常に終了した後に実行します。
+* `afterRemoteError()` はリモートメソッドがエラーになった後に実行します。
 
-{% include tip.html content="Use beforeRemote hooks to validate and sanitize inputs to a remote method.
-Because a beforeRemote hook runs _before_ the remote method is executed, it can access the inputs to the remote method, but not the result.
+{% include tip.html content="beforeRomote フックを使うと、リモートメソッドへの入力を検証あるいは無害化できます。
+beforeRemote フックは、リモートメソッドが実行される _前に_ 実行されるので、リモートメソッドの入力にアクセスすることはできますが、結果にはできません。
 
-Use afterRemote hooks to modify, log, or otherwise use the results of a remote method before sending it to a remote client.
-Because an afterRemote hook runs _after_ the remote method is executed, it can access the result of the remote method, but cannot modify the input arguments.
+afterRemote フックは、リモートメソッドの結果を、クライアントに送信する前に、修正・記録・その他に使用することができます。
+afterRemote フックは、リモートメソッドが実行された _後に_ 実行されるので、リモートメソッドの結果にアクセスできますが、入力引数を変更することはできません。
 " %}
 
-### Signature
+### シグネチャ
 
-Both `beforeRemote()` and `afterRemote()` have the same signature; below syntax uses beforeRemote but afterRemote is the same.
+`beforeRemote()` も `afterRemote()` も同じシグネチャです。以下の構文は beforeRemote を使っていますが、afterRemoteも同じです。
 
-For static custom remote methods:
+静的な独自のリモートメソッドの場合は、以下のようになります。
 
 ```javascript
 modelName.beforeRemote( methodName, function( ctx, next) {
@@ -45,13 +45,13 @@ modelName.beforeRemote( methodName, function( ctx, next) {
 });
 ```
 
-Where:
+ここで、
 
-- `modelName` is the name of the model that has the remote method.
-- `methodName` is the name of the remote method.
+- `modelName` は、リモートメソッドをもつモデル名です。
+- `methodName` は、リモートメソッドの名前です。
 
-Instance methods and static built-in methods such as [`upsert()`](http://apidocs.loopback.io/loopback/#persistedmodel-upsert) or 
-[`create()`](http://apidocs.loopback.io/loopback/#persistedmodel-create) require a third argument in the callback:
+[`upsert()`](http://apidocs.loopback.io/loopback/#persistedmodel-upsert)や、[`create()`](http://apidocs.loopback.io/loopback/#persistedmodel-create) のような
+インスタンスメソッドあるいは静的な組み込みメソッドは、３番目の引数としてコールバックが必要です。
 
 ```javascript
 modelName.beforeRemote( methodName, function( ctx, modelInstance, next) {
@@ -60,7 +60,7 @@ modelName.beforeRemote( methodName, function( ctx, modelInstance, next) {
 });
 ```
 
-The hook `afterRemoteError()` has a slightly different signature: The handler function has only two arguments:
+`afterRemoteError()` は少し異なるシグネチャです。ハンドラ関数は２つの引数しかありません。
 
 ```javascript
 modelName.afterRemoteError( methodName, function( ctx, next) {
@@ -69,35 +69,35 @@ modelName.afterRemoteError( methodName, function( ctx, next) {
 });
 ```
 
-Where:
+ここで、
 
-* `modelName` is the name of the model to which the remote hook is attached.
-* `methodName` is the name of the method that triggers the remote hook. This may be a custom [remote method](Remote-methods.html)
-  or a standard create, retrieve, update, and delete method inherited from [PersistedModel](http://apidocs.loopback.io/loopback/#persistedmodel).
-  It may include wildcards to match more than one method (see below).
-* `ctx` is the [context object](#context-object). 
-* `modelInstance` is the affected model instance.
+* `modelName` は、リモートフックが接続されたモデルの名前です。
+* `methodName` は、リモートフックを起動するメソッドの名前です。独自の[リモートメソッド](Remote-methods.html)でも、
+  [PersistedModel](http://apidocs.loopback.io/loopback/#persistedmodel) から継承した、標準の作成・読取・更新・削除メソッドでも構いません。
+  一つ以上のメソッドにマッチさせるために、ワイルドカードを使うことができます。（以下参照）
+* `ctx` は [コンテキストオブジェクト](#context-object)です。
+* `modelInstance` は作用を受けるモデルのインスタンスです。
 
-The syntax above includes a call to `next()` as a reminder that you must call `next()` at some point in the remote hook callback function.
-It doesn't necessarily have to come at the end of the function, but must be called at some point before the function completes.
+`next()`の呼出しを含む上の構文は、リモートフックのコールバック関数のどこかで、必ず `next()` を呼び出さねばならないことのリマインダです。
+必ずしも関数の最後である必要はありませんが、関数の処理が終わる前に、どこかで呼び出す必要があります。
 
-#### Wildcards
+#### ワイルドカード
 
-You can use the following wildcard characters in `methodName`:
+`methodName` では、以下のようなワイルドカードを使えます。
 
-* Asterisk `'*'` to match any character, up to the first occurrence of the delimiter character `'.'` (period).
-* Double-asterisk to match any character, including the delimiter character `'.'` (period).
+* アスタリスク `'*'` は、最初に区切り文字 `'.'` （ピリオド）が現れるまで、あらゆる文字にマッチします。
+* ２重アスタリスクは、区切り文字 `'.'` （ピリオド）を含むあらゆる文字にマッチします。
 
-For example, use `'*.*'` to match any static method; use `'prototype.*'` to match any instance method.
+例えば、`'*.*'` とすると、全ての静的メソッドにマッチし、`'prototype.*'`とすると、全てのインスタンスメソッドにマッチします。
 
-## Examples
+## 例
 
-The following example defines beforeRemote and afterRemote hooks for the `revEngine()` remote method:
+次の例では、`revEngine()` リモートメソッドのbeforeRemoteフックとafterRemoteフックを定義しています。
 
 {% include code-caption.html content="common/models/car.js" %}
 ```javascript
 module.exports = function(Car) {
-  // remote method
+  // リモートメソッド
   Car.revEngine = function(sound, cb) {
     cb(null, sound - ' ' - sound - ' ' - sound);
   };
@@ -109,12 +109,12 @@ module.exports = function(Car) {
       http: {path:'/rev-engine', verb: 'post'}
     }
   );
-  // remote method before hook
+  // リモートメソッド前のフック
   Car.beforeRemote('revEngine', function(context, unused, next) {
     console.log('Putting in the car key, starting the engine.');
     next();
   });
-  // remote method after hook
+  // リモートメソッド後のフック
   Car.afterRemote('revEngine', function(context, remoteMethodOutput, next) {
     console.log('Turning off the engine, removing the key.');
     next();
@@ -123,7 +123,7 @@ module.exports = function(Car) {
 }
 ```
 
-The following example uses wildcards in the remote method name. This remote hook is called whenever any remote method whose name ends with "save" is executed:
+次の例では、リモートメソッド名にワイルドカードを使用しています。このリモートフックは、 "save"で終わる名前のリモートメソッドが実行されるたびに呼び出されます
 
 {% include code-caption.html content="common/models/customer.js" %}
 ```javascript
@@ -143,28 +143,28 @@ Customer.afterRemote('*.save', function(ctx, user, next) {
 
 {% include important.html content="
 
-The second argument to the hook (`user` in the above example) is the `ctx.result` which is not always available.
+フックの2番目の引数は（上の例では `user`）は、`ctx.result` ですが、常に利用できるわけではありません。
 
 " %}
 
-Below are more examples of remote hooks with wildcards to run a function before any remote method is called.
+以下に、リモートメソッドが呼び出される前に関数を実行するためのワイルドカードを使用したリモートフックの例を示します。
 
 {% include code-caption.html content="common/models/customer.js" %}
 ```javascript
-// ** will match both prototype.* and *.*
+// ** prototype.* と *.* の両方にマッチする
 Customer.beforeRemote('**', function(ctx, user, next) {
   console.log(ctx.methodString, 'was invoked remotely'); // customers.prototype.save was invoked remotely
   next();
 });
 
 Other wildcard examples
-// run before any static method eg. User.find
+// 全ての静的メソッドの前に実行される 例：User.find
 Customer.beforeRemote('*', ...);
 
-// run before any instance method eg. User.prototype.save
+// 全てのインスタンスメソッドの前に実行される 例：User.prototype.save
 Customer.beforeRemote('prototype.*', ...);
 
-// prevent password hashes from being sent to clients
+// パスワードハッシュがクライアントに送信されるのを防ぐ
 Customer.afterRemote('**', function (ctx, user, next) {
   if(ctx.result) {
     if(Array.isArray(ctx.result)) {
@@ -180,7 +180,7 @@ Customer.afterRemote('**', function (ctx, user, next) {
 });
 ```
 
-A safer means of effectively white-listing the fields to be returned by copying the values into new objects:
+値を新しいオブジェクトにコピーすることによって、返されるフィールドを効果的にホワイトリストする安全な手段です。
 
 {% include code-caption.html content="common/models/account.js" %}
 ```javascript
@@ -209,9 +209,9 @@ Account.afterRemote('**', function(ctx, modelInstance, next) {
 });
 ```
 
-### Examples of afterRemoteError
+### afterRemoteErrorの例
 
-Perform an additional action when the instance method `speak()` fails:
+インスタンスメソッド`speak()`が失敗したときに追加のアクションを実行するには以下のようにします。
 
 {% include code-caption.html content="common/models/dog.js" %}
 ```javascript
@@ -221,7 +221,7 @@ Dog.afterRemoteError('prototype.speak', function(ctx, next) {
 });
 ```
 
-Attach extra metadata to error objects:
+エラーオブジェクトにメタデータを加えます。
 
 {% include code-caption.html content="common/models/dog.js" %}
 ```javascript
@@ -232,7 +232,7 @@ Dog.afterRemoteError('**', function(ctx, next) {
 })
 ```
 
-Report a different error back to the caller:
+呼び出し元に別のエラーを報告します。
 
 {% include code-caption.html content="common/models/dog.js" %}
 ```javascript
@@ -242,45 +242,44 @@ Dog.afterRemoteError('prototype.speak', function(ctx, next) {
 });
 ```
 
-## Context object
+## コンテキストオブジェクト
 
-Remote hooks are provided with a Context `ctx` object that contains transport-specific data (for HTTP: `req` and `res`). The `ctx` object also has a set of consistent APIs across transports.
+リモートフックには、プロトコル固有のデータ（HTTPの場合 `req`と`res`）を含むコンテキストオブジェクト`ctx`が用意されています。`ctx` オブジェクトは、プロトコル間で一貫したAPI一式を持っています。
 
-Applications that use [loopback.rest()](https://apidocs.loopback.io/loopback/#loopback-rest) middleware provide the following additional `ctx` properties:
+[loopback.rest()](https://apidocs.loopback.io/loopback/#loopback-rest) ミドルウェアを使うアプリケーションは、次の追加`ctx`プロパティが提供されます。
 
-* `ctx.req`: Express [Request](http://expressjs.com/api.html#req) object. 
+* `ctx.req`: Expressの[Request](http://expressjs.com/api.html#req)オブジェクト
 
-* `ctx.res`: Express [Response](http://expressjs.com/api.html#res) object.
+* `ctx.res`: Expressの[Response](http://expressjs.com/api.html#res)オブジェクト
 
-The context object passed to `afterRemoteError()` hooks has an additional property `ctx.error` set to the Error reported by the remote method.
+`afterRemoteError()` フックに渡されたコンテキストオブジェクトには、リモートメソッドによって報告されたエラーが設定された追加のプロパティ `ctx.error` があります。
 
-Other properties:
+その他のプロパティ：
 
-* `ctx.args` - Object containing the HTTP request argument definitions. Uses the arg definition to find the value from the request. These are the input values to the remote method.
-* `ctx.result` - An object keyed by the argument names.
-  Exception: If the root property is true, then it's the value of the argument that has root set to true. 
+* `ctx.args` - HTTPリクエストの引数定義を含むオブジェクト。arg定義を使用して、リクエストから値を探します。これらは、リモートメソッドへの入力値です。
+* `ctx.result` - 引数名をキーとするオブジェクト
+    例外：rootプロパティがtrueの場合、ルートがtrueに設定されている引数の値になります。
 
 ### ctx.req.accessToken
 
-The `accessToken` of the user calling the remote method.
+リモートメソッドを呼び出したユーザの `accessToken`。
 
 {% include important.html content="
 
-`ctx.req.accessToken` is undefined if the remote method is not invoked by a logged in user (or other principal).
-
+ログインしているユーザー（または他のプリンシパル）によってリモートメソッドが呼び出されない場合、`ctx.req.accessToken`は undefined です。
 " %}
 
 ### ctx.result
 
-During `afterRemote` hooks, `ctx.result` will contain the data about to be sent to a client. Modify this object to transform data before it is sent.
+`afterRemote` フック中で `ctx.result` には、クライアントに送信される予定のデータが格納されます。このオブジェクトを変更して送信前にデータを変換します。
 
 {% include important.html content="
 
-The value of  `ctx.result` may not be available at all times.
+`ctx.result` の値は、常に利用できるとは限りません。
 
 " %}
 
-If a remote method explicitly specifies the returned value, only then would `ctx.result` be set. So your remote method must do something like:
+リモートメソッドが返された値を明示的に指定している場合のみ、ctx.resultが設定されます。したがって、リモートメソッドは次のようなことをしなければなりません。
 
 ```javascript
 MyModel.remoteMethod('doSomething', {

@@ -1,5 +1,5 @@
 ---
-title: "Limit filter"
+title: "Limit フィルタ"
 lang: ja
 layout: page
 keywords: LoopBack
@@ -9,7 +9,7 @@ permalink: /doc/ja/lb3/Limit-filter.html
 summary:
 ---
 
-A _limit_ filter limits the number of records returned to the specified number (or less).
+_limit_ フィルタは返されるレコードの件数を指定した数（またはそれ未満）に制限します。
 
 {% include content/angular-methods-caveat.html lang=page.lang %}
 
@@ -19,7 +19,7 @@ A _limit_ filter limits the number of records returned to the specified number
 filter[limit]=<i>n</i>
 </pre>
 
-You can also use [stringified JSON format](Querying-data.html#using-stringified-json-in-rest-queries) in a REST query.
+REST検索の[文字列化したJSON形式](Querying-data.html#using-stringified-json-in-rest-queries) を参照してください。
 
 ### Node API
 
@@ -27,11 +27,11 @@ You can also use [stringified JSON format](Querying-data.html#using-stringified
 { limit: <i>n</i> }
 </pre>
 
-Where _n_ is the maximum number of results (records) to return.
+ここで _n_ は返される結果（レコード）の最大値です。
 
-### Examples
+### 例
 
-Return only the first five query results:
+検索結果のうち、最初の５件だけを返します。
 
 **REST**
 

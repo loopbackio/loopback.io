@@ -1,4 +1,13 @@
-<div markdown="span" class="alert alert-danger" role="alert"><i class="fa fa-exclamation-circle"></i><b>Warning:</b>
+<div markdown="span" class="alert alert-danger" role="alert"><i class="fa fa-exclamation-circle"></i>
+{% if include.lang == "ja" %}
+<b>警告：</b>
+[AngularJS クライアント](AngularJS-JavaScript-SDK.html) のモデルのメソッドは、上記Node APIとは異なるシグネチャを持っています。
+
+詳細は、[AngularJS SDK API](http://apidocs.loopback.io/loopback-sdk-angular/)を参照してください。
+{% else %}
+<b>Warning:</b>
 Methods of models in the [AngularJS client](AngularJS-JavaScript-SDK.html) have a different signature than those of the Node API.
 
-For more information, see [AngularJS SDK API](http://apidocs.loopback.io/loopback-sdk-angular/).</div>
+For more information, see [AngularJS SDK API](http://apidocs.loopback.io/loopback-sdk-angular/).
+{% endif %}
+</div>
