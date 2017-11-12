@@ -10,7 +10,7 @@ permalink: /doc/ja/lb3/Creating-an-application.html
 summary: LoopBackアプリケーション生成ツールを使って、新しいアプリケーションを作ります。
 ---
 
-{% include content/gs-prereqs.html lang=page.lang %}
+{% include content/ja/gs-prereqs.html %}
 
 ## アプリケーション生成ツールを使う
 

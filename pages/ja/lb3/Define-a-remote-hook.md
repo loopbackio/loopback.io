@@ -10,7 +10,7 @@ permalink: /doc/ja/lb3/Define-a-remote-hook.html
 summary: A remote hook is a function that's executed before or after a remote method.
 ---
 
-{% include content/gs-prereqs.html two="true" lang=page.lang %}
+{% include content/ja/gs-prereqs.html two="true" %}
 
 {% include note.html content="
 If you followed the previous step in the tutorial, go to [Introducing remote hooks](#introducing-remote-hooks).

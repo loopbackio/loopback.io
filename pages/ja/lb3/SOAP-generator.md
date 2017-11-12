@@ -12,7 +12,7 @@ summary: The SOAP generator creates models from a SOAP web service.
 {% include toc.html %}
 <br clear="all"/>
 
-{% include content/generator-create-app.html lang=page.lang %}
+{% include content/ja/generator-create-app.html %}
 
 ### Synopsis
 

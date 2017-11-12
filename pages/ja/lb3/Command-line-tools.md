@@ -17,4 +17,4 @@ The commands are listed below roughly in the order that you would use them.
 
 ## Commands
 
-{% include content/commands.html %}
+{% include content/ja/commands.html %}

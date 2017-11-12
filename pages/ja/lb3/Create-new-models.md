@@ -11,7 +11,7 @@ summary: Creating models with the model generator is quick and easy.
 
 ---
 
-{% include content/gs-prereqs.html two="true" lang=page.lang %}
+{% include content/ja/gs-prereqs.html two="true" %}
 
 Recall in [Create a simple API](Create-a-simple-API) step of [Getting started](Getting-started-with-LoopBack) you created a CoffeeShop model.
 

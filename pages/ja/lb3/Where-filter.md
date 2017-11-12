@@ -1,17 +1,17 @@
 ---
-title: "Where filter"
+title: "Where フィルタ"
 lang: ja
 layout: page
 keywords: LoopBack
 tags:
 sidebar: ja_lb3_sidebar
 permalink: /doc/ja/lb3/Where-filter.html
-summary: A <i>where</i> filter specifies a set of logical conditions to match, similar to a WHERE clause in a SQL query.
+summary: <i>where</i>フィルタは、SQL検索のWHERE句に似て、一致すべき条件のセットを指定します。
 ---
 ## REST API
 
-In the first form below, the condition is equivalence, that is, it tests whether _property_ equals _value_.
-The second form below is for all other conditions.
+下の最初の形式は、等価条件です。つまり、_プロパティ_ が _値_ と等しいかどうかをテストします。
+下の2番目のフォームは、他のすべての条件です。
 
 ```
 filter[where][property]=value
@@ -21,41 +21,40 @@ filter[where][property]=value
 filter[where][property][op]=value
 ```
 
-For example, if there is a cars model with an `odo` property, the following query finds instances where the `odo` is greater than 5000:
+例えば、`odo`プロパティを持つ自動車(car)モデルがあったとして、以下の検索では `odo` が5000より大きいインスタンスを抽出します。
 
 ```
 /cars?filter[where][odo][gt]=5000
 ```
 
-For example, here is a query to find cars with `odo` is less than 30,000:
+例えば、これは `odo` が30,000よりも小さい自動車を検索します。
 
 ```
 /cars?filter[where][odo][lt]=30000
 ```
 
-You can also use [stringified JSON format](Querying-data.html#using-stringified-json-in-rest-queries) in a REST query.
+REST検索では、[文字列化したJSON形式](Querying-data.html#using-stringified-json-in-rest-queries)を使うこともできます。
 
-### Filter limit
+### フィルタの制限
 
-{% include important.html content="There is a limit of twenty filters (combined with AND or OR) using this format, due to the use of [qs](https://github.com/ljharb/qs#parsing-arrays).  When there are more than twenty, the filter is converted into an `Object` where it is expecting
-an `Array`. See [LoopBack issue #2824](https://github.com/strongloop/loopback/issues/2824) for more details.
+{% include important.html content="[qs](https://github.com/ljharb/qs#parsing-arrays) を使用するため、この形式の使用には（ANDまたはORと組み合わせて）20個のフィルタまでの制限があります。20を超えるフィルタがある場合、フィルタは `Arary` が期待される場所で、`Object` に変換されるためエラーになります。詳細については[LoopBack issue #2824](https://github.com/strongloop/loopback/issues/2824)を参照してください。
 " %}
 
-There are two ways to work around the filter limit:
+フィルタの制限を回避する方法は２つあります。
 
-- Encode the large filter object as "stringified JSON."
-- Override the limit manually in `server/server.js`, before boot is called.
+- 大きなフィルタオブジェクトを、「文字列化したJSON」に変換する。
+- `server/server.js` で `boot()` が呼び出される前に、制限値を変更する。
 
-**Encode filter object as JSON**
+**フィルタオブジェクトをJSONに変換する**
 
 ```
 http://localhost:3000/api/Books
 ?filter={"where":{"or":[{"id":1},{"id":2},...,{"id":20"},{"id":21}]}}
 ```
 
-**Override limit in `server.js`**
+**`server.js` で制限値を上書きする**
 
-```js
+```javascript
 // In `server/server.js`, before boot is called
 var loopback = require('loopback');
 var boot = require('loopback-boot');
@@ -72,12 +71,12 @@ app.start = function() {
 
 ## Node API
 
-{% include content/angular-methods-caveat.html lang=page.lang %}
+{% include content/ja/angular-methods-caveat.html %}
 
-### Where clause for queries
+### 検索のwhere句
 
-For query methods such as `find()`,` findOrCreate()`, or `findOne()`, use the first form below to test equivalence, that is, whether _property_ equals _value_.
-Use the second form below for all other conditions.
+`find()`・`findOrCreate()`・`findOne()` などの検索メソッドでは、等価性（ _プロパティ_ が _値_ と等しいこと）のテストに下の最初の形式を使ってください。
+その他全ての条件については、下の２つ目の形式を使ってください。
 
 ```javascript
 {where: {property: value}} 
@@ -87,33 +86,32 @@ Use the second form below for all other conditions.
 {where: {property: {op: value}}}
 ```
 
-Where:
+ここで、
 
-* _property_ is the name of a property (field) in the model being queried.
-* _value_ is a literal value. 
-* _op_ is one of the [operators](#operators) listed below.
+* _property_ は、検索されるモデル内のプロパティ（フィールド）の名前です。
+* _value_ はリテラル値です。
+* _op_ は以下に挙げる[演算子](#operators)のいずれかになります。
 
 ```javascript
 Cars.find({where: {carClass:'fullsize'}});
 ```
 
-The equivalent REST query would be:
+等価な REST 検索は以下のようになります。
 
 ```
 /api/cars?filter[where][carClass]=fullsize
 ```
 
-{% include tip.html content="The above where clause syntax is for queries, and not for [`count()`](http://apidocs.loopback.io/loopback/#persistedmodel-count).
-For all other methods, including `count()`, omit the `{ where : ... }` wrapper; see [Where clause for other methods](#where-clause-for-other-methods) below.
+{% include tip.html content="上記のwhere句構文は検索用であり、[`count()`](http://apidocs.loopback.io/loopback/#persistedmodel-count)用ではありません。
+`count()`を含む、その他全てのメソッドでは、`{ where : ... }` の囲みを外してください。以下の[他のメソッドでのwhere句](#where-clause-for-other-methods)を参照してください。
 " %}
 
-### Where clause for other methods
+### 他のメソッドでのwhere句
 
-{% include important.html content="When you call the Node APIs _for methods other than queries_, that is for methods that update and delete
-(and [`count()`](http://apidocs.loopback.io/loopback/#persistedmodel-count)), don't wrap the where clause in a `{ where : ... }` object, simply use the condition as the argument as shown below. See examples below.
+{% include important.html content="_検索以外のメソッド_ つまり、更新や削除のメソッド（そして[`count()`](http://apidocs.loopback.io/loopback/#persistedmodel-count)）のNode APIを呼び出すときは、where句を `{ where : ... }` オブジェクトで囲まないで、以下に示すように単に引数として指定するようにしてください。以下の例を参照してください。
 " %}
 
-In the first form below, the condition is equivalence, that is, it tests whether _property_ equals _value_. The second form is for all other conditions.
+下の最初の形式は、等価条件です。つまり、_プロパティ_ が _値_ と等しいかどうかをテストします。下の2番目のフォームは、他のすべての条件です。
 
 ```javascript
 {property: value}
@@ -123,14 +121,14 @@ In the first form below, the condition is equivalence, that is, it tests whether
 {property: {op: value}}
 ```
 
-Where:
+ここで、
 
-* _property_ is the name of a property (field) in the model being queried.
-* _value_ is a literal value. 
-* _op_ is one of the [operators](#operators) listed below.
+* _property_ は、検索されるモデル内のプロパティ（フィールド）の名前です。
+* _value_ はリテラル値です。
+* _op_ は以下に挙げる[演算子](#operators)のいずれかになります。
 
-For example, below shows a where clause in a call to a model's [updateAll()](http://apidocs.loopback.io/loopback/#persistedmodel-updateall) method.
-Note the lack of `{ where : ... }` in the argument.
+例えば、以下に示すのが、モデルの[updateAll()](http://apidocs.loopback.io/loopback/#persistedmodel-updateall)メソッドの呼出しにおけるwhere句です。
+引数では`{ where : ... }`がないことに注意してください。
 
 ```javascript
 var myModel = req.app.models.Thing;
@@ -140,35 +138,34 @@ myModel.updateAll( {id: theId}, {regionId: null}, function(err, results) {
 });
 ```
 
-More examples, this time in a call to [destroyAll()](http://apidocs.loopback.io/loopback/#persistedmodel-destroyall):
+他の例として、今度は [destroyAll()](http://apidocs.loopback.io/loopback/#persistedmodel-destroyall) を呼び出す場合です。
 
 ```javascript
 var RoleMapping = app.models.RoleMapping;
 RoleMapping.destroyAll( { principalId: userId }, function(err, obj) { ... } );
 ```
 
-To delete all records where the cost property is greater than 100:
+cost プロパティが100より大きいレコードを削除するには、以下のようになります。
 
 ```javascript
 productModel.destroyAll({cost: {gt: 100}}, function(err, obj) { ... });
 ```
 
-### Default scopes with where filters
+### whereフィルタの既定スコープ
 
-Adding a `scope` to a model definition (in the [`model.json` file](Model-definition-JSON-file.html))
-automatically adds a method to model called `defaultScope()`. LoopBack will call this method whenever a model is created, updated, or queried.
+([`model.json` ファイル](Model-definition-JSON-file.html)内の)モデル定義に `scope` を追加すると、
+自動的に `defaultScope()` メソッドが追加されます。LoopBack はモデルが作成・更新・検索される時はいつでもこのメソッドを呼出します。
 
-{% include tip.html content="Default scopes with a `where` filter may not work as you expect!
+{% include tip.html content="`where`フィルタを使用したデフォルトスコープは、期待どおりに機能しない可能性があります。
 " %}
 
-Each time a model instance is created or updated, the generated `defaultScope()` method will modify the model's properties
-matching the `where` filter to enforce the values specified.
+モデルインスタンスが生成されたり更新されたりする都度、生成された `defaultScope()` メソッドは `where` フィルタに一致するモデルのプロパティを変更して、指定された値を適用します。
 
-If you don't want to have the default scope applied in this way, use named scopes where possible.
+このようにデフォルトスコープを適用したくない場合は、可能であれば名前付きスコープを使用してください。
 
-If you must use a default scope, but don't want it to affect `upsert()`, for example, simply override the model's `defaultScope()` method prior to calling `upsert()`.
+デフォルトのスコープを使用する必要があるが、そのスコープに影響されたくない場合、`upsert()`などは、たとえば、 `upsert()` の呼び出し前にモデルの`defaultScope()`メソッドをオーバーライドするだけです。
 
-For  example:
+例えば以下のようにします。
 
 ```javascript
 var defaultScope = Report.defaultScope;
@@ -179,29 +176,29 @@ var defaultScope = Report.defaultScope;
   });
 ```
 
-## Operators
+## 演算子
 
-This table describes the operators available in "where" filters. See [Examples](#examples) below.
+この表では、「where」フィルタで使用できる演算子について説明します。 以下の[例](#examples)を参照してください。
 
-| Operator  | Description|
+| 演算子  | 説明|
 | ------------- | ------------- |
-| = | Equivalence. See [examples](#equivalence) below.|
-| and | Logical AND operator. See [AND and OR operators](#and-and-or-operators) and [examples](#and--or) below.|
-| or | Logical OR operator. See [AND and OR operators](#and-and-or-operators) and [examples](#and--or) below.|
-| gt, gte | Numerical greater than (&gt;); greater than or equal (&gt;=). Valid only for numerical and date values. See [examples](#gt-and-lt) below. <br/><br/>  For Geopoint values, the units are in miles by default. See [Geopoint](http://apidocs.loopback.io/loopback-datasource-juggler/#geopoint) for more information.|
-| lt, lte | Numerical less than (&lt;); less than or equal (&lt;=). Valid only for numerical and date values. <br/><br/>For geolocation values, the units are in miles by default. See [Geopoint](http://apidocs.loopback.io/loopback-datasource-juggler/#geopoint) for more information. |
-| between | True if the value is between the two specified values: greater than or equal to first value and less than or equal to second value. See [examples](#gt-and-lt) below. <br/><br/> For geolocation values, the units are in miles by default. See [Geopoint](http://apidocs.loopback.io/loopback-datasource-juggler/#geopoint) for more information.|
-| inq, nin | In / not in an array of values. See [examples](#inq) below.|
-| near | For geolocations, return the closest points, sorted in order of distance. Use with `limit` to return the _n_ closest points. See [examples](#near) below.|
-| neq | Not equal (!=) |
-| like, nlike | LIKE / NOT LIKE operators for use with regular expressions. The regular expression format depends on the backend data source.  See [examples](#like-and-nlike) below. |
-| like, nlike, options: i| LIKE / NOT LIKE operators for use with regular expressions with the case insensitive flag. It is supported by the memory and MongoDB connectors. The options property set to 'i' tells LoopBack that it should do case-insensitive matching on the required property.  See [examples](#like-and-nlike-insensitive) below. |
-| ilike, nilike | ILIKE / NOT ILIKE operators for use with regular expressions. The operator is supported only by the memory and Postgresql connectors. See [examples](#ilike-and-nilike) below. |
-| regexp | Regular expression. See [examples](#regular-expressions) below. |
+| = | 等価性。 以下の[例](#equivalence) 参照。|
+| and | 論理 AND 演算子。 下の[ANDとOR演算子](#and-and-or-operators)と[例](#and--or)を参照。|
+| or | 論理 OR 演算子。 下の[ANDとOR演算子](#and-and-or-operators)と[例](#and--or)を参照。|
+| gt, gte | 数値がより大きい (&gt;)、以上 (&gt;=)。数値と日付にのみ使用できます。下の[例](#gt-and-lt) を参照。<br/><br/> 位置情報の値は、既定ではマイル単位です。詳細は、 [Geopoint](http://apidocs.loopback.io/loopback-datasource-juggler/#geopoint)を参照してください。|
+| lt, lte | 数値がより小さい (&lt;)、以下 (&lt;=)。数値と日付にのみ使用できます。<br/><br/>位置情報の値は、既定ではマイル単位です。詳細は、 [Geopoint](http://apidocs.loopback.io/loopback-datasource-juggler/#geopoint)を参照してください。 |
+| between | 値が、２つの指定された値の間にある（１つ目の値以上かつ、２つ目の値以下）場合は true。下の[例](#gt-and-lt)を参照。<br/><br/> 位置情報の値は、既定ではマイル単位です。 詳細は、 [Geopoint](http://apidocs.loopback.io/loopback-datasource-juggler/#geopoint)を参照してください。|
+| inq, nin | 値の配列に含まれる／含まれない。下の[例](#inq)を参照。|
+| near | 位置情報において、距離でソートしたときに最も近い点を返す。`limit` を使って、最も近い _n_ 個の点を返すことができる。下の [例](#near) を参照。|
+| neq | 等しくない (!=) |
+| like, nlike | 正規表現を使用する LIKE / NOT LIKE 演算子。正規表現の形式は、バックエンドのデータソースに依存します。下の[例](#like-and-nlike) を参照。|
+| like, nlike, オプション：i| 大文字・小文字を無視するフラグのついた、正規表現を使用する LIKE / NOT LIKE 演算子。memory と MongoDB コネクタで使用可能。options プロパティを 'i' にセットすることで、LoopBack は 大文字小文字を無視したマッチングを行う。下の[例](#like-and-nlike-insensitive) を参照。|
+| ilike, nilike | 正規表現を使用する ILIKE / NOT ILIKE 演算子。memory と Postgresql コネクタでのみ使用可能。下の [例](#ilike-and-nilike) を参照。 |
+| regexp | 正規表現。 下の [例](#regular-expressions) を参照。 |
 
-### AND and OR operators
+### AND と OR 演算子
 
-Use the AND and OR operators to create compound logical filters based on simple where filter conditions, using the following syntax.
+AND演算子とOR演算子を使用して、次の構文で、単純なwhereフィルタ条件に基づいて複合論理フィルタを作成します。
 
 {% include code-caption.html content="Node API" %}
 ```javascript
@@ -214,17 +211,17 @@ Use the AND and OR operators to create compound logical filters based on simple 
 [where][<and|or>][0]condition1&[where][<and|or>]condition2...
 ```
 
-Where _condition1_ and _condition2_ are a filter conditions.
+ここで、_condition1_ と _condition2_ はフィルタ条件です。
 
-See [examples](#examples) below.
+下の[例](#examples)を参照してください。
 
-### Regular expressions
+### 正規表現
 
-You can use regular expressions in a where filter, with the following syntax. You can use a regular expression in a where clause for updates and deletes, as well as queries.
+whereフィルタでは、次の構文で正規表現を使用できます。where句の正規表現を使用して、検索同様に更新と削除を行うことができます。
 
-Essentially, `regexp` is just like an operator in which you provide a regular expression value as the comparison value.
+基本的に `regexp` は、比較値として正規表現の値を与える演算子のようなものです。
 
-{% include tip.html content="A regular expression value can also include one or more [flags](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions#Advanced_searching_with_flags).  For example, append `/i` to the regular expression to perform a case-insensitive match.
+{% include tip.html content="正規表現の値には、1つ以上の[フラグ](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions#Advanced_searching_with_flags)を含めることもできます。たとえば `/i`を正規表現に追加して大文字小文字を区別しないマッチを実行します。
 " %}
 
 {% include code-caption.html content="Node API" %}
@@ -233,38 +230,38 @@ Essentially, `regexp` is just like an operator in which you provide a regular 
 {where: {property: {regexp: <expression>}}}
 ```
 
-Where `<expression>` can be a:
+ここで、`<expression>` は以下のいずれかを取りえます。
 
-* String defining a regular expression (for example, `'^foo'` ).
-* Regular expression literal (for example, `/^foo/` ).
-* Regular expression object (for example, `new RegExp(/John/)`).
+* 正規表現を定義する文字列 (例えば、`'^foo'`)。
+* 正規表現リテラル (例えば、`/^foo/`)。
+* 正規表現オブジェクト (例えば、`new RegExp(/John/)`)。
 
-Or, in a simpler format:
+より単純な形式も可能です。
 
 ```javascript
 {where: {property: <expression>}}}
 ```
 
-Where `<expression>` can be a:
+ここで、`<expression>` は以下のいずれかを取りえます。
 
-* Regular expression literal (for example, `/^foo/` ).
-* Regular expression object (for example, `new RegExp(/John/)`).
+* 正規表現リテラル (例えば、`/^foo/`)。
+* 正規表現オブジェクト (例えば、`new RegExp(/John/)`)。
 
-For more information on JavaScript regular expressions,
-see [Regular Expressions (Mozilla Developer Network)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions).
+JavaScriptの正規表現についてより詳細な情報は、
+[正規表現 (Mozilla Developer Network)](https://developer.mozilla.org/ja-JP/docs/Web/JavaScript/Guide/Regular_Expressions)を参照してください。
 
-{% include tip.html content="The above where clause syntax is for queries.
-For updates and deletes, omit the `{ where : ... }` wrapper.
-See [Where clause for other methods](#where-clause-for-other-methods) below.
+{% include tip.html content="上記のwhere句構文は検索用です。
+更新および削除の場合は、{ where : ... }の囲みを省略します。
+以下の[他のメソッドでのWhere句](#where-clause-for-other-methods)を参照してください。
 " %}
 
-For example, this query returns all cars for which the model starts with a capital "T":
+たとえば、この検索は、車種(model)が大文字の "T"で始まるすべての車を返します。
 
 ```javascript
 Cars.find( {"where": {"model": {"regexp": "^T"}}} );
 ```
 
-Or, using the simplified form:
+または、単純な形式を使うと以下のようになります。
 
 ```javascript
 Cars.find( {"where": {"model": /^T/} } );
@@ -276,39 +273,37 @@ Cars.find( {"where": {"model": /^T/} } );
 filter[where][property][regexp]=expression
 ```
 
-Where:
+ここで、
 
-* _property_ is the name of a property (field) in the model being queried.
-* _expression_ is the JavaScript regular expression string.
-See [Regular Expressions (Mozilla Developer Network)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions).
+* _property_ は、検索されるモデル内のプロパティ（フィールド）の名前です。
+* _expression_ はJavaScriptの正規表現文字列です。[正規表現 (Mozilla Developer Network)](https://developer.mozilla.org/ja-JP/docs/Web/JavaScript/Guide/Regular_Expressions)を参照してください。
 
-A regular expression value can also include one or more [flags](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions#Advanced_searching_with_flags).
-For example, append `/i` to the regular expression to perform a case-insensitive match.
+正規表現の値は、１つ以上の[フラグ](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions#Advanced_searching_with_flags)を含めることができます。
+例えば、正規表現に `/i` を追加すると、大文字小文字を区別しないマッチを行います。
 
-{% include important.html content="When using a regular expression flag with the REST API,
-you _must_ precede the regular expression with a slash character (`/`).
+{% include important.html content="REST APIで正規表現のフラグを使用する場合は、
+正規表現の前にスラッシュ文字（`/`）を _付けなければ_ なりません。
 " %}
 
-The following REST query returns all cars for which the model starts with a capital "T"::
+次のREST検索は、車種(model)が大文字の「T」で始まるすべての自動車(car)を返します。
 
 ```
 /api/cars?filter[where][model][regexp]=^T
 ```
 
-
-The following REST query returns all models that start with either an uppercase "T" or lowercase "t":
+次のREST検索は、大文字の「T」または小文字の「t」で始まるすべての車種(model)を返します。
 
 ```
 /api/cars?filter[where][model][regexp]=/^t/i
 ```
 
-Note that since the regular expression includes a flag, it is preceded by a slash (`/`).
+正規表現にはフラグが含まれているため、スラッシュ（`/`）が前に付いています。
 
-## Examples
+## 例
 
-### Equivalence
+### 等価性
 
-Weapons with name M1911:
+「M1911」という名前の武器：
 
 **REST**
 
@@ -316,7 +311,7 @@ Weapons with name M1911:
 /weapons?filter[where][name]=M1911
 ```
 
-Cars where carClass is "fullsize":
+carClassが「fullsize」である自動車：
 
 **REST**
 
@@ -324,16 +319,16 @@ Cars where carClass is "fullsize":
 /api/cars?filter[where][carClass]=fullsize
 ```
 
-Equivalently, in Node:
+Nodeで等価な処理：
 
 ```javascript
 Cars.find({ where: {carClass:'fullsize'} });
 ```
 
-### gt and lt
+### gt と lt
 
 ```javascript
-ONE_MONTH = 30 * 24 * 60 * 60 * 1000;  // Month in milliseconds
+ONE_MONTH = 30 * 24 * 60 * 60 * 1000;  // ミリ秒で１ヶ月
 transaction.find({
       where: {
         userId: user.id,
@@ -342,13 +337,13 @@ transaction.find({
     }
 ```
 
-For example, the following query returns all instances of the employee model using a _where_ filter that specifies a date property after (greater than) the specified date: 
+例えば、以下の検索は従業員（employee）モデルから、_where_ フィルタを使って、dateプロパティが指定した日時より大きいインスタンスを返します。
 
 ```
 /employees?filter[where][date][gt]=2014-04-01T18:30:00.000Z
 ```
 
-The same query using the Node API:
+Node APIで同じ検索を行います。
 
 ```javascript
 Employees.find({
@@ -358,13 +353,13 @@ Employees.find({
 });
 ```
 
-The top three weapons with a range over 900 meters:
+有効射程が900メートルを超える武器の最初の３件：
 
 ```
 /weapons?filter[where][effectiveRange][gt]=900&filter[limit]=3
 ```
 
-Weapons with audibleRange less than 10:
+可聴域が10未満の武器：
 
 ```
 /weapons?filter[where][audibleRange][lt]=10
@@ -372,7 +367,7 @@ Weapons with audibleRange less than 10:
 
 ### and / or
 
-The following code is an example of using the "and" operator to find posts where the title is "My Post" and content is "Hello".
+以下のコードは、「and」演算子を使って、題名が「My Post」かつ、内容が「Hello」である投稿を検索する例です。
 
 ```javascript
 Post.find({where: {and: [{title: 'My Post'}, {content: 'Hello'}]}}, 
@@ -381,13 +376,14 @@ Post.find({where: {and: [{title: 'My Post'}, {content: 'Hello'}]}}, 
 });
 ```
 
-Equivalent in REST:
+RESTで等価な検索：
 
 ```
 ?filter[where][and][0][title]=My%20Post&filter[where][and][1][content]=Hello
 ```
 
-Example using the "or" operator to finds posts that either have title of "My Post" or content of "Hello".
+以下のコードは、「or」演算子を使って、題名が「My Post」または、内容が「Hello」である投稿を検索する例です。
+
 
 ```javascript
 Post.find({where: {or: [{title: 'My Post'}, {content: 'Hello'}]}}, 
@@ -396,7 +392,7 @@ Post.find({where: {or: [{title: 'My Post'}, {content: 'Hello'}]}}, 
 });
 ```
 
-More complex example. The following expresses `(field1= foo and field2=bar) OR field1=morefoo`:
+より複雑な例として、以下のような式 `(field1= foo and field2=bar) OR field1=morefoo` を考えます。
 
 ```javascript
 {
@@ -409,13 +405,13 @@ More complex example. The following expresses `(field1= foo and field2=bar) OR 
 
 ### between
 
-Example of between operator:
+between演算子の例：
 
 ```
 filter[where][price][between][0]=0&filter[where][price][between][1]=7
 ```
 
-In Node API:
+Node APIの場合：
 
 ```javascript
 Shirts.find({where: {size: {between: [0,7]}}}, function (err, posts) { ... } )
@@ -423,38 +419,38 @@ Shirts.find({where: {size: {between: [0,7]}}}, function (err, posts) { ... } )
 
 ### near
 
-The `where.<field>.near` filter is different from other where filters: most where filters **limit**the number of records returned,
-whereas `near` **orders** them, making it more like a SQL `order by` clause.
-By combining it with [`limit`](Limit-filter.html), you can create a query to get, for example, the **three records nearest to a given location**.
+`where.<field>.near` フィルタは他のフィルタと異なります。多くのwhereフィルタが返されるレコードの数を **制限する** 一方で、
+`near` はSQLの`order by`句のようにレコードを**並び替え**ます。
+これを [`limit`](Limit-filter.html) と組み合わせることで、たとえば、**特定の場所に最も近い3つのレコード** を取得する検索を作成できます。
 
-For example:
+例えば以下のようにします。
 
 ```
 /locations?filter[where][geo][near]=153.536,-28.1&filter[limit]=3
 ```
 
-GeoPoints can be expressed in any of the following ways:
+位置情報は、以下のいずれかの方法で表現できます。
 
 ```javascript
 location = new GeoPoint({lat: 42.266271, lng: -72.6700016}); // GeoPoint
-location = '42.266271,-72.6700016';                          // String
-location = [42.266271, -72.6700016];                         // Array
-location = {lat: 42.266271, lng: -72.6700016};               // Object Literal
+location = '42.266271,-72.6700016';                          // 文字列
+location = [42.266271, -72.6700016];                         // 配列
+location = {lat: 42.266271, lng: -72.6700016};               // オブジェクトリテラル
 
 Restaurants.find({where: {geo: {near: location }}}, function callback(...
 ```
 
-### near (ordering _and limiting by distance_)
+### near ( _距離による制限_ と並び替え)
 
-The near filter can take two additional properties:
+near フィルタは２つの追加プロパティをとることができます。
 
 *   `maxDistance`
 *   `unit`
 
-When `maxDistance` is included in the filter, near behaves more like a typical where filter, limiting results to those within a given distance to a location.
-By default, `maxDistance` measures distance in **miles**.
+`maxDistance`がフィルタに含まれると、nearは典型的なwhereフィルタのように動作し、その結果を与えられた距離内のものに限定します。
+既定では、`maxDistance` は距離をマイル単位で測定します。
 
-Example of finding the all restaurants within two miles of a given GeoPoint:
+与えられた位置情報から2マイル以内にある全てのレストランを見つける例：
 
 ```javascript
 var userLocation = new GeoPoint({
@@ -472,6 +468,7 @@ var resultsPromise = Restaurants.find({
 ```
 
 To change the units of measurement, specify `unit` property to one of the following:
+測定単位を変更するには、`unit` プロパティを次のいずれかに指定します。
 
 * `kilometers`
 * `meters`
@@ -480,7 +477,7 @@ To change the units of measurement, specify `unit` property to one of the follo
 * `radians`
 * `degrees`
 
-For example, to change the query above to use kilometers instead of miles:
+たとえば、上記の検索をマイルの代わりにキロメートルを使用するように変更するには、次のようにします。
 
 ```javascript
 var resultsPromise = Restaurants.find({
@@ -494,68 +491,71 @@ var resultsPromise = Restaurants.find({
 });
 ```
 
-{% include warning.html content="Spell Carefully!
+{% include warning.html content="スペルミスに注意！
 
-If `unit` value is mistyped, for example `'mile'` instead of `'miles'`, LoopBack will silently ignore the filter!
+`unit` の値が誤って入力された場合、例えば `'miles'` の代わりに `'mile'`と入力すると、ループバックは黙ってフィルタを無視します！
 " %}
 
-### like and nlike
+### like と nlike
 
-The like and nlike (not like) operators enable you to match SQL regular expressions. The regular expression format depends on the backend data source.
+like と nlike（not like）演算子を使用すると、SQLの正規表現に一致させることができます。正規表現の形式は、バックエンドのデータソースによって異なります。
 
-Example of like operator:
+like演算子の例：
 
 ```javascript
 Post.find({where: {title: {like: 'M.-st'}}}, function (err, posts) { ... });
 ```
 
-Example of nlike operator:
+nlike演算子の例：
 
 ```javascript
 Post.find({where: {title: {nlike: 'M.-XY'}}}, function (err, posts) {
 ```
 
-When using the memory connector:
+memoryコネクタを使うとき：
 
 ```javascript
 User.find({where: {name: {like: '%St%'}}}, function (err, posts) { ... });
 User.find({where: {name: {nlike: 'M%XY'}}}, function (err, posts) { ... });
 ```
 
-### like and nlike insensitive
+### 大文字小文字を区別しない like と nlike
+
 ```javascript
 var pattern = new RegExp('.*'+query+'.*', "i"); /* case-insensitive RegExp search */
 Post.find({ where: {title: { like: pattern} } },
 ```
-Via the REST API:
+
+REST API経由：
+
 ```
 ?filter={"where":{"title":{"like":"someth.*","options":"i"}}}
 ```
 
-### ilike and nilike
+### ilike と nilike
 
-The ilike and nilike (not ilike) operators enable you to match case insensitive regular expressions. It is supported by the memory connector and Postgresql connectors.
+ilikeとnilike（not ilike）演算子は、大文字小文字を区別しない正規表現によるマッチを可能にします。これは、memoryコネクタと Postgresqlコネクタでのみサポートされています。
 
-Example of ilike operator:
+ilike演算子の例：
 
 ```javascript
 Post.find({where: {title: {ilike: 'm.-st'}}}, function (err, posts) { ... });
 ```
 
-Example of nilike operator:
+nilike演算子の例：
 
 ```javascript
 Post.find({where: {title: {nilike: 'm.-xy'}}}, function (err, posts) {
 ```
 
-When using the memory connector:
+memoryコネクタを使う場合：
 
 ```javascript
 User.find({where: {name: {ilike: '%st%'}}}, function (err, posts) { ... });
 User.find({where: {name: {nilike: 's%xy'}}}, function (err, posts) { ... });
 ```
 
-When using the Postgresql connector:
+Postgresqlコネクタを使う場合：
 
 ```javascript
 User.find({where: {name: {ilike: 'john%'}}}, function (err, posts) { ... });
@@ -563,18 +563,19 @@ User.find({where: {name: {ilike: 'john%'}}}, function (err, posts) { ... });
 
 ### inq
 
-The inq operator checks whether the value of the specified property matches any of the values provided in an array. The general syntax is:
+inq 演算子は、指定されたプロパティの値が、与えられた配列の値のいずれかと等しいかどうかを検査します。
+一般的な構文は以下のとおりです。
 
 ```javascript
 {where: { property: { inq: [val1, val2, ...]}}}
 ```
 
-Where:
+ここで、
 
-* _property_ is the name of a property (field) in the model being queried.
-* _val1, val2_, and so on, are literal values in an array.
+* _property_ は、検索されるモデル内のプロパティ（フィールド）の名前です。
+* _val1, val2_ などは配列内のリテラル値です。
 
-Example of inq operator:
+inq 演算子の例：
 
 ```javascript
 Posts.find({where: {id: {inq: [123, 234]}}}, 
@@ -587,7 +588,7 @@ REST:
 /medias?filter[where][keywords][inq]=foo&filter[where][keywords][inq]=bar
 ```
 
-Or 
+または
 
 ```
 ?filter={"where": {"keywords": {"inq": ["foo", "bar"]}}}

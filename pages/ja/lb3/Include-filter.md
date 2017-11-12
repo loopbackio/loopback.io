@@ -1,5 +1,5 @@
 ---
-title: "Include filter"
+title: "Include フィルタ"
 lang: ja
 layout: page
 keywords: LoopBack
@@ -9,24 +9,27 @@ permalink: /doc/ja/lb3/Include-filter.html
 summary:
 ---
 
-**See also**: [Querying related models](Querying-related-models.html).
+**参照**: [関連するモデルの検索](Querying-related-models.html).
 
-An _include_ filter enables you to include results from related models in a query, for example models that have belongsTo or hasMany relations, to optimize the number of requests.
-See [Creating model relations](Creating-model-relations.html) for more information.
+_include_ フィルタを使用すると、検索の結果に関連するモデルを含めることができます。例えば、モデルがbelongsToや、hasManyの関係を持つとき、要求の回数を最適化できます。
+詳細は、[モデルの関連を作成する](Creating-model-relations.html)を参照してください。
 
-The value of the include filter can be a string, an array, or an object.
+include フィルタの値は、文字列、配列、またはオブジェクトのいずれかです。
 
-{% include important.html content="You can use an _include_ filter with `find(),` `findOne()` and `findById()`.
+{% include important.html content="_include_ フィルタは `find()`・`findOne()`・`findById()`メソッドで使用できます。
 " %}
 
 ### **REST API**
 
+<pre>
 filter[include][_relatedModel_]=_propertyName_
-You can also use [stringified JSON format](Querying-data.html#using-stringified-json-in-rest-queries) in a REST query.
+</pre>
+
+REST検索で[文字列化したJSON形式](Querying-data.html#using-stringified-json-in-rest-queries) を利用することもできます。
 
 ### Node API
 
-{% include content/angular-methods-caveat.html lang=page.lang %}
+{% include content/ja/angular-methods-caveat.html %}
 
 ```javascript
 {include: 'relatedModel'}
@@ -34,38 +37,38 @@ You can also use [stringified JSON format](Querying-data.html#using-stringified
 {include: {relatedModel1: [{relatedModel2: 'relationName'} , 'relatedModel']}}
 ```
 
-Where:
+ここで、
 
-* _relatedModel_, _relatedModel1_, and _relatedModel2_ are the names (pluralized) of related models.
-* _relationName_ is the name of a relation in the related model.
+* _relatedModel_・_relatedModel1_・_relatedModel2_ は関連するモデルの名前（複数形）です。
+* _relationName_ 関連するモデルにおける関連の名前です。
 
-### Examples
+### 例
 
-Include relations without filtering:
+フィルタリングなしに関連を含める。
 
 ```javascript
 User.find({include: 'posts'}, function() { /* ... */ });
 ```
 
-Return all user posts and orders with two additional requests:
+全ユーザの投稿と注文を返す。追加のリクエストは２回。
 
 ```javascript
 User.find({include: ['posts', 'orders']}, function() { /* ... */ });
 ```
 
-Return all post owners (users), and all orders of each owner:
+全ての投稿の所有者（ユーザ）と、それぞれの所有者の全注文を返す。
 
 ```javascript
 Post.find({include: {owner: 'orders'}}, function() { /* ... */ });
 ```
 
-Return all post owners (users), and all friends and orders of each owner:
+全ての投稿の所有者（ユーザ）と、それぞれの所有者の全友達と全注文を返す。
 
 ```javascript
 Post.find({include: {owner: ['friends', 'orders']}}, function() { /* ... */ });
 ```
 
-Return all post owners (users), and all posts and orders of each owner. The posts also include images.
+全ての投稿の所有者（ユーザ）と、それぞれの所有者の全投稿と全注文を取得する。投稿には画像を含める。
 
 ```javascript
 Post.find({include: {owner: [{posts: 'images'} , 'orders']}}, function() { /* ... */ });
@@ -73,27 +76,27 @@ Post.find({include: {owner: [{posts: 'images'} , 'orders']}}, function() { /* ..
 
 #### Include with filters
 
-In some cases, you may want to apply filters to related models to be included.
+場合によっては、結果に含まれる関連モデルにフィルタを適用することができます。
 
 {% include note.html content="
 
-When you apply filters to related models, the query returns results from the first model plus any results from related models with the filter query,
-similar to a \"left join\" in SQL.
+関連モデルにフィルタを適用すると、検索は最初のモデルから返す結果と、フィルタ検索によって得られた関連モデルの全結果を合わせたものになります。
+これは、SQLの「left join」に似ています。
 
 " %}
 
-LoopBack supports that with the following syntax (for example):
+LoopBack は（例えば）以下のような構文をサポートします。
 
 ```javascript
 Post.find({
   include: {
-    relation: 'owner', // include the owner object
-    scope: { // further filter the owner object
-      fields: ['username', 'email'], // only show two fields
-      include: { // include orders for the owner
+    relation: 'owner', // owner オブジェクトを含める。
+    scope: { // owner オブジェクトへの更なるフィルタ
+      fields: ['username', 'email'], // ２つのフィールドしか取得しない。
+      include: { // owner の orders を含める。
         relation: 'orders', 
         scope: {
-          where: {orderId: 5} // only select order with id 5
+          where: {orderId: 5} // idが５の注文に絞り込む。
         }
       }
     }
@@ -101,14 +104,14 @@ Post.find({
 }, function() { /* ... */ });
 ```
 
-For real-world scenarios where only users in `$authenticated` or `$owner` roles should have access, use `findById()`.
-For example, the following example uses filters to perform pagination:
+現実世界のシナリオでは、ユーザーは `$authenticated` または `$owner` ロールのみに属しており、`findById()` を使うアクセス権を持つ必要があります。
+たとえば、次の例では、フィルタを使用してページネーションを実行しています。
 
 ```javascript
 Post.findById('123', {
   include: {
     relation: 'orders',
-    scope: { // fetch 1st "page" with 5 entries in it
+    scope: { // ここでは、「最初のページ」を取得して、データを５件ずつ取得します。
       skip:0,
       limit:5
     }
@@ -116,14 +119,14 @@ Post.findById('123', {
 }, function() { /* ... */ });
 ```
 
-#### Access included objects
+#### 含まれているオブジェクトにアクセスする
 
-In the Node.js API, call `toJSON()` to convert the returned model instance with related items into a plain JSON object. For example:
+Node.js APIでは、`toJSON()`を呼出して、関連項目と共に返されたモデルインスタンスを変換して、プレーンなJSONオブジェクトに変換します。例えば以下のようにします。
 
 ```javascript
 Post.find({include: {owner: [{posts: 'images'} , 'orders']}}, function(err, posts) {
  posts.forEach(function(post) {
-   // post.owner points to the relation method instead of the owner instance
+   // post.owner は、ownerのインスタンスの代わりに、関連についてのメソッドを指している。
    var p = post.toJSON();
    console.log(p.owner.posts, p.owner.orders);
  });
@@ -131,28 +134,28 @@ Post.find({include: {owner: [{posts: 'images'} , 'orders']}}, function(err, post
 });
 ```
 
-Note the relation properties such as `post.owner` reference a JavaScript **function** for the relation method.
+`post.owner`のような関連プロパティは、関係メソッドとしてJavaScriptの **関数** を参照していることに気をつけてください。
 
 #### REST examples
 
-These examples assume a customer model with a hasMany relationship to a reviews model. 
+これらの例は、顧客モデルと hasManyの関連をもつレビューモデルがあると仮定してのものです。
 
-Return all customers including their reviews:
+全ての顧客を、自分のレビューを含めて返します。
 
 `/customers?filter[include]=reviews`
 
-Return all customers including their reviews which also includes the author:
+全ての顧客を、自分のレビューを含め、さらにレビューに作者を含めて返します。
 
 `/customers?filter[include][reviews]=author`
 
-Return all customers whose age is 21, including their reviews which also includes the author:
+年齢が21である全ての顧客と、それらの全レビューに、作者を含めて返します。
 
 `/customers?filter[include][reviews]=author&filter[where][age]=21`
 
-Return first two customers including their reviews which also includes the author
+顧客のうち最初の２件と、それらのレビューに、作者を含めて返します。
 
 `/customers?filter[include][reviews]=author&filter[limit]=2`
 
-Return all customers including their reviews and orders
+全ての顧客と、それに関連する全てのレビューと注文を含めて返します。
 
 `/customers?filter[include]=reviews&filter[include]=orders`

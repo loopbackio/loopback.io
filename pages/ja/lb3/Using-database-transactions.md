@@ -264,4 +264,3 @@ tx.observe('after rollback', function(context, next) {
 
 1.  トランザクションを出来る限り短くする。
 2.  複数のトランザクションをまたいだメソッド実行をシリアライズしない。
-

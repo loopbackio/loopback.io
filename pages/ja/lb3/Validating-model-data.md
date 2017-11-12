@@ -1,5 +1,5 @@
 ---
-title: "Validating model data"
+title: "モデルのデータを検証する"
 lang: ja
 layout: page
 keywords: LoopBack
@@ -9,16 +9,15 @@ permalink: /doc/ja/lb3/Validating-model-data.html
 summary:
 ---
 
-A _schema_ imposes restrictions on the model, to ensure (for example) that the model will save data that matches the corresponding database table.
+_スキーマ_ は、例えばモデルが対応するデータベースのテーブルにデータを保存できるように、モデルに制約を課します。
 
-A model can validate data before passing it on to a data store such as a database to ensure that it conforms to the backend schema.
+モデルは、データベースのようなデータストアにデータを渡す前に、バックエンドスキーマに適しているか、それを検証することができます。
 
-## Adding a schema to a model
+## モデルにスキーマを追加する
 
-One way to validate data is to create a model schema; LoopBack will then ensure that data conforms to that schema definition.
-
-For example, suppose your app has a product model. The following code defines a schema and assigns it to the product model.
-The schema defines two properties: name, a required string property and price, an optional number property. 
+データを検証する方法の一つは、モデルにスキーマを作ることです。すると、LoopBackはスキーマ定義に適したデータになっているかどうか確認するようになります。
+たとえば、productモデルがあるとします。以下のコードはスキーマを定義し、それをproductモデルに割り当てています。
+スキーマは２つのプロパティを定義します。name は必須の文字列プロパティであり、price は任意の数値プロパティです。
 
 {% include code-caption.html content="common/models/product.js" %}
 ```javascript
@@ -29,41 +28,42 @@ var productSchema = {
 var Product = Model.extend('product', productSchema);
 ```
 
-If a client tries to save a product with extra properties (for example, `description`), those properties are removed before the app saves the data in the model.
-Also, since `name` is a required value, the model will _only_ be saved if the product contains a value for the `name` property.
+クライアントが、追加のプロパティ（例えば、`description`）を持つproductを保存しようとした場合、これらのプロパティはアプリケーションがモデルのデータを保存する前に削除されます。
+また、`name` は必須の値であるため、`name`プロパティに値を持つproduct _だけ_ が保存されます。
 
-## Using validation methods
+## 検証メソッドを使用する
 
-Every model attached to a persistent data source has validations methods mixed in from [Validatable](http://apidocs.loopback.io/loopback-datasource-juggler/#validatable).
+永続的なデータソースに紐付いている全てのモデルは、[Validatable](http://apidocs.loopback.io/loopback-datasource-juggler/#validatable) 由来の検証メソッドを持っています。
 
 <table>
   <tbody>
     <tr>
-      <th>Method</th>
-      <th>Description</th>
+      <th>メソッド</th>
+      <th>説明</th>
     </tr>
     <tr>
       <td><a href="https://apidocs.loopback.io/loopback-datasource-juggler/#validatable-validatesabsenceof" class="external-link" rel="nofollow">validatesAbsenceOf</a></td>
-      <td>Validate absence of one or more specified properties. A model should not include a property to be considered valid; fails when validated field not blank.</td>
+      <td>１以上の指定したプロパティが存在しないことを検証する。プロパティに値がない場合に成功する。検証するフィールドがブランクでない場合、失敗する。</td>
     </tr>
     <tr>
       <td><a href="https://apidocs.loopback.io/loopback-datasource-juggler/#validatable-validatesexclusionof" class="external-link" rel="nofollow">validatesExclusionOf</a></td>
-      <td>Validate exclusion. Require a property value not be in the specified array.</td>
+      <td>含まれないことを検証する。プロパティの値は、指定された配列にない値である必要がある。</td>
     </tr>
     <tr>
       <td><a href="https://apidocs.loopback.io/loopback-datasource-juggler/#validatable-validatesformatof" class="external-link" rel="nofollow">validatesFormatOf</a></td>
       <td>
         <p>Validate format. Require a model to include a property that matches the given format.</p>
+        <p>書式を検証する。モデルは、与えられた書式にマッチするプロパティを持つ必要がある。</p>
       </td>
     </tr>
     <tr>
       <td><a href="https://apidocs.loopback.io/loopback-datasource-juggler/#validatable-validatesinclusionof" class="external-link" rel="nofollow">validatesInclusionOf</a></td>
-      <td>Validate inclusion in set. Require a value for property to be in the specified array.</td>
+      <td>含まれることを検証する。プロパティの値は、指定された配列に含まれる値である必要がある。</td>
     </tr>
     <tr>
       <td><a href="https://apidocs.loopback.io/loopback-datasource-juggler/#validatable-validateslengthof" class="external-link" rel="nofollow">validatesLengthOf</a></td>
       <td>
-        <p>Validate length. Require a property length to be within a specified range. Three kinds of validations: "min," "max," and "is." Default error messages are:</p>
+        <p>長さを検証する。値の長さが指定された範囲にある必要がある。"min"・"max"・"is"の３種類の検証がある。 既定のエラーメッセージは以下の通り。</p>
         <ul>
           <li>min: too short</li>
           <li>max: too long</li>
@@ -73,16 +73,16 @@ Every model attached to a persistent data source has validations methods mixed i
     </tr>
     <tr>
       <td><a href="https://apidocs.loopback.io/loopback-datasource-juggler/#validatable-validatesnumericalityof" class="external-link" rel="nofollow">validatesNumericalityOf</a></td>
-      <td>Validate numericality. Requires a value for property to be either an integer or number.</td>
+      <td>数値であることを検証する。プロパティの値が整数か数字である必要がある。</td>
     </tr>
     <tr>
       <td><a href="https://apidocs.loopback.io/loopback-datasource-juggler/#validatable-validatespresenceof" class="external-link" rel="nofollow">validatesPresenceOf</a></td>
-      <td>Validate presence of one or more specified properties. Requires a model to include a property to be considered valid; fails when validated field is blank.</td>
+      <td>１つ以上のプロパティに値があることを検証する。プロパティに値がある場合に成功する。検証するフィールドがブランクである場合、失敗する。</td>
     </tr>
     <tr>
       <td><a href="https://apidocs.loopback.io/loopback-datasource-juggler/#validatable-validatesuniquenessof" class="external-link" rel="nofollow">validatesUniquenessOf</a></td>
       <td>
-        <p>Validate uniqueness. Ensure the value of the property is unique for the model. Not available for all connectors. Currently supported with these connectors:</p>
+        <p>唯一性を検証する。プロパティの値がモデルの中で唯一であることを検証する。全てのコネクタで利用できるわけではない。現在、以下のコネクタでのみ使用可能。</p>
         <ul>
           <li>In Memory</li>
           <li>Oracle</li>
@@ -93,22 +93,22 @@ Every model attached to a persistent data source has validations methods mixed i
     <tr>
       <td><a href="https://apidocs.loopback.io/loopback-datasource-juggler/#validatable-validatesDateOf" class="external-link" rel="nofollow">validatesDateOf</a></td>
       <td>
-        <p>Validate if a value for a property is a Date. Requires a model value for property to be of type Date.</p>
+        <p>プロパティの値が日付であるかどうか検証する。プロパティの値がDate型である必要がある。</p>
       </td>
     </tr>
   </tbody>
 </table>
 
-Use these methods to perform specific data validation, as shown in the examples below.
+これらのメソッドを使って、個別のデータ検証を以下のように実施する。
 
-### Options object
+### Options オブジェクト
 
-Most of the validation methods accept an `options` argument whose properties depend on the specific method being used; however it does have two properties common to all the methods:
+ほとんどの検証メソッドは、`options` 引数を受け取ります。このプロパティは、使用するメソッドによって様々です。しかし、全てのメソッドに共通して２つのプロパティを持ちます。
 
-- `message` - Error message to use instead of the default message, if validation fails.
-- `allowNull` - Whether null values are allowed.
+- `message` - 検証が失敗した時に使われるエラーメッセージを既定のもの以外にする時に使用する。
+- `allowNull` - null値が許容されるかどうか。
 
-### Examples
+### 例
 
 {% include code-caption.html content="common/models/user.js" %}
 ```javascript
@@ -123,17 +123,14 @@ module.exports = function(user) {
 ```
 
 {% include tip.html content="
-The validation methods are invoked when you call the 
-[`isValid()`](http://apidocs.loopback.io/loopback-datasource-juggler/#validatable-prototype-isvalid) method on a model instance, and automatically each time model instance is created or updated. You don't have to call `isValid()` to validate data.
-
-To enforce validation constraints when calling 
-[`upsert()`](http://apidocs.loopback.io/loopback/#persistedmodel-upsert), ensure that `validateUpsert` option is set to `true` in the [model definition JSON file](Model-definition-JSON-file.html). 
-By default, the [model generator](Model-generator.html) sets this property to true.
+検証メソッドは[`isValid()`](http://apidocs.loopback.io/loopback-datasource-juggler/#validatable-prototype-isvalid)が呼び出された時や、モデルのインスタンスが作成されたり更新されたりした時に自動的に呼び出されます。データを検証するために `isValid()` を呼び出す必要はありません。
+[`upsert()`](http://apidocs.loopback.io/loopback/#persistedmodel-upsert) メソッドを呼出した時に制約の検証を強制するには、[モデル定義JSONファイル](Model-definition-JSON-file.html) で `validateUpsert` オプションを `true` にセットしてください。
+既定では、[モデル生成ツール](Model-generator.html)はこのプロパティをtrueにセットします。
 " %}
 
-To invoke the validation constraints explicitly, call [`isValid()`](http://apidocs.loopback.io/loopback-datasource-juggler/#validatable-prototype-isvalid).
+明示的に制約の検証を呼び出すには、[`isValid()`](http://apidocs.loopback.io/loopback-datasource-juggler/#validatable-prototype-isvalid) を呼出します。
 
-For example:
+例えば以下のようにします。
 
 ```javascript
 user.isValid(function (valid) {
@@ -142,7 +139,7 @@ user.isValid(function (valid) {
   }
 ```
 
-Another example of defining validation constraints, this time using a regular expresson:
+検証ルールを定義する別の例として、正規表現を使用します。
 
 {% include code-caption.html content="common/models/user.js" %}
 ```javascript
@@ -155,8 +152,8 @@ if (!(UserModel.settings.realmRequired || UserModel.settings.realmDelimiter)) {
 }
 ```
 
-To add validation to model for creating a new model instance, you _do not_ need to call `isValid()`.
-You can add validation by simply adding the validator calls:
+新しいモデルを作成するときに検証を追加する時は、`isValid()` を呼び出す必要は _ありません_ 。
+単に検証ルールの呼出しを追加するだけで、OKです。
 
 {% include code-caption.html content="common/models/MyModel.js" %}
 ```javascript
@@ -166,16 +163,16 @@ module.exports = function(MyModel) {
 };
 ```
 
-Use `isValid()` as an additional _ad-hoc _way to check validity.
-You can also call [`validate()`](https://apidocs.loopback.io/loopback-datasource-juggler/#validatable-validate)
-or [`validateAsync()`](https://apidocs.loopback.io/loopback-datasource-juggler/#validatable-validateasync) with custom validation functions.
+妥当性をチェックするためのアドホックな方法として、`isValid()`を使用できます。
+また、独自の検証関数と [`validate()`](https://apidocs.loopback.io/loopback-datasource-juggler/#validatable-validate) や
+[`validateAsync()`](https://apidocs.loopback.io/loopback-datasource-juggler/#validatable-validateasync) メソッドを呼び出すことも可能です。
 
-## Localizing validation messages
+## 検証メッセージをローカライズする
 
-Rather than modifying the error responses returned by the server, you can localize the error message on the client.
-The validation error response contains error codes in `error.details.codes`, which enables clients to map errors to localized messages.
+サーバから返されるエラーレスポンスを変更するように、クライアント上のエラーメッセージをローカライズすることができます。
+検証エラーのレスポンスは、`error.details.codes` にエラーコードを持っているので、クライアントではローカライズしたメッセージにこれらのエラーを割り当てることができます。
 
-Here is an example error response:
+エラーレスポンスの例は以下のとおりです。
 
 {% include code-caption.html content="error.details.codes" %}
 ```javascript

@@ -1,5 +1,5 @@
 ---
-title: "Creating, updating, and deleting data"
+title: "データの作成・更新・削除"
 lang: ja
 layout: page
 keywords: LoopBack
@@ -9,67 +9,68 @@ permalink: /doc/ja/lb3/Creating-updating-and-deleting-data.html
 summary:
 ---
 
-{% include content/angular-methods-caveat.html lang=page.lang %}
+{% include content/ja/angular-methods-caveat.html %}
 
-[PersistedModel](http://apidocs.loopback.io/loopback/#persistedmodel-new-persistedmodel) has a large set of methods for creating, updating, and deleting data.
+[PersistedModel](http://apidocs.loopback.io/loopback/#persistedmodel-new-persistedmodel)には、データの作成・更新・削除のための多数のメソッドがあります。
 
-Model data is also called a _model instance_;
-in database terminology, conceptually a model corresponds to a table, and a model instance corresponds to a _row_ or _record_ in the table.
+モデルデータは、_モデルインスタンス_ とも呼ばれます。
+概念的には、モデルは表に対応し、モデル・インスタンスは表の _行_ または _レコード_ に対応します。
 
-{% include note.html content="For information on model _read_ operations, see [Querying data](Querying-data.html).
+{% include note.html content="モデルの読取操作については、[データの検索](Querying-data.html)を参照してください。
 " %}
 
-## Creating data (model instances)
+## データ（モデルインスタンス）の作成
 
-Use the following [PersistedModel](http://apidocs.loopback.io/loopback/#persistedmodel) methods to add data, that is to insert or create instances:
+インスタンスを挿入または作成するために、次の[PersistedModel](http://apidocs.loopback.io/loopback/#persistedmodel)のメソッドを使用してデータを追加します。
 
-* [create](http://apidocs.loopback.io/loopback/#persistedmodel-create) - creates a new model instance (record).
-* [upsert](http://apidocs.loopback.io/loopback/#persistedmodel-upsert) - checks if the instance (record) exists, based on the designated
-  [ID property](Model-definition-JSON-file.html#id-properties), which must have a unique value;
-  if the instance already exists, the method updates that instance. Otherwise, it inserts a new instance.
-* [findOrCreate](http://apidocs.loopback.io/loopback/#persistedmodel-findorcreate) - Find one instance matching the filter object provided as the first parameter.
-  If found, returns the object. If not found, creates a new instance (record).
+* [create](http://apidocs.loopback.io/loopback/#persistedmodel-create) - 新しいモデルインスタンス（レコード）を作成します。
+* [upsert](http://apidocs.loopback.io/loopback/#persistedmodel-upsert) - インスタンス（レコード）が存在するかどうかを、
+  指定された[IDプロパティ](Model-definition-JSON-file.html#id-properties)に基づいてチェックし ます。インスタンスがすでに存在する場合、
+  メソッドはそのインスタンスを更新します。それ以外の場合は、新しいインスタンスが挿入されます。
+* [findOrCreate](http://apidocs.loopback.io/loopback/#persistedmodel-findorcreate) - 最初のパラメータとして指定されたフィルタオブジェクトに一致する1つのインスタンスを検索します。
+  見つかった場合、オブジェクトを返します。見つからなければ、新しいインスタンス（レコード）を作成します。
 
-    {% include important.html content="Be sure to include a `where` clause in the filter object.
-    Without the `where`, the `findOrCreate` finds and returns the first record in the collection, without error, which can lead to unintended behavior.
+    {% include important.html content="フィルタオブジェクトには`where`句を必ず含めてください。
+    `where` がなければ、`findOrCreate`はエラーなしに、コレクション内の最初のレコードを、発見し返します。これは意図しない動作を引き起こす可能性があります。
     " %}
-* [save](http://apidocs.loopback.io/loopback/#persistedmodel-prototype-save) - Save model instance.
-  If the instance doesn't have an ID, then calls [create](http://apidocs.loopback.io/loopback/#persistedmodel-create) instead.
-  Triggers: validate, save, update, or create.
+* [save](http://apidocs.loopback.io/loopback/#persistedmodel-prototype-save) - モデルインスタンスを保存します。
+  インスタンスにIDがない場合は、 代わりに[create](http://apidocs.loopback.io/loopback/#persistedmodel-create)を呼び出します。
+  トリガー：validate、save、updateまたはcreate
 
-## Updating data (model instances)
+## データ（モデルインスタンス）の更新
 
-Static method (called on the Model object):
+静的メソッド（Modelオブジェクトで呼び出されます）：
 
-* [updateAll](http://apidocs.loopback.io/loopback/#persistedmodel-updateall) - updates multiple instances (records) that match the specified [where clause](Where-filter.html). 
+* [updateAll](http://apidocs.loopback.io/loopback/#persistedmodel-updateall) - 指定された[where 句](Where-filter.html)に一致する複数のインスタンス（レコード）を更新します。
 
-{% include important.html content="The where clause used with `updateAll()` is slightly different than that for queries.  Omit `{ where : ... }` from the where clause.
-Simply provide the condition as the first argument.
+{% include important.html content="`updateAll()` で使用するwhere句は、他の検索とは少し異なります。where句から`{ where : ... }` を省略してください。
+条件を最初の引数として指定するだけです。
 
-For more information, see [Where filter](Where-filter.html).
+詳細については、 [Whereフィルタ](Where-filter.html)を参照してください。
 " %}
 
-Instance methods (called on a single model instance):
+インスタンスメソッド（単一のモデルインスタンスで呼び出されます）：
 
-* [updateAttribute](http://apidocs.loopback.io/loopback/#persistedmodel-prototype-updateattribute) - Update a single attribute (property).
-* [updateAttributes](http://apidocs.loopback.io/loopback/#persistedmodel-prototype-updateattributes) - Update set of attributes (properties).
-  Performs validation before updating.
+* [updateAttribute](http://apidocs.loopback.io/loopback/#persistedmodel-prototype-updateattribute) - 単一の属性（プロパティ）を更新します。
+* [updateAttributes](http://apidocs.loopback.io/loopback/#persistedmodel-prototype-updateattributes) - 属性（プロパティ）のセットを更新します。
+  更新前に検証を実行します。
 
-### Performing bulk updates
+### 一括更新の実行
 
 <div class="sl-hidden"><strong>REVIEW COMMENT from Rand</strong><br>Describe why you would perform bulk updates. &nbsp;Used with sync, for example.</div>
 
 * [createUpdates](http://apidocs.loopback.io/loopback/#persistedmodel-createupdates)
 * [bulkUpdate](http://apidocs.loopback.io/loopback/#persistedmodel-bulkupdate)
 
-## Deleting data
+## データの削除
 
-Static methods (called on the Model object):
+静的メソッド（Modelオブジェクトで呼び出されます）：
 
-* [destroyAll](http://apidocs.loopback.io/loopback/#persistedmodel-destroyall) - Delete all model instances that match the optional [Where filter](Where-filter.html).
-* [destroyById](http://apidocs.loopback.io/loopback/#persistedmodel-destroybyid) - Delete the model instance with the specified ID.
+* [destroyAll](http://apidocs.loopback.io/loopback/#persistedmodel-destroyall) - オプションの[Whereフィルタ](Where-filter.html)と一致するすべてのモデルインスタンスを削除します。
+* [destroyById](http://apidocs.loopback.io/loopback/#persistedmodel-destroybyid) - 指定されたIDを持つモデルインスタンスを削除します。
 
-{% include important.html content="
-The where clause with `destroyAll()` is slightly different than that for queries. Omit `{ where : ... }` from the where clause.  Simply provide the condition as the first argument.
+{% include important.html content="`destroyAll()` で使用するwhere句は、他の検索とは少し異なります。where句から`{ where : ... }` を省略してください。
+条件を最初の引数として指定するだけです。
 
-For more information, see [Where filter](Where-filter.html)." %}
+詳細については、 [Whereフィルタ](Where-filter.html)を参照してください。
+" %}

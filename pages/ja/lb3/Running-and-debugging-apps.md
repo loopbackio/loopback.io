@@ -1,5 +1,5 @@
 ---
-title: "Running and debugging apps"
+title: "アプリケーションの実行とデバッグ"
 lang: ja
 layout: page
 keywords: LoopBack
@@ -9,22 +9,23 @@ permalink: /doc/ja/lb3/Running-and-debugging-apps.html
 summary:
 ---
 
-In general, when you are developing an application, use the `node` command to run it.
-This enables you to see stack traces and console output immediately.
+一般に、アプリケーションを開発するときは、`node` コマンドを使用してアプリケーションを実行します。
+これにより、スタックトレースとコンソール出力をすぐに確認することができます。
 
-For example:
+例えば以下のようにします。
 
 ```
 $ cd myapp
 $ node .
 ```
 
-{% include tip.html content="When running an application, you can specify debug strings that the application will display to the console (or save to a file).  For more information, see [Setting debug strings](Setting-debug-strings.html).
+{% include tip.html content="アプリケーションを実行するときに、アプリケーションがコンソールに表示する（またはファイルに保存する）デバッグ文字列を指定できます。詳細については、[デバッグ文字列の設定](Setting-debug-strings.html)を参照してください。
 " %}
 
-To run your application under control of StrongLoop Process Manager use the `slc start` command.
-Doing this enables you to profile the app and monitor app metrics to help find memory leaks and optimize performance.
-See [Profiling](https://docs.strongloop.com/display/SLC/Profiling) and 
-[Monitoring app metrics](https://docs.strongloop.com/display/SLC/Monitoring-app-metrics) for more information.
+StrongLoop Process Managerの制御下でアプリケーションを実行するには、`slc start`コマンドを使用します。
+これにより、アプリのプロファイルを作成し、アプリのメトリックを監視してメモリリークを見つけてパフォーマンスを最適化することができます。
+詳細については、[プロファイリング](https://docs.strongloop.com/display/SLC/Profiling)と
+[アプリメトリックのモニタリング](https://docs.strongloop.com/display/SLC/Monitoring-app-metrics)をご覧ください。
 
-With API Connect, to run your application and the MicroGateway, use the `apic start` command.  You can also [run your app using the API Designer](https://developer.ibm.com/apiconnect/getting-started/run-your-api/).
+API Connectを使用して、アプリケーションとMicroGatewayを実行するには、`apic start` コマンドを使用します。
+[API Designerを使用してアプリを実行する](https://developer.ibm.com/apiconnect/getting-started/run-your-api/)こともできます。

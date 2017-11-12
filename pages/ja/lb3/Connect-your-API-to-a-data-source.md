@@ -10,7 +10,7 @@ permalink: /doc/ja/lb3/Connect-your-API-to-a-data-source.html
 summary: LoopBack enables you to easily persist your data model to a variety of data sources without having to write code.
 ---
 
-{% include content/gs-prereqs.html lang=page.lang %}
+{% include content/ja/gs-prereqs.html %}
 
 You're going to take the app from the previous section and connect it to MySQL.   
 

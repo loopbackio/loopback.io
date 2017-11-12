@@ -10,7 +10,7 @@ permalink: /doc/ja/lb3/Redis-connector.html
 summary: The Redis connector enables LoopBack applications to connect to Redis data sources.
 ---
 
-{% include content/strongloop-labs.html lang=page.lang %}
+{% include content/ja/strongloop-labs.html %}
 
 {% include toc.html %}
 

@@ -10,7 +10,7 @@ permalink: /doc/ja/lb3/Define-model-relations.html
 summary: Relations among models enable you to query related models and perform corresponding validations.
 ---
 
-{% include content/gs-prereqs.html two="true" lang=page.lang %}
+{% include content/ja/gs-prereqs.html two="true" %}
 
 Individual models are easy to understand and work with. But in reality, models are often connected or related.   For applications with multiple models, you typically need to define _relations_ between models.  
 

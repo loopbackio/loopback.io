@@ -1,6 +1,5 @@
 {% include important.html content="All of the options properties are optional. However, if the remote method requires arguments, you must specify `accepts`; if the remote method returns a value, you must specify `returns`.
 " %}
-
 <table width="800">
   <thead>
     <tr>

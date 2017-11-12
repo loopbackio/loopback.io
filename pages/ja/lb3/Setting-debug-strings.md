@@ -1,5 +1,5 @@
 ---
-title: "Setting debug strings"
+title: "デバッグ文字列の設定"
 lang: ja
 layout: page
 keywords: LoopBack
@@ -9,15 +9,15 @@ permalink: /doc/ja/lb3/Setting-debug-strings.html
 summary:
 ---
 
-You can specify debug strings when you run an application, as explained below, to display specific log output to the console.
-You can also redirect the output to a file, if desired. These techniques are often helpful in debugging applications.
+以下に説明するように、アプリケーションの実行時にデバッグ文字列を指定して、特定のログ出力をコンソールに表示することができます。
+必要に応じて、出力をファイルにリダイレクトすることもできます。これらの手法は、アプリケーションのデバッグに役立ちます。
 
-## Using debug strings
+## デバッグ文字列の使用
 
-The LoopBack framework has a number of built-in debug strings to help with debugging.
-Specify a string on the command-line via an environment variable as follows:
+LoopBackフレームワークには、デバッグに役立つ多数のビルトインデバッグ文字列があります。
+次のように、環境変数を使用してコマンドラインで文字列を指定します。
 
-**MacOS and Linux**
+**MacOS と Linux**
 
 ```shell
 $ DEBUG=<pattern>[,<pattern>...] node .
@@ -30,62 +30,62 @@ C:\> set DEBUG=<pattern>[,<pattern>...]
 C:\> node .
 ```
 
-where &lt;_pattern_&gt; is a string-matching pattern specifying debug strings to match. You can specify as many matching patterns as you wish.
+ここで、&lt;_pattern_&gt; は一致させるデバッグ文字列を指定する文字列です。一致するパターンは、必要な数だけ指定できます。
 
-For example (MacOS and Linux):
+例えば (MacOS と Linux):
 
 ```shell
 $ DEBUG=loopback:datasource node .
 ```
 
-Or, on Windows:
+または、Windowsの場合
 
 ```shell
 C:\> set DEBUG=loopback:datasource
 C:\> node .
 ```
 
-You'll see output such as (truncated for brevity):
+次のような出力が表示されます（簡略化のために切り捨てられています）：
 
 ```
 loopback:datasource Settings: {"name":"db","debug":true} -0ms
 loopback:datasource Settings: {"name":"geo","connector":"rest",...
 ```
 
-You can use an asterisk  (`*`) in the pattern to match any string. For example the following would match any debug string containing "oracle":
+パターン内のアスタリスク（`*`）を使用して、任意の文字列に一致させることができます。たとえば、次のコードは "oracle"を含むデバッグ文字列と一致します。
 
 ```shell
 $ DEBUG=*oracle node .
 ```
 
-You can also exclude specific debuggers by prefixing them with a "-" character.
-For example, `DEBUG=*,-strong-remoting:*` would include all debuggers except those starting with "strong-remoting:".
+また、特定のデバッガの前に "-"文字を付けることで除外することもできます。
+たとえば、`DEBUG=*,-strong-remoting:*` 「strong-remoting：」で始まるデバッガ以外のすべてのデバッガが含まれます。
 
-## Debug string format
+## デバッグ文字列形式
 
-These strings have the format
+デバッグ文字列は、以下の形式になります。
 
 `module[:area]:fileName`
 
-Where:
+ここで、
 
-* _module_ is the name of the module, for example `loopback` or `loopback-connector-rest`.
-* _area_ is an optional identifier such as `security` or `connector` to identify the purpose of the module
-* _fileName_ is the name of the JavaScript source file, such as `oracle.js`.
+* _module_ はモジュールの名前です。例えば、`loopback` ・ `loopback-connector-rest`など。
+* _area_ は`security`や`connector`のように、モジュールの目的を識別するための、オプションの識別子です。
+* _fileName_ は `oracle.js` のような、JavaScriptソースファイルの名前です。
 
-For example:
+例えば、以下のようになります。
 
 `loopback:security:access-context`
 
-identifies the source file `access-context.js` in the `loopback` module (used for security features).
+これは、`loopback` モジュール内の `access-context.js ` ファイル（セキュリティ機能のために使われている）とわかります。
 
-## Debug strings reference
+## デバッグ文字列のリファレンス
 
 <table>
   <tbody>
     <tr>
-      <th>Module / Source file</th>
-      <th>String</th>
+      <th>モジュール／ソースファイル</th>
+      <th>文字列</th>
     </tr>
     <tr>
       <th colspan="2">loopback</th>

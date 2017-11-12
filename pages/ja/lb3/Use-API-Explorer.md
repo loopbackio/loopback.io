@@ -10,7 +10,7 @@ permalink: /doc/ja/lb3/Use-API-Explorer.html
 summary: LoopBack applications come with a built-in API Explorer you can use to test REST API operations during development.
 ---
 
-{% include content/gs-prereqs.html lang=page.lang %}
+{% include content/ja/gs-prereqs.html %}
 
 You're not the only one who'll use the API you just created.  That means you'll need to document your API.  Fortunately, LoopBack provides API Explorer for you. 
 

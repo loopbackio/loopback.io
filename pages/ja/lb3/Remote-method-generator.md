@@ -9,7 +9,7 @@ permalink: /doc/ja/lb3/Remote-method-generator.html
 summary:
 ---
 
-{% include content/generator-create-app.html lang=page.lang %}
+{% include content/ja/generator-create-app.html %}
 
 ### Synopsis
 

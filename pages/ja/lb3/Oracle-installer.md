@@ -7,7 +7,7 @@ sidebar: ja_lb3_sidebar
 permalink: /doc/ja/lb3/Oracle-installer-command.html
 summary:
 ---
-{% include content/generator-create-app.html lang=page.lang %}
+{% include content/ja/generator-create-app.html %}
 
 Utilities to install and troubleshoot [loopback-connector-oracle](https://github.com/strongloop/loopback-connector-oracle) module.
 

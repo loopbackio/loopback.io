@@ -10,7 +10,7 @@ permalink: /doc/ja/lb3/Android-SDK.html
 summary: The Android SDK provides a simple Java API that enables an Android app to interact with a LoopBack server application.
 ---
 
-{% include content/strongloop-labs.html lang=page.lang %}
+{% include content/ja/strongloop-labs.html %}
 
 {% include see-also.html content="
 * [Download Android SDK](http://81b70ddedaf4b27b1592-b5e75689411476c98957e7dab0242f50.r56.cf2.rackcdn.com/loopback-sdk-android-1.5.3-eclipse-bundle.zip)

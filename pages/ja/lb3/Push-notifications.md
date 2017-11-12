@@ -10,7 +10,7 @@ permalink: /doc/ja/lb3/Push-notifications.html
 summary: Push notifications enable server applications to send information to mobile apps even when the app isn’t in use.
 ---
 
-{% include content/strongloop-labs.html lang=page.lang %}
+{% include content/ja/strongloop-labs.html %}
 
 {% include see-also.html content="
 * [API reference](http://apidocs.loopback.io/loopback-component-push)

@@ -1,5 +1,5 @@
 ---
-title: "Fields filter"
+title: "Fields フィルタ"
 lang: ja
 layout: page
 keywords: LoopBack
@@ -9,7 +9,7 @@ permalink: /doc/ja/lb3/Fields-filter.html
 summary:
 ---
 
-A _fields_ filter specifies properties (fields) to include or exclude from the results.
+_fields_ フィルタは、結果に含める、または結果から除外するプロパティ（フィールド）を指定します。
 
 ### REST API
 
@@ -17,29 +17,28 @@ A _fields_ filter specifies properties (fields) to include or exclude from the r
 filter[fields][<i>propertyName</i>]=<true|false>&filter[fields][<i>propertyName</i>]=<true|false>...
 </pre>
 
-Note that to include more than one field in REST, use multiple filters.
+RESTに複数のフィールドを含めるには、複数のフィルタを使用することに注意してください。
 
-You can also use [stringified JSON format](Querying-data.html#using-stringified-json-in-rest-queries) in a REST query.
+また、REST検索で[文字列化したJSON形式](Querying-data.html#using-stringified-json-in-rest-queries)を使用することもできます。
 
 ### Node API
 
-{% include content/angular-methods-caveat.html lang=page.lang %}
+{% include content/ja/angular-methods-caveat.html %}
 
 <pre>
 { fields: {<i>propertyName</i>: <true|false>, <i>propertyName</i>: <true|false>, ... } }
 </pre>
 
-Where:
+ここで、
 
-* _propertyName_ is the name of the property (field) to include or exclude.
-* `<true|false>` signifies either `true` or `false` Boolean literal. Use `true` to include the property or `false` to exclude it from results.
+* _propertyName_ は含める、または除外するプロパティ（フィールド）の名前と同じです。
+* `<true|false>` は、`true` または `false` の真偽値リテラルを表します。プロパティを結果に含めるには `true` を、結果から除外するには `false` を使います。
 
-By default, queries return all model properties in results. However, if you specify at least one fields filter with a value of `true`,
-then by default the query will include **only** those you specifically include with filters.
+既定では、検索は結果内のすべてのモデルプロパティを返します。ただし、値が `true`のfieldsフィルタを１つでも指定すると、既定では、特にフィルタに含まれているフィールド **のみ** が検索されます。
 
-### Examples
+### 例
 
-Return only `id`, `make`, and `model` properties:
+`id`・`make`・`model`プロパティのみを返します。
 
 **REST**
 
@@ -50,7 +49,7 @@ Return only `id`, `make`, and `model` properties:
 { fields: {id: true, make: true, model: true} }
 ```
 
-Returns:
+戻り値：
 
 ```javascript
 [{
@@ -66,7 +65,7 @@ Returns:
 ]
 ```
 
-Exclude the `vin` property:
+`vin` プロパティを除外します。
 
 **REST**
 
