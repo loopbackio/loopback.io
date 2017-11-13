@@ -35,25 +35,10 @@ children:
 
   - title: 'Application'
     url: Application.html
+    output: 'web, pdf'
     
   - title: 'Server'
     url: Server.html
-    output: 'web, pdf'
-
-  - title: 'Sequence'
-    url: Sequence.html
-    output: 'web, pdf'
-
-  - title: 'Routes'
-    url: Routes.html
-    output: 'web, pdf'
-
-  - title: 'Schemas'
-    url: Schemas.html
-    output: 'web, pdf'
-
-  - title: 'Controllers'
-    url: Controllers.html
     output: 'web, pdf'
 
   - title: 'Context'
@@ -62,6 +47,22 @@ children:
 
   - title: 'Dependency injection'
     url: Dependency-injection.html
+    output: 'web, pdf'
+
+  - title: 'Controllers'
+    url: Controllers.html
+    output: 'web, pdf'
+
+  - title: 'Routes'
+    url: Routes.html
+    output: 'web, pdf'
+
+  - title: 'Sequence'
+    url: Sequence.html
+    output: 'web, pdf'
+
+  - title: 'Schemas'
+    url: Schemas.html
     output: 'web, pdf'
 
   - title: 'Repositories'
