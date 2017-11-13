@@ -35,6 +35,7 @@ children:
 
   - title: 'Application'
     url: Application.html
+    output: 'web, pdf'
     
   - title: 'Server'
     url: Server.html
