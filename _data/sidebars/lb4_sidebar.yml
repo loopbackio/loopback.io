@@ -40,28 +40,28 @@ children:
     url: Server.html
     output: 'web, pdf'
 
-  - title: 'Sequence'
-    url: Sequence.html
-    output: 'web, pdf'
-
-  - title: 'Routes'
-    url: Routes.html
-    output: 'web, pdf'
-
-  - title: 'Schemas'
-    url: Schemas.html
-    output: 'web, pdf'
-
-  - title: 'Controllers'
-    url: Controllers.html
-    output: 'web, pdf'
-
   - title: 'Context'
     url: Context.html
     output: 'web, pdf'
 
   - title: 'Dependency injection'
     url: Dependency-injection.html
+    output: 'web, pdf'
+
+  - title: 'Controllers'
+    url: Controllers.html
+    output: 'web, pdf'
+
+  - title: 'Routes'
+    url: Routes.html
+    output: 'web, pdf'
+
+  - title: 'Sequence'
+    url: Sequence.html
+    output: 'web, pdf'
+
+  - title: 'Schemas'
+    url: Schemas.html
     output: 'web, pdf'
 
   - title: 'Repositories'
