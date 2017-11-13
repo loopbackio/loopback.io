@@ -14,11 +14,22 @@ This article continues off from [Implmenting features](./Implementing-features.
 
 ## Preparing your API for consumption
 
-### Interacting with you API
+### Interacting with your API
 
-When your application is run, its documentation is generated into `swagger.json` file and can be accessed from your server through `/swagger.json`. You can also interact with the API endpoints defined in `swagger.json` file through Swagger UI (`/swagger-ui`), which allows users to directly interact with the documented API endpoints of the application.
+When your application is run, its documentation is generated into `swagger.json` file and can be accessed from your server through `/swagger.json`. Your spec can also be accessed in YAML flavour through the `/swagger.yaml` endpoint. The API endpoints defined in your Swagger can be interacted with Swagger UI (at `/swagger-ui`), which allows users to directly interact with the documented API endpoints of the application.
 
 We'll use the repo [loopback4-example-getting-started](https://github.com/strongloop/loopback4-example-getting-started) to demonstrate how Swagger UI can be used to test your endpoints.
+
+First, git clone the repository and install its dependencies:
+
+```
+$ git clone https://github.com/strongloop/loopback4-example-getting-started
+$ cd loopback4-example-getting-started
+$ npm i
+$ npm start
+```
+
+Head over to http://localhost:3000/swagger-ui to see your API endpoints.
 
 {% include image.html file="lb4/10000000.png" alt="" %}
 
