@@ -44,7 +44,7 @@ Clicking on one of the endpoints will show the endpoint's documentation as defin
 
 {% include image.html file="lb4/10000002.png" alt="" %}
 
-The response to the request can be seen below the `Execute` button, where the response code and the body are displayed. Ideally, each endpoint should be tested with good and bad inputs to confirm that the given responses are as expected.
+The response to the request can be seen below the `Execute` button, where the response code and the body are displayed. Ideally, each endpoint should be tested with good and bad inputs to confirm that the returned responses are as expected.
 
 ## Closing thoughts
 
