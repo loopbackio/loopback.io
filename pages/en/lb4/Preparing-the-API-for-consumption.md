@@ -16,8 +16,6 @@ This article continues off from [Implmenting features](./Implementing-features.
 
 ### Interacting with your API
 
-When your application is run, its documentation is generated into `swagger.json` file and can be accessed from your server through `/swagger.json`. Your spec can also be accessed in YAML flavour through the `/swagger.yaml` endpoint. The API endpoints defined in your Swagger can be interacted with Swagger UI (at `/swagger-ui`), which allows users to directly interact with the documented API endpoints of the application.
-
 We'll use the repo [loopback4-example-getting-started](https://github.com/strongloop/loopback4-example-getting-started) to demonstrate how Swagger UI can be used to test your endpoints.
 
 First, git clone the repository and install its dependencies:
@@ -29,19 +27,19 @@ $ npm i
 $ npm start
 ```
 
-Head over to http://localhost:3000/swagger-ui to see your API endpoints.
+Open http://localhost:3000/swagger-ui to see your API endpoints.
 
 {% include image.html file="lb4/10000000.png" alt="" %}
 
-Here we can see all of the endpoints defined in your application.
+The Swagger UI displays all of the endpoints defined in your application.
 
 {% include image.html file="lb4/10000001.png" alt="" %}
 
-Clicking on one of the endpoints will show the endpoint's documentation as defined in your API spec. Next, click on Try It Out to allow a request to be sent to the endpoint. If the endpoint takes in parameters, they can be given values here before the request is sent. If the parameter involves a body, a template is given for you to edit as specified in your spec. Hit Execute to send the request:
+Clicking on one of the endpoints will show the endpoint's documentation as defined in your API spec. Next, click on `Try It Out` to send a request to the endpoint. If the endpoint takes parameters, assign the values before the request is sent. If the parameter involves a body, a template is given for you to edit as specified in your spec. Click `Execute` to send the request:
 
 {% include image.html file="lb4/10000002.png" alt="" %}
 
-The response to the request can be seen below the Execute button, where the response code and the body are displayed. Ideally, each endpoint should be tested with good and bad inputs to confirm that the given responses are as expected.
+The response to the request can be seen below the `Execute` button, where the response code and the body are displayed. Ideally, each endpoint should be tested with good and bad inputs to confirm that the given responses are as expected.
 
 ## Closing thoughts
 
