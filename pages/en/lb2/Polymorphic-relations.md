@@ -96,11 +96,12 @@ And:
 
 {% include code-caption.html content="common/models/reader.js" %}
 ```javascript
-Reader.hasMany(Picture, { polymorphic: { // alternative syntax  
-  as: 'imageable', // if not set, default to: reference
-  foreignKey: 'imageableId', // defaults to 'as - Id'
-  discriminator: 'imageableType' // defaults to 'as - Type'
-  } 
+Reader.hasMany("imageables", {
+    model: Picture 
+    polymorphic: {
+      foreignKey: 'imageableId', // defaults to 'as - Id'
+      discriminator: 'imageableType' // defaults to 'as - Type'
+  } 
 });
 ```
 
