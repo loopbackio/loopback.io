@@ -14,11 +14,37 @@ This article continues off from [Implmenting features](./Implementing-features.
 
 ## Preparing your API for consumption
 
-{% include content/tbd.html %}
+### Interacting with your API
 
-- Documentation
-- Public endpoint for the swagger spec (for discovery)
-- more?
+We'll use the repo [loopback4-example-getting-started](https://github.com/strongloop/loopback4-example-getting-started) to demonstrate how Swagger UI can be used to test your endpoints.
+
+First, git clone the repository, install its dependencies, and run the application:
+
+```
+$ git clone https://github.com/strongloop/loopback4-example-getting-started
+$ cd loopback4-example-getting-started
+$ npm i
+$ npm start
+```
+
+Open [http://localhost:3000/swagger-ui](http://localhost:3000/swagger-ui) to see the API endpoints defined by `swagger.json`. 
+
+{% include note.html content="
+  Swagger UI provides users with interactive environment to test the API endpoints defined by the raw spec found at [http://localhost:3000/swagger.json](http://localhost:3000/swagger.json).
+  The API spec is also available in YAML flavour at [http://localhost:3000/swagger.yaml](http://localhost:3000/swagger.yaml)
+" %}
+
+{% include image.html file="lb4/10000000.png" alt="" %}
+
+The Swagger UI displays all of the endpoints defined in your application.
+
+{% include image.html file="lb4/10000001.png" alt="" %}
+
+Clicking on one of the endpoints will show the endpoint's documentation as defined in your API spec. Next, click on `Try It Out` to send a request to the endpoint. If the endpoint takes parameters, assign the values before the request is sent. If the parameter involves a body, a template is given for you to edit as specified in your spec. Click `Execute` to send the request:
+
+{% include image.html file="lb4/10000002.png" alt="" %}
+
+The response to the request can be seen below the `Execute` button, where the response code and the body are displayed. Ideally, each endpoint should be tested with good and bad inputs to confirm that the returned responses are as expected.
 
 ## Closing thoughts
 
@@ -28,7 +54,7 @@ This is just the beginning of the full LoopBack 4 developer experience. The firs
 
 Here is a sneak peek of what's coming:
 
-- More extensions and extension points an: [lopback-next issue #512](https://github.com/strongloop/loopback-next/issues/512)
+- More extensions and extension points an: [loopback-next issue #512](https://github.com/strongloop/loopback-next/issues/512)
 
 - Authorization component: [loopback-next issue #538](https://github.com/strongloop/loopback-next/issues/538)
 
