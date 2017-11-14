@@ -18,7 +18,7 @@ This article continues off from [Implmenting features](./Implementing-features.
 
 We'll use the repo [loopback4-example-getting-started](https://github.com/strongloop/loopback4-example-getting-started) to demonstrate how Swagger UI can be used to test your endpoints.
 
-First, git clone the repository and install its dependencies:
+First, git clone the repository, install its dependencies, and run the application:
 
 ```
 $ git clone https://github.com/strongloop/loopback4-example-getting-started
@@ -27,7 +27,12 @@ $ npm i
 $ npm start
 ```
 
-Open http://localhost:3000/swagger-ui to see your API endpoints.
+Open [http://localhost:3000/swagger-ui](http://localhost:3000/swagger-ui) to see the API endpoints defined by `swagger.json`. 
+
+{% include note.html content="
+  Swagger UI provides users with interactive environment to test the API endpoints defined by the raw spec found at [http://localhost:3000/swagger.json](http://localhost:3000/swagger.json).
+  The API spec is also available in YAML flavour at [http://localhost:3000/swagger.yaml](http://localhost:3000/swagger.yaml)
+" %}
 
 {% include image.html file="lb4/10000000.png" alt="" %}
 
