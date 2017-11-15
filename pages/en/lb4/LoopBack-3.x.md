@@ -8,7 +8,7 @@ permalink: /doc/en/lb4/LoopBack-3.x.html
 summary:
 ---
 
-LoopBack 4 is the next generation of the LoopBack framework, with a completely rewritten core foundation and significantly improved programming model. If you're an existing LoopBack user, read [Crafting LoopBack 4](Crafting LoopBack-4.html) to understand the motivations, strategy, and innovations behind this exciting new version.
+LoopBack 4 is the next generation of the LoopBack framework, with a completely rewritten core foundation and significantly improved programming model. If you're an existing LoopBack user, read [Crafting LoopBack 4](Crafting-LoopBack-4.html) to understand the motivations, strategy, and innovations behind this exciting new version.
 
 This article will help existing users understand LoopBack 4:
 
