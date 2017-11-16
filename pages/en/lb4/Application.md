@@ -149,11 +149,11 @@ export class MyApplication extends Application {
         'public': RestServer,
         'private': RestServer,
       },
-      controllers: {
+      controllers: [
         FooController,
         BarController,
         BazController,
-      }
+      ]
     });
   }
 }
