@@ -328,7 +328,7 @@ For example, if you want to add a new patient and create an appointment at a cer
 
 The following query can be used to list all patients of a given physician, including their appointment date:
 
-`GET /appointments?filter={"include":["patient"],"where":{"physicianId":2}}`
+`GET /appointments?filter={"include":["patient"],"where":{"physicianId":1}}`
 
 Sample response:
 
