@@ -10,9 +10,7 @@ summary:
 
 ## Prerequisite: install Node.js
 
-To get started with LoopBack 4, install Node.js:
-  - **Recommended**: [Version 8.x](https://nodejs.org/en/download/current/): The latest/current version.
-  - [Version 6.x](https://nodejs.org/en/download/): The long-term support (LTS) version.
+To get started with LoopBack 4, install Node.js [Version 8.x](https://nodejs.org/en/download/current/) which is the latest/current version.
 
 ## Adding LoopBack 4 to an existing project
 
