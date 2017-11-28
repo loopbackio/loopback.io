@@ -18,10 +18,10 @@ To use LoopBack 4's CLI, run this command:
 npm install -g @loopback/cli
 ```
 
-## Commands for projects
+## Generating LoopBack projects
 
 {% include content/lb4-project-commands.html %}
 
-## Commands for artifacts
+## Generating LoopBack artifacts
 
 {% include content/lb4-artifact-commands.html %}
