@@ -89,6 +89,11 @@ children:
   url: LoopBack-3.x.html
   output: 'web, pdf'
 
+- title: 'Command-line interface'
+  url: Command-line-interface.html
+  output: 'web, pdf'
+  children:
+
 - title: 'Best practices with Loopback 4'
   url: Best-practices-with-Loopback-4.html
   output: 'web, pdf'
