@@ -8,9 +8,11 @@ permalink: /doc/en/lb4/Command-line-interface.html
 summary:
 ---
 
-LoopBack 4 provides command-line tools to effortlessly scaffold applications from the ground up. LoopBack 4's CLI is equipped with generators to scaffold both applications and extensions as well as subgenerators for their artifacts such as Controllers and Providers. Once generated, the scaffold can be expanded with users' own code as needed.
+LoopBack 4 provides command-line tools to help you get started quickly, by generating application and extension projects and installing their dependencies for you.
+The CLI can also help you generate artifacts, such as controllers, for your projects.
+Once generated, the scaffold can be expanded with users' own code as needed.
 
-In order to start using LoopBack4's CLI toolings, install its module @loopback/cli:
+To use LoopBack 4's CLI, run this command:
 
 ```
 npm install -g @loopback/cli
