@@ -31,8 +31,8 @@ If provided, the tool will use that as the default when it prompts for the name.
 
 The tool will prompt you for:
 
-- Name of the controller. If the name had been supplied from the command line, the prompt is skipped and the controller is built with the name from the command line argument.
+- Name of the controller. If the name had been supplied from the command line, the prompt is skipped and the controller is built with the name from the command-line argument.
 
 ### Output
 
-The tool will create a new file as <code>/src/controllers/<i>controllerName</i>.controller.ts</code>. The file will contain an empty constructor and common package imports that can be uncommented.
+The tool will create a new file as <code>/src/controllers/<i>controller-name</i>.controller.ts</code>. The file will contain an empty constructor and common package imports that can be uncommented.
