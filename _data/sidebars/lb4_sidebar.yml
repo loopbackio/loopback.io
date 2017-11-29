@@ -128,6 +128,10 @@ children:
     url: Creating-components.html
     output: 'web, pdf'
 
+  - title: 'Testing your extension'
+    url: Testing-your-extension.html
+    output: 'web, pdf'
+
 - title: 'Crafting LoopBack 4'
   url: Crafting-LoopBack-4.html
   output: 'web, pdf'
