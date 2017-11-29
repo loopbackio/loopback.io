@@ -2,7 +2,7 @@
 
 IBM Cloudant® is a NoSQL database platform built for the cloud. You can
 use Cloudant as a fully-managed DBaaS running on public cloud platforms
-like Bluemix and SoftLayer or via an on-premises version called Cloudant
+like IBM Cloud and SoftLayer or via an on-premises version called Cloudant
 Local.
 
 For more information, see [Getting started with Cloudant NoSQL DB](https://www.ng.bluemix.net/docs/services/Cloudant/index.html)
@@ -99,7 +99,7 @@ And by properly controlling the conflict, developer can still do a safe modify. 
 
 The basic idea is when modifying a document, user needs to control conflict by handling the revision of a document, currently the connector controls this process, after retriving the latest revision, connector uses it to update/delete doc, and returns 409 conflict error if doc changes during that time slot. In the middle, user could not interfere and provide their own conflict solution.
 
-## Model 
+## Model
 
 ### Map Between Model And Document
 
@@ -133,7 +133,7 @@ index: {
 
 By default, `modelIndex` is 'loopback__model__name', and `modelSelector` is {[modelIndex]: modelName}. User can customize `modelSelector` and `modelIndex` in datasource's json file, for details please check [model-specific configuration](https://github.com/strongloop/loopback-connector-cloudant#model-specific-configuration)
 
-To create a model instance, the connector creates a non-design document with value of property 'loopback__model__name' equals to `modelName`. 
+To create a model instance, the connector creates a non-design document with value of property 'loopback__model__name' equals to `modelName`.
 
 For model properties, we plan to create index for property that has config `index: true`. In the future, it will be the same way as what mongodb connector does.
 
@@ -181,7 +181,7 @@ If you would like to have a `_rev` property on your model, as an end user, the o
 `model.json`
 ``` json
 {
-  ... 
+  ...
   "properties": {
     "_rev": {
       "type": "string"
@@ -449,21 +449,21 @@ For user that don't have a cloudant server to develop or test, here are some sug
 
 For development use, a docker container of Cloudant local is easy to setup and there is no request limit per second.
 
-Bluemix Cloudant will be more stable for production.
+IBM Cloud Cloudant will be more stable for production.
 
 - Cloudant local (docker image)
 
   - No request limit.
   - Please follow https://hub.docker.com/r/ibmcom/cloudant-developer/ to create your Cloudant local instance
 
-- Cloudant on Bluemix
+- Cloudant on IBM Cloud
 
   - Limit request per second by default.
-  - Choose Bluemix Cloudant if you already have a Bluemix account with a better situation than limited-days' free trial.
+  - Choose IBM Cloud Cloudant if you already have an IBM Cloud account with a better situation than limited-days' free trial.
 
   - Setup steps:
 
-    1. Open Bluemix console: https://console.ng.bluemix.net
+    1. Open IBM Cloud console: https://console.ng.bluemix.net
     1. Login with your account.
     1. Click on "CATALOG" in navigation bar.
     1. Search with keyword "cloudant" and choose the "Cloudant NOSQLDB" under "Data and Analytics".
@@ -473,12 +473,12 @@ Bluemix Cloudant will be more stable for production.
     1. Check "Manage" then click on button "LAUNCH" to see your Cloudant dashboard.
 
 - Cloudant DBaaS account
-  
+
   - Limit request per second.
   - Limited free trial.
   - Sign up with https://cloudant.com/sign-up/ then you will see your Cloudant dashboard.
-  
-To view the Cloudant dashboard on both DBaaS and Bluemix, [sign in](https://cloudant.com/sign-in/) with your Cloudant username and password.
+
+To view the Cloudant dashboard on both DBaaS and IBM Cloud, [sign in](https://cloudant.com/sign-in/) with your Cloudant username and password.
 
 # Installation
 
@@ -512,7 +512,7 @@ or
 "mydb": {
   "name": "mydb",
   "connector": "cloudant",
-  "username": "XXXX-bluemix",
+  "username": "XXXX-ibmcloud",
   "password": "YYYYYYYYYYYY",
   "database": "test"
 }
@@ -523,7 +523,7 @@ or
 ### `url` vs `username` & `password`
 - *NOTE: The `url` property will override `username` and `password`.*
 
-- It means only when missing `url`, cloudant will use `username` and `password` to create connection. 
+- It means only when missing `url`, cloudant will use `username` and `password` to create connection.
 
 - If `url` is wrong, even user provide correct `username` and `password`, the connection still fails.
 
@@ -584,7 +584,7 @@ var util = require('util');
 
 // Here we create datasource dynamically.
 // If you already define a static datasource in server/datasources.json,
-// please check how to load it in 
+// please check how to load it in
 // https://github.com/cloudant/nodejs-cloudant#example-code
 var DataSource = require ('loopback-datasource-juggler').DataSource,
     Cloudant   = require ('loopback-connector-cloudant');
@@ -639,7 +639,7 @@ The following migration functions take either an array of multiple model's name,
 
 ## autoupdate vs automigrate
 
-`autoupdate` does not destroy existing model instances if model already defined in database. It only creates design document for new models. 
+`autoupdate` does not destroy existing model instances if model already defined in database. It only creates design document for new models.
 Under the hood Cloudant allows creating same design doc multiple times, it doesn't return error, but returns `existed` as result to tell is it a new design doc or existing one.
 
 `automigrate` destroys existing model instances if model already defined in database. Please make sure you do want to clean up data before running `automigrate`. Then it does same thing as `autoupdate`
@@ -653,10 +653,10 @@ User can call this function to check if model exists in database.
 */server/script.js*
 ```javascript
 module.export = function migrateData(app) {
-  // Suppose you already define a datasource called `cloudantDS` 
+  // Suppose you already define a datasource called `cloudantDS`
   // in server/datasources.json
   var ds = app.datasources.cloudantDS;
-  
+
   // static model created with model.json file
   var StaticModel = app.models.StaticModel;
   // dynamic model created in boot script
@@ -688,7 +688,7 @@ module.export = function migrateData(app) {
 
 # Discovery
 
-Not implemented yet, track it in story https://github.com/strongloop/loopback-connector-cloudant/issues/118 
+Not implemented yet, track it in story https://github.com/strongloop/loopback-connector-cloudant/issues/118
 
 # Query
 
@@ -706,7 +706,7 @@ Since `viewDocs` is a specific api for Cloudant connector only, it is not attach
 ```javascript
 module.exports = function(server) {
   // Get Cloudant dataSource as `ds`
-  // 'cloudantDB' is the name of Cloudant datasource created in 
+  // 'cloudantDB' is the name of Cloudant datasource created in
   // 'server/datasources.json' file
   var ds = server.datasources.cloudantDB;
 
@@ -720,7 +720,7 @@ module.exports = function(server) {
     });
 
     // Alternatively user can also specify the filter for view query
-    ds.connector.viewDocs('design_doc', 'view_name', {key: 'filter'}, 
+    ds.connector.viewDocs('design_doc', 'view_name', {key: 'filter'},
       function(err, results) {});
   });
 };
@@ -794,7 +794,7 @@ module.exports = function(app) {
 # Testing
 
 - Cloudant local(docker image)
-  
+
   - url: given the dashboard address 'http://myhost:8080/dashboard.html', the connection url would be 'http://admin:pass@myhost:8080'
   - database: create your own database for testing
 
@@ -804,7 +804,7 @@ module.exports = function(app) {
   - password: your sign up password
   - database: create your own database for testing
 
-- Cloudant on Bluemix
+- Cloudant on IBM Cloud
 
   - username: see services credentials
   - password: see services credentials

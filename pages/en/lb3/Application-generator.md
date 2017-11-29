@@ -36,7 +36,7 @@ slc loopback [options] [<name>]
 ### Options
 
 `--bluemix`
-: Configure the app for deployment to Bluemix. With this option, the tool will present   additional prompts for generating Bluemix application artifacts.
+: Configure the app for deployment to IBM Cloud. With this option, the tool will present   additional prompts for generating IBM Cloud application artifacts.
 
 `--explorer`
 : Add Loopback Explorer to the project. Default is true.
