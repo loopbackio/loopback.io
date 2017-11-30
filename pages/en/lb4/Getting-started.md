@@ -49,7 +49,7 @@ cd getting-started
 npm start
 ```
 
-In a browser, visit `http://127.0.0.1:3000/ping`.
+In a browser, visit [http://127.0.0.1:3000/ping](http://127.0.0.1:3000/ping).
 
 ## Adding your own controller
 
@@ -87,4 +87,4 @@ Let's add a simple "Hello World" controller as follows:
 * Start the application using `npm start`.
     * *Note: If your application is still running, press **CTRL+C** to stop it before restarting it*
 
-* Visit `127.0.0.1:3000/hello` to see `Hello world!`
+* Visit [http://127.0.0.1:3000/hello](http://127.0.0.1:3000/hello) to see `Hello world!`
