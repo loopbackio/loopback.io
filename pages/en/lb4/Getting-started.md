@@ -14,7 +14,7 @@ not already installed on your machine.
 
 ## Install LoopBack 4 CLI
 
-The LoopBack 4 CLI is a command line interface that can scaffold a project or
+The LoopBack 4 CLI is a command-line interface that can scaffold a project or
 extension with more features under development. CLI provides the fastest way to
 get started with a LoopBack 4 project that adheres to best practices.
 
@@ -45,7 +45,7 @@ Answer the prompts as follows:
 
 The project comes with a "ping" route to test the project. Let's try it out by running the project.
 ```
-cd getting-strted
+cd getting-started
 npm start
 ```
 
@@ -73,10 +73,10 @@ export class HelloController {
 * Update `/src/application.ts` to load the controller:
     * Import `HelloController` at the top of the file
     ```ts
-    import {HelloController} from '.controllers/hello.controller';
+    import {HelloController} from './controllers/hello.controller';
     ```
 
-    * Bind controller in `setupControllers()`
+    * Add controller in `setupControllers()`
     ```ts
     setupControllers() {
       this.controller(PingController);
