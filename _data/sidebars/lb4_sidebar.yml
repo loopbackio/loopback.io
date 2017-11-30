@@ -94,6 +94,10 @@ children:
   output: 'web, pdf'
   children:
 
+  - title: 'Controller generator'
+    url: Controller-generator.html
+    output: 'web, pdf'
+
 - title: 'Best practices with Loopback 4'
   url: Best-practices-with-Loopback-4.html
   output: 'web, pdf'
