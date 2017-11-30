@@ -59,30 +59,30 @@ Let's add a simple "Hello World" controller as follows:
 * Create a new file in `/src/controllers/` called `hello.controller.ts`.
 
 * Paste the following contents into the file:
-```ts
-import {get} from '@loopback/rest';
+  ```ts
+  import {get} from '@loopback/rest';
 
-export class HelloController {
-  @get('/hello')
-  hello(): string {
-    return 'Hello world!';
+  export class HelloController {
+    @get('/hello')
+    hello(): string {
+      return 'Hello world!';
+    }
   }
-}
-```
+  ```
 
 * Update `/src/application.ts` to load the controller:
     * Import `HelloController` at the top of the file
-    ```ts
-    import {HelloController} from '.controllers/hello.controller';
-    ```
+      ```ts
+      import {HelloController} from '.controllers/hello.controller';
+      ```
 
     * Bind controller in `setupControllers()`
-    ```ts
-    setupControllers() {
-      this.controller(PingController);
-      this.controller(HelloController);
-    }
-    ```
+      ```ts
+      setupControllers() {
+        this.controller(PingController);
+        this.controller(HelloController);
+      }
+      ```
 
 * Start the application using `npm start`.
     * *Note: If your application is still running, press **CTRL+C** to stop it before restarting it*
