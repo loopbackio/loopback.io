@@ -28,12 +28,12 @@ npm i -g @loopback/cli
 The CLI tool will scaffold the project, configure TypeScript compiler and
 install all the required dependencies. To create a new project, run the CLI as
 follows and answer the prompts.
-```
-lb4
+```sh
+lb4 app
 ```
 
 Answer the prompts as follows:
-```
+```sh
 ? Project name: getting-started
 ? Project description: Getting started tutorial
 ? Project root directory: (getting-started)
@@ -44,7 +44,7 @@ Answer the prompts as follows:
 ### Starting the project
 
 The project comes with a "ping" route to test the project. Let's try it out by running the project.
-```
+```sh
 cd getting-started
 npm start
 ```
