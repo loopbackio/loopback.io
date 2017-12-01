@@ -792,6 +792,11 @@ For example:
       <td>Boolean</td>
       <td>Does not fetch the data if the relation is used in an include statement</td>
     </tr>
+    <tr>
+      <td>options.http.path</td>
+      <td>string</td>
+      <td>Set the relation http path</td>
+    </tr>
   </tbody>
 </table>
 
