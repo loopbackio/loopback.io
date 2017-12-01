@@ -39,7 +39,7 @@ slc loopback [options] [<name>]
 : Configure the app for deployment to IBM Cloud. With this option, the tool will present   additional prompts for generating IBM Cloud application artifacts.
 
 `--explorer`
-: Add Loopback Explorer to the project. Default is true.
+: Add Loopback Explorer to the project. If `lb` and `slc loopback` commands are used, the default is true, otherwise the default is false.
 
 `-n, --name <name>`
 : Only with IBM API Connect developer toolkit; specify name of LoopBack application project.
