@@ -52,7 +52,7 @@ You can add server instances to your application via the `app.server()` method i
 
 ```ts
 import {Application} from '@loopback/core';
-import {RestServer} from '@loopback/rest';
+import {RestComponent, RestServer} from '@loopback/rest';
 
 export class HelloWorldApp extends Application {
   constructor() {
