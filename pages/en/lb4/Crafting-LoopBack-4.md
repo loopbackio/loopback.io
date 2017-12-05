@@ -21,11 +21,11 @@ LoopBack uses Express routing and middleware as the plumbing to a request/respon
 
 ![loopback-overview](/images/lb4/loopback-overview.png)
 
-LoopBack has grown significantly in features and users with many years of development and multiple releases. LoopBack has bee well-recieved by the developer community. As an indication, the community has developed [many extensions](https://github.com/pasindud/awesome-loopback). The core team has also learned a lot from what we have done as well as great feedback from the community.
+LoopBack has grown significantly in features and users with many years of development and multiple releases. LoopBack has been well-recieved by the developer community. As an indication, the community has developed [many extensions](https://github.com/pasindud/awesome-loopback). The core team has also learned a lot from what we have done as well as great feedback from the community.
 
 ## Why LoopBack 4?
 
-Like many projects,LoopBack has started to experience growing pains, especially as:
+Like many projects, LoopBack has started to experience growing pains, especially as:
 
 1. The code base becomes more complicated over time with more modules and more functionality. We would like to have more maintainers and contributors to help out. But the learning curve is getting steep. One of the things to blame is JavaScript itself, which is weakly-typed and lack of constructs such as interfaces to explicitly define contracts between code. There is quite a bit hidden knowledge that is not explicit or obvious for new comers.
 
