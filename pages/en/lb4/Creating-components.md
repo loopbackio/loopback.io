@@ -142,6 +142,25 @@ The idiomatic solution has two parts:
     }
     ```
 
+    A sequence action is typically implemented as an `action()` method in the provider.
+
+    ```js
+    class AuthenticateActionProvider {
+      // Provider interface
+      value() {
+        return request => this.action(request);
+      }
+
+      // The sequence action
+      action(request) {
+        // authenticate the user
+      }
+    }
+    ```
+
+    It may be tempting to put action implementation directly inside the anonymous arrow function returned by provider's `value()` method. We consider that as a bad practice though, because when an error occurs, the stack trace will contain only an anonymous function that makes it more difficult to link the entry with the sequence action.
+
+
  2. The application should use a custom `Sequence` class which calls this new sequence action in an appropriate place.
 
     ```js
@@ -194,10 +213,12 @@ export class AuthenticationProvider {
   }
 
   value() {
-    return async (request: ParsedRequest) => {
-      const strategy = await getStrategy();
-      // ...
-    };
+    return request => this.action(request);
+  }
+
+  async action(request) {
+    const strategy = await getStrategy();
+    // ...
   }
 }
 ```
@@ -220,12 +241,14 @@ export class AuthenticationProvider {
   }
 
   value() {
-    return async (request: ParsedRequest) => {
-      const strategy = await getStrategy();
-      const user = // ... authenticate
-      setCurrentUser(user);
-      return user;
-    };
+    return request => this.action(request);
+  }
+
+  async action(request) {
+    const strategy = await getStrategy();
+    const user = // ... authenticate
+    setCurrentUser(user);
+    return user;
   }
 }
 ```
@@ -238,7 +261,7 @@ properties and methods by using mixins.
 For an overview of mixins, see [Mixin](Mixin.html).
 
 An example of how a mixin leverages a component is `RepositoryMixin`.
-Suppose an app has multiple components with repositories bound to each of them. 
+Suppose an app has multiple components with repositories bound to each of them.
 You can use function `RepositoryMixin()` to mount those repositories to application level context.
 
 The following snippet is an abbreviated function
@@ -308,10 +331,10 @@ class EmailComponent {
 }
 ```
 
-## Creating your own servers 
+## Creating your own servers
 
 LoopBack 4 has the concept of a Server, which you can use to create your own
-implementations of REST, SOAP, gRPC, MQTT and more. For an overview, see 
+implementations of REST, SOAP, gRPC, MQTT and more. For an overview, see
 [Server](Server.html).
 
 Typically, you'll want server instances that listen for traffic on one or more
