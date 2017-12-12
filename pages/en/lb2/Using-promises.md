@@ -72,6 +72,38 @@ Promise support in LoopBack is still in progress. The following are complete:
 
 See [LoopBack issue #418](https://github.com/strongloop/loopback/issues/418#issue-38984704) for details.
 
+{% include tip.html content="
+    
+When returning a Promise instead of a callback the callback function should not be called at all. Calling the callback function inside a Promise return will cause unexpected results, for example Operation Hooks being called twice.  For example:
+```javascript
+MyModel.observe('before save', function beforeSave(ctx, next) {
+  // Resolving with a callback
+  next();
+});
+MyModel.observe('before save', function beforeSave(ctx, next) {
+  // Resolving with a promise
+  return Promise.resolve();
+});
+```
+These are some examples of what not to do:
+```javascript
+MyModel.observe('before save', function beforeSave(ctx, next) {
+  return Promise.resolve(next());
+});
+MyModel.observe('before save', function beforeSave(ctx, next) {
+  next();
+  return Promise.resolve();
+});
+MyModel.observe('before save', function beforeSave(ctx, next) {
+  return Promise.resolve()
+    .then(function() {
+      next();
+    });
+});
+```
+
+" %}
+
 ## Setup
 
 When using Node v0.12- or io.js 1.0-, you can use the native [global Promise object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise).
