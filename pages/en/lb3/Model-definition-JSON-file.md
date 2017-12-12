@@ -973,7 +973,7 @@ For example:
 }
 ```
 
-Now, any CRUD operation with a query parameter runs in the default scope will be applied; for example, assuming the above scope, a find opearation such as
+Now, any CRUD operation with a query parameter runs in the default scope will be applied; for example, assuming the above scope, a find operation such as
 
 ```javascript
 Product.find({offset: 0}, cb);
