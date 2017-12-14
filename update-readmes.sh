@@ -28,7 +28,7 @@ strongloop loopback-connector-remote master
 strongloop loopback-connector-rest master
 strongloop loopback-connector-soap master
 strongloop strong-soap master
-strongloop loopback-android-getting-started master
+strongloop-community loopback-android-getting-started master
 strongloop loopback-example-angular master
 strongloop loopback-example-app-logic master
 strongloop loopback-example-access-control master
@@ -45,7 +45,7 @@ strongloop loopback-example-passport master
 strongloop loopback-example-relations master
 strongloop loopback-example-storage master
 strongloop loopback-example-user-management master
-strongloop loopback-ios-getting-started master
+strongloop-community loopback-ios-getting-started master
 strongloop strong-error-handler master
 strongloop strong-remoting master
 strongloop angular-live-set
