@@ -123,12 +123,10 @@ Find ALL Student and also return ALL their Classes with the Teacher who teaches 
 
 ```javascript
 Student.find({
-  "filter": {
-    "include": {
-      "relation": "classes",
-      "scope": {
-        "include": ["teachers", "students"]
-      }
+  include: {
+    relation: "classes",
+    scope: {
+      include: ["teachers", "students"]
     }
   }
 });
@@ -138,15 +136,13 @@ Another example: find a specific teacher and also return ALL their classes and a
 
 ```javascript
 Teacher.find({
-  "filter": {
-    "where": {
-      "id": $state.params.id
-    },
-    "include": {
-      "relation": "classes",
-      "scope": {
-        "include": ["students"]
-      }
+  where: {
+    id: $state.params.id
+  },
+  include: {
+    relation: "classes",
+    scope: {
+      include: ["students"]
     }
   }
 });
