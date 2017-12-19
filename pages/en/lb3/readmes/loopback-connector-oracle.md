@@ -221,12 +221,12 @@ var ds = loopback.createDataSource({
   <tbody>    
     <tr>
       <td>minConn</td>
-      <td>Maximum number of connections in the connection pool</td>
+      <td>Minimum number of connections in the connection pool</td>
       <td>1</td>
     </tr>
     <tr>
       <td>maxConn</td>
-      <td>Minimum number of connections in the connection pool</td>
+      <td>Maxmimum number of connections in the connection pool</td>
       <td>10</td>
     </tr>
     <tr>
