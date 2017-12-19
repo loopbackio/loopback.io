@@ -18,9 +18,8 @@ Using phases helps to avoid ordering issues that can occur with standard Express
 
 LoopBack supports the following types of middleware:
 
-* **Pre-processing middleware** for custom application logic. See [example of static middleware](#static-middleware). 
-* **Dynamic request handling middleware** to serve dynamically-generated responses, for example HTML pages rendered from templates and JSON responses to REST API requests.
-  See [example of pre-processing middleware](#pre-processing-middleware).
+* **Pre-processing middleware** for custom application logic. See [example of pre-processing middleware](#pre-processing-middleware). 
+* **Dynamic request handling middleware** to serve dynamically-generated responses, for example HTML pages rendered from templates and JSON responses to REST API requests. See [example pending].
 * **Static middleware** to serve static client-side assets.  See [example of static middleware](#static-middleware).
 * **Error-handling middleware** to deal with request errors. See [example of error-handling middleware](#error-handling-middleware).
 
