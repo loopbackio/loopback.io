@@ -59,12 +59,12 @@ export class HelloWorldApp extends Application {
     super({
       components: [RestComponent],
     });
+    // This server instance will be bound under "servers.fooServer".
+    this.server(RestServer, 'fooServer');
+    // Creates a binding for "servers.MQTTServer" and a binding for
+    // "servers.SOAPServer";
+    this.servers([MQTTServer, SOAPServer]);
   }
-  // This server instance will be bound under "servers.fooServer".
-  this.server(RestServer, 'fooServer');
-  // Creates a binding for "servers.MQTTServer" and a binding for
-  // "servers.SOAPServer";
-  this.servers([MQTTServer, SOAPServer]);
 }
 ```
 
