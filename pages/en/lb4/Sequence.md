@@ -13,6 +13,30 @@ summary:
 A `Sequence` is a stateless grouping of [Actions](#actions) that control how a
 `Server` responds to requests.
 
+```js
+const server = await app.getServer(RestServer);
+server.handler((sequence, request, response) => {
+  const spec = {parameters: {name: 'string', source: 'query'}};
+  const params = sequence.parseParams(request, spec);
+  sequence.send(response, `hello ${params.name}`);
+});
+```
+
+In the following example, we define a `handler` function that uses the
+`Sequence` to respond to every HTTP request our server instance receives
+with `hello $name` (eg. `GET /?name=bob => 'hello bob'`).
+
+```js
+class MySequence extends DefaultSequence {
+  // this is the same as using `server.handler(handle)`
+  handle(request, response) {
+    const spec = {params: {name: {type: 'string', in: 'query'}}};
+    const params = this.parseParams(request, spec);
+    this.send(response, `hello ${params.name}`);
+  }
+}
+```
+
 The contract of a `Sequence` is simple: it must produce a response to a request.
 Creating your own `Sequence` gives you full control over how your `Server`
 instances handle requests and responses. The `DefaultSequence` looks like this:
@@ -23,10 +47,10 @@ instances handle requests and responses. The `DefaultSequence` looks like this:
 -->
 ```js
 class DefaultSequence {
-  async handle(request: ParsedRequest, response: ServerResponse) {
+  async handle(request, response) {
     try {
       const route = this.findRoute(request);
-      const params = await this.parseParams(request, route);
+      const params = this.parseParams(request, route);
       const result = await this.invoke(route, params);
       await this.send(response, result);
     } catch(err) {
@@ -56,11 +80,11 @@ Actions are JavaScript functions that only accept or return `Elements`. Since th
 
 ```js
 class MySequence extends DefaultSequence {
-  async handle(request: ParsedRequest, response: ServerResponse) {
+  async handle(request, response) {
     // findRoute() produces an element
     const route = this.findRoute(request);
     // parseParams() uses the route element and produces the params element
-    const params = await this.parseParams(request, route);
+    const params = this.parseParams(request, route);
     // invoke() uses both the route and params elements to produce the result (OperationRetVal) element
     const result = await this.invoke(route, params);
     // send() uses the result element
