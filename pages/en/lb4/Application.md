@@ -31,7 +31,7 @@ tasks as a part of your setup:
 ```ts
 import {Application} from '@loopback/core';
 import {RestComponent, RestServer} from '@loopback/rest';
-import {SamoflangeController, DoohickeyController} from './src/controllers';
+import {SamoflangeController, DoohickeyController} from './controllers';
 import {WidgetApi} from './apidef/';
 
 export class WidgetApplication extends Application {
@@ -110,13 +110,13 @@ application's configuration:
 export class MyApplication extends Application {
   constructor() {
     super();
+    this.server(RestServer);
+    this.controller(FooController);
+    this.bind('fooCorp.logger').toProvider(LogProvider);
+    this.bind('repositories.widget')
+      .toClass(WidgetRepository)
+      .inScope(BindingScope.SINGLETON);
   }
-  this.server(RestServer);
-  this.controller(FooController);
-  this.bind('fooCorp.logger').toProvider(LogProvider);
-  this.bind('repositories.widget')
-    .toClass(WidgetRepository)
-    .inScope(BindingScope.SINGLETON);
 }
 ```
 In the above example:
