@@ -1136,7 +1136,7 @@ For MySQL, you can declare multi-column indexes as follows (for example):
 "indexes":
 {
     "UNIQUE_INDEX":  {
-        "columns": "column1,column2,...",
+        "columns": "`column1`,`column2`,...",
         "kind": "unique"
     }
 },
