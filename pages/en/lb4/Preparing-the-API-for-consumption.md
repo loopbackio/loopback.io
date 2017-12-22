@@ -9,7 +9,7 @@ summary:
 ---
 
 {% include previous.html content="
-This article continues off from [Implmenting features](./Implementing-features.html).
+This article continues off from [Implementing features](./Implementing-features.html).
 " %}
 
 ## Preparing your API for consumption
