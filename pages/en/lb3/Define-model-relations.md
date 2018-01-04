@@ -60,6 +60,9 @@ The tool will prompt you to provide the information required to define the relat
 ? Enter the property name for the relation: reviews
 ? Optionally enter a custom foreign key:
 ? Require a through model? No
+? Allow the relation to be nested in REST APIs: No
+? Disable the relation from being included: No
+
 ```
 
 **A coffee shop has many reviewers**; No through model and no foreign key.
@@ -71,6 +74,8 @@ The tool will prompt you to provide the information required to define the relat
 ? Enter the property name for the relation: reviewers
 ? Optionally enter a custom foreign key:
 ? Require a through model? No
+? Allow the relation to be nested in REST APIs: No
+? Disable the relation from being included: No
 ```
 
 **A review belongs to a coffee shop**; No foreign key.
@@ -81,6 +86,9 @@ The tool will prompt you to provide the information required to define the relat
 ? Choose a model to create a relationship with: CoffeeShop
 ? Enter the property name for the relation: coffeeShop
 ? Optionally enter a custom foreign key:
+? Allow the relation to be nested in REST APIs: No
+? Disable the relation from being included: No
+
 ```
 
 **A review belongs to a reviewer**; foreign key is `publisherId`.
@@ -91,6 +99,9 @@ The tool will prompt you to provide the information required to define the relat
 ? Choose a model to create a relationship with: Reviewer
 ? Enter the property name for the relation: reviewer
 ? Optionally enter a custom foreign key: publisherId
+? Allow the relation to be nested in REST APIs: No
+? Disable the relation from being included: No
+
 ```
 
 **A reviewer has many reviews**; foreign key is `publisherId`.
@@ -102,6 +113,9 @@ The tool will prompt you to provide the information required to define the relat
 ? Enter the property name for the relation: reviews
 ? Optionally enter a custom foreign key: publisherId
 ? Require a through model? No
+? Allow the relation to be nested in REST APIs: No
+? Disable the relation from being included: No
+
 ```
 
 ## Review the model JSON files
