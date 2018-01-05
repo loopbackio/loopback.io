@@ -27,6 +27,7 @@ used for new development.
 " %}
 
 {% include see-also.html content="
+- [ES6 style guide for LoopBack 3.x](style-guide-es5.html)
 - [Google C++ Style Guide](https://google.github.io/styleguide/cppguide.html)
 - [Google Javascript Style Guide](https://google.github.io/styleguide/javascriptguide.xml)
 " %}

@@ -1,14 +1,12 @@
 ---
-title: Code style guide
+title: Code style guide (3.x/ES6)
 lang: en
 toc: false
 tags: [contributing, community]
 keywords:
-summary: "These are LoopBack's general coding style guidelines."
+summary: "These are LoopBack's general coding style guidelines for ES6 branches, e.g. 3.x release lines."
 sidebar: contrib_sidebar
-permalink: /doc/en/contrib/style-guide.html
-redirect_from:
-- /style-guide/
+permalink: /doc/en/contrib/style-guide-es6.html
 ---
 <!--
 Style conventions for this document:
@@ -17,9 +15,19 @@ Style conventions for this document:
  - level3 headings are reserved to subsections within rules, e.g. `#### Exceptions`
 -->
 
+{% include important.html content="
+
+This document describes the coding style we were using in EcmaScript6 code base
+before switching to TypeScript in LoopBack 4.0. Follow these rules when
+working in ES6 codebases.
+
+See the [current style guide](style-guide.html) for up-to-date conventions
+used for new development.
+
+" %}
+
 {% include see-also.html content="
 - [ES5 style guide for LoopBack 2.x](style-guide-es5.html)
-- [ES6 style guide for LoopBack 3.x](style-guide-es6.html)
 - [Google C++ Style Guide](https://google.github.io/styleguide/cppguide.html)
 - [Google Javascript Style Guide](https://google.github.io/styleguide/javascriptguide.xml)
 " %}
