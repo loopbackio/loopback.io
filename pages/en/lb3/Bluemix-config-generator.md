@@ -1,5 +1,5 @@
 ---
-title: "Bluemix configuration generator"
+title: "IBM Cloud configuration generator"
 lang: en
 layout: page
 keywords: LoopBack
@@ -88,7 +88,7 @@ Without any options, the tool will create a [manifest.yml](https://console.bluem
 
 If you answered "Y" to the prompt about generating [Docker-related files](https://docs.docker.com/engine/reference/builder/), or ran the generator with the `--docker` option, the tool will create Docker files.
 
-If you answered "Y" to the prompt about generating toolchain files, or ran the generator with the `--toolchain` option, the tool will create [Bluemix toolchain files](https://console.bluemix.net/docs/services/ContinuousDelivery/toolchains_working.html#toolchains_getting_started).
+If you answered "Y" to the prompt about generating toolchain files, or ran the generator with the `--toolchain` option, the tool will create [IBM Cloud toolchain files](https://console.bluemix.net/docs/services/ContinuousDelivery/toolchains_working.html#toolchains_getting_started).
 
 If you answered "Y" to the prompt about enabling autoscaling, the tool will add `[bluemix-autoscaling-agent](https://www.npmjs.com/package/bluemix-autoscaling-agent)` to `server.js`  add the dependency to the `package.json` file.
 
