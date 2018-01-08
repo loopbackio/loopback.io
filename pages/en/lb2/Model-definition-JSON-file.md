@@ -385,7 +385,7 @@ To explicitly specify a property as ID, set the `id` property of the option t
 * `false` (or any value that converts to false): the property is not an ID (default).
 * Positive number, such as 1 or 2: the property is the index of a composite ID.
 
-In database terms, ID properties are primary key column(s) are. Such properties are defined with the 'id' attribute set to true or a number as the position for a composite key.
+In database terms, ID properties are primary key column(s). Such properties are defined with the 'id' attribute set to true or a number as the position for a composite key.
 
 For example,
 
