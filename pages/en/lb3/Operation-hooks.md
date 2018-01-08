@@ -744,6 +744,10 @@ if (subscriptions.length > 0) {
 }
 ```
 
+{% include see-also.html content="
+Interesting extended example that performs a nested delete: https://stackoverflow.com/a/28990626/3038071
+" %}
+
 ### after delete
 
 {% include important.html content="
