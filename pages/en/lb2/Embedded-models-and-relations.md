@@ -24,6 +24,48 @@ In addition to the traditional ones, LoopBack also supports the following embedd
 {% include important.html content="You can use embedded relations with relational databases, but data will always be stored in stringified-JSON format.
 " %}
 
+## Transient versus persistent for the embedded model
+
+### Define a transient data source
+
+{% include code-caption.html content="server/datasources.json" %}
+```javascript
+{
+  ...
+  "transient": {
+    "name": "transient",
+    "connector": "transient"
+  }
+}
+```
+
+### Use the transient data source for embedded models
+
+{% include code-caption.html content="server/model-config.json" %}
+```javascript
+{
+  ...
+  "Customer": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Address": {
+    "dataSource": "transient",
+    "public": false
+  },
+  "EmailAddress": {
+    "dataSource": "transient",
+    "public": false
+  },
+  "Account": {
+    "dataSource": "db",
+    "public": false
+  }
+}
+```
+
+The embedded instances are stored inside their parent instance, which means you can see them in parentModel's database record. The default idType for a embedded model is "String", not the same type of its parent model id. 
+
 ## EmbedsOne
 
 EmbedsOne is used to represent a model that embeds another model, for example, a Customer embeds one billingAddress.
@@ -381,45 +423,3 @@ since a person can be an Author or a Reader.
 * customer.accounts.add()
 * customer.accounts.remove()
 * customer.accounts.at()
-
-## Transient versus persistent for the embedded model
-
-### Define a transient data source
-
-{% include code-caption.html content="server/datasources.json" %}
-```javascript
-{
-  ...
-  "transient": {
-    "name": "transient",
-    "connector": "transient"
-  }
-}
-```
-
-### Use the transient data source for embedded models
-
-{% include code-caption.html content="server/model-config.json" %}
-```javascript
-{
-  ...
-  "Customer": {
-    "dataSource": "db",
-    "public": true
-  },
-  "Address": {
-    "dataSource": "transient",
-    "public": false
-  },
-  "EmailAddress": {
-    "dataSource": "transient",
-    "public": false
-  },
-  "Account": {
-    "dataSource": "db",
-    "public": false
-  }
-}
-```
-
-The embedded instances are stored inside their parent instance, which means you can see them in parentModel's database record. The default idType for a embedded model is "String", not the same type of its parent model id.
