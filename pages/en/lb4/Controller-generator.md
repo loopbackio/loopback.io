@@ -39,6 +39,20 @@ command-line argument.
   * **Basic CRUD Controller** - A controller wired up to a model and repository
   definition, with pre-defined CRUD methods.
 
+#### Empty Controller
+If you select the Empty Controller, it will generate a nearly-empty template
+based on the given name:
+
+```ts
+// Uncomment these imports to begin using these cool features!
+
+// import {inject} from '@loopback/context';
+
+export class FooController {
+  constructor() {}
+}
+```
+
 #### REST Controller with CRUD Methods
 If you select the REST Controller with CRUD Methods type, you will then be asked
 to select:
@@ -112,9 +126,3 @@ export class TodoController {
   }
 }
 ```
-
-### Output
-The tool will create a new file as
-<code>/src/controllers/<i>controller-name</i>.controller.ts</code>.
-The file will contain an empty constructor and common package imports that can
-be uncommented.
