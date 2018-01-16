@@ -1,5 +1,5 @@
 ---
-title: "Exposing models over REST"
+title: "REST経由でモデルを公開する"
 lang: ja
 layout: page
 toc_level: 2
@@ -10,11 +10,10 @@ permalink: /doc/ja/lb3/Exposing-models-over-REST.html
 summary:
 ---
 
-## Overview
+## 概要
 
-LoopBack models automatically have a [standard set of HTTP endpoints](http://apidocs.loopback.io/loopback/#persistedmodel)
-that provide REST APIs for create, read, update, and delete (CRUD) operations on model data.
-The `public` property in [model-config.json](model-config.json.html) specifies whether to expose the model's REST APIs, for example:
+LoopBackのモデルは自動的に、モデルのデータに対して作成・読取・更新・削除（CRUD）操作を行うREST APIを提供する、 [標準的なHTTPエンドポイント一式](http://apidocs.loopback.io/loopback/#persistedmodel)を持ちます。
+[model-config.json](model-config.json.html) ファイルの `public` プロパティは、モデルのREST APIを公開するかどうかを指定します。
 
 {% include code-caption.html content="/server/model-config.json" %}
 ```javascript
@@ -26,32 +25,32 @@ The `public` property in [model-config.json](model-config.json.html) specifies 
 ...
 ```
 
-To "hide" the model's REST API, simply change `public` to `false`.
+モデルのREST API を「隠す」には、単に `public` を `false` に変更します。
 
-### REST paths
+### RESTパス
 
-By default, the REST APIs are mounted to the plural of the model name; specifically:
+既定では、REST APIはモデル名の複数形としてマウントされます。具体的には以下のとおりです。
 
 * `Model.settings.http.path`
-* `plural`, if defined in the [Model definition JSON file](Model-definition-JSON-file.html).
-* Automatically-pluralized model name (the default). For example, if you have a location model, by default it is mounted to `/locations`. 
+* `plural` （[モデル定義JSONファイル](Model-definition-JSON-file.html)で定義されている場合）
+* 自動的に複数形に変換されたモデル名（既定）。例えば、location モデルがあった場合、既定では `/locations` としてマウントされます。
 
-### Using the REST Router
+### RESTルータを使う
 
-By default, scaffolded applications expose models over REST using the `loopback.rest` router.
+既定では、土台を作ったアプリケーションは `loopback.rest` ルータを使って、モデルをREST経由で公開します。
 
 {% include important.html content="
-If you created your application using the [application generator](Application-generator.html), LoopBack will automatically set up REST middleware and register public models.  You don't need to do anything additional.
+[アプリケーション生成ツール](Application-generator.html) を使ってアプリケーションを作成した場合、LoopBackは自動的にRESTミドルウェアを設定し、公開するモデルを登録します。何か追加の作業は必要ありません。
 " %}
 
-To manually expose a model over REST with the `loopback.rest` router, use the following code, for example:
+手動で、`loopback.rest` ルータを使って、REST経由でモデルを公開するには、以下のようなコードを使用します。
 
 {% include code-caption.html content="/server/server.js" %}
 ```javascript
 var app = loopback();
 app.use(loopback.rest());
 
-// Expose the `Product` model
+// `Product` モデルを公開する
 app.model(Product);
 ```
 
@@ -60,47 +59,48 @@ At this point, the model is schema-less and the data are not checked.
 
 You can then view generated REST documentation at [http://localhost:3000/explorer](http://localhost:3000/explorer)
 
-LoopBack provides a number of [built-in models](Using-built-in-models.html) that have REST APIs.
-See [Built-in models REST API](Built-in-models-REST-API.html) for more information.
+LoopBackは、REST APIを持つ幾つかの[組み込みモデル](Using-built-in-models.html)を提供しています。
+詳細は、[組み込みモデルのREST API](Built-in-models-REST-API.html) を参照してください。
 
-### Request format
+### リクエスト形式
 
-For POST and PUT requests, the request body can be JSON, XML or URL-encoded format, with the **Content-Type** header set to one of:
+POST・PUTリクエストについては、リクエストボディはJSON・XML・URLエンコードされた形式が使えます。
+**Content-Type** ヘッダは以下のいずれかにしてください。
 
 - `application/json`
 - `application/xml`
 - `application/x-www-form-urlencoded`
 
-The **Accept** header indicates its preference for the response format.
+**Accept** ヘッダは、好ましいレスポンス形式を示します。
 
 {% include tip.html content="
-Setting the request's **Accept** header to `application/vnd.api-json` will result in the response's **Content-Type** header being automatically set to `application/vnd.api-json` if `application/vnd.api-json` is in the array of supported types.
+リクエストの **Accept** ヘッダを `application/vnd.api-json` にセットすると、`application/vnd.api-json` がサポートされるタイプにあれば、レスポンスの **Content-Type** ヘッダは自動的に `application/vnd.api-json` にセットされます。
 
-Set the supported types with the `remoting.``rest.supportedTypes` property in [config.json](config.json.html).
+サポートされるタイプは [config.json](config.json.html) ファイルの `remoting.rest.supportedTypes` プロパティで設定します。
 " %}
 
-#### Passing JSON object or array using HTTP query string
+#### HTTPクエリ文字列を使って、JSONのオブジェクトや配列を渡す
 
-Some REST APIs take a JSON object or array from the query string. LoopBack supports two styles to encode the object/array value as query parameters.
+幾つかのREST APIは、クエリ文字列にJSONオブジェクトや配列を受け取ります。LoopBackは、オブジェクトや配列の値をクエリパラメータとしてエンコードする方式を２つサポートしています。
 
-* Syntax from node-querystring (qs)
-* Stringified JSON
+* node-querystring (qs) の文法
+* 文字列化した JSON
 
-For example,
+例えば以下のようなものです。
 
 ```
 http://localhost:3000/api/users?filter[where][username]=john&filter[where][email]=callback@strongloop.com
 http://localhost:3000/api/users?filter={"where":{"username":"john","email":"callback@strongloop.com"}}
 ```
 
-The table below illustrates how to encode the JSON object/array in different styles:
+以下のテーブルは、JSONオブジェクト・配列を異なる方式でエンコードする方法を説明しています。
 
 <table style="width: 800px;">
   <thead>
     <tr>
-      <th>JSON object/array</th>
-      <th>qs style</th>
-      <th>Stringified JSON</th>
+      <th>JSON オブジェクト・配列</th>
+      <th>qs方式</th>
+      <th>文字列化したJSON</th>
     </tr>
   </thead>
   <tbody>    
@@ -167,10 +167,10 @@ where: {
   </tbody>
 </table>
 
-### Response format
+### レスポンス形式
 
-The response format for all requests is typically a JSON object/array or XML in the body and a set of headers.
-Some responses have an empty body. For example,
+全てのリクエストのレスポンス形式は通常、ボディ部にJSONオブジェクト・配列またはXMLと、ヘッダ一式からなります。
+レスポンスによってはボディは空です。
 
 ```
 HTTP/1.1 200 OK
@@ -185,19 +185,19 @@ Connection: keep-alive
 {"title":"MyNote","content":"This is my first note","id":1}
 ```
 
-The HTTP status code indicates whether a request succeeded:
+HTTPステータスコードは、リクエストが成功したかどうかを示します。
 
-* Status code 2xx indicates success
-* Status code 4xx indicates request related issues.
-* Status code 5xx indicates server-side problems
+* ステータスコード 2xx は成功を表します。
+* ステータスコード 4xx はリクエスト関連の問題を表します。
+* ステータスコード 5xx はサーバ側の問題を表します。
 
-The response for an error is in the following JSON format:
+エラーに対するレスポンスは、以下のようなJSON形式になります。
 
-* message: String error message.
-* stack: String stack trace.
-* statusCode: Integer [HTTP status code](http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html).
+* message: エラーメッセージ文字列
+* stack: スタックトレース文字列
+* statusCode: [HTTP ステータスコード](http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html)の整数値
 
-For example,
+例えば以下のようになります。
 
 ```javascript
 {
@@ -226,17 +226,17 @@ For an application using [loopback-component-explorer](https://github.com/strong
 }
 ```
 
-## Predefined remote methods
+## 事前に定義されたリモートメソッド
 
-By default, for a model backed by a data source that supports it,
-LoopBack exposes a REST API that provides all the standard create, read, update, and delete (CRUD) operations.
+既定では、背後にデータソースが存在するモデルについては、
+LoopBackは標準的な作成・読取・更新・削除（CRUD）操作を全て備えたREST APIを公開します。
 
-As an example, consider a simple model called `Location` (that provides business locations) to illustrate the REST API exposed by LoopBack.
-LoopBack automatically creates a number of Node methods with corresponding REST endpoints, including:
+LoopBackが公開するREST APIを説明するための例として、 `Location`（営業拠点を表します）と呼ばれる単純なモデルを考えます。
+LoopBackは自動的に、いくつものRESTエンドポイントに対応するNodeのメソッドを作成します。
 
-The following table describes remote methods exposed in LoopBack 3.x:
+以下の表は、LoopBack 3.x にて公開されるリモートメソッドのリストです。
 
-| Model (Node) API | HTTP Method | Example Path |
+| モデル (Node) API | HTTPメソッド | パスの例 |
 |---|---|---|
 | [create()](https://apidocs.loopback.io/loopback/#persistedmodel-create)                                        | POST   | /locations                 |
 | [replaceOrCreate()](https://apidocs.loopback.io/loopback/#persistedmodel-replaceorcreate)                      | PUT    | /locations                 |
@@ -254,13 +254,13 @@ The following table describes remote methods exposed in LoopBack 3.x:
 | [replaceOrCreate()](https://apidocs.loopback.io/loopback/#persistedmodel-replaceorcreate)                      | POST   | /locations/replaceOrCreate |
 | [replaceById()](https://apidocs.loopback.io/loopback/#persistedmodel-replacebyid)                              | POST   | /locations/:id/replace     |
 
-As you see the only difference between LoopBack 2.x and 3.0 in default configuration is the behaviour of HTTP PUT endpoints (both `PUT /api/my-models` and `PUT /api/my-models/:id`). By default in LoopBack 2.x, these endpoints invoke patch methods and perform a partial update, while in LoopBack 3.0, these methods perform a full replace.
+ご覧の通り、既定の設定でLoopBack 2.x と 3.0 の違いは HTTP PUTエンドポイントの振る舞い( `PUT /api/my-models` と `PUT /api/my-models/:id` の両方)だけです。LoopBack 2.x の既定では、これらのエンドポイントは patch メソッドを呼出して部分的な更新を行っていましたが、LoopBack 3.0 では、これらのメソッドは完全な置き換えを実行します。
 
-## replaceOnPUT flag
+## replaceOnPUT フラグ
 
-Use the replaceOnPUT property in `model.json` to change the behavior of mapping replace and update methods. If replaceOnPUT is true, replaceOrCreate and replaceById  use the HTTP PUT method; if it is false, updateOrCreate and updateAttributes/patchAttributes use the HTTP PUT method.
+replaceとupdateメソッドの振る舞いを変更するには、 `model.json`  内の replaceOnPUT プロパティを使用します。もし、replaceOnPUT が trueならば、replaceOrCreate と replaceById がHTTP PUT メソッドを使用し、false ならば、updateOrCreate と updateAttributes/patchAttributes が HTTP PUT メソッドを使用します。
 
-The following example illustrates how to set `replaceOnPUT` in `location.json`:
+以下は、`location.json` にて `replaceOnPUT` を設定する方法のサンプルです。
 
 ```javascript
 ...
@@ -275,13 +275,13 @@ The following example illustrates how to set `replaceOnPUT` in `location.json
 ```
 
 {% include tip.html content="
-The above table provides a partial list of methods and REST endpoints.
-See the [API documentation](https://apidocs.loopback.io/loopback/#persistedmodel) for a complete list of all the Node API methods.  See [PersistedModel REST API](PersistedModel-REST-API.html) for details on the REST API.
+上の表はRESTエンドポイントやメソッドの部分的なリストです。
+Node APIメソッドの完全な一覧は、[API documentation](https://apidocs.loopback.io/loopback/#persistedmodel) を参照ください。  REST API についての詳細は、[PersistedModel REST API](PersistedModel-REST-API.html) を参照ください。
 " %}
 
-## Exposing and hiding models, methods, and endpoints
+## モデル・メソッド・エンドポイントの公開と隠蔽
 
-To expose a model over REST, set the `public` property to true in `/server/model-config.json`:
+モデルをREST経由で公開するには、`/server/model-config.json` ファイルの `public` プロパティを true にセットします。
 
 ```javascript
 ...
@@ -292,31 +292,30 @@ To expose a model over REST, set the `public` property to true in `/server/mode
 ...
 ```
 
-### Hiding methods and REST endpoints
+### メソッドとRESTエンドポイントの隠蔽
 
-If you don't want to expose certain operations, hide them by calling 
-[`disableRemoteMethodByName()`](http://apidocs.loopback.io/loopback/#model-disableremotemethodbyname) on the model. 
-For example, following the previous example, by convention custom model code would go in the file `common/models/location.js`.
-You would add the following lines to "hide" one of the predefined remote methods:
+幾つかの操作を公開したくない場合、モデルで [`disableRemoteMethodByName()`](http://apidocs.loopback.io/loopback/#model-disableremotemethodbyname) を呼び出すことで、それらを隠蔽できます。
+例えば、以下に示すサンプルは、規約によって `common/models/location.js` に書かれるべきものです。
+事前定義されたリモートメソッドの一つを「隠蔽」するには、以下のような行を追加します。
 
 {% include code-caption.html content="common/models/location.js" %}
 ```javascript
 Location.disableRemoteMethodByName('deleteById');
 ```
 
-Now the `deleteById()` operation and the corresponding REST endpoint will not be publicly available.
+これで、`deleteById()`メソッドと対応するRESTエンドポイントは外部から利用できなくなります。
 
-For a method on the prototype object, such as `updateAttributes()`:
+`updateAttributes()` のようにオブジェクトのプロトタイプに存在しているメソッドについては以下のようにします。
 
 {% include code-caption.html content="common/models/location.js" %}
 ```javascript
 Location.disableRemoteMethodByName('prototype.updateAttributes');
 ```
 
-{% include important.html content="Be sure to call `disableRemoteMethodByName()` on your own custom model, not one of the built-in models; in the example below, for instance, the calls are `MyUser.disableRemoteMethodByName()` _not_ `User.disableRemoteMethodByName()`.
+{% include important.html content="以下の例で示すように、`disableRemoteMethodByName()` は組み込みモデルではなく、独自モデルで呼び出すようにしてください。例えば、`User.disableRemoteMethodByName()` ではなく、`MyUser.disableRemoteMethodByName()` のように呼び出してください。
 " %}
 
-Here's an example of hiding all methods of the `MyUser` model through configuration, except for `login` and `logout`:
+これは、`MyUser` モデルにおいて`login` と `logout` 以外の全メソッドを隠蔽する例です。
 
 In `server/model-config.json`:
 
@@ -336,7 +335,7 @@ In `server/model-config.json`:
 }
 ```
 
-You can also hide common methods across all models through `config.json`'s `remoting` object as follows:
+`config.json` ファイルの `remoting` オブジェクトを通じて、全モデルに渡って共通のメソッドを隠蔽することもできます。
 
 ```javascript
 "remoting": {
@@ -350,7 +349,7 @@ You can also hide common methods across all models through `config.json`'s `remo
 }
 ```
 
-Alternatively you can also disable remoteMethods through javascript in your `myUser.js` model:
+代わりに、`myUser.js` モデルのJavaScriptを使って、リモートメソッドを無効化することもできます。
 
 ```javascript
 MyUser.disableRemoteMethodByName('create');
@@ -378,32 +377,32 @@ MyUser.disableRemoteMethodByName('prototype.__get__accessTokens');
 MyUser.disableRemoteMethodByName('prototype.__updateById__accessTokens');
 ```
 
-### Read-Only endpoints example
+### 読み取り専用エンドポイントの例
 
-You may want to only expose read-only operations on your model hiding all POST, PUT, DELETE verbs
+全てのPOST, PUT, DELETE 動詞を隠して、読み取り専用の操作だけを公開したいこともあるかもしれません。
 
 {% include code-caption.html content="common/models/model.js" %}
 ```javascript
-Product.disableRemoteMethodByName('create');     // Removes (POST) /products
-Product.disableRemoteMethodByName('upsert');     // Removes (PUT) /products
-Product.disableRemoteMethodByName('deleteById'); // Removes (DELETE) /products/:id
-Product.disableRemoteMethodByName('updateAll');  // Removes (POST) /products/update
+Product.disableRemoteMethodByName('create');     // (POST) /products を削除
+Product.disableRemoteMethodByName('upsert');     // (PUT) /products を削除
+Product.disableRemoteMethodByName('deleteById'); // (DELETE) /products/:id を削除
+Product.disableRemoteMethodByName('updateAll');  // (POST) /products/update を削除
 Product.disableRemoteMethodByName('prototype.updateAttributes');
-    // Removes (PUT) /products/:id
+    // (PUT) /products/:id を削除
 Product.disableRemoteMethodByName('createChangeStream');
-    // Removes (GET|POST) /products/change-stream
+    // (GET|POST) /products/change-stream を削除
 ```
 
-### Hiding endpoints for related models
+### 関連するモデルのエンドポイントの隠蔽
 
-To disable a REST endpoints for related model methods, use [disableRemoteMethodByName()](https://apidocs.loopback.io/loopback/#model-disableRemoteMethodByName).
+関連するモデルのメソッドについて、RESTエンドポイントを無効化するには、[disableRemoteMethodByName()](https://apidocs.loopback.io/loopback/#model-disableRemoteMethodByName)を使用します。
 
-{% include note.html content="For more information, see [Accessing related models](Accessing-related-models.html).
+{% include note.html content="詳細については、[関連するモデルへのアクセス](Accessing-related-models.html) を参照ください。
 "
 %}
 
-For example, if there are post and tag models, where a post hasMany tags, add the following code to `/common/models/post.js` 
-to disable the remote methods for the related model and the corresponding REST endpoints: 
+例えば、投稿(Post)とタグ(Tag)のモデルがあったとして、投稿は複数のタグを持ちます。以下のコードを `/common/models/post.js` に書くことで、
+関連するモデルのリモートメソッドと、対応するRESTエンドポイントを無効化することができます。
 
 {% include code-caption.html content="common/models/model.js" %}
 ```javascript
@@ -415,9 +414,9 @@ module.exports = function(Post) {
 };
 ```
 
-### Hiding properties
+### プロパティの隠蔽
 
-To hide a property of a model exposed over REST, define a hidden property.
-See [Model definition JSON file (Hidden properties)](Model-definition-JSON-file.html#hidden-properties).
+REST経由で公開されているモデルのプロパティを隠蔽するには、hidden プロパティを定義します。
+[モデル定義JSONファイル (Hidden プロパティ)](Model-definition-JSON-file.html#hidden-properties)を参照ください。
 
-{% include content/hidden-vs-protected.html xref='true' %}
+{% include content/hidden-vs-protected.html xref='true' lang=page.lang %}

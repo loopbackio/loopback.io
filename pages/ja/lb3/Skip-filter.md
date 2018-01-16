@@ -1,5 +1,5 @@
 ---
-title: "Skip filter"
+title: "Skip フィルタ"
 lang: ja
 layout: page
 keywords: LoopBack
@@ -9,9 +9,9 @@ permalink: /doc/ja/lb3/Skip-filter.html
 summary:
 ---
 
-A skip filter omits the specified number of returned records. This is useful, for example, to paginate responses.
+skip フィルタは、返されたレコードから指定された件数分を消去します。これは、例えば、ページごとのレスポンスに役立ちます。
 
-Use `offset` as an alias for `skip`.
+`skip` の別名として `offset` が使えます。
 
 {% include content/angular-methods-caveat.html lang=page.lang %}
 
@@ -21,7 +21,7 @@ Use `offset` as an alias for `skip`.
 ?filter[skip]=<i>n</i>
 </pre>
 
-You can also use [stringified JSON format](Querying-data.html#using-stringified-json-in-rest-queries) in a REST query.
+REST検索で、[文字列化したJSON形式](Querying-data.html#using-stringified-json-in-rest-queries)を使うこともできます。
 
 ### Node
 
@@ -29,24 +29,24 @@ You can also use [stringified JSON format](Querying-data.html#using-stringified
 {skip: <i>n</i>}
 </pre>
 
-Where _n_ is the number of records to skip.
+ここで、 _n_ はスキップするレコード件数です。
 
-### Examples
+### 例
 
-This REST request skips the first 50 records returned:
+このREST リクエストは、返されたレコードから最初の50件を飛ばします。
 
 `/cars?filter[skip]=50`
 
-The equivalent query using the Node API:
+Node APIを使った等価な検索は以下のようになります。
 
 ```javascript
 Cars.find( {skip: 50},  function() { /* ... */ } )
 ```
 
-**Pagination example**
+**ページめくりの例**
 
-The following REST requests illustrate how to paginate a query result.
-Each request request returns ten records: the first returns the first ten, the second returns the 11th through the 20th, and so on...
+以下のRESTリクエストは、検索結果をページごとに分割する方法を説明したものです。
+それぞれのリクエストは10件のレコードを返します。最初は先頭の10件、次は11件目から20件目、といった具合です。
 
 ```
 /cars?filter[limit]=10&filter[skip]=0
@@ -55,7 +55,7 @@ Each request request returns ten records: the first returns the first ten, the s
 ...
 ```
 
-Using the Node API:
+Node APIでは以下のようになります。
 
 ```javascript
 Cars.find({limit: 10, skip: 0},  function() { /* ... */ });

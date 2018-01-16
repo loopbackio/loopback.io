@@ -1,5 +1,5 @@
 ---
-title: "Working with LoopBack objects"
+title: "LoopBackのオブジェクトを扱う"
 lang: ja
 layout: page
 keywords: LoopBack
@@ -11,57 +11,57 @@ summary:
 
 ## Overview
 
-The primary LoopBack JavaScript objects are:
+主要なLoopBackのJavaScriptオブジェクトは以下のものです。
 
-* [App](http://apidocs.loopback.io/loopback/#var-app-loopback) object
-* [Models](http://apidocs.loopback.io/loopback/#model)
-* [Data sources](http://apidocs.loopback.io/loopback-datasource-juggler/#define-new-datasource)
+* [App](http://apidocs.loopback.io/loopback/#var-app-loopback) オブジェクト
+* [モデル](http://apidocs.loopback.io/loopback/#model)
+* [データソース](http://apidocs.loopback.io/loopback-datasource-juggler/#define-new-datasource)
 
-How to get a reference to these objects depends on where the code is
-(in a boot script, in a model JavaScript file `/common/models/model.js`, and so on) as well as which object you want to reference.
+コードの場所（起動スクリプトの中・モデルのJavaScriptファイル`/common/models/model.js`の中など）に応じてこれらのオブジェクトの参照を取得する方法は、
+とても知りたいことだと思います。
 
-## Getting the app object
+## app オブジェクトを取得する
 
-Getting a reference to the `app` object is crucial, since from it you can obtain references to other objects such as models and data sources.
-You'll typically want to get a handle on the `app` object in:
+`app` オブジェクトの参照を取得できれば、その他のモデルやデータソースなどのオブジェクトも取得できるので、これを取得することは、極めて重要です。
+`app`オブジェクトを操作したい場所はだいたい以下のようになります。
 
-* Model scripts: `/common/models/_modelName_.js` (where _`modelName`_ is the name of the model).
-* Boot scripts in `/``server/boot`
-* Middleware (the ones you register in boot scripts and the ones in `/server/server.js`)
+* モデルスクリプト： `/common/models/_モデル名_.js` (_`モデル名`_ にはモデルの名前が入ります).
+* `/``server/boot` 内の起動スクリプト
+* ミドルウェア (起動スクリプトで登録するか、`/server/server.js` にあるもの)
+* 自身の独自スクリプト
 
-* Your own custom scripts
+`app` オブジェクトは、典型的なLBアプリケーションの様々な場所で、コンテキストを提供します。
 
-The `app` object provides context into various parts of a typical LB app.
+### 起動スクリプトから
 
-### From a boot script 
+起動スクリプト内で、`app`オブジェクトの参照を取得するには、公開された関数の最初の引数で受け取ります。
 
-To get a reference to the `app` object in a boot script, pass it as the first parameter in the exported function.
-
-Asynchronous boot script with a callback function:
+コールバック関数を持つ非同期の起動スクリプトの場合、
 
 {% include code-caption.html content="Asynchronous boot script - /server/boot/your-script.js" %}
 ```javascript
-module.exports = function(app, cb) { //app is injected by LoopBack
+module.exports = function(app, cb) { // LoopBack が app を注入する
   //...
 };
 ```
 
-Synchronous boot script without a callback function:
+コールバック関数のない同期起動スクリプトの場合、
 
 {% include code-caption.html content="Synchronous boot script - /server/boot/your-script.js" %}
 ```javascript
-module.exports = function(app) { //app is injected by loopback
+module.exports = function(app) { // LoopBack が app を注入する
   //...
 };
 ```
 
-As you can see from both examples, LoopBack provides the `app` object automatically as the first parameter in your boot scripts.
+それぞれの例から分かる通り、LoopBackは自動的に`app`オブジェクトを、起動スクリプトの最初の引数として渡します。
 
-See [Defining boot scripts](Defining-boot-scripts.html) for more information about boot scripts.
+起動スクリプトについて、詳しくは[起動スクリプトの定義](Defining-boot-scripts.html) を参照してください。
 
-### From middleware
+### ミドルウェアから
 
-LoopBack sets `app` object automatically in the `request` object in middleware (actually, under the hood, Express does it). You can access in `server/server.js` as follows:
+LoopBackは、自動的に`app`オブジェクトをミドルウェアの`request`オブジェクトの中にセットします（実際には裏側でExpressがそれをやっています）。
+`server/server.js` において、以下のようにアクセス可能です。
 
 {% include code-caption.html content="Middleware - /server/server.js" %}
 ```javascript
@@ -73,11 +73,11 @@ app.use(function(req, res, next) {
 ...
 ```
 
-See [Defining middleware](Defining-middleware.html) for more information on middleware.
+ミドルウェアに関する詳細は、[ミドルウェアの定義](Defining-middleware.html) を参照してください。
 
-### From a custom script
+### 独自スクリプトから
 
-If you need a reference to `app` in your own custom scripts, simply require it (as in the models example):
+独自のスクリプトから `app`を参照する必要がある場合、（モデルの例のように）単に取り込むだけです。
 
 {% include code-caption.html content="A custom script - /server/your-script.js" %}
 ```javascript
@@ -85,28 +85,28 @@ var app = require('/server/server');
 ...
 ```
 
-You simply require `/server/server.js` as you would any Node module.
+その他のNodeモジュールと同じように、`/server/server.js`を取り込みます。
 
-### From a model script
+### モデルスクリプトから
 
-To get a handle on the `app` object in a model scaffolded by the [Model generator](Model-generator.html),
-"require" it as you would any Node module:
+[モデル生成ツール](Model-generator.html)によって作られたモデルの中で`app`オブジェクトを扱うには、
+その他のNodeモジュールと同じように「取り込み」ます。
 
 {% include code-caption.html content="Model - /common/models/book.js" %}
 ```javascript
-var app = require('../../server/server'); //require `server.js` as in any node.js app
+var app = require('../../server/server'); // 他のnode.jsアプリのように`server.js` を取り込む
 
 module.exports = function(Book) {
   //...
 };
 ```
 
-{% include tip.html content="This technique is useful to get a reference to an unrelated model; see [Getting a reference to an unrelated model](#getting-a-reference-to-an-unrelated-model) below.
+{% include tip.html content="この技は関連のないモデルの参照を取得するときにも有効です。下にある[関連のないモデルの参照を取得する](#getting-a-reference-to-an-unrelated-model)を参照してください。
 " %}
 
-With models, there is a special case. From anywhere except `/common/models/model.js`, you can actually get a reference to `app` through a model using `model.app`.
+モデルがあれば、特殊な方法が使えます。`/common/models/model.js` を除くあらゆる場所で、モデルの`model.app`を通じて`app`の参照を取得することができます。
 
-For instance:
+例えば以下のように。
 
 ```
 ...
@@ -114,20 +114,19 @@ Book.app
 ...
 ```
 
-However, the one caveat to this is that you cannot reference `model.app` in `/common/models/model.js` because this file does not add the `app` property until bootstrapping has finished.
-This means you **cannot** do the following in `/common/models/model.js`:
+しかし、一つ注意しなければならないのは、`/common/models/model.js` の中では、`model.app`が参照できないということです。なぜなら、このファイルは起動が完全に終わるまで`app`プロパティを追加しないからです。
+`/common/models/model.js` では、以下のようなことが **できません**。
 
-{% include code-caption.html content="CANNOT do this in a model script" %}
+{% include code-caption.html content="モデルスクリプトではできません" %}
 ```javascript
 module.exports = function(Book) {
-  Book.app... //won't work because `.app` has not been added to the Book object yet
+  Book.app... // `.app` はまだBookオブジェクトに追加されていないため動作しない。
 });
 ```
 
-However, you can get a reference to the app INSIDE remote methods, remote hooks, and model hooks because those are trigger after the application finishes loading
-(that is, after loopback.boot runs | after /server/server.js calls boot(..)).
+ただし、リモートメソッド・リモートフック・モデルフックの内側であれば、appの参照を使うことができます。これらは、アプリケーションの読み込みが完了した後に実行されるからです。（それは、loopback.boot が実行された後、あるいは /server/server.js で boot(..)が呼び出された後です）
 
-This means you CAN do:
+以下のことは **できます**。
 
 ```javascript
 module.exports = function(Book) {
@@ -143,26 +142,26 @@ module.exports = function(Book) {
 };
 ```
 
-Of course, you can do the same in remote hooks and remote methods, but be aware of the load timing.
-Simply put, `model.app` will not be available until the application has completed bootstrapping, that is run `boot()` in `/server/server.js`.
-The idea here is to define our models _before_ they are added to the application.
-Once the application finishes bootstrapping, you can then access a model's `app` property. 
+もちろん、同じことがリモートフックやリモートメソッドでも可能ですが、読み込みタイミングには気をつけてください。
+単純に言えば、`model.app`は、`/server/server.js` で `boot()` が実行されて、アプリケーションが完全に起動し終わるまでは利用できません。
+この考え方は、アプリケーションに追加される _前に_ モデルを定義しているためです。
+アプリケーションが起動完了したら、モデルの `app` プロパティにアクセスできるようになります。
 
-The easiest way of accessing the app object is via `Model.on('attached')` event.
+appオブジェクトにアクセスする最も簡単な方法は、`Model.on('attached')` イベントを介するものです。
 
 ```javascript
 module.exports = function(MyModel) {
   var app;
   MyModel.on('attached', function(a) {
     app = a;
-    // perform any setup that requires the app object
+    // app オブジェクトが必要なセットアップを行う。
   });
 };
 ```
 
-## Working with the app object
+## app オブジェクトを扱う
 
-The LoopBack app object is defined in the main script as follows:
+LoopBackのappオブジェクトは、メインスクリプトで以下のように定義されています。
 
 {% include code-caption.html content="/server/server.js" %}
 ```javascript
@@ -170,19 +169,19 @@ var loopback = require('loopback');
 var app = loopback();
 ```
 
-The app object extends the [Express app object;](http://expressjs.com/4x/api.html#application) it inherits all of its properties and methods,
-as well as all the additional properties and methods of the [LoopBack app object](http://apidocs.loopback.io/loopback/#var-app-loopback).
+appオブジェクトは、[Expressのappオブジェクト](http://expressjs.com/4x/api.html#application)を拡張しており、全てのプロパティやメソッドを継承しており、
+[LoopBackのappオブジェクト](http://apidocs.loopback.io/loopback/#var-app-loopback)で追加されたプロパティやメソッド同様に使えます。
 
-{% include important.html content="In some places such as boot scripts, `server` is used as the name of this object instead of `app`.
+{% include important.html content="起動スクリプトなど、幾つかの場所では `app` の代わりに `server`という名前が使われています。
 " %}
 
-## Working with model objects
+## モデルオブジェクトを扱う
 
-### Getting references to models
+### モデルの参照を取得する
 
-Once you get a handle on the `app` object, you can get a handle on to specific models via the `models` property on the `app` object.
+`app`オブジェクをと扱えるようになったら、特定のモデルは`app`オブジェクトの`models`プロパティを介して扱うことができます。
 
-{% include code-caption.html content="Boot script - /server/boot/your-script.js" %}
+{% include code-caption.html content="起動スクリプト - /server/boot/your-script.js" %}
 ```javascript
 module.exports = function(app) {
   var app = app.models.Book;
@@ -190,28 +189,28 @@ module.exports = function(app) {
 };
 ```
 
-In your own custom script:
+独自スクリプトにおいては、
 
-{% include code-caption.html content="A custom script - /server/your-script.js" %}
+{% include code-caption.html content="独自スクリプト - /server/your-script.js" %}
 ```javascript
 var app = require('/server/server');
 ```
 
-### Using model objects
+### モデルオブジェクトを使用する
 
-For information on the basic model object, see [Basic model object](Basic-model-object.html).
-For information on model object when the model is connected to a persistent data source, see [Connected model object](Connected-model-object.html).
+基本的なモデルオブジェクトの情報は、[基本的なモデルオブジェクト](Basic-model-object.html)を参照ください。
+永続化データソースに接続されたモデルに関する情報は、[接続されたモデルオブジェクト](Connected-model-object.html)を参照ください。
 
-### Getting a reference to an unrelated model
+### 関連のないモデルの参照を取得する
 
-You can easily reference a related model with an expression such as `MyModel.app.models.MyRelatedModel`. 
-But this won't work if there is no relation to the other model.  In this case, you need to get a reference to the app object using
+関連のあるモデルは、`MyModel.app.models.MyRelatedModel`のように、簡単に参照することができます。
+しかし、関連のない他のモデルの場合は、このようにいきません。このような場合、参照を取得するにはappオブジェクトを使う必要があります。
 
 ```javascript
 require('../../server/server')
 ```
 
-For example, suppose you want to reference the User model within an observer (hook), for example:
+例えば、オブザーバー（フック）の中でUserモデルを参照したいとすると、以下のようになります。
 
 {% include code-caption.html content="common/models/my-model.js" %}
 ```javascript
@@ -226,23 +225,23 @@ module.exports = function(MyModel) {
 });
 ```
 
-## Working with data source objects
+## データソースオブジェクトを扱う
 
-### Getting references to data sources
+### データソースの参照を取得する
 
-Similar to getting a handle on a model you first get a handle onto the `app` object, then you access the `app.datasources` property:
+モデルを扱えるようにするのに似て、まず、`app`オブジェクトを扱えるようにし、その上で `app.datasources` プロパティにアクセスします。
 
-{% include code-caption.html content="Boot script - /server/boot/your-script.js" %}
+{% include code-caption.html content="起動スクリプト - /server/boot/your-script.js" %}
 ```javascript
 module.exports = function(app) {
-  var dataSource = app.datasources.db; //db can be any registered datasource in `/server/datasources.json`
+  var dataSource = app.datasources.db; // db は`/server/datasources.json` に登録されたデータソースならなんでもよい
   ...
 };
 ```
 
-And in your own script:
+そして、独自スクリプトでは以下のようにします。
 
-{% include code-caption.html content="A custom script - /server/your-script.js" %}
+{% include code-caption.html content="独自スクリプト - /server/your-script.js" %}
 ```javascript
 var app = require('./server/server');
 ...
@@ -250,9 +249,9 @@ var datasource = app.datasources.db;
 ...
 ```
 
-In middleware:
+ミドルウェアでは以下のようにします。
 
-{% include code-caption.html content="Middleware - /server/server.js" %}
+{% include code-caption.html content="ミドルウェア - /server/server.js" %}
 ```javascript
 ...
 app.use(function(req, res, next) {
@@ -262,9 +261,9 @@ app.use(function(req, res, next) {
 ...
 ```
 
-In models:
+モデルでは以下のようにします。
 
-{% include code-caption.html content="Model - /common/models/model.js" %}
+{% include code-caption.html content="モデル - /common/models/model.js" %}
 ```javascript
 module.exports = function(Book) {
   Book.read = function() {
@@ -277,16 +276,16 @@ module.exports = function(Book) {
 };
 ```
 
-Be careful in models, because the following _will not work_:
+モデルでは、以下のような書き方では _動作しません_ ので注意してください。
 
-{% include code-caption.html content="Model - /common/models/model.js" %}
+{% include code-caption.html content="モデル - /common/models/model.js" %}
 ```javascript
 module.exports = function(Book) {
-  Book.app... //`Book` is not registered yet! This WON'T WORK.
+  Book.app... //`Book` にはまだ登録されていないので動作しません！
 };
 ```
 
-### Using data source objects
+### データソースオブジェクトを使用する
 
-{% include note.html content="This section is still in progress. Thanks for your patience.
+{% include note.html content="このセクションは作成中です。お待たせしてすみません。
 " %}

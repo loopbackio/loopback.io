@@ -1,5 +1,5 @@
 ---
-title: "Order filter"
+title: "Order フィルタ"
 lang: ja
 layout: page
 keywords: LoopBack
@@ -9,26 +9,26 @@ permalink: /doc/ja/lb3/Order-filter.html
 summary:
 ---
 
-An _order_ filter specifies how to sort the results: ascending (ASC) or descending (DESC) based on the specified property.
+_order_ フィルタは結果をソートする方法（指定したプロパティの昇順 (ASC) または 降順 (DESC) ）を指定します。
 
 ### REST API
 
-Order by one property: 
+一つのプロパティでソートするには以下のようにします。
 
 <pre>
 filter[order]=<i>propertyName</i> <ASC|DESC>
 </pre>
 
-Order by two or more properties:
+２つ以上のプロパティでソートするには以下のようにします。
 
 <pre>
 filter[order][0]=<i>propertyName</i> <ASC|DESC>&filter[order][1]<i>propertyName</i>]=<ASC|DESC>...
 </pre>
 
-Where:
+ここで、
 
-* _propertyName_ is the name of the property (field) to sort by. 
-* `<ASC|DESC>` signifies either ASC for ascending order or DESC for descending order.
+* _propertyName_ はソートに使用するプロパティ（フィールド）の名前です。
+* `<ASC|DESC>` は昇順ソートの場合 ASC、降順ソートの場合 DESC を指定します。
 
 You can also use [stringified JSON format](Querying-data.html#using-stringified-json-in-rest-queries) in a REST query.
 
@@ -39,22 +39,22 @@ You can also use [stringified JSON format](Querying-data.html#using-stringified
 
 {% include content/angular-methods-caveat.html lang=page.lang %}
 
-Order by one property:
+１つのプロパティでソートするには以下のようにします。
 
 <pre>
 { order: '<i>propertyName</i> <ASC|DESC>' }
 </pre>
 
-Order by two or more properties:
+２つ以上のプロパティでソートするには以下のようにします。
 
 <pre>
 { order: ['<i>propertyName</i> <ASC|DESC>', '<i>propertyName</i> <ASC|DESC>',...] }
 </pre>
 
-Where:
+ここで、
 
-* _propertyName_ is the name of the property (field) to sort by. 
-* `<ASC|DESC>` signifies either ASC for ascending order or DESC for descending order.
+* _propertyName_ はソートに使用するプロパティ（フィールド）の名前です。
+* `<ASC|DESC>` は昇順ソートの場合 ASC、降順ソートの場合 DESC を指定します。
 
 <div class="sl-hidden"><strong>REVIEW COMMENT from Rand</strong><br>
   <p>I could not get multiple sort fields to work with REST. I would expect to be able to sort by (A,B) where it sorts by A and then by B:</p>
@@ -67,9 +67,9 @@ Where:
   <p><strong>Also</strong>: Is there any way to sort numerical properties as numbers instead of string? For example, if I sort by ID the records are returned in this order: 1, 10, 100, 101, 102, ..., 11, 110, 111, ...</p>
 </div>
 
-### Examples
+### 例
 
-Return the three loudest three weapons, sorted by the `audibleRange` property:
+最もうるさい武器を３つ、`audibleRange` プロパティでソートして返すには以下のようにします。
 
 **REST**
 

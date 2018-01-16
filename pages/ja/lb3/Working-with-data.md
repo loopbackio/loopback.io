@@ -1,5 +1,5 @@
 ---
-title: "Working with data"
+title: "データの操作"
 lang: ja
 layout: page
 keywords: LoopBack
@@ -9,22 +9,21 @@ permalink: /doc/ja/lb3/Working-with-data.html
 summary:
 ---
 
-Once you have defined a model, then you can use create, read, update, and delete (CRUD) operations to add data to the model, manipulate the data, and query it.
-All LoopBack models that are connected to persistent data stores (such as a database) automatically have the create, retrieve, update, and delete operations of the
-[PersistedModel](http://apidocs.loopback.io/loopback/#persistedmodel-new-persistedmodel) class.
+モデルを定義したら、作成・読取・更新・削除（CRUD）操作を使用して、モデルにデータを追加し、データを操作し、クエリを実行できます。
+永続データストア（データベースなど）に接続されているすべてのLoopBackモデルは、自動的に[PersistedModel](http://apidocs.loopback.io/loopback/#persistedmodel-new-persistedmodel)クラスの作成・取得・更新・削除操作を行えます。
 
 <table>
   <thead>
     <tr>
-      <th>Operation</th>
+      <th>操作</th>
       <th>REST</th>
-      <th>LoopBack model method<br>(Node API)&#42;</th>
-      <th>Corresponding SQL<br>Operation</th>
+      <th>LoopBack モデルメソッド<br>(Node API)&#42;</th>
+      <th>対応するSQL<br>操作</th>
     </tr>
   </thead>
   <tbody>    
     <tr>
-      <td>Create</td>
+      <td>作成</td>
       <td>
         <a href="PersistedModel-REST-API.html#create-model-instance">PUT /<em>modelName</em></a>
         <br/><a href="PersistedModel-REST-API.html#update--insert-instance">POST /<em>modelName</em></a>
@@ -33,13 +32,13 @@ All LoopBack models that are connected to persistent data stores (such as a data
       <td>INSERT</td>
     </tr>
     <tr>
-      <td>Read (Retrieve)</td>
+      <td>読取 (取得)</td>
       <td><a href="PersistedModel-REST-API.html#find-matching-instances">GET /<em>modelName</em>?filter=...</a></td>
       <td><code><a href="http://apidocs.loopback.io/loopback/#persistedmodel-find" class="external-link" rel="nofollow">find()</a><sup>&#42;</sup></code></td>
       <td>SELECT</td>
     </tr>
     <tr>
-      <td>Update (Modify)</td>
+      <td>更新 (修正)</td>
       <td>
         <a href="PersistedModel-REST-API.html#update--insert-instance">POST /<em>modelName</em></a>
         <br/><a href="PersistedModel-REST-API.html#update-model-instance-attributes">PUT /<em>modelName</em></a>
@@ -48,7 +47,7 @@ All LoopBack models that are connected to persistent data stores (such as a data
       <td>UPDATE</td>
     </tr>
     <tr>
-      <td>Delete (Destroy)</td>
+      <td>削除 (破壊)</td>
       <td><a href="PersistedModel-REST-API.html#delete-model-instance">DELETE /<em>modelName</em>/<em>modelID</em></a></td>
       <td><code><a href="http://apidocs.loopback.io/loopback/#persistedmodel-destroybyid" class="external-link" rel="nofollow">destroyById()</a><sup>&#42;</sup></code></td>
       <td>DELETE</td>
@@ -56,20 +55,20 @@ All LoopBack models that are connected to persistent data stores (such as a data
   </tbody>
 </table>
 
-(&#42;) Methods listed are just prominent examples; other methods may provide similar functionality; for example: `findById()`, `findOne()`, and `findOrCreate()`. 
-See [PersistedModel API documentation](http://apidocs.loopback.io/loopback/#persistedmodel) for more information.
+記載されているメソッドは、著名な例です。他のメソッドも同様の機能を提供する可能性があります。例えば：`findById()`・`findOne()`・`findOrCreate()`など。
+詳細については、[PersistedModel API 文書](http://apidocs.loopback.io/loopback/#persistedmodel)を参照してください。
 
-See the following articles for more information:
+詳細については、以下の記事を参照してください。
 
-* [Creating, updating, and deleting data](Creating-updating-and-deleting-data.html)
-* [Querying data](Querying-data.html)
-  * [Fields filter](Fields-filter.html)
-  * [Include filter](Include-filter.html)
-  * [Limit filter](Limit-filter.html)
-  * [Order filter](Order-filter.html)
-  * [Skip filter](Skip-filter.html)
-  * [Where filter](Where-filter.html)
-* [Using database transactions](Using-database-transactions.html)
+* [データの作成・更新・削除](Creating-updating-and-deleting-data.html)
+* [データの検索](Querying-data.html)
+  * [Fields フィルタ](Fields-filter.html)
+  * [Include フィルタ](Include-filter.html)
+  * [Limit フィルタ](Limit-filter.html)
+  * [Order フィルタ](Order-filter.html)
+  * [Skip フィルタ](Skip-filter.html)
+  * [Where フィルタ](Where-filter.html)
+* [データベーストランザクションの使用](Using-database-transactions.html)
 * [Realtime server-sent events](Realtime-server-sent-events.html)
 
 {% include content/angular-methods-caveat.html lang=page.lang %}

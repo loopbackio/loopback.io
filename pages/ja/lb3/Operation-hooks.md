@@ -1,5 +1,5 @@
 ---
-title: "Operation hooks"
+title: "操作フック"
 redirect_from:
 - /doc/ja/lb3/Operation-hooks-version-3.0.html
 lang: ja
@@ -10,26 +10,27 @@ keywords: LoopBack
 tags: [application_logic]
 sidebar: ja_lb3_sidebar
 permalink: /doc/ja/lb3/Operation-hooks.html
-summary: Operation hooks are triggered by all methods that execute a particular high-level create, read, update, or delete operation. Numerous changes were made to operation hooks in LoopBack version 3.0.
+summary: 操作フックは、作成・読取・更新・削除に関する高レベルの操作を実行するすべてのメソッドによって起動されます。LoopBackバージョン3.0の操作フックには多くの変更が加えられました。
 ---
 
-## Overview
+## 概要
 
-_Operation hooks_ are not tied to a particular method, but rather are triggered from all methods that execute a particular high-level create, read, update, or delete operation.
-These are all methods of [PersistedModel](https://apidocs.loopback.io/loopback/#persistedmodel) that application models inherit.
-Using operation hooks enables you to intercept actions that modify data independent of the specific method that invokes them (for example, `create`, `save`, or `updateOrCreate`).
+_操作フック_ は特定のメソッドに束縛されず、作成・読取・更新・削除に関する高レベルの操作を実行するすべてのメソッドから起動されます。
 
-The API is simple: the method <code>Model.observe(<i>name</i>, <i>observer</i>)</code>, where _`name`_ is the string name of the operation hook, for example "before save",
-and _`observer`_ is `function observer(context, callback)`. Child models inherit observers, and you can register multiple observers for a hook.
+対象は、アプリケーションモデルが継承する [永続化モデル](https://apidocs.loopback.io/loopback/#persistedmodel) のすべてのメソッドです。
+操作フックを使用すると、それらの操作を呼び出す特定のメソッド（たとえば`create`・`save`・`updateOrCreate`）に関係なく、データを変更するアクションを割り込ませることができます。
 
- The following table summarizes the operation hooks invoked by PersistedModel create, retrieve, update, and delete methods.
+APIは単純です。メソッド<code>Model.observe(<i>name</i>, <i>observer</i>)</code>で、_`name`_ は操作フックの名前の文字列、例えば「before save」など、そして、
+_`observer`_ は `function observer(context, callback)` です。オブザーバーを継承する子供のモデルは、複数のオブザーバーを登録できます。
+
+次の表は、PersistedModelのcreate・retrieve・update・deleteメソッドによって呼び出される操作フックをまとめたものです。
 
 <table>
   <tbody>
     <tr>
       <th>
-        <p>Method&nbsp;→<br>&nbsp;</p>
-        <p>Operation hook ↓</p>
+        <p>メソッド&nbsp;→<br>&nbsp;</p>
+        <p>操作フック ↓</p>
       </th>
       <th>find<br>findOne<br>findById</th>
       <th>exists</th>
@@ -178,23 +179,22 @@ and _`observer`_ is `function observer(context, callback)`. Child models inher
   </tbody>
 </table>
 
-### Operation hook context object
+### 操作フックコンテキストオブジェクト
 
-The `context` object is specific to operation hooks and does not have any relation to the context object passed to remote hooks registered via
-`Model.beforeRemote` and `Model.afterRemote`. See [Remote hooks](Remote-hooks.html) for more information.
-Note that the context object is not related to the "current context" provided by `loopback.getCurrentContext()` either.
+`context`オブジェクトは操作フックに固有で、`Model.beforeRemote`や`Model.afterRemote`を介して登録されたリモートフックに渡されるコンテキストオブジェクトとは何の関係もありません。詳細については、[リモートフック](Remote-hooks.html) を参照してください。
+コンテキストオブジェクトは、`loopback.getCurrentContext()`によって提供される「現在のコンテキスト」にも関係しないことに注意してください。
 
-#### Properties common for all hooks and operations
+#### すべてのフックと操作に共通のプロパティ
 
-##### Target model
+##### ターゲットモデル
 
-The property `context.Model` is set to the constructor of the model that is the target of the operation. For example `Product.find()` sets `context.Model = Product`.
+`context.Model` プロパティは、操作の対象となるモデルのコンストラクタに設定されます。例えば、`Product.find()` では `context.Model = Product` をセットします。
 
-##### Operation options
+##### 操作オプション
 
-The context object has an `options` property that enables hooks to access any options provided by the caller of the specific model method (operation).
+モデルの特定のメソッド（操作）の呼び出し元が提供するオプションに、フックがアクセスできるようにするために、コンテキストオブジェクトには `options` プロパティがあります。
 
-For example:
+例えば、以下のようになります。
 
 ```javascript
 var FILTERED_PROPERTIES = ['immutable', 'birthday'];
@@ -227,50 +227,50 @@ MyModel.updateOrCreate({
 }, cb);
 ```
 
-##### Shared hookState property
+##### 共有フック状態プロパティ
 
-Use the `ctx.hookState` property to share data between hooks (for example, "before save" and "after save").  The value of the `ctx.hookState` property is preserved across all hooks invoked for a single operation.
+フック間（たとえば、「before save」と「after save」）でデータを共有するには、`ctx.hookState` プロパティを使用します。`ctx.hookState` プロパティの値は、1回の操作で呼び出されるすべてのフックで保持されます。
 
-For example, "access", "before save" and "after save" hooks that are invoked for `MyModel.create()` have the same object passed in `ctx.hookState`.
+例えば、`MyModel.create()`は「access」「before save」「after save」フックを呼出しますが、それらは `ctx.hookState` に同じオブジェクトを持ちます。
 
-In contrast, `ctx.options` is set using options argument provided to PersistedModel methods like `MyModel.find()` or `MyModel.create()`. If no options argument was provided, then `ctx.options` is set to an empty object, so that hooks don't have to check whether `ctx.options` is set.
+対照的に、`ctx.options`は`MyModel.find()`や`MyModel.create()`のようなPersistedModelのメソッドが提供するoptions引数を使用して設定されます。
+options引数が指定されなかった場合は、`ctx.options` は空のオブジェクトに設定されるため、フックは `ctx.options` が設定されているかどうかを確認する必要がありません。
 
-#### Hook and operation specific properties
+#### フックと操作固有のプロパティ
 
-Besides the common properties listed above, each hook provides additional properties identifying the model instance(s) affected by the operation and the changes applied.
-The general rule is that the context provides either an `instance` property or a pair of `data` and `where` properties.
+上記の共通のプロパティに加えて、各フックは、操作の影響を受けるモデルインスタンスと適用された変更を識別する追加のプロパティを提供します。
+一般的な規則は、コンテキストが`instance`プロパティまたは一組の`data`と`where`プロパティのいずれかを提供します。
 
 ##### instance
 
-This property is provided when the operation affects a single instance _and_ performs a full update/create/delete of all model properties,
-for example `PersistedModel.create()`.
+このプロパティは、操作が単一のインスタンスに影響を与え、_かつ_ すべてのモデルプロパティについて完全な更新・作成・削除が実行された時に、提供されます。
+例えば、`PersistedModel.create()`などです。
 
 ##### where + data
 
-When the operation affects multiple instances (e.g. `PersistedModel.updateAll()`) _or_ performs a partial update of a subset of model properties
-(e.g. `PersistedModel.prototype.updateAttributes()`), the context provides a [where filter](Where-filter.html)
-used to find the affected records and plain `data` object containing the changes to be made.
+操作が複数のインスタンスに影響を与える場合（例えば、`PersistedModel.updateAll()`）_または_ モデルプロパティの一部に部分的な更新が行われる場合（例えば、`PersistedModel.prototype.updateAttributes()`）、コンテキストは、影響を受けたレコードを見つけるために使われる[where filter](Where-filter.html)と、
+なされるべき変更を含む`data`オブジェクトを提供する。
 
 ##### isNewInstance
 
-Some operations provide a flag to distinguish between a CREATE operation and an UPDATE operation. See the documentation of individual hooks for more information.
+いくつかの操作は、CREATE操作とUPDATE操作を区別するためのフラグを提供します。詳細については、個々のフックのドキュメントを参照してください。
 
 {% include important.html content="
-Only certain connectors support `ctx.isNewInstance`. With other connectors it is undefined.
-See [Checking for support of ctx.isNewInstance](Operation-hooks-version-3.0-.html).
+特定のコネクタのみ `ctx.isNewInstance` をサポートしています。他のコネクタでは未定義です。
+[ctx.isNewInstance サポートの確認](Operation-hooks-version-3.0-.html)を参照してください。
 " %}
 
 ##### currentInstance
 
-This property is provided by hooks that perform a partial change of a single instance.
-It contains the affected model instance, you should treat the value as read only (immutable).
+このプロパティは、単一インスタンスの部分的な変更を実行するフックによって提供されます。
+影響を受けるモデルインスタンスが含まれているため、値を読み取り専用（不変）として扱う必要があります。
 
-### Checking for support of ctx.isNewInstance
+### ctx.isNewInstance サポートの確認
 
-The initial implementation of `ctx.isNewInstance` included only support for memory, MongoDB, and MySQL connectors.
-You can check whether your connector supports this feature by testing the value returned in "after save" hook.
+`ctx.isNewInstance` の最初の実装では、メモリ・MongoDB・MySQLコネクタのみがサポートされていました。
+"after save"フックで返された値をテストすることで、コネクタがこの機能をサポートしているかどうかを確認することができます。
 
-For example:
+例えば以下のようにします。
 
 ```javascript
 MyModel.observe('after save', function(ctx, next) {
@@ -284,18 +284,17 @@ MyModel.updateOrCreate({
 }, console.log);
 ```
 
-Please report a GitHub issue in the connector project if the feature is not supported.
+この機能がサポートされていない場合は、GitHub のコネクタプロジェクトで問題を報告してください。
 
-### Accessing the affected instance
+### 影響を受けるインスタンスへのアクセス
 
-Operations affecting a single instance only  (all create, retrieve, update,
-and delete operations except `PersistedModel.deleteAll` and `PersistedModel.updateAll`) usually provide the affected instance in the context object.
-However, depending on the operation, this instance is provided either as modifiable `ctx.instance` or as read-only `ctx.currentInstance:`
+単一のインスタンスのみに影響を与える操作（`PersistedModel.deleteAll`と`PersistedModel.updateAll`を除く、すべての作成・取得・更新・削除操作）は通常コンテキストオブジェクトに影響を受けたインスタンスを提供します。
+ただし、操作に応じて、このインスタンスは変更可能な`ctx.instance`または読み取り専用の`ctx.currentInstance`のいずれかで提供されます。
 
 <table width="800">
   <thead>
     <tr>
-      <th width="220">Method</th>
+      <th width="220">メソッド</th>
       <th width="200">before save</th>
       <th width="200">persist</th>
       <th width="160">after save</th>
@@ -397,13 +396,14 @@ replaceById</code>
   </tbody>
 </table>
 
-(&#42;) The operations `updateOrCreate` and `upsertWithWhere` do not provide an instance in the "before save" hook. Since it's impossible tell in advance whether the operation will result in UPDATE or CREATE, there is no way to know whether an existing "currentInstance" is affected by the operation.
+(&#42;) 操作 `updateOrCreate`と`upsertWithWhere`は、 "before save"フックにインスタンスを提供しません。
+操作がUPDATEまたはCREATEになるかどうかを事前に伝えることは不可能であるため、既存の「currentInstance」が操作の影響を受けるかどうかを知る方法はありません。
 
-See the following sections for more details.
+詳細については、次のセクションを参照してください。
 
-## Hooks
+## フック
 
-LoopBack provides the following operation hooks:
+LoopBackは、次の操作フックを提供します。
 
 * [access](Operation-hooks.html#access)
 * [before save](Operation-hooks.html#before-save)
@@ -413,13 +413,13 @@ LoopBack provides the following operation hooks:
 * [loaded](Operation-hooks.html#loaded)
 * [persist](Operation-hooks.html#persist)
 
-The following table lists hooks that PersistedModel methods invoke.
+次の表は、PersistedModelメソッドが呼び出すフックの一覧です。
 
 <table>
   <tbody>
     <tr>
-      <th width="160">Method name</th>
-      <th>Hooks invoked</th>
+      <th width="160">メソッドの名前</th>
+      <th>呼び出されるフック</th>
     </tr>
     <tr>
       <td>
@@ -432,7 +432,7 @@ The following table lists hooks that PersistedModel methods invoke.
       <td>before save, after save, loaded, persist</td>
     </tr>
     <tr>
-      <td>upsert (aka updateOrCreate)</td>
+      <td>upsert (別名 updateOrCreate)</td>
       <td>access, before save, after save, loaded, persist</td>
     </tr>
     <tr>
@@ -476,29 +476,27 @@ The following table lists hooks that PersistedModel methods invoke.
   </tbody>
 </table>
 
-(&#42;) When `findOrCreate` finds an existing model, the save hooks are not triggered.
-However, connectors providing atomic implementation may trigger `before save` hook even when the model is not created,
-since they cannot determine in advance whether the model will be created or not.
+(&#42;) `findOrCreate` が既存のモデルを見つけたとき、saveフックは起動されません。
+ただし、アトミック実装を提供するコネクタは、モデルが作成されるかどうかを事前に判断できないため、モデルが作成されていなくても`before save`を起動するかもしれません。
 
 ### access
 
-The `access` hook is triggered whenever a database is queried for models, that is when _any_ create, retrieve, update,
-and delete method of [PersistedModel](https://apidocs.loopback.io/loopback/#persistedmodel) is called.
-Observers may modify the query, for example by adding extra restrictions.
+`access` フックは、データベースがモデルに照会されるたび、つまり、[PersistedModel](https://apidocs.loopback.io/loopback/#persistedmodel) の
+_あらゆる_ 作成・取得・更新・削除メソッドが呼び出されるときに起動します。
+オブザーバーは、例えば追加の制限を加えるなどして、クエリを変更することができます。
 
 {% include note.html content="
-Prototype methods don't trigger the `access` hook because the hook was already triggered by the method that loaded the model instance from the database.
+データベースからモデルインスタンスを読み込んだメソッドによって`access`フックが既に起動されているため、プロトタイプメソッドはフックを起動しません。
 
-For example, when you call a prototype method via the REST API, two model calls are made: static `findById()`
-(that triggers the \"access\" hook) and then the prototype method as requested.
+たとえば、REST APIを使用してプロトタイプメソッドを呼び出すと、静的 `findById()` （「access」フックを起動する）とプロトタイプメソッドの2つのモデル呼び出しが要求されます。
 " %}
 
-Context properties
+コンテキストプロパティ
 
-* `Model` - the constructor of the model that will be queried
-* `query` - the query containing fields `where`, `include`, `order`, etc.
+* `Model` - 照会されるモデルのコンストラクタ
+* `query` - `where`・`include`・`order`フィールドを含むクエリ
 
-Examples:
+例：
 
 ```javascript
 MyModel.observe('access', function logQuery(ctx, next) {
@@ -514,69 +512,68 @@ MyModel.observe('access', function limitToTenant(ctx, next) {
 
 ### before save
 
-The `before save` hook is triggered before a model instance is modified (created, updated), specifically when the following methods of PersistedModel are called:
+before save フックは、モデル・インスタンスが変更（作成・更新）される前に起動されます。具体的には、以下のPersistedModelのメソッドが呼び出されたときです。
 
 * [create()](https://apidocs.loopback.io/loopback/#persistedmodel-create)
 * [upsert()](https://apidocs.loopback.io/loopback/#persistedmodel-upsert)
 * [upsertWithWhere()](http://apidocs.loopback.io/loopback/#persistedmodel-upsertwithwhere)
-* [findOrCreate()](https://apidocs.loopback.io/loopback/#persistedmodel-findorcreate) - When `findOrCreate` finds an existing model, it does not trigger save hooks. However, connectors providing atomic implementation may trigger `before save` hook even when the model is not created, since they cannot determine in advance whether the model will be created or not.
+* [findOrCreate()](https://apidocs.loopback.io/loopback/#persistedmodel-findorcreate) - `findOrCreate`が既存のモデルを見つけた場合、saveフックを起動しません。ただし、アトミック実装を提供するコネクタは、モデルが作成されなくても `before save`フックを起動する可能性があります。これは、モデルが作成されるかどうかを事前に判断できないためです。
 * [updateAll()](https://apidocs.loopback.io/loopback/#persistedmodel-updateall)
 * [prototype.save()](https://apidocs.loopback.io/loopback/#persistedmodel-prototype-save)
 * [prototype.updateAttributes()](https://apidocs.loopback.io/loopback/#persistedmodel-prototype-updateattributes)
 * [replaceOrCreate()](https://apidocs.loopback.io/loopback/#persistedmodel-replaceorcreate)
 * [prototype.replaceById()](https://apidocs.loopback.io/loopback/#persistedmodel-replacebyid) / [replaceAttributes()](https://apidocs.loopback.io/loopback/#persistedmodel-prototype-replaceattributes)
 
-The hook is triggered _before_ [model validation](Validating-model-data.html) functions are called.
+フックは、 [モデル検証](Validating-model-data.html) 関数が呼び出される _前に_ 起動されます。
 
 {% include tip.html content="
-Since the `before save` hook is triggered before validators are called, you can use it to ensure that empty or missing values are filled with default values.
+`before save` フックはバリデータが呼び出される前に起動されるので、空または欠損値が既定値で満たされていることを確認できます。
 " %}
 
-Depending on which method triggered this hook, the context will have one of the following sets of properties:
+このフックをトリガするメソッドに応じて、コンテキストは次のプロパティセットのいずれかを持ちます。
 
-* Full save of a single model
-  * `Model` - the constructor of the model that will be saved
-  * `instance` - the model instance to be saved. The value is an instance of `Model` class.
+* 単一モデルの完全保存
+  * `Model` - 保存されるモデルのコンストラクタ
+  * `instance` -  保存されるモデルのインスタンス。 値は`Model`クラスのインスタンスです。
 
-* Partial update of possibly multiple models
-  * `Model` - the constructor of the model that will be saved
-  * `where` - the where filter describing which instances will be affected
-  * `data` - the (partial) data to apply during the update
-  * `currentInstance` - the affected instance.
+* おそらく複数のモデルの部分的更新
+  * `Model` - 保存されるモデルのコンストラクタ
+  * `where` - どのインスタンスが影響を受けるかを記述するwhereフィルタ
+  * `data` - 更新中に適用される（部分的な）データ
+  * `currentInstance` - 影響を受けるインスタンス
 
 #### ctx.isNewInstance
 
-The before save hook provides the `ctx.isNewInstance` property when `ctx.instance` is set, with the following values:
+before save フックは、`ctx.instance` が設定されている場合に、`ctx.isNewInstance` プロパティを次のように提供します。
 
-* True for all CREATE operations.
-* False for all UPDATE and REPLACE operations.
-* Undefined for `updateOrCreate`, `upsertWithWhere`, `replaceOrCreate`, `prototype.save`,  `prototype.updateAttributes`, and `updateAll `operations.
+* すべてのCREATE操作で true です。
+* すべてのUPDATEおよびREPLACE操作で false です。
+* `updateOrCreate`・`upsertWithWhere`・`replaceOrCreate`・`prototype.save`・`prototype.updateAttributes`・`updateAll` 操作は undefined です。
 
-#### Embedded relations
+#### 埋め込まれた関係
 
-You can define a `before save` hook for a model that is [embedded in](Embedded-models-and-relations.html) another model.
-Then, updating or creating an instance of the containing model will trigger the operation hook on the embedded model.
-When this occurs, `ctx.isNewInstance` is false, because only a new instance of the container model is created.
+別のモデルに[埋め込まれている](Embedded-models-and-relations.html)モデルのbefore saveフックを定義することができます。
+そして、包含モデルのインスタンスを更新または作成すると、埋め込まれたモデルの操作フックが起動されます。
+この場合、コンテナモデルの新しいインスタンスのみが作成されるため、`ctx.isNewInstance` はfalseになります。
 
-For example, if `Customer embedsOne Address`, and you define a `before save` hook on the Address model, creating a new Customer instance will trigger the operation hook.
+たとえば、`Customer emdedsOne Address` だとすると、Addressモデルに`before save`フックを定義し、新しいCustomerのインスタンスを作成すると操作フックが起動されます。
 
-#### Manipulating model data in "before save" hook
+#### "before save" フックでモデルデータを操作する
 
-As explained above, the context provides either an `instance` property or a pair of `data` and `where` properties.
-Exposing a full model instance in `ctx.instance` allows hooks to call custom model instance methods
-(for example , the hook can call `order.recalculateShippingAndTaxes()`whenever order data like address was changed).
-That's why LoopBack create, retrieve, update, and delete operations provide the instance if possible.
+上で説明したように、コンテキストは `instance` プロパティ、または一組の `data` および  `where` プロパティのいずれかを提供します。
+`ctx.instance`の完全なモデルインスタンスを公開すると、フックは独自モデルのインスタンスメソッドを呼び出すことができます（たとえば、住所などの注文データが変更されたときに `order.recalculateShippingAndTaxes()` を呼び出すことができます）。
+LoopBackの作成・取得・更新・削除操作が可能な限りインスタンスを提供するのはこのためです。
 
-There are two notable exception when it is not feasible to provide the instance object:
+インスタンスオブジェクトを提供することが実現できない場合として、2つの特徴的な例外があります。
 
-1.  `PersistedModel.updateAll` updates multiple instances matching the provided query. 
-    LoopBack does not even load their data from the database, it's up to the database to find these instances and apply necessary changes. 
-2.  `PersistedModel.updateAttributes` performs a partial update, only a subset of model properties is modified.
-    While LoopBack has a model instance available, it also needs to know which of model properties should be changed in the database.
-    Passing the operation payload in `ctx.data` - a plain object containing only those properties which should be modified - makes it easy for hook implementations to add/remove the properties to modify.
-    You can still access the model instance to be modified via `ctx.currentInstance` as long as you treat it as immutable (read-only).
+1.  `PersistedModel.updateAll` は与えられた条件に一致する複数のインスタンスを更新します。
+    LoopBackはデータベースからデータをロードすることさえできません。これらのインスタンスを見つけて必要な変更を適用するのはデータベースの責任です。
+2.  `PersistedModel.updateAttributes` が部分的な更新を実行すると、モデルのプロパティの一部のみが変更されます。
+    LoopBackには利用可能なモデルインスタンスがありますが、データベース内でどのモデルプロパティを変更すべきかも知る必要があります。
+    操作対象のデータを `ctx.data`（変更すべきプロパティだけを含むプレーンオブジェクト）で渡すことで、フックの実装に、変更するプロパティを簡単に追加/削除できるようになります。
+    `ctx.currentInstance` を不変（読み取り専用）として扱う限り、変更されるモデルインスタンスにアクセスできます。
 
-#### Examples
+#### 例
 
 ```javascript
 MyModel.observe('before save', function updateTimestamp(ctx, next) {
@@ -594,19 +591,19 @@ MyModel.observe('before save', function computePercentage(ctx, next) {
   } else if (ctx.data.part && ctx.data.total) {
     ctx.data.percentage = 100 * ctx.data.part / ctx.data.total;
   } else if (ctx.data.part || ctx.data.total) {
-    // either report an error or fetch the missing properties from DB
+    // エラーを報告するか、欠けているプロパティをDBから読み取る
   }
   next();
 });
 ```
 
-#### Removing unneeded properties
+#### 不要なプロパティの削除
 
-To remove (unset) a property in a model instance, it is not enough the set its value to undefined and/or delete the property.
-One has to call `unsetAttribute(name)` instead. However, don't forget to handle the case where the context has a data property instead!
-Since the data object is a plain object, you can remove properties the usual way via delete operator.
+モデルインスタンス内のプロパティを削除（設定解除）するには、その値を未定義に設定するか、またはプロパティを削除するだけで十分ではありません。
+代わりに、インスタンスには`unsetAttribute(name)` を呼び出さなければなりません。ただし、コンテキストにdataプロパティがある場合を処理することを忘れないでください！
+dataオブジェクトは単純なオブジェクトなので、削除演算子を使用して通常の方法でプロパティを削除できます。
 
-Example:
+例：
 
 ```javascript
 MyModel.observe('before save', function removeUnwantedField(ctx, next) {
@@ -619,11 +616,11 @@ MyModel.observe('before save', function removeUnwantedField(ctx, next) {
 });
 ```
 
-This completely removes the field and prevents inserting spurious data into the database.
+これにより、フィールドが完全に削除され、誤ったデータがデータベースに挿入されなくなります。
 
 ### after save
 
-The `after save` hook is called after a model change was successfully persisted to the datasource, specifically when the following methods of PersistedModel are called:
+`after save` フックは、モデルの変更がデータソース上で永続化された後に呼び出されます。 具体的には、PersistedModel の以下のメソッドが呼び出されたときです。
 
 * [create()](https://apidocs.loopback.io/loopback/#persistedmodel-create)
 * [upsert()](https://apidocs.loopback.io/loopback/#persistedmodel-upsert)
@@ -635,56 +632,57 @@ The `after save` hook is called after a model change was successfully persist
 * [prototye.replaceAttributes()](https://apidocs.loopback.io/loopback/#persistedmodel-prototype-replaceattributes) / [replaceById()](https://apidocs.loopback.io/loopback/#persistedmodel-replacebyid)
 * [replaceOrCreate()](https://apidocs.loopback.io/loopback/#persistedmodel-replaceorcreate)
 
-(&#42;) When `findOrCreate` finds an existing model, the save hooks are not triggered.
-However, connectors providing atomic implementation may trigger `before save` hook even when the model is not created,
-since they cannot determine in advance whether the model will be created or not.
+(&#42;) `findOrCreate` が既存のモデルを見つけると、saveフックは起動されません。
+ただし、アトミック実装を提供するコネクタは、モデルが作成されるかどうかを事前に判断できないため、
+モデルが作成されていなくても`before save`フックを起動する可能性があります。
 
-Depending on which method triggered this hook, the context will have one of the following sets of properties:
+このフックを起動するメソッドに応じて、コンテキストは次のプロパティセットのいずれかを持ちます。
 
-* A single model was updated:
-  * `Model` - the constructor of the model that will be saved.
-  * `instance` - the model instance that was saved. The value is an instance of `Model` class and contains updated values computed by datastore (for example, auto-generated ID).
+* 単一のモデルが更新された場合：
+  * `Model` - 保存されるモデルのコンストラクタです。
+  * `instance` - 保存されたモデルのインスタンス。 値は`Model`クラスのインスタンスであり、データストアによって計算された更新値（たとえば、自動生成ID）を含みます。
 
     {% include note.html content="
-    The after save hook returns the changes made to `ctx.instance` to the caller (REST client), but does not persist them to the database!
+    after saveフックは、`ctx.instance` に加えられた変更を呼び出し元（RESTクライアント）に返しますが、データベースに保存はしません。
     " %}
 
-* Partial update of more model instances via `Model.updateAll`:
-  * `Model` - the constructor of the model that will be saved.
-  * `where` - the where filter describing which instances were queried. See caveat below.
-  * `data`- the (partial) data applied during the update. 
+* `Model.updateAll`によって複数のモデルの部分的な更新が行われた場合：
+  * `Model` - 保存されるモデルのコンストラクタです。
+  * `where` - 問い合わせられたインスタンスを記述するwhereフィルタ。以下の警告を参照。
+  * `data`- 更新中に適用された（部分的な）データ。
 
-    NOTE: You cannot reliably use the \"where\" query in an after save hook to find which models were affected. Consider the following call:
+    注：after saveフックで 「where」クエリを使用して、影響を受けるモデルを確実に見つけることはできません。次の呼び出しを考えてみましょう。
 
     ```javascript
     MyModel.updateAll({ color: 'yellow' }, { color: 'red' }, cb);
     ```
 
-    At the time the \"after save\" hook is run, no records will match the query `{ color: 'yellow' }`.
+    「after save」フックが実行される時点では、`{ color: 'yellow' }`の条件にマッチするレコードは存在しません。
 
 The `after save` hook provides the `ctx.isNewInstance` property whenever `ctx.instance` is set, with the following values:
+`after save` フックは、`ctx.instance`がセットされる時はいつでも`ctx.isNewInstance` プロパティを以下の値に設定して提供します。
 
-* True after all CREATE operations.
-* False after all UPDATE/REPLACE operations.
-* The operations `updateOrCreate`, `prototype.save`, and `prototype.updateAttributes` require connectors to report whether a new instance was created or an existing instance was updated.
-  When the connector provides this information, `ctx.isNewInstance` is True or False. 
-  When the connector does not support this feature yet (see below), the value is undefined.
+* 全ての CREATE 操作の後なら True
+* 全ての UPDATE/REPLACE 操作の後なら false
+* `updateOrCreate`・`prototype.save`・`prototype.updateAttributes`操作は、新しいインスタンスが作成されたか、既存のインスタンスを更新したかを、コネクタが知らせることが必要。
+  コネクタがこの情報を提供する場合、`ctx.isNewInstance`は true またはfalse。
+  コネクタがまだこの機能をサポートしていない場合は、値は undefined。
 
 {% include important.html content="
-Only certain connectors support `ctx.isNewInstance`. With other connectors it is undefined.
-See [Checking for support of ctx.isNewInstance](#checking-for-support-of-ctx.isnewinstance).
+特定のコネクタのみが、`ctx.isNewInstance`をサポートしています。他のコネクタでは未定義です。
+[ctx.isNewInstance サポートの確認](#checking-for-support-of-ctx.isnewinstance)を参照してください。
 " %}
 
-#### Embedded relations
+#### 埋め込まれた関係
 
-You can define an `after save` hook for a model that is [embedded in](Embedded-models-and-relations.html) another model.
-Then, updating or creating an instance of the containing model will trigger the operation hook on the embedded model.
-When this occurs, `ctx.isNewInstance` is false, because only a new instance of the container model is created.
+別のモデルに[埋め込まれ](Embedded-models-and-relations.html)ているモデルの`after save`フックを定義することができます。
+そして、包含モデルのインスタンスを更新または作成すると、埋め込みモデルの操作フックが起動されます。
+これが発生する と、コンテナモデルの新しいインスタンスのみが作成されるため、`ctx.isNewInstance` はfalseになります。
 
-For example, if `Customer embedsOne Address`, and you define an `after save` hook on the Address model,
-creating a new Customer instance will trigger the operation hook.
+たとえば、`Customer emdedsOne Address` だとすると、Addressモデルに`after save`フックを定義し、
+新しいCustomerのインスタンスを作成すると操作フックが起動されます。
 
-#### Examples
+#### 例
 
 ```javascript
 MyModel.observe('after save', function(ctx, next) {
@@ -701,23 +699,23 @@ MyModel.observe('after save', function(ctx, next) {
 
 ### before delete
 
-The `before delete` hook is triggered before a model is removed from a datasource, specifically when the following methods of PersistedModel are called:
+`before delete`フックは、モデルがデータソースから削除される時に起動されます。具体的には、PersistedModelの以下のメソッドが呼び出されたときです。
 
-* [`destroyAll()`](https://apidocs.loopback.io/loopback/#persistedmodel-destroyall) (same as `deleteAll()`)
-* [`destroyById()`](https://apidocs.loopback.io/loopback/#persistedmodel-destroybyid)(same as `deleteById()`)
-* [`prototype.destroy()`](https://apidocs.loopback.io/loopback/#persistedmodel-prototype-destroy) (same as `prototype.delete()`)
+* [`destroyAll()`](https://apidocs.loopback.io/loopback/#persistedmodel-destroyall) (`deleteAll()` と同じ)
+* [`destroyById()`](https://apidocs.loopback.io/loopback/#persistedmodel-destroybyid)(`deleteById()` と同じ)
+* [`prototype.destroy()`](https://apidocs.loopback.io/loopback/#persistedmodel-prototype-destroy) (`prototype.delete()` と同じ)
 
 {% include important.html content="
-The `before delete` operation hook does not receive a list of deleted model instance IDs, because backend data stores such as relational or NoSQL databases don't provide this information.
-However, _when deleting a single model instance_ hook receives `ctx.where` that contains the `id` of the instance being deleted.
+`before delete` 操作フックは、リレーショナルまたはNoSQLデータベースなどのバックエンドのデータストアがこの情報を提供していないため、削除されたモデルインスタンスIDのリストを受け取りません。
+ただし、_単一のモデルインスタンスを削除する場合_ 、削除されるインスタンスの`id`を含む `ctx.where` をフックが受け取ります。
 " %}
 
-Context properties
+コンテキストプロパティ
 
-* `Model` - the constructor of the model that will be queried
-* `where` - the where filter describing which instances will be deleted.
+* `Model` - 照会されるモデルのコンストラクタ。
+* `where` - どのインスタンスが削除されるかを記述するwhereフィルタ。
 
-Example:
+例：
 
 ```javascript
 MyModel.observe('before delete', function(ctx, next) {
@@ -728,9 +726,9 @@ MyModel.observe('before delete', function(ctx, next) {
 });
 ```
 
-To reject the deletion of a model based on some condition, call `next()` with an error to abort the delete operation.
+なんらかの条件に基づいてモデルの削除を拒否するには、`next()`にエラーを渡して、削除操作を中止します。
 
-For example:
+例：
 
 ```javascript
 if (subscriptions.length > 0) {
@@ -747,22 +745,23 @@ if (subscriptions.length > 0) {
 ### after delete
 
 {% include important.html content="
-The `after delete` operation hooks do not receive a list of deleted model instance IDs, because backend data stores such as relational or NoSQL databases don't provide this information.
-However, _when deleting a single model instance_ hook receives `ctx.where` that contains the `id` of the instance being deleted.
+`after delete` 操作フックは、リレーショナルまたはNoSQLデータベースなどのバックエンドのデータストアがこの情報を提供していないため、削除されたモデルインスタンスIDのリストを受け取りません。
+ただし、_単一のモデルインスタンスを削除する場合_ 、削除されたインスタンスの`id`を含む `ctx.where` をフックが受け取ります。
 " %}
 
 The `after delete` hook is triggered after some models are removed from the datasource, specifically when the following methods of PersistedModel are called:
+`after delete`フックは、モデルがデータソースから削除された時に起動されます。具体的には、PersistedModelの以下のメソッドが呼び出されたときです。
 
-* [`destroyAll()`](https://apidocs.loopback.io/loopback/#persistedmodel-destroyall) (same as `deleteAll()`)
-* [`destroyById()`](https://apidocs.loopback.io/loopback/#persistedmodel-destroybyid)(same as `deleteById()`)
-* [`prototype.destroy()`](https://apidocs.loopback.io/loopback/#persistedmodel-prototype-destroy) (same as `prototype.delete()`)
+* [`destroyAll()`](https://apidocs.loopback.io/loopback/#persistedmodel-destroyall) (`deleteAll()`と同じ)
+* [`destroyById()`](https://apidocs.loopback.io/loopback/#persistedmodel-destroybyid)(`deleteById()`と同じ)
+* [`prototype.destroy()`](https://apidocs.loopback.io/loopback/#persistedmodel-prototype-destroy) (`prototype.delete()`と同じ)
 
-Context properties
+コンテキストプロパティ
 
-* `Model` - the constructor of the model that will be queried
-* `where` - the where filter describing which instances were deleted.
+* `Model` - 照会されたモデルのコンストラクタ
+* `where` -  削除されたインスタンスを記述するwhereフィルタ
 
-Example:
+例：
 
 ```javascript
 MyModel.observe('after delete', function(ctx, next) {
@@ -775,7 +774,7 @@ MyModel.observe('after delete', function(ctx, next) {
 
 ### loaded
 
-This hook is triggered by the following methods of PersistedModel:
+このフックは、PersistedModelの以下のメソッドによって起動されます。
 
 * [`find()`](https://apidocs.loopback.io/loopback/#persistedmodel-find)
 * [`findOne()`](https://apidocs.loopback.io/loopback/#persistedmodel-findone)
@@ -783,7 +782,7 @@ This hook is triggered by the following methods of PersistedModel:
 * [`exists()`](https://apidocs.loopback.io/loopback/#persistedmodel-exists)
 * [`count()`](https://apidocs.loopback.io/loopback/#persistedmodel-count)
 * [`create()`](https://apidocs.loopback.io/loopback/#persistedmodel-create)
-* [`upsert()`](https://apidocs.loopback.io/loopback/#persistedmodel-upsert) (same as `updateOrCreate()`)
+* [`upsert()`](https://apidocs.loopback.io/loopback/#persistedmodel-upsert) (`updateOrCreate()`と同じ)
 * [`upsertWithWhere()`](http://apidocs.loopback.io/loopback/#persistedmodel-upsertwithwhere)
 * [`findOrCreate()`](https://apidocs.loopback.io/loopback/#persistedmodel-findorcreate)*
 * [`prototype.save()`](https://apidocs.loopback.io/loopback/#persistedmodel-prototype-save)
@@ -793,23 +792,22 @@ This hook is triggered by the following methods of PersistedModel:
   / [`replaceById()`](https://apidocs.loopback.io/loopback/#persistedmodel-replacebyid)
 
 {% include important.html content="
-By default, `create` and `updateAttributes` do not apply database updates to the model instance returned to the callback,
-therefore any changes made by \"loaded\" hooks are discarded. To change this behavior, set a per-model option `updateOnLoad: true`.
+既定では、 `create` と `updateAttributes`は、 コールバックに返されたモデルインスタンスへデータベースの更新を適用しないので、「loaded」フックによって行われた変更は破棄されます。この動作を変更するには、モデルごとのオプションで `updateOnLoad: true` を設定します。
 " %}
 
-LoopBack invokes this hook after the connector fetches data, but before creating a model instance from that data.
-This enables hooks to decrypt data (for example). NOTE: This hook is called with the raw database data, not a full model instance.
+LoopBackは、コネクターがデータを読み取った後で、そのデータからモデルインスタンスを作成する前に、このフックを呼び出します。
+これにより、フックはデータを復号化することができます（たとえば）。注：このフックは、フルモデルのインスタンスではなく、未加工のデータベースデータで呼び出されます。
 
-Context properties
+コンテキストプロパティ
 
-* `data` - the data returned by the connector (loaded from the database)
+* `data` - コネクタによって返されたデータ（データベースからロードされたもの）
 
 ### persist
 
-This hook is triggered by operations that persist data to the datasource, specifically, the following methods of PersistedModel:
+このフックは、データをデータソースに永続化する操作、具体的にはPersistedModelの次のメソッドによって起動されます。
 
 * [`create()`](https://apidocs.loopback.io/loopback/#persistedmodel-create)
-* [`upsert()`](https://apidocs.loopback.io/loopback/#persistedmodel-upsert) (same as `updateOrCreate()`)
+* [`upsert()`](https://apidocs.loopback.io/loopback/#persistedmodel-upsert) (`updateOrCreate()` と同じ)
 * [`upsertWithWhere()`](http://apidocs.loopback.io/loopback/#persistedmodel-upsertwithwhere)
 * [`findOrCreate()`](https://apidocs.loopback.io/loopback/#persistedmodel-findorcreate)*
 * [`prototype.save()`](https://apidocs.loopback.io/loopback/#persistedmodel-prototype-save)
@@ -819,45 +817,42 @@ This hook is triggered by operations that persist data to the datasource, specif
 * [`prototype.replaceAttributes()`](https://apidocs.loopback.io/loopback/#persistedmodel-prototype-replaceattributes)
   / [`replaceById()`](https://apidocs.loopback.io/loopback/#persistedmodel-replacebyid)
 
-Don't confuse this hook with the "before save" hook:
+このフックと「before save 」フックを混同しないでください：
 
-* **before save** – Use this hook to observe (and operate on) model instances that are about to be saved (for example,
-  when the country code is set and the country name not, fill in the country name).
-* **persist** – Use this hook to observe (and operate on) data just before it is going to be persisted into a data source
-  (for example, encrypt the values in the database).
+* **before save** – 保存しようとしているモデルインスタンスを観察して操作するために、このフックを使います。（たとえば、国コードが設定されていて、国名がなく、国名をセットしたい場合）
+* **persist** – データソースに永続化される直前のデータを監視（および操​​作）するためにこのフックを使います。（たとえば、データベース内の値を暗号化したい場合）
 
-During `create` the updates applied through `persist` hook are reflected into the database,
-but the same updates are NOT reflected in the `instance` object obtained in callback of `create`.
+`create` の最中、`persist` フックで行った変更は、データベースに反映されます。
+しかし、`create`のコールバックによって得られた `instance` への変更は、反映されません。
 
-Secondly, for connectors implementing atomic `findOrCreate`, a new instance of the object is created every time,
-even if an existing record is later found in the database. So:
+第2に、アトミックを実装するコネクターで`findOrCreate`は、既存のレコードが後でデータベース内で見つかった場合でも、毎回オブジェクトの新しいインスタンスが作成されます。そのため、
 
-* Both [`ctx.data.id`](http://ctx.data.id/) and [`ctx.currentInstance.id`](http://ctx.currentinstance.id/) are set to new ID.
-* `ctx.isNewInstance` is `true`
+* [`ctx.data.id`](http://ctx.data.id/) と [`ctx.currentInstance.id`](http://ctx.currentinstance.id/) は新しいIDがセットされます。
+* `ctx.isNewInstance` は `true` です。
 
-Context properties
+コンテキストプロパティ
 
-* `data` - the data that will be sent to the connector (saved to the database)
-* `currentInstance` - the affected model instance
-* `isNewInstance` - see below.
+* `data` - コネクタに送信されるデータ（データベースに保存されます）
+* `currentInstance` - 影響を受けるモデルインスタンス
+* `isNewInstance` - 下記参照
 
-For this hook, `ctx.isNewInstance` is:
+このフックで`ctx.isNewInstance`は、
 
-* True for all CREATE operations
-* False for all UPDATE operations
-* Undefined for updateOrCreate, , upsertWithWhere, replaceOrCreate, prototype.save, prototype.updateAttributes, and updateAll operations.
+* 全ての CREATE 操作において true
+* 全ての UPDATE 操作においてい false
+* updateOrCreate・upsertWithWhere・replaceOrCreate・prototype.save・prototype.updateAttributes・updateAll 操作については undefined
 
-## afterInitialize hook
+## afterInitialize フック
 
 {% include important.html content="
-`afterInitialize` is not strictly an operation hook. It is actually the only [model hook](/doc/en/lb2/Model-hooks.html) that is not deprecated.
+`afterInitialize` は厳密には操作フックではありません。実際には非推奨ではない唯一の[モデルフック](/doc/en/lb2/Model-hooks.html)です。
 
-It is a synchronous method and does not take a callback function: You do not need to call `next()` after performing your logic in the hook.
+これは同期メソッドであり、コールバック関数は使用しません。フックでロジックを実行した後に next() を呼び出す必要はありません。
 " %}
 
-This hook is called after a model is initialized.
+このフックは、モデルが初期化された後に呼び出されます。
 
-### Example
+### 例
 
 **/common/models/coffee-shop.js**
 
@@ -869,18 +864,18 @@ CoffeeShop.afterInitialize = function() {
 ...
 ```
 
-Most operations require initializing a model before actually performing an action, but there are a few cases where the initialize event is not triggered,
-such as HTTP requests to the `exists`, `count`, or bulk update REST endpoints.
+ほとんどの操作は、実際にアクションを実行する前に、モデルを初期化する必要があるが、initializeイベントが起動されていないいくつかの例がある。
+例えば、`exists`, `count` や一括更新のRESTエンドポイントへのHTTPリクエストなどである。
 
-## Migrating from model hooks
+## モデルフックからの移行
 
-The following table shows which new hook to use for each of the deprecated [model hooks](/doc/en/lb2/Model-hooks.html):
+次の表は、推奨されていない各[モデルフック](/doc/en/lb2/Model-hooks.html)に代わって使用する新しいフックを示しています。
 
 <table>
   <thead>
     <tr>
-      <th>Model hook</th>
-      <th>Operation hook to use instead</th>
+      <th>モデルフック</th>
+      <th>代替となる操作フック</th>
     </tr>
   </thead>
   <tbody>

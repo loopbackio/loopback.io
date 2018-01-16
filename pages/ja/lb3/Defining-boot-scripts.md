@@ -1,5 +1,5 @@
 ---
-title: "Defining boot scripts"
+title: "起動スクリプトの定義"
 lang: ja
 layout: page
 keywords: LoopBack
@@ -10,23 +10,23 @@ summary:
 ---
 
 {% include see-also.html content="
-* [Adding logic to models](Adding-logic-to-models.html)
-* [Defining middleware](Defining-middleware.html)
+* [モデルにロジックを追加する](Adding-logic-to-models.html)
+* [ミドルウェアの定義](Defining-middleware.html)
 " %}
 
-## Overview
+## 概要
 
-The LoopBack bootstrapper, [loopback-boot](https://github.com/strongloop/loopback-boot), performs application initialization (also called _bootstrapping_).
-When an application starts, the bootstrapper:
+LoopBack のブートストラップである [loopback-boot](https://github.com/strongloop/loopback-boot) はアプリケーションの初期化 (_ブートスラッピング_ とも呼ばれます).
+アプリケーションが開始するとき、ブートストラップは以下のことを行います。
 
-* Configures data sources.
-* Defines custom models
-* Configures models and attaches models to data-sources.
-* Configures application settings
-* Runs boot scripts in the `/server/boot` directory.
+* データソースを設定する。
+* 独自モデルを定義する。
+* モデルを設定し、データソースをモデルを紐付ける。
+* アプリケーション設定を行う。
+* `/server/boot` ディレクトリ内の起動スクリプトを実行する。
 
-The loopback-boot module exports a `boot()` function that initializes an application.
-For example, from the standard scaffolded [server.js](server.js.html) script:
+loopback-bootモジュールは、アプリケーションを初期化する `boot()` 関数を提供します。
+例えば、標準的な [server.js](server.js.html) スクリプトにおいては以下のように使われます。
 
 ```js
 var loopback = require('loopback');
@@ -41,29 +41,26 @@ boot(app, __dirname, function(err) {
 });
 ```
 
-See [loopback-boot API docs](http://apidocs.loopback.io/loopback-boot/) for details. 
+詳しくは[loopback-boot API docs](http://apidocs.loopback.io/loopback-boot/)を参照してください。
 
-{% include note.html content="If you create your application with the [application generator](Application-generator.html) ,
-then you don't need to do anything to bootstrap your application--the above code is automatically scaffolded for you!
+{% include note.html content="[アプリケーション生成ツール](Application-generator.html)でアプリケーションを作成する場合、アプリケーションを起動するために何もする必要はありません。上記のコードは自動的に作成されます！
 " %}
 
-### Using boot scripts
+### 起動スクリプトを使う
 
-Use _boot scripts_ to perform custom initialization in addition to that performed by the LoopBack bootstrapper.
-When an application starts, LoopBack loads all the scripts in the `server/boot` directory.
-By default, LoopBack loads boot scripts in alphabetical order.
-You can customize the boot script load order using the options argument of [boot()](http://apidocs.loopback.io/loopback-boot/#boot).
-See [Boot script loading order](#boot-script-loading-order) for details.
+LoopBackブートストラップによって実行されるものに加えて、_起動スクリプト_ を使用して独自の初期化を実行します。
+アプリケーションが起動すると、LoopBackは`server/boot` ディレクトリ内のすべてのスクリプトをロードします。
+既定では、LoopBackは起動スクリプトをアルファベット順にロードします。
+[boot()](http://apidocs.loopback.io/loopback-boot/#boot) の options引数を使用して、起動スクリプトのロード順序をカスタマイズできます。
+詳細については、[起動スクリプトのロード順序](#boot-script-loading-order)を参照してください。
 
-## Predefined boot scripts
+## 定義済み起動スクリプト
 
-The [application generator](Application-generator.html) creates the following boot scripts:
+[アプリケーション生成ツール](Application-generator.html) は以下の起動スクリプトを作成します。
 
-
-* `/server/boot/root.js` binds [loopback.status()](http://apidocs.loopback.io/loopback/#loopback-status) middleware
-at the root endpoint ("/") to provide basic status information.
-* `/server/boot/authentication.js` - enables authentication for the application by calling
-[app.enableAuth()](http://apidocs.loopback.io/loopback/#app-enableauth).
+* `/server/boot/root.js` は [loopback.status()](http://apidocs.loopback.io/loopback/#loopback-status) ミドルウェアを
+ルートエンドポイント ("/") にバインドして、基本的なステータス情報を提供します。
+* `/server/boot/authentication.js` - [app.enableAuth()](http://apidocs.loopback.io/loopback/#app-enableauth) を呼出して、アプリケーションの認証を有効にします。
 
 ### Earlier versions
 
@@ -76,39 +73,39 @@ Prior to `generator-loopback` v. 1.12, the application generator created two add
 
 The API Connect LoopBack generator does not create the  `authentication.js` boot script that enables authentication.  To enable user model authentication you must add this script (or the equivalent) yourself.
 
-## Using the boot script generator
+## 起動スクリプト生成ツールを使う
 
-In addition to the predefined boot scripts, you can define custom boot scripts to perform your own logic when an application starts.
+あらかじめ定義された起動スクリプトに加えて、独自の起動スクリプトを定義して、アプリケーションの起動時に独自のロジックを実行することもできます。
 
-Use the [boot script generator](Boot-script-generator.html), to quickly generate boot script templates.
-Depending on how you respond to the generator's prompts, it will generate a template for either a synchronous or asynchronous boot script:
+[起動スクリプト生成ツール](Boot-script-generator.html)を使用すると、起動スクリプトテンプレートをすばやく生成できます。
+生成ツールの質問にどのように応答するかに応じて、同期起動スクリプトまたは非同期起動スクリプトのいずれかのテンプレートが生成されます。
 
-{% include code-caption.html content="Synchronous boot script template" %}
+{% include code-caption.html content="同期起動スクリプトテンプレート" %}
 ```javascript
 module.exports = function(app) {
 };
 ```
 
-Comments are omitted here for brevity.
+簡潔にするため、コメントは省略されています。
 
-{% include code-caption.html content="Asynchronous boot script template" %}
+{% include code-caption.html content="非同期起動スクリプトテンプレート" %}
 ```javascript
 module.exports = function(app, cb) {
   process.nextTick(cb); // Remove if you pass `cb` to an async function yourself
 };
 ```
 
-Simply add to the function the code you want to execute at boot time.
+起動時に実行したいコードを関数に追加するだけです。
 
-## Synchronous and asynchronous boot scripts
+## 同期および非同期起動スクリプト
 
-LoopBack supports both synchronous and asynchronous boot scripts. The type to use depends on the nature of the task.
-Use asynchronous boot scripts for tasks for which you don't want to block program execution, such as database requests or network operations. 
+LoopBackは、同期スクリプトと非同期スクリプトの両方をサポートします。使用するタイプはタスクの性質によって異なります。
+データベース要求やネットワーク操作など、プログラムの実行をブロックしたくないタスクには、非同期起動スクリプトを使用します。
 
-Both types of boot script must export a function that contains the actions of the script.
-The signature of this function is similar for both types of boot scripts, but asynchronous boot script functions take an additional callback argument.
+どちらのタイプの起動スクリプトも、スクリプトのアクションを含む関数をエクスポートする必要があります。
+この関数のシグネチャは、両方の種類の起動スクリプトで同様ですが、非同期起動スクリプト関数は追加のコールバック引数を取ります。
 
-### Bootstrap function arguments
+### ブートストラップ関数の引数
 
 ```javascript
 module.exports = function(app, [callback]) {
@@ -119,10 +116,10 @@ module.exports = function(app, [callback]) {
 <table>
   <thead>
     <tr>
-      <th width="100">Name</th>
-      <th width="100">Type</th>
-      <th>Required</th>
-      <th>Description</th>
+      <th width="100">名前</th>
+      <th width="100">型</th>
+      <th>必須</th>
+      <th>説明</th>
     </tr>
   </thead>    
   <tbody>    
@@ -131,30 +128,30 @@ module.exports = function(app, [callback]) {
       <td>Object</td>
       <td>Yes</td>
       <td>
-        <p>The application context object. Provides a handle the the application, so (for example) you can get model objects:</p>
+        <p>アプリケーションコンテキストオブジェクト。アプリケーションのハンドルを提供するので、（たとえば）モデルオブジェクトを取得できます。</p>
         <pre>var User = app.models.User;</pre>
       </td>
     </tr>
     <tr>
       <td>callback</td>
       <td>Function</td>
-      <td>For asynchronous boot scripts</td>
-      <td>Call the callback function when your application logic is done.</td>
+      <td>非同期起動スクリプトのみ</td>
+      <td>アプリケーションロジックが完了したら、コールバック関数を呼び出します。</td>
     </tr>
   </tbody>
 </table>
 
-### Asynchronous boot scripts
+### 非同期起動スクリプト
 
-An asynchronous boot script must export a function that takes two arguments:
+非同期起動スクリプトは、2つの引数をとる関数をエクスポートする必要があります。
 
-1.  The application object, `app`. This object enables you to access system-defined variables and configurations. 
-2.  A callback function that enables you to time your response according to your application logic.
+1.  アプリケーションオブジェクト、`app`。このオブジェクトを使用すると、システム定義の変数と構成にアクセスできます。
+2.  アプリケーションロジックに従って応答時間を計ることができるコールバック関数。
 
-{% include important.html content="You must call the callback function when the script is finished to pass control back to the application.
+{% include important.html content="スクリプトが終了したら、アプリケーションに制御を戻すためにコールバック関数を呼び出す必要があります。
 " %}
 
-For example, this boot script prints "hello world" and triggers the callback function after three seconds (3000 milliseconds).
+たとえば、この起動スクリプトは "hello world"を出力し、3秒（3000ミリ秒）後にコールバック関数を起動します。
 
 {% include code-caption.html content="/server/boot/script.js" %}
 ```javascript
@@ -166,14 +163,14 @@ module.exports = function(app, callback) {
 };
 ```
 
-If you add this boot script to an application, it will display "Hello world" to the console when it starts.
+この起動スクリプトをアプリケーションに追加すると、起動時にコンソールに「Hello world」と表示されます。
 
-### Synchronous boot scripts
+### 同期起動スクリプト
 
-A synchronous boot script must export a function that takes one argument, the application object, `app`.
-This object enables you to access system-defined variables and configurations. 
+同期起動スクリプトは、1つの引数を取る関数をエクスポートする必要があります。アプリケーションオブジェクト `app`です。
+このオブジェクトを使用すると、システム定義の変数と構成にアクセスできます。
 
-For example, this boot script retrieves the names of all models registered with the application and displays them to the console. 
+たとえば、この起動スクリプトは、アプリケーションに登録されているすべてのモデルの名前を取得し、コンソールに表示します。
 
 {% include code-caption.html content="/server/boot/script.js" %}
 ```javascript
@@ -190,7 +187,7 @@ module.exports = function(app) {
 };
 ```
 
-If you add this boot script to an "empty" application, you will see this:
+この起動スクリプトを「空の」アプリケーションに追加すると、次のように表示されます。
 
 ```javascript
 ...
@@ -198,17 +195,16 @@ Models: ['User', 'AccessToken', 'ACL', 'RoleMapping', 'Role']
 ...
 ```
 
-## Boot script loading order
+## 起動スクリプトの読み込み順序
 
-LoopBack executes boot scripts in alphabetical order by file name, so the easiest way to specify loading order for boot scripts is by their file names.
-For example, you could name boot scripts `01-your-first-script.js`, `02-your-second-script.js`, and so forth. This ensures LoopBack loads scripts in the order you want.
-For example before default boot scripts in `/server/boot`. 
+LoopBackは、起動スクリプトをファイル名のアルファベット順に実行するので、起動スクリプトのロード順序をそのファイル名で指定するのが最も簡単な方法です。
+たとえば、起動スクリプトに `01-your-first-script.js`・`02-your-second-script.js` などの名前を付けることができます。これにより、LoopBackは必要な順序でスクリプトをロードできます。
+たとえば、`/server/boot`にある既定の起動スクリプトの前に。
 
-{% include note.html content="LoopBack processes boot scripts alphabetically, one at a time (not in parallel).  This applies to both synchronous and asynchronous boot scripts.
+{% include note.html content="LoopBackは起動スクリプトをアルファベット順に１つずつ処理します（並列ではありません）。これは、同期および非同期の両方の起動スクリプトに適用されます。
 " %}
 
-You can also specify the loading order with options to the [`boot()`](http://apidocs.loopback.io/loopback-boot/#boot) function call in `/server/server.js`.
-Replace the default scaffolded function call:
+また、`/server/server.js` における [`boot()`](http://apidocs.loopback.io/loopback-boot/#boot)関数呼び出しのオプションを使って読み込み順序を指定することもできます。既定の関数呼び出しの以下の部分を、
 
 {% include code-caption.html content="/server/server.js" %}
 ```javascript
@@ -217,7 +213,7 @@ boot(app, __dirname);
 ...
 ```
 
-With something like this:
+以下のようにします。
 
 ```javascript
 ...
@@ -228,14 +224,13 @@ boot(app, bootOptions);
 ...
 ```
 
-Then the application will then execute scripts in the order specified in the `bootScripts` array.
-Specify the full directory path to each script.
+すると、アプリケーションは`bootScripts`配列で指定された順序でスクリプトを実行します。
+各スクリプトへの完全なディレクトリパスを指定します。
 
-You can also specify a relative directory path.
+相対ディレクトリパスを指定することもできます。
 
-{% include important.html content="Using the technique shown above, the application will still run all the boot scripts in `/server/boot`
-in alphabetical order (unless you move or delete them) after your custom-ordered boot scripts specified in `bootScripts`.
+{% include important.html content="上記の方法を使用すると、アプリケーションは、`bootScripts` に指定された独自順序の起動スクリプトのあとで、（それらを移動したり削除したりしなければ）`/server/boot` にある起動スクリプトを全てアルファベット順に実行します。
 " %}
 
-If desired, you can also specify one or more directories in the `bootDirs` property, and the application will run scripts in that directory
-in alphabetical order after those specified in `bootScripts` but before those in the `/server/boot` directory.
+必要に応じて、`bootDirs` プロパティに1つまたは複数のディレクトリを指定することもできます。
+アプリケーションは、`bootScripts`に指定したスクリプトの後、`/server/boot` ディレクトリ内のスクリプトの前に、ディレクトリ内のスクリプトをアルファベット順に実行します。

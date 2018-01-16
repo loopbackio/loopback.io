@@ -79,7 +79,6 @@ REST・WebSockets・その他の転送方法を通じてバックエンドAPIを
     <tr>
       <td>モデル</td>
       <td>モデルとAPIサーバ</td>
-      <td>Dynamically mock-up models and expose them as APIs without worrying about persisting.</td>
       <td>動的にモデルのモックアップを作り、それらのAPIを永続化のことは心配せずに公開する。</td>
       <td>loopback</td>
     </tr>
