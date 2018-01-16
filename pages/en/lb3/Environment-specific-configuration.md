@@ -119,7 +119,7 @@ By default, stack traces are not returned in JSON responses, but if they were en
   }
 ```
 
-{% include note.html content="The [Application generator](Application-generator.html) creates a `middleware.developmnet.json` file
+{% include note.html content="The [Application generator](Application-generator.html) creates a `middleware.development.json` file
 with the above configuration for you, so all you have to do is ensure that the NODE_ENV environment variable is not `development`.
 " %}
 
