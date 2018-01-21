@@ -37,7 +37,7 @@ Dependency Injection makes the code easier to extend and customize, because the 
 
 ## Configuring what to inject
 
-Now that we wrote a class that gets the dependencies injected, you are probably wondering where are these values going to be injected from and how to configure what should be injected. This part is typically handled by an IoC Container, where IoC means [Inversion of Control](https://en.wikipedia.org/wiki/Inversion_of_control).
+Now that we write a class that gets the dependencies injected, you are probably wondering where are these values going to be injected from and how to configure what should be injected. This part is typically handled by an IoC Container, where IoC means [Inversion of Control](https://en.wikipedia.org/wiki/Inversion_of_control).
 
 In LoopBack, we use [Context](Context.html) to keep track of all injectable dependencies.
 
@@ -86,10 +86,11 @@ const authenticate = await app.get('authentication.provider');
 You can learn more about Providers in [Creating Components](Creating-components.html).
 ## Flavors of Dependency Injection
 
-LoopBack supports two kinds of dependency injection:
+LoopBack supports three kinds of dependency injection:
 
  1. constructor injection: the dependencies are provided as arguments of the class constructor.
  2. property injection: the dependencies are stored in instance properties after the class was constructed.
+ 3. method injection: the dependencies are provided as arguments of a method invocation. Please note that constructor injection is a special form of method injection to instantiate a class by calling its constructor.
 
 ### Constructor injection
 
@@ -122,6 +123,20 @@ class InfoController {
   status() {
     this.logger.info('Status endpoint accessed.');
     return {pid: process.pid};
+  }
+}
+```
+
+### Method injection
+
+Method injection allows injection of dependencies at method invocation level. The parameters are decorated
+with `@inject` or other variants to declare dependencies as method arguments.
+
+```ts
+class InfoController {
+
+  greet(@inject('authentication.currentUser') user: UserProfile) {
+    return `Hello, ${userProfile.name}`;
   }
 }
 ```
