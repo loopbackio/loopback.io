@@ -141,6 +141,30 @@ class InfoController {
 }
 ```
 
+## Circular dependencies
+
+LoopBack can detect circular dependencies and report the path which leads to the problem.
+For example,
+
+```ts
+const context = new Context();
+  interface XInterface {}
+  interface YInterface {}
+
+  class XClass implements XInterface {
+    @inject('y') public y: YInterface;
+  }
+
+  class YClass implements YInterface {
+    @inject('x') public x: XInterface;
+  }
+
+  context.bind('x').toClass(XClass);
+  context.bind('y').toClass(YClass);
+  // An error will be thrown below - Circular dependency detected on path 'x --> y --> x'
+  const x: XInterface = context.getSync('x'); 
+```
+
 ## Additional resources
 
  - [Dependency Injection](https://en.wikipedia.org/wiki/Dependency_injection) on Wikipedia
