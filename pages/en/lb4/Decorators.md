@@ -237,6 +237,57 @@ class WidgetController {
 }
 ```
 
+A few variants of `@inject` are provided to declare special forms of dependencies:
+
+- @inject.getter: inject a getter function that returns a promise of the bound value of the key
+
+```ts
+class HelloController {
+  constructor(
+    @inject.getter('authentication.currentUser')
+    private userGetter: Getter<UserProfile>) {}
+
+  async greet() {
+    const user = await this.userGetter();
+    return `Hello, ${user.name}`;
+  }
+}
+```
+
+- @inject.setter: inject a setter function to set bound value of the key
+
+```ts
+class HelloController {
+  constructor(
+    @inject.setter('greeting')
+    private greetingSetter: Setter<string>) {}
+
+  greet() {
+    greetingSetter('my-greeting-message');
+  }
+}
+```
+
+- @inject.tag: inject an array of values by a pattern or regexp to match bindng tags
+
+```ts
+  class Store {
+    constructor(@inject.tag('store:location') public locations: string[]) {}
+  }
+
+  ctx.bind('store').toClass(Store);
+  ctx
+    .bind('store.locations.sf')
+    .to('San Francisco')
+    .tag('store:location');
+  ctx
+    .bind('store.locations.sj')
+    .to('San Jose')
+    .tag('store:location');
+  const store: Store = ctx.getSync('store');
+  // `store.locations` is now `['San Francisco', 'San Jose']`
+```
+
 For more information, see the [Dependency Injection](Dependency-Injection.htm) section under [LoopBack Core Concepts](Concepts.htm)
 
 ## Authentication Decorator
