@@ -29,7 +29,8 @@ If you are looking to contribute, but aren't sure where to start, review open pu
 
 Also, please read the source code before contributing. If something is confusing, poorly documented, poorly commented, or could otherwise be improved: open a GitHub issue and link to the file and line of code with a useful description of what you would like to see or think is missing.
 
-Another place to look is to find our issues on GitHub with `good first issue` tag.  For example: `good first issue` in [loopback repository](https://github.com/strongloop/loopback/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22) and [loopback-next repository](https://github.com/strongloop/loopback-next/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22).
+Another place to look is to find our issues on GitHub with `good first issue` tag.  See 
+[good first issue in our repositories](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aissue+label%3A%22good+first+issue%22+user%3Astrongloop).
 
 ### LoopBack versions
 
