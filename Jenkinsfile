@@ -13,6 +13,7 @@ node('linux && git') {
   }
   stage('download updates') {
     sh './update-readmes.sh'
+    sh './update-v4-readmes.sh'
     sh './update-community-readmes.sh'
   }
   stage('check updates') {
@@ -25,6 +26,7 @@ node('linux && git') {
       // existing files will have to be done by a human for now.
       sh 'git add pages/en/lb2/readmes'
       sh 'git add pages/en/lb3/readmes'
+      sh 'git add pages/en/lb4/readmes'
       sh 'git add pages/en/community/readmes'
       withEnv(gitEnv) {
         sh 'git commit -m "Update READMEs from other repos"'
