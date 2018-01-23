@@ -67,7 +67,10 @@ Edit `datasources.json` to add other properties that enable you to connect the
     <tr>
       <td>host</td>
       <td>String</td>
-      <td>Database host name. When this property is set, also the property **port** needs to be set.</td>
+      <td>
+        Database host name.
+        When this property is set, also the property **port** needs to be set.
+      </td>
     </tr>
     <tr>
       <td>password</td>
