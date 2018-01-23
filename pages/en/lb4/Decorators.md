@@ -239,7 +239,9 @@ class WidgetController {
 
 A few variants of `@inject` are provided to declare special forms of dependencies:
 
-- @inject.getter: inject a getter function that returns a promise of the bound value of the key
+- `@inject.getter`: inject a getter function that returns a promise of the bound value of the key
+
+Syntax: `@inject.getter(bindingKey: string)`.
 
 ```ts
 class HelloController {
@@ -254,7 +256,9 @@ class HelloController {
 }
 ```
 
-- @inject.setter: inject a setter function to set bound value of the key
+- `@inject.setter`: inject a setter function to set bound value of the key
+
+Syntax: `@inject.setter(bindingKey: string)`.
 
 ```ts
 class HelloController {
@@ -268,7 +272,9 @@ class HelloController {
 }
 ```
 
-- @inject.tag: inject an array of values by a pattern or regexp to match bindng tags
+- `@inject.tag`: inject an array of values by a pattern or regexp to match bindng tags
+
+Syntax: `@inject.tag(tag: string | RegExp)`.
 
 ```ts
   class Store {
