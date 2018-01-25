@@ -177,14 +177,17 @@ up. For example, let's take the previous example and make it available on the
 `GET /greet` route using decorators provided by
 [`@loopback/rest`](https://github.com/strongloop/loopback-next/blob/master/packages/rest):
 
-```js
+```ts
 class HelloController {
-  @get('/greet') // tell LoopBack you want this controller method
-                 // to be available at the GET /greet route
-  @param.query.string('name') // tell LoopBack you want to accept
-                              // the name parameter as a string from
-                              // the query string
-  greet(name) {
+  // tell LoopBack you want this controller method
+  // to be available at the GET /greet route
+  @get('/greet')
+  greet(
+    // tell LoopBack you want to accept
+    // the name parameter as a string from
+    // the query string
+    @param.query.string('name')
+    name: string) {
     return `Hello ${name}`;
   }
 }

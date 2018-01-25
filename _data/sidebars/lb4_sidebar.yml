@@ -136,6 +136,10 @@ children:
     url: Creating-components.html
     output: 'web, pdf'
 
+  - title: 'Creating Decorators'
+    url: Creating-decorators.html
+    output: 'web, pdf'
+
   - title: 'Testing your extension'
     url: Testing-your-extension.html
     output: 'web, pdf'
