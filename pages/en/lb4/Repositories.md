@@ -65,10 +65,10 @@ import {Entity, model, property} from '@loopback/repository';
 
 @model()
 export class Account extends Entity {
-  @property({type: 'number', id: true})
+  @property({id: true})
   id: number;
 
-  @property({type: 'string', required: true})
+  @property({required: true})
   name: string;
 }
 ```

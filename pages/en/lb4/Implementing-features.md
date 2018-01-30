@@ -243,18 +243,17 @@ LoopBack is agnostic when it comes to accessing databases. You can choose any pa
     export class Product extends Entity {
       @property({
         description: 'The unique identifier for a product',
-        type: 'number',
         id: true,
       })
       id: number;
 
-      @property({type: 'string', required: true})
+      @property({required: true})
       name: string;
 
-      @property({type: 'string', required: true})
+      @property({required: true})
       slug: string;
 
-      @property({type: 'number', required: true})
+      @property({required: true})
       price: number;
 
       // Add the remaining properties yourself:
