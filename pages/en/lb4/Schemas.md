@@ -144,6 +144,83 @@ class Customer extends Entity {
 }
 ```
 
+### JSON Schema inference
+Use the `@loopback/repository-json-schema module` to build a JSON schema from
+a decorated model. Type information is inferred from the `@model` and
+`@property` decorators. The `@loopback/repository-json-schema` module contains
+the `getJsonSchema` function to access the metadata stored by the decorators
+to build a matching JSON Schema of your model.
+
+```ts
+import {model, property} from '@loopback/repository';
+import {getJsonSchema} from '@loopback/repository-json-schema';
+
+@model()
+class Category {
+  @property() name: string;
+}
+
+@model()
+class Product {
+  @property({required: true}) name: string;
+  @property() type: Category;
+}
+
+const jsonSchema = getJsonSchema(Product);
+```
+
+`jsonSchema` from above would return:
+
+```json
+{
+  "title": "Product",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "type": {
+      "$ref": "#/definitions/Category"
+    }
+  },
+  "definitions": {
+    "Category": {
+      "properties": {
+        "name": {
+          "type": "string"
+        }
+      }
+    }
+  },
+  "required": ["name"]
+}
+```
+
+If a custom type is specified for a decorated property in a model definition, then 
+a reference [`$ref`](http://json-schema.org/latest/json-schema-core.html#rfc.section.8)
+field is created for it and a `definitions` sub-schema is created at the top-level
+of the schema and populated with the type definition by recursively calling
+`getJsonSchema` to build its properties. This allows for complex and nested custom
+type definition building. The example above illustrates this point by having the
+custom type `Category` as a property of our `Product` model definition. 
+
+#### Supported JSON keywords
+
+{% include note.html content="
+
+This feature is still a work in progress and is incomplete.
+
+" %}
+
+Following are the supported keywords that can be explicitly passed into the decorators
+to better tailor towards the JSON Schema being produced.
+
+| Keywords    | Decorator   | Type    | Default      | Description                                             |
+|-------------|-------------|---------|--------------|---------------------------------------------------------|
+| title       | `@model`    | string  | *model name* | Name of the model                                       |
+| description | `@model`    | string  |              | Description of the model                                |
+| array       | `@property` | boolean |              | Used to specify whether the property is an array or not |
+| required    | `@property` | boolean |              | Used to specify whether the property is required or not |
+
 ## Other ORMs
 You might decide to use an alternative ORM/ODM in your LoopBack application.
 Loopback v4 no longer expects you to provide your data in its own custom Model

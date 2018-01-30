@@ -378,7 +378,7 @@ For more information, see the [Dependency Injection](Dependency-Injection.htm) s
 
 #### Property Decorator
 
-  Syntax: `@property(definition: PropertyDefinition)`
+  Syntax: `@property(definition?: PropertyDefinition)`
 
   The property decorator defines metadata for a property on a Model definition.
   The format of property definitions can be found in [Property definitions](https://loopback.io/doc/en/lb2/Model-definition-JSON-file.html#properties)
