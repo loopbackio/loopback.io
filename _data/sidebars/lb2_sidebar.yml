@@ -146,7 +146,11 @@ children:
   output: 'web, pdf'
   children:
 
-  - title: '03-10-2016'
+  - title: '01-31-2018'
+    url: Security-advisory-01-31-2018.html
+    output: 'web, pdf'
+
+  - title: '03-10-2017'
     url: Security-advisory-03-10-2017.html
     output: 'web, pdf'
 
