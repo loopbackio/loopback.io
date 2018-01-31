@@ -31,7 +31,7 @@ Josh West & Zach Metcalf of Super Humane via Email.
 
 ### Versions affected
 
-loopback-datasource-juggler versions below 2.56.0
+loopback-datasource-juggler version 2.55.3 and below
 ** This is a default dependency of `loopback`.**
 
 ### Solution
