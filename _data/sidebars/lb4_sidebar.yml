@@ -24,10 +24,6 @@ children:
     url: Examples-and-tutorials.html
     output: 'web, pdf'
 
-  - title: 'FAQ'
-    url: FAQ.html
-    output: 'web, pdf'
-
 - title: 'Key concepts'
   url: Concepts.html
   output: 'web, pdf'
@@ -157,6 +153,10 @@ children:
     url: Mixin.html
     output: 'web, pdf'
 
+- title: 'FAQ'
+  url: FAQ.html
+  output: 'web, pdf'
+  
 - title: 'Reference'
   url: Reference.html
   output: 'web, pdf'
