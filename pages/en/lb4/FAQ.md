@@ -20,9 +20,9 @@ summary: LoopBack 4 is a completely new framework, sometimes referred to as Loop
 
 See [Upcoming releases](https://github.com/strongloop/loopback-next/wiki/Upcoming-Releases).
 
-### When can we see a demo?
+### Where are the tutorials?
 
-See [loopback-next-example](https://github.com/strongloop/loopback-next-example).
+See [Examples and tutorials](Examples-and-tutorials.html).
 
 ### What features are planned ?
 
@@ -63,4 +63,4 @@ Some of the examples use ES6 syntax. We encourage you to get familiar with ES6 c
 
 ### LoopBack 3 vs LoopBack 4
 
-See [Differences between LoopBack v3 and v4](Migration-guide.html#lb3-vs-lb4).
+See [Differences between LoopBack v3 and v4](LoopBack-3.x.html).
