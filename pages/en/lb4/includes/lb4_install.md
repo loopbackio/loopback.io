@@ -15,7 +15,7 @@ Install it with the following command:
 $ npm i --save @loopback/core
 ```
 
-{% include tip.html content="The `@loopback/core` package is the bare minimum; depending on your project's requirements, you may need to install other LoopBack packages.  See [Getting started](Getting-started.html) for an example.
+{% include tip.html content="The `@loopback/core` package is the bare minimum; depending on your project's requirements, you may need to install other LoopBack packages.  See the [Tutorial](Tutorial.html) for an example.
 " %}
 
 Now `package.json` should include these dependencies (you may see different version numbers):
