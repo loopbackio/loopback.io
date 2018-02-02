@@ -15,17 +15,14 @@ The [Server](https://apidocs.strongloop.com/@loopback%2fcore/#Server) interface 
 
 ## Usage
 
-LoopBack 4 currently offers the [`@loopback/rest`](https://github.com/strongloop/loopback-next/tree/master/packages/rest) package out of the box which provides an HTTP based server implementation handling requests over REST called `RestServer`. In order to use it in your application, all you need to do is register the `RestComponent` to your application class, and it will provide you with an instance of RestServer listening on port 3000. The following shows how to make use of it:
+LoopBack 4 currently offers the [`@loopback/rest`](https://github.com/strongloop/loopback-next/tree/master/packages/rest) package out of the box which provides an HTTP based server implementation handling requests over REST called `RestServer`. In order to use it in your application, all you need to do is have your application class extend `RestApplication`, and it will provide you with an instance of RestServer listening on port 3000. The following shows how to make use of it:
 
 ```ts
-import {Application} from '@loopback/core';
-import {RestComponent, RestServer} from '@loopback/rest';
+import {RestApplication, RestServer} from '@loopback/rest';
 
-export class HelloWorldApp extends Application {
+export class HelloWorldApp extends RestApplication {
   constructor() {
-    super({
-      components: [RestComponent],
-    });
+    super();
   }
 
   async start() {
@@ -51,14 +48,11 @@ export class HelloWorldApp extends Application {
 You can add server instances to your application via the `app.server()` method individually or as an array using `app.servers()` method. Using `app.server()` allows you to uniquely name your binding key for your specific server instance. The following example demonstrates how to use these functions:
 
 ```ts
-import {Application} from '@loopback/core';
-import {RestComponent, RestServer} from '@loopback/rest';
+import {RestApplication, RestServer} from '@loopback/rest';
 
-export class HelloWorldApp extends Application {
+export class HelloWorldApp extends RestApplication {
   constructor() {
-    super({
-      components: [RestComponent],
-    });
+    super();
     // This server instance will be bound under "servers.fooServer".
     this.server(RestServer, 'fooServer');
     // Creates a binding for "servers.MQTTServer" and a binding for

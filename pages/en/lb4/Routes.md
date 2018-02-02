@@ -76,13 +76,10 @@ The example below defines a `Route` that will be matched for `GET /`. When the `
 The route is then attached to a valid server context running underneath the
 application.
 ```ts
-import {Application} from '@loopback/core';
-import {RestServer, Route, RestComponent} from '@loopback/rest';
+import {RestApplication, RestServer, Route} from '@loopback/rest';
 import {OperationObject} from '@loopback/openapi-spec';
 
-const app = new Application({
-  components: [RestComponent]
-});
+const app = new RestApplication();
 const spec: OperationObject = {
   parameters: [{name: 'name', in: 'query', type: 'string'}],
   responses: {
@@ -136,13 +133,10 @@ export class GreetController {
 
 {% include code-caption.html content="index.ts" %}
 ```ts
-import { Application } from '@loopback/core';
-import { RestComponent } from '@loopback/rest';
+import { RestApplication } from '@loopback/rest';
 import { GreetController } from './src/controllers/greet.controller';
 
-const app = new Application({
-  components: [RestComponent]
-});
+const app = new RestApplication();
 
 app.controller(GreetController);
 

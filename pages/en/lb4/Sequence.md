@@ -90,12 +90,9 @@ In order for LoopBack to use your custom sequence, you must register it on any
 applicable `Server` instances before starting your `Application`:
 
 ```js
-import {Application} from '@loopback/core';
-import {RestComponent, RestServer} from '@loopback/rest';
+import {RestApplication, RestServer} from '@loopback/rest';
 
-const app = new Application({
-  components: [RestComponent],
-});
+const app = new RestApplication();
 
 // or
 (async function start() {
