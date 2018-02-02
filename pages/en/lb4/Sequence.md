@@ -141,11 +141,58 @@ class MySequence extends DefaultSequence {
 }
 ```
 
-### Using Sequence actions
+### Customizing Sequence Actions
 
-{% include content/tbd.html %}
+There might be scenarios where the default sequence _ordering_ is not something
+you want to change, but rather the individual actions that the sequence will
+execute.
 
-How to use non-core Sequence Actions (authenticate, authorize, log, debug, etc).
+To do this, you'll need to override one or more of the sequence action bindings
+used by the `RestServer`, under the `RestBindings.SequenceActions` constants.
+
+As an example, we'll implement a custom sequence action to replace the default
+"send" action. This action is responsible for returning the response from a
+controller to the client making the request.
+
+To do this, we'll register a custom send action by binding a
+[Provider](http://apidocs.strongloop.com/@loopback%2fcontext/#Provider) to the
+`RestBindings.SequenceActions.SEND` key.
+
+First, let's create our `CustomSendProvider` class, which will provide the
+send function upon injection.
+
+{% include code-caption.html content="/src/providers/custom-send-provider.ts" %}
+**custom-send-provider.ts**
+```ts
+import { Send } from "@loopback/rest";
+import { Provider, BoundValue } from "@loopback/context";
+import { writeResultToResponse } from "@loopback/rest";
+
+export class CustomSendProvider implements Provider<BoundValue>{
+  value(): Send | Promise<Send> {
+    return writeResultToResponse; // Replace this with your own implementation.
+  }
+}
+```
+
+Next, in our application class, we'll inject this provider on the
+`RestBindings.SequenceActions.SEND` key.
+
+{% include code-caption.html content="/src/application.ts" %}
+```ts
+export class YourApp extends RepositoryMixin(Application) {
+  constructor() {
+    super();
+    // Assume your controller setup and other items are in here as well.
+    this.bind(RestBindings.SequenceActions.SEND).toProvider(CustomSendProvider);
+  }
+```
+
+As a result, whenever the send action of the
+[`DefaultSequence`](http://apidocs.strongloop.com/@loopback%2frest/#DefaultSequence)
+is called, it will make use of your function instead! You can use this approach
+to override any of the actions listed under the `RestBindings.SequenceActions`
+namespace.
 
 ### Query string parameters
 
