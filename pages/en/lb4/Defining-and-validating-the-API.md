@@ -292,15 +292,12 @@ You also need to associate the controllers implementing the spec with the app us
 // application.ts
 // This should be the export from the previous example.
 import spec from "../apidefs/swagger";
-import { Application } from "@loopback/core";
-import { RestComponent, RestServer } from "@loopback/rest";
+import { RestApplication, RestServer } from "@loopback/rest";
 import { ProductController, DealController, CategoryController } from "./controllers";
-export class YourMicroservice extends Application {
+export class YourMicroservice extends RestApplication {
 
   constructor() {
-    super({
-      components: [RestComponent],
-    });
+    super();
     const app = this;
 
     app.controller(ProductController);

@@ -47,8 +47,7 @@ There are several different ways for configuring the values to inject, the simpl
 // TypeScript example
 
 import {BasicStrategy} from 'passport-http';
-import {Application} from '@loopback/core';
-import {RestServer} from '@loopback/rest';
+import {RestApplication, RestServer} from '@loopback/rest';
 // basic scaffolding stuff happens in between...
 
 const server = await app.getServer(RestServer); // The REST server has its own context!
