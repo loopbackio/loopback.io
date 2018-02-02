@@ -10,32 +10,60 @@ summary:
 {% include content/tbd.html %}
 
 ## Overview
-A `schema` represents the definition of a model in LoopBack, with respect to
+A `model` represents the definition of a model in LoopBack, with respect to
 the [datasource juggler](https://github.com/strongloop/loopback-datasource-juggler).
 Currently, we provide the `@loopback/repository` module, which provides special
 decorators for adding metadata to your TypeScript/JavaScript
 classes in order to use them with the legacy implementation of the Juggler.
 
-## Using Legacy Juggler
-Defining a schema for use with the legacy juggler involves decorating your
-classes with the `@model` and `@property` decorators.
+## Definition of a Model
+At its core, a model in LoopBack is a simple JavaScript class.
 
 ```ts
-import { model, property } from '@loopback/repository';
+export class Customer {
+  email: string;
+  isMember: boolean;
+  cart: ShoppingCart;
+}
+```
+
+With extensibility being a core feature, there are packages that add 
+quality of life features like integration with the legacy juggler and 
+JSON Schema generation. These features become available to a LoopBack model 
+through the usage of `@model` and `@property` decorators from the 
+`@loopback/repository` module.
+
+```ts
+import {model, property} from '@loopback/repository';
+
+@model()
+export class Customer {
+  @property() email: string;
+  @property() isMember: boolean;
+  @property() cart: ShoppingCart;
+}
+```
+
+## Using Legacy Juggler
+Defining a model for use with the legacy juggler involves extending your classes
+from `Entity` and decorating your classes with the `@model` and `@property`
+decorators.
+
+```ts
+import {model, property} from '@loopback/repository';
 
 @model()
 export class Product extends Entity {
   @property({
-    type: 'number',
     id: true,
     description: 'The unique identifier for a product',
   })
   id: number;
 
-  @property({type: 'string'})
+  @property()
   name: string;
 
-  @property({type: 'string'})
+  @property()
   slug: string;
 
   constructor(data?: Partial<Product>) {
@@ -63,7 +91,7 @@ class Category extends Entity {
 }
 ```
 
-However, the Model decorator already knows the name of your model class, so you
+However, the model decorator already knows the name of your model class, so you
 can omit it.
 ```ts
 @model()
@@ -72,6 +100,10 @@ class Product extends Entity {
   // other properties...
 }
 ```
+
+Additionally, the model decorator is able to build the properties object through
+the information passed in or inferred by the property decorators, so the
+properties key value pair can be omitted as well by using property decorators.
 
 ### Property Decorator
 The property decorator takes in the same arguments used in LoopBack 3 for

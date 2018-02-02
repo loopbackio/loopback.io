@@ -57,8 +57,8 @@ children:
     url: Sequence.html
     output: 'web, pdf'
 
-  - title: 'Schemas'
-    url: Schemas.html
+  - title: 'Model'
+    url: Model.html
     output: 'web, pdf'
 
   - title: 'Repositories'
