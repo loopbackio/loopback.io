@@ -9,7 +9,7 @@ sidebar: ja_lb3_sidebar
 permalink: /doc/ja/lb3/Synchronization.html
 summary: Synchronization replicates data between client and server using the LoopBack replication API.
 ---
-{% include content/strongloop-labs.html lang=page.lang %}
+{% include content/ja/strongloop-labs.html %}
 
 {% include see-also.html content="
 - [LoopBack in the client](LoopBack-in-the-client.html)

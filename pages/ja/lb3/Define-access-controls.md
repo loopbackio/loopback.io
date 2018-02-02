@@ -10,7 +10,7 @@ permalink: /doc/ja/lb3/Define-access-controls.html
 summary: Access controls determine which users are allowed to read and write model data and execute methods on the models.
 ---
 
-{% include content/gs-prereqs.html two="true" lang=page.lang %}
+{% include content/ja/gs-prereqs.html two="true" %}
 
 {% include note.html content="
 If you followed the previous step in the tutorial, go to [Introducing access controls](#introducing-access-controls).

@@ -10,7 +10,7 @@ permalink: /doc/ja/lb3/Extend-your-API.html
 summary: In LoopBack, a Node function attached to a custom REST endpoint is called a <i>remote method</i>.
 ---
 
-{% include content/gs-prereqs.html lang=page.lang %}
+{% include content/ja/gs-prereqs.html %}
  
 In this section you're going to add a custom remote method to your API.
 

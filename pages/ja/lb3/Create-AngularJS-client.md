@@ -10,7 +10,7 @@ permalink: /doc/ja/lb3/Create-AngularJS-client.html
 summary: The LoopBack AngularJS SDK enables you to easily create a client JavaScript API to consume your LoopBack REST API.
 ---
 
-{% include content/gs-prereqs.html two="true" lang=page.lang %}
+{% include content/ja/gs-prereqs.html two="true" %}
 
 {% include important.html content="To follow this step, you should have a basic understanding of [AngularJS](https://angularjs.org/).
 " %}

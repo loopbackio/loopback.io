@@ -11,7 +11,7 @@ redirect_from: /doc/ja/lb3/Creating-models.html
 summary: Models provide Node and REST APIS for interacting with data sources, performing data validation, and representing relationships among data.
 ---
 
-{% include content/gs-prereqs.html lang=page.lang %}
+{% include content/ja/gs-prereqs.html %}
 
 ## Overview
 

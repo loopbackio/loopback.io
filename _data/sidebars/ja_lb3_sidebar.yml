@@ -262,17 +262,17 @@ children:
     output: 'web, pdf'
     translated: true
 
-  - title: 'Customizing models'
+  - title: 'モデルのカスタマイズ'
     url: Customizing-models.html
     output: 'web, pdf'
     translated: true
 
-  - title: 'Exposing models over REST'
+  - title: 'REST経由でモデルを公開する'
     url: Exposing-models-over-REST.html
     output: 'web, pdf'
     translated: true
 
-  - title: 'Validating model data'
+  - title: 'モデルのデータを検証する'
     url: Validating-model-data.html
     output: 'web, pdf'
     translated: true
@@ -426,7 +426,7 @@ children:
     output: 'web, pdf'
     translated: true
 
-- title: 'Authentication, authorization, and permissions'
+- title: '認証・認可・パーミッション'
   url: Authentication-authorization-and-permissions.html
   output: 'web, pdf'
   translated: true
@@ -472,49 +472,49 @@ children:
     translated: true
     output: 'web, pdf'
 
-- title: 'Working with data'
+- title: 'データの操作'
   url: Working-with-data.html
   output: 'web, pdf'
   translated: true
   children:
 
-  - title: 'Creating, updating, and deleting data'
+  - title: 'データの作成・更新・削除'
     url: Creating-updating-and-deleting-data.html
     output: 'web, pdf'
     translated: true
 
-  - title: 'Querying data'
+  - title: 'データの検索'
     url: Querying-data.html
     output: 'web'
     translated: true
     children:
 
-    - title: 'Fields filter'
+    - title: 'Fields フィルタ'
       url: Fields-filter.html
       translated: true
       output: 'web, pdf'
 
-    - title: 'Include filter'
+    - title: 'Include フィルタ'
       url: Include-filter.html
       translated: true
       output: 'web, pdf'
 
-    - title: 'Limit filter'
+    - title: 'Limit フィルタ'
       url: Limit-filter.html
       translated: true
       output: 'web, pdf'
 
-    - title: 'Order filter'
+    - title: 'Order フィルタ'
       url: Order-filter.html
       translated: true
       output: 'web, pdf'
 
-    - title: 'Skip filter'
+    - title: 'Skip フィルタ'
       url: Skip-filter.html
       translated: true
       output: 'web, pdf'
 
-    - title: 'Where filter'
+    - title: 'Where フィルタ'
       url: Where-filter.html
       translated: true
       output: 'web, pdf'
@@ -545,39 +545,39 @@ children:
       translated: true
       output: 'web, pdf'
 
-- title: 'Adding application logic'
+- title: 'アプリケーションロジックの追加'
   url: Adding-application-logic.html
   translated: true
   output: 'web, pdf'
   children:
 
-  - title: 'Working with LoopBack objects'
+  - title: 'LoopBackのオブジェクトを扱う'
     url: Working-with-LoopBack-objects.html
     output: 'web, pdf'
     translated: true
 
-  - title: 'Adding logic to models'
+  - title: 'モデルにロジックを追加する'
     url: Adding-logic-to-models.html
     output: 'web'
     translated: true
     children:
 
-    - title: 'Remote methods'
+    - title: 'リモートメソッド'
       url: Remote-methods.html
       translated: true
       output: 'web, pdf'
 
-    - title: 'Remote hooks'
+    - title: 'リモートフック'
       url: Remote-hooks.html
       translated: true
       output: 'web, pdf'
 
-    - title: 'Operation hooks'
+    - title: '操作フック'
       url: Operation-hooks.html
       translated: true
       output: 'web, pdf'
 
-    - title: 'Connector hooks'
+    - title: 'コネクタフック'
       url: Connector-hooks.html
       translated: true
       output: 'web, pdf'
@@ -587,7 +587,7 @@ children:
       translated: true
       output: 'web, pdf'
 
-  - title: 'Defining boot scripts'
+  - title: '起動スクリプトの定義'
     url: Defining-boot-scripts.html
     translated: true
     output: 'web, pdf'
@@ -622,13 +622,13 @@ children:
     translated: true
     output: 'web, pdf'
 
-- title: 'Running and debugging apps'
+- title: 'アプリケーションの実行とデバッグ'
   url: Running-and-debugging-apps.html
   output: 'web, pdf'
   translated: true
   children:
 
-    - title: 'Setting debug strings'
+    - title: 'デバッグ文字列の設定'
       url: Setting-debug-strings.html
       output: 'web, pdf'
       translated: true

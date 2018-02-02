@@ -10,7 +10,7 @@ permalink: /doc/ja/lb3/Add-a-static-web-page.html
 summary: LoopBack leverages Express middleware to make it easy to serve up static content such as web pages.
 ---
 
-{% include content/gs-prereqs.html lang=page.lang %}
+{% include content/ja/gs-prereqs.html %}
 
 {% include note.html content="
 If you followed the previous steps in the tutorial, skip down to [Introduction to middleware](#introduction-to-middleware).

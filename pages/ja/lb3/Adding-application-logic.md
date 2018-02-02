@@ -1,5 +1,5 @@
 ---
-title: "Adding application logic"
+title: "アプリケーションロジックの追加"
 lang: ja
 layout: page
 keywords: LoopBack
@@ -9,9 +9,9 @@ permalink: /doc/ja/lb3/Adding-application-logic.html
 summary:
 ---
 
-When building an application, you'll generally need to implement custom logic to process data and perform other operations before responding to client requests.
-In LoopBack, there are three ways to do this:
+アプリケーションを構築するとき、一般的に、データを処理したり、クライアントからの要求に応じてその他の処理を行うように、独自のロジックを実装する必要があります。
+LoopBackでは、３通りの方法があります。
 
-* **[Adding logic to models](Adding-logic-to-models.html)** - adding [remote methods](Remote-methods.html), [remote hooks](Remote-hooks.html) and [operation hooks](Operation-hooks.html).
-* **[Defining boot scripts](Defining-boot-scripts.html)** - writing scripts (in the `/server/boot` directory) that run when the application starts.
-* **[Defining middleware](Defining-middleware.html)** - adding custom [middleware](http://expressjs.com/api.html#middleware) to the application .
+* **[モデルにロジックを追加する](Adding-logic-to-models.html)** - [リモートメソッド](Remote-methods.html)・[リモートフック](Remote-hooks.html)・ [操作フック](Operation-hooks.html)を追加します。
+* **[起動スクリプトを定義する](Defining-boot-scripts.html)** - アプリケーション起動時に実行されるスクリプトを(`/server/boot`ディレクトリ内に)作成します。
+* **[ミドルウェアを定義する](Defining-middleware.html)** - 独自の [ミドルウェア](http://expressjs.com/api.html#middleware) を追加します。

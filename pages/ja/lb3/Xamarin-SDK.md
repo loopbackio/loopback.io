@@ -9,7 +9,7 @@ sidebar: ja_lb3_sidebar
 permalink: /doc/ja/lb3/Xamarin-SDK.html
 summary:
 ---
-{% include content/strongloop-labs.html lang=page.lang %}
+{% include content/ja/strongloop-labs.html %}
 
 {% include toc.html %}
 

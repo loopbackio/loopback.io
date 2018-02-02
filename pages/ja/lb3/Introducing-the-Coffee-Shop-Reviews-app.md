@@ -10,7 +10,7 @@ permalink: /doc/ja/lb3/Introducing-the-Coffee-Shop-Reviews-app.html
 summary: Coffee Shop Reviews is a complete small application that illustrates many of LoopBack's basic features and how they work together.
 ---
 
-{% include content/gs-prereqs.html two="true" lang=page.lang %}
+{% include content/ja/gs-prereqs.html two="true" %}
 
 ## Overview of the application
 

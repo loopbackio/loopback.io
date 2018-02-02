@@ -9,6 +9,9 @@ permalink: /doc/ja/lb3/index.html
 summary: LoopBack 3.0 が現在のリリース版です。
 ---
 
+{% include note.html content="This is a community translation into Japanese. For the latest information, see the [English version](/doc/en/lb3/index.html).
+" %}
+
 {% include important.html content="LoopBack 3.x が現在のリリース版です。
 2016年12月21日に一般向けにリリースされました。[release announcement](https://strongloop.com/strongblog/announcing-loopback-3-0-ga/)を参照ください。
 LoopBack 2.x は現在 [LTSリリース](/doc/en/contrib/Long-term-support.html) です。
@@ -79,7 +82,6 @@ REST・WebSockets・その他の転送方法を通じてバックエンドAPIを
     <tr>
       <td>モデル</td>
       <td>モデルとAPIサーバ</td>
-      <td>Dynamically mock-up models and expose them as APIs without worrying about persisting.</td>
       <td>動的にモデルのモックアップを作り、それらのAPIを永続化のことは心配せずに公開する。</td>
       <td>loopback</td>
     </tr>

@@ -10,7 +10,7 @@ permalink: /doc/ja/lb3/Create-a-simple-API.html
 summary: アプリケーション生成ツールを使い、LoopBackアプリケーション・モデル・データソースを素早く作成する。
 ---
 
-{% include content/gs-prereqs.html lang=page.lang %}
+{% include content/ja/gs-prereqs.html %}
 
 ## 新しいアプリケーションを作成する
 

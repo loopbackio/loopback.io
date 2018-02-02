@@ -10,7 +10,7 @@ permalink: /doc/ja/lb3/Add-a-custom-Express-route.html
 summary: Because LoopBack is built on Express, you can add custom routes just as you do in Express.
 ---
 
-{% include content/gs-prereqs.html lang=page.lang %}
+{% include content/ja/gs-prereqs.html %}
 
 In this part of the tutorial, you're going to add a new custom route.
 

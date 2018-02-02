@@ -32,7 +32,7 @@ To "hide" the model's REST API, simply change `public` to `false`.
 To hide a property of a model exposed over REST, define a hidden property.
 See [Model definition JSON file (Hidden properties)](Model-definition-JSON-file.html#hidden-properties).
 
-{% include content/hidden-vs-protected.html xref='true' %}
+{% include content/ja/hidden-vs-protected.html xref='true' %}
 
 ### Disabling API Explorer
 

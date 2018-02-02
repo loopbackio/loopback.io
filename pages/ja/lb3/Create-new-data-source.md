@@ -10,7 +10,7 @@ permalink: /doc/ja/lb3/Create-new-data-source.html
 summary: You can easily connect a LoopBack application to multiple different data sources.
 ---
 
-{% include content/gs-prereqs.html two="true" lang=page.lang %}
+{% include content/ja/gs-prereqs.html two="true" %}
 
 ## Add a data source
 

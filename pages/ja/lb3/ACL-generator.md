@@ -9,7 +9,7 @@ permalink: /doc/ja/lb3/ACL-generator.html
 summary:
 ---
 
-{% include content/generator-create-app.html lang=page.lang %}
+{% include content/ja/generator-create-app.html %}
 
 ### Synopsis
 
@@ -31,7 +31,7 @@ With legacy StrongLoop tools:
 slc loopback:acl [options]
 ```
 
-{% include content/generator-builtin-model-caveat.html lang=page.lang%}
+{% include content/ja/generator-builtin-model-caveat.html %}
 
 ### Options
 
