@@ -354,7 +354,7 @@ For more information, see the [Dependency Injection](Dependency-Injection.htm) s
 
   Model decorator is a Class decorator.
   In LoopBack 4, we inherit the model definition format from LoopBack 3,
-  you can find it in [Model definition JSON file](/lb3/Model-definition-JSON-file.html).
+  you can find it in [Model definition JSON file](https://loopback.io/doc/en/lb3/Model-definition-JSON-file.html).
   For usage examples, see [Define Models](Repositories.html#define-models)
 
   *Please note we will elaborate more about model and model definition in #Model.htm,*
