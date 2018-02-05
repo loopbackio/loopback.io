@@ -161,26 +161,72 @@ send function upon injection.
 {% include code-caption.html content="/src/providers/custom-send-provider.ts" %}
 **custom-send-provider.ts**
 ```ts
-import { Send } from "@loopback/rest";
-import { Provider, BoundValue } from "@loopback/context";
-import { writeResultToResponse } from "@loopback/rest";
+import {Send, ServerResponse} from "@loopback/rest";
+import {Provider, BoundValue, inject} from "@loopback/context";
+import {writeResultToResponse, RestBindings} from "@loopback/rest";
 
-export class CustomSendProvider implements Provider<BoundValue>{
+// Note: This is an example class; we do not provide this for you.
+import {Formatter} from "../utils";
+
+export class CustomSendProvider implements Provider<BoundValue> {
+  // In this example, the injection key for formatter is simple
+  constructor(
+      @inject('utils.formatter') public formatter: Formatter,
+      @inject(RestBindings.Http.REQUEST) public request: Request,
+    ) {}
+
   value(): Send | Promise<Send> {
-    return writeResultToResponse; // Replace this with your own implementation.
+    // Use the lambda syntax to preserve the "this" scope for future calls!
+    return (response, result) => {
+      this.action(response, result);
+    };
+  }
+  /**
+   * Use the mimeType given in the request's Accept header to convert
+   * the response object!
+   * @param ServerResponse response The response object used to reply to the
+   * client.
+   * @param OperationRetVal result The result of the operation carried out by
+   * the controller's handling function.
+   */
+  action(response: ServerResponse, result: OperationRetVal) {
+    if (result) {
+      // Currently, the headers interface doesn't allow arbitrary string keys!
+      const headers = this.request.headers as any || {};
+      const header = headers.accept || 'application/json';
+      const formattedResult =
+        this.formatter.convertToMimeType(result, header);
+      response.setHeader('Content-Type', header);
+      response.end(formattedResult);
+    } else {
+      response.end();
+    }
   }
 }
 ```
+
+Our custom provider will automatically read the `Accept` header from the request
+context, and then transform the result object so that it matches the specified
+MIME type.
 
 Next, in our application class, we'll inject this provider on the
 `RestBindings.SequenceActions.SEND` key.
 
 {% include code-caption.html content="/src/application.ts" %}
 ```ts
-export class YourApp extends RepositoryMixin(Application) {
+import {Application} from '@loopback/core';
+import {RestApplication, RestBindings} from '@loopback/rest';
+import {RepositoryMixin} from '@loopback/repository';
+import {CustomSendProvider} from './providers/custom-send-provider';
+import {Formatter} from './utils';
+import {BindingScope} from '@loopback/context';
+
+export class YourApp extends RepositoryMixin(RestApplication) {
   constructor() {
     super();
     // Assume your controller setup and other items are in here as well.
+    this.bind('utils.formatter').toClass(Formatter)
+      .inScope(BindingScope.SINGLETON);
     this.bind(RestBindings.SequenceActions.SEND).toProvider(CustomSendProvider);
   }
 ```
