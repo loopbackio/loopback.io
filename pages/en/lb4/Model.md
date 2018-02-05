@@ -27,10 +27,10 @@ export class Customer {
 }
 ```
 
-With extensibility being a core feature, there are packages that add 
-quality of life features like integration with the legacy juggler and 
-JSON Schema generation. These features become available to a LoopBack model 
-through the usage of `@model` and `@property` decorators from the 
+Extensibility is a core feature of LoopBack. There are external packages that
+add additional features, for example, integration with the legacy juggler or
+JSON Schema generation. These features become available to a LoopBack model
+through the ~~usage of~~ `@model` and `@property` decorators from the
 `@loopback/repository` module.
 
 ```ts
@@ -45,9 +45,8 @@ export class Customer {
 ```
 
 ## Using Legacy Juggler
-Defining a model for use with the legacy juggler involves extending your classes
-from `Entity` and decorating your classes with the `@model` and `@property`
-decorators.
+To define a model for use with the legacy juggler, extend your classes from
+`Entity` and decorate them with the `@model` and `@property` decorators.
 
 ```ts
 import {model, property} from '@loopback/repository';
@@ -73,9 +72,11 @@ export class Product extends Entity {
 ```
 
 ### Model Decorator
-The model decorator can be used without any additional parameters, or can take
-in a ModelDefinitionSyntax object which follows the general format provided in
-LoopBack 3:
+The model decorator can be used without any additional parameters, or can be
+passed in a
+<!-- should be replaced with a lb4 example when possible -->
+[ModelDefinitionSyntax](https://loopback.io/doc/en/lb3/Model-definition-JSON-file.html)
+object which follows the general format provided in LoopBack 3:
 ```ts
 @model({
   name: "Category",
@@ -138,17 +139,17 @@ class Product extends Entity {
 
 ### Array Property Decorator
 
-Unfortunately, there is a limitation to the metadata that can be automatically
-inferred by LoopBack. In JavaScript, arrays do not possess any information about
-the types of their members. Technically, it is possible to inspect the
-members of an array to determine if they are of a primitive type
-(string, number, array, boolean), object or function, but this would not tell us
-anything about what the value would be if it were an object or function, and
-would require traversal of the array.
+There is a limitation to the metadata that can be automatically inferred by 
+LoopBack, due to the nature of arrays in JavaScript. In JavaScript, arrays do 
+not possess any information about the types of their members. By traversing an 
+array, you can inspect the members of an array to determine if they are of a 
+primitive type (string, number, array, boolean), object or function, but this 
+would not tell us anything about what the value would be if it were an object or
+function.
 
-For consistency, we have chosen to require use of the `@property.array`
-decorator, which will add the appropriate metadata for type inference of
-your array properties.
+For consistency, we require the use of the `@property.array` 
+decorator, which adds the appropriate metadata for type inference of your array
+properties.
 
 ```ts
 @model()
@@ -227,13 +228,14 @@ const jsonSchema = getJsonSchema(Product);
 }
 ```
 
-If a custom type is specified for a decorated property in a model definition, then 
-a reference [`$ref`](http://json-schema.org/latest/json-schema-core.html#rfc.section.8)
-field is created for it and a `definitions` sub-schema is created at the top-level
-of the schema and populated with the type definition by recursively calling
-`getJsonSchema` to build its properties. This allows for complex and nested custom
-type definition building. The example above illustrates this point by having the
-custom type `Category` as a property of our `Product` model definition. 
+If a custom type is specified for a decorated property in a model definition, 
+then a reference [`$ref`](http://json-schema.org/latest/json-schema-core.html#rfc.section.8)
+field is created for it and a `definitions` sub-schema is created at the 
+top-level of the schema. The `definitions` sub-schema is populated with the type
+definition by recursively calling `getJsonSchema` to build its properties.
+This allows for complex and nested custom type definition building.
+The example above illustrates this point by having the custom type `Category`
+as a property of our `Product` model definition.
 
 #### Supported JSON keywords
 

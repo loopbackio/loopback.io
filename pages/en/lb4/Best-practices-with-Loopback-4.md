@@ -16,4 +16,4 @@ Our best practice follows an "API first" and test-driven development approach:
 2. [**Testing the API**](./Testing-the-API.html): This section describes the process of writing smoke test for your API and its spec.
 3. [**Defining your testing strategy**](./Defining-your-testing-strategy.html): This section discusses the advantages and the process of building a strong testing suite.
 4. [**Implementing features**](./Implementing-features.html): This section demonstrates how the tests for each feature of your application should be written, and how to write the logic to make these tests pass. In the example, the tests for the controller, model, repository, data source, and sequence are written and then implemented.
-5. [**Preparing the API for consumption**](./Preparing-the-API-for-consumption.html): This section shows how the endpoints can be physically tested via Swagger UI.
+5. [**Preparing the API for consumption**](./Preparing-the-API-for-consumption.html): This section shows how the endpoints can be physically tested using the Swagger UI.
