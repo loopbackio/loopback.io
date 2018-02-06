@@ -164,11 +164,11 @@ The components collection allows bulk binding of component constructors within
 your `Application` instance's context.
 
 For more information on how to make use of components,
-see [Using Components](http://loopback.io/doc/en/lb4/Using-components.html).
+see [Using Components](Using-components.html).
 
 #### Controllers
 Much like the components collection, the controllers collection allows bulk
-binding of [Controllers](http://loopback.io/doc/en/lb4/Controllers.html) to
+binding of [Controllers](Controllers.html) to
 the `Application` context.
 
 #### Servers

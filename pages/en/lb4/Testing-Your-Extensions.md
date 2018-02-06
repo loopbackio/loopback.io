@@ -50,7 +50,7 @@ A unit test tests the smallest unit of code possible, which in this case is a fu
 Unit tests ensure variable and state changes by outside actors don't affect the
 results. [Test doubles](https://en.wikipedia.org/wiki/Test_double) should be
 used to substitute function dependencies. You can learn more about test doubles
-and Unit testing here: [Testing your Application: Unit testing](http://loopback.io/doc/en/lb4/Testing-your-application.html#unit-testing).
+and Unit testing here: [Testing your Application: Unit testing](Testing-your-application.html#unit-testing).
 
 #### Controllers
 
@@ -92,7 +92,7 @@ describe('PingController() unit', () => {
 });
 ```
 
-You can find an advanced example on testing controllers in [Unit test your Controllers](http://loopback.io/doc/en/lb4/Testing-your-application.html#unit-test-your-controllers).
+You can find an advanced example on testing controllers in [Unit test your Controllers](Testing-your-application.html#unit-test-your-controllers).
 
 #### Decorators
 
