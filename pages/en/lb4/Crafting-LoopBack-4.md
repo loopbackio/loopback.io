@@ -310,7 +310,7 @@ With the extensible foundation in place, we start to rebuild the LoopBack REST A
 
 - [Sequence and actions](Sequence.html): A sequence of actions to handle HTTP requests/responses.
 - [Controllers](Controllers.html): A class with methods to implement API operations behind REST endpoints.
-- [Schemas](Schemas.html): Definition of data models.
+- [Model](Model.html): Definition of data models.
 - [Repositories](Repositories.html): Interfaces of access patterns for data sources.
 
 The features are provided by the following modules:
