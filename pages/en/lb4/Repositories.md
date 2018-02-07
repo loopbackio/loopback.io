@@ -31,8 +31,10 @@ import { AccountRepository, CategoryRepository } from './repository';
 // Using the Mixin
 class MyApplication extends RepositoryMixin(Application) {}
 
+
+const app = new MyApplication();
 // AccountRepository will be bound to key `repositories.AccountRepository`
-const app = new MyApplication({repositories: [AccountRepository]});
+app.repository(AccountRepository);
 // CategoryRepository will be bound to key `repositories.CategoryRepository`
 app.repository(CategoryRepository);
 ```
