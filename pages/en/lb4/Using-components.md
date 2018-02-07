@@ -19,14 +19,6 @@ const app = new Application();
 app.component(AuthenticationComponent);
 ```
 
-Alternatively, you can register a component through application config object.
-
-```js
-const app = new Application({
-  components: [AuthenticationComponent],
-});
-```
-
 In general, components can contribute the following items:
 
  - [Controllers](Controllers.html)

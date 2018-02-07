@@ -67,9 +67,8 @@ Applications can use `@inject` decorators to access the value of an exported Pro
 If you’re not familiar with decorators in TypeScript, see [Key Concepts: Decorators](Decorators.html)
 
 ```js
-const app = new Application({
-  components: [MyComponent]
-});
+const app = new Application();
+app.component(MyComponent);
 
 class MyController {
   constructor(@inject('my-component.my-value') greeting) {
@@ -273,15 +272,18 @@ export function RepositoryMixin<T extends Class<any>>(superClass: T) {
   return class extends superClass {
     constructor(...args: any[]) {
       super(...args);
-      ... ...
-      // detect components attached to the app
-      if (this.options.components) {
-        for (const component of this.options.components) {
-          this.mountComponentRepository(component);
-        }
-      }
     }
   }
+
+  /**
+     * Add a component to this application. Also mounts
+     * all the components' repositories.
+     */
+  public component(component: Class<any>) {
+    super.component(component);
+    this.mountComponentRepository(component);
+  }
+
   mountComponentRepository(component: Class<any>) {
     const componentKey = `components.${component.name}`;
     const compInstance = this.getSync(componentKey);
@@ -306,7 +308,8 @@ import {Application} from '@loopback/core';
 import {FooComponent} from 'components/src/Foo';
 
 class AppWithRepoMixin extends RepositoryMixin(Application) {};
-let app = new AppWithRepoMixin({components: [FooComponent]});
+let app = new AppWithRepoMixin();
+app.component(FooComponent);
 
 // `app.find` returns all repositories in FooComponent
 app.find('repositories.*');

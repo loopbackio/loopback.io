@@ -38,12 +38,11 @@ export class WidgetApplication extends Application {
   constructor() {
     // This is where you would pass configuration to the base constructor
     // (as well as handle your own!)
-    super({
-      components: [RestComponent],
-    });
+    super();
     const app = this; // For clarity.
     // You can bind to the Application-level context here.
     // app.bind('foo').to(bar);
+    app.component(RestComponent);
     app.controller(SamoflangeController);
     app.controller(DoohickeyController);
   }
@@ -77,8 +76,8 @@ a combination of both.
 
 ### Binding configuration
 Binding is the most commonly-demonstrated form of application configuration
-throughout our examples, and in most cases, is the recommended method for
-setting up your application.
+throughout our examples, and is the recommended method for setting up your
+application.
 
 In addition to the binding functions provided by [Context](Context.html),
 the `Application` class also provides some sugar functions for commonly used
@@ -129,37 +128,34 @@ instance of the `WidgetRepository` class.
 
 The `Application` class constructor also accepts an
 [`ApplicationConfig`](http://apidocs.strongloop.com/@loopback%2fcore/#ApplicationConfig)
-object which contains three collections: `components`, `controllers` and `servers`.
-It will automatically create bindings for each of these collections as a part
-of defining the application instance.
+object which contains component-level configurations such as
+[`RestServerConfig`](http://apidocs.strongloop.com/@loopback%2frest/#RestServerConfig).
+It will automatically create bindings for these configurations and later be injected
+through dependency injections. Visit [Dependency Injection](Dependency-injection.html)
+for more details.
 
 {% include note.html content="
-  More advanced binding configuration such as provider binding, or binding scopes
+  Binding configuration such as component binding, provider binding, or binding scopes
   are not possible with the constructor-based configuration approach.
 " %}
 
 ```ts
-export class MyApplication extends Application {
+export class MyApplication extends RestApplication {
   constructor() {
     super({
-      components: [
-        MagicSuite,
-      ],
-      servers: {
-        'public': RestServer,
-        'private': RestServer,
-      },
-      controllers: [
-        FooController,
-        BarController,
-        BazController,
-      ]
-    });
+      rest: {
+        port: 4000,
+        host: 'my-host'
+      }
+    })
   }
 }
 ```
 
 #### Components
+```ts
+app.components([MyComponent, RestComponent]);
+```
 The components collection allows bulk binding of component constructors within
 your `Application` instance's context.
 
@@ -167,21 +163,24 @@ For more information on how to make use of components,
 see [Using Components](Using-components.html).
 
 #### Controllers
+```ts
+app.controllers([FooController, BarController]);
+```
 Much like the components collection, the controllers collection allows bulk
 binding of [Controllers](Controllers.html) to
 the `Application` context.
 
 #### Servers
-The servers collection is a Map of server constructors, whose keys are used
-as part of the server's binding name.
+```ts
+app.servers([MyServer, GrpcServer]);
+```
+The servers collection is also like the previous collections and allows
+bulk binding of [Servers](Server.html).
 
 ```ts
-const app = new Application({
-  servers: {
-    'public': RestServer,
-    'private': RestServer,
-  },
-});
+const app = new Application();
+app.server(RestServer, 'public'); // {'public': RestServer}
+app.server(RestServer, 'private'); // {'private': RestServer}
 ```
 In the above example, the two server instances would be bound to the Application
 context under the keys `servers.public`, and `servers.private` respectively.
