@@ -140,28 +140,109 @@ class InfoController {
 }
 ```
 
+## Optional dependencies
+
+Sometimes the dependencies are optional. For example, the logging level for a Logger provider can have a default value if it is not set (bound to the context). 
+
+To resolve an optional dependency, set `optional` flag to true:
+
+```ts
+const ctx = new Context();
+await ctx.get('optional-key', {optional: true}); // Return `undefined` instead of throwing an error
+```
+
+Here is another example showing optional dependency injection using properties with default values:
+
+```ts
+// Optional property injection
+export class LoggerProvider implements Provider<Logger> {
+  // Log writer is an optional dependency and it falls back to `logToConsole`
+  @inject('log.writer', {optional: true})
+  private logWriter: LogWriterFn = logToConsole;
+
+  // Log level is an optional dependency with a default value `WARN`
+  @inject('log.level', {optional: true})
+  private logLevel: string = 'WARN';
+}
+```
+
+Optional dependencies can also be used with constructor and method injections. For example:
+
+```ts
+// Optional constructor injection
+export class LoggerProvider implements Provider<Logger> {
+  constructor(
+    // Log writer is an optional dependency and it falls back to `logToConsole`
+    @inject('log.writer', {optional: true})
+    private logWriter: LogWriterFn = logToConsole,
+
+    // Log level is an optional dependency with a default value `WARN`
+    @inject('log.level', {optional: true})
+    private logLevel: string = 'WARN',
+  ) {}
+}
+```
+
+```ts
+// Optional method injection
+export class MyController {
+  // prefix is optional
+  greet(@inject('hello.prefix', {optional: true}) prefix: string = 'Hello') {
+    return `${prefix}, world!`;
+  }
+}
+```
+
 ## Circular dependencies
 
 LoopBack can detect circular dependencies and report the path which leads to the problem.
 For example,
 
 ```ts
+import {Context, inject} from '@loopback/context';
+
+interface Developer {
+  // Each developer belongs to a team
+  team: Team;
+}
+
+interface Team {
+  // Each team works on a project
+  project: Project;
+}
+
+interface Project {
+  // Each project has a lead developer
+  lead: Developer;
+}
+
+class DeveloperImpl implements Developer {
+  constructor(@inject('team') public team: Team) {}
+}
+
+class TeamImpl implements Team {
+  constructor(@inject('project') public project: Project) {}
+}
+
+class ProjectImpl implements Project {
+  constructor(@inject('lead') public lead: Developer) {}
+}
+
 const context = new Context();
-  interface XInterface {}
-  interface YInterface {}
 
-  class XClass implements XInterface {
-    @inject('y') public y: YInterface;
-  }
+context.bind('lead').toClass(DeveloperImpl);
+context.bind('team').toClass(TeamImpl);
+context.bind('project').toClass(ProjectImpl);
 
-  class YClass implements YInterface {
-    @inject('x') public x: XInterface;
-  }
-
-  context.bind('x').toClass(XClass);
-  context.bind('y').toClass(YClass);
-  // An error will be thrown below - Circular dependency detected on path 'x --> y --> x'
-  const x: XInterface = context.getSync('x'); 
+try {
+  // The following call will fail
+  context.getSync('lead');
+} catch (e) {
+  console.error(e.toString());
+  // Error: Circular dependency detected: lead --> @DeveloperImpl.constructor[0]
+  // --> team --> @TeamImpl.constructor[0] --> project --> @ProjectImpl.constructor[0]
+  // --> lead
+}
 ```
 
 ## Additional resources

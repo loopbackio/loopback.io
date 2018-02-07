@@ -26,10 +26,23 @@ builtin/in-memory storage mechanism).
 - You have full access to updated/real-time application+request state at all
 times.
 
-LoopBack's context system allows an unlimited amount of Context instances,
-each of which may have a parent Context.
+## How to create a context?
 
-Typically, however, an application will have three "levels" of context: application-level, server-level and request-level.
+A context can be created with an optional parent and an optional name. If the
+name is not provided, a UUID will be generated as the value. Context instances
+can be chained using the `parent` to form a hierarchy. For example, the code
+below creates a chain of three contexts: `reqCtx -> serverCtx -> rootCtx`.
+
+```ts
+import {Context} from '@loopback/context';
+const rootCtx = new Context('root-ctx'); // No parent
+const serverCtx = new Context(rootCtx, 'server-ctx'); // rootCtx as the parent
+const reqCtx = new Context(serverCtx); // No explicit name, a UUID will be generated
+```
+
+LoopBack's context system allows an unlimited amount of Context instances,
+each of which may have a parent Context. However, an application typically
+has three "levels" of context: application-level, server-level and request-level.
 
 ## Application-level context (global)
 
@@ -42,6 +55,7 @@ Here is a simple example:
 
 ```js
 const Application = require('@loopback/core').Application;
+// Please note `Application` extends from `Context`
 const app = new Application(); // `app` is a "Context"
 class MyController { ... }
 app.controller(MyController);
@@ -145,13 +159,13 @@ section.
 However, when using classes, LoopBack provides a better way to get at stuff in
 the context via the `@inject` decorator:
 
-```js
-const Application = require('@loopback/core');
+```ts
+import {inject} from '@loopback/context';
+import {Application} from '@loopback/core';
 const app = new Application();
 const app.bind('defaultName').to('John');
 
 class HelloController {
-  // consider this.ctx here
   constructor(@inject('defaultName') name) {
     this.name = name;
   }
