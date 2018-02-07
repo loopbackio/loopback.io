@@ -444,7 +444,7 @@ $ npm install --save @loopback/metadata
 IBM/StrongLoop is an active supporter of open source and welcomes contributions
 to our projects as well as those of the Node.js community in general. For more
 information on how to contribute please refer to the
-[Contribution Guide](https://loopback.io/doc/en/contrib/index.html).
+[Contribution Guide](../contrib/index.html).
 
 ## Tests
 

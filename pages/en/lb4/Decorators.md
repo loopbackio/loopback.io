@@ -354,7 +354,7 @@ For more information, see the [Dependency Injection](Dependency-Injection.htm) s
 
   Model decorator is a Class decorator.
   In LoopBack 4, we inherit the model definition format from LoopBack 3,
-  you can find it in [Model definition JSON file](https://loopback.io/doc/en/lb3/Model-definition-JSON-file.html).
+  you can find it in [Model definition JSON file](../lb3/Model-definition-JSON-file.html).
   For usage examples, see [Define Models](Repositories.html#define-models)
 
   *Please note we will elaborate more about model and model definition in #Model.htm,*
@@ -381,7 +381,7 @@ For more information, see the [Dependency Injection](Dependency-Injection.htm) s
   Syntax: `@property(definition?: PropertyDefinition)`
 
   The property decorator defines metadata for a property on a Model definition.
-  The format of property definitions can be found in [Property definitions](https://loopback.io/doc/en/lb2/Model-definition-JSON-file.html#properties)
+  The format of property definitions can be found in [Property definitions](../lb2/Model-definition-JSON-file.html#properties)
 
   For usage examples, see [Define Models](Repositories.html#define-models)
 
