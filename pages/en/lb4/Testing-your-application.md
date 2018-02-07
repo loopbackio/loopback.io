@@ -18,7 +18,7 @@ A thorough automated test suite is important because it:
 
 ### Types of tests
 
-We encourage writing tests from a few perspectives, mainly [black-box testing](https://en.wikipedia.org/wiki/Black-box_testing) (acceptance) and [white-box testing](https://en.wikipedia.org/wiki/White-box_testing) (integration and unit). Tests are usually written using typical patterns such as [`act/arrange/assert`](https://msdn.microsoft.com/en-us/library/hh694602.aspx#Anchor_3) or [`given/when/then`](https://martinfowler.com/bliki/GivenWhenThen.html). While both styles work well, just pick one that you're comfortable with and start writing tests!
+We encourage writing tests from a few perspectives, mainly [black-box testing](https://en.wikipedia.org/wiki/Black-box_testing) (acceptance) and [white-box testing](https://en.wikipedia.org/wiki/White-box_testing) (integration and unit). Tests are usually written using typical patterns such as [`arrange/act/assert`](https://msdn.microsoft.com/en-us/library/hh694602.aspx#Anchor_3) or [`given/when/then`](https://martinfowler.com/bliki/GivenWhenThen.html). While both styles work well, just pick one that you're comfortable with and start writing tests!
 
 For an introduction to automated testing, see [Define your testing strategy](Thinking-in-LoopBack.html#define-your-testing-strategy); for a step-by-step tutorial, see [Incrementally implement features](Thinking-in-LoopBack.html#incrementally-implement-features).
 
