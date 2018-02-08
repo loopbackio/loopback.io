@@ -154,7 +154,7 @@ export class MyApplication extends RestApplication {
 
 #### Components
 ```ts
-app.components([MyComponent, RestComponent]);
+app.component([MyComponent, RestComponent]);
 ```
 The components collection allows bulk binding of component constructors within
 your `Application` instance's context.
@@ -164,7 +164,7 @@ see [Using Components](Using-components.html).
 
 #### Controllers
 ```ts
-app.controllers([FooController, BarController]);
+app.controller([FooController, BarController]);
 ```
 Much like the components collection, the controllers collection allows bulk
 binding of [Controllers](Controllers.html) to
@@ -172,7 +172,7 @@ the `Application` context.
 
 #### Servers
 ```ts
-app.servers([MyServer, GrpcServer]);
+app.server([MyServer, GrpcServer]);
 ```
 The servers collection is also like the previous collections and allows
 bulk binding of [Servers](Server.html).
