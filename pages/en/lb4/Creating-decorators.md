@@ -3,7 +3,8 @@ lang: en
 title: 'Creating decorators'
 keywords: LoopBack 4.0, LoopBack 4
 layout: readme
-source: metadata
+source: loopback-next
+file: packages/metadata/README.md
 tags:
 sidebar: lb4_sidebar
 permalink: /doc/en/lb4/Creating-decorators.html
