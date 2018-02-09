@@ -294,6 +294,23 @@ Syntax: `@inject.tag(tag: string | RegExp)`.
   // `store.locations` is now `['San Francisco', 'San Jose']`
 ```
 
+- `@inject.context`: inject the current context
+
+Syntax: `@inject.context()`.
+
+```ts
+  class MyComponent {
+    constructor(@inject.context() public ctx: Context) {}
+  }
+
+  const ctx = new Context();
+  ctx.bind('my-component').toClass(MyComponent);
+  const component: MyComponent = ctx.getSync('my-component');
+  // `component.ctx` should be the same as `ctx`
+```
+
+**NOTE**: It's recommended to use `@inject` with specific keys for dependency injection if possible. Use `@inject.context` only when the code need to access the current context object for advanced use cases.  
+
 For more information, see the [Dependency Injection](Dependency-Injection.htm) section under [LoopBack Core Concepts](Concepts.htm)
 
 ## Authentication Decorator
