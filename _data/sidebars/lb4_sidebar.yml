@@ -32,7 +32,7 @@ children:
   - title: 'Application'
     url: Application.html
     output: 'web, pdf'
-    
+
   - title: 'Server'
     url: Server.html
     output: 'web, pdf'
@@ -93,9 +93,13 @@ children:
   - title: 'Application generator'
     url: Application-generator.html
     output: 'web, pdf'
-    
+
   - title: 'Controller generator'
     url: Controller-generator.html
+    output: 'web, pdf'
+
+  - title: 'Download examples'
+    url: Download-examples.html
     output: 'web, pdf'
 
 - title: 'Best practices with Loopback 4'
@@ -156,7 +160,7 @@ children:
 - title: 'FAQ'
   url: FAQ.html
   output: 'web, pdf'
-  
+
 - title: 'Reference'
   url: Reference.html
   output: 'web, pdf'
