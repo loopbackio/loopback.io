@@ -1,11 +1,11 @@
 {% if include.title != "no" %}
-**Standard options**
+**標準オプション**
 {% endif %}
 `-h, --help`
-: Print the generator's options and usage.
+: ツールのオプションと使い方を表示します。
 
 `--skip-cache`
-: Do not remember prompt answers. Default is false.
+: 質問の回答を記憶しません。既定値は false です。
 
 `--skip-install`
-: Do not automatically install dependencies. Default is false.
+: 依存関係を自動的にインストールしません。既定値は false です。

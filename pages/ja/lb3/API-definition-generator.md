@@ -1,5 +1,5 @@
 ---
-title: "API definition generator"
+title: "API 定義生成ツール"
 lang: ja
 layout: page
 keywords: LoopBack
@@ -11,32 +11,32 @@ summary:
 
 {% include content/ja/generator-create-app.html %}
 
-### Synopsis
+### 概要
 
-Exports a Swagger API definition for a LoopBack application.
+LoopBackアプリケーションのSwagger API定義をエクスポートします。
 
 ```
 lb export-api-def [options]
 ```
 
-With IBM API Connect developer toolkit:
+IBM API Connect 開発者ツールキットの場合：
 
 ```
 apic loopback:export-api-def [options]
 ```
 
-With legacy StrongLoop tools:
+旧StrongLoopツールの場合：
 
 ```
-slc loopback:export-api-def [options]
+slc loopback:export-api-def [options]
 ```
 
-### Options
+### オプション
 
-`-o,   --output`
-: Name and full path to the output file. By default, the generator displays the API definition to the screen (stdout). Use this option to save the definition to a file instead.
+`-o, --output`
+: 出力するファイル名とフルパス。既定では、標準出力（stdout）にAPI定義が表示されます。代わりに定義をファイルに保存するには、このオプションを使用します。
 
 `--json`
-: By default, the generator exports the API definition in YAML format. Use this option to export in JSON format instead; or specify a file with a `.json` format.
+: 既定では、YAML形式でAPI定義をエクスポートします。代わりにJSON形式でエクポートする場合は、このオプションを使用するか、単にファイルの拡張子を `.json` にします。
 
 {% include_relative includes/CLI-std-options.md %}

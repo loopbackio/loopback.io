@@ -12,7 +12,7 @@ url: /doc/ja/lb3/index.html
 translated: true
 children:
 
-- title: インストール
+- title: 'インストール'
   url: Installation.html
   output: 'web, pdf'
   translated: true
@@ -33,13 +33,13 @@ children:
   output: 'web, pdf'
   translated: true
 
-- title: LoopBackの核となる概念
+- title: 'LoopBackの核となる概念'
   url: LoopBack-core-concepts.html
   output: 'web, pdf'
   translated: true
   children:
 
-  - title: Routing
+  - title: ルーティング
     url: Routing.html
     output: 'web, pdf'
     translated: true
@@ -49,7 +49,7 @@ children:
     output: 'web, pdf'
     translated: true
 
-  - title: 'Glossary'
+  - title: '用語集'
     url: Glossary.html
     output: 'web, pdf'
     translated: true
@@ -728,7 +728,7 @@ children:
     output: 'web, pdf'
     translated: true
 
-- title: 'Command-line tools'
+- title: 'コマンドラインツール'
   url: Command-line-tools.html
   output: 'web, pdf'
   translated: true
@@ -739,7 +739,7 @@ children:
     translated: true
     output: 'web, pdf'
 
-  - title: 'API definition generator'
+  - title: 'API 定義生成ツール'
     url: API-definition-generator.html
     translated: true
     output: 'web, pdf'
@@ -804,7 +804,7 @@ children:
     translated: true
     output: 'web, pdf'
 
-  - title: 'Swagger generator'
+  - title: 'Swagger 生成ツール'
     url: Swagger-generator.html
     translated: true
     output: 'web, pdf'

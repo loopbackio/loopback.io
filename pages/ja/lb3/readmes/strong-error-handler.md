@@ -1,26 +1,25 @@
 # strong-error-handler
 
-This package is an error handler for use in both development (debug) and production environments.
+このパッケージは、開発（デバッグ）環境と運用環境の両方で使用するエラーハンドラです。
 
-In production mode, `strong-error-handler` omits details from error responses to prevent leaking sensitive information:
+本番環境で、`strong-error-handler`は、機密情報の漏洩を防ぐために、エラー応答の詳細を省略します。
 
-- For 5xx errors, the output contains only the status code and the status name from the HTTP specification.
-- For 4xx errors, the output contains the full error message (`error.message`) and the contents of the `details`
-  property (`error.details`) that `ValidationError` typically uses to provide machine-readable details
-  about validation problems. It also includes `error.code` to allow a machine-readable error code to be passed
-  through which could be used, for example, for translation.
+- 5xxエラーの場合、出力にはHTTP仕様のステータスコードとステータス名のみが含まれます。
+- 4xxエラーの場合、出力には完全なエラーメッセージ（`error.message`）と、
+  検証の問題に関する、機械が読める詳細を提供するために通常使用される`details` プロパティ（`error.details`）の内容が含まれます。
+  また出力には `error.code`が含まれており、機械が読めるエラーコードを通過させることで、例えば翻訳に利用できます。
 
-In debug mode, `strong-error-handler` returns full error stack traces and internal details of any error objects to the client in the HTTP responses.
+デバッグモードで `strong-error-handler` は、完全なエラースタックトレースと、HTTPレスポンスでクライアントにエラーオブジェクトの内部の詳細を返します。
 
-## Installation
+## インストール
 
 ```bash
 $ npm install --save strong-error-handler
 ```
 
-## Use
+## 使用方法
 
-In an Express-based application:
+Expressベースのアプリケーションでは以下のようにします。
 
 ```js
 var express = require('express');
@@ -38,7 +37,7 @@ app.use(errorHandler({
 app.listen(3000);
 ```
 
-In LoopBack applications, add the following entry to `server/middleware.json`:
+LoopBackアプリケーションでは、`server/middleware.json`に以下のエントリを追加します。
 
 ```json
 {
@@ -53,14 +52,14 @@ In LoopBack applications, add the following entry to `server/middleware.json`:
 }
 ```
 
-In general, `strong-error-handler` must be the last middleware function registered.
+一般に、`strong-error-handler` は一番最後のミドルウェア機能として登録されなければなりません。
 
-The above configuration will log errors to the server console, but not return stack traces in HTTP responses.
-For details on configuration options, see below.
+上記の設定では、サーバーコンソールにエラーが記録されますが、HTTPレスポンスではスタックトレースは返されません。
+設定オプションの詳細については、下記を参照してください。
 
-### Response format and content type
+### レスポンス形式とコンテンツタイプ
 
-The `strong-error-handler` package supports JSON, HTML and XML responses:
+`strong-error-handler` パッケージは JSON・HTML・XMLでのレスポンスをサポートしています。
 
 - When the object is a standard Error object, it returns the string provided by the stack property in HTML/text
   responses.
@@ -87,9 +86,9 @@ The content type of the response depends on the request's `Accepts` header.
 
 ### Customizing log format
 
-**Express** 
+**Express**
 
-To use a different log format, add your own custom error-handling middleware then disable `errorHandler.log`. 
+To use a different log format, add your own custom error-handling middleware then disable `errorHandler.log`.
 For example, in an Express application:
 
 ```js
@@ -163,7 +162,7 @@ NOTE: This is only required for applications scaffolded with old versions of the
 
 To migrate a LoopBack 2.x application to use `strong-error-handler`:
 
-1. In `package.json` dependencies, remove `"errorhandler": "^x.x.x”,`
+1. In `package.json` dependencies, remove `"errorhandler": "^x.x.xâ,`
 1. Install the new error handler by entering the command:
     <pre>npm install --save strong-error-handler</pre>
 1. In `server/config.json`, remove:
@@ -203,7 +202,7 @@ To migrate a LoopBack 2.x application to use `strong-error-handler`:
     }
 </pre>
 
-For more information, see 
+For more information, see
 [Migrating apps to LoopBack 3.0](http://loopback.io/doc/ja/lb3/Migrating-to-3.0.html#update-use-of-rest-error-handler).
 
 ## Example

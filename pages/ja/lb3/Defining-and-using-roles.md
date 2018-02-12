@@ -111,7 +111,7 @@ This function takes two parameters: 
 
 For example, here is the role resolver from [loopback-example-access-control](https://github.com/strongloop/loopback-example-access-control/):
 
-{% include code-caption.html content="/server/boot/script.js" %}
+{% include code-caption.html content="/server/boot/role-resolver.js" %}
 ```javascript
 module.exports = function(app) {
   var Role = app.models.Role;

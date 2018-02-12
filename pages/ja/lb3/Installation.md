@@ -46,7 +46,7 @@ npm install -g loopback-cli
 
 - **Integrated experience across the entire API lifecycle**, including API and micro-service creation in Node.js and Java.
 -  **Self-service access to APIs** with built-in developer portals and social collaboration tools.
--  **Unified management and orchestration of Node.js and Java** for deployment on-premises and in Bluemix.
+-  **Unified management and orchestration of Node.js and Java** for deployment on-premises and in IBM Cloud.
 -  **Built-in security and gateway policies** with extensive security options and governance policies.
 
 For more information, see [IBM API Connect](https://developer.ibm.com/apiconnect/).

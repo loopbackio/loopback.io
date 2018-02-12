@@ -1,5 +1,5 @@
 ---
-title: "Installing the Oracle connector"
+title: "Oracle コネクタのインストール"
 lang: ja
 layout: navgroup
 navgroup: oracle
@@ -8,10 +8,8 @@ keywords: LoopBack
 tags:
 sidebar: ja_lb3_sidebar
 permalink: /doc/ja/lb3/Installing-the-Oracle-connector.html
-summary: The loopback-oracle-installer module takes care of binary dependencies and simplifies the process of installing the Oracle connector.
+summary: loopback-oracle-installer モジュールはバイナリの依存関係を考慮し、Orackeコネクタインストールの手順を単純にします。
 ---
 {% include tip.html content="
-Use the [Oracle installer command](Oracle-installer-command.html), `lb oracle`,
-to easily install and troubleshoot installing `loopback-oracle-installer`
-and the Oracle data source connector.  
+`loopback-oracle-installer` と Oracle データソースコネクタのインストールおよびトラブル解決を簡単にするために、[Oracle インストーラコマンド](Oracle-installer-command.html), `lb oracle`, を使用してください。
 " %}

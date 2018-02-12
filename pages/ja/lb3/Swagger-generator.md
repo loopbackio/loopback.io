@@ -1,5 +1,5 @@
 ---
-title: "Swagger generator"
+title: "Swagger 生成ツール"
 lang: ja
 layout: page
 keywords: LoopBack
@@ -11,52 +11,53 @@ summary:
 
 {% include content/ja/generator-create-app.html %}
 
-### Synopsis
+### 概要
 
 Creates a fully-functional application with an API defined using the [Swagger](http://swagger.io/) 2.0 specification.
-For more information on Swagger, see [Swagger RESTful API Documentation Specification (version 2.0)](https://github.com/swagger-api/swagger-spec/blob/master/versions/2.0.md).
+[Swagger](http://swagger.io/) 2.0 仕様を使って定義されたAPIを備える、完全に機能するアプリケーションを作成する。
+Swaggerについての詳細は [Swagger RESTful API 文書化仕様 (バージョン 2.0)](https://github.com/t-eimizu/OpenAPI-Specification/blob/master/versions/2.0-ja.md) を参照。
 
 ```
 lb swagger [options] [<name>]
 ```
 
-With API Connect developer toolkit:
+API Connect 開発者ツールキットの場合：
 
 ```
 apic loopback:swagger [options]
 ```
 
-With legacy StrongLoop tools:
+旧StrongLoopツールの場合：
 
 ```
 slc loopback:swagger [options] [<url>]
 ```
 
-### Options
+### オプション
 
 {% include_relative includes/CLI-std-options.md title='no' %}
 
-### Arguments
+### 引数
 
-`<url>` - Optional URL of the Swagger specification file to use.  If provided, then the tool will use that as the default in the interactive prompts.
+`<url>` - 使用するSwagger仕様のオプションのURL。与えられた場合、ツールは対話型の質問の既定値として使用します。
 
-### Interactive Prompts
+### 対話型の質問
 
-The tool will prompt you for:
+このツールは以下の質問をします。
 
-* Location of the Swagger JSON specification file.  Enter a URL or relative file path.
-* Models to generate, based on the REST API defined in the Swagger file. 
-  Move the cursor with the arrow keys, and press the space bar to de-select the model next to the cursor.  
-  Then press Return to generate all the selected models.
-* Data source to use.
+* Swagger JSON 仕様ファイルの場所。URLまたは相対パスを入力してください。
+* Swaggerファイルに定義されたREST API にもとづいて生成するモデル。
+  矢印キーでカーソルを動かし、スペースバーを押下して選択してください。
+  最後に Enter を押下すると選択された全てのモデルが生成されます。
+* 使用するデータソース。
 
-### Example
+### 例
 
-For example, if you enter the Swagger simple pet store example URL:
+例えば、Swaggerのシンプルなペット屋のサンプルのURLを入力した場合、
 
 `https://raw.githubusercontent.com/wordnik/swagger-spec/master/examples/v2.0/json/petstore-simple.json`
 
-The tool will display:
+ツールは以下のように表示します。
 
 ```
 [?] Select models to be generated:
@@ -66,10 +67,10 @@ The tool will display:
  ⬢ errorModel
 ```
 
-Move the cursor with the arrow keys, and press the space bar to de-select the model next to the cursor.
-Then press Return to generate all the selected models.
+矢印キーでカーソルを動かし、スペースバーを押下して選択してください。
+最後に Enter を押下すると選択された全てのモデルが生成されます。
 
-The tool will prompt you for the display information on what it's doing; for example:
+以下のように、ツールの作業状態が表示されます。
 
 ```
 [?] Select the data-source to attach models to: db (memory)
@@ -80,7 +81,7 @@ Creating model definition for errorModel...
 ...
 ```
 
-### Output
+### 出力
 
-The tool generates all the files for the application based on the specified Swagger file,
-including all the [Model definition JSON files](Model-definition-JSON-file.html) and associated JavaScript files.
+ツールは、Swagger ファイルの指定に基づいて、[モデル定義JSONファイル](Model-definition-JSON-file.html)や関連する JavaScript のファイルも含め、
+アプリケーションの全てのファイルを生成します。

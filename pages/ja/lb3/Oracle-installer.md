@@ -1,5 +1,5 @@
 ---
-title: "Oracle installer command"
+title: "Oracle インストーラコマンド"
 lang: ja
 layout: page
 tags: [data_sources, tools]
@@ -9,43 +9,39 @@ summary:
 ---
 {% include content/ja/generator-create-app.html %}
 
-Utilities to install and troubleshoot [loopback-connector-oracle](https://github.com/strongloop/loopback-connector-oracle) module.
+[loopback-connector-oracle](https://github.com/strongloop/loopback-connector-oracle) モジュールのインストールやトラブルシューティングを行うユーティリティ。
 
-{% include note.html content="This command requires LoopBack CLI version 2.4.0+. Install the latest version of LoopBack CLI by entering the command `npm i -g loopback-cli`.
+{% include note.html content="このコマンドは、LoopBack CLI 2.4.0以上が必要です。LoopBack CLI の最新版をインストールするには、`npm i -g loopback-cli` を実行してください。
 " %}
 
-### Synopsis
+### 概要
 
 ```
 lb oracle [options]
 ```
 
-### Options
+### オプション
 
 `--connector`     
-: Install loopback-connector-oracle module
+: loopback-connector-oracle モジュールをインストールします。
 
 `--driver`
-: Install oracledb module.
+: oracledb モジュールをインストールします。
 
 `--verbose`
-: Print verbose information
+: 詳細な情報を出力します。
 
 {% include_relative includes/CLI-std-options.md %}
 
-### Interactive Prompts
+### 対話型のプロンプト
 
-The tool determines if the Oracle Instant Client is installed and then checks
-if the `loopback-connector-oracle` module can be loaded.
-The `loopback-connector-oracle` module depends on the Oracle Node.js Driver [oracledb](https://github.com/oracle/node-oracledb),
-which is a binary addon.
-The `oracledb` module requires [Oracle Instant Client](http://www.oracle.com/technetwork/database/features/instant-client/index-097480.html) at
-both build and run time. See [Installation Guide for oracledb](https://github.com/oracle/node-oracledb/blob/master/INSTALL.md)
-for more information.
+このツールは、Oracle インスタントクライアントがインストールされているか、`loopback-connector-oracle` モジュールがロードできるか確認します。
+`loopback-connector-oracle` モジュールは、バイナリ形式のアドオンである Oracke Node.js ドライバ [oracledb](https://github.com/oracle/node-oracledb) に依存しています。
+`oracledb` モジュールはビルドおよび実行の両方に [Oracle Instant Client](http://www.oracle.com/technetwork/database/features/instant-client/index-097480.html) を必要とします。詳しくは [Installation Guide for oracledb](https://github.com/oracle/node-oracledb/blob/master/INSTALL.md) を参照してください。
 
-If `loopback-connector-oracle` is ready to use, the tool will print `Oracle connector is ready` and exit.
-Otherwise, it will prompt you to install:
+`loopback-connector-oracle` が使える場合、このツールは `Oracle connector is ready` と表示して終了します。
+さもなくば、以下のいずれかをインストールするか確認してきます。
 
-- Oracle Instant Client
+- Oracle インスタントクライアント
 - loopback-connector-oracle
-- oracledb module
+- oracledb モジュール

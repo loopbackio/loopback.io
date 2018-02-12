@@ -34,7 +34,7 @@ slc loopback:datasource [options] [<name>]
 ### Options
 
 `--bluemix`
- : Fetch provisioned data source services from Bluemix and present them in the list of choices for
+ : Fetch provisioned data source services from IBM Cloud and present them in the list of choices for
  data source to add. Currently lists only Cloudant, MongoDB, and IBM Object Storage services. You will be prompted to log in if you are not already authenticated.
 
 `-n, --name`
@@ -54,7 +54,7 @@ The tool will prompt you for:
 
 * Name of the new data source.  If you supplied a name on the command-line, just hit Enter to use it.
 * Connector to use for the data source.
-  If you run the generator with the `--bluemix` option, you will be presented with a list of provisioned data services from Bluemix.
+  If you run the generator with the `--bluemix` option, you will be presented with a list of provisioned data services from IBM Cloud.
 
 You must install the [connector](Connecting-models-to-data-sources.html) for the new data source; for example: `npm install --save loopback-connector-mysql`
 
@@ -62,4 +62,4 @@ You must install the [connector](Connecting-models-to-data-sources.html) for the
 
 This adds an entry to [`datasources.json`](datasources.json.html) with the specified settings.
 
-If you selected a Bluemix data source, it will be entered in the `.bluemix/datasources-config.json` file.
+If you selected a IBM Cloud data source, it will be entered in the `.bluemix/datasources-config.json` file.

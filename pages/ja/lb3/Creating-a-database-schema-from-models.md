@@ -218,7 +218,7 @@ To create tables for LoopBack [built-in models](Using-built-in-models.html), fo
     var lbTables = ['User', 'AccessToken', 'ACL', 'RoleMapping', 'Role'];
     ds.automigrate(lbTables, function(er) {
       if (er) throw er;
-      console.log('Loopback tables [' - lbTables - '] created in ', ds.adapter.name);
+      console.log('Loopback tables [' + lbTables + '] created in ', ds.adapter.name);
       ds.disconnect();
     });
     ```

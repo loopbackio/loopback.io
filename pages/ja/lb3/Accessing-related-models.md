@@ -142,12 +142,7 @@ Now, suppose you want to fetch a model owned by your user and also get at its re
 Here is how you do it with [`findById()`](http://apidocs.loopback.io/loopback/#persistedmodel-findbyid) using the Node API:
 
 ```javascript
-Report.findById({
-  id: 1,
-  filter: {
-    include: 'lineitems'
-  }
-});
+Report.findById(1, {include: 'lineitems'});
 ```
 
 Using the REST API:

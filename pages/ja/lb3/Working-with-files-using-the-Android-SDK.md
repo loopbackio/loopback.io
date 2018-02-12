@@ -10,6 +10,10 @@ permalink: /doc/ja/lb3/Working-with-files-using-the-Android-SDK.html
 summary:
 ---
 
+{% include warning.html content="
+As a former StrongLoop Labs project, the Android SDK may lack usability, completeness, documentation, and robustness, and may be outdated. StrongLoop/IBM is no longer maintaining this project actively, however we do provide support for our paying customers through usual IBM support channels.
+" %}
+
 {% include see-also.html content="
 
 * [Android SDK API docs](http://apidocs.loopback.io/loopback-sdk-android/api/index.html)

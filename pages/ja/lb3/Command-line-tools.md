@@ -1,5 +1,5 @@
 ---
-title: "Command-line-tools"
+title: "コマンドラインツール"
 lang: ja
 layout: page
 toc: false
@@ -8,13 +8,14 @@ tags: reference
 sidebar: ja_lb3_sidebar
 permalink: /doc/ja/lb3/Command-line-tools.html
 summary: This article summarizes LoopBack CLI tool commands.
+summary: この項では、LoopBack CLI ツールのコマンドについてまとめています。
 ---
-Use command-line tools (either the LoopBack CLI `lb`, IBM API Connect developer toolkit `apic` or StrongLoop legacy tool `slc`) to create and _scaffold_ applications.  Scaffolding simply means generating the basic code for your application.  You can then extend and modify the code as desired for your specific needs.
+アプリケーションの _土台_ を作るには、コマンドラインツール（LoopBack CLI `lb`、IBM API Connect 開発者ツールキット `apic`、StrongLoop 旧ツール `slc`）を使ってください。土台とは、アプリケーションの基礎的なコードを意味します。そこから、個々の必要性に合わせて、拡張したり変更したりすることができます。
 
-The command-line tools provide an [Application generator](Application-generator.html) to create a new LoopBack application and a number of sub-generators to scaffold an application, as described in the following table.
+コマンドラインツールは、新しい Loopback アプリケーションを作るための [アプリケーション生成ツール](Application-generator.html) や、アプリケーションの土台を作るためのサブ生成ツールを、いくつも提供します。以下の表を参照してください。
 
-The commands are listed below roughly in the order that you would use them.
+コマンドは、概ね皆さんが使うであろう順番に並んでいます。
 
-## Commands
+## コマンド一覧
 
 {% include content/ja/commands.html %}

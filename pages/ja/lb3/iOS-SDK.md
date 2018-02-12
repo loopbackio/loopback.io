@@ -9,7 +9,10 @@ sidebar: ja_lb3_sidebar
 permalink: /doc/ja/lb3/iOS-SDK.html
 summary: The LoopBack iOS SDK provides a native iOS API that enables an iOS app to interact with a LoopBack server application.
 ---
-{% include content/ja/strongloop-labs.html %}
+
+{% include warning.html content="
+As a former StrongLoop Labs project, the iOS SDK may lack usability, completeness, documentation, and robustness, and may be outdated. StrongLoop/IBM is no longer maintaining this project actively, however we do provide support for our paying customers through usual IBM support channels.
+" %}
 
 {% include toc.html %}
 
@@ -40,7 +43,7 @@ The guide app comes ready to compile with XCode, and each tab in the app guides 
 
 From your usual projects directory:
 
-1.  Download the LoopBack guide application to your local machine from [GitHub](https://github.com/strongloop/loopback-ios-getting-started): 
+1.  Download the LoopBack guide application to your local machine from [GitHub](https://github.com/strongloop-community/loopback-ios-getting-started): 
 
     ```shell
 $ git clone git@github.com:strongloop/loopback-ios-getting-started.git
