@@ -124,6 +124,42 @@ In the above example:
 - injection calls for `repositories.widget` will be handled by a singleton
 instance of the `WidgetRepository` class.
 
+#### Components
+```ts
+app.component(MyComponent);
+app.component(RestComponent);
+```
+The `component` function allows binding of component constructors within
+your `Application` instance's context.
+
+For more information on how to make use of components,
+see [Using Components](Using-components.html).
+
+#### Controllers
+```ts
+app.controller(FooController);
+app.controller(BarController);
+```
+Much like the component function, the `controller` function allows
+binding of [Controllers](Controllers.html) to the `Application` context.
+
+#### Servers
+```ts
+app.server(RestServer);
+app.servers([MyServer, GrpcServer]);
+```
+The `server` function is much like the previous functions, but
+with [Servers](server.html) bulk bindings are possible through the function
+`servers`.
+
+```ts
+const app = new Application();
+app.server(RestServer, 'public'); // {'public': RestServer}
+app.server(RestServer, 'private'); // {'private': RestServer}
+```
+In the above example, the two server instances would be bound to the Application
+context under the keys `servers.public`, and `servers.private` respectively.
+
 ### Constructor configuration
 
 The `Application` class constructor also accepts an
@@ -151,40 +187,6 @@ export class MyApplication extends RestApplication {
   }
 }
 ```
-
-#### Components
-```ts
-app.component(MyComponent);
-app.component(RestComponent);
-```
-The components collection allows binding of component constructors within
-your `Application` instance's context.
-
-For more information on how to make use of components,
-see [Using Components](Using-components.html).
-
-#### Controllers
-```ts
-app.controller(FooController);
-app.controller(BarController);
-```
-Much like the components collection, the controllers collection allows binding of [Controllers](Controllers.html) to
-the `Application` context.
-
-#### Servers
-```ts
-app.server([MyServer, GrpcServer]);
-```
-The servers collection is also like the previous collections and allows
-bulk binding of [Servers](Server.html).
-
-```ts
-const app = new Application();
-app.server(RestServer, 'public'); // {'public': RestServer}
-app.server(RestServer, 'private'); // {'private': RestServer}
-```
-In the above example, the two server instances would be bound to the Application
-context under the keys `servers.public`, and `servers.private` respectively.
 
 ## Tips for application setup
 Here are some tips to help avoid common pitfalls and mistakes.
