@@ -18,7 +18,7 @@ You can also use the loopback-component-passport module to integrate login with 
 
 Create a user (register a user) by adding a model instance, in the same way as for any other model; email and password are the only required properties.
 
-{% include code-caption.html content="/boot/server/my-boot-script.js" %}
+{% include code-caption.html content="/server/boot/my-boot-script.js" %}
 ```javascript
 module.exports = function(app) {
   var User = app.models.User;
