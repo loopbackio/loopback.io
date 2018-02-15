@@ -74,7 +74,7 @@ server.api(spec);
 
 The example below defines a `Route` that will be matched for `GET /`. When the `Route` is matched, the `greet` Operation (above) will be called. It accepts an OpenAPI [OperationObject](https://github.com/OAI/OpenAPI-Specification/blob/0e51e2a1b2d668f434e44e5818a0cdad1be090b4/versions/2.0.md#operationObject) which is defined using `spec`.
 The route is then attached to a valid server context running underneath the
-application.
+application. 
 ```ts
 import {RestApplication, RestServer, Route} from '@loopback/rest';
 import {OperationObject} from '@loopback/openapi-spec';
@@ -96,9 +96,8 @@ function greet(name: string) {
 }
 
 (async function start() {
-  const server = await app.getServer(RestServer);
   const route = new Route('get', '/', spec, greet);
-  server.route(route);
+  app.route(route); // attaches route to RestServer
   await app.start();
 })();
 ```

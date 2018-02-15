@@ -289,7 +289,7 @@ _.merge(spec, CategoryAPI);
 export default spec;
 ```
 
-You can then bind the full spec to the application using `server.spec()`. This is done on the server level, because each server instance can expose a different (sub)set of API.
+You can then bind the full spec to the application using `app.api()`. Normally, this is done on the server level because each server instance can expose a different (sub)set of API, but since `RestApplication` uses only one REST server, you can bind the spec at application level.
 
 You also need to associate the controllers implementing the spec with the app using `app.controller(GreetController)`. This is not done on the server level because a controller may be used with multiple server instances, and types!
 
@@ -302,20 +302,18 @@ import { ProductController, DealController, CategoryController } from "./control
 export class YourMicroservice extends RestApplication {
 
   constructor() {
-    super();
+    super({
+      rest: {
+        port: 3001
+      }
+    });
     const app = this;
 
     app.controller(ProductController);
     app.controller(DealController);
     app.controller(CategoryController);
-
-  }
-  async start() {
-    const server = await app.getServer(RestServer);
-    // inject your spec here!
-    server.api(spec);
-    server.bind("rest.port").to(3001);
-    await super.start();
+    //inject your spec
+    app.api(spec);
   }
   // etc...
 }

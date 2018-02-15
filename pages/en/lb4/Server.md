@@ -23,16 +23,18 @@ import {RestApplication, RestServer} from '@loopback/rest';
 export class HelloWorldApp extends RestApplication {
   constructor() {
     super();
+    // give our RestServer instance a sequence handler function which
+    // returns the Hello World string for all requests
+    // with RestApplication, handler function can be registered
+    // at app level
+    app.handler((sequence, request, response) => {
+      sequence.send(response, 'Hello World!');
+    });
   }
 
   async start() {
     // get a singleton HTTP server instance
     const rest = await this.getServer(RestServer);
-    // give our RestServer instance a sequence handler function which
-    // returns the Hello World string for all requests
-    rest.handler((sequence, request, response) => {
-      sequence.send(response, 'Hello World!');
-    });
     // call start on application class, which in turn starts all registered
     // servers
     await super.start();

@@ -38,7 +38,12 @@ export class WidgetApplication extends Application {
   constructor() {
     // This is where you would pass configuration to the base constructor
     // (as well as handle your own!)
-    super();
+    super({
+      rest: {
+        port: 8080
+      }
+    });
+
     const app = this; // For clarity.
     // You can bind to the Application-level context here.
     // app.bind('foo').to(bar);
@@ -51,7 +56,6 @@ export class WidgetApplication extends Application {
     // This is where you would asynchronously retrieve servers, providers and
     // other components to configure them before launch.
     const server = await app.getServer(RestServer);
-    server.bind('rest.port').to(8080);
     server.api(WidgetApi);
     // The superclass start method will call start on all servers that are
     // bound to the application.
