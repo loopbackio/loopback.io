@@ -257,9 +257,9 @@ as shown in the following table.
       <td rowspan="3">
 <pre style="font-size:11px;">{
  provider: 'google',
- 'keyFilename': 'path/to/keyfile.json',
- 'projectId': '...',
- 'nameConflict': 'makeUnique'
+ keyFilename: 'path/to/keyfile.json',
+ projectId: '...',
+ nameConflict: 'makeUnique'
 }</pre>
       </td>
     </tr>
