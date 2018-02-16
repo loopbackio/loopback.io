@@ -74,12 +74,11 @@ server.api(spec);
 
 The example below defines a `Route` that will be matched for `GET /`. When the `Route` is matched, the `greet` Operation (above) will be called. It accepts an OpenAPI [OperationObject](https://github.com/OAI/OpenAPI-Specification/blob/0e51e2a1b2d668f434e44e5818a0cdad1be090b4/versions/2.0.md#operationObject) which is defined using `spec`.
 The route is then attached to a valid server context running underneath the
-application. 
+application.
 ```ts
 import {RestApplication, RestServer, Route} from '@loopback/rest';
 import {OperationObject} from '@loopback/openapi-spec';
 
-const app = new RestApplication();
 const spec: OperationObject = {
   parameters: [{name: 'name', in: 'query', type: 'string'}],
   responses: {
@@ -95,11 +94,11 @@ function greet(name: string) {
   return `hello ${name}`;
 }
 
-(async function start() {
-  const route = new Route('get', '/', spec, greet);
-  app.route(route); // attaches route to RestServer
-  await app.start();
-})();
+const app = new RestApplication();
+const route = new Route('get', '/', spec, greet);
+app.route(route); // attaches route to RestServer
+
+app.start();
 ```
 
 ### Using Route decorators with controller methods
@@ -139,9 +138,7 @@ const app = new RestApplication();
 
 app.controller(GreetController);
 
-(async function start() {
-  await app.start();
-})();
+app.start();
 ```
 
 ## Invoking operations using Routes

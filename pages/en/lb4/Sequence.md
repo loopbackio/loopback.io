@@ -93,11 +93,9 @@ before starting your `Application`:
 import {RestApplication, RestServer} from '@loopback/rest';
 
 const app = new RestApplication();
+app.sequence(MySequencce);
 
-(async function start() {
-  app.sequence(MySequence);
-  await app.start();
-})();
+app.start();
 ```
 
 ## Advanced topics
