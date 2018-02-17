@@ -9,7 +9,7 @@ summary:
 ---
 
 {% include previous.html content="
-This article continues off from [Testing the API](./Testing-the-API.html).
+This article continues off from [Testing the API](./Testing-the-API.html) and [Defining the API using bottom-up approach](./Defining-the-API-using-bottom-up-approach.html).
 " %}
 
 ## Define your testing strategy
