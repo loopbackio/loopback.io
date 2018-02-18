@@ -1062,7 +1062,7 @@ You specify remote method options when you register a remote method, either as a
 you, even with NoSQL datasource connectors like MongoDB. You must run
 [automigrate](Creating-a-database-schema-from-models.html#auto-migrate) or
 [autoupdate](Creating-a-database-schema-from-models.html#auto-update)
-create your indexes!
+to create your indexes!
 " %}
 
 Declare indexes for a model with the `indexes` property, for example:
