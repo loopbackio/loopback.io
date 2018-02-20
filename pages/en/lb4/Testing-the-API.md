@@ -12,6 +12,11 @@ summary:
 This article continues off from [Defining and validating the API](./Defining-and-validating-the-API.html).
 " %}
 
+{% include important.html content="The top-down approach for building LoopBack
+applications is not yet fully supported. Therefore, the steps outlined in this
+page are outdated and may not work out of the box. They will be revisited after
+our MVP release." %}
+
 ## Smoke test API input/output
 
 Once you confirm that the API specification is valid, it's time to verify that the application implements the API as you have specified it.  The input/output testing described below uses [Dredd](https://www.npmjs.com/package/dredd), specifically `hello-world` in this section.  Concrete sample code of `hello-world` can be found in the [hello-world tutorial](https://github.com/strongloop/loopback-next-hello-world) repository.  Although the sample code includes a validated API spec and fully functional `hello-world` controller, let's pretend the controller is completely empty.  Try it yourself by cloning the repository from GitHub.
