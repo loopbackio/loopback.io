@@ -10,7 +10,8 @@ summary:
 {% include important.html content="The top-down approach for building LoopBack
 applications is not yet fully supported. Therefore, the steps outlined in this
 page are outdated and may not work out of the box. They will be revisited after
-our MVP release." %}
+our MVP release.
+"%}
 
 ## Define the API
 
