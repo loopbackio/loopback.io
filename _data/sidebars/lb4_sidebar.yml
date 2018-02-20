@@ -11,10 +11,6 @@ title: LoopBack 4
 url: index.html
 children:
 
-- title: 'Installation'
-  url: Installation.html
-  output: 'web, pdf'
-
 - title: 'Getting started'
   url: Getting-started.html
   output: 'web, pdf'
