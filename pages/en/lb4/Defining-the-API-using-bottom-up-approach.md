@@ -47,7 +47,8 @@ manipulation of models and their properties, they will be the first to be
 defined.
 
 {% include note.html content="
-  `Todo` model from [tutorial](TUTORIAL LINK) is used for demonstration here.
+  `Todo` model from [tutorial](https://github.com/strongloop/loopback-next/blob/master/packages/example-getting-started/docs/4-todo-model.md#srcmodelstodomodelts)
+  is used for demonstration here.
 " %}
 
 First, write a simple TypeScript class describing your model and its
@@ -98,7 +99,8 @@ export class Todo {
 ### Define your routes
 
 {% include note.html content="
-  `TodoController` from [tutorial](TUTORIAL LINK) is used for
+  `TodoController` from [tutorial](https://github.com/strongloop/loopback-next/blob/master/packages/example-getting-started/docs/7-controller.md#srccontrollerstodocontrollerts)
+  is used for
   demonstration here.
 " %}
 
@@ -165,13 +167,12 @@ routing logic for your API when your application is running.
 
 To review your complete API specification, run your application with the
 decorated controllers registered. Once it is running, visit `/swagger.json`
-to access your spec in JSON format or `/swagger.yaml` for YAML.
-endpoint to see your API specification. Alternatively, the specification file
-can also be accessed in code through the `getApiSpec()` function from your
-`RestServer` instance.
+endpoint to access your API specification in JSON format or `/swagger.yaml`
+for YAML. Alternatively, the specification file can also be accessed
+in code through the `getApiSpec()` function from your `RestServer` instance.
 
 For a complete walkthrough of developing an application with the bottom-up
-approach, see our [Todo application](LINK TO TUTORIAL)
+approach, see our [Todo application](https://github.com/strongloop/loopback-next/blob/master/packages/example-getting-started/README.md#loopbackexample-getting-started)
 tutorial.
 
 {% include note.html content="
