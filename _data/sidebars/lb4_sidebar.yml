@@ -41,6 +41,10 @@ children:
     url: Dependency-injection.html
     output: 'web, pdf'
 
+  - title: 'Booting an Application'
+    url: Booting-an-Application.html
+    output: 'web, pdf'
+
   - title: 'Controllers'
     url: Controllers.html
     output: 'web, pdf'
