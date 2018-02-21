@@ -18,6 +18,15 @@ lb4 [app] [options] [<name>]
 
 ### Options
 
+`--applicationName`
+: Application name.
+
+`--description`
+: Description of the application.
+
+`--outDir`
+: Project root directory for the application.
+
 `--tslint`
 : Add TSLint to LoopBack4 application project.
 

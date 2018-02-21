@@ -20,6 +20,13 @@ lb4 controller [options] [<name>]
 
 ### Options
 
+`--controllerType`
+: Type of the controller.
+
+Valid types are `BASIC` and `REST`.  
+`BASIC` corresponds to an empty controller, whereas `REST` corresponds to
+REST controller with CRUD methods.
+
 {% include_relative includes/CLI-std-options.md %}
 
 ### Arguments
@@ -36,8 +43,8 @@ the prompt is skipped and the controller is built with the name from the
 command-line argument.
 - Type of the controller. You can select from the following types:
   * **Empty Controller** - An empty controller definition
-  * **Basic CRUD Controller** - A controller wired up to a model and repository
-  definition, with pre-defined CRUD methods.
+  * **REST Controller with CRUD Methods** - A controller wired up to a model 
+  and repository definition, with pre-defined CRUD methods.
 
 #### Empty Controller
 If you select the Empty Controller, it will generate a nearly-empty template
