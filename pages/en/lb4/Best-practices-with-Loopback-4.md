@@ -8,14 +8,21 @@ permalink: /doc/en/lb4/Best-practices-with-Loopback-4.html
 summary:
 ---
 
+{% include important.html content="
+The top-down approach for building LoopBack
+applications is not yet fully supported. Therefore, some of the sections in this
+page are outdated and may not work out of the box. They will be revisited after
+our MVP release.
+" %}
+
 LoopBack 4 is more than just a framework: It’s an ecosystem that encourages developers to follow best practices through predefined standards. This section will walk through some important guidelines by building an example API for a catalog of products.
 
 Our best practice follows an "API first" and test-driven development approach:
 
 1. **Defining the API**: There are two possible approaches to take in this section
-  - [**Defining the API using bottom-up appraoch**](./Defining-the-API-using-bottom-up-approach.html): This section guides you through setting up a skeleton of your application so that a full API can be automatically generated.
-  - [**Defining the API using top-down approach**](./Defining-the-API-using-top-down-approach.html): This section guides you through constructing your API first before any internal logic is added.
-    - [**Testing the API**](./Testing-the-API.html): This section describes the process of writing smoke test for your API and its spec.
+   - [**Defining the API using bottom-up approach**](./Defining-the-API-using-bottom-up-approach.html): This section guides you through setting up a skeleton of your application so that its full OpenAPI specification can be automatically generated.
+   - [**Defining the API using top-down approach**](./Defining-the-API-using-top-down-approach.html): This section guides you through constructing your API first before any internal logic is added. __*Not fully supported*__
+     - [**Testing the API**](./Testing-the-API.html): This section describes the process of writing smoke test for your API and its spec. __*Not fully supported*__
 2. [**Defining your testing strategy**](./Defining-your-testing-strategy.html): This section discusses the advantages and the process of building a strong testing suite.
 3. [**Implementing features**](./Implementing-features.html): This section demonstrates how the tests for each feature of your application should be written, and how to write the logic to make these tests pass. In the example, the tests for the controller, model, repository, data source, and sequence are written and then implemented.
 4. [**Preparing the API for consumption**](./Preparing-the-API-for-consumption.html): This section shows how the endpoints can be physically tested using the Swagger UI.

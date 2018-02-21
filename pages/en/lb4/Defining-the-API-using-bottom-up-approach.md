@@ -10,16 +10,26 @@ summary:
 
 ## Define the API from bottom to top
 
-### Start with LoopBack artfiacts
+You may want to build your application from the bottom up if you:
 
-Sometimes, it's hard to know what your API is going to look like without
-writing out your application first. It also might be difficult to adjust your
-API as plans change or as features need to be reworked.
+- do not have a complete understanding of what your existing tools can offer.
+- want to capture already existing domain models so that they can be reflected
+as APIs for external consumption.
+- need to grow and change your API from the initial implementation
+- want to set up and run an API from an early stage of the production to
+easily envision the big picture of the end product.
+
+There are various tools available to LoopBack which allows this bottom-up
+approach of building your application to be simple through the usages of
+metadata and decorators.
+
+### Start with LoopBack artfiacts
 
 With TypeScript's [experimental decorator](https://www.typescriptlang.org/docs/handbook/decorators.html)
 feature, APIs can be automatically built and exposed as your application
 continues development. Some key concepts utilize decorators to gather
-'metadata' about your code and then assemble them into a valid OpenAPI spec.
+_metadata_ about your code and then assemble them into a valid OpenAPI
+specification, which provide a description of your API.
 These concepts and their decorators include:
 
 - [Model](Model.html)
@@ -31,16 +41,19 @@ These concepts and their decorators include:
 
 ### Define your models
 
-Your models will be used to provide schemas to validate against the data
-your API will intercept and consequently are likely to be referenced as
-argument types in your controllers, so they should be the first to be defined.
+Your models act as common definitions between data being handled by the API
+layer and the datasource layer. Since your API is going to be built around the
+manipulation of models and their properties, they will be the first to be
+defined.
 
 {% include note.html content="
   `Todo` model from [tutorial](TUTORIAL LINK) is used for demonstration here.
 " %}
 
 First, write a simple TypeScript class describing your model and its
-properties.
+properties:
+
+{% include code-caption.html content="src/models/todo.model.ts" %}
 
 ```ts
 export class Todo {
@@ -51,11 +64,21 @@ export class Todo {
 }
 ```
 
-This model is just a TypeScript class without any decorators in its current
-form, so features such as automatic schema generation are not available to it
-yet.
+To this representation of your model, we can use the `@model` and `@property`
+decorators to create the model's _metadata_; a model definition.
+LoopBack and LoopBack extensions can use this model definition for
+a wide variety of uses, such as:
 
-Now decorate the class with `@model` and `@property`.
+- generating OpenAPI schema for your APIs
+- validating instances of the models during the request/response lifecycle
+- automatically inferring relationships between models during datasource 
+operations
+
+To apply these decorators to your model, you simply prefix the class definition
+with the `@model` decorator, and prefix each property with the
+`@property` decorator:
+
+{% include code-caption.html content="src/models/todo.model.ts" %}
 
 ```ts
 import {model, property} from '@loopback/repository';
@@ -72,10 +95,6 @@ export class Todo {
 }
 ```
 
-Once the model has been decorated with these decorators,
-its metadata is made available to the app and the model is ready to have its
-corresponding OpenAPI schema generated.
-
 ### Define your routes
 
 {% include note.html content="
@@ -84,10 +103,14 @@ corresponding OpenAPI schema generated.
 " %}
 
 Once your models are defined, create a controller to host your routes
-for each categories of your API.
+for each [paths](https://swagger.io/specification/#pathsObject) of your API:
+
+{% include code-caption.html content="src/controllers/todo.controller.ts" %}
 
 ```ts
-class TodoController {
+import {Todo} from '../models/todo.model';
+
+export class TodoController {
   constructor() {}
 
   async createTodo(todo: Todo) {
@@ -103,14 +126,19 @@ class TodoController {
 ```
 
 The controller's routes in their current state has no information on which
-API endpoints they belong to. Add them in by using `@operation` and `@param`
-decorators.
+API endpoints they belong to. Add them in by appending `@operation` to each
+method of your routes and `@param` to its parameters:
+
+{% include code-caption.html content="src/controllers/todo.controller.ts" %}
 
 ```ts
-class TodoController {
+import {Todo} from '../models/todo.model';
+import {post, get, param} from '@loopback/openapi-v2';
+
+export class TodoController {
   constructor() {}
 
-  @post('/todo') // sugar for @operation('post', '/todo');
+  @post('/todo') // same as @operation('post', '/todo');
   async createTodo(@param.body('todo') todo: Todo) {
     // data creating logic goes here
   }
@@ -128,7 +156,7 @@ class TodoController {
 ```
 
 Once your routes have been decorated, your application is ready to serve
-its API; when an instance of `RestServer` is run, an OpenAPI specification
+its API. When an instance of `RestServer` is run, an OpenAPI specification
 representing your application's API is built. The spec is generated
 entirely from the decorated elements' metadata, which in turn provides
 routing logic for your API when your application is running.
@@ -137,6 +165,7 @@ routing logic for your API when your application is running.
 
 To review your complete API specification, run your application with the
 decorated controllers registered. Once it is running, visit `/swagger.json`
+to access your spec in JSON format or `/swagger.yaml` for YAML.
 endpoint to see your API specification. Alternatively, the specification file
 can also be accessed in code through the `getApiSpec()` function from your
 `RestServer` instance.
