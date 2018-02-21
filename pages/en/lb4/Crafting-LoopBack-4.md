@@ -324,27 +324,22 @@ Before we go further, let's try to build a 'hello world' application with LoopBa
 
 ### Basic Hello-World
 
-https://github.com/strongloop/loopback4-example-hello-world
+[@loopback/example-hello-world](https://github.com/strongloop/loopback-next/tree/master/packages/example-hello-world)
 
 ### Intermediate example
 
-https://github.com/strongloop/loopback-next-hello-world
+[@loopback/example-log-getting-started](https://github.com/strongloop/loopback-next/tree/master/packages/example-getting-started)
 
 ## Example for extension developers
 
 ### Learn from existing ones
 
-- [loopback4-example-log-extension](https://github.com/strongloop/loopback4-example-log-extension)
+- [@loopback/example-log-extension](https://github.com/strongloop/loopback-next/tree/master/packages/example-log-extension)
 - [@loopback/authentication](https://github.com/strongloop/loopback-next/tree/master/packages/authentication)
-
-### Create your own from the starter
-
-The [loopback4-extension-starter](https://github.com/strongloop/loopback4-extension-starter) project provides a template to create your own LoopBack 4 extensions as a component. Please follow the instructions to get started.
 
 ## References
 
 - https://strongloop.com/strongblog/announcing-loopback-next/
-- https://github.com/strongloop/loopback-next-hello-world
 - https://www.infoq.com/articles/driving-architectural-simplicity
 - https://strongloop.com/strongblog/creating-a-multi-tenant-connector-microservice-using-loopback/
 - https://strongloop.com/strongblog/loopback-as-an-event-publisher/
