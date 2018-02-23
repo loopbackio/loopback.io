@@ -7,6 +7,8 @@ def gitEnv = [
   'GIT_AUTHOR_EMAIL=slnode@ca.ibm.com',
 ]
 
+env.CHANGE_BRANCH = env.CHANGE_BRANCH ?: env.BRANCH_NAME
+
 node('linux && git') {
   stage('checkout') {
     checkout scm
@@ -32,7 +34,7 @@ node('linux && git') {
         sh 'git commit -m "Update READMEs from other repos"'
       }
       sshagent(credentials: ['loopback-io-deploy']) {
-        sh 'git push origin HEAD:$BRANCH_NAME'
+        sh 'git push origin HEAD:$CHANGE_BRANCH'
       }
     } else {
       echo "No updates to commit"
