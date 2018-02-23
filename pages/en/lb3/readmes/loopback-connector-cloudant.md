@@ -164,7 +164,7 @@ Property&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  | Type | Description
 ----------| -----| --------
 database  | String | Database name
 modelIndex | String | Specify the model name to document mapping, defaults to `loopback__model__name`.
-modelSelector | JSON | Use the Cloudant Query selector syntax to associate models to existing data. NOTE: modelSelector and modelIndex are mutually exclusive; see [Selector syntax](https://docs.cloudant.com/cloudant_query.html#selector-syntax).
+modelSelector | JSON | Use the Cloudant Query selector syntax to associate models to existing data. NOTE: modelSelector and modelIndex are mutually exclusive; see [Selector syntax](https://console.bluemix.net/docs/services/Cloudant/api/cloudant_query.html#selector-syntax).
 
 ### _rev Property
 
