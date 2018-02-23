@@ -1,10 +1,10 @@
 ---
 lang: en
-title: 'Defining the API using top-down approach'
+title: 'Defining the API using API-first approach'
 keywords: LoopBack 4.0, LoopBack 4
 tags:
 sidebar: lb4_sidebar
-permalink: /doc/en/lb4/Defining-the-API-using-top-down-approach.html
+permalink: /doc/en/lb4/Defining-the-API-using-API-first-approach.html
 summary:
 ---
 {% include important.html content="The top-down approach for building LoopBack
@@ -13,7 +13,7 @@ page are outdated and may not work out of the box. They will be revisited after
 our MVP release.
 "%}
 
-## Define the API from top to bottom
+## Define the API from top to bottom (API-first)
 
 ### Start with data
 
@@ -354,7 +354,7 @@ See [Validate your OpenAPI specification](Testing-your-application.html#validate
 
 {% include note.html content="
   If you would like to make tweaks to your API as you develop your application,
-  refer to [Defining the API using bottom-up approach](Defining-the-API-using-bottom-up-approach)
+  refer to [Defining the API using code-first approach](Defining-the-API-using-code-first-approach)
   page for best practices.
 " %}
 

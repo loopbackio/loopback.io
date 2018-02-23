@@ -111,12 +111,12 @@ children:
   output: 'web, pdf'
   children:
 
-  - title: 'Defining the API using bottom-up approach'
-    url: Defining-the-API-using-bottom-up-approach.html
+  - title: 'Defining the API using code-first approach'
+    url: Defining-the-API-using-code-first-approach.html
     output: 'web, pdf'
 
-  - title: 'Defining the API using top-down approach'
-    url: Defining-the-API-using-top-down-approach.html
+  - title: 'Defining the API using API-first approach'
+    url: Defining-the-API-using-API-first-approach.html
     output: 'web, pdf'
     children:
 

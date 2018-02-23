@@ -1,16 +1,16 @@
 ---
 lang: en
-title: 'Defining the API using bottom up approach'
+title: 'Defining the API using code-first approach'
 keywords: LoopBack 4.0, LoopBack 4
 tags:
 sidebar: lb4_sidebar
-permalink: /doc/en/lb4/Defining-the-API-using-bottom-up-approach.html
+permalink: /doc/en/lb4/Defining-the-API-using-code-first-approach.html
 summary:
 ---
 
-## Define the API from bottom to top
+## Define the API from code-first approach
 
-You may want to build your application from the bottom up if you:
+You may want to build your application from the 'bottom up' if you:
 
 - do not have a complete understanding of what your existing tools can offer.
 - want to capture already existing domain models so that they can be reflected
@@ -177,7 +177,7 @@ tutorial.
 
 {% include note.html content="
   If you would like to create your API manually or already have one designed,
-  refer to [Defining the API using top-down approach](Defining-the-API-using-top-down-approach)
+  refer to [Defining the API using API-first approach](Defining-the-API-using-API-first-approach)
   page for best practices.
 " %}
 
