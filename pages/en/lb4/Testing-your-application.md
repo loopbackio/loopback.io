@@ -162,6 +162,7 @@ sufficient.
 
 {% include code-caption.html content="test/helpers/database.helpers.ts" %}
 
+{% include code-caption.html content="test/helpers/database.helpers.ts" %}
 ```ts
 // ...
 export function givenProductData(data?: Partial<Product>) {
@@ -436,7 +437,7 @@ unit tests to verify the implementation of this additional method.
 Remember to use [Test data builders](#use-test-data-builders) whenever you need
 valid data to create a new model instance.
 
-{% include code-caption.html content="test/unit/models/person.model.unit.ts" %}
+{% include code-caption.html content="test/unit/models/person.model.test.ts" %}
 
 ```ts
 import {Person} from '../../../src/models';
