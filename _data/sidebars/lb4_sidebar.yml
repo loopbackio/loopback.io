@@ -94,6 +94,10 @@ children:
     url: Controller-generator.html
     output: 'web, pdf'
 
+  - title: 'Extension generator'
+    url: Extension-generator.html
+    output: 'web, pdf'
+
   - title: 'Download examples'
     url: Download-examples.html
     output: 'web, pdf'

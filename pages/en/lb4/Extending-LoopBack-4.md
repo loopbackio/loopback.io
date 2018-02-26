@@ -149,10 +149,5 @@ An application-level component usually contributes:
 
 ### Learn from existing ones
 
-- [loopback4-example-log-extension](https://github.com/strongloop/loopback4-example-log-extension)
+- [loopback4-example-log-extension](https://github.com/strongloop/loopback-next/tree/master/packages/example-log-extension)
 - [@loopback/authentication](https://github.com/strongloop/loopback-next/tree/master/packages/authentication)
-
-### Create your own from the starter
-
-The [loopback4-extension-starter](https://github.com/strongloop/loopback4-extension-starter) project provides a template to create your own LoopBack 4 extensions as a component. Please follow the instructions to get started. 
-
