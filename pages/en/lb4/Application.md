@@ -32,7 +32,6 @@ tasks as a part of your setup:
 import {Application} from '@loopback/core';
 import {RestComponent, RestServer} from '@loopback/rest';
 import {SamoflangeController, DoohickeyController} from './controllers';
-import {WidgetApi} from './apidef/';
 
 export class WidgetApplication extends Application {
   constructor() {
@@ -50,16 +49,6 @@ export class WidgetApplication extends Application {
     app.component(RestComponent);
     app.controller(SamoflangeController);
     app.controller(DoohickeyController);
-  }
-
-  async start() {
-    // This is where you would asynchronously retrieve servers, providers and
-    // other components to configure them before launch.
-    const server = await app.getServer(RestServer);
-    server.api(WidgetApi);
-    // The superclass start method will call start on all servers that are
-    // bound to the application.
-    return await super.start();
   }
 
   async stop() {
