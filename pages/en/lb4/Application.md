@@ -184,6 +184,15 @@ export class MyApplication extends RestApplication {
 ## Tips for application setup
 Here are some tips to help avoid common pitfalls and mistakes.
 
+### Extend from `RestApplication` when using `RestServer`
+If you want to use `RestServer` from our `@loopback/rest` package, we recommend you extend
+`RestApplication` in your app instead of manually binding `RestServer` or
+`RestComponent`. `RestApplication` already uses `RestComponent` and makes
+useful functions in `RestServer` like `handler()` available at the app level.
+This means you can call these `RestServer` functions to do all of your
+server-level setups in the app constructor without having to explicitly retrieve
+an instance of your server.
+
 ### Use unique bindings
 Use binding names that are prefixed with a unique string that does not overlap
 with loopback's bindings. As an example, if your application is built for

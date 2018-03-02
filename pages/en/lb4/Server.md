@@ -50,9 +50,10 @@ export class HelloWorldApp extends RestApplication {
 You can add server instances to your application via the `app.server()` method individually or as an array using `app.servers()` method. Using `app.server()` allows you to uniquely name your binding key for your specific server instance. The following example demonstrates how to use these functions:
 
 ```ts
-import {RestApplication, RestServer} from '@loopback/rest';
+import {Application} from '@loopback/core';
+import {RestServer} from '@loopback/rest';
 
-export class HelloWorldApp extends RestApplication {
+export class HelloWorldApp extends Application {
   constructor() {
     super();
     // This server instance will be bound under "servers.fooServer".
