@@ -21,7 +21,7 @@ Our best practice follows an "API first" and test-driven development approach:
 
 1. **Defining the API**: There are two possible approaches to take in this section
    - [**Defining the API using code-first approach**](./Defining-the-API-using-code-first-approach.html): This section guides you through setting up a skeleton of your application so that its full OpenAPI specification can be automatically generated.
-   - [**Defining the app using API-first approach**](./Defining-the-app-using-API-first-approach.html): This section guides you through constructing your API first before any internal logic is added. __*Not fully supported*__
+   - [**Defining the API using design-first approach**](./Defining-the-API-using-design-first-approach.html): This section guides you through constructing your API first before any internal logic is added. __*Not fully supported*__
      - [**Testing the API**](./Testing-the-API.html): This section describes the process of writing smoke test for your API and its spec. __*Not fully supported*__
 2. [**Defining your testing strategy**](./Defining-your-testing-strategy.html): This section discusses the advantages and the process of building a strong testing suite.
 3. [**Implementing features**](./Implementing-features.html): This section demonstrates how the tests for each feature of your application should be written, and how to write the logic to make these tests pass. In the example, the tests for the controller, model, repository, data source, and sequence are written and then implemented.

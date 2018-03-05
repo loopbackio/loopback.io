@@ -47,7 +47,7 @@ manipulation of models and their properties, they will be the first to be
 defined.
 
 {% include note.html content="
-  `Todo` model from [tutorial](https://github.com/strongloop/loopback-next/blob/master/packages/example-getting-started/docs/4-todo-model.md#srcmodelstodomodelts)
+  `Todo` model from [tutorial](https://github.com/strongloop/loopback-next/blob/master/packages/example-getting-started/docs/model.md#srcmodelstodomodelts)
   is used for demonstration here.
 " %}
 
@@ -99,7 +99,7 @@ export class Todo {
 ### Define your routes
 
 {% include note.html content="
-  `TodoController` from [tutorial](https://github.com/strongloop/loopback-next/blob/master/packages/example-getting-started/docs/7-controller.md#srccontrollerstodocontrollerts)
+  `TodoController` from [tutorial](https://github.com/strongloop/loopback-next/blob/master/packages/example-getting-started/docs/controller.md#srccontrollerstodocontrollerts-2)
   is used for
   demonstration here.
 " %}
@@ -177,7 +177,7 @@ tutorial.
 
 {% include note.html content="
   If you would like to create your API manually or already have one designed,
-  refer to [Defining the app using API-first approach](Defining-the-app-using-API-first-approach)
+  refer to [Defining the API using design-first approach](Defining-the-API-using-design-first-approach)
   page for best practices.
 " %}
 
