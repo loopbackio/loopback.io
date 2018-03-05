@@ -115,8 +115,8 @@ children:
     url: Defining-the-API-using-code-first-approach.html
     output: 'web, pdf'
 
-  - title: 'Defining the API using API-first approach'
-    url: Defining-the-API-using-API-first-approach.html
+  - title: 'Defining the app using API-first approach'
+    url: Defining-the-app-using-API-first-approach.html
     output: 'web, pdf'
     children:
 

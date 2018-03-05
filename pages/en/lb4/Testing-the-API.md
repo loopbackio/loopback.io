@@ -9,7 +9,7 @@ summary:
 ---
 
 {% include previous.html content="
-This article continues from [Defining the API using API-first approach](./Defining-the-API-using-API-first-approach.html).
+This article continues from [Defining the app using API-first approach](./Defining-the-app-using-API-first-approach.html).
 " %}
 
 {% include important.html content="The top-down approach for building LoopBack

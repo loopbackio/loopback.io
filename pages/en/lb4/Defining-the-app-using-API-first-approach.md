@@ -1,10 +1,10 @@
 ---
 lang: en
-title: 'Defining the API using API-first approach'
+title: 'Defining the app using API-first approach'
 keywords: LoopBack 4.0, LoopBack 4
 tags:
 sidebar: lb4_sidebar
-permalink: /doc/en/lb4/Defining-the-API-using-API-first-approach.html
+permalink: /doc/en/lb4/Defining-the-app-using-API-first-approach.html
 summary:
 ---
 {% include important.html content="The top-down approach for building LoopBack
@@ -13,7 +13,7 @@ page are outdated and may not work out of the box. They will be revisited after
 our MVP release.
 "%}
 
-## Define the API from top to bottom (API-first)
+## Define the app from top to bottom (API-first)
 
 ### Start with data
 
