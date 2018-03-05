@@ -64,7 +64,7 @@ ctx.bind('utilities.PasswordHash').to((password) => { /* ... */ })
 ctx.bind('controllers.UserController').toClass(UserController);
 
 // Locate the an instance of UserController from the context
-const userController: UserController = await ctx.get('controller.UserController');
+const userController= await ctx.get<UserController>('controller.UserController');
 // Run the log()
 const ok = await logger.login('John', 'MyPassWord');
 ```
