@@ -290,7 +290,7 @@ Syntax: `@inject.tag(tag: string | RegExp)`.
     .bind('store.locations.sj')
     .to('San Jose')
     .tag('store:location');
-  const store: Store = ctx.getSync('store');
+  const store = ctx.getSync<Store>('store');
   // `store.locations` is now `['San Francisco', 'San Jose']`
 ```
 
@@ -305,7 +305,7 @@ Syntax: `@inject.context()`.
 
   const ctx = new Context();
   ctx.bind('my-component').toClass(MyComponent);
-  const component: MyComponent = ctx.getSync('my-component');
+  const component = ctx.getSync<MyComponent>('my-component');
   // `component.ctx` should be the same as `ctx`
 ```
 
