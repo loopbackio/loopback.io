@@ -111,12 +111,21 @@ a helper method; for example:
 {% include code-caption.html content="test/helpers/database.helpers.ts" %}
 
 ```ts
-export async function givenEmptyDatabase() {
-  await new ProductRepository(database).deleteAll();
-  await new CategoryRepository(database).deleteAll();
-}
+import {ProductRepository, CategoryRepository} from '../../src/repositories';
+import {testdb} from '../fixtures/datasources/testdb.datasource';
 
+export async function givenEmptyDatabase() {
+  await new ProductRepository(testdb).deleteAll();
+  await new CategoryRepository(testdb).deleteAll();
+}
+```
+
+{% include code-caption.html content="test/integration/controllers/product.controller.test.ts" %}
+
+```ts
 // in your test file
+import {givenEmptyDatabase} from '../../helpers/database.helpers';
+
 describe('ProductController (integration)', () => {
   before(givenEmptyDatabase);
   // etc.
@@ -151,6 +160,7 @@ missing required properties is sufficient.
 {% include code-caption.html content="test/helpers/database.helpers.ts" %}
 
 ```ts
+// ...
 export function givenProductData(data?: Partial<Product>) {
   return Object.assign(
     {
@@ -165,8 +175,9 @@ export function givenProductData(data?: Partial<Product>) {
 }
 
 export async function givenProduct(data?: Partial<Product>) {
-  return await new ProductRepository().create(givenProductData(data));
+  return await new ProductRepository(testdb).create(givenProductData(data));
 }
+// ...
 ```
 
 ### Avoid sharing the same data for multiple tests
@@ -425,7 +436,7 @@ valid data to create a new model instance.
 {% include code-caption.html content="test/unit/models/person.model.test.ts" %}
 
 ```ts
-import {Person} from '../../../src/models/person.model';
+import {Person} from '../../../src/models';
 import {givenPersonData} from '../../helpers/database.helpers';
 import {expect} from '@loopback/testlab';
 
@@ -529,7 +540,7 @@ import {
 } from '../../helpers/database.helpers';
 import {CategoryRepository} from '../../../src/repositories';
 import {expect} from '@loopback/testlab';
-import {database} from '../../../src/datasources/db.datasource';
+import {testdb} from '../../fixtures/datasources/testdb.datasource';
 
 describe('CategoryRepository (integration)', () => {
   beforeEach(givenEmptyDatabase);
@@ -537,7 +548,7 @@ describe('CategoryRepository (integration)', () => {
   describe('findByName(name)', () => {
     it('return the correct category', async () => {
       const stationery = await givenCategory({name: 'Stationery'});
-      const repository = new CategoryRepository(database);
+      const repository = new CategoryRepository(testdb);
 
       const found = await repository.findByName('Stationery');
 
@@ -555,12 +566,14 @@ and queries produce expected results when executed on a real database.
 These tests are similar to repository tests: we are just adding controllers as
 another ingredient.
 
+{% include code-caption.html content= "test/integration/controllers/product.controller.test.ts" %}
+
 ```ts
 import {expect} from '@loopback/testlab';
 import {givenEmptyDatabase, givenProduct} from '../../helpers/database.helpers';
 import {ProductController} from '../../../src/controllers';
 import {ProductRepository} from '../../../src/repositories';
-import {database} from '../../../src/datasources/db.datasource';
+import {testdb} from '../../fixtures/datasources/testdb.datasource';
 
 describe('ProductController (integration)', () => {
   beforeEach(givenEmptyDatabase);
@@ -568,7 +581,7 @@ describe('ProductController (integration)', () => {
   describe('getDetails()', () => {
     it('retrieves details of the given product', async () => {
       const pencil = await givenProduct({name: 'Pencil', slug: 'pencil'});
-      const controller = new ProductController(new ProductRepository(database));
+      const controller = new ProductController(new ProductRepository(testdb));
 
       const details = await controller.getDetails('pencil');
 
@@ -650,7 +663,7 @@ to run a set of smoke tests to verify conformance of your app with the spec.
 
 Automated testing tools usually require little hints in your specification
 to tell them how to create valid requests or what response data to expect.
-Dredd in particular relies on response [examples](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/2.0.md#exampleObject)
+Dredd in particular relies on response [examples](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#exampleObject)
 and request parameter [x-example](http://dredd.org/en/latest/how-to-guides.html#example-values-for-request-parameters)
 fields. Extending your API spec with examples is a good thing on its own, since
 developers consuming your API will find them useful too.
@@ -732,11 +745,11 @@ Here is an example of an acceptance test:
 {% include code-caption.html content= "test/acceptance/product.test.ts" %}
 
 ```ts
-// test/acceptance/product.test.ts
 import {HelloWorldApplication} from '../..';
 import {expect, createClientForHandler, Client} from '@loopback/testlab';
 import {givenEmptyDatabase, givenProduct} from '../helpers/database.helpers';
 import {RestServer, RestBindings} from '@loopback/rest';
+import {testdb} from '../fixtures/datasources/testdb.datasource';
 
 describe('Product (acceptance)', () => {
   let app: HelloWorldApplication;
@@ -771,12 +784,12 @@ describe('Product (acceptance)', () => {
 
   async function givenRunningApp() {
     app = new HelloWorldApplication();
+    app.dataSource(testdb);
     const server = await app.getServer(RestServer);
     server.bind(RestBindings.PORT).to(0);
     await app.boot();
     await app.start();
 
-    const port = await server.get(RestBindings.PORT);
     client = createClientForHandler(server.handleHttp);
   }
 });
