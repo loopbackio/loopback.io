@@ -6,7 +6,7 @@ keywords: LoopBack
 tags: connectors
 sidebar: lb3_sidebar
 permalink: /doc/en/lb3/Memory-connector.html
-summary: The built-in memory connector is persistent data source for development and testing.
+summary: The built-in memory connector is a persistent data source for development and testing.
 ---
 
 ## Overview
