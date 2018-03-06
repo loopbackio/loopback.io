@@ -562,6 +562,8 @@ ingredient.
 
 {% include code-caption.html content="test/integration/controllers/product.controller.integration.ts" %}
 
+{% include code-caption.html content= "test/integration/controllers/product.controller.test.ts" %}
+
 ```ts
 import {expect} from '@loopback/testlab';
 import {givenEmptyDatabase, givenProduct} from '../../helpers/database.helpers';
