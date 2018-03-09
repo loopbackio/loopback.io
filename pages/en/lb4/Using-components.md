@@ -9,7 +9,7 @@ summary:
 ---
 
 One of the many ways LoopBack 4 allows for extensibility is through Components.
-A Component makes it easy for independent developer to contribute additional
+A Component makes it easy for independent developers to contribute additional
 features to LoopBack. Components provide a package that allows you to extends
 your Application.
 
@@ -31,14 +31,17 @@ Components can contribute the following items:
 * [Controllers](Controllers.html)
 * Providers of additional [Context values](Context.html)
 
-Certain Components may require the use of a (Mixin)[Mixin.html] so they may
-contribute additional artifacts. For example,
+LoopBack 4 was built with extensibility in mind and this includes Components,
+which can be allowed to contribute additional artifacts by adding a Mixin
+to your Application class. This doesn't change how a a Component is registered
+(`app.component()`) but it enables the Component to contribute additional artifacts.
+For example:
 
 * `RepositoryMixin` from `@loopback/repository` enables a Component to
   contribute (Repositories)[Repositories.html]
 * `BootMixin` from `@loopback/boot` enables a Component to
   contribute (Booters)[Booting-an-Application.html#booters]
 
-**Note:** Always check the instructions for a component to see if it requires
+**Note:** Always check a components instructions to see if it requires
 the use of a Mixin. Adding a Mixin to your Application class doesn't change how
 a component is added to the Application (using `app.component()`).`
