@@ -9,7 +9,7 @@ summary:
 ---
 
 {% include previous.html content="
-This article continues off from [Defining and validating the API](./Defining-and-validating-the-API.html).
+This article continues from [Defining the API using design-first approach](./Defining-the-API-using-design-first-approach.html).
 " %}
 
 {% include important.html content="The top-down approach for building LoopBack

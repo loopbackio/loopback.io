@@ -111,13 +111,18 @@ children:
   output: 'web, pdf'
   children:
 
-  - title: 'Defining and validating the API'
-    url: Defining-and-validating-the-API.html
+  - title: 'Defining the API using code-first approach'
+    url: Defining-the-API-using-code-first-approach.html
     output: 'web, pdf'
 
-  - title: 'Testing the API'
-    url: Testing-the-API.html
+  - title: 'Defining the API using design-first approach'
+    url: Defining-the-API-using-design-first-approach.html
     output: 'web, pdf'
+    children:
+
+    - title: 'Testing the API'
+      url: Testing-the-API.html
+      output: 'web, pdf'
 
   - title: 'Defining your testing strategy'
     url: Defining-your-testing-strategy.html
