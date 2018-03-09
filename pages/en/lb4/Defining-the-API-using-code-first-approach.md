@@ -12,12 +12,12 @@ summary:
 
 You may want to build your application from the 'bottom up' if you:
 
-- do not have a complete understanding of what your existing tools can offer.
-- want to capture already existing domain models so that they can be reflected
-as APIs for external consumption.
-- need to grow and change your API from the initial implementation
-- want to set up and run an API from an early stage of the production to
-easily envision the big picture of the end product.
+* do not have a complete understanding of what your existing tools can offer.
+* want to capture already existing domain models so that they can be reflected
+  as APIs for external consumption.
+* need to grow and change your API from the initial implementation
+* want to set up and run an API from an early stage of the production to
+  easily envision the big picture of the end product.
 
 There are various tools available to LoopBack which allows this bottom-up
 approach of building your application to be simple through the usages of
@@ -32,12 +32,12 @@ _metadata_ about your code and then assemble them into a valid OpenAPI
 specification, which provide a description of your API.
 These concepts and their decorators include:
 
-- [Model](Model.html)
-  - `@model()`
-  - `@property()`
-- [Routes](Routes.html)
-  - `@operation()`
-  - `@param()`
+* [Model](Model.html)
+  * `@model()`
+  * `@property()`
+* [Routes](Routes.html)
+  * `@operation()`
+  * `@param()`
 
 ### Define your models
 
@@ -47,8 +47,8 @@ manipulation of models and their properties, they will be the first to be
 defined.
 
 {% include note.html content="
-  `Todo` model from [tutorial](https://github.com/strongloop/loopback-next/blob/master/packages/example-getting-started/docs/model.md#srcmodelstodomodelts)
-  is used for demonstration here.
+`Todo` model from [tutorial](https://github.com/strongloop/loopback-next/blob/master/packages/example-getting-started/docs/model.md#srcmodelstodomodelts)
+is used for demonstration here.
 " %}
 
 First, write a simple TypeScript class describing your model and its
@@ -70,10 +70,10 @@ decorators to create the model's _metadata_; a model definition.
 LoopBack and LoopBack extensions can use this model definition for
 a wide variety of uses, such as:
 
-- generating OpenAPI schema for your APIs
-- validating instances of the models during the request/response lifecycle
-- automatically inferring relationships between models during datasource 
-operations
+* generating OpenAPI schema for your APIs
+* validating instances of the models during the request/response lifecycle
+* automatically inferring relationships between models during datasource
+  operations
 
 To apply these decorators to your model, you simply prefix the class definition
 with the `@model` decorator, and prefix each property with the
@@ -88,7 +88,7 @@ import {model, property} from '@loopback/repository';
 export class Todo {
   @property() id?: number;
   @property({
-    required: true
+    required: true,
   })
   title: string;
   @property() desc?: string;
@@ -99,9 +99,9 @@ export class Todo {
 ### Define your routes
 
 {% include note.html content="
-  `TodoController` from [tutorial](https://github.com/strongloop/loopback-next/blob/master/packages/example-getting-started/docs/controller.md#srccontrollerstodocontrollerts-2)
-  is used for
-  demonstration here.
+`TodoController` from [tutorial](https://github.com/strongloop/loopback-next/blob/master/packages/example-getting-started/docs/controller.md#srccontrollerstodocontrollerts-2)
+is used for
+demonstration here.
 " %}
 
 Once your models are defined, create a controller to host your routes
@@ -129,26 +129,26 @@ export class TodoController {
 
 The controller's routes in their current state has no information on which
 API endpoints they belong to. Add them in by appending `@operation` to each
-method of your routes and `@param` to its parameters:
+method of your routes and `@param` or `@requestBody` to its parameters:
 
 {% include code-caption.html content="src/controllers/todo.controller.ts" %}
 
 ```ts
 import {Todo} from '../models/todo.model';
-import {post, get, param} from '@loopback/openapi-v2';
+import {post, get, param, requestBody} from '@loopback/openapi-v3';
 
 export class TodoController {
   constructor() {}
 
   @post('/todo') // same as @operation('post', '/todo');
-  async createTodo(@param.body('todo') todo: Todo) {
+  async createTodo(@requestBody() todo: Todo) {
     // data creating logic goes here
   }
 
   @get('/todo/{id}')
   async findTodoById(
     @param.path.number('id') id: number,
-    @param.query.boolean('items') items?: boolean
+    @param.query.boolean('items') items?: boolean,
   ): Promise<Todo> {
     // data retrieving logic goes here
   }
@@ -166,8 +166,8 @@ routing logic for your API when your application is running.
 ### Reviewing your API specification
 
 To review your complete API specification, run your application with the
-decorated controllers registered. Once it is running, visit `/swagger.json`
-endpoint to access your API specification in JSON format or `/swagger.yaml`
+decorated controllers registered. Once it is running, visit `/openapi.json`
+endpoint to access your API specification in JSON format or `/openapi.yaml`
 for YAML. Alternatively, the specification file can also be accessed
 in code through the `getApiSpec()` function from your `RestServer` instance.
 
@@ -176,9 +176,9 @@ approach, see our [Todo application](https://github.com/strongloop/loopback-next
 tutorial.
 
 {% include note.html content="
-  If you would like to create your API manually or already have one designed,
-  refer to [Defining the API using design-first approach](Defining-the-API-using-design-first-approach)
-  page for best practices.
+If you would like to create your API manually or already have one designed,
+refer to [Defining the API using design-first approach](Defining-the-API-using-design-first-approach)
+page for best practices.
 " %}
 
 {% include next.html content= "
