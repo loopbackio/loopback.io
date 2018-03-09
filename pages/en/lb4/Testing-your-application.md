@@ -1,4 +1,4 @@
----
+Ok will push to your branch shortly.---
 lang: en
 title: 'Testing your application'
 keywords: LoopBack 4.0, LoopBack 4
@@ -16,7 +16,7 @@ A thorough automated test suite is important because it:
 * Prevents regressions when new features are added and bugs are fixed.
 * Helps new and existing developers understand different parts of the codebase
   (knowledge sharing).
-* Speeds up development over the long run (the code writes itself!)
+* Speeds up development over the long run (the code writes itself!).
 
 ### Types of tests
 
@@ -25,11 +25,11 @@ We encourage writing tests from a few perspectives, mainly [black-box testing](h
 (integration and unit). Tests are usually written using typical patterns such as
 [`arrange/act/assert`](https://msdn.microsoft.com/en-us/library/hh694602.aspx#Anchor_3)
 or [`given/when/then`](https://martinfowler.com/bliki/GivenWhenThen.html).
-While both styles work well, just pick one that you're comfortable with and
+Both styles work well, so pick one that you're comfortable with and
 start writing tests!
 
-For an introduction to automated testing, see [Define your testing strategy](Defining-your-testing-strategy.html);
-for a step-by-step tutorial, see [Incrementally implement features](Implementing-features.html).
+For an introduction to automated testing, see [Define your testing strategy](Defining-your-testing-strategy.html).
+For a step-by-step tutorial, see [Incrementally implement features](Implementing-features.html).
 
 {% include important.html content="
 A great test suite requires you to think smaller and favor fast and focused
@@ -43,10 +43,10 @@ This article is a reference guide for common types of tests and test helpers.
 An automated test suite requires a test runner to execute all the tests and
 produce a summary report. We use and recommend [Mocha](https://mochajs.org).
 
-In addition to a test runner, the test suites generally requires:
+In addition to a test runner, the test suites generally require:
 
 * An assertion library (we recommend [Should.js](https://shouldjs.github.io)).
-* A Library for making HTTP calls and verifying their results (we recommend
+* A library for making HTTP calls and verifying their results (we recommend
   [supertest](https://github.com/visionmedia/supertest)).
 * A library for creating test doubles (we recommend [Sinon.JS](http://sinonjs.org/)).
 
@@ -94,11 +94,11 @@ this issue. Many of them unfortunately make the test suite difficult
 to understand, difficult to maintain, and prone to test failures unrelated
 to the changes made.
 
-Based on our experience, we recommend the following approach.
+Our approach to data handling, based on our experience, is described in this section.
 
 ### Clean the database before each test
 
-Always start with a clean database before each test. This may seem
+Start with a clean database before each test. This may seem
 counter-intuitive: why not reset the database after the test has finished?
 When a test fails and the database is cleaned after the test has finished,
 then it's difficult to observe what was stored in the database and why the test
@@ -134,28 +134,23 @@ describe('ProductController (integration)', () => {
 
 ### Use test data builders
 
-To avoid duplicating code for creating model data with all required properties
-filled in, use shared [test data builders](http://www.natpryce.com/articles/000714.html)
-instead. This enables tests to provide a small subset of properties that are
-strictly required by the tested scenario, which is important because
-it makes tests:
+To avoid duplicating code for creating model data that is complete with required properties, use shared [test data builders](http://www.natpryce.com/articles/000714.html). This enables tests to provide the small subset of properties that is strictly required by the tested scenario. Using shared test builders will help your tests to be:
 
 * Easier to understand, since it's immediately clear what model properties are
   relevant to the tests. If the tests set the required properties,
   it is difficult to tell whether the properties are actually
   relevant to the tested scenario.
 
-* Easier to maintain. As your data model evolves, you eventually need to add
-  more required properties. If the tests build model instance data manually,
-  you would have to update all tests to set a new required property.
-  With a shared helper, you update a single location with the new property.
+* Easier to maintain. As your data model evolves, you will need to add
+  more required properties. If the tests build the model instance data manually,
+  all the tests must be manually updated to set a new required property.
+  With a shared test data builder, you update a single location with the new property.
 
 See [@loopback/openapi-spec-builder](https://www.npmjs.com/package/@loopback/openapi-spec-builder)
 for an example of how to apply this design pattern for building OpenAPI Spec
 documents.
 
-In practice, a rich method-based API is overkill and a simple function that adds
-missing required properties is sufficient.
+In practice, a simple function that adds missing required properties is sufficient.
 
 {% include code-caption.html content="test/helpers/database.helpers.ts" %}
 
@@ -182,10 +177,10 @@ export async function givenProduct(data?: Partial<Product>) {
 
 ### Avoid sharing the same data for multiple tests
 
-It's tempting to define a small set of data that's shared by all tests.
+It's tempting to define a small set of data to be shared by all tests.
 For example, in an e-commerce application, you might pre-populate the database
-with few categories, some products, an admin user and a customer.
-Such approach has several downsides:
+with a few categories, some products, an admin user and a customer.
+This approach has several downsides:
 
 * When trying to understand any individual test, it's difficult to tell what
   part of the pre-populated data is essential for the test and what's irrelevant.
@@ -196,20 +191,19 @@ Such approach has several downsides:
 
 * As the application grows and new features are added, it's easier to add more
   properties to existing model instances rather than create new instances using
-  only properties required by the new features. For example, when adding
+  only the properties required by the new features. For example, when adding
   a category image, it's easier to add image to an existing category "Stationery"
   and perhaps keep another category "Groceries" without any image, rather than
-  create two new categories "CategoryWithAnImage" and "CategoryMissingImage".
+  creating two new categories "CategoryWithAnImage" and "CategoryMissingImage".
   This further amplifies the previous problem, because it's not clear that
   "Groceries" is the category that should be used by tests requiring a category
   with no image - the category name does not provide any hints on that.
 
 * As the shared dataset grows (together with the application), the time required
-  to bring the database into initial state grows too. Instead of running a few
-  "DELETE ALL" queries before each test (which is relatively fast), you can end up
-  with running tens to hundreds different commands creating different model
-  instances, triggering slow index rebuilds along the way, and considerably
-  slowing the test suite.
+  to bring the database into its initial state grows too. Instead of running a few
+  "DELETE ALL" queries before each test (which is relatively fast), you may have to run
+  tens or hundreds of different commands used to create different model
+  instances, thus triggering slow index rebuilds along the way and slowing down the test suite considerably.
 
 Use the test data builders described in the previous section to populate your
 database with the data specific to your test only.
@@ -269,17 +263,16 @@ async function givenAdminAndCustomer() {
 
 Unit tests are considered "white-box" tests because they use an "inside-out"
 approach where the tests know about the internals and control all the variables
-of the system being tested. Individual units are tested in isolation,
-their dependencies are replaced with [Test doubles](https://en.wikipedia.org/wiki/Test_double).
+of the system being tested. Individual units are tested in isolation and their dependencies are replaced with [Test doubles](https://en.wikipedia.org/wiki/Test_double).
 
 ### Use test doubles
 
 Test doubles are functions or objects that look and behave like the real
-variants used in production, but are actually simplified versions giving the
+variants used in production, but are actually simplified versions that give the
 test more control of the behavior. For example, reproducing the situation where
 reading from a file failed because of a hard-drive error is pretty much
-impossible, unless we are using a test double that's simulating file-system API
-and giving us control of how what each call returns.
+impossible. However, using a test double to simulate the file-system API
+will provide control over what each call returns.
 
 [Sinon.JS](http://sinonjs.org/) has become the de-facto standard for
 test doubles in Node.js and JavaScript/TypeScript in general.
@@ -307,16 +300,16 @@ There are three kinds of test doubles provided by Sinon.JS:
 {% include note.html content="
 We recommend against using test mocks. With test mocks, the expectations must
 be defined before the tested scenario is executed, which breaks the
-recommended test layout 'arrange-act-assert' (or 'given-when-then') and
+recommended test layout 'arrange-act-assert' (or 'given-when-then') and also
 produces code that's difficult to comprehend.
 " %}
 
 #### Create a stub Repository
 
-When writing an application accessing data in a database, best practice is
+When writing an application that accesses data in a database, the best practice is
 to use [repositories](Repositories.html) to encapsulate all
-data-access/persistence-related code and let other parts of the application
-(typically [controllers](Controllers.html)) to depend on these repositories for
+data-access/persistence-related code. Other parts of the application
+(typically [controllers](Controllers.html)) can then depend on these repositories for
 data access. To test Repository dependents (for example, Controllers) in
 isolation, we need to provide a test double, usually as a test stub.
 
@@ -375,17 +368,17 @@ full example.
 
 {% include content/tbd.html %}
 
-To be done. The initial beta release does not include Services as a first-class
+The initial beta release does not include Services as a first-class
 feature.
 
 ### Unit test your Controllers
 
-Unit tests should apply to the smallest piece of code possible to ensure other
+Unit tests should apply to the smallest piece of code possible to ensure that other
 variables and state changes do not pollute the result. A typical unit test
 creates a controller instance with dependencies replaced by test doubles and
 directly calls the tested method. The example below gives the controller a stub
-implementation of its repository dependency, and then ensure the controller
-called repository's `find()` method with a correct query and returned back the
+implementation of its repository dependency, ensures the controller
+calls the repository's `find()` method with a correct query, and returns back the
 query results. See [Create a stub repository](#create-a-stub-repository)
 for a detailed explanation.
 
@@ -424,7 +417,7 @@ describe('ProductController (unit)', () => {
 In a typical LoopBack application, models and repositories rely on behavior
 provided by the framework (`@loopback/repository` package) and there is no need
 to test LoopBack's built-in functionality. However, any additional
-application-specific API does need new unit tests.
+application-specific APIs do need new unit tests.
 
 For example, if the `Person` Model has properties `firstname`, `middlename` and
 `surname` and provides a function to obtain the full name, then you should write
@@ -471,11 +464,11 @@ describe('Person (unit)', () => {
 });
 ```
 
-Writing a unit test for a custom repository methods is not as straightforward
+Writing a unit test for custom repository methods is not as straightforward
 because `CrudRepository` is based on legacy [loopback-datasource-juggler](https://github.com/strongloop/loopback-datasource-juggler)
 which was not designed with dependency injection in mind. Instead, use
-integration tests to verify the implementation of custom repository methods;
-see [Test your repositories against a real database](#test-your-repositories-against-a-real-database)
+integration tests to verify the implementation of custom repository methods.
+For more information, refer to [Test your repositories against a real database](#test-your-repositories-against-a-real-database)
 in [Integration Testing](#integration-testing).
 
 ### Unit test your Sequence
@@ -483,7 +476,7 @@ in [Integration Testing](#integration-testing).
 While it's possible to test a custom Sequence class in isolation, it's better
 to rely on acceptance-level tests in this exceptional case. The reason is that
 a custom Sequence class typically has many dependencies (which can make test
-setup too long and complex), and at the same time it provides very little
+setup long and complex), and at the same time it provides very little
 functionality on top of the injected sequence actions. Bugs are much more likely
 to be caused by the way the real sequence action implementations interact
 together (which is not covered by unit tests), instead of the Sequence code
@@ -496,7 +489,7 @@ See [Test Sequence customizations](#test-sequence-customizations) in
 
 {% include content/tbd.html %}
 
-To be done. The initial beta release does not include Services as a
+The initial beta release does not include Services as a
 first-class feature.
 
 See the following related GitHub issues:
@@ -516,7 +509,7 @@ external variables/state that are not part of the tested scenario.
 
 There are two common reasons for adding repository tests:
 
-* Your models are using advanced configuration, for example, custom column
+* Your models are using an advanced configuration, for example, custom column
   mappings, and you want to verify this configuration is correctly picked up by
   the framework.
 * Your repositories have additional methods.
@@ -561,9 +554,9 @@ describe('CategoryRepository (integration)', () => {
 ### Test controllers and repositories together
 
 Integration tests running controllers with real repositories are important to
-verify that the controllers use the repository API correctly, and the commands
+verify that the controllers use the repository API correctly, and that the commands
 and queries produce expected results when executed on a real database.
-These tests are similar to repository tests: we are just adding controllers as
+These tests are similar to repository tests with controllers added as
 another ingredient.
 
 {% include code-caption.html content= "test/integration/controllers/product.controller.test.ts" %}
@@ -595,22 +588,19 @@ describe('ProductController (integration)', () => {
 
 {% include content/tbd.html %}
 
-To be done. The initial beta release does not include Services as a first-class
+The initial beta release does not include Services as a first-class
 feature.
 
 ## Acceptance (end-to-end) testing
 
 Automated acceptance (end-to-end) tests are considered "black-box" tests because
 they use an "outside-in" approach that is not concerned about the internals of
-the system, just simply do the same actions (send the same HTTP requests) as the
-clients and consumers of your API will do, and verify the results returned by
-the system under test are matching the expectations.
+the system. Acceptance tests perform the same actions (send the same HTTP requests) as the
+clients and consumers of your API will do, and verify that the results returned by
+the system match the expected results.
 
 Typically, acceptance tests start the application, make HTTP requests to the
-server, and verify the returned response. LoopBack uses [supertest](https://github.com/visionmedia/supertest)
-to make the test code that executes HTTP requests and verifies responses easier
-to write and read. Remember to follow the best practices from [Data handling](#data-handling)
-when setting up your database for tests:
+server, and verify the returned response. LoopBack uses [supertest](https://github.com/visionmedia/supertest) to create test code that simplifies both the execution of HTTP requests and the verification of responses. Remember to follow the best practices from [Data handling](#data-handling) when setting up your database for tests:
 
 * Clean the database before each test
 * Use test data builders
@@ -619,8 +609,7 @@ when setting up your database for tests:
 ### Validate your OpenAPI specification
 
 The OpenAPI specification is a cornerstone of applications that provide
-REST APIs.
-It enables API consumers to leverage a whole ecosystem of related tooling.
+REST APIs. It enables API consumers to leverage a whole ecosystem of related tooling.
 To make the spec useful, you must ensure it's a valid OpenAPI Spec document,
 ideally in an automated way that's an integral part of regular CI builds.
 LoopBack's [testlab](https://www.npmjs.com/package/@loopback/testlab) module
@@ -650,8 +639,7 @@ describe('API specification', () => {
 ### Perform an auto-generated smoke test of your REST API
 
 {% include important.html content="
-The top-down approach for building LoopBack
-applications is not yet fully supported. Therefore, the code outlined in this
+The top-down approach for building LoopBack applications is not yet fully supported. Therefore, the code outlined in this
 section is outdated and may not work out of the box. It will be revisited
 after our MVP release.
 " %}
@@ -659,9 +647,9 @@ after our MVP release.
 The formal validity of your application's spec does not guarantee that your
 implementation is actually matching the specified behavior. To keep your spec
 in sync with your implementation, you should use an automated tool like [Dredd](https://www.npmjs.com/package/dredd)
-to run a set of smoke tests to verify conformance of your app with the spec.
+to run a set of smoke tests to verify your app conforms to the spec.
 
-Automated testing tools usually require little hints in your specification
+Automated testing tools usually require hints in your specification
 to tell them how to create valid requests or what response data to expect.
 Dredd in particular relies on response [examples](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#exampleObject)
 and request parameter [x-example](http://dredd.org/en/latest/how-to-guides.html#example-values-for-request-parameters)
@@ -726,9 +714,9 @@ describe('API (acceptance)', () => {
 });
 ```
 
-The user experience is not as great as we would like it, we are looking into
-better solutions; see [GitHub issue #644](https://github.com/strongloop/loopback-next/issues/644).
-Let us know if you can recommend one!
+The user experience needs improvement and we are looking into
+better solutions. See [GitHub issue #644](https://github.com/strongloop/loopback-next/issues/644).
+Let us know if you have any recommendations!
 
 ### Test your individual REST API endpoints
 
@@ -737,8 +725,8 @@ REST API endpoints. Consider adding more tests if your endpoint depends on
 (custom) sequence actions to modify the behavior when the corresponding
 controller method is invoked via REST, compared to behavior observed when
 the controller method is invoked directly via JavaScript/TypeScript API.
-For example, if your endpoint returns different response to regular users
-and to admin users, then you should have two tests: one test for each user role.
+For example, if your endpoint returns different responses to regular users
+and to admin users, then you should two tests (one test for each user role).
 
 Here is an example of an acceptance test:
 
@@ -797,9 +785,7 @@ describe('Product (acceptance)', () => {
 
 ### Test Sequence customizations
 
-Custom sequence behavior is best tested by observing changes in behavior of
-affected endpoints. For example, if your sequence has an authentication step
-that rejects anonymous requests for certain endpoints, then you can write a test
-making an anonymous request to such an endpoint to verify that it's correctly
+Custom sequence behavior is best tested by observing changes in behavior of the affected endpoints. For example, if your sequence has an authentication step that rejects anonymous requests for certain endpoints, then you can write a test
+making an anonymous request to those endpoints to verify that it's correctly
 rejected. These tests are essentially the same as the tests verifying
 implementation of individual endpoints as described in the previous section.
