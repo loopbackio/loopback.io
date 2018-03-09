@@ -12,11 +12,11 @@ summary:
 
 A thorough automated test suite is important because it:
 
-- Ensures your application works as expected.
-- Prevents regressions when new features are added and bugs are fixed.
-- Helps new and existing developers understand different parts of the codebase
+* Ensures your application works as expected.
+* Prevents regressions when new features are added and bugs are fixed.
+* Helps new and existing developers understand different parts of the codebase
   (knowledge sharing).
-- Speeds up development over the long run (the code writes itself!)
+* Speeds up development over the long run (the code writes itself!)
 
 ### Types of tests
 
@@ -45,10 +45,10 @@ produce a summary report. We use and recommend [Mocha](https://mochajs.org).
 
 In addition to a test runner, the test suites generally requires:
 
-- An assertion library (we recommend [Should.js](https://shouldjs.github.io)).
-- A Library for making HTTP calls and verifying their results (we recommend
+* An assertion library (we recommend [Should.js](https://shouldjs.github.io)).
+* A Library for making HTTP calls and verifying their results (we recommend
   [supertest](https://github.com/visionmedia/supertest)).
-- A library for creating test doubles (we recommend [Sinon.JS](http://sinonjs.org/)).
+* A library for creating test doubles (we recommend [Sinon.JS](http://sinonjs.org/)).
 
 The [@loopback/testlab](https://www.npmjs.com/package/@loopback/testlab) module
 integrates these packages and makes them easy to use together with LoopBack.
@@ -140,12 +140,12 @@ instead. This enables tests to provide a small subset of properties that are
 strictly required by the tested scenario, which is important because
 it makes tests:
 
-- Easier to understand, since it's immediately clear what model properties are
+* Easier to understand, since it's immediately clear what model properties are
   relevant to the tests. If the tests set the required properties,
   it is difficult to tell whether the properties are actually
   relevant to the tested scenario.
 
-- Easier to maintain. As your data model evolves, you eventually need to add
+* Easier to maintain. As your data model evolves, you eventually need to add
   more required properties. If the tests build model instance data manually,
   you would have to update all tests to set a new required property.
   With a shared helper, you update a single location with the new property.
@@ -187,14 +187,14 @@ For example, in an e-commerce application, you might pre-populate the database
 with few categories, some products, an admin user and a customer.
 Such approach has several downsides:
 
-- When trying to understand any individual test, it's difficult to tell what
+* When trying to understand any individual test, it's difficult to tell what
   part of the pre-populated data is essential for the test and what's irrelevant.
   For example, in a test checking the method counting the number of products in a
   category using a pre-populated category "Stationery", is it important that
   "Stationery" contains nested sub-categories or is that fact irrelevant? If it's
   irrelevant, then what are the other tests that depend on it?
 
-- As the application grows and new features are added, it's easier to add more
+* As the application grows and new features are added, it's easier to add more
   properties to existing model instances rather than create new instances using
   only properties required by the new features. For example, when adding
   a category image, it's easier to add image to an existing category "Stationery"
@@ -204,7 +204,7 @@ Such approach has several downsides:
   "Groceries" is the category that should be used by tests requiring a category
   with no image - the category name does not provide any hints on that.
 
-- As the shared dataset grows (together with the application), the time required
+* As the shared dataset grows (together with the application), the time required
   to bring the database into initial state grows too. Instead of running a few
   "DELETE ALL" queries before each test (which is relatively fast), you can end up
   with running tens to hundreds different commands creating different model
@@ -288,18 +288,18 @@ type definitions and integrated with Should.js assertions.
 
 There are three kinds of test doubles provided by Sinon.JS:
 
-- [Test spies](http://sinonjs.org/releases/v4.0.1/spies/) are functions that
+* [Test spies](http://sinonjs.org/releases/v4.0.1/spies/) are functions that
   record arguments, the return value, the value of `this`, and exceptions thrown
   (if any) for all its calls. There are two types of spies: Some are
   anonymous functions, while others wrap methods that already exist in the system
   under test.
 
-- [Test stubs](http://sinonjs.org/releases/v4.0.1/stubs/) are functions (spies)
+* [Test stubs](http://sinonjs.org/releases/v4.0.1/stubs/) are functions (spies)
   with pre-programmed behavior. As spies, stubs can be either anonymous, or wrap
   existing functions. When wrapping an existing function with a stub, the original
   function is not called.
 
-- [Test mocks](http://sinonjs.org/releases/v4.0.1/mocks/)
+* [Test mocks](http://sinonjs.org/releases/v4.0.1/mocks/)
   (and mock expectations) are fake methods (like spies) with pre-programmed
   behavior (like stubs) as well as pre-programmed expectations. A mock will fail
   your test if it is not used as expected.
@@ -501,9 +501,9 @@ first-class feature.
 
 See the following related GitHub issues:
 
-- Define services to represent interactions with REST APIs, SOAP Web Services,
+* Define services to represent interactions with REST APIs, SOAP Web Services,
   gRPC services, and more: [#522](https://github.com/strongloop/loopback-next/issues/522)
-- Guide: Services [#451](https://github.com/strongloop/loopback-next/issues/451)
+* Guide: Services [#451](https://github.com/strongloop/loopback-next/issues/451)
 
 ## Integration testing
 
@@ -516,17 +516,17 @@ external variables/state that are not part of the tested scenario.
 
 There are two common reasons for adding repository tests:
 
-- Your models are using advanced configuration, for example, custom column
+* Your models are using advanced configuration, for example, custom column
   mappings, and you want to verify this configuration is correctly picked up by
   the framework.
-- Your repositories have additional methods.
+* Your repositories have additional methods.
 
 Integration tests are one of the places to put the best practices in
 [Data handling](#data-handling) to work:
 
-- Clean the database before each test
-- Use test data builders
-- Avoid sharing the same data for multiple tests
+* Clean the database before each test
+* Use test data builders
+* Avoid sharing the same data for multiple tests
 
 Here is an example showing how to write an integration test for a custom
 repository method `findByName`:
@@ -612,9 +612,9 @@ to make the test code that executes HTTP requests and verifies responses easier
 to write and read. Remember to follow the best practices from [Data handling](#data-handling)
 when setting up your database for tests:
 
-- Clean the database before each test
-- Use test data builders
-- Avoid sharing the same data for multiple tests
+* Clean the database before each test
+* Use test data builders
+* Avoid sharing the same data for multiple tests
 
 ### Validate your OpenAPI specification
 
@@ -676,7 +676,7 @@ Here is an example showing how to run Dredd to test your API against the spec:
 import {expect} from '@loopback/testlab';
 import {HelloWorldApplication} from '../..';
 import {RestServer, RestBindings} from '@loopback/rest';
-import {spec} from '../../apidefs/swagger';
+import {spec} from '../../apidefs/openapi';
 const Dredd = require('dredd');
 
 describe('API (acceptance)', () => {
@@ -718,7 +718,7 @@ describe('API (acceptance)', () => {
       options: {
         level: 'fail', // report 'fail' case only
         silent: false, // false for helpful debugging info
-        path: [`${baseUrl}/swagger.json`], // to download apiSpec from the service
+        path: [`${baseUrl}/openapi.json`], // to download apiSpec from the service
       },
     };
     dredd = new Dredd(config);
