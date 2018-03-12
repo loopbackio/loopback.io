@@ -10,11 +10,12 @@ summary:
 
 One of the many ways LoopBack 4 allows for extensibility is through Components.
 A Component makes it easy for independent developers to contribute additional
-features to LoopBack. Components provide a package that allows you to extend
-your Application.
+features to LoopBack. Components serve as a vehicle to group extension
+contributions such as Context Bindings and various Artifacts to allow easier
+extensibility of your Application.
 
 A typical LoopBack component is an [npm](https://www.npmjs.com) package
-exporting a Component class whih can be added to your application.
+exporting a Component class which can be added to your application.
 
 ```ts
 import { RestApplication } from "@loopback/rest";
@@ -37,10 +38,10 @@ to your Application class. This doesn't change how a a Component is registered
 (`app.component()`) but it enables the Component to contribute additional artifacts.
 For example:
 
-* `RepositoryMixin` from `@loopback/repository` enables a Component to
-  contribute [Repositories](Repositories.html)
-* `BootMixin` from `@loopback/boot` enables a Component to
-  contribute [Booters](Booting-an-Application.html#booters)
+* [Repositories](Repositories.html) can be contributed by a Component by adding
+  `RepositoryMixin` from `@loopback/repository` to your Application
+* [Booters](Booting-an-Application.html#booters) can be contributed by a Component by adding
+  `BootMixin` from `@loopback/boot` to your Application
 
 **Note:** Always check a components instructions to see if it requires
 the use of a Mixin. A Mixin may autoamtically register a Component, saving you
