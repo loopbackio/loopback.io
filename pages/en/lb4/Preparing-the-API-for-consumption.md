@@ -30,8 +30,8 @@ $ npm start
 Open [http://localhost:3000/swagger-ui](http://localhost:3000/swagger-ui) to see the API endpoints defined by `swagger.json`. 
 
 {% include note.html content="
-  Swagger UI provides users with interactive environment to test the API endpoints defined by the raw spec found at [http://localhost:3000/swagger.json](http://localhost:3000/swagger.json).
-  The API spec is also available in YAML flavour at [http://localhost:3000/swagger.yaml](http://localhost:3000/swagger.yaml)
+  Swagger UI provides users with interactive environment to test the API endpoints defined by the raw spec found at [http://localhost:3000/openapi.json](http://localhost:3000/openapi.json).
+  The API spec is also available in YAML flavour at [http://localhost:3000/openapi.yaml](http://localhost:3000/openapi.yaml)
 " %}
 
 {% include image.html file="lb4/10000000.png" alt="" %}
