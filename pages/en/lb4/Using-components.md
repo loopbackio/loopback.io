@@ -10,7 +10,7 @@ summary:
 
 One of the many ways LoopBack 4 allows for extensibility is through Components.
 A Component makes it easy for independent developers to contribute additional
-features to LoopBack. Components provide a package that allows you to extends
+features to LoopBack. Components provide a package that allows you to extend
 your Application.
 
 A typical LoopBack component is an [npm](https://www.npmjs.com) package
@@ -21,8 +21,8 @@ import { RestApplication } from "@loopback/rest";
 import { AuthenticationComponent } from "@loopback/authentication";
 
 const app = new RestApplication();
-// Add component to Application, which provides bindings for
-// authenticate sequence action
+// Add component to Application, which provides bindings used to resolve
+// authenticated requests in a Sequence.
 app.component(AuthenticationComponent);
 ```
 
@@ -38,10 +38,11 @@ to your Application class. This doesn't change how a a Component is registered
 For example:
 
 * `RepositoryMixin` from `@loopback/repository` enables a Component to
-  contribute (Repositories)[Repositories.html]
+  contribute [Repositories](Repositories.html)
 * `BootMixin` from `@loopback/boot` enables a Component to
-  contribute (Booters)[Booting-an-Application.html#booters]
+  contribute [Booters](Booting-an-Application.html#booters)
 
 **Note:** Always check a components instructions to see if it requires
-the use of a Mixin. Adding a Mixin to your Application class doesn't change how
-a component is added to the Application (using `app.component()`).`
+the use of a Mixin. A Mixin may autoamtically register a Component, saving you
+the trouble of having to do so manually. Again it's best to check the documentation
+for the given Component / Mixin.
