@@ -8,7 +8,7 @@ permalink: /doc/en/lb4/Using-components.html
 summary:
 ---
 
-One of the many ways LoopBack 4 allows for extensibility is through Components.
+Components play an important part in the extensibility of LoopBack 4.
 A Component makes it easy for independent developers to contribute additional
 features to LoopBack. Components serve as a vehicle to group extension
 contributions such as Context Bindings and various Artifacts to allow easier
