@@ -16,10 +16,11 @@
     "url": "git+https://github.com/Strongloop/loopback.io.git"
   },
   "devDependencies": {
-    "fs-extra": "^4.0.2",
+    "fs-extra": "^5.0.0",
     "getreadmes": "github:strongloop/get-readmes",
     "markdownlint-cli": "github:sequoia/markdownlint-cli",
     "swagger-ui-dist": "^3.4.4"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {}
 }
