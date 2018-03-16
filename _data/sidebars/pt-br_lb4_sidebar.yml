@@ -79,10 +79,6 @@ children:
   url: /doc/pt-br/lb4/Using-components.html
   output: 'web, pdf'
 
-- title: 'Calling other APIs'
-  url: /doc/pt-br/lb4/Calling-other-APIs-and-web-services.html
-  output: 'web, pdf'
-
 - title: 'Testing your application'
   url: /doc/pt-br/lb4/Testing-your-application.html
   output: 'web, pdf'
