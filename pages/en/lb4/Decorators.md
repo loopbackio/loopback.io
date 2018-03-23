@@ -29,8 +29,8 @@ As a default, LoopBack comes with some pre-defined decorators:
 ## Route Decorators
 
 Route decorators are used to expose controller methods as REST API operations.
-If you are not familiar with the concept Route or Controller, please see [LoopBack Route](routes.md)
-and [LoopBack Controller](controllers.md) to learn more about them.
+If you are not familiar with the concept Route or Controller, please see [LoopBack Route](routes.htm)
+and [LoopBack Controller](controllers.htm) to learn more about them.
 
 By calling a route decorator, you provide OpenAPI specification to describe the
 endpoint which the decorated method maps to. You can choose different decorators
@@ -181,7 +181,7 @@ accordingly or do a composition of them:
   - name: a `string`, name of the parameter
 
   So an example would be `@param.query.number('offset')`.
-  You can find the specific usage in [Writing Controller methods](controller.md#writing-controller-methods)
+  You can find the specific usage in [Writing Controller methods](controller.htm#writing-controller-methods)
 
 ## Dependency Injection
 
@@ -309,9 +309,9 @@ Syntax: `@inject.context()`.
   // `component.ctx` should be the same as `ctx`
 ```
 
-**NOTE**: It's recommended to use `@inject` with specific keys for dependency injection if possible. Use `@inject.context` only when the code need to access the current context object for advanced use cases.
+**NOTE**: It's recommended to use `@inject` with specific keys for dependency injection if possible. Use `@inject.context` only when the code need to access the current context object for advanced use cases.  
 
-For more information, see the [Dependency Injection](Dependency-Injection.md) section under [LoopBack Core Concepts](Concepts.md)
+For more information, see the [Dependency Injection](Dependency-Injection.htm) section under [LoopBack Core Concepts](Concepts.htm)
 
 ## Authentication Decorator
 
@@ -356,8 +356,8 @@ For more information, see the [Dependency Injection](Dependency-Injection.md) se
   Repository decorators are used for defining models(domain objects) for use with your chosen datasources,
   and the navigation strategies among models.
 
-  If you are not familiar with repository related concepts like `Model`, `Entity` and `Datasource`,
-  please see LoopBack concept [Repositories](#Repositories.md) to learn more.
+  If you are not familiar with repository related concepts like `Model`, `Entity` and `Datasource`,  
+  please see LoopBack concept [Repositories](#Repositories.htm) to learn more.
 
 ### Model Decorators
 
@@ -371,8 +371,8 @@ For more information, see the [Dependency Injection](Dependency-Injection.md) se
 
   Model decorator is a Class decorator.
   In LoopBack 4, we inherit the model definition format from LoopBack 3,
-  you can find it in [Model definition JSON file](https://loopback.io/doc/en/lb3/Model-definition-JSON-file).
-  For usage examples, see [Define Models](Repositories.md#define-models)
+  you can find it in [Model definition JSON file](../lb3/Model-definition-JSON-file.html).
+  For usage examples, see [Define Models](Repositories.html#define-models)
 
   *Please note we will elaborate more about model and model definition in #Model.htm,*
   *and replace the link above with LoopBack 4 link*
@@ -398,9 +398,9 @@ For more information, see the [Dependency Injection](Dependency-Injection.md) se
   Syntax: `@property(definition?: PropertyDefinition)`
 
   The property decorator defines metadata for a property on a Model definition.
-  The format of property definitions can be found in [Property definitions](https://loopback.io/doc/en/lb2/Model-definition-JSON-file.html#properties)
+  The format of property definitions can be found in [Property definitions](../lb2/Model-definition-JSON-file.html#properties)
 
-  For usage examples, see [Define Models](Repositories.md#define-models)
+  For usage examples, see [Define Models](Repositories.html#define-models)
 
 ### Relation Decorators
 
@@ -436,7 +436,7 @@ For more information, see the [Dependency Injection](Dependency-Injection.md) se
   This decorator either injects an existing repository or creates a repository
   from a model and a datasource.
 
-  The injection example can be found in [Repository#controller-configuration](Repositories.md#controller-configuration)
+  The injection example can be found in [Repository#controller-configuration](Repositories.html#controller-configuration)
 
   To create a repository in a controller, you can define your model and datasource
   first, then import them in your controller file:

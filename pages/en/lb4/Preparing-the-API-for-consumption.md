@@ -9,7 +9,7 @@ summary:
 ---
 
 {% include previous.html content="
-This article continues from [Implementing features](./Implementing-features.md).
+This article continues from [Implementing features](./Implementing-features.html).
 " %}
 
 ## Preparing your API for consumption
@@ -27,7 +27,7 @@ $ npm i
 $ npm start
 ```
 
-Open [http://localhost:3000/swagger-ui](http://localhost:3000/swagger-ui) to see the API endpoints defined by `swagger.json`.
+Open [http://localhost:3000/swagger-ui](http://localhost:3000/swagger-ui) to see the API endpoints defined by `swagger.json`. 
 
 {% include note.html content="
   Swagger UI provides users with interactive environment to test the API endpoints defined by the raw spec found at [http://localhost:3000/openapi.json](http://localhost:3000/openapi.json).

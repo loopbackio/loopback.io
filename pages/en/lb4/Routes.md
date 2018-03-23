@@ -17,7 +17,7 @@ The `Route` object and its associated types are provided as a part of the
 
 ## Operations
 
-Operations are JavaScript functions that accept Parameters. They can be implemented as plain JavaScript functions or as methods in [Controllers](Controllers.md).
+Operations are JavaScript functions that accept Parameters. They can be implemented as plain JavaScript functions or as methods in [Controllers](Controllers.html).
 
 ```js
 // greet is a basic operation
