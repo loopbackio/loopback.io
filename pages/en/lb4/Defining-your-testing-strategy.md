@@ -9,7 +9,7 @@ summary:
 ---
 
 {% include previous.html content="
-This article continues from [Testing the API](./Testing-the-API.md) and [Defining the API using code-first approach](./Defining-the-API-using-code-first-approach.md).
+This article continues from [Testing the API](./Testing-the-API.html) and [Defining the API using code-first approach](./Defining-the-API-using-code-first-approach.html).
 " %}
 
 ## Define your testing strategy
@@ -69,8 +69,8 @@ To summarize:
 - Prefer fast and focused unit tests over slow app-wide end-to-end tests.
 - Watch out for integration points that are not covered by unit-tests and add integration tests to verify your units work well together.
 
-See [Testing Your Application](Testing-Your-application.md) for a reference manual on automated tests.
+See [Testing Your Application](Testing-Your-application.html) for a reference manual on automated tests.
 
 {% include next.html content= "
-[Implementing features](./Implementing-features.md)
+[Implementing features](./Implementing-features.html)
 " %}

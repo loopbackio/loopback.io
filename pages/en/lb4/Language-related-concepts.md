@@ -10,4 +10,4 @@ summary:
 
 A module that exports JavaScript/TypeScript concept related functions.
 
-- [**Mixin**](Mixin.md): Add properties and methods to a class.
+- [**Mixin**](Mixin.html): Add properties and methods to a class.
