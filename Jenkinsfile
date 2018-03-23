@@ -9,6 +9,7 @@ def gitEnv = [
 
 env.CHANGE_BRANCH = env.CHANGE_BRANCH ?: env.BRANCH_NAME
 
+
 node('linux && git') {
   stage('checkout') {
     checkout scm

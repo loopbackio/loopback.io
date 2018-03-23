@@ -32,10 +32,10 @@ _metadata_ about your code and then assemble them into a valid OpenAPI
 specification, which provide a description of your API.
 These concepts and their decorators include:
 
-* [Model](Model.html)
+* [Model](Model.md)
   * `@model()`
   * `@property()`
-* [Routes](Routes.html)
+* [Routes](Routes.md)
   * `@operation()`
   * `@param()`
 
@@ -177,10 +177,10 @@ tutorial.
 
 {% include note.html content="
 If you would like to create your API manually or already have one designed,
-refer to [Defining the API using design-first approach](Defining-the-API-using-design-first-approach)
+refer to [Defining the API using design-first approach](Defining-the-API-using-design-first-approach.md)
 page for best practices.
 " %}
 
 {% include next.html content= "
-[Defining your testing strategy](./Defining-your-testing-strategy.html)
+[Defining your testing strategy](./Defining-your-testing-strategy.md)
 " %}

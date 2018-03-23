@@ -65,9 +65,9 @@ export class HelloWorldApp extends Application {
 }
 ```
 
-You can also add multiple servers in the constructor of your application class as shown [here](Application.html#servers).
+You can also add multiple servers in the constructor of your application class as shown [here](Application.md#servers).
 
 ## Next Steps
 
-- Learn about [Server-level Context](Context.html#server-level-context)
-- Learn more about [creating your own servers!](Creating-components.html#creating-your-own-servers)
+- Learn about [Server-level Context](Context.md#server-level-context)
+- Learn more about [creating your own servers!](Creating-components.md#creating-your-own-servers)

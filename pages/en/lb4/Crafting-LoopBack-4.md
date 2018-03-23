@@ -11,15 +11,15 @@ summary:
 
 [LoopBack](http://loopback.io) is an open-source [Node.js](https://nodejs.org) framework built for API developers. Its primary goal is to help create APIs as microservices from existing services/databases and expose them as endpoints for client applications, such as web, mobile, and IoT. LoopBack connects the dots between accepting API requests and interacting with backend resources. By facilitating developers to implement API logic with out of box integration capabilities, LoopBack establishes itself as the API composition layer to [differentiate](http://loopback.io/resources/#compare) from other frameworks, such as [Express](https://expressjs.com), [Hapi](https://hapijs.com), and [Sails](http://sailsjs.com).
 
-![loopback-composition](/images/lb4/loopback-composition.png)
+![loopback-composition](./imgs/loopback-composition.png)
 
 Up to version 3.x, LoopBack built on the popular [Express framework](https://expressjs.com). In retrospect, basing LoopBack on Express was the right decision: Standing on the shoulders of Express enabled LoopBack to focus on adding value for API creation experience without reinventing the wheel. LoopBack also has benefitted from the Express ecosystem, especially ready-to-use middleware modules from npm as well as valuable knowledge and support by the community.
 
-With LoopBack, developers can create and expose APIs just like following a recipe. LoopBack introduces a set of [core concepts](../lb3/LoopBack-core-concepts.html) that represent the key aspects of API implementation.  To create APIs out of existing databases or services, developers can simply scaffold a LoopBack application, then add necessary JSON declarations and Node.js code to get their APIs up and running in a few minutes.
+With LoopBack, developers can create and expose APIs just like following a recipe. LoopBack introduces a set of [core concepts](https://loopback.io/doc/en/lb3/LoopBack-core-concepts) that represent the key aspects of API implementation.  To create APIs out of existing databases or services, developers can simply scaffold a LoopBack application, then add necessary JSON declarations and Node.js code to get their APIs up and running in a few minutes.
 
 LoopBack uses Express routing and middleware as the plumbing to a request/response pipeline for API use cases, such as authentication, authorization, and routing. Beyond inbound HTTP processing, LoopBack provides integration facilities such as models, datasources, and connectors to allow API logic to interact with various backend systems, including but not limited to, databases, REST APIs, SOAP web services and gRPC microservices. The ability to glue inbound communication and outbound integration makes LoopBack a very powerful framework for API developers. The diagram below illustrates how LoopBack fits into a typical end-to-end API processing flow.
 
-![loopback-overview](/images/lb4/loopback-overview.png)
+![loopback-overview](./imgs/loopback-overview.png)
 
 LoopBack has grown significantly in features and users with many years of development and multiple releases. LoopBack has been well-recieved by the developer community. As an indication, the community has developed [many extensions](https://github.com/pasindud/awesome-loopback). The core team has also learned a lot from what we have done as well as great feedback from the community.
 
@@ -65,11 +65,11 @@ LoopBack has gained traction among a spectrum of users beyond Node.js applicatio
 - **Extension developers** - Contribute extensions to LoopBack to augment the framework.
 - **Platform developers** - Leverage LoopBack as the base to build their value-added offerings.
 
-![loopback-ecosystem](/images/lb4/loopback-ecosystem.png)
+![loopback-ecosystem](./imgs/loopback-ecosystem.png)
 
 The core team decided to make a bold move and rebuild LoopBack to meet the needs of all the above groups.
 The decision led to the inception of LoopBack 4, a new generation of API creation platform.
-For more information, read the blog post [Announcing LoopBack.next, the Next Step to Make LoopBack Effortlessly Extensible](https://strongloop.com/strongblog/announcing-loopback-next/).
+For more information, read the blog post [Announcing LoopBack.next, the Next Step to Make LoopBack Effortlessly Extensible](https://strongloop.com/strongblog/announcing-loopback-next).
 
 ## Objectives
 
@@ -107,11 +107,11 @@ We decided not to take a "big-bang" approach to build LoopBack 4. Instead, we ar
 
 2. **Build minimum features and add more later if necessary**
 
-   Apply YAGNI (You Aint’t Gonna Need It). Design and build for what is needed now, not for what you think you may need in the future. There are many different perspectives in API creation and people ask for a lot of features. Starting with MVP allow us to reach the root of the issues without being derailed by noises and build the absolutely necessary features as the core building blocks.  
+   Apply YAGNI (You Aint’t Gonna Need It). Design and build for what is needed now, not for what you think you may need in the future. There are many different perspectives in API creation and people ask for a lot of features. Starting with MVP allow us to reach the root of the issues without being derailed by noises and build the absolutely necessary features as the core building blocks.
 
 3. **Developer experience first**
 
-   Always keep in mind that LoopBack is built for developers by developers. Our first priority is to make API developers' life easier. When we design APIs and user interfaces such as a CLI or GUI, we want to make sure they are intuitive to and natural to their thought process.  
+   Always keep in mind that LoopBack is built for developers by developers. Our first priority is to make API developers' life easier. When we design APIs and user interfaces such as a CLI or GUI, we want to make sure they are intuitive to and natural to their thought process.
 
 ## Implementation stages
 
@@ -131,7 +131,7 @@ Here are the stages we are marching through toward the final version of LoopBack
       * Universal registry across different modules
       * Dependency injection as a pattern to manage dependencies
 
-    - Introduce Component as packaging model for extensions  
+    - Introduce Component as packaging model for extensions
       * Component can be a npm module or a local directory
       * Component encapsulates a list of extensions as a whole
 
@@ -188,18 +188,18 @@ Here are the stages we are marching through toward the final version of LoopBack
 
     - Add CLI and UI  tools to:
       - Scaffold LoopBack 4 applications
-      - Manage artifacts such as sequences, actions, controllers, repositories, services, datasources and models  
+      - Manage artifacts such as sequences, actions, controllers, repositories, services, datasources and models
 
 6. **Enable cloud native experience**
 
     - Allow controllers to be exposed as gRPC services
     - Allow interaction with other gRPC services
     - Integration with microservices deployment infrastructure such as Docker and Kubernetes
-    - Integration with service mesh  
+    - Integration with service mesh
 
 The following diagram illustrates the high-level building blocks of LoopBack 4:
 
-![loopback-stack](/images/lb4/loopback-stack.png)
+![loopback-stack](./imgs/loopback-stack.png)
 
 Please note there is a common layer below the different functional areas in the stack. Let's examine the need to build a new core foundation for LoopBack 4.
 
@@ -277,7 +277,7 @@ The core foundation for LoopBack 4 is responsible for managing various artifacts
 
 Do we need to build our own core foundation? Can we continue to use Express? Our conclusion is no. Here are the gaps between what Express and LoopBack's needs.
 
-- **Lack of extensibility**.  
+- **Lack of extensibility**.
 
   Express is a routing and middleware web framework with minimal functionality of its own: An Express application is essentially a series of middleware function calls. For details, see [Using middleware](http://expressjs.com/en/guide/using-middleware.html).
 
@@ -289,29 +289,29 @@ Do we need to build our own core foundation? Can we continue to use Express? Our
 
   Express doesn't provide any way to manage dependencies between artifact instances either.
 
-- **Lack of declarative support**.  
+- **Lack of declarative support**.
 
-  In Express, everything is done by JavaScript code as it works exactly as the web site claims: `Fast, unopinionated, minimalist web framework for Node.js`. In contrast, LoopBack is designed to facilitate API creation and composition by conventions and patterns as best practices. More types of constructs are introduced.   
+  In Express, everything is done by JavaScript code as it works exactly as the web site claims: `Fast, unopinionated, minimalist web framework for Node.js`. In contrast, LoopBack is designed to facilitate API creation and composition by conventions and patterns as best practices. More types of constructs are introduced.
 
 ## Deep dive into LoopBack 4 extensibility
 
 There are several key pillars to make extensibility a reality for LoopBack 4.
 
-- [Context](Context.html), the IoC container to manage services
-- [Dependency injection](Dependency-injection.html) to facilitate composition
-- [Decorators](Decorators.html) to supply metadata using annotations
-- [Component](Component.html) as the packaging model to bundle extensions
+- [Context](Context.md), the IoC container to manage services
+- [Dependency injection](Dependency-injection.md) to facilitate composition
+- [Decorators](Decorators.md) to supply metadata using annotations
+- [Component](Component.md) as the packaging model to bundle extensions
 
-Please check out [Extending LoopBack 4](Extending-LoopBack-4.html).
+Please check out [Extending LoopBack 4](Extending-LoopBack-4.md).
 
 ## Rebuilding LoopBack experience on top of the new core
 
 With the extensible foundation in place, we start to rebuild the LoopBack REST API experience by "eating your own dog food" with the following artifacts:
 
-- [Sequence and actions](Sequence.html): A sequence of actions to handle HTTP requests/responses.
-- [Controllers](Controllers.html): A class with methods to implement API operations behind REST endpoints.
-- [Model](Model.html): Definition of data models.
-- [Repositories](Repositories.html): Interfaces of access patterns for data sources.
+- [Sequence and actions](Sequence.md): A sequence of actions to handle HTTP requests/responses.
+- [Controllers](Controllers.md): A class with methods to implement API operations behind REST endpoints.
+- [Model](Model.md): Definition of data models.
+- [Repositories](Repositories.md): Interfaces of access patterns for data sources.
 
 The features are provided by the following modules:
 
