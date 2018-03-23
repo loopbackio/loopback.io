@@ -18,4 +18,3 @@ deploy:
     - npm test
   email: slnode@ca.ibm.com
   name: StrongLoop Bot
-    
