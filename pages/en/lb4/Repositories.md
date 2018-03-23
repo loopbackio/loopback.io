@@ -12,7 +12,7 @@ A Repository is a type of _Service_ that represents a collection of data within 
 
 
 ## Example Application
-You can look at [the account application as an example.](https://github.com/strongloop/loopback-next-example/tree/master/services/account)
+You can look at [the account application as an example.](https://github.com/strongloop/loopback4-example-microservices/tree/master/services/account)
 
 ## Installation
 Legacy juggler support has been enabled in `loopback-next` and can be imported from the `@loopback/repository` package. In order to do this, save `@loopback/repository` as a dependency in your application.
@@ -253,7 +253,7 @@ async updateAccount(where, data) {
 }
 ```
 
-Please See [Testing Your Application](Testing-Your-Application.html) section in order to set up and write unit, acceptance, and integration tests for your application.
+Please See [Testing Your Application](Testing-Your-Application.md) section in order to set up and write unit, acceptance, and integration tests for your application.
 
 ## Persisting Data without Juggler [Using MySQL database]
 LoopBack 4 gives you the flexibility to create your own custom Datasources which utilize your own custom connector for your favourite back end database. You can then fine tune your CRUD methods to your liking.

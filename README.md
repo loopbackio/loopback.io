@@ -70,6 +70,16 @@ summary: A brief tutorial on creating an Angular client app using the Loopback A
 {% include readmes/loopback-example-angular.md %}
 ```
 
+## Incorporating updates from loopback-next
+
+We use a node script `update-lb4-docs` to copy over contents from loopback-next
+repository using `@loopback/docs` package. The script is responsible for copying
+over the markdown documentation and related tables, as well as the sidebar used
+for LoopBack 4 content. The changes are then picked up as part of Travis CI's
+builds along with README update scripts and deployed to GitHub Pages once
+successful. If you'd like to make documentation changes for LoopBack 4, please
+do so on its own [repository](https://github.com/strongloop/loopback-next/).
+
 ### Linting Readmes
 
 There is an additional `npm script` that "lints" the readmes for markdown formatting problems. It is currently "experimental", see [this issue](https://github.com/strongloop/loopback.io/issues/49#issuecomment-253672668) for more info.

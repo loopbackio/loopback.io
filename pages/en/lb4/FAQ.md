@@ -16,7 +16,7 @@ summary: LoopBack 4 is a completely new framework, sometimes referred to as Loop
 - Suitable for small and large teams
 - Minimally opinionated, enforce your team's opinions instead
 
-See [Crafting LoopBack 4](Crafting-LoopBack-4.html) for more details.
+See [Crafting LoopBack 4](Crafting-LoopBack-4.md) for more details.
 
 ### What’s the timeline for LoopBack 4?
 
@@ -24,7 +24,7 @@ See [Upcoming releases](https://github.com/strongloop/loopback-next/wiki/Upcomin
 
 ### Where are the tutorials?
 
-See [Examples and tutorials](Examples-and-tutorials.html).
+See [Examples and tutorials](Examples-and-tutorials.md).
 
 ### What features are planned ?
 
@@ -48,7 +48,7 @@ Add your feature requests at [loopback-next/issues/new](https://github.com/stron
 
 Although developers can still write application logic in either JavaScript or TypeScript, LoopBack 4's core is written in TypeScript, for the following reasons:
 
-- **Improved developer productivity and scalability**. Our customers need a framework that scales to dozens and even hundreds of developers.  This scalability is the reason TypeScript exists and is gaining traction.  
+- **Improved developer productivity and scalability**. Our customers need a framework that scales to dozens and even hundreds of developers.  This scalability is the reason TypeScript exists and is gaining traction.
 - **Improved extensibility** and flexibility. LoopBack 4's core is simpler than LoopBack 3.x with well-defined extension points.  A lot of responsibility will be shifted to extensions (componnets), which can be JavaScript or TypeScript.
 - Unified tooling. TypeScript developers all use the same IDE: Visual Studio Code. The LoopBack ecosystem could someday be filled with useful best practices around that IDE and even great developer plugins. Right now that effort is split between various editors and basically non-existent.
 - **Future-proofing**. Ability to leverage the latest and future JavaScript constructs.
@@ -65,4 +65,4 @@ Some of the examples use ES6 syntax. We encourage you to get familiar with ES6 c
 
 ### LoopBack 3 vs LoopBack 4
 
-See [Differences between LoopBack v3 and v4](LoopBack-3.x.html).
+See [Differences between LoopBack v3 and v4](LoopBack-3.x.md).
