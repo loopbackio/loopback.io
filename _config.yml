@@ -8,6 +8,7 @@ whitelist:
 
 plugins:
   - jekyll-redirect-from
+  - jekyll-relative-links
 
 topnav_title: LoopBack
 # this appears on the top navigation bar next to the home button
@@ -20,6 +21,8 @@ company_name: IBM / StrongLoop
 
 github_editme_path: strongloop/loopback.io/blob/gh-pages/pages
 # if you're using Github, provide the basepath to the branch you've created for reviews, following the sample here. if not, leave this value blank.
+
+lb4_editme_path: strongloop/loopback-next/blob/master/docs/site
 
 google_analytics: UA-102515604-1
 
@@ -38,6 +41,7 @@ exclude:
   - node_modules
   - Jenkinsfile
   - update-readmes.sh
+  - update-v4-readmes.sh
 # these are the files and directories that jekyll will exclude from the build
 
 feedback_email: rmckinn@us.ibm.com
