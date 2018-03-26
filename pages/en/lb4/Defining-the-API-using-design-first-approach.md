@@ -7,7 +7,6 @@ sidebar: lb4_sidebar
 permalink: /doc/en/lb4/Defining-the-API-using-design-first-approach.html
 summary:
 ---
-
 {% include important.html content="The top-down approach for building LoopBack
 applications is not yet fully supported. Therefore, the steps outlined in this
 page are outdated and may not work out of the box. They will be revisited after
@@ -295,7 +294,7 @@ This works well for applications with a single REST server, because
 there is only one API definition involved.
 
 If you are building an application with multiple REST servers,
-where each server provides a different API, then you need
+where each server provides a different API, then you need 
 to call `server.api()` instead.
 
 You also need to associate the controllers implementing the spec with the app
@@ -351,14 +350,14 @@ describe('API specification', () => {
 });
 ```
 
-See [Validate your OpenAPI specification](Testing-your-application.md#validate-your-openapi-specification) from [Testing your application](Testing-your-application.md) for more details.
+See [Validate your OpenAPI specification](Testing-your-application.html#validate-your-openapi-specification) from [Testing your application](Testing-your-application.html) for more details.
 
 {% include note.html content="
   If you would like to make tweaks to your API as you develop your application,
-  refer to [Defining the API using code-first approach](Defining-the-API-using-code-first-approach.md)
+  refer to [Defining the API using code-first approach](Defining-the-API-using-code-first-approach)
   page for best practices.
 " %}
 
 {% include next.html content= "
-[Testing the API](./Testing-the-API.md)
+[Testing the API](./Testing-the-API.html)
 " %}

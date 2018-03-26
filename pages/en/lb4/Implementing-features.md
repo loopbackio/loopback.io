@@ -9,7 +9,7 @@ summary:
 ---
 
 {% include previous.html content="
-This article continues from [Defining your testing stategy(./Defining-your-testing-strategy.md).
+This article continues from [Defining your testing stategy](./Defining-your-testing-strategy.html).
 " %}
 
 ## Incrementally implement features
@@ -112,11 +112,11 @@ When you scroll up in the test output, you will see more information about the 4
 Unhandled error in GET /product/ink-pen: 404 Error: Controller method not found: ProductController.getDetails
 ```
 
-Learn more about acceptance testing in [Test your individual REST API endpoints](./Testing-your-application.md#test-your-individual-rest-api-endpoints) from [Testing your application](./Testing-your-application.md).
+Learn more about acceptance testing in [Test your individual REST API endpoints](./Testing-your-application.html#test-your-individual-rest-api-endpoints) from [Testing your application](./Testing-your-application.html).
 
 ### Write a unit-test for the new controller method
 
-The new acceptance test is failing because there is no `getDetails` method implemented by `ProductController`. Start with a unit-test to drive the implementation of this new method. Please refer to [Unit-test your Controllers](./Testing-your-application.md#unit-test-your-controllers) for more details.
+The new acceptance test is failing because there is no `getDetails` method implemented by `ProductController`. Start with a unit-test to drive the implementation of this new method. Please refer to [Unit-test your Controllers](./Testing-your-application.html#unit-test-your-controllers) for more details.
 
 Create `tests/unit/product-controller.test.ts` with the following contents:
 
@@ -224,7 +224,7 @@ AssertionError: expected Object { name: 'Ink Pen', slug: 'ink-pen' } to equal Ob
    }
 ```
 
-Please refer to [Test your Controllers and Repositories together](./Testing-your-application.md#test-your-controllers-and-repositories-together) to learn more about integration testing.
+Please refer to [Test your Controllers and Repositories together](./Testing-your-application.html#test-your-controllers-and-repositories-together) to learn more about integration testing.
 
 Take a closer look at the new test. To make it fail with the current implementation, you need to find a different scenario compared to what is covered by the unit test. You could simply change the data, but that would add little value to the test suite. Instead, take this opportunity to cover another requirement of "get product details" operation: it should return the details of the product that matches the "slug" parameter passed in the arguments.
 
@@ -292,7 +292,7 @@ LoopBack is agnostic when it comes to accessing databases. You can choose any pa
     }
     ```
 
-See [Repositories](Repositories.md) for more details on this topic.
+See [Repositories](Repositories.html) for more details on this topic.
 
 ### Update test helpers and the controller use real model and repository
 
@@ -320,7 +320,7 @@ Notice that `givenProduct` is filling in required properties with sensible defau
 
  2. It makes tests easier to maintain. As the data model evolves, you will eventually need to add more required properties. If the tests were building product instances manually, you would have to fix all tests to set the new required property. With a shared helper, there is only a single place where to add a value for the new required property.
 
-You can learn more about test data builders in [Use test data builders](./Testing-your-application.md#use-test-data-builders) section of [Testing your application](./Testing-your-application.md).
+You can learn more about test data builders in [Use test data builders](./Testing-your-application.html#use-test-data-builders) section of [Testing your application](./Testing-your-application.html).
 
 Now that the tests are setting up the test data correctly, it's time to rework `ProductController` to make the tests pass again.
 
@@ -419,8 +419,8 @@ The new unit test is passing now, but the integration and acceptance tests are b
  2. Fix the acceptance test by annotating `ProductController`'s `repository` argument with `@inject('repositories.Product')`
     and binding the `ProductRepository` in the main application file where you are also binding controllers.
 
-Learn more about this topic in [Unit-test your Controllers](./Testing-your-application.md#unit-test-your-controllers)
-and [Use test doubles](./Testing-your-application.md#use-test-doubles) from [Testing your application](./Testing-your-application.md).
+Learn more about this topic in [Unit-test your Controllers](./Testing-your-application.html#unit-test-your-controllers)
+and [Use test doubles](./Testing-your-application.html#use-test-doubles) from [Testing your application](./Testing-your-application.html).
 
 ### Handle 'product not found' error
 
@@ -463,7 +463,7 @@ export class ProductController {
 }
 ```
 
-More information on `HttpErrors` can be found in [Controllers](./Controllers.md#handling-errors-in-controllers)
+More information on `HttpErrors` can be found in [Controllers](./Controllers.html#handling-errors-in-controllers)
 
 ### Implement a custom Sequence
 
@@ -474,11 +474,11 @@ Express middleware has several shortcomings:
  - The order in which middleware needs to be registered can be confusing, for example request logging middleware must be registered as the first one, despite the fact that the log is written only at the end, once the response has been sent.
  - The invocation of middleware handlers is controlled by the framework, application developers have very little choices.
 
-LoopBack 4, abandons Express/Koa-like middleware for a different approach that puts the application developer in the front seat. See [Sequence](Sequence.md) documentation to learn more about this concept.
+LoopBack 4, abandons Express/Koa-like middleware for a different approach that puts the application developer in the front seat. See [Sequence](Sequence.html) documentation to learn more about this concept.
 
 Now you are going to modify request handling in the application to print a line in the [Common Log Format](https://en.wikipedia.org/wiki/Common_Log_Format) for each request handled.
 
-Start by writing an acceptance test, as described in [Test sequence customizations](Testing-your-application.md#test-sequence-customizations) from [Testing your application](Testing-your-application.md). Create a new test file (e.g. `sequence.acceptance.ts`) and add the following test:
+Start by writing an acceptance test, as described in [Test sequence customizations](Testing-your-application.html#test-sequence-customizations) from [Testing your application](Testing-your-application.html). Create a new test file (e.g. `sequence.acceptance.ts`) and add the following test:
 
 ```ts
 describe('Sequence (acceptance)', () => {
@@ -576,5 +576,5 @@ With this last change in place, your test suite should be all green again.
 The next task is left as an exercise for the reader: \Modify the `catch` block to print a common log entry too. Start by writing a unit-test that invokes `MySequence` directly.
 
 {% include next.html content= "
-[Preparing the API for consumption](./Preparing-the-API-for-consumption.md)
+[Preparing the API for consumption](./Preparing-the-API-for-consumption.html)
 " %}

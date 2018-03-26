@@ -53,7 +53,7 @@ In a browser, visit [http://127.0.0.1:3000/ping](http://127.0.0.1:3000/ping).
 
 ## Adding your own controller
 
-Now that we have a basic project created, it's time to add our own [controller](Controllers.md).
+Now that we have a basic project created, it's time to add our own [controller](Controllers.html).
 Let's add a simple "Hello World" controller as follows:
 
 * Create a new file in `/src/controllers/` called `hello.controller.ts`.
@@ -69,6 +69,20 @@ Let's add a simple "Hello World" controller as follows:
     }
   }
   ```
+
+* Update `/src/application.ts` to load the controller:
+    * Import `HelloController` at the top of the file
+      ```ts
+      import {HelloController} from './controllers/hello.controller';
+      ```
+
+    * Add controller in `setupControllers()`
+      ```ts
+      setupControllers() {
+        this.controller(PingController);
+        this.controller(HelloController);
+      }
+      ```
 
 * Start the application using `npm start`.
     * *Note: If your application is still running, press **CTRL+C** to stop it before restarting it*

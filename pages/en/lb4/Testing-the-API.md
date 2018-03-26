@@ -9,13 +9,13 @@ summary:
 ---
 
 {% include previous.html content="
-This article continues off from [Defining and validating the API](./Defining-and-validating-the-API.md).
+This article continues from [Defining the API using design-first approach](./Defining-the-API-using-design-first-approach.html).
 " %}
 
 {% include important.html content="The top-down approach for building LoopBack
 applications is not yet fully supported. Therefore, the steps outlined in this
 page are outdated and may not work out of the box. They will be revisited after
-our MVP release.
+our MVP release. 
 "%}
 
 ## Smoke test API input/output
@@ -25,7 +25,7 @@ Once you confirm that the API specification is valid, it's time to verify that t
 For input/output testing, you are going to create three parts:
 1. Input data definition.
 2. Expected output response definition.
-3. Test code.
+3. Test code.  
 
 Parts one and two are included in the API specification.  The input data is given as `x-example` as follows:
 
@@ -193,8 +193,8 @@ It's a powerful proposition to use the API specification not only for API declar
 
 At this point, you are ready to make these tests pass by coding up your business logic.
 
-Please refer to [Perform an auto-generated smoke test of your REST API](Testing-your-application.md#perform-an-auto-generated-smoke-test-of-your-rest-api) from [Testing your application](Testing-your-application.md) for more details.
+Please refer to [Perform an auto-generated smoke test of your REST API](Testing-your-application.html#perform-an-auto-generated-smoke-test-of-your-rest-api) from [Testing your application](Testing-your-application.html) for more details.
 
 {% include next.html content= "
-[Defining your testing strategy](./Defining-your-testing-strategy.md)
+[Defining your testing strategy](./Defining-your-testing-strategy.html)
 " %}

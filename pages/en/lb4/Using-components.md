@@ -21,10 +21,10 @@ app.component(AuthenticationComponent);
 
 In general, components can contribute the following items:
 
- - [Controllers](Controllers.md)
- - Providers of additional [Context values](Context.md)
+ - [Controllers](Controllers.html)
+ - Providers of additional [Context values](Context.html)
 
 In the future (before the GA release), components will be able to contribute additional items:
 
  - Models
- - [Repositories](Repositories.md)
+ - [Repositories](Repositories.html)

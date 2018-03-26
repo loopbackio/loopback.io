@@ -156,7 +156,7 @@ class HelloController {
 }
 ```
 
-- `HelloRepository` extends from `Repository`, which is LoopBack's database abstraction. See [Repositories](./Repositories.md) for more.
+- `HelloRepository` extends from `Repository`, which is LoopBack's database abstraction. See [Repositories](./Repositories.html) for more.
 - `HelloMessage` is the arbitrary object that `list` returns a list of.
 - `@get('/messages')` creates the `Route` for the Operation using `app.route()`.
 - `@param.query.number` adds a `number` param with a source of `query`.

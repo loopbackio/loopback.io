@@ -9,7 +9,7 @@ summary:
 ---
 
 
-As explained in [Using Components](Using-components.md), a typical LoopBack component is an npm package exporting a Component class.
+As explained in [Using Components](Using-components.html), a typical LoopBack component is an npm package exporting a Component class.
 
 ```js
 import MyController from './controllers/my-controller';
@@ -33,7 +33,7 @@ The example `MyComponent` above will add `MyController` to application's API and
 
 ## Providers
 
-Providers enable components to export values that can be used by the target application or other components. The `Provider`  class provides a `value()` function called by [Context](Context.md) when another entity requests a value to be injected.
+Providers enable components to export values that can be used by the target application or other components. The `Provider`  class provides a `value()` function called by [Context](Context.html) when another entity requests a value to be injected.
 
 ```js
 import {Provider} from '@loopback/context';
@@ -64,7 +64,7 @@ export class MyComponent {
 ### Accessing values from Providers
 
 Applications can use `@inject` decorators to access the value of an exported Provider.
-If you’re not familiar with decorators in TypeScript, see [Key Concepts: Decorators](Decorators.md)
+If you’re not familiar with decorators in TypeScript, see [Key Concepts: Decorators](Decorators.html)
 
 ```js
 const app = new Application();
@@ -83,7 +83,7 @@ class MyController {
 }
 ```
 
-{% include note.html title="A note on binding names" content="To avoid name conflicts, add a unique prefix to your binding key (for example, `my-component.` in the example above). See [Reserved binding keys](Reserved-binding-keys.md) for the list of keys reserved for the framework use.
+{% include note.html title="A note on binding names" content="To avoid name conflicts, add a unique prefix to your binding key (for example, `my-component.` in the example above). See [Reserved binding keys](Reserved-binding-keys.html) for the list of keys reserved for the framework use.
 " %}
 
 ### Asynchronous providers
@@ -129,7 +129,7 @@ A frequent use case for components is to modify the way requests are handled. Fo
 
 The idiomatic solution has two parts:
 
- 1. The component should define and bind a new [Sequence action](Sequence.md#actions), for example `authentication.actions.authenticate`:
+ 1. The component should define and bind a new [Sequence action](Sequence.html#actions), for example `authentication.actions.authenticate`:
 
     ```js
     class AuthenticationComponent {
@@ -257,7 +257,7 @@ export class AuthenticationProvider {
 When binding a component to an app, you may want to extend the app with the component's
 properties and methods by using mixins.
 
-For an overview of mixins, see [Mixin](Mixin.md).
+For an overview of mixins, see [Mixin](Mixin.html).
 
 An example of how a mixin leverages a component is `RepositoryMixin`.
 Suppose an app has multiple components with repositories bound to each of them.
@@ -319,7 +319,7 @@ app.find('repositories.*');
 
 More often than not, the component may want to offer different value providers depending on the configuration. For example, a component providing an email API may offer different transports (stub, SMTP, and so on).
 
-Components should use constructor-level [Dependency Injection](Context.md#dependency-injection) to receive the configuration from the application.
+Components should use constructor-level [Dependency Injection](Context.html#dependency-injection) to receive the configuration from the application.
 
 ```js
 class EmailComponent {
@@ -338,7 +338,7 @@ class EmailComponent {
 
 LoopBack 4 has the concept of a Server, which you can use to create your own
 implementations of REST, SOAP, gRPC, MQTT and more. For an overview, see
-[Server](Server.md).
+[Server](Server.html).
 
 Typically, you'll want server instances that listen for traffic on one or more
 ports (this is why they're called "servers", after all). This leads into a key
