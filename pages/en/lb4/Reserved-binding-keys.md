@@ -10,7 +10,7 @@ summary:
 ---
 ## Overview
 
-When using [dependency injection](Dependency-injection.html) there are a few things to keep in mind with regards to binding keys.
+When using [dependency injection](Dependency-injection.md) there are a few things to keep in mind with regards to binding keys.
 
 Different packages and components for LoopBack 4 may have some bindings already defined. You can change the default behavior by overriding the default binding, but you must ensure the interface of the new binding is the same as the default (but behavior can be different).
 
@@ -28,7 +28,7 @@ app.bind(BindKeyNameSpace.KeyName).to('value');
 
 ## Package: authentication
 
-**Reserved prefixes:**  
+**Reserved prefixes:**
 
 ```
 authentication.*

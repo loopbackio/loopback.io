@@ -11,7 +11,7 @@ deploy:
   github-token: $GITHUB_TOKEN
   keep-history: true
   on:
-    branch: gh-pages
+    branch: fix/travis-config
   script:
     - /bin/bash ./update-readmes.sh
     - /bin/bash ./update-community-readmes.sh

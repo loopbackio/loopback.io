@@ -12,8 +12,8 @@ summary:
 
 In LoopBack 4, the [`Application`](http://apidocs.strongloop.com/@loopback%2fcore/#Application)
 class is the central class for setting up all of your module's components,
-controllers, servers and bindings. The `Application` class extends 
-[Context](Context.html), and provides the controls for starting and stopping
+controllers, servers and bindings. The `Application` class extends
+[Context](Context.md), and provides the controls for starting and stopping
 itself and its associated servers.
 
 When using LoopBack 4, we strongly encourage you to create your own subclass
@@ -25,7 +25,7 @@ By making your own application class, you can perform several additional
 tasks as a part of your setup:
 - Pass configuration into the base class constructor
 - Perform some asynchronous wireup before application start
-- Perform some graceful cleanup on application stop 
+- Perform some graceful cleanup on application stop
 
 {% include code-caption.html content="src/widget-application.ts" %}
 ```ts
@@ -72,7 +72,7 @@ Binding is the most commonly-demonstrated form of application configuration
 throughout our examples, and is the recommended method for setting up your
 application.
 
-In addition to the binding functions provided by [Context](Context.html),
+In addition to the binding functions provided by [Context](Context.md),
 the `Application` class also provides some sugar functions for commonly used
 bindings, like `component`, `server` and `controller`:
 
@@ -126,7 +126,7 @@ The `component` function allows binding of component constructors within
 your `Application` instance's context.
 
 For more information on how to make use of components,
-see [Using Components](Using-components.html).
+see [Using Components](Using-components.md).
 
 #### Controllers
 ```ts
@@ -134,7 +134,7 @@ app.controller(FooController);
 app.controller(BarController);
 ```
 Much like the component function, the `controller` function allows
-binding of [Controllers](Controllers.html) to the `Application` context.
+binding of [Controllers](Controllers.md) to the `Application` context.
 
 #### Servers
 ```ts
@@ -142,7 +142,7 @@ app.server(RestServer);
 app.servers([MyServer, GrpcServer]);
 ```
 The `server` function is much like the previous functions, but
-with [Servers](server.html) bulk bindings are possible through the function
+with [Servers](server.md) bulk bindings are possible through the function
 `servers`.
 
 ```ts
@@ -160,7 +160,7 @@ The `Application` class constructor also accepts an
 object which contains component-level configurations such as
 [`RestServerConfig`](http://apidocs.strongloop.com/@loopback%2frest/#RestServerConfig).
 It will automatically create bindings for these configurations and later be injected
-through dependency injections. Visit [Dependency Injection](Dependency-injection.html)
+through dependency injections. Visit [Dependency Injection](Dependency-injection.md)
 for more details.
 
 {% include note.html content="

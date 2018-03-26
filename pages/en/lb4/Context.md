@@ -22,7 +22,7 @@ dependencies, classes, etc).
 dependencies in your app may retrieve it (ie. a centralized place/global
 builtin/in-memory storage mechanism).
 - LoopBack can help "manage" your resources automatically (through
-[Dependency Injection](Dependency-injection.html) and decorators).
+[Dependency Injection](Dependency-injection.md) and decorators).
 - You have full access to updated/real-time application+request state at all
 times.
 
@@ -180,7 +180,7 @@ constructor. Context allows LoopBack to give you the necessary information at
 runtime even if you do not know the value when writing up the Controller.
 The above will print `Hello John` at run time.
 
-Please refer to [Dependency injection](Dependency-injection.html) for further
+Please refer to [Dependency injection](Dependency-injection.md) for further
 details.
 
 ## Context metadata and sugar decorators

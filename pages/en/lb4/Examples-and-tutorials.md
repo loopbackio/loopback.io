@@ -35,4 +35,4 @@ $ lb4 example
   rpc-server: A basic RPC server using a made-up protocol.
 ```
 
-Please follow the instructions in [Install LoopBack4 CLI](Getting-started.html#install-loopback-4-cli) if you don't have `lb4` installed yet.
+Please follow the instructions in [Install LoopBack4 CLI](Getting-started.md#install-loopback-4-cli) if you don't have `lb4` installed yet.
