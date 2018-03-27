@@ -78,12 +78,16 @@ item: api-explorer
 window.onload = function() {
   
   // Build a system
+  // https://github.com/swagger-api/swagger-ui/blob/master/docs/usage/configuration.md
   const ui = SwaggerUIBundle({
     // Default to petstore. LoopBack 4 applications will override it by setting 
     // the url parameter, such as https://loopback.io/api-explorer?url=<swagger-spec-url>
     url: "http://petstore.swagger.io/v2/swagger.json",
     dom_id: '#swagger-ui',
     deepLinking: true,
+    filter: true,
+    defaultModelsExpandDepth: 0,
+    defaultModelExpandDepth: 0,
     presets: [
       SwaggerUIBundle.presets.apis,
       // SwaggerUIStandalonePreset
