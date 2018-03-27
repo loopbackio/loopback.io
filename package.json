@@ -22,7 +22,7 @@
     "@loopback/docs": "latest",
     "getreadmes": "github:strongloop/get-readmes",
     "markdownlint-cli": "github:sequoia/markdownlint-cli",
-    "swagger-ui-dist": "^3.4.4"
+    "swagger-ui-dist": "^3.13.1"
   },
   "license": "MIT",
   "dependencies": {}
