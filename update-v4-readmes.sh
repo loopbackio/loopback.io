@@ -15,14 +15,14 @@
 #
 (cat <<LIST_END
 strongloop loopback-next master packages/metadata/README.md
-strongloop loopback-next master packages/example-getting-started/README.md
-strongloop loopback-next master packages/example-getting-started/docs/controller.md
-strongloop loopback-next master packages/example-getting-started/docs/datasource.md
-strongloop loopback-next master packages/example-getting-started/docs/juggler.md
-strongloop loopback-next master packages/example-getting-started/docs/model.md
-strongloop loopback-next master packages/example-getting-started/docs/putting-it-together.md
-strongloop loopback-next master packages/example-getting-started/docs/repository.md
-strongloop loopback-next master packages/example-getting-started/docs/scaffolding.md
+strongloop loopback-next master packages/example-todo/README.md
+strongloop loopback-next master packages/example-todo/docs/controller.md
+strongloop loopback-next master packages/example-todo/docs/datasource.md
+strongloop loopback-next master packages/example-todo/docs/juggler.md
+strongloop loopback-next master packages/example-todo/docs/model.md
+strongloop loopback-next master packages/example-todo/docs/putting-it-together.md
+strongloop loopback-next master packages/example-todo/docs/repository.md
+strongloop loopback-next master packages/example-todo/docs/scaffolding.md
 LIST_END
 ) | while read org repo branch file module; do
   if [ -z "$file" ]; then
