@@ -8,31 +8,30 @@ permalink: /doc/en/contrib/Reporting-issues.html
 summary: Follow the procedure outlined here when reporting issues with the LoopBack project.
 ---
 
-## Don't use an issue to ask a question
-
-{% include warning.html content="
-DO NOT post questions as GitHub issues, which are for feature requests and bug reports _only_.  Questions will be closed IMMEDIATELY.
-" %}
+## Before asking a question on GitHub
 
 If you have a question about how to do something in LoopBack, follow these steps:
 
 1. [Consult the documentation](../../) and the [API documentation](http://apidocs.strongloop.com).  **NOTE**: The search box above searches _both_ of these sites.
-1. If you don't find an answer to your question, then do one of the following:
+2. If you don't find an answer to your question, then do one of the following:
   - Search and then ask on the [developer forum / Google group](https://groups.google.com/forum/#!forum/loopbackjs).
   - Search and then ask on  [StackOverflow](http://stackoverflow.com/questions/tagged/loopbackjs+or+strongloop?sort=newest&pageSize=50).
   - Ask on [Gitter](https://gitter.im/strongloop/loopback).
 
-Posting to Google Group or StackOverflow is preferred so others may benefit from the answer.
+    Posting to Google Group or StackOverflow is preferred so others may benefit from the answer.
+
+3. If the above two ways do not work, open a GitHub issue on the corresponding LoopBack repo,
+   providing as much information as possible, for example, versions and use case scenarios for features.
 
 ## How to report an issue
 
 To report an issue:
 
  1. Search [existing issues](https://github.com/strongloop/loopback/issues).  It's possible someone has already reported the same problem.
- 1. Make sure you have a [GitHub account](https://github.com/signup/free).
- 1. Create a [new issue](https://github.com/strongloop/loopback/issues) for the bug, following the steps outlined below
+ 2. Make sure you have a [GitHub account](https://github.com/signup/free).
+ 3. Create a [new issue](https://github.com/strongloop/loopback/issues) for the bug, following the steps outlined below
 
-## 1. Determine the issue type
+### Determine the issue type
 
 There are three types of issues:
 
