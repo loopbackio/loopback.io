@@ -5,6 +5,10 @@ node_js:
 os:
   - linux
 
+branches:
+  only:
+  - gh-pages
+
 deploy:
   provider: pages
   skip-cleanup: true
