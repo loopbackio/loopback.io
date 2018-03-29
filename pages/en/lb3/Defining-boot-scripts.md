@@ -131,7 +131,7 @@ module.exports = function(app, [callback]) {
       <td>Object</td>
       <td>Yes</td>
       <td>
-        <p>The application context object. Provides a handle to the application, so (for example) you can get model objects:</p>
+        <p>The application context object. Provides a handle the the application, so (for example) you can get model objects:</p>
         <pre>var User = app.models.User;</pre>
       </td>
     </tr>
