@@ -5,6 +5,9 @@ node_js:
 os:
   - linux
 
+script:
+  skip
+
 branches:
   only:
   - gh-pages
