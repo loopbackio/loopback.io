@@ -4,7 +4,7 @@
   "description": "This file: Node-dependant workflow scripts for the jekyll-based site",
   "scripts": {
     "start": "bundle exec jekyll serve --incremental",
-    "fetch-readmes": "./update-readmes.sh --repos=./_data --out=./_includes/readmes && ./update-v4-readmes.sh",
+    "fetch-readmes": "./update-readmes.sh --repos=./_data --out=./_includes/readmes && ./update-v4-readmes.sh && ./update-community-readmes.sh",
     "lint-readmes": "markdownlint _includes/readmes/",
     "postinstall": "npm run swagger-ui && npm run copydocs",
     "swagger-ui": "node ./api-explorer/upgrade-swagger-ui.js",
@@ -18,8 +18,8 @@
     "url": "git+https://github.com/Strongloop/loopback.io.git"
   },
   "devDependencies": {
-    "fs-extra": "^5.0.0",
     "@loopback/docs": "latest",
+    "fs-extra": "^5.0.0",
     "getreadmes": "github:strongloop/get-readmes",
     "markdownlint-cli": "github:sequoia/markdownlint-cli",
     "swagger-ui-dist": "^3.13.1"

@@ -35,6 +35,9 @@ function copyDocs(src, dest) {
   }
 }
 
+// Remove the original folder so we remove files deleted from @loopback/docs
+removeDir(destDocs);
+
 // copy the latest docs from @loopback/docs to pages/en/lb4 directory
 copyDocs(srcDocs, destDocs);
 
@@ -43,8 +46,6 @@ copyDocs(srcSidebars, destSidebars);
 
 //clean up sidebar dir
 removeDir(srcSidebars);
-
-
 
 const fileToUpdate = path.resolve(destDocs, 'Testing-the-API.md');
 

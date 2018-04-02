@@ -17,10 +17,6 @@ deploy:
   on:
     branch: gh-pages
   script:
-    - /bin/bash ./update-readmes.sh
-    - /bin/bash ./update-community-readmes.sh
-    - /bin/bash ./update-v4-readmes.sh
-    - npm test
+    - npm run fetch-readmes
   email: slnode@ca.ibm.com
   name: StrongLoop Bot
-
