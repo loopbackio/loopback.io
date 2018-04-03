@@ -6,11 +6,14 @@ os:
   - linux
 
 script:
-  skip
+  - skip
 
 branches:
   only:
   - gh-pages
+
+before_deploy:
+  - npm run fetch-readmes
 
 deploy:
   provider: pages
@@ -19,7 +22,5 @@ deploy:
   keep-history: true
   on:
     branch: gh-pages
-  script:
-    - npm run fetch-readmes
   email: slnode@ca.ibm.com
   name: StrongLoop Bot
