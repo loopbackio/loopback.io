@@ -353,7 +353,7 @@ Once you create a container, it will provide both a REST and Node API, as descri
     </tr>
     <tr>
       <td>Download a file within specified container.</td>
-      <td>download(container, file, res, cb)</td>
+      <td>download(container, file, req, res, cb)</td>
       <td>GET<br>/api/containers/:container/download/:file</td>
     </tr>
     <tr>
