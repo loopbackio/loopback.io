@@ -25,7 +25,9 @@ It has Node.js and REST APIs for managing binary content in cloud providers, in
 You use the storage component like any other LoopBack data source such as a database.
 Like other data sources, it supports create, read, update, and delete (CRUD) operations with exactly the same LoopBack and REST APIs.
 
-{% include warning.html content="The LoopBack storage component uses [formidable](https://www.npmjs.com/package/formidable), use of other form-parsing middleware in your app can lead to unexpected results." %}
+{% include warning.html content="
+The LoopBack storage component uses [formidable](https://www.npmjs.com/package/formidable), use of other form-parsing middleware in your app can lead to unexpected results.
+" %}
 
 {% include note.html content="
 This component does not yet provide metadata management \"out of the box\".
