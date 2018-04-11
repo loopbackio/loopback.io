@@ -195,7 +195,7 @@ import {repository} from '@loopback/repository';
 
 export class HelloController {
   constructor(
-    @repository(HelloRepository.name) protected repository: HelloRepository,
+    @repository(HelloRepository) protected repository: HelloRepository,
   ) {}
 
   // returns a list of our objects
@@ -242,7 +242,7 @@ The example below shows the previous controller revamped with `HttpErrors` along
 with a test to verify that the error is thrown properly.
 
 ```ts
-// test/integration/controllers/hello.controller.test.ts
+// test/integration/controllers/hello.controller.integration.ts
 import {HelloController} from '../../../src/controllers';
 import {HelloRepository} from '../../../src/repositories';
 import {testdb} from '../../fixtures/datasources/testdb.datasource';
@@ -273,7 +273,7 @@ import {repository} from '@loopback/repository';
 
 export class HelloController {
   constructor(
-    @repository(HelloRepository.name) protected repo: HelloRepository,
+    @repository(HelloRepository) protected repo: HelloRepository,
   ) {}
 
   // returns a list of our objects

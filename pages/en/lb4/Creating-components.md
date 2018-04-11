@@ -11,15 +11,15 @@ summary:
 As explained in [Using Components](Using-components.md), a typical LoopBack component is an npm package exporting a Component class.
 
 ```ts
-import {MyController} from './controllers/my-controller';
-import {MyValueProvider} from './providers/my-value-provider';
+import {MyController} from './controllers/my.controller';
+import {MyValueProvider} from './providers/my-value.provider';
 import {Component} from '@loopback/core';
 
 export class MyComponent implements Component {
   constructor() {
     this.controllers = [MyController];
     this.providers = {
-      'my.value': MyValueProvider,
+      'my-value': MyValueProvider,
     };
   }
 }
@@ -32,7 +32,7 @@ class is created and then:
 - Each Provider is bound to its key in `providers` object.
 
 The example `MyComponent` above will add `MyController` to application's API and
-create a new binding `my.value` that will be resolved using `MyValueProvider`.
+create a new binding `my-value` that will be resolved using `MyValueProvider`.
 
 ## Providers
 
@@ -54,12 +54,33 @@ Notice that the provider class itself does not specify any binding key, the key
 is assigned by the component class.
 
 ```ts
-import {MyValueProvider} from './providers/my-value-provider';
+import {MyValueProvider} from './providers/my-value.provider';
 
 export class MyComponent implements Component {
   constructor() {
     this.providers = {
       'my-component.my-value': MyValueProvider,
+    };
+  }
+}
+```
+
+We recommend to component authors to use
+[Typed binding keys](./Context.md#encoding-value-types-in-binding-keys)
+instead of string keys and to export an object (a TypeScript namespace)
+providing constants for all binding keys defined by the component.
+
+```ts
+import {MyValue, MyValueProvider} from './providers/my-value-provider';
+
+export namespace MyComponentKeys {
+  export const MY_VALUE = new BindingKey<MyValue>('my-component.my-value');
+}
+
+export class MyComponent implements Component {
+  constructor() {
+    this.providers = {
+      [MyComponentKeys.MY_VALUE.key]: MyValueProvider,
     };
   }
 }
@@ -121,13 +142,12 @@ resolve them automatically.
 
 ```ts
 import {Provider} from '@loopback/context';
-import {RestBindings} from '@loopback/rest';
-import {ServerRequest} from 'http';
+import {ParsedRequest, RestBindings} from '@loopback/rest';
 const uuid = require('uuid/v4');
 
 class CorrelationIdProvider implements Provider<string> {
   constructor(
-    @inject(RestBindings.Http.REQUEST) private request: ServerRequest,
+    @inject(RestBindings.Http.REQUEST) private request: ParsedRequest,
   ) {}
 
   value() {
@@ -147,67 +167,78 @@ The idiomatic solution has two parts:
 
 1. The component should define and bind a new [Sequence action](Sequence.md#actions), for example `authentication.actions.authenticate`:
 
-   ```ts
-   import {Component} from '@loopback/core';
+    ```ts
+    import {Component} from '@loopback/core';
 
-   class AuthenticationComponent implements Component {
-     constructor() {
-       this.providers = {
-         'authentication.actions.authenticate': AuthenticateActionProvider,
-       };
-     }
-   }
-   ```
+    export namespace AuthenticationBindings {
+      export const AUTH_ACTION = BindingKey.create<AuthenticateFn>(
+        'authentication.actions.authenticate',
+      );
+    }
 
-   A sequence action is typically implemented as an `action()` method in the provider.
+    class AuthenticationComponent implements Component {
+      constructor() {
+        this.providers = {
+          [AuthenticationBindings.AUTH_ACTION.key]: AuthenticateActionProvider,
+        };
+      }
+    }
+    ```
 
-   ```ts
-   class AuthenticateActionProvider implements Provider<AuthenticateFn> {
-     // Provider interface
-     value() {
-       return request => this.action(request);
-     }
+    A sequence action is typically implemented as an `action()` method
+    in the provider.
 
-     // The sequence action
-     action(request): UserProfile | undefined {
-       // authenticate the user
-     }
-   }
-   ```
+    ```ts
+    class AuthenticateActionProvider implements Provider<AuthenticateFn> {
+      // Provider interface
+      value() {
+        return request => this.action(request);
+      }
 
-   It may be tempting to put action implementation directly inside the anonymous arrow function returned by provider's `value()` method. We consider that as a bad practice though, because when an error occurs, the stack trace will contain only an anonymous function that makes it more difficult to link the entry with the sequence action.
+      // The sequence action
+      action(request): UserProfile | undefined {
+        // authenticate the user
+      }
+    }
+    ```
+
+    It may be tempting to put action implementation directly inside
+    the anonymous arrow function returned by provider's `value()` method.
+    We consider that as a bad practice though, because when an error occurs,
+    the stack trace will contain only an anonymous function that makes it more
+    difficult to link the entry with the sequence action.
 
 2. The application should use a custom `Sequence` class which calls this new sequence action in an appropriate place.
 
-   ```ts
-   class AppSequence implements SequenceHandler {
-     constructor(
-       @inject(RestBindings.Http.CONTEXT) protected ctx: Context,
-       @inject(RestBindings.SequenceActions.FIND_ROUTE) protected findRoute: FindRoute,
-       @inject(RestBindings.SequenceActions.PARSE_PARAMS) protected parseParams: ParseParams,
-       @inject(RestBindings.SequenceActions.INVOKE_METHOD) protected invoke: InvokeMethod,
-       @inject(RestBindings.SequenceActions.SEND) public send: Send,
-       @inject(RestBindings.SequenceActions.REJECT) public reject: Reject,
-       // Inject the new action here:
-       @inject('authentication.actions.authenticate') protected authenticate: AuthenticateFn
-     ) {}
+    ```ts
+    class AppSequence implements SequenceHandler {
+      constructor(
+        @inject(RestBindings.Http.CONTEXT) protected ctx: Context,
+        @inject(RestBindings.SequenceActions.FIND_ROUTE) protected findRoute: FindRoute,
+        @inject(RestBindings.SequenceActions.PARSE_PARAMS) protected parseParams: ParseParams,
+        @inject(RestBindings.SequenceActions.INVOKE_METHOD) protected invoke: InvokeMethod,
+        @inject(RestBindings.SequenceActions.SEND) public send: Send,
+        @inject(RestBindings.SequenceActions.REJECT) public reject: Reject,
+        // Inject the new action here:
+        @inject('authentication.actions.authenticate') protected authenticate: AuthenticateFn
+      ) {}
 
-     async handle(req: ParsedRequest, res: ServerResponse) {
-       try {
-         const route = this.findRoute(req);
+      async handle(req: ParsedRequest, res: ServerResponse) {
+        try {
+        const route = this.findRoute(req);
 
-         // Invoke the new action:
-         const user = await this.authenticate(req);
+          // Invoke the new action:
+          const user = await this.authenticate(req);
 
-         const args = await parseOperationArgs(req, route);
-         const result = await this.invoke(route, args);
-         this.send(res, result);
-       } catch (err) {
-         this.reject(res, req, err);
-       }
-     }
-   }
-   ```
+          const args = await parseOperationArgs(req, route);
+          const result = await this.invoke(route, args);
+          this.send(res, result);
+        } catch (err) {
+          this.reject(res, req, err);
+        }
+      }
+    }
+    ```
 
 ### Accessing Elements contributed by other Sequence Actions
 
@@ -223,7 +254,7 @@ of the actual value. This allows you to defer resolution of your dependency only
 until the sequence action contributing this value has already finished.
 
 ```ts
-export class AuthenticationProvider implements Provider<AuthenticateFn> {
+export class AuthenticateActionProvider implements Provider<AuthenticateFn> {
   constructor(
     @inject.getter(BindingKeys.Authentication.STRATEGY)
     readonly getStrategy
@@ -233,7 +264,7 @@ export class AuthenticationProvider implements Provider<AuthenticateFn> {
     return request => this.action(request);
   }
 
-  async action(request): UserProfile | undefined {
+  async action(request): Promise<UserProfile | undefined> {
     const strategy = await this.getStrategy();
     // ...
   }
@@ -246,7 +277,7 @@ Use `@inject.setter` decorator to obtain a setter function that can be used to
 contribute new Elements to the request context.
 
 ```ts
-export class AuthenticationProvider implements Provider<AuthenticateFn> {
+export class AuthenticateActionProvider implements Provider<AuthenticateFn> {
   constructor(
     @inject.getter(BindingKeys.Authentication.STRATEGY) readonly getStrategy,
     @inject.setter(BindingKeys.Authentication.CURRENT_USER)
@@ -259,7 +290,8 @@ export class AuthenticationProvider implements Provider<AuthenticateFn> {
 
   async action(request): UserProfile | undefined {
     const strategy = await this.getStrategy();
-    const user = this.setCurrentUser(user); // ... authenticate
+    // (authenticate the request using the obtained strategy)
+    const user = this.setCurrentUser(user);
     return user;
   }
 }
@@ -275,9 +307,9 @@ Suppose an app has multiple components with repositories bound to each of them.
 You can use function `RepositoryMixin()` to mount those repositories to application level context.
 
 The following snippet is an abbreviated function
-[`RepositoryMixin`](https://github.com/strongloop/loopback-next/blob/master/packages/repository/src/repository-mixin.ts):
+[`RepositoryMixin`](https://github.com/strongloop/loopback-next/blob/master/packages/repository/src/mixins/repository.mixin.ts):
 
-{% include code-caption.html content="mixins/src/repository-mixin.ts" %}
+{% include code-caption.html content="src/mixins/repository.mixin.ts" %}
 
 ```ts
 export function RepositoryMixin<T extends Class<any>>(superClass: T) {
@@ -315,9 +347,9 @@ Then you can extend the app with repositories in a component:
 {% include code-caption.html content="index.ts" %}
 
 ```ts
-import {RepositoryMixin} from 'mixins/src/repository-mixin';
+import {RepositoryMixin} from 'src/mixins/repository.mixin';
 import {Application} from '@loopback/core';
-import {FooComponent} from 'components/src/Foo';
+import {FooComponent} from 'src/foo.component';
 
 class AppWithRepoMixin extends RepositoryMixin(Application) {}
 let app = new AppWithRepoMixin();
