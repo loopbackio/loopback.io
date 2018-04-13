@@ -261,9 +261,9 @@ as shown in the following table.
       <td rowspan="3">
 <pre style="font-size:11px;">{
  provider: 'google',
- 'keyFilename': 'path/to/keyfile.json',
- 'projectId': '...',
- 'nameConflict': 'makeUnique'
+ keyFilename: 'path/to/keyfile.json',
+ projectId: '...',
+ nameConflict: 'makeUnique'
 }</pre>
       </td>
     </tr>
@@ -283,7 +283,8 @@ as shown in the following table.
       <td rowspan="2">
 <pre style="font-size:11px;">{
   provider: 'filesystem',
-  root: '/tmp/storage'
+  root: '/tmp/storage',
+  nameConflict: 'makeUnique'
 }</pre>
       </td>
     </tr>
