@@ -44,9 +44,6 @@ copyDocs(srcDocs, destDocs);
 //copy over sidebar for LoopBack 4
 copyDocs(srcSidebars, destSidebars);
 
-//clean up sidebar dir
-removeDir(srcSidebars);
-
 const fileToUpdate = path.resolve(destDocs, 'Testing-the-API.md');
 
 // bug in `jekyll-relative-links` plugin; probably safe to remove when
