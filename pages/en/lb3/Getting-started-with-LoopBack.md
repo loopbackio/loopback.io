@@ -10,7 +10,7 @@ summary: A short tutorial to introduce you to LoopBack.
 ---
 
 This tutorial will walk through the initial steps to create a basic LoopBack application.
-The application you'll create is in the loopback-getting-started GitHub repository.  To make it easy for you to pick up the tutorial at any point, there are tags for each step of the tutorial.
+The application you'll create is in the [loopback-getting-started](https://github.com/strongloop/loopback-getting-started) GitHub repository.  To make it easy for you to pick up the tutorial at any point, there are tags for each step of the tutorial.
 
 You can run through the steps to create the app and get a sense for some of the things LoopBack can do, or just skip to the one that interests you:
 
