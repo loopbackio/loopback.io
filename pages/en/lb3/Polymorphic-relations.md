@@ -343,21 +343,21 @@ However, a hasAndBelongsToMany relation will automatically set up a belongsTo r
 {% include code-caption.html content="/common/models/model.js" %}
 ```javascript
 Employee.hasAndBelongsToMany(Picture, {
-  through: PictureLink,
+  through: ImageLink,
   polymorphic: 'imageable'
 });
 Product.hasAndBelongsToMany(Picture, {
-  through: PictureLink,
+  through: ImageLink,
   polymorphic: 'imageable'
 });
 // Optionally, define inverse hasMany relations with '(invert: true)'
 Picture.hasMany(Employee, {
-  through: PictureLink,
+  through: ImageLink,
   polymorphic: 'imageable',
   invert: true
 });
 Picture.hasMany(Product, {
-  through: PictureLink,
+  through: ImageLink,
   polymorphic: 'imageable',
   invert: true
 });
