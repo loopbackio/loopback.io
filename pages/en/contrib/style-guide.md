@@ -339,7 +339,7 @@ if (testInEquality({gte: example.between[0]}, value) &&
 
 **Good**:
 
-```
+```js
 const titles = [
   {title: 'Title A', subject: 'B'},
   {title: 'Title Z', subject: 'A'},
@@ -352,7 +352,7 @@ const titles = [
 
 **Bad**:
 
-```
+```js
 const titles = [{title: 'Title A', subject: 'B'},
                 {title: 'Title Z', subject: 'A'},
                 {title: 'Title M', subject: 'C'},
@@ -361,7 +361,7 @@ const titles = [{title: 'Title A', subject: 'B'},
                 {title: 'Title C', subject: 'D'}];
 ```
 
-```
+```js
 const titles = [{ title: 'Title A', subject: 'B' },
   {title: 'Title Z', subject: 'A'},
   {title: 'Title M', subject: 'C'},
@@ -374,7 +374,7 @@ const titles = [{ title: 'Title A', subject: 'B' },
 
 In general, group related lines together (with a single empty line in between groups).
 
-```
+```js
 if (err) return done(err);
 
 const cat = new Cat();
@@ -389,7 +389,7 @@ However, if the method is short (3-5 lines) then just group it all together.
 
 **Good**:
 
-```
+```js
 if (err) return done(err);
 expect(result).to...;
 done();
@@ -397,7 +397,7 @@ done();
 
 **Bad**:
 
-```
+```js
 if (err) return done(err);
 
 expect(result).to...;
