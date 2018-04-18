@@ -163,7 +163,7 @@ class Foo {
 
 ### Classes
 
-ES6 introduced syntax-sugar for defining classes.  Uee this syntax instead of the
+ES6 introduced syntax-sugar for defining classes. Use this syntax instead of the
 old `require('util').inherits` approach.
 
 **Good**:
@@ -339,7 +339,7 @@ if (testInEquality({gte: example.between[0]}, value) &&
 
 **Good**:
 
-```
+```js
 const titles = [
   {title: 'Title A', subject: 'B'},
   {title: 'Title Z', subject: 'A'},
@@ -352,7 +352,7 @@ const titles = [
 
 **Bad**:
 
-```
+```js
 const titles = [{title: 'Title A', subject: 'B'},
                 {title: 'Title Z', subject: 'A'},
                 {title: 'Title M', subject: 'C'},
@@ -361,7 +361,7 @@ const titles = [{title: 'Title A', subject: 'B'},
                 {title: 'Title C', subject: 'D'}];
 ```
 
-```
+```js
 const titles = [{ title: 'Title A', subject: 'B' },
   {title: 'Title Z', subject: 'A'},
   {title: 'Title M', subject: 'C'},
@@ -374,7 +374,7 @@ const titles = [{ title: 'Title A', subject: 'B' },
 
 In general, group related lines together (with a single empty line in between groups).
 
-```
+```js
 if (err) return done(err);
 
 const cat = new Cat();
@@ -389,7 +389,7 @@ However, if the method is short (3-5 lines) then just group it all together.
 
 **Good**:
 
-```
+```js
 if (err) return done(err);
 expect(result).to...;
 done();
@@ -397,12 +397,56 @@ done();
 
 **Bad**:
 
-```
+```js
 if (err) return done(err);
 
 expect(result).to...;
 
 done();
+```
+
+## Guidelines for async code
+
+### The async function modifier
+
+Always use the `async` keyword when defining a function which will return a Promise. (This makes the return type unambiguous, and it also turns any accidental error inside the function into a rejected promise.)
+
+Return values directly, to avoid using `Promise.resolve()`. (This reduces visual clutter.)
+
+**Good**:
+
+```js
+async function getFive() {
+  return 5;
+}
+```
+
+**Bad**:
+
+```js
+function getFive() {
+  return Promise.resolve(5);
+}
+```
+
+### Use throw instead of Promise.reject
+
+Throw an error instead of using `Promise.reject()`. (This reduces visual clutter, and also makes it easier to refactor the code into a deep synchronous function.)
+
+**Good**:
+
+```js
+async function getDodo() {
+  throw new Error('No dodos available');
+}
+```
+
+**Bad**:
+
+```js
+async function getDodo() {
+  return Promise.reject(new Error('No dodos available'));
+}
 ```
 
 ## Style guidelines for tests
