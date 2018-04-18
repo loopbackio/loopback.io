@@ -21,9 +21,8 @@
   "devDependencies": {
     "@loopback/docs": "*",
     "fs-extra": "^5.0.0",
-    "getreadmes": "github:strongloop/get-readmes",
     "markdownlint-cli": "github:sequoia/markdownlint-cli",
-    "swagger-ui-dist": "^3.13.1"
+    "swagger-ui-dist": "^3.13.4"
   },
   "license": "MIT",
   "dependencies": {}
