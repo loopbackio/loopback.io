@@ -405,6 +405,50 @@ expect(result).to...;
 done();
 ```
 
+## Guidelines for async code
+
+### The async function modifier
+
+Always use the `async` keyword when defining a function which will return a Promise. (This makes the return type unambiguous, and it also turns any accidental error inside the function into a rejected promise.)
+
+Return values directly, to avoid using `Promise.resolve()`. (This reduces visual clutter.)
+
+**Good**:
+
+```js
+async function getFive() {
+  return 5;
+}
+```
+
+**Bad**:
+
+```js
+function getFive() {
+  return Promise.resolve(5);
+}
+```
+
+### Use throw instead of Promise.reject
+
+Throw an error instead of using `Promise.reject()`. (This reduces visual clutter, and also makes it easier to refactor the code into a deep synchronous function.)
+
+**Good**:
+
+```js
+async function getDodo() {
+  throw new Error('No dodos available');
+}
+```
+
+**Bad**:
+
+```js
+async function getDodo() {
+  return Promise.reject(new Error('No dodos available'));
+}
+```
+
 ## Style guidelines for tests
 
 ### Sandbox directories
