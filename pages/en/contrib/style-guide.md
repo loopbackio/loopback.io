@@ -163,7 +163,7 @@ class Foo {
 
 ### Classes
 
-ES6 introduced syntax-sugar for defining classes.  Uee this syntax instead of the
+ES6 introduced syntax-sugar for defining classes. Use this syntax instead of the
 old `require('util').inherits` approach.
 
 **Good**:
