@@ -23,7 +23,7 @@ Here is the default version created by the [Application generator](Application-g
     "compression": {},
     "cors": {
       "params": {
-        "origin": true,
+        "origin": "*",
         "credentials": true,
         "maxAge": 86400
       }
@@ -139,9 +139,9 @@ You can set other CORS properties as well. For more information, see [cors](http
   <tbody>    
     <tr>
       <td>cors.params.origin</td>
-      <td>Boolean</td>
+      <td>String|Boolean</td>
       <td>Configures the <strong>Access-Control-Allow-Origin</strong> CORS header.
-          Expects a string (for example: "http://example.com/").
+          Expects a string (for example: "http://example.com/" or "*").
           Set to <code>true</code> to reflect the <a href="http://tools.ietf.org/html/draft-abarth-origin-09" class="external-link">request origin</a>,
           as defined by <code>req.header('Origin')</code>. Set to <code>false</code> to disable CORS. Can also be set to a function,
           which takes the request origin as the first parameter and a callback (which expects the signature <code>err [object], allow [bool]</code>) as the second.</td>
