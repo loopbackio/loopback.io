@@ -248,10 +248,10 @@ First define relations in through model ImageLink.
       "type": "belongsTo",
       "model": "Picture",
       "foreignKey": ""
-    },
-    "imageable": {
-      "type": "belongsTo",
-      "polymorphic": true
+      "imageable": {
+        "type": "belongsTo",
+        "polymorphic": true
+      }
     }
   }
 ...
