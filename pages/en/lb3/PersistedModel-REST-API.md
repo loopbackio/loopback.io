@@ -68,7 +68,7 @@ Update an existing model instance or insert a new one into the data source. 
 The update will override any specified attributes in the request data object.
 It won't remove  existing ones unless the value is set to null.
 
-Performs [upsert](http://apidocs.loopback.io/loopback/#persistedmodelupsert)to detect if there is a matching instance.
+Performs [upsert](http://apidocs.loopback.io/loopback/#persistedmodel-upsert) to detect if there is a matching instance.
 If not, then inserts (creates) a new instance. If there is a matching instance, updates it.
 
 <pre class="query_syntax">PUT /<i>modelName</i></pre>
