@@ -24,8 +24,6 @@ github_editme_path: strongloop/loopback.io/blob/gh-pages/pages
 
 lb4_editme_path: strongloop/loopback-next/blob/master/docs/site
 
-google_analytics: UA-102515604-1
-
 disqus_shortname:
 # if you're using disqus for comments, add the shortname here. if not, leave this value blank.
 
