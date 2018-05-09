@@ -223,7 +223,7 @@ Post.create({title: 't1', content: 'c1'}, options, function(err, post) {
 
 ## Set up transaction hooks
 
-There are four types of observable events for a transaction:
+There are five types of observable events for a transaction:
 
 * `before commit`
 * `after commit`
@@ -248,6 +248,11 @@ tx.observe('before rollback', function(context, next) {
 });
 
 tx.observe('after rollback', function(context, next) {
+  // ...
+  next();
+});
+
+tx.observe('timeout', function(context, next) {
   // ...
   next();
 });
