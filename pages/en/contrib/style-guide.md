@@ -449,6 +449,46 @@ async function getDodo() {
 }
 ```
 
+### Always await the last promise in a function
+
+If the last line of a function handles a promise, always `await` that promise, regardless whether the result will be returned or not.
+
+(This makes it clear whether we intend to return the value or not, and dismisses any idea that we are still linking up the promise chain in pre-await style.  Consistently using await also ensures that a try-catch around the function body will catch errors even from the last call.)
+
+**Good**:
+
+```js
+async function openCircus() {
+  await openCarPark();
+  await openDoors();
+}
+```
+
+**Good**:
+
+```js
+async function getAnimal() {
+  return await getElephant();
+}
+```
+
+**Bad**:
+
+```js
+async function openCircus() {
+  await openCarPark();
+  return openDoors();
+}
+```
+
+**Bad**:
+
+```js
+async function getAnimal() {
+  return getElephant();
+}
+```
+
 ## Style guidelines for tests
 
 ### Sandbox directories
