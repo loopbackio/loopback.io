@@ -4,16 +4,11 @@ Browse and test your LoopBack app's APIs.
 
 ## Supported versions
 
-Current|Long Term Support
-:-:|:-:
-4.x|2.x
+Current|Long Term Support|Maintenance
+:-:|:-:|:-:
+6.x|5.x|4.x
 
 Learn more about our LTS plan in [docs](http://loopback.io/doc/en/contrib/Long-term-support.html).
-
-*The only difference between 3.x and 4.x versions is which Node.js versions
-are supported (loopback-component-explorer 4.x dropped support for pre-v4
-versions of Node.js). Therefore we decided to not maintain 3.x version line and
-provide LTS support for the 2.x version line instead.*
 
 ## Basic Usage
 
