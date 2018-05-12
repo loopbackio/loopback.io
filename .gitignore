@@ -19,3 +19,5 @@ dist
 .jekyll-metadata
 vendor
 .bundle
+pages/en/lb4/
+pages/**/*/readmes/

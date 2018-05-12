@@ -80,10 +80,68 @@ margin-top: -40px
 
 body h1 {margin-top:40px;}
 
+/* LoopBack Search CSS */
+
 .lb-search-container {
   padding: 0 10px;
   background-color: #72ac4a;
 }
+
+.lb-search {
+    display: inline-flex;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.lb-search input {
+    color: #72ac4a;
+}
+
+.search-bar::placeholder {
+    color: rgba(114, 172, 74, 0.5);
+}
+
+.resultList {
+    list-style: none;
+}
+
+.resultList a.title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #72ac4a;
+}
+
+.resultList a.link {
+    color: #72ac4a;
+    display: block;
+    margin-top: -5px;
+    margin-bottom: 5px;
+}
+
+.resultList em {
+    font-weight: bold;
+}
+
+.resultList br {
+    line-height: 175%;
+}
+
+.resultList li {
+    border-bottom: 1px solid #72ac4a;
+    margin-bottom: 5px;
+}
+
+.pagination {
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pagination a {
+    color: #72ac4a;
+}
+
+/* End of Search CSS */
 
 @media only screen and (min-width: 768px) {
   .lb-search-container {

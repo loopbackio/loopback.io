@@ -248,6 +248,7 @@ DEPENDENCIES
   jekyll
   jekyll-redirect-from
   jekyll-relative-links
+  jekyll-sitemap
   rouge
 
 BUNDLED WITH
