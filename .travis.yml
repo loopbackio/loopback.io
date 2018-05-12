@@ -13,7 +13,8 @@ branches:
   - gh-pages
 
 before_deploy:
-  - npm run fetch-readmes
+  - npm run build
+  - npm run discovery-upload
 
 deploy:
   provider: pages

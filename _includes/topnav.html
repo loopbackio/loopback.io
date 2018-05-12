@@ -51,23 +51,19 @@
                 {% endfor %}
                 {% if site.feedback_disable == null or site.feedback_disable == false %}
 			{% include feedback.html %}
-		{% endif %}
-                <!-- comment out this block if you want to hide search -->
+    {% endif %}
                 <li>
-                  <div class="lb-search-container"><!-- Google Custom Search -->
-                    <script>
-                      (function() {
-                        var cx = '008208300112466859893:btbpudzecwg';
-                        var gcse = document.createElement('script');
-                        gcse.type = 'text/javascript';
-                        gcse.async = true;
-                        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
-                        var s = document.getElementsByTagName('script')[0];
-                        s.parentNode.insertBefore(gcse, s);
-                      })();
-                    </script>
-                    <gcse:search></gcse:search>
-                  </div><!-- Google Custom Search -->
+                    <form name="search" class="input-group lb-search" action="/search" method="GET">
+                        <input type="text" class="form-control search-bar" placeholder="Search (powered by Watson)" name="q">
+                        {% if page.sidebar contains "lb" %}
+                          <input type="hidden" name="sidebar" value="{{page.sidebar}}">
+                        {% endif %}
+                        <div class="input-group-btn">
+                            <button type="submit" class="btn btn-default" aria-label="search">
+                              <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                            </button>
+                        </div>
+                      </form>
                 </li>
             </ul>
         </div>

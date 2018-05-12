@@ -1,22 +1,25 @@
 # loopback.io
 
-LoopBack community site, http://loopback.io.  This website now includes the LoopBack documentation.
+LoopBack community site, http://loopback.io. This website now includes the LoopBack documentation.
 
 NOTE: The website is served from the `gh-pages` branch.
 
 This repository is provided under the [MIT License](LICENSE).
 
-##  Setup
+## Setup
 
 To preview the website locally:
 
-1. Install [Ruby and Bundler](https://help.github.com/articles/setting-up-your-pages-site-locally-with-jekyll/) if you don't have them already.
+1.  Install [Ruby and Bundler](https://help.github.com/articles/setting-up-your-pages-site-locally-with-jekyll/) if you don't have them already.
 
-2. Clone this repo (you might use the SSH URL instead of HTTPS).:
+2.  Clone this repo (you might use the SSH URL instead of HTTPS).:
+
 ```
 git clone https://github.com/strongloop/loopback.io.git
 ```
-3. `cd` to the repository directory and run the following command:
+
+3.  `cd` to the repository directory and run the following command:
+
 ```
 $ cd loopback.io
 $ bundle install
@@ -34,7 +37,7 @@ $ npm start
 
 Then, load [http://localhost:4001/](http://localhost:4001/) on your browser.
 
-NOTE:  The docs part will be at [http://localhost:4001/doc](http://localhost:4001/doc).  It's not yet linked from the main "overview" part of the site, but will be once we launch (RSN).
+NOTE: The docs part will be at [http://localhost:4001/doc](http://localhost:4001/doc). It's not yet linked from the main "overview" part of the site, but will be once we launch (RSN).
 
 ## Formatting
 
@@ -46,10 +49,10 @@ Jekyll uses the [Liquid template engine](http://liquidmarkup.org/) for templatin
 
 The documentation incorporates README files from a number of LoopBack example repositories.
 We use the [get-readmes](https://github.com/strongloop/get-readmes) utility to fetch
-the README files directly from GitHub.  Here is how to update the READMEs
+the README files directly from GitHub. Here is how to update the READMEs
 
-1. `npm install` (*first time/setup only*)
-2. `npm run fetch-readmes`
+1.  `npm install` (_first time/setup only_)
+2.  `npm run fetch-readmes`
 
 From there, the README markdown files are incorporated into documentation articles
 using the standard Jekyll "include" syntax as follows (for example):
@@ -89,4 +92,70 @@ You can run this script thus:
 
 ```js
 $ npm run lint-readmes
+```
+
+## LoopBack.io Docs Search
+
+Docs Search is powered by [IBM Watson Discovery](https://www.ibm.com/watson/services/discovery/).
+
+### How it works
+
+LoopBack Docs are uploaded to Discovery by Travis CI (before deploying a new
+site -- after changes have been merged into `gh-pages` branch) automatically.
+The script creates a new [collection](https://console.bluemix.net/docs/services/discovery/data-crawler-qs.html#create-a-collection)
+and uploads each doc to that. The content of the docs along with certain
+metadata can be found in `_site/posts.json`. Travis uploads each Object in that
+file as a separate document (only uploads `documentation` pages).
+
+Travis CI has encrypted variables which sets the environment variables for
+Discovery username / password. Core team can reach out to Taranveer Virk /
+Diana Lau for these credentials if needed.
+
+* Once docs have been uploaded, Travis will delete the previous collection as
+  the Search URL uses the oldest collection available to serve results.
+
+If you want to try this out locally, you can create an account for Watson
+Discovery (Use the Lite plan which is free). Set the following environment
+variables locally:
+
+```
+export DISCOVERY_USERNAME="username"
+export DISCOVERY_PASSWORD="password"
+```
+
+You can now upload docs to your Watson Discovery instance by running
+
+```
+npm run discovery-upload
+```
+
+### Front End
+
+Each documentation page has a search bar the top. The search will redirect the
+user to a `/search` page to show the results. The results are retrieved from a
+[IBM Cloud Function](https://www.ibm.com/cloud/functions) that acts as a proxy
+to protect Watson Discovery credentials. The search bar also contains a hidden
+form input that sets the `sidebar` value and Watson Discovery filters content
+based on this value to return context aware results. Ex: Searching for the word
+`controller` from a LoopBack 4 documentation page will return LoopBack 4 results.
+To search all documents you can search from the `/search` page. Community Docs
+and Contribution docs are included in all results.
+
+### Cloud Function
+
+The code for the Cloud function can be found [here](https://github.com/strongloop-internal/loopback-search-function).
+It is deployed to the same account and must be edited directly in IBM Cloud
+(formerly BlueMix). The repository exists to document code changes and have peer
+reviews. Credentials for accessing the Cloud Function can be obtained from
+Taranveer Virk / Diana Lau OR you can ask them to re-deploy changes.
+
+#### Your own version
+
+You can deploy the code on your own BlueMix account and upload the URL for
+Discovery in [search.html](https://github.com/strongloop/loopback.io/blob/gh-pages/_layouts/search.html).
+For the function to work, you must set the following parameters in the function settings:
+
+```
+discovery_username: username
+discovery_password: password
 ```

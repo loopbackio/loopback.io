@@ -9,6 +9,7 @@ whitelist:
 plugins:
   - jekyll-redirect-from
   - jekyll-relative-links
+  - jekyll-sitemap
 
 topnav_title: LoopBack
 # this appears on the top navigation bar next to the home button
