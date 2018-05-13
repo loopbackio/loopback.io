@@ -29,3 +29,7 @@ children:
   - title: 'SuperTest models'
     url: SuperTest-models.html
     output: 'web'
+
+  - title: 'Declarative test demo'
+    url: Declarative-test-demo.html
+    output: 'web'
