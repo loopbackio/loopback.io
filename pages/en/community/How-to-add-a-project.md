@@ -116,7 +116,7 @@ Edit the community sidebar navigation file `_data/sidebars/community_sidebar.yml
   output: 'web'
 </pre>
 
-{% include note.html content="Mke sure the `url` property in the sidebar matches the page's `permalink` property.
+{% include note.html content="Make sure the `url` property in the sidebar matches the page's `permalink` property.
 " %}
 
 ## Test your change
