@@ -9,7 +9,9 @@ summary:
 ---
 
 A Repository is a type of _Service_ that represents a collection of data within
-a DataSource.
+a DataSource. A repository class is a lightweight object, its instances can be
+created with low runtime overhead. Typically a new repository instance is
+created for each incoming request.
 
 ## Example Application
 
@@ -56,10 +58,10 @@ follows:
 
 ```ts
 // src/datsources/db.datasource.ts
-import {juggler, DataSourceConstructor} from '@loopback/repository';
+import {juggler} from '@loopback/repository';
 
 // this is just an example, 'test' database doesn't actually exist
-export const db = new DataSourceConstructor({
+export const db = new juggler.DataSource({
   connector: 'mysql',
   host: 'localhost',
   port: 3306,
