@@ -12,6 +12,9 @@ branches:
   only:
   - gh-pages
 
+before_install:
+  bundle install
+
 before_deploy:
   - npm run build
   - npm run discovery-upload
