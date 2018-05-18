@@ -300,6 +300,39 @@ as shown in the following table.
 
 As documented above, a file uploaded with the same name as an existing file will be overwritten. By adding the configuration key `nameConflict` with the value `makeUnique`, files will automatically be renamed with a UUID and the existing file extension of the original file name. Most likely this is an option that you will want to enable, otherwise you will need to ensure uniqueness on the code calling the API.
 
+## Renaming files
+
+You can rename files being uploaded before they reach their destination - file system or cloud - by setting the `getFilename` function in its datasource options. This can be done either in a model file or in a boot script, or anywhere you can access the datasource object.
+
+`getFilename` has a signature of `getFilename(uploadingFile, req, res)`, where `uploadingFile` is an object containing the details of the uploading file, `req` is the request object, and `res` is the response object.
+
+The string returned by `getFilename` will become the new name of the file.
+
+Below are two examples of setting the `getFilename` option for a datasource named `files`.
+
+1. Renaming using a model file (`User` is the model):
+
+```
+module.exports = function(User) {
+  User.getApp(function (err, app) {
+    if (err) return err;
+    app.dataSources.files.connector.getFilename = function(uploadingFile, req, res) {
+      return Math.random().toString().substr(2) + '.jpg';
+    };
+  });
+};
+```
+
+2. Renaming using a boot script (`./server/boot/storage-config.js`):
+
+```
+module.exports = function(app) {
+  app.dataSources.files.connector.getFilename = function(uploadingFile, req, res) {
+    return Math.random().toString().substr(2) + '.jpg';
+  };
+};
+```
+
 ## API
 
 Once you create a container, it will provide both a REST and Node API, as described in the following table. For details, see the complete [API documentation](http://apidocs.loopback.io/loopback-component-storage/).
