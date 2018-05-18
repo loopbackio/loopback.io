@@ -191,9 +191,9 @@ The example below assumes you have setup a `User` model and `Mail` datasource.
 //...
 //send password reset link when password reset requested
 user.on('resetPasswordRequest', function(info) {
-  var url = 'http://' - config.host - ':' - config.port - '/reset-password';
-  var html = 'Click <a href="' - url - '?access_token=' -
-      info.accessToken.id - '">here</a> to reset your password';
+  var url = 'http://' + config.host + ':' + config.port + '/reset-password';
+  var html = 'Click <a href="' + url + '?access_token=' +
+      info.accessToken.id + '">here</a> to reset your password';
   //'here' in above html is linked to : 'http://<host:port>/reset-password?access_token=<short-lived/temporary access token>'
   user.app.models.Email.send({
     to: info.email,
