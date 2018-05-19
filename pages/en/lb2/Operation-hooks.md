@@ -145,6 +145,19 @@ and _`observer`_ is `function observer(context, callback)`. Child models inher
   </tbody>
 </table>
 
+
+### Using async/await
+
+Operation hooks can also return a promise instead of calling the next parameter.
+
+{% include code-caption.html content="/common/models/MyModel.js" %}
+```javascript
+MyModel.observe('before save', async function(ctx) {
+  //...
+  return;
+});
+```
+
 ### Operation hook context object
 
 The `context` object is specific to operation hooks and does not have any relation to the context object passed to remote hooks registered via `Model.beforeRemote` and `Model.afterRemote`.

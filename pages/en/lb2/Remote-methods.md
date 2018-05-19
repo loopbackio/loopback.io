@@ -78,6 +78,25 @@ Notice the REST API request above uses the plural form \"people\" instead of \"p
 [plural form of model names for REST API routes](Exposing-models-over-REST.html#REST-paths).
 " %}
 
+### Using async/await
+
+Remote methods can also return a promise instead of using the callback parameter.
+
+{% include code-caption.html content="/common/models/person.js" %}
+```javascript
+module.exports = function(Person){
+
+    Person.greet = async function(msg) {
+        return 'Greetings... ' + msg;
+    }
+
+    Person.remoteMethod('greet', {
+          accepts: {arg: 'msg', type: 'string'},
+          returns: {arg: 'greeting', type: 'string'}
+    });
+};
+```
+
 ## Registering a remote method
 
 All LoopBack models have a [`remoteMethod()`](http://apidocs.strongloop.com/loopback/#model-remotemethod) static method that you use to register a remote method:

@@ -45,6 +45,18 @@ modelName.beforeRemote( methodName, function( ctx, next) {
 });
 ```
 
+
+### Using async/await
+
+Remote hooks can also return a promise instead of using the next parameter
+
+```javascript
+modelName.beforeRemote( methodName, async function( ctx) {
+    //...
+    return;
+});
+```
+
 Where:
 
 - `modelName` is the name of the model that has the remote method.
