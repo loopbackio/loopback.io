@@ -24,14 +24,14 @@ instances handle requests and responses. The `DefaultSequence` looks like this:
 
 ```ts
 class DefaultSequence {
-  async handle(request: ParsedRequest, response: ServerResponse) {
+  async handle(context: RequestContext) {
     try {
-      const route = this.findRoute(request);
-      const params = await this.parseParams(request, route);
+      const route = this.findRoute(context.request);
+      const params = await this.parseParams(context.request, route);
       const result = await this.invoke(route, params);
-      await this.send(response, result);
-    } catch (err) {
-      await this.reject(response, err);
+      await this.send(context.response, result);
+    } catch (error) {
+      await this.reject(context, error);
     }
   }
 }
@@ -61,15 +61,15 @@ Actions:
 
 ```ts
 class MySequence extends DefaultSequence {
-  async handle(request: ParsedRequest, response: ServerResponse) {
+  async handle(context: RequestContext) {
     // findRoute() produces an element
-    const route = this.findRoute(request);
+    const route = this.findRoute(context.request);
     // parseParams() uses the route element and produces the params element
-    const params = await this.parseParams(request, route);
+    const params = await this.parseParams(context.request, route);
     // invoke() uses both the route and params elements to produce the result (OperationRetVal) element
     const result = await this.invoke(route, params);
     // send() uses the result element
-    await this.send(response, result);
+    await this.send(context.response, result);
   }
 }
 ```
@@ -85,15 +85,15 @@ Here is an example where the application logs out a message before and after
 a request is handled:
 
 ```ts
-import {DefaultSequence, ParsedRequest, ServerResponse} from '@loopback/rest';
+import {DefaultSequence, Request, Response} from '@loopback/rest';
 
 class MySequence extends DefaultSequence {
   log(msg: string) {
     console.log(msg);
   }
-  async handle(request: ParsedRequest, response: ServerResponse) {
+  async handle(context: RequestContext) {
     this.log('before request');
-    await super.handle(request, response);
+    await super.handle(context);
     this.log('after request');
   }
 }
@@ -137,7 +137,7 @@ function upon injection.
 **custom-send.provider.ts**
 
 ```ts
-import {Send, ServerResponse} from '@loopback/rest';
+import {Send, Response} from '@loopback/rest';
 import {Provider, BoundValue, inject} from '@loopback/context';
 import {
   writeResultToResponse,
@@ -157,19 +157,18 @@ export class CustomSendProvider implements Provider<Send> {
 
   value() {
     // Use the lambda syntax to preserve the "this" scope for future calls!
-    return (response: ServerResponse, result: OperationRetval) => {
+    return (response: Response, result: OperationRetval) => {
       this.action(response, result);
     };
   }
   /**
    * Use the mimeType given in the request's Accept header to convert
    * the response object!
-   * @param ServerResponse response The response object used to reply to the
-   * client.
-   * @param OperationRetVal result The result of the operation carried out by
-   * the controller's handling function.
+   * @param response The response object used to reply to the  client.
+   * @param result The result of the operation carried out by the controller's
+   * handling function.
    */
-  action(response: ServerResponse, result: OperationRetval) {
+  action(response: Response, result: OperationRetval) {
     if (result) {
       // Currently, the headers interface doesn't allow arbitrary string keys!
       const headers = (this.request.headers as any) || {};
