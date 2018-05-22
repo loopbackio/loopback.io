@@ -4,8 +4,8 @@ layout: page
 keywords: LoopBack, GDPR
 tags: gdpr
 lang: en
-sidebar: lb3_sidebar
-permalink: /doc/en/lb3/Deploy-for-GDPR-readiness.html
+sidebar: lb2_sidebar
+permalink: /doc/en/lb2/Deploy-for-GDPR-readiness.html
 summary: LoopBack considerations for GDPR readiness.
 ---
 
