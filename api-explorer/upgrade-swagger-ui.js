@@ -25,6 +25,7 @@ async function upgradeSwaggerUI() {
     'package.json',
     '.npmignore',
     'index.loopback.html',
+    'oauth2-redirect.loopback.html',
     'upgrade-swagger-ui.js'
   ];
 
@@ -46,6 +47,11 @@ async function upgradeSwaggerUI() {
   await fs.copy(
     path.join(targetDir, 'index.loopback.html'),
     path.join(targetDir, 'index.html')
+  );
+
+  await fs.copy(
+    path.join(targetDir, 'oauth2-redirect.loopback.html'),
+    path.join(targetDir, 'oauth2-redirect.html')
   );
 
   console.log(`API Explorer has been upgrades to swagger-ui-dist@${pkg.version}.`);
