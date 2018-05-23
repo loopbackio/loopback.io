@@ -104,6 +104,10 @@ children:
     url: Next-steps.html
     output: 'web, pdf'
 
+  - title: 'Deploy for GDPR Readiness'
+    url: Deploy-for-GDPR-readiness.html
+    output: 'web, pdf'
+
 - title: 'Getting started part II'
   url: Getting-started-part-II.html
   output: 'web, pdf'
