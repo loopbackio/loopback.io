@@ -85,8 +85,6 @@ var token = new AccessToken({
 token.destroy();
 // remove all user tokens
 AccessToken.destroyAll({
-  where: {
-    userId: USER_ID
-  }
+  userId: USER_ID
 });
 ```
