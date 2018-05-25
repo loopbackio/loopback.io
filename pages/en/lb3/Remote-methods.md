@@ -70,6 +70,25 @@ Greetings... John!
 [plural form of model names for REST API routes](Exposing-models-over-REST.html#REST-paths).
 " %}
 
+### Using async/await
+
+Remote methods can also return a promise instead of using the callback parameter.
+
+{% include code-caption.html content="/common/models/person.js" %}
+```javascript
+module.exports = function(Person){
+
+    Person.greet = async function(msg) {
+        return 'Greetings... ' + msg;
+    }
+
+    Person.remoteMethod('greet', {
+          accepts: {arg: 'msg', type: 'string'},
+          returns: {arg: 'greeting', type: 'string'}
+    });
+};
+```
+
 ## Registering a remote method
 
 There are two ways to register a remote method:

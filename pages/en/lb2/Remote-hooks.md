@@ -79,6 +79,17 @@ Where:
 The syntax above includes a call to `next()` as a reminder that you must call `next()` at some point in the remote hook callback function.
 It doesn't necessarily have to come at the end of the function, but must be called at some point before the function completes.
 
+### Using async/await
+
+Remote hooks can also return a promise instead of using the next parameter
+
+```javascript
+_modelName_.afterRemoteError( _methodName_, async function( ctx) {
+    //...
+    return;
+});
+```
+
 #### Wildcards
 
 You can use the following wildcard characters in `_methodName_`:
