@@ -51,6 +51,11 @@ Additionally, when the NODE_ENV environment variable is set, LoopBack will load 
 where _`env`_ is the value of NODE_ENV (typically "development," "staging," or "production").
 This enables you to set up configurations for development, staging, and production environments. 
 
+For testing this on your localhost, you can set the value of NODE_ENV variable, or any other environment variable, in your shell.
+Node server uses the same variables from your shell.
+
+You can use _`process.env.NODE_ENV`_ to access NODE_ENV variable in your code.
+
 {% include note.html content="
 A LoopBack application can load multiple configuration files, that can potentially conflict with each other.
 The value set by the file with the highest priority will always take effect. The priorities are:
