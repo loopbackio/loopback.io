@@ -39,7 +39,7 @@ curl -X GET http://localhost:3000/api/widgets?access_token=$ACCESS_TOKEN
 To use cookies for authentication, add the following to middleware.json :
 
 {% include code-caption.html content="/server/middleware.json" %}
-```javascript
+```json
 {
     "auth": {
         "loopback#token": {}
