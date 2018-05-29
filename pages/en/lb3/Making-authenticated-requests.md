@@ -36,7 +36,7 @@ http://localhost:3000/api/widgets
 curl -X GET http://localhost:3000/api/widgets?access_token=$ACCESS_TOKEN
 ```
 
-To use cookies for authentication, add the following to middleware.json :
+To use cookies for authentication, add the following to `middleware.json` :
 
 {% include code-caption.html content="/server/middleware.json" %}
 ```json
@@ -45,6 +45,13 @@ To use cookies for authentication, add the following to middleware.json :
         "loopback#token": {}
     }
 }
+```
+
+or, the following to `server.js` (before boot):
+
+{% include code-caption.html content="/server/server.js" %}
+```javascript
+app.middleware('auth', loopback.token());
 ```
 
 {% include note.html content="
@@ -68,6 +75,15 @@ To display vanity user URLs, configure the token middleware with currentUserLite
         }
     }
 }
+```
+
+or 
+
+{% include code-caption.html content="/server/server.js" %}
+```javascript
+app.middleware('auth', loopback.token({
+    currentUserLiteral: 'me'
+}));
 ```
 
 The _currentUserLiteral_ defines a special token that can be used in the URL for REST APIs, for example:
