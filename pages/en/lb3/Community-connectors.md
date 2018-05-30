@@ -42,7 +42,7 @@ The following table lists some of the community connectors. See [npmjs.org](http
     </tr>
     <tr>
       <td><a href="https://www.arangodb.com/" class="external-link" rel="nofollow">ArangoDB</a></td>
-      <td><a href="https://www.npmjs.org/package/loopback-connector-arango" class="external-link" rel="nofollow">loopback-connector-arango</a></td>
+      <td><a href="https://www.npmjs.org/package/loopback-connector-arangodb" class="external-link" rel="nofollow">loopback-connector-arangodb</a></td>
       <td>&nbsp;</td>
     </tr>
     <tr>
