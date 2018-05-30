@@ -98,4 +98,3 @@ greeted with a message.
 Once the application has been created, additional generators such as
 [controller generator](Controller-generator.md) can be run from the
 application's root directory to further scaffold the application.
-
