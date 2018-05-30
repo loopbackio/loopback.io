@@ -36,13 +36,22 @@ http://localhost:3000/api/widgets
 curl -X GET http://localhost:3000/api/widgets?access_token=$ACCESS_TOKEN
 ```
 
-To use cookies for authentication, add the following to server.js (before boot):
+To use cookies for authentication, add the following to `middleware.json` :
+
+{% include code-caption.html content="/server/middleware.json" %}
+```json
+{
+    "auth": {
+        "loopback#token": {}
+    }
+}
+```
+
+or, the following to `server.js` (before boot):
 
 {% include code-caption.html content="/server/server.js" %}
 ```javascript
-app.use(loopback.token({
-    model: app.models.accessToken
-}));
+app.middleware('auth', loopback.token());
 ```
 
 {% include note.html content="
@@ -55,10 +64,24 @@ The Loopback Angular SDK doesn't support using cookies, and expects you to be u
 
 To display vanity user URLs, configure the token middleware with currentUserLiteral options. 
 
+{% include code-caption.html content="/server/middleware.json" %}
+```json
+{
+    "auth": {
+        "loopback#token": {
+            "params": {
+                "currentUserLiteral": "me"
+            }
+        }
+    }
+}
+```
+
+or 
+
 {% include code-caption.html content="/server/server.js" %}
 ```javascript
-app.use(loopback.token({
-    model: app.models.accessToken,
+app.middleware('auth', loopback.token({
     currentUserLiteral: 'me'
 }));
 ```
