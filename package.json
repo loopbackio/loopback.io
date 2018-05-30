@@ -2,6 +2,7 @@
   "name": "loopback.io-workflow-scripts",
   "version": "1.0.0",
   "description": "This file: Node-dependant workflow scripts for the jekyll-based site",
+  "private": true,
   "scripts": {
     "build": "npm run fetch-readmes && bundle exec jekyll build",
     "postbuild": "npm run sitemap-transform",
