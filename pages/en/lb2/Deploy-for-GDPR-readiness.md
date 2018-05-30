@@ -1,5 +1,5 @@
 ---
-title: "Deploy for GDPR Readiness"
+title: "LoopBack considerations for GDPR readiness"
 layout: page
 keywords: LoopBack, GDPR
 tags: gdpr
@@ -8,10 +8,6 @@ sidebar: lb2_sidebar
 permalink: /doc/en/lb2/Deploy-for-GDPR-readiness.html
 summary: LoopBack considerations for GDPR readiness.
 ---
-
-# LoopBack considerations for GDPR readiness
- 
-___________________________________________________________________________________________________
 
 ## Notice:
 
