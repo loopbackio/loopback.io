@@ -36,11 +36,16 @@ For more information, see [Creating a database schema from models](http://www.ib
 
 The following data sources support auto-migration:
 
+* [Cassandra](Cassandra-connector.html)
+* [MongoDB](MongoDB-connector.html)
+* [MySQL](MySQL-connector.html)
 * [Oracle](Oracle-connector.html)
 * [PostgreSQL](PostgreSQL-connector.html)
-* [MySQL](MySQL-connector.html)
 * [SQL Server](SQL-Server-connector.html)
-* [MongoDB](MongoDB-connector.html)
+* [IBM Cloudant](Cloudant-connector.html)
+* [IBM DB2](DB2-connector.html)
+* [IBM DashDB](DashDB.html)
+* [IBM DB2 for z/OS](DB2-for-z-OS.html)
 
 Here's an example of auto-migration. Consider this model definition:
 

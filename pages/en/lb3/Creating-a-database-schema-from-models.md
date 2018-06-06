@@ -43,8 +43,12 @@ The following data sources support auto-migration:
 * [MySQL](MySQL-connector.html)
 * [Oracle](Oracle-connector.html)
 * [PostgreSQL](PostgreSQL-connector.html)
-* [SAP HANA](https://www.npmjs.org/package/loopback-connector-saphana) - Not officially supported; see [Community connectors](Community-connectors.html).
 * [SQL Server](SQL-Server-connector.html)
+* [IBM Cloudant](Cloudant-connector.html)
+* [IBM DB2](DB2-connector.html)
+* [IBM DashDB](DashDB.html)
+* [IBM DB2 for z/OS](DB2-for-z-OS.html)
+* [SAP HANA](https://www.npmjs.org/package/loopback-connector-saphana) - Not officially supported; see [Community connectors](Community-connectors.html).
 
 Here's an example of auto-migration. Consider this model definition:
 
