@@ -12,6 +12,14 @@ In production mode, `strong-error-handler` omits details from error responses to
 
 In debug mode, `strong-error-handler` returns full error stack traces and internal details of any error objects to the client in the HTTP responses.
 
+## Supported versions
+
+Current|Long Term Support|Maintenance
+:-:|:-:|:-:
+3.x|2.x|1.x
+
+Learn more about our LTS plan in [docs](http://loopback.io/doc/en/contrib/Long-term-support.html).
+
 ## Installation
 
 ```bash
