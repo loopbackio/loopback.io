@@ -15,10 +15,15 @@ summary:
 LoopBack makes it simple to create models from an existing relational database.
 This process is called _discovery_ and is supported by the following connectors:
 
-* [MySQL connector](MySQL-connector.html)
-* [PostgreSQL connector](PostgreSQL-connector.html)
-* [Oracle connector](Oracle-connector.html)
-* [SQL Server connector](SQL-Server-connector.html)
+* [Cassandra](Cassandra-connector.html)
+* [MySQL](MySQL-connector.html)
+* [Oracle](Oracle-connector.html)
+* [PostgreSQL](PostgreSQL-connector.html)
+* [SQL Server](SQL-Server-connector.html)
+* [IBM Cloudant](Cloudant-connector.html)
+* [IBM DB2](DB2-connector.html)
+* [IBM DashDB](DashDB.html)
+* [IBM DB2 for z/OS](DB2-for-z-OS.html)
 
 For NoSQL databases such as MongoDB, use [instance introspection](Creating-models-from-unstructured-data.html) instead.
 
