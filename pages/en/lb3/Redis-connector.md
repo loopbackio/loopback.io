@@ -60,7 +60,7 @@ Edit `datasources.json` to add other properties that enable you to connect the
       </td>
     </tr>
     <tr>
-      <td>database</td>
+      <td>db</td>
       <td>String</td>
       <td>Database name</td>
     </tr>
