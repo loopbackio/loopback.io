@@ -49,6 +49,7 @@ const fileToUpdate = path.resolve(destDocs, 'Testing-the-API.md');
 // bug in `jekyll-relative-links` plugin; probably safe to remove when
 // https://github.com/benbalter/jekyll-relative-links/issues/5
 // is resolved
+if (!fs.existsSync(fileToUpdate)) return;
 try {
   let contents = fs.readFileSync(fileToUpdate, 'utf-8');
   contents = contents.replace('include previous.md', 'include previous.html');
