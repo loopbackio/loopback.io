@@ -78,6 +78,10 @@ children:
     url: Controllers.html
     output: 'web, pdf'
 
+  - title: 'DataSources'
+    url: DataSources.html
+    output: 'web, pdf'
+
   - title: 'Routes'
     url: Routes.html
     output: 'web, pdf'
@@ -127,6 +131,10 @@ children:
     url: Controller-generator.html
     output: 'web, pdf'
 
+  - title: 'DataSource generator'
+    url: DataSource-generator.html
+    output: 'web, pdf'
+
   - title: 'Extension generator'
     url: Extension-generator.html
     output: 'web, pdf'
@@ -135,8 +143,8 @@ children:
     url: Download-examples.html
     output: 'web, pdf'
 
-- title: 'Best practices with Loopback 4'
-  url: Best-practices-with-Loopback-4.html
+- title: 'Best practices'
+  url: Best-practices.html
   output: 'web, pdf'
   children:
 
@@ -144,25 +152,8 @@ children:
     url: Defining-the-API-using-code-first-approach.html
     output: 'web, pdf'
 
-  - title: 'Defining the API using design-first approach'
-    url: Defining-the-API-using-design-first-approach.html
-    output: 'web, pdf'
-    children:
-
-    - title: 'Testing the API'
-      url: Testing-the-API.html
-      output: 'web, pdf'
-
   - title: 'Defining your testing strategy'
     url: Defining-your-testing-strategy.html
-    output: 'web, pdf'
-
-  - title: 'Implementing features'
-    url: Implementing-features.html
-    output: 'web, pdf'
-
-  - title: 'Preparing the API for consumption'
-    url: Preparing-the-API-for-consumption.html
     output: 'web, pdf'
 
   - title: 'Testing your application'

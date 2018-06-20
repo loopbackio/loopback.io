@@ -37,10 +37,10 @@ the name.
 
 The tool will prompt you for:
 
-- Name of the controller. If the name had been supplied from the command line,
-  the prompt is skipped and the controller is built with the name from the
+- **Name of the controller.** If the name had been supplied from the command
+  line, the prompt is skipped and the controller is built with the name from the
   command-line argument.
-- Type of the controller. You can select from the following types:
+- **Type of the controller.** You can select from the following types:
   - **Empty Controller** - An empty controller definition
   - **REST Controller with CRUD Methods** - A controller wired up to a model and
     repository definition, with pre-defined CRUD methods.
@@ -79,22 +79,13 @@ Here's an example of what the template will produce given a `Todo` model and a
 
 ```ts
 import {Filter, Where, repository} from '@loopback/repository';
-import {
-  post,
-  param,
-  get,
-  put,
-  patch,
-  del,
-  requestBody
-} from '@loopback/rest';
+import {post, param, get, put, patch, del, requestBody} from '@loopback/rest';
 import {Todo} from '../models';
 import {TodoRepository} from '../repositories';
 
 export class TodoController {
   constructor(
-    @repository(TodoRepository)
-    public todoRepository: TodoRepository,
+    @repository(TodoRepository) public todoRepository: TodoRepository,
   ) {}
 
   @post('/todos')
