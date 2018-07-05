@@ -39,6 +39,7 @@ The `loopback-connector-cloudant` module is the Cloudant connector for the LoopB
 - [Discovery](#discovery)
 - [Query](#query)
 - [View](#view)
+- [Geospatial](#geospatial)
 - [Bulk replace](#bulk-replace)
 - [Testing](#testing)
         - [Docker](#docker)
@@ -716,11 +717,42 @@ module.exports = function(server) {
     // 2. This api matches the Cloudant endpoint:
     // GET /db/_design/<design-doc>/_view/<view-name>
     ds.connector.viewDocs('design_doc', 'view_name', function(err, results) {
-      // `results` would be the data returned by quering that view
+      // `results` would be the data returned by querying that view
     });
 
     // Alternatively user can also specify the filter for view query
     ds.connector.viewDocs('design_doc', 'view_name', {key: 'filter'}, 
+      function(err, results) {});
+  });
+};
+```
+
+# Geospatial
+
+Given a design doc name and the filter name in it, user can use a connector level function `geoDocs` to query a geospatial index.
+
+Since `geoDocs` is a specific api for Cloudant connector only, it is not attached to the dataSource Object defined in loopback-datasource-juggler, which means the correct way to call it is `ds.connector.geoDocs`:
+
+*/server/script.js*
+
+```javascript
+module.exports = function(server) {
+  // Get Cloudant dataSource as `ds`
+  // 'cloudantDB' is the name of Cloudant datasource created in 
+  // 'server/datasources.json' file
+  var ds = server.datasources.cloudantDB;
+
+  ds.once('connected', function() {
+    // 1. Please note `ds.connector.geoDocs()` is the correct way to call it,
+    // NOT `ds.geoDocs()`
+    // 2. This api matches the Cloudant endpoint:
+    // GET /db/_design/<design-doc>/_geo/<index-name>
+    ds.connector.geoDocs('design_doc', 'index_name', function(err, results) {
+      // `results` would be the data returned by querying that geospatial index
+    });
+
+    // Alternatively user can also specify the filter for geospatial query
+    ds.connector.geoDocs('design_doc', 'index_name', {key: 'filter'}, 
       function(err, results) {});
   });
 };
