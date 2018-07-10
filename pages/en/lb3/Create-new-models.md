@@ -101,6 +101,7 @@ When prompted, enter or select the following:
 *   **Base class**: Use the down-arrow key to select **User**.
 *   ****Expose Reviewer via the REST API?**** Press RETURN to accept the default, Yes.
 *   **Custom plural form (used to build REST URL)**:  Press RETURN to accept the default, Yes.
+*   **Common model or server only**: Press RETURN to accept the default, common model.
 
 Don't add any properties, since they are all inherited from the base User model.
 
