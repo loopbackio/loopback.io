@@ -84,7 +84,7 @@ $ lb datasource
 [?] Install storage (Y/n)
 ```
 
-Using IBM API Connect developer toolkit, use this command:
+Using IBM API Connect v5 developer toolkit, use this command:
 
 ```
 $ apic create --type datasource

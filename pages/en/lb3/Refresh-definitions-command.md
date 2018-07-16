@@ -13,7 +13,7 @@ summary:
 
 ### Synopsis
 
-Generates a product definition and API definition YAML files from LoopBack models.
+For IBM API Connect v5, generates a product definition and API definition YAML files from LoopBack models.
 
 ```
 apic loopback:refresh

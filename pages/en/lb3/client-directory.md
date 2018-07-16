@@ -12,7 +12,7 @@ summary:
 The `/client` directory is where you put client JavaScript, HTML, and CSS files.
 
 {% include note.html content="
-Only the LoopBack CLI tool (`lb`) creates this directory; the IBM API Connect tools do not.
+Only the LoopBack CLI tool (`lb`) creates this directory; the IBM API Connect v5 tools do not.
 " %}
 
 The [application generator](Application-generator.html) 

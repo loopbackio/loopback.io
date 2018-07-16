@@ -20,7 +20,7 @@ API
 : Application Programming Interface.  An interface that allows an application program that is written in a high-level language to use specific data or functions of the operating system or another program.
 
 apic
-: The IBM API Connect command-line tool.  It provides commands to scaffold LoopBack applications. For more information, see [Command-line tools](Command-line-tools.html).  
+: The IBM API Connect v5 command-line tool.  It provides commands to scaffold LoopBack applications. For more information, see [Command-line tools](Command-line-tools.html).  
 
 adapter
 : Provides the transport-specific mechanisms to make remote objects (and collections thereof) available over their transport.  See [Strong remoting](Strong-Remoting.html).
@@ -31,8 +31,8 @@ Android
 AngularJS
 : Open-source client JavaScript framework.
 
-API Connect
-: IBM product that incorporates StrongLoop and LoopBack technology for creating, running, managing, and securing APIs.  See [DeveloperWorks &gt; API Connect](https://developer.ibm.com/apiconnect/).
+API Connect v5
+: IBM product that incorporates StrongLoop and LoopBack technology for creating, running, managing, and securing APIs.  See [DeveloperWorks &gt; API Connect v5](https://developer.ibm.com/apiconnect/).
 
 Arc
 : StrongLoop graphical tool suite for the API lifecycle, including tools for building, profiling and monitoring Node apps. StrongLoop Arc is no longer under active development, and will soon be deprecated.

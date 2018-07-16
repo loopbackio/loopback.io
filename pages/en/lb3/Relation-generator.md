@@ -21,7 +21,7 @@ Creates a new [model relation](Creating-model-relations.html) in a LoopBack appl
 lb relation [options]
 ```
 
-With API Connect developer toolkit:
+With IBM API Connect v5 developer toolkit:
 
 ```
 apic loopback:relation [options]

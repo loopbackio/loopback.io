@@ -19,7 +19,7 @@ Adds a new access control list (ACL) entry to a LoopBack application.
 lb acl [options]
 ```
 
-With IBM API Connect developer toolkit:
+With IBM API Connect v5 developer toolkit:
 
 ```
 apic loopback:acl [options]

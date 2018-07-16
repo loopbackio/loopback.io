@@ -4,7 +4,7 @@ Within this directory the standard LoopBack project structure has these sub-dire
 * `server` - Node application scripts and configuration files.
 * `client` - Client JavaScript, HTML, and CSS files (**LoopBack tools only**).
 * `common` - Files common to client and server. The `/models` sub-directory contains model JSON and JavaScript files.  
-* `definitions` - API and product definition YAML files (**IBM API Connect only**).
+* `definitions` - API and product definition YAML files (**IBM API Connect v5 only**).
 
 {% include note.html content="Model JSON and JavaScript files that are shared between client and server go in the `/common/models` directory.  Server-only files go in `/server/models`, and client-only go in`/client/models`
 " %}
@@ -56,7 +56,7 @@ Within this directory the standard LoopBack project structure has these sub-dire
     <tr>
       <td><code><a href="component-config.json">component-config.json</a></code></td>
       <td>Specifies <a href="LoopBack-components.html">LoopBack components</a> to load.</td>
-      <td>Created by Strongloop tools only. Not used in API Connect.</td>
+      <td>Created by Strongloop tools only. Not used in API Connect v5.</td>
     </tr>
     <tr>
       <td><code><a href="config.json.html">config.json</a></code></td>

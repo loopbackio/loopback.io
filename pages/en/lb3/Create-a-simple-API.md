@@ -97,7 +97,7 @@ Go into your new application directory, then run the LoopBack [model generator]
 $ cd loopback-getting-started
 ```
 
-Then, using IBM API Connect developer toolkit:
+Then, using IBM API Connect v5 developer toolkit:
 ```
 $ apic create --type model
 ```
@@ -223,7 +223,7 @@ Browse your REST API at http://0.0.0.0:3000/explorer
 Web server listening at: http://0.0.0.0:3000/
 ```
 
-{% include note.html content="Running your app with the `node` command is appropriate when you're developing on your local machine.   In production, consider using [API Connect](https://developer.ibm.com/apiconnect/) or a [process manager](http://strong-pm.io/) for scalability and reliability.
+{% include note.html content="Running your app with the `node` command is appropriate when you're developing on your local machine.   In production, consider using [API Connect v5](https://developer.ibm.com/apiconnect/) or a [process manager](http://strong-pm.io/) for scalability and reliability.
 " %}
 
 Open your browser to [http://0.0.0.0:3000/](http://0.0.0.0:3000/) (on some systems, you may need to use [http://localhost:3000](http://localhost:3000/) instead).  You'll see the default application response that displays some JSON with some status information; for example:

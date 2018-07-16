@@ -20,7 +20,7 @@ For more information on Swagger, see [Swagger RESTful API Documentation Specific
 lb swagger [options] [<name>]
 ```
 
-With API Connect developer toolkit:
+With IBM API Connect v5 developer toolkit:
 
 ```
 apic loopback:swagger [options]

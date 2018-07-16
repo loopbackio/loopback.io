@@ -1,5 +1,5 @@
 ---
-lang: pt-br 
+lang: pt-br
 layout: translation
 trans_complete: false
 title: LoopBack 4

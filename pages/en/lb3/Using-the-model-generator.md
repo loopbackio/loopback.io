@@ -23,7 +23,7 @@ With LoopBack tools:
 $ lb model <model-name>
 ```
 
-With IBM API Connect developer toolkit:
+With IBM API Connect v5 developer toolkit:
 
 ```
 $ apic create --type model --name <model-name>
@@ -55,7 +55,7 @@ In your application root directory, enter the command (for example, to create a 
 $ lb model book
 ```
 
-Or, using IBM API Connect developer toolkit:
+Or, using IBM API Connect v5 developer toolkit:
 
 ```shell
 $ apic create --type model book

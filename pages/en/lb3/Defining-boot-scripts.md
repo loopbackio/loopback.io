@@ -72,9 +72,9 @@ Prior to `generator-loopback` v. 1.12, the application generator created two add
 * `explorer.js` - Enables [API Explorer](Use-API-Explorer.html). 
 * `rest-api.js` - Exposes the application's models over REST using [`loopback.rest()`](http://apidocs.loopback.io/loopback/#loopback-rest) middleware.
 
-### API Connect
+### API Connect v5
 
-The API Connect LoopBack generator does not create the  `authentication.js` boot script that enables authentication.  To enable user model authentication you must add this script (or the equivalent) yourself.
+The API Connect v5 LoopBack generator does not create the  `authentication.js` boot script that enables authentication.  To enable user model authentication you must add this script (or the equivalent) yourself.
 
 ## Using the boot script generator
 

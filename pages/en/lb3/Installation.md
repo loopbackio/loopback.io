@@ -25,7 +25,7 @@ your needs.  For more information, see [Command-line tools](Command-line-tools.h
 You have two options for LoopBack tools:
 
 - **[LoopBack CLI tool](#install-loopback-cli-tool)**
-- **[IBM API Connect developer toolkit](#install-ibm-api-connect-developer-toolkit)**
+- **[IBM API Connect v5 developer toolkit](#install-ibm-api-connect-developer-toolkit)**
 
 You can also use the legacy StrongLoop CLI tool `slc`.
 
@@ -40,29 +40,29 @@ npm install -g loopback-cli
 This installs the `lb` command-line tool for scaffolding and modifying LoopBack applications.
 For more information, see [Command-line tools](Command-line-tools.html).
 
-### Install IBM API Connect developer toolkit
+### Install IBM API Connect v5 developer toolkit
 
-[IBM API Connect](https://developer.ibm.com/apiconnect/) is an end-to-end API management solution that uses LoopBack to create APIs, and provides integrated build and deployment tools:
+[IBM API Connect v5](https://developer.ibm.com/apiconnect/) is an end-to-end API management solution that uses LoopBack to create APIs, and provides integrated build and deployment tools:
 
 - **Integrated experience across the entire API lifecycle**, including API and micro-service creation in Node.js and Java.
 -  **Self-service access to APIs** with built-in developer portals and social collaboration tools.
 -  **Unified management and orchestration of Node.js and Java** for deployment on-premises and in IBM Cloud.
 -  **Built-in security and gateway policies** with extensive security options and governance policies.
 
-For more information, see [IBM API Connect](https://developer.ibm.com/apiconnect/).
+For more information, see [IBM API Connect v5](https://developer.ibm.com/apiconnect/).
 
 
-IBM API Connect developer toolkit includes:
+IBM API Connect v5 developer toolkit includes:
   - The graphical _API Designer_ tool that you can use to create and modify LoopBack applications.
   - The `apic` command-line tool for scaffolding and modifying LoopBack applications.
 
-To install IBM API Connect Developer Toolkit:
+To install IBM API Connect v5 Developer Toolkit:
 
 ```sh
 $ npm install -g apiconnect
 ```
 
-For more information, see [Installing the API Connect Developer Toolkit](http://www.ibm.com/support/knowledgecenter/SSFS6T/com.ibm.apic.toolkit.doc/tapim_cli_install.html).
+For more information, see [Installing the API Connect v5 Developer Toolkit](http://www.ibm.com/support/knowledgecenter/SSFS6T/com.ibm.apic.toolkit.doc/tapim_cli_install.html).
 
 {% include important.html content="**If you are an IBM customer, for technical support see the [IBM Support Portal](http://www-01.ibm.com/support/docview.wss?uid=swg21593214).**
 " %}

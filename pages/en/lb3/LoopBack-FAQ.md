@@ -24,7 +24,7 @@ StrongLoop supports the following operating systems:
 ### Is LoopBack free? How much does it cost?
 
 LoopBack is an open-source project that is available for free (without support) and a commercial version with full support is also available as part of
-**[IBM API Connect](https://developer.ibm.com/apiconnect/)**.
+**[IBM API Connect v5](https://developer.ibm.com/apiconnect/)**.
 
 ### Is there a developer forum or mailing list?
 
