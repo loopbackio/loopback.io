@@ -16,6 +16,7 @@
 (cat <<LIST_END
 strongloop loopback-next master packages/metadata/README.md
 strongloop loopback-next master examples/todo/README.md
+strongloop loopabck-next master examples/todo-list/README.md
 LIST_END
 ) | while read org repo branch file module; do
   if [ -z "$file" ]; then
