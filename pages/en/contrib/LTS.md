@@ -3,7 +3,7 @@ title: Long-term support
 lang: en
 tags: [contributing, community]
 keywords: LoopBack, versioning, long-term support
-sidebar: contrib_sidebar
+sidebar: home_sidebar
 permalink: /doc/en/contrib/Long-term-support.html
 summary: LoopBack maintains a current version, a long-term support (LTS) version, and a maintenance version.
 ---
