@@ -3,23 +3,27 @@ title: Long-term support
 lang: en
 tags: [contributing, community]
 keywords: LoopBack, versioning, long-term support
-sidebar: contrib_sidebar
+sidebar: home_sidebar
 permalink: /doc/en/contrib/Long-term-support.html
 summary: LoopBack maintains a current version, a long-term support (LTS) version, and a maintenance version.
 ---
+
 ## Overview
+
 In general, LoopBack version numbers adhere to [semantic versioning](http://semver.org/) conventions.
 
-The LoopBack project maintains:
+The LoopBack project implements [Module LTS
+policy](https://github.com/CloudNativeJS/ModuleLTS) and maintains:
 
 - A _Current_ version where most of the development occurs.
 - A _Long-term support (LTS)_ version that does not add new features but gets bug fixes.
-- One (or more) _maintenance_ versions that receive only critical bug fixes.
+- One or more _maintenance_ versions that receive only critical bug fixes.
+
 
 ## LTS versions
 
-A major LoopBack version (for example, 2.x) enters LTS when the next major version is
-released (for example, 3.x) and stays in LTS mode for at least six months.
+A major LoopBack version (for example, 3.x) enters LTS when the next major version is
+released (for example, 4.0) and stays in LTS mode for at least six months.
 
 Once a release enters LTS, no new features may be added to that release.
 Changes are limited to:
@@ -43,8 +47,7 @@ Changes are limited to:
 
 ## Maintenance versions
 
-When a new major version (for example, 4.0) is released, the oldest LTS version (for example, 2.x) enters maintenance mode, where it will stay for another six months at
-minimum.
+When a new major version (for example, 4.0) is released, the oldest LTS version (for example, 2.x) enters maintenance mode, where it will stay at least for another six months and so long as the Node.js LTS versions available at release time are maintained by the Node.js project.
 
 Once a release moves into maintenance mode, only critical bugs, critical
 security fixes, and documentation updates will be permitted.
