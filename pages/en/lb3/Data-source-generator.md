@@ -19,7 +19,7 @@ Adds a new data source definition to a LoopBack application.
 lb datasource [options] [<name>]
 ```
 
-With IBM API Connect developer toolkit:
+With IBM API Connect v5 developer toolkit:
 
 ```
 apic create --type datasource [options] --name [<name>]
@@ -38,7 +38,7 @@ slc loopback:datasource [options] [<name>]
  data source to add. Currently lists only Cloudant, MongoDB, and IBM Object Storage services. You will be prompted to log in if you are not already authenticated.
 
 `-n, --name`
-: With IBM API Connect developer toolkit only, optionally provide the name of the
+: With IBM API Connect v5 developer toolkit only, optionally provide the name of the
 data source as the value of this option. 
 If provided, the tool will use that as the default when it prompts for the name.
 

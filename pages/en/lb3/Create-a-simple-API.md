@@ -97,7 +97,7 @@ Go into your new application directory, then run the LoopBack [model generator]
 $ cd loopback-getting-started
 ```
 
-Then, using IBM API Connect developer toolkit:
+Then, using IBM API Connect v5 developer toolkit:
 ```
 $ apic create --type model
 ```

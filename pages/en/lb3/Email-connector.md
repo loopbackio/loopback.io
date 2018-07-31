@@ -23,7 +23,7 @@ Create a new email data source with the [data source generator](Data-source-gen
 $ lb datasource
 ```
 
-With API Connect developer toolkit:
+With API Connect v5 developer toolkit:
 
 ```shell
 $ apic create --type datasource

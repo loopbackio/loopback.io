@@ -19,7 +19,7 @@ Exports a Swagger API definition for a LoopBack application.
 lb export-api-def [options]
 ```
 
-With IBM API Connect developer toolkit:
+With IBM API Connect v5 developer toolkit:
 
 ```
 apic loopback:export-api-def [options]

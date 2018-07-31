@@ -17,7 +17,7 @@ Creates a new LoopBack application.
 lb [app] [options] [<name>]
 ```
 
-With IBM API Connect developer toolkit:
+With IBM API Connect v5 developer toolkit:
 
 ```
 apic loopback --type api [options]
@@ -42,7 +42,7 @@ slc loopback [options] [<name>]
 : Add Loopback Explorer to the project. If `lb` and `slc loopback` commands are used, the default is true, otherwise the default is false.
 
 `-n, --name <name>`
-: Only with IBM API Connect developer toolkit; specify name of LoopBack application project.
+: Only with IBM API Connect v5 developer toolkit; specify name of LoopBack application project.
 
 `--skip-next-steps`
 : Do not print "next steps" information.

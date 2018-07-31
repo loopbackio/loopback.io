@@ -19,7 +19,7 @@ The LoopBack boot script generator adds a new [boot script](Defining-boot-script
 lb boot-script [options] [<name>]
 ```
 
-With IBM API Connect developer toolkit:
+With IBM API Connect v5 developer toolkit:
 
 ```
 apic loopback:boot-script [options] [<name>]
