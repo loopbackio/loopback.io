@@ -163,6 +163,7 @@ sufficient.
 {% include code-caption.html content="test/helpers/database.helpers.ts" %}
 
 {% include code-caption.html content="test/helpers/database.helpers.ts" %}
+
 ```ts
 // ...
 export function givenProductData(data?: Partial<Product>) {
