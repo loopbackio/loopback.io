@@ -1,4 +1,4 @@
-Ok will push to your branch shortly.---
+---
 lang: en
 title: 'Testing your application'
 keywords: LoopBack 4.0, LoopBack 4
@@ -12,9 +12,9 @@ summary:
 
 A thorough automated test suite is important because it:
 
-* Ensures your application works as expected.
-* Prevents regressions when new features are added and bugs are fixed.
-* Helps new and existing developers understand different parts of the codebase
+- Ensures your application works as expected.
+- Prevents regressions when new features are added and bugs are fixed.
+- Helps new and existing developers understand different parts of the codebase
   (knowledge sharing).
 - Speeds up development over the long run (the code writes itself!).
 
@@ -162,8 +162,6 @@ sufficient.
 
 {% include code-caption.html content="test/helpers/database.helpers.ts" %}
 
-{% include code-caption.html content="test/helpers/database.helpers.ts" %}
-
 ```ts
 // ...
 export function givenProductData(data?: Partial<Product>) {
@@ -200,7 +198,7 @@ several downsides:
   irrelevant? If it's irrelevant, then what are the other tests that depend on
   it?
 
-* As the application grows and new features are added, it's easier to add more
+- As the application grows and new features are added, it's easier to add more
   properties to existing model instances rather than create new instances using
   only the properties required by the new features. For example, when adding a
   category image, it's easier to add image to an existing category "Stationery"
@@ -295,13 +293,13 @@ integrated with Should.js assertions.
 
 There are three kinds of test doubles provided by Sinon.JS:
 
-* [Test spies](http://sinonjs.org/releases/v4.0.1/spies/) are functions that
+- [Test spies](http://sinonjs.org/releases/v4.0.1/spies/) are functions that
   record arguments, the return value, the value of `this`, and exceptions thrown
   (if any) for all its calls. There are two types of spies: Some are anonymous
   functions, while others wrap methods that already exist in the system under
   test.
 
-* [Test stubs](http://sinonjs.org/releases/v4.0.1/stubs/) are functions (spies)
+- [Test stubs](http://sinonjs.org/releases/v4.0.1/stubs/) are functions (spies)
   with pre-programmed behavior. As spies, stubs can be either anonymous, or wrap
   existing functions. When wrapping an existing function with a stub, the
   original function is not called.
@@ -438,7 +436,7 @@ unit tests to verify the implementation of this additional method.
 Remember to use [Test data builders](#use-test-data-builders) whenever you need
 valid data to create a new model instance.
 
-{% include code-caption.html content="test/unit/models/person.model.test.ts" %}
+{% include code-caption.html content="test/unit/models/person.model.unit.ts" %}
 
 ```ts
 import {Person} from '../../../src/models';
@@ -513,14 +511,14 @@ There are two common reasons for adding repository tests:
 - Your models are using an advanced configuration, for example, custom column
   mappings, and you want to verify this configuration is correctly picked up by
   the framework.
-* Your repositories have additional methods.
+- Your repositories have additional methods.
 
 Integration tests are one of the places to put the best practices in
 [Data handling](#data-handling) to work:
 
-* Clean the database before each test
-* Use test data builders
-* Avoid sharing the same data for multiple tests
+- Clean the database before each test
+- Use test data builders
+- Avoid sharing the same data for multiple tests
 
 Here is an example showing how to write an integration test for a custom
 repository method `findByName`:
@@ -561,8 +559,6 @@ These tests are similar to repository tests with controllers added as another
 ingredient.
 
 {% include code-caption.html content="test/integration/controllers/product.controller.integration.ts" %}
-
-{% include code-caption.html content= "test/integration/controllers/product.controller.test.ts" %}
 
 ```ts
 import {expect} from '@loopback/testlab';
@@ -685,9 +681,9 @@ simplifies both the execution of HTTP requests and the verification of
 responses. Remember to follow the best practices from
 [Data handling](#data-handling) when setting up your database for tests:
 
-* Clean the database before each test
-* Use test data builders
-* Avoid sharing the same data for multiple tests
+- Clean the database before each test
+- Use test data builders
+- Avoid sharing the same data for multiple tests
 
 ### Validate your OpenAPI specification
 
