@@ -32,7 +32,7 @@ To add a new data source, use the [data source generator](Data-source-generator
 $ lb datasource
 ```
 
-Or, with API Connect:
+Or, with API Connect v5:
 
 ```shell
 $ apic create --type datasource

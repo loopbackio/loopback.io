@@ -25,7 +25,7 @@ your needs.  For more information, see [Command-line tools](Command-line-tools.h
 You have two options for LoopBack tools:
 
 - **[LoopBack CLI tool](#install-loopback-cli-tool)**
-- **[IBM API Connect developer toolkit](#install-ibm-api-connect-developer-toolkit)**
+- **[IBM API Connect v5 developer toolkit](#install-ibm-api-connect-developer-toolkit)**
 
 You can also use the legacy StrongLoop CLI tool `slc`.
 
@@ -40,7 +40,7 @@ npm install -g loopback-cli
 This installs the `lb` command-line tool for scaffolding and modifying LoopBack applications.
 For more information, see [Command-line tools](Command-line-tools.html).
 
-### Install IBM API Connect developer toolkit
+### Install IBM API Connect v5 developer toolkit
 
 [IBM API Connect](https://developer.ibm.com/apiconnect/) is an end-to-end API management solution that uses LoopBack to create APIs, and provides integrated build and deployment tools:
 
@@ -52,11 +52,11 @@ For more information, see [Command-line tools](Command-line-tools.html).
 For more information, see [IBM API Connect](https://developer.ibm.com/apiconnect/).
 
 
-IBM API Connect developer toolkit includes:
+IBM API Connect v5 developer toolkit includes:
   - The graphical _API Designer_ tool that you can use to create and modify LoopBack applications.
   - The `apic` command-line tool for scaffolding and modifying LoopBack applications.
 
-To install IBM API Connect Developer Toolkit:
+To install IBM API Connect v5 developer toolkit:
 
 ```sh
 $ npm install -g apiconnect

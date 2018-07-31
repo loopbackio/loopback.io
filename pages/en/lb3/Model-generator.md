@@ -19,7 +19,7 @@ Adds a new model to a LoopBack application.
 lb model [options] [<name>]
 ```
 
-With IBM API Connect developer toolkit:
+With IBM API Connect v5 developer toolkit:
 
 ```
 apic create --type model [options] [--name <name>]

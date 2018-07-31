@@ -19,7 +19,7 @@ Adds a new remote method to an existing application.
 lb remote-method [options] [<modelName>] [<methodName>]
 ```
 
-With API Connect developer toolkit:
+With API Connect v5 developer toolkit:
 
 ```
 apic loopback:remote-method [options]

@@ -29,7 +29,7 @@ When tables with data exist, use [auto-update](#auto-update) to avoid data loss.
 ## Auto-migrate
 
 {% include note.html content="
-The API Designer tool in IBM API Connect enables you to perform auto-migration without coding.
+The API Designer tool in IBM API Connect v5 enables you to perform auto-migration without coding.
 For more information, see [Creating a database schema from models](http://www.ibm.com/support/knowledgecenter/SSFS6T/com.ibm.apic.toolkit.doc/tapim-model-update.html).
 " %}
 

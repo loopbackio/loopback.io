@@ -22,7 +22,7 @@ Adds a new middleware configuration to an existing LoopBack application.
 lb middleware [options] [<name>]
 ```
 
-With IBM API Connect developer toolkit:
+With IBM API Connect v5 developer toolkit:
 
 ```
 apic loopback:middleware [options]

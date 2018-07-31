@@ -29,7 +29,7 @@ Let's add some myModel properties now.
 ...
 ```
 
-Or with API Connect:
+Or with API Connect v5: 
 
 ```
 $ apic create --type model
