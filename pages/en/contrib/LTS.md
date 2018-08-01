@@ -33,12 +33,12 @@ Changes are limited to:
 
 2. Security updates;
 
-4. Relevant documentation updates;
+3. Relevant documentation updates;
 
-5. Certain performance improvements where the risk of breaking existing
+4. Certain performance improvements where the risk of breaking existing
  applications is minimal;
 
-6. Changes that introduce large amount of code churn where the risk of breaking
+5. Changes that introduce large amount of code churn where the risk of breaking
  existing applications is low and where the change in question may significantly
  ease the ability to backport future changes due to the reduction in diff noise.
  Semver-minor changes are only permitted if required for bug fixes. Semver-major
