@@ -4,9 +4,15 @@ search: exclude
 permalink: /titlepage/
 ---
 <div class="printTitleArea">
-    <div class="printTitle">{{site.print_title}}</div>
-    <div class="printSubtitle">{{site.print_subtitle}}</div>
-    <div class="lastGeneratedDate">Last generated: {{ site.time | date: '%B %d, %Y' }}</div>
+    <div class="printTitle">
+        {{site.print_title}}
+    </div>
+    <div class="printSubtitle">
+        {{site.print_subtitle}}
+    </div>
+    <div class="lastGeneratedDate">
+        Last generated: {{ site.time | date: '%B %d, %Y' }}
+    </div>
     <hr />
 
     <div class="printTitleImage">
