@@ -16,14 +16,15 @@ The LoopBack project implements [Module LTS
 policy](https://github.com/CloudNativeJS/ModuleLTS) and maintains:
 
 - A _Current_ version where most of the development occurs.
-- A _Long-term support (LTS)_ version that does not add new features but gets bug fixes.
-- One or more _maintenance_ versions that receive only critical bug fixes.
+- An _Active LTS_ (Long-Term Support) version that does not add new features but gets bug fixes.
+- One or more _Maintenance LTS_ versions that receive only critical bug fixes.
 
 
-## LTS versions
+## Active LTS
 
-A major LoopBack version (for example, 3.x) enters LTS when the next major version is
-released (for example, 4.0) and stays in LTS mode for at least six months.
+A major LoopBack version (for example, 3.x) enters Active LTS when the next
+major version is released (for example, 4.0) and stays in Active LTS mode for
+at least six months.
 
 Once a release enters LTS, no new features may be added to that release.
 Changes are limited to:
@@ -31,8 +32,6 @@ Changes are limited to:
 1. Bug fixes;
 
 2. Security updates;
-
-3. Non-semver-major npm updates;
 
 4. Relevant documentation updates;
 
@@ -45,9 +44,12 @@ Changes are limited to:
  Semver-minor changes are only permitted if required for bug fixes. Semver-major
  changes are only permitted if required for critical security and bug fixes.
 
-## Maintenance versions
+## Maintenance LTS
 
-When a new major version (for example, 4.0) is released, the oldest LTS version (for example, 2.x) enters maintenance mode, where it will stay at least for another six months and so long as the Node.js LTS versions available at release time are maintained by the Node.js project.
+When a new major version (for example, 4.0) is released, the oldest Active LTS
+version (for example, 2.x) enters Maintenance LTS mode, where it will stay for
+so long as the Node.js LTS versions available at release time are maintained by
+the Node.js project, but at least for six months.
 
-Once a release moves into maintenance mode, only critical bugs, critical
+Once a release moves into Maintenance LTS mode, only critical bugs, critical
 security fixes, and documentation updates will be permitted.
