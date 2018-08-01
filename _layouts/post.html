@@ -22,7 +22,9 @@ layout: default
     <div class="post-content" itemprop="articleBody">
 
         {% if page.summary %}
-        <div class="summary">{{page.summary}}</div>
+        <div class="summary">
+            {{page.summary}}
+        </div>
         {% endif %}
 
         {{ content }}
