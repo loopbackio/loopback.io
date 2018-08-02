@@ -65,7 +65,7 @@ In August 2018, there were two major Node.js versions covered by the LTS plan:
 6.x and 8.x; and two supported LoopBack versions: 2.x and 3.x.
 
 Framework | Status | Published | EOL | Runtime | GA | EOL
--- | -- | -- | -- | -- | --
+-- | -- | -- | -- | -- | -- | --
 Loopback 3 | Current | Dec 2016 | Dec 2019 |  Node 8 | Oct 2017 | Dec 2019
 Loopback 2 | Active LTS | Jul 2014 | Apr 2019 | Node 6 | Oct 2016 | Apr 2019
  |  |  | Apr 2018 | Node 4 | Oct 2015 | Apr 2018
@@ -74,7 +74,7 @@ Assuming LoopBack 4.0 is released in October 2018 to align with Node.js 10.x
 entering LTS:
 
 Framework | Status | Published | EOL | Runtime | GA | EOL
--- | -- | -- | -- | -- | --
+-- | -- | -- | -- | -- | -- | --
 LoopBack 4 | Current | Oct 2018 | Dec 2021 | Node 10 | Oct 2018 | Apr 2021
 Loopback 3 | Active LTS | Dec 2016 | Dec 2019 |  Node 8 | Oct 2017 | Dec 2019
 Loopback 2 | Maintenance LTS | Jul 2014 | Apr 2019 | Node 6 | Oct 2016 | Apr 2019
