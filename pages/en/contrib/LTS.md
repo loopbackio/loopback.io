@@ -59,7 +59,7 @@ security fixes, and documentation updates will be permitted.
 
 Specifically, adding support for new major Node.js versions is not permitted.
 
-## Example
+## Examples
 
 In August 2018, there were two major Node.js versions covered by the LTS plan:
 6.x and 8.x; and two supported LoopBack versions: 2.x and 3.x.
@@ -74,6 +74,6 @@ entering LTS:
 
 Framework | Status | Published | EOL | Runtime | GA | EOL
 -- | -- | -- | -- | -- | -- | --
-LoopBack 4 | Current | Oct 2018 | Dec 2021<br/>_(minimum)_| Node 10 | Oct 2018 | Apr 2021
+LoopBack 4 | Current | Oct 2018 | Apr 2021<br/>_(minimum)_| Node 10 | Oct 2018 | Apr 2021
 Loopback 3 | Active LTS | Dec 2016 | Dec 2019 |  Node 8 | Oct 2017 | Dec 2019
 Loopback 2 | Maintenance LTS | Jul 2014 | Apr 2019 | Node 6 | Oct 2016 | Apr 2019
