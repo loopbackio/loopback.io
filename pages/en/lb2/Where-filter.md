@@ -33,6 +33,17 @@ For example, here is a query to find cars with `odo` is less than 30,000:
 /cars?filter[where][odo][lt]=30000
 ```
 
+More complex where conditions may be composed using expressions depending on your data source.
+Here are two such MondoDB examples that find cars with elements in the `trimOptions` array:
+
+```
+/cars?filter[where][trimOptions][gt][$size]=0
+```
+or
+```
+/cars?filter[where][trimOptions][not][$eq]=[]
+```
+
 You can also use [stringified JSON format](Querying-data.html#using-stringified-json-in-rest-queries) in a REST query.
 
 ### Filter limit
