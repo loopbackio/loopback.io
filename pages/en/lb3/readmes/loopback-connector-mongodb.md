@@ -64,7 +64,9 @@ of type `GeoPoint`. This allows for indexed ```near``` queries.  Default is `fal
   - Default is `false`.
   - If set to `true`, the database instance will not be attached to the datasource and the connection is deferred.
   - It will try to establish the connection automatically once users hit the endpoint. If the mongodb server is offline, the app will start, however, the endpoints will not work.
-
+- **disableDefaultSort**: Set to `true` to disable the default sorting
+  behavior on `id` column, this will help performance using indexed
+columns available in mongodb.
 ### Setting the url property in datasource.json
 
 You can set the `url` property to a connection URL in `datasources.json` to override individual connection parameters such as `host`, `user`, and `password`.  
