@@ -2,10 +2,8 @@
 lang: en
 title: 'Application'
 keywords: LoopBack 4.0, LoopBack 4
-tags:
 sidebar: lb4_sidebar
 permalink: /doc/en/lb4/Application.html
-summary:
 ---
 
 ## What is an Application?
@@ -175,7 +173,8 @@ It will automatically create bindings for these configurations and later be
 injected through dependency injections. Visit
 [Dependency Injection](Dependency-injection.md) for more details.
 
-{% include note.html content=" Binding configuration such as component binding,
+{% include note.html content="
+Binding configuration such as component binding,
 provider binding, or binding scopes are not possible with the constructor-based
 configuration approach.
 " %}

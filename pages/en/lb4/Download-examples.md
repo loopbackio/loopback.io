@@ -2,10 +2,8 @@
 lang: en
 title: 'Download examples'
 keywords: LoopBack 4.0, LoopBack 4
-tags:
 sidebar: lb4_sidebar
 permalink: /doc/en/lb4/Download-examples.html
-summary:
 ---
 
 ### Synopsis
@@ -38,6 +36,6 @@ The tool will prompt you for:
 
 ### Output
 
-The example project is downloaded to a new directory. For example, when
-downloading `todo` example, the tool stores the files under the newly created
-`loopback4-example-todo` directory.
+The example project is downloaded to a new directory and its dependencies are
+installed. For example, when downloading `todo` example, the tool stores the
+files under the newly created `loopback4-example-todo` directory.

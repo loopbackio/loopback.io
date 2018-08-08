@@ -2,10 +2,8 @@
 lang: en
 title: 'Creating components'
 keywords: LoopBack 4.0, LoopBack 4
-tags:
 sidebar: lb4_sidebar
 permalink: /doc/en/lb4/Creating-components.html
-summary:
 ---
 
 As explained in [Using Components](Using-components.md), a typical LoopBack
@@ -110,8 +108,8 @@ class MyController {
 }
 ```
 
-{% include note.html title="A note on binding names" content="To avoid name
-conflicts, add a unique prefix to your binding key (for example, `my-component.`
+{% include note.html title="A note on binding names" content="
+To avoid name conflicts, add a unique prefix to your binding key (for example, `my-component.`
 in the example above). See [Reserved binding keys](Reserved-binding-keys.md) for
 the list of keys reserved for the framework use.
 " %}

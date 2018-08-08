@@ -2,7 +2,6 @@
 lang: en
 title: 'Adding legacy juggler'
 keywords: LoopBack 4.0, LoopBack 4
-tags:
 sidebar: lb4_sidebar
 permalink: /doc/en/lb4/todo-tutorial-juggler.html
 summary: LoopBack 4 Todo Application Tutorial - Adding legacy juggler
@@ -33,7 +32,6 @@ the `RepositoryMixin`:
 import {ApplicationConfig} from '@loopback/core';
 import {RestApplication} from '@loopback/rest';
 import {MySequence} from './sequence';
-import {db} from './datasources/db.datasource';
 
 /* tslint:disable:no-unused-variable */
 // Binding and Booter imports are required to infer types for BootMixin!
@@ -67,18 +65,6 @@ export class TodoListApplication extends BootMixin(
         nested: true,
       },
     };
-
-    this.setupDatasources();
-  }
-
-  setupDatasources() {
-    // This will allow you to test your application without needing to
-    // use a "real" datasource!
-    const datasource =
-      this.options && this.options.datasource
-        ? new juggler.DataSource(this.options.datasource)
-        : db;
-    this.dataSource(datasource);
   }
 }
 ```

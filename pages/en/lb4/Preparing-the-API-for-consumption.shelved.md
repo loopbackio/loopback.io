@@ -2,10 +2,8 @@
 lang: en
 title: 'Preparing the API for consumption'
 keywords: LoopBack 4.0, LoopBack 4
-tags:
 sidebar: lb4_sidebar
 permalink: /doc/en/lb4/Preparing-the-API-for-consumption.html
-summary:
 ---
 
 {% include previous.html content=" This article continues
@@ -26,14 +24,14 @@ application:
 ```sh
 lb4 example todo
 cd loopback4-example-todo
-npm i
 npm start
 ```
 
 Open <http://localhost:3000/swagger-ui> to see the API endpoints defined by
 `swagger.json`.
 
-{% include note.html content=" Swagger UI provides users with interactive
+{% include note.html content="
+Swagger UI provides users with interactive
 environment to test the API endpoints defined by the raw spec found at
 <http://localhost:3000/openapi.json>. The API spec is also available in YAML
 flavour at <http://localhost:3000/openapi.yaml>

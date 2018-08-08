@@ -2,10 +2,8 @@
 lang: en
 title: 'Defining the API using code-first approach'
 keywords: LoopBack 4.0, LoopBack 4
-tags:
 sidebar: lb4_sidebar
 permalink: /doc/en/lb4/Defining-the-API-using-code-first-approach.html
-summary:
 ---
 
 ## Define the API from code-first approach
@@ -46,8 +44,8 @@ layer and the datasource layer. Since your API is going to be built around the
 manipulation of models and their properties, they will be the first to be
 defined.
 
-{% include note.html content=" `Todo` model from
-[tutorial](https://github.com/strongloop/loopback-next/blob/master/docs/site/todo-tutorial-model.md#srcmodelstodomodelts)
+{% include note.html content="
+`Todo` model from [tutorial](https://github.com/strongloop/loopback-next/blob/master/docs/site/todo-tutorial-model.md#srcmodelstodomodelts)
 is used for demonstration here.
 " %}
 
@@ -85,20 +83,23 @@ import {model, property} from '@loopback/repository';
 
 @model()
 export class Todo {
-  @property() id?: number;
+  @property()
+  id?: number;
   @property({
     required: true,
   })
   title: string;
-  @property() desc?: string;
-  @property() isComplete: boolean;
+  @property()
+  desc?: string;
+  @property()
+  isComplete: boolean;
 }
 ```
 
 ### Define your routes
 
-{% include note.html content=" `TodoController` from
-[tutorial](https://github.com/strongloop/loopback-next/blob/master/docs/site/todo-tutorial-controller.md#srccontrollerstodocontrollerts-2)
+{% include note.html content="
+`TodoController` from [tutorial](https://github.com/strongloop/loopback-next/blob/master/docs/site/todo-tutorial-controller.md#srccontrollerstodocontrollerts-2)
 is used for demonstration here.
 " %}
 

@@ -2,7 +2,6 @@
 lang: en
 title: 'Getting started'
 keywords: LoopBack 4.0, LoopBack 4
-tags:
 sidebar: lb4_sidebar
 permalink: /doc/en/lb4/Getting-started.html
 summary: Write and run a LoopBack 4 "Hello World" project in TypeScript.
@@ -10,7 +9,7 @@ summary: Write and run a LoopBack 4 "Hello World" project in TypeScript.
 
 ## Prerequisites
 
-Install [Node.js](https://nodejs.org/en/download/) (version 8.x.x or higher) if
+Install [Node.js](https://nodejs.org/en/download/) (version 8.9 or higher) if
 not already installed on your machine.
 
 ## Install LoopBack 4 CLI
