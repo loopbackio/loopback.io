@@ -24,7 +24,7 @@ the same information in the documentation, with a _single source_ to avoid diver
 
 There are two Bash scripts:
 
-- [`update-readmes.sh`](https://github.com/strongloop/loopback.io/blob/gh-pages/update-readmes.sh) - Gets example, connector, and component READMEs and puts them into `pages/en/lb2/readmes`.
+- [`update-readmes.sh`](https://github.com/strongloop/loopback.io/blob/gh-pages/update-readmes.sh) - Gets example, connector, and component READMEs and puts them into `pages/en/lb3/readmes`.
 - [`update-community-readmes.sh`](https://github.com/strongloop/loopback.io/blob/gh-pages/update-community-readmes.sh) - Gets community READMEs and puts them into `pages/en/community/readmes`.
 
 We have a [Jenkins pipeline](https://github.com/strongloop/loopback.io/blob/gh-pages/Jenkinsfile) that runs the scripts whenever there is a commit to the loopback.io repository.  
