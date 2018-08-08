@@ -238,21 +238,21 @@ The following table describes remote methods exposed in LoopBack 3.x:
 
 | Model (Node) API | HTTP Method | Example Path |
 |---|---|---|
-| [create()](https://apidocs.loopback.io/loopback/#persistedmodel-create)                                        | POST   | /locations                 |
-| [replaceOrCreate()](https://apidocs.loopback.io/loopback/#persistedmodel-replaceorcreate)                      | PUT    | /locations                 |
-| [patchOrCreate()](https://apidocs.loopback.io/loopback/#persistedmodel-upsert)                                 | PATCH  | /locations                 |
-| [exists()](https://apidocs.loopback.io/loopback/#persistedmodel-exists)                                        | GET    | /locations/:id/exists      |
-| [findById()](https://apidocs.loopback.io/loopback/#persistedmodel-findbyid)                                    | GET    | /locations/:id             |
-| [find()](https://apidocs.loopback.io/loopback/#persistedmodel-find)                                            | GET    | /locations                 |
-| [findOne()](https://apidocs.loopback.io/loopback/#persistedmodel-findone)                                      | GET    | /locations/findOne         |
-| [destroyById() or deleteById()](https://apidocs.loopback.io/loopback/#persistedmodel-destroybyid)              | DELETE | /locations/:id             |
-| [count()](https://apidocs.loopback.io/loopback/#persistedmodel-count)                                          | GET    | /locations/count           |
-| [replaceById()](https://apidocs.loopback.io/loopback/#persistedmodel-replacebyid)                              | PUT    | /locations/:id             |
-| [prototype.patchAttributes()](https://apidocs.loopback.io/loopback/#persistedmodel-prototype-updateattributes) | PATCH  | /locations/:id             |
-| [createChangeStream()](https://apidocs.loopback.io/loopback/#persistedmodel-createchangestream)                | POST   | /locations/change-stream   |
-| [updateAll()](https://apidocs.loopback.io/loopback/#persistedmodel-updateall)                                  | POST   | /locations/update          |
-| [replaceOrCreate()](https://apidocs.loopback.io/loopback/#persistedmodel-replaceorcreate)                      | POST   | /locations/replaceOrCreate |
-| [replaceById()](https://apidocs.loopback.io/loopback/#persistedmodel-replacebyid)                              | POST   | /locations/:id/replace     |
+| create()                                        | POST   | /locations                 |
+| replaceOrCreate()                      | PUT    | /locations                 |
+| patchOrCreate()                                 | PATCH  | /locations                 |
+| exists()                                        | GET    | /locations/:id/exists      |
+| findById()                                    | GET    | /locations/:id             |
+| find()                                            | GET    | /locations                 |
+| findOne()                                      | GET    | /locations/findOne         |
+| destroyById() or deleteById()              | DELETE | /locations/:id             |
+| count()                                          | GET    | /locations/count           |
+| replaceById()                              | PUT    | /locations/:id             |
+| prototype.patchAttributes() | PATCH  | /locations/:id             |
+| createChangeStream()                | POST   | /locations/change-stream   |
+| updateAll()                                  | POST   | /locations/update          |
+| replaceOrCreate()                      | POST   | /locations/replaceOrCreate |
+| replaceById()                              | POST   | /locations/:id/replace     |
 
 As you see the only difference between LoopBack 2.x and 3.0 in default configuration is the behaviour of HTTP PUT endpoints (both `PUT /api/my-models` and `PUT /api/my-models/:id`). By default in LoopBack 2.x, these endpoints invoke patch methods and perform a partial update, while in LoopBack 3.0, these methods perform a full replace.
 
