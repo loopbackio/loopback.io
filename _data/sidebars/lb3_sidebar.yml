@@ -81,7 +81,7 @@ children:
   - title: 'Next steps'
     url: Next-steps.html
     output: 'web, pdf'
-  
+
   - title: 'Considerations for GDPR readiness'
     url: Deploy-for-GDPR-readiness.html
     output: 'web, pdf'
@@ -855,6 +855,10 @@ children:
     - title: 'SQLite3 connector'
       url: SQLite3.html
       output: 'web, pdf'
+
+    - title: 'z/OS Connect Enterprise Edition connector'
+        url: zOSconnectEE.html
+        output: 'web, pdf'
 
   - title: 'Other connectors'
     url: Other-connectors.html
