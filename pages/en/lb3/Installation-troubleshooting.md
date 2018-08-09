@@ -32,6 +32,16 @@ $ sudo npm install -g --unsafe-perm install strongloop
 
 LoopBack does not support Cygwin (Windows bash shell emulator), because Node does not support it for interactive prompts. Use Windows command shell instead.
 
+### OpenSSL not found
+
+If you see the following error:
+
+```
+LINK : fatal error LNK1181: cannot open input file 'C:\OpenSSL-Win64\lib\libeay32.lib' [...\ursa\build\ursaNative.vcxproj]
+```
+
+You may have to download and install the **64-bit** version of the OpenSSL from here: https://slproweb.com/products/Win32OpenSSL.html
+
 ## Xcode license issues
 
 {% include note.html content="Xcode is only required with the old [StrongLoop package](Installing-StrongLoop.html).  It is not required for the LoopBack CLI tool.
