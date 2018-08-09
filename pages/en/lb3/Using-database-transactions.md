@@ -26,6 +26,11 @@ A LoopBack model can perform operations in a transaction when the model is atta
 * [PostgreSQL connector](PostgreSQL-connector.html)
 * [SQL Server connector](SQL-Server-connector.html)
 * [Oracle connector](Oracle-connector.html)
+* [DB2 Connector](DB2-connector.html)
+* [DashDB Connector](DashDB.html)
+* [DB2 iSeries Connector](DB2-iSeries-connector.html)
+* [DB2 for z/OS connector](DB2-for-z-OS.html)
+* [Informix connector](Informix.html)
 
 ## Transaction APIs
 
