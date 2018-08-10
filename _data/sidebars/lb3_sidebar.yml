@@ -857,8 +857,8 @@ children:
       output: 'web, pdf'
 
     - title: 'z/OS Connect Enterprise Edition connector'
-        url: zOSconnectEE.html
-        output: 'web, pdf'
+      url: zOSconnectEE.html
+      output: 'web, pdf'
 
   - title: 'Other connectors'
     url: Other-connectors.html
