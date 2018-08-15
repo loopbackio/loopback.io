@@ -133,7 +133,7 @@ children:
   children:
 
   - title: '08-15-2018'
-    url: Security-advisory-08-08-2018.html
+    url: Security-advisory-08-15-2018.html
     output: 'web, pdf'
 
   - title: '08-08-2018'
