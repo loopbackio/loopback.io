@@ -65,8 +65,8 @@ of type `GeoPoint`. This allows for indexed ```near``` queries.  Default is `fal
   - If set to `true`, the database instance will not be attached to the datasource and the connection is deferred.
   - It will try to establish the connection automatically once users hit the endpoint. If the mongodb server is offline, the app will start, however, the endpoints will not work.
 - **disableDefaultSort**: Set to `true` to disable the default sorting
-  behavior on `id` column, this will help performance using indexed
-columns available in mongodb.
+  behavior on `id` column, this will help performance using indexed columns available in mongodb.
+
 ### Setting the url property in datasource.json
 
 You can set the `url` property to a connection URL in `datasources.json` to override individual connection parameters such as `host`, `user`, and `password`.  
@@ -90,6 +90,23 @@ For example, for production, use `datasources.production.json` as follows (for e
 ```
 
 For more information on setting data source configurations for different environments, see [Environment-specific configuration](https://loopback.io/doc/en/lb3/Environment-specific-configuration.html#data-source-configuration).
+
+## Security Considerations
+
+MongoDB Driver allows the `$where` operator to pass in JavaScript to execute on the Driver which can be used for NoSQL Injection. See [MongoDB: Server-side JavaScript](https://docs.mongodb.com/manual/core/server-side-javascript/) for more on this MongoDB feature.
+
+To protect users against this potential vulnerability, LoopBack will automatically **remove** the `$where` and `mapReduce` operators from a query before it's passed to the MongoDB Driver. If you need to use these properties from within LoopBack programatically, you can disable the sanitization by passing in an `options` object with `disableSanitization` property set to `true`.
+
+**Example:**
+```js
+Post.find(
+    {where: {$where: 'function() { /*JS function here*/}'}},
+    {disableSanitization: true},
+    (err, p) => {
+        // code to handle results / error.
+    }
+);
+```
 
 ## Type mappings
 
