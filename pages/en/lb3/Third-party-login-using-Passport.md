@@ -78,7 +78,7 @@ The following table describes the properties of the UserIdentity model.
     <tr>
       <td>authScheme</td>
       <td>String</td>
-      <td>auth scheme, such as oAuth, oAuth 2.0, OpenID, OpenID Connect</td>
+      <td>auth scheme, such as oAuth, oAuth 2.0, OpenID, OpenID Connect, Custom</td>
     </tr>
     <tr>
       <td>externalId</td>
