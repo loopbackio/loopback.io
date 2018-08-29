@@ -9,7 +9,7 @@ sidebar: lb2_sidebar
 permalink: /doc/en/lb2/Security-advisory-08-15-2018.html
 ---
 
-* **Security risk**: TBD
+* **Security risk**: High (CVSS: 7.1)
 * **Vulnerability**: `loopback-connector-mongodb` allows NoSQL Injections
 
 ### Description
