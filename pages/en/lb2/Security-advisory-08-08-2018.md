@@ -9,7 +9,7 @@ sidebar: lb2_sidebar
 permalink: /doc/en/lb2/Security-advisory-08-08-2018.html
 ---
 
-* **Security risk**: TBD
+* **Security risk**: High (CVSS: 7.7)
 * **Vulnerability**: AccessToken API (if exposed) allows anyone to create a Token
 
 ### Description
