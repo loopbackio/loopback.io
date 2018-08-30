@@ -46,6 +46,29 @@ app.use(errorHandler({
 app.listen(3000);
 ```
 
+The module also exports `writeErrorToResponse`, a non-middleware flavor of the
+error handler:
+
+```js
+const http = require('http');
+const writeErrorToResponse = require('strong-error-handler')
+  .writeErrorToResponse;
+const errHandlingOptions = {debug: process.env.NODE_ENV === 'development'}
+
+http
+  .createServer((req, res) => {
+    if (errShouldBeThrown) {
+      writeErrorToResponse(
+        new Error('something went wrong'),
+        req,
+        res,
+        errHandlingOptions,
+      );
+    }
+  })
+  .listen(3000);
+```
+
 In LoopBack applications, add the following entry to `server/middleware.json`:
 
 ```json
