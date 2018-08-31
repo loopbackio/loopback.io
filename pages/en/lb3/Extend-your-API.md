@@ -165,7 +165,8 @@ You'll get the response:
 
 Then, if you access the remote method at, for example:
 
-`http://0.0.0.0:3000/api/CoffeeShops/1/getname
+
+`http://0.0.0.0:3000/api/CoffeeShops/1/getname`
 
 You'll get the response:
 
