@@ -112,6 +112,9 @@ For more information, see [Remote methods](Remote-methods).
 
 The `status` remote method is trivial, but a remote method can also access any of the standard model create, retrieve, update, and delete methods to perform data processes and validation.  Here is a simple example (this is not in the `loopback-getting-started` repository):
 
+
+## accessing the remote method through query as source parameter 
+
 ```js
 module.exports = function(CoffeeShop) {
 ...
@@ -144,7 +147,33 @@ You'll get the response:
 {
   "name": "Name of coffee shop is Bel Cafe"
 }
+
+```
+## accessing the remote method through path as source parameter 
 ```
 
+ CoffeeShop.remoteMethod (
+        'getName',
+        {
+          http: {path: '/:id/getname', verb: 'get'},
+          accepts: {arg: 'id', type: 'number', http: { source: 'path' } },
+          returns: {arg: 'name', type: 'string'}
+        }
+    );
+
+```
+
+Then, if you access the remote method at, for example:
+
+`http://0.0.0.0:3000/api/CoffeeShops/1/getname
+
+You'll get the response:
+
+```js
+{
+  "name": "Name of coffee shop is Bel Cafe"
+}
+
+```
 {% include next.html content="In [Add a static web page](Add-a-static-web-page.html), you'll add Express middleware to serve static client assets such as HTML/CSS, images, and JavaScript. "
 %}
