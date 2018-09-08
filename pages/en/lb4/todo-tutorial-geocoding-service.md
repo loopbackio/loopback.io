@@ -34,6 +34,16 @@ for example IBM's [Weather Company Data](https://console.bluemix.net/catalog/ser
 or [Google Maps Platform](https://developers.google.com/maps/documentation/geocoding).
 " %}
 
+### Install `@loopback/service-proxy`
+
+`@loopback/service-proxy` provides a common set of interfaces for interacting
+with service oriented backends such as REST APIs, SOAP Web Services, and gRPC
+microservices. Install it in your project by running the following command:
+
+```
+npm i @loopback/service-proxy
+```
+
 ### Configure the backing datasource
 
 Run `lb4 datasource` to define a new datasource connecting to Geocoder REST
@@ -94,12 +104,12 @@ docs here: [REST connector](/doc/en/lb3/REST-connector.html).
 
 Create a new directory `src/services` and add the following two new files:
 
-- `src/geocoder.service.ts` defining TypeScript interfaces for Geocoder service
-  and implementing a service proxy provider.
-- `src/index.ts` providing a conventient access to all services via a single
-  `import` statement.
+- `src/services/geocoder.service.ts` defining TypeScript interfaces for Geocoder
+  service and implementing a service proxy provider.
+- `src/services/index.ts` providing a conventient access to all services via a
+  single `import` statement.
 
-#### src/geocoder.service.ts
+#### src/services/geocoder.service.ts
 
 ```ts
 import {getService, juggler} from '@loopback/service-proxy';
@@ -128,7 +138,7 @@ export class GeocoderServiceProvider implements Provider<GeocoderService> {
     protected datasource: juggler.DataSource = new GeocoderDataSource(),
   ) {}
 
-  value(): GeocoderService {
+  value(): Promise<GeocoderService> {
     return getService(this.datasource);
   }
 }
@@ -138,38 +148,6 @@ export class GeocoderServiceProvider implements Provider<GeocoderService> {
 
 ```ts
 export * from './geocoder.service';
-```
-
-### Register the service for dependency injection
-
-Because `@loopback/boot` does not support loading of services yet (see
-[issue #1439](https://github.com/strongloop/loopback-next/issues/1439)), we need
-to add few code snippets to our Application class to take care of this task.
-
-#### src/application.ts
-
-```ts
-export class TodoListApplication extends BootMixin(
-  RepositoryMixin(RestApplication),
-) {
-  constructor(options?: ApplicationConfig) {
-    super(options);
-    // etc., keep the existing code without changes
-
-    // ADD THE FOLLOWING LINE AT THE END
-    this.setupServices();
-  }
-
-  // ADD THE FOLLOWING TWO METHODS
-  setupServices() {
-    this.service(GeocoderServiceProvider);
-  }
-
-  service<T>(provider: Constructor<Provider<T>>) {
-    const key = `services.${provider.name.replace(/Provider$/, '')}`;
-    this.bind(key).toProvider(provider);
-  }
-}
 ```
 
 ### Enhance Todo model with location data
@@ -200,12 +178,14 @@ export class Todo extends Entity {
 Finally, modify `TodoController` to look up the address and convert it to GPS
 coordinates when a new Todo item is created.
 
-Modify the Controller constructor to receive `GeocoderService` as a new
-dependency.
+Import `GeocodeService` interface into the `TodoController` and then modify the
+Controller constructor to receive `GeocodeService` as a new dependency.
 
 #### src/controllers/todo.controller.ts
 
 ```ts
+import {GeocoderService} from '../services';
+
 export class TodoController {
   constructor(
     @repository(TodoRepository) protected todoRepo: TodoRepository,

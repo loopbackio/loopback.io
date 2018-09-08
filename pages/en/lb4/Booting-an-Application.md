@@ -61,13 +61,8 @@ example below)_
 
 ### Using the BootMixin
 
-`Booter` and `Binding` types must be imported alongside `BootMixin` to allow
-TypeScript to infer types and avoid errors. _If using `tslint` with the
-`no-unused-variable` rule, you can disable it for the import line by adding
-`// tslint:disable-next-line:no-unused-variable` above the import statement_.
-
 ```ts
-import {BootMixin, Booter, Binding} from "@loopback/boot";
+import {BootMixin} from "@loopback/boot";
 
 class MyApplication extends BootMixin(Application) {
   constructor(options?: ApplicationConfig) {
@@ -241,6 +236,33 @@ The `datasources` object support the following options:
 | `extensions` | `string \| string[]` | `['.datasource.js']` | File extensions to match for DataSource artifacts                                                             |
 | `nested`     | `boolean`            | `true`               | Look in nested directories in `dirs` for DataSource artifacts                                                 |
 | `glob`       | `string`             |                      | A `glob` pattern string. This takes precendence over above 3 options (which are used to make a glob pattern). |
+
+### Service Booter
+
+#### Description
+
+Discovers and binds Service providers using `app.serviceProvider()` (Application
+must use `ServiceMixin` from `@loopback/service-proxy`).
+
+**IMPORTANT:** For a class to be recognized by `ServiceBooter` as a service
+provider, its name must end with `Provider` suffix and its prototype must have a
+`value()` method.
+
+#### Options
+
+The options for this can be passed via `BootOptions` when calling
+`app.boot(options: BootOptions)`.
+
+The options for this are passed in a `services` object on `BootOptions`.
+
+Available options on the `services` object on `BootOptions` are as follows:
+
+| Options      | Type                 | Default              | Description                                                                                                  |
+| ------------ | -------------------- | -------------------- | ------------------------------------------------------------------------------------------------------------ |
+| `dirs`       | `string \| string[]` | `['repositories']`   | Paths relative to projectRoot to look in for Service artifacts                                               |
+| `extensions` | `string \| string[]` | `['.repository.js']` | File extensions to match for Service artifacts                                                               |
+| `nested`     | `boolean`            | `true`               | Look in nested directories in `dirs` for Service artifacts                                                   |
+| `glob`       | `string`             |                      | A `glob` pattern string. This takes precedence over above 3 options (which are used to make a glob pattern). |
 
 ### Custom Booters
 
