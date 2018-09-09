@@ -25,6 +25,6 @@ $ node .
 To run your application under control of StrongLoop Process Manager use the `slc start` command.
 Doing this enables you to profile the app and monitor app metrics to help find memory leaks and optimize performance.
 See [Profiling](https://docs.strongloop.com/display/SLC/Profiling) and 
-[Monitoring app metrics](https://docs.strongloop.com/display/SLC/Monitoring-app-metrics) for more information.
+[Monitoring app metrics](https://docs.strongloop.com/display/SLC/Monitoring+app+metrics) for more information.
 
 With API Connect v5, to run your application and the MicroGateway, use the `apic start` command.  You can also [run your app using the API Designer](https://developer.ibm.com/apiconnect/getting-started/run-your-api/).
