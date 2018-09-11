@@ -161,6 +161,23 @@ children:
   - title: 'Decorators'
     url: Decorators.html
     output: 'web, pdf'
+    children:
+
+    - title: 'Route Decorators'
+      url: Decorators_route.html
+      output: 'web, pdf'
+
+    - title: 'Dependency Injection Decorator'
+      url: Decorators_inject.html
+      output: 'web, pdf'
+
+    - title: 'Authentication Decorator'
+      url: Decorators_authenticate.html
+      output: 'web, pdf'
+
+    - title: 'Repository Decorators'
+      url: Decorators_repository.html
+      output: 'web, pdf'
 
 - title: 'Booting an Application'
   url: Booting-an-Application.html
