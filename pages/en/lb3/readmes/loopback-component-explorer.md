@@ -160,3 +160,26 @@ Options are passed to `explorer(app, options)`.
 > Default: Read from package.json
 
 > Sets your API version. If not present, will read from your app's package.json.
+
+`auth`: **Object**
+
+> Optional config for setting api access token, can be used to rename the query parameter or set an auth header.
+
+> The object has 2 keys:
+> - `in`: either `header` or `query`
+> - `name`: the name of the query parameter or header
+>
+> The default sets the token as a query parameter with the name `access_token`
+
+> Example for setting the api key in a header named `x-api-key`:
+> ```
+> {
+>   "loopback-component-explorer": {
+>     "mountPath": "/explorer",
+>     "auth": {
+>       "in": "header",
+>       "name": "x-api-key"
+>     }
+>   }
+> }
+> ```
