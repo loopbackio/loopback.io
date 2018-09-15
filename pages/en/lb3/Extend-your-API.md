@@ -35,9 +35,10 @@ Follow these steps:
 
 1.  Look in your application's `/common/models` directory.  You'll notice there are `coffee-shop.js` and `coffee-shop.json` files there.  
 
-    {% include important.html content="
-    The LoopBack [model generator](Model-generator.html), automatically converts camel-case model names (for example MyModel) to lowercase dashed names (my-model).  For example, if you create a model named \"FooBar\" with the model generator, it creates files `foo-bar.json` and `foo-bar.js` in `common/models`.  However, the model name (\"FooBar\") will be preserved via the model's name property.
-    " %}
+{% include important.html content="
+The LoopBack [model generator](Model-generator.html), automatically converts camel-case model names (for example MyModel) to lowercase dashed names (my-model).  For example, if you create a model named \"FooBar\" with the model generator, it creates files `foo-bar.json` and `foo-bar.js` in `common/models`.  However, the model name (\"FooBar\") will be preserved via the model's name property.
+" %}
+
 2.  Open `coffee-shop.js` in your favorite editor.  By default, it contains an empty function: 
 
     ```js
