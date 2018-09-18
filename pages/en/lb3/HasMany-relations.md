@@ -60,6 +60,8 @@ If not specified, LoopBack derives the relation name and foreign key as follows:
 Once you define a "hasMany" relation, LoopBack adds a method with the relation name to the declaring model class's prototype automatically.
 For example: `Customer.prototype.orders(...)`.
 
+The relation can return a promise by calling the `find()` method on the relation property.
+
 <table>
   <tbody>
     <tr>
@@ -110,6 +112,12 @@ For example: `Customer.prototype.orders(...)`.
   function(err) {<br>  ...<br>});</pre>
       </td>
       <td>Delete an order by ID.</td>
+    </tr>
+    <tr>
+      <td>
+        <pre>customer.orders.find().then(function(orders) { ... });</pre>
+      </td>
+      <td>Use the `find()` method on the relation name to return a promise.</td>
     </tr>
   </tbody>
 </table>

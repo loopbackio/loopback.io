@@ -243,6 +243,8 @@ Follow.belongsTo(User, {as: 'followee'});
 
 Once you define a "hasManyThrough" relation, LoopBack adds methods with the relation name to the declaring model class's prototype automatically, for example: `physician.patients.create(...)`.
 
+The relation can return a promise by calling the `find()` method on the relation property.
+
 <table>
   <tbody>
     <tr>
@@ -295,6 +297,12 @@ Once you define a "hasManyThrough" relation, LoopBack adds methods with the rela
   function(err, patient) {<br>  ...<br>});</pre>
       </td>
       <td>Find an patient by ID.</td>
+    </tr>
+    <tr>
+      <td>
+        <pre>physician.patients.find().then(function(patients) { ... });</pre>
+      </td>
+      <td>Use the `find()` method on the relation name to return a promise.</td>
     </tr>
   </tbody>
 </table>
