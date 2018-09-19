@@ -9,8 +9,7 @@
     "start": "bundle exec jekyll serve --incremental",
     "fetch-readmes": "./update-readmes.sh --repos=./_data --out=./_includes/readmes && ./update-v4-readmes.sh && ./update-community-readmes.sh",
     "lint-readmes": "markdownlint _includes/readmes/",
-    "postinstall": "npm run swagger-ui && npm run copydocs",
-    "swagger-ui": "node ./api-explorer/upgrade-swagger-ui.js",
+    "postinstall": "npm run copydocs",
     "copydocs": "node update-lb4-docs.js",
     "sitemap-transform": "node sitemap.js",
     "discovery-upload": "node discovery-upload.js"
@@ -28,7 +27,6 @@
     "fs-extra": "^5.0.0",
     "markdownlint-cli": "github:sequoia/markdownlint-cli",
     "retry": "^0.12.0",
-    "swagger-ui-dist": "^3.13.4",
     "watson-developer-cloud": "^3.4.1",
     "xml2js": "^0.4.19"
   },
