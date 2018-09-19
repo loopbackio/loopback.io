@@ -206,9 +206,10 @@ The results will be output in `./benchmarks/results.md`.
 
 ## strictObjectIDCoercion flag
 
-In version 1.17.0, the id of string type is being converted to ObjectID, when the string length is 12 or 24 and has the format of an ObjectID i.e /^[0-9a-fA-F]{24}$/. To avoid this issue, the strictObjectIDCoercion flag should be set to true in the model-definition file.
+In version 1.17.0, the id of string type is being converted to ObjectID, when the string length is 12 or 24 and has the format of an ObjectID i.e /^[0-9a-fA-F]{24}$/.
+To avoid this issue, the strictObjectIDCoercion flag should be set to true in the model-definition file. It is also possible to enable this flag on a per method bases by passing it in as part of the options object.
 
-model-definition.js
+### model-definition.js
 
 ```js
 {
@@ -262,6 +263,18 @@ module.exports = function(app) {
     });
   });
 };
+```
+
+### Per method basis
+
+```js
+myModelName.find(
+  {where: {id: {inq: ['59460487e9532ae90c324b59', '59460487e9532ae90c324b5a']}}},
+  {strictObjectIDCoercion: true},
+  function(err, result) {
+    // ... 
+  }
+)
 ```
 
 ## Release notes
