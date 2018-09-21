@@ -399,7 +399,7 @@ Do this in your test environment as there may be quite a lot of output.
       <td>&nbsp;</td>
       <td>__findById__relationName</td>
       <td>GET</td>
-      <td>/model-name-plural/{id}/relationName</td>
+      <td>/model-name-plural/{id}/relationName/{fk}</td>
     </tr>
     <tr>
       <td>&nbsp;</td>
