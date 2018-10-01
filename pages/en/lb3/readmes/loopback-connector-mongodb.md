@@ -33,7 +33,8 @@ The entry in the application's `/server/datasources.json` will look like this:
   "password": "mypassword",
   "name": "mydb",
   "user": "me",
-  "connector": "mongodb"  
+  "authSource" : "admin",
+  "connector": "mongodb"
 }
 ```
 
@@ -43,13 +44,16 @@ Edit `datasources.json` to add any other additional properties that you require.
 
 | Property | Type&nbsp;&nbsp; | Description |
 | --- | --- | --- |
-| connector | String | Connector name, either “loopback-connector-mongodb” or “mongodb”. |
+| connector | String | Connector name, either `"loopback-connector-mongodb"` or `"mongodb"`. |
 | database | String | Database name |
 | host | String | Database host name |
 | password | String | Password to connect to database |
 | port | Number | Database TCP port |
 | url | String | Connection URL of form `mongodb://user:password@host/db`. Overrides other connection settings (see below). |
-| username | String | Username to connect to database |
+| user | String | Username to connect to database |
+| authSource | String | Authentification database name (optional). Usually `"admin"` value. |
+
+If you run a MongoDB with authentification ([Docker's example here](https://github.com/docker-library/docs/tree/master/mongo#mongo_initdb_root_username-mongo_initdb_root_password)), you need to specify which database to authenticate against. More details can be found in [MongoDB documentation on Authentification Methods](https://docs.mongodb.com/manual/core/authentication/#authentication-methods). The default value is usually `"admin"`, like in the official docker image.
 
 **NOTE**: In addition to these properties, you can use additional Single Server Connection parameters supported by [`node-mongodb-native`](http://mongodb.github.io/node-mongodb-native/core/driver/reference/connecting/connection-settings/).
 
@@ -135,7 +139,7 @@ The .loopbackrc file is in JSON format, for example:
             "mongodb": {
                 "host": "127.0.0.1",
                 "database": "test",
-                "username": "youruser",
+                "user": "youruser",
                 "password": "yourpass",
                 "port": 27017
             }
@@ -144,15 +148,14 @@ The .loopbackrc file is in JSON format, for example:
             "mongodb": {
                 "host": "127.0.0.1",
                 "database": "test",
-                "username": "youruser",
+                "user": "youruser",
                 "password": "yourpass",
                 "port": 27017
             }
         }
     }
 
-**Note**: username/password is only required if the MongoDB server has
-authentication enabled.
+**Note**: user/password is only required if the MongoDB server has authentication enabled. `"authSource"` should be used if you cannot login to your database using your credentials.
 
 ## Running tests
 
