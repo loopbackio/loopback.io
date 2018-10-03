@@ -301,10 +301,21 @@ To use the first way to specify HTTP mapping for input parameters, provide an ob
       <td>The whole request body is used as the value.</td>
     </tr>
     <tr>
-      <td>form<br>query<br>path </td>
+      <td>form</td>
       <td>
-        The value is looked up using <code>req.param</code>, which searches route arguments, the request body and the query string.
-        Note that <code>query</code> and <code>path</code> are aliases for <code>form</code>.
+        The value is looked up using <code>req.body</code> which searches the request body
+      </td>
+    </tr>
+    <tr>
+      <td>query</td>
+      <td>
+        The value is looked up using <code>req.query</code> which searches the query string
+      </td>
+    </tr>
+    <tr>
+      <td>path</td>
+      <td>
+        The value is looked up using <code>req.params</code> which searches the route arguments
       </td>
     </tr>
     <tr>
