@@ -471,7 +471,7 @@ Do this in your test environment as there may be quite a lot of output.
       <td>&nbsp;</td>
       <td>replaceById</td>
       <td>POST</td>
-      <td>/model-name-plural/{id}</td>
+      <td>/model-name-plural/{id}/replace</td>
     </tr>
     <tr>
       <td>&nbsp;</td>
