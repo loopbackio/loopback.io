@@ -97,6 +97,8 @@ If you don't specify them, then LoopBack derives the relation name and foreign k
 Once you define the hasOne relation, LoopBack automatically adds a method with the relation name to the declaring model class's prototype.
 For example: `supplier.prototype.account(...)`.
 
+The relation can return a promise by calling the get() method on the relation property.
+
 <table>
   <tbody>
     <tr>
@@ -140,6 +142,12 @@ For example: `supplier.prototype.account(...)`.
         <pre>supplier.account.update({balance: 100}, function(err, account) {<br>  ...<br>});</pre>
       </td>
       <td>Update the associated account.</td>
+    </tr>
+    <tr>
+      <td>
+        <pre>supplier.account.get().then(function(account) { ... });</pre>
+      </td>
+      <td>Use the `get()` method on the relation name to return a promise.</td>
     </tr>
   </tbody>
 </table>

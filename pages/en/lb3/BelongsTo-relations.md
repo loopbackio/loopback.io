@@ -66,7 +66,7 @@ For example, here is the model JSON file for the order model in
   ...
 ```
 
-Alternatively, you can define a "belongsTo" relation in code, though in general this is not recommended:
+Alternatively, you can define a `belongsTo` relation in code, though in general this is not recommended:
 
 {% include code-caption.html content="common/models/order.js" %}
 ```javascript
@@ -83,11 +83,13 @@ If you don't specify them, then LoopBack derives the relation name and foreign k
 
 ## Methods added to the model
 
-Once you define the belongsTo relation, LoopBack automatically adds a method with the relation name to the declaring model class's prototype,
+Once you define the `belongsTo` relation, LoopBack automatically adds a method with the relation name to the declaring model class's prototype,
 for example: `Order.prototype.customer(...)`.
 
 Depending on the arguments, the method can be used to get or set the owning model instance.
 The results of method calls are cached internally and available via later synchronous calls to the method. 
+
+The relation can return a promise by calling the `get()` method on the relation property.
 
 <table>
   <tbody>
@@ -114,6 +116,12 @@ The results of method calls are cached internally and available via later synchr
         <pre>order.customer(customer);</pre>
       </td>
       <td>Set the customer for the order</td>
+    </tr>
+    <tr>
+      <td>
+        <pre>order.customer.get().then(function(customer) { ... });</pre>
+      </td>
+      <td>Use the `get()` method on the relation name to return a promise.</td>
     </tr>
   </tbody>
 </table>

@@ -166,3 +166,23 @@ MyModel.myFunc = function(input, cb) {
  MyModel.remoteMethod('myFunc', ...);
 }
 ```
+
+### DAO and relation methods
+
+`BelongsTo` and `HasOne` relations return promises by calling the `get()` method on the relation property:
+
+```javascript
+MyModel.relation.get()
+  .then(function(result) {
+    // ...
+  });
+```
+
+`HasMany` relations return promises by calling the `find()` method on the relation property:
+
+```javascript
+MyModel.relations.find()
+  .then(function(results) {
+    // ...
+  });
+```

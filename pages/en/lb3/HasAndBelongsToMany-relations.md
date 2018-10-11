@@ -73,6 +73,8 @@ Assembly.Parts.link({id:assemblyId, fk: partId}, partInstance,  function(value, 
 Once you define a "hasAndBelongsToMany" relation, LoopBack adds methods with the relation name to the declaring model class's prototype automatically.
 For example: `assembly.parts.create(...)`.
 
+The relation can return a promise by calling the `find()` method on the relation property.
+
 <table>
   <tbody>
     <tr>
@@ -126,6 +128,12 @@ For example: `assembly.parts.create(...)`.
 function(err) {<br>  ...<br>});</pre>
       </td>
       <td>Delete a part by ID.</td>
+    </tr>
+    <tr>
+      <td>
+        <pre>assembly.parts.find().then(function(parts) { ... });</pre>
+      </td>
+      <td>Use the `find()` method on the relation name to return a promise.</td>
     </tr>
   </tbody>
 </table>
