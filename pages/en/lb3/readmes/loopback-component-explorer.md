@@ -1,14 +1,17 @@
 # loopback-component-explorer
 
+**This module is in Active LTS mode, new features are no longer accepted.**
+<br/>(See [Module Long Term Support Policy](#module-long-term-support-policy)
+below.)
+
+LoopBack 3 users looking for new features are encouraged to upgrade
+to LoopBack 4. Refer to
+[loopback-next#1849](https://github.com/strongloop/loopback-next/issues/1849)
+for more information on how to upgrade.
+
+## Overview
+
 Browse and test your LoopBack app's APIs.
-
-## Supported versions
-
-Current|Long Term Support|Maintenance
-:-:|:-:|:-:
-6.x|5.x|4.x
-
-Learn more about our LTS plan in [docs](http://loopback.io/doc/en/contrib/Long-term-support.html).
 
 ## Basic Usage
 
@@ -183,3 +186,17 @@ Options are passed to `explorer(app, options)`.
 >   }
 > }
 > ```
+
+## Module Long Term Support Policy
+
+This module adopts the [
+Module Long Term Support (LTS)](http://github.com/CloudNativeJS/ModuleLTS) policy,
+ with the following End Of Life (EOL) dates:
+
+| Version | Status          | Published | EOL      |
+| ------- | --------------- | --------- | -------- |
+| 6.x     | Active LTS      | Apr 2018  | Dec 2019 |
+| 5.x     | Maintenance LTS | Sep 2017  | Dec 2019 |
+| 4.x     | Maintenance LTS | Dec 2016  | Apr 2019 |
+
+Learn more about our LTS plan in [docs](https://loopback.io/doc/en/contrib/Long-term-support.html).
