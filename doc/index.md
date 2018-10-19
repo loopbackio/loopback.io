@@ -19,9 +19,10 @@ Getting Started with Node for:
 
 This site contains documentation for:
 
-- **[LoopBack 4](en/lb4)** - Developer Preview #3 release. <br/> _Check out the next step in the evolution of LoopBack!_
-- **[LoopBack 3.x](en/lb3)** - Current production release.
-- **[LoopBack 2.x](en/lb2)** - [Long-term support](/doc/en/contrib/Long-term-support.html) release.
+- **[LoopBack 4](en/lb4)** - Current release. <br/> 
+_LoopBack 4 GA (General Availability) has been released in October 2018, read more in the [announcement post](http://strongloop.com/strongblog/loopback-4-ga)_
+- **[LoopBack 3.x](en/lb3)** - Active LTS. _Details can be found in our [LTS plan](en/contrib/Long-term-support.html)._
+- **[LoopBack 2.x](en/lb2)** - Maintenance LTS. _Details can be found in our [LTS plan](en/contrib/Long-term-support.html)._
 - **[Contributing to LoopBack](en/contrib/)** - How to contribute to the LoopBack project.
 - **[Community projects](en/community)** - Where Loopback developers can promote and explain their LoopBack-related projects.
 
