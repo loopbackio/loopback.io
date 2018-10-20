@@ -358,7 +358,7 @@ Do this in your test environment as there may be quite a lot of output.
     </tr>
     <tr>
       <td>&nbsp;</td>
-      <td>createChangeStream</td>
+      <td>create</td>
       <td>POST</td>
       <td>/model-name-plural</td>
     </tr>
