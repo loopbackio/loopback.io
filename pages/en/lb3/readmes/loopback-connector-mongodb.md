@@ -70,6 +70,7 @@ of type `GeoPoint`. This allows for indexed ```near``` queries.  Default is `fal
   - It will try to establish the connection automatically once users hit the endpoint. If the mongodb server is offline, the app will start, however, the endpoints will not work.
 - **disableDefaultSort**: Set to `true` to disable the default sorting
   behavior on `id` column, this will help performance using indexed columns available in mongodb.
+- **collation**: Specify language-specific rules for string comparison, such as rules for lettercase and accent marks. See [`MongdoDB documentation`](https://docs.mongodb.com/manual/reference/collation/) for details. It can also be used to create [`case insensitive indexes`](https://docs.mongodb.com/manual/core/index-case-insensitive/).
 
 ### Setting the url property in datasource.json
 
