@@ -48,7 +48,7 @@ For example, consider two models: supplier and account.
 }
 ```
 
-A supplier has one account, where the foreign  key is on the declaring model: account.supplierId -> supplier.id.
+A supplier has one account, where the foreign  key is on the target model: account.supplierId -> supplier.id.
 
 {% include code-caption.html content="common/models/account.json" %}
 ```javascript
@@ -84,7 +84,7 @@ Supplier.hasOne(Account, {foreignKey: 'supplierId', as: 'account'});
 ```
 
 If the target model doesn't have a foreign key property, LoopBack will add a property with the same name.
-The type of the property will be the same as the type of the target model's **id** property.
+The type of the property will be the same as the type of the declaring model's **id** property.
 Please note the foreign key property is defined on the target model (for example, Account).
 
 If you don't specify them, then LoopBack derives the relation name and foreign key as follows:
