@@ -89,7 +89,7 @@ The following table describes the properties of the UserIdentity model.
       <td>profile</td>
       <td>Object</td>
       <td>User profile, see
-        <a href="http://passportjs.org/guide/profile" class="external-link" rel="nofollow">http://passportjs.org/guide/profile</a>
+        <a href="http://passportjs.org/docs/profile" class="external-link" rel="nofollow">http://passportjs.org/docs/profile</a>
       </td>
     </tr>
     <tr>
