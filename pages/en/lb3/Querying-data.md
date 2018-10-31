@@ -338,3 +338,128 @@ db.define('User', {
 users can do a nested query like `User.find({where: {'address.tags.tag': 'business'}}`.
 
 Data source connectors for relational databases don't support filtering nested properties.
+
+### Sanitizing filter objects
+
+Filters are very powerful and flexible. To prevent them from creating potential security risks,
+LoopBack sanitize filter objects as follows:
+
+1. Normalize `undefined` values
+
+The policy is controlled by the `normalizeUndefinedInQuery` setting at datasource or model
+level. There are three options:
+
+- 'nullify': Set `undefined` to `null`
+- 'throw': Throw an error if `undefined` is found
+- 'ignore': Remove `undefined`. This is the default behavior if `normalizeUndefinedInQuery`
+  is not configured
+
+For example:
+
+**server/datasources.json**:
+
+```json
+{
+  "db": {
+    "name": "db",
+    "connector": "memory",
+    "normalizeUndefinedInQuery": "ignore"
+  }
+}
+```
+
+**server/model-config.json**:
+
+```json
+{
+  "project": {
+    "dataSource": "db",
+    "public": true,
+    "normalizeUndefinedInQuery": "throw"
+  }
+}
+```
+
+2. Prohibit hidden/protected properties from being searched
+
+[Hidden or protected properties](https://loopback.io/doc/en/lb3/Model-definition-JSON-file.html#hidden-properties)
+can expose sensitive information if they are allowed to be searched.
+
+LoopBack introduces `prohibitHiddenPropertiesInQuery` setting at datasource/model level to control
+if hidden/protected properties can be used in the `where` object. By default, its value is `true`.
+
+For example, 
+
+**server/datasources.json**:
+
+```json
+{
+  "db": {
+    "name": "db",
+    "connector": "memory",
+    "prohibitHiddenPropertiesInQuery": true
+  }
+}
+```
+
+With the following model definition:
+
+```json
+{
+  "name": "MyModel",
+  "hidden": ["secret"],
+  "properties": {
+    "name": "string",
+    "secret": "string"
+  }
+}
+```
+
+`MyModel.find({where: {secret: 'guess'}});` will be sanitized as `MyModel.find({where: {}};` and
+a warning will be printed on the console:
+
+```
+Potential security alert: hidden/protected properties ["secret"] are used in query.
+```
+
+3. Report circular references
+
+If the filter object has circular references, LoopBack throws an error as follows:
+```js
+{
+  message: 'The query object is circular',
+  statusCode: 400,
+  code: 'QUERY_OBJECT_IS_CIRCULAR'
+}
+```
+
+4. Constrain the maximum depth
+
+Deep filter objects may be mapped to very complex queries that can potentially break your application.
+To mitigate such risks, LoopBack allows you to configure `maxDepthOfQuery` in datasource/model settings.
+The default value is `12`. Please note the `depth` is calculated based on the level of child properties
+of an JSON object.
+
+For example:
+
+**server/datasources.json**:
+
+```json
+{
+  "db": {
+    "name": "db",
+    "connector": "memory",
+    "maxDepthOfQuery": 5
+  }
+}
+```
+
+If the filter object exceeds the maximum depth, an error will be reported:
+
+```js
+{
+  message: 'The query object exceeds maximum depth 5',
+  statusCode: 400,
+  code: 'QUERY_OBJECT_TOO_DEEP'
+}
+```
