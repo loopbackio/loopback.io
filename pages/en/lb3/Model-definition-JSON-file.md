@@ -256,7 +256,7 @@ The `options` key specifies advanced options, for example data source-specific o
     <tr>
       <td><code>allowEternalTokens</code></td>
       <td>Boolean</td>
-      <td>Allow access tokens that never expire.</td>
+      <td>Allow access tokens created with <code>ttl = -1</code> never expire.</td>
     </tr>
   </tbody>
 </table>
