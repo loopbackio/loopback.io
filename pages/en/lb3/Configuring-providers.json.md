@@ -27,6 +27,10 @@ var passportConfigurator = new PassportConfigurator(app);
 var config = {};
 try {
 	config = require('../providers.json');
+	// If using custom passport module
+	config['custom-example'].verifyMethod = function(req, token, details, verified) {
+		verified(null, details);
+	}
 } catch (err) {
 	console.trace(err);
 	process.exit(1); // fatal
@@ -47,6 +51,23 @@ Below is the providers.template.json file provided with [loopback-example-passp
     "passwordField": "password",
     "authPath": "/auth/local",
     "successRedirect": "/auth/account"
+  },
+  "custom-example": {
+    "authScheme": "custom",
+    "provider": "custom-example",
+    "module": "loopback-passport-custom-strategy-example",
+    "authPath": "/auth/example",
+    "example": {
+      "id": "123",
+      "username": "example",
+      "email": "example@email.com",
+      "emailVerified": true
+    },
+    "authOptions": {
+      "successRedirect": "/auth/success",
+      "failureRedirect": "/auth/failure"
+    },
+    "passReqToVerify": true
   },
   "facebook-login": {
     "provider": "facebook",
@@ -329,6 +350,39 @@ Used by Google and Facebook.
       <td>Boolean</td>
       <td>Return user profile with `accessToken` information in passport callback</td>
       <td>true</td>
+      <td>false</td>
+    </tr>
+  </tbody>
+</table>
+
+### Custom
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Type</th>
+      <th>Description</th>
+      <th>Example</th>
+      <th>Default</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>authOptions</td>
+      <td>Object</td>
+      <td>Options passed to custom strategy authenticate method</td>
+      <td>
+        <p>"authOptions": {"successRedirect": "/auth/success", "failureRedirect": "/auth/failure"}</p>
+      </td>
+    </tr>
+    <tr>
+      <td>passReqToVerify</td>
+      <td>Boolean</td>
+      <td>Configures if the HTTP request object should be passed to verify method</td>
+      <td>
+        <p>true</p>
+      </td>
       <td>false</td>
     </tr>
   </tbody>
