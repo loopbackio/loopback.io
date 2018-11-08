@@ -92,6 +92,12 @@ exports.certificate = fs.readFileSync(path.join(__dirname, './private/certificat
 
 ### Configure the app 
 
+Next, you can configure application settings such as its public hostname and
+port as well as the `restApiRoot` to change the API base path and other
+settings. Check out the meaning of the values in this file and their
+configuration [here](config.json.html).
+
+{% include code-caption.html content="server/config.json" %}
 ```javascript
 {
   "restApiRoot": "/api",
