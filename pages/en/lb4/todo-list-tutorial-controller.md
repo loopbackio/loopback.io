@@ -101,7 +101,13 @@ completed controller should look as follows:
 #### src/controllers/todo-list.controller.ts
 
 ```ts
-import {Filter, repository, Where} from '@loopback/repository';
+import {
+  Filter,
+  repository,
+  Where,
+  Count,
+  CountSchema,
+} from '@loopback/repository';
 import {
   del,
   get,
@@ -125,7 +131,7 @@ export class TodoListController {
     responses: {
       '200': {
         description: 'TodoList model instance',
-        content: {'application/json': {'x-ts-type': TodoList}},
+        content: {'application/json': {schema: {'x-ts-type': TodoList}}},
       },
     },
   })
@@ -151,7 +157,7 @@ export class TodoListController {
     responses: {
       '200': {
         description: 'Array of TodoList model instances',
-        content: {'application/json': {'x-ts-type': TodoList}},
+        content: {'application/json': {schema: {'x-ts-type': TodoList}}},
       },
     },
   })
@@ -180,7 +186,7 @@ export class TodoListController {
     responses: {
       '200': {
         description: 'TodoList model instance',
-        content: {'application/json': {'x-ts-type': TodoList}},
+        content: {'application/json': {schema: {'x-ts-type': TodoList}}},
       },
     },
   })
