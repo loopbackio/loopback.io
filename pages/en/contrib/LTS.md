@@ -19,6 +19,15 @@ The project maintains:
 - An _Active LTS_ (Long-Term Support) version that does not add new features but gets bug fixes.
 - One or more _Maintenance LTS_ versions that receive only critical bug fixes.
 
+Below is the LTS schedule on the LoopBack versions:
+
+Framework | Status | Published | EOL | Runtime | GA | EOL
+-- | -- | -- | -- | -- | -- | --
+LoopBack 4 | Current | Oct 2018 | Apr 2021<br/>_(minimum)_| Node 10 | Oct 2018 | Apr 2021
+Loopback 3 | Active LTS | Dec 2016 | Dec 2019 |  Node 8 | Oct 2017 | Dec 2019
+Loopback 2 | Maintenance LTS | Jul 2014 | Apr 2019 | Node 6 | Oct 2016 | Apr 2019
+
+
 
 ## Active LTS
 
@@ -58,22 +67,3 @@ Once a release moves into Maintenance LTS mode, only critical bugs, critical
 security fixes, and documentation updates will be permitted.
 
 Specifically, adding support for new major Node.js versions is not permitted.
-
-## Examples
-
-In August 2018, there were two major Node.js versions covered by the LTS plan:
-6.x and 8.x; and two supported LoopBack versions: 2.x and 3.x.
-
-Framework | Status | Published | EOL | Runtime | GA | EOL
--- | -- | -- | -- | -- | -- | --
-Loopback 3 | Current | Dec 2016 | Dec 2019<br/>_(minimum)_ |  Node 8 | Oct 2017 | Dec 2019
-Loopback 2 | Active LTS | Jul 2014 | Apr 2019 | Node 6 | Oct 2016 | Apr 2019
-
-Assuming LoopBack 4.0 is released in October 2018 to align with Node.js 10.x
-entering LTS:
-
-Framework | Status | Published | EOL | Runtime | GA | EOL
--- | -- | -- | -- | -- | -- | --
-LoopBack 4 | Current | Oct 2018 | Apr 2021<br/>_(minimum)_| Node 10 | Oct 2018 | Apr 2021
-Loopback 3 | Active LTS | Dec 2016 | Dec 2019 |  Node 8 | Oct 2017 | Dec 2019
-Loopback 2 | Maintenance LTS | Jul 2014 | Apr 2019 | Node 6 | Oct 2016 | Apr 2019
