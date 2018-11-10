@@ -31,10 +31,6 @@ children:
     url: triaging-pull-requests.html
     output: web, pdf
 
-  - title: Functional area owners
-    url: functional-area-owners.html
-    output: web, pdf
-
 - title: Contributing to docs
   url: doc-contrib.html
   output: web, pdf
