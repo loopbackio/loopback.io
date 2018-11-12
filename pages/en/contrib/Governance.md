@@ -14,28 +14,32 @@ LoopBack is an open, inclusive, and tolerant community of people working togethe
 
 ## Maintainers
 
-Each repository has one or more lead maintainers responsible for:
+Each repository has one or more core maintainers responsible for:
 
 *   Daily operations: approving pull requests, responding to new issues, guiding discussions, and so on.
 *   Seeking consensus on technical decisions.
 *   Making the final decisions when consensus cannot be achieved.
 
-Maintainers have npm publishing rights for modules and the final say on releasing new versions.  
+Core maintainers have npm publishing rights for modules and the final say on releasing new versions.  
 
-Refer to `CODEOWNERS` file in each repository for the list of lead maintainers. 
+Refer to `CODEOWNERS` file in each repository for the list of active core and community maintainers. 
 
-### Full-time maintainers
+### Core maintainers
 
 Project architects:
 *   [Miroslav Bajtoš](https://github.com/bajtos)
 *   [Raymond Feng](https://github.com/raymondfeng)
 
-Full-time maintainers include:
+Other core maintainers include:
 *   [Biniam Admikew](http://github.com/b-admike)
 *   [Diana Lau](http://github.com/dhmlau)
 *   [Janny Hou](http://github.com/jannyHou)
 *   [Yaapa Hage](https://github.com/hacksparrow)
 *   [Nora Abdelgair](https://github.com/nabdelgadir)
+
+Previous project architects:
+*   [Ritchie Martori](https://github.com/ritch)
+*   [Simon Ho](https://github.com/superkhau)
 
 ## Scrum board
 
