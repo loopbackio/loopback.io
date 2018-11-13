@@ -14,24 +14,34 @@ LoopBack is an open, inclusive, and tolerant community of people working togethe
 
 ## Maintainers
 
-Each repository has one or more lead maintainers responsible for:
+Each repository has one or more core maintainers responsible for:
 
 *   Daily operations: approving pull requests, responding to new issues, guiding discussions, and so on.
 *   Seeking consensus on technical decisions.
 *   Making the final decisions when consensus cannot be achieved.
 
-Maintainers have npm publishing rights for modules and the final say on releasing new versions.
+Core maintainers have npm publishing rights for modules and the final say on releasing new versions.  
 
-## Lead maintainers
+Besides core maintaners working on LoopBack full-time, there is also a growing group of voluntary maintainers from our community.
 
-LoopBack lead maintainers include:
+Refer to `CODEOWNERS` file in each repository for the list of all active maintainers. 
 
+### Core maintainers
+
+Project architects:
 *   [Miroslav Bajtoš](https://github.com/bajtos)
 *   [Raymond Feng](https://github.com/raymondfeng)
+
+Other core maintainers include:
+*   [Biniam Admikew](http://github.com/b-admike)
+*   [Diana Lau](http://github.com/dhmlau)
+*   [Janny Hou](http://github.com/jannyHou)
+*   [Yaapa Hage](https://github.com/hacksparrow)
+*   [Nora Abdelgair](https://github.com/nabdelgadir)
+
+Previous project architects:
 *   [Ritchie Martori](https://github.com/ritch)
 *   [Simon Ho](https://github.com/superkhau)
-
-For more details, see [Functional area owners](functional-area-owners.html).
 
 ## Scrum board
 
@@ -54,7 +64,7 @@ Triaging | The issue is triaged to ensure we have enough information to understa
 Needs&nbsp;priority | The issue is accepted as a bug/feature and waiting to get prioritized.
 Backlog | A curated list of items we want to work on in the near future.
 Planning | A short list of the most important issue, we use this list to pick the stories for our Sprint backlog during our bi-weekly planning session.
-Commited | Stories committed to the current sprint (Sprint Backlog)
+Committed | Stories committed to the current sprint (Sprint Backlog)
 In&nbsp;Progress | Issues that we are actively working on
 Paused | Stories we put on hold.
 Review | Items waiting for peer review. Pull requests typically go to this column.
