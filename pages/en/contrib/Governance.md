@@ -22,7 +22,9 @@ Each repository has one or more core maintainers responsible for:
 
 Core maintainers have npm publishing rights for modules and the final say on releasing new versions.  
 
-Refer to `CODEOWNERS` file in each repository for the list of active core and community maintainers. 
+Besides core maintaners working on LoopBack full-time, there is also a growing group of voluntary maintainers from our community.
+
+Refer to `CODEOWNERS` file in each repository for the list of all active maintainers. 
 
 ### Core maintainers
 
