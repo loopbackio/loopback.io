@@ -15,6 +15,7 @@
 #
 (cat <<LIST_END
 strongloop loopback-next master packages/metadata/README.md
+strongloop loopback-next master packages/rest-explorer/README.md
 strongloop loopback-next master examples/todo/README.md
 strongloop loopback-next master examples/todo-list/README.md
 strongloop loopback-next master examples/soap-calculator/README.md
