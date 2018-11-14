@@ -6,12 +6,11 @@ keywords: LoopBack 3.0
 tags: [getting_started]
 sidebar: lb3_sidebar
 permalink: /doc/en/lb3/index.html
-summary: LoopBack 3.0 is the current release.
+summary: LoopBack 3.0 is the active long-term support (LTS) release.
 ---
 
-{% include important.html content="LoopBack 3.x is the current production release.
-It was released for general availability on 21 Dec 2016; see the [release announcement](https://strongloop.com/strongblog/announcing-loopback-3-0-ga/).
-LoopBack 2.x is now the [LTS release](/doc/en/contrib/Long-term-support.html).
+{% include important.html content="If you're new to LoopBack, use the current release,
+[LoopBack 4.0](/doc/en/lb4/index.html).
 " %}
 
 ## Install LoopBack tools
