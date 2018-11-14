@@ -1,0 +1,185 @@
+body {
+    --color-blue: #009cff;
+    --color-blue-d: #3f5dff;
+    --color-blue-xd: #001956;
+    --color-gray: #a3a4a3;
+    --color-gray-d: #626262;
+    --color-gray-xd: #393939;
+    --color-white: #ffffff;
+    --color-white-d: #fbfcfc;
+    --color-white-xd: #f8fafa;
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+    color: var(--color-gray);
+}
+
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus {
+    color: var(--color-gray-d);
+}
+
+.nav > li.active > a {
+    background-color: var(--color-blue-d);
+}
+
+.nav > li > a:hover {
+    background-color: var(--color-blue-d);
+}
+
+div.navbar-collapse .dropdown-menu > li > a:hover {
+    background-color: var(--color-blue-d);
+}
+
+.nav li.thirdlevel > a {
+    background-color: #FAFAFA !important;
+    color: var(--color-blue-d);
+    font-weight: bold;
+}
+
+a[data-toggle="tooltip"] {
+    color: var(--color-blue-d);
+    font-style: italic;
+    cursor: default;
+}
+
+.navbar-inverse {
+    background-color: var(--color-white); 
+    border-color: var(--color-gray);
+}
+
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
+    background-color: var(--color-gray);
+    color: var(--color-gray-xd);
+}
+
+.btn-primary {
+    color: var(--color-white);
+    background-color: var(--color-blue-xd);
+    border-color: var(--color-blue-xd);
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+    background-color: var(--color-blue-d);
+    border-color: var(--color-blue-xd);
+}
+
+.printTitle {
+    color: var(--color-blue-d)!important;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: var(--color-gray);
+}
+
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus {
+    color: var(--color-gray-xd);
+}
+
+.navbar-inverse .navbar-nav > .dropdown > a .caret {
+    border-top-color: var(--color-gray);
+    border-bottom-color: var(--color-gray-d);
+}
+
+.navbar-inverse .navbar-nav > .dropdown > a:hover .caret,
+.navbar-inverse .navbar-nav > .open > a .caret, 
+.navbar-inverse .navbar-nav > .open > a:hover .caret, 
+.navbar-inverse .navbar-nav > .open > a:focus .caret {
+    border-top-color: var(--color-gray-d);
+    border-bottom-color: var(--color-gray-d);
+}
+
+.dropdown-menu > li > a {
+    color: var(--color-gray);
+}
+
+.lb-search input {
+    color: var(--color-gray-xd);
+}
+
+.search-bar::placeholder {
+    color: var(--color-gray);
+}
+
+.highlight-box {
+    border: 1px solid var(--color-gray-d);
+    background-color: var(--color-gray);
+}
+
+a {
+    color: var(--color-blue-d);
+}
+
+#seealso {
+    border: 1px solid var(--color-blue-xd) !important;
+}
+
+#mysidebar li > a:hover {
+   background-color: var(--color-blue);
+}
+
+.btn-link, .btn-link:hover, .btn-link:focus {
+    color: var(--color-blue-d);
+}
+
+.v3notice {
+    border: 1px solid var(--color-blue-xd);
+}
+
+body.print h1 {color: var(--color-blue-d) !important; font-size:28px;}
+body.print h2 {color: var(--color-gray-xd) !important; font-size:24px;}
+body.print h3 {color: var(--color-gray) !important; font-size:14px;}
+body.print h4 {color: var(--color-blue) !important; font-size:14px; font-style: italic;}
+
+.anchorjs-link:hover {
+    color: var(--color-blue-xd);
+}
+
+div.sidebarTitle {
+    color: var(--color-gray-xd);
+}
+
+div.sidebarTitle, div.sidebarTitle a {
+    margin-top: 10px;
+    font-weight:normal;
+    font-size:130%;
+    color: var(--color-gray-xd);
+    margin-bottom:5px;
+    /* margin-left: 5px; */
+}
+
+@media (min-width: 992px) {
+    .col-md-3 {
+        height: 100%;
+        overflow-y: auto;
+        position: fixed;
+        width: 26%;
+        z-index: 999;
+    }
+    .col-md-9 {
+        margin-left: 28%;
+    }
+}
+
+@media (min-width: 1065px) {
+    .col-md-3 {
+        width: 24%;
+    }
+}
+
+@media (min-width: 1115px) {
+    .col-md-3 {
+        width: 23%;
+    }
+}
+
+@media (min-width: 1230px) {
+    .col-md-3 {
+        width: 21%;
+    }
+}
