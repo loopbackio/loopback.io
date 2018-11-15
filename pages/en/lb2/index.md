@@ -8,10 +8,10 @@ keywords: LoopBack 2.x
 tags: [getting_started]
 sidebar: lb2_sidebar
 permalink: /doc/en/lb2/index.html
-summary: LoopBack 2.x is the long-term support (LTS) release.
+summary: LoopBack 2.x is the maintenance long-term support (LTS) release.
 ---
 {% include important.html content="If you're new to LoopBack, use the current release,
-[LoopBack 3.0](/doc/en/lb3/index.html).
+[LoopBack 4.0](/doc/en/lb4/index.html).
 " %}
 
 To ask questions and discuss how you are using LoopBack, check out the [LoopBack Developer Forum](https://groups.google.com/forum/#!forum/loopbackjs) .
