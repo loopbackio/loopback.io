@@ -339,7 +339,7 @@ users can do a nested query like `User.find({where: {'address.tags.tag': 'busine
 
 Data source connectors for relational databases don't support filtering nested properties.
 
-### Sanitizing filter objects
+### Sanitizing filter and data objects
 
 Filters are very powerful and flexible. To prevent them from creating potential security risks,
 LoopBack sanitize filter objects as follows:
@@ -356,7 +356,7 @@ level. There are three options:
 
 For example:
 
-**server/datasources.json**:
+{% include code-caption.html content="server/datasources.json" %}
 
 ```json
 {
@@ -368,7 +368,7 @@ For example:
 }
 ```
 
-**server/model-config.json**:
+{% include code-caption.html content="server/model-config.json" %}
 
 ```json
 {
@@ -433,28 +433,28 @@ If the filter object has circular references, LoopBack throws an error as follow
 }
 ```
 
-4. Constrain the maximum depth
+4. Constrain the maximum depth of query and data objects
 
 Deep filter objects may be mapped to very complex queries that can potentially break your application.
-To mitigate such risks, LoopBack allows you to configure `maxDepthOfQuery` in datasource/model settings.
-The default value is `12`. Please note the `depth` is calculated based on the level of child properties
-of an JSON object.
+To mitigate such risks, LoopBack allows you to configure `maxDepthOfQuery` and `maxDepthOfData` in datasource/model settings. The default value is `12`. Please note the `depth` is calculated based on the
+level of child properties of an JSON object.
 
 For example:
 
-**server/datasources.json**:
+{% include code-caption.html content="server/datasources.json" %}
 
 ```json
 {
   "db": {
     "name": "db",
     "connector": "memory",
-    "maxDepthOfQuery": 5
+    "maxDepthOfQuery": 5,
+    "maxDepthOfData": 16
   }
 }
 ```
 
-If the filter object exceeds the maximum depth, an error will be reported:
+If the filter or data object exceeds the maximum depth, an error will be reported:
 
 ```js
 {
@@ -463,3 +463,25 @@ If the filter object exceeds the maximum depth, an error will be reported:
   code: 'QUERY_OBJECT_TOO_DEEP'
 }
 ```
+
+#### Per method invocation constraints
+
+The constraints can also be passed in as `options` argument for method calls. 
+Method level settings take precedence over model/datasource configuration. For
+example,
+
+```js
+MyModel.find(filter, {
+  prohibitHiddenProperties: false,
+  maxDepthOfQuery: 8,
+}, callback);
+```
+
+For remote methods invoked via REST APIs, the following values are set by default:
+
+- `prohibitHiddenPropertiesInQuery: true`
+- `maxDepthOfQuery: 12`
+- `maxDepthOfData: 32`
+
+To override such defaults, you can override `createOptionsFromRemotingContext(ctx)` method
+of the model class. See [documentation](https://loopback.io/doc/en/lb3/Using-current-context.html#override-createoptionsfromremotingcontext-in-your-model) for more details.
