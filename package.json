@@ -7,7 +7,7 @@
     "build": "npm run fetch-readmes && bundle exec jekyll build",
     "postbuild": "npm run sitemap-transform",
     "start": "bundle exec jekyll serve --incremental",
-    "fetch-readmes": "./update-readmes.sh --repos=./_data --out=./_includes/readmes && ./update-v4-readmes.sh && ./update-community-readmes.sh",
+    "fetch-readmes": "./update-readmes.sh --repos=./_data --out=./_includes/readmes && ./update-community-readmes.sh",
     "lint-readmes": "markdownlint _includes/readmes/",
     "postinstall": "npm run swagger-ui && npm run copydocs",
     "swagger-ui": "node ./api-explorer/upgrade-swagger-ui.js",
