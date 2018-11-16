@@ -40,7 +40,6 @@ exclude:
   - node_modules
   - Jenkinsfile
   - update-readmes.sh
-  - update-v4-readmes.sh
 # these are the files and directories that jekyll will exclude from the build
 
 feedback_email: rmckinn@us.ibm.com
