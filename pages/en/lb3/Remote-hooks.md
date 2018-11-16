@@ -184,7 +184,7 @@ Customer.afterRemote('**', function (ctx, user, next) {
         result.unsetAttribute('password');
       });
     } else {
-      delete ctx.result.unsetAttribute('password');
+      ctx.result.unsetAttribute('password');
     }
   }
 
