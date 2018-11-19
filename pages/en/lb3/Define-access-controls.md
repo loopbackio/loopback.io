@@ -131,5 +131,17 @@ When you're done, the ACL section in `common/models/review.json` should look l
 ...
 ```
 
+## For mango DB
+if your using mango db you should set strictObjectIDCoercion options in `mode-config.json` becouse mongoDb have some problem with object id 
+
+```
+  "RoleMapping": {
+    "dataSource": "db",
+    "options": {
+      "strictObjectIDCoercion": true
+    },
+    "public": false
+  },
+  ```
 {% include next.html content="Continue to [Define a remote hook](Define-a-remote-hook.html)."
 %}
