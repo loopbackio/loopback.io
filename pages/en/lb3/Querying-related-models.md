@@ -37,6 +37,12 @@ User.find({include: 'posts'}, function() {
   //...
 });
 ```
+Or, Add scope into a model user.json
+```
+  "scope": {
+    "include": "posts"
+  },
+```
 
 Or, equivalently:
 
