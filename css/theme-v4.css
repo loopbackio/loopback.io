@@ -10,7 +10,9 @@ body {
     --color-white-xd: #f8fafa;
 }
 
-.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+.nav-tabs > li.active > a, 
+.nav-tabs > li.active > a:hover, 
+.nav-tabs > li.active > a:focus {
     color: var(--color-gray);
 }
 
@@ -48,7 +50,9 @@ a[data-toggle="tooltip"] {
     border-color: var(--color-gray);
 }
 
-.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
+.navbar-inverse .navbar-nav > .open > a, 
+.navbar-inverse .navbar-nav > .open > a:hover, 
+.navbar-inverse .navbar-nav > .open > a:focus {
     background-color: var(--color-gray);
     color: var(--color-gray-xd);
 }
@@ -94,6 +98,15 @@ a[data-toggle="tooltip"] {
     border-bottom-color: var(--color-gray-d);
 }
 
+.navbar-inverse .navbar-toggle:hover, 
+.navbar-inverse .navbar-toggle:focus {
+    background-color: var(--color-gray);
+}
+
+.navbar-inverse .navbar-toggle .icon-bar {
+    background-color: var(--color-gray-xd);
+}
+
 .dropdown-menu > li > a {
     color: var(--color-gray);
 }
@@ -130,6 +143,11 @@ a {
 .v3notice {
     border: 1px solid var(--color-blue-xd);
 }
+.alert-success {
+    background-color: var(--color-gray);
+    border-color: var(--color-gray-d);
+    color: var(--color-gray-xd);
+}
 
 body.print h1 {color: var(--color-blue-d) !important; font-size:28px;}
 body.print h2 {color: var(--color-gray-xd) !important; font-size:24px;}
@@ -150,7 +168,18 @@ div.sidebarTitle, div.sidebarTitle a {
     font-size:130%;
     color: var(--color-gray-xd);
     margin-bottom:5px;
-    /* margin-left: 5px; */
+}
+
+@media (max-width: 800px) {
+    .navbar-collapse .navbar-nav.navbar-right:last-child {
+        margin-right: 0px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .navbar > .container .navbar-brand {
+        margin-left: -26px;
+    }
 }
 
 @media (min-width: 992px) {
@@ -181,5 +210,23 @@ div.sidebarTitle, div.sidebarTitle a {
 @media (min-width: 1230px) {
     .col-md-3 {
         width: 21%;
+    }
+}
+
+@media (min-width: 1410px) {
+    .col-md-3 {
+        width: 19%;
+    }
+}
+
+@media (min-width: 1680px) {
+    .col-md-3 {
+        width: 17%;
+    }
+}
+
+@media (min-width: 1880px) {
+    .col-md-3 {
+        width: 14%;
     }
 }
