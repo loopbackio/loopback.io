@@ -25,7 +25,7 @@ You can contribute in a number of ways:
 
 ## Where to start
 
-If you are looking to contribute, but aren't sure where to start, review open pull requests for the module.  For example: [LoopBack open pull requests](https://github.com/strongloop/loopback/pulls).
+If you are looking to contribute, but aren't sure where to start, review open pull requests for the module.  For example, LoopBack open pull requests for [2.x and 3.x](https://github.com/strongloop/loopback/pulls) and that for [4.x](https://github.com/strongloop/loopback-next/pulls).
 
 Also, please read the source code before contributing. If something is confusing, poorly documented, poorly commented, or could otherwise be improved: open a GitHub issue and link to the file and line of code with a useful description of what you would like to see or think is missing.
 
@@ -34,18 +34,14 @@ Another place to look is to find our issues on GitHub with `good first issue` ta
 
 ### LoopBack versions
 
-LoopBack maintains a current version, a long-term support (LTS) version, and a maintenance version.  New features go into the current version; bug fixes can go into the LTS and maintenance versions, depending on the nature of the bug.  For more information, see [Long-term support](Long-term-support.html).
+LoopBack maintains a current version, a long-term support (LTS) version, and a maintenance version.  New features go into the current version; bug fixes can go into the active LTS and maintenance LTS versions, depending on the nature of the bug.  For more information, see [Long-term support](Long-term-support.html).
 
-### Recommended Node.js version
+Note that we are no longer accepting features for LoopBack versions that are in either LTS versions.  If you are in doubt, please open an issue to discuss first with the maintainers before spending too much time on implementation.
 
-{% include note.html content="Check your Node.js version with the command `node -v`.
-" %}
-
-LoopBack 2.x supports Node.js v0.10 and v0.12, but LoopBack 3.0 does not support Node.js v0.10 or v0.12.  
 
 ## Submitting a pull request
 
-Follow the [GitHub Flow](http://scottchacon.com/2011/08/31/github-flow.html).
+Follow the [GitHub Flow](http://scottchacon.com/2011/08/31/github-flow.html).  If you are new to GitHub, it is recommended to take a look at this [Getting into open source for the first time article](https://www.nearform.com/blog/getting-into-open-source-for-the-first-time/).
 
  1. Create a GitHub issue for large changes and discuss the change there before
     coding. You can skip this step and submit the pull request for minor
@@ -67,7 +63,7 @@ Follow the [GitHub Flow](http://scottchacon.com/2011/08/31/github-flow.html).
  1. Request a code review. Add a specific committer to speed up this process. (for example, `@bajtos`, `@raymondfeng`).
  1. Make any requested changes and push to your fork. Make sure your changes are still based on the latest code (use `git rebase upstream/master`).
 
- ### How to rebase your branch ###
+ ### How to rebase your branch
 
 Our code base is always getting updated and being able to successfully rebase your PR is very important. Here are some simple steps to rebase your code:
 - Checkout your branch which you are submitting the pull request against `git checkout <my_branch>`
@@ -90,14 +86,20 @@ If you create an example repository for any usage demo, the name of repository s
 
 `loopback{major_version}-example-{example_name}`
 
-Usually the `{major_version}` is the lastest major version under development.
+Usually the `{major_version}` is the latest major version under development.
 If the example aims at a specific version of LoopBack, then use that number as the `{major_version}`.
 The `{example_name}` is a few words which briefly describes the functionality of the example,
 and joined with `-`.
 
-For example, we build a quick start example app for LoopBack 4 and name it as
-[`loopback4-example-hello-world`](https://github.com/strongloop/loopback-next-hello-world).
+For example, we build an example app for LoopBack 4 and name it as
+[`loopback4-example-shopping`](https://github.com/strongloop/loopback4-example-shopping).
 
 If a test is failing, open an issue on the appropriate repositories GitHub issues page.
 
 {% include content/cla.md %}
+
+## Additional information
+
+Since LoopBack 2.x and 3.x have different codebase as LoopBack 4, there are some information that are specific to those versions.  Please see:
+- [Contributing code to LoopBack 2.x and 3.x](code-contrib-lb2-lb3.html)
+- [Contributing code to LoopBack 4](code-contrib-lb4.html)
