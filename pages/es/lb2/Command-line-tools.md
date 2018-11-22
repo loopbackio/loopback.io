@@ -1,12 +1,14 @@
 ---
-title: "Command-line-tools"
+title: "Herramienta de Linea de Comandos"
 lang: es
-layout: page
+layout: translation
 keywords: LoopBack
 tags:
-sidebar: lb2_sidebar
+sidebar: es_lb2_sidebar
 permalink: /doc/es/lb2/Command-line-tools.html
 summary: Éste artículo resume la herramienta CLI de LoopBack.
+translated: true
+trans_complete: false
 ---
 
 - Herramienta de linea de comandos (CLI) StrongLoop: `slc loopback`.
@@ -17,7 +19,7 @@ Usa ésta herramienta para crear y _andamiar_ aplicaciones. Scaffolding es una f
 código y estructura base para tu aplicación.
 Puedes extender y modificar el código como quieras de acuerdo a las especificaciones de tu proyecto.
 
-El CLI provee un [Generador de Aplicaciones](Aplication-generator.html) para crear una nueva aplicación LoopBack y una serie de sub-generadores para la estructura de la aplicación. 
+El CLI provee un [Generador de Aplicaciones](Application-generator.html) para crear una nueva aplicación LoopBack y una serie de sub-generadores para la estructura de la aplicación. 
 
 ## Comandos
 
