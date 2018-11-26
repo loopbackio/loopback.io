@@ -191,8 +191,8 @@ children:
     url: Error-handling.html
     output: 'web, pdf'
 
-- title: 'How tos'
-  url: Concepts.html
+- title: 'How-tos'
+  url: How-tos.html
   output: 'web, pdf'
   children:
     - title: 'Exposing GraphQL APIs'
@@ -305,6 +305,10 @@ children:
 
   - title: 'Creating Servers'
     url: Creating-servers.html
+    output: 'web, pdf'
+
+  - title: 'Extending Request Body Parsing'
+    url: Extending-request-body-parsing.html
     output: 'web, pdf'
 
   - title: 'Testing your extension'
