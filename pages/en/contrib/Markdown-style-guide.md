@@ -121,15 +121,18 @@ Always precede a code block with an empty line.
 
 Examples:
 
-INCORRECT: Jekyll will render the following block as inline code:
+<pre><code>INCORRECT: Jekyll will render the following block as inline code:
 ```js
-console.log('on no! No empty line above me :(');
+console.log('Oh no! No empty line above me :(');
 console.log('Oh well.')
 ```
+</code></pre>
 
-CORRECT: Works on BOTH GitHub and Jekyll:
+
+<pre><code>CORRECT: Works on BOTH GitHub and Jekyll:
 
 ```js
 console.log('I\'m preceded by an empty line!');
 console.log('Hooray!');
 ```
+</code></pre>
