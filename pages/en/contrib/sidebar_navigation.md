@@ -27,6 +27,10 @@ Sidebars are defined in YAML files in the `_data/sidebars` directory.  They are
 | community_sidebar.yml | For "Community projects" |
 | xx_lb2_sidebar.yml | Localized sidebar for language "xx" (e.g. "es" for Spanish).
 
+{% include note.html content="
+[`lb4_sidebar.yml`](https://github.com/strongloop/loopback-next/blob/master/docs/site/sidebars/lb4_sidebar.yml) is sourced from [loopback-next](http://github.com/strongloop/loopback-next/)
+" %}
+
 ### Adding to `config.yml`
 
 To add a new sidebar, you must add the sidebar's base file name to the list in `_config.yml`:
