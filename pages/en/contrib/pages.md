@@ -13,7 +13,7 @@ Use a text editor such as Sublime Text, WebStorm, IntelliJ, or Atom to create pa
 
 ## Where pages are kept
 
-All the documentation is in the `/pages` folder.  In that folder, English documentation is in `en`, and other languages are in folders with the name of the ISO language code (for example, `fr` for French).
+Some of the documentation is in the `/pages` folder under the `loopback.io` repository.  In that folder, English documentation is in `en`, and other languages are in folders with the name of the ISO language code (for example, `fr` for French).
 
 Under English, the sub-folders are:
 
@@ -22,6 +22,8 @@ Under English, the sub-folders are:
 - `lb4` - LoopBack 4
 - `contrib` - Information on contributing to the project, published at [http://loopback.io/doc/en/contrib/](http://loopback.io/doc/en/contrib/).
 - `community` - Area where community members can put information about their LoopBack-related projects.
+
+However, for LoopBack 4, the documentation is sourced from the [`/docs/site`](https://github.com/strongloop/loopback-next/tree/master/docs/site) folder in the [`loopback-next`](https://github.com/strongloop/loopback-next) repository. 
 
 ### Overview content
 

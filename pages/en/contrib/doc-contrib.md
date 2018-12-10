@@ -10,11 +10,11 @@ summary: We welcome contributions to LoopBack documentation!
 
 ## How LoopBack documentation works
 
-LoopBack documentation is sourced in the [strongloop/loopback.io](https://github.com/strongloop/loopback.io/)
-GitHub repository, and this site is generated using Jekyll and GitHub pages.  The site is published from the `gh-pages` branch.  Don't use the `master` branch.
+LoopBack documentation is sourced in both the [strongloop/loopback.io](https://github.com/strongloop/loopback.io/) and [strongloop/loopback-next](https://github.com/strongloop/loopback-next/) GitHub repositories, and this site is generated using Jekyll and GitHub pages.  Some pages are copied from the `loopback-next` repository's `master` branch into `loopback.io`'s `gh-pages` branch, where this site is published from.  Don't use the `master` branch in the `loopback.io` repository.
 
-All the pages are in the `pages` directory.  Every page also has an **Edit this page** button at the bottom
-that links to the page in the GitHub repo.  
+When contributing documentation to the `loopback-next` repository, a new version of `@loopback/docs` must be published to `npm` before the changes appear live.  There is a script that runs automatically at 3pm EST to propogate the changes to the `loopback.io` site.
+
+All the pages from the `loopback.io` repo are in the `pages` directory and the pages from the `loopback-next` are stored in the [`docs/site`](https://github.com/strongloop/loopback-next/tree/master/docs/site) directory, which are then copied to [`pages/en/lb4`](https://github.com/strongloop/loopback.io/tree/gh-pages/pages/en/lb4) in `loopback.io`.  Every page also has an **Edit this page** button at the bottom that links to the page in the GitHub repo.  
 
 For information on contributing to translations in languages other than English, see [Translation](translation.html).
 
@@ -39,6 +39,7 @@ We attempt to review and merge PRs as soon as possible; in general, we'll try to
 We use GitHub issues to track tasks and bugs.  In general:
 
 - For issues around documentation _content_ (that is the actual information), open an issue in the relevant repository, such as `loopback`, `loopback-datasource-juggler`, `loopback-connector-xxx`, and so on.
+    - Under `loopback-next`, use the `Docs` label.
 - For issue around the documentation site, layout, or UX, [open an issue in the loopback.io repository](https://github.com/strongloop/loopback.io/issues/new).
 
 For general guidelines on creating issues, see [Reporting issues](Reporting-issues.html).
