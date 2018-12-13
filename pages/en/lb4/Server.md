@@ -145,7 +145,7 @@ Hosting the API Explorer at an external URL has a few downsides, for example a
 working internet connection is required to explore the API. As a recommended
 alternative, LoopBack comes with an extension that provides a self-hosted
 Explorer UI. Please refer to
-[Self-hosted REST API Explorer](./Self-hosted-rest-api-explorer.md) for more
+[Self-hosted REST API Explorer](./Self-hosted-REST-API-Explorer.md) for more
 details.
 
 ### Enable HTTPS
@@ -211,12 +211,38 @@ export async function main() {
 For a complete list of CORS options, see
 https://github.com/expressjs/cors#configuration-options.
 
+### Configure the Base Path
+
+Sometime it's desirable to expose REST endpoints using a base path, such as
+`/api`. The base path can be set as part of the RestServer configuration.
+
+```ts
+const app = new RestApplication({
+  rest: {
+    basePath: '/api',
+  },
+});
+```
+
+The `RestApplication` and `RestServer` both provide a `basePath()` API:
+
+```ts
+const app: RestApplication;
+// ...
+app.basePath('/api');
+```
+
+With the `basePath`, all REST APIs and static assets are served on URLs starting
+with the base path.
+
 ### `rest` options
 
 | Property    | Type                | Purpose                                                                                                   |
 | ----------- | ------------------- | --------------------------------------------------------------------------------------------------------- |
-| port        | number              | Specify the port on which the RestServer will listen for traffic.                                         |
-| protocol    | string (http/https) | Specify the protocol on which the RestServer will listen for traffic.                                     |
+| host        | string              | Specify the hostname or ip address on which the RestServer will listen for traffic.                       |
+| port        | number              | Specify the port on which the RestServer listens for traffic.                                             |
+| protocol    | string (http/https) | Specify the protocol on which the RestServer listens for traffic.                                         |
+| basePath    | string              | Specify the base path that RestServer exposes http endpoints.                                             |
 | key         | string              | Specify the SSL private key for https.                                                                    |
 | cert        | string              | Specify the SSL certificate for https.                                                                    |
 | cors        | CorsOptions         | Specify the CORS options.                                                                                 |

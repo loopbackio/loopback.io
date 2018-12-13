@@ -116,6 +116,10 @@ children:
     url: Context.html
     output: 'web, pdf'
 
+  - title: 'Binding'
+    url: Binding.html
+    output: 'web, pdf'
+
   - title: 'Dependency injection'
     url: Dependency-injection.html
     output: 'web, pdf'
@@ -201,6 +205,10 @@ children:
 
     - title: 'Deploying to IBM Cloud'
       url: Deploying-to-IBM-Cloud.html
+      output: 'web, pdf'
+
+    - title: 'Deploying with pm2 and nginx'
+      url: deploying-with-pm2-and-nginx.html
       output: 'web, pdf'
 
     - title: 'Serving static files'

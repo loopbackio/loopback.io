@@ -20,123 +20,113 @@ LoopBack offers two ways to do this:
 - **Auto-update**: Change database schema objects if there is a difference
   between the objects and model definitions. Existing data will be kept.
 
-## Implementation Example
+{% include warning.html content="Auto-update will attempt to preserve data while
+updating the schema in your target database, but this is not guaranteed to be
+safe.
 
-Below is an example of how to implement
-[automigrate()](http://apidocs.loopback.io/loopback-datasource-juggler/#datasource-prototype-automigrate)
-and
-[autoupdate()](http://apidocs.loopback.io/loopback-datasource-juggler/#datasource-prototype-autoupdate),
-shown with the
-[TodoList](https://loopback.io/doc/en/lb4/todo-list-tutorial.html) example.
+Please check the documentation for your specific connector(s) for a detailed
+breakdown of behaviors for automigrate! " %}
 
-Create a new file **src/migrate.ts** and add the following import statement:
+## Examples
 
-```ts
-import {DataSource, Repository} from '@loopback/repository';
-```
+LoopBack applications are typically using `RepositoryMixin` to enhance the core
+`Application` class with additional repository-related APIs. One of such methods
+is `migrateSchema`, which iterates over all registered datasources and asks them
+to migrate schema of models they are backing. Datasources that do not support
+schema migrations are silently skipped.
 
-Import your application and your repositories:
+In the future, we would like to provide finer-grained control of database schema
+updates, learn more in the GitHub issue
+[#487 Database Migration Management Framework](https://github.com/strongloop/loopback-next/issues/487)
 
-```ts
-import {TodoListApplication} from './index';
-import {TodoRepository, TodoListRepository} from './repositories';
-```
+### Auto-update database at start
 
-Create a function called _dsMigrate()_:
+To automatically update the database schema whenever the application is started,
+modify your main script to execute `app.migrateSchema()` after the application
+was bootstrapped (all repositories were registered) but before it is actually
+started.
 
-```ts
-export async function dsMigrate(app: TodoListApplication) {}
-```
-
-In the _dsMigrate()_ function, get your datasource and instantiate your
-repositories by retrieving them, so that the models are attached to the
-corresponding datasource:
+{% include code-caption.html content="src/index.ts" %}
 
 ```ts
-const ds = await app.get<DataSource>('datasources.db');
-const todoRepo = await app.getRepository(TodoRepository);
-const todoListRepo = await app.getRepository(TodoListRepository);
-```
-
-Then, in the same function, call _automigrate()_:
-
-```ts
-await ds.automigrate();
-```
-
-This call to automigrate will migrate all the models attached to the datasource
-db. However if you want to only migrate some of your models, add the names of
-the classes in the first parameter:
-
-```ts
-// Migrate a single model
-ds.automigrate('Todo');
-```
-
-```ts
-// Migrate multiple models
-ds.automigrate(['Todo', 'TodoList']);
-```
-
-The implementation for _autoupdate()_ is similar. Create a new function
-_dsUpdate()_:
-
-```ts
-export async function dsUpdate(app: TodoListApplication) {
-  const ds = await app.get<DataSource>('datasources.db');
-  const todoRepo = await app.getRepository(TodoRepository);
-  const todoListRepo = await app.getRepository(TodoListRepository);
-
-  await ds.autoupdate();
-}
-```
-
-The completed **src/migrate.ts** should look similar to this:
-
-```ts
-import {DataSource, Repository} from '@loopback/repository';
-import {TodoListApplication} from './index';
-import {TodoRepository, TodoListRepository} from './repositories';
-
-export async function dsMigrate(app: TodoListApplication) {
-  const ds = await app.get<DataSource>('datasources.db');
-  const todoRepo = await app.getRepository(TodoRepository);
-  const todoListRepo = await app.getRepository(TodoListRepository);
-
-  await ds.automigrate();
-}
-
-export async function dsUpdate(app: TodoListApplication) {
-  const ds = await app.get<DataSource>('datasources.db');
-  const todoRepo = await app.getRepository(TodoRepository);
-  const todoListRepo = await app.getRepository(TodoListRepository);
-
-  await ds.autoupdate();
-}
-```
-
-Finally, in **src/index.ts**, import and call the _dsMigrate()_ or _dsUpdate()_
-function:
-
-```ts
-import {TodoListApplication} from './application';
-import {ApplicationConfig} from '@loopback/core';
-
-// Import the functions from src/migrate.ts
-import {dsMigrate, dsUpdate} from './migrate';
-
-export {TodoListApplication};
-
 export async function main(options: ApplicationConfig = {}) {
   const app = new TodoListApplication(options);
   await app.boot();
+  await app.migrateSchema();
   await app.start();
 
   const url = app.restServer.url;
   console.log(`Server is running at ${url}`);
 
-  // The call to dsMigrate(), or replace with dsUpdate()
-  await dsMigrate(app);
   return app;
+}
+```
+
+### Auto-update the database explicitly
+
+It's usually better to have more control about the database migration and
+trigger the updates explicitly. To do so, projects scaffolded using `lb4 app`
+come with a custom CLI script `src/migrate.ts` to run schema migration. Check
+out e.g.
+[Todo example app](https://github.com/strongloop/loopback-next/blob/master/examples/todo/src/migrate.ts)
+to see the full source code of the script.
+
+Besides the migration CLI, new projects come with a handy npm script to run the
+migration too.
+
+The migration process consists of two steps now:
+
+1. Build the project:
+
+   ```sh
+   $ npm run build
+   ```
+
+2. Migrate database schemas (alter existing tables):
+
+   ```sh
+   $ npm run migrate
+   ```
+
+   Alternatively, you can also tell the migration script to drop any existing
+   schemas:
+
+   ```sh
+   $ npm run migrate -- --rebuild
+   ```
+
+### Implement additional migration steps
+
+In some scenarios, the application may need to define additional schema
+constraints or seed the database with predefined model instances. This can be
+achieved by overriding the `migrateSchema` method provided by the mixin.
+
+The example below shows how to do so in our Todo example application.
+
+{% include code-caption.html content="src/application.ts" %}
+
+```ts
+import {TodoRepository} from './repositories';
+// skipped: other imports
+
+export class TodoListApplication extends BootMixin(
+  ServiceMixin(RepositoryMixin(RestApplication)),
+) {
+  // skipped: the constructor, etc.
+
+  async migrateSchema(options?: SchemaMigrationOptions) {
+    // 1. Run migration scripts provided by connectors
+    await super.migrateSchema(options);
+
+    // 2. Make further changes. When creating predefined model instances,
+    // handle the case when these instances already exist.
+    const todoRepo = await this.getRepository(TodoRepository);
+    const found = await todoRepo.findOne({where: {title: 'welcome'}});
+    if (found) {
+      todoRepo.updateById(found.id, {isComplete: false});
+    } else {
+      await todoRepo.create({title: 'welcome', isComplete: false});
+    }
+  }
 }
 ```
