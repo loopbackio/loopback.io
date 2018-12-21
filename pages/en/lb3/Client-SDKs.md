@@ -21,7 +21,7 @@ LoopBack provides the following software development kits (SDKs):
   * [Tutorial: push notifications - Android client](Push-notifications-for-Android-apps.html)
 * [AngularJS JavaScript SDK](AngularJS-JavaScript-SDK.html)
 * [LoopBack in the client](LoopBack-in-the-client.html), also known as _isomorphic LoopBack_.
-
+* [LoopBack API class generator for JavaScript ES6](https://www.npmjs.com/package/loopback-client-api-gen) API class that makes easy to use LooBack in client side with React, Vue, Angular and etc.
 ## Downloads
 
 See:
@@ -29,3 +29,4 @@ See:
 * [iOS SDK](iOS-SDK.html)
 * [Android SDK](Android-SDK.html)
 * [Angular JS SDK](AngularJS-JavaScript-SDK.html)
+* [JavaScript (REact, Vue, ...)](https://github.com/mrfarhadir/loopback-client-api-gen)
