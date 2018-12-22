@@ -33,13 +33,13 @@ The entry in the application's `/server/datasources.json` will look like this:
 "mydb": {
   "name": "mydb",
   "connector": "postgresql"
-
   "host": "mydbhost",
-      "port": 5432,
-      "url": "postgres://admin:admin@myhost/db",
-      "database": "db1",
-      "password": "admin",
-      "user": "admin"
+  "port": 5432,
+  "url": "postgres://admin:admin@mydbhost:5432/db1?ssl=false",
+  "database": "db1",
+  "password": "admin",
+  "user": "admin",
+  "ssl": false
 }
 ```
 
@@ -55,7 +55,7 @@ Example of `datasource.json`:
   "mypostgresdb": {
     "host": "mydbhost",
     "port": 5432,
-    "url": "postgres://admin:admin@myhost/db",
+    "url": "postgres://admin:password1@mydbhost:5432/db1?ssl=false",
     "database": "db1",
     "password": "password1",
     "name": "mypostgresdb",
@@ -63,7 +63,8 @@ Example of `datasource.json`:
     "connector": "postgresql",
     "min": 5,
     "max": 200,
-    "idleTimeoutMillis": 60000
+    "idleTimeoutMillis": 60000,
+    "ssl": false
   }
 }
 ```
@@ -138,6 +139,11 @@ Check out [node-pg-pool](https://github.com/brianc/node-pg-pool) and [node postg
       <td>idleTimeoutMillis</td>
       <td>Integer</td>
       <td>Maximum time a client in the pool has to stay idle before closing it</td>
+    </tr>
+    <tr>
+      <td>ssl</td>
+      <td>Boolean</td>
+      <td>Whether to try SSL/TLS to connect to server</td>
     </tr>
   </tbody>
 </table>
@@ -369,6 +375,37 @@ See [LoopBack types](http://loopback.io/doc/en/lb3/LoopBack-types.html) for de
 
 For details, see the corresponding [driver issue](https://github.com/brianc/node-pg-types/issues/28).
 
+## Querying JSON fields
+
+**Note** The fields you are querying should be setup to use the JSON postgresql data type - see Defining models
+
+Assuming a model such as this:
+
+```json
+{
+  "name": "Customer",
+  "properties": {
+    "address": {
+      "type": "object",
+      "postgresql": {
+        "dataType": "json"
+      }
+    }
+  }
+}
+```
+
+You can query the nested fields with dot notation:
+
+```javascript
+Customer.find({
+  where: {
+    'address.state': 'California'
+  },
+  order: 'address.city'
+})
+```
+
 ## Discovery and auto-migration
 
 ### Model discovery
@@ -376,7 +413,7 @@ For details, see the corresponding [driver issue](https://github.com/brianc/node
 The PostgreSQL connector supports _model discovery_ that enables you to create LoopBack models
 based on an existing database schema using the unified [database discovery API](http://apidocs.strongloop.com/loopback-datasource-juggler/#datasource-prototype-discoverandbuildmodels).  For more information on discovery, see [Discovering models from relational databases](https://loopback.io/doc/en/lb3/Discovering-models-from-relational-databases.html).
 
-### Auto-migratiion
+### Auto-migration
 
 The PostgreSQL connector also supports _auto-migration_ that enables you to create a database schema
 from LoopBack models using the [LoopBack automigrate method](http://apidocs.strongloop.com/loopback-datasource-juggler/#datasource-prototype-automigrate).

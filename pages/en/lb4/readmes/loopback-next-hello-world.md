@@ -1,6 +1,6 @@
 # loopback-next-hello-world
 
-[![Gitter](https://img.shields.io/gitter/room/nwjs/nw.js.svg)](https://gitter.im/strongloop/loopback) [![Build Status](https://travis-ci.org/strongloop/loopback-next-quick-start.svg?branch=master)](https://travis-ci.org/strongloop/loopback-next-quick-start) [TODO Code coverage - coveralls]
+**This repository has been deprecated. See [Examples and tutorials](http://loopback.io/doc/en/lb4/Examples-and-tutorials.html) for the list of actively maintained examples.**
 
 ## Table of Contents
 * [Overview](#overview)

@@ -31,7 +31,7 @@ providers such as APNS, GCM, and MPNS
 
 ### Node.js server
 
-This module includes an [example LoopBack server application](https://github.com/strongloop/loopback-component-push/tree/master/example/server-2.0).  
+This module includes an [example LoopBack server application](https://github.com/strongloop/loopback-example-push).  
 
 To run it, use these commands:
 
@@ -53,12 +53,12 @@ MONGODB=mongodb://localhost/demo node app
 
 ### iOS client
 
-The [iOS example app](https://github.com/strongloop/loopback-component-push/tree/master/example/ios)
+The [iOS example app](https://github.com/strongloop/loopback-example-push/tree/master/ios)
 uses the LoopBack iOS SDK to enable and handle push notifications. 
 
 ### Android client
 
-The [Android example app](https://github.com/strongloop/loopback-component-push/tree/master/example/android)
+The [Android example app](https://github.com/strongloop/loopback-example-push/tree/master/android)
 uses the LoopBack Android SDK to enable and handle push notifications. 
 
 ## References

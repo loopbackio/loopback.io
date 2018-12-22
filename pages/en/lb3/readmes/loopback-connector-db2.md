@@ -57,6 +57,8 @@ hostname       | String  | DB2 server hostname or IP address
 port           | String  | DB2 server TCP port number
 useLimitOffset | Boolean | LIMIT and OFFSET must be configured on the DB2 server before use (compatibility mode)
 supportDashDB  | Boolean | Create ROW ORGANIZED tables to support dashDB.
+dsn            | String  | DSN string; can be used instead of the username, password, database, hostname and port properties
+maxPoolSize    | Number  | Maximum number of connections in the connection pool
 
 
 Alternatively, you can create and configure the data source in JavaScript code.
