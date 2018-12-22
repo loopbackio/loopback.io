@@ -310,7 +310,7 @@ You should see:
 When retrieving the scheme is not enough, you can discover and build LoopBack
 models in one step.
 
-Create a sript named [`discover-and-build-models.js`](bin/discover-and-build-models.js).
+Create a script named [`discover-and-build-models.js`](bin/discover-and-build-models.js).
 Then run:
 
 ```
