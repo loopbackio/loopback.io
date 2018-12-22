@@ -413,7 +413,7 @@ Customer.find({
 The PostgreSQL connector supports _model discovery_ that enables you to create LoopBack models
 based on an existing database schema using the unified [database discovery API](http://apidocs.strongloop.com/loopback-datasource-juggler/#datasource-prototype-discoverandbuildmodels).  For more information on discovery, see [Discovering models from relational databases](https://loopback.io/doc/en/lb3/Discovering-models-from-relational-databases.html).
 
-### Auto-migratiion
+### Auto-migration
 
 The PostgreSQL connector also supports _auto-migration_ that enables you to create a database schema
 from LoopBack models using the [LoopBack automigrate method](http://apidocs.strongloop.com/loopback-datasource-juggler/#datasource-prototype-automigrate).

@@ -8,13 +8,16 @@ For more information, see the <a href="http://loopback.io/doc/en/lb3/Oracle-conn
 
 ## Prerequisites
 
-**Node.js**: The Oracle connector requires Node.js version 4.x or 6.x.  
+**Node.js**: The Oracle connector requires Node.js version 6.x and up.
 
 **Windows**: On 32-bit Windows systems, you must use the 32-bit version of Node.js.  On 64-bit Windows systems, you must use the 64-bit version of Node.js.  For more information, see [Node-oracledb Installation on Windows](https://github.com/oracle/node-oracledb/blob/master/INSTALL.md#-7-node-oracledb-installation-on-windows).
 
 **Oracle**: The Oracle connector requires Oracle client libraries 11.2+ and can connect to Oracle Database Server 9.2+.
 
 ## Installation
+
+Before installing this module, please follow instructions at https://oracle.github.io/node-oracledb/INSTALL.html
+to make sure all the prerequisites are satisfied.
 
 In your application root directory, enter this command to install the connector:
 
@@ -23,31 +26,6 @@ $ npm install loopback-connector-oracle --save
 ```
 
 If you create a Oracle data source using the data source generator as described below, you don’t have to do this, since the generator will run npm install for you.
-
-See [Installing the Oracle connector](http://loopback.io/doc/en/lb3/Installing-the-Oracle-connector.html) for further installation instructions.
-
-To simplify the installation of [node-oracledb](https://github.com/oracle/node-oracledb) module and Oracle instant clients, use [loopback-oracle-installer](https://github.com/strongloop/loopback-oracle-installer) as a dependency to install and configure `node-oracledb` (oracledb) upon `npm install`.
-
-Use the `config.oracleUrl` property to define the base URL to download the corresponding node-oracle (oracledb) bundle for the local environment.
-
-The bundle file name is `loopback-oracle-<platform>-<arch>-<version>.tar.gz`. The `version` is the same as the `version` in package.json.
-
-```javascript
-  "dependencies": {
-      "loopback-oracle-installer": "git+ssh://git@github.com:strongloop/loopback-oracle-installer.git",
-           ...
-  },
-  "config": {
-      "oracleUrl": "http://7e9918db41dd01dbf98e-ec15952f71452bc0809d79c86f5751b6.r22.cf1.rackcdn.com"
-  },
-  ...
-```
-
-You can override the `oracleUrl` setting with the LOOPBACK_ORACLE_URL environment variable.
-
-For example, the full URL for v1.5.0 for MacOSX is:
-
-http://7e9918db41dd01dbf98e-ec15952f71452bc0809d79c86f5751b6.r22.cf1.rackcdn.com/loopback-oracle-MacOSX-x64-1.5.0.tar.gz
 
 The `libaio` library is required on Linux systems:
 
@@ -65,7 +43,7 @@ sudo yum install libaio
 
 ## Creating an Oracle data source
 
-Use the [Data source generator](http://loopback.io/doc/en/lb3/Data-source-generator.html) to add a Oracle data source to your application.  
+Use the [Data source generator](http://loopback.io/doc/en/lb3/Data-source-generator.html) to add a Oracle data source to your application.
 The generator will prompt for the database server hostname, port, and other settings
 required to connect to a Oracle database.  It will also run the `npm install` command above for you.
 
@@ -76,7 +54,7 @@ The entry in the application's `/server/datasources.json` will look like this:
 "mydb": {
   "name": "mydb",
   "connector": "oracle",
-  "tns": "demo",  
+  "tns": "demo",
   "host": "myserver",
   "port": 3306,
   "database": "mydb",
@@ -110,7 +88,7 @@ The data source then has the following settings.
       <th>Description</th>
     </tr>
   </thead>
-  <tbody>    
+  <tbody>
     <tr>
       <td>host or hostname</td>
       <td>String</td>
@@ -218,7 +196,7 @@ var ds = loopback.createDataSource({
       <th>Default value</th>
     </tr>
   </thead>
-  <tbody>    
+  <tbody>
     <tr>
       <td>minConn</td>
       <td>Minimum number of connections in the connection pool</td>
@@ -383,8 +361,8 @@ See [LoopBack types](http://loopback.io/doc/en/lb3/LoopBack-types.html) for de
       <th>LoopBack Type</th>
       <th>Oracle Type</th>
     </tr>
-  </thead>    
-  <tbody>    
+  </thead>
+  <tbody>
     <tr>
       <td>String<br>JSON<br>Text<br>default</td>
       <td>VARCHAR2
@@ -418,8 +396,8 @@ See [LoopBack types](http://loopback.io/doc/en/lb3/LoopBack-types.html) for de
       <th>Oracle Type</th>
       <th>LoopBack Type</th>
     </tr>
-  </thead>    
-  <tbody>    
+  </thead>
+  <tbody>
     <tr>
       <td>CHAR(1)</td>
       <td>Boolean</td>
