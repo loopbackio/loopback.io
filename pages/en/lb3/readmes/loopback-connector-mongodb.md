@@ -33,7 +33,8 @@ The entry in the application's `/server/datasources.json` will look like this:
   "password": "mypassword",
   "name": "mydb",
   "user": "me",
-  "connector": "mongodb"  
+  "authSource" : "admin",
+  "connector": "mongodb"
 }
 ```
 
@@ -43,13 +44,16 @@ Edit `datasources.json` to add any other additional properties that you require.
 
 | Property | Type&nbsp;&nbsp; | Description |
 | --- | --- | --- |
-| connector | String | Connector name, either “loopback-connector-mongodb” or “mongodb”. |
+| connector | String | Connector name, either `"loopback-connector-mongodb"` or `"mongodb"`. |
 | database | String | Database name |
 | host | String | Database host name |
 | password | String | Password to connect to database |
 | port | Number | Database TCP port |
 | url | String | Connection URL of form `mongodb://user:password@host/db`. Overrides other connection settings (see below). |
-| username | String | Username to connect to database |
+| user | String | Username to connect to database |
+| authSource | String | Authentification database name (optional). Usually `"admin"` value. |
+
+If you run a MongoDB with authentification ([Docker's example here](https://github.com/docker-library/docs/tree/master/mongo#mongo_initdb_root_username-mongo_initdb_root_password)), you need to specify which database to authenticate against. More details can be found in [MongoDB documentation on Authentification Methods](https://docs.mongodb.com/manual/core/authentication/#authentication-methods). The default value is usually `"admin"`, like in the official docker image.
 
 **NOTE**: In addition to these properties, you can use additional Single Server Connection parameters supported by [`node-mongodb-native`](http://mongodb.github.io/node-mongodb-native/core/driver/reference/connecting/connection-settings/).
 
@@ -64,6 +68,9 @@ of type `GeoPoint`. This allows for indexed ```near``` queries.  Default is `fal
   - Default is `false`.
   - If set to `true`, the database instance will not be attached to the datasource and the connection is deferred.
   - It will try to establish the connection automatically once users hit the endpoint. If the mongodb server is offline, the app will start, however, the endpoints will not work.
+- **disableDefaultSort**: Set to `true` to disable the default sorting
+  behavior on `id` column, this will help performance using indexed columns available in mongodb.
+- **collation**: Specify language-specific rules for string comparison, such as rules for lettercase and accent marks. See [`MongdoDB documentation`](https://docs.mongodb.com/manual/reference/collation/) for details. It can also be used to create [`case insensitive indexes`](https://docs.mongodb.com/manual/core/index-case-insensitive/).
 
 ### Setting the url property in datasource.json
 
@@ -88,6 +95,23 @@ For example, for production, use `datasources.production.json` as follows (for e
 ```
 
 For more information on setting data source configurations for different environments, see [Environment-specific configuration](https://loopback.io/doc/en/lb3/Environment-specific-configuration.html#data-source-configuration).
+
+## Security Considerations
+
+MongoDB Driver allows the `$where` operator to pass in JavaScript to execute on the Driver which can be used for NoSQL Injection. See [MongoDB: Server-side JavaScript](https://docs.mongodb.com/manual/core/server-side-javascript/) for more on this MongoDB feature.
+
+To protect users against this potential vulnerability, LoopBack will automatically **remove** the `$where` and `mapReduce` operators from a query before it's passed to the MongoDB Driver. If you need to use these properties from within LoopBack programatically, you can disable the sanitization by passing in an `options` object with `disableSanitization` property set to `true`.
+
+**Example:**
+```js
+Post.find(
+    {where: {$where: 'function() { /*JS function here*/}'}},
+    {disableSanitization: true},
+    (err, p) => {
+        // code to handle results / error.
+    }
+);
+```
 
 ## Type mappings
 
@@ -116,7 +140,7 @@ The .loopbackrc file is in JSON format, for example:
             "mongodb": {
                 "host": "127.0.0.1",
                 "database": "test",
-                "username": "youruser",
+                "user": "youruser",
                 "password": "yourpass",
                 "port": 27017
             }
@@ -125,15 +149,14 @@ The .loopbackrc file is in JSON format, for example:
             "mongodb": {
                 "host": "127.0.0.1",
                 "database": "test",
-                "username": "youruser",
+                "user": "youruser",
                 "password": "yourpass",
                 "port": 27017
             }
         }
     }
 
-**Note**: username/password is only required if the MongoDB server has
-authentication enabled.
+**Note**: user/password is only required if the MongoDB server has authentication enabled. `"authSource"` should be used if you cannot login to your database using your credentials.
 
 ## Running tests
 
@@ -187,9 +210,10 @@ The results will be output in `./benchmarks/results.md`.
 
 ## strictObjectIDCoercion flag
 
-In version 1.17.0, the id of string type is being converted to ObjectID, when the string length is 12 or 24 and has the format of an ObjectID i.e /^[0-9a-fA-F]{24}$/. To avoid this issue, the strictObjectIDCoercion flag should be set to true in the model-definition file.
+In version 1.17.0, the id of string type is being converted to ObjectID, when the string length is 12 or 24 and has the format of an ObjectID i.e /^[0-9a-fA-F]{24}$/.
+To avoid this issue, the strictObjectIDCoercion flag should be set to true in the model-definition file. It is also possible to enable this flag on a per method bases by passing it in as part of the options object.
 
-model-definition.js
+### model-definition.js
 
 ```js
 {
@@ -243,6 +267,18 @@ module.exports = function(app) {
     });
   });
 };
+```
+
+### Per method basis
+
+```js
+myModelName.find(
+  {where: {id: {inq: ['59460487e9532ae90c324b59', '59460487e9532ae90c324b5a']}}},
+  {strictObjectIDCoercion: true},
+  function(err, result) {
+    // ... 
+  }
+)
 ```
 
 ## Release notes

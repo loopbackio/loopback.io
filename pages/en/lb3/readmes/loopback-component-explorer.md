@@ -1,19 +1,17 @@
 # loopback-component-explorer
 
+**This module is in Active LTS mode, new features are no longer accepted.**
+<br/>(See [Module Long Term Support Policy](#module-long-term-support-policy)
+below.)
+
+LoopBack 3 users looking for new features are encouraged to upgrade
+to LoopBack 4. Refer to
+[loopback-next#1849](https://github.com/strongloop/loopback-next/issues/1849)
+for more information on how to upgrade.
+
+## Overview
+
 Browse and test your LoopBack app's APIs.
-
-## Supported versions
-
-Current|Long Term Support
-:-:|:-:
-4.x|2.x
-
-Learn more about our LTS plan in [docs](http://loopback.io/doc/en/contrib/Long-term-support.html).
-
-*The only difference between 3.x and 4.x versions is which Node.js versions
-are supported (loopback-component-explorer 4.x dropped support for pre-v4
-versions of Node.js). Therefore we decided to not maintain 3.x version line and
-provide LTS support for the 2.x version line instead.*
 
 ## Basic Usage
 
@@ -165,3 +163,40 @@ Options are passed to `explorer(app, options)`.
 > Default: Read from package.json
 
 > Sets your API version. If not present, will read from your app's package.json.
+
+`auth`: **Object**
+
+> Optional config for setting api access token, can be used to rename the query parameter or set an auth header.
+
+> The object has 2 keys:
+> - `in`: either `header` or `query`
+> - `name`: the name of the query parameter or header
+>
+> The default sets the token as a query parameter with the name `access_token`
+
+> Example for setting the api key in a header named `x-api-key`:
+> ```
+> {
+>   "loopback-component-explorer": {
+>     "mountPath": "/explorer",
+>     "auth": {
+>       "in": "header",
+>       "name": "x-api-key"
+>     }
+>   }
+> }
+> ```
+
+## Module Long Term Support Policy
+
+This module adopts the [
+Module Long Term Support (LTS)](http://github.com/CloudNativeJS/ModuleLTS) policy,
+ with the following End Of Life (EOL) dates:
+
+| Version | Status          | Published | EOL      |
+| ------- | --------------- | --------- | -------- |
+| 6.x     | Active LTS      | Apr 2018  | Dec 2019 |
+| 5.x     | Maintenance LTS | Sep 2017  | Dec 2019 |
+| 4.x     | Maintenance LTS | Dec 2016  | Apr 2019 |
+
+Learn more about our LTS plan in [docs](https://loopback.io/doc/en/contrib/Long-term-support.html).
