@@ -12,6 +12,14 @@ In production mode, `strong-error-handler` omits details from error responses to
 
 In debug mode, `strong-error-handler` returns full error stack traces and internal details of any error objects to the client in the HTTP responses.
 
+## Supported versions
+
+Current|Long Term Support|Maintenance
+:-:|:-:|:-:
+3.x|2.x|1.x
+
+Learn more about our LTS plan in [docs](http://loopback.io/doc/en/contrib/Long-term-support.html).
+
 ## Installation
 
 ```bash
@@ -36,6 +44,29 @@ app.use(errorHandler({
 }));
 
 app.listen(3000);
+```
+
+The module also exports `writeErrorToResponse`, a non-middleware flavor of the
+error handler:
+
+```js
+const http = require('http');
+const writeErrorToResponse = require('strong-error-handler')
+  .writeErrorToResponse;
+const errHandlingOptions = {debug: process.env.NODE_ENV === 'development'}
+
+http
+  .createServer((req, res) => {
+    if (errShouldBeThrown) {
+      writeErrorToResponse(
+        new Error('something went wrong'),
+        req,
+        res,
+        errHandlingOptions,
+      );
+    }
+  })
+  .listen(3000);
 ```
 
 In LoopBack applications, add the following entry to `server/middleware.json`:
