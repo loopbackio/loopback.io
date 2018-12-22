@@ -168,6 +168,18 @@ $ lb datasource
     - `name`
       - String
       - Not Required
+- Name: `Shipment`
+  - Data source: `db (memory)`
+  - Base class: `PersistedModel`
+  - Expose over REST: `No`
+  - Custom plural form: *Leave blank*
+  - Properties:
+    - `date`
+      - Date
+      - Not Required
+    - `description`
+      - String
+      - Not Required
 
 ```
 $ lb model Customer
@@ -285,6 +297,16 @@ Create six boot scripts:
   - belongs to
     - `Customer`
       - Property name for the relation: *Leave blank - defaults to `customer`*
+      - Custom foreign key: *Leave blank*
+  - has many
+      - `Shipment`
+        - Property name for the relation: *Leave blank - defaults to `shipments`*
+        - Custom foreign key: *Leave blank*
+
+- `Shipment`
+  - belongs to
+    - `Order`
+      - Property name for the relation: *Leave blank - defaults to `order`*
       - Custom foreign key: *Leave blank*
 
 ```
