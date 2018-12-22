@@ -1,5 +1,18 @@
 # strong-remoting
 
+**This module is in Active LTS mode, new features are no longer accepted.**
+<br/>(See [Module Long Term Support Policy](#module-long-term-support-policy)
+below.)
+
+LoopBack 3 users looking for new features are encouraged to upgrade
+to LoopBack 4. Refer to
+[loopback-next#1849](https://github.com/strongloop/loopback-next/issues/1849)
+for more information on how to upgrade.
+
+If you are building directly on top of strong-remoting without LoopBack,
+then please [open a new GitHub issue](https://github.com/strongloop/strong-remoting/issues/new)
+to discuss the specifics.
+
 ## Overview
 
 Objects (and, therefore, data) in Node applications commonly need to be accessible by other Node processes, browsers, and even mobile clients.   Strong remoting:
@@ -16,13 +29,16 @@ Also see the <a href="http://loopback.io/doc/en/lb2/Strong-Remoting.html">offici
 
 For higher-level transports, such as REST and Socket.IO, existing clients will work well. If you want to be able to swap out your transport, use one of our supported clients. The same adapter model available on the server applies to clients, so you can switch transports on both the server and all clients without changing your application-specific code.
 
-### Supported versions
+## Module Long Term Support Policy
 
-Current|Long Term Support
-:-:|:-:
-3.x|2.x
+This module adopts the [Module Long Term Support (LTS)](http://github.com/CloudNativeJS/ModuleLTS) policy, with the following End Of Life (EOL) dates:
 
-Learn more about our LTS plan in [docs](http://loopback.io/doc/en/contrib/Long-term-support.html).
+| Version           | Status          | Published | EOL      |
+| ----------------- | --------------- | --------- | -------- |
+| strong-remoting@3 | Active LTS      | Dec 2016  | Dec 2019 |
+| strong-remoting@2 | Maintenance LTS | Jul 2014  | Apr 2019 |
+
+Learn more about our LTS plan in [docs](https://loopback.io/doc/en/contrib/Long-term-support.html).
 
 ## Installation
 
