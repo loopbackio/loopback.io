@@ -185,7 +185,7 @@ This table describes the operators available in "where" filters. See [Examples]
 
 | Operator  | Description|
 | ------------- | ------------- |
-| = | Equivalence. See [examples](#equivalence) below.|
+| eq | Equivalence. See [examples](#equivalence) below.|
 | and | Logical AND operator. See [AND and OR operators](#and-and-or-operators) and [examples](#and--or) below.|
 | or | Logical OR operator. See [AND and OR operators](#and-and-or-operators) and [examples](#and--or) below.|
 | gt, gte | Numerical greater than (&gt;); greater than or equal (&gt;=). Valid only for numerical and date values. See [examples](#gt-and-lt) below. <br/><br/>  For Geopoint values, the units are in miles by default. See [Geopoint](http://apidocs.loopback.io/loopback-datasource-juggler/#geopoint) for more information.|
@@ -328,6 +328,7 @@ Equivalently, in Node:
 
 ```javascript
 Cars.find({ where: {carClass:'fullsize'} });
+Cars.find({ where: {carClass:{'eq':'fullsize'}} }); // full condition syntax
 ```
 
 ### gt and lt
