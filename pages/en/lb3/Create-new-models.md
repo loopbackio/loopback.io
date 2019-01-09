@@ -98,7 +98,7 @@ When prompted, enter or select the following:
 
 *   **Model name**: Reviewer
 *   **Data source**: mongoDs (mongodb)
-*   **Base class**: Use the down-arrow key to select **User**.
+*   **Base class**: Use the down-arrow key to select **(custom)**, and type in **User**.
 *   ****Expose Reviewer via the REST API?**** Press RETURN to accept the default, Yes.
 *   **Custom plural form (used to build REST URL)**:  Press RETURN to accept the default, Yes.
 *   **Common model or server only**: Press RETURN to accept the default, common model.
