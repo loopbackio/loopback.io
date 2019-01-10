@@ -242,7 +242,7 @@ exports.initialize = function initializeDataSource(dataSource, callback) {
 
 ### Override methods defined in `Connector` 
 
-1.  Which methods methods must be overriden?
+1.  Which methods must be overriden?
 2.  What does calling the base class from within our Connector (`super()`) do?
 
 ### CRUD Methods are to be derived from the DAO Facade
