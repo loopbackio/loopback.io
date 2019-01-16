@@ -37,7 +37,7 @@ Other core maintainers include:
 *   [Diana Lau](http://github.com/dhmlau)
 *   [Janny Hou](http://github.com/jannyHou)
 *   [Yaapa Hage](https://github.com/hacksparrow)
-*   [Nora Abdelgair](https://github.com/nabdelgadir)
+*   [Nora Abdelgadir](https://github.com/nabdelgadir)
 
 Previous project architects:
 *   [Ritchie Martori](https://github.com/ritch)
