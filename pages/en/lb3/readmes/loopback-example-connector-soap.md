@@ -86,7 +86,7 @@ The tool will create a directory with that name (`my-soap-demo`).
 1. `Enter name of the directory to contain the project:`
 <br/>Press Enter to accept the default (directory has the same name as the app).
 1. `Which version of LoopBack would you like to use?`
-<br/>Choose `3.x (current)`
+<br/>Choose `3.x (Active Long Term Support)`
 1. `What kind of application do you have in mind?`
 <br/>Choose `empty-server (An empty LoopBack API, without any configured models or datasources) `
 
