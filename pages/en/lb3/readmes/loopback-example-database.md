@@ -83,7 +83,7 @@ lb app loopback-example-database
 ? Enter name of the directory to contain the project: loopback-example-database
      info change the working directory to loopback-example-database
 
-? Which version of LoopBack would you like to use? 3.x (Active Long Term Support)
+? Which version of LoopBack would you like to use? 3.x (current)
 ? What kind of application do you have in mind? empty-server (An empty LoopBack API, without any c
 onfigured models or datasources)
 
