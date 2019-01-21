@@ -402,6 +402,50 @@ li > dl {
     margin-bottom: 0;
 }
 
+.v-block {
+    display: inline-block;
+    margin: 0 8px;
+}
+
+.v-button {
+    background-color: rgba(6, 83, 10, 0.5);
+    display: block;
+    border: 1px solid rgba(255,255,255,0.9);
+    -webkit-border-radius: .35rem;
+    border-radius: .35rem;
+    border-width: 2px;
+    font-size: 1.25rem;
+    padding: .625rem 1.25rem;
+    color: white;
+    max-width: 5.25 rem;
+    margin: auto;
+}
+
+.v-button.lb3:hover {
+    color: #fff;
+}
+
+.v-descriptions {
+    margin-left: 0px;
+}
+
+.v-descriptions li {
+    display: inline-block;
+    font-size: 1rem;
+}
+
+.v-descriptions li + li:before {
+    content: '|';
+    padding: 0 0.3em 0 0.1em;
+    color: #fff;
+}
+
+.v-readmore {
+    font-size: 1.25rem;
+    margin-top: 1.25rem;
+    margin-bottom: 1.875rem;
+}
+
 .c-button {
     padding: .5rem 1rem;
     border: 1px solid rgba(255,255,255,0.9);
