@@ -95,17 +95,17 @@ module.exports = function(user) {
   user.afterRemote('create', function(context, userInstance, next) {
     console.log('> user.afterRemote triggered');
 
-    var options = {
+    var verifyOptions = {
       type: 'email',
       to: userInstance.email,
       from: 'noreply@loopback.com',
       subject: 'Thanks for registering.',
       template: path.resolve(__dirname, '../../server/views/verify.ejs'),
       redirect: '/verified',
-      user: user
+      user: userInstance
     };
 
-    userInstance.verify(options, function(err, response, next) {
+    userInstance.verify(verifyOptions, function(err, response, next) {
       if (err) return next(err);
 
       console.log('> verification email sent:', response);
