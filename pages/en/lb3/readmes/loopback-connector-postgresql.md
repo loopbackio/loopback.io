@@ -430,6 +430,66 @@ The auto-migrate method:
 
 Destroying models may result in errors due to foreign key integrity. First delete any related models by calling delete on models with relationships.
 
+### Auto-migrate/Auto-update models with foreign keys
+
+Foreign key constraints can be defined in the model `options`. Removing or updating the value of `foreignKeys` will be updated or delete or update the constraints in the db tables.
+
+If there is a reference to an object being deleted then the `DELETE` will fail. Likewise if there is a create with an invalid FK id then the `POST` will fail.
+
+**Note**: The order of table creation is important. A referenced table must exist before creating a foreign key constraint.
+
+```json
+{
+  "name": "Customer",
+  "options": {
+    "idInjection": false
+  },
+  "properties": {
+    "id": {
+      "type": "String",
+      "length": 20,
+      "id": 1
+    },
+    "name": {
+      "type": "String",
+      "required": false,
+      "length": 40
+    }
+  }
+},
+
+{
+  "name": "Order",
+  "options": {
+    "idInjection": false,
+    "foreignKeys": {
+      "fk_order_customerId": {
+        "name": "fk_order_customerId",
+        "entity": "Customer",
+        "entityKey": "id",
+        "foreignKey": "customerId"
+      }
+    }
+  },
+  "properties": {
+    "id": {
+      "type": "String",
+      "length": 20,
+      "id": 1
+    },
+    "customerId": {
+      "type": "String",
+      "length": 20
+    },
+    "description": {
+      "type": "String",
+      "required": false,
+      "length": 40
+    }
+  }
+}
+```
+
 ## Running tests
 
 ### Own instance
