@@ -1,13 +1,13 @@
 ---
-title: "Security advisories"
+title: Security advisories
 lang: en
 layout: page
-toc: false
-keywords: LoopBack
-tags:
+toc: true
+keywords: LoopBack, security
+tags: [contributing, community]
 sidebar: home_sidebar
 permalink: /doc/en/contrib/Security-advisories.html
-summary:
+summary: Security advisories describe known security issues that may affect LoopBack.
 ---
 
 These are important advisories about known security issues:
