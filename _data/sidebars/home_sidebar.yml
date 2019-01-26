@@ -22,6 +22,10 @@ children:
   url: /doc/en/contrib/index.html
   output: web
 
+- title: Security Advisories
+  url: /doc/en/contrib/index.html
+  output: web
+
 - title: Long-term support
   url: /doc/en/contrib/Long-term-support.html
   output: web
