@@ -12,7 +12,7 @@ summary:
 
 These are important advisories about known security issues:
 
-{% include list-children.html in=site.data.sidebars.lb3_sidebar %}
+{% include list-children.html in=site.data.sidebars.home_sidebar %}
 
 {% include important.html content="
 Some advisories may require action on your part, for example to upgrade certain packages.
