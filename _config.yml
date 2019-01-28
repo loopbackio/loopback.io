@@ -107,6 +107,7 @@ sidebars:
 - lb4_sidebar
 - contrib_sidebar
 - community_sidebar
+- security_sidebar
 - es_lb2_sidebar
 - fr_lb2_sidebar
 - ja_lb3_sidebar
