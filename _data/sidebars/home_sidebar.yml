@@ -22,7 +22,7 @@ children:
   url: /doc/en/contrib/index.html
   output: web
 
-- title: Security Advisories
+- title: Security advisories
   url: /doc/en/sec/index.html
   output: web
 
