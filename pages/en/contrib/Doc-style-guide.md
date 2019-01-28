@@ -10,13 +10,13 @@ summary: This style guide is intended to ensure that LoopBack documentation has 
 
 ## Headings
 
-Use [sentence case](http://grammar.about.com/od/rs/g/Sentence-Case.htm) for headings. Basically, capitalize the first word; other words are only capitalized if they would normally be capitalized in a sentence.
+Use [sentence case](http://grammar.about.com/od/rs/g/Sentence-Case.htm) for headings. Always capitalize the first word; other words are capitalized if they would normally be capitalized in a sentence.
 
-Page titles are rendered as heading1 tags.  Therefore, use:
+Page titles are rendered as heading1 tags. Therefore, use:
 
-* `##` for top-level headings.
-* `###` for the next level of sub-headings.
-*   **Heading4** for the next level.
+- `##` for top-level headings.
+- `###` for the next level of sub-headings.
+- **Heading4** for the next level.
 
 Avoid using **Heading5** headings and lower as that generally presents too many levels of headings, and it's often better to reorganize. However, if you cannot avoid, there is no strict prohibition from using them.
 
@@ -26,9 +26,9 @@ Avoid using **Heading5** headings and lower as that generally presents too many 
 
 Format the following items as `monospace` in the toolbar, so they are rendered inline in fixed-pitch font:
 
-*   File names and directory paths; for example `package.json`.
-*   Code elements when used inline, for example object names, function calls, and the like; for example `app.route()`.
-*   URLs and routes, for example `<span class="nolink">http://localhost:8000</span>` or `/birds/about`.
+- File names and directory paths; for example `package.json`.
+- Code elements when used inline, for example object names, function calls, and the like; for example `app.route()`.
+- URLs and routes, for example `<span class="nolink">http://localhost:8000</span>` or `/birds/about`.
 
 ### Code samples
 
@@ -59,17 +59,17 @@ Use bullet lists (unordered lists) for three or more items when the order is not
 
 Lists:
 
-*   Are easier to read than big blocks of text.
-*   Make items stand out.
-*   Clearly identify parallel items.
+- Are easier to read than big blocks of text.
+- Make items stand out.
+- Clearly identify parallel items.
 
 Do not use bullets simply to start a regular paragraph.
 
 Capitalize list items. End each item with a period only when ending a sentence, such as:
 
-*   In this example.
-*   In this other example.
-*   In this final example.
+- In this example.
+- In this other example.
+- In this final example.
 
 Never end a list item with a comma, semicolon, or colon.
 
@@ -83,8 +83,8 @@ Use American spelling and grammar: "behavior" instead of "behaviour," "color" in
 
 Collective nouns, such as corporations, are singular, not plural:
 
-*   CORRECT: IBM is a company that helps promote Node.js (standard American use).
-*   INCORRECT: IBM are a company that helps promote Node.js (standard British use).
+- CORRECT: IBM is a company that helps promote Node.js (standard American use).
+- INCORRECT: IBM are a company that helps promote Node.js (standard British use).
 
 In lists of three or more items, use the [serial comma](http://grammar.about.com/od/grammarfaq/f/QAoxfordcomma.htm).
 
@@ -94,9 +94,9 @@ Spell out acronyms and abbreviations upon first use, with the acronym in parenth
 
 Do not use Latin abbreviations, which may not be understood by all readers. Instead use the English equivalent:
 
-*   Instead of "i.e." use "that is".
-*   Instead of "e.g." use "for example".
-*   Instead of "etc." use "and so on".
+- Instead of "i.e." use "that is".
+- Instead of "e.g." use "for example".
+- Instead of "etc." use "and so on".
 
 Put punctation inside quotation marks when they appear.
 
