@@ -23,7 +23,7 @@ children:
   output: web
 
 - title: Security Advisories
-  url: /doc/en/contrib/index.html
+  url: /doc/en/sec/index.html
   output: web
 
 - title: Long-term support
