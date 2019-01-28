@@ -1,18 +1,16 @@
 ---
-title: "Security advisories"
+title: Security advisories
 lang: en
-layout: page
-toc: false
-keywords: LoopBack
-tags:
-sidebar: home_sidebar
+keywords: security
+tags: [security]
+sidebar: security_sidebar
 permalink: /doc/en/sec/index.html
 summary:
 ---
 
 These are important advisories about known security issues:
 
-{% include list-children.html in=site.data.sidebars.home_sidebar %}
+{% include list-children.html in=site.data.sidebars.security_sidebar %}
 
 {% include important.html content="
 Some advisories may require action on your part, for example to upgrade certain packages.
