@@ -11,8 +11,6 @@ summary:
 
 This section provides important advisories about known security issues.
 
-{% include list-children.html in=site.data.sidebars.security_sidebar %}
-
 - [Security advisory 08-15-2018](Security-advisory-08-15-2018.html)
 - [Security advisory 08-08-2018](Security-advisory-08-08-2018.html)
 - [Security advisory 01-31-2018](Security-advisory-01-31-2018.html)
