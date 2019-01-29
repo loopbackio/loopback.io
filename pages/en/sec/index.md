@@ -7,6 +7,8 @@ tags: [security]
 sidebar: security_sidebar
 permalink: /doc/en/sec/index.html
 summary:
+redirect_from:
+- /sec/
 ---
 
 This section provides important advisories about known security issues.
