@@ -13,6 +13,13 @@ This section provides important advisories about known security issues.
 
 {% include list-children.html in=site.data.sidebars.security_sidebar %}
 
+- [Security advisory 08-15-2018](Security-advisory-08-15-2018.html)
+- [Security advisory 08-08-2018](Security-advisory-08-08-2018.html)
+- [Security advisory 01-31-2018](Security-advisory-01-31-2018.html)
+- [Security advisory 10-24-2017](Security-advisory-10-24-2017.html)
+- [Security advisory 09-21-2017](Security-advisory-09-21-2017.html)
+- [Security advisory 03-10-2017](Security-advisory-03-10-2017.html)
+
 {% include important.html content="
 Some advisories may require action on your part, for example to upgrade certain packages.
 " %}
