@@ -5,7 +5,7 @@ layout: page
 toc: false
 keywords: LoopBack
 tags: security
-sidebar: home_sidebar
+sidebar: security_sidebar
 permalink: /doc/en/sec/Security-advisory-08-15-2018.html
 ---
 
