@@ -11,6 +11,8 @@ summary:
 
 This section provides important advisories about known security issues.
 
+{% include list-children.html in=site.data.sidebars.security_sidebar %}
+
 {% include important.html content="
 Some advisories may require action on your part, for example to upgrade certain packages.
 " %}
