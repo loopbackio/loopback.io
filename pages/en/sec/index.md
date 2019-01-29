@@ -1,14 +1,11 @@
 ---
 title: Security advisories
 lang: en
-toc: false
 keywords:
 tags: [security]
 sidebar: security_sidebar
 permalink: /doc/en/sec/index.html
-summary:
-redirect_from:
-- /sec/
+summary: Known security issues and their resolution.
 ---
 
 This section provides important advisories about known security issues.
