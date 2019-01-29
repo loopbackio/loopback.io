@@ -24,6 +24,8 @@ topnav_dropdowns:
           url: /doc/en/community/
         - title: Contributing to LoopBack
           url: /doc/en/contrib/
+        - title: Security advisories
+            url: /doc/en/sec/
     - title: Resources
       folderitems:
         - title: Docs Github Repo
