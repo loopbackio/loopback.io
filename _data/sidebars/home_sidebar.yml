@@ -22,8 +22,8 @@ children:
   url: /doc/en/contrib/index.html
   output: web
 
-- title: Security Advisories
-  url: /doc/en/contrib/index.html
+- title: Security advisories
+  url: /doc/en/sec/index.html
   output: web
 
 - title: Long-term support
