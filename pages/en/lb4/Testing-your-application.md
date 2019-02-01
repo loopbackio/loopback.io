@@ -1,10 +1,9 @@
-Ok will push to your branch shortly.---
+---
 lang: en
 title: 'Testing your application'
 keywords: LoopBack 4.0, LoopBack 4
 sidebar: lb4_sidebar
 permalink: /doc/en/lb4/Testing-your-application.html
-
 ---
 
 ## Overview
@@ -15,8 +14,7 @@ A thorough automated test suite is important because it:
 - Prevents regressions when new features are added and bugs are fixed.
 - Helps new and existing developers understand different parts of the codebase
   (knowledge sharing).
-
-* Speeds up development over the long run (the code writes itself!).
+- Speeds up development over the long run (the code writes itself!).
 
 ### Types of tests
 
@@ -35,15 +33,7 @@ For an introduction to automated testing, see
 
 {% include important.html content=" A great test suite requires you to think
 smaller and favor fast and focused unit tests over slow end-to-end tests.
-
-For an introduction to automated testing, see [Define your testing strategy](Defining-your-testing-strategy.html).
-For a step-by-step tutorial, see [Incrementally implement features](Implementing-features.html).
-
-{% include important.html content="
-A great test suite requires you to think smaller and favor fast and focused unit tests over slow end-to-end tests.
-
-> > > > > > > 4d503d1... update Testing your application
-> > > > > > > " %}
+" %}
 
 This article is a reference guide for common types of tests and test helpers.
 
@@ -66,7 +56,6 @@ integrates these packages and makes them easy to use together with LoopBack.
 ### Set up testing infrastructure with LoopBack CLI
 
 LoopBack applications that have been generated using the `lb4 app` command from
-
 `@loopback/cli` come with `@loopback/testlab` and `mocha` as a default, so no
 other testing infrastructure setup is needed.
 
@@ -117,11 +106,11 @@ independent in-memory datasource which is filled appropriately using
 {% include code-caption.html content="test/fixtures/datasources/testdb.datasource.ts" %}
 
 ```ts
-import { juggler } from "@loopback/repository";
+import {juggler} from '@loopback/repository';
 
 export const testdb: juggler.DataSource = new juggler.DataSource({
-  name: "db",
-  connector: "memory"
+  name: 'db',
+  connector: 'memory',
 });
 ```
 
@@ -140,8 +129,8 @@ helper method; for example:
 {% include code-caption.html content="test/helpers/database.helpers.ts" %}
 
 ```ts
-import { ProductRepository, CategoryRepository } from "../../src/repositories";
-import { testdb } from "../fixtures/datasources/testdb.datasource";
+import {ProductRepository, CategoryRepository} from '../../src/repositories';
+import {testdb} from '../fixtures/datasources/testdb.datasource';
 
 export async function givenEmptyDatabase() {
   await new ProductRepository(testdb).deleteAll();
@@ -155,15 +144,15 @@ belongs to Category, include it in the repository call, for example:
 {% include code-caption.html content="test/helpers/database.helpers.ts" %}
 
 ```ts
-import { Getter } from "@loopback/context";
-import { ProductRepository, CategoryRepository } from "../../src/repositories";
-import { testdb } from "../fixtures/datasources/testdb.datasource";
+import {Getter} from '@loopback/context';
+import {ProductRepository, CategoryRepository} from '../../src/repositories';
+import {testdb} from '../fixtures/datasources/testdb.datasource';
 
 export async function givenEmptyDatabase() {
   const categoryRepository = new CategoryRepository(testdb);
   const productRepository = new ProductRepository(
     testdb,
-    Getter.fromValue(categoryRepository)
+    Getter.fromValue(categoryRepository),
   );
 
   await productRepository.deleteAll();
@@ -175,9 +164,9 @@ export async function givenEmptyDatabase() {
 
 ```ts
 // in your test file
-import { givenEmptyDatabase } from "../../helpers/database.helpers";
+import {givenEmptyDatabase} from '../../helpers/database.helpers';
 
-describe("ProductController (integration)", () => {
+describe('ProductController (integration)', () => {
   before(givenEmptyDatabase);
   // etc.
 });
@@ -211,20 +200,18 @@ sufficient.
 
 {% include code-caption.html content="test/helpers/database.helpers.ts" %}
 
-{% include code-caption.html content="test/helpers/database.helpers.ts" %}
-
 ```ts
 // ...
 export function givenProductData(data?: Partial<Product>) {
   return Object.assign(
     {
-      name: "a-product-name",
-      slug: "a-product-slug",
+      name: 'a-product-name',
+      slug: 'a-product-slug',
       price: 1,
-      description: "a-product-description",
-      available: true
+      description: 'a-product-description',
+      available: true,
     },
-    data
+    data,
   );
 }
 
@@ -249,7 +236,7 @@ several downsides:
   irrelevant? If it's irrelevant, then what are the other tests that depend on
   it?
 
-* As the application grows and new features are added, it's easier to add more
+- As the application grows and new features are added, it's easier to add more
   properties to existing model instances rather than create new instances using
   only the properties required by the new features. For example, when adding a
   category image, it's easier to add image to an existing category "Stationery"
@@ -314,8 +301,8 @@ checking access control:
 ```ts
 async function givenAdminAndCustomer() {
   return {
-    admin: await givenUser({ role: Roles.ADMIN }),
-    customer: await givenUser({ role: Roles.CUSTOMER })
+    admin: await givenUser({role: Roles.ADMIN}),
+    customer: await givenUser({role: Roles.CUSTOMER}),
   };
 }
 ```
@@ -355,7 +342,7 @@ There are three kinds of test doubles provided by Sinon.JS:
   existing functions. When wrapping an existing function with a stub, the
   original function is not called.
 
-* [Test mocks](http://sinonjs.org/releases/v4.0.1/mocks/) (and mock
+- [Test mocks](http://sinonjs.org/releases/v4.0.1/mocks/) (and mock
   expectations) are fake methods (like spies) with pre-programmed behavior (like
   stubs) as well as pre-programmed expectations. A mock will fail your test if
   it is not used as expected.
@@ -389,7 +376,7 @@ instance for each unit test in order to prevent unintended re-use of
 pre-programmed behavior between (unrelated) tests.
 
 ```ts
-describe("ProductController", () => {
+describe('ProductController', () => {
   let repository: ProductRepository;
   beforeEach(givenStubbedRepository);
 
@@ -412,7 +399,7 @@ or "given" section):
 // repository.find() will return a promise that
 // will be resolved with the provided array
 const findStub = repository.find as sinon.SinonStub;
-findStub.resolves([{ id: 1, name: "Pen" }]);
+findStub.resolves([{id: 1, name: 'Pen'}]);
 ```
 
 Verify how was the stubbed method executed at the end of your unit test (in the
@@ -421,7 +408,7 @@ Verify how was the stubbed method executed at the end of your unit test (in the
 ```ts
 // expect that repository.find() was called with the first
 // argument deeply-equal to the provided object
-sinon.assert.calledWithMatch({ where: { id: 1 } });
+sinon.assert.calledWithMatch({where: {id: 1}});
 ```
 
 See [Unit test your controllers](#unit-test-your-controllers) for a full
@@ -452,25 +439,25 @@ import {
   createStubInstance,
   expect,
   sinon,
-  StubbedInstanceWithSinonAccessor
-} from "@loopback/testlab";
-import { ProductRepository } from "../../../src/repositories";
-import { ProductController } from "../../../src/controllers";
+  StubbedInstanceWithSinonAccessor,
+} from '@loopback/testlab';
+import {ProductRepository} from '../../../src/repositories';
+import {ProductController} from '../../../src/controllers';
 
-describe("ProductController (unit)", () => {
+describe('ProductController (unit)', () => {
   let repository: StubbedInstanceWithSinonAccessor<ProductRepository>;
   beforeEach(givenStubbedRepository);
 
-  describe("getDetails()", () => {
-    it("retrieves details of a product", async () => {
+  describe('getDetails()', () => {
+    it('retrieves details of a product', async () => {
       const controller = new ProductController(repository);
-      repository.stubs.find.resolves([{ name: "Pen", slug: "pen" }]);
+      repository.stubs.find.resolves([{name: 'Pen', slug: 'pen'}]);
 
-      const details = await controller.getDetails("pen");
+      const details = await controller.getDetails('pen');
 
-      expect(details).to.containEql({ name: "Pen", slug: "pen" });
+      expect(details).to.containEql({name: 'Pen', slug: 'pen'});
       sinon.assert.calledWithMatch(repository.stubs.find, {
-        where: { slug: "pen" }
+        where: {slug: 'pen'},
       });
     });
   });
@@ -495,35 +482,35 @@ unit tests to verify the implementation of this additional method.
 Remember to use [Test data builders](#use-test-data-builders) whenever you need
 valid data to create a new model instance.
 
-{% include code-caption.html content="test/unit/models/person.model.test.ts" %}
+{% include code-caption.html content="test/unit/models/person.model.unit.ts" %}
 
 ```ts
-import { Person } from "../../../src/models";
-import { givenPersonData } from "../../helpers/database.helpers";
-import { expect } from "@loopback/testlab";
+import {Person} from '../../../src/models';
+import {givenPersonData} from '../../helpers/database.helpers';
+import {expect} from '@loopback/testlab';
 
-describe("Person (unit)", () => {
+describe('Person (unit)', () => {
   // we recommend to group tests by method names
-  describe("getFullName()", () => {
-    it("uses all three parts when present", () => {
+  describe('getFullName()', () => {
+    it('uses all three parts when present', () => {
       const person = givenPerson({
-        firstname: "Jane",
-        middlename: "Smith",
-        surname: "Brown"
+        firstname: 'Jane',
+        middlename: 'Smith',
+        surname: 'Brown',
       });
 
       const fullName = person.getFullName();
-      expect(fullName).to.equal("Jane Smith Brown");
+      expect(fullName).to.equal('Jane Smith Brown');
     });
 
-    it("omits middlename when not present", () => {
+    it('omits middlename when not present', () => {
       const person = givenPerson({
-        firstname: "Mark",
-        surname: "Twain"
+        firstname: 'Mark',
+        surname: 'Twain',
       });
 
       const fullName = person.getFullName();
-      expect(fullName).to.equal("Mark Twain");
+      expect(fullName).to.equal('Mark Twain');
     });
   });
 
@@ -570,8 +557,7 @@ There are two common reasons for adding repository tests:
 - Your models are using an advanced configuration, for example, custom column
   mappings, and you want to verify this configuration is correctly picked up by
   the framework.
-
-* Your repositories have additional methods.
+- Your repositories have additional methods.
 
 Integration tests are one of the places to put the best practices in
 [Data handling](#data-handling) to work:
@@ -588,21 +574,21 @@ repository method `findByName`:
 ```ts
 import {
   givenEmptyDatabase,
-  givenCategory
-} from "../../helpers/database.helpers";
-import { CategoryRepository } from "../../../src/repositories";
-import { expect } from "@loopback/testlab";
-import { testdb } from "../../fixtures/datasources/testdb.datasource";
+  givenCategory,
+} from '../../helpers/database.helpers';
+import {CategoryRepository} from '../../../src/repositories';
+import {expect} from '@loopback/testlab';
+import {testdb} from '../../fixtures/datasources/testdb.datasource';
 
-describe("CategoryRepository (integration)", () => {
+describe('CategoryRepository (integration)', () => {
   beforeEach(givenEmptyDatabase);
 
-  describe("findByName(name)", () => {
-    it("return the correct category", async () => {
-      const stationery = await givenCategory({ name: "Stationery" });
+  describe('findByName(name)', () => {
+    it('return the correct category', async () => {
+      const stationery = await givenCategory({name: 'Stationery'});
       const repository = new CategoryRepository(testdb);
 
-      const found = await repository.findByName("Stationery");
+      const found = await repository.findByName('Stationery');
 
       expect(found).to.deepEqual(stationery);
     });
@@ -620,27 +606,22 @@ ingredient.
 
 {% include code-caption.html content="test/integration/controllers/product.controller.integration.ts" %}
 
-{% include code-caption.html content= "test/integration/controllers/product.controller.test.ts" %}
-
 ```ts
-import { expect } from "@loopback/testlab";
-import {
-  givenEmptyDatabase,
-  givenProduct
-} from "../../helpers/database.helpers";
-import { ProductController } from "../../../src/controllers";
-import { ProductRepository } from "../../../src/repositories";
-import { testdb } from "../../fixtures/datasources/testdb.datasource";
+import {expect} from '@loopback/testlab';
+import {givenEmptyDatabase, givenProduct} from '../../helpers/database.helpers';
+import {ProductController} from '../../../src/controllers';
+import {ProductRepository} from '../../../src/repositories';
+import {testdb} from '../../fixtures/datasources/testdb.datasource';
 
-describe("ProductController (integration)", () => {
+describe('ProductController (integration)', () => {
   beforeEach(givenEmptyDatabase);
 
-  describe("getDetails()", () => {
-    it("retrieves details of the given product", async () => {
-      const pencil = await givenProduct({ name: "Pencil", slug: "pencil" });
+  describe('getDetails()', () => {
+    it('retrieves details of the given product', async () => {
+      const pencil = await givenProduct({name: 'Pencil', slug: 'pencil'});
       const controller = new ProductController(new ProductRepository(testdb));
 
-      const details = await controller.getDetails("pencil");
+      const details = await controller.getDetails('pencil');
 
       expect(details).to.containEql(pencil);
     });
@@ -678,11 +659,11 @@ invoked once before the integration test suite begins.
 ```ts
 import {
   GeoService,
-  GeoServiceProvider
-} from "../../src/services/geo.service.ts";
-import { GeoDataSource } from "../../src/datasources/geo.datasource.ts";
+  GeoServiceProvider,
+} from '../../src/services/geo.service.ts';
+import {GeoDataSource} from '../../src/datasources/geo.datasource.ts';
 
-describe("GeoService", () => {
+describe('GeoService', () => {
   let service: GeoService;
   before(givenGeoService);
 
@@ -699,8 +680,8 @@ If needed, you can tweak the datasource config before creating the service
 instance:
 
 ```ts
-import { merge } from "lodash";
-import * as GEO_CODER_CONFIG from "../src/datasources/geo.datasource.json";
+import {merge} from 'lodash';
+import * as GEO_CODER_CONFIG from '../src/datasources/geo.datasource.json';
 
 function givenGeoService() {
   const config = merge({}, GEO_CODER_CONFIG, {
@@ -718,14 +699,14 @@ executing individual methods with the right set of input parameters; and
 verifying the outcome of those calls.
 
 ```ts
-it("resolves an address to a geo point", async () => {
-  const points = await service.geocode("1 New Orchard Road, Armonk, 10504");
+it('resolves an address to a geo point', async () => {
+  const points = await service.geocode('1 New Orchard Road, Armonk, 10504');
 
   expect(points).to.deepEqual([
     {
       lat: 41.109653,
-      lng: -73.72467
-    }
+      lng: -73.72467,
+    },
   ]);
 });
 ```
@@ -765,12 +746,12 @@ Example usage:
 
 ```ts
 // test/acceptance/api-spec.test.ts
-import { HelloWorldApplication } from "../..";
-import { RestServer } from "@loopback/rest";
-import { validateApiSpec } from "@loopback/testlab";
+import {HelloWorldApplication} from '../..';
+import {RestServer} from '@loopback/rest';
+import {validateApiSpec} from '@loopback/testlab';
 
-describe("API specification", () => {
-  it("api spec is valid", async () => {
+describe('API specification', () => {
+  it('api spec is valid', async () => {
     const app = new HelloWorldApplication();
     const server = await app.getServer(RestServer);
     const spec = server.getApiSpec();
@@ -807,13 +788,13 @@ Here is an example showing how to run Dredd to test your API against the spec:
 {% include code-caption.html content= "test/acceptance/api-spec.acceptance.ts" %}
 
 ```ts
-import { expect } from "@loopback/testlab";
-import { HelloWorldApplication } from "../..";
-import { RestServer, RestBindings } from "@loopback/rest";
-import { spec } from "../../apidefs/openapi";
-const Dredd = require("dredd");
+import {expect} from '@loopback/testlab';
+import {HelloWorldApplication} from '../..';
+import {RestServer, RestBindings} from '@loopback/rest';
+import {spec} from '../../apidefs/openapi';
+const Dredd = require('dredd');
 
-describe("API (acceptance)", () => {
+describe('API (acceptance)', () => {
   let app: HelloWorldApplication;
   // tslint:disable no-any
   let dredd: any;
@@ -822,13 +803,13 @@ describe("API (acceptance)", () => {
     await app.stop();
   });
 
-  it("conforms to the specification", done => {
+  it('conforms to the specification', done => {
     dredd.run((err: Error, stats: object) => {
       if (err) return done(err);
       expect(stats).to.containDeep({
         failures: 0,
         errors: 0,
-        skipped: 0
+        skipped: 0,
       });
       done();
     });
@@ -850,10 +831,10 @@ describe("API (acceptance)", () => {
     const config: object = {
       server: baseUrl, // base path to the end points
       options: {
-        level: "fail", // report 'fail' case only
+        level: 'fail', // report 'fail' case only
         silent: false, // false for helpful debugging info
-        path: [`${baseUrl}/openapi.json`] // to download apiSpec from the service
-      }
+        path: [`${baseUrl}/openapi.json`], // to download apiSpec from the service
+      },
     };
     dredd = new Dredd(config);
   }
@@ -879,13 +860,13 @@ Here is an example of an acceptance test:
 {% include code-caption.html content= "test/acceptance/product.acceptance.ts" %}
 
 ```ts
-import { HelloWorldApplication } from "../..";
-import { Client, createRestAppClient, expect } from "@loopback/testlab";
-import { givenEmptyDatabase, givenProduct } from "../helpers/database.helpers";
-import { RestServer, RestBindings } from "@loopback/rest";
-import { testdb } from "../fixtures/datasources/testdb.datasource";
+import {HelloWorldApplication} from '../..';
+import {Client, createRestAppClient, expect} from '@loopback/testlab';
+import {givenEmptyDatabase, givenProduct} from '../helpers/database.helpers';
+import {RestServer, RestBindings} from '@loopback/rest';
+import {testdb} from '../fixtures/datasources/testdb.datasource';
 
-describe("Product (acceptance)", () => {
+describe('Product (acceptance)', () => {
   let app: HelloWorldApplication;
   let client: Client;
 
@@ -895,22 +876,22 @@ describe("Product (acceptance)", () => {
     await app.stop();
   });
 
-  it("retrieves product details", async () => {
+  it('retrieves product details', async () => {
     // arrange
     const product = await givenProduct({
-      name: "Ink Pen",
-      slug: "ink-pen",
+      name: 'Ink Pen',
+      slug: 'ink-pen',
       price: 1,
-      category: "Stationery",
-      description: "The ultimate ink-powered pen for daily writing",
-      label: "popular",
+      category: 'Stationery',
+      description: 'The ultimate ink-powered pen for daily writing',
+      label: 'popular',
       available: true,
-      endDate: null
+      endDate: null,
     });
-    const expected = Object.assign({ id: product.id }, product);
+    const expected = Object.assign({id: product.id}, product);
 
     // act
-    const response = await client.get("/product/ink-pen");
+    const response = await client.get('/product/ink-pen');
 
     // assert
     expect(response.body).to.containEql(expected);
@@ -919,8 +900,8 @@ describe("Product (acceptance)", () => {
   async function givenRunningApp() {
     app = new HelloWorldApplication({
       rest: {
-        port: 0
-      }
+        port: 0,
+      },
     });
     app.dataSource(testdb);
     await app.boot();
