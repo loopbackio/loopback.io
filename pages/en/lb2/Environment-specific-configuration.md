@@ -36,11 +36,11 @@ LoopBack will always load the following configuration files, if they exist:
 
 Additionally, when the NODE_ENV environment variable is set, LoopBack will load configuration from:
 
-* `server/config.{_env_``}.json/js`
-* `server/datasources.{_env_``}.json/js`
-* `server/model-config.{_env_``}.json/js`
-* `server/middleware.{_env_``}.json/js`
-* `server/component-config.{_env_``}.json/js `
+* `server/config.{_env_}.json/js`
+* `server/datasources.{_env_}.json/js`
+* `server/model-config.{_env_}.json/js`
+* `server/middleware.{_env_}.json/js`
+* `server/component-config.{_env_}.json/js`
 
 where `{_env_}` is the value of NODE_ENV (typically "development," "staging," or "production").
 This enables you to set up configurations for specific environments (for example, development, staging, and production). 
