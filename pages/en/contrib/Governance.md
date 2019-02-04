@@ -38,6 +38,7 @@ Other core maintainers include:
 *   [Janny Hou](http://github.com/jannyHou)
 *   [Yaapa Hage](https://github.com/hacksparrow)
 *   [Nora Abdelgadir](https://github.com/nabdelgadir)
+*   [Dominique Emond](https://github.com/emonddr)
 
 Previous project architects:
 *   [Ritchie Martori](https://github.com/ritch)
