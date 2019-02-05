@@ -63,7 +63,7 @@ Follow the [GitHub Flow](http://scottchacon.com/2011/08/31/github-flow.html).  I
  1. Request a code review. Add a specific committer to speed up this process. (for example, `@bajtos`, `@raymondfeng`).
  1. Make any requested changes and push to your fork. Make sure your changes are still based on the latest code (use `git rebase upstream/master`).
 
- ### How to rebase your branch
+### How to rebase your branch
 
 Our code base is always getting updated and being able to successfully rebase your PR is very important. Here are some simple steps to rebase your code:
 - Checkout your branch which you are submitting the pull request against `git checkout <my_branch>`
