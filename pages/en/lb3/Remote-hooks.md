@@ -181,10 +181,10 @@ Customer.afterRemote('**', function (ctx, user, next) {
   if(ctx.result) {
     if(Array.isArray(ctx.result)) {
       ctx.result.forEach(function (result) {
-        delete result.password;
+        result.unsetAttribute('password');
       });
     } else {
-      delete ctx.result.password;
+      ctx.result.unsetAttribute('password');
     }
   }
 
