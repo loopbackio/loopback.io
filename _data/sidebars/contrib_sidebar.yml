@@ -150,3 +150,8 @@ children:
     - title: Translating articles
       url: Translating_articles.html
       output: web, pdf
+
+- title: Submitting a pull request to Loopback 4
+  url: submitting_a_pr.html
+  output: web, pdf
+
