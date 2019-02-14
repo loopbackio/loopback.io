@@ -33,5 +33,6 @@
     "xml2js": "^0.4.19"
   },
   "license": "MIT",
+  "author": "IBM Corp.",
   "dependencies": {}
 }
