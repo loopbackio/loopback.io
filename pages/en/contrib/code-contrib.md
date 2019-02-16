@@ -70,7 +70,7 @@ Our code base is always getting updated and being able to successfully rebase yo
 - Add an upstream remote from your fork `git remote add upstream <upstream_repo>`
 - Fetch the latest from the **_upstream_** remote `git fetch upstream`
 - Rebase your code using the interactive mode `git rebase -i upstream/master`
-- If you are happy with the changes and there are no merge conflicts, push the code to your remote branch `git push origin <my_branch>`
+- If you are happy with the changes and there are no merge conflicts, push the code to your remote branch `git push --force-with-lease origin <my_branch>`
 
 ## Running tests
 

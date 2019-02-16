@@ -30,9 +30,9 @@ Use the following [PersistedModel](http://apidocs.loopback.io/loopback/#persiste
 * [findOrCreate](http://apidocs.loopback.io/loopback/#persistedmodel-findorcreate) - Find one instance matching the filter object provided as the first parameter.
   If found, returns the object. If not found, creates a new instance (record).
 
-    {% include important.html content="Be sure to include a `where` clause in the filter object.
-    Without the `where`, the `findOrCreate` finds and returns the first record in the collection, without error, which can lead to unintended behavior.
-    " %}
+{% include important.html content="Be sure to include a `where` clause in the filter object. Without the `where`, the `findOrCreate` finds and returns the first record in the collection, without error, which can lead to unintended behavior.
+" %}
+    
 * [save](http://apidocs.loopback.io/loopback/#persistedmodel-prototype-save) - Save model instance.
   If the instance doesn't have an ID, then calls [create](http://apidocs.loopback.io/loopback/#persistedmodel-create) instead.
   Triggers: validate, save, update, or create.
