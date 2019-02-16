@@ -78,7 +78,7 @@
 
     $('.search-bar').val(queryObj.q.replace('+', ' '));
     if(queryObj.sidebar && queryObj.sidebar != "") {
-        $('input[name="search-bar"]').val(queryObj.sidebar);
+        $('input[name="sidebar"]').val(queryObj.sidebar);
     }
       
     var urlBase = "https://openwhisk.ng.bluemix.net/api/v1/web/slbld%40ca.ibm.com_loopback/default/search.json?";
