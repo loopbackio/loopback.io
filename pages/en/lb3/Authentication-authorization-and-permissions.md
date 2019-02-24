@@ -99,7 +99,7 @@ and uses the built-in `AccessToken` model.  In this case, you need to change the
     "relations": {
       "user": {
         "type": "belongsTo",
-        "model": "CustomUserModel",
+        "model": "CustomUser",
         "foreignKey": "userId"
       }
     }
