@@ -58,12 +58,12 @@ See [step 2](https://github.com/strongloop/loopback-example-user-management#how-
 
 ## How do you perform a password reset for a registered user?
 1. Create a [form to gather password reset info](https://github.com/strongloop/loopback-example-user-management/blob/master/server/views/login.ejs#L40-L51)
-2. Create an [endpoint to handle the password reset request](https://github.com/strongloop/loopback-example-user-management/blob/master/server/boot/routes.js#L52-L66). Calling `User.resetPassword` ultimately emits a `resetPasswordRequest` event and creates a temporary access token
-3. Register an event handler for the `resetPasswordRequest` that sends an email to the registered user. In our example, we provide a [URL](https://github.com/strongloop/loopback-example-user-management/blob/master/common/models/user.js#L40-L41) that redirects the user to a [password reset page authenticated with a temporary access token](https://github.com/strongloop/loopback-example-user-management/blob/master/server/boot/routes.js#L68-L74)
+2. Create an [endpoint to handle the password reset request](https://github.com/strongloop/loopback-example-user-management/blob/master/server/boot/routes.js#L69-L83). Calling `User.resetPassword` ultimately emits a `resetPasswordRequest` event and creates a temporary access token
+3. Register an event handler for the `resetPasswordRequest` that sends an email to the registered user. In our example, we provide a [URL](https://github.com/strongloop/loopback-example-user-management/blob/master/common/models/user.js#L54) that redirects the user to a [password reset page authenticated with a temporary access token](https://github.com/strongloop/loopback-example-user-management/blob/master/server/boot/routes.js#L85-L92)
 4. Create a [password reset form](https://github.com/strongloop/loopback-example-user-management/blob/master/server/views/password-reset.ejs#L2-L17) for the user to enter and confirm their new password
-5. Create an [endpoint to process the password reset](https://github.com/strongloop/loopback-example-user-management/blob/master/server/boot/routes.js#L76-L99)
+5. Create an [endpoint to process the password reset](https://github.com/strongloop/loopback-example-user-management/blob/master/common/models/user.js#L79-L87)
 
-- For the `resetPasswordRequest` handler callback, you are provided with an [`info`](https://github.com/strongloop/loopback-example-user-management/blob/master/common/models/user.js#L38) object which contains information related to the user that is requesting the password reset. Note that this example is set up to send an initial email to yourself (the FROM and TO fields are the same). You will eventually want to change the address in the FROM field.
+- For the `resetPasswordRequest` handler callback, you are provided with an [`info`](https://github.com/strongloop/loopback-example-user-management/blob/master/common/models/user.js#L53) object which contains information related to the user that is requesting the password reset. Note that this example is set up to send an initial email to yourself (the FROM and TO fields are the same). You will eventually want to change the address in the FROM field.
 
 ---
 
