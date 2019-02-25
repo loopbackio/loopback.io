@@ -1,15 +1,12 @@
 ---
 lang: en
-title: Tutorials and Examples
+title: Tutorials
 keywords: LoopBack 4.0
 sidebar: lb4_sidebar
-permalink: /doc/en/lb4/Examples-and-tutorials.html
+permalink: /doc/en/lb4/Tutorials.html
 ---
 
-LoopBack 4 comes with the following example projects:
-
-- **[hello-world](https://github.com/strongloop/loopback-next/tree/master/examples/hello-world)**:
-  Tutorial on setting up a simple hello-world application using LoopBack 4.
+LoopBack 4 comes with the following tutorials:
 
 - **[todo](todo-tutorial.md)**: Tutorial on building a simple application with
   LoopBack 4 key concepts using bottom-up approach.
@@ -17,16 +14,13 @@ LoopBack 4 comes with the following example projects:
 - **[todo-list](todo-list-tutorial.md)**: Tutorial on introducing related models
   and building their API from the Todo tutorial
 
-- **[log-extension](https://github.com/strongloop/loopback-next/tree/master/examples/log-extension)**:
-  Tutorial on building a log extension.
-
-- **[rpc-server](https://github.com/strongloop/loopback-next/tree/master/examples/rpc-server)**:
-  An example showing how to implement a made-up RPC protocol.
-
 - **[soap-calculator](soap-calculator-tutorial.md)**: Tutorial on integrating
   SOAP web services.
 
-You can download any of the example projects usig our CLI tool `lb4`:
+- **[log-extension](https://github.com/strongloop/loopback-next/tree/master/examples/log-extension)**:
+  Tutorial on building a log extension.
+
+You can download any of the tutorial projects using our CLI tool `lb4`:
 
 ```sh
 $ lb4 example
