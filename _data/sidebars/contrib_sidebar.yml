@@ -39,7 +39,12 @@ children:
   - title: LoopBack 4
     url: code-contrib-lb4.html
     output: web, pdf
+    children:
 
+    - title: Submitting a pull request to LoopBack 4
+      url: /doc/en/lb4/submitting_a_pr.html
+      output: web, pdf
+    
 - title: Contributing to docs
   url: doc-contrib.html
   output: web, pdf
