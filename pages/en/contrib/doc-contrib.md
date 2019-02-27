@@ -25,7 +25,7 @@ Follow these steps:
 1. Click on **Edit this page** (top of page) to fork the repo.
 1. Edit the page or pages as needed.
 1. Commit to your fork/branch.
-1. Open a PR for your changes.  If there is an associated issue, please reference it in your PR.
+1. Open a PR for your changes.  If there is an associated issue, please reference it in your PR. Check out [Submitting a pull request to LoopBack 4](https://loopback.io/doc/en/lb4/submitting_a_pr.html) for detailed instructions.
 
 {% include important.html content="When you submit your PR, be sure to agree to the contributor license agreement; see below.
 " %}
