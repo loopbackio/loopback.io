@@ -87,7 +87,7 @@ See [`app.get()` in Express documentation](http://expressjs.com/4x/api.html#app.
 
 ### Remoting properties
 
-Properties under the `remoting` top-level property determine how the application performs remote operations using [strong-remoting](Strong-remoting.html); for example:
+Properties under the `remoting` top-level property determine how the application performs remote operations using [strong-remoting](Strong-Remoting.html); for example:
 
 ```javascript
 ...
