@@ -131,11 +131,6 @@ children:
   - title: 'Dependency injection'
     url: Dependency-injection.html
     output: 'web, pdf'
-    children:
-
-    - title: 'Reserved binding keys'
-      url: Reserved-binding-keys.html
-      output: 'web, pdf'
 
   - title: 'Controllers'
     url: Controllers.html
@@ -357,6 +352,10 @@ children:
   url: Reference.html
   output: 'web, pdf'
   children:
+
+  - title: 'Reserved binding keys'
+    url: Reserved-binding-keys.html
+    output: 'web, pdf'
 
   - title: 'Glossary'
     url: Glossary.html
