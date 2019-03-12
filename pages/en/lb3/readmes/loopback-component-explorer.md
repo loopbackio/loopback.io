@@ -48,7 +48,7 @@ To upgrade your application using loopback-explorer version 1.x, just replace
 var explorer = require('loopback-component-explorer');  // Module was loopback-explorer in v. 2.0.1 and earlier
 
 // v1.x - does not work anymore
-app.use('/explorer', explorer(app, options);
+app.use('/explorer', explorer(app, options));
 // v2.x
 app.use('/explorer', explorer.routes(app, options));
 ```

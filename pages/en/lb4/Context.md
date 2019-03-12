@@ -421,3 +421,112 @@ follows over the context chain.
 2. If no context object of the chain has `error` listeners, emit an `error`
    event on the current context. As a result, the process exits abnormally. See
    https://nodejs.org/api/events.html#events_error_events for more details.
+
+## Context view
+
+Bindings in a context can come and go. It's often desirable for an artifact
+(especially an extension point) to keep track of other artifacts (extensions).
+For example, the `RestServer` needs to know routes contributed by `controller`
+classes or other handlers. Such routes can be added or removed after the
+`RestServer` starts. When a controller is added after the application starts,
+new routes are bound into the application context. Ideally, the `RestServer`
+should be able to pick up these new routes without restarting.
+
+To support the dynamic tracking of such artifacts registered within a context
+chain, we introduce `ContextObserver` interface and `ContextView` class that can
+be used to watch a list of bindings matching certain criteria depicted by a
+`BindingFilter` function.
+
+```ts
+import {Context, ContextView} from '@loopback/context';
+
+// Set up a context chain
+const appCtx = new Context('app');
+const serverCtx = new Context(appCtx, 'server'); // server -> app
+
+// Define a binding filter to select bindings with tag `controller`
+const controllerFilter = binding => binding.tagMap.controller != null;
+
+// Watch for bindings with tag `controller`
+const view = serverCtx.watch(controllerFilter);
+
+// No controllers yet
+await view.values(); // returns []
+
+// Bind Controller1 to server context
+serverCtx
+  .bind('controllers.Controller1')
+  .toClass(Controller1)
+  .tag('controller');
+
+// Resolve to an instance of Controller1
+await view.values(); // returns [an instance of Controller1];
+
+// Bind Controller2 to app context
+appCtx
+  .bind('controllers.Controller2')
+  .toClass(Controller2)
+  .tag('controller');
+
+// Resolve to an instance of Controller1 and an instance of Controller2
+await view.values(); // returns [an instance of Controller1, an instance of Controller2];
+
+// Unbind Controller2
+appCtx.unbind('controllers.Controller2');
+
+// No more instance of Controller2
+await view.values(); // returns [an instance of Controller1];
+```
+
+The key benefit of `ContextView` is that it caches resolved values until context
+bindings matching the filter function are added/removed. For most cases, we
+don't have to pay the penalty to find/resolve per request.
+
+To fully leverage the live list of extensions, an extension point such as
+`RoutingTable` should either keep a pointer to an instance of `ContextView`
+corresponding to all `routes` (extensions) in the context chain and use the
+`values()` function to match again the live `routes` per request or implement
+itself as a `ContextObserver` to rebuild the routes upon changes of routes in
+the context with `listen()`.
+
+If your dependency needs to follow the context for values from bindings matching
+a filter, use [`@inject.view`](Decorators_inject.md#@inject.view) for dependency
+injection.
+
+### ContextView events
+
+A `ContextView` object can emit one of the following events:
+
+- 'refresh': when the view is refreshed as bindings are added/removed
+- 'resolve': when the cached values are resolved and updated
+- 'close': when the view is closed (stopped observing context events)
+
+Such as events can be used to update other states/cached values other than the
+values watched by the `ContextView` object itself. For example:
+
+```ts
+class MyController {
+  private _total: number | undefined = undefined;
+  constructor(
+    @inject.view(filterByTag('counter'))
+    private taggedAsFoo: ContextView<Counter>,
+  ) {
+    // Invalidate cached `_total` if the view is refreshed
+    taggedAsFoo.on('refresh', () => {
+      this._total = undefined;
+    });
+  }
+
+  async total() {
+    if (this._total != null) return this._total;
+    // Calculate the total of all counters
+    const counters = await this.taggedAsFoo.values();
+    let result = 0;
+    for (const c of counters) {
+      result += c.value;
+    }
+    this._total = result;
+    return this._total;
+  }
+}
+```
