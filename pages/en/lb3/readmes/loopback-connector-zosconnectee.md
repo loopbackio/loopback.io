@@ -2,7 +2,7 @@
 
 # LoopBack connector for z/OS Connect Enterprise Edition
 
-IBM® z/OS® Connect Enterprise Edition (EE) V2.0 extends the value of applications that run on z/OS by allowing efficient and scalable APIs for contemporary mobile and cloud applications to be easily created. The `loopback-connector-zosconnectee` module is the LoopBack connector for z/OS Connect Enterprise Edition.
+IBM® z/OS® Connect Enterprise Edition (EE) extends the value of applications that run on z/OS by allowing efficient and scalable APIs for contemporary mobile and cloud applications to be easily created. The `loopback-connector-zosconnectee` module is the LoopBack connector for z/OS Connect Enterprise Edition.
 
 **Note**: `loopback-connector-zosconnectee` leverages `loopback-connector-rest` LoopBack connector for performing RESTful invocations to z/OS Connect EE server.
 
