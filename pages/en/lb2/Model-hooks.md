@@ -95,7 +95,7 @@ CoffeeShop.beforeValidate = function(next, modelInstance) {
 In the beforeValidate hook, use `this` instead of `modelInstance` to get a reference to the model being validated. In this hook, `modelInstance` is not valid.
 " %}
 
-You must call `next()` to let LoopBack now you're ready to go on after the hook's logic has completed.
+You must call `next()` to let LoopBack know you're ready to go on after the hook's logic has completed.
 
 {% include warning.html content="
 If you don't call `next()`, the application will appear to \"hang\".
@@ -117,7 +117,7 @@ CoffeeShop.afterValidate(next) {
 //...
 ```
 
-You must call `next()` to let LoopBack now you're ready to go on after the hook's logic has completed.
+You must call `next()` to let LoopBack know you're ready to go on after the hook's logic has completed.
 
 ## beforeCreate
 
