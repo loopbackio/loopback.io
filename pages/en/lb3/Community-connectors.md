@@ -64,7 +64,17 @@ The following table lists some of the community connectors. See [npmjs.org](http
       <td><a href="https://firebase.google.com/products/firestore/" class="external-link" rel="nofollow">Firebase Firestore</a></td>
       <td><a href="https://www.npmjs.com/package/loopback-connector-firestore" class="external-link" rel="nofollow">loopback-connector-firestore</a></td>
       <td>&nbsp;</td>
-    </tr>    
+    </tr>
+    <tr>
+      <td><a href="https://firebase.google.com/products/realtime-database/" class="external-link" rel="nofollow">Firebase Realtime Database</a></td>
+      <td><a href="https://www.npmjs.com/package/loopback-connector-realtime-database" class="external-link" rel="nofollow">loopback-connector-realtime-database</a></td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><a href="https://cloud.google.com/datastore/" class="external-link" rel="nofollow">Google Cloud Datastore</a></td>
+      <td><a href="https://www.npmjs.com/package/loopback-connector-google-cloud-datastore" class="external-link" rel="nofollow">loopback-connector-google-cloud-datastore</a></td>
+      <td>&nbsp;</td>
+    </tr>
     <tr>
       <td><a href="https://mandrill.com/" class="external-link" rel="nofollow">Mandrill</a></td>
       <td><a href="https://www.npmjs.org/package/lb-connector-mandrill" class="external-link" rel="nofollow">lb-connector-mandrill</a></td>
