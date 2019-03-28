@@ -75,6 +75,15 @@ For example:
 }</code></pre></td>    
 </tr>
 <tr>
+<td>wsdl_headers</td>
+<td>Object</td>
+<td>Indicates additonal headers to pass to the SOAP connector, for example for sending http authorizations header.
+For example:
+<pre><code>wsdl_headers: {
+  Authorization: "Basic UGVyc29uYWwgYWNjb3VudDpORVdsazIwMTVAKSEl"
+}</code></pre></td>    
+</tr>  
+<tr>
 <td>remotingEnabled</td>
 <td>Boolean</td>
 <td>Indicates whether the operations are exposed as REST APIs. To expose or hide a specific method, override with:
