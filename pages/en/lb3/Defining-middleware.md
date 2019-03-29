@@ -66,6 +66,8 @@ For example, for the "initial" phase, middleware executes in this order:
 Middleware within a single subphase executes in the order in which it is registered. However, you should not rely on such order.
 Always explicitly order the middleware using appropriate phases when order matters.
 
+**Note**: If a route is found in the `route` phase, no middlewares after that will be called within loopback, including `route:after`. This is due to the express behavior.
+
 ## Specifying a middleware function
 
 
