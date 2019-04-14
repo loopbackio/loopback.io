@@ -40,12 +40,12 @@ Here's what they render to:
 With Font Awesome, you always use the `i` tag with the appropriate class. You also implement `fa` as a base class first. You can use font awesome icons inside other elements. Here I'm using a Font Awesome class inside a Bootstrap alert:
 
 ```html
-<div class="alert alert-danger" role="alert"><i class="fa fa-exclamation-circle"></i> <b>Warning: </b>This is a special warning message.
+<div class="alert alert-danger " role="alert"><i class="fa fa-exclamation-circle"></i> <b>Warning: </b>This is a special warning message.
 ```
 
 Here's the result:
 
-<div class="alert alert-danger" role="alert"><i class="fa fa-exclamation-circle fa-lg"></i> This is a special warning message.</div>
+<div class="alert alert-danger " role="alert"><i class="fa fa-exclamation-circle fa-lg"></i> This is a special warning message.</div>
 
 The notes, tips, warnings, etc., are pre-coded with Font Awesome.
 
@@ -54,12 +54,12 @@ The notes, tips, warnings, etc., are pre-coded with Font Awesome.
 You can innovate with your own combinations. For example, here's a file download icon:
 
 ```html
-<div class="alert alert-success" role="alert"><i class="fa fa-download fa-lg"></i> This is a special tip about some file to download....</div>
+<div class="alert alert-success " role="alert"><i class="fa fa-download fa-lg"></i> This is a special tip about some file to download....</div>
 ```
 
 And the result:
 
-<div class="alert alert-success" role="alert"><i class="fa fa-download fa-lg"></i> This is a special tip about some file to download....</div>
+<div class="alert alert-success " role="alert"><i class="fa fa-download fa-lg"></i> This is a special tip about some file to download....</div>
 
 
 Grab the right class name from the [Font Awesome library](http://fortawesome.github.io/Font-Awesome/icons/) and then implement it by following the pattern shown previously.
@@ -116,13 +116,13 @@ And magnified:
 You can also put glyphicons inside other elements:
 
 ```html
-<div class="alert alert-danger" role="alert">
+<div class="alert alert-danger " role="alert">
   <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
   <b>Error:</b> Enter a valid email address
 </div>
 ```
 
-<div class="alert alert-danger" role="alert">
+<div class="alert alert-danger " role="alert">
   <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
   <b>Error:</b> Enter a valid email address
 </div>
@@ -136,7 +136,7 @@ The previously shown alerts might be fine for short messages, but with longer no
  This is a special info message. This is a special info message. This is a special info message. This is a special info message. This is a special info message. This is a special info message. This is a special info message. This is a special info message. This is a special info message. </div>
 ```
 
-<div class="alert alert-info" role="alert"><span class="glyphicon glyphicon-question-sign"></span> This is a special info message. This is a special info message. This is a special info message. This is a special info message. This is a special info message. This is a special info message. This is a special info message. This is a special info message. This is a special info message. </div>
+<div class="alert alert-info " role="alert"><span class="glyphicon glyphicon-question-sign"></span> This is a special info message. This is a special info message. This is a special info message. This is a special info message. This is a special info message. This is a special info message. This is a special info message. This is a special info message. This is a special info message. </div>
 
 And here's the shortcode:
 

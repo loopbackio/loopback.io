@@ -6,14 +6,14 @@ toc: false
 {% include custom/langconfigs.html %}
 
 {% if page.trans_complete == false %}
-  <div class="alert alert-danger" role="alert">
+  <div class="alert alert-danger " role="alert">
     <p><i class="fa fa-exclamation-circle"></i> <b>Warning:</b>
   This {{language}} translation is incomplete.</p>
 
     <p>For information on how to help with translating content, see <a href="/doc/en/contrib/Translating-articles.html">Translating articles</a></p>
   </div>
 {% else %}
-  <div markdown="span" class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i> <b>This is a community translation into {{language}}</b>. For the latest information, see the <a href="{{ en_url }}">English version</a>.
+  <div markdown="span" class="alert alert-success " role="alert"><i class="fa fa-check-square-o"></i> <b>This is a community translation into {{language}}</b>. For the latest information, see the <a href="{{ en_url }}">English version</a>.
   </div>
 {% endif %}
 

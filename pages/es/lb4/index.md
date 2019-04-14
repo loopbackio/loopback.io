@@ -1,10 +1,10 @@
 ---
-title: "LoopBack - español"
+title: 'LoopBack - español'
 layout: translation
-sidebar: es_lb2_sidebar
+sidebar: es_lb4_sidebar
 lang: es
 tags:
-permalink: /doc/es/lb2/index.html
+permalink: /doc/es/lb4/index.html
 summary: Por favor ayuda a traducir la documentación en español.
 ---
 

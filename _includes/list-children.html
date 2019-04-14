@@ -1,6 +1,6 @@
 {% for item in include.in.children %}
   {% if item.title == page.title %}
-  <ul>
+  <ul class="test">
     {% for article in item.children %}
       <li><a href="{{article.url}}">{{article.title}}</a> </li>
     {% endfor %}

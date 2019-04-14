@@ -26,21 +26,23 @@
 <body>
 {% include topnav.html %}
 <!-- Page Content -->
-<div class="container">
+<div class="container-fluid">
     <!-- Content Row -->
     <div class="row">
         <!-- Sidebar Column -->
-        <nav class="col-md-3 sidebar-col">
+        <nav class="col-md-3 bg-dark sidebar-col">
           {% include sidebar.html %}
         </nav>
         <!-- Content Column -->
-        <div class="col-md-9">
+        <div  id="Article" class="col-xl-8 col-md-9">
             {{content}}
         </div>
         <!-- /.row -->
 </div>
 <!-- /.container -->
+
     </div>
+{% include footer.html %}
 </body>
 
 </html>

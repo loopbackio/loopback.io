@@ -15,17 +15,17 @@ pick up the changes (i.e. Jekyll won't pick up the changes incrementally if you 
 
 ## Location
 
-Sidebars are defined in YAML files in the `_data/sidebars` directory.  They are
+Sidebars are defined in YAML files in the `_data/sidebars` directory. They are
 
-|File name| Description|
-|-------|---------|
-| lb2_sidebar.yml | LoopBack 2.x |
-| lb3_sidebar.yml | LoopBack 3.x |
-| lb4_sidebar.yml | LoopBack 4 |
-| home_sidebar.yml | Sidebar for [home page](http://loopback.io/doc/index.html) and 404 page. |
-| contrib_sidebar.yml | For "Contributing to LoopBack" |
-| community_sidebar.yml | For "Community projects" |
-| xx_lb2_sidebar.yml | Localized sidebar for language "xx" (e.g. "es" for Spanish).
+| File name             | Description                                                              |
+| --------------------- | ------------------------------------------------------------------------ |
+| lb2_sidebar.yml       | LoopBack 2.x                                                             |
+| lb3_sidebar.yml       | LoopBack 3.x                                                             |
+| lb4_sidebar.yml       | LoopBack 4                                                               |
+| home_sidebar.yml      | Sidebar for [home page](http://loopback.io/doc/index.html) and 404 page. |
+| contrib_sidebar.yml   | For "Contributing to LoopBack"                                           |
+| community_sidebar.yml | For "Community projects"                                                 |
+| xx_lb2_sidebar.yml    | Localized sidebar for language "xx" (e.g. "es" for Spanish).             |
 
 {% include note.html content="
 [`lb4_sidebar.yml`](https://github.com/strongloop/loopback-next/blob/master/docs/site/sidebars/lb4_sidebar.yml) is sourced from [loopback-next](http://github.com/strongloop/loopback-next/)
@@ -37,19 +37,19 @@ To add a new sidebar, you must add the sidebar's base file name to the list in `
 
 ```yaml
 sidebars:
-- lb2_sidebar
-- lb3_sidebar
-- lb4_sidebar
-- contrib_sidebar
-- community_sidebar
-- es_lb2_sidebar
-- fr_lb2_sidebar
-- ja_lb2_sidebar
-- ko_lb3_sidebar
-- ko_lb2_sidebar
-- ru_lb2_sidebar
-- zh_lb2_sidebar
-- pt-br_lb2_sidebar
+  - lb2_sidebar
+  - lb3_sidebar
+  - lb4_sidebar
+  - contrib_sidebar
+  - community_sidebar
+  - es_lb4_sidebar
+  - fr_lb2_sidebar
+  - ja_lb2_sidebar
+  - ko_lb3_sidebar
+  - ko_lb2_sidebar
+  - ru_lb2_sidebar
+  - zh_lb2_sidebar
+  - pt-br_lb2_sidebar
 ```
 
 ## Configuring the sidebar
@@ -58,11 +58,12 @@ The docs for each version of LoopBack uses a different sidebar. Additionally, th
 
 The top navigation remains the same, because it allows users to navigate across products. But the sidebar navigation adapts to the product.
 
-Because each product uses a different sidebar, you'll need to set up your sidebars. The  `_includes/custom/sidebarconfigs.html` file controls which sidebar gets associated with which product.
+Because each product uses a different sidebar, you'll need to set up your sidebars. The `_includes/custom/sidebarconfigs.html` file controls which sidebar gets associated with which product.
 
 The `sidebarconfigs.html` file uses simple `if elsif` logic to set a variable that the `sidebar.html` file uses to read the sidebar data file. The code looks like this:
 
 {% raw %}
+
 ```liquid
 {% if page.sidebar == "home_sidebar" %}
   {% assign sidebar = site.data.sidebars.home_sidebar %}
@@ -79,14 +80,15 @@ The `sidebarconfigs.html` file uses simple `if elsif` logic to set a variable th
 
   {% else %}
     {% assign sidebar = site.data.sidebars.home_sidebar %}
-  {% endif %}    
+  {% endif %}
 ```
+
 {% endraw %}
 
 In each page's frontmatter, you must specify the sidebar you want that page to use. Here's an example of the page frontmatter showing the sidebar property:
 
-<pre>
----
+## <pre>
+
 title: Alerts
 tags: [formatting]
 keywords: notes, tips, cautions, warnings, admonitions
@@ -94,7 +96,9 @@ keywords: notes, tips, cautions, warnings, admonitions
 summary: "You can insert notes, tips, warnings, and important alerts in your content. These notes are stored as shortcodes made available through the linksrefs.hmtl include."
 <span class="red">sidebar: contrib_sidebar</span>
 permalink: /doc/en/contrib/alerts
+
 ---
+
 </pre>
 
 The `sidebar: contrib_sidebar` refers to the `_data/sidebars/contrib_sidebar.yml` file.
@@ -114,24 +118,21 @@ The sidebar data file uses a specific YAML syntax that you must follow. Follow t
 title: LoopBack 3.x
 url: index.html
 children:
+  - title: 'Installation'
+    url: Installation.html
+    output: 'web, pdf'
+    children:
+      - title: 'Installation troubleshooting'
+        url: Installation-troubleshooting.html
+        output: 'web, pdf'
 
-- title: 'Installation'
-  url: Installation.html
-  output: 'web, pdf'
-  children:
-
-  - title: 'Installation troubleshooting'
-    url: Installation-troubleshooting.html
+  - title: '3.0 Release Notes'
+    url: 3.0-Release-Notes.html
     output: 'web, pdf'
 
-- title: '3.0 Release Notes'
-  url: 3.0-Release-Notes.html
-  output: 'web, pdf'
-
-- title: 'Migrating apps to v3'
-  url: Migrating-to-3.0.html
-  output: 'web, pdf'
-...
+  - title: 'Migrating apps to v3'
+    url: Migrating-to-3.0.html
+    output: 'web, pdf'
 ```
 
 Each item must contain a `title`, `url`, and `output` property. An item (article) with sub-items (children) must have `children:` and the sub-items must be indented two spaces under it.

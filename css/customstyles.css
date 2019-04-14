@@ -1,6 +1,6 @@
-body {
+/*body {
     font-size:15px;
-}
+}*/
 
 .bs-callout {
     padding: 20px;
@@ -267,7 +267,7 @@ table tr td {
 p.external a {
     text-align:right;
     font-size:12px;
-    font-color: #0088cc;
+    color: #0088cc;
     display:inline;
 }
 
@@ -728,7 +728,7 @@ ol.series li {
     text-align: center;
     margin-bottom: 20px;
     font-family: courier;
-    font-color: silver;
+    color: silver;
     color: #444;
     display:block;
 }

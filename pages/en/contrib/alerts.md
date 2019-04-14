@@ -72,7 +72,7 @@ They function the same except they have a different color, icon, and alert word.
 These alerts leverage includes stored in the `_includes` folder. The `content` option is a parameter that you pass to the include. In the include, the parameter is passed like this:
 
 ```
-{% raw %}<div markdown="span" class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> {{include.content}}{% endraw %}</div>
+{% raw %}<div markdown="span" class="alert alert-info " role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> {{include.content}}{% endraw %}</div>
 ```
 
 The content in `content="This is my note."` gets inserted into the `{% raw %}{{include.content}}}{% endraw %}` part of the template. You can follow this same pattern to build additional includes. See this [Jekyll screencast on includes](http://jekyll.tips/jekyll-casts/includes/) or [this screencast](https://www.youtube.com/watch?v=TJcn_PJ2100) for more information.

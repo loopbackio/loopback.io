@@ -13,7 +13,7 @@ toc: false
   <style>h1:not(.post-title-main) { display: none; }</style>
 
   {{content}}
-  <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> This page was generated from the <a href="https://github.com/strongloop/{{repo-branch}}">{{page.source}} README</a>.</div>
+  <div class="alert alert-info " role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> This page was generated from the <a href="https://github.com/strongloop/{{repo-branch}}">{{page.source}} README</a>.</div>
   
   {% capture included-readme %}{% include_relative readmes/{{page.source}}.md %}{% endcapture %}
   {{ included-readme | markdownify }}

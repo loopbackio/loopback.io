@@ -1,4 +1,3 @@
-
 output: web
 # this property is useful for conditional filtering of content that is separate from the PDF.
 
@@ -59,10 +58,10 @@ highlighter: rouge
 
 markdown: kramdown
 kramdown:
- input: GFM
- auto_ids: true
- hard_wrap: false
- syntax_highlighter: rouge
+  input: GFM
+  auto_ids: true
+  hard_wrap: false
+  syntax_highlighter: rouge
 # filter used to process markdown. note that kramdown differs from github-flavored markdown in some subtle ways
 
 collections:
@@ -71,30 +70,27 @@ collections:
 # collections are declared here. this renders the content in _tooltips and processes it, but doesn't output it as actual files in the output unless you change output to true
 
 defaults:
-  -
-    scope:
-      path: ""
-      type: "pages"
+  - scope:
+      path: ''
+      type: 'pages'
     values:
-      layout: "page"
+      layout: 'page'
       comments: true
       search: true
       sidebar: lb3_sidebar
-  -
-    scope:
-      path: ""
-      type: "tooltips"
+  - scope:
+      path: ''
+      type: 'tooltips'
     values:
-      layout: "page"
+      layout: 'page'
       comments: true
       search: true
       tooltip: true
-  -
-    scope:
-      path: ""
-      type: "posts"
+  - scope:
+      path: ''
+      type: 'posts'
     values:
-      layout: "post"
+      layout: 'post'
       comments: true
       search: true
       sidebar: home_sidebar
@@ -102,22 +98,22 @@ defaults:
 # these are defaults used for the frontmatter for these file types
 
 sidebars:
-- lb2_sidebar
-- lb3_sidebar
-- lb4_sidebar
-- contrib_sidebar
-- community_sidebar
-- security_sidebar
-- es_lb2_sidebar
-- fr_lb2_sidebar
-- ja_lb3_sidebar
-- ja_lb2_sidebar
-- ko_lb3_sidebar
-- ko_lb2_sidebar
-- ru_lb2_sidebar
-- zh_lb2_sidebar
-- pt-br_lb2_sidebar
-- pt-br_lb4_sidebar
+  - lb2_sidebar
+  - lb3_sidebar
+  - lb4_sidebar
+  - contrib_sidebar
+  - community_sidebar
+  - security_sidebar
+  - es_lb4_sidebar
+  - fr_lb2_sidebar
+  - ja_lb3_sidebar
+  - ja_lb2_sidebar
+  - ko_lb3_sidebar
+  - ko_lb2_sidebar
+  - ru_lb2_sidebar
+  - zh_lb2_sidebar
+  - pt-br_lb2_sidebar
+  - pt-br_lb4_sidebar
 
 # description: "Documentation for the LoopBack framework"
 # the description is used in the feed.xml file
