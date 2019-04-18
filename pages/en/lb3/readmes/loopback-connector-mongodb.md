@@ -96,6 +96,20 @@ For example, for production, use `datasources.production.json` as follows (for e
 
 For more information on setting data source configurations for different environments, see [Environment-specific configuration](https://loopback.io/doc/en/lb3/Environment-specific-configuration.html#data-source-configuration).
 
+### Using the mongodb+srv protocol
+MongoDB supports a protocol called `mongodb+srv` for connecting to replica sets without having to give the hostname of every server in the replica set.
+To use `mongodb+srv` as the protocol set the `protocol` connection property in the datasource.json to `mongodb+srv`. For example:
+
+```javascript
+"mydb": {
+  "host": "myserver",
+  "database": "test",
+  "protocol": "mongodb+srv",
+  "connector": "mongodb"
+}
+```
+Note: the port is not specified when using the `mongodb+srv` protocol and will be ignored if given.
+
 ## Security Considerations
 
 MongoDB Driver allows the `$where` operator to pass in JavaScript to execute on the Driver which can be used for NoSQL Injection. See [MongoDB: Server-side JavaScript](https://docs.mongodb.com/manual/core/server-side-javascript/) for more on this MongoDB feature.
