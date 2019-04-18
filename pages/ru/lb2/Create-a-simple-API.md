@@ -334,4 +334,4 @@ Node:
 
 Путем простых шагов, используя  LoopBack, вы создали CoffeeShop модель, определили ее свойства а затем вывели ее через  REST. 
 
-<div style="font-size: 11pt; border: 1px solid #cccccc; background-color: #EBF5EB; padding: 10px; border-radius: 3px; margin: 10px 50px 10px 50px;">Next: [Используя API Explorer](5310601.html), вы можете рассмотреть REST API модель, которую вы только что создали более подробно и осуществить другие операции.</div>
+<div class="p-1" style=" margin: 10px 50px 10px 50px;">Next: [Используя API Explorer](5310601.html), вы можете рассмотреть REST API модель, которую вы только что создали более подробно и осуществить другие операции.</div>

@@ -165,4 +165,4 @@ $ slc run
 
 Когда вы загрузите [http://0.0.0.0:3000/](http://0.0.0.0:3000/) теперь вместо JSON состояния вы увидите вот это:
 
-<div style="font-size: 11pt; border: 1px solid #cccccc; background-color: #EBF5EB; padding: 10px; border-radius: 3px; margin: 10px 50px 10px 50px;"><span style="font-weight: bold;">Next: В [Настройка маршрутизации Express](5310605.html), вы добавите простой обработчик маршрута также, как вы сделали бы это в Express приложении.</div>
+<div style="padding: 10px; margin: 10px 50px 10px 50px;"><span style="font-weight: bold;">Next: В [Настройка маршрутизации Express](5310605.html), вы добавите простой обработчик маршрута также, как вы сделали бы это в Express приложении.</div>

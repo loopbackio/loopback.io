@@ -92,4 +92,4 @@ $ npm install
 
 Для получения более подробной информации, см.  [Удаленные методы](Remote-methods_5310632.html).
 
-<div style="font-size: 11pt; border: 1px solid #cccccc; background-color: #EBF5EB; padding: 10px; border-radius: 3px; margin: 10px 50px 10px 50px;">Next: В [Добавление статической страницы](5310604.html), вы добавите Express промежуточное ПО для обслуживания статиеского контента такого, ак HTML/CSS, картинки, и JavaScript.</div>
+<div class="p-1" style="padding: 10px; margin: 10px 50px 10px 50px;">Next: В [Добавление статической страницы](5310604.html), вы добавите Express промежуточное ПО для обслуживания статиеского контента такого, ак HTML/CSS, картинки, и JavaScript.</div>

@@ -259,7 +259,7 @@ body {
     -ms-text-size-adjust: none;
     text-size-adjust: none;
         color: #000;
-        background: #272727;
+        background: #2e2e2e;
         margin: 0;
         padding: 0;
 }
@@ -1432,7 +1432,7 @@ td.col1 {
                         /*Article Begins*/
 
 #Article{
-    color:#fff;
+    color:#dedede;
     padding: 20px 40px 40px 40px;
 }
 
@@ -1443,6 +1443,10 @@ td.col1 {
   margin-top: 2rem;
   font-size: 2rem;
   color:#a6e573;
+  display: block;
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+  background-color: #272727;
 }
 
 #Article h2, #Article h3{
@@ -1451,9 +1455,10 @@ td.col1 {
     padding-left: 1rem;
     margin-top: 3rem;
     margin-bottom: 10px;
-    border-left: 3px solid #a6e573;
+    background-color: #272727;
+/*    border-left: 3px solid #a6e573;
     border-top: 1px solid;
-    border-right: 1px solid;
+    border-right: 1px solid;*/
 }
 #Article h3{
     border-top: none;
@@ -1466,7 +1471,7 @@ td.col1 {
 }
 
 #Article-sub-content{
-    border: #272727 10px solid;
+    border: #2e2e2e 10px solid;
 }
 
 .post-title-main{
@@ -1616,14 +1621,12 @@ pre.highlight{
 
     border-radius: .25rem!important;
 
-    border: 1px none;
-    border-bottom: 1px solid #dee2e6!important;
-    border-top: 1px solid #dee2e6!important;
+    border: 1px solid #fff!important;
 
     -webkit-box-flex: 0;
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
-    max-width: 100%;
+    max-width: 80%;
 
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1632,12 +1635,14 @@ pre.highlight{
     flex-wrap: wrap;
     margin-top:1rem;
 
-    width: 100%;
-    min-height: 1px;
+    color:inherit;
+    font-style: italic;
+    background-color: #404040;
 }
 
 .alert p {
     margin: 0;
+    max-width: 90%;
 }
 
 i.fa-warning, i.fa-info {
@@ -1672,7 +1677,7 @@ i.fa-warning, i.fa-info {
     padding-right: 15px;
     padding-left: 15px;
 }
-
+/*
 .alert.alert-warning > p {
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
@@ -1680,7 +1685,6 @@ i.fa-warning, i.fa-info {
 }
 
 .alert-success {
-    background: none;
     color:#c3e6cb;
     border-color: #c3e6cb !important;
 }
@@ -1696,19 +1700,15 @@ i.fa-warning, i.fa-info {
     border-color: #fff3cd !important;
 }
 .alert-info {
-    background: none;
-    color:#77e2f5;
-    border-color: #77e2f5 !important;
+    content:"\f071";
 }
-.alert.alert-info i,
-.alert.alert-success i,
-.alert.alert-danger i,
-.alert.alert-warning i {
-    display: block;
+.alert::alert {
+    color: white;
+    font: normal normal normal 14px/1 FontAwesome;
+    display: inline-block;
     float: left;
     font-size: 2rem;
     padding: .5rem 1rem .5rem .5rem;
-    color:white;
 }
 
             /*       Ends Alerts       */
