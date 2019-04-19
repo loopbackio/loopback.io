@@ -118,5 +118,6 @@ sidebars:
 # description: "Documentation for the LoopBack framework"
 # the description is used in the feed.xml file
 
+baseurl: /loopback.io
 # needed for sitemap.xml file only
 url: https://lancerider.github.io/loopback.io/
