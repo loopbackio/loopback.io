@@ -1,0 +1,450 @@
+## definition of `menuitem`===========
+# title: string
+# url: string
+# output: [ enum{web, pdf} ] (expressed as comma separated string in YAML)
+# children?: [ menuitem ]
+
+## top level property=================
+# entries: [ menuitem ]
+
+title: LoopBack 4
+url: /doc/fr/lb4/index.html
+translated: true
+children:
+
+  - title: 'Getting started'
+    url: /doc/fr/lb4/Getting-started.html
+    output: 'web, pdf'
+    translated: false
+
+  - title: 'Tutorials'
+    url: /doc/fr/lb4/Tutorials.html
+    output: 'web, pdf'
+    translated: false
+    children:
+
+      - title: 'Todo Tutorial'
+        url: /doc/fr/lb4/todo-tutorial.html
+        output: 'web, pdf'
+        translated: false
+        children:
+
+          - title: 'Create your app scaffolding'
+            url: /doc/fr/lb4/todo-tutorial-scaffolding.html
+            output: 'web, pdf'
+            translated: false
+
+          - title: 'Add the Todo model'
+            url: /doc/fr/lb4/todo-tutorial-model.html
+            output: 'web, pdf'
+            translated: false
+
+          - title: 'Add a Datasource'
+            url: /doc/fr/lb4/todo-tutorial-datasource.html
+            output: 'web, pdf'
+            translated: false
+
+          - title: 'Add a Repository'
+            url: /doc/fr/lb4/todo-tutorial-repository.html
+            output: 'web, pdf'
+            translated: false
+
+          - title: 'Add a Controller'
+            url: /doc/fr/lb4/todo-tutorial-controller.html
+            output: 'web, pdf'
+            translated: false
+
+          - title: 'Putting it all together'
+            url: /doc/fr/lb4/todo-tutorial-putting-it-together.html
+            output: 'web, pdf'
+            translated: false
+
+          - title: 'Bonus: Integrate with a geo-coding service'
+            url: /doc/fr/lb4/todo-tutorial-geocoding-service.html
+            output: 'web, pdf'
+            translated: false
+
+      - title: 'TodoList Tutorial'
+        url: /doc/fr/lb4/todo-list-tutorial.html
+        output: 'web, pdf'
+        translated: false
+        children:
+
+          - title: 'Add TodoList Model'
+            url: /doc/fr/lb4/todo-list-tutorial-model.html
+            output: 'web, pdf'
+            translated: false
+
+          - title: 'Add TodoList Repository'
+            url: /doc/fr/lb4/todo-list-tutorial-repository.html
+            output: 'web, pdf'
+            translated: false
+
+          - title: 'Add TodoList Controller'
+            url: /doc/fr/lb4/todo-list-tutorial-controller.html
+            output: 'web, pdf'
+            translated: false
+
+      - title: 'SOAP Web Service Tutorial'
+        url: /doc/fr/lb4/soap-calculator-tutorial.html
+        output: 'web, pdf'
+        translated: false
+        children:
+
+          - title: 'SOAP Web Service Overview'
+            url: /doc/fr/lb4/soap-calculator-tutorial-web-service-overview.html
+            output: 'web, pdf'
+            translated: false
+
+          - title: 'App scaffolding'
+            url: /doc/fr/lb4/soap-calculator-tutorial-scaffolding.html
+            output: 'web, pdf'
+            translated: false
+
+          - title: 'Add a Datasource'
+            url: /doc/fr/lb4/soap-calculator-tutorial-add-datasource.html
+            output: 'web, pdf'
+            translated: false
+
+          - title: 'Add a Service'
+            url: /doc/fr/lb4/soap-calculator-tutorial-add-service.html
+            output: 'web, pdf'
+            translated: false
+
+          - title: 'Add a Controller'
+            url: /doc/fr/lb4/soap-calculator-tutorial-add-controller.html
+            output: 'web, pdf'
+            translated: false
+
+          - title: 'Run and Test it'
+            url: /doc/fr/lb4/soap-calculator-tutorial-run-and-test.html
+            output: 'web, pdf'
+            translated: false
+
+      - title: 'Creating an Express Application with LoopBack REST API'
+        url: /doc/fr/lb4/express-with-lb4-rest-tutorial.html
+        output: 'web, pdf'
+        translated: false
+
+  - title: 'Examples'
+    url: /doc/fr/lb4/Examples.html
+    output: 'web, pdf'
+    translated: false
+
+  - title: 'Key concepts'
+    url: /doc/fr/lb4/Concepts.html
+    output: 'web, pdf'
+    translated: false
+    children:
+
+      - title: 'Application'
+        url: /doc/fr/lb4/Application.html
+        output: 'web, pdf'
+        translated: false
+
+      - title: 'Server'
+        url: /doc/fr/lb4/Server.html
+        output: 'web, pdf'
+        translated: false
+
+      - title: 'Context'
+        url: /doc/fr/lb4/Context.html
+        output: 'web, pdf'
+        translated: false
+
+      - title: 'Binding'
+        url: /doc/fr/lb4/Binding.html
+        output: 'web, pdf'
+        translated: false
+
+      - title: 'Dependency injection'
+        url: /doc/fr/lb4/Dependency-injection.html
+        output: 'web, pdf'
+        translated: false
+        children:
+
+          - title: 'Reserved binding keys'
+            url: /doc/fr/lb4/Reserved-binding-keys.html
+            output: 'web, pdf'
+            translated: false
+
+      - title: 'Controllers'
+        url: /doc/fr/lb4/Controllers.html
+        output: 'web, pdf'
+        translated: false
+
+      - title: 'DataSources'
+        url: /doc/fr/lb4/DataSources.html
+        output: 'web, pdf'
+        translated: false
+
+      - title: 'Routes'
+        url: /doc/fr/lb4/Routes.html
+        output: 'web, pdf'
+
+      - title: 'Sequence'
+        url: /doc/fr/lb4/Sequence.html
+        output: 'web, pdf'
+        translated: false
+        children:
+
+          - title: 'Routing requests'
+            url: /doc/fr/lb4/Routing-requests.html
+            output: 'web, pdf'
+            translated: false
+
+          - title: 'Parsing requests'
+            url: /doc/fr/lb4/Parsing-requests.html
+            output: 'web, pdf'
+            translated: false
+
+      - title: 'Model'
+        url: /doc/fr/lb4/Model.html
+        output: 'web, pdf'
+        translated: false
+
+      - title: 'Repositories'
+        url: /doc/fr/lb4/Repositories.html
+        output: 'web, pdf'
+        translated: false
+
+      - title: 'Relations'
+        url: /doc/fr/lb4/Relations.html
+        output: 'web, pdf'
+        translated: false
+        children:
+
+          - title: 'HasMany Relation'
+            url: /doc/fr/lb4/HasMany-relation.html
+            output: 'web, pdf'
+            translated: false
+
+          - title: 'BelongsTo Relation'
+            url: /doc/fr/lb4/BelongsTo-relation.html
+            output: 'web, pdf'
+
+          - title: 'HasOne Relation'
+            url: /doc/fr/lb4/hasOne-relation.html
+            output: 'web, pdf'
+            translated: false
+
+      - title: 'Decorators'
+        url: /doc/fr/lb4/Decorators.html
+        output: 'web, pdf'
+        translated: false
+        children:
+
+          - title: 'OpenAPI Decorators'
+            url: /doc/fr/lb4/Decorators_openapi.html
+            output: 'web, pdf'
+            translated: false
+
+          - title: 'Dependency Injection Decorator'
+            url: /doc/fr/lb4/Decorators_inject.html
+            output: 'web, pdf'
+            translated: false
+
+          - title: 'Authentication Decorator'
+            url: /doc/fr/lb4/Decorators_authenticate.html
+            output: 'web, pdf'
+            translated: false
+
+          - title: 'Repository Decorators'
+            url: /doc/fr/lb4/Decorators_repository.html
+            output: 'web, pdf'
+            translated: false
+
+      - title: 'Error handling'
+        url: /doc/fr/lb4/Error-handling.html
+        output: 'web, pdf'
+        translated: false
+
+  - title: 'How-tos'
+    url: /doc/fr/lb4/How-tos.html
+    output: 'web, pdf'
+    translated: false
+    children:
+
+      - title: 'Exposing GraphQL APIs'
+        url: /doc/fr/lb4/exposing-graphql-apis.html
+        output: 'web, pdf'
+        translated: false
+
+      - title: 'Deploying to IBM Cloud'
+        url: /doc/fr/lb4/Deploying-to-IBM-Cloud.html
+        output: 'web, pdf'
+        translated: false
+
+      - title: 'Deploying to Kubernetes on IBM Cloud'
+        url: /doc/fr/lb4/deploying_to_ibm_cloud_kubernetes.html
+        output: 'web, pdf'
+        translated: false
+
+      - title: 'Deploying with pm2 and nginx'
+        url: /doc/fr/lb4/deploying-with-pm2-and-nginx.html
+        output: 'web, pdf'
+        translated: false
+
+      - title: 'Serving static files'
+        url: /doc/fr/lb4/Serving-static-files.html
+        output: 'web, pdf'
+        translated: false
+
+      - title: 'Database Migrations'
+        url: /doc/fr/lb4/Database-migrations.html
+        output: 'web, pdf'
+        translated: false
+
+  - title: 'Booting an Application'
+    url: /doc/fr/lb4/Booting-an-Application.html
+    output: 'web, pdf'
+    translated: false
+
+  - title: 'Using Components'
+    url: /doc/fr/lb4/Using-components.html
+    output: 'web, pdf'
+    translated: false
+    children:
+
+      - title: Self-hosted REST API Explorer
+        url: /doc/fr/lb4/Self-hosted-rest-api-explorer.html
+        output: 'web, pdf'
+        translated: false
+
+  - title: 'Calling other APIs'
+    url: Calling-other-APIs-and-web-services.html
+    output: 'web, pdf'
+    translated: false
+
+  - title: 'For LoopBack 3.x users'
+    url: /doc/fr/lb4/LoopBack-3.x.html
+    output: 'web, pdf'
+    translated: false
+
+  - title: 'Command-line interface'
+    url: /doc/fr/lb4/Command-line-interface.html
+    output: 'web, pdf'
+    translated: false
+    children:
+
+      - title: 'Application generator'
+        url: /doc/fr/lb4/Application-generator.html
+        output: 'web, pdf'
+        translated: false
+
+      - title: 'Controller generator'
+        url: /doc/fr/lb4/Controller-generator.html
+        output: 'web, pdf'
+        translated: false
+
+      - title: 'DataSource generator'
+        url: /doc/fr/lb4/DataSource-generator.html
+        output: 'web, pdf'
+        translated: false
+
+      - title: 'Model generator'
+        url: /doc/fr/lb4/Model-generator.html
+        output: 'web, pdf'
+        translated: false
+
+      - title: 'Repository generator'
+        url: /doc/fr/lb4/Repository-generator.html
+        output: 'web, pdf'
+        translated: false
+
+      - title: 'Service generator'
+        url: /doc/fr/lb4/Service-generator.html
+        output: 'web, pdf'
+        translated: false
+
+      - title: 'OpenAPI generator'
+        url: /doc/fr/lb4/OpenAPI-generator.html
+        output: 'web, pdf'
+        translated: false
+
+      - title: 'Extension generator'
+        url: /doc/fr/lb4/Extension-generator.html
+        output: 'web, pdf'
+        translated: false
+
+      - title: 'Download examples'
+        url: /doc/fr/lb4/Download-examples.html
+        output: 'web, pdf'
+        translated: false
+
+  - title: 'Best practices'
+    url: /doc/fr/lb4/Best-practices.html
+    output: 'web, pdf'
+    translated: false
+    children:
+
+      - title: 'Defining the API using code-first approach'
+        url: /doc/fr/lb4/Defining-the-API-using-code-first-approach.html
+        output: 'web, pdf'
+        translated: false
+
+      - title: 'Defining your testing strategy'
+        url: /doc/fr/lb4/Defining-your-testing-strategy.html
+        output: 'web, pdf'
+        translated: false
+
+      - title: 'Testing your application'
+        url: /doc/fr/lb4/Testing-your-application.html
+        output: 'web, pdf'
+        translated: false
+
+  - title: 'Extending LoopBack 4'
+    url: /doc/fr/lb4/Extending-LoopBack-4.html
+    output: 'web, pdf'
+    translated: false
+    children:
+
+      - title: 'Creating Components'
+        url: /doc/fr/lb4/Creating-components.html
+        output: 'web, pdf'
+        translated: false
+
+      - title: 'Creating Decorators'
+        url: /doc/fr/lb4/Creating-decorators.html
+        output: 'web, pdf'
+
+      - title: 'Creating Servers'
+        url: /doc/fr/lb4/Creating-servers.html
+        output: 'web, pdf'
+        translated: false
+
+      - title: 'Extending Request Body Parsing'
+        url: /doc/fr/lb4/Extending-request-body-parsing.html
+        output: 'web, pdf'
+        translated: false
+
+      - title: 'Testing your extension'
+        url: /doc/fr/lb4/Testing-your-extension.html
+        output: 'web, pdf'
+        translated: false
+
+  - title: 'Crafting LoopBack 4'
+    url: /doc/fr/lb4/Crafting-LoopBack-4.html
+    output: 'web, pdf'
+    translated: false
+
+  - title: 'FAQ'
+    url: /doc/fr/lb4/FAQ.html
+    output: 'web, pdf'
+    translated: false
+
+  - title: 'Reference'
+    url: /doc/fr/lb4/Reference.html
+    output: 'web, pdf'
+    translated: false
+    children:
+
+      - title: 'Glossary'
+        url: /doc/fr/lb4/Glossary.html
+        output: 'web, pdf'
+        translated: false
+
+      - title: 'Considerations for GDPR readiness'
+        url: /doc/fr/lb4/Deploy-for-GDPR-readiness.html
+        output: 'web, pdf'
+        translated: false
