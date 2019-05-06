@@ -70,6 +70,10 @@ children:
       url: todo-list-tutorial-controller.html
       output: 'web, pdf'
 
+    - title: 'Running on relational databases'
+      url: todo-list-tutorial-sqldb.html
+      output: 'web, pdf'
+
   - title: 'SOAP Web Service Tutorial'
     url: soap-calculator-tutorial.html
     output: 'web, pdf'
@@ -139,6 +143,10 @@ children:
 
   - title: 'Controllers'
     url: Controllers.html
+    output: 'web, pdf'
+
+  - title: 'Components'
+    url: Components.html
     output: 'web, pdf'
 
   - title: 'DataSources'
