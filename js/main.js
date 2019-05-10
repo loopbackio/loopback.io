@@ -1,3 +1,8 @@
+// Copyright IBM Corp. 2014. All Rights Reserved.
+// Node module: loopback.io-workflow-scripts
+// This file is licensed under the MIT License.
+// License text available at https://opensource.org/licenses/MIT
+
 $(document).ready(function() {
   $(".js-body").prepend('<nav class="c-nav js-nav"></nav>');
   $(".js-wrapper").append('<div class="_cover js-cover"></div>');
