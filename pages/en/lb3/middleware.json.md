@@ -37,7 +37,7 @@ Here is the default version created by the [Application generator](Application-g
     "helmet#hsts": {
       "params": {
         "maxAge": 0,
-        "includeSubdomains": true
+        "includeSubDomains": true
       }
     },
     "helmet#hidePoweredBy": {},
