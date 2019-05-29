@@ -1,0 +1,69 @@
+.oasgraph-masthead {
+    text-align: center;
+    color: var(--color-white);
+    background: #009cff; /* backup */
+    background-image: url("../images/oasgraph/hero-banner-background-2x.png"), linear-gradient(to bottom, #009cff, #3f5dff);
+    padding: 150px 0px 80px 0px;
+    z-index: 5;
+    position: relative;
+    overflow: hidden;
+}
+
+.oasgraph-masthead h1 {
+  padding-bottom: 1rem;
+}
+
+img.feature-image {
+  max-width: 150px;
+  max-height: 100px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+img.help-image {
+  max-width: 120px;
+  max-height: 80px;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+img.get-started-image {
+  max-width: 240px;
+  max-height: 160px;
+}
+
+hr.oasgraph-hr {
+  padding: 0px;
+  margin: 0px;
+}
+
+section.odd-section {
+  background-color: var(--color-white-xd);
+}
+section.even-section {
+  background-color: var(--color-white-d);
+}
+
+a.oasgraph-card {
+  width: 100%;
+  display: inline-block;
+  border-radius: 5px;
+  padding: 10px 30px;
+  border-top: 2px solid var(--color-blue-d);
+  box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.15);
+  text-align: left;
+  color: var(--color-gray-xd);
+  text-decoration: none;
+  margin-bottom: 1rem;
+}
+
+a.oasgraph-card:hover h5 {
+  color: var(--color-blue-d);
+}
+
+button.oasgraph-guide-button {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
