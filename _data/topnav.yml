@@ -64,3 +64,5 @@ topnav_dropdowns:
           url: /doc/zh/lb2/
         - title: "Français (v4)"
           url: /doc/fr/lb4/
+        - title: "日本語 (v4)"
+          url: /doc/ja/lb4/
