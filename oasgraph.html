@@ -5,14 +5,16 @@
     <meta charset="utf-8">
     <meta name="description" content="">
     <meta name="author" content="">
+    <!-- not working -->
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 
-    <title>LoopBack</title>
+    <title>OASGraph</title>
 
     <!-- Bootstrap core CSS -->
     <link href="dist/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans" rel="stylesheet">
     <link href="css/loopback.css" rel="stylesheet">
+    <link href="css/oasgraph.css" rel="stylesheet">
 
     <!-- Site Analytics -->
     <script type="text/javascript">
@@ -36,7 +38,7 @@
 <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="index.html">
             <img src="images/global/loopback-full-logo-blue.svg" width=150px>
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -59,7 +61,7 @@
                     <a class="nav-link" href="resources.html">Resources</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="oasgraph.html">GraphQL</a>
+                    <a class="nav-link highlighted" href="oasgraph.html">GraphQL</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="https://strongloop.com/strongblog/tag_LoopBack.html" target="_blank">Blog</a>
@@ -68,147 +70,129 @@
                     <a class="nav-link" href="https://ibm.biz/apitest" target="_blank">Test Your APIs</a>
                 </li>
             </ul>
-
         </div>
     </nav>
-    
+
     <!-- Header -->
-    <div class="masthead">
-        <div class="container-fluid"></div>
-        <br>
-        <br>
-        <h1>LoopBack 4: Build Amazing APIs</h1>
-        <h5>LoopBack 4 is the next step in the evolution of LoopBack.</h5>
-        <img class="main-logo" src="images/global/loopback-mark-frame-white.svg"></img>
-        <br>
-        <br>
-        <div class="row text-center">
-            <div class="col-md-4">
-            </div>
-            <div class="col-md-4">
-                
-                <div class="btn btn-main" role="button" href="getting-started.html">
-                    <a class="main-btn-link" href="index.html"><h5>
-                        <p class="main-btn-text">LoopBack 4</p>
-                        <p class="main-btn-text2">(Active)</p>
-                    </h5></a>
-                    <a class="github-button" href="https://github.com/strongloop/loopback-next" data-icon="octicon-star" data-show-count="true"
-                        aria-label="Star strongloop/loopback-next on GitHub">Star</a>
-                </div>
-                <div class="btn btn-main" role="button">
-                    <a class="main-btn-link" href="/lb3"><h5>
-                        <p class="main-btn-text">LoopBack 3</p>
-                        <p class="main-btn-text2">(LTS)</p>    
-                    </h5></a>
-                    <a class="github-button" href="https://github.com/strongloop/loopback" data-icon="octicon-star" data-show-count="true"
-                        aria-label="Star strongloop/loopback on GitHub">Star</a>
-                </div>
-            </div>
-            <div class="col-md-4">
-            </div>
-        </div>
-        
+    <div class="oasgraph-masthead">
+        <h1>OASGraph</h1>
+        <h5>Take any OpenAPI Specification (OAS) and create a GraphQL interface</h5>
     </div>
 
-    <!-- Feature section -->
-    <section id="features">
-        <!-- new core subsection -->
-        <div class="container">
-            <div class="row text-center">
-                <div class="col-md-6">
-                    <h3 class="feature-heading">A Brand New Core</h3>
-                    <p class="p large">A brand new LoopBack core to deliver great extensibility and flexibility written in TypeScript/ES2017.</p>
-                </div>
-                <div class="col-md-6">
-                    <img src="images/homepage/core-illustration-2x.png" />
-                </div>
+    <!-- How it works section -->
+    <section class="odd-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <h3 class="text-center">How it works</h3>
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/KXUTmM6y-LM" allowfullscreen></iframe>
             </div>
+          </div>
         </div>
-        <!-- Open API subsection -->
-        <div class="container">
-            <div class="row text-center">
-                <div class="col-md-6">
-                    <img src="images/homepage/openAPI-illustration-2x.png" />
-                </div>
-                <div class="col-md-6" style="align-content: right">
-                    <h3 class="feature-heading">OpenAPI Spec Driven REST API</h3>
-                    <p class="p large">Create powerful APIs easily with a new creation experience for defining REST API's and handling API requests/responses.
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Extensibility subsection-->
-        <div class="container">
-            <div class="row text-center">
-                <div class="col-md-6">
-                    <h3 class="feature-heading">Unbelievably Extensible</h4>
-                        <p class="p large">A new, improved programming model with Dependency Injection and new concepts such as Components,
-                            Mixins, Repositories, etc. make this the most extensible version yet.
-                        </p>
-                </div>
-                <div class="col-md-6">
-                    <img src="images/homepage/extensibile-illustration-2x.png" />
-                </div>
-            </div>
-        </div>
-
-        <!-- OASGraph subsection -->
-        <div class="container">
-            <div class="row text-center">
-                <div class="col-md-6">
-                    <img src="images/homepage/conveyorbelt-2x.png" />
-                </div>
-                <div class="col-md-6" style="align-content: right">
-                    <h3 class="feature-heading">GraphQL Support</h3>
-                    <p class="p large">Using OASGraph, create a GraphQL interface for any REST API. <a href="oasgraph.html">Learn more...</a>
-                    </p>
-                </div>
-            </div>
-        </div>
+      </div>
     </section>
 
+    <hr class="oasgraph-hr">
+
+    <!-- Powerful functionality section -->
+    <section class="even-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <h3 class="text-center">Powerful functionality</h3>
+            <br/>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-12 col-lg-4 text-center">
+            <img class="feature-image" src="images/oasgraph/nested-data-2x.png" alt="Icon depcting nested data"/>
+            <h4>Nested data</h4>
+            <p>
+              Schemas and links defined in the OAS are used to compose data definitions. Furthermore, hierarchical path structures can be used to nest data via the <code>addSubOperation</code> option (<a href="https://github.com/strongloop/oasgraph#options" target="_blank">learn more...</a>).
+            </p>
+          </div>
+          <div class="col-sm-12 col-lg-4 text-center">
+            <img class="feature-image" src="images/oasgraph/data-sanitization-2x.png" alt="Icon depicting data sanitation"/>
+            <h4>API Sanitation</h4>
+            <p>
+              GraphQL-incompatible identifiers of your API are sanitized. For example, API parameters or data definitions with unsupported characters (e.g., <code>-</code>, <code>.</code>, <code>,</code>, <code>:</code>, <code>;</code>...) are removed.
+            </p>
+          </div>
+          <div class="col-sm-12 col-lg-4 text-center">
+            <img class="feature-image" src="images/oasgraph/authentication-2x.png" alt="Icon depicting authentication"/>
+            <h4>Authentication</h4>
+            <p>
+              OASGraph provides <em>viewers</em> to support passing API keys or basic auth credentials. OAuth 2.0 integration can be handled by the hosting application (<a href="https://github.com/strongloop/oasgraph#authentication" target="_blank">learn more...</a>).
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="oasgraph-hr">
+
+    <!-- Get started section -->
+    <section class="odd-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-8">
+            <h3>Get started</h3>
+            <h5>Ready to translate from REST to GraphQL? Let's get you started!</h5>
+            <a class="btn btn-secondary" style="padding-left:60px; padding-right:60px; top: 20%" role="button" href="getting-started-oasgraph.html">View Guide</a>
+          </div>
+          <div class="col-sm-12 col-md-4">
+            <img class="get-started-image float-right" src="images/oasgraph-getting-started/rocketship-2x.png" alt="Icon showing a rocket and depicting getting started"/>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="oasgraph-hr">
+
     <!-- How can we help -->
-    <section id="how-can-we-help">
+    <section class="even-section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h3 class="section-heading">How Can We Help?</h3>
-                    <p>We've curated resources to help you get started faster with LoopBack 4.</p>
+                    <p>We've curated resources to help you get started faster with OASGraph.</p>
                     <p style="height:36px"></p>
                 </div>
             </div>
+
             <div class="row text-center" style="justify-content: center">
-                <a class="col-lg-4 card" href="/doc">
-                    <h5 class="card-title">Documentation</h5>
-                    <p class="regular text-gray">Code with confidence by learning more about LoopBack 4 through our documentation.</p>
+              <div class="col-sm-12 col-md-6">
+                <a class="oasgraph-card" href="https://strongloop.com/strongblog/" target="_blank">
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <img class="help-image" src="images/oasgraph/blog-posts-2x.png" alt="Icon depicting blog"/>
+                    </div>
+                    <div class="col-sm-9">
+                      <h5 class="card-title">Blog posts</h5>
+                      <p class="regular text-gray">Visit our blog for all developer-related articles, tips, and advice.</p>
+                    </div>
+                  </div>
                 </a>
-                <a class="col-lg-4 card" href="https://strongloop.com/strongblog/tag_LoopBack.html" target="_blank">
-                    <h5 class="card-title">Stay in the Loop</h5>
-                    <p class="regular text-gray">Check out our LoopBack 4 blog posts that feature the latest news and updates.</p>
+              </div>
+
+              <div class="col-sm-12 col-md-6">
+                <a class="oasgraph-card" href="https://github.com/strongloop/oasgraph" target="_blank">
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <img class="help-image" src="images/oasgraph/git-repository-2x.png" alt="Icon depicting Git repository"/>
+                    </div>
+                    <div class="col-sm-9">
+                      <h5 class="card-title">Git repository</h5>
+                      <p class="regular text-gray">Learn from or contribute to our repository, complete with regularly updated documentation.</p>
+                    </div>
+                  </div>
                 </a>
-                <a class="col-lg-4 card" href="https://github.com/strongloop/loopback-next" target="_blank">
-                    <h5 class="card-title">Contribute to the development</h5>
-                    <p class="regular text-gray">Shape the future of LoopBack 4 to be more meaningful for our API creation experience.</p>
-                </a>
+              </div>
             </div>
         </div>
     </section>
-
-    <!-- Action section -->
-    <div class="action">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8">
-                    <h3 style="color:white">Ready to build amazing things?
-                        <br> Try LoopBack 4 now.</h3>
-                </div>
-                <div class="col-md-4">
-                    <a class="btn btn-primary" role="button" href="http://loopback.io/doc/en/lb4/Getting-started.html" target="_blank">Get Started With LoopBack 4</a>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <!-- footer -->
     <footer>

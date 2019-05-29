@@ -138,6 +138,21 @@ p.centered-regular {
   top: 50%;
 }
 
+.btn-main {
+  background-color: transparent;
+  border: solid 2px var(--color-white);
+  border-radius: 10px;
+  margin-left: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.btn-main:focus,
+.btn-main:hover {
+  background-color: var(--color-white);
+  color: var(--color-blue-xd);
+}
+
 .btn-primary:active,
 .btn-primary:focus,
 .btn-primary:hover {
@@ -346,4 +361,18 @@ footer a:hover {
   position: relative;
   top: 30%;
   white-space: pre-wrap;
+}
+
+/* Button on the main page */
+.main-btn-text {
+  margin-bottom: 1px;
+}
+.main-btn-text {
+  margin-bottom: 0.5px;
+}
+a.main-btn-link {
+  color: var(--color-white);
+}
+.btn-main:hover a.main-btn-link {
+  color: var(--color-blue-xd);
 }
