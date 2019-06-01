@@ -55,6 +55,8 @@ permalink: /doc/en/lb4/apidocs.testlab.html
 |  [HandlerContextStub](./testlab.handlercontextstub.md) |  |
 |  [RestApplicationLike](./testlab.restapplicationlike.md) |  |
 |  [RestServerLike](./testlab.restserverlike.md) |  |
+|  [TestContext](./testlab.testcontext.md) |  |
+|  [TestFn](./testlab.testfn.md) |  |
 
 ## Variables
 
@@ -73,6 +75,5 @@ permalink: /doc/en/lb4/apidocs.testlab.html
 |  [ShotCallback](./testlab.shotcallback.md) |  |
 |  [ShotResponseCtor](./testlab.shotresponsector.md) |  |
 |  [StubbedInstanceWithSinonAccessor](./testlab.stubbedinstancewithsinonaccessor.md) |  |
-|  [TestCallbackRetval](./testlab.testcallbackretval.md) |  |
 
 

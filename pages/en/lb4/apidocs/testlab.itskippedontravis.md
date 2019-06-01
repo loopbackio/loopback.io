@@ -17,7 +17,7 @@ Helper function for skipping tests on Travis env
 <b>Signature:</b>
 
 ```typescript
-export declare function itSkippedOnTravis(expectation: string, callback?: (this: Mocha.ITestCallbackContext, done: MochaDone) => TestCallbackRetval): void;
+export declare function itSkippedOnTravis(expectation: string, callback?: TestFn): void;
 ```
 
 ## Parameters
@@ -25,7 +25,7 @@ export declare function itSkippedOnTravis(expectation: string, callback?: (this:
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  expectation | <code>string</code> |  |
-|  callback | <code>(this: Mocha.ITestCallbackContext, done: MochaDone) =&gt; TestCallbackRetval</code> |  |
+|  callback | <code>TestFn</code> |  |
 
 <b>Returns:</b>
 
