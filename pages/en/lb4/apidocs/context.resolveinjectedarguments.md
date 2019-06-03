@@ -19,14 +19,14 @@ The function returns an argument array when all dependencies were resolved synch
 <b>Signature:</b>
 
 ```typescript
-export declare function resolveInjectedArguments(target: Object, method: string, ctx: Context, session?: ResolutionSession, nonInjectedArgs?: any[]): ValueOrPromise<BoundValue[]>;
+export declare function resolveInjectedArguments(target: object, method: string, ctx: Context, session?: ResolutionSession, nonInjectedArgs?: any[]): ValueOrPromise<BoundValue[]>;
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  target | <code>Object</code> | The class for constructor injection or prototype for method injection |
+|  target | <code>object</code> | The class for constructor injection or prototype for method injection |
 |  method | <code>string</code> | The method name. If set to '', the constructor will be used. |
 |  ctx | <code>Context</code> | The context containing values for <code>@inject</code> resolution |
 |  session | <code>ResolutionSession</code> | Optional session for binding and dependency resolution |

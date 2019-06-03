@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.defaultcrudrepository.find.html
 <b>Signature:</b>
 
 ```typescript
-find(filter?: Filter<T>, options?: Options): Promise<T[]>;
+find(filter?: Filter<T>, options?: Options): Promise<(T & Relations)[]>;
 ```
 
 ## Parameters
@@ -27,6 +27,6 @@ find(filter?: Filter<T>, options?: Options): Promise<T[]>;
 
 <b>Returns:</b>
 
-`Promise<T[]>`
+`Promise<(T & Relations)[]>`
 
 

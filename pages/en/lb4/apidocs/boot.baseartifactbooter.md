@@ -37,7 +37,7 @@ export declare class BaseArtifactBooter implements Booter
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
 |  [artifactName](./boot.baseartifactbooter.artifactname.md) |  | <code>string</code> | Get the name of the artifact loaded by this booter, e.g. "Controller". Subclasses can override the default logic based on the class name. |
-|  [classes](./boot.baseartifactbooter.classes.md) |  | <code>Array&lt;Constructor&lt;{}&gt;&gt;</code> | List of exported classes discovered in the files |
+|  [classes](./boot.baseartifactbooter.classes.md) |  | <code>Constructor&lt;{}&gt;[]</code> | List of exported classes discovered in the files |
 |  [dirs](./boot.baseartifactbooter.dirs.md) |  | <code>string[]</code> | Relative paths of directories to be searched |
 |  [discovered](./boot.baseartifactbooter.discovered.md) |  | <code>string[]</code> | List of files discovered by the Booter that matched artifact requirements |
 |  [extensions](./boot.baseartifactbooter.extensions.md) |  | <code>string[]</code> | File extensions to be searched |

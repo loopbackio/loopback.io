@@ -15,10 +15,10 @@ permalink: /doc/en/lb4/apidocs.repository.arraytype.defaultvalue.html
 <b>Signature:</b>
 
 ```typescript
-defaultValue(): Array<T>;
+defaultValue(): T[];
 ```
 <b>Returns:</b>
 
-`Array<T>`
+`T[]`
 
 

@@ -17,7 +17,7 @@ Basic CRUD operations for ValueObject and Entity. No ID is required.
 <b>Signature:</b>
 
 ```typescript
-export interface CrudRepository<T extends ValueObject | Entity> extends Repository<T> 
+export interface CrudRepository<T extends ValueObject | Entity, Relations extends object = {}> extends Repository<T> 
 ```
 
 ## Methods

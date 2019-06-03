@@ -17,7 +17,7 @@ Array type, such as string\[\]
 <b>Signature:</b>
 
 ```typescript
-export declare class ArrayType<T> implements Type<Array<T>> 
+export declare class ArrayType<T> implements Type<T[]> 
 ```
 
 ## Constructors

@@ -17,7 +17,7 @@ Find an entity by id, return a rejected promise if not found.
 <b>Signature:</b>
 
 ```typescript
-findById(id: ID, filter?: Filter<T>, options?: Options): Promise<T>;
+findById(id: ID, filter?: Filter<T>, options?: Options): Promise<T & Relations>;
 ```
 
 ## Parameters
@@ -30,7 +30,7 @@ findById(id: ID, filter?: Filter<T>, options?: Options): Promise<T>;
 
 <b>Returns:</b>
 
-`Promise<T>`
+`Promise<T & Relations>`
 
 A promise of an entity found for the id
 

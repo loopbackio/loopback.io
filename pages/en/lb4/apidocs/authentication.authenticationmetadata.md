@@ -24,7 +24,7 @@ export interface AuthenticationMetadata
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [options](./authentication.authenticationmetadata.options.md) | <code>Object</code> |  |
+|  [options](./authentication.authenticationmetadata.options.md) | <code>object</code> |  |
 |  [strategy](./authentication.authenticationmetadata.strategy.md) | <code>string</code> |  |
 
 

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.property.array.html
 <b>Signature:</b>
 
 ```typescript
-function array(itemType: PropertyType, definition?: Partial<PropertyDefinition>): (target: Object, propertyName: string) => void;
+function array(itemType: PropertyType, definition?: Partial<PropertyDefinition>): (target: object, propertyName: string) => void;
 ```
 
 ## Parameters
@@ -27,6 +27,6 @@ function array(itemType: PropertyType, definition?: Partial<PropertyDefinition>)
 
 <b>Returns:</b>
 
-`(target: Object, propertyName: string) => void`
+`(target: object, propertyName: string) => void`
 
 

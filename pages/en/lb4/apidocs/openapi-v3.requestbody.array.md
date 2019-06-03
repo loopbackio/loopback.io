@@ -20,7 +20,7 @@ Define a requestBody of `array` type.
 array: (itemSpec: SchemaObject | ReferenceObject, properties?: {
         description?: string | undefined;
         required?: boolean | undefined;
-    } | undefined) => (target: Object, member: string, index: number) => void
+    } | undefined) => (target: object, member: string, index: number) => void
 ```
 
 ## Example

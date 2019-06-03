@@ -18,7 +18,7 @@ If you create a MongoDB data source using the data source generator as described
 
 ## Creating a MongoDB data source
 
-Use the [Data source generator](http://loopback.io/doc/en/lb3/Data-source-generator.html) to add a MongoDB data source to your application.  
+Use the [Data source generator](http://loopback.io/doc/en/lb3/Data-source-generator.html) to add a MongoDB data source to your application.
 The generator will prompt for the database server hostname, port, and other settings
 required to connect to a MongoDB database.  It will also run the `npm install` command above for you.
 
@@ -64,7 +64,7 @@ If you run a MongoDB with authentification ([Docker's example here](https://gith
 `$pop`, `$pullAll`, `$pull`, `$pushAll`, `$push`, and `$bit`.  Default is `false`.
 - **enableGeoIndexing**: Set to `true` to enable 2dsphere indexing for model properties
 of type `GeoPoint`. This allows for indexed ```near``` queries.  Default is `false`.
-- **lazyConnect**: 
+- **lazyConnect**:
   - Default is `false`.
   - If set to `true`, the database instance will not be attached to the datasource and the connection is deferred.
   - It will try to establish the connection automatically once users hit the endpoint. If the mongodb server is offline, the app will start, however, the endpoints will not work.
@@ -74,7 +74,7 @@ of type `GeoPoint`. This allows for indexed ```near``` queries.  Default is `fal
 
 ### Setting the url property in datasource.json
 
-You can set the `url` property to a connection URL in `datasources.json` to override individual connection parameters such as `host`, `user`, and `password`.  
+You can set the `url` property to a connection URL in `datasources.json` to override individual connection parameters such as `host`, `user`, and `password`.
 
 Additionally, you can override the global `url` property in environment-specific data source configuration files, for example for production in `datasources.production.json`, and use the individual connection parameters `host`, `user`, `password`, and `port`.  To do this, you _must_ set `url` to `false`, null, or “” (empty string).
 If you set `url` to `undefined` or remove the `url` property altogether, the override will not work.
@@ -90,7 +90,7 @@ For example, for production, use `datasources.production.json` as follows (for e
   "password": "mypassword",
   "name": "mydb",
   "user": "me",
-  "connector": "mongodb"  
+  "connector": "mongodb"
 }
 ```
 
@@ -290,9 +290,27 @@ myModelName.find(
   {where: {id: {inq: ['59460487e9532ae90c324b59', '59460487e9532ae90c324b5a']}}},
   {strictObjectIDCoercion: true},
   function(err, result) {
-    // ... 
+    // ...
   }
 )
+```
+
+## dataType: 'ObjectID'
+
+You can set a model property's `mongodb` property definition `dataType` to "ObjectID" to enforce ObjectID coercion
+irrespective of the `strictObjectIDCoercion` setting.
+
+In the following example, the `id` and `xid` will be coerced to `ObjectID` even if `strictObjectIDCoercion` is set to true.
+
+```js
+const User = ds.createModel(
+  'user',
+  {
+    id: {type: String, id: true, mongodb: {dataType: 'ObjectID'}},
+    xid: {type: String, mongodb: {dataType: 'ObjectID'}}
+  },
+  {strictObjectIDCoercion: true}
+);
 ```
 
 ## Release notes

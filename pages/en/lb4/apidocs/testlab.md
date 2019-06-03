@@ -75,5 +75,6 @@ permalink: /doc/en/lb4/apidocs.testlab.html
 |  [ShotCallback](./testlab.shotcallback.md) |  |
 |  [ShotResponseCtor](./testlab.shotresponsector.md) |  |
 |  [StubbedInstanceWithSinonAccessor](./testlab.stubbedinstancewithsinonaccessor.md) |  |
+|  [TestCallbackRetval](./testlab.testcallbackretval.md) |  |
 
 

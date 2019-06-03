@@ -17,6 +17,6 @@ List of exported classes discovered in the files
 <b>Signature:</b>
 
 ```typescript
-classes: Array<Constructor<{}>>;
+classes: Constructor<{}>[];
 ```
 

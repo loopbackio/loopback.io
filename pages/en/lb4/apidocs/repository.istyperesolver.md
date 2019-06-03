@@ -17,7 +17,7 @@ A function that checks whether a function is a TypeResolver or not.
 <b>Signature:</b>
 
 ```typescript
-export declare function isTypeResolver<T extends Object>(fn: any): fn is TypeResolver<T>;
+export declare function isTypeResolver<T extends object>(fn: any): fn is TypeResolver<T>;
 ```
 
 ## Parameters

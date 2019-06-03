@@ -17,6 +17,6 @@ This module defines the key classes representing building blocks for Domain Driv
 <b>Signature:</b>
 
 ```typescript
-export declare type PropertyType = string | Function | Object | Type<any> | TypeResolver<Model>;
+export declare type PropertyType = string | Function | object | Type<any> | TypeResolver<Model>;
 ```
 

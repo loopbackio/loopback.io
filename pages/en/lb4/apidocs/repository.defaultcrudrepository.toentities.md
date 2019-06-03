@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.defaultcrudrepository.toentities.html
 <b>Signature:</b>
 
 ```typescript
-protected toEntities(models: juggler.PersistedModel[]): T[];
+protected toEntities<R extends T>(models: juggler.PersistedModel[]): R[];
 ```
 
 ## Parameters
@@ -26,6 +26,6 @@ protected toEntities(models: juggler.PersistedModel[]): T[];
 
 <b>Returns:</b>
 
-`T[]`
+`R[]`
 
 

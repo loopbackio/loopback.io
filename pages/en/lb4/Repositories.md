@@ -23,7 +23,7 @@ operations. These `Repository` implementations leverage `Model` definition and
 interface Repository<T extends Model> {}
 
 interface CustomerRepository extends Repository<Customer> {
-  find(filter?: Filter, options?: Options): Promise<Customer[]>;
+  find(filter?: Filter<Customer>, options?: Options): Promise<Customer[]>;
   findByEmail(email: string): Promise<Customer>;
   // ...
 }
@@ -162,13 +162,14 @@ TypeScript version:
 
 ```ts
 import {DefaultCrudRepository, juggler} from '@loopback/repository';
-import {Account} from '../models';
+import {Account, AccountRelations} from '../models';
 import {DbDataSource} from '../datasources';
 import {inject} from '@loopback/context';
 
 export class AccountRepository extends DefaultCrudRepository<
   Account,
-  typeof Account.prototype.id
+  typeof Account.prototype.id,
+  AccountRelations
 > {
   constructor(@inject('datasources.db') dataSource: DbDataSource) {
     super(Account, dataSource);
@@ -491,10 +492,10 @@ retrieve all the rows that match a particular filter for a model instance.
 
 ```ts
 public find(
-  modelClass: Class<Entity>,
-  filter: Filter,
+  modelClass: Class<Account>,
+  filter: Filter<Account>,
   options: Options
-): Promise<EntityData[]> {
+): Promise<Account[]> {
   let self = this;
   let sqlStmt = "SELECT * FROM " + modelClass.name;
   if (filter.where) {

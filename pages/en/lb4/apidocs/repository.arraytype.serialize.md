@@ -15,14 +15,14 @@ permalink: /doc/en/lb4/apidocs.repository.arraytype.serialize.html
 <b>Signature:</b>
 
 ```typescript
-serialize(value: Array<T> | null | undefined): any[] | null | undefined;
+serialize(value: T[] | null | undefined): any[] | null | undefined;
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  value | <code>Array&lt;T&gt; &#124; null &#124; undefined</code> |  |
+|  value | <code>T[] &#124; null &#124; undefined</code> |  |
 
 <b>Returns:</b>
 

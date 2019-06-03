@@ -17,14 +17,14 @@ Invoke an instance method with dependency injection
 <b>Signature:</b>
 
 ```typescript
-export declare function invokeMethod(target: Object, method: string, ctx: Context, nonInjectedArgs?: any[]): ValueOrPromise<BoundValue>;
+export declare function invokeMethod(target: object, method: string, ctx: Context, nonInjectedArgs?: any[]): ValueOrPromise<BoundValue>;
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  target | <code>Object</code> | Target of the method, it will be the class for a static method, and instance or class prototype for a prototype method |
+|  target | <code>object</code> | Target of the method, it will be the class for a static method, and instance or class prototype for a prototype method |
 |  method | <code>string</code> | Name of the method |
 |  ctx | <code>Context</code> | Context |
 |  nonInjectedArgs | <code>any[]</code> | Optional array of args for non-injected parameters |

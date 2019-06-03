@@ -17,7 +17,7 @@ Decorator for hasMany Calls property.array decorator underneath the hood and inf
 <b>Signature:</b>
 
 ```typescript
-export declare function hasMany<T extends Entity>(targetResolver: EntityResolver<T>, definition?: Partial<HasManyDefinition>): (decoratedTarget: Object, key: string) => void;
+export declare function hasMany<T extends Entity>(targetResolver: EntityResolver<T>, definition?: Partial<HasManyDefinition>): (decoratedTarget: object, key: string) => void;
 ```
 
 ## Parameters
@@ -29,7 +29,7 @@ export declare function hasMany<T extends Entity>(targetResolver: EntityResolver
 
 <b>Returns:</b>
 
-`(decoratedTarget: Object, key: string) => void`
+`(decoratedTarget: object, key: string) => void`
 
 A property decorator
 

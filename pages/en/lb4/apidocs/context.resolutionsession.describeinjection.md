@@ -24,7 +24,7 @@ static describeInjection(injection?: Readonly<Injection>): {
     } | {
         targetName: string;
         bindingSelector: import("./binding-filter").BindingSelector<any>;
-        metadata: Object;
+        metadata: object;
     };
 ```
 
@@ -43,7 +43,7 @@ static describeInjection(injection?: Readonly<Injection>): {
     } | {
         targetName: string;
         bindingSelector: import("./binding-filter").BindingSelector<any>;
-        metadata: Object;
+        metadata: object;
     }`
 
 

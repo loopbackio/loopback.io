@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.hasone.html
 <b>Signature:</b>
 
 ```typescript
-export declare function hasOne<T extends Entity>(targetResolver: EntityResolver<T>, definition?: Partial<HasOneDefinition>): (decoratedTarget: Object, key: string) => void;
+export declare function hasOne<T extends Entity>(targetResolver: EntityResolver<T>, definition?: Partial<HasOneDefinition>): (decoratedTarget: object, key: string) => void;
 ```
 
 ## Parameters
@@ -27,6 +27,6 @@ export declare function hasOne<T extends Entity>(targetResolver: EntityResolver<
 
 <b>Returns:</b>
 
-`(decoratedTarget: Object, key: string) => void`
+`(decoratedTarget: object, key: string) => void`
 
 

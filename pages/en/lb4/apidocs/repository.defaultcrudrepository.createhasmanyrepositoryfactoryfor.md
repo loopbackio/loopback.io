@@ -37,7 +37,8 @@ protected createHasManyRepositoryFactoryFor<Target extends Entity, TargetID, For
 ```ts
 class CustomerRepository extends DefaultCrudRepository<
   Customer,
-  typeof Customer.prototype.id
+  typeof Customer.prototype.id,
+  CustomerRelations
 > {
   public readonly orders: HasManyRepositoryFactory<Order, typeof Customer.prototype.id>;
 

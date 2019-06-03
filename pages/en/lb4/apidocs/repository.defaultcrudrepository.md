@@ -17,7 +17,7 @@ Default implementation of CRUD repository using legacy juggler model and data so
 <b>Signature:</b>
 
 ```typescript
-export declare class DefaultCrudRepository<T extends Entity, ID> implements EntityCrudRepository<T, ID> 
+export declare class DefaultCrudRepository<T extends Entity, ID, Relations extends object = {}> implements EntityCrudRepository<T, ID, Relations> 
 ```
 
 ## Constructors

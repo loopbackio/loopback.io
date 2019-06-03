@@ -17,7 +17,7 @@ Find matching records
 <b>Signature:</b>
 
 ```typescript
-find(filter?: Filter<T>, options?: Options): Promise<T[]>;
+find(filter?: Filter<T>, options?: Options): Promise<(T & Relations)[]>;
 ```
 
 ## Parameters
@@ -29,7 +29,7 @@ find(filter?: Filter<T>, options?: Options): Promise<T[]>;
 
 <b>Returns:</b>
 
-`Promise<T[]>`
+`Promise<(T & Relations)[]>`
 
 A promise of an array of records found
 

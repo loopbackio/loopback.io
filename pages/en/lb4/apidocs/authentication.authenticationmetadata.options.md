@@ -15,6 +15,6 @@ permalink: /doc/en/lb4/apidocs.authentication.authenticationmetadata.options.htm
 <b>Signature:</b>
 
 ```typescript
-options?: Object;
+options?: object;
 ```
 

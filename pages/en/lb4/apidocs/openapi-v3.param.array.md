@@ -17,7 +17,7 @@ Define a parameter of `array` type.
 <b>Signature:</b>
 
 ```typescript
-array: (name: string, source: ParameterLocation, itemSpec: SchemaObject | ReferenceObject) => (target: Object, member: string, index: number) => void
+array: (name: string, source: ParameterLocation, itemSpec: SchemaObject | ReferenceObject) => (target: object, member: string, index: number) => void
 ```
 
 ## Example
