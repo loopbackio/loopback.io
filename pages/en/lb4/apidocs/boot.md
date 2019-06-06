@@ -24,6 +24,7 @@ permalink: /doc/en/lb4/apidocs.boot.html
 |  [Bootstrapper](./boot.bootstrapper.md) | The Bootstrapper class provides the <code>boot</code> function that is responsible for finding and executing the Booters in an application based on given options.<!-- -->NOTE: Bootstrapper should be bound as a SINGLETON so it can be cached as it does not maintain any state of it's own. |
 |  [ControllerBooter](./boot.controllerbooter.md) | A class that extends BaseArtifactBooter to boot the 'Controller' artifact type. Discovered controllers are bound using <code>app.controller()</code>.<!-- -->Supported phases: configure, discover, load |
 |  [DataSourceBooter](./boot.datasourcebooter.md) | A class that extends BaseArtifactBooter to boot the 'DataSource' artifact type. Discovered DataSources are bound using <code>app.controller()</code>.<!-- -->Supported phases: configure, discover, load |
+|  [InterceptorProviderBooter](./boot.interceptorproviderbooter.md) | A class that extends BaseArtifactBooter to boot the 'InterceptorProvider' artifact type.<!-- -->Supported phases: configure, discover, load |
 |  [LifeCycleObserverBooter](./boot.lifecycleobserverbooter.md) | A class that extends BaseArtifactBooter to boot the 'LifeCycleObserver' artifact type.<!-- -->Supported phases: configure, discover, load |
 |  [RepositoryBooter](./boot.repositorybooter.md) | A class that extends BaseArtifactBooter to boot the 'Repository' artifact type. Discovered repositories are bound using <code>app.repository()</code> which must be added to an Application using the <code>RepositoryMixin</code> from <code>@loopback/repository</code>.<!-- -->Supported phases: configure, discover, load |
 |  [ServiceBooter](./boot.servicebooter.md) | A class that extends BaseArtifactBooter to boot the 'Service' artifact type. Discovered DataSources are bound using <code>app.controller()</code>.<!-- -->Supported phases: configure, discover, load |
@@ -58,6 +59,7 @@ permalink: /doc/en/lb4/apidocs.boot.html
 |  [BOOTER\_PHASES](./boot.booter_phases.md) | Export of an array of all the Booter phases supported by the interface above, in the order they should be run. |
 |  [ControllerDefaults](./boot.controllerdefaults.md) | Default ArtifactOptions for ControllerBooter. |
 |  [DataSourceDefaults](./boot.datasourcedefaults.md) | Default ArtifactOptions for DataSourceBooter. |
+|  [InterceptorProviderDefaults](./boot.interceptorproviderdefaults.md) | Default ArtifactOptions for DataSourceBooter. |
 |  [LifeCycleObserverDefaults](./boot.lifecycleobserverdefaults.md) | Default ArtifactOptions for DataSourceBooter. |
 |  [RepositoryDefaults](./boot.repositorydefaults.md) | Default ArtifactOptions for RepositoryBooter. |
 |  [ServiceDefaults](./boot.servicedefaults.md) | Default ArtifactOptions for DataSourceBooter. |

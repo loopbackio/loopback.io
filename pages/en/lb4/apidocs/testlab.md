@@ -31,7 +31,8 @@ permalink: /doc/en/lb4/apidocs.testlab.html
 |  [givenHttpServerConfig(customConfig)](./testlab.givenhttpserverconfig.md) | Create an HTTP-server configuration that works well in test environments. - Ask the operating system to assign a free (ephemeral) port. - Use IPv4 localhost <code>127.0.0.1</code> to avoid known IPv6 issues in Docker-based environments like Travis-CI. - Provide default TLS key &amp; cert when <code>protocol</code> is set to <code>https</code>. |
 |  [httpGetAsync(urlString)](./testlab.httpgetasync.md) | Async wrapper for making HTTP GET requests |
 |  [httpsGetAsync(urlString)](./testlab.httpsgetasync.md) | Async wrapper for making HTTPS GET requests |
-|  [itSkippedOnTravis(expectation, callback)](./testlab.itskippedontravis.md) | Helper function for skipping tests on Travis env |
+|  [itSkippedOnTravis(expectation, callback)](./testlab.itskippedontravis.md) | Helper function for skipping tests on Travis env - legacy variant supporting <code>it</code> only. |
+|  [skipOnTravis(verb, name, args)](./testlab.skipontravis.md) | Helper function for skipping tests on Travis CI. |
 |  [stubExpressContext(requestOptions)](./testlab.stubexpresscontext.md) |  |
 |  [stubHandlerContext(requestOptions)](./testlab.stubhandlercontext.md) |  |
 |  [stubServerRequest(options)](./testlab.stubserverrequest.md) |  |
@@ -56,7 +57,7 @@ permalink: /doc/en/lb4/apidocs.testlab.html
 |  [RestApplicationLike](./testlab.restapplicationlike.md) |  |
 |  [RestServerLike](./testlab.restserverlike.md) |  |
 |  [TestContext](./testlab.testcontext.md) |  |
-|  [TestFn](./testlab.testfn.md) |  |
+|  [TestFn](./testlab.testfn.md) | \* LEGACY API FOR BACKWARDS COMPATIBILITY \*\* |
 
 ## Variables
 
@@ -75,6 +76,6 @@ permalink: /doc/en/lb4/apidocs.testlab.html
 |  [ShotCallback](./testlab.shotcallback.md) |  |
 |  [ShotResponseCtor](./testlab.shotresponsector.md) |  |
 |  [StubbedInstanceWithSinonAccessor](./testlab.stubbedinstancewithsinonaccessor.md) |  |
-|  [TestCallbackRetval](./testlab.testcallbackretval.md) |  |
+|  [TestDefinition](./testlab.testdefinition.md) | A function defining a new test case or a test suite, e.g. <code>it</code> or <code>describe</code>. |
 
 

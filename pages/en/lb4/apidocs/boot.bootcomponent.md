@@ -30,6 +30,6 @@ export declare class BootComponent implements Component
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [booters](./boot.bootcomponent.booters.md) |  | <code>(typeof ControllerBooter &#124; typeof DataSourceBooter &#124; typeof RepositoryBooter &#124; typeof ServiceBooter &#124; typeof ApplicationMetadataBooter &#124; typeof LifeCycleObserverBooter)[]</code> |  |
+|  [booters](./boot.bootcomponent.booters.md) |  | <code>(typeof ApplicationMetadataBooter &#124; typeof ControllerBooter &#124; typeof DataSourceBooter &#124; typeof InterceptorProviderBooter &#124; typeof LifeCycleObserverBooter &#124; typeof RepositoryBooter &#124; typeof ServiceBooter)[]</code> |  |
 
 

@@ -61,6 +61,7 @@ permalink: /doc/en/lb4/apidocs.context.html
 |  [filterByTag(tagPattern)](./context.filterbytag.md) | Create a binding filter for the tag pattern |
 |  [getBindingMetadata(target)](./context.getbindingmetadata.md) | Get binding metadata for a class |
 |  [getDeepProperty(value, path)](./context.getdeepproperty.md) | Get nested properties of an object by path |
+|  [globalInterceptor(group, specs)](./context.globalinterceptor.md) | <code>@globalInterceptor</code> decorator to mark the class as a global interceptor |
 |  [inject(bindingSelector, metadata, resolve)](./context.inject.md) | A decorator to annotate method arguments for automatic injection by LoopBack IoC container. |
 |  [inspectTargetType(injection)](./context.inspecttargettype.md) | Inspect the target type for the injection to find out the corresponding JavaScript type |
 |  [instantiateClass(ctor, ctx, session, nonInjectedArgs)](./context.instantiateclass.md) | Create an instance of a class which constructor has arguments decorated with <code>@inject</code>.<!-- -->The function returns a class when all dependencies were resolved synchronously, or a Promise otherwise. |
@@ -116,6 +117,7 @@ permalink: /doc/en/lb4/apidocs.context.html
 |  --- | --- |
 |  [BINDING\_METADATA\_KEY](./context.binding_metadata_key.md) | Metadata key for binding metadata |
 |  [DEFAULT\_TYPE\_NAMESPACES](./context.default_type_namespaces.md) |  |
+|  [GLOBAL\_INTERCEPTOR\_NAMESPACE](./context.global_interceptor_namespace.md) | Default namespace for global interceptors |
 |  [INTERCEPT\_CLASS\_KEY](./context.intercept_class_key.md) | Metadata key for method-level interceptors |
 |  [INTERCEPT\_METHOD\_KEY](./context.intercept_method_key.md) | Metadata key for method-level interceptors |
 

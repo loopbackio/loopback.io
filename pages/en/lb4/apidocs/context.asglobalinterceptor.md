@@ -24,7 +24,7 @@ export declare function asGlobalInterceptor(group?: string): BindingTemplate;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  group | <code>string</code> |  |
+|  group | <code>string</code> | Group for ordering the interceptor |
 
 <b>Returns:</b>
 

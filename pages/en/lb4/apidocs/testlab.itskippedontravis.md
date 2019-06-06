@@ -12,7 +12,12 @@ permalink: /doc/en/lb4/apidocs.testlab.itskippedontravis.html
 
 ## itSkippedOnTravis() function
 
-Helper function for skipping tests on Travis env
+> Warning: This API is now obsolete.
+> 
+> Use `skipOnTravis(it, name, fn)` instead.
+> 
+
+Helper function for skipping tests on Travis env - legacy variant supporting `it` only.
 
 <b>Signature:</b>
 
@@ -24,8 +29,8 @@ export declare function itSkippedOnTravis(expectation: string, callback?: TestFn
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  expectation | <code>string</code> |  |
-|  callback | <code>TestFn</code> |  |
+|  expectation | <code>string</code> | The test name (the first argument of <code>it</code> function). |
+|  callback | <code>TestFn</code> | The test function (the second argument of <code>it</code> function). |
 
 <b>Returns:</b>
 

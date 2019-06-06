@@ -12,6 +12,8 @@ permalink: /doc/en/lb4/apidocs.testlab.testfn.html
 
 ## TestFn interface
 
+\* LEGACY API FOR BACKWARDS COMPATIBILITY \*\*
+
 <b>Signature:</b>
 
 ```typescript
