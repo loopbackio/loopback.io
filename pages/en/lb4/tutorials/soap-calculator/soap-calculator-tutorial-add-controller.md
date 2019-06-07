@@ -136,8 +136,8 @@ The final code looks like as follows:
 ```ts
 @get('/divide/{intA}/{intB}')
   async divide(
-    @param.path.integer('intB') intA: number,
-    @param.path.integer('arg2') intB: number,
+    @param.path.integer('intA') intA: number,
+    @param.path.integer('intB') intB: number,
   ): Promise<DivideResponse> {
     //Preconditions
     if (intB === 0) {
@@ -158,8 +158,8 @@ the divide end point method.
 ```ts
  @get('/multiply/{intA}/{intB}')
   async multiply(
-    @param.path.integer('intB') intA: number,
-    @param.path.integer('arg2') intB: number,
+    @param.path.integer('intA') intA: number,
+    @param.path.integer('intB') intB: number,
   ): Promise<MultiplyResponse> {
     return await this.calculatorService.Multiply(<CalculatorParameters>{
       intA,
@@ -168,8 +168,8 @@ the divide end point method.
   }
   @get('/add/{intA}/{intB}')
   async add(
-    @param.path.integer('intB') intA: number,
-    @param.path.integer('arg2') intB: number,
+    @param.path.integer('intA') intA: number,
+    @param.path.integer('intB') intB: number,
   ): Promise<AddResponse> {
     return await this.calculatorService.Add(<CalculatorParameters>{
       intA,
@@ -179,8 +179,8 @@ the divide end point method.
 
   @get('/subtract/{intA}/{intB}')
   async subtract(
-    @param.path.integer('intB') intA: number,
-    @param.path.integer('arg2') intB: number,
+    @param.path.integer('intA') intA: number,
+    @param.path.integer('intB') intB: number,
   ): Promise<SubtractResponse> {
     return await this.calculatorService.Subtract(<CalculatorParameters>{
       intA,
