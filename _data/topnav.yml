@@ -44,6 +44,8 @@ topnav_dropdowns:
       folderitems:
         - title: "Español (v2)"
           url: /doc/es/lb2/
+        - title: "Español (v4)"
+          url: /doc/es/lb4/
         - title: "Français (v2)"
           url: /doc/fr/lb2/
         - title: "한국어 (v3)"
