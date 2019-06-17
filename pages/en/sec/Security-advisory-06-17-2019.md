@@ -36,7 +36,7 @@ a 400 Bad Request error is returned.
 
 ### Versions affected
 
-`loopback` 3 version 3.25.0 and below, `loopback` 2 version `2.41.0` and below.
+`loopback` 3 version 3.25.0 and below, `loopback` 2 version 2.41.0 and below.
 
 ### Solution
 
