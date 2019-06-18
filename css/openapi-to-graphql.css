@@ -1,15 +1,15 @@
-.oasgraph-masthead {
+.openapi-to-graphql-masthead {
     text-align: center;
     color: var(--color-white);
     background: #009cff; /* backup */
-    background-image: url("../images/oasgraph/hero-banner-background-2x.png"), linear-gradient(to bottom, #009cff, #3f5dff);
+    background-image: url("../images/openapi-to-graphql/hero-banner-background-2x.png"), linear-gradient(to bottom, #009cff, #3f5dff);
     padding: 150px 0px 80px 0px;
     z-index: 5;
     position: relative;
     overflow: hidden;
 }
 
-.oasgraph-masthead h1 {
+.openapi-to-graphql-masthead h1 {
   padding-bottom: 1rem;
 }
 
@@ -32,7 +32,7 @@ img.get-started-image {
   max-height: 160px;
 }
 
-hr.oasgraph-hr {
+hr.openapi-to-graphql-hr {
   padding: 0px;
   margin: 0px;
 }
@@ -44,7 +44,7 @@ section.even-section {
   background-color: var(--color-white-d);
 }
 
-a.oasgraph-card {
+a.openapi-to-graphql-card {
   width: 100%;
   display: inline-block;
   border-radius: 5px;
@@ -57,11 +57,11 @@ a.oasgraph-card {
   margin-bottom: 1rem;
 }
 
-a.oasgraph-card:hover h5 {
+a.openapi-to-graphql-card:hover h5 {
   color: var(--color-blue-d);
 }
 
-button.oasgraph-guide-button {
+button.openapi-to-graphql-guide-button {
   margin-top: 1rem;
   margin-bottom: 1rem;
   padding-left: 3rem;

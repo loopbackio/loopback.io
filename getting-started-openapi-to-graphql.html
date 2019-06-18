@@ -8,13 +8,14 @@
     <!-- not working -->
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 
-    <title>OASGraph</title>
+    <title>LoopBack 4</title>
 
     <!-- Bootstrap core CSS -->
     <link href="dist/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans" rel="stylesheet">
     <link href="css/loopback.css" rel="stylesheet">
-    <link href="css/oasgraph.css" rel="stylesheet">
+    <link href="css/getting-started.css" rel="stylesheet">
+    <link href="css/openapi-to-graphql.css" rel="stylesheet">
 
     <!-- Site Analytics -->
     <script type="text/javascript">
@@ -61,7 +62,7 @@
                     <a class="nav-link" href="resources.html">Resources</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link highlighted" href="oasgraph.html">GraphQL</a>
+                    <a class="nav-link" href="openapi-to-graphql.html">GraphQL</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="https://strongloop.com/strongblog/tag_LoopBack.html" target="_blank">Blog</a>
@@ -70,128 +71,110 @@
                     <a class="nav-link" href="https://ibm.biz/apitest" target="_blank">Test Your APIs</a>
                 </li>
             </ul>
+
         </div>
     </nav>
-
     <!-- Header -->
-    <div class="oasgraph-masthead">
-        <h1>OASGraph</h1>
-        <h5>Take any OpenAPI Specification (OAS) and create a GraphQL interface</h5>
+    <div class="openapi-to-graphql-masthead">
+        <h2>Ready to translate REST to GraphQL?</h2>
+        <br/>
+        <h5 style="font-weight: normal">Let's get you equipped.</h5>
     </div>
 
-    <!-- How it works section -->
+
     <section class="odd-section">
       <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <h3 class="text-center">How it works</h3>
-            <div class="embed-responsive embed-responsive-16by9">
-              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/KXUTmM6y-LM" allowfullscreen></iframe>
+        <div class="row text-center">
+          <div class="col-md-12">
+            <button class="steptag text-uppercase">Step 1</button>
+          </div>
+          <div class="col-md-6">
+            <h3 class="feature-heading">Have you installed Node.js?</h3>
+            <p class="p large step">Before you install OpenAPI-to-GraphQL, make sure to download and install Node.js (version 8.9.x or higher), a JavaScript runtime.</p>
+          </div>
+          <div class="col-md-6">
+            <div class="col-md-6">
+              <a class="btn btn-secondary" style="padding-left:60px; padding-right:60px; top: 20%" role="button" href="https://nodejs.org/en/download/" target="_blank">Install Node.js</a>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <hr class="oasgraph-hr">
+    <hr class="hairline">
 
-    <!-- Powerful functionality section -->
-    <section class="even-section">
+    <section id="step2" class="even-section">
       <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <h3 class="text-center">Powerful functionality</h3>
-            <br/>
+        <div class="row text-center">
+          <div class="col-md-12">
+            <button class="steptag text-uppercase">Step 2</button>
           </div>
-        </div>
-
-        <div class="row">
-          <div class="col-sm-12 col-lg-4 text-center">
-            <img class="feature-image" src="images/oasgraph/nested-data-2x.png" alt="Icon depcting nested data"/>
-            <h4>Nested data</h4>
-            <p>
-              Schemas and links defined in the OAS are used to compose data definitions. Furthermore, hierarchical path structures can be used to nest data via the <code>addSubOperation</code> option (<a href="https://github.com/strongloop/oasgraph#options" target="_blank">learn more...</a>).
-            </p>
+          <div class="col-md-6">
+            <h3 class="feature-heading">Install OpenAPI-to-GraphQL</h3>
+            <p class="p large step">OpenAPI-to-GraphQL can be used either as a library, or via its Command Line Interface (CLI) to quickly get started. To install the OpenAPI-to-GraphQL CLI, simply run the indicated command.</p>
           </div>
-          <div class="col-sm-12 col-lg-4 text-center">
-            <img class="feature-image" src="images/oasgraph/data-sanitization-2x.png" alt="Icon depicting data sanitation"/>
-            <h4>API Sanitation</h4>
-            <p>
-              GraphQL-incompatible identifiers of your API are sanitized. For example, API parameters or data definitions with unsupported characters (e.g., <code>-</code>, <code>.</code>, <code>,</code>, <code>:</code>, <code>;</code>...) are removed.
-            </p>
-          </div>
-          <div class="col-sm-12 col-lg-4 text-center">
-            <img class="feature-image" src="images/oasgraph/authentication-2x.png" alt="Icon depicting authentication"/>
-            <h4>Authentication</h4>
-            <p>
-              OASGraph provides <em>viewers</em> to support passing API keys or basic auth credentials. OAuth 2.0 integration can be handled by the hosting application (<a href="https://github.com/strongloop/oasgraph#authentication" target="_blank">learn more...</a>).
-            </p>
+          <div class="col-md-6">
+            <pre class="code-snippet">
+<code-blue>$</code-blue> npm i -g openapi-to-graphql-cli
+            </pre>
           </div>
         </div>
       </div>
     </section>
 
-    <hr class="oasgraph-hr">
+    <hr class="hairline">
 
-    <!-- Get started section -->
-    <section class="odd-section">
+    <section id="step3" class="odd-section">
       <div class="container">
-        <div class="row">
-          <div class="col-sm-12 col-md-8">
-            <h3>Get started</h3>
-            <h5>Ready to translate from REST to GraphQL? Let's get you started!</h5>
-            <a class="btn btn-secondary" style="padding-left:60px; padding-right:60px; top: 20%" role="button" href="getting-started-oasgraph.html">View Guide</a>
+        <div class="row text-center">
+          <div class="col-md-12">
+            <button class="steptag text-uppercase">Step 3</button>
           </div>
-          <div class="col-sm-12 col-md-4">
-            <img class="get-started-image float-right" src="images/oasgraph-getting-started/rocketship-2x.png" alt="Icon showing a rocket and depicting getting started"/>
+          <div class="col-md-12">
+            <h3 class="feature-heading">Save OAS</h3>
+            <p class="p large step">OpenAPI-to-GraphQL relies on the OpenAPI Specification (OAS) of an existing API to create a GraphQL interface around that API.</p>
+          </div>
+          <div class="col-md-6" style="padding-top: 30px;">
+            <p class="p large step">If you use LoopBack, start your API server in the LoopBack project folder, and access the API's OAS at <a class="link" href="http://127.0.0.1:3000/openapi.json">http://127.0.0.1:3000/openapi.json</a>. Save the OAS to disk.</p>
+          </div>
+          <div class="col-md-6">
+            <pre class="code-snippet">
+<span class="text-secondary"># in the LoopBack project folder:</span>
+<code-blue>$</code-blue> npm start
+            </pre>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <hr class="hairline"/>
+        <div class="row text-center">
+          <div class="col-md-12">
+            <p class="p large step">If you want to generate a GraphQL interface for another API, make sure that API is running and save its OAS.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <hr class="oasgraph-hr">
+    <hr class="hairline">
 
-    <!-- How can we help -->
-    <section class="even-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h3 class="section-heading">How Can We Help?</h3>
-                    <p>We've curated resources to help you get started faster with OASGraph.</p>
-                    <p style="height:36px"></p>
-                </div>
-            </div>
-
-            <div class="row text-center" style="justify-content: center">
-              <div class="col-sm-12 col-md-6">
-                <a class="oasgraph-card" href="https://strongloop.com/strongblog/" target="_blank">
-                  <div class="row">
-                    <div class="col-sm-3">
-                      <img class="help-image" src="images/oasgraph/blog-posts-2x.png" alt="Icon depicting blog"/>
-                    </div>
-                    <div class="col-sm-9">
-                      <h5 class="card-title">Blog posts</h5>
-                      <p class="regular text-gray">Visit our blog for all developer-related articles, tips, and advice.</p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-
-              <div class="col-sm-12 col-md-6">
-                <a class="oasgraph-card" href="https://github.com/strongloop/oasgraph" target="_blank">
-                  <div class="row">
-                    <div class="col-sm-3">
-                      <img class="help-image" src="images/oasgraph/git-repository-2x.png" alt="Icon depicting Git repository"/>
-                    </div>
-                    <div class="col-sm-9">
-                      <h5 class="card-title">Git repository</h5>
-                      <p class="regular text-gray">Learn from or contribute to our repository, complete with regularly updated documentation.</p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
+    <section id="step4" class="even-section">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-md-12">
+            <button class="steptag text-uppercase">Step 4</button>
+          </div>
+          <div class="col-md-6">
+            <h3 class="feature-heading">Start GraphQL server</h3>
+            <p class="p large step">Once OpenAPI-to-GraphQL is installed and the OAS is obtained, you can create and start the GraphQL server from the folder in which OpenAPI-to-GraphQL is installed. The created GraphQL server is then accessible at <a class="link" href="http://127.0.0.1:3001/graphql">http://127.0.0.1:3001/graphql</a>.</p>
+          </div>
+          <div class="col-md-6">
+            <pre class="code-snippet">
+<span class="text-secondary"># in the OpenAPI-to-GraphQL folder:</span>
+<code-blue>$</code-blue> openapi-to-graphql <path to saved OAS>
+            </pre>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- footer -->
@@ -256,15 +239,12 @@
         </div>
     </footer>
 
+    <!-- Scripts -->
     <script src="dist/jquery/jquery-3.3.1.slim.min.js"></script>
     <script src="dist/popper/1.14.0/umd/popper.min.js"></script>
     <!-- Bootstrap core JavaScript -->
     <script src="dist/bootstrap/js/bootstrap.min.js"></script>
-
     <!-- GitHub button -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>
 
-
 </body>
-
-</html>
