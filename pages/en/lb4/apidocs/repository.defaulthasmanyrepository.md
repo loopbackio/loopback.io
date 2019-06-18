@@ -22,7 +22,7 @@ export declare class DefaultHasManyRepository<TargetEntity extends Entity, Targe
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)(getTargetRepository, constraint)](./repository.defaulthasmanyrepository.(constructor).md) |  | Constructor of DefaultHasManyEntityCrudRepository |
+|  [(constructor)(getTargetRepository, constraint)](./repository.defaulthasmanyrepository._constructor_.md) |  | Constructor of DefaultHasManyEntityCrudRepository |
 
 ## Properties
 

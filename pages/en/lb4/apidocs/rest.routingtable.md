@@ -24,7 +24,7 @@ export declare class RoutingTable
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)(\_router, \_externalRoutes)](./rest.routingtable.(constructor).md) |  | Constructs a new instance of the <code>RoutingTable</code> class |
+|  [(constructor)(\_router, \_externalRoutes)](./rest.routingtable._constructor_.md) |  | Constructs a new instance of the <code>RoutingTable</code> class |
 
 ## Methods
 

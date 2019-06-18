@@ -24,7 +24,7 @@ export declare class HttpServer
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)(requestListener, serverOptions)](./http-server.httpserver.(constructor).md) |  | Constructs a new instance of the <code>HttpServer</code> class |
+|  [(constructor)(requestListener, serverOptions)](./http-server.httpserver._constructor_.md) |  | Constructs a new instance of the <code>HttpServer</code> class |
 
 ## Properties
 

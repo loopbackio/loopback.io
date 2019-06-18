@@ -11,9 +11,6 @@ LoopBack 4 or other TypeScript modules, including:
 - lb-prettier: Run [`prettier`](https://github.com/prettier/prettier)
 - lb-mocha: Run [`mocha`](https://mochajs.org/) to execute test cases
 - lb-nyc: Run [`nyc`](https://github.com/istanbuljs/nyc)
-- lb-dist: Detect the correct distribution target: `dist` => ES2017, `dist6` =>
-  ES2015. The command is deprecated as `lb-mocha` detects the distribution
-  target now.
 
 These scripts first try to locate the CLI from target project dependencies and
 fall back to bundled ones in `@loopback/build`.
@@ -76,9 +73,10 @@ Now you run the scripts, such as:
       "$schema": "http://json.schemastore.org/tsconfig",
       "extends": "@loopback/build/config/tsconfig.common.json",
       "compilerOptions": {
-        "rootDir": "."
+        "outDir": "dist",
+        "rootDir": "src"
       },
-      "include": ["src", "test"]
+      "include": ["src"]
     }
     ```
 
@@ -96,51 +94,6 @@ Now you run the scripts, such as:
     | Option             | Description                                                                                       |
     | ------------------ | ------------------------------------------------------------------------------------------------- |
     | `--copy-resources` | Copy all non-typescript files from `src` and `test` to `outDir`, preserving their relative paths. |
-
-- lb-tslint
-
-  By default, `lb-tslint` searches your project's root directory for
-  `tslint.build.json` then `tslint.json`. If neither of them exists, it falls
-  back to `./node_modules/@loopback/build/config/tslint.common.json`.
-
-  `lb-tslint` also depends on `tsconfig.build.json` or `tsconfig.json` to
-  reference the project.
-
-  **NOTE:** Our recommended configuration of tslint rules is maintained inside
-  the package `@loopback/tslint-config`. We strongly recommend users to create
-  their own tslint configuration files inheriting from `@loopback/tslint-config`
-  instead of relying on the defaults provided by `@loopback/build`.
-
-  To customize the configuration:
-
-  - Create `tslint.build.json` in your project's root directory, for example:
-
-    ```json
-    {
-      "$schema": "http://json.schemastore.org/tslint",
-      "extends": ["@loopback/eslint-config/tslint.build.json"],
-      // This configuration files enabled rules which require type checking
-      // and therefore cannot be run by Visual Studio Code TSLint extension
-      // See https://github.com/Microsoft/vscode-tslint/issues/70
-      "rules": {
-        // These rules find errors related to TypeScript features.
-        // These rules catch common errors in JS programming or otherwise
-        // confusing constructs that are prone to producing bugs.
-
-        "await-promise": true,
-        "no-floating-promises": true,
-        "no-void-expression": [true, "ignore-arrow-function-shorthand"]
-      }
-    }
-    ```
-
-- Set options explicitly for the script
-
-  ```sh
-  lb-tslint -c tslint.json -p tsconfig.json
-  ```
-
-  For more information, see <https://palantir.github.io/tslint/usage/cli/>.
 
 4.  Run builds
 

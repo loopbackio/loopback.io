@@ -24,7 +24,7 @@ export declare class ServiceProxyMetadata implements InjectionMetadata
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)(dataSource)](./service-proxy.serviceproxymetadata.(constructor).md) |  | Constructs a new instance of the <code>ServiceProxyMetadata</code> class |
+|  [(constructor)(dataSource)](./service-proxy.serviceproxymetadata._constructor_.md) |  | Constructs a new instance of the <code>ServiceProxyMetadata</code> class |
 
 ## Properties
 

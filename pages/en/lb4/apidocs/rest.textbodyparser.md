@@ -22,7 +22,7 @@ export declare class TextBodyParser implements BodyParser
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)(options)](./rest.textbodyparser.(constructor).md) |  | Constructs a new instance of the <code>TextBodyParser</code> class |
+|  [(constructor)(options)](./rest.textbodyparser._constructor_.md) |  | Constructs a new instance of the <code>TextBodyParser</code> class |
 
 ## Properties
 

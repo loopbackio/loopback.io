@@ -26,7 +26,7 @@ export declare class InterceptionHandler<T extends object> implements ProxyHandl
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)(context)](./context.interceptionhandler.(constructor).md) |  | Constructs a new instance of the <code>InterceptionHandler</code> class |
+|  [(constructor)(context)](./context.interceptionhandler._constructor_.md) |  | Constructs a new instance of the <code>InterceptionHandler</code> class |
 
 ## Methods
 

@@ -24,7 +24,7 @@ export declare class DefaultKeyValueRepository<T extends Entity> implements KeyV
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)(entityClass, ds)](./repository.defaultkeyvaluerepository.(constructor).md) |  | Construct a KeyValueRepository with a legacy DataSource |
+|  [(constructor)(entityClass, ds)](./repository.defaultkeyvaluerepository._constructor_.md) |  | Construct a KeyValueRepository with a legacy DataSource |
 
 ## Properties
 

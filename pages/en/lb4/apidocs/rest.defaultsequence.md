@@ -24,7 +24,7 @@ export declare class DefaultSequence implements SequenceHandler
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)(findRoute, parseParams, invoke, send, reject)](./rest.defaultsequence.(constructor).md) |  | Constructor: Injects findRoute, invokeMethod &amp; logError methods as promises. |
+|  [(constructor)(findRoute, parseParams, invoke, send, reject)](./rest.defaultsequence._constructor_.md) |  | Constructor: Injects findRoute, invokeMethod &amp; logError methods as promises. |
 
 ## Properties
 

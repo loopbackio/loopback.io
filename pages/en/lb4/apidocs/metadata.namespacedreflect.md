@@ -22,7 +22,7 @@ export declare class NamespacedReflect
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)(namespace)](./metadata.namespacedreflect.(constructor).md) |  | Constructs a new instance of the <code>NamespacedReflect</code> class |
+|  [(constructor)(namespace)](./metadata.namespacedreflect._constructor_.md) |  | Constructs a new instance of the <code>NamespacedReflect</code> class |
 
 ## Methods
 

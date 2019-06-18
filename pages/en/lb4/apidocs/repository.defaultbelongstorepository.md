@@ -22,7 +22,7 @@ export declare class DefaultBelongsToRepository<TargetEntity extends Entity, Tar
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)(getTargetRepository, constraint)](./repository.defaultbelongstorepository.(constructor).md) |  | Constructor of DefaultBelongsToEntityCrudRepository |
+|  [(constructor)(getTargetRepository, constraint)](./repository.defaultbelongstorepository._constructor_.md) |  | Constructor of DefaultBelongsToEntityCrudRepository |
 
 ## Properties
 

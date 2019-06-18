@@ -26,7 +26,7 @@ export declare class ServiceBooter extends BaseArtifactBooter
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)(app, projectRoot, serviceConfig)](./boot.servicebooter.(constructor).md) |  | Constructs a new instance of the <code>ServiceBooter</code> class |
+|  [(constructor)(app, projectRoot, serviceConfig)](./boot.servicebooter._constructor_.md) |  | Constructs a new instance of the <code>ServiceBooter</code> class |
 
 ## Properties
 

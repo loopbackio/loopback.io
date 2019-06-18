@@ -22,7 +22,7 @@ export declare class Route extends BaseRoute
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)(verb, path, spec, \_handler)](./rest.route.(constructor).md) |  | Constructs a new instance of the <code>Route</code> class |
+|  [(constructor)(verb, path, spec, \_handler)](./rest.route._constructor_.md) |  | Constructs a new instance of the <code>Route</code> class |
 
 ## Properties
 

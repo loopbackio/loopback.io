@@ -23,6 +23,7 @@ export interface HasOneDefinition extends RelationDefinitionBase
 |  Property | Type | Description |
 |  --- | --- | --- |
 |  [keyTo](./repository.hasonedefinition.keyto.md) | <code>string</code> | The foreign key used by the target model.<!-- -->E.g. when a Customer has one Address instance, then keyTo is "customerId". Note that "customerId" is the default FK assumed by the framework, users can provide a custom FK name by setting "keyTo". |
+|  [targetsMany](./repository.hasonedefinition.targetsmany.md) | <code>false</code> |  |
 |  [type](./repository.hasonedefinition.type.md) | <code>RelationType.hasOne</code> |  |
 
 

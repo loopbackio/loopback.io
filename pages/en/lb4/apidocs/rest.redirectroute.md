@@ -22,7 +22,7 @@ export declare class RedirectRoute implements RouteEntry, ResolvedRoute
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)(sourcePath, targetLocation, statusCode)](./rest.redirectroute.(constructor).md) |  | Constructs a new instance of the <code>RedirectRoute</code> class |
+|  [(constructor)(sourcePath, targetLocation, statusCode)](./rest.redirectroute._constructor_.md) |  | Constructs a new instance of the <code>RedirectRoute</code> class |
 
 ## Properties
 

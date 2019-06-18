@@ -23,6 +23,7 @@ export interface HasManyDefinition extends RelationDefinitionBase
 |  Property | Type | Description |
 |  --- | --- | --- |
 |  [keyTo](./repository.hasmanydefinition.keyto.md) | <code>string</code> | The foreign key used by the target model.<!-- -->E.g. when a Customer has many Order instances, then keyTo is "customerId". Note that "customerId" is the default FK assumed by the framework, users can provide a custom FK name by setting "keyTo". |
+|  [targetsMany](./repository.hasmanydefinition.targetsmany.md) | <code>true</code> |  |
 |  [type](./repository.hasmanydefinition.type.md) | <code>RelationType.hasMany</code> |  |
 
 

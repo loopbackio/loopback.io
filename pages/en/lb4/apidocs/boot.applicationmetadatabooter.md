@@ -24,7 +24,7 @@ export declare class ApplicationMetadataBooter implements Booter
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)(app, projectRoot)](./boot.applicationmetadatabooter.(constructor).md) |  | Constructs a new instance of the <code>ApplicationMetadataBooter</code> class |
+|  [(constructor)(app, projectRoot)](./boot.applicationmetadatabooter._constructor_.md) |  | Constructs a new instance of the <code>ApplicationMetadataBooter</code> class |
 
 ## Properties
 

@@ -30,7 +30,7 @@ export declare class BaseArtifactBooter implements Booter
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)(projectRoot, options)](./boot.baseartifactbooter.(constructor).md) |  | Constructs a new instance of the <code>BaseArtifactBooter</code> class |
+|  [(constructor)(projectRoot, options)](./boot.baseartifactbooter._constructor_.md) |  | Constructs a new instance of the <code>BaseArtifactBooter</code> class |
 
 ## Properties
 

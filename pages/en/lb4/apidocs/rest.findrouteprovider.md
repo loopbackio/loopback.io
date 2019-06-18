@@ -22,7 +22,7 @@ export declare class FindRouteProvider implements Provider<FindRoute>
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)(context, handler)](./rest.findrouteprovider.(constructor).md) |  | Constructs a new instance of the <code>FindRouteProvider</code> class |
+|  [(constructor)(context, handler)](./rest.findrouteprovider._constructor_.md) |  | Constructs a new instance of the <code>FindRouteProvider</code> class |
 
 ## Properties
 

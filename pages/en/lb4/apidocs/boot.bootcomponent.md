@@ -24,12 +24,12 @@ export declare class BootComponent implements Component
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)(app)](./boot.bootcomponent.(constructor).md) |  | Constructs a new instance of the <code>BootComponent</code> class |
+|  [(constructor)(app)](./boot.bootcomponent._constructor_.md) |  | Constructs a new instance of the <code>BootComponent</code> class |
 
 ## Properties
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [booters](./boot.bootcomponent.booters.md) |  | <code>(typeof ApplicationMetadataBooter &#124; typeof ControllerBooter &#124; typeof DataSourceBooter &#124; typeof InterceptorProviderBooter &#124; typeof LifeCycleObserverBooter &#124; typeof RepositoryBooter &#124; typeof ServiceBooter)[]</code> |  |
+|  [booters](./boot.bootcomponent.booters.md) |  | <code>(typeof ApplicationMetadataBooter &#124; typeof ControllerBooter &#124; typeof RepositoryBooter &#124; typeof ServiceBooter &#124; typeof DataSourceBooter &#124; typeof LifeCycleObserverBooter &#124; typeof InterceptorProviderBooter)[]</code> |  |
 
 

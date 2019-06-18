@@ -24,7 +24,7 @@ export declare class RepositoryMetadata
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)(modelOrRepo, dataSource)](./repository.repositorymetadata.(constructor).md) |  | Constructor for RepositoryMetadata |
+|  [(constructor)(modelOrRepo, dataSource)](./repository.repositorymetadata._constructor_.md) |  | Constructor for RepositoryMetadata |
 
 ## Properties
 

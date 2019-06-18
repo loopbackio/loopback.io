@@ -32,6 +32,7 @@ permalink: /doc/en/lb4/apidocs.testlab.html
 |  [httpGetAsync(urlString)](./testlab.httpgetasync.md) | Async wrapper for making HTTP GET requests |
 |  [httpsGetAsync(urlString)](./testlab.httpsgetasync.md) | Async wrapper for making HTTPS GET requests |
 |  [itSkippedOnTravis(expectation, callback)](./testlab.itskippedontravis.md) | Helper function for skipping tests on Travis env - legacy variant supporting <code>it</code> only. |
+|  [skipIf(skip, verb, name, args)](./testlab.skipif.md) | Helper function for skipping tests when a certain condition is met. |
 |  [skipOnTravis(verb, name, args)](./testlab.skipontravis.md) | Helper function for skipping tests on Travis CI. |
 |  [stubExpressContext(requestOptions)](./testlab.stubexpresscontext.md) |  |
 |  [stubHandlerContext(requestOptions)](./testlab.stubhandlercontext.md) |  |

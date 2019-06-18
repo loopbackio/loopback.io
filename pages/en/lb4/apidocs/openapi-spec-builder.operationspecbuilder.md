@@ -24,7 +24,7 @@ export declare class OperationSpecBuilder extends BuilderBase<OperationObject>
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)()](./openapi-spec-builder.operationspecbuilder.(constructor).md) |  | Constructs a new instance of the <code>OperationSpecBuilder</code> class |
+|  [(constructor)()](./openapi-spec-builder.operationspecbuilder._constructor_.md) |  | Constructs a new instance of the <code>OperationSpecBuilder</code> class |
 
 ## Methods
 

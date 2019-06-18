@@ -26,7 +26,7 @@ export declare class ServiceMixinDoc
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)(args)](./service-proxy.servicemixindoc.(constructor).md) |  | Constructs a new instance of the <code>ServiceMixinDoc</code> class |
+|  [(constructor)(args)](./service-proxy.servicemixindoc._constructor_.md) |  | Constructs a new instance of the <code>ServiceMixinDoc</code> class |
 
 ## Methods
 

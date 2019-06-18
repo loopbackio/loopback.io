@@ -24,7 +24,7 @@ export declare class ArrayType<T> implements Type<T[]>
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)(itemType)](./repository.arraytype.(constructor).md) |  | Constructs a new instance of the <code>ArrayType</code> class |
+|  [(constructor)(itemType)](./repository.arraytype._constructor_.md) |  | Constructs a new instance of the <code>ArrayType</code> class |
 
 ## Properties
 

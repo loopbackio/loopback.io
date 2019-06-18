@@ -60,11 +60,12 @@ permalink: /doc/en/lb4/apidocs.rest.html
 |  [createResolvedRoute(route, pathParams)](./rest.createresolvedroute.md) |  |
 |  [getPathVariables(path)](./rest.getpathvariables.md) | Get all path variables. For example, <code>/root/{foo}/bar</code> =<!-- -->&gt; <code>['foo']</code> |
 |  [parseJson(text, reviver)](./rest.parsejson.md) |  |
-|  [parseOperationArgs(request, route, requestBodyParser)](./rest.parseoperationargs.md) | Parses the request to derive arguments to be passed in for the Application controller method |
+|  [parseOperationArgs(request, route, requestBodyParser, options)](./rest.parseoperationargs.md) | Parses the request to derive arguments to be passed in for the Application controller method |
 |  [rebaseOpenApiSpec(spec, basePath)](./rest.rebaseopenapispec.md) |  |
 |  [sanitizeJsonParse(reviver)](./rest.sanitizejsonparse.md) | Factory to create a reviver function for <code>JSON.parse</code> to sanitize keys |
 |  [toExpressPath(path)](./rest.toexpresspath.md) | Convert an OpenAPI path to Express (path-to-regexp) style |
 |  [validateApiPath(path)](./rest.validateapipath.md) | Validate the path to be compatible with OpenAPI path template. No parameter modifier, custom pattern, or unnamed parameter is allowed. |
+|  [validateRequestBody(body, requestBodySpec, globalSchemas, options)](./rest.validaterequestbody.md) | Check whether the request body is valid according to the provided OpenAPI schema. The JSON schema is generated from the OpenAPI schema which is typically defined by <code>@requestBody()</code>. The validation leverages AJV schema validator. |
 |  [writeResultToResponse(response, result)](./rest.writeresulttoresponse.md) | Writes the result from Application controller method into the HTTP response |
 
 ## Interfaces
@@ -78,7 +79,8 @@ permalink: /doc/en/lb4/apidocs.rest.html
 |  [Node](./rest.node.md) | A Node in the trie |
 |  [OpenApiSpecForm](./rest.openapispecform.md) | The form of OpenAPI specs to be served |
 |  [OpenApiSpecOptions](./rest.openapispecoptions.md) | Options to customize how OpenAPI specs are served |
-|  [RequestBodyParserOptions](./rest.requestbodyparseroptions.md) | Options for request body parsing See https://github.com/expressjs/body-parser/\#options |
+|  [RequestBodyParserOptions](./rest.requestbodyparseroptions.md) | Options for request body parsing See https://github.com/expressjs/body-parser/\#options<!-- -->Built-in parsers retrieve their own options from the request body parser options. The parser specific properties override common ones. |
+|  [RequestBodyValidationOptions](./rest.requestbodyvalidationoptions.md) | Options for request body validation using AJV |
 |  [ResolvedNode](./rest.resolvednode.md) |  |
 |  [ResolvedRoute](./rest.resolvedroute.md) | A route with path parameters resolved |
 |  [RestRouter](./rest.restrouter.md) |  |

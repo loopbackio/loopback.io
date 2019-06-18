@@ -24,7 +24,7 @@ export declare class RestApplication extends Application implements HttpServerLi
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)(config)](./rest.restapplication.(constructor).md) |  | Constructs a new instance of the <code>RestApplication</code> class |
+|  [(constructor)(config)](./rest.restapplication._constructor_.md) |  | Constructs a new instance of the <code>RestApplication</code> class |
 
 ## Properties
 

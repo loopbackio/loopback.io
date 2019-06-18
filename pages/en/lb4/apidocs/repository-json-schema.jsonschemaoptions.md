@@ -22,6 +22,7 @@ export interface JsonSchemaOptions
 
 |  Property | Type | Description |
 |  --- | --- | --- |
+|  [includeRelations](./repository-json-schema.jsonschemaoptions.includerelations.md) | <code>boolean</code> |  |
 |  [visited](./repository-json-schema.jsonschemaoptions.visited.md) | <code>{</code><br/><code>        [key: string]: JSONSchema;</code><br/><code>    }</code> |  |
 
 

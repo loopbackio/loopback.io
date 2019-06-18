@@ -24,7 +24,7 @@ export declare class LifeCycleObserverRegistry implements LifeCycleObserver
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)(observersView, options)](./core.lifecycleobserverregistry.(constructor).md) |  | Constructs a new instance of the <code>LifeCycleObserverRegistry</code> class |
+|  [(constructor)(observersView, options)](./core.lifecycleobserverregistry._constructor_.md) |  | Constructs a new instance of the <code>LifeCycleObserverRegistry</code> class |
 
 ## Properties
 

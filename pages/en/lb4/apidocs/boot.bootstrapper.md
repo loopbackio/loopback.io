@@ -26,7 +26,7 @@ export declare class Bootstrapper
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)(app, projectRoot, bootOptions)](./boot.bootstrapper.(constructor).md) |  | Constructs a new instance of the <code>Bootstrapper</code> class |
+|  [(constructor)(app, projectRoot, bootOptions)](./boot.bootstrapper._constructor_.md) |  | Constructs a new instance of the <code>Bootstrapper</code> class |
 
 ## Methods
 

@@ -26,7 +26,7 @@ export declare class LifeCycleObserverBooter extends BaseArtifactBooter
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)(app, projectRoot, observerConfig)](./boot.lifecycleobserverbooter.(constructor).md) |  | Constructs a new instance of the <code>LifeCycleObserverBooter</code> class |
+|  [(constructor)(app, projectRoot, observerConfig)](./boot.lifecycleobserverbooter._constructor_.md) |  | Constructs a new instance of the <code>LifeCycleObserverBooter</code> class |
 
 ## Properties
 

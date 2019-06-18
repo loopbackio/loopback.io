@@ -17,7 +17,7 @@ Parses the request to derive arguments to be passed in for the Application contr
 <b>Signature:</b>
 
 ```typescript
-export declare function parseOperationArgs(request: Request, route: ResolvedRoute, requestBodyParser?: RequestBodyParser): Promise<OperationArgs>;
+export declare function parseOperationArgs(request: Request, route: ResolvedRoute, requestBodyParser?: RequestBodyParser, options?: RequestBodyValidationOptions): Promise<OperationArgs>;
 ```
 
 ## Parameters
@@ -27,6 +27,7 @@ export declare function parseOperationArgs(request: Request, route: ResolvedRout
 |  request | <code>Request</code> | Incoming HTTP request |
 |  route | <code>ResolvedRoute</code> | Resolved Route |
 |  requestBodyParser | <code>RequestBodyParser</code> |  |
+|  options | <code>RequestBodyValidationOptions</code> |  |
 
 <b>Returns:</b>
 

@@ -24,7 +24,7 @@ export declare class DefaultCrudRepository<T extends Entity, ID, Relations exten
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)(entityClass, dataSource)](./repository.defaultcrudrepository.(constructor).md) |  | Constructor of DefaultCrudRepository |
+|  [(constructor)(entityClass, dataSource)](./repository.defaultcrudrepository._constructor_.md) |  | Constructor of DefaultCrudRepository |
 
 ## Properties
 

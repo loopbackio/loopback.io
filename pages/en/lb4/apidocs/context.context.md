@@ -24,7 +24,7 @@ export declare class Context extends EventEmitter
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)(\_parent, name)](./context.context.(constructor).md) |  | Create a new context. |
+|  [(constructor)(\_parent, name)](./context.context._constructor_.md) |  | Create a new context. |
 
 ## Properties
 

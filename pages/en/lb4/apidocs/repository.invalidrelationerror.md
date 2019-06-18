@@ -22,7 +22,7 @@ export declare class InvalidRelationError<Props extends object = {}> extends Err
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)(reason, relationMeta, extraProperties)](./repository.invalidrelationerror.(constructor).md) |  | Constructs a new instance of the <code>InvalidRelationError</code> class |
+|  [(constructor)(reason, relationMeta, extraProperties)](./repository.invalidrelationerror._constructor_.md) |  | Constructs a new instance of the <code>InvalidRelationError</code> class |
 
 ## Properties
 

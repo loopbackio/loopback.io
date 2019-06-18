@@ -22,7 +22,7 @@ export declare class BindElementProvider implements Provider<BindElement>
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)(context)](./rest.bindelementprovider.(constructor).md) |  | Constructs a new instance of the <code>BindElementProvider</code> class |
+|  [(constructor)(context)](./rest.bindelementprovider._constructor_.md) |  | Constructs a new instance of the <code>BindElementProvider</code> class |
 
 ## Properties
 

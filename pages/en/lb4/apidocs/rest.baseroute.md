@@ -24,7 +24,7 @@ export declare abstract class BaseRoute implements RouteEntry
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)(verb, path, spec)](./rest.baseroute.(constructor).md) |  | Construct a new route |
+|  [(constructor)(verb, path, spec)](./rest.baseroute._constructor_.md) |  | Construct a new route |
 
 ## Properties
 

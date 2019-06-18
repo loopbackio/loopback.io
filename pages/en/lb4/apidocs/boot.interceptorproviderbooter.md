@@ -26,7 +26,7 @@ export declare class InterceptorProviderBooter extends BaseArtifactBooter
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)(app, projectRoot, interceptorConfig)](./boot.interceptorproviderbooter.(constructor).md) |  | Constructs a new instance of the <code>InterceptorProviderBooter</code> class |
+|  [(constructor)(app, projectRoot, interceptorConfig)](./boot.interceptorproviderbooter._constructor_.md) |  | Constructs a new instance of the <code>InterceptorProviderBooter</code> class |
 
 ## Properties
 

@@ -22,7 +22,7 @@ export declare class RequestBodyParser
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)(parsers, ctx)](./rest.requestbodyparser.(constructor).md) |  | Constructs a new instance of the <code>RequestBodyParser</code> class |
+|  [(constructor)(parsers, ctx)](./rest.requestbodyparser._constructor_.md) |  | Constructs a new instance of the <code>RequestBodyParser</code> class |
 
 ## Properties
 

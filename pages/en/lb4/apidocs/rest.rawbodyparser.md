@@ -24,7 +24,7 @@ export declare class RawBodyParser implements BodyParser
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)(options)](./rest.rawbodyparser.(constructor).md) |  | Constructs a new instance of the <code>RawBodyParser</code> class |
+|  [(constructor)(options)](./rest.rawbodyparser._constructor_.md) |  | Constructs a new instance of the <code>RawBodyParser</code> class |
 
 ## Properties
 

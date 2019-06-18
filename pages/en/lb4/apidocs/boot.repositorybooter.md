@@ -26,7 +26,7 @@ export declare class RepositoryBooter extends BaseArtifactBooter
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)(app, projectRoot, repositoryOptions)](./boot.repositorybooter.(constructor).md) |  | Constructs a new instance of the <code>RepositoryBooter</code> class |
+|  [(constructor)(app, projectRoot, repositoryOptions)](./boot.repositorybooter._constructor_.md) |  | Constructs a new instance of the <code>RepositoryBooter</code> class |
 
 ## Properties
 

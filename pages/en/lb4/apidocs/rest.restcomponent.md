@@ -22,13 +22,13 @@ export declare class RestComponent implements Component
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)(app, config)](./rest.restcomponent.(constructor).md) |  | Constructs a new instance of the <code>RestComponent</code> class |
+|  [(constructor)(app, config)](./rest.restcomponent._constructor_.md) |  | Constructs a new instance of the <code>RestComponent</code> class |
 
 ## Properties
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [bindings](./rest.restcomponent.bindings.md) |  | <code>(Binding&lt;import(&quot;./body-parsers&quot;).BodyParser&gt; &#124; Binding&lt;RequestBodyParser&gt;)[]</code> | Add built-in body parsers |
+|  [bindings](./rest.restcomponent.bindings.md) |  | <code>(Binding&lt;RequestBodyParser&gt; &#124; Binding&lt;import(&quot;./body-parsers&quot;).BodyParser&gt;)[]</code> | Add built-in body parsers |
 |  [providers](./rest.restcomponent.providers.md) |  | <code>ProviderMap</code> |  |
 |  [servers](./rest.restcomponent.servers.md) |  | <code>{</code><br/><code>        [name: string]: Constructor&lt;Server&gt;;</code><br/><code>    }</code> |  |
 

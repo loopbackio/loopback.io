@@ -24,7 +24,7 @@ export declare class ModelType<T extends Model> extends ObjectType<T>
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)(modelClass)](./repository.modeltype.(constructor).md) |  | Constructs a new instance of the <code>ModelType</code> class |
+|  [(constructor)(modelClass)](./repository.modeltype._constructor_.md) |  | Constructs a new instance of the <code>ModelType</code> class |
 
 ## Properties
 

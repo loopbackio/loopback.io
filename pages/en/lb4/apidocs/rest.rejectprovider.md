@@ -22,7 +22,7 @@ export declare class RejectProvider implements Provider<Reject>
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)(logError, errorWriterOptions)](./rest.rejectprovider.(constructor).md) |  | Constructs a new instance of the <code>RejectProvider</code> class |
+|  [(constructor)(logError, errorWriterOptions)](./rest.rejectprovider._constructor_.md) |  | Constructs a new instance of the <code>RejectProvider</code> class |
 
 ## Properties
 

@@ -24,7 +24,7 @@ export declare class TrieRouter extends BaseRouter
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)(options)](./rest.trierouter.(constructor).md) |  | Constructs a new instance of the <code>TrieRouter</code> class |
+|  [(constructor)(options)](./rest.trierouter._constructor_.md) |  | Constructs a new instance of the <code>TrieRouter</code> class |
 
 ## Methods
 

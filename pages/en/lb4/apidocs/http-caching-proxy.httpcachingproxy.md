@@ -24,7 +24,7 @@ export declare class HttpCachingProxy
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)(options)](./http-caching-proxy.httpcachingproxy.(constructor).md) |  | Constructs a new instance of the <code>HttpCachingProxy</code> class |
+|  [(constructor)(options)](./http-caching-proxy.httpcachingproxy._constructor_.md) |  | Constructs a new instance of the <code>HttpCachingProxy</code> class |
 
 ## Properties
 

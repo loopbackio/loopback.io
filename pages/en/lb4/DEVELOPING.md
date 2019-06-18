@@ -25,6 +25,7 @@ See [Monorepo overview](./MONOREPO.md) for a list of all packages.
 - [Adding a new package](#adding-a-new-package)
 - [Upgrading TypeScript/eslint](#upgrading-typescripteslint)
 - [How to test infrastructure changes](#how-to-test-infrastructure-changes)
+- [Renovate bot](#renovate-bot)
 
 ## Setting up development environment
 
@@ -214,13 +215,14 @@ src/__tests__/unit/application.unit.ts
 
 ## API Documentation
 
-We use [strong-docs](https://github.com/strongloop/strong-docs) to generate API
-documentation for all our packages. This documentation is generated when
-publishing new releases to npmjs.org and it's picked up by
-<http://apidocs.loopback.io/>.
+We use
+[@loopback/tsdocs](https://github.com/strongloop/loopback-next/tree/master/packages/tsdocs)
+to generate API documentation for all our packages. This documentation is
+generated when publishing new releases to npmjs.org and it's picked up by
+https://loopback.io/doc/en/lb4/apidocs.index.html.
 
-You can preview API docs locally by opening the file `docs/apidocs.html` in your
-browser.
+You can preview API docs locally by running `npm run tsdocs` and open
+[apidocs/index.md](apidocs/index.md).
 
 ## Commit message guidelines
 
@@ -490,16 +492,11 @@ Please register the new package in the following files:
 - Update [MONOREPO.md](./MONOREPO.md) - insert a new table row to describe the
   new package, please keep the rows sorted by package name.
 - Update
-  [docs/apidocs.html](https://github.com/strongloop/loopback-next/blob/master/docs/apidocs.html) -
-  add a link to API docs for this new package.
 - Update [Reserved-binding-keys.md](./Reserved-binding-keys.md) - add a link to
   the apidocs on Binding Keys if the new package has any.
 - Update
   [CODEOWNERS](https://github.com/strongloop/loopback-next/blob/master/CODEOWNERS) -
   add a new entry listing the primary maintainers (owners) of the new package.
-- Ask somebody from the IBM team (e.g. [@bajtos](https://github.com/bajtos) or
-  [@raymondfeng](https://github.com/raymondfeng) to enlist the new package on
-  <http://apidocs.loopback.io/>.
 
 ## Upgrading TypeScript/eslint
 
@@ -591,3 +588,24 @@ This is why we have two sets of `tsconfig` files:
 - At monorepo root, there is `tsconfig.json` used by VS Code.
 - Inside each package, there is `tsconfig.build.json` used by `npm run build`
   command.
+
+## Renovate bot
+
+In loopback-next, we use package-lock files to speed up `npm install` times and
+[Renovate bot](http://renovatebot.com) to keep our lock files up to date.
+
+The bot is configured to maintain a special issue called
+`Update Dependencies (Renovate Bot)` where it lists all pull requests in
+progress and in queue:
+
+- [loopback-next#3042](https://github.com/strongloop/loopback-next/issues/3042)
+- [loopback4-example-shopping#94](https://github.com/strongloop/loopback4-example-shopping/issues/94)
+
+Pull requests opened by RenovateBot can be merged by pressing GitHub's big green
+button once all checks are green (all CI builds finished).
+
+RenovateBot periodically checks for changes on `master` and rebases pull request
+in progress when new commits were added. If GitHub complains that RenovateBot's
+pull request is out of date, then just wait until it's rebased and checks are
+green. The bot usually updates pull requests every hour. Alternatively, tick the
+check-box in the pull request description or in "Update Dependencies" issue.

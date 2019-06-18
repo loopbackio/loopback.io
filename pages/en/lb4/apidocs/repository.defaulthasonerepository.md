@@ -22,7 +22,7 @@ export declare class DefaultHasOneRepository<TargetEntity extends Entity, Target
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)(getTargetRepository, constraint)](./repository.defaulthasonerepository.(constructor).md) |  | Constructor of DefaultHasOneEntityCrudRepository |
+|  [(constructor)(getTargetRepository, constraint)](./repository.defaulthasonerepository._constructor_.md) |  | Constructor of DefaultHasOneEntityCrudRepository |
 
 ## Properties
 

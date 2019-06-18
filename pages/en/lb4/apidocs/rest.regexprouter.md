@@ -24,7 +24,7 @@ export declare class RegExpRouter extends BaseRouter
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)(options)](./rest.regexprouter.(constructor).md) |  | Constructs a new instance of the <code>RegExpRouter</code> class |
+|  [(constructor)(options)](./rest.regexprouter._constructor_.md) |  | Constructs a new instance of the <code>RegExpRouter</code> class |
 
 ## Methods
 

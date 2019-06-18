@@ -26,7 +26,7 @@ D extends DecoratorType>
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)(key, spec, options)](./metadata.decoratorfactory.(constructor).md) |  | Construct a new class decorator factory |
+|  [(constructor)(key, spec, options)](./metadata.decoratorfactory._constructor_.md) |  | Construct a new class decorator factory |
 
 ## Properties
 

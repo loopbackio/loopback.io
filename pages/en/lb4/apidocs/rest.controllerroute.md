@@ -24,7 +24,7 @@ export declare class ControllerRoute<T> extends BaseRoute
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)(verb, path, spec, controllerCtor, controllerFactory, methodName)](./rest.controllerroute.(constructor).md) |  | Construct a controller based route |
+|  [(constructor)(verb, path, spec, controllerCtor, controllerFactory, methodName)](./rest.controllerroute._constructor_.md) |  | Construct a controller based route |
 
 ## Properties
 

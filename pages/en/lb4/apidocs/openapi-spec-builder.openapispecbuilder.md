@@ -24,7 +24,7 @@ export declare class OpenApiSpecBuilder extends BuilderBase<OpenApiSpec>
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)()](./openapi-spec-builder.openapispecbuilder.(constructor).md) |  | Constructs a new instance of the <code>OpenApiSpecBuilder</code> class |
+|  [(constructor)()](./openapi-spec-builder.openapispecbuilder._constructor_.md) |  | Constructs a new instance of the <code>OpenApiSpecBuilder</code> class |
 
 ## Methods
 

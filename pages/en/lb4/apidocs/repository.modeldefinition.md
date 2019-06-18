@@ -24,7 +24,7 @@ export declare class ModelDefinition
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)(nameOrDef)](./repository.modeldefinition.(constructor).md) |  | Constructs a new instance of the <code>ModelDefinition</code> class |
+|  [(constructor)(nameOrDef)](./repository.modeldefinition._constructor_.md) |  | Constructs a new instance of the <code>ModelDefinition</code> class |
 
 ## Properties
 

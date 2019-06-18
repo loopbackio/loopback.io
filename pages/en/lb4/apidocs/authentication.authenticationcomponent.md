@@ -22,7 +22,7 @@ export declare class AuthenticationComponent implements Component
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)()](./authentication.authenticationcomponent.(constructor).md) |  | Constructs a new instance of the <code>AuthenticationComponent</code> class |
+|  [(constructor)()](./authentication.authenticationcomponent._constructor_.md) |  | Constructs a new instance of the <code>AuthenticationComponent</code> class |
 
 ## Properties
 

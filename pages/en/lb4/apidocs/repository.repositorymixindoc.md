@@ -26,7 +26,7 @@ export declare class RepositoryMixinDoc
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)(args)](./repository.repositorymixindoc.(constructor).md) |  | Constructs a new instance of the <code>RepositoryMixinDoc</code> class |
+|  [(constructor)(args)](./repository.repositorymixindoc._constructor_.md) |  | Constructs a new instance of the <code>RepositoryMixinDoc</code> class |
 
 ## Methods
 

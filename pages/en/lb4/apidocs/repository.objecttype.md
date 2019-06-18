@@ -24,7 +24,7 @@ export declare class ObjectType<T extends AnyObject> implements Type<T>
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)(type)](./repository.objecttype.(constructor).md) |  | Constructs a new instance of the <code>ObjectType</code> class |
+|  [(constructor)(type)](./repository.objecttype._constructor_.md) |  | Constructs a new instance of the <code>ObjectType</code> class |
 
 ## Properties
 

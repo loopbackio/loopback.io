@@ -25,6 +25,7 @@ export interface RelationDefinitionBase
 |  [name](./repository.relationdefinitionbase.name.md) | <code>string</code> | The relation name, typically matching the name of the accessor property defined on the source model. For example "orders" or "customer". |
 |  [source](./repository.relationdefinitionbase.source.md) | <code>typeof Entity</code> | The source model of this relation.<!-- -->E.g. when a Customer has many Order instances, then Customer is the source. |
 |  [target](./repository.relationdefinitionbase.target.md) | <code>TypeResolver&lt;Entity, typeof Entity&gt;</code> | The target model of this relation.<!-- -->E.g. when a Customer has many Order instances, then Order is the target. |
+|  [targetsMany](./repository.relationdefinitionbase.targetsmany.md) | <code>boolean</code> | True for relations targeting multiple instances (e.g. HasMany), false for relations with a single target (e.g. BelongsTo, HasOne). This property is needed by OpenAPI/JSON Schema generator. |
 |  [type](./repository.relationdefinitionbase.type.md) | <code>RelationType</code> | The type of the relation, must be one of RelationType values. |
 
 

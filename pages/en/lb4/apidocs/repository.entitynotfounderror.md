@@ -22,7 +22,7 @@ export declare class EntityNotFoundError<ID, Props extends object = {}> extends 
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)(entityOrName, entityId, extraProperties)](./repository.entitynotfounderror.(constructor).md) |  | Constructs a new instance of the <code>EntityNotFoundError</code> class |
+|  [(constructor)(entityOrName, entityId, extraProperties)](./repository.entitynotfounderror._constructor_.md) |  | Constructs a new instance of the <code>EntityNotFoundError</code> class |
 
 ## Properties
 

@@ -24,7 +24,7 @@ export declare class WhereBuilder<MT extends object = AnyObject>
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)(w)](./repository.wherebuilder.(constructor).md) |  | Constructs a new instance of the <code>WhereBuilder</code> class |
+|  [(constructor)(w)](./repository.wherebuilder._constructor_.md) |  | Constructs a new instance of the <code>WhereBuilder</code> class |
 
 ## Properties
 

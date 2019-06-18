@@ -24,7 +24,7 @@ export declare class RequestContext extends Context implements HandlerContext
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)(request, response, parent, serverConfig, name)](./rest.requestcontext.(constructor).md) |  | Constructs a new instance of the <code>RequestContext</code> class |
+|  [(constructor)(request, response, parent, serverConfig, name)](./rest.requestcontext._constructor_.md) |  | Constructs a new instance of the <code>RequestContext</code> class |
 
 ## Properties
 

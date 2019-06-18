@@ -24,7 +24,7 @@ export declare class Binding<T = BoundValue>
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)(key, isLocked)](./context.binding.(constructor).md) |  | Constructs a new instance of the <code>Binding</code> class |
+|  [(constructor)(key, isLocked)](./context.binding._constructor_.md) |  | Constructs a new instance of the <code>Binding</code> class |
 
 ## Properties
 

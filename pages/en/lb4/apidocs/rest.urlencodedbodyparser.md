@@ -22,7 +22,7 @@ export declare class UrlEncodedBodyParser implements BodyParser
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)(options)](./rest.urlencodedbodyparser.(constructor).md) |  | Constructs a new instance of the <code>UrlEncodedBodyParser</code> class |
+|  [(constructor)(options)](./rest.urlencodedbodyparser._constructor_.md) |  | Constructs a new instance of the <code>UrlEncodedBodyParser</code> class |
 
 ## Properties
 

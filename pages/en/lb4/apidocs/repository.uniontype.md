@@ -24,7 +24,7 @@ export declare class UnionType implements Type<any>
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)(itemTypes)](./repository.uniontype.(constructor).md) |  | Constructs a new instance of the <code>UnionType</code> class |
+|  [(constructor)(itemTypes)](./repository.uniontype._constructor_.md) |  | Constructs a new instance of the <code>UnionType</code> class |
 
 ## Properties
 

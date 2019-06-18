@@ -24,7 +24,7 @@ export declare class InvocationContext extends Context
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)(parent, target, methodName, args)](./context.invocationcontext.(constructor).md) |  | Construct a new instance of <code>InvocationContext</code> |
+|  [(constructor)(parent, target, methodName, args)](./context.invocationcontext._constructor_.md) |  | Construct a new instance of <code>InvocationContext</code> |
 
 ## Properties
 

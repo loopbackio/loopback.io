@@ -24,7 +24,7 @@ export declare class FilterBuilder<MT extends object = AnyObject>
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)(f)](./repository.filterbuilder.(constructor).md) |  | Constructs a new instance of the <code>FilterBuilder</code> class |
+|  [(constructor)(f)](./repository.filterbuilder._constructor_.md) |  | Constructs a new instance of the <code>FilterBuilder</code> class |
 
 ## Properties
 

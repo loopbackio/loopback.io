@@ -22,7 +22,7 @@ export declare class InvokeMethodProvider implements Provider<InvokeMethod>
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)(context)](./rest.invokemethodprovider.(constructor).md) |  | Constructs a new instance of the <code>InvokeMethodProvider</code> class |
+|  [(constructor)(context)](./rest.invokemethodprovider._constructor_.md) |  | Constructs a new instance of the <code>InvokeMethodProvider</code> class |
 
 ## Properties
 

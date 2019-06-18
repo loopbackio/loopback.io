@@ -22,7 +22,7 @@ export declare class GetFromContextProvider implements Provider<GetFromContext>
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)(context)](./rest.getfromcontextprovider.(constructor).md) |  | Constructs a new instance of the <code>GetFromContextProvider</code> class |
+|  [(constructor)(context)](./rest.getfromcontextprovider._constructor_.md) |  | Constructs a new instance of the <code>GetFromContextProvider</code> class |
 
 ## Properties
 

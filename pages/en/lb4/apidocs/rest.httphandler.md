@@ -22,7 +22,7 @@ export declare class HttpHandler
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)(\_rootContext, \_serverConfig, \_routes)](./rest.httphandler.(constructor).md) |  | Constructs a new instance of the <code>HttpHandler</code> class |
+|  [(constructor)(\_rootContext, \_serverConfig, \_routes)](./rest.httphandler._constructor_.md) |  | Constructs a new instance of the <code>HttpHandler</code> class |
 
 ## Properties
 

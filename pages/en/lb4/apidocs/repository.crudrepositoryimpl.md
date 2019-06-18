@@ -24,7 +24,7 @@ export declare class CrudRepositoryImpl<T extends Entity, ID> implements EntityC
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)(dataSource, entityClass)](./repository.crudrepositoryimpl.(constructor).md) |  | Constructs a new instance of the <code>CrudRepositoryImpl</code> class |
+|  [(constructor)(dataSource, entityClass)](./repository.crudrepositoryimpl._constructor_.md) |  | Constructs a new instance of the <code>CrudRepositoryImpl</code> class |
 
 ## Properties
 

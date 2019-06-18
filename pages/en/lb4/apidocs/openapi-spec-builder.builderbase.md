@@ -22,7 +22,7 @@ export declare class BuilderBase<T extends ISpecificationExtension>
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)(initialSpec)](./openapi-spec-builder.builderbase.(constructor).md) |  | Constructs a new instance of the <code>BuilderBase</code> class |
+|  [(constructor)(initialSpec)](./openapi-spec-builder.builderbase._constructor_.md) |  | Constructs a new instance of the <code>BuilderBase</code> class |
 
 ## Properties
 

@@ -24,7 +24,7 @@ authenticate(request: Request): Promise<UserProfile | undefined>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  request | <code>Request</code> |  |
+|  request | <code>Request</code> | Express request object |
 
 <b>Returns:</b>
 

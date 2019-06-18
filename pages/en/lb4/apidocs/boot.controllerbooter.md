@@ -26,7 +26,7 @@ export declare class ControllerBooter extends BaseArtifactBooter
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)(app, projectRoot, controllerConfig)](./boot.controllerbooter.(constructor).md) |  | Constructs a new instance of the <code>ControllerBooter</code> class |
+|  [(constructor)(app, projectRoot, controllerConfig)](./boot.controllerbooter._constructor_.md) |  | Constructs a new instance of the <code>ControllerBooter</code> class |
 
 ## Properties
 

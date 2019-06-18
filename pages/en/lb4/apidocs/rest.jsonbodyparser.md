@@ -22,7 +22,7 @@ export declare class JsonBodyParser implements BodyParser
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)(options)](./rest.jsonbodyparser.(constructor).md) |  | Constructs a new instance of the <code>JsonBodyParser</code> class |
+|  [(constructor)(options)](./rest.jsonbodyparser._constructor_.md) |  | Constructs a new instance of the <code>JsonBodyParser</code> class |
 
 ## Properties
 

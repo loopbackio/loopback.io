@@ -26,7 +26,7 @@ export declare class DataSourceBooter extends BaseArtifactBooter
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)(app, projectRoot, datasourceConfig)](./boot.datasourcebooter.(constructor).md) |  | Constructs a new instance of the <code>DataSourceBooter</code> class |
+|  [(constructor)(app, projectRoot, datasourceConfig)](./boot.datasourcebooter._constructor_.md) |  | Constructs a new instance of the <code>DataSourceBooter</code> class |
 
 ## Properties
 

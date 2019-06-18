@@ -107,6 +107,10 @@ children:
     url: express-with-lb4-rest-tutorial.html
     output: 'web, pdf'
 
+  - title: 'How to secure your LoopBack 4 application with JWT authentication'
+    url: Authentication-Tutorial.html
+    output: 'web, pdf'
+
 - title: 'Examples'
   url: Examples.html
   output: 'web, pdf'
@@ -270,6 +274,10 @@ children:
     url: Self-hosted-rest-api-explorer.html
     output: 'web, pdf'
 
+  - title: 'Authentication'
+    url: Loopback-component-authentication.html
+    output: 'web, pdf'
+
   - title: 'Authorization'
     url: Loopback-component-authorization.html
     output: 'web, pdf'
@@ -336,7 +344,7 @@ children:
     url: Life-cycle-observer-generator.html
     output: 'web, pdf'
 
-  - title: 'Global interceptor generator'
+  - title: 'Interceptor generator'
     url: Interceptor-generator.html
     output: 'web, pdf'
 

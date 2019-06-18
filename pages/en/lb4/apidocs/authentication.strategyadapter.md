@@ -29,7 +29,7 @@ export declare class StrategyAdapter
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)(strategy)](./authentication.strategyadapter.(constructor).md) |  | Constructs a new instance of the <code>StrategyAdapter</code> class |
+|  [(constructor)(strategy)](./authentication.strategyadapter._constructor_.md) |  | Constructs a new instance of the <code>StrategyAdapter</code> class |
 
 ## Methods
 

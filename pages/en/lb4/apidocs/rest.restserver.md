@@ -24,7 +24,7 @@ export declare class RestServer extends Context implements Server, HttpServerLik
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)(app, config)](./rest.restserver.(constructor).md) |  | Creates an instance of RestServer. |
+|  [(constructor)(app, config)](./rest.restserver._constructor_.md) |  | Creates an instance of RestServer. |
 
 ## Properties
 

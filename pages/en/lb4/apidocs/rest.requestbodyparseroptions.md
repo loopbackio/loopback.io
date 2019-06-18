@@ -14,6 +14,8 @@ permalink: /doc/en/lb4/apidocs.rest.requestbodyparseroptions.html
 
 Options for request body parsing See https://github.com/expressjs/body-parser/\#options
 
+Built-in parsers retrieve their own options from the request body parser options. The parser specific properties override common ones.
+
 <b>Signature:</b>
 
 ```typescript
@@ -24,9 +26,10 @@ export interface RequestBodyParserOptions extends Options
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [json](./rest.requestbodyparseroptions.json.md) | <code>OptionsJson</code> |  |
-|  [raw](./rest.requestbodyparseroptions.raw.md) | <code>Options</code> |  |
-|  [text](./rest.requestbodyparseroptions.text.md) | <code>OptionsText</code> |  |
-|  [urlencoded](./rest.requestbodyparseroptions.urlencoded.md) | <code>OptionsUrlencoded</code> |  |
+|  [json](./rest.requestbodyparseroptions.json.md) | <code>OptionsJson</code> | Options for json parser |
+|  [raw](./rest.requestbodyparseroptions.raw.md) | <code>Options</code> | Options for raw parser |
+|  [text](./rest.requestbodyparseroptions.text.md) | <code>OptionsText</code> | Options for text parser |
+|  [urlencoded](./rest.requestbodyparseroptions.urlencoded.md) | <code>OptionsUrlencoded</code> | Options for urlencoded parser |
+|  [validation](./rest.requestbodyparseroptions.validation.md) | <code>RequestBodyValidationOptions</code> | Validation options for AJV, see https://github.com/epoberezkin/ajv\#options This setting is global for all request body parsers and it cannot be overridden inside parser specific properties such as <code>json</code> or <code>text</code>. |
 
 

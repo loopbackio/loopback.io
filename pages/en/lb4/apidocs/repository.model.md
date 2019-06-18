@@ -24,7 +24,7 @@ export declare abstract class Model
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)(data)](./repository.model.(constructor).md) |  | Constructs a new instance of the <code>Model</code> class |
+|  [(constructor)(data)](./repository.model._constructor_.md) |  | Constructs a new instance of the <code>Model</code> class |
 
 ## Properties
 

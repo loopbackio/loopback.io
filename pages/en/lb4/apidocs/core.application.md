@@ -24,7 +24,7 @@ export declare class Application extends Context implements LifeCycleObserver
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)(options)](./core.application.(constructor).md) |  | Constructs a new instance of the <code>Application</code> class |
+|  [(constructor)(options)](./core.application._constructor_.md) |  | Constructs a new instance of the <code>Application</code> class |
 
 ## Properties
 

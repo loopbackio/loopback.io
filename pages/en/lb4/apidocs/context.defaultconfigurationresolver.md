@@ -24,7 +24,7 @@ export declare class DefaultConfigurationResolver implements ConfigurationResolv
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)(context)](./context.defaultconfigurationresolver.(constructor).md) |  | Constructs a new instance of the <code>DefaultConfigurationResolver</code> class |
+|  [(constructor)(context)](./context.defaultconfigurationresolver._constructor_.md) |  | Constructs a new instance of the <code>DefaultConfigurationResolver</code> class |
 
 ## Properties
 
