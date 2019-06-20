@@ -3,11 +3,10 @@
 
 This is a database connectior for Db2 on IBM i intended for use with LoopBack 3 (LoopBack 4 testing soon). It uses the npm `odbc` package to connect to the database, so installing an ODBC driver manager and driver and setting up a datasource is required for use (see below).
 
-[IBM® Db2® for i](http://www-03.ibm.com/systems/power/software/i/db2/) is the database of choice for robust, enterprise-wide solutions handling high-volume workloads. It is optimized to deliver industry-leading performance while lowering costs and is fully integrated into the [IBM i operating system](https://www.ibm.com/it-infrastructure/power/os/ibm-i).  The `loopback-connector-ibmi`
-module is the LoopBack connector for Db2 for i.
+[IBM® Db2® for i](http://www-03.ibm.com/systems/power/software/i/db2/) is the database of choice for robust, enterprise-wide solutions handling high-volume workloads. It is optimized to deliver industry-leading performance while lowering costs and is fully integrated into the [IBM i operating system](https://www.ibm.com/it-infrastructure/power/os/ibm-i).  The `loopback-connector-ibmi` module is the LoopBack connector for Db2 for i.
 
 ## Major differences from version 0.x of loopback-connector-ibmi
-This version of the module is significantly different from version 0.x and constitutes a complete rewrite. This project is a derivative of [loopback-connector-db2iseries](https://github.com/strongloop/loopback-connector-db2iseries) and the v0.x [loopback-connector-ibmi](https://github.com/andrescolodrero/loopback-connector-ibmi).
+Version 1.x (and newer) of `loopback-connector-ibmi` is significantly different from version 0.x and constitutes a complete rewrite. This project is a derivative of [loopback-connector-db2iseries](https://github.com/strongloop/loopback-connector-db2iseries) and the v0.x [loopback-connector-ibmi](https://github.com/andrescolodrero/loopback-connector-ibmi).
 
 The main difference between this and the other packages for IBM i (including v0.x of this package) is that it uses ODBC to communicate to the database. Version 0.x of this package was built using the Db2 for i CLI API set. 
 
