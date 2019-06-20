@@ -76,7 +76,7 @@ Initialize your new extension project as follows: `lb4 extension`
 - Project description: `An example extension project for LoopBack 4`
 - Project root directory: `(loopback4-example-log-extension)`
 - Component class name: `LogComponent`
-- Select features to enable in the project': `tslint`, `prettier`, `mocha`,
+- Select features to enable in the project': `eslint`, `prettier`, `mocha`,
   `loopbackBuild`
 
 Now you can write the extension as follows:
@@ -132,7 +132,7 @@ export interface LogFn {
   (
     req: Request,
     args: OperationArgs,
-    // tslint:disable-next-line:no-any
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     result: any,
     startTime?: HighResTime,
   ): Promise<void>;
@@ -185,7 +185,7 @@ import {LevelMetadata} from '../types';
  * if it is set at or greater than Application LogLevel.
  * LOG_LEVEL.DEBUG < LOG_LEVEL.INFO < LOG_LEVEL.WARN < LOG_LEVEL.ERROR < LOG_LEVEL.OFF
  *
- * @param level The Log Level at or above it should log
+ * @param level - The Log Level at or above it should log
  */
 export function log(level?: number) {
   if (level === undefined) level = LOG_LEVEL.WARN;
@@ -200,8 +200,8 @@ export function log(level?: number) {
 /**
  * Fetch log level stored by `@log` decorator.
  *
- * @param controllerClass Target controller
- * @param methodName Target method
+ * @param controllerClass - Target controller
+ * @param methodName - Target method
  */
 export function getLogMetadata(
   controllerClass: Constructor<{}>,
@@ -232,10 +232,10 @@ import {Constructor} from '@loopback/context';
 import {EXAMPLE_LOG_BINDINGS} from '../keys';
 import {LogComponent} from '../component';
 
-// tslint:disable-next-line:no-any
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export function LogMixin<T extends Constructor<any>>(superClass: T) {
   return class extends superClass {
-    // tslint:disable-next-line:no-any
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     constructor(...args: any[]) {
       super(...args);
       if (this.options && this.options.logLevel) {
@@ -319,7 +319,7 @@ export class LogActionProvider implements Provider<LogFn> {
     const fn = <LogFn>((
       req: Request,
       args: OperationArgs,
-      // tslint:disable-next-line:no-any
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       result: any,
       start?: HighResTime,
     ) => {
@@ -336,7 +336,7 @@ export class LogActionProvider implements Provider<LogFn> {
   private async action(
     req: Request,
     args: OperationArgs,
-    // tslint:disable-next-line:no-any
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     result: any,
     start?: HighResTime,
   ): Promise<void> {

@@ -23,18 +23,14 @@ LoopBack 4 comes with the following tutorials:
 - **[express-composition](express-with-lb4-rest-tutorial.md)**: Tutorial on
   mounting LoopBack 4 REST API on an Express application.
 
+- **[lb3-application](https://github.com/strongloop/loopback-next/tree/master/examples/lb3-application)**:
+  Tutorial on mounting an existing LoopBack 3 application in a new LoopBack 4
+  project.
+
 You can download any of the tutorial projects using our CLI tool `lb4`:
 
 ```sh
-$ lb4 example
-? What example would you like to clone? (Use arrow keys)
-> todo: Tutorial example on how to build an application with LoopBack 4.
-  todo-list: Continuation of the todo example using relations in LoopBack 4.
-  hello-world: A simple hello-world Application using LoopBack 4.
-  log-extension: An example extension project for LoopBack 4.
-  rpc-server: A basic RPC server using a made-up protocol.
-  soap-calculator: An example on how to integrate SOAP web services.
-  express-composition: A simple Express application that uses LoopBack 4 REST API.
+lb4 example <tutorial-name>
 ```
 
 Please follow the instructions in

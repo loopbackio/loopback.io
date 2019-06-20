@@ -149,10 +149,17 @@ import {ProductRepository, CategoryRepository} from '../../src/repositories';
 import {testdb} from '../fixtures/datasources/testdb.datasource';
 
 export async function givenEmptyDatabase() {
-  const categoryRepository = new CategoryRepository(testdb);
-  const productRepository = new ProductRepository(
+  let categoryRepository: CategoryRepository;
+  let productRepository: ProductRepository;
+
+  categoryRepository = new CategoryRepository(
     testdb,
-    Getter.fromValue(categoryRepository),
+    async () => productRepository,
+  );
+
+  productRepository = new ProductRepository(
+    testdb,
+    async () => categoryRepository,
   );
 
   await productRepository.deleteAll();
@@ -408,7 +415,7 @@ Verify how was the stubbed method executed at the end of your unit test (in the
 ```ts
 // expect that repository.find() was called with the first
 // argument deeply-equal to the provided object
-sinon.assert.calledWithMatch({where: {id: 1}});
+sinon.assert.calledWithMatch(findStub, {where: {id: 1}});
 ```
 
 See [Unit test your controllers](#unit-test-your-controllers) for a full
@@ -416,9 +423,64 @@ example.
 
 #### Create a stub Service
 
-{% include content/tbd.html %}
+If your controller relies on service proxy for service oriented backends such as
+REST APIs, SOAP Web Services, or gRPC microservices, then we can create stubs
+for the service akin to the steps outlined in the above
+[stub repository](#create-a-stub-repository) section. Consider a dependency on a
+`GeoCoder` service that relies on a remote REST API for returning coordinates
+for a specific address.
 
-The initial beta release does not include Services as a first-class feature.
+```ts
+export interface GeocoderService {
+  geocode(address: string): Promise<GeoPoint[]>;
+}
+```
+
+The first step is to create a mocked instance of the `GeocoderService` API and
+configure its `geocode` method as a Sinon stub:
+
+```ts
+describe('GeocoderController', () => {
+  let geoService: GeoCoderService;
+  let geocode: sinon.SinonStub;
+
+  beforeEach(givenMockGeoCoderService);
+
+  // your unit tests
+
+  function givenMockGeoCoderService() {
+    // this creates a stub with GeocoderService API
+    // in a way that allows the compiler to verify type correctness
+    geoService = {geocode: sinon.stub()};
+
+    // this creates a reference to the stubbed "geocode" method
+    // because "geoService.geocode" has type from GeocoderService
+    // and does not provide Sinon APIs
+    geocode = geoService.geocode as sinon.SinonStub;
+  }
+});
+```
+
+Afterwards, we can configure the `geocode` stub's behaviour before the `act`
+phase of our test(s):
+
+```ts
+// geoService.geocode() will return a promise that
+// will be resolved with the provided array
+geocode.resolves([<GeoPoint>{y: 41.109653, x: -73.72467}]);
+```
+
+Lastly, we'll verify how the stub was executed:
+
+```ts
+// expect that geoService.geocode() was called with the first
+// argument equal to the provided address string
+sinon.assert.calledWithMatch(geocode, '1 New Orchard Road, Armonk, 10504');
+```
+
+Check out
+[TodoController unit tests](https://github.com/strongloop/loopback-next/blob/bd0c45033503f631a533ad6176620354d9cf6768/examples/todo/src/__tests__/unit/controllers/todo.controller.unit.ts#L53-L71)
+illustrating the above points in action for more information.
 
 ### Unit test your Controllers
 
@@ -763,8 +825,10 @@ describe('API specification', () => {
 
 {% include important.html content=" The top-down approach for building LoopBack
 applications is not yet fully supported. Therefore, the code outlined in this
-section is outdated and may not work out of the box. It will be revisitedafter
-our MVP release.
+section is outdated and may not work out of the box. Check out
+https://github.com/strongloop/loopback-next/issues/1882 for the epic tracking
+the feature and [OpenAPI generator](OpenAPI-generator.md) page for artifact
+generation from OpenAPI specs.
 " %}
 
 The formal validity of your application's spec does not guarantee that your
@@ -795,7 +859,7 @@ const Dredd = require('dredd');
 
 describe('API (acceptance)', () => {
   let app: HelloWorldApplication;
-  // tslint:disable no-any
+  /* eslint-disable @typescript-eslint/no-explicit-any */
   let dredd: any;
   before(initEnvironment);
   after(async () => {

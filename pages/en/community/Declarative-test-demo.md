@@ -4,7 +4,7 @@ keywords: automation, e2e, example, loopback, mocha, test
 tags: [community_project]
 sidebar: community_sidebar
 permalink: /doc/en/community/Declarative-test-demo.html
-summary: Example application that demonstrates using lb-declarative-e2e-test to write tests in an object definition style.
+summary: Example LoopBack 3.x application that demonstrates using lb-declarative-e2e-test to write tests in an object definition style.
 ---
 
 ## Links
@@ -16,6 +16,8 @@ Library used:
 [https://www.npmjs.com/package/lb-declarative-e2e-test](https://www.npmjs.com/package/lb-declarative-e2e-test)
 
 ## Overview
+
+This community-contributed component/example is for LoopBack 3.x
 
 This project showcase the different features of [`lb-declarative-e2e-test`](https://www.npmjs.com/package/lb-declarative-e2e-test):
 - Test hooks: `before`, `beforeEach`, `after`, `afterEach`
@@ -75,3 +77,4 @@ npm run test-watch
 ## Requirements
 
 - Node >= 8
+- LoopBack 3.x

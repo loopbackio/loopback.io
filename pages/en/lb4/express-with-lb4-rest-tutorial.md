@@ -35,14 +35,7 @@ application, follow these steps:
     repository:
 
     ```sh
-    $ lb4 example
-    ? What example would you like to clone? (Use arrow keys)
-    todo: Tutorial example on how to build an application with LoopBack 4.
-    todo-list: Continuation of the todo example using relations in LoopBack 4.
-    hello-world: A simple hello-world Application using LoopBack 4.
-    log-extension: An example extension project for LoopBack 4.
-    rpc-server: A basic RPC server using a made-up protocol.
-    > express-composition: A simple Express application that uses LoopBack 4 REST API.
+    lb4 example express-composition
     ```
 
 2.  Switch to the directory.
@@ -67,14 +60,14 @@ Run `lb4 app note` to scaffold your application and fill out the following
 prompts as follows:
 
 ```sh
-$ lb4 app
+$ lb4 app note
 ? Project description: An application for recording notes.
 ? Project root directory: (note)
 ? Application class name: (NoteApplication)
- ◉ Enable tslint: add a linter with pre-configured lint rules
+ ◉ Enable eslint: add a linter with pre-configured lint rules
  ◉ Enable prettier: install prettier to format code conforming to rules
  ◉ Enable mocha: install mocha to run tests
- ◉ Enable loopbackBuild: use @loopback/build helpers (e.g. lb-tslint)
+ ◉ Enable loopbackBuild: use @loopback/build helpers (e.g. lb-eslint)
  ◉ Enable vscode: add VSCode config files
 ❯◯ Enable docker: include Dockerfile and .dockerignore
  ◉ Enable repositories: include repository imports and RepositoryMixin

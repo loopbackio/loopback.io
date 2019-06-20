@@ -1,0 +1,78 @@
+.gs-masthead {
+    text-align: center;
+    color: var(--color-white);
+    background-image: linear-gradient(to bottom, #009cff, #3f5dff);
+    padding: 120px 0px 80px 0px;
+    z-index: 5;
+    position: relative;
+    overflow: hidden;
+}
+  
+.gs-masthead .container-fluid {
+    position: absolute;
+    background-color: var(--color-blue);
+    background: linear-gradient(to top, transparent, #3f5dff), url('../images/getting-started/dot-pattern-2x.png');
+    
+    /*background: url('../img/getting-started/dot-pattern-2x.png');*/
+    opacity: 0.2;
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    padding: 350px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.gs-masthead .header-space {
+    height:80px;
+}
+
+/* tag for steps */
+.steptag {
+    background-color: var(--color-blue-d);
+    text-align: center;
+    border-radius: 5px;
+    color: var(--color-white);
+    border: none;
+    margin-bottom: 16px;
+    padding-left: 14px;
+    padding-right: 14px;
+    float: left;
+}
+
+code {
+    color: black;
+    background-color: var(--color-white-xd);
+    padding: 5px;
+}
+
+code-blue {
+    color: var(--color-blue-d);
+}
+
+p.large.step {
+    padding-top: 10px;
+}
+
+.link {
+    color: var(--color-blue-d);
+}
+.link:hover {
+    color: var(--color-blue-xd);
+    text-decoration: none;
+}
+
+section.odd-section {
+    background-color: var(--color-white-xd);
+}
+section.even-section {
+    background-color: var(--color-white-d);
+}

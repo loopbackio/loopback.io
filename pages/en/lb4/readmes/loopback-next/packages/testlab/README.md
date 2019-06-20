@@ -47,13 +47,16 @@ Table of contents:
 - [sinon](#sinon) - Mocks, stubs and more.
 - [shot](#shot) - HTTP Request/Response stubs.
 - [validateApiSpec](#validateapispec) - Open API Spec validator.
-- [itSkippedOnTravis](#itskippedontravis) - Skip tests on Travis env.
+- [skipIf](#skipif) - Skip tests when a condition is met.
+- [skipOnTravis](#skipontravis) - Skip tests on Travis env.
 - [createRestAppClient](#createrestappclient) - Create a supertest client
   connected to a running RestApplication.
 - [givenHttpServerConfig](#givenhttpserverconfig) - Generate HTTP server config.
 - [httpGetAsync](#httpgetasync) - Async wrapper for HTTP GET requests.
 - [httpsGetAsync](#httpsgetasync) - Async wrapper for HTTPS GET requests.
 - [toJSON](#toJSON) - A helper to obtain JSON data representing a given object.
+- [createUnexpectedHttpErrorLogger](#createUnexpectedHttpErrorLogger) - An error
+  logger that only logs errors for unexpected HTTP statuses.
 
 ### `expect`
 
@@ -80,10 +83,50 @@ by Shot in your unit tests:
 - Code modifying core HTTP Response, including full request/response handlers
 - Code parsing Express HTTP Request or modifying Express HTTP Response
 
-### `itSkippedOnTravis`
+### `skipIf`
+
+Helper function for skipping tests when a certain condition is met. Use this
+helper together with `it` or `describe`.
+
+```ts
+skipIf(someCondition, it, 'does something', async () => {
+  // the test code
+});
+```
+
+Unfortunately, type inference does not work well for `describe`, you have to
+help the compiler to figure out the correct types.
+
+```ts
+skipIf<[(this: Suite) => void], void>(
+  someCondition,
+  describe,
+  'some suite name',
+  () => {
+    // define the test cases
+  },
+);
+```
+
+Under the hood, `skipIf` invokes the provided test verb by default (e.g. `it`).
+When the provided condition was true, then it calls `.skip` instead (e.g.
+`it.skip`).
+
+### `skipOnTravis`
 
 Helper function for skipping tests on Travis environment. If you need to skip
-testing on Travis for any reason, use this instead of Mocha's `it`.
+testing on Travis for any reason, use this helper together with `it` or
+`describe`.
+
+```ts
+skipOnTravis(it, 'does something when some condition', async () => {
+  // the test code
+});
+```
+
+Under the hood, `skipOnTravis` invokes the provided test verb by default (e.g.
+`it`). When the helper detects Travis CI environment variables, then it calls
+`.skip` instead (e.g. `it.skip`).
 
 ### `createRestAppClient`
 
@@ -112,12 +155,12 @@ describe('My application', () => {
 });
 ```
 
-### `givenhttpserverconfig`
+### `givenHttpServerConfig`
 
 Helper function for generating Travis-friendly host (127.0.0.1). This is
 required because Travis is not able to handle IPv6 addresses.
 
-### `httpgetasync`
+### `httpGetAsync`
 
 Async wrapper for making HTTP GET requests.
 
@@ -126,7 +169,7 @@ import {httpGetAsync} from '@loopback/testlab';
 const response = await httpGetAsync('http://example.com');
 ```
 
-### `httpsgetasync`
+### `httpsGetAsync`
 
 Async wrapper for making HTTPS GET requests.
 
@@ -283,6 +326,46 @@ describe('MyApp', () => {
     const app = new MyApp();
     const server = await app.getServer(RestServer);
     await validateApiSpec(server.getApiSpec());
+  });
+});
+```
+
+### `createUnexpectedHttpErrorLogger`
+
+An error logger that logs the error only when the HTTP status code is not the
+expected HTTP status code. This is useful when writing tests for error
+responses:
+
+- When we don't want any error messages printed to the console when the server
+  responds with the expected error and the test passes.
+
+- When something else goes wrong and the server returns an unexpected error
+  status code, and we do want an error message to be printed to the console so
+  that we have enough information to troubleshoot the failing test.
+
+```ts
+import {createUnexpectedHttpErrorLogger} from '@loopback/testlab';
+import {RestApplication} from '@loopback/rest';
+
+describe('MyApp', () => {
+  it('does not log a known 401 error to console', async () => {
+    const app = new RestApplication();
+    const errorLogger = createUnexpectedHttpErrorLogger(401);
+
+    const spec = {
+      responses: {
+        /*...*/
+      },
+    };
+    function throwUnauthorizedError() {
+      throw new HttpErrors.Unauthorized('Unauthorized!');
+    }
+
+    app.route('get', '/', spec, throwUnauthorizedError);
+
+    // binds the custom error logger
+    app.bind(SequenceActions.LOG_ERROR).to(errorLogger);
+    await app.start();
   });
 });
 ```

@@ -15,7 +15,6 @@ _pdf
 *.swp
 *.swo
 node_modules
-dist
 .jekyll-metadata
 vendor
 .bundle

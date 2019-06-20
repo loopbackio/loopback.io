@@ -84,7 +84,7 @@ body h1 {margin-top:40px;}
 
 .lb-search-container {
   padding: 0 10px;
-  background-color: #72ac4a;
+  background-color: var(--color-blue-d);
 }
 
 .lb-search {
@@ -94,7 +94,7 @@ body h1 {margin-top:40px;}
 }
 
 .lb-search input {
-    color: #72ac4a;
+    color: var(--color-blue-d);
 }
 
 .search-bar::placeholder {
@@ -108,11 +108,11 @@ body h1 {margin-top:40px;}
 .resultList a.title {
     font-size: 18px;
     font-weight: bold;
-    color: #72ac4a;
+    color: var(--color-blue-d);
 }
 
 .resultList a.link {
-    color: #72ac4a;
+    color: var(--color-blue-d);
     display: block;
     margin-top: -5px;
     margin-bottom: 5px;
@@ -127,7 +127,7 @@ body h1 {margin-top:40px;}
 }
 
 .resultList li {
-    border-bottom: 1px solid #72ac4a;
+    border-bottom: 1px solid var(--color-blue-d);
     margin-bottom: 5px;
 }
 
@@ -138,7 +138,7 @@ body h1 {margin-top:40px;}
 }
 
 .pagination a {
-    color: #72ac4a;
+    color: var(--color-blue-d);
 }
 
 /* End of Search CSS */

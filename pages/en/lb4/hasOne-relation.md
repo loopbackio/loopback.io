@@ -8,6 +8,13 @@ permalink: /doc/en/lb4/hasOne-relation.html
 
 ## Overview
 
+{% include note.html content="
+This relation best works with databases that support foreign key and unique
+constraints (SQL).
+Using this relation with NoSQL databases will result in unexpected behavior,
+such as the ability to create a relation with a model that does not exist. We are [working on a solution](https://github.com/strongloop/loopback-next/issues/2341) to better handle this. It is fine to use this relation with NoSQL databases for purposes such as navigating related models, where the referential integrity is not critical.
+" %}
+
 A `hasOne` relation denotes a one-to-one connection of a model to another model
 through referential integrity. The referential integrity is enforced by a
 foreign key constraint on the target model which usually references a primary
@@ -50,7 +57,7 @@ defined on a source model `Supplier` in the example below:
 {% include code-caption.html content="/src/models/supplier.model.ts" %}
 
 ```ts
-import {Account} from './account.model';
+import {Account, AccountWithRelations} from './account.model';
 import {Entity, property, hasOne} from '@loopback/repository';
 
 export class Supplier extends Entity {
@@ -73,13 +80,19 @@ export class Supplier extends Entity {
     super(data);
   }
 }
+
+export interface SupplierRelations {
+  account?: AccountWithRelations;
+}
+
+export type SupplierWithRelations = Supplier & SupplierRelations;
 ```
 
 On the other side of the relation, we'd need to declare a `belongsTo` relation
 since every `Account` has to belong to exactly one `Supplier`:
 
 ```ts
-import {Supplier} from './supplier.model';
+import {Supplier, SupplierWithRelations} from './supplier.model';
 import {Entity, property, belongsTo} from '@loopback/repository';
 
 export class Account extends Entity {
@@ -101,6 +114,12 @@ export class Account extends Entity {
     super(data);
   }
 }
+
+export interface AccountRelations {
+  supplier?: SupplierWithRelations;
+}
+
+export type AccountWithRelations = Account & AccountRelations;
 ```
 
 The definition of the `hasOne` relation is inferred by using the `@hasOne`
@@ -183,7 +202,7 @@ The following code snippet shows how it would look like:
 content="/src/repositories/supplier.repository.ts" %}
 
 ```ts
-import {Account, Supplier} from '../models';
+import {Account, Supplier, SupplierRelations} from '../models';
 import {AccountRepository} from './account.repository';
 import {
   DefaultCrudRepository,
@@ -195,7 +214,8 @@ import {inject, Getter} from '@loopback/core';
 
 export class SupplierRepository extends DefaultCrudRepository<
   Supplier,
-  typeof Supplier.prototype.id
+  typeof Supplier.prototype.id,
+  SupplierRelations
 > {
   public readonly account: HasOneRepositoryFactory<
     Account,
@@ -206,7 +226,7 @@ export class SupplierRepository extends DefaultCrudRepository<
     @repository.getter('AccountRepository')
     getAccountRepository: Getter<AccountRepository>,
   ) {
-    super(Customer, db);
+    super(Supplier, db);
     this.account = this.createHasOneRepositoryFactoryFor(
       'account',
       getAccountRepository,
@@ -220,9 +240,9 @@ factory `Account` for instances of `supplierRepository`:
 
 - `create` for creating an `Account` model instance belonging to `Supplier`
   model instance
-  ([API Docs](https://apidocs.strongloop.com/@loopback%2fdocs/repository.html#HasOneRepository.prototype.create))
+  ([API Docs](https://loopback.io/doc/en/lb4/apidocs.repository.hasonerepository.create.html))
 - `get` finding the target model instance belonging to `Supplier` model instance
-  ([API Docs](https://apidocs.strongloop.com/@loopback%2fdocs/repository.html#HasOneRepository.prototype.get))
+  ([API Docs](https://loopback.io/doc/en/lb4/apidocs.repository.hasonerepository.get.html))
 
 ## Using hasOne constrained repository in a controller
 
@@ -240,8 +260,8 @@ content="src/controllers/supplier-account.controller.ts" %}
 
 ```ts
 import {post, param, requestBody} from '@loopback/rest';
-import {CustomerRepository} from '../repositories/';
-import {Customer, Account} from '../models/';
+import {SupplierRepository} from '../repositories/';
+import {Supplier, Account} from '../models/';
 import {repository} from '@loopback/repository';
 
 export class SupplierAccountController {
@@ -252,7 +272,7 @@ export class SupplierAccountController {
 
   @post('/suppliers/{id}/account')
   async createAccount(
-    @param.path.number('id') supplierId: typeof Suppllier.prototype.id,
+    @param.path.number('id') supplierId: typeof Supplier.prototype.id,
     @requestBody() accountData: Account,
   ): Promise<Account> {
     return await this.supplierRepository

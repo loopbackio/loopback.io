@@ -4063,8 +4063,8 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .pagination > .active > span:focus {
   z-index: 2;
   color: #ffffff;
-  background-color: #74ab50;
-  border-color: #74ab50;
+  background-color: var(--color-blue-d);
+  border-color: var(--color-blue-d);
   cursor: default;
 }
 .pagination > .disabled > span,

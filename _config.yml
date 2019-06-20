@@ -105,6 +105,7 @@ sidebars:
   - community_sidebar
   - security_sidebar
   - es_lb4_sidebar
+  - es_lb2_sidebar
   - fr_lb2_sidebar
   - ja_lb3_sidebar
   - ja_lb2_sidebar
@@ -114,6 +115,8 @@ sidebars:
   - zh_lb2_sidebar
   - pt-br_lb2_sidebar
   - pt-br_lb4_sidebar
+  - fr_lb4_sidebar
+  - ja_lb4_sidebar
 
 # description: "Documentation for the LoopBack framework"
 # the description is used in the feed.xml file

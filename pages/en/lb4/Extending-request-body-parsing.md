@@ -43,12 +43,12 @@ export interface BodyParser {
   name: string | symbol;
   /**
    * Indicate if the given media type is supported
-   * @param mediaType Media type
+   * @param mediaType - Media type
    */
   supports(mediaType: string): boolean;
   /**
    * Parse the request body
-   * @param request http request
+   * @param request - http request
    */
   parse(request: Request): Promise<RequestBody>;
 }
@@ -122,7 +122,13 @@ the following configuration:
   },
   text: {
     limit: '2MB'
-  }
+  },
+  /**
+   * Validation options for AJV, see https://github.com/epoberezkin/ajv#options
+   * This setting is global for all request body parsers and it cannot be
+   * overridden inside parser specific properties such as `json` or `text`.
+   */
+  validation: {nullable: true},
 }
 ```
 

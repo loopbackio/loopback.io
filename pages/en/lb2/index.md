@@ -8,7 +8,7 @@ keywords: LoopBack 2.x
 tags: [getting_started]
 sidebar: lb2_sidebar
 permalink: /doc/en/lb2/index.html
-summary: LoopBack 2.x is the maintenance long-term support (LTS) release.
+summary: LoopBack 2.x has reached end-of-life in April 2019. It is no longer supported.
 ---
 {% include important.html content="If you're new to LoopBack, use the current release,
 [LoopBack 4.0](/doc/en/lb4/index.html).

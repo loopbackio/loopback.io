@@ -29,7 +29,7 @@ Run the following command to install the CLI.
             --services         # Include service-proxy imports and ServiceMixin
             --description      # Description for the application
             --outdir           # Project root directory for the application
-            --tslint           # Enable tslint
+            --eslint           # Enable eslint
             --prettier         # Enable prettier
             --mocha            # Enable mocha
             --loopbackBuild    # Use @loopback/build
@@ -59,7 +59,7 @@ Run the following command to install the CLI.
             --componentName  # Component name
             --description    # Description for the extension
             --outdir         # Project root directory for the extension
-            --tslint         # Enable tslint
+            --eslint         # Enable eslint
             --prettier       # Enable prettier
             --mocha          # Enable mocha
             --loopbackBuild  # Use @loopback/build
@@ -222,6 +222,8 @@ Run the following command to install the CLI.
       rpc-server: A basic RPC server using a made-up protocol.
       soap-calculator: An example on how to integrate SOAP web services
       express-composition: A simple Express application that uses LoopBack 4 REST API.
+      greeter-extension: An example showing how to implement the extension point/extension pattern.
+      lb3-application: An example LoopBack 3 application mounted in a LoopBack 4 project.
     ```
 
 9.  To generate artifacts from an OpenAPI spec into your application
@@ -251,7 +253,110 @@ Run the following command to install the CLI.
       url  # URL or file path of the OpenAPI spec  Type: String  Required: false
     ```
 
-10. To list available commands
+10. To generate a life cycle observer class
+
+    ```sh
+    cd <your-project-directory>
+    lb4 observer
+    ```
+
+    ```sh
+    Usage:
+      lb4 observer [<name>] [options]
+
+    Options:
+      -h,   --help           # Print the generator's options and usage
+            --skip-cache     # Do not remember prompt answers                                Default: false
+            --skip-install   # Do not automatically install dependencies                     Default: false
+            --force-install  # Fail on install dependencies error                            Default: false
+            --group          # Name of the observer group for ordering
+      -c,   --config         # JSON file name or value to configure options
+      -y,   --yes            # Skip all confirmation prompts with default or provided value
+            --format         # Format generated code using npm run lint:fix
+
+    Arguments:
+      name  # Name for the observer  Type: String  Required: false
+
+    ```
+
+11. To generate an interceptor provider class
+
+    ```sh
+    cd <your-project-directory>
+    lb4 interceptor
+    ```
+
+    ```sh
+    Usage:
+      lb4 interceptor [<name>] [options]
+
+    Options:
+      -h,   --help           # Print the generator's options and usage
+            --skip-cache     # Do not remember prompt answers                                Default: false
+            --skip-install   # Do not automatically install dependencies                     Default: false
+            --force-install  # Fail on install dependencies error                            Default: false
+            --group          # Name of the interceptor group for ordering
+      -c,   --config         # JSON file name or value to configure options
+      -y,   --yes            # Skip all confirmation prompts with default or provided value
+            --format         # Format generated code using npm run lint:fix
+
+    Arguments:
+      name  # Name for the interceptor  Type: String  Required: false
+
+    ```
+
+12. To discover a model from a supported datasource
+
+    ```sh
+    cd <your-project-directory>
+    lb4 discover
+      lb4 discover [<name>] [options]
+
+    Options:
+      -h,    --help           # Print the generator's options and usage
+             --skip-cache     # Do not remember prompt answers                                              Default: false
+             --skip-install   # Do not automatically install dependencies                                   Default: false
+             --force-install  # Fail on install dependencies error                                          Default: false
+      -c,    --config         # JSON file name or value to configure options
+      -y,    --yes            # Skip all confirmation prompts with default or provided value
+             --format         # Format generated code using npm run lint:fix
+      -ds,   --dataSource     # The name of the datasource to discover
+             --views          # Boolean to discover views                                                   Default: true
+             --schema         # Schema to discover
+             --all            # Discover all models without prompting users to select                       Default: false
+             --outDir         # Specify the directory into which the `model.model.ts` files will be placed
+
+    Arguments:
+      name  # Name for the discover  Type: String  Required: false
+    ```
+
+13. To generate relation into your application
+
+    ```sh
+    cd <your-project-directory>
+    lb4 relation
+    ```
+
+    ```sh
+    Usage:
+      lb4 relation [options]
+
+    Options:
+      -h,   --help              # Print the generator's options and usage
+            --skip-cache        # Do not remember prompt answers                                Default: false
+            --skip-install      # Do not automatically install dependencies                     Default: false
+            --force-install     # Fail on install dependencies error                            Default: false
+            --relationType      # Relation type
+            --sourceModel       # Source model
+            --destinationModel  # Destination model
+            --foreignKeyName    # Destination model foreign key name
+            --relationName      # Relation name
+      -c,   --config            # JSON file name or value to configure options
+      -y,   --yes               # Skip all confirmation prompts with default or provided value
+            --format            # Format generated code using npm run lint:fix
+    ```
+
+14. To list available commands
 
     `lb4 --commands` (or `lb4 -l`)
 
@@ -266,11 +371,15 @@ Run the following command to install the CLI.
       lb4 service
       lb4 example
       lb4 openapi
+      lb4 relation
+      lb4 observer
+      lb4 interceptor
+      lb4 discover
     ```
 
     Please note `lb4 --help` also prints out available commands.
 
-11. To print out version information
+15. To print out version information
 
     `lb4 --version` (or `lb4 -v`)
 

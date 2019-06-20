@@ -8,6 +8,13 @@ permalink: /doc/en/lb4/HasMany-relation.html
 
 ## Overview
 
+{% include note.html content="
+This relation best works with databases that support foreign key
+constraints (SQL).
+Using this relation with NoSQL databases will result in unexpected behavior,
+such as the ability to create a relation with a model that does not exist. We are [working on a solution](https://github.com/strongloop/loopback-next/issues/2341) to better handle this. It is fine to use this relation with NoSQL databases for purposes such as navigating related models, where the referential integrity is not critical.
+" %}
+
 A `hasMany` relation denotes a one-to-many connection of a model to another
 model through referential integrity. The referential integrity is enforced by a
 foreign key constraint on the target model which usually references a primary
@@ -25,9 +32,11 @@ To add a `hasMany` relation to your LoopBack application and expose its related
 routes, you need to perform the following steps:
 
 1.  Add a property to your model to access related model instances.
-2.  Modify the source model repository class to provide access to a constrained
+2.  Add a foreign key property in the target model referring to the source
+    model's id.
+3.  Modify the source model repository class to provide access to a constrained
     target model repository.
-3.  Call the constrained target model repository CRUD APIs in your controller
+4.  Call the constrained target model repository CRUD APIs in your controller
     methods.
 
 ## Defining a hasMany Relation
@@ -85,9 +94,88 @@ as follows:
 // import statements
 class Customer extends Entity {
   // constructor, properties, etc.
-  @hasMany(() => Order, {keyTo: 'custId'})
+  @hasMany(() => Order, {keyTo: 'customerId'})
   orders?: Order[];
 }
+```
+
+Add the source model's id as the foreign key property (`customerId`) in the
+target model.
+
+{% include code-caption.html content="/src/models/order.model.ts" %}
+
+```ts
+import {Entity, model, property} from '@loopback/repository';
+
+@model()
+export class Order extends Entity {
+  @property({
+    type: 'number',
+    id: true,
+    required: true,
+  })
+  id: number;
+
+  @property({
+    type: 'string',
+    required: true,
+  })
+  name: string;
+
+  @property({
+    type: 'number',
+  })
+  customerId?: number;
+
+  constructor(data?: Partial<Order>) {
+    super(data);
+  }
+}
+
+export interface OrderRelations {
+  // describe navigational properties here
+}
+
+export type OrderWithRelations = Order & OrderRelations;
+```
+
+The foreign key property (`customerId`) in the target model can be added via a
+corresponding [belongsTo](BelongsTo-relation.md) relation, too.
+
+{% include code-caption.html content="/src/models/order.model.ts" %}
+
+```ts
+import {Entity, model, property, belongsTo} from '@loopback/repository';
+import {Customer, CustomerWithRelations} from './customer.model';
+
+@model()
+export class Order extends Entity {
+  @property({
+    type: 'number',
+    id: true,
+    required: true,
+  })
+  id: number;
+
+  @property({
+    type: 'string',
+    required: true,
+  })
+  name: string;
+
+  @belongsTo(() => Customer)
+  customerId: number;
+
+  constructor(data?: Partial<Order>) {
+    super(data);
+  }
+}
+
+export interface OrderRelations {
+  customer?: CustomerWithRelations;
+}
+
+export type OrderWithRelations = Order & OrderRelations;
 ```
 
 ## Configuring a hasMany relation
@@ -119,7 +207,7 @@ The following code snippet shows how it would look like:
 content="/src/repositories/customer.repository.ts" %}
 
 ```ts
-import {Order, Customer} from '../models';
+import {Order, Customer, CustomerRelations} from '../models';
 import {OrderRepository} from './order.repository';
 import {
   DefaultCrudRepository,
@@ -131,7 +219,8 @@ import {inject, Getter} from '@loopback/core';
 
 export class CustomerRepository extends DefaultCrudRepository<
   Customer,
-  typeof Customer.prototype.id
+  typeof Customer.prototype.id,
+  CustomerRelations
 > {
   public readonly orders: HasManyRepositoryFactory<
     Order,
@@ -156,15 +245,15 @@ factory `orders` for instances of `customerRepository`:
 
 - `create` for creating a target model instance belonging to customer model
   instance
-  ([API Docs](https://apidocs.strongloop.com/@loopback%2fdocs/repository.html#HasManyRepository.prototype.create))
+  ([API Docs](https://loopback.io/doc/en/lb4/apidocs.repository.hasmanyrepository.create.html))
 - `find` finding target model instance(s) belonging to customer model instance
-  ([API Docs](https://apidocs.strongloop.com/@loopback%2fdocs/repository.html#HasManyRepository.prototype.find))
+  ([API Docs](https://loopback.io/doc/en/lb4/apidocs.repository.hasmanyrepository.find.html))
 - `delete` for deleting target model instance(s) belonging to customer model
   instance
-  ([API Docs](https://apidocs.strongloop.com/@loopback%2fdocs/repository.html#HasManyRepository.prototype.delete))
+  ([API Docs](https://loopback.io/doc/en/lb4/apidocs.repository.hasmanyrepository.delete.html))
 - `patch` for patching target model instance(s) belonging to customer model
   instance
-  ([API Docs](https://apidocs.strongloop.com/@loopback%2fdocs/repository.html#HasManyRepository.prototype.patch))
+  ([API Docs](https://loopback.io/doc/en/lb4/apidocs.repository.hasmanyrepository.patch.html))
 
 For **updating** (full replace of all properties on a `PUT` endpoint for
 instance) a target model you have to directly use this model repository. In this
