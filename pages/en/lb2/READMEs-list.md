@@ -16,7 +16,6 @@ summary:
 - loopback-connector-db2
 - loopback-connector-db2iseries
 - loopback-connector-db2z
-- loopback-connector-ibmi
 - loopback-connector-informix
 - loopback-connector-jsonrpc
 - loopback-connector-kv-redis
