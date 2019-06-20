@@ -44,8 +44,8 @@ topnav_dropdowns:
         folderitems:
           - title: 'Español (v4)'
             url: /doc/es/lb4/
-          - title: "Español (v2)"
-          url: /doc/es/lb2/
+          - title: 'Español (v2)'
+            url: /doc/es/lb2/
           - title: 'Français (v2)'
             url: /doc/fr/lb2/
           - title: '한국어 (v3)'
@@ -62,9 +62,9 @@ topnav_dropdowns:
             url: /doc/ja/lb2/
           - title: 'Pусский (v2)'
             url: /doc/ru/lb2/
-          - title: "Français (v4)"
+          - title: 'Français (v4)'
             url: /doc/fr/lb4/
-          - title: "日本語 (v4)"
+          - title: '日本語 (v4)'
             url: /doc/ja/lb4/
           - title: '中文 (v2)'
             url: /doc/zh/lb2/
