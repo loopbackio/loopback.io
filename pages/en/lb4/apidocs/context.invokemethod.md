@@ -12,12 +12,12 @@ permalink: /doc/en/lb4/apidocs.context.invokemethod.html
 
 ## invokeMethod() function
 
-Invoke an instance method with dependency injection
+Invoke a method using dependency injection. Interceptors are invoked as part of the invocation.
 
 <b>Signature:</b>
 
 ```typescript
-export declare function invokeMethod(target: object, method: string, ctx: Context, nonInjectedArgs?: any[]): ValueOrPromise<BoundValue>;
+export declare function invokeMethod(target: object, method: string, ctx: Context, nonInjectedArgs?: InvocationArgs, options?: InvocationOptions): ValueOrPromise<InvocationResult>;
 ```
 
 ## Parameters
@@ -26,11 +26,12 @@ export declare function invokeMethod(target: object, method: string, ctx: Contex
 |  --- | --- | --- |
 |  target | <code>object</code> | Target of the method, it will be the class for a static method, and instance or class prototype for a prototype method |
 |  method | <code>string</code> | Name of the method |
-|  ctx | <code>Context</code> | Context |
-|  nonInjectedArgs | <code>any[]</code> | Optional array of args for non-injected parameters |
+|  ctx | <code>Context</code> | Context object |
+|  nonInjectedArgs | <code>InvocationArgs</code> | Optional array of args for non-injected parameters |
+|  options | <code>InvocationOptions</code> | Options for the invocation |
 
 <b>Returns:</b>
 
-`ValueOrPromise<BoundValue>`
+`ValueOrPromise<InvocationResult>`
 
 

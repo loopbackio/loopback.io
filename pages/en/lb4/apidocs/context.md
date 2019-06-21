@@ -23,6 +23,8 @@ permalink: /doc/en/lb4/apidocs.context.html
 |  [Context](./context.context.md) | Context provides an implementation of Inversion of Control (IoC) container |
 |  [ContextView](./context.contextview.md) | <code>ContextView</code> provides a view for a given context chain to maintain a live list of matching bindings and their resolved values within the context hierarchy.<!-- -->This class is the key utility to implement dynamic extensions for extension points. For example, the RestServer can react to <code>controller</code> bindings even they are added/removed/updated after the application starts.<code>ContextView</code> is an event emitter that emits the following events: - 'close': when the view is closed (stopped observing context events) - 'refresh': when the view is refreshed as bindings are added/removed - 'resolve': when the cached values are resolved and updated |
 |  [DefaultConfigurationResolver](./context.defaultconfigurationresolver.md) | Resolver for configurations of bindings |
+|  [GenericInterceptorChain](./context.genericinterceptorchain.md) | A chain of generic interceptors to be invoked for the given context |
+|  [InterceptedInvocationContext](./context.interceptedinvocationcontext.md) | A specialized InvocationContext for interceptors |
 |  [InterceptionHandler](./context.interceptionhandler.md) | A proxy handler that applies interceptors<!-- -->See https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global\_Objects/Proxy |
 |  [InvocationContext](./context.invocationcontext.md) | InvocationContext represents the context to invoke interceptors for a method. The context can be used to access metadata about the invocation as well as other dependencies. |
 |  [ResolutionSession](./context.resolutionsession.md) | Object to keep states for a session to resolve bindings and their dependencies within a context |
@@ -66,7 +68,8 @@ permalink: /doc/en/lb4/apidocs.context.html
 |  [inspectTargetType(injection)](./context.inspecttargettype.md) | Inspect the target type for the injection to find out the corresponding JavaScript type |
 |  [instantiateClass(ctor, ctx, session, nonInjectedArgs)](./context.instantiateclass.md) | Create an instance of a class which constructor has arguments decorated with <code>@inject</code>.<!-- -->The function returns a class when all dependencies were resolved synchronously, or a Promise otherwise. |
 |  [intercept(interceptorOrKeys)](./context.intercept.md) | Decorator function <code>@intercept</code> for classes/methods to apply interceptors. It can be applied on a class and its public methods. Multiple occurrences of <code>@intercept</code> are allowed on the same target class or method. The decorator takes a list of <code>interceptor</code> functions or binding keys. |
-|  [invokeMethod(target, method, ctx, nonInjectedArgs)](./context.invokemethod.md) | Invoke an instance method with dependency injection |
+|  [invokeInterceptors(context, interceptors)](./context.invokeinterceptors.md) | Invoke a chain of interceptors with the context |
+|  [invokeMethod(target, method, ctx, nonInjectedArgs, options)](./context.invokemethod.md) | Invoke a method using dependency injection. Interceptors are invoked as part of the invocation. |
 |  [invokeMethodWithInterceptors(context, target, methodName, args)](./context.invokemethodwithinterceptors.md) | Invoke a method with the given context |
 |  [isBindingAddress(bindingSelector)](./context.isbindingaddress.md) | Type guard for binding address |
 |  [isPromiseLike(value)](./context.ispromiselike.md) | Check whether a value is a Promise-like instance. Recognizes both native promises and third-party promise libraries. |
@@ -142,11 +145,15 @@ permalink: /doc/en/lb4/apidocs.context.html
 |  [ContextEventObserver](./context.contexteventobserver.md) | Context event observer type - An instance of <code>ContextObserver</code> or a function |
 |  [ContextEventType](./context.contexteventtype.md) | Context event types. We support <code>bind</code> and <code>unbind</code> for now but keep it open for new types |
 |  [ContextObserverFn](./context.contextobserverfn.md) | Listen on <code>bind</code>, <code>unbind</code>, or other events |
+|  [GenericInterceptor](./context.genericinterceptor.md) | An interceptor function to be invoked in a chain for the given context. It serves as the base interface for various types of interceptors, such as method invocation interceptor or request/response processing interceptor. |
+|  [GenericInterceptorOrKey](./context.genericinterceptororkey.md) | Interceptor function or a binding key that resolves a generic interceptor function |
 |  [Getter](./context.getter.md) | The function injected by <code>@inject.getter(bindingSelector)</code>. It can be used to fetch bound value(s) from the underlying binding(s). The return value will be an array if the <code>bindingSelector</code> is a <code>BindingFilter</code> function. |
 |  [InterceptorOrKey](./context.interceptororkey.md) | Interceptor function or binding key that can be used as parameters for <code>@intercept()</code> |
 |  [InvocationArgs](./context.invocationargs.md) | Array of arguments for a method invocation |
+|  [InvocationOptions](./context.invocationoptions.md) | Options to control invocations |
 |  [InvocationResult](./context.invocationresult.md) | Return value for a method invocation |
 |  [MapObject](./context.mapobject.md) |  |
+|  [Next](./context.next.md) | The <code>next</code> function that can be used to invoke next generic interceptor in the chain |
 |  [Notification](./context.notification.md) | Event data for observer notifications |
 |  [ResolutionAction](./context.resolutionaction.md) | A function to be executed with the resolution session |
 |  [ResolutionElement](./context.resolutionelement.md) | Binding or injection elements tracked by resolution sessions |

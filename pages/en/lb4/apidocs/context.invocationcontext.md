@@ -43,9 +43,7 @@ export declare class InvocationContext extends Context
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
 |  [assertMethodExists()](./context.invocationcontext.assertmethodexists.md) |  | Assert the method exists on the target. An error will be thrown if otherwise. |
-|  [getGlobalInterceptorBindingKeys()](./context.invocationcontext.getglobalinterceptorbindingkeys.md) |  | Discover all binding keys for global interceptors (tagged by ContextTags.GLOBAL\_INTERCEPTOR) |
 |  [invokeTargetMethod()](./context.invocationcontext.invoketargetmethod.md) |  | Invoke the target method with the given context |
-|  [loadInterceptors()](./context.invocationcontext.loadinterceptors.md) |  | Load all interceptors for the given invocation context. It adds interceptors from possibly three sources: 1. method level <code>@intercept</code> 2. class level <code>@intercept</code> 3. global interceptors discovered in the context |
 |  [toString()](./context.invocationcontext.tostring.md) |  |  |
 
 

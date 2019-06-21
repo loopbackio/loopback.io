@@ -17,6 +17,6 @@ Interceptor function or binding key that can be used as parameters for `@interce
 <b>Signature:</b>
 
 ```typescript
-export declare type InterceptorOrKey = BindingAddress<Interceptor> | Interceptor;
+export declare type InterceptorOrKey = GenericInterceptorOrKey<InvocationContext>;
 ```
 

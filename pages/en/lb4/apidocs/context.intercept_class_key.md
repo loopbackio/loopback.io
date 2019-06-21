@@ -17,6 +17,6 @@ Metadata key for method-level interceptors
 <b>Signature:</b>
 
 ```typescript
-INTERCEPT_CLASS_KEY: MetadataAccessor<InterceptorOrKey[], ClassDecorator>
+INTERCEPT_CLASS_KEY: MetadataAccessor<GenericInterceptorOrKey<InvocationContext>[], ClassDecorator>
 ```
 

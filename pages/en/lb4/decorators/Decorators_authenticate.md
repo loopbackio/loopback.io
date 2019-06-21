@@ -8,7 +8,7 @@ permalink: /doc/en/lb4/Decorators_authenticate.html
 
 ## Authentication Decorator
 
-Syntax: `@authenticate(strategyName: string, options?: Object)`
+Syntax: `@authenticate(strategyName: string, options?: object)`
 
 Marks a controller method as needing an authenticated user. This decorator
 requires a strategy name as a parameter.
@@ -39,6 +39,9 @@ export class WhoAmIController {
   }
 }
 ```
+
+{% include note.html content="If only <b>some</b> of the controller methods are decorated with the <b>@authenticate</b> decorator, then the injection decorator for CURRENT_USER in the controller's constructor must be specified as <b>@inject(AuthenticationBindings.CURRENT_USER, {optional:true})</b> to avoid a binding error when an unauthenticated endpoint is accessed. Alternatively, do not inject CURRENT_USER in the controller <b>constructor</b>, but in the controller <b>methods</b> which are actually decorated with the <b>@authenticate</b> decorator. See [Method Injection](../Dependency-injection.md#method-injection), [Constructor Injection](../Dependency-injection.md#constructor-injection) and [Optional Dependencies](../Dependency-injection.md#optional-dependencies) for details.
+" %}
 
 For more information on authentication with LoopBack, visit
 [here](../Loopback-component-authentication.md).

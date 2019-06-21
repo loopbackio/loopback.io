@@ -17,6 +17,6 @@ Interceptor function to intercept method invocations
 <b>Signature:</b>
 
 ```typescript
-export interface Interceptor 
+export interface Interceptor extends GenericInterceptor<InvocationContext> 
 ```
 

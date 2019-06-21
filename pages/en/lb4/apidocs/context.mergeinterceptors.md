@@ -21,7 +21,7 @@ For example:
 <b>Signature:</b>
 
 ```typescript
-export declare function mergeInterceptors(interceptorsFromSpec: InterceptorOrKey[], existingInterceptors: InterceptorOrKey[]): InterceptorOrKey[];
+export declare function mergeInterceptors(interceptorsFromSpec: InterceptorOrKey[], existingInterceptors: InterceptorOrKey[]): GenericInterceptorOrKey<InvocationContext>[];
 ```
 
 ## Parameters
@@ -33,6 +33,6 @@ export declare function mergeInterceptors(interceptorsFromSpec: InterceptorOrKey
 
 <b>Returns:</b>
 
-`InterceptorOrKey[]`
+`GenericInterceptorOrKey<InvocationContext>[]`
 
 
