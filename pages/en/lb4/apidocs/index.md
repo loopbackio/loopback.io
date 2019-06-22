@@ -20,7 +20,6 @@ permalink: /doc/en/lb4/apidocs.index.html
 - [@loopback/openapi-v3-types](openapi-v3-types.md)
 - [@loopback/repository](repository.md)
 - [@loopback/repository-json-schema](repository-json-schema.md)
-- [@loopback/repository-tests](repository-tests.md)
 - [@loopback/rest](rest.md)
 - [@loopback/rest-explorer](rest-explorer.md)
 - [@loopback/service-proxy](service-proxy.md)
