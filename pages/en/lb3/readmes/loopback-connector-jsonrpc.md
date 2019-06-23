@@ -10,7 +10,7 @@
     <h1>Error 503 first byte timeout</h1>
     <p>first byte timeout</p>
     <h3>Guru Mediation:</h3>
-    <p>Details: cache-mdw17350-MDW 1561327282 3965926522</p>
+    <p>Details: cache-mdw17350-MDW 1561329021 3989536306</p>
     <hr>
     <p>Varnish cache server</p>
   </body>
