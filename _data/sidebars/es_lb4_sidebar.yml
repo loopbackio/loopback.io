@@ -20,7 +20,7 @@ children:
 - title: 'Tutoriales'
   url: Tutorials.html
   output: 'web, pdf'
-  translated: false
+  translated: true
   children:
 
   - title: 'Todo Tutorial'
