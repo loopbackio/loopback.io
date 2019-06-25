@@ -15,7 +15,7 @@ children:
 - title: 'Iniciando'
   url: Getting-started.html
   output: 'web, pdf'
-  translated: false
+  translated: true
 
 - title: 'Tutoriales'
   url: Tutorials.html
