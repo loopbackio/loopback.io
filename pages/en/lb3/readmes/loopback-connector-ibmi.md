@@ -119,8 +119,8 @@ db.autoupdate('User', function(err) {
   }
 
   User.create({
-    name: 'Tony',
-    email: 'tony@t.com',
+    name: 'User',
+    email: 'email@example.com',
   }, function(err, user) {
     console.log(err, user);
   });
