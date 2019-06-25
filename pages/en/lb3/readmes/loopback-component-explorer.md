@@ -195,7 +195,7 @@ Module Long Term Support (LTS)](http://github.com/CloudNativeJS/ModuleLTS) polic
 
 | Version | Status          | Published | EOL      |
 | ------- | --------------- | --------- | -------- |
-| 6.x     | Active LTS      | Apr 2018  | Dec 2019 |
+| 6.x     | Active LTS      | Apr 2018  | Dec 2020 |
 | 5.x     | Maintenance LTS | Sep 2017  | Dec 2019 |
 | 4.x     | End-of-Life     | Dec 2016  | Apr 2019 |
 
