@@ -18,8 +18,7 @@ Metadata key used to set or retrieve repository JSON Schema
 
 ```typescript
 JSON_SCHEMA_KEY: MetadataAccessor<{
-    modelOnly: JSONSchema;
-    modelWithRelations: JSONSchema;
+    [key: string]: JSONSchema;
 }, ClassDecorator>
 ```
 

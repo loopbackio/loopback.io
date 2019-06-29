@@ -18,7 +18,7 @@ permalink: /doc/en/lb4/apidocs.repository-json-schema.html
 
 |  Enumeration | Description |
 |  --- | --- |
-|  [MODEL\_TYPE\_KEYS](./repository-json-schema.model_type_keys.md) |  |
+|  [MODEL\_TYPE\_KEYS](./repository-json-schema.model_type_keys.md) | TODO(semver-major) remove these constants in the next major version |
 
 ## Functions
 

@@ -19,7 +19,6 @@ permalink: /doc/en/lb4/apidocs.authentication.html
 |  Class | Description |
 |  --- | --- |
 |  [AuthenticationComponent](./authentication.authenticationcomponent.md) |  |
-|  [StrategyAdapter](./authentication.strategyadapter.md) |  |
 
 ## Functions
 

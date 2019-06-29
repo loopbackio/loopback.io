@@ -24,6 +24,6 @@ export interface RequestBodyValidationOptions extends ajv.Options
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [compiledSchemaCache](./rest.requestbodyvalidationoptions.compiledschemacache.md) | <code>WeakMap&lt;SchemaObject &#124; ReferenceObject, ajv.ValidateFunction&gt;</code> | Custom cache for compiled schemas by AJV. This setting makes it possible to skip the default cache. |
+|  [compiledSchemaCache](./rest.requestbodyvalidationoptions.compiledschemacache.md) | <code>SchemaValidatorCache</code> | Custom cache for compiled schemas by AJV. This setting makes it possible to skip the default cache. |
 
 

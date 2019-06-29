@@ -17,6 +17,6 @@ Custom cache for compiled schemas by AJV. This setting makes it possible to skip
 <b>Signature:</b>
 
 ```typescript
-compiledSchemaCache?: WeakMap<SchemaObject | ReferenceObject, ajv.ValidateFunction>;
+compiledSchemaCache?: SchemaValidatorCache;
 ```
 

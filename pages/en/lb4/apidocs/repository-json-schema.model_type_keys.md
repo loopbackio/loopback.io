@@ -12,6 +12,13 @@ permalink: /doc/en/lb4/apidocs.repository-json-schema.model_type_keys.html
 
 ## MODEL\_TYPE\_KEYS enum
 
+> Warning: This API is now obsolete.
+> 
+> Use the helper `buildModelCacheKey` to obtain the cache key for a given set of schema options.
+> 
+
+TODO(semver-major) remove these constants in the next major version
+
 <b>Signature:</b>
 
 ```typescript

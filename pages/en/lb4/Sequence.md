@@ -47,7 +47,7 @@ building sequences, you use LoopBack Elements to respond to a request:
   docs link
 - [`OperationRetVal`](https://loopback.io/doc/en/lb4/apidocs.rest.operationretval.html)
 - [`ParseParams`](https://loopback.io/doc/en/lb4/apidocs.rest.parseparams.html)
-- [`OpenAPISpec`](https://loopback.io/doc/en/lb4/apidocs.openapi-v3-types.openapispec.html)
+- [`OpenAPISpec`](https://loopback.io/doc/en/lb4/apidocs.openapi-v3.openapispec.html)
 
 ## Actions
 
@@ -215,16 +215,16 @@ is called, it will make use of your function instead! You can use this approach
 to override any of the actions listed under the `RestBindings.SequenceActions`
 namespace.
 
-### Query string parameters
+### Query string parameters and path parameters
 
 OAI 3.0.x describes the data from a request’s header, query and path in an
 operation specification’s parameters property. In a Controller method, such an
 argument is typically decorated by @param(). We've made multiple shortcuts
 available to the `@param()` decorator in the form of
-`@param.<http_source>.<OAI_primitive_type>`. Using this notation, query string
-parameters can be described as `@param.query.string`. Here is an example of a
+`@param.<http_source>.<OAI_primitive_type>`. Using this notation, path
+parameters can be described as `@param.path.string`. Here is an example of a
 controller method which retrieves a Note model instance by obtaining the `id`
-from the query string object.
+from the path object.
 
 ```ts
 @get('/notes/{id}', {
@@ -235,7 +235,7 @@ from the query string object.
     },
   },
 })
-async findById(@param.query.string('id') id: string): Promise<Note> {
+async findById(@param.path.string('id') id: string): Promise<Note> {
   return await this.noteRepository.findById(id);
 }
 ```

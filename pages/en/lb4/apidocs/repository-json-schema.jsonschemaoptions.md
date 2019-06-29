@@ -22,7 +22,7 @@ export interface JsonSchemaOptions
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [includeRelations](./repository-json-schema.jsonschemaoptions.includerelations.md) | <code>boolean</code> |  |
-|  [visited](./repository-json-schema.jsonschemaoptions.visited.md) | <code>{</code><br/><code>        [key: string]: JSONSchema;</code><br/><code>    }</code> |  |
+|  [includeRelations](./repository-json-schema.jsonschemaoptions.includerelations.md) | <code>boolean</code> | Set this flag if you want the schema to define navigational properties for model relations. |
+|  [partial](./repository-json-schema.jsonschemaoptions.partial.md) | <code>boolean</code> | Set this flag to mark all model properties as optional. This is typically used to describe request body of PATCH endpoints. |
 
 

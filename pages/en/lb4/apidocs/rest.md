@@ -131,6 +131,7 @@ permalink: /doc/en/lb4/apidocs.rest.html
 |  [RestServerOptions](./rest.restserveroptions.md) | RestServer options |
 |  [RestServerResolvedConfig](./rest.restserverresolvedconfig.md) |  |
 |  [RouterSpec](./rest.routerspec.md) |  |
+|  [SchemaValidatorCache](./rest.schemavalidatorcache.md) | Cache for AJV schema validators |
 |  [Send](./rest.send.md) | Send the operation response back to the client. |
 |  [SequenceFunction](./rest.sequencefunction.md) | A sequence function is a function implementing a custom sequence of actions to handle an incoming request. |
 

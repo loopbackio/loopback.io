@@ -19,6 +19,7 @@ permalink: /doc/en/lb4/apidocs.openapi-v3.html
 |  Function | Description |
 |  --- | --- |
 |  [api(spec)](./openapi-v3.api.md) | Decorate the given Controller constructor with metadata describing the HTTP/REST API the Controller implements/provides.<code>@api</code> can be applied to controller classes. |
+|  [createEmptyApiSpec()](./openapi-v3.createemptyapispec.md) | Create an empty OpenApiSpec object that's still a valid openapi document. |
 |  [del(path, spec)](./openapi-v3.del.md) | Expose a Controller method as a REST API operation mapped to <code>DELETE</code> request method. |
 |  [get(path, spec)](./openapi-v3.get.md) | Expose a Controller method as a REST API operation mapped to <code>GET</code> request method. |
 |  [getControllerSpec(constructor)](./openapi-v3.getcontrollerspec.md) | Get the controller spec for the given class |
@@ -59,6 +60,7 @@ permalink: /doc/en/lb4/apidocs.openapi-v3.html
 
 |  Type Alias | Description |
 |  --- | --- |
+|  [OpenApiSpec](./openapi-v3.openapispec.md) |  |
 |  [SchemaRef](./openapi-v3.schemaref.md) | Custom LoopBack extension: a reference to Schema object that's bundled inside <code>definitions</code> property. |
 
 
