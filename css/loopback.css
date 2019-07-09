@@ -241,7 +241,7 @@ nav {
   padding: 10px 15px;
 }
 #features {
-  background-color: var(--color-white-xd);
+  background-color: var(--color-white);
 }
 .feature-heading {
   text-align: left;
@@ -274,6 +274,9 @@ nav {
   height: auto;
 }
 #how-can-we-help {
+  background-color: var(--color-white-xd);
+}
+#who-using-lb {
   background-color: var(--color-white);
 }
 .navbar-brand {
@@ -285,7 +288,7 @@ nav {
 
 /* Section */
 section {
-  padding: 80px 0 56px 0;
+  padding: 80px 0 0px 0;
 }
 .container {
   padding: 0px 0 50px 0;
@@ -375,4 +378,9 @@ a.main-btn-link {
 }
 .btn-main:hover a.main-btn-link {
   color: var(--color-blue-xd);
+}
+.helper {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
 }
