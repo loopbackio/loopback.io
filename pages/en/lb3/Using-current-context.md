@@ -109,7 +109,7 @@ to a function that will be called by strong-remoting for each incoming request
 to build the value for this parameter.
 
 {% include tip.html content='
-Computed "accepts" parameters have been around for a while and they are well supported by LoopBack tooling. For example, the [Swagger generator](Swagger-generator.htm) excludes computed properties from the API endpoint description. As a result, the "options" parameter will not be described in the Swagger documentation.
+Computed "accepts" parameters have been around for a while and they are well supported by LoopBack tooling. For example, the [Swagger generator](Swagger-generator.html) excludes computed properties from the API endpoint description. As a result, the "options" parameter will not be described in the Swagger documentation.
 ' %}
 
 All built-in method have been already modified to include this new "options"
