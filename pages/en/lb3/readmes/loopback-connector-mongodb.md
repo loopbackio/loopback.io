@@ -40,6 +40,11 @@ The entry in the application's `/server/datasources.json` will look like this:
 
 Edit `datasources.json` to add any other additional properties that you require.
 
+If your username or password contains special characters like `@`, `$` etc, encode the whole
+username or password using [encodeURIComponent](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/encodeURIComponent).
+
+Eg: `pa$$wd` would become `pa%24%24wd`.
+
 ### Connection properties
 
 | Property | Type&nbsp;&nbsp; | Description |
