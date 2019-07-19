@@ -156,6 +156,21 @@ SET CI=true
 npm test
 ```
 
+The value for `DASHDB_SCHEMA` must be of the pattern `SCHEMA{build number}_{build name}_{platform}_{node version}`.
+For example : **SCHEMA1_DASHDB_DARWIN_10**.
+
+Alternatively, let `DASHDB_SCHEMA` be computed for you by setting these values instead:
+
+```bash
+export PACKAGE_NAME=loopback-connector-dashdb 
+export BUILD_NUMBER={build number}   For example: 1
+export nodeVersion={node version}    For example: 10
+```
+
+This will create a schema with the name: **SCHEMA1_DASHDB_DARWIN_10**
+
+This pattern of the schema name is important for database **cleanup** and **seeding** purposes.
+
 ### Docker
 - DashDB has a docker image which could be signed up for a trial version and be used for testing. For more information, please visit: [DashDB Docker](https://hub.docker.com/r/dashdb/local/)
 - Once the instance is ready, please follow the above information on how to run tests using your [own instance](https://github.com/strongloop/loopback-connector-dashdb/tree/master#own-instance)
