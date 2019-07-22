@@ -26,7 +26,7 @@ children:
   - title: 'Todo Tutorial'
     url: todo-tutorial.html
     output: 'web, pdf'
-    translated: false
+    translated: true
     children:
 
     - title: 'Crear tu aplicación scaffolding'
