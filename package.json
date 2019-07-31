@@ -34,5 +34,7 @@
   },
   "license": "MIT",
   "author": "IBM Corp.",
-  "dependencies": {}
+  "dependencies": {
+    "js-yaml": "^3.13.1"
+  }
 }

@@ -5,11 +5,21 @@
 
 const fs = require('fs-extra');
 const path = require('path');
+const yaml = require('js-yaml');
 
 const srcDocs = path.resolve(__dirname,'node_modules/@loopback/docs/site');
 const destDocs = path.resolve(__dirname, 'pages/en/lb4');
 const srcSidebars = path.resolve(srcDocs, 'sidebars');
 const destSidebars= path.resolve(__dirname, '_data/sidebars');
+const lb4Sidebar = yaml.safeLoad(fs.readFileSync(__dirname + '/_data/sidebars/lb4_sidebar.yml', 'utf8'));
+let connectorsReference;
+for (let i = 0; i < lb4Sidebar.children.length; i++) {
+  const child = lb4Sidebar.children[i];
+  if (child.title === 'Connectors reference') {
+    connectorsReference = child;
+    break;
+  }
+}
 
 /**
  * Utility function to remove a directory.
@@ -48,6 +58,28 @@ copyDocs(srcDocs, destDocs);
 
 //copy over sidebar for LoopBack 4
 copyDocs(srcSidebars, destSidebars);
+
+function copyFile(input) {
+  if (input) {
+    const lb3Path = __dirname + '/pages/en/lb3/' + input.url.replace(/\.html$/, '.md');
+    const lb4Path = __dirname + '/pages/en/lb4/' + input.url.replace(/\.html$/, '.md');
+    // Copy only if the file does not exist in the lb4 dir
+    if (!fs.existsSync(lb4Path)) {
+      let fc = fs.readFileSync(lb3Path, 'utf8');
+      fc = fc.replace('/lb3/', '/lb4/').replace('lb3_sidebar', 'lb4_sidebar');
+      fs.writeFileSync(lb4Path, fc);
+    }
+
+    if (input.children) {
+      input.children.forEach(function(child) {
+        copyFile(child);
+      });
+    }
+  }
+}
+
+// Most of the connector doc files are in the lb3 dir, copy them for lb4
+copyFile(connectorsReference);
 
 const fileToUpdate = path.resolve(destDocs, 'Testing-the-API.md');
 
