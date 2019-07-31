@@ -8,6 +8,7 @@
 #   from the given github repo. If that branch is NOT master, then the
 #   branch name will be appended to the local readme file name.
 (cat <<LIST_END
+strongloop loopback-connector-mysql master
 strongloop loopback-connector-cassandra master
 strongloop loopback-connector-cloudant master
 strongloop loopback-connector-dashdb master
@@ -82,6 +83,9 @@ LIST_END
     # No branch means latest release, so fetch from npmjs.org
     echo "fetching $org/$repo from latest npmjs.org release..."
     curl -s $NPMURL | jq -r '.readme|rtrimstr("\n")' > $DEST
+    LB4DEST=${DEST/\/lb3\//\/lb4\/}
+    echo "copying $DEST to $LB4DEST"
+    cp $DEST $LB4DEST
   else
     # The loopback-example-database repo contains a separate branch for each
     # actual example project, so we need to add the branch name to the readme
@@ -91,5 +95,8 @@ LIST_END
     fi
     echo "fetching $org/$repo/$branch from GitHub's raw content domain..."
     curl -s $GHURL > $DEST
+    LB4DEST=${DEST/\/lb3\//\/lb4\/}
+    echo "copying $DEST to $LB4DEST"
+    cp $DEST $LB4DEST
   fi
 done
