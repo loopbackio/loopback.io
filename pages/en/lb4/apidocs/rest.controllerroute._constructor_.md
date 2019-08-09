@@ -10,7 +10,7 @@ permalink: /doc/en/lb4/apidocs.rest.controllerroute._constructor_.html
 
 [Home](./index.md) &gt; [@loopback/rest](./rest.md) &gt; [ControllerRoute](./rest.controllerroute.md) &gt; [(constructor)](./rest.controllerroute._constructor_.md)
 
-## ControllerRoute._constructor_
+## ControllerRoute.(constructor)
 
 Construct a controller based route
 

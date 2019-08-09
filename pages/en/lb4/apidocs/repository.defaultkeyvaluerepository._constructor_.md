@@ -10,7 +10,7 @@ permalink: /doc/en/lb4/apidocs.repository.defaultkeyvaluerepository._constructor
 
 [Home](./index.md) &gt; [@loopback/repository](./repository.md) &gt; [DefaultKeyValueRepository](./repository.defaultkeyvaluerepository.md) &gt; [(constructor)](./repository.defaultkeyvaluerepository._constructor_.md)
 
-## DefaultKeyValueRepository._constructor_
+## DefaultKeyValueRepository.(constructor)
 
 Construct a KeyValueRepository with a legacy DataSource
 

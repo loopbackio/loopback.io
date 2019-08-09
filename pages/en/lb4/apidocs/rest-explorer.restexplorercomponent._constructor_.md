@@ -10,14 +10,14 @@ permalink: /doc/en/lb4/apidocs.rest-explorer.restexplorercomponent._constructor_
 
 [Home](./index.md) &gt; [@loopback/rest-explorer](./rest-explorer.md) &gt; [RestExplorerComponent](./rest-explorer.restexplorercomponent.md) &gt; [(constructor)](./rest-explorer.restexplorercomponent._constructor_.md)
 
-## RestExplorerComponent._constructor_
+## RestExplorerComponent.(constructor)
 
 Constructs a new instance of the `RestExplorerComponent` class
 
 <b>Signature:</b>
 
 ```typescript
-constructor(application: RestApplication, config?: RestExplorerConfig);
+constructor(application: RestApplication, restExplorerConfig?: RestExplorerConfig);
 ```
 
 ## Parameters
@@ -25,6 +25,6 @@ constructor(application: RestApplication, config?: RestExplorerConfig);
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  application | <code>RestApplication</code> |  |
-|  config | <code>RestExplorerConfig</code> |  |
+|  restExplorerConfig | <code>RestExplorerConfig</code> |  |
 
 

@@ -39,6 +39,12 @@ permalink: /doc/en/lb4/apidocs.testlab.html
 |  [stubServerRequest(options)](./testlab.stubserverrequest.md) |  |
 |  [stubServerResponse(request, onEnd)](./testlab.stubserverresponse.md) |  |
 |  [toJSON(value)](./testlab.tojson.md) |  |
+|  [toJSON(value)](./testlab.tojson_9.md) |  |
+|  [toJSON(value)](./testlab.tojson_10.md) |  |
+|  [toJSON(value)](./testlab.tojson_11.md) |  |
+|  [toJSON(value)](./testlab.tojson_12.md) |  |
+|  [toJSON(value)](./testlab.tojson_13.md) |  |
+|  [toJSON(value)](./testlab.tojson_14.md) |  |
 |  [toJSON(value)](./testlab.tojson_1.md) |  |
 |  [toJSON(value)](./testlab.tojson_2.md) |  |
 |  [toJSON(value)](./testlab.tojson_3.md) | JSON encoding does not preserve properties that are undefined As a result, deepEqual checks fail because the expected model value contains these undefined property values, while the actual result returned by REST API does not. Use this function to convert a model instance into a data object as returned by REST API |

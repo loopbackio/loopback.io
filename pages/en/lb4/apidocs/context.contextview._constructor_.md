@@ -10,7 +10,7 @@ permalink: /doc/en/lb4/apidocs.context.contextview._constructor_.html
 
 [Home](./index.md) &gt; [@loopback/context](./context.md) &gt; [ContextView](./context.contextview.md) &gt; [(constructor)](./context.contextview._constructor_.md)
 
-## ContextView._constructor_
+## ContextView.(constructor)
 
 Constructs a new instance of the `ContextView` class
 

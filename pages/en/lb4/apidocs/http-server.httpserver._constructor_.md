@@ -10,7 +10,7 @@ permalink: /doc/en/lb4/apidocs.http-server.httpserver._constructor_.html
 
 [Home](./index.md) &gt; [@loopback/http-server](./http-server.md) &gt; [HttpServer](./http-server.httpserver.md) &gt; [(constructor)](./http-server.httpserver._constructor_.md)
 
-## HttpServer._constructor_
+## HttpServer.(constructor)
 
 Constructs a new instance of the `HttpServer` class
 

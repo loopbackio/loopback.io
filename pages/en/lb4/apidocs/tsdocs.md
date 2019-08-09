@@ -22,7 +22,6 @@ It's built on top of [MicroSoft AP Extractor](https://api-extractor.com)<!-- -->
 
 |  Function | Description |
 |  --- | --- |
-|  [fixConstructorName(name)](./tsdocs.fixconstructorname.md) |  |
 |  [getPackages(rootDir)](./tsdocs.getpackages.md) | Get lerna packages and sorted them by location |
 |  [getPackagesWithTsDocs(rootDir)](./tsdocs.getpackageswithtsdocs.md) | Get an array of lerna-managed TypeScript packages to generate tsdocs |
 |  [getUnscopedPackageName(name)](./tsdocs.getunscopedpackagename.md) | Get un-scoped package name |

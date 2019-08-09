@@ -26,6 +26,6 @@ export interface ConfigurationResolver
 
 |  Method | Description |
 |  --- | --- |
-|  [getConfigAsValueOrPromise(key, configPath, resolutionOptions)](./context.configurationresolver.getconfigasvalueorpromise.md) | Resolve config for the binding key |
+|  [getConfigAsValueOrPromise(key, propertyPath, resolutionOptions)](./context.configurationresolver.getconfigasvalueorpromise.md) | Resolve config for the binding key |
 
 

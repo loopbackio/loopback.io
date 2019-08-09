@@ -10,7 +10,7 @@ permalink: /doc/en/lb4/apidocs.authentication.authenticationcomponent._construct
 
 [Home](./index.md) &gt; [@loopback/authentication](./authentication.md) &gt; [AuthenticationComponent](./authentication.authenticationcomponent.md) &gt; [(constructor)](./authentication.authenticationcomponent._constructor_.md)
 
-## AuthenticationComponent._constructor_
+## AuthenticationComponent.(constructor)
 
 Constructs a new instance of the `AuthenticationComponent` class
 

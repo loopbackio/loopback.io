@@ -10,7 +10,7 @@ permalink: /doc/en/lb4/apidocs.rest.regexprouter._constructor_.html
 
 [Home](./index.md) &gt; [@loopback/rest](./rest.md) &gt; [RegExpRouter](./rest.regexprouter.md) &gt; [(constructor)](./rest.regexprouter._constructor_.md)
 
-## RegExpRouter._constructor_
+## RegExpRouter.(constructor)
 
 Constructs a new instance of the `RegExpRouter` class
 

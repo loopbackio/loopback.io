@@ -10,7 +10,7 @@ permalink: /doc/en/lb4/apidocs.rest.redirectroute._constructor_.html
 
 [Home](./index.md) &gt; [@loopback/rest](./rest.md) &gt; [RedirectRoute](./rest.redirectroute.md) &gt; [(constructor)](./rest.redirectroute._constructor_.md)
 
-## RedirectRoute._constructor_
+## RedirectRoute.(constructor)
 
 Constructs a new instance of the `RedirectRoute` class
 

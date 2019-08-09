@@ -55,9 +55,9 @@ export declare class Context extends EventEmitter
 |  [get(keyWithPath, options)](./context.context.get_1.md) |  | Get the value bound to the given key, optionally return a (deep) property of the bound value. |
 |  [getBinding(key)](./context.context.getbinding.md) |  | Look up a binding by key in the context and its ancestors. If no matching binding is found, an error will be thrown. |
 |  [getBinding(key, options)](./context.context.getbinding_1.md) |  | Look up a binding by key in the context and its ancestors. If no matching binding is found and <code>options.optional</code> is not set to true, an error will be thrown. |
-|  [getConfig(key, configPath, resolutionOptions)](./context.context.getconfig.md) |  | Resolve configuration for the binding by key |
-|  [getConfigAsValueOrPromise(key, configPath, resolutionOptions)](./context.context.getconfigasvalueorpromise.md) |  | Get the value or promise of configuration for a given binding by key |
-|  [getConfigSync(key, configPath, resolutionOptions)](./context.context.getconfigsync.md) |  | Resolve configuration synchronously for the binding by key |
+|  [getConfig(key, propertyPath, resolutionOptions)](./context.context.getconfig.md) |  | Resolve configuration for the binding by key |
+|  [getConfigAsValueOrPromise(key, propertyPath, resolutionOptions)](./context.context.getconfigasvalueorpromise.md) |  | Get the value or promise of configuration for a given binding by key |
+|  [getConfigSync(key, propertyPath, resolutionOptions)](./context.context.getconfigsync.md) |  | Resolve configuration synchronously for the binding by key |
 |  [getOwnerContext(key)](./context.context.getownercontext.md) |  | Get the owning context for a binding key |
 |  [getSync(keyWithPath, session)](./context.context.getsync.md) |  | Get the synchronous value bound to the given key, optionally return a (deep) property of the bound value.<!-- -->This method throws an error if the bound value requires async computation (returns a promise). You should never rely on sync bindings in production code. |
 |  [getSync(keyWithPath, options)](./context.context.getsync_1.md) |  | Get the synchronous value bound to the given key, optionally return a (deep) property of the bound value.<!-- -->This method throws an error if the bound value requires async computation (returns a promise). You should never rely on sync bindings in production code. |

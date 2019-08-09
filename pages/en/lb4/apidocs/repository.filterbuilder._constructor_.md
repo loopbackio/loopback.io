@@ -10,7 +10,7 @@ permalink: /doc/en/lb4/apidocs.repository.filterbuilder._constructor_.html
 
 [Home](./index.md) &gt; [@loopback/repository](./repository.md) &gt; [FilterBuilder](./repository.filterbuilder.md) &gt; [(constructor)](./repository.filterbuilder._constructor_.md)
 
-## FilterBuilder._constructor_
+## FilterBuilder.(constructor)
 
 Constructs a new instance of the `FilterBuilder` class
 

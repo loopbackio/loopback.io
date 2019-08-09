@@ -42,6 +42,7 @@ export declare class Application extends Context implements LifeCycleObserver
 |  [lifeCycleObserver(ctor, name)](./core.application.lifecycleobserver.md) |  | Register a life cycle observer class |
 |  [server(ctor, name)](./core.application.server.md) |  | Bind a Server constructor to the Application's master context. Each server constructor added in this way must provide a unique prefix to prevent binding overlap. |
 |  [servers(ctors)](./core.application.servers.md) |  | Bind an array of Server constructors to the Application's master context. Each server added in this way will automatically be named based on the class constructor name with the "servers." prefix. |
+|  [service(cls, name)](./core.application.service.md) |  | Add a service to this application. |
 |  [setMetadata(metadata)](./core.application.setmetadata.md) |  | Set application metadata. <code>@loopback/boot</code> calls this method to populate the metadata from <code>package.json</code>. |
 |  [start()](./core.application.start.md) |  | Start the application, and all of its registered observers. |
 |  [stop()](./core.application.stop.md) |  | Stop the application instance and all of its registered observers. |

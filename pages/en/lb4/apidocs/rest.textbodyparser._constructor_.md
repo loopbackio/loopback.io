@@ -10,7 +10,7 @@ permalink: /doc/en/lb4/apidocs.rest.textbodyparser._constructor_.html
 
 [Home](./index.md) &gt; [@loopback/rest](./rest.md) &gt; [TextBodyParser](./rest.textbodyparser.md) &gt; [(constructor)](./rest.textbodyparser._constructor_.md)
 
-## TextBodyParser._constructor_
+## TextBodyParser.(constructor)
 
 Constructs a new instance of the `TextBodyParser` class
 

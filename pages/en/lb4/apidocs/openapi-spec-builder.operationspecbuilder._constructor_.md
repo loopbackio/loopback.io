@@ -10,7 +10,7 @@ permalink: /doc/en/lb4/apidocs.openapi-spec-builder.operationspecbuilder._constr
 
 [Home](./index.md) &gt; [@loopback/openapi-spec-builder](./openapi-spec-builder.md) &gt; [OperationSpecBuilder](./openapi-spec-builder.operationspecbuilder.md) &gt; [(constructor)](./openapi-spec-builder.operationspecbuilder._constructor_.md)
 
-## OperationSpecBuilder._constructor_
+## OperationSpecBuilder.(constructor)
 
 Constructs a new instance of the `OperationSpecBuilder` class
 

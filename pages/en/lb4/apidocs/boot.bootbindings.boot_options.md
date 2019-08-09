@@ -12,7 +12,7 @@ permalink: /doc/en/lb4/apidocs.boot.bootbindings.boot_options.html
 
 ## BootBindings.BOOT\_OPTIONS variable
 
-Binding key for Boot configuration
+Binding key for boot options
 
 <b>Signature:</b>
 
