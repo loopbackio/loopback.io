@@ -29,7 +29,7 @@
     "markdownlint-cli": "github:sequoia/markdownlint-cli",
     "retry": "^0.12.0",
     "swagger-ui-dist": "^3.13.4",
-    "watson-developer-cloud": "^3.4.1",
+    "ibm-watson": "^4.3.3",
     "xml2js": "^0.4.19"
   },
   "license": "MIT",

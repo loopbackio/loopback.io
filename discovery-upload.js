@@ -10,7 +10,7 @@
  */
 
  // Imports
-const DiscoveryV1 = require('watson-developer-cloud/discovery/v1');
+const DiscoveryV1 = require('ibm-watson/discovery/v1');
 const fs = require('fs-extra');
 const retry = require('retry');
 const chalk = require('chalk');
@@ -44,8 +44,7 @@ let count = 0;
 
 // Clean up the JSON -- remove non doc files
 let keys = Object.keys(files);
-const notDocKeys = keys.filter(key => key.slice(0, 3) !== 'doc');
-notDocKeys.forEach(key => {
+keys.filter(key => !key.startsWith('doc-')).forEach(key => {
   delete files[key];
 });
 // Reload doc keys after removing the non-doc files.
