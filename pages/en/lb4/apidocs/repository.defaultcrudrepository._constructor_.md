@@ -10,7 +10,7 @@ permalink: /doc/en/lb4/apidocs.repository.defaultcrudrepository._constructor_.ht
 
 [Home](./index.md) &gt; [@loopback/repository](./repository.md) &gt; [DefaultCrudRepository](./repository.defaultcrudrepository.md) &gt; [(constructor)](./repository.defaultcrudrepository._constructor_.md)
 
-## DefaultCrudRepository.(constructor)
+## DefaultCrudRepository._constructor_
 
 Constructor of DefaultCrudRepository
 

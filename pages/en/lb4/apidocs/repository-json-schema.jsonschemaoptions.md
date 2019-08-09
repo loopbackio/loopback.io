@@ -15,16 +15,14 @@ permalink: /doc/en/lb4/apidocs.repository-json-schema.jsonschemaoptions.html
 <b>Signature:</b>
 
 ```typescript
-export interface JsonSchemaOptions<T extends object> 
+export interface JsonSchemaOptions 
 ```
 
 ## Properties
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [exclude](./repository-json-schema.jsonschemaoptions.exclude.md) | <code>(keyof T)[]</code> | List of model properties to exclude from the schema. |
 |  [includeRelations](./repository-json-schema.jsonschemaoptions.includerelations.md) | <code>boolean</code> | Set this flag if you want the schema to define navigational properties for model relations. |
-|  [optional](./repository-json-schema.jsonschemaoptions.optional.md) | <code>(keyof T)[]</code> | List of model properties to mark as optional. Overrides the "partial" option if it is not empty. |
-|  [partial](./repository-json-schema.jsonschemaoptions.partial.md) | <code>boolean</code> | Set this flag to mark all model properties as optional. This is typically used to describe request body of PATCH endpoints. This option will be overridden by the "optional" option if it is set and non-empty. |
+|  [partial](./repository-json-schema.jsonschemaoptions.partial.md) | <code>boolean</code> | Set this flag to mark all model properties as optional. This is typically used to describe request body of PATCH endpoints. |
 
 

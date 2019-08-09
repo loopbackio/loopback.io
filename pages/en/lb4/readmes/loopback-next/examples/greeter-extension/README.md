@@ -16,7 +16,7 @@ We'll use the following scenario to walk through important steps to organize the
 `greet` service that allows extensible languages - each of them being supported
 by a `Greeter` extension.
 
-![greeters](https://raw.githubusercontent.com/strongloop/loopback-next/master/examples/greeter-extension/greeters.png)
+![greeters](greeters.png)
 
 Various constructs from LoopBack 4, such as `Context`, `@inject.*`, and
 `Component` are used to build the service in an extensible fashion.
@@ -169,7 +169,7 @@ knowing much about one another.
 
 ```ts
 import {Greeter, asGreeter} from '../types';
-import {bind, config} from '@loopback/context';
+import {bind, inject} from '@loopback/context';
 
 /**
  * Options for the Chinese greeter
@@ -190,7 +190,7 @@ export class ChineseGreeter implements Greeter {
     /**
      * Inject the configuration for ChineseGreeter
      */
-    @config()
+    @inject('greeters.ChineseGreeter.options', {optional: true})
     private options: ChineseGreeterOptions = {nameFirst: true},
   ) {}
 

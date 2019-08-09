@@ -10,7 +10,7 @@ permalink: /doc/en/lb4/apidocs.boot.repositorybooter._constructor_.html
 
 [Home](./index.md) &gt; [@loopback/boot](./boot.md) &gt; [RepositoryBooter](./boot.repositorybooter.md) &gt; [(constructor)](./boot.repositorybooter._constructor_.md)
 
-## RepositoryBooter.(constructor)
+## RepositoryBooter._constructor_
 
 Constructs a new instance of the `RepositoryBooter` class
 

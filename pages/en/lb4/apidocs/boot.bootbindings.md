@@ -12,7 +12,7 @@ permalink: /doc/en/lb4/apidocs.boot.bootbindings.html
 
 ## BootBindings namespace
 
-Namespace for boot related binding keys
+Namespace for core binding keys
 
 <b>Signature:</b>
 
@@ -24,8 +24,9 @@ export declare namespace BootBindings
 
 |  Variable | Description |
 |  --- | --- |
-|  [BOOT\_OPTIONS](./boot.bootbindings.boot_options.md) | Binding key for boot options |
+|  [BOOT\_OPTIONS](./boot.bootbindings.boot_options.md) | Binding key for Boot configuration |
 |  [BOOTER\_PREFIX](./boot.bootbindings.booter_prefix.md) |  |
+|  [BOOTER\_TAG](./boot.bootbindings.booter_tag.md) |  |
 |  [BOOTSTRAPPER\_KEY](./boot.bootbindings.bootstrapper_key.md) | Binding key for binding the BootStrapper class |
 |  [PROJECT\_ROOT](./boot.bootbindings.project_root.md) | Binding key for determining project root directory |
 

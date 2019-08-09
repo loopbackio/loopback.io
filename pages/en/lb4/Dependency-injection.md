@@ -175,7 +175,7 @@ class ProductController {
   }
 
   async list() {
-    return this.repo.find({where: {available: true}});
+    return await this.repo.find({where: {available: true}});
   }
 }
 ```

@@ -10,7 +10,7 @@ permalink: /doc/en/lb4/apidocs.boot.baseartifactbooter._constructor_.html
 
 [Home](./index.md) &gt; [@loopback/boot](./boot.md) &gt; [BaseArtifactBooter](./boot.baseartifactbooter.md) &gt; [(constructor)](./boot.baseartifactbooter._constructor_.md)
 
-## BaseArtifactBooter.(constructor)
+## BaseArtifactBooter._constructor_
 
 Constructs a new instance of the `BaseArtifactBooter` class
 

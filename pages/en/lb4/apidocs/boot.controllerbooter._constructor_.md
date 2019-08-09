@@ -10,7 +10,7 @@ permalink: /doc/en/lb4/apidocs.boot.controllerbooter._constructor_.html
 
 [Home](./index.md) &gt; [@loopback/boot](./boot.md) &gt; [ControllerBooter](./boot.controllerbooter.md) &gt; [(constructor)](./boot.controllerbooter._constructor_.md)
 
-## ControllerBooter.(constructor)
+## ControllerBooter._constructor_
 
 Constructs a new instance of the `ControllerBooter` class
 

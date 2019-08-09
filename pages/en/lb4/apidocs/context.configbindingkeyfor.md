@@ -17,7 +17,7 @@ Create binding key for configuration of the binding
 <b>Signature:</b>
 
 ```typescript
-export declare function configBindingKeyFor<ConfigValueType = unknown>(key: BindingAddress, propertyPath?: string): BindingKey<ConfigValueType>;
+export declare function configBindingKeyFor<ConfigValueType = unknown>(key: BindingAddress, configPath?: string): BindingKey<ConfigValueType>;
 ```
 
 ## Parameters
@@ -25,7 +25,7 @@ export declare function configBindingKeyFor<ConfigValueType = unknown>(key: Bind
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  key | <code>BindingAddress</code> | Binding key for the target binding |
-|  propertyPath | <code>string</code> | Property path for the configuration |
+|  configPath | <code>string</code> | Property path for the configuration |
 
 <b>Returns:</b>
 

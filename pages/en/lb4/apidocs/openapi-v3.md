@@ -46,7 +46,7 @@ permalink: /doc/en/lb4/apidocs.openapi-v3.html
 
 |  Namespace | Description |
 |  --- | --- |
-|  [param](./openapi-v3.param.md) | Namespace for <code>@param.*</code> decorators |
+|  [param](./openapi-v3.param.md) | Describe an input parameter of a Controller method. The <code>@param</code> decorator takes an argument of <code>ParameterObject</code> to define how to map the parameter to OpenAPI specification.<code>@param(paramSpec)</code> must be applied to parameters. |
 |  [requestBody](./openapi-v3.requestbody.md) |  |
 
 ## Variables

@@ -199,7 +199,7 @@ export class HelloController {
     // Bind `greeting` to a factory function that reads default greeting
     // from a file or database
     this.greetingBinding.toDynamicValue(() => readDefaultGreeting());
-    return this.greetingBinding.get<string>(this.greetingBinding.key);
+    return await this.greetingBinding.get<string>(this.greetingBinding.key);
   }
 }
 ```
@@ -279,7 +279,7 @@ export class DataSourceTracker {
 
   async listDataSources(): Promise<DataSource[]> {
     // Use the Getter function to resolve data source instances
-    return this.dataSources.values();
+    return await this.dataSources.values();
   }
 }
 ```

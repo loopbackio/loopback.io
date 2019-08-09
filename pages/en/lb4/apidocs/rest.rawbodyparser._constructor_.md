@@ -10,7 +10,7 @@ permalink: /doc/en/lb4/apidocs.rest.rawbodyparser._constructor_.html
 
 [Home](./index.md) &gt; [@loopback/rest](./rest.md) &gt; [RawBodyParser](./rest.rawbodyparser.md) &gt; [(constructor)](./rest.rawbodyparser._constructor_.md)
 
-## RawBodyParser.(constructor)
+## RawBodyParser._constructor_
 
 Constructs a new instance of the `RawBodyParser` class
 

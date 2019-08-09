@@ -10,7 +10,7 @@ permalink: /doc/en/lb4/apidocs.core.application._constructor_.html
 
 [Home](./index.md) &gt; [@loopback/core](./core.md) &gt; [Application](./core.application.md) &gt; [(constructor)](./core.application._constructor_.md)
 
-## Application.(constructor)
+## Application._constructor_
 
 Constructs a new instance of the `Application` class
 

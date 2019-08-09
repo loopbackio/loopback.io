@@ -10,7 +10,7 @@ permalink: /doc/en/lb4/apidocs.boot.lifecycleobserverbooter._constructor_.html
 
 [Home](./index.md) &gt; [@loopback/boot](./boot.md) &gt; [LifeCycleObserverBooter](./boot.lifecycleobserverbooter.md) &gt; [(constructor)](./boot.lifecycleobserverbooter._constructor_.md)
 
-## LifeCycleObserverBooter.(constructor)
+## LifeCycleObserverBooter._constructor_
 
 Constructs a new instance of the `LifeCycleObserverBooter` class
 

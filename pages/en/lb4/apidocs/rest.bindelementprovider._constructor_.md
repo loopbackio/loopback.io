@@ -10,7 +10,7 @@ permalink: /doc/en/lb4/apidocs.rest.bindelementprovider._constructor_.html
 
 [Home](./index.md) &gt; [@loopback/rest](./rest.md) &gt; [BindElementProvider](./rest.bindelementprovider.md) &gt; [(constructor)](./rest.bindelementprovider._constructor_.md)
 
-## BindElementProvider.(constructor)
+## BindElementProvider._constructor_
 
 Constructs a new instance of the `BindElementProvider` class
 

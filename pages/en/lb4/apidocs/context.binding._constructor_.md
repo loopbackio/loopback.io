@@ -10,7 +10,7 @@ permalink: /doc/en/lb4/apidocs.context.binding._constructor_.html
 
 [Home](./index.md) &gt; [@loopback/context](./context.md) &gt; [Binding](./context.binding.md) &gt; [(constructor)](./context.binding._constructor_.md)
 
-## Binding.(constructor)
+## Binding._constructor_
 
 Constructs a new instance of the `Binding` class
 

@@ -275,7 +275,9 @@ export class SupplierAccountController {
     @param.path.number('id') supplierId: typeof Supplier.prototype.id,
     @requestBody() accountData: Account,
   ): Promise<Account> {
-    return this.supplierRepository.account(supplierId).create(accountData);
+    return await this.supplierRepository
+      .account(supplierId)
+      .create(accountData);
   }
 }
 ```

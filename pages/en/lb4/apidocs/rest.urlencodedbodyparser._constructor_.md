@@ -10,7 +10,7 @@ permalink: /doc/en/lb4/apidocs.rest.urlencodedbodyparser._constructor_.html
 
 [Home](./index.md) &gt; [@loopback/rest](./rest.md) &gt; [UrlEncodedBodyParser](./rest.urlencodedbodyparser.md) &gt; [(constructor)](./rest.urlencodedbodyparser._constructor_.md)
 
-## UrlEncodedBodyParser.(constructor)
+## UrlEncodedBodyParser._constructor_
 
 Constructs a new instance of the `UrlEncodedBodyParser` class
 

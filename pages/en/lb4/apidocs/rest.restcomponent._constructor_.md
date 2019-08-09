@@ -10,7 +10,7 @@ permalink: /doc/en/lb4/apidocs.rest.restcomponent._constructor_.html
 
 [Home](./index.md) &gt; [@loopback/rest](./rest.md) &gt; [RestComponent](./rest.restcomponent.md) &gt; [(constructor)](./rest.restcomponent._constructor_.md)
 
-## RestComponent.(constructor)
+## RestComponent._constructor_
 
 Constructs a new instance of the `RestComponent` class
 

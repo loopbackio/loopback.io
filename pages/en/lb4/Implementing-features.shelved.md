@@ -344,7 +344,7 @@ async function givenEmptyDatabase() {
 }
 
 async function givenProduct(data: Partial<Product>) {
-  return new ProductRepository().create(
+  return await new ProductRepository().create(
     Object.assign(
       {
         name: 'a-product-name',

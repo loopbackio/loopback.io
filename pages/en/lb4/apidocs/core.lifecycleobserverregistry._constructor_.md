@@ -10,7 +10,7 @@ permalink: /doc/en/lb4/apidocs.core.lifecycleobserverregistry._constructor_.html
 
 [Home](./index.md) &gt; [@loopback/core](./core.md) &gt; [LifeCycleObserverRegistry](./core.lifecycleobserverregistry.md) &gt; [(constructor)](./core.lifecycleobserverregistry._constructor_.md)
 
-## LifeCycleObserverRegistry.(constructor)
+## LifeCycleObserverRegistry._constructor_
 
 Constructs a new instance of the `LifeCycleObserverRegistry` class
 

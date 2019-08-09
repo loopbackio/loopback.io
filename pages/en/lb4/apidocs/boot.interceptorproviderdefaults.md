@@ -12,7 +12,7 @@ permalink: /doc/en/lb4/apidocs.boot.interceptorproviderdefaults.html
 
 ## InterceptorProviderDefaults variable
 
-Default ArtifactOptions for InterceptorProviderBooter.
+Default ArtifactOptions for DataSourceBooter.
 
 <b>Signature:</b>
 

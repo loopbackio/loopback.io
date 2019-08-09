@@ -10,7 +10,7 @@ permalink: /doc/en/lb4/apidocs.repository.defaulthasonerepository._constructor_.
 
 [Home](./index.md) &gt; [@loopback/repository](./repository.md) &gt; [DefaultHasOneRepository](./repository.defaulthasonerepository.md) &gt; [(constructor)](./repository.defaulthasonerepository._constructor_.md)
 
-## DefaultHasOneRepository.(constructor)
+## DefaultHasOneRepository._constructor_
 
 Constructor of DefaultHasOneEntityCrudRepository
 
