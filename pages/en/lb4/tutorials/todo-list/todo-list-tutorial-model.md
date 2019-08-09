@@ -112,7 +112,7 @@ updating the `TodoRelations` interface to include `todoList`:
 export class Todo extends Entity {
   // ...properties defined by the CLI...
 
-  @belongsTo(() => TodoList)
+  @property()
   todoListId: number;
 
   // ...constructor def...

@@ -10,7 +10,7 @@ permalink: /doc/en/lb4/apidocs.repository.repositorymixindoc._constructor_.html
 
 [Home](./index.md) &gt; [@loopback/repository](./repository.md) &gt; [RepositoryMixinDoc](./repository.repositorymixindoc.md) &gt; [(constructor)](./repository.repositorymixindoc._constructor_.md)
 
-## RepositoryMixinDoc.(constructor)
+## RepositoryMixinDoc._constructor_
 
 Constructs a new instance of the `RepositoryMixinDoc` class
 

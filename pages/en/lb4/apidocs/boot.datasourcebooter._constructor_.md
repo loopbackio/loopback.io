@@ -10,7 +10,7 @@ permalink: /doc/en/lb4/apidocs.boot.datasourcebooter._constructor_.html
 
 [Home](./index.md) &gt; [@loopback/boot](./boot.md) &gt; [DataSourceBooter](./boot.datasourcebooter.md) &gt; [(constructor)](./boot.datasourcebooter._constructor_.md)
 
-## DataSourceBooter.(constructor)
+## DataSourceBooter._constructor_
 
 Constructs a new instance of the `DataSourceBooter` class
 

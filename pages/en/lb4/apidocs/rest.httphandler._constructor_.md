@@ -10,7 +10,7 @@ permalink: /doc/en/lb4/apidocs.rest.httphandler._constructor_.html
 
 [Home](./index.md) &gt; [@loopback/rest](./rest.md) &gt; [HttpHandler](./rest.httphandler.md) &gt; [(constructor)](./rest.httphandler._constructor_.md)
 
-## HttpHandler.(constructor)
+## HttpHandler._constructor_
 
 Constructs a new instance of the `HttpHandler` class
 

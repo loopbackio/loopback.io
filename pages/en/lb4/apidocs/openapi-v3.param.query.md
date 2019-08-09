@@ -12,25 +12,23 @@ permalink: /doc/en/lb4/apidocs.openapi-v3.param.query.html
 
 ## param.query variable
 
-Query parameter decorator
-
 <b>Signature:</b>
 
 ```typescript
 query: {
-        string: (name: string, spec?: Partial<ParameterObject> | undefined) => (target: object, member: string, index: number) => void;
-        number: (name: string, spec?: Partial<ParameterObject> | undefined) => (target: object, member: string, index: number) => void;
-        boolean: (name: string, spec?: Partial<ParameterObject> | undefined) => (target: object, member: string, index: number) => void;
-        integer: (name: string, spec?: Partial<ParameterObject> | undefined) => (target: object, member: string, index: number) => void;
-        long: (name: string, spec?: Partial<ParameterObject> | undefined) => (target: object, member: string, index: number) => void;
-        float: (name: string, spec?: Partial<ParameterObject> | undefined) => (target: object, member: string, index: number) => void;
-        double: (name: string, spec?: Partial<ParameterObject> | undefined) => (target: object, member: string, index: number) => void;
-        byte: (name: string, spec?: Partial<ParameterObject> | undefined) => (target: object, member: string, index: number) => void;
-        binary: (name: string, spec?: Partial<ParameterObject> | undefined) => (target: object, member: string, index: number) => void;
-        date: (name: string, spec?: Partial<ParameterObject> | undefined) => (target: object, member: string, index: number) => void;
-        dateTime: (name: string, spec?: Partial<ParameterObject> | undefined) => (target: object, member: string, index: number) => void;
-        password: (name: string, spec?: Partial<ParameterObject> | undefined) => (target: object, member: string, index: number) => void;
-        object: (name: string, schema?: SchemaObject | ReferenceObject, spec?: Partial<ParameterObject> | undefined) => (target: object, member: string, index: number) => void;
+        string: (name: string) => (target: object, member: string, index: number) => void;
+        number: (name: string) => (target: object, member: string, index: number) => void;
+        boolean: (name: string) => (target: object, member: string, index: number) => void;
+        integer: (name: string) => (target: object, member: string, index: number) => void;
+        long: (name: string) => (target: object, member: string, index: number) => void;
+        float: (name: string) => (target: object, member: string, index: number) => void;
+        double: (name: string) => (target: object, member: string, index: number) => void;
+        byte: (name: string) => (target: object, member: string, index: number) => void;
+        binary: (name: string) => (target: object, member: string, index: number) => void;
+        date: (name: string) => (target: object, member: string, index: number) => void;
+        dateTime: (name: string) => (target: object, member: string, index: number) => void;
+        password: (name: string) => (target: object, member: string, index: number) => void;
+        object: (name: string, schema?: SchemaObject | ReferenceObject) => (target: object, member: string, index: number) => void;
     }
 ```
 

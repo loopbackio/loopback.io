@@ -10,7 +10,7 @@ permalink: /doc/en/lb4/apidocs.rest.restapplication._constructor_.html
 
 [Home](./index.md) &gt; [@loopback/rest](./rest.md) &gt; [RestApplication](./rest.restapplication.md) &gt; [(constructor)](./rest.restapplication._constructor_.md)
 
-## RestApplication.(constructor)
+## RestApplication._constructor_
 
 Constructs a new instance of the `RestApplication` class
 

@@ -28,7 +28,6 @@ Controller TodoList will be created in src/controllers/todo-list.controller.ts
 ? What kind of controller would you like to generate? REST Controller with CRUD functions
 ? What is the name of the model to use with this CRUD repository? TodoList
 ? What is the name of your CRUD repository? TodoListRepository
-? What is the name of ID property? id
 ? What is the type of your ID? number
 ? What is the base HTTP path name of the CRUD operations? /todo-lists
    create src/controllers/todo-list.controller.ts
@@ -176,18 +175,8 @@ export class TodoListTodoController {
   ) {}
 
   @post('/todo-lists/{id}/todos')
-  async create(
-    @param.path.number('id') id: number,
-    @requestBody({
-      content: {
-        'application/json': {
-          schema: getModelSchemaRef(Todo, {exclude: ['id']}),
-        },
-      },
-    })
-    todo: Omit<Todo, 'id'>,
-  ) {
-    return this.todoListRepo.todos(id).create(todo);
+  async create(@param.path.number('id') id: number, @requestBody() todo: Todo) {
+    return await this.todoListRepo.todos(id).create(todo);
   }
 }
 ```
@@ -209,7 +198,6 @@ import {
 import {
   del,
   get,
-  getModelSchemaRef,
   getWhereSchemaFor,
   param,
   patch,
@@ -228,22 +216,15 @@ export class TodoListTodoController {
     responses: {
       '200': {
         description: 'TodoList.Todo model instance',
-        content: {'application/json': {schema: getModelSchemaRef(Todo)}},
+        content: {'application/json': {schema: {'x-ts-type': Todo}}},
       },
     },
   })
   async create(
     @param.path.number('id') id: number,
-    @requestBody({
-      content: {
-        'application/json': {
-          schema: getModelSchemaRef(Todo, {exclude: ['id']}),
-        },
-      },
-    })
-    todo: Omit<Todo, 'id'>,
+    @requestBody() todo: Todo,
   ): Promise<Todo> {
-    return this.todoListRepo.todos(id).create(todo);
+    return await this.todoListRepo.todos(id).create(todo);
   }
 
   @get('/todo-lists/{id}/todos', {
@@ -252,7 +233,7 @@ export class TodoListTodoController {
         description: "Array of Todo's belonging to TodoList",
         content: {
           'application/json': {
-            schema: {type: 'array', items: getModelSchemaRef(Todo)},
+            schema: {type: 'array', items: {'x-ts-type': Todo}},
           },
         },
       },
@@ -262,7 +243,7 @@ export class TodoListTodoController {
     @param.path.number('id') id: number,
     @param.query.object('filter') filter?: Filter<Todo>,
   ): Promise<Todo[]> {
-    return this.todoListRepo.todos(id).find(filter);
+    return await this.todoListRepo.todos(id).find(filter);
   }
 
   @patch('/todo-lists/{id}/todos', {
@@ -285,7 +266,7 @@ export class TodoListTodoController {
     todo: Partial<Todo>
     @param.query.object('where', getWhereSchemaFor(Todo)) where?: Where<Todo>,
   ): Promise<Count> {
-    return this.todoListRepo.todos(id).patch(todo, where);
+    return await this.todoListRepo.todos(id).patch(todo, where);
   }
 
   @del('/todo-lists/{id}/todos', {
@@ -300,7 +281,7 @@ export class TodoListTodoController {
     @param.path.number('id') id: number,
     @param.query.object('where', getWhereSchemaFor(Todo)) where?: Where<Todo>,
   ): Promise<Count> {
-    return this.todoListRepo.todos(id).delete(where);
+    return await this.todoListRepo.todos(id).delete(where);
   }
 }
 ```

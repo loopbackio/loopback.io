@@ -12,7 +12,7 @@ permalink: /doc/en/lb4/apidocs.repository-json-schema.jsonschemaoptions.partial.
 
 ## JsonSchemaOptions.partial property
 
-Set this flag to mark all model properties as optional. This is typically used to describe request body of PATCH endpoints. This option will be overridden by the "optional" option if it is set and non-empty.
+Set this flag to mark all model properties as optional. This is typically used to describe request body of PATCH endpoints.
 
 <b>Signature:</b>
 

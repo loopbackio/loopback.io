@@ -10,7 +10,7 @@ permalink: /doc/en/lb4/apidocs.boot.interceptorproviderbooter._constructor_.html
 
 [Home](./index.md) &gt; [@loopback/boot](./boot.md) &gt; [InterceptorProviderBooter](./boot.interceptorproviderbooter.md) &gt; [(constructor)](./boot.interceptorproviderbooter._constructor_.md)
 
-## InterceptorProviderBooter.(constructor)
+## InterceptorProviderBooter._constructor_
 
 Constructs a new instance of the `InterceptorProviderBooter` class
 

@@ -10,7 +10,7 @@ permalink: /doc/en/lb4/apidocs.rest.restserver._constructor_.html
 
 [Home](./index.md) &gt; [@loopback/rest](./rest.md) &gt; [RestServer](./rest.restserver.md) &gt; [(constructor)](./rest.restserver._constructor_.md)
 
-## RestServer.(constructor)
+## RestServer._constructor_
 
 Creates an instance of RestServer.
 

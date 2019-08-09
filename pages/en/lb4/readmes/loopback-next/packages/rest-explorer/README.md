@@ -31,14 +31,6 @@ By default, API Explorer is mounted at `/explorer`. This path can be customized
 via RestExplorer configuration as follows:
 
 ```ts
-this.configure(RestExplorerBindings.COMPONENT).to({
-  path: '/openapi/ui',
-});
-```
-
-Or:
-
-```ts
 this.bind(RestExplorerBindings.CONFIG).to({
   path: '/openapi/ui',
 });

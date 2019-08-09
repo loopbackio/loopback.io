@@ -28,6 +28,5 @@ export declare abstract class Entity extends Model implements Persistable
 |  [getId()](./repository.entity.getid.md) |  | Get the identity value. If the identity is a composite key, returns an object. |
 |  [getIdObject()](./repository.entity.getidobject.md) |  | Get the identity as an object, such as <code>{id: 1}</code> or <code>{schoolId: 1, studentId: 2}</code> |
 |  [getIdOf(entityOrData)](./repository.entity.getidof.md) | <code>static</code> | Get the identity value for a given entity instance or entity data object. |
-|  [getIdProperties()](./repository.entity.getidproperties.md) | <code>static</code> | Get the names of identity properties (primary keys). |
 
 

@@ -10,7 +10,7 @@ permalink: /doc/en/lb4/apidocs.service-proxy.serviceproxymetadata._constructor_.
 
 [Home](./index.md) &gt; [@loopback/service-proxy](./service-proxy.md) &gt; [ServiceProxyMetadata](./service-proxy.serviceproxymetadata.md) &gt; [(constructor)](./service-proxy.serviceproxymetadata._constructor_.md)
 
-## ServiceProxyMetadata.(constructor)
+## ServiceProxyMetadata._constructor_
 
 Constructs a new instance of the `ServiceProxyMetadata` class
 

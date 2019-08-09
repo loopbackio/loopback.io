@@ -10,7 +10,7 @@ permalink: /doc/en/lb4/apidocs.repository.repositorymetadata._constructor_.html
 
 [Home](./index.md) &gt; [@loopback/repository](./repository.md) &gt; [RepositoryMetadata](./repository.repositorymetadata.md) &gt; [(constructor)](./repository.repositorymetadata._constructor_.md)
 
-## RepositoryMetadata.(constructor)
+## RepositoryMetadata._constructor_
 
 Constructor for RepositoryMetadata
 

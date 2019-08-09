@@ -10,7 +10,7 @@ permalink: /doc/en/lb4/apidocs.repository.modeldefinition._constructor_.html
 
 [Home](./index.md) &gt; [@loopback/repository](./repository.md) &gt; [ModelDefinition](./repository.modeldefinition.md) &gt; [(constructor)](./repository.modeldefinition._constructor_.md)
 
-## ModelDefinition.(constructor)
+## ModelDefinition._constructor_
 
 Constructs a new instance of the `ModelDefinition` class
 

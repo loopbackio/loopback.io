@@ -10,7 +10,7 @@ permalink: /doc/en/lb4/apidocs.context.invocationcontext._constructor_.html
 
 [Home](./index.md) &gt; [@loopback/context](./context.md) &gt; [InvocationContext](./context.invocationcontext.md) &gt; [(constructor)](./context.invocationcontext._constructor_.md)
 
-## InvocationContext.(constructor)
+## InvocationContext._constructor_
 
 Construct a new instance of `InvocationContext`
 

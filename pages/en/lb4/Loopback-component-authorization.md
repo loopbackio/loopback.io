@@ -463,7 +463,6 @@ export class User extends Entity {
 import {inject} from '@loopback/context';
 import {
   FindRoute,
-  getModelSchemaRef,
   InvokeMethod,
   ParseParams,
   Reject,
@@ -536,13 +535,13 @@ decorator as below.
     [STATUS_CODE.OK]: {
       description: 'Role model instance',
       content: {
-        [CONTENT_TYPE.JSON]: {schema: getModelSchemaRef(Role)}},
+        [CONTENT_TYPE.JSON]: {schema: {'x-ts-type': Role}},
       },
     },
   },
 })
 async create(@requestBody() role: Role): Promise<Role> {
-  return this.roleRepository.create(role);
+  return await this.roleRepository.create(role);
 }
 ```
 

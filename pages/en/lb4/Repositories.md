@@ -252,7 +252,7 @@ Create Controller method:
 
 ```ts
 async createAccount(accountInstance: Account) {
-  return this.repository.create(accountInstance);
+  return await this.repository.create(accountInstance);
 }
 ```
 
@@ -287,7 +287,7 @@ Find Controller method:
 
 ```ts
 async getAccount() {
-  return this.repository.find();
+  return await this.repository.find();
 }
 ```
 

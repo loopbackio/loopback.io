@@ -223,7 +223,7 @@ export function givenProductData(data?: Partial<Product>) {
 }
 
 export async function givenProduct(data?: Partial<Product>) {
-  return new ProductRepository(testdb).create(givenProductData(data));
+  return await new ProductRepository(testdb).create(givenProductData(data));
 }
 // ...
 ```

@@ -10,7 +10,7 @@ permalink: /doc/en/lb4/apidocs.rest.findrouteprovider._constructor_.html
 
 [Home](./index.md) &gt; [@loopback/rest](./rest.md) &gt; [FindRouteProvider](./rest.findrouteprovider.md) &gt; [(constructor)](./rest.findrouteprovider._constructor_.md)
 
-## FindRouteProvider.(constructor)
+## FindRouteProvider._constructor_
 
 Constructs a new instance of the `FindRouteProvider` class
 

@@ -10,7 +10,7 @@ permalink: /doc/en/lb4/apidocs.repository.defaultbelongstorepository._constructo
 
 [Home](./index.md) &gt; [@loopback/repository](./repository.md) &gt; [DefaultBelongsToRepository](./repository.defaultbelongstorepository.md) &gt; [(constructor)](./repository.defaultbelongstorepository._constructor_.md)
 
-## DefaultBelongsToRepository.(constructor)
+## DefaultBelongsToRepository._constructor_
 
 Constructor of DefaultBelongsToEntityCrudRepository
 

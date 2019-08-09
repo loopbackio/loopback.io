@@ -213,7 +213,7 @@ Service interface.
   ): Promise<AddResponse> {
     //Preconditions
 
-    return this.calculatorService.add(<CalculatorParameters>{
+    return await this.calculatorService.add(<CalculatorParameters>{
       intA,
       intB,
     });

@@ -11,12 +11,108 @@ title: LoopBack 4
 url: index.html
 children:
 
-- title: 'Overview'
-  url: index.html
-  output: 'web, pdf'
-
 - title: 'Getting started'
   url: Getting-started.html
+  output: 'web, pdf'
+
+- title: 'Tutorials'
+  url: Tutorials.html
+  output: 'web, pdf'
+  children:
+
+  - title: 'Todo Tutorial'
+    url: todo-tutorial.html
+    output: 'web, pdf'
+    children:
+
+    - title: 'Create your app scaffolding'
+      url: todo-tutorial-scaffolding.html
+      output: 'web, pdf'
+
+    - title: 'Add the Todo model'
+      url: todo-tutorial-model.html
+      output: 'web, pdf'
+
+    - title: 'Add a Datasource'
+      url: todo-tutorial-datasource.html
+      output: 'web, pdf'
+
+    - title: 'Add a Repository'
+      url: todo-tutorial-repository.html
+      output: 'web, pdf'
+
+    - title: 'Add a Controller'
+      url: todo-tutorial-controller.html
+      output: 'web, pdf'
+
+    - title: 'Putting it all together'
+      url: todo-tutorial-putting-it-together.html
+      output: 'web, pdf'
+
+    - title: 'Bonus: Integrate with a geo-coding service'
+      url: todo-tutorial-geocoding-service.html
+      output: 'web, pdf'
+
+  - title: 'TodoList Tutorial'
+    url: todo-list-tutorial.html
+    output: 'web, pdf'
+    children:
+
+    - title: 'Add TodoList Model'
+      url: todo-list-tutorial-model.html
+      output: 'web, pdf'
+
+    - title: 'Add TodoList Repository'
+      url: todo-list-tutorial-repository.html
+      output: 'web, pdf'
+
+    - title: 'Add TodoList Controller'
+      url: todo-list-tutorial-controller.html
+      output: 'web, pdf'
+
+    - title: 'Running on relational databases'
+      url: todo-list-tutorial-sqldb.html
+      output: 'web, pdf'
+
+  - title: 'SOAP Web Service Tutorial'
+    url: soap-calculator-tutorial.html
+    output: 'web, pdf'
+    children:
+
+    - title: 'SOAP Web Service Overview'
+      url: soap-calculator-tutorial-web-service-overview.html
+      output: 'web, pdf'
+
+    - title: 'App scaffolding'
+      url: soap-calculator-tutorial-scaffolding.html
+      output: 'web, pdf'
+
+    - title: 'Add a Datasource'
+      url: soap-calculator-tutorial-add-datasource.html
+      output: 'web, pdf'
+
+    - title: 'Add a Service'
+      url: soap-calculator-tutorial-add-service.html
+      output: 'web, pdf'
+
+    - title: 'Add a Controller'
+      url: soap-calculator-tutorial-add-controller.html
+      output: 'web, pdf'
+
+    - title: 'Run and Test it'
+      url: soap-calculator-tutorial-run-and-test.html
+      output: 'web, pdf'
+
+  - title: 'Creating an Express Application with LoopBack REST API'
+    url: express-with-lb4-rest-tutorial.html
+    output: 'web, pdf'
+
+  - title: 'How to secure your LoopBack 4 application with JWT authentication'
+    url: Authentication-Tutorial.html
+    output: 'web, pdf'
+
+- title: 'Examples'
+  url: Examples.html
   output: 'web, pdf'
 
 - title: 'Key concepts'
@@ -136,64 +232,34 @@ children:
     url: Error-handling.html
     output: 'web, pdf'
 
-- title: 'Usage Scenarios'
-  url: Usage-scenarios.html
+- title: 'How-tos'
+  url: How-tos.html
   output: 'web, pdf'
   children:
 
-  - title: 'Create Other Forms of APIs'
-    url: Create-other-forms-of-apis.html
-    output: 'web, pdf'
-    children:
-      - title: 'Exposing GraphQL APIs'
-        url: exposing-graphql-apis.html
-        output: 'web, pdf'
-
-  - title: 'Access Databases'
-    url: Access-databases.html
-    output: 'web, pdf'
-    children:
-
-      - title: 'Database Migrations'
-        url: Database-migrations.html
-        output: 'web, pdf'
-
-  - title: 'Call Other Services'
-    url: Calling-other-APIs-and-web-services.html
-    output: 'web, pdf'
-
-  - title: 'Integrate with Infrastructures'
-    url: Integrate-with-infrastructures.html
-    output: 'web, pdf'
-    children:
-
-    - title: 'Authentication'
-      url: Loopback-component-authentication.html
+    - title: 'Exposing GraphQL APIs'
+      url: exposing-graphql-apis.html
       output: 'web, pdf'
 
-    - title: 'Authorization'
-      url: Loopback-component-authorization.html
+    - title: 'Deploying to IBM Cloud'
+      url: Deploying-to-IBM-Cloud.html
       output: 'web, pdf'
 
-  - title: 'Deployment'
-    url: Deployment.html
-    output: 'web, pdf'
-    children:
-      - title: 'Deploying to IBM Cloud'
-        url: Deploying-to-IBM-Cloud.html
-        output: 'web, pdf'
+    - title: 'Deploying to Kubernetes on IBM Cloud'
+      url: deploying_to_ibm_cloud_kubernetes.html
+      output: 'web, pdf'
 
-      - title: 'Deploying to Kubernetes on IBM Cloud'
-        url: deploying_to_ibm_cloud_kubernetes.html
-        output: 'web, pdf'
+    - title: 'Deploying with pm2 and nginx'
+      url: deploying-with-pm2-and-nginx.html
+      output: 'web, pdf'
 
-      - title: 'Deploying with pm2 and nginx'
-        url: deploying-with-pm2-and-nginx.html
-        output: 'web, pdf'
+    - title: 'Serving static files'
+      url: Serving-static-files.html
+      output: 'web, pdf'
 
-  - title: 'Serving static files'
-    url: Serving-static-files.html
-    output: 'web, pdf'
+    - title: 'Database Migrations'
+      url: Database-migrations.html
+      output: 'web, pdf'
 
 - title: 'Booting an Application'
   url: Booting-an-Application.html
@@ -218,6 +284,93 @@ children:
 
   - title: 'Boot and Mount a LoopBack 3 Application'
     url: Boot-and-Mount-a-LoopBack-3-application.html
+    output: 'web, pdf'
+
+- title: 'Calling other APIs'
+  url: Calling-other-APIs-and-web-services.html
+  output: 'web, pdf'
+
+- title: 'For LoopBack 3.x users'
+  url: LoopBack-3.x.html
+  output: 'web, pdf'
+  children:
+
+  - title: 'Understanding the differences between LoopBack 3 and LoopBack 4'
+    url: Understanding-the-differences.html
+    output: 'web, pdf'
+
+  - title: 'Migrating from LoopBack 3'
+    url: Migrating-from-LoopBack-3.html
+    output: 'web, pdf'
+
+- title: 'Command-line interface'
+  url: Command-line-interface.html
+  output: 'web, pdf'
+  children:
+
+  - title: 'Application generator'
+    url: Application-generator.html
+    output: 'web, pdf'
+
+  - title: 'Controller generator'
+    url: Controller-generator.html
+    output: 'web, pdf'
+
+  - title: 'DataSource generator'
+    url: DataSource-generator.html
+    output: 'web, pdf'
+
+  - title: 'Model generator'
+    url: Model-generator.html
+    output: 'web, pdf'
+
+  - title: 'Model discovery'
+    url: Discovering-models.html
+    output: 'web, pdf'
+
+  - title: 'Repository generator'
+    url: Repository-generator.html
+    output: 'web, pdf'
+
+  - title: 'Service generator'
+    url: Service-generator.html
+    output: 'web, pdf'
+
+  - title: 'OpenAPI generator'
+    url: OpenAPI-generator.html
+    output: 'web, pdf'
+
+  - title: 'Life cycle observer generator'
+    url: Life-cycle-observer-generator.html
+    output: 'web, pdf'
+
+  - title: 'Interceptor generator'
+    url: Interceptor-generator.html
+    output: 'web, pdf'
+
+  - title: 'Extension generator'
+    url: Extension-generator.html
+    output: 'web, pdf'
+
+  - title: 'Download examples'
+    url: Download-examples.html
+    output: 'web, pdf'
+
+- title: 'Best practices'
+  url: Best-practices.html
+  output: 'web, pdf'
+  children:
+
+  - title: 'Defining the API using code-first approach'
+    url: Defining-the-API-using-code-first-approach.html
+    output: 'web, pdf'
+
+  - title: 'Defining your testing strategy'
+    url: Defining-your-testing-strategy.html
+    output: 'web, pdf'
+
+  - title: 'Testing your application'
+    url: Testing-your-application.html
     output: 'web, pdf'
 
 - title: 'Extending LoopBack 4'
@@ -257,389 +410,22 @@ children:
   url: Crafting-LoopBack-4.html
   output: 'web, pdf'
 
-- title: 'Tutorials'
-  url: Tutorials.html
+- title: 'FAQ'
+  url: FAQ.html
   output: 'web, pdf'
-  children:
-
-  - title: 'Todo Tutorial'
-    url: todo-tutorial.html
-    output: 'web, pdf'
-    children:
-
-    - title: 'Create your app scaffolding'
-      url: todo-tutorial-scaffolding.html
-      output: 'web, pdf'
-
-    - title: 'Add the Todo model'
-      url: todo-tutorial-model.html
-      output: 'web, pdf'
-
-    - title: 'Add a Datasource'
-      url: todo-tutorial-datasource.html
-      output: 'web, pdf'
-
-    - title: 'Add a Repository'
-      url: todo-tutorial-repository.html
-      output: 'web, pdf'
-
-    - title: 'Add a Controller'
-      url: todo-tutorial-controller.html
-      output: 'web, pdf'
-
-    - title: 'Putting it all together'
-      url: todo-tutorial-putting-it-together.html
-      output: 'web, pdf'
-
-    - title: 'Bonus: Integrate with a geo-coding service'
-      url: todo-tutorial-geocoding-service.html
-      output: 'web, pdf'
-
-  - title: 'TodoList Tutorial'
-    url: todo-list-tutorial.html
-    output: 'web, pdf'
-    children:
-
-    - title: 'Add TodoList Model'
-      url: todo-list-tutorial-model.html
-      output: 'web, pdf'
-
-    - title: 'Add TodoList Repository'
-      url: todo-list-tutorial-repository.html
-      output: 'web, pdf'
-
-    - title: 'Add TodoList Controller'
-      url: todo-list-tutorial-controller.html
-      output: 'web, pdf'
-
-    - title: 'Running on relational databases'
-      url: todo-list-tutorial-sqldb.html
-      output: 'web, pdf'
-
-  - title: 'SOAP Web Service Tutorial'
-    url: soap-calculator-tutorial.html
-    output: 'web, pdf'
-    children:
-
-    - title: 'SOAP Web Service Overview'
-      url: soap-calculator-tutorial-web-service-overview.html
-      output: 'web, pdf'
-
-    - title: 'App scaffolding'
-      url: soap-calculator-tutorial-scaffolding.html
-      output: 'web, pdf'
-
-    - title: 'Add a Datasource'
-      url: soap-calculator-tutorial-add-datasource.html
-      output: 'web, pdf'
-
-    - title: 'Add a Service'
-      url: soap-calculator-tutorial-add-service.html
-      output: 'web, pdf'
-
-    - title: 'Add a Controller'
-      url: soap-calculator-tutorial-add-controller.html
-      output: 'web, pdf'
-
-    - title: 'Run and Test it'
-      url: soap-calculator-tutorial-run-and-test.html
-      output: 'web, pdf'
-
-  - title: 'Creating an Express Application with LoopBack REST API'
-    url: express-with-lb4-rest-tutorial.html
-    output: 'web, pdf'
-
-  - title: 'How to secure your LoopBack 4 application with JWT authentication'
-    url: Authentication-Tutorial.html
-    output: 'web, pdf'
-
-- title: 'Examples'
-  url: Examples.html
-  output: 'web, pdf'
-
-- title: 'CLI References'
-  url: Command-line-interface.html
-  output: 'web, pdf'
-  children:
-
-  - title: 'Application generator'
-    url: Application-generator.html
-    output: 'web, pdf'
-
-  - title: 'Controller generator'
-    url: Controller-generator.html
-    output: 'web, pdf'
-
-  - title: 'DataSource generator'
-    url: DataSource-generator.html
-    output: 'web, pdf'
-
-  - title: 'Model generator'
-    url: Model-generator.html
-    output: 'web, pdf'
-
-  - title: 'Model discovery'
-    url: Discovering-models.html
-    output: 'web, pdf'
-
-  - title: 'Relation generator'
-    url: Relation-generator.html
-    output: 'web, pdf'
-
-  - title: 'Repository generator'
-    url: Repository-generator.html
-    output: 'web, pdf'
-
-  - title: 'Service generator'
-    url: Service-generator.html
-    output: 'web, pdf'
-
-  - title: 'OpenAPI generator'
-    url: OpenAPI-generator.html
-    output: 'web, pdf'
-
-  - title: 'Life cycle observer generator'
-    url: Life-cycle-observer-generator.html
-    output: 'web, pdf'
-
-  - title: 'Interceptor generator'
-    url: Interceptor-generator.html
-    output: 'web, pdf'
-
-  - title: 'Extension generator'
-    url: Extension-generator.html
-    output: 'web, pdf'
-
-  - title: 'Download examples'
-    url: Download-examples.html
-    output: 'web, pdf'
-
-- title: 'Connectors reference'
-  url: Connectors-reference.html
-  output: 'web'
-  children:
-
-  - title: 'Memory connector'
-    url: Memory-connector.html
-    output: 'web, pdf'
-
-  - title: 'Database connectors'
-    url: Database-connectors.html
-    output: 'web'
-    children:
-
-    - title: 'Cassandra connector'
-      url: Cassandra-connector.html
-      output: 'web, pdf'
-
-    - title: 'Cloudant connector'
-      url: Cloudant-connector.html
-      output: 'web, pdf'
-
-    - title: 'DashDB connector'
-      url: DashDB.html
-      output: 'web, pdf'
-
-    - title: 'DB2 connector'
-      url: DB2-connector.html
-      output: 'web, pdf'
-
-    - title: 'DB2 for iSeries connector'
-      url: DB2-iSeries-connector.html
-      output: 'web, pdf'
-
-    - title: 'DB2 for z/OS'
-      url: DB2-for-z-OS.html
-      output: 'web, pdf'
-
-    - title: Informix connector
-      url: Informix.html
-      output: 'web, pdf'
-
-    - title: 'MongoDB connector'
-      url: MongoDB-connector.html
-      output: 'web, pdf'
-      children:
-
-      - title: 'MongoDB Connector Tutorial'
-        url: Connecting-to-MongoDB.html
-        output: 'web, pdf'
-
-      - title: 'Using MongoLab'
-        url: Using-MongoLab.html
-        output: 'web, pdf'
-
-    - title: 'MySQL connector'
-      url: MySQL-connector.html
-      output: 'web, pdf'
-      children:
-
-      - title: 'MySQL Connector Tutorial'
-        url: Connecting-to-MySQL.html
-        output: 'web, pdf'
-
-    - title: 'Oracle connector'
-      url: Oracle-connector.html
-      output: 'web, pdf'
-      children:
-
-      - title: 'Installing the Oracle connector'
-        url: Installing-the-Oracle-connector.html
-        output: 'web, pdf'
-
-      - title: 'Oracle connector tutorial'
-        url: Connecting-to-Oracle.html
-        output: 'web, pdf'
-
-    - title: 'PostgreSQL connector'
-      url: PostgreSQL-connector.html
-      output: 'web, pdf'
-      children:
-
-      - title: 'PostgreSQL connector tutorial'
-        url: Connecting-to-PostgreSQL.html
-        output: 'web, pdf'
-
-    - title: 'Redis connector'
-      url: Redis-connector.html
-      output: 'web, pdf'
-
-    - title: 'Redis key-value connector'
-      url: kv-redis-connector.html
-      output: 'web, pdf'
-      children:
-
-      - title: 'KV connector example'
-        url: Example-kv-connector.html
-        output: 'web, pdf'
-
-    - title: 'SQL Server connector'
-      url: SQL-Server-connector.html
-      output: 'web, pdf'
-      children:
-
-      - title: 'SQL Server connector tutorial'
-        url: Connecting-to-Microsoft-SQL-Server.html
-        output: 'web, pdf'
-
-    - title: 'SQLite3 connector'
-      url: SQLite3.html
-      output: 'web, pdf'
-
-    - title: 'z/OS Connect Enterprise Edition connector'
-      url: zOSconnectEE.html
-      output: 'web, pdf'
-
-  - title: 'Other connectors'
-    url: Other-connectors.html
-    output: 'web'
-    children:
-
-    - title: 'Email connector'
-      url: Email-connector.html
-      output: 'web, pdf'
-
-    - title: 'JSON RPC connector'
-      url: JSON-RPC-connector.html
-      output: 'web, pdf'
-
-    - title: 'MQ Light connector'
-      url: MQLight-connector.html
-      output: 'web, pdf'
-
-    - title: 'Push connector'
-      url: Push-connector.html
-      output: 'web, pdf'
-
-    - title: 'Remote connector'
-      url: Remote-connector.html
-      output: 'web, pdf'
-      children:
-
-      - title: 'Remote connector example'
-        url: Remote-connector-example.html
-        output: 'web, pdf'
-
-      - title: 'Strong Remoting'
-        url: Strong-Remoting.html
-        output: 'web, pdf'
-
-    - title: 'REST connector'
-      url: REST-connector.html
-      output: 'web, pdf'
-      children:
-
-      - title: 'REST connector example'
-        url: REST-connector-example.html
-        output: 'web, pdf'
-
-    - title: 'SOAP connector'
-      url: SOAP-connector.html
-      output: 'web, pdf'
-      children:
-
-      - title: 'Strong-soap'
-        url: Strong-soap.html
-        output: 'web, pdf'
-
-      - title: 'SOAP connector example'
-        url: SOAP-Connector-example.html
-        output: 'web, pdf'
-
-      - title: 'Connecting to SOAP web services'
-        url: Connecting-to-SOAP.html
-        output: 'web, pdf'
-
-    - title: 'Storage connector'
-      url: Storage-connector.html
-      output: 'web, pdf'
-
-    - title: 'Swagger connector'
-      url: Swagger-connector.html
-      output: 'web, pdf'
-
-  - title: 'Community connectors'
-    url: Community-connectors.html
-    output: 'web, pdf'
 
 - title: 'API docs'
   url: apidocs.index.html
   output: 'web, pdf'
 
-- title: 'For LoopBack 3.x users'
-  url: LoopBack-3.x.html
-  output: 'web, pdf'
-  children:
-
-  - title: 'Understanding the differences between LoopBack 3 and LoopBack 4'
-    url: Understanding-the-differences.html
-    output: 'web, pdf'
-
-  - title: 'Migrating from LoopBack 3'
-    url: Migrating-from-LoopBack-3.html
-    output: 'web, pdf'
-
-- title: 'Best practices'
-  url: Best-practices.html
-  output: 'web, pdf'
-  children:
-
-  - title: 'Defining the API using code-first approach'
-    url: Defining-the-API-using-code-first-approach.html
-    output: 'web, pdf'
-
-  - title: 'Defining your testing strategy'
-    url: Defining-your-testing-strategy.html
-    output: 'web, pdf'
-
-  - title: 'Testing your application'
-    url: Testing-your-application.html
-    output: 'web, pdf'
-
 - title: 'Reference'
   url: Reference.html
   output: 'web, pdf'
   children:
+
+  - title: 'Glossary'
+    url: Glossary.html
+    output: 'web, pdf'
 
   - title: 'Considerations for GDPR readiness'
     url: Deploy-for-GDPR-readiness.html

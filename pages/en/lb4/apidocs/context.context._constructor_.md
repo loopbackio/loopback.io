@@ -10,7 +10,7 @@ permalink: /doc/en/lb4/apidocs.context.context._constructor_.html
 
 [Home](./index.md) &gt; [@loopback/context](./context.md) &gt; [Context](./context.context.md) &gt; [(constructor)](./context.context._constructor_.md)
 
-## Context.(constructor)
+## Context._constructor_
 
 Create a new context.
 

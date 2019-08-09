@@ -10,7 +10,7 @@ permalink: /doc/en/lb4/apidocs.service-proxy.servicemixindoc._constructor_.html
 
 [Home](./index.md) &gt; [@loopback/service-proxy](./service-proxy.md) &gt; [ServiceMixinDoc](./service-proxy.servicemixindoc.md) &gt; [(constructor)](./service-proxy.servicemixindoc._constructor_.md)
 
-## ServiceMixinDoc.(constructor)
+## ServiceMixinDoc._constructor_
 
 Constructs a new instance of the `ServiceMixinDoc` class
 

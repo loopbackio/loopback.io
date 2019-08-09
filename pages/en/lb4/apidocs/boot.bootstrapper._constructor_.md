@@ -10,7 +10,7 @@ permalink: /doc/en/lb4/apidocs.boot.bootstrapper._constructor_.html
 
 [Home](./index.md) &gt; [@loopback/boot](./boot.md) &gt; [Bootstrapper](./boot.bootstrapper.md) &gt; [(constructor)](./boot.bootstrapper._constructor_.md)
 
-## Bootstrapper.(constructor)
+## Bootstrapper._constructor_
 
 Constructs a new instance of the `Bootstrapper` class
 

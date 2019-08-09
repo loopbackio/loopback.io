@@ -17,17 +17,15 @@ Gets the JSON Schema of a TypeScript model/class by seeing if one exists in a ca
 <b>Signature:</b>
 
 ```typescript
-export declare function getJsonSchema<T extends object>(ctor: Function & {
-    prototype: T;
-}, options?: JsonSchemaOptions<T>): JSONSchema;
+export declare function getJsonSchema(ctor: Function, options?: JsonSchemaOptions): JSONSchema;
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  ctor | <code>Function &amp; {</code><br/><code>    prototype: T;</code><br/><code>}</code> | Contructor of class to get JSON Schema from |
-|  options | <code>JsonSchemaOptions&lt;T&gt;</code> |  |
+|  ctor | <code>Function</code> | Contructor of class to get JSON Schema from |
+|  options | <code>JsonSchemaOptions</code> |  |
 
 <b>Returns:</b>
 

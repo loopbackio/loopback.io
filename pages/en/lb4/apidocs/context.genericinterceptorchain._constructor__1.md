@@ -10,7 +10,7 @@ permalink: /doc/en/lb4/apidocs.context.genericinterceptorchain._constructor__1.h
 
 [Home](./index.md) &gt; [@loopback/context](./context.md) &gt; [GenericInterceptorChain](./context.genericinterceptorchain.md) &gt; [(constructor)](./context.genericinterceptorchain._constructor__1.md)
 
-## GenericInterceptorChain.(constructor)
+## GenericInterceptorChain._constructor_
 
 Create an invocation interceptor chain with a binding filter and comparator. The interceptors are discovered from the context using the binding filter and sorted by the comparator (if provided).
 

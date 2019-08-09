@@ -10,7 +10,7 @@ permalink: /doc/en/lb4/apidocs.rest.requestcontext._constructor_.html
 
 [Home](./index.md) &gt; [@loopback/rest](./rest.md) &gt; [RequestContext](./rest.requestcontext.md) &gt; [(constructor)](./rest.requestcontext._constructor_.md)
 
-## RequestContext.(constructor)
+## RequestContext._constructor_
 
 Constructs a new instance of the `RequestContext` class
 

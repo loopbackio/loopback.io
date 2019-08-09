@@ -17,17 +17,15 @@ Converts a TypeScript class into a JSON Schema using TypeScript's reflection API
 <b>Signature:</b>
 
 ```typescript
-export declare function modelToJsonSchema<T extends object>(ctor: Function & {
-    prototype: T;
-}, jsonSchemaOptions?: JsonSchemaOptions<T>): JSONSchema;
+export declare function modelToJsonSchema(ctor: Function, jsonSchemaOptions?: JsonSchemaOptions): JSONSchema;
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  ctor | <code>Function &amp; {</code><br/><code>    prototype: T;</code><br/><code>}</code> | Constructor of class to convert from |
-|  jsonSchemaOptions | <code>JsonSchemaOptions&lt;T&gt;</code> |  |
+|  ctor | <code>Function</code> | Constructor of class to convert from |
+|  jsonSchemaOptions | <code>JsonSchemaOptions</code> |  |
 
 <b>Returns:</b>
 
