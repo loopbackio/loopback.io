@@ -36,6 +36,6 @@ export declare class DefaultConfigurationResolver implements ConfigurationResolv
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [getConfigAsValueOrPromise(key, configPath, resolutionOptions)](./context.defaultconfigurationresolver.getconfigasvalueorpromise.md) |  |  |
+|  [getConfigAsValueOrPromise(key, propertyPath, resolutionOptions)](./context.defaultconfigurationresolver.getconfigasvalueorpromise.md) |  |  |
 
 

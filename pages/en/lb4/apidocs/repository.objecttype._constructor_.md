@@ -10,7 +10,7 @@ permalink: /doc/en/lb4/apidocs.repository.objecttype._constructor_.html
 
 [Home](./index.md) &gt; [@loopback/repository](./repository.md) &gt; [ObjectType](./repository.objecttype.md) &gt; [(constructor)](./repository.objecttype._constructor_.md)
 
-## ObjectType._constructor_
+## ObjectType.(constructor)
 
 Constructs a new instance of the `ObjectType` class
 

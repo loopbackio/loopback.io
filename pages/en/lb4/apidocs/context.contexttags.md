@@ -26,8 +26,8 @@ export declare namespace ContextTags
 |  --- | --- |
 |  [CLASS](./context.contexttags.class.md) |  |
 |  [CONFIGURATION\_FOR](./context.contexttags.configuration_for.md) | Binding tag to associate a configuration binding with the target binding key |
-|  [GLOBAL\_INTERCEPTOR](./context.contexttags.global_interceptor.md) | Binding tag for global interceptors |
 |  [GLOBAL\_INTERCEPTOR\_GROUP](./context.contexttags.global_interceptor_group.md) | Binding tag for group name of global interceptors |
+|  [GLOBAL\_INTERCEPTOR](./context.contexttags.global_interceptor.md) | Binding tag for global interceptors |
 |  [KEY](./context.contexttags.key.md) | Binding key for the artifact |
 |  [NAME](./context.contexttags.name.md) | Name of the artifact |
 |  [NAMESPACE](./context.contexttags.namespace.md) | Namespace of the artifact |

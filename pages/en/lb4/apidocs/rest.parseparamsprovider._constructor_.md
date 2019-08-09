@@ -10,7 +10,7 @@ permalink: /doc/en/lb4/apidocs.rest.parseparamsprovider._constructor_.html
 
 [Home](./index.md) &gt; [@loopback/rest](./rest.md) &gt; [ParseParamsProvider](./rest.parseparamsprovider.md) &gt; [(constructor)](./rest.parseparamsprovider._constructor_.md)
 
-## ParseParamsProvider._constructor_
+## ParseParamsProvider.(constructor)
 
 Constructs a new instance of the `ParseParamsProvider` class
 

@@ -10,7 +10,7 @@ permalink: /doc/en/lb4/apidocs.repository.crudrepositoryimpl._constructor_.html
 
 [Home](./index.md) &gt; [@loopback/repository](./repository.md) &gt; [CrudRepositoryImpl](./repository.crudrepositoryimpl.md) &gt; [(constructor)](./repository.crudrepositoryimpl._constructor_.md)
 
-## CrudRepositoryImpl._constructor_
+## CrudRepositoryImpl.(constructor)
 
 Constructs a new instance of the `CrudRepositoryImpl` class
 

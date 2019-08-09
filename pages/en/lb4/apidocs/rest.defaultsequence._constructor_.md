@@ -10,7 +10,7 @@ permalink: /doc/en/lb4/apidocs.rest.defaultsequence._constructor_.html
 
 [Home](./index.md) &gt; [@loopback/rest](./rest.md) &gt; [DefaultSequence](./rest.defaultsequence.md) &gt; [(constructor)](./rest.defaultsequence._constructor_.md)
 
-## DefaultSequence._constructor_
+## DefaultSequence.(constructor)
 
 Constructor: Injects findRoute, invokeMethod &amp; logError methods as promises.
 

@@ -10,7 +10,7 @@ permalink: /doc/en/lb4/apidocs.boot.servicebooter._constructor_.html
 
 [Home](./index.md) &gt; [@loopback/boot](./boot.md) &gt; [ServiceBooter](./boot.servicebooter.md) &gt; [(constructor)](./boot.servicebooter._constructor_.md)
 
-## ServiceBooter._constructor_
+## ServiceBooter.(constructor)
 
 Constructs a new instance of the `ServiceBooter` class
 

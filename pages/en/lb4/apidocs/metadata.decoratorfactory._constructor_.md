@@ -10,7 +10,7 @@ permalink: /doc/en/lb4/apidocs.metadata.decoratorfactory._constructor_.html
 
 [Home](./index.md) &gt; [@loopback/metadata](./metadata.md) &gt; [DecoratorFactory](./metadata.decoratorfactory.md) &gt; [(constructor)](./metadata.decoratorfactory._constructor_.md)
 
-## DecoratorFactory._constructor_
+## DecoratorFactory.(constructor)
 
 Construct a new class decorator factory
 

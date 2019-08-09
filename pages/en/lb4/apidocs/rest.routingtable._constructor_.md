@@ -10,7 +10,7 @@ permalink: /doc/en/lb4/apidocs.rest.routingtable._constructor_.html
 
 [Home](./index.md) &gt; [@loopback/rest](./rest.md) &gt; [RoutingTable](./rest.routingtable.md) &gt; [(constructor)](./rest.routingtable._constructor_.md)
 
-## RoutingTable._constructor_
+## RoutingTable.(constructor)
 
 Constructs a new instance of the `RoutingTable` class
 

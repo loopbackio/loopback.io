@@ -15,6 +15,6 @@ permalink: /doc/en/lb4/apidocs.rest-explorer.restexplorerbindings.config.html
 <b>Signature:</b>
 
 ```typescript
-CONFIG: BindingKey<RestExplorerConfig>
+CONFIG: import("@loopback/context").BindingAddress<RestExplorerConfig>
 ```
 

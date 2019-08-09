@@ -34,7 +34,6 @@ export declare class ServiceBooter extends BaseArtifactBooter
 |  --- | --- | --- | --- |
 |  [app](./boot.servicebooter.app.md) |  | <code>ApplicationWithServices</code> |  |
 |  [serviceConfig](./boot.servicebooter.serviceconfig.md) |  | <code>ArtifactOptions</code> |  |
-|  [serviceProviders](./boot.servicebooter.serviceproviders.md) |  | <code>ServiceProviderClass[]</code> |  |
 
 ## Methods
 

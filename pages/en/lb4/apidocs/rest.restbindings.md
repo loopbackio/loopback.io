@@ -42,15 +42,15 @@ export declare namespace RestBindings
 |  [HTTPS\_OPTIONS](./rest.restbindings.https_options.md) | Binding key for HTTPS options |
 |  [PORT](./rest.restbindings.port.md) | Binding key for setting and injecting the port number of RestServer |
 |  [PROTOCOL](./rest.restbindings.protocol.md) | Binding key for setting and injecting the protocol of RestServer |
-|  [REQUEST\_BODY\_PARSER](./rest.restbindings.request_body_parser.md) | Binding key for request body parser |
 |  [REQUEST\_BODY\_PARSER\_JSON](./rest.restbindings.request_body_parser_json.md) | Binding key for request json body parser |
 |  [REQUEST\_BODY\_PARSER\_OPTIONS](./rest.restbindings.request_body_parser_options.md) | Binding key for request body parser options |
 |  [REQUEST\_BODY\_PARSER\_RAW](./rest.restbindings.request_body_parser_raw.md) | Binding key for request raw body parser |
 |  [REQUEST\_BODY\_PARSER\_STREAM](./rest.restbindings.request_body_parser_stream.md) | Binding key for request raw body parser |
 |  [REQUEST\_BODY\_PARSER\_TEXT](./rest.restbindings.request_body_parser_text.md) | Binding key for request text body parser |
 |  [REQUEST\_BODY\_PARSER\_URLENCODED](./rest.restbindings.request_body_parser_urlencoded.md) | Binding key for request urlencoded body parser |
-|  [ROUTER](./rest.restbindings.router.md) | Internal binding key for rest router |
+|  [REQUEST\_BODY\_PARSER](./rest.restbindings.request_body_parser.md) | Binding key for request body parser |
 |  [ROUTER\_OPTIONS](./rest.restbindings.router_options.md) |  |
+|  [ROUTER](./rest.restbindings.router.md) | Internal binding key for rest router |
 |  [SEQUENCE](./rest.restbindings.sequence.md) | Binding key for setting and injecting a Sequence |
 |  [URL](./rest.restbindings.url.md) | Binding key for setting and injecting the URL of RestServer |
 

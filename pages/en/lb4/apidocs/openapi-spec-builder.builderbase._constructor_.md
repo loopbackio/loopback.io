@@ -10,7 +10,7 @@ permalink: /doc/en/lb4/apidocs.openapi-spec-builder.builderbase._constructor_.ht
 
 [Home](./index.md) &gt; [@loopback/openapi-spec-builder](./openapi-spec-builder.md) &gt; [BuilderBase](./openapi-spec-builder.builderbase.md) &gt; [(constructor)](./openapi-spec-builder.builderbase._constructor_.md)
 
-## BuilderBase._constructor_
+## BuilderBase.(constructor)
 
 Constructs a new instance of the `BuilderBase` class
 

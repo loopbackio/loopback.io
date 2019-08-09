@@ -17,7 +17,7 @@ Resolve configuration for the binding by key
 <b>Signature:</b>
 
 ```typescript
-getConfig<ConfigValueType>(key: BindingAddress, configPath?: string, resolutionOptions?: ResolutionOptions): Promise<ConfigValueType | undefined>;
+getConfig<ConfigValueType>(key: BindingAddress, propertyPath?: string, resolutionOptions?: ResolutionOptions): Promise<ConfigValueType | undefined>;
 ```
 
 ## Parameters
@@ -25,7 +25,7 @@ getConfig<ConfigValueType>(key: BindingAddress, configPath?: string, resolutionO
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  key | <code>BindingAddress</code> | Binding key |
-|  configPath | <code>string</code> | Property path for the option. For example, <code>x.y</code> requests for <code>&lt;config&gt;.x.y</code>. If not set, the <code>&lt;config&gt;</code> object will be returned. |
+|  propertyPath | <code>string</code> | Property path for the option. For example, <code>x.y</code> requests for <code>&lt;config&gt;.x.y</code>. If not set, the <code>&lt;config&gt;</code> object will be returned. |
 |  resolutionOptions | <code>ResolutionOptions</code> | Options for the resolution. |
 
 <b>Returns:</b>
