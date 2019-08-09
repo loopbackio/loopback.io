@@ -10,7 +10,7 @@ permalink: /doc/en/lb4/apidocs.testlab.testsandbox._constructor_.html
 
 [Home](./index.md) &gt; [@loopback/testlab](./testlab.md) &gt; [TestSandbox](./testlab.testsandbox.md) &gt; [(constructor)](./testlab.testsandbox._constructor_.md)
 
-## TestSandbox._constructor_
+## TestSandbox.(constructor)
 
 Will create a directory if it doesn't already exist. If it exists, you still get an instance of the TestSandbox.
 

@@ -10,7 +10,7 @@ permalink: /doc/en/lb4/apidocs.context.interceptionhandler._constructor_.html
 
 [Home](./index.md) &gt; [@loopback/context](./context.md) &gt; [InterceptionHandler](./context.interceptionhandler.md) &gt; [(constructor)](./context.interceptionhandler._constructor_.md)
 
-## InterceptionHandler._constructor_
+## InterceptionHandler.(constructor)
 
 Constructs a new instance of the `InterceptionHandler` class
 

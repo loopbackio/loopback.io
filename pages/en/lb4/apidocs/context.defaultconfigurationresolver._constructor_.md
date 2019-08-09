@@ -10,7 +10,7 @@ permalink: /doc/en/lb4/apidocs.context.defaultconfigurationresolver._constructor
 
 [Home](./index.md) &gt; [@loopback/context](./context.md) &gt; [DefaultConfigurationResolver](./context.defaultconfigurationresolver.md) &gt; [(constructor)](./context.defaultconfigurationresolver._constructor_.md)
 
-## DefaultConfigurationResolver._constructor_
+## DefaultConfigurationResolver.(constructor)
 
 Constructs a new instance of the `DefaultConfigurationResolver` class
 

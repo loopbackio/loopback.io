@@ -10,7 +10,7 @@ permalink: /doc/en/lb4/apidocs.rest.getfromcontextprovider._constructor_.html
 
 [Home](./index.md) &gt; [@loopback/rest](./rest.md) &gt; [GetFromContextProvider](./rest.getfromcontextprovider.md) &gt; [(constructor)](./rest.getfromcontextprovider._constructor_.md)
 
-## GetFromContextProvider._constructor_
+## GetFromContextProvider.(constructor)
 
 Constructs a new instance of the `GetFromContextProvider` class
 

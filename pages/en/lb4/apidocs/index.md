@@ -7,6 +7,7 @@ permalink: /doc/en/lb4/apidocs.index.html
 ---
 
 ## API Docs
+- [@loopback/extension-health](extension-health.md)
 - [@loopback/authentication](authentication.md)
 - [@loopback/boot](boot.md)
 - [@loopback/booter-lb3app](booter-lb3app.md)
@@ -17,9 +18,9 @@ permalink: /doc/en/lb4/apidocs.index.html
 - [@loopback/metadata](metadata.md)
 - [@loopback/openapi-spec-builder](openapi-spec-builder.md)
 - [@loopback/openapi-v3](openapi-v3.md)
-- [@loopback/openapi-v3-types](openapi-v3-types.md)
 - [@loopback/repository](repository.md)
 - [@loopback/repository-json-schema](repository-json-schema.md)
+- [@loopback/repository-tests](repository-tests.md)
 - [@loopback/rest](rest.md)
 - [@loopback/rest-explorer](rest-explorer.md)
 - [@loopback/service-proxy](service-proxy.md)

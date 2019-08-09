@@ -10,7 +10,7 @@ permalink: /doc/en/lb4/apidocs.boot.applicationmetadatabooter._constructor_.html
 
 [Home](./index.md) &gt; [@loopback/boot](./boot.md) &gt; [ApplicationMetadataBooter](./boot.applicationmetadatabooter.md) &gt; [(constructor)](./boot.applicationmetadatabooter._constructor_.md)
 
-## ApplicationMetadataBooter._constructor_
+## ApplicationMetadataBooter.(constructor)
 
 Constructs a new instance of the `ApplicationMetadataBooter` class
 

@@ -24,6 +24,7 @@ export declare namespace RestExplorerBindings
 
 |  Variable | Description |
 |  --- | --- |
+|  [COMPONENT](./rest-explorer.restexplorerbindings.component.md) |  |
 |  [CONFIG](./rest-explorer.restexplorerbindings.config.md) |  |
 
 

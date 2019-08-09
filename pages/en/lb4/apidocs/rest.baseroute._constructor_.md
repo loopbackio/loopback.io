@@ -10,7 +10,7 @@ permalink: /doc/en/lb4/apidocs.rest.baseroute._constructor_.html
 
 [Home](./index.md) &gt; [@loopback/rest](./rest.md) &gt; [BaseRoute](./rest.baseroute.md) &gt; [(constructor)](./rest.baseroute._constructor_.md)
 
-## BaseRoute._constructor_
+## BaseRoute.(constructor)
 
 Construct a new route
 

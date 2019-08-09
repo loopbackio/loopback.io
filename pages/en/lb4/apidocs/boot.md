@@ -34,6 +34,7 @@ permalink: /doc/en/lb4/apidocs.boot.html
 |  Function | Description |
 |  --- | --- |
 |  [\_bindBooter(ctx, booterCls)](./boot._bindbooter.md) | Method which binds a given Booter to a given Context with the Prefix and Tags expected by the Bootstrapper |
+|  [booter(artifactNamespace, specs)](./boot.booter.md) | <code>@booter</code> decorator to mark a class as a <code>Booter</code> and specify the artifact namespace for the configuration of the booter |
 |  [BootMixin(superClass)](./boot.bootmixin.md) | Mixin for @<!-- -->loopback/boot. This Mixin provides the following: - Implements the Bootable Interface as follows. - Add a <code>projectRoot</code> property to the Class - Adds an optional <code>bootOptions</code> property to the Class that can be used to store the Booter conventions. - Adds the <code>BootComponent</code> to the Class (which binds the Bootstrapper and default Booters) - Provides the <code>boot()</code> convenience method to call Bootstrapper.boot() - Provides the <code>booter()</code> convenience method to bind a Booter(s) to the Application - Override <code>component()</code> to call <code>mountComponentBooters</code> - Adds <code>mountComponentBooters</code> which binds Booters to the application from <code>component.booters[]</code>\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\* NOTE \*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\* Trying to constrain the type of this Mixin (or any Mixin) will cause errors. For example, constraining this Mixin to type Application require all types using by Application to be imported (including it's dependencies such as ResolutionSession). Another issue was that if a Mixin that is type constrained is used with another Mixin that is not, it will result in an error. Example (class MyApp extends BootMixin(RepositoryMixin(Application))) {<!-- -->}<!-- -->; \*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\* END OF NOTE \*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\* |
 |  [discoverFiles(pattern, root)](./boot.discoverfiles.md) | Returns all files matching the given glob pattern relative to root |
 |  [isClass(target)](./boot.isclass.md) | Given a function, returns true if it is a class, false otherwise. |
@@ -50,7 +51,8 @@ permalink: /doc/en/lb4/apidocs.boot.html
 
 |  Namespace | Description |
 |  --- | --- |
-|  [BootBindings](./boot.bootbindings.md) | Namespace for core binding keys |
+|  [BootBindings](./boot.bootbindings.md) | Namespace for boot related binding keys |
+|  [BootTags](./boot.boottags.md) | Namespace for boot related tags |
 
 ## Variables
 
@@ -59,7 +61,7 @@ permalink: /doc/en/lb4/apidocs.boot.html
 |  [BOOTER\_PHASES](./boot.booter_phases.md) | Export of an array of all the Booter phases supported by the interface above, in the order they should be run. |
 |  [ControllerDefaults](./boot.controllerdefaults.md) | Default ArtifactOptions for ControllerBooter. |
 |  [DataSourceDefaults](./boot.datasourcedefaults.md) | Default ArtifactOptions for DataSourceBooter. |
-|  [InterceptorProviderDefaults](./boot.interceptorproviderdefaults.md) | Default ArtifactOptions for DataSourceBooter. |
+|  [InterceptorProviderDefaults](./boot.interceptorproviderdefaults.md) | Default ArtifactOptions for InterceptorProviderBooter. |
 |  [LifeCycleObserverDefaults](./boot.lifecycleobserverdefaults.md) | Default ArtifactOptions for DataSourceBooter. |
 |  [RepositoryDefaults](./boot.repositorydefaults.md) | Default ArtifactOptions for RepositoryBooter. |
 |  [ServiceDefaults](./boot.servicedefaults.md) | Default ArtifactOptions for DataSourceBooter. |

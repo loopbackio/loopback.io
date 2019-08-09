@@ -10,7 +10,7 @@ permalink: /doc/en/lb4/apidocs.repository.modeltype._constructor_.html
 
 [Home](./index.md) &gt; [@loopback/repository](./repository.md) &gt; [ModelType](./repository.modeltype.md) &gt; [(constructor)](./repository.modeltype._constructor_.md)
 
-## ModelType._constructor_
+## ModelType.(constructor)
 
 Constructs a new instance of the `ModelType` class
 

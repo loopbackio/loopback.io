@@ -10,7 +10,7 @@ permalink: /doc/en/lb4/apidocs.repository.defaulthasmanyrepository._constructor_
 
 [Home](./index.md) &gt; [@loopback/repository](./repository.md) &gt; [DefaultHasManyRepository](./repository.defaulthasmanyrepository.md) &gt; [(constructor)](./repository.defaulthasmanyrepository._constructor_.md)
 
-## DefaultHasManyRepository._constructor_
+## DefaultHasManyRepository.(constructor)
 
 Constructor of DefaultHasManyEntityCrudRepository
 
