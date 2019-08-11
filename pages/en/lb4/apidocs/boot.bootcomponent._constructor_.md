@@ -10,7 +10,7 @@ permalink: /doc/en/lb4/apidocs.boot.bootcomponent._constructor_.html
 
 [Home](./index.md) &gt; [@loopback/boot](./boot.md) &gt; [BootComponent](./boot.bootcomponent.md) &gt; [(constructor)](./boot.bootcomponent._constructor_.md)
 
-## BootComponent._constructor_
+## BootComponent.(constructor)
 
 Constructs a new instance of the `BootComponent` class
 

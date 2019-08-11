@@ -231,12 +231,12 @@ from the path object.
   responses: {
     '200': {
       description: 'Note model instance',
-      content: {'application/json': {schema: {'x-ts-type': Note}}},
+      content: {'application/json': {schema: getModelSchemaRef(Note)}},
     },
   },
 })
 async findById(@param.path.string('id') id: string): Promise<Note> {
-  return await this.noteRepository.findById(id);
+  return this.noteRepository.findById(id);
 }
 ```
 

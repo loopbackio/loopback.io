@@ -51,8 +51,8 @@ permalink: /doc/en/lb4/apidocs.context.html
 |  [bindingTemplateFor(cls)](./context.bindingtemplatefor.md) | Get the binding template for a class with binding metadata |
 |  [compareBindingsByTag(phaseTagName, orderOfPhases)](./context.comparebindingsbytag.md) | Creates a binding compare function to sort bindings by tagged phase name. |
 |  [compareByOrder(a, b, order)](./context.comparebyorder.md) | Compare two values by the predefined order |
-|  [config(configPath, metadata)](./context.config.md) | Inject a property from <code>config</code> of the current binding. If no corresponding config value is present, <code>undefined</code> will be injected as the configuration binding is resolved with <code>optional: true</code> by default. |
-|  [configBindingKeyFor(key, configPath)](./context.configbindingkeyfor.md) | Create binding key for configuration of the binding |
+|  [config(propertyPath, metadata)](./context.config.md) | Inject a property from <code>config</code> of the current binding. If no corresponding config value is present, <code>undefined</code> will be injected as the configuration binding is resolved with <code>optional: true</code> by default. |
+|  [configBindingKeyFor(key, propertyPath)](./context.configbindingkeyfor.md) | Create binding key for configuration of the binding |
 |  [createBindingFromClass(cls, options)](./context.createbindingfromclass.md) | Create a binding from a class with decorated metadata. The class is attached to the binding as follows: - <code>binding.toClass(cls)</code>: if <code>cls</code> is a plain class such as <code>MyController</code> - <code>binding.toProvider(cls)</code>: it <code>cls</code> is a value provider class with a prototype method <code>value()</code> |
 |  [createProxyWithInterceptors(target, context)](./context.createproxywithinterceptors.md) | Create a proxy that applies interceptors for method invocations |
 |  [createViewGetter(ctx, bindingFilter, session)](./context.createviewgetter.md) | Create a context view as a getter with the given filter |
@@ -70,7 +70,7 @@ permalink: /doc/en/lb4/apidocs.context.html
 |  [intercept(interceptorOrKeys)](./context.intercept.md) | Decorator function <code>@intercept</code> for classes/methods to apply interceptors. It can be applied on a class and its public methods. Multiple occurrences of <code>@intercept</code> are allowed on the same target class or method. The decorator takes a list of <code>interceptor</code> functions or binding keys. |
 |  [invokeInterceptors(context, interceptors)](./context.invokeinterceptors.md) | Invoke a chain of interceptors with the context |
 |  [invokeMethod(target, method, ctx, nonInjectedArgs, options)](./context.invokemethod.md) | Invoke a method using dependency injection. Interceptors are invoked as part of the invocation. |
-|  [invokeMethodWithInterceptors(context, target, methodName, args)](./context.invokemethodwithinterceptors.md) | Invoke a method with the given context |
+|  [invokeMethodWithInterceptors(context, target, methodName, args, options)](./context.invokemethodwithinterceptors.md) | Invoke a method with the given context |
 |  [isBindingAddress(bindingSelector)](./context.isbindingaddress.md) | Type guard for binding address |
 |  [isPromiseLike(value)](./context.ispromiselike.md) | Check whether a value is a Promise-like instance. Recognizes both native promises and third-party promise libraries. |
 |  [isProviderClass(cls)](./context.isproviderclass.md) | Check if a class implements <code>Provider</code> interface |
@@ -91,6 +91,7 @@ permalink: /doc/en/lb4/apidocs.context.html
 |  --- | --- |
 |  [BindingComparator](./context.bindingcomparator.md) | Compare function to sort an array of bindings. It is used by <code>Array.prototype.sort()</code>. |
 |  [BindingElement](./context.bindingelement.md) | Wrapper for bindings tracked by resolution sessions |
+|  [ConfigInjectionMetadata](./context.configinjectionmetadata.md) | Injection metadata for <code>@config.*</code> |
 |  [ConfigurationResolver](./context.configurationresolver.md) | Resolver for configuration of bindings. It's responsible for finding corresponding configuration for a given binding key.<!-- -->By default, <code>undefined</code> is expected if no configuration is provided. The behavior can be overridden by setting <code>optional</code> to <code>false</code> in resolution options. |
 |  [ContextObserver](./context.contextobserver.md) | Observers of context bind/unbind events |
 |  [InjectBindingMetadata](./context.injectbindingmetadata.md) | Metadata for <code>@inject.binding</code> |

@@ -10,7 +10,7 @@ permalink: /doc/en/lb4/apidocs.context.genericinterceptorchain._constructor_.htm
 
 [Home](./index.md) &gt; [@loopback/context](./context.md) &gt; [GenericInterceptorChain](./context.genericinterceptorchain.md) &gt; [(constructor)](./context.genericinterceptorchain._constructor_.md)
 
-## GenericInterceptorChain._constructor_
+## GenericInterceptorChain.(constructor)
 
 Create an invocation chain with a list of interceptor functions or binding keys
 

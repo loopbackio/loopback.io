@@ -40,7 +40,7 @@ export declare function skipIf<ARGS extends unknown[], RETVAL>(skip: boolean, ve
 
 ```ts
 skipIf(
-  !connectorFeatures.freeFormProperties,
+  !features.freeFormProperties,
   describe,
  'free-form properties (strict: false)',
   () => {

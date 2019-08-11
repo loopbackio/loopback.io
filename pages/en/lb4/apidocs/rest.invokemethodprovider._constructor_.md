@@ -10,7 +10,7 @@ permalink: /doc/en/lb4/apidocs.rest.invokemethodprovider._constructor_.html
 
 [Home](./index.md) &gt; [@loopback/rest](./rest.md) &gt; [InvokeMethodProvider](./rest.invokemethodprovider.md) &gt; [(constructor)](./rest.invokemethodprovider._constructor_.md)
 
-## InvokeMethodProvider._constructor_
+## InvokeMethodProvider.(constructor)
 
 Constructs a new instance of the `InvokeMethodProvider` class
 

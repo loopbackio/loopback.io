@@ -24,6 +24,6 @@ export interface Class<T>
 
 |  Method | Description |
 |  --- | --- |
-|  [(new)(args)](./service-proxy.class.(new).md) |  |
+|  [(new)(args)](./service-proxy.class._new_.md) |  |
 
 

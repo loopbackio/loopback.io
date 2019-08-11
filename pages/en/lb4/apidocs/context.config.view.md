@@ -17,6 +17,6 @@ permalink: /doc/en/lb4/apidocs.context.config.view.html
 <b>Signature:</b>
 
 ```typescript
-view: (configPath?: string | undefined, metadata?: InjectionMetadata | undefined) => (target: Object, member: string, methodDescriptorOrParameterIndex?: number | TypedPropertyDescriptor<any> | undefined) => void
+view: (propertyPath?: string | ConfigInjectionMetadata | undefined, metadata?: ConfigInjectionMetadata | undefined) => (target: Object, member: string, methodDescriptorOrParameterIndex?: number | TypedPropertyDescriptor<any> | undefined) => void
 ```
 

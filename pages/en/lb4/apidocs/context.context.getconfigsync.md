@@ -17,7 +17,7 @@ Resolve configuration synchronously for the binding by key
 <b>Signature:</b>
 
 ```typescript
-getConfigSync<ConfigValueType>(key: BindingAddress, configPath?: string, resolutionOptions?: ResolutionOptions): ConfigValueType | undefined;
+getConfigSync<ConfigValueType>(key: BindingAddress, propertyPath?: string, resolutionOptions?: ResolutionOptions): ConfigValueType | undefined;
 ```
 
 ## Parameters
@@ -25,7 +25,7 @@ getConfigSync<ConfigValueType>(key: BindingAddress, configPath?: string, resolut
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  key | <code>BindingAddress</code> | Binding key |
-|  configPath | <code>string</code> | Property path for the option. For example, <code>x.y</code> requests for <code>config.x.y</code>. If not set, the <code>config</code> object will be returned. |
+|  propertyPath | <code>string</code> | Property path for the option. For example, <code>x.y</code> requests for <code>config.x.y</code>. If not set, the <code>config</code> object will be returned. |
 |  resolutionOptions | <code>ResolutionOptions</code> | Options for the resolution. |
 
 <b>Returns:</b>

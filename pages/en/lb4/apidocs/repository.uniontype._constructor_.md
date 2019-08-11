@@ -10,7 +10,7 @@ permalink: /doc/en/lb4/apidocs.repository.uniontype._constructor_.html
 
 [Home](./index.md) &gt; [@loopback/repository](./repository.md) &gt; [UnionType](./repository.uniontype.md) &gt; [(constructor)](./repository.uniontype._constructor_.md)
 
-## UnionType._constructor_
+## UnionType.(constructor)
 
 Constructs a new instance of the `UnionType` class
 

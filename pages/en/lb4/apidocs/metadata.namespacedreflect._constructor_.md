@@ -10,7 +10,7 @@ permalink: /doc/en/lb4/apidocs.metadata.namespacedreflect._constructor_.html
 
 [Home](./index.md) &gt; [@loopback/metadata](./metadata.md) &gt; [NamespacedReflect](./metadata.namespacedreflect.md) &gt; [(constructor)](./metadata.namespacedreflect._constructor_.md)
 
-## NamespacedReflect._constructor_
+## NamespacedReflect.(constructor)
 
 Constructs a new instance of the `NamespacedReflect` class
 
