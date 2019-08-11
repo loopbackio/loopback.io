@@ -24,6 +24,6 @@ export interface Class<T>
 
 |  Method | Description |
 |  --- | --- |
-|  [(new)(args)](./repository.class.(new).md) |  |
+|  [(new)(args)](./repository.class._new_.md) |  |
 
 

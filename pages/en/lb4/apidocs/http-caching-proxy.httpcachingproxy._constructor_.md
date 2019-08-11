@@ -10,7 +10,7 @@ permalink: /doc/en/lb4/apidocs.http-caching-proxy.httpcachingproxy._constructor_
 
 [Home](./index.md) &gt; [@loopback/http-caching-proxy](./http-caching-proxy.md) &gt; [HttpCachingProxy](./http-caching-proxy.httpcachingproxy.md) &gt; [(constructor)](./http-caching-proxy.httpcachingproxy._constructor_.md)
 
-## HttpCachingProxy._constructor_
+## HttpCachingProxy.(constructor)
 
 Constructs a new instance of the `HttpCachingProxy` class
 

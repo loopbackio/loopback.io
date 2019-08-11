@@ -10,7 +10,7 @@ permalink: /doc/en/lb4/apidocs.repository.invalidrelationerror._constructor_.htm
 
 [Home](./index.md) &gt; [@loopback/repository](./repository.md) &gt; [InvalidRelationError](./repository.invalidrelationerror.md) &gt; [(constructor)](./repository.invalidrelationerror._constructor_.md)
 
-## InvalidRelationError._constructor_
+## InvalidRelationError.(constructor)
 
 Constructs a new instance of the `InvalidRelationError` class
 

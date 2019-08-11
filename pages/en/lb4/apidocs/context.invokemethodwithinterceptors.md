@@ -17,7 +17,7 @@ Invoke a method with the given context
 <b>Signature:</b>
 
 ```typescript
-export declare function invokeMethodWithInterceptors(context: Context, target: object, methodName: string, args: InvocationArgs): ValueOrPromise<InvocationResult>;
+export declare function invokeMethodWithInterceptors(context: Context, target: object, methodName: string, args: InvocationArgs, options?: InvocationOptions): ValueOrPromise<InvocationResult>;
 ```
 
 ## Parameters
@@ -28,6 +28,7 @@ export declare function invokeMethodWithInterceptors(context: Context, target: o
 |  target | <code>object</code> | Target class (for static methods) or object (for instance methods) |
 |  methodName | <code>string</code> | Method name |
 |  args | <code>InvocationArgs</code> | An array of argument values |
+|  options | <code>InvocationOptions</code> | Options for the invocation |
 
 <b>Returns:</b>
 

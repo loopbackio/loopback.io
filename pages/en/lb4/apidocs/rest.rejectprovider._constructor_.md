@@ -10,7 +10,7 @@ permalink: /doc/en/lb4/apidocs.rest.rejectprovider._constructor_.html
 
 [Home](./index.md) &gt; [@loopback/rest](./rest.md) &gt; [RejectProvider](./rest.rejectprovider.md) &gt; [(constructor)](./rest.rejectprovider._constructor_.md)
 
-## RejectProvider._constructor_
+## RejectProvider.(constructor)
 
 Constructs a new instance of the `RejectProvider` class
 

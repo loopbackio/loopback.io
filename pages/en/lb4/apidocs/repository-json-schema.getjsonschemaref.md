@@ -17,15 +17,17 @@ Describe the provided Model as a reference to a definition shared by multiple en
 <b>Signature:</b>
 
 ```typescript
-export declare function getJsonSchemaRef(modelCtor: Function, options?: JsonSchemaOptions): JSONSchema;
+export declare function getJsonSchemaRef<T extends object>(modelCtor: Function & {
+    prototype: T;
+}, options?: JsonSchemaOptions<T>): JSONSchema;
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  modelCtor | <code>Function</code> | The model constructor (e.g. <code>Product</code>) |
-|  options | <code>JsonSchemaOptions</code> | Additional options |
+|  modelCtor | <code>Function &amp; {</code><br/><code>    prototype: T;</code><br/><code>}</code> | The model constructor (e.g. <code>Product</code>) |
+|  options | <code>JsonSchemaOptions&lt;T&gt;</code> | Additional options |
 
 <b>Returns:</b>
 

@@ -17,8 +17,15 @@ Invoke the target method with the given context
 <b>Signature:</b>
 
 ```typescript
-invokeTargetMethod(): any;
+invokeTargetMethod(options?: InvocationOptions): any;
 ```
+
+## Parameters
+
+|  Parameter | Type | Description |
+|  --- | --- | --- |
+|  options | <code>InvocationOptions</code> | Options for the invocation |
+
 <b>Returns:</b>
 
 `any`

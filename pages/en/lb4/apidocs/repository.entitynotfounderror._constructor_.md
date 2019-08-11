@@ -10,7 +10,7 @@ permalink: /doc/en/lb4/apidocs.repository.entitynotfounderror._constructor_.html
 
 [Home](./index.md) &gt; [@loopback/repository](./repository.md) &gt; [EntityNotFoundError](./repository.entitynotfounderror.md) &gt; [(constructor)](./repository.entitynotfounderror._constructor_.md)
 
-## EntityNotFoundError._constructor_
+## EntityNotFoundError.(constructor)
 
 Constructs a new instance of the `EntityNotFoundError` class
 

@@ -12,9 +12,7 @@ permalink: /doc/en/lb4/apidocs.openapi-v3.param.html
 
 ## param namespace
 
-Describe an input parameter of a Controller method. The `@param` decorator takes an argument of `ParameterObject` to define how to map the parameter to OpenAPI specification.
-
-`@param(paramSpec)` must be applied to parameters.
+Namespace for `@param.*` decorators
 
 <b>Signature:</b>
 
@@ -27,22 +25,8 @@ export declare namespace param
 |  Variable | Description |
 |  --- | --- |
 |  [array](./openapi-v3.param.array.md) | Define a parameter of <code>array</code> type. |
-|  [header](./openapi-v3.param.header.md) |  |
-|  [path](./openapi-v3.param.path.md) |  |
-|  [query](./openapi-v3.param.query.md) |  |
-
-## Example
-
-
-```ts
-class MyController {
-  @get('/')
-  list(
-    @param(offsetSpec) offset?: number,
-    @param(pageSizeSpec) pageSize?: number,
-  ) {}
-}
-
-```
+|  [header](./openapi-v3.param.header.md) | Header parameter decorator |
+|  [path](./openapi-v3.param.path.md) | Path parameter decorator |
+|  [query](./openapi-v3.param.query.md) | Query parameter decorator |
 
 

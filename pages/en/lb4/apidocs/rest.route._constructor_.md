@@ -10,7 +10,7 @@ permalink: /doc/en/lb4/apidocs.rest.route._constructor_.html
 
 [Home](./index.md) &gt; [@loopback/rest](./rest.md) &gt; [Route](./rest.route.md) &gt; [(constructor)](./rest.route._constructor_.md)
 
-## Route._constructor_
+## Route.(constructor)
 
 Constructs a new instance of the `Route` class
 

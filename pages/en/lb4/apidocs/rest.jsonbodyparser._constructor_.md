@@ -10,7 +10,7 @@ permalink: /doc/en/lb4/apidocs.rest.jsonbodyparser._constructor_.html
 
 [Home](./index.md) &gt; [@loopback/rest](./rest.md) &gt; [JsonBodyParser](./rest.jsonbodyparser.md) &gt; [(constructor)](./rest.jsonbodyparser._constructor_.md)
 
-## JsonBodyParser._constructor_
+## JsonBodyParser.(constructor)
 
 Constructs a new instance of the `JsonBodyParser` class
 

@@ -43,7 +43,7 @@ export declare class InvocationContext extends Context
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
 |  [assertMethodExists()](./context.invocationcontext.assertmethodexists.md) |  | Assert the method exists on the target. An error will be thrown if otherwise. |
-|  [invokeTargetMethod()](./context.invocationcontext.invoketargetmethod.md) |  | Invoke the target method with the given context |
+|  [invokeTargetMethod(options)](./context.invocationcontext.invoketargetmethod.md) |  | Invoke the target method with the given context |
 |  [toString()](./context.invocationcontext.tostring.md) |  |  |
 
 
