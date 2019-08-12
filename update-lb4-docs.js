@@ -65,6 +65,12 @@ function copyFile(input) {
     const lb4Path = __dirname + '/pages/en/lb4/' + input.url.replace(/\.html$/, '.md');
     // Copy only if the file does not exist in the lb4 dir
     if (!fs.existsSync(lb4Path)) {
+      // Some MD files use a different casing than HTML
+      // Such as SOAP-Connector.md vs. SOAP-connector.html
+      if (!fs.existsSync(lb3Path)) {
+        console.warn('File not found: %s', lb3Path);
+        return;
+      }
       let fc = fs.readFileSync(lb3Path, 'utf8');
       fc = fc.replace('/lb3/', '/lb4/').replace('lb3_sidebar', 'lb4_sidebar');
       fs.writeFileSync(lb4Path, fc);
