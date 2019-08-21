@@ -42,7 +42,7 @@ exclude:
   - update-readmes.sh
 # these are the files and directories that jekyll will exclude from the build
 
-feedback_email: rmckinn@us.ibm.com
+feedback_email: reachsl@us.ibm.com
 # used as a contact email for the Feedback link in the top navigation bar
 
 feedback_disable: true
