@@ -32,6 +32,7 @@ export declare class DefaultCrudRepository<T extends Entity, ID, Relations exten
 |  --- | --- | --- | --- |
 |  [dataSource](./repository.defaultcrudrepository.datasource.md) |  | <code>juggler.DataSource</code> |  |
 |  [entityClass](./repository.defaultcrudrepository.entityclass.md) |  | <code>typeof Entity &amp; {</code><br/><code>        prototype: T;</code><br/><code>    }</code> |  |
+|  [inclusionResolvers](./repository.defaultcrudrepository.inclusionresolvers.md) |  | <code>Map&lt;string, InclusionResolver&lt;T, Entity&gt;&gt;</code> |  |
 |  [modelClass](./repository.defaultcrudrepository.modelclass.md) |  | <code>juggler.PersistedModelClass</code> |  |
 
 ## Methods

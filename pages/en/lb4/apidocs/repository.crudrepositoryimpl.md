@@ -32,6 +32,7 @@ export declare class CrudRepositoryImpl<T extends Entity, ID> implements EntityC
 |  --- | --- | --- | --- |
 |  [dataSource](./repository.crudrepositoryimpl.datasource.md) |  | <code>DataSource</code> |  |
 |  [entityClass](./repository.crudrepositoryimpl.entityclass.md) |  | <code>typeof Entity &amp; {</code><br/><code>        prototype: T;</code><br/><code>    }</code> |  |
+|  [inclusionResolvers](./repository.crudrepositoryimpl.inclusionresolvers.md) |  | <code>Map&lt;string, InclusionResolver&lt;T, Entity&gt;&gt;</code> |  |
 
 ## Methods
 

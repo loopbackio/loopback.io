@@ -32,5 +32,6 @@ permalink: /doc/en/lb4/apidocs.repository-tests.html
 |  --- | --- |
 |  [CrudRepositoryCtor](./repository-tests.crudrepositoryctor.md) | A constructor of a class implementing CrudRepository interface, accepting the Entity class (constructor) and a dataSource instance. |
 |  [DataSourceOptions](./repository-tests.datasourceoptions.md) | DataSource configuration (connector name, connection string, etc.). |
+|  [TransactionalRepositoryCtor](./repository-tests.transactionalrepositoryctor.md) | A constructor of a class implementing TransactionalRepository interface, accepting the Entity class (constructor) and a dataSource instance. |
 
 

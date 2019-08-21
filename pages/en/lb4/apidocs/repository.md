@@ -29,6 +29,7 @@ permalink: /doc/en/lb4/apidocs.repository.html
 |  [DefaultHasManyRepository](./repository.defaulthasmanyrepository.md) |  |
 |  [DefaultHasOneRepository](./repository.defaulthasonerepository.md) |  |
 |  [DefaultKeyValueRepository](./repository.defaultkeyvaluerepository.md) | An implementation of KeyValueRepository based on loopback-datasource-juggler |
+|  [DefaultTransactionalRepository](./repository.defaulttransactionalrepository.md) | Default implementation of CRUD repository using legacy juggler model and data source with beginTransaction() method for connectors which support Transactions |
 |  [Entity](./repository.entity.md) | Base class for entities which have unique ids |
 |  [EntityNotFoundError](./repository.entitynotfounderror.md) |  |
 |  [Event](./repository.event.md) | Domain events |
@@ -51,6 +52,7 @@ permalink: /doc/en/lb4/apidocs.repository.html
 
 |  Enumeration | Description |
 |  --- | --- |
+|  [IsolationLevel](./repository.isolationlevel.md) | Isolation level |
 |  [RelationType](./repository.relationtype.md) |  |
 
 ## Functions
@@ -71,9 +73,11 @@ permalink: /doc/en/lb4/apidocs.repository.html
 |  [embedsOne(definition)](./repository.embedsone.md) | Decorator for embedsOne |
 |  [ensurePromise(p)](./repository.ensurepromise.md) | Ensure the value is a promise |
 |  [filterTemplate(strings, keys)](./repository.filtertemplate.md) |  |
+|  [findByForeignKeys(targetRepository, fkName, fkValues, scope, options)](./repository.findbyforeignkeys.md) | Finds model instances that contain any of the provided foreign key values. |
 |  [getModelRelations(modelCtor)](./repository.getmodelrelations.md) | Get metadata of all relations defined on a given model class. |
 |  [hasMany(targetResolver, definition)](./repository.hasmany.md) | Decorator for hasMany Calls property.array decorator underneath the hood and infers foreign key name from target model name unless explicitly specified |
 |  [hasOne(targetResolver, definition)](./repository.hasone.md) |  |
+|  [includeRelatedModels(targetRepository, entities, include, options)](./repository.includerelatedmodels.md) | Returns model instances that include related models that have a registered resolver. |
 |  [isBuiltinType(fn)](./repository.isbuiltintype.md) | Check if the provided function is a built-in type provided by JavaScript and/or Node.js. E.g. <code>Number</code>, <code>Array</code>, <code>Buffer</code>, etc. |
 |  [isEntityNotFoundError(e)](./repository.isentitynotfounderror.md) |  |
 |  [isFilter(candidate)](./repository.isfilter.md) | TypeGuard for Filter |
@@ -125,6 +129,8 @@ permalink: /doc/en/lb4/apidocs.repository.html
 |  [RelationDefinitionBase](./repository.relationdefinitionbase.md) |  |
 |  [Repository](./repository.repository.md) |  |
 |  [SchemaMigrationOptions](./repository.schemamigrationoptions.md) |  |
+|  [Transaction](./repository.transaction.md) | Local transaction |
+|  [TransactionalRepository](./repository.transactionalrepository.md) | Repository Interface for Repositories that support Transactions |
 |  [Type](./repository.type.md) |  |
 
 ## Namespaces
@@ -168,6 +174,7 @@ permalink: /doc/en/lb4/apidocs.repository.html
 |  [Fields](./repository.fields.md) | Selection of fields<!-- -->Example: <code>{afieldname: true}</code> |
 |  [HasManyRepositoryFactory](./repository.hasmanyrepositoryfactory.md) |  |
 |  [HasOneRepositoryFactory](./repository.hasonerepositoryfactory.md) |  |
+|  [InclusionResolver](./repository.inclusionresolver.md) |  |
 |  [KeyOf](./repository.keyof.md) | Key types of a given model, excluding operators |
 |  [KeyValueFilter](./repository.keyvaluefilter.md) | Filter for keys |
 |  [NamedParameters](./repository.namedparameters.md) | Named parameters, such as <code>{x: 1, y: 'a'}</code> |
@@ -182,6 +189,7 @@ permalink: /doc/en/lb4/apidocs.repository.html
 |  [RelationMetadata](./repository.relationmetadata.md) | A union type describing all possible Relation metadata objects. |
 |  [RepositoryDecorator](./repository.repositorydecorator.md) | Type definition for decorators returned by <code>@repository</code> decorator factory |
 |  [ShortHandEqualType](./repository.shorthandequaltype.md) | Value types for <code>{propertyName: value}</code> |
+|  [TransactionalEntityRepository](./repository.transactionalentityrepository.md) | A type for CRUD repositories that are backed by IDs and support Transactions |
 |  [TypeResolver](./repository.typeresolver.md) | A type resolver is a function that returns a class representing the type, typically a Model or Entity (e.g. Product).<!-- -->We use type resolvers to break require() loops when defining relations. The target model (class) is provided via a provider, thus deferring the actual reference to the class itself until later, when both sides of the relation are created as JavaScript classes. |
 |  [Where](./repository.where.md) | Where clause |
 

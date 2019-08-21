@@ -24,6 +24,7 @@ export interface RequestBodyValidationOptions extends ajv.Options
 
 |  Property | Type | Description |
 |  --- | --- | --- |
+|  [ajvKeywords](./rest.requestbodyvalidationoptions.ajvkeywords.md) | <code>true &#124; string[]</code> | Enable additional AJV keywords from https://github.com/epoberezkin/ajv-keywords - <code>true</code>: Add all keywords from <code>ajv-keywords</code> - <code>string[]</code>: Add an array of keywords from <code>ajv-keywords</code> |
 |  [compiledSchemaCache](./rest.requestbodyvalidationoptions.compiledschemacache.md) | <code>SchemaValidatorCache</code> | Custom cache for compiled schemas by AJV. This setting makes it possible to skip the default cache. |
 
 

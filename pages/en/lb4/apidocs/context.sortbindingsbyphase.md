@@ -17,19 +17,19 @@ Sort bindings by phase names denoted by a tag and the predefined order
 <b>Signature:</b>
 
 ```typescript
-export declare function sortBindingsByPhase(bindings: Readonly<Binding<unknown>>[], phaseTagName?: string, orderOfPhases?: (string | symbol)[]): Readonly<Binding<unknown>>[];
+export declare function sortBindingsByPhase<T = unknown>(bindings: Readonly<Binding<T>>[], phaseTagName?: string, orderOfPhases?: (string | symbol)[]): Readonly<Binding<T>>[];
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  bindings | <code>Readonly&lt;Binding&lt;unknown&gt;&gt;[]</code> | An array of bindings |
+|  bindings | <code>Readonly&lt;Binding&lt;T&gt;&gt;[]</code> | An array of bindings |
 |  phaseTagName | <code>string</code> | Tag name for phase, for example, we can use the value <code>'a'</code> of tag <code>order</code> as the phase name for <code>binding.tag({order: 'a'})</code>. |
 |  orderOfPhases | <code>(string &#124; symbol)[]</code> | An array of phase names as the predefined order |
 
 <b>Returns:</b>
 
-`Readonly<Binding<unknown>>[]`
+`Readonly<Binding<T>>[]`
 
 

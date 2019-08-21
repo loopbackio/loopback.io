@@ -9,6 +9,7 @@ permalink: /doc/en/lb4/apidocs.index.html
 ## API Docs
 - [@loopback/extension-health](extension-health.md)
 - [@loopback/authentication](authentication.md)
+- [@loopback/authorization](authorization.md)
 - [@loopback/boot](boot.md)
 - [@loopback/booter-lb3app](booter-lb3app.md)
 - [@loopback/context](context.md)
