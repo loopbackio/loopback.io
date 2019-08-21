@@ -1,6 +1,6 @@
 language: node_js
 node_js:
-  - "8"
+  - "12"
 
 os:
   - linux
@@ -12,8 +12,10 @@ branches:
   only:
   - gh-pages
 
-before_install:
-  bundle install
+install:
+  - bundle install
+  - npm install
+  - npm ls @loopback/docs
 
 before_deploy:
   - npm run build
