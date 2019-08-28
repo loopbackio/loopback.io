@@ -1,5 +1,5 @@
 ---
-==========================================lang: en
+lang: en
 title: 'Create your app scaffolding'
 keywords: LoopBack 4.0, LoopBack 4
 sidebar: lb4_sidebar
@@ -76,7 +76,6 @@ index.js
 index.ts
 package.json
 tsconfig.json
-eslint.build.json
 .eslintrc.js
 .mocharc.json
 ```
