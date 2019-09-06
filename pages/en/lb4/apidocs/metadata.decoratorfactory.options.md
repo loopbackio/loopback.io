@@ -15,6 +15,6 @@ permalink: /doc/en/lb4/apidocs.metadata.decoratorfactory.options.html
 <b>Signature:</b>
 
 ```typescript
-protected options?: DecoratorOptions | undefined;
+protected options: DecoratorOptions;
 ```
 

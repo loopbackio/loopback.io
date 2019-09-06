@@ -45,10 +45,6 @@ permalink: /doc/en/lb4/apidocs.authorization.html
 |  [AuthorizationOptions](./authorization.authorizationoptions.md) |  |
 |  [AuthorizationRequest](./authorization.authorizationrequest.md) | Inspired by https://github.com/casbin/node-casbin |
 |  [Enforcer](./authorization.enforcer.md) | An enforcer of authorization policies |
-|  [Permission](./authorization.permission.md) | <code>Permission</code> defines an action/access against a protected resource. It's the <code>what</code> for authorization.<!-- -->There are three levels of permissions<!-- -->- Resource level (Order, User) - Instance level (Order-0001, User-1001) - Property level (User-0001.email) |
-|  [Principal](./authorization.principal.md) | Represent a user, an application, or a device |
-|  [Role](./authorization.role.md) | Represent a group of principals that have the same authority. There are two types of roles:<!-- -->- explicit - implicit |
-|  [Subject](./authorization.subject.md) | <code>Subject</code> represents both security state and operations for a single application user.<!-- -->Such operations include: - authentication (login) - authorization (access control) - session access - logout |
 
 ## Namespaces
 

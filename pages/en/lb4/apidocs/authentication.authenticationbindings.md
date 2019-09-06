@@ -26,7 +26,7 @@ export declare namespace AuthenticationBindings
 |  --- | --- |
 |  [AUTH\_ACTION](./authentication.authenticationbindings.auth_action.md) | Key used to inject the authentication function into the sequence. |
 |  [AUTHENTICATION\_STRATEGY\_EXTENSION\_POINT\_NAME](./authentication.authenticationbindings.authentication_strategy_extension_point_name.md) |  |
-|  [CURRENT\_USER](./authentication.authenticationbindings.current_user.md) | Key used to inject the user instance retrieved by the authentication function |
+|  [CURRENT\_USER](./authentication.authenticationbindings.current_user.md) |  |
 |  [METADATA](./authentication.authenticationbindings.metadata.md) | Key used to inject authentication metadata, which is used to determine whether a request requires authentication or not. |
 |  [STRATEGY](./authentication.authenticationbindings.strategy.md) | Key used to bind an authentication strategy to the context for the authentication function to use. |
 

@@ -15,6 +15,6 @@ permalink: /doc/en/lb4/apidocs.core.application.options.html
 <b>Signature:</b>
 
 ```typescript
-options: ApplicationConfig;
+readonly options: ApplicationConfig;
 ```
 

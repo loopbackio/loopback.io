@@ -17,7 +17,7 @@ Construct a new class decorator factory
 <b>Signature:</b>
 
 ```typescript
-constructor(key: string, spec: T, options?: DecoratorOptions | undefined);
+constructor(key: string, spec: T, options?: DecoratorOptions);
 ```
 
 ## Parameters
@@ -26,6 +26,6 @@ constructor(key: string, spec: T, options?: DecoratorOptions | undefined);
 |  --- | --- | --- |
 |  key | <code>string</code> | Metadata key |
 |  spec | <code>T</code> | Metadata object from the decorator function |
-|  options | <code>DecoratorOptions &#124; undefined</code> | Options for the decorator. Default to <code>{allowInheritance: true}</code> if not provided |
+|  options | <code>DecoratorOptions</code> | Options for the decorator. Default to <code>{allowInheritance: true}</code> if not provided |
 
 

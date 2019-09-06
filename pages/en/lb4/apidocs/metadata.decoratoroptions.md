@@ -26,5 +26,6 @@ export interface DecoratorOptions
 |  --- | --- | --- |
 |  [allowInheritance](./metadata.decoratoroptions.allowinheritance.md) | <code>boolean</code> | Controls if inherited metadata will be honored. Default to <code>true</code>. |
 |  [cloneInputSpec](./metadata.decoratoroptions.cloneinputspec.md) | <code>boolean</code> | Controls if the value of <code>spec</code> argument will be cloned. Sometimes we use shared spec for the decoration, but the decorator function might need to mutate the object. Cloning the input spec makes it safe to use the same spec (<code>template</code>) to decorate different members.<!-- -->Default to <code>true</code>. |
+|  [decoratorName](./metadata.decoratoroptions.decoratorname.md) | <code>string</code> | Name of the decorator for debugging purpose, such as <code>@inject</code> |
 
 

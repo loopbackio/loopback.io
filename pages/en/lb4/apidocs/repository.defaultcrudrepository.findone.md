@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.defaultcrudrepository.findone.html
 <b>Signature:</b>
 
 ```typescript
-findOne(filter?: Filter<T>, options?: Options): Promise<T | null>;
+findOne(filter?: Filter<T>, options?: Options): Promise<(T & Relations) | null>;
 ```
 
 ## Parameters
@@ -27,6 +27,6 @@ findOne(filter?: Filter<T>, options?: Options): Promise<T | null>;
 
 <b>Returns:</b>
 
-`Promise<T | null>`
+`Promise<(T & Relations) | null>`
 
 

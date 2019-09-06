@@ -56,6 +56,9 @@ export declare class DefaultCrudRepository<T extends Entity, ID, Relations exten
 |  [find(filter, options)](./repository.defaultcrudrepository.find.md) |  |  |
 |  [findById(id, filter, options)](./repository.defaultcrudrepository.findbyid.md) |  |  |
 |  [findOne(filter, options)](./repository.defaultcrudrepository.findone.md) |  |  |
+|  [includeRelatedModels(entities, include, options)](./repository.defaultcrudrepository.includerelatedmodels.md) |  | Returns model instances that include related models of this repository that have a registered resolver. |
+|  [normalizeFilter(filter)](./repository.defaultcrudrepository.normalizefilter.md) |  | Removes juggler's "include" filter as it does not apply to LoopBack 4 relations. |
+|  [registerInclusionResolver(relationName, resolver)](./repository.defaultcrudrepository.registerinclusionresolver.md) |  | Register an inclusion resolver for the related model name. |
 |  [replaceById(id, data, options)](./repository.defaultcrudrepository.replacebyid.md) |  |  |
 |  [save(entity, options)](./repository.defaultcrudrepository.save.md) |  |  |
 |  [toEntities(models)](./repository.defaultcrudrepository.toentities.md) |  |  |

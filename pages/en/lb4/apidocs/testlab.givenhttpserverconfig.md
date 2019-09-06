@@ -17,19 +17,17 @@ Create an HTTP-server configuration that works well in test environments. - Ask 
 <b>Signature:</b>
 
 ```typescript
-export declare function givenHttpServerConfig<T extends object>(customConfig?: T & {
-    protocol?: string;
-}): ConfigRetval<T>;
+export declare function givenHttpServerConfig<T extends HttpOptions | HttpsOptions>(customConfig?: T): HostPort & T;
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  customConfig | <code>T &amp; {</code><br/><code>    protocol?: string;</code><br/><code>}</code> | Additional configuration options to apply. |
+|  customConfig | <code>T</code> | Additional configuration options to apply. |
 
 <b>Returns:</b>
 
-`ConfigRetval<T>`
+`HostPort & T`
 
 

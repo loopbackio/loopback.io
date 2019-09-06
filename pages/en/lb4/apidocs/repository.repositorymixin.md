@@ -21,7 +21,7 @@ export declare function RepositoryMixin<T extends Class<any>>(superClass: T): {
     new (...args: any[]): {
         [x: string]: any;
         repository<R extends Repository<any>>(repoClass: Class<R>, name?: string | undefined): Binding<R>;
-        getRepository<R extends Repository<any>>(repo: Class<R>): Promise<R>;
+        getRepository<R_1 extends Repository<any>>(repo: Class<R_1>): Promise<R_1>;
         dataSource<D extends juggler.DataSource>(dataSource: D | Class<D>, name?: string | undefined): Binding<D>;
         component(component: Class<unknown>, name?: string | undefined): void;
         mountComponentRepositories(component: Class<unknown>): void;
@@ -42,7 +42,7 @@ export declare function RepositoryMixin<T extends Class<any>>(superClass: T): {
     new (...args: any[]): {
         [x: string]: any;
         repository<R extends Repository<any>>(repoClass: Class<R>, name?: string | undefined): Binding<R>;
-        getRepository<R extends Repository<any>>(repo: Class<R>): Promise<R>;
+        getRepository<R_1 extends Repository<any>>(repo: Class<R_1>): Promise<R_1>;
         dataSource<D extends juggler.DataSource>(dataSource: D | Class<D>, name?: string | undefined): Binding<D>;
         component(component: Class<unknown>, name?: string | undefined): void;
         mountComponentRepositories(component: Class<unknown>): void;

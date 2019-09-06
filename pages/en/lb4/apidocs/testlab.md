@@ -61,6 +61,8 @@ permalink: /doc/en/lb4/apidocs.testlab.html
 |  --- | --- |
 |  [ExpressContextStub](./testlab.expresscontextstub.md) |  |
 |  [HandlerContextStub](./testlab.handlercontextstub.md) |  |
+|  [HttpOptions](./testlab.httpoptions.md) |  |
+|  [HttpsOptions](./testlab.httpsoptions.md) |  |
 |  [RestApplicationLike](./testlab.restapplicationlike.md) |  |
 |  [RestServerLike](./testlab.restserverlike.md) |  |
 |  [TestContext](./testlab.testcontext.md) |  |
@@ -78,7 +80,7 @@ permalink: /doc/en/lb4/apidocs.testlab.html
 |  Type Alias | Description |
 |  --- | --- |
 |  [Client](./testlab.client.md) |  |
-|  [ConfigRetval](./testlab.configretval.md) |  |
+|  [HostPort](./testlab.hostport.md) |  |
 |  [ObservedResponse](./testlab.observedresponse.md) |  |
 |  [ShotCallback](./testlab.shotcallback.md) |  |
 |  [ShotResponseCtor](./testlab.shotresponsector.md) |  |

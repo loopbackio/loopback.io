@@ -17,6 +17,6 @@ Binding key for application configuration
 <b>Signature:</b>
 
 ```typescript
-APPLICATION_CONFIG: BindingKey<object>
+APPLICATION_CONFIG: BindingKey<ApplicationConfig>
 ```
 

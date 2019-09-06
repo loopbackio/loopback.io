@@ -12,18 +12,18 @@ permalink: /doc/en/lb4/apidocs.core.application._constructor_.html
 
 ## Application.(constructor)
 
-Constructs a new instance of the `Application` class
+Create an application with the given parent context
 
 <b>Signature:</b>
 
 ```typescript
-constructor(options?: ApplicationConfig);
+constructor(parent: Context);
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  options | <code>ApplicationConfig</code> |  |
+|  parent | <code>Context</code> | Parent context |
 
 

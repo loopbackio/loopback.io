@@ -12,18 +12,18 @@ permalink: /doc/en/lb4/apidocs.rest.restapplication._constructor_.html
 
 ## RestApplication.(constructor)
 
-Constructs a new instance of the `RestApplication` class
+Create a REST application with the given parent context
 
 <b>Signature:</b>
 
 ```typescript
-constructor(config?: ApplicationConfig);
+constructor(parent: Context);
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  config | <code>ApplicationConfig</code> |  |
+|  parent | <code>Context</code> | Parent context |
 
 

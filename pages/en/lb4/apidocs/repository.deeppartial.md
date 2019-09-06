@@ -18,7 +18,7 @@ An extension of the built-in Partial<T> type which allows partial values in deep
 
 ```typescript
 export declare type DeepPartial<T> = {
-    [P in keyof T]?: DeepPartial<T[P]>;
+    [P in keyof T]?: T[P] extends never ? DeepPartial<T[P]> : DeepPartial<T[P]>;
 };
 ```
 

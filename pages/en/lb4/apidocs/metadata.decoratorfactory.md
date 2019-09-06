@@ -32,8 +32,9 @@ D extends DecoratorType>
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
+|  [decoratorName](./metadata.decoratorfactory.decoratorname.md) |  | <code>string</code> |  |
 |  [key](./metadata.decoratorfactory.key.md) |  | <code>string</code> |  |
-|  [options](./metadata.decoratorfactory.options.md) |  | <code>DecoratorOptions &#124; undefined</code> |  |
+|  [options](./metadata.decoratorfactory.options.md) |  | <code>DecoratorOptions</code> |  |
 |  [spec](./metadata.decoratorfactory.spec.md) |  | <code>T</code> |  |
 |  [TARGET](./metadata.decoratorfactory.target.md) | <code>static</code> | <code>string</code> | A constant to reference the target of a decoration |
 
@@ -46,6 +47,7 @@ D extends DecoratorType>
 |  [cloneDeep(val)](./metadata.decoratorfactory.clonedeep.md) | <code>static</code> |  |
 |  [create()](./metadata.decoratorfactory.create.md) |  | Create a decorator function of the given type. Each sub class MUST implement this method. |
 |  [decorate(target, member, descriptorOrIndex)](./metadata.decoratorfactory.decorate.md) |  | Base implementation of the decorator function |
+|  [duplicateDecorationError(target, member, descriptorOrIndex)](./metadata.decoratorfactory.duplicatedecorationerror.md) |  | Create an error to report if the decorator is applied to the target more than once |
 |  [getNumberOfParameters(target, member)](./metadata.decoratorfactory.getnumberofparameters.md) | <code>static</code> | Get the number of parameters for a given constructor or method |
 |  [getTarget(spec)](./metadata.decoratorfactory.gettarget.md) |  | Get the optional decoration target of a given spec |
 |  [getTargetName(target, member, descriptorOrIndex)](./metadata.decoratorfactory.gettargetname.md) | <code>static</code> | Get the qualified name of a decoration target. For example:

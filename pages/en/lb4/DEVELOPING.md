@@ -2,8 +2,8 @@
 lang: en
 title: 'Contributing code in LoopBack 4'
 keywords: LoopBack 4.0, contributing, community
-sidebar: contrib_sidebar
-permalink: /doc/en/contrib/code-contrib-lb4.html
+sidebar: lb4_sidebar
+permalink: /doc/en/lb4/code-contrib-lb4.html
 toc: false
 ---
 
@@ -491,7 +491,6 @@ Please register the new package in the following files:
 
 - Update [MONOREPO.md](./MONOREPO.md) - insert a new table row to describe the
   new package, please keep the rows sorted by package name.
-- Update
 - Update [Reserved-binding-keys.md](./Reserved-binding-keys.md) - add a link to
   the apidocs on Binding Keys if the new package has any.
 - Update

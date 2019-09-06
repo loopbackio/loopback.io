@@ -28,7 +28,7 @@ export declare class RestComponent implements Component
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [bindings](./rest.restcomponent.bindings.md) |  | <code>(Binding&lt;RequestBodyParser&gt; &#124; Binding&lt;import(&quot;./body-parsers&quot;).BodyParser&gt;)[]</code> | Add built-in body parsers |
+|  [bindings](./rest.restcomponent.bindings.md) |  | <code>(Binding&lt;import(&quot;./body-parsers&quot;).BodyParser&gt; &#124; Binding&lt;RequestBodyParser&gt;)[]</code> | Add built-in body parsers |
 |  [providers](./rest.restcomponent.providers.md) |  | <code>ProviderMap</code> |  |
 |  [servers](./rest.restcomponent.servers.md) |  | <code>{</code><br/><code>        [name: string]: Constructor&lt;Server&gt;;</code><br/><code>    }</code> |  |
 

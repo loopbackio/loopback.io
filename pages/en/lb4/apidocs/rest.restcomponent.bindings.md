@@ -17,6 +17,6 @@ Add built-in body parsers
 <b>Signature:</b>
 
 ```typescript
-bindings: (Binding<RequestBodyParser> | Binding<import("./body-parsers").BodyParser>)[];
+bindings: (Binding<import("./body-parsers").BodyParser> | Binding<RequestBodyParser>)[];
 ```
 

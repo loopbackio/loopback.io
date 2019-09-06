@@ -18,7 +18,10 @@ permalink: /doc/en/lb4/apidocs.authentication.html
 
 |  Class | Description |
 |  --- | --- |
+|  [AuthenticateActionProvider](./authentication.authenticateactionprovider.md) | Provides the authentication action for a sequence |
 |  [AuthenticationComponent](./authentication.authenticationcomponent.md) |  |
+|  [AuthenticationStrategyProvider](./authentication.authenticationstrategyprovider.md) | An authentication strategy provider responsible for resolving an authentication strategy by name.<!-- -->It declares an extension point to which all authentication strategy implementations must register themselves as extensions. |
+|  [AuthMetadataProvider](./authentication.authmetadataprovider.md) | Provides authentication metadata of a controller method |
 
 ## Functions
 
@@ -36,7 +39,6 @@ permalink: /doc/en/lb4/apidocs.authentication.html
 |  [AuthenticationMetadata](./authentication.authenticationmetadata.md) | Authentication metadata stored via Reflection API |
 |  [AuthenticationStrategy](./authentication.authenticationstrategy.md) | An interface that describes the common authentication strategy.<!-- -->An authentication strategy is a class with an 'authenticate' method that verifies a user's credentials and returns the corresponding user profile. |
 |  [TokenService](./authentication.tokenservice.md) | An interface for generating and verifying a token |
-|  [UserProfile](./authentication.userprofile.md) | interface definition of a user profile http://openid.net/specs/openid-connect-core-1\_0.html\#StandardClaims |
 |  [UserService](./authentication.userservice.md) | A service for performing the login action in an authentication strategy.<!-- -->Usually a client user uses basic credentials to login, or is redirected to a third-party application that grants limited access.<!-- -->Note: The creation of user is handled in the user controller by calling user repository APIs. For Basic auth, the user has to register first using some endpoint like <code>/register</code>. For 3rd-party auth, the user will be created if login is successful and the user doesn't exist in database yet.<!-- -->Type <code>C</code> stands for the type of your credential object.<!-- -->- For local strategy:<!-- -->A typical credential would be: { username: username, password: password }<!-- -->- For oauth strategy:<!-- -->A typical credential would be: { clientId: string; clientSecret: string; callbackURL: string; }<!-- -->It could be read from a local configuration file in the app<!-- -->- For saml strategy:<!-- -->A typical credential would be:<!-- -->{ path: string; issuer: string; entryPoint: string; }<!-- -->It could be read from a local configuration file in the app. |
 
 ## Namespaces
