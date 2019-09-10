@@ -33,13 +33,13 @@ Project architects:
 *   [Raymond Feng](https://github.com/raymondfeng)
 
 Other core maintainers include:
-*   [Biniam Admikew](http://github.com/b-admike)
-*   [Diana Lau](http://github.com/dhmlau)
-*   [Janny Hou](http://github.com/jannyHou)
-*   [Yaapa Hage](https://github.com/hacksparrow)
-*   [Nora Abdelgadir](https://github.com/nabdelgadir)
-*   [Dominique Emond](https://github.com/emonddr)
 *   [Agnes Lin](https://github.com/agnes512)
+*   [Deepak Rajamohan](https://github.com/deepakrkris)
+*   [Diana Lau](http://github.com/dhmlau)
+*   [Dominique Emond](https://github.com/emonddr)
+*   [Janny Hou](http://github.com/jannyHou)
+*   [Nora Abdelgadir](https://github.com/nabdelgadir)
+*   [Yaapa Hage](https://github.com/hacksparrow)
 
 Previous project architects:
 *   [Ritchie Martori](https://github.com/ritch)
@@ -61,14 +61,27 @@ progress" to "done".
 
 |Pipeline&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|Description|
 |---|---|
-Needs&nbsp;triage | New issues are places into this column by default.
-Triaging | The issue is triaged to ensure we have enough information to understand the problem and reproduce it on our machines.
-Needs&nbsp;priority | The issue is accepted as a bug/feature and waiting to get prioritized.
+Needs&nbsp;triage | New issues are placed into this column by default.
+Triaging | The issue is being triaged to ensure we have enough information to understand the problem and reproduce it on our machines.
+Needs&nbsp;Priority | The issue is accepted as a bug/feature and waiting to get prioritized.
+Needs&nbsp;Discussion | The issue requires discussion to settle on the direction of the solution.
+Needs&nbsp;Estimates | The issue has acceptance criteria and ready to be estimated.
 Backlog | A curated list of items we want to work on in the near future.
-Planning | A short list of the most important issue, we use this list to pick the stories for our Sprint backlog during our bi-weekly planning session.
-Committed | Stories committed to the current sprint (Sprint Backlog)
+Planning | A short list of issues that are either the stretch goal of the current sprint or what we are planning to work on in the coming sprint.
+Committed | Stories committed to the current sprint.
 In&nbsp;Progress | Issues that we are actively working on
-Paused | Stories we put on hold.
-Review | Items waiting for peer review. Pull requests typically go to this column.
-Verify | Stories waiting for QA verification.
+Review | Items waiting for peer review. Pull requests are automatically being placed in this column.
 Closed | Finished stories end up in this column.
+
+## Deliverables
+
+### Monthly milestones
+Our sprint spans for a month. All the committed tasks and stretch goals of the milestone are being placed in the `Committed` and `Planning` in the Pipelines, with respectively. 
+
+In order to allow users without ZenHub to know about our progress, a GitHub issue with `Monthly Milestone` label is being created for each month. See https://github.com/strongloop/loopback-next/labels/Monthly%20Milestone for examples. 
+
+At the end of each milestone, we have a blog post in [StrongLoop web site](https://strongloop.com/strongblog) to summarize our accomplishment. See [blog posts with the `LoopBack` tag](https://strongloop.com/strongblog/tag_LoopBack.html).
+
+### Quarterly Roadmap
+Besides the monthly milestone, we also plan for a [quarterly roadmap](https://github.com/strongloop/loopback-next/blob/master/docs/ROADMAP.md). Before the quarterly roadmap is determined, a [pull request with `roadmap` label](https://github.com/strongloop/loopback-next/labels/roadmap) is created to get feedback from maintainers and our users.
+
