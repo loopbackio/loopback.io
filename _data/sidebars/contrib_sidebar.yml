@@ -37,7 +37,7 @@ children:
       output: web, pdf
   
   - title: LoopBack 4
-    url: code-contrib-lb4.html
+    url: /doc/en/lb4/code-contrib-lb4.html
     output: web, pdf
     children:
 
