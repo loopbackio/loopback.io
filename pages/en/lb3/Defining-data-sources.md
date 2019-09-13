@@ -141,6 +141,8 @@ You can use different data source definitions (including database credentials) f
 environment variable, as explained in [Environment-specific configuration](Environment-specific-configuration.html#data-source-configuration),
 for example `datasources.production.json` for production environment when NODE_ENV is 'production'.
 
+Additionally, Node.js has a [default of 10 maximum listeners](https://nodejs.org/api/events.html#events_eventemitter_defaultmaxlisteners), but if you exceed this number, a warning is thrown. To avoid this warning, you can change this number by setting the `maxOfflineRequests` setting to a higher number. By default, LoopBack uses 16 as the maximum amount.
+
 ## Using multiple data source configurations
 
 LoopBack merges environment-specific configurations (for example in `datasources.production.json`) with the baseline configuration in `datasources.json`.
