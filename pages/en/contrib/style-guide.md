@@ -449,43 +449,54 @@ async function getDodo() {
 }
 ```
 
-### Always await the last promise in a function
+### When returning a promise, do not await it
 
-If the last line of a function handles a promise, always `await` that promise, regardless whether the result will be returned or not.
+If the last line of a function returns a value in a promise, then return it directly, do not `await` it.
 
-(This makes it clear whether we intend to return the value or not, and dismisses any idea that we are still linking up the promise chain in pre-await style.  Consistently using await also ensures that a try-catch around the function body will catch errors even from the last call.)
+Pros:
 
-**Good**:
+- This has better performance
+- It uses less code
 
-```js
-async function openCircus() {
-  await openCarPark();
-  await openDoors();
-}
-```
+Cons:
 
-**Good**:
+- It is less consistent (all promises in the function are awaited except this last one).
+- If we put a try-catch around the entire function body, it will not catch rejections from that last unawaited promise; they will be passed back to the caller instead.
+- It is ambiguous for historical reasons. ("Was this really intending to return a value, or is this code just using the old way of returning promises?")
 
-```js
-async function getAnimal() {
+**Bad**:
+
+```typescript
+async function getAnimal(): Promise<Animal> {
   return await getElephant();
 }
 ```
 
+**Good**:
+
+```typescript
+async function getAnimal(): Promise<Animal> {
+  return getElephant();
+}
+```
+
+Conversely, when we do not need to return a value, then use `await` instead of `return`. (This makes it clear that no value is being returned, we are just waiting for completion.)
+
 **Bad**:
 
-```js
-async function openCircus() {
+```typescript
+async function openCircus(): Promise<void> {
   await openCarPark();
   return openDoors();
 }
 ```
 
-**Bad**:
+**Good**:
 
-```js
-async function getAnimal() {
-  return getElephant();
+```typescript
+async function openCircus(): Promise<void> {
+  await openCarPark();
+  await openDoors();
 }
 ```
 
