@@ -49,7 +49,7 @@ var CoffeeShop = loopback.createModel('coffee-shop', {
 });
 ```
 
-In [remote methods](http://loopback.io/doc/en/lb2/Remote-methods.html), set 'accepts' and 'returns' argument types for remote method to `GeoPoint` type; for example, in a remote method `getNearbyLocation` for model `MyModel`:
+In [remote methods](http://loopback.io/doc/zh/lb2/Remote-methods.html), set 'accepts' and 'returns' argument types for remote method to `GeoPoint` type; for example, in a remote method `getNearbyLocation` for model `MyModel`:
 
 *common/models/my-model.js*
 

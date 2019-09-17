@@ -1,9 +1,9 @@
 ---
-lang: en
+lang: zh
 title: 'Exposing GraphQL APIs'
 keywords: LoopBack 4.0, LoopBack 4, GraphQL
 sidebar: lb4_sidebar
-permalink: /doc/en/lb4/exposing-graphql-apis.html
+permalink: /doc/zh/lb4/exposing-graphql-apis.html
 ---
 
 ## Overview

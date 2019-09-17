@@ -15,12 +15,12 @@ In this example, we demonstrate remote methods, remote hooks, model operation ho
 
 Tutorials:
 
-- [Getting started with LoopBack](http://loopback.io/doc/en/lb2/Getting-started-with-LoopBack.html)
+- [Getting started with LoopBack](http://loopback.io/doc/zh/lb2/Getting-started-with-LoopBack.html)
 
 Knowledge:
 
-- [LoopBack models](http://loopback.io/doc/en/lb2/Defining-models.html)
-- [LoopBack adding application logic](http://loopback.io/doc/en/lb2/Adding-application-logic.html)
+- [LoopBack models](http://loopback.io/doc/zh/lb2/Defining-models.html)
+- [LoopBack adding application logic](http://loopback.io/doc/zh/lb2/Adding-application-logic.html)
 
 ## Procedure
 
@@ -233,4 +233,4 @@ Notes:
 
 ---
 
-[More LoopBack examples](https://loopback.io/doc/en/lb3/Tutorials-and-examples.html)
+[More LoopBack examples](https://loopback.io/doc/zh/lb3/Tutorials-and-examples.html)

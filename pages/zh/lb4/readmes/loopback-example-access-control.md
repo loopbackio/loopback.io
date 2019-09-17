@@ -23,8 +23,8 @@ application's ACL (access control list) entries.
 
 ### Tutorials
 
-- [Getting started with LoopBack](http://loopback.io/doc/en/lb3/Getting-started-with-LoopBack.html)
-- [Other tutorials and examples](http://loopback.io/doc/en/lb3/Tutorials-and-examples.html)
+- [Getting started with LoopBack](http://loopback.io/doc/zh/lb3/Getting-started-with-LoopBack.html)
+- [Other tutorials and examples](http://loopback.io/doc/zh/lb3/Tutorials-and-examples.html)
 
 ### Knowledge
 
@@ -253,4 +253,4 @@ Start the server (`node .`) and open [`localhost:3000`](http://localhost:3000) i
 
 ---
 
-[More LoopBack examples](https://loopback.io/doc/en/lb3/Tutorials-and-examples.html)
+[More LoopBack examples](https://loopback.io/doc/zh/lb3/Tutorials-and-examples.html)

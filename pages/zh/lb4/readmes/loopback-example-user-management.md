@@ -15,7 +15,7 @@ $ node .
 - [How do you perform a password reset for a registered user](https://github.com/strongloop/loopback-example-user-management#how-do-you-perform-a-password-reset-for-a-registered-user)
 
 ###### Notes
-- You will need to [configure LoopBack to send email](http://loopback.io/doc/en/lb3/Email-connector.html) for email related features
+- You will need to [configure LoopBack to send email](http://loopback.io/doc/zh/lb3/Email-connector.html) for email related features
 - If you're using GMail, you can simply [replace the user and pass](https://github.com/strongloop/loopback-example-user-management/blob/master/server/datasources.json#L19-L20) with your own credentials.
 - With GMail, you might need to temporarily allow "less secure" apps to access you email account. See [Allowing less secure apps to access your account](https://support.google.com/accounts/answer/6010255) for more information.
 
@@ -67,4 +67,4 @@ See [step 2](https://github.com/strongloop/loopback-example-user-management#how-
 
 ---
 
-[More LoopBack examples](https://loopback.io/doc/en/lb3/Tutorials-and-examples.html)
+[More LoopBack examples](https://loopback.io/doc/zh/lb3/Tutorials-and-examples.html)

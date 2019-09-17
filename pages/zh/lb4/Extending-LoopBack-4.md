@@ -1,9 +1,9 @@
 ---
-lang: en
+lang: zh
 title: 'Extending LoopBack 4'
 keywords: LoopBack 4.0, LoopBack 4
 sidebar: lb4_sidebar
-permalink: /doc/en/lb4/Extending-LoopBack-4.html
+permalink: /doc/zh/lb4/Extending-LoopBack-4.html
 ---
 
 ## Overview

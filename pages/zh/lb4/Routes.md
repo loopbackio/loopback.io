@@ -1,9 +1,9 @@
 ---
-lang: en
+lang: zh
 title: 'Routes'
 keywords: LoopBack 4.0, LoopBack 4
 sidebar: lb4_sidebar
-permalink: /doc/en/lb4/Routes.html
+permalink: /doc/zh/lb4/Routes.html
 ---
 
 ## Overview
@@ -237,8 +237,8 @@ for the tutorial.
 
 Mounting an Express router on a LoopBack 4 application can be done using the
 `mountExpressRouter` function provided by both
-[`RestApplication`](https://loopback.io/doc/en/lb4/apidocs.rest.restapplication.html)
-and [`RestServer`](https://loopback.io/doc/en/lb4/apidocs.rest.restserver.html).
+[`RestApplication`](https://loopback.io/doc/zh/lb4/apidocs.rest.restapplication.html)
+and [`RestServer`](https://loopback.io/doc/zh/lb4/apidocs.rest.restserver.html).
 
 Example use:
 

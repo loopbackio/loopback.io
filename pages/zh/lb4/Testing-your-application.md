@@ -1,9 +1,9 @@
 ---
-lang: en
+lang: zh
 title: 'Testing your application'
 keywords: LoopBack 4.0, LoopBack 4
 sidebar: lb4_sidebar
-permalink: /doc/en/lb4/Testing-your-application.html
+permalink: /doc/zh/lb4/Testing-your-application.html
 ---
 
 ## Overview

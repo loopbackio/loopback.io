@@ -8,7 +8,7 @@ resource owners (i.e. users) to access protected API endpoints.
 The oAuth 2.0 protocol implementation is based on [oauth2orize](https://github.com/jaredhanson/oauth2orize)
 and [passport](http://passportjs.org/). 
 
-See [LoopBack Documentation - OAuth 2.0 Component](http://loopback.io/doc/en/lb2/OAuth-2.0.html) for more information.
+See [LoopBack Documentation - OAuth 2.0 Component](http://loopback.io/doc/zh/lb2/OAuth-2.0.html) for more information.
 
 ## Install
 
@@ -40,7 +40,7 @@ oauth2.oAuth2Provider(
 The app instance will be used to set up middleware and routes. The data source
 provides persistence for the oAuth 2.0 metadata models.
 
-For more information, see [OAuth 2.0](http://loopback.io/doc/en/lb2/OAuth-2.0.html) LoopBack component official documentation.
+For more information, see [OAuth 2.0](http://loopback.io/doc/zh/lb2/OAuth-2.0.html) LoopBack component official documentation.
 
 ## Example
 

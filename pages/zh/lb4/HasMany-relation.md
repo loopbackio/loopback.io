@@ -1,9 +1,9 @@
 ---
-lang: en
+lang: zh
 title: 'hasMany Relation'
 keywords: LoopBack 4.0, LoopBack 4
 sidebar: lb4_sidebar
-permalink: /doc/en/lb4/HasMany-relation.html
+permalink: /doc/zh/lb4/HasMany-relation.html
 ---
 
 ## Overview
@@ -245,15 +245,15 @@ factory `orders` for instances of `customerRepository`:
 
 - `create` for creating a target model instance belonging to customer model
   instance
-  ([API Docs](https://loopback.io/doc/en/lb4/apidocs.repository.hasmanyrepository.create.html))
+  ([API Docs](https://loopback.io/doc/zh/lb4/apidocs.repository.hasmanyrepository.create.html))
 - `find` finding target model instance(s) belonging to customer model instance
-  ([API Docs](https://loopback.io/doc/en/lb4/apidocs.repository.hasmanyrepository.find.html))
+  ([API Docs](https://loopback.io/doc/zh/lb4/apidocs.repository.hasmanyrepository.find.html))
 - `delete` for deleting target model instance(s) belonging to customer model
   instance
-  ([API Docs](https://loopback.io/doc/en/lb4/apidocs.repository.hasmanyrepository.delete.html))
+  ([API Docs](https://loopback.io/doc/zh/lb4/apidocs.repository.hasmanyrepository.delete.html))
 - `patch` for patching target model instance(s) belonging to customer model
   instance
-  ([API Docs](https://loopback.io/doc/en/lb4/apidocs.repository.hasmanyrepository.patch.html))
+  ([API Docs](https://loopback.io/doc/zh/lb4/apidocs.repository.hasmanyrepository.patch.html))
 
 For **updating** (full replace of all properties on a `PUT` endpoint for
 instance) a target model you have to directly use this model repository. In this

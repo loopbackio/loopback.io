@@ -5,7 +5,7 @@ layout: page
 keywords: LoopBack
 tags:
 sidebar: lb4_sidebar
-permalink: /doc/en/lb4/Connecting-to-SOAP.html
+permalink: /doc/zh/lb4/Connecting-to-SOAP.html
 summary: The LoopBack CLI enables you to easily create models based on a SOAP web service.
 ---
 {% include navgroups/soap.md %}
@@ -69,7 +69,7 @@ When prompted, respond as follows:
 - Leave blank to "Maps WSDL binding operations to Node.js methods".
 - Select "y" to "Install "loopback-connector-soap" prompt.  This runs `npm install -s loopback-connector-soap`.
 
-For more information on SOAP datasource properties, see [SOAP data source properties](http://loopback.io/doc/en/lb3/SOAP-connector.html).
+For more information on SOAP datasource properties, see [SOAP data source properties](http://loopback.io/doc/zh/lb3/SOAP-connector.html).
 
 ### Generate APIs from the SOAP data source
 

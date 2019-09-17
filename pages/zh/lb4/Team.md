@@ -1,9 +1,9 @@
 ---
-lang: en
+lang: zh
 title: Team
 keywords: LoopBack 4.0
 sidebar: lb4_sidebar
-permalink: /doc/en/lb4/Team.html
+permalink: /doc/zh/lb4/Team.html
 summary: The people working on LoopBack 4
 ---
 

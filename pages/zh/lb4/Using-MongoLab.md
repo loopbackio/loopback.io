@@ -1,11 +1,11 @@
 ---
 title: "Using mLab*"
-lang: en
+lang: zh
 layout: page
 keywords: LoopBack
 tags:
 sidebar: lb4_sidebar
-permalink: /doc/en/lb4/Using-MongoLab.html
+permalink: /doc/zh/lb4/Using-MongoLab.html
 summary:
 ---
 

@@ -1,9 +1,9 @@
 ---
-lang: en
+lang: zh
 title: 'Relation generator'
 keywords: LoopBack 4.0, LoopBack 4
 sidebar: lb4_sidebar
-permalink: /doc/en/lb4/Relation-generator.html
+permalink: /doc/zh/lb4/Relation-generator.html
 ---
 
 ### Prerequisites

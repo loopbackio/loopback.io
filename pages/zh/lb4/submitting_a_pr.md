@@ -1,9 +1,9 @@
 ---
 title: Submitting a pull request to LoopBack 4
-lang: en
+lang: zh
 keywords: contributing, LoopBack community, pull request, PR, loopback
 sidebar: lb4_sidebar
-permalink: /doc/en/lb4/submitting_a_pr.html
+permalink: /doc/zh/lb4/submitting_a_pr.html
 ---
 
 ## How to submit a pull request (PR) for LoopBack 4
@@ -16,9 +16,9 @@ Pick [Expert Instructions](#expert-instructions) or
 with GitHub's PR flow.
 
 To contribute high-quality code/docs, please read
-[Contributing to LoopBack](https://loopback.io/doc/en/contrib/index.html),
-[Contributing code](https://loopback.io/doc/en/contrib/code-contrib-lb4.html),
-and [Contributing to docs](https://loopback.io/doc/en/contrib/doc-contrib.html),
+[Contributing to LoopBack](https://loopback.io/doc/zh/contrib/index.html),
+[Contributing code](https://loopback.io/doc/zh/contrib/code-contrib-lb4.html),
+and [Contributing to docs](https://loopback.io/doc/zh/contrib/doc-contrib.html),
 before diving into the PR process.
 
 ## Expert Instructions
@@ -33,7 +33,7 @@ Our commit messages are formatted according to
 [Conventional Commits](https://conventionalcommits.org/).
 
 Please read the
-[Commit Message Format](https://loopback.io/doc/en/contrib/code-contrib-lb4.html#commit-message-guidelines)
+[Commit Message Format](https://loopback.io/doc/zh/contrib/code-contrib-lb4.html#commit-message-guidelines)
 guidelines to correctly format your commit messages.
 
 To change an existing commit please refer to
@@ -209,7 +209,7 @@ Our commit messages are formatted according to
 [Conventional Commits](https://conventionalcommits.org/).
 
 Please read the
-[Commit Message Format](https://loopback.io/doc/en/contrib/code-contrib-lb4.html#commit-message-guidelines)
+[Commit Message Format](https://loopback.io/doc/zh/contrib/code-contrib-lb4.html#commit-message-guidelines)
 guidelines to correctly format your commit messages.
 
 To help with abiding by the rules of commit messages, please use the
@@ -508,15 +508,15 @@ When a project maintainer is satisfied with the pull request, he/she will
 
 - [Getting into open source for the first time](https://www.nearform.com/blog/getting-into-open-source-for-the-first-time/)
 
-- [Contributing to LoopBack](https://loopback.io/doc/en/contrib/index.html)
+- [Contributing to LoopBack](https://loopback.io/doc/zh/contrib/index.html)
 
-- [Contributing code](https://loopback.io/doc/en/contrib/code-contrib-lb4.html)
+- [Contributing code](https://loopback.io/doc/zh/contrib/code-contrib-lb4.html)
 
-- [Contributing to docs](https://loopback.io/doc/en/contrib/doc-contrib.html)
+- [Contributing to docs](https://loopback.io/doc/zh/contrib/doc-contrib.html)
 
-- [Commit Message Format](https://loopback.io/doc/en/contrib/code-contrib-lb4.html#commit-message-guidelines)
+- [Commit Message Format](https://loopback.io/doc/zh/contrib/code-contrib-lb4.html#commit-message-guidelines)
 
-- [Agreeing to the CLA](https://loopback.io/doc/en/contrib/code-contrib.html#agreeing-to-the-cla)
+- [Agreeing to the CLA](https://loopback.io/doc/zh/contrib/code-contrib.html#agreeing-to-the-cla)
 
 - [Collaborating with issues and pull requests](https://help.github.com/categories/collaborating-with-issues-and-pull-requests/)
 

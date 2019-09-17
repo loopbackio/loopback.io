@@ -1,9 +1,9 @@
 ---
-lang: en
+lang: zh
 title: 'Defining the API using design-first approach'
 keywords: LoopBack 4.0, LoopBack 4
 sidebar: lb4_sidebar
-permalink: /doc/en/lb4/Defining-the-API-using-design-first-approach.html
+permalink: /doc/zh/lb4/Defining-the-API-using-design-first-approach.html
 ---
 
 {% include important.html content="The top-down approach for building LoopBack

@@ -1,11 +1,11 @@
 ---
 title: "Push connector"
-lang: en
+lang: zh
 layout: page
 keywords: LoopBack
 tags: connectors
 sidebar: lb4_sidebar
-permalink: /doc/en/lb4/Push-connector.html
+permalink: /doc/zh/lb4/Push-connector.html
 summary:
 ---
 

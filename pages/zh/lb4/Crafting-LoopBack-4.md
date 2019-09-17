@@ -1,9 +1,9 @@
 ---
-lang: en
+lang: zh
 title: 'Crafting LoopBack 4'
 keywords: LoopBack 4.0, LoopBack 4
 sidebar: lb4_sidebar
-permalink: /doc/en/lb4/Crafting-LoopBack-4.html
+permalink: /doc/zh/lb4/Crafting-LoopBack-4.html
 ---
 
 ## Background
@@ -31,7 +31,7 @@ knowledge and support by the community.
 
 With LoopBack, developers can create and expose APIs just like following a
 recipe. LoopBack introduces a set of
-[core concepts](https://loopback.io/doc/en/lb3/LoopBack-core-concepts) that
+[core concepts](https://loopback.io/doc/zh/lb3/LoopBack-core-concepts) that
 represent the key aspects of API implementation. To create APIs out of existing
 databases or services, developers can simply scaffold a LoopBack application,
 then add necessary JSON declarations and Node.js code to get their APIs up and

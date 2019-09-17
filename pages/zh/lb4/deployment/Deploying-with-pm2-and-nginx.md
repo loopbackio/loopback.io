@@ -1,9 +1,9 @@
 ---
-lang: en
+lang: zh
 title: 'Deploying with pm2 and nginx'
 keywords: LoopBack, pm2, nginx
 sidebar: lb4_sidebar
-permalink: /doc/en/lb4/deploying-with-pm2-and-nginx.html
+permalink: /doc/zh/lb4/deploying-with-pm2-and-nginx.html
 ---
 
 This is a basic guide for deploying a LoopBack 4 (LB4) app using
@@ -38,7 +38,7 @@ $ lb4 app
 ```
 
 Refer to
-[getting started](https://loopback.io/doc/en/lb4/Getting-started.html#create-a-new-project)
+[getting started](https://loopback.io/doc/zh/lb4/Getting-started.html#create-a-new-project)
 section of documentation for detailed instructions.
 
 ### pm2 setup

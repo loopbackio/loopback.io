@@ -1,9 +1,9 @@
 ---
-lang: en
+lang: zh
 title: 'belongsTo Relation'
 keywords: LoopBack 4.0, LoopBack 4
 sidebar: lb4_sidebar
-permalink: /doc/en/lb4/BelongsTo-relation.html
+permalink: /doc/zh/lb4/BelongsTo-relation.html
 ---
 
 ## Overview
@@ -160,7 +160,7 @@ export class OrderRepository extends DefaultCrudRepository<
 `BelongsToAccessor` is a function accepting the primary key (id) of a source
 model instance (e.g. `order.id`) and returning back the related target model
 instance (e.g. a `Customer` the order belongs to). See also
-[API Docs](https://loopback.io/doc/en/lb4/apidocs.repository.belongstoaccessor.html)
+[API Docs](https://loopback.io/doc/zh/lb4/apidocs.repository.belongstoaccessor.html)
 
 ## Using BelongsToAccessor in a controller
 

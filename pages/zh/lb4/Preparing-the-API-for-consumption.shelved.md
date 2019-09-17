@@ -1,9 +1,9 @@
 ---
-lang: en
+lang: zh
 title: 'Preparing the API for consumption'
 keywords: LoopBack 4.0, LoopBack 4
 sidebar: lb4_sidebar
-permalink: /doc/en/lb4/Preparing-the-API-for-consumption.html
+permalink: /doc/zh/lb4/Preparing-the-API-for-consumption.html
 ---
 
 ## Preparing your API for consumption

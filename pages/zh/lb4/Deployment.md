@@ -1,9 +1,9 @@
 ---
-lang: en
+lang: zh
 title: 'Deployment'
 keywords: LoopBack 4.0, LoopBack-Next
 sidebar: lb4_sidebar
-permalink: /doc/en/lb4/Deployment.html
+permalink: /doc/zh/lb4/Deployment.html
 ---
 
 A LoopBack application can be deployed to cloud or other environment to make it

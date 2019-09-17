@@ -1,9 +1,9 @@
 ---
-lang: en
+lang: zh
 title: 'Calling other APIs and web services'
 keywords: LoopBack 4.0, LoopBack 4
 sidebar: lb4_sidebar
-permalink: /doc/en/lb4/Calling-other-APIs-and-web-services.html
+permalink: /doc/zh/lb4/Calling-other-APIs-and-web-services.html
 ---
 
 Your API implementation often needs to interact with REST APIs, SOAP Web
@@ -104,11 +104,11 @@ The next step is to edit the DataSource JSON file for `options` and
 The REST connector uses the
 [request module](https://www.npmjs.com/package/request) as the HTTP client. You
 can configure the same options as for the `request()` function. See details in
-[this documentation page](https://loopback.io/doc/en/lb3/REST-connector.html#configure-options-for-request).
+[this documentation page](https://loopback.io/doc/zh/lb3/REST-connector.html#configure-options-for-request).
 
 The `template` object specifies the REST API invocation as a JSON template. You
 can find more details in the
-[Defining a custom method using a template page](https://loopback.io/doc/en/lb3/REST-connector.html#defining-a-custom-method-using-a-template).
+[Defining a custom method using a template page](https://loopback.io/doc/zh/lb3/REST-connector.html#defining-a-custom-method-using-a-template).
 
 ```json
 {
@@ -223,9 +223,9 @@ Service interface.
 ## More examples
 
 - SOAP web service tutorial:
-  https://loopback.io/doc/en/lb4/soap-calculator-tutorial.html
+  https://loopback.io/doc/zh/lb4/soap-calculator-tutorial.html
 - REST service tutorial:
-  https://loopback.io/doc/en/lb4/todo-tutorial-geocoding-service.html
+  https://loopback.io/doc/zh/lb4/todo-tutorial-geocoding-service.html
 
 ## Testing your application
 
@@ -262,7 +262,7 @@ export class GeoServiceProvider implements Provider<GeoService> {
 If you get the error about the
 `app.serviceProvider() function is needed for ServiceBooter`, make sure you
 apply
-[ServiceMixin](https://loopback.io/doc/en/lb4/apidocs.service-proxy.servicemixin.html)
+[ServiceMixin](https://loopback.io/doc/zh/lb4/apidocs.service-proxy.servicemixin.html)
 to your Application class in the `application.ts`.
 
 ```ts

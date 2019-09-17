@@ -1,9 +1,9 @@
 ---
-lang: en
+lang: zh
 title: 'Context'
 keywords: LoopBack 4.0, LoopBack 4
 sidebar: lb4_sidebar
-permalink: /doc/en/lb4/Context.html
+permalink: /doc/zh/lb4/Context.html
 ---
 
 ## What is Context?
@@ -163,7 +163,7 @@ The process of registering a BoundValue into the Context is known as _binding_.
 Please find more details at [Binding](Binding.md).
 
 For a list of the available functions you can use for binding, visit the
-[Context API Docs](https://loopback.io/doc/en/lb4/apidocs.context.html).
+[Context API Docs](https://loopback.io/doc/zh/lb4/apidocs.context.html).
 
 ## Dependency injection
 

@@ -1,9 +1,9 @@
 ---
-lang: en
+lang: zh
 title: 'Interceptors'
 keywords: LoopBack 4.0, LoopBack 4
 sidebar: lb4_sidebar
-permalink: /doc/en/lb4/Interceptors.html
+permalink: /doc/zh/lb4/Interceptors.html
 ---
 
 ## Overview

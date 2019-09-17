@@ -1,9 +1,9 @@
 ---
-lang: en
+lang: zh
 title: 'Add a Service'
 keywords: LoopBack 4.0, LoopBack 4
 sidebar: lb4_sidebar
-permalink: /doc/en/lb4/soap-calculator-tutorial-add-service.html
+permalink: /doc/zh/lb4/soap-calculator-tutorial-add-service.html
 ---
 
 ### Add a Service

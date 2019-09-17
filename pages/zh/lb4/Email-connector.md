@@ -1,11 +1,11 @@
 ---
 title: "Email connector"
-lang: en
+lang: zh
 layout: page
 keywords: LoopBack
 tags: connectors
 sidebar: lb4_sidebar
-permalink: /doc/en/lb4/Email-connector.html
+permalink: /doc/zh/lb4/Email-connector.html
 summary: The built-in email connectors enables applications to send email.
 ---
 

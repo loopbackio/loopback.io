@@ -1,9 +1,9 @@
 ---
-lang: en
+lang: zh
 title: 'Parsing requests'
 keywords: LoopBack 4.0, LoopBack 4
 sidebar: lb4_sidebar
-permalink: /doc/en/lb4/Parsing-requests.html
+permalink: /doc/zh/lb4/Parsing-requests.html
 ---
 
 ## Parsing Requests
@@ -121,7 +121,7 @@ decimal like "1.23" would be rejected.
 
 You can specify a parameter's type by calling shortcut decorators of `@param`
 like `@param.query.integer()`. A list of available shortcuts can be found in the
-[API Docs](https://loopback.io/doc/en/lb4/apidocs.openapi-v3.param.html). Check
+[API Docs](https://loopback.io/doc/zh/lb4/apidocs.openapi-v3.param.html). Check
 out the section on [parameter decorators](Decorators.md#parameter-decorator) for
 instructions on how to decorate the controller parameter.
 

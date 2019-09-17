@@ -1,9 +1,9 @@
 ---
-lang: en
+lang: zh
 title: 'Testing the API'
 keywords: LoopBack 4.0, LoopBack 4
 sidebar: lb4_sidebar
-permalink: /doc/en/lb4/Testing-the-API.html
+permalink: /doc/zh/lb4/Testing-the-API.html
 ---
 
 {% include previous.html content=" This article continues off

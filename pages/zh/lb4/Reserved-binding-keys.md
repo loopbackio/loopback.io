@@ -1,10 +1,10 @@
 ---
-lang: en
+lang: zh
 title: 'Reserved binding keys'
 keywords: LoopBack 4.0, LoopBack 4
 toc_level: 1
 sidebar: lb4_sidebar
-permalink: /doc/en/lb4/Reserved-binding-keys.html
+permalink: /doc/zh/lb4/Reserved-binding-keys.html
 ---
 
 ## Overview
@@ -37,9 +37,9 @@ the prefix. Example: `@loopback/authentication` component uses the prefix
 `authentication` for its binding keys.
 " %}
 
-- [AuthenticationBindings](https://loopback.io/doc/en/lb4/apidocs.authentication.authenticationbindings.html)
-- [BootBindings](https://loopback.io/doc/en/lb4/apidocs.boot.bootbindings.html)
-- [CoreBindings](https://loopback.io/doc/en/lb4/apidocs.core.corebindings.html)
-- [RestBindings](https://loopback.io/doc/en/lb4/apidocs.rest.restbindings.html)
-- [RestBindings.Http](https://loopback.io/doc/en/lb4/apidocs.rest.http.html)
-- [RestBindings.SequenceActions](https://loopback.io/doc/en/lb4/apidocs.rest.sequenceactions.html)
+- [AuthenticationBindings](https://loopback.io/doc/zh/lb4/apidocs.authentication.authenticationbindings.html)
+- [BootBindings](https://loopback.io/doc/zh/lb4/apidocs.boot.bootbindings.html)
+- [CoreBindings](https://loopback.io/doc/zh/lb4/apidocs.core.corebindings.html)
+- [RestBindings](https://loopback.io/doc/zh/lb4/apidocs.rest.restbindings.html)
+- [RestBindings.Http](https://loopback.io/doc/zh/lb4/apidocs.rest.http.html)
+- [RestBindings.SequenceActions](https://loopback.io/doc/zh/lb4/apidocs.rest.sequenceactions.html)

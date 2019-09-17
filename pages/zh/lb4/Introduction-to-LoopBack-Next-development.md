@@ -1,9 +1,9 @@
 ---
-lang: en
+lang: zh
 title: 'Introduction to LoopBack 4 development'
 keywords: LoopBack 4.0, LoopBack 4
 sidebar: lb4_sidebar
-permalink: /doc/en/lb4/Intro-to-LB4-development.html
+permalink: /doc/zh/lb4/Intro-to-LB4-development.html
 ---
 
 MOVED TO strongloop.com.

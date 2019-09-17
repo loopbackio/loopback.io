@@ -1,9 +1,9 @@
 ---
-lang: en
+lang: zh
 title: 'Database Migrations'
 keywords: LoopBack 4.0
 sidebar: lb4_sidebar
-permalink: /doc/en/lb4/Database-migrations.html
+permalink: /doc/zh/lb4/Database-migrations.html
 ---
 
 ## Overview

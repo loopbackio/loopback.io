@@ -2,7 +2,7 @@
 
 [MySQL](https://www.mysql.com/) is a popular open-source relational database management system (RDBMS).  The `loopback-connector-mysql` module provides the MySQL connector module for the LoopBack framework.
 
-<div class="gh-only">See also <a href="http://loopback.io/doc/en/lb3/MySQL-connector.html">LoopBack MySQL Connector</a> in LoopBack documentation.
+<div class="gh-only">See also <a href="http://loopback.io/doc/zh/lb3/MySQL-connector.html">LoopBack MySQL Connector</a> in LoopBack documentation.
 <br/><br/>
 <b>NOTE</b>: The MySQL connector requires MySQL 5.0+.
 </div>
@@ -21,7 +21,7 @@ If you create a MySQL data source using the data source generator as described b
 
 ## Creating a MySQL data source
 
-Use the [Data source generator](http://loopback.io/doc/en/lb3/Data-source-generator.html) to add a MySQL data source to your application.  
+Use the [Data source generator](http://loopback.io/doc/zh/lb3/Data-source-generator.html) to add a MySQL data source to your application.  
 The generator will prompt for the database server hostname, port, and other settings
 required to connect to a MySQL database.  It will also run the `npm install` command above for you.
 
@@ -124,7 +124,7 @@ Edit `datasources.json` to add any other additional properties that you require.
 
 ## Type mappings
 
-See [LoopBack types](http://loopback.io/doc/en/lb3/LoopBack-types.html) for details on LoopBack's data types.
+See [LoopBack types](http://loopback.io/doc/zh/lb3/LoopBack-types.html) for details on LoopBack's data types.
 
 ### LoopBack to MySQL types
 
@@ -383,14 +383,14 @@ MOOD('sad'); // 'sad'
 ### Model discovery
 
 The MySQL connector supports _model discovery_ that enables you to create LoopBack models
-based on an existing database schema using the unified [database discovery API](http://apidocs.strongloop.com/loopback-datasource-juggler/#datasource-prototype-discoverandbuildmodels).  For more information on discovery, see [Discovering models from relational databases](https://loopback.io/doc/en/lb3/Discovering-models-from-relational-databases.html).
+based on an existing database schema using the unified [database discovery API](http://apidocs.strongloop.com/loopback-datasource-juggler/#datasource-prototype-discoverandbuildmodels).  For more information on discovery, see [Discovering models from relational databases](https://loopback.io/doc/zh/lb3/Discovering-models-from-relational-databases.html).
 
 ### Auto-migration
 
 The MySQL connector also supports _auto-migration_ that enables you to create a database schema
 from LoopBack models using the [LoopBack automigrate method](http://apidocs.strongloop.com/loopback-datasource-juggler/#datasource-prototype-automigrate).
 
-For more information on auto-migration, see [Creating a database schema from models](https://loopback.io/doc/en/lb3/Creating-a-database-schema-from-models.html) for more information.
+For more information on auto-migration, see [Creating a database schema from models](https://loopback.io/doc/zh/lb3/Creating-a-database-schema-from-models.html) for more information.
 
 #### Auto-migrate/Auto-update models with foreign keys
 

@@ -4,7 +4,7 @@
 
 The LoopBack MQ Light connector supports:
 
-- All [create, retrieve, update, and delete operations](http://loopback.io/doc/en/lb2/Creating-updating-and-deleting-data.html).
+- All [create, retrieve, update, and delete operations](http://loopback.io/doc/zh/lb2/Creating-updating-and-deleting-data.html).
 - Sending messages to and receiving messages from IBM MQ Light.
 
 ## Installation
@@ -19,7 +19,7 @@ The `--save` option adds the dependency to the applications `package.json` file.
 
 ## Configuration
 
-Use the [data source generator](http://loopback.io/doc/en/lb2/Data-source-generator.html) to add the MQ Light data source to your application. The resulting entry in the application's `server/datasources.json` will look something like this:
+Use the [data source generator](http://loopback.io/doc/zh/lb2/Data-source-generator.html) to add the MQ Light data source to your application. The resulting entry in the application's `server/datasources.json` will look something like this:
 
 ```js
 "mymq": {

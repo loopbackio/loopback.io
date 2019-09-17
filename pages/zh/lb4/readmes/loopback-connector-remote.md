@@ -18,11 +18,11 @@ In your application root directory, enter:
 $ npm install loopback-connector-remote --save
 ```
 
-This will install the module and add it as a dependency to the application's [`package.json`](http://loopback.io/doc/en/lb3/package.json.html) file.
+This will install the module and add it as a dependency to the application's [`package.json`](http://loopback.io/doc/zh/lb3/package.json.html) file.
 
 ## Creating a remote data source
 
-Create a new remote data source with the [datasource generator](http://loopback.io/doc/en/lb3/Data-source-generator.html):
+Create a new remote data source with the [datasource generator](http://loopback.io/doc/zh/lb3/Data-source-generator.html):
 
 ```shell
 $ lb datasource

@@ -1,13 +1,13 @@
 ---
 title: "Installing the Oracle connector"
-lang: en
+lang: zh
 layout: navgroup
 navgroup: oracle
 source: loopback-oracle-installer
 keywords: LoopBack
 tags:
 sidebar: lb4_sidebar
-permalink: /doc/en/lb4/Installing-the-Oracle-connector.html
+permalink: /doc/zh/lb4/Installing-the-Oracle-connector.html
 summary: The loopback-oracle-installer module takes care of binary dependencies and simplifies the process of installing the Oracle connector.
 ---
 {% include tip.html content="

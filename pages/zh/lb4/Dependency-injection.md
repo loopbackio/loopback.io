@@ -1,9 +1,9 @@
 ---
-lang: en
+lang: zh
 title: 'Dependency injection'
 keywords: LoopBack 4.0, LoopBack 4
 sidebar: lb4_sidebar
-permalink: /doc/en/lb4/Dependency-injection.html
+permalink: /doc/zh/lb4/Dependency-injection.html
 ---
 
 ## Introduction

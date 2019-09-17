@@ -78,7 +78,7 @@ await proxy.stop();
 ## API Documentation
 
 See the auto-generated documentation at
-[loopback.io](https://loopback.io/doc/en/lb4/apidocs.http-caching-proxy.html)
+[loopback.io](https://loopback.io/doc/zh/lb4/apidocs.http-caching-proxy.html)
 
 ## Contributions
 

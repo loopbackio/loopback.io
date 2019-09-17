@@ -1,9 +1,9 @@
 ---
-lang: en
+lang: zh
 title: 'Add a Controller'
 keywords: LoopBack 4.0, LoopBack 4
 sidebar: lb4_sidebar
-permalink: /doc/en/lb4/soap-calculator-tutorial-add-controller.html
+permalink: /doc/zh/lb4/soap-calculator-tutorial-add-controller.html
 ---
 
 ### Add a Controller

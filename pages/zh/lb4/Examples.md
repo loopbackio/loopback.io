@@ -1,9 +1,9 @@
 ---
-lang: en
+lang: zh
 title: Example Projects
 keywords: LoopBack 4.0
 sidebar: lb4_sidebar
-permalink: /doc/en/lb4/Examples.html
+permalink: /doc/zh/lb4/Examples.html
 ---
 
 LoopBack 4 comes with the following example projects:

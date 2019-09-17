@@ -1,9 +1,9 @@
 ---
-lang: en
+lang: zh
 title: 'Creating servers'
 keywords: LoopBack 4.0, LoopBack 4
 sidebar: lb4_sidebar
-permalink: /doc/en/lb4/Creating-servers.html
+permalink: /doc/zh/lb4/Creating-servers.html
 ---
 
 ## Creating your own servers

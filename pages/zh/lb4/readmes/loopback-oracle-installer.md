@@ -1,6 +1,6 @@
 # loopback-oracle-installer
 
-The Oracle connector version 3.0.0 or above depends on the [oracledb](https://github.com/oracle/node-oracledb) module as the Node.js driver for Oracle databases. Since `oracledb` is a [C++ add-on](http://nodejs.org/api/addons.html), the installation requires C++ development tools to compile and build the module from source code.  For more information, see [Installing compiler tools](http://loopback.io/doc/en/lb3/Installing-compiler-tools.html).
+The Oracle connector version 3.0.0 or above depends on the [oracledb](https://github.com/oracle/node-oracledb) module as the Node.js driver for Oracle databases. Since `oracledb` is a [C++ add-on](http://nodejs.org/api/addons.html), the installation requires C++ development tools to compile and build the module from source code.  For more information, see [Installing compiler tools](http://loopback.io/doc/zh/lb3/Installing-compiler-tools.html).
 
 At runtime, strong-oracle also requires dynamic libraries from 
 [Oracle Database Instant Client](http://www.oracle.com/technetwork/database/features/instant-client/index.html).

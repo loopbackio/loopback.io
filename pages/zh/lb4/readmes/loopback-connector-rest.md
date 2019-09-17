@@ -16,11 +16,11 @@ In your application root directory, enter:
 $ npm install loopback-connector-rest --save
 ```
 
-This will install the module from npm and add it as a dependency to the application's [package.json](http://loopback.io/doc/en/lb3/package.json.html) file.
+This will install the module from npm and add it as a dependency to the application's [package.json](http://loopback.io/doc/zh/lb3/package.json.html) file.
 
 ## Creating a REST data source
 
-Use the [data source generator](http://loopback.io/doc/en/lb3/Data-source-generator) to add a REST data source to your application.
+Use the [data source generator](http://loopback.io/doc/zh/lb3/Data-source-generator) to add a REST data source to your application.
 
 For LoopBack 2.x:
 
@@ -35,7 +35,7 @@ $ lb datasource
 ```
 
 When prompted, scroll down in the list of connectors and choose **REST services (supported by StrongLoop)**.
-This adds an entry to [datasources.json](http://loopback.io/doc/en/lb3/datasources.json.html), for example:
+This adds an entry to [datasources.json](http://loopback.io/doc/zh/lb3/datasources.json.html), for example:
 
 ```javascript
 ...

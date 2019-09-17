@@ -8,7 +8,7 @@ This tutorial demonstrates how to create a basic API for a todo list using
 LoopBack 4. You will experience how you can create REST APIs with just
 [5 steps](#steps).
 
-![todo-tutorial-overview](https://loopback.io/pages/en/lb4/imgs/todo-overview.png)
+![todo-tutorial-overview](https://loopback.io/pages/zh/lb4/imgs/todo-overview.png)
 
 ## Setup
 
@@ -31,19 +31,19 @@ npm i -g @loopback/cli
 ## Tutorial
 
 To follow this tutorial, begin with the
-[Create your app scaffolding](http://loopback.io/doc/en/lb4/todo-tutorial-scaffolding.html)
+[Create your app scaffolding](http://loopback.io/doc/zh/lb4/todo-tutorial-scaffolding.html)
 section.
 
 ### Steps
 
-1.  [Create your app scaffolding](http://loopback.io/doc/en/lb4/todo-tutorial-scaffolding.html)
-2.  [Add your Todo model](http://loopback.io/doc/en/lb4/todo-tutorial-model.html)
-3.  [Add a datasource](http://loopback.io/doc/en/lb4/todo-tutorial-datasource.html)
-4.  [Add a repository](http://loopback.io/doc/en/lb4/todo-tutorial-repository.html)
-5.  [Add a controller](http://loopback.io/doc/en/lb4/todo-tutorial-controller.html)
-6.  [Putting it all together](http://loopback.io/doc/en/lb4/todo-tutorial-putting-it-together.html)
+1.  [Create your app scaffolding](http://loopback.io/doc/zh/lb4/todo-tutorial-scaffolding.html)
+2.  [Add your Todo model](http://loopback.io/doc/zh/lb4/todo-tutorial-model.html)
+3.  [Add a datasource](http://loopback.io/doc/zh/lb4/todo-tutorial-datasource.html)
+4.  [Add a repository](http://loopback.io/doc/zh/lb4/todo-tutorial-repository.html)
+5.  [Add a controller](http://loopback.io/doc/zh/lb4/todo-tutorial-controller.html)
+6.  [Putting it all together](http://loopback.io/doc/zh/lb4/todo-tutorial-putting-it-together.html)
 7.  Bonus:
-    [Integrate with a geo-coding service](http://loopback.io/doc/en/lb4/todo-tutorial-geocoding-service.html)
+    [Integrate with a geo-coding service](http://loopback.io/doc/zh/lb4/todo-tutorial-geocoding-service.html)
 
 ## Try it out
 

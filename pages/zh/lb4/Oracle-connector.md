@@ -1,13 +1,13 @@
 ---
 title: "Oracle connector"
-lang: en
+lang: zh
 layout: navgroup
 navgroup: oracle
 source: loopback-connector-oracle
 keywords: LoopBack
 tags: connectors
 sidebar: lb4_sidebar
-permalink: /doc/en/lb4/Oracle-connector.html
+permalink: /doc/zh/lb4/Oracle-connector.html
 summary: The Oracle connector enables LoopBack applications to connect to Oracle data sources.
 ---
 {% include tip.html content="

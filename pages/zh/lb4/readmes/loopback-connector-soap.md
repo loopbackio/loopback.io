@@ -6,7 +6,7 @@ The SOAP connector enables LoopBack applications to interact with
 
 <p class="gh-only">
 For more information, see the
-<a href="http://loopback.io/doc/en/lb3/SOAP-connector.html">LoopBack documentation</a>.
+<a href="http://loopback.io/doc/zh/lb3/SOAP-connector.html">LoopBack documentation</a>.
 </p>
 
 ## Installation
@@ -18,13 +18,13 @@ $ npm install loopback-connector-soap --save
 ```
 
 This will install the module from npm and add it as a dependency to the application's 
-[package.json](http://loopback.io/doc/en/lb2/package.json.html) file.
+[package.json](http://loopback.io/doc/zh/lb2/package.json.html) file.
 
 ## Overview
 
 There are two ways to use the SOAP connector:
 
-- Use the LoopBack CLI `lb soap` command to automatically create a set of models based on a SOAP service WSDL file.  Often, this will be the easiest way to connect to a SOAP web service, but may not be suitable for all applications.  For more information, see [SOAP generator](http://loopback.io/doc/en/lb3/SOAP-generator.html).
+- Use the LoopBack CLI `lb soap` command to automatically create a set of models based on a SOAP service WSDL file.  Often, this will be the easiest way to connect to a SOAP web service, but may not be suitable for all applications.  For more information, see [SOAP generator](http://loopback.io/doc/zh/lb3/SOAP-generator.html).
 - Write the code manually, calling the `loopback-connector-soap` and data source APIs directly.  **This is the approach illustrated here**.
 
 While both approaches use the `loopback-connector-soap` data source connector, they appear quite different.

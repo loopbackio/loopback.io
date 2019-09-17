@@ -1,9 +1,9 @@
 ---
-lang: en
+lang: zh
 title: 'Putting it all together'
 keywords: LoopBack 4.0, LoopBack 4
 sidebar: lb4_sidebar
-permalink: /doc/en/lb4/todo-tutorial-putting-it-together.html
+permalink: /doc/zh/lb4/todo-tutorial-putting-it-together.html
 summary: LoopBack 4 Todo Application Tutorial - Putting it all together
 ---
 
@@ -66,7 +66,7 @@ left off here to guide you through adding in an additional feature:
 - **Add related Model with TodoListApplication**: If you would like to try out
   using some of the more advanced features of LoopBack 4 such as relations, try
   out the
-  [TodoList tutorial](https://loopback.io/doc/en/lb4/todo-list-tutorial.html)
+  [TodoList tutorial](https://loopback.io/doc/zh/lb4/todo-list-tutorial.html)
   which continues off from where we leave here.
 
 ### More examples and tutorials

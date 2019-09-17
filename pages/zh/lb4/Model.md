@@ -1,9 +1,9 @@
 ---
-lang: en
+lang: zh
 title: 'Model'
 keywords: LoopBack 4.0, LoopBack 4
 sidebar: lb4_sidebar
-permalink: /doc/en/lb4/Model.html
+permalink: /doc/zh/lb4/Model.html
 ---
 
 ## Overview
@@ -190,7 +190,7 @@ class Product extends Entity {
 
 However, the model decorator in LoopBack 4 is not exactly the same as what it is
 in LoopBack 3. For example, in
-[lb3](https://loopback.io/doc/en/lb3/Model-definition-JSON-file.html) we can
+[lb3](https://loopback.io/doc/zh/lb3/Model-definition-JSON-file.html) we can
 pass in a model definition syntax in the model decorator, such as properties,
 options, relation etc. But not all these entries are available in lb4 model
 decorator:
@@ -202,7 +202,7 @@ for now. Those `top-level properties` in lb3 now are passed in `settings`.
 
 - `properties` now are defined in `@property` decorator (see below for more
   information).
-- [`options`](https://loopback.io/doc/en/lb3/Model-definition-JSON-file.html#options)
+- [`options`](https://loopback.io/doc/zh/lb3/Model-definition-JSON-file.html#options)
   in lb3 doesn't have the mapping feature in LB4 yet. (see
   [issue #2142](https://github.com/strongloop/loopback-next/issues/2142) for
   further discussion.)
@@ -292,7 +292,7 @@ now:
     <td><code>scopes</code></td>
     <td>Object</td>
     <td>N/A</td>
-    <td>See <a href="https://loopback.io/doc/en/lb3/Model-definition-JSON-file.html#scopes">Scopes</a> in lb3 docs.</td>
+    <td>See <a href="https://loopback.io/doc/zh/lb3/Model-definition-JSON-file.html#scopes">Scopes</a> in lb3 docs.</td>
   </tr>
 
   </tbody>
@@ -357,8 +357,8 @@ now:
   <tr>
     <td><code>relations</code></td>
     <td>
-      With the introduction of <a href="https://loopback.io/doc/en/lb4/Repositories.html">repositories</a>, now <code>relations</code> are defined by <code>relations decorators</code> in LB4.
-      See <a href="https://loopback.io/doc/en/lb4/Relations.html">Relations</a> for more details.
+      With the introduction of <a href="https://loopback.io/doc/zh/lb4/Repositories.html">repositories</a>, now <code>relations</code> are defined by <code>relations decorators</code> in LB4.
+      See <a href="https://loopback.io/doc/zh/lb4/Relations.html">Relations</a> for more details.
     </td>
   </tr>
   <tr>
@@ -432,7 +432,7 @@ class Product extends Entity {
 
 The complete list of valid attributes for property definitions can be found in
 LoopBack 3's
-[Model definition section](https://loopback.io/doc/en/lb3/Model-definition-JSON-file.html#properties).
+[Model definition section](https://loopback.io/doc/zh/lb3/Model-definition-JSON-file.html#properties).
 
 You can also specify the validation rules in the field `jsonSchema`. For
 example:

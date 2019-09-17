@@ -1,9 +1,9 @@
 ---
-lang: en
+lang: zh
 title: 'Using components'
 keywords: LoopBack 4.0, LoopBack 4
 sidebar: lb4_sidebar
-permalink: /doc/en/lb4/Using-components.html
+permalink: /doc/zh/lb4/Using-components.html
 ---
 
 Components serve as a vehicle to group 3rd-party contributions to allow easier

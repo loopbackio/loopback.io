@@ -1,9 +1,9 @@
 ---
-lang: en
+lang: zh
 title: 'Sequence'
 keywords: LoopBack 4.0, LoopBack 4
 sidebar: lb4_sidebar
-permalink: /doc/en/lb4/Sequence.html
+permalink: /doc/zh/lb4/Sequence.html
 ---
 
 ## What is a Sequence?
@@ -40,14 +40,14 @@ class DefaultSequence {
 In the example above, `route`, `params`, and `result` are all Elements. When
 building sequences, you use LoopBack Elements to respond to a request:
 
-- [`FindRoute`](https://loopback.io/doc/en/lb4/apidocs.rest.findroute.html)
+- [`FindRoute`](https://loopback.io/doc/zh/lb4/apidocs.rest.findroute.html)
 - [`Request`](http://apidocs.strongloop.com/loopback-next/) - (TBD) missing API
   docs link
 - [`Response`](http://apidocs.strongloop.com/loopback-next/) - (TBD) missing API
   docs link
-- [`OperationRetVal`](https://loopback.io/doc/en/lb4/apidocs.rest.operationretval.html)
-- [`ParseParams`](https://loopback.io/doc/en/lb4/apidocs.rest.parseparams.html)
-- [`OpenAPISpec`](https://loopback.io/doc/en/lb4/apidocs.openapi-v3.openapispec.html)
+- [`OperationRetVal`](https://loopback.io/doc/zh/lb4/apidocs.rest.operationretval.html)
+- [`ParseParams`](https://loopback.io/doc/zh/lb4/apidocs.rest.parseparams.html)
+- [`OpenAPISpec`](https://loopback.io/doc/zh/lb4/apidocs.openapi-v3.openapispec.html)
 
 ## Actions
 
@@ -124,7 +124,7 @@ As an example, we'll implement a custom sequence action to replace the default
 controller to the client making the request.
 
 To do this, we'll register a custom send action by binding a
-[Provider](https://loopback.io/doc/en/lb4/apidocs.context.provider.html) to the
+[Provider](https://loopback.io/doc/zh/lb4/apidocs.context.provider.html) to the
 `RestBindings.SequenceActions.SEND` key.
 
 First, let's create our `CustomSendProvider` class, which will provide the send
@@ -210,7 +210,7 @@ export class YourApp extends RepositoryMixin(RestApplication) {
 ```
 
 As a result, whenever the send action of the
-[`DefaultSequence`](https://loopback.io/doc/en/lb4/apidocs.rest.defaultsequence.html)
+[`DefaultSequence`](https://loopback.io/doc/zh/lb4/apidocs.rest.defaultsequence.html)
 is called, it will make use of your function instead! You can use this approach
 to override any of the actions listed under the `RestBindings.SequenceActions`
 namespace.

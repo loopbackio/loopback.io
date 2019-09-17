@@ -1,9 +1,9 @@
 ---
-lang: en
+lang: zh
 title: 'Model generator'
 keywords: LoopBack 4.0, LoopBack 4
 sidebar: lb4_sidebar
-permalink: /doc/en/lb4/Model-generator.html
+permalink: /doc/zh/lb4/Model-generator.html
 ---
 
 {% include content/generator-create-app.html lang=page.lang %}
@@ -45,7 +45,7 @@ The tool will prompt you for:
   - An **Entity** is a persisted model with an identity (ID).
   - A **Model** is a business domain object.
   - For more information, see
-    [here](https://loopback.io/doc/en/lb4/Model.html#overview).
+    [here](https://loopback.io/doc/zh/lb4/Model.html#overview).
 
 - **Allow additonal properties.** _(allowAdditionalProperties)_ Defaults to
   **false**. To allow arbitrary properties in addition to well-defined

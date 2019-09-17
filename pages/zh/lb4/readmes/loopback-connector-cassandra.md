@@ -2,7 +2,7 @@
 
 The official Cassandra Connector module for [loopback-datasource-juggler](http://docs.strongloop.com/loopback-datasource-juggler/).
 
-<div class="gh-only">Please also see <a href="http://loopback.io/doc/en/lb3/Cassandra-connector.html">LoopBack Cassandra Connector</a> in LoopBack documentation.
+<div class="gh-only">Please also see <a href="http://loopback.io/doc/zh/lb3/Cassandra-connector.html">LoopBack Cassandra Connector</a> in LoopBack documentation.
 </div>
 
 ## Installation
@@ -19,7 +19,7 @@ If you create a Cassandra data source using the data source generator as describ
 
 ## Creating a Cassandra data source
 
-Use the [Data source generator](http://loopback.io/doc/en/lb3/Data-source-generator.html) to add a Cassandra data source to your application.  Select `Cassandra` connector as follows:
+Use the [Data source generator](http://loopback.io/doc/zh/lb3/Data-source-generator.html) to add a Cassandra data source to your application.  Select `Cassandra` connector as follows:
 ```
 $ lb datasource
 ? Enter the data-source name: mycass
@@ -71,7 +71,7 @@ Edit `datasources.json` to add any other additional properties supported by [`ca
 
 ## Type mappings
 
-See [LoopBack types](http://loopback.io/doc/en/lb3/LoopBack-types.html) for details on LoopBack's data types.
+See [LoopBack types](http://loopback.io/doc/zh/lb3/LoopBack-types.html) for details on LoopBack's data types.
 
 ### LoopBack to/from Cassandra types
 

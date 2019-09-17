@@ -1,9 +1,9 @@
 ---
-lang: en
+lang: zh
 title: 'Repositories'
 keywords: LoopBack 4.0, LoopBack 4
 sidebar: lb4_sidebar
-permalink: /doc/en/lb4/Repositories.html
+permalink: /doc/zh/lb4/Repositories.html
 ---
 
 A `Repository` represents a specialized `Service` interface that provides

@@ -7,13 +7,13 @@ This is an extended tutorial that builds on top of `@loopback/example-todo`.
 This tutorial demonstrates how to create a set of APIs for models that are
 related to one another.
 
-![todo-tutorial-overview](https://loopback.io/pages/en/lb4/imgs/todo-list-overview.png)
+![todo-tutorial-overview](https://loopback.io/pages/zh/lb4/imgs/todo-list-overview.png)
 
 ## Setup
 
 If you're following from the tutorial in `@loopback/example-todo`, you can jump
 straight to our first step:
-[Add TodoList model](http://loopback.io/doc/en/lb4/todo-list-tutorial-model.html)
+[Add TodoList model](http://loopback.io/doc/zh/lb4/todo-list-tutorial-model.html)
 
 If not, you'll need to make sure you have a couple of things installed before we
 get started:
@@ -27,7 +27,7 @@ npm i -g @loopback/cli
 ```
 
 We recommend that you start with the
-[todo tutorial](http://loopback.io/doc/en/lb4/todo-tutorial.html) if you're not
+[todo tutorial](http://loopback.io/doc/zh/lb4/todo-tutorial.html) if you're not
 familiar with LoopBack4, but if you are and don't want to start from scratch
 again, you can use the LoopBack 4 CLI tool to catch up to where this tutorial
 will continue from:
@@ -37,20 +37,20 @@ lb4 example todo-list
 ```
 
 It should be noted that this tutorial does not assume the
-[optional geo-coding step](https://loopback.io/doc/en/lb4/todo-tutorial-geocoding-service.html)
+[optional geo-coding step](https://loopback.io/doc/zh/lb4/todo-tutorial-geocoding-service.html)
 has been completed. Whether the step has been completed or not, the content and
 the steps listed in this tutorial remain the same.
 
 ## Tutorial
 
 Once you're ready to start the tutorial, let's begin by
-[adding a TodoList model](http://loopback.io/doc/en/lb4/todo-list-tutorial-model.html)
+[adding a TodoList model](http://loopback.io/doc/zh/lb4/todo-list-tutorial-model.html)
 
 ### Steps
 
-1.  [Add TodoList Model](http://loopback.io/doc/en/lb4/todo-list-tutorial-model.html)
-2.  [Add TodoList Repository](http://loopback.io/doc/en/lb4/todo-list-tutorial-repository.html)
-3.  [Add TodoList and TodoList's Todo Controller](http://loopback.io/doc/en/lb4/todo-list-tutorial-controller.html)
+1.  [Add TodoList Model](http://loopback.io/doc/zh/lb4/todo-list-tutorial-model.html)
+2.  [Add TodoList Repository](http://loopback.io/doc/zh/lb4/todo-list-tutorial-repository.html)
+3.  [Add TodoList and TodoList's Todo Controller](http://loopback.io/doc/zh/lb4/todo-list-tutorial-controller.html)
 
 ## Try it out
 

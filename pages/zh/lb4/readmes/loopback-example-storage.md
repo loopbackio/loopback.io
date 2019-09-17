@@ -19,8 +19,8 @@ $ node .
 
 Then load <http://localhost:3000> in your browser.
 
-See the documentation for the LoopBack [storage component](http://loopback.io/doc/en/lb3/Storage-component.html).
+See the documentation for the LoopBack [storage component](http://loopback.io/doc/zh/lb3/Storage-component.html).
 
 ---
 
-[More LoopBack examples and tutorials](https://loopback.io/doc/en/lb3/Tutorials-and-examples.html)
+[More LoopBack examples and tutorials](https://loopback.io/doc/zh/lb3/Tutorials-and-examples.html)

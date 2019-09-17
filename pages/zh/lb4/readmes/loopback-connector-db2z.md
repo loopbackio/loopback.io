@@ -6,8 +6,8 @@ module is the LoopBack connector for DB2z.
 
 The LoopBack DB2z connector supports:
 
-- All [create, retrieve, update, and delete operations](http://loopback.io/doc/en/lb2/Creating-updating-and-deleting-data.html).
-- [Queries](http://loopback.io/doc/en/lb2/Querying-data.html) with fields, limit, order, skip and where filters.
+- All [create, retrieve, update, and delete operations](http://loopback.io/doc/zh/lb2/Creating-updating-and-deleting-data.html).
+- [Queries](http://loopback.io/doc/zh/lb2/Querying-data.html) with fields, limit, order, skip and where filters.
 
 ## Installation
 
@@ -23,7 +23,7 @@ This module is dependent on the `node-ibm_db` module which requires appropriate 
 
 ## Configuration
 
-Use the [data source generator](http://loopback.io/doc/en/lb2/Data-source-generator.html) to add the DB2z data source to your application.
+Use the [data source generator](http://loopback.io/doc/zh/lb2/Data-source-generator.html) to add the DB2z data source to your application.
 The resulting entry in the application's `server/datasources.json` will look something like this:
 
 ```js

@@ -23,4 +23,4 @@ Check out the [Developer forum on Google Groups](https://groups.google.com/forum
 
 ---
 
-[More LoopBack examples](https://loopback.io/doc/en/lb3/Tutorials-and-examples.html)
+[More LoopBack examples](https://loopback.io/doc/zh/lb3/Tutorials-and-examples.html)

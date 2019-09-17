@@ -24,7 +24,7 @@ npm i -g @loopback/cli
 ## Tutorial
 
 Once you're ready to start, you can begin by visiting the
-[tutorial](http://loopback.io/doc/en/lb4/express-with-lb4-rest-tutorial.html)
+[tutorial](http://loopback.io/doc/zh/lb4/express-with-lb4-rest-tutorial.html)
 page.
 
 ## Try it out
