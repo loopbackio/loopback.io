@@ -4,37 +4,33 @@ title: '入门'
 keywords: LoopBack 4.0, LoopBack 4
 sidebar: lb4_sidebar
 permalink: /doc/zh/lb4/Getting-started.html
-summary: Write and run a LoopBack 4 "Hello World" project in TypeScript.
+summary: 使用TypeScript编写和运行LoopBack 4 "Hello World"项目。
 ---
 
-## Prerequisites
+## 前置需求
 
-Install [Node.js](https://nodejs.org/en/download/) (version 8.9 or higher) if it
-is not already installed on your machine.
+安装[Node.js](https://nodejs.org/en/download/) （8.9或更高版本），如果之前未曾安装。
 
-## Install LoopBack 4 CLI
+## 安装LoopBack 4 CLI
 
-The LoopBack 4 CLI is a command-line interface that scaffolds a project or an
-extension by generating the basic code. The CLI provides the fastest way to get
-started with a LoopBack 4 project that adheres to best practices.
+LoopBack 4 CLI是基于命令行的项目脚手架，也是一个用于生成基本代码的扩展。CLI提供了快速创建LoopBack 4项目的方式， 采取这种方式是一个良好的实践。
 
-Install the CLI globally by running
+在命令行运行以下代码以安装全局的CLI程序。
 
 ```sh
 npm i -g @loopback/cli
 ```
 
-## Create a new project
+## 建立一个新的项目
 
-The CLI tool will scaffold the project, configure the TypeScript compiler, and
-install all the required dependencies. To create a new project, run the CLI as
-follows and answer the prompts.
+CLI工具会搭建项目的脚手架，配置TypeScript的编译器，并且安装所有其他需要的依赖。运行以下CLI命令来建立一个新的项目，然后依据提示输入信息：
 
 ```sh
 lb4 app
 ```
 
-Answer the prompts as follows:
+根据提示输入信息如下：
+（依序是：项目名、项目描述、项目根目录、Application类名、开启功能选项）
 
 ```sh
 ? Project name: getting-started
@@ -52,43 +48,40 @@ Answer the prompts as follows:
  ◉ Enable services: include service-proxy imports and ServiceMixin
 ```
 
-### Starting the project
+### 启动项目
 
-The project comes with a "ping" route to test the project. Let's try it out by
-running the project.
+项目带有"ping"路由以便于测试。让我们试着启动项目：
 
 ```sh
 cd getting-started
 npm start
 ```
 
-In a browser, visit <http://127.0.0.1:3000/ping>.
+在浏览器中，访问<http://127.0.0.1:3000/ping>。
 
-## Adding your own controller
+## 添加你自己的控制器
 
-Now that we have a basic project created, it's time to add our own
-[controller](Controllers.md). Let's add a simple "Hello World" controller as
-follows:
+现在我们已经有了一个基本的项目，是时候添加我们自己的[controller](Controllers.md)（控制类）. 让我们添加一个简单的"Hello World"控制类，运行以下命令：
 
 ```sh
 lb4 controller
 ```
 
-- _Note: If your application is still running, press **CTRL+C** to stop it
-  before calling the command_
-
-- Answer the prompts as follows:
+- _注意： 如果你的项目仍然在运行中，在运行命令前，按**CTRL+C**来停止它。_
+  
+- 根据提示输入信息如下：
+  （依序是：类名、自动生成代码模板。模板有空控制类和带有CRUD的控制类两种可供选择。）
 
   ```sh
   ? Controller class name: hello
   ? What kind of controller would you like to generate? Empty Controller
     create src/controllers/hello.controller.ts
     update src/controllers/index.ts
-
+  
   Controller hello was now created in src/controllers/
   ```
 
-- Paste the following contents into the file
+- 复制并粘贴以下内容到文件：
   `/src/controllers/hello.controller.ts`:
 
   ```ts
@@ -102,11 +95,11 @@ lb4 controller
   }
   ```
 
-- Start the application using `npm start`.
+- 用 `npm start`命令启动项目.
 
-- Visit <http://127.0.0.1:3000/hello> to see `Hello world!`
+- 在浏览器中，访问<http://127.0.0.1:3000/hello> ，可以看到文字`Hello world!`
 
-## Code sample
+## 代码示例
 
-You can view the generated code for this example at:
+此项目代码可在此处查看：
 [hello-world](https://github.com/strongloop/loopback-next/tree/master/examples/hello-world)
