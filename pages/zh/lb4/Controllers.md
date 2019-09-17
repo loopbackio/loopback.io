@@ -1,35 +1,31 @@
 ---
 lang: zh
-title: 'Controllers'
+title: 'Controllers（控制器）'
 keywords: LoopBack 4.0, LoopBack 4
 sidebar: lb4_sidebar
 permalink: /doc/zh/lb4/Controllers.html
 ---
 
-## Overview
+## 总览
 
-A `Controller` is a class that implements operations defined by an application's
-API. It implements an application's business logic and acts as a bridge between
-the HTTP/REST API and domain/database models. Decorations are added to a
-`Controller` class and its members to map the API operations of the application
-to the corresponding controller's operations. A `Controller` operates only on
-processed input and abstractions of backend services / databases.
+`Controller`是一个用于实现应用API定义的操作的类。它实现一个应用的业务逻辑， 它实现了一个应用的业务逻辑，并作为“HTTP / REST API”和“域 / 数据库模型”之间的桥梁。 
 
-This page will only cover a `Controller`'s usage with REST APIs.
+添加修饰符到`Controller`类及其成员，可以映射应用的API操作到对应的Controller（控制器）操作。 
+`Controller`（控制器）仅对“已处理的输入”和“后端服务/数据库”的抽象进行操作。
 
-## Operations
+本页面仅涵盖用于REST API的`Controller`（控制器）。
 
-In the Operation example in [Routes](Routes.md), the `greet()` operation was
-defined as a plain JavaScript function. The example below shows this as a
-Controller method in TypeScript.
+## Operations（操作）
+
+在[Routes（路由）](Routes.md)示例的Operation（操作）中，`greet()`操作被定义为一个普通的JavaScript函数。The 
 
 ```ts
-// plain function Operation
+// 普通函数Operation
 function greet(name: string) {
   return `hello ${name}`;
 }
 
-// Controller method Operation
+// 控制器方法Operation
 class MyController {
   greet(name: string) {
     return `hello ${name}`;
@@ -37,10 +33,9 @@ class MyController {
 }
 ```
 
-## Routing to Controllers
+## 路由到Controller（控制器）
 
-This is a basic API Specification used in the following examples. It is an
-[Operation Object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#operationObject).
+下面的示例是一个基本的API规范。这是一个[Operation Object（操作对象）](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#operationObject).
 
 ```ts
 const spec = {
@@ -58,16 +53,15 @@ const spec = {
 };
 ```
 
-There are several ways to define `Routes` to Controller methods. The first
-example defines a route to the Controller without any magic.
+定义`Routes`（路由）到Controller（控制器）方法，有数种方式。
+第一个示例是普通地定义路由到控制器方法：
 
 ```ts
-// ... in your application constructor
+// ... 在你的application构造函数中
 this.route('get', '/greet', spec, MyController, 'greet');
 ```
 
-Decorators allow you to annotate your Controller methods with routing metadata,
-so LoopBack can call the `app.route()` function for you.
+修饰符允许你使用路由元数据描述你的控制器方法，然后LoopBack可以替你调用`app.route()`函数。
 
 ```ts
 import {get} from '@loopback/rest';
@@ -79,22 +73,18 @@ class MyController {
   }
 }
 
-// ... in your application constructor
+// ... 在你的application构造函数中
 this.controller(MyController);
 ```
 
-## Specifying Controller APIs
+## 指明Controller（控制器）的API
 
-For larger LoopBack applications, you can organize your routes into API
-Specifications using the OpenAPI specification. The `@api` decorator takes a
-spec with type `ControllerSpec` which comprises of a string `basePath` and a
-[Paths Object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#paths-object)
-Note that it is _not_ the full
-[OpenAPI](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#oasObject)
-specification.
+大型的LoopBack应用中，你可以使用OpenAPI规范来组织你的路由。
+`@api`修饰符会取得一个类型为`ControllerSpec`，包含`basePath`字符串和[Paths Object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#paths-object)的规范。
+注意，这_不是_一个完整的[OpenAPI](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#oasObject)规范。
 
 ```ts
-// ... in your application constructor
+// ... 在你的application构造函数中
 this.api({
   openapi: '3.0.0',
   info: {
@@ -124,8 +114,7 @@ this.api({
 this.controller(MyController);
 ```
 
-The `@api` decorator allows you to annotate your Controller with a
-specification, so LoopBack can call the `app.api()` function for you.
+`@api`修饰符允许你使用一个规范来描述你的Controller（控制器），然后LoopBack可以替你调用`app.api()` 函数。
 
 ```ts
 @api({
@@ -162,10 +151,10 @@ class MyController {
 app.controller(MyController);
 ```
 
-## Writing Controller methods
+## 编写Controller（控制器）方法
 
-Below is an example Controller that uses several built in helpers (decorators).
-These helpers give LoopBack hints about the Controller methods.
+下面是一个Controller（控制器）的示例，使用了数种内置的助手（修饰符）。
+这些助手给了LoopBack关于Controller（控制器）方法的提示。
 
 ```ts
 import {HelloRepository} from '../repositories';
@@ -178,48 +167,42 @@ export class HelloController {
     @repository(HelloRepository) protected repository: HelloRepository,
   ) {}
 
-  // returns a list of our objects
+  // 返回我们的对象的列表
   @get('/messages')
   async list(@param.query.number('limit') limit = 10): Promise<HelloMessage[]> {
-    if (limit > 100) limit = 100; // your logic
-    return this.repository.find({limit}); // a CRUD method from our repository
+    if (limit > 100) limit = 100; // 我们的逻辑
+    return this.repository.find({limit}); // 来自我们的存储库的CRUD方法
   }
 }
 ```
 
-- `HelloRepository` extends from `Repository`, which is LoopBack's database
-  abstraction. See [Repositories](./Repositories.md) for more.
-- `HelloMessage` is the arbitrary object that `list` returns a list of.
-- `@get('/messages')` automatically creates the
-  [Paths Item Object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#path-item-object)
-  for OpenAPI spec, which also handles request routing.
-- `@param.query.number` specifies in the spec being generated that the route
-  takes a parameter via query which will be a number.
+- `HelloRepository`扩展自`Repository`（存储库），这是LoopBack的一个数据库抽象。
+  查阅[Repositories（存储库）](./Repositories.md) 获得更多信息。
+- `HelloMessage` 返回一个随意的对象的`list`列表。
+- `@get('/messages')`为OpenAPI规范自动创建[Paths Item Object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#path-item-object)，同时也处理请求路由。
+- `@param.query.number`指明了此规范的路由接受一个参数，此参数通过Query（查询）传递，并且为一个数字。
 
-## Handling Errors in Controllers
+## 在Controller（控制器）中处理错误
 
-In order to specify errors for controller methods to throw, the class
-`HttpErrors` is used. `HttpErrors` is a class that has been re-exported from
-[http-errors](https://www.npmjs.com/package/http-errors), and can be found in
-the `@loopback/rest` package.
+为了Controller（控制器）方法抛出异常，需要用到`HttpErrors`类。`HttpErrors`导出自
+[http-errors](https://www.npmjs.com/package/http-errors)，包含在`@loopback/rest` 包中。
 
 Listed below are some of the most common error codes. The full list of supported
 codes is found
 [here](https://github.com/jshttp/http-errors#list-of-all-constructors).
 
-| Status Code | Error               |
-| ----------- | ------------------- |
-| 400         | BadRequest          |
-| 401         | Unauthorized        |
-| 403         | Forbidden           |
-| 404         | NotFound            |
-| 500         | InternalServerError |
-| 502         | BadGateway          |
-| 503         | ServiceUnavailable  |
-| 504         | GatewayTimeout      |
+| Status Code（状态码） | 错误                | 描述           |
+| --------------------- | ------------------- | -------------- |
+| 400                   | BadRequest          | 错误请求       |
+| 401                   | Unauthorized        | 未授权         |
+| 403                   | Forbidden           | 被禁止         |
+| 404                   | NotFound            | 未找到         |
+| 500                   | InternalServerError | 内部服务器错误 |
+| 502                   | BadGateway          | 错误网关       |
+| 503                   | ServiceUnavailable  | 服务不可用     |
+| 504                   | GatewayTimeout      | 网关超时       |
 
-The example below shows the previous controller revamped with `HttpErrors` along
-with a test to verify that the error is thrown properly.
+下列示例展示了上述示例带有`HttpErrors`的改版，并附加了一个测试，以验证错误能够被确实地抛出。
 
 {% include code-caption.html content="src/__tests__/integration/controllers/hello.controller.integration.ts" %}
 
