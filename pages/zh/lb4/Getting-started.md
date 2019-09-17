@@ -81,20 +81,19 @@ lb4 controller
   Controller hello was now created in src/controllers/
   ```
 
-- 复制并粘贴以下内容到文件：
-  `/src/controllers/hello.controller.ts`:
-
-  ```ts
+- 复制并粘贴以下内容到文件`/src/controllers/hello.controller.ts`：
+  
+```ts
   import {get} from '@loopback/rest';
-
-  export class HelloController {
+  
+export class HelloController {
     @get('/hello')
     hello(): string {
       return 'Hello world!';
     }
   }
   ```
-
+  
 - 用 `npm start`命令启动项目.
 
 - 在浏览器中，访问<http://127.0.0.1:3000/hello> ，可以看到文字`Hello world!`
