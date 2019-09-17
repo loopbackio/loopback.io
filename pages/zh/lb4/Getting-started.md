@@ -1,9 +1,9 @@
 ---
-lang: en
-title: 'Getting started'
+lang: zh
+title: '入门'
 keywords: LoopBack 4.0, LoopBack 4
 sidebar: lb4_sidebar
-permalink: /doc/en/lb4/Getting-started.html
+permalink: /doc/zh/lb4/Getting-started.html
 summary: Write and run a LoopBack 4 "Hello World" project in TypeScript.
 ---
 

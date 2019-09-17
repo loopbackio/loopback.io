@@ -1,11 +1,11 @@
 ---
 title: 'Using database transactions'
-lang: en
+lang: zh
 layout: page
 keywords: LoopBack 4.0, LoopBack 4, Transactions, Transaction
 tags:
 sidebar: lb4_sidebar
-permalink: /doc/en/lb4/Using-database-transactions.html
+permalink: /doc/zh/lb4/Using-database-transactions.html
 summary: Transactional API usage in LoopBack 4
 ---
 
@@ -130,9 +130,9 @@ For more information about database-specific isolation levels, see:
 
 To perform create, retrieve, update, and delete operations in the transaction,
 add the transaction object to the `Options` parameter of the standard 
-[`create()`](https://loopback.io/doc/en/lb4/apidocs.repository.defaultcrudrepository.create.html),
-[`update()`](https://loopback.io/doc/en/lb4/apidocs.repository.defaultcrudrepository.update.html),
-[`deleteAll()`](https://loopback.io/doc/en/lb4/apidocs.repository.defaultcrudrepository.deleteall.html)
+[`create()`](https://loopback.io/doc/zh/lb4/apidocs.repository.defaultcrudrepository.create.html),
+[`update()`](https://loopback.io/doc/zh/lb4/apidocs.repository.defaultcrudrepository.update.html),
+[`deleteAll()`](https://loopback.io/doc/zh/lb4/apidocs.repository.defaultcrudrepository.deleteall.html)
 (and so on) methods.
 
 For example, again assuming a `Note` model, `repo` transactional repository, and

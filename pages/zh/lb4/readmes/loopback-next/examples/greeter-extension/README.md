@@ -204,7 +204,7 @@ export class ChineseGreeter implements Greeter {
 ```
 
 Please note we use
-[`@bind`](https://loopback.io/doc/en/lb4/Binding.html#configure-binding-attributes-for-a-class)
+[`@bind`](https://loopback.io/doc/zh/lb4/Binding.html#configure-binding-attributes-for-a-class)
 to customize how the class can be bound. In this case, `asGreeter` is a binding
 template function, which is equivalent as configuring a binding with
 `{extensionFor: 'greeter'}` tag and in the `SINGLETON` scope.

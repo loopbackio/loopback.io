@@ -1,9 +1,9 @@
 ---
-lang: en
+lang: zh
 title: Tutorials
 keywords: LoopBack 4.0
 sidebar: lb4_sidebar
-permalink: /doc/en/lb4/Tutorials.html
+permalink: /doc/zh/lb4/Tutorials.html
 ---
 
 LoopBack 4 comes with the following tutorials:

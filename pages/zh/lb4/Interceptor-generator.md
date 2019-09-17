@@ -1,9 +1,9 @@
 ---
-lang: en
+lang: zh
 title: 'Interceptor generator'
 keywords: LoopBack 4.0, LoopBack 4
 sidebar: lb4_sidebar
-permalink: /doc/en/lb4/Interceptor-generator.html
+permalink: /doc/zh/lb4/Interceptor-generator.html
 ---
 
 {% include content/generator-create-app.html lang=page.lang %}
@@ -41,7 +41,7 @@ The tool will prompt you for:
 
 - **Group of the interceptor.** _(groupName)_ If the group had been supplied
   from the command line, the prompt is skipped. See
-  [Order of invocation for interceptors](https://loopback.io/doc/en/lb4/Interceptors.html#order-of-invocation-for-interceptors).
+  [Order of invocation for interceptors](https://loopback.io/doc/zh/lb4/Interceptors.html#order-of-invocation-for-interceptors).
 
 ### Output
 

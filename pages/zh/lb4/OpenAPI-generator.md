@@ -1,9 +1,9 @@
 ---
-lang: en
+lang: zh
 title: 'OpenAPI generator'
 keywords: LoopBack 4.0, LoopBack 4, OpenAPI, Swagger
 sidebar: lb4_sidebar
-permalink: /doc/en/lb4/OpenAPI-generator.html
+permalink: /doc/zh/lb4/OpenAPI-generator.html
 ---
 
 {% include content/generator-create-app.html lang=page.lang %}

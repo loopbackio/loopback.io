@@ -1,9 +1,9 @@
 ---
-lang: en
+lang: zh
 title: 'Add a Controller'
 keywords: LoopBack 4.0, LoopBack 4
 sidebar: lb4_sidebar
-permalink: /doc/en/lb4/todo-tutorial-controller.html
+permalink: /doc/zh/lb4/todo-tutorial-controller.html
 summary: LoopBack 4 Todo Application Tutorial - Add a Controller
 ---
 
@@ -22,7 +22,7 @@ In this respect, controllers are the regions _in which most of your business
 logic will live_!
 
 For more information about Controllers, see
-[Controllers](https://loopback.io/doc/en/lb4/Controllers.html).
+[Controllers](https://loopback.io/doc/zh/lb4/Controllers.html).
 
 ### Create your controller
 

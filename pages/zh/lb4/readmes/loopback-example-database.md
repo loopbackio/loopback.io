@@ -168,7 +168,7 @@ slc loopback:model Account
 
 With the `account` model configured, we can generate the corresponding
 MongoDB collection using the info from the `Account` metadata in [`common/models/account.json`](common/models/account.json)
-via [*auto-migration*](http://loopback.io/doc/en/lb2/Implementing-auto-migration.html).
+via [*auto-migration*](http://loopback.io/doc/zh/lb2/Implementing-auto-migration.html).
 
 Start by creating a dir to store general-purpose scripts:
 
@@ -243,7 +243,7 @@ You should see:
 
 ### 8. Add a script to perform instance instrospection (Discovery)
 
-> [*Discovery*](http://loopback.io/doc/en/lb2/Discovering-models-from-relational-databases.html)
+> [*Discovery*](http://loopback.io/doc/zh/lb2/Discovering-models-from-relational-databases.html)
 > is the process of reverse engineering a LoopBack model from an existing database schema.
 
 The LoopBack MongoDB connector does not support discovery. However, you can use
@@ -266,9 +266,9 @@ Created: { email: 'bob.doe@ibm.com',
   id: 56299d9d71c7f600719ca39f }
 ```
 
-> See the [official docs](http://loopback.io/doc/en/lb2/Creating-models-from-unstructured-data.html)
+> See the [official docs](http://loopback.io/doc/zh/lb2/Creating-models-from-unstructured-data.html)
 > for more info.
 
 ---
 
-[More LoopBack examples](https://loopback.io/doc/en/lb3/Tutorials-and-examples.html)
+[More LoopBack examples](https://loopback.io/doc/zh/lb3/Tutorials-and-examples.html)

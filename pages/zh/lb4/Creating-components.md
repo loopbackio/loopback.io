@@ -1,9 +1,9 @@
 ---
-lang: en
+lang: zh
 title: 'Creating components'
 keywords: LoopBack 4.0, LoopBack 4
 sidebar: lb4_sidebar
-permalink: /doc/en/lb4/Creating-components.html
+permalink: /doc/zh/lb4/Creating-components.html
 ---
 
 As explained in [Using Components](Using-components.md), a typical LoopBack

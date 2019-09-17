@@ -1,9 +1,9 @@
 ---
-lang: en
+lang: zh
 title: 'Security'
 keywords: LoopBack 4.0, LoopBack 4
 sidebar: lb4_sidebar
-permalink: /doc/en/lb4/Security.html
+permalink: /doc/zh/lb4/Security.html
 ---
 
 Security is a common layer shared by any LoopBack4 authentication and

@@ -1,12 +1,12 @@
 ---
 title: "Redis connector"
-lang: en
+lang: zh
 layout: page
 toc: false
 keywords: LoopBack
 tags: connectors
 sidebar: lb4_sidebar
-permalink: /doc/en/lb4/Redis-connector.html
+permalink: /doc/zh/lb4/Redis-connector.html
 summary: The Redis connector enables LoopBack applications to connect to Redis data sources.
 ---
 

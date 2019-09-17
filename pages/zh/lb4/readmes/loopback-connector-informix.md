@@ -5,8 +5,8 @@ It is optimized to deliver industry-leading performance while lowering costs.  T
 
 The LoopBack Informix connector supports:
 
-- All [create, retrieve, update, and delete operations](http://loopback.io/doc/en/lb2/Creating-updating-and-deleting-data.html).
-- [Queries](http://loopback.io/doc/en/lb2/Querying-data.html) with fields, limit, order, skip and where filters.
+- All [create, retrieve, update, and delete operations](http://loopback.io/doc/zh/lb2/Creating-updating-and-deleting-data.html).
+- [Queries](http://loopback.io/doc/zh/lb2/Querying-data.html) with fields, limit, order, skip and where filters.
 
 ## Installation
 
@@ -20,7 +20,7 @@ The `--save` option adds the dependency to the application's `package.json` file
 
 ## Configuration
 
-Use the [data source generator](http://loopback.io/doc/en/lb2/Data-source-generator.html) to add the Informix data source to your application.
+Use the [data source generator](http://loopback.io/doc/zh/lb2/Data-source-generator.html) to add the Informix data source to your application.
 The resulting entry in the application's `server/datasources.json` will look something like this:
 
 ```js

@@ -11,7 +11,7 @@ tests are provided.
 Before each step, you will be presented an image containing the artifacts that
 you will be creating in blue.
 
-![soap-calculator-overview](https://loopback.io/pages/en/lb4/imgs/loopback-example-soap-calculator_figure1.png)
+![soap-calculator-overview](https://loopback.io/pages/zh/lb4/imgs/loopback-example-soap-calculator_figure1.png)
 
 ## Setup
 
@@ -31,12 +31,12 @@ Follow the following steps to start building your application:
 
 ### Steps
 
-1. [SOAP web service overview](https://loopback.io/doc/en/lb4/soap-calculator-tutorial-web-service-overview.html)
-2. [Scaffold the application](https://loopback.io/doc/en/lb4/soap-calculator-tutorial-scaffolding.html)
-3. [Add a data source](https://loopback.io/doc/en/lb4/soap-calculator-tutorial-add-datasource.html)
-4. [Add a service proxy](https://loopback.io/doc/en/lb4/soap-calculator-tutorial-add-service.html)
-5. [Add a controller](https://loopback.io/doc/en/lb4/soap-calculator-tutorial-add-controller.html)
-6. [Run and test the application](https://loopback.io/doc/en/lb4/soap-calculator-tutorial-run-and-test.html)
+1. [SOAP web service overview](https://loopback.io/doc/zh/lb4/soap-calculator-tutorial-web-service-overview.html)
+2. [Scaffold the application](https://loopback.io/doc/zh/lb4/soap-calculator-tutorial-scaffolding.html)
+3. [Add a data source](https://loopback.io/doc/zh/lb4/soap-calculator-tutorial-add-datasource.html)
+4. [Add a service proxy](https://loopback.io/doc/zh/lb4/soap-calculator-tutorial-add-service.html)
+5. [Add a controller](https://loopback.io/doc/zh/lb4/soap-calculator-tutorial-add-controller.html)
+6. [Run and test the application](https://loopback.io/doc/zh/lb4/soap-calculator-tutorial-run-and-test.html)
 
 ## Try it out
 

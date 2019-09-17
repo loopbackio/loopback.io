@@ -25,9 +25,9 @@ server-side.
 - [Bootstrap](http://getbootstrap.com/)
 - [Bower](http://bower.io/)
 - [LoopBack](http://loopback.io/)
-- [LoopBack AngularJS SDK](http://loopback.io/doc/en/lb2/AngularJS-JavaScript-SDK.html)
-- [LoopBack models](http://loopback.io/doc/en/lb2/Defining-models.html)
-- [LoopBack middleware](http://loopback.io/doc/en/lb2/Defining-middleware.html)
+- [LoopBack AngularJS SDK](http://loopback.io/doc/zh/lb2/AngularJS-JavaScript-SDK.html)
+- [LoopBack models](http://loopback.io/doc/zh/lb2/Defining-models.html)
+- [LoopBack middleware](http://loopback.io/doc/zh/lb2/Defining-middleware.html)
 
 ## Procedure
 
@@ -163,4 +163,4 @@ to view the application.
 
 ---
 
-[More LoopBack examples](https://loopback.io/doc/en/lb3/Tutorials-and-examples.html)
+[More LoopBack examples](https://loopback.io/doc/zh/lb3/Tutorials-and-examples.html)

@@ -2,7 +2,7 @@
 
 The official MongoDB connector for the LoopBack framework.
 
-Please see the full documentation at [loopback.io](http://loopback.io/doc/en/lb3/MongoDB-connector.html).
+Please see the full documentation at [loopback.io](http://loopback.io/doc/zh/lb3/MongoDB-connector.html).
 
 ## Installation
 
@@ -18,7 +18,7 @@ If you create a MongoDB data source using the data source generator as described
 
 ## Creating a MongoDB data source
 
-Use the [Data source generator](http://loopback.io/doc/en/lb3/Data-source-generator.html) to add a MongoDB data source to your application.
+Use the [Data source generator](http://loopback.io/doc/zh/lb3/Data-source-generator.html) to add a MongoDB data source to your application.
 The generator will prompt for the database server hostname, port, and other settings
 required to connect to a MongoDB database.  It will also run the `npm install` command above for you.
 
@@ -99,7 +99,7 @@ For example, for production, use `datasources.production.json` as follows (for e
 }
 ```
 
-For more information on setting data source configurations for different environments, see [Environment-specific configuration](https://loopback.io/doc/en/lb3/Environment-specific-configuration.html#data-source-configuration).
+For more information on setting data source configurations for different environments, see [Environment-specific configuration](https://loopback.io/doc/zh/lb3/Environment-specific-configuration.html#data-source-configuration).
 
 ### Using the mongodb+srv protocol
 MongoDB supports a protocol called `mongodb+srv` for connecting to replica sets without having to give the hostname of every server in the replica set.
@@ -134,7 +134,7 @@ Post.find(
 
 ## Type mappings
 
-See [LoopBack types](http://loopback.io/doc/en/lb3/LoopBack-types.html) for details on LoopBack's data types.
+See [LoopBack types](http://loopback.io/doc/zh/lb3/LoopBack-types.html) for details on LoopBack's data types.
 
 ### LoopBack to MongoDB types
 
@@ -150,7 +150,7 @@ of the project or the home folder.
 
 **Note**: Tests and examples in this project configure the data source using the deprecated '.loopbackrc' file method,
 which is not suppored in general.
-For information on configuring the connector in a LoopBack application, please refer to [loopback.io](http://loopback.io/doc/en/lb2/MongoDB-connector.html).
+For information on configuring the connector in a LoopBack application, please refer to [loopback.io](http://loopback.io/doc/zh/lb2/MongoDB-connector.html).
 
 The .loopbackrc file is in JSON format, for example:
 

@@ -1,9 +1,9 @@
 ---
-lang: en
+lang: zh
 title: Error Handling
 keywords: LoopBack 4.0
 sidebar: lb4_sidebar
-permalink: /doc/en/lb4/Error-handling.html
+permalink: /doc/zh/lb4/Error-handling.html
 ---
 
 ## Known Error Codes
@@ -13,7 +13,7 @@ sets the error `code` property to a machine-readable string.
 
 | Error code                 | Description                                                                                                                                                                                               |
 | :------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| ENTITY_NOT_FOUND           | The entity (model) was not found. This error is returned for example by [`EntityCrudRepository.prototype.findById`](https://loopback.io/doc/en/lb4/apidocs.repository.entitycrudrepository.findbyid.html) |
+| ENTITY_NOT_FOUND           | The entity (model) was not found. This error is returned for example by [`EntityCrudRepository.prototype.findById`](https://loopback.io/doc/zh/lb4/apidocs.repository.entitycrudrepository.findbyid.html) |
 | VALIDATION_FAILED          | The data provided by the client is not a valid entity.                                                                                                                                                    |
 | INVALID_PARAMETER_VALUE    | The value provided for a parameter of a REST endpoint is not valid. For example, a string value was provided for a numeric parameter.                                                                     |
 | MISSING_REQUIRED_PARAMETER | No value was provided for a required parameter.                                                                                                                                                           |

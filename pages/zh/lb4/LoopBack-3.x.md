@@ -1,9 +1,9 @@
 ---
-lang: en
+lang: zh
 title: 'For current LoopBack users'
 keywords: LoopBack 4.0, LoopBack 4
 sidebar: lb4_sidebar
-permalink: /doc/en/lb4/LoopBack-3.x.html
+permalink: /doc/zh/lb4/LoopBack-3.x.html
 ---
 
 LoopBack 4 is the next generation of the LoopBack framework, with a completely

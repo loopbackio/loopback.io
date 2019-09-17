@@ -1,11 +1,11 @@
 ---
 title: "Swagger connector"
-lang: en
+lang: zh
 layout: page
 keywords: LoopBack
 tags: connectors
 sidebar: lb4_sidebar
-permalink: /doc/en/lb4/Swagger-connector.html
+permalink: /doc/zh/lb4/Swagger-connector.html
 summary: The Swagger connector enables LoopBack applications to interact with other RESTful APIs described using the OpenAPI (Swagger) specification.
 ---
 

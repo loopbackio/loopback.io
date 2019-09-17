@@ -1,9 +1,9 @@
 ---
-lang: en
+lang: zh
 title: 'Discovering models from relational databases'
 keywords: LoopBack 4.0, LoopBack-Next
 sidebar: lb4_sidebar
-permalink: /doc/en/lb4/Discovering-models.html
+permalink: /doc/zh/lb4/Discovering-models.html
 ---
 
 ## Synopsis

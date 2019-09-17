@@ -1,9 +1,9 @@
 ---
-lang: en
+lang: zh
 title: 'Extension life cycle'
 keywords: LoopBack 4.0, LoopBack 4
 sidebar: lb4_sidebar
-permalink: /doc/en/lb4/Extension-life-cycle.html
+permalink: /doc/zh/lb4/Extension-life-cycle.html
 ---
 
 ## Extension life cycle

@@ -85,7 +85,7 @@ hello();
 ```
 
 For additional information, please refer to the
-[Context page](http://loopback.io/doc/en/lb4/Context.html).
+[Context page](http://loopback.io/doc/zh/lb4/Context.html).
 
 ## Examples
 

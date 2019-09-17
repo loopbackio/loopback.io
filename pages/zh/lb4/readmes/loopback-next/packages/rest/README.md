@@ -45,7 +45,7 @@ app.handler(({request, response}, sequence) => {
 
 ## Configuration
 
-See https://loopback.io/doc/en/lb4/Server.html#configuration.
+See https://loopback.io/doc/zh/lb4/Server.html#configuration.
 
 ## Contributions
 

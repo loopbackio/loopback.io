@@ -7,9 +7,9 @@ An example repo showing how to write a complex log extension for LoopBack 4
 This repository shows you how to use
 [@loopback/cli](https://github.com/strongloop/loopback-next/tree/master/packages/cli)
 to write a complex logging extension that requires a
-[Component](http://loopback.io/doc/en/lb4/Using-components.html),
-[Decorator](http://loopback.io/doc/en/lb4/Decorators.html), and a
-[Mixin](http://loopback.io/doc/en/lb4/Mixin.html).
+[Component](http://loopback.io/doc/zh/lb4/Using-components.html),
+[Decorator](http://loopback.io/doc/zh/lb4/Decorators.html), and a
+[Mixin](http://loopback.io/doc/zh/lb4/Mixin.html).
 
 To use this extension you can add the `LogMixin` to your Application which will
 provide you a function to set the Application wide log level as well as

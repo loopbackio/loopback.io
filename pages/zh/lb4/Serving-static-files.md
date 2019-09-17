@@ -1,9 +1,9 @@
 ---
-lang: en
+lang: zh
 title: 'Serving static files in LoopBack 4'
 keywords: LoopBack
 sidebar: lb4_sidebar
-permalink: /doc/en/lb4/Serving-static-files.html
+permalink: /doc/zh/lb4/Serving-static-files.html
 ---
 
 One of the basic requirements of a web app is the ability to serve static files.

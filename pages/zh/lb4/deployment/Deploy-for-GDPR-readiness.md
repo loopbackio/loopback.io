@@ -3,9 +3,9 @@ title: 'LoopBack considerations for GDPR readiness'
 layout: page
 keywords: LoopBack, GDPR
 tags: gdpr
-lang: en
+lang: zh
 sidebar: lb4_sidebar
-permalink: /doc/en/lb4/Deploy-for-GDPR-readiness.html
+permalink: /doc/zh/lb4/Deploy-for-GDPR-readiness.html
 summary: LoopBack considerations for GDPR readiness.
 ---
 
@@ -90,7 +90,7 @@ theft of computer equipment or storage media.
 
 _Please note that LoopBack 4 is in developer preview and not ready for
 production. For production, use
-[LoopBack 3](https://loopback.io/doc/en/lb3/index.html)._
+[LoopBack 3](https://loopback.io/doc/zh/lb3/index.html)._
 
 LoopBack is an open source Node.js framework that allows you to create REST APIs
 and connect to the backend resources, such as database and Web services.

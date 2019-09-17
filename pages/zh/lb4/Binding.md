@@ -1,9 +1,9 @@
 ---
-lang: en
+lang: zh
 title: 'Binding'
 keywords: LoopBack 4.0, LoopBack 4
 sidebar: lb4_sidebar
-permalink: /doc/en/lb4/Binding.html
+permalink: /doc/zh/lb4/Binding.html
 ---
 
 ## What is Binding?
@@ -140,7 +140,7 @@ scopes:
 - BindingScope.SINGLETON
 
 For a complete list of descriptions, please see
-[BindingScope](https://loopback.io/doc/en/lb4/apidocs.context.bindingscope.html).
+[BindingScope](https://loopback.io/doc/zh/lb4/apidocs.context.bindingscope.html).
 
 ```ts
 binding.inScope(BindingScope.SINGLETON);

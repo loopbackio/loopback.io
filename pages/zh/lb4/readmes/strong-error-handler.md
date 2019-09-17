@@ -18,7 +18,7 @@ Current|Long Term Support|Maintenance
 :-:|:-:|:-:
 3.x|2.x|1.x
 
-Learn more about our LTS plan in [docs](http://loopback.io/doc/en/contrib/Long-term-support.html).
+Learn more about our LTS plan in [docs](http://loopback.io/doc/zh/contrib/Long-term-support.html).
 
 ## Installation
 
@@ -235,7 +235,7 @@ To migrate a LoopBack 2.x application to use `strong-error-handler`:
 </pre>
 
 For more information, see 
-[Migrating apps to LoopBack 3.0](http://loopback.io/doc/en/lb3/Migrating-to-3.0.html#update-use-of-rest-error-handler).
+[Migrating apps to LoopBack 3.0](http://loopback.io/doc/zh/lb3/Migrating-to-3.0.html#update-use-of-rest-error-handler).
 
 ## Example
 

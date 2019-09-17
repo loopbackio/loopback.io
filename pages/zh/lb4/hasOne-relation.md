@@ -1,9 +1,9 @@
 ---
-lang: en
+lang: zh
 title: 'hasOne Relation'
 keywords: LoopBack 4.0, LoopBack 4
 sidebar: lb4_sidebar
-permalink: /doc/en/lb4/hasOne-relation.html
+permalink: /doc/zh/lb4/hasOne-relation.html
 ---
 
 ## Overview
@@ -240,9 +240,9 @@ factory `Account` for instances of `supplierRepository`:
 
 - `create` for creating an `Account` model instance belonging to `Supplier`
   model instance
-  ([API Docs](https://loopback.io/doc/en/lb4/apidocs.repository.hasonerepository.create.html))
+  ([API Docs](https://loopback.io/doc/zh/lb4/apidocs.repository.hasonerepository.create.html))
 - `get` finding the target model instance belonging to `Supplier` model instance
-  ([API Docs](https://loopback.io/doc/en/lb4/apidocs.repository.hasonerepository.get.html))
+  ([API Docs](https://loopback.io/doc/zh/lb4/apidocs.repository.hasonerepository.get.html))
 
 ## Using hasOne constrained repository in a controller
 

@@ -11,7 +11,7 @@ $ npm install @loopback/service-proxy
 
 ## Basic use
 
-See https://loopback.io/doc/en/lb4/Calling-other-APIs-and-web-services.html
+See https://loopback.io/doc/zh/lb4/Calling-other-APIs-and-web-services.html
 
 ## Contributions
 

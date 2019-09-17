@@ -1,9 +1,9 @@
 ---
-lang: en
+lang: zh
 title: 'Routing requests'
 keywords: LoopBack 4.0, LoopBack 4
 sidebar: lb4_sidebar
-permalink: /doc/en/lb4/Routing-requests.html
+permalink: /doc/zh/lb4/Routing-requests.html
 ---
 
 ## Routing Requests

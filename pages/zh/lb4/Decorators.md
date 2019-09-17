@@ -1,9 +1,9 @@
 ---
-lang: en
+lang: zh
 title: 'Decorators'
 keywords: LoopBack 4.0, LoopBack-Next
 sidebar: lb4_sidebar
-permalink: /doc/en/lb4/Decorators.html
+permalink: /doc/zh/lb4/Decorators.html
 ---
 
 A decorator allows you to annotate or modify your class declarations and members

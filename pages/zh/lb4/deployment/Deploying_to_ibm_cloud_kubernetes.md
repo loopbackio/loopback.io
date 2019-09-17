@@ -1,10 +1,10 @@
 ---
-lang: en
+lang: zh
 title: 'Deploying to Kubernetes on IBM Cloud'
 keywords:
   LoopBack 4.0, LoopBack 4, Kubernetes, IBM Cloud, Docker, Container Registry
 sidebar: lb4_sidebar
-permalink: /doc/en/lb4/deploying_to_ibm_cloud_kubernetes.html
+permalink: /doc/zh/lb4/deploying_to_ibm_cloud_kubernetes.html
 ---
 
 ## Overview

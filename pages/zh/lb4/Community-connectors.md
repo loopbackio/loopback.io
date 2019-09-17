@@ -1,11 +1,11 @@
 ---
 title: "Community connectors"
-lang: en
+lang: zh
 layout: page
 keywords: LoopBack
 tags:
 sidebar: lb4_sidebar
-permalink: /doc/en/lb4/Community-connectors.html
+permalink: /doc/zh/lb4/Community-connectors.html
 summary:
 ---
 

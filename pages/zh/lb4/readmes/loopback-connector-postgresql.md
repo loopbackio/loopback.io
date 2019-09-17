@@ -3,7 +3,7 @@
 [PostgreSQL](https://www.postgresql.org/), is a popular open-source object-relational database.
 The `loopback-connector-postgresql` module is the PostgreSQL connector for the LoopBack framework.
 
-<div class="gh-only">For more information, see the <a href="http://loopback.io/doc/en/lb3/PostgreSQL-connector.html">documentation</a>.
+<div class="gh-only">For more information, see the <a href="http://loopback.io/doc/zh/lb3/PostgreSQL-connector.html">documentation</a>.
 <br/><br/>
 NOTE: The PostgreSQL connector requires PostgreSQL 8.x or 9.x.
 </div>
@@ -22,7 +22,7 @@ If you create a PostgreSQL data source using the data source generator as descri
 
 ## Creating a data source
 
-Use the [Data source generator](http://loopback.io/doc/en/lb3/Data-source-generator.html) to add a PostgreSQL data source to your application.  
+Use the [Data source generator](http://loopback.io/doc/zh/lb3/Data-source-generator.html) to add a PostgreSQL data source to your application.  
 The generator will prompt for the database server hostname, port, and other settings
 required to connect to a PostgreSQL database.  It will also run the `npm install` command above for you.
 
@@ -300,7 +300,7 @@ For example:
 
 ## Type mapping
 
-See [LoopBack types](http://loopback.io/doc/en/lb3/LoopBack-types.html) for details on LoopBack's data types.
+See [LoopBack types](http://loopback.io/doc/zh/lb3/LoopBack-types.html) for details on LoopBack's data types.
 
 ### LoopBack to PostgreSQL types
 
@@ -411,14 +411,14 @@ Customer.find({
 ### Model discovery
 
 The PostgreSQL connector supports _model discovery_ that enables you to create LoopBack models
-based on an existing database schema using the unified [database discovery API](http://apidocs.strongloop.com/loopback-datasource-juggler/#datasource-prototype-discoverandbuildmodels).  For more information on discovery, see [Discovering models from relational databases](https://loopback.io/doc/en/lb3/Discovering-models-from-relational-databases.html).
+based on an existing database schema using the unified [database discovery API](http://apidocs.strongloop.com/loopback-datasource-juggler/#datasource-prototype-discoverandbuildmodels).  For more information on discovery, see [Discovering models from relational databases](https://loopback.io/doc/zh/lb3/Discovering-models-from-relational-databases.html).
 
 ### Auto-migration
 
 The PostgreSQL connector also supports _auto-migration_ that enables you to create a database schema
 from LoopBack models using the [LoopBack automigrate method](http://apidocs.strongloop.com/loopback-datasource-juggler/#datasource-prototype-automigrate).
 
-For more information on auto-migration, see [Creating a database schema from models](https://loopback.io/doc/en/lb3/Creating-a-database-schema-from-models.html) for more information.
+For more information on auto-migration, see [Creating a database schema from models](https://loopback.io/doc/zh/lb3/Creating-a-database-schema-from-models.html) for more information.
 
 LoopBack PostgreSQL connector creates the following schema objects for a given
 model: a table, for example, PRODUCT under the 'public' schema within the database.

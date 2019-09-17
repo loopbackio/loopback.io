@@ -306,7 +306,7 @@ Let's say we have an instance in the database:
 
 # Force Id
 
-In loopback `forceId` means user can specify the value of the primary key when creating a model instance, instead of using an auto-generated one. Learn more about LoopBack's [forceId](https://loopback.io/doc/en/lb3/Model-definition-JSON-file.html).
+In loopback `forceId` means user can specify the value of the primary key when creating a model instance, instead of using an auto-generated one. Learn more about LoopBack's [forceId](https://loopback.io/doc/zh/lb3/Model-definition-JSON-file.html).
 
 We recommend user to be careful when creating customized model id instead of using the auto-generated one because data belonging to different models can interfere with each other.
 
@@ -495,7 +495,7 @@ The `--save` option adds the dependency to the application’s `package.json` fi
 
 ## Generate Datasource
 
-Use the [Data source generator](http://loopback.io/doc/en/lb3/Data-source-generator.html) to add the Cloudant data source to your
+Use the [Data source generator](http://loopback.io/doc/zh/lb3/Data-source-generator.html) to add the Cloudant data source to your
 application. The entry in the applications `/server/datasources.json` will
 look something like this:
 
@@ -624,7 +624,7 @@ db.once('connected', function() {
 
 # CRUD
 
-User can find most CRUD operation apis documented in https://loopback.io/doc/en/lb3/Built-in-models-REST-API.html
+User can find most CRUD operation apis documented in https://loopback.io/doc/zh/lb3/Built-in-models-REST-API.html
 
 We are still in progress of refactoring some methods, more details to be updated.
 
@@ -694,7 +694,7 @@ Not implemented yet, track it in story https://github.com/strongloop/loopback-co
 # Query
 
 -  Uses Cloudant Query (Lucene) to support ad-hoc searching.
--  [LoopBack query](http://loopback.io/doc/en/lb3/Querying-data.html) support for: fields, limit, order, skip and where filters.
+-  [LoopBack query](http://loopback.io/doc/zh/lb3/Querying-data.html) support for: fields, limit, order, skip and where filters.
 - Please check [Advanced Queries](https://github.com/strongloop/loopback-connector-cloudant/blob/master/doc/advanced-queries.md) for details about regex filter, nested filter and order.
 
 # View

@@ -57,7 +57,7 @@ then the `myControllerSpec` will be:
 ```
 
 For details of how to apply controller decorators, please check
-<http://loopback.io/doc/en/lb4/Decorators.html#route-decorators>
+<http://loopback.io/doc/zh/lb4/Decorators.html#route-decorators>
 
 ## Related resources
 

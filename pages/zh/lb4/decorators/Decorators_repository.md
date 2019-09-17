@@ -1,9 +1,9 @@
 ---
-lang: en
+lang: zh
 title: 'Repository Decorators'
 keywords: LoopBack 4.0, LoopBack-Next
 sidebar: lb4_sidebar
-permalink: /doc/en/lb4/Decorators_repository.html
+permalink: /doc/zh/lb4/Decorators_repository.html
 ---
 
 ## Repository Decorators
@@ -39,7 +39,7 @@ Syntax: `@model(definition?: ModelDefinitionSyntax)`
 
 Model decorator is a class decorator. In LoopBack 4, we inherit the model
 definition format from LoopBack 3, which is described in the
-[Model definition JSON file](https://loopback.io/doc/en/lb3/Model-definition-JSON-file).
+[Model definition JSON file](https://loopback.io/doc/zh/lb3/Model-definition-JSON-file).
 For usage examples, see [Define Models](../Repositories.md#define-models).
 
 _Please note we will elaborate more about model and model definition in the
@@ -69,7 +69,7 @@ Syntax: `@property(definition?: PropertyDefinition)`
 
 The property decorator defines metadata for a property on a Model definition.
 The format of property definitions can be found in
-[Property definitions](https://loopback.io/doc/en/lb2/Model-definition-JSON-file.html#properties)
+[Property definitions](https://loopback.io/doc/zh/lb2/Model-definition-JSON-file.html#properties)
 
 For usage examples, see [Define Models](../Repositories.md#define-models).
 
@@ -77,7 +77,7 @@ For usage examples, see [Define Models](../Repositories.md#define-models).
 
 Syntax:
 
-[`@repository(modelOrRepo: string | Class<Repository<Model>> | typeof Entity, dataSource?: string | juggler.DataSource)`](https://loopback.io/doc/en/lb4/apidocs.repository.repository.html)
+[`@repository(modelOrRepo: string | Class<Repository<Model>> | typeof Entity, dataSource?: string | juggler.DataSource)`](https://loopback.io/doc/zh/lb4/apidocs.repository.repository.html)
 
 This decorator either injects an existing repository or creates a repository
 from a model and a datasource.

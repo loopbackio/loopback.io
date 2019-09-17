@@ -1,9 +1,9 @@
 ---
-lang: en
+lang: zh
 title: 'Add a Datasource'
 keywords: LoopBack 4.0, LoopBack 4
 sidebar: lb4_sidebar
-permalink: /doc/en/lb4/todo-tutorial-datasource.html
+permalink: /doc/zh/lb4/todo-tutorial-datasource.html
 summary: LoopBack 4 Todo Application Tutorial - Add a Datasource
 ---
 
@@ -21,7 +21,7 @@ application. Typically, in LoopBack 4, datasources are used in conjunction with
 [Repositories](Repositories.md) to provide access to data.
 
 For more information about datasources in LoopBack, see
-[DataSources](https://loopback.io/doc/en/lb4/DataSources.html).
+[DataSources](https://loopback.io/doc/zh/lb4/DataSources.html).
 
 Since our Todo API will need to persist instances of Todo items, we'll need to
 create a datasource definition to make this possible.
@@ -69,7 +69,7 @@ Create a `data` folder in the applications root and add a new file called
 
 {% include note.html content="If you are using a relational database as the
 datasource, don't forget to create the corresponding table or follow the
-[Database migration instruction](https://loopback.io/doc/en/lb4/Database-migrations.html) to get it created programmatically.
+[Database migration instruction](https://loopback.io/doc/zh/lb4/Database-migrations.html) to get it created programmatically.
 " %}
 
 Once you're ready, we'll move onto adding a

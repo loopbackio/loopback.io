@@ -1,9 +1,9 @@
 ---
-lang: en
+lang: zh
 title: 'Authentication Decorator'
 keywords: LoopBack 4.0, LoopBack-Next
 sidebar: lb4_sidebar
-permalink: /doc/en/lb4/Decorators_authenticate.html
+permalink: /doc/zh/lb4/Decorators_authenticate.html
 ---
 
 ## Authentication Decorator

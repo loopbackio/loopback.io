@@ -1,9 +1,9 @@
 ---
-lang: en
+lang: zh
 title: 'Booting an Application'
 keywords: LoopBack 4.0, LoopBack 4
 sidebar: lb4_sidebar
-permalink: /doc/en/lb4/Booting-an-Application.html
+permalink: /doc/zh/lb4/Booting-an-Application.html
 ---
 
 ## What does Booting an Application mean?

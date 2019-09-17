@@ -7,7 +7,7 @@ where you define a remote method to call each SOAP web service operation.
 This is a simple example of a LoopBack app "proxying" or intermediating a web service.
 
 For more information, see the
-<a href="http://loopback.io/doc/en/lb3/SOAP-connector.html">SOAP connector</a> documentation.
+<a href="http://loopback.io/doc/zh/lb3/SOAP-connector.html">SOAP connector</a> documentation.
 
 ## Installation
 
@@ -59,7 +59,7 @@ The app includes two other files `periodictable-ws.js` and `stock-ws.js` that il
 
 ## Recreate the app
 
-**Prerequisites**: If you haven't already done so, follow the [Installation instructions](http://loopback.io/doc/en/lb3/Installation.html) for the LoopBack CLI.  In a nutshell:
+**Prerequisites**: If you haven't already done so, follow the [Installation instructions](http://loopback.io/doc/zh/lb3/Installation.html) for the LoopBack CLI.  In a nutshell:
 ```
 $ npm install -g loopback-cli
 ```
@@ -99,7 +99,7 @@ Go into the app root directory:
 $ cd my-soap-demo
 ```
 
-Use the [data source generator](http://loopback.io/doc/en/lb3/Data-source-generator.html) to add a SOAP data source to your application.  Enter this command:
+Use the [data source generator](http://loopback.io/doc/zh/lb3/Data-source-generator.html) to add a SOAP data source to your application.  Enter this command:
 
 ```shell
 $ lb datasource
@@ -136,7 +136,7 @@ The data source generator then creates an entry for the data source in the `serv
 
 ### Create a periodicTable model
 
-Use the [model generator](http://loopback.io/doc/en/lb3/Model-generator.html) to add a model to represent the periodic Table web service.  Enter this command:
+Use the [model generator](http://loopback.io/doc/zh/lb3/Model-generator.html) to add a model to represent the periodic Table web service.  Enter this command:
 
 ```shell
 $ lb model
@@ -158,7 +158,7 @@ The tool will create two files in the `server` directory: `periodicTable.json` a
 
 Edit `server/models/periodic-table.js` and add the code shown below to the stubbed-out function.
 
-This code defines two functions, `Periodictable.getAtomicnumber` and `Periodictable.getAtomicweight` and adds them as remote methods to the `Periodictable` model, as described in [Remote methods](https://loopback.io/doc/en/lb3/Remote-methods.html).
+This code defines two functions, `Periodictable.getAtomicnumber` and `Periodictable.getAtomicweight` and adds them as remote methods to the `Periodictable` model, as described in [Remote methods](https://loopback.io/doc/zh/lb3/Remote-methods.html).
 
 ```javascript
 'use strict';

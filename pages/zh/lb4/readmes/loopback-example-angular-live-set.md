@@ -28,7 +28,7 @@ Color.find().$promise.then(function(results) {
 
 The drawing example creates a `LiveSet` in a similar way. The rest of the controller is fairly simple and similar to the snippet above.
 
-The draw method uses a service provided by the [loopback-angular-sdk](http://loopback.io/doc/en/lb3/AngularJS-JavaScript-SDK.html) to create additional points in the drawing. This data is streamed to other browser clients.
+The draw method uses a service provided by the [loopback-angular-sdk](http://loopback.io/doc/zh/lb3/AngularJS-JavaScript-SDK.html) to create additional points in the drawing. This data is streamed to other browser clients.
 
 ```js
 $scope.draw = function(e) {
@@ -220,4 +220,4 @@ Open two separate browser windows and navigate to `http://localhost:3000` in bot
 
 ---
 
-[More LoopBack examples](https://loopback.io/doc/en/lb3/Tutorials-and-examples.html)
+[More LoopBack examples](https://loopback.io/doc/zh/lb3/Tutorials-and-examples.html)

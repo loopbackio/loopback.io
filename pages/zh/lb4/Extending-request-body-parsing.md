@@ -1,9 +1,9 @@
 ---
-lang: en
+lang: zh
 title: 'Extending request body parsing'
 keywords: LoopBack 4.0, LoopBack 4
 sidebar: lb4_sidebar
-permalink: /doc/en/lb4/Extending-request-body-parsing.html
+permalink: /doc/zh/lb4/Extending-request-body-parsing.html
 ---
 
 ## Parsing requests

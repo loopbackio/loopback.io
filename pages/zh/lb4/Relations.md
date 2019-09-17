@@ -1,9 +1,9 @@
 ---
-lang: en
+lang: zh
 title: 'Relations'
 keywords: LoopBack 4.0, LoopBack 4
 sidebar: lb4_sidebar
-permalink: /doc/en/lb4/Relations.html
+permalink: /doc/zh/lb4/Relations.html
 ---
 
 ## Overview

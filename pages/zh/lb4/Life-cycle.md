@@ -1,9 +1,9 @@
 ---
-lang: en
+lang: zh
 title: 'Life cycle events and observers'
 keywords: LoopBack 4.0, LoopBack 4
 sidebar: lb4_sidebar
-permalink: /doc/en/lb4/Life-cycle.html
+permalink: /doc/zh/lb4/Life-cycle.html
 ---
 
 ## Overview

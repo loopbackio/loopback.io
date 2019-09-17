@@ -1,9 +1,9 @@
 ---
-lang: en
+lang: zh
 title: 'Contributing code in LoopBack 4'
 keywords: LoopBack 4.0, contributing, community
 sidebar: lb4_sidebar
-permalink: /doc/en/lb4/code-contrib-lb4.html
+permalink: /doc/zh/lb4/code-contrib-lb4.html
 toc: false
 ---
 
@@ -102,7 +102,7 @@ It does all you need:
   [API Documentation](#api-documentation) below).
 
 - Follow our style guide as documented on loopback.io:
-  [Code style guide](http://loopback.io/doc/en/contrib/style-guide.html).
+  [Code style guide](http://loopback.io/doc/zh/contrib/style-guide.html).
 
 ### Linting and formatting
 
@@ -219,7 +219,7 @@ We use
 [@loopback/tsdocs](https://github.com/strongloop/loopback-next/tree/master/packages/tsdocs)
 to generate API documentation for all our packages. This documentation is
 generated when publishing new releases to npmjs.org and it's picked up by
-https://loopback.io/doc/en/lb4/apidocs.index.html.
+https://loopback.io/doc/zh/lb4/apidocs.index.html.
 
 You can preview API docs locally by running `npm run tsdocs` and open
 [apidocs/index.md](apidocs/index.md).
@@ -230,7 +230,7 @@ _Note: we have recently changed our commit message conventions. Most of other
 LoopBack repositories (e.g.
 [strongloop/loopback.io](https://github.com/strongloop/loopback.io)) use the
 older convention as described on
-[loopback.io](https://loopback.io/doc/en/contrib/git-commit-messages.html)._
+[loopback.io](https://loopback.io/doc/zh/contrib/git-commit-messages.html)._
 
 A good commit message should describe what changed and why.
 
@@ -342,7 +342,7 @@ to limit the frequency of major releases to about once or twice a year.
 - Every additional major version we have to support adds extra maintenance
   overhead.
 - In our
-  [Long Term Support policy](https://loopback.io/doc/en/contrib/Long-term-support.html),
+  [Long Term Support policy](https://loopback.io/doc/zh/contrib/Long-term-support.html),
   we are committing to support every major module version for at least 12 months
   after it entered LTS mode and also support it for the entire LTS lifetime of
   the connected Node.js major version. If we release major versions too often,
@@ -398,7 +398,7 @@ Few examples of changes that are usually easy to make:
 
 Make sure the package's README has an up-to-date section about the supported
 versions. Read our
-[Long Term Support policy](https://loopback.io/doc/en/contrib/Long-term-support.html)
+[Long Term Support policy](https://loopback.io/doc/zh/contrib/Long-term-support.html)
 to understand the rules governing transition between different support levels.
 
 - There should be at most one version in Active LTS mode. This version moves to

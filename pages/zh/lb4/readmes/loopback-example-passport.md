@@ -97,7 +97,7 @@ The current template contains:
 "profileFields": ["gender", "link", "locale", "name", "timezone", "verified", "email", "updated_time"],
 
 ```
-We recommend modifying the fields to suit your needs. For more information regarding the providers template, see http://loopback.io/doc/en/lb2/Configuring-providers.json.html.
+We recommend modifying the fields to suit your needs. For more information regarding the providers template, see http://loopback.io/doc/zh/lb2/Configuring-providers.json.html.
 
 ### 5. Data file
 
@@ -178,4 +178,4 @@ $ node .
 
 ---
 
-[More LoopBack examples](https://loopback.io/doc/en/lb3/Tutorials-and-examples.html)
+[More LoopBack examples](https://loopback.io/doc/zh/lb3/Tutorials-and-examples.html)

@@ -1,9 +1,9 @@
 ---
-lang: en
+lang: zh
 title: 'Controller generator'
 keywords: LoopBack 4.0, LoopBack 4
 sidebar: lb4_sidebar
-permalink: /doc/en/lb4/Controller-generator.html
+permalink: /doc/zh/lb4/Controller-generator.html
 ---
 
 {% include content/generator-create-app.html lang=page.lang %}

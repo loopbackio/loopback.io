@@ -1,9 +1,9 @@
 ---
-lang: en
+lang: zh
 title: 'Migrating from LoopBack 3'
 keywords: LoopBack 4.0, LoopBack 4, LoopBack 3
 sidebar: lb4_sidebar
-permalink: /doc/en/lb4/Migrating-from-LoopBack-3.html
+permalink: /doc/zh/lb4/Migrating-from-LoopBack-3.html
 ---
 
 For current LoopBack 3 users who want to migrate to LoopBack 4, LoopBack 4
@@ -40,7 +40,7 @@ spec.
 
 ### Options
 
-[`Lb3AppBooterComponent`](https://loopback.io/doc/en/lb4/apidocs.booter-lb3app.lb3appbootercomponent.html)
+[`Lb3AppBooterComponent`](https://loopback.io/doc/zh/lb4/apidocs.booter-lb3app.lb3appbootercomponent.html)
 comes with the option to either mount the full LoopBack 3 application or only
 the rest routes. Default `mode` is the full application (`fullApp`).
 

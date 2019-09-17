@@ -45,4 +45,4 @@ and enter it into AndroidManifest.xml.
 
 ---
 
-[More LoopBack examples](https://loopback.io/doc/en/lb3/Tutorials-and-examples.html)
+[More LoopBack examples](https://loopback.io/doc/zh/lb3/Tutorials-and-examples.html)

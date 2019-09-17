@@ -1,9 +1,9 @@
 ---
-lang: en
+lang: zh
 title: 'App scaffolding'
 keywords: LoopBack 4.0, LoopBack 4
 sidebar: lb4_sidebar
-permalink: /doc/en/lb4/soap-calculator-tutorial-scaffolding.html
+permalink: /doc/zh/lb4/soap-calculator-tutorial-scaffolding.html
 ---
 
 ### Create your app scaffolding

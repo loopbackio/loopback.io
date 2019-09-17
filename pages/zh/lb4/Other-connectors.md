@@ -2,12 +2,12 @@
 title: "Other connectors"
 redirect_from:
   - /doc/en/lb2/Non-database-connectors.html
-lang: en
+lang: zh
 layout: page
 keywords: LoopBack
 tags: [data_sources]
 sidebar: lb4_sidebar
-permalink: /doc/en/lb4/Other-connectors.html
+permalink: /doc/zh/lb4/Other-connectors.html
 summary: LoopBack supports a number of connectors to backend systems beyond databases.
 ---
 

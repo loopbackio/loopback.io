@@ -1,9 +1,9 @@
 ---
-lang: en
+lang: zh
 title: 'Key concepts'
 keywords: LoopBack 4.0, LoopBack 4
 sidebar: lb4_sidebar
-permalink: /doc/en/lb4/Concepts.html
+permalink: /doc/zh/lb4/Concepts.html
 ---
 
 LoopBack 4 defines some key building blocks to represent different

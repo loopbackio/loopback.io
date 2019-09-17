@@ -1,10 +1,10 @@
 ---
-lang: en
+lang: zh
 title: 'Glossary'
 keywords: LoopBack 4.0, LoopBack 4
 toc_level: 1
 sidebar: lb4_sidebar
-permalink: /doc/en/lb4/Glossary.html
+permalink: /doc/zh/lb4/Glossary.html
 ---
 
 **Action**: JavaScript functions that only accept or return Elements. Since the

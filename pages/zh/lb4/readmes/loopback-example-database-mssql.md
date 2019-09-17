@@ -45,7 +45,7 @@ git checkout mysql
 Before starting this tutorial, make sure you have the following installed:
 
 - Node.js
-- LoopBack CLI tools; see [lb](http://loopback.io/doc/en/lb3/Installation.html)
+- LoopBack CLI tools; see [lb](http://loopback.io/doc/zh/lb3/Installation.html)
 
 
 
@@ -264,4 +264,4 @@ Found: [ { id: 1,
 
 ---
 
-[More LoopBack examples](https://loopback.io/doc/en/lb3/Tutorials-and-examples.html)
+[More LoopBack examples](https://loopback.io/doc/zh/lb3/Tutorials-and-examples.html)

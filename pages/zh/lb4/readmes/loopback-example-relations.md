@@ -15,7 +15,7 @@ query and filter sample data via REST.
 
 Before starting this tutorial, you must install:
 - Node.js
-- LoopBack CLI tools; see [lb](http://loopback.io/doc/en/lb3/Installation.html)
+- LoopBack CLI tools; see [lb](http://loopback.io/doc/zh/lb3/Installation.html)
 
 ### Tutorials
 
@@ -372,4 +372,4 @@ You should see various links. Each endpoint is defined as follows:
 
 ---
 
-[More LoopBack examples](https://loopback.io/doc/en/lb3/Tutorials-and-examples.html)
+[More LoopBack examples](https://loopback.io/doc/zh/lb3/Tutorials-and-examples.html)

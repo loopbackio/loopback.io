@@ -1,9 +1,9 @@
 ---
-lang: en
+lang: zh
 title: 'Extension point and extensions'
 keywords: LoopBack 4.0, LoopBack 4
 sidebar: lb4_sidebar
-permalink: /doc/en/lb4/Extension-point-and-extensions.html
+permalink: /doc/zh/lb4/Extension-point-and-extensions.html
 ---
 
 ## Extension point/extension pattern

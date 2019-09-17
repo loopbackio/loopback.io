@@ -1,9 +1,9 @@
 ---
-lang: en
+lang: zh
 title: 'Deploying to IBM Cloud'
 keywords: LoopBack
 sidebar: lb4_sidebar
-permalink: /doc/en/lb4/Deploying-to-IBM-Cloud.html
+permalink: /doc/zh/lb4/Deploying-to-IBM-Cloud.html
 ---
 
 This is a basic guide for deploying a LoopBack 4 (LB4) app to

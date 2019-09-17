@@ -3,7 +3,7 @@
 [Oracle](https://www.oracle.com/database/index.html) is an object-relational database management system produced by Oracle Corporation. The `loopback-connector-oracle` module is the Oracle connector for the LoopBack framework based on the [node-oracledb](https://github.com/oracle/node-oracledb) module.
 
 <div class="gh-only">
-For more information, see the <a href="http://loopback.io/doc/en/lb3/Oracle-connector.html)">LoopBack documentation</a>.
+For more information, see the <a href="http://loopback.io/doc/zh/lb3/Oracle-connector.html)">LoopBack documentation</a>.
 </div>
 
 ## Prerequisites
@@ -43,7 +43,7 @@ sudo yum install libaio
 
 ## Creating an Oracle data source
 
-Use the [Data source generator](http://loopback.io/doc/en/lb3/Data-source-generator.html) to add a Oracle data source to your application.
+Use the [Data source generator](http://loopback.io/doc/zh/lb3/Data-source-generator.html) to add a Oracle data source to your application.
 The generator will prompt for the database server hostname, port, and other settings
 required to connect to a Oracle database.  It will also run the `npm install` command above for you.
 
@@ -351,7 +351,7 @@ An Oracle model definition consists of the following properties:
 
 ## Type mapping
 
-See [LoopBack types](http://loopback.io/doc/en/lb3/LoopBack-types.html) for details on LoopBack's data types.
+See [LoopBack types](http://loopback.io/doc/zh/lb3/LoopBack-types.html) for details on LoopBack's data types.
 
 ### JSON to Oracle Types
 
@@ -426,7 +426,7 @@ See [LoopBack types](http://loopback.io/doc/en/lb3/LoopBack-types.html) for de
 ### Model discovery
 
 The Oracle connector supports _model discovery_ that enables you to create LoopBack models
-based on an existing database schema using the unified [database discovery API](http://apidocs.strongloop.com/loopback-datasource-juggler/#datasource-prototype-discoverandbuildmodels).  For more information on discovery, see [Discovering models from relational databases](https://loopback.io/doc/en/lb3/Discovering-models-from-relational-databases.html).
+based on an existing database schema using the unified [database discovery API](http://apidocs.strongloop.com/loopback-datasource-juggler/#datasource-prototype-discoverandbuildmodels).  For more information on discovery, see [Discovering models from relational databases](https://loopback.io/doc/zh/lb3/Discovering-models-from-relational-databases.html).
 
 For an example of model discover, see [`example/app.js`](https://github.com/strongloop/loopback-connector-oracle/blob/master/example/app.js).
 
@@ -435,7 +435,7 @@ For an example of model discover, see [`example/app.js`](https://github.com/stro
 The Oracle connector also supports _auto-migration_ that enables you to create a database schema
 from LoopBack models using the [LoopBack automigrate method](http://apidocs.strongloop.com/loopback-datasource-juggler/#datasource-prototype-automigrate).
 
-For more information on auto-migration, see [Creating a database schema from models](https://loopback.io/doc/en/lb3/Creating-a-database-schema-from-models.html) for more information.
+For more information on auto-migration, see [Creating a database schema from models](https://loopback.io/doc/zh/lb3/Creating-a-database-schema-from-models.html) for more information.
 
 LoopBack Oracle connector creates the following schema objects for a given model:
 

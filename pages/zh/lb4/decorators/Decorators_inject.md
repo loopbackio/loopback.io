@@ -1,9 +1,9 @@
 ---
-lang: en
+lang: zh
 title: 'Dependency Injection Decorators'
 keywords: LoopBack 4.0, LoopBack-Next
 sidebar: lb4_sidebar
-permalink: /doc/en/lb4/Decorators_inject.html
+permalink: /doc/zh/lb4/Decorators_inject.html
 ---
 
 ## Dependency Injection Decorators
