@@ -1,32 +1,23 @@
 ---
 lang: zh
-title: 'Server'
+title: 'Server（服务器）'
 keywords: LoopBack 4.0, LoopBack 4
 sidebar: lb4_sidebar
 permalink: /doc/zh/lb4/Server.html
 ---
 
-## Overview
+## 总览
 
-The [Server](https://loopback.io/doc/zh/lb4/apidocs.core.server.html) interface
-defines the minimal required functions (start and stop) and a 'listening'
-property to implement for a LoopBack application. Servers in LoopBack 4 are used
-to represent implementations for inbound transports and/or protocols such as
-REST over http, gRPC over http2, graphQL over https, etc. They typically listen
-for requests on a specific port, handle them, and return appropriate responses.
-A single application can have multiple server instances listening on different
-ports and working with different protocols.
+[Server](https://loopback.io/doc/zh/lb4/apidocs.core.server.html)（服务器）接口定义了必须的函数（start和stop）和一个“listening”属性
+以实现LoopBack应用程序。在LoopBack 4中，Server（服务器）用于代表“入站传输”和/或“协议”，例如：REST over http，gRPC over http2，graphQL over https等。它们一般监听特定端口的Request（请求），处理请求，并且返回适当的Response（响应）。
+一个Application（应用）可以有多个Server（服务器）实例、监听不同的端口、以不同的协议工作。
 
-## Usage
+## 用法
 
-LoopBack 4 offers the
-[`@loopback/rest`](https://github.com/strongloop/loopback-next/tree/master/packages/rest)
-package out of the box, which provides an HTTP/HTTPS-based server called
-`RestServer` for handling REST requests.
+LoopBack 4提供[`@loopback/rest`](https://github.com/strongloop/loopback-next/tree/master/packages/rest)这一“开箱即用”包，它提供了基于HTTP/HTTPS的服务器`RestServer`用于处理REST请求。
 
-In order to use it in your application, your application class needs to extend
-`RestApplication` to provide an instance of RestServer listening on port 3000.
-The following example shows how to use `RestApplication`:
+要在你的应用中使用此包，你的Application类需要扩展`RestApplication`以提供一个`RestServer`的实例用于监听3000端口。
+下列实例代码展示了如何使用`RestApplication`：
 
 ```ts
 import {RestApplication, RestServer} from '@loopback/rest';
@@ -34,32 +25,28 @@ import {RestApplication, RestServer} from '@loopback/rest';
 export class HelloWorldApp extends RestApplication {
   constructor() {
     super();
-    // give our RestServer instance a sequence handler function which
-    // returns the Hello World string for all requests
-    // with RestApplication, handler function can be registered
-    // at app level
+    // 给我们的RestServer实例一个时序处理函数，
+    // 此函数会为所有的RestApplication请求返回"Hello World“字符串，
+    // 处理函数可以注册在应用层。
     this.handler((sequence, request, response) => {
       sequence.send(response, 'Hello World!');
     });
   }
 
   async start() {
-    // call start on application class, which in turn starts all registered
-    // servers
+    // 在application类调用start，会启动所有的注册的服务器。
     await super.start();
 
-    // get a singleton HTTP server instance
+    // 获得HTTP服务器的实例。
     const rest = await this.getServer(RestServer);
     console.log(`REST server running on port: ${await rest.get('rest.port')}`);
   }
 }
 ```
 
-## Configuration
+## 配置
 
-The REST server can be configured by passing a `rest` property inside your
-RestApplication options. For example, the following code customizes the port
-number that a REST server listens on.
+配置REST服务器，可以通过在你的RestApplication选项中传入`rest` 属性 。例如，下列代码可以自定义REST服务器的监听端口。
 
 ```ts
 const app = new RestApplication({
@@ -69,17 +56,14 @@ const app = new RestApplication({
 });
 ```
 
-### Customize How OpenAPI Spec is Served
+### 自定义如何提供OpenAPI规范
 
-There are a few options under `rest.openApiSpec` to configure how OpenAPI spec
-is served by the given REST server.
+在`rest.openApiSpec`有一些选项可以配置REST 服务器如何提供OpenAPI规范。
 
-- servers: Configure servers for OpenAPI spec
-- setServersFromRequest: Set `servers` based on HTTP request headers, default to
-  `false`
-- disabled: Set to `true` to disable endpoints for the OpenAPI spec. It will
-  disable API Explorer too.
-- endpointMapping: Maps urls for various forms of the spec. Default to:
+- servers: 配置OpenAPI规范的servers（服务器）。
+- setServersFromRequest: 基于HTTP请求头设置`servers`，默认为`false`。
+- disabled: 设为`true`以禁用OpenAPI规范。这同时也会禁用API Explorer。
+- endpointMapping: 为不同格式的规范提供映射url。默认为：
 
 ```js
     {
@@ -103,17 +87,14 @@ const app = new RestApplication({
 });
 ```
 
-### Configure the API Explorer
+### 配置API Explorer
 
-LoopBack allows externally hosted API Explorer UI to render the OpenAPI
-endpoints for a REST server. Such URLs can be specified with `rest.apiExplorer`:
+LoopBack允许为REST服务器提供外部托管API Explorer界面，此类URL使用`rest.apiExplorer`指明：
 
-- url: URL for the hosted API Explorer UI, default to
-  `https://loopback.io/api-explorer`.
-- httpUrl: URL for the API explorer served over plain http to deal with mixed
-  content security imposed by browsers as the spec is exposed over `http` by
-  default. See https://github.com/strongloop/loopback-next/issues/1603. Default
-  to the value of `url`.
+- url：托管API Explorer界面的URL，默认为`https://loopback.io/api-explorer`。
+- httpUrl：托管API explorer界面的URL，通过普通的http提供，以处理当规范通过HTTP暴露时，浏览器默认的混合内容安全加强。
+  详情查看此页面：https://github.com/strongloop/loopback-next/issues/1603。
+  默认使用`url`的值。
 
 ```ts
 const app = new RestApplication({
@@ -126,10 +107,9 @@ const app = new RestApplication({
 });
 ```
 
-#### Disable redirect to API Explorer
+#### 禁止重定向到API Explorer
 
-To disable redirect to the externally hosted API Explorer, set the config option
-`rest.apiExplorer.disabled` to `true`.
+如要禁止重定向到外部托管的API Explorer，设置配置选项`rest.apiExplorer.disabled`为`true`。
 
 ```ts
 const app = new RestApplication({
@@ -141,22 +121,16 @@ const app = new RestApplication({
 });
 ```
 
-### Use a self-hosted API Explorer
+### 使用自托管的API Explorer
 
-Hosting the API Explorer at an external URL has a few downsides, for example a
-working internet connection is required to explore the API. As a recommended
-alternative, LoopBack comes with an extension that provides a self-hosted
-Explorer UI. Please refer to
-[Self-hosted REST API Explorer](./Self-hosted-REST-API-Explorer.md) for more
-details.
+托管API Explorer到外部URL有一些缺点，例如，需要一个可以正常工作的互联网以浏览API。作为一个替代建议，LoopBack带有扩展，用于提供自托管的API Explorer界面。
+更多详情参见[自托管的REST API Explorer](./Self-hosted-REST-API-Explorer.md)。
 
-### Enable HTTPS
+### 启用HTTPS
 
-Enabling HTTPS for the LoopBack REST server is just a matter of specifying the
-protocol as `https` and specifying the credentials.
+为LoopBack REST服务器启用HTTPS，只需要指明协议为`https`并指明证书。
 
-In the following app, we configure HTTPS for a bare minimum app using a key +
-certificate chain variant.
+下面这个应用中，我们配置了一个使用秘钥-证书链的变种HTTPS的最小应用。
 
 ```ts
 import {RestApplication, RestServer, RestBindings} from '@loopback/rest';
@@ -181,10 +155,9 @@ export async function main() {
 }
 ```
 
-### Customize CORS
+### 自定义CORS
 
-[CORS](https://en.wikipedia.org/wiki/Cross-origin_resource_sharing) is enabled
-by default for REST servers with the following options:
+REST服务器默认使用以下选项启用[CORS](https://en.wikipedia.org/wiki/Cross-origin_resource_sharing)
 
 ```ts
 {
@@ -197,7 +170,7 @@ by default for REST servers with the following options:
 }
 ```
 
-The application code can customize CORS via REST configuration:
+Application通过REST配置自定义CORS：
 
 ```ts
 export async function main() {
@@ -210,12 +183,11 @@ export async function main() {
 }
 ```
 
-For a complete list of CORS options, see
-https://github.com/expressjs/cors#configuration-options.
+CORS的完整选项列表，参见此页：https://github.com/expressjs/cors#configuration-options。
 
-### Express settings
+### 快捷设置
 
-Override the default express settings and/or assign your own settings:
+覆盖默认的快捷设置和/或分配你自己的设置：
 
 ```ts
 const app = new RestApplication({
@@ -229,13 +201,12 @@ const app = new RestApplication({
 });
 ```
 
-Checkout `express` [documentation](http://expressjs.com/fr/api.html#app.set) for
-more details about the build-in settings.
+查看`express` [documentation](http://expressjs.com/fr/api.html#app.set)以了解更多关于内置设置的详情。
 
-### Configure the Base Path
+### 配置基本路径（Base Path）
 
-Sometime it's desirable to expose REST endpoints using a base path, such as
-`/api`. The base path can be set as part of the RestServer configuration.
+有时候，合意使用基本路径（Base Path）暴露REST服务端，例如`/api`。
+基本路径（Base Path）是RestServer配置的一部分。
 
 ```ts
 const app = new RestApplication({
@@ -245,7 +216,7 @@ const app = new RestApplication({
 });
 ```
 
-The `RestApplication` and `RestServer` both provide a `basePath()` API:
+`RestApplication`和`RestServer`都提供`basePath()` API：
 
 ```ts
 const app: RestApplication;
@@ -253,29 +224,27 @@ const app: RestApplication;
 app.basePath('/api');
 ```
 
-With the `basePath`, all REST APIs and static assets are served on URLs starting
-with the base path.
+当有配置`basePath`时，所有的REST API和静态资产都通过`basePath`开头的URL提供。
 
-### Configure the router
+### 配置路由器
 
-The router can be configured to enforce `strict` mode as follows:
+路由器可以由以下方式被配置为强制`strict`（严格）模式：
 
-1. `strict` is true:
+1. `strict`为`true`：
 
-- request `/orders` matches route `/orders` but not `/orders/`
-- request `/orders/` matches route `/orders/` but not `/orders`
+- 请求`/orders`符合路由`/orders`但不符合`/orders/`
+- 请求`/orders/` 符合路由`/orders/`但不符合`/orders`
 
-2. `strict` is false (default)
+2. `strict`为`false `（默认）
 
-- request `/orders` matches route `/orders` first and falls back to `/orders/`
-- request `/orders/` matches route `/orders/` first and falls back to `/orders`
+- 请求`/orders`首先符合路由`/orders`然后才是`/orders/`
+- 请求`/orders/`首先符合路由`/orders/`然后才是`/orders`
 
-See `strict routing` at http://expressjs.com/en/4x/api.html#app for more
-information.
+查阅`strict routing`（严格路由）http://expressjs.com/en/4x/api.html#app以获得更多信息。
 
-### Configure the request body parser options
+### 配置请求体Parser（解析器）选项
 
-We can now configure request body parser options as follows:
+我们可以通过下列代码配置请求体解析器：
 
 ```ts
 const app = new Application({
@@ -283,34 +252,31 @@ const app = new Application({
 });
 ```
 
-The value of `rest.requestBodyParser` will be bound to
-RestBindings.REQUEST_BODY_PARSER_OPTIONS. See
-[Customize request body parser options](Parsing-requests.md#customize-parser-options)
-for more details.
+`rest.requestBodyParser`的值会被绑定到`RestBindings.REQUEST_BODY_PARSER_OPTIONS`。
+查阅[Customize request body parser options](Parsing-requests.md#customize-parser-options)以了解详情。
 
-### `rest` options
+### `rest`选项
 
-| Property          | Type                     | Purpose                                                                                                   |
-| ----------------- | ------------------------ | --------------------------------------------------------------------------------------------------------- |
-| host              | string                   | Specify the hostname or ip address on which the RestServer will listen for traffic.                       |
-| port              | number                   | Specify the port on which the RestServer listens for traffic.                                             |
-| protocol          | string (http/https)      | Specify the protocol on which the RestServer listens for traffic.                                         |
-| basePath          | string                   | Specify the base path that RestServer exposes http endpoints.                                             |
-| key               | string                   | Specify the SSL private key for https.                                                                    |
-| cert              | string                   | Specify the SSL certificate for https.                                                                    |
-| cors              | CorsOptions              | Specify the CORS options.                                                                                 |
-| sequence          | SequenceHandler          | Use a custom SequenceHandler to change the behavior of the RestServer for the request-response lifecycle. |
-| openApiSpec       | OpenApiSpecOptions       | Customize how OpenAPI spec is served                                                                      |
-| apiExplorer       | ApiExplorerOptions       | Customize how API explorer is served                                                                      |
-| requestBodyParser | RequestBodyParserOptions | Customize how request body is parsed                                                                      |
-| router            | RouterOptions            | Customize how trailing slashes are used for routing                                                       |
+| 属性              | 类型                     | 描述                                                         |
+| ----------------- | ------------------------ | ------------------------------------------------------------ |
+| host              | string                   | 指明RestServer将要监听的服务器名或IP地址。                   |
+| port              | number                   | 指明RestServer将要监听的端口。                               |
+| protocol          | string (http/https)      | 指明RestServer将要监听的协议。                               |
+| basePath          | string                   | 指明RestServer暴露的HTTP服务端的base path（基本路径）。      |
+| key               | string                   | 为HTTPS指明SSL私钥。                                         |
+| cert              | string                   | 为HTTPS指明SSL证书。                                         |
+| cors              | CorsOptions              | 指明CORS选项。                                               |
+| sequence          | SequenceHandler          | 使用自定义的SequenceHandler以改变RestServer 的Request（请求）-Response（响应）生命周期。 |
+| openApiSpec       | OpenApiSpecOptions       | 自定义如何提供OpenAPI规范。                                  |
+| apiExplorer       | ApiExplorerOptions       | 自定义如何提供API Explorer。                                 |
+| requestBodyParser | RequestBodyParserOptions | 自定义如何解析请求体。                                       |
+| router            | RouterOptions            | 自定义如何路由以`/`结尾的请求。                              |
 
-## Add servers to application instance
+## 为application实例添加服务器
 
-You can add server instances to your application via the `app.server()` method
-individually or as an array using `app.servers()` method. Using `app.server()`
-allows you to uniquely name your binding key for your specific server instance.
-The following example demonstrates how to use these functions:
+你可以通过个别调用`app.server()`函数，或以数组的方式使用`app.servers()`函数。
+使用`app.server()`允许你为每个服务器实例设置独立的键。
+下列代码演示了如何使用这些函数：
 
 ```ts
 import {Application} from '@loopback/core';
@@ -319,20 +285,17 @@ import {RestServer} from '@loopback/rest';
 export class HelloWorldApp extends Application {
   constructor() {
     super();
-    // This server instance will be bound under "servers.fooServer".
+    // 这个服务器实例会被绑定到“servers.fooServer”。
     this.server(RestServer, 'fooServer');
-    // Creates a binding for "servers.MQTTServer" and a binding for
-    // "servers.SOAPServer";
+    // 为"servers.MQTTServer"和"servers.SOAPServer"创建绑定。
     this.servers([MQTTServer, SOAPServer]);
   }
 }
 ```
 
-You can also add multiple servers in the constructor of your application class
-as shown [here](Application.md#servers).
+你同样可以在你的Application类的构造函数中添加多个服务器，请参考[这个页面](Application.md#servers).
 
-## Next Steps
+## 下一步
 
-- Learn about [Server-level Context](Context.md#server-level-context)
-- Learn more about
-  [creating your own servers!](Creating-components.md#creating-your-own-servers)
+- 学习关于 [服务器层上下文](Context.md#server-level-context)
+- 学习关于[创建你自己的服务器](Creating-components.md#creating-your-own-servers)
