@@ -11,7 +11,7 @@ LoopBack 4 定义了一些组件模块来表达典型的API和微微服务应用
 ![Key concepts overview diagram](imgs/key-concepts-overview-diagram.png)
 
 - [**Application**](Application.md)（应用）：这是一个重要的类，用于设置你所有的模块组件、控制器、服务器和绑定。Application类扩展了[Context](Context.md) （上下文），并且提供了启动和停止相关服务器的控制方法。
-- [**Controller**](Controllers.md)（控制器）： 用于实现REST API的操作定义的类。它实现了一个应用的业务逻辑，并作为“HTTP / REST API”和“域 / 数据库模型”之间的桥梁。 控制器仅对已“处理的输入”和“后端服务/数据库”的抽象进行操作。
+- [**Controller**](Controllers.md)（控制器）： 用于实现REST API的定义的操作的类。它实现了一个应用的业务逻辑，并作为“HTTP/REST API”和“域/数据库模型”之间的桥梁。 控制器仅对“已处理的输入”和“后端服务/数据库”的抽象进行操作。
 - [**Interceptors**](Interceptors.md)（拦截器）：用于拦截“类的静态方法”或“对象的实例方法”的调用的函数。
 - [**Route**](Routes.md)（路由）：映射你的API规范和Operation（操作）。它告诉LoopBack，当获得一个HTTP请求时，要去`invoke()` （调用）哪个Operation（操作）。
 - [**Sequence**](Sequence.md)（序列）：无状态的[Actions](Sequence.md#actions)组，用于控制服务器如何回复（Response）一个请求（Request）。
