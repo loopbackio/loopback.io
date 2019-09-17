@@ -11,108 +11,108 @@ title: LoopBack 4
 url: index.html
 children:
 
-- title: 'Overview'
+- title: '总览'
   url: index.html
   output: 'web, pdf'
 
-- title: 'Getting started'
+- title: '入门'
   url: Getting-started.html
   output: 'web, pdf'
 
-- title: 'Key concepts'
+- title: '关键功能'
   url: Concepts.html
   output: 'web, pdf'
   children:
 
-  - title: 'Application'
+  - title: 'Application（应用）'
     url: Application.html
     output: 'web, pdf'
 
-  - title: 'Server'
+  - title: 'Server（服务器）'
     url: Server.html
     output: 'web, pdf'
 
-  - title: 'Controllers'
+  - title: 'Controllers（控制器）'
     url: Controllers.html
     output: 'web, pdf'
 
-  - title: 'Models'
+  - title: 'Models（模型）'
     url: Model.html
     output: 'web, pdf'
 
-  - title: 'Relations'
+  - title: 'Relations（关系）'
     url: Relations.html
     output: 'web, pdf'
     children:
 
-    - title: 'HasMany Relation'
+    - title: 'HasMany关系'
       url: HasMany-relation.html
       output: 'web, pdf'
 
-    - title: 'BelongsTo Relation'
+    - title: 'BelongsTo关系'
       url: BelongsTo-relation.html
       output: 'web, pdf'
 
-    - title: 'HasOne Relation'
+    - title: 'HasOne关系'
       url: hasOne-relation.html
       output: 'web, pdf'
 
-  - title: 'DataSources'
+  - title: 'DataSources（数据源）'
     url: DataSources.html
     output: 'web, pdf'
 
-  - title: 'Repositories'
+  - title: 'Repositories（存储库）'
     url: Repositories.html
     output: 'web, pdf'
     children:
 
-    - title: 'Database Transactions'
+    - title: 'Database Transactions（数据库事务）'
       url: Using-database-transactions.html
       output: 'web, pdf'
 
-  - title: 'Interceptors'
+  - title: 'Interceptors（拦截器）'
     url: Interceptors.html
     output: 'web, pdf'
 
-  - title: 'Life cycle events and observers'
+  - title: 'Life cycle events（生命周期事件）和Observers（观察器）'
     url: Life-cycle.html
     output: 'web, pdf'
 
-  - title: 'Routes'
+  - title: 'Routes（路由）'
     url: Routes.html
     output: 'web, pdf'
 
-  - title: 'Sequence'
+  - title: 'Sequence（时序）'
     url: Sequence.html
     output: 'web, pdf'
     children:
 
-    - title: 'Routing requests'
+    - title: '路由请求'
       url: Routing-requests.html
       output: 'web, pdf'
 
-    - title: 'Parsing requests'
+    - title: '解析请求'
       url: Parsing-requests.html
       output: 'web, pdf'
 
-  - title: 'Decorators'
+  - title: 'Decorators（修饰符）'
     url: Decorators.html
     output: 'web, pdf'
     children:
 
-    - title: 'OpenAPI Decorators'
+    - title: 'OpenAPI修饰符'
       url: Decorators_openapi.html
       output: 'web, pdf'
 
-    - title: 'Dependency Injection Decorator'
+    - title: 'Dependency Injection（注入依赖）修饰符'
       url: Decorators_inject.html
       output: 'web, pdf'
 
-    - title: 'Authentication Decorator'
+    - title: 'Authentication（认证）修饰符'
       url: Decorators_authenticate.html
       output: 'web, pdf'
 
-    - title: 'Repository Decorators'
+    - title: 'Repository（存储库）修饰符'
       url: Decorators_repository.html
       output: 'web, pdf'
 
@@ -120,341 +120,341 @@ children:
     url: Error-handling.html
     output: 'web, pdf'
 
-- title: 'Usage Scenarios'
+- title: '使用场景'
   url: Usage-scenarios.html
   output: 'web, pdf'
   children:
 
-  - title: 'Create Other Forms of APIs'
+  - title: '创建其他API表单'
     url: Create-other-forms-of-apis.html
     output: 'web, pdf'
     children:
-      - title: 'Exposing GraphQL APIs'
+      - title: '暴露GraphQL API'
         url: exposing-graphql-apis.html
         output: 'web, pdf'
 
-  - title: 'Access Databases'
+  - title: '访问数据库'
     url: Access-databases.html
     output: 'web, pdf'
     children:
 
-      - title: 'Database Migrations'
+      - title: '数据库迁移'
         url: Database-migrations.html
         output: 'web, pdf'
 
-  - title: 'Call Other Services'
+  - title: '调用其他服务'
     url: Calling-other-APIs-and-web-services.html
     output: 'web, pdf'
 
-  - title: 'Integrate with Infrastructures'
+  - title: '集成基础服务'
     url: Integrate-with-infrastructures.html
     output: 'web, pdf'
     children:
 
-    - title: 'Authentication'
+    - title: 'Authentication（认证）'
       url: Loopback-component-authentication.html
       output: 'web, pdf'
 
-    - title: 'Authorization'
+    - title: 'Authorization（授权）'
       url: Loopback-component-authorization.html
       output: 'web, pdf'
 
-  - title: 'Deployment'
+  - title: 'Deployment（部署）'
     url: Deployment.html
     output: 'web, pdf'
     children:
-      - title: 'Deploying to IBM Cloud'
+      - title: '部署到IBM Cloud'
         url: Deploying-to-IBM-Cloud.html
         output: 'web, pdf'
 
-      - title: 'Deploying to Kubernetes on IBM Cloud'
+      - title: '部署到IBM Cloud上的Kubernetes'
         url: deploying_to_ibm_cloud_kubernetes.html
         output: 'web, pdf'
 
-      - title: 'Deploying with pm2 and nginx'
+      - title: '使用pm2和nginx部署'
         url: deploying-with-pm2-and-nginx.html
         output: 'web, pdf'
 
-  - title: 'Serving static files'
+  - title: '提供静态文件'
     url: Serving-static-files.html
     output: 'web, pdf'
 
-- title: 'Behind the Scene'
+- title: '场景后台'
   url: Behind-the-scene.html
   output: 'web, pdf'
   children:
 
-    - title: 'Context'
+    - title: 'Context（上下文）'
       url: Context.html
       output: 'web, pdf'
 
-    - title: 'Binding'
+    - title: 'Binding（绑定）'
       url: Binding.html
       output: 'web, pdf'
 
-    - title: 'Dependency Injection'
+    - title: 'Dependency Injection（依赖注入）'
       url: Dependency-injection.html
       output: 'web, pdf'
       children:
 
-        - title: 'Reserved binding keys'
+        - title: '保留绑定键'
           url: Reserved-binding-keys.html
           output: 'web, pdf'
 
-    - title: 'Components'
+    - title: 'Components（组件）'
       url: Components.html
       output: 'web, pdf'
 
-- title: 'Booting an Application'
+- title: '启动应用'
   url: Booting-an-Application.html
   output: 'web, pdf'
 
-- title: 'Using Components'
+- title: '使用Components（组件）'
   url: Using-components.html
   output: 'web, pdf'
   children:
 
-  - title: Self-hosted REST API Explorer
+  - title: '自托管的REST API Explorer'
     url: Self-hosted-rest-api-explorer.html
     output: 'web, pdf'
 
-  - title: 'Authentication'
+  - title: 'Authentication（认证）'
     url: Loopback-component-authentication.html
     output: 'web, pdf'
 
-  - title: 'Authorization'
+  - title: 'Authorization（授权）'
     url: Loopback-component-authorization.html
     output: 'web, pdf'
 
-  - title: 'Boot and Mount a LoopBack 3 Application'
+  - title: '启动和挂载LoopBack 3应用'
     url: Boot-and-Mount-a-LoopBack-3-application.html
     output: 'web, pdf'
 
-- title: 'Extending LoopBack 4'
+- title: '扩展LoopBack 4'
   url: Extending-LoopBack-4.html
   output: 'web, pdf'
   children:
 
-  - title: 'Creating components'
+  - title: '创建Components（组件）'
     url: Creating-components.html
     output: 'web, pdf'
 
-  - title: 'Creating decorators'
+  - title: '创建Decorators（修饰符）'
     url: Creating-decorators.html
     output: 'web, pdf'
 
-  - title: 'Creating servers'
+  - title: '创建Servers（服务器）'
     url: Creating-servers.html
     output: 'web, pdf'
 
-  - title: 'Extension point and extensions'
+  - title: 'Extension point（扩展点）和Extensions(扩展）'
     url: Extension-point-and-extensions.html
     output: 'web, pdf'
 
-  - title: 'Extending request body parsing'
+  - title: '扩展request body parsing（请求体分析）'
     url: Extending-request-body-parsing.html
     output: 'web, pdf'
 
-  - title: 'Extension life cycle'
+  - title: '扩展的生命周期'
     url: Extension-life-cycle.html
     output: 'web, pdf'
 
-  - title: 'Testing your extension'
+  - title: '测试你的扩展'
     url: Testing-your-extension.html
     output: 'web, pdf'
 
-- title: 'Crafting LoopBack 4'
+- title: 'LoopBack 4的创意'
   url: Crafting-LoopBack-4.html
   output: 'web, pdf'
 
-- title: 'Tutorials'
+- title: '教程'
   url: Tutorials.html
   output: 'web, pdf'
   children:
 
-  - title: 'Todo Tutorial'
+  - title: 'Todo教程'
     url: todo-tutorial.html
     output: 'web, pdf'
     children:
 
-    - title: 'Create your app scaffolding'
+    - title: '创建你的应用脚手架'
       url: todo-tutorial-scaffolding.html
       output: 'web, pdf'
 
-    - title: 'Add the Todo model'
+    - title: '添加Todo模型'
       url: todo-tutorial-model.html
       output: 'web, pdf'
 
-    - title: 'Add a Datasource'
+    - title: '添加一个Datasource（数据源）'
       url: todo-tutorial-datasource.html
       output: 'web, pdf'
 
-    - title: 'Add a Repository'
+    - title: '添加一个Repository（存储库）'
       url: todo-tutorial-repository.html
       output: 'web, pdf'
 
-    - title: 'Add a Controller'
+    - title: '添加一个Controller（控制器）'
       url: todo-tutorial-controller.html
       output: 'web, pdf'
 
-    - title: 'Putting it all together'
+    - title: '把它们放在一起'
       url: todo-tutorial-putting-it-together.html
       output: 'web, pdf'
 
-    - title: 'Bonus: Integrate with a geo-coding service'
+    - title: '额外：集成geo-coding（地理编码）服务'
       url: todo-tutorial-geocoding-service.html
       output: 'web, pdf'
 
-  - title: 'TodoList Tutorial'
+  - title: 'TodoList教程'
     url: todo-list-tutorial.html
     output: 'web, pdf'
     children:
 
-    - title: 'Add TodoList Model'
+    - title: '添加TodoList Model（模型）'
       url: todo-list-tutorial-model.html
       output: 'web, pdf'
 
-    - title: 'Add TodoList Repository'
+    - title: '添加TodoList Repository（存储库）'
       url: todo-list-tutorial-repository.html
       output: 'web, pdf'
 
-    - title: 'Add TodoList Controller'
+    - title: '添加TodoList Controller（控制器）'
       url: todo-list-tutorial-controller.html
       output: 'web, pdf'
 
-    - title: 'Running on relational databases'
+    - title: '在Relational Database（关系型数据库）上运行'
       url: todo-list-tutorial-sqldb.html
       output: 'web, pdf'
 
-  - title: 'SOAP Web Service Tutorial'
+  - title: 'SOAP Web Service教程'
     url: soap-calculator-tutorial.html
     output: 'web, pdf'
     children:
 
-    - title: 'SOAP Web Service Overview'
+    - title: 'SOAP Web Service总览'
       url: soap-calculator-tutorial-web-service-overview.html
       output: 'web, pdf'
 
-    - title: 'App scaffolding'
+    - title: '应用脚手架'
       url: soap-calculator-tutorial-scaffolding.html
       output: 'web, pdf'
 
-    - title: 'Add a Datasource'
+    - title: '添加一个Datasource（数据源）'
       url: soap-calculator-tutorial-add-datasource.html
       output: 'web, pdf'
 
-    - title: 'Add a Service'
+    - title: '添加一个Service（服务）'
       url: soap-calculator-tutorial-add-service.html
       output: 'web, pdf'
 
-    - title: 'Add a Controller'
+    - title: '添加一个Controller（控制器）'
       url: soap-calculator-tutorial-add-controller.html
       output: 'web, pdf'
 
-    - title: 'Run and Test it'
+    - title: '运行和测试'
       url: soap-calculator-tutorial-run-and-test.html
       output: 'web, pdf'
 
-  - title: 'Creating an Express Application with LoopBack REST API'
+  - title: '使用LoopBack REST API建立一个Express Application'
     url: express-with-lb4-rest-tutorial.html
     output: 'web, pdf'
 
-  - title: 'How to secure your LoopBack 4 application with JWT authentication'
+  - title: '如何使用 JWT authentication（认证）确保你的LoopBack 4应用的安全性。'
     url: Authentication-Tutorial.html
     output: 'web, pdf'
 
-- title: 'Examples'
+- title: '示例代码'
   url: Examples.html
   output: 'web, pdf'
 
-- title: 'CLI References'
+- title: 'CLI References（参考）'
   url: Command-line-interface.html
   output: 'web, pdf'
   children:
 
-  - title: 'Application generator'
+  - title: 'Application（应用）生成器'
     url: Application-generator.html
     output: 'web, pdf'
 
-  - title: 'Controller generator'
+  - title: 'Controller（控制器）生成器'
     url: Controller-generator.html
     output: 'web, pdf'
 
-  - title: 'DataSource generator'
+  - title: 'DataSource（数据源）生成器'
     url: DataSource-generator.html
     output: 'web, pdf'
 
-  - title: 'Model generator'
+  - title: 'Model（模型）生成器'
     url: Model-generator.html
     output: 'web, pdf'
 
-  - title: 'Model discovery'
+  - title: 'Model discovery（数据库优先的模型生成）'
     url: Discovering-models.html
     output: 'web, pdf'
 
-  - title: 'Relation generator'
+  - title: 'Relation（关系）生成器'
     url: Relation-generator.html
     output: 'web, pdf'
 
-  - title: 'Repository generator'
+  - title: 'Repository（存储库）生成器'
     url: Repository-generator.html
     output: 'web, pdf'
 
-  - title: 'Service generator'
+  - title: 'Service（服务）生成器'
     url: Service-generator.html
     output: 'web, pdf'
 
-  - title: 'OpenAPI generator'
+  - title: 'OpenAPI生成器'
     url: OpenAPI-generator.html
     output: 'web, pdf'
 
-  - title: 'Life cycle observer generator'
+  - title: 'Life cycle observer（生命周期观察器）生成器'
     url: Life-cycle-observer-generator.html
     output: 'web, pdf'
 
-  - title: 'Interceptor generator'
+  - title: 'Interceptor（拦截器）生成器'
     url: Interceptor-generator.html
     output: 'web, pdf'
 
-  - title: 'Extension generator'
+  - title: 'Extension（扩展）生成器'
     url: Extension-generator.html
     output: 'web, pdf'
 
-  - title: 'Download examples'
+  - title: '下载示例代码'
     url: Download-examples.html
     output: 'web, pdf'
 
-- title: 'Connectors reference'
+- title: 'Connectors参考'
   url: Connectors-reference.html
   output: 'web'
   children:
 
-  - title: 'Memory connector'
+  - title: 'Memory connector（内存连接器）'
     url: Memory-connector.html
     output: 'web, pdf'
 
-  - title: 'Database connectors'
+  - title: 'Database connectors（数据库连接器）'
     url: Database-connectors.html
     output: 'web'
     children:
 
-    - title: 'Cassandra connector'
+    - title: 'Cassandra连接器'
       url: Cassandra-connector.html
       output: 'web, pdf'
 
-    - title: 'Cloudant connector'
+    - title: 'Cloudant连接器'
       url: Cloudant-connector.html
       output: 'web, pdf'
 
-    - title: 'DashDB connector'
+    - title: 'DashDB连接器'
       url: DashDB.html
       output: 'web, pdf'
 
-    - title: 'DB2 connector'
+    - title: 'DB2连接器'
       url: DB2-connector.html
       output: 'web, pdf'
 
-    - title: 'DB2 for iSeries connector'
+    - title: 'DB2 for iSeries连接器'
       url: DB2-iSeries-connector.html
       output: 'web, pdf'
 
@@ -462,111 +462,111 @@ children:
       url: DB2-for-z-OS.html
       output: 'web, pdf'
 
-    - title: Informix connector
+    - title: 'Informix连接器'
       url: Informix.html
       output: 'web, pdf'
 
-    - title: 'MongoDB connector'
+    - title: 'MongoDB连接器'
       url: MongoDB-connector.html
       output: 'web, pdf'
       children:
 
-      - title: 'MongoDB Connector Tutorial'
+      - title: 'MongoDB连接器教程'
         url: Connecting-to-MongoDB.html
         output: 'web, pdf'
 
-      - title: 'Using MongoLab'
+      - title: '使用MongoLab'
         url: Using-MongoLab.html
         output: 'web, pdf'
 
-    - title: 'MySQL connector'
+    - title: 'MySQL连接器'
       url: MySQL-connector.html
       output: 'web, pdf'
       children:
 
-      - title: 'MySQL Connector Tutorial'
+      - title: 'MySQL连接器教程'
         url: Connecting-to-MySQL.html
         output: 'web, pdf'
 
-    - title: 'Oracle connector'
+    - title: 'Oracle连接器'
       url: Oracle-connector.html
       output: 'web, pdf'
       children:
 
-      - title: 'Installing the Oracle connector'
+      - title: '安装Oracle连接器'
         url: Installing-the-Oracle-connector.html
         output: 'web, pdf'
 
-      - title: 'Oracle connector tutorial'
+      - title: 'Oracle连接器教程'
         url: Connecting-to-Oracle.html
         output: 'web, pdf'
 
-    - title: 'PostgreSQL connector'
+    - title: 'PostgreSQL连接器'
       url: PostgreSQL-connector.html
       output: 'web, pdf'
       children:
 
-      - title: 'PostgreSQL connector tutorial'
+      - title: 'PostgreSQL连接器教程'
         url: Connecting-to-PostgreSQL.html
         output: 'web, pdf'
 
-    - title: 'Redis connector'
+    - title: 'Redis连接器'
       url: Redis-connector.html
       output: 'web, pdf'
 
-    - title: 'Redis key-value connector'
+    - title: 'Redis key-value（键值对）连接器'
       url: kv-redis-connector.html
       output: 'web, pdf'
       children:
 
-      - title: 'KV connector example'
+      - title: '键值对连接器示例'
         url: Example-kv-connector.html
         output: 'web, pdf'
 
-    - title: 'SQL Server connector'
+    - title: '微软SQL Server连接器'
       url: SQL-Server-connector.html
       output: 'web, pdf'
       children:
 
-      - title: 'SQL Server connector tutorial'
+      - title: '微软SQL Server连接器教程'
         url: Connecting-to-Microsoft-SQL-Server.html
         output: 'web, pdf'
 
-    - title: 'SQLite3 connector'
+    - title: 'SQLite3连接器'
       url: SQLite3.html
       output: 'web, pdf'
 
-    - title: 'z/OS Connect Enterprise Edition connector'
+    - title: 'z/OS企业版连接器'
       url: zOSconnectEE.html
       output: 'web, pdf'
 
-  - title: 'Other connectors'
+  - title: '其他连接器'
     url: Other-connectors.html
     output: 'web'
     children:
 
-    - title: 'Email connector'
+    - title: 'Email（电子邮件）连接器'
       url: Email-connector.html
       output: 'web, pdf'
 
-    - title: 'JSON RPC connector'
+    - title: 'JSON RPC连接器'
       url: JSON-RPC-connector.html
       output: 'web, pdf'
 
-    - title: 'MQ Light connector'
+    - title: 'MQ Light连接器'
       url: MQLight-connector.html
       output: 'web, pdf'
 
-    - title: 'Push connector'
+    - title: 'Push连接器'
       url: Push-connector.html
       output: 'web, pdf'
 
-    - title: 'Remote connector'
+    - title: 'Remote连接器'
       url: Remote-connector.html
       output: 'web, pdf'
       children:
 
-      - title: 'Remote connector example'
+      - title: 'Remote连接器教程'
         url: Remote-connector-example.html
         output: 'web, pdf'
 
@@ -574,16 +574,16 @@ children:
         url: Strong-Remoting.html
         output: 'web, pdf'
 
-    - title: 'REST connector'
+    - title: 'REST连接器'
       url: REST-connector.html
       output: 'web, pdf'
       children:
 
-      - title: 'REST connector example'
+      - title: 'REST连接器示例'
         url: REST-connector-example.html
         output: 'web, pdf'
 
-    - title: 'SOAP connector'
+    - title: 'SOAP连接器'
       url: SOAP-connector.html
       output: 'web, pdf'
       children:
@@ -592,74 +592,74 @@ children:
         url: Strong-soap.html
         output: 'web, pdf'
 
-      - title: 'SOAP connector example'
+      - title: 'SOAP连接器示例'
         url: SOAP-Connector-example.html
         output: 'web, pdf'
 
-      - title: 'Connecting to SOAP web services'
+      - title: '连接到SOAP web services'
         url: Connecting-to-SOAP.html
         output: 'web, pdf'
 
-    - title: 'Storage connector'
+    - title: 'Storage连接器'
       url: Storage-connector.html
       output: 'web, pdf'
 
-    - title: 'Swagger connector'
+    - title: 'Swagger连接器'
       url: Swagger-connector.html
       output: 'web, pdf'
 
-  - title: 'Community connectors'
+  - title: 'Community连接器'
     url: Community-connectors.html
     output: 'web, pdf'
 
-- title: 'API docs'
+- title: 'API文档'
   url: apidocs.index.html
   output: 'web, pdf'
 
-- title: 'For LoopBack 3.x users'
+- title: 'LoopBack 3.x用户请读'
   url: LoopBack-3.x.html
   output: 'web, pdf'
   children:
 
-  - title: 'Understanding the differences between LoopBack 3 and LoopBack 4'
+  - title: '理解LoopBack 3和LoopBack 4的不同'
     url: Understanding-the-differences.html
     output: 'web, pdf'
 
-  - title: 'Migrating from LoopBack 3'
+  - title: '从LoopBack 3迁移'
     url: Migrating-from-LoopBack-3.html
     output: 'web, pdf'
 
-- title: 'Best practices'
+- title: '最佳实践'
   url: Best-practices.html
   output: 'web, pdf'
   children:
 
-  - title: 'Defining the API using code-first approach'
+  - title: '使用code-first（代码优先）方式定义API'
     url: Defining-the-API-using-code-first-approach.html
     output: 'web, pdf'
 
-  - title: 'Defining your testing strategy'
+  - title: '定义你的测试策略'
     url: Defining-your-testing-strategy.html
     output: 'web, pdf'
 
-  - title: 'Testing your application'
+  - title: '测试你的应用'
     url: Testing-your-application.html
     output: 'web, pdf'
 
-- title: 'Contribute to LoopBack 4'
+- title: '贡献LoopBack 4'
   url: code-contrib-lb4.html
   output: 'web, pdf'
   children:
 
-    - title: 'Submitting a pull request to LoopBack 4'
+    - title: '提交pull request给LoopBack 4'
       url: submitting_a_pr.html
       output: 'web, pdf'
 
-- title: 'Reference'
+- title: '参考'
   url: Reference.html
   output: 'web, pdf'
   children:
 
-  - title: 'Considerations for GDPR readiness'
+  - title: '考虑GDPR准备情况'
     url: Deploy-for-GDPR-readiness.html
     output: 'web, pdf'
