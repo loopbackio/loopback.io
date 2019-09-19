@@ -37,6 +37,8 @@ LoopBack是高扩展性、开源的Node.js框架，基于Express，使得开发�
 ## 为你的平台创建
 
  - 以LoopBack作为你自己的框架或平台的起点.
+
  - 以标准的方式创建可复用的组件库。
+
  - 使用connectors集成数据库、web服务和其他平台。
 
