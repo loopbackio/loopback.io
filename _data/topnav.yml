@@ -48,23 +48,26 @@ topnav_dropdowns:
           url: /doc/es/lb4/
         - title: "Français (v2)"
           url: /doc/fr/lb2/
-        - title: "한국어 (v3)"
-          url: /doc/ko/lb3/
+        - title: "Français (v4)"
+          url: /doc/fr/lb4/
         - title: "한국어 (v2)"
           url: /doc/ko/lb2/
+        - title: "한국어 (v3)"
+          url: /doc/ko/lb3/
         - title: "Português (v2)"
           url: /doc/pt-br/lb2/
         - title: "Português (v4)"
           url: /doc/pt-br/lb4/
-        - title: "日本語 (v3)"
-          url: /doc/ja/lb3/
         - title: "日本語 (v2)"
           url: /doc/ja/lb2/
+        - title: "日本語 (v3)"
+          url: /doc/ja/lb3/
+        - title: "日本語 (v4)"
+          url: /doc/ja/lb4/
         - title: "Pусский (v2)"
           url: /doc/ru/lb2/
         - title: "中文 (v2)"
           url: /doc/zh/lb2/
-        - title: "Français (v4)"
-          url: /doc/fr/lb4/
-        - title: "日本語 (v4)"
-          url: /doc/ja/lb4/
+        - title: "中文 (v4)"
+          url: /doc/zh/lb4/
+
