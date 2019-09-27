@@ -16,9 +16,9 @@ system. The Connector is used by `legacy-juggler-bridge` to power LoopBack 4
 Repositories for Data operations.
 
 In LoopBack 4, datasources can be represented as strongly-typed objects and
-freely made available for [injection](Dependency-injection.md) throughout the
+freely made available for [injection](Dependency-injection.html) throughout the
 application. Typically, in LoopBack 4, datasources are used in conjunction with
-[Repositories](Repositories.md) to provide access to data.
+[Repositories](Repositories.html) to provide access to data.
 
 For more information about datasources in LoopBack, see
 [DataSources](https://loopback.io/doc/en/lb4/DataSources.html).

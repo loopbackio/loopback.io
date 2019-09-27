@@ -10,8 +10,8 @@ summary: LoopBack 4 Todo Application Tutorial - Putting it all together
 ### Putting it all together
 
 We've got all of our artifacts now, and they are all automatically bound to our
-[Application](Application.md) so that LoopBack's
-[Dependency injection](Dependency-injection.md) system can tie it all together
+[Application](Application.html) so that LoopBack's
+[Dependency injection](Dependency-injection.html) system can tie it all together
 for us!
 
 LoopBack's
@@ -28,8 +28,8 @@ artifacts and inject them into our application for use.
 > - Repositories: `./src/repositories`
 >
 > To find out how to customize this behavior, see the
-> [Booters](Booting-an-Application.md#booters) section of
-> [Booting an Application](Booting-an-Application.md).
+> [Booters](Booting-an-Application.html#booters) section of
+> [Booting an Application](Booting-an-Application.html).
 
 Let's try out our application! First, you'll want to start the app.
 
@@ -72,7 +72,7 @@ left off here to guide you through adding in an additional feature:
 ### More examples and tutorials
 
 Eager to continue learning about LoopBack 4? Check out our
-[Examples](Examples.md) and [Tutorials](Tutorials.md) sections to find examples
+[Examples](Examples.html) and [Tutorials](Tutorials.html) sections to find examples
 for creating your own custom components, sequences and more!
 
 ### Navigation
