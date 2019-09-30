@@ -1,0 +1,821 @@
+## definition of `menuitem`===========
+# title: string
+# url: /doc/zh/lb4/string
+# output: [ enum{web, pdf} ] (expressed as comma separated string in YAML)
+# children?: [ menuitem ]
+
+## top level property=================
+# entries: [ menuitem ]
+
+title: LoopBack 4
+url: /doc/zh/lb4/index.html
+translated: true
+children:
+
+- title: '总览'
+  url: /doc/zh/lb4/index.html
+  translated: true
+  output: 'web, pdf'
+
+- title: '入门'
+  url: /doc/zh/lb4/Getting-started.html
+  translated: true
+  output: 'web, pdf'
+
+- title: '关键功能'
+  url: /doc/zh/lb4/Concepts.html
+  translated: true
+  output: 'web, pdf'
+  children:
+
+  - title: '应用（Application）'
+    url: /doc/zh/lb4/Application.html
+    translated: true
+    output: 'web, pdf'
+
+  - title: '服务器（Server）'
+    url: /doc/zh/lb4/Server.html
+    translated: true
+    output: 'web, pdf'
+
+  - title: '控制器（Controllers）'
+    url: /doc/zh/lb4/Controllers.html
+    translated: true
+    output: 'web, pdf'
+
+  - title: '数据模型（Models）'
+    url: /doc/zh/lb4/Model.html
+    translated: true
+    output: 'web, pdf'
+
+  - title: '关系（Relations）'
+    url: /doc/zh/lb4/Relations.html
+    translated: true
+    output: 'web, pdf'
+    children:
+
+    - title: 'HasMany（有很多）关系'
+      url: /doc/zh/lb4/HasMany-relation.html
+      translated: false
+      output: 'web, pdf'
+
+    - title: 'BelongsTo（属于）关系'
+      url: /doc/zh/lb4/BelongsTo-relation.html
+      translated: false
+      output: 'web, pdf'
+
+    - title: 'HasOne（有一个）关系'
+      url: /doc/zh/lb4/hasOne-relation.html
+      translated: false
+      output: 'web, pdf'
+
+  - title: '数据源（DataSources）'
+    url: /doc/zh/lb4/DataSources.html
+    translated: true
+    output: 'web, pdf'
+
+  - title: '存储库（Repositories）'
+    url: /doc/zh/lb4/Repositories.html
+    translated: false
+    output: 'web, pdf'
+    children:
+
+    - title: '数据库事务（Database Transactions）'
+      url: /doc/zh/lb4/Using-database-transactions.html
+      translated: false
+      output: 'web, pdf'
+
+  - title: '拦截器（Interceptors）'
+    url: /doc/zh/lb4/Interceptors.html
+    translated: false
+    output: 'web, pdf'
+
+  - title: '生命周期事件（Life cycle events）和观察器（Observers）'
+    url: /doc/zh/lb4/Life-cycle.html
+    translated: false
+    output: 'web, pdf'
+
+  - title: '路由（Routes）'
+    url: /doc/zh/lb4/Routes.html
+    translated: false
+    output: 'web, pdf'
+
+  - title: '时序（Sequence）'
+    url: /doc/zh/lb4/Sequence.html
+    translated: false
+    output: 'web, pdf'
+    children:
+
+    - title: '路由请求'
+      url: /doc/zh/lb4/Routing-requests.html
+      translated: false
+      output: 'web, pdf'
+
+    - title: '解析请求'
+      url: /doc/zh/lb4/Parsing-requests.html
+      translated: false
+      output: 'web, pdf'
+
+  - title: '修饰符（Decorators）'
+    url: /doc/zh/lb4/Decorators.html
+    translated: false
+    output: 'web, pdf'
+    children:
+
+    - title: 'OpenAPI修饰符'
+      url: /doc/zh/lb4/Decorators_openapi.html
+      translated: false
+      output: 'web, pdf'
+
+    - title: '注入依赖（Dependency Injection）修饰符'
+      url: /doc/zh/lb4/Decorators_inject.html
+      translated: false
+      output: 'web, pdf'
+
+    - title: '认证（Authentication）修饰符'
+      url: /doc/zh/lb4/Decorators_authenticate.html
+      translated: false
+      output: 'web, pdf'
+
+    - title: '存储库（Repository）修饰符'
+      url: /doc/zh/lb4/Decorators_repository.html
+      translated: false
+      output: 'web, pdf'
+
+  - title: '错误处理（Error handling）'
+    url: /doc/zh/lb4/Error-handling.html
+    translated: false
+    output: 'web, pdf'
+
+- title: '使用场景'
+  url: /doc/zh/lb4/Usage-scenarios.html
+  translated: false
+  output: 'web, pdf'
+  children:
+
+  - title: '创建其他API表单'
+    url: /doc/zh/lb4/Create-other-forms-of-apis.html
+    translated: false
+    output: 'web, pdf'
+    children:
+      - title: '暴露GraphQL API'
+        url: /doc/zh/lb4/exposing-graphql-apis.html
+        translated: false
+        output: 'web, pdf'
+
+  - title: '访问数据库'
+    url: /doc/zh/lb4/Access-databases.html
+    translated: false
+    output: 'web, pdf'
+    children:
+
+      - title: '数据库迁移'
+        url: /doc/zh/lb4/Database-migrations.html
+        translated: false
+        output: 'web, pdf'
+
+  - title: '调用其他服务'
+    url: /doc/zh/lb4/Calling-other-APIs-and-web-services.html
+    translated: false
+    output: 'web, pdf'
+
+  - title: '集成基础服务'
+    url: /doc/zh/lb4/Integrate-with-infrastructures.html
+    translated: false
+    output: 'web, pdf'
+    children:
+
+    - title: '认证（Authentication）'
+      url: /doc/zh/lb4/Loopback-component-authentication.html
+      translated: false
+      output: 'web, pdf'
+
+    - title: '授权（Authorization）'
+      url: /doc/zh/lb4/Loopback-component-authorization.html
+      translated: false
+      output: 'web, pdf'
+
+  - title: '部署（Deployment）'
+    url: /doc/zh/lb4/Deployment.html
+    translated: false
+    output: 'web, pdf'
+    children:
+      - title: '部署到IBM Cloud'
+        url: /doc/zh/lb4/Deploying-to-IBM-Cloud.html
+        translated: false
+        output: 'web, pdf'
+
+      - title: '部署到IBM Cloud上的Kubernetes'
+        url: /doc/zh/lb4/deploying_to_ibm_cloud_kubernetes.html
+        translated: false
+        output: 'web, pdf'
+
+      - title: '使用pm2和nginx部署'
+        url: /doc/zh/lb4/deploying-with-pm2-and-nginx.html
+        translated: false
+        output: 'web, pdf'
+
+  - title: '提供静态文件'
+    url: /doc/zh/lb4/Serving-static-files.html
+    translated: false
+    output: 'web, pdf'
+
+- title: '场景后台'
+  url: /doc/zh/lb4/Behind-the-scene.html
+  translated: false
+  output: 'web, pdf'
+  children:
+
+    - title: '上下文（Context）'
+      url: /doc/zh/lb4/Context.html
+      translated: false
+      output: 'web, pdf'
+
+    - title: '绑定（Binding）'
+      url: /doc/zh/lb4/Binding.html
+      translated: false
+      output: 'web, pdf'
+
+    - title: '依赖注入（Dependency Injection）'
+      url: /doc/zh/lb4/Dependency-injection.html
+      translated: false
+      output: 'web, pdf'
+      children:
+
+        - title: '保留绑定键'
+          url: /doc/zh/lb4/Reserved-binding-keys.html
+          translated: false
+          output: 'web, pdf'
+
+    - title: '组件（Components）'
+      url: /doc/zh/lb4/Components.html
+      translated: false
+      output: 'web, pdf'
+
+- title: '启动应用'
+  url: /doc/zh/lb4/Booting-an-Application.html
+  translated: false
+  output: 'web, pdf'
+
+- title: '使用组件（Components）'
+  url: /doc/zh/lb4/Using-components.html
+  translated: false
+  output: 'web, pdf'
+  children:
+
+  - title: '自托管的REST API Explorer'
+    url: /doc/zh/lb4/Self-hosted-rest-api-explorer.html
+    translated: false
+    output: 'web, pdf'
+
+  - title: '认证（Authentication）'
+    url: /doc/zh/lb4/Loopback-component-authentication.html
+    translated: false
+    output: 'web, pdf'
+
+  - title: '授权（Authorization）'
+    url: /doc/zh/lb4/Loopback-component-authorization.html
+    translated: false
+    output: 'web, pdf'
+
+  - title: '启动和挂载LoopBack 3应用'
+    url: /doc/zh/lb4/Boot-and-Mount-a-LoopBack-3-application.html
+    translated: false
+    output: 'web, pdf'
+
+- title: '扩展LoopBack 4'
+  url: /doc/zh/lb4/Extending-LoopBack-4.html
+  translated: false
+  output: 'web, pdf'
+  children:
+
+  - title: '创建组件（Components）'
+    url: /doc/zh/lb4/Creating-components.html
+    translated: false
+    output: 'web, pdf'
+
+  - title: '创建修饰符（Decorators）'
+    url: /doc/zh/lb4/Creating-decorators.html
+    translated: false
+    output: 'web, pdf'
+
+  - title: '创建服务器（Servers）'
+    url: /doc/zh/lb4/Creating-servers.html
+    translated: false
+    output: 'web, pdf'
+
+  - title: '扩展点（Extension point）和扩展(Extensions）'
+    url: /doc/zh/lb4/Extension-point-and-extensions.html
+    translated: false
+    output: 'web, pdf'
+
+  - title: '扩展请求体分析（request body parsing）'
+    url: /doc/zh/lb4/Extending-request-body-parsing.html
+    translated: false
+    output: 'web, pdf'
+
+  - title: '扩展的生命周期'
+    url: /doc/zh/lb4/Extension-life-cycle.html
+    translated: false
+    output: 'web, pdf'
+
+  - title: '测试你的扩展'
+    url: /doc/zh/lb4/Testing-your-extension.html
+    translated: false
+    output: 'web, pdf'
+
+- title: 'LoopBack 4的创意'
+  url: /doc/zh/lb4/Crafting-LoopBack-4.html
+  translated: false
+  output: 'web, pdf'
+
+- title: '教程'
+  url: /doc/zh/lb4/Tutorials.html
+  translated: false
+  output: 'web, pdf'
+  children:
+
+  - title: 'Todo教程'
+    url: /doc/zh/lb4/todo-tutorial.html
+    translated: false
+    output: 'web, pdf'
+    children:
+
+    - title: '创建你的应用脚手架'
+      url: /doc/zh/lb4/todo-tutorial-scaffolding.html
+      translated: false
+      output: 'web, pdf'
+
+    - title: '添加Todo模型'
+      url: /doc/zh/lb4/todo-tutorial-model.html
+      translated: false
+      output: 'web, pdf'
+
+    - title: '添加一个数据源（Datasource）'
+      url: /doc/zh/lb4/todo-tutorial-datasource.html
+      translated: false
+      output: 'web, pdf'
+
+    - title: '添加一个存储库（Repository）'
+      url: /doc/zh/lb4/todo-tutorial-repository.html
+      translated: false
+      output: 'web, pdf'
+
+    - title: '添加一个控制器（Controller）'
+      url: /doc/zh/lb4/todo-tutorial-controller.html
+      translated: false
+      output: 'web, pdf'
+
+    - title: '把它们放在一起'
+      url: /doc/zh/lb4/todo-tutorial-putting-it-together.html
+      translated: false
+      output: 'web, pdf'
+
+    - title: '额外：集成地理编码（geo-coding）服务'
+      url: /doc/zh/lb4/todo-tutorial-geocoding-service.html
+      translated: false
+      output: 'web, pdf'
+
+  - title: 'TodoList教程'
+    url: /doc/zh/lb4/todo-list-tutorial.html
+    translated: false
+    output: 'web, pdf'
+    children:
+
+    - title: '添加TodoList模型（Model）'
+      url: /doc/zh/lb4/todo-list-tutorial-model.html
+      translated: false
+      output: 'web, pdf'
+
+    - title: '添加TodoList存储库（Repository）'
+      url: /doc/zh/lb4/todo-list-tutorial-repository.html
+      translated: false
+      output: 'web, pdf'
+
+    - title: '添加TodoList控制器（Controller）'
+      url: /doc/zh/lb4/todo-list-tutorial-controller.html
+      translated: false
+      output: 'web, pdf'
+
+    - title: '在关系型数据库（Relational Database）上运行'
+      url: /doc/zh/lb4/todo-list-tutorial-sqldb.html
+      translated: false
+      output: 'web, pdf'
+
+  - title: 'SOAP Web Service教程'
+    url: /doc/zh/lb4/soap-calculator-tutorial.html
+    translated: false
+    output: 'web, pdf'
+    children:
+
+    - title: 'SOAP Web Service总览'
+      url: /doc/zh/lb4/soap-calculator-tutorial-web-service-overview.html
+      translated: false
+      output: 'web, pdf'
+
+    - title: '应用脚手架'
+      url: /doc/zh/lb4/soap-calculator-tutorial-scaffolding.html
+      translated: false
+      output: 'web, pdf'
+
+    - title: '添加一个数据源（Datasource）'
+      url: /doc/zh/lb4/soap-calculator-tutorial-add-datasource.html
+      translated: false
+      output: 'web, pdf'
+
+    - title: '添加一个服务（Service）'
+      url: /doc/zh/lb4/soap-calculator-tutorial-add-service.html
+      translated: false
+      output: 'web, pdf'
+
+    - title: '添加一个控制器（Controller）'
+      url: /doc/zh/lb4/soap-calculator-tutorial-add-controller.html
+      translated: false
+      output: 'web, pdf'
+
+    - title: '运行和测试'
+      url: /doc/zh/lb4/soap-calculator-tutorial-run-and-test.html
+      translated: false
+      output: 'web, pdf'
+
+  - title: '使用LoopBack REST API建立一个Express Application'
+    url: /doc/zh/lb4/express-with-lb4-rest-tutorial.html
+    translated: false
+    output: 'web, pdf'
+
+  - title: '如何使用JWT认证（Authentication）确保你的LoopBack 4应用的安全性'
+    url: /doc/zh/lb4/Authentication-Tutorial.html
+    translated: false
+    output: 'web, pdf'
+
+- title: '示例代码'
+  url: /doc/zh/lb4/Examples.html
+  translated: false
+  output: 'web, pdf'
+
+- title: 'CLI参考'
+  url: /doc/zh/lb4/Command-line-interface.html
+  translated: false
+  output: 'web, pdf'
+  children:
+
+  - title: '应用（Application）生成器'
+    url: /doc/zh/lb4/Application-generator.html
+    translated: false
+    output: 'web, pdf'
+
+  - title: '控制器（Controller）生成器'
+    url: /doc/zh/lb4/Controller-generator.html
+    translated: false
+    output: 'web, pdf'
+
+  - title: '数据源（DataSource）生成器'
+    url: /doc/zh/lb4/DataSource-generator.html
+    translated: false
+    output: 'web, pdf'
+
+  - title: '模型（Model）生成器'
+    url: /doc/zh/lb4/Model-generator.html
+    translated: false
+    output: 'web, pdf'
+
+  - title: '数据库优先的模型生成/模型发现（Model discovery）'
+    url: /doc/zh/lb4/Discovering-models.html
+    translated: false
+    output: 'web, pdf'
+
+  - title: '关系（Relation）生成器'
+    url: /doc/zh/lb4/Relation-generator.html
+    translated: false
+    output: 'web, pdf'
+
+  - title: '存储库（Repository）生成器'
+    url: /doc/zh/lb4/Repository-generator.html
+    translated: false
+    output: 'web, pdf'
+
+  - title: '服务（Service）生成器'
+    url: /doc/zh/lb4/Service-generator.html
+    translated: false
+    output: 'web, pdf'
+
+  - title: 'OpenAPI生成器'
+    url: /doc/zh/lb4/OpenAPI-generator.html
+    translated: false
+    output: 'web, pdf'
+
+  - title: 'Life cycle observer（生命周期观察器）生成器'
+    url: /doc/zh/lb4/Life-cycle-observer-generator.html
+    translated: false
+    output: 'web, pdf'
+
+  - title: '拦截器（Interceptor）生成器'
+    url: /doc/zh/lb4/Interceptor-generator.html
+    translated: false
+    output: 'web, pdf'
+
+  - title: '扩展（Extension）生成器'
+    url: /doc/zh/lb4/Extension-generator.html
+    translated: false
+    output: 'web, pdf'
+
+  - title: '下载示例代码'
+    url: /doc/zh/lb4/Download-examples.html
+    translated: false
+    output: 'web, pdf'
+
+- title: '连接器（Connectors）参考'
+  url: /doc/zh/lb4/Connectors-reference.html
+  translated: false
+  output: 'web'
+  children:
+
+  - title: '内存（Memory）连接器'
+    url: /doc/zh/lb4/Memory-connector.html
+    translated: false
+    output: 'web, pdf'
+
+  - title: '数据库（Database）连接器'
+    url: /doc/zh/lb4/Database-connectors.html
+    translated: false
+    output: 'web'
+    children:
+
+    - title: 'Cassandra连接器'
+      url: /doc/zh/lb4/Cassandra-connector.html
+      translated: false
+      output: 'web, pdf'
+
+    - title: 'Cloudant连接器'
+      url: /doc/zh/lb4/Cloudant-connector.html
+      translated: false
+      output: 'web, pdf'
+
+    - title: 'DashDB连接器'
+      url: /doc/zh/lb4/DashDB.html
+      translated: false
+      output: 'web, pdf'
+
+    - title: 'DB2连接器'
+      url: /doc/zh/lb4/DB2-connector.html
+      translated: false
+      output: 'web, pdf'
+
+    - title: 'DB2 for iSeries连接器'
+      url: /doc/zh/lb4/DB2-iSeries-connector.html
+      translated: false
+      output: 'web, pdf'
+
+    - title: 'DB2 for z/OS'
+      url: /doc/zh/lb4/DB2-for-z-OS.html
+      translated: false
+      output: 'web, pdf'
+
+    - title: 'Informix连接器'
+      url: /doc/zh/lb4/Informix.html
+      translated: false
+      output: 'web, pdf'
+
+    - title: 'MongoDB连接器'
+      url: /doc/zh/lb4/MongoDB-connector.html
+      translated: false
+      output: 'web, pdf'
+      children:
+
+      - title: 'MongoDB连接器教程'
+        url: /doc/zh/lb4/Connecting-to-MongoDB.html
+        translated: false
+        output: 'web, pdf'
+
+      - title: '使用MongoLab'
+        url: /doc/zh/lb4/Using-MongoLab.html
+        translated: false
+        output: 'web, pdf'
+
+    - title: 'MySQL连接器'
+      url: /doc/zh/lb4/MySQL-connector.html
+      translated: false
+      output: 'web, pdf'
+      children:
+
+      - title: 'MySQL连接器教程'
+        url: /doc/zh/lb4/Connecting-to-MySQL.html
+        translated: false
+        output: 'web, pdf'
+
+    - title: 'Oracle连接器'
+      url: /doc/zh/lb4/Oracle-connector.html
+      translated: false
+      output: 'web, pdf'
+      children:
+
+      - title: '安装Oracle连接器'
+        url: /doc/zh/lb4/Installing-the-Oracle-connector.html
+        translated: false
+        output: 'web, pdf'
+
+      - title: 'Oracle连接器教程'
+        url: /doc/zh/lb4/Connecting-to-Oracle.html
+        translated: false
+        output: 'web, pdf'
+
+    - title: 'PostgreSQL连接器'
+      url: /doc/zh/lb4/PostgreSQL-connector.html
+      translated: false
+      output: 'web, pdf'
+      children:
+
+      - title: 'PostgreSQL连接器教程'
+        url: /doc/zh/lb4/Connecting-to-PostgreSQL.html
+        translated: false
+        output: 'web, pdf'
+
+    - title: 'Redis连接器'
+      url: /doc/zh/lb4/Redis-connector.html
+      translated: false
+      output: 'web, pdf'
+
+    - title: 'Redis键值对（key-value）连接器'
+      url: /doc/zh/lb4/kv-redis-connector.html
+      translated: false
+      output: 'web, pdf'
+      children:
+
+      - title: '键值对连接器示例'
+        url: /doc/zh/lb4/Example-kv-connector.html
+        translated: false
+        output: 'web, pdf'
+
+    - title: '微软SQL Server连接器'
+      url: /doc/zh/lb4/SQL-Server-connector.html
+      translated: false
+      output: 'web, pdf'
+      children:
+
+      - title: '微软SQL Server连接器教程'
+        url: /doc/zh/lb4/Connecting-to-Microsoft-SQL-Server.html
+        translated: false
+        output: 'web, pdf'
+
+    - title: 'SQLite3连接器'
+      url: /doc/zh/lb4/SQLite3.html
+      translated: false
+      output: 'web, pdf'
+
+    - title: 'z/OS企业版连接器'
+      url: /doc/zh/lb4/zOSconnectEE.html
+      translated: false
+      output: 'web, pdf'
+
+  - title: '其他连接器'
+    url: /doc/zh/lb4/Other-connectors.html
+    translated: false
+    output: 'web'
+    children:
+
+    - title: '电子邮件（Email）连接器'
+      url: /doc/zh/lb4/Email-connector.html
+      translated: false
+      output: 'web, pdf'
+
+    - title: 'JSON RPC连接器'
+      url: /doc/zh/lb4/JSON-RPC-connector.html
+      translated: false
+      output: 'web, pdf'
+
+    - title: 'MQ Light连接器'
+      url: /doc/zh/lb4/MQLight-connector.html
+      translated: false
+      output: 'web, pdf'
+
+    - title: 'Push连接器'
+      url: /doc/zh/lb4/Push-connector.html
+      translated: false
+      output: 'web, pdf'
+
+    - title: 'Remote连接器'
+      url: /doc/zh/lb4/Remote-connector.html
+      translated: false
+      output: 'web, pdf'
+      children:
+
+      - title: 'Remote连接器教程'
+        url: /doc/zh/lb4/Remote-connector-example.html
+        translated: false
+        output: 'web, pdf'
+
+      - title: 'Strong Remoting'
+        url: /doc/zh/lb4/Strong-Remoting.html
+        translated: false
+        output: 'web, pdf'
+
+    - title: 'REST连接器'
+      url: /doc/zh/lb4/REST-connector.html
+      translated: false
+      output: 'web, pdf'
+      children:
+
+      - title: 'REST连接器示例'
+        url: /doc/zh/lb4/REST-connector-example.html
+        translated: false
+        output: 'web, pdf'
+
+    - title: 'SOAP连接器'
+      url: /doc/zh/lb4/SOAP-connector.html
+      translated: false
+      output: 'web, pdf'
+      children:
+
+      - title: 'Strong-soap'
+        url: /doc/zh/lb4/Strong-soap.html
+        translated: false
+        output: 'web, pdf'
+
+      - title: 'SOAP连接器示例'
+        url: /doc/zh/lb4/SOAP-Connector-example.html
+        translated: false
+        output: 'web, pdf'
+
+      - title: '连接到SOAP web services'
+        url: /doc/zh/lb4/Connecting-to-SOAP.html
+        translated: false
+        output: 'web, pdf'
+
+    - title: 'Storage连接器'
+      url: /doc/zh/lb4/Storage-connector.html
+      translated: false
+      output: 'web, pdf'
+
+    - title: 'Swagger连接器'
+      url: /doc/zh/lb4/Swagger-connector.html
+      translated: false
+      output: 'web, pdf'
+
+  - title: 'Community连接器'
+    url: /doc/zh/lb4/Community-connectors.html
+    translated: false
+    output: 'web, pdf'
+
+- title: 'API文档'
+  url: /doc/zh/lb4/apidocs.index.html
+  translated: false
+  output: 'web, pdf'
+
+- title: 'LoopBack 3.x用户请读'
+  url: /doc/zh/lb4/LoopBack-3.x.html
+  translated: false
+  output: 'web, pdf'
+  children:
+
+  - title: '理解LoopBack 3和LoopBack 4的不同'
+    url: /doc/zh/lb4/Understanding-the-differences.html
+    translated: false
+    output: 'web, pdf'
+
+  - title: '从LoopBack 3迁移'
+    url: /doc/zh/lb4/Migrating-from-LoopBack-3.html
+    translated: false
+    output: 'web, pdf'
+
+- title: '最佳实践'
+  url: /doc/zh/lb4/Best-practices.html
+  translated: false
+  output: 'web, pdf'
+  children:
+
+  - title: '使用代码优先（code-first）方式定义API'
+    url: /doc/zh/lb4/Defining-the-API-using-code-first-approach.html
+    translated: false
+    output: 'web, pdf'
+
+  - title: '定义你的测试策略'
+    url: /doc/zh/lb4/Defining-your-testing-strategy.html
+    translated: false
+    output: 'web, pdf'
+
+  - title: '测试你的应用'
+    url: /doc/zh/lb4/Testing-your-application.html
+    translated: false
+    output: 'web, pdf'
+
+- title: '贡献LoopBack 4'
+  url: /doc/zh/lb4/code-contrib-lb4.html
+  translated: false
+  output: 'web, pdf'
+  children:
+
+    - title: '提交pull request给LoopBack 4'
+      url: /doc/zh/lb4/submitting_a_pr.html
+      translated: false
+      output: 'web, pdf'
+
+- title: '参考'
+  url: /doc/zh/lb4/Reference.html
+  translated: false
+  output: 'web, pdf'
+  children:
+
+  - title: '考虑GDPR准备情况'
+    url: /doc/zh/lb4/Deploy-for-GDPR-readiness.html
+    translated: false
+    output: 'web, pdf'
