@@ -41,5 +41,7 @@ export declare class TestSandbox
 |  [getPath()](./testlab.testsandbox.getpath.md) |  | Returns the path of the TestSandbox |
 |  [mkdir(dir)](./testlab.testsandbox.mkdir.md) |  | Makes a directory in the TestSandbox |
 |  [reset()](./testlab.testsandbox.reset.md) |  | Resets the TestSandbox. (Remove all files in it). |
+|  [writeJsonFile(dest, data)](./testlab.testsandbox.writejsonfile.md) |  | Creates a new file and writes the given data serialized as JSON. |
+|  [writeTextFile(dest, data)](./testlab.testsandbox.writetextfile.md) |  | Creates a new file and writes the given data as a UTF-8-encoded text. |
 
 

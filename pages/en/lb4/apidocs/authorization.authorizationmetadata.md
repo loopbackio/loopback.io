@@ -28,6 +28,7 @@ export interface AuthorizationMetadata
 |  [deniedRoles](./authorization.authorizationmetadata.deniedroles.md) | <code>string[]</code> | Roles that are denied access |
 |  [resource](./authorization.authorizationmetadata.resource.md) | <code>string</code> | Name of the resource, default to the method name |
 |  [scopes](./authorization.authorizationmetadata.scopes.md) | <code>string[]</code> | Define the access scopes |
+|  [skip](./authorization.authorizationmetadata.skip.md) | <code>boolean</code> | A flag to skip authorization |
 |  [voters](./authorization.authorizationmetadata.voters.md) | <code>(Authorizer &#124; BindingAddress&lt;Authorizer&gt;)[]</code> | Voters that help make the authorization decision |
 
 

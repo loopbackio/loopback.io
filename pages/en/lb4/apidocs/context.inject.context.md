@@ -17,7 +17,7 @@ Inject the context object.
 <b>Signature:</b>
 
 ```typescript
-context: () => (target: Object, member: string, methodDescriptorOrParameterIndex?: number | TypedPropertyDescriptor<any> | undefined) => void
+context: () => (target: Object, member: string | undefined, methodDescriptorOrParameterIndex?: number | TypedPropertyDescriptor<any> | undefined) => void
 ```
 
 ## Example

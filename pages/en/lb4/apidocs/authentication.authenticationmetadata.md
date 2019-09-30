@@ -24,7 +24,8 @@ export interface AuthenticationMetadata
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [options](./authentication.authenticationmetadata.options.md) | <code>object</code> |  |
-|  [strategy](./authentication.authenticationmetadata.strategy.md) | <code>string</code> |  |
+|  [options](./authentication.authenticationmetadata.options.md) | <code>{</code><br/><code>        [name: string]: any;</code><br/><code>    }</code> | Options for the authentication strategy |
+|  [skip](./authentication.authenticationmetadata.skip.md) | <code>boolean</code> | A flag to skip authentication |
+|  [strategy](./authentication.authenticationmetadata.strategy.md) | <code>string</code> | Name of the authentication strategy |
 
 

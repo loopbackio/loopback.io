@@ -17,7 +17,7 @@ Inject the binding object for the given key. This is useful if a binding needs t
 <b>Signature:</b>
 
 ```typescript
-binding: (bindingKey: BindingAddress<unknown>, metadata?: InjectBindingMetadata | undefined) => (target: Object, member: string, methodDescriptorOrParameterIndex?: number | TypedPropertyDescriptor<any> | undefined) => void
+binding: (bindingKey: BindingAddress<unknown>, metadata?: InjectBindingMetadata | undefined) => (target: Object, member: string | undefined, methodDescriptorOrParameterIndex?: number | TypedPropertyDescriptor<any> | undefined) => void
 ```
 
 ## Example

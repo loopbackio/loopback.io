@@ -10,11 +10,18 @@ permalink: /doc/en/lb4/apidocs.repository.belongstoaccessor.html
 
 [Home](./index.md) &gt; [@loopback/repository](./repository.md) &gt; [BelongsToAccessor](./repository.belongstoaccessor.md)
 
-## BelongsToAccessor type
+## BelongsToAccessor interface
 
 <b>Signature:</b>
 
 ```typescript
-export declare type BelongsToAccessor<Target extends Entity, SourceId> = (sourceId: SourceId) => Promise<Target>;
+export interface BelongsToAccessor<Target extends Entity, SourceId> 
 ```
+
+## Properties
+
+|  Property | Type | Description |
+|  --- | --- | --- |
+|  [inclusionResolver](./repository.belongstoaccessor.inclusionresolver.md) | <code>InclusionResolver&lt;Entity, Target&gt;</code> | Use <code>resolver</code> property to obtain an InclusionResolver for this relation. |
+
 

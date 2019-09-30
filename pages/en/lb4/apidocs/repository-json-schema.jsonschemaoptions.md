@@ -26,5 +26,6 @@ export interface JsonSchemaOptions<T extends object>
 |  [includeRelations](./repository-json-schema.jsonschemaoptions.includerelations.md) | <code>boolean</code> | Set this flag if you want the schema to define navigational properties for model relations. |
 |  [optional](./repository-json-schema.jsonschemaoptions.optional.md) | <code>(keyof T)[]</code> | List of model properties to mark as optional. Overrides the "partial" option if it is not empty. |
 |  [partial](./repository-json-schema.jsonschemaoptions.partial.md) | <code>boolean</code> | Set this flag to mark all model properties as optional. This is typically used to describe request body of PATCH endpoints. This option will be overridden by the "optional" option if it is set and non-empty. |
+|  [title](./repository-json-schema.jsonschemaoptions.title.md) | <code>string</code> | The title to use in the generated schema.<!-- -->When using options like <code>exclude</code>, the auto-generated title can be difficult to read for humans. Use this option to change the title to a more meaningful value. |
 
 

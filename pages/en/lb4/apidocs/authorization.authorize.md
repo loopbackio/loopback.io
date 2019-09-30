@@ -31,6 +31,7 @@ export declare namespace authorize
 |  [denyAllExcept](./authorization.authorize.denyallexcept.md) | Deny all but the given roles |
 |  [denyUnauthenticated](./authorization.authorize.denyunauthenticated.md) | Deny unauthenticated users |
 |  [scope](./authorization.authorize.scope.md) | Shortcut to specify access scopes |
+|  [skip](./authorization.authorize.skip.md) | Skip authorization |
 |  [vote](./authorization.authorize.vote.md) | Shortcut to configure voters |
 
 

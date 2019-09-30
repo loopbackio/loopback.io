@@ -24,7 +24,7 @@ export declare class AuthMetadataProvider implements Provider<AuthenticationMeta
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)(controllerClass, methodName)](./authentication.authmetadataprovider._constructor_.md) |  | Constructs a new instance of the <code>AuthMetadataProvider</code> class |
+|  [(constructor)(controllerClass, methodName, options)](./authentication.authmetadataprovider._constructor_.md) |  | Constructs a new instance of the <code>AuthMetadataProvider</code> class |
 
 ## Methods
 

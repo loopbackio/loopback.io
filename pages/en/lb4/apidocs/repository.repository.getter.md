@@ -17,7 +17,7 @@ Decorator used to inject a Getter for a repository Mainly intended for usage wit
 <b>Signature:</b>
 
 ```typescript
-function getter(nameOrClass: string | Class<Repository<Model>>): (target: Object, member: string, methodDescriptorOrParameterIndex?: number | TypedPropertyDescriptor<any> | undefined) => void;
+function getter(nameOrClass: string | Class<Repository<Model>>): (target: Object, member: string | undefined, methodDescriptorOrParameterIndex?: number | TypedPropertyDescriptor<any> | undefined) => void;
 ```
 
 ## Parameters
@@ -28,6 +28,6 @@ function getter(nameOrClass: string | Class<Repository<Model>>): (target: Object
 
 <b>Returns:</b>
 
-`(target: Object, member: string, methodDescriptorOrParameterIndex?: number | TypedPropertyDescriptor<any> | undefined) => void`
+`(target: Object, member: string | undefined, methodDescriptorOrParameterIndex?: number | TypedPropertyDescriptor<any> | undefined) => void`
 
 

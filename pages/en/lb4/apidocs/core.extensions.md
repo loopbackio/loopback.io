@@ -17,7 +17,7 @@ Shortcut to inject extensions for the given extension point.
 <b>Signature:</b>
 
 ```typescript
-export declare function extensions(extensionPointName?: string): (target: Object, member: string, methodDescriptorOrParameterIndex?: number | TypedPropertyDescriptor<any> | undefined) => void;
+export declare function extensions(extensionPointName?: string): (target: Object, member: string | undefined, methodDescriptorOrParameterIndex?: number | TypedPropertyDescriptor<any> | undefined) => void;
 ```
 
 ## Parameters
@@ -28,7 +28,7 @@ export declare function extensions(extensionPointName?: string): (target: Object
 
 <b>Returns:</b>
 
-`(target: Object, member: string, methodDescriptorOrParameterIndex?: number | TypedPropertyDescriptor<any> | undefined) => void`
+`(target: Object, member: string | undefined, methodDescriptorOrParameterIndex?: number | TypedPropertyDescriptor<any> | undefined) => void`
 
 ## Example
 

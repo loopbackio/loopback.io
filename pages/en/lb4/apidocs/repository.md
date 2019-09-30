@@ -61,30 +61,42 @@ permalink: /doc/en/lb4/apidocs.repository.html
 |  --- | --- |
 |  [belongsTo(targetResolver, definition, propertyDefinition)](./repository.belongsto.md) | Decorator for belongsTo |
 |  [bindModel(modelClass, ds)](./repository.bindmodel.md) | This is a bridge to the legacy DAO class. The function mixes DAO methods into a model class and attach it to a given data source |
+|  [buildLookupMap(list, keyName, reducer)](./repository.buildlookupmap.md) | Returns a map which maps key values(ids) to instances. The instances can be grouped by different strategies. |
 |  [buildModelDefinition(target, def)](./repository.buildmodeldefinition.md) | Build model definition from decorations |
 |  [constrainDataObject(originalData, constraint)](./repository.constraindataobject.md) | A utility function which takes a model instance data and enforces constraint(s) on it |
 |  [constrainDataObjects(originalData, constraint)](./repository.constraindataobjects.md) | A utility function which takes an array of model instance data and enforces constraint(s) on it |
 |  [constrainFilter(originalFilter, constraint)](./repository.constrainfilter.md) | A utility function which takes a filter and enforces constraint(s) on it |
 |  [constrainWhere(originalWhere, constraint)](./repository.constrainwhere.md) | A utility function which takes a where filter and enforces constraint(s) on it |
 |  [createBelongsToAccessor(belongsToMetadata, targetRepoGetter, sourceRepository)](./repository.createbelongstoaccessor.md) | Enforces a BelongsTo constraint on a repository |
+|  [createBelongsToInclusionResolver(meta, getTargetRepo)](./repository.createbelongstoinclusionresolver.md) | Creates InclusionResolver for BelongsTo relation. Notice that this function only generates the inclusionResolver. It doesn't register it for the source repository.<!-- -->Notice: scope field for inclusion is not supported yet |
+|  [createHasManyInclusionResolver(meta, getTargetRepo)](./repository.createhasmanyinclusionresolver.md) | Creates InclusionResolver for HasMany relation. Notice that this function only generates the inclusionResolver. It doesn't register it for the source repository.<!-- -->Notice: scope field for inclusion is not supported yet. |
 |  [createHasManyRepositoryFactory(relationMetadata, targetRepositoryGetter)](./repository.createhasmanyrepositoryfactory.md) | Enforces a constraint on a repository based on a relationship contract between models. For example, if a Customer model is related to an Order model via a HasMany relation, then, the relational repository returned by the factory function would be constrained by a Customer model instance's id(s). |
 |  [createHasOneRepositoryFactory(relationMetadata, targetRepositoryGetter)](./repository.createhasonerepositoryfactory.md) | Enforces a constraint on a repository based on a relationship contract between models. For example, if a Customer model is related to an Address model via a HasOne relation, then, the relational repository returned by the factory function would be constrained by a Customer model instance's id(s). |
+|  [deduplicate(input)](./repository.deduplicate.md) | Dedupe an array |
 |  [embedsMany(definition)](./repository.embedsmany.md) | Decorator for embedsMany |
 |  [embedsOne(definition)](./repository.embedsone.md) | Decorator for embedsOne |
 |  [ensurePromise(p)](./repository.ensurepromise.md) | Ensure the value is a promise |
 |  [filterTemplate(strings, keys)](./repository.filtertemplate.md) |  |
 |  [findByForeignKeys(targetRepository, fkName, fkValues, scope, options)](./repository.findbyforeignkeys.md) | Finds model instances that contain any of the provided foreign key values. |
+|  [flattenMapByKeys(sourceIds, targetMap)](./repository.flattenmapbykeys.md) | Returns an array of instances from the target map. The order of arrays is based on the order of sourceIds |
+|  [flattenTargetsOfOneToManyRelation(sourceIds, targetEntities, targetKey)](./repository.flattentargetsofonetomanyrelation.md) | Returns an array of instances. The order of arrays is based on as a result of one to many relation. The order of arrays is based on the order of sourceIds |
+|  [flattenTargetsOfOneToOneRelation(sourceIds, targetEntities, targetKey)](./repository.flattentargetsofonetoonerelation.md) | Returns an array of instances. The order of arrays is based on the order of sourceIds |
+|  [getKeyValue(model, keyName)](./repository.getkeyvalue.md) | Returns value of a keyName. Aims to resolve ObjectId problem of Mongo. |
 |  [getModelRelations(modelCtor)](./repository.getmodelrelations.md) | Get metadata of all relations defined on a given model class. |
 |  [hasMany(targetResolver, definition)](./repository.hasmany.md) | Decorator for hasMany Calls property.array decorator underneath the hood and infers foreign key name from target model name unless explicitly specified |
 |  [hasOne(targetResolver, definition)](./repository.hasone.md) |  |
 |  [includeRelatedModels(targetRepository, entities, include, options)](./repository.includerelatedmodels.md) | Returns model instances that include related models that have a registered resolver. |
+|  [isBsonType(value)](./repository.isbsontype.md) | Checks if the value is BsonType (mongodb) It uses a general way to check the type ,so that it can detect different versions of bson that might be used in the code base. Might need to update in the future. |
 |  [isBuiltinType(fn)](./repository.isbuiltintype.md) | Check if the provided function is a built-in type provided by JavaScript and/or Node.js. E.g. <code>Number</code>, <code>Array</code>, <code>Buffer</code>, etc. |
 |  [isEntityNotFoundError(e)](./repository.isentitynotfounderror.md) |  |
 |  [isFilter(candidate)](./repository.isfilter.md) | TypeGuard for Filter |
 |  [isInvalidRelationError(e)](./repository.isinvalidrelationerror.md) |  |
 |  [isTypeResolver(fn)](./repository.istyperesolver.md) | A function that checks whether a function is a TypeResolver or not. |
 |  [model(definition)](./repository.model.md) | Decorator for model definitions |
+|  [normalizeKey(rawKey)](./repository.normalizekey.md) | Workaround for MongoDB, where the connector returns ObjectID values even for properties configured with "type: string". |
 |  [property(definition)](./repository.property.md) | Decorator for model properties |
+|  [reduceAsArray(acc, it)](./repository.reduceasarray.md) | Returns an array of instances. For HasMany relation usage. |
+|  [reduceAsSingleItem(\_acc, it)](./repository.reduceassingleitem.md) | Returns a single of an instance. For HasOne and BelongsTo relation usage. |
 |  [referencesMany(definition)](./repository.referencesmany.md) | Decorator for referencesMany |
 |  [referencesOne(definition)](./repository.referencesone.md) | Decorator for referencesOne |
 |  [relation(definition)](./repository.relation.md) | Decorator for relations |
@@ -101,6 +113,7 @@ permalink: /doc/en/lb4/apidocs.repository.html
 |  [AndClause](./repository.andclause.md) | And clause |
 |  [AnyObject](./repository.anyobject.md) | Objects with open properties |
 |  [ApplicationWithRepositories](./repository.applicationwithrepositories.md) | Interface for an Application mixed in with RepositoryMixin |
+|  [BelongsToAccessor](./repository.belongstoaccessor.md) |  |
 |  [BelongsToDefinition](./repository.belongstodefinition.md) |  |
 |  [BelongsToRepository](./repository.belongstorepository.md) | CRUD operations for a target repository of a BelongsTo relation |
 |  [Class](./repository.class.md) | Interface for classes with <code>new</code> operator and static properties/methods |
@@ -116,8 +129,10 @@ permalink: /doc/en/lb4/apidocs.repository.html
 |  [Filter](./repository.filter.md) | Query filter object |
 |  [HasManyDefinition](./repository.hasmanydefinition.md) |  |
 |  [HasManyRepository](./repository.hasmanyrepository.md) | CRUD operations for a target repository of a HasMany relation |
+|  [HasManyRepositoryFactory](./repository.hasmanyrepositoryfactory.md) |  |
 |  [HasOneDefinition](./repository.hasonedefinition.md) |  |
 |  [HasOneRepository](./repository.hasonerepository.md) | CRUD operations for a target repository of a HasMany relation |
+|  [HasOneRepositoryFactory](./repository.hasonerepositoryfactory.md) |  |
 |  [Inclusion](./repository.inclusion.md) | Inclusion of related items<!-- -->Note: scope means filter on related items<!-- -->Example: <code>{relation: 'aRelationName', scope: {&lt;AFilterObject&gt;}}</code> |
 |  [KeyValueRepository](./repository.keyvaluerepository.md) | Key/Value operations for connector implementations |
 |  [KVConnector](./repository.kvconnector.md) | Key/Value operations for connector implementations |
@@ -161,7 +176,6 @@ permalink: /doc/en/lb4/apidocs.repository.html
 
 |  Type Alias | Description |
 |  --- | --- |
-|  [BelongsToAccessor](./repository.belongstoaccessor.md) |  |
 |  [Callback](./repository.callback.md) | Type alias for Node.js callback functions |
 |  [Command](./repository.command.md) | Type for a command |
 |  [Condition](./repository.condition.md) | Condition clause |
@@ -172,8 +186,6 @@ permalink: /doc/en/lb4/apidocs.repository.html
 |  [EntityData](./repository.entitydata.md) |  |
 |  [EntityResolver](./repository.entityresolver.md) |  |
 |  [Fields](./repository.fields.md) | Selection of fields<!-- -->Example: <code>{afieldname: true}</code> |
-|  [HasManyRepositoryFactory](./repository.hasmanyrepositoryfactory.md) |  |
-|  [HasOneRepositoryFactory](./repository.hasonerepositoryfactory.md) |  |
 |  [InclusionResolver](./repository.inclusionresolver.md) |  |
 |  [KeyOf](./repository.keyof.md) | Key types of a given model, excluding operators |
 |  [KeyValueFilter](./repository.keyvaluefilter.md) | Filter for keys |
@@ -189,6 +201,7 @@ permalink: /doc/en/lb4/apidocs.repository.html
 |  [RelationMetadata](./repository.relationmetadata.md) | A union type describing all possible Relation metadata objects. |
 |  [RepositoryDecorator](./repository.repositorydecorator.md) | Type definition for decorators returned by <code>@repository</code> decorator factory |
 |  [ShortHandEqualType](./repository.shorthandequaltype.md) | Value types for <code>{propertyName: value}</code> |
+|  [StringKeyOf](./repository.stringkeyof.md) |  |
 |  [TransactionalEntityRepository](./repository.transactionalentityrepository.md) | A type for CRUD repositories that are backed by IDs and support Transactions |
 |  [TypeResolver](./repository.typeresolver.md) | A type resolver is a function that returns a class representing the type, typically a Model or Entity (e.g. Product).<!-- -->We use type resolvers to break require() loops when defining relations. The target model (class) is provided via a provider, thus deferring the actual reference to the class itself until later, when both sides of the relation are created as JavaScript classes. |
 |  [Where](./repository.where.md) | Where clause |

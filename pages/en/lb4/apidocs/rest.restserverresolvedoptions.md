@@ -27,6 +27,7 @@ export interface RestServerResolvedOptions
 |  [cors](./rest.restserverresolvedoptions.cors.md) | <code>cors.CorsOptions</code> |  |
 |  [expressSettings](./rest.restserverresolvedoptions.expresssettings.md) | <code>{</code><br/><code>        [name: string]: any;</code><br/><code>    }</code> |  |
 |  [openApiSpec](./rest.restserverresolvedoptions.openapispec.md) | <code>OpenApiSpecOptions</code> |  |
+|  [path](./rest.restserverresolvedoptions.path.md) | <code>string</code> |  |
 |  [port](./rest.restserverresolvedoptions.port.md) | <code>number</code> |  |
 |  [requestBodyParser](./rest.restserverresolvedoptions.requestbodyparser.md) | <code>RequestBodyParserOptions</code> |  |
 |  [router](./rest.restserverresolvedoptions.router.md) | <code>RestRouterOptions</code> |  |

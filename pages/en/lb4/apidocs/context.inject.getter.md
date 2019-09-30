@@ -21,6 +21,6 @@ See also `Getter<T>`<!-- -->.
 <b>Signature:</b>
 
 ```typescript
-getter: (bindingSelector: BindingSelector<unknown>, metadata?: InjectionMetadata | undefined) => (target: Object, member: string, methodDescriptorOrParameterIndex?: number | TypedPropertyDescriptor<any> | undefined) => void
+getter: (bindingSelector: BindingSelector<unknown>, metadata?: InjectionMetadata | undefined) => (target: Object, member: string | undefined, methodDescriptorOrParameterIndex?: number | TypedPropertyDescriptor<any> | undefined) => void
 ```
 

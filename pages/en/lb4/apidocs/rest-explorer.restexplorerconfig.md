@@ -19,6 +19,7 @@ Options to configure API Explorer UI
 ```typescript
 export declare type RestExplorerConfig = {
     path?: string;
+    useSelfHostedSpec?: false;
 };
 ```
 

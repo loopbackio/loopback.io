@@ -16,11 +16,20 @@ Get the OpenAPI specification describing the REST API provided by this applicati
 
 This method merges operations (HTTP endpoints) from the following sources: - `app.api(spec)` - `app.controller(MyController)` - `app.route(route)` - `app.route('get', '/greet', operationSpec, MyController, 'greet')`
 
+If the optional `requestContext` is provided, then the `servers` list in the returned spec will be updated to work in that context. Specifically: 1. if `config.openApi.setServersFromRequest` is enabled, the servers list will be replaced with the context base url 2. Any `servers` entries with a path of `/` will have that path replaced with `requestContext.basePath`
+
 <b>Signature:</b>
 
 ```typescript
-getApiSpec(): OpenApiSpec;
+getApiSpec(requestContext?: RequestContext): OpenApiSpec;
 ```
+
+## Parameters
+
+|  Parameter | Type | Description |
+|  --- | --- | --- |
+|  requestContext | <code>RequestContext</code> | Optional context to update the <code>servers</code> list in the returned spec |
+
 <b>Returns:</b>
 
 `OpenApiSpec`

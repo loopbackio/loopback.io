@@ -27,6 +27,7 @@ export interface CrudFeatures
 |  [emptyValue](./repository-tests.crudfeatures.emptyvalue.md) | <code>undefined &#124; null</code> | The value used by the database to store properties set to <code>undefined</code>. Typically, SQL databases store both <code>undefined</code> and <code>null</code> as <code>null</code>.<!-- -->Default: <code>undefined</code> |
 |  [freeFormProperties](./repository-tests.crudfeatures.freeformproperties.md) | <code>boolean</code> | Does the database (or the connector) require a fixed schema, or can it support additional (free-form) properties? SQL databases typically don't support free-form properties.<!-- -->Default: <code>true</code> |
 |  [idType](./repository-tests.crudfeatures.idtype.md) | <code>'string' &#124; 'number'</code> | What type is used for auto-generated primary keys? - SQL databases typically use auto-incremented numbers, - NoSQL databases tend to use GUID/UUID strings.<!-- -->Default: <code>'string'</code>. |
+|  [supportsInclusionResolvers](./repository-tests.crudfeatures.supportsinclusionresolvers.md) | <code>boolean</code> | Does the repository provide <code>inclusionResolvers</code> object where resolvers can be registered?<!-- -->Default: <code>true</code> |
 |  [supportsTransactions](./repository-tests.crudfeatures.supportstransactions.md) | <code>boolean</code> | Does the connector support using transactions for performing CRUD operations atomically and being able to commit or rollback the changes? SQL databases usually support transactions<!-- -->Default: <code>false</code> |
 
 

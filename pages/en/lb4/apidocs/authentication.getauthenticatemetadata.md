@@ -17,14 +17,14 @@ Fetch authentication metadata stored by `@authenticate` decorator.
 <b>Signature:</b>
 
 ```typescript
-export declare function getAuthenticateMetadata(controllerClass: Constructor<{}>, methodName: string): AuthenticationMetadata | undefined;
+export declare function getAuthenticateMetadata(targetClass: Constructor<{}>, methodName: string): AuthenticationMetadata | undefined;
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  controllerClass | <code>Constructor&lt;{}&gt;</code> | Target controller |
+|  targetClass | <code>Constructor&lt;{}&gt;</code> | Target controller |
 |  methodName | <code>string</code> | Target method |
 
 <b>Returns:</b>

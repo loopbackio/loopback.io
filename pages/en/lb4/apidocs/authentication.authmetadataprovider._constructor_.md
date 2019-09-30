@@ -17,7 +17,7 @@ Constructs a new instance of the `AuthMetadataProvider` class
 <b>Signature:</b>
 
 ```typescript
-constructor(controllerClass: Constructor<{}>, methodName: string);
+constructor(controllerClass: Constructor<{}>, methodName: string, options?: AuthenticationOptions);
 ```
 
 ## Parameters
@@ -26,5 +26,6 @@ constructor(controllerClass: Constructor<{}>, methodName: string);
 |  --- | --- | --- |
 |  controllerClass | <code>Constructor&lt;{}&gt;</code> |  |
 |  methodName | <code>string</code> |  |
+|  options | <code>AuthenticationOptions</code> |  |
 
 

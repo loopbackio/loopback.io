@@ -12,9 +12,13 @@ permalink: /doc/en/lb4/apidocs.authentication.authenticationmetadata.options.htm
 
 ## AuthenticationMetadata.options property
 
+Options for the authentication strategy
+
 <b>Signature:</b>
 
 ```typescript
-options?: object;
+options?: {
+        [name: string]: any;
+    };
 ```
 

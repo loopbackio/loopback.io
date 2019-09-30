@@ -10,25 +10,18 @@ permalink: /doc/en/lb4/apidocs.authentication.authenticate.html
 
 [Home](./index.md) &gt; [@loopback/authentication](./authentication.md) &gt; [authenticate](./authentication.authenticate.md)
 
-## authenticate() function
-
-Mark a controller method as requiring authenticated user.
+## authenticate namespace
 
 <b>Signature:</b>
 
 ```typescript
-export declare function authenticate(strategyName: string, options?: object): MethodDecorator;
+export declare namespace authenticate 
 ```
 
-## Parameters
+## Variables
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  strategyName | <code>string</code> | The name of the authentication strategy to use. |
-|  options | <code>object</code> | Additional options to configure the authentication. |
-
-<b>Returns:</b>
-
-`MethodDecorator`
+|  Variable | Description |
+|  --- | --- |
+|  [skip](./authentication.authenticate.skip.md) | <code>@authenticate.skip()</code> - a sugar decorator to skip authentication |
 
 

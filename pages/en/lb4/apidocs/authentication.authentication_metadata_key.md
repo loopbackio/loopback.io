@@ -12,7 +12,7 @@ permalink: /doc/en/lb4/apidocs.authentication.authentication_metadata_key.html
 
 ## AUTHENTICATION\_METADATA\_KEY variable
 
-The key used to store log-related via @<!-- -->loopback/metadata and reflection.
+Alias for AUTHENTICATION\_METADATA\_METHOD\_KEY to keep it backward compatible
 
 <b>Signature:</b>
 

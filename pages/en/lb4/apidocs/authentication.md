@@ -27,8 +27,8 @@ permalink: /doc/en/lb4/apidocs.authentication.html
 
 |  Function | Description |
 |  --- | --- |
-|  [authenticate(strategyName, options)](./authentication.authenticate.md) | Mark a controller method as requiring authenticated user. |
-|  [getAuthenticateMetadata(controllerClass, methodName)](./authentication.getauthenticatemetadata.md) | Fetch authentication metadata stored by <code>@authenticate</code> decorator. |
+|  [authenticate(strategyNameOrMetadata, options)](./authentication.authenticate.md) | Mark a controller method as requiring authenticated user. |
+|  [getAuthenticateMetadata(targetClass, methodName)](./authentication.getauthenticatemetadata.md) | Fetch authentication metadata stored by <code>@authenticate</code> decorator. |
 |  [registerAuthenticationStrategy(context, strategyClass)](./authentication.registerauthenticationstrategy.md) | Registers an authentication strategy as an extension of the AuthenticationBindings.AUTHENTICATION\_STRATEGY\_EXTENSION\_POINT\_NAME extension point. |
 
 ## Interfaces
@@ -37,6 +37,7 @@ permalink: /doc/en/lb4/apidocs.authentication.html
 |  --- | --- |
 |  [AuthenticateFn](./authentication.authenticatefn.md) | interface definition of a function which accepts a request and returns an authenticated user |
 |  [AuthenticationMetadata](./authentication.authenticationmetadata.md) | Authentication metadata stored via Reflection API |
+|  [AuthenticationOptions](./authentication.authenticationoptions.md) | Options for authentication component |
 |  [AuthenticationStrategy](./authentication.authenticationstrategy.md) | An interface that describes the common authentication strategy.<!-- -->An authentication strategy is a class with an 'authenticate' method that verifies a user's credentials and returns the corresponding user profile. |
 |  [TokenService](./authentication.tokenservice.md) | An interface for generating and verifying a token |
 |  [UserService](./authentication.userservice.md) | A service for performing the login action in an authentication strategy.<!-- -->Usually a client user uses basic credentials to login, or is redirected to a third-party application that grants limited access.<!-- -->Note: The creation of user is handled in the user controller by calling user repository APIs. For Basic auth, the user has to register first using some endpoint like <code>/register</code>. For 3rd-party auth, the user will be created if login is successful and the user doesn't exist in database yet.<!-- -->Type <code>C</code> stands for the type of your credential object.<!-- -->- For local strategy:<!-- -->A typical credential would be: { username: username, password: password }<!-- -->- For oauth strategy:<!-- -->A typical credential would be: { clientId: string; clientSecret: string; callbackURL: string; }<!-- -->It could be read from a local configuration file in the app<!-- -->- For saml strategy:<!-- -->A typical credential would be:<!-- -->{ path: string; issuer: string; entryPoint: string; }<!-- -->It could be read from a local configuration file in the app. |
@@ -45,13 +46,16 @@ permalink: /doc/en/lb4/apidocs.authentication.html
 
 |  Namespace | Description |
 |  --- | --- |
+|  [authenticate](./authentication.authenticate.md) |  |
 |  [AuthenticationBindings](./authentication.authenticationbindings.md) | Binding keys used by this component. |
 
 ## Variables
 
 |  Variable | Description |
 |  --- | --- |
-|  [AUTHENTICATION\_METADATA\_KEY](./authentication.authentication_metadata_key.md) | The key used to store log-related via @<!-- -->loopback/metadata and reflection. |
+|  [AUTHENTICATION\_METADATA\_CLASS\_KEY](./authentication.authentication_metadata_class_key.md) | The key used to store class-level metadata for <code>@authenticate</code> |
+|  [AUTHENTICATION\_METADATA\_KEY](./authentication.authentication_metadata_key.md) | Alias for AUTHENTICATION\_METADATA\_METHOD\_KEY to keep it backward compatible |
+|  [AUTHENTICATION\_METADATA\_METHOD\_KEY](./authentication.authentication_metadata_method_key.md) | The key used to store method-level metadata for <code>@authenticate</code> |
 |  [AUTHENTICATION\_STRATEGY\_NOT\_FOUND](./authentication.authentication_strategy_not_found.md) |  |
 |  [USER\_PROFILE\_NOT\_FOUND](./authentication.user_profile_not_found.md) |  |
 

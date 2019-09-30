@@ -10,11 +10,18 @@ permalink: /doc/en/lb4/apidocs.repository.hasmanyrepositoryfactory.html
 
 [Home](./index.md) &gt; [@loopback/repository](./repository.md) &gt; [HasManyRepositoryFactory](./repository.hasmanyrepositoryfactory.md)
 
-## HasManyRepositoryFactory type
+## HasManyRepositoryFactory interface
 
 <b>Signature:</b>
 
 ```typescript
-export declare type HasManyRepositoryFactory<Target extends Entity, ForeignKeyType> = (fkValue: ForeignKeyType) => HasManyRepository<Target>;
+export interface HasManyRepositoryFactory<Target extends Entity, ForeignKeyType> 
 ```
+
+## Properties
+
+|  Property | Type | Description |
+|  --- | --- | --- |
+|  [inclusionResolver](./repository.hasmanyrepositoryfactory.inclusionresolver.md) | <code>InclusionResolver&lt;Entity, Target&gt;</code> | Use <code>resolver</code> property to obtain an InclusionResolver for this relation. |
+
 
