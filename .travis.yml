@@ -5,12 +5,15 @@ node_js:
 os:
   - linux
 
+cache:
+  npm: false
+
 script:
   - skip
 
 branches:
   only:
-  - gh-pages
+    - gh-pages
 
 install:
   - bundle install
