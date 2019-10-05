@@ -1,8 +1,9 @@
+﻿
 # loopback-connector-elastic-search
 
 [![Join the chat at https://gitter.im/strongloop-community/loopback-connector-elastic-search](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/strongloop-community/loopback-connector-elastic-search?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-Basic Elasticsearch datasource connector for [Loopback](http://strongloop.com/node-js/loopback/).
+Basic Elasticsearch datasource connector for [Loopback](https://loopback.io/).
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
@@ -53,7 +54,7 @@ Basic Elasticsearch datasource connector for [Loopback](http://strongloop.com/no
 
 ```
 cd <yourApp>
-npm install loopback-connector-es --save --save-exact
+npm install loopback-connector-esv6 --save --save-exact
 ```
 
 ## Configuring connector
@@ -63,13 +64,16 @@ npm install loopback-connector-es --save --save-exact
 - **port:** Elasticsearch engine port.
 - **name:** Connector name.
 - **connector:** Elasticsearch driver.
-- **index:** Search engine specific index.
+- **index:** Search engine specific index. defaults to `shakespeare`. (mandatory)
 - **apiVersion:** specify the major version of the Elasticsearch nodes you will be connecting to.
 
 ### Recommended:
-- **mappings:** an array of elasticsearch mappings for your various loopback models.
-  - if your models are spread out across different indexes then you can provide an additional `index` field as an override for your model
-  - if you don't want to use `type:ModelName` by default, then you can provide an additional `type` field as an override for your model
+- **mappingType:** mapping type for provided index. defaults to `basedata`
+- **mappingProperties:** An object with properties for above mentioned **mappingType**
+
+#### Important Note: 
+- This package is created to support ElasticSearch v6.x only.
+- `docType` property is automatically added in mapping properties which is required to differentiate documents stored in index with loopback model data. It stores loopback modelName value. `docType: { type: "keyword", index: true }`
 
 ### Optional:
 - **log:** sets elasticsearch client's logging, you can refer to the docs [here](https://www.elastic.co/guide/en/elasticsearch/client/javascript-api/current/configuration.html#config-log)
@@ -97,7 +101,7 @@ npm install loopback-connector-es --save --save-exact
             "auth": "username:password"
           }
         ],
-        "apiVersion": "<apiVersion>",
+        "apiVersion": "6.0",
         "refreshOn": ["save","create", "updateOrCreate"],
         "log": "trace",
         "defaultSize": <defaultSize>,
@@ -111,53 +115,41 @@ npm install loopback-connector-es --save --save-exact
                 "accessKey": "AKID",
                 "secretKey": "secret"
         },
-        "mappings": [
-          {
-            "name": "UserModel",
-            "properties": {
-                "realm": {"type": "string", "index" : "not_analyzed" },
-                "username": {"type": "string", "index" : "not_analyzed" },
-                "password": {"type": "string", "index" : "not_analyzed" },
-                "email": {"type": "string", "analyzer" : "email" }
-            }
-          },
-          {
-            "name": "CoolModel",
-            "index": <useSomeOtherIndex>,
-            "type": <overrideTypeName>,
-            "properties": {
-                "realm": {"type": "string", "index" : "not_analyzed" },
-                "username": {"type": "string", "index" : "not_analyzed" },
-                "password": {"type": "string", "index" : "not_analyzed" },
-                "email": {"type": "string", "analyzer" : "email" }
-            }
-          }
-        ],
-        "settings": {
-            "analysis": {
-                "filter": {
-                    "email": {
-                        "type": "pattern_capture",
-                        "preserve_original": 1,
-                        "patterns": [
-                            "([^@]+)",
-                            "(\\p{L}+)",
-                            "(\\d+)",
-                            "@(.+)"
-                        ]
-                    }
-                },
-                "analyzer": {
-                    "email": {
-                        "tokenizer": "uax_url_email",
-                        "filter": ["email", "lowercase", "unique"]
-                    }
-                }
-            }
-        }
+        "mappingType": "basedata",
+        "mappingProperties": {
+             "id": {
+               "type": "keyword",
+               "index": true
+             },
+             "docType": {
+               "type": "keyword",
+               "index": true
+             },
+             "name": {
+               "type": "text",
+               "index": true
+             },
+             "realm": {
+               "type": "keyword",
+               "index": true
+             },
+             "username": {
+               "type": "keyword",
+               "index": true
+             },
+             "description": {
+               "type": "text",
+               "index": true
+             },
+             "roleId": {
+               "type": "keyword",
+               "index": true
+             }
+        },
+        "settings": {}
     }
     ```
-2. You can peek at `/examples/server/datasources.json` for more hints.
+2. You can peek at `/examples/server/datasources.sample-es-6.json` for more hints.
 
 ## About the example app
 
@@ -395,36 +387,10 @@ To know more about `refresh` go through this [article](https://www.elastic.co/gu
         3. their loopback *definitions* can be found in the first `before` block that performs setup in `02.basic-querying.test.js` file ... these are the equivalent of a `MyModel.json` in your real loopback app.
             1. naturally, this is also where we define which property serves as the `id` for the model and if its [generated](https://docs.strongloop.com/display/APIC/Model+definition+JSON+file#ModeldefinitionJSONfile-IDproperties) or not
 1. How do we get elasticserch to take over ID generation?
-    1. An automatically generated id-like field that is maintained by ES is `_uid`. Without some sort of es-field-level-scripting-on-index (if that is possible at all) ... I am not sure how we could ask elasticsearch to take over auto-generating an id-like value for any arbitrary field! So the connector is setup such that adding `id: {type: String, generated: true, id: true}` will tell it to use `_uid` as the actual field backing the `id` ... you can keep using the doing `model.id` abstraction and in the background `_uid` values are mapped to it.
+    1. An automatically generated id-like field that is maintained by ES is `_id`. Without some sort of es-field-level-scripting-on-index (if that is possible at all) ... I am not sure how we could ask elasticsearch to take over auto-generating an id-like value for any arbitrary field! So the connector is setup such that adding `id: {type: String, generated: true, id: true}` will tell it to use `_id` as the actual field backing the `id` ... you can keep using the doing `model.id` abstraction and in the background `_id` values are mapped to it.
     1. Will this work for any field marked as with `generated: true` and `id: true`?
-        1. No! The connector isn't coded that way right now ... while it is an interesting idea to couple any such field with ES's `_uid` field inside this connector ... I am not sure if this is the right thing to do. If you had `objectId: {type: String, generated: true, id: true}` then you won't find a real `objectId` field in your ES documents. Would that be ok? Wouldn't that confuse developers who want to write custom queries and run 3rd party app against their ES instance? Don't use `obejctId`, use `_uid` would have to be common knowledge. Is that ok?
+        1. No! The connector isn't coded that way right now ... while it is an interesting idea to couple any such field with ES's `_id` field inside this connector ... I am not sure if this is the right thing to do. If you had `objectId: {type: String, generated: true, id: true}` then you won't find a real `objectId` field in your ES documents. Would that be ok? Wouldn't that confuse developers who want to write custom queries and run 3rd party app against their ES instance? Don't use `objectId`, use `_id` would have to be common knowledge. Is that ok?
 
 ## Release notes
-
-  * Release `1.0.6` of this connector updates the underlying elasticsearch client version to `11.0.1`
-  * For this connector, you can configure an `index` name for your ES instance and the loopback model's name is conveniently/automatically mapped as the ES `type`.
-  * Users must setup `string` fields as `not_analyzed` by default for predictable matches just like other loopback backends. And if more flexibility is required, multi-field mappings can be used too.
-
-    ```
-    "name" : {
-        "type" : "multi_field",
-        "fields" : {
-            "name" : {"type" : "string", "index" : "not_analyzed"},
-            "native" : {"type" : "string", "index" : "analyzed"}
-        }
-    }
-    ...
-    // this will treat 'George Harrison' as 'George Harrison' in a search
-    User.find({order: 'name'}, function (err, users) {..}
-    // this will treat 'George Harrison' as two tokens: 'george' and 'harrison' in a search
-    User.find({order: 'name', where: {'name.native': 'Harrison'}}, function (err, users) {..}
-    ```
-  * Release `1.3.4` add's support for updateAll for elasticsearch `v-2.3` and above. To make updateAll work you will have to add below options in your `elasticsearch.yml` config file
-
-    ```
-     script.inline: true
-     script.indexed: true
-     script.engine.groovy.inline.search: on
-     script.engine.groovy.inline.update: on
-    ```
+ 
   * TBD
