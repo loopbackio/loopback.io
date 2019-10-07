@@ -32,37 +32,37 @@ children:
     - title: 'Crear tu aplicación scaffolding'
       url: todo-tutorial-scaffolding.html
       output: 'web, pdf'
-      translated: false
+      translated: true
 
-    - title: 'Agregar el Todo model'
+    - title: 'Agregar un Modelo'
       url: todo-tutorial-model.html
       output: 'web, pdf'
-      translated: false
+      translated: true
 
     - title: 'Agregar un Datasource'
       url: todo-tutorial-datasource.html
       output: 'web, pdf'
-      translated: false
+      translated: true
 
     - title: 'Agregar un Repositorio'
       url: todo-tutorial-repository.html
       output: 'web, pdf'
-      translated: false
+      translated: true
 
     - title: 'Agregar un Controlador'
       url: todo-tutorial-controller.html
       output: 'web, pdf'
-      translated: false
+      translated: true
 
     - title: 'Colocando todo junto'
       url: todo-tutorial-putting-it-together.html
       output: 'web, pdf'
-      translated: false
+      translated: true
 
     - title: 'Bonus: Integrar con un servicio de codificación geográfica.'
       url: todo-tutorial-geocoding-service.html
       output: 'web, pdf'
-      translated: false
+      translated: true
 
   - title: 'Tutorial TodoList'
     url: todo-list-tutorial.html
