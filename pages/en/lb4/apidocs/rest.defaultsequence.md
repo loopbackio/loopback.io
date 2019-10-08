@@ -20,6 +20,21 @@ The default implementation of SequenceHandler.
 export declare class DefaultSequence implements SequenceHandler 
 ```
 
+## Remarks
+
+This class implements default Sequence for the LoopBack framework. Default sequence is used if user hasn't defined their own Sequence for their application.
+
+Sequence constructor() and run() methods are invoked from \[\[http-handler\]\] when the API request comes in. User defines APIs in their Application Controller class.
+
+## Example
+
+User can bind their own Sequence to app as shown below
+
+```ts
+app.bind(CoreBindings.SEQUENCE).toClass(MySequence);
+
+```
+
 ## Constructors
 
 |  Constructor | Modifiers | Description |
@@ -41,20 +56,5 @@ export declare class DefaultSequence implements SequenceHandler
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
 |  [handle(context)](./rest.defaultsequence.handle.md) |  | Runs the default sequence. Given a handler context (request and response), running the sequence will produce a response or an error.<!-- -->Default sequence executes these steps - Finds the appropriate controller method, swagger spec and args for invocation - Parses HTTP request to get API argument list - Invokes the API which is defined in the Application Controller - Writes the result from API into the HTTP response - Error is caught and logged using 'logError' if any of the above steps in the sequence fails with an error. |
-
-## Remarks
-
-This class implements default Sequence for the LoopBack framework. Default sequence is used if user hasn't defined their own Sequence for their application.
-
-Sequence constructor() and run() methods are invoked from \[\[http-handler\]\] when the API request comes in. User defines APIs in their Application Controller class.
-
-## Example
-
-User can bind their own Sequence to app as shown below
-
-```ts
-app.bind(CoreBindings.SEQUENCE).toClass(MySequence);
-
-```
 
 

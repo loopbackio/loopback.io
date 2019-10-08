@@ -24,6 +24,10 @@ There are three levels of permissions
 export declare class Permission 
 ```
 
+## Example
+
+- create a user (action: create, resource type: user) - read email of a user (action: read, resource property: user.email) - change email of a user (action: update, resource property: user.email) - cancel an order (action: delete, resource type: order)
+
 ## Properties
 
 |  Property | Modifiers | Type | Description |
@@ -33,9 +37,5 @@ export declare class Permission
 |  [resourceId](./security.permission.resourceid.md) |  | <code>string</code> | Identity of a protected resource instance, such as <code>order-0001</code> or <code>customer-101</code> |
 |  [resourceProperty](./security.permission.resourceproperty.md) |  | <code>string</code> | Property of a protected resource type/instance, such as <code>email</code> |
 |  [resourceType](./security.permission.resourcetype.md) |  | <code>string</code> | Type of protected resource, such as <code>Order</code> or <code>Customer</code> |
-
-## Example
-
-- create a user (action: create, resource type: user) - read email of a user (action: read, resource property: user.email) - change email of a user (action: update, resource property: user.email) - cancel an order (action: delete, resource type: order)
 
 

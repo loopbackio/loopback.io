@@ -20,12 +20,6 @@ Or clause
 export interface OrClause<MT extends object> 
 ```
 
-## Properties
-
-|  Property | Type | Description |
-|  --- | --- | --- |
-|  [or](./repository.orclause.or.md) | <code>Where&lt;MT&gt;[]</code> |  |
-
 ## Example
 
 
@@ -35,5 +29,11 @@ export interface OrClause<MT extends object>
 }
 
 ```
+
+## Properties
+
+|  Property | Type | Description |
+|  --- | --- | --- |
+|  [or](./repository.orclause.or.md) | <code>Where&lt;MT&gt;[]</code> |  |
 
 

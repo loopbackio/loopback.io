@@ -20,12 +20,6 @@ And clause
 export interface AndClause<MT extends object> 
 ```
 
-## Properties
-
-|  Property | Type | Description |
-|  --- | --- | --- |
-|  [and](./repository.andclause.and.md) | <code>Where&lt;MT&gt;[]</code> |  |
-
 ## Example
 
 
@@ -35,5 +29,11 @@ export interface AndClause<MT extends object>
 }
 
 ```
+
+## Properties
+
+|  Property | Type | Description |
+|  --- | --- | --- |
+|  [and](./repository.andclause.and.md) | <code>Where&lt;MT&gt;[]</code> |  |
 
 

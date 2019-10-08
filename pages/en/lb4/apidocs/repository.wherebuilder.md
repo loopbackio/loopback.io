@@ -20,6 +20,20 @@ A builder for Where object. It provides fluent APIs to add clauses such as `and`
 export declare class WhereBuilder<MT extends object = AnyObject> 
 ```
 
+## Example
+
+
+```ts
+const whereBuilder = new WhereBuilder();
+const where = whereBuilder
+  .eq('a', 1)
+  .and({x: 'x'}, {y: {gt: 1}})
+  .and({b: 'b'}, {c: {lt: 1}})
+  .or({d: 'd'}, {e: {neq: 1}})
+  .build();
+
+```
+
 ## Constructors
 
 |  Constructor | Modifiers | Description |
@@ -51,19 +65,5 @@ export declare class WhereBuilder<MT extends object = AnyObject>
 |  [neq(key, val)](./repository.wherebuilder.neq.md) |  | Add a <code>!=</code> condition |
 |  [nin(key, val)](./repository.wherebuilder.nin.md) |  | Add a <code>nin</code> condition |
 |  [or(w)](./repository.wherebuilder.or.md) |  | Add an <code>or</code> clause. |
-
-## Example
-
-
-```ts
-const whereBuilder = new WhereBuilder();
-const where = whereBuilder
-  .eq('a', 1)
-  .and({x: 'x'}, {y: {gt: 1}})
-  .and({b: 'b'}, {c: {lt: 1}})
-  .or({d: 'd'}, {e: {neq: 1}})
-  .build();
-
-```
 
 

@@ -20,12 +20,6 @@ Providers allow developers to compute injected values dynamically, with any depe
 export interface Provider<T> 
 ```
 
-## Methods
-
-|  Method | Description |
-|  --- | --- |
-|  [value()](./context.provider.value.md) |  |
-
 ## Example
 
 
@@ -44,5 +38,11 @@ const value = ctx.getAsync('provider_key');
 // value is a Date instance
 
 ```
+
+## Methods
+
+|  Method | Description |
+|  --- | --- |
+|  [value()](./context.provider.value.md) |  |
 
 

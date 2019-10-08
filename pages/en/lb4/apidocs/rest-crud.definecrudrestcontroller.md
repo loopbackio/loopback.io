@@ -17,17 +17,17 @@ Create (define) a CRUD Controller class for the given model.
 Example usage:
 
 ```ts
-const CrudRestController = defineCrudRestController<
-  Product,
-  typeof Product.prototype.id,
-  'id'
+const ProductController = defineCrudRestController<
+Product,
+typeof Product.prototype.id,
+'id'
 >(Product, {basePath: '/products'});
 
-class ProductController extends CrudRestController {
-  constructor() {
-   super(repo);
-  }
-}
+inject('repositories.ProductRepository')(
+ ProductController,
+  undefined,
+  0,
+);
 
 app.controller(ProductController);
 

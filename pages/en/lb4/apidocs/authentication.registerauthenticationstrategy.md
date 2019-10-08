@@ -17,18 +17,18 @@ Registers an authentication strategy as an extension of the AuthenticationBindin
 <b>Signature:</b>
 
 ```typescript
-export declare function registerAuthenticationStrategy(context: Context, strategyClass: Constructor<AuthenticationStrategy>): void;
+export declare function registerAuthenticationStrategy(context: Context, strategyClass: Constructor<AuthenticationStrategy>): import("@loopback/core").Binding<unknown>;
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  context | <code>Context</code> |  |
-|  strategyClass | <code>Constructor&lt;AuthenticationStrategy&gt;</code> |  |
+|  context | <code>Context</code> | Context object |
+|  strategyClass | <code>Constructor&lt;AuthenticationStrategy&gt;</code> | Class for the authentication strategy |
 
 <b>Returns:</b>
 
-`void`
+`import("@loopback/core").Binding<unknown>`
 
 

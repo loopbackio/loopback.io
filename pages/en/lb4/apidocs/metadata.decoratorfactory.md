@@ -22,6 +22,32 @@ M extends T | MetadataMap<T> | MetadataMap<T[]>, // Type of the metadata
 D extends DecoratorType> 
 ```
 
+## Example
+
+
+```
+function classDecorator(spec: MySpec): ClassDecorator {
+  return ClassDecoratorFactory.createDecorator('my-key', spec);
+}
+
+```
+or
+
+```
+function classDecorator(spec: MySpec): ClassDecorator {
+  const factory: ClassDecoratorFactory<MySpec>('my-key', spec);
+  return factory.create();
+}
+
+```
+These functions above declare `@classDecorator` that can be used as follows:
+
+```
+@classDecorator({x: 1})
+class MyController {}
+
+```
+
 ## Constructors
 
 |  Constructor | Modifiers | Description |
@@ -67,31 +93,5 @@ MyClass.prototype.myMethod[1] // Second parameter of myMethod
 |  [mergeWithInherited(inheritedMetadata, target, member, descriptorOrIndex)](./metadata.decoratorfactory.mergewithinherited.md) |  | This method is called by the default implementation of the decorator function to merge the spec argument from the decoration with the inherited metadata for a class, all properties, all methods, or all method parameters that are decorated by this decorator.<!-- -->It MUST be overridden by subclasses to process inherited metadata. |
 |  [mergeWithOwn(ownMetadata, target, member, descriptorOrIndex)](./metadata.decoratorfactory.mergewithown.md) |  | This method is called by the default implementation of the decorator function to merge the spec argument from the decoration with the own metadata for a class, all properties, all methods, or all method parameters that are decorated by this decorator.<!-- -->It MUST be overridden by subclasses to process own metadata. |
 |  [withTarget(spec, target)](./metadata.decoratorfactory.withtarget.md) |  | Set a reference to the target class or prototype for a given spec if it's an object |
-
-## Example
-
-
-```
-function classDecorator(spec: MySpec): ClassDecorator {
-  return ClassDecoratorFactory.createDecorator('my-key', spec);
-}
-
-```
-or
-
-```
-function classDecorator(spec: MySpec): ClassDecorator {
-  const factory: ClassDecoratorFactory<MySpec>('my-key', spec);
-  return factory.create();
-}
-
-```
-These functions above declare `@classDecorator` that can be used as follows:
-
-```
-@classDecorator({x: 1})
-class MyController {}
-
-```
 
 

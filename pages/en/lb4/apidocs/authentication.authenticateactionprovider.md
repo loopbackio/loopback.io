@@ -20,6 +20,10 @@ Provides the authentication action for a sequence
 export declare class AuthenticateActionProvider implements Provider<AuthenticateFn> 
 ```
 
+## Example
+
+`context.bind('authentication.actions.authenticate').toProvider(AuthenticateActionProvider)`
+
 ## Constructors
 
 |  Constructor | Modifiers | Description |
@@ -39,9 +43,5 @@ export declare class AuthenticateActionProvider implements Provider<Authenticate
 |  --- | --- | --- |
 |  [action(request)](./authentication.authenticateactionprovider.action.md) |  | The implementation of authenticate() sequence action. |
 |  [value()](./authentication.authenticateactionprovider.value.md) |  |  |
-
-## Example
-
-`context.bind('authentication.actions.authenticate').toProvider(AuthenticateActionProvider)`
 
 

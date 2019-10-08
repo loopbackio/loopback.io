@@ -20,6 +20,29 @@ A REST API server for use with Loopback. Add this server to your application by 
 export declare class RestServer extends Context implements Server, HttpServerLike 
 ```
 
+## Example
+
+
+```ts
+const app = new MyApplication();
+app.component(RestComponent);
+
+```
+To add additional instances of RestServer to your application, use the `.server` function:
+
+```ts
+app.server(RestServer, 'nameOfYourServer');
+
+```
+By default, one instance of RestServer will be created when the RestComponent is bootstrapped. This instance can be retrieved with `app.getServer(RestServer)`<!-- -->, or by calling `app.get('servers.RestServer')` Note that retrieving other instances of RestServer must be done using the server's name:
+
+```ts
+const server = await app.getServer('foo')
+// OR
+const server = await app.get('servers.foo');
+
+```
+
 ## Constructors
 
 |  Constructor | Modifiers | Description |
@@ -67,28 +90,5 @@ export declare class RestServer extends Context implements Server, HttpServerLik
 |  [start()](./rest.restserver.start.md) |  | Start this REST API's HTTP/HTTPS server. |
 |  [static(path, rootDir, options)](./rest.restserver.static.md) |  | Mount static assets to the REST server. See https://expressjs.com/en/4x/api.html\#express.static |
 |  [stop()](./rest.restserver.stop.md) |  | Stop this REST API's HTTP/HTTPS server. |
-
-## Example
-
-
-```ts
-const app = new MyApplication();
-app.component(RestComponent);
-
-```
-To add additional instances of RestServer to your application, use the `.server` function:
-
-```ts
-app.server(RestServer, 'nameOfYourServer');
-
-```
-By default, one instance of RestServer will be created when the RestComponent is bootstrapped. This instance can be retrieved with `app.getServer(RestServer)`<!-- -->, or by calling `app.get('servers.RestServer')` Note that retrieving other instances of RestServer must be done using the server's name:
-
-```ts
-const server = await app.getServer('foo')
-// OR
-const server = await app.get('servers.foo');
-
-```
 
 

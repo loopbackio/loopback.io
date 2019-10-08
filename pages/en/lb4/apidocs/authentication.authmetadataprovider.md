@@ -20,6 +20,10 @@ Provides authentication metadata of a controller method
 export declare class AuthMetadataProvider implements Provider<AuthenticationMetadata | undefined> 
 ```
 
+## Example
+
+`context.bind('authentication.operationMetadata').toProvider(AuthMetadataProvider)`
+
 ## Constructors
 
 |  Constructor | Modifiers | Description |
@@ -31,9 +35,5 @@ export declare class AuthMetadataProvider implements Provider<AuthenticationMeta
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
 |  [value()](./authentication.authmetadataprovider.value.md) |  |  |
-
-## Example
-
-`context.bind('authentication.operationMetadata').toProvider(AuthMetadataProvider)`
 
 

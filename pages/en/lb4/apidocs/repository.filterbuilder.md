@@ -20,6 +20,21 @@ A builder for Filter. It provides fleunt APIs to add clauses such as `fields`<!-
 export declare class FilterBuilder<MT extends object = AnyObject> 
 ```
 
+## Example
+
+
+```ts
+const filterBuilder = new FilterBuilder();
+const filter = filterBuilder
+  .fields('id', a', 'b')
+  .limit(10)
+  .offset(0)
+  .order(['a ASC', 'b DESC'])
+  .where({id: 1})
+  .build();
+
+```
+
 ## Constructors
 
 |  Constructor | Modifiers | Description |
@@ -45,20 +60,5 @@ export declare class FilterBuilder<MT extends object = AnyObject>
 |  [order(o)](./repository.filterbuilder.order.md) |  | Describe the sorting order |
 |  [skip(skip)](./repository.filterbuilder.skip.md) |  | Alias to <code>offset</code> |
 |  [where(w)](./repository.filterbuilder.where.md) |  | Declare a where clause |
-
-## Example
-
-
-```ts
-const filterBuilder = new FilterBuilder();
-const filter = filterBuilder
-  .fields('id', a', 'b')
-  .limit(10)
-  .offset(0)
-  .order(['a ASC', 'b DESC'])
-  .where({id: 1})
-  .build();
-
-```
 
 

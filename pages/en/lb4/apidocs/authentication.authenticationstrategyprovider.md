@@ -22,6 +22,10 @@ It declares an extension point to which all authentication strategy implementati
 export declare class AuthenticationStrategyProvider implements Provider<AuthenticationStrategy | undefined> 
 ```
 
+## Example
+
+`context.bind('authentication.strategy').toProvider(AuthenticationStrategyProvider)`
+
 ## Constructors
 
 |  Constructor | Modifiers | Description |
@@ -41,9 +45,5 @@ export declare class AuthenticationStrategyProvider implements Provider<Authenti
 |  --- | --- | --- |
 |  [findAuthenticationStrategy(name)](./authentication.authenticationstrategyprovider.findauthenticationstrategy.md) |  |  |
 |  [value()](./authentication.authenticationstrategyprovider.value.md) |  |  |
-
-## Example
-
-`context.bind('authentication.strategy').toProvider(AuthenticationStrategyProvider)`
 
 
