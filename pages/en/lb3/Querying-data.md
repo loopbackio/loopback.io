@@ -151,7 +151,7 @@ The following table describes LoopBack's filter types:
       <td>include</td>
       <td>String, Object, or Array</td>
       <td>
-        Include results from related models, for relations such as<em>belongsTo</em>and<em>hasMany</em>.
+        Include results from related models, for relations such as <em>belongsTo</em> and <em>hasMany</em>.
         See <a href="Include-filter.html">Include filter</a>.
       </td>
     </tr>
