@@ -17,7 +17,7 @@ Converts JSON Schemas into a SchemaObject
 <b>Signature:</b>
 
 ```typescript
-export declare function jsonToSchemaObject(json: JsonSchema): SchemaObject | SchemaRef;
+export declare function jsonToSchemaObject(json: JsonSchema, visited?: Map<JsonSchema, SchemaObject | SchemaRef>): SchemaObject | SchemaRef;
 ```
 
 ## Parameters
@@ -25,6 +25,7 @@ export declare function jsonToSchemaObject(json: JsonSchema): SchemaObject | Sch
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  json | <code>JsonSchema</code> | JSON Schema to convert from |
+|  visited | <code>Map&lt;JsonSchema, SchemaObject &#124; SchemaRef&gt;</code> | A map to keep track of mapped json schemas to handle circular references |
 
 <b>Returns:</b>
 

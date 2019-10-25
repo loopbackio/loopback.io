@@ -27,7 +27,7 @@ permalink: /doc/en/lb4/apidocs.openapi-v3.html
 |  [getModelSchemaRef(modelCtor, options)](./openapi-v3.getmodelschemaref.md) | Describe the provided Model as a reference to a definition shared by multiple endpoints. The definition is included in the returned schema. |
 |  [getWhereSchemaFor(modelCtor)](./openapi-v3.getwhereschemafor.md) | Build a OpenAPI schema describing the format of the "where" object used to filter model instances to query, update or delete.<!-- -->Note we don't take the model properties into account yet and return a generic json schema allowing any "where" condition. |
 |  [jsonOrBooleanToJSON(jsonOrBool)](./openapi-v3.jsonorbooleantojson.md) | Helper function used to interpret boolean values as JSON Schemas. See http://json-schema.org/draft-06/json-schema-release-notes.html |
-|  [jsonToSchemaObject(json)](./openapi-v3.jsontoschemaobject.md) | Converts JSON Schemas into a SchemaObject |
+|  [jsonToSchemaObject(json, visited)](./openapi-v3.jsontoschemaobject.md) | Converts JSON Schemas into a SchemaObject |
 |  [operation(verb, path, spec)](./openapi-v3.operation.md) | Expose a Controller method as a REST API operation. |
 |  [param(paramSpec)](./openapi-v3.param.md) | Describe an input parameter of a Controller method.<code>@param</code> must be applied to parameters. |
 |  [patch(path, spec)](./openapi-v3.patch.md) | Expose a Controller method as a REST API operation mapped to <code>PATCH</code> request method. |
