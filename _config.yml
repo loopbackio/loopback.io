@@ -39,11 +39,16 @@ port: 4001
 exclude:
   - .idea/
   - .gitignore
+  - CODEOWNERS
+  - ISSUE_TEMPLATE.md
+  - package.json
   - node_modules
   - Jenkinsfile
   - update-readmes.sh
-  - vendor 
-  
+  - update-community-readmes.sh
+  - update-lb4-docs.js
+  - vendor
+
 # these are the files and directories that jekyll will exclude from the build
 
 feedback_email: reachsl@us.ibm.com
