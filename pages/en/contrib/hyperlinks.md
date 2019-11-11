@@ -18,7 +18,7 @@ When linking to an external site, use Markdown formatting:
 [Google](http://google.com)
 ```
 
-## Create an internal pages
+## Create an internal page
 
 To link to another page, use the standard markdown formatting:
 
