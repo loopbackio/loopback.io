@@ -26,12 +26,6 @@ export declare class TestSandbox
 |  --- | --- | --- |
 |  [(constructor)(path)](./testlab.testsandbox._constructor_.md) |  | Will create a directory if it doesn't already exist. If it exists, you still get an instance of the TestSandbox. |
 
-## Properties
-
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [path](./testlab.testsandbox.path.md) |  | <code>string</code> |  |
-
 ## Methods
 
 |  Method | Modifiers | Description |

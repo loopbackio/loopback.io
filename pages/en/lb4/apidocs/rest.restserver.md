@@ -58,11 +58,6 @@ const server = await app.get('servers.foo');
 |  [\_httpServer](./rest.restserver._httpserver.md) |  | <code>HttpServer &#124; undefined</code> |  |
 |  [\_requestHandler](./rest.restserver._requesthandler.md) |  | <code>HttpRequestListener</code> | Handle incoming HTTP(S) request by invoking the corresponding Controller method via the configured Sequence. |
 |  [config](./rest.restserver.config.md) |  | <code>RestServerResolvedConfig</code> |  |
-|  [httpHandler](./rest.restserver.httphandler.md) |  | <code>HttpHandler</code> |  |
-|  [listening](./rest.restserver.listening.md) |  | <code>boolean</code> |  |
-|  [requestHandler](./rest.restserver.requesthandler.md) |  | <code>HttpRequestListener</code> |  |
-|  [rootUrl](./rest.restserver.rooturl.md) |  | <code>string &#124; undefined</code> | The root url for the server without the basePath. For example, the value will be 'http://localhost:3000' regardless of the <code>basePath</code>. |
-|  [url](./rest.restserver.url.md) |  | <code>string &#124; undefined</code> | The base url for the server, including the basePath if set. For example, the value will be 'http://localhost:3000/api' if <code>basePath</code> is set to '/api'. |
 
 ## Methods
 

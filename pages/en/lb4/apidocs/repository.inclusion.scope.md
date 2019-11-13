@@ -15,6 +15,6 @@ permalink: /doc/en/lb4/apidocs.repository.inclusion.scope.html
 <b>Signature:</b>
 
 ```typescript
-scope?: Filter<MT>;
+scope?: Filter<AnyObject>;
 ```
 

@@ -29,6 +29,6 @@ export interface Inclusion<MT extends object = AnyObject>
 |  Property | Type | Description |
 |  --- | --- | --- |
 |  [relation](./repository.inclusion.relation.md) | <code>string</code> |  |
-|  [scope](./repository.inclusion.scope.md) | <code>Filter&lt;MT&gt;</code> |  |
+|  [scope](./repository.inclusion.scope.md) | <code>Filter&lt;AnyObject&gt;</code> |  |
 
 

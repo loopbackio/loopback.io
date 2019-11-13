@@ -24,6 +24,7 @@ permalink: /doc/en/lb4/apidocs.index.html
 |  [@loopback/context](./context.md) |  |
 |  [@loopback/core](./core.md) |  |
 |  [@loopback/extension-health](./extension-health.md) |  |
+|  [@loopback/extension-metrics](./extension-metrics.md) |  |
 |  [@loopback/http-caching-proxy](./http-caching-proxy.md) |  |
 |  [@loopback/http-server](./http-server.md) |  |
 |  [@loopback/metadata](./metadata.md) |  |

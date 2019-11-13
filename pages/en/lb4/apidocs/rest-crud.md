@@ -18,6 +18,12 @@ permalink: /doc/en/lb4/apidocs.rest-crud.html
 
 |  Function | Description |
 |  --- | --- |
+|  [defineCrudRepositoryClass(entityClass)](./rest-crud.definecrudrepositoryclass.md) | Create (define) a repository class for the given model.<!-- -->Example usage:
+```ts
+const ProductRepository = defineCrudRepositoryClass(Product);
+
+```
+ |
 |  [defineCrudRestController(modelCtor, options)](./rest-crud.definecrudrestcontroller.md) | Create (define) a CRUD Controller class for the given model.<!-- -->Example usage:
 ```ts
 const ProductController = defineCrudRestController<
@@ -44,5 +50,6 @@ app.controller(ProductController);
 |  [CrudRestController](./rest-crud.crudrestcontroller.md) | This interface describes prototype members of the controller class returned by <code>defineCrudRestController</code>. |
 |  [CrudRestControllerCtor](./rest-crud.crudrestcontrollerctor.md) | Constructor of the controller class returned by <code>defineCrudRestController</code>. |
 |  [CrudRestControllerOptions](./rest-crud.crudrestcontrolleroptions.md) | Options to configure different aspects of a CRUD REST Controller. |
+|  [RepositoryClass](./rest-crud.repositoryclass.md) |  |
 
 

@@ -17,6 +17,6 @@ Binding key for setting and injecting the http request
 <b>Signature:</b>
 
 ```typescript
-REQUEST: BindingKey<Request>
+REQUEST: BindingKey<Request<import("express-serve-static-core").ParamsDictionary>>
 ```
 

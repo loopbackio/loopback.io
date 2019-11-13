@@ -24,10 +24,6 @@ export declare class ResolutionSession
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [bindingStack](./context.resolutionsession.bindingstack.md) |  | <code>Readonly&lt;Binding&gt;[]</code> | Getter for bindings on the stack |
-|  [currentBinding](./context.resolutionsession.currentbinding.md) |  | <code>Readonly&lt;Binding&gt; &#124; undefined</code> | Getter for the current binding |
-|  [currentInjection](./context.resolutionsession.currentinjection.md) |  | <code>Readonly&lt;Injection&gt; &#124; undefined</code> | Getter for the current injection |
-|  [injectionStack](./context.resolutionsession.injectionstack.md) |  | <code>Readonly&lt;Injection&gt;[]</code> | Getter for injections on the stack |
 |  [stack](./context.resolutionsession.stack.md) |  | <code>ResolutionElement[]</code> | A stack of bindings for the current resolution session. It's used to track the path of dependency resolution and detect circular dependencies. |
 
 ## Methods

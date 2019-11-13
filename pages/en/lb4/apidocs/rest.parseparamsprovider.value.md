@@ -15,10 +15,10 @@ permalink: /doc/en/lb4/apidocs.rest.parseparamsprovider.value.html
 <b>Signature:</b>
 
 ```typescript
-value(): (request: Request, route: ResolvedRoute) => Promise<any[]>;
+value(): (request: Request<import("express-serve-static-core").ParamsDictionary>, route: ResolvedRoute) => Promise<import("../types").OperationArgs>;
 ```
 <b>Returns:</b>
 
-`(request: Request, route: ResolvedRoute) => Promise<any[]>`
+`(request: Request<import("express-serve-static-core").ParamsDictionary>, route: ResolvedRoute) => Promise<import("../types").OperationArgs>`
 
 

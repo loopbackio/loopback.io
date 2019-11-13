@@ -30,10 +30,7 @@ export declare class RequestContext extends Context implements HandlerContext
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [basePath](./rest.requestcontext.basepath.md) |  | <code>string</code> | Get the effective base path of the incoming request. This base path combines <code>baseUrl</code> provided by Express when LB4 handler is mounted on a non-root path, with the <code>basePath</code> value configured at LB4 side. |
 |  [request](./rest.requestcontext.request.md) |  | <code>Request</code> |  |
-|  [requestedBaseUrl](./rest.requestcontext.requestedbaseurl.md) |  | <code>string</code> | Get the base URL used by the client to make the request. This URL contains the protocol, hostname, port and base path. The path of the invoked route and query string is not included.<!-- -->Please note these values may be different from what we are observing at HTTP/TCP level, because reverse proxies like nginx are rewriting them. |
-|  [requestedProtocol](./rest.requestcontext.requestedprotocol.md) |  | <code>string</code> | Get the protocol used by the client to make the request. Please note this protocol may be different from what we are observing at HTTP/TCP level, because reverse proxies like nginx or sidecars like Envoy are switching between protocols. |
 |  [response](./rest.requestcontext.response.md) |  | <code>Response</code> |  |
 |  [serverConfig](./rest.requestcontext.serverconfig.md) |  | <code>RestServerResolvedConfig</code> |  |
 

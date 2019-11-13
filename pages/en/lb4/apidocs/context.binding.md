@@ -32,11 +32,7 @@ export declare class Binding<T = BoundValue>
 |  --- | --- | --- | --- |
 |  [isLocked](./context.binding.islocked.md) |  | <code>boolean</code> |  |
 |  [key](./context.binding.key.md) |  | <code>string</code> | Key of the binding |
-|  [scope](./context.binding.scope.md) |  | <code>BindingScope</code> | Scope of the binding to control how the value is cached/shared |
 |  [tagMap](./context.binding.tagmap.md) |  | <code>TagMap</code> | Map for tag name/value pairs |
-|  [tagNames](./context.binding.tagnames.md) |  | <code>string[]</code> | Get an array of tag names |
-|  [type](./context.binding.type.md) |  | <code>BindingType &#124; undefined</code> | Type of the binding value getter |
-|  [valueConstructor](./context.binding.valueconstructor.md) |  | <code>Constructor&lt;T&gt; &#124; undefined</code> | For bindings bound via toClass, this property contains the constructor function |
 
 ## Methods
 

@@ -84,7 +84,7 @@ Similar to this we can breakdown further use cases into API requirements.
   - The mobile/web app submits the order and resets the shopping cart.
   - User takes a look at all the previous orders.
 
-![example shopping](https://github.com/strongloop/loopback4-example-shopping/blob/master/example-shopping.png)
+![example shopping](imgs/example-shopping.png)
 
 In the example,
 
@@ -258,9 +258,9 @@ We need appropriate drivers to connect with the backend datasources.
 > to provide easy to use CRUD operations and connection configurations.
 
 In the example,
-[Redis datasource definition](https://github.com/strongloop/loopback4-example-shopping/blob/master/packages/shopping/src/datasources/redis.datasource.json)
+[Redis datasource definition](https://github.com/strongloop/loopback4-example-shopping/blob/master/packages/shopping/src/datasources/redis.datasource.config.json)
 uses the LoopBack `kv-redis` connector and
-[MongoDB datasource definition](https://github.com/strongloop/loopback4-example-shopping/blob/master/packages/shopping/src/datasources/mongo.datasource.json)
+[MongoDB datasource definition](https://github.com/strongloop/loopback4-example-shopping/blob/master/packages/shopping/src/datasources/mongo.datasource.config.json)
 uses the LoopBack `mongodb` connector.
 
 ## Application startup

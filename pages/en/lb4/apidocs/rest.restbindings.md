@@ -40,6 +40,7 @@ export declare namespace RestBindings
 |  [HANDLER](./rest.restbindings.handler.md) | Internal binding key for http-handler |
 |  [HOST](./rest.restbindings.host.md) | Binding key for setting and injecting the host name of RestServer |
 |  [HTTPS\_OPTIONS](./rest.restbindings.https_options.md) | Binding key for HTTPS options |
+|  [OPERATION\_SPEC\_CURRENT](./rest.restbindings.operation_spec_current.md) | Binding key for setting and injecting an OpenAPI operation spec |
 |  [PATH](./rest.restbindings.path.md) | Binding key for setting and injecting the socket path of the RestServer |
 |  [PORT](./rest.restbindings.port.md) | Binding key for setting and injecting the port number of RestServer |
 |  [PROTOCOL](./rest.restbindings.protocol.md) | Binding key for setting and injecting the protocol of RestServer |

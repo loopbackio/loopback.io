@@ -47,7 +47,7 @@ $ lb4 datasource
 ? Default options for the request:
 ? An array of operation templates:
 ? Use default CRUD mapping: No
-   create src/datasources/geocoder.datasource.json
+   create src/datasources/geocoder.datasource.config.json
    create src/datasources/geocoder.datasource.ts
  # npm will install dependencies now
     update src/datasources/index.ts
@@ -59,7 +59,7 @@ Edit the newly created datasource configuration to configure Geocoder API
 endpoints. Configuration options provided by REST Connector are described in our
 docs here: [REST connector](/doc/en/lb3/REST-connector.html).
 
-{% include code-caption.html content="/src/datasources/geocoder.datasource.json" %}
+{% include code-caption.html content="/src/datasources/geocoder.datasource.config.json" %}
 
 ```json
 {
@@ -187,7 +187,7 @@ export class TodoController {
 }
 ```
 
-Modify `createTodo` method to look up the address provided in `remindAtAddress`
+Modify `create` method to look up the address provided in `remindAtAddress`
 property and convert it to GPS coordinates stored in `remindAtGeo`.
 
 {% include code-caption.html content="src/controllers/todo.controller.ts" %}
@@ -204,7 +204,7 @@ export class TodoController {
       },
     },
   })
-  async createTodo(
+  async create(
     @requestBody({
       content: {
         'application/json': {

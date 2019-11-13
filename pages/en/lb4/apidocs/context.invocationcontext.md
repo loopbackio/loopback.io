@@ -31,12 +31,9 @@ export declare class InvocationContext extends Context
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
 |  [args](./context.invocationcontext.args.md) |  | <code>InvocationArgs</code> |  |
-|  [description](./context.invocationcontext.description.md) |  | <code>string</code> | Description of the invocation |
 |  [methodName](./context.invocationcontext.methodname.md) |  | <code>string</code> |  |
 |  [parent](./context.invocationcontext.parent.md) |  | <code>Context</code> |  |
 |  [target](./context.invocationcontext.target.md) |  | <code>object</code> |  |
-|  [targetClass](./context.invocationcontext.targetclass.md) |  | <code>Function</code> | The target class, such as <code>OrderController</code> |
-|  [targetName](./context.invocationcontext.targetname.md) |  | <code>string</code> | The target name, such as <code>OrderController.prototype.cancelOrder</code> |
 
 ## Methods
 

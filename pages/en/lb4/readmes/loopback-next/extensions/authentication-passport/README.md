@@ -8,13 +8,6 @@ This is an adapter module created for plugging in
 [`passport`](https://www.npmjs.com/package/passport) based strategies to the
 authentication system in `@loopback/authentication@3.x`.
 
-## Stability: :warning:Experimental:warning:
-
-> Experimental packages provide early access to advanced or experimental
-> functionality to get community feedback. Such modules are published to npm
-> using `0.x.y` versions. Their APIs and functionality may be subject to
-> breaking changes in future releases.
-
 ## Installation
 
 ```sh
@@ -108,7 +101,7 @@ import {AUTH_STRATEGY_NAME} from './my-basic-auth-strategy';
 
 class MyController {
   constructor(
-    @inject(AuthenticationBindings.CURRENT_USER, {optional: true})
+    @inject(SecurityBindings.USER, {optional: true})
     private user: UserProfile,
   ) {}
 
@@ -230,9 +223,7 @@ function like:
 import {AUTH_STRATEGY_NAME} from './my-basic-auth-strategy';
 
 class MyController {
-  constructor(
-    @inject(AuthenticationBindings.CURRENT_USER) private user: UserProfile,
-  ) {}
+  constructor(@inject(SecurityBindings.USER) private user: UserProfile) {}
 
   // Define your strategy name as a constant so that
   // it is consistent with the name you provide in the adapter
