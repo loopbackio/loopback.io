@@ -71,6 +71,15 @@ Return all post owners (users), and all posts and orders of each owner. The post
 Post.find({include: {owner: [{posts: 'images'} , 'orders']}}, function() { /* ... */ });
 ```
 
+#### Combined use of `fields` and `include` for a `belongsTo` relation
+
+If you want to use both `include` and `fields` to display only specific fields of a model and a specific belongsTo relation, you need to add the relation foreign key in the `fields` :
+
+Return all posts only with field title and the relation category:
+```javascript
+Post.find({include: 'category', fields: ['title', 'categoryId']}, function() { /* ... */ });
+```
+
 #### Include with filters
 
 In some cases, you may want to apply filters to related models to be included.
