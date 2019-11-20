@@ -518,10 +518,6 @@ children:
     - title: 'DB2 for z/OS'
       url: DB2-for-z-OS.html
       output: 'web, pdf'
-    
-    - title: 'gRPC connector'
-      url: gRPC-connector.html
-      output: 'web, pdf'
 
     - title: Informix connector
       url: Informix.html
@@ -548,10 +544,6 @@ children:
       - title: 'MySQL Connector Tutorial'
         url: Connecting-to-MySQL.html
         output: 'web, pdf'
-
-    - title: 'OpenAPI connector'
-      url: OpenAPI-connector.html
-      output: 'web, pdf'
 
     - title: 'Oracle connector'
       url: Oracle-connector.html
@@ -667,6 +659,10 @@ children:
 
     - title: 'Storage connector'
       url: Storage-connector.html
+      output: 'web, pdf'
+
+    - title: 'Swagger connector'
+      url: Swagger-connector.html
       output: 'web, pdf'
 
   - title: 'Community connectors'
