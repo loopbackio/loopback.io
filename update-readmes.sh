@@ -15,6 +15,7 @@ strongloop loopback-connector-dashdb master
 strongloop loopback-connector-db2 master
 strongloop loopback-connector-db2iseries master
 strongloop loopback-connector-db2z master
+strongloop loopback-connector-grpc master
 strongloop loopback-connector-informix master
 strongloop loopback-connector-jsonrpc master
 strongloop loopback-connector-kv-redis master
@@ -22,6 +23,7 @@ strongloop loopback-connector-mongodb master
 strongloop loopback-connector-mqlight master
 strongloop loopback-connector-mssql master
 strongloop loopback-connector-zosconnectee master
+strongloop loopback-connector-openapi master
 strongloop loopback-connector-oracle master
 strongloop loopback-oracle-installer master
 strongloop loopback-connector-postgresql master
