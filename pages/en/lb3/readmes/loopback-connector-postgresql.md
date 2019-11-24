@@ -359,7 +359,7 @@ See [LoopBack types](http://loopback.io/doc/en/lb3/LoopBack-types.html) for de
       <td>Number</td>
     </tr>
     <tr>
-      <td>DATE<br>TIMESTAMP<br>TIME</td>
+      <td>DATE<br>TIMESTAMP<br>TIMESTAMP WITH TIME ZONE<br>TIMESTAMP WITHOUT TIME ZONE<br>TIME</td>TIME WITH TIME ZONE</td>TIME WITHOUT TIME ZONE</td>
       <td>Date</td>
     </tr>
     <tr>
