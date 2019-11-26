@@ -17,7 +17,7 @@ Add a service to this application.
 <b>Signature:</b>
 
 ```typescript
-service<S>(cls: Constructor<S> | Constructor<Provider<S>>, name?: string): Binding<S>;
+service<S>(cls: Constructor<S> | Constructor<Provider<S>>, name?: string | ServiceOptions): Binding<S>;
 ```
 
 ## Parameters
@@ -25,7 +25,7 @@ service<S>(cls: Constructor<S> | Constructor<Provider<S>>, name?: string): Bindi
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  cls | <code>Constructor&lt;S&gt; &#124; Constructor&lt;Provider&lt;S&gt;&gt;</code> | The service or provider class |
-|  name | <code>string</code> |  |
+|  name | <code>string &#124; ServiceOptions</code> |  |
 
 <b>Returns:</b>
 

@@ -17,10 +17,10 @@ Convert to a plain JSON object
 <b>Signature:</b>
 
 ```typescript
-toJSON(): Object;
+toJSON(): object;
 ```
 <b>Returns:</b>
 
-`Object`
+`object`
 
 

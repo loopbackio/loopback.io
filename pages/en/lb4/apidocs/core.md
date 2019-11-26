@@ -27,15 +27,19 @@ permalink: /doc/en/lb4/apidocs.core.html
 |  --- | --- |
 |  [addExtension(context, extensionPointName, extensionClass, options)](./core.addextension.md) | Register an extension for the given extension point to the context |
 |  [asLifeCycleObserver(binding)](./core.aslifecycleobserver.md) | A <code>BindingTemplate</code> function to configure the binding as life cycle observer by tagging it with <code>CoreTags.LIFE_CYCLE_OBSERVER</code>. |
+|  [asService(serviceInterface)](./core.asservice.md) | Create a binding template for a service interface |
+|  [createServiceBinding(cls, options)](./core.createservicebinding.md) | Create a service binding from a class or provider |
 |  [extensionFilter(extensionPointName)](./core.extensionfilter.md) | A factory function to create binding filter for extensions of a named extension point |
 |  [extensionFor(extensionPointName)](./core.extensionfor.md) | A factory function to create binding template for extensions of the given extension point |
 |  [extensionPoint(name, specs)](./core.extensionpoint.md) | Decorate a class as a named extension point. If the decoration is not present, the name of the class will be used. |
 |  [extensions(extensionPointName)](./core.extensions.md) | Shortcut to inject extensions for the given extension point. |
+|  [filterByServiceInterface(serviceInterface)](./core.filterbyserviceinterface.md) | Create a binding filter by service class |
 |  [isLifeCycleObserver(obj)](./core.islifecycleobserver.md) | Test if an object implements LifeCycleObserver |
 |  [isLifeCycleObserverClass(ctor)](./core.islifecycleobserverclass.md) | Test if a class implements LifeCycleObserver |
 |  [lifeCycleObserver(group, specs)](./core.lifecycleobserver.md) | Sugar decorator to mark a class as life cycle observer |
 |  [lifeCycleObserverFilter(binding)](./core.lifecycleobserverfilter.md) | Find all life cycle observer bindings. By default, a binding tagged with <code>CoreTags.LIFE_CYCLE_OBSERVER</code>. It's used as <code>BindingFilter</code>. |
 |  [mountComponent(app, component)](./core.mountcomponent.md) | Mount a component to an Application. |
+|  [service(serviceInterface, metadata)](./core.service.md) | <code>@service</code> injects a service instance that matches the class or interface. |
 
 ## Interfaces
 
@@ -73,5 +77,7 @@ permalink: /doc/en/lb4/apidocs.core.html
 |  [JSONValue](./core.jsonvalue.md) |  |
 |  [LifeCycleObserverGroup](./core.lifecycleobservergroup.md) | A group of life cycle observers |
 |  [LifeCycleObserverOptions](./core.lifecycleobserveroptions.md) |  |
+|  [ServiceInterface](./core.serviceinterface.md) | Representing an interface for services. In TypeScript, the <code>interface</code> does not have reflections at runtime. We use a string, a symbol or a Function as the type for the service interface. |
+|  [ServiceOptions](./core.serviceoptions.md) | Options to register a service binding |
 
 

@@ -29,6 +29,7 @@ export declare namespace CoreTags
 |  [LIFE\_CYCLE\_OBSERVER\_GROUP](./core.coretags.life_cycle_observer_group.md) | Binding tag for group name of life cycle observers |
 |  [LIFE\_CYCLE\_OBSERVER](./core.coretags.life_cycle_observer.md) | Binding tag for life cycle observers |
 |  [SERVER](./core.coretags.server.md) | Binding tag for servers |
+|  [SERVICE\_INTERFACE](./core.coretags.service_interface.md) | Binding tag for the service interface |
 |  [SERVICE](./core.coretags.service.md) | Binding tag for services |
 
 

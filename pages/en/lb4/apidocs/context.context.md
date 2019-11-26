@@ -61,6 +61,7 @@ export declare class Context extends EventEmitter
 |  [getOwnerContext(key)](./context.context.getownercontext.md) |  | Get the owning context for a binding key |
 |  [getSync(keyWithPath, session)](./context.context.getsync.md) |  | Get the synchronous value bound to the given key, optionally return a (deep) property of the bound value.<!-- -->This method throws an error if the bound value requires async computation (returns a promise). You should never rely on sync bindings in production code. |
 |  [getSync(keyWithPath, options)](./context.context.getsync_1.md) |  | Get the synchronous value bound to the given key, optionally return a (deep) property of the bound value.<!-- -->This method throws an error if the bound value requires async computation (returns a promise). You should never rely on sync bindings in production code. |
+|  [inspect()](./context.context.inspect.md) |  | Inspect the context and dump out a JSON object representing the context hierarchy |
 |  [isBound(key)](./context.context.isbound.md) |  | Check if a key is bound in the context or its ancestors |
 |  [isSubscribed(observer)](./context.context.issubscribed.md) |  | Check if an observer is subscribed to this context |
 |  [notifyObservers(eventType, binding, context, observers)](./context.context.notifyobservers.md) |  | Publish an event to the registered observers. Please note the notification is queued and performed asynchronously so that we allow fluent APIs such as <code>ctx.bind('key').to(...).tag(...);</code> and give observers the fully populated binding. |
