@@ -24,6 +24,14 @@ deciding if a user can perform an action on a protected resource.
 For a description of an `Authorization` process, please see [Authorization](Loopback-component-authorization.md).
 " %}
 
+{% include note.html content="
+This document provides a detailed description of the authorization system in
+Loopback. If you just want to get started with authorization quickly,
+please see the [OAuth2
+tutorial](tutorials/authentication/Quick-Authentication-Tutorial-Session-Tokens.md)
+or the [JWT tutorial](tutorials/authentication/Authentication-Tutorial.md).
+" %}
+
 This document describes the details of the LoopBack 4 `Authentication` component
 from the `@loopback/authentication` package.
 
