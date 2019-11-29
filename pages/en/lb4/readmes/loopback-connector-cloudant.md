@@ -41,6 +41,7 @@ The `loopback-connector-cloudant` module is the Cloudant connector for the LoopB
 - [View](#view)
 - [Geospatial](#geospatial)
 - [Bulk replace](#bulk-replace)
+- [Partitioned database](#partitioned-database)
 - [Testing](#testing)
         - [Docker](#docker)
 - [More Info](#more-info)
@@ -822,6 +823,10 @@ module.exports = function(app) {
   });
 };
 ```
+
+# Partitioned database
+
+If you're using partitioned database, see details on how to configure your model and make use of the partitioned search in https://github.com/strongloop/loopback-connector-cloudant/blob/master/doc/partitioned-db.md
 
 # Testing
 

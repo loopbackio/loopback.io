@@ -41,24 +41,74 @@ app.listen(port);
 
 ## A note on swagger-ui vulnerabilities
 
-API Explorer for LoopBack 3 is built on top of `swagger-ui` version 2.x which is no longer maintained. While there are known security vulnerabilities in `swagger-ui`, we believe they don't affect LoopBack users. 
+API Explorer for LoopBack 3 is built on top of `swagger-ui` version 2.x which
+is no longer maintained. While there are known security vulnerabilities in
+`swagger-ui`, we believe they don't affect LoopBack users.
 
-We would love to upgrade our (LB3) API Explorer to v3 of swagger-ui, but unfortunately such upgrade requires too much effort and more importantly addition of new features to LB3 runtime, which would break our LTS guarantees. For more details, see discussion in [loopback-component-explorer#263](https://github.com/strongloop/loopback-component-explorer/issues/263).
+We would love to upgrade our (LB3) API Explorer to v3 of swagger-ui, but
+unfortunately such upgrade requires too much effort and more importantly
+addition of new features to LB3 runtime, which would break our LTS guarantees.
+For more details, see discussion in
+[loopback-component-explorer#263](https://github.com/strongloop/loopback-component-explorer/issues/263).
 
-https://www.npmjs.com/advisories/985
-> Versions of swagger-ui prior to 3.0.13 are vulnerable to Cross-Site Scripting (XSS). The package fails to sanitize YAML files imported from URLs or copied-pasted. This may allow attackers to execute arbitrary JavaScript.
+### npm advisory 985
 
-LoopBack's API Explorer does not allow clients to import swagger spec from YAML URL/pasted-content. That means loopback-component-explorer **IS NOT AFFECTED** by this vulnerability. 
+Link: https://www.npmjs.com/advisories/985
 
-https://www.npmjs.com/advisories/975
-> Versions of swagger-ui prior to 3.18.0 are vulnerable to Reverse Tabnapping. The package uses `target='_blank'` in anchor tags, allowing attackers to access `window.opener` for the original page. This is commonly used for phishing attacks.
+> Versions of swagger-ui prior to 3.0.13 are vulnerable to Cross-Site Scripting
+> (XSS). The package fails to sanitize YAML files imported from URLs or
+> copied-pasted. This may allow attackers to execute arbitrary JavaScript.
 
-This vulnerability affects anchor tags created from metadata provided by the Swagger spec, for example `info.termsOfServiceUrl`. LoopBack's API Explorer does not allow clients to provide custom swagger spec, URLs like `info.termsOfServiceUrl` are fully in control of the LoopBack application developer. That means loopback-component-explorer **IS NOT AFFECTED** by this vulnerability.
+LoopBack's API Explorer does not allow clients to import swagger spec from YAML
+URL/pasted-content. That means loopback-component-explorer **IS NOT AFFECTED**
+by this vulnerability.
 
-https://www.npmjs.com/advisories/976
-> Versions of swagger-ui prior to 3.20.9 are vulnerable to Cross-Site Scripting (XSS). The package fails to sanitize URLs used in the OAuth auth flow, which may allow attackers to execute arbitrary JavaScript.
+### npm advisory 975
 
-LoopBack 3 API Explorer does not support OAuth auth flow, that means loopback-component-explorer **IS NOT AFFECTED** by this vulnerability.
+Link: https://www.npmjs.com/advisories/975
+
+> Versions of swagger-ui prior to 3.18.0 are vulnerable to Reverse Tabnapping.
+> The package uses `target='_blank'` in anchor tags, allowing attackers to
+> access `window.opener` for the original page. This is commonly used for
+> phishing attacks.
+
+This vulnerability affects anchor tags created from metadata provided by the
+Swagger spec, for example `info.termsOfServiceUrl`. LoopBack's API Explorer
+does not allow clients to provide custom swagger spec, URLs like
+`info.termsOfServiceUrl` are fully in control of the LoopBack application
+developer. That means loopback-component-explorer **IS NOT AFFECTED** by this
+vulnerability.
+
+### npm advisory 976
+
+Link: https://www.npmjs.com/advisories/976
+
+> Versions of swagger-ui prior to 3.20.9 are vulnerable to Cross-Site Scripting
+> (XSS). The package fails to sanitize URLs used in the OAuth auth flow, which
+> may allow attackers to execute arbitrary JavaScript.
+
+LoopBack 3 API Explorer does not support OAuth auth flow, that means
+loopback-component-explorer **IS NOT AFFECTED** by this vulnerability.
+
+### GitHub advisory CVE-2019-17495
+
+Link: https://github.com/advisories/GHSA-c427-hjc3-wrfw
+> A Cascading Style Sheets (CSS) injection vulnerability in Swagger UI before
+> 3.23.11 allows attackers to use the Relative Path Overwrite (RPO) technique
+> to perform CSS-based input field value exfiltration, such as exfiltration of
+> a CSRF token value.
+
+Quoting from the
+[disclosure](https://github.com/tarantula-team/CSS-injection-in-Swagger-UI/tree/15edeaaa5806aa8e83ee55d883f956a3c3573ac9):
+
+> We’ve observed that the `?url=` parameter in SwaggerUI allows an attacker to
+> override an otherwise hard-coded schema file.  We realize that Swagger UI
+> allows users to embed untrusted Json format from remote servers This means we
+> can inject json content via the GET parameter to victim Swagger UI.  etc.
+
+LoopBack 3 API Explorer does not suport `?url=` parameter, it always loads the
+Swagger spec file from the LoopBack server serving the Explorer UI. That means
+loopback-component-explorer **IS NOT AFFECTED** by this vulnerability.
 
 ## Upgrading from v1.x
 
