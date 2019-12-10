@@ -17,7 +17,7 @@ HTTP server options
 <b>Signature:</b>
 
 ```typescript
-export interface HttpOptions extends ListenOptions 
+export interface HttpOptions extends BaseHttpOptions 
 ```
 
 ## Properties

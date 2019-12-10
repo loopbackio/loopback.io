@@ -24,6 +24,7 @@ permalink: /doc/en/lb4/apidocs.http-server.html
 
 |  Interface | Description |
 |  --- | --- |
+|  [BaseHttpOptions](./http-server.basehttpoptions.md) | Base options that are common to http and https servers |
 |  [HttpOptions](./http-server.httpoptions.md) | HTTP server options |
 |  [HttpsOptions](./http-server.httpsoptions.md) | HTTPS server options |
 
@@ -33,6 +34,6 @@ permalink: /doc/en/lb4/apidocs.http-server.html
 |  --- | --- |
 |  [HttpProtocol](./http-server.httpprotocol.md) | Supported protocols |
 |  [HttpServerOptions](./http-server.httpserveroptions.md) | Possible server options |
-|  [RequestListener](./http-server.requestlistener.md) |  |
+|  [RequestListener](./http-server.requestlistener.md) | Request listener function for http/https requests |
 
 

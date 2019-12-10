@@ -17,7 +17,7 @@ Create a proxy that applies interceptors for method invocations
 <b>Signature:</b>
 
 ```typescript
-export declare function createProxyWithInterceptors<T extends object>(target: T, context?: Context): AsyncProxy<T>;
+export declare function createProxyWithInterceptors<T extends object>(target: T, context?: Context, session?: ResolutionSession): AsyncProxy<T>;
 ```
 
 ## Parameters
@@ -26,6 +26,7 @@ export declare function createProxyWithInterceptors<T extends object>(target: T,
 |  --- | --- | --- |
 |  target | <code>T</code> | Target class or object |
 |  context | <code>Context</code> | Context object |
+|  session | <code>ResolutionSession</code> |  |
 
 <b>Returns:</b>
 

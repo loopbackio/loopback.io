@@ -30,7 +30,13 @@ export declare class HttpServer
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
+|  [address](./http-server.httpserver.address.md) |  | <code>string &#124; AddressInfo &#124; undefined</code> | Address of the HTTP / HTTPS server |
+|  [host](./http-server.httpserver.host.md) |  | <code>string &#124; undefined</code> | Host of the HTTP / HTTPS server |
+|  [listening](./http-server.httpserver.listening.md) |  | <code>boolean</code> | State of the HTTP / HTTPS server |
+|  [port](./http-server.httpserver.port.md) |  | <code>number</code> | Port number of the HTTP / HTTPS server |
+|  [protocol](./http-server.httpserver.protocol.md) |  | <code>HttpProtocol</code> | Protocol of the HTTP / HTTPS server |
 |  [server](./http-server.httpserver.server.md) |  | <code>http.Server &#124; https.Server</code> |  |
+|  [url](./http-server.httpserver.url.md) |  | <code>string</code> | URL of the HTTP / HTTPS server |
 
 ## Methods
 

@@ -20,6 +20,7 @@ Options to control invocations
 export declare type InvocationOptions = {
     skipParameterInjection?: boolean;
     skipInterceptors?: boolean;
+    source?: InvocationSource;
 };
 ```
 

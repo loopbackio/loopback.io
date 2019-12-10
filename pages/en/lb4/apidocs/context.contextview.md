@@ -36,6 +36,7 @@ export declare class ContextView<T = unknown> extends EventEmitter implements Co
 |  --- | --- | --- | --- |
 |  [\_cachedBindings](./context.contextview._cachedbindings.md) |  | <code>Readonly&lt;Binding&lt;T&gt;&gt;[] &#124; undefined</code> |  |
 |  [\_cachedValues](./context.contextview._cachedvalues.md) |  | <code>T[] &#124; undefined</code> |  |
+|  [bindings](./context.contextview.bindings.md) |  | <code>Readonly&lt;Binding&lt;T&gt;&gt;[]</code> | Get the list of matched bindings. If they are not cached, it tries to find them from the context. |
 |  [comparator](./context.contextview.comparator.md) |  | <code>BindingComparator &#124; undefined</code> |  |
 |  [context](./context.contextview.context.md) |  | <code>Context</code> |  |
 |  [filter](./context.contextview.filter.md) |  | <code>BindingFilter</code> |  |

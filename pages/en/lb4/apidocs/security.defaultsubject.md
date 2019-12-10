@@ -27,6 +27,7 @@ export declare class DefaultSubject implements Subject
 |  [authorities](./security.defaultsubject.authorities.md) |  | <code>Set&lt;Permission&gt;</code> |  |
 |  [credentials](./security.defaultsubject.credentials.md) |  | <code>Set&lt;Credential&gt;</code> |  |
 |  [principals](./security.defaultsubject.principals.md) |  | <code>Set&lt;TypedPrincipal&gt;</code> |  |
+|  [user](./security.defaultsubject.user.md) |  | <code>UserProfile &#124; undefined</code> |  |
 
 ## Methods
 

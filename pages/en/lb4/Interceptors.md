@@ -514,6 +514,7 @@ bindings. It extends `Context` with additional properties as follows:
   (for instance methods)
 - `methodName` (`string`): Method name
 - `args` (`InvocationArgs`, i.e., `any[]`): An array of arguments
+- `source`: Source information about the invoker of the invocation
 
 ```ts
 /**
@@ -533,6 +534,7 @@ export class InvocationContext extends Context {
     public readonly target: object,
     public readonly methodName: string,
     public readonly args: InvocationArgs, // any[]
+    public readonly source?: InvocationSource,
   ) {
     super(parent);
   }
@@ -541,6 +543,74 @@ export class InvocationContext extends Context {
 
 It's possible for an interceptor to mutate items in the `args` array to pass in
 transformed input to downstream interceptors and the target method.
+
+### Source for an invocation
+
+The `source` property of `InvocationContext` is defined as `InvocationSource`:
+
+```ts
+/**
+ * An interface to represent the caller of the invocation
+ */
+export interface InvocationSource<T = unknown> {
+  /**
+   * Type of the invoker, such as `proxy` and `route`
+   */
+  readonly type: string;
+  /**
+   * Metadata for the source, such as `ResolutionSession`
+   */
+  readonly value: T;
+}
+```
+
+The `source` describes the caller that invokes a method with interceptors.
+Interceptors can be invoked in the following cases:
+
+1. A route to a controller method
+
+   - The source describes the REST Route
+
+2. A controller to a repository/service with injected proxy
+
+   - The source describes a ResolutionSession that tracks a stack of bindings
+     and injections
+
+3. A controller/repository/service method invoked explicitly with
+   `invokeMethodWithInterceptors()` or `invokeMethod`
+
+   - The source can be set by the caller of `invokeMethodWithInterceptors()` or
+     `invokeMethod`
+
+The implementation of an interceptor can check `source` to decide if its logic
+should apply. For example, a global interceptor that provides caching for REST
+APIs should only run if the source is from a REST Route.
+
+A global interceptor can also be tagged with
+`ContextTags.GLOBAL_INTERCEPTOR_SOURCE` using a value of string or string array
+to indicate if it should be applied to source types of invocations. If the tag
+is not present, the interceptor applies to invocations of any source type. For
+example:
+
+```ts
+ctx
+  .bind('globalInterceptors.authInterceptor')
+  .to(authInterceptor)
+  .apply(asGlobalInterceptor('auth'))
+  // Do not apply for `proxy` source type
+  .tag({[ContextTags.GLOBAL_INTERCEPTOR_SOURCE]: 'route'});
+```
+
+The tag can also be declared for the provider class.
+
+```ts
+@globalInterceptor('log', {
+  tags: {[ContextTags.GLOBAL_INTERCEPTOR_SOURCE]: ['proxy']},
+})
+export class LogInterceptor implements Provider<Interceptor> {
+  // ...
+}
+```
 
 ### Logic around `next`
 
@@ -579,86 +649,86 @@ Here are some example interceptor functions:
 
 1. An asynchronous interceptor to log method invocations:
 
-```ts
-const log: Interceptor = async (invocationCtx, next) => {
-  console.log('log: before-' + invocationCtx.methodName);
-  // Wait until the interceptor/method chain returns
-  const result = await next();
-  console.log('log: after-' + invocationCtx.methodName);
-  return result;
-};
-```
+   ```ts
+   const log: Interceptor = async (invocationCtx, next) => {
+     console.log('log: before-' + invocationCtx.methodName);
+     // Wait until the interceptor/method chain returns
+     const result = await next();
+     console.log('log: after-' + invocationCtx.methodName);
+     return result;
+   };
+   ```
 
 2. An interceptor to catch and log errors:
 
-```ts
-const logError: Interceptor = async (invocationCtx, next) => {
-  console.log('logError: before-' + invocationCtx.methodName);
-  try {
-    const result = await next();
-    console.log('logError: after-' + invocationCtx.methodName);
-    return result;
-  } catch (err) {
-    console.log('logError: error-' + invocationCtx.methodName);
-    throw err;
-  }
-};
-```
+   ```ts
+   const logError: Interceptor = async (invocationCtx, next) => {
+     console.log('logError: before-' + invocationCtx.methodName);
+     try {
+       const result = await next();
+       console.log('logError: after-' + invocationCtx.methodName);
+       return result;
+     } catch (err) {
+       console.log('logError: error-' + invocationCtx.methodName);
+       throw err;
+     }
+   };
+   ```
 
 3. An interceptor to convert `name` arg to upper case:
 
-```ts
-const convertName: Interceptor = async (invocationCtx, next) => {
-  console.log('convertName:before-' + invocationCtx.methodName);
-  invocationCtx.args[0] = (invocationCtx.args[0] as string).toUpperCase();
-  const result = await next();
-  console.log('convertName: after-' + invocationCtx.methodName);
-  return result;
-};
-```
+   ```ts
+   const convertName: Interceptor = async (invocationCtx, next) => {
+     console.log('convertName:before-' + invocationCtx.methodName);
+     invocationCtx.args[0] = (invocationCtx.args[0] as string).toUpperCase();
+     const result = await next();
+     console.log('convertName: after-' + invocationCtx.methodName);
+     return result;
+   };
+   ```
 
 4. An provider class for an interceptor that performs parameter validation
 
-To leverage dependency injection, a provider class can be defined as the
-interceptor:
+   To leverage dependency injection, a provider class can be defined as the
+   interceptor:
 
-```ts
-/**
- * A binding provider class to produce an interceptor that validates the
- * `name` argument
- */
-class NameValidator implements Provider<Interceptor> {
-  constructor(@inject('valid-names') private validNames: string[]) {}
+   ```ts
+   /**
+    * A binding provider class to produce an interceptor that validates the
+    * `name` argument
+    */
+   class NameValidator implements Provider<Interceptor> {
+     constructor(@inject('valid-names') private validNames: string[]) {}
 
-  value() {
-    return this.intercept.bind(this);
-  }
+     value() {
+       return this.intercept.bind(this);
+     }
 
-  async intercept<T>(
-    invocationCtx: InvocationContext,
-    next: () => ValueOrPromise<T>,
-  ) {
-    const name = invocationCtx.args[0];
-    if (!this.validNames.includes(name)) {
-      throw new Error(
-        `Name '${name}' is not on the list of '${this.validNames}`,
-      );
-    }
-    return next();
-  }
-}
-```
+     async intercept<T>(
+       invocationCtx: InvocationContext,
+       next: () => ValueOrPromise<T>,
+     ) {
+       const name = invocationCtx.args[0];
+       if (!this.validNames.includes(name)) {
+         throw new Error(
+           `Name '${name}' is not on the list of '${this.validNames}`,
+         );
+       }
+       return next();
+     }
+   }
+   ```
 
 5. A synchronous interceptor to log method invocations:
 
-```ts
-const logSync: Interceptor = (invocationCtx, next) => {
-  console.log('logSync: before-' + invocationCtx.methodName);
-  // Calling `next()` without `await`
-  const result = next();
-  // It's possible that the statement below is executed before downstream
-  // interceptors or the target method finish
-  console.log('logSync: after-' + invocationCtx.methodName);
-  return result;
-};
-```
+   ```ts
+   const logSync: Interceptor = (invocationCtx, next) => {
+     console.log('logSync: before-' + invocationCtx.methodName);
+     // Calling `next()` without `await`
+     const result = next();
+     // It's possible that the statement below is executed before downstream
+     // interceptors or the target method finish
+     console.log('logSync: after-' + invocationCtx.methodName);
+     return result;
+   };
+   ```

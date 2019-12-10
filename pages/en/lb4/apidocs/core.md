@@ -79,5 +79,6 @@ permalink: /doc/en/lb4/apidocs.core.html
 |  [LifeCycleObserverOptions](./core.lifecycleobserveroptions.md) |  |
 |  [ServiceInterface](./core.serviceinterface.md) | Representing an interface for services. In TypeScript, the <code>interface</code> does not have reflections at runtime. We use a string, a symbol or a Function as the type for the service interface. |
 |  [ServiceOptions](./core.serviceoptions.md) | Options to register a service binding |
+|  [ShutdownOptions](./core.shutdownoptions.md) | Options to set up application shutdown |
 
 

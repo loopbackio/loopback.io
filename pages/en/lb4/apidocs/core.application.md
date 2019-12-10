@@ -32,11 +32,15 @@ export declare class Application extends Context implements LifeCycleObserver
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
 |  [options](./core.application.options.md) |  | <code>ApplicationConfig</code> |  |
+|  [state](./core.application.state.md) |  | <code>string</code> | Get the state of the application. The initial state is <code>created</code> and it can transition as follows by <code>start</code> and <code>stop</code>:<!-- -->1. start - !started -<!-- -->&gt; starting -<!-- -->&gt; started - started -<!-- -->&gt; started (no-op) 2. stop - started -<!-- -->&gt; stopping -<!-- -->&gt; stopped - !started -<!-- -->&gt; stopped (no-op)<!-- -->Two types of states are expected: - stable, such as <code>started</code> and <code>stopped</code> - in process, such as <code>booting</code> and <code>starting</code>Operations such as <code>start</code> and <code>stop</code> can only be called at a stable state. The logic should immediately set the state to a new one indicating work in process, such as <code>starting</code> and <code>stopping</code>. |
 
 ## Methods
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
+|  [assertInStates(op, states)](./core.application.assertinstates.md) |  | Assert current state of the application to be one of the expected values |
+|  [assertNotInProcess(op)](./core.application.assertnotinprocess.md) |  | Assert there is no other operation is in progress, i.e., the state is not <code>*ing</code>, such as <code>starting</code> or <code>stopping</code>. |
+|  [awaitState(state)](./core.application.awaitstate.md) |  |  |
 |  [component(componentCtor, name)](./core.application.component.md) |  | Add a component to this application and register extensions such as controllers, providers, and servers from the component. |
 |  [controller(controllerCtor, name)](./core.application.controller.md) |  | Register a controller class with this application. |
 |  [getServer(target)](./core.application.getserver.md) |  | Retrieve the singleton instance for a bound server. |
@@ -45,7 +49,9 @@ export declare class Application extends Context implements LifeCycleObserver
 |  [servers(ctors)](./core.application.servers.md) |  | Bind an array of Server constructors to the Application's master context. Each server added in this way will automatically be named based on the class constructor name with the "servers." prefix. |
 |  [service(cls, name)](./core.application.service.md) |  | Add a service to this application. |
 |  [setMetadata(metadata)](./core.application.setmetadata.md) |  | Set application metadata. <code>@loopback/boot</code> calls this method to populate the metadata from <code>package.json</code>. |
-|  [start()](./core.application.start.md) |  | Start the application, and all of its registered observers. |
-|  [stop()](./core.application.stop.md) |  | Stop the application instance and all of its registered observers. |
+|  [setState(state)](./core.application.setstate.md) |  | Transition the application to a new state and emit an event |
+|  [setupShutdown(signals, gracePeriod)](./core.application.setupshutdown.md) |  | Set up signals that are captured to shutdown the application |
+|  [start()](./core.application.start.md) |  | Start the application, and all of its registered observers. The application state is checked to ensure the integrity of <code>start</code>.<!-- -->If the application is already started, no operation is performed. |
+|  [stop()](./core.application.stop.md) |  | Stop the application instance and all of its registered observers. The application state is checked to ensure the integrity of <code>stop</code>.<!-- -->If the application is already stopped or not started, no operation is performed. |
 
 

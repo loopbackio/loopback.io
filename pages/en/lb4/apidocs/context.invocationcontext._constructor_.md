@@ -17,7 +17,7 @@ Construct a new instance of `InvocationContext`
 <b>Signature:</b>
 
 ```typescript
-constructor(parent: Context, target: object, methodName: string, args: InvocationArgs);
+constructor(parent: Context, target: object, methodName: string, args: InvocationArgs, source?: InvocationSource<unknown> | undefined);
 ```
 
 ## Parameters
@@ -28,5 +28,6 @@ constructor(parent: Context, target: object, methodName: string, args: Invocatio
 |  target | <code>object</code> | Target class (for static methods) or prototype/object (for instance methods) |
 |  methodName | <code>string</code> | Method name |
 |  args | <code>InvocationArgs</code> | An array of arguments |
+|  source | <code>InvocationSource&lt;unknown&gt; &#124; undefined</code> |  |
 
 

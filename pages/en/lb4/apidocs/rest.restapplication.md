@@ -27,6 +27,13 @@ export declare class RestApplication extends Application implements HttpServerLi
 |  [(constructor)(parent)](./rest.restapplication._constructor_.md) |  | Create a REST application with the given parent context |
 |  [(constructor)(config, parent)](./rest.restapplication._constructor__1.md) |  | Create a REST application with the given configuration and parent context |
 
+## Properties
+
+|  Property | Modifiers | Type | Description |
+|  --- | --- | --- | --- |
+|  [requestHandler](./rest.restapplication.requesthandler.md) |  | <code>HttpRequestListener</code> | Handle incoming HTTP(S) request by invoking the corresponding Controller method via the configured Sequence. |
+|  [restServer](./rest.restapplication.restserver.md) |  | <code>RestServer</code> | The main REST server instance providing REST API for this application. |
+
 ## Methods
 
 |  Method | Modifiers | Description |

@@ -73,6 +73,28 @@ permalink: /doc/en/lb4/apidocs.repository.html
 |  [createHasManyRepositoryFactory(relationMetadata, targetRepositoryGetter)](./repository.createhasmanyrepositoryfactory.md) | Enforces a constraint on a repository based on a relationship contract between models. For example, if a Customer model is related to an Order model via a HasMany relation, then, the relational repository returned by the factory function would be constrained by a Customer model instance's id(s). |
 |  [createHasOneRepositoryFactory(relationMetadata, targetRepositoryGetter)](./repository.createhasonerepositoryfactory.md) | Enforces a constraint on a repository based on a relationship contract between models. For example, if a Customer model is related to an Address model via a HasOne relation, then, the relational repository returned by the factory function would be constrained by a Customer model instance's id(s). |
 |  [deduplicate(input)](./repository.deduplicate.md) | Dedupe an array |
+|  [defineModelClass(base, definition)](./repository.definemodelclass.md) | Create (define) a new model class with the given name and definition.<!-- -->Example usage:
+```ts
+const Product = defineModelClass(Entity, new ModelDefinition('Product'));
+
+```
+To enable type safety, you should describe properties of your model:
+```ts
+const Product = defineModelClass<
+ typeof Entity,
+ {id: number, name: string}
+>(Entity, new ModelDefinition('Product'));
+
+```
+If your model allows arbitrary (free-form) properties, then add <code>AnyObject</code> to the type describing model properties.
+```ts
+const Product = defineModelClass<
+ typeof Entity,
+ AnyObject & {id: number},
+>(Entity, new ModelDefinition('Product'));
+
+```
+ |
 |  [embedsMany(definition)](./repository.embedsmany.md) | Decorator for embedsMany |
 |  [embedsOne(definition)](./repository.embedsone.md) | Decorator for embedsOne |
 |  [ensurePromise(p)](./repository.ensurepromise.md) | Ensure the value is a promise |
@@ -183,6 +205,7 @@ permalink: /doc/en/lb4/apidocs.repository.html
 |  [DataObject](./repository.dataobject.md) | Type alias for strongly or weakly typed objects of T |
 |  [DeepPartial](./repository.deeppartial.md) | An extension of the built-in Partial<T> type which allows partial values in deeply nested properties too. |
 |  [Direction](./repository.direction.md) | Order by direction |
+|  [DynamicModelCtor](./repository.dynamicmodelctor.md) | A type describing a model class created via <code>defineModelClass</code>.<!-- -->Assuming template arguments <code>BaseCtor</code> and <code>Props</code>, this type describes a class constructor with the following properties: - a constructor function accepting <code>DataObject&lt;Props&gt;</code> as the only argument, this argument is optional - all static fields (properties, methods) from <code>BaseCtor</code> are inherited and available as static fields on the dynamic class - all prototype fields from <code>BaseCtor</code> prototype are inherited and available as prototype fields on the dynamic class |
 |  [EntityData](./repository.entitydata.md) |  |
 |  [EntityResolver](./repository.entityresolver.md) |  |
 |  [Fields](./repository.fields.md) | Selection of fields<!-- -->Example: <code>{afieldname: true}</code> |
@@ -197,6 +220,7 @@ permalink: /doc/en/lb4/apidocs.repository.html
 |  [PredicateComparison](./repository.predicatecomparison.md) | Matching predicate comparison |
 |  [PropertyMap](./repository.propertymap.md) |  |
 |  [PropertyType](./repository.propertytype.md) | This module defines the key classes representing building blocks for Domain Driven Design. See https://en.wikipedia.org/wiki/Domain-driven\_design\#Building\_blocks |
+|  [PrototypeOf](./repository.prototypeof.md) | Type helper to infer prototype from a constructor function.<!-- -->Example: <code>PrototypeOf&lt;typeof Entity&gt;</code> is resolved to <code>Entity</code>. |
 |  [RelationDefinitionMap](./repository.relationdefinitionmap.md) | A key-value map describing model relations. A relation name is used as the key, a relation definition is the value. |
 |  [RelationMetadata](./repository.relationmetadata.md) | A union type describing all possible Relation metadata objects. |
 |  [RepositoryDecorator](./repository.repositorydecorator.md) | Type definition for decorators returned by <code>@repository</code> decorator factory |

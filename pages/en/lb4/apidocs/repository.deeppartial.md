@@ -17,7 +17,7 @@ An extension of the built-in Partial<T> type which allows partial values in deep
 <b>Signature:</b>
 
 ```typescript
-export declare type DeepPartial<T> = {
+export declare type DeepPartial<T> = Partial<T> | {
     [P in keyof T]?: DeepPartial<T[P]>;
 };
 ```

@@ -27,6 +27,7 @@ permalink: /doc/en/lb4/apidocs.context.html
 |  [InterceptedInvocationContext](./context.interceptedinvocationcontext.md) | A specialized InvocationContext for interceptors |
 |  [InterceptionHandler](./context.interceptionhandler.md) | A proxy handler that applies interceptors<!-- -->See https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global\_Objects/Proxy |
 |  [InvocationContext](./context.invocationcontext.md) | InvocationContext represents the context to invoke interceptors for a method. The context can be used to access metadata about the invocation as well as other dependencies. |
+|  [ProxySource](./context.proxysource.md) | Invocation source for injected proxies. It wraps a snapshot of the <code>ResolutionSession</code> that tracks the binding/injection stack. |
 |  [ResolutionSession](./context.resolutionsession.md) | Object to keep states for a session to resolve bindings and their dependencies within a context |
 
 ## Enumerations
@@ -54,7 +55,7 @@ permalink: /doc/en/lb4/apidocs.context.html
 |  [config(propertyPath, metadata)](./context.config.md) | Inject a property from <code>config</code> of the current binding. If no corresponding config value is present, <code>undefined</code> will be injected as the configuration binding is resolved with <code>optional: true</code> by default. |
 |  [configBindingKeyFor(key, propertyPath)](./context.configbindingkeyfor.md) | Create binding key for configuration of the binding |
 |  [createBindingFromClass(cls, options)](./context.createbindingfromclass.md) | Create a binding from a class with decorated metadata. The class is attached to the binding as follows: - <code>binding.toClass(cls)</code>: if <code>cls</code> is a plain class such as <code>MyController</code> - <code>binding.toProvider(cls)</code>: it <code>cls</code> is a value provider class with a prototype method <code>value()</code> |
-|  [createProxyWithInterceptors(target, context)](./context.createproxywithinterceptors.md) | Create a proxy that applies interceptors for method invocations |
+|  [createProxyWithInterceptors(target, context, session)](./context.createproxywithinterceptors.md) | Create a proxy that applies interceptors for method invocations |
 |  [createViewGetter(ctx, bindingFilter, session)](./context.createviewgetter.md) | Create a context view as a getter with the given filter |
 |  [createViewGetter(ctx, bindingFilter, bindingComparator, session)](./context.createviewgetter_1.md) | Create a context view as a getter with the given filter and sort matched bindings by the comparator. |
 |  [describeInjectedArguments(target, method)](./context.describeinjectedarguments.md) | Return an array of injection objects for parameters |
@@ -99,6 +100,7 @@ permalink: /doc/en/lb4/apidocs.context.html
 |  [InjectionElement](./context.injectionelement.md) | Wrapper for injections tracked by resolution sessions |
 |  [InjectionMetadata](./context.injectionmetadata.md) | An object to provide metadata for <code>@inject</code> |
 |  [Interceptor](./context.interceptor.md) | Interceptor function to intercept method invocations |
+|  [InvocationSource](./context.invocationsource.md) | An interface to represent the caller of the invocation |
 |  [Provider](./context.provider.md) | Providers allow developers to compute injected values dynamically, with any dependencies required by the value getter injected automatically from the Context. |
 |  [ResolutionOptions](./context.resolutionoptions.md) | Options for binding/dependency resolution |
 |  [ResolverFunction](./context.resolverfunction.md) | A function to provide resolution of injected values |

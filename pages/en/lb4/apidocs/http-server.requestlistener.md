@@ -12,6 +12,8 @@ permalink: /doc/en/lb4/apidocs.http-server.requestlistener.html
 
 ## RequestListener type
 
+Request listener function for http/https requests
+
 <b>Signature:</b>
 
 ```typescript

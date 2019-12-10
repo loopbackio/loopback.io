@@ -12,7 +12,9 @@ permalink: /doc/en/lb4/apidocs.core.application.stop.html
 
 ## Application.stop() method
 
-Stop the application instance and all of its registered observers.
+Stop the application instance and all of its registered observers. The application state is checked to ensure the integrity of `stop`<!-- -->.
+
+If the application is already stopped or not started, no operation is performed.
 
 <b>Signature:</b>
 

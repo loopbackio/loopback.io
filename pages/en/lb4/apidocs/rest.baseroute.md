@@ -40,6 +40,7 @@ export declare abstract class BaseRoute implements RouteEntry
 |  --- | --- | --- |
 |  [describe()](./rest.baseroute.describe.md) |  |  |
 |  [invokeHandler(requestContext, args)](./rest.baseroute.invokehandler.md) |  |  |
+|  [toString()](./rest.baseroute.tostring.md) |  |  |
 |  [updateBindings(requestContext)](./rest.baseroute.updatebindings.md) |  |  |
 
 

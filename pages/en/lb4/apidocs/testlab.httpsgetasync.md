@@ -17,7 +17,7 @@ Async wrapper for making HTTPS GET requests
 <b>Signature:</b>
 
 ```typescript
-export declare function httpsGetAsync(urlString: string): Promise<IncomingMessage>;
+export declare function httpsGetAsync(urlString: string, agent?: https.Agent): Promise<IncomingMessage>;
 ```
 
 ## Parameters
@@ -25,6 +25,7 @@ export declare function httpsGetAsync(urlString: string): Promise<IncomingMessag
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  urlString | <code>string</code> |  |
+|  agent | <code>https.Agent</code> |  |
 
 <b>Returns:</b>
 

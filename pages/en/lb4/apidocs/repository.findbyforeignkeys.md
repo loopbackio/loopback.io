@@ -24,7 +24,7 @@ export declare function findByForeignKeys<Target extends Entity, TargetRelations
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  targetRepository | <code>EntityCrudRepository&lt;Target, unknown, TargetRelations&gt;</code> | The target repository where the model instances are found |
+|  targetRepository | <code>EntityCrudRepository&lt;Target, unknown, TargetRelations&gt;</code> | The target repository where the related model instances are found |
 |  fkName | <code>ForeignKey</code> | Name of the foreign key |
 |  fkValues | <code>Target[ForeignKey][] &#124; Target[ForeignKey]</code> | One value or array of values of the foreign key to be included |
 |  scope | <code>Filter&lt;Target&gt;</code> | Additional scope constraints (not currently supported) |

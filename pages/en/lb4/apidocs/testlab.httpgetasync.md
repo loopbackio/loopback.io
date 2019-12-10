@@ -17,7 +17,7 @@ Async wrapper for making HTTP GET requests
 <b>Signature:</b>
 
 ```typescript
-export declare function httpGetAsync(urlString: string): Promise<IncomingMessage>;
+export declare function httpGetAsync(urlString: string, agent?: http.Agent): Promise<IncomingMessage>;
 ```
 
 ## Parameters
@@ -25,6 +25,7 @@ export declare function httpGetAsync(urlString: string): Promise<IncomingMessage
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  urlString | <code>string</code> |  |
+|  agent | <code>http.Agent</code> |  |
 
 <b>Returns:</b>
 

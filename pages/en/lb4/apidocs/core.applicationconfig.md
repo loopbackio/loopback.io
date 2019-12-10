@@ -20,3 +20,10 @@ Configuration for application
 export interface ApplicationConfig 
 ```
 
+## Properties
+
+|  Property | Type | Description |
+|  --- | --- | --- |
+|  [shutdown](./core.applicationconfig.shutdown.md) | <code>ShutdownOptions</code> | Configuration for signals that shut down the application |
+
+

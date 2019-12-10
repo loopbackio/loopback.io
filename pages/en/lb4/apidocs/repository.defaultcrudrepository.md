@@ -51,6 +51,8 @@ export declare class DefaultCrudRepository<T extends Entity, ID, Relations exten
 |  [delete(entity, options)](./repository.defaultcrudrepository.delete.md) |  |  |
 |  [deleteAll(where, options)](./repository.defaultcrudrepository.deleteall.md) |  |  |
 |  [deleteById(id, options)](./repository.defaultcrudrepository.deletebyid.md) |  |  |
+|  [ensurePersistable(entity, options)](./repository.defaultcrudrepository.ensurepersistable.md) |  | Converts an entity object to a JSON object to check if it contains navigational property. Throws an error if <code>entity</code> contains navigational property. |
+|  [entityToData(entity, options)](./repository.defaultcrudrepository.entitytodata.md) |  | This function works as a persist hook. It converts an entity from the CRUD operations' caller to a persistable data that can will be stored in the back-end database.<!-- -->User can extend <code>DefaultCrudRepository</code> then override this function to execute custom persist hook. |
 |  [execute(command, parameters, options)](./repository.defaultcrudrepository.execute.md) |  |  |
 |  [exists(id, options)](./repository.defaultcrudrepository.exists.md) |  |  |
 |  [find(filter, options)](./repository.defaultcrudrepository.find.md) |  |  |

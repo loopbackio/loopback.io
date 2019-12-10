@@ -12,7 +12,9 @@ permalink: /doc/en/lb4/apidocs.core.application.start.html
 
 ## Application.start() method
 
-Start the application, and all of its registered observers.
+Start the application, and all of its registered observers. The application state is checked to ensure the integrity of `start`<!-- -->.
+
+If the application is already started, no operation is performed.
 
 <b>Signature:</b>
 

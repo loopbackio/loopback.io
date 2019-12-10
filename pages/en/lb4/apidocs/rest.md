@@ -39,6 +39,7 @@ permalink: /doc/en/lb4/apidocs.rest.html
 |  [RestComponent](./rest.restcomponent.md) |  |
 |  [RestServer](./rest.restserver.md) | A REST API server for use with Loopback. Add this server to your application by importing the RestComponent. |
 |  [Route](./rest.route.md) |  |
+|  [RouteSource](./rest.routesource.md) |  |
 |  [RoutingTable](./rest.routingtable.md) | Routing table |
 |  [SendProvider](./rest.sendprovider.md) | Provides the function that populates the response object with the results of the operation. |
 |  [StreamBodyParser](./rest.streambodyparser.md) | A special body parser to retain request stream as is. It will be used by explicitly setting <code>x-parser</code> to <code>'stream'</code> in the request body spec. |
