@@ -45,7 +45,7 @@ For example, here is an excerpt from a model definition file for a customer mode
   "methods": [...],  // See Methods below
   "remoting": {
       "normalizeHttpPath": true
-    },  
+    },
   "http": {"path": "/foo/mypath"}
 }
 ```
@@ -99,16 +99,16 @@ Properties are required unless otherwise designated.
     <tr>
       <td>excludeBaseProperties</td>
       <td>Array</td>
-      <td><code>['id', 'password']</code></td>      
+      <td><code>['id', 'password']</code></td>
       <td>
         Excludes the given list of properties from the base model from being visible. Use this instead of the approach documented under 'Exclude properties from base model' section below.
        </td>
     </tr>
-    
+
     <tr>
       <td>forceId</td>
       <td>Boolean</td>
-      <td><code>true</code></td>      
+      <td><code>true</code></td>
       <td>
         If true, prevents clients from setting the auto-generated ID value manually.
       </td>
@@ -116,7 +116,7 @@ Properties are required unless otherwise designated.
 
     <tr>
       <td>http.path</td>
-      <td>String</td>      
+      <td>String</td>
       <td>None</td>
       <td>Customized HTTP path for REST endpoints of this model.</td>
     </tr>
@@ -143,7 +143,7 @@ Properties are required unless otherwise designated.
     <tr>
       <td>idInjection</td>
       <td>Boolean</td>
-      <td><code>true</code></td>       
+      <td><code>true</code></td>
       <td>
         Whether to automatically add an <code>id</code> property to the model:
         <ul>
@@ -173,9 +173,9 @@ Properties are required unless otherwise designated.
     <tr>
       <td>plural</td>
       <td>String</td>
-      <td>Plural of <code>name</code> property using standard English conventions.</td>       
+      <td>Plural of <code>name</code> property using standard English conventions.</td>
       <td>
-        Plural form of the model name.  
+        Plural form of the model name.
       </td>
     </tr>
 
@@ -332,13 +332,29 @@ For example:
       <th>Description</th>
     </tr>
   </thead>
-  <tbody>    
+  <tbody>
     <tr>
       <td>default</td>
       <td>No</td>
       <td>Any*</td>
       <td>
         Default value for the property. The type must match that specified by <code>type</code>.
+      </td>
+    </tr>
+    <tr>
+      <td>applyDefaultOnWrites</td>
+      <td>No</td>
+      <td>Boolean</td>
+      <td>
+        When set to `false`, does not write the default value to the database if the property value is missing. Defaults to `true`.
+      </td>
+    </tr>
+    <tr>
+      <td>persistDefaultValues</td>
+      <td>No</td>
+      <td>Boolean</td>
+      <td>
+        When set to `false`, does not write the default value to the database if the property value matches the default value. Defaults to `true`. Applicable only for primitive data types.
       </td>
     </tr>
     <tr>
@@ -494,8 +510,8 @@ When using a relational database data source, you can specify the following prop
       <th>Type</th>
       <th>Description</th>
     </tr>
-  </thead>    
-  <tbody>    
+  </thead>
+  <tbody>
     <tr>
       <td>columnName</td>
       <td>String</td>
@@ -585,7 +601,7 @@ For example, to map a property to a column in an Oracle database table, use the 
 ## Exclude properties from base model
 
 By default, a model inherits all properties from the base. To exclude some base properties from being visible, you need to set `excludeBaseProperties = ['property-be-excluded-from-base-model']`.
-`excludeBaseProperties` is recommended approach over previous approach of setting the base property to 'null' or 'false'. 
+`excludeBaseProperties` is recommended approach over previous approach of setting the base property to 'null' or 'false'.
 
 For example,
 {% include code-caption.html content="common/models/customer.json" %}
@@ -612,7 +628,7 @@ Excludes 'id' property from the base model, "Model"
 ...
 ```
 
-Below way of excluding base properties by setting the base property to 'null' or 'false' is not recommended. Instead, use `excludeBaseProperties` as shown above. 
+Below way of excluding base properties by setting the base property to 'null' or 'false' is not recommended. Instead, use `excludeBaseProperties` as shown above.
 
 {% include code-caption.html content="common/models/customer.json" %}
 ```javascript
@@ -834,7 +850,7 @@ The value of the `acls` key is an array of objects that describes the access 
       <th>Description</th>
     </tr>
   </thead>
-  <tbody>    
+  <tbody>
     <tr>
       <td>accessType</td>
       <td>String</td>
