@@ -436,7 +436,58 @@ Foreign key constraints can be defined in the model `options`. Removing or updat
 
 If there is a reference to an object being deleted then the `DELETE` will fail. Likewise if there is a create with an invalid FK id then the `POST` will fail.
 
-**Note**: The order of table creation is important. A referenced table must exist before creating a foreign key constraint.
+**Note**: The order of table creation is important. A referenced table must exist before creating a foreign key constraint. 
+
+For **LoopBack 4** users, define your models under the `models/` folder as follows:
+
+`customer.model.ts`:
+
+```ts
+@model()
+export class Customer extends Entity {
+  @property({
+    id: true,
+    type: 'Number',
+    required: false,
+    length: 20
+  })
+  id: number;
+
+  @property({
+    type: 'string',
+    length: 20
+  })
+  name: string;
+}
+```
+`order.model.ts`:
+
+```ts
+@model()
+export class Order extends Entity {
+  @property({
+    id: true,
+    type: 'Number',
+    required: false,
+    length: 20
+  })
+  id: number;
+
+  @property({
+    type: 'string',
+    length: 20
+  })
+  name: string;
+
+  @property({
+    type: 'Number',
+    length: 20
+  })
+  customerId: number;
+}
+```
+
+For **LoopBack 3** users, you can define your model JSON schema as follows:
 
 ```json
 {
@@ -446,7 +497,7 @@ If there is a reference to an object being deleted then the `DELETE` will fail. 
   },
   "properties": {
     "id": {
-      "type": "String",
+      "type": "Number",
       "length": 20,
       "id": 1
     },
@@ -473,12 +524,12 @@ If there is a reference to an object being deleted then the `DELETE` will fail. 
   },
   "properties": {
     "id": {
-      "type": "String",
+      "type": "Number",
       "length": 20,
       "id": 1
     },
     "customerId": {
-      "type": "String",
+      "type": "Number",
       "length": 20
     },
     "description": {
@@ -489,6 +540,54 @@ If there is a reference to an object being deleted then the `DELETE` will fail. 
   }
 }
 ```
+
+Auto-migrate supports the automatic generation of property values. For PostgreSQL, the default id type is _integer_. If you have `generated: true` in the id property, it generates integers by default:
+
+```ts
+{
+  id: true,
+  type: 'Number',
+  required: false,
+  generated: true // enables auto-generation
+}
+```
+
+It is common to use UUIDs as the primary key in PostgreSQL instead of integers. You can enable it with the following settings:
+
+```ts
+{
+  id: true,
+  type: 'String',
+  required: false,
+  // settings below are needed
+  generated: true,
+  useDefaultIdType: false,
+  postgresql: {
+    dataType: 'uuid',
+  },
+}
+```
+The setting uses `uuid-ossp` extension and `uuid_generate_v4()` function as default.
+
+If you'd like to use other extensions and functions, you can do:
+
+```ts
+{
+  id: true,
+  type: 'String',
+  required: false,
+  // settings below are needed
+  generated: true,
+  useDefaultIdType: false,
+  postgresql: {
+    dataType: 'uuid',
+    extension: 'myExtension',
+    defaultFn: 'myuuid'
+  },
+}
+```
+
+WARNING: It is the users' responsibility to make sure the provided extension and function are valid.
 
 ## Running tests
 
