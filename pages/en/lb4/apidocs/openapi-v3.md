@@ -14,6 +14,12 @@ permalink: /doc/en/lb4/apidocs.openapi-v3.html
 
 [@loopback/openapi-v3](https://github.com/strongloop/loopback-next/tree/master/packages/openapi-v3)
 
+## Classes
+
+|  Class | Description |
+|  --- | --- |
+|  [OASEnhancerService](./openapi-v3.oasenhancerservice.md) | An extension point for OpenAPI Spec enhancement This service is used for enhancing an OpenAPI spec by loading and applying one or more registered enhancers.<!-- -->A typical use of it would be generating the OpenAPI spec for the endpoints on a server in the <code>@loopback/rest</code> module. |
+
 ## Functions
 
 |  Function | Description |
@@ -28,6 +34,7 @@ permalink: /doc/en/lb4/apidocs.openapi-v3.html
 |  [getWhereSchemaFor(modelCtor)](./openapi-v3.getwhereschemafor.md) | Build a OpenAPI schema describing the format of the "where" object used to filter model instances to query, update or delete.<!-- -->Note we don't take the model properties into account yet and return a generic json schema allowing any "where" condition. |
 |  [jsonOrBooleanToJSON(jsonOrBool)](./openapi-v3.jsonorbooleantojson.md) | Helper function used to interpret boolean values as JSON Schemas. See http://json-schema.org/draft-06/json-schema-release-notes.html |
 |  [jsonToSchemaObject(json, visited)](./openapi-v3.jsontoschemaobject.md) | Converts JSON Schemas into a SchemaObject |
+|  [mergeOpenAPISpec(currentSpec, patchSpec)](./openapi-v3.mergeopenapispec.md) | The default merge function to patch the current OpenAPI spec. It leverages module <code>json-merge-patch</code>'s merge API to merge two json objects. It returns a new merged object without modifying the original one.<!-- -->A list of merging rules can be found in test file: https://github.com/pierreinglebert/json-merge-patch/blob/master/test/lib/merge.js |
 |  [operation(verb, path, spec)](./openapi-v3.operation.md) | Expose a Controller method as a REST API operation. |
 |  [param(paramSpec)](./openapi-v3.param.md) | Describe an input parameter of a Controller method.<code>@param</code> must be applied to parameters. |
 |  [patch(path, spec)](./openapi-v3.patch.md) | Expose a Controller method as a REST API operation mapped to <code>PATCH</code> request method. |
@@ -40,6 +47,8 @@ permalink: /doc/en/lb4/apidocs.openapi-v3.html
 |  Interface | Description |
 |  --- | --- |
 |  [ControllerSpec](./openapi-v3.controllerspec.md) |  |
+|  [OASEnhancer](./openapi-v3.oasenhancer.md) | Typically an extension point defines an interface as the contract for extensions to implement |
+|  [OASEnhancerServiceOptions](./openapi-v3.oasenhancerserviceoptions.md) | Options for the OpenAPI Spec enhancer extension point |
 |  [RestEndpoint](./openapi-v3.restendpoint.md) | Data structure for REST related metadata |
 
 ## Namespaces
@@ -53,6 +62,9 @@ permalink: /doc/en/lb4/apidocs.openapi-v3.html
 
 |  Variable | Description |
 |  --- | --- |
+|  [asSpecEnhancer](./openapi-v3.asspecenhancer.md) | A binding template for spec contributor extensions |
+|  [OAS\_ENHANCER\_EXTENSION\_POINT\_NAME](./openapi-v3.oas_enhancer_extension_point_name.md) | Name/id of the OAS enhancer extension point |
+|  [OAS\_ENHANCER\_SERVICE](./openapi-v3.oas_enhancer_service.md) | Strongly-typed binding key for SpecService |
 |  [REQUEST\_BODY\_INDEX](./openapi-v3.request_body_index.md) |  |
 |  [TS\_TYPE\_KEY](./openapi-v3.ts_type_key.md) |  |
 

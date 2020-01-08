@@ -30,5 +30,6 @@ export declare namespace AuthenticationBindings
 |  [CURRENT\_USER](./authentication.authenticationbindings.current_user.md) |  |
 |  [METADATA](./authentication.authenticationbindings.metadata.md) | Key used to inject authentication metadata, which is used to determine whether a request requires authentication or not. |
 |  [STRATEGY](./authentication.authenticationbindings.strategy.md) | Key used to bind an authentication strategy to the context for the authentication function to use. |
+|  [USER\_PROFILE\_FACTORY](./authentication.authenticationbindings.user_profile_factory.md) | Key used to bind a user profile factory to the context for any consumer to use when they need to convert a user object into a slimmer user profile object |
 
 

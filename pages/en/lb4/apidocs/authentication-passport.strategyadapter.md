@@ -12,19 +12,19 @@ permalink: /doc/en/lb4/apidocs.authentication-passport.strategyadapter.html
 
 ## StrategyAdapter class
 
-Adapter class to invoke passport-strategy 1. provides express dependencies to the passport strategies 2. provides shimming of requests for passport authentication 3. provides lifecycle similar to express to the passport-strategy 4. provides state methods to the strategy instance see: https://github.com/jaredhanson/passport
+Adapter class to invoke passport-strategy 1. provides express dependencies to the passport strategies 2. provides shimming of requests for passport authentication 3. provides life-cycle similar to express to the passport-strategy 4. provides state methods to the strategy instance see: https://github.com/jaredhanson/passport
 
 <b>Signature:</b>
 
 ```typescript
-export declare class StrategyAdapter implements AuthenticationStrategy 
+export declare class StrategyAdapter<U> implements AuthenticationStrategy 
 ```
 
 ## Constructors
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)(strategy, name)](./authentication-passport.strategyadapter._constructor_.md) |  | Constructs a new instance of the <code>StrategyAdapter</code> class |
+|  [(constructor)(strategy, name, userProfileFactory)](./authentication-passport.strategyadapter._constructor_.md) |  | Constructs a new instance of the <code>StrategyAdapter</code> class |
 
 ## Properties
 

@@ -17,7 +17,7 @@ Constructs a new instance of the `StrategyAdapter` class
 <b>Signature:</b>
 
 ```typescript
-constructor(strategy: Strategy, name: string);
+constructor(strategy: Strategy, name: string, userProfileFactory?: UserProfileFactory<U>);
 ```
 
 ## Parameters
@@ -26,5 +26,6 @@ constructor(strategy: Strategy, name: string);
 |  --- | --- | --- |
 |  strategy | <code>Strategy</code> |  |
 |  name | <code>string</code> |  |
+|  userProfileFactory | <code>UserProfileFactory&lt;U&gt;</code> |  |
 
 

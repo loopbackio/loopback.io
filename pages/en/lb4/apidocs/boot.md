@@ -26,6 +26,7 @@ permalink: /doc/en/lb4/apidocs.boot.html
 |  [DataSourceBooter](./boot.datasourcebooter.md) | A class that extends BaseArtifactBooter to boot the 'DataSource' artifact type. Discovered DataSources are bound using <code>app.controller()</code>.<!-- -->Supported phases: configure, discover, load |
 |  [InterceptorProviderBooter](./boot.interceptorproviderbooter.md) | A class that extends BaseArtifactBooter to boot the 'InterceptorProvider' artifact type.<!-- -->Supported phases: configure, discover, load |
 |  [LifeCycleObserverBooter](./boot.lifecycleobserverbooter.md) | A class that extends BaseArtifactBooter to boot the 'LifeCycleObserver' artifact type.<!-- -->Supported phases: configure, discover, load |
+|  [ModelApiBooter](./boot.modelapibooter.md) |  |
 |  [RepositoryBooter](./boot.repositorybooter.md) | A class that extends BaseArtifactBooter to boot the 'Repository' artifact type. Discovered repositories are bound using <code>app.repository()</code> which must be added to an Application using the <code>RepositoryMixin</code> from <code>@loopback/repository</code>.<!-- -->Supported phases: configure, discover, load |
 |  [ServiceBooter](./boot.servicebooter.md) | A class that extends BaseArtifactBooter to boot the 'Service' artifact type. Discovered DataSources are bound using <code>app.controller()</code>.<!-- -->Supported phases: configure, discover, load |
 
@@ -64,6 +65,7 @@ permalink: /doc/en/lb4/apidocs.boot.html
 |  [InterceptorProviderDefaults](./boot.interceptorproviderdefaults.md) | Default ArtifactOptions for InterceptorProviderBooter. |
 |  [LifeCycleObserverDefaults](./boot.lifecycleobserverdefaults.md) | Default ArtifactOptions for DataSourceBooter. |
 |  [RepositoryDefaults](./boot.repositorydefaults.md) | Default ArtifactOptions for RepositoryBooter. |
+|  [RestDefaults](./boot.restdefaults.md) | Default ArtifactOptions for ControllerBooter. |
 |  [ServiceDefaults](./boot.servicedefaults.md) | Default ArtifactOptions for DataSourceBooter. |
 
 ## Type Aliases

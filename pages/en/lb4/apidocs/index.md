@@ -28,6 +28,7 @@ permalink: /doc/en/lb4/apidocs.index.html
 |  [@loopback/http-caching-proxy](./http-caching-proxy.md) |  |
 |  [@loopback/http-server](./http-server.md) |  |
 |  [@loopback/metadata](./metadata.md) |  |
+|  [@loopback/model-api-builder](./model-api-builder.md) |  |
 |  [@loopback/openapi-spec-builder](./openapi-spec-builder.md) |  |
 |  [@loopback/openapi-v3](./openapi-v3.md) |  |
 |  [@loopback/repository](./repository.md) |  |

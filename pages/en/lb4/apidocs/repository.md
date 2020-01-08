@@ -152,6 +152,7 @@ const Product = defineModelClass<
 |  [HasManyDefinition](./repository.hasmanydefinition.md) |  |
 |  [HasManyRepository](./repository.hasmanyrepository.md) | CRUD operations for a target repository of a HasMany relation |
 |  [HasManyRepositoryFactory](./repository.hasmanyrepositoryfactory.md) |  |
+|  [HasManyThroughDefinition](./repository.hasmanythroughdefinition.md) | A <code>hasManyThrough</code> relation defines a many-to-many connection with another model. This relation indicates that the declaring model can be matched with zero or more instances of another model by proceeding through a third model.<!-- -->Warning: The hasManyThrough interface is experimental and is subject to change. If backwards-incompatible changes are made, a new major version may not be released. |
 |  [HasOneDefinition](./repository.hasonedefinition.md) |  |
 |  [HasOneRepository](./repository.hasonerepository.md) | CRUD operations for a target repository of a HasMany relation |
 |  [HasOneRepositoryFactory](./repository.hasonerepositoryfactory.md) |  |

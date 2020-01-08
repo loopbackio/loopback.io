@@ -12,9 +12,9 @@ permalink: /doc/en/lb4/apidocs.repository.hasmanydefinition.keyto.html
 
 ## HasManyDefinition.keyTo property
 
-The foreign key used by the target model.
+keyTo: The foreign key used by the target model for this relation. keyFrom: The source key used by the source model for this relation.
 
-E.g. when a Customer has many Order instances, then keyTo is "customerId". Note that "customerId" is the default FK assumed by the framework, users can provide a custom FK name by setting "keyTo".
+E.g. when a Customer has many Order instances, then keyTo is "customerId". Note that "customerId" is the default FK assumed by the framework, users can provide a custom FK name by setting "keyTo". And Customer.id is keyFrom. keyFrom defaults to the id property of a model. Users can provide a custom source key name by setting "keyTo".
 
 <b>Signature:</b>
 
