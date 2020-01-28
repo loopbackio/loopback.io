@@ -3,6 +3,7 @@ lang: en
 title: 'API docs: openapi-v3.getfilterschemafor'
 keywords: LoopBack 4.0, LoopBack 4
 sidebar: lb4_sidebar
+editurl: https://github.com/strongloop/loopback-next/tree/master/packages/openapi-v3
 permalink: /doc/en/lb4/apidocs.openapi-v3.getfilterschemafor.html
 ---
 

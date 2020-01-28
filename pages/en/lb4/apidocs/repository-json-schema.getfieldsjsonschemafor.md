@@ -3,6 +3,7 @@ lang: en
 title: 'API docs: repository-json-schema.getfieldsjsonschemafor'
 keywords: LoopBack 4.0, LoopBack 4
 sidebar: lb4_sidebar
+editurl: https://github.com/strongloop/loopback-next/tree/master/packages/repository-json-schema
 permalink: /doc/en/lb4/apidocs.repository-json-schema.getfieldsjsonschemafor.html
 ---
 
@@ -17,7 +18,7 @@ Build a JSON schema describing the format of the "fields" object used to include
 <b>Signature:</b>
 
 ```typescript
-export declare function getFieldsJsonSchemaFor(modelCtor: typeof Model): JsonSchema;
+export declare function getFieldsJsonSchemaFor(modelCtor: typeof Model, options?: FilterSchemaOptions): JsonSchema;
 ```
 
 ## Parameters
@@ -25,6 +26,7 @@ export declare function getFieldsJsonSchemaFor(modelCtor: typeof Model): JsonSch
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  modelCtor | <code>typeof Model</code> | The model constructor to build the filter schema for. |
+|  options | <code>FilterSchemaOptions</code> |  |
 
 <b>Returns:</b>
 

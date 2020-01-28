@@ -3,6 +3,7 @@ lang: en
 title: 'API docs: core.extensionfilter'
 keywords: LoopBack 4.0, LoopBack 4
 sidebar: lb4_sidebar
+editurl: https://github.com/strongloop/loopback-next/tree/master/packages/core
 permalink: /doc/en/lb4/apidocs.core.extensionfilter.html
 ---
 
@@ -17,7 +18,7 @@ A factory function to create binding filter for extensions of a named extension 
 <b>Signature:</b>
 
 ```typescript
-export declare function extensionFilter(extensionPointName: string): import("@loopback/context").BindingFilter<unknown>;
+export declare function extensionFilter(extensionPointName: string): import("@loopback/context").BindingTagFilter;
 ```
 
 ## Parameters
@@ -28,6 +29,6 @@ export declare function extensionFilter(extensionPointName: string): import("@lo
 
 <b>Returns:</b>
 
-`import("@loopback/context").BindingFilter<unknown>`
+`import("@loopback/context").BindingTagFilter`
 
 

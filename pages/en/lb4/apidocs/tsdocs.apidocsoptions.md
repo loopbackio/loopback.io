@@ -3,6 +3,7 @@ lang: en
 title: 'API docs: tsdocs.apidocsoptions'
 keywords: LoopBack 4.0, LoopBack 4
 sidebar: lb4_sidebar
+editurl: https://github.com/strongloop/loopback-next/tree/master/packages/tsdocs
 permalink: /doc/en/lb4/apidocs.tsdocs.apidocsoptions.html
 ---
 
@@ -28,6 +29,7 @@ export interface ApiDocsOptions
 |  [apiDocsGenerationPath](./tsdocs.apidocsoptions.apidocsgenerationpath.md) | <code>string</code> | Path to target directory to generate apidocs |
 |  [dryRun](./tsdocs.apidocsoptions.dryrun.md) | <code>boolean</code> | To have a dry-run without generating api reports/doc models |
 |  [generateDefaultPackageDoc](./tsdocs.apidocsoptions.generatedefaultpackagedoc.md) | <code>boolean</code> | A flag to generate default package documentation |
+|  [lernaPackages](./tsdocs.apidocsoptions.lernapackages.md) | <code>Record&lt;string, LernaPackage&gt;</code> | Package metadata |
 |  [rootDir](./tsdocs.apidocsoptions.rootdir.md) | <code>string</code> | Root directory for the lerna-managed monorepo, default to current dir |
 |  [silent](./tsdocs.apidocsoptions.silent.md) | <code>boolean</code> | If <code>true</code>, do not print messages to console |
 

@@ -3,6 +3,7 @@ lang: en
 title: 'API docs: context'
 keywords: LoopBack 4.0, LoopBack 4
 sidebar: lb4_sidebar
+editurl: https://github.com/strongloop/loopback-next/tree/master/packages/context
 permalink: /doc/en/lb4/apidocs.context.html
 ---
 
@@ -21,6 +22,7 @@ permalink: /doc/en/lb4/apidocs.context.html
 |  [Binding](./context.binding.md) | Binding represents an entry in the <code>Context</code>. Each binding has a key and a corresponding value getter. |
 |  [BindingKey](./context.bindingkey.md) |  |
 |  [Context](./context.context.md) | Context provides an implementation of Inversion of Control (IoC) container |
+|  [ContextSubscriptionManager](./context.contextsubscriptionmanager.md) | Manager for context observer subscriptions |
 |  [ContextView](./context.contextview.md) | <code>ContextView</code> provides a view for a given context chain to maintain a live list of matching bindings and their resolved values within the context hierarchy.<!-- -->This class is the key utility to implement dynamic extensions for extension points. For example, the RestServer can react to <code>controller</code> bindings even they are added/removed/updated after the application starts.<code>ContextView</code> is an event emitter that emits the following events: - 'close': when the view is closed (stopped observing context events) - 'refresh': when the view is refreshed as bindings are added/removed - 'resolve': when the cached values are resolved and updated |
 |  [DefaultConfigurationResolver](./context.defaultconfigurationresolver.md) | Resolver for configurations of bindings |
 |  [GenericInterceptorChain](./context.genericinterceptorchain.md) | A chain of generic interceptors to be invoked for the given context |
@@ -73,6 +75,7 @@ permalink: /doc/en/lb4/apidocs.context.html
 |  [invokeMethod(target, method, ctx, nonInjectedArgs, options)](./context.invokemethod.md) | Invoke a method using dependency injection. Interceptors are invoked as part of the invocation. |
 |  [invokeMethodWithInterceptors(context, target, methodName, args, options)](./context.invokemethodwithinterceptors.md) | Invoke a method with the given context |
 |  [isBindingAddress(bindingSelector)](./context.isbindingaddress.md) | Type guard for binding address |
+|  [isBindingTagFilter(filter)](./context.isbindingtagfilter.md) | Type guard for BindingTagFilter |
 |  [isPromiseLike(value)](./context.ispromiselike.md) | Check whether a value is a Promise-like instance. Recognizes both native promises and third-party promise libraries. |
 |  [isProviderClass(cls)](./context.isproviderclass.md) | Check if a class implements <code>Provider</code> interface |
 |  [mergeInterceptors(interceptorsFromSpec, existingInterceptors)](./context.mergeinterceptors.md) | Adding interceptors from the spec to the front of existing ones. Duplicate entries are eliminated from the spec side.<!-- -->For example:<!-- -->- \[log\] + \[cache, log\] =<!-- -->&gt; \[cache, log\] - \[log\] + \[log, cache\] =<!-- -->&gt; \[log, cache\] - \[\] + \[cache, log\] =<!-- -->&gt; \[cache, log\] - \[cache, log\] + \[\] =<!-- -->&gt; \[cache, log\] - \[log\] + \[cache\] =<!-- -->&gt; \[log, cache\] |
@@ -92,6 +95,7 @@ permalink: /doc/en/lb4/apidocs.context.html
 |  --- | --- |
 |  [BindingComparator](./context.bindingcomparator.md) | Compare function to sort an array of bindings. It is used by <code>Array.prototype.sort()</code>. |
 |  [BindingElement](./context.bindingelement.md) | Wrapper for bindings tracked by resolution sessions |
+|  [BindingTagFilter](./context.bindingtagfilter.md) | Binding filter function that holds a binding tag pattern. <code>Context.find()</code> uses the <code>bindingTagPattern</code> to optimize the matching of bindings by tag to avoid expensive check for all bindings. |
 |  [ConfigInjectionMetadata](./context.configinjectionmetadata.md) | Injection metadata for <code>@config.*</code> |
 |  [ConfigurationResolver](./context.configurationresolver.md) | Resolver for configuration of bindings. It's responsible for finding corresponding configuration for a given binding key.<!-- -->By default, <code>undefined</code> is expected if no configuration is provided. The behavior can be overridden by setting <code>optional</code> to <code>false</code> in resolution options. |
 |  [ContextObserver](./context.contextobserver.md) | Observers of context bind/unbind events |
@@ -101,6 +105,7 @@ permalink: /doc/en/lb4/apidocs.context.html
 |  [InjectionMetadata](./context.injectionmetadata.md) | An object to provide metadata for <code>@inject</code> |
 |  [Interceptor](./context.interceptor.md) | Interceptor function to intercept method invocations |
 |  [InvocationSource](./context.invocationsource.md) | An interface to represent the caller of the invocation |
+|  [Notification](./context.notification.md) | Event data for observer notifications |
 |  [Provider](./context.provider.md) | Providers allow developers to compute injected values dynamically, with any dependencies required by the value getter injected automatically from the Context. |
 |  [ResolutionOptions](./context.resolutionoptions.md) | Options for binding/dependency resolution |
 |  [ResolverFunction](./context.resolverfunction.md) | A function to provide resolution of injected values |
@@ -135,6 +140,8 @@ permalink: /doc/en/lb4/apidocs.context.html
 |  [AsValueOrPromise](./context.asvalueorpromise.md) | Create the Promise type for <code>T</code>. If <code>T</code> extends <code>Promise</code>, the type is <code>T</code>, otherwise the type is <code>ValueOrPromise&lt;T&gt;</code>. |
 |  [AsyncProxy](./context.asyncproxy.md) | The proxy type for <code>T</code>. The return type for any method of <code>T</code> with original return type <code>R</code> becomes <code>ValueOrPromise&lt;R&gt;</code> if <code>R</code> does not extend <code>Promise</code>. Property types stay untouched. |
 |  [BindingAddress](./context.bindingaddress.md) |  |
+|  [BindingEvent](./context.bindingevent.md) | Information for a binding event |
+|  [BindingEventListener](./context.bindingeventlistener.md) | Event listeners for binding events |
 |  [BindingFilter](./context.bindingfilter.md) | A function that filters bindings. It returns <code>true</code> to select a given binding. |
 |  [BindingFromClassOptions](./context.bindingfromclassoptions.md) | Options to customize the binding created from a class |
 |  [BindingMetadata](./context.bindingmetadata.md) | Binding metadata from <code>@bind</code> |
@@ -145,6 +152,8 @@ permalink: /doc/en/lb4/apidocs.context.html
 |  [BindingTemplate](./context.bindingtemplate.md) | A function as the template to configure bindings |
 |  [BoundValue](./context.boundvalue.md) |  |
 |  [Constructor](./context.constructor.md) | A class constructor accepting arbitrary arguments. |
+|  [ContextEvent](./context.contextevent.md) | Events emitted by a context |
+|  [ContextEventListener](./context.contexteventlistener.md) | Synchronous listener for context events |
 |  [ContextEventObserver](./context.contexteventobserver.md) | Context event observer type - An instance of <code>ContextObserver</code> or a function |
 |  [ContextEventType](./context.contexteventtype.md) | Context event types. We support <code>bind</code> and <code>unbind</code> for now but keep it open for new types |
 |  [ContextObserverFn](./context.contextobserverfn.md) | Listen on <code>bind</code>, <code>unbind</code>, or other events |
@@ -157,7 +166,6 @@ permalink: /doc/en/lb4/apidocs.context.html
 |  [InvocationResult](./context.invocationresult.md) | Return value for a method invocation |
 |  [MapObject](./context.mapobject.md) |  |
 |  [Next](./context.next.md) | The <code>next</code> function that can be used to invoke next generic interceptor in the chain |
-|  [Notification](./context.notification.md) | Event data for observer notifications |
 |  [ResolutionAction](./context.resolutionaction.md) | A function to be executed with the resolution session |
 |  [ResolutionElement](./context.resolutionelement.md) | Binding or injection elements tracked by resolution sessions |
 |  [ResolutionOptionsOrSession](./context.resolutionoptionsorsession.md) | Resolution options or session |

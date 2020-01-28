@@ -3,6 +3,7 @@ lang: en
 title: 'API docs: index'
 keywords: LoopBack 4.0, LoopBack 4
 sidebar: lb4_sidebar
+editurl: https://github.com/strongloop/loopback-next
 permalink: /doc/en/lb4/apidocs.index.html
 ---
 
@@ -40,6 +41,6 @@ permalink: /doc/en/lb4/apidocs.index.html
 |  [@loopback/security](./security.md) |  |
 |  [@loopback/service-proxy](./service-proxy.md) |  |
 |  [@loopback/testlab](./testlab.md) |  |
-|  [@loopback/tsdocs](./tsdocs.md) | The <code>@loopback/tsdocs</code> package is an internal module to generate [tsdoc](https://github.com/Microsoft/tsdoc) based API docs for <code>@loopback/*</code> packages within [loopback-next](https://github.com/strongloop/loopback-next) monorepo managed by [lerna](https://github.com/lerna/lerna)<!-- -->.<!-- -->It's built on top of [MicroSoft AP Extractor](https://api-extractor.com)<!-- -->:<!-- -->- [api-extractor](https://github.com/Microsoft/web-build-tools/tree/master/apps/api-extractor) - [api-documenter](https://github.com/Microsoft/web-build-tools/tree/master/apps/api-documenter) |
+|  [@loopback/tsdocs](./tsdocs.md) | The <code>@loopback/tsdocs</code> package is an internal module to generate [tsdoc](https://github.com/Microsoft/tsdoc) based API docs for <code>@loopback/*</code> packages within [loopback-next](https://github.com/strongloop/loopback-next) monorepo managed by [Lerna](https://github.com/lerna/lerna)<!-- -->.<!-- -->It's built on top of [Microsoft API Extractor](https://api-extractor.com)<!-- -->:<!-- -->- [api-extractor](https://github.com/Microsoft/web-build-tools/tree/master/apps/api-extractor) - [api-documenter](https://github.com/Microsoft/web-build-tools/tree/master/apps/api-documenter) |
 
 

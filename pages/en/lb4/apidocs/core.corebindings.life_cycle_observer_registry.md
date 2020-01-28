@@ -3,6 +3,7 @@ lang: en
 title: 'API docs: core.corebindings.life_cycle_observer_registry'
 keywords: LoopBack 4.0, LoopBack 4
 sidebar: lb4_sidebar
+editurl: https://github.com/strongloop/loopback-next/tree/master/packages/core
 permalink: /doc/en/lb4/apidocs.core.corebindings.life_cycle_observer_registry.html
 ---
 

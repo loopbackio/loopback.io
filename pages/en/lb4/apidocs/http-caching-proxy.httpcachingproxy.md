@@ -3,6 +3,7 @@ lang: en
 title: 'API docs: http-caching-proxy.httpcachingproxy'
 keywords: LoopBack 4.0, LoopBack 4
 sidebar: lb4_sidebar
+editurl: https://github.com/strongloop/loopback-next/tree/master/packages/http-caching-proxy
 permalink: /doc/en/lb4/apidocs.http-caching-proxy.httpcachingproxy.html
 ---
 

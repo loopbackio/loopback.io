@@ -3,6 +3,7 @@ lang: en
 title: 'API docs: authorization.authorizationerror.code'
 keywords: LoopBack 4.0, LoopBack 4
 sidebar: lb4_sidebar
+editurl: https://github.com/strongloop/loopback-next/tree/master/packages/authorization
 permalink: /doc/en/lb4/apidocs.authorization.authorizationerror.code.html
 ---
 

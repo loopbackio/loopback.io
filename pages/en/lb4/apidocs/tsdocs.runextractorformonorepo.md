@@ -3,6 +3,7 @@ lang: en
 title: 'API docs: tsdocs.runextractorformonorepo'
 keywords: LoopBack 4.0, LoopBack 4
 sidebar: lb4_sidebar
+editurl: https://github.com/strongloop/loopback-next/tree/master/packages/tsdocs
 permalink: /doc/en/lb4/apidocs.tsdocs.runextractorformonorepo.html
 ---
 

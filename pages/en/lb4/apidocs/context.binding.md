@@ -3,6 +3,7 @@ lang: en
 title: 'API docs: context.binding'
 keywords: LoopBack 4.0, LoopBack 4
 sidebar: lb4_sidebar
+editurl: https://github.com/strongloop/loopback-next/tree/master/packages/context
 permalink: /doc/en/lb4/apidocs.context.binding.html
 ---
 
@@ -17,7 +18,7 @@ Binding represents an entry in the `Context`<!-- -->. Each binding has a key and
 <b>Signature:</b>
 
 ```typescript
-export declare class Binding<T = BoundValue> 
+export declare class Binding<T = BoundValue> extends EventEmitter 
 ```
 
 ## Constructors

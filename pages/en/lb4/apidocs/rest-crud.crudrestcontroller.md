@@ -3,6 +3,7 @@ lang: en
 title: 'API docs: rest-crud.crudrestcontroller'
 keywords: LoopBack 4.0, LoopBack 4
 sidebar: lb4_sidebar
+editurl: https://github.com/strongloop/loopback-next/tree/master/packages/rest-crud
 permalink: /doc/en/lb4/apidocs.rest-crud.crudrestcontroller.html
 ---
 

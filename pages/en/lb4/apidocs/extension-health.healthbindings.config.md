@@ -3,6 +3,7 @@ lang: en
 title: 'API docs: extension-health.healthbindings.config'
 keywords: LoopBack 4.0, LoopBack 4
 sidebar: lb4_sidebar
+editurl: https://github.com/strongloop/loopback-next/tree/master/extensions/health
 permalink: /doc/en/lb4/apidocs.extension-health.healthbindings.config.html
 ---
 

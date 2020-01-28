@@ -3,6 +3,7 @@ lang: en
 title: 'API docs: context.context.configresolver'
 keywords: LoopBack 4.0, LoopBack 4
 sidebar: lb4_sidebar
+editurl: https://github.com/strongloop/loopback-next/tree/master/packages/context
 permalink: /doc/en/lb4/apidocs.context.context.configresolver.html
 ---
 
@@ -11,6 +12,8 @@ permalink: /doc/en/lb4/apidocs.context.context.configresolver.html
 [Home](./index.md) &gt; [@loopback/context](./context.md) &gt; [Context](./context.context.md) &gt; [configResolver](./context.context.configresolver.md)
 
 ## Context.configResolver property
+
+Configuration resolver
 
 <b>Signature:</b>
 
