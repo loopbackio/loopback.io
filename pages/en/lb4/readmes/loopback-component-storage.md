@@ -13,7 +13,7 @@ storage services including:
 - Openstack
 - Rackspace
 
-> Please see the [Storage Service Documentaion](http://loopback.io/doc/en/lb3/Storage-component.html).
+> Please see the [Storage Service Documentation](http://loopback.io/doc/en/lb3/Storage-component.html).
 
 For more details on the architecture of the module, please see the introduction section of the [blog post](https://strongloop.com/strongblog/managing-nodejs-loopback-storage-service-provider/). 
 
