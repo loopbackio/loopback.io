@@ -18,14 +18,10 @@ Describe the injection for debugging purpose
 <b>Signature:</b>
 
 ```typescript
-static describeInjection(injection?: Readonly<Injection>): {
-        targetName?: undefined;
-        bindingSelector?: undefined;
-        metadata?: undefined;
-    } | {
+static describeInjection(injection: Readonly<Injection>): {
         targetName: string;
         bindingSelector: import("./binding-filter").BindingSelector<any>;
-        metadata: object;
+        metadata: import("./inject").InjectionMetadata;
     };
 ```
 
@@ -38,13 +34,9 @@ static describeInjection(injection?: Readonly<Injection>): {
 <b>Returns:</b>
 
 `{
-        targetName?: undefined;
-        bindingSelector?: undefined;
-        metadata?: undefined;
-    } | {
         targetName: string;
         bindingSelector: import("./binding-filter").BindingSelector<any>;
-        metadata: object;
+        metadata: import("./inject").InjectionMetadata;
     }`
 
 

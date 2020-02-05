@@ -43,7 +43,7 @@ Here are the currently supported relations:
 
 - [HasMany](HasMany-relation.md)
 - [BelongsTo](BelongsTo-relation.md)
-- [HasOne](hasOne-relation.md)
+- [HasOne](HasOne-relation.md)
 
 {% include note.html content="
 The `hasMany` relation may alternatively be implemented using the
@@ -57,7 +57,7 @@ The articles on each type of relation above will show you how to leverage the
 new relation engine to define and configure relations in your LoopBack
 application.
 
-To generate a `HasMany` or `BelongsTo` relation through the CLI, see
+To generate a `HasMany`, `HasOne` or `BelongsTo` relation through the CLI, see
 [Relation generator](Relation-generator.md).
 
 ## Limitations

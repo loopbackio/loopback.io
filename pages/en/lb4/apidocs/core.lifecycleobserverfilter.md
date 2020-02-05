@@ -11,24 +11,13 @@ permalink: /doc/en/lb4/apidocs.core.lifecycleobserverfilter.html
 
 [Home](./index.md) &gt; [@loopback/core](./core.md) &gt; [lifeCycleObserverFilter](./core.lifecycleobserverfilter.md)
 
-## lifeCycleObserverFilter() function
+## lifeCycleObserverFilter variable
 
 Find all life cycle observer bindings. By default, a binding tagged with `CoreTags.LIFE_CYCLE_OBSERVER`<!-- -->. It's used as `BindingFilter`<!-- -->.
 
 <b>Signature:</b>
 
 ```typescript
-export declare function lifeCycleObserverFilter(binding: Readonly<Binding>): boolean;
+lifeCycleObserverFilter: import("@loopback/context").BindingTagFilter
 ```
-
-## Parameters
-
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  binding | <code>Readonly&lt;Binding&gt;</code> |  |
-
-<b>Returns:</b>
-
-`boolean`
-
 

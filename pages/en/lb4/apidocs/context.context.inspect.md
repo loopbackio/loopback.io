@@ -18,10 +18,17 @@ Inspect the context and dump out a JSON object representing the context hierarch
 <b>Signature:</b>
 
 ```typescript
-inspect(): object;
+inspect(options?: ContextInspectOptions): JSONObject;
 ```
+
+## Parameters
+
+|  Parameter | Type | Description |
+|  --- | --- | --- |
+|  options | <code>ContextInspectOptions</code> | Options for inspect |
+
 <b>Returns:</b>
 
-`object`
+`JSONObject`
 
 

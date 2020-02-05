@@ -32,6 +32,7 @@ export interface Transaction
 |  Method | Description |
 |  --- | --- |
 |  [commit()](./repository.transaction.commit.md) | Commit the transaction |
+|  [isActive()](./repository.transaction.isactive.md) | Check if the transaction has an active connection |
 |  [rollback()](./repository.transaction.rollback.md) | Rollback the transaction |
 
 

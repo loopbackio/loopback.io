@@ -18,7 +18,7 @@ Assert the target type inspected from TypeScript for injection to be the expecte
 <b>Signature:</b>
 
 ```typescript
-export declare function assertTargetType(injection: Readonly<Injection>, expectedType: Function, expectedTypeName?: string): string | undefined;
+export declare function assertTargetType(injection: Readonly<Injection>, expectedType: Function, expectedTypeName?: string): string;
 ```
 
 ## Parameters
@@ -31,7 +31,7 @@ export declare function assertTargetType(injection: Readonly<Injection>, expecte
 
 <b>Returns:</b>
 
-`string | undefined`
+`string`
 
 The name of the target
 

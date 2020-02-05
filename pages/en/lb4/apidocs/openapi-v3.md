@@ -28,6 +28,7 @@ permalink: /doc/en/lb4/apidocs.openapi-v3.html
 |  [api(spec)](./openapi-v3.api.md) | Decorate the given Controller constructor with metadata describing the HTTP/REST API the Controller implements/provides.<code>@api</code> can be applied to controller classes. |
 |  [createEmptyApiSpec()](./openapi-v3.createemptyapispec.md) | Create an empty OpenApiSpec object that's still a valid openapi document. |
 |  [del(path, spec)](./openapi-v3.del.md) | Expose a Controller method as a REST API operation mapped to <code>DELETE</code> request method. |
+|  [deprecated(isDeprecated)](./openapi-v3.deprecated.md) | Marks an api path as deprecated. When applied to a class, this decorator marks all paths as deprecated.<!-- -->You can optionally mark all controllers in a class as deprecated, but use <code>@deprecated(false)</code> on a specific method to ensure it is not marked as deprecated in the specification. |
 |  [get(path, spec)](./openapi-v3.get.md) | Expose a Controller method as a REST API operation mapped to <code>GET</code> request method. |
 |  [getControllerSpec(constructor)](./openapi-v3.getcontrollerspec.md) | Get the controller spec for the given class |
 |  [getFilterSchemaFor(modelCtor)](./openapi-v3.getfilterschemafor.md) | Build an OpenAPI schema describing the format of the "filter" object used to query model instances.<!-- -->Note we don't take the model properties into account yet and return a generic json schema allowing any "where" condition. |
@@ -51,6 +52,7 @@ permalink: /doc/en/lb4/apidocs.openapi-v3.html
 |  [OASEnhancer](./openapi-v3.oasenhancer.md) | Typically an extension point defines an interface as the contract for extensions to implement |
 |  [OASEnhancerServiceOptions](./openapi-v3.oasenhancerserviceoptions.md) | Options for the OpenAPI Spec enhancer extension point |
 |  [RestEndpoint](./openapi-v3.restendpoint.md) | Data structure for REST related metadata |
+|  [TagsDecoratorMetadata](./openapi-v3.tagsdecoratormetadata.md) |  |
 
 ## Namespaces
 
@@ -66,6 +68,7 @@ permalink: /doc/en/lb4/apidocs.openapi-v3.html
 |  [asSpecEnhancer](./openapi-v3.asspecenhancer.md) | A binding template for spec contributor extensions |
 |  [OAS\_ENHANCER\_EXTENSION\_POINT\_NAME](./openapi-v3.oas_enhancer_extension_point_name.md) | Name/id of the OAS enhancer extension point |
 |  [OAS\_ENHANCER\_SERVICE](./openapi-v3.oas_enhancer_service.md) | Strongly-typed binding key for SpecService |
+|  [oas](./openapi-v3.oas.md) |  |
 |  [REQUEST\_BODY\_INDEX](./openapi-v3.request_body_index.md) |  |
 |  [TS\_TYPE\_KEY](./openapi-v3.ts_type_key.md) |  |
 

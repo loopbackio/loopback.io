@@ -23,7 +23,7 @@ export declare class AuthorizationInterceptor implements Provider<Interceptor>
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)(authorizers, options)](./authorization.authorizationinterceptor._constructor_.md) |  | Constructs a new instance of the <code>AuthorizationInterceptor</code> class |
+|  [(constructor)(options)](./authorization.authorizationinterceptor._constructor_.md) |  | Constructs a new instance of the <code>AuthorizationInterceptor</code> class |
 
 ## Methods
 

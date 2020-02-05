@@ -18,10 +18,10 @@ Convert to a plain JSON object
 <b>Signature:</b>
 
 ```typescript
-toJSON(): object;
+toJSON(): JSONObject;
 ```
 <b>Returns:</b>
 
-`object`
+`JSONObject`
 
 

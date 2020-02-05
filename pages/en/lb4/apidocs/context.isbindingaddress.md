@@ -25,7 +25,7 @@ export declare function isBindingAddress(bindingSelector: BindingSelector): bind
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  bindingSelector | <code>BindingSelector</code> |  |
+|  bindingSelector | <code>BindingSelector</code> | Binding key or filter function |
 
 <b>Returns:</b>
 

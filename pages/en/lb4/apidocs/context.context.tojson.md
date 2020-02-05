@@ -18,10 +18,10 @@ Create a plain JSON object for the context
 <b>Signature:</b>
 
 ```typescript
-toJSON(): object;
+toJSON(): JSONObject;
 ```
 <b>Returns:</b>
 
-`object`
+`JSONObject`
 
 

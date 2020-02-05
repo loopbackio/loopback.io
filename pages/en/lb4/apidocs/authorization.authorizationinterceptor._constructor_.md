@@ -18,14 +18,13 @@ Constructs a new instance of the `AuthorizationInterceptor` class
 <b>Signature:</b>
 
 ```typescript
-constructor(authorizers: Authorizer[], options?: AuthorizationOptions);
+constructor(options?: AuthorizationOptions);
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  authorizers | <code>Authorizer[]</code> |  |
 |  options | <code>AuthorizationOptions</code> |  |
 
 

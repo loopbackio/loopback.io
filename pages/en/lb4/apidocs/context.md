@@ -68,6 +68,7 @@ permalink: /doc/en/lb4/apidocs.context.html
 |  [getDeepProperty(value, path)](./context.getdeepproperty.md) | Get nested properties of an object by path |
 |  [globalInterceptor(group, specs)](./context.globalinterceptor.md) | <code>@globalInterceptor</code> decorator to mark the class as a global interceptor |
 |  [inject(bindingSelector, metadata, resolve)](./context.inject.md) | A decorator to annotate method arguments for automatic injection by LoopBack IoC container. |
+|  [inspectInjections(binding)](./context.inspectinjections.md) | Inspect injections for a binding created with <code>toClass</code> or <code>toProvider</code> |
 |  [inspectTargetType(injection)](./context.inspecttargettype.md) | Inspect the target type for the injection to find out the corresponding JavaScript type |
 |  [instantiateClass(ctor, ctx, session, nonInjectedArgs)](./context.instantiateclass.md) | Create an instance of a class which constructor has arguments decorated with <code>@inject</code>.<!-- -->The function returns a class when all dependencies were resolved synchronously, or a Promise otherwise. |
 |  [intercept(interceptorOrKeys)](./context.intercept.md) | Decorator function <code>@intercept</code> for classes/methods to apply interceptors. It can be applied on a class and its public methods. Multiple occurrences of <code>@intercept</code> are allowed on the same target class or method. The decorator takes a list of <code>interceptor</code> functions or binding keys. |
@@ -95,9 +96,11 @@ permalink: /doc/en/lb4/apidocs.context.html
 |  --- | --- |
 |  [BindingComparator](./context.bindingcomparator.md) | Compare function to sort an array of bindings. It is used by <code>Array.prototype.sort()</code>. |
 |  [BindingElement](./context.bindingelement.md) | Wrapper for bindings tracked by resolution sessions |
+|  [BindingInspectOptions](./context.bindinginspectoptions.md) | Options for binding.inspect() |
 |  [BindingTagFilter](./context.bindingtagfilter.md) | Binding filter function that holds a binding tag pattern. <code>Context.find()</code> uses the <code>bindingTagPattern</code> to optimize the matching of bindings by tag to avoid expensive check for all bindings. |
 |  [ConfigInjectionMetadata](./context.configinjectionmetadata.md) | Injection metadata for <code>@config.*</code> |
 |  [ConfigurationResolver](./context.configurationresolver.md) | Resolver for configuration of bindings. It's responsible for finding corresponding configuration for a given binding key.<!-- -->By default, <code>undefined</code> is expected if no configuration is provided. The behavior can be overridden by setting <code>optional</code> to <code>false</code> in resolution options. |
+|  [ContextInspectOptions](./context.contextinspectoptions.md) | Options for context.inspect() |
 |  [ContextObserver](./context.contextobserver.md) | Observers of context bind/unbind events |
 |  [InjectBindingMetadata](./context.injectbindingmetadata.md) | Metadata for <code>@inject.binding</code> |
 |  [Injection](./context.injection.md) | Descriptor for an injection point |
@@ -105,6 +108,8 @@ permalink: /doc/en/lb4/apidocs.context.html
 |  [InjectionMetadata](./context.injectionmetadata.md) | An object to provide metadata for <code>@inject</code> |
 |  [Interceptor](./context.interceptor.md) | Interceptor function to intercept method invocations |
 |  [InvocationSource](./context.invocationsource.md) | An interface to represent the caller of the invocation |
+|  [JSONArray](./context.jsonarray.md) | JSON array |
+|  [JSONObject](./context.jsonobject.md) | JSON object |
 |  [Notification](./context.notification.md) | Event data for observer notifications |
 |  [Provider](./context.provider.md) | Providers allow developers to compute injected values dynamically, with any dependencies required by the value getter injected automatically from the Context. |
 |  [ResolutionOptions](./context.resolutionoptions.md) | Options for binding/dependency resolution |
@@ -164,6 +169,8 @@ permalink: /doc/en/lb4/apidocs.context.html
 |  [InvocationArgs](./context.invocationargs.md) | Array of arguments for a method invocation |
 |  [InvocationOptions](./context.invocationoptions.md) | Options to control invocations |
 |  [InvocationResult](./context.invocationresult.md) | Return value for a method invocation |
+|  [JSONPrimitive](./context.jsonprimitive.md) | JSON primitive types: - string - number - boolean - null |
+|  [JSONValue](./context.jsonvalue.md) | JSON values - primitive - object - array |
 |  [MapObject](./context.mapobject.md) |  |
 |  [Next](./context.next.md) | The <code>next</code> function that can be used to invoke next generic interceptor in the chain |
 |  [ResolutionAction](./context.resolutionaction.md) | A function to be executed with the resolution session |
