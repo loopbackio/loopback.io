@@ -128,4 +128,4 @@ As a best practice to mitigate such threats, use appropriate Express middleware,
 See also:
 
 * Express 3.x [csrf() function](http://expressjs.com/3x/api.html#csrf).
-* [Cookies vs Tokens. Getting auth right with Angular.JS](https://sking7.github.io/articles/1365467512.html)
+* [Cookies vs Tokens. Getting auth right with Angular.JS](https://auth0.com/blog/2014/01/07/angularjs-authentication-with-cookies-vs-token/)
