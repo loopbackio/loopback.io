@@ -208,7 +208,7 @@ security: {
    </tr>
 
    <tr>
-    <td>BasicAuth</td>
+    <td>BasicAuth<sup>1</sup></td>
     <td>Basic auth scheme</td>
     <td>    
     <ul>
@@ -231,6 +231,8 @@ security: {
 
   </tbody>
 </table>
+
+1 **currently unsupported**, use `"wsdl_headers": { "Authorization": "Basic …" },` instead, details: <a href="https://github.com/strongloop/loopback-connector-soap/issues/92" target="_blank">issue #92</a>.
 
 ## Creating a model from a SOAP data source
 
