@@ -145,6 +145,10 @@ Check out [node-pg-pool](https://github.com/brianc/node-pg-pool) and [node postg
       <td>Boolean</td>
       <td>Whether to try SSL/TLS to connect to server</td>
     </tr>
+    <tr>
+      <td>defaultIdSort</td>
+      <td>Boolean/String</td>
+      <td>Set to <code>false</code> to disable default sorting on <code>id</code> column(s). Set to <code>numericIdOnly</code> to only apply to IDs with a number type <code>id</code>.</td>
   </tbody>
 </table>
 
