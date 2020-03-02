@@ -3,6 +3,8 @@ layout: default
 ---
 {% if page.sidebar == 'lb2_sidebar' and page.v2only != true %}
   {% include content/v2notice.html %}
+{% elsif page.sidebar == 'lb3_sidebar' %}
+  {% include content/v3notice.html %}
 {% elsif page.sidebar == 'lb4_sidebar' %}
   {% include content/v4notice.html %}
 {% endif %}
