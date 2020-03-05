@@ -13,6 +13,8 @@ permalink: /doc/en/lb4/apidocs.rest-explorer.restexplorerbindings.component.html
 
 ## RestExplorerBindings.COMPONENT variable
 
+Binding key for RestExplorerComponent
+
 <b>Signature:</b>
 
 ```typescript

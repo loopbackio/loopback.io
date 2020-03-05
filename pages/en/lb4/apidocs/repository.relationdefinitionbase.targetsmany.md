@@ -18,6 +18,6 @@ True for relations targeting multiple instances (e.g. HasMany), false for relati
 <b>Signature:</b>
 
 ```typescript
-targetsMany?: boolean;
+targetsMany: boolean;
 ```
 

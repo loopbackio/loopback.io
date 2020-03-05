@@ -32,6 +32,6 @@ get(filter?: Pick<Filter<Target>, Exclude<keyof Filter<Target>, 'where'>>, optio
 
 `Promise<Target>`
 
-A promise of the target object or null if not found.
+A promise resolved with the target object or rejected with an EntityNotFoundError when target model instance was not found.
 
 

@@ -45,7 +45,7 @@ export class LogService {
 }
 
 // Define a class to be bound via ctx.toProvider()
-const uuidv4 = require('uuid/v4');
+import {v4 as uuidv4} from 'uuid';
 export class UuidProvider implements Provider<string> {
   value() {
     return uuidv4();

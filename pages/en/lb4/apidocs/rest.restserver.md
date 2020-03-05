@@ -57,10 +57,12 @@ const server = await app.get('servers.foo');
 |  [\_expressApp](./rest.restserver._expressapp.md) |  | <code>express.Application</code> |  |
 |  [\_httpHandler](./rest.restserver._httphandler.md) |  | <code>HttpHandler</code> |  |
 |  [\_httpServer](./rest.restserver._httpserver.md) |  | <code>HttpServer &#124; undefined</code> |  |
-|  [\_requestHandler](./rest.restserver._requesthandler.md) |  | <code>HttpRequestListener</code> | Handle incoming HTTP(S) request by invoking the corresponding Controller method via the configured Sequence. |
+|  [\_OASEnhancer](./rest.restserver._oasenhancer.md) |  | <code>OASEnhancerService</code> | Handle incoming HTTP(S) request by invoking the corresponding Controller method via the configured Sequence. |
+|  [\_requestHandler](./rest.restserver._requesthandler.md) |  | <code>HttpRequestListener</code> |  |
 |  [config](./rest.restserver.config.md) |  | <code>RestServerResolvedConfig</code> |  |
 |  [httpHandler](./rest.restserver.httphandler.md) |  | <code>HttpHandler</code> |  |
 |  [listening](./rest.restserver.listening.md) |  | <code>boolean</code> |  |
+|  [OASEnhancer](./rest.restserver.oasenhancer.md) |  | <code>OASEnhancerService</code> |  |
 |  [requestHandler](./rest.restserver.requesthandler.md) |  | <code>HttpRequestListener</code> |  |
 |  [rootUrl](./rest.restserver.rooturl.md) |  | <code>string &#124; undefined</code> | The root url for the server without the basePath. For example, the value will be 'http://localhost:3000' regardless of the <code>basePath</code>. |
 |  [url](./rest.restserver.url.md) |  | <code>string &#124; undefined</code> | The base url for the server, including the basePath if set. For example, the value will be 'http://localhost:3000/api' if <code>basePath</code> is set to '/api'. |
@@ -71,10 +73,11 @@ const server = await app.get('servers.foo');
 |  --- | --- | --- |
 |  [\_applyExpressSettings()](./rest.restserver._applyexpresssettings.md) |  | Apply express settings. |
 |  [\_handleHttpRequest(request, response)](./rest.restserver._handlehttprequest.md) |  |  |
-|  [\_onUnhandledError(req, res, err)](./rest.restserver._onunhandlederror.md) |  |  |
 |  [\_setupHandlerIfNeeded()](./rest.restserver._setuphandlerifneeded.md) |  |  |
+|  [\_setupOASEnhancerIfNeeded()](./rest.restserver._setupoasenhancerifneeded.md) |  |  |
 |  [\_setupOpenApiSpecEndpoints()](./rest.restserver._setupopenapispecendpoints.md) |  | Mount /openapi.json, /openapi.yaml for specs and /swagger-ui, /explorer to redirect to externally hosted API explorer |
 |  [\_setupRequestHandlerIfNeeded()](./rest.restserver._setuprequesthandlerifneeded.md) |  |  |
+|  [\_unexpectedErrorHandler()](./rest.restserver._unexpectederrorhandler.md) |  | Get an Express handler for unexpected errors |
 |  [addOpenApiSpecEndpoint(path, form)](./rest.restserver.addopenapispecendpoint.md) |  | Add a new non-controller endpoint hosting a form of the OpenAPI spec. |
 |  [api(spec)](./rest.restserver.api.md) |  | Set the OpenAPI specification that defines the REST API schema for this server. All routes, parameter definitions and return types will be defined in this way.<!-- -->Note that this will override any routes defined via decorators at the controller level (this function takes precedent). |
 |  [basePath(path)](./rest.restserver.basepath.md) |  | Configure the <code>basePath</code> for the rest server |

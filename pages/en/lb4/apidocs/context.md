@@ -96,6 +96,7 @@ permalink: /doc/en/lb4/apidocs.context.html
 |  --- | --- |
 |  [BindingComparator](./context.bindingcomparator.md) | Compare function to sort an array of bindings. It is used by <code>Array.prototype.sort()</code>. |
 |  [BindingElement](./context.bindingelement.md) | Wrapper for bindings tracked by resolution sessions |
+|  [BindingFilter](./context.bindingfilter.md) | A function that filters bindings. It returns <code>true</code> to select a given binding. |
 |  [BindingInspectOptions](./context.bindinginspectoptions.md) | Options for binding.inspect() |
 |  [BindingTagFilter](./context.bindingtagfilter.md) | Binding filter function that holds a binding tag pattern. <code>Context.find()</code> uses the <code>bindingTagPattern</code> to optimize the matching of bindings by tag to avoid expensive check for all bindings. |
 |  [ConfigInjectionMetadata](./context.configinjectionmetadata.md) | Injection metadata for <code>@config.*</code> |
@@ -131,6 +132,7 @@ permalink: /doc/en/lb4/apidocs.context.html
 
 |  Variable | Description |
 |  --- | --- |
+|  [ANY\_TAG\_VALUE](./context.any_tag_value.md) | A symbol that can be used to match binding tags by name regardless of the value. |
 |  [BINDING\_METADATA\_KEY](./context.binding_metadata_key.md) | Metadata key for binding metadata |
 |  [DEFAULT\_TYPE\_NAMESPACES](./context.default_type_namespaces.md) |  |
 |  [GLOBAL\_INTERCEPTOR\_NAMESPACE](./context.global_interceptor_namespace.md) | Default namespace for global interceptors |
@@ -147,7 +149,6 @@ permalink: /doc/en/lb4/apidocs.context.html
 |  [BindingAddress](./context.bindingaddress.md) |  |
 |  [BindingEvent](./context.bindingevent.md) | Information for a binding event |
 |  [BindingEventListener](./context.bindingeventlistener.md) | Event listeners for binding events |
-|  [BindingFilter](./context.bindingfilter.md) | A function that filters bindings. It returns <code>true</code> to select a given binding. |
 |  [BindingFromClassOptions](./context.bindingfromclassoptions.md) | Options to customize the binding created from a class |
 |  [BindingMetadata](./context.bindingmetadata.md) | Binding metadata from <code>@bind</code> |
 |  [BindingScopeAndTags](./context.bindingscopeandtags.md) | An object to configure binding scope and tags |

@@ -25,6 +25,7 @@ export interface RequestBodyValidationOptions extends ajv.Options
 
 |  Property | Type | Description |
 |  --- | --- | --- |
+|  [ajvErrors](./rest.requestbodyvalidationoptions.ajverrors.md) | <code>true &#124; AjvErrorOptions</code> | Enable custom error messages in JSON-Schema for AJV validator from https://github.com/epoberezkin/ajv-errors - <code>true</code>: Enable <code>ajv-errors</code> - <code>AjvErrorOptions</code>: Enable <code>ajv-errors</code> with options |
 |  [ajvErrorTransformer](./rest.requestbodyvalidationoptions.ajverrortransformer.md) | <code>(errors: ajv.ErrorObject[]) =&gt; ajv.ErrorObject[]</code> | A function that transform the <code>ErrorObject</code>s reported by AJV. This could be used for error messages customization, localization, etc. |
 |  [ajvKeywords](./rest.requestbodyvalidationoptions.ajvkeywords.md) | <code>true &#124; string[]</code> | Enable additional AJV keywords from https://github.com/epoberezkin/ajv-keywords - <code>true</code>: Add all keywords from <code>ajv-keywords</code> - <code>string[]</code>: Add an array of keywords from <code>ajv-keywords</code> |
 |  [compiledSchemaCache](./rest.requestbodyvalidationoptions.compiledschemacache.md) | <code>SchemaValidatorCache</code> | Custom cache for compiled schemas by AJV. This setting makes it possible to skip the default cache. |

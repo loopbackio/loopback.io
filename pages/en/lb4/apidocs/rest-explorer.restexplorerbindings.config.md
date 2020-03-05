@@ -13,6 +13,10 @@ permalink: /doc/en/lb4/apidocs.rest-explorer.restexplorerbindings.config.html
 
 ## RestExplorerBindings.CONFIG variable
 
+Binding key for configuration of RestExplorerComponent.
+
+We recommend `ctx.configure(RestExplorerBindings.COMPONENT)` to be used instead of `ctx.bind(RestExplorerBindings.CONFIG)`<!-- -->.
+
 <b>Signature:</b>
 
 ```typescript

@@ -15,13 +15,6 @@ permalink: /doc/en/lb4/apidocs.rest-crud.definecrudrepositoryclass.html
 
 Create (define) a repository class for the given model.
 
-Example usage:
-
-```ts
-const ProductRepository = defineCrudRepositoryClass(Product);
-
-```
-
 <b>Signature:</b>
 
 ```typescript
@@ -39,5 +32,13 @@ export declare function defineCrudRepositoryClass<T extends Entity, IdType, Rela
 <b>Returns:</b>
 
 `RepositoryClass<T, IdType, Relations>`
+
+## Example
+
+
+```ts
+const ProductRepository = defineCrudRepositoryClass(Product);
+
+```
 
 

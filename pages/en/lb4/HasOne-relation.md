@@ -407,14 +407,30 @@ factory `account` for instances of `SupplierRepository`:
 - `create` for creating a target model instance belonging to `Supplier` model
   instance
   ([API Docs](https://loopback.io/doc/en/lb4/apidocs.repository.hasonerepository.create.html))
-- `find` finding target model instance belonging to Supplier model instance
-  ([API Docs](https://loopback.io/doc/en/lb4/apidocs.repository.hasonerepository.find.html))
+- `get` gets target model instance belonging to Supplier model instance
+  ([API Docs](https://loopback.io/doc/en/lb4/apidocs.repository.hasonerepository.get.html))
 - `delete` for deleting target model instance belonging to Supplier model
   instance
   ([API Docs](https://loopback.io/doc/en/lb4/apidocs.repository.hasonerepository.delete.html))
 - `patch` for patching target model instance belonging to Supplier model
   instance
   ([API Docs](https://loopback.io/doc/en/lb4/apidocs.repository.hasonerepository.patch.html))
+
+Here is an example of creating the related models:
+
+```ts
+const sup = await supplierRepository.create({id: 1, name: 'Tammy'});
+const accountData = {id: 1, supplierId: sup.id};
+// create the related account
+supplierRepository.account(sup.id).create(accountData);
+```
+
+{% include note.html content="Notice that `SupplierRepository.create()` expects a `Supplier` model only, navigational properties are not expected to be included in the target data. For instance, the following request will be rejected:
+`supplierRepository.create({`
+`  id: 1,`
+`  name:'invalid request',`
+`  account:{id: 1, supplierId: 1}`
+`})`" %}
 
 For **updating** (full replace of all properties on a `PUT` endpoint for
 instance) a target model you have to directly use this model repository. In this

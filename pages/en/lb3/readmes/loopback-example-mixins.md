@@ -1,5 +1,7 @@
 # loopback-mixins-example
 
+**⚠️ This LoopBack 3 example project is no longer maintained. Please refer to [LoopBack 4 Examples](https://loopback.io/doc/en/lb4/Examples.html) instead. ⚠️**
+
 ```
 $ git clone https://github.com/strongloop/loopback-example-mixins
 $ cd loopback-example-mixins

@@ -16,7 +16,7 @@ permalink: /doc/en/lb4/apidocs.repository.defaultcrudrepository.findbyid.html
 <b>Signature:</b>
 
 ```typescript
-findById(id: ID, filter?: Filter<T>, options?: Options): Promise<T & Relations>;
+findById(id: ID, filter?: FilterExcludingWhere<T>, options?: Options): Promise<T & Relations>;
 ```
 
 ## Parameters
@@ -24,7 +24,7 @@ findById(id: ID, filter?: Filter<T>, options?: Options): Promise<T & Relations>;
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  id | <code>ID</code> |  |
-|  filter | <code>Filter&lt;T&gt;</code> |  |
+|  filter | <code>FilterExcludingWhere&lt;T&gt;</code> |  |
 |  options | <code>Options</code> |  |
 
 <b>Returns:</b>

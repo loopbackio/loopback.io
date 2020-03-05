@@ -18,7 +18,7 @@ permalink: /doc/en/lb4/apidocs.repository.inclusionresolver.html
 ```typescript
 export declare type InclusionResolver<S extends Entity, T extends Entity> = (
 sourceEntities: S[], 
-inclusion: Inclusion<AnyObject>, 
+inclusion: Inclusion, 
 options?: Options) => Promise<(T | undefined)[] | (T[] | undefined)[]>;
 ```
 

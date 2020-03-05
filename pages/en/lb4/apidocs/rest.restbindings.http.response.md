@@ -18,6 +18,6 @@ Binding key for setting and injecting the http response
 <b>Signature:</b>
 
 ```typescript
-RESPONSE: BindingKey<Response>
+RESPONSE: BindingKey<Response<any>>
 ```
 

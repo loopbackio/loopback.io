@@ -22,7 +22,7 @@ Example: `{relation: 'aRelationName', scope: {<AFilterObject>}}`
 <b>Signature:</b>
 
 ```typescript
-export interface Inclusion<MT extends object = AnyObject> 
+export interface Inclusion 
 ```
 
 ## Properties

@@ -23,6 +23,7 @@ export interface FilterSchemaOptions
 
 |  Property | Type | Description |
 |  --- | --- | --- |
+|  [exclude](./repository-json-schema.filterschemaoptions.exclude.md) | <code>string[] &#124; string</code> | To exclude one or more property from <code>filter</code> |
 |  [setTitle](./repository-json-schema.filterschemaoptions.settitle.md) | <code>boolean</code> | Set this flag if you want the schema to set generated title property.<!-- -->By default the setting is enabled. (e.g. {<!-- -->setTitle: true<!-- -->}<!-- -->) |
 
 

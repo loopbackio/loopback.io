@@ -1,5 +1,7 @@
 # loopback-example-kv-connectors
 
+**⚠️ This LoopBack 3 example project is no longer maintained. Please refer to [LoopBack 4 Examples](https://loopback.io/doc/en/lb4/Examples.html) instead. ⚠️**
+
 KeyValue connector examples.
 
 - [Examples list](https://github.com/strongloop/loopback-example-kv-connectors#examples-list)

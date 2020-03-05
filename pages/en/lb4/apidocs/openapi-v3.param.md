@@ -21,6 +21,13 @@ Namespace for `@param.*` decorators
 export declare namespace param 
 ```
 
+## Functions
+
+|  Function | Description |
+|  --- | --- |
+|  [filter(modelCtor, options)](./openapi-v3.param.filter.md) | Sugar decorator for <code>filter</code> query parameter |
+|  [where(modelCtor, name)](./openapi-v3.param.where.md) | Sugar decorator for <code>where</code> query parameter |
+
 ## Variables
 
 |  Variable | Description |

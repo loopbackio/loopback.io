@@ -18,14 +18,14 @@ Declare `include`
 <b>Signature:</b>
 
 ```typescript
-include(...i: (string | string[] | Inclusion<MT>)[]): this;
+include(...i: (string | string[] | Inclusion)[]): this;
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  i | <code>(string &#124; string[] &#124; Inclusion&lt;MT&gt;)[]</code> | A relation name, an array of relation names, or an <code>Inclusion</code> object for the relation/scope definitions |
+|  i | <code>(string &#124; string[] &#124; Inclusion)[]</code> | A relation name, an array of relation names, or an <code>Inclusion</code> object for the relation/scope definitions |
 
 <b>Returns:</b>
 

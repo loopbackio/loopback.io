@@ -18,6 +18,6 @@ Select binding(s) by key or a filter function
 <b>Signature:</b>
 
 ```typescript
-export declare type BindingSelector<ValueType = unknown> = BindingAddress<ValueType> | BindingFilter<ValueType>;
+export declare type BindingSelector<ValueType = unknown> = BindingAddress<ValueType> | BindingFilter;
 ```
 

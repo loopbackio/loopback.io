@@ -7,7 +7,6 @@ LoopBack 4 or other TypeScript modules, including:
   [`tsc`](https://www.typescriptlang.org/docs/handbook/compiler-options.html) to
   compile typescript files
 - lb-eslint: Run [`eslint`](https://typescript-eslint.io/)
-- lb-tslint: Run [`tslint`](https://github.com/palantir/tslint)
 - lb-prettier: Run [`prettier`](https://github.com/prettier/prettier)
 - lb-mocha: Run [`mocha`](https://mochajs.org/) to execute test cases
 - lb-nyc: Run [`nyc`](https://github.com/istanbuljs/nyc)
@@ -100,6 +99,38 @@ Now you run the scripts, such as:
 ```sh
 npm run build
 ```
+
+5.  Run code coverage reports
+
+- `lb-nyc`
+
+  `lb-nyc` is a simple wrapper for [`nyc`](https://github.com/istanbuljs/nyc).
+
+  To customize the configuration:
+
+  - Create `.nycrc` in your project's root directory
+
+    ```json
+    {
+      "include": ["dist"],
+      "exclude": ["dist/__tests__/"],
+      "extension": [".js", ".ts"],
+      "reporter": ["text", "html"],
+      "exclude-after-remap": false
+    }
+    ```
+
+  - Update your `package.json` scripts:
+
+    ```json
+    "precoverage": "npm test",
+    "coverage": "open coverage/index.html",
+    "coverage:ci": "lb-nyc report --reporter=text-lcov | coveralls",
+    "test": "lb-nyc npm run mocha --scripts-prepend-node-path",
+    "test:ci": "lb-nyc npm run mocha --scripts-prepend-node-path"
+    ```
+
+    `converage:ci` sets up integration with [Coveralls](https://coveralls.io/).
 
 ## Contributions
 

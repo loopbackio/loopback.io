@@ -15,25 +15,6 @@ permalink: /doc/en/lb4/apidocs.rest-crud.definecrudrestcontroller.html
 
 Create (define) a CRUD Controller class for the given model.
 
-Example usage:
-
-```ts
-const ProductController = defineCrudRestController<
-Product,
-typeof Product.prototype.id,
-'id'
->(Product, {basePath: '/products'});
-
-inject('repositories.ProductRepository')(
- ProductController,
-  undefined,
-  0,
-);
-
-app.controller(ProductController);
-
-```
-
 <b>Signature:</b>
 
 ```typescript
@@ -54,5 +35,25 @@ export declare function defineCrudRestController<T extends Entity, IdType, IdNam
 <b>Returns:</b>
 
 `CrudRestControllerCtor<T, IdType, IdName, Relations>`
+
+## Example
+
+
+```ts
+const ProductController = defineCrudRestController<
+Product,
+typeof Product.prototype.id,
+'id'
+>(Product, {basePath: '/products'});
+
+inject('repositories.ProductRepository')(
+ ProductController,
+  undefined,
+  0,
+);
+
+app.controller(ProductController);
+
+```
 
 

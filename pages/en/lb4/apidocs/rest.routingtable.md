@@ -33,7 +33,6 @@ export declare class RoutingTable
 |  --- | --- | --- |
 |  [describeApiPaths()](./rest.routingtable.describeapipaths.md) |  |  |
 |  [find(request)](./rest.routingtable.find.md) |  | Map a request to a route |
-|  [joinPath(basePath, path)](./rest.routingtable.joinpath.md) | <code>static</code> |  |
 |  [registerController(spec, controllerCtor, controllerFactory)](./rest.routingtable.registercontroller.md) |  | Register a controller as the route |
 |  [registerRoute(route)](./rest.routingtable.registerroute.md) |  | Register a route |
 

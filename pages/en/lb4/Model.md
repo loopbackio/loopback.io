@@ -450,6 +450,8 @@ class Product extends Entity {
     jsonSchema: {
       maxLength: 30,
       minLength: 10,
+      errorMessage:
+        'name must be at least 10 characters and maximum 30 characters',
     },
   })
   public name: string;
@@ -542,6 +544,39 @@ class Customer extends Entity {
     required: true,
   })
   aliases: string[];
+}
+```
+
+Extra attributes for json schema can be supplied via the `jsonSchema` within the
+second parameter.
+
+```ts
+@model()
+class Customer extends Entity {
+  @property(String, {
+    jsonSchema: {
+      format: 'email',
+    },
+  })
+  email: string;
+}
+```
+
+For `@property.array`, the `jsonSchema` is for the item type instead of the
+array itself.
+
+```ts
+@model()
+class TestModel {
+  @property.array(String, {
+    jsonSchema: {
+      format: 'email',
+      minLength: 5,
+      maxLength: 50,
+      transform: ['toLowerCase'],
+    },
+  })
+  emails?: string[];
 }
 ```
 

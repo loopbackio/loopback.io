@@ -27,6 +27,7 @@ oas: {
     param: typeof param;
     requestBody: typeof requestBody;
     deprecated: typeof deprecated;
+    response: typeof response;
     tags: typeof tags;
 }
 ```

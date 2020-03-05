@@ -31,7 +31,7 @@ permalink: /doc/en/lb4/apidocs.openapi-v3.html
 |  [deprecated(isDeprecated)](./openapi-v3.deprecated.md) | Marks an api path as deprecated. When applied to a class, this decorator marks all paths as deprecated.<!-- -->You can optionally mark all controllers in a class as deprecated, but use <code>@deprecated(false)</code> on a specific method to ensure it is not marked as deprecated in the specification. |
 |  [get(path, spec)](./openapi-v3.get.md) | Expose a Controller method as a REST API operation mapped to <code>GET</code> request method. |
 |  [getControllerSpec(constructor)](./openapi-v3.getcontrollerspec.md) | Get the controller spec for the given class |
-|  [getFilterSchemaFor(modelCtor)](./openapi-v3.getfilterschemafor.md) | Build an OpenAPI schema describing the format of the "filter" object used to query model instances.<!-- -->Note we don't take the model properties into account yet and return a generic json schema allowing any "where" condition. |
+|  [getFilterSchemaFor(modelCtor, options)](./openapi-v3.getfilterschemafor.md) | Build an OpenAPI schema describing the format of the "filter" object used to query model instances.<!-- -->Note we don't take the model properties into account yet and return a generic json schema allowing any "where" condition. |
 |  [getModelSchemaRef(modelCtor, options)](./openapi-v3.getmodelschemaref.md) | Describe the provided Model as a reference to a definition shared by multiple endpoints. The definition is included in the returned schema. |
 |  [getWhereSchemaFor(modelCtor)](./openapi-v3.getwhereschemafor.md) | Build a OpenAPI schema describing the format of the "where" object used to filter model instances to query, update or delete.<!-- -->Note we don't take the model properties into account yet and return a generic json schema allowing any "where" condition. |
 |  [jsonOrBooleanToJSON(jsonOrBool)](./openapi-v3.jsonorbooleantojson.md) | Helper function used to interpret boolean values as JSON Schemas. See http://json-schema.org/draft-06/json-schema-release-notes.html |
@@ -51,6 +51,7 @@ permalink: /doc/en/lb4/apidocs.openapi-v3.html
 |  [ControllerSpec](./openapi-v3.controllerspec.md) |  |
 |  [OASEnhancer](./openapi-v3.oasenhancer.md) | Typically an extension point defines an interface as the contract for extensions to implement |
 |  [OASEnhancerServiceOptions](./openapi-v3.oasenhancerserviceoptions.md) | Options for the OpenAPI Spec enhancer extension point |
+|  [ResponseDecoratorMetadataItem](./openapi-v3.responsedecoratormetadataitem.md) |  |
 |  [RestEndpoint](./openapi-v3.restendpoint.md) | Data structure for REST related metadata |
 |  [TagsDecoratorMetadata](./openapi-v3.tagsdecoratormetadata.md) |  |
 
@@ -77,6 +78,8 @@ permalink: /doc/en/lb4/apidocs.openapi-v3.html
 |  Type Alias | Description |
 |  --- | --- |
 |  [OpenApiSpec](./openapi-v3.openapispec.md) |  |
+|  [ResponseDecoratorMetadata](./openapi-v3.responsedecoratormetadata.md) |  |
+|  [ResponseModelOrSpec](./openapi-v3.responsemodelorspec.md) |  |
 |  [SchemaRef](./openapi-v3.schemaref.md) | Custom LoopBack extension: a reference to Schema object that's bundled inside <code>definitions</code> property. |
 
 

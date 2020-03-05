@@ -191,6 +191,48 @@ You can find specific use cases in
 _The parameter location cookie is not supported yet, see_
 _(https://github.com/strongloop/loopback-next/issues/997)_
 
+### Parameter Decorator to support json objects
+
+{% include note.html content="
+LoopBack has switched the definition of json query params from the `exploded`,
+`deep-object` style to the `url-encoded` style definition in Open API spec.
+" %}
+
+The parameter decorator `@param.query.object` is applied to generate an Open API
+definition for query parameters with JSON values. The generated definition
+currently follows the `url-encoded` style as shown below.
+
+```json
+{
+  "in": "query",
+  "content": {
+    "application/json": {
+      "schema": {}
+    }
+  }
+}
+```
+
+The above style where the schema is `wrapped` under content['application/json']
+supports receiving `url-encoded` payload for a json query parameter as per Open
+API specification.
+
+To filter results from the GET '/todo-list' endpoint in the todo-list example
+with a specific relation, { "include": [ { "relation": "todo" } ] }, the
+following `url-encoded` query parameter can be used,
+
+```
+   http://localhost:3000/todos?filter=%7B%22include%22%3A%5B%7B%22relation%22%3A%22todoList%22%7D%5D%7D
+```
+
+As an extension to the url-encoded style, LoopBack also supports queries with
+exploded values for json query parameters.
+
+```
+GET /todos?filter[where][completed]=false
+// filter={where: {completed: 'false'}}
+```
+
 ### RequestBody Decorator
 
 Syntax: see
@@ -542,6 +584,186 @@ class MyOtherController {
 }
 ```
 
+### @oas.response
+
+[API document](https://loopback.io/doc/en/lb4/apidocs.openapi-v3.oas.response.html),
+[OpenAPI Response Specification](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#response-object)
+
+This decorator lets you easily add response specifications using `Models` from
+`@loopback/repository`. The convenience decorator sets the `content-type` to
+`application/json`, and the response description to the string value in the
+`http-status` module. The models become references through the `x-ts-type`
+schema extention.
+
+```ts
+@model()
+class SuccessModel extends Model {
+  constructor(err: Partial<SuccessModel>) {
+    super(err);
+  }
+  @property({default: 'Hi there!'})
+  message: string;
+}
+
+class GenericError extends Model {
+  @property()
+  message: string;
+}
+
+class MyController {
+  @oas.get('/greet')
+  @oas.response(200, SuccessModel)
+  @oas.response(500, GenericError)
+  greet() {
+    return new SuccessModel({message: 'Hello, world!'});
+  }
+}
+```
+
+```json
+{
+  "paths": {
+    "/greet": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "Ok",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuccessModel"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GenericError"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+```
+
+#### Using many models
+
+For a given response code, it's possible to have a path that could return one of
+many errors. The `@oas.response` decorator lets you pass multiple Models as
+arguments. They're combined using an `anyOf` keyword.
+
+```ts
+class FooNotFound extends Model {
+  @property()
+  message: string;
+}
+
+class BarNotFound extends Model {
+  @property()
+  message: string;
+}
+
+class BazNotFound extends Model {
+  @property()
+  message: string;
+}
+
+class MyController {
+  @oas.get('/greet/{foo}/{bar}')
+  @oas.response(404, FooNotFound, BarNotFound)
+  @oas.response(404, BazNotFound)
+  greet() {
+    return new SuccessModel({message: 'Hello, world!'});
+  }
+}
+```
+
+```json
+{
+  "paths": {
+    "/greet": {
+      "get": {
+        "responses": {
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "anyOf": [
+                    {"$ref": "#/components/schemas/FooNotFound"},
+                    {"$ref": "#/components/schemas/BarNotFound"},
+                    {"$ref": "#/components/schemas/BazNotFound"}
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+```
+
+#### Using ReferenceObject, ResponseObjects, ContentObjects
+
+You don't have to use loopback `Models` to use this convenience decorator. Valid
+`ReferenceObjects`, `ContentObjects`, and `ResponseObjects` are also valid.
+
+```ts
+class MyController {
+  // this is a valid SchemaObject
+  @oas.get('/schema-object')
+  @oas.response(200, {
+    type: 'object',
+    properties: {
+      message: 'string',
+    },
+    required: 'string',
+  })
+  returnFromSchemaObject() {
+    return {message: 'Hello, world!'};
+  }
+
+  // this is a valid ResponseObject
+  @oas.get('/response-object')
+  @oas.response(200, {
+    content: {
+      'application/pdf': {
+        schema: {
+          type: 'string',
+          format: 'base64',
+        },
+      },
+    },
+  })
+  returnFromResponseObject() {
+    return {message: 'Hello, world!'};
+  }
+
+  // this is a valid ResponseObject
+  @oas.get('/reference-object')
+  @oas.response(200, {$ref: '#/path/to/schema'})
+  returnFromResponseObject() {
+    return {message: 'Hello, world!'};
+  }
+}
+```
+
+#### Using more options
+
+The `@oas.response` convenience decorator makes some assumptions for you in
+order to provide a level of convenience. The `@operation` decorator and the
+method convenience decorators let you write a full, complete, and completely
+valid `OperationObject`.
+
 ### @oas.tags
 
 [API document](https://loopback.io/doc/en/lb4/apidocs.openapi-v3.tags.html),
@@ -572,3 +794,63 @@ This decorator does not affect the top-level `tags` section defined in the
 [OpenAPI Tag Object specification](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#tag-object).
 This decorator only affects the spec partial generated at the class level. You
 may find that your final tags also include a tag for the controller name.
+
+## Shortcuts for Filter and Where params
+
+CRUD APIs often expose REST endpoints that take `filter` and `where` query
+parameters. For example:
+
+```ts
+class TodoController {
+  async find(
+    @param.query.object('filter', getFilterSchemaFor(Todo))
+    filter?: Filter<Todo>,
+  ): Promise<Todo[]> {
+    return this.todoRepository.find(filter);
+  }
+
+  async findById(
+    @param.path.number('id') id: number,
+    @param.query.object('filter', getFilterSchemaFor(Todo))
+    filter?: Filter<Todo>,
+  ): Promise<Todo> {
+    return this.todoRepository.findById(id, filter);
+  }
+
+  async count(
+    @param.query.object('where', getWhereSchemaFor(Todo)) where?: Where<Todo>,
+  ): Promise<Count> {
+    return this.todoRepository.count(where);
+  }
+}
+```
+
+To simplify the parameter decoration for `filter` and `where`, we introduce two
+sugar decorators:
+
+- `@param.filter`: For a `filter` query parameter
+- `@param.where`: For a `where` query parameter
+
+Now the code from above can be refined as follows:
+
+```ts
+class TodoController {
+  async find(
+    @param.filter(Todo)
+    filter?: Filter<Todo>,
+  ): Promise<Todo[]> {
+    return this.todoRepository.find(filter);
+  }
+
+  async findById(
+    @param.path.number('id') id: number,
+    @param.filter(Todo, {exclude: 'where'}) filter?: FilterExcludingWhere<Todo>,
+  ): Promise<Todo> {
+    return this.todoRepository.findById(id, filter);
+  }
+
+  async count(@param.where(Todo) where?: Where<Todo>): Promise<Count> {
+    return this.todoRepository.count(where);
+  }
+}
+```

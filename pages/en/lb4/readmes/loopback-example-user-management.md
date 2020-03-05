@@ -1,5 +1,7 @@
 # loopback-example-user-management
 
+**⚠️ This LoopBack 3 example project is no longer maintained. Please refer to [LoopBack 4 Examples](https://loopback.io/doc/en/lb4/Examples.html) instead. ⚠️**
+
 ```
 $ git clone git@github.com:strongloop/loopback-example-user-management.git
 $ cd loopback-example-user-management

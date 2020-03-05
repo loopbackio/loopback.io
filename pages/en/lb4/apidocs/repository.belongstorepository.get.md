@@ -31,4 +31,6 @@ get(options?: Options): Promise<Target>;
 
 `Promise<Target>`
 
+A promise resolved with the target object or rejected with an EntityNotFoundError when target model instance was not found.
+
 

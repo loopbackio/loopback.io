@@ -22,7 +22,7 @@ If the optional `requestContext` is provided, then the `servers` list in the ret
 <b>Signature:</b>
 
 ```typescript
-getApiSpec(requestContext?: RequestContext): OpenApiSpec;
+getApiSpec(requestContext?: RequestContext): Promise<OpenApiSpec>;
 ```
 
 ## Parameters
@@ -33,6 +33,6 @@ getApiSpec(requestContext?: RequestContext): OpenApiSpec;
 
 <b>Returns:</b>
 
-`OpenApiSpec`
+`Promise<OpenApiSpec>`
 
 

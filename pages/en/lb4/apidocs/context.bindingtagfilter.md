@@ -18,7 +18,7 @@ Binding filter function that holds a binding tag pattern. `Context.find()` uses 
 <b>Signature:</b>
 
 ```typescript
-export interface BindingTagFilter extends BindingFilter<unknown> 
+export interface BindingTagFilter extends BindingFilter 
 ```
 
 ## Properties

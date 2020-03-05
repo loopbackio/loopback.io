@@ -43,13 +43,6 @@ your project. It will help us to better prioritize which limitations to remove
 first.
 " %}
 
-### Connector-specific metadata in property definitions is not imported
-
-_The tracking GitHub issue:
-[loopback-next#3810](https://github.com/strongloop/loopback-next/issues/3810)_
-
-Workaround: Add this metadata manually to the generated file.
-
 ### Nested properties are not upgraded
 
 _The tracking GitHub issue:
@@ -66,24 +59,6 @@ _The tracking GitHub issue:
 [loopback-next#3812](https://github.com/strongloop/loopback-next/issues/3812)_
 
 Workaround: define relational metadata & navigational properties manually.
-
-### Models inheriting from custom base class
-
-_The tracking GitHub issue:
-[loopback-next#3813](https://github.com/strongloop/loopback-next/issues/3813)_
-
-Models inheriting from application-specific models (including LB3 built-in
-models like `User`) cannot be imported yet.
-
-Workaround:
-
-1. Modify your LB3 model to inherit from `Model`, `PersistedModel` or
-   `KeyValueModel`.
-
-2. Import the model to LB4
-
-3. Update the imported model to inherit for the desired application-specific
-   model.
 
 ### MongoDB's `ObjectID` type
 

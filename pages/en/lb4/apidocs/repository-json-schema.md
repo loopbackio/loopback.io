@@ -15,12 +15,6 @@ permalink: /doc/en/lb4/apidocs.repository-json-schema.html
 
 [@loopback/repository-json-schema](https://github.com/strongloop/loopback-next/tree/master/packages/repository-json-schema)
 
-## Enumerations
-
-|  Enumeration | Description |
-|  --- | --- |
-|  [MODEL\_TYPE\_KEYS](./repository-json-schema.model_type_keys.md) | TODO(semver-major) remove these constants in the next major version |
-
 ## Functions
 
 |  Function | Description |

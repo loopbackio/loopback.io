@@ -74,28 +74,7 @@ permalink: /doc/en/lb4/apidocs.repository.html
 |  [createHasManyRepositoryFactory(relationMetadata, targetRepositoryGetter)](./repository.createhasmanyrepositoryfactory.md) | Enforces a constraint on a repository based on a relationship contract between models. For example, if a Customer model is related to an Order model via a HasMany relation, then, the relational repository returned by the factory function would be constrained by a Customer model instance's id(s). |
 |  [createHasOneRepositoryFactory(relationMetadata, targetRepositoryGetter)](./repository.createhasonerepositoryfactory.md) | Enforces a constraint on a repository based on a relationship contract between models. For example, if a Customer model is related to an Address model via a HasOne relation, then, the relational repository returned by the factory function would be constrained by a Customer model instance's id(s). |
 |  [deduplicate(input)](./repository.deduplicate.md) | Dedupe an array |
-|  [defineModelClass(base, definition)](./repository.definemodelclass.md) | Create (define) a new model class with the given name and definition.<!-- -->Example usage:
-```ts
-const Product = defineModelClass(Entity, new ModelDefinition('Product'));
-
-```
-To enable type safety, you should describe properties of your model:
-```ts
-const Product = defineModelClass<
- typeof Entity,
- {id: number, name: string}
->(Entity, new ModelDefinition('Product'));
-
-```
-If your model allows arbitrary (free-form) properties, then add <code>AnyObject</code> to the type describing model properties.
-```ts
-const Product = defineModelClass<
- typeof Entity,
- AnyObject & {id: number},
->(Entity, new ModelDefinition('Product'));
-
-```
- |
+|  [defineModelClass(base, definition)](./repository.definemodelclass.md) | Create (define) a new model class with the given name and definition. |
 |  [embedsMany(definition)](./repository.embedsmany.md) | Decorator for embedsMany |
 |  [embedsOne(definition)](./repository.embedsone.md) | Decorator for embedsOne |
 |  [ensurePromise(p)](./repository.ensurepromise.md) | Ensure the value is a promise |
@@ -211,6 +190,7 @@ const Product = defineModelClass<
 |  [EntityData](./repository.entitydata.md) |  |
 |  [EntityResolver](./repository.entityresolver.md) |  |
 |  [Fields](./repository.fields.md) | Selection of fields<!-- -->Example: <code>{afieldname: true}</code> |
+|  [FilterExcludingWhere](./repository.filterexcludingwhere.md) | Filter without <code>where</code> property |
 |  [InclusionResolver](./repository.inclusionresolver.md) |  |
 |  [KeyOf](./repository.keyof.md) | Key types of a given model, excluding operators |
 |  [KeyValueFilter](./repository.keyvaluefilter.md) | Filter for keys |

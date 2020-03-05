@@ -20,7 +20,7 @@ Note we don't take the model properties into account yet and return a generic js
 <b>Signature:</b>
 
 ```typescript
-export declare function getFilterSchemaFor(modelCtor: typeof Model): SchemaObject;
+export declare function getFilterSchemaFor(modelCtor: typeof Model, options?: FilterSchemaOptions): SchemaObject;
 ```
 
 ## Parameters
@@ -28,6 +28,7 @@ export declare function getFilterSchemaFor(modelCtor: typeof Model): SchemaObjec
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  modelCtor | <code>typeof Model</code> | The model constructor to build the filter schema for. |
+|  options | <code>FilterSchemaOptions</code> | Options to build the filter schema. |
 
 <b>Returns:</b>
 

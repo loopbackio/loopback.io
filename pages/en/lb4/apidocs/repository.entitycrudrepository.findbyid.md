@@ -18,7 +18,7 @@ Find an entity by id, return a rejected promise if not found.
 <b>Signature:</b>
 
 ```typescript
-findById(id: ID, filter?: Filter<T>, options?: Options): Promise<T & Relations>;
+findById(id: ID, filter?: FilterExcludingWhere<T>, options?: Options): Promise<T & Relations>;
 ```
 
 ## Parameters
@@ -26,7 +26,7 @@ findById(id: ID, filter?: Filter<T>, options?: Options): Promise<T & Relations>;
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  id | <code>ID</code> | Value for the entity id |
-|  filter | <code>Filter&lt;T&gt;</code> | Additional query options. E.g. <code>filter.include</code> configures which related models to fetch as part of the database query (or queries). |
+|  filter | <code>FilterExcludingWhere&lt;T&gt;</code> | Additional query options. E.g. <code>filter.include</code> configures which related models to fetch as part of the database query (or queries). |
 |  options | <code>Options</code> | Options for the operations |
 
 <b>Returns:</b>
@@ -34,5 +34,9 @@ findById(id: ID, filter?: Filter<T>, options?: Options): Promise<T & Relations>;
 `Promise<T & Relations>`
 
 A promise of an entity found for the id
+
+## Remarks
+
+The rationale behind findById is to find an instance by its primary key (id). No other search criteria than id should be used. If a client wants to use a `where` clause beyond id, use `find` or `findOne` instead.
 
 

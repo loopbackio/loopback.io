@@ -54,6 +54,7 @@ export declare namespace RestBindings
 |  [REQUEST\_BODY\_PARSER](./rest.restbindings.request_body_parser.md) | Binding key for request body parser |
 |  [ROUTER\_OPTIONS](./rest.restbindings.router_options.md) |  |
 |  [ROUTER](./rest.restbindings.router.md) | Internal binding key for rest router |
+|  [ROUTES](./rest.restbindings.routes.md) | Namespace for REST routes |
 |  [SEQUENCE](./rest.restbindings.sequence.md) | Binding key for setting and injecting a Sequence |
 |  [SERVER](./rest.restbindings.server.md) | Binding key for the server itself |
 |  [URL](./rest.restbindings.url.md) | Binding key for setting and injecting the URL of RestServer |
