@@ -1,6 +1,15 @@
 # LoopBack Push Notification Component
 
-![StrongLoop Labs](http://docs.strongloop.com/download/thumbnails/5310165/StrongLoop%20Labs%20Logo%20Cropped.png "StrongLoop Labs")
+**⚠️ LoopBack 3 is in Maintenance LTS mode, only critical bugs and critical
+security fixes will be provided. (See
+[Module Long Term Support Policy](#module-long-term-support-policy) below.)**
+
+We urge all LoopBack 3 users to migrate their applications to LoopBack 4 as
+soon as possible. Refer to our
+[Migration Guide](https://loopback.io/doc/en/lb4/migration-overview.html)
+for more information on how to upgrade.
+
+## Overview
 
 > StrongLoop Labs projects provide early access to advanced or experimental functionality.  In general, these projects may lack usability, completeness, documentation, and robustness, and may be outdated.
 However, StrongLoop supports these projects: Paying customers can open issues using the StrongLoop customer support system (Zendesk), and community users can report bugs on GitHub.
@@ -69,3 +78,15 @@ uses the LoopBack Android SDK to enable and handle push notifications.
 - https://github.com/argon/node-apn
 - https://github.com/logicalparadox/apnagent-ios
 - https://blog.engineyard.com/2013/developing-ios-push-notifications-nodejs
+
+## Module Long Term Support Policy
+
+This module adopts the [
+Module Long Term Support (LTS)](http://github.com/CloudNativeJS/ModuleLTS) policy,
+ with the following End Of Life (EOL) dates:
+
+| Version | Status          | Published | EOL      |
+| ------- | --------------- | --------- | -------- |
+| 3.x     | Maintenance LTS | Dec 2016  | Dec 2020 |
+
+Learn more about our LTS plan in [docs](https://loopback.io/doc/en/contrib/Long-term-support.html).
