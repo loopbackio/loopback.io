@@ -5,7 +5,6 @@ keywords: LoopBack
 tags: [data_sources]
 sidebar: lb4_sidebar
 permalink: /doc/en/lb4/Database-connectors.html
-summary: LoopBack provides connectors for popular relational and NoSQL databases.
 ---
 
 LoopBack database connectors implement create, retrieve, update, and delete operations as a common set of methods of
