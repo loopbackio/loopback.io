@@ -8,13 +8,23 @@ permalink: /doc/en/contrib/index.html
 summary: Contributions to the LoopBack project are welcome!
 ---
 
-LoopBack has an active and growing open-source community. All work on the project occurs in GitHub, primarily in the following repositories:
+LoopBack has an active and growing open-source community.
 
-*   [loopback](https://github.com/strongloop/loopback)
-*   [loopback-datasource-juggler](https://github.com/strongloop/loopback-datasource-juggler)
-*   [loopback-boot](https://github.com/strongloop/loopback-boot)
-*   [loopback-phase](https://github.com/strongloop/loopback-phase)
-*   [generator-loopback](https://github.com/strongloop/generator-loopback)
+For LoopBack 4, components are stored in a monorepo. As such, all work on the project occurs in GitHub, primarily in the following repositories:
+
+- [loopback-next](https://github.com/strongloop/loopback-next)
+- [loopback-datasource-juggler](https://github.com/strongloop/loopback-datasource-juggler)
+- Most `loopback-connector-*` repos
+
+LoopBack 3 is under Maintenance LTS (critical bugs and security fixes only) but we still welcome contributions from the community. Read more in our [blog article](https://strongloop.com/strongblog/lb3-entered-maintenance-mode/).
+
+All work on LoopBack 3 occurs in GitHub, primarily in the following repositories:
+
+- [loopback](https://github.com/strongloop/loopback)
+- [loopback-next](https://github.com/strongloop/loopback-next)
+- [loopback-boot](https://github.com/strongloop/loopback-boot)
+- [loopback-phase](https://github.com/strongloop/loopback-phase)
+- [generator-loopback](https://github.com/strongloop/generator-loopback)
 
 See [LoopBack 3.0](/doc/en/lb3/index.html) for a complete list of repositories.
 
