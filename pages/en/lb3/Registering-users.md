@@ -128,7 +128,7 @@ in [loopback-example-user-management](https://github.com/strongloop/loopback-ex
 {% include note.html content="Naming your model with camel-case `MyUser` will create files in \"lisp case\" `/common/models/my-user.js` - `/common/models/my-user.json`
 " %}
 
-Then, in your view file (for example, an [EJS template](http://www.embeddedjs.com/)):
+Then, in your view file (for example, an [EJS template](http://www.ejs.co/)):
 
 **verify.ejs**
 
