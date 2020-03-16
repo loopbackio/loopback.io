@@ -1,6 +1,6 @@
 # loopback-connector-mysql
 
-[MySQL](https://www.mysql.com/) is a popular open-source relational database management system (RDBMS).  The `loopback-connector-mysql` module provides the MySQL connector module for the LoopBack framework.
+[MySQL](https://www.mysql.com/) is a popular open-source relational database management system (RDBMS). The `loopback-connector-mysql` module provides the MySQL connector module for the LoopBack framework.
 
 <div class="gh-only">See also <a href="http://loopback.io/doc/en/lb3/MySQL-connector.html">LoopBack MySQL Connector</a> in LoopBack documentation.
 <br/><br/>
@@ -23,7 +23,7 @@ If you create a MySQL data source using the data source generator as described b
 
 Use the [Data source generator](http://loopback.io/doc/en/lb3/Data-source-generator.html) to add a MySQL data source to your application.  
 The generator will prompt for the database server hostname, port, and other settings
-required to connect to a MySQL database.  It will also run the `npm install` command above for you.
+required to connect to a MySQL database. It will also run the `npm install` command above for you.
 
 The entry in the application's `/server/datasources.json` will look like this:
 
@@ -205,13 +205,13 @@ See [LoopBack types](http://loopback.io/doc/en/lb3/LoopBack-types.html) for de
   </tbody>
 </table>
 
-*NOTE* as of v3.0.0 of MySQL Connector, the following flags were introduced:
+_NOTE_ as of v3.0.0 of MySQL Connector, the following flags were introduced:
 
-* `treatCHAR1AsString`
+- `treatCHAR1AsString`
   default `false` - treats CHAR(1) as a String instead of a Boolean
-* `treatBIT1AsBit`
+- `treatBIT1AsBit`
   default `true` - treats BIT(1) as a Boolean instead of a Binary
-* `treatTINYINT1AsTinyInt`
+- `treatTINYINT1AsTinyInt`
   default `true` - treats TINYINT(1) as a Boolean instead of a Number
 
 ## Using the datatype field/column option with MySQL
@@ -221,6 +221,7 @@ Use the `mysql` model property to specify additional MySQL-specific properties f
 For example:
 
 {% include code-caption.html content="/common/models/model.json" %}
+
 ```javascript
 "locationId":{
     "type":"String",
@@ -239,13 +240,13 @@ For example:
 You can also use the dataType column/property attribute to specify what MySQL column type to use for many loopback-datasource-juggler types. 
 The following type-dataType combinations are supported:
 
-* Number
-* integer
-* tinyint
-* smallint
-* mediumint
-* int
-* bigint
+- Number
+- integer
+- tinyint
+- smallint
+- mediumint
+- int
+- bigint
 
 Use the `limit` option to alter the display width. Example:
 
@@ -259,7 +260,9 @@ Use the `limit` option to alter the display width. Example:
 ```
 
 ### Default Clause/Constant
+
 Use the `default` property to have MySQL handle setting column `DEFAULT` value.
+
 ```javascript
 "status": {
   "type": "string",
@@ -274,7 +277,9 @@ Use the `default` property to have MySQL handle setting column `DEFAULT` value.
   }
 }
 ```
+
 For the date or timestamp types use `CURRENT_TIMESTAMP` or `now`:
+
 ```javascript
 "last_modified": {
   "type": "date",
@@ -283,7 +288,9 @@ For the date or timestamp types use `CURRENT_TIMESTAMP` or `now`:
   }
 }
 ```
+
 **NOTE**: The following column types do **NOT** supported [MySQL Default Values](https://dev.mysql.com/doc/refman/5.7/en/data-type-defaults.html):
+
 - BLOB
 - TEXT
 - GEOMETRY
@@ -312,7 +319,7 @@ Example:
 
 ```javascript
 { stdDev :
-  { type: Number, 
+  { type: Number,
     dataType: 'decimal',
     precision: 12,
     scale: 8
@@ -324,14 +331,14 @@ Example:
 
 Convert String / DataSource.Text / DataSource.JSON to the following MySQL types:
 
-* varchar
-* char
-* text
-* mediumtext
-* tinytext
-* longtext
+- varchar
+- char
+- text
+- mediumtext
+- tinytext
+- longtext
 
-Example: 
+Example:
 
 ```javascript
 { userName :
@@ -342,7 +349,7 @@ Example: 
 }
 ```
 
-Example: 
+Example:
 
 ```javascript
 { biography :
@@ -354,7 +361,7 @@ Example: 
 
 Convert JSON Date types to  datetime or timestamp
 
-Example: 
+Example:
 
 ```javascript
 { startTime :
@@ -383,7 +390,7 @@ MOOD('sad'); // 'sad'
 ### Model discovery
 
 The MySQL connector supports _model discovery_ that enables you to create LoopBack models
-based on an existing database schema using the unified [database discovery API](http://apidocs.strongloop.com/loopback-datasource-juggler/#datasource-prototype-discoverandbuildmodels).  For more information on discovery, see [Discovering models from relational databases](https://loopback.io/doc/en/lb3/Discovering-models-from-relational-databases.html).
+based on an existing database schema using the unified [database discovery API](http://apidocs.strongloop.com/loopback-datasource-juggler/#datasource-prototype-discoverandbuildmodels). For more information on discovery, see [Discovering models from relational databases](https://loopback.io/doc/en/lb3/Discovering-models-from-relational-databases.html).
 
 ### Auto-migration
 
@@ -399,6 +406,7 @@ MySQL handles the foreign key integrity of the related models upon auto-migrate 
 Example:
 
 **model-definiton.json**
+
 ```json
 {
   "name": "Book",
@@ -466,6 +474,7 @@ Example:
 ```
 
 **boot-script.js**
+
 ```js
 module.exports = function(app) {
   var mysqlDs = app.dataSources.mysqlDS;
@@ -485,13 +494,17 @@ module.exports = function(app) {
   });
 };
 ```
+
 #### Breaking Changes with GeoPoint since 5.x
+
 Prior to `loopback-connector-mysql@5.x`, MySQL connector was saving and loading GeoPoint properties from the MySQL database in reverse.
 MySQL expects values to be POINT(X, Y) or POINT(lng, lat), but the connector was saving them in the opposite order(i.e. POINT(lat,lng)).
 If you have an application with a model that has a GeoPoint property using previous versions of this connector, you can migrate your models
 using the following programmatic approach:
 **NOTE** Please back up the database tables that have your application data before performing any of the steps.
+
 1. Create a boot script under `server/boot/` directory with the following:
+
 ```js
 'use strict';
 module.exports = function(app) {
@@ -501,13 +514,17 @@ module.exports = function(app) {
     teashop.find({}, function(err, teashops) {
       teashops.forEach(function(teashopInstance) {
         //what we fetch back from the db is wrong, so need to revert it here
-        var newLocation = {lng: teashopInstance.location.lat, lat: teashopInstance.location.lng};
+        var newLocation = {
+          lng: teashopInstance.location.lat,
+          lat: teashopInstance.location.lng
+        };
         //only update the GeoPoint property for the model
-        teashopInstance.updateAttribute('location', newLocation, function(err, inst) {
-          if (err)
-            console.log('update attribute failed ', err);
-          else
-        console.log('updateAttribute successful');
+        teashopInstance.updateAttribute('location', newLocation, function(
+          err,
+          inst
+        ) {
+          if (err) console.log('update attribute failed', err);
+          else console.log('updateAttribute successful');
         });
       });
     });
@@ -516,9 +533,11 @@ module.exports = function(app) {
   findAndUpdate();
 };
 ```
+
 2. Run the boot script by simply running your application or `node .`
 
 For the above example, the model definition is as follows:
+
 ```json
 {
   "name": "teashop",
@@ -546,24 +565,35 @@ For the above example, the model definition is as follows:
 ## Running tests
 
 ### Own instance
+
 If you have a local or remote MySQL instance and would like to use that to run the test suite, use the following command:
+
 - Linux
+
 ```bash
 MYSQL_HOST=<HOST> MYSQL_PORT=<PORT> MYSQL_USER=<USER> MYSQL_PASSWORD=<PASSWORD> MYSQL_DATABASE=<DATABASE> CI=true npm test
 ```
+
 - Windows
+
 ```bash
 SET MYSQL_HOST=<HOST> SET MYSQL_PORT=<PORT> SET MYSQL_USER=<USER> SET MYSQL_PASSWORD=<PASSWORD> SET MYSQL_DATABASE=<DATABASE> SET CI=true npm test
 ```
 
 ### Docker
+
 If you do not have a local MySQL instance, you can also run the test suite with very minimal requirements.
+
 - Assuming you have [Docker](https://docs.docker.com/engine/installation/) installed, run the following script which would spawn a MySQL instance on your local:
+
 ```bash
 source setup.sh <HOST> <PORT> <USER> <PASSWORD> <DATABASE>
 ```
+
 where `<HOST>`, `<PORT>`, `<USER>`, `<PASSWORD>` and `<DATABASE>` are optional parameters. The default values are `localhost`, `3306`, `root`, `pass` and `testdb` respectively.
+
 - Run the test:
+
 ```bash
 npm test
 ```

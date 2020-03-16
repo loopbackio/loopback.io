@@ -24,11 +24,12 @@ If you create a PostgreSQL data source using the data source generator as descri
 
 Use the [Data source generator](http://loopback.io/doc/en/lb3/Data-source-generator.html) to add a PostgreSQL data source to your application.  
 The generator will prompt for the database server hostname, port, and other settings
-required to connect to a PostgreSQL database.  It will also run the `npm install` command above for you.
+required to connect to a PostgreSQL database. It will also run the `npm install` command above for you.
 
 The entry in the application's `/server/datasources.json` will look like this:
 
 {% include code-caption.html content="/server/datasources.json" %}
+
 ```javascript
 "mydb": {
   "name": "mydb",
@@ -50,6 +51,7 @@ Edit `datasources.json` to add other properties that enable you to connect the
 You can also specify connection pool settings in `datasources.json`. For instance you can specify the minimum and the maximum pool size, and the maximum pool client's idle time before closing the client.
 
 Example of `datasource.json`:
+
 ```
 {
   "mypostgresdb": {
@@ -68,6 +70,7 @@ Example of `datasource.json`:
   }
 }
 ```
+
 Check out [node-pg-pool](https://github.com/brianc/node-pg-pool) and [node postgres pooling example](https://github.com/brianc/node-postgres#pooling-example) for more information.
 
 ### Properties
@@ -210,6 +213,7 @@ The model definition consists of the following properties.
 For example:
 
 {% include code-caption.html content="/common/models/model.json" %}
+
 ```javascript
 {
   "name": "Inventory",
@@ -404,10 +408,10 @@ You can query the nested fields with dot notation:
 ```javascript
 Customer.find({
   where: {
-    'address.state': 'California'
+    "address.state": "California"
   },
-  order: 'address.city'
-})
+  order: "address.city"
+});
 ```
 
 ## Discovery and auto-migration
@@ -415,7 +419,7 @@ Customer.find({
 ### Model discovery
 
 The PostgreSQL connector supports _model discovery_ that enables you to create LoopBack models
-based on an existing database schema using the unified [database discovery API](http://apidocs.strongloop.com/loopback-datasource-juggler/#datasource-prototype-discoverandbuildmodels).  For more information on discovery, see [Discovering models from relational databases](https://loopback.io/doc/en/lb3/Discovering-models-from-relational-databases.html).
+based on an existing database schema using the unified [database discovery API](http://apidocs.strongloop.com/loopback-datasource-juggler/#datasource-prototype-discoverandbuildmodels). For more information on discovery, see [Discovering models from relational databases](https://loopback.io/doc/en/lb3/Discovering-models-from-relational-databases.html).
 
 ### Auto-migration
 
@@ -429,8 +433,8 @@ model: a table, for example, PRODUCT under the 'public' schema within the databa
 
 The auto-migrate method:
 
-* Defines a primary key for the properties whose `id` property is true (or a positive number).
-* Creates a column with 'SERIAL' type if the `generated` property of the `id` property is true.
+- Defines a primary key for the properties whose `id` property is true (or a positive number).
+- Creates a column with 'SERIAL' type if the `generated` property of the `id` property is true.
 
 Destroying models may result in errors due to foreign key integrity. First delete any related models by calling delete on models with relationships.
 
@@ -440,7 +444,7 @@ Foreign key constraints can be defined in the model `options`. Removing or updat
 
 If there is a reference to an object being deleted then the `DELETE` will fail. Likewise if there is a create with an invalid FK id then the `POST` will fail.
 
-**Note**: The order of table creation is important. A referenced table must exist before creating a foreign key constraint. 
+**Note**: The order of table creation is important. A referenced table must exist before creating a foreign key constraint.
 
 For **LoopBack 4** users, define your models under the `models/` folder as follows:
 
@@ -464,6 +468,7 @@ export class Customer extends Entity {
   name: string;
 }
 ```
+
 `order.model.ts`:
 
 ```ts
@@ -494,7 +499,7 @@ export class Order extends Entity {
 For **LoopBack 3** users, you can define your model JSON schema as follows:
 
 ```json
-{
+({
   "name": "Customer",
   "options": {
     "idInjection": false
@@ -512,7 +517,6 @@ For **LoopBack 3** users, you can define your model JSON schema as follows:
     }
   }
 },
-
 {
   "name": "Order",
   "options": {
@@ -542,7 +546,7 @@ For **LoopBack 3** users, you can define your model JSON schema as follows:
       "length": 40
     }
   }
-}
+})
 ```
 
 Auto-migrate supports the automatic generation of property values. For PostgreSQL, the default id type is _integer_. If you have `generated: true` in the id property, it generates integers by default:
@@ -571,6 +575,7 @@ It is common to use UUIDs as the primary key in PostgreSQL instead of integers. 
   },
 }
 ```
+
 The setting uses `uuid-ossp` extension and `uuid_generate_v4()` function as default.
 
 If you'd like to use other extensions and functions, you can do:
@@ -596,24 +601,35 @@ WARNING: It is the users' responsibility to make sure the provided extension and
 ## Running tests
 
 ### Own instance
+
 If you have a local or remote PostgreSQL instance and would like to use that to run the test suite, use the following command:
+
 - Linux
+
 ```bash
 POSTGRESQL_HOST=<HOST> POSTGRESQL_PORT=<PORT> POSTGRESQL_USER=<USER> POSTGRESQL_PASSWORD=<PASSWORD> POSTGRESQL_DATABASE=<DATABASE> CI=true npm test
 ```
+
 - Windows
+
 ```bash
 SET POSTGRESQL_HOST=<HOST> SET POSTGRESQL_PORT=<PORT> SET POSTGRESQL_USER=<USER> SET POSTGRESQL_PASSWORD=<PASSWORD> SET POSTGRESQL_DATABASE=<DATABASE> SET CI=true npm test
 ```
 
 ### Docker
+
 If you do not have a local PostgreSQL instance, you can also run the test suite with very minimal requirements.
+
 - Assuming you have [Docker](https://docs.docker.com/engine/installation/) installed, run the following script which would spawn a PostgreSQL instance on your local:
+
 ```bash
 source setup.sh <HOST> <PORT> <USER> <PASSWORD> <DATABASE>
 ```
+
 where `<HOST>`, `<PORT>`, `<USER>`, `<PASSWORD>` and `<DATABASE>` are optional parameters. The default values are `localhost`, `5432`, `root`, `pass` and `testdb` respectively.
+
 - Run the test:
+
 ```bash
 npm test
 ```
