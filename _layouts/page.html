@@ -11,13 +11,13 @@ layout: default
 <div class="post-header">
    <h1 class="post-title-main">{{ page.title }}</h1>
    {% if page.editurl %}
-       <a target="_blank" href="{{page.editurl}}" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Source code</a>
+       <a target="_blank" href="{{page.editurl}}" class="githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Source code</a>
    {% elsif site.github_editme_path and page.layout != 'readme' and page.sidebar != 'lb4_sidebar' %}
      {% assign edit_url =  page.url | remove: "/doc" | remove: ".html" | append: ".md" | prepend: site.github_editme_path %}
-       <a target="_blank" href="https://github.com/{{edit_url}}" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit this page</a>
+       <a target="_blank" href="https://github.com/{{edit_url}}" class="githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit this page</a>
    {% elsif site.lb4_editme_path and page.layout != 'readme' and page.sidebar == 'lb4_sidebar' %}
      {% assign edit_url =  page.path | remove: "pages/en/lb4" | prepend: site.lb4_editme_path %}
-       <a target="_blank" href="https://github.com/{{edit_url}}" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit this page</a>
+       <a target="_blank" href="https://github.com/{{edit_url}}" class="githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit this page</a>
    {% endif %}
 </div>
 
@@ -46,7 +46,7 @@ layout: default
         {% assign projectTags = site.data.tags.allowed-tags %}
         {% for tag in page.tags %}
           {% if projectTags contains tag %}
-            <a href="{{ "tag_" | append: tag | append: ".html" }}" class="btn btn-default navbar-btn cursorNorm" role="button">{{page.tagName}}{{tag}}</a>
+            <a href="{{ "tag_" | append: tag | append: ".html" }}" class="tags-item" role="button">{{page.tagName}}{{tag}}</a>
             {% endif %}
         {% endfor %}
       {% endif %}

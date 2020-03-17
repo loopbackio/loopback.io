@@ -7,7 +7,6 @@ keywords: LoopBack
 tags: connectors
 sidebar: lb4_sidebar
 permalink: /doc/en/lb4/Redis-connector.html
-summary: The Redis connector enables LoopBack applications to connect to Redis data sources.
 ---
 
 {% include content/strongloop-labs.html lang=page.lang %}

@@ -12,7 +12,7 @@
                 <span class="icon-bar"></span>
             </button>
             <a class="fa fa-lg navbar-brand no_icon" href="{{base}}/doc/index.html">
-              <img class="no_icon" style="width:150px;" src="{{base}}/images/branding/logo/blue/loopback.svg">&nbsp;<span class="projectTitle"></span></a>
+              <img class="no_icon" style="width:147px;" src="{{base}}/images/branding/logo/white/loopback.svg">&nbsp;<span class="projectTitle"></span></a>
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
@@ -53,7 +53,7 @@
 			{% include feedback.html %}
     {% endif %}
                 <li>
-                    <form name="search" class="input-group lb-search" action="/search" method="GET">
+                    <form id="search" name="search" class="input-group lb-search" action="/search" method="GET">
                         <input type="text" class="form-control search-bar" placeholder="Search (powered by Watson)" name="q">
                         {% if page.sidebar contains "lb" %}
                           <input type="hidden" name="sidebar" value="{{page.sidebar}}">

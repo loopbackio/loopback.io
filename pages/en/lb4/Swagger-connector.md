@@ -6,7 +6,6 @@ keywords: LoopBack
 tags: connectors
 sidebar: lb4_sidebar
 permalink: /doc/en/lb4/Swagger-connector.html
-summary: The Swagger connector enables LoopBack applications to interact with other RESTful APIs described using the OpenAPI (Swagger) specification.
 ---
 
 # loopback-connector-swagger

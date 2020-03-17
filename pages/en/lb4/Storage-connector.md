@@ -7,7 +7,6 @@ keywords: LoopBack
 tags: connectors
 sidebar: lb4_sidebar
 permalink: /doc/en/lb4/Storage-connector.html
-summary: The storage connector enables LoopBack applications to interact with files on cloud storage providers and the local (server) file system.
 ---
 
 ## Installation

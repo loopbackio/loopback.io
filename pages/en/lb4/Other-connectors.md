@@ -8,7 +8,6 @@ keywords: LoopBack
 tags: [data_sources]
 sidebar: lb4_sidebar
 permalink: /doc/en/lb4/Other-connectors.html
-summary: LoopBack supports a number of connectors to backend systems beyond databases.
 ---
 
 ## Overview

@@ -6,7 +6,6 @@ keywords: LoopBack
 tags:
 sidebar: lb4_sidebar
 permalink: /doc/en/lb4/Using-MongoLab.html
-summary:
 ---
 
 If you are using [mLab](https://mlab.com/) to host your MongoDB database, use the LoopBack `url` property to configure your data source,

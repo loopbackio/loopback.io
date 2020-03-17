@@ -6,7 +6,6 @@ keywords: LoopBack
 tags: connectors
 sidebar: lb4_sidebar
 permalink: /doc/en/lb4/Push-connector.html
-summary:
 ---
 
 ## Installation
