@@ -6,6 +6,7 @@ keywords: LoopBack
 tags: connectors
 sidebar: lb4_sidebar
 permalink: /doc/en/lb4/Email-connector.html
+summary: The built-in email connectors enables applications to send email.
 ---
 
 The email connector is built in to LoopBack, so you don't need to install it.

@@ -6,6 +6,7 @@ tags: gdpr
 lang: en
 sidebar: lb4_sidebar
 permalink: /doc/en/lb4/Deploy-for-GDPR-readiness.html
+summary: LoopBack considerations for GDPR readiness.
 ---
 
 ## Notice:

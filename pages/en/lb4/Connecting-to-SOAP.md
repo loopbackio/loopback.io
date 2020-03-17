@@ -6,6 +6,7 @@ keywords: LoopBack
 tags:
 sidebar: lb4_sidebar
 permalink: /doc/en/lb4/Connecting-to-SOAP.html
+summary: The LoopBack CLI enables you to easily create models based on a SOAP web service.
 ---
 {% include navgroups/soap.md %}
 {% include toc.html %}

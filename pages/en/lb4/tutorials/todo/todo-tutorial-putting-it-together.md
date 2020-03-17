@@ -4,6 +4,7 @@ title: 'Putting it all together'
 keywords: LoopBack 4.0, LoopBack 4
 sidebar: lb4_sidebar
 permalink: /doc/en/lb4/todo-tutorial-putting-it-together.html
+summary: LoopBack 4 Todo Application Tutorial - Putting it all together
 ---
 
 ### Putting it all together

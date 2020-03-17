@@ -4,6 +4,7 @@ title: 'Add TodoListImage Relation'
 keywords: LoopBack 4.0, LoopBack 4
 sidebar: lb4_sidebar
 permalink: /doc/en/lb4/todo-list-tutorial-has-one-relation.html
+summary: LoopBack 4 TodoList Application Tutorial - Add TodoListImage Relation
 ---
 
 We have that a `Todo` [`belongsTo`](../../BelongsTo-relation.md) a `TodoList`

@@ -6,6 +6,7 @@ keywords: LoopBack
 tags: [data_sources]
 sidebar: lb4_sidebar
 permalink: /doc/en/lb4/Connectors-reference.html
+summary: LoopBack connectors implement the data exchange logic to communicate with backend systems such as relational or NoSQL databases, or other REST, or SOAP API.
 ---
 
 LoopBack connectors include:

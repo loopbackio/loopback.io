@@ -6,6 +6,7 @@ keywords: LoopBack 4.0, LoopBack 4, Transactions, Transaction
 tags:
 sidebar: lb4_sidebar
 permalink: /doc/en/lb4/Using-database-transactions.html
+summary: Transactional API usage in LoopBack 4
 ---
 
 ## Overview
