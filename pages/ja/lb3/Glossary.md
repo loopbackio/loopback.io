@@ -2,6 +2,7 @@
 title:  用語集
 toc: false
 lang:  ja
+layout: translation
 keywords:  LoopBack
 tags:  [reference]
 sidebar:  ja_lb3_sidebar
