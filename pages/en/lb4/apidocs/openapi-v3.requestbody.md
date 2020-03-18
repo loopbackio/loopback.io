@@ -24,5 +24,6 @@ export declare namespace requestBody
 |  Variable | Description |
 |  --- | --- |
 |  [array](./openapi-v3.requestbody.array.md) | Define a requestBody of <code>array</code> type. |
+|  [file](./openapi-v3.requestbody.file.md) | Define a requestBody of <code>file</code> type. This is used to support multipart/form-data based file upload. Use <code>@requestBody</code> for other content types.[OpenAPI file upload](https://swagger.io/docs/specification/describing-request-body/file-upload) |
 
 

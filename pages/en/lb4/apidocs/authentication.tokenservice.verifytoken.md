@@ -31,4 +31,6 @@ verifyToken(token: string): Promise<UserProfile>;
 
 `Promise<UserProfile>`
 
+The UserProfile which belongs to the given token.
+
 

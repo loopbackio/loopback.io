@@ -67,6 +67,7 @@ permalink: /doc/en/lb4/apidocs.context.html
 |  [getBindingMetadata(target)](./context.getbindingmetadata.md) | Get binding metadata for a class |
 |  [getDeepProperty(value, path)](./context.getdeepproperty.md) | Get nested properties of an object by path |
 |  [globalInterceptor(group, specs)](./context.globalinterceptor.md) | <code>@globalInterceptor</code> decorator to mark the class as a global interceptor |
+|  [includesTagValue(itemValue)](./context.includestagvalue.md) | Create a tag value matcher function that returns <code>true</code> if the target tag value equals to the item value or is an array that includes the item value. |
 |  [inject(bindingSelector, metadata, resolve)](./context.inject.md) | A decorator to annotate method arguments for automatic injection by LoopBack IoC container. |
 |  [inspectInjections(binding)](./context.inspectinjections.md) | Inspect injections for a binding created with <code>toClass</code> or <code>toProvider</code> |
 |  [inspectTargetType(injection)](./context.inspecttargettype.md) | Inspect the target type for the injection to find out the corresponding JavaScript type |
@@ -116,6 +117,7 @@ permalink: /doc/en/lb4/apidocs.context.html
 |  [ResolutionOptions](./context.resolutionoptions.md) | Options for binding/dependency resolution |
 |  [ResolverFunction](./context.resolverfunction.md) | A function to provide resolution of injected values |
 |  [Subscription](./context.subscription.md) | Subscription of context events. It's modeled after https://github.com/tc39/proposal-observable. |
+|  [TagValueMatcher](./context.tagvaluematcher.md) | A function to check if a given tag value is matched for <code>filterByTag</code> |
 
 ## Namespaces
 

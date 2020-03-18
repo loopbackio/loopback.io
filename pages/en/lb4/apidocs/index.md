@@ -17,6 +17,7 @@ permalink: /doc/en/lb4/apidocs.index.html
 
 |  Package | Description |
 |  --- | --- |
+|  [@loopback/apiconnect](./apiconnect.md) |  |
 |  [@loopback/authentication](./authentication.md) |  |
 |  [@loopback/authentication-passport](./authentication-passport.md) |  |
 |  [@loopback/authorization](./authorization.md) |  |

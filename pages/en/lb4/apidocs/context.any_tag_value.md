@@ -18,7 +18,7 @@ A symbol that can be used to match binding tags by name regardless of the value.
 <b>Signature:</b>
 
 ```typescript
-ANY_TAG_VALUE: unique symbol
+ANY_TAG_VALUE: TagValueMatcher
 ```
 
 ## Example

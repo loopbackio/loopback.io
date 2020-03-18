@@ -31,7 +31,7 @@ permalink: /doc/en/lb4/apidocs.core.html
 |  [asService(serviceInterface)](./core.asservice.md) | Create a binding template for a service interface |
 |  [createServiceBinding(cls, options)](./core.createservicebinding.md) | Create a service binding from a class or provider |
 |  [extensionFilter(extensionPointName)](./core.extensionfilter.md) | A factory function to create binding filter for extensions of a named extension point |
-|  [extensionFor(extensionPointName)](./core.extensionfor.md) | A factory function to create binding template for extensions of the given extension point |
+|  [extensionFor(extensionPointNames)](./core.extensionfor.md) | A factory function to create binding template for extensions of the given extension point |
 |  [extensionPoint(name, specs)](./core.extensionpoint.md) | Decorate a class as a named extension point. If the decoration is not present, the name of the class will be used. |
 |  [extensions(extensionPointName)](./core.extensions.md) | Shortcut to inject extensions for the given extension point. |
 |  [filterByServiceInterface(serviceInterface)](./core.filterbyserviceinterface.md) | Create a binding filter by service class |

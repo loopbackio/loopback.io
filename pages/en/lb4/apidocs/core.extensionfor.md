@@ -18,14 +18,14 @@ A factory function to create binding template for extensions of the given extens
 <b>Signature:</b>
 
 ```typescript
-export declare function extensionFor(extensionPointName: string): BindingTemplate;
+export declare function extensionFor(...extensionPointNames: string[]): BindingTemplate;
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  extensionPointName | <code>string</code> | Name of the extension point |
+|  extensionPointNames | <code>string[]</code> | Names of the extension point |
 
 <b>Returns:</b>
 

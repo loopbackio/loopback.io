@@ -74,9 +74,6 @@ permalink: /doc/en/lb4/apidocs.repository.html
 |  [createHasManyRepositoryFactory(relationMetadata, targetRepositoryGetter)](./repository.createhasmanyrepositoryfactory.md) | Enforces a constraint on a repository based on a relationship contract between models. For example, if a Customer model is related to an Order model via a HasMany relation, then, the relational repository returned by the factory function would be constrained by a Customer model instance's id(s). |
 |  [createHasOneRepositoryFactory(relationMetadata, targetRepositoryGetter)](./repository.createhasonerepositoryfactory.md) | Enforces a constraint on a repository based on a relationship contract between models. For example, if a Customer model is related to an Address model via a HasOne relation, then, the relational repository returned by the factory function would be constrained by a Customer model instance's id(s). |
 |  [deduplicate(input)](./repository.deduplicate.md) | Dedupe an array |
-|  [defineCrudRepositoryClass(modelClass, baseRepositoryClass)](./repository.definecrudrepositoryclass.md) | Create (define) a CRUD repository class for the given model. |
-|  [defineEntityCrudRepositoryClass(entityClass, baseRepositoryClass)](./repository.defineentitycrudrepositoryclass.md) | Create (define) an entity CRUD repository class for the given model. |
-|  [defineKeyValueRepositoryClass(entityClass, baseRepositoryClass)](./repository.definekeyvaluerepositoryclass.md) | Create (define) a KeyValue repository class for the given entity. |
 |  [defineModelClass(base, definition)](./repository.definemodelclass.md) | Create (define) a new model class with the given name and definition. |
 |  [embedsMany(definition)](./repository.embedsmany.md) | Decorator for embedsMany |
 |  [embedsOne(definition)](./repository.embedsone.md) | Decorator for embedsOne |
@@ -127,10 +124,8 @@ permalink: /doc/en/lb4/apidocs.repository.html
 |  [Count](./repository.count.md) | Count of Model instances that were successful for methods like <code>updateAll</code>, <code>deleteAll</code>, etc. |
 |  [CrudConnector](./repository.crudconnector.md) | CRUD operations for connector implementations |
 |  [CrudRepository](./repository.crudrepository.md) | Basic CRUD operations for ValueObject and Entity. No ID is required. |
-|  [CrudRepositoryClass](./repository.crudrepositoryclass.md) | Signature for CrudRepository classes |
 |  [DataSource](./repository.datasource.md) | DataSource denotes a configured connector |
 |  [EntityCrudRepository](./repository.entitycrudrepository.md) | CRUD operations for a repository of entities |
-|  [EntityCrudRepositoryClass](./repository.entitycrudrepositoryclass.md) | Signature for EntityCrudRepository classes |
 |  [EntityRepository](./repository.entityrepository.md) | Base interface for a repository of entities |
 |  [ExecutableRepository](./repository.executablerepository.md) |  |
 |  [Filter](./repository.filter.md) | Query filter object |
@@ -143,7 +138,6 @@ permalink: /doc/en/lb4/apidocs.repository.html
 |  [HasOneRepositoryFactory](./repository.hasonerepositoryfactory.md) |  |
 |  [Inclusion](./repository.inclusion.md) | Inclusion of related items<!-- -->Note: scope means filter on related items<!-- -->Example: <code>{relation: 'aRelationName', scope: {&lt;AFilterObject&gt;}}</code> |
 |  [KeyValueRepository](./repository.keyvaluerepository.md) | Key/Value operations for connector implementations |
-|  [KeyValueRepositoryClass](./repository.keyvaluerepositoryclass.md) | Signature for KeyValueRepository classes |
 |  [KVConnector](./repository.kvconnector.md) | Key/Value operations for connector implementations |
 |  [ModelDefinitionSyntax](./repository.modeldefinitionsyntax.md) | DSL for building a model definition. |
 |  [OrClause](./repository.orclause.md) | Or clause |

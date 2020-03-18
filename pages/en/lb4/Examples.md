@@ -26,8 +26,15 @@ LoopBack 4 comes with the following example projects:
   An example showing how to compose an application from component and
   controllers, interceptors, and observers.
 
+- **[file-transfer](https://github.com/strongloop/loopback-next/tree/master/examples/file-transfer)**:
+  An example showing how to expose APIs to upload files.
+
 - **[loopback4-example-shopping](https://github.com/strongloop/loopback4-example-shopping)**:
   An online e-commerce demo to validate/test the LoopBack 4 framework readiness.
+
+- **[rest-crud](https://github.com/strongloop/loopback-next/tree/master/examples/rest-crud)**:
+  An example showing how to use [`CrudRestComponent`] to define default
+  repository and controller classes for a model without creating those classes.
 
 You can download the example projects using our CLI tool `lb4`:
 

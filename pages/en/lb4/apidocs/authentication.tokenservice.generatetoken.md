@@ -31,4 +31,6 @@ generateToken(userProfile: UserProfile): Promise<string>;
 
 `Promise<string>`
 
+a generated token/secret for a given UserProfile.
+
 

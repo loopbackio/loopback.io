@@ -37,6 +37,7 @@ permalink: /doc/en/lb4/apidocs.openapi-v3.html
 |  [jsonOrBooleanToJSON(jsonOrBool)](./openapi-v3.jsonorbooleantojson.md) | Helper function used to interpret boolean values as JSON Schemas. See http://json-schema.org/draft-06/json-schema-release-notes.html |
 |  [jsonToSchemaObject(json, visited)](./openapi-v3.jsontoschemaobject.md) | Converts JSON Schemas into a SchemaObject |
 |  [mergeOpenAPISpec(currentSpec, patchSpec)](./openapi-v3.mergeopenapispec.md) | The default merge function to patch the current OpenAPI spec. It leverages module <code>json-merge-patch</code>'s merge API to merge two json objects. It returns a new merged object without modifying the original one.<!-- -->A list of merging rules can be found in test file: https://github.com/pierreinglebert/json-merge-patch/blob/master/test/lib/merge.js |
+|  [mergeSecuritySchemeToSpec(spec, schemeName, schemeSpec)](./openapi-v3.mergesecurityschemetospec.md) | Security scheme merge helper function to patch the current OpenAPI spec. It provides a direct route to add a security schema to the specs components. It returns a new merged object without modifying the original one. |
 |  [operation(verb, path, spec)](./openapi-v3.operation.md) | Expose a Controller method as a REST API operation. |
 |  [param(paramSpec)](./openapi-v3.param.md) | Describe an input parameter of a Controller method.<code>@param</code> must be applied to parameters. |
 |  [patch(path, spec)](./openapi-v3.patch.md) | Expose a Controller method as a REST API operation mapped to <code>PATCH</code> request method. |
@@ -59,6 +60,7 @@ permalink: /doc/en/lb4/apidocs.openapi-v3.html
 
 |  Namespace | Description |
 |  --- | --- |
+|  [OASEnhancerBindings](./openapi-v3.oasenhancerbindings.md) |  |
 |  [param](./openapi-v3.param.md) | Namespace for <code>@param.*</code> decorators |
 |  [requestBody](./openapi-v3.requestbody.md) |  |
 
@@ -67,8 +69,6 @@ permalink: /doc/en/lb4/apidocs.openapi-v3.html
 |  Variable | Description |
 |  --- | --- |
 |  [asSpecEnhancer](./openapi-v3.asspecenhancer.md) | A binding template for spec contributor extensions |
-|  [OAS\_ENHANCER\_EXTENSION\_POINT\_NAME](./openapi-v3.oas_enhancer_extension_point_name.md) | Name/id of the OAS enhancer extension point |
-|  [OAS\_ENHANCER\_SERVICE](./openapi-v3.oas_enhancer_service.md) | Strongly-typed binding key for SpecService |
 |  [oas](./openapi-v3.oas.md) |  |
 |  [REQUEST\_BODY\_INDEX](./openapi-v3.request_body_index.md) |  |
 |  [TS\_TYPE\_KEY](./openapi-v3.ts_type_key.md) |  |

@@ -18,7 +18,7 @@ A factory function to create binding filter for extensions of a named extension 
 <b>Signature:</b>
 
 ```typescript
-export declare function extensionFilter(extensionPointName: string): import("@loopback/context").BindingTagFilter;
+export declare function extensionFilter(extensionPointName: string): BindingFilter;
 ```
 
 ## Parameters
@@ -29,6 +29,6 @@ export declare function extensionFilter(extensionPointName: string): import("@lo
 
 <b>Returns:</b>
 
-`import("@loopback/context").BindingTagFilter`
+`BindingFilter`
 
 
