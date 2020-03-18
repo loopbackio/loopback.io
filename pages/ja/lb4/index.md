@@ -1,5 +1,6 @@
 ---
 lang: ja
+layout: translation
 title: LoopBack 4
 toc: false
 keywords: LoopBack 4
@@ -19,9 +20,6 @@ is being developed in one "mono-repository",
 multiple repos, as in v3. However, examples and externally-developed components
 will be in separate repositories.
 '%}
-
-{% include note.html content="This is a community translation into Japanese. For the latest information, see the [English version](/doc/en/lb4/index.html).
-" %}
 
 LoopBackは、Expressをベースにした非常に拡張性の高い、オープンソースのNode.jsフレームワークです。
 これにより、データベースやSOAPまたはRESTサービスなどへ接続を行うAPIおよびマイクロサービスを迅速に作成できます。

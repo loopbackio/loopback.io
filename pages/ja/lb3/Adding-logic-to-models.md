@@ -1,12 +1,14 @@
 ---
 title: "モデルにロジックを追加する"
 lang: ja
+layout: translation
 keywords: LoopBack
 tags: [models]
 sidebar: ja_lb3_sidebar
 permalink: /doc/ja/lb3/Adding-logic-to-models.html
 summary:
 ---
+
 モデルに独自のロジックを追加する方法は３つあります。
 
 * [リモートメソッド](Remote-methods.html) - Node関数に紐付けられたRESTエンドポイントです。
