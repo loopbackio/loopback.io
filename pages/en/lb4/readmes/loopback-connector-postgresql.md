@@ -152,6 +152,7 @@ Check out [node-pg-pool](https://github.com/brianc/node-pg-pool) and [node postg
       <td>defaultIdSort</td>
       <td>Boolean/String</td>
       <td>Set to <code>false</code> to disable default sorting on <code>id</code> column(s). Set to <code>numericIdOnly</code> to only apply to IDs with a number type <code>id</code>.</td>
+    </tr>
   </tbody>
 </table>
 
@@ -313,11 +314,13 @@ See [LoopBack types](http://loopback.io/doc/en/lb3/LoopBack-types.html) for de
 ### LoopBack to PostgreSQL types
 
 <table>
-  <tbody>
+  <thead>
     <tr>
-      <th>LoopBack Type</th>
-      <th>PostgreSQL Type</th>
+      <th width="450">LoopBack Type</th>
+      <th width="450">PostgreSQL Type</th>
     </tr>
+  </thead>
+  <tbody>
     <tr>
       <td>String<br>JSON<br>Text<br>Default</td>
       <td>
@@ -343,11 +346,13 @@ See [LoopBack types](http://loopback.io/doc/en/lb3/LoopBack-types.html) for de
 ### PostgreSQL types to LoopBack
 
 <table>
-  <tbody>
+  <thead>
     <tr>
-      <th>PostgreSQL Type</th>
-      <th>LoopBack Type</th>
+      <th width="450">PostgreSQL Type</th>
+      <th width="450">LoopBack Type</th>
     </tr>
+  </thead>
+  <tbody>
     <tr>
       <td>BOOLEAN</td>
       <td>Boolean</td>
@@ -367,7 +372,7 @@ See [LoopBack types](http://loopback.io/doc/en/lb3/LoopBack-types.html) for de
       <td>Number</td>
     </tr>
     <tr>
-      <td>DATE<br>TIMESTAMP<br>TIMESTAMP WITH TIME ZONE<br>TIMESTAMP WITHOUT TIME ZONE<br>TIME</td>TIME WITH TIME ZONE</td>TIME WITHOUT TIME ZONE</td>
+      <td>DATE<br>TIMESTAMP<br>TIMESTAMP WITH TIME ZONE<br>TIMESTAMP WITHOUT TIME ZONE<br>TIME<br>TIME WITH TIME ZONE<br>TIME WITHOUT TIME ZONE</td>
       <td>Date</td>
     </tr>
     <tr>
