@@ -26,7 +26,7 @@ children:
   - title: 'Todo Tutorial'
     url: /doc/ja/lb4/todo-tutorial.html
     output: 'web, pdf'
-    translated: false
+    translated: true
     children:
 
     - title: 'Create your app scaffolding'
@@ -139,7 +139,7 @@ children:
 - title: 'Key concepts'
   url: /doc/ja/lb4/Concepts.html
   output: 'web, pdf'
-  translated: false
+  translated: true
   children:
 
   - title: 'Application'
