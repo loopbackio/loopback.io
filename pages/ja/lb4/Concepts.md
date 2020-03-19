@@ -1,9 +1,10 @@
 ---
 lang: ja
 title: 'キーコンセプト'
+layout: translation
 keywords: LoopBack 4.0, LoopBack 4
-sidebar: lb4_sidebar
-permalink: /doc/en/lb4/Concepts.html
+sidebar: ja_lb4_sidebar
+permalink: /doc/ja/lb4/Concepts.html
 ---
 
 LoopBack 4は、典型的なAPIおよび/またはマイクロサービスアプリケーションに対するさまざまな役割を果たすために、いくつかのキーとなる構成要素を定義しています。

@@ -1,3 +1,12 @@
+---
+lang: ja
+layout: translation
+title: Todo Tutorial
+keywords: LoopBack 4.0, LoopBack 4
+sidebar: ja_lb4_sidebar
+permalink: /doc/ja/lb4/todo-tutorial.html
+---
+
 # @loopback/example-todo
 
 Loopback4を始める、基本のチュートリアルをご紹介します！
