@@ -131,8 +131,8 @@ See [LoopBack types](http://loopback.io/doc/en/lb3/LoopBack-types.html) for de
 <table>
   <thead>
     <tr>
-      <th>LoopBack Type</th>
-      <th>MySQL Type</th>
+      <th width="450">LoopBack Type</th>
+      <th width="450">MySQL Type</th>
     </tr>
   </thead>
   <tbody>    
@@ -170,11 +170,13 @@ See [LoopBack types](http://loopback.io/doc/en/lb3/LoopBack-types.html) for de
 ### MySQL to LoopBack types
 
 <table>
-  <tbody>
+  <thead>
     <tr>
-      <th>MySQL Type</th>
-      <th>LoopBack Type</th>
+      <th width="450">MySQL Type</th>
+      <th width="450">LoopBack Type</th>
     </tr>
+  </thead>
+  <tbody>
     <tr>
       <td>CHAR</td>
       <td>String</td>
