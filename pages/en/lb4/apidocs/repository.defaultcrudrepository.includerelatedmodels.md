@@ -3,6 +3,7 @@ lang: en
 title: 'API docs: repository.defaultcrudrepository.includerelatedmodels'
 keywords: LoopBack 4.0, LoopBack 4
 sidebar: lb4_sidebar
+editurl: https://github.com/strongloop/loopback-next/tree/master/packages/repository
 permalink: /doc/en/lb4/apidocs.repository.defaultcrudrepository.includerelatedmodels.html
 ---
 
@@ -17,7 +18,7 @@ Returns model instances that include related models of this repository that have
 <b>Signature:</b>
 
 ```typescript
-protected includeRelatedModels(entities: T[], include?: Inclusion<T>[], options?: Options): Promise<(T & Relations)[]>;
+protected includeRelatedModels(entities: T[], include?: Inclusion[], options?: Options): Promise<(T & Relations)[]>;
 ```
 
 ## Parameters
@@ -25,7 +26,7 @@ protected includeRelatedModels(entities: T[], include?: Inclusion<T>[], options?
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  entities | <code>T[]</code> | An array of entity instances or data |
-|  include | <code>Inclusion&lt;T&gt;[]</code> | Inclusion filter |
+|  include | <code>Inclusion[]</code> | Inclusion filter |
 |  options | <code>Options</code> | Options for the operations |
 
 <b>Returns:</b>

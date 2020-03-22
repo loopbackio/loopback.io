@@ -23,10 +23,10 @@ is attached to one of the following connectors:
 - [PostgreSQL connector](PostgreSQL-connector.html)
 - [SQL Server connector](SQL-Server-connector.html)
 - [Oracle connector](Oracle-connector.html)
-- [DB2 Connector](DB2-connector.html)
 - [DashDB Connector](DashDB.html)
-- [DB2 iSeries Connector](DB2-iSeries-connector.html)
-- [DB2 for z/OS connector](DB2-for-z-OS.html)
+- [IBM Db2 (for Linux, Unix, Windows) Connector](DB2-connector.html)
+- [IBM Db2 for i connector](DB2-for-i-connector.html)
+- [IBM Db2 for z/OS connector](DB2-for-z-OS-connector.html)
 - [Informix connector](Informix.html)
 
 The repository class needs to extend from `TransactionalRepository` repository
@@ -171,6 +171,26 @@ on transaction objects are as follows:
    */
   rollback(): Promise<void>;
 ```
+
+### Checking Activeness
+
+For SQL connectors, function `isActive()` is exposed to return the activeness of
+the transaction by checking the existence of field `connection`. It is also
+available on the transaction objects:
+
+```ts
+  /**
+   * Check if the transaction has an active connection
+   */
+  isActive(): boolean;
+```
+
+Suppose you have a transaction called `tx`, you can call `tx.isActive()` to
+check whether it's still active.
+
+{% include note.html content="
+The postgresql connector doesn't fully support this function due to its special way of creating the transaction instance. After committing or rollbacking a transaction, the reference of its connection is not deleted when the datasource is postgresql. Details are explained in [issue #411](https://github.com/strongloop/loopback-connector-postgresql/issues/411).
+" %}
 
 ## Set up timeout
 

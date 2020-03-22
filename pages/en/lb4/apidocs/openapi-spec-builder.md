@@ -3,6 +3,7 @@ lang: en
 title: 'API docs: openapi-spec-builder'
 keywords: LoopBack 4.0, LoopBack 4
 sidebar: lb4_sidebar
+editurl: https://github.com/strongloop/loopback-next/tree/master/packages/openapi-spec-builder
 permalink: /doc/en/lb4/apidocs.openapi-spec-builder.html
 ---
 
@@ -19,6 +20,7 @@ permalink: /doc/en/lb4/apidocs.openapi-spec-builder.html
 |  Class | Description |
 |  --- | --- |
 |  [BuilderBase](./openapi-spec-builder.builderbase.md) |  |
+|  [ComponentsSpecBuilder](./openapi-spec-builder.componentsspecbuilder.md) | A builder for creating ComponentsObject specifications. |
 |  [OpenApiSpecBuilder](./openapi-spec-builder.openapispecbuilder.md) | A builder for creating OpenApiSpec documents. |
 |  [OperationSpecBuilder](./openapi-spec-builder.operationspecbuilder.md) | A builder for creating OperationObject specifications. |
 
@@ -26,6 +28,7 @@ permalink: /doc/en/lb4/apidocs.openapi-spec-builder.html
 
 |  Function | Description |
 |  --- | --- |
+|  [aComponentsSpec()](./openapi-spec-builder.acomponentsspec.md) | Create a new instance of ComponentsSpecBuilder. |
 |  [anOpenApiSpec()](./openapi-spec-builder.anopenapispec.md) | Create a new instance of OpenApiSpecBuilder. |
 |  [anOperationSpec()](./openapi-spec-builder.anoperationspec.md) | Create a new instance of OperationSpecBuilder. |
 

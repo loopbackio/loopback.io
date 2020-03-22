@@ -3,6 +3,7 @@ lang: en
 title: 'API docs: authentication.tokenservice.verifytoken'
 keywords: LoopBack 4.0, LoopBack 4
 sidebar: lb4_sidebar
+editurl: https://github.com/strongloop/loopback-next/tree/master/packages/authentication
 permalink: /doc/en/lb4/apidocs.authentication.tokenservice.verifytoken.html
 ---
 
@@ -29,5 +30,7 @@ verifyToken(token: string): Promise<UserProfile>;
 <b>Returns:</b>
 
 `Promise<UserProfile>`
+
+The UserProfile which belongs to the given token.
 
 

@@ -6,7 +6,6 @@ keywords: LoopBack 3.0
 tags: [getting_started]
 sidebar: lb3_sidebar
 permalink: /doc/en/lb3/index.html
-summary: LoopBack 3.0 is the active long-term support (LTS) release.
 ---
 
 {% include important.html content="If you're new to LoopBack, use the current release,

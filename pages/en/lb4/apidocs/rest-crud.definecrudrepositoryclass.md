@@ -3,6 +3,7 @@ lang: en
 title: 'API docs: rest-crud.definecrudrepositoryclass'
 keywords: LoopBack 4.0, LoopBack 4
 sidebar: lb4_sidebar
+editurl: https://github.com/strongloop/loopback-next/tree/master/packages/rest-crud
 permalink: /doc/en/lb4/apidocs.rest-crud.definecrudrepositoryclass.html
 ---
 
@@ -13,13 +14,6 @@ permalink: /doc/en/lb4/apidocs.rest-crud.definecrudrepositoryclass.html
 ## defineCrudRepositoryClass() function
 
 Create (define) a repository class for the given model.
-
-Example usage:
-
-```ts
-const ProductRepository = defineCrudRepositoryClass(Product);
-
-```
 
 <b>Signature:</b>
 
@@ -38,5 +32,13 @@ export declare function defineCrudRepositoryClass<T extends Entity, IdType, Rela
 <b>Returns:</b>
 
 `RepositoryClass<T, IdType, Relations>`
+
+## Example
+
+
+```ts
+const ProductRepository = defineCrudRepositoryClass(Product);
+
+```
 
 

@@ -3,6 +3,7 @@ lang: en
 title: 'API docs: rest-explorer.restexplorerbindings.component'
 keywords: LoopBack 4.0, LoopBack 4
 sidebar: lb4_sidebar
+editurl: https://github.com/strongloop/loopback-next/tree/master/packages/rest-explorer
 permalink: /doc/en/lb4/apidocs.rest-explorer.restexplorerbindings.component.html
 ---
 
@@ -11,6 +12,8 @@ permalink: /doc/en/lb4/apidocs.rest-explorer.restexplorerbindings.component.html
 [Home](./index.md) &gt; [@loopback/rest-explorer](./rest-explorer.md) &gt; [RestExplorerBindings](./rest-explorer.restexplorerbindings.md) &gt; [COMPONENT](./rest-explorer.restexplorerbindings.component.md)
 
 ## RestExplorerBindings.COMPONENT variable
+
+Binding key for RestExplorerComponent
 
 <b>Signature:</b>
 

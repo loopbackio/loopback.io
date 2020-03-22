@@ -3,6 +3,7 @@ lang: en
 title: 'API docs: repository.filter'
 keywords: LoopBack 4.0, LoopBack 4
 sidebar: lb4_sidebar
+editurl: https://github.com/strongloop/loopback-next/tree/master/packages/repository
 permalink: /doc/en/lb4/apidocs.repository.filter.html
 ---
 
@@ -25,7 +26,7 @@ export interface Filter<MT extends object = AnyObject>
 |  Property | Type | Description |
 |  --- | --- | --- |
 |  [fields](./repository.filter.fields.md) | <code>Fields&lt;MT&gt;</code> | To include/exclude fields |
-|  [include](./repository.filter.include.md) | <code>Inclusion&lt;MT&gt;[]</code> | To include related objects |
+|  [include](./repository.filter.include.md) | <code>Inclusion[]</code> | To include related objects |
 |  [limit](./repository.filter.limit.md) | <code>number</code> | Maximum number of entities |
 |  [offset](./repository.filter.offset.md) | <code>number</code> | Offset N number of entities. An alias for <code>skip</code> |
 |  [order](./repository.filter.order.md) | <code>string[]</code> | Sorting order for matched entities. Each item should be formatted as <code>fieldName ASC</code> or <code>fieldName DESC</code>. For example: <code>['f1 ASC', 'f2 DESC', 'f3 ASC']</code>.<!-- -->We might want to use <code>Order</code> in the future. Keep it as <code>string[]</code> for now for compatibility with LoopBack 3.x. |

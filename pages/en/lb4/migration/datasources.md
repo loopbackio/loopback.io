@@ -6,6 +6,10 @@ sidebar: lb4_sidebar
 permalink: /doc/en/lb4/migration-datasources.html
 ---
 
+{% include tip.html content="
+Missing instructions for your LoopBack 3 use case? Please report a [Migration docs issue](https://github.com/strongloop/loopback-next/issues/new?labels=question,Migration,Docs&template=Migration_docs.md) on GitHub to let us know.
+" %}
+
 ## Overview
 
 LoopBack 3 datasources are compatible with LoopBack 4 datasources, so migrating
@@ -45,7 +49,7 @@ steps:
    your LoopBack 4 application with the datasource configuration from
    `server/datasources.json` in your LoopBack 3 application.
 
-   {% include code-caption.html content="server/datasources.json" %}
+   For example, if your `server/datasources.json` file contains:
 
    ```json
    {
@@ -61,7 +65,8 @@ steps:
    }
    ```
 
-   {% include code-caption.html content="src/datasources/mysql-ds.datasource.config.json" %}
+   Move it to `src/datasources/mysql-ds.datasource.config.json`, so that it
+   looks as follows:
 
    ```json
    {

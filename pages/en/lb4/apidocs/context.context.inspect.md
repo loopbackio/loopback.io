@@ -3,6 +3,7 @@ lang: en
 title: 'API docs: context.context.inspect'
 keywords: LoopBack 4.0, LoopBack 4
 sidebar: lb4_sidebar
+editurl: https://github.com/strongloop/loopback-next/tree/master/packages/context
 permalink: /doc/en/lb4/apidocs.context.context.inspect.html
 ---
 
@@ -17,10 +18,17 @@ Inspect the context and dump out a JSON object representing the context hierarch
 <b>Signature:</b>
 
 ```typescript
-inspect(): object;
+inspect(options?: ContextInspectOptions): JSONObject;
 ```
+
+## Parameters
+
+|  Parameter | Type | Description |
+|  --- | --- | --- |
+|  options | <code>ContextInspectOptions</code> | Options for inspect |
+
 <b>Returns:</b>
 
-`object`
+`JSONObject`
 
 

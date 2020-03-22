@@ -3,6 +3,7 @@ lang: en
 title: 'API docs: rest.restserver.getapispec'
 keywords: LoopBack 4.0, LoopBack 4
 sidebar: lb4_sidebar
+editurl: https://github.com/strongloop/loopback-next/tree/master/packages/rest
 permalink: /doc/en/lb4/apidocs.rest.restserver.getapispec.html
 ---
 
@@ -21,7 +22,7 @@ If the optional `requestContext` is provided, then the `servers` list in the ret
 <b>Signature:</b>
 
 ```typescript
-getApiSpec(requestContext?: RequestContext): OpenApiSpec;
+getApiSpec(requestContext?: RequestContext): Promise<OpenApiSpec>;
 ```
 
 ## Parameters
@@ -32,6 +33,6 @@ getApiSpec(requestContext?: RequestContext): OpenApiSpec;
 
 <b>Returns:</b>
 
-`OpenApiSpec`
+`Promise<OpenApiSpec>`
 
 

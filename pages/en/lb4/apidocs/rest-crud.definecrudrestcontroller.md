@@ -3,6 +3,7 @@ lang: en
 title: 'API docs: rest-crud.definecrudrestcontroller'
 keywords: LoopBack 4.0, LoopBack 4
 sidebar: lb4_sidebar
+editurl: https://github.com/strongloop/loopback-next/tree/master/packages/rest-crud
 permalink: /doc/en/lb4/apidocs.rest-crud.definecrudrestcontroller.html
 ---
 
@@ -13,25 +14,6 @@ permalink: /doc/en/lb4/apidocs.rest-crud.definecrudrestcontroller.html
 ## defineCrudRestController() function
 
 Create (define) a CRUD Controller class for the given model.
-
-Example usage:
-
-```ts
-const ProductController = defineCrudRestController<
-Product,
-typeof Product.prototype.id,
-'id'
->(Product, {basePath: '/products'});
-
-inject('repositories.ProductRepository')(
- ProductController,
-  undefined,
-  0,
-);
-
-app.controller(ProductController);
-
-```
 
 <b>Signature:</b>
 
@@ -53,5 +35,25 @@ export declare function defineCrudRestController<T extends Entity, IdType, IdNam
 <b>Returns:</b>
 
 `CrudRestControllerCtor<T, IdType, IdName, Relations>`
+
+## Example
+
+
+```ts
+const ProductController = defineCrudRestController<
+Product,
+typeof Product.prototype.id,
+'id'
+>(Product, {basePath: '/products'});
+
+inject('repositories.ProductRepository')(
+ ProductController,
+  undefined,
+  0,
+);
+
+app.controller(ProductController);
+
+```
 
 

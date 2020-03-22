@@ -3,6 +3,7 @@ lang: en
 title: 'API docs: openapi-v3'
 keywords: LoopBack 4.0, LoopBack 4
 sidebar: lb4_sidebar
+editurl: https://github.com/strongloop/loopback-next/tree/master/packages/openapi-v3
 permalink: /doc/en/lb4/apidocs.openapi-v3.html
 ---
 
@@ -27,14 +28,16 @@ permalink: /doc/en/lb4/apidocs.openapi-v3.html
 |  [api(spec)](./openapi-v3.api.md) | Decorate the given Controller constructor with metadata describing the HTTP/REST API the Controller implements/provides.<code>@api</code> can be applied to controller classes. |
 |  [createEmptyApiSpec()](./openapi-v3.createemptyapispec.md) | Create an empty OpenApiSpec object that's still a valid openapi document. |
 |  [del(path, spec)](./openapi-v3.del.md) | Expose a Controller method as a REST API operation mapped to <code>DELETE</code> request method. |
+|  [deprecated(isDeprecated)](./openapi-v3.deprecated.md) | Marks an api path as deprecated. When applied to a class, this decorator marks all paths as deprecated.<!-- -->You can optionally mark all controllers in a class as deprecated, but use <code>@deprecated(false)</code> on a specific method to ensure it is not marked as deprecated in the specification. |
 |  [get(path, spec)](./openapi-v3.get.md) | Expose a Controller method as a REST API operation mapped to <code>GET</code> request method. |
 |  [getControllerSpec(constructor)](./openapi-v3.getcontrollerspec.md) | Get the controller spec for the given class |
-|  [getFilterSchemaFor(modelCtor)](./openapi-v3.getfilterschemafor.md) | Build an OpenAPI schema describing the format of the "filter" object used to query model instances.<!-- -->Note we don't take the model properties into account yet and return a generic json schema allowing any "where" condition. |
+|  [getFilterSchemaFor(modelCtor, options)](./openapi-v3.getfilterschemafor.md) | Build an OpenAPI schema describing the format of the "filter" object used to query model instances.<!-- -->Note we don't take the model properties into account yet and return a generic json schema allowing any "where" condition. |
 |  [getModelSchemaRef(modelCtor, options)](./openapi-v3.getmodelschemaref.md) | Describe the provided Model as a reference to a definition shared by multiple endpoints. The definition is included in the returned schema. |
 |  [getWhereSchemaFor(modelCtor)](./openapi-v3.getwhereschemafor.md) | Build a OpenAPI schema describing the format of the "where" object used to filter model instances to query, update or delete.<!-- -->Note we don't take the model properties into account yet and return a generic json schema allowing any "where" condition. |
 |  [jsonOrBooleanToJSON(jsonOrBool)](./openapi-v3.jsonorbooleantojson.md) | Helper function used to interpret boolean values as JSON Schemas. See http://json-schema.org/draft-06/json-schema-release-notes.html |
 |  [jsonToSchemaObject(json, visited)](./openapi-v3.jsontoschemaobject.md) | Converts JSON Schemas into a SchemaObject |
 |  [mergeOpenAPISpec(currentSpec, patchSpec)](./openapi-v3.mergeopenapispec.md) | The default merge function to patch the current OpenAPI spec. It leverages module <code>json-merge-patch</code>'s merge API to merge two json objects. It returns a new merged object without modifying the original one.<!-- -->A list of merging rules can be found in test file: https://github.com/pierreinglebert/json-merge-patch/blob/master/test/lib/merge.js |
+|  [mergeSecuritySchemeToSpec(spec, schemeName, schemeSpec)](./openapi-v3.mergesecurityschemetospec.md) | Security scheme merge helper function to patch the current OpenAPI spec. It provides a direct route to add a security schema to the specs components. It returns a new merged object without modifying the original one. |
 |  [operation(verb, path, spec)](./openapi-v3.operation.md) | Expose a Controller method as a REST API operation. |
 |  [param(paramSpec)](./openapi-v3.param.md) | Describe an input parameter of a Controller method.<code>@param</code> must be applied to parameters. |
 |  [patch(path, spec)](./openapi-v3.patch.md) | Expose a Controller method as a REST API operation mapped to <code>PATCH</code> request method. |
@@ -49,12 +52,15 @@ permalink: /doc/en/lb4/apidocs.openapi-v3.html
 |  [ControllerSpec](./openapi-v3.controllerspec.md) |  |
 |  [OASEnhancer](./openapi-v3.oasenhancer.md) | Typically an extension point defines an interface as the contract for extensions to implement |
 |  [OASEnhancerServiceOptions](./openapi-v3.oasenhancerserviceoptions.md) | Options for the OpenAPI Spec enhancer extension point |
+|  [ResponseDecoratorMetadataItem](./openapi-v3.responsedecoratormetadataitem.md) |  |
 |  [RestEndpoint](./openapi-v3.restendpoint.md) | Data structure for REST related metadata |
+|  [TagsDecoratorMetadata](./openapi-v3.tagsdecoratormetadata.md) |  |
 
 ## Namespaces
 
 |  Namespace | Description |
 |  --- | --- |
+|  [OASEnhancerBindings](./openapi-v3.oasenhancerbindings.md) |  |
 |  [param](./openapi-v3.param.md) | Namespace for <code>@param.*</code> decorators |
 |  [requestBody](./openapi-v3.requestbody.md) |  |
 
@@ -63,8 +69,7 @@ permalink: /doc/en/lb4/apidocs.openapi-v3.html
 |  Variable | Description |
 |  --- | --- |
 |  [asSpecEnhancer](./openapi-v3.asspecenhancer.md) | A binding template for spec contributor extensions |
-|  [OAS\_ENHANCER\_EXTENSION\_POINT\_NAME](./openapi-v3.oas_enhancer_extension_point_name.md) | Name/id of the OAS enhancer extension point |
-|  [OAS\_ENHANCER\_SERVICE](./openapi-v3.oas_enhancer_service.md) | Strongly-typed binding key for SpecService |
+|  [oas](./openapi-v3.oas.md) |  |
 |  [REQUEST\_BODY\_INDEX](./openapi-v3.request_body_index.md) |  |
 |  [TS\_TYPE\_KEY](./openapi-v3.ts_type_key.md) |  |
 
@@ -73,6 +78,8 @@ permalink: /doc/en/lb4/apidocs.openapi-v3.html
 |  Type Alias | Description |
 |  --- | --- |
 |  [OpenApiSpec](./openapi-v3.openapispec.md) |  |
+|  [ResponseDecoratorMetadata](./openapi-v3.responsedecoratormetadata.md) |  |
+|  [ResponseModelOrSpec](./openapi-v3.responsemodelorspec.md) |  |
 |  [SchemaRef](./openapi-v3.schemaref.md) | Custom LoopBack extension: a reference to Schema object that's bundled inside <code>definitions</code> property. |
 
 

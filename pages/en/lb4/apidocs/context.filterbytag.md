@@ -3,6 +3,7 @@ lang: en
 title: 'API docs: context.filterbytag'
 keywords: LoopBack 4.0, LoopBack 4
 sidebar: lb4_sidebar
+editurl: https://github.com/strongloop/loopback-next/tree/master/packages/context
 permalink: /doc/en/lb4/apidocs.context.filterbytag.html
 ---
 
@@ -17,7 +18,7 @@ Create a binding filter for the tag pattern
 <b>Signature:</b>
 
 ```typescript
-export declare function filterByTag(tagPattern: BindingTag | RegExp): BindingFilter;
+export declare function filterByTag(tagPattern: BindingTag | RegExp): BindingTagFilter;
 ```
 
 ## Parameters
@@ -28,6 +29,6 @@ export declare function filterByTag(tagPattern: BindingTag | RegExp): BindingFil
 
 <b>Returns:</b>
 
-`BindingFilter`
+`BindingTagFilter`
 
 

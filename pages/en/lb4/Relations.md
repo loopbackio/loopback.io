@@ -6,6 +6,9 @@ sidebar: lb4_sidebar
 permalink: /doc/en/lb4/Relations.html
 ---
 
+{% include note.html content="There are certain limitations to
+`Inclusion Resolver`. See [Limitations](Relations.md#limitations)." %}
+
 ## Overview
 
 Individual models are easy to understand and work with. But in reality, models
@@ -40,7 +43,7 @@ Here are the currently supported relations:
 
 - [HasMany](HasMany-relation.md)
 - [BelongsTo](BelongsTo-relation.md)
-- [HasOne](hasOne-relation.md)
+- [HasOne](HasOne-relation.md)
 
 {% include note.html content="
 The `hasMany` relation may alternatively be implemented using the
@@ -54,5 +57,24 @@ The articles on each type of relation above will show you how to leverage the
 new relation engine to define and configure relations in your LoopBack
 application.
 
-To generate a `HasMany` or `BelongsTo` relation through the CLI, see
+To generate a `HasMany`, `HasOne` or `BelongsTo` relation through the CLI, see
 [Relation generator](Relation-generator.md).
+
+## Limitations
+
+### Filtering by parent model
+
+[Where filters](https://loopback.io/doc/en/lb3/Where-filter.html) such as those
+used by model queries (`create()`, `find()`, `replaceById()`, and so on) cannot
+be used to filter a model by the value of its parent model. See its
+[GitHub issue](https://github.com/strongloop/loopback-next/issues/4299).
+
+### Splitting numbers of queries
+
+It doesn’t split numbers of queries. Related GH issue:
+[Support inq splitting](https://github.com/strongloop/loopback-next/issues/3444).
+
+### Handling of MongoDB `ObjectID` type
+
+It might not work well with ObjectID of MongoDB. Related GH issue:
+[Spike: robust handling of ObjectID type for MongoDB](https://github.com/strongloop/loopback-next/issues/3456).

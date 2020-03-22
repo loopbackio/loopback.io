@@ -3,6 +3,7 @@ lang: en
 title: 'API docs: repository.defaultcrudrepository'
 keywords: LoopBack 4.0, LoopBack 4
 sidebar: lb4_sidebar
+editurl: https://github.com/strongloop/loopback-next/tree/master/packages/repository
 permalink: /doc/en/lb4/apidocs.repository.defaultcrudrepository.html
 ---
 
@@ -48,6 +49,7 @@ export declare class DefaultCrudRepository<T extends Entity, ID, Relations exten
 |  [createBelongsToAccessorFor(relationName, targetRepoGetter)](./repository.defaultcrudrepository.createbelongstoaccessorfor.md) |  | Function to create a belongs to accessor |
 |  [createHasManyRepositoryFactoryFor(relationName, targetRepoGetter)](./repository.defaultcrudrepository.createhasmanyrepositoryfactoryfor.md) |  | Function to create a constrained relation repository factory |
 |  [createHasOneRepositoryFactoryFor(relationName, targetRepoGetter)](./repository.defaultcrudrepository.createhasonerepositoryfactoryfor.md) |  | Function to create a constrained hasOne relation repository factory |
+|  [definePersistedModel(entityClass)](./repository.defaultcrudrepository.definepersistedmodel.md) |  | Creates a legacy persisted model class, attaches it to the datasource and returns it. This method can be overriden in sub-classes to acess methods and properties in the generated model class. |
 |  [delete(entity, options)](./repository.defaultcrudrepository.delete.md) |  |  |
 |  [deleteAll(where, options)](./repository.defaultcrudrepository.deleteall.md) |  |  |
 |  [deleteById(id, options)](./repository.defaultcrudrepository.deletebyid.md) |  |  |

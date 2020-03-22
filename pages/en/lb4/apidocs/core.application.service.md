@@ -3,6 +3,7 @@ lang: en
 title: 'API docs: core.application.service'
 keywords: LoopBack 4.0, LoopBack 4
 sidebar: lb4_sidebar
+editurl: https://github.com/strongloop/loopback-next/tree/master/packages/core
 permalink: /doc/en/lb4/apidocs.core.application.service.html
 ---
 
@@ -44,7 +45,7 @@ export class LogService {
 }
 
 // Define a class to be bound via ctx.toProvider()
-const uuidv4 = require('uuid/v4');
+import {v4 as uuidv4} from 'uuid';
 export class UuidProvider implements Provider<string> {
   value() {
     return uuidv4();

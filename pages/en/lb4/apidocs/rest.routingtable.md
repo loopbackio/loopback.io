@@ -3,6 +3,7 @@ lang: en
 title: 'API docs: rest.routingtable'
 keywords: LoopBack 4.0, LoopBack 4
 sidebar: lb4_sidebar
+editurl: https://github.com/strongloop/loopback-next/tree/master/packages/rest
 permalink: /doc/en/lb4/apidocs.rest.routingtable.html
 ---
 
@@ -32,7 +33,6 @@ export declare class RoutingTable
 |  --- | --- | --- |
 |  [describeApiPaths()](./rest.routingtable.describeapipaths.md) |  |  |
 |  [find(request)](./rest.routingtable.find.md) |  | Map a request to a route |
-|  [joinPath(basePath, path)](./rest.routingtable.joinpath.md) | <code>static</code> |  |
 |  [registerController(spec, controllerCtor, controllerFactory)](./rest.routingtable.registercontroller.md) |  | Register a controller as the route |
 |  [registerRoute(route)](./rest.routingtable.registerroute.md) |  | Register a route |
 

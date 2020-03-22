@@ -3,6 +3,7 @@ lang: en
 title: 'API docs: authentication'
 keywords: LoopBack 4.0, LoopBack 4
 sidebar: lb4_sidebar
+editurl: https://github.com/strongloop/loopback-next/tree/master/packages/authentication
 permalink: /doc/en/lb4/apidocs.authentication.html
 ---
 
@@ -54,6 +55,7 @@ permalink: /doc/en/lb4/apidocs.authentication.html
 
 |  Variable | Description |
 |  --- | --- |
+|  [asAuthStrategy](./authentication.asauthstrategy.md) | A binding template for auth strategy contributor extensions |
 |  [AUTHENTICATION\_METADATA\_CLASS\_KEY](./authentication.authentication_metadata_class_key.md) | The key used to store class-level metadata for <code>@authenticate</code> |
 |  [AUTHENTICATION\_METADATA\_KEY](./authentication.authentication_metadata_key.md) | Alias for AUTHENTICATION\_METADATA\_METHOD\_KEY to keep it backward compatible |
 |  [AUTHENTICATION\_METADATA\_METHOD\_KEY](./authentication.authentication_metadata_method_key.md) | The key used to store method-level metadata for <code>@authenticate</code> |

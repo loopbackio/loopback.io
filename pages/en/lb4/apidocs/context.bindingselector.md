@@ -3,6 +3,7 @@ lang: en
 title: 'API docs: context.bindingselector'
 keywords: LoopBack 4.0, LoopBack 4
 sidebar: lb4_sidebar
+editurl: https://github.com/strongloop/loopback-next/tree/master/packages/context
 permalink: /doc/en/lb4/apidocs.context.bindingselector.html
 ---
 
@@ -17,6 +18,6 @@ Select binding(s) by key or a filter function
 <b>Signature:</b>
 
 ```typescript
-export declare type BindingSelector<ValueType = unknown> = BindingAddress<ValueType> | BindingFilter<ValueType>;
+export declare type BindingSelector<ValueType = unknown> = BindingAddress<ValueType> | BindingFilter;
 ```
 

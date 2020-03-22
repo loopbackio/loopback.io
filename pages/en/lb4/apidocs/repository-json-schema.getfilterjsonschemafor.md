@@ -3,6 +3,7 @@ lang: en
 title: 'API docs: repository-json-schema.getfilterjsonschemafor'
 keywords: LoopBack 4.0, LoopBack 4
 sidebar: lb4_sidebar
+editurl: https://github.com/strongloop/loopback-next/tree/master/packages/repository-json-schema
 permalink: /doc/en/lb4/apidocs.repository-json-schema.getfilterjsonschemafor.html
 ---
 
@@ -19,7 +20,7 @@ Note we don't take the model properties into account yet and return a generic js
 <b>Signature:</b>
 
 ```typescript
-export declare function getFilterJsonSchemaFor(modelCtor: typeof Model): JsonSchema;
+export declare function getFilterJsonSchemaFor(modelCtor: typeof Model, options?: FilterSchemaOptions): JsonSchema;
 ```
 
 ## Parameters
@@ -27,6 +28,7 @@ export declare function getFilterJsonSchemaFor(modelCtor: typeof Model): JsonSch
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  modelCtor | <code>typeof Model</code> | The model constructor to build the filter schema for. |
+|  options | <code>FilterSchemaOptions</code> | Options to build the filter schema. |
 
 <b>Returns:</b>
 

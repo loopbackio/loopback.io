@@ -3,6 +3,7 @@ lang: en
 title: 'API docs: context.isbindingaddress'
 keywords: LoopBack 4.0, LoopBack 4
 sidebar: lb4_sidebar
+editurl: https://github.com/strongloop/loopback-next/tree/master/packages/context
 permalink: /doc/en/lb4/apidocs.context.isbindingaddress.html
 ---
 
@@ -24,7 +25,7 @@ export declare function isBindingAddress(bindingSelector: BindingSelector): bind
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  bindingSelector | <code>BindingSelector</code> |  |
+|  bindingSelector | <code>BindingSelector</code> | Binding key or filter function |
 
 <b>Returns:</b>
 

@@ -3,6 +3,7 @@ lang: en
 title: 'API docs: rest.restbindings.http.response'
 keywords: LoopBack 4.0, LoopBack 4
 sidebar: lb4_sidebar
+editurl: https://github.com/strongloop/loopback-next/tree/master/packages/rest
 permalink: /doc/en/lb4/apidocs.rest.restbindings.http.response.html
 ---
 
@@ -17,6 +18,6 @@ Binding key for setting and injecting the http response
 <b>Signature:</b>
 
 ```typescript
-RESPONSE: BindingKey<Response>
+RESPONSE: BindingKey<Response<any>>
 ```
 

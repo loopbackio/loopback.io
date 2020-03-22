@@ -1,6 +1,7 @@
 ---
 title: インストール
 lang: ja
+layout: translation
 keywords: LoopBack
 tags: [installation]
 sidebar: ja_lb3_sidebar

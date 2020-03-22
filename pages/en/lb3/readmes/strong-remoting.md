@@ -1,12 +1,12 @@
 # strong-remoting
 
-**This module is in Active LTS mode, new features are no longer accepted.**
-<br/>(See [Module Long Term Support Policy](#module-long-term-support-policy)
-below.)
+**⚠️ LoopBack 3 is in Maintenance LTS mode, only critical bugs and critical
+security fixes will be provided. (See
+[Module Long Term Support Policy](#module-long-term-support-policy) below.)**
 
-LoopBack 3 users looking for new features are encouraged to upgrade
-to LoopBack 4. Refer to
-[loopback-next#1849](https://github.com/strongloop/loopback-next/issues/1849)
+We urge all LoopBack 3 users to migrate their applications to LoopBack 4 as
+soon as possible. Refer to our
+[Migration Guide](https://loopback.io/doc/en/lb4/migration-overview.html)
 for more information on how to upgrade.
 
 If you are building directly on top of strong-remoting without LoopBack,
@@ -35,7 +35,7 @@ This module adopts the [Module Long Term Support (LTS)](http://github.com/CloudN
 
 | Version           | Status          | Published | EOL      |
 | ----------------- | --------------- | --------- | -------- |
-| strong-remoting@3 | Active LTS      | Dec 2016  | Dec 2019 |
+| strong-remoting@3 | Maintenance LTS | Dec 2016  | Dec 2020 |
 | strong-remoting@2 | End-of-Life     | Jul 2014  | Apr 2019 |
 
 Learn more about our LTS plan in [docs](https://loopback.io/doc/en/contrib/Long-term-support.html).

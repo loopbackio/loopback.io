@@ -3,6 +3,7 @@ lang: en
 title: 'API docs: rest'
 keywords: LoopBack 4.0, LoopBack 4
 sidebar: lb4_sidebar
+editurl: https://github.com/strongloop/loopback-next/tree/master/packages/rest
 permalink: /doc/en/lb4/apidocs.rest.html
 ---
 
@@ -59,7 +60,9 @@ permalink: /doc/en/lb4/apidocs.rest.html
 |  [createControllerFactoryForClass(controllerCtor)](./rest.createcontrollerfactoryforclass.md) | Create a controller factory function for a given class |
 |  [createControllerFactoryForInstance(controllerInst)](./rest.createcontrollerfactoryforinstance.md) | Create a controller factory function for a given instance |
 |  [createResolvedRoute(route, pathParams)](./rest.createresolvedroute.md) |  |
+|  [createRoutesForController(spec, controllerCtor, controllerFactory)](./rest.createroutesforcontroller.md) | Create routes for a controller with the given spec |
 |  [getPathVariables(path)](./rest.getpathvariables.md) | Get all path variables. For example, <code>/root/{foo}/bar</code> =<!-- -->&gt; <code>['foo']</code> |
+|  [joinPath(basePath, path)](./rest.joinpath.md) |  |
 |  [parseJson(text, reviver)](./rest.parsejson.md) |  |
 |  [parseOperationArgs(request, route, requestBodyParser, options)](./rest.parseoperationargs.md) | Parses the request to derive arguments to be passed in for the Application controller method |
 |  [rebaseOpenApiSpec(spec, basePath)](./rest.rebaseopenapispec.md) |  |
@@ -95,6 +98,7 @@ permalink: /doc/en/lb4/apidocs.rest.html
 |  --- | --- |
 |  [RestBindings](./rest.restbindings.md) | RestServer-specific bindings |
 |  [RestHttpErrors](./rest.resthttperrors.md) |  |
+|  [RestTags](./rest.resttags.md) | Binding tags for RestServer |
 
 ## Variables
 
@@ -108,6 +112,7 @@ permalink: /doc/en/lb4/apidocs.rest.html
 
 |  Type Alias | Description |
 |  --- | --- |
+|  [AjvErrorOptions](./rest.ajverroroptions.md) | Options for AJV errors |
 |  [BindElement](./rest.bindelement.md) |  |
 |  [BodyParserFunction](./rest.bodyparserfunction.md) | Plain function for body parsing |
 |  [ControllerClass](./rest.controllerclass.md) | Controller class |

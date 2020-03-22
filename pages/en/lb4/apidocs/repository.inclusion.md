@@ -3,6 +3,7 @@ lang: en
 title: 'API docs: repository.inclusion'
 keywords: LoopBack 4.0, LoopBack 4
 sidebar: lb4_sidebar
+editurl: https://github.com/strongloop/loopback-next/tree/master/packages/repository
 permalink: /doc/en/lb4/apidocs.repository.inclusion.html
 ---
 
@@ -21,7 +22,7 @@ Example: `{relation: 'aRelationName', scope: {<AFilterObject>}}`
 <b>Signature:</b>
 
 ```typescript
-export interface Inclusion<MT extends object = AnyObject> 
+export interface Inclusion 
 ```
 
 ## Properties

@@ -15,8 +15,8 @@ summary: The model JSON file declaratively defines a LoopBack model.  It's in ei
 The LoopBack [model generator](Model-generator.html) creates a model JSON file for each model in either the `server/models`
 or the `common/models` directory (depending on whether the model is server-only or
 defined on both server and client).
-The file is named <code><i>model-name</i>.json</code>, where _`model-name`_ is the model name; for example, `customer.json`.
-The model JSON file defines models, relations between models, and access to models. 
+The file is named <code><i>model-name</i>.json</code>, where *`model-name`* is the model name; for example, `customer.json`.
+The model JSON file defines models, relations between models, and access to models.
 
 {% include note.html content="
 The LoopBack [model generator](Model-generator.html) automatically converts camel-case model names (for example MyModel)
@@ -27,6 +27,7 @@ However, the model name (\"FooBar\") will be preserved via the model's name prop
 For example, here is an excerpt from a model definition file for a customer model that would be in `/common/models/customer.json`:
 
 {% include code-caption.html content="customer.json" %}
+
 ```javascript
 {
   "name": "Customer",  // See Top-level properties below
@@ -92,9 +93,11 @@ Properties are required unless otherwise designated.
         Optional description of the model.<br/><br/>
         You can split long descriptions into arrays of strings (lines) to keep line lengths manageable; for example:
         <pre style="font-size: 75%;">[ "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-  "sed do eiusmod tempor incididunt ut labore et dolore",<br>  "magna aliqua." ] </pre>
-      </td>
-    </tr>
+
+"sed do eiusmod tempor incididunt ut labore et dolore",<br> "magna aliqua." ] </pre>
+
+</td>
+</tr>
 
     <tr>
       <td>excludeBaseProperties</td>
@@ -227,6 +230,7 @@ Properties are required unless otherwise designated.
       <td>N/A</td>
       <td>See <a href="#scopes">Scopes</a> below.</td>
     </tr>
+
   </tbody>
 </table>
 
@@ -261,13 +265,12 @@ The `options` key specifies advanced options, for example data source-specific o
   </tbody>
 </table>
 
-
 ### Data source-specific options
 
 When a model is attached a data source of certain type such as Oracle or MySQL,
 you can specify the name of the database schema and table as properties under the key with the name of the connector type.
 The value of this key must match the value of the corresponding `connector` property in [datasources.json](datasources.json.html).
-For example, in the snippet below, there would be an entry in `datasources.json` like this:  `"myDB": { "name": "myDB",  "connector": "mysql", ... }`.
+For example, in the snippet below, there would be an entry in `datasources.json` like this:  `"myDB": { "name": "myDB", "connector": "mysql", ... }`.
 
 ```javascript
 ...
@@ -308,7 +311,6 @@ The properties key defines one or more  properties, each of which is an object 
 ### General property properties
 
 Each model property can have the properties described in the following table. Only the `type` property is required; for properties with only a `type`, you can use the following shorthand:
-
 
 ```javascript
 "propertyName": "type"
@@ -405,6 +407,14 @@ For example:
       </td>
     </tr>
     <tr>
+      <td>generated</td>
+      <td>No</td>
+      <td>Boolean</td>
+      <td>
+        <strong>For auto-migrate usage. Only applicable for the id property</strong>. When it sets to <code>true</code>, the value of the property will be generated automatically with the default property type of the database. (e.g integer for MySQL and string for MongoDB)
+      </td>
+    </tr>
+    <tr>
       <td>index</td>
       <td>No</td>
       <td>Boolean</td>
@@ -429,6 +439,18 @@ For example:
       </td>
       <td>
         Property type. Can be any type described in <a href="LoopBack-types.html">LoopBack types</a>.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        useDefaultIdType
+      </td>
+      <td>No</td>
+      <td>
+        Boolean
+      </td>
+      <td>
+        <strong>For auto-migrate usage</strong>. Set it to <code>false</code> when it's needed to auto-generate non-default type property values. For example, to use <code>uuid</code> as the id property, the id <code>type</code> should set to string, <code>generated</code> should be set to true, and this field should be set to false. Please check each connector's <code>README</code> file for more information about auto-migration/auto-update.
       </td>
     </tr>
     <tr>
@@ -458,9 +480,9 @@ If your application generates unique IDs, set it to false.
 
 To explicitly specify a property as ID, set the `id` property of the option to `true`. The `id` property value must be one of:
 
-* `true`: the property is an ID.
-* `false` (or any value that converts to false): the property is not an ID (default).
-* Positive number, such as 1 or 2: the property is the index of a composite ID.
+- `true`: the property is an ID.
+- `false` (or any value that converts to false): the property is not an ID (default).
+- Positive number, such as 1 or 2: the property is the index of a composite ID.
 
 In database terms, ID properties are primary key column(s). Such properties are defined with the 'id' attribute set to true or a number as the position for a composite key.
 
@@ -487,11 +509,11 @@ Then:
 LoopBack supports the definition of a composite ID that has more than one property. For example:
 
 ```javascript
-var InventoryDefinition = { 
-  productId: {type: String, id: 1}, 
-  locationId: {type: String, id: 2}, 
-  qty: Number 
-}
+var InventoryDefinition = {
+  productId: { type: String, id: 1 },
+  locationId: { type: String, id: 2 },
+  qty: Number
+};
 ```
 
 The composite ID is (productId, locationId) for an inventory model.
@@ -605,6 +627,7 @@ By default, a model inherits all properties from the base. To exclude some base 
 
 For example,
 {% include code-caption.html content="common/models/customer.json" %}
+
 ```javascript
 ... 
 "base": "User",
@@ -614,6 +637,7 @@ For example,
 }
 ...
 ```
+
 Another example,
 
 Excludes 'id' property from the base model, "Model"
@@ -631,6 +655,7 @@ Excludes 'id' property from the base model, "Model"
 Below way of excluding base properties by setting the base property to 'null' or 'false' is not recommended. Instead, use `excludeBaseProperties` as shown above.
 
 {% include code-caption.html content="common/models/customer.json" %}
+
 ```javascript
 ... 
 "base": "User",
@@ -651,6 +676,7 @@ The property value is an array of strings, and each string in the array must mat
 An example of a hidden property is `User.password`:
 
 {% include code-caption.html content="common/models/user.json" %}
+
 ```javascript
 {
   ...
@@ -669,10 +695,10 @@ An example of a hidden property is `User.password`:
 
 If you want to white-list the fields returned instead of black-listing them, consider:
 
-* Applying the `fields` of the model's default`scope`.
+- Applying the `fields` of the model's default`scope`.
   This will operate at the database response layer so limiting your ability to check a field in the database that
   you otherwise would not wish exposed to the outside world (a private flag, for example).
-* Overriding your model's `toJSON` method
+- Overriding your model's `toJSON` method
 
 See discussion of white-listing on [GitHub](https://github.com/strongloop/loopback/issues/1554).
 
@@ -689,6 +715,7 @@ The Author model has personal information (such as social security number) which
 An example configuring `email` as a protected property:
 
 {% include code-caption.html content="common/models/user.json" %}
+
 ```javascript
 {
   ...
@@ -712,14 +739,14 @@ An example configuring `email` as a protected property:
 
 Specify constraints on data with `validations` properties. See also [Validatable class](http://apidocs.loopback.io/loopback-datasource-juggler/#validatable).
 
-| Key | Type | Description |
-|---|---|---|
-| default | Any | Default value of the property. |
-| required | Boolean | Whether the property is required. |
-| pattern | String | Regular expression pattern that a string should match |
-| max | Number| Maximum length for string types. |
-| min | Number | Minimum length for string types.  |
-| length | Number | Maximum size of a specific type, for example for CHAR types. |
+| Key      | Type    | Description                                                  |
+| -------- | ------- | ------------------------------------------------------------ |
+| default  | Any     | Default value of the property.                               |
+| required | Boolean | Whether the property is required.                            |
+| pattern  | String  | Regular expression pattern that a string should match        |
+| max      | Number  | Maximum length for string types.                             |
+| min      | Number  | Minimum length for string types.                             |
+| length   | Number  | Maximum size of a specific type, for example for CHAR types. |
 
 For example:
 
@@ -938,9 +965,9 @@ The value of the `acls` key is an array of objects that describes the access 
 
 ## Scopes
 
-_Scopes_ enable you to specify commonly-used queries that you can reference as method calls on a model.
+*Scopes* enable you to specify commonly-used queries that you can reference as method calls on a model.
 
-The `scopes `key defines one or more scopes (named queries) for models.
+The `scopes`key defines one or more scopes (named queries) for models.
 A scope maps a name to a predefined filter object to be used by the model's `find()` method; for example:
 
 ```javascript
@@ -952,16 +979,16 @@ A scope maps a name to a predefined filter object to be used by the model's `fi
 
 The snippet above defines two named queries for the model:
 
-* vips: Find all model instances with vip flag set to true
-* top5: Find top five model instances ordered by age
+- vips: Find all model instances with vip flag set to true
+- top5: Find top five model instances ordered by age
 
 Within the scopes object, the keys are the names, and each value defines a filter object for [PersistedModel.find()](http://apidocs.loopback.io/loopback/#persistedmodel-find).
 
 You can also define a scope programmatically using a model's `scope()` method, for example:
 
 ```javascript
-User.scope('vips', {where: {vip: true}});
-User.scope('top5', {limit: 5, order: 'age'});
+User.scope("vips", { where: { vip: true } });
+User.scope("top5", { limit: 5, order: "age" });
 ```
 
 Now you can call the methods defined by the scopes; for example:
@@ -997,13 +1024,16 @@ For example:
 Now, any CRUD operation with a query parameter runs in the default scope will be applied; for example, assuming the above scope, a find operation such as
 
 ```javascript
-Product.find({offset: 0}, cb);
+Product.find({ offset: 0 }, cb);
 ```
 
 Becomes the equivalent of this:
 
 ```javascript
-Product.find({order: "name", offset: 0, limit: 100, where: {deleted: false}}, cb)
+Product.find(
+  { order: "name", offset: 0, limit: 100, where: { deleted: false } },
+  cb
+);
 ```
 
 ### Default scopes with where filters
@@ -1033,6 +1063,7 @@ var defaultScope = Report.defaultScope;
 
 The `methods` key defines [remote methods](Remote-methods.html) for the model.
 Its value is an object with a string key for each remote method name:
+
 - Instance method names must start with `prototype.`.
 - Static method names can be any [legal name](Valid-names-in-LoopBack.html).
 
@@ -1068,7 +1099,7 @@ and an instance method called "getProfile".
 
 ### Remote method options
 
-You specify remote method options when you register a remote method, either as an argument to the `Model.remoteMethod()` method if you [register it in code](Remote-methods.html#registering-a-remote-method), or in the `methods` key if you register it in JSON.  Either way, it's a JavaScript object with the same set of properties.
+You specify remote method options when you register a remote method, either as an argument to the `Model.remoteMethod()` method if you [register it in code](Remote-methods.html#registering-a-remote-method), or in the `methods` key if you register it in JSON. Either way, it's a JavaScript object with the same set of properties.
 
 {% include content/rm-options.md %}
 
@@ -1094,8 +1125,8 @@ Declare indexes for a model with the `indexes` property, for example:
 
 The snippet above creates two indexes for the declaring model:
 
-* A composite index named `name_age_index` with two keys: `name` in ascending order and `age` in descending order.
-* A simple index named `age_index` with one key: `age` in descending order.
+- A composite index named `name_age_index` with two keys: `name` in ascending order and `age` in descending order.
+- A simple index named `age_index` with one key: `age` in descending order.
 
 The full syntax for an individual index is:
 

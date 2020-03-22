@@ -1,5 +1,7 @@
 # Angular Live Set: Example
 
+**⚠️ This LoopBack 3 example project is no longer maintained. Please refer to [LoopBack 4 Examples](https://loopback.io/doc/en/lb4/Examples.html) instead. ⚠️**
+
 ## What is LiveSet?
 
 [LiveSet](https://github.com/strongloop/angular-live-set) is an angular module that allows you to display an always up to date collection of objects.

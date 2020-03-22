@@ -3,6 +3,7 @@ lang: en
 title: 'API docs: boot.repositorybooter.repositoryoptions'
 keywords: LoopBack 4.0, LoopBack 4
 sidebar: lb4_sidebar
+editurl: https://github.com/strongloop/loopback-next/tree/master/packages/boot
 permalink: /doc/en/lb4/apidocs.boot.repositorybooter.repositoryoptions.html
 ---
 

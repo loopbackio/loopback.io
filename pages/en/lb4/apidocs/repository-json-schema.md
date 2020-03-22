@@ -3,6 +3,7 @@ lang: en
 title: 'API docs: repository-json-schema'
 keywords: LoopBack 4.0, LoopBack 4
 sidebar: lb4_sidebar
+editurl: https://github.com/strongloop/loopback-next/tree/master/packages/repository-json-schema
 permalink: /doc/en/lb4/apidocs.repository-json-schema.html
 ---
 
@@ -14,22 +15,17 @@ permalink: /doc/en/lb4/apidocs.repository-json-schema.html
 
 [@loopback/repository-json-schema](https://github.com/strongloop/loopback-next/tree/master/packages/repository-json-schema)
 
-## Enumerations
-
-|  Enumeration | Description |
-|  --- | --- |
-|  [MODEL\_TYPE\_KEYS](./repository-json-schema.model_type_keys.md) | TODO(semver-major) remove these constants in the next major version |
-
 ## Functions
 
 |  Function | Description |
 |  --- | --- |
-|  [getFieldsJsonSchemaFor(modelCtor)](./repository-json-schema.getfieldsjsonschemafor.md) | Build a JSON schema describing the format of the "fields" object used to include or exclude properties of model instances. |
-|  [getFilterJsonSchemaFor(modelCtor)](./repository-json-schema.getfilterjsonschemafor.md) | Build a JSON schema describing the format of the "filter" object used to query model instances.<!-- -->Note we don't take the model properties into account yet and return a generic json schema allowing any "where" condition. |
+|  [getFieldsJsonSchemaFor(modelCtor, options)](./repository-json-schema.getfieldsjsonschemafor.md) | Build a JSON schema describing the format of the "fields" object used to include or exclude properties of model instances. |
+|  [getFilterJsonSchemaFor(modelCtor, options)](./repository-json-schema.getfilterjsonschemafor.md) | Build a JSON schema describing the format of the "filter" object used to query model instances.<!-- -->Note we don't take the model properties into account yet and return a generic json schema allowing any "where" condition. |
 |  [getJsonSchema(ctor, options)](./repository-json-schema.getjsonschema.md) | Gets the JSON Schema of a TypeScript model/class by seeing if one exists in a cache. If not, one is generated and then cached. |
 |  [getJsonSchemaRef(modelCtor, options)](./repository-json-schema.getjsonschemaref.md) | Describe the provided Model as a reference to a definition shared by multiple endpoints. The definition is included in the returned schema. |
 |  [getNavigationalPropertyForRelation(relMeta, targetRef)](./repository-json-schema.getnavigationalpropertyforrelation.md) | Checks and return navigational property definition for the relation |
-|  [getWhereJsonSchemaFor(modelCtor)](./repository-json-schema.getwherejsonschemafor.md) | Build a JSON schema describing the format of the "where" object used to filter model instances to query, update or delete.<!-- -->Note we don't take the model properties into account yet and return a generic json schema allowing any "where" condition. |
+|  [getScopeFilterJsonSchemaFor(modelCtor, options)](./repository-json-schema.getscopefilterjsonschemafor.md) | Build a JSON schema describing the format of the "scope" object used to query model instances.<!-- -->Note we don't take the model properties into account yet and return a generic json schema allowing any "where" condition. |
+|  [getWhereJsonSchemaFor(modelCtor, options)](./repository-json-schema.getwherejsonschemafor.md) | Build a JSON schema describing the format of the "where" object used to filter model instances to query, update or delete.<!-- -->Note we don't take the model properties into account yet and return a generic json schema allowing any "where" condition. |
 |  [isArrayType(type)](./repository-json-schema.isarraytype.md) | Determines whether a given string or constructor is array type or not |
 |  [metaToJsonProperty(meta)](./repository-json-schema.metatojsonproperty.md) | Converts property metadata into a JSON property definition |
 |  [modelToJsonSchema(ctor, jsonSchemaOptions)](./repository-json-schema.modeltojsonschema.md) | Converts a TypeScript class into a JSON Schema using TypeScript's reflection API |
@@ -39,6 +35,7 @@ permalink: /doc/en/lb4/apidocs.repository-json-schema.html
 
 |  Interface | Description |
 |  --- | --- |
+|  [FilterSchemaOptions](./repository-json-schema.filterschemaoptions.md) |  |
 |  [JsonSchemaOptions](./repository-json-schema.jsonschemaoptions.md) |  |
 
 ## Variables

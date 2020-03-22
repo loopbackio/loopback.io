@@ -3,6 +3,7 @@ lang: en
 title: 'API docs: metadata'
 keywords: LoopBack 4.0, LoopBack 4
 sidebar: lb4_sidebar
+editurl: https://github.com/strongloop/loopback-next/tree/master/packages/metadata
 permalink: /doc/en/lb4/apidocs.metadata.html
 ---
 
@@ -23,6 +24,17 @@ permalink: /doc/en/lb4/apidocs.metadata.html
 |  [MetadataAccessor](./metadata.metadataaccessor.md) | A strongly-typed metadata accessor via reflection |
 |  [MetadataInspector](./metadata.metadatainspector.md) | Inspector for metadata applied by decorators |
 |  [MethodDecoratorFactory](./metadata.methoddecoratorfactory.md) | Factory for method decorators |
+|  [MethodMultiDecoratorFactory](./metadata.methodmultidecoratorfactory.md) | Factory for an append-array of method-level decorators The  metadata for a method is an array. Each item in the array should be a single value, containing a response code and a single spec or Model. This should allow:
+```ts
+ @response(200, MyFirstModel)
+ @response(403, [NotAuthorizedReasonOne, NotAuthorizedReasonTwo])
+ @response(404, NotFoundOne)
+ @response(404, NotFoundTwo)
+ @response(409, {schema: {}})
+ public async myMethod() {}
+
+```
+In the case that a ResponseObject is passed, it becomes the default for description/content, and if possible, further Models are incorporated as a <code>oneOf: []</code> array.<!-- -->In the case that a ReferenceObject is passed, it and it alone is used, since references can be external and we cannot <code>oneOf</code> their content.<!-- -->The factory creates and updates an array of items T\[\], and the getter provides the values as that array. |
 |  [MethodParameterDecoratorFactory](./metadata.methodparameterdecoratorfactory.md) | Factory for method level parameter decorator. |
 |  [NamespacedReflect](./metadata.namespacedreflect.md) |  |
 |  [ParameterDecoratorFactory](./metadata.parameterdecoratorfactory.md) | Factory for parameter decorators |

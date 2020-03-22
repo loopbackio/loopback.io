@@ -3,6 +3,7 @@ lang: en
 title: 'API docs: repository.relationdefinitionbase.targetsmany'
 keywords: LoopBack 4.0, LoopBack 4
 sidebar: lb4_sidebar
+editurl: https://github.com/strongloop/loopback-next/tree/master/packages/repository
 permalink: /doc/en/lb4/apidocs.repository.relationdefinitionbase.targetsmany.html
 ---
 
@@ -17,6 +18,6 @@ True for relations targeting multiple instances (e.g. HasMany), false for relati
 <b>Signature:</b>
 
 ```typescript
-targetsMany?: boolean;
+targetsMany: boolean;
 ```
 

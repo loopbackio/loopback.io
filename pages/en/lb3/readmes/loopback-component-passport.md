@@ -1,6 +1,15 @@
 # loopback-component-passport
 
-**NOTE: This module supersedes [loopback-passport](https://www.npmjs.org/package/loopback-passport). Please update your package.json accordingly.**
+**⚠️ LoopBack 3 is in Maintenance LTS mode, only critical bugs and critical
+security fixes will be provided. (See
+[Module Long Term Support Policy](#module-long-term-support-policy) below.)**
+
+We urge all LoopBack 3 users to migrate their applications to LoopBack 4 as
+soon as possible. Refer to our
+[Migration Guide](https://loopback.io/doc/en/lb4/migration-overview.html)
+for more information on how to upgrade.
+
+## Overview
 
 The module provides integration between [LoopBack](http://loopback.io) and
 [Passport](http://passportjs.org) to support third-party login and account
@@ -20,3 +29,15 @@ Facebook profile information (such as email, gender, timezone, etc) may still be
 https://github.com/strongloop/loopback-example-passport/blob/master/README.md#4-facebook-profile-info.
 
 All user required info including the email will be available, but the main email for the account will remain `uniqueID@loopback.facebook.com`.
+
+## Module Long Term Support Policy
+
+This module adopts the [
+Module Long Term Support (LTS)](http://github.com/CloudNativeJS/ModuleLTS) policy,
+ with the following End Of Life (EOL) dates:
+
+| Version | Status          | Published | EOL      |
+| ------- | --------------- | --------- | -------- |
+| 3.x     | Maintenance LTS | Dec 2016  | Dec 2020 |
+
+Learn more about our LTS plan in [docs](https://loopback.io/doc/en/contrib/Long-term-support.html).

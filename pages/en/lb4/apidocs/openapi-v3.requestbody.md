@@ -3,6 +3,7 @@ lang: en
 title: 'API docs: openapi-v3.requestbody'
 keywords: LoopBack 4.0, LoopBack 4
 sidebar: lb4_sidebar
+editurl: https://github.com/strongloop/loopback-next/tree/master/packages/openapi-v3
 permalink: /doc/en/lb4/apidocs.openapi-v3.requestbody.html
 ---
 
@@ -23,5 +24,6 @@ export declare namespace requestBody
 |  Variable | Description |
 |  --- | --- |
 |  [array](./openapi-v3.requestbody.array.md) | Define a requestBody of <code>array</code> type. |
+|  [file](./openapi-v3.requestbody.file.md) | Define a requestBody of <code>file</code> type. This is used to support multipart/form-data based file upload. Use <code>@requestBody</code> for other content types.[OpenAPI file upload](https://swagger.io/docs/specification/describing-request-body/file-upload) |
 
 

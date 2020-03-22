@@ -3,6 +3,7 @@ lang: en
 title: 'API docs: repository.filterbuilder.include'
 keywords: LoopBack 4.0, LoopBack 4
 sidebar: lb4_sidebar
+editurl: https://github.com/strongloop/loopback-next/tree/master/packages/repository
 permalink: /doc/en/lb4/apidocs.repository.filterbuilder.include.html
 ---
 
@@ -17,14 +18,14 @@ Declare `include`
 <b>Signature:</b>
 
 ```typescript
-include(...i: (string | string[] | Inclusion<MT>)[]): this;
+include(...i: (string | string[] | Inclusion)[]): this;
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  i | <code>(string &#124; string[] &#124; Inclusion&lt;MT&gt;)[]</code> | A relation name, an array of relation names, or an <code>Inclusion</code> object for the relation/scope definitions |
+|  i | <code>(string &#124; string[] &#124; Inclusion)[]</code> | A relation name, an array of relation names, or an <code>Inclusion</code> object for the relation/scope definitions |
 
 <b>Returns:</b>
 

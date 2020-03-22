@@ -15,6 +15,8 @@ Using this relation with NoSQL databases will result in unexpected behavior,
 such as the ability to create a relation with a model that does not exist. We are [working on a solution](https://github.com/strongloop/loopback-next/issues/2341) to better handle this. It is fine to use this relation with NoSQL databases for purposes such as navigating related models, where the referential integrity is not critical.
 " %}
 
+{% include note.html content="There are some limitations to `Inclusion Resolver`. See [Limitations](Relations.md#limitations)." %}
+
 A `hasMany` relation denotes a one-to-many connection of a model to another
 model through referential integrity. The referential integrity is enforced by a
 foreign key constraint on the target model which usually references a primary
@@ -80,7 +82,7 @@ decorator. The decorator takes in a function resolving the target model class
 constructor and optionally a custom foreign key to store the relation metadata.
 The decorator logic also designates the relation type and tries to infer the
 foreign key on the target model (`keyTo` in the relation metadata) to a default
-value (source model name appended with `id` in camel case, same as LoopBack 3).
+value (source model name appended with `Id` in camel case, same as LoopBack 3).
 It also calls `property.array()` to ensure that the type of the property is
 inferred properly as an array of the target model instances.
 
@@ -181,6 +183,11 @@ export interface OrderRelations {
 export type OrderWithRelations = Order & OrderRelations;
 ```
 
+LB4 also provides an CLI tool `lb4 relation` to generate `hasMany` relation for
+you. Before you check out the
+[`Relation Generator`](https://loopback.io/doc/en/lb4/Relation-generator.html)
+page, read on to learn how you can define relations to meet your requirements.
+
 ### Relation Metadata
 
 LB4 uses three `keyFrom`, `keyTo` and `name` fields in the `hasMany` relation
@@ -206,7 +213,7 @@ values for these three fields:
     <tr>
       <td><code>keyTo</code></td>
       <td>the foreign key of the target model</td>
-      <td>the source model name appended with `id` in camel case</td>
+      <td>the source model name appended with `Id` in camel case</td>
       <td><code>Order.customerId</code></td>
     </tr>
     <tr>
@@ -219,8 +226,8 @@ values for these three fields:
   </tbody>
 </table>
 
-We recommend to use default values. If you'd like to customize foreign key name,
-you'll need to specify some fields through the relation decorator.
+We recommend to use default values. If you'd like to customize the foreign key
+name, you'll need to specify some fields through the relation decorator.
 
 For customizing the foreign key name, `keyTo` field needs to be specified via
 `@hasMany` decorator. The following example shows how to customize the foreign
@@ -231,6 +238,7 @@ key name as `my_customer_id` instead of `customerId`:
 @model()
 export class Customer extends Entity {
   // constructor, properties, etc.
+
   @hasMany(() => Order, {keyTo: 'my_customer_id'})
   orders: Order[];
 }
@@ -241,6 +249,7 @@ export class Customer extends Entity {
 @model()
 export class Order extends Entity {
   // constructor, properties, etc.
+
   @property({
     type: 'number',
   })
@@ -406,6 +415,22 @@ factory `orders` for instances of `customerRepository`:
 - `patch` for patching target model instance(s) belonging to customer model
   instance
   ([API Docs](https://loopback.io/doc/en/lb4/apidocs.repository.hasmanyrepository.patch.html))
+
+Here is an example of creating the related models:
+
+```ts
+const myCustomer = await customerRepository.create({id: 1, name: 'Fiorio'});
+const orderData = {id: 1, customerId: myCustomer.id};
+// create the related order
+customerRepository.orders(myCustomer.id).create(orderData);
+```
+
+{% include note.html content="Notice that `CustomerRepository.create()` expects a `Customer` model only, navigational properties are not expected to be included in the target data. For instance, the following request will be rejected:
+`customerRepository.create({`
+`  id: 1,`
+`  name:'invalid request',`
+`  orders:[{id: 1, customerId: 1}]`
+`})`" %}
 
 For **updating** (full replace of all properties on a `PUT` endpoint for
 instance) a target model you have to directly use this model repository. In this
@@ -711,6 +736,3 @@ The `Where` clause above filters the result of `orders`.
 
 {% include tip.html content="Make sure that you have all inclusion resolvers that you need REGISTERED, and
 all relation names should be UNIQUE."%}
-
-{% include important.html content="There are some limitations of inclusion:. <br/>We don’t support recursive inclusion of related models. Related GH issue: [Recursive inclusion of related models](https://github.com/strongloop/loopback-next/issues/3454). <br/>It doesn’t split numbers of queries. Related GH issue: [Support inq splitting](https://github.com/strongloop/loopback-next/issues/3444). <br/>It might not work well with ObjectId of MongoDB. Related GH issue: [Spike: robust handling of ObjectID type for MongoDB](https://github.com/strongloop/loopback-next/issues/3456).
-" %}

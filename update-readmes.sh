@@ -14,6 +14,7 @@ strongloop loopback-connector-cloudant master
 strongloop loopback-connector-dashdb master
 strongloop loopback-connector-db2 master
 strongloop loopback-connector-db2iseries master
+strongloop loopback-connector-ibmi master
 strongloop loopback-connector-db2z master
 strongloop loopback-connector-grpc master
 strongloop loopback-connector-informix master

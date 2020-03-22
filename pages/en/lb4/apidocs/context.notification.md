@@ -3,6 +3,7 @@ lang: en
 title: 'API docs: context.notification'
 keywords: LoopBack 4.0, LoopBack 4
 sidebar: lb4_sidebar
+editurl: https://github.com/strongloop/loopback-next/tree/master/packages/context
 permalink: /doc/en/lb4/apidocs.context.notification.html
 ---
 
@@ -10,18 +11,20 @@ permalink: /doc/en/lb4/apidocs.context.notification.html
 
 [Home](./index.md) &gt; [@loopback/context](./context.md) &gt; [Notification](./context.notification.md)
 
-## Notification type
+## Notification interface
 
 Event data for observer notifications
 
 <b>Signature:</b>
 
 ```typescript
-export declare type Notification = {
-    eventType: ContextEventType;
-    binding: Readonly<Binding<unknown>>;
-    context: Context;
-    observers: Set<ContextEventObserver>;
-};
+export interface Notification extends ContextEvent 
 ```
+
+## Properties
+
+|  Property | Type | Description |
+|  --- | --- | --- |
+|  [observers](./context.notification.observers.md) | <code>Set&lt;ContextEventObserver&gt;</code> | A snapshot of observers when the original event is emitted |
+
 

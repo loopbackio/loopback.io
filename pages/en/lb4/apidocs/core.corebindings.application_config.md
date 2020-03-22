@@ -3,6 +3,7 @@ lang: en
 title: 'API docs: core.corebindings.application_config'
 keywords: LoopBack 4.0, LoopBack 4
 sidebar: lb4_sidebar
+editurl: https://github.com/strongloop/loopback-next/tree/master/packages/core
 permalink: /doc/en/lb4/apidocs.core.corebindings.application_config.html
 ---
 

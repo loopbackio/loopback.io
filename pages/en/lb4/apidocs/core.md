@@ -3,6 +3,7 @@ lang: en
 title: 'API docs: core'
 keywords: LoopBack 4.0, LoopBack 4
 sidebar: lb4_sidebar
+editurl: https://github.com/strongloop/loopback-next/tree/master/packages/core
 permalink: /doc/en/lb4/apidocs.core.html
 ---
 
@@ -30,14 +31,13 @@ permalink: /doc/en/lb4/apidocs.core.html
 |  [asService(serviceInterface)](./core.asservice.md) | Create a binding template for a service interface |
 |  [createServiceBinding(cls, options)](./core.createservicebinding.md) | Create a service binding from a class or provider |
 |  [extensionFilter(extensionPointName)](./core.extensionfilter.md) | A factory function to create binding filter for extensions of a named extension point |
-|  [extensionFor(extensionPointName)](./core.extensionfor.md) | A factory function to create binding template for extensions of the given extension point |
+|  [extensionFor(extensionPointNames)](./core.extensionfor.md) | A factory function to create binding template for extensions of the given extension point |
 |  [extensionPoint(name, specs)](./core.extensionpoint.md) | Decorate a class as a named extension point. If the decoration is not present, the name of the class will be used. |
 |  [extensions(extensionPointName)](./core.extensions.md) | Shortcut to inject extensions for the given extension point. |
 |  [filterByServiceInterface(serviceInterface)](./core.filterbyserviceinterface.md) | Create a binding filter by service class |
 |  [isLifeCycleObserver(obj)](./core.islifecycleobserver.md) | Test if an object implements LifeCycleObserver |
 |  [isLifeCycleObserverClass(ctor)](./core.islifecycleobserverclass.md) | Test if a class implements LifeCycleObserver |
 |  [lifeCycleObserver(group, specs)](./core.lifecycleobserver.md) | Sugar decorator to mark a class as life cycle observer |
-|  [lifeCycleObserverFilter(binding)](./core.lifecycleobserverfilter.md) | Find all life cycle observer bindings. By default, a binding tagged with <code>CoreTags.LIFE_CYCLE_OBSERVER</code>. It's used as <code>BindingFilter</code>. |
 |  [mountComponent(app, component)](./core.mountcomponent.md) | Mount a component to an Application. |
 |  [service(serviceInterface, metadata)](./core.service.md) | <code>@service</code> injects a service instance that matches the class or interface. |
 
@@ -49,8 +49,6 @@ permalink: /doc/en/lb4/apidocs.core.html
 |  [ApplicationMetadata](./core.applicationmetadata.md) | Type description for <code>package.json</code> |
 |  [ClassMap](./core.classmap.md) | A map of classes to be bound to a context |
 |  [Component](./core.component.md) | A component declares a set of artifacts so that they cane be contributed to an application as a group |
-|  [JSONArray](./core.jsonarray.md) |  |
-|  [JSONObject](./core.jsonobject.md) |  |
 |  [LifeCycleObserver](./core.lifecycleobserver.md) | Observers to handle life cycle start/stop events |
 |  [ProviderMap](./core.providermap.md) | A map of provider classes to be bound to a context |
 |  [Server](./core.server.md) | Defines the requirements to implement a Server for LoopBack applications: start() : Promise<void> stop() : Promise<void> It is recommended that each Server implementation creates its own child Context, which inherits from the parent Application context. This way, any Server-specific bindings will remain local to the Server instance, and will avoid polluting its parent module scope. |
@@ -67,14 +65,13 @@ permalink: /doc/en/lb4/apidocs.core.html
 |  Variable | Description |
 |  --- | --- |
 |  [DEFAULT\_ORDERED\_GROUPS](./core.default_ordered_groups.md) |  |
+|  [lifeCycleObserverFilter](./core.lifecycleobserverfilter.md) | Find all life cycle observer bindings. By default, a binding tagged with <code>CoreTags.LIFE_CYCLE_OBSERVER</code>. It's used as <code>BindingFilter</code>. |
 
 ## Type Aliases
 
 |  Type Alias | Description |
 |  --- | --- |
 |  [ControllerClass](./core.controllerclass.md) |  |
-|  [JSONPrimitive](./core.jsonprimitive.md) | Type definition for JSON |
-|  [JSONValue](./core.jsonvalue.md) |  |
 |  [LifeCycleObserverGroup](./core.lifecycleobservergroup.md) | A group of life cycle observers |
 |  [LifeCycleObserverOptions](./core.lifecycleobserveroptions.md) |  |
 |  [ServiceInterface](./core.serviceinterface.md) | Representing an interface for services. In TypeScript, the <code>interface</code> does not have reflections at runtime. We use a string, a symbol or a Function as the type for the service interface. |

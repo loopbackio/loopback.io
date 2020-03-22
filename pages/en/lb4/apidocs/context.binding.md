@@ -3,6 +3,7 @@ lang: en
 title: 'API docs: context.binding'
 keywords: LoopBack 4.0, LoopBack 4
 sidebar: lb4_sidebar
+editurl: https://github.com/strongloop/loopback-next/tree/master/packages/context
 permalink: /doc/en/lb4/apidocs.context.binding.html
 ---
 
@@ -17,7 +18,7 @@ Binding represents an entry in the `Context`<!-- -->. Each binding has a key and
 <b>Signature:</b>
 
 ```typescript
-export declare class Binding<T = BoundValue> 
+export declare class Binding<T = BoundValue> extends EventEmitter 
 ```
 
 ## Constructors
@@ -50,6 +51,7 @@ export declare class Binding<T = BoundValue>
 |  [getValue(ctx, session)](./context.binding.getvalue.md) |  | This is an internal function optimized for performance. Users should use <code>@inject(key)</code> or <code>ctx.get(key)</code> instead.<!-- -->Get the value bound to this key. Depending on <code>isSync</code>, this function returns either: - the bound value - a promise of the bound value<!-- -->Consumers wishing to consume sync values directly should use <code>isPromiseLike</code> to check the type of the returned value to decide how to handle it. |
 |  [getValue(ctx, options)](./context.binding.getvalue_1.md) |  | Returns a value or promise for this binding in the given context. The resolved value can be <code>undefined</code> if <code>optional</code> is set to <code>true</code> in <code>options</code>. |
 |  [inScope(scope)](./context.binding.inscope.md) |  | Set the binding scope |
+|  [inspect(options)](./context.binding.inspect.md) |  | Inspect the binding to return a json representation of the binding information |
 |  [lock()](./context.binding.lock.md) |  | Lock the binding so that it cannot be rebound |
 |  [tag(tags)](./context.binding.tag.md) |  | Tag the binding with names or name/value objects. A tag has a name and an optional value. If not supplied, the tag name is used as the value. |
 |  [to(value)](./context.binding.to.md) |  | Bind the key to a constant value. The value must be already available at binding time, it is not allowed to pass a Promise instance. |

@@ -3,6 +3,7 @@ lang: en
 title: 'API docs: repository.defaultbelongstorepository.constraint'
 keywords: LoopBack 4.0, LoopBack 4
 sidebar: lb4_sidebar
+editurl: https://github.com/strongloop/loopback-next/tree/master/packages/repository
 permalink: /doc/en/lb4/apidocs.repository.defaultbelongstorepository.constraint.html
 ---
 

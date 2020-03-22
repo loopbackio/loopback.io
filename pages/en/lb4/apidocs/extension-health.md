@@ -3,6 +3,7 @@ lang: en
 title: 'API docs: extension-health'
 keywords: LoopBack 4.0, LoopBack 4
 sidebar: lb4_sidebar
+editurl: https://github.com/strongloop/loopback-next/tree/master/extensions/health
 permalink: /doc/en/lb4/apidocs.extension-health.html
 ---
 
@@ -12,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.extension-health.html
 
 ## extension-health package
 
-[@loopback/extension-health](https://github.com/strongloop/loopback-next/tree/master/packages/extension-health)
+[@loopback/extension-health](https://github.com/strongloop/loopback-next/tree/master/extensions/health)
 
 ## Classes
 

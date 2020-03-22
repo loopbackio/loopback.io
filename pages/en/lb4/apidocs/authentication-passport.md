@@ -3,6 +3,7 @@ lang: en
 title: 'API docs: authentication-passport'
 keywords: LoopBack 4.0, LoopBack 4
 sidebar: lb4_sidebar
+editurl: https://github.com/strongloop/loopback-next/tree/master/extensions/authentication-passport
 permalink: /doc/en/lb4/apidocs.authentication-passport.html
 ---
 
@@ -12,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.authentication-passport.html
 
 ## authentication-passport package
 
-[@loopback/authentication-passport](https://github.com/strongloop/loopback-next/tree/master/packages/authentication-passport)
+[@loopback/authentication-passport](https://github.com/strongloop/loopback-next/tree/master/extensions/authentication-passport)
 
 ## Classes
 

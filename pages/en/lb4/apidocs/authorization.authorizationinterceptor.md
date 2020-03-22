@@ -3,6 +3,7 @@ lang: en
 title: 'API docs: authorization.authorizationinterceptor'
 keywords: LoopBack 4.0, LoopBack 4
 sidebar: lb4_sidebar
+editurl: https://github.com/strongloop/loopback-next/tree/master/packages/authorization
 permalink: /doc/en/lb4/apidocs.authorization.authorizationinterceptor.html
 ---
 
@@ -22,7 +23,7 @@ export declare class AuthorizationInterceptor implements Provider<Interceptor>
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)(authorizers, options)](./authorization.authorizationinterceptor._constructor_.md) |  | Constructs a new instance of the <code>AuthorizationInterceptor</code> class |
+|  [(constructor)(options)](./authorization.authorizationinterceptor._constructor_.md) |  | Constructs a new instance of the <code>AuthorizationInterceptor</code> class |
 
 ## Methods
 

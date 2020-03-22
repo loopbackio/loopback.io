@@ -3,6 +3,7 @@ lang: en
 title: 'API docs: rest.validaterequestbody'
 keywords: LoopBack 4.0, LoopBack 4
 sidebar: lb4_sidebar
+editurl: https://github.com/strongloop/loopback-next/tree/master/packages/rest
 permalink: /doc/en/lb4/apidocs.rest.validaterequestbody.html
 ---
 
@@ -17,7 +18,7 @@ Check whether the request body is valid according to the provided OpenAPI schema
 <b>Signature:</b>
 
 ```typescript
-export declare function validateRequestBody(body: RequestBody, requestBodySpec?: RequestBodyObject, globalSchemas?: SchemasObject, options?: RequestBodyValidationOptions): void;
+export declare function validateRequestBody(body: RequestBody, requestBodySpec?: RequestBodyObject, globalSchemas?: SchemasObject, options?: RequestBodyValidationOptions): Promise<void>;
 ```
 
 ## Parameters
@@ -31,6 +32,6 @@ export declare function validateRequestBody(body: RequestBody, requestBodySpec?:
 
 <b>Returns:</b>
 
-`void`
+`Promise<void>`
 
 

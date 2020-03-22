@@ -83,7 +83,7 @@
         $('input[name="sidebar"]').val(queryObj.sidebar);
     }
 
-    var urlBase = "https://openwhisk.ng.bluemix.net/api/v1/web/slbld%40ca.ibm.com_loopback/default/search.json?";
+    var urlBase = "https://us-south.functions.cloud.ibm.com/api/v1/web/dhmlau%40ca.ibm.com_dev/default/search.json?";
     var url = urlBase + query;
 
     $.get(url).done(function(data) {
@@ -99,8 +99,11 @@
             t = escapeHTML(t);
           });
 
-          html += '<li><a class="title" href="' + escapeHTML(res.metadata.url) + '">' + escapeHTML(res.metadata.title) + '</a><br/>';
-          html += '<a class="link" href="' + escapeHTML(res.metadata.url) + '">' + window.location.protocol + '//' + window.location.host + escapeHTML(res.metadata.url) + '</a>';
+          var displayedTitle = escapeHTML(res.extracted_metadata.title);
+          displayedTitle = displayedTitle.slice(0, displayedTitle.indexOf('|')!=-1? displayedTitle.indexOf('|'): displayedTitle.length);
+          
+          html += '<li><a class="title" href="' + escapeHTML(res.metadata.source.url) + '">' + displayedTitle + '</a><br/>';
+          html += '<a class="link" href="' + escapeHTML(res.metadata.source.url) + '">' + escapeHTML(res.metadata.source.url) + '</a>';
           html += '<p>' + res.highlight.text.splice(0, 3).join('<br/>') + '</p></li>';
         });
         html += '</ul>';

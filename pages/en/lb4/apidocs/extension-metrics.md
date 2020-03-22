@@ -3,6 +3,7 @@ lang: en
 title: 'API docs: extension-metrics'
 keywords: LoopBack 4.0, LoopBack 4
 sidebar: lb4_sidebar
+editurl: https://github.com/strongloop/loopback-next/tree/master/extensions/metrics
 permalink: /doc/en/lb4/apidocs.extension-metrics.html
 ---
 
@@ -12,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.extension-metrics.html
 
 ## extension-metrics package
 
-[@loopback/extension-metrics](https://github.com/strongloop/loopback-next/tree/master/packages/extension-metrics)
+[@loopback/extension-metrics](https://github.com/strongloop/loopback-next/tree/master/extensions/metrics)
 
 ## Classes
 

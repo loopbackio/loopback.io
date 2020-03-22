@@ -3,6 +3,7 @@ lang: en
 title: 'API docs: repository.definemodelclass'
 keywords: LoopBack 4.0, LoopBack 4
 sidebar: lb4_sidebar
+editurl: https://github.com/strongloop/loopback-next/tree/master/packages/repository
 permalink: /doc/en/lb4/apidocs.repository.definemodelclass.html
 ---
 
@@ -14,7 +15,25 @@ permalink: /doc/en/lb4/apidocs.repository.definemodelclass.html
 
 Create (define) a new model class with the given name and definition.
 
-Example usage:
+<b>Signature:</b>
+
+```typescript
+export declare function defineModelClass<BaseCtor extends typeof Model, Props extends object = {}>(base: BaseCtor, definition: ModelDefinition): DynamicModelCtor<BaseCtor, Props>;
+```
+
+## Parameters
+
+|  Parameter | Type | Description |
+|  --- | --- | --- |
+|  base | <code>BaseCtor</code> |  |
+|  definition | <code>ModelDefinition</code> |  |
+
+<b>Returns:</b>
+
+`DynamicModelCtor<BaseCtor, Props>`
+
+## Remarks
+
 
 ```ts
 const Product = defineModelClass(Entity, new ModelDefinition('Product'));
@@ -38,22 +57,5 @@ const Product = defineModelClass<
 >(Entity, new ModelDefinition('Product'));
 
 ```
-
-<b>Signature:</b>
-
-```typescript
-export declare function defineModelClass<BaseCtor extends typeof Model, Props extends object = {}>(base: BaseCtor, definition: ModelDefinition): DynamicModelCtor<BaseCtor, Props>;
-```
-
-## Parameters
-
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  base | <code>BaseCtor</code> |  |
-|  definition | <code>ModelDefinition</code> |  |
-
-<b>Returns:</b>
-
-`DynamicModelCtor<BaseCtor, Props>`
 
 

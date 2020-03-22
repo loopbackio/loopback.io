@@ -3,6 +3,7 @@ lang: en
 title: 'API docs: rest.restserver._requesthandler'
 keywords: LoopBack 4.0, LoopBack 4
 sidebar: lb4_sidebar
+editurl: https://github.com/strongloop/loopback-next/tree/master/packages/rest
 permalink: /doc/en/lb4/apidocs.rest.restserver._requesthandler.html
 ---
 
@@ -12,26 +13,9 @@ permalink: /doc/en/lb4/apidocs.rest.restserver._requesthandler.html
 
 ## RestServer.\_requestHandler property
 
-Handle incoming HTTP(S) request by invoking the corresponding Controller method via the configured Sequence.
-
 <b>Signature:</b>
 
 ```typescript
 protected _requestHandler: HttpRequestListener;
 ```
-
-## Example
-
-
-```ts
-const app = new Application();
-app.component(RestComponent);
-// setup controllers, etc.
-
-const restServer = await app.getServer(RestServer);
-const httpServer = http.createServer(restServer.requestHandler);
-httpServer.listen(3000);
-
-```
-
 

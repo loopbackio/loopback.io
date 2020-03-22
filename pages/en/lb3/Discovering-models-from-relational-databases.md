@@ -103,6 +103,86 @@ module.exports = function(app, callback) {
     });
 };
 ```
+We also provide several options for function `discoverAndBuildModels(table, options, cb)`:
+
+<table>
+  <thead>
+    <tr>
+      <th width="140">Field</th>
+      <th width="100">Type</th>
+      <th>Default</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+      <tr>
+      <td>all</td>
+      <td>Boolean</td>
+      <td>None</td>
+      <td>
+        True if all owners are included; false otherwise.
+      </td>
+    </tr>
+    <tr>
+      <td>owner | schema</td>
+      <td>String</td>
+      <td>None</td>
+      <td>
+        The database that the target table belongs to.
+      </td>
+    </tr>
+    <tr>
+      <td>nameMapper</td>
+      <td>Function</td>
+      <td>Class names are in PascalCase. Properties names are in camelCase.</td>
+      <td>
+        A function that allows you to name your classes and properties with different naming conventions. For example,if you like to use UPPERCASE for models, snake_case for properties, and camelCase for the rest, you can do 
+        <br><br><code>
+            dataSource.discoverAndBuildModels(
+        <br>    'MYDB',
+        <br>    {nameMapper: (type, name) => {
+        <br>      if (type === 'model') {
+        <br>        return myUpperCaseFn(name);
+        <br>      } else if (type == 'column') {
+        <br>        return mySnakeCaseFn(name);
+        <br>      } else {
+        <br>        return myCamelCaseFn(name);
+        <br>      }
+        <br>    }},
+        <br>    callback);
+        </code><br><br>
+      You will need to take care of four types <code>table, model, fk, and column</code>. We strongly recommend you to use LoopBack default naming convention because you might need to customize names specifically for defining relations or other artifacts. It's your responsibility to make sure the customized nameMapper is correctly defined.
+      </td>
+    </tr>
+    <tr>
+      <td>relations</td>
+      <td>Boolean</td>
+      <td>None</td>
+      <td>
+        True if relations (primary key/foreign key) are navigated; false otherwise.
+      </td>
+    </tr>
+    <tr>
+      <td>disableCamelCase</td>
+      <td>Boolean</td>
+      <td><code>false</code></td>
+      <td>
+        By default, LoopBack uses PascalCase for tables and models and camelCase for properties. If you'd like to keep the model property name as the same as the database column name, setting the value to <code>true</code> would allow you to do so. The tables and models would still be in PascalCase. 
+        <br>However, we strongly recommend you to use LoopBack default naming convention because you might need to customize names specifically for defining relations or other artifacts.
+      </td>
+    </tr>
+    <tr>
+      <td>views</td>
+      <td>Boolean</td>
+      <td>N/A</td>
+      <td>
+        True if views are included; false otherwise.
+      </td>
+    </tr>
+  </tbody>
+</table>
+
 
 Next steps:
 
@@ -243,3 +323,5 @@ ds.discoverExportedForeignKeys('PRODUCT',  cb);
 // Create a model definition by discovering the given table
 ds.discoverSchema(table, {owner: 'STRONGLOOP'}, cb);
 ```
+
+Check the [API documentation](http://apidocs.loopback.io/loopback-datasource-juggler/#datasource-prototype-discovermodeldefinitions) for more explanations and available options.

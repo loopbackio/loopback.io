@@ -4,6 +4,7 @@ layout: translation
 sidebar: ja_lb2_sidebar
 lang: ja
 keywords: LoopBack
+trans_complete: false
 tags:
 permalink: /doc/ja/lb2/LoopBack-core-concepts.html
 summary:
@@ -39,7 +40,7 @@ You can create LoopBack models in various ways, depending on what kind of data s
 *   [From an existing relational database](Discovering-models-from-relational-databases.html) using _model discovery_.  Then you can keep your model synchronized with the database using LoopBack's [schema / model synchronization](Creating-a-database-schema-from-models.html) API.
 *   [By instance introspection](Creating-models-from-unstructured-data.html) for free-form data in NoSQL databases or REST APIs.
 
-All three of these methods create a[Model definition JSON file](Model-definition-JSON-file.html) that defines your model in LoopBack, by convention in a LoopBack project's `common/models` directory; for example, `common/models/Account.json`.
+All three of these methods create a [Model definition JSON file](Model-definition-JSON-file.html) that defines your model in LoopBack, by convention in a LoopBack project's `common/models` directory; for example, `common/models/Account.json`.
 
 You can also create and customize models programmatically using the [LoopBack API](http://apidocs.strongloop.com/loopback/#loopback-createmodel), or by manually editing the [Model definition JSON file](Model-definition-JSON-file.html). In most cases, you shouldn't need to use those techniques to create models, but generally will to customize models for your use.
 

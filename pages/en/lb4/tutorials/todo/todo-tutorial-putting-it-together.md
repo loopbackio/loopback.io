@@ -52,6 +52,8 @@ Here are some requests you can try:
 
 That's it! You've just created your first LoopBack 4 application!
 
+_Note: Use **CTRL+C** to stop the application_
+
 ### Where to go from here
 
 There are still a ton of features you can use to build on top of the
@@ -74,6 +76,12 @@ left off here to guide you through adding in an additional feature:
 Eager to continue learning about LoopBack 4? Check out our
 [Examples](../../Examples.md) and [Tutorials](../../Tutorials.md) sections to
 find examples for creating your own custom components, sequences and more!
+
+In fact, this example can be simplified to only defining the model and
+datasource, while still behaving the same. Using
+[`CrudRestComponent`](https://loopback.io/doc/en/lb4/apidocs.rest-crud.crudrestcomponent.html),
+the repository and controller classes can be omitted, as seen in the
+[rest-crud example](https://github.com/strongloop/loopback-next/tree/master/examples/rest-crud).
 
 ### Navigation
 

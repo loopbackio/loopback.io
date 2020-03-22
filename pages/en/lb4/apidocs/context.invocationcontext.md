@@ -3,6 +3,7 @@ lang: en
 title: 'API docs: context.invocationcontext'
 keywords: LoopBack 4.0, LoopBack 4
 sidebar: lb4_sidebar
+editurl: https://github.com/strongloop/loopback-next/tree/master/packages/context
 permalink: /doc/en/lb4/apidocs.context.invocationcontext.html
 ---
 
@@ -33,7 +34,6 @@ export declare class InvocationContext extends Context
 |  [args](./context.invocationcontext.args.md) |  | <code>InvocationArgs</code> |  |
 |  [description](./context.invocationcontext.description.md) |  | <code>string</code> | Description of the invocation |
 |  [methodName](./context.invocationcontext.methodname.md) |  | <code>string</code> |  |
-|  [parent](./context.invocationcontext.parent.md) |  | <code>Context</code> |  |
 |  [source](./context.invocationcontext.source.md) |  | <code>InvocationSource&lt;unknown&gt; &#124; undefined</code> |  |
 |  [target](./context.invocationcontext.target.md) |  | <code>object</code> |  |
 |  [targetClass](./context.invocationcontext.targetclass.md) |  | <code>Function</code> | The target class, such as <code>OrderController</code> |

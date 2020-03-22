@@ -21,7 +21,7 @@ A binding typically has the following attributes:
   the context
 - tags: Tags are names or name/value pairs to describe or annotate a binding
 - value: Each binding must be configured with a type of value provider so that
-  it be resolved to a constant or calculated value
+  it can be resolved to a constant or calculated value
 
 ![Binding](imgs/binding.png)
 
@@ -337,6 +337,38 @@ binding.tag('controller', {name: 'MyController'});
 
 The binding tags can be accessed via `binding.tagMap` or `binding.tagNames`.
 
+Binding tags play an import role in discovering artifacts with matching tags.
+The `filterByTag` helper function and `context.findByTag` method can be used to
+match/find bindings by tag. The search criteria can be one of the followings:
+
+1. A tag name, such as `controller`
+2. A tag name wildcard or regular expression, such as `controller.*` or
+   `/controller/`
+3. An object contains tag name/value pairs, such as
+   `{name: 'my-controller', type: 'controller'}`. In addition to exact match,
+   the value for a tag name can be a function that determines if a given tag
+   value matches. For example,
+
+   ```ts
+   import {
+     ANY_TAG_VALUE, // Match any value if it exists
+     filterByTag,
+     includesTagValue, // Match tag value as an array that includes the item
+     TagValueMatcher,
+   } from '@loopback/context';
+   // Match a binding with a named service
+   ctx.find(filterByTag({name: ANY_TAG_VALUE, service: 'service'}));
+
+   // Match a binding as an extension for `my-extension-point`
+   ctx.find(
+     filterByTag({extensionFor: includesTagValue('my-extension-point')}),
+   );
+
+   // Match a binding with weight > 100
+   const weightMatcher: TagValueMatcher = tagValue => tagValue > 100;
+   ctx.find(filterByTag({weight: weightMatcher}));
+   ```
+
 ### Chain multiple steps
 
 The `Binding` fluent APIs allow us to chain multiple steps as follows:
@@ -515,7 +547,7 @@ returning themselves. This allows binding consumers to omit the expected value
 type when calling `.get()` and `.getSync()`.
 
 When we rewrite the failing snippet resolving HOST names to use the new API, the
-TypeScript compiler immediatelly tells us about the problem:
+TypeScript compiler immediately tells us about the problem:
 
 ```ts
 const host = await ctx.get(RestBindings.HOST);
@@ -523,4 +555,53 @@ const records = await resolve(host);
 // Compiler complains:
 // - cannot convert string | undefined to string
 //  - cannot convert undefined to string
+```
+
+### Binding events
+
+A binding can emit `changed` events upon changes triggered by methods such as
+`tag`, `inScope`, `to`, and `toClass`.
+
+The binding listener function signature is described as:
+
+```ts
+/**
+ * Information for a binding event
+ */
+export type BindingEvent = {
+  /**
+   * Event type
+   */
+  type: string;
+  /**
+   * Source binding that emits the event
+   */
+  binding: Readonly<Binding<unknown>>;
+  /**
+   * Operation that triggers the event
+   */
+  operation: string;
+};
+
+/**
+ * Event listeners for binding events
+ */
+export type BindingEventListener = (
+  /**
+   * Binding event
+   */
+  event: BindingEvent,
+) => void;
+```
+
+Now we can register a binding listener to be triggered when tags are changed:
+
+```ts
+const bindingListener: BindingEventListener = ({binding, operation}) => {
+  if (event === 'tag') {
+    console.log('Binding tags for %s %j', binding.key, binding.tagMap);
+  }
+});
+
+binding.on('changed', bindingListener);
 ```

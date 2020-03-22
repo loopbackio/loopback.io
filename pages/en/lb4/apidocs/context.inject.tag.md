@@ -3,6 +3,7 @@ lang: en
 title: 'API docs: context.inject.tag'
 keywords: LoopBack 4.0, LoopBack 4
 sidebar: lb4_sidebar
+editurl: https://github.com/strongloop/loopback-next/tree/master/packages/context
 permalink: /doc/en/lb4/apidocs.context.inject.tag.html
 ---
 
@@ -17,7 +18,7 @@ Inject an array of values by a tag pattern string or regexp
 <b>Signature:</b>
 
 ```typescript
-tag: (bindingTag: string | RegExp | import("./value-promise").MapObject<any>, metadata?: InjectionMetadata | undefined) => (target: Object, member: string | undefined, methodDescriptorOrParameterIndex?: number | TypedPropertyDescriptor<any> | undefined) => void
+tag: (bindingTag: string | RegExp | Record<string, any>, metadata?: InjectionMetadata | undefined) => (target: Object, member: string | undefined, methodDescriptorOrParameterIndex?: number | TypedPropertyDescriptor<any> | undefined) => void
 ```
 
 ## Example

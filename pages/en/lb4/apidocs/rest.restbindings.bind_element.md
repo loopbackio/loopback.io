@@ -3,6 +3,7 @@ lang: en
 title: 'API docs: rest.restbindings.bind_element'
 keywords: LoopBack 4.0, LoopBack 4
 sidebar: lb4_sidebar
+editurl: https://github.com/strongloop/loopback-next/tree/master/packages/rest
 permalink: /doc/en/lb4/apidocs.rest.restbindings.bind_element.html
 ---
 

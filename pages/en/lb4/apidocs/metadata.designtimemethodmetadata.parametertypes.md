@@ -3,6 +3,7 @@ lang: en
 title: 'API docs: metadata.designtimemethodmetadata.parametertypes'
 keywords: LoopBack 4.0, LoopBack 4
 sidebar: lb4_sidebar
+editurl: https://github.com/strongloop/loopback-next/tree/master/packages/metadata
 permalink: /doc/en/lb4/apidocs.metadata.designtimemethodmetadata.parametertypes.html
 ---
 

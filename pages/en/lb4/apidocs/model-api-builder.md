@@ -3,6 +3,7 @@ lang: en
 title: 'API docs: model-api-builder'
 keywords: LoopBack 4.0, LoopBack 4
 sidebar: lb4_sidebar
+editurl: https://github.com/strongloop/loopback-next/tree/master/packages/model-api-builder
 permalink: /doc/en/lb4/apidocs.model-api-builder.html
 ---
 

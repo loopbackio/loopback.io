@@ -3,6 +3,7 @@ lang: en
 title: 'API docs: rest-explorer.restexplorerbindings.config'
 keywords: LoopBack 4.0, LoopBack 4
 sidebar: lb4_sidebar
+editurl: https://github.com/strongloop/loopback-next/tree/master/packages/rest-explorer
 permalink: /doc/en/lb4/apidocs.rest-explorer.restexplorerbindings.config.html
 ---
 
@@ -11,6 +12,10 @@ permalink: /doc/en/lb4/apidocs.rest-explorer.restexplorerbindings.config.html
 [Home](./index.md) &gt; [@loopback/rest-explorer](./rest-explorer.md) &gt; [RestExplorerBindings](./rest-explorer.restexplorerbindings.md) &gt; [CONFIG](./rest-explorer.restexplorerbindings.config.md)
 
 ## RestExplorerBindings.CONFIG variable
+
+Binding key for configuration of RestExplorerComponent.
+
+We recommend `ctx.configure(RestExplorerBindings.COMPONENT)` to be used instead of `ctx.bind(RestExplorerBindings.CONFIG)`<!-- -->.
 
 <b>Signature:</b>
 

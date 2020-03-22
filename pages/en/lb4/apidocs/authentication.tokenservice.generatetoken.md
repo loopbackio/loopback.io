@@ -3,6 +3,7 @@ lang: en
 title: 'API docs: authentication.tokenservice.generatetoken'
 keywords: LoopBack 4.0, LoopBack 4
 sidebar: lb4_sidebar
+editurl: https://github.com/strongloop/loopback-next/tree/master/packages/authentication
 permalink: /doc/en/lb4/apidocs.authentication.tokenservice.generatetoken.html
 ---
 
@@ -29,5 +30,7 @@ generateToken(userProfile: UserProfile): Promise<string>;
 <b>Returns:</b>
 
 `Promise<string>`
+
+a generated token/secret for a given UserProfile.
 
 

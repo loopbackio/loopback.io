@@ -3,6 +3,7 @@ lang: en
 title: 'API docs: openapi-v3.param'
 keywords: LoopBack 4.0, LoopBack 4
 sidebar: lb4_sidebar
+editurl: https://github.com/strongloop/loopback-next/tree/master/packages/openapi-v3
 permalink: /doc/en/lb4/apidocs.openapi-v3.param.html
 ---
 
@@ -19,6 +20,13 @@ Namespace for `@param.*` decorators
 ```typescript
 export declare namespace param 
 ```
+
+## Functions
+
+|  Function | Description |
+|  --- | --- |
+|  [filter(modelCtor, options)](./openapi-v3.param.filter.md) | Sugar decorator for <code>filter</code> query parameter |
+|  [where(modelCtor, name)](./openapi-v3.param.where.md) | Sugar decorator for <code>where</code> query parameter |
 
 ## Variables
 

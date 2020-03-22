@@ -3,6 +3,7 @@ lang: en
 title: 'API docs: openapi-spec-builder.openapispecbuilder'
 keywords: LoopBack 4.0, LoopBack 4
 sidebar: lb4_sidebar
+editurl: https://github.com/strongloop/loopback-next/tree/master/packages/openapi-spec-builder
 permalink: /doc/en/lb4/apidocs.openapi-spec-builder.openapispecbuilder.html
 ---
 
@@ -30,6 +31,7 @@ export declare class OpenApiSpecBuilder extends BuilderBase<OpenAPIObject>
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
+|  [withComponents(spec)](./openapi-spec-builder.openapispecbuilder.withcomponents.md) |  | Define a new ComponentsObject. |
 |  [withOperation(verb, path, spec)](./openapi-spec-builder.openapispecbuilder.withoperation.md) |  | Define a new OperationObject at the given path and verb (method). |
 |  [withOperationReturningString(verb, path, operationName)](./openapi-spec-builder.openapispecbuilder.withoperationreturningstring.md) |  | Define a new operation that returns a string response. |
 

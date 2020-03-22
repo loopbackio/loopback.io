@@ -3,6 +3,7 @@ lang: en
 title: 'API docs: rest-crud'
 keywords: LoopBack 4.0, LoopBack 4
 sidebar: lb4_sidebar
+editurl: https://github.com/strongloop/loopback-next/tree/master/packages/rest-crud
 permalink: /doc/en/lb4/apidocs.rest-crud.html
 ---
 
@@ -14,34 +15,19 @@ permalink: /doc/en/lb4/apidocs.rest-crud.html
 
 [@loopback/rest-crud](https://github.com/strongloop/loopback-next/tree/master/packages/rest-crud)
 
+## Classes
+
+|  Class | Description |
+|  --- | --- |
+|  [CrudRestApiBuilder](./rest-crud.crudrestapibuilder.md) |  |
+|  [CrudRestComponent](./rest-crud.crudrestcomponent.md) |  |
+
 ## Functions
 
 |  Function | Description |
 |  --- | --- |
-|  [defineCrudRepositoryClass(entityClass)](./rest-crud.definecrudrepositoryclass.md) | Create (define) a repository class for the given model.<!-- -->Example usage:
-```ts
-const ProductRepository = defineCrudRepositoryClass(Product);
-
-```
- |
-|  [defineCrudRestController(modelCtor, options)](./rest-crud.definecrudrestcontroller.md) | Create (define) a CRUD Controller class for the given model.<!-- -->Example usage:
-```ts
-const ProductController = defineCrudRestController<
-Product,
-typeof Product.prototype.id,
-'id'
->(Product, {basePath: '/products'});
-
-inject('repositories.ProductRepository')(
- ProductController,
-  undefined,
-  0,
-);
-
-app.controller(ProductController);
-
-```
- |
+|  [defineCrudRepositoryClass(entityClass)](./rest-crud.definecrudrepositoryclass.md) | Create (define) a repository class for the given model. |
+|  [defineCrudRestController(modelCtor, options)](./rest-crud.definecrudrestcontroller.md) | Create (define) a CRUD Controller class for the given model. |
 
 ## Interfaces
 
@@ -50,6 +36,7 @@ app.controller(ProductController);
 |  [CrudRestController](./rest-crud.crudrestcontroller.md) | This interface describes prototype members of the controller class returned by <code>defineCrudRestController</code>. |
 |  [CrudRestControllerCtor](./rest-crud.crudrestcontrollerctor.md) | Constructor of the controller class returned by <code>defineCrudRestController</code>. |
 |  [CrudRestControllerOptions](./rest-crud.crudrestcontrolleroptions.md) | Options to configure different aspects of a CRUD REST Controller. |
+|  [ModelCrudRestApiConfig](./rest-crud.modelcrudrestapiconfig.md) |  |
 |  [RepositoryClass](./rest-crud.repositoryclass.md) |  |
 
 

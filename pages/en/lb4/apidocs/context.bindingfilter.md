@@ -3,6 +3,7 @@ lang: en
 title: 'API docs: context.bindingfilter'
 keywords: LoopBack 4.0, LoopBack 4
 sidebar: lb4_sidebar
+editurl: https://github.com/strongloop/loopback-next/tree/master/packages/context
 permalink: /doc/en/lb4/apidocs.context.bindingfilter.html
 ---
 
@@ -10,21 +11,19 @@ permalink: /doc/en/lb4/apidocs.context.bindingfilter.html
 
 [Home](./index.md) &gt; [@loopback/context](./context.md) &gt; [BindingFilter](./context.bindingfilter.md)
 
-## BindingFilter type
+## BindingFilter interface
 
 A function that filters bindings. It returns `true` to select a given binding.
 
 <b>Signature:</b>
 
 ```typescript
-export declare type BindingFilter<ValueType = unknown> = (binding: Readonly<Binding<unknown>>) => boolean;
+export interface BindingFilter 
 ```
 
 ## Remarks
 
-TODO(semver-major): We might change this type in the future to either remove the `<ValueType>` or make it as type guard by asserting the matched binding to be typed with `<ValueType>`<!-- -->.
-
-\*\*NOTE\*\*: Originally, we allow filters to be tied with a single value type. This actually does not make much sense - the filter function is typically invoked on all bindings to find those ones matching the given criteria. Filters must be prepared to handle bindings of any value type. We learned about this problem after enabling TypeScript's `strictFunctionTypes` check, but decided to preserve `ValueType` argument for backwards compatibility. The `<ValueType>` represents the value type for matched bindings but it's not used for checking.
+Originally, we allowed filters to be tied with a single value type. This actually does not make much sense - the filter function is typically invoked on all bindings to find those ones matching the given criteria. Filters must be prepared to handle bindings of any value type. We learned about this problem after enabling TypeScript's `strictFunctionTypes` check. This aspect is resolved by typing the input argument as `Binding<unknown>`<!-- -->.
 
 Ideally, `BindingFilter` should be declared as a type guard as follows:
 
@@ -37,5 +36,9 @@ export type BindingFilterGuard<ValueType = unknown> = (
 But TypeScript treats the following types as incompatible and does not accept type 1 for type 2.
 
 1. `(binding: Readonly<Binding<unknown>>) => boolean` 2. `(binding: Readonly<Binding<unknown>>) => binding is Readonly<Binding<ValueType>>`
+
+If we described BindingFilter as a type-guard, then all filter implementations would have to be explicitly typed as type-guards too, which would make it tedious to write quick filter functions like `b => b.key.startsWith('services')`<!-- -->.
+
+To keep things simple and easy to use, we use `boolean` as the return type of a binding filter function.
 
 

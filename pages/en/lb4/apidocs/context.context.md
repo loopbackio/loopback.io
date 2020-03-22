@@ -3,6 +3,7 @@ lang: en
 title: 'API docs: context.context'
 keywords: LoopBack 4.0, LoopBack 4
 sidebar: lb4_sidebar
+editurl: https://github.com/strongloop/loopback-next/tree/master/packages/context
 permalink: /doc/en/lb4/apidocs.context.context.html
 ---
 
@@ -31,16 +32,17 @@ export declare class Context extends EventEmitter
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
 |  [\_parent](./context.context._parent.md) |  | <code>Context</code> | Parent context |
-|  [\_parentEventListeners](./context.context._parenteventlisteners.md) |  | <code>Map&lt;string, (...args: any[]) =&gt; void&gt; &#124; undefined</code> | Event listeners for parent context keyed by event names. It keeps track of listeners from this context against its parent so that we can remove these listeners when this context is closed. |
-|  [configResolver](./context.context.configresolver.md) |  | <code>ConfigurationResolver</code> |  |
+|  [configResolver](./context.context.configresolver.md) |  | <code>ConfigurationResolver</code> | Configuration resolver |
 |  [name](./context.context.name.md) |  | <code>string</code> | Name of the context |
-|  [observers](./context.context.observers.md) |  | <code>Set&lt;ContextEventObserver&gt; &#124; undefined</code> | A list of registered context observers. The Set will be created when the first observer is added. |
 |  [registry](./context.context.registry.md) |  | <code>Map&lt;string, Binding&gt;</code> | Key to binding map as the internal registry |
+|  [subscriptionManager](./context.context.subscriptionmanager.md) |  | <code>ContextSubscriptionManager</code> | Manager for observer subscriptions |
+|  [tagIndexer](./context.context.tagindexer.md) |  | <code>ContextTagIndexer</code> | Indexer for bindings by tag |
 
 ## Methods
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
+|  [\_findByTagIndex(tag)](./context.context._findbytagindex.md) |  | Find bindings by tag leveraging indexes |
 |  [\_mergeWithParent(childList, parentList)](./context.context._mergewithparent.md) |  |  |
 |  [add(binding)](./context.context.add.md) |  | Add a binding to the context. If a locked binding already exists with the same key, an error will be thrown. |
 |  [bind(key)](./context.context.bind.md) |  | Create a binding with the given key in the context. If a locked binding already exists with the same key, an error will be thrown. |
@@ -48,6 +50,8 @@ export declare class Context extends EventEmitter
 |  [configure(key)](./context.context.configure.md) |  | Create a corresponding binding for configuration of the target bound by the given key in the context.<!-- -->For example, <code>ctx.configure('controllers.MyController').to({x: 1})</code> will create binding <code>controllers.MyController:$config</code> with value <code>{x: 1}</code>. |
 |  [contains(key)](./context.context.contains.md) |  | Check if a binding exists with the given key in the local context without delegating to the parent context |
 |  [createView(filter, comparator)](./context.context.createview.md) |  | Create a view of the context chain with the given binding filter |
+|  [emitError(err)](./context.context.emiterror.md) |  | Emit an <code>error</code> event |
+|  [emitEvent(type, event)](./context.context.emitevent.md) |  | A strongly-typed method to emit context events |
 |  [find(pattern)](./context.context.find.md) |  | Find bindings using a key pattern or filter function |
 |  [findByTag(tagFilter)](./context.context.findbytag.md) |  | Find bindings using the tag filter. If the filter matches one of the binding tags, the binding is included. |
 |  [findOrCreateBinding(key, policy)](./context.context.findorcreatebinding.md) |  | Find or create a binding for the given key |
@@ -61,15 +65,13 @@ export declare class Context extends EventEmitter
 |  [getOwnerContext(key)](./context.context.getownercontext.md) |  | Get the owning context for a binding key |
 |  [getSync(keyWithPath, session)](./context.context.getsync.md) |  | Get the synchronous value bound to the given key, optionally return a (deep) property of the bound value.<!-- -->This method throws an error if the bound value requires async computation (returns a promise). You should never rely on sync bindings in production code. |
 |  [getSync(keyWithPath, options)](./context.context.getsync_1.md) |  | Get the synchronous value bound to the given key, optionally return a (deep) property of the bound value.<!-- -->This method throws an error if the bound value requires async computation (returns a promise). You should never rely on sync bindings in production code. |
-|  [inspect()](./context.context.inspect.md) |  | Inspect the context and dump out a JSON object representing the context hierarchy |
+|  [inspect(options)](./context.context.inspect.md) |  | Inspect the context and dump out a JSON object representing the context hierarchy |
 |  [isBound(key)](./context.context.isbound.md) |  | Check if a key is bound in the context or its ancestors |
 |  [isSubscribed(observer)](./context.context.issubscribed.md) |  | Check if an observer is subscribed to this context |
-|  [notifyObservers(eventType, binding, context, observers)](./context.context.notifyobservers.md) |  | Publish an event to the registered observers. Please note the notification is queued and performed asynchronously so that we allow fluent APIs such as <code>ctx.bind('key').to(...).tag(...);</code> and give observers the fully populated binding. |
 |  [setupConfigurationResolverIfNeeded()](./context.context.setupconfigurationresolverifneeded.md) |  | Set up the configuration resolver if needed |
 |  [subscribe(observer)](./context.context.subscribe.md) |  | Add a context event observer to the context |
 |  [toJSON()](./context.context.tojson.md) |  | Create a plain JSON object for the context |
 |  [unbind(key)](./context.context.unbind.md) |  | Unbind a binding from the context. No parent contexts will be checked. |
 |  [unsubscribe(observer)](./context.context.unsubscribe.md) |  | Remove the context event observer from the context |
-|  [waitUntilPendingNotificationsDone(timeout)](./context.context.waituntilpendingnotificationsdone.md) |  | Wait until observers are notified for all of currently pending notification events.<!-- -->This method is for test only to perform assertions after observers are notified for relevant events. |
 
 

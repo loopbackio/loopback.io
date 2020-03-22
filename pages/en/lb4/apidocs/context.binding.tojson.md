@@ -3,6 +3,7 @@ lang: en
 title: 'API docs: context.binding.tojson'
 keywords: LoopBack 4.0, LoopBack 4
 sidebar: lb4_sidebar
+editurl: https://github.com/strongloop/loopback-next/tree/master/packages/context
 permalink: /doc/en/lb4/apidocs.context.binding.tojson.html
 ---
 
@@ -17,10 +18,10 @@ Convert to a plain JSON object
 <b>Signature:</b>
 
 ```typescript
-toJSON(): object;
+toJSON(): JSONObject;
 ```
 <b>Returns:</b>
 
-`object`
+`JSONObject`
 
 

@@ -3,6 +3,7 @@ lang: en
 title: 'API docs: authentication.tokenservice'
 keywords: LoopBack 4.0, LoopBack 4
 sidebar: lb4_sidebar
+editurl: https://github.com/strongloop/loopback-next/tree/master/packages/authentication
 permalink: /doc/en/lb4/apidocs.authentication.tokenservice.html
 ---
 
@@ -25,6 +26,7 @@ export interface TokenService
 |  Method | Description |
 |  --- | --- |
 |  [generateToken(userProfile)](./authentication.tokenservice.generatetoken.md) | Generates a token string based on a user profile |
+|  [revokeToken(token)](./authentication.tokenservice.revoketoken.md) | Revokes a given token (if supported by token system) |
 |  [verifyToken(token)](./authentication.tokenservice.verifytoken.md) | Verifies the validity of a token string and returns a user profile |
 
 

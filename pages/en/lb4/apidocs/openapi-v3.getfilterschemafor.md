@@ -3,6 +3,7 @@ lang: en
 title: 'API docs: openapi-v3.getfilterschemafor'
 keywords: LoopBack 4.0, LoopBack 4
 sidebar: lb4_sidebar
+editurl: https://github.com/strongloop/loopback-next/tree/master/packages/openapi-v3
 permalink: /doc/en/lb4/apidocs.openapi-v3.getfilterschemafor.html
 ---
 
@@ -19,7 +20,7 @@ Note we don't take the model properties into account yet and return a generic js
 <b>Signature:</b>
 
 ```typescript
-export declare function getFilterSchemaFor(modelCtor: typeof Model): SchemaObject;
+export declare function getFilterSchemaFor(modelCtor: typeof Model, options?: FilterSchemaOptions): SchemaObject;
 ```
 
 ## Parameters
@@ -27,6 +28,7 @@ export declare function getFilterSchemaFor(modelCtor: typeof Model): SchemaObjec
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  modelCtor | <code>typeof Model</code> | The model constructor to build the filter schema for. |
+|  options | <code>FilterSchemaOptions</code> | Options to build the filter schema. |
 
 <b>Returns:</b>
 
