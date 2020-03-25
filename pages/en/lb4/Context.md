@@ -435,14 +435,8 @@ const observer: ContextObserver = {
 };
 
 server.subscribe(observer);
-server
-  .bind('foo-server')
-  .to('foo-value')
-  .tag('foo');
-app
-  .bind('foo-app')
-  .to('foo-value')
-  .tag('foo');
+server.bind('foo-server').to('foo-value').tag('foo');
+app.bind('foo-app').to('foo-value').tag('foo');
 
 // The following messages will be printed:
 // bind: foo-server
@@ -520,10 +514,7 @@ serverCtx
 await view.values(); // returns [an instance of Controller1];
 
 // Bind Controller2 to app context
-appCtx
-  .bind('controllers.Controller2')
-  .toClass(Controller2)
-  .tag('controller');
+appCtx.bind('controllers.Controller2').toClass(Controller2).tag('controller');
 
 // Resolve to an instance of Controller1 and an instance of Controller2
 await view.values(); // returns [an instance of Controller1, an instance of Controller2];
@@ -554,6 +545,8 @@ injection.
 
 A `ContextView` object can emit one of the following events:
 
+- 'bind': when a binding is added to the view
+- 'unbind': when a binding is removed from the view
 - 'refresh': when the view is refreshed as bindings are added/removed
 - 'resolve': when the cached values are resolved and updated
 - 'close': when the view is closed (stopped observing context events)

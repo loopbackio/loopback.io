@@ -16,6 +16,6 @@ permalink: /doc/en/lb4/apidocs.context.contextview.context.html
 <b>Signature:</b>
 
 ```typescript
-protected readonly context: Context;
+readonly context: Context;
 ```
 

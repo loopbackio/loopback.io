@@ -11,43 +11,19 @@ permalink: /doc/en/lb4/apidocs.core.extensions.html
 
 [Home](./index.md) &gt; [@loopback/core](./core.md) &gt; [extensions](./core.extensions.md)
 
-## extensions() function
-
-Shortcut to inject extensions for the given extension point.
+## extensions namespace
 
 <b>Signature:</b>
 
 ```typescript
-export declare function extensions(extensionPointName?: string): (target: Object, member: string | undefined, methodDescriptorOrParameterIndex?: number | TypedPropertyDescriptor<any> | undefined) => void;
+export declare namespace extensions 
 ```
 
-## Parameters
+## Functions
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  extensionPointName | <code>string</code> | Name of the extension point. If not supplied, we use the <code>name</code> tag from the extension point binding or the class name of the extension point class. If a class needs to inject extensions from multiple extension points, use different <code>extensionPointName</code> for different types of extensions. |
-
-<b>Returns:</b>
-
-`(target: Object, member: string | undefined, methodDescriptorOrParameterIndex?: number | TypedPropertyDescriptor<any> | undefined) => void`
-
-## Example
-
-
-```ts
-import {Getter} from '@loopback/context';
-import {extensionPoint, extensions} from '@loopback/core';
-
-@extensionPoint(GREETER_EXTENSION_POINT_NAME)
-export class GreetingService {
- constructor(
-   @extensions() // Inject extensions for the extension point
-   private getGreeters: Getter<Greeter[]>,
-   // ...
-) {
-  // ...
-}
-
-```
+|  Function | Description |
+|  --- | --- |
+|  [list(extensionPointName)](./core.extensions.list.md) | Inject an array of resolved extension instances for the extension point. The list is a snapshot of registered extensions when the injection is fulfilled. Extensions added or removed afterward won't impact the list. |
+|  [view(extensionPointName)](./core.extensions.view.md) | Inject a <code>ContextView</code> for extensions of the extension point. The view can then be listened on events such as <code>bind</code>, <code>unbind</code>, or <code>refresh</code> to react on changes of extensions. |
 
 

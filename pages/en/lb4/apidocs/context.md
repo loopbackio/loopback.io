@@ -23,7 +23,7 @@ permalink: /doc/en/lb4/apidocs.context.html
 |  [BindingKey](./context.bindingkey.md) |  |
 |  [Context](./context.context.md) | Context provides an implementation of Inversion of Control (IoC) container |
 |  [ContextSubscriptionManager](./context.contextsubscriptionmanager.md) | Manager for context observer subscriptions |
-|  [ContextView](./context.contextview.md) | <code>ContextView</code> provides a view for a given context chain to maintain a live list of matching bindings and their resolved values within the context hierarchy.<!-- -->This class is the key utility to implement dynamic extensions for extension points. For example, the RestServer can react to <code>controller</code> bindings even they are added/removed/updated after the application starts.<code>ContextView</code> is an event emitter that emits the following events: - 'close': when the view is closed (stopped observing context events) - 'refresh': when the view is refreshed as bindings are added/removed - 'resolve': when the cached values are resolved and updated |
+|  [ContextView](./context.contextview.md) | <code>ContextView</code> provides a view for a given context chain to maintain a live list of matching bindings and their resolved values within the context hierarchy.<!-- -->This class is the key utility to implement dynamic extensions for extension points. For example, the RestServer can react to <code>controller</code> bindings even they are added/removed/updated after the application starts.<code>ContextView</code> is an event emitter that emits the following events: - 'bind': when a binding is added to the view - 'unbind': when a binding is removed from the view - 'close': when the view is closed (stopped observing context events) - 'refresh': when the view is refreshed as bindings are added/removed - 'resolve': when the cached values are resolved and updated |
 |  [DefaultConfigurationResolver](./context.defaultconfigurationresolver.md) | Resolver for configurations of bindings |
 |  [GenericInterceptorChain](./context.genericinterceptorchain.md) | A chain of generic interceptors to be invoked for the given context |
 |  [InterceptedInvocationContext](./context.interceptedinvocationcontext.md) | A specialized InvocationContext for interceptors |
@@ -104,6 +104,7 @@ permalink: /doc/en/lb4/apidocs.context.html
 |  [ConfigurationResolver](./context.configurationresolver.md) | Resolver for configuration of bindings. It's responsible for finding corresponding configuration for a given binding key.<!-- -->By default, <code>undefined</code> is expected if no configuration is provided. The behavior can be overridden by setting <code>optional</code> to <code>false</code> in resolution options. |
 |  [ContextInspectOptions](./context.contextinspectoptions.md) | Options for context.inspect() |
 |  [ContextObserver](./context.contextobserver.md) | Observers of context bind/unbind events |
+|  [ContextViewEvent](./context.contextviewevent.md) | An event emitted by a <code>ContextView</code> |
 |  [InjectBindingMetadata](./context.injectbindingmetadata.md) | Metadata for <code>@inject.binding</code> |
 |  [Injection](./context.injection.md) | Descriptor for an injection point |
 |  [InjectionElement](./context.injectionelement.md) | Wrapper for injections tracked by resolution sessions |

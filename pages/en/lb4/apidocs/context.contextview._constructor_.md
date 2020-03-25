@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.context.contextview._constructor_.html
 
 ## ContextView.(constructor)
 
-Constructs a new instance of the `ContextView` class
+Create a context view
 
 <b>Signature:</b>
 
@@ -25,8 +25,8 @@ constructor(context: Context, filter: BindingFilter, comparator?: BindingCompara
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  context | <code>Context</code> |  |
-|  filter | <code>BindingFilter</code> |  |
-|  comparator | <code>BindingComparator &#124; undefined</code> |  |
+|  context | <code>Context</code> | Context object to watch |
+|  filter | <code>BindingFilter</code> | Binding filter to match bindings of interest |
+|  comparator | <code>BindingComparator &#124; undefined</code> | Comparator to sort the matched bindings |
 
 

@@ -17,7 +17,7 @@ permalink: /doc/en/lb4/apidocs.context.contextview.html
 
 This class is the key utility to implement dynamic extensions for extension points. For example, the RestServer can react to `controller` bindings even they are added/removed/updated after the application starts.
 
-`ContextView` is an event emitter that emits the following events: - 'close': when the view is closed (stopped observing context events) - 'refresh': when the view is refreshed as bindings are added/removed - 'resolve': when the cached values are resolved and updated
+`ContextView` is an event emitter that emits the following events: - 'bind': when a binding is added to the view - 'unbind': when a binding is removed from the view - 'close': when the view is closed (stopped observing context events) - 'refresh': when the view is refreshed as bindings are added/removed - 'resolve': when the cached values are resolved and updated
 
 <b>Signature:</b>
 
@@ -29,14 +29,14 @@ export declare class ContextView<T = unknown> extends EventEmitter implements Co
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)(context, filter, comparator)](./context.contextview._constructor_.md) |  | Constructs a new instance of the <code>ContextView</code> class |
+|  [(constructor)(context, filter, comparator)](./context.contextview._constructor_.md) |  | Create a context view |
 
 ## Properties
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [\_cachedBindings](./context.contextview._cachedbindings.md) |  | <code>Readonly&lt;Binding&lt;T&gt;&gt;[] &#124; undefined</code> |  |
-|  [\_cachedValues](./context.contextview._cachedvalues.md) |  | <code>T[] &#124; undefined</code> |  |
+|  [\_cachedBindings](./context.contextview._cachedbindings.md) |  | <code>Readonly&lt;Binding&lt;T&gt;&gt;[] &#124; undefined</code> | An array of cached bindings that matches the binding filter |
+|  [\_cachedValues](./context.contextview._cachedvalues.md) |  | <code>Map&lt;Readonly&lt;Binding&lt;T&gt;&gt;, T&gt; &#124; undefined</code> | A map of cached values by binding |
 |  [bindings](./context.contextview.bindings.md) |  | <code>Readonly&lt;Binding&lt;T&gt;&gt;[]</code> | Get the list of matched bindings. If they are not cached, it tries to find them from the context. |
 |  [comparator](./context.contextview.comparator.md) |  | <code>BindingComparator &#124; undefined</code> |  |
 |  [context](./context.contextview.context.md) |  | <code>Context</code> |  |
@@ -49,7 +49,7 @@ export declare class ContextView<T = unknown> extends EventEmitter implements Co
 |  [asGetter(session)](./context.contextview.asgetter.md) |  | As a <code>Getter</code> function |
 |  [close()](./context.contextview.close.md) |  | Stop listening events from the context |
 |  [findBindings()](./context.contextview.findbindings.md) |  | Find matching bindings and refresh the cache |
-|  [observe(event, binding)](./context.contextview.observe.md) |  | Listen on <code>bind</code> or <code>unbind</code> and invalidate the cache |
+|  [observe(event, binding, context)](./context.contextview.observe.md) |  | Listen on <code>bind</code> or <code>unbind</code> and invalidate the cache |
 |  [open()](./context.contextview.open.md) |  | Start listening events from the context |
 |  [refresh()](./context.contextview.refresh.md) |  | Refresh the view by invalidating its cache |
 |  [resolve(session)](./context.contextview.resolve.md) |  | Resolve values for the matching bindings |

@@ -59,6 +59,7 @@ permalink: /doc/en/lb4/apidocs.core.html
 |  --- | --- |
 |  [CoreBindings](./core.corebindings.md) | Namespace for core binding keys |
 |  [CoreTags](./core.coretags.md) |  |
+|  [extensions](./core.extensions.md) |  |
 
 ## Variables
 

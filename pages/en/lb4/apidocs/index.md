@@ -25,6 +25,7 @@ permalink: /doc/en/lb4/apidocs.index.html
 |  [@loopback/booter-lb3app](./booter-lb3app.md) |  |
 |  [@loopback/context](./context.md) |  |
 |  [@loopback/core](./core.md) |  |
+|  [@loopback/cron](./cron.md) |  |
 |  [@loopback/extension-health](./extension-health.md) |  |
 |  [@loopback/extension-logging](./extension-logging.md) |  |
 |  [@loopback/extension-metrics](./extension-metrics.md) |  |

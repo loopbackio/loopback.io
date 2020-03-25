@@ -18,7 +18,7 @@ Listen on `bind` or `unbind` and invalidate the cache
 <b>Signature:</b>
 
 ```typescript
-observe(event: ContextEventType, binding: Readonly<Binding<unknown>>): void;
+observe(event: ContextEventType, binding: Readonly<Binding<unknown>>, context: Context): void;
 ```
 
 ## Parameters
@@ -27,6 +27,7 @@ observe(event: ContextEventType, binding: Readonly<Binding<unknown>>): void;
 |  --- | --- | --- |
 |  event | <code>ContextEventType</code> |  |
 |  binding | <code>Readonly&lt;Binding&lt;unknown&gt;&gt;</code> |  |
+|  context | <code>Context</code> |  |
 
 <b>Returns:</b>
 

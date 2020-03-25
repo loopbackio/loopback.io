@@ -26,6 +26,7 @@ permalink: /doc/en/lb4/apidocs.rest.html
 |  [FindRouteProvider](./rest.findrouteprovider.md) |  |
 |  [GetFromContextProvider](./rest.getfromcontextprovider.md) |  |
 |  [HttpHandler](./rest.httphandler.md) |  |
+|  [InfoSpecEnhancer](./rest.infospecenhancer.md) | An OpenAPI spec enhancer to populate <code>info</code> with application metadata (package.json). |
 |  [InvokeMethodProvider](./rest.invokemethodprovider.md) |  |
 |  [JsonBodyParser](./rest.jsonbodyparser.md) |  |
 |  [LogErrorProvider](./rest.logerrorprovider.md) |  |

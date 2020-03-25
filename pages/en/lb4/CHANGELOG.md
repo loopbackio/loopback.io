@@ -39,6 +39,7 @@ permalink: /doc/en/lb4/changelog.index.html
 
 - [@loopback/apiconnect](changelogs/extensions/apiconnect/CHANGELOG.md)
 - [@loopback/authentication-passport](changelogs/extensions/authentication-passport/CHANGELOG.md)
+- [@loopback/cron](changelogs/extensions/cron/CHANGELOG.md)
 - [@loopback/extension-health](changelogs/extensions/health/CHANGELOG.md)
 - [@loopback/extension-logging](changelogs/extensions/logging/CHANGELOG.md)
 - [@loopback/extension-metrics](changelogs/extensions/metrics/CHANGELOG.md)
@@ -60,3 +61,4 @@ permalink: /doc/en/lb4/changelog.index.html
 - [@loopback/example-soap-calculator](changelogs/examples/soap-calculator/CHANGELOG.md)
 - [@loopback/example-todo](changelogs/examples/todo/CHANGELOG.md)
 - [@loopback/example-todo-list](changelogs/examples/todo-list/CHANGELOG.md)
+- [@loopback/example-validation-app](changelogs/examples/validation-app/CHANGELOG.md)

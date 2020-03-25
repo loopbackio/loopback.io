@@ -238,6 +238,10 @@ children:
     url: Self-hosted-rest-api-explorer.html
     output: 'web, pdf'
 
+  - title: 'Creating CRUD REST APIs from a model'
+    url: Creating-crud-rest-apis.html
+    output: 'web, pdf'
+
   - title: 'Authentication'
     url: Loopback-component-authentication.html
     output: 'web, pdf'
@@ -497,6 +501,10 @@ children:
 
   - title: 'Repository generator'
     url: Repository-generator.html
+    output: 'web, pdf'
+
+  - title: 'REST CRUD model endpoints generator'
+    url: Rest-Crud-generator.html
     output: 'web, pdf'
 
   - title: 'Service generator'
