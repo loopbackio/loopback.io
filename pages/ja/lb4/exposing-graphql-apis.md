@@ -2,8 +2,8 @@
 lang: ja
 title: 'GraphQL APIの公開'
 keywords: LoopBack 4.0, LoopBack 4, GraphQL
-sidebar: lb4_sidebar
-permalink: /doc/en/lb4/exposing-graphql-apis.html
+sidebar: ja_lb4_sidebar
+permalink: /doc/jp/lb4/exposing-graphql-apis.html
 ---
 
 ## 概要

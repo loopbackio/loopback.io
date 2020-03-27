@@ -2,8 +2,8 @@
 lang: ja
 title: 'Loopback REST APIでExpress Applicationを構築する'
 keywords: LoopBack 4.0, LoopBack 4
-sidebar: lb4_sidebar
-permalink: /doc/en/lb4/express-with-lb4-rest-tutorial.html
+sidebar: ja_lb4_sidebar
+permalink: /doc/jp/lb4/express-with-lb4-rest-tutorial.html
 summary: A simple Express application with LoopBack 4 REST API
 ---
 

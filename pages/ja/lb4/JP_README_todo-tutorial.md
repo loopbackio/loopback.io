@@ -27,18 +27,18 @@ npm i -g @loopback/cli
 
 ## チュートリアル
 
-このチュートリアルを進めるには、[Create your app scaffolding](http://loopback.io/doc/en/lb4/todo-tutorial-scaffolding.html)セクションから始めます。
+このチュートリアルを進めるには、[Create your app scaffolding](http://loopback.io/doc/jp/lb4/todo-tutorial-scaffolding.html)セクションから始めます。
 
 ### 手順
 
-1.  [アプリの土台を作成する](http://loopback.io/doc/en/lb4/todo-tutorial-scaffolding.html)
-2.  [Todoモデルを追加する](http://loopback.io/doc/en/lb4/todo-tutorial-model.html)
-3.  [データソースを追加する](http://loopback.io/doc/en/lb4/todo-tutorial-datasource.html)
-4.  [リポジトリを追加する](http://loopback.io/doc/en/lb4/todo-tutorial-repository.html)
-5.  [コントローラーを追加する](http://loopback.io/doc/en/lb4/todo-tutorial-controller.html)
-6.  [結合する](http://loopback.io/doc/en/lb4/todo-tutorial-putting-it-together.html)
+1.  [アプリの土台を作成する](http://loopback.io/doc/jp/lb4/todo-tutorial-scaffolding.html)
+2.  [Todoモデルを追加する](http://loopback.io/doc/jp/lb4/todo-tutorial-model.html)
+3.  [データソースを追加する](http://loopback.io/doc/jp/lb4/todo-tutorial-datasource.html)
+4.  [リポジトリを追加する](http://loopback.io/doc/jp/lb4/todo-tutorial-repository.html)
+5.  [コントローラーを追加する](http://loopback.io/doc/jp/lb4/todo-tutorial-controller.html)
+6.  [結合する](http://loopback.io/doc/jp/lb4/todo-tutorial-putting-it-together.html)
 7.  補足:
-    [ジオコーディングサービスと統合する](http://loopback.io/doc/en/lb4/todo-tutorial-geocoding-service.html)
+    [ジオコーディングサービスと統合する](http://loopback.io/doc/jp/lb4/todo-tutorial-geocoding-service.html)
 
 ## 試してみましょう
 
