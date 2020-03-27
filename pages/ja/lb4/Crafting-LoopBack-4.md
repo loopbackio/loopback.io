@@ -71,14 +71,14 @@ LoopBackは長年の開発歴とリリースにより、機能-ユーザー数�
 
 LoopBackは、Node.jsアプリケーション開発者以外も、以下のように様々なユーザーの間で注目を集めています。
 
-- **API開発者 ** -LoopBackを使用して、Node.jsでAPIを作成できます。
+- **API開発者** -LoopBackを使用して、Node.jsでAPIを作成できます。
 - **LoopBackのメンテナーとコントリビューター** -LoopBackプロジェクトによるモジュールのビルドとメンテナンスができます。
 - **拡張機能の開発者** -LoopBackに拡張機能を提供して、フレームワークを強化できます。
 - **プラットフォーム開発者**  -付加価値製品を構築するベースとして、LoopBackを活用できます。
 
 ![loopback-ecosystem](./imgs/loopback-ecosystem.png)
 
-そこでコアチームは、上記のすべてのグループのニーズを満たすために、大胆にLoopBackを再構築することを決定しました。この決定により、新世代のAPI作成プラットフォームであるLoopBack 4が始まりました。詳細については、ブログ投稿[Loopbackを簡単に拡張できるようにするための次のステップ、Loopbackを発表](https://strongloop.com/strongblog/announcing-loopback-next)をお読みください。
+そこでコアチームは、上記のすべてのグループのニーズを満たすために、大胆にLoopBackを再構築することを決定しました。この決定により、新世代のAPI作成プラットフォームであるLoopBack 4が始まりました。詳細については、ブログ投稿、[Loopbackを簡単に拡張できるようにするための次のステップ、Loopbackを発表](https://strongloop.com/strongblog/announcing-loopback-next)をお読みください。
 
 
 ## 目的
@@ -292,7 +292,8 @@ LoopBackの主な目的は、CORSのミドルウェアや静的ファイルサ�
 詳細については、[インバウンドHTTP処理の改善](https://strongloop.com/strongblog/loopback4-improves-inbound-http-processing)に関するブログ投稿をご覧ください 。
 
 
-##LoopBack 4の拡張性の詳細
+
+##　LoopBack 4の拡張性の詳細
 
 LoopBack 4の拡張性を実現するには、いくつかの重要な柱があります。
 
