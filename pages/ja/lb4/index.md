@@ -1,6 +1,7 @@
 ---
 lang: ja
 title: LoopBack 4
+layout: translation
 toc: false
 keywords: LoopBack 4
 sidebar: ja_lb4_sidebar

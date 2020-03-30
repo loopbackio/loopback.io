@@ -129,7 +129,7 @@ children:
   - title: 'Creating an Express Application with LoopBack REST API'
     url: /doc/ja/lb4/express-with-lb4-rest-tutorial.html
     output: 'web, pdf'
-    translated: false
+    translated: true
 
 - title: 'Examples'
   url: /doc/ja/lb4/Examples.html
@@ -139,7 +139,7 @@ children:
 - title: 'Key concepts'
   url: /doc/ja/lb4/Concepts.html
   output: 'web, pdf'
-  translated: false
+  translated: true
   children:
 
   - title: 'Application'
@@ -290,7 +290,7 @@ children:
     - title: 'Exposing GraphQL APIs'
       url: /doc/ja/lb4/exposing-graphql-apis.html
       output: 'web, pdf'
-      translated: false
+      translated: true
 
     - title: 'Deploying to IBM Cloud'
       url: /doc/ja/lb4/Deploying-to-IBM-Cloud.html
@@ -479,7 +479,7 @@ children:
 - title: 'Crafting LoopBack 4'
   url: /doc/ja/lb4/Crafting-LoopBack-4.html
   output: 'web, pdf'
-  translated: false
+  translated: true
 
 - title: 'FAQ'
   url: /doc/ja/lb4/FAQ.html

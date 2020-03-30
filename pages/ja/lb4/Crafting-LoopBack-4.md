@@ -1,6 +1,7 @@
 ---
 lang: jp
 title: 'LoopBack 4を構築する'
+layout: translation
 keywords: LoopBack 4.0, LoopBack 4
 sidebar: ja_lb4_sidebar
 permalink: /doc/jp/lb4/Crafting-LoopBack-4.html
