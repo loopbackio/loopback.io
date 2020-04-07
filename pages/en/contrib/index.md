@@ -52,9 +52,9 @@ We welcome input and help with the documentation. If you're interested in contri
 
 The LoopBack community carries on lively discussions in several places:
 
-*   [LoopBackJS Google Group](https://groups.google.com/forum/?fromgroups#!forum/loopbackjs)
-*   [LoopBack on Stack Overflow](http://stackoverflow.com/questions/tagged/strongloop)
-*   [LoopBack on Gitter](https://gitter.im/strongloop/loopback)
+- [LoopBackJS Google Group](https://groups.google.com/forum/?fromgroups#!forum/loopbackjs)
+- [LoopBack on Stack Overflow](https://stackoverflow.com/questions/tagged/strongloop+or+loopback4+or+loopbackjs)
+- [LoopBack on Slack](https://join.slack.com/t/loopbackio/shared_invite/zt-8lbow73r-SKAKz61Vdao~_rGf91pcsw)
 
 Feel free to learn and participate by asking and answering questions.
 
