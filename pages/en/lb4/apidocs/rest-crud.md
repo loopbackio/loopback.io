@@ -13,7 +13,11 @@ permalink: /doc/en/lb4/apidocs.rest-crud.html
 
 ## rest-crud package
 
-[@loopback/rest-crud](https://github.com/strongloop/loopback-next/tree/master/packages/rest-crud)
+REST API controller implementing default CRUD semantics.
+
+## Remarks
+
+Allows LoopBack 4 applications to quickly expose models via REST API without having to implement custom controller or repository classes.
 
 ## Classes
 

@@ -13,7 +13,13 @@ permalink: /doc/en/lb4/apidocs.openapi-spec-builder.html
 
 ## openapi-spec-builder package
 
-[@loopback/openapi-spec-builder](https://github.com/strongloop/loopback-next/tree/master/packages/openapi-spec-builder)
+A package to simplify creating OpenAPI specification documents in your tests using the builder pattern.
+
+## Remarks
+
+Creating a full OpenAPI spec document in automated tests is rather cumbersome, long JSON-like objects pollute the test test code and make it difficult for readers to distinguish between what's important in the test and what's just shared OpenAPI boilerplate.
+
+OpenApiSpecBuilder utilizes [Test Data Builder pattern](http://www.natpryce.com/articles/000714.html) to provide a TypeScript/JavaScript API allowing users to create full OpenAPI Specification 3 documents in few lines of code.
 
 ## Classes
 

@@ -25,8 +25,8 @@ export declare function defineModelClass<BaseCtor extends typeof Model, Props ex
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  base | <code>BaseCtor</code> |  |
-|  definition | <code>ModelDefinition</code> |  |
+|  base | <code>BaseCtor</code> | The base model to extend, typically Model or Entity. You can also use your own base class, e.g. <code>User</code>. |
+|  definition | <code>ModelDefinition</code> | Definition of the model to create. |
 
 <b>Returns:</b>
 

@@ -32,6 +32,7 @@ export declare namespace RestBindings
 
 |  Variable | Description |
 |  --- | --- |
+|  [AJV\_FACTORY](./rest.restbindings.ajv_factory.md) | Binding key for AJV |
 |  [API\_SPEC](./rest.restbindings.api_spec.md) | Binding key for setting and injecting an OpenAPI spec |
 |  [BASE\_PATH](./rest.restbindings.base_path.md) | Internal binding key for basePath |
 |  [BIND\_ELEMENT](./rest.restbindings.bind_element.md) | Binding key for setting and injecting a wrapper function for setting values on a given context |

@@ -29,8 +29,8 @@ export declare function defineCrudRestController<T extends Entity, IdType, IdNam
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  modelCtor | <code>typeof Entity &amp; {</code><br/><code>    prototype: T &amp; {</code><br/><code>        [key in IdName]: IdType;</code><br/><code>    };</code><br/><code>}</code> |  |
-|  options | <code>CrudRestControllerOptions</code> |  |
+|  modelCtor | <code>typeof Entity &amp; {</code><br/><code>    prototype: T &amp; {</code><br/><code>        [key in IdName]: IdType;</code><br/><code>    };</code><br/><code>}</code> | A model class, e.g. <code>Product</code>. |
+|  options | <code>CrudRestControllerOptions</code> | Configuration options, e.g. <code>{basePath: '/products'}</code>. |
 
 <b>Returns:</b>
 

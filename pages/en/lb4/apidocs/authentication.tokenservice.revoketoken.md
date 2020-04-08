@@ -25,7 +25,7 @@ revokeToken?(token: string): Promise<boolean>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  token | <code>string</code> |  |
+|  token | <code>string</code> | The token/secret which should be revoked/invalidated. |
 
 <b>Returns:</b>
 

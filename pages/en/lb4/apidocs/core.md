@@ -13,7 +13,11 @@ permalink: /doc/en/lb4/apidocs.core.html
 
 ## core package
 
-[@loopback/core](https://github.com/strongloop/loopback-next/tree/master/packages/core)
+The core foundation for LoopBack 4. It can also serve as the platform to build large-scale Node.js applications and frameworks.
+
+## Remarks
+
+For examples of how to leverage `@loopback/core` to build composable and extensible projects, check out the [core tutorial](https://loopback.io/doc/en/lb4/core-tutorial.html)<!-- -->.
 
 ## Classes
 

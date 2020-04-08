@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.extension-logging.loginvocation.html
 
 ## logInvocation() function
 
- decorator for method invocations.
+`@logInvocation` decorator for method invocations.
 
 <b>Signature:</b>
 

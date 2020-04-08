@@ -13,7 +13,13 @@ permalink: /doc/en/lb4/apidocs.testlab.html
 
 ## testlab package
 
-[@loopback/testlab](https://github.com/strongloop/loopback-next/tree/master/packages/testlab)
+A collection of test utilities we use to write LoopBack tests.
+
+## Remarks
+
+Test utilities to help write LoopBack 4 tests:
+
+- `expect` - behavior-driven development (BDD) style assertions - `sinon` - test spies: functions recording arguments and other information for all of their calls - stubs: functions (spies) with pre-programmed behavior - mocks: fake methods (like spies) with pre-programmed behavior (like stubs) as well as pre-programmed expectations - Helpers for creating `supertest` clients for LoopBack applications - HTTP request/response stubs for writing tests without a listening HTTP server - Swagger/OpenAPI spec validation
 
 ## Classes
 
@@ -65,6 +71,7 @@ permalink: /doc/en/lb4/apidocs.testlab.html
 |  [HttpsOptions](./testlab.httpsoptions.md) |  |
 |  [RestApplicationLike](./testlab.restapplicationlike.md) |  |
 |  [RestServerLike](./testlab.restserverlike.md) |  |
+|  [TestSandboxOptions](./testlab.testsandboxoptions.md) | Options for a test sandbox |
 
 ## Variables
 

@@ -25,8 +25,8 @@ addOpenApiSpecEndpoint(path: string, form: OpenApiSpecForm): void;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  path | <code>string</code> |  |
-|  form | <code>OpenApiSpecForm</code> |  |
+|  path | <code>string</code> | Path at which to host the copy of the OpenAPI |
+|  form | <code>OpenApiSpecForm</code> | Form that should be renedered from that path |
 
 <b>Returns:</b>
 

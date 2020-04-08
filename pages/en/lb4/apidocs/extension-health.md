@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.extension-health.html
 
 ## extension-health package
 
-[@loopback/extension-health](https://github.com/strongloop/loopback-next/tree/master/extensions/health)
+A component to report health status using [@cloudnative/health](https://github.com/CloudNativeJS/cloud-health)<!-- -->.
 
 ## Classes
 

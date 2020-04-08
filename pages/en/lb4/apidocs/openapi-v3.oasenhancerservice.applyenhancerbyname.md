@@ -25,7 +25,7 @@ applyEnhancerByName(name: string): Promise<OpenApiSpec>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  name | <code>string</code> |  |
+|  name | <code>string</code> | The name of the enhancer you want to apply |
 
 <b>Returns:</b>
 

@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.service-proxy.html
 
 ## service-proxy package
 
-[@loopback/service-proxy](https://github.com/strongloop/loopback-next/tree/master/packages/service-proxy)
+A common set of interfaces for interacting with service oriented backends such as REST APIs, SOAP Web Services, and gRPC microservices.
 
 ## Classes
 

@@ -13,7 +13,11 @@ permalink: /doc/en/lb4/apidocs.repository-json-schema.html
 
 ## repository-json-schema package
 
-[@loopback/repository-json-schema](https://github.com/strongloop/loopback-next/tree/master/packages/repository-json-schema)
+Convert a TypeScript class/model to a JSON Schema for users, leveraging LoopBack4's decorators, metadata, and reflection system.
+
+## Remarks
+
+Modules to easily convert LoopBack4 models that have been decorated with `@model` and `@property` to a matching JSON Schema Definition.
 
 ## Functions
 

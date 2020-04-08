@@ -25,7 +25,7 @@ generateToken(userProfile: UserProfile): Promise<string>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  userProfile | <code>UserProfile</code> |  |
+|  userProfile | <code>UserProfile</code> | A UserProfile for which a token should be generated. |
 
 <b>Returns:</b>
 

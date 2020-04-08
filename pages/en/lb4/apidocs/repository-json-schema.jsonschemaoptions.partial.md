@@ -15,9 +15,44 @@ permalink: /doc/en/lb4/apidocs.repository-json-schema.jsonschemaoptions.partial.
 
 Set this flag to mark all model properties as optional. This is typically used to describe request body of PATCH endpoints. This option will be overridden by the "optional" option if it is set and non-empty.
 
+The flag also applies to nested model instances if its value is set to 'deep', such as:
+
 <b>Signature:</b>
 
 ```typescript
-partial?: boolean;
+partial?: boolean | 'deep';
 ```
+
+## Example
+
+
+```ts
+@model()
+class Address {
+ @property()
+ street: string;
+ @property()
+ city: string;
+ @property()
+ state: string;
+ @property()
+ zipCode: string;
+}
+
+@model()
+class Customer {
+  @property()
+  address: Address;
+}
+
+// The following schema allows properties of `customer` optional, but not
+// `customer.address`
+const schemaRef1 = getModelSchemaRef(Customer, {partial: true});
+
+// The following schema allows properties of `customer` and
+// `customer.address` optional
+const schemaRef2 = getModelSchemaRef(Customer, {partial: 'deep'});
+
+```
+
 

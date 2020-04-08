@@ -25,8 +25,8 @@ export declare function getAuthorizationMetadata(target: object, methodName: str
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  target | <code>object</code> |  |
-|  methodName | <code>string</code> |  |
+|  target | <code>object</code> | Target object/class |
+|  methodName | <code>string</code> | Target method |
 
 <b>Returns:</b>
 

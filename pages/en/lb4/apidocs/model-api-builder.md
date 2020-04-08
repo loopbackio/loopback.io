@@ -13,7 +13,11 @@ permalink: /doc/en/lb4/apidocs.model-api-builder.html
 
 ## model-api-builder package
 
-[@loopback/model-api-builder](https://github.com/strongloop/loopback-next/tree/master/packages/model-api-builder)
+A packge with types and helpers for packages contributing Model API builders.
+
+## Remarks
+
+Provides a contract for extensions that contribute builders for repositories and controllers. Users provide both the model class and an extension. The extension is then used to build their repository and controller based on the model class.
 
 ## Interfaces
 

@@ -13,7 +13,11 @@ permalink: /doc/en/lb4/apidocs.authorization.html
 
 ## authorization package
 
-[@loopback/authorization](https://github.com/strongloop/loopback-next/tree/master/packages/authorization)
+A LoopBack 4 component for authorization support (Role based, Permission based, Vote based)
+
+## Remarks
+
+To read on key building blocks read through [LoopBack authorization docs](https://loopback.io/doc/en/lb4/Loopback-component-authorization.html)
 
 ## Classes
 

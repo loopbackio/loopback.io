@@ -18,17 +18,17 @@ The function to invoke the contained passport strategy. 1. Create an instance of
 <b>Signature:</b>
 
 ```typescript
-authenticate(request: Request): Promise<UserProfile>;
+authenticate(request: Request): Promise<UserProfile | RedirectRoute>;
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  request | <code>Request</code> |  |
+|  request | <code>Request</code> | The incoming request. |
 
 <b>Returns:</b>
 
-`Promise<UserProfile>`
+`Promise<UserProfile | RedirectRoute>`
 
 

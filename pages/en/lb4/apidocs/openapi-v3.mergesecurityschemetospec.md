@@ -26,8 +26,8 @@ export declare function mergeSecuritySchemeToSpec(spec: OpenApiSpec, schemeName:
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  spec | <code>OpenApiSpec</code> |  |
-|  schemeName | <code>string</code> |  |
-|  schemeSpec | <code>SecuritySchemeObject</code> |  |
+|  schemeName | <code>string</code> | The name of the security scheme to be added |
+|  schemeSpec | <code>SecuritySchemeObject</code> | The security scheme spec body to be added, |
 
 <b>Returns:</b>
 

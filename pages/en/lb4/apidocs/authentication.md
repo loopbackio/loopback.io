@@ -13,7 +13,15 @@ permalink: /doc/en/lb4/apidocs.authentication.html
 
 ## authentication package
 
-[@loopback/authentication](https://github.com/strongloop/loopback-next/tree/master/packages/authentication)
+A LoopBack 4 component for authentication support.
+
+## Remarks
+
+The core logic for the authentication layer in LoopBack 4.
+
+It contains:
+
+- A decorator to express an authentication requirement on controller methods - A provider to access method-level authentication metadata - An action in the REST sequence to enforce authentication - An extension point to discover all authentication strategies and handle the delegation
 
 ## Classes
 

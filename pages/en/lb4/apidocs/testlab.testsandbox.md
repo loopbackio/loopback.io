@@ -25,7 +25,7 @@ export declare class TestSandbox
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)(path)](./testlab.testsandbox._constructor_.md) |  | Will create a directory if it doesn't already exist. If it exists, you still get an instance of the TestSandbox. |
+|  [(constructor)(rootPath, options)](./testlab.testsandbox._constructor_.md) |  | Will create a directory if it doesn't already exist. If it exists, you still get an instance of the TestSandbox. |
 
 ## Properties
 
@@ -39,7 +39,6 @@ export declare class TestSandbox
 |  --- | --- | --- |
 |  [copyFile(src, dest)](./testlab.testsandbox.copyfile.md) |  | Copies a file from src to the TestSandbox. If copying a <code>.js</code> file which has an accompanying <code>.js.map</code> file in the src file location, the dest file will have its sourceMappingURL updated to point to the original file as an absolute path so you don't need to copy the map file. |
 |  [delete()](./testlab.testsandbox.delete.md) |  | Deletes the TestSandbox. |
-|  [getPath()](./testlab.testsandbox.getpath.md) |  | Returns the path of the TestSandbox |
 |  [mkdir(dir)](./testlab.testsandbox.mkdir.md) |  | Makes a directory in the TestSandbox |
 |  [reset()](./testlab.testsandbox.reset.md) |  | Resets the TestSandbox. (Remove all files in it). |
 |  [writeJsonFile(dest, data)](./testlab.testsandbox.writejsonfile.md) |  | Creates a new file and writes the given data serialized as JSON. |

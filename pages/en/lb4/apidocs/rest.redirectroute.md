@@ -32,7 +32,10 @@ export declare class RedirectRoute implements RouteEntry, ResolvedRoute
 |  [path](./rest.redirectroute.path.md) |  | <code>string</code> |  |
 |  [pathParams](./rest.redirectroute.pathparams.md) |  | <code>PathParameterValues</code> |  |
 |  [schemas](./rest.redirectroute.schemas.md) |  | <code>SchemasObject</code> |  |
+|  [sourcePath](./rest.redirectroute.sourcepath.md) |  | <code>string</code> |  |
 |  [spec](./rest.redirectroute.spec.md) |  | <code>OperationObject</code> |  |
+|  [statusCode](./rest.redirectroute.statuscode.md) |  | <code>number</code> |  |
+|  [targetLocation](./rest.redirectroute.targetlocation.md) |  | <code>string</code> |  |
 |  [verb](./rest.redirectroute.verb.md) |  | <code>string</code> |  |
 
 ## Methods
@@ -41,6 +44,7 @@ export declare class RedirectRoute implements RouteEntry, ResolvedRoute
 |  --- | --- | --- |
 |  [describe()](./rest.redirectroute.describe.md) |  |  |
 |  [invokeHandler({ response }, args)](./rest.redirectroute.invokehandler.md) |  |  |
+|  [isRedirectRoute(obj)](./rest.redirectroute.isredirectroute.md) | <code>static</code> | type guard type checker for this class |
 |  [updateBindings(requestContext)](./rest.redirectroute.updatebindings.md) |  |  |
 
 

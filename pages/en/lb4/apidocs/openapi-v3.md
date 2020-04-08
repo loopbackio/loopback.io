@@ -13,7 +13,13 @@ permalink: /doc/en/lb4/apidocs.openapi-v3.html
 
 ## openapi-v3 package
 
-[@loopback/openapi-v3](https://github.com/strongloop/loopback-next/tree/master/packages/openapi-v3)
+Decorators that describe LoopBack artifacts as OpenAPI 3.0.0 metadata and utilities that transfer LoopBack metadata to OpenAPI 3.0.0 specifications.
+
+## Remarks
+
+The package has functions described above for LoopBack controller classes. Decorators apply REST api mapping metadata to controller classes and their members. And utilities that inspect controller classes to build OpenAPI 3.0.0 specifications from REST API mapping metadata.
+
+Functions for more artifacts will be added when needed.
 
 ## Classes
 

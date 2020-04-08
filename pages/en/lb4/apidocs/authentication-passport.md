@@ -13,7 +13,13 @@ permalink: /doc/en/lb4/apidocs.authentication-passport.html
 
 ## authentication-passport package
 
-[@loopback/authentication-passport](https://github.com/strongloop/loopback-next/tree/master/extensions/authentication-passport)
+An adapter to plug in passport based strategies to the authentication system in [@loopback/authentication @3.x](./authentication.md)<!-- -->.
+
+## Remarks
+
+[@loopback/authentication @3.x](./authentication.md) allows users to register authentication strategies that implement the interface `AuthenticationStrategy`<!-- -->.
+
+Since AuthenticationStrategy describes a strategy with different contracts than the passport Strategy, and we'd like to support the existing 500+ community passport strategies, an adapter class is created in this package to convert a passport strategy to the one that LoopBack 4 authentication system wants.
 
 ## Classes
 

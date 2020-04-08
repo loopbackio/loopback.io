@@ -13,7 +13,11 @@ permalink: /doc/en/lb4/apidocs.http-server.html
 
 ## http-server package
 
-[@loopback/http-server](https://github.com/strongloop/loopback-next/tree/master/packages/http-server)
+HTTP / HTTPS server endpoints for LoopBack 4 apps.
+
+## Remarks
+
+A package used by LoopBack 4 for creating HTTP / HTTPS server.
 
 ## Classes
 

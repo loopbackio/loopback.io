@@ -13,7 +13,16 @@ permalink: /doc/en/lb4/apidocs.metadata.methodmultidecoratorfactory.html
 
 ## MethodMultiDecoratorFactory class
 
-Factory for an append-array of method-level decorators The  metadata for a method is an array. Each item in the array should be a single value, containing a response code and a single spec or Model. This should allow:
+Factory for an append-array of method-level decorators The `@response` metadata for a method is an array. Each item in the array should be a single value, containing a response code and a single spec or Model. This should allow:
+
+<b>Signature:</b>
+
+```typescript
+export declare class MethodMultiDecoratorFactory<T> extends MethodDecoratorFactory<T[]> 
+```
+
+## Example
+
 
 ```ts
  @response(200, MyFirstModel)
@@ -29,12 +38,6 @@ In the case that a ResponseObject is passed, it becomes the default for descript
 In the case that a ReferenceObject is passed, it and it alone is used, since references can be external and we cannot `oneOf` their content.
 
 The factory creates and updates an array of items T\[\], and the getter provides the values as that array.
-
-<b>Signature:</b>
-
-```typescript
-export declare class MethodMultiDecoratorFactory<T> extends MethodDecoratorFactory<T[]> 
-```
 
 ## Methods
 

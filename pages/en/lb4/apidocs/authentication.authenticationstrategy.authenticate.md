@@ -18,7 +18,7 @@ The 'authenticate' method takes in a given request and returns a user profile wh
 <b>Signature:</b>
 
 ```typescript
-authenticate(request: Request): Promise<UserProfile | undefined>;
+authenticate(request: Request): Promise<UserProfile | RedirectRoute | undefined>;
 ```
 
 ## Parameters
@@ -29,6 +29,6 @@ authenticate(request: Request): Promise<UserProfile | undefined>;
 
 <b>Returns:</b>
 
-`Promise<UserProfile | undefined>`
+`Promise<UserProfile | RedirectRoute | undefined>`
 
 

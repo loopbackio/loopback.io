@@ -27,8 +27,8 @@ export declare function mergeOpenAPISpec(currentSpec: Partial<OpenApiSpec>, patc
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  currentSpec | <code>Partial&lt;OpenApiSpec&gt;</code> |  |
-|  patchSpec | <code>Partial&lt;OpenApiSpec&gt;</code> |  |
+|  currentSpec | <code>Partial&lt;OpenApiSpec&gt;</code> | The original spec |
+|  patchSpec | <code>Partial&lt;OpenApiSpec&gt;</code> | The patch spec to be merged into the original spec |
 
 <b>Returns:</b>
 

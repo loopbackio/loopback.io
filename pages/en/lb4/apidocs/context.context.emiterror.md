@@ -25,7 +25,7 @@ emitError(err: unknown): void;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  err | <code>unknown</code> |  |
+|  err | <code>unknown</code> | Error |
 
 <b>Returns:</b>
 

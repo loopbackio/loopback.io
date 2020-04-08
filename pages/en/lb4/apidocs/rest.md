@@ -13,7 +13,13 @@ permalink: /doc/en/lb4/apidocs.rest.html
 
 ## rest package
 
-[@loopback/rest](https://github.com/strongloop/loopback-next/tree/master/packages/rest)
+The REST API package for loopback-next.
+
+## Remarks
+
+A REST server for LoopBack 4 application instances, complete with:
+
+- new custom routing engine (special thanks to @<!-- -->bajtos)! - tools for defining your application routes - OpenAPI 3.0 spec (openapi.json/openapi.yaml) generation using @<!-- -->loopback/openapi-v3 - a default sequence implementation to manage the request and response lifecycle
 
 ## Classes
 
@@ -114,6 +120,9 @@ permalink: /doc/en/lb4/apidocs.rest.html
 |  Type Alias | Description |
 |  --- | --- |
 |  [AjvErrorOptions](./rest.ajverroroptions.md) | Options for AJV errors |
+|  [AjvFactory](./rest.ajvfactory.md) | Factory function for Ajv instances |
+|  [AjvFormat](./rest.ajvformat.md) | Ajv format definition with a name |
+|  [AjvKeyword](./rest.ajvkeyword.md) | Ajv keyword definition with a name |
 |  [BindElement](./rest.bindelement.md) |  |
 |  [BodyParserFunction](./rest.bodyparserfunction.md) | Plain function for body parsing |
 |  [ControllerClass](./rest.controllerclass.md) | Controller class |

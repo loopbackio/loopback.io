@@ -17,7 +17,7 @@ The `gracePeriodForClose` property controls how to stop the server gracefully. I
 
 Defaults to Infinity (don't force-close). If you want to immediately destroy all sockets set its value to `0`<!-- -->.
 
- https://www.npmjs.com/package/stoppable
+See [stoppable](https://www.npmjs.com/package/stoppable)
 
 <b>Signature:</b>
 

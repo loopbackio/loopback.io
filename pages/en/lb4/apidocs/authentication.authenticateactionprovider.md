@@ -29,7 +29,7 @@ export declare class AuthenticateActionProvider implements Provider<Authenticate
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)(getStrategy, setCurrentUser)](./authentication.authenticateactionprovider._constructor_.md) |  | Constructs a new instance of the <code>AuthenticateActionProvider</code> class |
+|  [(constructor)(getStrategy, setCurrentUser, setRedirectUrl, setRedirectStatus)](./authentication.authenticateactionprovider._constructor_.md) |  | Constructs a new instance of the <code>AuthenticateActionProvider</code> class |
 
 ## Properties
 
@@ -37,6 +37,8 @@ export declare class AuthenticateActionProvider implements Provider<Authenticate
 |  --- | --- | --- | --- |
 |  [getStrategy](./authentication.authenticateactionprovider.getstrategy.md) |  | <code>Getter&lt;AuthenticationStrategy&gt;</code> |  |
 |  [setCurrentUser](./authentication.authenticateactionprovider.setcurrentuser.md) |  | <code>Setter&lt;UserProfile&gt;</code> |  |
+|  [setRedirectStatus](./authentication.authenticateactionprovider.setredirectstatus.md) |  | <code>Setter&lt;number&gt;</code> |  |
+|  [setRedirectUrl](./authentication.authenticateactionprovider.setredirecturl.md) |  | <code>Setter&lt;string&gt;</code> |  |
 
 ## Methods
 

@@ -18,13 +18,31 @@ Will create a directory if it doesn't already exist. If it exists, you still get
 <b>Signature:</b>
 
 ```typescript
-constructor(path: string);
+constructor(rootPath: string, options?: TestSandboxOptions);
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  path | <code>string</code> | Path of the TestSandbox. If relative (it will be resolved relative to cwd()). |
+|  rootPath | <code>string</code> | Root path of the TestSandbox. If relative it will be resolved against the current directory. |
+|  options | <code>TestSandboxOptions</code> | Options to control if/how the sandbox creates a subdirectory for the sandbox. If not provided, the sandbox will automatically creates a unique temporary subdirectory. This allows sandboxes with the same root path can be used in parallel during testing. |
+
+## Example
+
+
+```ts
+// Create a sandbox as a unique temporary subdirectory under the rootPath
+const sandbox = new TestSandbox(rootPath);
+const sandbox = new TestSandbox(rootPath, {subdir: true});
+
+// Create a sandbox in the root path directly
+// This is same as the old behavior
+const sandbox = new TestSandbox(rootPath, {subdir: false});
+
+// Create a sandbox in the `test1` subdirectory of the root path
+const sandbox = new TestSandbox(rootPath, {subdir: 'test1'});
+
+```
 
 

@@ -25,7 +25,7 @@ export declare class ParseParamsProvider implements Provider<ParseParams>
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)(requestBodyParser, options)](./rest.parseparamsprovider._constructor_.md) |  | Constructs a new instance of the <code>ParseParamsProvider</code> class |
+|  [(constructor)(requestBodyParser, validationOptions, ajvFactory)](./rest.parseparamsprovider._constructor_.md) |  | Constructs a new instance of the <code>ParseParamsProvider</code> class |
 
 ## Methods
 

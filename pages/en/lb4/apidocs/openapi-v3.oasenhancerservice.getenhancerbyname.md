@@ -25,7 +25,7 @@ getEnhancerByName(name: string): Promise<OASEnhancer | undefined>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  name | <code>string</code> |  |
+|  name | <code>string</code> | The name of the enhancer you want to find |
 
 <b>Returns:</b>
 

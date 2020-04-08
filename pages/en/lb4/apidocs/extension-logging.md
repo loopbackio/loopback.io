@@ -26,7 +26,7 @@ permalink: /doc/en/lb4/apidocs.extension-logging.html
 
 |  Function | Description |
 |  --- | --- |
-|  [logInvocation()](./extension-logging.loginvocation.md) |  decorator for method invocations. |
+|  [logInvocation()](./extension-logging.loginvocation.md) | <code>@logInvocation</code> decorator for method invocations. |
 
 ## Namespaces
 

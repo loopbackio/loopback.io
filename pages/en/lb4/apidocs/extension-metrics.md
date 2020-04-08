@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.extension-metrics.html
 
 ## extension-metrics package
 
-[@loopback/extension-metrics](https://github.com/strongloop/loopback-next/tree/master/extensions/metrics)
+A component that reports metrics of Node.js, the LoopBack framework, and your application to Prometheus.
 
 ## Classes
 

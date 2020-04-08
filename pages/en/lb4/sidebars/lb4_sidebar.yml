@@ -128,6 +128,10 @@ children:
       url: Decorators_repository.html
       output: 'web, pdf'
 
+  - title: 'Mixins'
+    url: Mixin.html
+    output: 'web, pdf'
+
   - title: 'Error handling'
     url: Error-handling.html
     output: 'web, pdf'
@@ -199,6 +203,22 @@ children:
     url: File-upload-download.html
     output: 'web, pdf'
 
+  - title: 'Validation'
+    url: Validation.html
+    output: 'web, pdf'
+    children:
+      - title: 'Validation in REST Layer'
+        url: Validation-REST-layer.html
+        output: 'web, pdf'
+
+      - title: 'Validation in the Controller, Repository and Service Layer'
+        url: Validation-controller-repo-service-layer.html
+        output: 'web, pdf'
+
+      - title: 'Validation in ORM Layer'
+        url: Validation-ORM-layer.html
+        output: 'web, pdf'
+
 - title: 'Behind the Scene'
   url: Behind-the-scene.html
   output: 'web, pdf'
@@ -223,6 +243,10 @@ children:
 
     - title: 'Components'
       url: Components.html
+      output: 'web, pdf'
+
+    - title: 'Request/response cycle'
+      url: Request-response-cycle.html
       output: 'web, pdf'
 
 - title: 'Booting an Application'
@@ -257,6 +281,10 @@ children:
 
   - title: 'Boot and Mount a LoopBack 3 Application'
     url: Boot-and-Mount-a-LoopBack-3-application.html
+    output: 'web, pdf'
+
+  - title: 'Running cron jobs'
+    url: Running-cron-jobs.html
     output: 'web, pdf'
 
   - title: 'Health check'
@@ -298,6 +326,10 @@ children:
 
   - title: 'Extending OpenAPI specification'
     url: Extending-OpenAPI-specification.html
+    output: 'web, pdf'
+
+  - title: 'Extending Model API builder'
+    url: Extending-Model-API-builder.html
     output: 'web, pdf'
 
   - title: 'Testing your extension'
@@ -535,6 +567,10 @@ children:
     url: Update-generator.html
     output: 'web, pdf'
 
+  - title: 'Generate copyright/license headers'
+    url: Copyright-generator.html
+    output: 'web, pdf'
+
 - title: 'Connectors reference'
   url: Connectors-reference.html
   output: 'web'
@@ -719,6 +755,10 @@ children:
       url: Swagger-connector.html
       output: 'web, pdf'
 
+    - title: 'OpenAPI connector'
+      url: OpenAPI-connector.html
+      output: 'web, pdf'
+
   - title: 'Community connectors'
     url: Community-connectors.html
     output: 'web, pdf'
@@ -856,3 +896,7 @@ children:
   - title: 'Considerations for GDPR readiness'
     url: Deploy-for-GDPR-readiness.html
     output: 'web, pdf'
+
+- title: 'FAQ'
+  url: FAQ.html
+  output: 'web, pdf'

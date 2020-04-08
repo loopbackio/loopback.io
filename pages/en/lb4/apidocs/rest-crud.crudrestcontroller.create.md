@@ -25,7 +25,7 @@ create(data: Omit<T, IdName>): Promise<T>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  data | <code>Omit&lt;T, IdName&gt;</code> |  |
+|  data | <code>Omit&lt;T, IdName&gt;</code> | Model data |
 
 <b>Returns:</b>
 

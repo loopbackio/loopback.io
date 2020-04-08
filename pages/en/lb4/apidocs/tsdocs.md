@@ -15,6 +15,8 @@ permalink: /doc/en/lb4/apidocs.tsdocs.html
 
 The `@loopback/tsdocs` package is an internal module to generate [tsdoc](https://github.com/Microsoft/tsdoc) based API docs for `@loopback/*` packages within [loopback-next](https://github.com/strongloop/loopback-next) monorepo managed by [Lerna](https://github.com/lerna/lerna)<!-- -->.
 
+## Remarks
+
 It's built on top of [Microsoft API Extractor](https://api-extractor.com)<!-- -->:
 
 - [api-extractor](https://github.com/Microsoft/web-build-tools/tree/master/apps/api-extractor) - [api-documenter](https://github.com/Microsoft/web-build-tools/tree/master/apps/api-documenter)
@@ -37,7 +39,7 @@ It's built on top of [Microsoft API Extractor](https://api-extractor.com)<!-- --
 |  --- | --- |
 |  [ApiDocsOptions](./tsdocs.apidocsoptions.md) | Options for api docs |
 |  [ExtractorOptions](./tsdocs.extractoroptions.md) | Options to run api-extractor against the lerna repo |
-|  [LernaPackage](./tsdocs.lernapackage.md) | TypeScript definition for {@<!-- -->link https://github.com/lerna/lerna/blob/master/core/package/index.js \| Lerna Package) |
+|  [LernaPackage](./tsdocs.lernapackage.md) | TypeScript definition for [Lerna Package](https://github.com/lerna/lerna/blob/master/core/package/index.js) |
 
 ## Variables
 

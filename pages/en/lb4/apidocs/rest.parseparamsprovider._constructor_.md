@@ -18,7 +18,7 @@ Constructs a new instance of the `ParseParamsProvider` class
 <b>Signature:</b>
 
 ```typescript
-constructor(requestBodyParser: RequestBodyParser, options?: RequestBodyParserOptions);
+constructor(requestBodyParser: RequestBodyParser, validationOptions?: RequestBodyValidationOptions, ajvFactory?: AjvFactory | undefined);
 ```
 
 ## Parameters
@@ -26,6 +26,7 @@ constructor(requestBodyParser: RequestBodyParser, options?: RequestBodyParserOpt
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  requestBodyParser | <code>RequestBodyParser</code> |  |
-|  options | <code>RequestBodyParserOptions</code> |  |
+|  validationOptions | <code>RequestBodyValidationOptions</code> |  |
+|  ajvFactory | <code>AjvFactory &#124; undefined</code> |  |
 
 

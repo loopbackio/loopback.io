@@ -27,7 +27,7 @@ protected entityToData<R extends T>(entity: R | DataObject<R>, options?: {}): Pr
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  entity | <code>R &#124; DataObject&lt;R&gt;</code> |  |
+|  entity | <code>R &#124; DataObject&lt;R&gt;</code> | The entity passed from CRUD operations' caller. |
 |  options | <code>{}</code> |  |
 
 <b>Returns:</b>

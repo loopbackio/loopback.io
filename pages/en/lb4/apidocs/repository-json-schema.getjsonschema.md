@@ -27,7 +27,7 @@ export declare function getJsonSchema<T extends object>(ctor: Function & {
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  ctor | <code>Function &amp; {</code><br/><code>    prototype: T;</code><br/><code>}</code> | Contructor of class to get JSON Schema from |
+|  ctor | <code>Function &amp; {</code><br/><code>    prototype: T;</code><br/><code>}</code> | Constructor of class to get JSON Schema from |
 |  options | <code>JsonSchemaOptions&lt;T&gt;</code> |  |
 
 <b>Returns:</b>

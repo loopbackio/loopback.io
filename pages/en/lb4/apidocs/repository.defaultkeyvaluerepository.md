@@ -18,7 +18,7 @@ An implementation of KeyValueRepository based on loopback-datasource-juggler
 <b>Signature:</b>
 
 ```typescript
-export declare class DefaultKeyValueRepository<T extends Entity> implements KeyValueRepository<T> 
+export declare class DefaultKeyValueRepository<T extends Model> implements KeyValueRepository<T> 
 ```
 
 ## Constructors

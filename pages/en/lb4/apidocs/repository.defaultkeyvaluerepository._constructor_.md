@@ -18,7 +18,7 @@ Construct a KeyValueRepository with a legacy DataSource
 <b>Signature:</b>
 
 ```typescript
-constructor(entityClass: typeof Entity & {
+constructor(entityClass: typeof Model & {
         prototype: T;
     }, ds: juggler.DataSource);
 ```
@@ -27,7 +27,7 @@ constructor(entityClass: typeof Entity & {
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  entityClass | <code>typeof Entity &amp; {</code><br/><code>        prototype: T;</code><br/><code>    }</code> |  |
+|  entityClass | <code>typeof Model &amp; {</code><br/><code>        prototype: T;</code><br/><code>    }</code> |  |
 |  ds | <code>juggler.DataSource</code> | Legacy DataSource |
 
 
