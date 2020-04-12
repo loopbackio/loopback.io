@@ -1,5 +1,5 @@
 ---
-lang: jp
+lang: ja
 title: 'LoopBack 4を構築する'
 layout: translation
 keywords: LoopBack 4.0, LoopBack 4
@@ -356,4 +356,3 @@ Extending LoopBack 4をご覧ください
 - <https://strongloop.com/strongblog/creating-a-multi-tenant-connector-microservice-using-loopback/>
 - <https://strongloop.com/strongblog/loopback-as-an-event-publisher/>
 - <https://strongloop.com/strongblog/loopback-as-a-service-using-openwhisk/>
-
