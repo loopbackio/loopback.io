@@ -4,7 +4,7 @@ title: 'GraphQL APIの公開'
 layout: translation
 keywords: LoopBack 4.0, LoopBack 4, GraphQL
 sidebar: ja_lb4_sidebar
-permalink: /doc/jp/lb4/exposing-graphql-apis.html
+permalink: /doc/ja/lb4/exposing-graphql-apis.html
 ---
 
 ## 概要
