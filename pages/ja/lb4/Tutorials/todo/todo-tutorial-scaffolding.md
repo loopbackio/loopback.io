@@ -1,5 +1,5 @@
 ---
-lang: jp
+lang: ja
 title: 'アプリの土台を構築する'
 layout: translation
 keywords: LoopBack 4.0, LoopBack 4
