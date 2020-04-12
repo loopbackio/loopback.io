@@ -3,7 +3,7 @@ lang: ja
 title: '統合する'
 layout: translation
 keywords: LoopBack 4.0, LoopBack 4
-sidebar: lb4_sidebar
+sidebar: ja_lb4_sidebar
 permalink: /doc/ja/lb4/todo-tutorial-putting-it-together.html
 summary: LoopBack 4 Todo Application Tutorial - Putting it all together
 ---
