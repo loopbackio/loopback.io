@@ -3,7 +3,7 @@ lang: ja
 title: 'コントローラを追加する'
 layout: translation
 keywords: LoopBack 4.0, LoopBack 4
-sidebar: lb4_sidebar
+sidebar: ja_lb4_sidebar
 permalink: /doc/ja/lb4/todo-tutorial-controller.html
 summary: LoopBack 4 Todo Application Tutorial - Add a Controller
 ---
