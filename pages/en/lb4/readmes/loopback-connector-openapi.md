@@ -16,7 +16,19 @@ This will install the module from npm and add it as a dependency to the applicat
 
 ## Configuration
 
-To interact with a Swagger API, configure a data source backed by the Swagger connector:
+### LoopBack 4 Usage
+To interact with OpenAPI spec:
+1. Create a LoopBack 4 DataSource with OpenAPI connector using the `lb4 datasource` command.
+
+2. Create a service that maps to the operations using the `lb4 service` command.
+
+3. Create a controller that calls the service created in the above step using `lb4 controller` command.
+
+For details, refer to the [Calling other APIs and web services documentation page](https://loopback.io/doc/en/lb4/Calling-other-APIs-and-web-services.html).
+
+
+### LoopBack 3 Usage
+To interact with a Swagger API, configure a data source backed by the OpenAPI connector:
 
 With code:
 
