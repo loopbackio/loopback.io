@@ -3,8 +3,8 @@ lang: jp
 title: 'アプリの土台を構築する'
 layout: translation
 keywords: LoopBack 4.0, LoopBack 4
-sidebar: lb4_sidebar
-permalink: /doc/jp/lb4/todo-tutorial-scaffolding.html
+sidebar: ja_lb4_sidebar
+permalink: /doc/ja/lb4/todo-tutorial-scaffolding.html
 summary: LoopBack 4 Todo Application Tutorial - Create app scaffolding
 ---
 
