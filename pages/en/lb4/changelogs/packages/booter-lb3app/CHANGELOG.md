@@ -11,6 +11,14 @@ permalink: /doc/en/lb4/changelog.booter-lb3app.html
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.4](https://github.com/strongloop/loopback-next/compare/@loopback/booter-lb3app@2.0.3...@loopback/booter-lb3app@2.0.4) (2020-04-11)
+
+**Note:** Version bump only for package @loopback/booter-lb3app
+
+
+
+
+
 ## [2.0.3](https://github.com/strongloop/loopback-next/compare/@loopback/booter-lb3app@2.0.2...@loopback/booter-lb3app@2.0.3) (2020-04-08)
 
 **Note:** Version bump only for package @loopback/booter-lb3app

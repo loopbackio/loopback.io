@@ -25,6 +25,7 @@ export interface ApplicationConfig
 
 |  Property | Type | Description |
 |  --- | --- | --- |
+|  [name](./core.applicationconfig.name.md) | <code>string</code> | Name of the application context |
 |  [shutdown](./core.applicationconfig.shutdown.md) | <code>ShutdownOptions</code> | Configuration for signals that shut down the application |
 
 

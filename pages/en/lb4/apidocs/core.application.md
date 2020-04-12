@@ -51,7 +51,7 @@ export declare class Application extends Context implements LifeCycleObserver
 |  [service(cls, name)](./core.application.service.md) |  | Add a service to this application. |
 |  [setMetadata(metadata)](./core.application.setmetadata.md) |  | Set application metadata. <code>@loopback/boot</code> calls this method to populate the metadata from <code>package.json</code>. |
 |  [setState(state)](./core.application.setstate.md) |  | Transition the application to a new state and emit an event |
-|  [setupShutdown(signals, gracePeriod)](./core.application.setupshutdown.md) |  | Set up signals that are captured to shutdown the application |
+|  [setupShutdown()](./core.application.setupshutdown.md) |  | Set up signals that are captured to shutdown the application |
 |  [start()](./core.application.start.md) |  | Start the application, and all of its registered observers. The application state is checked to ensure the integrity of <code>start</code>.<!-- -->If the application is already started, no operation is performed. |
 |  [stop()](./core.application.stop.md) |  | Stop the application instance and all of its registered observers. The application state is checked to ensure the integrity of <code>stop</code>.<!-- -->If the application is already stopped or not started, no operation is performed. |
 

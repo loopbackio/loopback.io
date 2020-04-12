@@ -31,6 +31,7 @@ export declare class Context extends EventEmitter
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
+|  [\_debug](./context.context._debug.md) |  | <code>Debugger</code> | A debug function which can be overridden by subclasses. |
 |  [\_parent](./context.context._parent.md) |  | <code>Context</code> | Parent context |
 |  [configResolver](./context.context.configresolver.md) |  | <code>ConfigurationResolver</code> | Configuration resolver |
 |  [name](./context.context.name.md) |  | <code>string</code> | Name of the context |
@@ -50,6 +51,7 @@ export declare class Context extends EventEmitter
 |  [configure(key)](./context.context.configure.md) |  | Create a corresponding binding for configuration of the target bound by the given key in the context.<!-- -->For example, <code>ctx.configure('controllers.MyController').to({x: 1})</code> will create binding <code>controllers.MyController:$config</code> with value <code>{x: 1}</code>. |
 |  [contains(key)](./context.context.contains.md) |  | Check if a binding exists with the given key in the local context without delegating to the parent context |
 |  [createView(filter, comparator)](./context.context.createview.md) |  | Create a view of the context chain with the given binding filter |
+|  [debug(args)](./context.context.debug.md) |  | Wrap the debug statement so that it always print out the context name as the prefix |
 |  [emitError(err)](./context.context.emiterror.md) |  | Emit an <code>error</code> event |
 |  [emitEvent(type, event)](./context.context.emitevent.md) |  | A strongly-typed method to emit context events |
 |  [find(pattern)](./context.context.find.md) |  | Find bindings using a key pattern or filter function |
@@ -62,6 +64,7 @@ export declare class Context extends EventEmitter
 |  [getConfig(key, propertyPath, resolutionOptions)](./context.context.getconfig.md) |  | Resolve configuration for the binding by key |
 |  [getConfigAsValueOrPromise(key, propertyPath, resolutionOptions)](./context.context.getconfigasvalueorpromise.md) |  | Get the value or promise of configuration for a given binding by key |
 |  [getConfigSync(key, propertyPath, resolutionOptions)](./context.context.getconfigsync.md) |  | Resolve configuration synchronously for the binding by key |
+|  [getDebugNamespace()](./context.context.getdebugnamespace.md) |  | Get the debug namespace for the context class. Subclasses can override this method to supply its own namespace. |
 |  [getOwnerContext(key)](./context.context.getownercontext.md) |  | Get the owning context for a binding key |
 |  [getSync(keyWithPath, session)](./context.context.getsync.md) |  | Get the synchronous value bound to the given key, optionally return a (deep) property of the bound value.<!-- -->This method throws an error if the bound value requires async computation (returns a promise). You should never rely on sync bindings in production code. |
 |  [getSync(keyWithPath, options)](./context.context.getsync_1.md) |  | Get the synchronous value bound to the given key, optionally return a (deep) property of the bound value.<!-- -->This method throws an error if the bound value requires async computation (returns a promise). You should never rely on sync bindings in production code. |

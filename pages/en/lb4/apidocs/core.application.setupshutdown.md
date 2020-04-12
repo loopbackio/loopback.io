@@ -18,18 +18,10 @@ Set up signals that are captured to shutdown the application
 <b>Signature:</b>
 
 ```typescript
-protected setupShutdown(signals: NodeJS.Signals[], gracePeriod?: number): void;
+protected setupShutdown(): (signal: string) => Promise<void>;
 ```
-
-## Parameters
-
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  signals | <code>NodeJS.Signals[]</code> | An array of signals to be trapped |
-|  gracePeriod | <code>number</code> | A grace period in ms before forced exit |
-
 <b>Returns:</b>
 
-`void`
+`(signal: string) => Promise<void>`
 
 
