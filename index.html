@@ -23,47 +23,12 @@
 
       gtag('config', 'UA-150726441-2');
     </script>
-
 </head>
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-        <a class="navbar-brand" href="#">
-            <img src="images/global/loopback-full-logo-blue.svg" width=150px>
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-            aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="getting-started.html">Getting Started</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/doc/en/lb4">Docs</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contribute.html">Contribute</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="resources.html">Resources</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="openapi-to-graphql.html">GraphQL</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="https://strongloop.com/strongblog/tag_LoopBack.html" target="_blank" rel="noopener noreferrer">Blog</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="https://ibm.biz/apitest" target="_blank" rel="noopener noreferrer">Test Your APIs</a>
-                </li>
-            </ul>
-
-        </div>
-    </nav>
+    <div id="navbar-template"></div>
+    
     <!--Header alert -->
     <div class="header-alert">
         <p class="centered-regular">LoopBack won API World's 2019 Best in API Middleware category, see <a href="https://strongloop.com/strongblog/loopback-2019-api-award-api-middleware/" target="_blank" rel="noopener noreferrer">our announcement post.</a></p>
@@ -449,14 +414,19 @@
         </div>
     </footer>
 
-    <script src="dist/jquery/jquery-3.3.1.slim.min.js"></script>
+    <script src="/dist/jquery/jquery-3.4.1.min.js" crossorigin="anonymous"></script>    
     <script src="dist/popper/1.14.0/umd/popper.min.js"></script>
     <!-- Bootstrap core JavaScript -->
     <script src="dist/bootstrap/js/bootstrap.min.js"></script>
 
     <!-- GitHub button -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>
-
+    <!-- Load the NavBar template -->
+    <script>
+        $(function(){
+            $("#navbar-template").load("navbar-template.html"); 
+        });
+    </script>
 
 </body>
 
