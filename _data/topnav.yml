@@ -34,10 +34,10 @@ topnav_dropdowns:
           external_url: https://groups.google.com/forum/#!forum/loopbackjs-announcements
         - title: Developer Forum
           external_url: https://groups.google.com/forum/#!forum/loopbackjs
-        - title: Gitter Chat Room
-          external_url: https://gitter.im/strongloop/loopback
+        - title: LoopBack on Slack
+          external_url: https://join.slack.com/t/loopbackio/shared_invite/zt-8lbow73r-SKAKz61Vdao~_rGf91pcsw
         - title: LoopBack on Stack Overflow
-          external_url: http://stackoverflow.com/questions/tagged/loopbackjs
+          external_url: https://stackoverflow.com/questions/tagged/strongloop+or+loopback4+or+loopbackjs
         - title: StrongLoop Blog - LoopBack
           external_url: https://strongloop.com/strongblog/tag_LoopBack.html
     - title: Translations
@@ -70,4 +70,3 @@ topnav_dropdowns:
           url: /doc/zh/lb2/
         - title: "中文 (v4)"
           url: /doc/zh/lb4/
-
