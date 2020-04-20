@@ -3,7 +3,11 @@
 [PostgreSQL](https://www.postgresql.org/), is a popular open-source object-relational database.
 The `loopback-connector-postgresql` module is the PostgreSQL connector for the LoopBack framework.
 
-<div class="gh-only">For more information, see the <a href="http://loopback.io/doc/en/lb3/PostgreSQL-connector.html">documentation</a>.
+<div class="gh-only">
+The PostgreSQL connector supports both LoopBack 3 and LoopBack 4. For more information, see
+<a href="https://loopback.io/doc/en/lb4/PostgreSQL-connector.html">LoopBack 4 documentation</a>,
+<a href="http://loopback.io/doc/en/lb3/PostgreSQL-connector.html">LoopBack 3 documentation</a>
+and <a href="#module-long-term-support-policy">Module Long Term Support Policy</a> below.
 <br/><br/>
 NOTE: The PostgreSQL connector requires PostgreSQL 8.x or 9.x.
 </div>
@@ -602,6 +606,18 @@ If you'd like to use other extensions and functions, you can do:
 ```
 
 WARNING: It is the users' responsibility to make sure the provided extension and function are valid.
+
+## Module Long Term Support Policy
+
+This module adopts the [Module Long Term Support (LTS)](http://github.com/CloudNativeJS/ModuleLTS) policy, with the following End Of Life (EOL) dates:
+
+| Version    | Status          | Published | EOL                  |
+| ---------- | --------------- | --------- | -------------------- |
+| 4.x        | Current         | Mar 2017  | Apr 2023 _(minimum)_ |
+| 3.x        | Active LTS      | Mar 2017  | Apr 2022             |
+
+Learn more about our LTS plan in [docs](https://loopback.io/doc/en/contrib/Long-term-support.html).
+
 
 ## Running tests
 
