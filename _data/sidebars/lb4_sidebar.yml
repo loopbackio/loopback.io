@@ -145,18 +145,52 @@ children:
     url: Create-other-forms-of-apis.html
     output: 'web, pdf'
     children:
-      - title: 'Exposing GraphQL APIs'
-        url: exposing-graphql-apis.html
-        output: 'web, pdf'
+    - title: 'Exposing GraphQL APIs'
+      url: exposing-graphql-apis.html
+      output: 'web, pdf'
 
   - title: 'Access Databases'
     url: Access-databases.html
     output: 'web, pdf'
     children:
 
-      - title: 'Database Migrations'
-        url: Database-migrations.html
+    - title: 'Working with data'
+      url: Working-with-data.html
+      output: 'web, pdf'
+      children:
+
+      - title: 'Querying data'
+        url: Querying-data.html
         output: 'web, pdf'
+        children:
+
+        - title: 'Fields filter'
+          url: Fields-filter.html
+          output: 'web, pdf'
+
+        - title: 'Include filter'
+          url: Include-filter.html
+          output: 'web, pdf'
+
+        - title: 'Limit filter'
+          url: Limit-filter.html
+          output: 'web, pdf'
+
+        - title: 'Order filter'
+          url: Order-filter.html
+          output: 'web, pdf'
+
+        - title: 'Skip filter'
+          url: Skip-filter.html
+          output: 'web, pdf'
+
+        - title: 'Where filter'
+          url: Where-filter.html
+          output: 'web, pdf'
+
+    - title: 'Database Migrations'
+      url: Database-migrations.html
+      output: 'web, pdf'
 
   - title: 'Call Other Services'
     url: Calling-other-APIs-and-web-services.html
@@ -571,40 +605,6 @@ children:
     url: Copyright-generator.html
     output: 'web, pdf'
 
-- title: 'Working with data'
-  url: Working-with-data.html
-  output: 'web, pdf'
-  children:
-
-  - title: 'Querying data'
-  url: Querying-data.html
-  output: 'web, pdf'
-  children:
-
-  - title: 'Fields filter'
-    url: Fields-filter.html
-    output: 'web, pdf'
-
-  - title: 'Include filter'
-    url: Include-filter.html
-    output: 'web, pdf'
-
-  - title: 'Limit filter'
-    url: Limit-filter.html
-    output: 'web, pdf'
-
-  - title: 'Order filter'
-    url: Order-filter.html
-    output: 'web, pdf'
-
-  - title: 'Skip filter'
-    url: Skip-filter.html
-    output: 'web, pdf'
-
-  - title: 'Where filter'
-    url: Where-filter.html
-    output: 'web, pdf'
-
 - title: 'Connectors reference'
   url: Connectors-reference.html
   output: 'web'
@@ -741,19 +741,6 @@ children:
     - title: 'Push connector'
       url: Push-connector.html
       output: 'web, pdf'
-
-    - title: 'Remote connector'
-      url: Remote-connector.html
-      output: 'web, pdf'
-      children:
-
-      - title: 'Remote connector example'
-        url: Remote-connector-example.html
-        output: 'web, pdf'
-
-      - title: 'Strong Remoting'
-        url: Strong-Remoting.html
-        output: 'web, pdf'
 
     - title: 'REST connector'
       url: REST-connector.html
