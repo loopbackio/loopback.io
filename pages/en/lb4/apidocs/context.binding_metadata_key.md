@@ -18,6 +18,6 @@ Metadata key for binding metadata
 <b>Signature:</b>
 
 ```typescript
-BINDING_METADATA_KEY: MetadataAccessor<BindingMetadata, ClassDecorator>
+BINDING_METADATA_KEY: MetadataAccessor<BindingMetadata<unknown>, ClassDecorator>
 ```
 

@@ -18,6 +18,6 @@ Add built-in body parsers
 <b>Signature:</b>
 
 ```typescript
-bindings: (Binding<import("./body-parsers").BodyParser> | Binding<RequestBodyParser> | Binding<InfoSpecEnhancer>)[];
+bindings: (Binding<import("./body-parsers").BodyParser> | Binding<RequestBodyParser> | Binding<InfoSpecEnhancer> | Binding<ConsolidationEnhancer>)[];
 ```
 

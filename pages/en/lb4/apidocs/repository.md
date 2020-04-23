@@ -143,6 +143,7 @@ This module provides data access facilities to various databases and services as
 |  [HasOneRepository](./repository.hasonerepository.md) | CRUD operations for a target repository of a HasMany relation |
 |  [HasOneRepositoryFactory](./repository.hasonerepositoryfactory.md) |  |
 |  [Inclusion](./repository.inclusion.md) | Inclusion of related items<!-- -->Note: scope means filter on related items<!-- -->Example: <code>{relation: 'aRelationName', scope: {&lt;AFilterObject&gt;}}</code> |
+|  [JsonSchemaWithExtensions](./repository.jsonschemawithextensions.md) | This module defines the key classes representing building blocks for Domain Driven Design. See https://en.wikipedia.org/wiki/Domain-driven\_design\#Building\_blocks |
 |  [KeyValueRepository](./repository.keyvaluerepository.md) | Key/Value operations for connector implementations |
 |  [KVConnector](./repository.kvconnector.md) | Key/Value operations for connector implementations |
 |  [ModelDefinitionSyntax](./repository.modeldefinitionsyntax.md) | DSL for building a model definition. |
@@ -207,7 +208,7 @@ This module provides data access facilities to various databases and services as
 |  [PositionalParameters](./repository.positionalparameters.md) | Positional parameters, such as \[1, 'a'\] |
 |  [PredicateComparison](./repository.predicatecomparison.md) | Matching predicate comparison |
 |  [PropertyMap](./repository.propertymap.md) |  |
-|  [PropertyType](./repository.propertytype.md) | This module defines the key classes representing building blocks for Domain Driven Design. See https://en.wikipedia.org/wiki/Domain-driven\_design\#Building\_blocks |
+|  [PropertyType](./repository.propertytype.md) |  |
 |  [PrototypeOf](./repository.prototypeof.md) | Type helper to infer prototype from a constructor function.<!-- -->Example: <code>PrototypeOf&lt;typeof Entity&gt;</code> is resolved to <code>Entity</code>. |
 |  [RelationDefinitionMap](./repository.relationdefinitionmap.md) | A key-value map describing model relations. A relation name is used as the key, a relation definition is the value. |
 |  [RelationMetadata](./repository.relationmetadata.md) | A union type describing all possible Relation metadata objects. |

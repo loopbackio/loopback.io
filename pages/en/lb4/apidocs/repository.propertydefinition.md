@@ -28,7 +28,7 @@ export interface PropertyDefinition
 |  [id](./repository.propertydefinition.id.md) | <code>boolean &#124; number</code> |  |
 |  [itemType](./repository.propertydefinition.itemtype.md) | <code>PropertyType</code> |  |
 |  [json](./repository.propertydefinition.json.md) | <code>PropertyForm</code> |  |
-|  [jsonSchema](./repository.propertydefinition.jsonschema.md) | <code>{</code><br/><code>        [attribute: string]: any;</code><br/><code>    }</code> |  |
+|  [jsonSchema](./repository.propertydefinition.jsonschema.md) | <code>JsonSchemaWithExtensions</code> |  |
 |  [store](./repository.propertydefinition.store.md) | <code>PropertyForm</code> |  |
 |  [type](./repository.propertydefinition.type.md) | <code>PropertyType</code> |  |
 

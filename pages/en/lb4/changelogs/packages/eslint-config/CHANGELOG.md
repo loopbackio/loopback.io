@@ -11,6 +11,14 @@ permalink: /doc/en/lb4/changelog.eslint-config.html
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.0.4](https://github.com/strongloop/loopback-next/compare/@loopback/eslint-config@6.0.3...@loopback/eslint-config@6.0.4) (2020-04-22)
+
+**Note:** Version bump only for package @loopback/eslint-config
+
+
+
+
+
 ## [6.0.3](https://github.com/strongloop/loopback-next/compare/@loopback/eslint-config@6.0.2...@loopback/eslint-config@6.0.3) (2020-04-08)
 
 **Note:** Version bump only for package @loopback/eslint-config

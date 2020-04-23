@@ -18,7 +18,7 @@ Create a binding from a class with decorated metadata. The class is attached to 
 <b>Signature:</b>
 
 ```typescript
-export declare function createBindingFromClass<T = unknown>(cls: Constructor<T | Provider<T>>, options?: BindingFromClassOptions): Binding<T>;
+export declare function createBindingFromClass<T>(cls: Constructor<T | Provider<T>>, options?: BindingFromClassOptions): Binding<T>;
 ```
 
 ## Parameters

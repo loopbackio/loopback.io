@@ -18,7 +18,7 @@ Get binding metadata for a class
 <b>Signature:</b>
 
 ```typescript
-export declare function getBindingMetadata(target: Function): BindingMetadata | undefined;
+export declare function getBindingMetadata<T = unknown>(target: Function): BindingMetadata<T> | undefined;
 ```
 
 ## Parameters
@@ -29,6 +29,6 @@ export declare function getBindingMetadata(target: Function): BindingMetadata | 
 
 <b>Returns:</b>
 
-`BindingMetadata | undefined`
+`BindingMetadata<T> | undefined`
 
 

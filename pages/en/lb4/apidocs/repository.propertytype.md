@@ -13,8 +13,6 @@ permalink: /doc/en/lb4/apidocs.repository.propertytype.html
 
 ## PropertyType type
 
-This module defines the key classes representing building blocks for Domain Driven Design. See https://en.wikipedia.org/wiki/Domain-driven\_design\#Building\_blocks
-
 <b>Signature:</b>
 
 ```typescript

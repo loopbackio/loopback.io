@@ -16,6 +16,6 @@ permalink: /doc/en/lb4/apidocs.core.controllerclass.html
 <b>Signature:</b>
 
 ```typescript
-export declare type ControllerClass = Constructor<any>;
+export declare type ControllerClass<T = any> = Constructor<T>;
 ```
 

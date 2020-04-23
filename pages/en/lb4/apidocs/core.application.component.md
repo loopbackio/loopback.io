@@ -18,19 +18,19 @@ Add a component to this application and register extensions such as controllers,
 <b>Signature:</b>
 
 ```typescript
-component(componentCtor: Constructor<Component>, name?: string): Binding<Component>;
+component<T extends Component = Component>(componentCtor: Constructor<T>, name?: string): Binding<T>;
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  componentCtor | <code>Constructor&lt;Component&gt;</code> | The component class to add. |
+|  componentCtor | <code>Constructor&lt;T&gt;</code> | The component class to add. |
 |  name | <code>string</code> | Optional component name, default to the class name |
 
 <b>Returns:</b>
 
-`Binding<Component>`
+`Binding<T>`
 
 ## Example
 

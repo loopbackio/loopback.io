@@ -18,7 +18,7 @@ Convert binding scope and tags as a template function
 <b>Signature:</b>
 
 ```typescript
-export declare function asBindingTemplate(scopeAndTags: BindingScopeAndTags): BindingTemplate;
+export declare function asBindingTemplate<T = unknown>(scopeAndTags: BindingScopeAndTags): BindingTemplate<T>;
 ```
 
 ## Parameters
@@ -29,6 +29,6 @@ export declare function asBindingTemplate(scopeAndTags: BindingScopeAndTags): Bi
 
 <b>Returns:</b>
 
-`BindingTemplate`
+`BindingTemplate<T>`
 
 

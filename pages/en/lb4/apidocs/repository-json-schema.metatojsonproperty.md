@@ -18,7 +18,7 @@ Converts property metadata into a JSON property definition
 <b>Signature:</b>
 
 ```typescript
-export declare function metaToJsonProperty(meta: PropertyDefinition): JSONSchema;
+export declare function metaToJsonProperty(meta: PropertyDefinition): JsonSchema;
 ```
 
 ## Parameters
@@ -29,6 +29,6 @@ export declare function metaToJsonProperty(meta: PropertyDefinition): JSONSchema
 
 <b>Returns:</b>
 
-`JSONSchema`
+`JsonSchema`
 
 

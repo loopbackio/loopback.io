@@ -18,7 +18,7 @@ Constructs a new instance of the `InterceptionHandler` class
 <b>Signature:</b>
 
 ```typescript
-constructor(context?: Context, session?: ResolutionSession | undefined);
+constructor(context?: Context, session?: ResolutionSession | undefined, source?: InvocationSource<unknown> | undefined);
 ```
 
 ## Parameters
@@ -27,5 +27,6 @@ constructor(context?: Context, session?: ResolutionSession | undefined);
 |  --- | --- | --- |
 |  context | <code>Context</code> |  |
 |  session | <code>ResolutionSession &#124; undefined</code> |  |
+|  source | <code>InvocationSource&lt;unknown&gt; &#124; undefined</code> |  |
 
 

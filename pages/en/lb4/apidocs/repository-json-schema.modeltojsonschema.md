@@ -20,7 +20,7 @@ Converts a TypeScript class into a JSON Schema using TypeScript's reflection API
 ```typescript
 export declare function modelToJsonSchema<T extends object>(ctor: Function & {
     prototype: T;
-}, jsonSchemaOptions?: JsonSchemaOptions<T>): JSONSchema;
+}, jsonSchemaOptions?: JsonSchemaOptions<T>): JsonSchema;
 ```
 
 ## Parameters
@@ -32,6 +32,6 @@ export declare function modelToJsonSchema<T extends object>(ctor: Function & {
 
 <b>Returns:</b>
 
-`JSONSchema`
+`JsonSchema`
 
 

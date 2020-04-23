@@ -18,17 +18,17 @@ A factory function to create a template function to bind the target class as a c
 <b>Signature:</b>
 
 ```typescript
-export declare function asClassOrProvider(target: Constructor<unknown>): BindingTemplate;
+export declare function asClassOrProvider<T>(target: Constructor<T | Provider<T>>): BindingTemplate<T>;
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  target | <code>Constructor&lt;unknown&gt;</code> | Target class, which can be an implementation of <code>Provider</code> |
+|  target | <code>Constructor&lt;T &#124; Provider&lt;T&gt;&gt;</code> | Target class, which can be an implementation of <code>Provider</code> |
 
 <b>Returns:</b>
 
-`BindingTemplate`
+`BindingTemplate<T>`
 
 

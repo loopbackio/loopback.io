@@ -18,7 +18,7 @@ Find an enhancer by its name
 <b>Signature:</b>
 
 ```typescript
-getEnhancerByName(name: string): Promise<OASEnhancer | undefined>;
+getEnhancerByName<T extends OASEnhancer = OASEnhancer>(name: string): Promise<T | undefined>;
 ```
 
 ## Parameters
@@ -29,6 +29,6 @@ getEnhancerByName(name: string): Promise<OASEnhancer | undefined>;
 
 <b>Returns:</b>
 
-`Promise<OASEnhancer | undefined>`
+`Promise<T | undefined>`
 
 

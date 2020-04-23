@@ -13,13 +13,22 @@ permalink: /doc/en/lb4/apidocs.rest.httphandler.getapidefinitions.html
 
 ## HttpHandler.getApiDefinitions() method
 
+> Warning: This API is now obsolete.
+> 
+> Use `getApiComponents`
+> 
+
 <b>Signature:</b>
 
 ```typescript
-getApiDefinitions(): SchemasObject;
+getApiDefinitions(): {
+        [schema: string]: import("@loopback/openapi-v3").SchemaObject | import("@loopback/openapi-v3").ReferenceObject;
+    } | undefined;
 ```
 <b>Returns:</b>
 
-`SchemasObject`
+`{
+        [schema: string]: import("@loopback/openapi-v3").SchemaObject | import("@loopback/openapi-v3").ReferenceObject;
+    } | undefined`
 
 

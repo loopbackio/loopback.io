@@ -18,7 +18,7 @@ Get the binding template for a class with binding metadata
 <b>Signature:</b>
 
 ```typescript
-export declare function bindingTemplateFor<T = unknown>(cls: Constructor<T | Provider<T>>): BindingTemplate<T>;
+export declare function bindingTemplateFor<T>(cls: Constructor<T | Provider<T>>): BindingTemplate<T>;
 ```
 
 ## Parameters

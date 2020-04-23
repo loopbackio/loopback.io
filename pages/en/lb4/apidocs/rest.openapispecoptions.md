@@ -25,6 +25,7 @@ export interface OpenApiSpecOptions
 
 |  Property | Type | Description |
 |  --- | --- | --- |
+|  [consolidate](./rest.openapispecoptions.consolidate.md) | <code>boolean</code> | Set this flag to <code>false</code> to disable OAS schema consolidation. If not set, the value defaults to <code>true</code>. |
 |  [disabled](./rest.openapispecoptions.disabled.md) | <code>true</code> | Set this flag to disable the endpoint for OpenAPI spec |
 |  [endpointMapping](./rest.openapispecoptions.endpointmapping.md) | <code>{</code><br/><code>        [key: string]: OpenApiSpecForm;</code><br/><code>    }</code> | Mapping of urls to spec forms, by default:
 ```

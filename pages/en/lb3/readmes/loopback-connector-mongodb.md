@@ -230,7 +230,7 @@ The results will be output in `./benchmarks/results.md`.
 ## strictObjectIDCoercion flag
 
 In version 1.17.0, the id of string type is being converted to ObjectID, when the string length is 12 or 24 and has the format of an ObjectID i.e /^[0-9a-fA-F]{24}$/.
-To avoid this issue, the strictObjectIDCoercion flag should be set to true in the model-definition file. It is also possible to enable this flag on a per method bases by passing it in as part of the options object.
+To avoid this issue, the `strictObjectIDCoercion` flag should be set to true in the model-definition file. It is also possible to enable this flag on a per method bases by passing it in as part of the options object.
 
 ### model-definition.js
 
@@ -287,6 +287,39 @@ module.exports = function(app) {
   });
 };
 ```
+
+### Customize collection/field names
+
+`loopback-connector-mongodb` allows you to have different collection and field names from the models. For example, the following setting would define a collection with custom name `Custom_Collection`, and it has a custom field name `Custom_Content` in the database:
+
+{% include code-caption.html content="/common/models/model.json" %}
+
+```js
+{
+  "name": "MyModel",
+  "options": {
+    "mongodb": {
+      "collection": "Custom_Collection",  //custom name
+    },
+  },
+  "properties": {
+    {
+      "id": {
+        "type": "String",
+        "id": true,
+        "required":true,
+      },
+      "content": {
+        "type": "String",
+        "mongodb": {"fieldName": "Custom_Content"},}, //custom name
+    }
+  },
+}
+```
+
+{% include warning.html content="
+Custom field names can only be applied to **non-id properties**. Customizing the id property would cause errors. Only the default name `_id` is allowed in the DB.
+" %}
 
 ### Per method basis
 

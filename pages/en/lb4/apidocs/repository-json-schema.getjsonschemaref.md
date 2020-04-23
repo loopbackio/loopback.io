@@ -20,7 +20,7 @@ Describe the provided Model as a reference to a definition shared by multiple en
 ```typescript
 export declare function getJsonSchemaRef<T extends object>(modelCtor: Function & {
     prototype: T;
-}, options?: JsonSchemaOptions<T>): JSONSchema;
+}, options?: JsonSchemaOptions<T>): JsonSchema;
 ```
 
 ## Parameters
@@ -32,7 +32,7 @@ export declare function getJsonSchemaRef<T extends object>(modelCtor: Function &
 
 <b>Returns:</b>
 
-`JSONSchema`
+`JsonSchema`
 
 ## Example
 

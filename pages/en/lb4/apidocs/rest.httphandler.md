@@ -29,7 +29,7 @@ export declare class HttpHandler
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [\_apiDefinitions](./rest.httphandler._apidefinitions.md) |  | <code>SchemasObject</code> |  |
+|  [\_openApiComponents](./rest.httphandler._openapicomponents.md) |  | <code>ComponentsObject</code> | Shared OpenAPI spec objects as <code>components</code> |
 |  [\_rootContext](./rest.httphandler._rootcontext.md) |  | <code>Context</code> |  |
 |  [\_routes](./rest.httphandler._routes.md) |  | <code>RoutingTable</code> |  |
 |  [\_serverConfig](./rest.httphandler._serverconfig.md) |  | <code>RestServerResolvedConfig</code> |  |
@@ -42,7 +42,9 @@ export declare class HttpHandler
 |  [\_handleRequest(request, response)](./rest.httphandler._handlerequest.md) |  |  |
 |  [describeApiPaths()](./rest.httphandler.describeapipaths.md) |  |  |
 |  [findRoute(request)](./rest.httphandler.findroute.md) |  |  |
+|  [getApiComponents()](./rest.httphandler.getapicomponents.md) |  |  |
 |  [getApiDefinitions()](./rest.httphandler.getapidefinitions.md) |  |  |
+|  [registerApiComponents(defs)](./rest.httphandler.registerapicomponents.md) |  | Merge components into the OpenApi spec |
 |  [registerApiDefinitions(defs)](./rest.httphandler.registerapidefinitions.md) |  |  |
 |  [registerController(spec, controllerCtor, controllerFactory)](./rest.httphandler.registercontroller.md) |  |  |
 |  [registerRoute(route)](./rest.httphandler.registerroute.md) |  |  |

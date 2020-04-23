@@ -20,7 +20,7 @@ Gets the JSON Schema of a TypeScript model/class by seeing if one exists in a ca
 ```typescript
 export declare function getJsonSchema<T extends object>(ctor: Function & {
     prototype: T;
-}, options?: JsonSchemaOptions<T>): JSONSchema;
+}, options?: JsonSchemaOptions<T>): JsonSchema;
 ```
 
 ## Parameters
@@ -32,6 +32,6 @@ export declare function getJsonSchema<T extends object>(ctor: Function & {
 
 <b>Returns:</b>
 
-`JSONSchema`
+`JsonSchema`
 
 

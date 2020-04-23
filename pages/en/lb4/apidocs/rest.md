@@ -68,8 +68,15 @@ A REST server for LoopBack 4 application instances, complete with:
 |  [createControllerFactoryForInstance(controllerInst)](./rest.createcontrollerfactoryforinstance.md) | Create a controller factory function for a given instance |
 |  [createResolvedRoute(route, pathParams)](./rest.createresolvedroute.md) |  |
 |  [createRoutesForController(spec, controllerCtor, controllerFactory)](./rest.createroutesforcontroller.md) | Create routes for a controller with the given spec |
+|  [getContentType(req)](./rest.getcontenttype.md) | Get the content-type header value from the request |
+|  [getParserOptions(type, options)](./rest.getparseroptions.md) | Extract parser options based on the parser type |
+|  [getParserOptions(type, options)](./rest.getparseroptions_1.md) |  |
+|  [getParserOptions(type, options)](./rest.getparseroptions_2.md) |  |
+|  [getParserOptions(type, options)](./rest.getparseroptions_3.md) |  |
 |  [getPathVariables(path)](./rest.getpathvariables.md) | Get all path variables. For example, <code>/root/{foo}/bar</code> =<!-- -->&gt; <code>['foo']</code> |
+|  [invokeBodyParserMiddleware(handle, request)](./rest.invokebodyparsermiddleware.md) | Parse the request body asynchronously |
 |  [joinPath(basePath, path)](./rest.joinpath.md) |  |
+|  [normalizeParsingError(err)](./rest.normalizeparsingerror.md) | Normalize parsing errors as <code>4xx</code> |
 |  [parseJson(text, reviver)](./rest.parsejson.md) |  |
 |  [parseOperationArgs(request, route, requestBodyParser, options)](./rest.parseoperationargs.md) | Parses the request to derive arguments to be passed in for the Application controller method |
 |  [rebaseOpenApiSpec(spec, basePath)](./rest.rebaseopenapispec.md) |  |
@@ -92,17 +99,21 @@ A REST server for LoopBack 4 application instances, complete with:
 |  [OpenApiSpecOptions](./rest.openapispecoptions.md) | Options to customize how OpenAPI specs are served |
 |  [RequestBodyParserOptions](./rest.requestbodyparseroptions.md) | Options for request body parsing See https://github.com/expressjs/body-parser/\#options<!-- -->Built-in parsers retrieve their own options from the request body parser options. The parser specific properties override common ones. |
 |  [RequestBodyValidationOptions](./rest.requestbodyvalidationoptions.md) | Options for request body validation using AJV |
+|  [RequestWithSession](./rest.requestwithsession.md) | extending express request type with a session field |
 |  [ResolvedNode](./rest.resolvednode.md) |  |
 |  [ResolvedRoute](./rest.resolvedroute.md) | A route with path parameters resolved |
 |  [RestRouter](./rest.restrouter.md) |  |
 |  [RestServerResolvedOptions](./rest.restserverresolvedoptions.md) |  |
 |  [RouteEntry](./rest.routeentry.md) | An entry in the routing table |
 |  [SequenceHandler](./rest.sequencehandler.md) | A sequence handler is a class implementing sequence of actions required to handle an incoming request. |
+|  [Session](./rest.session.md) | interface to set variables in user session |
+|  [SessionUserProfile](./rest.sessionuserprofile.md) | user profile to add in session |
 
 ## Namespaces
 
 |  Namespace | Description |
 |  --- | --- |
+|  [builtinParsers](./rest.builtinparsers.md) |  |
 |  [RestBindings](./rest.restbindings.md) | RestServer-specific bindings |
 |  [RestHttpErrors](./rest.resthttperrors.md) |  |
 |  [RestTags](./rest.resttags.md) | Binding tags for RestServer |
@@ -111,6 +122,7 @@ A REST server for LoopBack 4 application instances, complete with:
 
 |  Variable | Description |
 |  --- | --- |
+|  [DEFAULT\_LIMIT](./rest.default_limit.md) |  |
 |  [ERR\_NO\_MULTI\_SERVER](./rest.err_no_multi_server.md) |  |
 |  [REQUEST\_BODY\_PARSER\_TAG](./rest.request_body_parser_tag.md) | Binding tag for request body parser extensions |
 |  [SequenceActions](./rest.sequenceactions.md) |  |
@@ -125,6 +137,7 @@ A REST server for LoopBack 4 application instances, complete with:
 |  [AjvKeyword](./rest.ajvkeyword.md) | Ajv keyword definition with a name |
 |  [BindElement](./rest.bindelement.md) |  |
 |  [BodyParserFunction](./rest.bodyparserfunction.md) | Plain function for body parsing |
+|  [BodyParserMiddleware](./rest.bodyparsermiddleware.md) | Express body parser function type |
 |  [ControllerClass](./rest.controllerclass.md) | Controller class |
 |  [ControllerFactory](./rest.controllerfactory.md) | A factory function to create controller instances synchronously or asynchronously |
 |  [ControllerInstance](./rest.controllerinstance.md) |  |

@@ -18,7 +18,7 @@ Checks and return navigational property definition for the relation
 <b>Signature:</b>
 
 ```typescript
-export declare function getNavigationalPropertyForRelation(relMeta: RelationMetadata, targetRef: JSONSchema): JSONSchema;
+export declare function getNavigationalPropertyForRelation(relMeta: RelationMetadata, targetRef: JsonSchema): JsonSchema;
 ```
 
 ## Parameters
@@ -26,10 +26,10 @@ export declare function getNavigationalPropertyForRelation(relMeta: RelationMeta
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  relMeta | <code>RelationMetadata</code> | Relation metadata object |
-|  targetRef | <code>JSONSchema</code> | Schema definition for the target model |
+|  targetRef | <code>JsonSchema</code> | Schema definition for the target model |
 
 <b>Returns:</b>
 
-`JSONSchema`
+`JsonSchema`
 
 

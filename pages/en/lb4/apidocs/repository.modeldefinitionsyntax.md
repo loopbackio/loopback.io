@@ -25,6 +25,7 @@ export interface ModelDefinitionSyntax
 
 |  Property | Type | Description |
 |  --- | --- | --- |
+|  [jsonSchema](./repository.modeldefinitionsyntax.jsonschema.md) | <code>JsonSchemaWithExtensions</code> |  |
 |  [name](./repository.modeldefinitionsyntax.name.md) | <code>string</code> |  |
 |  [properties](./repository.modeldefinitionsyntax.properties.md) | <code>{</code><br/><code>        [name: string]: PropertyDefinition &#124; PropertyType;</code><br/><code>    }</code> |  |
 |  [relations](./repository.modeldefinitionsyntax.relations.md) | <code>RelationDefinitionMap</code> |  |

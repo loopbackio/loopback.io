@@ -19,11 +19,12 @@ permalink: /doc/en/lb4/apidocs.index.html
 |  --- | --- |
 |  [@loopback/apiconnect](./apiconnect.md) |  |
 |  [@loopback/authentication](./authentication.md) | A LoopBack 4 component for authentication support. |
-|  [@loopback/authentication-passport](./authentication-passport.md) | An adapter to plug in passport based strategies to the authentication system in [@loopback/authentication @3.x](./authentication.md)<!-- -->. |
+|  [@loopback/authentication-passport](./authentication-passport.md) |  |
 |  [@loopback/authorization](./authorization.md) | A LoopBack 4 component for authorization support (Role based, Permission based, Vote based) |
 |  [@loopback/boot](./boot.md) | A convention based project Bootstrapper and Booters for LoopBack Applications. |
 |  [@loopback/booter-lb3app](./booter-lb3app.md) |  |
 |  [@loopback/context](./context.md) |  |
+|  [@loopback/context-explorer](./context-explorer.md) |  |
 |  [@loopback/core](./core.md) | The core foundation for LoopBack 4. It can also serve as the platform to build large-scale Node.js applications and frameworks. |
 |  [@loopback/cron](./cron.md) |  |
 |  [@loopback/extension-health](./extension-health.md) | A component to report health status using [@cloudnative/health](https://github.com/CloudNativeJS/cloud-health)<!-- -->. |

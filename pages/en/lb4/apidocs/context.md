@@ -57,7 +57,7 @@ permalink: /doc/en/lb4/apidocs.context.html
 |  [config(propertyPath, metadata)](./context.config.md) | Inject a property from <code>config</code> of the current binding. If no corresponding config value is present, <code>undefined</code> will be injected as the configuration binding is resolved with <code>optional: true</code> by default. |
 |  [configBindingKeyFor(key, propertyPath)](./context.configbindingkeyfor.md) | Create binding key for configuration of the binding |
 |  [createBindingFromClass(cls, options)](./context.createbindingfromclass.md) | Create a binding from a class with decorated metadata. The class is attached to the binding as follows: - <code>binding.toClass(cls)</code>: if <code>cls</code> is a plain class such as <code>MyController</code> - <code>binding.toProvider(cls)</code>: it <code>cls</code> is a value provider class with a prototype method <code>value()</code> |
-|  [createProxyWithInterceptors(target, context, session)](./context.createproxywithinterceptors.md) | Create a proxy that applies interceptors for method invocations |
+|  [createProxyWithInterceptors(target, context, session, source)](./context.createproxywithinterceptors.md) | Create a proxy that applies interceptors for method invocations |
 |  [createViewGetter(ctx, bindingFilter, session)](./context.createviewgetter.md) | Create a context view as a getter with the given filter |
 |  [createViewGetter(ctx, bindingFilter, bindingComparator, session)](./context.createviewgetter_1.md) | Create a context view as a getter with the given filter and sort matched bindings by the comparator. |
 |  [describeInjectedArguments(target, method)](./context.describeinjectedarguments.md) | Return an array of injection objects for parameters |

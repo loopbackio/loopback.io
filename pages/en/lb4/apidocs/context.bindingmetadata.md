@@ -18,9 +18,9 @@ Binding metadata from `@bind`
 <b>Signature:</b>
 
 ```typescript
-export declare type BindingMetadata = {
-    templates: BindingTemplate[];
-    target: Constructor<unknown>;
+export declare type BindingMetadata<T = unknown> = {
+    templates: BindingTemplate<T>[];
+    target: Constructor<T>;
 };
 ```
 

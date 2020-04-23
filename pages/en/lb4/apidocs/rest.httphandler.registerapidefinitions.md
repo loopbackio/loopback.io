@@ -13,6 +13,11 @@ permalink: /doc/en/lb4/apidocs.rest.httphandler.registerapidefinitions.html
 
 ## HttpHandler.registerApiDefinitions() method
 
+> Warning: This API is now obsolete.
+> 
+> Use `registerApiComponents`
+> 
+
 <b>Signature:</b>
 
 ```typescript
@@ -23,7 +28,7 @@ registerApiDefinitions(defs: SchemasObject): void;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  defs | <code>SchemasObject</code> |  |
+|  defs | <code>SchemasObject</code> | Schemas |
 
 <b>Returns:</b>
 

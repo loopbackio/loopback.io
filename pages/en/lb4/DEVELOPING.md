@@ -71,9 +71,28 @@ for intra-dependencies:
 npm ci
 ```
 
+As part of `npm ci` or `npm i`, TypeScript project references are automatically
+updated for each package with in the monorepo.
+
 The next step is to compile all packages from TypeScript to JavaScript:
 
 ```sh
+npm run build
+```
+
+To force a clean build:
+
+```sh
+npm run clean && npm run build
+```
+
+Please note that `npm run clean` removes `dist`, `*.tsbuildinfo`, and other
+generated files from each package to clean the state for builds.
+
+To build an individual package:
+
+```sh
+cd <package-dir> // For example, cd `packages/context`.
 npm run build
 ```
 
@@ -183,8 +202,16 @@ from package-lock files.**
 If you ever end up with corrupted or out-of-date package locks, run the
 following commands to fix the problem:
 
+To rebuild `package-lock.json` for all packages.
+
 ```sh
-$ npm run update-package-locks
+npm update-package-locks
+```
+
+To update `package-lock.json` for a list of packages:
+
+```sh
+npm update-package-locks -- --scope <package-name-1> --scope <package-name-2>
 ```
 
 ### Adding dependencies
@@ -548,6 +575,40 @@ repository.
 ## Adding a new package
 
 ### Create a new package
+
+Please run the following command:
+
+```sh
+cd loopback-next
+node bin/create-package.js
+```
+
+The script does the following steps:
+
+1.  Determine the location and package name.
+
+    The first argument of the command can be one of the following:
+
+    - package-name
+    - @loopback/package-name
+    - extensions/package-name
+    - packages/package-name
+
+    If the location is not specified, it tries to guess by the current directory
+    and falls back to `extensions`.
+
+2.  Run `lb4 extension` to scaffold the project without `npm install`. If
+    `--yes` or `-y` is provide by the command, interactive prompts are skipped.
+
+3.  Tidy up the project
+
+    - Remove unused files
+    - Rename `tsconfig.json` to `tsconfig.build.json`
+    - Improve `package.json`
+
+4.  Run `lerna boostrap` on the newly added package to set up dependencies
+
+If you would like to do it manually, follow steps below:
 
 To add a new package, create a folder in
 [`packages`](https://github.com/strongloop/loopback-next/tree/master/packages)

@@ -16,8 +16,6 @@ permalink: /doc/en/lb4/apidocs.repository.propertydefinition.jsonschema.html
 <b>Signature:</b>
 
 ```typescript
-jsonSchema?: {
-        [attribute: string]: any;
-    };
+jsonSchema?: JsonSchemaWithExtensions;
 ```
 

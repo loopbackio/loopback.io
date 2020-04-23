@@ -18,6 +18,6 @@ Specification of parameters for `@bind()`
 <b>Signature:</b>
 
 ```typescript
-export declare type BindingSpec = BindingTemplate | BindingScopeAndTags;
+export declare type BindingSpec<T = unknown> = BindingTemplate<T> | BindingScopeAndTags;
 ```
 
