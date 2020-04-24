@@ -11,6 +11,14 @@ permalink: /doc/en/lb4/changelog.metadata.html
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.1.1](https://github.com/strongloop/loopback-next/compare/@loopback/metadata@2.1.0...@loopback/metadata@2.1.1) (2020-04-23)
+
+**Note:** Version bump only for package @loopback/metadata
+
+
+
+
+
 # [2.1.0](https://github.com/strongloop/loopback-next/compare/@loopback/metadata@2.0.4...@loopback/metadata@2.1.0) (2020-04-22)
 
 

@@ -11,6 +11,14 @@ permalink: /doc/en/lb4/changelog.authentication.html
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.2.1](https://github.com/strongloop/loopback-next/compare/@loopback/authentication@4.2.0...@loopback/authentication@4.2.1) (2020-04-23)
+
+**Note:** Version bump only for package @loopback/authentication
+
+
+
+
+
 # [4.2.0](https://github.com/strongloop/loopback-next/compare/@loopback/authentication@4.1.3...@loopback/authentication@4.2.0) (2020-04-22)
 
 
