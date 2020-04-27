@@ -15,12 +15,12 @@ children:
 - title: 'Getting started'
   url: /doc/ja/lb4/Getting-started.html
   output: 'web, pdf'
-  translated: false
+  translated: true
 
 - title: 'Tutorials'
   url: /doc/ja/lb4/Tutorials.html
   output: 'web, pdf'
-  translated: false
+  translated: true
   children:
 
   - title: 'Todo Tutorial'
@@ -134,7 +134,7 @@ children:
 - title: 'Examples'
   url: /doc/ja/lb4/Examples.html
   output: 'web, pdf'
-  translated: false
+  translated: true
 
 - title: 'Key concepts'
   url: /doc/ja/lb4/Concepts.html
@@ -284,7 +284,7 @@ children:
 - title: 'How-tos'
   url: /doc/ja/lb4/How-tos.html
   output: 'web, pdf'
-  translated: false
+  translated: true
   children:
 
     - title: 'Exposing GraphQL APIs'
