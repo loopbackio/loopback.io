@@ -2,7 +2,6 @@
 title: LoopBack Documentation
 toc: false
 layout: home
-tags: [getting_started]
 sidebar: home_sidebar
 permalink: /doc/index.html
 summary: LoopBack is a highly-extensible, open-source Node.js framework that enables you to create dynamic end-to-end REST APIs with little or no coding.
