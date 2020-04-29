@@ -4,7 +4,6 @@ lang: en
 layout: navgroup
 navgroup: storage
 keywords: LoopBack
-tags: connectors
 sidebar: lb4_sidebar
 permalink: /doc/en/lb4/Storage-connector.html
 summary: The storage connector enables LoopBack applications to interact with files on cloud storage providers and the local (server) file system.
@@ -31,6 +30,7 @@ At the prompt "**Enter the connector name without the loopback-connector- prefix
 This creates an entry in `datasources.json` like this (for example):
 
 {% include code-caption.html content="/server/datasources.json" %}
+
 ```javascript
 ...
 "myStorageDataSource": {
@@ -46,6 +46,7 @@ Configure a storage data source by editing the [datasources.json](datasources.j
 for example as shown in the [storage service example](https://github.com/strongloop/loopback-component-storage/blob/master/example-2.0/):
 
 {% include code-caption.html content="/server/datasources.json" %}
+
 ```javascript
 ...
 "myStorageDataSource": {
@@ -63,6 +64,7 @@ Use the [model generator](Model-generator.html) to create a new model, then edi
 as shown in the [storage service example](https://github.com/strongloop/loopback-example-storage):
 
 {% include code-caption.html content="/server/models/container.json" %}
+
 ```javascript
 {
   "name": "container",
@@ -78,6 +80,7 @@ as shown in the [storage service example](https://github.com/strongloop/loopbac
 ## Connect the model to the storage data source
 
 {% include code-caption.html content="/server/model-config.json" %}
+
 ```javascript
 ...
   "container": {

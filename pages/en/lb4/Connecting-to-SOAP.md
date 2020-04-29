@@ -3,11 +3,11 @@ title: "Connecting to SOAP web services"
 toc: false
 layout: page
 keywords: LoopBack
-tags:
 sidebar: lb4_sidebar
 permalink: /doc/en/lb4/Connecting-to-SOAP.html
 summary: The LoopBack CLI enables you to easily create models based on a SOAP web service.
 ---
+
 {% include navgroups/soap.md %}
 {% include toc.html %}
 
@@ -23,7 +23,7 @@ XML document that describes web service endpoints, bindings, operations and sche
 
 Web services are still important in many enterprises, and the way to access them is via SOAP.
 SOAP is fairly heavy-weight, and working with XML-based SOAP
-payloads in Node.js is not easy.  It’s much easier to use JSON and to wrap or mediate a SOAP
+payloads in Node.js is not easy. It’s much easier to use JSON and to wrap or mediate a SOAP
 service and expose it as a REST API.
 
 To support the "API design first" approach, the [SOAP generator](SOAP-generator.html) creates LoopBack models and REST APIs for WSDL/SOAP operations to enable a LoopBack app to invoke a web service without the need to write code.
@@ -67,7 +67,7 @@ When prompted, respond as follows:
 - Enter http://www.webservicex.net/periodictable.asmx?WSDL for "HTTP URL or local fie system path to WSDL file" prompt.
 - Enter "y" to Expose operations as REST APIs.
 - Leave blank to "Maps WSDL binding operations to Node.js methods".
-- Select "y" to "Install "loopback-connector-soap" prompt.  This runs `npm install -s loopback-connector-soap`.
+- Select "y" to "Install "loopback-connector-soap" prompt. This runs `npm install -s loopback-connector-soap`.
 
 For more information on SOAP datasource properties, see [SOAP data source properties](http://loopback.io/doc/en/lb3/SOAP-connector.html).
 
@@ -103,7 +103,7 @@ Select the `periodictableSoap` binding.
 ? Select the binding: periodictableSoap
 ```
 
-After you choose a binding, the tool discovers and lists SOAP operations that the selected binding defines.  Press the space bar to select all of the listed SOAP operations.
+After you choose a binding, the tool discovers and lists SOAP operations that the selected binding defines. Press the space bar to select all of the listed SOAP operations.
 
 ```
 ◉ GetAtoms
@@ -138,6 +138,7 @@ The tool generates the following model definition files in the `server/models` d
 ### Run the application
 
 To run the application:
+
 ```sh
 node .
 ```

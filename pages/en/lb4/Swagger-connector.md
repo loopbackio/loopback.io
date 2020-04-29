@@ -3,7 +3,6 @@ title: "Swagger connector"
 lang: en
 layout: page
 keywords: LoopBack
-tags: connectors
 sidebar: lb4_sidebar
 permalink: /doc/en/lb4/Swagger-connector.html
 summary: The Swagger connector enables LoopBack applications to interact with other RESTful APIs described using the OpenAPI (Swagger) specification.
@@ -20,7 +19,7 @@ To interact with a Swagger API, we first configure a data source backed by the S
 
 ### Options for the Swagger connector
 
-* **spec:** http url or local file system path to the swagger specification file (Specification file must be of `.yaml/.yml` or `.json` extension) or the specification.
+- **spec:** http url or local file system path to the swagger specification file (Specification file must be of `.yaml/.yml` or `.json` extension) or the specification.
 
 **Note:** Current implementation supports relative local path to the current working directory (i.e. `process.cwd()`).
 
@@ -56,7 +55,7 @@ Once the model is created, all available Swagger API operations can be accessed 
 For example:
 
 ```javascript
-PetService.getPetById({petId: 1}, function (err, res){
+PetService.getPetById({ petId: 1 }, function (err, res) {
   //...
 });
 ```

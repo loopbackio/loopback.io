@@ -3,7 +3,6 @@ title: "Community connectors"
 lang: en
 layout: page
 keywords: LoopBack
-tags:
 sidebar: lb4_sidebar
 permalink: /doc/en/lb4/Community-connectors.html
 summary:
