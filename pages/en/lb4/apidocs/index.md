@@ -19,6 +19,7 @@ permalink: /doc/en/lb4/apidocs.index.html
 |  --- | --- |
 |  [@loopback/apiconnect](./apiconnect.md) |  |
 |  [@loopback/authentication](./authentication.md) | A LoopBack 4 component for authentication support. |
+|  [@loopback/authentication-jwt](./authentication-jwt.md) |  |
 |  [@loopback/authentication-passport](./authentication-passport.md) |  |
 |  [@loopback/authorization](./authorization.md) | A LoopBack 4 component for authorization support (Role based, Permission based, Vote based) |
 |  [@loopback/boot](./boot.md) | A convention based project Bootstrapper and Booters for LoopBack Applications. |

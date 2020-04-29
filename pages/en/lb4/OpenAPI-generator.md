@@ -397,57 +397,36 @@ export class AccountController {
 If `--client` is specified, a datasource is generated to configure the
 connection to the endpoint that exposes an OpenAPI spec.
 
-{% include code-caption.html content="src/datasources/test2.datasource.config.json"
-%}
-
-```json
-{
-  "name": "test2",
-  "connector": "openapi",
-  "spec": "customer.yaml",
-  "validate": false,
-  "positional": true
-}
-```
-
 {% include code-caption.html content="src/datasources/test2.datasource.ts"
 %}
 
 ```ts
-import {
-  inject,
-  lifeCycleObserver,
-  LifeCycleObserver,
-  ValueOrPromise,
-} from '@loopback/core';
+import {inject, lifeCycleObserver, LifeCycleObserver} from '@loopback/core';
 import {juggler} from '@loopback/repository';
-import config from './test2.datasource.config.json';
 
+const config = {
+  name: 'test2',
+  connector: 'openapi',
+  spec: 'customer.yaml',
+  validate: false,
+  positional: true,
+};
+
+// Observe application's life cycle to disconnect the datasource when
+// application is stopped. This allows the application to be shut down
+// gracefully. The `stop()` method is inherited from `juggler.DataSource`.
+// Learn more at https://loopback.io/doc/en/lb4/Life-cycle.html
 @lifeCycleObserver('datasource')
 export class Test2DataSource extends juggler.DataSource
   implements LifeCycleObserver {
   static dataSourceName = 'test2';
+  static readonly defaultConfig = config;
 
   constructor(
     @inject('datasources.config.test2', {optional: true})
     dsConfig: object = config,
   ) {
     super(dsConfig);
-  }
-
-  /**
-   * Start the datasource when application is started
-   */
-  start(): ValueOrPromise<void> {
-    // Add your logic here to be invoked when the application is started
-  }
-
-  /**
-   * Disconnect the datasource when application is stopped. This allows the
-   * application to be shut down gracefully.
-   */
-  stop(): ValueOrPromise<void> {
-    return super.disconnect();
   }
 }
 ```

@@ -21,6 +21,7 @@ JSON Schema describing the Count interface. It's the response type for REST call
 CountSchema: {
     type: string;
     title: string;
+    'x-typescript-type': string;
     properties: {
         count: {
             type: string;

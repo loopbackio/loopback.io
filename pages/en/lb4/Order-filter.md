@@ -14,8 +14,6 @@ descending (DESC) based on the specified property.
 
 ### Node.js API
 
-{% include content/angular-methods-caveat.html lang=page.lang %}
-
 Order by one property:
 
 <pre>
@@ -39,7 +37,7 @@ Where:
 Order by one property:
 
 <pre>
-?filter[order]=<i>propertyName<i>%20<ASC|DESC>
+?filter[order]=<i>propertyName</i>%20<ASC|DESC>
 </pre>
 
 Order by two or more properties:

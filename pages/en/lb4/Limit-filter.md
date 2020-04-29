@@ -11,8 +11,6 @@ summary:
 
 A *limit* filter limits the maximum number of records a query returns.
 
-{% include content/angular-methods-caveat.html lang=page.lang %}
-
 ### Node.js API
 
 <pre>
@@ -45,4 +43,6 @@ await orderRepository.find({limit: 5});
 
 `/orders?filter[limit]=5`
 
-Or stringified JSON format: `/orders?filter={"limit":5}`
+Or stringified JSON format:
+
+`/orders?filter={"limit":5}`

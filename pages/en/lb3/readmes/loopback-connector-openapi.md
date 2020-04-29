@@ -68,6 +68,7 @@ Specify the options for the data source with the following properties.
 | validate          | When `true`, validates provided `spec` against Swagger specification 2.0 before initializing a data source.                                                                       | `false`     |
 | authorizations    | Security configuration for making authenticated requests to the API.                                                                                                              |             |
 | positional        | Use positional parameters instead of named parameters                                                                                                                             | `false`     |
+| forceOpenApi30    | Convert the Swagger 2.0 spec to OpenAPI 3.0                                                                                                                                       | `false`     |
 | mapToMethods      | map OpenAPI operations to method names                                                                                                                                            | `undefined` |
 | transformResponse | Transform the response object                                                                                                                                                     | `undefined` |
 
@@ -149,7 +150,7 @@ The return value can be transformed by a custom `transformResponse` function
 configured for the connector:
 
 ```js
-function transformResponse(res) {
+function transformResponse(res, operationSpec) {
   if (res.status < 400) {
     return res.body;
   }

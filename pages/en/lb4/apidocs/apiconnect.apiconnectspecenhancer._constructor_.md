@@ -18,7 +18,7 @@ Constructs a new instance of the `ApiConnectSpecEnhancer` class
 <b>Signature:</b>
 
 ```typescript
-constructor(options: ApiConnectSpecOptions);
+constructor(options: ApiConnectSpecOptions, appMetadata?: ApplicationMetadata);
 ```
 
 ## Parameters
@@ -26,5 +26,6 @@ constructor(options: ApiConnectSpecOptions);
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  options | <code>ApiConnectSpecOptions</code> |  |
+|  appMetadata | <code>ApplicationMetadata</code> |  |
 
 

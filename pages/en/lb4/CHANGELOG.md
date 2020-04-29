@@ -38,10 +38,10 @@ permalink: /doc/en/lb4/changelog.index.html
 ### extensions
 
 - [@loopback/apiconnect](changelogs/extensions/apiconnect/CHANGELOG.md)
+- [@loopback/authentication-jwt](changelogs/extensions/authentication-jwt/CHANGELOG.md)
 - [@loopback/authentication-passport](changelogs/extensions/authentication-passport/CHANGELOG.md)
 - [@loopback/context-explorer](changelogs/extensions/context-explorer/CHANGELOG.md)
 - [@loopback/cron](changelogs/extensions/cron/CHANGELOG.md)
-- [@loopback/extension-authentication-jwt](changelogs/extensions/authentication-jwt/CHANGELOG.md)
 - [@loopback/extension-health](changelogs/extensions/health/CHANGELOG.md)
 - [@loopback/extension-logging](changelogs/extensions/logging/CHANGELOG.md)
 - [@loopback/extension-metrics](changelogs/extensions/metrics/CHANGELOG.md)

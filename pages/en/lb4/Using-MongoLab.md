@@ -3,6 +3,7 @@ title: "Using mLab*"
 lang: en
 layout: page
 keywords: LoopBack
+tags:
 sidebar: lb4_sidebar
 permalink: /doc/en/lb4/Using-MongoLab.html
 summary:
@@ -11,10 +12,9 @@ summary:
 If you are using [mLab](https://mlab.com/) to host your MongoDB database, use the LoopBack `url` property to configure your data source,
 since the connection string is dynamically generated.
 
-For example, the entry in `datasources.json` might look like this:
+For example, the entry in `datasources.json` might look like this: 
 
 {% include code-caption.html content="/server/datasources.json" %}
-
 ```javascript
 "mongodb": {
   "connector": "loopback-connector-mongodb",

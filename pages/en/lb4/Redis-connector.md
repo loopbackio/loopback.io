@@ -3,7 +3,8 @@ title: "Redis connector"
 lang: en
 layout: page
 toc: false
-keywords: LoopBack, connector
+keywords: LoopBack
+tags: connectors
 sidebar: lb4_sidebar
 permalink: /doc/en/lb4/Redis-connector.html
 summary: The Redis connector enables LoopBack applications to connect to Redis data sources.
@@ -33,7 +34,6 @@ When prompted for the connector, choose **other,** then enter **redis** for the
 The entry in the application's `server/datasources.json` will look like this:
 
 {% include code-caption.html content="server/datasources.json" %}
-
 ```javascript
 "redisDS": {
   "name": "redisDS",

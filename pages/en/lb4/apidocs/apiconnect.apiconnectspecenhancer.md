@@ -25,7 +25,7 @@ export declare class ApiConnectSpecEnhancer implements OASEnhancer
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)(options)](./apiconnect.apiconnectspecenhancer._constructor_.md) |  | Constructs a new instance of the <code>ApiConnectSpecEnhancer</code> class |
+|  [(constructor)(options, appMetadata)](./apiconnect.apiconnectspecenhancer._constructor_.md) |  | Constructs a new instance of the <code>ApiConnectSpecEnhancer</code> class |
 
 ## Properties
 

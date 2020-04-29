@@ -2,7 +2,8 @@
 title: "Memory connector"
 lang: en
 layout: page
-keywords: LoopBack, connector
+keywords: LoopBack
+tags: connectors
 sidebar: lb4_sidebar
 permalink: /doc/en/lb4/Memory-connector.html
 summary: The built-in memory connector is a persistent data source for development and testing.
@@ -15,12 +16,12 @@ Although the memory connector is very well tested it is not suitable for product
 
 The memory connector supports:
 
-- Standard query and create, read, update, and delete operations, so you can test models against an in-memory data source.
-- Geo-filtering when using the `find()` operation with an attached model.
+* Standard query and create, read, update, and delete operations, so you can test models against an in-memory data source.
+* Geo-filtering when using the `find()` operation with an attached model.
   See [GeoPoint class](http://apidocs.loopback.io/loopback-datasource-juggler/#geopoint) for more information on geo-filtering.
 
 {% include important.html content="
-The memory connector is designed for development and testing of a single-process application without setting up a database. It cannot be used in a cluster as the worker processes will have their own isolated data not shared in the cluster.
+The memory connector is designed for development and testing of a single-process application without setting up a database.  It cannot be used in a cluster as the worker processes will have their own isolated data not shared in the cluster.
 
 You can persist data between application restarts using the `file` property. See [Data persistence](#data-persistence) for more information.
 " %}
@@ -30,7 +31,6 @@ You can persist data between application restarts using the `file` property. See
 By default, an application created with the [Application generator](Application-generator.html) has a memory data source defined; for example:
 
 {% include code-caption.html content="/server/datasources.json" %}
-
 ```javascript
 "db": {
     "name": "db",
@@ -83,7 +83,6 @@ To maintain data across application restarts, specify a JSON file in which to st
 The simplest way to do this is by editing `server/datasources.json`; for example:
 
 {% include code-caption.html content="server/datasources.json" %}
-
 ```javascript
 {
   "db": {
@@ -97,11 +96,10 @@ The simplest way to do this is by editing `server/datasources.json`; for example
 You can also set the persistence file in a boot script; for example:
 
 {% include code-caption.html content="server/boot/script.js" %}
-
 ```javascript
 var memory = loopback.createDataSource({
   connector: loopback.Memory,
-  file: "mydata.json",
+  file: "mydata.json"
 });
 ```
 

@@ -2,7 +2,8 @@
 title: "Email connector"
 lang: en
 layout: page
-keywords: LoopBack, connector
+keywords: LoopBack
+tags: connectors
 sidebar: lb4_sidebar
 permalink: /doc/en/lb4/Email-connector.html
 summary: The built-in email connectors enables applications to send email.
@@ -31,7 +32,6 @@ $ apic create --type datasource
 When prompted, select **Email** as the connector. This creates an entry in `datasources.json` like this (for example):
 
 {% include code-caption.html content="server/datasources.json" %}
-
 ```javascript
 ...
 "myEmailDataSource": {
@@ -46,7 +46,6 @@ When prompted, select **Email** as the connector. This creates an entry in `data
 Configure the email data source by editing `/server/datasources.json` (for example):
 
 {% include code-caption.html content="server/datasources.json" %}
-
 ```javascript
 {
   ...
@@ -82,12 +81,11 @@ See:
 
 - [Nodemailer: Using GMail](https://github.com/andris9/Nodemailer#using-gmail)
 - [Nodemailer: Authentication](https://github.com/andris9/nodemailer-smtp-transport#authentication) for more information.
-  " %}
+" %}
 
 For GMail, configure your email data source as follows:
 
 {% include code-caption.html content="server/datasources.json" %}
-
 ```javascript
 ...
 "Email": {
@@ -112,7 +110,6 @@ For GMail, configure your email data source as follows:
 Then, connect models to the data source in `/server/model-config.json` as follows (for example):
 
 {% include code-caption.html content="server/model-config.json" %}
-
 ```javascript
 {
   ...
@@ -128,29 +125,25 @@ Then, connect models to the data source in `/server/model-config.json` as follow
 The following example illustrates how to send emails from an app. Add the following code to a file in the `/models` directory:
 
 {% include code-caption.html content="server/models/model.js" %}
-
 ```javascript
-module.exports = function (MyModel) {
+module.exports = function(MyModel) {
   // send an email
-  MyModel.sendEmail = function (cb) {
-    MyModel.app.models.Email.send(
-      {
-        to: "foo@bar.com",
-        from: "you@gmail.com",
-        subject: "my subject",
-        text: "my text",
-        html: "my <em>html</em>",
-      },
-      function (err, mail) {
-        console.log("email sent!");
-        cb(err);
-      }
-    );
-  };
+  MyModel.sendEmail = function(cb) {
+    MyModel.app.models.Email.send({
+      to: 'foo@bar.com',
+      from: 'you@gmail.com',
+      subject: 'my subject',
+      text: 'my text',
+      html: 'my <em>html</em>'
+    }, function(err, mail) {
+      console.log('email sent!');
+      cb(err);
+    });
+  }
 };
 ```
 
-The default model definition file is [common/models/email.json](https://github.com/strongloop/loopback/blob/master/common/models/email.json) in the LoopBack repository.
+The default model definition file is [common/models/email.json](https://github.com/strongloop/loopback/blob/master/common/models/email.json) in the LoopBack repository. 
 
 ## Confirming email address
 

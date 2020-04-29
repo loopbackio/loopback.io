@@ -3,6 +3,7 @@ title: "Push connector"
 lang: en
 layout: page
 keywords: LoopBack
+tags: connectors
 sidebar: lb4_sidebar
 permalink: /doc/en/lb4/Push-connector.html
 summary:
@@ -23,14 +24,13 @@ This will install the module from npm and add it as a dependency to the applicat
 
 Create a new push data source with the [data source generator](Data-source-generator.html).
 
-When prompted, select **other** as the connector.
+When prompted, select **other** as the connector.  
 
 At the prompt "**Enter the connector name without the loopback-connector- prefix,**" enter **push**.
 
 This creates an entry in `datasources.json` like this (for example):
 
 {% include code-caption.html content="/server/datasources.json" %}
-
 ```javascript
 ...
  "myPushDataSource": {
@@ -46,7 +46,6 @@ To configure a push data source, edit the `datasources.json` file.
 For example as shown in the [push example](https:/github.com/strongloop/loopback-component-push/blob/master/example/server-2.0/):
 
 {% include code-caption.html content="/server/datasources.json" %}
-
 ```javascript
 "myPushDataSource": {
     "name": "myPushDataSource",
@@ -63,7 +62,6 @@ For example as shown in the [push example](https:/github.com/strongloop/loopback
 Then define a push model in the [Model definition JSON file](Model-definition-JSON-file.html), for example:
 
 {% include code-caption.html content="/server/models/push.json" %}
-
 ```javascript
 {
   "name": "push",
@@ -82,7 +80,6 @@ Then define a push model in the [Model definition JSON file](Model-definition-J
 Connect the model to the data source:
 
 {% include code-caption.html content="/server/model-config.json" %}
-
 ```javascript
 "push": {
     "public": true,
