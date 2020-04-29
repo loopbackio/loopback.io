@@ -17,7 +17,9 @@ This will install the module from npm and add it as a dependency to the applicat
 ## Configuration
 
 ### LoopBack 4 Usage
+
 To interact with OpenAPI spec:
+
 1. Create a LoopBack 4 DataSource with OpenAPI connector using the `lb4 datasource` command.
 
 2. Create a service that maps to the operations using the `lb4 service` command.
@@ -26,8 +28,8 @@ To interact with OpenAPI spec:
 
 For details, refer to the [Calling other APIs and web services documentation page](https://loopback.io/doc/en/lb4/Calling-other-APIs-and-web-services.html).
 
-
 ### LoopBack 3 Usage
+
 To interact with a Swagger API, configure a data source backed by the OpenAPI connector:
 
 With code:
@@ -59,13 +61,113 @@ With JSON in `datasources.json` (for example, with basic authentication):
 
 Specify the options for the data source with the following properties.
 
-| Property       | Description                                                                                                                                                                       | Default |
-| -------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------- |
-| connector      | Must be `'loopback-connector-openapi'` to specify Swagger connector                                                                                                               | None    |
-| spec           | HTTP URL or path to the Swagger specification file (with file name extension `.yaml/.yml` or `.json`). File path must be relative to current working directory (`process.cwd()`). | None    |
-| validate       | When `true`, validates provided `spec` against Swagger specification 2.0 before initializing a data source.                                                                       | `false` |
-| authorizations | Security configuration for making authenticated requests to the API.                                                                                                              |         |
-| positional     | Use positional parameters instead of named parameters                                                                                                                             | `false` |
+| Property          | Description                                                                                                                                                                       | Default     |
+| ----------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
+| connector         | Must be `'loopback-connector-openapi'` to specify Swagger connector                                                                                                               | None        |
+| spec              | HTTP URL or path to the Swagger specification file (with file name extension `.yaml/.yml` or `.json`). File path must be relative to current working directory (`process.cwd()`). | None        |
+| validate          | When `true`, validates provided `spec` against Swagger specification 2.0 before initializing a data source.                                                                       | `false`     |
+| authorizations    | Security configuration for making authenticated requests to the API.                                                                                                              |             |
+| positional        | Use positional parameters instead of named parameters                                                                                                                             | `false`     |
+| mapToMethods      | map OpenAPI operations to method names                                                                                                                                            | `undefined` |
+| transformResponse | Transform the response object                                                                                                                                                     | `undefined` |
+
+### Mapping operations to methods
+
+By default, the connector adds the following method names to the model:
+
+1. `x-operation-name` of the operation spec
+2. `operationId` of the operation spec
+3. The names from 1 and 2 with `<tag>_` prefix
+4. The camel case for all of the names above
+
+For an operation with `{operationId: 'get_books', 'x-operation-name': 'getBooks'}`
+under tag `BookController`, the following methods are added:
+
+- getBooks
+- get_books
+- BookController_getBooks
+- BookController_get_books
+- bookControllerGetBooks
+
+For tagged interfaces, the connector adds the following method names to `apis.<tag>`:
+
+1. `x-operation-name` of the operation spec
+2. `operationId` of the operation spec
+3. The camel case for all of the names above
+
+For an operation with `{operationId: 'get_books', 'x-operation-name': 'getBooks'}`
+under tag `BookController`, the following methods are added:
+
+- getBooks
+- get_books
+
+A custom `mapToMethods` can be set on the connector to override the naming
+conventions. The signature of the method is as follows:
+
+```js
+/**
+ * Get the method name for an operation
+ * @param {string} tag - The tag. It will be '' for tagged interfaces.
+ * @param {object} operationSpec - Operation spec
+ * @param {string[]} existingNames - Optional array to track used names
+ *
+ * @returns A method name or an array of method names. Return undefined to
+ * skip the operation.
+ */
+function mapToMethods(tag, operationSpec, existingNames) {}
+```
+
+Now we can configure the connector to use our custom `mapToMethod`.
+
+```js
+var ds = loopback.createDataSource('swagger', {
+  connector: 'loopback-connector-openapi',
+  spec: 'http://petstore.swagger.io/v2/swagger.json',
+  mapToMethods: mapToMethods,
+});
+```
+
+### Return value
+
+By default, the methods return a `response` object with the following properties:
+
+```js
+{
+  url,
+  method,
+  status,
+  statusText,
+  headers, // See note below regarding headers
+  text,    // The textual content
+  body,    // The body object
+}
+```
+
+See https://github.com/swagger-api/swagger-js#response-shape for more details.
+
+The return value can be transformed by a custom `transformResponse` function
+configured for the connector:
+
+```js
+function transformResponse(res) {
+  if (res.status < 400) {
+    return res.body;
+  }
+  const err = new Error(`${res.status} ${res.statusText}`);
+  err.details = res;
+  throw err;
+}
+```
+
+Now we can configure the connector to use our custom `transformResponse`.
+
+```js
+var ds = loopback.createDataSource('swagger', {
+  connector: 'loopback-connector-openapi',
+  spec: 'http://petstore.swagger.io/v2/swagger.json',
+  transformResponse: transformResponse, // or transformResponse: true for a default transformer
+});
+```
 
 ### Authentication
 
@@ -187,8 +289,8 @@ const result = await MyModel.my_operation({
 Once you define the model, you can wrap or mediate it to define new methods. The following example simplifies the `getPetById` operation to a method that takes `petID` and returns a Pet instance.
 
 ```js
-PetService.searchPet = function(petID, cb) {
-  PetService.getPetById({petId: petID}, function(err, res) {
+PetService.searchPet = function (petID, cb) {
+  PetService.getPetById({ petId: petID }, function (err, res) {
     if (err) cb(err, null);
     var result = res.data;
     cb(null, result);
@@ -201,10 +303,10 @@ This custom method on the `PetService` model can be exposed as REST API end-poin
 ```js
 loopback.remoteMethod(PetService.searchPet, {
   accepts: [
-    {arg: 'petID', type: 'string', required: true, http: {source: 'query'}},
+    { arg: 'petID', type: 'string', required: true, http: { source: 'query' } },
   ],
-  returns: {arg: 'result', type: 'object', root: true},
-  http: {verb: 'get', path: '/searchPet'},
+  returns: { arg: 'result', type: 'object', root: true },
+  http: { verb: 'get', path: '/searchPet' },
 });
 ```
 
