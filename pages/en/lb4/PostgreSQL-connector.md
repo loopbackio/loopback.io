@@ -3,8 +3,7 @@ title: "PostgreSQL connector"
 lang: en
 layout: readme
 source: loopback-connector-postgresql
-keywords: LoopBack
-tags: connectors
+keywords: LoopBack, connector
 sidebar: lb4_sidebar
 permalink: /doc/en/lb4/PostgreSQL-connector.html
 summary: The PostgreSQL connector enables LoopBack applications to connect to PostgreSQL data sources.

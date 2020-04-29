@@ -2,7 +2,6 @@
 title: "Database connectors"
 lang: en
 keywords: LoopBack
-tags: [data_sources]
 sidebar: lb4_sidebar
 permalink: /doc/en/lb4/Database-connectors.html
 summary: LoopBack provides connectors for popular relational and NoSQL databases.

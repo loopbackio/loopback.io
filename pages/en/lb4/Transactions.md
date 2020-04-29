@@ -1,9 +1,8 @@
 ---
-title: 'Using database transactions'
+title: "Using database transactions"
 lang: en
 layout: page
 keywords: LoopBack 4.0, LoopBack 4, Transactions, Transaction
-tags:
 sidebar: lb4_sidebar
 permalink: /doc/en/lb4/Using-database-transactions.html
 summary: Transactional API usage in LoopBack 4
@@ -69,7 +68,7 @@ import {
   Transaction,
   DefaultTransactionalRepository,
   IsolationLevel,
-} from '@loopback/repository';
+} from "@loopback/repository";
 // assuming there is a Note model extending Entity class, and
 // ds datasource which is backed by a transaction enabled
 // connector
@@ -81,21 +80,21 @@ const tx = await repo.beginTransaction(IsolationLevel.READ_COMMITTED);
 You can also extend `DefaultTransactionalRepository` for custom classes:
 
 ```ts
-import {inject} from '@loopback/core';
+import { inject } from "@loopback/core";
 import {
   juggler,
   Transaction,
   DefaultTransactionalRepository,
   IsolationLevel,
-} from '@loopback/repository';
-import {Note, NoteRelations} from '../models';
+} from "@loopback/repository";
+import { Note, NoteRelations } from "../models";
 
 export class NoteRepository extends DefaultTransactionalRepository<
   Note,
   typeof Note.prototype.id,
   NoteRelations
 > {
-  constructor(@inject('datasources.ds') ds: juggler.DataSource) {
+  constructor(@inject("datasources.ds") ds: juggler.DataSource) {
     super(Note, ds);
   }
 }
@@ -140,10 +139,10 @@ transaction object `tx` created as demonstrated in
 [Start transaction](#start-transaction) section:
 
 ```ts
-const created = await repo.create({title: 'Groceries'}, {transaction: tx});
+const created = await repo.create({ title: "Groceries" }, { transaction: tx });
 const updated = await repo.update(
-  {title: 'Errands', id: created.id},
-  {transaction: tx},
+  { title: "Errands", id: created.id },
+  { transaction: tx }
 );
 
 // commit the transaction to persist the changes
