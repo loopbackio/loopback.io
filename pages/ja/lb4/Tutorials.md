@@ -6,9 +6,9 @@ sidebar: ja_lb4_sidebar
 permalink: /doc/ja/lb4/Tutorials.html
 ---
 
-LoopBack4では、以下のチュートリアルを用意しています。
+LoopBack 4では、以下のチュートリアルを用意しています。
 
-- **[todo](todo-tutorial.md)**: 単純なアプリケーションを構築するためのチュートリアル。 ボトムアップアプローチを使用したLoopBack4のキーコンセプトを確認できる。
+- **[todo](todo-tutorial.md)**: 単純なアプリケーションを構築するためのチュートリアル。ボトムアップアプローチを使用したLoopBack 4のキーコンセプトを確認できる。
 
 - **[todo-list](todo-list-tutorial.md)**: 関連モデルの導入をするためのチュートリアル、及び、TodoチュートリアルにAPIを構築するためのチュートリアル。
 
@@ -16,11 +16,11 @@ LoopBack4では、以下のチュートリアルを用意しています。
 
 - **[log-extension](https://github.com/strongloop/loopback-next/tree/master/examples/log-extension)**:　ログ拡張の構築に関するチュートリアル。
 
-- **[express-composition](express-with-lb4-rest-tutorial.md)**: LoopBack4で作成したREST APIをExpressアプリケーションにマウントするためのチュートリアル。
+- **[express-composition](express-with-lb4-rest-tutorial.md)**: LoopBack 4で作成したREST APIをExpressアプリケーションにマウントするためのチュートリアル。
 
-- **[lb3-application](https://github.com/strongloop/loopback-next/tree/master/examples/lb3-application)**: 新しいLoopBack4プロジェクトに既存のLoopBack アプリケーションをマウントするためのチュートリアル。
+- **[lb3-application](https://github.com/strongloop/loopback-next/tree/master/examples/lb3-application)**: 新しいLoopBack 4プロジェクトに既存のLoopBack 3アプリケーションをマウントするためのチュートリアル。
 
-- **[core series](tutorials/core/index.md)**: LoopBack4のコアモジュールを使用して、大規模なNode.jsプロジェクトの構築をする際のチュートリアル。
+- **[core series](tutorials/core/index.md)**: LoopBack 4のコアモジュールを使用して、大規模なNode.jsプロジェクトの構築をする際のチュートリアル。
 
 以下の`lb4`コマンドを使用して、任意のチュートリアルプロジェクトをダウンロードすることができます。
 
@@ -28,4 +28,4 @@ LoopBack4では、以下のチュートリアルを用意しています。
 lb4 example <チュートリアル名>
 ```
 
-`lb4`をまだインストールしていない場合は、[はじめに](Getting-started.md#install-loopback-4-cli) を確認してLoopBack4 CLIをインストールしてください。
+`lb4`をまだインストールしていない場合は、[はじめに](Getting-started.md#install-loopback-4-cli)を確認してLoopBack 4 CLIをインストールしてください。

@@ -12,18 +12,18 @@ url: /doc/ja/lb4/index.html
 translated: true
 children:
 
-- title: 'はじめに'
+- title: 'Getting started'
   url: /doc/ja/lb4/Getting-started.html
   output: 'web, pdf'
   translated: true
 
-- title: 'チュートリアル'
+- title: 'Tutorials'
   url: /doc/ja/lb4/Tutorials.html
   output: 'web, pdf'
   translated: true
   children:
 
-  - title: 'Todoチュートリアル'
+  - title: 'Todo Tutorial'
     url: /doc/ja/lb4/todo-tutorial.html
     output: 'web, pdf'
     translated: true
@@ -131,12 +131,12 @@ children:
     output: 'web, pdf'
     translated: false
 
-- title: 'プロジェクトサンプル'
+- title: 'Examples'
   url: /doc/ja/lb4/Examples.html
   output: 'web, pdf'
   translated: true
 
-- title: 'キーコンセプト'
+- title: 'Key concepts'
   url: /doc/ja/lb4/Concepts.html
   output: 'web, pdf'
   translated: true
@@ -281,7 +281,7 @@ children:
     output: 'web, pdf'
     translated: false
 
-- title: 'ハウツー'
+- title: 'How-tos'
   url: /doc/ja/lb4/How-tos.html
   output: 'web, pdf'
   translated: true
@@ -322,10 +322,10 @@ children:
   output: 'web, pdf'
   translated: false
 
-- title: 'コンポーネントの使用方法'
+- title: 'Using Components'
   url: /doc/ja/lb4/Using-components.html
   output: 'web, pdf'
-  translated: true
+  translated: false
   children:
 
   - title: Self-hosted REST API Explorer
@@ -353,10 +353,10 @@ children:
   output: 'web, pdf'
   translated: false
 
-- title: 'コマンドラインインターフェース'
+- title: 'Command-line interface'
   url: /doc/ja/lb4/Command-line-interface.html
   output: 'web, pdf'
-  translated: true
+  translated: false
   children:
 
   - title: 'Application generator'
@@ -414,10 +414,10 @@ children:
     output: 'web, pdf'
     translated: false
 
-- title: 'Loopback4のベストプラクティス'
+- title: 'Best practices'
   url: /doc/ja/lb4/Best-practices.html
   output: 'web, pdf'
-  translated: true
+  translated: false
   children:
 
   - title: 'Defining the API using code-first approach'
@@ -484,7 +484,7 @@ children:
 - title: 'FAQ'
   url: /doc/ja/lb4/FAQ.html
   output: 'web, pdf'
-  translated: true
+  translated: false
 
 - title: 'Reference'
   url: /doc/ja/lb4/Reference.html
