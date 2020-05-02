@@ -74,7 +74,7 @@ of type `GeoPoint`. This allows for indexed ```near``` queries.  Default is `fal
   - If set to `true`, the database instance will not be attached to the datasource and the connection is deferred.
   - It will try to establish the connection automatically once users hit the endpoint. If the mongodb server is offline, the app will start, however, the endpoints will not work.
 - **disableDefaultSort**: Set to `true` to disable the default sorting
-  behavior on `id` column, this will help performance using indexed columns available in mongodb.
+ behavior on `id` column, this will help performance using indexed columns available in mongodb.
 - **collation**: Specify language-specific rules for string comparison, such as rules for lettercase and accent marks. See [`MongdoDB documentation`](https://docs.mongodb.com/manual/reference/collation/) for details. It can also be used to create [`case insensitive indexes`](https://docs.mongodb.com/manual/core/index-case-insensitive/).
 
 ### Setting the url property in datasource.json
@@ -119,7 +119,7 @@ Note: the port is not specified when using the `mongodb+srv` protocol and will b
 
 MongoDB Driver allows the `$where` operator to pass in JavaScript to execute on the Driver which can be used for NoSQL Injection. See [MongoDB: Server-side JavaScript](https://docs.mongodb.com/manual/core/server-side-javascript/) for more on this MongoDB feature.
 
-To protect users against this potential vulnerability, LoopBack will automatically **remove** the `$where` and `mapReduce` operators from a query before it's passed to the MongoDB Driver. If you need to use these properties from within LoopBack programatically, you can disable the sanitization by passing in an `options` object with `disableSanitization` property set to `true`.
+To protect users against this potential vulnerability, LoopBack will automatically **remove** the `$where` and `mapReduce` operators from a query before it's passed to the MongoDB Driver. If you need to use these properties from within LoopBack programmatically, you can disable the sanitization by passing in an `options` object with `disableSanitization` property set to `true`.
 
 **Example:**
 ```js
@@ -149,7 +149,7 @@ To customize the settings, you can drop in a `.loopbackrc` file to the root dire
 of the project or the home folder.
 
 **Note**: Tests and examples in this project configure the data source using the deprecated '.loopbackrc' file method,
-which is not suppored in general.
+which is not supported in general.
 For information on configuring the connector in a LoopBack application, please refer to [loopback.io](http://loopback.io/doc/en/lb2/MongoDB-connector.html).
 
 The .loopbackrc file is in JSON format, for example:
@@ -175,7 +175,7 @@ The .loopbackrc file is in JSON format, for example:
         }
     }
 
-**Note**: user/password is only required if the MongoDB server has authentication enabled. `"authSource"` should be used if you cannot login to your database using your credentials.
+**Note**: user/password is only required if the MongoDB server has authentication enabled. `"authSource"` should be used if you cannot log in to your database using your credentials.
 
 ## Running tests
 
