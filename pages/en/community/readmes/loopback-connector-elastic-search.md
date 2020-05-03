@@ -14,7 +14,9 @@ Elasticsearch(versions 6.x and 7.x) datasource connector for [Loopback 3.x](http
   - [Recommended properties](#recommended)
   - [Optional properties](#optional)
   - [Sample for copy paste](#sample)
-- [How to achieve Instant search](#how-to-achieve-instant-search)
+
+- [Elasticsearch SearchAfter Support](#elasticsearch-searchafter-support)
+- [Example](#about-the-example-app)
 - [Troubleshooting](#troubleshooting)
 - [Contributing](#contributing)
 - [Frequently Asked Questions](#faqs)
@@ -153,6 +155,60 @@ npm install loopback-connector-esv6 --save --save-exact
 ```
 
 2.You can peek at `/examples/server/datasources.json` for more hints.
+
+## Elasticsearch SearchAfter Support
+
+- ```search_after``` feature of elasticsearch is supported in loopback filter.
+- For this, you need to create a property in model called ```_search_after``` with loopback type ```["any"]```. This field cannot be updated using in connector.
+- Elasticsearch ```sort``` value will return in this field.
+- You need pass ```_search_after``` value in ```searchafter``` key of loopback filter.
+- Example filter query for ```find```.
+
+```json
+{
+  "where": {
+    "username": "hello"
+  },
+  "order": "created DESC",
+  "searchafter": [
+    1580902552905
+  ],
+  "limit": 4
+}
+```
+
+- Example result.
+
+```json
+[
+  {
+    "id": "1bb2dd63-c7b9-588e-a942-15ca4f891a80",
+    "username": "test",
+    "_search_after": [
+      1580902552905
+    ],
+    "created": "2020-02-05T11:35:52.905Z"
+  },
+  {
+    "id": "fd5ea4df-f159-5816-9104-22147f2a740f",
+    "username": "test3",
+    "_search_after": [
+      1580902552901
+    ],
+    "created": "2020-02-05T11:35:52.901Z"
+  },
+  {
+    "id": "047c0adb-13ea-5f80-a772-3d2a4691d47a",
+    "username": "test4",
+    "_search_after": [
+      1580902552897
+    ],
+    "created": "2020-02-05T11:35:52.897Z"
+  }
+]
+```
+
+- This is useful for pagination. To go to previous page, change sorting order.
 
 ## About the example app
 
