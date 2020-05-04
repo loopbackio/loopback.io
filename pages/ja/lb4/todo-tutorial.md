@@ -13,7 +13,7 @@ Loopback4を始める、基本のチュートリアルをご紹介します！
 
 ## 概観
 
-このチュートリアルでは、LoopBack 4を使用して、ToDoリスト用の基本のAPIの作成方法をご紹介します。わずか[5 steps](#steps)で、REST APIを作成する方法を体験します。
+このチュートリアルでは、LoopBack4を使用して、ToDoリスト用の基本のAPIの作成方法をご紹介します。 わずか[5 steps](#steps)で、REST APIを作成する方法を体験します。
 
 ![todo-tutorial-overview](https://loopback.io/pages/en/lb4/imgs/todo-overview.png)
 
@@ -28,7 +28,7 @@ Loopback4を始める、基本のチュートリアルをご紹介します！
 - JavaScript (ES6)
 - [REST](http://www.restapitutorial.com/lessons/whatisrest.html)
 
-最後に、LoopBack 4 CLIツールキットをインストールします。
+最後に、LoopBack4 CLIツールキットをインストールします。
 
 ```sh
 npm i -g @loopback/cli
@@ -36,7 +36,7 @@ npm i -g @loopback/cli
 
 ## チュートリアル
 
-このチュートリアルを進めるには、[Create your app scaffolding](http://loopback.io/doc/en/lb4/todo-tutorial-scaffolding.html)セクションから始めます。
+このチュートリアルを進めるには、[Create your app scaffolding](http://loopback.io/doc/en/lb4/todo-tutorial-scaffolding.html) セクションから始めます。
 
 ### 手順
 
@@ -73,7 +73,7 @@ npm i -g @loopback/cli
     Server is running at http://127.0.0.1:3000
     ```
 
-アプリケーションのコードを色々と試して、動作するかを確認してみてください。引き続き、アプリケーションの構築方法を学びたい場合は、このチュートリアルを続けてください。
+アプリケーションのコードを色々と試して、動作するかを確認してみてください。 引き続き、アプリケーションの構築方法を学びたい場合は、このチュートリアルを続けてください。
 
 
 
@@ -82,7 +82,7 @@ npm i -g @loopback/cli
 
 ### バグ/フィードバック
 
-[loopback-next](https://github.com/strongloop/loopback-next)へお寄せください。
+[loopback-next](https://github.com/strongloop/loopback-next) へお寄せください。
 
 
 
@@ -97,7 +97,7 @@ Rootフォルダから `npm test` を実行します。
 
 ## Contributor
 
-こちらから[Contributor](https://github.com/strongloop/loopback-next/graphs/contributors)を確認できます。
+こちらから[Contributor](https://github.com/strongloop/loopback-next/graphs/contributors) を確認できます。
 
 ## ライセンス
 

@@ -12,18 +12,18 @@ url: /doc/ja/lb4/index.html
 translated: true
 children:
 
-- title: 'Getting started'
+- title: 'はじめに'
   url: /doc/ja/lb4/Getting-started.html
   output: 'web, pdf'
-  translated: false
+  translated: true
 
-- title: 'Tutorials'
+- title: 'チュートリアル'
   url: /doc/ja/lb4/Tutorials.html
   output: 'web, pdf'
-  translated: false
+  translated: true
   children:
 
-  - title: 'Todo Tutorial'
+  - title: 'Todoチュートリアル'
     url: /doc/ja/lb4/todo-tutorial.html
     output: 'web, pdf'
     translated: true
@@ -131,12 +131,12 @@ children:
     output: 'web, pdf'
     translated: false
 
-- title: 'Examples'
+- title: 'プロジェクトサンプル'
   url: /doc/ja/lb4/Examples.html
   output: 'web, pdf'
-  translated: false
+  translated: true
 
-- title: 'Key concepts'
+- title: 'キーコンセプト'
   url: /doc/ja/lb4/Concepts.html
   output: 'web, pdf'
   translated: true
@@ -281,10 +281,10 @@ children:
     output: 'web, pdf'
     translated: false
 
-- title: 'How-tos'
+- title: 'ハウツー'
   url: /doc/ja/lb4/How-tos.html
   output: 'web, pdf'
-  translated: false
+  translated: true
   children:
 
     - title: 'Exposing GraphQL APIs'
@@ -322,10 +322,10 @@ children:
   output: 'web, pdf'
   translated: false
 
-- title: 'Using Components'
+- title: 'コンポーネントの使用方法'
   url: /doc/ja/lb4/Using-components.html
   output: 'web, pdf'
-  translated: false
+  translated: true
   children:
 
   - title: Self-hosted REST API Explorer
@@ -353,10 +353,10 @@ children:
   output: 'web, pdf'
   translated: false
 
-- title: 'Command-line interface'
+- title: 'コマンドラインインターフェース'
   url: /doc/ja/lb4/Command-line-interface.html
   output: 'web, pdf'
-  translated: false
+  translated: true
   children:
 
   - title: 'Application generator'
@@ -414,10 +414,10 @@ children:
     output: 'web, pdf'
     translated: false
 
-- title: 'Best practices'
+- title: 'Loopback4のベストプラクティス'
   url: /doc/ja/lb4/Best-practices.html
   output: 'web, pdf'
-  translated: false
+  translated: true
   children:
 
   - title: 'Defining the API using code-first approach'
@@ -484,7 +484,7 @@ children:
 - title: 'FAQ'
   url: /doc/ja/lb4/FAQ.html
   output: 'web, pdf'
-  translated: false
+  translated: true
 
 - title: 'Reference'
   url: /doc/ja/lb4/Reference.html
