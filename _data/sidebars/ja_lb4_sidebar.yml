@@ -32,37 +32,37 @@ children:
     - title: 'Create your app scaffolding'
       url: /doc/ja/lb4/todo-tutorial-scaffolding.html
       output: 'web, pdf'
-      translated: false
+      translated: true
 
     - title: 'Add the Todo model'
       url: /doc/ja/lb4/todo-tutorial-model.html
       output: 'web, pdf'
-      translated: false
+      translated: true
 
     - title: 'Add a Datasource'
       url: /doc/ja/lb4/todo-tutorial-datasource.html
       output: 'web, pdf'
-      translated: false
+      translated: true
 
     - title: 'Add a Repository'
       url: /doc/ja/lb4/todo-tutorial-repository.html
       output: 'web, pdf'
-      translated: false
+      translated: true
 
     - title: 'Add a Controller'
       url: /doc/ja/lb4/todo-tutorial-controller.html
       output: 'web, pdf'
-      translated: false
+      translated: true
 
     - title: 'Putting it all together'
       url: /doc/ja/lb4/todo-tutorial-putting-it-together.html
       output: 'web, pdf'
-      translated: false
+      translated: true
 
     - title: 'Bonus: Integrate with a geo-coding service'
       url: /doc/ja/lb4/todo-tutorial-geocoding-service.html
       output: 'web, pdf'
-      translated: false
+      translated: true
 
   - title: 'TodoList Tutorial'
     url: /doc/ja/lb4/todo-list-tutorial.html
@@ -129,7 +129,7 @@ children:
   - title: 'Creating an Express Application with LoopBack REST API'
     url: /doc/ja/lb4/express-with-lb4-rest-tutorial.html
     output: 'web, pdf'
-    translated: false
+    translated: true
 
 - title: 'プロジェクトサンプル'
   url: /doc/ja/lb4/Examples.html
@@ -290,7 +290,7 @@ children:
     - title: 'Exposing GraphQL APIs'
       url: /doc/ja/lb4/exposing-graphql-apis.html
       output: 'web, pdf'
-      translated: false
+      translated: true
 
     - title: 'Deploying to IBM Cloud'
       url: /doc/ja/lb4/Deploying-to-IBM-Cloud.html
@@ -479,7 +479,7 @@ children:
 - title: 'Crafting LoopBack 4'
   url: /doc/ja/lb4/Crafting-LoopBack-4.html
   output: 'web, pdf'
-  translated: false
+  translated: true
 
 - title: 'FAQ'
   url: /doc/ja/lb4/FAQ.html

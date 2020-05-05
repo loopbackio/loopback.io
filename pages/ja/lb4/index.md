@@ -9,17 +9,12 @@ permalink: /doc/ja/lb4/index.html
 summary: LoopBack is a platform for building APIs and microservices in Node.js
 ---
 
-{% include important.html content="LoopBack 4 GA (General Availability) has been released in
-October 2018, read more in the
-[announcement post](http://strongloop.com/strongblog/loopback-4-ga)
-" %}
+{％include see-also.html title = "GitHub レポジトリ" content = 'LoopBack 4フレームワークのコードは、Loopback version3のように複数リポジトリに跨らず、
+1つの「モノリポジトリ」[loopback-next]（https://github.com/strongloop/loopback-next）にて開発されています。
+ただし、exampleと外部開発によるコンポーネントは、別のリポジトリに格納されます。
+'％}
 
-{% include see-also.html title="GitHub Repo" content=' LoopBack 4 framework code
-is being developed in one "mono-repository",
-[loopback-next](https://github.com/strongloop/loopback-next), rather than
-multiple repos, as in v3. However, examples and externally-developed components
-will be in separate repositories.
-'%}
+{％include note.html content = "この記事は、コミュニティによる日本語翻訳です。最新情報については、[英語版]（/ doc / en / lb4 / index.html）を参照してください。"％}
 
 LoopBackは、Expressをベースにした非常に拡張性の高い、オープンソースのNode.jsフレームワークです。
 これにより、データベースやSOAPまたはRESTサービスなどへ接続を行うAPIおよびマイクロサービスを迅速に作成できます。
