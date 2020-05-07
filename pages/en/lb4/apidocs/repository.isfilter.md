@@ -25,10 +25,10 @@ export declare function isFilter<MT extends object>(candidate: any): candidate i
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  candidate | <code>any</code> |  |
+|  candidate | any |  |
 
 <b>Returns:</b>
 
-`candidate is Filter<MT>`
+candidate is [Filter](./repository.filter.md)<!-- -->&lt;MT&gt;
 
 

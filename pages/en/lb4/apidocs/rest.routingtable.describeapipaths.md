@@ -20,6 +20,6 @@ describeApiPaths(): PathObject;
 ```
 <b>Returns:</b>
 
-`PathObject`
+PathObject
 
 

@@ -29,9 +29,9 @@ export declare class ModelApiBooter extends BaseArtifactBooter
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [app](./boot.modelapibooter.app.md) |  | <code>ApplicationWithRepositories</code> |  |
-|  [booterConfig](./boot.modelapibooter.booterconfig.md) |  | <code>ArtifactOptions</code> |  |
-|  [getModelApiBuilders](./boot.modelapibooter.getmodelapibuilders.md) |  | <code>Getter&lt;ModelApiBuilder[]&gt;</code> |  |
+|  [app](./boot.modelapibooter.app.md) |  | [ApplicationWithRepositories](./repository.applicationwithrepositories.md) |  |
+|  [booterConfig](./boot.modelapibooter.booterconfig.md) |  | [ArtifactOptions](./boot.artifactoptions.md) |  |
+|  [getModelApiBuilders](./boot.modelapibooter.getmodelapibuilders.md) |  | [Getter](./context.getter.md)<!-- -->&lt;[ModelApiBuilder](./model-api-builder.modelapibuilder.md)<!-- -->\[\]&gt; |  |
 
 ## Methods
 

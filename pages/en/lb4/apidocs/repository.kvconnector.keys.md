@@ -25,12 +25,12 @@ keys?(modelClass: Class<Entity>, options?: Options): Promise<string[]>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  modelClass | <code>Class&lt;Entity&gt;</code> | Model class |
-|  options | <code>Options</code> | Options for the operation |
+|  modelClass | [Class](./repository.class.md)<!-- -->&lt;[Entity](./repository.entity.md)<!-- -->&gt; | Model class |
+|  options | [Options](./repository.options.md) | Options for the operation |
 
 <b>Returns:</b>
 
-`Promise<string[]>`
+Promise&lt;string\[\]&gt;
 
 A promise of an array of keys for all entries
 

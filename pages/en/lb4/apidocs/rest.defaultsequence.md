@@ -46,11 +46,12 @@ app.bind(CoreBindings.SEQUENCE).toClass(MySequence);
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [findRoute](./rest.defaultsequence.findroute.md) |  | <code>FindRoute</code> |  |
-|  [invoke](./rest.defaultsequence.invoke.md) |  | <code>InvokeMethod</code> |  |
-|  [parseParams](./rest.defaultsequence.parseparams.md) |  | <code>ParseParams</code> |  |
-|  [reject](./rest.defaultsequence.reject.md) |  | <code>Reject</code> |  |
-|  [send](./rest.defaultsequence.send.md) |  | <code>Send</code> |  |
+|  [findRoute](./rest.defaultsequence.findroute.md) |  | [FindRoute](./rest.findroute.md) |  |
+|  [invoke](./rest.defaultsequence.invoke.md) |  | [InvokeMethod](./rest.invokemethod.md) |  |
+|  [invokeMiddleware](./rest.defaultsequence.invokemiddleware.md) |  | [InvokeMiddleware](./express.invokemiddleware.md) | Optional invoker for registered middleware in a chain. To be injected via SequenceActions.INVOKE\_MIDDLEWARE. |
+|  [parseParams](./rest.defaultsequence.parseparams.md) |  | [ParseParams](./rest.parseparams.md) |  |
+|  [reject](./rest.defaultsequence.reject.md) |  | [Reject](./rest.reject.md) |  |
+|  [send](./rest.defaultsequence.send.md) |  | [Send](./rest.send.md) |  |
 
 ## Methods
 

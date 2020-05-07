@@ -23,11 +23,11 @@ ttl(key: string, options?: Options): Promise<number>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  key | <code>string</code> |  |
-|  options | <code>Options</code> |  |
+|  key | string |  |
+|  options | [Options](./repository.options.md) |  |
 
 <b>Returns:</b>
 
-`Promise<number>`
+Promise&lt;number&gt;
 
 

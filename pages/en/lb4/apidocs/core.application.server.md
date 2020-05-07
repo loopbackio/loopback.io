@@ -18,19 +18,19 @@ Bind a Server constructor to the Application's master context. Each server const
 <b>Signature:</b>
 
 ```typescript
-server<T extends Server>(ctor: Constructor<T>, name?: string): Binding<T>;
+server<T extends Server>(ctor: Constructor<T>, nameOrOptions?: string | BindingFromClassOptions): Binding<T>;
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  ctor | <code>Constructor&lt;T&gt;</code> |  |
-|  name | <code>string</code> | Optional override for key name. |
+|  ctor | [Constructor](./context.constructor.md)<!-- -->&lt;T&gt; |  |
+|  nameOrOptions | string \| [BindingFromClassOptions](./context.bindingfromclassoptions.md) | Optional override for name or options. |
 
 <b>Returns:</b>
 
-`Binding<T>`
+[Binding](./context.binding.md)<!-- -->&lt;T&gt;
 
 Binding for the server class
 

@@ -29,7 +29,7 @@ export declare class TextBodyParser implements BodyParser
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [name](./rest.textbodyparser.name.md) |  | <code>symbol</code> |  |
+|  [name](./rest.textbodyparser.name.md) |  | symbol |  |
 
 ## Methods
 

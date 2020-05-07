@@ -25,10 +25,10 @@ applyDefaultScope(scope: BindingScope): this;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  scope | <code>BindingScope</code> | Default binding scope |
+|  scope | [BindingScope](./context.bindingscope.md) | Default binding scope |
 
 <b>Returns:</b>
 
-`this`
+this
 
 

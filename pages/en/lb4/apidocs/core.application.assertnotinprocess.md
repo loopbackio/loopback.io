@@ -25,10 +25,10 @@ protected assertNotInProcess(op: string): void;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  op | <code>string</code> | The operation name, such as 'boot', 'start', or 'stop' |
+|  op | string | The operation name, such as 'boot', 'start', or 'stop' |
 
 <b>Returns:</b>
 
-`void`
+void
 
 

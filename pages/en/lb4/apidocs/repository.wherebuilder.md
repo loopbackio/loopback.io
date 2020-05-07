@@ -45,7 +45,7 @@ const where = whereBuilder
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [where](./repository.wherebuilder.where.md) |  | <code>Where&lt;MT&gt;</code> |  |
+|  [where](./repository.wherebuilder.where.md) |  | [Where](./repository.where.md)<!-- -->&lt;MT&gt; |  |
 
 ## Methods
 

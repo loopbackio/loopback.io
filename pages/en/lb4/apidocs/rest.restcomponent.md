@@ -29,8 +29,8 @@ export declare class RestComponent implements Component
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [bindings](./rest.restcomponent.bindings.md) |  | <code>(Binding&lt;import(&quot;./body-parsers&quot;).BodyParser&gt; &#124; Binding&lt;RequestBodyParser&gt; &#124; Binding&lt;InfoSpecEnhancer&gt; &#124; Binding&lt;ConsolidationEnhancer&gt;)[]</code> | Add built-in body parsers |
-|  [providers](./rest.restcomponent.providers.md) |  | <code>ProviderMap</code> |  |
-|  [servers](./rest.restcomponent.servers.md) |  | <code>{</code><br/><code>        [name: string]: Constructor&lt;Server&gt;;</code><br/><code>    }</code> |  |
+|  [bindings](./rest.restcomponent.bindings.md) |  | ([Binding](./context.binding.md)<!-- -->&lt;import("./body-parsers").[BodyParser](./rest.bodyparser.md)<!-- -->&gt; \| [Binding](./context.binding.md)<!-- -->&lt;[RequestBodyParser](./rest.requestbodyparser.md)<!-- -->&gt; \| [Binding](./context.binding.md)<!-- -->&lt;[InfoSpecEnhancer](./rest.infospecenhancer.md)<!-- -->&gt; \| [Binding](./context.binding.md)<!-- -->&lt;ConsolidationEnhancer&gt;)\[\] | Add built-in body parsers |
+|  [providers](./rest.restcomponent.providers.md) |  | [ProviderMap](./core.providermap.md) |  |
+|  [servers](./rest.restcomponent.servers.md) |  | { \[name: string\]: [Constructor](./context.constructor.md)<!-- -->&lt;[Server](./core.server.md)<!-- -->&gt;; } |  |
 
 

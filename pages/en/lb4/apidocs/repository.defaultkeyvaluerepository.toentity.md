@@ -23,10 +23,10 @@ protected toEntity(modelData: legacy.ModelData): T;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  modelData | <code>legacy.ModelData</code> |  |
+|  modelData | legacy.ModelData |  |
 
 <b>Returns:</b>
 
-`T`
+T
 
 

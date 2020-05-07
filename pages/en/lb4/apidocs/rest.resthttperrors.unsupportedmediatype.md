@@ -27,15 +27,11 @@ function unsupportedMediaType(contentType: string, allowedTypes?: string[]): Htt
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  contentType | <code>string</code> |  |
-|  allowedTypes | <code>string[]</code> |  |
+|  contentType | string |  |
+|  allowedTypes | string\[\] |  |
 
 <b>Returns:</b>
 
-`HttpErrors.HttpError & {
-        code: string;
-        contentType: string;
-        allowedMediaTypes: string[];
-    }`
+HttpErrors.HttpError &amp; { code: string; contentType: string; allowedMediaTypes: string\[\]; }
 
 

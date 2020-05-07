@@ -25,11 +25,11 @@ export declare function isClass(target: any): target is Constructor<any>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  target | <code>any</code> | The function to check if it's a class or not. |
+|  target | any | The function to check if it's a class or not. |
 
 <b>Returns:</b>
 
-`target is Constructor<any>`
+target is [Constructor](./context.constructor.md)<!-- -->&lt;any&gt;
 
 True if target is a class. False otherwise.
 

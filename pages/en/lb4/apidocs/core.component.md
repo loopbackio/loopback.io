@@ -25,11 +25,11 @@ export interface Component
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [bindings](./core.component.bindings.md) | <code>Binding[]</code> | An array of bindings to be aded to the application context. |
-|  [classes](./core.component.classes.md) | <code>ClassMap</code> | A map of classes to be bound to the application context. |
-|  [controllers](./core.component.controllers.md) | <code>ControllerClass[]</code> | An array of controller classes |
-|  [lifeCycleObservers](./core.component.lifecycleobservers.md) | <code>Constructor&lt;LifeCycleObserver&gt;[]</code> |  |
-|  [providers](./core.component.providers.md) | <code>ProviderMap</code> | A map of providers to be bound to the application context |
-|  [servers](./core.component.servers.md) | <code>{</code><br/><code>        [name: string]: Constructor&lt;Server&gt;;</code><br/><code>    }</code> | A map of name/class pairs for servers |
+|  [bindings](./core.component.bindings.md) | [Binding](./context.binding.md)<!-- -->\[\] | An array of bindings to be aded to the application context. |
+|  [classes](./core.component.classes.md) | [ClassMap](./core.classmap.md) | A map of classes to be bound to the application context. |
+|  [controllers](./core.component.controllers.md) | [ControllerClass](./core.controllerclass.md)<!-- -->\[\] | An array of controller classes |
+|  [lifeCycleObservers](./core.component.lifecycleobservers.md) | [Constructor](./context.constructor.md)<!-- -->&lt;[LifeCycleObserver](./core.lifecycleobserver.md)<!-- -->&gt;\[\] |  |
+|  [providers](./core.component.providers.md) | [ProviderMap](./core.providermap.md) | A map of providers to be bound to the application context |
+|  [servers](./core.component.servers.md) | { \[name: string\]: [Constructor](./context.constructor.md)<!-- -->&lt;[Server](./core.server.md)<!-- -->&gt;; } | A map of name/class pairs for servers |
 
 

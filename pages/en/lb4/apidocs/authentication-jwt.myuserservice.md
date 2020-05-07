@@ -29,7 +29,7 @@ export declare class MyUserService implements UserService<User, Credentials>
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [userRepository](./authentication-jwt.myuserservice.userrepository.md) |  | <code>UserRepository</code> |  |
+|  [userRepository](./authentication-jwt.myuserservice.userrepository.md) |  | [UserRepository](./authentication-jwt.userrepository.md) |  |
 
 ## Methods
 

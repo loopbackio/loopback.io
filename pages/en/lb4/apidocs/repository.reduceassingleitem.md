@@ -25,11 +25,11 @@ export declare function reduceAsSingleItem<T>(_acc: T | undefined, it: T): T;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  \_acc | <code>T &#124; undefined</code> |  |
-|  it | <code>T</code> |  |
+|  \_acc | T \| undefined |  |
+|  it | T |  |
 
 <b>Returns:</b>
 
-`T`
+T
 
 

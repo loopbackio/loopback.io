@@ -25,8 +25,8 @@ constructor(sourcePath: string, targetLocation: string, statusCode?: number);
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  sourcePath | <code>string</code> |  |
-|  targetLocation | <code>string</code> |  |
-|  statusCode | <code>number</code> |  |
+|  sourcePath | string |  |
+|  targetLocation | string |  |
+|  statusCode | number |  |
 
 

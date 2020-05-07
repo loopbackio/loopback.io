@@ -25,11 +25,11 @@ create(routeTemplate: string, value: T): Node<T>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  routeTemplate | <code>string</code> |  |
-|  value | <code>T</code> | Value of the route |
+|  routeTemplate | string |  |
+|  value | T | Value of the route |
 
 <b>Returns:</b>
 
-`Node<T>`
+[Node](./rest.node.md)<!-- -->&lt;T&gt;
 
 

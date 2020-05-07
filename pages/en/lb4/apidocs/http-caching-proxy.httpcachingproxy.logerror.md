@@ -23,11 +23,11 @@ logError(request: IncomingMessage, error: Error): void;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  request | <code>IncomingMessage</code> |  |
-|  error | <code>Error</code> |  |
+|  request | IncomingMessage |  |
+|  error | Error |  |
 
 <b>Returns:</b>
 
-`void`
+void
 
 

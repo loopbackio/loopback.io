@@ -20,6 +20,6 @@ getApiComponents(): ComponentsObject;
 ```
 <b>Returns:</b>
 
-`ComponentsObject`
+ComponentsObject
 
 

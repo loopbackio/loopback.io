@@ -25,11 +25,11 @@ export declare function getAuthorizationMetadata(target: object, methodName: str
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  target | <code>object</code> | Target object/class |
-|  methodName | <code>string</code> | Target method |
+|  target | object | Target object/class |
+|  methodName | string | Target method |
 
 <b>Returns:</b>
 
-`AuthorizationMetadata | undefined`
+[AuthorizationMetadata](./authorization.authorizationmetadata.md) \| undefined
 
 

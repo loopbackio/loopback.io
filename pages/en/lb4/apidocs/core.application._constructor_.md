@@ -25,6 +25,6 @@ constructor(parent: Context);
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  parent | <code>Context</code> | Parent context |
+|  parent | [Context](./context.context.md) | Parent context |
 
 

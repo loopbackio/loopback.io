@@ -25,12 +25,12 @@ export declare function flattenTargetsOfOneToOneRelation<SourceWithRelations ext
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  sourceIds | <code>unknown[]</code> | One value or array of values of the target key |
-|  targetEntities | <code>Target[]</code> | target entities that satisfy targetKey's value (ids). |
-|  targetKey | <code>StringKeyOf&lt;Target&gt;</code> | name of the target key |
+|  sourceIds | unknown\[\] | One value or array of values of the target key |
+|  targetEntities | Target\[\] | target entities that satisfy targetKey's value (ids). |
+|  targetKey | [StringKeyOf](./repository.stringkeyof.md)<!-- -->&lt;Target&gt; | name of the target key |
 
 <b>Returns:</b>
 
-`(Target | undefined)[]`
+(Target \| undefined)\[\]
 
 

@@ -25,11 +25,11 @@ withExample(name: string, example: ExampleObject | ReferenceObject): this;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  name | <code>string</code> | The name of the example |
-|  example | <code>ExampleObject &#124; ReferenceObject</code> | Specification of the example |
+|  name | string | The name of the example |
+|  example | ExampleObject \| ReferenceObject | Specification of the example |
 
 <b>Returns:</b>
 
-`this`
+this
 
 

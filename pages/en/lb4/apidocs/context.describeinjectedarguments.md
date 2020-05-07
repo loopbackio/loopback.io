@@ -25,11 +25,11 @@ export declare function describeInjectedArguments(target: Object, method?: strin
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  target | <code>Object</code> | The target class for constructor or static methods, or the prototype for instance methods |
-|  method | <code>string</code> | Method name, undefined for constructor |
+|  target | Object | The target class for constructor or static methods, or the prototype for instance methods |
+|  method | string | Method name, undefined for constructor |
 
 <b>Returns:</b>
 
-`Readonly<Injection>[]`
+Readonly&lt;[Injection](./context.injection.md)<!-- -->&gt;\[\]
 
 

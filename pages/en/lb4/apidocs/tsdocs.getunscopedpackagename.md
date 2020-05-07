@@ -25,11 +25,11 @@ export declare function getUnscopedPackageName(name: string): string;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  name | <code>string</code> | Name of the npm package |
+|  name | string | Name of the npm package |
 
 <b>Returns:</b>
 
-`string`
+string
 
 ## Example
 

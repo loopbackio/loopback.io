@@ -23,9 +23,9 @@ export interface BelongsToDefinition extends RelationDefinitionBase
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [keyFrom](./repository.belongstodefinition.keyfrom.md) | <code>string</code> |  |
-|  [keyTo](./repository.belongstodefinition.keyto.md) | <code>string</code> |  |
-|  [targetsMany](./repository.belongstodefinition.targetsmany.md) | <code>false</code> |  |
-|  [type](./repository.belongstodefinition.type.md) | <code>RelationType.belongsTo</code> |  |
+|  [keyFrom](./repository.belongstodefinition.keyfrom.md) | string |  |
+|  [keyTo](./repository.belongstodefinition.keyto.md) | string |  |
+|  [targetsMany](./repository.belongstodefinition.targetsmany.md) | false |  |
+|  [type](./repository.belongstodefinition.type.md) | [RelationType.belongsTo](./repository.relationtype.belongsto.md) |  |
 
 

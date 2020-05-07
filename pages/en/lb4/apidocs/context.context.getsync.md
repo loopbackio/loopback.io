@@ -27,12 +27,12 @@ getSync<ValueType>(keyWithPath: BindingAddress<ValueType>, session?: ResolutionS
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  keyWithPath | <code>BindingAddress&lt;ValueType&gt;</code> | The binding key, optionally suffixed with a path to the (deeply) nested property to retrieve. |
-|  session | <code>ResolutionSession</code> | Session for resolution (accepted for backward compatibility) |
+|  keyWithPath | [BindingAddress](./context.bindingaddress.md)<!-- -->&lt;ValueType&gt; | The binding key, optionally suffixed with a path to the (deeply) nested property to retrieve. |
+|  session | [ResolutionSession](./context.resolutionsession.md) | Session for resolution (accepted for backward compatibility) |
 
 <b>Returns:</b>
 
-`ValueType`
+ValueType
 
 A promise of the bound value.
 

@@ -25,13 +25,13 @@ static getPropertyMetadata<T>(key: MetadataKey<T, PropertyDecorator>, target: Ob
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  key | <code>MetadataKey&lt;T, PropertyDecorator&gt;</code> | Metadata key |
-|  target | <code>Object</code> | Class for static properties or prototype for instance properties |
-|  propertyName | <code>string</code> | Property name |
-|  options | <code>InspectionOptions</code> | Options for inspection |
+|  key | [MetadataKey](./metadata.metadatakey.md)<!-- -->&lt;T, PropertyDecorator&gt; | Metadata key |
+|  target | Object | Class for static properties or prototype for instance properties |
+|  propertyName | string | Property name |
+|  options | [InspectionOptions](./metadata.inspectionoptions.md) | Options for inspection |
 
 <b>Returns:</b>
 
-`T | undefined`
+T \| undefined
 
 

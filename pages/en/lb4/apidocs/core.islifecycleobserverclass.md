@@ -25,10 +25,10 @@ export declare function isLifeCycleObserverClass(ctor: Constructor<unknown>): ct
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  ctor | <code>Constructor&lt;unknown&gt;</code> | A class |
+|  ctor | [Constructor](./context.constructor.md)<!-- -->&lt;unknown&gt; | A class |
 
 <b>Returns:</b>
 
-`ctor is Constructor<LifeCycleObserver>`
+ctor is [Constructor](./context.constructor.md)<!-- -->&lt;[LifeCycleObserver](./core.lifecycleobserver.md)<!-- -->&gt;
 
 

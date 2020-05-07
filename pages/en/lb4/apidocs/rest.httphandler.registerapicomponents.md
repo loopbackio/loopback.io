@@ -25,10 +25,10 @@ registerApiComponents(defs: ComponentsObject): void;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  defs | <code>ComponentsObject</code> | Components |
+|  defs | ComponentsObject | Components |
 
 <b>Returns:</b>
 
-`void`
+void
 
 

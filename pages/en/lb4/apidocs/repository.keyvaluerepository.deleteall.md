@@ -25,10 +25,10 @@ deleteAll(options?: Options): Promise<void>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  options | <code>Options</code> | Options for the operation |
+|  options | [Options](./repository.options.md) | Options for the operation |
 
 <b>Returns:</b>
 
-`Promise<void>`
+Promise&lt;void&gt;
 
 

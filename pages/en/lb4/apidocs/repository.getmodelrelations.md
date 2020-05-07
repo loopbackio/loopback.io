@@ -25,11 +25,11 @@ export declare function getModelRelations(modelCtor: typeof Model): RelationDefi
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  modelCtor | <code>typeof Model</code> | The model class (the constructor function). |
+|  modelCtor | typeof [Model](./repository.model.md) | The model class (the constructor function). |
 
 <b>Returns:</b>
 
-`RelationDefinitionMap`
+[RelationDefinitionMap](./repository.relationdefinitionmap.md)
 
 A map of relation definitions
 

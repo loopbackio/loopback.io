@@ -25,10 +25,10 @@ handle(context: RequestContext): Promise<void>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  context | <code>RequestContext</code> | The request context: HTTP request and response objects, per-request IoC container and more. |
+|  context | [RequestContext](./rest.requestcontext.md) | The request context: HTTP request and response objects, per-request IoC container and more. |
 
 <b>Returns:</b>
 
-`Promise<void>`
+Promise&lt;void&gt;
 
 

@@ -29,12 +29,12 @@ getValue(ctx: Context, session?: ResolutionSession): ValueOrPromise<T>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  ctx | <code>Context</code> | Context for the resolution |
-|  session | <code>ResolutionSession</code> | Optional session for binding and dependency resolution |
+|  ctx | [Context](./context.context.md) | Context for the resolution |
+|  session | [ResolutionSession](./context.resolutionsession.md) | Optional session for binding and dependency resolution |
 
 <b>Returns:</b>
 
-`ValueOrPromise<T>`
+[ValueOrPromise](./context.valueorpromise.md)<!-- -->&lt;T&gt;
 
 ## Example
 

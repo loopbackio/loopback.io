@@ -20,17 +20,17 @@ A list of binding scope/tags or template functions to configure the binding
 <b>Signature:</b>
 
 ```typescript
-function provider(...specs: BindingSpec[]): (target: Constructor<Provider<unknown>>) => void;
+function provider(...specs: BindingSpec[]): (target: Constructor<unknown>) => void;
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  specs | <code>BindingSpec[]</code> |  |
+|  specs | [BindingSpec](./context.bindingspec.md)<!-- -->\[\] |  |
 
 <b>Returns:</b>
 
-`(target: Constructor<Provider<unknown>>) => void`
+(target: [Constructor](./context.constructor.md)<!-- -->&lt;unknown&gt;) =&gt; void
 
 

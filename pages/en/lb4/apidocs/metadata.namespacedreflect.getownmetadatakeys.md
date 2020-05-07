@@ -23,11 +23,11 @@ getOwnMetadataKeys(target: Object, propertyKey?: string): string[];
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  target | <code>Object</code> |  |
-|  propertyKey | <code>string</code> |  |
+|  target | Object |  |
+|  propertyKey | string |  |
 
 <b>Returns:</b>
 
-`string[]`
+string\[\]
 
 

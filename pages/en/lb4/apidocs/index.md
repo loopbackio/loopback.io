@@ -28,6 +28,7 @@ permalink: /doc/en/lb4/apidocs.index.html
 |  [@loopback/context-explorer](./context-explorer.md) |  |
 |  [@loopback/core](./core.md) | The core foundation for LoopBack 4. It can also serve as the platform to build large-scale Node.js applications and frameworks. |
 |  [@loopback/cron](./cron.md) |  |
+|  [@loopback/express](./express.md) | The Express integration package for loopback-next. |
 |  [@loopback/extension-health](./extension-health.md) | A component to report health status using [@cloudnative/health](https://github.com/CloudNativeJS/cloud-health)<!-- -->. |
 |  [@loopback/extension-logging](./extension-logging.md) |  |
 |  [@loopback/extension-metrics](./extension-metrics.md) | A component that reports metrics of Node.js, the LoopBack framework, and your application to Prometheus. |

@@ -27,11 +27,11 @@ export declare function api(spec: ControllerSpec): ClassDecorator;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  spec | <code>ControllerSpec</code> | OpenAPI specification describing the endpoints handled by this controller |
+|  spec | [ControllerSpec](./openapi-v3.controllerspec.md) | OpenAPI specification describing the endpoints handled by this controller |
 
 <b>Returns:</b>
 
-`ClassDecorator`
+ClassDecorator
 
 ## Example
 

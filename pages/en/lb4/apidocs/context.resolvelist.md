@@ -25,12 +25,12 @@ export declare function resolveList<T, V>(list: T[], resolver: (val: T, index: n
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  list | <code>T[]</code> | The original array containing the source entries |
-|  resolver | <code>(val: T, index: number, list: T[]) =&gt; ValueOrPromise&lt;V&gt;</code> | A function resolves an entry to a value or promise. It will be invoked with the property value, the property index, and the source array. |
+|  list | T\[\] | The original array containing the source entries |
+|  resolver | (val: T, index: number, list: T\[\]) =&gt; [ValueOrPromise](./context.valueorpromise.md)<!-- -->&lt;V&gt; | A function resolves an entry to a value or promise. It will be invoked with the property value, the property index, and the source array. |
 
 <b>Returns:</b>
 
-`ValueOrPromise<V[]>`
+[ValueOrPromise](./context.valueorpromise.md)<!-- -->&lt;V\[\]&gt;
 
 ## Example
 

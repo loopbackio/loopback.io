@@ -25,11 +25,11 @@ copyFile(src: string, dest?: string): Promise<void>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  src | <code>string</code> | Absolute path of file to be copied to the TestSandbox |
-|  dest | <code>string</code> | Optional. Destination filename of the copy operation (relative to TestSandbox). Original filename used if not specified. |
+|  src | string | Absolute path of file to be copied to the TestSandbox |
+|  dest | string | Optional. Destination filename of the copy operation (relative to TestSandbox). Original filename used if not specified. |
 
 <b>Returns:</b>
 
-`Promise<void>`
+Promise&lt;void&gt;
 
 

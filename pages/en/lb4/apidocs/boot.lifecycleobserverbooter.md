@@ -33,9 +33,9 @@ export declare class LifeCycleObserverBooter extends BaseArtifactBooter
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [app](./boot.lifecycleobserverbooter.app.md) |  | <code>Application</code> |  |
-|  [observerConfig](./boot.lifecycleobserverbooter.observerconfig.md) |  | <code>ArtifactOptions</code> |  |
-|  [observers](./boot.lifecycleobserverbooter.observers.md) |  | <code>LifeCycleObserverClass[]</code> |  |
+|  [app](./boot.lifecycleobserverbooter.app.md) |  | [Application](./core.application.md) |  |
+|  [observerConfig](./boot.lifecycleobserverbooter.observerconfig.md) |  | [ArtifactOptions](./boot.artifactoptions.md) |  |
+|  [observers](./boot.lifecycleobserverbooter.observers.md) |  | LifeCycleObserverClass\[\] |  |
 
 ## Methods
 

@@ -25,7 +25,7 @@ constructor(jwtSecret: string, jwtExpiresIn: string);
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  jwtSecret | <code>string</code> |  |
-|  jwtExpiresIn | <code>string</code> |  |
+|  jwtSecret | string |  |
+|  jwtExpiresIn | string |  |
 
 

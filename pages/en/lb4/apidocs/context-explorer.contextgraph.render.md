@@ -22,6 +22,6 @@ render(): string;
 ```
 <b>Returns:</b>
 
-`string`
+string
 
 

@@ -46,6 +46,7 @@ This module provides data access facilities to various databases and services as
 |  [ModelDefinition](./repository.modeldefinition.md) | Definition for a model |
 |  [ModelMetadataHelper](./repository.modelmetadatahelper.md) |  |
 |  [ModelType](./repository.modeltype.md) | Model type |
+|  [NullType](./repository.nulltype.md) | Null type |
 |  [NumberType](./repository.numbertype.md) | Number type |
 |  [ObjectType](./repository.objecttype.md) | Object type |
 |  [RepositoryMetadata](./repository.repositorymetadata.md) | Metadata for a repository |
@@ -80,7 +81,10 @@ This module provides data access facilities to various databases and services as
 |  [createHasManyRepositoryFactory(relationMetadata, targetRepositoryGetter)](./repository.createhasmanyrepositoryfactory.md) | Enforces a constraint on a repository based on a relationship contract between models. For example, if a Customer model is related to an Order model via a HasMany relation, then, the relational repository returned by the factory function would be constrained by a Customer model instance's id(s). |
 |  [createHasOneRepositoryFactory(relationMetadata, targetRepositoryGetter)](./repository.createhasonerepositoryfactory.md) | Enforces a constraint on a repository based on a relationship contract between models. For example, if a Customer model is related to an Address model via a HasOne relation, then, the relational repository returned by the factory function would be constrained by a Customer model instance's id(s). |
 |  [deduplicate(input)](./repository.deduplicate.md) | Dedupe an array |
+|  [defineCrudRepositoryClass(entityClass)](./repository.definecrudrepositoryclass.md) | Create (define) an entity CRUD repository class for the given model. This function always uses <code>DefaultCrudRepository</code> as the base class, use <code>defineRepositoryClass</code> if you want to use your own base repository. |
+|  [defineKeyValueRepositoryClass(modelClass)](./repository.definekeyvaluerepositoryclass.md) | Create (define) a KeyValue repository class for the given entity. This function always uses <code>DefaultKeyValueRepository</code> as the base class, use <code>defineRepositoryClass</code> if you want to use your own base repository. |
 |  [defineModelClass(base, definition)](./repository.definemodelclass.md) | Create (define) a new model class with the given name and definition. |
+|  [defineRepositoryClass(modelClass, baseRepositoryClass)](./repository.definerepositoryclass.md) | Create (define) a repository class for the given model.<!-- -->See also <code>defineCrudRepositoryClass</code> and <code>defineKeyValueRepositoryClass</code> for convenience wrappers providing repository class factory for the default CRUD and KeyValue implementations.<!-- -->\*\*❗️IMPORTANT: The compiler (TypeScript 3.8) is not able to correctly infer generic arguments <code>M</code> and <code>R</code> from the class constructors provided in function arguments. You must always provide both M and R types explicitly.\*\* |
 |  [embedsMany(definition)](./repository.embedsmany.md) | Decorator for embedsMany |
 |  [embedsOne(definition)](./repository.embedsone.md) | Decorator for embedsOne |
 |  [ensurePromise(p)](./repository.ensurepromise.md) | Ensure the value is a promise |
@@ -102,6 +106,7 @@ This module provides data access facilities to various databases and services as
 |  [isTypeResolver(fn)](./repository.istyperesolver.md) | A function that checks whether a function is a TypeResolver or not. |
 |  [model(definition)](./repository.model.md) | Decorator for model definitions |
 |  [normalizeKey(rawKey)](./repository.normalizekey.md) | Workaround for MongoDB, where the connector returns ObjectID values even for properties configured with "type: string". |
+|  [Null()](./repository.null.md) | A boxed type for <code>null</code> |
 |  [property(definition)](./repository.property.md) | Decorator for model properties |
 |  [reduceAsArray(acc, it)](./repository.reduceasarray.md) | Returns an array of instances. For HasMany relation usage. |
 |  [reduceAsSingleItem(\_acc, it)](./repository.reduceassingleitem.md) | Returns a single of an instance. For HasOne and BelongsTo relation usage. |
@@ -121,6 +126,7 @@ This module provides data access facilities to various databases and services as
 |  [AndClause](./repository.andclause.md) | And clause |
 |  [AnyObject](./repository.anyobject.md) | Objects with open properties |
 |  [ApplicationWithRepositories](./repository.applicationwithrepositories.md) | Interface for an Application mixed in with RepositoryMixin |
+|  [BaseRepositoryClass](./repository.baserepositoryclass.md) | Signature for repository classes that can be used as the base class for <code>define*</code> functions. The constructor of a base repository class accepts the target model constructor and the datasource to use.<code>define*</code> functions require a class implementing this interface on input. |
 |  [BelongsToAccessor](./repository.belongstoaccessor.md) |  |
 |  [BelongsToDefinition](./repository.belongstodefinition.md) |  |
 |  [BelongsToRepository](./repository.belongstorepository.md) | CRUD operations for a target repository of a BelongsTo relation |
@@ -147,6 +153,7 @@ This module provides data access facilities to various databases and services as
 |  [KeyValueRepository](./repository.keyvaluerepository.md) | Key/Value operations for connector implementations |
 |  [KVConnector](./repository.kvconnector.md) | Key/Value operations for connector implementations |
 |  [ModelDefinitionSyntax](./repository.modeldefinitionsyntax.md) | DSL for building a model definition. |
+|  [ModelRepositoryClass](./repository.modelrepositoryclass.md) | Signature for a Repository class bound to a given model. The constructor accepts only the dataSource to use for persistence.<code>define*</code> functions return a class implementing this interface. |
 |  [OrClause](./repository.orclause.md) | Or clause |
 |  [Persistable](./repository.persistable.md) |  |
 |  [PropertyDefinition](./repository.propertydefinition.md) | Property definition for a model |
@@ -178,6 +185,7 @@ This module provides data access facilities to various databases and services as
 |  [MODEL\_KEY](./repository.model_key.md) |  |
 |  [MODEL\_PROPERTIES\_KEY](./repository.model_properties_key.md) |  |
 |  [MODEL\_WITH\_PROPERTIES\_KEY](./repository.model_with_properties_key.md) |  |
+|  [NULL](./repository.null.md) |  |
 |  [NUMBER](./repository.number.md) |  |
 |  [RELATIONS\_KEY](./repository.relations_key.md) |  |
 |  [STRING](./repository.string.md) |  |

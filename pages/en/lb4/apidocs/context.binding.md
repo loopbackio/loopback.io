@@ -31,14 +31,14 @@ export declare class Binding<T = BoundValue> extends EventEmitter
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [isLocked](./context.binding.islocked.md) |  | <code>boolean</code> |  |
-|  [key](./context.binding.key.md) |  | <code>string</code> | Key of the binding |
-|  [providerConstructor](./context.binding.providerconstructor.md) |  | <code>Constructor&lt;Provider&lt;T&gt;&gt; &#124; undefined</code> | For bindings bound via <code>toProvider()</code>, this property contains the constructor function of the provider class |
-|  [scope](./context.binding.scope.md) |  | <code>BindingScope</code> | Scope of the binding to control how the value is cached/shared |
-|  [tagMap](./context.binding.tagmap.md) |  | <code>TagMap</code> | Map for tag name/value pairs |
-|  [tagNames](./context.binding.tagnames.md) |  | <code>string[]</code> | Get an array of tag names |
-|  [type](./context.binding.type.md) |  | <code>BindingType &#124; undefined</code> | Type of the binding value getter |
-|  [valueConstructor](./context.binding.valueconstructor.md) |  | <code>Constructor&lt;T&gt; &#124; undefined</code> | For bindings bound via <code>toClass()</code>, this property contains the constructor function of the class |
+|  [isLocked](./context.binding.islocked.md) |  | boolean |  |
+|  [key](./context.binding.key.md) |  | string | Key of the binding |
+|  [providerConstructor](./context.binding.providerconstructor.md) |  | [Constructor](./context.constructor.md)<!-- -->&lt;[Provider](./context.provider.md)<!-- -->&lt;T&gt;&gt; \| undefined | For bindings bound via <code>toProvider()</code>, this property contains the constructor function of the provider class |
+|  [scope](./context.binding.scope.md) |  | [BindingScope](./context.bindingscope.md) | Scope of the binding to control how the value is cached/shared |
+|  [tagMap](./context.binding.tagmap.md) |  | [TagMap](./context.tagmap.md) | Map for tag name/value pairs |
+|  [tagNames](./context.binding.tagnames.md) |  | string\[\] | Get an array of tag names |
+|  [type](./context.binding.type.md) |  | [BindingType](./context.bindingtype.md) \| undefined | Type of the binding value getter |
+|  [valueConstructor](./context.binding.valueconstructor.md) |  | [Constructor](./context.constructor.md)<!-- -->&lt;T&gt; \| undefined | For bindings bound via <code>toClass()</code>, this property contains the constructor function of the class |
 
 ## Methods
 
@@ -53,6 +53,7 @@ export declare class Binding<T = BoundValue> extends EventEmitter
 |  [inScope(scope)](./context.binding.inscope.md) |  | Set the binding scope |
 |  [inspect(options)](./context.binding.inspect.md) |  | Inspect the binding to return a json representation of the binding information |
 |  [lock()](./context.binding.lock.md) |  | Lock the binding so that it cannot be rebound |
+|  [refresh(ctx)](./context.binding.refresh.md) |  | Invalidate the binding cache so that its value will be reloaded next time. This is useful to force reloading a singleton when its configuration or dependencies are changed. \*\*WARNING\*\*: The state held in the cached value will be gone. |
 |  [tag(tags)](./context.binding.tag.md) |  | Tag the binding with names or name/value objects. A tag has a name and an optional value. If not supplied, the tag name is used as the value. |
 |  [to(value)](./context.binding.to.md) |  | Bind the key to a constant value. The value must be already available at binding time, it is not allowed to pass a Promise instance. |
 |  [toAlias(keyWithPath)](./context.binding.toalias.md) |  | Bind the key to an alias of another binding |

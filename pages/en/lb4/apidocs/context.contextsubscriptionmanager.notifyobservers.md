@@ -25,11 +25,11 @@ protected notifyObservers(event: ContextEvent, observers?: Set<ContextEventObser
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  event | <code>ContextEvent</code> | Context event |
-|  observers | <code>Set&lt;ContextEventObserver&gt; &#124; undefined</code> | Current set of context observers |
+|  event | [ContextEvent](./context.contextevent.md) | Context event |
+|  observers | Set&lt;[ContextEventObserver](./context.contexteventobserver.md)<!-- -->&gt; \| undefined | Current set of context observers |
 
 <b>Returns:</b>
 
-`Promise<void>`
+Promise&lt;void&gt;
 
 

@@ -25,10 +25,10 @@ updateBindings(requestContext: Context): void;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  requestContext | <code>Context</code> |  |
+|  requestContext | [Context](./context.context.md) |  |
 
 <b>Returns:</b>
 
-`void`
+void
 
 

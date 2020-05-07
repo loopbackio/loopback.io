@@ -25,8 +25,8 @@ constructor(app: Application, projectRoot: string, interceptorConfig?: ArtifactO
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  app | <code>Application</code> |  |
-|  projectRoot | <code>string</code> |  |
-|  interceptorConfig | <code>ArtifactOptions</code> |  |
+|  app | [Application](./core.application.md) |  |
+|  projectRoot | string |  |
+|  interceptorConfig | [ArtifactOptions](./boot.artifactoptions.md) |  |
 
 

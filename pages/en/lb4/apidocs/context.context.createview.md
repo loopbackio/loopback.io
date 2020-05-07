@@ -25,11 +25,11 @@ createView<T = unknown>(filter: BindingFilter, comparator?: BindingComparator): 
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  filter | <code>BindingFilter</code> | A function to match bindings |
-|  comparator | <code>BindingComparator</code> | A function to sort matched bindings |
+|  filter | [BindingFilter](./context.bindingfilter.md) | A function to match bindings |
+|  comparator | [BindingComparator](./context.bindingcomparator.md) | A function to sort matched bindings |
 
 <b>Returns:</b>
 
-`ContextView<T>`
+[ContextView](./context.contextview.md)<!-- -->&lt;T&gt;
 
 

@@ -25,10 +25,10 @@ toClass(ctor: Constructor<T>): this;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  ctor | <code>Constructor&lt;T&gt;</code> | The class constructor to call. Any constructor arguments must be annotated with <code>@inject</code> so that we can resolve them from the context. |
+|  ctor | [Constructor](./context.constructor.md)<!-- -->&lt;T&gt; | The class constructor to call. Any constructor arguments must be annotated with <code>@inject</code> so that we can resolve them from the context. |
 
 <b>Returns:</b>
 
-`this`
+this
 
 

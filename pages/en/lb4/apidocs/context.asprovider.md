@@ -25,10 +25,10 @@ export declare function asProvider<T>(target: Constructor<Provider<T>>): Binding
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  target | <code>Constructor&lt;Provider&lt;T&gt;&gt;</code> | Target provider class |
+|  target | [Constructor](./context.constructor.md)<!-- -->&lt;[Provider](./context.provider.md)<!-- -->&lt;T&gt;&gt; | Target provider class |
 
 <b>Returns:</b>
 
-`BindingTemplate<T>`
+[BindingTemplate](./context.bindingtemplate.md)<!-- -->&lt;T&gt;
 
 

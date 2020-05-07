@@ -25,12 +25,12 @@ observe(event: ContextEventType, binding: Readonly<Binding<unknown>>, context: C
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  event | <code>ContextEventType</code> |  |
-|  binding | <code>Readonly&lt;Binding&lt;unknown&gt;&gt;</code> |  |
-|  context | <code>Context</code> |  |
+|  event | [ContextEventType](./context.contexteventtype.md) |  |
+|  binding | Readonly&lt;[Binding](./context.binding.md)<!-- -->&lt;unknown&gt;&gt; |  |
+|  context | [Context](./context.context.md) |  |
 
 <b>Returns:</b>
 
-`void`
+void
 
 

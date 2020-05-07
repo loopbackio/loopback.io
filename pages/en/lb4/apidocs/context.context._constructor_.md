@@ -25,8 +25,8 @@ constructor(_parent?: Context | string, name?: string);
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  \_parent | <code>Context &#124; string</code> | The optional parent context |
-|  name | <code>string</code> | Name of the context, if not provided, a <code>uuid</code> will be generated as the name |
+|  \_parent | [Context](./context.context.md) \| string | The optional parent context |
+|  name | string | Name of the context, if not provided, a <code>uuid</code> will be generated as the name |
 
 ## Example
 

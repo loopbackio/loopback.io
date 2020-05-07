@@ -23,11 +23,11 @@ invokeHandler({ response }: RequestContext, args: OperationArgs): Promise<Operat
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  { response } | <code>RequestContext</code> |  |
-|  args | <code>OperationArgs</code> |  |
+|  { response } | [RequestContext](./rest.requestcontext.md) |  |
+|  args | [OperationArgs](./rest.operationargs.md) |  |
 
 <b>Returns:</b>
 
-`Promise<OperationRetval>`
+Promise&lt;[OperationRetval](./rest.operationretval.md)<!-- -->&gt;
 
 

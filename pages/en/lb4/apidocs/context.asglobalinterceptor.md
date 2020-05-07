@@ -25,10 +25,10 @@ export declare function asGlobalInterceptor(group?: string): BindingTemplate;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  group | <code>string</code> | Group for ordering the interceptor |
+|  group | string | Group for ordering the interceptor |
 
 <b>Returns:</b>
 
-`BindingTemplate`
+[BindingTemplate](./context.bindingtemplate.md)
 
 

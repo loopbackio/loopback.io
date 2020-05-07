@@ -25,10 +25,10 @@ protected normalizeFilter(filter?: Filter<T>): legacy.Filter | undefined;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  filter | <code>Filter&lt;T&gt;</code> | Query filter |
+|  filter | [Filter](./repository.filter.md)<!-- -->&lt;T&gt; | Query filter |
 
 <b>Returns:</b>
 
-`legacy.Filter | undefined`
+legacy.Filter \| undefined
 
 

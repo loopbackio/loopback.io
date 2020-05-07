@@ -20,7 +20,7 @@ value(): ValueOrPromise<T>;
 ```
 <b>Returns:</b>
 
-`ValueOrPromise<T>`
+[ValueOrPromise](./context.valueorpromise.md)<!-- -->&lt;T&gt;
 
 The value to inject to dependents. This method can return a promise too, in which case the IoC framework will resolve this promise to obtain the value to inject.
 

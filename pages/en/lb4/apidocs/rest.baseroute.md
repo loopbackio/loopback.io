@@ -31,9 +31,9 @@ export declare abstract class BaseRoute implements RouteEntry
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [path](./rest.baseroute.path.md) |  | <code>string</code> |  |
-|  [spec](./rest.baseroute.spec.md) |  | <code>OperationObject</code> |  |
-|  [verb](./rest.baseroute.verb.md) |  | <code>string</code> |  |
+|  [path](./rest.baseroute.path.md) |  | string |  |
+|  [spec](./rest.baseroute.spec.md) |  | OperationObject |  |
+|  [verb](./rest.baseroute.verb.md) |  | string |  |
 
 ## Methods
 

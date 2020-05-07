@@ -23,10 +23,10 @@ isCoercible(value: any): boolean;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  value | <code>any</code> |  |
+|  value | any |  |
 
 <b>Returns:</b>
 
-`boolean`
+boolean
 
 

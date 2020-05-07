@@ -25,10 +25,10 @@ export declare function isBindingAddress(bindingSelector: BindingSelector): bind
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  bindingSelector | <code>BindingSelector</code> | Binding key or filter function |
+|  bindingSelector | [BindingSelector](./context.bindingselector.md) | Binding key or filter function |
 
 <b>Returns:</b>
 
-`bindingSelector is BindingAddress`
+bindingSelector is [BindingAddress](./context.bindingaddress.md)
 
 

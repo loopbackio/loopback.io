@@ -33,8 +33,8 @@ export declare class ControllerBooter extends BaseArtifactBooter
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [app](./boot.controllerbooter.app.md) |  | <code>Application</code> |  |
-|  [controllerConfig](./boot.controllerbooter.controllerconfig.md) |  | <code>ArtifactOptions</code> |  |
+|  [app](./boot.controllerbooter.app.md) |  | [Application](./core.application.md) |  |
+|  [controllerConfig](./boot.controllerbooter.controllerconfig.md) |  | [ArtifactOptions](./boot.artifactoptions.md) |  |
 
 ## Methods
 

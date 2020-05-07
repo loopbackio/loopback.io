@@ -20,6 +20,6 @@ value(): GetFromContext;
 ```
 <b>Returns:</b>
 
-`GetFromContext`
+[GetFromContext](./rest.getfromcontext.md)
 
 

@@ -25,9 +25,9 @@ export interface RouteEntry
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [path](./rest.routeentry.path.md) | <code>string</code> | http path |
-|  [spec](./rest.routeentry.spec.md) | <code>OperationObject</code> | OpenAPI operation spec |
-|  [verb](./rest.routeentry.verb.md) | <code>string</code> | http verb |
+|  [path](./rest.routeentry.path.md) | string | http path |
+|  [spec](./rest.routeentry.spec.md) | OperationObject | OpenAPI operation spec |
+|  [verb](./rest.routeentry.verb.md) | string | http verb |
 
 ## Methods
 

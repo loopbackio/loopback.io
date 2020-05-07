@@ -25,10 +25,10 @@ protected definePersistedModel(entityClass: typeof Model): typeof juggler.Persis
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  entityClass | <code>typeof Model</code> | LB4 Entity constructor |
+|  entityClass | typeof [Model](./repository.model.md) | LB4 Entity constructor |
 
 <b>Returns:</b>
 
-`typeof juggler.PersistedModel`
+typeof juggler.PersistedModel
 
 

@@ -25,6 +25,6 @@ constructor(initialSpec: T);
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  initialSpec | <code>T</code> |  |
+|  initialSpec | T |  |
 
 

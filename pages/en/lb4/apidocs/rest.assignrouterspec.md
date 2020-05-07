@@ -23,11 +23,11 @@ export declare function assignRouterSpec(target: RouterSpec, additions: RouterSp
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  target | <code>RouterSpec</code> |  |
-|  additions | <code>RouterSpec</code> |  |
+|  target | [RouterSpec](./rest.routerspec.md) |  |
+|  additions | [RouterSpec](./rest.routerspec.md) |  |
 
 <b>Returns:</b>
 
-`void`
+void
 
 

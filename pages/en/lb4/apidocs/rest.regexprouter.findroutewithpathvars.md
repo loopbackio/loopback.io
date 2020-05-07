@@ -23,11 +23,11 @@ protected findRouteWithPathVars(verb: string, path: string): ResolvedRoute | und
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  verb | <code>string</code> |  |
-|  path | <code>string</code> |  |
+|  verb | string |  |
+|  path | string |  |
 
 <b>Returns:</b>
 
-`ResolvedRoute | undefined`
+[ResolvedRoute](./rest.resolvedroute.md) \| undefined
 
 

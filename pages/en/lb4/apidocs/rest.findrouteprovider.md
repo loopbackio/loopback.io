@@ -29,8 +29,8 @@ export declare class FindRouteProvider implements Provider<FindRoute>
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [context](./rest.findrouteprovider.context.md) |  | <code>Context</code> |  |
-|  [handler](./rest.findrouteprovider.handler.md) |  | <code>HttpHandler</code> |  |
+|  [context](./rest.findrouteprovider.context.md) |  | [Context](./context.context.md) |  |
+|  [handler](./rest.findrouteprovider.handler.md) |  | [HttpHandler](./rest.httphandler.md) |  |
 
 ## Methods
 

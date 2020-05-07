@@ -25,10 +25,10 @@ registerRoute(route: RouteEntry): void;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  route | <code>RouteEntry</code> | A route entry |
+|  route | [RouteEntry](./rest.routeentry.md) | A route entry |
 
 <b>Returns:</b>
 
-`void`
+void
 
 

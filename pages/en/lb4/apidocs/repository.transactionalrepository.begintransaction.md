@@ -25,11 +25,11 @@ beginTransaction(options?: IsolationLevel | Options): Promise<Transaction>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  options | <code>IsolationLevel &#124; Options</code> | Options for the operations |
+|  options | [IsolationLevel](./repository.isolationlevel.md) \| [Options](./repository.options.md) | Options for the operations |
 
 <b>Returns:</b>
 
-`Promise<Transaction>`
+Promise&lt;[Transaction](./repository.transaction.md)<!-- -->&gt;
 
 Promise<Transaction> Promise that resolves to a new Transaction object
 

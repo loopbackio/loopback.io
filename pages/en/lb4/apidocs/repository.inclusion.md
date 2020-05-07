@@ -29,7 +29,7 @@ export interface Inclusion
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [relation](./repository.inclusion.relation.md) | <code>string</code> |  |
-|  [scope](./repository.inclusion.scope.md) | <code>Filter&lt;AnyObject&gt;</code> |  |
+|  [relation](./repository.inclusion.relation.md) | string |  |
+|  [scope](./repository.inclusion.scope.md) | [Filter](./repository.filter.md)<!-- -->&lt;[AnyObject](./repository.anyobject.md)<!-- -->&gt; |  |
 
 

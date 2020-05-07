@@ -25,11 +25,11 @@ lte<K extends KeyOf<MT>>(key: K, val: MT[K]): this;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  key | <code>K</code> | Property name |
-|  val | <code>MT[K]</code> | Property value |
+|  key | K | Property name |
+|  val | MT\[K\] | Property value |
 
 <b>Returns:</b>
 
-`this`
+this
 
 

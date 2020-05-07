@@ -25,10 +25,10 @@ export declare function normalizeParsingError(err: HttpError): HttpError;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  err | <code>HttpError</code> |  |
+|  err | HttpError |  |
 
 <b>Returns:</b>
 
-`HttpError`
+HttpError
 
 

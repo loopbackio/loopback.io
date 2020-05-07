@@ -25,10 +25,10 @@ export declare function getPathVariables(path: string): RegExpMatchArray | null;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  path | <code>string</code> |  |
+|  path | string |  |
 
 <b>Returns:</b>
 
-`RegExpMatchArray | null`
+RegExpMatchArray \| null
 
 

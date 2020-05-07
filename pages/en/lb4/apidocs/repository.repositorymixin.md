@@ -21,10 +21,10 @@ A mixin class for Application that creates a .repository() function to register 
 export declare function RepositoryMixin<T extends Class<any>>(superClass: T): {
     new (...args: any[]): {
         [x: string]: any;
-        repository<R extends Repository<any>>(repoClass: Class<R>, name?: string | undefined): Binding<R>;
+        repository<R extends Repository<any>>(repoClass: Class<R>, nameOrOptions?: string | BindingFromClassOptions | undefined): Binding<R>;
         getRepository<R_1 extends Repository<any>>(repo: Class<R_1>): Promise<R_1>;
-        dataSource<D extends juggler.DataSource>(dataSource: D | Class<D>, name?: string | undefined): Binding<D>;
-        component(component: Class<unknown>, name?: string | undefined): void;
+        dataSource<D extends juggler.DataSource>(dataSource: D | Class<D>, nameOrOptions?: string | BindingFromClassOptions | undefined): Binding<D>;
+        component(component: Class<unknown>, nameOrOptions?: string | BindingFromClassOptions | undefined): void;
         mountComponentRepositories(component: Class<unknown>): void;
         migrateSchema(options?: SchemaMigrationOptions): Promise<void>;
     };
@@ -35,21 +35,11 @@ export declare function RepositoryMixin<T extends Class<any>>(superClass: T): {
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  superClass | <code>T</code> |  |
+|  superClass | T |  |
 
 <b>Returns:</b>
 
-`{
-    new (...args: any[]): {
-        [x: string]: any;
-        repository<R extends Repository<any>>(repoClass: Class<R>, name?: string | undefined): Binding<R>;
-        getRepository<R_1 extends Repository<any>>(repo: Class<R_1>): Promise<R_1>;
-        dataSource<D extends juggler.DataSource>(dataSource: D | Class<D>, name?: string | undefined): Binding<D>;
-        component(component: Class<unknown>, name?: string | undefined): void;
-        mountComponentRepositories(component: Class<unknown>): void;
-        migrateSchema(options?: SchemaMigrationOptions): Promise<void>;
-    };
-} & T`
+{ new (...args: any\[\]): { \[x: string\]: any; repository&lt;R extends [Repository](./repository.repository.md)<!-- -->&lt;any&gt;&gt;(repoClass: [Class](./repository.class.md)<!-- -->&lt;R&gt;, nameOrOptions?: string \| [BindingFromClassOptions](./context.bindingfromclassoptions.md) \| undefined): [Binding](./context.binding.md)<!-- -->&lt;R&gt;; getRepository&lt;R\_1 extends [Repository](./repository.repository.md)<!-- -->&lt;any&gt;&gt;(repo: [Class](./repository.class.md)<!-- -->&lt;R\_1&gt;): Promise&lt;R\_1&gt;; dataSource&lt;D extends juggler.DataSource&gt;(dataSource: D \| [Class](./repository.class.md)<!-- -->&lt;D&gt;, nameOrOptions?: string \| [BindingFromClassOptions](./context.bindingfromclassoptions.md) \| undefined): [Binding](./context.binding.md)<!-- -->&lt;D&gt;; component(component: [Class](./repository.class.md)<!-- -->&lt;unknown&gt;, nameOrOptions?: string \| [BindingFromClassOptions](./context.bindingfromclassoptions.md) \| undefined): void; mountComponentRepositories(component: [Class](./repository.class.md)<!-- -->&lt;unknown&gt;): void; migrateSchema(options?: [SchemaMigrationOptions](./repository.schemamigrationoptions.md)<!-- -->): Promise&lt;void&gt;; }; } &amp; T
 
 ## Example
 

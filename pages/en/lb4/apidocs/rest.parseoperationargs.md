@@ -25,13 +25,13 @@ export declare function parseOperationArgs(request: Request, route: ResolvedRout
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  request | <code>Request</code> | Incoming HTTP request |
-|  route | <code>ResolvedRoute</code> | Resolved Route |
-|  requestBodyParser | <code>RequestBodyParser</code> |  |
-|  options | <code>RequestBodyValidationOptions</code> |  |
+|  request | Request | Incoming HTTP request |
+|  route | [ResolvedRoute](./rest.resolvedroute.md) | Resolved Route |
+|  requestBodyParser | [RequestBodyParser](./rest.requestbodyparser.md) |  |
+|  options | [RequestBodyValidationOptions](./rest.requestbodyvalidationoptions.md) |  |
 
 <b>Returns:</b>
 
-`Promise<OperationArgs>`
+Promise&lt;[OperationArgs](./rest.operationargs.md)<!-- -->&gt;
 
 

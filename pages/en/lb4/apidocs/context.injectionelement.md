@@ -25,7 +25,7 @@ export interface InjectionElement
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [type](./context.injectionelement.type.md) | <code>'injection'</code> |  |
-|  [value](./context.injectionelement.value.md) | <code>Readonly&lt;Injection&gt;</code> |  |
+|  [type](./context.injectionelement.type.md) | 'injection' |  |
+|  [value](./context.injectionelement.value.md) | Readonly&lt;[Injection](./context.injection.md)<!-- -->&gt; |  |
 
 

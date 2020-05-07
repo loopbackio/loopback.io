@@ -27,7 +27,7 @@ constructor(dataSource: DataSource, entityClass: typeof Entity & {
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  dataSource | <code>DataSource</code> |  |
-|  entityClass | <code>typeof Entity &amp; {</code><br/><code>        prototype: T;</code><br/><code>    }</code> |  |
+|  dataSource | [DataSource](./repository.datasource.md) |  |
+|  entityClass | typeof [Entity](./repository.entity.md) &amp; { prototype: T; } |  |
 
 

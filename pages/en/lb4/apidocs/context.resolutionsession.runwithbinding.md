@@ -25,12 +25,12 @@ static runWithBinding(action: ResolutionAction, binding: Readonly<Binding>, sess
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  action | <code>ResolutionAction</code> | A function to do some work with the resolution session |
-|  binding | <code>Readonly&lt;Binding&gt;</code> | The current binding |
-|  session | <code>ResolutionSession</code> | The current resolution session |
+|  action | [ResolutionAction](./context.resolutionaction.md) | A function to do some work with the resolution session |
+|  binding | Readonly&lt;[Binding](./context.binding.md)<!-- -->&gt; | The current binding |
+|  session | [ResolutionSession](./context.resolutionsession.md) | The current resolution session |
 
 <b>Returns:</b>
 
-`any`
+any
 
 

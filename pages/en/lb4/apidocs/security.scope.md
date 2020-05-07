@@ -25,6 +25,6 @@ export interface Scope extends Permission
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [name](./security.scope.name.md) | <code>string</code> |  |
+|  [name](./security.scope.name.md) | string |  |
 
 

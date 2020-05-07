@@ -25,11 +25,11 @@ component(component: Class<{}>): Binding;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  component | <code>Class&lt;{}&gt;</code> | The component to add. |
+|  component | [Class](./repository.class.md)<!-- -->&lt;{}&gt; | The component to add. |
 
 <b>Returns:</b>
 
-`Binding`
+[Binding](./context.binding.md)
 
 ## Example
 

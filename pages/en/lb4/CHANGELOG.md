@@ -19,6 +19,7 @@ permalink: /doc/en/lb4/changelog.index.html
 - [@loopback/context](changelogs/packages/context/CHANGELOG.md)
 - [@loopback/core](changelogs/packages/core/CHANGELOG.md)
 - [@loopback/eslint-config](changelogs/packages/eslint-config/CHANGELOG.md)
+- [@loopback/express](changelogs/packages/express/CHANGELOG.md)
 - [@loopback/http-caching-proxy](changelogs/packages/http-caching-proxy/CHANGELOG.md)
 - [@loopback/http-server](changelogs/packages/http-server/CHANGELOG.md)
 - [@loopback/metadata](changelogs/packages/metadata/CHANGELOG.md)

@@ -29,14 +29,14 @@ export declare class RedirectRoute implements RouteEntry, ResolvedRoute
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [path](./rest.redirectroute.path.md) |  | <code>string</code> |  |
-|  [pathParams](./rest.redirectroute.pathparams.md) |  | <code>PathParameterValues</code> |  |
-|  [schemas](./rest.redirectroute.schemas.md) |  | <code>SchemasObject</code> |  |
-|  [sourcePath](./rest.redirectroute.sourcepath.md) |  | <code>string</code> |  |
-|  [spec](./rest.redirectroute.spec.md) |  | <code>OperationObject</code> |  |
-|  [statusCode](./rest.redirectroute.statuscode.md) |  | <code>number</code> |  |
-|  [targetLocation](./rest.redirectroute.targetlocation.md) |  | <code>string</code> |  |
-|  [verb](./rest.redirectroute.verb.md) |  | <code>string</code> |  |
+|  [path](./rest.redirectroute.path.md) |  | string |  |
+|  [pathParams](./rest.redirectroute.pathparams.md) |  | [PathParameterValues](./rest.pathparametervalues.md) |  |
+|  [schemas](./rest.redirectroute.schemas.md) |  | SchemasObject |  |
+|  [sourcePath](./rest.redirectroute.sourcepath.md) |  | string |  |
+|  [spec](./rest.redirectroute.spec.md) |  | OperationObject |  |
+|  [statusCode](./rest.redirectroute.statuscode.md) |  | number |  |
+|  [targetLocation](./rest.redirectroute.targetlocation.md) |  | string |  |
+|  [verb](./rest.redirectroute.verb.md) |  | string |  |
 
 ## Methods
 

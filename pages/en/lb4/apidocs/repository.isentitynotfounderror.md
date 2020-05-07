@@ -23,10 +23,10 @@ export declare function isEntityNotFoundError(e: any): e is EntityNotFoundError<
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  e | <code>any</code> |  |
+|  e | any |  |
 
 <b>Returns:</b>
 
-`e is EntityNotFoundError<any>`
+e is [EntityNotFoundError](./repository.entitynotfounderror.md)<!-- -->&lt;any&gt;
 
 

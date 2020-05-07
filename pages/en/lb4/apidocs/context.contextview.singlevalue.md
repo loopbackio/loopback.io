@@ -25,10 +25,10 @@ singleValue(session?: ResolutionSession): Promise<T | undefined>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  session | <code>ResolutionSession</code> |  |
+|  session | [ResolutionSession](./context.resolutionsession.md) |  |
 
 <b>Returns:</b>
 
-`Promise<T | undefined>`
+Promise&lt;T \| undefined&gt;
 
 

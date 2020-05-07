@@ -37,8 +37,8 @@ export declare class AuthenticationStrategyProvider implements Provider<Authenti
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [authenticationStrategies](./authentication.authenticationstrategyprovider.authenticationstrategies.md) |  | <code>Getter&lt;AuthenticationStrategy[]&gt;</code> |  |
-|  [metadata](./authentication.authenticationstrategyprovider.metadata.md) |  | <code>AuthenticationMetadata &#124; undefined</code> |  |
+|  [authenticationStrategies](./authentication.authenticationstrategyprovider.authenticationstrategies.md) |  | [Getter](./context.getter.md)<!-- -->&lt;[AuthenticationStrategy](./authentication.authenticationstrategy.md)<!-- -->\[\]&gt; |  |
+|  [metadata](./authentication.authenticationstrategyprovider.metadata.md) |  | [AuthenticationMetadata](./authentication.authenticationmetadata.md) \| undefined |  |
 
 ## Methods
 

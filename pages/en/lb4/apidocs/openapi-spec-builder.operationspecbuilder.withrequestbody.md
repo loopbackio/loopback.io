@@ -23,10 +23,10 @@ withRequestBody(requestBodySpec: RequestBodyObject): this;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  requestBodySpec | <code>RequestBodyObject</code> |  |
+|  requestBodySpec | RequestBodyObject |  |
 
 <b>Returns:</b>
 
-`this`
+this
 
 

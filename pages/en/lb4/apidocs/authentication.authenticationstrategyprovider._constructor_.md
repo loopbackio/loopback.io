@@ -25,7 +25,7 @@ constructor(authenticationStrategies: Getter<AuthenticationStrategy[]>, metadata
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  authenticationStrategies | <code>Getter&lt;AuthenticationStrategy[]&gt;</code> |  |
-|  metadata | <code>AuthenticationMetadata &#124; undefined</code> |  |
+|  authenticationStrategies | [Getter](./context.getter.md)<!-- -->&lt;[AuthenticationStrategy](./authentication.authenticationstrategy.md)<!-- -->\[\]&gt; |  |
+|  metadata | [AuthenticationMetadata](./authentication.authenticationmetadata.md) \| undefined |  |
 
 

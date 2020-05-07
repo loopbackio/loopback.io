@@ -25,6 +25,6 @@ export interface BindingTagFilter extends BindingFilter
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [bindingTagPattern](./context.bindingtagfilter.bindingtagpattern.md) | <code>BindingTag &#124; RegExp</code> | A special property on the filter function to provide access to the binding tag pattern which can be utilized to optimize the matching of bindings by tag in a context. |
+|  [bindingTagPattern](./context.bindingtagfilter.bindingtagpattern.md) | [BindingTag](./context.bindingtag.md) \| RegExp | A special property on the filter function to provide access to the binding tag pattern which can be utilized to optimize the matching of bindings by tag in a context. |
 
 

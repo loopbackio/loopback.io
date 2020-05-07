@@ -23,11 +23,11 @@ export declare function hasOne<T extends Entity>(targetResolver: EntityResolver<
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  targetResolver | <code>EntityResolver&lt;T&gt;</code> |  |
-|  definition | <code>Partial&lt;HasOneDefinition&gt;</code> |  |
+|  targetResolver | [EntityResolver](./repository.entityresolver.md)<!-- -->&lt;T&gt; |  |
+|  definition | Partial&lt;[HasOneDefinition](./repository.hasonedefinition.md)<!-- -->&gt; |  |
 
 <b>Returns:</b>
 
-`(decoratedTarget: object, key: string) => void`
+(decoratedTarget: object, key: string) =&gt; void
 
 

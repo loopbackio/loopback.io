@@ -27,13 +27,11 @@ export declare function model(definition?: Partial<ModelDefinitionSyntax>): (tar
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  definition | <code>Partial&lt;ModelDefinitionSyntax&gt;</code> |  |
+|  definition | Partial&lt;[ModelDefinitionSyntax](./repository.modeldefinitionsyntax.md)<!-- -->&gt; |  |
 
 <b>Returns:</b>
 
-`(target: Function & {
-    definition?: ModelDefinition | undefined;
-}) => void`
+(target: Function &amp; { definition?: [ModelDefinition](./repository.modeldefinition.md) \| undefined; }) =&gt; void
 
 A class decorator for `model`
 

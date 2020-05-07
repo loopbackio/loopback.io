@@ -27,13 +27,13 @@ export declare function skipOnTravis<ARGS extends unknown[], RETVAL>(verb: TestD
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  verb | <code>TestDefinition&lt;ARGS, RETVAL&gt; &amp; {</code><br/><code>    skip: TestDefinition&lt;ARGS, RETVAL&gt;;</code><br/><code>}</code> | The function to invoke to define the test case or the test suite, e.g. <code>it</code> or <code>describe</code>. |
-|  name | <code>string</code> | The test name (the first argument of <code>verb</code> function). |
-|  args | <code>ARGS</code> | Additional arguments (framework specific), typically a function implementing the test. |
+|  verb | [TestDefinition](./testlab.testdefinition.md)<!-- -->&lt;ARGS, RETVAL&gt; &amp; { skip: [TestDefinition](./testlab.testdefinition.md)<!-- -->&lt;ARGS, RETVAL&gt;; } | The function to invoke to define the test case or the test suite, e.g. <code>it</code> or <code>describe</code>. |
+|  name | string | The test name (the first argument of <code>verb</code> function). |
+|  args | ARGS | Additional arguments (framework specific), typically a function implementing the test. |
 
 <b>Returns:</b>
 
-`RETVAL`
+RETVAL
 
 ## Example
 

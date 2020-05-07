@@ -25,9 +25,9 @@ interface ValidationErrorDetails
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [code](./rest.resthttperrors.validationerrordetails.code.md) | <code>string</code> | A single word code represents the error's type. |
-|  [info](./rest.resthttperrors.validationerrordetails.info.md) | <code>object</code> | Some additional details that the 3 attributes above don't cover. |
-|  [message](./rest.resthttperrors.validationerrordetails.message.md) | <code>string</code> | A human readable description of the error. |
-|  [path](./rest.resthttperrors.validationerrordetails.path.md) | <code>string</code> | A path to the invalid field. |
+|  [code](./rest.resthttperrors.validationerrordetails.code.md) | string | A single word code represents the error's type. |
+|  [info](./rest.resthttperrors.validationerrordetails.info.md) | object | Some additional details that the 3 attributes above don't cover. |
+|  [message](./rest.resthttperrors.validationerrordetails.message.md) | string | A human readable description of the error. |
+|  [path](./rest.resthttperrors.validationerrordetails.path.md) | string | A path to the invalid field. |
 
 

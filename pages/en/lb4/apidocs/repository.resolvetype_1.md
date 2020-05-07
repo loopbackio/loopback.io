@@ -23,10 +23,10 @@ export declare function resolveType<T>(fn: T): T;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  fn | <code>T</code> |  |
+|  fn | T |  |
 
 <b>Returns:</b>
 
-`T`
+T
 
 

@@ -25,13 +25,13 @@ export declare function createViewGetter<T = unknown>(ctx: Context, bindingFilte
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  ctx | <code>Context</code> | Context object |
-|  bindingFilter | <code>BindingFilter</code> | A function to match bindings |
-|  bindingComparator | <code>BindingComparator</code> | A function to compare two bindings |
-|  session | <code>ResolutionSession</code> | Resolution session |
+|  ctx | [Context](./context.context.md) | Context object |
+|  bindingFilter | [BindingFilter](./context.bindingfilter.md) | A function to match bindings |
+|  bindingComparator | [BindingComparator](./context.bindingcomparator.md) | A function to compare two bindings |
+|  session | [ResolutionSession](./context.resolutionsession.md) | Resolution session |
 
 <b>Returns:</b>
 
-`Getter<T[]>`
+[Getter](./context.getter.md)<!-- -->&lt;T\[\]&gt;
 
 

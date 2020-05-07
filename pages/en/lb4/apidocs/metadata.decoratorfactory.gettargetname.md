@@ -37,12 +37,12 @@ static getTargetName(target: Object, member?: string | symbol, descriptorOrIndex
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  target | <code>Object</code> | Class or prototype of a class |
-|  member | <code>string &#124; symbol</code> | Optional property/method name |
-|  descriptorOrIndex | <code>TypedPropertyDescriptor&lt;any&gt; &#124; number</code> | Optional method descriptor or parameter index |
+|  target | Object | Class or prototype of a class |
+|  member | string \| symbol | Optional property/method name |
+|  descriptorOrIndex | TypedPropertyDescriptor&lt;any&gt; \| number | Optional method descriptor or parameter index |
 
 <b>Returns:</b>
 
-`string`
+string
 
 

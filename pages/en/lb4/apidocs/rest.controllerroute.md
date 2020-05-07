@@ -31,10 +31,10 @@ export declare class ControllerRoute<T> extends BaseRoute
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [\_controllerCtor](./rest.controllerroute._controllerctor.md) |  | <code>ControllerClass&lt;T&gt;</code> |  |
-|  [\_controllerFactory](./rest.controllerroute._controllerfactory.md) |  | <code>ControllerFactory&lt;T&gt;</code> |  |
-|  [\_controllerName](./rest.controllerroute._controllername.md) |  | <code>string</code> |  |
-|  [\_methodName](./rest.controllerroute._methodname.md) |  | <code>string</code> |  |
+|  [\_controllerCtor](./rest.controllerroute._controllerctor.md) |  | [ControllerClass](./rest.controllerclass.md)<!-- -->&lt;T&gt; |  |
+|  [\_controllerFactory](./rest.controllerroute._controllerfactory.md) |  | [ControllerFactory](./rest.controllerfactory.md)<!-- -->&lt;T&gt; |  |
+|  [\_controllerName](./rest.controllerroute._controllername.md) |  | string |  |
+|  [\_methodName](./rest.controllerroute._methodname.md) |  | string |  |
 
 ## Methods
 

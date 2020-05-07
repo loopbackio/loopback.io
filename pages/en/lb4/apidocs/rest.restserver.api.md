@@ -27,11 +27,11 @@ api(spec: OpenApiSpec): Binding;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  spec | <code>OpenApiSpec</code> | The OpenAPI specification, as an object. |
+|  spec | [OpenApiSpec](./openapi-v3.openapispec.md) | The OpenAPI specification, as an object. |
 
 <b>Returns:</b>
 
-`Binding`
+[Binding](./context.binding.md)
 
 Binding for the spec
 

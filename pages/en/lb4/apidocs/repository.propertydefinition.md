@@ -25,11 +25,11 @@ export interface PropertyDefinition
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [id](./repository.propertydefinition.id.md) | <code>boolean &#124; number</code> |  |
-|  [itemType](./repository.propertydefinition.itemtype.md) | <code>PropertyType</code> |  |
-|  [json](./repository.propertydefinition.json.md) | <code>PropertyForm</code> |  |
-|  [jsonSchema](./repository.propertydefinition.jsonschema.md) | <code>JsonSchemaWithExtensions</code> |  |
-|  [store](./repository.propertydefinition.store.md) | <code>PropertyForm</code> |  |
-|  [type](./repository.propertydefinition.type.md) | <code>PropertyType</code> |  |
+|  [id](./repository.propertydefinition.id.md) | boolean \| number |  |
+|  [itemType](./repository.propertydefinition.itemtype.md) | [PropertyType](./repository.propertytype.md) |  |
+|  [json](./repository.propertydefinition.json.md) | [PropertyForm](./repository.propertyform.md) |  |
+|  [jsonSchema](./repository.propertydefinition.jsonschema.md) | [JsonSchemaWithExtensions](./repository.jsonschemawithextensions.md) |  |
+|  [store](./repository.propertydefinition.store.md) | [PropertyForm](./repository.propertyform.md) |  |
+|  [type](./repository.propertydefinition.type.md) | [PropertyType](./repository.propertytype.md) |  |
 
 

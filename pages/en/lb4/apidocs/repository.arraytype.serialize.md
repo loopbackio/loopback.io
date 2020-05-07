@@ -23,10 +23,10 @@ serialize(value: T[] | null | undefined): any[] | null | undefined;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  value | <code>T[] &#124; null &#124; undefined</code> |  |
+|  value | T\[\] \| null \| undefined |  |
 
 <b>Returns:</b>
 
-`any[] | null | undefined`
+any\[\] \| null \| undefined
 
 

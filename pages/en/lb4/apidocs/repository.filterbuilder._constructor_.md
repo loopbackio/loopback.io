@@ -25,6 +25,6 @@ constructor(f?: Filter<MT>);
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  f | <code>Filter&lt;MT&gt;</code> |  |
+|  f | [Filter](./repository.filter.md)<!-- -->&lt;MT&gt; |  |
 
 

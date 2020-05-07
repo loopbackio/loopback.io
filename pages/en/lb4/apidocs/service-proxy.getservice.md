@@ -25,10 +25,10 @@ export declare function getService<T = GenericService>(ds: legacy.DataSource): P
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  ds | <code>legacy.DataSource</code> | A legacy data source |
+|  ds | legacy.DataSource | A legacy data source |
 
 <b>Returns:</b>
 
-`Promise<T>`
+Promise&lt;T&gt;
 
 

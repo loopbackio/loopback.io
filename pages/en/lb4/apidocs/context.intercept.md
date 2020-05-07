@@ -25,11 +25,11 @@ export declare function intercept(...interceptorOrKeys: InterceptorOrKey[]): (ta
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  interceptorOrKeys | <code>InterceptorOrKey[]</code> | One or more interceptors or binding keys that are resolved to be interceptors |
+|  interceptorOrKeys | [InterceptorOrKey](./context.interceptororkey.md)<!-- -->\[\] | One or more interceptors or binding keys that are resolved to be interceptors |
 
 <b>Returns:</b>
 
-`(target: any, method?: string | undefined, methodDescriptor?: TypedPropertyDescriptor<any> | undefined) => any`
+(target: any, method?: string \| undefined, methodDescriptor?: TypedPropertyDescriptor&lt;any&gt; \| undefined) =&gt; any
 
 ## Example
 

@@ -25,6 +25,6 @@ export interface Count
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [count](./repository.count.count.md) | <code>number</code> |  |
+|  [count](./repository.count.count.md) | number |  |
 
 

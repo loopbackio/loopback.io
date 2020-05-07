@@ -25,10 +25,10 @@ export declare function filterByTag(tagPattern: BindingTag | RegExp): BindingTag
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  tagPattern | <code>BindingTag &#124; RegExp</code> | Binding tag name, regexp, or object |
+|  tagPattern | [BindingTag](./context.bindingtag.md) \| RegExp | Binding tag name, regexp, or object |
 
 <b>Returns:</b>
 
-`BindingTagFilter`
+[BindingTagFilter](./context.bindingtagfilter.md)
 
 

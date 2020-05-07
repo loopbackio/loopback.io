@@ -25,10 +25,10 @@ mkdir(dir: string): Promise<void>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  dir | <code>string</code> | Name of directory to create (relative to TestSandbox path) |
+|  dir | string | Name of directory to create (relative to TestSandbox path) |
 
 <b>Returns:</b>
 
-`Promise<void>`
+Promise&lt;void&gt;
 
 

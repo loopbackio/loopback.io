@@ -25,6 +25,6 @@ constructor(app: Application);
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  app | <code>Application</code> |  |
+|  app | [Application](./core.application.md) |  |
 
 

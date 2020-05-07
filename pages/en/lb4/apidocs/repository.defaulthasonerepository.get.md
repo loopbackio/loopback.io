@@ -23,11 +23,11 @@ get(filter?: Pick<Filter<TargetEntity>, Exclude<keyof Filter<TargetEntity>, 'whe
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  filter | <code>Pick&lt;Filter&lt;TargetEntity&gt;, Exclude&lt;keyof Filter&lt;TargetEntity&gt;, 'where'&gt;&gt;</code> |  |
-|  options | <code>Options</code> |  |
+|  filter | Pick&lt;[Filter](./repository.filter.md)<!-- -->&lt;TargetEntity&gt;, Exclude&lt;keyof [Filter](./repository.filter.md)<!-- -->&lt;TargetEntity&gt;, 'where'&gt;&gt; |  |
+|  options | [Options](./repository.options.md) |  |
 
 <b>Returns:</b>
 
-`Promise<TargetEntity>`
+Promise&lt;TargetEntity&gt;
 
 

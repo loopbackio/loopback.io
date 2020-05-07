@@ -25,12 +25,12 @@ export declare function compareBindingsByTag(phaseTagName?: string, orderOfPhase
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  phaseTagName | <code>string</code> | Name of the binding tag for phase |
-|  orderOfPhases | <code>(string &#124; symbol)[]</code> | An array of phase names as the predefined order |
+|  phaseTagName | string | Name of the binding tag for phase |
+|  orderOfPhases | (string \| symbol)\[\] | An array of phase names as the predefined order |
 
 <b>Returns:</b>
 
-`BindingComparator`
+[BindingComparator](./context.bindingcomparator.md)
 
 ## Remarks
 

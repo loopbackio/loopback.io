@@ -23,10 +23,10 @@ protected awaitState(state: string): Promise<void>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  state | <code>string</code> |  |
+|  state | string |  |
 
 <b>Returns:</b>
 
-`Promise<void>`
+Promise&lt;void&gt;
 
 

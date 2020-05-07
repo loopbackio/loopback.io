@@ -23,12 +23,12 @@ export declare function crudRepositoryTestSuite(dataSourceOptions: DataSourceOpt
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  dataSourceOptions | <code>DataSourceOptions</code> |  |
-|  repositoryClass | <code>CrudRepositoryCtor</code> |  |
-|  partialFeatures | <code>Partial&lt;CrudFeatures&gt;</code> |  |
+|  dataSourceOptions | [DataSourceOptions](./repository-tests.datasourceoptions.md) |  |
+|  repositoryClass | [CrudRepositoryCtor](./repository-tests.crudrepositoryctor.md) |  |
+|  partialFeatures | Partial&lt;[CrudFeatures](./repository-tests.crudfeatures.md)<!-- -->&gt; |  |
 
 <b>Returns:</b>
 
-`void`
+void
 
 

@@ -25,7 +25,7 @@ export interface BindingElement
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [type](./context.bindingelement.type.md) | <code>'binding'</code> |  |
-|  [value](./context.bindingelement.value.md) | <code>Readonly&lt;Binding&gt;</code> |  |
+|  [type](./context.bindingelement.type.md) | 'binding' |  |
+|  [value](./context.bindingelement.value.md) | Readonly&lt;[Binding](./context.binding.md)<!-- -->&gt; |  |
 
 

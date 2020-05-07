@@ -25,11 +25,11 @@ boot(execOptions?: BootExecutionOptions, ctx?: Context): Promise<Context>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  execOptions | <code>BootExecutionOptions</code> | Execution options for boot. These determine the phases and booters that are run. |
-|  ctx | <code>Context</code> | Optional Context to use to resolve bindings. This is primarily useful when running app.boot() again but with different settings (in particular phases) such as 'start' / 'stop'. Using a returned Context from a previous boot call allows DI to retrieve the same instances of Booters previously used as they are bound using a CONTEXT scope. This is important as Booter instances may maintain state. |
+|  execOptions | [BootExecutionOptions](./boot.bootexecutionoptions.md) | Execution options for boot. These determine the phases and booters that are run. |
+|  ctx | [Context](./context.context.md) | Optional Context to use to resolve bindings. This is primarily useful when running app.boot() again but with different settings (in particular phases) such as 'start' / 'stop'. Using a returned Context from a previous boot call allows DI to retrieve the same instances of Booters previously used as they are bound using a CONTEXT scope. This is important as Booter instances may maintain state. |
 
 <b>Returns:</b>
 
-`Promise<Context>`
+Promise&lt;[Context](./context.context.md)<!-- -->&gt;
 
 

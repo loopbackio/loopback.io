@@ -23,10 +23,10 @@ protected addRouteWithPathVars(route: RouteEntry): void;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  route | <code>RouteEntry</code> |  |
+|  route | [RouteEntry](./rest.routeentry.md) |  |
 
 <b>Returns:</b>
 
-`void`
+void
 
 

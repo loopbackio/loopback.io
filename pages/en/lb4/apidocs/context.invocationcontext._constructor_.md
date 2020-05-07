@@ -25,10 +25,10 @@ constructor(parent: Context, target: object, methodName: string, args: Invocatio
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  parent | <code>Context</code> | Parent context, such as the RequestContext |
-|  target | <code>object</code> | Target class (for static methods) or prototype/object (for instance methods) |
-|  methodName | <code>string</code> | Method name |
-|  args | <code>InvocationArgs</code> | An array of arguments |
-|  source | <code>InvocationSource&lt;unknown&gt; &#124; undefined</code> |  |
+|  parent | [Context](./context.context.md) | Parent context, such as the RequestContext |
+|  target | object | Target class (for static methods) or prototype/object (for instance methods) |
+|  methodName | string | Method name |
+|  args | [InvocationArgs](./context.invocationargs.md) | An array of arguments |
+|  source | [InvocationSource](./context.invocationsource.md)<!-- -->&lt;unknown&gt; \| undefined |  |
 
 

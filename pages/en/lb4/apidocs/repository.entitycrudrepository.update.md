@@ -25,12 +25,12 @@ update(entity: DataObject<T>, options?: Options): Promise<void>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  entity | <code>DataObject&lt;T&gt;</code> | Entity to be updated |
-|  options | <code>Options</code> | Options for the operations |
+|  entity | [DataObject](./repository.dataobject.md)<!-- -->&lt;T&gt; | Entity to be updated |
+|  options | [Options](./repository.options.md) | Options for the operations |
 
 <b>Returns:</b>
 
-`Promise<void>`
+Promise&lt;void&gt;
 
 A promise that will be resolve if the operation succeeded or will be rejected if the entity was not found.
 

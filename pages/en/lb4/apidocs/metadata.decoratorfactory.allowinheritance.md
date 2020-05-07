@@ -20,6 +20,6 @@ protected allowInheritance(): boolean;
 ```
 <b>Returns:</b>
 
-`boolean`
+boolean
 
 

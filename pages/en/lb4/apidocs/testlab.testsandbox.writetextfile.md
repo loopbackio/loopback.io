@@ -25,11 +25,11 @@ writeTextFile(dest: string, data: string): Promise<void>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  dest | <code>string</code> | Destination filename, optionally including a relative path. |
-|  data | <code>string</code> | The text to write. |
+|  dest | string | Destination filename, optionally including a relative path. |
+|  data | string | The text to write. |
 
 <b>Returns:</b>
 
-`Promise<void>`
+Promise&lt;void&gt;
 
 

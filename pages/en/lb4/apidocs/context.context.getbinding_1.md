@@ -27,11 +27,11 @@ getBinding<ValueType>(key: BindingAddress<ValueType>, options?: {
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  key | <code>BindingAddress&lt;ValueType&gt;</code> | Binding key |
-|  options | <code>{</code><br/><code>        optional?: boolean;</code><br/><code>    }</code> | Options to control if the binding is optional. If <code>options.optional</code> is set to true, the method will return <code>undefined</code> instead of throwing an error if the binding key is not found. |
+|  key | [BindingAddress](./context.bindingaddress.md)<!-- -->&lt;ValueType&gt; | Binding key |
+|  options | { optional?: boolean; } | Options to control if the binding is optional. If <code>options.optional</code> is set to true, the method will return <code>undefined</code> instead of throwing an error if the binding key is not found. |
 
 <b>Returns:</b>
 
-`Binding<ValueType> | undefined`
+[Binding](./context.binding.md)<!-- -->&lt;ValueType&gt; \| undefined
 
 

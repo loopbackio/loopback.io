@@ -23,11 +23,11 @@ keys(filter?: KeyValueFilter, options?: Options): AsyncIterable<string>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  filter | <code>KeyValueFilter</code> |  |
-|  options | <code>Options</code> |  |
+|  filter | [KeyValueFilter](./repository.keyvaluefilter.md) |  |
+|  options | [Options](./repository.options.md) |  |
 
 <b>Returns:</b>
 
-`AsyncIterable<string>`
+AsyncIterable&lt;string&gt;
 
 

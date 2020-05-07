@@ -25,12 +25,12 @@ export declare function sortBindingsByPhase<T = unknown>(bindings: Readonly<Bind
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  bindings | <code>Readonly&lt;Binding&lt;T&gt;&gt;[]</code> | An array of bindings |
-|  phaseTagName | <code>string</code> | Tag name for phase, for example, we can use the value <code>'a'</code> of tag <code>order</code> as the phase name for <code>binding.tag({order: 'a'})</code>. |
-|  orderOfPhases | <code>(string &#124; symbol)[]</code> | An array of phase names as the predefined order |
+|  bindings | Readonly&lt;[Binding](./context.binding.md)<!-- -->&lt;T&gt;&gt;\[\] | An array of bindings |
+|  phaseTagName | string | Tag name for phase, for example, we can use the value <code>'a'</code> of tag <code>order</code> as the phase name for <code>binding.tag({order: 'a'})</code>. |
+|  orderOfPhases | (string \| symbol)\[\] | An array of phase names as the predefined order |
 
 <b>Returns:</b>
 
-`Readonly<Binding<T>>[]`
+Readonly&lt;[Binding](./context.binding.md)<!-- -->&lt;T&gt;&gt;\[\]
 
 

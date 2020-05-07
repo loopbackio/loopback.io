@@ -23,11 +23,11 @@ function array(itemType: PropertyType, definition?: Partial<PropertyDefinition>)
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  itemType | <code>PropertyType</code> | The type of array items. Examples: <code>number</code>, <code>Product</code>, <code>() =&gt; Order</code>. |
-|  definition | <code>Partial&lt;PropertyDefinition&gt;</code> | Optional PropertyDefinition object for additional metadata |
+|  itemType | [PropertyType](./repository.propertytype.md) | The type of array items. Examples: <code>number</code>, <code>Product</code>, <code>() =&gt; Order</code>. |
+|  definition | Partial&lt;[PropertyDefinition](./repository.propertydefinition.md)<!-- -->&gt; | Optional PropertyDefinition object for additional metadata |
 
 <b>Returns:</b>
 
-`(target: object, propertyName: string) => void`
+(target: object, propertyName: string) =&gt; void
 
 

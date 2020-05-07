@@ -25,11 +25,11 @@ static getModelMetadata(target: Function, options?: InspectionOptions): ModelDef
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  target | <code>Function</code> | The class from which to retrieve metadata. |
-|  options | <code>InspectionOptions</code> | An options object for the MetadataInspector to customize the output of the metadata retrieval functions. |
+|  target | Function | The class from which to retrieve metadata. |
+|  options | [InspectionOptions](./metadata.inspectionoptions.md) | An options object for the MetadataInspector to customize the output of the metadata retrieval functions. |
 
 <b>Returns:</b>
 
-`ModelDefinition | {}`
+[ModelDefinition](./repository.modeldefinition.md) \| {}
 
 

@@ -25,11 +25,11 @@ export declare function getKeyValue(model: AnyObject, keyName: string): unknown;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  model | <code>AnyObject</code> | target model |
-|  keyName | <code>string</code> | target key that gets the value from |
+|  model | [AnyObject](./repository.anyobject.md) | target model |
+|  keyName | string | target key that gets the value from |
 
 <b>Returns:</b>
 
-`unknown`
+unknown
 
 

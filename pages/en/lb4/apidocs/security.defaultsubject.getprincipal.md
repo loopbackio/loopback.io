@@ -23,10 +23,10 @@ getPrincipal(type: string): Principal | undefined;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  type | <code>string</code> |  |
+|  type | string |  |
 
 <b>Returns:</b>
 
-`Principal | undefined`
+[Principal](./security.principal.md) \| undefined
 
 

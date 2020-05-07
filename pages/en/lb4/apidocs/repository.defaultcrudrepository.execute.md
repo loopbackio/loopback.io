@@ -23,12 +23,12 @@ execute(command: Command, parameters: NamedParameters | PositionalParameters, op
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  command | <code>Command</code> |  |
-|  parameters | <code>NamedParameters &#124; PositionalParameters</code> |  |
-|  options | <code>Options</code> |  |
+|  command | [Command](./repository.command.md) |  |
+|  parameters | [NamedParameters](./repository.namedparameters.md) \| [PositionalParameters](./repository.positionalparameters.md) |  |
+|  options | [Options](./repository.options.md) |  |
 
 <b>Returns:</b>
 
-`Promise<AnyObject>`
+Promise&lt;[AnyObject](./repository.anyobject.md)<!-- -->&gt;
 
 

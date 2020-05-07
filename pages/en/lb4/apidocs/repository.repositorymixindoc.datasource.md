@@ -25,12 +25,12 @@ dataSource(dataSource: Class<juggler.DataSource> | juggler.DataSource, name?: st
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  dataSource | <code>Class&lt;juggler.DataSource&gt; &#124; juggler.DataSource</code> | The dataSource to add. |
-|  name | <code>string</code> | The binding name of the datasource; defaults to dataSource.name |
+|  dataSource | [Class](./repository.class.md)<!-- -->&lt;juggler.DataSource&gt; \| juggler.DataSource | The dataSource to add. |
+|  name | string | The binding name of the datasource; defaults to dataSource.name |
 
 <b>Returns:</b>
 
-`Binding`
+[Binding](./context.binding.md)
 
 ## Example
 

@@ -23,10 +23,10 @@ action(key: string): Promise<BoundValue>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  key | <code>string</code> |  |
+|  key | string |  |
 
 <b>Returns:</b>
 
-`Promise<BoundValue>`
+Promise&lt;[BoundValue](./context.boundvalue.md)<!-- -->&gt;
 
 

@@ -25,10 +25,10 @@ constructor(request: Request, response: Response, parent: Context, serverConfig:
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  request | <code>Request</code> |  |
-|  response | <code>Response</code> |  |
-|  parent | <code>Context</code> |  |
-|  serverConfig | <code>RestServerResolvedConfig</code> |  |
-|  name | <code>string</code> |  |
+|  request | Request |  |
+|  response | Response |  |
+|  parent | [Context](./context.context.md) |  |
+|  serverConfig | [RestServerResolvedConfig](./rest.restserverresolvedconfig.md) |  |
+|  name | string |  |
 
 

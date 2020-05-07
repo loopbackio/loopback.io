@@ -27,14 +27,14 @@ export declare function resolveInjectedArguments(target: object, method: string,
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  target | <code>object</code> | The class for constructor injection or prototype for method injection |
-|  method | <code>string</code> | The method name. If set to '', the constructor will be used. |
-|  ctx | <code>Context</code> | The context containing values for <code>@inject</code> resolution |
-|  session | <code>ResolutionSession</code> | Optional session for binding and dependency resolution |
-|  nonInjectedArgs | <code>any[]</code> | Optional array of args for non-injected parameters |
+|  target | object | The class for constructor injection or prototype for method injection |
+|  method | string | The method name. If set to '', the constructor will be used. |
+|  ctx | [Context](./context.context.md) | The context containing values for <code>@inject</code> resolution |
+|  session | [ResolutionSession](./context.resolutionsession.md) | Optional session for binding and dependency resolution |
+|  nonInjectedArgs | any\[\] | Optional array of args for non-injected parameters |
 
 <b>Returns:</b>
 
-`ValueOrPromise<BoundValue[]>`
+[ValueOrPromise](./context.valueorpromise.md)<!-- -->&lt;[BoundValue](./context.boundvalue.md)<!-- -->\[\]&gt;
 
 

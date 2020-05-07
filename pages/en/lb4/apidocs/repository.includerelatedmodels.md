@@ -25,13 +25,13 @@ export declare function includeRelatedModels<T extends Entity, Relations extends
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  targetRepository | <code>EntityCrudRepository&lt;T, unknown, Relations&gt;</code> | The target repository where the model instances are found |
-|  entities | <code>T[]</code> | An array of entity instances or data |
-|  include | <code>Inclusion[]</code> | Inclusion filter |
-|  options | <code>Options</code> | Options for the operations |
+|  targetRepository | [EntityCrudRepository](./repository.entitycrudrepository.md)<!-- -->&lt;T, unknown, Relations&gt; | The target repository where the model instances are found |
+|  entities | T\[\] | An array of entity instances or data |
+|  include | [Inclusion](./repository.inclusion.md)<!-- -->\[\] | Inclusion filter |
+|  options | [Options](./repository.options.md) | Options for the operations |
 
 <b>Returns:</b>
 
-`Promise<(T & Relations)[]>`
+Promise&lt;(T &amp; Relations)\[\]&gt;
 
 

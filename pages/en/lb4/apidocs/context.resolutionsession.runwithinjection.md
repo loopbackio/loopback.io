@@ -25,12 +25,12 @@ static runWithInjection(action: ResolutionAction, injection: Readonly<Injection>
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  action | <code>ResolutionAction</code> | A function to do some work with the resolution session |
-|  injection | <code>Readonly&lt;Injection&gt;</code> |  |
-|  session | <code>ResolutionSession</code> | The current resolution session |
+|  action | [ResolutionAction](./context.resolutionaction.md) | A function to do some work with the resolution session |
+|  injection | Readonly&lt;[Injection](./context.injection.md)<!-- -->&gt; |  |
+|  session | [ResolutionSession](./context.resolutionsession.md) | The current resolution session |
 
 <b>Returns:</b>
 
-`any`
+any
 
 

@@ -22,6 +22,6 @@ popBinding(): Readonly<Binding>;
 ```
 <b>Returns:</b>
 
-`Readonly<Binding>`
+Readonly&lt;[Binding](./context.binding.md)<!-- -->&gt;
 
 

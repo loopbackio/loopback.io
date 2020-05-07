@@ -25,8 +25,8 @@ constructor(entityOrName: typeof Entity | string, entityId: ID, extraProperties?
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  entityOrName | <code>typeof Entity &#124; string</code> |  |
-|  entityId | <code>ID</code> |  |
-|  extraProperties | <code>Props</code> |  |
+|  entityOrName | typeof [Entity](./repository.entity.md) \| string |  |
+|  entityId | ID |  |
+|  extraProperties | Props |  |
 
 

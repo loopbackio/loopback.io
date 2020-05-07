@@ -25,7 +25,7 @@ export interface InjectionMetadata extends ResolutionOptions
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [bindingComparator](./context.injectionmetadata.bindingcomparator.md) | <code>BindingComparator</code> | Optional comparator for matched bindings |
-|  [decorator](./context.injectionmetadata.decorator.md) | <code>string</code> | Name of the decorator function, such as <code>@inject</code> or <code>@inject.setter</code>. It's usually set by the decorator implementation. |
+|  [bindingComparator](./context.injectionmetadata.bindingcomparator.md) | [BindingComparator](./context.bindingcomparator.md) | Optional comparator for matched bindings |
+|  [decorator](./context.injectionmetadata.decorator.md) | string | Name of the decorator function, such as <code>@inject</code> or <code>@inject.setter</code>. It's usually set by the decorator implementation. |
 
 

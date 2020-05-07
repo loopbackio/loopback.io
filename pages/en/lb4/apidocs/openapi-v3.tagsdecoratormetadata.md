@@ -23,6 +23,6 @@ export interface TagsDecoratorMetadata
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [tags](./openapi-v3.tagsdecoratormetadata.tags.md) | <code>string[]</code> |  |
+|  [tags](./openapi-v3.tagsdecoratormetadata.tags.md) | string\[\] |  |
 
 

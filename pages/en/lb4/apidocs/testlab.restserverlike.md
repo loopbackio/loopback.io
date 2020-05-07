@@ -23,7 +23,7 @@ export interface RestServerLike
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [rootUrl](./testlab.restserverlike.rooturl.md) | <code>string</code> |  |
-|  [url](./testlab.restserverlike.url.md) | <code>string</code> |  |
+|  [rootUrl](./testlab.restserverlike.rooturl.md) | string |  |
+|  [url](./testlab.restserverlike.url.md) | string |  |
 
 

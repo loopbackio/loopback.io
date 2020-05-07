@@ -23,11 +23,11 @@ protected _mergeWithParent<ValueType>(childList: Readonly<Binding<ValueType>>[],
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  childList | <code>Readonly&lt;Binding&lt;ValueType&gt;&gt;[]</code> |  |
-|  parentList | <code>Readonly&lt;Binding&lt;ValueType&gt;&gt;[]</code> |  |
+|  childList | Readonly&lt;[Binding](./context.binding.md)<!-- -->&lt;ValueType&gt;&gt;\[\] |  |
+|  parentList | Readonly&lt;[Binding](./context.binding.md)<!-- -->&lt;ValueType&gt;&gt;\[\] |  |
 
 <b>Returns:</b>
 
-`Readonly<Binding<ValueType>>[]`
+Readonly&lt;[Binding](./context.binding.md)<!-- -->&lt;ValueType&gt;&gt;\[\]
 
 

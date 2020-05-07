@@ -20,6 +20,6 @@ protected _setupHandlerIfNeeded(): void;
 ```
 <b>Returns:</b>
 
-`void`
+void
 
 

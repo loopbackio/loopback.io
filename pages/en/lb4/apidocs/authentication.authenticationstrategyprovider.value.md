@@ -20,6 +20,6 @@ value(): Promise<AuthenticationStrategy | undefined>;
 ```
 <b>Returns:</b>
 
-`Promise<AuthenticationStrategy | undefined>`
+Promise&lt;[AuthenticationStrategy](./authentication.authenticationstrategy.md) \| undefined&gt;
 
 

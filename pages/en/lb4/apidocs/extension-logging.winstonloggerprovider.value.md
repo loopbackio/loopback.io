@@ -20,6 +20,6 @@ value(): Promise<Logger>;
 ```
 <b>Returns:</b>
 
-`Promise<Logger>`
+Promise&lt;Logger&gt;
 
 

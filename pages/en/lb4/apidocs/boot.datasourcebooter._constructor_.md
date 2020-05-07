@@ -25,8 +25,8 @@ constructor(app: ApplicationWithRepositories, projectRoot: string, datasourceCon
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  app | <code>ApplicationWithRepositories</code> |  |
-|  projectRoot | <code>string</code> |  |
-|  datasourceConfig | <code>ArtifactOptions</code> |  |
+|  app | [ApplicationWithRepositories](./repository.applicationwithrepositories.md) |  |
+|  projectRoot | string |  |
+|  datasourceConfig | [ArtifactOptions](./boot.artifactoptions.md) |  |
 
 

@@ -25,11 +25,11 @@ export declare function jsonOrBooleanToJSON(jsonOrBool: boolean | JsonSchema): J
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  jsonOrBool | <code>boolean &#124; JsonSchema</code> | converts boolean values into their representative JSON Schemas |
+|  jsonOrBool | boolean \| JsonSchema | converts boolean values into their representative JSON Schemas |
 
 <b>Returns:</b>
 
-`JsonSchema`
+JsonSchema
 
 A JSON Schema document representing the input value.
 

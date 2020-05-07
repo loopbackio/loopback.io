@@ -25,10 +25,10 @@ export declare function givenHttpServerConfig<T extends HttpOptions | HttpsOptio
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  customConfig | <code>T</code> | Additional configuration options to apply. |
+|  customConfig | T | Additional configuration options to apply. |
 
 <b>Returns:</b>
 
-`HostPort & T`
+[HostPort](./testlab.hostport.md) &amp; T
 
 

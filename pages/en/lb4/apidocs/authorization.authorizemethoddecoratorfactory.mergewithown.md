@@ -23,13 +23,13 @@ protected mergeWithOwn(ownMetadata: MetadataMap<AuthorizationMetadata>, target: 
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  ownMetadata | <code>MetadataMap&lt;AuthorizationMetadata&gt;</code> |  |
-|  target | <code>Object</code> |  |
-|  methodName | <code>string</code> |  |
-|  methodDescriptor | <code>TypedPropertyDescriptor&lt;any&gt; &#124; number</code> |  |
+|  ownMetadata | [MetadataMap](./metadata.metadatamap.md)<!-- -->&lt;[AuthorizationMetadata](./authorization.authorizationmetadata.md)<!-- -->&gt; |  |
+|  target | Object |  |
+|  methodName | string |  |
+|  methodDescriptor | TypedPropertyDescriptor&lt;any&gt; \| number |  |
 
 <b>Returns:</b>
 
-`MetadataMap<AuthorizationMetadata>`
+[MetadataMap](./metadata.metadatamap.md)<!-- -->&lt;[AuthorizationMetadata](./authorization.authorizationmetadata.md)<!-- -->&gt;
 
 

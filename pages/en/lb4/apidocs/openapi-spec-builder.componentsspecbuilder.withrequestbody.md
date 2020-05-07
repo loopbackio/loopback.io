@@ -25,11 +25,11 @@ withRequestBody(name: string, requestBody: RequestBodyObject | ReferenceObject):
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  name | <code>string</code> | The name of the request body |
-|  requestBody | <code>RequestBodyObject &#124; ReferenceObject</code> | Specification of the request body |
+|  name | string | The name of the request body |
+|  requestBody | RequestBodyObject \| ReferenceObject | Specification of the request body |
 
 <b>Returns:</b>
 
-`this`
+this
 
 

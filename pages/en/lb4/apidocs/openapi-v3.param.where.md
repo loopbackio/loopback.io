@@ -25,12 +25,12 @@ function where(modelCtor: typeof Model, name?: string): (target: object, member:
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  modelCtor | <code>typeof Model</code> | Model class |
-|  name | <code>string</code> | Custom name for the parameter, default to <code>where</code> |
+|  modelCtor | typeof [Model](./repository.model.md) | Model class |
+|  name | string | Custom name for the parameter, default to <code>where</code> |
 
 <b>Returns:</b>
 
-`(target: object, member: string, index: number) => void`
+(target: object, member: string, index: number) =&gt; void
 
 ## Example
 

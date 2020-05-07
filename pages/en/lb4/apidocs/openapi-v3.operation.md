@@ -25,12 +25,12 @@ export declare function operation(verb: string, path: string, spec?: OperationOb
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  verb | <code>string</code> | HTTP verb, e.g. <code>GET</code> or <code>POST</code>. |
-|  path | <code>string</code> | The URL path of this operation, e.g. <code>/product/{id}</code> |
-|  spec | <code>OperationObject</code> | The OpenAPI specification describing parameters and responses of this operation. |
+|  verb | string | HTTP verb, e.g. <code>GET</code> or <code>POST</code>. |
+|  path | string | The URL path of this operation, e.g. <code>/product/{id}</code> |
+|  spec | OperationObject | The OpenAPI specification describing parameters and responses of this operation. |
 
 <b>Returns:</b>
 
-`MethodDecorator`
+MethodDecorator
 
 

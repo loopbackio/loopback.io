@@ -23,11 +23,11 @@ export declare function getParserOptions(type: 'urlencoded', options: RequestBod
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  type | <code>'urlencoded'</code> |  |
-|  options | <code>RequestBodyParserOptions</code> |  |
+|  type | 'urlencoded' |  |
+|  options | [RequestBodyParserOptions](./rest.requestbodyparseroptions.md) |  |
 
 <b>Returns:</b>
 
-`OptionsUrlencoded`
+OptionsUrlencoded
 
 

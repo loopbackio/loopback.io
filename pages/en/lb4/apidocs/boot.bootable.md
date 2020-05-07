@@ -25,8 +25,8 @@ export interface Bootable
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [bootOptions](./boot.bootable.bootoptions.md) | <code>BootOptions</code> | Options for boot |
-|  [projectRoot](./boot.bootable.projectroot.md) | <code>string</code> | Root directory for the project to be booted |
+|  [bootOptions](./boot.bootable.bootoptions.md) | [BootOptions](./boot.bootoptions.md) | Options for boot |
+|  [projectRoot](./boot.bootable.projectroot.md) | string | Root directory for the project to be booted |
 
 ## Methods
 

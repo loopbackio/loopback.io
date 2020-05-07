@@ -25,12 +25,12 @@ linkExternalProfile(userId: string, userIdentity: I): Promise<U>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  userId | <code>string</code> |  |
-|  userIdentity | <code>I</code> |  |
+|  userId | string |  |
+|  userIdentity | I |  |
 
 <b>Returns:</b>
 
-`Promise<U>`
+Promise&lt;U&gt;
 
 ## Example
 

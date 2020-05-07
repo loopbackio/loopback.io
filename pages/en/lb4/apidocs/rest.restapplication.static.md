@@ -25,12 +25,12 @@ static(path: PathParams, rootDir: string, options?: ServeStaticOptions): void;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  path | <code>PathParams</code> | The path(s) to serve the asset. See examples at https://expressjs.com/en/4x/api.html\#path-examples To avoid performance penalty, <code>/</code> is not allowed for now. |
-|  rootDir | <code>string</code> | The root directory from which to serve static assets |
-|  options | <code>ServeStaticOptions</code> | Options for serve-static |
+|  path | PathParams | The path(s) to serve the asset. See examples at https://expressjs.com/en/4x/api.html\#path-examples To avoid performance penalty, <code>/</code> is not allowed for now. |
+|  rootDir | string | The root directory from which to serve static assets |
+|  options | ServeStaticOptions | Options for serve-static |
 
 <b>Returns:</b>
 
-`void`
+void
 
 

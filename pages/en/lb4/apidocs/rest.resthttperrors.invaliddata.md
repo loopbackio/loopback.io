@@ -23,12 +23,12 @@ function invalidData<T, Props extends object = {}>(data: T, name: string, extraP
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  data | <code>T</code> |  |
-|  name | <code>string</code> |  |
-|  extraProperties | <code>Props</code> |  |
+|  data | T |  |
+|  name | string |  |
+|  extraProperties | Props |  |
 
 <b>Returns:</b>
 
-`HttpErrors.HttpError & Props`
+HttpErrors.HttpError &amp; Props
 
 

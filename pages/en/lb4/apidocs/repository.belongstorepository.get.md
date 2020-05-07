@@ -25,11 +25,11 @@ get(options?: Options): Promise<Target>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  options | <code>Options</code> |  |
+|  options | [Options](./repository.options.md) |  |
 
 <b>Returns:</b>
 
-`Promise<Target>`
+Promise&lt;Target&gt;
 
 A promise resolved with the target object or rejected with an EntityNotFoundError when target model instance was not found.
 

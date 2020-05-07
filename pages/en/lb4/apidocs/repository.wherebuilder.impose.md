@@ -25,10 +25,10 @@ impose(where: Where<MT>): this;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  where | <code>Where&lt;MT&gt;</code> | Where filter |
+|  where | [Where](./repository.where.md)<!-- -->&lt;MT&gt; | Where filter |
 
 <b>Returns:</b>
 
-`this`
+this
 
 

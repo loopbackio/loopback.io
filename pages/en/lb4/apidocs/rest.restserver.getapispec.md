@@ -29,10 +29,10 @@ getApiSpec(requestContext?: RequestContext): Promise<OpenApiSpec>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  requestContext | <code>RequestContext</code> | Optional context to update the <code>servers</code> list in the returned spec |
+|  requestContext | [RequestContext](./rest.requestcontext.md) | Optional context to update the <code>servers</code> list in the returned spec |
 
 <b>Returns:</b>
 
-`Promise<OpenApiSpec>`
+Promise&lt;[OpenApiSpec](./openapi-v3.openapispec.md)<!-- -->&gt;
 
 

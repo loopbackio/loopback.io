@@ -25,10 +25,10 @@ basePath(path?: string): void;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  path | <code>string</code> | Base path |
+|  path | string | Base path |
 
 <b>Returns:</b>
 
-`void`
+void
 
 

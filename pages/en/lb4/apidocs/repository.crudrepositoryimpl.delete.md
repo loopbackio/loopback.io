@@ -23,11 +23,11 @@ delete(entity: DataObject<T>, options?: Options): Promise<void>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  entity | <code>DataObject&lt;T&gt;</code> |  |
-|  options | <code>Options</code> |  |
+|  entity | [DataObject](./repository.dataobject.md)<!-- -->&lt;T&gt; |  |
+|  options | [Options](./repository.options.md) |  |
 
 <b>Returns:</b>
 
-`Promise<void>`
+Promise&lt;void&gt;
 
 

@@ -52,6 +52,6 @@ Modules to easily convert LoopBack4 models that have been decorated with `@model
 
 |  Type Alias | Description |
 |  --- | --- |
-|  [Optional](./repository-json-schema.optional.md) | Optional  From <code>T</code> make a set of properties by key <code>K</code> become optional |
+|  [Optional](./repository-json-schema.optional.md) | Optional: From <code>T</code> make a set of properties by key <code>K</code> become optional |
 
 

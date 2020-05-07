@@ -25,11 +25,11 @@ export declare function resolveType<T extends Object>(fn: TypeResolver<T> | Clas
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  fn | <code>TypeResolver&lt;T&gt; &#124; Class&lt;T&gt;</code> | A type class or a type provider. |
+|  fn | [TypeResolver](./repository.typeresolver.md)<!-- -->&lt;T&gt; \| [Class](./repository.class.md)<!-- -->&lt;T&gt; | A type class or a type provider. |
 
 <b>Returns:</b>
 
-`Class<T>`
+[Class](./repository.class.md)<!-- -->&lt;T&gt;
 
 The resolved type.
 

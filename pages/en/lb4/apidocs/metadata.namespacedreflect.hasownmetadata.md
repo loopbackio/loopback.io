@@ -23,12 +23,12 @@ hasOwnMetadata(metadataKey: string, target: Object, propertyKey?: string): boole
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  metadataKey | <code>string</code> |  |
-|  target | <code>Object</code> |  |
-|  propertyKey | <code>string</code> |  |
+|  metadataKey | string |  |
+|  target | Object |  |
+|  propertyKey | string |  |
 
 <b>Returns:</b>
 
-`boolean`
+boolean
 
 

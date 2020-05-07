@@ -25,11 +25,11 @@ writeJsonFile(dest: string, data: unknown): Promise<void>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  dest | <code>string</code> | Destination filename, optionally including a relative path. |
-|  data | <code>unknown</code> | The data to write. |
+|  dest | string | Destination filename, optionally including a relative path. |
+|  data | unknown | The data to write. |
 
 <b>Returns:</b>
 
-`Promise<void>`
+Promise&lt;void&gt;
 
 

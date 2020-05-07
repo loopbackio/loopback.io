@@ -29,7 +29,7 @@ export declare class JsonBodyParser implements BodyParser
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [name](./rest.jsonbodyparser.name.md) |  | <code>symbol</code> |  |
+|  [name](./rest.jsonbodyparser.name.md) |  | symbol |  |
 
 ## Methods
 

@@ -23,6 +23,6 @@ export declare class CrudRestComponent implements Component
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [bindings](./rest-crud.crudrestcomponent.bindings.md) |  | <code>import(&quot;@loopback/core&quot;).Binding&lt;CrudRestApiBuilder&gt;[]</code> |  |
+|  [bindings](./rest-crud.crudrestcomponent.bindings.md) |  | import("@loopback/core").[Binding](./context.binding.md)<!-- -->&lt;[CrudRestApiBuilder](./rest-crud.crudrestapibuilder.md)<!-- -->&gt;\[\] |  |
 
 

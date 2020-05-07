@@ -25,10 +25,10 @@ export declare function asResolutionOptions(optionsOrSession?: ResolutionOptions
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  optionsOrSession | <code>ResolutionOptionsOrSession</code> | resolution options or session |
+|  optionsOrSession | [ResolutionOptionsOrSession](./context.resolutionoptionsorsession.md) | resolution options or session |
 
 <b>Returns:</b>
 
-`ResolutionOptions`
+[ResolutionOptions](./context.resolutionoptions.md)
 
 

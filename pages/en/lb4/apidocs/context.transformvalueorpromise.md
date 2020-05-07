@@ -25,11 +25,11 @@ export declare function transformValueOrPromise<T, V>(valueOrPromise: ValueOrPro
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  valueOrPromise | <code>ValueOrPromise&lt;T&gt;</code> | The value or promise |
-|  transformer | <code>(val: T) =&gt; ValueOrPromise&lt;V&gt;</code> | A function that maps the source value to a value or promise |
+|  valueOrPromise | [ValueOrPromise](./context.valueorpromise.md)<!-- -->&lt;T&gt; | The value or promise |
+|  transformer | (val: T) =&gt; [ValueOrPromise](./context.valueorpromise.md)<!-- -->&lt;V&gt; | A function that maps the source value to a value or promise |
 
 <b>Returns:</b>
 
-`ValueOrPromise<V>`
+[ValueOrPromise](./context.valueorpromise.md)<!-- -->&lt;V&gt;
 
 

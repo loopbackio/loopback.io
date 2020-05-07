@@ -25,11 +25,11 @@ findOrCreateUser(userIdentity: I): Promise<U>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  userIdentity | <code>I</code> |  |
+|  userIdentity | I |  |
 
 <b>Returns:</b>
 
-`Promise<U>`
+Promise&lt;U&gt;
 
 ## Example
 

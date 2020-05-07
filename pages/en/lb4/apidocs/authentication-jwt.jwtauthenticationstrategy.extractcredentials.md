@@ -23,10 +23,10 @@ extractCredentials(request: Request): string;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  request | <code>Request</code> |  |
+|  request | Request |  |
 
 <b>Returns:</b>
 
-`string`
+string
 
 

@@ -27,11 +27,11 @@ export declare function buildModelDefinition(target: Function & {
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  target | <code>Function &amp; {</code><br/><code>    definition?: ModelDefinition &#124; undefined;</code><br/><code>}</code> | Target model class |
-|  def | <code>ModelDefinitionSyntax</code> | Model definition spec |
+|  target | Function &amp; { definition?: [ModelDefinition](./repository.modeldefinition.md) \| undefined; } | Target model class |
+|  def | [ModelDefinitionSyntax](./repository.modeldefinitionsyntax.md) | Model definition spec |
 
 <b>Returns:</b>
 
-`ModelDefinition`
+[ModelDefinition](./repository.modeldefinition.md)
 
 

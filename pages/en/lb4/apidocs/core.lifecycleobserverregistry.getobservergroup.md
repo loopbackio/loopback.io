@@ -25,10 +25,10 @@ protected getObserverGroup(binding: Readonly<Binding<LifeCycleObserver>>): strin
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  binding | <code>Readonly&lt;Binding&lt;LifeCycleObserver&gt;&gt;</code> | Life cycle observer binding |
+|  binding | Readonly&lt;[Binding](./context.binding.md)<!-- -->&lt;[LifeCycleObserver](./core.lifecycleobserver.md)<!-- -->&gt;&gt; | Life cycle observer binding |
 
 <b>Returns:</b>
 
-`string`
+string
 
 

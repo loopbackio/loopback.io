@@ -23,11 +23,11 @@ create(entity: DataObject<T>, options?: Options): Promise<T>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  entity | <code>DataObject&lt;T&gt;</code> |  |
-|  options | <code>Options</code> |  |
+|  entity | [DataObject](./repository.dataobject.md)<!-- -->&lt;T&gt; |  |
+|  options | [Options](./repository.options.md) |  |
 
 <b>Returns:</b>
 
-`Promise<T>`
+Promise&lt;T&gt;
 
 

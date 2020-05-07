@@ -27,7 +27,7 @@ export interface AuthenticationStrategy
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [name](./authentication.authenticationstrategy.name.md) | <code>string</code> | The 'name' property is a unique identifier for the authentication strategy ( for example : 'basic', 'jwt', etc) |
+|  [name](./authentication.authenticationstrategy.name.md) | string | The 'name' property is a unique identifier for the authentication strategy ( for example : 'basic', 'jwt', etc) |
 
 ## Methods
 

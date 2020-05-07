@@ -25,6 +25,6 @@ export interface Principal
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [\[securityId\]](./security.principal._securityid_.md) | <code>string</code> | Name/id |
+|  [\[securityId\]](./security.principal._securityid_.md) | string | Name/id |
 
 

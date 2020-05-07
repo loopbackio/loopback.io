@@ -25,11 +25,11 @@ function list(extensionPointName?: string): (target: Object, member: string | un
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  extensionPointName | <code>string</code> | Name of the extension point. If not supplied, we use the <code>name</code> tag from the extension point binding or the class name of the extension point class. If a class needs to inject extensions from multiple extension points, use different <code>extensionPointName</code> for different types of extensions. |
+|  extensionPointName | string | Name of the extension point. If not supplied, we use the <code>name</code> tag from the extension point binding or the class name of the extension point class. If a class needs to inject extensions from multiple extension points, use different <code>extensionPointName</code> for different types of extensions. |
 
 <b>Returns:</b>
 
-`(target: Object, member: string | undefined, methodDescriptorOrParameterIndex?: number | TypedPropertyDescriptor<any> | undefined) => void`
+(target: Object, member: string \| undefined, methodDescriptorOrParameterIndex?: number \| TypedPropertyDescriptor&lt;any&gt; \| undefined) =&gt; void
 
 ## Example
 

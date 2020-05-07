@@ -25,7 +25,7 @@ constructor(principal: Principal, type: string);
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  principal | <code>Principal</code> |  |
-|  type | <code>string</code> |  |
+|  principal | [Principal](./security.principal.md) |  |
+|  type | string |  |
 
 

@@ -25,10 +25,10 @@ export declare function createControllerFactoryForBinding<T>(key: string): Contr
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  key | <code>string</code> | Binding key |
+|  key | string | Binding key |
 
 <b>Returns:</b>
 
-`ControllerFactory<T>`
+[ControllerFactory](./rest.controllerfactory.md)<!-- -->&lt;T&gt;
 
 

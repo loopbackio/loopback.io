@@ -25,12 +25,12 @@ patch(dataObject: DataObject<Target>, options?: Options): Promise<Count>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  dataObject | <code>DataObject&lt;Target&gt;</code> | The target model fields and their new values to patch |
-|  options | <code>Options</code> |  |
+|  dataObject | [DataObject](./repository.dataobject.md)<!-- -->&lt;Target&gt; | The target model fields and their new values to patch |
+|  options | [Options](./repository.options.md) |  |
 
 <b>Returns:</b>
 
-`Promise<Count>`
+Promise&lt;[Count](./repository.count.md)<!-- -->&gt;
 
 A promise which resolves the patched target model instances
 

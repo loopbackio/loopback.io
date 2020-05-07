@@ -25,9 +25,9 @@ constructor(getStrategy: Getter<AuthenticationStrategy>, setCurrentUser: Setter<
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  getStrategy | <code>Getter&lt;AuthenticationStrategy&gt;</code> |  |
-|  setCurrentUser | <code>Setter&lt;UserProfile&gt;</code> |  |
-|  setRedirectUrl | <code>Setter&lt;string&gt;</code> |  |
-|  setRedirectStatus | <code>Setter&lt;number&gt;</code> |  |
+|  getStrategy | [Getter](./context.getter.md)<!-- -->&lt;[AuthenticationStrategy](./authentication.authenticationstrategy.md)<!-- -->&gt; |  |
+|  setCurrentUser | [Setter](./context.setter.md)<!-- -->&lt;[UserProfile](./security.userprofile.md)<!-- -->&gt; |  |
+|  setRedirectUrl | [Setter](./context.setter.md)<!-- -->&lt;string&gt; |  |
+|  setRedirectStatus | [Setter](./context.setter.md)<!-- -->&lt;number&gt; |  |
 
 

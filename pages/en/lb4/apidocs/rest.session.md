@@ -25,6 +25,6 @@ export interface Session
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [profile](./rest.session.profile.md) | <code>SessionUserProfile</code> |  |
+|  [profile](./rest.session.profile.md) | [SessionUserProfile](./rest.sessionuserprofile.md) |  |
 
 

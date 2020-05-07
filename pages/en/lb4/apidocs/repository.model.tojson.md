@@ -22,6 +22,6 @@ toJSON(): Object;
 ```
 <b>Returns:</b>
 
-`Object`
+Object
 
 

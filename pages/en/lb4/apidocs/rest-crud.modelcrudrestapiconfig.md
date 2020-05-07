@@ -23,6 +23,6 @@ export interface ModelCrudRestApiConfig extends ModelApiConfig
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [basePath](./rest-crud.modelcrudrestapiconfig.basepath.md) | <code>string</code> |  |
+|  [basePath](./rest-crud.modelcrudrestapiconfig.basepath.md) | string |  |
 
 

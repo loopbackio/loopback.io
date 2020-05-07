@@ -25,11 +25,11 @@ export declare function _bindBooter(ctx: Context, booterCls: Constructor<Booter>
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  ctx | <code>Context</code> | The Context to bind the Booter Class |
-|  booterCls | <code>Constructor&lt;Booter&gt;</code> | Booter class to be bound |
+|  ctx | [Context](./context.context.md) | The Context to bind the Booter Class |
+|  booterCls | [Constructor](./context.constructor.md)<!-- -->&lt;[Booter](./boot.booter.md)<!-- -->&gt; | Booter class to be bound |
 
 <b>Returns:</b>
 
-`Binding`
+[Binding](./context.binding.md)
 
 

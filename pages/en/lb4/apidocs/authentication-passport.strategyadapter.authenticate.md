@@ -25,10 +25,10 @@ authenticate(request: Request): Promise<UserProfile | RedirectRoute>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  request | <code>Request</code> | The incoming request. |
+|  request | Request | The incoming request. |
 
 <b>Returns:</b>
 
-`Promise<UserProfile | RedirectRoute>`
+Promise&lt;[UserProfile](./security.userprofile.md) \| [RedirectRoute](./rest.redirectroute.md)<!-- -->&gt;
 
 

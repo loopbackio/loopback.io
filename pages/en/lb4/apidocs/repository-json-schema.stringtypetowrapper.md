@@ -25,10 +25,10 @@ export declare function stringTypeToWrapper(type: string | Function): Function;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  type | <code>string &#124; Function</code> | Name of type |
+|  type | string \| Function | Name of type |
 
 <b>Returns:</b>
 
-`Function`
+Function
 
 

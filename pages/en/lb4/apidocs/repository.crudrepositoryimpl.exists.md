@@ -23,11 +23,11 @@ exists(id: ID, options?: Options): Promise<boolean>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  id | <code>ID</code> |  |
-|  options | <code>Options</code> |  |
+|  id | ID |  |
+|  options | [Options](./repository.options.md) |  |
 
 <b>Returns:</b>
 
-`Promise<boolean>`
+Promise&lt;boolean&gt;
 
 

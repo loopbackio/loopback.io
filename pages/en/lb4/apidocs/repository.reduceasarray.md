@@ -25,11 +25,11 @@ export declare function reduceAsArray<T>(acc: T[] | undefined, it: T): T[];
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  acc | <code>T[] &#124; undefined</code> |  |
-|  it | <code>T</code> |  |
+|  acc | T\[\] \| undefined |  |
+|  it | T |  |
 
 <b>Returns:</b>
 
-`T[]`
+T\[\]
 
 

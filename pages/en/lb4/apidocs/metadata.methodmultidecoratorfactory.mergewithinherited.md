@@ -23,12 +23,12 @@ protected mergeWithInherited(inheritedMetadata: MetadataMap<T[]>, target: Object
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  inheritedMetadata | <code>MetadataMap&lt;T[]&gt;</code> |  |
-|  target | <code>Object</code> |  |
-|  methodName | <code>string</code> |  |
+|  inheritedMetadata | [MetadataMap](./metadata.metadatamap.md)<!-- -->&lt;T\[\]&gt; |  |
+|  target | Object |  |
+|  methodName | string |  |
 
 <b>Returns:</b>
 
-`MetadataMap<T[]>`
+[MetadataMap](./metadata.metadatamap.md)<!-- -->&lt;T\[\]&gt;
 
 

@@ -25,11 +25,11 @@ export declare function flattenMapByKeys<T>(sourceIds: unknown[], targetMap: Map
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  sourceIds | <code>unknown[]</code> | One value or array of values (of the target key) |
-|  targetMap | <code>Map&lt;unknown, T&gt;</code> | a map that matches sourceIds with instances |
+|  sourceIds | unknown\[\] | One value or array of values (of the target key) |
+|  targetMap | Map&lt;unknown, T&gt; | a map that matches sourceIds with instances |
 
 <b>Returns:</b>
 
-`(T | undefined)[]`
+(T \| undefined)\[\]
 
 

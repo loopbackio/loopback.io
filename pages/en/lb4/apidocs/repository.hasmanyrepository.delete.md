@@ -25,12 +25,12 @@ delete(where?: Where<Target>, options?: Options): Promise<Count>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  where | <code>Where&lt;Target&gt;</code> | Instances within the where scope are deleted |
-|  options | <code>Options</code> |  |
+|  where | [Where](./repository.where.md)<!-- -->&lt;Target&gt; | Instances within the where scope are deleted |
+|  options | [Options](./repository.options.md) |  |
 
 <b>Returns:</b>
 
-`Promise<Count>`
+Promise&lt;[Count](./repository.count.md)<!-- -->&gt;
 
 A promise which resolves the deleted target model instances
 

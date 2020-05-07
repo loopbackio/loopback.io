@@ -25,11 +25,11 @@ tag(...tags: BindingTag[]): this;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  tags | <code>BindingTag[]</code> | A list of names or name/value objects. Each parameter can be in one of the following forms: - string: A tag name without value - string\[\]: An array of tag names - TagMap: A map of tag name/value pairs |
+|  tags | [BindingTag](./context.bindingtag.md)<!-- -->\[\] | A list of names or name/value objects. Each parameter can be in one of the following forms: - string: A tag name without value - string\[\]: An array of tag names - TagMap: A map of tag name/value pairs |
 
 <b>Returns:</b>
 
-`this`
+this
 
 ## Example
 

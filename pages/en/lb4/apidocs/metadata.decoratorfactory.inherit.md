@@ -25,10 +25,10 @@ protected inherit(inheritedMetadata: T | undefined | null): T;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  inheritedMetadata | <code>T &#124; undefined &#124; null</code> | Metadata from base classes for the member |
+|  inheritedMetadata | T \| undefined \| null | Metadata from base classes for the member |
 
 <b>Returns:</b>
 
-`T`
+T
 
 

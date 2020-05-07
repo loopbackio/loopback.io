@@ -25,14 +25,14 @@ export declare function invokeMethod(target: object, method: string, ctx: Contex
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  target | <code>object</code> | Target of the method, it will be the class for a static method, and instance or class prototype for a prototype method |
-|  method | <code>string</code> | Name of the method |
-|  ctx | <code>Context</code> | Context object |
-|  nonInjectedArgs | <code>InvocationArgs</code> | Optional array of args for non-injected parameters |
-|  options | <code>InvocationOptions</code> | Options for the invocation |
+|  target | object | Target of the method, it will be the class for a static method, and instance or class prototype for a prototype method |
+|  method | string | Name of the method |
+|  ctx | [Context](./context.context.md) | Context object |
+|  nonInjectedArgs | [InvocationArgs](./context.invocationargs.md) | Optional array of args for non-injected parameters |
+|  options | [InvocationOptions](./context.invocationoptions.md) | Options for the invocation |
 
 <b>Returns:</b>
 
-`ValueOrPromise<InvocationResult>`
+[ValueOrPromise](./context.valueorpromise.md)<!-- -->&lt;[InvocationResult](./context.invocationresult.md)<!-- -->&gt;
 
 

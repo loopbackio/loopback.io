@@ -27,11 +27,11 @@ export declare function createBelongsToInclusionResolver<Target extends Entity, 
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  meta | <code>BelongsToDefinition</code> | resolved BelongsToMetadata |
-|  getTargetRepo | <code>Getter&lt;EntityCrudRepository&lt;Target, TargetID, TargetRelations&gt;&gt;</code> | target repository i.e where related instances are |
+|  meta | [BelongsToDefinition](./repository.belongstodefinition.md) | resolved BelongsToMetadata |
+|  getTargetRepo | [Getter](./context.getter.md)<!-- -->&lt;[EntityCrudRepository](./repository.entitycrudrepository.md)<!-- -->&lt;Target, TargetID, TargetRelations&gt;&gt; | target repository i.e where related instances are |
 
 <b>Returns:</b>
 
-`InclusionResolver<Entity, Target>`
+[InclusionResolver](./repository.inclusionresolver.md)<!-- -->&lt;[Entity](./repository.entity.md)<!-- -->, Target&gt;
 
 

@@ -25,10 +25,10 @@ add(binding: Binding<unknown>): this;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  binding | <code>Binding&lt;unknown&gt;</code> | The configured binding to be added |
+|  binding | [Binding](./context.binding.md)<!-- -->&lt;unknown&gt; | The configured binding to be added |
 
 <b>Returns:</b>
 
-`this`
+this
 
 

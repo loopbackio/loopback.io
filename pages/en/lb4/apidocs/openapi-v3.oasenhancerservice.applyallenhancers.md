@@ -25,10 +25,10 @@ applyAllEnhancers(options?: {}): Promise<OpenApiSpec>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  options | <code>{}</code> |  |
+|  options | {} |  |
 
 <b>Returns:</b>
 
-`Promise<OpenApiSpec>`
+Promise&lt;[OpenApiSpec](./openapi-v3.openapispec.md)<!-- -->&gt;
 
 

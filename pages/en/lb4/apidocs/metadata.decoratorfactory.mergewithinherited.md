@@ -27,13 +27,13 @@ protected mergeWithInherited(inheritedMetadata: M, target: Object, member?: stri
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  inheritedMetadata | <code>M</code> | Metadata inherited from the base classes |
-|  target | <code>Object</code> | Decoration target |
-|  member | <code>string &#124; symbol</code> | Optional property or method |
-|  descriptorOrIndex | <code>TypedPropertyDescriptor&lt;any&gt; &#124; number</code> | Optional parameter index or method descriptor |
+|  inheritedMetadata | M | Metadata inherited from the base classes |
+|  target | Object | Decoration target |
+|  member | string \| symbol | Optional property or method |
+|  descriptorOrIndex | TypedPropertyDescriptor&lt;any&gt; \| number | Optional parameter index or method descriptor |
 
 <b>Returns:</b>
 
-`M`
+M
 
 

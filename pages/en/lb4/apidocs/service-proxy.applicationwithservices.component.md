@@ -23,11 +23,11 @@ component(component: Class<{}>, name?: string): Binding;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  component | <code>Class&lt;{}&gt;</code> |  |
-|  name | <code>string</code> |  |
+|  component | [Class](./service-proxy.class.md)<!-- -->&lt;{}&gt; |  |
+|  name | string |  |
 
 <b>Returns:</b>
 
-`Binding`
+[Binding](./context.binding.md)
 
 

@@ -23,10 +23,10 @@ export declare function validateApiSpec(spec: any): Promise<void>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  spec | <code>any</code> |  |
+|  spec | any |  |
 
 <b>Returns:</b>
 
-`Promise<void>`
+Promise&lt;void&gt;
 
 

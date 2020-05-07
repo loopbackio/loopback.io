@@ -23,9 +23,9 @@ export interface ResponseDecoratorMetadataItem
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [contentType](./openapi-v3.responsedecoratormetadataitem.contenttype.md) | <code>string</code> |  |
-|  [description](./openapi-v3.responsedecoratormetadataitem.description.md) | <code>string</code> |  |
-|  [responseCode](./openapi-v3.responsedecoratormetadataitem.responsecode.md) | <code>number</code> |  |
-|  [responseModelOrSpec](./openapi-v3.responsedecoratormetadataitem.responsemodelorspec.md) | <code>ResponseModelOrSpec</code> |  |
+|  [contentType](./openapi-v3.responsedecoratormetadataitem.contenttype.md) | string |  |
+|  [description](./openapi-v3.responsedecoratormetadataitem.description.md) | string |  |
+|  [responseCode](./openapi-v3.responsedecoratormetadataitem.responsecode.md) | number |  |
+|  [responseModelOrSpec](./openapi-v3.responsedecoratormetadataitem.responsemodelorspec.md) | [ResponseModelOrSpec](./openapi-v3.responsemodelorspec.md) |  |
 
 

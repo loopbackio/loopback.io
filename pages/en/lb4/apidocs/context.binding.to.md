@@ -25,11 +25,11 @@ to(value: T): this;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  value | <code>T</code> | The bound value. |
+|  value | T | The bound value. |
 
 <b>Returns:</b>
 
-`this`
+this
 
 ## Example
 

@@ -11,16 +11,20 @@ permalink: /doc/en/lb4/apidocs.core.serviceoptions.html
 
 [Home](./index.md) &gt; [@loopback/core](./core.md) &gt; [ServiceOptions](./core.serviceoptions.md)
 
-## ServiceOptions type
+## ServiceOptions interface
 
 Options to register a service binding
 
 <b>Signature:</b>
 
 ```typescript
-export declare type ServiceOptions = {
-    name?: string;
-    interface?: ServiceInterface;
-};
+export interface ServiceOptions extends BindingFromClassOptions 
 ```
+
+## Properties
+
+|  Property | Type | Description |
+|  --- | --- | --- |
+|  [interface](./core.serviceoptions.interface.md) | [ServiceInterface](./core.serviceinterface.md) |  |
+
 

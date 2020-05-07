@@ -33,8 +33,8 @@ export declare class RepositoryBooter extends BaseArtifactBooter
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [app](./boot.repositorybooter.app.md) |  | <code>ApplicationWithRepositories</code> |  |
-|  [repositoryOptions](./boot.repositorybooter.repositoryoptions.md) |  | <code>ArtifactOptions</code> |  |
+|  [app](./boot.repositorybooter.app.md) |  | [ApplicationWithRepositories](./repository.applicationwithrepositories.md) |  |
+|  [repositoryOptions](./boot.repositorybooter.repositoryoptions.md) |  | [ArtifactOptions](./boot.artifactoptions.md) |  |
 
 ## Methods
 

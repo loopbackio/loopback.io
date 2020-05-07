@@ -15,6 +15,10 @@ permalink: /doc/en/lb4/apidocs.repository.model.toobject.html
 
 Convert to a plain object as DTO
 
+If `ignoreUnknownProperty` is set to false, convert all properties in the model instance, otherwise only convert the ones defined in the model definitions.
+
+See function `asObject` for each property's conversion rules.
+
 <b>Signature:</b>
 
 ```typescript
@@ -25,10 +29,10 @@ toObject(options?: Options): Object;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  options | <code>Options</code> |  |
+|  options | [Options](./repository.options.md) |  |
 
 <b>Returns:</b>
 
-`Object`
+Object
 
 

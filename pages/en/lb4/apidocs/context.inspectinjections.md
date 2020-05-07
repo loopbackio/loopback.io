@@ -25,10 +25,10 @@ export declare function inspectInjections(binding: Readonly<Binding<unknown>>): 
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  binding | <code>Readonly&lt;Binding&lt;unknown&gt;&gt;</code> | Binding object |
+|  binding | Readonly&lt;[Binding](./context.binding.md)<!-- -->&lt;unknown&gt;&gt; | Binding object |
 
 <b>Returns:</b>
 
-`JSONObject`
+[JSONObject](./context.jsonobject.md)
 
 

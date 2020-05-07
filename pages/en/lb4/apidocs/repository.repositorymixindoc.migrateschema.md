@@ -29,10 +29,10 @@ migrateSchema(options?: SchemaMigrationOptions): Promise<void>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  options | <code>SchemaMigrationOptions</code> | Migration options, e.g. whether to update tables preserving data or rebuild everything from scratch. |
+|  options | [SchemaMigrationOptions](./repository.schemamigrationoptions.md) | Migration options, e.g. whether to update tables preserving data or rebuild everything from scratch. |
 
 <b>Returns:</b>
 
-`Promise<void>`
+Promise&lt;void&gt;
 
 

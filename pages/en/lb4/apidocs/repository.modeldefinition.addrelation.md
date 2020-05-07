@@ -25,10 +25,10 @@ addRelation(definition: RelationMetadata): this;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  definition | <code>RelationMetadata</code> | The definition of the new relation. |
+|  definition | [RelationMetadata](./repository.relationmetadata.md) | The definition of the new relation. |
 
 <b>Returns:</b>
 
-`this`
+this
 
 

@@ -31,7 +31,7 @@ export declare class DefaultKeyValueRepository<T extends Model> implements KeyVa
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [kvModelClass](./repository.defaultkeyvaluerepository.kvmodelclass.md) |  | <code>typeof juggler.KeyValueModel</code> | A legacy KeyValueModel class |
+|  [kvModelClass](./repository.defaultkeyvaluerepository.kvmodelclass.md) |  | typeof juggler.KeyValueModel | A legacy KeyValueModel class |
 
 ## Methods
 

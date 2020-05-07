@@ -20,6 +20,6 @@ function invalidRequestBody(): HttpErrors.HttpError;
 ```
 <b>Returns:</b>
 
-`HttpErrors.HttpError`
+HttpErrors.HttpError
 
 

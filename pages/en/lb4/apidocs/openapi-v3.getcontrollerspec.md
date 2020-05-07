@@ -25,10 +25,10 @@ export declare function getControllerSpec(constructor: Function): ControllerSpec
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  constructor | <code>Function</code> | Controller class |
+|  constructor | Function | Controller class |
 
 <b>Returns:</b>
 
-`ControllerSpec`
+[ControllerSpec](./openapi-v3.controllerspec.md)
 
 

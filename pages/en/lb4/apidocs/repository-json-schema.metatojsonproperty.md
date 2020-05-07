@@ -25,10 +25,10 @@ export declare function metaToJsonProperty(meta: PropertyDefinition): JsonSchema
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  meta | <code>PropertyDefinition</code> |  |
+|  meta | [PropertyDefinition](./repository.propertydefinition.md) |  |
 
 <b>Returns:</b>
 
-`JsonSchema`
+JsonSchema
 
 

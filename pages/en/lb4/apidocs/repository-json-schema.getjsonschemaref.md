@@ -27,12 +27,12 @@ export declare function getJsonSchemaRef<T extends object>(modelCtor: Function &
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  modelCtor | <code>Function &amp; {</code><br/><code>    prototype: T;</code><br/><code>}</code> | The model constructor (e.g. <code>Product</code>) |
-|  options | <code>JsonSchemaOptions&lt;T&gt;</code> | Additional options |
+|  modelCtor | Function &amp; { prototype: T; } | The model constructor (e.g. <code>Product</code>) |
+|  options | [JsonSchemaOptions](./repository-json-schema.jsonschemaoptions.md)<!-- -->&lt;T&gt; | Additional options |
 
 <b>Returns:</b>
 
-`JsonSchema`
+JsonSchema
 
 ## Example
 

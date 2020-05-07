@@ -25,10 +25,10 @@ export interface Node<T>
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [children](./rest.node.children.md) | <code>{</code><br/><code>        [key: string]: Node&lt;T&gt;;</code><br/><code>    }</code> | Children of the node |
-|  [key](./rest.node.key.md) | <code>string</code> | Key of the node |
-|  [names](./rest.node.names.md) | <code>string[]</code> | Names of the node if it contains named parameters |
-|  [regexp](./rest.node.regexp.md) | <code>RegExp</code> | Regular expression for the template |
-|  [value](./rest.node.value.md) | <code>T</code> | Value of the node |
+|  [children](./rest.node.children.md) | { \[key: string\]: [Node](./rest.node.md)<!-- -->&lt;T&gt;; } | Children of the node |
+|  [key](./rest.node.key.md) | string | Key of the node |
+|  [names](./rest.node.names.md) | string\[\] | Names of the node if it contains named parameters |
+|  [regexp](./rest.node.regexp.md) | RegExp | Regular expression for the template |
+|  [value](./rest.node.value.md) | T | Value of the node |
 
 

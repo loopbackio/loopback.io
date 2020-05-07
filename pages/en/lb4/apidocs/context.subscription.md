@@ -25,7 +25,7 @@ export interface Subscription
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [closed](./context.subscription.closed.md) | <code>boolean</code> | Is the subscription closed? |
+|  [closed](./context.subscription.closed.md) | boolean | Is the subscription closed? |
 
 ## Methods
 

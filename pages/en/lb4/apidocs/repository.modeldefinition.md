@@ -31,10 +31,10 @@ export declare class ModelDefinition
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [name](./repository.modeldefinition.name.md) |  | <code>string</code> |  |
-|  [properties](./repository.modeldefinition.properties.md) |  | <code>{</code><br/><code>        [name: string]: PropertyDefinition;</code><br/><code>    }</code> |  |
-|  [relations](./repository.modeldefinition.relations.md) |  | <code>RelationDefinitionMap</code> |  |
-|  [settings](./repository.modeldefinition.settings.md) |  | <code>{</code><br/><code>        [name: string]: any;</code><br/><code>    }</code> |  |
+|  [name](./repository.modeldefinition.name.md) |  | string |  |
+|  [properties](./repository.modeldefinition.properties.md) |  | { \[name: string\]: [PropertyDefinition](./repository.propertydefinition.md)<!-- -->; } |  |
+|  [relations](./repository.modeldefinition.relations.md) |  | [RelationDefinitionMap](./repository.relationdefinitionmap.md) |  |
+|  [settings](./repository.modeldefinition.settings.md) |  | { \[name: string\]: any; } |  |
 
 ## Methods
 

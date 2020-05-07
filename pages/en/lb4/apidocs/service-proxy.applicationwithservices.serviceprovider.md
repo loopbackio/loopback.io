@@ -23,11 +23,11 @@ serviceProvider<S>(provider: Class<Provider<S>>, name?: string): Binding<S>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  provider | <code>Class&lt;Provider&lt;S&gt;&gt;</code> |  |
-|  name | <code>string</code> |  |
+|  provider | [Class](./service-proxy.class.md)<!-- -->&lt;[Provider](./context.provider.md)<!-- -->&lt;S&gt;&gt; |  |
+|  name | string |  |
 
 <b>Returns:</b>
 
-`Binding<S>`
+[Binding](./context.binding.md)<!-- -->&lt;S&gt;
 
 

@@ -59,11 +59,11 @@ class MyController {}
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [decoratorName](./metadata.decoratorfactory.decoratorname.md) |  | <code>string</code> |  |
-|  [key](./metadata.decoratorfactory.key.md) |  | <code>string</code> |  |
-|  [options](./metadata.decoratorfactory.options.md) |  | <code>DecoratorOptions</code> |  |
-|  [spec](./metadata.decoratorfactory.spec.md) |  | <code>T</code> |  |
-|  [TARGET](./metadata.decoratorfactory.target.md) | <code>static</code> | <code>string</code> | A constant to reference the target of a decoration |
+|  [decoratorName](./metadata.decoratorfactory.decoratorname.md) |  | string |  |
+|  [key](./metadata.decoratorfactory.key.md) |  | string |  |
+|  [options](./metadata.decoratorfactory.options.md) |  | [DecoratorOptions](./metadata.decoratoroptions.md) |  |
+|  [spec](./metadata.decoratorfactory.spec.md) |  | T |  |
+|  [TARGET](./metadata.decoratorfactory.target.md) | <code>static</code> | string | A constant to reference the target of a decoration |
 
 ## Methods
 

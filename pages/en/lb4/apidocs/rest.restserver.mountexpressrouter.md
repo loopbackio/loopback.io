@@ -25,12 +25,12 @@ mountExpressRouter(basePath: string, router: ExpressRequestHandler, spec?: Route
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  basePath | <code>string</code> | Path where to mount the router at, e.g. <code>/</code> or <code>/api</code>. |
-|  router | <code>ExpressRequestHandler</code> | The Express router to handle the requests. |
-|  spec | <code>RouterSpec</code> | A partial OpenAPI spec describing endpoints provided by the router. LoopBack will prepend <code>basePath</code> to all endpoints automatically. This argument is optional. You can leave it out if you don't want to document the routes. |
+|  basePath | string | Path where to mount the router at, e.g. <code>/</code> or <code>/api</code>. |
+|  router | [ExpressRequestHandler](./express.expressrequesthandler.md) | The Express router to handle the requests. |
+|  spec | [RouterSpec](./rest.routerspec.md) | A partial OpenAPI spec describing endpoints provided by the router. LoopBack will prepend <code>basePath</code> to all endpoints automatically. This argument is optional. You can leave it out if you don't want to document the routes. |
 
 <b>Returns:</b>
 
-`void`
+void
 
 

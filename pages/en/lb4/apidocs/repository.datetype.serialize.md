@@ -23,10 +23,10 @@ serialize(value: Date | null | undefined): string | null | undefined;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  value | <code>Date &#124; null &#124; undefined</code> |  |
+|  value | Date \| null \| undefined |  |
 
 <b>Returns:</b>
 
-`string | null | undefined`
+string \| null \| undefined
 
 

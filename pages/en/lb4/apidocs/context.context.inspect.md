@@ -25,10 +25,10 @@ inspect(options?: ContextInspectOptions): JSONObject;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  options | <code>ContextInspectOptions</code> | Options for inspect |
+|  options | [ContextInspectOptions](./context.contextinspectoptions.md) | Options for inspect |
 
 <b>Returns:</b>
 
-`JSONObject`
+[JSONObject](./context.jsonobject.md)
 
 

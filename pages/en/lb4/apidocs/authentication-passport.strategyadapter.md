@@ -31,7 +31,7 @@ export declare class StrategyAdapter<U> implements AuthenticationStrategy
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [name](./authentication-passport.strategyadapter.name.md) |  | <code>string</code> |  |
+|  [name](./authentication-passport.strategyadapter.name.md) |  | string |  |
 
 ## Methods
 

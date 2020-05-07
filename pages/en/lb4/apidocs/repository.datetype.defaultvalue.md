@@ -20,6 +20,6 @@ defaultValue(): Date;
 ```
 <b>Returns:</b>
 
-`Date`
+Date
 
 

@@ -20,6 +20,6 @@ defaultValue(): T;
 ```
 <b>Returns:</b>
 
-`T`
+T
 
 

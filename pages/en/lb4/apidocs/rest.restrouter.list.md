@@ -22,6 +22,6 @@ list(): RouteEntry[];
 ```
 <b>Returns:</b>
 
-`RouteEntry[]`
+[RouteEntry](./rest.routeentry.md)<!-- -->\[\]
 
 

@@ -25,11 +25,11 @@ export declare function getParserOptions(type: 'json', options: RequestBodyParse
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  type | <code>'json'</code> | json\|urlencoded\|text |
-|  options | <code>RequestBodyParserOptions</code> |  |
+|  type | 'json' | json\|urlencoded\|text |
+|  options | [RequestBodyParserOptions](./rest.requestbodyparseroptions.md) |  |
 
 <b>Returns:</b>
 
-`OptionsJson`
+OptionsJson
 
 

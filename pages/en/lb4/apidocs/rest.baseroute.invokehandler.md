@@ -23,11 +23,11 @@ abstract invokeHandler(requestContext: Context, args: OperationArgs): Promise<Op
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  requestContext | <code>Context</code> |  |
-|  args | <code>OperationArgs</code> |  |
+|  requestContext | [Context](./context.context.md) |  |
+|  args | [OperationArgs](./rest.operationargs.md) |  |
 
 <b>Returns:</b>
 
-`Promise<OperationRetval>`
+Promise&lt;[OperationRetval](./rest.operationretval.md)<!-- -->&gt;
 
 

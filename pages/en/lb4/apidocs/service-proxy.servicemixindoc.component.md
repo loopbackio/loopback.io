@@ -25,11 +25,11 @@ component(component: Class<unknown>): Binding;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  component | <code>Class&lt;unknown&gt;</code> | The component to add. |
+|  component | [Class](./service-proxy.class.md)<!-- -->&lt;unknown&gt; | The component to add. |
 
 <b>Returns:</b>
 
-`Binding`
+[Binding](./context.binding.md)
 
 ## Example
 

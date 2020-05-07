@@ -25,7 +25,7 @@ export interface OpenApiSpecForm
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [format](./rest.openapispecform.format.md) | <code>string</code> |  |
-|  [version](./rest.openapispecform.version.md) | <code>string</code> |  |
+|  [format](./rest.openapispecform.format.md) | string |  |
+|  [version](./rest.openapispecform.version.md) | string |  |
 
 

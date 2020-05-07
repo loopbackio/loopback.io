@@ -25,7 +25,7 @@ constructor(app: Application, projectRoot: string);
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  app | <code>Application</code> |  |
-|  projectRoot | <code>string</code> |  |
+|  app | [Application](./core.application.md) |  |
+|  projectRoot | string |  |
 
 

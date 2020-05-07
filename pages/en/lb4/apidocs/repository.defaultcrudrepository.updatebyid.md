@@ -23,12 +23,12 @@ updateById(id: ID, data: DataObject<T>, options?: Options): Promise<void>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  id | <code>ID</code> |  |
-|  data | <code>DataObject&lt;T&gt;</code> |  |
-|  options | <code>Options</code> |  |
+|  id | ID |  |
+|  data | [DataObject](./repository.dataobject.md)<!-- -->&lt;T&gt; |  |
+|  options | [Options](./repository.options.md) |  |
 
 <b>Returns:</b>
 
-`Promise<void>`
+Promise&lt;void&gt;
 
 

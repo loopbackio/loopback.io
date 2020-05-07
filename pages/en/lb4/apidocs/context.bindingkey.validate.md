@@ -25,10 +25,10 @@ static validate<T>(key: BindingAddress<T>): string;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  key | <code>BindingAddress&lt;T&gt;</code> | Binding key, such as <code>a</code>, <code>a.b</code>, <code>a:b</code>, or <code>a/b</code> |
+|  key | [BindingAddress](./context.bindingaddress.md)<!-- -->&lt;T&gt; | Binding key, such as <code>a</code>, <code>a.b</code>, <code>a:b</code>, or <code>a/b</code> |
 
 <b>Returns:</b>
 
-`string`
+string
 
 

@@ -21,8 +21,8 @@ A mixin class for Application that creates a .serviceProvider() function to regi
 export declare function ServiceMixin<T extends Class<any>>(superClass: T): {
     new (...args: any[]): {
         [x: string]: any;
-        serviceProvider<S>(provider: Class<Provider<S>>, name?: string | undefined): Binding<S>;
-        component(component: Class<unknown>, name?: string | undefined): void;
+        serviceProvider<S>(provider: Class<Provider<S>>, nameOrOptions?: string | ServiceOptions | undefined): Binding<S>;
+        component(component: Class<unknown>, nameOrOptions?: string | BindingFromClassOptions | undefined): void;
         mountComponentServices(component: Class<unknown>): void;
     };
 } & T;
@@ -32,18 +32,11 @@ export declare function ServiceMixin<T extends Class<any>>(superClass: T): {
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  superClass | <code>T</code> |  |
+|  superClass | T |  |
 
 <b>Returns:</b>
 
-`{
-    new (...args: any[]): {
-        [x: string]: any;
-        serviceProvider<S>(provider: Class<Provider<S>>, name?: string | undefined): Binding<S>;
-        component(component: Class<unknown>, name?: string | undefined): void;
-        mountComponentServices(component: Class<unknown>): void;
-    };
-} & T`
+{ new (...args: any\[\]): { \[x: string\]: any; serviceProvider&lt;S&gt;(provider: [Class](./service-proxy.class.md)<!-- -->&lt;[Provider](./context.provider.md)<!-- -->&lt;S&gt;&gt;, nameOrOptions?: string \| [ServiceOptions](./core.serviceoptions.md) \| undefined): [Binding](./context.binding.md)<!-- -->&lt;S&gt;; component(component: [Class](./service-proxy.class.md)<!-- -->&lt;unknown&gt;, nameOrOptions?: string \| [BindingFromClassOptions](./context.bindingfromclassoptions.md) \| undefined): void; mountComponentServices(component: [Class](./service-proxy.class.md)<!-- -->&lt;unknown&gt;): void; }; } &amp; T
 
 ## Example
 

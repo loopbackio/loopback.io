@@ -25,12 +25,12 @@ export declare function resolveMap<T, V>(map: MapObject<T>, resolver: (val: T, k
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  map | <code>MapObject&lt;T&gt;</code> | The original object containing the source entries |
-|  resolver | <code>(val: T, key: string, map: MapObject&lt;T&gt;) =&gt; ValueOrPromise&lt;V&gt;</code> | A function resolves an entry to a value or promise. It will be invoked with the property value, the property name, and the source object. |
+|  map | [MapObject](./context.mapobject.md)<!-- -->&lt;T&gt; | The original object containing the source entries |
+|  resolver | (val: T, key: string, map: [MapObject](./context.mapobject.md)<!-- -->&lt;T&gt;) =&gt; [ValueOrPromise](./context.valueorpromise.md)<!-- -->&lt;V&gt; | A function resolves an entry to a value or promise. It will be invoked with the property value, the property name, and the source object. |
 
 <b>Returns:</b>
 
-`ValueOrPromise<MapObject<V>>`
+[ValueOrPromise](./context.valueorpromise.md)<!-- -->&lt;[MapObject](./context.mapobject.md)<!-- -->&lt;V&gt;&gt;
 
 ## Example
 

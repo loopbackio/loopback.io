@@ -23,10 +23,10 @@ export declare class BindingKey<ValueType>
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [CONFIG\_NAMESPACE](./context.bindingkey.config_namespace.md) | <code>static</code> | <code>string</code> | Name space for configuration binding keys |
-|  [key](./context.bindingkey.key.md) |  | <code>string</code> |  |
-|  [PROPERTY\_SEPARATOR](./context.bindingkey.property_separator.md) | <code>static</code> | <code></code> |  |
-|  [propertyPath](./context.bindingkey.propertypath.md) |  | <code>string &#124; undefined</code> |  |
+|  [CONFIG\_NAMESPACE](./context.bindingkey.config_namespace.md) | <code>static</code> | string | Name space for configuration binding keys |
+|  [key](./context.bindingkey.key.md) |  | string |  |
+|  [PROPERTY\_SEPARATOR](./context.bindingkey.property_separator.md) | <code>static</code> | (not declared) |  |
+|  [propertyPath](./context.bindingkey.propertypath.md) |  | string \| undefined |  |
 
 ## Methods
 

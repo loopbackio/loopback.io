@@ -25,11 +25,11 @@ route(route: RouteEntry): Binding;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  route | <code>RouteEntry</code> | The route to add. |
+|  route | [RouteEntry](./rest.routeentry.md) | The route to add. |
 
 <b>Returns:</b>
 
-`Binding`
+[Binding](./context.binding.md)
 
 ## Example
 

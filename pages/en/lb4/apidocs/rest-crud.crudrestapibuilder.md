@@ -23,7 +23,7 @@ export declare class CrudRestApiBuilder implements ModelApiBuilder
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [pattern](./rest-crud.crudrestapibuilder.pattern.md) |  | <code>string</code> |  |
+|  [pattern](./rest-crud.crudrestapibuilder.pattern.md) |  | string |  |
 
 ## Methods
 

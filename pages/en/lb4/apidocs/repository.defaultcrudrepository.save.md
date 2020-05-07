@@ -23,11 +23,11 @@ save(entity: T, options?: Options): Promise<T>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  entity | <code>T</code> |  |
-|  options | <code>Options</code> |  |
+|  entity | T |  |
+|  options | [Options](./repository.options.md) |  |
 
 <b>Returns:</b>
 
-`Promise<T>`
+Promise&lt;T&gt;
 
 

@@ -31,8 +31,8 @@ export declare class ModelType<T extends Model> extends ObjectType<T>
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [modelClass](./repository.modeltype.modelclass.md) |  | <code>Class&lt;T&gt;</code> |  |
-|  [name](./repository.modeltype.name.md) |  | <code>string</code> |  |
+|  [modelClass](./repository.modeltype.modelclass.md) |  | [Class](./repository.class.md)<!-- -->&lt;T&gt; |  |
+|  [name](./repository.modeltype.name.md) |  | string |  |
 
 ## Methods
 

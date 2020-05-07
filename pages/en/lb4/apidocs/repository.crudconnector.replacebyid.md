@@ -25,14 +25,14 @@ replaceById?<IdType>(modelClass: Class<Entity>, id: IdType, data: EntityData, op
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  modelClass | <code>Class&lt;Entity&gt;</code> | The model class |
-|  id | <code>IdType</code> | The entity id value |
-|  data | <code>EntityData</code> | The data attributes to be updated |
-|  options | <code>Options</code> | Options for the operation |
+|  modelClass | [Class](./repository.class.md)<!-- -->&lt;[Entity](./repository.entity.md)<!-- -->&gt; | The model class |
+|  id | IdType | The entity id value |
+|  data | [EntityData](./repository.entitydata.md) | The data attributes to be updated |
+|  options | [Options](./repository.options.md) | Options for the operation |
 
 <b>Returns:</b>
 
-`Promise<boolean>`
+Promise&lt;boolean&gt;
 
 Promise<true> if an entity is replaced for the id, otherwise Promise<false>
 

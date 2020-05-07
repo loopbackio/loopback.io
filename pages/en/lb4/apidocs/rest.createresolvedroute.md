@@ -23,11 +23,11 @@ export declare function createResolvedRoute(route: RouteEntry, pathParams: PathP
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  route | <code>RouteEntry</code> |  |
-|  pathParams | <code>PathParameterValues</code> |  |
+|  route | [RouteEntry](./rest.routeentry.md) |  |
+|  pathParams | [PathParameterValues](./rest.pathparametervalues.md) |  |
 
 <b>Returns:</b>
 
-`ResolvedRoute`
+[ResolvedRoute](./rest.resolvedroute.md)
 
 

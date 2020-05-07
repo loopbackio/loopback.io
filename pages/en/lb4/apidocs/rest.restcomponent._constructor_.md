@@ -25,7 +25,7 @@ constructor(app: Application, config?: RestComponentConfig);
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  app | <code>Application</code> |  |
-|  config | <code>RestComponentConfig</code> |  |
+|  app | [Application](./core.application.md) |  |
+|  config | [RestComponentConfig](./rest.restcomponentconfig.md) |  |
 
 

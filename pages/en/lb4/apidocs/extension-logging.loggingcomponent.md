@@ -31,7 +31,7 @@ export declare class LoggingComponent implements Component
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [bindings](./extension-logging.loggingcomponent.bindings.md) |  | <code>Binding&lt;unknown&gt;[]</code> |  |
-|  [providers](./extension-logging.loggingcomponent.providers.md) |  | <code>ProviderMap</code> |  |
+|  [bindings](./extension-logging.loggingcomponent.bindings.md) |  | [Binding](./context.binding.md)<!-- -->&lt;unknown&gt;\[\] |  |
+|  [providers](./extension-logging.loggingcomponent.providers.md) |  | [ProviderMap](./core.providermap.md) |  |
 
 

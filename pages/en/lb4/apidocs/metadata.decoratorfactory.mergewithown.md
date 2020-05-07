@@ -27,13 +27,13 @@ protected mergeWithOwn(ownMetadata: M, target: Object, member?: string | symbol,
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  ownMetadata | <code>M</code> | Own Metadata exists locally on the target |
-|  target | <code>Object</code> | Decoration target |
-|  member | <code>string &#124; symbol</code> | Optional property or method |
-|  descriptorOrIndex | <code>TypedPropertyDescriptor&lt;any&gt; &#124; number</code> | Optional parameter index or method descriptor |
+|  ownMetadata | M | Own Metadata exists locally on the target |
+|  target | Object | Decoration target |
+|  member | string \| symbol | Optional property or method |
+|  descriptorOrIndex | TypedPropertyDescriptor&lt;any&gt; \| number | Optional parameter index or method descriptor |
 
 <b>Returns:</b>
 
-`M`
+M
 
 

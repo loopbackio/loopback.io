@@ -25,11 +25,11 @@ servers<T extends Server>(ctors: Constructor<T>[]): Binding[];
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  ctors | <code>Constructor&lt;T&gt;[]</code> | An array of Server constructors. |
+|  ctors | [Constructor](./context.constructor.md)<!-- -->&lt;T&gt;\[\] | An array of Server constructors. |
 
 <b>Returns:</b>
 
-`Binding[]`
+[Binding](./context.binding.md)<!-- -->\[\]
 
 An array of bindings for the registered server classes
 

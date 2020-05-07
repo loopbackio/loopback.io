@@ -23,11 +23,11 @@ repository<R extends Repository<any>>(repo: Class<R>, name?: string): Binding<R>
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  repo | <code>Class&lt;R&gt;</code> |  |
-|  name | <code>string</code> |  |
+|  repo | [Class](./repository.class.md)<!-- -->&lt;R&gt; |  |
+|  name | string |  |
 
 <b>Returns:</b>
 
-`Binding<R>`
+[Binding](./context.binding.md)<!-- -->&lt;R&gt;
 
 

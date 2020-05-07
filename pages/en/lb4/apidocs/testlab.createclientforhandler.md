@@ -25,10 +25,10 @@ export declare function createClientForHandler(handler: (req: http.IncomingMessa
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  handler | <code>(req: http.IncomingMessage, res: http.ServerResponse) =&gt; void</code> |  |
+|  handler | (req: http.IncomingMessage, res: http.ServerResponse) =&gt; void |  |
 
 <b>Returns:</b>
 
-`Client`
+[Client](./testlab.client.md)
 
 

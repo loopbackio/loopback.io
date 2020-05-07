@@ -23,10 +23,10 @@ modifySpec(spec: OpenAPIObject): OpenAPIObject;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  spec | <code>OpenAPIObject</code> |  |
+|  spec | OpenAPIObject |  |
 
 <b>Returns:</b>
 
-`OpenAPIObject`
+OpenAPIObject
 
 

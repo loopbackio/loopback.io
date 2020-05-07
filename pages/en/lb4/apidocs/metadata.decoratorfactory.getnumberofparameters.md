@@ -25,11 +25,11 @@ static getNumberOfParameters(target: Object, member?: string): number;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  target | <code>Object</code> | Class or the prototype |
-|  member | <code>string</code> | Method name |
+|  target | Object | Class or the prototype |
+|  member | string | Method name |
 
 <b>Returns:</b>
 
-`number`
+number
 
 

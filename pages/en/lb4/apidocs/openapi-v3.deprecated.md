@@ -27,11 +27,11 @@ export declare function deprecated(isDeprecated?: boolean): (target: any, method
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  isDeprecated | <code>boolean</code> | whether or not the path should be marked as deprecated. This is useful for marking a class as deprecated, but a method as not deprecated. |
+|  isDeprecated | boolean | whether or not the path should be marked as deprecated. This is useful for marking a class as deprecated, but a method as not deprecated. |
 
 <b>Returns:</b>
 
-`(target: any, method?: string | undefined, methodDescriptor?: TypedPropertyDescriptor<any> | undefined) => any`
+(target: any, method?: string \| undefined, methodDescriptor?: TypedPropertyDescriptor&lt;any&gt; \| undefined) =&gt; any
 
 ## Example
 

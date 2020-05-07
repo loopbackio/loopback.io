@@ -25,12 +25,12 @@ createAll(dataObjects: DataObject<T>[], options?: Options): Promise<T[]>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  dataObjects | <code>DataObject&lt;T&gt;[]</code> | An array of data to be created |
-|  options | <code>Options</code> | Options for the operations |
+|  dataObjects | [DataObject](./repository.dataobject.md)<!-- -->&lt;T&gt;\[\] | An array of data to be created |
+|  options | [Options](./repository.options.md) | Options for the operations |
 
 <b>Returns:</b>
 
-`Promise<T[]>`
+Promise&lt;T\[\]&gt;
 
 A promise of an array of records created
 

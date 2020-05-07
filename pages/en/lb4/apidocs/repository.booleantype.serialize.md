@@ -23,10 +23,10 @@ serialize(value: boolean | null | undefined): boolean | null | undefined;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  value | <code>boolean &#124; null &#124; undefined</code> |  |
+|  value | boolean \| null \| undefined |  |
 
 <b>Returns:</b>
 
-`boolean | null | undefined`
+boolean \| null \| undefined
 
 

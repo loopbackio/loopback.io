@@ -23,10 +23,10 @@ protected toEntities<R extends T>(models: juggler.PersistedModel[]): R[];
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  models | <code>juggler.PersistedModel[]</code> |  |
+|  models | juggler.PersistedModel\[\] |  |
 
 <b>Returns:</b>
 
-`R[]`
+R\[\]
 
 

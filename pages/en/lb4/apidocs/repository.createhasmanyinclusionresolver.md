@@ -27,11 +27,11 @@ export declare function createHasManyInclusionResolver<Target extends Entity, Ta
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  meta | <code>HasManyDefinition</code> | resolved metadata of the hasMany relation |
-|  getTargetRepo | <code>Getter&lt;EntityCrudRepository&lt;Target, TargetID, TargetRelations&gt;&gt;</code> | target repository i.e where related instances are |
+|  meta | [HasManyDefinition](./repository.hasmanydefinition.md) | resolved metadata of the hasMany relation |
+|  getTargetRepo | [Getter](./context.getter.md)<!-- -->&lt;[EntityCrudRepository](./repository.entitycrudrepository.md)<!-- -->&lt;Target, TargetID, TargetRelations&gt;&gt; | target repository i.e where related instances are |
 
 <b>Returns:</b>
 
-`InclusionResolver<Entity, Target>`
+[InclusionResolver](./repository.inclusionresolver.md)<!-- -->&lt;[Entity](./repository.entity.md)<!-- -->, Target&gt;
 
 

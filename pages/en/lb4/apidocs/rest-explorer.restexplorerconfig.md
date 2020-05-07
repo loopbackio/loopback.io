@@ -21,6 +21,7 @@ Options to configure API Explorer UI
 export declare type RestExplorerConfig = {
     path?: string;
     useSelfHostedSpec?: false;
+    swaggerThemeFile?: string;
 };
 ```
 

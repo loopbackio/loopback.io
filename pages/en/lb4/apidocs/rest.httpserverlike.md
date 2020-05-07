@@ -23,6 +23,6 @@ export interface HttpServerLike
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [requestHandler](./rest.httpserverlike.requesthandler.md) | <code>HttpRequestListener</code> |  |
+|  [requestHandler](./rest.httpserverlike.requesthandler.md) | [HttpRequestListener](./rest.httprequestlistener.md) |  |
 
 

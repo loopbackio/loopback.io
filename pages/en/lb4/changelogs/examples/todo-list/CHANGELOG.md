@@ -11,6 +11,14 @@ permalink: /doc/en/lb4/changelog.example-todo-list.html
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.1.1](https://github.com/strongloop/loopback-next/compare/@loopback/example-todo-list@3.1.0...@loopback/example-todo-list@3.1.1) (2020-05-07)
+
+**Note:** Version bump only for package @loopback/example-todo-list
+
+
+
+
+
 # [3.1.0](https://github.com/strongloop/loopback-next/compare/@loopback/example-todo-list@3.0.6...@loopback/example-todo-list@3.1.0) (2020-04-29)
 
 

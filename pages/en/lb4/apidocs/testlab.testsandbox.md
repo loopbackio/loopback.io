@@ -31,7 +31,7 @@ export declare class TestSandbox
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [path](./testlab.testsandbox.path.md) |  | <code>string</code> |  |
+|  [path](./testlab.testsandbox.path.md) |  | string |  |
 
 ## Methods
 

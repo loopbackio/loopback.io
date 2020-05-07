@@ -25,12 +25,12 @@ export declare function hasMany<T extends Entity>(targetResolver: EntityResolver
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  targetResolver | <code>EntityResolver&lt;T&gt;</code> | Target model for hasMany relation |
-|  definition | <code>Partial&lt;HasManyDefinition&gt;</code> | Optional metadata for setting up hasMany relation |
+|  targetResolver | [EntityResolver](./repository.entityresolver.md)<!-- -->&lt;T&gt; | Target model for hasMany relation |
+|  definition | Partial&lt;[HasManyDefinition](./repository.hasmanydefinition.md)<!-- -->&gt; | Optional metadata for setting up hasMany relation |
 
 <b>Returns:</b>
 
-`(decoratedTarget: object, key: string) => void`
+(decoratedTarget: object, key: string) =&gt; void
 
 A property decorator
 

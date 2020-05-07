@@ -23,11 +23,11 @@ find(filter?: Filter<T>, options?: Options): Promise<(T & Relations)[]>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  filter | <code>Filter&lt;T&gt;</code> |  |
-|  options | <code>Options</code> |  |
+|  filter | [Filter](./repository.filter.md)<!-- -->&lt;T&gt; |  |
+|  options | [Options](./repository.options.md) |  |
 
 <b>Returns:</b>
 
-`Promise<(T & Relations)[]>`
+Promise&lt;(T &amp; Relations)\[\]&gt;
 
 

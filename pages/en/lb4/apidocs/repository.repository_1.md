@@ -25,12 +25,12 @@ export declare function repository(model: string | typeof Entity, dataSource: st
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  model | <code>string &#124; typeof Entity</code> | Name/class of the model |
-|  dataSource | <code>string &#124; juggler.DataSource</code> | Name/instance of the dataSource |
+|  model | string \| typeof [Entity](./repository.entity.md) | Name/class of the model |
+|  dataSource | string \| juggler.DataSource | Name/instance of the dataSource |
 
 <b>Returns:</b>
 
-`RepositoryDecorator`
+[RepositoryDecorator](./repository.repositorydecorator.md)
 
 ## Example
 

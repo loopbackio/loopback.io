@@ -23,10 +23,10 @@ action(request: Request): ResolvedRoute;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  request | <code>Request</code> |  |
+|  request | Request |  |
 
 <b>Returns:</b>
 
-`ResolvedRoute`
+[ResolvedRoute](./rest.resolvedroute.md)
 
 

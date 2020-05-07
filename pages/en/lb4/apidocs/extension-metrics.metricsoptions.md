@@ -23,8 +23,8 @@ export interface MetricsOptions
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [defaultMetrics](./extension-metrics.metricsoptions.defaultmetrics.md) | <code>{</code><br/><code>        disabled?: boolean;</code><br/><code>    } &amp; DefaultMetricsCollectorConfiguration</code> |  |
-|  [endpoint](./extension-metrics.metricsoptions.endpoint.md) | <code>{</code><br/><code>        disabled?: boolean;</code><br/><code>        basePath?: string;</code><br/><code>    }</code> |  |
-|  [pushGateway](./extension-metrics.metricsoptions.pushgateway.md) | <code>{</code><br/><code>        disabled?: boolean;</code><br/><code>        url: string;</code><br/><code>        interval?: number;</code><br/><code>    }</code> |  |
+|  [defaultMetrics](./extension-metrics.metricsoptions.defaultmetrics.md) | { disabled?: boolean; } &amp; DefaultMetricsCollectorConfiguration |  |
+|  [endpoint](./extension-metrics.metricsoptions.endpoint.md) | { disabled?: boolean; basePath?: string; } |  |
+|  [pushGateway](./extension-metrics.metricsoptions.pushgateway.md) | { disabled?: boolean; url: string; interval?: number; } |  |
 
 

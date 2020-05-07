@@ -25,10 +25,10 @@ parse(request: Request): Promise<RequestBody>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  request | <code>Request</code> | http request |
+|  request | Request | http request |
 
 <b>Returns:</b>
 
-`Promise<RequestBody>`
+Promise&lt;[RequestBody](./rest.requestbody.md)<!-- -->&gt;
 
 

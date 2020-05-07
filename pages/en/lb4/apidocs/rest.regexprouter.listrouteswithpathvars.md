@@ -20,6 +20,6 @@ protected listRoutesWithPathVars(): RegExpRouteEntry[];
 ```
 <b>Returns:</b>
 
-`RegExpRouteEntry[]`
+RegExpRouteEntry\[\]
 
 

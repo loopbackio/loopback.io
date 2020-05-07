@@ -23,11 +23,11 @@ export declare function stubServerResponse(request: IncomingMessage, onEnd: Shot
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  request | <code>IncomingMessage</code> |  |
-|  onEnd | <code>ShotCallback</code> |  |
+|  request | IncomingMessage |  |
+|  onEnd | [ShotCallback](./testlab.shotcallback.md) |  |
 
 <b>Returns:</b>
 
-`ServerResponse`
+ServerResponse
 
 

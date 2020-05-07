@@ -20,6 +20,6 @@ value(): Interceptor;
 ```
 <b>Returns:</b>
 
-`Interceptor`
+[Interceptor](./context.interceptor.md)
 
 

@@ -25,10 +25,10 @@ export declare function toExpressPath(path: string): string;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  path | <code>string</code> | OpenAPI path with optional variables as <code>{var}</code> |
+|  path | string | OpenAPI path with optional variables as <code>{var}</code> |
 
 <b>Returns:</b>
 
-`string`
+string
 
 

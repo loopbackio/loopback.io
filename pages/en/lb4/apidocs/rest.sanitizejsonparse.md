@@ -25,10 +25,10 @@ export declare function sanitizeJsonParse(reviver?: (key: any, value: any) => an
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  reviver | <code>(key: any, value: any) =&gt; any</code> | Reviver function |
+|  reviver | (key: any, value: any) =&gt; any | Reviver function |
 
 <b>Returns:</b>
 
-`(key: string, value: any) => any`
+(key: string, value: any) =&gt; any
 
 

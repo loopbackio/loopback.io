@@ -25,12 +25,12 @@ export declare function loadClassesFromFiles(files: string[], projectRootDir: st
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  files | <code>string[]</code> | An array of string of absolute file paths |
-|  projectRootDir | <code>string</code> | The project root directory |
+|  files | string\[\] | An array of string of absolute file paths |
+|  projectRootDir | string | The project root directory |
 
 <b>Returns:</b>
 
-`Constructor<{}>[]`
+[Constructor](./context.constructor.md)<!-- -->&lt;{}&gt;\[\]
 
 An array of Class constructors from a file
 

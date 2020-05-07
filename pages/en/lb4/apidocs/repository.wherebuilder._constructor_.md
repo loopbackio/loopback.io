@@ -25,6 +25,6 @@ constructor(w?: Where<MT>);
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  w | <code>Where&lt;MT&gt;</code> |  |
+|  w | [Where](./repository.where.md)<!-- -->&lt;MT&gt; |  |
 
 

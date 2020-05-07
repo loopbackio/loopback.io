@@ -25,11 +25,11 @@ protected renderBinding(parent: ICluster<string>, { binding, id }: ContextBindin
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  parent | <code>ICluster&lt;string&gt;</code> | Parent subgraph |
-|  { binding, id } | <code>ContextBinding</code> |  |
+|  parent | ICluster&lt;string&gt; | Parent subgraph |
+|  { binding, id } | [ContextBinding](./context-explorer.contextbinding.md) |  |
 
 <b>Returns:</b>
 
-`void`
+void
 
 

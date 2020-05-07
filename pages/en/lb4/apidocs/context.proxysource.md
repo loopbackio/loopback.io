@@ -31,8 +31,8 @@ export declare class ProxySource implements InvocationSource<ResolutionSession>
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [type](./context.proxysource.type.md) |  | <code>string</code> |  |
-|  [value](./context.proxysource.value.md) |  | <code>ResolutionSession</code> |  |
+|  [type](./context.proxysource.type.md) |  | string |  |
+|  [value](./context.proxysource.value.md) |  | [ResolutionSession](./context.resolutionsession.md) |  |
 
 ## Methods
 

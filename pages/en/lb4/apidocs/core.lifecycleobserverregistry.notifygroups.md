@@ -25,12 +25,12 @@ protected notifyGroups(events: (keyof LifeCycleObserver)[], groups: LifeCycleObs
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  events | <code>(keyof LifeCycleObserver)[]</code> | Event names |
-|  groups | <code>LifeCycleObserverGroup[]</code> | Observer groups |
-|  reverse | <code>boolean</code> |  |
+|  events | (keyof [LifeCycleObserver](./core.lifecycleobserver.md)<!-- -->)\[\] | Event names |
+|  groups | [LifeCycleObserverGroup](./core.lifecycleobservergroup.md)<!-- -->\[\] | Observer groups |
+|  reverse | boolean |  |
 
 <b>Returns:</b>
 
-`Promise<void>`
+Promise&lt;void&gt;
 
 

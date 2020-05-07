@@ -23,10 +23,10 @@ coerce(value: any): string;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  value | <code>any</code> |  |
+|  value | any |  |
 
 <b>Returns:</b>
 
-`string`
+string
 
 

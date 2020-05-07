@@ -25,10 +25,10 @@ static buildKeyForConfig<T>(key?: BindingAddress): BindingAddress<T>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  key | <code>BindingAddress</code> | Key of the target binding to be configured |
+|  key | [BindingAddress](./context.bindingaddress.md) | Key of the target binding to be configured |
 
 <b>Returns:</b>
 
-`BindingAddress<T>`
+[BindingAddress](./context.bindingaddress.md)<!-- -->&lt;T&gt;
 
 

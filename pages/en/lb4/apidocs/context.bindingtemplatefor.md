@@ -25,10 +25,10 @@ export declare function bindingTemplateFor<T>(cls: Constructor<T | Provider<T>>)
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  cls | <code>Constructor&lt;T &#124; Provider&lt;T&gt;&gt;</code> | A class with optional <code>@bind</code> |
+|  cls | [Constructor](./context.constructor.md)<!-- -->&lt;T \| [Provider](./context.provider.md)<!-- -->&lt;T&gt;&gt; | A class with optional <code>@bind</code> |
 
 <b>Returns:</b>
 
-`BindingTemplate<T>`
+[BindingTemplate](./context.bindingtemplate.md)<!-- -->&lt;T&gt;
 
 

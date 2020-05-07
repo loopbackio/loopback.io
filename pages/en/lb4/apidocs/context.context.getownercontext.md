@@ -25,10 +25,10 @@ getOwnerContext(key: BindingAddress): Context | undefined;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  key | <code>BindingAddress</code> | Binding key |
+|  key | [BindingAddress](./context.bindingaddress.md) | Binding key |
 
 <b>Returns:</b>
 
-`Context | undefined`
+[Context](./context.context.md) \| undefined
 
 

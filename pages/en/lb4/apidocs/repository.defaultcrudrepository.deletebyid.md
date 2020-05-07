@@ -23,11 +23,11 @@ deleteById(id: ID, options?: Options): Promise<void>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  id | <code>ID</code> |  |
-|  options | <code>Options</code> |  |
+|  id | ID |  |
+|  options | [Options](./repository.options.md) |  |
 
 <b>Returns:</b>
 
-`Promise<void>`
+Promise&lt;void&gt;
 
 

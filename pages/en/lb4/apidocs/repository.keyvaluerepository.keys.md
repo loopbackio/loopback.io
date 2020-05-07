@@ -25,12 +25,12 @@ keys?(filter?: KeyValueFilter, options?: Options): AsyncIterable<string>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  filter | <code>KeyValueFilter</code> | Filter for keys |
-|  options | <code>Options</code> | Options for the operation |
+|  filter | [KeyValueFilter](./repository.keyvaluefilter.md) | Filter for keys |
+|  options | [Options](./repository.options.md) | Options for the operation |
 
 <b>Returns:</b>
 
-`AsyncIterable<string>`
+AsyncIterable&lt;string&gt;
 
 An async iteratable iterator of keys so that the return value can be used with `for-await-of`<!-- -->.
 

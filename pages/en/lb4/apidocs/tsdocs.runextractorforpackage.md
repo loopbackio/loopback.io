@@ -23,11 +23,11 @@ export declare function runExtractorForPackage(pkgDir?: string, options?: Extrac
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  pkgDir | <code>string</code> |  |
-|  options | <code>ExtractorOptions</code> |  |
+|  pkgDir | string |  |
+|  options | [ExtractorOptions](./tsdocs.extractoroptions.md) |  |
 
 <b>Returns:</b>
 
-`void`
+void
 
 

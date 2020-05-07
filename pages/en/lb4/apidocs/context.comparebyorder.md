@@ -25,13 +25,13 @@ export declare function compareByOrder(a: string | symbol | undefined | null, b:
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  a | <code>string &#124; symbol &#124; undefined &#124; null</code> | First value |
-|  b | <code>string &#124; symbol &#124; undefined &#124; null</code> | Second value |
-|  order | <code>(string &#124; symbol)[]</code> | An array of values as the predefined order |
+|  a | string \| symbol \| undefined \| null | First value |
+|  b | string \| symbol \| undefined \| null | Second value |
+|  order | (string \| symbol)\[\] | An array of values as the predefined order |
 
 <b>Returns:</b>
 
-`number`
+number
 
 ## Remarks
 

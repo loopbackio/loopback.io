@@ -25,7 +25,7 @@ constructor(application: Application, options?: MetricsOptions);
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  application | <code>Application</code> |  |
-|  options | <code>MetricsOptions</code> |  |
+|  application | [Application](./core.application.md) |  |
+|  options | [MetricsOptions](./extension-metrics.metricsoptions.md) |  |
 
 

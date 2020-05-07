@@ -25,12 +25,12 @@ export declare function buildLookupMap<Key, InType, OutType = InType>(list: InTy
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  list | <code>InType[]</code> | an array of instances |
-|  keyName | <code>StringKeyOf&lt;InType&gt;</code> | key name of the source |
-|  reducer | <code>(accumulator: OutType &#124; undefined, current: InType) =&gt; OutType</code> | a strategy to reduce inputs to single item or array |
+|  list | InType\[\] | an array of instances |
+|  keyName | [StringKeyOf](./repository.stringkeyof.md)<!-- -->&lt;InType&gt; | key name of the source |
+|  reducer | (accumulator: OutType \| undefined, current: InType) =&gt; OutType | a strategy to reduce inputs to single item or array |
 
 <b>Returns:</b>
 
-`Map<Key, OutType>`
+Map&lt;Key, OutType&gt;
 
 

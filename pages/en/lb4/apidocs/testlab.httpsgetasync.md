@@ -25,11 +25,11 @@ export declare function httpsGetAsync(urlString: string, agent?: https.Agent): P
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  urlString | <code>string</code> |  |
-|  agent | <code>https.Agent</code> |  |
+|  urlString | string |  |
+|  agent | https.Agent |  |
 
 <b>Returns:</b>
 
-`Promise<IncomingMessage>`
+Promise&lt;IncomingMessage&gt;
 
 

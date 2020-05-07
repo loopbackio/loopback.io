@@ -22,6 +22,6 @@ export declare function aComponentsSpec(): ComponentsSpecBuilder;
 ```
 <b>Returns:</b>
 
-`ComponentsSpecBuilder`
+[ComponentsSpecBuilder](./openapi-spec-builder.componentsspecbuilder.md)
 
 

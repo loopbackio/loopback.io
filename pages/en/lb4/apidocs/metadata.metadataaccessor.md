@@ -25,7 +25,7 @@ export declare class MetadataAccessor<T, D extends DecoratorType = DecoratorType
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [key](./metadata.metadataaccessor.key.md) |  | <code>string</code> |  |
+|  [key](./metadata.metadataaccessor.key.md) |  | string |  |
 
 ## Methods
 

@@ -22,6 +22,6 @@ protected setupShutdown(): (signal: string) => Promise<void>;
 ```
 <b>Returns:</b>
 
-`(signal: string) => Promise<void>`
+(signal: string) =&gt; Promise&lt;void&gt;
 
 

@@ -25,6 +25,6 @@ constructor(value: ResolutionSession);
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  value | <code>ResolutionSession</code> |  |
+|  value | [ResolutionSession](./context.resolutionsession.md) |  |
 
 

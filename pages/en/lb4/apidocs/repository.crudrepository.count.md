@@ -25,12 +25,12 @@ count(where?: Where<T>, options?: Options): Promise<Count>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  where | <code>Where&lt;T&gt;</code> | Matching criteria |
-|  options | <code>Options</code> | Options for the operations |
+|  where | [Where](./repository.where.md)<!-- -->&lt;T&gt; | Matching criteria |
+|  options | [Options](./repository.options.md) | Options for the operations |
 
 <b>Returns:</b>
 
-`Promise<Count>`
+Promise&lt;[Count](./repository.count.md)<!-- -->&gt;
 
 A promise of number of records matched
 

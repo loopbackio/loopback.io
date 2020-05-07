@@ -23,6 +23,6 @@ export interface HasOneRepositoryFactory<Target extends Entity, ForeignKeyType>
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [inclusionResolver](./repository.hasonerepositoryfactory.inclusionresolver.md) | <code>InclusionResolver&lt;Entity, Target&gt;</code> | Use <code>resolver</code> property to obtain an InclusionResolver for this relation. |
+|  [inclusionResolver](./repository.hasonerepositoryfactory.inclusionresolver.md) | [InclusionResolver](./repository.inclusionresolver.md)<!-- -->&lt;[Entity](./repository.entity.md)<!-- -->, Target&gt; | Use <code>resolver</code> property to obtain an InclusionResolver for this relation. |
 
 

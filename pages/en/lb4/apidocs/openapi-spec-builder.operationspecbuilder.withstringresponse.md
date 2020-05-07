@@ -23,10 +23,10 @@ withStringResponse(status?: number | 'default'): this;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  status | <code>number &#124; 'default'</code> |  |
+|  status | number \| 'default' |  |
 
 <b>Returns:</b>
 
-`this`
+this
 
 

@@ -25,7 +25,7 @@ constructor(_router?: RestRouter, _externalRoutes?: ExternalExpressRoutes | unde
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  \_router | <code>RestRouter</code> |  |
-|  \_externalRoutes | <code>ExternalExpressRoutes &#124; undefined</code> |  |
+|  \_router | [RestRouter](./rest.restrouter.md) |  |
+|  \_externalRoutes | ExternalExpressRoutes \| undefined |  |
 
 

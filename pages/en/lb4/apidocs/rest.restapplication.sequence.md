@@ -23,10 +23,10 @@ sequence(sequence: Constructor<SequenceHandler>): Binding;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  sequence | <code>Constructor&lt;SequenceHandler&gt;</code> |  |
+|  sequence | [Constructor](./context.constructor.md)<!-- -->&lt;[SequenceHandler](./rest.sequencehandler.md)<!-- -->&gt; |  |
 
 <b>Returns:</b>
 
-`Binding`
+[Binding](./context.binding.md)
 
 

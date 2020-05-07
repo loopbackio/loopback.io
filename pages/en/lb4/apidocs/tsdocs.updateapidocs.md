@@ -25,10 +25,10 @@ export declare function updateApiDocs(options?: ApiDocsOptions): Promise<void>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  options | <code>ApiDocsOptions</code> | Options for api docs |
+|  options | [ApiDocsOptions](./tsdocs.apidocsoptions.md) | Options for api docs |
 
 <b>Returns:</b>
 
-`Promise<void>`
+Promise&lt;void&gt;
 
 

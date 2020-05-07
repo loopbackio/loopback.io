@@ -25,10 +25,10 @@ static isRedirectRoute(obj: any): obj is RedirectRoute;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  obj | <code>any</code> |  |
+|  obj | any |  |
 
 <b>Returns:</b>
 
-`obj is RedirectRoute`
+obj is [RedirectRoute](./rest.redirectroute.md)
 
 

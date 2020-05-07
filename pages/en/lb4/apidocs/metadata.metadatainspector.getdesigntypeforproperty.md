@@ -25,11 +25,11 @@ static getDesignTypeForProperty(target: Object, propertyName: string): Function;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  target | <code>Object</code> | Class or prototype |
-|  propertyName | <code>string</code> | Property name |
+|  target | Object | Class or prototype |
+|  propertyName | string | Property name |
 
 <b>Returns:</b>
 
-`Function`
+Function
 
 

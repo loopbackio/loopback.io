@@ -25,12 +25,12 @@ export declare function bindModel<T extends juggler.ModelBaseClass>(modelClass: 
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  modelClass | <code>T</code> | Model class |
-|  ds | <code>juggler.DataSource</code> | Data source |
+|  modelClass | T | Model class |
+|  ds | juggler.DataSource | Data source |
 
 <b>Returns:</b>
 
-`T`
+T
 
 {<!-- -->} The new model class with DAO (CRUD) operations
 

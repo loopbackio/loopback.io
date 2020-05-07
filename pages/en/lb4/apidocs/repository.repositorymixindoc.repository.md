@@ -25,11 +25,11 @@ repository(repo: Class<Repository<any>>): Binding;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  repo | <code>Class&lt;Repository&lt;any&gt;&gt;</code> | The repository to add. |
+|  repo | [Class](./repository.class.md)<!-- -->&lt;[Repository](./repository.repository.md)<!-- -->&lt;any&gt;&gt; | The repository to add. |
 
 <b>Returns:</b>
 
-`Binding`
+[Binding](./context.binding.md)
 
 ## Example
 

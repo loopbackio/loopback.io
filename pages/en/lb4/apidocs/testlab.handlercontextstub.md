@@ -23,8 +23,8 @@ export interface HandlerContextStub
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [request](./testlab.handlercontextstub.request.md) | <code>IncomingMessage</code> |  |
-|  [response](./testlab.handlercontextstub.response.md) | <code>ServerResponse</code> |  |
-|  [result](./testlab.handlercontextstub.result.md) | <code>Promise&lt;ObservedResponse&gt;</code> |  |
+|  [request](./testlab.handlercontextstub.request.md) | IncomingMessage |  |
+|  [response](./testlab.handlercontextstub.response.md) | ServerResponse |  |
+|  [result](./testlab.handlercontextstub.result.md) | Promise&lt;[ObservedResponse](./testlab.observedresponse.md)<!-- -->&gt; |  |
 
 

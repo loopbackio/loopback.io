@@ -25,14 +25,14 @@ set(modelClass: Class<Entity>, key: string, value: EntityData, options?: Options
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  modelClass | <code>Class&lt;Entity&gt;</code> | Model class |
-|  key | <code>string</code> | Key for the entry |
-|  value | <code>EntityData</code> | Value for the entry |
-|  options | <code>Options</code> | Options for the operation |
+|  modelClass | [Class](./repository.class.md)<!-- -->&lt;[Entity](./repository.entity.md)<!-- -->&gt; | Model class |
+|  key | string | Key for the entry |
+|  value | [EntityData](./repository.entitydata.md) | Value for the entry |
+|  options | [Options](./repository.options.md) | Options for the operation |
 
 <b>Returns:</b>
 
-`Promise<boolean>`
+Promise&lt;boolean&gt;
 
 Promise<true> if an entry is set for the key, otherwise Promise<false>
 

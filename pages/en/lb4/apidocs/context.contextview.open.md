@@ -22,6 +22,6 @@ open(): Subscription | undefined;
 ```
 <b>Returns:</b>
 
-`Subscription | undefined`
+[Subscription](./context.subscription.md) \| undefined
 
 

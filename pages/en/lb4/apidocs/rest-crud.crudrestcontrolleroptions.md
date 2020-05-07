@@ -25,6 +25,6 @@ export interface CrudRestControllerOptions
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [basePath](./rest-crud.crudrestcontrolleroptions.basepath.md) | <code>string</code> | The base path where to "mount" the controller. |
+|  [basePath](./rest-crud.crudrestcontrolleroptions.basepath.md) | string | The base path where to "mount" the controller. |
 
 

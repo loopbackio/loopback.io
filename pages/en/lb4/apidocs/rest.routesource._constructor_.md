@@ -25,6 +25,6 @@ constructor(value: RouteEntry);
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  value | <code>RouteEntry</code> |  |
+|  value | [RouteEntry](./rest.routeentry.md) |  |
 
 

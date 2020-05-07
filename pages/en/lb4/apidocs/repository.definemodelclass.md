@@ -25,12 +25,12 @@ export declare function defineModelClass<BaseCtor extends typeof Model, Props ex
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  base | <code>BaseCtor</code> | The base model to extend, typically Model or Entity. You can also use your own base class, e.g. <code>User</code>. |
-|  definition | <code>ModelDefinition</code> | Definition of the model to create. |
+|  base | BaseCtor | The base model to extend, typically Model or Entity. You can also use your own base class, e.g. <code>User</code>. |
+|  definition | [ModelDefinition](./repository.modeldefinition.md) | Definition of the model to create. |
 
 <b>Returns:</b>
 
-`DynamicModelCtor<BaseCtor, Props>`
+[DynamicModelCtor](./repository.dynamicmodelctor.md)<!-- -->&lt;BaseCtor, Props&gt;
 
 ## Remarks
 

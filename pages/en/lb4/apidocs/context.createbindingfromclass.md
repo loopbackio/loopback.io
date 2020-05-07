@@ -25,11 +25,11 @@ export declare function createBindingFromClass<T>(cls: Constructor<T | Provider<
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  cls | <code>Constructor&lt;T &#124; Provider&lt;T&gt;&gt;</code> | A class. It can be either a plain class or a value provider class |
-|  options | <code>BindingFromClassOptions</code> | Options to customize the binding key |
+|  cls | [Constructor](./context.constructor.md)<!-- -->&lt;T \| [Provider](./context.provider.md)<!-- -->&lt;T&gt;&gt; | A class. It can be either a plain class or a value provider class |
+|  options | [BindingFromClassOptions](./context.bindingfromclassoptions.md) | Options to customize the binding key |
 
 <b>Returns:</b>
 
-`Binding<T>`
+[Binding](./context.binding.md)<!-- -->&lt;T&gt;
 
 

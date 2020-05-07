@@ -25,13 +25,13 @@ export declare function createProxyWithInterceptors<T extends object>(target: T,
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  target | <code>T</code> | Target class or object |
-|  context | <code>Context</code> | Context object |
-|  session | <code>ResolutionSession</code> | Resolution session |
-|  source | <code>InvocationSource</code> | Invocation source |
+|  target | T | Target class or object |
+|  context | [Context](./context.context.md) | Context object |
+|  session | [ResolutionSession](./context.resolutionsession.md) | Resolution session |
+|  source | [InvocationSource](./context.invocationsource.md) | Invocation source |
 
 <b>Returns:</b>
 
-`AsyncProxy<T>`
+[AsyncProxy](./context.asyncproxy.md)<!-- -->&lt;T&gt;
 
 

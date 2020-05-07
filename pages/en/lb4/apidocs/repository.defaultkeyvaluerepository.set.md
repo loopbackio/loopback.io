@@ -23,12 +23,12 @@ set(key: string, value: DataObject<T>, options?: Options): Promise<void>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  key | <code>string</code> |  |
-|  value | <code>DataObject&lt;T&gt;</code> |  |
-|  options | <code>Options</code> |  |
+|  key | string |  |
+|  value | [DataObject](./repository.dataobject.md)<!-- -->&lt;T&gt; |  |
+|  options | [Options](./repository.options.md) |  |
 
 <b>Returns:</b>
 
-`Promise<void>`
+Promise&lt;void&gt;
 
 

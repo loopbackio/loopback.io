@@ -29,7 +29,7 @@ export declare class BuilderBase<T extends ISpecificationExtension>
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [\_spec](./openapi-spec-builder.builderbase._spec.md) |  | <code>T</code> |  |
+|  [\_spec](./openapi-spec-builder.builderbase._spec.md) |  | T |  |
 
 ## Methods
 

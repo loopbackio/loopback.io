@@ -20,7 +20,7 @@ value(): AuthenticateFn;
 ```
 <b>Returns:</b>
 
-`AuthenticateFn`
+[AuthenticateFn](./authentication.authenticatefn.md)
 
 authenticateFn
 

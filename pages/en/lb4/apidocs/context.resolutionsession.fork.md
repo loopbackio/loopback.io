@@ -25,10 +25,10 @@ static fork(session?: ResolutionSession): ResolutionSession | undefined;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  session | <code>ResolutionSession</code> | The current session |
+|  session | [ResolutionSession](./context.resolutionsession.md) | The current session |
 
 <b>Returns:</b>
 
-`ResolutionSession | undefined`
+[ResolutionSession](./context.resolutionsession.md) \| undefined
 
 

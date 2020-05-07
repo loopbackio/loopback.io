@@ -25,10 +25,10 @@ export declare function isBsonType(value: unknown): value is object;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  value | <code>unknown</code> |  |
+|  value | unknown |  |
 
 <b>Returns:</b>
 
-`value is object`
+value is object
 
 

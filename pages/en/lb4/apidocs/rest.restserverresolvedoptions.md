@@ -23,16 +23,16 @@ export interface RestServerResolvedOptions
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [apiExplorer](./rest.restserverresolvedoptions.apiexplorer.md) | <code>ApiExplorerOptions</code> |  |
-|  [basePath](./rest.restserverresolvedoptions.basepath.md) | <code>string</code> | Base path for API/static routes |
-|  [cors](./rest.restserverresolvedoptions.cors.md) | <code>cors.CorsOptions</code> |  |
-|  [expressSettings](./rest.restserverresolvedoptions.expresssettings.md) | <code>{</code><br/><code>        [name: string]: any;</code><br/><code>    }</code> |  |
-|  [listenOnStart](./rest.restserverresolvedoptions.listenonstart.md) | <code>boolean</code> | Set this flag to <code>false</code> to not listen on connections when the REST server is started. It's useful to mount a LoopBack REST server as a route to the facade Express application. If not set, the value is default to <code>true</code>. |
-|  [openApiSpec](./rest.restserverresolvedoptions.openapispec.md) | <code>OpenApiSpecOptions</code> |  |
-|  [path](./rest.restserverresolvedoptions.path.md) | <code>string</code> |  |
-|  [port](./rest.restserverresolvedoptions.port.md) | <code>number</code> |  |
-|  [requestBodyParser](./rest.restserverresolvedoptions.requestbodyparser.md) | <code>RequestBodyParserOptions</code> |  |
-|  [router](./rest.restserverresolvedoptions.router.md) | <code>RestRouterOptions</code> |  |
-|  [sequence](./rest.restserverresolvedoptions.sequence.md) | <code>Constructor&lt;SequenceHandler&gt;</code> |  |
+|  [apiExplorer](./rest.restserverresolvedoptions.apiexplorer.md) | [ApiExplorerOptions](./rest.apiexploreroptions.md) |  |
+|  [basePath](./rest.restserverresolvedoptions.basepath.md) | string | Base path for API/static routes |
+|  [cors](./rest.restserverresolvedoptions.cors.md) | cors.CorsOptions |  |
+|  [expressSettings](./rest.restserverresolvedoptions.expresssettings.md) | { \[name: string\]: any; } |  |
+|  [listenOnStart](./rest.restserverresolvedoptions.listenonstart.md) | boolean | Set this flag to <code>false</code> to not listen on connections when the REST server is started. It's useful to mount a LoopBack REST server as a route to the facade Express application. If not set, the value is default to <code>true</code>. |
+|  [openApiSpec](./rest.restserverresolvedoptions.openapispec.md) | [OpenApiSpecOptions](./rest.openapispecoptions.md) |  |
+|  [path](./rest.restserverresolvedoptions.path.md) | string |  |
+|  [port](./rest.restserverresolvedoptions.port.md) | number |  |
+|  [requestBodyParser](./rest.restserverresolvedoptions.requestbodyparser.md) | [RequestBodyParserOptions](./rest.requestbodyparseroptions.md) |  |
+|  [router](./rest.restserverresolvedoptions.router.md) | [RestRouterOptions](./rest.restrouteroptions.md) |  |
+|  [sequence](./rest.restserverresolvedoptions.sequence.md) | [Constructor](./context.constructor.md)<!-- -->&lt;[SequenceHandler](./rest.sequencehandler.md)<!-- -->&gt; |  |
 
 

@@ -25,6 +25,6 @@ constructor(...args: any[]);
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  args | <code>any[]</code> |  |
+|  args | any\[\] |  |
 
 

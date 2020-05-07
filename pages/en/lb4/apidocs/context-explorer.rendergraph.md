@@ -28,11 +28,11 @@ export declare function renderGraph(graph: string, options?: {
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  graph | <code>string</code> | A graph in dot format |
-|  options | <code>{</code><br/><code>    engine?: string;</code><br/><code>    format?: string;</code><br/><code>}</code> | Options for the rendering |
+|  graph | string | A graph in dot format |
+|  options | { engine?: string; format?: string; } | Options for the rendering |
 
 <b>Returns:</b>
 
-`Promise<string>`
+Promise&lt;string&gt;
 
 

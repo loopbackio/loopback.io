@@ -23,10 +23,10 @@ function missingRequired(name: string): HttpErrors.HttpError;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  name | <code>string</code> |  |
+|  name | string |  |
 
 <b>Returns:</b>
 
-`HttpErrors.HttpError`
+HttpErrors.HttpError
 
 

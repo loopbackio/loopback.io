@@ -25,8 +25,8 @@ export interface ApplicationMetadata extends JSONObject
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [description](./core.applicationmetadata.description.md) | <code>string</code> |  |
-|  [name](./core.applicationmetadata.name.md) | <code>string</code> |  |
-|  [version](./core.applicationmetadata.version.md) | <code>string</code> |  |
+|  [description](./core.applicationmetadata.description.md) | string |  |
+|  [name](./core.applicationmetadata.name.md) | string |  |
+|  [version](./core.applicationmetadata.version.md) | string |  |
 
 

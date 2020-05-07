@@ -25,12 +25,12 @@ static getClassMetadata<T>(key: MetadataKey<T, ClassDecorator>, target: Function
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  key | <code>MetadataKey&lt;T, ClassDecorator&gt;</code> | Metadata key |
-|  target | <code>Function</code> | Class that contains the metadata |
-|  options | <code>InspectionOptions</code> | Options for inspection |
+|  key | [MetadataKey](./metadata.metadatakey.md)<!-- -->&lt;T, ClassDecorator&gt; | Metadata key |
+|  target | Function | Class that contains the metadata |
+|  options | [InspectionOptions](./metadata.inspectionoptions.md) | Options for inspection |
 
 <b>Returns:</b>
 
-`T | undefined`
+T \| undefined
 
 

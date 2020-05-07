@@ -31,13 +31,13 @@ export declare class Context extends EventEmitter
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [\_debug](./context.context._debug.md) |  | <code>Debugger</code> | A debug function which can be overridden by subclasses. |
-|  [\_parent](./context.context._parent.md) |  | <code>Context</code> | Parent context |
-|  [configResolver](./context.context.configresolver.md) |  | <code>ConfigurationResolver</code> | Configuration resolver |
-|  [name](./context.context.name.md) |  | <code>string</code> | Name of the context |
-|  [registry](./context.context.registry.md) |  | <code>Map&lt;string, Binding&gt;</code> | Key to binding map as the internal registry |
-|  [subscriptionManager](./context.context.subscriptionmanager.md) |  | <code>ContextSubscriptionManager</code> | Manager for observer subscriptions |
-|  [tagIndexer](./context.context.tagindexer.md) |  | <code>ContextTagIndexer</code> | Indexer for bindings by tag |
+|  [\_debug](./context.context._debug.md) |  | Debugger | A debug function which can be overridden by subclasses. |
+|  [\_parent](./context.context._parent.md) |  | [Context](./context.context.md) | Parent context |
+|  [configResolver](./context.context.configresolver.md) |  | [ConfigurationResolver](./context.configurationresolver.md) | Configuration resolver |
+|  [name](./context.context.name.md) |  | string | Name of the context |
+|  [registry](./context.context.registry.md) |  | Map&lt;string, [Binding](./context.binding.md)<!-- -->&gt; | Key to binding map as the internal registry |
+|  [subscriptionManager](./context.context.subscriptionmanager.md) |  | [ContextSubscriptionManager](./context.contextsubscriptionmanager.md) | Manager for observer subscriptions |
+|  [tagIndexer](./context.context.tagindexer.md) |  | ContextTagIndexer | Indexer for bindings by tag |
 
 ## Methods
 

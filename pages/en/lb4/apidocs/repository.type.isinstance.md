@@ -25,10 +25,10 @@ isInstance(value: any): boolean;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  value | <code>any</code> | The value |
+|  value | any | The value |
 
 <b>Returns:</b>
 
-`boolean`
+boolean
 
 

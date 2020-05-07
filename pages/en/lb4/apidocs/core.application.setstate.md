@@ -25,10 +25,10 @@ protected setState(state: string): void;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  state | <code>string</code> | The new state |
+|  state | string | The new state |
 
 <b>Returns:</b>
 
-`void`
+void
 
 

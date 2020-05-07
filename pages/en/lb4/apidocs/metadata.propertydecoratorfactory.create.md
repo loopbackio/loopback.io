@@ -20,6 +20,6 @@ create(): PropertyDecorator;
 ```
 <b>Returns:</b>
 
-`PropertyDecorator`
+PropertyDecorator
 
 

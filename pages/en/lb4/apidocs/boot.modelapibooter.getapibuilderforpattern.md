@@ -25,10 +25,10 @@ getApiBuilderForPattern(pattern: string): Promise<ModelApiBuilder>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  pattern | <code>string</code> | name of pattern for an API builder |
+|  pattern | string | name of pattern for an API builder |
 
 <b>Returns:</b>
 
-`Promise<ModelApiBuilder>`
+Promise&lt;[ModelApiBuilder](./model-api-builder.modelapibuilder.md)<!-- -->&gt;
 
 

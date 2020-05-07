@@ -22,7 +22,7 @@ export declare function logInvocation(): (target: any, method?: string | undefin
 ```
 <b>Returns:</b>
 
-`(target: any, method?: string | undefined, methodDescriptor?: TypedPropertyDescriptor<any> | undefined) => any`
+(target: any, method?: string \| undefined, methodDescriptor?: TypedPropertyDescriptor&lt;any&gt; \| undefined) =&gt; any
 
 ## Example
 

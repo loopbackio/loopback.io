@@ -23,9 +23,9 @@ export interface ExpressContextStub extends HandlerContextStub
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [app](./testlab.expresscontextstub.app.md) | <code>express.Application</code> |  |
-|  [request](./testlab.expresscontextstub.request.md) | <code>express.Request</code> |  |
-|  [response](./testlab.expresscontextstub.response.md) | <code>express.Response</code> |  |
-|  [result](./testlab.expresscontextstub.result.md) | <code>Promise&lt;ObservedResponse&gt;</code> |  |
+|  [app](./testlab.expresscontextstub.app.md) | express.Application |  |
+|  [request](./testlab.expresscontextstub.request.md) | express.Request |  |
+|  [response](./testlab.expresscontextstub.response.md) | express.Response |  |
+|  [result](./testlab.expresscontextstub.result.md) | Promise&lt;[ObservedResponse](./testlab.observedresponse.md)<!-- -->&gt; |  |
 
 

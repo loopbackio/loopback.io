@@ -25,11 +25,11 @@ export declare function referencesOne(definition?: Object): PropertyDecorator;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  definition | <code>Object</code> |  |
+|  definition | Object |  |
 
 <b>Returns:</b>
 
-`PropertyDecorator`
+PropertyDecorator
 
 A property decorator
 

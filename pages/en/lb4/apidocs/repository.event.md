@@ -25,7 +25,7 @@ export declare class Event
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [source](./repository.event.source.md) |  | <code>any</code> |  |
-|  [type](./repository.event.type.md) |  | <code>string</code> |  |
+|  [source](./repository.event.source.md) |  | any |  |
+|  [type](./repository.event.type.md) |  | string |  |
 
 

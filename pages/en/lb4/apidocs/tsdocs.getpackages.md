@@ -25,10 +25,10 @@ export declare function getPackages(rootDir?: string): Promise<LernaPackage[]>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  rootDir | <code>string</code> | Root directory to find lerna.json |
+|  rootDir | string | Root directory to find lerna.json |
 
 <b>Returns:</b>
 
-`Promise<LernaPackage[]>`
+Promise&lt;[LernaPackage](./tsdocs.lernapackage.md)<!-- -->\[\]&gt;
 
 

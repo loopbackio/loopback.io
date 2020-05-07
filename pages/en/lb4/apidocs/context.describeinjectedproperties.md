@@ -25,10 +25,10 @@ export declare function describeInjectedProperties(target: Object): MetadataMap<
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  target | <code>Object</code> | The target class for static properties or prototype for instance properties. |
+|  target | Object | The target class for static properties or prototype for instance properties. |
 
 <b>Returns:</b>
 
-`MetadataMap<Readonly<Injection>>`
+[MetadataMap](./metadata.metadatamap.md)<!-- -->&lt;Readonly&lt;[Injection](./context.injection.md)<!-- -->&gt;&gt;
 
 

@@ -23,10 +23,10 @@ modifySpec(spec: OpenApiSpec): OpenApiSpec;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  spec | <code>OpenApiSpec</code> |  |
+|  spec | [OpenApiSpec](./openapi-v3.openapispec.md) |  |
 
 <b>Returns:</b>
 
-`OpenApiSpec`
+[OpenApiSpec](./openapi-v3.openapispec.md)
 
 

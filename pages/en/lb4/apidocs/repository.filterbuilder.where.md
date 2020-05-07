@@ -25,10 +25,10 @@ where(w: Where<MT>): this;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  w | <code>Where&lt;MT&gt;</code> | Where object |
+|  w | [Where](./repository.where.md)<!-- -->&lt;MT&gt; | Where object |
 
 <b>Returns:</b>
 
-`this`
+this
 
 

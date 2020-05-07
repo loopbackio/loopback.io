@@ -25,7 +25,7 @@ export declare class Trie<T>
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [root](./rest.trie.root.md) |  | <code>Node&lt;T&gt;</code> |  |
+|  [root](./rest.trie.root.md) |  | [Node](./rest.node.md)<!-- -->&lt;T&gt; |  |
 
 ## Methods
 

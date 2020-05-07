@@ -25,6 +25,6 @@ export interface ContextInspectOptions extends BindingInspectOptions
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [includeParent](./context.contextinspectoptions.includeparent.md) | <code>boolean</code> | The flag to control if parent context should be inspected |
+|  [includeParent](./context.contextinspectoptions.includeparent.md) | boolean | The flag to control if parent context should be inspected |
 
 

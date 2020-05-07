@@ -35,10 +35,10 @@ export declare class AuthenticateActionProvider implements Provider<Authenticate
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [getStrategy](./authentication.authenticateactionprovider.getstrategy.md) |  | <code>Getter&lt;AuthenticationStrategy&gt;</code> |  |
-|  [setCurrentUser](./authentication.authenticateactionprovider.setcurrentuser.md) |  | <code>Setter&lt;UserProfile&gt;</code> |  |
-|  [setRedirectStatus](./authentication.authenticateactionprovider.setredirectstatus.md) |  | <code>Setter&lt;number&gt;</code> |  |
-|  [setRedirectUrl](./authentication.authenticateactionprovider.setredirecturl.md) |  | <code>Setter&lt;string&gt;</code> |  |
+|  [getStrategy](./authentication.authenticateactionprovider.getstrategy.md) |  | [Getter](./context.getter.md)<!-- -->&lt;[AuthenticationStrategy](./authentication.authenticationstrategy.md)<!-- -->&gt; |  |
+|  [setCurrentUser](./authentication.authenticateactionprovider.setcurrentuser.md) |  | [Setter](./context.setter.md)<!-- -->&lt;[UserProfile](./security.userprofile.md)<!-- -->&gt; |  |
+|  [setRedirectStatus](./authentication.authenticateactionprovider.setredirectstatus.md) |  | [Setter](./context.setter.md)<!-- -->&lt;number&gt; |  |
+|  [setRedirectUrl](./authentication.authenticateactionprovider.setredirecturl.md) |  | [Setter](./context.setter.md)<!-- -->&lt;string&gt; |  |
 
 ## Methods
 

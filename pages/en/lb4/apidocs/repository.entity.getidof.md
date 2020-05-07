@@ -25,10 +25,10 @@ static getIdOf(entityOrData: AnyObject): any;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  entityOrData | <code>AnyObject</code> | The data object for which to determine the identity value. |
+|  entityOrData | [AnyObject](./repository.anyobject.md) | The data object for which to determine the identity value. |
 
 <b>Returns:</b>
 
-`any`
+any
 
 

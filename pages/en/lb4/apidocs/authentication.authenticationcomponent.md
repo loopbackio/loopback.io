@@ -29,6 +29,6 @@ export declare class AuthenticationComponent implements Component
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [providers](./authentication.authenticationcomponent.providers.md) |  | <code>ProviderMap</code> |  |
+|  [providers](./authentication.authenticationcomponent.providers.md) |  | [ProviderMap](./core.providermap.md) |  |
 
 

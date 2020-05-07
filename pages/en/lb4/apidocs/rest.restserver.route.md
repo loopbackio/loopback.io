@@ -25,16 +25,16 @@ route<I>(verb: string, path: string, spec: OperationObject, controllerCtor: Cont
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  verb | <code>string</code> | HTTP verb of the endpoint |
-|  path | <code>string</code> | URL path of the endpoint |
-|  spec | <code>OperationObject</code> | The OpenAPI spec describing the endpoint (operation) |
-|  controllerCtor | <code>ControllerClass&lt;I&gt;</code> | Controller constructor |
-|  controllerFactory | <code>ControllerFactory&lt;I&gt;</code> | A factory function to create controller instance |
-|  methodName | <code>string</code> | The name of the controller method |
+|  verb | string | HTTP verb of the endpoint |
+|  path | string | URL path of the endpoint |
+|  spec | OperationObject | The OpenAPI spec describing the endpoint (operation) |
+|  controllerCtor | [ControllerClass](./rest.controllerclass.md)<!-- -->&lt;I&gt; | Controller constructor |
+|  controllerFactory | [ControllerFactory](./rest.controllerfactory.md)<!-- -->&lt;I&gt; | A factory function to create controller instance |
+|  methodName | string | The name of the controller method |
 
 <b>Returns:</b>
 
-`Binding`
+[Binding](./context.binding.md)
 
 ## Example
 

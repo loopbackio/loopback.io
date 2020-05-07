@@ -25,11 +25,11 @@ addSetting(name: string, value: any): this;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  name | <code>string</code> | Setting name |
-|  value | <code>any</code> | Setting value |
+|  name | string | Setting name |
+|  value | any | Setting value |
 
 <b>Returns:</b>
 
-`this`
+this
 
 

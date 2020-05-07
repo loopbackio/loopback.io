@@ -22,6 +22,6 @@ defaultValue(): T | null | undefined;
 ```
 <b>Returns:</b>
 
-`T | null | undefined`
+T \| null \| undefined
 
 

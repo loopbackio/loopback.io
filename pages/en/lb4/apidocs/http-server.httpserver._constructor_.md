@@ -25,7 +25,7 @@ constructor(requestListener: RequestListener, serverOptions?: HttpServerOptions)
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  requestListener | <code>RequestListener</code> |  |
-|  serverOptions | <code>HttpServerOptions</code> |  |
+|  requestListener | [RequestListener](./http-server.requestlistener.md) |  |
+|  serverOptions | [HttpServerOptions](./http-server.httpserveroptions.md) |  |
 
 

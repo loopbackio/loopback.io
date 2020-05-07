@@ -25,6 +25,6 @@ constructor(itemTypes: Type<any>[]);
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  itemTypes | <code>Type&lt;any&gt;[]</code> |  |
+|  itemTypes | [Type](./repository.type.md)<!-- -->&lt;any&gt;\[\] |  |
 
 

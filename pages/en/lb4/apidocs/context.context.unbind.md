@@ -25,11 +25,11 @@ unbind(key: BindingAddress): boolean;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  key | <code>BindingAddress</code> | Binding key |
+|  key | [BindingAddress](./context.bindingaddress.md) | Binding key |
 
 <b>Returns:</b>
 
-`boolean`
+boolean
 
 true if the binding key is found and removed from this context
 

@@ -25,10 +25,10 @@ export declare function createControllerFactoryForInstance<T>(controllerInst: T)
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  controllerInst | <code>T</code> |  |
+|  controllerInst | T |  |
 
 <b>Returns:</b>
 
-`ControllerFactory<T>`
+[ControllerFactory](./rest.controllerfactory.md)<!-- -->&lt;T&gt;
 
 

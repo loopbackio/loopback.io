@@ -25,10 +25,10 @@ export declare function includesTagValue(itemValue: unknown): TagValueMatcher;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  itemValue | <code>unknown</code> | Tag item value |
+|  itemValue | unknown | Tag item value |
 
 <b>Returns:</b>
 
-`TagValueMatcher`
+[TagValueMatcher](./context.tagvaluematcher.md)
 
 

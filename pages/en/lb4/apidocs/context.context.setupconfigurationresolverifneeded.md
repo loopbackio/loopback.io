@@ -22,6 +22,6 @@ protected setupConfigurationResolverIfNeeded(): ConfigurationResolver;
 ```
 <b>Returns:</b>
 
-`ConfigurationResolver`
+[ConfigurationResolver](./context.configurationresolver.md)
 
 

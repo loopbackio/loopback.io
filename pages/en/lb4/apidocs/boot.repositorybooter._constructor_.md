@@ -25,8 +25,8 @@ constructor(app: ApplicationWithRepositories, projectRoot: string, repositoryOpt
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  app | <code>ApplicationWithRepositories</code> |  |
-|  projectRoot | <code>string</code> |  |
-|  repositoryOptions | <code>ArtifactOptions</code> |  |
+|  app | [ApplicationWithRepositories](./repository.applicationwithrepositories.md) |  |
+|  projectRoot | string |  |
+|  repositoryOptions | [ArtifactOptions](./boot.artifactoptions.md) |  |
 
 

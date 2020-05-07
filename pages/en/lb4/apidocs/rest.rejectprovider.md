@@ -29,8 +29,8 @@ export declare class RejectProvider implements Provider<Reject>
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [errorWriterOptions](./rest.rejectprovider.errorwriteroptions.md) |  | <code>ErrorWriterOptions &#124; undefined</code> |  |
-|  [logError](./rest.rejectprovider.logerror.md) |  | <code>LogError</code> |  |
+|  [errorWriterOptions](./rest.rejectprovider.errorwriteroptions.md) |  | ErrorWriterOptions \| undefined |  |
+|  [logError](./rest.rejectprovider.logerror.md) |  | [LogError](./rest.logerror.md) |  |
 
 ## Methods
 

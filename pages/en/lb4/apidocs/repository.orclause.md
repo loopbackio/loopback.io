@@ -35,6 +35,6 @@ export interface OrClause<MT extends object>
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [or](./repository.orclause.or.md) | <code>Where&lt;MT&gt;[]</code> |  |
+|  [or](./repository.orclause.or.md) | [Where](./repository.where.md)<!-- -->&lt;MT&gt;\[\] |  |
 
 

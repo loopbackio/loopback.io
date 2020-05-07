@@ -25,10 +25,10 @@ export interface ExtractorOptions extends ApiDocsOptions
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [apiReportEnabled](./tsdocs.extractoroptions.apireportenabled.md) | <code>boolean</code> | A flag to control if <code>apiReport</code> should be enabled |
-|  [config](./tsdocs.extractoroptions.config.md) | <code>IConfigFile</code> | Configuration for api-extractor |
-|  [mainEntryPointFilePath](./tsdocs.extractoroptions.mainentrypointfilepath.md) | <code>string</code> | mainEntryPointFilePath |
-|  [tsconfigFilePath](./tsdocs.extractoroptions.tsconfigfilepath.md) | <code>string</code> | Path for tsconfig |
-|  [typescriptCompilerFolder](./tsdocs.extractoroptions.typescriptcompilerfolder.md) | <code>string</code> | Custom TypeScript compiler dir |
+|  [apiReportEnabled](./tsdocs.extractoroptions.apireportenabled.md) | boolean | A flag to control if <code>apiReport</code> should be enabled |
+|  [config](./tsdocs.extractoroptions.config.md) | IConfigFile | Configuration for api-extractor |
+|  [mainEntryPointFilePath](./tsdocs.extractoroptions.mainentrypointfilepath.md) | string | mainEntryPointFilePath |
+|  [tsconfigFilePath](./tsdocs.extractoroptions.tsconfigfilepath.md) | string | Path for tsconfig |
+|  [typescriptCompilerFolder](./tsdocs.extractoroptions.typescriptcompilerfolder.md) | string | Custom TypeScript compiler dir |
 
 

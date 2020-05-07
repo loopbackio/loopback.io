@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository-json-schema.optional.html
 
 ## Optional type
 
-Optional  From `T` make a set of properties by key `K` become optional
+Optional: From `T` make a set of properties by key `K` become optional
 
 <b>Signature:</b>
 
@@ -23,10 +23,20 @@ export declare type Optional<T extends object, K extends keyof T = keyof T> = Om
 
 ## Example
 
-type Props = { name: string; age: number; visible: boolean; }<!-- -->;
 
-// Expect: { name?: string; age?: number; visible?: boolean; } type Props = Optional<Props>;
+```ts
+type Props = {
+  name: string;
+  age: number;
+  visible: boolean;
+};
 
-// Expect: { name: string; age?: number; visible?: boolean; } type Props = Optional<!-- -->&lt;<!-- -->Props, 'age' \| 'visible'<!-- -->&gt;<!-- -->;
+// Expect: { name?: string; age?: number; visible?: boolean; }
+type Props = Optional<Props>;
+
+// Expect: { name: string; age?: number; visible?: boolean; }
+type Props = Optional<Props, 'age' | 'visible'>;
+
+```
 
 

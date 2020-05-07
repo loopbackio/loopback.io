@@ -31,7 +31,7 @@ export declare class RawBodyParser implements BodyParser
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [name](./rest.rawbodyparser.name.md) |  | <code>symbol</code> |  |
+|  [name](./rest.rawbodyparser.name.md) |  | symbol |  |
 
 ## Methods
 

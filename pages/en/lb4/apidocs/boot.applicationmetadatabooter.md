@@ -31,7 +31,7 @@ export declare class ApplicationMetadataBooter implements Booter
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [app](./boot.applicationmetadatabooter.app.md) |  | <code>Application</code> |  |
+|  [app](./boot.applicationmetadatabooter.app.md) |  | [Application](./core.application.md) |  |
 
 ## Methods
 

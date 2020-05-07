@@ -23,10 +23,10 @@ generateToken(userProfile: UserProfile): Promise<string>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  userProfile | <code>UserProfile</code> |  |
+|  userProfile | [UserProfile](./security.userprofile.md) |  |
 
 <b>Returns:</b>
 
-`Promise<string>`
+Promise&lt;string&gt;
 
 

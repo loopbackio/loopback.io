@@ -20,6 +20,6 @@ value(): LogError;
 ```
 <b>Returns:</b>
 
-`LogError`
+[LogError](./rest.logerror.md)
 
 

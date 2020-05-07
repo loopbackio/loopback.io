@@ -31,8 +31,8 @@ export declare class InfoSpecEnhancer implements OASEnhancer
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [name](./rest.infospecenhancer.name.md) |  | <code>string</code> |  |
-|  [pkg](./rest.infospecenhancer.pkg.md) |  | <code>ApplicationMetadata &#124; undefined</code> |  |
+|  [name](./rest.infospecenhancer.name.md) |  | string |  |
+|  [pkg](./rest.infospecenhancer.pkg.md) |  | [ApplicationMetadata](./core.applicationmetadata.md) \| undefined |  |
 
 ## Methods
 

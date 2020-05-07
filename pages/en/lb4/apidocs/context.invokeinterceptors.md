@@ -25,11 +25,11 @@ export declare function invokeInterceptors<C extends Context = Context, T = Invo
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  context | <code>C</code> | Context object |
-|  interceptors | <code>GenericInterceptorOrKey&lt;C&gt;[]</code> | An array of interceptor functions or binding keys |
+|  context | C | Context object |
+|  interceptors | [GenericInterceptorOrKey](./context.genericinterceptororkey.md)<!-- -->&lt;C&gt;\[\] | An array of interceptor functions or binding keys |
 
 <b>Returns:</b>
 
-`ValueOrPromise<T | undefined>`
+[ValueOrPromise](./context.valueorpromise.md)<!-- -->&lt;T \| undefined&gt;
 
 

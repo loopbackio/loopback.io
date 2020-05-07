@@ -23,10 +23,10 @@ mountComponentServices(component: Class<{}>): void;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  component | <code>Class&lt;{}&gt;</code> |  |
+|  component | [Class](./service-proxy.class.md)<!-- -->&lt;{}&gt; |  |
 
 <b>Returns:</b>
 
-`void`
+void
 
 

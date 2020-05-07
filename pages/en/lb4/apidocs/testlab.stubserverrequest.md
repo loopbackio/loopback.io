@@ -23,10 +23,10 @@ export declare function stubServerRequest(options: ShotRequestOptions): Incoming
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  options | <code>ShotRequestOptions</code> |  |
+|  options | ShotRequestOptions |  |
 
 <b>Returns:</b>
 
-`IncomingMessage`
+IncomingMessage
 
 

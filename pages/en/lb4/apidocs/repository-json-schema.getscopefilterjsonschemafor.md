@@ -27,11 +27,11 @@ export declare function getScopeFilterJsonSchemaFor(modelCtor: typeof Model, opt
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  modelCtor | <code>typeof Model</code> | The model constructor to build the filter schema for. |
-|  options | <code>FilterSchemaOptions</code> |  |
+|  modelCtor | typeof [Model](./repository.model.md) | The model constructor to build the filter schema for. |
+|  options | [FilterSchemaOptions](./repository-json-schema.filterschemaoptions.md) |  |
 
 <b>Returns:</b>
 
-`JsonSchema`
+JsonSchema
 
 

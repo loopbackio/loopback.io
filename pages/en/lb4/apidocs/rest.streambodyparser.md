@@ -25,7 +25,7 @@ export declare class StreamBodyParser implements BodyParser
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [name](./rest.streambodyparser.name.md) |  | <code>symbol</code> |  |
+|  [name](./rest.streambodyparser.name.md) |  | symbol |  |
 
 ## Methods
 

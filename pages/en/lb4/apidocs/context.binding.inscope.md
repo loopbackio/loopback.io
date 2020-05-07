@@ -25,10 +25,10 @@ inScope(scope: BindingScope): this;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  scope | <code>BindingScope</code> | Binding scope |
+|  scope | [BindingScope](./context.bindingscope.md) | Binding scope |
 
 <b>Returns:</b>
 
-`this`
+this
 
 

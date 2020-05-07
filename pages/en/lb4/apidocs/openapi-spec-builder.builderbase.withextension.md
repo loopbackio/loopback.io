@@ -25,11 +25,11 @@ withExtension(key: string, value: any): this;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  key | <code>string</code> | The property name starting with "x-". |
-|  value | <code>any</code> | The property value. |
+|  key | string | The property name starting with "x-". |
+|  value | any | The property value. |
 
 <b>Returns:</b>
 
-`this`
+this
 
 

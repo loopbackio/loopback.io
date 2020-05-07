@@ -25,14 +25,14 @@ ttl?(modelClass: Class<Entity>, key: string, ttl: number, options?: Options): Pr
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  modelClass | <code>Class&lt;Entity&gt;</code> | Model class |
-|  key | <code>string</code> | Key for the entry |
-|  ttl | <code>number</code> | Time to live in millisenconds |
-|  options | <code>Options</code> | Options for the operation |
+|  modelClass | [Class](./repository.class.md)<!-- -->&lt;[Entity](./repository.entity.md)<!-- -->&gt; | Model class |
+|  key | string | Key for the entry |
+|  ttl | number | Time to live in millisenconds |
+|  options | [Options](./repository.options.md) | Options for the operation |
 
 <b>Returns:</b>
 
-`Promise<number>`
+Promise&lt;number&gt;
 
 A promise of the TTL value
 

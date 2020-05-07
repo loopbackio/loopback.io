@@ -25,11 +25,11 @@ static getDesignTypeForMethod(target: Object, methodName: string): DesignTimeMet
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  target | <code>Object</code> | Class or prototype |
-|  methodName | <code>string</code> | Method name |
+|  target | Object | Class or prototype |
+|  methodName | string | Method name |
 
 <b>Returns:</b>
 
-`DesignTimeMethodMetadata`
+[DesignTimeMethodMetadata](./metadata.designtimemethodmetadata.md)
 
 

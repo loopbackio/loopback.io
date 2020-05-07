@@ -25,11 +25,11 @@ findOrCreateBinding<T>(key: BindingAddress<T>, policy?: BindingCreationPolicy): 
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  key | <code>BindingAddress&lt;T&gt;</code> | Binding address |
-|  policy | <code>BindingCreationPolicy</code> | Binding creation policy |
+|  key | [BindingAddress](./context.bindingaddress.md)<!-- -->&lt;T&gt; | Binding address |
+|  policy | [BindingCreationPolicy](./context.bindingcreationpolicy.md) | Binding creation policy |
 
 <b>Returns:</b>
 
-`Binding<T>`
+[Binding](./context.binding.md)<!-- -->&lt;T&gt;
 
 

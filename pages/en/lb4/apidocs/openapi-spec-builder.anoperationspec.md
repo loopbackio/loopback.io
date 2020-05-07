@@ -22,6 +22,6 @@ export declare function anOperationSpec(): OperationSpecBuilder;
 ```
 <b>Returns:</b>
 
-`OperationSpecBuilder`
+[OperationSpecBuilder](./openapi-spec-builder.operationspecbuilder.md)
 
 

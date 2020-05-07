@@ -54,6 +54,7 @@ permalink: /doc/en/lb4/apidocs.context.html
 |  [bindingTemplateFor(cls)](./context.bindingtemplatefor.md) | Get the binding template for a class with binding metadata |
 |  [compareBindingsByTag(phaseTagName, orderOfPhases)](./context.comparebindingsbytag.md) | Creates a binding compare function to sort bindings by tagged phase name. |
 |  [compareByOrder(a, b, order)](./context.comparebyorder.md) | Compare two values by the predefined order |
+|  [composeInterceptors(interceptors)](./context.composeinterceptors.md) | Compose a list of interceptors as a single interceptor |
 |  [config(propertyPath, metadata)](./context.config.md) | Inject a property from <code>config</code> of the current binding. If no corresponding config value is present, <code>undefined</code> will be injected as the configuration binding is resolved with <code>optional: true</code> by default. |
 |  [configBindingKeyFor(key, propertyPath)](./context.configbindingkeyfor.md) | Create binding key for configuration of the binding |
 |  [createBindingFromClass(cls, options)](./context.createbindingfromclass.md) | Create a binding from a class with decorated metadata. The class is attached to the binding as follows: - <code>binding.toClass(cls)</code>: if <code>cls</code> is a plain class such as <code>MyController</code> - <code>binding.toProvider(cls)</code>: it <code>cls</code> is a value provider class with a prototype method <code>value()</code> |
@@ -81,6 +82,7 @@ permalink: /doc/en/lb4/apidocs.context.html
 |  [isPromiseLike(value)](./context.ispromiselike.md) | Check whether a value is a Promise-like instance. Recognizes both native promises and third-party promise libraries. |
 |  [isProviderClass(cls)](./context.isproviderclass.md) | Check if a class implements <code>Provider</code> interface |
 |  [mergeInterceptors(interceptorsFromSpec, existingInterceptors)](./context.mergeinterceptors.md) | Adding interceptors from the spec to the front of existing ones. Duplicate entries are eliminated from the spec side.<!-- -->For example:<!-- -->- \[log\] + \[cache, log\] =<!-- -->&gt; \[cache, log\] - \[log\] + \[log, cache\] =<!-- -->&gt; \[log, cache\] - \[\] + \[cache, log\] =<!-- -->&gt; \[cache, log\] - \[cache, log\] + \[\] =<!-- -->&gt; \[cache, log\] - \[log\] + \[cache\] =<!-- -->&gt; \[log, cache\] |
+|  [registerInterceptor(ctx, interceptor, options)](./context.registerinterceptor.md) | Register an interceptor function or provider class to the given context |
 |  [removeNameAndKeyTags(binding)](./context.removenameandkeytags.md) | A binding template function to delete <code>name</code> and <code>key</code> tags |
 |  [resolveInjectedArguments(target, method, ctx, session, nonInjectedArgs)](./context.resolveinjectedarguments.md) | Given a function with arguments decorated with <code>@inject</code>, return the list of arguments resolved using the values bound in <code>ctx</code>.<!-- -->The function returns an argument array when all dependencies were resolved synchronously, or a Promise otherwise. |
 |  [resolveInjectedProperties(constructor, ctx, session)](./context.resolveinjectedproperties.md) | Given a class with properties decorated with <code>@inject</code>, return the map of properties resolved using the values bound in <code>ctx</code>.<!-- -->The function returns an argument array when all dependencies were resolved synchronously, or a Promise otherwise. |
@@ -90,6 +92,7 @@ permalink: /doc/en/lb4/apidocs.context.html
 |  [sortBindingsByPhase(bindings, phaseTagName, orderOfPhases)](./context.sortbindingsbyphase.md) | Sort bindings by phase names denoted by a tag and the predefined order |
 |  [transformValueOrPromise(valueOrPromise, transformer)](./context.transformvalueorpromise.md) | Transform a value or promise with a function that produces a new value or promise |
 |  [tryWithFinally(action, finalAction)](./context.trywithfinally.md) | Try to run an action that returns a promise or a value |
+|  [uuid()](./context.uuid.md) | A utility to generate uuid v4 |
 
 ## Interfaces
 
@@ -110,6 +113,7 @@ permalink: /doc/en/lb4/apidocs.context.html
 |  [InjectionElement](./context.injectionelement.md) | Wrapper for injections tracked by resolution sessions |
 |  [InjectionMetadata](./context.injectionmetadata.md) | An object to provide metadata for <code>@inject</code> |
 |  [Interceptor](./context.interceptor.md) | Interceptor function to intercept method invocations |
+|  [InterceptorBindingOptions](./context.interceptorbindingoptions.md) | Options for an interceptor binding |
 |  [InvocationSource](./context.invocationsource.md) | An interface to represent the caller of the invocation |
 |  [JSONArray](./context.jsonarray.md) | JSON array |
 |  [JSONObject](./context.jsonobject.md) | JSON object |
@@ -141,6 +145,8 @@ permalink: /doc/en/lb4/apidocs.context.html
 |  [GLOBAL\_INTERCEPTOR\_NAMESPACE](./context.global_interceptor_namespace.md) | Default namespace for global interceptors |
 |  [INTERCEPT\_CLASS\_KEY](./context.intercept_class_key.md) | Metadata key for method-level interceptors |
 |  [INTERCEPT\_METHOD\_KEY](./context.intercept_method_key.md) | Metadata key for method-level interceptors |
+|  [LOCAL\_INTERCEPTOR\_NAMESPACE](./context.local_interceptor_namespace.md) | Default namespace for local interceptors |
+|  [UUID\_PATTERN](./context.uuid_pattern.md) | A regular expression for testing uuid v4 PATTERN |
 
 ## Type Aliases
 
@@ -166,7 +172,25 @@ permalink: /doc/en/lb4/apidocs.context.html
 |  [ContextEventObserver](./context.contexteventobserver.md) | Context event observer type - An instance of <code>ContextObserver</code> or a function |
 |  [ContextEventType](./context.contexteventtype.md) | Context event types. We support <code>bind</code> and <code>unbind</code> for now but keep it open for new types |
 |  [ContextObserverFn](./context.contextobserverfn.md) | Listen on <code>bind</code>, <code>unbind</code>, or other events |
-|  [GenericInterceptor](./context.genericinterceptor.md) | An interceptor function to be invoked in a chain for the given context. It serves as the base interface for various types of interceptors, such as method invocation interceptor or request/response processing interceptor. |
+|  [GenericInterceptor](./context.genericinterceptor.md) | An interceptor function to be invoked in a chain for the given context. It serves as the base interface for various types of interceptors, such as method invocation interceptor or request/response processing interceptor.<!-- -->We choose <code>NonVoid</code> as the return type to avoid possible bugs that an interceptor forgets to return the value from <code>next()</code>. For example, the code below will fail to compile.
+```ts
+const myInterceptor: Interceptor = async (ctx, next) {
+  // preprocessing
+  // ...
+
+  // There is a subtle bug that the result from `next()` is not further
+  // returned back to the upstream interceptors
+  const result = await next();
+
+  // postprocessing
+  // ...
+  // We must have `return ...` here
+  // either return `result` or another value if the interceptor decides to
+  // have its own response
+}
+
+```
+ |
 |  [GenericInterceptorOrKey](./context.genericinterceptororkey.md) | Interceptor function or a binding key that resolves a generic interceptor function |
 |  [Getter](./context.getter.md) | The function injected by <code>@inject.getter(bindingSelector)</code>. It can be used to fetch bound value(s) from the underlying binding(s). The return value will be an array if the <code>bindingSelector</code> is a <code>BindingFilter</code> function. |
 |  [InterceptorOrKey](./context.interceptororkey.md) | Interceptor function or binding key that can be used as parameters for <code>@intercept()</code> |
@@ -177,6 +201,7 @@ permalink: /doc/en/lb4/apidocs.context.html
 |  [JSONValue](./context.jsonvalue.md) | JSON values - primitive - object - array |
 |  [MapObject](./context.mapobject.md) |  |
 |  [Next](./context.next.md) | The <code>next</code> function that can be used to invoke next generic interceptor in the chain |
+|  [NonVoid](./context.nonvoid.md) | Any type except <code>void</code>. We use this type to enforce that interceptor functions always return a value (including undefined or null). |
 |  [ResolutionAction](./context.resolutionaction.md) | A function to be executed with the resolution session |
 |  [ResolutionElement](./context.resolutionelement.md) | Binding or injection elements tracked by resolution sessions |
 |  [ResolutionOptionsOrSession](./context.resolutionoptionsorsession.md) | Resolution options or session |

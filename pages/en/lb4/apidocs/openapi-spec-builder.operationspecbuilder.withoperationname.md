@@ -25,10 +25,10 @@ withOperationName(name: string): this;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  name | <code>string</code> | The name of the controller method implementing this operation. |
+|  name | string | The name of the controller method implementing this operation. |
 
 <b>Returns:</b>
 
-`this`
+this
 
 

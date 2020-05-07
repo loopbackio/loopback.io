@@ -25,8 +25,8 @@ constructor(context: JSONObject, binding: JSONObject, level: number);
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  context | <code>JSONObject</code> |  |
-|  binding | <code>JSONObject</code> |  |
-|  level | <code>number</code> |  |
+|  context | [JSONObject](./context.jsonobject.md) |  |
+|  binding | [JSONObject](./context.jsonobject.md) |  |
+|  level | number |  |
 
 

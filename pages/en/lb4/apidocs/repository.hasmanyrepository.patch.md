@@ -25,13 +25,13 @@ patch(dataObject: DataObject<Target>, where?: Where<Target>, options?: Options):
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  dataObject | <code>DataObject&lt;Target&gt;</code> | The fields and their new values to patch |
-|  where | <code>Where&lt;Target&gt;</code> | Instances within the where scope are patched |
-|  options | <code>Options</code> |  |
+|  dataObject | [DataObject](./repository.dataobject.md)<!-- -->&lt;Target&gt; | The fields and their new values to patch |
+|  where | [Where](./repository.where.md)<!-- -->&lt;Target&gt; | Instances within the where scope are patched |
+|  options | [Options](./repository.options.md) |  |
 
 <b>Returns:</b>
 
-`Promise<Count>`
+Promise&lt;[Count](./repository.count.md)<!-- -->&gt;
 
 A promise which resolves the patched target model instances
 

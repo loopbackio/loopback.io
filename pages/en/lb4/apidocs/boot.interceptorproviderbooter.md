@@ -33,9 +33,9 @@ export declare class InterceptorProviderBooter extends BaseArtifactBooter
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [app](./boot.interceptorproviderbooter.app.md) |  | <code>Application</code> |  |
-|  [interceptorConfig](./boot.interceptorproviderbooter.interceptorconfig.md) |  | <code>ArtifactOptions</code> |  |
-|  [interceptors](./boot.interceptorproviderbooter.interceptors.md) |  | <code>InterceptorProviderClass[]</code> |  |
+|  [app](./boot.interceptorproviderbooter.app.md) |  | [Application](./core.application.md) |  |
+|  [interceptorConfig](./boot.interceptorproviderbooter.interceptorconfig.md) |  | [ArtifactOptions](./boot.artifactoptions.md) |  |
+|  [interceptors](./boot.interceptorproviderbooter.interceptors.md) |  | InterceptorProviderClass\[\] |  |
 
 ## Methods
 

@@ -25,10 +25,10 @@ action(request: Request): Promise<UserProfile | undefined>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  request | <code>Request</code> | The incoming request provided by the REST layer |
+|  request | Request | The incoming request provided by the REST layer |
 
 <b>Returns:</b>
 
-`Promise<UserProfile | undefined>`
+Promise&lt;[UserProfile](./security.userprofile.md) \| undefined&gt;
 
 

@@ -23,13 +23,13 @@ protected mergeWithInherited(inheritedMetadata: MetadataMap<T>, target: Object, 
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  inheritedMetadata | <code>MetadataMap&lt;T&gt;</code> |  |
-|  target | <code>Object</code> |  |
-|  propertyName | <code>string</code> |  |
-|  descriptorOrIndex | <code>TypedPropertyDescriptor&lt;any&gt; &#124; number</code> |  |
+|  inheritedMetadata | [MetadataMap](./metadata.metadatamap.md)<!-- -->&lt;T&gt; |  |
+|  target | Object |  |
+|  propertyName | string |  |
+|  descriptorOrIndex | TypedPropertyDescriptor&lt;any&gt; \| number |  |
 
 <b>Returns:</b>
 
-`MetadataMap<T>`
+[MetadataMap](./metadata.metadatamap.md)<!-- -->&lt;T&gt;
 
 

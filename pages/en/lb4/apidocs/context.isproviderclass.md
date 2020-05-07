@@ -18,17 +18,17 @@ Check if a class implements `Provider` interface
 <b>Signature:</b>
 
 ```typescript
-export declare function isProviderClass<T>(cls: Constructor<T | Provider<T>>): cls is Constructor<Provider<T>>;
+export declare function isProviderClass<T>(cls: unknown): cls is Constructor<Provider<T>>;
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  cls | <code>Constructor&lt;T &#124; Provider&lt;T&gt;&gt;</code> | A class |
+|  cls | unknown | A class |
 
 <b>Returns:</b>
 
-`cls is Constructor<Provider<T>>`
+cls is [Constructor](./context.constructor.md)<!-- -->&lt;[Provider](./context.provider.md)<!-- -->&lt;T&gt;&gt;
 
 

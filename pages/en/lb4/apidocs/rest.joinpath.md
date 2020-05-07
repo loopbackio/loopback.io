@@ -23,11 +23,11 @@ export declare function joinPath(basePath: string, path: string): string;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  basePath | <code>string</code> |  |
-|  path | <code>string</code> |  |
+|  basePath | string |  |
+|  path | string |  |
 
 <b>Returns:</b>
 
-`string`
+string
 
 

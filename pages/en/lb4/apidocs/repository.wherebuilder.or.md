@@ -25,10 +25,10 @@ or(...w: (Where<MT> | Where<MT>[])[]): this;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  w | <code>(Where&lt;MT&gt; &#124; Where&lt;MT&gt;[])[]</code> | One or more where objects |
+|  w | ([Where](./repository.where.md)<!-- -->&lt;MT&gt; \| [Where](./repository.where.md)<!-- -->&lt;MT&gt;\[\])\[\] | One or more where objects |
 
 <b>Returns:</b>
 
-`this`
+this
 
 

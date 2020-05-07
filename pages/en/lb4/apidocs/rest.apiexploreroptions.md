@@ -23,8 +23,8 @@ export interface ApiExplorerOptions
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [disabled](./rest.apiexploreroptions.disabled.md) | <code>true</code> | Set this flag to disable the built-in redirect to externally hosted API Explorer UI. |
-|  [httpUrl](./rest.apiexploreroptions.httpurl.md) | <code>string</code> | URL for the API explorer served over <code>http</code> protocol to deal with mixed content security imposed by browsers as the spec is exposed over <code>http</code> by default. See https://github.com/strongloop/loopback-next/issues/1603 |
-|  [url](./rest.apiexploreroptions.url.md) | <code>string</code> | URL for the hosted API explorer UI default to https://loopback.io/api-explorer |
+|  [disabled](./rest.apiexploreroptions.disabled.md) | true | Set this flag to disable the built-in redirect to externally hosted API Explorer UI. |
+|  [httpUrl](./rest.apiexploreroptions.httpurl.md) | string | URL for the API explorer served over <code>http</code> protocol to deal with mixed content security imposed by browsers as the spec is exposed over <code>http</code> by default. See https://github.com/strongloop/loopback-next/issues/1603 |
+|  [url](./rest.apiexploreroptions.url.md) | string | URL for the hosted API explorer UI default to https://loopback.io/api-explorer |
 
 

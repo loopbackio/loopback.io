@@ -25,14 +25,14 @@ expire(modelClass: Class<Entity>, key: string, ttl: number, options?: Options): 
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  modelClass | <code>Class&lt;Entity&gt;</code> | Model class |
-|  key | <code>string</code> | Key for the entry |
-|  ttl | <code>number</code> |  |
-|  options | <code>Options</code> | Options for the operation |
+|  modelClass | [Class](./repository.class.md)<!-- -->&lt;[Entity](./repository.entity.md)<!-- -->&gt; | Model class |
+|  key | string | Key for the entry |
+|  ttl | number |  |
+|  options | [Options](./repository.options.md) | Options for the operation |
 
 <b>Returns:</b>
 
-`Promise<boolean>`
+Promise&lt;boolean&gt;
 
 Promise<true> if an entry is configured for the key, otherwise Promise<false>
 

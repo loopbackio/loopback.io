@@ -20,6 +20,6 @@ create(): MethodDecorator;
 ```
 <b>Returns:</b>
 
-`MethodDecorator`
+MethodDecorator
 
 

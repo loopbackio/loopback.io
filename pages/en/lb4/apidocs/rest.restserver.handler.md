@@ -25,11 +25,11 @@ handler(handlerFn: SequenceFunction): void;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  handlerFn | <code>SequenceFunction</code> | The handler to invoke for each incoming request. |
+|  handlerFn | [SequenceFunction](./rest.sequencefunction.md) | The handler to invoke for each incoming request. |
 
 <b>Returns:</b>
 
-`void`
+void
 
 ## Example
 

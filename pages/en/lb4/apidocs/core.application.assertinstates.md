@@ -25,11 +25,11 @@ protected assertInStates(op: string, ...states: string[]): void;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  op | <code>string</code> | The operation name, such as 'boot', 'start', or 'stop' |
-|  states | <code>string[]</code> | Valid states |
+|  op | string | The operation name, such as 'boot', 'start', or 'stop' |
+|  states | string\[\] | Valid states |
 
 <b>Returns:</b>
 
-`void`
+void
 
 

@@ -25,12 +25,12 @@ export declare function createHasOneRepositoryFactory<Target extends Entity, Tar
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  relationMetadata | <code>HasOneDefinition</code> | The relation metadata used to describe the relationship and determine how to apply the constraint. |
-|  targetRepositoryGetter | <code>Getter&lt;EntityCrudRepository&lt;Target, TargetID&gt;&gt;</code> | The repository which represents the target model of a relation attached to a datasource. |
+|  relationMetadata | [HasOneDefinition](./repository.hasonedefinition.md) | The relation metadata used to describe the relationship and determine how to apply the constraint. |
+|  targetRepositoryGetter | [Getter](./context.getter.md)<!-- -->&lt;[EntityCrudRepository](./repository.entitycrudrepository.md)<!-- -->&lt;Target, TargetID&gt;&gt; | The repository which represents the target model of a relation attached to a datasource. |
 
 <b>Returns:</b>
 
-`HasOneRepositoryFactory<Target, ForeignKeyType>`
+[HasOneRepositoryFactory](./repository.hasonerepositoryfactory.md)<!-- -->&lt;Target, ForeignKeyType&gt;
 
 The factory function which accepts a foreign key value to constrain the given target repository
 

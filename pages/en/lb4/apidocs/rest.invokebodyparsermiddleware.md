@@ -25,11 +25,11 @@ export declare function invokeBodyParserMiddleware(handle: BodyParserMiddleware,
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  handle | <code>BodyParserMiddleware</code> | The express middleware handler |
-|  request | <code>Request</code> | Http request |
+|  handle | [BodyParserMiddleware](./rest.bodyparsermiddleware.md) | The express middleware handler |
+|  request | Request | Http request |
 
 <b>Returns:</b>
 
-`Promise<any>`
+Promise&lt;any&gt;
 
 

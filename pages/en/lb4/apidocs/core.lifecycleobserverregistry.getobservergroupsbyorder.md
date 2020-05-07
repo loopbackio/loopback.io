@@ -22,6 +22,6 @@ getObserverGroupsByOrder(): LifeCycleObserverGroup[];
 ```
 <b>Returns:</b>
 
-`LifeCycleObserverGroup[]`
+[LifeCycleObserverGroup](./core.lifecycleobservergroup.md)<!-- -->\[\]
 
 

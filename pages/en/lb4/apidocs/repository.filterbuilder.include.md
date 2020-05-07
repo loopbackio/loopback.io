@@ -25,10 +25,10 @@ include(...i: (string | string[] | Inclusion)[]): this;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  i | <code>(string &#124; string[] &#124; Inclusion)[]</code> | A relation name, an array of relation names, or an <code>Inclusion</code> object for the relation/scope definitions |
+|  i | (string \| string\[\] \| [Inclusion](./repository.inclusion.md)<!-- -->)\[\] | A relation name, an array of relation names, or an <code>Inclusion</code> object for the relation/scope definitions |
 
 <b>Returns:</b>
 
-`this`
+this
 
 

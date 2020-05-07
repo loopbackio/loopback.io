@@ -25,9 +25,9 @@ export interface Connector
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [configModel](./repository.connector.configmodel.md) | <code>Model</code> |  |
-|  [interfaces](./repository.connector.interfaces.md) | <code>string[]</code> |  |
-|  [name](./repository.connector.name.md) | <code>string</code> |  |
+|  [configModel](./repository.connector.configmodel.md) | [Model](./repository.model.md) |  |
+|  [interfaces](./repository.connector.interfaces.md) | string\[\] |  |
+|  [name](./repository.connector.name.md) | string |  |
 
 ## Methods
 

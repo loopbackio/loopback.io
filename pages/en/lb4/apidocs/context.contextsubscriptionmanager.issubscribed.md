@@ -25,10 +25,10 @@ isSubscribed(observer: ContextObserver): boolean;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  observer | <code>ContextObserver</code> | Context observer |
+|  observer | [ContextObserver](./context.contextobserver.md) | Context observer |
 
 <b>Returns:</b>
 
-`boolean`
+boolean
 
 

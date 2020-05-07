@@ -23,10 +23,10 @@ addUser(...users: UserProfile[]): void;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  users | <code>UserProfile[]</code> |  |
+|  users | [UserProfile](./security.userprofile.md)<!-- -->\[\] |  |
 
 <b>Returns:</b>
 
-`void`
+void
 
 

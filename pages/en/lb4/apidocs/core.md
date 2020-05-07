@@ -56,6 +56,7 @@ For examples of how to leverage `@loopback/core` to build composable and extensi
 |  [LifeCycleObserver](./core.lifecycleobserver.md) | Observers to handle life cycle start/stop events |
 |  [ProviderMap](./core.providermap.md) | A map of provider classes to be bound to a context |
 |  [Server](./core.server.md) | Defines the requirements to implement a Server for LoopBack applications: start() : Promise<void> stop() : Promise<void> It is recommended that each Server implementation creates its own child Context, which inherits from the parent Application context. This way, any Server-specific bindings will remain local to the Server instance, and will avoid polluting its parent module scope. |
+|  [ServiceOptions](./core.serviceoptions.md) | Options to register a service binding |
 
 ## Namespaces
 
@@ -80,7 +81,6 @@ For examples of how to leverage `@loopback/core` to build composable and extensi
 |  [LifeCycleObserverGroup](./core.lifecycleobservergroup.md) | A group of life cycle observers |
 |  [LifeCycleObserverOptions](./core.lifecycleobserveroptions.md) |  |
 |  [ServiceInterface](./core.serviceinterface.md) | Representing an interface for services. In TypeScript, the <code>interface</code> does not have reflections at runtime. We use a string, a symbol or a Function as the type for the service interface. |
-|  [ServiceOptions](./core.serviceoptions.md) | Options to register a service binding |
 |  [ShutdownOptions](./core.shutdownoptions.md) | Options to set up application shutdown |
 
 

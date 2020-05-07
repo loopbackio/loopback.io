@@ -29,8 +29,8 @@ export declare class TypedPrincipal implements Principal
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [\[securityId\]](./security.typedprincipal._securityid_.md) |  | <code>string</code> |  |
-|  [principal](./security.typedprincipal.principal.md) |  | <code>Principal</code> |  |
-|  [type](./security.typedprincipal.type.md) |  | <code>string</code> |  |
+|  [\[securityId\]](./security.typedprincipal._securityid_.md) |  | string |  |
+|  [principal](./security.typedprincipal.principal.md) |  | [Principal](./security.principal.md) |  |
+|  [type](./security.typedprincipal.type.md) |  | string |  |
 
 

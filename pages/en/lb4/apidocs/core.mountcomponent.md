@@ -25,11 +25,11 @@ export declare function mountComponent(app: Application, component: Component): 
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  app | <code>Application</code> | Application |
-|  component | <code>Component</code> | Component instance |
+|  app | [Application](./core.application.md) | Application |
+|  component | [Component](./core.component.md) | Component instance |
 
 <b>Returns:</b>
 
-`void`
+void
 
 

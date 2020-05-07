@@ -25,13 +25,13 @@ redirect(fromPath: string, toPathOrUrl: string, statusCode?: number): Binding;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  fromPath | <code>string</code> | URL path of the redirect endpoint |
-|  toPathOrUrl | <code>string</code> | Location (URL path or full URL) where to redirect to. If your server is configured with a custom <code>basePath</code>, then the base path is prepended to the target location. |
-|  statusCode | <code>number</code> | HTTP status code to respond with, defaults to 303 (See Other). |
+|  fromPath | string | URL path of the redirect endpoint |
+|  toPathOrUrl | string | Location (URL path or full URL) where to redirect to. If your server is configured with a custom <code>basePath</code>, then the base path is prepended to the target location. |
+|  statusCode | number | HTTP status code to respond with, defaults to 303 (See Other). |
 
 <b>Returns:</b>
 
-`Binding`
+[Binding](./context.binding.md)
 
 ## Example
 

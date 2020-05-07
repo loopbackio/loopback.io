@@ -31,8 +31,8 @@ export declare class ArrayType<T> implements Type<T[]>
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [itemType](./repository.arraytype.itemtype.md) |  | <code>Type&lt;T&gt;</code> |  |
-|  [name](./repository.arraytype.name.md) |  | <code></code> |  |
+|  [itemType](./repository.arraytype.itemtype.md) |  | [Type](./repository.type.md)<!-- -->&lt;T&gt; |  |
+|  [name](./repository.arraytype.name.md) |  | (not declared) |  |
 
 ## Methods
 

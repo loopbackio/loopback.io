@@ -25,10 +25,10 @@ protected sortObserverBindingsByGroup(bindings: Readonly<Binding<LifeCycleObserv
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  bindings | <code>Readonly&lt;Binding&lt;LifeCycleObserver&gt;&gt;[]</code> | Life cycle observer bindings |
+|  bindings | Readonly&lt;[Binding](./context.binding.md)<!-- -->&lt;[LifeCycleObserver](./core.lifecycleobserver.md)<!-- -->&gt;&gt;\[\] | Life cycle observer bindings |
 
 <b>Returns:</b>
 
-`LifeCycleObserverGroup[]`
+[LifeCycleObserverGroup](./core.lifecycleobservergroup.md)<!-- -->\[\]
 
 

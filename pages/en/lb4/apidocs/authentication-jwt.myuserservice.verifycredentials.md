@@ -23,10 +23,10 @@ verifyCredentials(credentials: Credentials): Promise<User>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  credentials | <code>Credentials</code> |  |
+|  credentials | [Credentials](./authentication-jwt.credentials.md) |  |
 
 <b>Returns:</b>
 
-`Promise<User>`
+Promise&lt;[User](./authentication-jwt.user.md)<!-- -->&gt;
 
 

@@ -25,10 +25,10 @@ export declare function shouldGenerateTsDocs(pkg: LernaPackage): boolean;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  pkg | <code>LernaPackage</code> | Lerna package |
+|  pkg | [LernaPackage](./tsdocs.lernapackage.md) | Lerna package |
 
 <b>Returns:</b>
 
-`boolean`
+boolean
 
 

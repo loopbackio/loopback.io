@@ -25,7 +25,7 @@ constructor(dataSource: juggler.DataSource, userCredentialsRepositoryGetter: Get
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  dataSource | <code>juggler.DataSource</code> |  |
-|  userCredentialsRepositoryGetter | <code>Getter&lt;UserCredentialsRepository&gt;</code> |  |
+|  dataSource | juggler.DataSource |  |
+|  userCredentialsRepositoryGetter | [Getter](./context.getter.md)<!-- -->&lt;[UserCredentialsRepository](./authentication-jwt.usercredentialsrepository.md)<!-- -->&gt; |  |
 
 

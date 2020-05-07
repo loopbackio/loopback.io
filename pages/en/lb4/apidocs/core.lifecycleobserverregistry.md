@@ -31,8 +31,8 @@ export declare class LifeCycleObserverRegistry implements LifeCycleObserver
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [observersView](./core.lifecycleobserverregistry.observersview.md) |  | <code>ContextView&lt;LifeCycleObserver&gt;</code> |  |
-|  [options](./core.lifecycleobserverregistry.options.md) |  | <code>LifeCycleObserverOptions</code> |  |
+|  [observersView](./core.lifecycleobserverregistry.observersview.md) |  | [ContextView](./context.contextview.md)<!-- -->&lt;[LifeCycleObserver](./core.lifecycleobserver.md)<!-- -->&gt; |  |
+|  [options](./core.lifecycleobserverregistry.options.md) |  | [LifeCycleObserverOptions](./core.lifecycleobserveroptions.md) |  |
 
 ## Methods
 

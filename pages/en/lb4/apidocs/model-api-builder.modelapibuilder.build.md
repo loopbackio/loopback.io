@@ -25,12 +25,12 @@ build(application: ApplicationWithRepositories, modelClass: typeof Model & {
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  application | <code>ApplicationWithRepositories</code> |  |
-|  modelClass | <code>typeof Model &amp; {</code><br/><code>        prototype: Model;</code><br/><code>    }</code> |  |
-|  config | <code>ModelApiConfig</code> |  |
+|  application | [ApplicationWithRepositories](./repository.applicationwithrepositories.md) |  |
+|  modelClass | typeof [Model](./repository.model.md) &amp; { prototype: [Model](./repository.model.md)<!-- -->; } |  |
+|  config | [ModelApiConfig](./model-api-builder.modelapiconfig.md) |  |
 
 <b>Returns:</b>
 
-`Promise<void>`
+Promise&lt;void&gt;
 
 

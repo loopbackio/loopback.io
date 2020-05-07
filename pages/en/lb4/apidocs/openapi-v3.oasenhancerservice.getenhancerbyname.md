@@ -25,10 +25,10 @@ getEnhancerByName<T extends OASEnhancer = OASEnhancer>(name: string): Promise<T 
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  name | <code>string</code> | The name of the enhancer you want to find |
+|  name | string | The name of the enhancer you want to find |
 
 <b>Returns:</b>
 
-`Promise<T | undefined>`
+Promise&lt;T \| undefined&gt;
 
 

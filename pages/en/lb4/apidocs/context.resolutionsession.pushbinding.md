@@ -25,10 +25,10 @@ pushBinding(binding: Readonly<Binding>): void;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  binding | <code>Readonly&lt;Binding&gt;</code> | Binding |
+|  binding | Readonly&lt;[Binding](./context.binding.md)<!-- -->&gt; | Binding |
 
 <b>Returns:</b>
 
-`void`
+void
 
 

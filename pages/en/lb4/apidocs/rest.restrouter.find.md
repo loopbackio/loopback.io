@@ -25,11 +25,11 @@ find(request: Request): ResolvedRoute | undefined;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  request | <code>Request</code> | Http request |
+|  request | Request | Http request |
 
 <b>Returns:</b>
 
-`ResolvedRoute | undefined`
+[ResolvedRoute](./rest.resolvedroute.md) \| undefined
 
 The resolved route, if not found, `undefined` is returned
 

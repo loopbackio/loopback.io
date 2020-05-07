@@ -25,10 +25,10 @@ getRepository<R extends Repository<any>>(repo: Class<R>): Promise<R>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  repo | <code>Class&lt;R&gt;</code> | The repository class to retrieve the instance of |
+|  repo | [Class](./repository.class.md)<!-- -->&lt;R&gt; | The repository class to retrieve the instance of |
 
 <b>Returns:</b>
 
-`Promise<R>`
+Promise&lt;R&gt;
 
 

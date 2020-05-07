@@ -25,11 +25,11 @@ protected invokeObserver(observer: LifeCycleObserver, event: keyof LifeCycleObse
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  observer | <code>LifeCycleObserver</code> | A life cycle observer |
-|  event | <code>keyof LifeCycleObserver</code> | Event name |
+|  observer | [LifeCycleObserver](./core.lifecycleobserver.md) | A life cycle observer |
+|  event | keyof [LifeCycleObserver](./core.lifecycleobserver.md) | Event name |
 
 <b>Returns:</b>
 
-`Promise<void>`
+Promise&lt;void&gt;
 
 

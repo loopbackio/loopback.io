@@ -27,10 +27,10 @@ waitUntilPendingNotificationsDone(timeout?: number): Promise<void>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  timeout | <code>number</code> |  |
+|  timeout | number |  |
 
 <b>Returns:</b>
 
-`Promise<void>`
+Promise&lt;void&gt;
 
 

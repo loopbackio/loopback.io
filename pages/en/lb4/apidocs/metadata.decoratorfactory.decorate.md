@@ -25,12 +25,12 @@ protected decorate(target: Object, member?: string | symbol, descriptorOrIndex?:
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  target | <code>Object</code> | Decorator target |
-|  member | <code>string &#124; symbol</code> | Optional property or method |
-|  descriptorOrIndex | <code>TypedPropertyDescriptor&lt;any&gt; &#124; number</code> | Optional method descriptor or parameter index |
+|  target | Object | Decorator target |
+|  member | string \| symbol | Optional property or method |
+|  descriptorOrIndex | TypedPropertyDescriptor&lt;any&gt; \| number | Optional method descriptor or parameter index |
 
 <b>Returns:</b>
 
-`void`
+void
 
 

@@ -25,6 +25,6 @@ constructor(dataSource: juggler.DataSource);
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  dataSource | <code>juggler.DataSource</code> |  |
+|  dataSource | juggler.DataSource |  |
 
 

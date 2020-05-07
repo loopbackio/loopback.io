@@ -25,11 +25,11 @@ serviceProvider<S>(provider: Class<Provider<S>>): Binding<S>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  provider | <code>Class&lt;Provider&lt;S&gt;&gt;</code> | The service provider to register. |
+|  provider | [Class](./service-proxy.class.md)<!-- -->&lt;[Provider](./context.provider.md)<!-- -->&lt;S&gt;&gt; | The service provider to register. |
 
 <b>Returns:</b>
 
-`Binding<S>`
+[Binding](./context.binding.md)<!-- -->&lt;S&gt;
 
 ## Example
 

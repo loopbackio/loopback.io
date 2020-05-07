@@ -23,11 +23,11 @@ action({ request, response }: HandlerContext, error: Error): void;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  { request, response } | <code>HandlerContext</code> |  |
-|  error | <code>Error</code> |  |
+|  { request, response } | [HandlerContext](./express.handlercontext.md) |  |
+|  error | Error |  |
 
 <b>Returns:</b>
 
-`void`
+void
 
 

@@ -25,11 +25,11 @@ nin<K extends KeyOf<MT>>(key: K, val: MT[K][]): this;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  key | <code>K</code> | Property name |
-|  val | <code>MT[K][]</code> | An array of property values |
+|  key | K | Property name |
+|  val | MT\[K\]\[\] | An array of property values |
 
 <b>Returns:</b>
 
-`this`
+this
 
 

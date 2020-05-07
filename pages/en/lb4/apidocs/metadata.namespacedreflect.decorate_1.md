@@ -23,11 +23,11 @@ decorate(decorators: ClassDecorator[], target: Object): PropertyDescriptor | Fun
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  decorators | <code>ClassDecorator[]</code> |  |
-|  target | <code>Object</code> |  |
+|  decorators | ClassDecorator\[\] |  |
+|  target | Object |  |
 
 <b>Returns:</b>
 
-`PropertyDescriptor | Function`
+PropertyDescriptor \| Function
 
 

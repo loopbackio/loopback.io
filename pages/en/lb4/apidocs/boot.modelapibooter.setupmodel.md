@@ -25,10 +25,10 @@ setupModel(configFile: string): Promise<void>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  configFile | <code>string</code> |  |
+|  configFile | string |  |
 
 <b>Returns:</b>
 
-`Promise<void>`
+Promise&lt;void&gt;
 
 

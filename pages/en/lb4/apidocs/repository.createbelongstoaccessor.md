@@ -25,12 +25,12 @@ export declare function createBelongsToAccessor<Target extends Entity, TargetId,
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  belongsToMetadata | <code>BelongsToDefinition</code> |  |
-|  targetRepoGetter | <code>Getter&lt;EntityCrudRepository&lt;Target, TargetId&gt;&gt;</code> |  |
-|  sourceRepository | <code>EntityCrudRepository&lt;Source, SourceId&gt;</code> |  |
+|  belongsToMetadata | [BelongsToDefinition](./repository.belongstodefinition.md) |  |
+|  targetRepoGetter | [Getter](./context.getter.md)<!-- -->&lt;[EntityCrudRepository](./repository.entitycrudrepository.md)<!-- -->&lt;Target, TargetId&gt;&gt; |  |
+|  sourceRepository | [EntityCrudRepository](./repository.entitycrudrepository.md)<!-- -->&lt;Source, SourceId&gt; |  |
 
 <b>Returns:</b>
 
-`BelongsToAccessor<Target, SourceId>`
+[BelongsToAccessor](./repository.belongstoaccessor.md)<!-- -->&lt;Target, SourceId&gt;
 
 

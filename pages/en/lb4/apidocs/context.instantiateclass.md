@@ -27,13 +27,13 @@ export declare function instantiateClass<T>(ctor: Constructor<T>, ctx: Context, 
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  ctor | <code>Constructor&lt;T&gt;</code> | The class constructor to call. |
-|  ctx | <code>Context</code> | The context containing values for <code>@inject</code> resolution |
-|  session | <code>ResolutionSession</code> | Optional session for binding and dependency resolution |
-|  nonInjectedArgs | <code>any[]</code> | Optional array of args for non-injected parameters |
+|  ctor | [Constructor](./context.constructor.md)<!-- -->&lt;T&gt; | The class constructor to call. |
+|  ctx | [Context](./context.context.md) | The context containing values for <code>@inject</code> resolution |
+|  session | [ResolutionSession](./context.resolutionsession.md) | Optional session for binding and dependency resolution |
+|  nonInjectedArgs | any\[\] | Optional array of args for non-injected parameters |
 
 <b>Returns:</b>
 
-`ValueOrPromise<T>`
+[ValueOrPromise](./context.valueorpromise.md)<!-- -->&lt;T&gt;
 
 

@@ -27,8 +27,6 @@ getApiDefinitions(): {
 ```
 <b>Returns:</b>
 
-`{
-        [schema: string]: import("@loopback/openapi-v3").SchemaObject | import("@loopback/openapi-v3").ReferenceObject;
-    } | undefined`
+{ \[schema: string\]: import("@loopback/openapi-v3").SchemaObject \| import("@loopback/openapi-v3").ReferenceObject; } \| undefined
 
 

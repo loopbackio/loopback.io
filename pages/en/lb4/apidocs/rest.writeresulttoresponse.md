@@ -25,11 +25,11 @@ export declare function writeResultToResponse(response: Response, result: Operat
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  response | <code>Response</code> | HTTP Response |
-|  result | <code>OperationRetval</code> | Result from the API to write into HTTP Response |
+|  response | Response | HTTP Response |
+|  result | [OperationRetval](./rest.operationretval.md) | Result from the API to write into HTTP Response |
 
 <b>Returns:</b>
 
-`void`
+void
 
 

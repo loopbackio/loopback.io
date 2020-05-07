@@ -25,10 +25,10 @@ asGetter(session?: ResolutionSession): Getter<T[]>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  session | <code>ResolutionSession</code> |  |
+|  session | [ResolutionSession](./context.resolutionsession.md) |  |
 
 <b>Returns:</b>
 
-`Getter<T[]>`
+[Getter](./context.getter.md)<!-- -->&lt;T\[\]&gt;
 
 

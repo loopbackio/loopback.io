@@ -32,8 +32,8 @@ export declare class RestApplication extends Application implements HttpServerLi
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [requestHandler](./rest.restapplication.requesthandler.md) |  | <code>HttpRequestListener</code> | Handle incoming HTTP(S) request by invoking the corresponding Controller method via the configured Sequence. |
-|  [restServer](./rest.restapplication.restserver.md) |  | <code>RestServer</code> | The main REST server instance providing REST API for this application. |
+|  [requestHandler](./rest.restapplication.requesthandler.md) |  | [HttpRequestListener](./rest.httprequestlistener.md) | Handle incoming HTTP(S) request by invoking the corresponding Controller method via the configured Sequence. |
+|  [restServer](./rest.restapplication.restserver.md) |  | [RestServer](./rest.restserver.md) | The main REST server instance providing REST API for this application. |
 
 ## Methods
 
@@ -42,7 +42,10 @@ export declare class RestApplication extends Application implements HttpServerLi
 |  [api(spec)](./rest.restapplication.api.md) |  | Set the OpenAPI specification that defines the REST API schema for this application. All routes, parameter definitions and return types will be defined in this way.<!-- -->Note that this will override any routes defined via decorators at the controller level (this function takes precedent). |
 |  [basePath(path)](./rest.restapplication.basepath.md) |  | Configure the <code>basePath</code> for the rest server |
 |  [bodyParser(bodyParserClass, address)](./rest.restapplication.bodyparser.md) |  | Bind a body parser to the server context |
+|  [expressMiddleware(key, middleware, options)](./rest.restapplication.expressmiddleware.md) |  | Bind an Express middleware to this server context |
+|  [expressMiddleware(middlewareFactory, middlewareConfig, options)](./rest.restapplication.expressmiddleware_1.md) |  | Bind an Express middleware to this server context |
 |  [handler(handlerFn)](./rest.restapplication.handler.md) |  |  |
+|  [middleware(middleware, options)](./rest.restapplication.middleware.md) |  | Register a middleware function or provider class |
 |  [mountExpressRouter(basePath, router, spec)](./rest.restapplication.mountexpressrouter.md) |  | Mount an Express router to expose additional REST endpoints handled via legacy Express-based stack. |
 |  [redirect(fromPath, toPathOrUrl, statusCode)](./rest.restapplication.redirect.md) |  | Register a route redirecting callers to a different URL. |
 |  [route(verb, path, spec, controllerCtor, controllerFactory, methodName)](./rest.restapplication.route.md) |  | Register a new Controller-based route. |

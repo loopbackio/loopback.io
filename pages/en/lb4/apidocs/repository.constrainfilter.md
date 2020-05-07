@@ -25,12 +25,12 @@ export declare function constrainFilter<T extends object>(originalFilter: Filter
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  originalFilter | <code>Filter&lt;T&gt; &#124; undefined</code> | the filter to apply the constrain(s) to |
-|  constraint | <code>AnyObject</code> | the constraint which is to be applied on the filter |
+|  originalFilter | [Filter](./repository.filter.md)<!-- -->&lt;T&gt; \| undefined | the filter to apply the constrain(s) to |
+|  constraint | [AnyObject](./repository.anyobject.md) | the constraint which is to be applied on the filter |
 
 <b>Returns:</b>
 
-`Filter<T>`
+[Filter](./repository.filter.md)<!-- -->&lt;T&gt;
 
 Filter the modified filter with the constraint, otherwise the original filter
 

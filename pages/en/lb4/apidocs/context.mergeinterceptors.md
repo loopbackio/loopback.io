@@ -29,11 +29,11 @@ export declare function mergeInterceptors(interceptorsFromSpec: InterceptorOrKey
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  interceptorsFromSpec | <code>InterceptorOrKey[]</code> | Interceptors from <code>@intercept</code> |
-|  existingInterceptors | <code>InterceptorOrKey[]</code> | Interceptors already applied for the method |
+|  interceptorsFromSpec | [InterceptorOrKey](./context.interceptororkey.md)<!-- -->\[\] | Interceptors from <code>@intercept</code> |
+|  existingInterceptors | [InterceptorOrKey](./context.interceptororkey.md)<!-- -->\[\] | Interceptors already applied for the method |
 
 <b>Returns:</b>
 
-`GenericInterceptorOrKey<InvocationContext>[]`
+[GenericInterceptorOrKey](./context.genericinterceptororkey.md)<!-- -->&lt;[InvocationContext](./context.invocationcontext.md)<!-- -->&gt;\[\]
 
 

@@ -23,10 +23,10 @@ onError(listener: (err: unknown) => void): void;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  listener | <code>(err: unknown) =&gt; void</code> |  |
+|  listener | (err: unknown) =&gt; void |  |
 
 <b>Returns:</b>
 
-`void`
+void
 
 

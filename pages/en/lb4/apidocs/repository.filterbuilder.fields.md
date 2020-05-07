@@ -25,10 +25,10 @@ fields(...f: (Fields<MT> | (keyof MT)[] | keyof MT)[]): this;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  f | <code>(Fields&lt;MT&gt; &#124; (keyof MT)[] &#124; keyof MT)[]</code> | A field name to be included, an array of field names to be included, or an Fields object for the inclusion/exclusion |
+|  f | ([Fields](./repository.fields.md)<!-- -->&lt;MT&gt; \| (keyof MT)\[\] \| keyof MT)\[\] | A field name to be included, an array of field names to be included, or an Fields object for the inclusion/exclusion |
 
 <b>Returns:</b>
 
-`this`
+this
 
 

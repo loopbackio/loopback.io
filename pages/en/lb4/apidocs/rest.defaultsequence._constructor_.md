@@ -25,10 +25,10 @@ constructor(findRoute: FindRoute, parseParams: ParseParams, invoke: InvokeMethod
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  findRoute | <code>FindRoute</code> | Finds the appropriate controller method, spec and args for invocation (injected via SequenceActions.FIND\_ROUTE). |
-|  parseParams | <code>ParseParams</code> | The parameter parsing function (injected via SequenceActions.PARSE\_PARAMS). |
-|  invoke | <code>InvokeMethod</code> | Invokes the method specified by the route (injected via SequenceActions.INVOKE\_METHOD). |
-|  send | <code>Send</code> | The action to merge the invoke result with the response (injected via SequenceActions.SEND) |
-|  reject | <code>Reject</code> | The action to take if the invoke returns a rejected promise result (injected via SequenceActions.REJECT). |
+|  findRoute | [FindRoute](./rest.findroute.md) | Finds the appropriate controller method, spec and args for invocation (injected via SequenceActions.FIND\_ROUTE). |
+|  parseParams | [ParseParams](./rest.parseparams.md) | The parameter parsing function (injected via SequenceActions.PARSE\_PARAMS). |
+|  invoke | [InvokeMethod](./rest.invokemethod.md) | Invokes the method specified by the route (injected via SequenceActions.INVOKE\_METHOD). |
+|  send | [Send](./rest.send.md) | The action to merge the invoke result with the response (injected via SequenceActions.SEND) |
+|  reject | [Reject](./rest.reject.md) | The action to take if the invoke returns a rejected promise result (injected via SequenceActions.REJECT). |
 
 

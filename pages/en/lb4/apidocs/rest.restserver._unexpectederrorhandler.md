@@ -22,6 +22,6 @@ protected _unexpectedErrorHandler(): ErrorRequestHandler;
 ```
 <b>Returns:</b>
 
-`ErrorRequestHandler`
+ErrorRequestHandler
 
 

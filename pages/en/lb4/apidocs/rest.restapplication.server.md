@@ -23,11 +23,11 @@ server(server: Constructor<Server>, name?: string): Binding;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  server | <code>Constructor&lt;Server&gt;</code> |  |
-|  name | <code>string</code> |  |
+|  server | [Constructor](./context.constructor.md)<!-- -->&lt;[Server](./core.server.md)<!-- -->&gt; |  |
+|  name | string |  |
 
 <b>Returns:</b>
 
-`Binding`
+[Binding](./context.binding.md)
 
 

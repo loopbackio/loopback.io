@@ -22,6 +22,6 @@ static getIdProperties(): string[];
 ```
 <b>Returns:</b>
 
-`string[]`
+string\[\]
 
 

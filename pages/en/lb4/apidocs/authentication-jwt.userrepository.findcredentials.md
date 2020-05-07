@@ -23,10 +23,10 @@ findCredentials(userId: typeof User.prototype.id): Promise<UserCredentials | und
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  userId | <code>typeof User.prototype.id</code> |  |
+|  userId | typeof [User.prototype.id](./authentication-jwt.user.id.md) |  |
 
 <b>Returns:</b>
 
-`Promise<UserCredentials | undefined>`
+Promise&lt;[UserCredentials](./authentication-jwt.usercredentials.md) \| undefined&gt;
 
 

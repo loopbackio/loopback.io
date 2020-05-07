@@ -31,9 +31,9 @@ export declare class ContextSubscriptionManager extends EventEmitter
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [\_observers](./context.contextsubscriptionmanager._observers.md) |  | <code>Set&lt;ContextEventObserver&gt; &#124; undefined</code> | A list of registered context observers. The Set will be created when the first observer is added. |
-|  [\_parentContextEventListener](./context.contextsubscriptionmanager._parentcontexteventlistener.md) |  | <code>ContextEventListener</code> | A listener to watch parent context events |
-|  [context](./context.contextsubscriptionmanager.context.md) |  | <code>Context</code> |  |
+|  [\_observers](./context.contextsubscriptionmanager._observers.md) |  | Set&lt;[ContextEventObserver](./context.contexteventobserver.md)<!-- -->&gt; \| undefined | A list of registered context observers. The Set will be created when the first observer is added. |
+|  [\_parentContextEventListener](./context.contextsubscriptionmanager._parentcontexteventlistener.md) |  | [ContextEventListener](./context.contexteventlistener.md) | A listener to watch parent context events |
+|  [context](./context.contextsubscriptionmanager.context.md) |  | [Context](./context.context.md) |  |
 
 ## Methods
 

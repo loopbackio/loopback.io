@@ -25,10 +25,10 @@ export declare function extensionFilter(extensionPointName: string): BindingFilt
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  extensionPointName | <code>string</code> | Name of the extension point |
+|  extensionPointName | string | Name of the extension point |
 
 <b>Returns:</b>
 
-`BindingFilter`
+[BindingFilter](./context.bindingfilter.md)
 
 

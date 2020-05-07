@@ -25,10 +25,10 @@ function getter(nameOrClass: string | Class<Repository<Model>>): (target: Object
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  nameOrClass | <code>string &#124; Class&lt;Repository&lt;Model&gt;&gt;</code> | The repository class (ProductRepository) or a string name ('ProductRepository'). |
+|  nameOrClass | string \| [Class](./repository.class.md)<!-- -->&lt;[Repository](./repository.repository.md)<!-- -->&lt;[Model](./repository.model.md)<!-- -->&gt;&gt; | The repository class (ProductRepository) or a string name ('ProductRepository'). |
 
 <b>Returns:</b>
 
-`(target: Object, member: string | undefined, methodDescriptorOrParameterIndex?: number | TypedPropertyDescriptor<any> | undefined) => void`
+(target: Object, member: string \| undefined, methodDescriptorOrParameterIndex?: number \| TypedPropertyDescriptor&lt;any&gt; \| undefined) =&gt; void
 
 

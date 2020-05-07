@@ -25,12 +25,12 @@ static createDecorator<T>(key: MetadataKey<T, ParameterDecorator>, spec: T, opti
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  key | <code>MetadataKey&lt;T, ParameterDecorator&gt;</code> | Metadata key |
-|  spec | <code>T</code> | Metadata object from the decorator function |
-|  options | <code>DecoratorOptions</code> | Options for the decorator |
+|  key | [MetadataKey](./metadata.metadatakey.md)<!-- -->&lt;T, ParameterDecorator&gt; | Metadata key |
+|  spec | T | Metadata object from the decorator function |
+|  options | [DecoratorOptions](./metadata.decoratoroptions.md) | Options for the decorator |
 
 <b>Returns:</b>
 
-`ParameterDecorator`
+ParameterDecorator
 
 

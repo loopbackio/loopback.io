@@ -25,13 +25,13 @@ export declare function validateRequestBody(body: RequestBody, requestBodySpec?:
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  body | <code>RequestBody</code> | The request body parsed from an HTTP request. |
-|  requestBodySpec | <code>RequestBodyObject</code> | The OpenAPI requestBody specification defined in <code>@requestBody()</code>. |
-|  globalSchemas | <code>SchemasObject</code> | The referenced schemas generated from <code>OpenAPISpec.components.schemas</code>. |
-|  options | <code>RequestBodyValidationOptions</code> | Request body validation options for AJV |
+|  body | [RequestBody](./rest.requestbody.md) | The request body parsed from an HTTP request. |
+|  requestBodySpec | RequestBodyObject | The OpenAPI requestBody specification defined in <code>@requestBody()</code>. |
+|  globalSchemas | SchemasObject | The referenced schemas generated from <code>OpenAPISpec.components.schemas</code>. |
+|  options | [RequestBodyValidationOptions](./rest.requestbodyvalidationoptions.md) | Request body validation options for AJV |
 
 <b>Returns:</b>
 
-`Promise<void>`
+Promise&lt;void&gt;
 
 

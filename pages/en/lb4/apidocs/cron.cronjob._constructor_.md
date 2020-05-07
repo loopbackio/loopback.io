@@ -25,6 +25,6 @@ constructor(options: CronJobOptions);
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  options | <code>CronJobOptions</code> |  |
+|  options | [CronJobOptions](./cron.cronjoboptions.md) |  |
 
 

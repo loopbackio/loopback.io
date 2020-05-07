@@ -23,10 +23,10 @@ setOrderedGroups(groups: string[]): void;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  groups | <code>string[]</code> |  |
+|  groups | string\[\] |  |
 
 <b>Returns:</b>
 
-`void`
+void
 
 

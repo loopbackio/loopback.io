@@ -25,10 +25,10 @@ export declare function getBindingMetadata<T = unknown>(target: Function): Bindi
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  target | <code>Function</code> | The target class |
+|  target | Function | The target class |
 
 <b>Returns:</b>
 
-`BindingMetadata<T> | undefined`
+[BindingMetadata](./context.bindingmetadata.md)<!-- -->&lt;T&gt; \| undefined
 
 

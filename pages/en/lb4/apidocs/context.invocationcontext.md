@@ -31,13 +31,13 @@ export declare class InvocationContext extends Context
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [args](./context.invocationcontext.args.md) |  | <code>InvocationArgs</code> |  |
-|  [description](./context.invocationcontext.description.md) |  | <code>string</code> | Description of the invocation |
-|  [methodName](./context.invocationcontext.methodname.md) |  | <code>string</code> |  |
-|  [source](./context.invocationcontext.source.md) |  | <code>InvocationSource&lt;unknown&gt; &#124; undefined</code> |  |
-|  [target](./context.invocationcontext.target.md) |  | <code>object</code> |  |
-|  [targetClass](./context.invocationcontext.targetclass.md) |  | <code>Function</code> | The target class, such as <code>OrderController</code> |
-|  [targetName](./context.invocationcontext.targetname.md) |  | <code>string</code> | The target name, such as <code>OrderController.prototype.cancelOrder</code> |
+|  [args](./context.invocationcontext.args.md) |  | [InvocationArgs](./context.invocationargs.md) |  |
+|  [description](./context.invocationcontext.description.md) |  | string | Description of the invocation |
+|  [methodName](./context.invocationcontext.methodname.md) |  | string |  |
+|  [source](./context.invocationcontext.source.md) |  | [InvocationSource](./context.invocationsource.md)<!-- -->&lt;unknown&gt; \| undefined |  |
+|  [target](./context.invocationcontext.target.md) |  | object |  |
+|  [targetClass](./context.invocationcontext.targetclass.md) |  | Function | The target class, such as <code>OrderController</code> |
+|  [targetName](./context.invocationcontext.targetname.md) |  | string | The target name, such as <code>OrderController.prototype.cancelOrder</code> |
 
 ## Methods
 

@@ -25,8 +25,8 @@ export interface SessionUserProfile
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [email](./rest.sessionuserprofile.email.md) | <code>string</code> |  |
-|  [provider](./rest.sessionuserprofile.provider.md) | <code>string</code> |  |
-|  [token](./rest.sessionuserprofile.token.md) | <code>string</code> |  |
+|  [email](./rest.sessionuserprofile.email.md) | string |  |
+|  [provider](./rest.sessionuserprofile.provider.md) | string |  |
+|  [token](./rest.sessionuserprofile.token.md) | string |  |
 
 

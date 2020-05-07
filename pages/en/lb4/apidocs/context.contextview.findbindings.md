@@ -22,6 +22,6 @@ protected findBindings(): Readonly<Binding<T>>[];
 ```
 <b>Returns:</b>
 
-`Readonly<Binding<T>>[]`
+Readonly&lt;[Binding](./context.binding.md)<!-- -->&lt;T&gt;&gt;\[\]
 
 

@@ -23,12 +23,12 @@ getConfigAsValueOrPromise<ConfigValueType>(key: BindingAddress<unknown>, propert
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  key | <code>BindingAddress&lt;unknown&gt;</code> |  |
-|  propertyPath | <code>string</code> |  |
-|  resolutionOptions | <code>ResolutionOptions</code> |  |
+|  key | [BindingAddress](./context.bindingaddress.md)<!-- -->&lt;unknown&gt; |  |
+|  propertyPath | string |  |
+|  resolutionOptions | [ResolutionOptions](./context.resolutionoptions.md) |  |
 
 <b>Returns:</b>
 
-`ValueOrPromise<ConfigValueType | undefined>`
+[ValueOrPromise](./context.valueorpromise.md)<!-- -->&lt;ConfigValueType \| undefined&gt;
 
 

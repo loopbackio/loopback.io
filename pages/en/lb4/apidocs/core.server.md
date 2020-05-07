@@ -25,6 +25,6 @@ export interface Server extends LifeCycleObserver
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [listening](./core.server.listening.md) | <code>boolean</code> | Tells whether the server is listening for connections or not |
+|  [listening](./core.server.listening.md) | boolean | Tells whether the server is listening for connections or not |
 
 

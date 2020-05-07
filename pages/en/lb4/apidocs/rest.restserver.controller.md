@@ -25,11 +25,11 @@ controller(controllerCtor: ControllerClass<ControllerInstance>): Binding;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  controllerCtor | <code>ControllerClass&lt;ControllerInstance&gt;</code> | The controller class (constructor function). |
+|  controllerCtor | [ControllerClass](./rest.controllerclass.md)<!-- -->&lt;[ControllerInstance](./rest.controllerinstance.md)<!-- -->&gt; | The controller class (constructor function). |
 
 <b>Returns:</b>
 
-`Binding`
+[Binding](./context.binding.md)
 
 The newly created binding, you can use the reference to further modify the binding, e.g. lock the value to prevent further modifications.
 

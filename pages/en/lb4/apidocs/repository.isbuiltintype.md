@@ -25,10 +25,10 @@ export declare function isBuiltinType(fn: Function): boolean;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  fn | <code>Function</code> |  |
+|  fn | Function |  |
 
 <b>Returns:</b>
 
-`boolean`
+boolean
 
 

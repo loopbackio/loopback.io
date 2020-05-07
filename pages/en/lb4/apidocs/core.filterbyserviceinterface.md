@@ -25,10 +25,10 @@ export declare function filterByServiceInterface(serviceInterface: ServiceInterf
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  serviceInterface | <code>ServiceInterface</code> | Service class matching the one used by <code>binding.toClass()</code> |
+|  serviceInterface | [ServiceInterface](./core.serviceinterface.md) | Service class matching the one used by <code>binding.toClass()</code> |
 
 <b>Returns:</b>
 
-`BindingFilter`
+[BindingFilter](./context.bindingfilter.md)
 
 

@@ -23,12 +23,12 @@ registerController<T>(spec: ControllerSpec, controllerCtor: ControllerClass<T>, 
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  spec | <code>ControllerSpec</code> |  |
-|  controllerCtor | <code>ControllerClass&lt;T&gt;</code> |  |
-|  controllerFactory | <code>ControllerFactory&lt;T&gt;</code> |  |
+|  spec | [ControllerSpec](./openapi-v3.controllerspec.md) |  |
+|  controllerCtor | [ControllerClass](./rest.controllerclass.md)<!-- -->&lt;T&gt; |  |
+|  controllerFactory | [ControllerFactory](./rest.controllerfactory.md)<!-- -->&lt;T&gt; |  |
 
 <b>Returns:</b>
 
-`void`
+void
 
 

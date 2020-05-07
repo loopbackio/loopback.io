@@ -23,10 +23,10 @@ convertToUserProfile(user: User): UserProfile;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  user | <code>User</code> |  |
+|  user | [User](./authentication-jwt.user.md) |  |
 
 <b>Returns:</b>
 
-`UserProfile`
+[UserProfile](./security.userprofile.md)
 
 

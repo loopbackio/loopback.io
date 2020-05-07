@@ -25,10 +25,10 @@ pushInjection(injection: Readonly<Injection>): void;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  injection | <code>Readonly&lt;Injection&gt;</code> | Injection The current injection |
+|  injection | Readonly&lt;[Injection](./context.injection.md)<!-- -->&gt; | Injection The current injection |
 
 <b>Returns:</b>
 
-`void`
+void
 
 

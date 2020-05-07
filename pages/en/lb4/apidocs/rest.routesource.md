@@ -29,8 +29,8 @@ export declare class RouteSource implements InvocationSource<RouteEntry>
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [type](./rest.routesource.type.md) |  | <code>string</code> |  |
-|  [value](./rest.routesource.value.md) |  | <code>RouteEntry</code> |  |
+|  [type](./rest.routesource.type.md) |  | string |  |
+|  [value](./rest.routesource.value.md) |  | [RouteEntry](./rest.routeentry.md) |  |
 
 ## Methods
 

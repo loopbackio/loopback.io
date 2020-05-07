@@ -25,7 +25,7 @@ constructor(context: Context, handler: HttpHandler);
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  context | <code>Context</code> |  |
-|  handler | <code>HttpHandler</code> |  |
+|  context | [Context](./context.context.md) |  |
+|  handler | [HttpHandler](./rest.httphandler.md) |  |
 
 

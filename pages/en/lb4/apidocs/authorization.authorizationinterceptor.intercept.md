@@ -16,18 +16,18 @@ permalink: /doc/en/lb4/apidocs.authorization.authorizationinterceptor.intercept.
 <b>Signature:</b>
 
 ```typescript
-intercept(invocationCtx: InvocationContext, next: Next): Promise<any>;
+intercept(invocationCtx: InvocationContext, next: Next): Promise<import("@loopback/context").NonVoid>;
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  invocationCtx | <code>InvocationContext</code> |  |
-|  next | <code>Next</code> |  |
+|  invocationCtx | [InvocationContext](./context.invocationcontext.md) |  |
+|  next | [Next](./context.next.md) |  |
 
 <b>Returns:</b>
 
-`Promise<any>`
+Promise&lt;import("@loopback/context").[NonVoid](./context.nonvoid.md)<!-- -->&gt;
 
 

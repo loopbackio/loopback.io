@@ -25,10 +25,10 @@ values(session?: ResolutionSession): Promise<T[]>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  session | <code>ResolutionSession</code> |  |
+|  session | [ResolutionSession](./context.resolutionsession.md) |  |
 
 <b>Returns:</b>
 
-`Promise<T[]>`
+Promise&lt;T\[\]&gt;
 
 

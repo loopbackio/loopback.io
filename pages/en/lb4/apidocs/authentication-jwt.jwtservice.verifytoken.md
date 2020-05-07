@@ -23,10 +23,10 @@ verifyToken(token: string): Promise<UserProfile>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  token | <code>string</code> |  |
+|  token | string |  |
 
 <b>Returns:</b>
 
-`Promise<UserProfile>`
+Promise&lt;[UserProfile](./security.userprofile.md)<!-- -->&gt;
 
 

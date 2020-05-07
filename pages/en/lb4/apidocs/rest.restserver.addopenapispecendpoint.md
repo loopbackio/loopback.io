@@ -18,18 +18,19 @@ Add a new non-controller endpoint hosting a form of the OpenAPI spec.
 <b>Signature:</b>
 
 ```typescript
-addOpenApiSpecEndpoint(path: string, form: OpenApiSpecForm): void;
+addOpenApiSpecEndpoint(path: string, form: OpenApiSpecForm, router?: express.Router): void;
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  path | <code>string</code> | Path at which to host the copy of the OpenAPI |
-|  form | <code>OpenApiSpecForm</code> | Form that should be renedered from that path |
+|  path | string | Path at which to host the copy of the OpenAPI |
+|  form | [OpenApiSpecForm](./rest.openapispecform.md) | Form that should be rendered from that path |
+|  router | express.Router |  |
 
 <b>Returns:</b>
 
-`void`
+void
 
 

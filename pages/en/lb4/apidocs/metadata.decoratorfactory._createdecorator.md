@@ -25,12 +25,12 @@ protected static _createDecorator<T, M extends T | MetadataMap<T> | MetadataMap<
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  key | <code>MetadataKey&lt;T, D&gt;</code> | Metadata key |
-|  spec | <code>T</code> | Metadata object from the decorator function |
-|  options | <code>DecoratorOptions</code> | Options for the decorator |
+|  key | [MetadataKey](./metadata.metadatakey.md)<!-- -->&lt;T, D&gt; | Metadata key |
+|  spec | T | Metadata object from the decorator function |
+|  options | [DecoratorOptions](./metadata.decoratoroptions.md) | Options for the decorator |
 
 <b>Returns:</b>
 
-`D`
+D
 
 

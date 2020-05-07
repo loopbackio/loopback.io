@@ -23,13 +23,13 @@ protected mergeWithOwn(ownMetadata: MetadataMap<T>, target: Object, propertyName
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  ownMetadata | <code>MetadataMap&lt;T&gt;</code> |  |
-|  target | <code>Object</code> |  |
-|  propertyName | <code>string</code> |  |
-|  descriptorOrParameterIndex | <code>TypedPropertyDescriptor&lt;any&gt; &#124; number</code> |  |
+|  ownMetadata | [MetadataMap](./metadata.metadatamap.md)<!-- -->&lt;T&gt; |  |
+|  target | Object |  |
+|  propertyName | string |  |
+|  descriptorOrParameterIndex | TypedPropertyDescriptor&lt;any&gt; \| number |  |
 
 <b>Returns:</b>
 
-`MetadataMap<T>`
+[MetadataMap](./metadata.metadatamap.md)<!-- -->&lt;T&gt;
 
 

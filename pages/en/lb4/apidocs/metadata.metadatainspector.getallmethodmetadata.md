@@ -25,12 +25,12 @@ static getAllMethodMetadata<T>(key: MetadataKey<T, MethodDecorator>, target: Obj
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  key | <code>MetadataKey&lt;T, MethodDecorator&gt;</code> | Metadata key |
-|  target | <code>Object</code> | Class for static methods or prototype for instance methods |
-|  options | <code>InspectionOptions</code> | Options for inspection |
+|  key | [MetadataKey](./metadata.metadatakey.md)<!-- -->&lt;T, MethodDecorator&gt; | Metadata key |
+|  target | Object | Class for static methods or prototype for instance methods |
+|  options | [InspectionOptions](./metadata.inspectionoptions.md) | Options for inspection |
 
 <b>Returns:</b>
 
-`MetadataMap<T> | undefined`
+[MetadataMap](./metadata.metadatamap.md)<!-- -->&lt;T&gt; \| undefined
 
 

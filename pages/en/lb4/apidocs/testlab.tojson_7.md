@@ -23,10 +23,10 @@ export declare function toJSON(value: boolean): boolean;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  value | <code>boolean</code> |  |
+|  value | boolean |  |
 
 <b>Returns:</b>
 
-`boolean`
+boolean
 
 

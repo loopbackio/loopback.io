@@ -25,12 +25,12 @@ hasMetadata(metadataKey: string, target: Object, propertyKey?: string): boolean;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  metadataKey | <code>string</code> | Key |
-|  target | <code>Object</code> | Target |
-|  propertyKey | <code>string</code> | Optional property key |
+|  metadataKey | string | Key |
+|  target | Object | Target |
+|  propertyKey | string | Optional property key |
 
 <b>Returns:</b>
 
-`boolean`
+boolean
 
 

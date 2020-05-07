@@ -23,11 +23,11 @@ export declare function parseJson(text: string, reviver?: (key: any, value: any)
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  text | <code>string</code> | JSON string |
-|  reviver | <code>(key: any, value: any) =&gt; any</code> | Optional reviver function for <code>JSON.parse</code> |
+|  text | string | JSON string |
+|  reviver | (key: any, value: any) =&gt; any | Optional reviver function for <code>JSON.parse</code> |
 
 <b>Returns:</b>
 
-`any`
+any
 
 

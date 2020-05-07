@@ -25,13 +25,13 @@ find(modelClass: Class<Entity>, filter?: Filter, options?: Options): Promise<Ent
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  modelClass | <code>Class&lt;Entity&gt;</code> | The model class |
-|  filter | <code>Filter</code> | The query filter |
-|  options | <code>Options</code> | Options for the operation |
+|  modelClass | [Class](./repository.class.md)<!-- -->&lt;[Entity](./repository.entity.md)<!-- -->&gt; | The model class |
+|  filter | [Filter](./repository.filter.md) | The query filter |
+|  options | [Options](./repository.options.md) | Options for the operation |
 
 <b>Returns:</b>
 
-`Promise<EntityData[]>`
+Promise&lt;[EntityData](./repository.entitydata.md)<!-- -->\[\]&gt;
 
 A promise of an array of entities found for the filter
 

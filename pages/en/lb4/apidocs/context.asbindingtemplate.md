@@ -25,10 +25,10 @@ export declare function asBindingTemplate<T = unknown>(scopeAndTags: BindingScop
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  scopeAndTags | <code>BindingScopeAndTags</code> | Binding scope and tags |
+|  scopeAndTags | [BindingScopeAndTags](./context.bindingscopeandtags.md) | Binding scope and tags |
 
 <b>Returns:</b>
 
-`BindingTemplate<T>`
+[BindingTemplate](./context.bindingtemplate.md)<!-- -->&lt;T&gt;
 
 

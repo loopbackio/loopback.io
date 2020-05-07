@@ -25,10 +25,10 @@ subscribe(observer: ContextEventObserver): Subscription;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  observer | <code>ContextEventObserver</code> | Context observer instance or function |
+|  observer | [ContextEventObserver](./context.contexteventobserver.md) | Context observer instance or function |
 
 <b>Returns:</b>
 
-`Subscription`
+[Subscription](./context.subscription.md)
 
 

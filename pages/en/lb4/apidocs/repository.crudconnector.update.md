@@ -25,13 +25,13 @@ update?(modelClass: Class<Entity>, entity: EntityData, options?: Options): Promi
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  modelClass | <code>Class&lt;Entity&gt;</code> | The model class |
-|  entity | <code>EntityData</code> | The entity instance or data |
-|  options | <code>Options</code> | Options for the operation |
+|  modelClass | [Class](./repository.class.md)<!-- -->&lt;[Entity](./repository.entity.md)<!-- -->&gt; | The model class |
+|  entity | [EntityData](./repository.entitydata.md) | The entity instance or data |
+|  options | [Options](./repository.options.md) | Options for the operation |
 
 <b>Returns:</b>
 
-`Promise<boolean>`
+Promise&lt;boolean&gt;
 
 Promise<true> if an entity is updated, otherwise Promise<false>
 

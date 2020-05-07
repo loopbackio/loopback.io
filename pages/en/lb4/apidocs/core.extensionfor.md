@@ -25,10 +25,10 @@ export declare function extensionFor(...extensionPointNames: string[]): BindingT
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  extensionPointNames | <code>string[]</code> | Names of the extension point |
+|  extensionPointNames | string\[\] | Names of the extension point |
 
 <b>Returns:</b>
 
-`BindingTemplate`
+[BindingTemplate](./context.bindingtemplate.md)
 
 

@@ -25,6 +25,6 @@ constructor(itemType: Type<T>);
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  itemType | <code>Type&lt;T&gt;</code> |  |
+|  itemType | [Type](./repository.type.md)<!-- -->&lt;T&gt; |  |
 
 

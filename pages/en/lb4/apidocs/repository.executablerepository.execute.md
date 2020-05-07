@@ -25,12 +25,12 @@ execute(command: Command, parameters: NamedParameters | PositionalParameters, op
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  command | <code>Command</code> | The query string or command object |
-|  parameters | <code>NamedParameters &#124; PositionalParameters</code> | The object with name/value pairs or an array of parameter values |
-|  options | <code>Options</code> | Options |
+|  command | [Command](./repository.command.md) | The query string or command object |
+|  parameters | [NamedParameters](./repository.namedparameters.md) \| [PositionalParameters](./repository.positionalparameters.md) | The object with name/value pairs or an array of parameter values |
+|  options | [Options](./repository.options.md) | Options |
 
 <b>Returns:</b>
 
-`Promise<AnyObject>`
+Promise&lt;[AnyObject](./repository.anyobject.md)<!-- -->&gt;
 
 

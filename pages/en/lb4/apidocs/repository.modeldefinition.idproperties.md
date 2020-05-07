@@ -22,7 +22,7 @@ idProperties(): string[];
 ```
 <b>Returns:</b>
 
-`string[]`
+string\[\]
 
 ## Example
 

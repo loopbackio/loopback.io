@@ -49,8 +49,8 @@ The `myMethod` above has design-time metadata as follows:
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [parameterTypes](./metadata.designtimemethodmetadata.parametertypes.md) | <code>Function[]</code> | An array of parameter types |
-|  [returnType](./metadata.designtimemethodmetadata.returntype.md) | <code>Function</code> | Return type |
-|  [type](./metadata.designtimemethodmetadata.type.md) | <code>Function</code> | Type of the method itself. It is <code>Function</code> |
+|  [parameterTypes](./metadata.designtimemethodmetadata.parametertypes.md) | Function\[\] | An array of parameter types |
+|  [returnType](./metadata.designtimemethodmetadata.returntype.md) | Function | Return type |
+|  [type](./metadata.designtimemethodmetadata.type.md) | Function | Type of the method itself. It is <code>Function</code> |
 
 

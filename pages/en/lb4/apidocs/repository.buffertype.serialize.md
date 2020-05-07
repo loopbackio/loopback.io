@@ -23,11 +23,11 @@ serialize(value: Buffer | null | undefined, options?: Options): string | null | 
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  value | <code>Buffer &#124; null &#124; undefined</code> |  |
-|  options | <code>Options</code> |  |
+|  value | Buffer \| null \| undefined |  |
+|  options | [Options](./repository.options.md) |  |
 
 <b>Returns:</b>
 
-`string | null | undefined`
+string \| null \| undefined
 
 

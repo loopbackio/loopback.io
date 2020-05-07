@@ -25,11 +25,11 @@ export declare function tryWithFinally<T>(action: () => ValueOrPromise<T>, final
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  action | <code>() =&gt; ValueOrPromise&lt;T&gt;</code> | A function that returns a promise or a value |
-|  finalAction | <code>() =&gt; void</code> | A function to be called once the action is fulfilled or rejected (synchronously or asynchronously) |
+|  action | () =&gt; [ValueOrPromise](./context.valueorpromise.md)<!-- -->&lt;T&gt; | A function that returns a promise or a value |
+|  finalAction | () =&gt; void | A function to be called once the action is fulfilled or rejected (synchronously or asynchronously) |
 
 <b>Returns:</b>
 
-`ValueOrPromise<T>`
+[ValueOrPromise](./context.valueorpromise.md)<!-- -->&lt;T&gt;
 
 

@@ -25,11 +25,11 @@ withCallback(name: string, callback: CallbackObject | ReferenceObject): this;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  name | <code>string</code> | The name of the callback |
-|  callback | <code>CallbackObject &#124; ReferenceObject</code> | Specification of the callback |
+|  name | string | The name of the callback |
+|  callback | CallbackObject \| ReferenceObject | Specification of the callback |
 
 <b>Returns:</b>
 
-`this`
+this
 
 

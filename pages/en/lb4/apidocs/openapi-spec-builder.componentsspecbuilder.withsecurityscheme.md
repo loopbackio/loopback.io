@@ -25,11 +25,11 @@ withSecurityScheme(name: string, securityScheme: SecuritySchemeObject | Referenc
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  name | <code>string</code> | The name of the security scheme |
-|  securityScheme | <code>SecuritySchemeObject &#124; ReferenceObject</code> | Specification of the security scheme |
+|  name | string | The name of the security scheme |
+|  securityScheme | SecuritySchemeObject \| ReferenceObject | Specification of the security scheme |
 
 <b>Returns:</b>
 
-`this`
+this
 
 

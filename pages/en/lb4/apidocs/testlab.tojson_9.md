@@ -23,10 +23,10 @@ export declare function toJSON(value: unknown[] | null): unknown[] | null;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  value | <code>unknown[] &#124; null</code> |  |
+|  value | unknown\[\] \| null |  |
 
 <b>Returns:</b>
 
-`unknown[] | null`
+unknown\[\] \| null
 
 

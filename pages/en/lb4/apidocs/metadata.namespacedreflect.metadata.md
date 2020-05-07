@@ -26,14 +26,11 @@ metadata(metadataKey: string, metadataValue: any): {
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  metadataKey | <code>string</code> |  |
-|  metadataValue | <code>any</code> |  |
+|  metadataKey | string |  |
+|  metadataValue | any |  |
 
 <b>Returns:</b>
 
-`{
-        (target: Function): void;
-        (target: Object, targetKey: string | symbol): void;
-    }`
+{ (target: Function): void; (target: Object, targetKey: string \| symbol): void; }
 
 

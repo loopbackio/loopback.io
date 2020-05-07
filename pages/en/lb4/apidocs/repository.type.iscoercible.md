@@ -25,12 +25,12 @@ isCoercible(value: any, options?: Options): boolean;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  value | <code>any</code> | The value to to be coerced |
-|  options | <code>Options</code> |  |
+|  value | any | The value to to be coerced |
+|  options | [Options](./repository.options.md) |  |
 
 <b>Returns:</b>
 
-`boolean`
+boolean
 
 A flag to indicate if the value can be coerced
 

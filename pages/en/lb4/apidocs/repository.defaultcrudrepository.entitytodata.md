@@ -27,11 +27,11 @@ protected entityToData<R extends T>(entity: R | DataObject<R>, options?: {}): Pr
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  entity | <code>R &#124; DataObject&lt;R&gt;</code> | The entity passed from CRUD operations' caller. |
-|  options | <code>{}</code> |  |
+|  entity | R \| [DataObject](./repository.dataobject.md)<!-- -->&lt;R&gt; | The entity passed from CRUD operations' caller. |
+|  options | {} |  |
 
 <b>Returns:</b>
 
-`Promise<legacy.ModelData<legacy.PersistedModel>>`
+Promise&lt;legacy.ModelData&lt;legacy.PersistedModel&gt;&gt;
 
 

@@ -22,6 +22,6 @@ getIdObject(): Object;
 ```
 <b>Returns:</b>
 
-`Object`
+Object
 
 

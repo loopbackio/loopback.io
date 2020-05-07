@@ -25,10 +25,10 @@ export declare function ensurePromise<T>(p: legacy.PromiseOrVoid<T>): Promise<T>
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  p | <code>legacy.PromiseOrVoid&lt;T&gt;</code> | Promise or void |
+|  p | legacy.PromiseOrVoid&lt;T&gt; | Promise or void |
 
 <b>Returns:</b>
 
-`Promise<T>`
+Promise&lt;T&gt;
 
 

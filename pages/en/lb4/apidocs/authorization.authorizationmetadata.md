@@ -25,11 +25,11 @@ export interface AuthorizationMetadata
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [allowedRoles](./authorization.authorizationmetadata.allowedroles.md) | <code>string[]</code> | Roles that are allowed access |
-|  [deniedRoles](./authorization.authorizationmetadata.deniedroles.md) | <code>string[]</code> | Roles that are denied access |
-|  [resource](./authorization.authorizationmetadata.resource.md) | <code>string</code> | Name of the resource, default to the method name |
-|  [scopes](./authorization.authorizationmetadata.scopes.md) | <code>string[]</code> | Define the access scopes |
-|  [skip](./authorization.authorizationmetadata.skip.md) | <code>boolean</code> | A flag to skip authorization |
-|  [voters](./authorization.authorizationmetadata.voters.md) | <code>(Authorizer &#124; BindingAddress&lt;Authorizer&gt;)[]</code> | Voters that help make the authorization decision |
+|  [allowedRoles](./authorization.authorizationmetadata.allowedroles.md) | string\[\] | Roles that are allowed access |
+|  [deniedRoles](./authorization.authorizationmetadata.deniedroles.md) | string\[\] | Roles that are denied access |
+|  [resource](./authorization.authorizationmetadata.resource.md) | string | Name of the resource, default to the method name |
+|  [scopes](./authorization.authorizationmetadata.scopes.md) | string\[\] | Define the access scopes |
+|  [skip](./authorization.authorizationmetadata.skip.md) | boolean | A flag to skip authorization |
+|  [voters](./authorization.authorizationmetadata.voters.md) | ([Authorizer](./authorization.authorizer.md) \| [BindingAddress](./context.bindingaddress.md)<!-- -->&lt;[Authorizer](./authorization.authorizer.md)<!-- -->&gt;)\[\] | Voters that help make the authorization decision |
 
 

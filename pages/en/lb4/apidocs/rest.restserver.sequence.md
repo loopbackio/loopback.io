@@ -25,11 +25,11 @@ sequence(value: Constructor<SequenceHandler>): void;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  value | <code>Constructor&lt;SequenceHandler&gt;</code> | The sequence to invoke for each incoming request. |
+|  value | [Constructor](./context.constructor.md)<!-- -->&lt;[SequenceHandler](./rest.sequencehandler.md)<!-- -->&gt; | The sequence to invoke for each incoming request. |
 
 <b>Returns:</b>
 
-`void`
+void
 
 ## Example
 

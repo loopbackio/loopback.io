@@ -25,10 +25,10 @@ export declare function removeNameAndKeyTags(binding: Binding<unknown>): void;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  binding | <code>Binding&lt;unknown&gt;</code> |  |
+|  binding | [Binding](./context.binding.md)<!-- -->&lt;unknown&gt; |  |
 
 <b>Returns:</b>
 
-`void`
+void
 
 

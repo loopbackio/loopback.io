@@ -30,11 +30,11 @@ protected _createHasManyRepositoryFactoryFor<Target extends Entity, TargetID, Fo
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  relationName | <code>string</code> | Name of the relation defined on the source model |
-|  targetRepoGetter | <code>Getter&lt;EntityCrudRepository&lt;Target, TargetID&gt;&gt;</code> |  |
+|  relationName | string | Name of the relation defined on the source model |
+|  targetRepoGetter | [Getter](./context.getter.md)<!-- -->&lt;[EntityCrudRepository](./repository.entitycrudrepository.md)<!-- -->&lt;Target, TargetID&gt;&gt; |  |
 
 <b>Returns:</b>
 
-`HasManyRepositoryFactory<Target, ForeignKeyType>`
+[HasManyRepositoryFactory](./repository.hasmanyrepositoryfactory.md)<!-- -->&lt;Target, ForeignKeyType&gt;
 
 

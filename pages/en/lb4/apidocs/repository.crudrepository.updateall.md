@@ -25,13 +25,13 @@ updateAll(dataObject: DataObject<T>, where?: Where<T>, options?: Options): Promi
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  dataObject | <code>DataObject&lt;T&gt;</code> | The data to be updated |
-|  where | <code>Where&lt;T&gt;</code> | Matching criteria |
-|  options | <code>Options</code> | Options for the operations |
+|  dataObject | [DataObject](./repository.dataobject.md)<!-- -->&lt;T&gt; | The data to be updated |
+|  where | [Where](./repository.where.md)<!-- -->&lt;T&gt; | Matching criteria |
+|  options | [Options](./repository.options.md) | Options for the operations |
 
 <b>Returns:</b>
 
-`Promise<Count>`
+Promise&lt;[Count](./repository.count.md)<!-- -->&gt;
 
 A promise of number of records updated
 

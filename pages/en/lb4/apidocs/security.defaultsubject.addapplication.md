@@ -23,10 +23,10 @@ addApplication(app: ClientApplication): void;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  app | <code>ClientApplication</code> |  |
+|  app | [ClientApplication](./security.clientapplication.md) |  |
 
 <b>Returns:</b>
 
-`void`
+void
 
 

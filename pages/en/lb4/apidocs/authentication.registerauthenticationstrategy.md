@@ -25,11 +25,11 @@ export declare function registerAuthenticationStrategy(context: Context, strateg
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  context | <code>Context</code> | Context object |
-|  strategyClass | <code>Constructor&lt;AuthenticationStrategy&gt;</code> | Class for the authentication strategy |
+|  context | [Context](./context.context.md) | Context object |
+|  strategyClass | [Constructor](./context.constructor.md)<!-- -->&lt;[AuthenticationStrategy](./authentication.authenticationstrategy.md)<!-- -->&gt; | Class for the authentication strategy |
 
 <b>Returns:</b>
 
-`import("@loopback/core").Binding<unknown>`
+import("@loopback/core").[Binding](./context.binding.md)<!-- -->&lt;unknown&gt;
 
 

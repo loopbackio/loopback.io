@@ -23,7 +23,7 @@ export interface ResolvedNode<T>
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [node](./rest.resolvednode.node.md) | <code>Node&lt;T&gt;</code> |  |
-|  [params](./rest.resolvednode.params.md) | <code>PathParameterValues</code> |  |
+|  [node](./rest.resolvednode.node.md) | [Node](./rest.node.md)<!-- -->&lt;T&gt; |  |
+|  [params](./rest.resolvednode.params.md) | [PathParameterValues](./rest.pathparametervalues.md) |  |
 
 

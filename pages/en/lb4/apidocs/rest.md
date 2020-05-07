@@ -92,7 +92,6 @@ A REST server for LoopBack 4 application instances, complete with:
 |  --- | --- |
 |  [ApiExplorerOptions](./rest.apiexploreroptions.md) |  |
 |  [BodyParser](./rest.bodyparser.md) | Interface to be implemented by body parser extensions |
-|  [HandlerContext](./rest.handlercontext.md) | An object holding HTTP request, response and other data needed to handle an incoming HTTP request. |
 |  [HttpServerLike](./rest.httpserverlike.md) |  |
 |  [Node](./rest.node.md) | A Node in the trie |
 |  [OpenApiSpecForm](./rest.openapispecform.md) | The form of OpenAPI specs to be served |
@@ -141,7 +140,6 @@ A REST server for LoopBack 4 application instances, complete with:
 |  [ControllerClass](./rest.controllerclass.md) | Controller class |
 |  [ControllerFactory](./rest.controllerfactory.md) | A factory function to create controller instances synchronously or asynchronously |
 |  [ControllerInstance](./rest.controllerinstance.md) |  |
-|  [ExpressRequestHandler](./rest.expressrequesthandler.md) |  |
 |  [FindRoute](./rest.findroute.md) | Find a route matching the incoming request. Throw an error when no route was found. |
 |  [GetFromContext](./rest.getfromcontext.md) |  |
 |  [HttpRequestListener](./rest.httprequestlistener.md) |  |

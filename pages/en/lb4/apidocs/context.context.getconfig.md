@@ -25,12 +25,12 @@ getConfig<ConfigValueType>(key: BindingAddress, propertyPath?: string, resolutio
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  key | <code>BindingAddress</code> | Binding key |
-|  propertyPath | <code>string</code> | Property path for the option. For example, <code>x.y</code> requests for <code>&lt;config&gt;.x.y</code>. If not set, the <code>&lt;config&gt;</code> object will be returned. |
-|  resolutionOptions | <code>ResolutionOptions</code> | Options for the resolution. |
+|  key | [BindingAddress](./context.bindingaddress.md) | Binding key |
+|  propertyPath | string | Property path for the option. For example, <code>x.y</code> requests for <code>&lt;config&gt;.x.y</code>. If not set, the <code>&lt;config&gt;</code> object will be returned. |
+|  resolutionOptions | [ResolutionOptions](./context.resolutionoptions.md) | Options for the resolution. |
 
 <b>Returns:</b>
 
-`Promise<ConfigValueType | undefined>`
+Promise&lt;ConfigValueType \| undefined&gt;
 
 

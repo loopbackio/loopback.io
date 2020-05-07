@@ -25,10 +25,10 @@ withTags(tags: string | string[]): this;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  tags | <code>string &#124; string[]</code> |  |
+|  tags | string \| string\[\] |  |
 
 <b>Returns:</b>
 
-`this`
+this
 
 

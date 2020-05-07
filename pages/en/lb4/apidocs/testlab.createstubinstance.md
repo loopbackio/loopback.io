@@ -29,11 +29,11 @@ export declare function createStubInstance<TType>(constructor: sinon.StubbableTy
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  constructor | <code>sinon.StubbableType&lt;TType&gt;</code> | Object or class to stub. |
+|  constructor | sinon.StubbableType&lt;TType&gt; | Object or class to stub. |
 
 <b>Returns:</b>
 
-`StubbedInstanceWithSinonAccessor<TType>`
+[StubbedInstanceWithSinonAccessor](./testlab.stubbedinstancewithsinonaccessor.md)<!-- -->&lt;TType&gt;
 
 A stubbed version of the constructor, with an extra property `stubs` providing access to stub API for individual methods.
 

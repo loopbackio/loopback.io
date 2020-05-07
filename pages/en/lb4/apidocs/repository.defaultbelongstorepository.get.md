@@ -23,10 +23,10 @@ get(options?: Options): Promise<TargetEntity>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  options | <code>Options</code> |  |
+|  options | [Options](./repository.options.md) |  |
 
 <b>Returns:</b>
 
-`Promise<TargetEntity>`
+Promise&lt;TargetEntity&gt;
 
 

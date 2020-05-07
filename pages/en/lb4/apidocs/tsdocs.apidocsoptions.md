@@ -25,12 +25,12 @@ export interface ApiDocsOptions
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [apiDocsExtractionPath](./tsdocs.apidocsoptions.apidocsextractionpath.md) | <code>string</code> | Path to tsdocs reports/models |
-|  [apiDocsGenerationPath](./tsdocs.apidocsoptions.apidocsgenerationpath.md) | <code>string</code> | Path to target directory to generate apidocs |
-|  [dryRun](./tsdocs.apidocsoptions.dryrun.md) | <code>boolean</code> | To have a dry-run without generating api reports/doc models |
-|  [generateDefaultPackageDoc](./tsdocs.apidocsoptions.generatedefaultpackagedoc.md) | <code>boolean</code> | A flag to generate default package documentation |
-|  [lernaPackages](./tsdocs.apidocsoptions.lernapackages.md) | <code>Record&lt;string, LernaPackage&gt;</code> | Package metadata |
-|  [rootDir](./tsdocs.apidocsoptions.rootdir.md) | <code>string</code> | Root directory for the lerna-managed monorepo, default to current dir |
-|  [silent](./tsdocs.apidocsoptions.silent.md) | <code>boolean</code> | If <code>true</code>, do not print messages to console |
+|  [apiDocsExtractionPath](./tsdocs.apidocsoptions.apidocsextractionpath.md) | string | Path to tsdocs reports/models |
+|  [apiDocsGenerationPath](./tsdocs.apidocsoptions.apidocsgenerationpath.md) | string | Path to target directory to generate apidocs |
+|  [dryRun](./tsdocs.apidocsoptions.dryrun.md) | boolean | To have a dry-run without generating api reports/doc models |
+|  [generateDefaultPackageDoc](./tsdocs.apidocsoptions.generatedefaultpackagedoc.md) | boolean | A flag to generate default package documentation |
+|  [lernaPackages](./tsdocs.apidocsoptions.lernapackages.md) | Record&lt;string, [LernaPackage](./tsdocs.lernapackage.md)<!-- -->&gt; | Package metadata |
+|  [rootDir](./tsdocs.apidocsoptions.rootdir.md) | string | Root directory for the lerna-managed monorepo, default to current dir |
+|  [silent](./tsdocs.apidocsoptions.silent.md) | boolean | If <code>true</code>, do not print messages to console |
 
 

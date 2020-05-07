@@ -25,11 +25,11 @@ export declare function getAuthenticateMetadata(targetClass: Constructor<{}>, me
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  targetClass | <code>Constructor&lt;{}&gt;</code> | Target controller |
-|  methodName | <code>string</code> | Target method |
+|  targetClass | [Constructor](./context.constructor.md)<!-- -->&lt;{}&gt; | Target controller |
+|  methodName | string | Target method |
 
 <b>Returns:</b>
 
-`AuthenticationMetadata | undefined`
+[AuthenticationMetadata](./authentication.authenticationmetadata.md) \| undefined
 
 

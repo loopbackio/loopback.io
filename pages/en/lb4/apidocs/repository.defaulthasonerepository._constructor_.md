@@ -25,7 +25,7 @@ constructor(getTargetRepository: Getter<TargetRepository>, constraint: DataObjec
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  getTargetRepository | <code>Getter&lt;TargetRepository&gt;</code> | the getter of the related target model repository instance |
-|  constraint | <code>DataObject&lt;TargetEntity&gt;</code> | the key value pair representing foreign key name to constrain the target repository instance |
+|  getTargetRepository | [Getter](./context.getter.md)<!-- -->&lt;TargetRepository&gt; | the getter of the related target model repository instance |
+|  constraint | [DataObject](./repository.dataobject.md)<!-- -->&lt;TargetEntity&gt; | the key value pair representing foreign key name to constrain the target repository instance |
 
 

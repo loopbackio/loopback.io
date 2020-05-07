@@ -35,6 +35,6 @@ export interface AndClause<MT extends object>
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [and](./repository.andclause.and.md) | <code>Where&lt;MT&gt;[]</code> |  |
+|  [and](./repository.andclause.and.md) | [Where](./repository.where.md)<!-- -->&lt;MT&gt;\[\] |  |
 
 

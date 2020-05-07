@@ -51,9 +51,9 @@ export class TestRepository extends CrudRepositoryImpl<Test> {
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [dataSource](./repository.crudrepositoryimpl.datasource.md) |  | <code>DataSource</code> |  |
-|  [entityClass](./repository.crudrepositoryimpl.entityclass.md) |  | <code>typeof Entity &amp; {</code><br/><code>        prototype: T;</code><br/><code>    }</code> |  |
-|  [inclusionResolvers](./repository.crudrepositoryimpl.inclusionresolvers.md) |  | <code>Map&lt;string, InclusionResolver&lt;T, Entity&gt;&gt;</code> |  |
+|  [dataSource](./repository.crudrepositoryimpl.datasource.md) |  | [DataSource](./repository.datasource.md) |  |
+|  [entityClass](./repository.crudrepositoryimpl.entityclass.md) |  | typeof [Entity](./repository.entity.md) &amp; { prototype: T; } |  |
+|  [inclusionResolvers](./repository.crudrepositoryimpl.inclusionresolvers.md) |  | Map&lt;string, [InclusionResolver](./repository.inclusionresolver.md)<!-- -->&lt;T, [Entity](./repository.entity.md)<!-- -->&gt;&gt; |  |
 
 ## Methods
 

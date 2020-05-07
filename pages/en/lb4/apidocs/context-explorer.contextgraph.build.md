@@ -22,6 +22,6 @@ build(): import("ts-graphviz").Digraph;
 ```
 <b>Returns:</b>
 
-`import("ts-graphviz").Digraph`
+import("ts-graphviz").Digraph
 
 

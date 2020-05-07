@@ -25,8 +25,8 @@ constructor(verb: string, path: string, spec: OperationObject);
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  verb | <code>string</code> | http verb |
-|  path | <code>string</code> | http request path pattern |
-|  spec | <code>OperationObject</code> | OpenAPI operation spec |
+|  verb | string | http verb |
+|  path | string | http request path pattern |
+|  spec | OperationObject | OpenAPI operation spec |
 
 

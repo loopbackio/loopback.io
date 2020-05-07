@@ -25,10 +25,10 @@ limit(limit: number): this;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  limit | <code>number</code> | Maximum number of records to be returned |
+|  limit | number | Maximum number of records to be returned |
 
 <b>Returns:</b>
 
-`this`
+this
 
 

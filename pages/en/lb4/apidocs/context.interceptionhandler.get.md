@@ -23,12 +23,12 @@ get(target: T, propertyName: PropertyKey, receiver: unknown): any;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  target | <code>T</code> |  |
-|  propertyName | <code>PropertyKey</code> |  |
-|  receiver | <code>unknown</code> |  |
+|  target | T |  |
+|  propertyName | PropertyKey |  |
+|  receiver | unknown |  |
 
 <b>Returns:</b>
 
-`any`
+any
 
 

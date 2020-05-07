@@ -25,10 +25,10 @@ export declare function createUnexpectedHttpErrorLogger(expectedStatusCode?: num
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  expectedStatusCode | <code>number</code> | HTTP status code that is expected |
+|  expectedStatusCode | number | HTTP status code that is expected |
 
 <b>Returns:</b>
 
-`LogError`
+LogError
 
 

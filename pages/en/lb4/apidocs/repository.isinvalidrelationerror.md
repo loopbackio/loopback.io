@@ -23,10 +23,10 @@ export declare function isInvalidRelationError(e: any): e is InvalidRelationErro
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  e | <code>any</code> |  |
+|  e | any |  |
 
 <b>Returns:</b>
 
-`e is InvalidRelationError<any>`
+e is [InvalidRelationError](./repository.invalidrelationerror.md)<!-- -->&lt;any&gt;
 
 

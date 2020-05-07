@@ -24,6 +24,7 @@ export declare type BindingFromClassOptions = {
     name?: string;
     namespace?: string;
     typeNamespaceMapping?: TypeNamespaceMapping;
+    defaultNamespace?: string;
     defaultScope?: BindingScope;
 };
 ```

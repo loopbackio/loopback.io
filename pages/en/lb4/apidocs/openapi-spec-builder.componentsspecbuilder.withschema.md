@@ -25,11 +25,11 @@ withSchema(name: string, schema: SchemaObject | ReferenceObject): this;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  name | <code>string</code> | The name of the schema |
-|  schema | <code>SchemaObject &#124; ReferenceObject</code> | Specification of the schema |
+|  name | string | The name of the schema |
+|  schema | SchemaObject \| ReferenceObject | Specification of the schema |
 
 <b>Returns:</b>
 
-`this`
+this
 
 

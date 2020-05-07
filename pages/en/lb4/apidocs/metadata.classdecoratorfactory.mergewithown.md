@@ -23,13 +23,13 @@ protected mergeWithOwn(ownMetadata: T, target: Object, member?: string, descript
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  ownMetadata | <code>T</code> |  |
-|  target | <code>Object</code> |  |
-|  member | <code>string</code> |  |
-|  descriptorOrIndex | <code>TypedPropertyDescriptor&lt;any&gt; &#124; number</code> |  |
+|  ownMetadata | T |  |
+|  target | Object |  |
+|  member | string |  |
+|  descriptorOrIndex | TypedPropertyDescriptor&lt;any&gt; \| number |  |
 
 <b>Returns:</b>
 
-`T`
+T
 
 

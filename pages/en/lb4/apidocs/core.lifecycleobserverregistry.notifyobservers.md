@@ -25,12 +25,12 @@ protected notifyObservers(observers: LifeCycleObserver[], bindings: Readonly<Bin
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  observers | <code>LifeCycleObserver[]</code> |  |
-|  bindings | <code>Readonly&lt;Binding&lt;LifeCycleObserver&gt;&gt;[]</code> |  |
-|  event | <code>keyof LifeCycleObserver</code> | Event name |
+|  observers | [LifeCycleObserver](./core.lifecycleobserver.md)<!-- -->\[\] |  |
+|  bindings | Readonly&lt;[Binding](./context.binding.md)<!-- -->&lt;[LifeCycleObserver](./core.lifecycleobserver.md)<!-- -->&gt;&gt;\[\] |  |
+|  event | keyof [LifeCycleObserver](./core.lifecycleobserver.md) | Event name |
 
 <b>Returns:</b>
 
-`Promise<void>`
+Promise&lt;void&gt;
 
 

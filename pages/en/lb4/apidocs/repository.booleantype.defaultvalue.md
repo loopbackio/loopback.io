@@ -20,6 +20,6 @@ defaultValue(): boolean;
 ```
 <b>Returns:</b>
 
-`boolean`
+boolean
 
 

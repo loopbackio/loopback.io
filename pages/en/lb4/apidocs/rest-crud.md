@@ -30,7 +30,6 @@ Allows LoopBack 4 applications to quickly expose models via REST API without hav
 
 |  Function | Description |
 |  --- | --- |
-|  [defineCrudRepositoryClass(entityClass)](./rest-crud.definecrudrepositoryclass.md) | Create (define) a repository class for the given model. |
 |  [defineCrudRestController(modelCtor, options)](./rest-crud.definecrudrestcontroller.md) | Create (define) a CRUD Controller class for the given model. |
 
 ## Interfaces
@@ -41,6 +40,5 @@ Allows LoopBack 4 applications to quickly expose models via REST API without hav
 |  [CrudRestControllerCtor](./rest-crud.crudrestcontrollerctor.md) | Constructor of the controller class returned by <code>defineCrudRestController</code>. |
 |  [CrudRestControllerOptions](./rest-crud.crudrestcontrolleroptions.md) | Options to configure different aspects of a CRUD REST Controller. |
 |  [ModelCrudRestApiConfig](./rest-crud.modelcrudrestapiconfig.md) |  |
-|  [RepositoryClass](./rest-crud.repositoryclass.md) |  |
 
 

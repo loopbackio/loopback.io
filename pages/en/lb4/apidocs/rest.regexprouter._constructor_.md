@@ -25,6 +25,6 @@ constructor(options?: RestRouterOptions);
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  options | <code>RestRouterOptions</code> |  |
+|  options | [RestRouterOptions](./rest.restrouteroptions.md) |  |
 
 

@@ -25,6 +25,6 @@ constructor(pkg?: ApplicationMetadata | undefined);
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  pkg | <code>ApplicationMetadata &#124; undefined</code> |  |
+|  pkg | [ApplicationMetadata](./core.applicationmetadata.md) \| undefined |  |
 
 

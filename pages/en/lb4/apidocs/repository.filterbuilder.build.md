@@ -22,6 +22,6 @@ build(): Filter<MT>;
 ```
 <b>Returns:</b>
 
-`Filter<MT>`
+[Filter](./repository.filter.md)<!-- -->&lt;MT&gt;
 
 

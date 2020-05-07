@@ -25,12 +25,12 @@ export declare function constrainWhere<T extends object>(originalWhere: Where<T>
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  originalWhere | <code>Where&lt;T&gt; &#124; undefined</code> | the where filter to apply the constrain(s) to |
-|  constraint | <code>Where&lt;T&gt;</code> | the constraint which is to be applied on the filter |
+|  originalWhere | [Where](./repository.where.md)<!-- -->&lt;T&gt; \| undefined | the where filter to apply the constrain(s) to |
+|  constraint | [Where](./repository.where.md)<!-- -->&lt;T&gt; | the constraint which is to be applied on the filter |
 
 <b>Returns:</b>
 
-`Where<T>`
+[Where](./repository.where.md)<!-- -->&lt;T&gt;
 
 Filter the modified filter with the constraint, otherwise the original filter
 

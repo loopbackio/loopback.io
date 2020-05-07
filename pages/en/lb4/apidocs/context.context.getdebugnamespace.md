@@ -22,7 +22,7 @@ protected getDebugNamespace(): string;
 ```
 <b>Returns:</b>
 
-`string`
+string
 
 ## Example
 

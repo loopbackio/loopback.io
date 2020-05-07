@@ -25,12 +25,12 @@ save(entity: DataObject<T>, options?: Options): Promise<T>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  entity | <code>DataObject&lt;T&gt;</code> | Entity to be saved |
-|  options | <code>Options</code> | Options for the operations |
+|  entity | [DataObject](./repository.dataobject.md)<!-- -->&lt;T&gt; | Entity to be saved |
+|  options | [Options](./repository.options.md) | Options for the operations |
 
 <b>Returns:</b>
 
-`Promise<T>`
+Promise&lt;T&gt;
 
 A promise that will be resolve if the operation succeeded or will be rejected if the entity was not found.
 

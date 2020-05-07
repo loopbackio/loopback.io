@@ -25,10 +25,10 @@ export declare function isBindingTagFilter(filter?: BindingFilter): filter is Bi
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  filter | <code>BindingFilter</code> | A BindingFilter function |
+|  filter | [BindingFilter](./context.bindingfilter.md) | A BindingFilter function |
 
 <b>Returns:</b>
 
-`filter is BindingTagFilter`
+filter is [BindingTagFilter](./context.bindingtagfilter.md)
 
 

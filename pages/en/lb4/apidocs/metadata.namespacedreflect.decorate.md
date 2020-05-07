@@ -23,13 +23,13 @@ decorate(decorators: (PropertyDecorator | MethodDecorator)[], target: Object, ta
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  decorators | <code>(PropertyDecorator &#124; MethodDecorator)[]</code> |  |
-|  target | <code>Object</code> |  |
-|  targetKey | <code>string &#124; symbol</code> |  |
-|  descriptor | <code>PropertyDescriptor</code> |  |
+|  decorators | (PropertyDecorator \| MethodDecorator)\[\] |  |
+|  target | Object |  |
+|  targetKey | string \| symbol |  |
+|  descriptor | PropertyDescriptor |  |
 
 <b>Returns:</b>
 
-`PropertyDescriptor | Function`
+PropertyDescriptor \| Function
 
 

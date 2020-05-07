@@ -25,12 +25,12 @@ export declare function extensionPoint(name: string, ...specs: BindingSpec[]): C
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  name | <code>string</code> | Name of the extension point |
-|  specs | <code>BindingSpec[]</code> |  |
+|  name | string | Name of the extension point |
+|  specs | [BindingSpec](./context.bindingspec.md)<!-- -->\[\] |  |
 
 <b>Returns:</b>
 
-`ClassDecorator`
+ClassDecorator
 
 ## Example
 

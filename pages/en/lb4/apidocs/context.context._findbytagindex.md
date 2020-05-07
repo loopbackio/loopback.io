@@ -25,10 +25,10 @@ protected _findByTagIndex<ValueType = BoundValue>(tag: BindingTag | RegExp): Rea
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  tag | <code>BindingTag &#124; RegExp</code> | Tag name pattern or name/value pairs |
+|  tag | [BindingTag](./context.bindingtag.md) \| RegExp | Tag name pattern or name/value pairs |
 
 <b>Returns:</b>
 
-`Readonly<Binding<ValueType>>[]`
+Readonly&lt;[Binding](./context.binding.md)<!-- -->&lt;ValueType&gt;&gt;\[\]
 
 

@@ -25,11 +25,11 @@ revokeToken?(token: string): Promise<boolean>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  token | <code>string</code> | The token/secret which should be revoked/invalidated. |
+|  token | string | The token/secret which should be revoked/invalidated. |
 
 <b>Returns:</b>
 
-`Promise<boolean>`
+Promise&lt;boolean&gt;
 
 true, if the given token was invalidated.
 

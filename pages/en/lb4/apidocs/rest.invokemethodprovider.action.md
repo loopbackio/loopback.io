@@ -23,11 +23,11 @@ action(route: RouteEntry, args: OperationArgs): Promise<OperationRetval>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  route | <code>RouteEntry</code> |  |
-|  args | <code>OperationArgs</code> |  |
+|  route | [RouteEntry](./rest.routeentry.md) |  |
+|  args | [OperationArgs](./rest.operationargs.md) |  |
 
 <b>Returns:</b>
 
-`Promise<OperationRetval>`
+Promise&lt;[OperationRetval](./rest.operationretval.md)<!-- -->&gt;
 
 

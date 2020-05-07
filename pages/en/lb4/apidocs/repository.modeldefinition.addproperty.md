@@ -25,11 +25,11 @@ addProperty(name: string, definitionOrType: PropertyDefinition | PropertyType): 
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  name | <code>string</code> | Property definition or name (string) |
-|  definitionOrType | <code>PropertyDefinition &#124; PropertyType</code> | Definition or property type |
+|  name | string | Property definition or name (string) |
+|  definitionOrType | [PropertyDefinition](./repository.propertydefinition.md) \| [PropertyType](./repository.propertytype.md) | Definition or property type |
 
 <b>Returns:</b>
 
-`this`
+this
 
 

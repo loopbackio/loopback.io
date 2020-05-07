@@ -46,7 +46,7 @@ const filter = filterBuilder
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [filter](./repository.filterbuilder.filter.md) |  | <code>Filter&lt;MT&gt;</code> |  |
+|  [filter](./repository.filterbuilder.filter.md) |  | [Filter](./repository.filter.md)<!-- -->&lt;MT&gt; |  |
 
 ## Methods
 

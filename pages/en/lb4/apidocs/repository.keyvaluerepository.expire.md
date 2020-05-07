@@ -25,12 +25,12 @@ expire(key: string, ttl: number, options?: Options): Promise<void>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  key | <code>string</code> | Key for the entry |
-|  ttl | <code>number</code> | Ttl for the entry |
-|  options | <code>Options</code> | Options for the operation |
+|  key | string | Key for the entry |
+|  ttl | number | Ttl for the entry |
+|  options | [Options](./repository.options.md) | Options for the operation |
 
 <b>Returns:</b>
 
-`Promise<void>`
+Promise&lt;void&gt;
 
 

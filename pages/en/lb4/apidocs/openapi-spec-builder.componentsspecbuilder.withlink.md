@@ -25,11 +25,11 @@ withLink(name: string, link: LinkObject | ReferenceObject): this;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  name | <code>string</code> | The name of the link |
-|  link | <code>LinkObject &#124; ReferenceObject</code> | Specification of the link |
+|  name | string | The name of the link |
+|  link | LinkObject \| ReferenceObject | Specification of the link |
 
 <b>Returns:</b>
 
-`this`
+this
 
 

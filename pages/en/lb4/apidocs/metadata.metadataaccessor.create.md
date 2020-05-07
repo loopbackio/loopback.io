@@ -25,10 +25,10 @@ static create<T, D extends DecoratorType>(key: string): MetadataAccessor<T, D>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  key | <code>string</code> | The metadata key |
+|  key | string | The metadata key |
 
 <b>Returns:</b>
 
-`MetadataAccessor<T, D>`
+[MetadataAccessor](./metadata.metadataaccessor.md)<!-- -->&lt;T, D&gt;
 
 

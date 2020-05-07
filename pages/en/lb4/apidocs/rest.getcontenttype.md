@@ -25,10 +25,10 @@ export declare function getContentType(req: Request): string | undefined;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  req | <code>Request</code> | Http request |
+|  req | Request | Http request |
 
 <b>Returns:</b>
 
-`string | undefined`
+string \| undefined
 
 

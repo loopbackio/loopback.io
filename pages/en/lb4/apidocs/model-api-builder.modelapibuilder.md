@@ -25,7 +25,7 @@ export interface ModelApiBuilder
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [pattern](./model-api-builder.modelapibuilder.pattern.md) | <code>string</code> |  |
+|  [pattern](./model-api-builder.modelapibuilder.pattern.md) | string |  |
 
 ## Methods
 

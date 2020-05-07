@@ -25,7 +25,7 @@ export declare class DateType implements Type<Date>
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [name](./repository.datetype.name.md) |  | <code></code> |  |
+|  [name](./repository.datetype.name.md) |  | (not declared) |  |
 
 ## Methods
 

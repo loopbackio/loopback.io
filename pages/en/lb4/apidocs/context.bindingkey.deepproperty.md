@@ -25,10 +25,10 @@ deepProperty<PropertyValueType>(propertyPath: string): BindingKey<PropertyValueT
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  propertyPath | <code>string</code> | A dot-separated path to a (deep) property, e.g. "server.port". |
+|  propertyPath | string | A dot-separated path to a (deep) property, e.g. "server.port". |
 
 <b>Returns:</b>
 
-`BindingKey<PropertyValueType>`
+[BindingKey](./context.bindingkey.md)<!-- -->&lt;PropertyValueType&gt;
 
 

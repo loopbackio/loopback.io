@@ -33,10 +33,10 @@ export declare class Permission
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [\[securityId\]](./security.permission._securityid_.md) |  | <code>string</code> |  |
-|  [action](./security.permission.action.md) |  | <code>string</code> | Action or access of a protected resources, such as <code>read</code>, <code>create</code>, <code>update</code>, or <code>delete</code> |
-|  [resourceId](./security.permission.resourceid.md) |  | <code>string</code> | Identity of a protected resource instance, such as <code>order-0001</code> or <code>customer-101</code> |
-|  [resourceProperty](./security.permission.resourceproperty.md) |  | <code>string</code> | Property of a protected resource type/instance, such as <code>email</code> |
-|  [resourceType](./security.permission.resourcetype.md) |  | <code>string</code> | Type of protected resource, such as <code>Order</code> or <code>Customer</code> |
+|  [\[securityId\]](./security.permission._securityid_.md) |  | string |  |
+|  [action](./security.permission.action.md) |  | string | Action or access of a protected resources, such as <code>read</code>, <code>create</code>, <code>update</code>, or <code>delete</code> |
+|  [resourceId](./security.permission.resourceid.md) |  | string | Identity of a protected resource instance, such as <code>order-0001</code> or <code>customer-101</code> |
+|  [resourceProperty](./security.permission.resourceproperty.md) |  | string | Property of a protected resource type/instance, such as <code>email</code> |
+|  [resourceType](./security.permission.resourcetype.md) |  | string | Type of protected resource, such as <code>Order</code> or <code>Customer</code> |
 
 

@@ -23,10 +23,10 @@ findAuthenticationStrategy(name: string): Promise<AuthenticationStrategy | undef
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  name | <code>string</code> |  |
+|  name | string |  |
 
 <b>Returns:</b>
 
-`Promise<AuthenticationStrategy | undefined>`
+Promise&lt;[AuthenticationStrategy](./authentication.authenticationstrategy.md) \| undefined&gt;
 
 

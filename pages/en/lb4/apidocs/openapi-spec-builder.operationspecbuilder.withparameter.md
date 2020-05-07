@@ -25,10 +25,10 @@ withParameter(...parameterSpecs: ParameterObject[]): this;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  parameterSpecs | <code>ParameterObject[]</code> |  |
+|  parameterSpecs | ParameterObject\[\] |  |
 
 <b>Returns:</b>
 
-`this`
+this
 
 

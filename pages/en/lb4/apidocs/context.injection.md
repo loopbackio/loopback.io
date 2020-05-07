@@ -25,11 +25,11 @@ export interface Injection<ValueType = BoundValue>
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [bindingSelector](./context.injection.bindingselector.md) | <code>BindingSelector&lt;ValueType&gt;</code> |  |
-|  [member](./context.injection.member.md) | <code>string</code> |  |
-|  [metadata](./context.injection.metadata.md) | <code>InjectionMetadata</code> |  |
-|  [methodDescriptorOrParameterIndex](./context.injection.methoddescriptororparameterindex.md) | <code>TypedPropertyDescriptor&lt;ValueType&gt; &#124; number</code> |  |
-|  [resolve](./context.injection.resolve.md) | <code>ResolverFunction</code> |  |
-|  [target](./context.injection.target.md) | <code>Object</code> |  |
+|  [bindingSelector](./context.injection.bindingselector.md) | [BindingSelector](./context.bindingselector.md)<!-- -->&lt;ValueType&gt; |  |
+|  [member](./context.injection.member.md) | string |  |
+|  [metadata](./context.injection.metadata.md) | [InjectionMetadata](./context.injectionmetadata.md) |  |
+|  [methodDescriptorOrParameterIndex](./context.injection.methoddescriptororparameterindex.md) | TypedPropertyDescriptor&lt;ValueType&gt; \| number |  |
+|  [resolve](./context.injection.resolve.md) | [ResolverFunction](./context.resolverfunction.md) |  |
+|  [target](./context.injection.target.md) | Object |  |
 
 

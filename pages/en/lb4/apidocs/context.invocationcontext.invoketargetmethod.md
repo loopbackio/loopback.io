@@ -25,10 +25,10 @@ invokeTargetMethod(options?: InvocationOptions): any;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  options | <code>InvocationOptions</code> | Options for the invocation |
+|  options | [InvocationOptions](./context.invocationoptions.md) | Options for the invocation |
 
 <b>Returns:</b>
 
-`any`
+any
 
 

@@ -25,12 +25,12 @@ find(filter?: Filter<Target>, options?: Options): Promise<Target[]>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  filter | <code>Filter&lt;Target&gt;</code> | A filter object for where, order, limit, etc. |
-|  options | <code>Options</code> | Options for the operation |
+|  filter | [Filter](./repository.filter.md)<!-- -->&lt;Target&gt; | A filter object for where, order, limit, etc. |
+|  options | [Options](./repository.options.md) | Options for the operation |
 
 <b>Returns:</b>
 
-`Promise<Target[]>`
+Promise&lt;Target\[\]&gt;
 
 A promise which resolves with the found target instance(s)
 

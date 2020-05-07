@@ -25,7 +25,7 @@ export interface CrudRestController<T extends Entity, IdType, IdName extends key
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [repository](./rest-crud.crudrestcontroller.repository.md) | <code>EntityCrudRepository&lt;T, IdType&gt;</code> | The backing repository used to access &amp; modify model data. |
+|  [repository](./rest-crud.crudrestcontroller.repository.md) | [EntityCrudRepository](./repository.entitycrudrepository.md)<!-- -->&lt;T, IdType&gt; | The backing repository used to access &amp; modify model data. |
 
 ## Methods
 

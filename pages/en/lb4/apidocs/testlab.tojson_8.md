@@ -23,10 +23,10 @@ export declare function toJSON(value: string): string;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  value | <code>string</code> |  |
+|  value | string |  |
 
 <b>Returns:</b>
 
-`string`
+string
 
 

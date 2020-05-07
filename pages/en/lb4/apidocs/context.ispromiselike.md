@@ -25,10 +25,10 @@ export declare function isPromiseLike<T>(value: T | PromiseLike<T> | undefined):
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  value | <code>T &#124; PromiseLike&lt;T&gt; &#124; undefined</code> | The value to check. |
+|  value | T \| PromiseLike&lt;T&gt; \| undefined | The value to check. |
 
 <b>Returns:</b>
 
-`value is PromiseLike<T>`
+value is PromiseLike&lt;T&gt;
 
 

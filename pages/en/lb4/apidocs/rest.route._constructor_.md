@@ -25,9 +25,9 @@ constructor(verb: string, path: string, spec: OperationObject, _handler: Functio
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  verb | <code>string</code> |  |
-|  path | <code>string</code> |  |
-|  spec | <code>OperationObject</code> |  |
-|  \_handler | <code>Function</code> |  |
+|  verb | string |  |
+|  path | string |  |
+|  spec | OperationObject |  |
+|  \_handler | Function |  |
 
 

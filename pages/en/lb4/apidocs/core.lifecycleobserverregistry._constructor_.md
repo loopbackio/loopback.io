@@ -25,7 +25,7 @@ constructor(observersView: ContextView<LifeCycleObserver>, options?: LifeCycleOb
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  observersView | <code>ContextView&lt;LifeCycleObserver&gt;</code> |  |
-|  options | <code>LifeCycleObserverOptions</code> |  |
+|  observersView | [ContextView](./context.contextview.md)<!-- -->&lt;[LifeCycleObserver](./core.lifecycleobserver.md)<!-- -->&gt; |  |
+|  options | [LifeCycleObserverOptions](./core.lifecycleobserveroptions.md) |  |
 
 

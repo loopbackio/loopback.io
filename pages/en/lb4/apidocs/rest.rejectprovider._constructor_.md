@@ -25,7 +25,7 @@ constructor(logError: LogError, errorWriterOptions?: ErrorWriterOptions | undefi
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  logError | <code>LogError</code> |  |
-|  errorWriterOptions | <code>ErrorWriterOptions &#124; undefined</code> |  |
+|  logError | [LogError](./rest.logerror.md) |  |
+|  errorWriterOptions | ErrorWriterOptions \| undefined |  |
 
 

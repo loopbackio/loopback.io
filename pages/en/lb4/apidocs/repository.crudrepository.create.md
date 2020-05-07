@@ -25,12 +25,12 @@ create(dataObject: DataObject<T>, options?: Options): Promise<T>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  dataObject | <code>DataObject&lt;T&gt;</code> | The data to be created |
-|  options | <code>Options</code> | Options for the operations |
+|  dataObject | [DataObject](./repository.dataobject.md)<!-- -->&lt;T&gt; | The data to be created |
+|  options | [Options](./repository.options.md) | Options for the operations |
 
 <b>Returns:</b>
 
-`Promise<T>`
+Promise&lt;T&gt;
 
 A promise of record created
 

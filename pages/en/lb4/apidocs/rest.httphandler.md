@@ -29,11 +29,11 @@ export declare class HttpHandler
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [\_openApiComponents](./rest.httphandler._openapicomponents.md) |  | <code>ComponentsObject</code> | Shared OpenAPI spec objects as <code>components</code> |
-|  [\_rootContext](./rest.httphandler._rootcontext.md) |  | <code>Context</code> |  |
-|  [\_routes](./rest.httphandler._routes.md) |  | <code>RoutingTable</code> |  |
-|  [\_serverConfig](./rest.httphandler._serverconfig.md) |  | <code>RestServerResolvedConfig</code> |  |
-|  [handleRequest](./rest.httphandler.handlerequest.md) |  | <code>(request: Request, response: Response) =&gt; Promise&lt;void&gt;</code> |  |
+|  [\_openApiComponents](./rest.httphandler._openapicomponents.md) |  | ComponentsObject | Shared OpenAPI spec objects as <code>components</code> |
+|  [\_rootContext](./rest.httphandler._rootcontext.md) |  | [Context](./context.context.md) |  |
+|  [\_routes](./rest.httphandler._routes.md) |  | [RoutingTable](./rest.routingtable.md) |  |
+|  [\_serverConfig](./rest.httphandler._serverconfig.md) |  | [RestServerResolvedConfig](./rest.restserverresolvedconfig.md) |  |
+|  [handleRequest](./rest.httphandler.handlerequest.md) |  | (request: Request, response: Response) =&gt; Promise&lt;void&gt; |  |
 
 ## Methods
 

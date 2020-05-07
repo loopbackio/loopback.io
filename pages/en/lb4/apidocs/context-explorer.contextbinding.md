@@ -31,9 +31,9 @@ export declare class ContextBinding
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [binding](./context-explorer.contextbinding.binding.md) |  | <code>JSONObject</code> |  |
-|  [context](./context-explorer.contextbinding.context.md) |  | <code>JSONObject</code> |  |
-|  [id](./context-explorer.contextbinding.id.md) |  | <code>string</code> |  |
-|  [level](./context-explorer.contextbinding.level.md) |  | <code>number</code> |  |
+|  [binding](./context-explorer.contextbinding.binding.md) |  | [JSONObject](./context.jsonobject.md) |  |
+|  [context](./context-explorer.contextbinding.context.md) |  | [JSONObject](./context.jsonobject.md) |  |
+|  [id](./context-explorer.contextbinding.id.md) |  | string |  |
+|  [level](./context-explorer.contextbinding.level.md) |  | number |  |
 
 

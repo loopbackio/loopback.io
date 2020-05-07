@@ -20,6 +20,6 @@ create(): ClassDecorator;
 ```
 <b>Returns:</b>
 
-`ClassDecorator`
+ClassDecorator
 
 

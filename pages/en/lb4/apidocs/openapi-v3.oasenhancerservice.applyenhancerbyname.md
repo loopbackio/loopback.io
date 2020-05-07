@@ -25,10 +25,10 @@ applyEnhancerByName(name: string): Promise<OpenApiSpec>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  name | <code>string</code> | The name of the enhancer you want to apply |
+|  name | string | The name of the enhancer you want to apply |
 
 <b>Returns:</b>
 
-`Promise<OpenApiSpec>`
+Promise&lt;[OpenApiSpec](./openapi-v3.openapispec.md)<!-- -->&gt;
 
 

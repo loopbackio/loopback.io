@@ -25,6 +25,6 @@ constructor(getJobs: Getter<CronJob[]>);
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  getJobs | <code>Getter&lt;CronJob[]&gt;</code> |  |
+|  getJobs | [Getter](./context.getter.md)<!-- -->&lt;[CronJob](./cron.cronjob.md)<!-- -->\[\]&gt; |  |
 
 

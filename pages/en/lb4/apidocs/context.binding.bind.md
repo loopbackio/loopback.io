@@ -25,10 +25,10 @@ static bind<T = unknown>(key: BindingAddress<T>): Binding<T>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  key | <code>BindingAddress&lt;T&gt;</code> | Binding key |
+|  key | [BindingAddress](./context.bindingaddress.md)<!-- -->&lt;T&gt; | Binding key |
 
 <b>Returns:</b>
 
-`Binding<T>`
+[Binding](./context.binding.md)<!-- -->&lt;T&gt;
 
 

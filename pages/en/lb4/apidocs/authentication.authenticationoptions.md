@@ -25,6 +25,6 @@ export interface AuthenticationOptions
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [defaultMetadata](./authentication.authenticationoptions.defaultmetadata.md) | <code>AuthenticationMetadata</code> | Default authentication metadata if a method or class is not decorated with <code>@authenticate</code>. If not set, no default authentication will be enforced for those methods without authentication metadata. |
+|  [defaultMetadata](./authentication.authenticationoptions.defaultmetadata.md) | [AuthenticationMetadata](./authentication.authenticationmetadata.md) | Default authentication metadata if a method or class is not decorated with <code>@authenticate</code>. If not set, no default authentication will be enforced for those methods without authentication metadata. |
 
 

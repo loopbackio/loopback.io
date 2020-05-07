@@ -27,8 +27,8 @@ export interface Subject
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [authorities](./security.subject.authorities.md) | <code>Set&lt;Permission&gt;</code> | An array of authorities granted by the user to the client application. One example is {@<!-- -->link https://tools.ietf.org/html/rfc6749\#section-3.3 \| oAuth2 scopes). |
-|  [credentials](./security.subject.credentials.md) | <code>Set&lt;Credential&gt;</code> | An array of credentials, such as password, access token, or private/public keys. |
-|  [principals](./security.subject.principals.md) | <code>Set&lt;TypedPrincipal&gt;</code> | An array of principals. It can include information about the current user, the client application, and granted authorities.<code>Subject</code> represents both security state and operations for a single application user.<!-- -->Such operations include: - authentication (login) - authorization (access control) - session access - logout |
+|  [authorities](./security.subject.authorities.md) | Set&lt;[Permission](./security.permission.md)<!-- -->&gt; | An array of authorities granted by the user to the client application. One example is {@<!-- -->link https://tools.ietf.org/html/rfc6749\#section-3.3 \| oAuth2 scopes). |
+|  [credentials](./security.subject.credentials.md) | Set&lt;[Credential](./security.credential.md)<!-- -->&gt; | An array of credentials, such as password, access token, or private/public keys. |
+|  [principals](./security.subject.principals.md) | Set&lt;[TypedPrincipal](./security.typedprincipal.md)<!-- -->&gt; | An array of principals. It can include information about the current user, the client application, and granted authorities.<code>Subject</code> represents both security state and operations for a single application user.<!-- -->Such operations include: - authentication (login) - authorization (access control) - session access - logout |
 
 

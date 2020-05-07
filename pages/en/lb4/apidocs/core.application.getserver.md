@@ -25,11 +25,11 @@ getServer<T extends Server>(target: Constructor<T> | string): Promise<T>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  target | <code>Constructor&lt;T&gt; &#124; string</code> |  |
+|  target | [Constructor](./context.constructor.md)<!-- -->&lt;T&gt; \| string |  |
 
 <b>Returns:</b>
 
-`Promise<T>`
+Promise&lt;T&gt;
 
 A Promise of server instance
 

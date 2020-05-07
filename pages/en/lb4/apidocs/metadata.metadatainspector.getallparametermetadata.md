@@ -25,13 +25,13 @@ static getAllParameterMetadata<T>(key: MetadataKey<T, ParameterDecorator>, targe
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  key | <code>MetadataKey&lt;T, ParameterDecorator&gt;</code> | Metadata key |
-|  target | <code>Object</code> | Class for static methods or prototype for instance methods |
-|  methodName | <code>string</code> | Method name. If not present, default to '' to use the constructor |
-|  options | <code>InspectionOptions</code> | Options for inspection |
+|  key | [MetadataKey](./metadata.metadatakey.md)<!-- -->&lt;T, ParameterDecorator&gt; | Metadata key |
+|  target | Object | Class for static methods or prototype for instance methods |
+|  methodName | string | Method name. If not present, default to '' to use the constructor |
+|  options | [InspectionOptions](./metadata.inspectionoptions.md) | Options for inspection |
 
 <b>Returns:</b>
 
-`T[] | undefined`
+T\[\] \| undefined
 
 

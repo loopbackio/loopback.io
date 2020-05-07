@@ -20,6 +20,6 @@ value(): Reject;
 ```
 <b>Returns:</b>
 
-`Reject`
+[Reject](./rest.reject.md)
 
 

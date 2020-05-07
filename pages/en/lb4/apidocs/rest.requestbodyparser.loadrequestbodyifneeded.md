@@ -23,11 +23,11 @@ loadRequestBodyIfNeeded(operationSpec: OperationObject, request: Request): Promi
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  operationSpec | <code>OperationObject</code> |  |
-|  request | <code>Request</code> |  |
+|  operationSpec | OperationObject |  |
+|  request | Request |  |
 
 <b>Returns:</b>
 
-`Promise<RequestBody>`
+Promise&lt;[RequestBody](./rest.requestbody.md)<!-- -->&gt;
 
 

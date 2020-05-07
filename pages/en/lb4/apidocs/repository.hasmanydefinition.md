@@ -23,9 +23,9 @@ export interface HasManyDefinition extends RelationDefinitionBase
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [keyFrom](./repository.hasmanydefinition.keyfrom.md) | <code>string</code> |  |
-|  [keyTo](./repository.hasmanydefinition.keyto.md) | <code>string</code> | keyTo: The foreign key used by the target model for this relation. keyFrom: The source key used by the source model for this relation.<!-- -->E.g. when a Customer has many Order instances, then keyTo is "customerId". Note that "customerId" is the default FK assumed by the framework, users can provide a custom FK name by setting "keyTo". And Customer.id is keyFrom. keyFrom defaults to the id property of a model. Users can provide a custom source key name by setting "keyTo". |
-|  [targetsMany](./repository.hasmanydefinition.targetsmany.md) | <code>true</code> |  |
-|  [type](./repository.hasmanydefinition.type.md) | <code>RelationType.hasMany</code> |  |
+|  [keyFrom](./repository.hasmanydefinition.keyfrom.md) | string |  |
+|  [keyTo](./repository.hasmanydefinition.keyto.md) | string | keyTo: The foreign key used by the target model for this relation. keyFrom: The source key used by the source model for this relation.<!-- -->E.g. when a Customer has many Order instances, then keyTo is "customerId". Note that "customerId" is the default FK assumed by the framework, users can provide a custom FK name by setting "keyTo". And Customer.id is keyFrom. keyFrom defaults to the id property of a model. Users can provide a custom source key name by setting "keyTo". |
+|  [targetsMany](./repository.hasmanydefinition.targetsmany.md) | true |  |
+|  [type](./repository.hasmanydefinition.type.md) | [RelationType.hasMany](./repository.relationtype.hasmany.md) |  |
 
 

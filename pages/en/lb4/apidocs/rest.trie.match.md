@@ -27,12 +27,10 @@ match(path: string): (ResolvedNode<T> & {
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  path | <code>string</code> | The route path, such as <code>/customers/c01</code> |
+|  path | string | The route path, such as <code>/customers/c01</code> |
 
 <b>Returns:</b>
 
-`(ResolvedNode<T> & {
-        node: NodeWithValue<T>;
-    }) | undefined`
+([ResolvedNode](./rest.resolvednode.md)<!-- -->&lt;T&gt; &amp; { node: [NodeWithValue](./rest.nodewithvalue.md)<!-- -->&lt;T&gt;; }) \| undefined
 
 

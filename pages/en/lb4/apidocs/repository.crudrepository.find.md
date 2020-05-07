@@ -25,12 +25,12 @@ find(filter?: Filter<T>, options?: Options): Promise<(T & Relations)[]>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  filter | <code>Filter&lt;T&gt;</code> | Query filter |
-|  options | <code>Options</code> | Options for the operations |
+|  filter | [Filter](./repository.filter.md)<!-- -->&lt;T&gt; | Query filter |
+|  options | [Options](./repository.options.md) | Options for the operations |
 
 <b>Returns:</b>
 
-`Promise<(T & Relations)[]>`
+Promise&lt;(T &amp; Relations)\[\]&gt;
 
 A promise of an array of records found
 

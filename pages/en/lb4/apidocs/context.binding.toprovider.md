@@ -27,11 +27,11 @@ toProvider(providerClass: Constructor<Provider<T>>): this;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  providerClass | <code>Constructor&lt;Provider&lt;T&gt;&gt;</code> |  |
+|  providerClass | [Constructor](./context.constructor.md)<!-- -->&lt;[Provider](./context.provider.md)<!-- -->&lt;T&gt;&gt; |  |
 
 <b>Returns:</b>
 
-`this`
+this
 
 ## Example
 

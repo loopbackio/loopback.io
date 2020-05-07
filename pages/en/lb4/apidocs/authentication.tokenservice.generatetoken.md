@@ -25,11 +25,11 @@ generateToken(userProfile: UserProfile): Promise<string>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  userProfile | <code>UserProfile</code> | A UserProfile for which a token should be generated. |
+|  userProfile | [UserProfile](./security.userprofile.md) | A UserProfile for which a token should be generated. |
 
 <b>Returns:</b>
 
-`Promise<string>`
+Promise&lt;string&gt;
 
 a generated token/secret for a given UserProfile.
 

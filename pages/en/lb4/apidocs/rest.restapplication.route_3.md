@@ -25,14 +25,14 @@ route(verb: string, path: string, spec: OperationObject, handler: Function): Bin
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  verb | <code>string</code> |  |
-|  path | <code>string</code> |  |
-|  spec | <code>OperationObject</code> |  |
-|  handler | <code>Function</code> |  |
+|  verb | string |  |
+|  path | string |  |
+|  spec | OperationObject |  |
+|  handler | Function |  |
 
 <b>Returns:</b>
 
-`Binding`
+[Binding](./context.binding.md)
 
 ## Example
 

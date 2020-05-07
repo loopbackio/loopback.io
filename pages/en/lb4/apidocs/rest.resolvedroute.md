@@ -25,7 +25,7 @@ export interface ResolvedRoute extends RouteEntry
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [pathParams](./rest.resolvedroute.pathparams.md) | <code>PathParameterValues</code> |  |
-|  [schemas](./rest.resolvedroute.schemas.md) | <code>SchemasObject</code> | Server/application wide schemas shared by multiple routes, e.g. model schemas. This is a temporary workaround for missing support for $ref references, see https://github.com/strongloop/loopback-next/issues/435 |
+|  [pathParams](./rest.resolvedroute.pathparams.md) | [PathParameterValues](./rest.pathparametervalues.md) |  |
+|  [schemas](./rest.resolvedroute.schemas.md) | SchemasObject | Server/application wide schemas shared by multiple routes, e.g. model schemas. This is a temporary workaround for missing support for $ref references, see https://github.com/strongloop/loopback-next/issues/435 |
 
 

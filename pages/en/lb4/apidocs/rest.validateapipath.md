@@ -25,10 +25,10 @@ export declare function validateApiPath(path?: string): string;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  path | <code>string</code> |  |
+|  path | string |  |
 
 <b>Returns:</b>
 
-`string`
+string
 
 

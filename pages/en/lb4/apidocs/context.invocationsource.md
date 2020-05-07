@@ -25,7 +25,7 @@ export interface InvocationSource<T = unknown>
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [type](./context.invocationsource.type.md) | <code>string</code> | Type of the invoker, such as <code>proxy</code> and <code>route</code> |
-|  [value](./context.invocationsource.value.md) | <code>T</code> | Metadata for the source, such as <code>ResolutionSession</code> |
+|  [type](./context.invocationsource.type.md) | string | Type of the invoker, such as <code>proxy</code> and <code>route</code> |
+|  [value](./context.invocationsource.value.md) | T | Metadata for the source, such as <code>ResolutionSession</code> |
 
 

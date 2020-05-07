@@ -23,10 +23,10 @@ export interface ProxyOptions
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [cachePath](./http-caching-proxy.proxyoptions.cachepath.md) | <code>string</code> | Directory where to keep the cached snapshots. |
-|  [logError](./http-caching-proxy.proxyoptions.logerror.md) | <code>boolean</code> | A flag if the error should be logged |
-|  [port](./http-caching-proxy.proxyoptions.port.md) | <code>number</code> | The port where the HTTP proxy should listen at. Default: 0 (let the system pick a free port) |
-|  [timeout](./http-caching-proxy.proxyoptions.timeout.md) | <code>number</code> | Timeout to connect to the target service |
-|  [ttl](./http-caching-proxy.proxyoptions.ttl.md) | <code>number</code> | How long to keep snapshots before making a new request to the backend. The value is in milliseconds.<!-- -->Default: one day |
+|  [cachePath](./http-caching-proxy.proxyoptions.cachepath.md) | string | Directory where to keep the cached snapshots. |
+|  [logError](./http-caching-proxy.proxyoptions.logerror.md) | boolean | A flag if the error should be logged |
+|  [port](./http-caching-proxy.proxyoptions.port.md) | number | The port where the HTTP proxy should listen at. Default: 0 (let the system pick a free port) |
+|  [timeout](./http-caching-proxy.proxyoptions.timeout.md) | number | Timeout to connect to the target service |
+|  [ttl](./http-caching-proxy.proxyoptions.ttl.md) | number | How long to keep snapshots before making a new request to the backend. The value is in milliseconds.<!-- -->Default: one day |
 
 

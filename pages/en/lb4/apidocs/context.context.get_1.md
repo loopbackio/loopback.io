@@ -25,12 +25,12 @@ get<ValueType>(keyWithPath: BindingAddress<ValueType>, options: ResolutionOption
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  keyWithPath | <code>BindingAddress&lt;ValueType&gt;</code> | The binding key, optionally suffixed with a path to the (deeply) nested property to retrieve. |
-|  options | <code>ResolutionOptions</code> | Options for resolution. |
+|  keyWithPath | [BindingAddress](./context.bindingaddress.md)<!-- -->&lt;ValueType&gt; | The binding key, optionally suffixed with a path to the (deeply) nested property to retrieve. |
+|  options | [ResolutionOptions](./context.resolutionoptions.md) | Options for resolution. |
 
 <b>Returns:</b>
 
-`Promise<ValueType | undefined>`
+Promise&lt;ValueType \| undefined&gt;
 
 A promise of the bound value, or a promise of undefined when the optional binding is not found.
 

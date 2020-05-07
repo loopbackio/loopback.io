@@ -25,7 +25,7 @@ export declare class BufferType implements Type<Buffer>
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [name](./repository.buffertype.name.md) |  | <code></code> |  |
+|  [name](./repository.buffertype.name.md) |  | (not declared) |  |
 
 ## Methods
 

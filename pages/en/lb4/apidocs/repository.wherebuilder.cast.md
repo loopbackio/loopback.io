@@ -30,10 +30,10 @@ cast(clause: AndClause<MT> | OrClause<MT> | Condition<MT>): Where<MT>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  clause | <code>AndClause&lt;MT&gt; &#124; OrClause&lt;MT&gt; &#124; Condition&lt;MT&gt;</code> | And/Or/Condition clause |
+|  clause | [AndClause](./repository.andclause.md)<!-- -->&lt;MT&gt; \| [OrClause](./repository.orclause.md)<!-- -->&lt;MT&gt; \| [Condition](./repository.condition.md)<!-- -->&lt;MT&gt; | And/Or/Condition clause |
 
 <b>Returns:</b>
 
-`Where<MT>`
+[Where](./repository.where.md)<!-- -->&lt;MT&gt;
 
 

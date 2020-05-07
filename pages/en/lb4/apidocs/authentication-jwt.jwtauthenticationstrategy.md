@@ -29,8 +29,8 @@ export declare class JWTAuthenticationStrategy implements AuthenticationStrategy
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [name](./authentication-jwt.jwtauthenticationstrategy.name.md) |  | <code>string</code> |  |
-|  [tokenService](./authentication-jwt.jwtauthenticationstrategy.tokenservice.md) |  | <code>TokenService</code> |  |
+|  [name](./authentication-jwt.jwtauthenticationstrategy.name.md) |  | string |  |
+|  [tokenService](./authentication-jwt.jwtauthenticationstrategy.tokenservice.md) |  | [TokenService](./authentication.tokenservice.md) |  |
 
 ## Methods
 

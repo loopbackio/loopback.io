@@ -29,7 +29,7 @@ export declare class BindElementProvider implements Provider<BindElement>
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [context](./rest.bindelementprovider.context.md) |  | <code>Context</code> |  |
+|  [context](./rest.bindelementprovider.context.md) |  | [Context](./context.context.md) |  |
 
 ## Methods
 

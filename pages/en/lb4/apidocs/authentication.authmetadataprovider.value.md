@@ -20,7 +20,7 @@ value(): AuthenticationMetadata | undefined;
 ```
 <b>Returns:</b>
 
-`AuthenticationMetadata | undefined`
+[AuthenticationMetadata](./authentication.authenticationmetadata.md) \| undefined
 
 AuthenticationMetadata
 

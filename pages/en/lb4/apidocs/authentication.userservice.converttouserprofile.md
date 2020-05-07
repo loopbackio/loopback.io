@@ -25,10 +25,10 @@ convertToUserProfile(user: U): UserProfile;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  user | <code>U</code> | The user returned from <code>verifyCredentials()</code> |
+|  user | U | The user returned from <code>verifyCredentials()</code> |
 
 <b>Returns:</b>
 
-`UserProfile`
+[UserProfile](./security.userprofile.md)
 
 

@@ -23,11 +23,11 @@ protected _handleRequest(request: Request, response: Response): Promise<void>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  request | <code>Request</code> |  |
-|  response | <code>Response</code> |  |
+|  request | Request |  |
+|  response | Response |  |
 
 <b>Returns:</b>
 
-`Promise<void>`
+Promise&lt;void&gt;
 
 

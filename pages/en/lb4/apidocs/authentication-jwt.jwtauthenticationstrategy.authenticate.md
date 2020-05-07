@@ -23,10 +23,10 @@ authenticate(request: Request): Promise<UserProfile | undefined>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  request | <code>Request</code> |  |
+|  request | Request |  |
 
 <b>Returns:</b>
 
-`Promise<UserProfile | undefined>`
+Promise&lt;[UserProfile](./security.userprofile.md) \| undefined&gt;
 
 

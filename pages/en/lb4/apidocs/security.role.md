@@ -23,6 +23,6 @@ export interface Role extends Principal
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [name](./security.role.name.md) | <code>string</code> |  |
+|  [name](./security.role.name.md) | string |  |
 
 

@@ -25,11 +25,11 @@ export declare function runExtractorForMonorepo(options?: ExtractorOptions): Pro
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  options | <code>ExtractorOptions</code> | Options for running api-extractor |
+|  options | [ExtractorOptions](./tsdocs.extractoroptions.md) | Options for running api-extractor |
 
 <b>Returns:</b>
 
-`Promise<void>`
+Promise&lt;void&gt;
 
 ## Remarks
 

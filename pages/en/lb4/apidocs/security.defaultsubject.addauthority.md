@@ -23,10 +23,10 @@ addAuthority(...authorities: Permission[]): void;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  authorities | <code>Permission[]</code> |  |
+|  authorities | [Permission](./security.permission.md)<!-- -->\[\] |  |
 
 <b>Returns:</b>
 
-`void`
+void
 
 

@@ -25,10 +25,10 @@ export declare function isLifeCycleObserver(obj: object): obj is LifeCycleObserv
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  obj | <code>object</code> | An object |
+|  obj | object | An object |
 
 <b>Returns:</b>
 
-`obj is LifeCycleObserver`
+obj is [LifeCycleObserver](./core.lifecycleobserver.md)
 
 

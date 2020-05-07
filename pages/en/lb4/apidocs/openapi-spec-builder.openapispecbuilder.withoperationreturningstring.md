@@ -25,12 +25,12 @@ withOperationReturningString(verb: string, path: string, operationName?: string)
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  verb | <code>string</code> | The HTTP verb. |
-|  path | <code>string</code> | The path relative to basePath. |
-|  operationName | <code>string</code> | The name of the controller method implementing this operation (<code>x-operation-name</code> field). |
+|  verb | string | The HTTP verb. |
+|  path | string | The path relative to basePath. |
+|  operationName | string | The name of the controller method implementing this operation (<code>x-operation-name</code> field). |
 
 <b>Returns:</b>
 
-`this`
+this
 
 

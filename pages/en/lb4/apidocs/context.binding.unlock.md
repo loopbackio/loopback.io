@@ -22,6 +22,6 @@ unlock(): this;
 ```
 <b>Returns:</b>
 
-`this`
+this
 
 

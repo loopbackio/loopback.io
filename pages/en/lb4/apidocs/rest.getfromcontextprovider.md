@@ -29,7 +29,7 @@ export declare class GetFromContextProvider implements Provider<GetFromContext>
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [context](./rest.getfromcontextprovider.context.md) |  | <code>Context</code> |  |
+|  [context](./rest.getfromcontextprovider.context.md) |  | [Context](./context.context.md) |  |
 
 ## Methods
 

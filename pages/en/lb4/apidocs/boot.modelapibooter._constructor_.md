@@ -25,9 +25,9 @@ constructor(app: ApplicationWithRepositories, projectRoot: string, getModelApiBu
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  app | <code>ApplicationWithRepositories</code> |  |
-|  projectRoot | <code>string</code> |  |
-|  getModelApiBuilders | <code>Getter&lt;ModelApiBuilder[]&gt;</code> |  |
-|  booterConfig | <code>ArtifactOptions</code> |  |
+|  app | [ApplicationWithRepositories](./repository.applicationwithrepositories.md) |  |
+|  projectRoot | string |  |
+|  getModelApiBuilders | [Getter](./context.getter.md)<!-- -->&lt;[ModelApiBuilder](./model-api-builder.modelapibuilder.md)<!-- -->\[\]&gt; |  |
+|  booterConfig | [ArtifactOptions](./boot.artifactoptions.md) |  |
 
 

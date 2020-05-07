@@ -25,11 +25,11 @@ withTarget(spec: T, target: Object): T;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  spec | <code>T</code> | Metadata spec |
-|  target | <code>Object</code> | Target of the decoration. It is a class or the prototype of a class. |
+|  spec | T | Metadata spec |
+|  target | Object | Target of the decoration. It is a class or the prototype of a class. |
 
 <b>Returns:</b>
 
-`T`
+T
 
 

@@ -23,10 +23,10 @@ export declare function toJSON(value: null): null;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  value | <code>null</code> |  |
+|  value | null |  |
 
 <b>Returns:</b>
 
-`null`
+null
 
 

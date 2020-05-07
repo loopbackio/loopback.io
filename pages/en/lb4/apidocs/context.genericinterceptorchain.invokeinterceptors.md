@@ -18,10 +18,17 @@ Invoke the interceptor chain
 <b>Signature:</b>
 
 ```typescript
-invokeInterceptors(): ValueOrPromise<InvocationResult>;
+invokeInterceptors(finalHandler?: Next): ValueOrPromise<InvocationResult>;
 ```
+
+## Parameters
+
+|  Parameter | Type | Description |
+|  --- | --- | --- |
+|  finalHandler | [Next](./context.next.md) |  |
+
 <b>Returns:</b>
 
-`ValueOrPromise<InvocationResult>`
+[ValueOrPromise](./context.valueorpromise.md)<!-- -->&lt;[InvocationResult](./context.invocationresult.md)<!-- -->&gt;
 
 

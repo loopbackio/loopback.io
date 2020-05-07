@@ -25,10 +25,10 @@ export declare function asCronJob<T = unknown>(binding: Binding<T>): Binding<T>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  binding | <code>Binding&lt;T&gt;</code> | Binding object |
+|  binding | [Binding](./context.binding.md)<!-- -->&lt;T&gt; | Binding object |
 
 <b>Returns:</b>
 
-`Binding<T>`
+[Binding](./context.binding.md)<!-- -->&lt;T&gt;
 
 

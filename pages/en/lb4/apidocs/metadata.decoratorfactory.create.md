@@ -22,6 +22,6 @@ create(): D;
 ```
 <b>Returns:</b>
 
-`D`
+D
 
 

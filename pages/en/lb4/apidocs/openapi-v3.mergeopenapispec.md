@@ -27,11 +27,11 @@ export declare function mergeOpenAPISpec(currentSpec: Partial<OpenApiSpec>, patc
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  currentSpec | <code>Partial&lt;OpenApiSpec&gt;</code> | The original spec |
-|  patchSpec | <code>Partial&lt;OpenApiSpec&gt;</code> | The patch spec to be merged into the original spec |
+|  currentSpec | Partial&lt;[OpenApiSpec](./openapi-v3.openapispec.md)<!-- -->&gt; | The original spec |
+|  patchSpec | Partial&lt;[OpenApiSpec](./openapi-v3.openapispec.md)<!-- -->&gt; | The patch spec to be merged into the original spec |
 
 <b>Returns:</b>
 
-`any`
+any
 
 

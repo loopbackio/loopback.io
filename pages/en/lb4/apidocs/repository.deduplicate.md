@@ -25,11 +25,11 @@ export declare function deduplicate<T>(input: T[]): T[];
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  input | <code>T[]</code> | an array of sourceIds |
+|  input | T\[\] | an array of sourceIds |
 
 <b>Returns:</b>
 
-`T[]`
+T\[\]
 
 an array with unique items
 

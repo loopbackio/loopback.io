@@ -18,19 +18,19 @@ Add a service to this application.
 <b>Signature:</b>
 
 ```typescript
-service<S>(cls: Constructor<S> | Constructor<Provider<S>>, name?: string | ServiceOptions): Binding<S>;
+service<S>(cls: Constructor<S> | Constructor<Provider<S>>, nameOrOptions?: string | ServiceOptions): Binding<S>;
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  cls | <code>Constructor&lt;S&gt; &#124; Constructor&lt;Provider&lt;S&gt;&gt;</code> | The service or provider class |
-|  name | <code>string &#124; ServiceOptions</code> |  |
+|  cls | [Constructor](./context.constructor.md)<!-- -->&lt;S&gt; \| [Constructor](./context.constructor.md)<!-- -->&lt;[Provider](./context.provider.md)<!-- -->&lt;S&gt;&gt; | The service or provider class |
+|  nameOrOptions | string \| [ServiceOptions](./core.serviceoptions.md) |  |
 
 <b>Returns:</b>
 
-`Binding<S>`
+[Binding](./context.binding.md)<!-- -->&lt;S&gt;
 
 ## Example
 

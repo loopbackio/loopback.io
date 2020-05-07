@@ -25,7 +25,7 @@ export declare class BooleanType implements Type<boolean>
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [name](./repository.booleantype.name.md) |  | <code></code> |  |
+|  [name](./repository.booleantype.name.md) |  | (not declared) |  |
 
 ## Methods
 

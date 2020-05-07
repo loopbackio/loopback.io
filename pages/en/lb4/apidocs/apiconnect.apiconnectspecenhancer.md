@@ -31,7 +31,7 @@ export declare class ApiConnectSpecEnhancer implements OASEnhancer
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [name](./apiconnect.apiconnectspecenhancer.name.md) |  | <code>string</code> |  |
+|  [name](./apiconnect.apiconnectspecenhancer.name.md) |  | string |  |
 
 ## Methods
 

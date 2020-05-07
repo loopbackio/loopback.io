@@ -22,6 +22,6 @@ list(): NodeWithValue<T>[];
 ```
 <b>Returns:</b>
 
-`NodeWithValue<T>[]`
+[NodeWithValue](./rest.nodewithvalue.md)<!-- -->&lt;T&gt;\[\]
 
 

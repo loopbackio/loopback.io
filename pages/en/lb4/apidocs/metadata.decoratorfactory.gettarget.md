@@ -25,10 +25,10 @@ getTarget(spec: T): any;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  spec | <code>T</code> | Metadata spec |
+|  spec | T | Metadata spec |
 
 <b>Returns:</b>
 
-`any`
+any
 
 

@@ -25,10 +25,10 @@ export declare function isArrayType(type: string | Function): boolean;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  type | <code>string &#124; Function</code> | Type as string or wrapper |
+|  type | string \| Function | Type as string or wrapper |
 
 <b>Returns:</b>
 
-`boolean`
+boolean
 
 

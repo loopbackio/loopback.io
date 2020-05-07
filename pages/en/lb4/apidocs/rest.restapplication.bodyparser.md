@@ -25,11 +25,11 @@ bodyParser(bodyParserClass: Constructor<BodyParser>, address?: BindingAddress<Bo
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  bodyParserClass | <code>Constructor&lt;BodyParser&gt;</code> |  |
-|  address | <code>BindingAddress&lt;BodyParser&gt;</code> | Optional binding address |
+|  bodyParserClass | [Constructor](./context.constructor.md)<!-- -->&lt;[BodyParser](./rest.bodyparser.md)<!-- -->&gt; |  |
+|  address | [BindingAddress](./context.bindingaddress.md)<!-- -->&lt;[BodyParser](./rest.bodyparser.md)<!-- -->&gt; | Optional binding address |
 
 <b>Returns:</b>
 
-`Binding<BodyParser>`
+[Binding](./context.binding.md)<!-- -->&lt;[BodyParser](./rest.bodyparser.md)<!-- -->&gt;
 
 

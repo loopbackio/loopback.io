@@ -22,6 +22,6 @@ loadInterceptors(): GenericInterceptorOrKey<InvocationContext>[];
 ```
 <b>Returns:</b>
 
-`GenericInterceptorOrKey<InvocationContext>[]`
+[GenericInterceptorOrKey](./context.genericinterceptororkey.md)<!-- -->&lt;[InvocationContext](./context.invocationcontext.md)<!-- -->&gt;\[\]
 
 

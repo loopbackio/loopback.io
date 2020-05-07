@@ -23,11 +23,11 @@ dataSource<D extends juggler.DataSource>(dataSource: Class<D> | D, name?: string
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  dataSource | <code>Class&lt;D&gt; &#124; D</code> |  |
-|  name | <code>string</code> |  |
+|  dataSource | [Class](./repository.class.md)<!-- -->&lt;D&gt; \| D |  |
+|  name | string |  |
 
 <b>Returns:</b>
 
-`Binding<D>`
+[Binding](./context.binding.md)<!-- -->&lt;D&gt;
 
 

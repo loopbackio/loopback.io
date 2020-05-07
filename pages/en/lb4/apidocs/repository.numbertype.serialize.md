@@ -23,10 +23,10 @@ serialize(value: number | null | undefined): number | null | undefined;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  value | <code>number &#124; null &#124; undefined</code> |  |
+|  value | number \| null \| undefined |  |
 
 <b>Returns:</b>
 
-`number | null | undefined`
+number \| null \| undefined
 
 

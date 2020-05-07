@@ -25,8 +25,8 @@ constructor(context: Context, filter: BindingFilter, comparator?: BindingCompara
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  context | <code>Context</code> | Context object to watch |
-|  filter | <code>BindingFilter</code> | Binding filter to match bindings of interest |
-|  comparator | <code>BindingComparator &#124; undefined</code> | Comparator to sort the matched bindings |
+|  context | [Context](./context.context.md) | Context object to watch |
+|  filter | [BindingFilter](./context.bindingfilter.md) | Binding filter to match bindings of interest |
+|  comparator | [BindingComparator](./context.bindingcomparator.md) \| undefined | Comparator to sort the matched bindings |
 
 

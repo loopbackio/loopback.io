@@ -25,10 +25,10 @@ export declare function normalizeKey(rawKey: unknown): unknown;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  rawKey | <code>unknown</code> |  |
+|  rawKey | unknown |  |
 
 <b>Returns:</b>
 
-`unknown`
+unknown
 
 

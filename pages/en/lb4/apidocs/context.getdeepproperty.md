@@ -25,11 +25,11 @@ export declare function getDeepProperty<OUT = BoundValue, IN = BoundValue>(value
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  value | <code>IN</code> | Value of the source object |
-|  path | <code>string</code> | Path to the property |
+|  value | IN | Value of the source object |
+|  path | string | Path to the property |
 
 <b>Returns:</b>
 
-`OUT | undefined`
+OUT \| undefined
 
 

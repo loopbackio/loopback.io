@@ -25,12 +25,12 @@ between<K extends KeyOf<MT>>(key: K, val1: MT[K], val2: MT[K]): this;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  key | <code>K</code> | Property name |
-|  val1 | <code>MT[K]</code> | Property value lower bound |
-|  val2 | <code>MT[K]</code> | Property value upper bound |
+|  key | K | Property name |
+|  val1 | MT\[K\] | Property value lower bound |
+|  val2 | MT\[K\] | Property value upper bound |
 
 <b>Returns:</b>
 
-`this`
+this
 
 

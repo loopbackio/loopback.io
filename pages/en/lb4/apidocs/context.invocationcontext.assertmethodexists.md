@@ -22,6 +22,6 @@ assertMethodExists(): Record<string, Function>;
 ```
 <b>Returns:</b>
 
-`Record<string, Function>`
+Record&lt;string, Function&gt;
 
 

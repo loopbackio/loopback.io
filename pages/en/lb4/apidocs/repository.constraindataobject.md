@@ -25,12 +25,12 @@ export declare function constrainDataObject<T extends Entity>(originalData: Data
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  originalData | <code>DataObject&lt;T&gt;</code> | the model data to apply the constrain(s) to |
-|  constraint | <code>DataObject&lt;T&gt;</code> | the constraint which is to be applied on the data object |
+|  originalData | [DataObject](./repository.dataobject.md)<!-- -->&lt;T&gt; | the model data to apply the constrain(s) to |
+|  constraint | [DataObject](./repository.dataobject.md)<!-- -->&lt;T&gt; | the constraint which is to be applied on the data object |
 
 <b>Returns:</b>
 
-`DataObject<T>`
+[DataObject](./repository.dataobject.md)<!-- -->&lt;T&gt;
 
 the modified data with the constraint, otherwise the original instance data
 

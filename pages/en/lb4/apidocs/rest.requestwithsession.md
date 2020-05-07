@@ -25,6 +25,6 @@ export interface RequestWithSession extends Request
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [session](./rest.requestwithsession.session.md) | <code>Session</code> |  |
+|  [session](./rest.requestwithsession.session.md) | [Session](./rest.session.md) |  |
 
 

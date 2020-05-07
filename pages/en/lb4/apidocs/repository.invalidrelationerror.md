@@ -29,10 +29,10 @@ export declare class InvalidRelationError<Props extends object = {}> extends Err
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [code](./repository.invalidrelationerror.code.md) |  | <code>string</code> |  |
-|  [reason](./repository.invalidrelationerror.reason.md) |  | <code>string</code> |  |
-|  [relationName](./repository.invalidrelationerror.relationname.md) |  | <code>string</code> |  |
-|  [relationType](./repository.invalidrelationerror.relationtype.md) |  | <code>RelationType</code> |  |
-|  [sourceModelName](./repository.invalidrelationerror.sourcemodelname.md) |  | <code>string</code> |  |
+|  [code](./repository.invalidrelationerror.code.md) |  | string |  |
+|  [reason](./repository.invalidrelationerror.reason.md) |  | string |  |
+|  [relationName](./repository.invalidrelationerror.relationname.md) |  | string |  |
+|  [relationType](./repository.invalidrelationerror.relationtype.md) |  | [RelationType](./repository.relationtype.md) |  |
+|  [sourceModelName](./repository.invalidrelationerror.sourcemodelname.md) |  | string |  |
 
 

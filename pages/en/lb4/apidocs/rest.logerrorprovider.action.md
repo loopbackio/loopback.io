@@ -23,12 +23,12 @@ action(err: Error, statusCode: number, req: Request): void;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  err | <code>Error</code> |  |
-|  statusCode | <code>number</code> |  |
-|  req | <code>Request</code> |  |
+|  err | Error |  |
+|  statusCode | number |  |
+|  req | Request |  |
 
 <b>Returns:</b>
 
-`void`
+void
 
 

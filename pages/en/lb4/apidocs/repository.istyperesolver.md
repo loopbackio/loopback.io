@@ -25,10 +25,10 @@ export declare function isTypeResolver<T extends object>(fn: any): fn is TypeRes
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  fn | <code>any</code> | The value to check. |
+|  fn | any | The value to check. |
 
 <b>Returns:</b>
 
-`fn is TypeResolver<T>`
+fn is [TypeResolver](./repository.typeresolver.md)<!-- -->&lt;T&gt;
 
 

@@ -25,6 +25,6 @@ constructor(tokenService: TokenService);
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  tokenService | <code>TokenService</code> |  |
+|  tokenService | [TokenService](./authentication.tokenservice.md) |  |
 
 

@@ -25,11 +25,11 @@ export declare function httpGetAsync(urlString: string, agent?: http.Agent): Pro
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  urlString | <code>string</code> |  |
-|  agent | <code>http.Agent</code> |  |
+|  urlString | string |  |
+|  agent | http.Agent |  |
 
 <b>Returns:</b>
 
-`Promise<IncomingMessage>`
+Promise&lt;IncomingMessage&gt;
 
 

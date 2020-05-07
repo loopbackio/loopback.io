@@ -25,10 +25,10 @@ export declare function asService(serviceInterface: ServiceInterface): BindingTe
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  serviceInterface | <code>ServiceInterface</code> | Service interface |
+|  serviceInterface | [ServiceInterface](./core.serviceinterface.md) | Service interface |
 
 <b>Returns:</b>
 
-`BindingTemplate`
+[BindingTemplate](./context.bindingtemplate.md)
 
 

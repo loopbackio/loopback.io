@@ -25,12 +25,12 @@ export declare function createRoutesForController<T>(spec: ControllerSpec, contr
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  spec | <code>ControllerSpec</code> | Controller spec |
-|  controllerCtor | <code>ControllerClass&lt;T&gt;</code> | Controller class |
-|  controllerFactory | <code>ControllerFactory&lt;T&gt;</code> | Controller factory |
+|  spec | [ControllerSpec](./openapi-v3.controllerspec.md) | Controller spec |
+|  controllerCtor | [ControllerClass](./rest.controllerclass.md)<!-- -->&lt;T&gt; | Controller class |
+|  controllerFactory | [ControllerFactory](./rest.controllerfactory.md)<!-- -->&lt;T&gt; | Controller factory |
 
 <b>Returns:</b>
 
-`ControllerRoute<T>[]`
+[ControllerRoute](./rest.controllerroute.md)<!-- -->&lt;T&gt;\[\]
 
 

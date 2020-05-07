@@ -25,10 +25,10 @@ booters(...booterClasses: Constructor<Booter>[]): Binding[];
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  booterClasses | <code>Constructor&lt;Booter&gt;[]</code> | A list of booter classes |
+|  booterClasses | [Constructor](./context.constructor.md)<!-- -->&lt;[Booter](./boot.booter.md)<!-- -->&gt;\[\] | A list of booter classes |
 
 <b>Returns:</b>
 
-`Binding[]`
+[Binding](./context.binding.md)<!-- -->\[\]
 
 

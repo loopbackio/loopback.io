@@ -29,14 +29,10 @@ static describeInjection(injection: Readonly<Injection>): {
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  injection | <code>Readonly&lt;Injection&gt;</code> | Injection object |
+|  injection | Readonly&lt;[Injection](./context.injection.md)<!-- -->&gt; | Injection object |
 
 <b>Returns:</b>
 
-`{
-        targetName: string;
-        bindingSelector: import("./binding-filter").BindingSelector<any>;
-        metadata: import("./inject").InjectionMetadata;
-    }`
+{ targetName: string; bindingSelector: import("./binding-filter").[BindingSelector](./context.bindingselector.md)<!-- -->&lt;any&gt;; metadata: import("./inject").[InjectionMetadata](./context.injectionmetadata.md)<!-- -->; }
 
 

@@ -25,10 +25,10 @@ export interface LernaPackage
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [location](./tsdocs.lernapackage.location.md) | <code>string</code> | Location of the package |
-|  [manifestLocation](./tsdocs.lernapackage.manifestlocation.md) | <code>string</code> | Location of <code>package.json</code> |
-|  [name](./tsdocs.lernapackage.name.md) | <code>string</code> | Package name |
-|  [private](./tsdocs.lernapackage.private.md) | <code>boolean</code> | Is it a private package? |
-|  [rootPath](./tsdocs.lernapackage.rootpath.md) | <code>string</code> | Root directory of the monorepo |
+|  [location](./tsdocs.lernapackage.location.md) | string | Location of the package |
+|  [manifestLocation](./tsdocs.lernapackage.manifestlocation.md) | string | Location of <code>package.json</code> |
+|  [name](./tsdocs.lernapackage.name.md) | string | Package name |
+|  [private](./tsdocs.lernapackage.private.md) | boolean | Is it a private package? |
+|  [rootPath](./tsdocs.lernapackage.rootpath.md) | string | Root directory of the monorepo |
 
 

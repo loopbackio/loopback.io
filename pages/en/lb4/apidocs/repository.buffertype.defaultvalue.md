@@ -20,6 +20,6 @@ defaultValue(): Buffer;
 ```
 <b>Returns:</b>
 
-`Buffer`
+Buffer
 
 

@@ -23,11 +23,11 @@ createAll(entities: DataObject<T>[], options?: Options): Promise<T[]>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  entities | <code>DataObject&lt;T&gt;[]</code> |  |
-|  options | <code>Options</code> |  |
+|  entities | [DataObject](./repository.dataobject.md)<!-- -->&lt;T&gt;\[\] |  |
+|  options | [Options](./repository.options.md) |  |
 
 <b>Returns:</b>
 
-`Promise<T[]>`
+Promise&lt;T\[\]&gt;
 
 

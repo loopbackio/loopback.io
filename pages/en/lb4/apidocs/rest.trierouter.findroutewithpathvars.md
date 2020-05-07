@@ -23,11 +23,11 @@ protected findRouteWithPathVars(verb: string, path: string): import("./route-ent
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  verb | <code>string</code> |  |
-|  path | <code>string</code> |  |
+|  verb | string |  |
+|  path | string |  |
 
 <b>Returns:</b>
 
-`import("./route-entry").ResolvedRoute | undefined`
+import("./route-entry").[ResolvedRoute](./rest.resolvedroute.md) \| undefined
 
 

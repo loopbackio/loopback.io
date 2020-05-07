@@ -31,10 +31,10 @@ export declare class RepositoryMetadata
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [dataSource](./repository.repositorymetadata.datasource.md) |  | <code>juggler.DataSource &#124; DataSource</code> | Instance of the data source |
-|  [dataSourceName](./repository.repositorymetadata.datasourcename.md) |  | <code>string</code> | Name of the data source |
-|  [modelClass](./repository.repositorymetadata.modelclass.md) |  | <code>typeof Entity</code> | Class of the model |
-|  [modelName](./repository.repositorymetadata.modelname.md) |  | <code>string</code> | Name of the model |
-|  [name](./repository.repositorymetadata.name.md) |  | <code>string</code> | Name of the predefined repository |
+|  [dataSource](./repository.repositorymetadata.datasource.md) |  | juggler.DataSource \| [DataSource](./repository.datasource.md) | Instance of the data source |
+|  [dataSourceName](./repository.repositorymetadata.datasourcename.md) |  | string | Name of the data source |
+|  [modelClass](./repository.repositorymetadata.modelclass.md) |  | typeof [Entity](./repository.entity.md) | Class of the model |
+|  [modelName](./repository.repositorymetadata.modelname.md) |  | string | Name of the model |
+|  [name](./repository.repositorymetadata.name.md) |  | string | Name of the predefined repository |
 
 

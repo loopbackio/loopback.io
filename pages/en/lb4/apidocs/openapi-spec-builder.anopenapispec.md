@@ -22,6 +22,6 @@ export declare function anOpenApiSpec(): OpenApiSpecBuilder;
 ```
 <b>Returns:</b>
 
-`OpenApiSpecBuilder`
+[OpenApiSpecBuilder](./openapi-spec-builder.openapispecbuilder.md)
 
 

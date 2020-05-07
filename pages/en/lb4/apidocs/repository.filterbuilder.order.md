@@ -25,10 +25,10 @@ order(...o: (string | string[] | Order<MT>)[]): this;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  o | <code>(string &#124; string[] &#124; Order&lt;MT&gt;)[]</code> | A field name with optional direction, an array of field names, or an Order object for the field/direction pairs |
+|  o | (string \| string\[\] \| [Order](./repository.order.md)<!-- -->&lt;MT&gt;)\[\] | A field name with optional direction, an array of field names, or an Order object for the field/direction pairs |
 
 <b>Returns:</b>
 
-`this`
+this
 
 

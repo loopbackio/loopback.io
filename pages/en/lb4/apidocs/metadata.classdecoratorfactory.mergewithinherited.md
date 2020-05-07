@@ -23,13 +23,13 @@ protected mergeWithInherited(inheritedMetadata: T, target: Object, member?: stri
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  inheritedMetadata | <code>T</code> |  |
-|  target | <code>Object</code> |  |
-|  member | <code>string</code> |  |
-|  descriptorOrIndex | <code>TypedPropertyDescriptor&lt;any&gt; &#124; number</code> |  |
+|  inheritedMetadata | T |  |
+|  target | Object |  |
+|  member | string |  |
+|  descriptorOrIndex | TypedPropertyDescriptor&lt;any&gt; \| number |  |
 
 <b>Returns:</b>
 
-`T`
+T
 
 

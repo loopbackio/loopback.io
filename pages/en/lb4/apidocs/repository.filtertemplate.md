@@ -23,11 +23,11 @@ export declare function filterTemplate(strings: TemplateStringsArray, ...keys: a
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  strings | <code>TemplateStringsArray</code> |  |
-|  keys | <code>any[]</code> |  |
+|  strings | TemplateStringsArray |  |
+|  keys | any\[\] |  |
 
 <b>Returns:</b>
 
-`(ctx: AnyObject) => any`
+(ctx: [AnyObject](./repository.anyobject.md)<!-- -->) =&gt; any
 
 

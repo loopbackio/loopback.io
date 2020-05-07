@@ -22,6 +22,6 @@ toJSON(): JSONObject;
 ```
 <b>Returns:</b>
 
-`JSONObject`
+[JSONObject](./context.jsonobject.md)
 
 

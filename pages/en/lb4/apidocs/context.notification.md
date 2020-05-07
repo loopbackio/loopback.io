@@ -25,6 +25,6 @@ export interface Notification extends ContextEvent
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [observers](./context.notification.observers.md) | <code>Set&lt;ContextEventObserver&gt;</code> | A snapshot of observers when the original event is emitted |
+|  [observers](./context.notification.observers.md) | Set&lt;[ContextEventObserver](./context.contexteventobserver.md)<!-- -->&gt; | A snapshot of observers when the original event is emitted |
 
 

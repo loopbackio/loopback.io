@@ -25,6 +25,6 @@ constructor(modelClass: Class<T>);
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  modelClass | <code>Class&lt;T&gt;</code> |  |
+|  modelClass | [Class](./repository.class.md)<!-- -->&lt;T&gt; |  |
 
 

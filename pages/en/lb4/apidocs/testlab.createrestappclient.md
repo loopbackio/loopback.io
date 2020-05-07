@@ -25,10 +25,10 @@ export declare function createRestAppClient(app: RestApplicationLike): supertest
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  app | <code>RestApplicationLike</code> | A running (listening) instance of a RestApplication. |
+|  app | [RestApplicationLike](./testlab.restapplicationlike.md) | A running (listening) instance of a RestApplication. |
 
 <b>Returns:</b>
 
-`supertest.SuperTest<supertest.Test>`
+supertest.SuperTest&lt;supertest.Test&gt;
 
 

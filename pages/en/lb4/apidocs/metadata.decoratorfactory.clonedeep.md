@@ -23,10 +23,10 @@ static cloneDeep<V>(val: Readonly<V>): V;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  val | <code>Readonly&lt;V&gt;</code> |  |
+|  val | Readonly&lt;V&gt; |  |
 
 <b>Returns:</b>
 
-`V`
+V
 
 

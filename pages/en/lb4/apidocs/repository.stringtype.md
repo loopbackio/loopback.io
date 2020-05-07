@@ -25,7 +25,7 @@ export declare class StringType implements Type<string>
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [name](./repository.stringtype.name.md) |  | <code></code> |  |
+|  [name](./repository.stringtype.name.md) |  | (not declared) |  |
 
 ## Methods
 

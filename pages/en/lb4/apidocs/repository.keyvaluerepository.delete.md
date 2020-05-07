@@ -25,11 +25,11 @@ delete(key: string, options?: Options): Promise<void>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  key | <code>string</code> | Key for the entry |
-|  options | <code>Options</code> | Options for the operation |
+|  key | string | Key for the entry |
+|  options | [Options](./repository.options.md) | Options for the operation |
 
 <b>Returns:</b>
 
-`Promise<void>`
+Promise&lt;void&gt;
 
 

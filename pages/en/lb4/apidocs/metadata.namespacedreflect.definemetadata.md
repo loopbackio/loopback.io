@@ -25,13 +25,13 @@ defineMetadata(metadataKey: string, metadataValue: any, target: Object, property
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  metadataKey | <code>string</code> |  |
-|  metadataValue | <code>any</code> |  |
-|  target | <code>Object</code> |  |
-|  propertyKey | <code>string</code> |  |
+|  metadataKey | string |  |
+|  metadataValue | any |  |
+|  target | Object |  |
+|  propertyKey | string |  |
 
 <b>Returns:</b>
 
-`void`
+void
 
 

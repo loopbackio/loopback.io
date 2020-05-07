@@ -25,8 +25,8 @@ constructor(requestBodyParser: RequestBodyParser, validationOptions?: RequestBod
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  requestBodyParser | <code>RequestBodyParser</code> |  |
-|  validationOptions | <code>RequestBodyValidationOptions</code> |  |
-|  ajvFactory | <code>AjvFactory &#124; undefined</code> |  |
+|  requestBodyParser | [RequestBodyParser](./rest.requestbodyparser.md) |  |
+|  validationOptions | [RequestBodyValidationOptions](./rest.requestbodyvalidationoptions.md) |  |
+|  ajvFactory | [AjvFactory](./rest.ajvfactory.md) \| undefined |  |
 
 

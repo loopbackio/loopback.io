@@ -25,10 +25,10 @@ setMetadata(metadata: ApplicationMetadata): void;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  metadata | <code>ApplicationMetadata</code> | Application metadata |
+|  metadata | [ApplicationMetadata](./core.applicationmetadata.md) | Application metadata |
 
 <b>Returns:</b>
 
-`void`
+void
 
 

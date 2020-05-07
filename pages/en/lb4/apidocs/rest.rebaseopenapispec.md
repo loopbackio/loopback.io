@@ -23,11 +23,11 @@ export declare function rebaseOpenApiSpec<T extends Partial<OpenApiSpec>>(spec: 
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  spec | <code>T</code> |  |
-|  basePath | <code>string</code> |  |
+|  spec | T |  |
+|  basePath | string |  |
 
 <b>Returns:</b>
 
-`T`
+T
 
 

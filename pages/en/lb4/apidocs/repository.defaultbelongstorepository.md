@@ -29,8 +29,8 @@ export declare class DefaultBelongsToRepository<TargetEntity extends Entity, Tar
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [constraint](./repository.defaultbelongstorepository.constraint.md) |  | <code>DataObject&lt;TargetEntity&gt;</code> |  |
-|  [getTargetRepository](./repository.defaultbelongstorepository.gettargetrepository.md) |  | <code>Getter&lt;TargetRepository&gt;</code> |  |
+|  [constraint](./repository.defaultbelongstorepository.constraint.md) |  | [DataObject](./repository.dataobject.md)<!-- -->&lt;TargetEntity&gt; |  |
+|  [getTargetRepository](./repository.defaultbelongstorepository.gettargetrepository.md) |  | [Getter](./context.getter.md)<!-- -->&lt;TargetRepository&gt; |  |
 
 ## Methods
 

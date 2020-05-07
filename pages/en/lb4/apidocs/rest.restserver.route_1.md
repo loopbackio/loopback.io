@@ -25,14 +25,14 @@ route(verb: string, path: string, spec: OperationObject, handler: Function): Bin
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  verb | <code>string</code> | HTTP verb of the endpoint |
-|  path | <code>string</code> | URL path of the endpoint |
-|  spec | <code>OperationObject</code> | The OpenAPI spec describing the endpoint (operation) |
-|  handler | <code>Function</code> | The function to invoke with the request parameters described in the spec. |
+|  verb | string | HTTP verb of the endpoint |
+|  path | string | URL path of the endpoint |
+|  spec | OperationObject | The OpenAPI spec describing the endpoint (operation) |
+|  handler | Function | The function to invoke with the request parameters described in the spec. |
 
 <b>Returns:</b>
 
-`Binding`
+[Binding](./context.binding.md)
 
 ## Example
 

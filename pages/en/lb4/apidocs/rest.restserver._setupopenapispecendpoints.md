@@ -22,6 +22,6 @@ protected _setupOpenApiSpecEndpoints(): void;
 ```
 <b>Returns:</b>
 
-`void`
+void
 
 

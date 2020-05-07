@@ -29,8 +29,8 @@ export declare class DefaultHasOneRepository<TargetEntity extends Entity, Target
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [constraint](./repository.defaulthasonerepository.constraint.md) |  | <code>DataObject&lt;TargetEntity&gt;</code> |  |
-|  [getTargetRepository](./repository.defaulthasonerepository.gettargetrepository.md) |  | <code>Getter&lt;TargetRepository&gt;</code> |  |
+|  [constraint](./repository.defaulthasonerepository.constraint.md) |  | [DataObject](./repository.dataobject.md)<!-- -->&lt;TargetEntity&gt; |  |
+|  [getTargetRepository](./repository.defaulthasonerepository.gettargetrepository.md) |  | [Getter](./context.getter.md)<!-- -->&lt;TargetRepository&gt; |  |
 
 ## Methods
 

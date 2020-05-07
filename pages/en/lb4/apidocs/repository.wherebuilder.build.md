@@ -22,6 +22,6 @@ build(): Where<MT>;
 ```
 <b>Returns:</b>
 
-`Where<MT>`
+[Where](./repository.where.md)<!-- -->&lt;MT&gt;
 
 

@@ -25,10 +25,10 @@ export declare function inspectTargetType(injection: Readonly<Injection>): Funct
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  injection | <code>Readonly&lt;Injection&gt;</code> | Injection information |
+|  injection | Readonly&lt;[Injection](./context.injection.md)<!-- -->&gt; | Injection information |
 
 <b>Returns:</b>
 
-`Function`
+Function
 
 

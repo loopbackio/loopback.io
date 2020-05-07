@@ -25,12 +25,12 @@ get(filter?: Pick<Filter<Target>, Exclude<keyof Filter<Target>, 'where'>>, optio
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  filter | <code>Pick&lt;Filter&lt;Target&gt;, Exclude&lt;keyof Filter&lt;Target&gt;, 'where'&gt;&gt;</code> | Query filter without a Where condition |
-|  options | <code>Options</code> | Options for the operations |
+|  filter | Pick&lt;[Filter](./repository.filter.md)<!-- -->&lt;Target&gt;, Exclude&lt;keyof [Filter](./repository.filter.md)<!-- -->&lt;Target&gt;, 'where'&gt;&gt; | Query filter without a Where condition |
+|  options | [Options](./repository.options.md) | Options for the operations |
 
 <b>Returns:</b>
 
-`Promise<Target>`
+Promise&lt;Target&gt;
 
 A promise resolved with the target object or rejected with an EntityNotFoundError when target model instance was not found.
 

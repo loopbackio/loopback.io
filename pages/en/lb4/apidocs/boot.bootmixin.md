@@ -37,20 +37,10 @@ export declare function BootMixin<T extends Constructor<any>>(superClass: T): {
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  superClass | <code>T</code> |  |
+|  superClass | T |  |
 
 <b>Returns:</b>
 
-`{
-    new (...args: any[]): {
-        [x: string]: any;
-        projectRoot: string;
-        bootOptions?: BootOptions | undefined;
-        boot(): Promise<void>;
-        booters(...booterCls: Constructor<Booter>[]): Binding<any>[];
-        component(component: Constructor<{}>): void;
-        mountComponentBooters(component: Constructor<{}>): void;
-    };
-} & T`
+{ new (...args: any\[\]): { \[x: string\]: any; projectRoot: string; bootOptions?: [BootOptions](./boot.bootoptions.md) \| undefined; boot(): Promise&lt;void&gt;; booters(...booterCls: [Constructor](./context.constructor.md)<!-- -->&lt;[Booter](./boot.booter.md)<!-- -->&gt;\[\]): [Binding](./context.binding.md)<!-- -->&lt;any&gt;\[\]; component(component: [Constructor](./context.constructor.md)<!-- -->&lt;{}&gt;): void; mountComponentBooters(component: [Constructor](./context.constructor.md)<!-- -->&lt;{}&gt;): void; }; } &amp; T
 
 

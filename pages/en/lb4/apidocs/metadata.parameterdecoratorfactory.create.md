@@ -20,6 +20,6 @@ create(): ParameterDecorator;
 ```
 <b>Returns:</b>
 
-`ParameterDecorator`
+ParameterDecorator
 
 

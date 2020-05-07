@@ -23,10 +23,10 @@ export declare function serviceProxy(dataSource: string | juggler.DataSource): (
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  dataSource | <code>string &#124; juggler.DataSource</code> |  |
+|  dataSource | string \| juggler.DataSource |  |
 
 <b>Returns:</b>
 
-`(target: object, key: string, parameterIndex?: number | undefined) => void`
+(target: object, key: string, parameterIndex?: number \| undefined) =&gt; void
 
 

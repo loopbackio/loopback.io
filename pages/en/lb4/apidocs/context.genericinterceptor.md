@@ -15,9 +15,29 @@ permalink: /doc/en/lb4/apidocs.context.genericinterceptor.html
 
 An interceptor function to be invoked in a chain for the given context. It serves as the base interface for various types of interceptors, such as method invocation interceptor or request/response processing interceptor.
 
+We choose `NonVoid` as the return type to avoid possible bugs that an interceptor forgets to return the value from `next()`<!-- -->. For example, the code below will fail to compile.
+
+```ts
+const myInterceptor: Interceptor = async (ctx, next) {
+  // preprocessing
+  // ...
+
+  // There is a subtle bug that the result from `next()` is not further
+  // returned back to the upstream interceptors
+  const result = await next();
+
+  // postprocessing
+  // ...
+  // We must have `return ...` here
+  // either return `result` or another value if the interceptor decides to
+  // have its own response
+}
+
+```
+
 <b>Signature:</b>
 
 ```typescript
-export declare type GenericInterceptor<C extends Context = Context> = (context: C, next: Next) => ValueOrPromise<InvocationResult>;
+export declare type GenericInterceptor<C extends Context = Context> = (context: C, next: Next) => ValueOrPromise<NonVoid>;
 ```
 

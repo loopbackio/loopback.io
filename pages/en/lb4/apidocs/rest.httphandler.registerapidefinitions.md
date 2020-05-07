@@ -28,10 +28,10 @@ registerApiDefinitions(defs: SchemasObject): void;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  defs | <code>SchemasObject</code> | Schemas |
+|  defs | SchemasObject | Schemas |
 
 <b>Returns:</b>
 
-`void`
+void
 
 

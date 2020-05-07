@@ -25,11 +25,11 @@ static configure<T = unknown>(key: BindingAddress): Binding<T>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  key | <code>BindingAddress</code> | Key for the binding to be configured |
+|  key | [BindingAddress](./context.bindingaddress.md) | Key for the binding to be configured |
 
 <b>Returns:</b>
 
-`Binding<T>`
+[Binding](./context.binding.md)<!-- -->&lt;T&gt;
 
 ## Example
 

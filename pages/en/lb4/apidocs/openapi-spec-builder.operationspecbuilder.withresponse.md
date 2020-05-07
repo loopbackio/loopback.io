@@ -25,11 +25,11 @@ withResponse(status: number | 'default', responseSpec: ResponseObject): this;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  status | <code>number &#124; 'default'</code> | HTTP status code or string "default" |
-|  responseSpec | <code>ResponseObject</code> | Specification of the response |
+|  status | number \| 'default' | HTTP status code or string "default" |
+|  responseSpec | ResponseObject | Specification of the response |
 
 <b>Returns:</b>
 
-`this`
+this
 
 

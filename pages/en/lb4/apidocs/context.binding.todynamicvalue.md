@@ -25,11 +25,11 @@ toDynamicValue(factoryFn: () => ValueOrPromise<T>): this;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  factoryFn | <code>() =&gt; ValueOrPromise&lt;T&gt;</code> | The factory function creating the value. Both sync and async functions are supported. |
+|  factoryFn | () =&gt; [ValueOrPromise](./context.valueorpromise.md)<!-- -->&lt;T&gt; | The factory function creating the value. Both sync and async functions are supported. |
 
 <b>Returns:</b>
 
-`this`
+this
 
 ## Example
 

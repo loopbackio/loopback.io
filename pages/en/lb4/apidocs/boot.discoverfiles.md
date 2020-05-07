@@ -25,12 +25,12 @@ export declare function discoverFiles(pattern: string, root: string): Promise<st
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  pattern | <code>string</code> | A glob pattern |
-|  root | <code>string</code> | Root folder to start searching for matching files |
+|  pattern | string | A glob pattern |
+|  root | string | Root folder to start searching for matching files |
 
 <b>Returns:</b>
 
-`Promise<string[]>`
+Promise&lt;string\[\]&gt;
 
 Array of discovered files
 

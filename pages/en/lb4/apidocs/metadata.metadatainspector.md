@@ -25,8 +25,8 @@ export declare class MetadataInspector
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [DesignTimeReflector](./metadata.metadatainspector.designtimereflector.md) | <code>static</code> | <code>NamespacedReflect</code> | Expose the reflector for TypeScript design-time metadata |
-|  [Reflector](./metadata.metadatainspector.reflector.md) | <code>static</code> | <code>NamespacedReflect</code> | Expose Reflector, which is a wrapper of <code>Reflect</code> and it uses <code>loopback</code> as the namespace prefix for all metadata keys |
+|  [DesignTimeReflector](./metadata.metadatainspector.designtimereflector.md) | <code>static</code> | [NamespacedReflect](./metadata.namespacedreflect.md) | Expose the reflector for TypeScript design-time metadata |
+|  [Reflector](./metadata.metadatainspector.reflector.md) | <code>static</code> | [NamespacedReflect](./metadata.namespacedreflect.md) | Expose Reflector, which is a wrapper of <code>Reflect</code> and it uses <code>loopback</code> as the namespace prefix for all metadata keys |
 
 ## Methods
 

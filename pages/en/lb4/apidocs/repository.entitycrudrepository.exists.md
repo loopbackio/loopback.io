@@ -25,12 +25,12 @@ exists(id: ID, options?: Options): Promise<boolean>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  id | <code>ID</code> | Value for the entity id |
-|  options | <code>Options</code> | Options for the operations |
+|  id | ID | Value for the entity id |
+|  options | [Options](./repository.options.md) | Options for the operations |
 
 <b>Returns:</b>
 
-`Promise<boolean>`
+Promise&lt;boolean&gt;
 
 Promise<true> if an entity exists for the id, otherwise Promise<false>
 

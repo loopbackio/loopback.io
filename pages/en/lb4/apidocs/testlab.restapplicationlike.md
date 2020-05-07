@@ -23,6 +23,6 @@ export interface RestApplicationLike
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [restServer](./testlab.restapplicationlike.restserver.md) | <code>RestServerLike</code> |  |
+|  [restServer](./testlab.restapplicationlike.restserver.md) | [RestServerLike](./testlab.restserverlike.md) |  |
 
 

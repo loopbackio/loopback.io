@@ -22,6 +22,6 @@ stop?(): ValueOrPromise<void>;
 ```
 <b>Returns:</b>
 
-`ValueOrPromise<void>`
+[ValueOrPromise](./context.valueorpromise.md)<!-- -->&lt;void&gt;
 
 

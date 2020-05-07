@@ -25,12 +25,12 @@ ttl?(key: string, options?: Options): Promise<number>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  key | <code>string</code> | Key for the entry |
-|  options | <code>Options</code> | Options for the operation |
+|  key | string | Key for the entry |
+|  options | [Options](./repository.options.md) | Options for the operation |
 
 <b>Returns:</b>
 
-`Promise<number>`
+Promise&lt;number&gt;
 
 A promise of the TTL value
 

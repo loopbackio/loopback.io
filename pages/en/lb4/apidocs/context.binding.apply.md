@@ -25,11 +25,11 @@ apply(...templateFns: BindingTemplate<T>[]): this;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  templateFns | <code>BindingTemplate&lt;T&gt;[]</code> | One or more functions to configure the binding |
+|  templateFns | [BindingTemplate](./context.bindingtemplate.md)<!-- -->&lt;T&gt;\[\] | One or more functions to configure the binding |
 
 <b>Returns:</b>
 
-`this`
+this
 
 ## Example
 

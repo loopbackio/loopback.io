@@ -20,6 +20,6 @@ value(): InvokeMethod;
 ```
 <b>Returns:</b>
 
-`InvokeMethod`
+[InvokeMethod](./rest.invokemethod.md)
 
 

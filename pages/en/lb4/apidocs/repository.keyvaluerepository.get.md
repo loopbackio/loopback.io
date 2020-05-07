@@ -25,12 +25,12 @@ get(key: string, options?: Options): Promise<T>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  key | <code>string</code> | Key for the entry |
-|  options | <code>Options</code> | Options for the operation |
+|  key | string | Key for the entry |
+|  options | [Options](./repository.options.md) | Options for the operation |
 
 <b>Returns:</b>
 
-`Promise<T>`
+Promise&lt;T&gt;
 
 A promise of the entry
 

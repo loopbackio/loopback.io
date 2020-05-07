@@ -25,10 +25,10 @@ enforce(request: AuthorizationRequest): Promise<AuthorizationDecision>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  request | <code>AuthorizationRequest</code> |  |
+|  request | [AuthorizationRequest](./authorization.authorizationrequest.md) |  |
 
 <b>Returns:</b>
 
-`Promise<AuthorizationDecision>`
+Promise&lt;[AuthorizationDecision](./authorization.authorizationdecision.md)<!-- -->&gt;
 
 

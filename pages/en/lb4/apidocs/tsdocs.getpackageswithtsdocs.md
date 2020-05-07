@@ -25,10 +25,10 @@ export declare function getPackagesWithTsDocs(rootDir?: string): Promise<LernaPa
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  rootDir | <code>string</code> | Root directory to find the monorepo |
+|  rootDir | string | Root directory to find the monorepo |
 
 <b>Returns:</b>
 
-`Promise<LernaPackage[]>`
+Promise&lt;[LernaPackage](./tsdocs.lernapackage.md)<!-- -->\[\]&gt;
 
 

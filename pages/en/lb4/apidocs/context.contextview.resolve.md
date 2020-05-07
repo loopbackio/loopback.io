@@ -25,10 +25,10 @@ resolve(session?: ResolutionSession): ValueOrPromise<T[]>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  session | <code>ResolutionSession</code> | Resolution session |
+|  session | [ResolutionSession](./context.resolutionsession.md) | Resolution session |
 
 <b>Returns:</b>
 
-`ValueOrPromise<T[]>`
+[ValueOrPromise](./context.valueorpromise.md)<!-- -->&lt;T\[\]&gt;
 
 

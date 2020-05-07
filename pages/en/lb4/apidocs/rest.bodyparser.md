@@ -25,7 +25,7 @@ export interface BodyParser
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [name](./rest.bodyparser.name.md) | <code>string &#124; symbol</code> | Name of the parser |
+|  [name](./rest.bodyparser.name.md) | string \| symbol | Name of the parser |
 
 ## Methods
 

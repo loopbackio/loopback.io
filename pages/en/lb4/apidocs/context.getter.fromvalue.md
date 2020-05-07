@@ -25,10 +25,10 @@ function fromValue<T>(value: T): Getter<T>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  value | <code>T</code> |  |
+|  value | T |  |
 
 <b>Returns:</b>
 
-`Getter<T>`
+[Getter](./context.getter.md)<!-- -->&lt;T&gt;
 
 

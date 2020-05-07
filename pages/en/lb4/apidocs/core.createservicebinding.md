@@ -25,11 +25,11 @@ export declare function createServiceBinding<S>(cls: Constructor<S> | Constructo
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  cls | <code>Constructor&lt;S&gt; &#124; Constructor&lt;Provider&lt;S&gt;&gt;</code> | Service class or provider |
-|  options | <code>ServiceOptions</code> | Service options |
+|  cls | [Constructor](./context.constructor.md)<!-- -->&lt;S&gt; \| [Constructor](./context.constructor.md)<!-- -->&lt;[Provider](./context.provider.md)<!-- -->&lt;S&gt;&gt; | Service class or provider |
+|  options | [ServiceOptions](./core.serviceoptions.md) | Service options |
 
 <b>Returns:</b>
 
-`Binding<S>`
+[Binding](./context.binding.md)<!-- -->&lt;S&gt;
 
 

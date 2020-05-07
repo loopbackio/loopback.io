@@ -23,10 +23,10 @@ export declare function stubExpressContext(requestOptions?: ShotRequestOptions):
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  requestOptions | <code>ShotRequestOptions</code> |  |
+|  requestOptions | ShotRequestOptions |  |
 
 <b>Returns:</b>
 
-`ExpressContextStub`
+[ExpressContextStub](./testlab.expresscontextstub.md)
 
 

@@ -31,7 +31,7 @@ export declare class HttpCachingProxy
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [url](./http-caching-proxy.httpcachingproxy.url.md) |  | <code>string</code> | URL where the proxy is listening on. Provide this value to your HTTP client as the proxy configuration. |
+|  [url](./http-caching-proxy.httpcachingproxy.url.md) |  | string | URL where the proxy is listening on. Provide this value to your HTTP client as the proxy configuration. |
 
 ## Methods
 

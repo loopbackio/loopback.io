@@ -25,11 +25,11 @@ export declare function configBindingKeyFor<ConfigValueType = unknown>(key: Bind
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  key | <code>BindingAddress</code> | Binding key for the target binding |
-|  propertyPath | <code>string</code> | Property path for the configuration |
+|  key | [BindingAddress](./context.bindingaddress.md) | Binding key for the target binding |
+|  propertyPath | string | Property path for the configuration |
 
 <b>Returns:</b>
 
-`BindingKey<ConfigValueType>`
+[BindingKey](./context.bindingkey.md)<!-- -->&lt;ConfigValueType&gt;
 
 

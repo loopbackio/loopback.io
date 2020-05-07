@@ -20,6 +20,6 @@ value(): FindRoute;
 ```
 <b>Returns:</b>
 
-`FindRoute`
+[FindRoute](./rest.findroute.md)
 
 

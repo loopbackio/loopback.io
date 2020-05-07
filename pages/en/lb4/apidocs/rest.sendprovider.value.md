@@ -20,6 +20,6 @@ value(): typeof writeResultToResponse;
 ```
 <b>Returns:</b>
 
-`typeof writeResultToResponse`
+typeof writeResultToResponse
 
 

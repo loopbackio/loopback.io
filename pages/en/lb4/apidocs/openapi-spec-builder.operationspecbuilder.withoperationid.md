@@ -25,10 +25,10 @@ withOperationId(operationId: string): this;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  operationId | <code>string</code> | Operation id |
+|  operationId | string | Operation id |
 
 <b>Returns:</b>
 
-`this`
+this
 
 

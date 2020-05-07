@@ -23,11 +23,11 @@ update(entity: T, options?: Options): Promise<void>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  entity | <code>T</code> |  |
-|  options | <code>Options</code> |  |
+|  entity | T |  |
+|  options | [Options](./repository.options.md) |  |
 
 <b>Returns:</b>
 
-`Promise<void>`
+Promise&lt;void&gt;
 
 

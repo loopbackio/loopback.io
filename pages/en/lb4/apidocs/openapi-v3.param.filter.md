@@ -27,12 +27,12 @@ function filter(modelCtor: typeof Model, options?: string | (FilterSchemaOptions
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  modelCtor | <code>typeof Model</code> | Model class |
-|  options | <code>string &#124; (FilterSchemaOptions &amp; {</code><br/><code>        name?: string;</code><br/><code>    })</code> | Options to customize the parameter name or filter schema |
+|  modelCtor | typeof [Model](./repository.model.md) | Model class |
+|  options | string \| ([FilterSchemaOptions](./repository-json-schema.filterschemaoptions.md) &amp; { name?: string; }) | Options to customize the parameter name or filter schema |
 
 <b>Returns:</b>
 
-`(target: object, member: string, index: number) => void`
+(target: object, member: string, index: number) =&gt; void
 
 ## Example
 

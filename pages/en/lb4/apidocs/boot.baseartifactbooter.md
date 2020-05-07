@@ -37,14 +37,14 @@ export declare class BaseArtifactBooter implements Booter
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [artifactName](./boot.baseartifactbooter.artifactname.md) |  | <code>string</code> | Get the name of the artifact loaded by this booter, e.g. "Controller". Subclasses can override the default logic based on the class name. |
-|  [classes](./boot.baseartifactbooter.classes.md) |  | <code>Constructor&lt;{}&gt;[]</code> | List of exported classes discovered in the files |
-|  [dirs](./boot.baseartifactbooter.dirs.md) |  | <code>string[]</code> | Relative paths of directories to be searched |
-|  [discovered](./boot.baseartifactbooter.discovered.md) |  | <code>string[]</code> | List of files discovered by the Booter that matched artifact requirements |
-|  [extensions](./boot.baseartifactbooter.extensions.md) |  | <code>string[]</code> | File extensions to be searched |
-|  [glob](./boot.baseartifactbooter.glob.md) |  | <code>string</code> | <code>glob</code> pattern to match artifact paths |
-|  [options](./boot.baseartifactbooter.options.md) |  | <code>ArtifactOptions</code> | Options being used by the Booter. |
-|  [projectRoot](./boot.baseartifactbooter.projectroot.md) |  | <code>string</code> | Project root relative to which all other paths are resolved |
+|  [artifactName](./boot.baseartifactbooter.artifactname.md) |  | string | Get the name of the artifact loaded by this booter, e.g. "Controller". Subclasses can override the default logic based on the class name. |
+|  [classes](./boot.baseartifactbooter.classes.md) |  | [Constructor](./context.constructor.md)<!-- -->&lt;{}&gt;\[\] | List of exported classes discovered in the files |
+|  [dirs](./boot.baseartifactbooter.dirs.md) |  | string\[\] | Relative paths of directories to be searched |
+|  [discovered](./boot.baseartifactbooter.discovered.md) |  | string\[\] | List of files discovered by the Booter that matched artifact requirements |
+|  [extensions](./boot.baseartifactbooter.extensions.md) |  | string\[\] | File extensions to be searched |
+|  [glob](./boot.baseartifactbooter.glob.md) |  | string | <code>glob</code> pattern to match artifact paths |
+|  [options](./boot.baseartifactbooter.options.md) |  | [ArtifactOptions](./boot.artifactoptions.md) | Options being used by the Booter. |
+|  [projectRoot](./boot.baseartifactbooter.projectroot.md) |  | string | Project root relative to which all other paths are resolved |
 
 ## Methods
 

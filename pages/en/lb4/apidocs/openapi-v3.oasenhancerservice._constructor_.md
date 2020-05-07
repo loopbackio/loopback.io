@@ -27,7 +27,7 @@ constructor(
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  getEnhancers | <code>Getter&lt;OASEnhancer[]&gt;</code> |  |
-|  options | <code>OASEnhancerServiceOptions &#124; undefined</code> |  |
+|  getEnhancers | [Getter](./context.getter.md)<!-- -->&lt;[OASEnhancer](./openapi-v3.oasenhancer.md)<!-- -->\[\]&gt; |  |
+|  options | [OASEnhancerServiceOptions](./openapi-v3.oasenhancerserviceoptions.md) \| undefined |  |
 
 

@@ -31,8 +31,8 @@ export declare class UnionType implements Type<any>
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [itemTypes](./repository.uniontype.itemtypes.md) |  | <code>Type&lt;any&gt;[]</code> |  |
-|  [name](./repository.uniontype.name.md) |  | <code></code> |  |
+|  [itemTypes](./repository.uniontype.itemtypes.md) |  | [Type](./repository.type.md)<!-- -->&lt;any&gt;\[\] |  |
+|  [name](./repository.uniontype.name.md) |  | (not declared) |  |
 
 ## Methods
 

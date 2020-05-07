@@ -22,6 +22,6 @@ popInjection(): Readonly<Injection<any>>;
 ```
 <b>Returns:</b>
 
-`Readonly<Injection<any>>`
+Readonly&lt;[Injection](./context.injection.md)<!-- -->&lt;any&gt;&gt;
 
 

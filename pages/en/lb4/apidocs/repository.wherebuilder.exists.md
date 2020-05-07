@@ -25,11 +25,11 @@ exists<K extends KeyOf<MT>>(key: K, val?: boolean): this;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  key | <code>K</code> | Property name |
-|  val | <code>boolean</code> | Exists or not |
+|  key | K | Property name |
+|  val | boolean | Exists or not |
 
 <b>Returns:</b>
 
-`this`
+this
 
 

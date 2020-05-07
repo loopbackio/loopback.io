@@ -25,14 +25,14 @@ export declare function invokeMethodWithInterceptors(context: Context, target: o
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  context | <code>Context</code> | Context object |
-|  target | <code>object</code> | Target class (for static methods) or object (for instance methods) |
-|  methodName | <code>string</code> | Method name |
-|  args | <code>InvocationArgs</code> | An array of argument values |
-|  options | <code>InvocationOptions</code> | Options for the invocation |
+|  context | [Context](./context.context.md) | Context object |
+|  target | object | Target class (for static methods) or object (for instance methods) |
+|  methodName | string | Method name |
+|  args | [InvocationArgs](./context.invocationargs.md) | An array of argument values |
+|  options | [InvocationOptions](./context.invocationoptions.md) | Options for the invocation |
 
 <b>Returns:</b>
 
-`ValueOrPromise<InvocationResult>`
+[ValueOrPromise](./context.valueorpromise.md)<!-- -->&lt;[InvocationResult](./context.invocationresult.md)<!-- -->&gt;
 
 

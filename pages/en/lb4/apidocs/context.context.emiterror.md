@@ -25,10 +25,10 @@ emitError(err: unknown): void;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  err | <code>unknown</code> | Error |
+|  err | unknown | Error |
 
 <b>Returns:</b>
 
-`void`
+void
 
 

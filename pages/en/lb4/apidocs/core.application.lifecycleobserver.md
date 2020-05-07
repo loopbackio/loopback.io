@@ -18,18 +18,18 @@ Register a life cycle observer class
 <b>Signature:</b>
 
 ```typescript
-lifeCycleObserver<T extends LifeCycleObserver>(ctor: Constructor<T>, name?: string): Binding<T>;
+lifeCycleObserver<T extends LifeCycleObserver>(ctor: Constructor<T>, nameOrOptions?: string | BindingFromClassOptions): Binding<T>;
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  ctor | <code>Constructor&lt;T&gt;</code> | A class implements LifeCycleObserver |
-|  name | <code>string</code> | Optional name for the life cycle observer |
+|  ctor | [Constructor](./context.constructor.md)<!-- -->&lt;T&gt; | A class implements LifeCycleObserver |
+|  nameOrOptions | string \| [BindingFromClassOptions](./context.bindingfromclassoptions.md) | Optional name or options for the life cycle observer |
 
 <b>Returns:</b>
 
-`Binding<T>`
+[Binding](./context.binding.md)<!-- -->&lt;T&gt;
 
 

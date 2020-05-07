@@ -23,10 +23,10 @@ function invalidParamLocation(location: string): HttpErrors.HttpError;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  location | <code>string</code> |  |
+|  location | string |  |
 
 <b>Returns:</b>
 
-`HttpErrors.HttpError`
+HttpErrors.HttpError
 
 

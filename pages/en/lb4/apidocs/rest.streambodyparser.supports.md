@@ -23,10 +23,10 @@ supports(mediaType: string): boolean;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  mediaType | <code>string</code> |  |
+|  mediaType | string |  |
 
 <b>Returns:</b>
 
-`boolean`
+boolean
 
 

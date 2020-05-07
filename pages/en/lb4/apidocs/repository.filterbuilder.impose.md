@@ -25,10 +25,10 @@ impose(constraint: Filter<MT> | Where<MT>): this;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  constraint | <code>Filter&lt;MT&gt; &#124; Where&lt;MT&gt;</code> | a constraint object to merge with own filter object |
+|  constraint | [Filter](./repository.filter.md)<!-- -->&lt;MT&gt; \| [Where](./repository.where.md)<!-- -->&lt;MT&gt; | a constraint object to merge with own filter object |
 
 <b>Returns:</b>
 
-`this`
+this
 
 

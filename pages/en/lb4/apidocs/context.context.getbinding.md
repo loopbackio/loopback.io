@@ -25,10 +25,10 @@ getBinding<ValueType = BoundValue>(key: BindingAddress<ValueType>): Binding<Valu
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  key | <code>BindingAddress&lt;ValueType&gt;</code> | Binding key |
+|  key | [BindingAddress](./context.bindingaddress.md)<!-- -->&lt;ValueType&gt; | Binding key |
 
 <b>Returns:</b>
 
-`Binding<ValueType>`
+[Binding](./context.binding.md)<!-- -->&lt;ValueType&gt;
 
 

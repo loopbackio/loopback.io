@@ -25,6 +25,6 @@ export interface ContextViewEvent<T> extends ContextEvent
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [cachedValue](./context.contextviewevent.cachedvalue.md) | <code>T</code> | Optional cached value for an <code>unbind</code> event |
+|  [cachedValue](./context.contextviewevent.cachedvalue.md) | T | Optional cached value for an <code>unbind</code> event |
 
 

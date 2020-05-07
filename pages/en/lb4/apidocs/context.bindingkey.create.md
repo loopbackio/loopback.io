@@ -25,12 +25,12 @@ static create<ValueType>(key: string, propertyPath?: string): BindingKey<ValueTy
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  key | <code>string</code> | The binding key. When propertyPath is not provided, the key is allowed to contain propertyPath as encoded via <code>BindingKey#toString()</code> |
-|  propertyPath | <code>string</code> | Optional path to a deep property of the bound value. |
+|  key | string | The binding key. When propertyPath is not provided, the key is allowed to contain propertyPath as encoded via <code>BindingKey#toString()</code> |
+|  propertyPath | string | Optional path to a deep property of the bound value. |
 
 <b>Returns:</b>
 
-`BindingKey<ValueType>`
+[BindingKey](./context.bindingkey.md)<!-- -->&lt;ValueType&gt;
 
 ## Example
 

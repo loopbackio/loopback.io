@@ -25,11 +25,11 @@ export declare function globalInterceptor(group?: string, ...specs: BindingSpec[
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  group | <code>string</code> | Group for ordering the interceptor |
-|  specs | <code>BindingSpec[]</code> | Extra binding specs |
+|  group | string | Group for ordering the interceptor |
+|  specs | [BindingSpec](./context.bindingspec.md)<!-- -->\[\] | Extra binding specs |
 
 <b>Returns:</b>
 
-`ClassDecorator`
+ClassDecorator
 
 

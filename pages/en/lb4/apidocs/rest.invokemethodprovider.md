@@ -29,7 +29,7 @@ export declare class InvokeMethodProvider implements Provider<InvokeMethod>
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [context](./rest.invokemethodprovider.context.md) |  | <code>Context</code> |  |
+|  [context](./rest.invokemethodprovider.context.md) |  | [Context](./context.context.md) |  |
 
 ## Methods
 

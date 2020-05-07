@@ -25,11 +25,11 @@ verifyCredentials(credentials: C): Promise<U>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  credentials | <code>C</code> | Credentials for basic auth or configurations for 3rd party. Example see the |
+|  credentials | C | Credentials for basic auth or configurations for 3rd party. Example see the |
 
 <b>Returns:</b>
 
-`Promise<U>`
+Promise&lt;U&gt;
 
 ## Example
 

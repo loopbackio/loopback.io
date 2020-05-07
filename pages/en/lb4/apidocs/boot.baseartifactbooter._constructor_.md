@@ -25,7 +25,7 @@ constructor(projectRoot: string, options: ArtifactOptions);
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  projectRoot | <code>string</code> |  |
-|  options | <code>ArtifactOptions</code> |  |
+|  projectRoot | string |  |
+|  options | [ArtifactOptions](./boot.artifactoptions.md) |  |
 
 

@@ -23,11 +23,11 @@ export declare function getParserOptions(type: 'text', options: RequestBodyParse
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  type | <code>'text'</code> |  |
-|  options | <code>RequestBodyParserOptions</code> |  |
+|  type | 'text' |  |
+|  options | [RequestBodyParserOptions](./rest.requestbodyparseroptions.md) |  |
 
 <b>Returns:</b>
 
-`OptionsText`
+OptionsText
 
 

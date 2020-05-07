@@ -25,13 +25,13 @@ createAll?(modelClass: Class<Entity>, entities: EntityData[], options?: Options)
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  modelClass | <code>Class&lt;Entity&gt;</code> | The model class |
-|  entities | <code>EntityData[]</code> | An array of entity instances or data |
-|  options | <code>Options</code> | Options for the operation |
+|  modelClass | [Class](./repository.class.md)<!-- -->&lt;[Entity](./repository.entity.md)<!-- -->&gt; | The model class |
+|  entities | [EntityData](./repository.entitydata.md)<!-- -->\[\] | An array of entity instances or data |
+|  options | [Options](./repository.options.md) | Options for the operation |
 
 <b>Returns:</b>
 
-`Promise<EntityData[]>`
+Promise&lt;[EntityData](./repository.entitydata.md)<!-- -->\[\]&gt;
 
 A promise of an array of entities created
 

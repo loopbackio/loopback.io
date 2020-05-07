@@ -25,11 +25,11 @@ export declare function compareRoute(route1: Pick<RouteEntry, 'verb' | 'path'>, 
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  route1 | <code>Pick&lt;RouteEntry, 'verb' &#124; 'path'&gt;</code> | First route entry |
-|  route2 | <code>Pick&lt;RouteEntry, 'verb' &#124; 'path'&gt;</code> | Second route entry |
+|  route1 | Pick&lt;[RouteEntry](./rest.routeentry.md)<!-- -->, 'verb' \| 'path'&gt; | First route entry |
+|  route2 | Pick&lt;[RouteEntry](./rest.routeentry.md)<!-- -->, 'verb' \| 'path'&gt; | Second route entry |
 
 <b>Returns:</b>
 
-`number`
+number
 
 

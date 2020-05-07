@@ -25,13 +25,13 @@ count(modelClass: Class<Entity>, where?: Where<Entity>, options?: Options): Prom
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  modelClass | <code>Class&lt;Entity&gt;</code> | The model class |
-|  where | <code>Where&lt;Entity&gt;</code> | The matching criteria |
-|  options | <code>Options</code> | Options for the operation |
+|  modelClass | [Class](./repository.class.md)<!-- -->&lt;[Entity](./repository.entity.md)<!-- -->&gt; | The model class |
+|  where | [Where](./repository.where.md)<!-- -->&lt;[Entity](./repository.entity.md)<!-- -->&gt; | The matching criteria |
+|  options | [Options](./repository.options.md) | Options for the operation |
 
 <b>Returns:</b>
 
-`Promise<Count>`
+Promise&lt;[Count](./repository.count.md)<!-- -->&gt;
 
 A promise of number of matching entities
 

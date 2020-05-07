@@ -25,11 +25,11 @@ verifyToken(token: string): Promise<UserProfile>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  token | <code>string</code> | The token/secret which should be validated/verified. |
+|  token | string | The token/secret which should be validated/verified. |
 
 <b>Returns:</b>
 
-`Promise<UserProfile>`
+Promise&lt;[UserProfile](./security.userprofile.md)<!-- -->&gt;
 
 The UserProfile which belongs to the given token.
 

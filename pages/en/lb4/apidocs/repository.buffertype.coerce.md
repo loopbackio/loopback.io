@@ -23,11 +23,11 @@ coerce(value: any, options?: Options): any;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  value | <code>any</code> |  |
-|  options | <code>Options</code> |  |
+|  value | any |  |
+|  options | [Options](./repository.options.md) |  |
 
 <b>Returns:</b>
 
-`any`
+any
 
 

@@ -25,10 +25,10 @@ offset(offset: number): this;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  offset | <code>number</code> | Offset of the number of records to be returned |
+|  offset | number | Offset of the number of records to be returned |
 
 <b>Returns:</b>
 
-`this`
+this
 
 

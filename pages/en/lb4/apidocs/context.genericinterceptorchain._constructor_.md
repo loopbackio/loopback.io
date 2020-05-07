@@ -25,7 +25,7 @@ constructor(context: C, interceptors: GenericInterceptorOrKey<C>[]);
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  context | <code>C</code> | Context object |
-|  interceptors | <code>GenericInterceptorOrKey&lt;C&gt;[]</code> | An array of interceptor functions or binding keys |
+|  context | C | Context object |
+|  interceptors | [GenericInterceptorOrKey](./context.genericinterceptororkey.md)<!-- -->&lt;C&gt;\[\] | An array of interceptor functions or binding keys |
 
 

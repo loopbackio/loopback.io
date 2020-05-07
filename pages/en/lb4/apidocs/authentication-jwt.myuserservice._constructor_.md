@@ -25,6 +25,6 @@ constructor(userRepository: UserRepository);
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  userRepository | <code>UserRepository</code> |  |
+|  userRepository | [UserRepository](./authentication-jwt.userrepository.md) |  |
 
 

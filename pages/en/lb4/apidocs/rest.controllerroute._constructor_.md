@@ -25,11 +25,11 @@ constructor(verb: string, path: string, spec: OperationObject, controllerCtor: C
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  verb | <code>string</code> | http verb |
-|  path | <code>string</code> | http request path |
-|  spec | <code>OperationObject</code> | OpenAPI operation spec |
-|  controllerCtor | <code>ControllerClass&lt;T&gt;</code> | Controller class |
-|  controllerFactory | <code>ControllerFactory&lt;T&gt;</code> | A factory function to create a controller instance |
-|  methodName | <code>string</code> | Controller method name, default to <code>x-operation-name</code> |
+|  verb | string | http verb |
+|  path | string | http request path |
+|  spec | OperationObject | OpenAPI operation spec |
+|  controllerCtor | [ControllerClass](./rest.controllerclass.md)<!-- -->&lt;T&gt; | Controller class |
+|  controllerFactory | [ControllerFactory](./rest.controllerfactory.md)<!-- -->&lt;T&gt; | A factory function to create a controller instance |
+|  methodName | string | Controller method name, default to <code>x-operation-name</code> |
 
 

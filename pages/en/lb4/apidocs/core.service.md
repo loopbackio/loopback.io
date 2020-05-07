@@ -25,12 +25,12 @@ export declare function service(serviceInterface?: ServiceInterface, metadata?: 
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  serviceInterface | <code>ServiceInterface</code> | Interface for the service. It can be in one of the following forms:<!-- -->- A class, such as MyService - A string that identifies the interface, such as <code>'MyService'</code> - A symbol that identifies the interface, such as <code>Symbol('MyService')</code>If not provided, the value is inferred from the design:type of the parameter or property |
-|  metadata | <code>InjectionMetadata</code> |  |
+|  serviceInterface | [ServiceInterface](./core.serviceinterface.md) | Interface for the service. It can be in one of the following forms:<!-- -->- A class, such as MyService - A string that identifies the interface, such as <code>'MyService'</code> - A symbol that identifies the interface, such as <code>Symbol('MyService')</code>If not provided, the value is inferred from the design:type of the parameter or property |
+|  metadata | [InjectionMetadata](./context.injectionmetadata.md) |  |
 
 <b>Returns:</b>
 
-`(target: Object, member: string | undefined, methodDescriptorOrParameterIndex?: number | TypedPropertyDescriptor<any> | undefined) => void`
+(target: Object, member: string \| undefined, methodDescriptorOrParameterIndex?: number \| TypedPropertyDescriptor&lt;any&gt; \| undefined) =&gt; void
 
 ## Example
 

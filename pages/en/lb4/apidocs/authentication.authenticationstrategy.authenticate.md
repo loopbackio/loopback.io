@@ -25,10 +25,10 @@ authenticate(request: Request): Promise<UserProfile | RedirectRoute | undefined>
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  request | <code>Request</code> | Express request object |
+|  request | Request | Express request object |
 
 <b>Returns:</b>
 
-`Promise<UserProfile | RedirectRoute | undefined>`
+Promise&lt;[UserProfile](./security.userprofile.md) \| [RedirectRoute](./rest.redirectroute.md) \| undefined&gt;
 
 

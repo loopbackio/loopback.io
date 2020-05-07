@@ -29,8 +29,8 @@ export declare class EntityNotFoundError<ID, Props extends object = {}> extends 
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [code](./repository.entitynotfounderror.code.md) |  | <code>string</code> |  |
-|  [entityId](./repository.entitynotfounderror.entityid.md) |  | <code>ID</code> |  |
-|  [entityName](./repository.entitynotfounderror.entityname.md) |  | <code>string</code> |  |
+|  [code](./repository.entitynotfounderror.code.md) |  | string |  |
+|  [entityId](./repository.entitynotfounderror.entityid.md) |  | ID |  |
+|  [entityName](./repository.entitynotfounderror.entityname.md) |  | string |  |
 
 

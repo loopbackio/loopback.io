@@ -25,10 +25,10 @@ export declare function filterByKey(keyPattern?: string | RegExp | BindingFilter
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  keyPattern | <code>string &#124; RegExp &#124; BindingFilter</code> | Binding key/wildcard, regexp, or a filter function |
+|  keyPattern | string \| RegExp \| [BindingFilter](./context.bindingfilter.md) | Binding key/wildcard, regexp, or a filter function |
 
 <b>Returns:</b>
 
-`BindingFilter`
+[BindingFilter](./context.bindingfilter.md)
 
 

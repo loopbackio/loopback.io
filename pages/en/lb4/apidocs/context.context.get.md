@@ -25,12 +25,12 @@ get<ValueType>(keyWithPath: BindingAddress<ValueType>, session?: ResolutionSessi
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  keyWithPath | <code>BindingAddress&lt;ValueType&gt;</code> | The binding key, optionally suffixed with a path to the (deeply) nested property to retrieve. |
-|  session | <code>ResolutionSession</code> | Optional session for resolution (accepted for backward compatibility) |
+|  keyWithPath | [BindingAddress](./context.bindingaddress.md)<!-- -->&lt;ValueType&gt; | The binding key, optionally suffixed with a path to the (deeply) nested property to retrieve. |
+|  session | [ResolutionSession](./context.resolutionsession.md) | Optional session for resolution (accepted for backward compatibility) |
 
 <b>Returns:</b>
 
-`Promise<ValueType>`
+Promise&lt;ValueType&gt;
 
 A promise of the bound value.
 

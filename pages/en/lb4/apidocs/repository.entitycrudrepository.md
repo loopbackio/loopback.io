@@ -25,8 +25,8 @@ export interface EntityCrudRepository<T extends Entity, ID, Relations extends ob
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [entityClass](./repository.entitycrudrepository.entityclass.md) | <code>typeof Entity &amp; {</code><br/><code>        prototype: T;</code><br/><code>    }</code> |  |
-|  [inclusionResolvers](./repository.entitycrudrepository.inclusionresolvers.md) | <code>Map&lt;string, InclusionResolver&lt;T, Entity&gt;&gt;</code> |  |
+|  [entityClass](./repository.entitycrudrepository.entityclass.md) | typeof [Entity](./repository.entity.md) &amp; { prototype: T; } |  |
+|  [inclusionResolvers](./repository.entitycrudrepository.inclusionresolvers.md) | Map&lt;string, [InclusionResolver](./repository.inclusionresolver.md)<!-- -->&lt;T, [Entity](./repository.entity.md)<!-- -->&gt;&gt; |  |
 
 ## Methods
 

@@ -23,10 +23,10 @@ export declare function toJSON(value: object | undefined): object | undefined;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  value | <code>object &#124; undefined</code> |  |
+|  value | object \| undefined |  |
 
 <b>Returns:</b>
 
-`object | undefined`
+object \| undefined
 
 

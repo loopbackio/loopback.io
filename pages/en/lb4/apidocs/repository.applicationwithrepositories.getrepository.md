@@ -23,10 +23,10 @@ getRepository<R extends Repository<any>>(repo: Class<R>): Promise<R>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  repo | <code>Class&lt;R&gt;</code> |  |
+|  repo | [Class](./repository.class.md)<!-- -->&lt;R&gt; |  |
 
 <b>Returns:</b>
 
-`Promise<R>`
+Promise&lt;R&gt;
 
 

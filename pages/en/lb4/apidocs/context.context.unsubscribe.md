@@ -25,10 +25,10 @@ unsubscribe(observer: ContextEventObserver): boolean;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  observer | <code>ContextEventObserver</code> | Context event observer |
+|  observer | [ContextEventObserver](./context.contexteventobserver.md) | Context event observer |
 
 <b>Returns:</b>
 
-`boolean`
+boolean
 
 

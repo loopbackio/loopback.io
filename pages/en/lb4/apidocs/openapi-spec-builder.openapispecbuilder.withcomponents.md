@@ -25,10 +25,10 @@ withComponents(spec: ComponentsObject | ComponentsSpecBuilder): this;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  spec | <code>ComponentsObject &#124; ComponentsSpecBuilder</code> | Specification of the components. |
+|  spec | ComponentsObject \| [ComponentsSpecBuilder](./openapi-spec-builder.componentsspecbuilder.md) | Specification of the components. |
 
 <b>Returns:</b>
 
-`this`
+this
 
 

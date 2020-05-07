@@ -25,11 +25,11 @@ serialize(value: T | null | undefined, options?: Options): any;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  value | <code>T &#124; null &#124; undefined</code> | The value of this type |
-|  options | <code>Options</code> | Options for serialization |
+|  value | T \| null \| undefined | The value of this type |
+|  options | [Options](./repository.options.md) | Options for serialization |
 
 <b>Returns:</b>
 
-`any`
+any
 
 

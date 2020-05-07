@@ -20,6 +20,6 @@ value(): BindElement;
 ```
 <b>Returns:</b>
 
-`BindElement`
+[BindElement](./rest.bindelement.md)
 
 

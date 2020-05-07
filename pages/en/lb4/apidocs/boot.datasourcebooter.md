@@ -33,8 +33,8 @@ export declare class DataSourceBooter extends BaseArtifactBooter
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [app](./boot.datasourcebooter.app.md) |  | <code>ApplicationWithRepositories</code> |  |
-|  [datasourceConfig](./boot.datasourcebooter.datasourceconfig.md) |  | <code>ArtifactOptions</code> |  |
+|  [app](./boot.datasourcebooter.app.md) |  | [ApplicationWithRepositories](./repository.applicationwithrepositories.md) |  |
+|  [datasourceConfig](./boot.datasourcebooter.datasourceconfig.md) |  | [ArtifactOptions](./boot.artifactoptions.md) |  |
 
 ## Methods
 

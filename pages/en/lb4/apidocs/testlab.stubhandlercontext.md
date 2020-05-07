@@ -23,10 +23,10 @@ export declare function stubHandlerContext(requestOptions?: ShotRequestOptions):
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  requestOptions | <code>ShotRequestOptions</code> |  |
+|  requestOptions | ShotRequestOptions |  |
 
 <b>Returns:</b>
 
-`HandlerContextStub`
+[HandlerContextStub](./testlab.handlercontextstub.md)
 
 

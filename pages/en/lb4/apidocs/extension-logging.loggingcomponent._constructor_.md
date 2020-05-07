@@ -25,6 +25,6 @@ constructor(loggingConfig: LoggingComponentConfig | undefined);
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  loggingConfig | <code>LoggingComponentConfig &#124; undefined</code> |  |
+|  loggingConfig | [LoggingComponentConfig](./extension-logging.loggingcomponentconfig.md) \| undefined |  |
 
 

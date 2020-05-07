@@ -25,6 +25,6 @@ constructor(nameOrDef: string | ModelDefinitionSyntax);
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  nameOrDef | <code>string &#124; ModelDefinitionSyntax</code> |  |
+|  nameOrDef | string \| [ModelDefinitionSyntax](./repository.modeldefinitionsyntax.md) |  |
 
 

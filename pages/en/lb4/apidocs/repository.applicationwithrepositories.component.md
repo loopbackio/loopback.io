@@ -23,11 +23,11 @@ component(component: Class<unknown>, name?: string): Binding;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  component | <code>Class&lt;unknown&gt;</code> |  |
-|  name | <code>string</code> |  |
+|  component | [Class](./repository.class.md)<!-- -->&lt;unknown&gt; |  |
+|  name | string |  |
 
 <b>Returns:</b>
 
-`Binding`
+[Binding](./context.binding.md)
 
 

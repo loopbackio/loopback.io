@@ -27,10 +27,10 @@ export interface HasManyThroughDefinition extends RelationDefinitionBase
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [keyFrom](./repository.hasmanythroughdefinition.keyfrom.md) | <code>string</code> | The foreign key in the source model, e.g. Customer\#id. |
-|  [keyTo](./repository.hasmanythroughdefinition.keyto.md) | <code>string</code> | The primary key of the target model, e.g Seller\#id. |
-|  [targetsMany](./repository.hasmanythroughdefinition.targetsmany.md) | <code>true</code> |  |
-|  [through](./repository.hasmanythroughdefinition.through.md) | <code>{</code><br/><code>        model: TypeResolver&lt;Entity, typeof Entity&gt;;</code><br/><code>        keyFrom: string;</code><br/><code>        keyTo: string;</code><br/><code>    }</code> |  |
-|  [type](./repository.hasmanythroughdefinition.type.md) | <code>RelationType.hasMany</code> |  |
+|  [keyFrom](./repository.hasmanythroughdefinition.keyfrom.md) | string | The foreign key in the source model, e.g. Customer\#id. |
+|  [keyTo](./repository.hasmanythroughdefinition.keyto.md) | string | The primary key of the target model, e.g Seller\#id. |
+|  [targetsMany](./repository.hasmanythroughdefinition.targetsmany.md) | true |  |
+|  [through](./repository.hasmanythroughdefinition.through.md) | { model: [TypeResolver](./repository.typeresolver.md)<!-- -->&lt;[Entity](./repository.entity.md)<!-- -->, typeof [Entity](./repository.entity.md)<!-- -->&gt;; keyFrom: string; keyTo: string; } |  |
+|  [type](./repository.hasmanythroughdefinition.type.md) | [RelationType.hasMany](./repository.relationtype.hasmany.md) |  |
 
 

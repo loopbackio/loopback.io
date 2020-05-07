@@ -25,11 +25,11 @@ withHeader(name: string, header: HeaderObject | ReferenceObject): this;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  name | <code>string</code> | The name of the header |
-|  header | <code>HeaderObject &#124; ReferenceObject</code> | Specification of the header |
+|  name | string | The name of the header |
+|  header | HeaderObject \| ReferenceObject | Specification of the header |
 
 <b>Returns:</b>
 
-`this`
+this
 
 

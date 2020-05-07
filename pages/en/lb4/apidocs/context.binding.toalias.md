@@ -25,10 +25,10 @@ toAlias(keyWithPath: BindingAddress<T>): this;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  keyWithPath | <code>BindingAddress&lt;T&gt;</code> | Target binding key with optional path, such as <code>servers.RestServer.options#apiExplorer</code> |
+|  keyWithPath | [BindingAddress](./context.bindingaddress.md)<!-- -->&lt;T&gt; | Target binding key with optional path, such as <code>servers.RestServer.options#apiExplorer</code> |
 
 <b>Returns:</b>
 
-`this`
+this
 
 

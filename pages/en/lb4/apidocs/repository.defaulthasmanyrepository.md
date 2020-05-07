@@ -29,8 +29,8 @@ export declare class DefaultHasManyRepository<TargetEntity extends Entity, Targe
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [constraint](./repository.defaulthasmanyrepository.constraint.md) |  | <code>DataObject&lt;TargetEntity&gt;</code> |  |
-|  [getTargetRepository](./repository.defaulthasmanyrepository.gettargetrepository.md) |  | <code>Getter&lt;TargetRepository&gt;</code> |  |
+|  [constraint](./repository.defaulthasmanyrepository.constraint.md) |  | [DataObject](./repository.dataobject.md)<!-- -->&lt;TargetEntity&gt; |  |
+|  [getTargetRepository](./repository.defaulthasmanyrepository.gettargetrepository.md) |  | [Getter](./context.getter.md)<!-- -->&lt;TargetRepository&gt; |  |
 
 ## Methods
 

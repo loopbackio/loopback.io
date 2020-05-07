@@ -25,14 +25,14 @@ updateAll(modelClass: Class<Entity>, data: EntityData, where?: Where<Entity>, op
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  modelClass | <code>Class&lt;Entity&gt;</code> | The model class |
-|  data | <code>EntityData</code> | The data attributes to be updated |
-|  where | <code>Where&lt;Entity&gt;</code> | The matching criteria |
-|  options | <code>Options</code> | Options for the operation |
+|  modelClass | [Class](./repository.class.md)<!-- -->&lt;[Entity](./repository.entity.md)<!-- -->&gt; | The model class |
+|  data | [EntityData](./repository.entitydata.md) | The data attributes to be updated |
+|  where | [Where](./repository.where.md)<!-- -->&lt;[Entity](./repository.entity.md)<!-- -->&gt; | The matching criteria |
+|  options | [Options](./repository.options.md) | Options for the operation |
 
 <b>Returns:</b>
 
-`Promise<Count>`
+Promise&lt;[Count](./repository.count.md)<!-- -->&gt;
 
 A promise of number of matching entities deleted
 

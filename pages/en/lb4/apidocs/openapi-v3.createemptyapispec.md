@@ -27,6 +27,6 @@ export declare function createEmptyApiSpec(): OpenApiSpec;
 ```
 <b>Returns:</b>
 
-`OpenApiSpec`
+[OpenApiSpec](./openapi-v3.openapispec.md)
 
 

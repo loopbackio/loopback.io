@@ -25,10 +25,10 @@ protected debug(...args: unknown[]): void;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  args | <code>unknown[]</code> | Arguments for the debug |
+|  args | unknown\[\] | Arguments for the debug |
 
 <b>Returns:</b>
 
-`void`
+void
 
 

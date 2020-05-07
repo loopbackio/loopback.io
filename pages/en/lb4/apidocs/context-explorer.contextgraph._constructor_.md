@@ -25,7 +25,7 @@ constructor(ctx: JSONObject, options?: ContextGraphOptions);
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  ctx | <code>JSONObject</code> |  |
-|  options | <code>ContextGraphOptions</code> |  |
+|  ctx | [JSONObject](./context.jsonobject.md) |  |
+|  options | [ContextGraphOptions](./context-explorer.contextgraphoptions.md) |  |
 
 

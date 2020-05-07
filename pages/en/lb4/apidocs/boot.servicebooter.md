@@ -33,8 +33,8 @@ export declare class ServiceBooter extends BaseArtifactBooter
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [app](./boot.servicebooter.app.md) |  | <code>ApplicationWithServices</code> |  |
-|  [serviceConfig](./boot.servicebooter.serviceconfig.md) |  | <code>ArtifactOptions</code> |  |
+|  [app](./boot.servicebooter.app.md) |  | [ApplicationWithServices](./service-proxy.applicationwithservices.md) |  |
+|  [serviceConfig](./boot.servicebooter.serviceconfig.md) |  | [ArtifactOptions](./boot.artifactoptions.md) |  |
 
 ## Methods
 

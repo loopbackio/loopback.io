@@ -23,10 +23,10 @@ new (...args: any[]): T;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  args | <code>any[]</code> |  |
+|  args | any\[\] |  |
 
 <b>Returns:</b>
 
-`T`
+T
 
 

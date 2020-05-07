@@ -29,7 +29,7 @@ export declare class UrlEncodedBodyParser implements BodyParser
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [name](./rest.urlencodedbodyparser.name.md) |  | <code>symbol</code> |  |
+|  [name](./rest.urlencodedbodyparser.name.md) |  | symbol |  |
 
 ## Methods
 

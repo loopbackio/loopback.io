@@ -22,6 +22,6 @@ build(): T;
 ```
 <b>Returns:</b>
 
-`T`
+T
 
 

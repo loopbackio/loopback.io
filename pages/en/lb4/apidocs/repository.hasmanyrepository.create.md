@@ -25,12 +25,12 @@ create(targetModelData: DataObject<Target>, options?: Options): Promise<Target>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  targetModelData | <code>DataObject&lt;Target&gt;</code> | The target model data |
-|  options | <code>Options</code> | Options for the operation |
+|  targetModelData | [DataObject](./repository.dataobject.md)<!-- -->&lt;Target&gt; | The target model data |
+|  options | [Options](./repository.options.md) | Options for the operation |
 
 <b>Returns:</b>
 
-`Promise<Target>`
+Promise&lt;Target&gt;
 
 A promise which resolves to the newly created target model instance
 

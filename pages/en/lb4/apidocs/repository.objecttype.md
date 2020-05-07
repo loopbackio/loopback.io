@@ -31,8 +31,8 @@ export declare class ObjectType<T extends AnyObject> implements Type<T>
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [name](./repository.objecttype.name.md) |  | <code>string</code> |  |
-|  [type](./repository.objecttype.type.md) |  | <code>Class&lt;T&gt;</code> |  |
+|  [name](./repository.objecttype.name.md) |  | string |  |
+|  [type](./repository.objecttype.type.md) |  | [Class](./repository.class.md)<!-- -->&lt;T&gt; |  |
 
 ## Methods
 

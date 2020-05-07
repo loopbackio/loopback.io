@@ -25,7 +25,7 @@ export declare class NumberType implements Type<number>
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [name](./repository.numbertype.name.md) |  | <code></code> |  |
+|  [name](./repository.numbertype.name.md) |  | (not declared) |  |
 
 ## Methods
 

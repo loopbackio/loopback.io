@@ -23,7 +23,7 @@ export interface Type<T>
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [name](./repository.type.name.md) | <code>string</code> | Name of the type |
+|  [name](./repository.type.name.md) | string | Name of the type |
 
 ## Methods
 

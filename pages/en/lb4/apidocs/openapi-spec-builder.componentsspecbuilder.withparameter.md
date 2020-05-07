@@ -25,11 +25,11 @@ withParameter(name: string, parameter: ParameterObject | ReferenceObject): this;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  name | <code>string</code> | The name of the parameter |
-|  parameter | <code>ParameterObject &#124; ReferenceObject</code> | Specification of the parameter |
+|  name | string | The name of the parameter |
+|  parameter | ParameterObject \| ReferenceObject | Specification of the parameter |
 
 <b>Returns:</b>
 
-`this`
+this
 
 

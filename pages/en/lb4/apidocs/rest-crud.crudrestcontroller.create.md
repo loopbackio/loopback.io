@@ -25,10 +25,10 @@ create(data: Omit<T, IdName>): Promise<T>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  data | <code>Omit&lt;T, IdName&gt;</code> | Model data |
+|  data | Omit&lt;T, IdName&gt; | Model data |
 
 <b>Returns:</b>
 
-`Promise<T>`
+Promise&lt;T&gt;
 
 

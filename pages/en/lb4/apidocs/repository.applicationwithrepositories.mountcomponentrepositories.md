@@ -23,10 +23,10 @@ mountComponentRepositories(component: Class<unknown>): void;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  component | <code>Class&lt;unknown&gt;</code> |  |
+|  component | [Class](./repository.class.md)<!-- -->&lt;unknown&gt; |  |
 
 <b>Returns:</b>
 
-`void`
+void
 
 

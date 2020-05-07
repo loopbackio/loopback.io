@@ -29,12 +29,12 @@ export declare class User extends Entity
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [email](./authentication-jwt.user.email.md) |  | <code>string</code> |  |
-|  [emailVerified](./authentication-jwt.user.emailverified.md) |  | <code>boolean</code> |  |
-|  [id](./authentication-jwt.user.id.md) |  | <code>number</code> |  |
-|  [realm](./authentication-jwt.user.realm.md) |  | <code>string</code> |  |
-|  [userCredentials](./authentication-jwt.user.usercredentials.md) |  | <code>UserCredentials</code> |  |
-|  [username](./authentication-jwt.user.username.md) |  | <code>string</code> |  |
-|  [verificationToken](./authentication-jwt.user.verificationtoken.md) |  | <code>string</code> |  |
+|  [email](./authentication-jwt.user.email.md) |  | string |  |
+|  [emailVerified](./authentication-jwt.user.emailverified.md) |  | boolean |  |
+|  [id](./authentication-jwt.user.id.md) |  | number |  |
+|  [realm](./authentication-jwt.user.realm.md) |  | string |  |
+|  [userCredentials](./authentication-jwt.user.usercredentials.md) |  | [UserCredentials](./authentication-jwt.usercredentials.md) |  |
+|  [username](./authentication-jwt.user.username.md) |  | string |  |
+|  [verificationToken](./authentication-jwt.user.verificationtoken.md) |  | string |  |
 
 

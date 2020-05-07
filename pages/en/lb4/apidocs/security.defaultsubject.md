@@ -25,10 +25,10 @@ export declare class DefaultSubject implements Subject
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [authorities](./security.defaultsubject.authorities.md) |  | <code>Set&lt;Permission&gt;</code> |  |
-|  [credentials](./security.defaultsubject.credentials.md) |  | <code>Set&lt;Credential&gt;</code> |  |
-|  [principals](./security.defaultsubject.principals.md) |  | <code>Set&lt;TypedPrincipal&gt;</code> |  |
-|  [user](./security.defaultsubject.user.md) |  | <code>UserProfile &#124; undefined</code> |  |
+|  [authorities](./security.defaultsubject.authorities.md) |  | Set&lt;[Permission](./security.permission.md)<!-- -->&gt; |  |
+|  [credentials](./security.defaultsubject.credentials.md) |  | Set&lt;[Credential](./security.credential.md)<!-- -->&gt; |  |
+|  [principals](./security.defaultsubject.principals.md) |  | Set&lt;[TypedPrincipal](./security.typedprincipal.md)<!-- -->&gt; |  |
+|  [user](./security.defaultsubject.user.md) |  | [UserProfile](./security.userprofile.md) \| undefined |  |
 
 ## Methods
 

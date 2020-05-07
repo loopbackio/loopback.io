@@ -25,11 +25,11 @@ emitEvent<T extends ContextEvent>(type: string, event: T): void;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  type | <code>string</code> | Event type |
-|  event | <code>T</code> | Context event |
+|  type | string | Event type |
+|  event | T | Context event |
 
 <b>Returns:</b>
 
-`void`
+void
 
 

@@ -25,10 +25,10 @@ mountComponentServices(component: Class<unknown>): void;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  component | <code>Class&lt;unknown&gt;</code> | The component to mount services of |
+|  component | [Class](./service-proxy.class.md)<!-- -->&lt;unknown&gt; | The component to mount services of |
 
 <b>Returns:</b>
 
-`void`
+void
 
 

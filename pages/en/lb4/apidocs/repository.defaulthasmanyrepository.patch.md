@@ -23,12 +23,12 @@ patch(dataObject: DataObject<TargetEntity>, where?: Where<TargetEntity>, options
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  dataObject | <code>DataObject&lt;TargetEntity&gt;</code> |  |
-|  where | <code>Where&lt;TargetEntity&gt;</code> |  |
-|  options | <code>Options</code> |  |
+|  dataObject | [DataObject](./repository.dataobject.md)<!-- -->&lt;TargetEntity&gt; |  |
+|  where | [Where](./repository.where.md)<!-- -->&lt;TargetEntity&gt; |  |
+|  options | [Options](./repository.options.md) |  |
 
 <b>Returns:</b>
 
-`Promise<Count>`
+Promise&lt;[Count](./repository.count.md)<!-- -->&gt;
 
 

@@ -25,12 +25,12 @@ coerce(value: any, options?: Options): T | null | undefined;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  value | <code>any</code> | The value to be coerced |
-|  options | <code>Options</code> | Options for coercion |
+|  value | any | The value to be coerced |
+|  options | [Options](./repository.options.md) | Options for coercion |
 
 <b>Returns:</b>
 
-`T | null | undefined`
+T \| null \| undefined
 
 Coerced value of this type
 

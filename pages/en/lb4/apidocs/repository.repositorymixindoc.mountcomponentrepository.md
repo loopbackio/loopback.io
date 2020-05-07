@@ -25,10 +25,10 @@ mountComponentRepository(component: Class<{}>): void;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  component | <code>Class&lt;{}&gt;</code> | The component to mount repositories of |
+|  component | [Class](./repository.class.md)<!-- -->&lt;{}&gt; | The component to mount repositories of |
 
 <b>Returns:</b>
 
-`void`
+void
 
 

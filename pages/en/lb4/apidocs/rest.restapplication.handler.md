@@ -23,10 +23,10 @@ handler(handlerFn: SequenceFunction): void;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  handlerFn | <code>SequenceFunction</code> |  |
+|  handlerFn | [SequenceFunction](./rest.sequencefunction.md) |  |
 
 <b>Returns:</b>
 
-`void`
+void
 
 

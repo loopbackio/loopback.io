@@ -22,6 +22,6 @@ protected _applyExpressSettings(): void;
 ```
 <b>Returns:</b>
 
-`void`
+void
 
 

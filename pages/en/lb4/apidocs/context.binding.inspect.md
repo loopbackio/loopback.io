@@ -25,10 +25,10 @@ inspect(options?: BindingInspectOptions): JSONObject;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  options | <code>BindingInspectOptions</code> | Options to control what information should be included |
+|  options | [BindingInspectOptions](./context.bindinginspectoptions.md) | Options to control what information should be included |
 
 <b>Returns:</b>
 
-`JSONObject`
+[JSONObject](./context.jsonobject.md)
 
 

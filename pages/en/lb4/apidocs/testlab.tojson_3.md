@@ -25,10 +25,10 @@ export declare function toJSON(value: object): object;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  value | <code>object</code> |  |
+|  value | object |  |
 
 <b>Returns:</b>
 
-`object`
+object
 
 

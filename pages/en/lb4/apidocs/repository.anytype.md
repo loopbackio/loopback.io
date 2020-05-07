@@ -25,7 +25,7 @@ export declare class AnyType implements Type<any>
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [name](./repository.anytype.name.md) |  | <code></code> |  |
+|  [name](./repository.anytype.name.md) |  | (not declared) |  |
 
 ## Methods
 

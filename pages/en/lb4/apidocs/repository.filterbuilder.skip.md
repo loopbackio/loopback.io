@@ -25,10 +25,10 @@ skip(skip: number): this;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  skip | <code>number</code> |  |
+|  skip | number |  |
 
 <b>Returns:</b>
 
-`this`
+this
 
 

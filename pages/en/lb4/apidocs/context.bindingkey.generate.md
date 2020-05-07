@@ -25,10 +25,10 @@ static generate<T>(namespace?: string): BindingKey<T>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  namespace | <code>string</code> | Namespace for the binding |
+|  namespace | string | Namespace for the binding |
 
 <b>Returns:</b>
 
-`BindingKey<T>`
+[BindingKey](./context.bindingkey.md)<!-- -->&lt;T&gt;
 
 

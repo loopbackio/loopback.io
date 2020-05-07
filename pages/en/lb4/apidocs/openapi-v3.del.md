@@ -25,11 +25,11 @@ export declare function del(path: string, spec?: OperationObject): MethodDecorat
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  path | <code>string</code> | The URL path of this operation, e.g. <code>/product/{id}</code> |
-|  spec | <code>OperationObject</code> | The OpenAPI specification describing parameters and responses of this operation. |
+|  path | string | The URL path of this operation, e.g. <code>/product/{id}</code> |
+|  spec | OperationObject | The OpenAPI specification describing parameters and responses of this operation. |
 
 <b>Returns:</b>
 
-`MethodDecorator`
+MethodDecorator
 
 

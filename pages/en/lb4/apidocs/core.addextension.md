@@ -25,13 +25,13 @@ export declare function addExtension(context: Context, extensionPointName: strin
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  context | <code>Context</code> | Context object |
-|  extensionPointName | <code>string</code> | Name of the extension point |
-|  extensionClass | <code>Constructor&lt;unknown&gt;</code> | Class or a provider for an extension |
-|  options | <code>BindingFromClassOptions</code> | Options Options for the creation of binding from class |
+|  context | [Context](./context.context.md) | Context object |
+|  extensionPointName | string | Name of the extension point |
+|  extensionClass | [Constructor](./context.constructor.md)<!-- -->&lt;unknown&gt; | Class or a provider for an extension |
+|  options | [BindingFromClassOptions](./context.bindingfromclassoptions.md) | Options Options for the creation of binding from class |
 
 <b>Returns:</b>
 
-`Binding<unknown>`
+[Binding](./context.binding.md)<!-- -->&lt;unknown&gt;
 
 

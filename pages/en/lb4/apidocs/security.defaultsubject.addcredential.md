@@ -23,10 +23,10 @@ addCredential(...credentials: Credential[]): void;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  credentials | <code>Credential[]</code> |  |
+|  credentials | [Credential](./security.credential.md)<!-- -->\[\] |  |
 
 <b>Returns:</b>
 
-`void`
+void
 
 

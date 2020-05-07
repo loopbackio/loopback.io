@@ -25,10 +25,10 @@ buildRequest(authorizationContext: AuthorizationContext): Promise<AuthorizationR
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  authorizationContext | <code>AuthorizationContext</code> |  |
+|  authorizationContext | [AuthorizationContext](./authorization.authorizationcontext.md) |  |
 
 <b>Returns:</b>
 
-`Promise<AuthorizationRequest>`
+Promise&lt;[AuthorizationRequest](./authorization.authorizationrequest.md)<!-- -->&gt;
 
 

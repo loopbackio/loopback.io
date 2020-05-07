@@ -25,13 +25,13 @@ export declare function assertTargetType(injection: Readonly<Injection>, expecte
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  injection | <code>Readonly&lt;Injection&gt;</code> | Injection information |
-|  expectedType | <code>Function</code> | Expected type |
-|  expectedTypeName | <code>string</code> | Name of the expected type to be used in the error |
+|  injection | Readonly&lt;[Injection](./context.injection.md)<!-- -->&gt; | Injection information |
+|  expectedType | Function | Expected type |
+|  expectedTypeName | string | Name of the expected type to be used in the error |
 
 <b>Returns:</b>
 
-`string`
+string
 
 The name of the target
 

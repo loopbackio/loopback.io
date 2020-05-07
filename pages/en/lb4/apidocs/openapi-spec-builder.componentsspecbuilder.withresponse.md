@@ -25,11 +25,11 @@ withResponse(name: string, response: ResponseObject | ReferenceObject): this;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  name | <code>string</code> | The name of the response |
-|  response | <code>ResponseObject &#124; ReferenceObject</code> | Specification of the response |
+|  name | string | The name of the response |
+|  response | ResponseObject \| ReferenceObject | Specification of the response |
 
 <b>Returns:</b>
 
-`this`
+this
 
 

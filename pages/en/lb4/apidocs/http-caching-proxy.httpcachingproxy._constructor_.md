@@ -25,6 +25,6 @@ constructor(options: ProxyOptions);
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  options | <code>ProxyOptions</code> |  |
+|  options | [ProxyOptions](./http-caching-proxy.proxyoptions.md) |  |
 
 

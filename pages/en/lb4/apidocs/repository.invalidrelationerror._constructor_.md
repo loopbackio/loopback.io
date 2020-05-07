@@ -25,8 +25,8 @@ constructor(reason: string, relationMeta: RelationMetadata, extraProperties?: Pr
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  reason | <code>string</code> |  |
-|  relationMeta | <code>RelationMetadata</code> |  |
-|  extraProperties | <code>Props</code> |  |
+|  reason | string |  |
+|  relationMeta | [RelationMetadata](./repository.relationmetadata.md) |  |
+|  extraProperties | Props |  |
 
 

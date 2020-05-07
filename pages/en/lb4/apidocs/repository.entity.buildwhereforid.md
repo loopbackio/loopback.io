@@ -25,10 +25,10 @@ static buildWhereForId(id: any): any;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  id | <code>any</code> | The id value |
+|  id | any | The id value |
 
 <b>Returns:</b>
 
-`any`
+any
 
 

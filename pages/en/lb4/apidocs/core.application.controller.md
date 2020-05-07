@@ -18,19 +18,19 @@ Register a controller class with this application.
 <b>Signature:</b>
 
 ```typescript
-controller<T>(controllerCtor: ControllerClass<T>, name?: string): Binding<T>;
+controller<T>(controllerCtor: ControllerClass<T>, nameOrOptions?: string | BindingFromClassOptions): Binding<T>;
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  controllerCtor | <code>ControllerClass&lt;T&gt;</code> | The controller class (constructor function). |
-|  name | <code>string</code> | Optional controller name, default to the class name |
+|  controllerCtor | [ControllerClass](./core.controllerclass.md)<!-- -->&lt;T&gt; | The controller class (constructor function). |
+|  nameOrOptions | string \| [BindingFromClassOptions](./context.bindingfromclassoptions.md) |  |
 
 <b>Returns:</b>
 
-`Binding<T>`
+[Binding](./context.binding.md)<!-- -->&lt;T&gt;
 
 The newly created binding, you can use the reference to further modify the binding, e.g. lock the value to prevent further modifications.
 

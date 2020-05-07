@@ -27,12 +27,12 @@ export declare function resolveInjectedProperties(constructor: Function, ctx: Co
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  constructor | <code>Function</code> | The class for which properties should be resolved. |
-|  ctx | <code>Context</code> | The context containing values for <code>@inject</code> resolution |
-|  session | <code>ResolutionSession</code> | Optional session for binding and dependency resolution |
+|  constructor | Function | The class for which properties should be resolved. |
+|  ctx | [Context](./context.context.md) | The context containing values for <code>@inject</code> resolution |
+|  session | [ResolutionSession](./context.resolutionsession.md) | Optional session for binding and dependency resolution |
 
 <b>Returns:</b>
 
-`ValueOrPromise<MapObject<BoundValue>>`
+[ValueOrPromise](./context.valueorpromise.md)<!-- -->&lt;[MapObject](./context.mapobject.md)<!-- -->&lt;[BoundValue](./context.boundvalue.md)<!-- -->&gt;&gt;
 
 

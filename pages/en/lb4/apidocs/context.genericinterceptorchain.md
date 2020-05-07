@@ -32,12 +32,13 @@ export declare class GenericInterceptorChain<C extends Context = Context>
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [getInterceptors](./context.genericinterceptorchain.getinterceptors.md) |  | <code>() =&gt; GenericInterceptorOrKey&lt;C&gt;[]</code> | A getter for an array of interceptor functions or binding keys |
+|  [getInterceptors](./context.genericinterceptorchain.getinterceptors.md) |  | () =&gt; [GenericInterceptorOrKey](./context.genericinterceptororkey.md)<!-- -->&lt;C&gt;\[\] | A getter for an array of interceptor functions or binding keys |
 
 ## Methods
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [invokeInterceptors()](./context.genericinterceptorchain.invokeinterceptors.md) |  | Invoke the interceptor chain |
+|  [asInterceptor()](./context.genericinterceptorchain.asinterceptor.md) |  | Use the interceptor chain as an interceptor |
+|  [invokeInterceptors(finalHandler)](./context.genericinterceptorchain.invokeinterceptors.md) |  | Invoke the interceptor chain |
 
 
