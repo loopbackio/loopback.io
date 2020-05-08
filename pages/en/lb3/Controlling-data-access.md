@@ -386,7 +386,7 @@ Do this in your test environment as there may be quite a lot of output.
     <tr>
       <td>&nbsp;</td>
       <td>exists</td>
-      <td>READ</td>
+      <td>GET</td>
       <td>/model-name-plural/{id}/exists</td>
     </tr>
     <tr>
