@@ -14,7 +14,7 @@ summary: A simple Express application with LoopBack 4 REST API
 
 {% include note.html content="
 ホストとしてLoopBackを使用し、LoopBack4アプリケーションにExpressアプリケーションをマウントする場合は、[Express Routerのマウント](Routes.md#mounting-an-express-router)を参照してください 。
- %}
+" %}
 
 このチュートリアルでは、LoopBack 4アプリケーションの土台・['モデル'](Model.md)・['データソース'](DataSources.md)・['レポジトリ'](Repositories.md)・['コントローラー'](Controllers.md)の背景知識があることを前提としています。各機能のアプリ内での働きについては、[`Todo` チュートリアル](todo-tutorial.md)をご参照ください.
 
