@@ -23,11 +23,13 @@ layout: default
 
 <div class="post-content">
 
- {% if page.summary %}
-  <div class="summary">
-    {{page.summary}}
-  </div>
- {% endif %}
+{% if page.sidebar != 'lb4_sidebar' %}
+  {% if page.summary %}
+   <div class="summary">
+     {{page.summary}}
+   </div>
+  {% endif %}
+{% endif %}
 
 {% if page.layout == 'navgroup' %}
   {% capture nav-include %}{% include navgroups/{{page.navgroup}}.md %}{% endcapture %}
