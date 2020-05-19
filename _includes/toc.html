@@ -8,6 +8,9 @@
   if (level === 3) {level = 'h2,h3,h4'}
   if (level === 4) {level = 'h2,h3,h4,h5'}
 
+  // Add a new level for changelog files which use h1,h2,h3
+  if (level === 0) {level = 'h1,h2,h3,h4,h5'}
+
   var toc = $('#toc')
 
   toc.toc({minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: level})
