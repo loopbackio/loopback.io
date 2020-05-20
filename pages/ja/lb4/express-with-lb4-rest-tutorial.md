@@ -69,7 +69,7 @@ $ lb4 app note
 
 ### Note モデルを追加する
 
-プロジェクトフォルダー内で`lb4 model`を実行し、`Note`モデルを構築します。`id`プロパティのデータ型は`number`、`title`プロパティは`string`、`content`プロパティは`string`で`Entity`を作成します。
+`lb4 model`を実行し、`Note`モデルを構築します。`id`プロパティのデータ型は`number`、`title`プロパティは`string`、`content`プロパティは`string`で`Entity`を作成します。
 
 
 ### データソースを追加する
