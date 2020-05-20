@@ -16,6 +16,6 @@ permalink: /doc/en/lb4/apidocs.rest.restserver._expressapp.html
 <b>Signature:</b>
 
 ```typescript
-protected _expressApp: express.Application;
+protected _expressApp?: express.Application;
 ```
 

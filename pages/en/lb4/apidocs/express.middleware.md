@@ -15,12 +15,7 @@ permalink: /doc/en/lb4/apidocs.express.middleware.html
 
 Interface LoopBack 4 middleware to be executed within sequence of actions. A middleware for LoopBack is basically a generic interceptor that uses `RequestContext`<!-- -->.
 
-The signature of a middleware function is as follows. It's very much the same as [Koa middleware](https://github.com/koajs/koa/blob/master/docs/guide.md#writing-middleware)<!-- -->.
-
-```ts
-(context: MiddlewareContext, next: Next) => ValueOrPromise<InvocationResult>;
-
-```
+The signature of a middleware function is described at [Middleware](https://loopback.io/doc/en/lb4/apidocs.express.middleware.html)<!-- -->. It's very much the same as [Koa middleware](https://github.com/koajs/koa/blob/master/docs/guide.md#writing-middleware)<!-- -->.
 
 <b>Signature:</b>
 

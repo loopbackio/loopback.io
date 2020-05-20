@@ -18,6 +18,6 @@ Shortcut to configure voters
 <b>Signature:</b>
 
 ```typescript
-vote: (...voters: (string | Authorizer<AuthorizationMetadata> | import("@loopback/context").BindingKey<Authorizer<AuthorizationMetadata>>)[]) => (target: any, method?: string | undefined, methodDescriptor?: TypedPropertyDescriptor<any> | undefined) => any
+vote: (...voters: (Authorizer | BindingAddress<Authorizer>)[]) => (target: any, method?: string | undefined, methodDescriptor?: TypedPropertyDescriptor<any> | undefined) => any
 ```
 

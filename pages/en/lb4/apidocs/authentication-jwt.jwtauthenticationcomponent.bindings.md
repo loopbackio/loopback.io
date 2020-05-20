@@ -16,6 +16,6 @@ permalink: /doc/en/lb4/apidocs.authentication-jwt.jwtauthenticationcomponent.bin
 <b>Signature:</b>
 
 ```typescript
-bindings: Binding<unknown>[];
+bindings: Binding[];
 ```
 

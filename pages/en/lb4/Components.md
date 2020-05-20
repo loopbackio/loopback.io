@@ -23,12 +23,13 @@ properties:
 - `controllers` - An array of [controller](Controllers.md) classes.
 - `providers` - A map of providers to be bound to the application
   [context](Context.md).
-- `classes` - A map of TypeScipt classes to be bound to the application context.
+- `classes` - A map of TypeScript classes to be bound to the application
+  context.
 - `servers` - A map of name/class pairs for [servers](Server.md).
 - `lifeCycleObservers` - An array of [life cycle observers](Life-cycle.md).
-- `bindings` - An array of [bindings](Bindings.md) to be added to the
-  application context. A good example of using bindings to extend the
-  functionality of a LoopBack 4 app is
+- `bindings` - An array of [bindings](Binding.md) to be added to the application
+  context. A good example of using bindings to extend the functionality of a
+  LoopBack 4 app is
   [contributing an additional body parser](Extending-request-body-parsing.html#contribute-a-body-parser-from-a-component).
 
 These properties contribute to the application to add additional features and

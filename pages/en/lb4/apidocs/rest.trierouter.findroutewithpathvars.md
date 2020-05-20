@@ -16,7 +16,7 @@ permalink: /doc/en/lb4/apidocs.rest.trierouter.findroutewithpathvars.html
 <b>Signature:</b>
 
 ```typescript
-protected findRouteWithPathVars(verb: string, path: string): import("./route-entry").ResolvedRoute | undefined;
+protected findRouteWithPathVars(verb: string, path: string): ResolvedRoute | undefined;
 ```
 
 ## Parameters
@@ -28,6 +28,6 @@ protected findRouteWithPathVars(verb: string, path: string): import("./route-ent
 
 <b>Returns:</b>
 
-import("./route-entry").[ResolvedRoute](./rest.resolvedroute.md) \| undefined
+[ResolvedRoute](./rest.resolvedroute.md) \| undefined
 
 

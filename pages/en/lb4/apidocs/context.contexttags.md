@@ -27,6 +27,7 @@ export declare namespace ContextTags
 |  --- | --- |
 |  [CLASS](./context.contexttags.class.md) |  |
 |  [CONFIGURATION\_FOR](./context.contexttags.configuration_for.md) | Binding tag to associate a configuration binding with the target binding key |
+|  [DYNAMIC\_VALUE\_PROVIDER](./context.contexttags.dynamic_value_provider.md) |  |
 |  [GLOBAL\_INTERCEPTOR\_GROUP](./context.contexttags.global_interceptor_group.md) | Binding tag for group name of global interceptors |
 |  [GLOBAL\_INTERCEPTOR\_SOURCE](./context.contexttags.global_interceptor_source.md) | Binding tag for global interceptors to specify sources of invocations that the interceptor should apply. The tag value can be a string or string\[\], such as <code>'route'</code> or <code>['route', 'proxy']</code>. |
 |  [GLOBAL\_INTERCEPTOR](./context.contexttags.global_interceptor.md) | Binding tag for global interceptors |

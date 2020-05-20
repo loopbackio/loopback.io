@@ -18,6 +18,6 @@ Base Context that provides APIs to register middleware
 <b>Signature:</b>
 
 ```typescript
-export declare abstract class BaseMiddlewareRegistry extends BaseMiddlewareRegistry_base implements MiddlewareRegistry 
+export declare abstract class BaseMiddlewareRegistry extends BaseMiddlewareRegistry_base 
 ```
 

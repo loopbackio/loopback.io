@@ -3,6 +3,8 @@ lang: en
 title: 'CHANGELOG - @loopback/security'
 keywords: LoopBack 4.0, LoopBack 4, CHANGELOG
 sidebar: lb4_sidebar
+toc_level: 0
+editurl: https://github.com/strongloop/loopback-next/blob/master/packages/security/CHANGELOG.md
 permalink: /doc/en/lb4/changelog.security.html
 ---
 
@@ -10,6 +12,14 @@ permalink: /doc/en/lb4/changelog.security.html
 
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+## [0.2.9](https://github.com/strongloop/loopback-next/compare/@loopback/security@0.2.8...@loopback/security@0.2.9) (2020-05-19)
+
+**Note:** Version bump only for package @loopback/security
+
+
+
+
 
 ## [0.2.8](https://github.com/strongloop/loopback-next/compare/@loopback/security@0.2.7...@loopback/security@0.2.8) (2020-05-07)
 

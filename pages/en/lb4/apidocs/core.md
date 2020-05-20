@@ -34,7 +34,7 @@ For examples of how to leverage `@loopback/core` to build composable and extensi
 |  [asLifeCycleObserver(binding)](./core.aslifecycleobserver.md) | A <code>BindingTemplate</code> function to configure the binding as life cycle observer by tagging it with <code>CoreTags.LIFE_CYCLE_OBSERVER</code>. |
 |  [asService(serviceInterface)](./core.asservice.md) | Create a binding template for a service interface |
 |  [createServiceBinding(cls, options)](./core.createservicebinding.md) | Create a service binding from a class or provider |
-|  [extensionFilter(extensionPointName)](./core.extensionfilter.md) | A factory function to create binding filter for extensions of a named extension point |
+|  [extensionFilter(extensionPointNames)](./core.extensionfilter.md) | A factory function to create binding filter for extensions of a named extension point |
 |  [extensionFor(extensionPointNames)](./core.extensionfor.md) | A factory function to create binding template for extensions of the given extension point |
 |  [extensionPoint(name, specs)](./core.extensionpoint.md) | Decorate a class as a named extension point. If the decoration is not present, the name of the class will be used. |
 |  [extensions(extensionPointName)](./core.extensions.md) | Shortcut to inject extensions for the given extension point. |
@@ -80,6 +80,7 @@ For examples of how to leverage `@loopback/core` to build composable and extensi
 |  [ControllerClass](./core.controllerclass.md) |  |
 |  [LifeCycleObserverGroup](./core.lifecycleobservergroup.md) | A group of life cycle observers |
 |  [LifeCycleObserverOptions](./core.lifecycleobserveroptions.md) |  |
+|  [MixinTarget](./core.mixintarget.md) | A replacement for <code>typeof Target</code> to be used in mixin class definitions. This is a workaround for TypeScript limitation described in - https://github.com/microsoft/TypeScript/issues/17293 - https://github.com/microsoft/TypeScript/issues/17744 - https://github.com/microsoft/TypeScript/issues/36060 |
 |  [ServiceInterface](./core.serviceinterface.md) | Representing an interface for services. In TypeScript, the <code>interface</code> does not have reflections at runtime. We use a string, a symbol or a Function as the type for the service interface. |
 |  [ShutdownOptions](./core.shutdownoptions.md) | Options to set up application shutdown |
 

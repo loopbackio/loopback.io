@@ -3,6 +3,8 @@ lang: en
 title: 'CHANGELOG - @loopback/example-metrics-prometheus'
 keywords: LoopBack 4.0, LoopBack 4, CHANGELOG
 sidebar: lb4_sidebar
+toc_level: 0
+editurl: https://github.com/strongloop/loopback-next/blob/master/examples/metrics-prometheus/CHANGELOG.md
 permalink: /doc/en/lb4/changelog.example-metrics-prometheus.html
 ---
 
@@ -10,6 +12,17 @@ permalink: /doc/en/lb4/changelog.example-metrics-prometheus.html
 
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+# [0.3.0](https://github.com/strongloop/loopback-next/compare/@loopback/example-metrics-prometheus@0.2.8...@loopback/example-metrics-prometheus@0.3.0) (2020-05-19)
+
+
+### Features
+
+* upgrade to TypeScript 3.9.x ([3300e45](https://github.com/strongloop/loopback-next/commit/3300e4569ab8410bb1285f7a54d326e9d976476d))
+
+
+
+
 
 ## [0.2.8](https://github.com/strongloop/loopback-next/compare/@loopback/example-metrics-prometheus@0.2.7...@loopback/example-metrics-prometheus@0.2.8) (2020-05-07)
 

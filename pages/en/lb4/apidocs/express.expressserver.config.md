@@ -16,10 +16,10 @@ permalink: /doc/en/lb4/apidocs.express.expressserver.config.html
 <b>Signature:</b>
 
 ```typescript
-protected readonly config?: (import("@loopback/http-server").HttpOptions & {
+protected readonly config?: (HttpOptions & {
         basePath?: string | undefined;
         settings?: Record<string, unknown> | undefined;
-    }) | (import("@loopback/http-server").HttpsOptions & {
+    }) | (HttpsOptions & {
         basePath?: string | undefined;
         settings?: Record<string, unknown> | undefined;
     }) | undefined;

@@ -270,7 +270,7 @@ children:
         url: Validation-ORM-layer.html
         output: 'web, pdf'
 
-- title: 'Behind the Scene'
+- title: 'Behind the Scenes'
   url: Behind-the-scene.html
   output: 'web, pdf'
   children:
@@ -357,6 +357,14 @@ children:
 
   - title: 'Creating decorators'
     url: Creating-decorators.html
+    output: 'web, pdf'
+
+  - title: 'Contributing REST API'
+    url: 'creating-components-rest-api.html'
+    output: 'web, pdf'
+
+  - title: 'Creating services'
+    url: 'creating-components-services.html'
     output: 'web, pdf'
 
   - title: 'Creating servers'
@@ -743,10 +751,6 @@ children:
     output: 'web'
     children:
 
-    - title: 'Email connector'
-      url: Email-connector.html
-      output: 'web, pdf'
-
     - title: 'JSON RPC connector'
       url: JSON-RPC-connector.html
       output: 'web, pdf'
@@ -889,12 +893,20 @@ children:
       url: migration-extensions-project-layout.html
       output: 'web, pdf'
 
+    - title: 'Models'
+      url: migration-extensions-models.html
+      output: 'web, pdf'
+
     - title: 'Current context'
       url: migration-extensions-current-context.html
       output: 'web, pdf'
 
     - title: 'Mixins'
       url: migration-extensions-mixins.html
+      output: 'web, pdf'
+
+    - title: 'REST API'
+      url: migration-extensions-rest-api.html
       output: 'web, pdf'
 
   - title: 'Clients (API consumers)'

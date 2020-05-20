@@ -16,6 +16,6 @@ permalink: /doc/en/lb4/apidocs.boot.bootcomponent.booters.html
 <b>Signature:</b>
 
 ```typescript
-booters: (typeof ApplicationMetadataBooter | typeof ControllerBooter | typeof DataSourceBooter | typeof InterceptorProviderBooter | typeof LifeCycleObserverBooter | typeof ModelApiBooter | typeof RepositoryBooter | typeof ServiceBooter)[];
+booters: (typeof ApplicationMetadataBooter | typeof ControllerBooter | typeof DataSourceBooter | typeof InterceptorProviderBooter | typeof LifeCycleObserverBooter | typeof ModelApiBooter | typeof ModelBooter | typeof RepositoryBooter | typeof ServiceBooter)[];
 ```
 

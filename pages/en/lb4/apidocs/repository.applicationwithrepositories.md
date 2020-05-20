@@ -29,6 +29,7 @@ export interface ApplicationWithRepositories extends Application
 |  [dataSource(dataSource, name)](./repository.applicationwithrepositories.datasource.md) |  |
 |  [getRepository(repo)](./repository.applicationwithrepositories.getrepository.md) |  |
 |  [migrateSchema(options)](./repository.applicationwithrepositories.migrateschema.md) |  |
+|  [model(modelClass)](./repository.applicationwithrepositories.model.md) |  |
 |  [mountComponentRepositories(component)](./repository.applicationwithrepositories.mountcomponentrepositories.md) |  |
 |  [repository(repo, name)](./repository.applicationwithrepositories.repository.md) |  |
 

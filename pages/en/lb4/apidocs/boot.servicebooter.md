@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.boot.servicebooter.html
 
 ## ServiceBooter class
 
-A class that extends BaseArtifactBooter to boot the 'Service' artifact type. Discovered DataSources are bound using `app.controller()`<!-- -->.
+A class that extends BaseArtifactBooter to boot the 'Service' artifact type. Discovered services are bound using `app.service()`<!-- -->.
 
 Supported phases: configure, discover, load
 

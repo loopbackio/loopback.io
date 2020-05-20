@@ -29,7 +29,7 @@ export declare class RestComponent implements Component
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [bindings](./rest.restcomponent.bindings.md) |  | ([Binding](./context.binding.md)<!-- -->&lt;import("./body-parsers").[BodyParser](./rest.bodyparser.md)<!-- -->&gt; \| [Binding](./context.binding.md)<!-- -->&lt;[RequestBodyParser](./rest.requestbodyparser.md)<!-- -->&gt; \| [Binding](./context.binding.md)<!-- -->&lt;[InfoSpecEnhancer](./rest.infospecenhancer.md)<!-- -->&gt; \| [Binding](./context.binding.md)<!-- -->&lt;ConsolidationEnhancer&gt;)\[\] | Add built-in body parsers |
+|  [bindings](./rest.restcomponent.bindings.md) |  | [Binding](./context.binding.md)<!-- -->\[\] | Add built-in body parsers |
 |  [providers](./rest.restcomponent.providers.md) |  | [ProviderMap](./core.providermap.md) |  |
 |  [servers](./rest.restcomponent.servers.md) |  | { \[name: string\]: [Constructor](./context.constructor.md)<!-- -->&lt;[Server](./core.server.md)<!-- -->&gt;; } |  |
 

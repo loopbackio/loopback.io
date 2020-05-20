@@ -18,10 +18,10 @@ Build a direct graph
 <b>Signature:</b>
 
 ```typescript
-build(): import("ts-graphviz").Digraph;
+build(): void;
 ```
 <b>Returns:</b>
 
-import("ts-graphviz").Digraph
+void
 
 

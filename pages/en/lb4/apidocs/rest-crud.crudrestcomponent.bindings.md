@@ -16,6 +16,6 @@ permalink: /doc/en/lb4/apidocs.rest-crud.crudrestcomponent.bindings.html
 <b>Signature:</b>
 
 ```typescript
-bindings: import("@loopback/core").Binding<CrudRestApiBuilder>[];
+bindings: Binding[];
 ```
 

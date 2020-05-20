@@ -3,6 +3,8 @@ lang: en
 title: 'CHANGELOG - @loopback/extension-health'
 keywords: LoopBack 4.0, LoopBack 4, CHANGELOG
 sidebar: lb4_sidebar
+toc_level: 0
+editurl: https://github.com/strongloop/loopback-next/blob/master/extensions/health/CHANGELOG.md
 permalink: /doc/en/lb4/changelog.extension-health.html
 ---
 
@@ -10,6 +12,14 @@ permalink: /doc/en/lb4/changelog.extension-health.html
 
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+## [0.4.4](https://github.com/strongloop/loopback-next/compare/@loopback/extension-health@0.4.3...@loopback/extension-health@0.4.4) (2020-05-19)
+
+**Note:** Version bump only for package @loopback/extension-health
+
+
+
+
 
 ## [0.4.3](https://github.com/strongloop/loopback-next/compare/@loopback/extension-health@0.4.2...@loopback/extension-health@0.4.3) (2020-05-07)
 

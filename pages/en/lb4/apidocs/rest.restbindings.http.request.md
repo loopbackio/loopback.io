@@ -18,6 +18,6 @@ Binding key for setting and injecting the http request
 <b>Signature:</b>
 
 ```typescript
-REQUEST: BindingKey<Request<import("express-serve-static-core").ParamsDictionary, any, any, import("qs").ParsedQs>>
+REQUEST: BindingKey<Request>
 ```
 

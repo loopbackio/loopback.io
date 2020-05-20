@@ -67,6 +67,7 @@ Test utilities to help write LoopBack 4 tests:
 |  --- | --- |
 |  [ExpressContextStub](./testlab.expresscontextstub.md) |  |
 |  [HandlerContextStub](./testlab.handlercontextstub.md) |  |
+|  [HostPort](./testlab.hostport.md) | An object that requires host and port properties |
 |  [HttpOptions](./testlab.httpoptions.md) |  |
 |  [HttpsOptions](./testlab.httpsoptions.md) |  |
 |  [RestApplicationLike](./testlab.restapplicationlike.md) |  |
@@ -85,7 +86,6 @@ Test utilities to help write LoopBack 4 tests:
 |  Type Alias | Description |
 |  --- | --- |
 |  [Client](./testlab.client.md) |  |
-|  [HostPort](./testlab.hostport.md) |  |
 |  [ObservedResponse](./testlab.observedresponse.md) |  |
 |  [ShotCallback](./testlab.shotcallback.md) |  |
 |  [ShotResponseCtor](./testlab.shotresponsector.md) |  |

@@ -16,6 +16,6 @@ permalink: /doc/en/lb4/apidocs.authentication.authenticationbindings.current_use
 <b>Signature:</b>
 
 ```typescript
-CURRENT_USER: BindingKey<import("@loopback/security").UserProfile>
+CURRENT_USER: BindingKey<UserProfile>
 ```
 

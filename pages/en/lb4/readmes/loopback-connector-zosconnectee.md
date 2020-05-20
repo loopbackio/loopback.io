@@ -46,7 +46,8 @@ You may further edit the generated template file located in your LoopBack applic
 ### Module Long Term Support Policy
 This module adopts the [Module Long Term Support (LTS)](http://github.com/CloudNativeJS/ModuleLTS) policy, with the following End Of Life (EOL) dates:
 
- | Module Version   | Release Date | Minimum EOL | EOL With     | Status  |
- |------------------|--------------|-------------|--------------|---------|
- | V1.0.0	        | Nov 2017     | Dec 2019    | Node 8       | Current |
+ | Module Version | Release Date | Minimum EOL | EOL With | Status          |
+ |----------------|--------------|-------------|----------|-----------------|
+ | V2.0.0         | May 2020     | Apr 2022    | Node 12  | Current         |
+ | V1.0.0         | Nov 2017     | Dec 2019    | Node 8   | End of life     |
 

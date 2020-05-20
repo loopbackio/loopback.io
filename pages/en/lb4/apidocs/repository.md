@@ -80,6 +80,7 @@ This module provides data access facilities to various databases and services as
 |  [createHasManyInclusionResolver(meta, getTargetRepo)](./repository.createhasmanyinclusionresolver.md) | Creates InclusionResolver for HasMany relation. Notice that this function only generates the inclusionResolver. It doesn't register it for the source repository.<!-- -->Notice: scope field for inclusion is not supported yet. |
 |  [createHasManyRepositoryFactory(relationMetadata, targetRepositoryGetter)](./repository.createhasmanyrepositoryfactory.md) | Enforces a constraint on a repository based on a relationship contract between models. For example, if a Customer model is related to an Order model via a HasMany relation, then, the relational repository returned by the factory function would be constrained by a Customer model instance's id(s). |
 |  [createHasOneRepositoryFactory(relationMetadata, targetRepositoryGetter)](./repository.createhasonerepositoryfactory.md) | Enforces a constraint on a repository based on a relationship contract between models. For example, if a Customer model is related to an Address model via a HasOne relation, then, the relational repository returned by the factory function would be constrained by a Customer model instance's id(s). |
+|  [createModelClassBinding(modelClass)](./repository.createmodelclassbinding.md) | Create a binding for the given model class |
 |  [deduplicate(input)](./repository.deduplicate.md) | Dedupe an array |
 |  [defineCrudRepositoryClass(entityClass)](./repository.definecrudrepositoryclass.md) | Create (define) an entity CRUD repository class for the given model. This function always uses <code>DefaultCrudRepository</code> as the base class, use <code>defineRepositoryClass</code> if you want to use your own base repository. |
 |  [defineKeyValueRepositoryClass(modelClass)](./repository.definekeyvaluerepositoryclass.md) | Create (define) a KeyValue repository class for the given entity. This function always uses <code>DefaultKeyValueRepository</code> as the base class, use <code>defineRepositoryClass</code> if you want to use your own base repository. |
@@ -112,6 +113,7 @@ This module provides data access facilities to various databases and services as
 |  [reduceAsSingleItem(\_acc, it)](./repository.reduceassingleitem.md) | Returns a single of an instance. For HasOne and BelongsTo relation usage. |
 |  [referencesMany(definition)](./repository.referencesmany.md) | Decorator for referencesMany |
 |  [referencesOne(definition)](./repository.referencesone.md) | Decorator for referencesOne |
+|  [rejectNavigationalPropertiesInData(modelClass, data)](./repository.rejectnavigationalpropertiesindata.md) | Check model data for navigational properties linking to related models. Throw a descriptive error if any such property is found. |
 |  [relation(definition)](./repository.relation.md) | Decorator for relations |
 |  [repository(repositoryName)](./repository.repository.md) | Decorator for repository injections on properties or method arguments |
 |  [repository(model, dataSource)](./repository.repository_1.md) | Decorator for DefaultCrudRepository generation and injection on properties or method arguments based on the given model and dataSource (or their names) |
@@ -141,10 +143,9 @@ This module provides data access facilities to various databases and services as
 |  [EntityRepository](./repository.entityrepository.md) | Base interface for a repository of entities |
 |  [ExecutableRepository](./repository.executablerepository.md) |  |
 |  [Filter](./repository.filter.md) | Query filter object |
-|  [HasManyDefinition](./repository.hasmanydefinition.md) |  |
+|  [HasManyDefinition](./repository.hasmanydefinition.md) | HasManyDefinition defines one-to-many relations and also possible defines many-to-many relations with through models. |
 |  [HasManyRepository](./repository.hasmanyrepository.md) | CRUD operations for a target repository of a HasMany relation |
 |  [HasManyRepositoryFactory](./repository.hasmanyrepositoryfactory.md) |  |
-|  [HasManyThroughDefinition](./repository.hasmanythroughdefinition.md) | A <code>hasManyThrough</code> relation defines a many-to-many connection with another model. This relation indicates that the declaring model can be matched with zero or more instances of another model by proceeding through a third model.<!-- -->Warning: The hasManyThrough interface is experimental and is subject to change. If backwards-incompatible changes are made, a new major version may not be released. |
 |  [HasOneDefinition](./repository.hasonedefinition.md) |  |
 |  [HasOneRepository](./repository.hasonerepository.md) | CRUD operations for a target repository of a HasMany relation |
 |  [HasOneRepositoryFactory](./repository.hasonerepositoryfactory.md) |  |
@@ -172,6 +173,8 @@ This module provides data access facilities to various databases and services as
 |  [juggler](./repository.juggler.md) |  |
 |  [property](./repository.property.md) |  |
 |  [repository](./repository.repository.md) |  |
+|  [RepositoryBindings](./repository.repositorybindings.md) | Binding keys and namespaces for repository related bindings |
+|  [RepositoryTags](./repository.repositorytags.md) | Binding tags for repository related bindings |
 
 ## Variables
 

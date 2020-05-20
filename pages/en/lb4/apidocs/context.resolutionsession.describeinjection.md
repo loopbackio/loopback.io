@@ -18,11 +18,7 @@ Describe the injection for debugging purpose
 <b>Signature:</b>
 
 ```typescript
-static describeInjection(injection: Readonly<Injection>): {
-        targetName: string;
-        bindingSelector: import("./binding-filter").BindingSelector<any>;
-        metadata: import("./inject").InjectionMetadata;
-    };
+static describeInjection(injection: Readonly<Injection>): InjectionDescriptor;
 ```
 
 ## Parameters
@@ -33,6 +29,6 @@ static describeInjection(injection: Readonly<Injection>): {
 
 <b>Returns:</b>
 
-{ targetName: string; bindingSelector: import("./binding-filter").[BindingSelector](./context.bindingselector.md)<!-- -->&lt;any&gt;; metadata: import("./inject").[InjectionMetadata](./context.injectionmetadata.md)<!-- -->; }
+[InjectionDescriptor](./context.injectiondescriptor.md)
 
 

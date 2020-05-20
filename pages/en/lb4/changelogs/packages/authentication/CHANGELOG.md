@@ -3,6 +3,8 @@ lang: en
 title: 'CHANGELOG - @loopback/authentication'
 keywords: LoopBack 4.0, LoopBack 4, CHANGELOG
 sidebar: lb4_sidebar
+toc_level: 0
+editurl: https://github.com/strongloop/loopback-next/blob/master/packages/authentication/CHANGELOG.md
 permalink: /doc/en/lb4/changelog.authentication.html
 ---
 
@@ -10,6 +12,14 @@ permalink: /doc/en/lb4/changelog.authentication.html
 
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+## [4.2.4](https://github.com/strongloop/loopback-next/compare/@loopback/authentication@4.2.3...@loopback/authentication@4.2.4) (2020-05-19)
+
+**Note:** Version bump only for package @loopback/authentication
+
+
+
+
 
 ## [4.2.3](https://github.com/strongloop/loopback-next/compare/@loopback/authentication@4.2.2...@loopback/authentication@4.2.3) (2020-05-07)
 

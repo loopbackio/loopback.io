@@ -19,7 +19,7 @@ Decorator for model definitions
 
 ```typescript
 export declare function model(definition?: Partial<ModelDefinitionSyntax>): (target: Function & {
-    definition?: ModelDefinition | undefined;
+    definition?: ModelDefinition;
 }) => void;
 ```
 
@@ -31,7 +31,7 @@ export declare function model(definition?: Partial<ModelDefinitionSyntax>): (tar
 
 <b>Returns:</b>
 
-(target: Function &amp; { definition?: [ModelDefinition](./repository.modeldefinition.md) \| undefined; }) =&gt; void
+(target: Function &amp; { definition?: [ModelDefinition](./repository.modeldefinition.md)<!-- -->; }) =&gt; void
 
 A class decorator for `model`
 

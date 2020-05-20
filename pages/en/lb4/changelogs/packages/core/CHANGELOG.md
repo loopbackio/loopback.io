@@ -3,6 +3,8 @@ lang: en
 title: 'CHANGELOG - @loopback/core'
 keywords: LoopBack 4.0, LoopBack 4, CHANGELOG
 sidebar: lb4_sidebar
+toc_level: 0
+editurl: https://github.com/strongloop/loopback-next/blob/master/packages/core/CHANGELOG.md
 permalink: /doc/en/lb4/changelog.core.html
 ---
 
@@ -10,6 +12,17 @@ permalink: /doc/en/lb4/changelog.core.html
 
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+# [2.6.0](https://github.com/strongloop/loopback-next/compare/@loopback/core@2.5.0...@loopback/core@2.6.0) (2020-05-19)
+
+
+### Features
+
+* **core:** allow extensionFilter to take a list of extension point names ([8f315eb](https://github.com/strongloop/loopback-next/commit/8f315eb46bee7365da5325a23b948df9d477bfdb))
+
+
+
+
 
 # [2.5.0](https://github.com/strongloop/loopback-next/compare/@loopback/core@2.4.2...@loopback/core@2.5.0) (2020-05-07)
 

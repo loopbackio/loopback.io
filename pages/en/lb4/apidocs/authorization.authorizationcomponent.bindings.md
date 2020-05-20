@@ -16,6 +16,6 @@ permalink: /doc/en/lb4/apidocs.authorization.authorizationcomponent.bindings.htm
 <b>Signature:</b>
 
 ```typescript
-bindings: import("@loopback/core").Binding<import("@loopback/core").Interceptor>[];
+bindings: Binding[];
 ```
 

@@ -18,6 +18,6 @@ A union type describing all possible Relation metadata objects.
 <b>Signature:</b>
 
 ```typescript
-export declare type RelationMetadata = HasManyDefinition | HasManyThroughDefinition | BelongsToDefinition | HasOneDefinition | RelationDefinitionBase;
+export declare type RelationMetadata = HasManyDefinition | BelongsToDefinition | HasOneDefinition | RelationDefinitionBase;
 ```
 

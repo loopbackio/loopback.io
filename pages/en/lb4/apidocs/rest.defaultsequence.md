@@ -57,6 +57,6 @@ app.bind(CoreBindings.SEQUENCE).toClass(MySequence);
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [handle(context)](./rest.defaultsequence.handle.md) |  | Runs the default sequence. Given a handler context (request and response), running the sequence will produce a response or an error.<!-- -->Default sequence executes these steps - Finds the appropriate controller method, swagger spec and args for invocation - Parses HTTP request to get API argument list - Invokes the API which is defined in the Application Controller - Writes the result from API into the HTTP response - Error is caught and logged using 'logError' if any of the above steps in the sequence fails with an error. |
+|  [handle(context)](./rest.defaultsequence.handle.md) |  | Runs the default sequence. Given a handler context (request and response), running the sequence will produce a response or an error.<!-- -->Default sequence executes these steps - Executes middleware for CORS, OpenAPI spec endpoints - Finds the appropriate controller method, swagger spec and args for invocation - Parses HTTP request to get API argument list - Invokes the API which is defined in the Application Controller - Writes the result from API into the HTTP response - Error is caught and logged using 'logError' if any of the above steps in the sequence fails with an error. |
 
 

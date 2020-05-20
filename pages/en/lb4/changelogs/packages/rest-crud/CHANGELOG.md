@@ -3,6 +3,8 @@ lang: en
 title: 'CHANGELOG - @loopback/rest-crud'
 keywords: LoopBack 4.0, LoopBack 4, CHANGELOG
 sidebar: lb4_sidebar
+toc_level: 0
+editurl: https://github.com/strongloop/loopback-next/blob/master/packages/rest-crud/CHANGELOG.md
 permalink: /doc/en/lb4/changelog.rest-crud.html
 ---
 
@@ -10,6 +12,14 @@ permalink: /doc/en/lb4/changelog.rest-crud.html
 
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+## [0.8.4](https://github.com/strongloop/loopback-next/compare/@loopback/rest-crud@0.8.3...@loopback/rest-crud@0.8.4) (2020-05-19)
+
+**Note:** Version bump only for package @loopback/rest-crud
+
+
+
+
 
 ## [0.8.3](https://github.com/strongloop/loopback-next/compare/@loopback/rest-crud@0.8.2...@loopback/rest-crud@0.8.3) (2020-05-07)
 

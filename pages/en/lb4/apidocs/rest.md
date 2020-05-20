@@ -26,11 +26,9 @@ A REST server for LoopBack 4 application instances, complete with:
 |  Class | Description |
 |  --- | --- |
 |  [BaseRoute](./rest.baseroute.md) | Base implementation of RouteEntry |
-|  [BindElementProvider](./rest.bindelementprovider.md) |  |
 |  [ControllerRoute](./rest.controllerroute.md) | A route backed by a controller |
 |  [DefaultSequence](./rest.defaultsequence.md) | The default implementation of SequenceHandler. |
 |  [FindRouteProvider](./rest.findrouteprovider.md) |  |
-|  [GetFromContextProvider](./rest.getfromcontextprovider.md) |  |
 |  [HttpHandler](./rest.httphandler.md) |  |
 |  [InfoSpecEnhancer](./rest.infospecenhancer.md) | An OpenAPI spec enhancer to populate <code>info</code> with application metadata (package.json). |
 |  [InvokeMethodProvider](./rest.invokemethodprovider.md) |  |
@@ -134,14 +132,12 @@ A REST server for LoopBack 4 application instances, complete with:
 |  [AjvFactory](./rest.ajvfactory.md) | Factory function for Ajv instances |
 |  [AjvFormat](./rest.ajvformat.md) | Ajv format definition with a name |
 |  [AjvKeyword](./rest.ajvkeyword.md) | Ajv keyword definition with a name |
-|  [BindElement](./rest.bindelement.md) |  |
 |  [BodyParserFunction](./rest.bodyparserfunction.md) | Plain function for body parsing |
 |  [BodyParserMiddleware](./rest.bodyparsermiddleware.md) | Express body parser function type |
 |  [ControllerClass](./rest.controllerclass.md) | Controller class |
 |  [ControllerFactory](./rest.controllerfactory.md) | A factory function to create controller instances synchronously or asynchronously |
 |  [ControllerInstance](./rest.controllerinstance.md) |  |
 |  [FindRoute](./rest.findroute.md) | Find a route matching the incoming request. Throw an error when no route was found. |
-|  [GetFromContext](./rest.getfromcontext.md) |  |
 |  [HttpRequestListener](./rest.httprequestlistener.md) |  |
 |  [InvokeMethod](./rest.invokemethod.md) | Invokes a method defined in the Application Controller |
 |  [LogError](./rest.logerror.md) | Log information about a failed request. |

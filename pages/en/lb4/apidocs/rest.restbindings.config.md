@@ -18,6 +18,6 @@ Binding key for setting and injecting RestComponentConfig
 <b>Signature:</b>
 
 ```typescript
-CONFIG: BindingKey<unknown>
+CONFIG: BindingKey<RestServerConfig>
 ```
 

@@ -18,14 +18,14 @@ Create a service binding from a class or provider
 <b>Signature:</b>
 
 ```typescript
-export declare function createServiceBinding<S>(cls: Constructor<S> | Constructor<Provider<S>>, options?: ServiceOptions): Binding<S>;
+export declare function createServiceBinding<S>(cls: Constructor<S | Provider<S>>, options?: ServiceOptions): Binding<S>;
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  cls | [Constructor](./context.constructor.md)<!-- -->&lt;S&gt; \| [Constructor](./context.constructor.md)<!-- -->&lt;[Provider](./context.provider.md)<!-- -->&lt;S&gt;&gt; | Service class or provider |
+|  cls | [Constructor](./context.constructor.md)<!-- -->&lt;S \| [Provider](./context.provider.md)<!-- -->&lt;S&gt;&gt; | Service class or provider |
 |  options | [ServiceOptions](./core.serviceoptions.md) | Service options |
 
 <b>Returns:</b>

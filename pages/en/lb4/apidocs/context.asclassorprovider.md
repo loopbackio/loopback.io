@@ -18,14 +18,14 @@ A factory function to create a template function to bind the target class as a c
 <b>Signature:</b>
 
 ```typescript
-export declare function asClassOrProvider<T>(target: Constructor<T | Provider<T>>): BindingTemplate<T>;
+export declare function asClassOrProvider<T>(target: Constructor<T | Provider<T>> | DynamicValueProviderClass<T>): BindingTemplate<T>;
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  target | [Constructor](./context.constructor.md)<!-- -->&lt;T \| [Provider](./context.provider.md)<!-- -->&lt;T&gt;&gt; | Target class, which can be an implementation of <code>Provider</code> |
+|  target | [Constructor](./context.constructor.md)<!-- -->&lt;T \| [Provider](./context.provider.md)<!-- -->&lt;T&gt;&gt; \| [DynamicValueProviderClass](./context.dynamicvalueproviderclass.md)<!-- -->&lt;T&gt; | Target class, which can be an implementation of <code>Provider</code> or <code>DynamicValueProviderClass</code> |
 
 <b>Returns:</b>
 

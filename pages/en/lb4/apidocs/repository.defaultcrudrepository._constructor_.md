@@ -27,7 +27,7 @@ constructor(entityClass: typeof Entity & {
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  entityClass | typeof [Entity](./repository.entity.md) &amp; { prototype: T; } | Legacy entity class |
-|  dataSource | juggler.DataSource | Legacy data source |
+|  entityClass | typeof [Entity](./repository.entity.md) &amp; { prototype: T; } | LoopBack 4 entity class |
+|  dataSource | juggler.DataSource | Legacy juggler data source |
 
 

@@ -16,7 +16,7 @@ permalink: /doc/en/lb4/apidocs.authorization.authorizationinterceptor.intercept.
 <b>Signature:</b>
 
 ```typescript
-intercept(invocationCtx: InvocationContext, next: Next): Promise<import("@loopback/context").NonVoid>;
+intercept(invocationCtx: InvocationContext, next: Next): Promise<NonVoid>;
 ```
 
 ## Parameters
@@ -28,6 +28,6 @@ intercept(invocationCtx: InvocationContext, next: Next): Promise<import("@loopba
 
 <b>Returns:</b>
 
-Promise&lt;import("@loopback/context").[NonVoid](./context.nonvoid.md)<!-- -->&gt;
+Promise&lt;[NonVoid](./context.nonvoid.md)<!-- -->&gt;
 
 

@@ -3,6 +3,8 @@ lang: en
 title: 'CHANGELOG - @loopback/example-todo'
 keywords: LoopBack 4.0, LoopBack 4, CHANGELOG
 sidebar: lb4_sidebar
+toc_level: 0
+editurl: https://github.com/strongloop/loopback-next/blob/master/examples/todo/CHANGELOG.md
 permalink: /doc/en/lb4/changelog.example-todo.html
 ---
 
@@ -10,6 +12,17 @@ permalink: /doc/en/lb4/changelog.example-todo.html
 
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+# [3.4.0](https://github.com/strongloop/loopback-next/compare/@loopback/example-todo@3.3.0...@loopback/example-todo@3.4.0) (2020-05-19)
+
+
+### Features
+
+* upgrade to TypeScript 3.9.x ([3300e45](https://github.com/strongloop/loopback-next/commit/3300e4569ab8410bb1285f7a54d326e9d976476d))
+
+
+
+
 
 # [3.3.0](https://github.com/strongloop/loopback-next/compare/@loopback/example-todo@3.2.0...@loopback/example-todo@3.3.0) (2020-05-07)
 

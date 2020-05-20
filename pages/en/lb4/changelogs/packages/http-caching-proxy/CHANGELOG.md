@@ -3,6 +3,8 @@ lang: en
 title: 'CHANGELOG - @loopback/http-caching-proxy'
 keywords: LoopBack 4.0, LoopBack 4, CHANGELOG
 sidebar: lb4_sidebar
+toc_level: 0
+editurl: https://github.com/strongloop/loopback-next/blob/master/packages/http-caching-proxy/CHANGELOG.md
 permalink: /doc/en/lb4/changelog.http-caching-proxy.html
 ---
 
@@ -10,6 +12,22 @@ permalink: /doc/en/lb4/changelog.http-caching-proxy.html
 
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+## [2.1.5](https://github.com/strongloop/loopback-next/compare/@loopback/http-caching-proxy@2.1.4...@loopback/http-caching-proxy@2.1.5) (2020-05-20)
+
+**Note:** Version bump only for package @loopback/http-caching-proxy
+
+
+
+
+
+## [2.1.4](https://github.com/strongloop/loopback-next/compare/@loopback/http-caching-proxy@2.1.3...@loopback/http-caching-proxy@2.1.4) (2020-05-19)
+
+**Note:** Version bump only for package @loopback/http-caching-proxy
+
+
+
+
 
 ## [2.1.3](https://github.com/strongloop/loopback-next/compare/@loopback/http-caching-proxy@2.1.2...@loopback/http-caching-proxy@2.1.3) (2020-05-07)
 

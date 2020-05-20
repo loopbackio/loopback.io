@@ -18,6 +18,6 @@ Binding key for setting and injecting an OpenAPI spec
 <b>Signature:</b>
 
 ```typescript
-API_SPEC: BindingKey<import("@loopback/openapi-v3").OpenAPIObject>
+API_SPEC: BindingKey<OpenApiSpec>
 ```
 

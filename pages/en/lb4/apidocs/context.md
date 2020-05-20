@@ -68,7 +68,7 @@ permalink: /doc/en/lb4/apidocs.context.html
 |  [getBindingMetadata(target)](./context.getbindingmetadata.md) | Get binding metadata for a class |
 |  [getDeepProperty(value, path)](./context.getdeepproperty.md) | Get nested properties of an object by path |
 |  [globalInterceptor(group, specs)](./context.globalinterceptor.md) | <code>@globalInterceptor</code> decorator to mark the class as a global interceptor |
-|  [includesTagValue(itemValue)](./context.includestagvalue.md) | Create a tag value matcher function that returns <code>true</code> if the target tag value equals to the item value or is an array that includes the item value. |
+|  [includesTagValue(itemValues)](./context.includestagvalue.md) | Create a tag value matcher function that returns <code>true</code> if the target tag value equals to the item value or is an array that includes the item value. |
 |  [inject(bindingSelector, metadata, resolve)](./context.inject.md) | A decorator to annotate method arguments for automatic injection by LoopBack IoC container. |
 |  [inspectInjections(binding)](./context.inspectinjections.md) | Inspect injections for a binding created with <code>toClass</code> or <code>toProvider</code> |
 |  [inspectTargetType(injection)](./context.inspecttargettype.md) | Inspect the target type for the injection to find out the corresponding JavaScript type |
@@ -79,6 +79,7 @@ permalink: /doc/en/lb4/apidocs.context.html
 |  [invokeMethodWithInterceptors(context, target, methodName, args, options)](./context.invokemethodwithinterceptors.md) | Invoke a method with the given context |
 |  [isBindingAddress(bindingSelector)](./context.isbindingaddress.md) | Type guard for binding address |
 |  [isBindingTagFilter(filter)](./context.isbindingtagfilter.md) | Type guard for BindingTagFilter |
+|  [isDynamicValueProviderClass(factory)](./context.isdynamicvalueproviderclass.md) | Check if the factory is a value factory provider class |
 |  [isPromiseLike(value)](./context.ispromiselike.md) | Check whether a value is a Promise-like instance. Recognizes both native promises and third-party promise libraries. |
 |  [isProviderClass(cls)](./context.isproviderclass.md) | Check if a class implements <code>Provider</code> interface |
 |  [mergeInterceptors(interceptorsFromSpec, existingInterceptors)](./context.mergeinterceptors.md) | Adding interceptors from the spec to the front of existing ones. Duplicate entries are eliminated from the spec side.<!-- -->For example:<!-- -->- \[log\] + \[cache, log\] =<!-- -->&gt; \[cache, log\] - \[log\] + \[log, cache\] =<!-- -->&gt; \[log, cache\] - \[\] + \[cache, log\] =<!-- -->&gt; \[cache, log\] - \[cache, log\] + \[\] =<!-- -->&gt; \[cache, log\] - \[log\] + \[cache\] =<!-- -->&gt; \[log, cache\] |
@@ -108,8 +109,10 @@ permalink: /doc/en/lb4/apidocs.context.html
 |  [ContextInspectOptions](./context.contextinspectoptions.md) | Options for context.inspect() |
 |  [ContextObserver](./context.contextobserver.md) | Observers of context bind/unbind events |
 |  [ContextViewEvent](./context.contextviewevent.md) | An event emitted by a <code>ContextView</code> |
+|  [DynamicValueProviderClass](./context.dynamicvalueproviderclass.md) | A class with a static <code>value</code> method as the factory function for <code>toDynamicValue</code>. |
 |  [InjectBindingMetadata](./context.injectbindingmetadata.md) | Metadata for <code>@inject.binding</code> |
 |  [Injection](./context.injection.md) | Descriptor for an injection point |
+|  [InjectionDescriptor](./context.injectiondescriptor.md) |  |
 |  [InjectionElement](./context.injectionelement.md) | Wrapper for injections tracked by resolution sessions |
 |  [InjectionMetadata](./context.injectionmetadata.md) | An object to provide metadata for <code>@inject</code> |
 |  [Interceptor](./context.interceptor.md) | Interceptor function to intercept method invocations |
@@ -119,8 +122,9 @@ permalink: /doc/en/lb4/apidocs.context.html
 |  [JSONObject](./context.jsonobject.md) | JSON object |
 |  [Notification](./context.notification.md) | Event data for observer notifications |
 |  [Provider](./context.provider.md) | Providers allow developers to compute injected values dynamically, with any dependencies required by the value getter injected automatically from the Context. |
+|  [ResolutionContext](./context.resolutioncontext.md) | Contextual metadata for resolution |
 |  [ResolutionOptions](./context.resolutionoptions.md) | Options for binding/dependency resolution |
-|  [ResolverFunction](./context.resolverfunction.md) | A function to provide resolution of injected values |
+|  [ResolverFunction](./context.resolverfunction.md) | A function to provide resolution of injected values. |
 |  [Subscription](./context.subscription.md) | Subscription of context events. It's modeled after https://github.com/tc39/proposal-observable. |
 |  [TagValueMatcher](./context.tagvaluematcher.md) | A function to check if a given tag value is matched for <code>filterByTag</code> |
 
@@ -152,6 +156,7 @@ permalink: /doc/en/lb4/apidocs.context.html
 
 |  Type Alias | Description |
 |  --- | --- |
+|  [AliasBindingSource](./context.aliasbindingsource.md) | Binding source for <code>toAlias</code> |
 |  [AsInterceptedFunction](./context.asinterceptedfunction.md) | The intercepted variant of a function to return <code>ValueOrPromise&lt;T&gt;</code>. If <code>T</code> is not a function, the type is <code>T</code>. |
 |  [AsValueOrPromise](./context.asvalueorpromise.md) | Create the Promise type for <code>T</code>. If <code>T</code> extends <code>Promise</code>, the type is <code>T</code>, otherwise the type is <code>ValueOrPromise&lt;T&gt;</code>. |
 |  [AsyncProxy](./context.asyncproxy.md) | The proxy type for <code>T</code>. The return type for any method of <code>T</code> with original return type <code>R</code> becomes <code>ValueOrPromise&lt;R&gt;</code> if <code>R</code> does not extend <code>Promise</code>. Property types stay untouched. |
@@ -162,16 +167,20 @@ permalink: /doc/en/lb4/apidocs.context.html
 |  [BindingMetadata](./context.bindingmetadata.md) | Binding metadata from <code>@bind</code> |
 |  [BindingScopeAndTags](./context.bindingscopeandtags.md) | An object to configure binding scope and tags |
 |  [BindingSelector](./context.bindingselector.md) | Select binding(s) by key or a filter function |
+|  [BindingSource](./context.bindingsource.md) | Source for the binding, including the type and value |
 |  [BindingSpec](./context.bindingspec.md) | Specification of parameters for <code>@bind()</code> |
 |  [BindingTag](./context.bindingtag.md) | Binding tag can be a simple name or name/value pairs |
 |  [BindingTemplate](./context.bindingtemplate.md) | A function as the template to configure bindings |
 |  [BoundValue](./context.boundvalue.md) |  |
+|  [ClassBindingSource](./context.classbindingsource.md) | Binding source for <code>toClass</code> |
+|  [ConstantBindingSource](./context.constantbindingsource.md) | Binding source for <code>to</code> |
 |  [Constructor](./context.constructor.md) | A class constructor accepting arbitrary arguments. |
 |  [ContextEvent](./context.contextevent.md) | Events emitted by a context |
 |  [ContextEventListener](./context.contexteventlistener.md) | Synchronous listener for context events |
 |  [ContextEventObserver](./context.contexteventobserver.md) | Context event observer type - An instance of <code>ContextObserver</code> or a function |
 |  [ContextEventType](./context.contexteventtype.md) | Context event types. We support <code>bind</code> and <code>unbind</code> for now but keep it open for new types |
 |  [ContextObserverFn](./context.contextobserverfn.md) | Listen on <code>bind</code>, <code>unbind</code>, or other events |
+|  [DynamicValueBindingSource](./context.dynamicvaluebindingsource.md) | Binding source for <code>toDynamicValue</code> |
 |  [GenericInterceptor](./context.genericinterceptor.md) | An interceptor function to be invoked in a chain for the given context. It serves as the base interface for various types of interceptors, such as method invocation interceptor or request/response processing interceptor.<!-- -->We choose <code>NonVoid</code> as the return type to avoid possible bugs that an interceptor forgets to return the value from <code>next()</code>. For example, the code below will fail to compile.
 ```ts
 const myInterceptor: Interceptor = async (ctx, next) {
@@ -202,12 +211,14 @@ const myInterceptor: Interceptor = async (ctx, next) {
 |  [MapObject](./context.mapobject.md) |  |
 |  [Next](./context.next.md) | The <code>next</code> function that can be used to invoke next generic interceptor in the chain |
 |  [NonVoid](./context.nonvoid.md) | Any type except <code>void</code>. We use this type to enforce that interceptor functions always return a value (including undefined or null). |
+|  [ProviderBindingSource](./context.providerbindingsource.md) | Binding source for <code>toProvider</code> |
 |  [ResolutionAction](./context.resolutionaction.md) | A function to be executed with the resolution session |
 |  [ResolutionElement](./context.resolutionelement.md) | Binding or injection elements tracked by resolution sessions |
 |  [ResolutionOptionsOrSession](./context.resolutionoptionsorsession.md) | Resolution options or session |
 |  [Setter](./context.setter.md) | The function injected by <code>@inject.setter(bindingKey)</code>. It sets the underlying binding to a constant value using <code>binding.to(value)</code>. |
 |  [TagMap](./context.tagmap.md) |  |
 |  [TypeNamespaceMapping](./context.typenamespacemapping.md) | Mapping artifact types to binding key namespaces (prefixes). |
+|  [ValueFactory](./context.valuefactory.md) | A factory function for <code>toDynamicValue</code> |
 |  [ValueOrPromise](./context.valueorpromise.md) | Representing a value or promise. This type is used to represent results of synchronous/asynchronous resolution of values.<!-- -->Note that we are using PromiseLike instead of native Promise to describe the asynchronous variant. This allows producers of async values to use any Promise implementation (e.g. Bluebird) instead of native Promises provided by JavaScript runtime. |
 
 

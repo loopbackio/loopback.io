@@ -20,14 +20,14 @@ Decorate the given Controller constructor with metadata describing the HTTP/REST
 <b>Signature:</b>
 
 ```typescript
-export declare function api(spec: ControllerSpec): ClassDecorator;
+export declare function api(spec: Partial<ControllerSpec>): ClassDecorator;
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  spec | [ControllerSpec](./openapi-v3.controllerspec.md) | OpenAPI specification describing the endpoints handled by this controller |
+|  spec | Partial&lt;[ControllerSpec](./openapi-v3.controllerspec.md)<!-- -->&gt; | OpenAPI specification describing the endpoints handled by this controller |
 
 <b>Returns:</b>
 

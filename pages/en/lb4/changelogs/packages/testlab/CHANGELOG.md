@@ -3,6 +3,8 @@ lang: en
 title: 'CHANGELOG - @loopback/testlab'
 keywords: LoopBack 4.0, LoopBack 4, CHANGELOG
 sidebar: lb4_sidebar
+toc_level: 0
+editurl: https://github.com/strongloop/loopback-next/blob/master/packages/testlab/CHANGELOG.md
 permalink: /doc/en/lb4/changelog.testlab.html
 ---
 
@@ -10,6 +12,22 @@ permalink: /doc/en/lb4/changelog.testlab.html
 
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+## [3.1.5](https://github.com/strongloop/loopback-next/compare/@loopback/testlab@3.1.4...@loopback/testlab@3.1.5) (2020-05-20)
+
+**Note:** Version bump only for package @loopback/testlab
+
+
+
+
+
+## [3.1.4](https://github.com/strongloop/loopback-next/compare/@loopback/testlab@3.1.3...@loopback/testlab@3.1.4) (2020-05-19)
+
+**Note:** Version bump only for package @loopback/testlab
+
+
+
+
 
 ## [3.1.3](https://github.com/strongloop/loopback-next/compare/@loopback/testlab@3.1.2...@loopback/testlab@3.1.3) (2020-05-07)
 

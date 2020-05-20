@@ -18,14 +18,14 @@ Get the binding template for a class with binding metadata
 <b>Signature:</b>
 
 ```typescript
-export declare function bindingTemplateFor<T>(cls: Constructor<T | Provider<T>>): BindingTemplate<T>;
+export declare function bindingTemplateFor<T>(cls: Constructor<T | Provider<T>> | DynamicValueProviderClass<T>): BindingTemplate<T>;
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  cls | [Constructor](./context.constructor.md)<!-- -->&lt;T \| [Provider](./context.provider.md)<!-- -->&lt;T&gt;&gt; | A class with optional <code>@bind</code> |
+|  cls | [Constructor](./context.constructor.md)<!-- -->&lt;T \| [Provider](./context.provider.md)<!-- -->&lt;T&gt;&gt; \| [DynamicValueProviderClass](./context.dynamicvalueproviderclass.md)<!-- -->&lt;T&gt; | A class with optional <code>@bind</code> |
 
 <b>Returns:</b>
 

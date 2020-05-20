@@ -18,6 +18,6 @@ Binding key for http access logger with winston
 <b>Signature:</b>
 
 ```typescript
-WINSTON_HTTP_ACCESS_LOGGER: BindingKey<GenericInterceptor<import("@loopback/core").Context>>
+WINSTON_HTTP_ACCESS_LOGGER: BindingKey<Interceptor>
 ```
 

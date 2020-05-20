@@ -18,14 +18,14 @@ A factory function to create binding filter for extensions of a named extension 
 <b>Signature:</b>
 
 ```typescript
-export declare function extensionFilter(extensionPointName: string): BindingFilter;
+export declare function extensionFilter(...extensionPointNames: string[]): BindingFilter;
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  extensionPointName | string | Name of the extension point |
+|  extensionPointNames | string\[\] | A list of names of extension points |
 
 <b>Returns:</b>
 

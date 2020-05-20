@@ -23,6 +23,6 @@ export declare class AuthorizationComponent implements Component
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [bindings](./authorization.authorizationcomponent.bindings.md) |  | import("@loopback/core").[Binding](./context.binding.md)<!-- -->&lt;import("@loopback/core").[Interceptor](./context.interceptor.md)<!-- -->&gt;\[\] |  |
+|  [bindings](./authorization.authorizationcomponent.bindings.md) |  | [Binding](./context.binding.md)<!-- -->\[\] |  |
 
 

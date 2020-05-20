@@ -13,11 +13,22 @@ permalink: /doc/en/lb4/apidocs.context.resolverfunction.html
 
 ## ResolverFunction interface
 
-A function to provide resolution of injected values
+A function to provide resolution of injected values.
 
 <b>Signature:</b>
 
 ```typescript
 export interface ResolverFunction 
 ```
+
+## Example
+
+
+```ts
+const resolver: ResolverFunction = (ctx, injection, session) {
+  return session.currentBinding?.key;
+}
+
+```
+
 

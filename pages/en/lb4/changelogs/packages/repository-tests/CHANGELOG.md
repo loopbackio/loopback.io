@@ -3,6 +3,8 @@ lang: en
 title: 'CHANGELOG - @loopback/repository-tests'
 keywords: LoopBack 4.0, LoopBack 4, CHANGELOG
 sidebar: lb4_sidebar
+toc_level: 0
+editurl: https://github.com/strongloop/loopback-next/blob/master/packages/repository-tests/CHANGELOG.md
 permalink: /doc/en/lb4/changelog.repository-tests.html
 ---
 
@@ -10,6 +12,14 @@ permalink: /doc/en/lb4/changelog.repository-tests.html
 
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+## [0.12.4](https://github.com/strongloop/loopback-next/compare/@loopback/repository-tests@0.12.3...@loopback/repository-tests@0.12.4) (2020-05-19)
+
+**Note:** Version bump only for package @loopback/repository-tests
+
+
+
+
 
 ## [0.12.3](https://github.com/strongloop/loopback-next/compare/@loopback/repository-tests@0.12.2...@loopback/repository-tests@0.12.3) (2020-05-07)
 

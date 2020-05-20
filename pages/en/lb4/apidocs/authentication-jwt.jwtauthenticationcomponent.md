@@ -29,6 +29,6 @@ export declare class JWTAuthenticationComponent implements Component
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [bindings](./authentication-jwt.jwtauthenticationcomponent.bindings.md) |  | [Binding](./context.binding.md)<!-- -->&lt;unknown&gt;\[\] |  |
+|  [bindings](./authentication-jwt.jwtauthenticationcomponent.bindings.md) |  | [Binding](./context.binding.md)<!-- -->\[\] |  |
 
 

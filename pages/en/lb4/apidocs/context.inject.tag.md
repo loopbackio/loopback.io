@@ -18,7 +18,7 @@ Inject an array of values by a tag pattern string or regexp
 <b>Signature:</b>
 
 ```typescript
-tag: (bindingTag: string | RegExp | Record<string, any>, metadata?: InjectionMetadata | undefined) => (target: Object, member: string | undefined, methodDescriptorOrParameterIndex?: number | TypedPropertyDescriptor<any> | undefined) => void
+tag: (bindingTag: BindingTag | RegExp, metadata?: InjectionMetadata | undefined) => (target: Object, member: string | undefined, methodDescriptorOrParameterIndex?: number | TypedPropertyDescriptor<any> | undefined) => void
 ```
 
 ## Example

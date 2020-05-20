@@ -16,6 +16,6 @@ permalink: /doc/en/lb4/apidocs.extension-health.healthbindings.config.html
 <b>Signature:</b>
 
 ```typescript
-CONFIG: import("@loopback/core").BindingAddress<Partial<import("./types").HealthOptions>>
+CONFIG: BindingAddress<HealthConfig>
 ```
 

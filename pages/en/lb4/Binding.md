@@ -32,13 +32,17 @@ There are a few ways to create a binding:
 - Use `Binding` constructor:
 
   ```ts
+  const context = new Context();
   const binding = new Binding('my-key');
+  ctx.add(binding);
   ```
 
 - Use `Binding.bind()`
 
   ```ts
+  const context = new Context();
   const binding = Binding.bind('my-key');
+  ctx.add(binding);
   ```
 
 - Use `context.bind()`
@@ -79,6 +83,47 @@ binding.toDynamicValue(() => new Date());
 binding.toDynamicValue(() => Promise.resolve('my-value'));
 ```
 
+The factory function can receive extra information about the context, binding,
+and resolution options.
+
+```ts
+import {ValueFactory} from '@loopback/context';
+
+// The factory function now have access extra metadata about the resolution
+const factory: ValueFactory<string> = resolutionCtx => {
+  return `Hello, ${resolutionCtx.context.name}#${
+    resolutionCtx.binding.key
+  } ${resolutionCtx.options.session?.getBindingPath()}`;
+};
+const b = ctx.bind('msg').toDynamicValue(factory);
+```
+
+Object destructuring can be used to further simplify a value factory function
+that needs to access `context`, `binding`, or `options`.
+
+```ts
+const factory: ValueFactory<string> = ({context, binding, options}) => {
+  return `Hello, ${context.name}#${
+    binding.key
+  } ${options.session?.getBindingPath()}`;
+};
+```
+
+An advanced form of value factory is a class that has a static `value` method
+that allows parameter injection.
+
+```ts
+import {inject} from '@loopback/context';
+
+class GreetingProvider {
+  static value(@inject('user') user: string) {
+    return `Hello, ${user}`;
+  }
+}
+
+const b = ctx.bind('msg').toDynamicValue(GreetingProvider);
+```
+
 #### A class
 
 The binding can represent an instance of a class, for example, a controller. A
@@ -114,6 +159,9 @@ class MyValueProvider implements Provider<string> {
 
 binding.toProvider(MyValueProvider);
 ```
+
+The provider class serves as the wrapper to declare dependency injections. If
+dependency is not needed, `toDynamicValue` can be used instead.
 
 #### An alias
 
@@ -524,7 +572,7 @@ parameter of `BindingFromClassOptions` type with the following settings:
 {% include note.html content=" The `@bind` decorator only adds metadata to the
 class. It does NOT automatically bind the class to a context. To bind a class
 with `@bind` decoration, the following step needs to happen explicitly or
-implicitly (by a booter).
+implicitly by a [booter](Booting-an-Application.md#booters).
 
 ```ts
 const binding = createBindingFromClass(AClassOrProviderWithBindDecoration);
@@ -543,6 +591,115 @@ const binding = ctx.bind('my-key').toClass(MyService);
 ```
 
 " %}
+
+The `createBindingFromClass` can be used for three kinds of classes as the value
+provider for bindings.
+
+1. The class for `toClass()`
+
+   ```ts
+   @bind({tags: {greeting: 'a'}})
+   class Greeter {
+     constructor(@inject('currentUser') private user: string) {}
+
+     greet() {
+       return `Hello, ${this.user}`;
+     }
+   }
+
+   // toClass() is used internally
+   // A tag `{type: 'class'}` is added
+   const binding = createBindingFromClass(Greeter);
+   ctx.add(binding);
+   ```
+
+2. The class for `toProvider()`
+
+```ts
+@bind({tags: {greeting: 'b'}})
+class GreetingProvider implements Provider<string> {
+  constructor(@inject('currentUser') private user: string) {}
+
+  value() {
+    return `Hello, ${this.user}`;
+  }
+}
+
+// toProvider() is used internally
+// A tag `{type: 'provider'}` is added
+const binding = createBindingFromClass(GreetingProvider);
+ctx.add(binding);
+```
+
+3. The class for `toDynamicValue()`
+
+```ts
+@bind({tags: {greeting: 'c'}})
+class DynamicGreetingProvider {
+  static value(@inject('currentUser') user: string) {
+    return `Hello, ${this.user}`;
+  }
+}
+
+// toDynamicValue() is used internally
+// A tag `{type: 'dynamicValueProvider'}` is added
+const binding = createBindingFromClass(GreetingProvider);
+ctx.add(binding);
+```
+
+The `@bind` is optional for such classes. But it's usually there to provide
+additional metadata such as scope and tags for the binding. Without `@bind`,
+`createFromClass` simply calls underlying `toClass`, `toProvider`, or
+`toDynamicValue` based on the class signature.
+
+#### When to call createBindingFromClass
+
+Classes that are placed in specific directories such as : `src/datasources`,
+`src/controllers`, `src/services`, `src/repositories`, `src/observers`,
+`src/interceptors`, etc are automatically registered by
+[the boot process](Booting-an-Application.md), and so it is **not** necessary to
+call
+
+```ts
+const binding = createBindingFromClass(AClassOrProviderWithBindDecoration);
+ctx.add(binding);
+```
+
+in your application.
+
+If, on the other hand, your classes are placed in different directories expected
+by the boot process, then it is necessary to call the code above in your
+application.
+
+##### How the Boot Process Calls createBindingFromClass for you
+
+A default LoopBack 4 application uses
+[BootMixin](Booting-an-Application.md#bootmixin) which loads the
+[BootComponent](Booting-an-Application.md#bootcomponent). It declares the main
+[booters](https://github.com/strongloop/loopback-next/blob/a81ce7e1193f7408d30d984d0c3ddcec74f7c316/packages/boot/src/boot.component.ts#L29)
+for an application : application metadata, controllers, repositories, services,
+datasources, lifecycle observers, interceptors, and model api. The
+[ControllerBooter](https://github.com/strongloop/loopback-next/blob/a81ce7e1193f7408d30d984d0c3ddcec74f7c316/packages/boot/src/booters/controller.booter.ts#L23),
+for example, calls `this.app.controller(controllerClass)` for every controller
+class discovered in the `controllers` folder. This
+[method](https://github.com/strongloop/loopback-next/blob/da9a7e72b12ebb9250214b92dc20a268a8bb7e95/packages/core/src/application.ts#L124)
+does all the work for you; as shown below:
+
+{% include code-caption.html content="loopback-next/packages/core/src/application.ts" %}
+
+```ts
+  controller(controllerCtor: ControllerClass, name?: string): Binding {
+    debug('Adding controller %s', name ?? controllerCtor.name);
+    const binding = createBindingFromClass(controllerCtor, {
+      name,
+      namespace: CoreBindings.CONTROLLERS,
+      type: CoreTags.CONTROLLER,
+      defaultScope: BindingScope.TRANSIENT,
+    });
+    this.add(binding);
+    return binding;
+  }
+```
 
 ### Encoding value types in binding keys
 

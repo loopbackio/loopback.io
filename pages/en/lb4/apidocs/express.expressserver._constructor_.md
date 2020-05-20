@@ -18,10 +18,10 @@ Constructs a new instance of the `ExpressServer` class
 <b>Signature:</b>
 
 ```typescript
-constructor(config?: (import("@loopback/http-server").HttpOptions & {
+constructor(config?: (HttpOptions & {
         basePath?: string | undefined;
         settings?: Record<string, unknown> | undefined;
-    }) | (import("@loopback/http-server").HttpsOptions & {
+    }) | (HttpsOptions & {
         basePath?: string | undefined;
         settings?: Record<string, unknown> | undefined;
     }) | undefined, parent?: Context);
@@ -31,7 +31,7 @@ constructor(config?: (import("@loopback/http-server").HttpOptions & {
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  config | (import("@loopback/http-server").[HttpOptions](./http-server.httpoptions.md) &amp; { basePath?: string \| undefined; settings?: Record&lt;string, unknown&gt; \| undefined; }) \| (import("@loopback/http-server").[HttpsOptions](./http-server.httpsoptions.md) &amp; { basePath?: string \| undefined; settings?: Record&lt;string, unknown&gt; \| undefined; }) \| undefined |  |
+|  config | ([HttpOptions](./http-server.httpoptions.md) &amp; { basePath?: string \| undefined; settings?: Record&lt;string, unknown&gt; \| undefined; }) \| ([HttpsOptions](./http-server.httpsoptions.md) &amp; { basePath?: string \| undefined; settings?: Record&lt;string, unknown&gt; \| undefined; }) \| undefined |  |
 |  parent | [Context](./context.context.md) |  |
 
 

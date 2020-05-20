@@ -16,6 +16,6 @@ permalink: /doc/en/lb4/apidocs.apiconnect.apiconnectcomponent.bindings.html
 <b>Signature:</b>
 
 ```typescript
-bindings: import("@loopback/core").Binding<ApiConnectSpecEnhancer>[];
+bindings: Binding[];
 ```
 

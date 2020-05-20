@@ -35,10 +35,8 @@ export declare namespace RestBindings
 |  [AJV\_FACTORY](./rest.restbindings.ajv_factory.md) | Binding key for AJV |
 |  [API\_SPEC](./rest.restbindings.api_spec.md) | Binding key for setting and injecting an OpenAPI spec |
 |  [BASE\_PATH](./rest.restbindings.base_path.md) | Internal binding key for basePath |
-|  [BIND\_ELEMENT](./rest.restbindings.bind_element.md) | Binding key for setting and injecting a wrapper function for setting values on a given context |
 |  [CONFIG](./rest.restbindings.config.md) | Binding key for setting and injecting RestComponentConfig |
 |  [ERROR\_WRITER\_OPTIONS](./rest.restbindings.error_writer_options.md) | Binding key for setting and injecting Reject action's error handling options.<!-- -->See https://github.com/strongloop/strong-error-handler\#options for the list of available options. Please note that the flag <code>log</code> is not used by <code>@loopback/rest</code>. |
-|  [GET\_FROM\_CONTEXT](./rest.restbindings.get_from_context.md) | Binding key for setting and injecting a wrapper function for retrieving values from a given context |
 |  [HANDLER](./rest.restbindings.handler.md) | Internal binding key for http-handler |
 |  [HOST](./rest.restbindings.host.md) | Binding key for setting and injecting the host name of RestServer |
 |  [HTTPS\_OPTIONS](./rest.restbindings.https_options.md) | Binding key for HTTPS options |

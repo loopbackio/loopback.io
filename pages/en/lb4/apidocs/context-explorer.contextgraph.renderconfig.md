@@ -18,18 +18,18 @@ Create an edge for a binding to its configuration
 <b>Signature:</b>
 
 ```typescript
-protected renderConfig(parent: ICluster<string>, { binding, level, id }: ContextBinding): void;
+protected renderConfig(parent: ICluster, { binding, level, id }: ContextBinding): IEdge | undefined;
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  parent | ICluster&lt;string&gt; |  |
+|  parent | ICluster |  |
 |  { binding, level, id } | [ContextBinding](./context-explorer.contextbinding.md) |  |
 
 <b>Returns:</b>
 
-void
+IEdge \| undefined
 
 

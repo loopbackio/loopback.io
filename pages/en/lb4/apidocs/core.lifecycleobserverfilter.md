@@ -18,6 +18,6 @@ Find all life cycle observer bindings. By default, a binding tagged with `CoreTa
 <b>Signature:</b>
 
 ```typescript
-lifeCycleObserverFilter: import("@loopback/context").BindingTagFilter
+lifeCycleObserverFilter: BindingTagFilter
 ```
 

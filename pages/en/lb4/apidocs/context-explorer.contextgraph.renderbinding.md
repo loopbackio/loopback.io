@@ -18,18 +18,18 @@ Render a binding object
 <b>Signature:</b>
 
 ```typescript
-protected renderBinding(parent: ICluster<string>, { binding, id }: ContextBinding): void;
+protected renderBinding(parent: ICluster, { binding, id }: ContextBinding): INode;
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  parent | ICluster&lt;string&gt; | Parent subgraph |
+|  parent | ICluster | Parent subgraph |
 |  { binding, id } | [ContextBinding](./context-explorer.contextbinding.md) |  |
 
 <b>Returns:</b>
 
-void
+INode
 
 

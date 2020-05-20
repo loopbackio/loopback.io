@@ -11,14 +11,21 @@ permalink: /doc/en/lb4/apidocs.testlab.hostport.html
 
 [Home](./index.md) &gt; [@loopback/testlab](./testlab.md) &gt; [HostPort](./testlab.hostport.md)
 
-## HostPort type
+## HostPort interface
+
+An object that requires host and port properties
 
 <b>Signature:</b>
 
 ```typescript
-export declare type HostPort = {
-    host: string;
-    port: number;
-};
+export interface HostPort 
 ```
+
+## Properties
+
+|  Property | Type | Description |
+|  --- | --- | --- |
+|  [host](./testlab.hostport.host.md) | string |  |
+|  [port](./testlab.hostport.port.md) | number |  |
+
 

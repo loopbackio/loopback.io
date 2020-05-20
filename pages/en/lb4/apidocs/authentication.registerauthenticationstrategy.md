@@ -18,7 +18,7 @@ Registers an authentication strategy as an extension of the AuthenticationBindin
 <b>Signature:</b>
 
 ```typescript
-export declare function registerAuthenticationStrategy(context: Context, strategyClass: Constructor<AuthenticationStrategy>): import("@loopback/core").Binding<unknown>;
+export declare function registerAuthenticationStrategy(context: Context, strategyClass: Constructor<AuthenticationStrategy>): Binding<unknown>;
 ```
 
 ## Parameters
@@ -30,6 +30,6 @@ export declare function registerAuthenticationStrategy(context: Context, strateg
 
 <b>Returns:</b>
 
-import("@loopback/core").[Binding](./context.binding.md)<!-- -->&lt;unknown&gt;
+[Binding](./context.binding.md)<!-- -->&lt;unknown&gt;
 
 

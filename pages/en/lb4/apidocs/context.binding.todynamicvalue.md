@@ -18,14 +18,14 @@ Bind the key to a computed (dynamic) value.
 <b>Signature:</b>
 
 ```typescript
-toDynamicValue(factoryFn: () => ValueOrPromise<T>): this;
+toDynamicValue(factory: ValueFactory<T> | DynamicValueProviderClass<T>): this;
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  factoryFn | () =&gt; [ValueOrPromise](./context.valueorpromise.md)<!-- -->&lt;T&gt; | The factory function creating the value. Both sync and async functions are supported. |
+|  factory | [ValueFactory](./context.valuefactory.md)<!-- -->&lt;T&gt; \| [DynamicValueProviderClass](./context.dynamicvalueproviderclass.md)<!-- -->&lt;T&gt; |  |
 
 <b>Returns:</b>
 

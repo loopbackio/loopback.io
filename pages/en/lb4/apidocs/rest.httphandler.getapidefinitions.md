@@ -22,11 +22,11 @@ permalink: /doc/en/lb4/apidocs.rest.httphandler.getapidefinitions.html
 
 ```typescript
 getApiDefinitions(): {
-        [schema: string]: import("@loopback/openapi-v3").SchemaObject | import("@loopback/openapi-v3").ReferenceObject;
+        [schema: string]: SchemaObject | ReferenceObject;
     } | undefined;
 ```
 <b>Returns:</b>
 
-{ \[schema: string\]: import("@loopback/openapi-v3").SchemaObject \| import("@loopback/openapi-v3").ReferenceObject; } \| undefined
+{ \[schema: string\]: SchemaObject \| ReferenceObject; } \| undefined
 
 

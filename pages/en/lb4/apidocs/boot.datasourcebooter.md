@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.boot.datasourcebooter.html
 
 ## DataSourceBooter class
 
-A class that extends BaseArtifactBooter to boot the 'DataSource' artifact type. Discovered DataSources are bound using `app.controller()`<!-- -->.
+A class that extends BaseArtifactBooter to boot the 'DataSource' artifact type. Discovered DataSources are bound using `app.dataSource()`<!-- -->.
 
 Supported phases: configure, discover, load
 

@@ -20,6 +20,6 @@ We recommend `ctx.configure(RestExplorerBindings.COMPONENT)` to be used instead 
 <b>Signature:</b>
 
 ```typescript
-CONFIG: import("@loopback/context").BindingAddress<RestExplorerConfig>
+CONFIG: BindingAddress<RestExplorerConfig>
 ```
 

@@ -23,6 +23,6 @@ export declare class ApiConnectComponent implements Component
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [bindings](./apiconnect.apiconnectcomponent.bindings.md) |  | import("@loopback/core").[Binding](./context.binding.md)<!-- -->&lt;[ApiConnectSpecEnhancer](./apiconnect.apiconnectspecenhancer.md)<!-- -->&gt;\[\] |  |
+|  [bindings](./apiconnect.apiconnectcomponent.bindings.md) |  | [Binding](./context.binding.md)<!-- -->\[\] |  |
 
 

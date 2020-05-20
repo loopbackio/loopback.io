@@ -18,6 +18,6 @@ Binding key for method invocation logger with winston
 <b>Signature:</b>
 
 ```typescript
-WINSTON_INVOCATION_LOGGER: BindingKey<GenericInterceptor<import("@loopback/core").Context>>
+WINSTON_INVOCATION_LOGGER: BindingKey<Interceptor>
 ```
 

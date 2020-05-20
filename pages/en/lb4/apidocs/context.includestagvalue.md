@@ -18,14 +18,14 @@ Create a tag value matcher function that returns `true` if the target tag value 
 <b>Signature:</b>
 
 ```typescript
-export declare function includesTagValue(itemValue: unknown): TagValueMatcher;
+export declare function includesTagValue(...itemValues: unknown[]): TagValueMatcher;
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  itemValue | unknown | Tag item value |
+|  itemValues | unknown\[\] | A list of tag item value |
 
 <b>Returns:</b>
 

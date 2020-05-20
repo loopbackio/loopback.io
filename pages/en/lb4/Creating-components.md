@@ -36,6 +36,8 @@ export class MyComponent implements Component {
 }
 ```
 
+## Injecting the target application instance
+
 You can inject anything from the context and access them from a component. In
 the following example, the REST application instance is made available in the
 component via dependency injection.
@@ -52,6 +54,8 @@ export class MyComponent implements Component {
   }
 }
 ```
+
+## Registration of component artifacts
 
 When a component is mounted to an application, a new instance of the component
 class is created and then:
@@ -364,7 +368,7 @@ The following snippet is an abbreviated function
 {% include code-caption.html content="src/mixins/repository.mixin.ts" %}
 
 ```ts
-export function RepositoryMixin<T extends Class<any>>(superClass: T) {
+export function RepositoryMixin<T extends MixinTarget<Application>>(superClass: T) {
   return class extends superClass {
     constructor(...args: any[]) {
       super(...args);

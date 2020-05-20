@@ -18,7 +18,7 @@ Template function for middleware bindings
 <b>Signature:</b>
 
 ```typescript
-export declare function asMiddleware(options?: MiddlewareBindingOptions): BindingTemplate<Middleware>;
+export declare function asMiddleware(options?: MiddlewareBindingOptions): BindingTemplate;
 ```
 
 ## Parameters
@@ -29,6 +29,6 @@ export declare function asMiddleware(options?: MiddlewareBindingOptions): Bindin
 
 <b>Returns:</b>
 
-[BindingTemplate](./context.bindingtemplate.md)<!-- -->&lt;[Middleware](./express.middleware.md)<!-- -->&gt;
+[BindingTemplate](./context.bindingtemplate.md)
 
 

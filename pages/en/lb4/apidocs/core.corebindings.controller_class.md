@@ -18,6 +18,6 @@ Binding key for the controller class resolved in the current request context
 <b>Signature:</b>
 
 ```typescript
-CONTROLLER_CLASS: BindingKey<import("@loopback/context").Constructor<any>>
+CONTROLLER_CLASS: BindingKey<ControllerClass>
 ```
 
