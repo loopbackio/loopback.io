@@ -44,7 +44,7 @@ A Bootstrapper is needed to manage the Booters and execute them. This is provide
 
 |  Function | Description |
 |  --- | --- |
-|  [\_bindBooter(ctx, booterCls)](./boot._bindbooter.md) | Method which binds a given Booter to a given Context with the Prefix and Tags expected by the Bootstrapper |
+|  [bindBooter(ctx, booterCls)](./boot.bindbooter.md) | Method which binds a given Booter to a given Context with the Prefix and Tags expected by the Bootstrapper |
 |  [booter(artifactNamespace, specs)](./boot.booter.md) | <code>@booter</code> decorator to mark a class as a <code>Booter</code> and specify the artifact namespace for the configuration of the booter |
 |  [BootMixin(superClass)](./boot.bootmixin.md) | Mixin for @<!-- -->loopback/boot. This Mixin provides the following: - Implements the Bootable Interface as follows. - Add a <code>projectRoot</code> property to the Class - Adds an optional <code>bootOptions</code> property to the Class that can be used to store the Booter conventions. - Adds the <code>BootComponent</code> to the Class (which binds the Bootstrapper and default Booters) - Provides the <code>boot()</code> convenience method to call Bootstrapper.boot() - Provides the <code>booter()</code> convenience method to bind a Booter(s) to the Application - Override <code>component()</code> to call <code>mountComponentBooters</code> - Adds <code>mountComponentBooters</code> which binds Booters to the application from <code>component.booters[]</code> |
 |  [createBooterForComponentApplication(componentApp, filter)](./boot.createbooterforcomponentapplication.md) | Create a booter that boots the component application. Bindings that exist in the component application before <code>boot</code> are skipped. Locked bindings in the main application will not be overridden. |
@@ -59,6 +59,7 @@ A Bootstrapper is needed to manage the Booters and execute them. This is provide
 |  --- | --- |
 |  [Bootable](./boot.bootable.md) | Interface to describe the additions made available to an Application that uses BootMixin. |
 |  [Booter](./boot.booter.md) | Defines the requirements to implement a Booter for LoopBack applications: - configure() - discover() - load()<!-- -->A Booter will run through the above methods in order. |
+|  [InstanceWithBooters](./boot.instancewithbooters.md) | Interface to describe an object that may have an array of <code>booters</code>. |
 
 ## Namespaces
 
@@ -71,6 +72,7 @@ A Bootstrapper is needed to manage the Booters and execute them. This is provide
 
 |  Variable | Description |
 |  --- | --- |
+|  [\_bindBooter](./boot._bindbooter.md) |  |
 |  [bindingKeysExcludedFromSubApp](./boot.bindingkeysexcludedfromsubapp.md) | Binding keys excluded from a sub application. These bindings booted from the sub application won't be added to the main application. |
 |  [BOOTER\_PHASES](./boot.booter_phases.md) | Export of an array of all the Booter phases supported by the interface above, in the order they should be run. |
 |  [ControllerDefaults](./boot.controllerdefaults.md) | Default ArtifactOptions for ControllerBooter. |

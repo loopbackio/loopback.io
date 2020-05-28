@@ -23,6 +23,7 @@ permalink: /doc/en/lb4/apidocs.authentication-jwt.html
 |  [JWTAuthenticationStrategy](./authentication-jwt.jwtauthenticationstrategy.md) |  |
 |  [JWTService](./authentication-jwt.jwtservice.md) |  |
 |  [MyUserService](./authentication-jwt.myuserservice.md) |  |
+|  [SecuritySpecEnhancer](./authentication-jwt.securityspecenhancer.md) | A spec enhancer to add bearer token OpenAPI security entry to <code>spec.component.securitySchemes</code> |
 |  [User](./authentication-jwt.user.md) |  |
 |  [UserCredentials](./authentication-jwt.usercredentials.md) |  |
 |  [UserCredentialsRepository](./authentication-jwt.usercredentialsrepository.md) |  |

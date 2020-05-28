@@ -1,4 +1,4 @@
-﻿
+
 # loopback-connector-elastic-search
 
 [![Join the chat at https://gitter.im/strongloop-community/loopback-connector-elastic-search](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/strongloop-community/loopback-connector-elastic-search?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
@@ -16,6 +16,7 @@ Elasticsearch(versions 6.x and 7.x) datasource connector for [Loopback 3.x](http
   - [Sample for copy paste](#sample)
 
 - [Elasticsearch SearchAfter Support](#elasticsearch-searchafter-support)
+- [TotalCount Support for search](#totalcount-support-for-search)
 - [Example](#about-the-example-app)
 - [Troubleshooting](#troubleshooting)
 - [Contributing](#contributing)
@@ -209,6 +210,44 @@ npm install loopback-connector-esv6 --save --save-exact
 ```
 
 - This is useful for pagination. To go to previous page, change sorting order.
+
+## TotalCount Support for search
+
+- ```total``` value from elasticsearch for search queries is now supported in loopback response.
+- For this, you need to create a property in model called ```_total_count``` with loopback type ```"number"```. This field cannot be updated using in connector.
+- Example response ```find```.
+
+```json
+[
+  {
+    "id": "1bb2dd63-c7b9-588e-a942-15ca4f891a80",
+    "username": "test",
+    "_search_after": [
+      1580902552905
+    ],
+    "_total_count": 3,
+    "created": "2020-02-05T11:35:52.905Z"
+  },
+  {
+    "id": "fd5ea4df-f159-5816-9104-22147f2a740f",
+    "username": "test3",
+    "_search_after": [
+      1580902552901
+    ],
+    "_total_count": 3,
+    "created": "2020-02-05T11:35:52.901Z"
+  },
+  {
+    "id": "047c0adb-13ea-5f80-a772-3d2a4691d47a",
+    "username": "test4",
+    "_search_after": [
+      1580902552897
+    ],
+    "_total_count": 3,
+    "created": "2020-02-05T11:35:52.897Z"
+  }
+]
+```
 
 ## About the example app
 

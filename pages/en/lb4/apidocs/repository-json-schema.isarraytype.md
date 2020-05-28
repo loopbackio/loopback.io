@@ -18,14 +18,14 @@ Determines whether a given string or constructor is array type or not
 <b>Signature:</b>
 
 ```typescript
-export declare function isArrayType(type: string | Function): boolean;
+export declare function isArrayType(type: string | Function | PropertyType): boolean;
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  type | string \| Function | Type as string or wrapper |
+|  type | string \| Function \| [PropertyType](./repository.propertytype.md) | Type as string or wrapper |
 
 <b>Returns:</b>
 

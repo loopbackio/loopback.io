@@ -36,6 +36,10 @@ permalink: /doc/en/lb4/changelog.index.html
 - [@loopback/service-proxy](changelogs/packages/service-proxy/CHANGELOG.md)
 - [@loopback/testlab](changelogs/packages/testlab/CHANGELOG.md)
 
+### fixtures
+
+- [@loopback/mock-oauth2-provider](changelogs/fixtures/mock-oauth2-provider/CHANGELOG.md)
+
 ### extensions
 
 - [@loopback/apiconnect](changelogs/extensions/apiconnect/CHANGELOG.md)

@@ -31,7 +31,7 @@ export declare class User extends Entity
 |  --- | --- | --- | --- |
 |  [email](./authentication-jwt.user.email.md) |  | string |  |
 |  [emailVerified](./authentication-jwt.user.emailverified.md) |  | boolean |  |
-|  [id](./authentication-jwt.user.id.md) |  | number |  |
+|  [id](./authentication-jwt.user.id.md) |  | string |  |
 |  [realm](./authentication-jwt.user.realm.md) |  | string |  |
 |  [userCredentials](./authentication-jwt.user.usercredentials.md) |  | [UserCredentials](./authentication-jwt.usercredentials.md) |  |
 |  [username](./authentication-jwt.user.username.md) |  | string |  |

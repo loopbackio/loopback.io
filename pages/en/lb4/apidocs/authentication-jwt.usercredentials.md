@@ -29,8 +29,8 @@ export declare class UserCredentials extends Entity
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [id](./authentication-jwt.usercredentials.id.md) |  | number |  |
+|  [id](./authentication-jwt.usercredentials.id.md) |  | string |  |
 |  [password](./authentication-jwt.usercredentials.password.md) |  | string |  |
-|  [userId](./authentication-jwt.usercredentials.userid.md) |  | number |  |
+|  [userId](./authentication-jwt.usercredentials.userid.md) |  | string |  |
 
 

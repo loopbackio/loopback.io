@@ -16,6 +16,6 @@ permalink: /doc/en/lb4/apidocs.authentication-jwt.usercredentials.userid.html
 <b>Signature:</b>
 
 ```typescript
-userId: number;
+userId: string;
 ```
 

@@ -42,6 +42,7 @@ export declare class RestApplication extends Application implements HttpServerLi
 |  [api(spec)](./rest.restapplication.api.md) |  | Set the OpenAPI specification that defines the REST API schema for this application. All routes, parameter definitions and return types will be defined in this way.<!-- -->Note that this will override any routes defined via decorators at the controller level (this function takes precedent). |
 |  [basePath(path)](./rest.restapplication.basepath.md) |  | Configure the <code>basePath</code> for the rest server |
 |  [bodyParser(bodyParserClass, address)](./rest.restapplication.bodyparser.md) |  | Bind a body parser to the server context |
+|  [exportOpenApiSpec(outFile, log)](./rest.restapplication.exportopenapispec.md) |  | Export the OpenAPI spec to the given json or yaml file |
 |  [expressMiddleware(key, middleware, options)](./rest.restapplication.expressmiddleware.md) |  | Bind an Express middleware to this server context |
 |  [expressMiddleware(middlewareFactory, middlewareConfig, options)](./rest.restapplication.expressmiddleware_1.md) |  | Bind an Express middleware to this server context |
 |  [handler(handlerFn)](./rest.restapplication.handler.md) |  |  |

@@ -161,6 +161,7 @@ This module provides data access facilities to various databases and services as
 |  [PropertyForm](./repository.propertyform.md) | See https://github.com/strongloop/loopback-datasource-juggler/issues/432 |
 |  [RelationDefinitionBase](./repository.relationdefinitionbase.md) |  |
 |  [Repository](./repository.repository.md) |  |
+|  [RepositoryComponent](./repository.repositorycomponent.md) | This interface describes additional Component properties allowing components to contribute Repository-related artifacts. |
 |  [SchemaMigrationOptions](./repository.schemamigrationoptions.md) |  |
 |  [Transaction](./repository.transaction.md) | Local transaction |
 |  [TransactionalRepository](./repository.transactionalrepository.md) | Repository Interface for Repositories that support Transactions |

@@ -11,25 +11,11 @@ permalink: /doc/en/lb4/apidocs.boot._bindbooter.html
 
 [Home](./index.md) &gt; [@loopback/boot](./boot.md) &gt; [\_bindBooter](./boot._bindbooter.md)
 
-## \_bindBooter() function
-
-Method which binds a given Booter to a given Context with the Prefix and Tags expected by the Bootstrapper
+## \_bindBooter variable
 
 <b>Signature:</b>
 
 ```typescript
-export declare function _bindBooter(ctx: Context, booterCls: Constructor<Booter>): Binding;
+_bindBooter: typeof bindBooter
 ```
-
-## Parameters
-
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  ctx | [Context](./context.context.md) | The Context to bind the Booter Class |
-|  booterCls | [Constructor](./context.constructor.md)<!-- -->&lt;[Booter](./boot.booter.md)<!-- -->&gt; | Booter class to be bound |
-
-<b>Returns:</b>
-
-[Binding](./context.binding.md)
-
 
