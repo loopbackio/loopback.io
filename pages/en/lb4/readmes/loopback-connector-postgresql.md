@@ -392,7 +392,7 @@ For example:
 To learn more about specifying database settings, please check the section [Data Mapping Properties](https://loopback.io/doc/en/lb4/Model.html#data-mapping-properties).
 
 ## Type mapping
-
+<!-- TODO <agnes>: update the link with lb4 version once it's done -->
 See [LoopBack types](http://loopback.io/doc/en/lb3/LoopBack-types.html) for details on LoopBack's data types.
 
 ### LoopBack to PostgreSQL types
@@ -554,7 +554,7 @@ export class Customer extends Entity {
   @property({
     id: true,
     type: 'Number',
-    required: false
+    generated: true
   })
   id: number;
 
@@ -582,7 +582,7 @@ export class Customer extends Entity {
   @property({
     id: true,
     type: 'Number',
-    required: false
+    generated: true
   })
   id: number;
 
@@ -625,7 +625,7 @@ export class Customer extends Entity {
   @property({
     id: true,
     type: 'Number',
-    required: false
+    generated: true
   })
   id: number;
 
@@ -654,7 +654,7 @@ export class Order extends Entity {
   @property({
     id: true,
     type: 'Number',
-    required: false
+    generated: true
   })
   id: number;
 
