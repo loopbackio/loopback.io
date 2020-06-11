@@ -268,7 +268,17 @@ The `positional` setting allows a method to be invoked with positional parameter
 parameters/requestBody of the OpenAPI operation spec.
 
 ```js
-const result = await MyModel.my_operation('94555', {});
+const result = await MyModel.my_operation(
+  // Parameters
+  '94555',
+  // Request body
+  {
+    verbose: true
+  },
+  // Additional options
+  {
+    requestContentType: 'application/json'
+  });
 });
 ```
 
@@ -280,7 +290,8 @@ const result = await MyModel.my_operation({
     zipCode: '94555',
   },
   {
-    requestBody: {}
+    requestBody: {verbose: true},
+    requestContentType: 'application/json'
   }
 });
 ```
