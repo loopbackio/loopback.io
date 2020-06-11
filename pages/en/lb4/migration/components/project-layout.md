@@ -1,7 +1,9 @@
 ---
 lang: en
 title: 'Migrating component project layout'
-keywords: LoopBack 4, LoopBack 3, Migration, Extensions, Components
+keywords:
+  LoopBack 4, LoopBack 3, Node.js, TypeScript, OpenAPI, Migration, Extensions,
+  Components
 sidebar: lb4_sidebar
 permalink: /doc/en/lb4/migration-extensions-project-layout.html
 ---
@@ -57,7 +59,7 @@ The component class is usually implemented inside
 
 ```ts
 import {Application, Component, CoreBindings} from '@loopback/core';
-import {bind, config, ContextTags, inject} from '@loopback/context';
+import {bind, config, ContextTags, inject} from '@loopback/core';
 import {MetricsBindings} from './keys';
 import {DEFAULT_METRICS_OPTIONS, MetricsOptions} from './types';
 

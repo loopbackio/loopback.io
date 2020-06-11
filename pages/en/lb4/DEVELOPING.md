@@ -1,7 +1,9 @@
 ---
 lang: en
 title: 'Contributing code in LoopBack 4'
-keywords: LoopBack 4.0, contributing, community
+keywords:
+  LoopBack 4.0, LoopBack 4, Node.js, TypeScript, OpenAPI, contributing,
+  community
 sidebar: lb4_sidebar
 permalink: /doc/en/lb4/code-contrib-lb4.html
 toc: false
@@ -284,6 +286,69 @@ LoopBack 4 documentation is hosted inside this monorepo in the
 This allows us to change both implementation and the documentation in a single
 pull request.
 
+### Organization of content
+
+LoopBack 4 has a highly modular design, the codebase is organized into dozens of
+packages. This arrangement provides great flexibility for package consumers,
+supporting many different ways how to compose individual packages into larger
+blocks. However, the growing number of packages also increases the complexity
+for LoopBack users, as they need to know which packages to choose and how to use
+them. As a result, the learning curve becomes very steep for new developers
+coming to LoopBack. Newcomers get quickly overwhelmed by the amount of concepts
+they need to understand and the different packages they need to know about.
+
+To prevent cognitive overload, we have categorized all monorepo packages into
+two groups:
+
+1. Foundation-level packages are lower-level packages that are typically not
+   consumed by LoopBack applications directly. Instead, there are higher-level
+   packages exposing the functionality and/or the public API of these building
+   blocks.
+
+   Examples:
+
+   - `@loopback/core` is re-exporting all public API provided by
+     `@loopback/context`.
+
+   - `@loopback/rest` is internally using `@loopback/http-server` to manage the
+     life cycle of an HTTP server.
+
+2. Framework-level packages are used directly by LoopBack applications and
+   provide API that LoopBack consumers use.
+
+The rule of thumb: a lower-level package is considered as foundation-level if
+
+- a higher-level package is re-exporting all public APIs of the lower-level
+  package (e.g. `@loopback/core` re-exports `@loopback/context`); or
+
+- another package is using the lower-level package as a implementation building
+  block (e.g. `@loopback/rest` uses `@loopback/express`).
+
+In our documentation, CLI templates and example applications, you should always
+refer to framework-level packages.
+
+Foundation-level packages should have their own documentation describing how to
+use the package independently of LoopBack, for example in their `README.md` file
+or in a dedicated section of [loopback.io](https://loopback.io).
+
+#### Foundation-level packages
+
+List of packages that are considered as building blocks:
+
+- [packages/context](https://github.com/strongloop/loopback-next/tree/master/packages/context)
+- [packages/express](https://github.com/strongloop/loopback-next/tree/master/packages/express)
+- [packages/http-server](https://github.com/strongloop/loopback-next/tree/master/packages/http-server)
+- [packages/metadata](https://github.com/strongloop/loopback-next/tree/master/packages/metadata)
+- [packages/openapi-v3](https://github.com/strongloop/loopback-next/tree/master/packages/openapi-v3)
+- [packages/repository-json-schema](https://github.com/strongloop/loopback-next/tree/master/packages/repository-json-schema)
+
+#### Framework-level packages
+
+All packages not listed above are considered as framework-level.
+
+We consider utilities like `@loopback/testlab` and example projects like
+`@loopback/todo` as framework-level too.
+
 ### Publishing changes
 
 To prevent documentation changes going live before the changes in the
@@ -495,7 +560,8 @@ However, we do recognize that often a breaking change is the most sensible thing
 to do. When that time comes:
 
 - Describe incompatibilites for release notes
-- Look for more breaking changes to include in the release
+- Look for more breaking changes to include in the release: search for comments
+  containing `TODO(semver-major)` and `@deprecated`.
 - Update list of supported versions
 
 ### Describe incompatibilites for release notes
@@ -614,8 +680,10 @@ and falls back to `extensions`.
 
 6. Run `update-ts-project-refs` to update TypeScript project references
 
-7. Remind to update `CODEOWNERS` and `docs/site/MONOREPO.md` If you would like
-   to do it manually, follow steps below:
+7. Run `update-monorepo-file` to update `docs/site/MONOREPO.md`
+
+8. Remind to update `CODEOWNERS`. If you would like to do it manually, follow
+   steps below:
 
 To add a new package by hand, create a folder in
 [`packages`](https://github.com/strongloop/loopback-next/tree/master/packages)

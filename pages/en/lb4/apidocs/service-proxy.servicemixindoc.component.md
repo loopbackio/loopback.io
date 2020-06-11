@@ -1,7 +1,7 @@
 ---
 lang: en
 title: 'API docs: service-proxy.servicemixindoc.component'
-keywords: LoopBack 4.0, LoopBack 4
+keywords: LoopBack 4.0, LoopBack 4, Node.js, TypeScript, OpenAPI
 sidebar: lb4_sidebar
 editurl: https://github.com/strongloop/loopback-next/tree/master/packages/service-proxy
 permalink: /doc/en/lb4/apidocs.service-proxy.servicemixindoc.component.html
@@ -18,14 +18,14 @@ Add a component to this application. Also mounts all the components services.
 <b>Signature:</b>
 
 ```typescript
-component(component: Class<unknown>): Binding;
+component(component: Constructor<unknown>): Binding;
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  component | [Class](./service-proxy.class.md)<!-- -->&lt;unknown&gt; | The component to add. |
+|  component | [Constructor](./context.constructor.md)<!-- -->&lt;unknown&gt; | The component to add. |
 
 <b>Returns:</b>
 

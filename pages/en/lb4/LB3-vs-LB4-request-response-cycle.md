@@ -1,7 +1,9 @@
 ---
 lang: en
 title: 'Differences in LoopBack 3 and LoopBack 4 request/response cycle'
-keywords: LoopBack 4.0, LoopBack 4, LoopBack 3.0, LoopBack 3
+keywords:
+  LoopBack 4.0, LoopBack 4, Node.js, TypeScript, OpenAPI, LoopBack 3.0, LoopBack
+  3
 sidebar: lb4_sidebar
 permalink: /doc/en/lb4/LB3-vs-LB4-request-response-cycle.html
 ---
@@ -331,7 +333,7 @@ available to them via [dependency injection](./Dependency-injection.md).
 Example of accesssing the request and response object in a Controller:
 
 ```ts
-import {inject} from '@loopback/context';
+import {inject} from '@loopback/core';
 import {Request, Response, RestBindings, get} from '@loopback/rest';
 
 export class ExampleController {

@@ -1,7 +1,7 @@
 ---
 lang: en
 title: 'Dependency injection'
-keywords: LoopBack 4.0, LoopBack 4
+keywords: LoopBack 4.0, LoopBack 4, Node.js, TypeScript, OpenAPI
 sidebar: lb4_sidebar
 permalink: /doc/en/lb4/core-tutorial-part4.html
 ---
@@ -33,7 +33,7 @@ locating the dependent artifacts. For example:
 2. Use `ServiceLocator` pattern
 
    ```ts
-   import {Context} from '@loopback/context';
+   import {Context} from '@loopback/core';
    import {EnglishGreeter, ChineseGreeter} from './greeters';
    export class GreetingService {
      private chineseGreeter: ChineseGreeter;
@@ -58,7 +58,7 @@ locating the dependent artifacts. For example:
    This technique is being used commonly within the LoopBack framework.
 
    ```ts
-   import {inject} from '@loopback/context';
+   import {inject} from '@loopback/core';
    import {LifeCycleObserver} from '@loopback/core';
    import {CachingService} from '../caching-service';
    import {CACHING_SERVICE} from '../keys';

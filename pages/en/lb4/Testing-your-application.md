@@ -1,7 +1,9 @@
 ---
 lang: en
 title: 'Testing your application'
-keywords: LoopBack 4.0, LoopBack 4
+keywords:
+  LoopBack 4.0, LoopBack 4, Node.js, TypeScript, OpenAPI, Node.js, TypeScript,
+  OpenAPI
 sidebar: lb4_sidebar
 permalink: /doc/en/lb4/Testing-your-application.html
 ---
@@ -144,7 +146,7 @@ belongs to Category, include it in the repository call, for example:
 {% include code-caption.html content="src/__tests__/helpers/database.helpers.ts" %}
 
 ```ts
-import {Getter} from '@loopback/context';
+import {Getter} from '@loopback/core';
 import {ProductRepository, CategoryRepository} from '../../repositories';
 import {testdb} from '../fixtures/datasources/testdb.datasource';
 

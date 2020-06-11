@@ -1,7 +1,7 @@
 ---
 lang: en
 title: 'API docs: context.uuid'
-keywords: LoopBack 4.0, LoopBack 4
+keywords: LoopBack 4.0, LoopBack 4, Node.js, TypeScript, OpenAPI
 sidebar: lb4_sidebar
 editurl: https://github.com/strongloop/loopback-next/tree/master/packages/context
 permalink: /doc/en/lb4/apidocs.context.uuid.html
@@ -12,6 +12,11 @@ permalink: /doc/en/lb4/apidocs.context.uuid.html
 [Home](./index.md) &gt; [@loopback/context](./context.md) &gt; [uuid](./context.uuid.md)
 
 ## uuid() function
+
+> Warning: This API is now obsolete.
+> 
+> Use \[uuid\](https://www.npmjs.com/package/uuid) or \[hyperid\](https://www.npmjs.com/package/hyperid) instead.
+> 
 
 A utility to generate uuid v4
 

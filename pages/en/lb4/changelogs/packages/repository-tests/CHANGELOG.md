@@ -1,7 +1,7 @@
 ---
 lang: en
 title: 'CHANGELOG - @loopback/repository-tests'
-keywords: LoopBack 4.0, LoopBack 4, CHANGELOG
+keywords: LoopBack 4.0, LoopBack 4, Node.js, TypeScript, OpenAPI, Node.js, TypeScript, OpenAPI, CHANGELOG
 sidebar: lb4_sidebar
 toc_level: 0
 editurl: https://github.com/strongloop/loopback-next/blob/master/packages/repository-tests/CHANGELOG.md
@@ -12,6 +12,14 @@ permalink: /doc/en/lb4/changelog.repository-tests.html
 
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+## [0.12.6](https://github.com/strongloop/loopback-next/compare/@loopback/repository-tests@0.12.5...@loopback/repository-tests@0.12.6) (2020-05-28)
+
+**Note:** Version bump only for package @loopback/repository-tests
+
+
+
+
 
 ## [0.12.5](https://github.com/strongloop/loopback-next/compare/@loopback/repository-tests@0.12.4...@loopback/repository-tests@0.12.5) (2020-05-20)
 

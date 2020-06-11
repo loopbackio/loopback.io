@@ -1,7 +1,7 @@
 ---
 lang: en
 title: 'API docs: service-proxy.applicationwithservices.serviceprovider'
-keywords: LoopBack 4.0, LoopBack 4
+keywords: LoopBack 4.0, LoopBack 4, Node.js, TypeScript, OpenAPI
 sidebar: lb4_sidebar
 editurl: https://github.com/strongloop/loopback-next/tree/master/packages/service-proxy
 permalink: /doc/en/lb4/apidocs.service-proxy.applicationwithservices.serviceprovider.html
@@ -16,14 +16,14 @@ permalink: /doc/en/lb4/apidocs.service-proxy.applicationwithservices.serviceprov
 <b>Signature:</b>
 
 ```typescript
-serviceProvider<S>(provider: Class<Provider<S>>, name?: string): Binding<S>;
+serviceProvider<S>(provider: Constructor<Provider<S>>, name?: string): Binding<S>;
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  provider | [Class](./service-proxy.class.md)<!-- -->&lt;[Provider](./context.provider.md)<!-- -->&lt;S&gt;&gt; |  |
+|  provider | [Constructor](./context.constructor.md)<!-- -->&lt;[Provider](./context.provider.md)<!-- -->&lt;S&gt;&gt; |  |
 |  name | string |  |
 
 <b>Returns:</b>

@@ -1,7 +1,8 @@
 ---
 lang: en
 title: 'Middleware'
-keywords: LoopBack 4.0, LoopBack 4, Express, Middleware
+keywords:
+  LoopBack 4.0, LoopBack 4, Node.js, TypeScript, OpenAPI, Express, Middleware
 sidebar: lb4_sidebar
 permalink: /doc/en/lb4/Middleware.html
 ---
@@ -70,8 +71,8 @@ work with the `MiddlewareContext` - a wrapper object for `request` and
 `response`. The signature is of `Middleware` is:
 
 ```ts
-import {MiddlewareContext} from '@loopback/express';
-import {Next, ValueOrPromise, InvocationResult} from '@loopback/context';
+import {MiddlewareContext} from '@loopback/rest';
+import {Next, ValueOrPromise, InvocationResult} from '@loopback/core';
 
 (context: MiddlewareContext, next: Next) => ValueOrPromise<InvocationResult>;
 ```

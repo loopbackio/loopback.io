@@ -1,7 +1,7 @@
 ---
 lang: en
 title: 'CHANGELOG - @loopback/rest-explorer'
-keywords: LoopBack 4.0, LoopBack 4, CHANGELOG
+keywords: LoopBack 4.0, LoopBack 4, Node.js, TypeScript, OpenAPI, Node.js, TypeScript, OpenAPI, CHANGELOG
 sidebar: lb4_sidebar
 toc_level: 0
 editurl: https://github.com/strongloop/loopback-next/blob/master/packages/rest-explorer/CHANGELOG.md
@@ -12,6 +12,14 @@ permalink: /doc/en/lb4/changelog.rest-explorer.html
 
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+## [2.2.3](https://github.com/strongloop/loopback-next/compare/@loopback/rest-explorer@2.2.2...@loopback/rest-explorer@2.2.3) (2020-05-28)
+
+**Note:** Version bump only for package @loopback/rest-explorer
+
+
+
+
 
 ## [2.2.2](https://github.com/strongloop/loopback-next/compare/@loopback/rest-explorer@2.2.1...@loopback/rest-explorer@2.2.2) (2020-05-20)
 

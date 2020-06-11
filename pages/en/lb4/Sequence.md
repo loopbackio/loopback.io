@@ -1,7 +1,7 @@
 ---
 lang: en
 title: 'Sequence'
-keywords: LoopBack 4.0, LoopBack 4
+keywords: LoopBack 4.0, LoopBack 4, Node.js, TypeScript, OpenAPI
 sidebar: lb4_sidebar
 permalink: /doc/en/lb4/Sequence.html
 ---
@@ -204,7 +204,7 @@ function upon injection.
 
 ```ts
 import {Send, Response} from '@loopback/rest';
-import {Provider, BoundValue, inject} from '@loopback/context';
+import {Provider, BoundValue, inject} from '@loopback/core';
 import {writeResultToResponse, RestBindings, Request} from '@loopback/rest';
 
 // Note: This is an example class; we do not provide this for you.
@@ -264,7 +264,7 @@ import {
 } from '@loopback/repository';
 import {CustomSendProvider} from './providers/custom-send.provider';
 import {Formatter} from './utils';
-import {BindingScope} from '@loopback/context';
+import {BindingScope} from '@loopback/core';
 
 export class YourApp extends RepositoryMixin(RestApplication) {
   constructor() {
@@ -356,8 +356,8 @@ default implementation of
 [invoke](https://github.com/strongloop/loopback-next/blob/6bafa0774662991199090219913c3dc77ad5b149/packages/rest/src/providers/invoke-method.provider.ts)
 action calls the handler function for the route with the request specific
 context and the arguments for the function. It is important to note that
-controller methods use `invokeMethod` from `@loopback/context` and can be used
-with global and custom interceptors. See
+controller methods use `invokeMethod` from `@loopback/core` and can be used with
+global and custom interceptors. See
 [Interceptor docs](Interceptors.md#use-invokemethod-to-apply-interceptors) for
 more details. The request flow for two route flavours is explained below.
 

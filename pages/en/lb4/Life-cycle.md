@@ -1,7 +1,7 @@
 ---
 lang: en
 title: 'Life cycle events and observers'
-keywords: LoopBack 4.0, LoopBack 4
+keywords: LoopBack 4.0, LoopBack 4, Node.js, TypeScript, OpenAPI
 sidebar: lb4_sidebar
 permalink: /doc/en/lb4/Life-cycle.html
 ---
@@ -150,7 +150,7 @@ To react on life cycle events, a life cycle observer implements the
 `LifeCycleObserver` interface.
 
 ```ts
-import {ValueOrPromise} from '@loopback/context';
+import {ValueOrPromise} from '@loopback/core';
 
 /**
  * Observers to handle life cycle start/stop events
@@ -236,7 +236,7 @@ The observer class can also be decorated with `@bind` to provide binding
 metadata.
 
 ```ts
-import {bind, createBindingFromClass} from '@loopback/context';
+import {bind, createBindingFromClass} from '@loopback/core';
 import {CoreTags, asLifeCycleObserver} from '@loopback/core';
 
 @bind(
@@ -257,7 +257,7 @@ app.add(createBindingFromClass(MyObserver));
 Or even simpler with `@lifeCycleObserver`:
 
 ```ts
-import {createBindingFromClass} from '@loopback/context';
+import {createBindingFromClass} from '@loopback/core';
 import {lifeCycleObserver} from '@loopback/core';
 
 @lifeCycleObserver('g1')

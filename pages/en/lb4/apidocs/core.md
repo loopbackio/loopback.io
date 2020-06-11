@@ -1,7 +1,7 @@
 ---
 lang: en
 title: 'API docs: core'
-keywords: LoopBack 4.0, LoopBack 4
+keywords: LoopBack 4.0, LoopBack 4, Node.js, TypeScript, OpenAPI
 sidebar: lb4_sidebar
 editurl: https://github.com/strongloop/loopback-next/tree/master/packages/core
 permalink: /doc/en/lb4/apidocs.core.html
@@ -82,6 +82,7 @@ For examples of how to leverage `@loopback/core` to build composable and extensi
 |  [LifeCycleObserverOptions](./core.lifecycleobserveroptions.md) |  |
 |  [MixinTarget](./core.mixintarget.md) | A replacement for <code>typeof Target</code> to be used in mixin class definitions. This is a workaround for TypeScript limitation described in - https://github.com/microsoft/TypeScript/issues/17293 - https://github.com/microsoft/TypeScript/issues/17744 - https://github.com/microsoft/TypeScript/issues/36060 |
 |  [ServiceInterface](./core.serviceinterface.md) | Representing an interface for services. In TypeScript, the <code>interface</code> does not have reflections at runtime. We use a string, a symbol or a Function as the type for the service interface. |
+|  [ServiceOrProviderClass](./core.serviceorproviderclass.md) |  |
 |  [ShutdownOptions](./core.shutdownoptions.md) | Options to set up application shutdown |
 
 

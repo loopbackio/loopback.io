@@ -1,7 +1,7 @@
 ---
 lang: en
 title: 'API docs: core.mixintarget'
-keywords: LoopBack 4.0, LoopBack 4
+keywords: LoopBack 4.0, LoopBack 4, Node.js, TypeScript, OpenAPI
 sidebar: lb4_sidebar
 editurl: https://github.com/strongloop/loopback-next/tree/master/packages/core
 permalink: /doc/en/lb4/apidocs.core.mixintarget.html
@@ -37,6 +37,7 @@ export function MyMixin<T extends MixinTarget<Application>>(superClass: T) {
 TypeScript does not allow class mixins to access protected members from the base class. You can use the following approach as a workaround:
 
 ```ts
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
 (this as unknown as {YourBaseClass}).protectedMember
 

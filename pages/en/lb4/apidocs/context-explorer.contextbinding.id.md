@@ -1,7 +1,7 @@
 ---
 lang: en
 title: 'API docs: context-explorer.contextbinding.id'
-keywords: LoopBack 4.0, LoopBack 4
+keywords: LoopBack 4.0, LoopBack 4, Node.js, TypeScript, OpenAPI
 sidebar: lb4_sidebar
 editurl: https://github.com/strongloop/loopback-next/tree/master/extensions/context-explorer
 permalink: /doc/en/lb4/apidocs.context-explorer.contextbinding.id.html

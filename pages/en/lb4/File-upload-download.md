@@ -1,7 +1,8 @@
 ---
 lang: en
 title: 'Upload and download files'
-keywords: LoopBack 4.0, LoopBack-Next
+keywords:
+  LoopBack 4.0, LoopBack 4, Node.js, TypeScript, OpenAPI, File Upload Download
 sidebar: lb4_sidebar
 permalink: /doc/en/lb4/File-upload-download.html
 ---
@@ -25,7 +26,7 @@ A few steps are involved to create an endpoint for file upload.
    [`FileUploadController`](https://github.com/strongloop/loopback-next/blob/master/examples/file-transfer/src/controllers/file-upload.controller.ts)
 
 ```ts
-import {inject} from '@loopback/context';
+import {inject} from '@loopback/core';
 import {
   post,
   Request,
@@ -110,7 +111,7 @@ To download files from the backend, please follow the following steps.
    [`FileDownloadController`](https://github.com/strongloop/loopback-next/blob/master/examples/file-transfer/src/controllers/file-download.controller.ts)
 
 ```ts
-import {inject} from '@loopback/context';
+import {inject} from '@loopback/core';
 import {
   get,
   HttpErrors,

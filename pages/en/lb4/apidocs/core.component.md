@@ -1,7 +1,7 @@
 ---
 lang: en
 title: 'API docs: core.component'
-keywords: LoopBack 4.0, LoopBack 4
+keywords: LoopBack 4.0, LoopBack 4, Node.js, TypeScript, OpenAPI
 sidebar: lb4_sidebar
 editurl: https://github.com/strongloop/loopback-next/tree/master/packages/core
 permalink: /doc/en/lb4/apidocs.core.component.html
@@ -31,5 +31,6 @@ export interface Component
 |  [lifeCycleObservers](./core.component.lifecycleobservers.md) | [Constructor](./context.constructor.md)<!-- -->&lt;[LifeCycleObserver](./core.lifecycleobserver.md)<!-- -->&gt;\[\] |  |
 |  [providers](./core.component.providers.md) | [ProviderMap](./core.providermap.md) | A map of providers to be bound to the application context |
 |  [servers](./core.component.servers.md) | { \[name: string\]: [Constructor](./context.constructor.md)<!-- -->&lt;[Server](./core.server.md)<!-- -->&gt;; } | A map of name/class pairs for servers |
+|  [services](./core.component.services.md) | [ServiceOrProviderClass](./core.serviceorproviderclass.md)<!-- -->\[\] | An array of service or provider classes |
 
 

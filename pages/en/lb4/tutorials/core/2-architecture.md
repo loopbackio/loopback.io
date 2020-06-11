@@ -1,7 +1,7 @@
 ---
 lang: en
 title: 'Architectural challenges'
-keywords: LoopBack 4.0, LoopBack 4
+keywords: LoopBack 4.0, LoopBack 4, Node.js, TypeScript, OpenAPI
 sidebar: lb4_sidebar
 permalink: /doc/en/lb4/core-tutorial-part2.html
 ---
@@ -54,13 +54,16 @@ LoopBack 4 core is an open source TypeScript platform for Node.js, specializing
 in building large scale applications with great flexibility, composability, and
 extensibility.
 
-The following key modules are used by the LoopBack framework to offer API and
-Microservice capabilities. They can be used independently as a base platform to
-build large scale applications in TypeScript and Node.js.
+The module [@loopback/core](https://www.npmjs.com/package/@loopback/core) is
+used by the LoopBack framework to offer API and Microservice capabilities.
+
+It builds on top of the following lower-level modules:
 
 - [@loopback/metadata](https://www.npmjs.com/package/@loopback/metadata)
 - [@loopback/context](https://www.npmjs.com/package/@loopback/context)
-- [@loopback/core](https://www.npmjs.com/package/@loopback/core)
+
+Any of these three modules can be used independently as a base platform to build
+large scale applications in TypeScript and Node.js.
 
 ## Design goals
 

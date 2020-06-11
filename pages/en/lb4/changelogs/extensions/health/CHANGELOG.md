@@ -1,7 +1,7 @@
 ---
 lang: en
 title: 'CHANGELOG - @loopback/extension-health'
-keywords: LoopBack 4.0, LoopBack 4, CHANGELOG
+keywords: LoopBack 4.0, LoopBack 4, Node.js, TypeScript, OpenAPI, Node.js, TypeScript, OpenAPI, CHANGELOG
 sidebar: lb4_sidebar
 toc_level: 0
 editurl: https://github.com/strongloop/loopback-next/blob/master/extensions/health/CHANGELOG.md
@@ -12,6 +12,14 @@ permalink: /doc/en/lb4/changelog.extension-health.html
 
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+## [0.4.6](https://github.com/strongloop/loopback-next/compare/@loopback/extension-health@0.4.5...@loopback/extension-health@0.4.6) (2020-05-28)
+
+**Note:** Version bump only for package @loopback/extension-health
+
+
+
+
 
 ## [0.4.5](https://github.com/strongloop/loopback-next/compare/@loopback/extension-health@0.4.4...@loopback/extension-health@0.4.5) (2020-05-20)
 

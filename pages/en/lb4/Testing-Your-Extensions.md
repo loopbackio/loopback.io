@@ -1,7 +1,7 @@
 ---
 lang: en
 title: 'Testing your extension'
-keywords: LoopBack 4.0, LoopBack 4
+keywords: LoopBack 4.0, LoopBack 4, Node.js, TypeScript, OpenAPI
 sidebar: lb4_sidebar
 permalink: /doc/en/lb4/Testing-your-extension.html
 ---
@@ -183,7 +183,7 @@ using a test double for any constructor arguments.
 {% include code-caption.html content="src/providers/random-number.provider.ts" %}
 
 ```ts
-import {Provider} from '@loopback/context';
+import {Provider} from '@loopback/core';
 
 export class RandomNumberProvider implements Provider<number> {
   value() {
@@ -233,7 +233,7 @@ class. Following is an example for an integration test for a Mixin:
 {% include code-caption.html content="src/mixins/time.mixin.ts" %}
 
 ```ts
-import {Constructor} from '@loopback/context';
+import {Constructor} from '@loopback/core';
 export function TimeMixin<T extends MixinTarget<object>>(superClass: T) {
   return class extends superClass {
     constructor(...args: any[]) {

@@ -1,7 +1,7 @@
 ---
 lang: en
 title: 'API docs: context.context._constructor_'
-keywords: LoopBack 4.0, LoopBack 4
+keywords: LoopBack 4.0, LoopBack 4, Node.js, TypeScript, OpenAPI
 sidebar: lb4_sidebar
 editurl: https://github.com/strongloop/loopback-next/tree/master/packages/context
 permalink: /doc/en/lb4/apidocs.context.context._constructor_.html
@@ -26,7 +26,7 @@ constructor(_parent?: Context | string, name?: string);
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  \_parent | [Context](./context.context.md) \| string | The optional parent context |
-|  name | string | Name of the context, if not provided, a <code>uuid</code> will be generated as the name |
+|  name | string | Name of the context. If not provided, a unique identifier will be generated as the name. |
 
 ## Example
 

@@ -1,7 +1,7 @@
 ---
 lang: en
 title: 'API docs: security.typedprincipal._constructor_'
-keywords: LoopBack 4.0, LoopBack 4
+keywords: LoopBack 4.0, LoopBack 4, Node.js, TypeScript, OpenAPI
 sidebar: lb4_sidebar
 editurl: https://github.com/strongloop/loopback-next/tree/master/packages/security
 permalink: /doc/en/lb4/apidocs.security.typedprincipal._constructor_.html

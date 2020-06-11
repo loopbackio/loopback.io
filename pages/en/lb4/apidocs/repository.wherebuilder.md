@@ -1,7 +1,7 @@
 ---
 lang: en
 title: 'API docs: repository.wherebuilder'
-keywords: LoopBack 4.0, LoopBack 4
+keywords: LoopBack 4.0, LoopBack 4, Node.js, TypeScript, OpenAPI
 sidebar: lb4_sidebar
 editurl: https://github.com/strongloop/loopback-next/tree/master/packages/repository
 permalink: /doc/en/lb4/apidocs.repository.wherebuilder.html
@@ -59,12 +59,17 @@ const where = whereBuilder
 |  [exists(key, val)](./repository.wherebuilder.exists.md) |  | Add a <code>exists</code> condition |
 |  [gt(key, val)](./repository.wherebuilder.gt.md) |  | Add a <code>&gt;</code> condition |
 |  [gte(key, val)](./repository.wherebuilder.gte.md) |  | Add a <code>&gt;=</code> condition |
+|  [ilike(key, val)](./repository.wherebuilder.ilike.md) |  | Add a <code>ilike</code> condition |
 |  [impose(where)](./repository.wherebuilder.impose.md) |  | Add a where object. For conflicting keys with the existing where object, create an <code>and</code> clause. |
 |  [inq(key, val)](./repository.wherebuilder.inq.md) |  | Add a <code>inq</code> condition |
+|  [like(key, val)](./repository.wherebuilder.like.md) |  | Add a <code>like</code> condition |
 |  [lt(key, val)](./repository.wherebuilder.lt.md) |  | Add a <code>&lt;</code> condition |
 |  [lte(key, val)](./repository.wherebuilder.lte.md) |  | Add a <code>&lt;=</code> condition |
 |  [neq(key, val)](./repository.wherebuilder.neq.md) |  | Add a <code>!=</code> condition |
+|  [nilike(key, val)](./repository.wherebuilder.nilike.md) |  | Add a <code>nilike</code> condition |
 |  [nin(key, val)](./repository.wherebuilder.nin.md) |  | Add a <code>nin</code> condition |
+|  [nlike(key, val)](./repository.wherebuilder.nlike.md) |  | Add a <code>nlike</code> condition |
 |  [or(w)](./repository.wherebuilder.or.md) |  | Add an <code>or</code> clause. |
+|  [regexp(key, val)](./repository.wherebuilder.regexp.md) |  | Add a <code>regexp</code> condition |
 
 

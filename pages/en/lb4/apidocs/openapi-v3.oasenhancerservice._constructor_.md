@@ -1,7 +1,7 @@
 ---
 lang: en
 title: 'API docs: openapi-v3.oasenhancerservice._constructor_'
-keywords: LoopBack 4.0, LoopBack 4
+keywords: LoopBack 4.0, LoopBack 4, Node.js, TypeScript, OpenAPI
 sidebar: lb4_sidebar
 editurl: https://github.com/strongloop/loopback-next/tree/master/packages/openapi-v3
 permalink: /doc/en/lb4/apidocs.openapi-v3.oasenhancerservice._constructor_.html

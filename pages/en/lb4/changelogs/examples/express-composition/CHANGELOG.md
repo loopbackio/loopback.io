@@ -1,7 +1,7 @@
 ---
 lang: en
 title: 'CHANGELOG - @loopback/example-express-composition'
-keywords: LoopBack 4.0, LoopBack 4, CHANGELOG
+keywords: LoopBack 4.0, LoopBack 4, Node.js, TypeScript, OpenAPI, Node.js, TypeScript, OpenAPI, CHANGELOG
 sidebar: lb4_sidebar
 toc_level: 0
 editurl: https://github.com/strongloop/loopback-next/blob/master/examples/express-composition/CHANGELOG.md
@@ -12,6 +12,14 @@ permalink: /doc/en/lb4/changelog.example-express-composition.html
 
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+## [2.2.2](https://github.com/strongloop/loopback-next/compare/@loopback/example-express-composition@2.2.1...@loopback/example-express-composition@2.2.2) (2020-05-28)
+
+**Note:** Version bump only for package @loopback/example-express-composition
+
+
+
+
 
 ## [2.2.1](https://github.com/strongloop/loopback-next/compare/@loopback/example-express-composition@2.2.0...@loopback/example-express-composition@2.2.1) (2020-05-20)
 

@@ -1,7 +1,7 @@
 ---
 lang: en
 title: 'API docs: repository'
-keywords: LoopBack 4.0, LoopBack 4
+keywords: LoopBack 4.0, LoopBack 4, Node.js, TypeScript, OpenAPI
 sidebar: lb4_sidebar
 editurl: https://github.com/strongloop/loopback-next/tree/master/packages/repository
 permalink: /doc/en/lb4/apidocs.repository.html
@@ -34,6 +34,7 @@ This module provides data access facilities to various databases and services as
 |  [DefaultBelongsToRepository](./repository.defaultbelongstorepository.md) |  |
 |  [DefaultCrudRepository](./repository.defaultcrudrepository.md) | Default implementation of CRUD repository using legacy juggler model and data source |
 |  [DefaultHasManyRepository](./repository.defaulthasmanyrepository.md) |  |
+|  [DefaultHasManyThroughRepository](./repository.defaulthasmanythroughrepository.md) | a class for CRUD operations for hasManyThrough relation.<!-- -->Warning: The hasManyThrough interface is experimental and is subject to change. If backwards-incompatible changes are made, a new major version may not be released. |
 |  [DefaultHasOneRepository](./repository.defaulthasonerepository.md) |  |
 |  [DefaultKeyValueRepository](./repository.defaultkeyvaluerepository.md) | An implementation of KeyValueRepository based on loopback-datasource-juggler |
 |  [DefaultTransactionalRepository](./repository.defaulttransactionalrepository.md) | Default implementation of CRUD repository using legacy juggler model and data source with beginTransaction() method for connectors which support Transactions |
@@ -75,10 +76,12 @@ This module provides data access facilities to various databases and services as
 |  [constrainDataObjects(originalData, constraint)](./repository.constraindataobjects.md) | A utility function which takes an array of model instance data and enforces constraint(s) on it |
 |  [constrainFilter(originalFilter, constraint)](./repository.constrainfilter.md) | A utility function which takes a filter and enforces constraint(s) on it |
 |  [constrainWhere(originalWhere, constraint)](./repository.constrainwhere.md) | A utility function which takes a where filter and enforces constraint(s) on it |
+|  [constrainWhereOr(originalWhere, constraint)](./repository.constrainwhereor.md) | A utility function which takes a where filter and enforces constraint(s) on it with OR clause |
 |  [createBelongsToAccessor(belongsToMetadata, targetRepoGetter, sourceRepository)](./repository.createbelongstoaccessor.md) | Enforces a BelongsTo constraint on a repository |
 |  [createBelongsToInclusionResolver(meta, getTargetRepo)](./repository.createbelongstoinclusionresolver.md) | Creates InclusionResolver for BelongsTo relation. Notice that this function only generates the inclusionResolver. It doesn't register it for the source repository.<!-- -->Notice: scope field for inclusion is not supported yet |
 |  [createHasManyInclusionResolver(meta, getTargetRepo)](./repository.createhasmanyinclusionresolver.md) | Creates InclusionResolver for HasMany relation. Notice that this function only generates the inclusionResolver. It doesn't register it for the source repository.<!-- -->Notice: scope field for inclusion is not supported yet. |
 |  [createHasManyRepositoryFactory(relationMetadata, targetRepositoryGetter)](./repository.createhasmanyrepositoryfactory.md) | Enforces a constraint on a repository based on a relationship contract between models. For example, if a Customer model is related to an Order model via a HasMany relation, then, the relational repository returned by the factory function would be constrained by a Customer model instance's id(s). |
+|  [createHasManyThroughRepositoryFactory(relationMetadata, targetRepositoryGetter, throughRepositoryGetter)](./repository.createhasmanythroughrepositoryfactory.md) |  |
 |  [createHasOneRepositoryFactory(relationMetadata, targetRepositoryGetter)](./repository.createhasonerepositoryfactory.md) | Enforces a constraint on a repository based on a relationship contract between models. For example, if a Customer model is related to an Address model via a HasOne relation, then, the relational repository returned by the factory function would be constrained by a Customer model instance's id(s). |
 |  [createModelClassBinding(modelClass)](./repository.createmodelclassbinding.md) | Create a binding for the given model class |
 |  [deduplicate(input)](./repository.deduplicate.md) | Dedupe an array |
@@ -146,6 +149,7 @@ This module provides data access facilities to various databases and services as
 |  [HasManyDefinition](./repository.hasmanydefinition.md) | HasManyDefinition defines one-to-many relations and also possible defines many-to-many relations with through models. |
 |  [HasManyRepository](./repository.hasmanyrepository.md) | CRUD operations for a target repository of a HasMany relation |
 |  [HasManyRepositoryFactory](./repository.hasmanyrepositoryfactory.md) |  |
+|  [HasManyThroughRepository](./repository.hasmanythroughrepository.md) | CRUD operations for a target repository of a HasManyThrough relation<!-- -->EXPERIMENTAL: This interface is not stable and may change in the near future. Backwards-incompatible changes may be introduced in semver-minor versions. |
 |  [HasOneDefinition](./repository.hasonedefinition.md) |  |
 |  [HasOneRepository](./repository.hasonerepository.md) | CRUD operations for a target repository of a HasMany relation |
 |  [HasOneRepositoryFactory](./repository.hasonerepositoryfactory.md) |  |
@@ -210,6 +214,7 @@ This module provides data access facilities to various databases and services as
 |  [EntityResolver](./repository.entityresolver.md) |  |
 |  [Fields](./repository.fields.md) | Selection of fields<!-- -->Example: <code>{afieldname: true}</code> |
 |  [FilterExcludingWhere](./repository.filterexcludingwhere.md) | Filter without <code>where</code> property |
+|  [HasManyThroughRepositoryFactory](./repository.hasmanythroughrepositoryfactory.md) | a factory to generate hasManyThrough repository class.<!-- -->Warning: The hasManyThrough interface is experimental and is subject to change. If backwards-incompatible changes are made, a new major version may not be released. |
 |  [InclusionResolver](./repository.inclusionresolver.md) |  |
 |  [KeyOf](./repository.keyof.md) | Key types of a given model, excluding operators |
 |  [KeyValueFilter](./repository.keyvaluefilter.md) | Filter for keys |

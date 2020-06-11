@@ -1,7 +1,9 @@
 ---
 lang: en
 title: 'Authentication Decorator'
-keywords: LoopBack 4.0, LoopBack-Next
+keywords:
+  LoopBack 4.0, LoopBack, Node.js, TypeScript, OpenAPI, Decorator,
+  Authentication
 sidebar: lb4_sidebar
 permalink: /doc/en/lb4/Decorators_authenticate.html
 ---
@@ -20,7 +22,7 @@ Here's an example using 'BasicStrategy': to authenticate user in function
 {% include code-caption.html content="src/controllers/who-am-i.controller.ts" %}
 
 ```ts
-import {inject} from '@loopback/context';
+import {inject} from '@loopback/core';
 import {securityId, SecurityBindings, UserProfile} from '@loopback/security';
 import {authenticate} from '@loopback/authentication';
 import {get} from '@loopback/rest';

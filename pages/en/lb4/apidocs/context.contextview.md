@@ -1,7 +1,7 @@
 ---
 lang: en
 title: 'API docs: context.contextview'
-keywords: LoopBack 4.0, LoopBack 4
+keywords: LoopBack 4.0, LoopBack 4, Node.js, TypeScript, OpenAPI
 sidebar: lb4_sidebar
 editurl: https://github.com/strongloop/loopback-next/tree/master/packages/context
 permalink: /doc/en/lb4/apidocs.context.contextview.html
@@ -50,6 +50,18 @@ export declare class ContextView<T = unknown> extends EventEmitter implements Co
 |  [close()](./context.contextview.close.md) |  | Stop listening events from the context |
 |  [findBindings()](./context.contextview.findbindings.md) |  | Find matching bindings and refresh the cache |
 |  [observe(event, binding, context)](./context.contextview.observe.md) |  | Listen on <code>bind</code> or <code>unbind</code> and invalidate the cache |
+|  [on(eventName, listener)](./context.contextview.on.md) |  | The "bind" event is emitted when a new binding is added to the view. |
+|  [on(eventName, listener)](./context.contextview.on_1.md) |  | The "unbind" event is emitted a new binding is removed from the view. |
+|  [on(eventName, listener)](./context.contextview.on_2.md) |  | The "refresh" event is emitted when the view is refreshed as bindings are added/removed. |
+|  [on(eventName, listener)](./context.contextview.on_3.md) |  | The "resolve" event is emitted when the cached values are resolved and updated. |
+|  [on(eventName, listener)](./context.contextview.on_4.md) |  | The "close" event is emitted when the view is closed (stopped observing context events) |
+|  [on(event, listener)](./context.contextview.on_5.md) |  |  |
+|  [once(eventName, listener)](./context.contextview.once.md) |  | The "bind" event is emitted when a new binding is added to the view. |
+|  [once(eventName, listener)](./context.contextview.once_1.md) |  | The "unbind" event is emitted a new binding is removed from the view. |
+|  [once(eventName, listener)](./context.contextview.once_2.md) |  | The "refresh" event is emitted when the view is refreshed as bindings are added/removed. |
+|  [once(eventName, listener)](./context.contextview.once_3.md) |  | The "resolve" event is emitted when the cached values are resolved and updated. |
+|  [once(eventName, listener)](./context.contextview.once_4.md) |  | The "close" event is emitted when the view is closed (stopped observing context events) |
+|  [once(event, listener)](./context.contextview.once_5.md) |  |  |
 |  [open()](./context.contextview.open.md) |  | Start listening events from the context |
 |  [refresh()](./context.contextview.refresh.md) |  | Refresh the view by invalidating its cache |
 |  [resolve(session)](./context.contextview.resolve.md) |  | Resolve values for the matching bindings |

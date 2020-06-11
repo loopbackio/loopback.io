@@ -1,7 +1,7 @@
 ---
 lang: en
 title: 'API docs: service-proxy.servicemixindoc.mountcomponentservices'
-keywords: LoopBack 4.0, LoopBack 4
+keywords: LoopBack 4.0, LoopBack 4, Node.js, TypeScript, OpenAPI
 sidebar: lb4_sidebar
 editurl: https://github.com/strongloop/loopback-next/tree/master/packages/service-proxy
 permalink: /doc/en/lb4/apidocs.service-proxy.servicemixindoc.mountcomponentservices.html
@@ -18,14 +18,14 @@ Get an instance of a component and mount all it's services. This function is int
 <b>Signature:</b>
 
 ```typescript
-mountComponentServices(component: Class<unknown>): void;
+mountComponentServices(component: Constructor<unknown>): void;
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  component | [Class](./service-proxy.class.md)<!-- -->&lt;unknown&gt; | The component to mount services of |
+|  component | [Constructor](./context.constructor.md)<!-- -->&lt;unknown&gt; | The component to mount services of |
 
 <b>Returns:</b>
 

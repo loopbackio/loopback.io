@@ -1,7 +1,7 @@
 ---
 lang: en
 title: 'CHANGELOG - @loopback/metadata'
-keywords: LoopBack 4.0, LoopBack 4, CHANGELOG
+keywords: LoopBack 4.0, LoopBack 4, Node.js, TypeScript, OpenAPI, Node.js, TypeScript, OpenAPI, CHANGELOG
 sidebar: lb4_sidebar
 toc_level: 0
 editurl: https://github.com/strongloop/loopback-next/blob/master/packages/metadata/CHANGELOG.md
@@ -12,6 +12,17 @@ permalink: /doc/en/lb4/changelog.metadata.html
 
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+# [2.2.0](https://github.com/strongloop/loopback-next/compare/@loopback/metadata@2.1.6...@loopback/metadata@2.2.0) (2020-06-11)
+
+
+### Features
+
+* **context:** improve error reporting with more contextual information ([2a30484](https://github.com/strongloop/loopback-next/commit/2a30484f90b08803f14669524f8eb64c35031da9))
+
+
+
+
 
 ## [2.1.6](https://github.com/strongloop/loopback-next/compare/@loopback/metadata@2.1.5...@loopback/metadata@2.1.6) (2020-05-28)
 

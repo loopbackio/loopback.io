@@ -1,7 +1,7 @@
 ---
 lang: en
 title: 'API docs: authorization.authorizationoptions'
-keywords: LoopBack 4.0, LoopBack 4
+keywords: LoopBack 4.0, LoopBack 4, Node.js, TypeScript, OpenAPI
 sidebar: lb4_sidebar
 editurl: https://github.com/strongloop/loopback-next/tree/master/packages/authorization
 permalink: /doc/en/lb4/apidocs.authorization.authorizationoptions.html
@@ -25,6 +25,7 @@ export interface AuthorizationOptions
 |  --- | --- | --- |
 |  [defaultDecision](./authorization.authorizationoptions.defaultdecision.md) | [AuthorizationDecision.DENY](./authorization.authorizationdecision.deny.md) \| [AuthorizationDecision.ALLOW](./authorization.authorizationdecision.allow.md) | Default decision if all authorizers vote for ABSTAIN If not set, default to <code>AuthorizationDecision.DENY</code> |
 |  [defaultMetadata](./authorization.authorizationoptions.defaultmetadata.md) | [AuthorizationMetadata](./authorization.authorizationmetadata.md) | Default authorization metadata if a method is not decorated with <code>@authorize</code>. If not set, no authorization will be enforced for those methods that are not associated with authorization metadata. |
+|  [defaultStatusCodeForDeny](./authorization.authorizationoptions.defaultstatuscodefordeny.md) | number | Default HTTP status code when the final decision is <code>AuthorizationDecision.DENY</code>. If not set, default to 403 |
 |  [precedence](./authorization.authorizationoptions.precedence.md) | [AuthorizationDecision.DENY](./authorization.authorizationdecision.deny.md) \| [AuthorizationDecision.ALLOW](./authorization.authorizationdecision.allow.md) | Controls if Allow/Deny vote takes precedence and override other votes. If not set, default to <code>AuthorizationDecision.DENY</code>.<!-- -->Once a vote matches the <code>precedence</code>, it becomes the final decision. The rest of votes will be skipped. |
 
 

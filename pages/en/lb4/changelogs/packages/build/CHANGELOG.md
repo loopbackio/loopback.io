@@ -1,7 +1,7 @@
 ---
 lang: en
 title: 'CHANGELOG - @loopback/build'
-keywords: LoopBack 4.0, LoopBack 4, CHANGELOG
+keywords: LoopBack 4.0, LoopBack 4, Node.js, TypeScript, OpenAPI, Node.js, TypeScript, OpenAPI, CHANGELOG
 sidebar: lb4_sidebar
 toc_level: 0
 editurl: https://github.com/strongloop/loopback-next/blob/master/packages/build/CHANGELOG.md
@@ -12,6 +12,14 @@ permalink: /doc/en/lb4/changelog.build.html
 
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+## [5.4.3](https://github.com/strongloop/loopback-next/compare/@loopback/build@5.4.2...@loopback/build@5.4.3) (2020-06-11)
+
+**Note:** Version bump only for package @loopback/build
+
+
+
+
 
 ## [5.4.2](https://github.com/strongloop/loopback-next/compare/@loopback/build@5.4.1...@loopback/build@5.4.2) (2020-05-28)
 

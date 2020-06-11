@@ -1,7 +1,7 @@
 ---
 lang: en
 title: 'API docs: context'
-keywords: LoopBack 4.0, LoopBack 4
+keywords: LoopBack 4.0, LoopBack 4, Node.js, TypeScript, OpenAPI
 sidebar: lb4_sidebar
 editurl: https://github.com/strongloop/loopback-next/tree/master/packages/context
 permalink: /doc/en/lb4/apidocs.context.html
@@ -30,6 +30,7 @@ permalink: /doc/en/lb4/apidocs.context.html
 |  [InterceptionHandler](./context.interceptionhandler.md) | A proxy handler that applies interceptors<!-- -->See https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global\_Objects/Proxy |
 |  [InvocationContext](./context.invocationcontext.md) | InvocationContext represents the context to invoke interceptors for a method. The context can be used to access metadata about the invocation as well as other dependencies. |
 |  [ProxySource](./context.proxysource.md) | Invocation source for injected proxies. It wraps a snapshot of the <code>ResolutionSession</code> that tracks the binding/injection stack. |
+|  [ResolutionError](./context.resolutionerror.md) | Error for context binding resolutions and dependency injections |
 |  [ResolutionSession](./context.resolutionsession.md) | Object to keep states for a session to resolve bindings and their dependencies within a context |
 
 ## Enumerations
@@ -92,6 +93,7 @@ permalink: /doc/en/lb4/apidocs.context.html
 |  [resolveUntil(source, resolver, evaluator)](./context.resolveuntil.md) | Resolve an iterator of source values into a result until the evaluator returns <code>true</code> |
 |  [sortBindingsByPhase(bindings, phaseTagName, orderOfPhases)](./context.sortbindingsbyphase.md) | Sort bindings by phase names denoted by a tag and the predefined order |
 |  [transformValueOrPromise(valueOrPromise, transformer)](./context.transformvalueorpromise.md) | Transform a value or promise with a function that produces a new value or promise |
+|  [tryCatchFinally(action, errorAction, finalAction)](./context.trycatchfinally.md) | Try to run an action that returns a promise or a value with error and final actions to mimic <code>try {} catch(err) {} finally {}</code> for a value or promise. |
 |  [tryWithFinally(action, finalAction)](./context.trywithfinally.md) | Try to run an action that returns a promise or a value |
 |  [uuid()](./context.uuid.md) | A utility to generate uuid v4 |
 

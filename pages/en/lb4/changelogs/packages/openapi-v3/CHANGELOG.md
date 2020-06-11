@@ -1,7 +1,7 @@
 ---
 lang: en
 title: 'CHANGELOG - @loopback/openapi-v3'
-keywords: LoopBack 4.0, LoopBack 4, CHANGELOG
+keywords: LoopBack 4.0, LoopBack 4, Node.js, TypeScript, OpenAPI, Node.js, TypeScript, OpenAPI, CHANGELOG
 sidebar: lb4_sidebar
 toc_level: 0
 editurl: https://github.com/strongloop/loopback-next/blob/master/packages/openapi-v3/CHANGELOG.md
@@ -12,6 +12,14 @@ permalink: /doc/en/lb4/changelog.openapi-v3.html
 
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+## [3.4.2](https://github.com/strongloop/loopback-next/compare/@loopback/openapi-v3@3.4.1...@loopback/openapi-v3@3.4.2) (2020-05-28)
+
+**Note:** Version bump only for package @loopback/openapi-v3
+
+
+
+
 
 ## [3.4.1](https://github.com/strongloop/loopback-next/compare/@loopback/openapi-v3@3.4.0...@loopback/openapi-v3@3.4.1) (2020-05-20)
 

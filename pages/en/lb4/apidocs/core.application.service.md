@@ -1,7 +1,7 @@
 ---
 lang: en
 title: 'API docs: core.application.service'
-keywords: LoopBack 4.0, LoopBack 4
+keywords: LoopBack 4.0, LoopBack 4, Node.js, TypeScript, OpenAPI
 sidebar: lb4_sidebar
 editurl: https://github.com/strongloop/loopback-next/tree/master/packages/core
 permalink: /doc/en/lb4/apidocs.core.application.service.html
@@ -18,14 +18,14 @@ Add a service to this application.
 <b>Signature:</b>
 
 ```typescript
-service<S>(cls: Constructor<S | Provider<S>>, nameOrOptions?: string | ServiceOptions): Binding<S>;
+service<S>(cls: ServiceOrProviderClass<S>, nameOrOptions?: string | ServiceOptions): Binding<S>;
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  cls | [Constructor](./context.constructor.md)<!-- -->&lt;S \| [Provider](./context.provider.md)<!-- -->&lt;S&gt;&gt; | The service or provider class |
+|  cls | [ServiceOrProviderClass](./core.serviceorproviderclass.md)<!-- -->&lt;S&gt; | The service or provider class |
 |  nameOrOptions | string \| [ServiceOptions](./core.serviceoptions.md) |  |
 
 <b>Returns:</b>

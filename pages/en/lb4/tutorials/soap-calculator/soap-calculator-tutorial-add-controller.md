@@ -1,7 +1,7 @@
 ---
 lang: en
 title: 'Add a Controller'
-keywords: LoopBack 4.0, LoopBack 4
+keywords: LoopBack 4.0, LoopBack 4, Node.js, TypeScript, OpenAPI, SOAP
 sidebar: lb4_sidebar
 permalink: /doc/en/lb4/soap-calculator-tutorial-add-controller.html
 ---
@@ -42,7 +42,7 @@ this point.
 ```ts
 // Uncomment these imports to begin using these cool features!
 
-// import {inject} from '@loopback/context';
+// import {inject} from '@loopback/core';
 
 export class CalculatorController {
   constructor() {}

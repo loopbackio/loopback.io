@@ -1,7 +1,7 @@
 ---
 lang: en
 title: 'API docs: repository.dynamicmodelctor'
-keywords: LoopBack 4.0, LoopBack 4
+keywords: LoopBack 4.0, LoopBack 4, Node.js, TypeScript, OpenAPI
 sidebar: lb4_sidebar
 editurl: https://github.com/strongloop/loopback-next/tree/master/packages/repository
 permalink: /doc/en/lb4/apidocs.repository.dynamicmodelctor.html
@@ -20,8 +20,8 @@ Assuming template arguments `BaseCtor` and `Props`<!-- -->, this type describes 
 <b>Signature:</b>
 
 ```typescript
-export declare type DynamicModelCtor<BaseCtor extends typeof Model, Props extends object> = BaseCtor & {
+export declare type DynamicModelCtor<BaseCtor extends typeof Model, Props extends object> = {
     new (data?: DataObject<PrototypeOf<BaseCtor> & Props>): PrototypeOf<BaseCtor> & Props;
-};
+} & BaseCtor;
 ```
 

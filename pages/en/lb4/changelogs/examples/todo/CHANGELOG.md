@@ -1,7 +1,7 @@
 ---
 lang: en
 title: 'CHANGELOG - @loopback/example-todo'
-keywords: LoopBack 4.0, LoopBack 4, CHANGELOG
+keywords: LoopBack 4.0, LoopBack 4, Node.js, TypeScript, OpenAPI, Node.js, TypeScript, OpenAPI, CHANGELOG
 sidebar: lb4_sidebar
 toc_level: 0
 editurl: https://github.com/strongloop/loopback-next/blob/master/examples/todo/CHANGELOG.md
@@ -12,6 +12,17 @@ permalink: /doc/en/lb4/changelog.example-todo.html
 
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+# [3.5.0](https://github.com/strongloop/loopback-next/compare/@loopback/example-todo@3.4.1...@loopback/example-todo@3.5.0) (2020-05-28)
+
+
+### Features
+
+* add `npm run openapi-spec` to export the openapi spec ([dca78e1](https://github.com/strongloop/loopback-next/commit/dca78e1ba3241ed2a0e7067e00cc1afd001f0335))
+
+
+
+
 
 ## [3.4.1](https://github.com/strongloop/loopback-next/compare/@loopback/example-todo@3.4.0...@loopback/example-todo@3.4.1) (2020-05-20)
 

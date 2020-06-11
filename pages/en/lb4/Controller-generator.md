@@ -1,7 +1,7 @@
 ---
 lang: en
 title: 'Controller generator'
-keywords: LoopBack 4.0, LoopBack 4
+keywords: LoopBack 4.0, LoopBack 4, Node.js, TypeScript, OpenAPI, CLI
 sidebar: lb4_sidebar
 permalink: /doc/en/lb4/Controller-generator.html
 ---
@@ -51,7 +51,7 @@ based on the given name:
 ```ts
 // Uncomment these imports to begin using these cool features!
 
-// import {inject} from '@loopback/context';
+// import {inject} from '@loopback/core';
 
 export class FooController {
   constructor() {}

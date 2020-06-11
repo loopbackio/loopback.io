@@ -1,7 +1,7 @@
 ---
 lang: en
 title: 'API docs: authentication.authentication_metadata_method_key'
-keywords: LoopBack 4.0, LoopBack 4
+keywords: LoopBack 4.0, LoopBack 4, Node.js, TypeScript, OpenAPI
 sidebar: lb4_sidebar
 editurl: https://github.com/strongloop/loopback-next/tree/master/packages/authentication
 permalink: /doc/en/lb4/apidocs.authentication.authentication_metadata_method_key.html

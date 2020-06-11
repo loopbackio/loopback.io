@@ -1,7 +1,7 @@
 ---
 lang: en
 title: 'CHANGELOG - @loopback/booter-lb3app'
-keywords: LoopBack 4.0, LoopBack 4, CHANGELOG
+keywords: LoopBack 4.0, LoopBack 4, Node.js, TypeScript, OpenAPI, Node.js, TypeScript, OpenAPI, CHANGELOG
 sidebar: lb4_sidebar
 toc_level: 0
 editurl: https://github.com/strongloop/loopback-next/blob/master/packages/booter-lb3app/CHANGELOG.md
@@ -12,6 +12,14 @@ permalink: /doc/en/lb4/changelog.booter-lb3app.html
 
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+## [2.2.2](https://github.com/strongloop/loopback-next/compare/@loopback/booter-lb3app@2.2.1...@loopback/booter-lb3app@2.2.2) (2020-05-28)
+
+**Note:** Version bump only for package @loopback/booter-lb3app
+
+
+
+
 
 ## [2.2.1](https://github.com/strongloop/loopback-next/compare/@loopback/booter-lb3app@2.2.0...@loopback/booter-lb3app@2.2.1) (2020-05-20)
 

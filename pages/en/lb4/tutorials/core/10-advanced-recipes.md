@@ -1,7 +1,7 @@
 ---
 lang: en
 title: 'Advanced Recipes'
-keywords: LoopBack 4.0, LoopBack 4
+keywords: LoopBack 4.0, LoopBack 4, Node.js, TypeScript, OpenAPI
 sidebar: lb4_sidebar
 permalink: /doc/en/lb4/core-tutorial-part10.html
 ---
@@ -15,7 +15,7 @@ You can create your own
 [decorator](https://loopback.io/doc/en/lb4/Decorators.html):
 
 1. Create a new decorator from scratch by using `DecoratorFactory` from
-   `@loopback/metadata`. See an example in
+   `@loopback/core`. See an example in
    [custom-inject-decorator.ts](https://github.com/strongloop/loopback-next/blob/master/examples/context/src/custom-inject-decorator.ts)
 
 2. Create a sugar decorator for an existing decorator.

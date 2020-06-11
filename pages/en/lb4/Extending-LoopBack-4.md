@@ -1,7 +1,7 @@
 ---
 lang: en
 title: 'Extending LoopBack 4'
-keywords: LoopBack 4.0, LoopBack 4
+keywords: LoopBack 4.0, LoopBack 4, Node.js, TypeScript, OpenAPI
 sidebar: lb4_sidebar
 permalink: /doc/en/lb4/Extending-LoopBack-4.html
 ---
@@ -19,6 +19,19 @@ module implements an
 [Inversion of Control](https://en.wikipedia.org/wiki/Inversion_of_control) (IoC)
 container called [Context](Context.md) as a service registry that supports
 [Dependency injection](Dependency-injection.md).
+
+{% include note.html content="The `@loopback/core` package re-exports all public
+APIs of `@loopback/context`. For consistency, we recommend the usage of
+`@loopback/core` for imports in LoopBack modules and applications unless they
+depend on `@loopback/context` explicitly. The two statements below are
+equivalent:
+
+```ts
+import {inject} from '@loopback/context';
+import {inject} from '@loopback/core';
+```
+
+" %}
 
 The IoC container decouples service providers and consumers. A service provider
 can be bound to the context with a key, which can be treated as an address of
@@ -46,7 +59,7 @@ that the service provider can be injected into the consumer class. The code
 snippet below shows the usage of `@inject` for dependency injection.
 
 ```ts
-import {inject, Context} from '@loopback/context';
+import {inject, Context} from '@loopback/core';
 
 /**
  * A UserController implementation that depends on UserRepository and PasswordHasher

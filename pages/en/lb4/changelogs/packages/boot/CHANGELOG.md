@@ -1,7 +1,7 @@
 ---
 lang: en
 title: 'CHANGELOG - @loopback/boot'
-keywords: LoopBack 4.0, LoopBack 4, CHANGELOG
+keywords: LoopBack 4.0, LoopBack 4, Node.js, TypeScript, OpenAPI, Node.js, TypeScript, OpenAPI, CHANGELOG
 sidebar: lb4_sidebar
 toc_level: 0
 editurl: https://github.com/strongloop/loopback-next/blob/master/packages/boot/CHANGELOG.md
@@ -12,6 +12,17 @@ permalink: /doc/en/lb4/changelog.boot.html
 
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+## [2.3.2](https://github.com/strongloop/loopback-next/compare/@loopback/boot@2.3.1...@loopback/boot@2.3.2) (2020-05-28)
+
+
+### Bug Fixes
+
+* bootmixin get binding from super.component() ([9a855ff](https://github.com/strongloop/loopback-next/commit/9a855ffb6b42c9052b1faba32530c62a06cc0b1c))
+
+
+
+
 
 ## [2.3.1](https://github.com/strongloop/loopback-next/compare/@loopback/boot@2.3.0...@loopback/boot@2.3.1) (2020-05-20)
 

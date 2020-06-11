@@ -1,7 +1,7 @@
 ---
 lang: en
 title: 'CHANGELOG - @loopback/example-rest-crud'
-keywords: LoopBack 4.0, LoopBack 4, CHANGELOG
+keywords: LoopBack 4.0, LoopBack 4, Node.js, TypeScript, OpenAPI, Node.js, TypeScript, OpenAPI, CHANGELOG
 sidebar: lb4_sidebar
 toc_level: 0
 editurl: https://github.com/strongloop/loopback-next/blob/master/examples/rest-crud/CHANGELOG.md
@@ -12,6 +12,17 @@ permalink: /doc/en/lb4/changelog.example-rest-crud.html
 
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+# [1.4.0](https://github.com/strongloop/loopback-next/compare/@loopback/example-rest-crud@1.3.1...@loopback/example-rest-crud@1.4.0) (2020-05-28)
+
+
+### Features
+
+* add `npm run openapi-spec` to export the openapi spec ([dca78e1](https://github.com/strongloop/loopback-next/commit/dca78e1ba3241ed2a0e7067e00cc1afd001f0335))
+
+
+
+
 
 ## [1.3.1](https://github.com/strongloop/loopback-next/compare/@loopback/example-rest-crud@1.3.0...@loopback/example-rest-crud@1.3.1) (2020-05-20)
 

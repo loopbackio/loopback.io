@@ -1,7 +1,7 @@
 ---
 lang: en
 title: 'API docs: repository.transaction.rollback'
-keywords: LoopBack 4.0, LoopBack 4
+keywords: LoopBack 4.0, LoopBack 4, Node.js, TypeScript, OpenAPI
 sidebar: lb4_sidebar
 editurl: https://github.com/strongloop/loopback-next/tree/master/packages/repository
 permalink: /doc/en/lb4/apidocs.repository.transaction.rollback.html

@@ -1,7 +1,7 @@
 ---
 lang: en
 title: 'CHANGELOG - @loopback/apiconnect'
-keywords: LoopBack 4.0, LoopBack 4, CHANGELOG
+keywords: LoopBack 4.0, LoopBack 4, Node.js, TypeScript, OpenAPI, Node.js, TypeScript, OpenAPI, CHANGELOG
 sidebar: lb4_sidebar
 toc_level: 0
 editurl: https://github.com/strongloop/loopback-next/blob/master/extensions/apiconnect/CHANGELOG.md
@@ -12,6 +12,14 @@ permalink: /doc/en/lb4/changelog.apiconnect.html
 
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+## [0.3.4](https://github.com/strongloop/loopback-next/compare/@loopback/apiconnect@0.3.3...@loopback/apiconnect@0.3.4) (2020-05-28)
+
+**Note:** Version bump only for package @loopback/apiconnect
+
+
+
+
 
 ## [0.3.3](https://github.com/strongloop/loopback-next/compare/@loopback/apiconnect@0.3.2...@loopback/apiconnect@0.3.3) (2020-05-20)
 

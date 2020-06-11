@@ -1,7 +1,7 @@
 ---
 lang: en
 title: 'API docs: context.bindingkey.generate'
-keywords: LoopBack 4.0, LoopBack 4
+keywords: LoopBack 4.0, LoopBack 4, Node.js, TypeScript, OpenAPI
 sidebar: lb4_sidebar
 editurl: https://github.com/strongloop/loopback-next/tree/master/packages/context
 permalink: /doc/en/lb4/apidocs.context.bindingkey.generate.html
@@ -13,7 +13,9 @@ permalink: /doc/en/lb4/apidocs.context.bindingkey.generate.html
 
 ## BindingKey.generate() method
 
-Generate a unique binding key with `uuid`
+Generate a universally unique binding key.
+
+Please note the format of they generated key is not specified, you must not rely on any specific formatting (e.g. UUID style).
 
 <b>Signature:</b>
 

@@ -1,7 +1,7 @@
 ---
 lang: en
 title: 'belongsTo Relation'
-keywords: LoopBack 4.0, LoopBack 4
+keywords: LoopBack 4.0, LoopBack 4, Node.js, TypeScript, OpenAPI, Model Relation
 sidebar: lb4_sidebar
 permalink: /doc/en/lb4/BelongsTo-relation.html
 ---
@@ -238,7 +238,7 @@ The following code snippet shows how it would look like:
 content="/src/repositories/order.repository.ts" %}
 
 ```ts
-import {Getter, inject} from '@loopback/context';
+import {Getter, inject} from '@loopback/core';
 import {
   BelongsToAccessor,
   DefaultCrudRepository,

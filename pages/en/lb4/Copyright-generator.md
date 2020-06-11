@@ -1,7 +1,7 @@
 ---
 lang: en
 title: 'Generate copyright/license header for JavaScript/TypeScript files'
-keywords: LoopBack 4.0, LoopBack 4
+keywords: LoopBack 4.0, LoopBack 4, Node.js, TypeScript, OpenAPI, CLI, Utility
 sidebar: lb4_sidebar
 permalink: /doc/en/lb4/Copyright-generator.html
 ---
@@ -57,6 +57,18 @@ The command prompts you for:
 
 2. The license name. The default value is read from `license` in the
    `package.json`.
+
+   If the license name is `CUSTOM`, you'll be prompted to provide a custom
+   template. For example:
+
+   ```
+   =============================================================================
+   Licensed Materials - Property of <%= owner %>
+   (C) Copyright <%= owner %> <%= years %>
+   US Government Users Restricted Rights - Use, duplication or disclosure
+   restricted by GSA ADP Schedule Contract with <%= owner %>.
+   =============================================================================
+   ```
 
 The default owner is `IBM Corp.` and license is `MIT` with the following
 `package.json`.

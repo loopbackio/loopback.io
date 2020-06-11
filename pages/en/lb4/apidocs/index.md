@@ -1,7 +1,7 @@
 ---
 lang: en
 title: 'API docs: index'
-keywords: LoopBack 4.0, LoopBack 4
+keywords: LoopBack 4.0, LoopBack 4, Node.js, TypeScript, OpenAPI
 sidebar: lb4_sidebar
 editurl: https://github.com/strongloop/loopback-next
 permalink: /doc/en/lb4/apidocs.index.html
@@ -35,7 +35,6 @@ permalink: /doc/en/lb4/apidocs.index.html
 |  [@loopback/http-caching-proxy](./http-caching-proxy.md) | A caching HTTP proxy for integration tests. |
 |  [@loopback/http-server](./http-server.md) | HTTP / HTTPS server endpoints for LoopBack 4 apps. |
 |  [@loopback/metadata](./metadata.md) | A package with utilities to help developers implement [TypeScript decorators](https://www.typescriptlang.org/docs/handbook/decorators.html)<!-- -->, define/merge metadata, and inspect metadata. |
-|  [@loopback/mock-oauth2-provider](./mock-oauth2-provider.md) |  |
 |  [@loopback/model-api-builder](./model-api-builder.md) | A packge with types and helpers for packages contributing Model API builders. |
 |  [@loopback/openapi-spec-builder](./openapi-spec-builder.md) | A package to simplify creating OpenAPI specification documents in your tests using the builder pattern. |
 |  [@loopback/openapi-v3](./openapi-v3.md) | Decorators that describe LoopBack artifacts as OpenAPI 3.0.0 metadata and utilities that transfer LoopBack metadata to OpenAPI 3.0.0 specifications. |

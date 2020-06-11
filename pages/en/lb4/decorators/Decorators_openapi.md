@@ -1,7 +1,7 @@
 ---
 lang: en
 title: 'OpenAPI Decorators'
-keywords: LoopBack 4.0, LoopBack-Next
+keywords: LoopBack 4.0, LoopBack, Node.js, TypeScript, OpenAPI, Decorator
 sidebar: lb4_sidebar
 permalink: /doc/en/lb4/Decorators_openapi.html
 ---
@@ -357,6 +357,21 @@ class MyController {
 }
 ```
 
+#### @requestBody.array
+
+Syntax: see
+[API documentation](https://loopback.io/doc/en/lb4/apidocs.openapi-v3.requestbody.array.html)
+
+`@requestBody.array` marks the request body to accept arrays. It is a
+lightweight wrapper around `@requestBody` and accepts the same parameters.
+
+```ts
+class MyController {
+  @post('/Users')
+  async addUsers(@requestBody.array() users: User[]) {}
+}
+```
+
 #### @requestBody.file
 
 `@requestBody.file` marks a request body for `multipart/form-data` based file
@@ -423,6 +438,9 @@ export class MyController {
 ```
 
 The `x-ts-type` can be used for array and object properties too:
+
+{% include note.html content="Arrays should be defined with
+[`@requestBody.array`](#@requestBody.array) instead." %}
 
 ```ts
 const schemaWithArrayOfMyModel = {

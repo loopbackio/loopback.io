@@ -1,7 +1,7 @@
 ---
 lang: en
 title: 'CHANGELOG - @loopback/cli'
-keywords: LoopBack 4.0, LoopBack 4, CHANGELOG
+keywords: LoopBack 4.0, LoopBack 4, Node.js, TypeScript, OpenAPI, Node.js, TypeScript, OpenAPI, CHANGELOG
 sidebar: lb4_sidebar
 toc_level: 0
 editurl: https://github.com/strongloop/loopback-next/blob/master/packages/cli/CHANGELOG.md
@@ -12,6 +12,17 @@ permalink: /doc/en/lb4/changelog.cli.html
 
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+# [2.9.0](https://github.com/strongloop/loopback-next/compare/@loopback/cli@2.8.0...@loopback/cli@2.9.0) (2020-06-11)
+
+
+### Features
+
+* **cli:** allow custom copyright/license lines ([f4ef6b6](https://github.com/strongloop/loopback-next/commit/f4ef6b64305812922a1a61ba837111e5c8509fdc))
+
+
+
+
 
 # [2.8.0](https://github.com/strongloop/loopback-next/compare/@loopback/cli@2.7.1...@loopback/cli@2.8.0) (2020-05-28)
 

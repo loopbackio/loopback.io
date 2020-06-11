@@ -1,7 +1,7 @@
 ---
 lang: en
 title: 'API docs: context.binding'
-keywords: LoopBack 4.0, LoopBack 4
+keywords: LoopBack 4.0, LoopBack 4, Node.js, TypeScript, OpenAPI
 sidebar: lb4_sidebar
 editurl: https://github.com/strongloop/loopback-next/tree/master/packages/context
 permalink: /doc/en/lb4/apidocs.context.binding.html
@@ -54,6 +54,10 @@ export declare class Binding<T = BoundValue> extends EventEmitter
 |  [inScope(scope)](./context.binding.inscope.md) |  | Set the binding scope |
 |  [inspect(options)](./context.binding.inspect.md) |  | Inspect the binding to return a json representation of the binding information |
 |  [lock()](./context.binding.lock.md) |  | Lock the binding so that it cannot be rebound |
+|  [on(eventName, listener)](./context.binding.on.md) |  | The "changed" event is emitted by methods such as <code>tag</code>, <code>inScope</code>, <code>to</code>, and <code>toClass</code>. |
+|  [on(event, listener)](./context.binding.on_1.md) |  |  |
+|  [once(eventName, listener)](./context.binding.once.md) |  | The "changed" event is emitted by methods such as <code>tag</code>, <code>inScope</code>, <code>to</code>, and <code>toClass</code>. |
+|  [once(event, listener)](./context.binding.once_1.md) |  |  |
 |  [refresh(ctx)](./context.binding.refresh.md) |  | Invalidate the binding cache so that its value will be reloaded next time. This is useful to force reloading a singleton when its configuration or dependencies are changed. \*\*WARNING\*\*: The state held in the cached value will be gone. |
 |  [tag(tags)](./context.binding.tag.md) |  | Tag the binding with names or name/value objects. A tag has a name and an optional value. If not supplied, the tag name is used as the value. |
 |  [to(value)](./context.binding.to.md) |  | Bind the key to a constant value. The value must be already available at binding time, it is not allowed to pass a Promise instance. |

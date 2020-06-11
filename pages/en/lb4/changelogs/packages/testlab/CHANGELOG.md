@@ -1,7 +1,7 @@
 ---
 lang: en
 title: 'CHANGELOG - @loopback/testlab'
-keywords: LoopBack 4.0, LoopBack 4, CHANGELOG
+keywords: LoopBack 4.0, LoopBack 4, Node.js, TypeScript, OpenAPI, Node.js, TypeScript, OpenAPI, CHANGELOG
 sidebar: lb4_sidebar
 toc_level: 0
 editurl: https://github.com/strongloop/loopback-next/blob/master/packages/testlab/CHANGELOG.md
@@ -12,6 +12,14 @@ permalink: /doc/en/lb4/changelog.testlab.html
 
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+## [3.1.7](https://github.com/strongloop/loopback-next/compare/@loopback/testlab@3.1.6...@loopback/testlab@3.1.7) (2020-06-11)
+
+**Note:** Version bump only for package @loopback/testlab
+
+
+
+
 
 ## [3.1.6](https://github.com/strongloop/loopback-next/compare/@loopback/testlab@3.1.5...@loopback/testlab@3.1.6) (2020-05-28)
 

@@ -1,7 +1,7 @@
 ---
 lang: en
 title: 'API docs: context.bindingevent'
-keywords: LoopBack 4.0, LoopBack 4
+keywords: LoopBack 4.0, LoopBack 4, Node.js, TypeScript, OpenAPI
 sidebar: lb4_sidebar
 editurl: https://github.com/strongloop/loopback-next/tree/master/packages/context
 permalink: /doc/en/lb4/apidocs.context.bindingevent.html
@@ -19,9 +19,9 @@ Information for a binding event
 
 ```typescript
 export declare type BindingEvent = {
-    type: string;
+    type: 'changed' | string;
     binding: Readonly<Binding<unknown>>;
-    operation: string;
+    operation: 'tag' | 'scope' | 'value' | string;
 };
 ```
 

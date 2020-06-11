@@ -1,7 +1,7 @@
 ---
 lang: en
 title: 'API docs: context.uuid_pattern'
-keywords: LoopBack 4.0, LoopBack 4
+keywords: LoopBack 4.0, LoopBack 4, Node.js, TypeScript, OpenAPI
 sidebar: lb4_sidebar
 editurl: https://github.com/strongloop/loopback-next/tree/master/packages/context
 permalink: /doc/en/lb4/apidocs.context.uuid_pattern.html
@@ -12,6 +12,11 @@ permalink: /doc/en/lb4/apidocs.context.uuid_pattern.html
 [Home](./index.md) &gt; [@loopback/context](./context.md) &gt; [UUID\_PATTERN](./context.uuid_pattern.md)
 
 ## UUID\_PATTERN variable
+
+> Warning: This API is now obsolete.
+> 
+> This pattern is an internal helper used by unit-tests, we are no longer using it.
+> 
 
 A regular expression for testing uuid v4 PATTERN
 

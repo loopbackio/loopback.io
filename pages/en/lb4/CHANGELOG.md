@@ -1,7 +1,7 @@
 ---
 lang: en
 title: 'CHANGELOG Docs'
-keywords: LoopBack 4.0, LoopBack 4
+keywords: LoopBack 4.0, LoopBack 4, Node.js, TypeScript, OpenAPI
 sidebar: lb4_sidebar
 permalink: /doc/en/lb4/changelog.index.html
 ---
@@ -36,10 +36,6 @@ permalink: /doc/en/lb4/changelog.index.html
 - [@loopback/service-proxy](changelogs/packages/service-proxy/CHANGELOG.md)
 - [@loopback/testlab](changelogs/packages/testlab/CHANGELOG.md)
 
-### fixtures
-
-- [@loopback/mock-oauth2-provider](changelogs/fixtures/mock-oauth2-provider/CHANGELOG.md)
-
 ### extensions
 
 - [@loopback/apiconnect](changelogs/extensions/apiconnect/CHANGELOG.md)
@@ -69,5 +65,6 @@ permalink: /doc/en/lb4/changelog.index.html
 - [@loopback/example-rpc-server](changelogs/examples/rpc-server/CHANGELOG.md)
 - [@loopback/example-soap-calculator](changelogs/examples/soap-calculator/CHANGELOG.md)
 - [@loopback/example-todo](changelogs/examples/todo/CHANGELOG.md)
+- [@loopback/example-todo-jwt](changelogs/examples/todo-jwt/CHANGELOG.md)
 - [@loopback/example-todo-list](changelogs/examples/todo-list/CHANGELOG.md)
 - [@loopback/example-validation-app](changelogs/examples/validation-app/CHANGELOG.md)

@@ -1,7 +1,7 @@
 ---
 lang: en
 title: 'CHANGELOG - @loopback/model-api-builder'
-keywords: LoopBack 4.0, LoopBack 4, CHANGELOG
+keywords: LoopBack 4.0, LoopBack 4, Node.js, TypeScript, OpenAPI, Node.js, TypeScript, OpenAPI, CHANGELOG
 sidebar: lb4_sidebar
 toc_level: 0
 editurl: https://github.com/strongloop/loopback-next/blob/master/packages/model-api-builder/CHANGELOG.md
@@ -12,6 +12,14 @@ permalink: /doc/en/lb4/changelog.model-api-builder.html
 
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+## [2.1.6](https://github.com/strongloop/loopback-next/compare/@loopback/model-api-builder@2.1.5...@loopback/model-api-builder@2.1.6) (2020-05-28)
+
+**Note:** Version bump only for package @loopback/model-api-builder
+
+
+
+
 
 ## [2.1.5](https://github.com/strongloop/loopback-next/compare/@loopback/model-api-builder@2.1.4...@loopback/model-api-builder@2.1.5) (2020-05-20)
 

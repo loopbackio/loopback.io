@@ -1,7 +1,7 @@
 ---
 lang: en
 title: 'CHANGELOG - @loopback/repository'
-keywords: LoopBack 4.0, LoopBack 4, CHANGELOG
+keywords: LoopBack 4.0, LoopBack 4, Node.js, TypeScript, OpenAPI, Node.js, TypeScript, OpenAPI, CHANGELOG
 sidebar: lb4_sidebar
 toc_level: 0
 editurl: https://github.com/strongloop/loopback-next/blob/master/packages/repository/CHANGELOG.md
@@ -12,6 +12,17 @@ permalink: /doc/en/lb4/changelog.repository.html
 
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+# [2.6.0](https://github.com/strongloop/loopback-next/compare/@loopback/repository@2.5.1...@loopback/repository@2.6.0) (2020-05-28)
+
+
+### Features
+
+* **repository:** allow components to contribute models for DI ([e74fc57](https://github.com/strongloop/loopback-next/commit/e74fc5725a52227a4cf37ae7d2796df0f5288142))
+
+
+
+
 
 ## [2.5.1](https://github.com/strongloop/loopback-next/compare/@loopback/repository@2.5.0...@loopback/repository@2.5.1) (2020-05-20)
 

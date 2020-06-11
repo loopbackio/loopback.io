@@ -1,7 +1,7 @@
 ---
 lang: en
 title: 'API docs: authentication-jwt.user.username'
-keywords: LoopBack 4.0, LoopBack 4
+keywords: LoopBack 4.0, LoopBack 4, Node.js, TypeScript, OpenAPI
 sidebar: lb4_sidebar
 editurl: https://github.com/strongloop/loopback-next/tree/master/extensions/authentication-jwt
 permalink: /doc/en/lb4/apidocs.authentication-jwt.user.username.html

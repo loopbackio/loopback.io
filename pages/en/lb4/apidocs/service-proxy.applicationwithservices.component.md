@@ -1,7 +1,7 @@
 ---
 lang: en
 title: 'API docs: service-proxy.applicationwithservices.component'
-keywords: LoopBack 4.0, LoopBack 4
+keywords: LoopBack 4.0, LoopBack 4, Node.js, TypeScript, OpenAPI
 sidebar: lb4_sidebar
 editurl: https://github.com/strongloop/loopback-next/tree/master/packages/service-proxy
 permalink: /doc/en/lb4/apidocs.service-proxy.applicationwithservices.component.html
@@ -16,14 +16,14 @@ permalink: /doc/en/lb4/apidocs.service-proxy.applicationwithservices.component.h
 <b>Signature:</b>
 
 ```typescript
-component(component: Class<{}>, name?: string): Binding;
+component(component: Constructor<{}>, name?: string): Binding;
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  component | [Class](./service-proxy.class.md)<!-- -->&lt;{}&gt; |  |
+|  component | [Constructor](./context.constructor.md)<!-- -->&lt;{}&gt; |  |
 |  name | string |  |
 
 <b>Returns:</b>

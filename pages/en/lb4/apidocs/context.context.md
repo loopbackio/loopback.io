@@ -1,7 +1,7 @@
 ---
 lang: en
 title: 'API docs: context.context'
-keywords: LoopBack 4.0, LoopBack 4
+keywords: LoopBack 4.0, LoopBack 4, Node.js, TypeScript, OpenAPI
 sidebar: lb4_sidebar
 editurl: https://github.com/strongloop/loopback-next/tree/master/packages/context
 permalink: /doc/en/lb4/apidocs.context.context.html
@@ -71,6 +71,10 @@ export declare class Context extends EventEmitter
 |  [inspect(options)](./context.context.inspect.md) |  | Inspect the context and dump out a JSON object representing the context hierarchy |
 |  [isBound(key)](./context.context.isbound.md) |  | Check if a key is bound in the context or its ancestors |
 |  [isSubscribed(observer)](./context.context.issubscribed.md) |  | Check if an observer is subscribed to this context |
+|  [on(eventName, listener)](./context.context.on.md) |  | The "bind" event is emitted when a new binding is added to the context. The "unbind" event is emitted when an existing binding is removed. |
+|  [on(event, listener)](./context.context.on_1.md) |  |  |
+|  [once(eventName, listener)](./context.context.once.md) |  | The "bind" event is emitted when a new binding is added to the context. The "unbind" event is emitted when an existing binding is removed. |
+|  [once(event, listener)](./context.context.once_1.md) |  |  |
 |  [setupConfigurationResolverIfNeeded()](./context.context.setupconfigurationresolverifneeded.md) |  | Set up the configuration resolver if needed |
 |  [subscribe(observer)](./context.context.subscribe.md) |  | Add a context event observer to the context |
 |  [toJSON()](./context.context.tojson.md) |  | Create a plain JSON object for the context |

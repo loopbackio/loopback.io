@@ -1,7 +1,7 @@
 ---
 lang: en
 title: 'Creating components'
-keywords: LoopBack 4.0, LoopBack 4
+keywords: LoopBack 4.0, LoopBack 4, Node.js, TypeScript, OpenAPI, Components
 sidebar: lb4_sidebar
 permalink: /doc/en/lb4/Creating-components.html
 ---
@@ -90,7 +90,7 @@ function called by [Context](Context.md) when another entity requests a value to
 be injected.
 
 ```ts
-import {Provider} from '@loopback/context';
+import {Provider} from '@loopback/core';
 
 export class MyValueProvider implements Provider<string> {
   value() {
@@ -168,7 +168,7 @@ the list of keys reserved for the framework use.
 Provider's `value()` method can be asynchronous too:
 
 ```ts
-import {Provider} from '@loopback/context';
+import {Provider} from '@loopback/core';
 const request = require('request-promise-native');
 const weatherUrl =
   'http://samples.openweathermap.org/data/2.5/weather?appid=b1b15e88fa797225412429c1c50c122a1';
@@ -192,7 +192,7 @@ dependencies annotated with `@inject` keyword, so that LoopBack runtime can
 resolve them automatically.
 
 ```ts
-import {Provider} from '@loopback/context';
+import {Provider} from '@loopback/core';
 import {Request, RestBindings} from '@loopback/rest';
 import {v4 as uuid} from 'uuid';
 

@@ -1,7 +1,7 @@
 ---
 lang: en
 title: 'CHANGELOG - @loopback/example-greeter-extension'
-keywords: LoopBack 4.0, LoopBack 4, CHANGELOG
+keywords: LoopBack 4.0, LoopBack 4, Node.js, TypeScript, OpenAPI, Node.js, TypeScript, OpenAPI, CHANGELOG
 sidebar: lb4_sidebar
 toc_level: 0
 editurl: https://github.com/strongloop/loopback-next/blob/master/examples/greeter-extension/CHANGELOG.md
@@ -12,6 +12,14 @@ permalink: /doc/en/lb4/changelog.example-greeter-extension.html
 
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+## [2.1.2](https://github.com/strongloop/loopback-next/compare/@loopback/example-greeter-extension@2.1.1...@loopback/example-greeter-extension@2.1.2) (2020-05-28)
+
+**Note:** Version bump only for package @loopback/example-greeter-extension
+
+
+
+
 
 ## [2.1.1](https://github.com/strongloop/loopback-next/compare/@loopback/example-greeter-extension@2.1.0...@loopback/example-greeter-extension@2.1.1) (2020-05-20)
 
