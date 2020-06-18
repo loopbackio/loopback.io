@@ -71,7 +71,10 @@ function setupSidebarTreeNav(){
     //add expanded class to active tree parents
     $('.tree-parent.active').addClass('expanded');
 
-    $('a.show-hide').click(function (e) {
+    $('a.show-hide').click(toggleSectionChildren);
+    $('a.section-name').click(toggleSectionChildren);
+
+    function toggleSectionChildren(e) {
       console.log('clicked', this);
       $(this)
         .blur()
@@ -79,5 +82,5 @@ function setupSidebarTreeNav(){
         .children('ul.nav-list').toggle(200);
       return false;
       // $(this).parent().children('ul.nav-list').toggle(200);
-    });
+    }
 }
