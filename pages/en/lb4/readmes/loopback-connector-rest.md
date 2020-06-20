@@ -224,6 +224,7 @@ The `template` object specifies the REST API invocation as a JSON template, with
 | `headers`| HTTP headers | Object |
 | `query`| Query strings | Object; template values allowed. |
 | `responsePath`| Optional JSONPath applied to the HTTP body. See [https://github.com/s3u/JSONPath](https://github.com/s3u/JSONPath) for syntax of JSON paths.| String |
+| `fullResponse`| Optional flag to return full response, rather than just body. | Boolean |
 
 The template variable syntax is:
 
