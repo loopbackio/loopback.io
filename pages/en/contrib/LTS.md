@@ -23,7 +23,7 @@ Below is the LTS schedule on the LoopBack versions:
 
 Framework | Status | Published | Active LTS Start | Maintenance LTS Start | EOL | Runtime | GA | EOL
 -- | -- | -- | -- | -- | -- | -- | -- | --
-LoopBack 4 | Current | Oct 2018 | -- | -- | Apr 2021 _(minimum)_| Node 10 | Oct 2018 | Apr 2021
+LoopBack 4 | Current | Oct 2018 | -- | -- | Apr 2021 _(minimum)_| Node&nbsp;10.16 | Oct 2018 | Apr 2021
 LoopBack 3 | Maintenance LTS | Dec 2016 | Oct 2018 | Dec 2019 | Dec 2020 |  Node 8 | Oct 2017 | Dec 2020
 LoopBack 2 | End-of-Life | Jul 2014 | Dec 2016 | Oct 2018 | Apr 2019 | Node 6 | Oct 2016 | Apr 2019
 
