@@ -14,9 +14,9 @@ In debug mode, `strong-error-handler` returns full error stack traces and intern
 
 ## Supported versions
 
-Current|Long Term Support|Maintenance
-:-:|:-:|:-:
-3.x|2.x|1.x
+| Current | Long Term Support | Maintenance |
+| :-----: | :---------------: | :---------: |
+|   4.x   |        3.x        |     2.x     |
 
 Learn more about our LTS plan in [docs](http://loopback.io/doc/en/contrib/Long-term-support.html).
 
@@ -108,24 +108,25 @@ The content type of the response depends on the request's `Accepts` header.
 
 ## Options
 
-| Option | Type | Default | Description |
-| ---- | ---- | ---- | ---- |
-| debug | Boolean&nbsp;&nbsp;&nbsp; | `false` | If `true`, HTTP responses include all error properties, including sensitive data such as file paths, URLs and stack traces. See [Example output](#example) below. |
-| log | Boolean | `true` |  If `true`, all errors are printed via `console.error`, including an array of fields (custom error properties) that are safe to include in response messages (both 4xx and 5xx). <br/> If `false`, sends only the error back in the response. |
-| safeFields | [String] | `[]` |  Specifies property names on errors that are allowed to be passed through in 4xx and 5xx responses. See [Safe error fields](#safe-error-fields) below. |
-| defaultType | String | `"json"` | Specify the default response content type to use when the client does not provide any Accepts header.
-| negotiateContentType | Boolean | true | Negotiate the response content type via Accepts request header. When disabled, strong-error-handler will always use the default content type when producing responses. Disabling content type negotiation is useful if you want to see JSON-formatted error responses in browsers, because browsers usually prefer HTML and XML over other content types.
+| Option               | Type                      | Default   | Description                                                                                                                                                                                                                                                                                                                                               |
+| -------------------- | ------------------------- | --------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| debug                | Boolean&nbsp;&nbsp;&nbsp; | `false`   | If `true`, HTTP responses include all error properties, including sensitive data such as file paths, URLs and stack traces. See [Example output](#example) below.                                                                                                                                                                                         |
+| log                  | Boolean                   | `true`    | If `true`, all errors are printed via `console.error`, including an array of fields (custom error properties) that are safe to include in response messages (both 4xx and 5xx). <br/> If `false`, sends only the error back in the response.                                                                                                              |
+| safeFields           | [String]                  | `[]`      | Specifies property names on errors that are allowed to be passed through in 4xx and 5xx responses. See [Safe error fields](#safe-error-fields) below.                                                                                                                                                                                                     |
+| defaultType          | String                    | `"json"`  | Specifies the default response content type to use when the client does not provide any Accepts header.                                                                                                                                                                                                                                                   |
+| rootProperty         | String or false           | `"error"` | Specifies the root property name for json or xml. If the value is set to `false`, no wrapper will be added to the json object. The false value is ignored by XML as a root element is always required.                                                                                                                                                    |
+| negotiateContentType | Boolean                   | true      | Negotiate the response content type via Accepts request header. When disabled, strong-error-handler will always use the default content type when producing responses. Disabling content type negotiation is useful if you want to see JSON-formatted error responses in browsers, because browsers usually prefer HTML and XML over other content types. |
 
 ### Customizing log format
 
-**Express** 
+**Express**
 
-To use a different log format, add your own custom error-handling middleware then disable `errorHandler.log`. 
+To use a different log format, add your own custom error-handling middleware then disable `errorHandler.log`.
 For example, in an Express application:
 
 ```js
 app.use(myErrorLogger());
-app.use(errorHandler({ log: false }));
+app.use(errorHandler({log: false}));
 ```
 
 In general, add `strong-error-handler` as the last middleware function, just before calling `app.listen()`.
@@ -234,7 +235,7 @@ To migrate a LoopBack 2.x application to use `strong-error-handler`:
     }
 </pre>
 
-For more information, see 
+For more information, see
 [Migrating apps to LoopBack 3.0](http://loopback.io/doc/en/lb3/Migrating-to-3.0.html#update-use-of-rest-error-handler).
 
 ## Example
@@ -252,17 +253,17 @@ The same error generated when `debug: true` :
   { statusCode: 500,
   name: 'Error',
   message: 'a test error message',
-  stack: 'Error: a test error message    
-  at Context.<anonymous> (User/strong-error-handler/test/handler.test.js:220:21)    
-  at callFnAsync (User/strong-error-handler/node_modules/mocha/lib/runnable.js:349:8)    
-  at Test.Runnable.run (User/strong-error-handler/node_modules/mocha/lib/runnable.js:301:7)    
-  at Runner.runTest (User/strong-error-handler/node_modules/mocha/lib/runner.js:422:10)    
-  at User/strong-error-handler/node_modules/mocha/lib/runner.js:528:12    
-  at next (User/strong-error-handler/node_modules/mocha/lib/runner.js:342:14)    
-  at User/strong-error-handler/node_modules/mocha/lib/runner.js:352:7    
-  at next (User/strong-error-handler/node_modules/mocha/lib/runner.js:284:14)    
-  at Immediate._onImmediate (User/strong-error-handler/node_modules/mocha/lib/runner.js:320:5)    
-  at tryOnImmediate (timers.js:543:15)    
+  stack: 'Error: a test error message
+  at Context.<anonymous> (User/strong-error-handler/test/handler.test.js:220:21)
+  at callFnAsync (User/strong-error-handler/node_modules/mocha/lib/runnable.js:349:8)
+  at Test.Runnable.run (User/strong-error-handler/node_modules/mocha/lib/runnable.js:301:7)
+  at Runner.runTest (User/strong-error-handler/node_modules/mocha/lib/runner.js:422:10)
+  at User/strong-error-handler/node_modules/mocha/lib/runner.js:528:12
+  at next (User/strong-error-handler/node_modules/mocha/lib/runner.js:342:14)
+  at User/strong-error-handler/node_modules/mocha/lib/runner.js:352:7
+  at next (User/strong-error-handler/node_modules/mocha/lib/runner.js:284:14)
+  at Immediate._onImmediate (User/strong-error-handler/node_modules/mocha/lib/runner.js:320:5)
+  at tryOnImmediate (timers.js:543:15)
   at processImmediate [as _immediateCallback] (timers.js:523:5)' }}
 ```
 

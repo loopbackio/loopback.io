@@ -27,6 +27,7 @@ The `loopback-connector-cloudant` module is the Cloudant connector for the LoopB
     - [Generate Datasource](#generate-datasource)
     - [Datasource Config](#datasource-config)
         - [`url` vs `username` & `password`](#url-vs-username--password)
+        - [iamApiKey](#iamApiKey)
         - [Advanced configuration](#advanced-configuration)
         - [Requests Plugin](#requests-plugin)
     - [Example Usage](#example-usage)
@@ -543,6 +544,26 @@ username  | String | Cloudant username, use either 'url' or username/password
 password  | String | Cloudant password
 url       | String | Cloudant URL containing both username and password
 modelIndex | String | Specify the model name to document mapping, defaults to `loopback__model__name`
+
+### iamApiKey
+
+We honor the plugins’ configuration and passes them to the driver. 
+[Cloudant plugins](https://github.com/cloudant/nodejs-cloudant#the-plugins) has section 'iamauth' to show how the IAM authentication is handled by the driver.
+
+To connect to the Cloudant database using IAM authentication, you can configure your LoopBack datasource as:
+
+```ts
+"mydb": {
+ "name": "mydb",
+ "connector": "cloudant",
+ // make sure you provide the password here
+ "url": "https://<username>:<password>@<host>"
+ "database": "test",
+ "plugins": {
+   "iamauth": { "iamApiKey": "xxxxxxxxxx"}
+ }
+}
+```
 
 ### Advanced configuration
 Besides the basic configuration properties, user can provide advanced configuration information, for example proxy, in `requestDefaults`:
