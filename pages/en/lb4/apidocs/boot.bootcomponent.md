@@ -20,6 +20,7 @@ BootComponent is used to export the default list of Booter's made available by t
 ```typescript
 export declare class BootComponent implements Component 
 ```
+<b>Implements:</b> [Component](./core.component.md)
 
 ## Constructors
 

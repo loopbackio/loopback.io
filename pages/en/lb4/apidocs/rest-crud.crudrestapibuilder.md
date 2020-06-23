@@ -18,6 +18,7 @@ permalink: /doc/en/lb4/apidocs.rest-crud.crudrestapibuilder.html
 ```typescript
 export declare class CrudRestApiBuilder implements ModelApiBuilder 
 ```
+<b>Implements:</b> [ModelApiBuilder](./model-api-builder.modelapibuilder.md)
 
 ## Properties
 

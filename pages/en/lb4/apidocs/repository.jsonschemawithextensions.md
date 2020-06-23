@@ -20,4 +20,6 @@ This module defines the key classes representing building blocks for Domain Driv
 ```typescript
 export interface JsonSchemaWithExtensions extends JsonSchema 
 ```
+<b>Extends:</b> JsonSchema
+
 

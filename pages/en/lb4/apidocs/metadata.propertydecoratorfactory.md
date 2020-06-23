@@ -20,6 +20,7 @@ Factory for property decorators
 ```typescript
 export declare class PropertyDecoratorFactory<T> extends DecoratorFactory<T, MetadataMap<T>, PropertyDecorator> 
 ```
+<b>Extends:</b> [DecoratorFactory](./metadata.decoratorfactory.md)<!-- -->&lt;T, [MetadataMap](./metadata.metadatamap.md)<!-- -->&lt;T&gt;, PropertyDecorator&gt;
 
 ## Methods
 

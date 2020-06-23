@@ -18,6 +18,7 @@ permalink: /doc/en/lb4/apidocs.rest.redirectroute.html
 ```typescript
 export declare class RedirectRoute implements RouteEntry, ResolvedRoute 
 ```
+<b>Implements:</b> [RouteEntry](./rest.routeentry.md)<!-- -->, [ResolvedRoute](./rest.resolvedroute.md)
 
 ## Constructors
 

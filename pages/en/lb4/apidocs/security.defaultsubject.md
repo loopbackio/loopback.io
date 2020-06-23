@@ -20,6 +20,7 @@ Default implementation of `Subject`
 ```typescript
 export declare class DefaultSubject implements Subject 
 ```
+<b>Implements:</b> [Subject](./security.subject.md)
 
 ## Properties
 

@@ -20,6 +20,7 @@ Options for request body validation using AJV
 ```typescript
 export interface RequestBodyValidationOptions extends ajv.Options 
 ```
+<b>Extends:</b> ajv.Options
 
 ## Properties
 

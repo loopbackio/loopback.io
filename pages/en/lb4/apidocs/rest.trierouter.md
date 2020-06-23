@@ -20,6 +20,7 @@ Router implementation based on trie
 ```typescript
 export declare class TrieRouter extends BaseRouter 
 ```
+<b>Extends:</b> BaseRouter
 
 ## Constructors
 

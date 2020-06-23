@@ -20,6 +20,7 @@ Context provides an implementation of Inversion of Control (IoC) container
 ```typescript
 export declare class Context extends EventEmitter 
 ```
+<b>Extends:</b> EventEmitter
 
 ## Constructors
 

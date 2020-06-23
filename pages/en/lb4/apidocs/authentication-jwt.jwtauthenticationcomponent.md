@@ -18,6 +18,7 @@ permalink: /doc/en/lb4/apidocs.authentication-jwt.jwtauthenticationcomponent.htm
 ```typescript
 export declare class JWTAuthenticationComponent implements Component 
 ```
+<b>Implements:</b> [Component](./core.component.md)
 
 ## Constructors
 

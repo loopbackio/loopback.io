@@ -20,6 +20,7 @@ Provides the function that populates the response object with the results of the
 ```typescript
 export declare class SendProvider implements Provider<BoundValue> 
 ```
+<b>Implements:</b> [Provider](./context.provider.md)<!-- -->&lt;[BoundValue](./context.boundvalue.md)<!-- -->&gt;
 
 ## Methods
 

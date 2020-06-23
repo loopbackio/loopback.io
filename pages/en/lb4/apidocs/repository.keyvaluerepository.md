@@ -20,6 +20,7 @@ Key/Value operations for connector implementations
 ```typescript
 export interface KeyValueRepository<T extends Model> extends Repository<T> 
 ```
+<b>Extends:</b> [Repository](./repository.repository.md)<!-- -->&lt;T&gt;
 
 ## Methods
 

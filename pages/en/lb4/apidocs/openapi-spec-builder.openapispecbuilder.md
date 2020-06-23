@@ -20,6 +20,7 @@ A builder for creating OpenApiSpec documents.
 ```typescript
 export declare class OpenApiSpecBuilder extends BuilderBase<OpenAPIObject> 
 ```
+<b>Extends:</b> [BuilderBase](./openapi-spec-builder.builderbase.md)<!-- -->&lt;OpenAPIObject&gt;
 
 ## Constructors
 

@@ -20,6 +20,7 @@ A builder for creating OperationObject specifications.
 ```typescript
 export declare class OperationSpecBuilder extends BuilderBase<OperationObject> 
 ```
+<b>Extends:</b> [BuilderBase](./openapi-spec-builder.builderbase.md)<!-- -->&lt;OperationObject&gt;
 
 ## Constructors
 

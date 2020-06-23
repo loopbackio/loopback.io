@@ -20,6 +20,7 @@ The default implementation of SequenceHandler.
 ```typescript
 export declare class DefaultSequence implements SequenceHandler 
 ```
+<b>Implements:</b> [SequenceHandler](./rest.sequencehandler.md)
 
 ## Remarks
 

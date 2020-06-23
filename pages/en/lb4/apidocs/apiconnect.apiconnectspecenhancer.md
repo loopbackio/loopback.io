@@ -20,6 +20,7 @@ An OpenAPI spec enhancer to add `x-ibm-configuration` extension required by API 
 ```typescript
 export declare class ApiConnectSpecEnhancer implements OASEnhancer 
 ```
+<b>Implements:</b> [OASEnhancer](./openapi-v3.oasenhancer.md)
 
 ## Constructors
 

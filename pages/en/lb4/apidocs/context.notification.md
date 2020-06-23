@@ -20,6 +20,7 @@ Event data for observer notifications
 ```typescript
 export interface Notification extends ContextEvent 
 ```
+<b>Extends:</b> [ContextEvent](./context.contextevent.md)
 
 ## Properties
 

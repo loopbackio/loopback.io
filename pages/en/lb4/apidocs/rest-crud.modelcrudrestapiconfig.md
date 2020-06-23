@@ -18,6 +18,7 @@ permalink: /doc/en/lb4/apidocs.rest-crud.modelcrudrestapiconfig.html
 ```typescript
 export interface ModelCrudRestApiConfig extends ModelApiConfig 
 ```
+<b>Extends:</b> [ModelApiConfig](./model-api-builder.modelapiconfig.md)
 
 ## Properties
 

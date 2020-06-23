@@ -20,6 +20,7 @@ InvocationContext represents the context to invoke interceptors for a method. Th
 ```typescript
 export declare class InvocationContext extends Context 
 ```
+<b>Extends:</b> [Context](./context.context.md)
 
 ## Constructors
 

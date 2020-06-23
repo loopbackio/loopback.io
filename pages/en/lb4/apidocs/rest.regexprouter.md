@@ -20,6 +20,7 @@ Router implementation based on regexp matching
 ```typescript
 export declare class RegExpRouter extends BaseRouter 
 ```
+<b>Extends:</b> BaseRouter
 
 ## Constructors
 

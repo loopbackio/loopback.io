@@ -18,4 +18,6 @@ permalink: /doc/en/lb4/apidocs.security.clientapplication.html
 ```typescript
 export interface ClientApplication extends Principal 
 ```
+<b>Extends:</b> [Principal](./security.principal.md)
+
 

@@ -18,6 +18,7 @@ permalink: /doc/en/lb4/apidocs.repository.hasonedefinition.html
 ```typescript
 export interface HasOneDefinition extends RelationDefinitionBase 
 ```
+<b>Extends:</b> [RelationDefinitionBase](./repository.relationdefinitionbase.md)
 
 ## Properties
 

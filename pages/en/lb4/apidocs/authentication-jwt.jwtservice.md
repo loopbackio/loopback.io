@@ -18,6 +18,7 @@ permalink: /doc/en/lb4/apidocs.authentication-jwt.jwtservice.html
 ```typescript
 export declare class JWTService implements TokenService 
 ```
+<b>Implements:</b> [TokenService](./authentication.tokenservice.md)
 
 ## Constructors
 

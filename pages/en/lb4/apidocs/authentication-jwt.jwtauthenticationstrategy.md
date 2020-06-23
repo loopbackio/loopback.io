@@ -18,6 +18,7 @@ permalink: /doc/en/lb4/apidocs.authentication-jwt.jwtauthenticationstrategy.html
 ```typescript
 export declare class JWTAuthenticationStrategy implements AuthenticationStrategy 
 ```
+<b>Implements:</b> [AuthenticationStrategy](./authentication.authenticationstrategy.md)
 
 ## Constructors
 

@@ -20,6 +20,7 @@ Provides the function for parsing args in requests at runtime.
 ```typescript
 export declare class ParseParamsProvider implements Provider<ParseParams> 
 ```
+<b>Implements:</b> [Provider](./context.provider.md)<!-- -->&lt;[ParseParams](./rest.parseparams.md)<!-- -->&gt;
 
 ## Constructors
 

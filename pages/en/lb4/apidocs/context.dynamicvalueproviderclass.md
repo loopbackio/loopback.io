@@ -20,6 +20,7 @@ A class with a static `value` method as the factory function for `toDynamicValue
 ```typescript
 export interface DynamicValueProviderClass<T = unknown> extends Constructor<unknown>, Function 
 ```
+<b>Extends:</b> [Constructor](./context.constructor.md)<!-- -->&lt;unknown&gt;, Function
 
 ## Example
 

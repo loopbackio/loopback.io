@@ -20,6 +20,7 @@ Factory for method decorators
 ```typescript
 export declare class MethodDecoratorFactory<T> extends DecoratorFactory<T, MetadataMap<T>, MethodDecorator> 
 ```
+<b>Extends:</b> [DecoratorFactory](./metadata.decoratorfactory.md)<!-- -->&lt;T, [MetadataMap](./metadata.metadatamap.md)<!-- -->&lt;T&gt;, MethodDecorator&gt;
 
 ## Methods
 

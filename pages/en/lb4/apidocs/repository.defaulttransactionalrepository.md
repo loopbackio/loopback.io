@@ -20,6 +20,9 @@ Default implementation of CRUD repository using legacy juggler model and data so
 ```typescript
 export declare class DefaultTransactionalRepository<T extends Entity, ID, Relations extends object = {}> extends DefaultCrudRepository<T, ID, Relations> implements TransactionalEntityRepository<T, ID, Relations> 
 ```
+<b>Extends:</b> [DefaultCrudRepository](./repository.defaultcrudrepository.md)<!-- -->&lt;T, ID, Relations&gt;
+
+<b>Implements:</b> [TransactionalEntityRepository](./repository.transactionalentityrepository.md)<!-- -->&lt;T, ID, Relations&gt;
 
 ## Methods
 

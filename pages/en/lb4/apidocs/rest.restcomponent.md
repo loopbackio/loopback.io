@@ -18,6 +18,7 @@ permalink: /doc/en/lb4/apidocs.rest.restcomponent.html
 ```typescript
 export declare class RestComponent implements Component 
 ```
+<b>Implements:</b> [Component](./core.component.md)
 
 ## Constructors
 

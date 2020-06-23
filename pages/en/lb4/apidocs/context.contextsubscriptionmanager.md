@@ -20,6 +20,7 @@ Manager for context observer subscriptions
 ```typescript
 export declare class ContextSubscriptionManager extends EventEmitter 
 ```
+<b>Extends:</b> EventEmitter
 
 ## Constructors
 

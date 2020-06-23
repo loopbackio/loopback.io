@@ -20,6 +20,7 @@ HTTP server options
 ```typescript
 export interface HttpOptions extends BaseHttpOptions 
 ```
+<b>Extends:</b> [BaseHttpOptions](./http-server.basehttpoptions.md)
 
 ## Properties
 

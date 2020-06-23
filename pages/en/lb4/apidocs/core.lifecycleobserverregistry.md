@@ -20,6 +20,7 @@ A context-based registry for life cycle observers
 ```typescript
 export declare class LifeCycleObserverRegistry implements LifeCycleObserver 
 ```
+<b>Implements:</b> [LifeCycleObserver](./core.lifecycleobserver.md)
 
 ## Constructors
 

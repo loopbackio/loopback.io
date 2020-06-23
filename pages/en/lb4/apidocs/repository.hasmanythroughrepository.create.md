@@ -21,7 +21,7 @@ Create a target model instance
 create(targetModelData: DataObject<Target>, options?: Options & {
         throughData?: DataObject<Through>;
         throughOptions?: Options;
-    }): Promise<void>;
+    }): Promise<Target>;
 ```
 
 ## Parameters
@@ -33,7 +33,7 @@ create(targetModelData: DataObject<Target>, options?: Options & {
 
 <b>Returns:</b>
 
-Promise&lt;void&gt;
+Promise&lt;Target&gt;
 
 A promise which resolves to the newly created target model instance
 

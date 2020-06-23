@@ -20,6 +20,7 @@ Metadata for a service proxy
 ```typescript
 export declare class ServiceProxyMetadata implements InjectionMetadata 
 ```
+<b>Implements:</b> [InjectionMetadata](./context.injectionmetadata.md)
 
 ## Constructors
 

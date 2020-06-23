@@ -18,6 +18,7 @@ permalink: /doc/en/lb4/apidocs.rest.logerrorprovider.html
 ```typescript
 export declare class LogErrorProvider implements Provider<LogError> 
 ```
+<b>Implements:</b> [Provider](./context.provider.md)<!-- -->&lt;[LogError](./rest.logerror.md)<!-- -->&gt;
 
 ## Methods
 

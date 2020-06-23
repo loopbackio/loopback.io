@@ -18,6 +18,7 @@ permalink: /doc/en/lb4/apidocs.rest.jsonbodyparser.html
 ```typescript
 export declare class JsonBodyParser implements BodyParser 
 ```
+<b>Implements:</b> [BodyParser](./rest.bodyparser.md)
 
 ## Constructors
 

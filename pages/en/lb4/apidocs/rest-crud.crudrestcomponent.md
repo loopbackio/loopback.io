@@ -18,6 +18,7 @@ permalink: /doc/en/lb4/apidocs.rest-crud.crudrestcomponent.html
 ```typescript
 export declare class CrudRestComponent implements Component 
 ```
+<b>Implements:</b> [Component](./core.component.md)
 
 ## Properties
 

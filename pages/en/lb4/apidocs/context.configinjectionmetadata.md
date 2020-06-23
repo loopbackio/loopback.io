@@ -20,6 +20,7 @@ Injection metadata for `@config.*`
 ```typescript
 export interface ConfigInjectionMetadata extends InjectionMetadata 
 ```
+<b>Extends:</b> [InjectionMetadata](./context.injectionmetadata.md)
 
 ## Properties
 

@@ -20,6 +20,7 @@ Interface for an Application mixed in with RepositoryMixin
 ```typescript
 export interface ApplicationWithRepositories extends Application 
 ```
+<b>Extends:</b> [Application](./core.application.md)
 
 ## Methods
 

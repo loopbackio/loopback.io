@@ -18,6 +18,7 @@ permalink: /doc/en/lb4/apidocs.rest.findrouteprovider.html
 ```typescript
 export declare class FindRouteProvider implements Provider<FindRoute> 
 ```
+<b>Implements:</b> [Provider](./context.provider.md)<!-- -->&lt;[FindRoute](./rest.findroute.md)<!-- -->&gt;
 
 ## Constructors
 

@@ -20,6 +20,7 @@ Options to register a service binding
 ```typescript
 export interface ServiceOptions extends BindingFromClassOptions 
 ```
+<b>Extends:</b> [BindingFromClassOptions](./context.bindingfromclassoptions.md)
 
 ## Properties
 

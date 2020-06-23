@@ -17,6 +17,11 @@ for requests on a specific port, handle them, and return appropriate responses.
 A single application can have multiple server instances listening on different
 ports and working with different protocols.
 
+## Common tasks
+
+- [Enable HTTPS](./guides/deployment/enabling-https.md)
+- [Customize how OpenAPI spec is served](./guides/rest/customize-openapi.md)
+
 ## Usage
 
 LoopBack 4 offers the
@@ -65,40 +70,6 @@ number that a REST server listens on.
 const app = new RestApplication({
   rest: {
     port: 3001,
-  },
-});
-```
-
-### Customize How OpenAPI Spec is Served
-
-There are a few options under `rest.openApiSpec` to configure how OpenAPI spec
-is served by the given REST server.
-
-- servers: Configure servers for OpenAPI spec
-- setServersFromRequest: Set `servers` based on HTTP request headers, default to
-  `false`
-- disabled: Set to `true` to disable endpoints for the OpenAPI spec. It will
-  disable API Explorer too.
-- endpointMapping: Maps urls for various forms of the spec. Default to:
-
-```js
-    {
-      '/openapi.json': {version: '3.0.0', format: 'json'},
-      '/openapi.yaml': {version: '3.0.0', format: 'yaml'},
-    }
-```
-
-```ts
-const app = new RestApplication({
-  rest: {
-    openApiSpec: {
-      servers: [{url: 'http://127.0.0.1:8080'}],
-      setServersFromRequest: false,
-      endpointMapping: {
-        '/openapi.json': {version: '3.0.0', format: 'json'},
-        '/openapi.yaml': {version: '3.0.0', format: 'yaml'},
-      },
-    },
   },
 });
 ```
@@ -152,37 +123,6 @@ alternative, LoopBack comes with an extension that provides a self-hosted
 Explorer UI. Please refer to
 [Self-hosted REST API Explorer](./Self-hosted-REST-API-Explorer.md) for more
 details.
-
-### Enable HTTPS
-
-Enabling HTTPS for the LoopBack REST server is just a matter of specifying the
-protocol as `https` and specifying the credentials.
-
-In the following app, we configure HTTPS for a bare minimum app using a key +
-certificate chain variant.
-
-```ts
-import {RestApplication, RestServer, RestBindings} from '@loopback/rest';
-import fs from 'fs';
-
-export async function main() {
-  const options = {
-    rest: {
-      protocol: 'https',
-      key: fs.readFileSync('./key.pem'),
-      cert: fs.readFileSync('./cert.pem'),
-    },
-  };
-  const app = new RestApplication(options);
-  app.handler(handler => {
-    handler.response.send('Hello');
-  });
-  await app.start();
-
-  const url = app.restServer.url;
-  console.log(`Server is running at ${url}`);
-}
-```
 
 ### Customize CORS
 

@@ -18,6 +18,7 @@ permalink: /doc/en/lb4/apidocs.authentication-jwt.usercredentials.html
 ```typescript
 export declare class UserCredentials extends Entity 
 ```
+<b>Extends:</b> [Entity](./repository.entity.md)
 
 ## Constructors
 

@@ -20,6 +20,7 @@ Object type
 ```typescript
 export declare class ObjectType<T extends AnyObject> implements Type<T> 
 ```
+<b>Implements:</b> [Type](./repository.type.md)<!-- -->&lt;T&gt;
 
 ## Constructors
 

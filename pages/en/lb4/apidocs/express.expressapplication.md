@@ -20,6 +20,7 @@ A LoopBack application with Express server
 ```typescript
 export declare class ExpressApplication extends Application 
 ```
+<b>Extends:</b> [Application](./core.application.md)
 
 ## Constructors
 

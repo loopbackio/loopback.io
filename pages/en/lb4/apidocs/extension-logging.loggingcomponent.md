@@ -20,6 +20,7 @@ A component providing logging facilities
 ```typescript
 export declare class LoggingComponent implements Component 
 ```
+<b>Implements:</b> [Component](./core.component.md)
 
 ## Constructors
 

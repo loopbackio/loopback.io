@@ -18,6 +18,7 @@ permalink: /doc/en/lb4/apidocs.boot.modelapibooter.html
 ```typescript
 export declare class ModelApiBooter extends BaseArtifactBooter 
 ```
+<b>Extends:</b> [BaseArtifactBooter](./boot.baseartifactbooter.md)
 
 ## Constructors
 

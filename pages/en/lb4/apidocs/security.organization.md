@@ -18,4 +18,6 @@ permalink: /doc/en/lb4/apidocs.security.organization.html
 ```typescript
 export interface Organization extends Principal 
 ```
+<b>Extends:</b> [Principal](./security.principal.md)
+
 

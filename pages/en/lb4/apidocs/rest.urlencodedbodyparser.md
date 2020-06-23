@@ -18,6 +18,7 @@ permalink: /doc/en/lb4/apidocs.rest.urlencodedbodyparser.html
 ```typescript
 export declare class UrlEncodedBodyParser implements BodyParser 
 ```
+<b>Implements:</b> [BodyParser](./rest.bodyparser.md)
 
 ## Constructors
 

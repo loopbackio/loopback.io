@@ -20,6 +20,7 @@ Defines the requirements to implement a Server for LoopBack applications: start(
 ```typescript
 export interface Server extends LifeCycleObserver 
 ```
+<b>Extends:</b> [LifeCycleObserver](./core.lifecycleobserver.md)
 
 ## Properties
 

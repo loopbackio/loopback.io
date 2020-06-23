@@ -20,6 +20,7 @@ Options for an interceptor binding
 ```typescript
 export interface InterceptorBindingOptions extends BindingFromClassOptions 
 ```
+<b>Extends:</b> [BindingFromClassOptions](./context.bindingfromclassoptions.md)
 
 ## Properties
 

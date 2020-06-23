@@ -20,6 +20,7 @@ Extension point for middleware to be run as part of the sequence actions
 ```typescript
 export declare class InvokeMiddlewareProvider implements Provider<InvokeMiddleware> 
 ```
+<b>Implements:</b> [Provider](./context.provider.md)<!-- -->&lt;[InvokeMiddleware](./express.invokemiddleware.md)<!-- -->&gt;
 
 ## Properties
 

@@ -18,6 +18,7 @@ permalink: /doc/en/lb4/apidocs.repository.entitynotfounderror.html
 ```typescript
 export declare class EntityNotFoundError<ID, Props extends object = {}> extends Error 
 ```
+<b>Extends:</b> Error
 
 ## Constructors
 

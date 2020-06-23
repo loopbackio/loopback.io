@@ -20,6 +20,7 @@ Binding filter function that holds a binding tag pattern. `Context.find()` uses 
 ```typescript
 export interface BindingTagFilter extends BindingFilter 
 ```
+<b>Extends:</b> [BindingFilter](./context.bindingfilter.md)
 
 ## Properties
 

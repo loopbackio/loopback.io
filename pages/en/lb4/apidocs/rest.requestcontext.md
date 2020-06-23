@@ -20,6 +20,9 @@ A per-request Context combining an IoC container with handler context (request, 
 ```typescript
 export declare class RequestContext extends MiddlewareContext implements HandlerContext 
 ```
+<b>Extends:</b> [MiddlewareContext](./express.middlewarecontext.md)
+
+<b>Implements:</b> [HandlerContext](./express.handlercontext.md)
 
 ## Constructors
 

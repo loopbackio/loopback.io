@@ -18,6 +18,7 @@ permalink: /doc/en/lb4/apidocs.authorization.authorizationcomponent.html
 ```typescript
 export declare class AuthorizationComponent implements Component 
 ```
+<b>Implements:</b> [Component](./core.component.md)
 
 ## Properties
 

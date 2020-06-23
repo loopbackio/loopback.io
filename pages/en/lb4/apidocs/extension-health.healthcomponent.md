@@ -20,6 +20,7 @@ A component providing health status
 ```typescript
 export declare class HealthComponent implements Component 
 ```
+<b>Implements:</b> [Component](./core.component.md)
 
 ## Constructors
 

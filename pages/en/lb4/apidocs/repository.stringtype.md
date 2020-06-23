@@ -20,6 +20,7 @@ String type
 ```typescript
 export declare class StringType implements Type<string> 
 ```
+<b>Implements:</b> [Type](./repository.type.md)<!-- -->&lt;string&gt;
 
 ## Properties
 

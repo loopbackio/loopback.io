@@ -20,6 +20,7 @@ Type description for `package.json`
 ```typescript
 export interface ApplicationMetadata extends JSONObject 
 ```
+<b>Extends:</b> [JSONObject](./context.jsonobject.md)
 
 ## Properties
 

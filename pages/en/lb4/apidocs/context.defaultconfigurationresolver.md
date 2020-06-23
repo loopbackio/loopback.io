@@ -20,6 +20,7 @@ Resolver for configurations of bindings
 ```typescript
 export declare class DefaultConfigurationResolver implements ConfigurationResolver 
 ```
+<b>Implements:</b> [ConfigurationResolver](./context.configurationresolver.md)
 
 ## Constructors
 

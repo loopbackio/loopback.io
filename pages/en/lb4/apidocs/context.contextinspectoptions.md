@@ -20,6 +20,7 @@ Options for context.inspect()
 ```typescript
 export interface ContextInspectOptions extends BindingInspectOptions 
 ```
+<b>Extends:</b> [BindingInspectOptions](./context.bindinginspectoptions.md)
 
 ## Properties
 

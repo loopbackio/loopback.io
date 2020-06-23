@@ -18,6 +18,7 @@ permalink: /doc/en/lb4/apidocs.repository.invalidrelationerror.html
 ```typescript
 export declare class InvalidRelationError<Props extends object = {}> extends Error 
 ```
+<b>Extends:</b> Error
 
 ## Constructors
 

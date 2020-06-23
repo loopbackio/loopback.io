@@ -20,6 +20,7 @@ The custom error class that describes the error thrown by the authorization modu
 ```typescript
 export declare class AuthorizationError extends Error 
 ```
+<b>Extends:</b> Error
 
 ## Properties
 

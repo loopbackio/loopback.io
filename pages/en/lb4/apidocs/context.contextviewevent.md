@@ -20,6 +20,7 @@ An event emitted by a `ContextView`
 ```typescript
 export interface ContextViewEvent<T> extends ContextEvent 
 ```
+<b>Extends:</b> [ContextEvent](./context.contextevent.md)
 
 ## Properties
 

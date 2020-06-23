@@ -18,6 +18,7 @@ permalink: /doc/en/lb4/apidocs.rest.rejectprovider.html
 ```typescript
 export declare class RejectProvider implements Provider<Reject> 
 ```
+<b>Implements:</b> [Provider](./context.provider.md)<!-- -->&lt;[Reject](./rest.reject.md)<!-- -->&gt;
 
 ## Constructors
 

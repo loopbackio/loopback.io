@@ -20,6 +20,7 @@ An OpenAPI spec enhancer to populate `info` with application metadata (package.j
 ```typescript
 export declare class InfoSpecEnhancer implements OASEnhancer 
 ```
+<b>Implements:</b> [OASEnhancer](./openapi-v3.oasenhancer.md)
 
 ## Constructors
 

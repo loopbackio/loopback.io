@@ -18,6 +18,7 @@ permalink: /doc/en/lb4/apidocs.repository.belongstodefinition.html
 ```typescript
 export interface BelongsToDefinition extends RelationDefinitionBase 
 ```
+<b>Extends:</b> [RelationDefinitionBase](./repository.relationdefinitionbase.md)
 
 ## Properties
 

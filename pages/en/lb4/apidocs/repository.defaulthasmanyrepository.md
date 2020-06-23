@@ -18,6 +18,7 @@ permalink: /doc/en/lb4/apidocs.repository.defaulthasmanyrepository.html
 ```typescript
 export declare class DefaultHasManyRepository<TargetEntity extends Entity, TargetID, TargetRepository extends EntityCrudRepository<TargetEntity, TargetID>> implements HasManyRepository<TargetEntity> 
 ```
+<b>Implements:</b> [HasManyRepository](./repository.hasmanyrepository.md)<!-- -->&lt;TargetEntity&gt;
 
 ## Constructors
 

@@ -18,6 +18,7 @@ permalink: /doc/en/lb4/apidocs.repository.schemamigrationoptions.html
 ```typescript
 export interface SchemaMigrationOptions extends Options 
 ```
+<b>Extends:</b> [Options](./repository.options.md)
 
 ## Properties
 

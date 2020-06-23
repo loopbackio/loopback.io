@@ -20,6 +20,7 @@ A component providing a self-hosted API Explorer.
 ```typescript
 export declare class RestExplorerComponent implements Component 
 ```
+<b>Implements:</b> [Component](./core.component.md)
 
 ## Constructors
 

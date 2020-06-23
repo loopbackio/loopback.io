@@ -18,6 +18,7 @@ permalink: /doc/en/lb4/apidocs.testlab.httpsoptions.html
 ```typescript
 export interface HttpsOptions extends ListenOptions, HttpsServerOptions 
 ```
+<b>Extends:</b> ListenOptions, HttpsServerOptions
 
 ## Properties
 

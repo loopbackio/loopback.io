@@ -20,6 +20,9 @@ An implementation of the Application class that automatically provides an instan
 ```typescript
 export declare class RestApplication extends Application implements HttpServerLike 
 ```
+<b>Extends:</b> [Application](./core.application.md)
+
+<b>Implements:</b> [HttpServerLike](./rest.httpserverlike.md)
 
 ## Constructors
 

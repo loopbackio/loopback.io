@@ -20,6 +20,7 @@ A route with path parameters resolved
 ```typescript
 export interface ResolvedRoute extends RouteEntry 
 ```
+<b>Extends:</b> [RouteEntry](./rest.routeentry.md)
 
 ## Properties
 

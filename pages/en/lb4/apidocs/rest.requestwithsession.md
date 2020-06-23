@@ -20,6 +20,7 @@ extending express request type with a session field
 ```typescript
 export interface RequestWithSession extends Request 
 ```
+<b>Extends:</b> Request
 
 ## Properties
 

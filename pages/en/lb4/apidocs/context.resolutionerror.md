@@ -20,6 +20,7 @@ Error for context binding resolutions and dependency injections
 ```typescript
 export declare class ResolutionError extends Error 
 ```
+<b>Extends:</b> Error
 
 ## Constructors
 

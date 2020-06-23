@@ -20,6 +20,7 @@ Factory for class decorators
 ```typescript
 export declare class ClassDecoratorFactory<T> extends DecoratorFactory<T, T, ClassDecorator> 
 ```
+<b>Extends:</b> [DecoratorFactory](./metadata.decoratorfactory.md)<!-- -->&lt;T, T, ClassDecorator&gt;
 
 ## Methods
 

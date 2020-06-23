@@ -20,6 +20,7 @@ A spec enhancer to add bearer token OpenAPI security entry to `spec.component.se
 ```typescript
 export declare class SecuritySpecEnhancer implements OASEnhancer 
 ```
+<b>Implements:</b> [OASEnhancer](./openapi-v3.oasenhancer.md)
 
 ## Properties
 

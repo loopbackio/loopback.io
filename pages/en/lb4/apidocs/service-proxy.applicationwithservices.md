@@ -20,6 +20,7 @@ Interface for an Application mixed in with ServiceMixin
 ```typescript
 export interface ApplicationWithServices extends Application 
 ```
+<b>Extends:</b> [Application](./core.application.md)
 
 ## Methods
 

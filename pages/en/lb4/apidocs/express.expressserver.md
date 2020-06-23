@@ -20,6 +20,9 @@ An Express server that provides middleware composition and injection
 ```typescript
 export declare class ExpressServer extends BaseMiddlewareRegistry implements Server 
 ```
+<b>Extends:</b> [BaseMiddlewareRegistry](./express.basemiddlewareregistry.md)
+
+<b>Implements:</b> [Server](./core.server.md)
 
 ## Constructors
 

@@ -20,6 +20,7 @@ Provides the authentication action for a sequence
 ```typescript
 export declare class AuthenticateActionProvider implements Provider<AuthenticateFn> 
 ```
+<b>Implements:</b> [Provider](./context.provider.md)<!-- -->&lt;[AuthenticateFn](./authentication.authenticatefn.md)<!-- -->&gt;
 
 ## Example
 

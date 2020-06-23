@@ -20,6 +20,7 @@ An object to provide metadata for `@inject`
 ```typescript
 export interface InjectionMetadata extends ResolutionOptions 
 ```
+<b>Extends:</b> [ResolutionOptions](./context.resolutionoptions.md)
 
 ## Properties
 

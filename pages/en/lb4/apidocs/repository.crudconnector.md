@@ -20,6 +20,7 @@ CRUD operations for connector implementations
 ```typescript
 export interface CrudConnector extends Connector 
 ```
+<b>Extends:</b> [Connector](./repository.connector.md)
 
 ## Methods
 

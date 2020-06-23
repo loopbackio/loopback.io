@@ -5,7 +5,7 @@ keywords:
   LoopBack 4.0, LoopBack 4, Node.js, TypeScript, OpenAPI, Authentication,
   Tutorial
 sidebar: lb4_sidebar
-permalink: /doc/en/lb4/Authentication-Tutorial.html
+permalink: /doc/en/lb4/Authentication-tutorial.html
 summary: A LoopBack 4 application that uses JWT authentication
 ---
 
@@ -234,7 +234,7 @@ APIs. Go to `src/controllers/todo.controller.ts`. Simple add
 `@authenticate('jwt')` before the `TodoController` class. This will protect all
 the APIs in this controller.
 
-{% include code-caption.html content="/src/controllers/user.controller.ts" %}
+{% include code-caption.html content="/src/controllers/todo.controller.ts" %}
 
 ```ts
 // ---------- ADD IMPORTS -------------

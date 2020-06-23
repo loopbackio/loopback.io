@@ -22,6 +22,7 @@ Built-in parsers retrieve their own options from the request body parser options
 ```typescript
 export interface RequestBodyParserOptions extends Options 
 ```
+<b>Extends:</b> Options
 
 ## Properties
 

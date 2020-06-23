@@ -20,6 +20,7 @@ Options to run api-extractor against the lerna repo
 ```typescript
 export interface ExtractorOptions extends ApiDocsOptions 
 ```
+<b>Extends:</b> [ApiDocsOptions](./tsdocs.apidocsoptions.md)
 
 ## Properties
 

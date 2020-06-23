@@ -18,6 +18,7 @@ permalink: /doc/en/lb4/apidocs.security.role.html
 ```typescript
 export interface Role extends Principal 
 ```
+<b>Extends:</b> [Principal](./security.principal.md)
 
 ## Properties
 

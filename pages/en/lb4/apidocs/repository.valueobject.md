@@ -20,4 +20,8 @@ Base class for value objects - An object that contains attributes but has no con
 ```typescript
 export declare abstract class ValueObject extends Model implements Persistable 
 ```
+<b>Extends:</b> [Model](./repository.model.md)
+
+<b>Implements:</b> [Persistable](./repository.persistable.md)
+
 

@@ -18,6 +18,7 @@ permalink: /doc/en/lb4/apidocs.booter-lb3app.lb3appbootercomponent.html
 ```typescript
 export declare class Lb3AppBooterComponent implements Component 
 ```
+<b>Implements:</b> [Component](./core.component.md)
 
 ## Properties
 

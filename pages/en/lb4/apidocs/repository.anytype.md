@@ -20,6 +20,7 @@ Any type
 ```typescript
 export declare class AnyType implements Type<any> 
 ```
+<b>Implements:</b> [Type](./repository.type.md)<!-- -->&lt;any&gt;
 
 ## Properties
 

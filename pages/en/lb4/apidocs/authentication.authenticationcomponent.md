@@ -18,6 +18,7 @@ permalink: /doc/en/lb4/apidocs.authentication.authenticationcomponent.html
 ```typescript
 export declare class AuthenticationComponent implements Component 
 ```
+<b>Implements:</b> [Component](./core.component.md)
 
 ## Constructors
 

@@ -20,6 +20,7 @@ Factory for an append-array of method-level decorators The `@response` metadata 
 ```typescript
 export declare class MethodMultiDecoratorFactory<T> extends MethodDecoratorFactory<T[]> 
 ```
+<b>Extends:</b> [MethodDecoratorFactory](./metadata.methoddecoratorfactory.md)<!-- -->&lt;T\[\]&gt;
 
 ## Example
 

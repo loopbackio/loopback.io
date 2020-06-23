@@ -22,6 +22,7 @@ Supported phases: configure, discover, load
 ```typescript
 export declare class LifeCycleObserverBooter extends BaseArtifactBooter 
 ```
+<b>Extends:</b> [BaseArtifactBooter](./boot.baseartifactbooter.md)
 
 ## Constructors
 

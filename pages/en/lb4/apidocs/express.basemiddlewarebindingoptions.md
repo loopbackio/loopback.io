@@ -20,6 +20,7 @@ Options to create a middleware binding for the sequence action or interceptor.
 ```typescript
 export interface BaseMiddlewareBindingOptions<CTX extends Context> extends MiddlewareCreationOptions 
 ```
+<b>Extends:</b> [MiddlewareCreationOptions](./express.middlewarecreationoptions.md)
 
 ## Properties
 

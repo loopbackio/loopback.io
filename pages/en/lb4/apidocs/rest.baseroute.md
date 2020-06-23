@@ -20,6 +20,7 @@ Base implementation of RouteEntry
 ```typescript
 export declare abstract class BaseRoute implements RouteEntry 
 ```
+<b>Implements:</b> [RouteEntry](./rest.routeentry.md)
 
 ## Constructors
 

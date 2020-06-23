@@ -20,6 +20,7 @@ Key/Value operations for connector implementations
 ```typescript
 export interface KVConnector<T extends Entity> extends Connector 
 ```
+<b>Extends:</b> [Connector](./repository.connector.md)
 
 ## Methods
 

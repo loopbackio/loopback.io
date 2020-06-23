@@ -18,7 +18,7 @@ permalink: /doc/en/lb4/apidocs.repository.defaulthasmanythroughrepository.find.h
 ```typescript
 find(filter?: Filter<TargetEntity>, options?: Options & {
         throughOptions?: Options;
-    }): Promise<void>;
+    }): Promise<TargetEntity[]>;
 ```
 
 ## Parameters
@@ -30,6 +30,6 @@ find(filter?: Filter<TargetEntity>, options?: Options & {
 
 <b>Returns:</b>
 
-Promise&lt;void&gt;
+Promise&lt;TargetEntity\[\]&gt;
 
 

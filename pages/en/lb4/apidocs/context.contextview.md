@@ -24,6 +24,9 @@ This class is the key utility to implement dynamic extensions for extension poin
 ```typescript
 export declare class ContextView<T = unknown> extends EventEmitter implements ContextObserver 
 ```
+<b>Extends:</b> EventEmitter
+
+<b>Implements:</b> [ContextObserver](./context.contextobserver.md)
 
 ## Constructors
 

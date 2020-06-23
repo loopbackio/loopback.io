@@ -20,6 +20,7 @@ A route backed by a controller
 ```typescript
 export declare class ControllerRoute<T> extends BaseRoute 
 ```
+<b>Extends:</b> [BaseRoute](./rest.baseroute.md)
 
 ## Constructors
 

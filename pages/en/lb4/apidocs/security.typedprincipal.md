@@ -18,6 +18,7 @@ permalink: /doc/en/lb4/apidocs.security.typedprincipal.html
 ```typescript
 export declare class TypedPrincipal implements Principal 
 ```
+<b>Implements:</b> [Principal](./security.principal.md)
 
 ## Constructors
 

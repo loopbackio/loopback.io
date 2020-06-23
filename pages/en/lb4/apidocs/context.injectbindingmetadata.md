@@ -20,6 +20,7 @@ Metadata for `@inject.binding`
 ```typescript
 export interface InjectBindingMetadata extends InjectionMetadata 
 ```
+<b>Extends:</b> [InjectionMetadata](./context.injectionmetadata.md)
 
 ## Properties
 

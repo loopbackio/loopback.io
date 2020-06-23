@@ -22,6 +22,7 @@ The signature of a middleware function is described at [Middleware](https://loop
 ```typescript
 export interface Middleware extends GenericInterceptor<MiddlewareContext> 
 ```
+<b>Extends:</b> [GenericInterceptor](./context.genericinterceptor.md)<!-- -->&lt;[MiddlewareContext](./express.middlewarecontext.md)<!-- -->&gt;
 
 ## Example
 

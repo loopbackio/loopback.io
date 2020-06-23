@@ -20,4 +20,6 @@ JSON array
 ```typescript
 export interface JSONArray extends Array<JSONValue> 
 ```
+<b>Extends:</b> Array&lt;[JSONValue](./context.jsonvalue.md)<!-- -->&gt;
+
 

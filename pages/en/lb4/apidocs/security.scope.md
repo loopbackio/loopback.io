@@ -20,6 +20,7 @@ oAuth 2.0 scope
 ```typescript
 export interface Scope extends Permission 
 ```
+<b>Extends:</b> [Permission](./security.permission.md)
 
 ## Properties
 

@@ -26,6 +26,7 @@ Currently supports the following boot phases: configure, discover, load.
 ```typescript
 export declare class BaseArtifactBooter implements Booter 
 ```
+<b>Implements:</b> [Booter](./boot.booter.md)
 
 ## Constructors
 

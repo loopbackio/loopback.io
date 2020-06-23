@@ -20,6 +20,7 @@ Parsing the request body into Buffer
 ```typescript
 export declare class RawBodyParser implements BodyParser 
 ```
+<b>Implements:</b> [BodyParser](./rest.bodyparser.md)
 
 ## Constructors
 

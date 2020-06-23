@@ -20,6 +20,7 @@ Binding represents an entry in the `Context`<!-- -->. Each binding has a key and
 ```typescript
 export declare class Binding<T = BoundValue> extends EventEmitter 
 ```
+<b>Extends:</b> EventEmitter
 
 ## Constructors
 

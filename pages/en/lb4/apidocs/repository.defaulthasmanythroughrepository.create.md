@@ -19,7 +19,7 @@ permalink: /doc/en/lb4/apidocs.repository.defaulthasmanythroughrepository.create
 create(targetModelData: DataObject<TargetEntity>, options?: Options & {
         throughData?: DataObject<ThroughEntity>;
         throughOptions?: Options;
-    }): Promise<void>;
+    }): Promise<TargetEntity>;
 ```
 
 ## Parameters
@@ -31,6 +31,6 @@ create(targetModelData: DataObject<TargetEntity>, options?: Options & {
 
 <b>Returns:</b>
 
-Promise&lt;void&gt;
+Promise&lt;TargetEntity&gt;
 
 

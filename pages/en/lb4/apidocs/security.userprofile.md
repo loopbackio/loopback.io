@@ -20,6 +20,7 @@ The minimum set of attributes that describe a user.
 ```typescript
 export interface UserProfile extends Principal 
 ```
+<b>Extends:</b> [Principal](./security.principal.md)
 
 ## Properties
 

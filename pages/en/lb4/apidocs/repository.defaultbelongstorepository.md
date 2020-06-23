@@ -18,6 +18,7 @@ permalink: /doc/en/lb4/apidocs.repository.defaultbelongstorepository.html
 ```typescript
 export declare class DefaultBelongsToRepository<TargetEntity extends Entity, TargetId, TargetRepository extends EntityCrudRepository<TargetEntity, TargetId>> implements BelongsToRepository<TargetEntity> 
 ```
+<b>Implements:</b> [BelongsToRepository](./repository.belongstorepository.md)<!-- -->&lt;TargetEntity&gt;
 
 ## Constructors
 

@@ -20,6 +20,7 @@ The CronComponent manages cron jobs. It serves as an extension point for cron jo
 ```typescript
 export declare class CronComponent implements Component, LifeCycleObserver 
 ```
+<b>Implements:</b> [Component](./core.component.md)<!-- -->, [LifeCycleObserver](./core.lifecycleobserver.md)
 
 ## Constructors
 

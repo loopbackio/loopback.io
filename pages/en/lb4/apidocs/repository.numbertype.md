@@ -20,6 +20,7 @@ Number type
 ```typescript
 export declare class NumberType implements Type<number> 
 ```
+<b>Implements:</b> [Type](./repository.type.md)<!-- -->&lt;number&gt;
 
 ## Properties
 

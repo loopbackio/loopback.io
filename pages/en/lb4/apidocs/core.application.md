@@ -20,6 +20,9 @@ Application is the container for various types of artifacts, such as components,
 ```typescript
 export declare class Application extends Context implements LifeCycleObserver 
 ```
+<b>Extends:</b> [Context](./context.context.md)
+
+<b>Implements:</b> [LifeCycleObserver](./core.lifecycleobserver.md)
 
 ## Constructors
 

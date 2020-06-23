@@ -18,6 +18,7 @@ permalink: /doc/en/lb4/apidocs.rest.invokemethodprovider.html
 ```typescript
 export declare class InvokeMethodProvider implements Provider<InvokeMethod> 
 ```
+<b>Implements:</b> [Provider](./context.provider.md)<!-- -->&lt;[InvokeMethod](./rest.invokemethod.md)<!-- -->&gt;
 
 ## Constructors
 

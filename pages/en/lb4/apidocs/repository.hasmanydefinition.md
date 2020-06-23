@@ -20,6 +20,7 @@ HasManyDefinition defines one-to-many relations and also possible defines many-t
 ```typescript
 export interface HasManyDefinition extends RelationDefinitionBase 
 ```
+<b>Extends:</b> [RelationDefinitionBase](./repository.relationdefinitionbase.md)
 
 ## Properties
 

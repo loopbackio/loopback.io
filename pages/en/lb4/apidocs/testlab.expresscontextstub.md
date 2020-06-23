@@ -18,6 +18,7 @@ permalink: /doc/en/lb4/apidocs.testlab.expresscontextstub.html
 ```typescript
 export interface ExpressContextStub extends HandlerContextStub 
 ```
+<b>Extends:</b> [HandlerContextStub](./testlab.handlercontextstub.md)
 
 ## Properties
 

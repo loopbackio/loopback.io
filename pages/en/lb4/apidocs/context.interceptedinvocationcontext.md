@@ -20,6 +20,7 @@ A specialized InvocationContext for interceptors
 ```typescript
 export declare class InterceptedInvocationContext extends InvocationContext 
 ```
+<b>Extends:</b> [InvocationContext](./context.invocationcontext.md)
 
 ## Methods
 

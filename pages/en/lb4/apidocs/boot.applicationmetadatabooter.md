@@ -20,6 +20,7 @@ Configure the application with metadata from `package.json`
 ```typescript
 export declare class ApplicationMetadataBooter implements Booter 
 ```
+<b>Implements:</b> [Booter](./boot.booter.md)
 
 ## Constructors
 

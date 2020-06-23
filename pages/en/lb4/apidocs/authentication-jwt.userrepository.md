@@ -18,6 +18,7 @@ permalink: /doc/en/lb4/apidocs.authentication-jwt.userrepository.html
 ```typescript
 export declare class UserRepository extends DefaultCrudRepository<User, typeof User.prototype.id, UserRelations> 
 ```
+<b>Extends:</b> [DefaultCrudRepository](./repository.defaultcrudrepository.md)<!-- -->&lt;[User](./authentication-jwt.user.md)<!-- -->, typeof [User.prototype.id](./authentication-jwt.user.id.md)<!-- -->, [UserRelations](./authentication-jwt.userrelations.md)<!-- -->&gt;
 
 ## Constructors
 

@@ -20,6 +20,7 @@ A component providing metrics for Prometheus
 ```typescript
 export declare class MetricsComponent implements Component 
 ```
+<b>Implements:</b> [Component](./core.component.md)
 
 ## Constructors
 

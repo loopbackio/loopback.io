@@ -20,6 +20,7 @@ Adapter class to invoke passport-strategy 1. provides express dependencies to th
 ```typescript
 export declare class StrategyAdapter<U> implements AuthenticationStrategy 
 ```
+<b>Implements:</b> [AuthenticationStrategy](./authentication.authenticationstrategy.md)
 
 ## Constructors
 

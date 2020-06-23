@@ -18,6 +18,7 @@ permalink: /doc/en/lb4/apidocs.apiconnect.apiconnectcomponent.html
 ```typescript
 export declare class ApiConnectComponent implements Component 
 ```
+<b>Implements:</b> [Component](./core.component.md)
 
 ## Properties
 

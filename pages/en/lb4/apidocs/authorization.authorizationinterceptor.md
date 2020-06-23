@@ -18,6 +18,7 @@ permalink: /doc/en/lb4/apidocs.authorization.authorizationinterceptor.html
 ```typescript
 export declare class AuthorizationInterceptor implements Provider<Interceptor> 
 ```
+<b>Implements:</b> [Provider](./context.provider.md)<!-- -->&lt;[Interceptor](./context.interceptor.md)<!-- -->&gt;
 
 ## Constructors
 

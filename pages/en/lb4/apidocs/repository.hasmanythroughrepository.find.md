@@ -20,7 +20,7 @@ Find target model instance(s)
 ```typescript
 find(filter?: Filter<Target>, options?: Options & {
         throughOptions?: Options;
-    }): Promise<void>;
+    }): Promise<Target[]>;
 ```
 
 ## Parameters
@@ -32,7 +32,7 @@ find(filter?: Filter<Target>, options?: Options & {
 
 <b>Returns:</b>
 
-Promise&lt;void&gt;
+Promise&lt;Target\[\]&gt;
 
 A promise which resolves with the found target instance(s)
 

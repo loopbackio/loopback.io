@@ -20,6 +20,7 @@ Basic CRUD operations for ValueObject and Entity. No ID is required.
 ```typescript
 export interface CrudRepository<T extends ValueObject | Entity, Relations extends object = {}> extends Repository<T> 
 ```
+<b>Extends:</b> [Repository](./repository.repository.md)<!-- -->&lt;T&gt;
 
 ## Methods
 

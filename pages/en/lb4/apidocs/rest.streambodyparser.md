@@ -20,6 +20,7 @@ A special body parser to retain request stream as is. It will be used by explici
 ```typescript
 export declare class StreamBodyParser implements BodyParser 
 ```
+<b>Implements:</b> [BodyParser](./rest.bodyparser.md)
 
 ## Properties
 
