@@ -17,7 +17,7 @@ layout: translation
 
 通过编写你自己的 Application 类，你可以执行下列其他几项任务，将其作为你的设置的一部分：
 
-- Pass the configuration into the base class constructor
+- 把配置传递给积累的构造函数中
 - 在启动应用程序之前，执行异步启动功能。
 - 在应用程序停止时，执行优雅的清理功能。
 
