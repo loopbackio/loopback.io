@@ -6,20 +6,18 @@
 const fs = require('fs-extra');
 const path = require('path');
 const yaml = require('js-yaml');
+const assert = require('assert');
 
 const srcDocs = path.resolve(__dirname,'node_modules/@loopback/docs/site');
 const destDocs = path.resolve(__dirname, 'pages/en/lb4');
 const srcSidebars = path.resolve(srcDocs, 'sidebars');
 const destSidebars= path.resolve(__dirname, '_data/sidebars');
 const lb4Sidebar = yaml.safeLoad(fs.readFileSync(__dirname + '/_data/sidebars/lb4_sidebar.yml', 'utf8'));
-let connectorsReference;
-for (let i = 0; i < lb4Sidebar.children.length; i++) {
-  const child = lb4Sidebar.children[i];
-  if (child.title === 'Connectors reference') {
-    connectorsReference = child;
-    break;
-  }
-}
+
+const refs = lb4Sidebar.children.find(c => c.title === 'Reference guides');
+assert(refs != null, 'Reference guides is not found in lb4_sidebar.yml');
+const connectorsReference = refs.children.find(c => c.title === 'Connectors reference');
+assert(connectorsReference != null, 'Connectors reference is not found in lb4_sidebar.yml');
 
 /**
  * Utility function to remove a directory.
@@ -60,7 +58,7 @@ copyDocs(srcDocs, destDocs);
 copyDocs(srcSidebars, destSidebars);
 
 function copyFile(input) {
-  if (input) {
+  if (input && input.url) {
     const lb3Path = __dirname + '/pages/en/lb3/' + input.url.replace(/\.html$/, '.md');
     const lb4Path = __dirname + '/pages/en/lb4/' + input.url.replace(/\.html$/, '.md');
     // Copy only if the file does not exist in the lb4 dir
@@ -77,9 +75,7 @@ function copyFile(input) {
     }
 
     if (input.children) {
-      input.children.forEach(function(child) {
-        copyFile(child);
-      });
+      input.children.forEach(child => copyFile(child));
     }
   }
 }
