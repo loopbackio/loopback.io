@@ -249,67 +249,6 @@ The .loopbackrc file is in JSON format, for example:
 
 </details>
 
-## Running tests
-
-### Own instance
-
-If you have a local or remote MongoDB instance and would like to use that to run the test suite, use the following command:
-
-- Linux
-
-```bash
-MONGODB_HOST=<HOST> MONGODB_PORT=<PORT> MONGODB_DATABASE=<DATABASE> CI=true npm test
-```
-
-- Windows
-
-```bash
-SET MONGODB_HOST=<HOST> SET MONGODB_PORT=<PORT> SET MONGODB_DATABASE=<DATABASE> SET CI=true npm test
-```
-
-### Docker
-
-If you do not have a local MongoDB instance, you can also run the test suite with very minimal requirements.
-
-- Assuming you have [Docker](https://docs.docker.com/engine/installation/) installed, run the following script which would spawn a MongoDB instance on your local:
-
-```bash
-source setup.sh <HOST> <PORT> <DATABASE>
-```
-
-where `<HOST>`, `<PORT>` and `<DATABASE>` are optional parameters. The default values are `localhost`, `27017` and `testdb` respectively.
-
-- Run the test:
-
-```bash
-npm test
-```
-
-### Leak detection
-
-Tests run for 100 iterations by default, but can be increased by setting the
-env var `ITERATIONS`.
-
-```
-make leak-detection # run 100 iterations (default)
-```
-
-or
-
-```
-ITERATIONS=1000 make leak-detection # run 1000 iterations
-```
-
-## Running benchmarks
-
-**Benchmarks must be run on a Unix-like operating system.**
-
-```
-make benchmarks
-```
-
-The results will be output in `./benchmarks/results.md`.
-
 ## Handling ObjectId
 
 MongoDB uses `ObjectId` for its primary key, which is an object instead of a
@@ -490,6 +429,67 @@ export class User extends Entity {
 </details>
 
 {% include important.html content="Since in MongoDB `_id` is reserved for the primary key, LoopBack **does not** allow customization of the field name for the id property. Please use `id` as is. Customizing the id property would cause errors." %}
+
+## Running tests
+
+### Own instance
+
+If you have a local or remote MongoDB instance and would like to use that to run the test suite, use the following command:
+
+- Linux
+
+```bash
+MONGODB_HOST=<HOST> MONGODB_PORT=<PORT> MONGODB_DATABASE=<DATABASE> CI=true npm test
+```
+
+- Windows
+
+```bash
+SET MONGODB_HOST=<HOST> SET MONGODB_PORT=<PORT> SET MONGODB_DATABASE=<DATABASE> SET CI=true npm test
+```
+
+### Docker
+
+If you do not have a local MongoDB instance, you can also run the test suite with very minimal requirements.
+
+- Assuming you have [Docker](https://docs.docker.com/engine/installation/) installed, run the following script which would spawn a MongoDB instance on your local:
+
+```bash
+source setup.sh <HOST> <PORT> <DATABASE>
+```
+
+where `<HOST>`, `<PORT>` and `<DATABASE>` are optional parameters. The default values are `localhost`, `27017` and `testdb` respectively.
+
+- Run the test:
+
+```bash
+npm test
+```
+
+### Leak detection
+
+Tests run for 100 iterations by default, but can be increased by setting the
+env var `ITERATIONS`.
+
+```
+make leak-detection # run 100 iterations (default)
+```
+
+or
+
+```
+ITERATIONS=1000 make leak-detection # run 1000 iterations
+```
+
+## Running benchmarks
+
+**Benchmarks must be run on a Unix-like operating system.**
+
+```
+make benchmarks
+```
+
+The results will be output in `./benchmarks/results.md`.
 
 ## Release notes
 
