@@ -15,9 +15,14 @@ const lb4Sidebar = yaml.safeLoad(fs.readFileSync(__dirname + '/_data/sidebars/lb
 let connectorsReference;
 for (let i = 0; i < lb4Sidebar.children.length; i++) {
   const child = lb4Sidebar.children[i];
-  if (child.title === 'Connectors reference') {
-    connectorsReference = child;
-    break;
+  if (child.title === 'Reference guides') {
+    for (let j=0; j<child.children.length; j++) {
+      const child2 = child.children[j];
+      if (child2.title === 'Connectors reference') {
+        connectorsReference = child2;
+        break;
+      }
+    }
   }
 }
 
@@ -60,7 +65,7 @@ copyDocs(srcDocs, destDocs);
 copyDocs(srcSidebars, destSidebars);
 
 function copyFile(input) {
-  if (input) {
+  if (input && input.url) {
     const lb3Path = __dirname + '/pages/en/lb3/' + input.url.replace(/\.html$/, '.md');
     const lb4Path = __dirname + '/pages/en/lb4/' + input.url.replace(/\.html$/, '.md');
     // Copy only if the file does not exist in the lb4 dir
