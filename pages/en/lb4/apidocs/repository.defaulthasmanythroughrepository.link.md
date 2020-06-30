@@ -16,21 +16,21 @@ permalink: /doc/en/lb4/apidocs.repository.defaulthasmanythroughrepository.link.h
 <b>Signature:</b>
 
 ```typescript
-link(targetModelId: TargetID, options?: Options & {
+link(targetId: TargetID, options?: Options & {
         throughData?: DataObject<ThroughEntity>;
         throughOptions?: Options;
-    }): Promise<TargetEntity>;
+    }): Promise<void>;
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  targetModelId | TargetID |  |
+|  targetId | TargetID |  |
 |  options | [Options](./repository.options.md) &amp; { throughData?: [DataObject](./repository.dataobject.md)<!-- -->&lt;ThroughEntity&gt;; throughOptions?: [Options](./repository.options.md)<!-- -->; } |  |
 
 <b>Returns:</b>
 
-Promise&lt;TargetEntity&gt;
+Promise&lt;void&gt;
 
 

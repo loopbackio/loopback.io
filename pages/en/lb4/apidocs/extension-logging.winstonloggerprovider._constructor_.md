@@ -21,7 +21,7 @@ Constructs a new instance of the `WinstonLoggerProvider` class
 constructor(
     transports: Getter<Transport[]>, 
     formats: Getter<Format[]>, 
-    options?: LoggerOptions<DefaulLevels>);
+    options?: LoggerOptions);
 ```
 
 ## Parameters
@@ -30,6 +30,6 @@ constructor(
 |  --- | --- | --- |
 |  transports | [Getter](./context.getter.md)<!-- -->&lt;Transport\[\]&gt; |  |
 |  formats | [Getter](./context.getter.md)<!-- -->&lt;Format\[\]&gt; |  |
-|  options | LoggerOptions&lt;DefaulLevels&gt; |  |
+|  options | LoggerOptions |  |
 
 

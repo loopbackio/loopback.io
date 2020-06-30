@@ -37,7 +37,7 @@ export declare class TestSandbox
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [copyFile(src, dest)](./testlab.testsandbox.copyfile.md) |  | Copies a file from src to the TestSandbox. If copying a <code>.js</code> file which has an accompanying <code>.js.map</code> file in the src file location, the dest file will have its sourceMappingURL updated to point to the original file as an absolute path so you don't need to copy the map file. |
+|  [copyFile(src, dest, transform)](./testlab.testsandbox.copyfile.md) |  | Copies a file from src to the TestSandbox. If copying a <code>.js</code> file which has an accompanying <code>.js.map</code> file in the src file location, the dest file will have its sourceMappingURL updated to point to the original file as an absolute path so you don't need to copy the map file. |
 |  [delete()](./testlab.testsandbox.delete.md) |  | Deletes the TestSandbox. |
 |  [mkdir(dir)](./testlab.testsandbox.mkdir.md) |  | Makes a directory in the TestSandbox |
 |  [reset()](./testlab.testsandbox.reset.md) |  | Resets the TestSandbox. (Remove all files in it). |

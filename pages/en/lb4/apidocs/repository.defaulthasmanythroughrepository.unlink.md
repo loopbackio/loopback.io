@@ -16,7 +16,7 @@ permalink: /doc/en/lb4/apidocs.repository.defaulthasmanythroughrepository.unlink
 <b>Signature:</b>
 
 ```typescript
-unlink(targetModelId: TargetID, options?: Options & {
+unlink(targetId: TargetID, options?: Options & {
         throughOptions?: Options;
     }): Promise<void>;
 ```
@@ -25,7 +25,7 @@ unlink(targetModelId: TargetID, options?: Options & {
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  targetModelId | TargetID |  |
+|  targetId | TargetID |  |
 |  options | [Options](./repository.options.md) &amp; { throughOptions?: [Options](./repository.options.md)<!-- -->; } |  |
 
 <b>Returns:</b>

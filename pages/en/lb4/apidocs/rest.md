@@ -82,6 +82,7 @@ A REST server for LoopBack 4 application instances, complete with:
 |  [toExpressPath(path)](./rest.toexpresspath.md) | Convert an OpenAPI path to Express (path-to-regexp) style |
 |  [validateApiPath(path)](./rest.validateapipath.md) | Validate the path to be compatible with OpenAPI path template. No parameter modifier, custom pattern, or unnamed parameter is allowed. |
 |  [validateRequestBody(body, requestBodySpec, globalSchemas, options)](./rest.validaterequestbody.md) | Check whether the request body is valid according to the provided OpenAPI schema. The JSON schema is generated from the OpenAPI schema which is typically defined by <code>@requestBody()</code>. The validation leverages AJV schema validator. |
+|  [validateValueAgainstSchema(value, schema, globalSchemas, options)](./rest.validatevalueagainstschema.md) | Validate the request body data against JSON schema. |
 |  [writeResultToResponse(response, result)](./rest.writeresulttoresponse.md) | Writes the result from Application controller method into the HTTP response |
 
 ## Interfaces
@@ -105,6 +106,7 @@ A REST server for LoopBack 4 application instances, complete with:
 |  [SequenceHandler](./rest.sequencehandler.md) | A sequence handler is a class implementing sequence of actions required to handle an incoming request. |
 |  [Session](./rest.session.md) | interface to set variables in user session |
 |  [SessionUserProfile](./rest.sessionuserprofile.md) | user profile to add in session |
+|  [ValueValidationOptions](./rest.valuevalidationoptions.md) | Options for any value validation using AJV |
 
 ## Namespaces
 

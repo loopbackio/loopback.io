@@ -18,6 +18,6 @@ Binding key for winston logger
 <b>Signature:</b>
 
 ```typescript
-WINSTON_LOGGER: BindingKey<WinstonLogger<DefaulLevels>>
+WINSTON_LOGGER: BindingKey<WinstonLogger>
 ```
 

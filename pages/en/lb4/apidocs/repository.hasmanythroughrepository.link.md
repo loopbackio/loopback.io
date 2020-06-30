@@ -21,7 +21,7 @@ Creates a new many-to-many association to an existing target model instance
 link(targetModelId: TargetID, options?: Options & {
         throughData?: DataObject<Through>;
         throughOptions?: Options;
-    }): Promise<Target>;
+    }): Promise<void>;
 ```
 
 ## Parameters
@@ -33,7 +33,7 @@ link(targetModelId: TargetID, options?: Options & {
 
 <b>Returns:</b>
 
-Promise&lt;Target&gt;
+Promise&lt;void&gt;
 
 A promise which resolves to the linked target model instance
 

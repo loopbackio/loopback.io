@@ -18,7 +18,7 @@ Constructs a new instance of the `DefaultHasManyThroughRepository` class
 <b>Signature:</b>
 
 ```typescript
-constructor(getTargetRepository: Getter<TargetRepository>, getThroughRepository: Getter<ThroughRepository>, getTargetConstraint: (throughInstances: ThroughEntity | ThroughEntity[]) => DataObject<TargetEntity>, getThroughConstraint: () => DataObject<ThroughEntity>, getThroughFkConstraint: (targetInstance: TargetEntity) => DataObject<ThroughEntity>);
+constructor(getTargetRepository: Getter<TargetRepository>, getThroughRepository: Getter<ThroughRepository>, getTargetConstraintFromThroughModels: (throughInstances: ThroughEntity[]) => DataObject<TargetEntity>, getTargetKeys: (throughInstances: ThroughEntity[]) => TargetID[], getThroughConstraintFromSource: () => DataObject<ThroughEntity>, getThroughConstraintFromTarget: (targetID: TargetID[]) => DataObject<ThroughEntity>);
 ```
 
 ## Parameters
@@ -27,8 +27,9 @@ constructor(getTargetRepository: Getter<TargetRepository>, getThroughRepository:
 |  --- | --- | --- |
 |  getTargetRepository | [Getter](./context.getter.md)<!-- -->&lt;TargetRepository&gt; |  |
 |  getThroughRepository | [Getter](./context.getter.md)<!-- -->&lt;ThroughRepository&gt; |  |
-|  getTargetConstraint | (throughInstances: ThroughEntity \| ThroughEntity\[\]) =&gt; [DataObject](./repository.dataobject.md)<!-- -->&lt;TargetEntity&gt; |  |
-|  getThroughConstraint | () =&gt; [DataObject](./repository.dataobject.md)<!-- -->&lt;ThroughEntity&gt; |  |
-|  getThroughFkConstraint | (targetInstance: TargetEntity) =&gt; [DataObject](./repository.dataobject.md)<!-- -->&lt;ThroughEntity&gt; |  |
+|  getTargetConstraintFromThroughModels | (throughInstances: ThroughEntity\[\]) =&gt; [DataObject](./repository.dataobject.md)<!-- -->&lt;TargetEntity&gt; |  |
+|  getTargetKeys | (throughInstances: ThroughEntity\[\]) =&gt; TargetID\[\] |  |
+|  getThroughConstraintFromSource | () =&gt; [DataObject](./repository.dataobject.md)<!-- -->&lt;ThroughEntity&gt; |  |
+|  getThroughConstraintFromTarget | (targetID: TargetID\[\]) =&gt; [DataObject](./repository.dataobject.md)<!-- -->&lt;ThroughEntity&gt; |  |
 
 

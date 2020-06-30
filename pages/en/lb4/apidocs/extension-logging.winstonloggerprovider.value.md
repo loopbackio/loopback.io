@@ -16,10 +16,10 @@ permalink: /doc/en/lb4/apidocs.extension-logging.winstonloggerprovider.value.htm
 <b>Signature:</b>
 
 ```typescript
-value(): Promise<Logger<DefaulLevels>>;
+value(): Promise<Logger>;
 ```
 <b>Returns:</b>
 
-Promise&lt;Logger&lt;DefaulLevels&gt;&gt;
+Promise&lt;Logger&gt;
 
 

@@ -16,7 +16,7 @@ permalink: /doc/en/lb4/apidocs.repository.createhasmanythroughrepositoryfactory.
 <b>Signature:</b>
 
 ```typescript
-export declare function createHasManyThroughRepositoryFactory<Target extends Entity, TargetID, Through extends Entity, ThroughID, ForeignKeyType>(relationMetadata: HasManyDefinition, targetRepositoryGetter: Getter<EntityCrudRepository<Target, TargetID>>, throughRepositoryGetter: Getter<EntityCrudRepository<Through, ThroughID>>): HasManyThroughRepositoryFactory<Target, TargetID, Through, ForeignKeyType>;
+export declare function createHasManyThroughRepositoryFactory<Target extends Entity, TargetID, Through extends Entity, ThroughID, SourceID>(relationMetadata: HasManyDefinition, targetRepositoryGetter: Getter<EntityCrudRepository<Target, TargetID>>, throughRepositoryGetter: Getter<EntityCrudRepository<Through, ThroughID>>): HasManyThroughRepositoryFactory<Target, TargetID, Through, SourceID>;
 ```
 
 ## Parameters
@@ -29,6 +29,6 @@ export declare function createHasManyThroughRepositoryFactory<Target extends Ent
 
 <b>Returns:</b>
 
-[HasManyThroughRepositoryFactory](./repository.hasmanythroughrepositoryfactory.md)<!-- -->&lt;Target, TargetID, Through, ForeignKeyType&gt;
+[HasManyThroughRepositoryFactory](./repository.hasmanythroughrepositoryfactory.md)<!-- -->&lt;Target, TargetID, Through, SourceID&gt;
 
 
