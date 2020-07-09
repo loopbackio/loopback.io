@@ -96,6 +96,6 @@ tsconfig.json
 | `src/__tests__/acceptance/ping.controller.acceptance.ts` | `src/controllers` 目录下 ping 控制器的示例测试程序。                                                                                                                                                                                                                                                                                                     |
 | `.mocharc.json`                                          | [Mocha](https://mochajs.org/) 配置文件，用于在应用中运行测试用例。                                                                                                                                                                                                                                                                                        |
 
-### Navigation
+### 导航
 
-Next step: [Add the Todo Model](todo-tutorial-model.md)
+下一步: [添加 todo 的数据模型](todo-tutorial-model.md)
