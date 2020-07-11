@@ -98,7 +98,7 @@ If you run a MongoDB with authentification ([Docker's example here](https://gith
       <td>allowExtendedOperators</td>
       <td>Boolean</td>
       <td><code>false</code></td>
-      <td>Set to <code>true</code> to enable using MongoDB operators such as <code>$currentDate, $inc, $max, $min, $mul, $rename, $setOnInsert, $set, $unset, $addToSet, $pop, $pullAll, $pull, $pushAll, $push</code>, and <code>$bit</code>.</td>
+      <td>Set to <code>true</code> to enable using MongoDB operators such as <code>$currentDate, $inc, $max, $min, $mul, $rename, $setOnInsert, $set, $unset, $addToSet, $pop, $pullAll, $pull, $push</code>, and <code>$bit</code>. See <a href="https://loopback.io/doc/en/lb4/MongoDB-connector.html#update-operators" class="external-link" rel="nofollow">Update Operators</a> section below</td>
     </tr>
     <tr>
       <td>enableGeoIndexing</td>
@@ -248,6 +248,32 @@ The .loopbackrc file is in JSON format, for example:
 **Note**: user/password is only required if the MongoDB server has authentication enabled. `"authSource"` should be used if you cannot log in to your database using your credentials.
 
 </details>
+
+## Update Operators
+
+Except the comparison and logical operators LoopBack supports in the [operator list](https://loopback.io/doc/en/lb4/Where-filter.html#operators) of `Where` filter, you can also enable [MongoDB update operators](https://docs.mongodb.com/manual/reference/operator/update/) for `update*` methods by setting the flag `allowExtendedOperators` to `true` in the datasource configuration.
+
+Here is an example of updating the price for all the products under category `furniture` if their current price is lower than 100:
+
+```
+await productRepo.updateAll({ $max: { price: 100 }}, { category: {eq: 'furniture'} // where clause goes in here });
+```
+
+<details><summary markdown="span"><strong>For LoopBack 3 users</strong></summary>
+
+```
+Product.updateAll(
+            { category: {eq: 'furniture'} // where clause goes in here },
+            {$max: {price: 100}},
+            options,
+            function(err, updateproducts) {
+           ...
+```
+
+</details>
+
+{% include tip.html content="you **will not** need the dollar sign `'$'` for operators in the Where
+clause." %}
 
 ## Handling ObjectId
 
