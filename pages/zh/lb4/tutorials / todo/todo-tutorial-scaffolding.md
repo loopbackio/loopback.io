@@ -3,6 +3,7 @@ lang: zh
 title: '创建应用脚手架'
 keywords: LoopBack 4.0, LoopBack 4, Node.js, TypeScript, OpenAPI, Tutorial
 sidebar: zh_lb4_sidebar
+layout: translation
 permalink: /doc/zh/lb4/todo-tutorial-scaffolding.html
 ---
 
