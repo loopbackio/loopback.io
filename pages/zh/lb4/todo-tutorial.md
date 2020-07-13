@@ -88,8 +88,8 @@ npm i -g @loopback/cli
 
 ## 贡献
 
-- [Guidelines](https://github.com/strongloop/loopback-next/blob/master/docs/CONTRIBUTING.md)
-- [Join the team](https://github.com/strongloop/loopback-next/issues/110)
+- [指引](https://github.com/strongloop/loopback-next/blob/master/docs/CONTRIBUTING.md)
+- [加入团队](https://github.com/strongloop/loopback-next/issues/110)
 
 ## 测试
 
