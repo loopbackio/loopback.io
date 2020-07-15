@@ -11,7 +11,7 @@ LoopBack 4 随附以下教程
 
 - **[todo](todo-tutorial.md)**: 采用自下而上的思想，并运用 LoopBack 4 的关键概念构建一个简单的应用程序。
 
-- **[todo-list](todo-list-tutorial.md)**: 基于Todo教程介绍关系模型，并构建其 API 的教程。
+- **[todo-list](todo-list-tutorial.md)**: 基于 Todo 教程介绍关系模型，并构建其 API 的教程。
 
 - **[soap-calculator](soap-calculator-tutorial.md)**: 关于集成 SOAP 协议的 Web 服务的教程
 
@@ -23,8 +23,7 @@ LoopBack 4 随附以下教程
 - **[lb3-application](https://github.com/strongloop/loopback-next/tree/master/examples/lb3-application)**:
   在新的 LoopBack 4 项目中集成现有的 LoopBack 3 应用的教程。
 
-- **[core series](tutorials/core/index.md)**: A series of tutorials on building
-  large scale Node.js projects with LoopBack 4 core modules 关于使用 LoopBack 4 核心模块来构建大规模 Node.js 项目的系列教程。
+- **[core series](tutorials/core/index.md)**: 关于使用 LoopBack 4 核心模块来构建大规模 Node.js 项目的系列教程。
 
 您可以使用我们的 CLI 工具 `lb4` 来下载任何教程项目:
 
