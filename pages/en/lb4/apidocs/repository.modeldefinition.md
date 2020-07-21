@@ -43,6 +43,9 @@ export declare class ModelDefinition
 |  [addProperty(name, definitionOrType)](./repository.modeldefinition.addproperty.md) |  | Add a property |
 |  [addRelation(definition)](./repository.modeldefinition.addrelation.md) |  | Define a new relation. |
 |  [addSetting(name, value)](./repository.modeldefinition.addsetting.md) |  | Add a setting |
+|  [belongsTo(name, definition)](./repository.modeldefinition.belongsto.md) |  | Define a new belongsTo relation. |
+|  [hasMany(name, definition)](./repository.modeldefinition.hasmany.md) |  | Define a new hasMany relation. |
+|  [hasOne(name, definition)](./repository.modeldefinition.hasone.md) |  | Define a new hasOne relation. |
 |  [idProperties()](./repository.modeldefinition.idproperties.md) |  | Get an array of names of ID properties, which are specified in the model settings or properties with <code>id</code> attribute. |
 
 

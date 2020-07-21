@@ -18,7 +18,7 @@ Constructs a new instance of the `DefaultHasManyThroughRepository` class
 <b>Signature:</b>
 
 ```typescript
-constructor(getTargetRepository: Getter<TargetRepository>, getThroughRepository: Getter<ThroughRepository>, getTargetConstraintFromThroughModels: (throughInstances: ThroughEntity[]) => DataObject<TargetEntity>, getTargetKeys: (throughInstances: ThroughEntity[]) => TargetID[], getThroughConstraintFromSource: () => DataObject<ThroughEntity>, getThroughConstraintFromTarget: (targetID: TargetID[]) => DataObject<ThroughEntity>);
+constructor(getTargetRepository: Getter<TargetRepository>, getThroughRepository: Getter<ThroughRepository>, getTargetConstraintFromThroughModels: (throughInstances: ThroughEntity[]) => DataObject<TargetEntity>, getTargetKeys: (throughInstances: ThroughEntity[]) => TargetID[], getThroughConstraintFromSource: () => DataObject<ThroughEntity>, getTargetIds: (targetInstances: TargetEntity[]) => TargetID[], getThroughConstraintFromTarget: (targetID: TargetID[]) => DataObject<ThroughEntity>);
 ```
 
 ## Parameters
@@ -30,6 +30,7 @@ constructor(getTargetRepository: Getter<TargetRepository>, getThroughRepository:
 |  getTargetConstraintFromThroughModels | (throughInstances: ThroughEntity\[\]) =&gt; [DataObject](./repository.dataobject.md)<!-- -->&lt;TargetEntity&gt; |  |
 |  getTargetKeys | (throughInstances: ThroughEntity\[\]) =&gt; TargetID\[\] |  |
 |  getThroughConstraintFromSource | () =&gt; [DataObject](./repository.dataobject.md)<!-- -->&lt;ThroughEntity&gt; |  |
+|  getTargetIds | (targetInstances: TargetEntity\[\]) =&gt; TargetID\[\] |  |
 |  getThroughConstraintFromTarget | (targetID: TargetID\[\]) =&gt; [DataObject](./repository.dataobject.md)<!-- -->&lt;ThroughEntity&gt; |  |
 
 

@@ -39,6 +39,7 @@ permalink: /doc/en/lb4/apidocs.index.html
 |  [@loopback/model-api-builder](./model-api-builder.md) | A packge with types and helpers for packages contributing Model API builders. |
 |  [@loopback/openapi-spec-builder](./openapi-spec-builder.md) | A package to simplify creating OpenAPI specification documents in your tests using the builder pattern. |
 |  [@loopback/openapi-v3](./openapi-v3.md) | Decorators that describe LoopBack artifacts as OpenAPI 3.0.0 metadata and utilities that transfer LoopBack metadata to OpenAPI 3.0.0 specifications. |
+|  [@loopback/pooling](./pooling.md) |  |
 |  [@loopback/repository](./repository.md) | A common set of interfaces for interacting with databases. |
 |  [@loopback/repository-json-schema](./repository-json-schema.md) | Convert a TypeScript class/model to a JSON Schema for users, leveraging LoopBack4's decorators, metadata, and reflection system. |
 |  [@loopback/repository-tests](./repository-tests.md) | A test suite verifying functionality of <code>@loopback/repository</code> in a connector -independent way. |
@@ -49,5 +50,6 @@ permalink: /doc/en/lb4/apidocs.index.html
 |  [@loopback/service-proxy](./service-proxy.md) | A common set of interfaces for interacting with service oriented backends such as REST APIs, SOAP Web Services, and gRPC microservices. |
 |  [@loopback/testlab](./testlab.md) | A collection of test utilities we use to write LoopBack tests. |
 |  [@loopback/tsdocs](./tsdocs.md) | The <code>@loopback/tsdocs</code> package is an internal module to generate [tsdoc](https://github.com/Microsoft/tsdoc) based API docs for <code>@loopback/*</code> packages within [loopback-next](https://github.com/strongloop/loopback-next) monorepo managed by [Lerna](https://github.com/lerna/lerna)<!-- -->. |
+|  [@loopback/typeorm](./typeorm.md) |  |
 
 

@@ -50,6 +50,7 @@ permalink: /doc/en/lb4/changelog.index.html
 - [@loopback/extension-health](changelogs/extensions/health/CHANGELOG.md)
 - [@loopback/extension-logging](changelogs/extensions/logging/CHANGELOG.md)
 - [@loopback/extension-metrics](changelogs/extensions/metrics/CHANGELOG.md)
+- [@loopback/typeorm](changelogs/extensions/typeorm/CHANGELOG.md)
 
 ### examples
 

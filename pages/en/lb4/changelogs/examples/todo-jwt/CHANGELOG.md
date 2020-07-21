@@ -13,6 +13,14 @@ permalink: /doc/en/lb4/changelog.example-todo-jwt.html
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.1](https://github.com/strongloop/loopback-next/compare/@loopback/example-todo-jwt@1.2.0...@loopback/example-todo-jwt@1.2.1) (2020-06-30)
+
+**Note:** Version bump only for package @loopback/example-todo-jwt
+
+
+
+
+
 # [1.2.0](https://github.com/strongloop/loopback-next/compare/@loopback/example-todo-jwt@1.1.1...@loopback/example-todo-jwt@1.2.0) (2020-06-23)
 
 

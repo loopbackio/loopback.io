@@ -16,6 +16,6 @@ permalink: /doc/en/lb4/apidocs.repository.belongstodefinition.keyfrom.html
 <b>Signature:</b>
 
 ```typescript
-keyFrom: string;
+keyFrom?: string;
 ```
 

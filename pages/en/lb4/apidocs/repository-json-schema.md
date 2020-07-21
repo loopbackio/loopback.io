@@ -46,6 +46,7 @@ Modules to easily convert LoopBack4 models that have been decorated with `@model
 
 |  Variable | Description |
 |  --- | --- |
+|  [AnyScopeFilterSchema](./repository-json-schema.anyscopefilterschema.md) |  |
 |  [JSON\_SCHEMA\_KEY](./repository-json-schema.json_schema_key.md) | Metadata key used to set or retrieve repository JSON Schema |
 
 ## Type Aliases

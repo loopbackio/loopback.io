@@ -28,13 +28,14 @@ export declare class DefaultHasManyThroughRepository<TargetEntity extends Entity
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)(getTargetRepository, getThroughRepository, getTargetConstraintFromThroughModels, getTargetKeys, getThroughConstraintFromSource, getThroughConstraintFromTarget)](./repository.defaulthasmanythroughrepository._constructor_.md) |  | Constructs a new instance of the <code>DefaultHasManyThroughRepository</code> class |
+|  [(constructor)(getTargetRepository, getThroughRepository, getTargetConstraintFromThroughModels, getTargetKeys, getThroughConstraintFromSource, getTargetIds, getThroughConstraintFromTarget)](./repository.defaulthasmanythroughrepository._constructor_.md) |  | Constructs a new instance of the <code>DefaultHasManyThroughRepository</code> class |
 
 ## Properties
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
 |  [getTargetConstraintFromThroughModels](./repository.defaulthasmanythroughrepository.gettargetconstraintfromthroughmodels.md) |  | (throughInstances: ThroughEntity\[\]) =&gt; [DataObject](./repository.dataobject.md)<!-- -->&lt;TargetEntity&gt; |  |
+|  [getTargetIds](./repository.defaulthasmanythroughrepository.gettargetids.md) |  | (targetInstances: TargetEntity\[\]) =&gt; TargetID\[\] |  |
 |  [getTargetKeys](./repository.defaulthasmanythroughrepository.gettargetkeys.md) |  | (throughInstances: ThroughEntity\[\]) =&gt; TargetID\[\] |  |
 |  [getTargetRepository](./repository.defaulthasmanythroughrepository.gettargetrepository.md) |  | [Getter](./context.getter.md)<!-- -->&lt;TargetRepository&gt; |  |
 |  [getThroughConstraintFromSource](./repository.defaulthasmanythroughrepository.getthroughconstraintfromsource.md) |  | () =&gt; [DataObject](./repository.dataobject.md)<!-- -->&lt;ThroughEntity&gt; |  |
