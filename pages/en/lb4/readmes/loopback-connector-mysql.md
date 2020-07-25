@@ -814,7 +814,7 @@ If you have an application with a model that has a GeoPoint property using
 previous versions of this connector, you can migrate your models using the
 following programmatic approach:
 
-<details><summary markdown="span"><strong>Click here to expend</strong></summary>
+<details><summary markdown="span"><strong>Click here to expand</strong></summary>
 
 **NOTE** Please back up the database tables that have your application data
 before performing any of the steps.
