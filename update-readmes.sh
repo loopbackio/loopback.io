@@ -11,6 +11,7 @@
 strongloop loopback-connector-mysql master
 strongloop loopback-connector-cassandra master
 strongloop loopback-connector-cloudant master
+strongloop loopback-connector-couchdb2 master
 strongloop loopback-connector-dashdb master
 strongloop loopback-connector-db2 master
 strongloop loopback-connector-db2iseries master
