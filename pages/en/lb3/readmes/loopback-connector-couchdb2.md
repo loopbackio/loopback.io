@@ -1,42 +1,25 @@
 # loopback-connector-couchdb2
 
-The `loopback-connector-couchdb2` module is the CouchDB 2.0 connector for the
+The `loopback-connector-couchdb2` module is the CouchDB 2.x connector for the
 LoopBack framework that supports the advanced functionality originally found
 only in Cloudant but that is now available in CouchDB.
 
-<!-- TOC -->
+## Installation
 
-- [Getting Started](#getting-started)
-  - [Model](#model)
-    - [Map Between Model And Document](#map-between-model-and-document)
-    - [Model-specific Configuration](#model-specific-configuration)
-    - [_rev Property](#_rev-property)
-      - [Example CRUD operations with `_rev`](#example-crud-operations-with-_rev)
-- [Setup Couchdb Instance](#setup-couchdb-instance)
-- [Installation](#installation)
-- [Configuration](#configuration)
-  - [Generate Datasource](#generate-datasource)
-  - [Datasource Config](#datasource-config)
-  - [Example Usage](#example-usage)
-- [CRUD](#crud)
-- [Migration](#migration)
-  - [autoupdate vs automigrate](#autoupdate-vs-automigrate)
-  - [isActual](#isactual)
-  - [property index](#property-index)
-  - [Example Code](#example-code)
-- [Discovery](#discovery)
-- [Query](#query)
-- [View](#view)
-- [Bulk replace](#bulk-replace)
-- [Testing](#testing)
-  - [Docker](#docker)
-- [More into](#more-info)
+In your application root directory, enter this command to install the connector:
 
-<!-- /TOC -->
+```sh
+npm install loopback-connector-couchdb2 --save
+```
 
-# Getting Started
+This installs the module from npm and adds it as a dependency to the
+application's `package.json` file.
 
-## Model 
+If you create a CouchDB 2.x data source using the data source generator as described
+below, you don't have to do this, since the generator will run `npm install` for
+you.
+
+## Getting Started - Model 
 
 ### Map Between Model And Document
 
@@ -226,7 +209,7 @@ Let's say we have an instance in the database:
 
 For users that don't have a Couchdb server to develop or test, here are some suggestions can help you quickly set one up.
 
-For development use, a docker container is easy to setup. Users can also download the on-prem Couchdb2.0 from http://couchdb.apache.org/
+For development use, a docker container is easy to setup. Users can also download the on-prem Couchdb 2.x from http://couchdb.apache.org/
 
 # Installation
 
