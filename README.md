@@ -159,3 +159,17 @@ For the function to work, you must set the following parameters in the function 
 discovery_username: username
 discovery_password: password
 ```
+
+## Contributing 
+
+This project uses [DCO](https://developercertificate.org/). Be sure to sign off
+your commits using the `-s` flag or adding `Signed-off-By: Name<Email>` in the
+commit message.
+
+**Example**
+
+```
+git commit -s -m "feat: my commit message"
+```
+
+Also see the [Contributing to LoopBack documentation](https://loopback.io/doc/en/contrib/doc-contrib.html) to get you started.
