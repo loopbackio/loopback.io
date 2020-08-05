@@ -26,6 +26,7 @@ export declare namespace RestBindings
 |  Namespace | Description |
 |  --- | --- |
 |  [Http](./rest.restbindings.http.md) | Request-specific bindings |
+|  [Operation](./rest.restbindings.operation.md) |  |
 |  [SequenceActions](./rest.restbindings.sequenceactions.md) | Bindings for potential actions that could be used in a sequence |
 
 ## Variables
@@ -40,6 +41,7 @@ export declare namespace RestBindings
 |  [HANDLER](./rest.restbindings.handler.md) | Internal binding key for http-handler |
 |  [HOST](./rest.restbindings.host.md) | Binding key for setting and injecting the host name of RestServer |
 |  [HTTPS\_OPTIONS](./rest.restbindings.https_options.md) | Binding key for HTTPS options |
+|  [INVOKE\_MIDDLEWARE\_SERVICE](./rest.restbindings.invoke_middleware_service.md) | Binding key for setting and injecting a <code>invokeMiddleware</code> function for middleware based sequence |
 |  [OPERATION\_SPEC\_CURRENT](./rest.restbindings.operation_spec_current.md) | Binding key for setting and injecting an OpenAPI operation spec |
 |  [PATH](./rest.restbindings.path.md) | Binding key for setting and injecting the socket path of the RestServer |
 |  [PORT](./rest.restbindings.port.md) | Binding key for setting and injecting the port number of RestServer |

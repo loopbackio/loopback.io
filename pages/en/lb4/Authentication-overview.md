@@ -6,6 +6,8 @@ sidebar: lb4_sidebar
 permalink: /doc/en/lb4/Authentication-overview.html
 ---
 
+## Overview
+
 Security is of paramount importance when developing a web or mobile application
 and usually consists of two distinct pieces:
 
@@ -42,11 +44,19 @@ snippet:
 - Decorate the controller endpoint with `@authenticate()` and inject the user
   passed from the authentication layer.
 
+{% include note.html content="
+For [middleware-based sequence](REST-middleware-sequence.md), there is no longer
+needed to add the authenticate action as the authentication is enforced by a
+middleware that's automatically discovered and added to the sequence.
+" %}
+
 The rest will be handled by the authentication component
 `@loopback/authentication`, which incorporates the authentication mechanism, and
 the JWT extension `@loopback/jwt-authentication`, which helps in implementing
 JWT-based authentication to the system and should be provided by extension
 developers.
+
+## Tutorials
 
 The authentication system is highly extensible and pluggable. It's easy to get
 started with. While there are more advanced features to explorer - of which are
@@ -68,3 +78,21 @@ we've broken down the documentations into several parts:
   Particularly for extension developers.
 - [Use **Express Passport** strategies](Authentication-passport.md): The usage
   of passport adapter module `@loopback/authentication-passport`.
+
+## Examples
+
+Here is a list of authentication related examples created by LoopBack team or
+contributed by community members:
+
+- **[passport-login](https://github.com/strongloop/loopback-next/tree/master/examples/passport-login)**:
+  An example implementing authentication in a LoopBack application using
+  [Passport](https://github.com/jaredhanson/passport) modules.
+
+- **[todo-jwt](https://github.com/strongloop/loopback-next/tree/master/examples/todo-jwt)**:
+  A modified
+  [Todo example](https://github.com/strongloop/loopback-next/tree/master/examples/todo)
+  with JWT authentication.
+
+- **[(community) build jwt authentication from scratch](https://github.com/HrithikMittal/Loopback4-auth)**:
+  An example to enable JWT authentication in a LoopBack application with
+  detailed steps.

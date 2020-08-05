@@ -29,6 +29,7 @@ It contains:
 |  --- | --- |
 |  [AuthenticateActionProvider](./authentication.authenticateactionprovider.md) | Provides the authentication action for a sequence |
 |  [AuthenticationComponent](./authentication.authenticationcomponent.md) |  |
+|  [AuthenticationMiddlewareProvider](./authentication.authenticationmiddlewareprovider.md) |  |
 |  [AuthenticationStrategyProvider](./authentication.authenticationstrategyprovider.md) | An authentication strategy provider responsible for resolving an authentication strategy by name.<!-- -->It declares an extension point to which all authentication strategy implementations must register themselves as extensions. |
 |  [AuthMetadataProvider](./authentication.authmetadataprovider.md) | Provides authentication metadata of a controller method |
 

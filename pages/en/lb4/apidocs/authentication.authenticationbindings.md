@@ -26,6 +26,7 @@ export declare namespace AuthenticationBindings
 |  Variable | Description |
 |  --- | --- |
 |  [AUTH\_ACTION](./authentication.authenticationbindings.auth_action.md) | Key used to inject the authentication function into the sequence. |
+|  [AUTHENTICATION\_MIDDLEWARE](./authentication.authenticationbindings.authentication_middleware.md) | Binding key for AUTHENTICATION\_MIDDLEWARE |
 |  [AUTHENTICATION\_REDIRECT\_STATUS](./authentication.authenticationbindings.authentication_redirect_status.md) |  |
 |  [AUTHENTICATION\_REDIRECT\_URL](./authentication.authenticationbindings.authentication_redirect_url.md) |  |
 |  [AUTHENTICATION\_STRATEGY\_EXTENSION\_POINT\_NAME](./authentication.authenticationbindings.authentication_strategy_extension_point_name.md) |  |

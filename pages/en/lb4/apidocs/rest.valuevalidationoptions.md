@@ -18,9 +18,9 @@ Options for any value validation using AJV
 <b>Signature:</b>
 
 ```typescript
-export interface ValueValidationOptions extends RequestBodyValidationOptions 
+export interface ValueValidationOptions extends ValidationOptions 
 ```
-<b>Extends:</b> [RequestBodyValidationOptions](./rest.requestbodyvalidationoptions.md)
+<b>Extends:</b> [ValidationOptions](./rest.validationoptions.md)
 
 ## Properties
 

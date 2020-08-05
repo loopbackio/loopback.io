@@ -25,7 +25,7 @@ release?(resource: T): ValueOrPromise<void>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  resource | T |  |
+|  resource | T | Resource instance |
 
 <b>Returns:</b>
 

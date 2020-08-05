@@ -13,6 +13,10 @@ permalink: /doc/en/lb4/apidocs.repository.defaultcrudrepository.execute.html
 
 ## DefaultCrudRepository.execute() method
 
+Execute a SQL command.
+
+\*\*WARNING:\*\* In general, it is always better to perform database actions through repository methods. Directly executing SQL may lead to unexpected results, corrupted data, security vulnerabilities and other issues.
+
 <b>Signature:</b>
 
 ```typescript
@@ -23,12 +27,32 @@ execute(command: Command, parameters: NamedParameters | PositionalParameters, op
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  command | [Command](./repository.command.md) |  |
-|  parameters | [NamedParameters](./repository.namedparameters.md) \| [PositionalParameters](./repository.positionalparameters.md) |  |
-|  options | [Options](./repository.options.md) |  |
+|  command | [Command](./repository.command.md) | A parameterized SQL command or query. Check your database documentation for information on which characters to use as parameter placeholders. |
+|  parameters | [NamedParameters](./repository.namedparameters.md) \| [PositionalParameters](./repository.positionalparameters.md) | List of parameter values to use. |
+|  options | [Options](./repository.options.md) | Additional options, for example <code>transaction</code>. |
 
 <b>Returns:</b>
 
 Promise&lt;[AnyObject](./repository.anyobject.md)<!-- -->&gt;
+
+A promise which resolves to the command output as returned by the database driver. The output type (data structure) is database specific and often depends on the command executed.
+
+## Example
+
+
+```ts
+// MySQL
+const result = await repo.execute(
+  'SELECT * FROM Products WHERE size > ?',
+  [42]
+);
+
+// PostgreSQL
+const result = await repo.execute(
+  'SELECT * FROM Products WHERE size > $1',
+  [42]
+);
+
+```
 
 

@@ -27,7 +27,7 @@ namespace SequenceActions
 |  --- | --- |
 |  [FIND\_ROUTE](./rest.restbindings.sequenceactions.find_route.md) | Binding key for setting and injecting a route finding function |
 |  [INVOKE\_METHOD](./rest.restbindings.sequenceactions.invoke_method.md) | Binding key for setting and injecting a controller route invoking function |
-|  [INVOKE\_MIDDLEWARE](./rest.restbindings.sequenceactions.invoke_middleware.md) | Binding key for setting and injecting a route finding function |
+|  [INVOKE\_MIDDLEWARE](./rest.restbindings.sequenceactions.invoke_middleware.md) | Binding key for setting and injecting <code>invokeMiddleware</code> function |
 |  [LOG\_ERROR](./rest.restbindings.sequenceactions.log_error.md) | Binding key for setting and injecting an error logging function |
 |  [PARSE\_PARAMS](./rest.restbindings.sequenceactions.parse_params.md) | Binding key for setting and injecting a parameter parsing function |
 |  [REJECT](./rest.restbindings.sequenceactions.reject.md) | Binding key for setting and injecting a bad response writing function |

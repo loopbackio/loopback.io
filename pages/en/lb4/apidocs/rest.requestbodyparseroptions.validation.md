@@ -18,6 +18,6 @@ Validation options for AJV, see https://github.com/epoberezkin/ajv\#options This
 <b>Signature:</b>
 
 ```typescript
-validation?: RequestBodyValidationOptions;
+validation?: ValidationOptions;
 ```
 

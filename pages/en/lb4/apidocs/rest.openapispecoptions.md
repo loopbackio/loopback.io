@@ -27,15 +27,7 @@ export interface OpenApiSpecOptions
 |  --- | --- | --- |
 |  [consolidate](./rest.openapispecoptions.consolidate.md) | boolean | Set this flag to <code>false</code> to disable OAS schema consolidation. If not set, the value defaults to <code>true</code>. |
 |  [disabled](./rest.openapispecoptions.disabled.md) | true | Set this flag to disable the endpoint for OpenAPI spec |
-|  [endpointMapping](./rest.openapispecoptions.endpointmapping.md) | { \[key: string\]: [OpenApiSpecForm](./rest.openapispecform.md)<!-- -->; } | Mapping of urls to spec forms, by default:
-```
-{
-  '/openapi.json': {version: '3.0.0', format: 'json'},
-  '/openapi.yaml': {version: '3.0.0', format: 'yaml'},
-}
-
-```
- |
+|  [endpointMapping](./rest.openapispecoptions.endpointmapping.md) | { \[key: string\]: [OpenApiSpecForm](./rest.openapispecform.md)<!-- -->; } | Mapping of urls to spec forms, by default: <br> { <br> '/openapi.json': {<!-- -->version: '3.0.0', format: 'json'<!-- -->}<!-- -->, <br> '/openapi.yaml': {<!-- -->version: '3.0.0', format: 'yaml'<!-- -->}<!-- -->, <br> } |
 |  [servers](./rest.openapispecoptions.servers.md) | ServerObject\[\] | Configure servers for OpenAPI spec |
 |  [setServersFromRequest](./rest.openapispecoptions.setserversfromrequest.md) | boolean | A flag to force <code>servers</code> to be set from the http request for the OpenAPI spec |
 

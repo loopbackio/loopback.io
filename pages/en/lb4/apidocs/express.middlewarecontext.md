@@ -36,6 +36,7 @@ export declare class MiddlewareContext extends Context implements HandlerContext
 |  --- | --- | --- | --- |
 |  [request](./express.middlewarecontext.request.md) |  | Request |  |
 |  [response](./express.middlewarecontext.response.md) |  | Response |  |
+|  [responseFinished](./express.middlewarecontext.responsefinished.md) |  | boolean | A flag to tell if the response is finished. |
 
 ## Methods
 

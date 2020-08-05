@@ -18,9 +18,9 @@ Provides the function that populates the response object with the results of the
 <b>Signature:</b>
 
 ```typescript
-export declare class SendProvider implements Provider<BoundValue> 
+export declare class SendProvider implements Provider<Send> 
 ```
-<b>Implements:</b> [Provider](./context.provider.md)<!-- -->&lt;[BoundValue](./context.boundvalue.md)<!-- -->&gt;
+<b>Implements:</b> [Provider](./context.provider.md)<!-- -->&lt;[Send](./rest.send.md)<!-- -->&gt;
 
 ## Methods
 

@@ -20,16 +20,10 @@ export declare class AuthenticationComponent implements Component
 ```
 <b>Implements:</b> [Component](./core.component.md)
 
-## Constructors
-
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)()](./authentication.authenticationcomponent._constructor_.md) |  | Constructs a new instance of the <code>AuthenticationComponent</code> class |
-
 ## Properties
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [providers](./authentication.authenticationcomponent.providers.md) |  | [ProviderMap](./core.providermap.md) |  |
+|  [providers](./authentication.authenticationcomponent.providers.md) |  | { \[x: string\]: typeof [AuthenticateActionProvider](./authentication.authenticateactionprovider.md) \| typeof [AuthenticationMiddlewareProvider](./authentication.authenticationmiddlewareprovider.md) \| typeof [AuthMetadataProvider](./authentication.authmetadataprovider.md) \| typeof [AuthenticationStrategyProvider](./authentication.authenticationstrategyprovider.md)<!-- -->; } |  |
 
 

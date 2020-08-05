@@ -51,6 +51,7 @@ This module also serves as a standalone extension to Express to provide extensib
 |  [registerExpressMiddleware(ctx, middlewareFactory, middlewareConfig, options)](./express.registerexpressmiddleware.md) | Bind a Express middleware to the given context |
 |  [registerExpressMiddlewareInterceptor(ctx, middlewareFactory, middlewareConfig, options)](./express.registerexpressmiddlewareinterceptor.md) | Bind a middleware interceptor to the given context |
 |  [registerMiddleware(ctx, middleware, options)](./express.registermiddleware.md) | Bind the middleware function or provider class to the context |
+|  [sortListOfGroups(orderedGroups)](./express.sortlistofgroups.md) | Sort the groups by their relative order |
 |  [toExpressMiddleware(ctx)](./express.toexpressmiddleware.md) | An adapter function to create an Express middleware handler to discover and invoke registered LoopBack-style middleware in the context. |
 |  [toInterceptor(firstHandler, additionalHandlers)](./express.tointerceptor.md) | Wrap an express middleware handler function as an interceptor |
 |  [toMiddleware(firstHandler, additionalHandlers)](./express.tomiddleware.md) | An adapter function to create a LoopBack middleware that invokes the list of Express middleware handler functions in the order of their positions |
@@ -64,7 +65,7 @@ This module also serves as a standalone extension to Express to provide extensib
 |  [HandlerContext](./express.handlercontext.md) | An object holding HTTP request, response and other data needed to handle an incoming HTTP request. |
 |  [InvokeMiddleware](./express.invokemiddleware.md) | Interface for the invoker of middleware registered under the an extension point name. |
 |  [InvokeMiddlewareOptions](./express.invokemiddlewareoptions.md) | Options for <code>InvokeMiddleware</code> |
-|  [Middleware](./express.middleware.md) | Interface LoopBack 4 middleware to be executed within sequence of actions. A middleware for LoopBack is basically a generic interceptor that uses <code>RequestContext</code>.<!-- -->The signature of a middleware function is described at [Middleware](https://loopback.io/doc/en/lb4/apidocs.express.middleware.html)<!-- -->. It's very much the same as [Koa middleware](https://github.com/koajs/koa/blob/master/docs/guide.md#writing-middleware)<!-- -->. |
+|  [Middleware](./express.middleware.md) | Interface LoopBack 4 middleware to be executed within sequence of actions. A middleware for LoopBack is basically a generic interceptor that uses <code>MiddlewareContext</code>. |
 |  [MiddlewareBindingOptions](./express.middlewarebindingoptions.md) | Options to bind middleware as a request context based interceptor within an <code>InvokeMiddleware</code> action of the sequence. |
 |  [MiddlewareCreationOptions](./express.middlewarecreationoptions.md) | Options for defining a middleware |
 |  [MiddlewareInterceptorBindingOptions](./express.middlewareinterceptorbindingoptions.md) | Options to bind a middleware as an interceptor to the context |
@@ -75,6 +76,7 @@ This module also serves as a standalone extension to Express to provide extensib
 |  Namespace | Description |
 |  --- | --- |
 |  [MiddlewareBindings](./express.middlewarebindings.md) |  |
+|  [MiddlewareGroups](./express.middlewaregroups.md) | Constants for middleware groups |
 
 ## Variables
 

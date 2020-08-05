@@ -18,14 +18,15 @@ To be called right after the resource is acquired from the pool. If it fails, th
 <b>Signature:</b>
 
 ```typescript
-acquire?(resource: T): ValueOrPromise<void>;
+acquire?(resource: T, requestCtx: Context): ValueOrPromise<void>;
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  resource | T |  |
+|  resource | T | Resource instance |
+|  requestCtx | [Context](./context.context.md) | Request context |
 
 <b>Returns:</b>
 

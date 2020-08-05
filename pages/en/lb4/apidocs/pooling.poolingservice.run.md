@@ -18,7 +18,7 @@ Run the task with an acquired resource from the pool. If task is completed succe
 <b>Signature:</b>
 
 ```typescript
-run(task: (resource: T) => ValueOrPromise<void>): Promise<void>;
+run(task: (resource: T) => ValueOrPromise<void>, requestCtx?: Context): Promise<void>;
 ```
 
 ## Parameters
@@ -26,6 +26,7 @@ run(task: (resource: T) => ValueOrPromise<void>): Promise<void>;
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  task | (resource: T) =&gt; [ValueOrPromise](./context.valueorpromise.md)<!-- -->&lt;void&gt; | A function that accepts a resource and returns a Promise. |
+|  requestCtx | [Context](./context.context.md) |  |
 
 <b>Returns:</b>
 

@@ -26,7 +26,7 @@ permalink: /doc/en/lb4/apidocs.pooling.html
 |  Function | Description |
 |  --- | --- |
 |  [createPooledBindingFactory(bindingAddress)](./pooling.createpooledbindingfactory.md) | Create a function to return a pooled binding factory |
-|  [getPooledValue(poolingService)](./pooling.getpooledvalue.md) | Acquire a resource from the pooling service or pool |
+|  [getPooledValue(poolingService, requestCtx)](./pooling.getpooledvalue.md) | Acquire a resource from the pooling service or pool |
 
 ## Interfaces
 

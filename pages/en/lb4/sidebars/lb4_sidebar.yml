@@ -432,6 +432,10 @@ children:
       url: HasOne-relation.html
       output: 'web, pdf'
 
+    - title: 'HasManyThrough Relation'
+      url: HasManyThrough-relation.html
+      output: 'web, pdf'
+
   - title: 'DataSources'
     url: DataSources.html
     output: 'web, pdf'
@@ -461,6 +465,14 @@ children:
     url: Sequence.html
     output: 'web, pdf'
     children:
+
+    - title: 'Middleware based sequence'
+      url: REST-middleware-sequence.html
+      output: 'web, pdf'
+
+    - title: 'Action based sequence'
+      url: REST-action-sequence.html
+      output: 'web, pdf'
 
     - title: 'Routing requests'
       url: Routing-requests.html
@@ -658,6 +670,10 @@ children:
 
       - title: 'Cloudant connector'
         url: Cloudant-connector.html
+        output: 'web, pdf'
+
+      - title: 'CouchDB 2.x connector'
+        url: Couchdb2-connector.html
         output: 'web, pdf'
 
       - title: 'DashDB connector'

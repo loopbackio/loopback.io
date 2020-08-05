@@ -25,10 +25,12 @@ export declare namespace RestTags
 
 |  Variable | Description |
 |  --- | --- |
+|  [ACTION\_MIDDLEWARE\_CHAIN](./rest.resttags.action_middleware_chain.md) | Legacy middleware chain for action-based REST sequence |
 |  [AJV\_FORMAT](./rest.resttags.ajv_format.md) |  |
 |  [AJV\_KEYWORD](./rest.resttags.ajv_keyword.md) |  |
 |  [CONTROLLER\_BINDING](./rest.resttags.controller_binding.md) | Binding tag for controller route bindings to represent the controller binding key |
 |  [CONTROLLER\_ROUTE](./rest.resttags.controller_route.md) | Binding tag to identify controller based REST routes |
+|  [REST\_MIDDLEWARE\_CHAIN](./rest.resttags.rest_middleware_chain.md) |  |
 |  [REST\_ROUTE](./rest.resttags.rest_route.md) | Binding tag to identify REST routes |
 |  [ROUTE\_PATH](./rest.resttags.route_path.md) | Binding tag for the REST route path |
 |  [ROUTE\_VERB](./rest.resttags.route_verb.md) | Binding tag for the REST route verb |

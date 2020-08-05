@@ -28,12 +28,16 @@ A REST server for LoopBack 4 application instances, complete with:
 |  [BaseRoute](./rest.baseroute.md) | Base implementation of RouteEntry |
 |  [ControllerRoute](./rest.controllerroute.md) | A route backed by a controller |
 |  [DefaultSequence](./rest.defaultsequence.md) | The default implementation of SequenceHandler. |
+|  [FindRouteMiddlewareProvider](./rest.findroutemiddlewareprovider.md) |  |
 |  [FindRouteProvider](./rest.findrouteprovider.md) |  |
 |  [HttpHandler](./rest.httphandler.md) |  |
 |  [InfoSpecEnhancer](./rest.infospecenhancer.md) | An OpenAPI spec enhancer to populate <code>info</code> with application metadata (package.json). |
+|  [InvokeMethodMiddlewareProvider](./rest.invokemethodmiddlewareprovider.md) |  |
 |  [InvokeMethodProvider](./rest.invokemethodprovider.md) |  |
 |  [JsonBodyParser](./rest.jsonbodyparser.md) |  |
 |  [LogErrorProvider](./rest.logerrorprovider.md) |  |
+|  [MiddlewareSequence](./rest.middlewaresequence.md) | A sequence implementation using middleware chains |
+|  [ParseParamsMiddlewareProvider](./rest.parseparamsmiddlewareprovider.md) |  |
 |  [ParseParamsProvider](./rest.parseparamsprovider.md) | Provides the function for parsing args in requests at runtime. |
 |  [RawBodyParser](./rest.rawbodyparser.md) | Parsing the request body into Buffer |
 |  [RedirectRoute](./rest.redirectroute.md) |  |
@@ -48,6 +52,7 @@ A REST server for LoopBack 4 application instances, complete with:
 |  [RouteSource](./rest.routesource.md) |  |
 |  [RoutingTable](./rest.routingtable.md) | Routing table |
 |  [SendProvider](./rest.sendprovider.md) | Provides the function that populates the response object with the results of the operation. |
+|  [SendResponseMiddlewareProvider](./rest.sendresponsemiddlewareprovider.md) |  |
 |  [StreamBodyParser](./rest.streambodyparser.md) | A special body parser to retain request stream as is. It will be used by explicitly setting <code>x-parser</code> to <code>'stream'</code> in the request body spec. |
 |  [TextBodyParser](./rest.textbodyparser.md) |  |
 |  [Trie](./rest.trie.md) | An implementation of trie for routes. The key hierarchy is built with parts of the route path delimited by <code>/</code> |
@@ -96,7 +101,6 @@ A REST server for LoopBack 4 application instances, complete with:
 |  [OpenApiSpecForm](./rest.openapispecform.md) | The form of OpenAPI specs to be served |
 |  [OpenApiSpecOptions](./rest.openapispecoptions.md) | Options to customize how OpenAPI specs are served |
 |  [RequestBodyParserOptions](./rest.requestbodyparseroptions.md) | Options for request body parsing See https://github.com/expressjs/body-parser/\#options<!-- -->Built-in parsers retrieve their own options from the request body parser options. The parser specific properties override common ones. |
-|  [RequestBodyValidationOptions](./rest.requestbodyvalidationoptions.md) | Options for request body validation using AJV |
 |  [RequestWithSession](./rest.requestwithsession.md) | extending express request type with a session field |
 |  [ResolvedNode](./rest.resolvednode.md) |  |
 |  [ResolvedRoute](./rest.resolvedroute.md) | A route with path parameters resolved |
@@ -106,6 +110,7 @@ A REST server for LoopBack 4 application instances, complete with:
 |  [SequenceHandler](./rest.sequencehandler.md) | A sequence handler is a class implementing sequence of actions required to handle an incoming request. |
 |  [Session](./rest.session.md) | interface to set variables in user session |
 |  [SessionUserProfile](./rest.sessionuserprofile.md) | user profile to add in session |
+|  [ValidationOptions](./rest.validationoptions.md) | Options for request body validation using AJV |
 |  [ValueValidationOptions](./rest.valuevalidationoptions.md) | Options for any value validation using AJV |
 
 ## Namespaces
@@ -115,6 +120,7 @@ A REST server for LoopBack 4 application instances, complete with:
 |  [builtinParsers](./rest.builtinparsers.md) |  |
 |  [RestBindings](./rest.restbindings.md) | RestServer-specific bindings |
 |  [RestHttpErrors](./rest.resthttperrors.md) |  |
+|  [RestMiddlewareGroups](./rest.restmiddlewaregroups.md) | Built-in middleware groups for the REST sequence |
 |  [RestTags](./rest.resttags.md) | Binding tags for RestServer |
 
 ## Variables
@@ -146,10 +152,11 @@ A REST server for LoopBack 4 application instances, complete with:
 |  [NodeWithValue](./rest.nodewithvalue.md) |  |
 |  [OperationArgs](./rest.operationargs.md) |  |
 |  [OperationRetval](./rest.operationretval.md) | Return value of a controller method (a function implementing an operation). This is a type alias for "any", used to distinguish operation results from other "any" typed values. |
-|  [ParseParams](./rest.parseparams.md) |  |
+|  [ParseParams](./rest.parseparams.md) | A function to parse OpenAPI operation parameters for a given route |
 |  [PathParameterValues](./rest.pathparametervalues.md) |  |
 |  [Reject](./rest.reject.md) | Reject the request with an error. |
 |  [RequestBody](./rest.requestbody.md) | Request body with metadata |
+|  [RequestBodyValidationOptions](./rest.requestbodyvalidationoptions.md) |  |
 |  [RestComponentConfig](./rest.restcomponentconfig.md) |  |
 |  [RestRouterOptions](./rest.restrouteroptions.md) |  |
 |  [RestServerConfig](./rest.restserverconfig.md) | Valid configuration for the RestServer constructor. |

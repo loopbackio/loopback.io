@@ -13,15 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest.openapispecoptions.endpointmapping.html
 
 ## OpenApiSpecOptions.endpointMapping property
 
-Mapping of urls to spec forms, by default:
-
-```
-{
-  '/openapi.json': {version: '3.0.0', format: 'json'},
-  '/openapi.yaml': {version: '3.0.0', format: 'yaml'},
-}
-
-```
+Mapping of urls to spec forms, by default: <br> { <br> '/openapi.json': {<!-- -->version: '3.0.0', format: 'json'<!-- -->}<!-- -->, <br> '/openapi.yaml': {<!-- -->version: '3.0.0', format: 'yaml'<!-- -->}<!-- -->, <br> }
 
 <b>Signature:</b>
 

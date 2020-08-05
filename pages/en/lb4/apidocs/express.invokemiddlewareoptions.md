@@ -27,6 +27,6 @@ export interface InvokeMiddlewareOptions
 |  --- | --- | --- |
 |  [chain](./express.invokemiddlewareoptions.chain.md) | string | Name of the extension point. Default to the <code>extensionPoint</code> tag value from the binding |
 |  [next](./express.invokemiddlewareoptions.next.md) | [Next](./context.next.md) |  |
-|  [orderedGroups](./express.invokemiddlewareoptions.orderedgroups.md) | string\[\] | An array of group names to denote the order of execution |
+|  [orderedGroups](./express.invokemiddlewareoptions.orderedgroups.md) | string\[\] | An array of group names to denote the order of execution, such as <code>['cors', 'caching', 'rate-limiting']</code>. |
 
 

@@ -18,8 +18,15 @@ Acquire a new instance
 <b>Signature:</b>
 
 ```typescript
-acquire(): Promise<T>;
+acquire(requestCtx?: Context): Promise<T>;
 ```
+
+## Parameters
+
+|  Parameter | Type | Description |
+|  --- | --- | --- |
+|  requestCtx | [Context](./context.context.md) | Optional request context, default to the owning context |
+
 <b>Returns:</b>
 
 Promise&lt;T&gt;

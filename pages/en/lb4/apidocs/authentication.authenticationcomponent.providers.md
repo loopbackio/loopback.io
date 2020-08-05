@@ -16,6 +16,8 @@ permalink: /doc/en/lb4/apidocs.authentication.authenticationcomponent.providers.
 <b>Signature:</b>
 
 ```typescript
-providers?: ProviderMap;
+providers: {
+        [x: string]: typeof AuthenticateActionProvider | typeof AuthenticationMiddlewareProvider | typeof AuthMetadataProvider | typeof AuthenticationStrategyProvider;
+    };
 ```
 

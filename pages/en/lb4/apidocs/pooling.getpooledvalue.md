@@ -18,7 +18,7 @@ Acquire a resource from the pooling service or pool
 <b>Signature:</b>
 
 ```typescript
-export declare function getPooledValue<T>(poolingService: PoolingService<T> | Pool<T>): Promise<PooledValue<T>>;
+export declare function getPooledValue<T>(poolingService: PoolingService<T> | Pool<T>, requestCtx?: Context): Promise<PooledValue<T>>;
 ```
 
 ## Parameters
@@ -26,6 +26,7 @@ export declare function getPooledValue<T>(poolingService: PoolingService<T> | Po
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  poolingService | [PoolingService](./pooling.poolingservice.md)<!-- -->&lt;T&gt; \| Pool&lt;T&gt; | Pooling service or pool |
+|  requestCtx | [Context](./context.context.md) | Request context |
 
 <b>Returns:</b>
 

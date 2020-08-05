@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest.restbindings.sequenceactions.invoke_middlewa
 
 ## RestBindings.SequenceActions.INVOKE\_MIDDLEWARE variable
 
-Binding key for setting and injecting a route finding function
+Binding key for setting and injecting `invokeMiddleware` function
 
 <b>Signature:</b>
 

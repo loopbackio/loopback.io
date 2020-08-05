@@ -32,6 +32,6 @@ export interface RequestBodyParserOptions extends Options
 |  [raw](./rest.requestbodyparseroptions.raw.md) | Options | Options for raw parser |
 |  [text](./rest.requestbodyparseroptions.text.md) | OptionsText | Options for text parser |
 |  [urlencoded](./rest.requestbodyparseroptions.urlencoded.md) | OptionsUrlencoded | Options for urlencoded parser |
-|  [validation](./rest.requestbodyparseroptions.validation.md) | [RequestBodyValidationOptions](./rest.requestbodyvalidationoptions.md) | Validation options for AJV, see https://github.com/epoberezkin/ajv\#options This setting is global for all request body parsers and it cannot be overridden inside parser specific properties such as <code>json</code> or <code>text</code>. |
+|  [validation](./rest.requestbodyparseroptions.validation.md) | [ValidationOptions](./rest.validationoptions.md) | Validation options for AJV, see https://github.com/epoberezkin/ajv\#options This setting is global for all request body parsers and it cannot be overridden inside parser specific properties such as <code>json</code> or <code>text</code>. |
 
 

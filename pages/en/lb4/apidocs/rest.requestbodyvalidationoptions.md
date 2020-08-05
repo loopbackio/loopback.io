@@ -11,25 +11,11 @@ permalink: /doc/en/lb4/apidocs.rest.requestbodyvalidationoptions.html
 
 [Home](./index.md) &gt; [@loopback/rest](./rest.md) &gt; [RequestBodyValidationOptions](./rest.requestbodyvalidationoptions.md)
 
-## RequestBodyValidationOptions interface
-
-Options for request body validation using AJV
+## RequestBodyValidationOptions type
 
 <b>Signature:</b>
 
 ```typescript
-export interface RequestBodyValidationOptions extends ajv.Options 
+export declare type RequestBodyValidationOptions = ValidationOptions;
 ```
-<b>Extends:</b> ajv.Options
-
-## Properties
-
-|  Property | Type | Description |
-|  --- | --- | --- |
-|  [ajvErrors](./rest.requestbodyvalidationoptions.ajverrors.md) | true \| [AjvErrorOptions](./rest.ajverroroptions.md) | Enable custom error messages in JSON-Schema for AJV validator from https://github.com/epoberezkin/ajv-errors - <code>true</code>: Enable <code>ajv-errors</code> - <code>AjvErrorOptions</code>: Enable <code>ajv-errors</code> with options |
-|  [ajvErrorTransformer](./rest.requestbodyvalidationoptions.ajverrortransformer.md) | (errors: ajv.ErrorObject\[\]) =&gt; ajv.ErrorObject\[\] | A function that transform the <code>ErrorObject</code>s reported by AJV. This could be used for error messages customization, localization, etc. |
-|  [ajvFactory](./rest.requestbodyvalidationoptions.ajvfactory.md) | (options: ajv.Options) =&gt; Ajv | A factory to create Ajv instance |
-|  [ajvKeywords](./rest.requestbodyvalidationoptions.ajvkeywords.md) | true \| string\[\] | Enable additional AJV keywords from https://github.com/epoberezkin/ajv-keywords - <code>true</code>: Add all keywords from <code>ajv-keywords</code> - <code>string[]</code>: Add an array of keywords from <code>ajv-keywords</code> |
-|  [compiledSchemaCache](./rest.requestbodyvalidationoptions.compiledschemacache.md) | [SchemaValidatorCache](./rest.schemavalidatorcache.md) | Custom cache for compiled schemas by AJV. This setting makes it possible to skip the default cache. |
-
 

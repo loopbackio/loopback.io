@@ -18,7 +18,7 @@ Check whether the request body is valid according to the provided OpenAPI schema
 <b>Signature:</b>
 
 ```typescript
-export declare function validateRequestBody(body: RequestBody, requestBodySpec?: RequestBodyObject, globalSchemas?: SchemasObject, options?: RequestBodyValidationOptions): Promise<void>;
+export declare function validateRequestBody(body: RequestBody, requestBodySpec?: RequestBodyObject, globalSchemas?: SchemasObject, options?: ValidationOptions): Promise<void>;
 ```
 
 ## Parameters
@@ -28,7 +28,7 @@ export declare function validateRequestBody(body: RequestBody, requestBodySpec?:
 |  body | [RequestBody](./rest.requestbody.md) | The request body parsed from an HTTP request. |
 |  requestBodySpec | RequestBodyObject | The OpenAPI requestBody specification defined in <code>@requestBody()</code>. |
 |  globalSchemas | SchemasObject | The referenced schemas generated from <code>OpenAPISpec.components.schemas</code>. |
-|  options | [RequestBodyValidationOptions](./rest.requestbodyvalidationoptions.md) | Request body validation options for AJV |
+|  options | [ValidationOptions](./rest.validationoptions.md) | Request body validation options for AJV |
 
 <b>Returns:</b>
 

@@ -13,6 +13,8 @@ permalink: /doc/en/lb4/apidocs.rest.parseparams.html
 
 ## ParseParams type
 
+A function to parse OpenAPI operation parameters for a given route
+
 <b>Signature:</b>
 
 ```typescript

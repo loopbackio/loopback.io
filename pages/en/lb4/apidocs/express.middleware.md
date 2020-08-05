@@ -13,9 +13,7 @@ permalink: /doc/en/lb4/apidocs.express.middleware.html
 
 ## Middleware interface
 
-Interface LoopBack 4 middleware to be executed within sequence of actions. A middleware for LoopBack is basically a generic interceptor that uses `RequestContext`<!-- -->.
-
-The signature of a middleware function is described at [Middleware](https://loopback.io/doc/en/lb4/apidocs.express.middleware.html)<!-- -->. It's very much the same as [Koa middleware](https://github.com/koajs/koa/blob/master/docs/guide.md#writing-middleware)<!-- -->.
+Interface LoopBack 4 middleware to be executed within sequence of actions. A middleware for LoopBack is basically a generic interceptor that uses `MiddlewareContext`<!-- -->.
 
 <b>Signature:</b>
 
@@ -23,6 +21,18 @@ The signature of a middleware function is described at [Middleware](https://loop
 export interface Middleware extends GenericInterceptor<MiddlewareContext> 
 ```
 <b>Extends:</b> [GenericInterceptor](./context.genericinterceptor.md)<!-- -->&lt;[MiddlewareContext](./express.middlewarecontext.md)<!-- -->&gt;
+
+## Remarks
+
+The middleware function is responsible for processing HTTP requests and responses. It typically includes the following logic.
+
+1. Process the request with one of the following outcome - Reject the request by throwing an error if request is invalid, such as validation or authentication failures - Produce a response by itself, such as from the cache - Proceed by calling `await next()` to invoke downstream middleware. When `await next()` returns, it goes to step 2. If an error thrown from `await next()`<!-- -->, step 3 handles the error.
+
+2. Process the response with one the following outcome - Reject the response by throwing an error - Replace the response with its own value - Return the response to upstream middleware
+
+3. Catch the error thrown from `await next()`<!-- -->. If the `catch` block does not exist, the error will be bubbled up to upstream middleware
+
+The signature of a middleware function is described at [Middleware](https://loopback.io/doc/en/lb4/apidocs.express.middleware.html)<!-- -->. It's very much the same as [Koa middleware](https://github.com/koajs/koa/blob/master/docs/guide.md#writing-middleware)<!-- -->.
 
 ## Example
 

@@ -45,10 +45,10 @@ The pool service observes life cycle events to start and stop.
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [acquire()](./pooling.poolingservice.acquire.md) |  | Acquire a new instance |
+|  [acquire(requestCtx)](./pooling.poolingservice.acquire.md) |  | Acquire a new instance |
 |  [destroy(resource)](./pooling.poolingservice.destroy.md) |  | Destroy a resource from the pool |
 |  [release(resource)](./pooling.poolingservice.release.md) |  | Release the resource back to the pool. |
-|  [run(task)](./pooling.poolingservice.run.md) |  | Run the task with an acquired resource from the pool. If task is completed successfully, the resource is returned to the pool. Otherwise, the resource is destroyed. |
+|  [run(task, requestCtx)](./pooling.poolingservice.run.md) |  | Run the task with an acquired resource from the pool. If task is completed successfully, the resource is returned to the pool. Otherwise, the resource is destroyed. |
 |  [start()](./pooling.poolingservice.start.md) |  | Start the pool |
 |  [stop()](./pooling.poolingservice.stop.md) |  | Stop the pool |
 

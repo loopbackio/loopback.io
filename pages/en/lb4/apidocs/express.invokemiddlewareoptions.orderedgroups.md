@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.express.invokemiddlewareoptions.orderedgroups.htm
 
 ## InvokeMiddlewareOptions.orderedGroups property
 
-An array of group names to denote the order of execution
+An array of group names to denote the order of execution, such as `['cors', 'caching', 'rate-limiting']`<!-- -->.
 
 <b>Signature:</b>
 
