@@ -24,7 +24,7 @@
   },
   "devDependencies": {
     "@loopback/docs": "latest",
-    "chalk": "^2.4.1",
+    "chalk": "^2.4.2",
     "fs-extra": "^8.1.0",
     "ibm-watson": "^4.3.3",
     "markdownlint-cli": "github:sequoia/markdownlint-cli",
