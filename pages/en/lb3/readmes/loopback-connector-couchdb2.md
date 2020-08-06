@@ -400,7 +400,7 @@ Given an array of data to be updated, Couchdb supports the idea of performing bu
 
 Example:
 
-```server/boot/script.js```
+*server/boot/script.js*
 
 ```javascript
 var dataToCreate = [
