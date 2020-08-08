@@ -8,48 +8,6 @@ Local.
 For more information, see [Getting started with Cloudant NoSQL DB](https://www.ng.bluemix.net/docs/services/Cloudant/index.html)
 
 The `loopback-connector-cloudant` module is the Cloudant connector for the LoopBack framework.
-<!-- TOC -->
-
-- [Getting Started](#getting-started)
-    - [Design](#design)
-        - [Partial Update](#partial-update)
-        - [Frequent Modification](#frequent-modification)
-        - [Conflict Control](#conflict-control)
-    - [Model](#model)
-        - [Map Between Model And Document](#map-between-model-and-document)
-        - [Model-specific Configuration](#model-specific-configuration)
-        - [_rev Property](#_rev-property)
-            - [Example CRUD operations with `_rev`](#example-crud-operations-with-_rev)
-        - [Force Id](#force-id)
-- [Setup Cloudant Instance](#setup-cloudant-instance)
-- [Installation](#installation)
-- [Configuration](#configuration)
-    - [Generate Datasource](#generate-datasource)
-    - [Datasource Config](#datasource-config)
-        - [`url` vs `username` & `password`](#url-vs-username--password)
-        - [iamApiKey](#iamApiKey)
-        - [Advanced configuration](#advanced-configuration)
-        - [Requests Plugin](#requests-plugin)
-    - [Example Usage](#example-usage)
-- [CRUD](#crud)
-    - [Update](#update)
-- [Migration](#migration)
-    - [autoupdate vs automigrate](#autoupdate-vs-automigrate)
-    - [isActual](#isactual)
-    - [Example Code](#example-code)
-- [Discovery](#discovery)
-- [Query](#query)
-- [View](#view)
-- [Geospatial](#geospatial)
-- [Bulk replace](#bulk-replace)
-- [Partitioned database](#partitioned-database)
-- [Testing](#testing)
-        - [Docker](#docker)
-- [More Info](#more-info)
-- [Feature backlog](#feature-backlog)
-    - [Index](#index)
-
-<!-- /TOC -->
 
 # Getting Started
 
@@ -601,8 +559,8 @@ https://github.com/cloudant/nodejs-cloudant#request-plugins
 
 ## Example Usage
 
-*/server/script.js*
 ```javascript
+// Inside file /server/script.js
 var util = require('util');
 
 // Here we create datasource dynamically.
