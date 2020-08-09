@@ -2,6 +2,7 @@
     "extends": [
       ":gitSignOff",
       "group:recommended",
+      ":pinAllExceptPeerDependencies",
       "helpers:disableTypesNodeMajor"
     ],
   
