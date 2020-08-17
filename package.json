@@ -16,7 +16,7 @@
     "discovery-upload": "node discovery-upload.js"
   },
   "engines": {
-    "node": ">=8"
+    "node": ">=10"
   },
   "repository": {
     "type": "git",
