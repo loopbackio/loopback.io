@@ -392,8 +392,9 @@ For example:
 To learn more about specifying database settings, please check the section [Data Mapping Properties](https://loopback.io/doc/en/lb4/Model.html#data-mapping-properties).
 
 ## Type mapping
-<!-- TODO <agnes>: update the link with lb4 version once it's done -->
-See [LoopBack types](http://loopback.io/doc/en/lb3/LoopBack-types.html) for details on LoopBack's data types.
+
+See [LoopBack 4 types](http://loopback.io/doc/en/lb4/LoopBack-types.html) (or [LoopBack 3 types](http://loopback.io/doc/en/lb3/LoopBack-types.html)) for
+details on LoopBack's data types.
 
 ### LoopBack to PostgreSQL types
 

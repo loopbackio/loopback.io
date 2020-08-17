@@ -158,7 +158,7 @@ supported by [`node-mysql`](https://github.com/felixge/node-mysql).
 
 ## Type mappings
 
-See [LoopBack types](http://loopback.io/doc/en/lb3/LoopBack-types.html) for
+See [LoopBack 4 types](http://loopback.io/doc/en/lb4/LoopBack-types.html) (or [LoopBack 3 types](http://loopback.io/doc/en/lb3/LoopBack-types.html)) for
 details on LoopBack's data types.
 
 ### LoopBack to MySQL types
@@ -252,6 +252,8 @@ _NOTE_ as of v3.0.0 of MySQL Connector, the following flags were introduced:
   instead of a Number
 
 ## Data mapping properties
+
+Except the common database-specific properties we introduce in [How LoopBack Models Map To Database Tables/Collections](https://loopback.io/doc/en/lb4/Model.html#how-loopback-models-map-to-database-tablescollections), the following are more detailed examples and MySQL-specific settings.
 
 ### Table/Column Names
 
@@ -452,7 +454,7 @@ export class User extends Entity {
 
 ### Default Clause/Constant
 
-Use the `default` property to have MySQL handle setting column `DEFAULT` value.
+Use the `default` and `dataType` properties to have MySQL handle **setting column `DEFAULT` value**.
 
 <details><summary markdown="span"><strong>Example</strong></summary>
 
@@ -460,6 +462,7 @@ Use the `default` property to have MySQL handle setting column `DEFAULT` value.
 @property({
   type: 'String',
   mysql: {
+    dataType: 'varchar',
     default: 'pending'
   }
 })
@@ -468,10 +471,20 @@ status: String;
 @property({
   type: 'Number',
   mysql: {
+    dataType: 'int',
     default: 42
   }
 })
 maxDays: Number;
+
+@property({
+  type: 'boolean',
+  mysql: {
+    dataType: 'tinyint',
+    default: 1
+  }
+})
+isDone: Boolean;
 ```
 
 </details>
@@ -484,6 +497,7 @@ For the date or timestamp types use `CURRENT_TIMESTAMP` or `now`.
 @property({
   type: 'Date',
   mysql: {
+    dataType: 'datetime',
     default: 'CURRENT_TIMESTAMP'
   }
 })
