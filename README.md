@@ -6,6 +6,7 @@ NOTE: The website is served from the `gh-pages` branch.
 
 This repository is provided under the [MIT License](LICENSE).
 
+
 ## Setup
 
 To preview the website locally:
@@ -100,34 +101,11 @@ Docs Search is powered by [IBM Watson Discovery](https://www.ibm.com/watson/serv
 
 ### How it works
 
-LoopBack Docs are uploaded to Discovery by Travis CI (before deploying a new
-site -- after changes have been merged into `gh-pages` branch) automatically.
-The script creates a new [collection](https://console.bluemix.net/docs/services/discovery/data-crawler-qs.html#create-a-collection)
-and uploads each doc to that. The content of the docs along with certain
-metadata can be found in `_site/posts.json`. Travis uploads each Object in that
-file as a separate document (only uploads `documentation` pages).
+There are two parts of work to get this working:
 
-Travis CI has encrypted variables which sets the environment variables for
-Discovery username / password. Core team can reach out to Taranveer Virk /
-Diana Lau for these credentials if needed.
+1. The [Discovery service](https://www.ibm.com/watson/services/discovery/) is one of the services provided by [IBM Cloud](https://cloud.ibm.com/). A collection is created with loopback.io as the URL we'd like to sync.
 
-* Once docs have been uploaded, Travis will delete the previous collection as
-  the Search URL uses the oldest collection available to serve results.
-
-If you want to try this out locally, you can create an account for Watson
-Discovery (Use the Lite plan which is free). Set the following environment
-variables locally:
-
-```
-export DISCOVERY_USERNAME="username"
-export DISCOVERY_PASSWORD="password"
-```
-
-You can now upload docs to your Watson Discovery instance by running
-
-```
-npm run discovery-upload
-```
+2. The [IBM Cloud function](https://www.ibm.com/cloud/functions) is used for the search function calling the discovery service and parse the output in the form that the LoopBack web site understands.  
 
 ### Front End
 
@@ -143,22 +121,16 @@ and Contribution docs are included in all results.
 
 ### Cloud Function
 
-The code for the Cloud function can be found [here](https://github.com/strongloop-internal/loopback-search-function).
+The code for the Cloud function can be found [here](https://github.com/strongloop/loopback.io-search).
 It is deployed to the same account and must be edited directly in IBM Cloud
 (formerly BlueMix). The repository exists to document code changes and have peer
-reviews. Credentials for accessing the Cloud Function can be obtained from
-Taranveer Virk / Diana Lau OR you can ask them to re-deploy changes.
+reviews. Credentials for accessing the Cloud Function can be obtained from Diana Lau OR you can ask them to re-deploy changes.
 
 #### Your own version
 
-You can deploy the code on your own BlueMix account and upload the URL for
+You can deploy the code on your own IBM Cloud account and upload the URL for
 Discovery in [search.html](https://github.com/strongloop/loopback.io/blob/gh-pages/_layouts/search.html).
-For the function to work, you must set the following parameters in the function settings:
 
-```
-discovery_username: username
-discovery_password: password
-```
 
 ## Contributing 
 

@@ -12,8 +12,7 @@
     "postinstall": "npm run swagger-ui && npm run copydocs",
     "swagger-ui": "node ./api-explorer/upgrade-swagger-ui.js",
     "copydocs": "node update-lb4-docs.js",
-    "sitemap-transform": "node sitemap.js",
-    "discovery-upload": "node discovery-upload.js"
+    "sitemap-transform": "node sitemap.js"
   },
   "engines": {
     "node": ">=10"

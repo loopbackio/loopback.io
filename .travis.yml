@@ -24,7 +24,6 @@ install:
 
 before_deploy:
   - npm run build
-  - npm run discovery-upload
 
 deploy:
   provider: pages
