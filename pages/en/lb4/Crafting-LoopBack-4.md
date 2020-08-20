@@ -282,7 +282,7 @@ Here are the stages we are marching through toward the final version of LoopBack
     - Introduce repositories to represent data access patterns such as CRUD or
       Key/Value stores
     - Provide a reference implementation of CRUD and KV flavors of repository
-      interfaces using the legacy juggler and connectors
+      interfaces using juggler and connectors
     - Refactor/rewrite the juggler into separate modules
       - Typing system
       - Model and relation definition
@@ -473,7 +473,7 @@ There are several key pillars to make extensibility a reality for LoopBack 4.
 - [Context](Context.md), the IoC container to manage services
 - [Dependency injection](Dependency-injection.md) to facilitate composition
 - [Decorators](Decorators.md) to supply metadata using annotations
-- [Component](Using-components.md) as the packaging model to bundle extensions
+- [Components](Components.md) as the packaging model to bundle extensions
 
 Please check out [Extending LoopBack 4](Extending-LoopBack-4.md).
 

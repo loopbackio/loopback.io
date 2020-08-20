@@ -13,6 +13,14 @@ permalink: /doc/en/lb4/changelog.extension-logging.html
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.3.11](https://github.com/strongloop/loopback-next/compare/@loopback/extension-logging@0.3.10...@loopback/extension-logging@0.3.11) (2020-08-05)
+
+**Note:** Version bump only for package @loopback/extension-logging
+
+
+
+
+
 ## [0.3.10](https://github.com/strongloop/loopback-next/compare/@loopback/extension-logging@0.3.9...@loopback/extension-logging@0.3.10) (2020-07-20)
 
 **Note:** Version bump only for package @loopback/extension-logging

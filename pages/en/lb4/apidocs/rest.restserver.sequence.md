@@ -18,18 +18,18 @@ Configure a custom sequence class for handling incoming requests.
 <b>Signature:</b>
 
 ```typescript
-sequence(value: Constructor<SequenceHandler>): void;
+sequence(sequenceClass: Constructor<SequenceHandler>): Binding<SequenceHandler>;
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  value | [Constructor](./context.constructor.md)<!-- -->&lt;[SequenceHandler](./rest.sequencehandler.md)<!-- -->&gt; | The sequence to invoke for each incoming request. |
+|  sequenceClass | [Constructor](./context.constructor.md)<!-- -->&lt;[SequenceHandler](./rest.sequencehandler.md)<!-- -->&gt; | The sequence class to invoke for each incoming request. |
 
 <b>Returns:</b>
 
-void
+[Binding](./context.binding.md)<!-- -->&lt;[SequenceHandler](./rest.sequencehandler.md)<!-- -->&gt;
 
 ## Example
 

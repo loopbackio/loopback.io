@@ -20,9 +20,9 @@ It declares an extension point to which all authentication strategy implementati
 <b>Signature:</b>
 
 ```typescript
-export declare class AuthenticationStrategyProvider implements Provider<AuthenticationStrategy | undefined> 
+export declare class AuthenticationStrategyProvider implements Provider<AuthenticationStrategy[] | undefined> 
 ```
-<b>Implements:</b> [Provider](./context.provider.md)<!-- -->&lt;[AuthenticationStrategy](./authentication.authenticationstrategy.md) \| undefined&gt;
+<b>Implements:</b> [Provider](./context.provider.md)<!-- -->&lt;[AuthenticationStrategy](./authentication.authenticationstrategy.md)<!-- -->\[\] \| undefined&gt;
 
 ## Example
 
@@ -39,13 +39,12 @@ export declare class AuthenticationStrategyProvider implements Provider<Authenti
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
 |  [authenticationStrategies](./authentication.authenticationstrategyprovider.authenticationstrategies.md) |  | [Getter](./context.getter.md)<!-- -->&lt;[AuthenticationStrategy](./authentication.authenticationstrategy.md)<!-- -->\[\]&gt; |  |
-|  [metadata](./authentication.authenticationstrategyprovider.metadata.md) |  | [AuthenticationMetadata](./authentication.authenticationmetadata.md) \| undefined |  |
+|  [metadata](./authentication.authenticationstrategyprovider.metadata.md) |  | [AuthenticationMetadata](./authentication.authenticationmetadata.md)<!-- -->\[\] \| undefined |  |
 
 ## Methods
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [findAuthenticationStrategy(name)](./authentication.authenticationstrategyprovider.findauthenticationstrategy.md) |  |  |
 |  [value()](./authentication.authenticationstrategyprovider.value.md) |  |  |
 
 

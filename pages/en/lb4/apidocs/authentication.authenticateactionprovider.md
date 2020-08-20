@@ -30,13 +30,13 @@ export declare class AuthenticateActionProvider implements Provider<Authenticate
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)(getStrategy, setCurrentUser, setRedirectUrl, setRedirectStatus)](./authentication.authenticateactionprovider._constructor_.md) |  | Constructs a new instance of the <code>AuthenticateActionProvider</code> class |
+|  [(constructor)(getStrategies, setCurrentUser, setRedirectUrl, setRedirectStatus)](./authentication.authenticateactionprovider._constructor_.md) |  | Constructs a new instance of the <code>AuthenticateActionProvider</code> class |
 
 ## Properties
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [getStrategy](./authentication.authenticateactionprovider.getstrategy.md) |  | [Getter](./context.getter.md)<!-- -->&lt;[AuthenticationStrategy](./authentication.authenticationstrategy.md)<!-- -->&gt; |  |
+|  [getStrategies](./authentication.authenticateactionprovider.getstrategies.md) |  | [Getter](./context.getter.md)<!-- -->&lt;[AuthenticationStrategy](./authentication.authenticationstrategy.md) \| [AuthenticationStrategy](./authentication.authenticationstrategy.md)<!-- -->\[\] \| undefined&gt; |  |
 |  [setCurrentUser](./authentication.authenticateactionprovider.setcurrentuser.md) |  | [Setter](./context.setter.md)<!-- -->&lt;[UserProfile](./security.userprofile.md)<!-- -->&gt; |  |
 |  [setRedirectStatus](./authentication.authenticateactionprovider.setredirectstatus.md) |  | [Setter](./context.setter.md)<!-- -->&lt;number&gt; |  |
 |  [setRedirectUrl](./authentication.authenticateactionprovider.setredirecturl.md) |  | [Setter](./context.setter.md)<!-- -->&lt;string&gt; |  |

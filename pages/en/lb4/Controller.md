@@ -1,9 +1,10 @@
 ---
 lang: en
-title: 'Controllers'
+title: 'Controller'
 keywords: LoopBack 4.0, LoopBack 4, Node.js, TypeScript, OpenAPI, Concepts
 sidebar: lb4_sidebar
-permalink: /doc/en/lb4/Controllers.html
+permalink: /doc/en/lb4/Controller.html
+redirect_from: /doc/en/lb4/Controllers.html
 ---
 
 ## Overview
@@ -195,6 +196,50 @@ export class HelloController {
   for OpenAPI spec, which also handles request routing.
 - `@param.query.number` specifies in the spec being generated that the route
   takes a parameter via query which will be a number.
+
+## Modifying Specifications Created by Controller Generator
+
+You can run generator to create REST controllers with CRUD methods. The command
+and prompts are explained in page
+[controller-generator](./Controller-generator.md#rest-controller-with-crud-methods).
+To modify the OpenAPI specifications of REST controllers, you can leverage the
+[specification enhancers](Extending-OpenAPI-specification.md).
+
+For example, the default naming convention for a path's `operationId` is
+`${controllerName}.${methodName}`. To override the `operationId` with a custom
+one `${controllerName}-${methodName}`, you can define an enhancer as:
+
+```ts
+import {bind} from '@loopback/core';
+import {
+  mergeOpenAPISpec,
+  asSpecEnhancer,
+  OASEnhancer,
+  OpenApiSpec,
+} from '@loopback/rest';
+
+/**
+ * A spec enhancer to modify `operationId` in paths
+ */
+@bind(asSpecEnhancer)
+export class OperationSpecEnhancer implements OASEnhancer {
+  name = 'operationIdEnhancer';
+  // takes in the current spec, modifies it, and returns a new one
+  modifySpec(spec: OpenApiSpec): OpenApiSpec {
+    const paths = spec.paths;
+    for (const path in paths) {
+      for (const op in path) {
+        const operationId = paths[path][op].operationId;
+        // change operationId from 'MyController.MyMethod' to
+        // 'MyController-MyMethod'
+        if (operationId)
+          paths[path][op].operationId = operationId.replace('.', '-');
+      }
+    }
+    return spec;
+  }
+}
+```
 
 ## Class factory to allow parameterized decorations
 

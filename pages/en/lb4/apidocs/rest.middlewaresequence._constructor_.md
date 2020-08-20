@@ -18,13 +18,14 @@ Constructor: Injects `InvokeMiddleware` and `InvokeMiddlewareOptions`
 <b>Signature:</b>
 
 ```typescript
-constructor(invokeMiddleware: InvokeMiddleware, options?: InvokeMiddlewareOptions);
+constructor(context: Context, invokeMiddleware: InvokeMiddleware, options?: InvokeMiddlewareOptions);
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
+|  context | [Context](./context.context.md) |  |
 |  invokeMiddleware | [InvokeMiddleware](./express.invokemiddleware.md) | invoker for registered middleware in a chain. To be injected via RestBindings.INVOKE\_MIDDLEWARE\_SERVICE. |
 |  options | [InvokeMiddlewareOptions](./express.invokemiddlewareoptions.md) |  |
 

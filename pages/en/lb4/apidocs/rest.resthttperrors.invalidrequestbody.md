@@ -16,10 +16,19 @@ permalink: /doc/en/lb4/apidocs.rest.resthttperrors.invalidrequestbody.html
 <b>Signature:</b>
 
 ```typescript
-function invalidRequestBody(): HttpErrors.HttpError;
+function invalidRequestBody(details: ValidationErrorDetails[]): HttpErrors.HttpError & {
+        details: ValidationErrorDetails[];
+    };
 ```
+
+## Parameters
+
+|  Parameter | Type | Description |
+|  --- | --- | --- |
+|  details | [ValidationErrorDetails](./rest.resthttperrors.validationerrordetails.md)<!-- -->\[\] |  |
+
 <b>Returns:</b>
 
-HttpErrors.HttpError
+HttpErrors.HttpError &amp; { details: [ValidationErrorDetails](./rest.resthttperrors.validationerrordetails.md)<!-- -->\[\]; }
 
 

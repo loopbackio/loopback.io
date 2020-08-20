@@ -13,12 +13,12 @@ permalink: /doc/en/lb4/apidocs.authentication.authenticationbindings.strategy.ht
 
 ## AuthenticationBindings.STRATEGY variable
 
-Key used to bind an authentication strategy to the context for the authentication function to use.
+Key used to bind an authentication strategy or multiple strategies to the context for the authentication function to use.
 
 <b>Signature:</b>
 
 ```typescript
-STRATEGY: BindingKey<AuthenticationStrategy | undefined>
+STRATEGY: BindingKey<AuthenticationStrategy | AuthenticationStrategy[] | undefined>
 ```
 
 ## Example

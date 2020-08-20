@@ -26,7 +26,7 @@ export declare class MiddlewareSequence implements SequenceHandler
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)(invokeMiddleware, options)](./rest.middlewaresequence._constructor_.md) |  | Constructor: Injects <code>InvokeMiddleware</code> and <code>InvokeMiddlewareOptions</code> |
+|  [(constructor)(context, invokeMiddleware, options)](./rest.middlewaresequence._constructor_.md) |  | Constructor: Injects <code>InvokeMiddleware</code> and <code>InvokeMiddlewareOptions</code> |
 
 ## Properties
 

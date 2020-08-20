@@ -18,7 +18,7 @@ Fetch authentication metadata stored by `@authenticate` decorator.
 <b>Signature:</b>
 
 ```typescript
-export declare function getAuthenticateMetadata(targetClass: Constructor<{}>, methodName: string): AuthenticationMetadata | undefined;
+export declare function getAuthenticateMetadata(targetClass: Constructor<{}>, methodName: string): AuthenticationMetadata[] | undefined;
 ```
 
 ## Parameters
@@ -30,6 +30,6 @@ export declare function getAuthenticateMetadata(targetClass: Constructor<{}>, me
 
 <b>Returns:</b>
 
-[AuthenticationMetadata](./authentication.authenticationmetadata.md) \| undefined
+[AuthenticationMetadata](./authentication.authenticationmetadata.md)<!-- -->\[\] \| undefined
 
 

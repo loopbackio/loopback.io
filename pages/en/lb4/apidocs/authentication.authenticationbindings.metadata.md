@@ -18,7 +18,7 @@ Key used to inject authentication metadata, which is used to determine whether a
 <b>Signature:</b>
 
 ```typescript
-METADATA: BindingKey<AuthenticationMetadata | undefined>
+METADATA: BindingKey<AuthenticationMetadata[] | undefined>
 ```
 
 ## Example
@@ -28,11 +28,10 @@ METADATA: BindingKey<AuthenticationMetadata | undefined>
 class MyPassportStrategyProvider implements Provider<Strategy | undefined> {
   constructor(
     @inject(AuthenticationBindings.METADATA)
-    private metadata: AuthenticationMetadata,
+    private metadata?: AuthenticationMetadata[],
   ) {}
   value(): ValueOrPromise<Strategy | undefined> {
-    if (this.metadata) {
-      const name = this.metadata.strategy;
+    if (this.metadata?.length) {
       // logic to determine which authentication strategy to return
     }
   }

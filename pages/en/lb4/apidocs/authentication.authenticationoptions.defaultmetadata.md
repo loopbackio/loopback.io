@@ -18,6 +18,6 @@ Default authentication metadata if a method or class is not decorated with `@aut
 <b>Signature:</b>
 
 ```typescript
-defaultMetadata?: AuthenticationMetadata;
+defaultMetadata?: AuthenticationMetadata[];
 ```
 

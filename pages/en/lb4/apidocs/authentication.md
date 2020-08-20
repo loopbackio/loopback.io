@@ -37,8 +37,9 @@ It contains:
 
 |  Function | Description |
 |  --- | --- |
-|  [authenticate(strategyNameOrMetadata, options)](./authentication.authenticate.md) | Mark a controller method as requiring authenticated user. |
+|  [authenticate(strategies)](./authentication.authenticate.md) | Mark a controller method as requiring authenticated user. |
 |  [getAuthenticateMetadata(targetClass, methodName)](./authentication.getauthenticatemetadata.md) | Fetch authentication metadata stored by <code>@authenticate</code> decorator. |
+|  [getAuthenticationMetadataForStrategy(metadata, strategyName)](./authentication.getauthenticationmetadataforstrategy.md) | Get the authentication metadata object for the specified strategy. |
 |  [registerAuthenticationStrategy(context, strategyClass)](./authentication.registerauthenticationstrategy.md) | Registers an authentication strategy as an extension of the AuthenticationBindings.AUTHENTICATION\_STRATEGY\_EXTENSION\_POINT\_NAME extension point. |
 
 ## Interfaces

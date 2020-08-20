@@ -26,7 +26,9 @@ export interface InvokeMiddlewareOptions
 |  Property | Type | Description |
 |  --- | --- | --- |
 |  [chain](./express.invokemiddlewareoptions.chain.md) | string | Name of the extension point. Default to the <code>extensionPoint</code> tag value from the binding |
-|  [next](./express.invokemiddlewareoptions.next.md) | [Next](./context.next.md) |  |
+|  [middlewareList](./express.invokemiddlewareoptions.middlewarelist.md) | [MiddlewareOrKey](./express.middlewareorkey.md)<!-- -->\[\] | Pre-built middleware list. If set, the list will be used to create the middleware chain without discovering again within the context. |
+|  [next](./express.invokemiddlewareoptions.next.md) | [Next](./context.next.md) | Optional next handler |
 |  [orderedGroups](./express.invokemiddlewareoptions.orderedgroups.md) | string\[\] | An array of group names to denote the order of execution, such as <code>['cors', 'caching', 'rate-limiting']</code>. |
+|  [validate](./express.invokemiddlewareoptions.validate.md) | (groups: string\[\]) =&gt; void | An optional function to validate the sorted groups before invoking the middleware chain |
 
 

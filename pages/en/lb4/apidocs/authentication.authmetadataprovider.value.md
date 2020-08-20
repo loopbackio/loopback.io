@@ -16,11 +16,11 @@ permalink: /doc/en/lb4/apidocs.authentication.authmetadataprovider.value.html
 <b>Signature:</b>
 
 ```typescript
-value(): AuthenticationMetadata | undefined;
+value(): AuthenticationMetadata[] | undefined;
 ```
 <b>Returns:</b>
 
-[AuthenticationMetadata](./authentication.authenticationmetadata.md) \| undefined
+[AuthenticationMetadata](./authentication.authenticationmetadata.md)<!-- -->\[\] \| undefined
 
 AuthenticationMetadata
 

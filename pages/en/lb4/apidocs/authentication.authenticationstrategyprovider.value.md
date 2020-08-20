@@ -16,10 +16,10 @@ permalink: /doc/en/lb4/apidocs.authentication.authenticationstrategyprovider.val
 <b>Signature:</b>
 
 ```typescript
-value(): Promise<AuthenticationStrategy | undefined>;
+value(): Promise<AuthenticationStrategy[] | undefined>;
 ```
 <b>Returns:</b>
 
-Promise&lt;[AuthenticationStrategy](./authentication.authenticationstrategy.md) \| undefined&gt;
+Promise&lt;[AuthenticationStrategy](./authentication.authenticationstrategy.md)<!-- -->\[\] \| undefined&gt;
 
 

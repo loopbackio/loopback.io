@@ -1,5 +1,5 @@
 ---
-title: "Redis key-value connector"
+title: 'Redis key-value connector'
 lang: en
 layout: readme
 source: loopback-connector-kv-redis

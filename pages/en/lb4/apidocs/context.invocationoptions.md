@@ -22,6 +22,7 @@ export declare type InvocationOptions = {
     skipParameterInjection?: boolean;
     skipInterceptors?: boolean;
     source?: InvocationSource;
+    session?: ResolutionSession;
 };
 ```
 

@@ -32,6 +32,7 @@ This module also serves as a standalone extension to Express to provide extensib
 |  [InvokeMiddlewareProvider](./express.invokemiddlewareprovider.md) | Extension point for middleware to be run as part of the sequence actions |
 |  [MiddlewareChain](./express.middlewarechain.md) | An interceptor chain of middleware. This represents a list of cascading middleware functions to be executed by the order of <code>group</code> names. |
 |  [MiddlewareContext](./express.middlewarecontext.md) | A per-request Context for middleware to combine an IoC container with handler context (request, response, etc.). |
+|  [MiddlewareView](./express.middlewareview.md) | Watch middleware binding keys for the given context and sort them by group |
 
 ## Functions
 
@@ -95,5 +96,6 @@ This module also serves as a standalone extension to Express to provide extensib
 |  --- | --- |
 |  [ExpressRequestHandler](./express.expressrequesthandler.md) | Type alias for Express RequestHandler |
 |  [ExpressServerConfig](./express.expressserverconfig.md) | Configuration for a LoopBack based Express server |
+|  [MiddlewareOrKey](./express.middlewareorkey.md) | A middleware function or binding key |
 
 

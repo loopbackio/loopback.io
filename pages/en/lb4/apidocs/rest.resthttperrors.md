@@ -25,7 +25,7 @@ export declare namespace RestHttpErrors
 |  --- | --- |
 |  [invalidData(data, name, extraProperties)](./rest.resthttperrors.invaliddata.md) |  |
 |  [invalidParamLocation(location)](./rest.resthttperrors.invalidparamlocation.md) |  |
-|  [invalidRequestBody()](./rest.resthttperrors.invalidrequestbody.md) |  |
+|  [invalidRequestBody(details)](./rest.resthttperrors.invalidrequestbody.md) |  |
 |  [missingRequired(name)](./rest.resthttperrors.missingrequired.md) |  |
 |  [unsupportedMediaType(contentType, allowedTypes)](./rest.resthttperrors.unsupportedmediatype.md) |  |
 

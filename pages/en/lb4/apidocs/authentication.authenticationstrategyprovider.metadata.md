@@ -16,6 +16,6 @@ permalink: /doc/en/lb4/apidocs.authentication.authenticationstrategyprovider.met
 <b>Signature:</b>
 
 ```typescript
-protected metadata?: AuthenticationMetadata | undefined;
+protected metadata?: AuthenticationMetadata[] | undefined;
 ```
 

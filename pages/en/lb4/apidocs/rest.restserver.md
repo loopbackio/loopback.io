@@ -94,7 +94,7 @@ const server = await app.get('servers.foo');
 |  [route(verb, path, spec, controllerCtor, controllerFactory, methodName)](./rest.restserver.route.md) |  | Register a new Controller-based route. |
 |  [route(verb, path, spec, handler)](./rest.restserver.route_1.md) |  | Register a new route invoking a handler function. |
 |  [route(route)](./rest.restserver.route_2.md) |  | Register a new generic route. |
-|  [sequence(value)](./rest.restserver.sequence.md) |  | Configure a custom sequence class for handling incoming requests. |
+|  [sequence(sequenceClass)](./rest.restserver.sequence.md) |  | Configure a custom sequence class for handling incoming requests. |
 |  [start()](./rest.restserver.start.md) |  | Start this REST API's HTTP/HTTPS server. |
 |  [static(path, rootDir, options)](./rest.restserver.static.md) |  | Mount static assets to the REST server. See https://expressjs.com/en/4x/api.html\#express.static |
 |  [stop()](./rest.restserver.stop.md) |  | Stop this REST API's HTTP/HTTPS server. |

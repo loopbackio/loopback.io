@@ -1,5 +1,5 @@
 ---
-title: "KV connector example"
+title: 'KV connector example'
 lang: en
 layout: readme
 source: loopback-example-kv-connectors

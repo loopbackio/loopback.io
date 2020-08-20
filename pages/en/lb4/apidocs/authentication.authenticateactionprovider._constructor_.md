@@ -18,14 +18,14 @@ Constructs a new instance of the `AuthenticateActionProvider` class
 <b>Signature:</b>
 
 ```typescript
-constructor(getStrategy: Getter<AuthenticationStrategy>, setCurrentUser: Setter<UserProfile>, setRedirectUrl: Setter<string>, setRedirectStatus: Setter<number>);
+constructor(getStrategies: Getter<AuthenticationStrategy | AuthenticationStrategy[] | undefined>, setCurrentUser: Setter<UserProfile>, setRedirectUrl: Setter<string>, setRedirectStatus: Setter<number>);
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  getStrategy | [Getter](./context.getter.md)<!-- -->&lt;[AuthenticationStrategy](./authentication.authenticationstrategy.md)<!-- -->&gt; |  |
+|  getStrategies | [Getter](./context.getter.md)<!-- -->&lt;[AuthenticationStrategy](./authentication.authenticationstrategy.md) \| [AuthenticationStrategy](./authentication.authenticationstrategy.md)<!-- -->\[\] \| undefined&gt; |  |
 |  setCurrentUser | [Setter](./context.setter.md)<!-- -->&lt;[UserProfile](./security.userprofile.md)<!-- -->&gt; |  |
 |  setRedirectUrl | [Setter](./context.setter.md)<!-- -->&lt;string&gt; |  |
 |  setRedirectStatus | [Setter](./context.setter.md)<!-- -->&lt;number&gt; |  |
