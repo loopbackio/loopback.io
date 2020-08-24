@@ -188,12 +188,6 @@ div.sidebarTitle, div.sidebarTitle a {
     }
 }
 
-@media (min-width: 768px) and (max-width: 992px) {
-    .navbar > .container .navbar-brand {
-        margin-left: -26px;
-    }
-}
-
 @media (min-width: 992px) {
     .col-md-3 {
         height: 100%;
