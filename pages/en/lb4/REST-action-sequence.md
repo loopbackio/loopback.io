@@ -3,7 +3,7 @@ lang: en
 title: 'Action based Sequence for REST Server'
 keywords: LoopBack 4.0, LoopBack 4, Node.js, TypeScript, OpenAPI
 sidebar: lb4_sidebar
-permalink: /doc/en/lb4/REST-action-based-sequence.html
+permalink: /doc/en/lb4/REST-action-sequence.html
 ---
 
 {% include warning.html content="Action-based sequence is now being phased out.
@@ -361,7 +361,7 @@ action calls the handler function for the route with the request specific
 context and the arguments for the function. It is important to note that
 controller methods use `invokeMethod` from `@loopback/core` and can be used with
 global and custom interceptors. See
-[Interceptor docs](Interceptors.md#use-invokemethod-to-apply-interceptors) for
+[Interceptor docs](Interceptor.md#use-invokemethod-to-apply-interceptors) for
 more details. The request flow for two route flavours is explained below.
 
 For controller methods:
@@ -556,12 +556,12 @@ In Express, a route handler is a middleware function that serves the response
 and does not call `next()`. Handlers can be registered using APIs like
 `app.get()`, `app.post()`, but also a more generic `app.use()`.
 
-In LoopBack, we typically use [Controllers](Controllers.md) and
-[Route handlers](Routes.md) to implement request handling logic.
+In LoopBack, we typically use [Controllers](Controller.md) and
+[Route handlers](Route.md) to implement request handling logic.
 
 To support interoperability with Express, it is also possible to take an Express
 Router instance and add it to a LoopBack application as an external router - see
-[Mounting an Express Router](Routes.md#mounting-an-express-router). This way it
+[Mounting an Express Router](Route.md#mounting-an-express-router). This way it
 is possible to implement server endpoints using Express APIs.
 
 ### Static files

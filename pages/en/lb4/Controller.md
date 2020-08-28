@@ -20,7 +20,7 @@ This page will only cover a `Controller`'s usage with REST APIs.
 
 ## Operations
 
-In the Operation example in [Routes](Routes.md), the `greet()` operation was
+In the Operation example in [Routes](Route.md), the `greet()` operation was
 defined as a plain JavaScript function. The example below shows this as a
 Controller method in TypeScript.
 
@@ -189,7 +189,7 @@ export class HelloController {
 ```
 
 - `HelloRepository` extends from `Repository`, which is LoopBack's database
-  abstraction. See [Repositories](./Repositories.md) for more.
+  abstraction. See [Repositories](./Repository.md) for more.
 - `HelloMessage` is the arbitrary object that `list` returns a list of.
 - `@get('/messages')` automatically creates the
   [Paths Item Object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#path-item-object)

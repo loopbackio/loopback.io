@@ -37,6 +37,7 @@ export declare class HttpServer
 |  [port](./http-server.httpserver.port.md) |  | number | Port number of the HTTP / HTTPS server |
 |  [protocol](./http-server.httpserver.protocol.md) |  | [HttpProtocol](./http-server.httpprotocol.md) | Protocol of the HTTP / HTTPS server |
 |  [server](./http-server.httpserver.server.md) |  | http.Server \| https.Server |  |
+|  [serverOptions](./http-server.httpserver.serveroptions.md) |  | [HttpServerOptions](./http-server.httpserveroptions.md) |  |
 |  [url](./http-server.httpserver.url.md) |  | string | URL of the HTTP / HTTPS server |
 
 ## Methods

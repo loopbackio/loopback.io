@@ -64,6 +64,7 @@ const server = await app.get('servers.foo');
 |  [\_requestHandler](./rest.restserver._requesthandler.md) |  | [HttpRequestListener](./rest.httprequestlistener.md) |  |
 |  [config](./rest.restserver.config.md) |  | [RestServerResolvedConfig](./rest.restserverresolvedconfig.md) |  |
 |  [httpHandler](./rest.restserver.httphandler.md) |  | [HttpHandler](./rest.httphandler.md) |  |
+|  [httpServer](./rest.restserver.httpserver.md) |  | [HttpServer](./http-server.httpserver.md) \| undefined |  |
 |  [listening](./rest.restserver.listening.md) |  | boolean |  |
 |  [OASEnhancer](./rest.restserver.oasenhancer.md) |  | [OASEnhancerService](./openapi-v3.oasenhancerservice.md) |  |
 |  [requestHandler](./rest.restserver.requesthandler.md) |  | [HttpRequestListener](./rest.httprequestlistener.md) |  |

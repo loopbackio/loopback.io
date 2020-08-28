@@ -4,7 +4,9 @@ title: 'Component'
 keywords: LoopBack 4.0, LoopBack 4, Node.js, TypeScript, OpenAPI, Concepts
 sidebar: lb4_sidebar
 permalink: /doc/en/lb4/Component.html
-redirect_from: /doc/en/lb4/Components.html
+redirect_from:
+  - /doc/en/lb4/Components.html
+  - /doc/en/lb4/Using-components.html
 ---
 
 ## Overview
@@ -21,14 +23,14 @@ exporting a Component class which can be added to your application.
 Apart from its own properties, `Component` class can have the following
 properties:
 
-- `controllers` - An array of [controller](Controllers.md) classes.
+- `controllers` - An array of [controller](Controller.md) classes.
 - `providers` - A map of providers to be bound to the application
   [context](Context.md).
 - `classes` - A map of TypeScript classes to be bound to the application
   context.
 - `servers` - A map of name/class pairs for [servers](Server.md).
 - `lifeCycleObservers` - An array of [life cycle observers](Life-cycle.md).
-- `services` - An array of [service](Services.md) classes or providers.
+- `services` - An array of [service](Service.md) classes or providers.
 - `bindings` - An array of [bindings](Binding.md) to be added to the application
   context. A good example of using bindings to extend the functionality of a
   LoopBack 4 app is
@@ -43,7 +45,7 @@ your Application class. This doesn't change how a Component is registered
 (`app.component()`) but it enables the Component to contribute additional
 artifacts. For example:
 
-- [Repositories](Repositories.md) can be contributed by a Component by adding
+- [Repositories](Repository.md) can be contributed by a Component by adding
   `RepositoryMixin` from `@loopback/repository` to your Application
 - [Booters](Booting-an-Application.md#booters) can be contributed by a Component
   by adding `BootMixin` from `@loopback/boot` to your Application

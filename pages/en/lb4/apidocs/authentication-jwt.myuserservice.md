@@ -37,6 +37,7 @@ export declare class MyUserService implements UserService<User, Credentials>
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
 |  [convertToUserProfile(user)](./authentication-jwt.myuserservice.converttouserprofile.md) |  |  |
+|  [findUserById(id)](./authentication-jwt.myuserservice.finduserbyid.md) |  |  |
 |  [verifyCredentials(credentials)](./authentication-jwt.myuserservice.verifycredentials.md) |  |  |
 
 

@@ -18,13 +18,13 @@ suit their needs.
 If you want to use LoopBack as the host instead and mount your Express
 application on a LoopBack 4 application, see
 [Using Express Middleware](Express-middleware.md) and
-[Mounting an Express Router](Routes.md#mounting-an-express-router).
+[Mounting an Express Router](Route.md#mounting-an-express-router).
 " %}
 
 This tutorial assumes familiarity with scaffolding a LoopBack 4 application,
-[`Models`](Model.md), [`DataSources`](DataSources.md),
-[`Repositories`](Repositories.md), and [`Controllers`](Controllers.md). To see
-how they're used in a LoopBack application, please see the
+[`Models`](Model.md), [`DataSources`](DataSource.md),
+[`Repositories`](Repository.md), and [`Controllers`](Controller.md). To see how
+they're used in a LoopBack application, please see the
 [`Todo` tutorial](todo-tutorial.md).
 
 ## Try it out

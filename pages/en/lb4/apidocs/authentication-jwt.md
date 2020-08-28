@@ -23,6 +23,9 @@ permalink: /doc/en/lb4/apidocs.authentication-jwt.html
 |  [JWTAuthenticationStrategy](./authentication-jwt.jwtauthenticationstrategy.md) |  |
 |  [JWTService](./authentication-jwt.jwtservice.md) |  |
 |  [MyUserService](./authentication-jwt.myuserservice.md) |  |
+|  [RefreshToken](./authentication-jwt.refreshtoken.md) |  |
+|  [RefreshTokenRepository](./authentication-jwt.refreshtokenrepository.md) |  |
+|  [RefreshtokenService](./authentication-jwt.refreshtokenservice.md) |  |
 |  [SecuritySpecEnhancer](./authentication-jwt.securityspecenhancer.md) | A spec enhancer to add bearer token OpenAPI security entry to <code>spec.component.securitySchemes</code> |
 |  [User](./authentication-jwt.user.md) |  |
 |  [UserCredentials](./authentication-jwt.usercredentials.md) |  |
@@ -33,6 +36,8 @@ permalink: /doc/en/lb4/apidocs.authentication-jwt.html
 
 |  Interface | Description |
 |  --- | --- |
+|  [RefreshTokenRelations](./authentication-jwt.refreshtokenrelations.md) |  |
+|  [RefreshTokenService](./authentication-jwt.refreshtokenservice.md) | The token refresh service. An access token expires in limited time. Therefore token refresh service is needed to keep replacing the old access token with a new one periodically. |
 |  [UserCredentialsRelations](./authentication-jwt.usercredentialsrelations.md) |  |
 |  [UserRelations](./authentication-jwt.userrelations.md) |  |
 
@@ -40,6 +45,8 @@ permalink: /doc/en/lb4/apidocs.authentication-jwt.html
 
 |  Namespace | Description |
 |  --- | --- |
+|  [RefreshTokenConstants](./authentication-jwt.refreshtokenconstants.md) | Constant values used when generating refresh token. |
+|  [RefreshTokenServiceBindings](./authentication-jwt.refreshtokenservicebindings.md) | Bindings related to token refresh service. The omitted explanation can be found in namespace <code>RefreshTokenConstants</code>. |
 |  [TokenServiceBindings](./authentication-jwt.tokenservicebindings.md) |  |
 |  [TokenServiceConstants](./authentication-jwt.tokenserviceconstants.md) |  |
 |  [UserServiceBindings](./authentication-jwt.userservicebindings.md) |  |
@@ -56,7 +63,9 @@ permalink: /doc/en/lb4/apidocs.authentication-jwt.html
 |  Type Alias | Description |
 |  --- | --- |
 |  [Credentials](./authentication-jwt.credentials.md) | A pre-defined type for user credentials. It assumes a user logs in using the email and password. You can modify it if your app has different credential fields |
+|  [RefereshTokenWithRelations](./authentication-jwt.refereshtokenwithrelations.md) |  |
 |  [SecuritySchemeObjects](./authentication-jwt.securityschemeobjects.md) |  |
+|  [TokenObject](./authentication-jwt.tokenobject.md) | Describes the token object that returned by the refresh token service functions. |
 |  [UserCredentialsWithRelations](./authentication-jwt.usercredentialswithrelations.md) |  |
 |  [UserWithRelations](./authentication-jwt.userwithrelations.md) |  |
 
