@@ -1,6 +1,6 @@
 ---
 lang: zh
-title: "关键概念（Key Concepts）"
+title: "核心概念（Key Concepts）"
 keywords: LoopBack 4.0, LoopBack 4
 sidebar: zh_lb4_sidebar
 permalink: /doc/zh/lb4/Concepts.html
