@@ -586,7 +586,7 @@ For example, to map a property to a column in an Oracle database table, use the 
 ```
 
 <div class="sl-hidden"><strong>Non-public Information</strong><br>
-  Removed until <a href="https://github.com/strongloop/loopback-datasource-juggler/issues/128" class="external-link" rel="nofollow">https://github.com/strongloop/loopback-datasource-juggler/issues/128</a> is resolved.
+  Removed until <a href="https://github.com/strongloop/loopback-datasource-juggler/issues/128" class="external-link" rel="nofollow">https://github.com/strongloop/loopback-datasource-juggler/issues/128</a> is resolved.</div>
   <p>Conversion and formatting properties</p>
   <p>Format conversions are declared in properties, as described in the following table:</p>
       <table>
