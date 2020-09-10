@@ -34,11 +34,9 @@ Project architects:
 
 Other core maintainers include:
 *   [Agnes Lin](https://github.com/agnes512)
-*   [Deepak Rajamohan](https://github.com/deepakrkris)
 *   [Diana Lau](http://github.com/dhmlau)
 *   [Dominique Emond](https://github.com/emonddr)
 *   [Janny Hou](http://github.com/jannyHou)
-*   [Nora Abdelgadir](https://github.com/nabdelgadir)
 *   [Yaapa Hage](https://github.com/hacksparrow)
 
 Previous project architects:
