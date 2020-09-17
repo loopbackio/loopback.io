@@ -1,9 +1,10 @@
 ---
 lang: zh
 title: 'Binding'
-keywords: LoopBack 4.0, LoopBack 4, Node.js, TypeScript, OpenAPI
-sidebar: lb4_sidebar
+keywords: LoopBack 4.0, LoopBack 4, Binding
+sidebar: zh_lb4_sidebar
 permalink: /doc/zh/lb4/Binding.html
+layout: translation
 ---
 
 ## 什么是`Binding`?
@@ -74,14 +75,14 @@ permalink: /doc/zh/lb4/Binding.html
 
 `Binding`类通过一套流畅的API提供了有关`Binding`的创建和配置的操作。
 
-### 解析一个绑定的值的形式
+### 解析一个`Binding`的值的形式
 
-绑定可以通过多种形式以解析出一个具体的值。具体如下：
+`Binding`可以通过多种形式以解析出一个具体的值。具体如下：
 
 #### 常量形式（Constant）
 
-适用场景：在解析一个绑定时，绑定的值是一个固定的值。<br/>
-比如，绑定的值是一个字符串（String）、一个方法（Function）、一个对象（Object）、一个数组（Array）或者任何其他类型的值。
+适用场景：在解析一个`Binding`时，`Binding`的值是一个固定的值。<br/>
+比如，`Binding`的值是一个字符串（String）、一个方法（Function）、一个对象（Object）、一个数组（Array）或者任何其他类型的值。
 
 ```ts
 binding.to('my-value');
@@ -91,8 +92,8 @@ binding.to('my-value');
 
 #### 工厂形式（Factory Function）
 
-适用场景：在解析一个绑定时，绑定的值是需要被动态计算的。<br/>
-比如，绑定的值是当前系统时间、绑定的值是远程接口的返回值、绑定的值是远程数据库的数据等。
+适用场景：在解析一个`Binding`时，`Binding`的值是需要被动态计算的。<br/>
+比如，`Binding`的值是当前系统时间、`Binding`的值是远程接口的返回值、`Binding`的值是远程数据库的数据等。
 
 ```ts
 binding.toDynamicValue(() => 'my-value');
@@ -140,8 +141,8 @@ const b = ctx.bind('msg').toDynamicValue(GreetingProvider);
 
 #### 类形式（Class）
 
-适用场景：在解析一个绑定时，绑定的值是一个类的实例化对象。<br/>
-比如，控制器（Controller）等。绑定的值可以是一个被实例化的类。依赖注入通常用于影响被注入依赖的类的内部成员对象身上。
+适用场景：在解析一个`Binding`时，`Binding`的值是一个类的实例化对象。<br/>
+比如，控制器（Controller）等。`Binding`的值可以是一个被实例化的类。依赖注入通常用于影响被注入依赖的类的内部成员对象身上。
 
 ```ts
 class MyController {
@@ -155,8 +156,8 @@ binding.toClass(MyController);
 
 #### 提供器形式（Provider）
 
-适用场景：在解析一个绑定时，用于解析绑定的值的工厂方法需要用到依赖注入（Dependency Injection）。<br/>
-提供器指的是，内置了`value()`方法的类，该方法可以在实例化后用来解析绑定的值。
+适用场景：在解析一个`Binding`时，用于解析`Binding`的值的工厂方法需要用到依赖注入（Dependency Injection）。<br/>
+提供器指的是，内置了`value()`方法的类，该方法可以在实例化后用来解析`Binding`的值。
 
 ```ts
 class MyValueProvider implements Provider<string> {
@@ -176,9 +177,9 @@ binding.toProvider(MyValueProvider);
 
 #### 同族形式（Alias）
 
-适用场景：在解析一个绑定时，此绑定的值的来源是另外一个绑定的值。<br/>
-同族指的是，一个允许携带可选路径的键值，这个键值可以用来从另外一个绑定上解析出值。
-比如，我们在设置`Api Explorer（API浏览页面）`的时候，需要用到`RestServer`对象的相关属性，我们可以创建一个绑定并将这个绑定通过`.toAlias()`方法设置为`key`为`servers.RestServer.options#apiExplorer`的绑定的同族。
+适用场景：在解析一个`Binding`时，此`Binding`的值的来源是另外一个`Binding`的值。<br/>
+同族指的是，一个允许携带可选路径的键值，这个键值可以用来从另外一个`Binding`上解析出值。
+比如，我们在设置`Api Explorer（API浏览页面）`的时候，需要用到`RestServer`对象的相关属性，我们可以创建一个`Binding`并将它通过`.toAlias()`方法设置为`key`为`servers.RestServer.options#apiExplorer`的`Binding`的同族。
 
 ```ts
 // 创建`key`为`servers.RestServer.options`的绑定
