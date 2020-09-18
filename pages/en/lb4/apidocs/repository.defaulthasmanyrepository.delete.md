@@ -23,7 +23,7 @@ delete(where?: Where<TargetEntity>, options?: Options): Promise<Count>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  where | [Where](./repository.where.md)<!-- -->&lt;TargetEntity&gt; |  |
+|  where | [Where](./filter.where.md)<!-- -->&lt;TargetEntity&gt; |  |
 |  options | [Options](./repository.options.md) |  |
 
 <b>Returns:</b>

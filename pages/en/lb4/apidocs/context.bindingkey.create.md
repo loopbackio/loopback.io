@@ -18,7 +18,7 @@ Create a new key for a binding bound to a value of type `ValueType`<!-- -->.
 <b>Signature:</b>
 
 ```typescript
-static create<ValueType>(key: string, propertyPath?: string): BindingKey<ValueType>;
+static create<V>(key: string, propertyPath?: string): BindingKey<V>;
 ```
 
 ## Parameters
@@ -30,7 +30,7 @@ static create<ValueType>(key: string, propertyPath?: string): BindingKey<ValueTy
 
 <b>Returns:</b>
 
-[BindingKey](./context.bindingkey.md)<!-- -->&lt;ValueType&gt;
+[BindingKey](./context.bindingkey.md)<!-- -->&lt;V&gt;
 
 ## Example
 

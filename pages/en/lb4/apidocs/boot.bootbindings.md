@@ -27,6 +27,7 @@ export declare namespace BootBindings
 |  --- | --- |
 |  [BOOT\_OPTIONS](./boot.bootbindings.boot_options.md) | Binding key for boot options |
 |  [BOOTER\_PREFIX](./boot.bootbindings.booter_prefix.md) |  |
+|  [BOOTERS](./boot.bootbindings.booters.md) | Booter binding namespace |
 |  [BOOTSTRAPPER\_KEY](./boot.bootbindings.bootstrapper_key.md) | Binding key for binding the BootStrapper class |
 |  [PROJECT\_ROOT](./boot.bootbindings.project_root.md) | Binding key for determining project root directory |
 

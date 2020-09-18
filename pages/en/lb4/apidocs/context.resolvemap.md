@@ -18,7 +18,7 @@ Resolve entries of an object into a new object with the same keys. If one or mor
 <b>Signature:</b>
 
 ```typescript
-export declare function resolveMap<T, V>(map: MapObject<T>, resolver: (val: T, key: string, map: MapObject<T>) => ValueOrPromise<V>): ValueOrPromise<MapObject<V>>;
+export declare function resolveMap<T, V>(map: MapObject<T>, resolver: (val: T, key: string, values: MapObject<T>) => ValueOrPromise<V>): ValueOrPromise<MapObject<V>>;
 ```
 
 ## Parameters
@@ -26,7 +26,7 @@ export declare function resolveMap<T, V>(map: MapObject<T>, resolver: (val: T, k
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  map | [MapObject](./context.mapobject.md)<!-- -->&lt;T&gt; | The original object containing the source entries |
-|  resolver | (val: T, key: string, map: [MapObject](./context.mapobject.md)<!-- -->&lt;T&gt;) =&gt; [ValueOrPromise](./context.valueorpromise.md)<!-- -->&lt;V&gt; | A function resolves an entry to a value or promise. It will be invoked with the property value, the property name, and the source object. |
+|  resolver | (val: T, key: string, values: [MapObject](./context.mapobject.md)<!-- -->&lt;T&gt;) =&gt; [ValueOrPromise](./context.valueorpromise.md)<!-- -->&lt;V&gt; | A function resolves an entry to a value or promise. It will be invoked with the property value, the property name, and the source object. |
 
 <b>Returns:</b>
 

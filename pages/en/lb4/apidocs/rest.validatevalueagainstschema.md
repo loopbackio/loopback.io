@@ -13,25 +13,25 @@ permalink: /doc/en/lb4/apidocs.rest.validatevalueagainstschema.html
 
 ## validateValueAgainstSchema() function
 
-Validate the request body data against JSON schema.
+Validate the value against JSON schema.
 
 <b>Signature:</b>
 
 ```typescript
-export declare function validateValueAgainstSchema(value: any, schema: SchemaObject | ReferenceObject, globalSchemas?: SchemasObject, options?: ValueValidationOptions): Promise<void>;
+export declare function validateValueAgainstSchema(value: any, schema: SchemaObject | ReferenceObject, globalSchemas?: SchemasObject, options?: ValueValidationOptions): Promise<any>;
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  value | any |  |
+|  value | any | The data value. |
 |  schema | SchemaObject \| ReferenceObject | The JSON schema used to perform the validation. |
 |  globalSchemas | SchemasObject | Schema references. |
-|  options | [ValueValidationOptions](./rest.valuevalidationoptions.md) | Request body validation options. |
+|  options | [ValueValidationOptions](./rest.valuevalidationoptions.md) | Value validation options. |
 
 <b>Returns:</b>
 
-Promise&lt;void&gt;
+Promise&lt;any&gt;
 
 

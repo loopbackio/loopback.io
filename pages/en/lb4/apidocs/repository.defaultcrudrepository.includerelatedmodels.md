@@ -26,7 +26,7 @@ protected includeRelatedModels(entities: T[], include?: Inclusion[], options?: O
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  entities | T\[\] | An array of entity instances or data |
-|  include | [Inclusion](./repository.inclusion.md)<!-- -->\[\] | Inclusion filter |
+|  include | [Inclusion](./filter.inclusion.md)<!-- -->\[\] | Inclusion filter |
 |  options | [Options](./repository.options.md) | Options for the operations |
 
 <b>Returns:</b>

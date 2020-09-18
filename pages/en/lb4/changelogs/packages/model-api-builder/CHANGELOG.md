@@ -13,6 +13,30 @@ permalink: /doc/en/lb4/changelog.model-api-builder.html
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.1.15](https://github.com/strongloop/loopback-next/compare/@loopback/model-api-builder@2.1.14...@loopback/model-api-builder@2.1.15) (2020-09-17)
+
+**Note:** Version bump only for package @loopback/model-api-builder
+
+
+
+
+
+## [2.1.14](https://github.com/strongloop/loopback-next/compare/@loopback/model-api-builder@2.1.13...@loopback/model-api-builder@2.1.14) (2020-09-15)
+
+**Note:** Version bump only for package @loopback/model-api-builder
+
+
+
+
+
+## [2.1.13](https://github.com/strongloop/loopback-next/compare/@loopback/model-api-builder@2.1.12...@loopback/model-api-builder@2.1.13) (2020-08-27)
+
+**Note:** Version bump only for package @loopback/model-api-builder
+
+
+
+
+
 ## [2.1.12](https://github.com/strongloop/loopback-next/compare/@loopback/model-api-builder@2.1.11...@loopback/model-api-builder@2.1.12) (2020-08-19)
 
 **Note:** Version bump only for package @loopback/model-api-builder

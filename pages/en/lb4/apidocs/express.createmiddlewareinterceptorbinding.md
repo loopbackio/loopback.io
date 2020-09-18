@@ -18,7 +18,7 @@ Create a binding for the middleware based interceptor
 <b>Signature:</b>
 
 ```typescript
-export declare function createMiddlewareInterceptorBinding<CFG>(middlewareProviderClass: Constructor<Provider<Interceptor>>, options?: MiddlewareInterceptorBindingOptions): Binding<Interceptor>;
+export declare function createMiddlewareInterceptorBinding(middlewareProviderClass: Constructor<Provider<Interceptor>>, options?: MiddlewareInterceptorBindingOptions): Binding<Interceptor>;
 ```
 
 ## Parameters

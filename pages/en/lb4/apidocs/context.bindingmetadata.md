@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.context.bindingmetadata.html
 
 ## BindingMetadata type
 
-Binding metadata from `@bind`
+Binding metadata from `@injectable`
 
 <b>Signature:</b>
 

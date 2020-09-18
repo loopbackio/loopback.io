@@ -25,7 +25,7 @@ export declare function bindingTemplateFor<T>(cls: Constructor<T | Provider<T>> 
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  cls | [Constructor](./context.constructor.md)<!-- -->&lt;T \| [Provider](./context.provider.md)<!-- -->&lt;T&gt;&gt; \| [DynamicValueProviderClass](./context.dynamicvalueproviderclass.md)<!-- -->&lt;T&gt; | A class with optional <code>@bind</code> |
+|  cls | [Constructor](./context.constructor.md)<!-- -->&lt;T \| [Provider](./context.provider.md)<!-- -->&lt;T&gt;&gt; \| [DynamicValueProviderClass](./context.dynamicvalueproviderclass.md)<!-- -->&lt;T&gt; | A class with optional <code>@injectable</code> |
 
 <b>Returns:</b>
 

@@ -18,7 +18,7 @@ Inspect the target type for the injection to find out the corresponding JavaScri
 <b>Signature:</b>
 
 ```typescript
-export declare function inspectTargetType(injection: Readonly<Injection>): Function;
+export declare function inspectTargetType(injection: Readonly<Injection>): Function | undefined;
 ```
 
 ## Parameters
@@ -29,6 +29,6 @@ export declare function inspectTargetType(injection: Readonly<Injection>): Funct
 
 <b>Returns:</b>
 
-Function
+Function \| undefined
 
 

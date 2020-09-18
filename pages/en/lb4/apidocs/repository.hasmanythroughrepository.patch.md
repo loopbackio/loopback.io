@@ -28,7 +28,7 @@ patch(dataObject: DataObject<Target>, where?: Where<Target>, options?: Options &
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  dataObject | [DataObject](./repository.dataobject.md)<!-- -->&lt;Target&gt; | The fields and their new values to patch |
-|  where | [Where](./repository.where.md)<!-- -->&lt;Target&gt; | Instances within the where scope are patched |
+|  where | [Where](./filter.where.md)<!-- -->&lt;Target&gt; | Instances within the where scope are patched |
 |  options | [Options](./repository.options.md) &amp; { throughOptions?: [Options](./repository.options.md)<!-- -->; } |  |
 
 <b>Returns:</b>

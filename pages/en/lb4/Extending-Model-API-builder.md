@@ -13,7 +13,7 @@ From a model class, this module can be used to define a contract to create a
 corresponding repository and controller. An example Model API builder is the
 [`CrudRestApiBuilder`](https://loopback.io/doc/en/lb4/apidocs.rest-crud.crudrestapibuilder.html)
 which is used to create a CRUD REST repository and controller. You can see more
-details in [Creating CRUD REST APIs](Creating-crud-rest-apis.md).
+details in [Creating CRUD REST APIs](Creating-CRUD-REST-apis.md).
 
 `@loopback/model-api-builder` helps create a configuration for the repository
 and controllers and
@@ -46,7 +46,7 @@ so it can be used as an API builder option.
 import {bind} from '@loopback/core';
 import {asModelApiBulder, ModelApiBuilder} from '@loopback/model-api-builder';
 
-@bind(asModelApiBuilder)
+@injectable(asModelApiBuilder)
 export class SampleApiBuilder implements ModelApiBuilder {}
 ```
 
@@ -63,7 +63,7 @@ import {
 import {ApplicationWithRepositories} from '@loopback/repository';
 import {Model} from '@loopback/rest';
 
-@bind(asModelApiBuilder)
+@injectable(asModelApiBuilder)
 export class SampleApiBuilder implements ModelApiBuilder {
   readonly pattern: string = 'Sample'; // put the name of your builder here
 
@@ -86,7 +86,7 @@ export interface SampleApiConfig extends ModelApiConfig {
   // add configuration options here
 }
 
-@bind(asModelApiBuilder)
+@injectable(asModelApiBuilder)
 export class SampleApiBuilder implements ModelApiBuilder {
   // other code here
 }

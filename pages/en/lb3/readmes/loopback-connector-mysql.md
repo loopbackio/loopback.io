@@ -434,23 +434,7 @@ startTime: Date;
 
 ### Enum
 
-Enums are special. Create an Enum using Enum factory:
-
-```ts
-const MOOD = dataSource.EnumFactory('glad', 'sad', 'mad');
-MOOD.SAD; // 'sad'
-MOOD(2); // 'sad'
-MOOD('SAD'); // 'sad'
-MOOD('sad'); // 'sad'
-
-export class User extends Entity {
-  //..
-  @property({
-    type: MOOD,
-  })
-  mood: MOOD;
-}
-```
+See the [Model ENUM property](https://loopback.io/doc/en/lb4/Model.html#enum-property) for details. 
 
 ### Default Clause/Constant
 

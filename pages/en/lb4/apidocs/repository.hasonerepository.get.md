@@ -25,7 +25,7 @@ get(filter?: Pick<Filter<Target>, Exclude<keyof Filter<Target>, 'where'>>, optio
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  filter | Pick&lt;[Filter](./repository.filter.md)<!-- -->&lt;Target&gt;, Exclude&lt;keyof [Filter](./repository.filter.md)<!-- -->&lt;Target&gt;, 'where'&gt;&gt; | Query filter without a Where condition |
+|  filter | Pick&lt;[Filter](./filter.filter.md)<!-- -->&lt;Target&gt;, Exclude&lt;keyof [Filter](./filter.filter.md)<!-- -->&lt;Target&gt;, 'where'&gt;&gt; | Query filter without a Where condition |
 |  options | [Options](./repository.options.md) | Options for the operations |
 
 <b>Returns:</b>

@@ -11,26 +11,12 @@ permalink: /doc/en/lb4/apidocs.context.bind.provider.html
 
 [Home](./index.md) &gt; [@loopback/context](./context.md) &gt; [bind](./context.bind.md) &gt; [provider](./context.bind.provider.md)
 
-## bind.provider() function
+## bind.provider variable
 
-`@bind.provider` to denote a provider class
-
-A list of binding scope/tags or template functions to configure the binding
 
 <b>Signature:</b>
 
 ```typescript
-function provider(...specs: BindingSpec[]): (target: Constructor<unknown>) => void;
+provider: typeof injectable.provider
 ```
-
-## Parameters
-
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  specs | [BindingSpec](./context.bindingspec.md)<!-- -->\[\] |  |
-
-<b>Returns:</b>
-
-(target: [Constructor](./context.constructor.md)<!-- -->&lt;unknown&gt;) =&gt; void
-
 

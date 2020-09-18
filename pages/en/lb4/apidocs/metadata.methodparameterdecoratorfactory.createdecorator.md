@@ -18,15 +18,15 @@ Create a method decorator function
 <b>Signature:</b>
 
 ```typescript
-static createDecorator<T>(key: MetadataKey<T, MethodDecorator>, spec: T, options?: DecoratorOptions): MethodDecorator;
+static createDecorator<S>(key: MetadataKey<S, MethodDecorator>, spec: S, options?: DecoratorOptions): MethodDecorator;
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  key | [MetadataKey](./metadata.metadatakey.md)<!-- -->&lt;T, MethodDecorator&gt; | Metadata key |
-|  spec | T | Metadata object from the decorator function |
+|  key | [MetadataKey](./metadata.metadatakey.md)<!-- -->&lt;S, MethodDecorator&gt; | Metadata key |
+|  spec | S | Metadata object from the decorator function |
 |  options | [DecoratorOptions](./metadata.decoratoroptions.md) | Options for the decorator |
 
 <b>Returns:</b>

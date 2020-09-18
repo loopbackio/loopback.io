@@ -23,7 +23,7 @@ find(filter?: Filter<T>, options?: Options): Promise<T[]>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  filter | [Filter](./repository.filter.md)<!-- -->&lt;T&gt; |  |
+|  filter | [Filter](./filter.filter.md)<!-- -->&lt;T&gt; |  |
 |  options | [Options](./repository.options.md) |  |
 
 <b>Returns:</b>

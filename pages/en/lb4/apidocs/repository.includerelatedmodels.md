@@ -27,7 +27,7 @@ export declare function includeRelatedModels<T extends Entity, Relations extends
 |  --- | --- | --- |
 |  targetRepository | [EntityCrudRepository](./repository.entitycrudrepository.md)<!-- -->&lt;T, unknown, Relations&gt; | The target repository where the model instances are found |
 |  entities | T\[\] | An array of entity instances or data |
-|  include | [Inclusion](./repository.inclusion.md)<!-- -->\[\] | Inclusion filter |
+|  include | [Inclusion](./filter.inclusion.md)<!-- -->\[\] | Inclusion filter |
 |  options | [Options](./repository.options.md) | Options for the operations |
 
 <b>Returns:</b>

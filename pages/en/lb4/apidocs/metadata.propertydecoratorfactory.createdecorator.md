@@ -18,15 +18,15 @@ Create a property decorator function
 <b>Signature:</b>
 
 ```typescript
-static createDecorator<T>(key: MetadataKey<T, PropertyDecorator>, spec: T, options?: DecoratorOptions): PropertyDecorator;
+static createDecorator<S>(key: MetadataKey<S, PropertyDecorator>, spec: S, options?: DecoratorOptions): PropertyDecorator;
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  key | [MetadataKey](./metadata.metadatakey.md)<!-- -->&lt;T, PropertyDecorator&gt; | Metadata key |
-|  spec | T | Metadata object from the decorator function |
+|  key | [MetadataKey](./metadata.metadatakey.md)<!-- -->&lt;S, PropertyDecorator&gt; | Metadata key |
+|  spec | S | Metadata object from the decorator function |
 |  options | [DecoratorOptions](./metadata.decoratoroptions.md) | Options for the decorator |
 
 <b>Returns:</b>

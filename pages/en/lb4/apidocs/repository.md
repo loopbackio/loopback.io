@@ -37,7 +37,6 @@ This module provides data access facilities to various databases and services as
 |  [Entity](./repository.entity.md) | Base class for entities which have unique ids |
 |  [EntityNotFoundError](./repository.entitynotfounderror.md) |  |
 |  [Event](./repository.event.md) | Domain events |
-|  [FilterBuilder](./repository.filterbuilder.md) | A builder for Filter. It provides fleunt APIs to add clauses such as <code>fields</code>, <code>order</code>, <code>where</code>, <code>limit</code>, <code>offset</code>, and <code>include</code>. |
 |  [InvalidRelationError](./repository.invalidrelationerror.md) |  |
 |  [Model](./repository.model.md) | Base class for models |
 |  [ModelDefinition](./repository.modeldefinition.md) | Definition for a model |
@@ -51,7 +50,6 @@ This module provides data access facilities to various databases and services as
 |  [StringType](./repository.stringtype.md) | String type |
 |  [UnionType](./repository.uniontype.md) | Union type, such as string \| number |
 |  [ValueObject](./repository.valueobject.md) | Base class for value objects - An object that contains attributes but has no conceptual identity. They should be treated as immutable. |
-|  [WhereBuilder](./repository.wherebuilder.md) | A builder for Where object. It provides fluent APIs to add clauses such as <code>and</code>, <code>or</code>, and other operators. |
 
 ## Enumerations
 
@@ -88,7 +86,6 @@ This module provides data access facilities to various databases and services as
 |  [embedsMany(definition)](./repository.embedsmany.md) | Decorator for embedsMany |
 |  [embedsOne(definition)](./repository.embedsone.md) | Decorator for embedsOne |
 |  [ensurePromise(p)](./repository.ensurepromise.md) | Ensure the value is a promise |
-|  [filterTemplate(strings, keys)](./repository.filtertemplate.md) |  |
 |  [findByForeignKeys(targetRepository, fkName, fkValues, scope, options)](./repository.findbyforeignkeys.md) | Finds model instances that contain any of the provided foreign key values. |
 |  [flattenMapByKeys(sourceIds, targetMap)](./repository.flattenmapbykeys.md) | Returns an array of instances from the target map. The order of arrays is based on the order of sourceIds |
 |  [flattenTargetsOfOneToManyRelation(sourceIds, targetEntities, targetKey)](./repository.flattentargetsofonetomanyrelation.md) | Returns an array of instances. The order of arrays is based on as a result of one to many relation. The order of arrays is based on the order of sourceIds |
@@ -101,7 +98,6 @@ This module provides data access facilities to various databases and services as
 |  [isBsonType(value)](./repository.isbsontype.md) | Checks if the value is BsonType (mongodb) It uses a general way to check the type ,so that it can detect different versions of bson that might be used in the code base. Might need to update in the future. |
 |  [isBuiltinType(fn)](./repository.isbuiltintype.md) | Check if the provided function is a built-in type provided by JavaScript and/or Node.js. E.g. <code>Number</code>, <code>Array</code>, <code>Buffer</code>, etc. |
 |  [isEntityNotFoundError(e)](./repository.isentitynotfounderror.md) |  |
-|  [isFilter(candidate)](./repository.isfilter.md) | TypeGuard for Filter |
 |  [isInvalidRelationError(e)](./repository.isinvalidrelationerror.md) |  |
 |  [isTypeResolver(fn)](./repository.istyperesolver.md) | A function that checks whether a function is a TypeResolver or not. |
 |  [model(definition)](./repository.model.md) | Decorator for model definitions |
@@ -124,7 +120,6 @@ This module provides data access facilities to various databases and services as
 
 |  Interface | Description |
 |  --- | --- |
-|  [AndClause](./repository.andclause.md) | And clause |
 |  [AnyObject](./repository.anyobject.md) | Objects with open properties |
 |  [ApplicationWithRepositories](./repository.applicationwithrepositories.md) | Interface for an Application mixed in with RepositoryMixin |
 |  [BaseRepositoryClass](./repository.baserepositoryclass.md) | Signature for repository classes that can be used as the base class for <code>define*</code> functions. The constructor of a base repository class accepts the target model constructor and the datasource to use.<code>define*</code> functions require a class implementing this interface on input. |
@@ -141,7 +136,6 @@ This module provides data access facilities to various databases and services as
 |  [EntityCrudRepository](./repository.entitycrudrepository.md) | CRUD operations for a repository of entities |
 |  [EntityRepository](./repository.entityrepository.md) | Base interface for a repository of entities |
 |  [ExecutableRepository](./repository.executablerepository.md) |  |
-|  [Filter](./repository.filter.md) | Query filter object |
 |  [HasManyDefinition](./repository.hasmanydefinition.md) | HasManyDefinition defines one-to-many relations and also possible defines many-to-many relations with through models. |
 |  [HasManyRepository](./repository.hasmanyrepository.md) | CRUD operations for a target repository of a HasMany relation |
 |  [HasManyRepositoryFactory](./repository.hasmanyrepositoryfactory.md) |  |
@@ -149,13 +143,12 @@ This module provides data access facilities to various databases and services as
 |  [HasOneDefinition](./repository.hasonedefinition.md) |  |
 |  [HasOneRepository](./repository.hasonerepository.md) | CRUD operations for a target repository of a HasMany relation |
 |  [HasOneRepositoryFactory](./repository.hasonerepositoryfactory.md) |  |
-|  [Inclusion](./repository.inclusion.md) | Inclusion of related items<!-- -->Note: scope means filter on related items<!-- -->Example: <code>{relation: 'aRelationName', scope: {&lt;AFilterObject&gt;}}</code> |
 |  [JsonSchemaWithExtensions](./repository.jsonschemawithextensions.md) | This module defines the key classes representing building blocks for Domain Driven Design. See https://en.wikipedia.org/wiki/Domain-driven\_design\#Building\_blocks |
 |  [KeyValueRepository](./repository.keyvaluerepository.md) | Key/Value operations for connector implementations |
 |  [KVConnector](./repository.kvconnector.md) | Key/Value operations for connector implementations |
 |  [ModelDefinitionSyntax](./repository.modeldefinitionsyntax.md) | DSL for building a model definition. |
 |  [ModelRepositoryClass](./repository.modelrepositoryclass.md) | Signature for a Repository class bound to a given model. The constructor accepts only the dataSource to use for persistence.<code>define*</code> functions return a class implementing this interface. |
-|  [OrClause](./repository.orclause.md) | Or clause |
+|  [ModelSettings](./repository.modelsettings.md) | Defining the settings for a model See https://loopback.io/doc/en/lb4/Model.html\#supported-entries-of-model-definition |
 |  [Persistable](./repository.persistable.md) |  |
 |  [PropertyDefinition](./repository.propertydefinition.md) | Property definition for a model |
 |  [PropertyForm](./repository.propertyform.md) | See https://github.com/strongloop/loopback-datasource-juggler/issues/432 |
@@ -200,36 +193,26 @@ This module provides data access facilities to various databases and services as
 |  --- | --- |
 |  [Callback](./repository.callback.md) | Type alias for Node.js callback functions |
 |  [Command](./repository.command.md) | Type for a command |
-|  [Condition](./repository.condition.md) | Condition clause |
 |  [Constructor](./repository.constructor.md) | Constructor type - class or function |
 |  [DataObject](./repository.dataobject.md) | Type alias for strongly or weakly typed objects of T |
 |  [DeepPartial](./repository.deeppartial.md) | An extension of the built-in Partial<T> type which allows partial values in deeply nested properties too. |
-|  [Direction](./repository.direction.md) | Order by direction |
 |  [DynamicModelCtor](./repository.dynamicmodelctor.md) | A type describing a model class created via <code>defineModelClass</code>.<!-- -->Assuming template arguments <code>BaseCtor</code> and <code>Props</code>, this type describes a class constructor with the following properties: - a constructor function accepting <code>DataObject&lt;Props&gt;</code> as the only argument, this argument is optional - all static fields (properties, methods) from <code>BaseCtor</code> are inherited and available as static fields on the dynamic class - all prototype fields from <code>BaseCtor</code> prototype are inherited and available as prototype fields on the dynamic class |
 |  [EntityData](./repository.entitydata.md) |  |
 |  [EntityResolver](./repository.entityresolver.md) |  |
-|  [Fields](./repository.fields.md) | Selection of fields<!-- -->Example: <code>{afieldname: true}</code> |
-|  [FilterExcludingWhere](./repository.filterexcludingwhere.md) | Filter without <code>where</code> property |
 |  [HasManyThroughRepositoryFactory](./repository.hasmanythroughrepositoryfactory.md) | a factory to generate hasManyThrough repository class.<!-- -->Warning: The hasManyThrough interface is experimental and is subject to change. If backwards-incompatible changes are made, a new major version may not be released. |
 |  [InclusionResolver](./repository.inclusionresolver.md) |  |
-|  [KeyOf](./repository.keyof.md) | Key types of a given model, excluding operators |
 |  [KeyValueFilter](./repository.keyvaluefilter.md) | Filter for keys |
 |  [NamedParameters](./repository.namedparameters.md) | Named parameters, such as <code>{x: 1, y: 'a'}</code> |
-|  [Operators](./repository.operators.md) | Operators for where clauses |
 |  [Options](./repository.options.md) | Type alias for Node.js options object |
-|  [Order](./repository.order.md) | Order by<!-- -->Example: <code>{afieldname: 'ASC'}</code> |
 |  [PositionalParameters](./repository.positionalparameters.md) | Positional parameters, such as \[1, 'a'\] |
-|  [PredicateComparison](./repository.predicatecomparison.md) | Matching predicate comparison |
 |  [PropertyMap](./repository.propertymap.md) |  |
 |  [PropertyType](./repository.propertytype.md) |  |
 |  [PrototypeOf](./repository.prototypeof.md) | Type helper to infer prototype from a constructor function.<!-- -->Example: <code>PrototypeOf&lt;typeof Entity&gt;</code> is resolved to <code>Entity</code>. |
 |  [RelationDefinitionMap](./repository.relationdefinitionmap.md) | A key-value map describing model relations. A relation name is used as the key, a relation definition is the value. |
 |  [RelationMetadata](./repository.relationmetadata.md) | A union type describing all possible Relation metadata objects. |
 |  [RepositoryDecorator](./repository.repositorydecorator.md) | Type definition for decorators returned by <code>@repository</code> decorator factory |
-|  [ShortHandEqualType](./repository.shorthandequaltype.md) | Value types for <code>{propertyName: value}</code> |
 |  [StringKeyOf](./repository.stringkeyof.md) |  |
 |  [TransactionalEntityRepository](./repository.transactionalentityrepository.md) | A type for CRUD repositories that are backed by IDs and support Transactions |
 |  [TypeResolver](./repository.typeresolver.md) | A type resolver is a function that returns a class representing the type, typically a Model or Entity (e.g. Product).<!-- -->We use type resolvers to break require() loops when defining relations. The target model (class) is provided via a provider, thus deferring the actual reference to the class itself until later, when both sides of the relation are created as JavaScript classes. |
-|  [Where](./repository.where.md) | Where clause |
 
 

@@ -24,7 +24,7 @@ patch(dataObject: DataObject<TargetEntity>, where?: Where<TargetEntity>, options
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  dataObject | [DataObject](./repository.dataobject.md)<!-- -->&lt;TargetEntity&gt; |  |
-|  where | [Where](./repository.where.md)<!-- -->&lt;TargetEntity&gt; |  |
+|  where | [Where](./filter.where.md)<!-- -->&lt;TargetEntity&gt; |  |
 |  options | [Options](./repository.options.md) |  |
 
 <b>Returns:</b>

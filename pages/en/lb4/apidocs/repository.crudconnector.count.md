@@ -26,7 +26,7 @@ count(modelClass: Class<Entity>, where?: Where<Entity>, options?: Options): Prom
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  modelClass | [Class](./repository.class.md)<!-- -->&lt;[Entity](./repository.entity.md)<!-- -->&gt; | The model class |
-|  where | [Where](./repository.where.md)<!-- -->&lt;[Entity](./repository.entity.md)<!-- -->&gt; | The matching criteria |
+|  where | [Where](./filter.where.md)<!-- -->&lt;[Entity](./repository.entity.md)<!-- -->&gt; | The matching criteria |
 |  options | [Options](./repository.options.md) | Options for the operation |
 
 <b>Returns:</b>

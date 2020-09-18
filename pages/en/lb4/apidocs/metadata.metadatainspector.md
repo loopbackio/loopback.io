@@ -37,7 +37,7 @@ export declare class MetadataInspector
 |  [getAllParameterMetadata(key, target, methodName, options)](./metadata.metadatainspector.getallparametermetadata.md) | <code>static</code> | Get the metadata associated with the given key for all parameters of a given method |
 |  [getAllPropertyMetadata(key, target, options)](./metadata.metadatainspector.getallpropertymetadata.md) | <code>static</code> | Get the metadata associated with the given key for all properties of the target class or prototype |
 |  [getClassMetadata(key, target, options)](./metadata.metadatainspector.getclassmetadata.md) | <code>static</code> | Get the metadata associated with the given key for a given class |
-|  [getDesignTypeForMethod(target, methodName)](./metadata.metadatainspector.getdesigntypeformethod.md) | <code>static</code> | Get TypeScript design time type for a method |
+|  [getDesignTypeForMethod(target, methodName)](./metadata.metadatainspector.getdesigntypeformethod.md) | <code>static</code> | Get TypeScript design time type for a method. |
 |  [getDesignTypeForProperty(target, propertyName)](./metadata.metadatainspector.getdesigntypeforproperty.md) | <code>static</code> | Get TypeScript design time type for a property |
 |  [getMethodMetadata(key, target, methodName, options)](./metadata.metadatainspector.getmethodmetadata.md) | <code>static</code> | Get the metadata associated with the given key for a given method of the target class or prototype |
 |  [getParameterMetadata(key, target, methodName, index, options)](./metadata.metadatainspector.getparametermetadata.md) | <code>static</code> | Get the metadata associated with the given key for a parameter of a given method by index |

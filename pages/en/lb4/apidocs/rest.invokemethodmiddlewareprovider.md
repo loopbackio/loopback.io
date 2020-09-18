@@ -20,18 +20,6 @@ export declare class InvokeMethodMiddlewareProvider implements Provider<Middlewa
 ```
 <b>Implements:</b> [Provider](./context.provider.md)<!-- -->&lt;[Middleware](./express.middleware.md)<!-- -->&gt;
 
-## Constructors
-
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(invokeMethod)](./rest.invokemethodmiddlewareprovider._constructor_.md) |  | Constructs a new instance of the <code>InvokeMethodMiddlewareProvider</code> class |
-
-## Properties
-
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [invokeMethod](./rest.invokemethodmiddlewareprovider.invokemethod.md) |  | [InvokeMethod](./rest.invokemethod.md) |  |
-
 ## Methods
 
 |  Method | Modifiers | Description |

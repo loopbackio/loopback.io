@@ -25,7 +25,7 @@ deleteAll(where?: Where<T>, options?: Options): Promise<Count>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  where | [Where](./repository.where.md)<!-- -->&lt;T&gt; | Matching criteria |
+|  where | [Where](./filter.where.md)<!-- -->&lt;T&gt; | Matching criteria |
 |  options | [Options](./repository.options.md) | Options for the operations |
 
 <b>Returns:</b>

@@ -24,7 +24,7 @@ updateAll(data: DataObject<T>, where?: Where<T>, options?: Options): Promise<Cou
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  data | [DataObject](./repository.dataobject.md)<!-- -->&lt;T&gt; |  |
-|  where | [Where](./repository.where.md)<!-- -->&lt;T&gt; |  |
+|  where | [Where](./filter.where.md)<!-- -->&lt;T&gt; |  |
 |  options | [Options](./repository.options.md) |  |
 
 <b>Returns:</b>

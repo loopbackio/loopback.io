@@ -20,6 +20,7 @@ permalink: /doc/en/lb4/changelog.index.html
 - [@loopback/core](changelogs/packages/core/CHANGELOG.md)
 - [@loopback/eslint-config](changelogs/packages/eslint-config/CHANGELOG.md)
 - [@loopback/express](changelogs/packages/express/CHANGELOG.md)
+- [@loopback/filter](changelogs/packages/filter/CHANGELOG.md)
 - [@loopback/http-caching-proxy](changelogs/packages/http-caching-proxy/CHANGELOG.md)
 - [@loopback/http-server](changelogs/packages/http-server/CHANGELOG.md)
 - [@loopback/metadata](changelogs/packages/metadata/CHANGELOG.md)
@@ -47,9 +48,10 @@ permalink: /doc/en/lb4/changelog.index.html
 - [@loopback/authentication-passport](changelogs/extensions/authentication-passport/CHANGELOG.md)
 - [@loopback/context-explorer](changelogs/extensions/context-explorer/CHANGELOG.md)
 - [@loopback/cron](changelogs/extensions/cron/CHANGELOG.md)
-- [@loopback/extension-health](changelogs/extensions/health/CHANGELOG.md)
-- [@loopback/extension-logging](changelogs/extensions/logging/CHANGELOG.md)
-- [@loopback/extension-metrics](changelogs/extensions/metrics/CHANGELOG.md)
+- [@loopback/graphql](changelogs/extensions/graphql/CHANGELOG.md)
+- [@loopback/health](changelogs/extensions/health/CHANGELOG.md)
+- [@loopback/logging](changelogs/extensions/logging/CHANGELOG.md)
+- [@loopback/metrics](changelogs/extensions/metrics/CHANGELOG.md)
 - [@loopback/pooling](changelogs/extensions/pooling/CHANGELOG.md)
 - [@loopback/typeorm](changelogs/extensions/typeorm/CHANGELOG.md)
 
@@ -59,6 +61,7 @@ permalink: /doc/en/lb4/changelog.index.html
 - [@loopback/example-context](changelogs/examples/context/CHANGELOG.md)
 - [@loopback/example-express-composition](changelogs/examples/express-composition/CHANGELOG.md)
 - [@loopback/example-file-transfer](changelogs/examples/file-transfer/CHANGELOG.md)
+- [@loopback/example-graphql](changelogs/examples/graphql/CHANGELOG.md)
 - [@loopback/example-greeter-extension](changelogs/examples/greeter-extension/CHANGELOG.md)
 - [@loopback/example-greeting-app](changelogs/examples/greeting-app/CHANGELOG.md)
 - [@loopback/example-hello-world](changelogs/examples/hello-world/CHANGELOG.md)
@@ -74,3 +77,7 @@ permalink: /doc/en/lb4/changelog.index.html
 - [@loopback/example-todo-jwt](changelogs/examples/todo-jwt/CHANGELOG.md)
 - [@loopback/example-todo-list](changelogs/examples/todo-list/CHANGELOG.md)
 - [@loopback/example-validation-app](changelogs/examples/validation-app/CHANGELOG.md)
+
+### bodyparsers
+
+- [@loopback/rest-msgpack](changelogs/bodyparsers/rest-msgpack/CHANGELOG.md)

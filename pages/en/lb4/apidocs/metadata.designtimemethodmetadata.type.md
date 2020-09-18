@@ -13,11 +13,11 @@ permalink: /doc/en/lb4/apidocs.metadata.designtimemethodmetadata.type.html
 
 ## DesignTimeMethodMetadata.type property
 
-Type of the method itself. It is `Function`
+Type of the method itself. It is `Function` for methods, `undefined` for the constructor.
 
 <b>Signature:</b>
 
 ```typescript
-type: Function;
+type: Function | undefined;
 ```
 

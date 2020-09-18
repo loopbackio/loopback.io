@@ -27,7 +27,7 @@ delete(where?: Where<Target>, options?: Options & {
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  where | [Where](./repository.where.md)<!-- -->&lt;Target&gt; | Instances within the where scope are deleted |
+|  where | [Where](./filter.where.md)<!-- -->&lt;Target&gt; | Instances within the where scope are deleted |
 |  options | [Options](./repository.options.md) &amp; { throughOptions?: [Options](./repository.options.md)<!-- -->; } |  |
 
 <b>Returns:</b>

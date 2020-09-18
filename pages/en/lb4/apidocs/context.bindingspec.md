@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.context.bindingspec.html
 
 ## BindingSpec type
 
-Specification of parameters for `@bind()`
+Specification of parameters for `@injectable()`
 
 <b>Signature:</b>
 

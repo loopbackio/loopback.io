@@ -26,7 +26,7 @@ findById(id: ID, filter?: FilterExcludingWhere<T>, options?: Options): Promise<T
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  id | ID | Value for the entity id |
-|  filter | [FilterExcludingWhere](./repository.filterexcludingwhere.md)<!-- -->&lt;T&gt; | Additional query options. E.g. <code>filter.include</code> configures which related models to fetch as part of the database query (or queries). |
+|  filter | [FilterExcludingWhere](./filter.filterexcludingwhere.md)<!-- -->&lt;T&gt; | Additional query options. E.g. <code>filter.include</code> configures which related models to fetch as part of the database query (or queries). |
 |  options | [Options](./repository.options.md) | Options for the operations |
 
 <b>Returns:</b>

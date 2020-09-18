@@ -29,12 +29,14 @@ permalink: /doc/en/lb4/apidocs.index.html
 |  [@loopback/core](./core.md) | The core foundation for LoopBack 4. It can also serve as the platform to build large-scale Node.js applications and frameworks. |
 |  [@loopback/cron](./cron.md) |  |
 |  [@loopback/express](./express.md) | The Express integration package for loopback-next. |
-|  [@loopback/extension-health](./extension-health.md) | A component to report health status using [@cloudnative/health](https://github.com/CloudNativeJS/cloud-health)<!-- -->. |
-|  [@loopback/extension-logging](./extension-logging.md) |  |
-|  [@loopback/extension-metrics](./extension-metrics.md) | A component that reports metrics of Node.js, the LoopBack framework, and your application to Prometheus. |
+|  [@loopback/filter](./filter.md) | A set of utility typings and filter builders to aid in constructing LoopBack filters using the [builder pattern](https://en.wikipedia.org/wiki/Builder_pattern)<!-- -->. |
+|  [@loopback/graphql](./graphql.md) |  |
+|  [@loopback/health](./health.md) | A component to report health status using [@cloudnative/health](https://github.com/CloudNativeJS/cloud-health)<!-- -->. |
 |  [@loopback/http-caching-proxy](./http-caching-proxy.md) | A caching HTTP proxy for integration tests. |
 |  [@loopback/http-server](./http-server.md) | HTTP / HTTPS server endpoints for LoopBack 4 apps. |
+|  [@loopback/logging](./logging.md) |  |
 |  [@loopback/metadata](./metadata.md) | A package with utilities to help developers implement [TypeScript decorators](https://www.typescriptlang.org/docs/handbook/decorators.html)<!-- -->, define/merge metadata, and inspect metadata. |
+|  [@loopback/metrics](./metrics.md) | A component that reports metrics of Node.js, the LoopBack framework, and your application to Prometheus. |
 |  [@loopback/mock-oauth2-provider](./mock-oauth2-provider.md) |  |
 |  [@loopback/model-api-builder](./model-api-builder.md) | A packge with types and helpers for packages contributing Model API builders. |
 |  [@loopback/openapi-spec-builder](./openapi-spec-builder.md) | A package to simplify creating OpenAPI specification documents in your tests using the builder pattern. |
@@ -46,6 +48,7 @@ permalink: /doc/en/lb4/apidocs.index.html
 |  [@loopback/rest](./rest.md) | The REST API package for loopback-next. |
 |  [@loopback/rest-crud](./rest-crud.md) | REST API controller implementing default CRUD semantics. |
 |  [@loopback/rest-explorer](./rest-explorer.md) | A LoopBack 4 component for adding a self-hosted REST API Explorer. |
+|  [@loopback/rest-msgpack](./rest-msgpack.md) |  |
 |  [@loopback/security](./security.md) | Common types/interfaces for LoopBack 4 security including authentication and authorization. |
 |  [@loopback/service-proxy](./service-proxy.md) | A common set of interfaces for interacting with service oriented backends such as REST APIs, SOAP Web Services, and gRPC microservices. |
 |  [@loopback/testlab](./testlab.md) | A collection of test utilities we use to write LoopBack tests. |

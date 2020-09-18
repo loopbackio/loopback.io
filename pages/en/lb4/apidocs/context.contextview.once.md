@@ -18,7 +18,7 @@ The "bind" event is emitted when a new binding is added to the view.
 <b>Signature:</b>
 
 ```typescript
-once(eventName: 'bind', listener: <T>(event: ContextViewEvent<T>) => void): this;
+once(eventName: 'bind', listener: <V>(event: ContextViewEvent<V>) => void): this;
 ```
 
 ## Parameters
@@ -26,7 +26,7 @@ once(eventName: 'bind', listener: <T>(event: ContextViewEvent<T>) => void): this
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  eventName | 'bind' | The name of the event - always <code>bind</code>. |
-|  listener | &lt;T&gt;(event: [ContextViewEvent](./context.contextviewevent.md)<!-- -->&lt;T&gt;) =&gt; void | The listener function to call when the event is emitted. |
+|  listener | &lt;V&gt;(event: [ContextViewEvent](./context.contextviewevent.md)<!-- -->&lt;V&gt;) =&gt; void | The listener function to call when the event is emitted. |
 
 <b>Returns:</b>
 

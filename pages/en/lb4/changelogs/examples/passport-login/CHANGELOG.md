@@ -13,6 +13,33 @@ permalink: /doc/en/lb4/changelog.example-passport-login.html
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.6.0](https://github.com/strongloop/loopback-next/compare/@loopback/example-passport-login@1.5.6...@loopback/example-passport-login@1.6.0) (2020-09-17)
+
+
+### Features
+
+* **example-passport-login:** add Twitter impl ([dbe382d](https://github.com/strongloop/loopback-next/commit/dbe382d9afc6c3539294cb23f48825091416a46c))
+
+
+
+
+
+## [1.5.6](https://github.com/strongloop/loopback-next/compare/@loopback/example-passport-login@1.5.5...@loopback/example-passport-login@1.5.6) (2020-09-15)
+
+**Note:** Version bump only for package @loopback/example-passport-login
+
+
+
+
+
+## [1.5.5](https://github.com/strongloop/loopback-next/compare/@loopback/example-passport-login@1.5.4...@loopback/example-passport-login@1.5.5) (2020-08-27)
+
+**Note:** Version bump only for package @loopback/example-passport-login
+
+
+
+
+
 ## [1.5.4](https://github.com/strongloop/loopback-next/compare/@loopback/example-passport-login@1.5.3...@loopback/example-passport-login@1.5.4) (2020-08-19)
 
 **Note:** Version bump only for package @loopback/example-passport-login

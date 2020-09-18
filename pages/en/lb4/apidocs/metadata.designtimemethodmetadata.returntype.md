@@ -13,11 +13,11 @@ permalink: /doc/en/lb4/apidocs.metadata.designtimemethodmetadata.returntype.html
 
 ## DesignTimeMethodMetadata.returnType property
 
-Return type
+Return type, may be `undefined` (e.g. for constructors).
 
 <b>Signature:</b>
 
 ```typescript
-returnType: Function;
+returnType: Function | undefined;
 ```
 

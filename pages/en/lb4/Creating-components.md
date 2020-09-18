@@ -36,6 +36,59 @@ export class MyComponent implements Component {
 }
 ```
 
+## Working with dependencies
+
+Extensions should preferably use LoopBack modules installed by the target
+application, to allow application developers to choose the version of framework
+modules they want to use. For example, they may want to hold to an older version
+until a regression is fixed in the latest version, or even use their own fork to
+have a bug fix available before it's officially published.
+
+We recommend to use `peerDependencies` to specify what packages is your
+extension expecting in the target application and `devDependencies` to make
+these packages available for extension tests.
+
+For example:
+
+```json
+{
+  "name": "my-lb4-extension",
+  "version": "1.0.0",
+  "dependencies": {
+    "tslib": "^2.0.0"
+  },
+  "peerDependencies": {
+    "@loopback/core": "^2.9.1",
+    "@loopback/rest": "^5.2.0"
+  },
+  "devDependencies": {
+    "@loopback/build": "^6.1.0",
+    "@loopback/core": "^2.9.1",
+    "@loopback/eslint-config": "^8.0.3",
+    "@loopback/rest": "^5.2.0",
+    "@loopback/testlab": "^3.2.0"
+  }
+}
+```
+
+It is also possible for a single extension version to support multiple versions
+of a framework dependency:
+
+```json
+{
+  "peerDependencies": {
+    "@loopback/core": "^1.9.0 || ^2.0.0"
+  }
+}
+```
+
+{% include important.html content=' Shrinking the supported version range of a
+peer dependency is a breaking change that should trigger a semver-major release.
+
+For example, changing the range from `"^1.5.3"` to `"^1.5.3 || ^2.0.0"` is
+backwards compatible, while changing the range from `"^1.5.3"` to `"^2.0.0"` is
+a breaking change. ' %}
+
 ## Injecting the target application instance
 
 You can inject anything from the context and access them from a component. In
@@ -183,7 +236,7 @@ class MyController {
 
 {% include note.html title="A note on binding names" content="
 To avoid name conflicts, add a unique prefix to your binding key (for example, `my-component.`
-in the example above). See [Reserved binding keys](Reserved-binding-keys.md) for
+in the example above). See [Reserved binding keys](reference/reserved-binding-keys.md) for
 the list of keys reserved for the framework use.
 " %}
 
@@ -441,23 +494,35 @@ app.find('repositories.*');
 
 ## Configuring components
 
-More often than not, the component may want to offer different value providers
-depending on the configuration. For example, a component providing an email API
-may offer different transports (stub, SMTP, and so on).
+Components can be configured by an app by calling `this.configure()` in its
+constructor, and the configuration object can be injected into the component
+constructor using the `@config()` decorator.
 
-Components should use constructor-level
-[Dependency Injection](Context.md#dependency-injection) to receive the
-configuration from the application.
+{% include code-caption.html content="mycomponent.ts" %}
 
 ```ts
-class EmailComponent {
-  constructor(@inject('config#components.email') config) {
-    this.providers = {
-      sendEmail:
-        this.config.transport == 'stub'
-          ? StubTransportProvider
-          : SmtpTransportProvider,
-    };
+export class MyComponent implements Component {
+  constructor(
+    @config()
+    options: MyComponentOptions = {enableLogging: false},
+  ) {
+    if (options.enableLogging) {
+      // do logging
+    } else {
+      // no logging
+    }
   }
 }
+```
+
+{% include code-caption.html content="application.ts" %}
+
+```ts
+...
+// MyComponent.COMPONENT is the binding key of MyComponent
+this.configure(MyComponent.COMPONENT).to({
+  enableLogging: true,
+});
+this.component(MyComponent);
+...
 ```

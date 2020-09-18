@@ -20,19 +20,6 @@ export declare class SendResponseMiddlewareProvider implements Provider<Middlewa
 ```
 <b>Implements:</b> [Provider](./context.provider.md)<!-- -->&lt;[Middleware](./express.middleware.md)<!-- -->&gt;
 
-## Constructors
-
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(send, reject)](./rest.sendresponsemiddlewareprovider._constructor_.md) |  | Constructs a new instance of the <code>SendResponseMiddlewareProvider</code> class |
-
-## Properties
-
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [reject](./rest.sendresponsemiddlewareprovider.reject.md) |  | [Reject](./rest.reject.md) |  |
-|  [send](./rest.sendresponsemiddlewareprovider.send.md) |  | [Send](./rest.send.md) |  |
-
 ## Methods
 
 |  Method | Modifiers | Description |

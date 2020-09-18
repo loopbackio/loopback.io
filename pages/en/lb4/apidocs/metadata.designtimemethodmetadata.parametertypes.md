@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.metadata.designtimemethodmetadata.parametertypes.
 
 ## DesignTimeMethodMetadata.parameterTypes property
 
-An array of parameter types
+An array of parameter types.
 
 <b>Signature:</b>
 

@@ -18,19 +18,19 @@ Create a decorator function
 <b>Signature:</b>
 
 ```typescript
-protected static _createDecorator<T, M extends T | MetadataMap<T> | MetadataMap<T[]>, D extends DecoratorType>(key: MetadataKey<T, D>, spec: T, options?: DecoratorOptions): D;
+protected static _createDecorator<S, MT extends S | MetadataMap<S> | MetadataMap<S[]>, DT extends DecoratorType>(key: MetadataKey<S, DT>, spec: S, options?: DecoratorOptions): DT;
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  key | [MetadataKey](./metadata.metadatakey.md)<!-- -->&lt;T, D&gt; | Metadata key |
-|  spec | T | Metadata object from the decorator function |
+|  key | [MetadataKey](./metadata.metadatakey.md)<!-- -->&lt;S, DT&gt; | Metadata key |
+|  spec | S | Metadata object from the decorator function |
 |  options | [DecoratorOptions](./metadata.decoratoroptions.md) | Options for the decorator |
 
 <b>Returns:</b>
 
-D
+DT
 
 

@@ -59,11 +59,11 @@ The component class is usually implemented inside
 
 ```ts
 import {Application, Component, CoreBindings} from '@loopback/core';
-import {bind, config, ContextTags, inject} from '@loopback/core';
+import {injectable, config, ContextTags, inject} from '@loopback/core';
 import {MetricsBindings} from './keys';
 import {DEFAULT_METRICS_OPTIONS, MetricsOptions} from './types';
 
-@bind({tags: {[ContextTags.KEY]: MetricsBindings.COMPONENT}})
+@injectable({tags: {[ContextTags.KEY]: MetricsBindings.COMPONENT}})
 export class MetricsComponent implements Component {
   constructor(
     @inject(CoreBindings.APPLICATION_INSTANCE)
@@ -87,7 +87,7 @@ LoopBack 4 components are added to applications inside application constructor.
 First, the application file needs to import the component class:
 
 ```ts
-import {MetricsComponent} from '@loopback/extension-metrics';
+import {MetricsComponent} from '@loopback/metrics';
 ```
 
 Then in the constructor, add the component to your application:

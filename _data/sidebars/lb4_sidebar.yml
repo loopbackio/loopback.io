@@ -208,6 +208,10 @@ children:
       url: Serving-static-files.html
       output: 'web, pdf'
 
+    - title: 'Accessing HTTP Request and Response Objects'
+      url: Accessing-http-request-response.html
+      output: 'web, pdf'
+
     - title: 'Uploading and Downloading Files'
       url: File-upload-download.html
       output: 'web, pdf'
@@ -228,12 +232,24 @@ children:
       url: Integrating-with-api-connect.html
       output: 'web, pdf'
 
+    - title: 'Accepting MessagePack over HTTP'
+      url: Accepting-messagepack-over-http.html
+      output: 'web, pdf'
+
   - title: 'Creating Other Forms of APIs'
     output: 'web, pdf'
     children:
+      - title: 'Creating GraphQL APIs'
+        url: GraphQL.html
+        output: 'web, pdf'
+
       - title: 'Exposing GraphQL APIs'
         url: exposing-graphql-apis.html
         output: 'web, pdf'
+
+  - title: 'Running cron jobs'
+    url: Running-cron-jobs.html
+    output: 'web, pdf'
 
   - title: 'Accessing Databases'
     output: 'web, pdf'
@@ -286,7 +302,7 @@ children:
       output: 'web, pdf'
 
     - title: 'Executing database commands'
-      url: Executing-database-commands
+      url: Executing-database-commands.html
       output: 'web, pdf'
 
     - title: 'Using TypeORM'
@@ -364,15 +380,43 @@ children:
           output: 'web, pdf'
 
     - title: 'Authorization'
-      url: Loopback-component-authorization.html
+      url: Authorization-overview.html
       output: 'web, pdf'
+      children:
+        - title: 'RBAC with Authorization System'
+          url: RBAC-with-authorization.html
+          output: 'web, pdf'
+
+        - title: 'Authorization Component'
+          url: Loopback-component-authorization.html
+          output: 'web, pdf'
+          children:
+          - title: 'Interceptor'
+            url: Authorization-component-interceptor.html
+            output: 'web, pdf'
+
+          - title: 'Decorator'
+            url: Authorization-component-decorator.html
+            output: 'web, pdf'
+
+          - title: 'Authorizer'
+            url: Authorization-component-authorizer.html
+            output: 'web, pdf'
+
+          - title: 'Decision Matrix'
+            url: Authorization-component-decision-matrix.html
+            output: 'web, pdf'
+
+          - title: 'Enforcer'
+            url: Authorization-component-enforcer.html
+            output: 'web, pdf'
 
   - title: 'Deploying Applications'
     url: Deployment.html
     output: 'web, pdf'
     children:
       - title: 'Enabling HTTPS'
-        url: 'Enabling-https.html'
+        url: Enabling-https.html
         output: 'web, pdf'
 
       - title: 'Deploying to IBM Cloud'

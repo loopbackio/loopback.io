@@ -18,8 +18,8 @@ The "unbind" event is emitted a new binding is removed from the view.
 <b>Signature:</b>
 
 ```typescript
-on(eventName: 'unbind', listener: <T>(event: ContextViewEvent<T> & {
-        cachedValue?: T;
+on(eventName: 'unbind', listener: <V>(event: ContextViewEvent<V> & {
+        cachedValue?: V;
     }) => void): this;
 ```
 
@@ -28,7 +28,7 @@ on(eventName: 'unbind', listener: <T>(event: ContextViewEvent<T> & {
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  eventName | 'unbind' | The name of the event - always <code>unbind</code>. |
-|  listener | &lt;T&gt;(event: [ContextViewEvent](./context.contextviewevent.md)<!-- -->&lt;T&gt; &amp; { cachedValue?: T; }) =&gt; void | The listener function to call when the event is emitted. |
+|  listener | &lt;V&gt;(event: [ContextViewEvent](./context.contextviewevent.md)<!-- -->&lt;V&gt; &amp; { cachedValue?: V; }) =&gt; void | The listener function to call when the event is emitted. |
 
 <b>Returns:</b>
 

@@ -25,7 +25,7 @@ protected normalizeFilter(filter?: Filter<T>): legacy.Filter | undefined;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  filter | [Filter](./repository.filter.md)<!-- -->&lt;T&gt; | Query filter |
+|  filter | [Filter](./filter.filter.md)<!-- -->&lt;T&gt; | Query filter |
 
 <b>Returns:</b>
 

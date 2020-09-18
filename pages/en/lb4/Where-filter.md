@@ -43,7 +43,7 @@ For example, here is a query to find cars with `odo` is less than 30,000:
 ```
 
 You can also
-use [stringified JSON format](Querying-data.html#using-stringified-json-in-rest-queries) in
+use [stringified JSON format](Querying-data.md#using-stringified-json-in-rest-queries) in
 a REST query. The above example can be written as:
 
 ```
@@ -447,7 +447,7 @@ await shirtRepository.find({where: {size: {between: [0, 7]}}});
 The `where.<field>.near` filter is different from other where filters: most
 where filters **limit**the number of records returned, whereas `near` **orders**
 them, making it more like a SQL `order by` clause. By combining it with
-[`limit`](Limit-filter.html), you can create a query to get, for example, the
+[`limit`](Limit-filter.md), you can create a query to get, for example, the
 **three records nearest to a given location**.
 
 For example:

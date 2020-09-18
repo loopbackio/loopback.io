@@ -18,7 +18,7 @@ The "resolve" event is emitted when the cached values are resolved and updated.
 <b>Signature:</b>
 
 ```typescript
-once(eventName: 'refresh', listener: <T>(result: T[]) => void): this;
+once(eventName: 'refresh', listener: <V>(result: V[]) => void): this;
 ```
 
 ## Parameters
@@ -26,7 +26,7 @@ once(eventName: 'refresh', listener: <T>(result: T[]) => void): this;
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  eventName | 'refresh' | The name of the event - always <code>refresh</code>. |
-|  listener | &lt;T&gt;(result: T\[\]) =&gt; void | The listener function to call when the event is emitted. |
+|  listener | &lt;V&gt;(result: V\[\]) =&gt; void | The listener function to call when the event is emitted. |
 
 <b>Returns:</b>
 

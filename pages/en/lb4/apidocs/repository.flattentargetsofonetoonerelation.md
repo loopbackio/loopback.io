@@ -18,7 +18,7 @@ Returns an array of instances. The order of arrays is based on the order of sour
 <b>Signature:</b>
 
 ```typescript
-export declare function flattenTargetsOfOneToOneRelation<SourceWithRelations extends Entity, Target extends Entity>(sourceIds: unknown[], targetEntities: Target[], targetKey: StringKeyOf<Target>): (Target | undefined)[];
+export declare function flattenTargetsOfOneToOneRelation<Target extends Entity>(sourceIds: unknown[], targetEntities: Target[], targetKey: StringKeyOf<Target>): (Target | undefined)[];
 ```
 
 ## Parameters

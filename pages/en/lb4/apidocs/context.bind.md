@@ -13,16 +13,20 @@ permalink: /doc/en/lb4/apidocs.context.bind.html
 
 ## bind namespace
 
+Alias namespace `bind` to `injectable` for backward compatibility
+
+It should have the same members as `bind`<!-- -->.
+
 <b>Signature:</b>
 
 ```typescript
 export declare namespace bind 
 ```
 
-## Functions
+## Variables
 
-|  Function | Description |
+|  Variable | Description |
 |  --- | --- |
-|  [provider(specs)](./context.bind.provider.md) | <code>@bind.provider</code> to denote a provider class<!-- -->A list of binding scope/tags or template functions to configure the binding |
+|  [provider](./context.bind.provider.md) |  |
 
 

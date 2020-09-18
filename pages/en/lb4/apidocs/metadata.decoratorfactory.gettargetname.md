@@ -13,19 +13,7 @@ permalink: /doc/en/lb4/apidocs.metadata.decoratorfactory.gettargetname.html
 
 ## DecoratorFactory.getTargetName() method
 
-Get the qualified name of a decoration target. For example:
-
-```
-class MyClass
-MyClass.constructor[0] // First parameter of the constructor
-MyClass.myStaticProperty
-MyClass.myStaticMethod()
-MyClass.myStaticMethod[0] // First parameter of the myStaticMethod
-MyClass.prototype.myProperty
-MyClass.prototype.myMethod()
-MyClass.prototype.myMethod[1] // Second parameter of myMethod
-
-```
+Get the qualified name of a decoration target.
 
 <b>Signature:</b>
 
@@ -44,5 +32,11 @@ static getTargetName(target: Object, member?: string | symbol, descriptorOrIndex
 <b>Returns:</b>
 
 string
+
+## Remarks
+
+Example of target names:
+
+- class MyClass - MyClass.constructor\[0\] // First parameter of the constructor - MyClass.myStaticProperty - MyClass.myStaticMethod() - MyClass.myStaticMethod\[0\] // First parameter of the myStaticMethod - MyClass.prototype.myProperty - MyClass.prototype.myMethod() - MyClass.prototype.myMethod\[1\] // Second parameter of myMethod
 
 

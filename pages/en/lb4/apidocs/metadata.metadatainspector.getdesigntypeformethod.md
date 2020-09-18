@@ -13,12 +13,12 @@ permalink: /doc/en/lb4/apidocs.metadata.metadatainspector.getdesigntypeformethod
 
 ## MetadataInspector.getDesignTypeForMethod() method
 
-Get TypeScript design time type for a method
+Get TypeScript design time type for a method.
 
 <b>Signature:</b>
 
 ```typescript
-static getDesignTypeForMethod(target: Object, methodName: string): DesignTimeMethodMetadata;
+static getDesignTypeForMethod(target: Object, methodName: string): DesignTimeMethodMetadata | undefined;
 ```
 
 ## Parameters
@@ -30,6 +30,8 @@ static getDesignTypeForMethod(target: Object, methodName: string): DesignTimeMet
 
 <b>Returns:</b>
 
-[DesignTimeMethodMetadata](./metadata.designtimemethodmetadata.md)
+[DesignTimeMethodMetadata](./metadata.designtimemethodmetadata.md) \| undefined
+
+Design time metadata. The return value is `undefined` in projects that do not enable `emitDecoratorMetadata` in TypeScript compiler options or are written in vanilla JavaScript.
 
 

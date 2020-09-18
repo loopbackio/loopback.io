@@ -23,7 +23,7 @@ get(filter?: Pick<Filter<TargetEntity>, Exclude<keyof Filter<TargetEntity>, 'whe
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  filter | Pick&lt;[Filter](./repository.filter.md)<!-- -->&lt;TargetEntity&gt;, Exclude&lt;keyof [Filter](./repository.filter.md)<!-- -->&lt;TargetEntity&gt;, 'where'&gt;&gt; |  |
+|  filter | Pick&lt;[Filter](./filter.filter.md)<!-- -->&lt;TargetEntity&gt;, Exclude&lt;keyof [Filter](./filter.filter.md)<!-- -->&lt;TargetEntity&gt;, 'where'&gt;&gt; |  |
 |  options | [Options](./repository.options.md) |  |
 
 <b>Returns:</b>

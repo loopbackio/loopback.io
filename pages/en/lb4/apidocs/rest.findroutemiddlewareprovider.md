@@ -20,18 +20,6 @@ export declare class FindRouteMiddlewareProvider implements Provider<Middleware>
 ```
 <b>Implements:</b> [Provider](./context.provider.md)<!-- -->&lt;[Middleware](./express.middleware.md)<!-- -->&gt;
 
-## Constructors
-
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(findRoute)](./rest.findroutemiddlewareprovider._constructor_.md) |  | Constructs a new instance of the <code>FindRouteMiddlewareProvider</code> class |
-
-## Properties
-
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [findRoute](./rest.findroutemiddlewareprovider.findroute.md) |  | [FindRoute](./rest.findroute.md) |  |
-
 ## Methods
 
 |  Method | Modifiers | Description |

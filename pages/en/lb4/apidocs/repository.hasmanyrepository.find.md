@@ -25,7 +25,7 @@ find(filter?: Filter<Target>, options?: Options): Promise<Target[]>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  filter | [Filter](./repository.filter.md)<!-- -->&lt;Target&gt; | A filter object for where, order, limit, etc. |
+|  filter | [Filter](./filter.filter.md)<!-- -->&lt;Target&gt; | A filter object for where, order, limit, etc. |
 |  options | [Options](./repository.options.md) | Options for the operation |
 
 <b>Returns:</b>

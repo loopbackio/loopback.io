@@ -51,14 +51,14 @@ permalink: /doc/en/lb4/apidocs.context.html
 |  [asProvider(target)](./context.asprovider.md) | A factory function to create a template function to bind the target class as a <code>Provider</code>. |
 |  [asResolutionOptions(optionsOrSession)](./context.asresolutionoptions.md) | Normalize ResolutionOptionsOrSession to ResolutionOptions |
 |  [assertTargetType(injection, expectedType, expectedTypeName)](./context.asserttargettype.md) | Assert the target type inspected from TypeScript for injection to be the expected type. If the types don't match, an error is thrown. |
-|  [bind(specs)](./context.bind.md) | Decorate a class with binding configuration |
+|  [bind(specs)](./context.bind.md) | <code>@bind</code> is now an alias to  for backward compatibility |
 |  [bindingTemplateFor(cls)](./context.bindingtemplatefor.md) | Get the binding template for a class with binding metadata |
 |  [compareBindingsByTag(phaseTagName, orderOfPhases)](./context.comparebindingsbytag.md) | Creates a binding compare function to sort bindings by tagged phase name. |
 |  [compareByOrder(a, b, order)](./context.comparebyorder.md) | Compare two values by the predefined order |
 |  [composeInterceptors(interceptors)](./context.composeinterceptors.md) | Compose a list of interceptors as a single interceptor |
 |  [config(propertyPath, metadata)](./context.config.md) | Inject a property from <code>config</code> of the current binding. If no corresponding config value is present, <code>undefined</code> will be injected as the configuration binding is resolved with <code>optional: true</code> by default. |
 |  [configBindingKeyFor(key, propertyPath)](./context.configbindingkeyfor.md) | Create binding key for configuration of the binding |
-|  [createBindingFromClass(cls, options)](./context.createbindingfromclass.md) | Create a binding from a class with decorated metadata. The class is attached to the binding as follows: - <code>binding.toClass(cls)</code>: if <code>cls</code> is a plain class such as <code>MyController</code> - <code>binding.toProvider(cls)</code>: it <code>cls</code> is a value provider class with a prototype method <code>value()</code> |
+|  [createBindingFromClass(cls, options)](./context.createbindingfromclass.md) | Create a binding from a class with decorated metadata. The class is attached to the binding as follows: - <code>binding.toClass(cls)</code>: if <code>cls</code> is a plain class such as <code>MyController</code> - <code>binding.toProvider(cls)</code>: if <code>cls</code> is a value provider class with a prototype method <code>value()</code> - <code>binding.toDynamicValue(cls)</code>: if <code>cls</code> is a dynamic value provider class with a static method <code>value()</code> |
 |  [createProxyWithInterceptors(target, context, session, source)](./context.createproxywithinterceptors.md) | Create a proxy that applies interceptors for method invocations |
 |  [createViewGetter(ctx, bindingFilter, session)](./context.createviewgetter.md) | Create a context view as a getter with the given filter |
 |  [createViewGetter(ctx, bindingFilter, bindingComparator, session)](./context.createviewgetter_1.md) | Create a context view as a getter with the given filter and sort matched bindings by the comparator. |
@@ -69,8 +69,10 @@ permalink: /doc/en/lb4/apidocs.context.html
 |  [getBindingMetadata(target)](./context.getbindingmetadata.md) | Get binding metadata for a class |
 |  [getDeepProperty(value, path)](./context.getdeepproperty.md) | Get nested properties of an object by path |
 |  [globalInterceptor(group, specs)](./context.globalinterceptor.md) | <code>@globalInterceptor</code> decorator to mark the class as a global interceptor |
+|  [hasInjections(cls)](./context.hasinjections.md) | Check if the given class has <code>@inject</code> or other decorations that map to <code>@inject</code>. |
 |  [includesTagValue(itemValues)](./context.includestagvalue.md) | Create a tag value matcher function that returns <code>true</code> if the target tag value equals to the item value or is an array that includes the item value. |
 |  [inject(bindingSelector, metadata, resolve)](./context.inject.md) | A decorator to annotate method arguments for automatic injection by LoopBack IoC container. |
+|  [injectable(specs)](./context.injectable.md) | Decorate a class with binding configuration |
 |  [inspectInjections(binding)](./context.inspectinjections.md) | Inspect injections for a binding created with <code>toClass</code> or <code>toProvider</code> |
 |  [inspectTargetType(injection)](./context.inspecttargettype.md) | Inspect the target type for the injection to find out the corresponding JavaScript type |
 |  [instantiateClass(ctor, ctx, session, nonInjectedArgs)](./context.instantiateclass.md) | Create an instance of a class which constructor has arguments decorated with <code>@inject</code>.<!-- -->The function returns a class when all dependencies were resolved synchronously, or a Promise otherwise. |
@@ -134,12 +136,13 @@ permalink: /doc/en/lb4/apidocs.context.html
 
 |  Namespace | Description |
 |  --- | --- |
-|  [bind](./context.bind.md) |  |
+|  [bind](./context.bind.md) | Alias namespace <code>bind</code> to <code>injectable</code> for backward compatibility<!-- -->It should have the same members as <code>bind</code>. |
 |  [config](./context.config.md) |  |
 |  [ContextBindings](./context.contextbindings.md) | Namespace for context bindings |
 |  [ContextTags](./context.contexttags.md) | Namespace for context tags |
 |  [Getter](./context.getter.md) |  |
 |  [inject](./context.inject.md) |  |
+|  [injectable](./context.injectable.md) | A namespace to host shortcuts for <code>@injectable</code> |
 
 ## Variables
 
@@ -166,11 +169,11 @@ permalink: /doc/en/lb4/apidocs.context.html
 |  [BindingEvent](./context.bindingevent.md) | Information for a binding event |
 |  [BindingEventListener](./context.bindingeventlistener.md) | Event listeners for binding events |
 |  [BindingFromClassOptions](./context.bindingfromclassoptions.md) | Options to customize the binding created from a class |
-|  [BindingMetadata](./context.bindingmetadata.md) | Binding metadata from <code>@bind</code> |
+|  [BindingMetadata](./context.bindingmetadata.md) | Binding metadata from <code>@injectable</code> |
 |  [BindingScopeAndTags](./context.bindingscopeandtags.md) | An object to configure binding scope and tags |
 |  [BindingSelector](./context.bindingselector.md) | Select binding(s) by key or a filter function |
 |  [BindingSource](./context.bindingsource.md) | Source for the binding, including the type and value |
-|  [BindingSpec](./context.bindingspec.md) | Specification of parameters for <code>@bind()</code> |
+|  [BindingSpec](./context.bindingspec.md) | Specification of parameters for <code>@injectable()</code> |
 |  [BindingTag](./context.bindingtag.md) | Binding tag can be a simple name or name/value pairs |
 |  [BindingTemplate](./context.bindingtemplate.md) | A function as the template to configure bindings |
 |  [BoundValue](./context.boundvalue.md) |  |

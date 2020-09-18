@@ -18,15 +18,15 @@ Create a class decorator function
 <b>Signature:</b>
 
 ```typescript
-static createDecorator<T>(key: MetadataKey<T, ClassDecorator>, spec: T, options?: DecoratorOptions): ClassDecorator;
+static createDecorator<S>(key: MetadataKey<S, ClassDecorator>, spec: S, options?: DecoratorOptions): ClassDecorator;
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  key | [MetadataKey](./metadata.metadatakey.md)<!-- -->&lt;T, ClassDecorator&gt; | Metadata key |
-|  spec | T | Metadata object from the decorator function |
+|  key | [MetadataKey](./metadata.metadatakey.md)<!-- -->&lt;S, ClassDecorator&gt; | Metadata key |
+|  spec | S | Metadata object from the decorator function |
 |  options | [DecoratorOptions](./metadata.decoratoroptions.md) | Options for the decorator |
 
 <b>Returns:</b>

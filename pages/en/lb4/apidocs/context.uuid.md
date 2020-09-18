@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.uuid.html
 
 > Warning: This API is now obsolete.
 > 
-> Use \[uuid\](https://www.npmjs.com/package/uuid) or \[hyperid\](https://www.npmjs.com/package/hyperid) instead.
+> Use `generateUniqueId`<!-- -->, \[uuid\](https://www.npmjs.com/package/uuid) or \[hyperid\](https://www.npmjs.com/package/hyperid) instead.
 > 
 
 A utility to generate uuid v4

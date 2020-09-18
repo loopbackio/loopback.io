@@ -77,19 +77,7 @@ class MyController {}
 |  [duplicateDecorationError(target, member, descriptorOrIndex)](./metadata.decoratorfactory.duplicatedecorationerror.md) |  | Create an error to report if the decorator is applied to the target more than once |
 |  [getNumberOfParameters(target, member)](./metadata.decoratorfactory.getnumberofparameters.md) | <code>static</code> | Get the number of parameters for a given constructor or method |
 |  [getTarget(spec)](./metadata.decoratorfactory.gettarget.md) |  | Get the optional decoration target of a given spec |
-|  [getTargetName(target, member, descriptorOrIndex)](./metadata.decoratorfactory.gettargetname.md) | <code>static</code> | Get the qualified name of a decoration target. For example:
-```
-class MyClass
-MyClass.constructor[0] // First parameter of the constructor
-MyClass.myStaticProperty
-MyClass.myStaticMethod()
-MyClass.myStaticMethod[0] // First parameter of the myStaticMethod
-MyClass.prototype.myProperty
-MyClass.prototype.myMethod()
-MyClass.prototype.myMethod[1] // Second parameter of myMethod
-
-```
- |
+|  [getTargetName(target, member, descriptorOrIndex)](./metadata.decoratorfactory.gettargetname.md) | <code>static</code> | Get the qualified name of a decoration target. |
 |  [inherit(inheritedMetadata)](./metadata.decoratorfactory.inherit.md) |  | Inherit metadata from base classes. By default, this method merges base metadata into the spec if <code>allowInheritance</code> is set to <code>true</code>. To customize the behavior, this method can be overridden by sub classes. |
 |  [mergeWithInherited(inheritedMetadata, target, member, descriptorOrIndex)](./metadata.decoratorfactory.mergewithinherited.md) |  | This method is called by the default implementation of the decorator function to merge the spec argument from the decoration with the inherited metadata for a class, all properties, all methods, or all method parameters that are decorated by this decorator.<!-- -->It MUST be overridden by subclasses to process inherited metadata. |
 |  [mergeWithOwn(ownMetadata, target, member, descriptorOrIndex)](./metadata.decoratorfactory.mergewithown.md) |  | This method is called by the default implementation of the decorator function to merge the spec argument from the decoration with the own metadata for a class, all properties, all methods, or all method parameters that are decorated by this decorator.<!-- -->It MUST be overridden by subclasses to process own metadata. |

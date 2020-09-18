@@ -25,7 +25,7 @@ delete(where?: Where<TargetEntity>, options?: Options & {
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  where | [Where](./repository.where.md)<!-- -->&lt;TargetEntity&gt; |  |
+|  where | [Where](./filter.where.md)<!-- -->&lt;TargetEntity&gt; |  |
 |  options | [Options](./repository.options.md) &amp; { throughOptions?: [Options](./repository.options.md)<!-- -->; } |  |
 
 <b>Returns:</b>

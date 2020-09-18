@@ -29,6 +29,6 @@ export interface ModelDefinitionSyntax
 |  [name](./repository.modeldefinitionsyntax.name.md) | string |  |
 |  [properties](./repository.modeldefinitionsyntax.properties.md) | { \[name: string\]: [PropertyDefinition](./repository.propertydefinition.md) \| [PropertyType](./repository.propertytype.md)<!-- -->; } |  |
 |  [relations](./repository.modeldefinitionsyntax.relations.md) | [RelationDefinitionMap](./repository.relationdefinitionmap.md) |  |
-|  [settings](./repository.modeldefinitionsyntax.settings.md) | { \[name: string\]: any; } |  |
+|  [settings](./repository.modeldefinitionsyntax.settings.md) | [ModelSettings](./repository.modelsettings.md) |  |
 
 

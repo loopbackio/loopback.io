@@ -20,18 +20,6 @@ export declare class ParseParamsMiddlewareProvider implements Provider<Middlewar
 ```
 <b>Implements:</b> [Provider](./context.provider.md)<!-- -->&lt;[Middleware](./express.middleware.md)<!-- -->&gt;
 
-## Constructors
-
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(parseParams)](./rest.parseparamsmiddlewareprovider._constructor_.md) |  | Constructs a new instance of the <code>ParseParamsMiddlewareProvider</code> class |
-
-## Properties
-
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [parseParams](./rest.parseparamsmiddlewareprovider.parseparams.md) |  | [ParseParams](./rest.parseparams.md) |  |
-
 ## Methods
 
 |  Method | Modifiers | Description |

@@ -50,6 +50,8 @@ export declare class Application extends Context implements LifeCycleObserver
 |  [getServer(target)](./core.application.getserver.md) |  | Retrieve the singleton instance for a bound server. |
 |  [interceptor(interceptor, nameOrOptions)](./core.application.interceptor.md) |  | Register an interceptor |
 |  [lifeCycleObserver(ctor, nameOrOptions)](./core.application.lifecycleobserver.md) |  | Register a life cycle observer class |
+|  [onStart(fn)](./core.application.onstart.md) |  | Register a function to be called when the application starts.<!-- -->This is a shortcut for adding a binding for a LifeCycleObserver implementing a <code>start()</code> method. |
+|  [onStop(fn)](./core.application.onstop.md) |  | Register a function to be called when the application starts.<!-- -->This is a shortcut for adding a binding for a LifeCycleObserver implementing a <code>start()</code> method. |
 |  [server(ctor, nameOrOptions)](./core.application.server.md) |  | Bind a Server constructor to the Application's master context. Each server constructor added in this way must provide a unique prefix to prevent binding overlap. |
 |  [servers(ctors)](./core.application.servers.md) |  | Bind an array of Server constructors to the Application's master context. Each server added in this way will automatically be named based on the class constructor name with the "servers." prefix. |
 |  [service(cls, nameOrOptions)](./core.application.service.md) |  | Add a service to this application. |

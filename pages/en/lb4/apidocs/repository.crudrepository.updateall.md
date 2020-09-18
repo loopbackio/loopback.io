@@ -26,7 +26,7 @@ updateAll(dataObject: DataObject<T>, where?: Where<T>, options?: Options): Promi
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  dataObject | [DataObject](./repository.dataobject.md)<!-- -->&lt;T&gt; | The data to be updated |
-|  where | [Where](./repository.where.md)<!-- -->&lt;T&gt; | Matching criteria |
+|  where | [Where](./filter.where.md)<!-- -->&lt;T&gt; | Matching criteria |
 |  options | [Options](./repository.options.md) | Options for the operations |
 
 <b>Returns:</b>

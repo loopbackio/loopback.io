@@ -18,17 +18,17 @@ A static method to create a binding so that we can do `Binding.bind('foo').to('b
 <b>Signature:</b>
 
 ```typescript
-static bind<T = unknown>(key: BindingAddress<T>): Binding<T>;
+static bind<V = unknown>(key: BindingAddress<V>): Binding<V>;
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  key | [BindingAddress](./context.bindingaddress.md)<!-- -->&lt;T&gt; | Binding key |
+|  key | [BindingAddress](./context.bindingaddress.md)<!-- -->&lt;V&gt; | Binding key |
 
 <b>Returns:</b>
 
-[Binding](./context.binding.md)<!-- -->&lt;T&gt;
+[Binding](./context.binding.md)<!-- -->&lt;V&gt;
 
 

@@ -18,7 +18,7 @@ Resolve entries of an array into a new array with the same indexes. If one or mo
 <b>Signature:</b>
 
 ```typescript
-export declare function resolveList<T, V>(list: T[], resolver: (val: T, index: number, list: T[]) => ValueOrPromise<V>): ValueOrPromise<V[]>;
+export declare function resolveList<T, V>(list: T[], resolver: (val: T, index: number, values: T[]) => ValueOrPromise<V>): ValueOrPromise<V[]>;
 ```
 
 ## Parameters
@@ -26,7 +26,7 @@ export declare function resolveList<T, V>(list: T[], resolver: (val: T, index: n
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  list | T\[\] | The original array containing the source entries |
-|  resolver | (val: T, index: number, list: T\[\]) =&gt; [ValueOrPromise](./context.valueorpromise.md)<!-- -->&lt;V&gt; | A function resolves an entry to a value or promise. It will be invoked with the property value, the property index, and the source array. |
+|  resolver | (val: T, index: number, values: T\[\]) =&gt; [ValueOrPromise](./context.valueorpromise.md)<!-- -->&lt;V&gt; | A function resolves an entry to a value or promise. It will be invoked with the property value, the property index, and the source array. |
 
 <b>Returns:</b>
 

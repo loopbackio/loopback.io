@@ -16,6 +16,6 @@ permalink: /doc/en/lb4/apidocs.core.serviceorproviderclass.html
 <b>Signature:</b>
 
 ```typescript
-export declare type ServiceOrProviderClass<T = any> = Constructor<T | Provider<T>>;
+export declare type ServiceOrProviderClass<T = any> = Constructor<T | Provider<T>> | DynamicValueProviderClass<T>;
 ```
 

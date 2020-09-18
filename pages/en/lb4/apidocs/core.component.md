@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.core.component.html
 
 ## Component interface
 
-A component declares a set of artifacts so that they cane be contributed to an application as a group
+A component declares a set of artifacts so that they can be contributed to an application as a group
 
 <b>Signature:</b>
 

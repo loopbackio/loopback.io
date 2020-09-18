@@ -27,7 +27,7 @@ updateAll(modelClass: Class<Entity>, data: EntityData, where?: Where<Entity>, op
 |  --- | --- | --- |
 |  modelClass | [Class](./repository.class.md)<!-- -->&lt;[Entity](./repository.entity.md)<!-- -->&gt; | The model class |
 |  data | [EntityData](./repository.entitydata.md) | The data attributes to be updated |
-|  where | [Where](./repository.where.md)<!-- -->&lt;[Entity](./repository.entity.md)<!-- -->&gt; | The matching criteria |
+|  where | [Where](./filter.where.md)<!-- -->&lt;[Entity](./repository.entity.md)<!-- -->&gt; | The matching criteria |
 |  options | [Options](./repository.options.md) | Options for the operation |
 
 <b>Returns:</b>

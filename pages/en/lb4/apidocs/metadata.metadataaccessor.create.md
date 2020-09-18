@@ -18,7 +18,7 @@ Create a strongly-typed metadata accessor
 <b>Signature:</b>
 
 ```typescript
-static create<T, D extends DecoratorType>(key: string): MetadataAccessor<T, D>;
+static create<V, DT extends DecoratorType>(key: string): MetadataAccessor<V, DT>;
 ```
 
 ## Parameters
@@ -29,6 +29,6 @@ static create<T, D extends DecoratorType>(key: string): MetadataAccessor<T, D>;
 
 <b>Returns:</b>
 
-[MetadataAccessor](./metadata.metadataaccessor.md)<!-- -->&lt;T, D&gt;
+[MetadataAccessor](./metadata.metadataaccessor.md)<!-- -->&lt;V, DT&gt;
 
 

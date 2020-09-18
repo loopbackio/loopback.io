@@ -25,7 +25,7 @@ find(filter?: Filter<T>, options?: Options): Promise<(T & Relations)[]>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  filter | [Filter](./repository.filter.md)<!-- -->&lt;T&gt; | Query filter |
+|  filter | [Filter](./filter.filter.md)<!-- -->&lt;T&gt; | Query filter |
 |  options | [Options](./repository.options.md) | Options for the operations |
 
 <b>Returns:</b>

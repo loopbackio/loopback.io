@@ -18,7 +18,7 @@ Create a configuration binding for the given key
 <b>Signature:</b>
 
 ```typescript
-static configure<T = unknown>(key: BindingAddress): Binding<T>;
+static configure<V = unknown>(key: BindingAddress): Binding<V>;
 ```
 
 ## Parameters
@@ -29,7 +29,7 @@ static configure<T = unknown>(key: BindingAddress): Binding<T>;
 
 <b>Returns:</b>
 
-[Binding](./context.binding.md)<!-- -->&lt;T&gt;
+[Binding](./context.binding.md)<!-- -->&lt;V&gt;
 
 ## Example
 

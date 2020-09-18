@@ -16,8 +16,6 @@ permalink: /doc/en/lb4/apidocs.repository.modeldefinitionsyntax.settings.html
 <b>Signature:</b>
 
 ```typescript
-settings?: {
-        [name: string]: any;
-    };
+settings?: ModelSettings;
 ```
 
