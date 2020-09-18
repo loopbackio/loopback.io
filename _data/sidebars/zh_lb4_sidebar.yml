@@ -233,7 +233,7 @@ children:
 
     - title: '绑定（Binding）'
       url: /doc/zh/lb4/Binding.html
-      translated: false
+      translated: true
       output: 'web, pdf'
 
     - title: '依赖注入（Dependency Injection）'

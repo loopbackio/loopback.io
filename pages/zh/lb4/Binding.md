@@ -191,3 +191,74 @@ ctx
   .toAlias('servers.RestServer.options#apiExplorer');
 const apiExplorerOptions = await ctx.get('apiExplorer.options'); // => {path: '/explorer'}
 ```
+
+### 配置`Binding`的`Socpe`
+
+> Socpe译为“作用域”，下略。
+
+一个`Binding`可以为多个请求提供解析值，通过`Binding`所在的`Context`对象的`.get()`和`.getSync()`方法，或者依赖注入。
+在解析`Binding`的值时，`Scope`用来控制解析过程的策略。即可以返回一个新的值，或为从属于同一层级的`Context`的多个请求返回一个相同的值。<br/>
+如下示例中，虽然`Binding`都是`"my-key"`，但是`value1`变量和`value2`变量的值可能是相同的或不同的，这都取决于`Binding`的`Scope`是如何设置的。
+
+```ts
+const value1 = await ctx.get('my-key');
+const value2 = ctx.getSync('my-key');
+```
+
+在相同的`Context`中解析一个`Binding`时，我们允许使用如下的`Scope`：
+
+- `BindingScope.TRANSIENT`（临时作用域，此项为默认值）
+- `BindingScope.CONTEXT`（同级作用域）
+- `BindingScope.SINGLETON`（常态作用域）
+
+请参见[BindingScope](https://loopback.io/doc/en/lb4/apidocs.context.bindingscope.html).
+
+```ts
+binding.inScope(BindingScope.SINGLETON);
+```
+
+`Binding`的`Scope`可以通过`BindingScope`枚举引用到。
+
+### 配置正确的`Scope`
+
+在配置`Binding`的`Scope`时，请先思考如下问题：
+
+1. 在解析`Binding`的值时，是否有必要为每个请求都返回一个新的值？ 
+2. 在解析`Binding`的值时，是否解析值会得到保留，或是因请求不同而变化？
+
+请注意，使用了`Binding`类`.to()`方法的`Binding`的值不会受到`Scope`的影响，如下所示：
+
+```ts
+ctx.bind('my-name').to('John Smith');
+```
+
+`key`属性为`'my-name'`的`Binding`的值将被永远解析为`'John Smith'`。
+
+`Scope`只会影响到使用`.toDynamicValue()`、`.toClass()`和`.toProvider()`方法提供解析值的`Binding`。
+
+假设我们需要满足一个需求：需要创建一个可以提供当前系统日期的`Binding`。
+
+```ts
+ctx
+  .bind('current-date')
+  .toDynamicValue(() => new Date());
+const d1 = ctx.getSync('current-date');
+const d2 = ctx.getSync('current-date');
+// d1 !== d2
+```
+
+在上面的代码中，`Binding`的`Scope`的默认值为`TRANSIENT`，即临时作用域。
+`d1`和`d2`的值都是来源于`new Date()`方法，并且都是通过`ctx.getSync('current-date')`方法解析出来的。两个不同的日期被分配到了`d1`和`d2`的值上，相当于每次解析`Binding`的值时，值都会成为解析时的系统日期。
+
+
+```ts
+ctx
+  .bind('current-date')
+  .toDynamicValue(() => new Date())
+  .inScope(BindingScope.SINGLETON);
+const d1 = ctx.getSync<Date>('current-date');
+const d2 = ctx.getSync<Date>('current-date');
+// d1 === d2
+```
+
+在上面的代码中，`Binding`的`Scope`的值被设置为`SINGLETON`，即常态作用域。自然就可以推理出`d1`和`d2`的值都是相同的日期，也就是不符合我们的需求。
