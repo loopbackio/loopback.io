@@ -331,39 +331,39 @@ children:
 
 - title: '教程'
   url: /doc/zh/lb4/Tutorials.html
-  translated: false
+  translated: true
   output: 'web, pdf'
   children:
 
   - title: 'Todo教程'
     url: /doc/zh/lb4/todo-tutorial.html
-    translated: false
+    translated: true
     output: 'web, pdf'
     children:
 
     - title: '创建你的应用脚手架'
       url: /doc/zh/lb4/todo-tutorial-scaffolding.html
-      translated: false
+      translated: true
       output: 'web, pdf'
 
     - title: '添加Todo模型'
       url: /doc/zh/lb4/todo-tutorial-model.html
-      translated: false
+      translated: true
       output: 'web, pdf'
 
     - title: '添加一个数据源（Datasource）'
       url: /doc/zh/lb4/todo-tutorial-datasource.html
-      translated: false
+      translated: true
       output: 'web, pdf'
 
     - title: '添加一个存储库（Repository）'
       url: /doc/zh/lb4/todo-tutorial-repository.html
-      translated: false
+      translated: true
       output: 'web, pdf'
 
     - title: '添加一个控制器（Controller）'
       url: /doc/zh/lb4/todo-tutorial-controller.html
-      translated: false
+      translated: true
       output: 'web, pdf'
 
     - title: '把它们放在一起'
