@@ -31,10 +31,13 @@ For example, here is an excerpt from a model JSON file for a assembly model, exp
   "relations": {
     "parts": {
       "type": "hasAndBelongsToMany",
-      "model": "Part"
+      "model": "Part",
+      "throughTable": "AssemblyPart",
     },
 ...
 ```
+
+If needed, you can use the “throughTable” field to define a custom table name for the relation.
 
 You can also define a hasAndBelongsToMany relation in code, though this is not recommended in general. For example:
 
