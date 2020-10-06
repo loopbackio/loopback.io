@@ -27,7 +27,16 @@
   
     "separateMajorMinor": true,
     "separateMinorPatch": false,
-  
+    "packageRules": [
+      {
+        "updateTypes": ["minor", "patch"],
+        "automerge": true
+      },
+      {
+        "depTypeList": ["devDependencies"],
+        "automerge": true
+      }
+    ],
     "travis": {
       "enabled": true,
       "supportPolicy": ["lts", "current"]
