@@ -45,7 +45,7 @@ const config = {
 
 <details><summary markdown="span"><strong>For LoopBack 3 users</strong></summary>
 
-Use the [Data source generator](http://loopback.io/doc/en/lb3/Data-source-generator.html) to add a PostgreSQL data source to your application.  
+Use the [Data source generator](http://loopback.io/doc/en/lb3/Data-source-generator.html) to add a PostgreSQL data source to your application.
 The generator will prompt for the database server hostname, port, and other settings
 required to connect to a PostgreSQL database. It will also run the `npm install` command above for you.
 
@@ -96,7 +96,7 @@ const config = {
 
 Check out [node-pg-pool](https://github.com/brianc/node-pg-pool) and [node postgres pooling example](https://github.com/brianc/node-postgres#pooling-example) for more information.
 
-### Properties
+### Configuration options
 
 <table>
   <thead>
@@ -106,7 +106,7 @@ Check out [node-pg-pool](https://github.com/brianc/node-pg-pool) and [node postg
       <th>Description</th>
     </tr>
   </thead>
-    <tbody>    
+    <tbody>
     <tr>
       <td>connector</td>
       <td>String</td>
@@ -175,6 +175,14 @@ Check out [node-pg-pool](https://github.com/brianc/node-pg-pool) and [node postg
       <td>defaultIdSort</td>
       <td>Boolean/String</td>
       <td>Set to <code>false</code> to disable default sorting on <code>id</code> column(s). Set to <code>numericIdOnly</code> to only apply to IDs with a number type <code>id</code>.</td>
+    </tr>
+    <tr>
+      <td>allowExtendedOperators</td>
+      <td>Boolean</td>
+      <td>Set to <code>true</code> to enable PostgreSQL-specific operators
+          such as <code>contains</code>. Learn more in
+          <a href="#extended-operators">Extended operators</a> below.
+      </td>
     </tr>
   </tbody>
 </table>
@@ -272,7 +280,7 @@ The model definition consists of the following properties.
       <th>Description</th>
     </tr>
   </thead>
-  <tbody>    
+  <tbody>
     <tr>
       <td>name</td>
       <td>Camel-case of the database table name</td>
@@ -413,6 +421,12 @@ details on LoopBack's data types.
         Default length is 1024
       </td>
     </tr>
+     <tr>
+      <td>String[]</td>
+      <td>
+        VARCHAR2[]
+      </td>
+    </tr>
     <tr>
       <td>Number</td>
       <td>INTEGER</td>
@@ -531,14 +545,65 @@ CustomerRepository.find({
 });
 ```
 
+## Extended operators
+
+PostgreSQL supports the following PostgreSQL-specific operators:
+
+- [`contains`](#operator-contains)
+
+Please note extended operators are disabled by default, you must enable
+them at datasource level or model level by setting `allowExtendedOperators` to
+`true`.
+
+### Operator `contains`
+
+The `contains` operator allow you to query array properties and pick only
+rows where the stored value contains all of the items specified by the query.
+
+The operator is implemented using PostgreSQL [array operator
+`@>`](https://www.postgresql.org/docs/current/functions-array.html).
+
+**Note** The fields you are querying must be setup to use the postgresql array data type - see [Defining models](#defining-models) above.
+
+Assuming a model such as this:
+
+```ts
+@model({
+  settings: {
+    allowExtendedOperators: true,
+  }
+})
+class Post {
+  @property({
+    type: ['string'],
+    postgresql: {
+      dataType: 'varchar[]',
+    },
+  })
+  categories?: string[];
+}
+```
+
+You can query the tags fields as follows:
+
+```ts
+const posts = await postRepository.find({
+  where: {
+    {
+      categories: {'contains': ['AA']},
+    }
+  }
+});
+```
+
 ## Discovery and auto-migration
 
 ### Model discovery
 
 The PostgreSQL connector supports _model discovery_ that enables you to create LoopBack models
 based on an existing database schema. Once you defined your datasource:
--  LoopBack 4 users could use the commend [`lb4 discover`](https://loopback.io/doc/en/lb4/Discovering-models.html) to discover models. 
-- For LB3 users, please check [Discovering models from relational databases](https://loopback.io/doc/en/lb3/Discovering-models-from-relational-databases.html). 
+-  LoopBack 4 users could use the commend [`lb4 discover`](https://loopback.io/doc/en/lb4/Discovering-models.html) to discover models.
+- For LB3 users, please check [Discovering models from relational databases](https://loopback.io/doc/en/lb3/Discovering-models-from-relational-databases.html).
 
 (See [database discovery API](http://apidocs.strongloop.com/loopback-datasource-juggler/#datasource-prototype-discoverandbuildmodels) for related APIs information)
 
@@ -612,7 +677,7 @@ Here are some limitations and tips:
 
 ### Auto-migrate/Auto-update models with foreign keys
 
-Foreign key constraints can be defined in the model definition. 
+Foreign key constraints can be defined in the model definition.
 
 **Note**: The order of table creation is important. A referenced table must exist before creating a foreign key constraint.
 
