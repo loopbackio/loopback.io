@@ -56,9 +56,14 @@ $(function() {
 function setupSidebarTreeNav(){
 
     //hide all non-active nav-lists:
-    $('.nav-list').not('#mysidebar').each(function(i, list){
-      if(!$(list).parent().is('.active')){
-        $(list).hide();
+    $('.nav-list').not('#mysidebar').each(function (i, list) {
+      if (!$(list).parent().is('.active')) {
+        //add expanded class for the items marked as expand be default
+        if ($(list).parent().is('.tree-parent-expand')) {
+          $(list).parent().addClass('expanded');
+        } else {
+          $(list).hide();
+        }
       }
     });
 
@@ -66,10 +71,13 @@ function setupSidebarTreeNav(){
     $("li.active").parentsUntil('#mysidebar', '.tree-parent')
       .addClass('expanded')
       .children('ul.nav-list').show();
-
+    $("li.active").parentsUntil('#mysidebar', '.tree-parent-expand')
+      .addClass('expanded')
+      .children('ul.nav-list').show();
 
     //add expanded class to active tree parents
     $('.tree-parent.active').addClass('expanded');
+    $('.tree-parent-expand.active').addClass('expanded');
 
     $('a.show-hide').click(toggleSectionChildren);
     $('a.section-name').click(toggleSectionChildren);

@@ -1,8 +1,8 @@
 {% assign pageurl = page.url | split: "/" %}
 {% for item in include.menuitems %}
-  {% comment %} Is this supposed to be ouput on the `web`site?{% endcomment %}
+  {% comment %} Is this supposed to be output on the `web`site?{% endcomment %}
   {% if item.output contains "web" %}
-  <li class="{% if item.children.size > 0 %} tree-parent {%else%} leaf-node {% endif %} {% if pageurl.last == item.url %}active{% endif %}">
+  <li class="{% if item.children.size > 0 %} {% if item.expand == 'true' %} tree-parent-expand {%else%} tree-parent {% endif %} {%else%} leaf-node {% endif %} {% if pageurl.last == item.url %}active{% endif %}">
     {% if item.children.size > 0 %} <a class="show-hide" href="#"></span> {% endif %}
     {% if item.url %}
       <a class="page-link" href="{{item.url}}">{{ item.title }}</a>
