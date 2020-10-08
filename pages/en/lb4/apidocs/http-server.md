@@ -39,6 +39,7 @@ A package used by LoopBack 4 for creating HTTP / HTTPS server.
 |  --- | --- |
 |  [HttpProtocol](./http-server.httpprotocol.md) | Supported protocols |
 |  [HttpServerOptions](./http-server.httpserveroptions.md) | Possible server options |
+|  [HttpServerProperties](./http-server.httpserverproperties.md) | The following are for configuring properties which are directly set on https://nodejs.org/api/http.html\#http\_class\_http\_server and https://nodejs.org/api/net.html\#net\_class\_net\_server |
 |  [RequestListener](./http-server.requestlistener.md) | Request listener function for http/https requests |
 
 

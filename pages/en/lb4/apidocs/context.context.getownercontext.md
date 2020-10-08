@@ -13,19 +13,19 @@ permalink: /doc/en/lb4/apidocs.context.context.getownercontext.html
 
 ## Context.getOwnerContext() method
 
-Get the owning context for a binding key
+Get the owning context for a binding or its key
 
 <b>Signature:</b>
 
 ```typescript
-getOwnerContext(key: BindingAddress): Context | undefined;
+getOwnerContext(keyOrBinding: BindingAddress | Readonly<Binding<unknown>>): Context | undefined;
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  key | [BindingAddress](./context.bindingaddress.md) | Binding key |
+|  keyOrBinding | [BindingAddress](./context.bindingaddress.md) \| Readonly&lt;[Binding](./context.binding.md)<!-- -->&lt;unknown&gt;&gt; | Binding object or key |
 
 <b>Returns:</b>
 

@@ -59,7 +59,7 @@ export declare class Binding<T = BoundValue> extends EventEmitter
 |  [on(event, listener)](./context.binding.on_1.md) |  |  |
 |  [once(eventName, listener)](./context.binding.once.md) |  | The "changed" event is emitted by methods such as <code>tag</code>, <code>inScope</code>, <code>to</code>, and <code>toClass</code>. |
 |  [once(event, listener)](./context.binding.once_1.md) |  |  |
-|  [refresh(ctx)](./context.binding.refresh.md) |  | Invalidate the binding cache so that its value will be reloaded next time. This is useful to force reloading a singleton when its configuration or dependencies are changed. \*\*WARNING\*\*: The state held in the cached value will be gone. |
+|  [refresh(ctx)](./context.binding.refresh.md) |  | Invalidate the binding cache so that its value will be reloaded next time. This is useful to force reloading a cached value when its configuration or dependencies are changed. \*\*WARNING\*\*: The state held in the cached value will be gone. |
 |  [tag(tags)](./context.binding.tag.md) |  | Tag the binding with names or name/value objects. A tag has a name and an optional value. If not supplied, the tag name is used as the value. |
 |  [to(value)](./context.binding.to.md) |  | Bind the key to a constant value. The value must be already available at binding time, it is not allowed to pass a Promise instance. |
 |  [toAlias(keyWithPath)](./context.binding.toalias.md) |  | Bind the key to an alias of another binding |

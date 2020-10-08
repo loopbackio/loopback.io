@@ -196,6 +196,10 @@ children:
       url: Customizing-how-openapi-spec-is-served.html
       output: 'web, pdf'
 
+    - title: 'Customizing routes'
+      url: Customizing-routes.html
+      output: 'web, pdf'
+
     - title: 'Dynamically adding models, repositories, and controllers'
       url: Dynamic-models-repositories-controllers.html
       output: 'web, pdf'
@@ -243,8 +247,15 @@ children:
         url: GraphQL.html
         output: 'web, pdf'
 
-      - title: 'Exposing GraphQL APIs'
-        url: exposing-graphql-apis.html
+      - title: 'Using OpenAPI-to-GraphQL'
+        url: Using-openapi-to-graphql.html
+        output: 'web, pdf'
+
+  - title: 'Building frontend applications'
+    output: 'web, pdf'
+    children:
+      - title: 'Building an Angular Application from OpenAPI Specification'
+        url: Building-frontend-angular-application.html
         output: 'web, pdf'
 
   - title: 'Running cron jobs'
@@ -452,6 +463,7 @@ children:
         output: 'web, pdf'
 
   - title: 'Troubleshooting'
+    url: Troubleshooting.html
     output: 'web, pdf'
     children:
 
@@ -467,8 +479,12 @@ children:
       url: Context-explorer.html
       output: 'web, pdf'
 
+    - title: 'Debugging tests with Mocha'
+      url: Debugging-tests-with-mocha.html
+      output: 'web, pdf'
+
 - title: 'Concepts'
-  url: Behind-the-scene.html
+  url: Concepts.html
   output: 'web, pdf'
   children:
 
@@ -531,6 +547,10 @@ children:
 
       - title: 'Authentication Decorator'
         url: Decorators_authenticate.html
+        output: 'web, pdf'
+
+      - title: 'Authorization Decorators'
+        url: Decorators_authorize.html
         output: 'web, pdf'
 
       - title: 'Service Decorators'

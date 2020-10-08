@@ -186,25 +186,7 @@ permalink: /doc/en/lb4/apidocs.context.html
 |  [ContextEventType](./context.contexteventtype.md) | Context event types. We support <code>bind</code> and <code>unbind</code> for now but keep it open for new types |
 |  [ContextObserverFn](./context.contextobserverfn.md) | Listen on <code>bind</code>, <code>unbind</code>, or other events |
 |  [DynamicValueBindingSource](./context.dynamicvaluebindingsource.md) | Binding source for <code>toDynamicValue</code> |
-|  [GenericInterceptor](./context.genericinterceptor.md) | An interceptor function to be invoked in a chain for the given context. It serves as the base interface for various types of interceptors, such as method invocation interceptor or request/response processing interceptor.<!-- -->We choose <code>NonVoid</code> as the return type to avoid possible bugs that an interceptor forgets to return the value from <code>next()</code>. For example, the code below will fail to compile.
-```ts
-const myInterceptor: Interceptor = async (ctx, next) {
-  // preprocessing
-  // ...
-
-  // There is a subtle bug that the result from `next()` is not further
-  // returned back to the upstream interceptors
-  const result = await next();
-
-  // postprocessing
-  // ...
-  // We must have `return ...` here
-  // either return `result` or another value if the interceptor decides to
-  // have its own response
-}
-
-```
- |
+|  [GenericInterceptor](./context.genericinterceptor.md) | An interceptor function to be invoked in a chain for the given context. It serves as the base interface for various types of interceptors, such as method invocation interceptor or request/response processing interceptor. |
 |  [GenericInterceptorOrKey](./context.genericinterceptororkey.md) | Interceptor function or a binding key that resolves a generic interceptor function |
 |  [Getter](./context.getter.md) | The function injected by <code>@inject.getter(bindingSelector)</code>. It can be used to fetch bound value(s) from the underlying binding(s). The return value will be an array if the <code>bindingSelector</code> is a <code>BindingFilter</code> function. |
 |  [InterceptorOrKey](./context.interceptororkey.md) | Interceptor function or binding key that can be used as parameters for <code>@intercept()</code> |

@@ -177,7 +177,7 @@ This module provides data access facilities to various databases and services as
 |  [ANY](./repository.any.md) |  |
 |  [BOOLEAN](./repository.boolean.md) |  |
 |  [BUFFER](./repository.buffer.md) |  |
-|  [CountSchema](./repository.countschema.md) | JSON Schema describing the Count interface. It's the response type for REST calls to APIs which return Count |
+|  [CountSchema](./repository.countschema.md) | JSON Schema describing the Count interface. It's the response type for REST calls to APIs which return <code>count</code>. The type is compatible with <code>SchemaObject</code> from <code>@loopback/openapi-v3</code>, which is not an explicit dependency for <code>@loopback/repository</code>. |
 |  [DATE](./repository.date.md) |  |
 |  [MODEL\_KEY](./repository.model_key.md) |  |
 |  [MODEL\_PROPERTIES\_KEY](./repository.model_properties_key.md) |  |

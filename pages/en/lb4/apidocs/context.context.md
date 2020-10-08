@@ -37,6 +37,7 @@ export declare class Context extends EventEmitter
 |  [configResolver](./context.context.configresolver.md) |  | [ConfigurationResolver](./context.configurationresolver.md) | Configuration resolver |
 |  [name](./context.context.name.md) |  | string | Name of the context |
 |  [registry](./context.context.registry.md) |  | Map&lt;string, [Binding](./context.binding.md)<!-- -->&gt; | Key to binding map as the internal registry |
+|  [scope](./context.context.scope.md) |  | [BindingScope](./context.bindingscope.md) | Scope for binding resolution |
 |  [subscriptionManager](./context.context.subscriptionmanager.md) |  | [ContextSubscriptionManager](./context.contextsubscriptionmanager.md) | Manager for observer subscriptions |
 |  [tagIndexer](./context.context.tagindexer.md) |  | ContextTagIndexer | Indexer for bindings by tag |
 
@@ -66,12 +67,15 @@ export declare class Context extends EventEmitter
 |  [getConfigAsValueOrPromise(key, propertyPath, resolutionOptions)](./context.context.getconfigasvalueorpromise.md) |  | Get the value or promise of configuration for a given binding by key |
 |  [getConfigSync(key, propertyPath, resolutionOptions)](./context.context.getconfigsync.md) |  | Resolve configuration synchronously for the binding by key |
 |  [getDebugNamespace()](./context.context.getdebugnamespace.md) |  | Get the debug namespace for the context class. Subclasses can override this method to supply its own namespace. |
-|  [getOwnerContext(key)](./context.context.getownercontext.md) |  | Get the owning context for a binding key |
+|  [getOwnerContext(keyOrBinding)](./context.context.getownercontext.md) |  | Get the owning context for a binding or its key |
+|  [getResolutionContext(binding)](./context.context.getresolutioncontext.md) |  | Locate the resolution context for the given binding. Only bindings in the resolution context and its ancestors are visible as dependencies to resolve the given binding |
+|  [getScopedContext(scope)](./context.context.getscopedcontext.md) |  | Get the context matching the scope |
 |  [getSync(keyWithPath, session)](./context.context.getsync.md) |  | Get the synchronous value bound to the given key, optionally return a (deep) property of the bound value.<!-- -->This method throws an error if the bound value requires async computation (returns a promise). You should never rely on sync bindings in production code. |
 |  [getSync(keyWithPath, options)](./context.context.getsync_1.md) |  | Get the synchronous value bound to the given key, optionally return a (deep) property of the bound value.<!-- -->This method throws an error if the bound value requires async computation (returns a promise). You should never rely on sync bindings in production code. |
 |  [inspect(options)](./context.context.inspect.md) |  | Inspect the context and dump out a JSON object representing the context hierarchy |
 |  [isBound(key)](./context.context.isbound.md) |  | Check if a key is bound in the context or its ancestors |
 |  [isSubscribed(observer)](./context.context.issubscribed.md) |  | Check if an observer is subscribed to this context |
+|  [isVisibleTo(ctx)](./context.context.isvisibleto.md) |  | Check if this context is visible (same or ancestor) to the given one |
 |  [on(eventName, listener)](./context.context.on.md) |  | The "bind" event is emitted when a new binding is added to the context. The "unbind" event is emitted when an existing binding is removed. |
 |  [on(event, listener)](./context.context.on_1.md) |  |  |
 |  [once(eventName, listener)](./context.context.once.md) |  | The "bind" event is emitted when a new binding is added to the context. The "unbind" event is emitted when an existing binding is removed. |

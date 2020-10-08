@@ -18,9 +18,9 @@ Base options that are common to http and https servers
 <b>Signature:</b>
 
 ```typescript
-export interface BaseHttpOptions extends ListenOptions 
+export interface BaseHttpOptions extends ListenOptions, Partial<HttpServerProperties> 
 ```
-<b>Extends:</b> ListenOptions
+<b>Extends:</b> ListenOptions, Partial&lt;[HttpServerProperties](./http-server.httpserverproperties.md)<!-- -->&gt;
 
 ## Properties
 

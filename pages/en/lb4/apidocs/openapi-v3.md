@@ -27,6 +27,12 @@ Functions for more artifacts will be added when needed.
 |  --- | --- |
 |  [OASEnhancerService](./openapi-v3.oasenhancerservice.md) | An extension point for OpenAPI Spec enhancement This service is used for enhancing an OpenAPI spec by loading and applying one or more registered enhancers.<!-- -->A typical use of it would be generating the OpenAPI spec for the endpoints on a server in the <code>@loopback/rest</code> module. |
 
+## Enumerations
+
+|  Enumeration | Description |
+|  --- | --- |
+|  [OperationVisibility](./openapi-v3.operationvisibility.md) |  |
+
 ## Functions
 
 |  Function | Description |
@@ -50,6 +56,7 @@ Functions for more artifacts will be added when needed.
 |  [post(path, spec)](./openapi-v3.post.md) | Expose a Controller method as a REST API operation mapped to <code>POST</code> request method. |
 |  [put(path, spec)](./openapi-v3.put.md) | Expose a Controller method as a REST API operation mapped to <code>PUT</code> request method. |
 |  [requestBody(requestBodySpec)](./openapi-v3.requestbody.md) | Describe the request body of a Controller method parameter.<!-- -->A typical OpenAPI requestBody spec contains property: - <code>description</code> - <code>required</code> - <code>content</code>. |
+|  [visibility(visibilityType)](./openapi-v3.visibility.md) | Marks an api path with the specfied visibility. When applied to a class, this decorator marks all paths with the specified visibility.<!-- -->You can optionally mark all controllers in a class with <code>@visibility('undocumented')</code>, but use <code>@visibility('documented')</code> on a specific method to ensure it is not marked as <code>undocumented</code>. |
 
 ## Interfaces
 

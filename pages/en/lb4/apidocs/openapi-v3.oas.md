@@ -29,6 +29,7 @@ oas: {
     deprecated: typeof deprecated;
     response: typeof response;
     tags: typeof tags;
+    visibility: typeof visibility;
 }
 ```
 
