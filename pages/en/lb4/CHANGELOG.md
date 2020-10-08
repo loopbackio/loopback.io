@@ -58,6 +58,7 @@ permalink: /doc/en/lb4/changelog.index.html
 ### examples
 
 - [@loopback/example-access-control-migration](changelogs/examples/access-control-migration/CHANGELOG.md)
+- [@loopback/example-binding-resolution](changelogs/examples/binding-resolution/CHANGELOG.md)
 - [@loopback/example-context](changelogs/examples/context/CHANGELOG.md)
 - [@loopback/example-express-composition](changelogs/examples/express-composition/CHANGELOG.md)
 - [@loopback/example-file-transfer](changelogs/examples/file-transfer/CHANGELOG.md)
@@ -77,6 +78,7 @@ permalink: /doc/en/lb4/changelog.index.html
 - [@loopback/example-todo-jwt](changelogs/examples/todo-jwt/CHANGELOG.md)
 - [@loopback/example-todo-list](changelogs/examples/todo-list/CHANGELOG.md)
 - [@loopback/example-validation-app](changelogs/examples/validation-app/CHANGELOG.md)
+- [@loopback/example-webpack](changelogs/examples/webpack/CHANGELOG.md)
 
 ### bodyparsers
 
