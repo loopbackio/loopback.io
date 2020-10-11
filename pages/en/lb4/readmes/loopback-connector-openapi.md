@@ -170,6 +170,32 @@ var ds = loopback.createDataSource('swagger', {
 });
 ```
 
+### Customize http/https client
+
+The datasource configuration can override the `httpClient` or `httpClientOptions`:
+
+```js
+{
+  httpClientOptions: {
+  // See https://www.npmjs.com/package/node-fetch#options
+  agent: (url) => {
+    return url.protocol === 'http:'
+      ? new http.Agent({ timeout: 3000 })
+      : new https.Agent({ rejectUnauthorized: false });
+    },
+  },
+}
+```
+
+To provide your own http client per
+https://github.com/swagger-api/swagger-js/blob/HEAD/docs/usage/http-client.md:
+
+```js
+{
+  httpClient: (request) => SwaggerClient.http(request),
+}
+```
+
 ### Authentication
 
 #### Basic authentication
