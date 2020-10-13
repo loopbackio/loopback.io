@@ -86,7 +86,7 @@ schema         | String  | Specifies the default schema name that is used to qua
 Alternatively, you can create and configure the data source in JavaScript code.
 For example:
 
-```JavaScript
+```javascript
 var DataSource = require('loopback-datasource-juggler').DataSource;
 var DB2 = require('loopback-connector-ibmi');
 
