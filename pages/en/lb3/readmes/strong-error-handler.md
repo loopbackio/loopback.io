@@ -14,11 +14,15 @@ In debug mode, `strong-error-handler` returns full error stack traces and intern
 
 ## Supported versions
 
-| Current | Long Term Support | Maintenance |
-| :-----: | :---------------: | :---------: |
-|   4.x   |        3.x        |     2.x     |
+This module adopts the [Module Long Term Support (LTS)](http://github.com/CloudNativeJS/ModuleLTS) policy, with the following End Of Life (EOL) dates:
 
-Learn more about our LTS plan in [docs](http://loopback.io/doc/en/contrib/Long-term-support.html).
+| Version    | Status          | Published | EOL                  |
+| ---------- | --------------- | --------- | -------------------- |
+| 4.x        | Current         | Oct 2020  | Apr 2023 _(minimum)_ |
+| 3.x        | Active LTS      | Jun 2018  | Dec 2022             |
+| 2.x        | End-of-life     | Mar 2017  | Oct 2020             |
+
+Learn more about our LTS plan in the [LoopBack documentation](http://loopback.io/doc/en/contrib/Long-term-support.html).
 
 ## Installation
 
