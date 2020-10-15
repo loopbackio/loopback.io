@@ -116,6 +116,17 @@ element: {myHeader: 'XYZ'}, // The XML element in JSON object format
 }]</code></pre>
 </td>       
 </tr>
+<tr>
+<td>httpHeaders</td>
+<td>Object</td>
+<td>Custom HTTP headers. An object of header properties.
+ For example:
+<pre><code>httpHeaders: {
+  "custom-header": "value of custom-header",
+  "custom-header-2": "value of custom-header-2"
+}</code></pre>
+</td>       
+</tr>
 </tbody>
 </table>
 
