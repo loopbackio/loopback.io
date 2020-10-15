@@ -767,6 +767,10 @@ ul#mysidebar, #mysidebar ul{
   display:block;
 }
 
+.tree-parent-expand.expanded .nav-list{
+  display:block;
+}
+
 #mysidebar li.active a.show-hide,
 #mysidebar a.show-hide:hover,
 #mysidebar a.show-hide:active{
