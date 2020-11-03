@@ -6,6 +6,10 @@ children:
     url: How-to-add-a-project.html
     output: 'web'
 
+  - title: 'LoopBack 4 community extensions'
+    url: /doc/en/lb4/Community-extensions.html
+    output: 'web'
+
   - title: 'Elasticsearch connector'
     url: Elasticsearch-connector.html
     output: 'web'
