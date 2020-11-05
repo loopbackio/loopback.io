@@ -16,27 +16,13 @@ permalink: /doc/en/lb4/apidocs.rest.invokemethodprovider.html
 <b>Signature:</b>
 
 ```typescript
-export declare class InvokeMethodProvider implements Provider<InvokeMethod> 
+export declare class InvokeMethodProvider 
 ```
-<b>Implements:</b> [Provider](./context.provider.md)<!-- -->&lt;[InvokeMethod](./rest.invokemethod.md)<!-- -->&gt;
-
-## Constructors
-
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(context)](./rest.invokemethodprovider._constructor_.md) |  | Constructs a new instance of the <code>InvokeMethodProvider</code> class |
-
-## Properties
-
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [context](./rest.invokemethodprovider.context.md) |  | [Context](./context.context.md) |  |
 
 ## Methods
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [action(route, args)](./rest.invokemethodprovider.action.md) |  |  |
-|  [value()](./rest.invokemethodprovider.value.md) |  |  |
+|  [value(context)](./rest.invokemethodprovider.value.md) | <code>static</code> |  |
 
 

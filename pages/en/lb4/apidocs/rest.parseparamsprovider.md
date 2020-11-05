@@ -18,20 +18,13 @@ Provides the function for parsing args in requests at runtime.
 <b>Signature:</b>
 
 ```typescript
-export declare class ParseParamsProvider implements Provider<ParseParams> 
+export declare class ParseParamsProvider 
 ```
-<b>Implements:</b> [Provider](./context.provider.md)<!-- -->&lt;[ParseParams](./rest.parseparams.md)<!-- -->&gt;
-
-## Constructors
-
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(requestBodyParser, validationOptions, ajvFactory)](./rest.parseparamsprovider._constructor_.md) |  | Constructs a new instance of the <code>ParseParamsProvider</code> class |
 
 ## Methods
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [value()](./rest.parseparamsprovider.value.md) |  |  |
+|  [value(requestBodyParser, validationOptions, ajvFactory)](./rest.parseparamsprovider.value.md) | <code>static</code> |  |
 
 

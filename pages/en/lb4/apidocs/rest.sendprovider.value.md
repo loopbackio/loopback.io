@@ -16,7 +16,7 @@ permalink: /doc/en/lb4/apidocs.rest.sendprovider.value.html
 <b>Signature:</b>
 
 ```typescript
-value(): typeof writeResultToResponse;
+static value(): typeof writeResultToResponse;
 ```
 <b>Returns:</b>
 

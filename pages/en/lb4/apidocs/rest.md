@@ -80,10 +80,10 @@ A REST server for LoopBack 4 application instances, complete with:
 |  [invokeBodyParserMiddleware(handle, request)](./rest.invokebodyparsermiddleware.md) | Parse the request body asynchronously |
 |  [joinPath(basePath, path)](./rest.joinpath.md) |  |
 |  [normalizeParsingError(err)](./rest.normalizeparsingerror.md) | Normalize parsing errors as <code>4xx</code> |
-|  [parseJson(text, reviver)](./rest.parsejson.md) |  |
+|  [parseJson(text, reviver, prohibitedKeys)](./rest.parsejson.md) | Parse a json string that rejects prohibited keys |
 |  [parseOperationArgs(request, route, requestBodyParser, options)](./rest.parseoperationargs.md) | Parses the request to derive arguments to be passed in for the Application controller method |
 |  [rebaseOpenApiSpec(spec, basePath)](./rest.rebaseopenapispec.md) |  |
-|  [sanitizeJsonParse(reviver)](./rest.sanitizejsonparse.md) | Factory to create a reviver function for <code>JSON.parse</code> to sanitize keys |
+|  [sanitizeJsonParse(reviver, prohibitedKeys)](./rest.sanitizejsonparse.md) | Factory to create a reviver function for <code>JSON.parse</code> to sanitize keys |
 |  [toExpressPath(path)](./rest.toexpresspath.md) | Convert an OpenAPI path to Express (path-to-regexp) style |
 |  [validateApiPath(path)](./rest.validateapipath.md) | Validate the path to be compatible with OpenAPI path template. No parameter modifier, custom pattern, or unnamed parameter is allowed. |
 |  [validateRequestBody(body, requestBodySpec, globalSchemas, options)](./rest.validaterequestbody.md) | Check whether the request body is valid according to the provided OpenAPI schema. The JSON schema is generated from the OpenAPI schema which is typically defined by <code>@requestBody()</code>. The validation leverages AJV schema validator. |

@@ -18,7 +18,7 @@ Constructs a new instance of the `MetricsComponent` class
 <b>Signature:</b>
 
 ```typescript
-constructor(application: Application, options?: MetricsOptions);
+constructor(application: Application, metricsConfig?: MetricsConfig);
 ```
 
 ## Parameters
@@ -26,6 +26,6 @@ constructor(application: Application, options?: MetricsOptions);
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  application | [Application](./core.application.md) |  |
-|  options | [MetricsOptions](./metrics.metricsoptions.md) |  |
+|  metricsConfig | [MetricsConfig](./metrics.metricsconfig.md) |  |
 
 

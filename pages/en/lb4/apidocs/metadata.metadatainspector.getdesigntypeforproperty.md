@@ -32,6 +32,6 @@ static getDesignTypeForProperty(target: Object, propertyName: string): Function 
 
 Function \| undefined
 
-Design time metadata. The return value is `undefined` when: - The property has type `undefined`<!-- -->, `null` or a complex type like `Partial<MyModel>`<!-- -->, `string | number`<!-- -->, `string[]`<!-- -->. - The TypeScript project has not enabled the compiler option `emitDecoratorMetadata`<!-- -->. - The code is written in vanilla JavaScript.
+Design time metadata. The return value is `undefined` when: - The property has type `undefined`<!-- -->, `null` - The TypeScript project has not enabled the compiler option `emitDecoratorMetadata`<!-- -->. - The code is written in vanilla JavaScript.
 
 

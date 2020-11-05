@@ -41,6 +41,7 @@ export declare class LifeCycleObserverRegistry implements LifeCycleObserver
 |  --- | --- | --- |
 |  [getObserverGroup(binding)](./core.lifecycleobserverregistry.getobservergroup.md) |  | Get the group for a given life cycle observer binding |
 |  [getObserverGroupsByOrder()](./core.lifecycleobserverregistry.getobservergroupsbyorder.md) |  | Get observer groups ordered by the group |
+|  [init()](./core.lifecycleobserverregistry.init.md) |  | Notify all life cycle observers by group of <code>init</code> |
 |  [invokeObserver(observer, event)](./core.lifecycleobserverregistry.invokeobserver.md) |  | Invoke an observer for the given event |
 |  [notifyGroups(events, groups, reverse)](./core.lifecycleobserverregistry.notifygroups.md) |  | Emit events to the observer groups |
 |  [notifyObservers(observers, bindings, event)](./core.lifecycleobserverregistry.notifyobservers.md) |  | Notify an observer group of the given event |

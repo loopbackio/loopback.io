@@ -16,7 +16,7 @@ permalink: /doc/en/lb4/apidocs.express.invokemiddlewareprovider.action.html
 <b>Signature:</b>
 
 ```typescript
-action(middlewareCtx: MiddlewareContext, optionsOrHandlers?: InvokeMiddlewareOptions | ExpressRequestHandler[]): Promise<any>;
+static action(middlewareCtx: MiddlewareContext, optionsOrHandlers?: InvokeMiddlewareOptions | ExpressRequestHandler[]): Promise<any>;
 ```
 
 ## Parameters

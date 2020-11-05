@@ -25,6 +25,7 @@ export interface PropertyDefinition
 
 |  Property | Type | Description |
 |  --- | --- | --- |
+|  [hidden](./repository.propertydefinition.hidden.md) | boolean | Used to hide this property from the response body, adding this property to the hiddenProperties array |
 |  [id](./repository.propertydefinition.id.md) | boolean \| number |  |
 |  [itemType](./repository.propertydefinition.itemtype.md) | [PropertyType](./repository.propertytype.md) |  |
 |  [json](./repository.propertydefinition.json.md) | [PropertyForm](./repository.propertyform.md) |  |

@@ -18,14 +18,13 @@ Provides the function that populates the response object with the results of the
 <b>Signature:</b>
 
 ```typescript
-export declare class SendProvider implements Provider<Send> 
+export declare class SendProvider 
 ```
-<b>Implements:</b> [Provider](./context.provider.md)<!-- -->&lt;[Send](./rest.send.md)<!-- -->&gt;
 
 ## Methods
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [value()](./rest.sendprovider.value.md) |  |  |
+|  [value()](./rest.sendprovider.value.md) | <code>static</code> |  |
 
 

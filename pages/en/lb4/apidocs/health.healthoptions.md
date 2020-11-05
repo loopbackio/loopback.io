@@ -23,6 +23,7 @@ export declare type HealthOptions = {
     healthPath: string;
     readyPath: string;
     livePath: string;
+    openApiSpec?: boolean;
 };
 ```
 

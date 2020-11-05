@@ -15,6 +15,8 @@ permalink: /doc/en/lb4/apidocs.core.application.start.html
 
 Start the application, and all of its registered observers. The application state is checked to ensure the integrity of `start`<!-- -->.
 
+If the application is not initialized, it calls first `init()` to initialize the application. This only happens if `start()` is called for the first time.
+
 If the application is already started, no operation is performed.
 
 <b>Signature:</b>

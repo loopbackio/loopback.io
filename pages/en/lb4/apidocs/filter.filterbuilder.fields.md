@@ -18,14 +18,14 @@ Describe what fields to be included/excluded
 <b>Signature:</b>
 
 ```typescript
-fields(...f: (Fields<MT> | (keyof MT)[] | keyof MT)[]): this;
+fields(...f: (Fields<MT> | Extract<keyof MT, string>)[]): this;
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  f | ([Fields](./filter.fields.md)<!-- -->&lt;MT&gt; \| (keyof MT)\[\] \| keyof MT)\[\] | A field name to be included, an array of field names to be included, or an Fields object for the inclusion/exclusion |
+|  f | ([Fields](./filter.fields.md)<!-- -->&lt;MT&gt; \| Extract&lt;keyof MT, string&gt;)\[\] | A field name to be included, an array of field names to be included, or an Fields object for the inclusion/exclusion |
 
 <b>Returns:</b>
 

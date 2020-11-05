@@ -53,7 +53,7 @@ For examples of how to leverage `@loopback/core` to build composable and extensi
 |  [ApplicationMetadata](./core.applicationmetadata.md) | Type description for <code>package.json</code> |
 |  [ClassMap](./core.classmap.md) | A map of classes to be bound to a context |
 |  [Component](./core.component.md) | A component declares a set of artifacts so that they can be contributed to an application as a group |
-|  [LifeCycleObserver](./core.lifecycleobserver.md) | Observers to handle life cycle start/stop events |
+|  [LifeCycleObserver](./core.lifecycleobserver.md) | Observers to handle life cycle init/start/stop events |
 |  [ProviderMap](./core.providermap.md) | A map of provider classes to be bound to a context |
 |  [Server](./core.server.md) | Defines the requirements to implement a Server for LoopBack applications: start() : Promise<void> stop() : Promise<void> It is recommended that each Server implementation creates its own child Context, which inherits from the parent Application context. This way, any Server-specific bindings will remain local to the Server instance, and will avoid polluting its parent module scope. |
 |  [ServiceOptions](./core.serviceoptions.md) | Options to register a service binding |

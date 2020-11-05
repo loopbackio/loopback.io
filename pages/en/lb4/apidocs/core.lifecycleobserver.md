@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.core.lifecycleobserver.html
 
 ## LifeCycleObserver interface
 
-Observers to handle life cycle start/stop events
+Observers to handle life cycle init/start/stop events
 
 <b>Signature:</b>
 
@@ -25,6 +25,7 @@ export interface LifeCycleObserver
 
 |  Method | Description |
 |  --- | --- |
+|  [init()](./core.lifecycleobserver.init.md) | The method to be invoked during <code>init</code>. It will only be called at most once for a given application instance. |
 |  [start()](./core.lifecycleobserver.start.md) | The method to be invoked during <code>start</code> |
 |  [stop()](./core.lifecycleobserver.stop.md) | The method to be invoked during <code>stop</code> |
 

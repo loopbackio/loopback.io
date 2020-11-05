@@ -16,28 +16,13 @@ permalink: /doc/en/lb4/apidocs.rest.rejectprovider.html
 <b>Signature:</b>
 
 ```typescript
-export declare class RejectProvider implements Provider<Reject> 
+export declare class RejectProvider 
 ```
-<b>Implements:</b> [Provider](./context.provider.md)<!-- -->&lt;[Reject](./rest.reject.md)<!-- -->&gt;
-
-## Constructors
-
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(logError, errorWriterOptions)](./rest.rejectprovider._constructor_.md) |  | Constructs a new instance of the <code>RejectProvider</code> class |
-
-## Properties
-
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [errorWriterOptions](./rest.rejectprovider.errorwriteroptions.md) |  | ErrorWriterOptions \| undefined |  |
-|  [logError](./rest.rejectprovider.logerror.md) |  | [LogError](./rest.logerror.md) |  |
 
 ## Methods
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [action({ request, response }, error)](./rest.rejectprovider.action.md) |  |  |
-|  [value()](./rest.rejectprovider.value.md) |  |  |
+|  [value(logError, errorWriterOptions)](./rest.rejectprovider.value.md) | <code>static</code> |  |
 
 

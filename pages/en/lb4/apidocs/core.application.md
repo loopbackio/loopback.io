@@ -48,8 +48,10 @@ export declare class Application extends Context implements LifeCycleObserver
 |  [component(componentCtor, nameOrOptions)](./core.application.component.md) |  | Add a component to this application and register extensions such as controllers, providers, and servers from the component. |
 |  [controller(controllerCtor, nameOrOptions)](./core.application.controller.md) |  | Register a controller class with this application. |
 |  [getServer(target)](./core.application.getserver.md) |  | Retrieve the singleton instance for a bound server. |
+|  [init()](./core.application.init.md) |  | Initialize the application, and all of its registered observers. The application state is checked to ensure the integrity of <code>initialize</code>.<!-- -->If the application is already initialized, no operation is performed.<!-- -->This method is automatically invoked by <code>start()</code> if the application is not initialized. |
 |  [interceptor(interceptor, nameOrOptions)](./core.application.interceptor.md) |  | Register an interceptor |
 |  [lifeCycleObserver(ctor, nameOrOptions)](./core.application.lifecycleobserver.md) |  | Register a life cycle observer class |
+|  [onInit(fn)](./core.application.oninit.md) |  | Register a function to be called when the application initializes.<!-- -->This is a shortcut for adding a binding for a LifeCycleObserver implementing a <code>init()</code> method. |
 |  [onStart(fn)](./core.application.onstart.md) |  | Register a function to be called when the application starts.<!-- -->This is a shortcut for adding a binding for a LifeCycleObserver implementing a <code>start()</code> method. |
 |  [onStop(fn)](./core.application.onstop.md) |  | Register a function to be called when the application starts.<!-- -->This is a shortcut for adding a binding for a LifeCycleObserver implementing a <code>start()</code> method. |
 |  [server(ctor, nameOrOptions)](./core.application.server.md) |  | Bind a Server constructor to the Application's master context. Each server constructor added in this way must provide a unique prefix to prevent binding overlap. |
@@ -58,7 +60,7 @@ export declare class Application extends Context implements LifeCycleObserver
 |  [setMetadata(metadata)](./core.application.setmetadata.md) |  | Set application metadata. <code>@loopback/boot</code> calls this method to populate the metadata from <code>package.json</code>. |
 |  [setState(state)](./core.application.setstate.md) |  | Transition the application to a new state and emit an event |
 |  [setupShutdown()](./core.application.setupshutdown.md) |  | Set up signals that are captured to shutdown the application |
-|  [start()](./core.application.start.md) |  | Start the application, and all of its registered observers. The application state is checked to ensure the integrity of <code>start</code>.<!-- -->If the application is already started, no operation is performed. |
+|  [start()](./core.application.start.md) |  | Start the application, and all of its registered observers. The application state is checked to ensure the integrity of <code>start</code>.<!-- -->If the application is not initialized, it calls first <code>init()</code> to initialize the application. This only happens if <code>start()</code> is called for the first time.<!-- -->If the application is already started, no operation is performed. |
 |  [stop()](./core.application.stop.md) |  | Stop the application instance and all of its registered observers. The application state is checked to ensure the integrity of <code>stop</code>.<!-- -->If the application is already stopped or not started, no operation is performed. |
 
 

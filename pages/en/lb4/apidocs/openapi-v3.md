@@ -56,6 +56,8 @@ Functions for more artifacts will be added when needed.
 |  [post(path, spec)](./openapi-v3.post.md) | Expose a Controller method as a REST API operation mapped to <code>POST</code> request method. |
 |  [put(path, spec)](./openapi-v3.put.md) | Expose a Controller method as a REST API operation mapped to <code>PUT</code> request method. |
 |  [requestBody(requestBodySpec)](./openapi-v3.requestbody.md) | Describe the request body of a Controller method parameter.<!-- -->A typical OpenAPI requestBody spec contains property: - <code>description</code> - <code>required</code> - <code>content</code>. |
+|  [response(responseCode, responseModelOrSpec)](./openapi-v3.response.md) | Add response object to a path spec. |
+|  [tags(tagNames)](./openapi-v3.tags.md) | Add tags for an endpoint. When applied to a class, this decorator adds the tags to all endpoints. |
 |  [visibility(visibilityType)](./openapi-v3.visibility.md) | Marks an api path with the specfied visibility. When applied to a class, this decorator marks all paths with the specified visibility.<!-- -->You can optionally mark all controllers in a class with <code>@visibility('undocumented')</code>, but use <code>@visibility('documented')</code> on a specific method to ensure it is not marked as <code>undocumented</code>. |
 
 ## Interfaces
@@ -76,6 +78,7 @@ Functions for more artifacts will be added when needed.
 |  [OASEnhancerBindings](./openapi-v3.oasenhancerbindings.md) |  |
 |  [param](./openapi-v3.param.md) | Namespace for <code>@param.*</code> decorators |
 |  [requestBody](./openapi-v3.requestbody.md) |  |
+|  [response](./openapi-v3.response.md) |  |
 
 ## Variables
 

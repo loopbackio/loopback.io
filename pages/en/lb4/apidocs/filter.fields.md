@@ -22,6 +22,6 @@ Example: `{afieldname: true}`
 ```typescript
 export declare type Fields<MT = AnyObject> = {
     [P in keyof MT]?: boolean;
-};
+} | Extract<keyof MT, string>[];
 ```
 

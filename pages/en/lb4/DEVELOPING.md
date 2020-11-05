@@ -66,7 +66,7 @@ Contributor once your first commit is landed.
 ## Building the project
 
 Whenever you pull updates from GitHub or switch between feature branches, make
-sure to updated installed dependencies in all monorepo packages. The following
+sure to update installed dependencies in all monorepo packages. The following
 command will install npm dependencies for all packages and create symbolic links
 for intra-dependencies:
 
@@ -505,8 +505,47 @@ to generate API documentation for all our packages. This documentation is
 generated when publishing new releases to npmjs.org and it's picked up by
 https://loopback.io/doc/en/lb4/apidocs.index.html.
 
-You can preview API docs locally by running `npm run tsdocs` and open
-[apidocs/index.md](apidocs/index.md).
+### Preview the API Documentation Changes
+
+To modify the API documentation and preview the changes, you should rebuild the
+package and run `npm run tsdocs`. For example, if some API documentation changes
+have occurred in `/loopback-next/packages/core`, and you wish to preview them,
+perform the following steps:
+
+#### Step 1 - Rebuild package
+
+Run the following commands within `/loopback-next/packages/core`:
+
+```shell
+# Remove the old compiled files.
+npm run clean
+# Rebuild the package, so that the compiled dist files contain
+# the new API documentation.
+npm run build
+```
+
+#### Step 2 - npm run tsdocs
+
+Run the following commands within the root directory `/loopback-next`:
+
+```shell
+# Generate new tsdocs from the updated package dist files.
+npm run tsdocs
+```
+
+#### Step 3 - Preview the API documentation in a browser
+
+Stay in the root directory and run the following commands:
+
+```shell
+# Fetch the new API documentation into `/docs/_preview`
+npm run docs:prepare
+# Start the documentation preview server
+npm run docs:start
+```
+
+Go to http://127.0.0.1:4001 in a browser and you will see the new API
+documentation.
 
 ## Commit message guidelines
 
@@ -656,7 +695,7 @@ questions:
 
 - How can I find if my project is affected by this change?
 
-- What does this change means for my project? What is going to change?
+- What does this change mean for my project? What is going to change?
 
 - How can I migrate my project to the new major version? What steps do I need to
   make?
@@ -874,9 +913,9 @@ configuration, it's important to verify that all usage scenarios keep working.
 
 1.  Open any existing TypeScript file, e.g. `packages/src/index.ts`
 
-2.  Introduce two kinds linting problems - one that does and another that does
-    not require type information to be detected. For example, you can add the
-    following line at the end of the opened `index.ts`:
+2.  Introduce two kinds of linting problems - one that does and another that
+    does not require type information to be detected. For example, you can add
+    the following line at the end of the opened `index.ts`:
 
     ```ts
     const foo: any = 'bar';

@@ -25,7 +25,7 @@ A component that reports metrics of Node.js, the LoopBack framework, and your ap
 
 |  Interface | Description |
 |  --- | --- |
-|  [MetricsOptions](./metrics.metricsoptions.md) |  |
+|  [MetricsOptions](./metrics.metricsoptions.md) | Options for metrics component |
 
 ## Namespaces
 
@@ -38,5 +38,11 @@ A component that reports metrics of Node.js, the LoopBack framework, and your ap
 |  Variable | Description |
 |  --- | --- |
 |  [DEFAULT\_METRICS\_OPTIONS](./metrics.default_metrics_options.md) |  |
+
+## Type Aliases
+
+|  Type Alias | Description |
+|  --- | --- |
+|  [MetricsConfig](./metrics.metricsconfig.md) | Configuration for metrics component with optional properties |
 
 

@@ -16,8 +16,17 @@ permalink: /doc/en/lb4/apidocs.rest.parseparamsprovider.value.html
 <b>Signature:</b>
 
 ```typescript
-value(): ParseParams;
+static value(requestBodyParser: RequestBodyParser, validationOptions: ValidationOptions | undefined, ajvFactory: AjvFactory): ParseParams;
 ```
+
+## Parameters
+
+|  Parameter | Type | Description |
+|  --- | --- | --- |
+|  requestBodyParser | [RequestBodyParser](./rest.requestbodyparser.md) |  |
+|  validationOptions | [ValidationOptions](./rest.validationoptions.md) \| undefined |  |
+|  ajvFactory | [AjvFactory](./rest.ajvfactory.md) |  |
+
 <b>Returns:</b>
 
 [ParseParams](./rest.parseparams.md)

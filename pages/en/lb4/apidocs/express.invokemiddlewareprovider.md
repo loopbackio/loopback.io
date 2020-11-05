@@ -18,22 +18,14 @@ Extension point for middleware to be run as part of the sequence actions
 <b>Signature:</b>
 
 ```typescript
-export declare class InvokeMiddlewareProvider implements Provider<InvokeMiddleware> 
+export declare class InvokeMiddlewareProvider 
 ```
-<b>Implements:</b> [Provider](./context.provider.md)<!-- -->&lt;[InvokeMiddleware](./express.invokemiddleware.md)<!-- -->&gt;
-
-## Properties
-
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [binding](./express.invokemiddlewareprovider.binding.md) |  | [Binding](./context.binding.md)<!-- -->&lt;[InvokeMiddleware](./express.invokemiddleware.md)<!-- -->&gt; | Inject the binding so that we can access <code>extensionPoint</code> tag |
-|  [defaultOptions](./express.invokemiddlewareprovider.defaultoptions.md) |  | [InvokeMiddlewareOptions](./express.invokemiddlewareoptions.md) | Default options for invoking the middleware chain |
 
 ## Methods
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [action(middlewareCtx, optionsOrHandlers)](./express.invokemiddlewareprovider.action.md) |  |  |
-|  [value()](./express.invokemiddlewareprovider.value.md) |  |  |
+|  [action(middlewareCtx, optionsOrHandlers)](./express.invokemiddlewareprovider.action.md) | <code>static</code> |  |
+|  [value(binding, defaultOptions)](./express.invokemiddlewareprovider.value.md) | <code>static</code> |  |
 
 

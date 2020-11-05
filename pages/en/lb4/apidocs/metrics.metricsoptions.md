@@ -13,6 +13,8 @@ permalink: /doc/en/lb4/apidocs.metrics.metricsoptions.html
 
 ## MetricsOptions interface
 
+Options for metrics component
+
 <b>Signature:</b>
 
 ```typescript
@@ -25,6 +27,7 @@ export interface MetricsOptions
 |  --- | --- | --- |
 |  [defaultMetrics](./metrics.metricsoptions.defaultmetrics.md) | { disabled?: boolean; } &amp; DefaultMetricsCollectorConfiguration |  |
 |  [endpoint](./metrics.metricsoptions.endpoint.md) | { disabled?: boolean; basePath?: string; } |  |
+|  [openApiSpec](./metrics.metricsoptions.openapispec.md) | boolean |  |
 |  [pushGateway](./metrics.metricsoptions.pushgateway.md) | { disabled?: boolean; url: string; interval?: number; } |  |
 
 

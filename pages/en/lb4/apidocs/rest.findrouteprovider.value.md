@@ -16,8 +16,16 @@ permalink: /doc/en/lb4/apidocs.rest.findrouteprovider.value.html
 <b>Signature:</b>
 
 ```typescript
-value(): FindRoute;
+static value(context: Context, handler: HttpHandler): FindRoute;
 ```
+
+## Parameters
+
+|  Parameter | Type | Description |
+|  --- | --- | --- |
+|  context | [Context](./context.context.md) |  |
+|  handler | [HttpHandler](./rest.httphandler.md) |  |
+
 <b>Returns:</b>
 
 [FindRoute](./rest.findroute.md)

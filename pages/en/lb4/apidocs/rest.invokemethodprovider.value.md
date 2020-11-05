@@ -16,8 +16,15 @@ permalink: /doc/en/lb4/apidocs.rest.invokemethodprovider.value.html
 <b>Signature:</b>
 
 ```typescript
-value(): InvokeMethod;
+static value(context: Context): InvokeMethod;
 ```
+
+## Parameters
+
+|  Parameter | Type | Description |
+|  --- | --- | --- |
+|  context | [Context](./context.context.md) |  |
+
 <b>Returns:</b>
 
 [InvokeMethod](./rest.invokemethod.md)

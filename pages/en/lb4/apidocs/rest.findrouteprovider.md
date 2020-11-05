@@ -16,28 +16,13 @@ permalink: /doc/en/lb4/apidocs.rest.findrouteprovider.html
 <b>Signature:</b>
 
 ```typescript
-export declare class FindRouteProvider implements Provider<FindRoute> 
+export declare class FindRouteProvider 
 ```
-<b>Implements:</b> [Provider](./context.provider.md)<!-- -->&lt;[FindRoute](./rest.findroute.md)<!-- -->&gt;
-
-## Constructors
-
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(context, handler)](./rest.findrouteprovider._constructor_.md) |  | Constructs a new instance of the <code>FindRouteProvider</code> class |
-
-## Properties
-
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [context](./rest.findrouteprovider.context.md) |  | [Context](./context.context.md) |  |
-|  [handler](./rest.findrouteprovider.handler.md) |  | [HttpHandler](./rest.httphandler.md) |  |
 
 ## Methods
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [action(request)](./rest.findrouteprovider.action.md) |  |  |
-|  [value()](./rest.findrouteprovider.value.md) |  |  |
+|  [value(context, handler)](./rest.findrouteprovider.value.md) | <code>static</code> |  |
 
 

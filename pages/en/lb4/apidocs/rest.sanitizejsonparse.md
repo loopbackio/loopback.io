@@ -18,7 +18,7 @@ Factory to create a reviver function for `JSON.parse` to sanitize keys
 <b>Signature:</b>
 
 ```typescript
-export declare function sanitizeJsonParse(reviver?: (key: any, value: any) => any): (key: string, value: any) => any;
+export declare function sanitizeJsonParse(reviver?: (key: any, value: any) => any, prohibitedKeys?: string[]): (key: string, value: any) => any;
 ```
 
 ## Parameters
@@ -26,6 +26,7 @@ export declare function sanitizeJsonParse(reviver?: (key: any, value: any) => an
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  reviver | (key: any, value: any) =&gt; any | Reviver function |
+|  prohibitedKeys | string\[\] | An array of keys to be rejected |
 
 <b>Returns:</b>
 

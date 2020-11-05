@@ -16,7 +16,7 @@ permalink: /doc/en/lb4/apidocs.rest.logerrorprovider.value.html
 <b>Signature:</b>
 
 ```typescript
-value(): LogError;
+static value(): LogError;
 ```
 <b>Returns:</b>
 

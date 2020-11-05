@@ -51,6 +51,7 @@ permalink: /doc/en/lb4/apidocs.index.html
 |  [@loopback/rest-msgpack](./rest-msgpack.md) |  |
 |  [@loopback/security](./security.md) | Common types/interfaces for LoopBack 4 security including authentication and authorization. |
 |  [@loopback/service-proxy](./service-proxy.md) | A common set of interfaces for interacting with service oriented backends such as REST APIs, SOAP Web Services, and gRPC microservices. |
+|  [@loopback/socketio](./socketio.md) |  |
 |  [@loopback/testlab](./testlab.md) | A collection of test utilities we use to write LoopBack tests. |
 |  [@loopback/tsdocs](./tsdocs.md) | The <code>@loopback/tsdocs</code> package is an internal module to generate [tsdoc](https://github.com/Microsoft/tsdoc) based API docs for <code>@loopback/*</code> packages within [loopback-next](https://github.com/strongloop/loopback-next) monorepo managed by [Lerna](https://github.com/lerna/lerna)<!-- -->. |
 |  [@loopback/typeorm](./typeorm.md) |  |

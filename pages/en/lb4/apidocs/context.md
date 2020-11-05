@@ -52,7 +52,7 @@ permalink: /doc/en/lb4/apidocs.context.html
 |  [asResolutionOptions(optionsOrSession)](./context.asresolutionoptions.md) | Normalize ResolutionOptionsOrSession to ResolutionOptions |
 |  [assertTargetType(injection, expectedType, expectedTypeName)](./context.asserttargettype.md) | Assert the target type inspected from TypeScript for injection to be the expected type. If the types don't match, an error is thrown. |
 |  [bind(specs)](./context.bind.md) | <code>@bind</code> is now an alias to  for backward compatibility |
-|  [bindingTemplateFor(cls)](./context.bindingtemplatefor.md) | Get the binding template for a class with binding metadata |
+|  [bindingTemplateFor(cls, options)](./context.bindingtemplatefor.md) | Get the binding template for a class with binding metadata |
 |  [compareBindingsByTag(phaseTagName, orderOfPhases)](./context.comparebindingsbytag.md) | Creates a binding compare function to sort bindings by tagged phase name. |
 |  [compareByOrder(a, b, order)](./context.comparebyorder.md) | Compare two values by the predefined order |
 |  [composeInterceptors(interceptors)](./context.composeinterceptors.md) | Compose a list of interceptors as a single interceptor |

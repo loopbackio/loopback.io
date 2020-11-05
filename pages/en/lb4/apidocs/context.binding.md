@@ -65,6 +65,7 @@ export declare class Binding<T = BoundValue> extends EventEmitter
 |  [toAlias(keyWithPath)](./context.binding.toalias.md) |  | Bind the key to an alias of another binding |
 |  [toClass(ctor)](./context.binding.toclass.md) |  | Bind the key to an instance of the given class. |
 |  [toDynamicValue(factory)](./context.binding.todynamicvalue.md) |  | Bind the key to a computed (dynamic) value. |
+|  [toInjectable(ctor)](./context.binding.toinjectable.md) |  | Bind to a class optionally decorated with <code>@injectable</code>. Based on the introspection of the class, it calls <code>toClass/toProvider/toDynamicValue</code> internally. The current binding key will be preserved (not being overridden by the key inferred from the class or options).<!-- -->This is similar to [createBindingFromClass()](./context.createbindingfromclass.md) but applies to an existing binding. |
 |  [toJSON()](./context.binding.tojson.md) |  | Convert to a plain JSON object |
 |  [toProvider(providerClass)](./context.binding.toprovider.md) |  | Bind the key to a value computed by a Provider.<!-- -->\* |
 |  [unlock()](./context.binding.unlock.md) |  | Unlock the binding |

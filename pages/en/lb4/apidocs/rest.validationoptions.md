@@ -31,5 +31,6 @@ export interface ValidationOptions extends ajv.Options
 |  [ajvFactory](./rest.validationoptions.ajvfactory.md) | (options: ajv.Options) =&gt; Ajv | A factory to create Ajv instance |
 |  [ajvKeywords](./rest.validationoptions.ajvkeywords.md) | true \| string\[\] | Enable additional AJV keywords from https://github.com/epoberezkin/ajv-keywords - <code>true</code>: Add all keywords from <code>ajv-keywords</code> - <code>string[]</code>: Add an array of keywords from <code>ajv-keywords</code> |
 |  [compiledSchemaCache](./rest.validationoptions.compiledschemacache.md) | [SchemaValidatorCache](./rest.schemavalidatorcache.md) | Custom cache for compiled schemas by AJV. This setting makes it possible to skip the default cache. |
+|  [prohibitedKeys](./rest.validationoptions.prohibitedkeys.md) | string\[\] | An array of keys to be rejected, such as <code>__proto__</code>. |
 
 

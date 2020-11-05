@@ -20,18 +20,20 @@ A list of merging rules can be found in test file: https://github.com/pierreingl
 <b>Signature:</b>
 
 ```typescript
-export declare function mergeOpenAPISpec(currentSpec: Partial<OpenApiSpec>, patchSpec: Partial<OpenApiSpec>): any;
+export declare function mergeOpenAPISpec<C extends Partial<OpenApiSpec>, P extends Partial<OpenApiSpec>>(currentSpec: C, patchSpec: P): C & P;
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  currentSpec | Partial&lt;[OpenApiSpec](./openapi-v3.openapispec.md)<!-- -->&gt; | The original spec |
-|  patchSpec | Partial&lt;[OpenApiSpec](./openapi-v3.openapispec.md)<!-- -->&gt; | The patch spec to be merged into the original spec |
+|  currentSpec | C | The original spec |
+|  patchSpec | P | The patch spec to be merged into the original spec |
 
 <b>Returns:</b>
 
-any
+C &amp; P
+
+A new specification object created by merging the original ones.
 
 

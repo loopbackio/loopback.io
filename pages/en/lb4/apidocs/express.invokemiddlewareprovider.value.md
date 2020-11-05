@@ -16,8 +16,18 @@ permalink: /doc/en/lb4/apidocs.express.invokemiddlewareprovider.value.html
 <b>Signature:</b>
 
 ```typescript
-value(): InvokeMiddleware;
+static value(
+    binding: Binding<InvokeMiddleware>, 
+    defaultOptions?: InvokeMiddlewareOptions): InvokeMiddleware;
 ```
+
+## Parameters
+
+|  Parameter | Type | Description |
+|  --- | --- | --- |
+|  binding | [Binding](./context.binding.md)<!-- -->&lt;[InvokeMiddleware](./express.invokemiddleware.md)<!-- -->&gt; |  |
+|  defaultOptions | [InvokeMiddlewareOptions](./express.invokemiddlewareoptions.md) |  |
+
 <b>Returns:</b>
 
 [InvokeMiddleware](./express.invokemiddleware.md)

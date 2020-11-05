@@ -16,15 +16,13 @@ permalink: /doc/en/lb4/apidocs.rest.logerrorprovider.html
 <b>Signature:</b>
 
 ```typescript
-export declare class LogErrorProvider implements Provider<LogError> 
+export declare class LogErrorProvider 
 ```
-<b>Implements:</b> [Provider](./context.provider.md)<!-- -->&lt;[LogError](./rest.logerror.md)<!-- -->&gt;
 
 ## Methods
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [action(err, statusCode, req)](./rest.logerrorprovider.action.md) |  |  |
-|  [value()](./rest.logerrorprovider.value.md) |  |  |
+|  [value()](./rest.logerrorprovider.value.md) | <code>static</code> |  |
 
 

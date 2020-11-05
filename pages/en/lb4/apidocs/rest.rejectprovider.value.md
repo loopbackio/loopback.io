@@ -16,8 +16,16 @@ permalink: /doc/en/lb4/apidocs.rest.rejectprovider.value.html
 <b>Signature:</b>
 
 ```typescript
-value(): Reject;
+static value(logError: LogError, errorWriterOptions?: ErrorWriterOptions): Reject;
 ```
+
+## Parameters
+
+|  Parameter | Type | Description |
+|  --- | --- | --- |
+|  logError | [LogError](./rest.logerror.md) |  |
+|  errorWriterOptions | ErrorWriterOptions |  |
+
 <b>Returns:</b>
 
 [Reject](./rest.reject.md)
