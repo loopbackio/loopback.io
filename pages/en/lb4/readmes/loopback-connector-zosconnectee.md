@@ -48,6 +48,5 @@ This module adopts the [Module Long Term Support (LTS)](http://github.com/CloudN
 
  | Module Version | Release Date | Minimum EOL | EOL With | Status          |
  |----------------|--------------|-------------|----------|-----------------|
- | V2.0.0         | May 2020     | Apr 2022    | Node 12  | Current         |
+ | V2.0.0         | May 2020     | Apr 2023    | Node 14  | Current         |
  | V1.0.0         | Nov 2017     | Dec 2019    | Node 8   | End of life     |
-
