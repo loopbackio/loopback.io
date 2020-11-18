@@ -18,4 +18,6 @@ permalink: /doc/en/lb4/apidocs.core.controllerclass.html
 ```typescript
 export declare type ControllerClass<T = any> = Constructor<T>;
 ```
+<b>References:</b> [Constructor](./context.constructor.md)
+
 

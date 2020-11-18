@@ -20,4 +20,6 @@ Type alias for strongly or weakly typed objects of T
 ```typescript
 export declare type DataObject<T extends object> = T | DeepPartial<T>;
 ```
+<b>References:</b> [DeepPartial](./repository.deeppartial.md)
+
 

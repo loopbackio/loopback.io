@@ -33,7 +33,7 @@ export declare class OASEnhancerService
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [options](./openapi-v3.oasenhancerservice.options.md) |  | [OASEnhancerServiceOptions](./openapi-v3.oasenhancerserviceoptions.md) \| undefined | An extension point should be able to receive its options via dependency injection. |
+|  [options?](./openapi-v3.oasenhancerservice.options.md) |  | [OASEnhancerServiceOptions](./openapi-v3.oasenhancerserviceoptions.md) \| undefined | <i>(Optional)</i> An extension point should be able to receive its options via dependency injection. |
 |  [spec](./openapi-v3.oasenhancerservice.spec.md) |  | [OpenApiSpec](./openapi-v3.openapispec.md) | Getter for <code>_spec</code> |
 
 ## Methods

@@ -20,4 +20,6 @@ Binding tag can be a simple name or name/value pairs
 ```typescript
 export declare type BindingTag = TagMap | string;
 ```
+<b>References:</b> [TagMap](./context.tagmap.md)
+
 

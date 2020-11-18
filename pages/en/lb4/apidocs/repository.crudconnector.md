@@ -28,17 +28,17 @@ export interface CrudConnector extends Connector
 |  --- | --- |
 |  [count(modelClass, where, options)](./repository.crudconnector.count.md) | Count matching entities |
 |  [create(modelClass, entity, options)](./repository.crudconnector.create.md) | Create a new entity |
-|  [createAll(modelClass, entities, options)](./repository.crudconnector.createall.md) | Create multiple entities |
-|  [delete(modelClass, entity, options)](./repository.crudconnector.delete.md) | Delete an entity |
+|  [createAll(modelClass, entities, options)?](./repository.crudconnector.createall.md) | <i>(Optional)</i> Create multiple entities |
+|  [delete(modelClass, entity, options)?](./repository.crudconnector.delete.md) | <i>(Optional)</i> Delete an entity |
 |  [deleteAll(modelClass, where, options)](./repository.crudconnector.deleteall.md) | Delete matching entities |
-|  [deleteById(modelClass, id, options)](./repository.crudconnector.deletebyid.md) | Delete an entity by id |
-|  [exists(modelClass, id, options)](./repository.crudconnector.exists.md) | Check if an entity exists for the id |
+|  [deleteById(modelClass, id, options)?](./repository.crudconnector.deletebyid.md) | <i>(Optional)</i> Delete an entity by id |
+|  [exists(modelClass, id, options)?](./repository.crudconnector.exists.md) | <i>(Optional)</i> Check if an entity exists for the id |
 |  [find(modelClass, filter, options)](./repository.crudconnector.find.md) | Find matching entities by the filter |
-|  [findById(modelClass, id, options)](./repository.crudconnector.findbyid.md) | Find an entity by id |
-|  [replaceById(modelClass, id, data, options)](./repository.crudconnector.replacebyid.md) | Replace an entity by id |
-|  [save(modelClass, entity, options)](./repository.crudconnector.save.md) | Save an entity |
-|  [update(modelClass, entity, options)](./repository.crudconnector.update.md) | Update an entity |
+|  [findById(modelClass, id, options)?](./repository.crudconnector.findbyid.md) | <i>(Optional)</i> Find an entity by id |
+|  [replaceById(modelClass, id, data, options)?](./repository.crudconnector.replacebyid.md) | <i>(Optional)</i> Replace an entity by id |
+|  [save(modelClass, entity, options)?](./repository.crudconnector.save.md) | <i>(Optional)</i> Save an entity |
+|  [update(modelClass, entity, options)?](./repository.crudconnector.update.md) | <i>(Optional)</i> Update an entity |
 |  [updateAll(modelClass, data, where, options)](./repository.crudconnector.updateall.md) | Update matching entities |
-|  [updateById(modelClass, id, data, options)](./repository.crudconnector.updatebyid.md) | Update an entity by id |
+|  [updateById(modelClass, id, data, options)?](./repository.crudconnector.updatebyid.md) | <i>(Optional)</i> Update an entity by id |
 
 

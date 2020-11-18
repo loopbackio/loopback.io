@@ -20,4 +20,6 @@ Plain function for body parsing
 ```typescript
 export declare type BodyParserFunction = (request: Request) => Promise<RequestBody>;
 ```
+<b>References:</b> [RequestBody](./rest.requestbody.md)
+
 

@@ -24,4 +24,6 @@ export declare type DynamicModelCtor<BaseCtor extends typeof Model, Props extend
     new (data?: DataObject<PrototypeOf<BaseCtor> & Props>): PrototypeOf<BaseCtor> & Props;
 } & BaseCtor;
 ```
+<b>References:</b> [Model](./repository.model.md)<!-- -->, [DataObject](./repository.dataobject.md)<!-- -->, [PrototypeOf](./repository.prototypeof.md)
+
 

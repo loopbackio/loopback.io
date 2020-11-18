@@ -26,11 +26,11 @@ export interface ValidationOptions extends ajv.Options
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [ajvErrors](./rest.validationoptions.ajverrors.md) | true \| [AjvErrorOptions](./rest.ajverroroptions.md) | Enable custom error messages in JSON-Schema for AJV validator from https://github.com/epoberezkin/ajv-errors - <code>true</code>: Enable <code>ajv-errors</code> - <code>AjvErrorOptions</code>: Enable <code>ajv-errors</code> with options |
-|  [ajvErrorTransformer](./rest.validationoptions.ajverrortransformer.md) | (errors: ajv.ErrorObject\[\]) =&gt; ajv.ErrorObject\[\] | A function that transform the <code>ErrorObject</code>s reported by AJV. This could be used for error messages customization, localization, etc. |
-|  [ajvFactory](./rest.validationoptions.ajvfactory.md) | (options: ajv.Options) =&gt; Ajv | A factory to create Ajv instance |
-|  [ajvKeywords](./rest.validationoptions.ajvkeywords.md) | true \| string\[\] | Enable additional AJV keywords from https://github.com/epoberezkin/ajv-keywords - <code>true</code>: Add all keywords from <code>ajv-keywords</code> - <code>string[]</code>: Add an array of keywords from <code>ajv-keywords</code> |
-|  [compiledSchemaCache](./rest.validationoptions.compiledschemacache.md) | [SchemaValidatorCache](./rest.schemavalidatorcache.md) | Custom cache for compiled schemas by AJV. This setting makes it possible to skip the default cache. |
-|  [prohibitedKeys](./rest.validationoptions.prohibitedkeys.md) | string\[\] | An array of keys to be rejected, such as <code>__proto__</code>. |
+|  [ajvErrors?](./rest.validationoptions.ajverrors.md) | true \| [AjvErrorOptions](./rest.ajverroroptions.md) | <i>(Optional)</i> Enable custom error messages in JSON-Schema for AJV validator from https://github.com/epoberezkin/ajv-errors - <code>true</code>: Enable <code>ajv-errors</code> - <code>AjvErrorOptions</code>: Enable <code>ajv-errors</code> with options |
+|  [ajvErrorTransformer?](./rest.validationoptions.ajverrortransformer.md) | (errors: ajv.ErrorObject\[\]) =&gt; ajv.ErrorObject\[\] | <i>(Optional)</i> A function that transform the <code>ErrorObject</code>s reported by AJV. This could be used for error messages customization, localization, etc. |
+|  [ajvFactory?](./rest.validationoptions.ajvfactory.md) | (options: ajv.Options) =&gt; Ajv | <i>(Optional)</i> A factory to create Ajv instance |
+|  [ajvKeywords?](./rest.validationoptions.ajvkeywords.md) | true \| string\[\] | <i>(Optional)</i> Enable additional AJV keywords from https://github.com/epoberezkin/ajv-keywords - <code>true</code>: Add all keywords from <code>ajv-keywords</code> - <code>string[]</code>: Add an array of keywords from <code>ajv-keywords</code> |
+|  [compiledSchemaCache?](./rest.validationoptions.compiledschemacache.md) | [SchemaValidatorCache](./rest.schemavalidatorcache.md) | <i>(Optional)</i> Custom cache for compiled schemas by AJV. This setting makes it possible to skip the default cache. |
+|  [prohibitedKeys?](./rest.validationoptions.prohibitedkeys.md) | string\[\] | <i>(Optional)</i> An array of keys to be rejected, such as <code>__proto__</code>. |
 
 

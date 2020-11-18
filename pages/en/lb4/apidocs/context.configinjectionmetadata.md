@@ -26,7 +26,7 @@ export interface ConfigInjectionMetadata extends InjectionMetadata
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [fromBinding](./context.configinjectionmetadata.frombinding.md) | [BindingAddress](./context.bindingaddress.md) | Customize the target binding key from which the configuration is fetched. If not specified, the configuration of the current binding that contains the injection is used. |
-|  [propertyPath](./context.configinjectionmetadata.propertypath.md) | string | Property path to retrieve the configuration of the target binding, for example, <code>rest.host</code>. |
+|  [fromBinding?](./context.configinjectionmetadata.frombinding.md) | [BindingAddress](./context.bindingaddress.md) | <i>(Optional)</i> Customize the target binding key from which the configuration is fetched. If not specified, the configuration of the current binding that contains the injection is used. |
+|  [propertyPath?](./context.configinjectionmetadata.propertypath.md) | string | <i>(Optional)</i> Property path to retrieve the configuration of the target binding, for example, <code>rest.host</code>. |
 
 

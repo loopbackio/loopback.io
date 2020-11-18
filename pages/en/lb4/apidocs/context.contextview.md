@@ -41,7 +41,7 @@ export declare class ContextView<T = unknown> extends EventEmitter implements Co
 |  [\_cachedBindings](./context.contextview._cachedbindings.md) |  | Readonly&lt;[Binding](./context.binding.md)<!-- -->&lt;T&gt;&gt;\[\] \| undefined | An array of cached bindings that matches the binding filter |
 |  [\_cachedValues](./context.contextview._cachedvalues.md) |  | Map&lt;Readonly&lt;[Binding](./context.binding.md)<!-- -->&lt;T&gt;&gt;, T&gt; \| undefined | A map of cached values by binding |
 |  [bindings](./context.contextview.bindings.md) |  | Readonly&lt;[Binding](./context.binding.md)<!-- -->&lt;T&gt;&gt;\[\] | Get the list of matched bindings. If they are not cached, it tries to find them from the context. |
-|  [comparator](./context.contextview.comparator.md) |  | [BindingComparator](./context.bindingcomparator.md) \| undefined |  |
+|  [comparator?](./context.contextview.comparator.md) |  | [BindingComparator](./context.bindingcomparator.md) \| undefined | <i>(Optional)</i> |
 |  [context](./context.contextview.context.md) |  | [Context](./context.context.md) |  |
 |  [filter](./context.contextview.filter.md) |  | [BindingFilter](./context.bindingfilter.md) |  |
 

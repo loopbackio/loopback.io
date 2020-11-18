@@ -18,8 +18,15 @@ The method to be invoked during `init`<!-- -->. It will only be called at most o
 <b>Signature:</b>
 
 ```typescript
-init?(): ValueOrPromise<void>;
+init?(...injectedArgs: unknown[]): ValueOrPromise<void>;
 ```
+
+## Parameters
+
+|  Parameter | Type | Description |
+|  --- | --- | --- |
+|  injectedArgs | unknown\[\] |  |
+
 <b>Returns:</b>
 
 [ValueOrPromise](./context.valueorpromise.md)<!-- -->&lt;void&gt;

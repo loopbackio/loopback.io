@@ -20,4 +20,6 @@ Interceptor function or a binding key that resolves a generic interceptor functi
 ```typescript
 export declare type GenericInterceptorOrKey<C extends Context = Context> = BindingAddress<GenericInterceptor<C>> | GenericInterceptor<C>;
 ```
+<b>References:</b> [Context](./context.context.md)<!-- -->, [BindingAddress](./context.bindingaddress.md)<!-- -->, [GenericInterceptor](./context.genericinterceptor.md)
+
 

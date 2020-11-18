@@ -23,4 +23,6 @@ export declare type BindingScopeAndTags = {
     tags?: BindingTag | BindingTag[];
 };
 ```
+<b>References:</b> [BindingScope](./context.bindingscope.md)<!-- -->, [BindingTag](./context.bindingtag.md)
+
 

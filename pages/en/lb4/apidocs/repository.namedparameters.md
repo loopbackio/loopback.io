@@ -20,4 +20,6 @@ Named parameters, such as `{x: 1, y: 'a'}`
 ```typescript
 export declare type NamedParameters = AnyObject;
 ```
+<b>References:</b> [AnyObject](./repository.anyobject.md)
+
 

@@ -25,8 +25,8 @@ export interface Connector
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [configModel](./repository.connector.configmodel.md) | [Model](./repository.model.md) |  |
-|  [interfaces](./repository.connector.interfaces.md) | string\[\] |  |
+|  [configModel?](./repository.connector.configmodel.md) | [Model](./repository.model.md) | <i>(Optional)</i> |
+|  [interfaces?](./repository.connector.interfaces.md) | string\[\] | <i>(Optional)</i> |
 |  [name](./repository.connector.name.md) | string |  |
 
 ## Methods
@@ -35,7 +35,7 @@ export interface Connector
 |  --- | --- |
 |  [connect()](./repository.connector.connect.md) |  |
 |  [disconnect()](./repository.connector.disconnect.md) |  |
-|  [execute(command, parameters, options)](./repository.connector.execute.md) |  |
+|  [execute(command, parameters, options)?](./repository.connector.execute.md) | <i>(Optional)</i> |
 |  [ping()](./repository.connector.ping.md) |  |
 
 

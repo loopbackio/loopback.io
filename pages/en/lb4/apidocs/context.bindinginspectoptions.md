@@ -25,6 +25,6 @@ export interface BindingInspectOptions
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [includeInjections](./context.bindinginspectoptions.includeinjections.md) | boolean | The flag to control if injections should be inspected |
+|  [includeInjections?](./context.bindinginspectoptions.includeinjections.md) | boolean | <i>(Optional)</i> The flag to control if injections should be inspected |
 
 

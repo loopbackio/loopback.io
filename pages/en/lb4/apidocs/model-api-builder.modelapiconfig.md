@@ -27,4 +27,6 @@ export declare type ModelApiConfig = {
     [patternSpecificSetting: string]: unknown;
 };
 ```
+<b>References:</b> [Model](./repository.model.md)
+
 

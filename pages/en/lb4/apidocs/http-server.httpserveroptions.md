@@ -20,4 +20,6 @@ Possible server options
 ```typescript
 export declare type HttpServerOptions = HttpOptions | HttpsOptions;
 ```
+<b>References:</b> [HttpOptions](./http-server.httpoptions.md)<!-- -->, [HttpsOptions](./http-server.httpsoptions.md)
+
 

@@ -25,10 +25,10 @@ export interface HttpServerResolvedOptions
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [basePath](./socketio.httpserverresolvedoptions.basepath.md) | string |  |
+|  [basePath?](./socketio.httpserverresolvedoptions.basepath.md) | string | <i>(Optional)</i> |
 |  [cors](./socketio.httpserverresolvedoptions.cors.md) | cors.CorsOptions |  |
-|  [host](./socketio.httpserverresolvedoptions.host.md) | string |  |
-|  [path](./socketio.httpserverresolvedoptions.path.md) | string |  |
+|  [host?](./socketio.httpserverresolvedoptions.host.md) | string | <i>(Optional)</i> |
+|  [path?](./socketio.httpserverresolvedoptions.path.md) | string | <i>(Optional)</i> |
 |  [port](./socketio.httpserverresolvedoptions.port.md) | number |  |
 
 

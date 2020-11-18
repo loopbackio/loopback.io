@@ -20,4 +20,6 @@ A function as the template to configure bindings
 ```typescript
 export declare type BindingTemplate<T = unknown> = (binding: Binding<T>) => void;
 ```
+<b>References:</b> [Binding](./context.binding.md)
+
 

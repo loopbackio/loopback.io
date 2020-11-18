@@ -18,4 +18,6 @@ permalink: /doc/en/lb4/apidocs.openapi-v3.responsedecoratormetadata.html
 ```typescript
 export declare type ResponseDecoratorMetadata = ResponseDecoratorMetadataItem[];
 ```
+<b>References:</b> [ResponseDecoratorMetadataItem](./openapi-v3.responsedecoratormetadataitem.md)
+
 

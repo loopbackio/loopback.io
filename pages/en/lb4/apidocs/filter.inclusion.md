@@ -30,6 +30,6 @@ export interface Inclusion
 |  Property | Type | Description |
 |  --- | --- | --- |
 |  [relation](./filter.inclusion.relation.md) | string |  |
-|  [scope](./filter.inclusion.scope.md) | [Filter](./filter.filter.md)<!-- -->&lt;AnyObject&gt; |  |
+|  [scope?](./filter.inclusion.scope.md) | [Filter](./filter.filter.md)<!-- -->&lt;AnyObject&gt; | <i>(Optional)</i> |
 
 

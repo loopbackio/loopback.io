@@ -25,7 +25,7 @@ export interface SocketIoMetadata
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [name](./socketio.socketiometadata.name.md) | string |  |
-|  [namespace](./socketio.socketiometadata.namespace.md) | string \| RegExp |  |
+|  [name?](./socketio.socketiometadata.name.md) | string | <i>(Optional)</i> |
+|  [namespace?](./socketio.socketiometadata.namespace.md) | string \| RegExp | <i>(Optional)</i> |
 
 

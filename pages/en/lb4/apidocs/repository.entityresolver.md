@@ -18,4 +18,6 @@ permalink: /doc/en/lb4/apidocs.repository.entityresolver.html
 ```typescript
 export declare type EntityResolver<T extends Entity> = TypeResolver<T, typeof Entity>;
 ```
+<b>References:</b> [Entity](./repository.entity.md)<!-- -->, [TypeResolver](./repository.typeresolver.md)
+
 

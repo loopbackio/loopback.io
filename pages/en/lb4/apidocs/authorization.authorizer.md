@@ -21,4 +21,6 @@ A function to decide if access to the target should be allowed or denied
 export declare type Authorizer<T extends AuthorizationMetadata = AuthorizationMetadata> = 
 (context: AuthorizationContext, metadata: T) => Promise<AuthorizationDecision>;
 ```
+<b>References:</b> [AuthorizationMetadata](./authorization.authorizationmetadata.md)<!-- -->, [AuthorizationContext](./authorization.authorizationcontext.md)<!-- -->, [AuthorizationDecision](./authorization.authorizationdecision.md)
+
 

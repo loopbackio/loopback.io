@@ -54,6 +54,7 @@ permalink: /doc/en/lb4/changelog.index.html
 - [@loopback/logging](changelogs/extensions/logging/CHANGELOG.md)
 - [@loopback/metrics](changelogs/extensions/metrics/CHANGELOG.md)
 - [@loopback/pooling](changelogs/extensions/pooling/CHANGELOG.md)
+- [@loopback/socketio](changelogs/extensions/socketio/CHANGELOG.md)
 - [@loopback/typeorm](changelogs/extensions/typeorm/CHANGELOG.md)
 
 ### examples
@@ -75,6 +76,7 @@ permalink: /doc/en/lb4/changelog.index.html
 - [@loopback/example-rest-crud](changelogs/examples/rest-crud/CHANGELOG.md)
 - [@loopback/example-rpc-server](changelogs/examples/rpc-server/CHANGELOG.md)
 - [@loopback/example-soap-calculator](changelogs/examples/soap-calculator/CHANGELOG.md)
+- [@loopback/example-socketio](changelogs/examples/socketio/CHANGELOG.md)
 - [@loopback/example-todo](changelogs/examples/todo/CHANGELOG.md)
 - [@loopback/example-todo-jwt](changelogs/examples/todo-jwt/CHANGELOG.md)
 - [@loopback/example-todo-list](changelogs/examples/todo-list/CHANGELOG.md)

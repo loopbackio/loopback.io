@@ -20,4 +20,6 @@ DataSource configuration (connector name, connection string, etc.).
 ```typescript
 export declare type DataSourceOptions = Options;
 ```
+<b>References:</b> [Options](./repository.options.md)
+
 

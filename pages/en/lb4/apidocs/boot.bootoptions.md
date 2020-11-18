@@ -24,4 +24,6 @@ export declare type BootOptions = {
     [prop: string]: any;
 };
 ```
+<b>References:</b> [ArtifactOptions](./boot.artifactoptions.md)
+
 

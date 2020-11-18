@@ -25,8 +25,8 @@ export interface PropertyForm
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [in](./repository.propertyform.in.md) | boolean |  |
-|  [name](./repository.propertyform.name.md) | string |  |
-|  [out](./repository.propertyform.out.md) | boolean |  |
+|  [in?](./repository.propertyform.in.md) | boolean | <i>(Optional)</i> |
+|  [name?](./repository.propertyform.name.md) | string | <i>(Optional)</i> |
+|  [out?](./repository.propertyform.out.md) | boolean | <i>(Optional)</i> |
 
 

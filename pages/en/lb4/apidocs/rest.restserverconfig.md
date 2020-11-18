@@ -20,4 +20,6 @@ Valid configuration for the RestServer constructor.
 ```typescript
 export declare type RestServerConfig = RestServerOptions & HttpServerOptions;
 ```
+<b>References:</b> [RestServerOptions](./rest.restserveroptions.md)<!-- -->, [HttpServerOptions](./http-server.httpserveroptions.md)
+
 

@@ -25,7 +25,7 @@ export interface RepositoryComponent
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [models](./repository.repositorycomponent.models.md) | [Class](./repository.class.md)<!-- -->&lt;[Model](./repository.model.md)<!-- -->&gt;\[\] | An optional list of Model classes to bind for dependency injection via <code>app.model()</code> API. |
-|  [repositories](./repository.repositorycomponent.repositories.md) | [Class](./repository.class.md)<!-- -->&lt;[Repository](./repository.repository.md)<!-- -->&lt;[Model](./repository.model.md)<!-- -->&gt;&gt;\[\] | An optional list of Repository classes to bind for dependency injection via <code>app.repository()</code> API. |
+|  [models?](./repository.repositorycomponent.models.md) | [Class](./repository.class.md)<!-- -->&lt;[Model](./repository.model.md)<!-- -->&gt;\[\] | <i>(Optional)</i> An optional list of Model classes to bind for dependency injection via <code>app.model()</code> API. |
+|  [repositories?](./repository.repositorycomponent.repositories.md) | [Class](./repository.class.md)<!-- -->&lt;[Repository](./repository.repository.md)<!-- -->&lt;[Model](./repository.model.md)<!-- -->&gt;&gt;\[\] | <i>(Optional)</i> An optional list of Repository classes to bind for dependency injection via <code>app.repository()</code> API. |
 
 

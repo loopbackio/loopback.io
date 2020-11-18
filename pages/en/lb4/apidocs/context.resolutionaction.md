@@ -20,4 +20,6 @@ A function to be executed with the resolution session
 ```typescript
 export declare type ResolutionAction = (session: ResolutionSession) => ValueOrPromise<BoundValue>;
 ```
+<b>References:</b> [ResolutionSession](./context.resolutionsession.md)<!-- -->, [ValueOrPromise](./context.valueorpromise.md)<!-- -->, [BoundValue](./context.boundvalue.md)
+
 

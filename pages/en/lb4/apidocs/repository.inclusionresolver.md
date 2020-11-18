@@ -21,4 +21,6 @@ sourceEntities: S[],
 inclusion: Inclusion, 
 options?: Options) => Promise<(T | undefined)[] | (T[] | undefined)[]>;
 ```
+<b>References:</b> [Entity](./repository.entity.md)<!-- -->, [Inclusion](./filter.inclusion.md)<!-- -->, [Options](./repository.options.md)
+
 

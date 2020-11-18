@@ -20,4 +20,6 @@ Configuration for metrics component with optional properties
 ```typescript
 export declare type MetricsConfig = Partial<MetricsOptions>;
 ```
+<b>References:</b> [MetricsOptions](./metrics.metricsoptions.md)
+
 

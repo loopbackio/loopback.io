@@ -20,4 +20,6 @@ The intercepted variant of a function to return `ValueOrPromise<T>`<!-- -->. If 
 ```typescript
 export declare type AsInterceptedFunction<T> = T extends (...args: InvocationArgs) => infer R ? (...args: InvocationArgs) => AsValueOrPromise<R> : T;
 ```
+<b>References:</b> [InvocationArgs](./context.invocationargs.md)<!-- -->, [AsValueOrPromise](./context.asvalueorpromise.md)
+
 

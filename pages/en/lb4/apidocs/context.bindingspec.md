@@ -20,4 +20,6 @@ Specification of parameters for `@injectable()`
 ```typescript
 export declare type BindingSpec<T = unknown> = BindingTemplate<T> | BindingScopeAndTags;
 ```
+<b>References:</b> [BindingTemplate](./context.bindingtemplate.md)<!-- -->, [BindingScopeAndTags](./context.bindingscopeandtags.md)
+
 

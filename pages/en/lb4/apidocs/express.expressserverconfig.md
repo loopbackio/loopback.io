@@ -23,4 +23,6 @@ export declare type ExpressServerConfig = (HttpOptions | HttpsOptions) & {
     settings?: Record<string, unknown>;
 };
 ```
+<b>References:</b> [HttpOptions](./http-server.httpoptions.md)<!-- -->, [HttpsOptions](./http-server.httpsoptions.md)
+
 

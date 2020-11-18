@@ -20,4 +20,6 @@ The `next` function that can be used to invoke next generic interceptor in the c
 ```typescript
 export declare type Next = () => ValueOrPromise<NonVoid>;
 ```
+<b>References:</b> [ValueOrPromise](./context.valueorpromise.md)<!-- -->, [NonVoid](./context.nonvoid.md)
+
 

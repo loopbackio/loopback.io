@@ -22,6 +22,7 @@ export declare type Condition<MT extends object> = {
     [P in KeyOf<MT>]?: PredicateComparison<MT[P]> | (MT[P] & ShortHandEqualType);
 };
 ```
+<b>References:</b> [KeyOf](./filter.keyof.md)<!-- -->, [PredicateComparison](./filter.predicatecomparison.md)<!-- -->, [ShortHandEqualType](./filter.shorthandequaltype.md)
 
 ## Example
 

@@ -22,4 +22,6 @@ export declare type ContextGraphOptions = {
     bindingFilter?: BindingNodeFilter;
 };
 ```
+<b>References:</b> [BindingNodeFilter](./context-explorer.bindingnodefilter.md)
+
 

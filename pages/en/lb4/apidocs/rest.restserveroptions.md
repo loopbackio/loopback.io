@@ -20,4 +20,6 @@ RestServer options
 ```typescript
 export declare type RestServerOptions = Partial<RestServerResolvedOptions>;
 ```
+<b>References:</b> [RestServerResolvedOptions](./rest.restserverresolvedoptions.md)
+
 

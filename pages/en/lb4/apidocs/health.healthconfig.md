@@ -20,4 +20,6 @@ Configuration for health component with optional properties
 ```typescript
 export declare type HealthConfig = Partial<HealthOptions>;
 ```
+<b>References:</b> [HealthOptions](./health.healthoptions.md)
+
 

@@ -26,6 +26,6 @@ export interface PoolingServiceOptions<T>
 |  Property | Type | Description |
 |  --- | --- | --- |
 |  [factory](./pooling.poolingserviceoptions.factory.md) | [PoolFactory](./pooling.poolfactory.md)<!-- -->&lt;T&gt; \| ((ctx: [Context](./context.context.md)<!-- -->) =&gt; [PoolFactory](./pooling.poolfactory.md)<!-- -->&lt;T&gt;) | A factory to create/destroy/validate resources for the pool or a function to create a factory for the given context |
-|  [poolOptions](./pooling.poolingserviceoptions.pooloptions.md) | Options | Options for the generic pool |
+|  [poolOptions?](./pooling.poolingserviceoptions.pooloptions.md) | Options | <i>(Optional)</i> Options for the generic pool |
 
 

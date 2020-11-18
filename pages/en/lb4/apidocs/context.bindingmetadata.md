@@ -23,4 +23,6 @@ export declare type BindingMetadata<T = unknown> = {
     target: Constructor<T>;
 };
 ```
+<b>References:</b> [BindingTemplate](./context.bindingtemplate.md)<!-- -->, [Constructor](./context.constructor.md)
+
 

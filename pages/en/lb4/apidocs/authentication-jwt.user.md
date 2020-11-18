@@ -31,11 +31,11 @@ export declare class User extends Entity
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
 |  [email](./authentication-jwt.user.email.md) |  | string |  |
-|  [emailVerified](./authentication-jwt.user.emailverified.md) |  | boolean |  |
+|  [emailVerified?](./authentication-jwt.user.emailverified.md) |  | boolean | <i>(Optional)</i> |
 |  [id](./authentication-jwt.user.id.md) |  | string |  |
-|  [realm](./authentication-jwt.user.realm.md) |  | string |  |
+|  [realm?](./authentication-jwt.user.realm.md) |  | string | <i>(Optional)</i> |
 |  [userCredentials](./authentication-jwt.user.usercredentials.md) |  | [UserCredentials](./authentication-jwt.usercredentials.md) |  |
-|  [username](./authentication-jwt.user.username.md) |  | string |  |
-|  [verificationToken](./authentication-jwt.user.verificationtoken.md) |  | string |  |
+|  [username?](./authentication-jwt.user.username.md) |  | string | <i>(Optional)</i> |
+|  [verificationToken?](./authentication-jwt.user.verificationtoken.md) |  | string | <i>(Optional)</i> |
 
 

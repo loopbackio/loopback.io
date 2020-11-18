@@ -20,4 +20,6 @@ A middleware function or binding key
 ```typescript
 export declare type MiddlewareOrKey = GenericInterceptorOrKey<MiddlewareContext>;
 ```
+<b>References:</b> [GenericInterceptorOrKey](./context.genericinterceptororkey.md)<!-- -->, [MiddlewareContext](./express.middlewarecontext.md)
+
 

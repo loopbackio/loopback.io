@@ -32,8 +32,8 @@ export declare class ServiceProxyMetadata implements InjectionMetadata
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [dataSource](./service-proxy.serviceproxymetadata.datasource.md) |  | juggler.DataSource |  |
-|  [dataSourceName](./service-proxy.serviceproxymetadata.datasourcename.md) |  | string |  |
+|  [dataSource?](./service-proxy.serviceproxymetadata.datasource.md) |  | juggler.DataSource | <i>(Optional)</i> |
+|  [dataSourceName?](./service-proxy.serviceproxymetadata.datasourcename.md) |  | string | <i>(Optional)</i> |
 |  [decorator](./service-proxy.serviceproxymetadata.decorator.md) |  | string |  |
 
 

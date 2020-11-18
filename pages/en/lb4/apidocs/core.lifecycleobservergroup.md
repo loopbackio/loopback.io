@@ -23,4 +23,6 @@ export declare type LifeCycleObserverGroup = {
     bindings: Readonly<Binding<LifeCycleObserver>>[];
 };
 ```
+<b>References:</b> [Binding](./context.binding.md)<!-- -->, [LifeCycleObserver](./core.lifecycleobserver.md)
+
 

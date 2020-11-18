@@ -22,4 +22,6 @@ export declare type DeepPartial<T> = Partial<T> | {
     [P in keyof T]?: DeepPartial<T[P]>;
 };
 ```
+<b>References:</b> [DeepPartial](./repository.deeppartial.md)
+
 

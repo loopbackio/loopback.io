@@ -26,7 +26,7 @@ export interface RestEndpoint
 |  Property | Type | Description |
 |  --- | --- | --- |
 |  [path](./openapi-v3.restendpoint.path.md) | string |  |
-|  [spec](./openapi-v3.restendpoint.spec.md) | OperationObject |  |
+|  [spec?](./openapi-v3.restendpoint.spec.md) | OperationObject | <i>(Optional)</i> |
 |  [verb](./openapi-v3.restendpoint.verb.md) | string |  |
 
 

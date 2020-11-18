@@ -25,8 +25,8 @@ export interface ResolutionOptions
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [asProxyWithInterceptors](./context.resolutionoptions.asproxywithinterceptors.md) | boolean | A boolean flag to control if a proxy should be created to apply interceptors for the resolved value. It's only honored for bindings backed by a class. |
-|  [optional](./context.resolutionoptions.optional.md) | boolean | A boolean flag to indicate if the dependency is optional. If it's set to <code>true</code> and the binding is not bound in a context, the resolution will return <code>undefined</code> instead of throwing an error. |
-|  [session](./context.resolutionoptions.session.md) | [ResolutionSession](./context.resolutionsession.md) | A session to track bindings and injections |
+|  [asProxyWithInterceptors?](./context.resolutionoptions.asproxywithinterceptors.md) | boolean | <i>(Optional)</i> A boolean flag to control if a proxy should be created to apply interceptors for the resolved value. It's only honored for bindings backed by a class. |
+|  [optional?](./context.resolutionoptions.optional.md) | boolean | <i>(Optional)</i> A boolean flag to indicate if the dependency is optional. If it's set to <code>true</code> and the binding is not bound in a context, the resolution will return <code>undefined</code> instead of throwing an error. |
+|  [session?](./context.resolutionoptions.session.md) | [ResolutionSession](./context.resolutionsession.md) | <i>(Optional)</i> A session to track bindings and injections |
 
 

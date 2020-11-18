@@ -18,4 +18,6 @@ permalink: /doc/en/lb4/apidocs.rest.requestbodyvalidationoptions.html
 ```typescript
 export declare type RequestBodyValidationOptions = ValidationOptions;
 ```
+<b>References:</b> [ValidationOptions](./rest.validationoptions.md)
+
 

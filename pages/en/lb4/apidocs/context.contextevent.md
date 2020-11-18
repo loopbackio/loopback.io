@@ -24,4 +24,6 @@ export declare type ContextEvent = {
     type: string;
 };
 ```
+<b>References:</b> [Context](./context.context.md)<!-- -->, [Binding](./context.binding.md)
+
 

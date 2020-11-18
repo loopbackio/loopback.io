@@ -20,4 +20,6 @@ Interceptor function or binding key that can be used as parameters for `@interce
 ```typescript
 export declare type InterceptorOrKey = GenericInterceptorOrKey<InvocationContext>;
 ```
+<b>References:</b> [GenericInterceptorOrKey](./context.genericinterceptororkey.md)<!-- -->, [InvocationContext](./context.invocationcontext.md)
+
 

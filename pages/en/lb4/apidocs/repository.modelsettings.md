@@ -25,10 +25,10 @@ export interface ModelSettings
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [description](./repository.modelsettings.description.md) | string | Description of the model |
-|  [forceId](./repository.modelsettings.forceid.md) | boolean | Prevent clients from setting the auto-generated ID value manually |
-|  [hiddenProperties](./repository.modelsettings.hiddenproperties.md) | string\[\] | Hides properties from response bodies |
-|  [scope](./repository.modelsettings.scope.md) | object | Scope enables you to set a scope that will apply to every query made by the model's repository |
-|  [strict](./repository.modelsettings.strict.md) | boolean \| 'filter' | Specifies whether the model accepts only predefined properties or not |
+|  [description?](./repository.modelsettings.description.md) | string | <i>(Optional)</i> Description of the model |
+|  [forceId?](./repository.modelsettings.forceid.md) | boolean | <i>(Optional)</i> Prevent clients from setting the auto-generated ID value manually |
+|  [hiddenProperties?](./repository.modelsettings.hiddenproperties.md) | string\[\] | <i>(Optional)</i> Hides properties from response bodies |
+|  [scope?](./repository.modelsettings.scope.md) | object | <i>(Optional)</i> Scope enables you to set a scope that will apply to every query made by the model's repository |
+|  [strict?](./repository.modelsettings.strict.md) | boolean \| 'filter' | <i>(Optional)</i> Specifies whether the model accepts only predefined properties or not |
 
 

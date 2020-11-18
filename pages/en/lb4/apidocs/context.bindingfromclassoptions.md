@@ -28,4 +28,6 @@ export declare type BindingFromClassOptions = {
     defaultScope?: BindingScope;
 };
 ```
+<b>References:</b> [BindingAddress](./context.bindingaddress.md)<!-- -->, [TypeNamespaceMapping](./context.typenamespacemapping.md)<!-- -->, [BindingScope](./context.bindingscope.md)
+
 

@@ -23,7 +23,7 @@ export interface SocketIoServerOptions
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [httpServerOptions](./socketio.socketioserveroptions.httpserveroptions.md) | [HttpServerResolvedOptions](./socketio.httpserverresolvedoptions.md) |  |
-|  [socketIoOptions](./socketio.socketioserveroptions.socketiooptions.md) | ServerOptions |  |
+|  [httpServerOptions?](./socketio.socketioserveroptions.httpserveroptions.md) | [HttpServerResolvedOptions](./socketio.httpserverresolvedoptions.md) | <i>(Optional)</i> |
+|  [socketIoOptions?](./socketio.socketioserveroptions.socketiooptions.md) | ServerOptions | <i>(Optional)</i> |
 
 

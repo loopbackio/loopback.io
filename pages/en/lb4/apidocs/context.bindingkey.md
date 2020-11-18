@@ -26,7 +26,7 @@ export declare class BindingKey<ValueType>
 |  [CONFIG\_NAMESPACE](./context.bindingkey.config_namespace.md) | <code>static</code> | string | Name space for configuration binding keys |
 |  [key](./context.bindingkey.key.md) |  | string |  |
 |  [PROPERTY\_SEPARATOR](./context.bindingkey.property_separator.md) | <code>static</code> | (not declared) |  |
-|  [propertyPath](./context.bindingkey.propertypath.md) |  | string \| undefined |  |
+|  [propertyPath?](./context.bindingkey.propertypath.md) |  | string \| undefined | <i>(Optional)</i> |
 
 ## Methods
 

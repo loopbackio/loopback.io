@@ -22,4 +22,6 @@ export declare type RelationDefinitionMap = {
     [relationName: string]: RelationMetadata;
 };
 ```
+<b>References:</b> [RelationMetadata](./repository.relationmetadata.md)
+
 

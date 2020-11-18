@@ -25,12 +25,12 @@ export interface ApiDocsOptions
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [apiDocsExtractionPath](./tsdocs.apidocsoptions.apidocsextractionpath.md) | string | Path to tsdocs reports/models |
-|  [apiDocsGenerationPath](./tsdocs.apidocsoptions.apidocsgenerationpath.md) | string | Path to target directory to generate apidocs |
-|  [dryRun](./tsdocs.apidocsoptions.dryrun.md) | boolean | To have a dry-run without generating api reports/doc models |
-|  [generateDefaultPackageDoc](./tsdocs.apidocsoptions.generatedefaultpackagedoc.md) | boolean | A flag to generate default package documentation |
-|  [lernaPackages](./tsdocs.apidocsoptions.lernapackages.md) | Record&lt;string, [LernaPackage](./tsdocs.lernapackage.md)<!-- -->&gt; | Package metadata |
-|  [rootDir](./tsdocs.apidocsoptions.rootdir.md) | string | Root directory for the lerna-managed monorepo, default to current dir |
-|  [silent](./tsdocs.apidocsoptions.silent.md) | boolean | If <code>true</code>, do not print messages to console |
+|  [apiDocsExtractionPath?](./tsdocs.apidocsoptions.apidocsextractionpath.md) | string | <i>(Optional)</i> Path to tsdocs reports/models |
+|  [apiDocsGenerationPath?](./tsdocs.apidocsoptions.apidocsgenerationpath.md) | string | <i>(Optional)</i> Path to target directory to generate apidocs |
+|  [dryRun?](./tsdocs.apidocsoptions.dryrun.md) | boolean | <i>(Optional)</i> To have a dry-run without generating api reports/doc models |
+|  [generateDefaultPackageDoc?](./tsdocs.apidocsoptions.generatedefaultpackagedoc.md) | boolean | <i>(Optional)</i> A flag to generate default package documentation |
+|  [lernaPackages?](./tsdocs.apidocsoptions.lernapackages.md) | Record&lt;string, [LernaPackage](./tsdocs.lernapackage.md)<!-- -->&gt; | <i>(Optional)</i> Package metadata |
+|  [rootDir?](./tsdocs.apidocsoptions.rootdir.md) | string | <i>(Optional)</i> Root directory for the lerna-managed monorepo, default to current dir |
+|  [silent?](./tsdocs.apidocsoptions.silent.md) | boolean | <i>(Optional)</i> If <code>true</code>, do not print messages to console |
 
 

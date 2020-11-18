@@ -59,8 +59,8 @@ class SpyInterceptorProvider extends ExpressMiddlewareInterceptorProvider<
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [middlewareConfig](./express.expressmiddlewareinterceptorprovider.middlewareconfig.md) |  | CFG |  |
-|  [middlewareConfigView](./express.expressmiddlewareinterceptorprovider.middlewareconfigview.md) |  | [ContextView](./context.contextview.md)<!-- -->&lt;CFG&gt; |  |
+|  [middlewareConfig?](./express.expressmiddlewareinterceptorprovider.middlewareconfig.md) |  | CFG | <i>(Optional)</i> |
+|  [middlewareConfigView?](./express.expressmiddlewareinterceptorprovider.middlewareconfigview.md) |  | [ContextView](./context.contextview.md)<!-- -->&lt;CFG&gt; | <i>(Optional)</i> |
 |  [middlewareFactory](./express.expressmiddlewareinterceptorprovider.middlewarefactory.md) |  | [ExpressMiddlewareFactory](./express.expressmiddlewarefactory.md)<!-- -->&lt;CFG&gt; |  |
 
 ## Methods

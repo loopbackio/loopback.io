@@ -20,4 +20,6 @@ Select binding(s) by key or a filter function
 ```typescript
 export declare type BindingSelector<ValueType = unknown> = BindingAddress<ValueType> | BindingFilter;
 ```
+<b>References:</b> [BindingAddress](./context.bindingaddress.md)<!-- -->, [BindingFilter](./context.bindingfilter.md)
+
 

@@ -30,9 +30,9 @@ export interface KVConnector<T extends Entity> extends Connector
 |  [deleteAll(modelClass, options)](./repository.kvconnector.deleteall.md) | Delete all entries |
 |  [expire(modelClass, key, ttl, options)](./repository.kvconnector.expire.md) | Set up ttl for an entry by key |
 |  [get(modelClass, key, options)](./repository.kvconnector.get.md) | Get an entry by key |
-|  [iterateKeys(modelClass, filter, options)](./repository.kvconnector.iteratekeys.md) | Get an Iterator for matching keys |
-|  [keys(modelClass, options)](./repository.kvconnector.keys.md) | Fetch all keys |
+|  [iterateKeys(modelClass, filter, options)?](./repository.kvconnector.iteratekeys.md) | <i>(Optional)</i> Get an Iterator for matching keys |
+|  [keys(modelClass, options)?](./repository.kvconnector.keys.md) | <i>(Optional)</i> Fetch all keys |
 |  [set(modelClass, key, value, options)](./repository.kvconnector.set.md) | Set an entry with key/value |
-|  [ttl(modelClass, key, ttl, options)](./repository.kvconnector.ttl.md) | Get ttl for an entry by key |
+|  [ttl(modelClass, key, ttl, options)?](./repository.kvconnector.ttl.md) | <i>(Optional)</i> Get ttl for an entry by key |
 
 

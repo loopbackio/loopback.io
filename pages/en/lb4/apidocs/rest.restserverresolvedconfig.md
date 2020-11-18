@@ -18,4 +18,6 @@ permalink: /doc/en/lb4/apidocs.rest.restserverresolvedconfig.html
 ```typescript
 export declare type RestServerResolvedConfig = RestServerResolvedOptions & HttpServerOptions;
 ```
+<b>References:</b> [RestServerResolvedOptions](./rest.restserverresolvedoptions.md)<!-- -->, [HttpServerOptions](./http-server.httpserveroptions.md)
+
 

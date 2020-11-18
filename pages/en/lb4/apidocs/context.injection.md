@@ -26,10 +26,10 @@ export interface Injection<ValueType = BoundValue>
 |  Property | Type | Description |
 |  --- | --- | --- |
 |  [bindingSelector](./context.injection.bindingselector.md) | [BindingSelector](./context.bindingselector.md)<!-- -->&lt;ValueType&gt; |  |
-|  [member](./context.injection.member.md) | string |  |
+|  [member?](./context.injection.member.md) | string | <i>(Optional)</i> |
 |  [metadata](./context.injection.metadata.md) | [InjectionMetadata](./context.injectionmetadata.md) |  |
-|  [methodDescriptorOrParameterIndex](./context.injection.methoddescriptororparameterindex.md) | TypedPropertyDescriptor&lt;ValueType&gt; \| number |  |
-|  [resolve](./context.injection.resolve.md) | [ResolverFunction](./context.resolverfunction.md) |  |
+|  [methodDescriptorOrParameterIndex?](./context.injection.methoddescriptororparameterindex.md) | TypedPropertyDescriptor&lt;ValueType&gt; \| number | <i>(Optional)</i> |
+|  [resolve?](./context.injection.resolve.md) | [ResolverFunction](./context.resolverfunction.md) | <i>(Optional)</i> |
 |  [target](./context.injection.target.md) | Object |  |
 
 

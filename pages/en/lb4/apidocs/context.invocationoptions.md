@@ -25,4 +25,6 @@ export declare type InvocationOptions = {
     session?: ResolutionSession;
 };
 ```
+<b>References:</b> [InvocationSource](./context.invocationsource.md)<!-- -->, [ResolutionSession](./context.resolutionsession.md)
+
 

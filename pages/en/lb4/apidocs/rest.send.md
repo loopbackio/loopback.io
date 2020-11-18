@@ -20,4 +20,6 @@ Send the operation response back to the client.
 ```typescript
 export declare type Send = (response: Response, result: OperationRetval) => void;
 ```
+<b>References:</b> [OperationRetval](./rest.operationretval.md)
+
 

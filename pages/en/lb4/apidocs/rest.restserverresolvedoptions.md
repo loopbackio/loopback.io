@@ -24,15 +24,15 @@ export interface RestServerResolvedOptions
 |  Property | Type | Description |
 |  --- | --- | --- |
 |  [apiExplorer](./rest.restserverresolvedoptions.apiexplorer.md) | [ApiExplorerOptions](./rest.apiexploreroptions.md) |  |
-|  [basePath](./rest.restserverresolvedoptions.basepath.md) | string | Base path for API/static routes |
+|  [basePath?](./rest.restserverresolvedoptions.basepath.md) | string | <i>(Optional)</i> Base path for API/static routes |
 |  [cors](./rest.restserverresolvedoptions.cors.md) | cors.CorsOptions |  |
 |  [expressSettings](./rest.restserverresolvedoptions.expresssettings.md) | { \[name: string\]: any; } |  |
-|  [listenOnStart](./rest.restserverresolvedoptions.listenonstart.md) | boolean | Set this flag to <code>false</code> to not listen on connections when the REST server is started. It's useful to mount a LoopBack REST server as a route to the facade Express application. If not set, the value is default to <code>true</code>. |
+|  [listenOnStart?](./rest.restserverresolvedoptions.listenonstart.md) | boolean | <i>(Optional)</i> Set this flag to <code>false</code> to not listen on connections when the REST server is started. It's useful to mount a LoopBack REST server as a route to the facade Express application. If not set, the value is default to <code>true</code>. |
 |  [openApiSpec](./rest.restserverresolvedoptions.openapispec.md) | [OpenApiSpecOptions](./rest.openapispecoptions.md) |  |
-|  [path](./rest.restserverresolvedoptions.path.md) | string |  |
+|  [path?](./rest.restserverresolvedoptions.path.md) | string | <i>(Optional)</i> |
 |  [port](./rest.restserverresolvedoptions.port.md) | number |  |
-|  [requestBodyParser](./rest.restserverresolvedoptions.requestbodyparser.md) | [RequestBodyParserOptions](./rest.requestbodyparseroptions.md) |  |
+|  [requestBodyParser?](./rest.restserverresolvedoptions.requestbodyparser.md) | [RequestBodyParserOptions](./rest.requestbodyparseroptions.md) | <i>(Optional)</i> |
 |  [router](./rest.restserverresolvedoptions.router.md) | [RestRouterOptions](./rest.restrouteroptions.md) |  |
-|  [sequence](./rest.restserverresolvedoptions.sequence.md) | [Constructor](./context.constructor.md)<!-- -->&lt;[SequenceHandler](./rest.sequencehandler.md)<!-- -->&gt; |  |
+|  [sequence?](./rest.restserverresolvedoptions.sequence.md) | [Constructor](./context.constructor.md)<!-- -->&lt;[SequenceHandler](./rest.sequencehandler.md)<!-- -->&gt; | <i>(Optional)</i> |
 
 

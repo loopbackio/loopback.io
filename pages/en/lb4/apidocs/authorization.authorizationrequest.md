@@ -26,7 +26,7 @@ export interface AuthorizationRequest
 |  Property | Type | Description |
 |  --- | --- | --- |
 |  [action](./authorization.authorizationrequest.action.md) | string | The operation that the requestor performs on the resource. |
-|  [domain](./authorization.authorizationrequest.domain.md) | string | The domain (realm/tenant) |
+|  [domain?](./authorization.authorizationrequest.domain.md) | string | <i>(Optional)</i> The domain (realm/tenant) |
 |  [object](./authorization.authorizationrequest.object.md) | string | The resource that is going to be accessed. |
 |  [subject](./authorization.authorizationrequest.subject.md) | string | The requestor that wants to access a resource. |
 

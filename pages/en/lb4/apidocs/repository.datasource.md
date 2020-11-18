@@ -25,7 +25,7 @@ export interface DataSource
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [connector](./repository.datasource.connector.md) | [Connector](./repository.connector.md) |  |
+|  [connector?](./repository.datasource.connector.md) | [Connector](./repository.connector.md) | <i>(Optional)</i> |
 |  [name](./repository.datasource.name.md) | string |  |
 |  [settings](./repository.datasource.settings.md) | [AnyObject](./repository.anyobject.md) |  |
 

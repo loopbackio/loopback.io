@@ -18,4 +18,6 @@ permalink: /doc/en/lb4/apidocs.rest.restcomponentconfig.html
 ```typescript
 export declare type RestComponentConfig = RestServerConfig;
 ```
+<b>References:</b> [RestServerConfig](./rest.restserverconfig.md)
+
 

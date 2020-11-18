@@ -26,8 +26,8 @@ export interface InterceptorBindingOptions extends BindingFromClassOptions
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [global](./context.interceptorbindingoptions.global.md) | boolean | Global or local interceptor |
-|  [group](./context.interceptorbindingoptions.group.md) | string | Group name for a global interceptor |
-|  [source](./context.interceptorbindingoptions.source.md) | string \| string\[\] | Source filter for a global interceptor |
+|  [global?](./context.interceptorbindingoptions.global.md) | boolean | <i>(Optional)</i> Global or local interceptor |
+|  [group?](./context.interceptorbindingoptions.group.md) | string | <i>(Optional)</i> Group name for a global interceptor |
+|  [source?](./context.interceptorbindingoptions.source.md) | string \| string\[\] | <i>(Optional)</i> Source filter for a global interceptor |
 
 

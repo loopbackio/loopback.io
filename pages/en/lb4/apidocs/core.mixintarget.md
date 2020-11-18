@@ -22,6 +22,7 @@ export declare type MixinTarget<T extends object> = Constructor<{
     [P in keyof T]: T[P];
 }>;
 ```
+<b>References:</b> [Constructor](./context.constructor.md)
 
 ## Example
 

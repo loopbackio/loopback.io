@@ -20,4 +20,6 @@ Filter without `where` property
 ```typescript
 export declare type FilterExcludingWhere<MT extends object = AnyObject> = Omit<Filter<MT>, 'where'>;
 ```
+<b>References:</b> [Filter](./filter.filter.md)
+
 

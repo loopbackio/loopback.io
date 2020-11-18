@@ -26,7 +26,7 @@ export declare class AuthorizationError extends Error
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [code](./authorization.authorizationerror.code.md) |  | string | Machine readable code, can be understood by any clients |
-|  [statusCode](./authorization.authorizationerror.statuscode.md) |  | number | The status code for HTTP requests |
+|  [code?](./authorization.authorizationerror.code.md) |  | string | <i>(Optional)</i> Machine readable code, can be understood by any clients |
+|  [statusCode?](./authorization.authorizationerror.statuscode.md) |  | number | <i>(Optional)</i> The status code for HTTP requests |
 
 

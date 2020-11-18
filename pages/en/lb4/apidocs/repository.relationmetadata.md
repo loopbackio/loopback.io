@@ -20,4 +20,6 @@ A union type describing all possible Relation metadata objects.
 ```typescript
 export declare type RelationMetadata = HasManyDefinition | BelongsToDefinition | HasOneDefinition | RelationDefinitionBase;
 ```
+<b>References:</b> [HasManyDefinition](./repository.hasmanydefinition.md)<!-- -->, [BelongsToDefinition](./repository.belongstodefinition.md)<!-- -->, [HasOneDefinition](./repository.hasonedefinition.md)<!-- -->, [RelationDefinitionBase](./repository.relationdefinitionbase.md)
+
 

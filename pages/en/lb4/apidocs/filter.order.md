@@ -24,4 +24,6 @@ export declare type Order<MT = AnyObject> = {
     [P in keyof MT]: Direction;
 };
 ```
+<b>References:</b> [Direction](./filter.direction.md)
+
 

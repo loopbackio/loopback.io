@@ -18,13 +18,14 @@ Constructs a new instance of the `LifeCycleObserverRegistry` class
 <b>Signature:</b>
 
 ```typescript
-constructor(observersView: ContextView<LifeCycleObserver>, options?: LifeCycleObserverOptions);
+constructor(context: Context, observersView: ContextView<LifeCycleObserver>, options?: LifeCycleObserverOptions);
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
+|  context | [Context](./context.context.md) |  |
 |  observersView | [ContextView](./context.contextview.md)<!-- -->&lt;[LifeCycleObserver](./core.lifecycleobserver.md)<!-- -->&gt; |  |
 |  options | [LifeCycleObserverOptions](./core.lifecycleobserveroptions.md) |  |
 

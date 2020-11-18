@@ -20,4 +20,6 @@ Find a route matching the incoming request. Throw an error when no route was fou
 ```typescript
 export declare type FindRoute = (request: Request) => ResolvedRoute;
 ```
+<b>References:</b> [ResolvedRoute](./rest.resolvedroute.md)
+
 

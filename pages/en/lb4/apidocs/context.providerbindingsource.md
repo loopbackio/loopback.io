@@ -23,4 +23,6 @@ export declare type ProviderBindingSource<T> = {
     value: Constructor<Provider<T>>;
 };
 ```
+<b>References:</b> [BindingType.PROVIDER](./context.bindingtype.provider.md)<!-- -->, [Constructor](./context.constructor.md)<!-- -->, [Provider](./context.provider.md)
+
 

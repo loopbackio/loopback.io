@@ -20,4 +20,6 @@ Create the Promise type for `T`<!-- -->. If `T` extends `Promise`<!-- -->, the t
 ```typescript
 export declare type AsValueOrPromise<T> = T extends Promise<unknown> ? T : ValueOrPromise<T>;
 ```
+<b>References:</b> [ValueOrPromise](./context.valueorpromise.md)
+
 

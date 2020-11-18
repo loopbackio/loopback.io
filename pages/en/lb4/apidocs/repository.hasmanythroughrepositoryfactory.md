@@ -25,4 +25,6 @@ export declare type HasManyThroughRepositoryFactory<TargetEntity extends Entity,
     inclusionResolver: InclusionResolver<Entity, TargetEntity>;
 };
 ```
+<b>References:</b> [Entity](./repository.entity.md)<!-- -->, [HasManyThroughRepository](./repository.hasmanythroughrepository.md)<!-- -->, [InclusionResolver](./repository.inclusionresolver.md)
+
 

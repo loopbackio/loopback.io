@@ -20,4 +20,6 @@ Key for metadata access via reflection
 ```typescript
 export declare type MetadataKey<T, D extends DecoratorType> = MetadataAccessor<T, D> | string;
 ```
+<b>References:</b> [DecoratorType](./metadata.decoratortype.md)<!-- -->, [MetadataAccessor](./metadata.metadataaccessor.md)
+
 

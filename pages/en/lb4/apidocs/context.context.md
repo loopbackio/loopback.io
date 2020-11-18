@@ -33,7 +33,7 @@ export declare class Context extends EventEmitter
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
 |  [\_debug](./context.context._debug.md) |  | Debugger | A debug function which can be overridden by subclasses. |
-|  [\_parent](./context.context._parent.md) |  | [Context](./context.context.md) | Parent context |
+|  [\_parent?](./context.context._parent.md) |  | [Context](./context.context.md) | <i>(Optional)</i> Parent context |
 |  [configResolver](./context.context.configresolver.md) |  | [ConfigurationResolver](./context.configurationresolver.md) | Configuration resolver |
 |  [name](./context.context.name.md) |  | string | Name of the context |
 |  [registry](./context.context.registry.md) |  | Map&lt;string, [Binding](./context.binding.md)<!-- -->&gt; | Key to binding map as the internal registry |

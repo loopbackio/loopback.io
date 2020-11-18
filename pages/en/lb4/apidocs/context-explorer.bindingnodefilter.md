@@ -20,4 +20,6 @@ A filter function to control if a binding is to be rendered
 ```typescript
 export declare type BindingNodeFilter = (binding: ContextBinding) => boolean;
 ```
+<b>References:</b> [ContextBinding](./context-explorer.contextbinding.md)
+
 

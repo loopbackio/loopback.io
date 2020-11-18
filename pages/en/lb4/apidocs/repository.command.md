@@ -20,4 +20,6 @@ Type for a command
 ```typescript
 export declare type Command = string | AnyObject;
 ```
+<b>References:</b> [AnyObject](./repository.anyobject.md)
+
 

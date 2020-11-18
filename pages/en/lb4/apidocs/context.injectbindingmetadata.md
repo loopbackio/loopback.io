@@ -26,6 +26,6 @@ export interface InjectBindingMetadata extends InjectionMetadata
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [bindingCreation](./context.injectbindingmetadata.bindingcreation.md) | [BindingCreationPolicy](./context.bindingcreationpolicy.md) | Controls how the underlying binding is resolved/created |
+|  [bindingCreation?](./context.injectbindingmetadata.bindingcreation.md) | [BindingCreationPolicy](./context.bindingcreationpolicy.md) | <i>(Optional)</i> Controls how the underlying binding is resolved/created |
 
 

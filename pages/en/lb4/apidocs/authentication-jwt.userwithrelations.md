@@ -18,4 +18,6 @@ permalink: /doc/en/lb4/apidocs.authentication-jwt.userwithrelations.html
 ```typescript
 export declare type UserWithRelations = User & UserRelations;
 ```
+<b>References:</b> [User](./authentication-jwt.user.md)<!-- -->, [UserRelations](./authentication-jwt.userrelations.md)
+
 

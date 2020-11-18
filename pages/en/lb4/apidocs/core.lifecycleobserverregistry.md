@@ -26,12 +26,13 @@ export declare class LifeCycleObserverRegistry implements LifeCycleObserver
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)(observersView, options)](./core.lifecycleobserverregistry._constructor_.md) |  | Constructs a new instance of the <code>LifeCycleObserverRegistry</code> class |
+|  [(constructor)(context, observersView, options)](./core.lifecycleobserverregistry._constructor_.md) |  | Constructs a new instance of the <code>LifeCycleObserverRegistry</code> class |
 
 ## Properties
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
+|  [context](./core.lifecycleobserverregistry.context.md) |  | [Context](./context.context.md) |  |
 |  [observersView](./core.lifecycleobserverregistry.observersview.md) |  | [ContextView](./context.contextview.md)<!-- -->&lt;[LifeCycleObserver](./core.lifecycleobserver.md)<!-- -->&gt; |  |
 |  [options](./core.lifecycleobserverregistry.options.md) |  | [LifeCycleObserverOptions](./core.lifecycleobserveroptions.md) |  |
 

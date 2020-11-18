@@ -26,6 +26,6 @@ export interface MiddlewareInterceptorBindingOptions extends BaseMiddlewareBindi
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [global](./express.middlewareinterceptorbindingoptions.global.md) | boolean | A flag to control if the interceptor should be global. Default to <code>true</code>. |
+|  [global?](./express.middlewareinterceptorbindingoptions.global.md) | boolean | <i>(Optional)</i> A flag to control if the interceptor should be global. Default to <code>true</code>. |
 
 

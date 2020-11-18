@@ -22,6 +22,7 @@ export declare type AsyncProxy<T> = {
     [P in keyof T]: AsInterceptedFunction<T[P]>;
 };
 ```
+<b>References:</b> [AsInterceptedFunction](./context.asinterceptedfunction.md)
 
 ## Example
 

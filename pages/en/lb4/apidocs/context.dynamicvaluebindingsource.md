@@ -23,4 +23,6 @@ export declare type DynamicValueBindingSource<T> = {
     value: ValueFactory<T> | DynamicValueProviderClass<T>;
 };
 ```
+<b>References:</b> [BindingType.DYNAMIC\_VALUE](./context.bindingtype.dynamic_value.md)<!-- -->, [ValueFactory](./context.valuefactory.md)<!-- -->, [DynamicValueProviderClass](./context.dynamicvalueproviderclass.md)
+
 

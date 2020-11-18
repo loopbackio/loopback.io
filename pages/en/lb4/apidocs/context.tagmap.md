@@ -18,4 +18,6 @@ permalink: /doc/en/lb4/apidocs.context.tagmap.html
 ```typescript
 export declare type TagMap = MapObject<any>;
 ```
+<b>References:</b> [MapObject](./context.mapobject.md)
+
 

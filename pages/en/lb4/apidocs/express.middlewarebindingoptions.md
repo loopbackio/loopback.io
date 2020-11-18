@@ -26,8 +26,8 @@ export interface MiddlewareBindingOptions extends BaseMiddlewareBindingOptions<M
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [chain](./express.middlewarebindingoptions.chain.md) | string | Name of the middleware extension point. Default to <code>DEFAULT_MIDDLEWARE_CHAIN</code>. |
-|  [downstreamGroups](./express.middlewarebindingoptions.downstreamgroups.md) | string \| string\[\] | An array of group names for downstream middleware in the cascading order.<!-- -->For example, the <code>sendResponse</code> depends on <code>invokeMethod</code> for response processing. The <code>downstreamGroups</code> for <code>sendResponse</code> should be <code>['invokeMethod']</code>. The order of groups in the array does not matter. |
-|  [upstreamGroups](./express.middlewarebindingoptions.upstreamgroups.md) | string \| string\[\] | An array of group names for upstream middleware in the cascading order.<!-- -->For example, the <code>invokeMethod</code> depends on <code>parseParams</code> for request processing. The <code>upstreamGroups</code> for <code>invokeMethod</code> should be <code>['parseParams']</code>. The order of groups in the array does not matter. |
+|  [chain?](./express.middlewarebindingoptions.chain.md) | string | <i>(Optional)</i> Name of the middleware extension point. Default to <code>DEFAULT_MIDDLEWARE_CHAIN</code>. |
+|  [downstreamGroups?](./express.middlewarebindingoptions.downstreamgroups.md) | string \| string\[\] | <i>(Optional)</i> An array of group names for downstream middleware in the cascading order.<!-- -->For example, the <code>sendResponse</code> depends on <code>invokeMethod</code> for response processing. The <code>downstreamGroups</code> for <code>sendResponse</code> should be <code>['invokeMethod']</code>. The order of groups in the array does not matter. |
+|  [upstreamGroups?](./express.middlewarebindingoptions.upstreamgroups.md) | string \| string\[\] | <i>(Optional)</i> An array of group names for upstream middleware in the cascading order.<!-- -->For example, the <code>invokeMethod</code> depends on <code>parseParams</code> for request processing. The <code>upstreamGroups</code> for <code>invokeMethod</code> should be <code>['parseParams']</code>. The order of groups in the array does not matter. |
 
 

@@ -20,4 +20,6 @@ JSON values - primitive - object - array
 ```typescript
 export declare type JSONValue = JSONPrimitive | JSONObject | JSONArray;
 ```
+<b>References:</b> [JSONPrimitive](./context.jsonprimitive.md)<!-- -->, [JSONObject](./context.jsonobject.md)<!-- -->, [JSONArray](./context.jsonarray.md)
+
 

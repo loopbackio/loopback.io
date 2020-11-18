@@ -24,4 +24,6 @@ export declare type BindingEvent = {
     operation: 'tag' | 'scope' | 'value' | string;
 };
 ```
+<b>References:</b> [Binding](./context.binding.md)
+
 

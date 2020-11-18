@@ -46,6 +46,7 @@ This module also serves as a standalone extension to Express to provide extensib
 |  [createMiddlewareInterceptorBinding(middlewareProviderClass, options)](./express.createmiddlewareinterceptorbinding.md) | Create a binding for the middleware based interceptor |
 |  [defineInterceptorProvider(middlewareFactory, defaultMiddlewareConfig, options)](./express.defineinterceptorprovider.md) | Define a provider class that wraps the middleware as an interceptor |
 |  [executeExpressRequestHandler(handler, request, response)](./express.executeexpressrequesthandler.md) | Execute an Express-style callback-based request handler. |
+|  [getMiddlewareContext(request)](./express.getmiddlewarecontext.md) | A helper function to retrieve the MiddlewareContext/RequestContext from the request object |
 |  [invokeExpressMiddleware(middlewareCtx, handlers)](./express.invokeexpressmiddleware.md) | Invoke a list of Express middleware handler functions |
 |  [invokeMiddleware(middlewareCtx, options)](./express.invokemiddleware.md) | Discover and invoke registered middleware in a chain for the given extension point. |
 |  [MiddlewareMixin(superClass)](./express.middlewaremixin.md) |  |

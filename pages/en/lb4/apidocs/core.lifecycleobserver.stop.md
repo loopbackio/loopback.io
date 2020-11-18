@@ -18,8 +18,15 @@ The method to be invoked during `stop`
 <b>Signature:</b>
 
 ```typescript
-stop?(): ValueOrPromise<void>;
+stop?(...injectedArgs: unknown[]): ValueOrPromise<void>;
 ```
+
+## Parameters
+
+|  Parameter | Type | Description |
+|  --- | --- | --- |
+|  injectedArgs | unknown\[\] |  |
+
 <b>Returns:</b>
 
 [ValueOrPromise](./context.valueorpromise.md)<!-- -->&lt;void&gt;

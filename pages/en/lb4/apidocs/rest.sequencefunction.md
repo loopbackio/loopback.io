@@ -20,4 +20,6 @@ A sequence function is a function implementing a custom sequence of actions to h
 ```typescript
 export declare type SequenceFunction = (context: RequestContext, sequence: DefaultSequence) => ValueOrPromise<void>;
 ```
+<b>References:</b> [RequestContext](./rest.requestcontext.md)<!-- -->, [DefaultSequence](./rest.defaultsequence.md)<!-- -->, [ValueOrPromise](./context.valueorpromise.md)
+
 

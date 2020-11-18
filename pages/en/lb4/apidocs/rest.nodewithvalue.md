@@ -20,4 +20,6 @@ export declare type NodeWithValue<T> = Node<T> & {
     value: T;
 };
 ```
+<b>References:</b> [Node](./rest.node.md)
+
 

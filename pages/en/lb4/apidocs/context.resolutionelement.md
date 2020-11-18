@@ -20,4 +20,6 @@ Binding or injection elements tracked by resolution sessions
 ```typescript
 export declare type ResolutionElement = BindingElement | InjectionElement;
 ```
+<b>References:</b> [BindingElement](./context.bindingelement.md)<!-- -->, [InjectionElement](./context.injectionelement.md)
+
 

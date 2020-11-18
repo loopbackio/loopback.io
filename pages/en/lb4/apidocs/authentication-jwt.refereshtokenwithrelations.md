@@ -18,4 +18,6 @@ permalink: /doc/en/lb4/apidocs.authentication-jwt.refereshtokenwithrelations.htm
 ```typescript
 export declare type RefereshTokenWithRelations = RefreshToken & RefreshTokenRelations;
 ```
+<b>References:</b> [RefreshToken](./authentication-jwt.refreshtoken.md)<!-- -->, [RefreshTokenRelations](./authentication-jwt.refreshtokenrelations.md)
+
 

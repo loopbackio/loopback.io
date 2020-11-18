@@ -20,6 +20,7 @@ Where clause
 ```typescript
 export declare type Where<MT extends object = AnyObject> = Condition<MT> | AndClause<MT> | OrClause<MT>;
 ```
+<b>References:</b> [Condition](./filter.condition.md)<!-- -->, [AndClause](./filter.andclause.md)<!-- -->, [OrClause](./filter.orclause.md)
 
 ## Example
 

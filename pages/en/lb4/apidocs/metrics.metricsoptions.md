@@ -25,9 +25,9 @@ export interface MetricsOptions
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [defaultMetrics](./metrics.metricsoptions.defaultmetrics.md) | { disabled?: boolean; } &amp; DefaultMetricsCollectorConfiguration |  |
-|  [endpoint](./metrics.metricsoptions.endpoint.md) | { disabled?: boolean; basePath?: string; } |  |
-|  [openApiSpec](./metrics.metricsoptions.openapispec.md) | boolean |  |
-|  [pushGateway](./metrics.metricsoptions.pushgateway.md) | { disabled?: boolean; url: string; interval?: number; } |  |
+|  [defaultMetrics?](./metrics.metricsoptions.defaultmetrics.md) | { disabled?: boolean; } &amp; DefaultMetricsCollectorConfiguration | <i>(Optional)</i> |
+|  [endpoint?](./metrics.metricsoptions.endpoint.md) | { disabled?: boolean; basePath?: string; } | <i>(Optional)</i> |
+|  [openApiSpec?](./metrics.metricsoptions.openapispec.md) | boolean | <i>(Optional)</i> |
+|  [pushGateway?](./metrics.metricsoptions.pushgateway.md) | { disabled?: boolean; url: string; interval?: number; } | <i>(Optional)</i> |
 
 

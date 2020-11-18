@@ -25,8 +25,8 @@ export interface LifeCycleObserver
 
 |  Method | Description |
 |  --- | --- |
-|  [init()](./core.lifecycleobserver.init.md) | The method to be invoked during <code>init</code>. It will only be called at most once for a given application instance. |
-|  [start()](./core.lifecycleobserver.start.md) | The method to be invoked during <code>start</code> |
-|  [stop()](./core.lifecycleobserver.stop.md) | The method to be invoked during <code>stop</code> |
+|  [init(injectedArgs)?](./core.lifecycleobserver.init.md) | <i>(Optional)</i> The method to be invoked during <code>init</code>. It will only be called at most once for a given application instance. |
+|  [start(injectedArgs)?](./core.lifecycleobserver.start.md) | <i>(Optional)</i> The method to be invoked during <code>start</code> |
+|  [stop(injectedArgs)?](./core.lifecycleobserver.stop.md) | <i>(Optional)</i> The method to be invoked during <code>stop</code> |
 
 

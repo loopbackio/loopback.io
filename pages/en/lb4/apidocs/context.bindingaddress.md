@@ -18,4 +18,6 @@ permalink: /doc/en/lb4/apidocs.context.bindingaddress.html
 ```typescript
 export declare type BindingAddress<T = unknown> = string | BindingKey<T>;
 ```
+<b>References:</b> [BindingKey](./context.bindingkey.md)
+
 

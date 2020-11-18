@@ -18,4 +18,6 @@ permalink: /doc/en/lb4/apidocs.rest.routerspec.html
 ```typescript
 export declare type RouterSpec = Pick<OpenApiSpec, 'paths' | 'components' | 'tags'>;
 ```
+<b>References:</b> [OpenApiSpec](./openapi-v3.openapispec.md)
+
 

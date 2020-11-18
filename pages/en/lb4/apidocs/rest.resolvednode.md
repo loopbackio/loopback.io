@@ -24,6 +24,6 @@ export interface ResolvedNode<T>
 |  Property | Type | Description |
 |  --- | --- | --- |
 |  [node](./rest.resolvednode.node.md) | [Node](./rest.node.md)<!-- -->&lt;T&gt; |  |
-|  [params](./rest.resolvednode.params.md) | [PathParameterValues](./rest.pathparametervalues.md) |  |
+|  [params?](./rest.resolvednode.params.md) | [PathParameterValues](./rest.pathparametervalues.md) | <i>(Optional)</i> |
 
 

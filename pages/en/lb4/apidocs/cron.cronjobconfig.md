@@ -20,4 +20,6 @@ Configuration for a cron job.
 ```typescript
 export declare type CronJobConfig = Partial<CronJobOptions>;
 ```
+<b>References:</b> [CronJobOptions](./cron.cronjoboptions.md)
+
 

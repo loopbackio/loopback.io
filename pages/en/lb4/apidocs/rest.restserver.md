@@ -57,7 +57,7 @@ const server = await app.get('servers.foo');
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [\_expressApp](./rest.restserver._expressapp.md) |  | express.Application |  |
+|  [\_expressApp?](./rest.restserver._expressapp.md) |  | express.Application | <i>(Optional)</i> |
 |  [\_httpHandler](./rest.restserver._httphandler.md) |  | [HttpHandler](./rest.httphandler.md) |  |
 |  [\_httpServer](./rest.restserver._httpserver.md) |  | [HttpServer](./http-server.httpserver.md) \| undefined |  |
 |  [\_OASEnhancer](./rest.restserver._oasenhancer.md) |  | [OASEnhancerService](./openapi-v3.oasenhancerservice.md) | Handle incoming HTTP(S) request by invoking the corresponding Controller method via the configured Sequence. |

@@ -18,8 +18,15 @@ The method to be invoked during `start`
 <b>Signature:</b>
 
 ```typescript
-start?(): ValueOrPromise<void>;
+start?(...injectedArgs: unknown[]): ValueOrPromise<void>;
 ```
+
+## Parameters
+
+|  Parameter | Type | Description |
+|  --- | --- | --- |
+|  injectedArgs | unknown\[\] |  |
+
 <b>Returns:</b>
 
 [ValueOrPromise](./context.valueorpromise.md)<!-- -->&lt;void&gt;

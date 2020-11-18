@@ -26,7 +26,7 @@ export interface UserProfile extends Principal
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [email](./security.userprofile.email.md) | string |  |
-|  [name](./security.userprofile.name.md) | string |  |
+|  [email?](./security.userprofile.email.md) | string | <i>(Optional)</i> |
+|  [name?](./security.userprofile.name.md) | string | <i>(Optional)</i> |
 
 

@@ -20,4 +20,6 @@ Synchronous listener for context events
 ```typescript
 export declare type ContextEventListener = (event: ContextEvent) => void;
 ```
+<b>References:</b> [ContextEvent](./context.contextevent.md)
+
 
