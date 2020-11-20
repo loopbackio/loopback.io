@@ -4,27 +4,26 @@
       "group:recommended",
       "helpers:disableTypesNodeMajor"
     ],
-  
+
     "automerge": false,
     "branchPrefix": "renovate/",
     "ignoreUnstable": true,
     "rangeStrategy": "bump",
     "statusCheckVerify": true,
     "updateNotScheduled": true,
-  
+
     "lockFileMaintenance": {
       "enabled": true,
       "schedule": "before 5am on monday"
     },
-  
+
     "prConcurrentLimit": 5,
     "prCreation": "immediate",
     "prHourlyLimit": 2,
-  
-    "semanticCommits": true,
-    "semanticCommitType": "chore",
-    "semanticCommitScope": null,
-  
+
+    "semanticCommits": false,
+    "commitMessageTopic": "{{depName}}",
+
     "separateMajorMinor": true,
     "separateMinorPatch": false,
     "packageRules": [
@@ -41,7 +40,7 @@
       "enabled": true,
       "supportPolicy": ["lts", "current"]
     },
-  
+
     "masterIssue": true,
     "masterIssueApproval": false,
     "masterIssueAutoclose": true
