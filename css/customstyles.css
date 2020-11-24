@@ -1314,16 +1314,6 @@ td pre {
   font-weight: bold;
 }
 
-.v4notice {
-    border: 1px solid #dadfff;
-    margin: 10px 0;
-    padding: 23px;
-    font-size: 20px;
-    border-radius: 3px;
-    background-color: #f3f5ff;
-    text-align:center;
-}
-
 .code-caption {
     color: #7b7b7b;
     font-size: 110%;
