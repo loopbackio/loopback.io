@@ -2,6 +2,11 @@
 
 The official MongoDB connector for the LoopBack framework.
 
+> We are working on a new major release 6.0. The `master` branch contains
+> unreleased changes breaking backwards compatibility. Until 6.0 is released,
+> we will be back-porting backwards compatible changes to `5.x` branch and
+> publishing new releases from there.
+
 ## Installation
 
 In your application root directory, enter this command to install the connector:
@@ -13,6 +18,18 @@ npm install loopback-connector-mongodb --save
 This installs the module from npm and adds it as a dependency to the application's `package.json` file.
 
 If you create a MongoDB data source using the data source generator as described below, you don't have to do this, since the generator will run `npm install` for you.
+
+## Supported versions
+
+**Starting from the version 6.0.0, this connector is no longer compatible with LoopBack 3. Please use the latest 5.x version in your LoopBack 3 applications.**
+
+This module adopts the [Module Long Term Support (LTS)](http://github.com/CloudNativeJS/ModuleLTS) policy, with the following End Of Life (EOL) dates:
+
+| Version    | Status               | Published | EOL                  | LoopBack | Juggler  |
+| ---------- | -------------------- | --------- | -------------------- | ---------|----------|
+| 6.x        | Current              | Nov 2020  | Apr 2023 _(minimum)_ | 4        | 4.x      |
+| 5.x        | Active LTS           | Jun 2019  | Apr 2023             | 3, 4     | 3.x, 4.x |
+| 4.x        | Maintenance LTS      | Nov 2018  | Apr 2021             | 3, 4     | 3.x, 4.x |
 
 ## Creating a MongoDB data source
 
@@ -32,32 +49,6 @@ const config = {
   database: 'testdb',
 };
 ```
-
-<details><summary markdown="span"><strong>For LoopBack 3 users</strong></summary>
-
-Use the [Data source generator](http://loopback.io/doc/en/lb3/Data-source-generator.html) to add a MongoDB data source to your application.
-The generator will prompt for the database server hostname, port, and other settings
-required to connect to a MongoDB database. It will also run the `npm install` command above for you.
-
-The entry in the application's `/server/datasources.json` will look like this:
-
-```javascript
-"mydb": {
-  "host": "myserver",
-  "port": 27017,
-  "url":  "",
-  "database": "test",
-  "password": "mypassword",
-  "name": "mydb",
-  "user": "me",
-  "authSource" : "admin",
-  "connector": "mongodb"
-}
-```
-
-Edit `datasources.json` to add any other additional properties that you require.
-
-</details>
 
 If your username or password contains special characters like `@`, `$` etc, encode the whole
 username or password using [encodeURIComponent](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/encodeURIComponent).
@@ -131,30 +122,6 @@ If you run a MongoDB with authentification ([Docker's example here](https://gith
 
 You can set the `url` property to a connection URL in `<datasourceName>.datasources.ts` to override individual connection parameters such as `host`, `user`, and `password`. E.g `loopback:pa55w0rd@localhost:27017/testdb`.
 
-<details><summary markdown="span"><strong>For LoopBack 3 users</strong></summary>
-
-For LB3 users, you can override the global `url` property in environment-specific data source configuration files, for example for production in `datasources.production.json`, and use the individual connection parameters `host`, `user`, `password`, and `port`. To do this, you _must_ set `url` to `false`, null, or “” (empty string).
-If you set `url` to `undefined` or remove the `url` property altogether, the override will not work.
-
-For example, for production, use `datasources.production.json` as follows (for example) to overide the `url` setting in `datasources.json:
-
-```javascript
-"mydb": {
-  "host": "myserver",
-  "port": 27017,
-  "url":  false,
-  "database": "test",
-  "password": "mypassword",
-  "name": "mydb",
-  "user": "me",
-  "connector": "mongodb"
-}
-```
-
-For more information on setting data source configurations for different environments, see [Environment-specific configuration](https://loopback.io/doc/en/lb3/Environment-specific-configuration.html#data-source-configuration).
-
-</details>
-
 ### Using the mongodb+srv protocol
 
 MongoDB supports a protocol called `mongodb+srv` for connecting to replica sets without having to give the hostname of every server in the replica set.
@@ -169,19 +136,6 @@ const config = {
   protocol: 'mongodb+srv',
 };
 ```
-
-<details><summary markdown="span"><strong>For LoopBack 3 users</strong></summary>
-
-```javascript
-"mydb": {
-  "connector": "mongodb",
-  "host": "myserver",
-  "database": "test",
-  "protocol": "mongodb+srv"
-}
-```
-
-</details>
 
 Note: the port is not specified when using the `mongodb+srv` protocol and will be ignored if given.
 
@@ -208,47 +162,6 @@ See [LoopBack 4 types](http://loopback.io/doc/en/lb4/LoopBack-types.html) (or [L
 
 Type conversion is mainly handled by MongoDB. See ['node-mongodb-native'](http://mongodb.github.io/node-mongodb-native/) for details.
 
-<details><summary markdown="span"><strong>For LoopBack 3 users</strong></summary>
-
-## Customizing MongoDB configuration for tests/examples
-
-By default, examples and tests from this module assume there is a MongoDB server
-instance running on localhost at port 27017.
-
-To customize the settings, you can drop in a `.loopbackrc` file to the root directory
-of the project or the home folder.
-
-**Note**: Tests and examples in this project configure the data source using the deprecated '.loopbackrc' file method,
-which is not supported in general.
-For information on configuring the connector in a LoopBack application, please refer to [loopback.io](http://loopback.io/doc/en/lb2/MongoDB-connector.html).
-
-The .loopbackrc file is in JSON format, for example:
-
-    {
-        "dev": {
-            "mongodb": {
-                "host": "127.0.0.1",
-                "database": "test",
-                "user": "youruser",
-                "password": "yourpass",
-                "port": 27017
-            }
-        },
-        "test": {
-            "mongodb": {
-                "host": "127.0.0.1",
-                "database": "test",
-                "user": "youruser",
-                "password": "yourpass",
-                "port": 27017
-            }
-        }
-    }
-
-**Note**: user/password is only required if the MongoDB server has authentication enabled. `"authSource"` should be used if you cannot log in to your database using your credentials.
-
-</details>
-
 ## Update Operators
 
 Except the comparison and logical operators LoopBack supports in the [operator list](https://loopback.io/doc/en/lb4/Where-filter.html#operators) of `Where` filter, you can also enable [MongoDB update operators](https://docs.mongodb.com/manual/reference/operator/update/) for `update*` methods by setting the flag `allowExtendedOperators` to `true` in the datasource configuration.
@@ -258,19 +171,6 @@ Here is an example of updating the price for all the products under category `fu
 ```
 await productRepo.updateAll({ $max: { price: 100 }}, { category: {eq: 'furniture'} // where clause goes in here });
 ```
-
-<details><summary markdown="span"><strong>For LoopBack 3 users</strong></summary>
-
-```
-Product.updateAll(
-            { category: {eq: 'furniture'} // where clause goes in here },
-            {$max: {price: 100}},
-            options,
-            function(err, updateproducts) {
-           ...
-```
-
-</details>
 
 {% include tip.html content="you **will not** need the dollar sign `'$'` for operators in the Where
 clause." %}
@@ -318,23 +218,6 @@ export class User extends Entity {
 }
 ```
 
-<details><summary markdown="span"><strong>For LoopBack 3 users</strong></summary>
-
-```js
-{
-  "name": "User",
-  "base": "PersistedModel",
-  "idInjection": false,
-  "options": {
-    "validateUpsert": true,
-    "strictObjectIDCoercion": true
-  },
-...
-}
-```
-
-</details>
-
 ### Property scope
 
 This scope would only convert an ObjectId-like string to `ObjectId` with a certain property in the model.
@@ -347,24 +230,6 @@ This scope would only convert an ObjectId-like string to `ObjectId` with a certa
   }
   id: string;
 ```
-
-<details><summary markdown="span"><strong>For LoopBack 3 users</strong></summary>
-
-```js
-  "properties": {
-    {
-      "id": {
-        "type": "String",
-        "id": true,
-        "required":true,
-        "mongodb": {"dataType":"ObjectId"}
-      },
-      // ..
-    }
-  }
-```
-
-</details>
 
 Also notice that for RELATIONS, if the primary key/source key has set to enforce ObjectId coercion
 (no matter by `strictObjectIDCoercion: true` or `dataType: 'ObjectId'`). The corresponding foreign key will need to have it
@@ -426,33 +291,6 @@ export class User extends Entity {
   name?: string;
 }
 ```
-
-<details><summary markdown="span"><strong>For LoopBack 3 users</strong></summary>
-
-```js
-{
-  "name": "User",
-  "options": {
-    "mongodb": {
-      "collection": "Custom_Collection_User",  //custom name
-    },
-  },
-  "properties": {
-    {
-      "id": {
-        "type": "String",
-        "id": true,
-        "required":true,
-      },
-      "name": {
-        "type": "String",
-        "mongodb": {"fieldName": "Custom_Name"},}, //custom name
-    }
-  },
-}
-```
-
-</details>
 
 {% include important.html content="Since in MongoDB `_id` is reserved for the primary key, LoopBack **does not** allow customization of the field name for the id property. Please use `id` as is. Customizing the id property would cause errors." %}
 
