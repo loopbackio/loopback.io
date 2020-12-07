@@ -13,6 +13,14 @@ permalink: /doc/en/lb4/changelog.example-greeter-extension.html
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.1.14](https://github.com/strongloop/loopback-next/compare/@loopback/example-greeter-extension@2.1.13...@loopback/example-greeter-extension@2.1.14) (2020-11-18)
+
+**Note:** Version bump only for package @loopback/example-greeter-extension
+
+
+
+
+
 ## [2.1.13](https://github.com/strongloop/loopback-next/compare/@loopback/example-greeter-extension@2.1.12...@loopback/example-greeter-extension@2.1.13) (2020-11-05)
 
 

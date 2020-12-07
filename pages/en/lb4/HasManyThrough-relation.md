@@ -464,13 +464,13 @@ allows users to retrieve all doctors along with their related patients through
 the following code at the repository level:
 
 ```ts
-doctorRepository.find({include: [{relation: 'patients'}]});
+doctorRepository.find({include: ['patients']});
 ```
 
 or use APIs with controllers:
 
 ```
-GET http://localhost:3000/doctors?filter[include][][relation]=patients
+GET http://localhost:3000/doctors?filter[include][]=patients
 ```
 
 ### Enable/disable the inclusion resolvers
@@ -527,13 +527,13 @@ export class DoctorRepository extends DefaultCrudRepository<
   if you process data at the repository level:
 
   ```ts
-  doctorRepository.find({include: [{relation: 'patients'}]});
+  doctorRepository.find({include: ['patients']});
   ```
 
   this is the same as the url:
 
   ```
-  GET http://localhost:3000/doctors?filter[include][][relation]=patients
+  GET http://localhost:3000/doctors?filter[include][]=patients
   ```
 
   which returns:
@@ -552,9 +552,6 @@ export class DoctorRepository extends DefaultCrudRepository<
     },
   ];
   ```
-
-{% include note.html content="The query syntax is a slightly different from LB3. We are also working on simplifying the query syntax. Check our GitHub issue for more information:
-[Simpler Syntax for Inclusion](https://github.com/strongloop/loopback-next/issues/3205)" %}
 
 - You can delete a relation from `inclusionResolvers` to disable the inclusion
   for a certain relation. e.g

@@ -411,13 +411,13 @@ allows users to retrieve all orders along with their related customers through
 the following code at the repository level:
 
 ```ts
-orderRepo.find({include: [{relation: 'customer'}]});
+orderRepo.find({include: ['customer']});
 ```
 
 or use APIs with controllers:
 
 ```
-GET http://localhost:3000/orders?filter[include][][relation]=customer
+GET http://localhost:3000/orders?filter[include][]=customer
 ```
 
 ### Enable/disable the inclusion resolvers
@@ -464,13 +464,13 @@ export class OrderRepository extends DefaultCrudRepository {
   if you process data at the repository level:
 
   ```ts
-  orderRepository.find({include: [{relation: 'customer'}]});
+  orderRepository.find({include: ['customer']});
   ```
 
   this is the same as the url:
 
   ```
-  GET http://localhost:3000/orders?filter[include][][relation]=customer
+  GET http://localhost:3000/orders?filter[include][]=customer
   ```
 
   which returns:
@@ -505,8 +505,6 @@ export class OrderRepository extends DefaultCrudRepository {
     },
   ];
   ```
-
-{% include note.html content="The query syntax is a slightly different from LB3. We are also thinking about simplifying the query syntax. Check our GitHub issue for more information: [Simpler Syntax for Inclusion](https://github.com/strongloop/loopback-next/issues/3205)" %}
 
 Here is a diagram to make this more intuitive:
 

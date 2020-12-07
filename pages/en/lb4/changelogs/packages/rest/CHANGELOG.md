@@ -13,6 +13,17 @@ permalink: /doc/en/lb4/changelog.rest.html
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [9.1.0](https://github.com/strongloop/loopback-next/compare/@loopback/rest@9.0.0...@loopback/rest@9.1.0) (2020-11-18)
+
+
+### Features
+
+* **express:** set up MIDDLEWARE_CONTEXT for request object in constructor ([e086e7b](https://github.com/strongloop/loopback-next/commit/e086e7bcf64a8aa651490784502adfe787156eef))
+
+
+
+
+
 # [9.0.0](https://github.com/strongloop/loopback-next/compare/@loopback/rest@8.0.0...@loopback/rest@9.0.0) (2020-11-05)
 
 
@@ -34,12 +45,13 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### BREAKING CHANGES
 
+* **rest:** Message printed by REST LogError action changed from
+`Unhandled error` to `Request failed`. Message pattern rules
+(e.g. alerting rules) based on this pattern need to be updated accordingly.
 * **rest:** If you use one of the built-in action providers as the base
 class, this commit will break you as the signature of the base class has
 changed. Otherwise the code should be backward compatible for existing
 applications.
-
-Signed-off-by: Raymond Feng <enjoyjava@gmail.com>
 
 
 
@@ -94,8 +106,6 @@ const paramDef2: ParameterObject = {
 }
 ```
 
-Signed-off-by: Renovate Bot <bot@renovateapp.com>
-
 
 
 
@@ -134,8 +144,6 @@ target application instead.
 If you are getting `npm install` errors after upgrade, then make sure
 your project lists all dependencies required by the extensions you are
 using.
-
-Signed-off-by: Miroslav Bajtoš <mbajtoss@gmail.com>
 
 
 

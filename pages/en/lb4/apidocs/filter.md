@@ -50,6 +50,7 @@ This lightweight module provides strongly-typed typings and filter builders to i
 |  [Direction](./filter.direction.md) | Order by direction |
 |  [Fields](./filter.fields.md) | Selection of fields<!-- -->Example: <code>{afieldname: true}</code> |
 |  [FilterExcludingWhere](./filter.filterexcludingwhere.md) | Filter without <code>where</code> property |
+|  [InclusionFilter](./filter.inclusionfilter.md) | Inclusion filter type e.g. 'property', {<!-- -->relation: 'property'<!-- -->} |
 |  [KeyOf](./filter.keyof.md) | Key types of a given model, excluding operators |
 |  [Operators](./filter.operators.md) | Operators for where clauses |
 |  [Order](./filter.order.md) | Order by<!-- -->Example: <code>{afieldname: 'ASC'}</code> |

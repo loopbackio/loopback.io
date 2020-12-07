@@ -13,6 +13,14 @@ permalink: /doc/en/lb4/changelog.example-access-control-migration.html
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.3.2](https://github.com/strongloop/loopback-next/compare/@loopback/example-access-control-migration@2.3.1...@loopback/example-access-control-migration@2.3.2) (2020-11-18)
+
+**Note:** Version bump only for package @loopback/example-access-control-migration
+
+
+
+
+
 ## [2.3.1](https://github.com/strongloop/loopback-next/compare/@loopback/example-access-control-migration@2.3.0...@loopback/example-access-control-migration@2.3.1) (2020-11-05)
 
 

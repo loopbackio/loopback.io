@@ -13,6 +13,14 @@ permalink: /doc/en/lb4/changelog.example-lb3-application.html
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.5.2](https://github.com/strongloop/loopback-next/compare/@loopback/example-lb3-application@2.5.1...@loopback/example-lb3-application@2.5.2) (2020-11-18)
+
+**Note:** Version bump only for package @loopback/example-lb3-application
+
+
+
+
+
 ## [2.5.1](https://github.com/strongloop/loopback-next/compare/@loopback/example-lb3-application@2.5.0...@loopback/example-lb3-application@2.5.1) (2020-11-05)
 
 

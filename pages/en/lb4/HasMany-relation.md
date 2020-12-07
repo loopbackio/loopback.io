@@ -513,13 +513,13 @@ allows users to retrieve all customers along with their related orders through
 the following code at the repository level:
 
 ```ts
-customerRepo.find({include: [{relation: 'orders'}]});
+customerRepo.find({include: ['orders']});
 ```
 
 or use APIs with controllers:
 
 ```
-GET http://localhost:3000/customers?filter[include][][relation]=orders
+GET http://localhost:3000/customers?filter[include][]=orders
 ```
 
 ### Enable/disable the inclusion resolvers
@@ -565,13 +565,13 @@ export class CustomerRepository extends DefaultCrudRepository {
   if you process data at the repository level:
 
   ```ts
-  customerRepository.find({include: [{relation: 'orders'}]});
+  customerRepository.find({include: ['orders']});
   ```
 
   this is the same as the url:
 
   ```
-  GET http://localhost:3000/customers?filter[include][][relation]=orders
+  GET http://localhost:3000/customers?filter[include][]=orders
   ```
 
   which returns:
@@ -593,9 +593,6 @@ export class CustomerRepository extends DefaultCrudRepository {
     },
   ];
   ```
-
-{% include note.html content="The query syntax is a slightly different from LB3. We are also thinking about simplifying the query syntax. Check our GitHub issue for more information:
-[Simpler Syntax for Inclusion](https://github.com/strongloop/loopback-next/issues/3205)" %}
 
 Here is a diagram to make this more intuitive:
 
@@ -621,7 +618,7 @@ To query **multiple relations**, for example, return all customers including
 their orders and address, in Node API:
 
 ```ts
-customerRepo.find({include: [{relation: 'orders'}, {relation: 'address'}]});
+customerRepo.find({include: ['orders', 'address']});
 ```
 
 Equivalently, with url, you can do:
@@ -666,7 +663,7 @@ customerRepo.find({
     {
       relation: 'orders',
       scope: {
-        include: [{relation: 'manufacturers'}],
+        include: ['manufacturers'],
       },
     },
   ],
@@ -725,7 +722,7 @@ customerRepo.find({
       relation: 'orders',
       scope: {
         where: {name: 'ToysRUs'},
-        include: [{relation: 'manufacturers'}],
+        include: ['manufacturers'],
       },
     },
   ],

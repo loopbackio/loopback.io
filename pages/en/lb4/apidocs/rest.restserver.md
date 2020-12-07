@@ -60,13 +60,13 @@ const server = await app.get('servers.foo');
 |  [\_expressApp?](./rest.restserver._expressapp.md) |  | express.Application | <i>(Optional)</i> |
 |  [\_httpHandler](./rest.restserver._httphandler.md) |  | [HttpHandler](./rest.httphandler.md) |  |
 |  [\_httpServer](./rest.restserver._httpserver.md) |  | [HttpServer](./http-server.httpserver.md) \| undefined |  |
-|  [\_OASEnhancer](./rest.restserver._oasenhancer.md) |  | [OASEnhancerService](./openapi-v3.oasenhancerservice.md) | Handle incoming HTTP(S) request by invoking the corresponding Controller method via the configured Sequence. |
 |  [\_requestHandler](./rest.restserver._requesthandler.md) |  | [HttpRequestListener](./rest.httprequestlistener.md) |  |
 |  [config](./rest.restserver.config.md) |  | [RestServerResolvedConfig](./rest.restserverresolvedconfig.md) |  |
 |  [httpHandler](./rest.restserver.httphandler.md) |  | [HttpHandler](./rest.httphandler.md) |  |
 |  [httpServer](./rest.restserver.httpserver.md) |  | [HttpServer](./http-server.httpserver.md) \| undefined |  |
 |  [listening](./rest.restserver.listening.md) |  | boolean |  |
 |  [OASEnhancer](./rest.restserver.oasenhancer.md) |  | [OASEnhancerService](./openapi-v3.oasenhancerservice.md) |  |
+|  [oasEnhancerService](./rest.restserver.oasenhancerservice.md) |  | [OASEnhancerService](./openapi-v3.oasenhancerservice.md) | Handle incoming HTTP(S) request by invoking the corresponding Controller method via the configured Sequence. |
 |  [requestHandler](./rest.restserver.requesthandler.md) |  | [HttpRequestListener](./rest.httprequestlistener.md) |  |
 |  [rootUrl](./rest.restserver.rooturl.md) |  | string \| undefined | The root url for the server without the basePath. For example, the value will be 'http://localhost:3000' regardless of the <code>basePath</code>. |
 |  [url](./rest.restserver.url.md) |  | string \| undefined | The base url for the server, including the basePath if set. For example, the value will be 'http://localhost:3000/api' if <code>basePath</code> is set to '/api'. |

@@ -18,6 +18,6 @@ To include related objects
 <b>Signature:</b>
 
 ```typescript
-include?: Inclusion[];
+include?: InclusionFilter[];
 ```
 

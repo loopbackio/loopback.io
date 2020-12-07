@@ -16,7 +16,7 @@ permalink: /doc/en/lb4/apidocs.authentication-jwt.myuserservice.finduserbyid.htm
 <b>Signature:</b>
 
 ```typescript
-findUserById(id: string): Promise<User & UserRelations>;
+findUserById(id: string): Promise<User & UserWithRelations>;
 ```
 
 ## Parameters
@@ -27,6 +27,6 @@ findUserById(id: string): Promise<User & UserRelations>;
 
 <b>Returns:</b>
 
-Promise&lt;[User](./authentication-jwt.user.md) &amp; [UserRelations](./authentication-jwt.userrelations.md)<!-- -->&gt;
+Promise&lt;[User](./authentication-jwt.user.md) &amp; [UserWithRelations](./authentication-jwt.userwithrelations.md)<!-- -->&gt;
 
 

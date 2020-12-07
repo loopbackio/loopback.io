@@ -18,7 +18,7 @@ Returns model instances that include related models of this repository that have
 <b>Signature:</b>
 
 ```typescript
-protected includeRelatedModels(entities: T[], include?: Inclusion[], options?: Options): Promise<(T & Relations)[]>;
+protected includeRelatedModels(entities: T[], include?: InclusionFilter[], options?: Options): Promise<(T & Relations)[]>;
 ```
 
 ## Parameters
@@ -26,7 +26,7 @@ protected includeRelatedModels(entities: T[], include?: Inclusion[], options?: O
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  entities | T\[\] | An array of entity instances or data |
-|  include | [Inclusion](./filter.inclusion.md)<!-- -->\[\] | Inclusion filter |
+|  include | [InclusionFilter](./filter.inclusionfilter.md)<!-- -->\[\] | Inclusion filter |
 |  options | [Options](./repository.options.md) | Options for the operations |
 
 <b>Returns:</b>

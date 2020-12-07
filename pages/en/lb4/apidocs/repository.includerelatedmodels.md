@@ -18,7 +18,7 @@ Returns model instances that include related models that have a registered resol
 <b>Signature:</b>
 
 ```typescript
-export declare function includeRelatedModels<T extends Entity, Relations extends object = {}>(targetRepository: EntityCrudRepository<T, unknown, Relations>, entities: T[], include?: Inclusion[], options?: Options): Promise<(T & Relations)[]>;
+export declare function includeRelatedModels<T extends Entity, Relations extends object = {}>(targetRepository: EntityCrudRepository<T, unknown, Relations>, entities: T[], include?: InclusionFilter[], options?: Options): Promise<(T & Relations)[]>;
 ```
 
 ## Parameters
@@ -27,7 +27,7 @@ export declare function includeRelatedModels<T extends Entity, Relations extends
 |  --- | --- | --- |
 |  targetRepository | [EntityCrudRepository](./repository.entitycrudrepository.md)<!-- -->&lt;T, unknown, Relations&gt; | The target repository where the model instances are found |
 |  entities | T\[\] | An array of entity instances or data |
-|  include | [Inclusion](./filter.inclusion.md)<!-- -->\[\] | Inclusion filter |
+|  include | [InclusionFilter](./filter.inclusionfilter.md)<!-- -->\[\] | Inclusion filter |
 |  options | [Options](./repository.options.md) | Options for the operations |
 
 <b>Returns:</b>
