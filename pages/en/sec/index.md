@@ -14,6 +14,7 @@ summary: This section provides important advisories about known security issues.
 Advisories may require action on your part, for example to upgrade certain packages.
 " %}
 
+- [Security advisory 11-30-2020](Security-advisory-11-30-2020.html)
 - [Security advisory 06-17-2019](Security-advisory-06-17-2019.html)
 - [Security advisory 08-15-2018](Security-advisory-08-15-2018.html)
 - [Security advisory 08-08-2018](Security-advisory-08-08-2018.html)
