@@ -96,7 +96,9 @@ When reporting bugs, please include at least all the following:
 - Pertinent version of Node modules, for example LoopBack.
 - Any stack trace, error message text, or other relevant information.
 
-Consider using [NodeReport](https://developer.ibm.com/node/2016/08/18/nodereport-first-failure-data-capture-for-node-js/) to gather and report the relevant information.
+Consider using the
+[Node.js Diagnostic Report utility](https://developer.ibm.com/languages/node-js/articles/easily-identify-problems-in-your-nodejs-apps-with-diagnostic-report/)
+to gather and report the relevant information.
 
 #### LoopBack 4.x bugs
 
