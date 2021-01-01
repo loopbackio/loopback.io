@@ -74,8 +74,8 @@ Do not report security vulnerabilities using GitHub issues. Please send an email
 ### Feature request
 
 {% include note.html content="
-LoopBack 2.x/3.x and related modules are in LTS mode. New features are no longer accepted.
-" %}
+LoopBack 2.x/3.x and related modules have reached End-of-Life. New features are
+no longer accepted." %}
 
 To report a feature request for LoopBack 4.x (and newer), open a new GitHub issue at
 [https://github.com/strongloop/loopback-next/issues](https://github.com/strongloop/loopback-next/issues).
@@ -133,6 +133,9 @@ To report a bug in LoopBack version 4.x or newer:
 
 #### LoopBack 3.x bugs
 
+{% include important.html content="
+LoopBack 3.x and related modules have reached End-of-Life. New bug or security
+fixes will not be provided or accepted." %}
 To report a bug in LoopBack version 2.x or 3.x:
 
 1. Fork [loopback-sandbox](https://github.com/strongloop/loopback-sandbox).
