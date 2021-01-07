@@ -1,0 +1,42 @@
+name: Build and Deploy LoopBack.io site
+
+on:
+  push:
+    branches:
+      - gh-pages
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v2.3.1
+        with:
+          persist-credentials: false
+
+      - name: Use Node.js 14.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: 14.x
+
+      - name: Set up Ruby 2.7
+        uses: actions/setup-ruby@v1
+        with:
+          ruby-version: 2.7
+
+      - name: Install and Build 🔧
+        run: |
+          bundle install
+          npm ci
+          npm ls @loopback/docs 2>/dev/null || true
+          npm run build
+
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@3.6.2
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: gh-pages
+          FOLDER: _site
+          GIT_CONFIG_EMAIL: slnode@ca.ibm.com
+          GIT_CONFIG_NAME: StrongLoop Bot
