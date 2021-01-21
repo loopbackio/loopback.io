@@ -1,15 +1,13 @@
-## Topnav single links
-## if you want to list an external url, use external_url instead of url. the theme will apply a different link base.
-topnav:
-- title: Topnav
-  items:
-    - title: API Docs
-      external_url: http://apidocs.loopback.io
-
 #Topnav dropdowns
 topnav_dropdowns:
 - title: Topnav dropdowns
   folders:
+    - title: API Docs
+      folderitems:
+        - title: LoopBack 4
+          external_url: https://loopback.io/doc/en/lb4/apidocs.index.html
+        - title: LoopBack 3.x
+          external_url: http://apidocs.loopback.io
     - title: View
       folderitems:
         - title: LoopBack Overview
