@@ -12,7 +12,7 @@ const srcDocs = path.resolve(__dirname,'node_modules/@loopback/docs/site');
 const destDocs = path.resolve(__dirname, 'pages/en/lb4');
 const srcSidebars = path.resolve(srcDocs, 'sidebars');
 const destSidebars= path.resolve(__dirname, '_data/sidebars');
-const lb4Sidebar = yaml.safeLoad(fs.readFileSync(__dirname + '/_data/sidebars/lb4_sidebar.yml', 'utf8'));
+const lb4Sidebar = yaml.load(fs.readFileSync(__dirname + '/_data/sidebars/lb4_sidebar.yml', 'utf8'));
 
 const refs = lb4Sidebar.children.find(c => c.title === 'Reference guides');
 assert(refs != null, 'Reference guides is not found in lb4_sidebar.yml');
