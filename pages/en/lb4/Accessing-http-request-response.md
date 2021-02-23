@@ -97,7 +97,7 @@ export class PingController {
 
   ping(): object {
     // Access the request object via `this.request`
-    const = url: this.request.url,
+    const url = this.request.url,
     const headers = {...this.request.headers};
     // ...
   }
@@ -122,7 +122,7 @@ export class PingController {
     @inject(RestBindings.Http.REQUEST) request: Request,
   ): object {
     // Access the request object via `request`
-    const = url: request.url,
+    const url = request.url,
     const headers = {...request.headers};
     // ...
   }
