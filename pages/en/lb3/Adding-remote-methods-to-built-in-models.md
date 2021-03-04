@@ -28,7 +28,7 @@ module.exports = function(app) {
   const User = app.models.User;
 
   User.greet = function(msg, cb) {
-    cb(null, 'Greetings... ' - msg);
+    cb(null, 'Greetings... ' + msg);
   };
 
   User.remoteMethod(
