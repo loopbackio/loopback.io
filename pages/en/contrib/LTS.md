@@ -21,13 +21,11 @@ The project maintains:
 
 Below is the LTS schedule on the LoopBack versions:
 
-Framework | Status | Published | Active LTS Start | Maintenance LTS Start | EOL | Runtime | GA | EOL
--- | -- | -- | -- | -- | -- | -- | -- | --
-LoopBack 4 | Current | Oct 2018 | -- | -- | Apr 2023 _(minimum)_| Node 14 | Oct 2018 | Apr 2023
-LoopBack 3 | End-of-Life | Dec 2016 | Oct 2018 | Dec 2019 | Dec 2020 |  Node 8 | Oct 2017 | Dec 2020
-LoopBack 2 | End-of-Life | Jul 2014 | Dec 2016 | Oct 2018 | Apr 2019 | Node 6 | Oct 2016 | Apr 2019
-
-
+Framework | Status | Published | Active LTS Start | Maintenance LTS Start | EOL
+-- | -- | -- | -- | -- | --
+LoopBack 4 | Current | Oct 2018 | -- | -- | Apr 2023 _(minimum)_
+LoopBack 3 | End-of-Life | Dec 2016 | Oct 2018 | Dec 2019 | Dec 2020
+LoopBack 2 | End-of-Life | Jul 2014 | Dec 2016 | Oct 2018 | Apr 2019
 
 ## Active LTS
 
