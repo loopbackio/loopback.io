@@ -28,6 +28,6 @@ jobs:
       - name: Install and Build 🔧
         run: |
           bundle install
-          npm ci
+          npm install
           npm ls @loopback/docs 2>/dev/null || true
           npm run build
