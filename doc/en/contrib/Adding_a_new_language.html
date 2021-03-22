@@ -1,0 +1,1020 @@
+<!DOCTYPE html>
+<head>
+    
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Translators can easily add a new language, where they can translate LoopBack docs.">
+  <meta name="keywords" content="contributingtranslation,  translation, localization">
+  <title>Adding a new language | LoopBack Documentation</title>
+  <link rel="stylesheet" href="/css/syntax.css">
+
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/modern-business.css">
+    <link rel="stylesheet" href="/css/lavish-bootstrap.css">
+    <link rel="stylesheet" href="/css/customstyles.css">
+    <link rel="stylesheet" href="/css/theme-v4.css">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-150726441-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-150726441-2');
+</script>
+
+
+    <!-- github star button -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.3.0/anchor.min.js"></script>
+    <script src="/js/toc.js"></script>
+    <script src="/js/customscripts.js"></script>
+
+    <link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    
+
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-lg navbar-brand no_icon" href="/doc/index.html">
+              <img class="no_icon" style="width:147px;" src="/images/branding/logo/white/loopback.svg">&nbsp;<span class="projectTitle"></span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- entries without drop-downs appear here -->
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">API Docs<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        <!-- page.url is /doc/en/contrib/Adding_a_new_language.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://loopback.io/doc/en/lb4/apidocs.index.html" target="_blank">LoopBack 4</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/contrib/Adding_a_new_language.html .... folderitem.url is  -->
+                          
+                            <li><a href="http://apidocs.loopback.io" target="_blank">LoopBack 3.x</a></li>
+                          
+                        
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">View<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        <!-- page.url is /doc/en/contrib/Adding_a_new_language.html .... folderitem.url is / -->
+                          
+                            <li><a href="/">LoopBack Overview</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/contrib/Adding_a_new_language.html .... folderitem.url is /doc/en/lb4/ -->
+                          
+                            <li><a href="/doc/en/lb4/">LoopBack 4</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/contrib/Adding_a_new_language.html .... folderitem.url is /doc/en/lb3/ -->
+                          
+                            <li><a href="/doc/en/lb3/">LoopBack 3.x</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/contrib/Adding_a_new_language.html .... folderitem.url is /doc/en/lb2/ -->
+                          
+                            <li><a href="/doc/en/lb2/">LoopBack 2.x</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/contrib/Adding_a_new_language.html .... folderitem.url is /doc/en/community/ -->
+                          
+                            <li><a href="/doc/en/community/">Community projects</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/contrib/Adding_a_new_language.html .... folderitem.url is /doc/en/contrib/ -->
+                          
+                            <li class="dropdownActive"><a href="/doc/en/contrib/">Contributing to LoopBack</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/contrib/Adding_a_new_language.html .... folderitem.url is /doc/en/sec/ -->
+                          
+                            <li><a href="/doc/en/sec/">Security advisories</a></li>
+                          
+                        
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Resources<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        <!-- page.url is /doc/en/contrib/Adding_a_new_language.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://github.com/strongloop/loopback.io" target="_blank">Docs Github Repo</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/contrib/Adding_a_new_language.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://groups.google.com/forum/#!forum/loopbackjs-announcements" target="_blank">Announcements Mailing List</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/contrib/Adding_a_new_language.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://groups.google.com/forum/#!forum/loopbackjs" target="_blank">Developer Forum</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/contrib/Adding_a_new_language.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://join.slack.com/t/loopbackio/shared_invite/zt-8lbow73r-SKAKz61Vdao~_rGf91pcsw" target="_blank">LoopBack on Slack</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/contrib/Adding_a_new_language.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://stackoverflow.com/questions/tagged/strongloop+or+loopback4+or+loopbackjs" target="_blank">LoopBack on Stack Overflow</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/contrib/Adding_a_new_language.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://strongloop.com/strongblog/tag_LoopBack.html" target="_blank">StrongLoop Blog - LoopBack</a></li>
+                          
+                        
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Translations<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        <!-- page.url is /doc/en/contrib/Adding_a_new_language.html .... folderitem.url is /doc/es/lb2/ -->
+                          
+                            <li><a href="/doc/es/lb2/">Español (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/contrib/Adding_a_new_language.html .... folderitem.url is /doc/es/lb4/ -->
+                          
+                            <li><a href="/doc/es/lb4/">Español (v4)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/contrib/Adding_a_new_language.html .... folderitem.url is /doc/fr/lb2/ -->
+                          
+                            <li><a href="/doc/fr/lb2/">Français (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/contrib/Adding_a_new_language.html .... folderitem.url is /doc/fr/lb4/ -->
+                          
+                            <li><a href="/doc/fr/lb4/">Français (v4)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/contrib/Adding_a_new_language.html .... folderitem.url is /doc/ko/lb2/ -->
+                          
+                            <li><a href="/doc/ko/lb2/">한국어 (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/contrib/Adding_a_new_language.html .... folderitem.url is /doc/ko/lb3/ -->
+                          
+                            <li><a href="/doc/ko/lb3/">한국어 (v3)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/contrib/Adding_a_new_language.html .... folderitem.url is /doc/pt-br/lb2/ -->
+                          
+                            <li><a href="/doc/pt-br/lb2/">Português (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/contrib/Adding_a_new_language.html .... folderitem.url is /doc/pt-br/lb4/ -->
+                          
+                            <li><a href="/doc/pt-br/lb4/">Português (v4)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/contrib/Adding_a_new_language.html .... folderitem.url is /doc/ja/lb2/ -->
+                          
+                            <li><a href="/doc/ja/lb2/">日本語 (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/contrib/Adding_a_new_language.html .... folderitem.url is /doc/ja/lb3/ -->
+                          
+                            <li><a href="/doc/ja/lb3/">日本語 (v3)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/contrib/Adding_a_new_language.html .... folderitem.url is /doc/ja/lb4/ -->
+                          
+                            <li><a href="/doc/ja/lb4/">日本語 (v4)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/contrib/Adding_a_new_language.html .... folderitem.url is /doc/ru/lb2/ -->
+                          
+                            <li><a href="/doc/ru/lb2/">Pусский (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/contrib/Adding_a_new_language.html .... folderitem.url is /doc/zh/lb2/ -->
+                          
+                            <li><a href="/doc/zh/lb2/">中文 (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/contrib/Adding_a_new_language.html .... folderitem.url is /doc/zh/lb4/ -->
+                          
+                            <li><a href="/doc/zh/lb4/">中文 (v4)</a></li>
+                          
+                        
+                    </ul>
+                </li>
+                
+                
+                
+                <li>
+                    <form id="search" name="search" class="input-group lb-search" action="/search" method="GET">
+                        <input type="text" class="form-control search-bar" placeholder="Search (powered by Watson)" name="q">
+                        
+                        <div class="input-group-btn">
+                            <button type="submit" class="btn btn-default" aria-label="search">
+                              <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                            </button>
+                        </div>
+                      </form>
+                </li>
+            </ul>
+        </div>
+      </div>
+</nav>
+
+<!-- Page Content -->
+<div class="container">
+    <!-- Content Row -->
+    <div class="row">
+        <!-- Sidebar Column -->
+        <nav class="col-md-3 sidebar-col">
+          
+
+
+
+
+
+
+
+
+
+
+
+<!-- NOTE: sidebar = site.data.sidebars.mydoc_sidebar.entries -->
+<div class="sidebarTitle"><a href="index.html">Contributing to LoopBack</a></div>
+<ul id="mysidebar" class="nav-list">
+  
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Governance.html">Governance</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Reporting-issues.html">Reporting issues</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="code-contrib.html">Contributing code</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="code-contrib-lb2-lb3.html">LoopBack 2.x, 3.x</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="style-guide-es6.html">Code style guide</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="eslint-guide.html">Using ESLint</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="git-commit-messages.html">Git commit message guidelines</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="triaging-pull-requests.html">Triaging pull requests</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="/doc/en/lb4/code-contrib-lb4.html">LoopBack 4</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="/doc/en/lb4/submitting_a_pr.html">Submitting a pull request to LoopBack 4</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="doc-contrib.html">Contributing to docs</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="jekyll_getting_started.html">Using Jekyll</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="content_reuse.html">Content reuse</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Including-READMEs.html">Including READMEs</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="pages.html">Authoring pages</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Markdown-style-guide.html">Markdown style guide</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Doc-style-guide.html">Documentation style guide</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="README-guidelines.html">README guidelines</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="navigation.html">Navigation</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="sidebar_navigation.html">Sidebar navigation</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="tags.html">Tags</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="formatting.html">Formatting</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="alerts.html">Alerts</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="images.html">Images</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="code_samples.html">Code samples</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="adding_tooltips.html">Tooltips</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="icons.html">Icons</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="hyperlinks.html">Links</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="tables.html">Tables</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="layouts.html">Special layouts</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="readmes.html">README layout</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="navgroups.html">Navgroup layout</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="faq_layout.html">FAQ layout</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="translation.html">Translation</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  active">
+    
+    
+      <a class="page-link" href="Adding_a_new_language.html">Adding a new language</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Translating_articles.html">Translating articles</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+
+</ul>
+
+        </nav>
+        <!-- Content Column -->
+        <div class="col-md-9">
+            
+<div class="post-header">
+   <h1 class="post-title-main">Adding a new language</h1>
+   
+     
+       <a target="_blank" href="https://github.com/strongloop/loopback.io/blob/gh-pages/pages/en/contrib/Adding_a_new_language.md" class="githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit this page</a>
+   
+</div>
+
+<div class="post-content">
+
+
+  
+   <div class="summary">
+     Translators can easily add a new language, where they can translate LoopBack docs.
+   </div>
+  
+
+
+
+
+ 
+   
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+;$(function() {
+  var level = parseInt(3, 10);
+  if (level === 1) {level = 'h2'}
+  if (level === 2) {level = 'h2,h3'}
+  if (level === 3) {level = 'h2,h3,h4'}
+  if (level === 4) {level = 'h2,h3,h4,h5'}
+
+  // Add a new level for changelog files which use h1,h2,h3
+  if (level === 0) {level = 'h1,h2,h3,h4,h5'}
+
+  var toc = $('#toc')
+
+  toc.toc({minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: level})
+
+  /* this offset helps with the space taken up by the floating toolbar */
+  toc.on('click', 'a', function() {
+    var target = $(this.getAttribute('href')),
+      scroll_target = target.offset().top
+
+    $(window).scrollTop(scroll_target - 10)
+    return false
+  })
+  .on('click', '.toc-expand-button', function() {
+    toc.find('> ul').slideToggle('fast');
+  })
+})
+</script>
+
+<div id="toc">
+  <span class="toc-title">Page Contents</span>
+  <button type="button" class="btn btn-link toc-expand-button">
+    <i class="fa fa-bars"></i>
+  </button>
+</div>
+
+ 
+
+    <h2 id="overview">Overview</h2>
+
+<p>When you want to add a language that doesn’t yet exist on the site, you have to follow a few
+additional steps to set it up.</p>
+
+<h2 id="procedure">Procedure</h2>
+
+<p>In this procedure, <code class="language-plaintext highlighter-rouge">xx</code> represents the ISO language code for the language (for example, <code class="language-plaintext highlighter-rouge">fr</code> for French, <code class="language-plaintext highlighter-rouge">de</code> for German, and so on).</p>
+
+<ul>
+  <li>Create new directory for your translated pages: <code class="language-plaintext highlighter-rouge">/pages/xx/lb3</code></li>
+  <li>If you have any translated pages, copy them into that directory.</li>
+  <li>Add the following disclaimer in English to the top of the index.html page: “This is a community translation into <language>. For the latest information, see the [English version](http://loopback.io/doc/en/lb3/index.html)." Note that you need to link to the website for the appropriate version (lb3 or lb4). For an example, see [LoopBack 3.x](https://loopback.io/doc/ja/lb3/index.html)</language></li>
+  <li>Copy the English navigation sidebar <code class="language-plaintext highlighter-rouge">_data/sidebars/lb3_sidebar.yml</code> (assuming you want to start with LoopBack version 3.x).  Name it <code class="language-plaintext highlighter-rouge">_data/sidebars/xx_sidebar.yml</code>.</li>
+  <li>Edit the sidebar as described below in <a href="#configuring-the-localized-sidebar">Configuring the localized sidebar</a>.</li>
+  <li>Add sidebar to <code class="language-plaintext highlighter-rouge">_config.yml</code> to the list in the <code class="language-plaintext highlighter-rouge">sidebars</code> property.</li>
+  <li>Add sidebar to <code class="language-plaintext highlighter-rouge">_includes/custom/sidebarconfigs.html</code> as follows:</li>
+</ul>
+<div style="margin-left:40px;">
+  <figure class="highlight">
+    <pre><code class="language-liquid" data-lang="liquid">...
+<span class="p">{%</span><span class="w"> </span><span class="kr">elsif</span><span class="w"> </span><span class="nv">page</span><span class="p">.</span><span class="nv">sidebar</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s2">"xx_lb3_sidebar"</span><span class="w"> </span><span class="p">%}</span>
+    <span class="p">{%</span><span class="w"> </span><span class="nt">assign</span><span class="w"> </span><span class="nv">sidebar</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">site</span><span class="p">.</span><span class="nv">data</span><span class="p">.</span><span class="nv">sidebars</span><span class="p">.</span><span class="nv">xx_lb3_sidebar</span><span class="p">.</span><span class="nv">entries</span><span class="w"> </span><span class="p">%}</span>
+...</code></pre>
+  </figure>
+</div>
+<ul>
+  <li>Add to <code class="language-plaintext highlighter-rouge">_data/topnav.yml</code> (under the <code class="language-plaintext highlighter-rouge">title: Translations</code> list).</li>
+  <li>Add a file named <code class="language-plaintext highlighter-rouge">Not-yet-translated.md</code> to <code class="language-plaintext highlighter-rouge">page/xx/lb3</code> with the following content:
+This page is displayed when someone clicks on a sidebar link for page that hasn’t yet been translated:</li>
+</ul>
+<div style="margin-left:40px;">
+  <figure class="highlight">
+    <pre><code class="language-yaml" data-lang="yaml"><span class="nn">---</span>
+<span class="na">title</span><span class="pi">:</span> <span class="s1">'</span><span class="s">Not</span><span class="nv"> </span><span class="s">yet</span><span class="nv"> </span><span class="s">translated'</span>
+<span class="na">lang</span><span class="pi">:</span> <span class="s">xx</span>
+<span class="na">layout</span><span class="pi">:</span> <span class="s">stub</span>
+<span class="na">sidebar</span><span class="pi">:</span> <span class="s">xx_lb3_sidebar</span>
+<span class="na">permalink</span><span class="pi">:</span> <span class="s">/doc/xx/lb3/Not-yet-translated.html</span>
+<span class="na">summary</span><span class="pi">:</span>
+<span class="nn">---</span>
+
+<span class="s">For instructions on how to translate, see [Translating articles](Translating_articles.html).</span></code></pre>
+  </figure>
+</div>
+<ul>
+  <li>Ensure all translated pages have the proper front matter; for example:</li>
+</ul>
+<div style="margin-left:40px;">
+  <figure class="highlight">
+    <pre><code class="language-yaml" data-lang="yaml"><span class="na">lang</span><span class="pi">:</span> <span class="s">xx</span>
+<span class="na">layout</span><span class="pi">:</span> <span class="s">translation</span>
+<span class="na">keywords</span><span class="pi">:</span> <span class="s">...</span>
+<span class="na">tags</span><span class="pi">:</span>
+<span class="na">sidebar</span><span class="pi">:</span> <span class="s">xx_lb3_sidebar</span>
+<span class="na">permalink</span><span class="pi">:</span> <span class="s">/doc/xx/lb3/Access-token-REST-API.html</span></code></pre>
+  </figure>
+</div>
+<p>Note the <code class="language-plaintext highlighter-rouge">translation</code> layout.  This adds the translation disclaimer at the top of the page.</p>
+
+<div class="alert alert-info" role="alert">
+  <p><i class="fa fa-info-circle"></i>
+<b>Note:</b>
+In any pages that are not fully translated, also add <code class="language-plaintext highlighter-rouge">trans_complete: false</code> in the front matter.  This displays a note stating that the page is not fully translated.</p>
+
+</div>
+
+<p>Best practices is <em>not</em> to put untranslated English pages in the localized directory <code class="language-plaintext highlighter-rouge">pages/xx/lb3</code>, except for the <code class="language-plaintext highlighter-rouge">index.md</code> “front page”; even if you haven’t translated this page, you can include some text in the target language stating that translation into the language is underway.</p>
+
+<h2 id="configuring-the-localized-sidebar">Configuring the localized sidebar</h2>
+
+<p>The localized (translated) sidebar file, <code class="language-plaintext highlighter-rouge">_data/sidebars/xx_sidebar.yml</code>, has the same format as the
+English sidebar YAML file, but with a few changes and additions.</p>
+
+<p>Edit the English sidebar as follows:</p>
+
+<ul>
+  <li>Change all occurrences in the <code class="language-plaintext highlighter-rouge">url</code> property of <code class="language-plaintext highlighter-rouge">/en/</code> to <code class="language-plaintext highlighter-rouge">/xx/</code>.  Leave the file names the same; only change the directory name.</li>
+  <li>Change the top-level properties in the file as follows:</li>
+</ul>
+
+<div style="margin-left:40px;">
+  <figure class="highlight">
+    <pre><code class="language-yaml" data-lang="yaml"><span class="na">title</span><span class="pi">:</span> <span class="s">Loopback 2.0 - &lt;Add language name here&gt;</span>
+<span class="na">url</span><span class="pi">:</span> <span class="s">/doc/xx/lb3/index.html</span>
+<span class="na">translated</span><span class="pi">:</span> <span class="no">true</span></code></pre>
+  </figure>
+</div>
+<ul>
+  <li>For each translated article, add the <code class="language-plaintext highlighter-rouge">translated: true</code> property for the article in the sidebar file.  For example, in the Japanese sidebar:</li>
+</ul>
+<div style="margin-left:40px;">
+  <figure class="highlight">
+    <pre><code class="language-yaml" data-lang="yaml"><span class="pi">-</span> <span class="na">title</span><span class="pi">:</span> <span class="s1">'</span><span class="s">LoopBack</span><span class="nv"> </span><span class="s">コアコンセプト'</span>
+  <span class="na">url</span><span class="pi">:</span> <span class="s">/doc/ja/lb3/LoopBack-core-concepts.html</span>
+  <span class="na">translated</span><span class="pi">:</span> <span class="no">true</span></code></pre>
+  </figure>
+</div>
+
+<ul>
+  <li>Translate titles as desired.  Best practice is to translate the sidebar titles <em>only</em> when you translate the article, since that provides readers a clue about what’s been translated and what has not.</li>
+</ul>
+
+<h2 id="importing-existing-translations">Importing existing translations</h2>
+
+<p>As discussed in <a href="https://github.com/strongloop/loopback.io/issues/37">loopback.io issue #37</a>, there is some translated content on the old doc site.   When using the migration script to convert this content to HTML, you have to do a few extra things:</p>
+
+<ol>
+  <li>Fix all links; If “xx” is the ISO language code for the language, replace:
+    <ul>
+      <li>Links to <code class="language-plaintext highlighter-rouge">http://docs.strongloop.com/display/LB/...</code> with link to translated page on loopback.io.</li>
+      <li>Links to <code class="language-plaintext highlighter-rouge">https://docs.strongloop.com/display/XX/...</code> with link to translated page on loopback.io.</li>
+      <li>Links to <code class="language-plaintext highlighter-rouge">/doc/en/lb3/Foo.html</code> with <code class="language-plaintext highlighter-rouge">Foo.html</code>.</li>
+    </ul>
+  </li>
+  <li>Change front matter as described above.</li>
+</ol>
+
+<h3 id="file-names">File names</h3>
+
+<p>In general, translations <em>should</em> use the same file name as the English content, but just kept in a different directory (e.g. <code class="language-plaintext highlighter-rouge">pages/fr/lb3</code> instead of <code class="language-plaintext highlighter-rouge">pages/en/lb3</code>).  It seems that conversion of some translated files does not convert the file names properly, so you may need to go through and manually rename some files and make corresponding changes in the sidebar nav <code class="language-plaintext highlighter-rouge">.yml</code> file and possibly also to links to such files.</p>
+
+<h3 id="images">Images</h3>
+<p>Due to the way that translated content was stored in Confluence, the migration will unfortunately create an entirely separate set of image files (and markdown referring to the image files).  However, we don’t want to have duplicates of every image file for each language, so we also need to replace the image references to use the existing image files.</p>
+
+
+    <div class="tags">
+      
+        <b>Tags: </b>
+        
+        
+          
+            <a href="tag_contributing.html" class="tags-item" role="button">contributing</a>
+            
+        
+          
+        
+      
+    </div>
+</div>
+
+<hr class="shaded"/>
+
+<footer id="container">
+            <div class="row">
+                <div class="col-md-6 footer-left">
+               &copy;2021 IBM / StrongLoop. All rights reserved. <br />
+ Site last generated: Mar 22, 2021
+              </div>
+              <div class="col-md-6 footer-right">
+                <p><img src="https://loopback.io/images/company_logo.png" alt="Company logo"/></p>
+              </div>
+            </div>
+</footer>
+
+
+        </div>
+        <!-- /.row -->
+</div>
+<!-- /.container -->
+    </div>
+</body>
+
+</html>

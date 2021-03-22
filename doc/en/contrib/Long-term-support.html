@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<head>
+    
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="LoopBack maintains a Current version, an Active long-term support (LTS) version, and one or more Maintenance LTS versions.">
+  <meta name="keywords" content="contributingcommunity,  LoopBack, versioning, long-term support">
+  <title>Long-term support | LoopBack Documentation</title>
+  <link rel="stylesheet" href="/css/syntax.css">
+
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/modern-business.css">
+    <link rel="stylesheet" href="/css/lavish-bootstrap.css">
+    <link rel="stylesheet" href="/css/customstyles.css">
+    <link rel="stylesheet" href="/css/theme-v4.css">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-150726441-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-150726441-2');
+</script>
+
+
+    <!-- github star button -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.3.0/anchor.min.js"></script>
+    <script src="/js/toc.js"></script>
+    <script src="/js/customscripts.js"></script>
+
+    <link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    
+
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-lg navbar-brand no_icon" href="/doc/index.html">
+              <img class="no_icon" style="width:147px;" src="/images/branding/logo/white/loopback.svg">&nbsp;<span class="projectTitle"></span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- entries without drop-downs appear here -->
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">API Docs<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        <!-- page.url is /doc/en/contrib/Long-term-support.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://loopback.io/doc/en/lb4/apidocs.index.html" target="_blank">LoopBack 4</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/contrib/Long-term-support.html .... folderitem.url is  -->
+                          
+                            <li><a href="http://apidocs.loopback.io" target="_blank">LoopBack 3.x</a></li>
+                          
+                        
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">View<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        <!-- page.url is /doc/en/contrib/Long-term-support.html .... folderitem.url is / -->
+                          
+                            <li><a href="/">LoopBack Overview</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/contrib/Long-term-support.html .... folderitem.url is /doc/en/lb4/ -->
+                          
+                            <li><a href="/doc/en/lb4/">LoopBack 4</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/contrib/Long-term-support.html .... folderitem.url is /doc/en/lb3/ -->
+                          
+                            <li><a href="/doc/en/lb3/">LoopBack 3.x</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/contrib/Long-term-support.html .... folderitem.url is /doc/en/lb2/ -->
+                          
+                            <li><a href="/doc/en/lb2/">LoopBack 2.x</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/contrib/Long-term-support.html .... folderitem.url is /doc/en/community/ -->
+                          
+                            <li><a href="/doc/en/community/">Community projects</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/contrib/Long-term-support.html .... folderitem.url is /doc/en/contrib/ -->
+                          
+                            <li class="dropdownActive"><a href="/doc/en/contrib/">Contributing to LoopBack</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/contrib/Long-term-support.html .... folderitem.url is /doc/en/sec/ -->
+                          
+                            <li><a href="/doc/en/sec/">Security advisories</a></li>
+                          
+                        
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Resources<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        <!-- page.url is /doc/en/contrib/Long-term-support.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://github.com/strongloop/loopback.io" target="_blank">Docs Github Repo</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/contrib/Long-term-support.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://groups.google.com/forum/#!forum/loopbackjs-announcements" target="_blank">Announcements Mailing List</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/contrib/Long-term-support.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://groups.google.com/forum/#!forum/loopbackjs" target="_blank">Developer Forum</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/contrib/Long-term-support.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://join.slack.com/t/loopbackio/shared_invite/zt-8lbow73r-SKAKz61Vdao~_rGf91pcsw" target="_blank">LoopBack on Slack</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/contrib/Long-term-support.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://stackoverflow.com/questions/tagged/strongloop+or+loopback4+or+loopbackjs" target="_blank">LoopBack on Stack Overflow</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/contrib/Long-term-support.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://strongloop.com/strongblog/tag_LoopBack.html" target="_blank">StrongLoop Blog - LoopBack</a></li>
+                          
+                        
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Translations<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        <!-- page.url is /doc/en/contrib/Long-term-support.html .... folderitem.url is /doc/es/lb2/ -->
+                          
+                            <li><a href="/doc/es/lb2/">Español (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/contrib/Long-term-support.html .... folderitem.url is /doc/es/lb4/ -->
+                          
+                            <li><a href="/doc/es/lb4/">Español (v4)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/contrib/Long-term-support.html .... folderitem.url is /doc/fr/lb2/ -->
+                          
+                            <li><a href="/doc/fr/lb2/">Français (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/contrib/Long-term-support.html .... folderitem.url is /doc/fr/lb4/ -->
+                          
+                            <li><a href="/doc/fr/lb4/">Français (v4)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/contrib/Long-term-support.html .... folderitem.url is /doc/ko/lb2/ -->
+                          
+                            <li><a href="/doc/ko/lb2/">한국어 (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/contrib/Long-term-support.html .... folderitem.url is /doc/ko/lb3/ -->
+                          
+                            <li><a href="/doc/ko/lb3/">한국어 (v3)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/contrib/Long-term-support.html .... folderitem.url is /doc/pt-br/lb2/ -->
+                          
+                            <li><a href="/doc/pt-br/lb2/">Português (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/contrib/Long-term-support.html .... folderitem.url is /doc/pt-br/lb4/ -->
+                          
+                            <li><a href="/doc/pt-br/lb4/">Português (v4)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/contrib/Long-term-support.html .... folderitem.url is /doc/ja/lb2/ -->
+                          
+                            <li><a href="/doc/ja/lb2/">日本語 (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/contrib/Long-term-support.html .... folderitem.url is /doc/ja/lb3/ -->
+                          
+                            <li><a href="/doc/ja/lb3/">日本語 (v3)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/contrib/Long-term-support.html .... folderitem.url is /doc/ja/lb4/ -->
+                          
+                            <li><a href="/doc/ja/lb4/">日本語 (v4)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/contrib/Long-term-support.html .... folderitem.url is /doc/ru/lb2/ -->
+                          
+                            <li><a href="/doc/ru/lb2/">Pусский (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/contrib/Long-term-support.html .... folderitem.url is /doc/zh/lb2/ -->
+                          
+                            <li><a href="/doc/zh/lb2/">中文 (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/contrib/Long-term-support.html .... folderitem.url is /doc/zh/lb4/ -->
+                          
+                            <li><a href="/doc/zh/lb4/">中文 (v4)</a></li>
+                          
+                        
+                    </ul>
+                </li>
+                
+                
+                
+                <li>
+                    <form id="search" name="search" class="input-group lb-search" action="/search" method="GET">
+                        <input type="text" class="form-control search-bar" placeholder="Search (powered by Watson)" name="q">
+                        
+                        <div class="input-group-btn">
+                            <button type="submit" class="btn btn-default" aria-label="search">
+                              <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                            </button>
+                        </div>
+                      </form>
+                </li>
+            </ul>
+        </div>
+      </div>
+</nav>
+
+<!-- Page Content -->
+<div class="container">
+    <!-- Content Row -->
+    <div class="row">
+        <!-- Sidebar Column -->
+        <nav class="col-md-3 sidebar-col">
+          
+
+
+
+
+
+
+
+
+
+
+
+<!-- NOTE: sidebar = site.data.sidebars.mydoc_sidebar.entries -->
+<div class="sidebarTitle"><a href="/doc/index.html">LoopBack</a></div>
+<ul id="mysidebar" class="nav-list">
+  
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="/doc/en/lb4/index.html">LoopBack 4</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="/doc/en/lb3/index.html">LoopBack 3.x</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="/doc/en/lb2/index.html">LoopBack 2.x</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="/doc/en/community/index.html">Community projects</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="/doc/en/contrib/index.html">Contributing to LoopBack</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="/doc/en/sec/index.html">Security advisories</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="/doc/en/contrib/Long-term-support.html">Long-term support</a>
+    
+      
+  </li>
+  
+
+
+
+</ul>
+
+        </nav>
+        <!-- Content Column -->
+        <div class="col-md-9">
+            
+<div class="post-header">
+   <h1 class="post-title-main">Long-term support</h1>
+   
+     
+       <a target="_blank" href="https://github.com/strongloop/loopback.io/blob/gh-pages/pages/en/contrib/Long-term-support.md" class="githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit this page</a>
+   
+</div>
+
+<div class="post-content">
+
+
+  
+   <div class="summary">
+     LoopBack maintains a Current version, an Active long-term support (LTS) version, and one or more Maintenance LTS versions.
+   </div>
+  
+
+
+
+
+ 
+   
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+;$(function() {
+  var level = parseInt(3, 10);
+  if (level === 1) {level = 'h2'}
+  if (level === 2) {level = 'h2,h3'}
+  if (level === 3) {level = 'h2,h3,h4'}
+  if (level === 4) {level = 'h2,h3,h4,h5'}
+
+  // Add a new level for changelog files which use h1,h2,h3
+  if (level === 0) {level = 'h1,h2,h3,h4,h5'}
+
+  var toc = $('#toc')
+
+  toc.toc({minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: level})
+
+  /* this offset helps with the space taken up by the floating toolbar */
+  toc.on('click', 'a', function() {
+    var target = $(this.getAttribute('href')),
+      scroll_target = target.offset().top
+
+    $(window).scrollTop(scroll_target - 10)
+    return false
+  })
+  .on('click', '.toc-expand-button', function() {
+    toc.find('> ul').slideToggle('fast');
+  })
+})
+</script>
+
+<div id="toc">
+  <span class="toc-title">Page Contents</span>
+  <button type="button" class="btn btn-link toc-expand-button">
+    <i class="fa fa-bars"></i>
+  </button>
+</div>
+
+ 
+
+    <h2 id="overview">Overview</h2>
+
+<p>LoopBack adheres to <a href="http://semver.org/">semantic versioning</a> conventions and
+implements <a href="https://github.com/CloudNativeJS/ModuleLTS">Module LTS policy</a>.</p>
+
+<p>The project maintains:</p>
+
+<ul>
+  <li>A <em>Current</em> version where most of the development occurs.</li>
+  <li>An <em>Active LTS</em> (Long-Term Support) version that does not add new features but gets bug fixes.</li>
+  <li>One or more <em>Maintenance LTS</em> versions that receive only critical bug fixes.</li>
+</ul>
+
+<p>Below is the LTS schedule on the LoopBack versions:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Framework</th>
+      <th>Status</th>
+      <th>Published</th>
+      <th>Active LTS Start</th>
+      <th>Maintenance LTS Start</th>
+      <th>EOL</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>LoopBack 4</td>
+      <td>Current</td>
+      <td>Oct 2018</td>
+      <td>–</td>
+      <td>–</td>
+      <td>Apr 2023 <em>(minimum)</em></td>
+    </tr>
+    <tr>
+      <td>LoopBack 3</td>
+      <td>End-of-Life</td>
+      <td>Dec 2016</td>
+      <td>Oct 2018</td>
+      <td>Dec 2019</td>
+      <td>Dec 2020 <a href="#lb3">(*)</a></td>
+    </tr>
+    <tr>
+      <td>LoopBack 2</td>
+      <td>End-of-Life</td>
+      <td>Jul 2014</td>
+      <td>Dec 2016</td>
+      <td>Oct 2018</td>
+      <td>Apr 2019</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="active-lts">Active LTS</h2>
+
+<p>A major LoopBack version (for example, 3.x) enters Active LTS when the next
+major version is released (for example, 4.0) and stays in Active LTS mode for
+at least six months.</p>
+
+<p>Once a release enters LTS, no new features may be added to that release.
+Changes are limited to:</p>
+
+<ol>
+  <li>
+    <p>Bug fixes;</p>
+  </li>
+  <li>
+    <p>Security updates;</p>
+  </li>
+  <li>
+    <p>Relevant documentation updates;</p>
+  </li>
+  <li>
+    <p>Certain performance improvements where the risk of breaking existing
+ applications is minimal;</p>
+  </li>
+  <li>
+    <p>Changes that introduce large amount of code churn where the risk of breaking
+ existing applications is low and where the change in question may significantly
+ ease the ability to backport future changes due to the reduction in diff noise.
+ Semver-minor changes are only permitted if required for bug fixes. Semver-major
+ changes are only permitted if required for critical security and bug fixes.</p>
+  </li>
+</ol>
+
+<p>Support for new major Node.js versions may be added if the required changes
+have a low risk of breaking existing applications.</p>
+
+<h2 id="maintenance-lts">Maintenance LTS</h2>
+
+<p>When a new major version (for example, 4.0) is released, the oldest Active LTS
+version (for example, 2.x) enters Maintenance LTS mode, where it will stay for
+as long as the Node.js LTS versions available at release time are maintained by
+the Node.js project.</p>
+
+<p>Once a release moves into Maintenance LTS mode, only critical bugs, critical
+security fixes, and documentation updates will be permitted.</p>
+
+<p>Specifically, adding support for new major Node.js versions is not permitted.</p>
+
+<p><a id="lb3"></a></p>
+<h2 id="information-for-loopback-3-users">Information for LoopBack 3 users</h2>
+
+<p>LoopBack version 3 reached end of life at the end of 2020. We understand some
+users might still be using LoopBack 3 and have questions about the
+implications of running LoopBack 3 in production.</p>
+
+<ul>
+  <li>
+    <p><strong>Security vulnerabilities:</strong> Critical security fixes will be applied as
+needed by <a href="https://www.ibm.com/cloud/api-connect">IBM API Connect</a></p>
+  </li>
+  <li>
+    <p><strong>New features:</strong> No features will be accepted.</p>
+  </li>
+  <li>
+    <p><strong>Bugs:</strong> We are not going to actively fix any bugs reported by the community
+users. For critical bugs, maintainers will review and assess the risks of
+community-submitted PRs. If you’re planning to submit a fix, it’s the best to
+open a GitHub issue to discuss with the maintainers before proceeding.</p>
+  </li>
+</ul>
+
+<p>Please note that the December 2020 end-of-life date is applicable to community
+support. If you are using LoopBack as part of the
+<a href="https://www.ibm.com/cloud/api-connect">IBM API Connect</a> v5 or v2018 product,
+check with the product announcement for its end-of-support schedule.</p>
+
+<p><strong>We strongly encourage all our users to stop using LB3 as soon as they can.</strong></p>
+
+<h3 id="what-should-i-do-if-im-still-using-loopback-3">What should I do if I’m still using LoopBack 3?</h3>
+
+<p>If you already have LoopBack 3 applications running in production, it is highly
+recommended for you to review the
+<a href="https://loopback.io/doc/en/lb4/Understanding-the-differences.html">Understanding the differences between LoopBack 3 and LoopBack 4 page</a>
+as mentioned in
+<a href="https://strongloop.com/strongblog/lb3-extended-lts/">one of our older blog posts</a>.
+There is also the
+<a href="https://loopback.io/doc/en/lb4/migration-overview.html">migration guide</a>
+helping you to migrate your LoopBack 3 applications incrementally.</p>
+
+<h2 id="what-if-i-cannot-migrate-to-loopback-4-any-time-soon">What if I cannot migrate to LoopBack 4 any time soon?</h2>
+
+<p>Your LoopBack 3 applications will continue to work even after LoopBack 3
+reaches end of life. There will be <em>very</em> minimal, if any, changes going into
+the codebase. In the case of addressing security vulnerabilities, you might
+need to fork the corresponding GitHub repos and apply security fixes. See
+<a href="https://strongloop.com/strongblog/lb3-entered-maintenance-mode/">this blog</a>
+for the list of Node.js packages reaching end-of-life along with <code class="language-plaintext highlighter-rouge">loopback</code>
+repo.</p>
+
+<p>The biggest risk of running on LB3 lies in security vulnerabilities that may be
+discovered in the future, as they are unlikely to be fixed. LB3 is also
+depending on old versions of many packages, so even when a dependency fixes a
+vulnerability in the latest version, it would require a lot of effort to
+upgrade LB3 to that new version. Such upgrade is likely to introduce breaking
+changes for LoopBack consumers, which makes it even more tricky.</p>
+
+
+    <div class="tags">
+      
+        <b>Tags: </b>
+        
+        
+          
+            <a href="tag_contributing.html" class="tags-item" role="button">contributing</a>
+            
+        
+          
+            <a href="tag_community.html" class="tags-item" role="button">community</a>
+            
+        
+      
+    </div>
+</div>
+
+<hr class="shaded"/>
+
+<footer id="container">
+            <div class="row">
+                <div class="col-md-6 footer-left">
+               &copy;2021 IBM / StrongLoop. All rights reserved. <br />
+ Site last generated: Mar 22, 2021
+              </div>
+              <div class="col-md-6 footer-right">
+                <p><img src="https://loopback.io/images/company_logo.png" alt="Company logo"/></p>
+              </div>
+            </div>
+</footer>
+
+
+        </div>
+        <!-- /.row -->
+</div>
+<!-- /.container -->
+    </div>
+</body>
+
+</html>

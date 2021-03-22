@@ -1,0 +1,5089 @@
+<!DOCTYPE html>
+<head>
+    
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="keywords" content="connectorsreadme,  LoopBack, connector">
+  <title>SOAP client and server (strong-soap) | LoopBack Documentation</title>
+  <link rel="stylesheet" href="/css/syntax.css">
+
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/modern-business.css">
+    <link rel="stylesheet" href="/css/lavish-bootstrap.css">
+    <link rel="stylesheet" href="/css/customstyles.css">
+    <link rel="stylesheet" href="/css/theme-v4.css">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-150726441-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-150726441-2');
+</script>
+
+
+    <!-- github star button -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.3.0/anchor.min.js"></script>
+    <script src="/js/toc.js"></script>
+    <script src="/js/customscripts.js"></script>
+
+    <link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    
+
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-lg navbar-brand no_icon" href="/doc/index.html">
+              <img class="no_icon" style="width:147px;" src="/images/branding/logo/white/loopback.svg">&nbsp;<span class="projectTitle"></span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- entries without drop-downs appear here -->
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">API Docs<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        <!-- page.url is /doc/en/lb4/Strong-soap.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://loopback.io/doc/en/lb4/apidocs.index.html" target="_blank">LoopBack 4</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb4/Strong-soap.html .... folderitem.url is  -->
+                          
+                            <li><a href="http://apidocs.loopback.io" target="_blank">LoopBack 3.x</a></li>
+                          
+                        
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">View<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        <!-- page.url is /doc/en/lb4/Strong-soap.html .... folderitem.url is / -->
+                          
+                            <li><a href="/">LoopBack Overview</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb4/Strong-soap.html .... folderitem.url is /doc/en/lb4/ -->
+                          
+                            <li class="dropdownActive"><a href="/doc/en/lb4/">LoopBack 4</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb4/Strong-soap.html .... folderitem.url is /doc/en/lb3/ -->
+                          
+                            <li><a href="/doc/en/lb3/">LoopBack 3.x</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb4/Strong-soap.html .... folderitem.url is /doc/en/lb2/ -->
+                          
+                            <li><a href="/doc/en/lb2/">LoopBack 2.x</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb4/Strong-soap.html .... folderitem.url is /doc/en/community/ -->
+                          
+                            <li><a href="/doc/en/community/">Community projects</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb4/Strong-soap.html .... folderitem.url is /doc/en/contrib/ -->
+                          
+                            <li><a href="/doc/en/contrib/">Contributing to LoopBack</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb4/Strong-soap.html .... folderitem.url is /doc/en/sec/ -->
+                          
+                            <li><a href="/doc/en/sec/">Security advisories</a></li>
+                          
+                        
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Resources<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        <!-- page.url is /doc/en/lb4/Strong-soap.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://github.com/strongloop/loopback.io" target="_blank">Docs Github Repo</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb4/Strong-soap.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://groups.google.com/forum/#!forum/loopbackjs-announcements" target="_blank">Announcements Mailing List</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb4/Strong-soap.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://groups.google.com/forum/#!forum/loopbackjs" target="_blank">Developer Forum</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb4/Strong-soap.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://join.slack.com/t/loopbackio/shared_invite/zt-8lbow73r-SKAKz61Vdao~_rGf91pcsw" target="_blank">LoopBack on Slack</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb4/Strong-soap.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://stackoverflow.com/questions/tagged/strongloop+or+loopback4+or+loopbackjs" target="_blank">LoopBack on Stack Overflow</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb4/Strong-soap.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://strongloop.com/strongblog/tag_LoopBack.html" target="_blank">StrongLoop Blog - LoopBack</a></li>
+                          
+                        
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Translations<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        <!-- page.url is /doc/en/lb4/Strong-soap.html .... folderitem.url is /doc/es/lb2/ -->
+                          
+                            <li><a href="/doc/es/lb2/">Español (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb4/Strong-soap.html .... folderitem.url is /doc/es/lb4/ -->
+                          
+                            <li><a href="/doc/es/lb4/">Español (v4)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb4/Strong-soap.html .... folderitem.url is /doc/fr/lb2/ -->
+                          
+                            <li><a href="/doc/fr/lb2/">Français (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb4/Strong-soap.html .... folderitem.url is /doc/fr/lb4/ -->
+                          
+                            <li><a href="/doc/fr/lb4/">Français (v4)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb4/Strong-soap.html .... folderitem.url is /doc/ko/lb2/ -->
+                          
+                            <li><a href="/doc/ko/lb2/">한국어 (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb4/Strong-soap.html .... folderitem.url is /doc/ko/lb3/ -->
+                          
+                            <li><a href="/doc/ko/lb3/">한국어 (v3)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb4/Strong-soap.html .... folderitem.url is /doc/pt-br/lb2/ -->
+                          
+                            <li><a href="/doc/pt-br/lb2/">Português (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb4/Strong-soap.html .... folderitem.url is /doc/pt-br/lb4/ -->
+                          
+                            <li><a href="/doc/pt-br/lb4/">Português (v4)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb4/Strong-soap.html .... folderitem.url is /doc/ja/lb2/ -->
+                          
+                            <li><a href="/doc/ja/lb2/">日本語 (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb4/Strong-soap.html .... folderitem.url is /doc/ja/lb3/ -->
+                          
+                            <li><a href="/doc/ja/lb3/">日本語 (v3)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb4/Strong-soap.html .... folderitem.url is /doc/ja/lb4/ -->
+                          
+                            <li><a href="/doc/ja/lb4/">日本語 (v4)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb4/Strong-soap.html .... folderitem.url is /doc/ru/lb2/ -->
+                          
+                            <li><a href="/doc/ru/lb2/">Pусский (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb4/Strong-soap.html .... folderitem.url is /doc/zh/lb2/ -->
+                          
+                            <li><a href="/doc/zh/lb2/">中文 (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb4/Strong-soap.html .... folderitem.url is /doc/zh/lb4/ -->
+                          
+                            <li><a href="/doc/zh/lb4/">中文 (v4)</a></li>
+                          
+                        
+                    </ul>
+                </li>
+                
+                
+                
+                <li>
+                    <form id="search" name="search" class="input-group lb-search" action="/search" method="GET">
+                        <input type="text" class="form-control search-bar" placeholder="Search (powered by Watson)" name="q">
+                        
+                          <input type="hidden" name="sidebar" value="lb4_sidebar">
+                        
+                        <div class="input-group-btn">
+                            <button type="submit" class="btn btn-default" aria-label="search">
+                              <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                            </button>
+                        </div>
+                      </form>
+                </li>
+            </ul>
+        </div>
+      </div>
+</nav>
+
+<!-- Page Content -->
+<div class="container">
+    <!-- Content Row -->
+    <div class="row">
+        <!-- Sidebar Column -->
+        <nav class="col-md-3 sidebar-col">
+          
+
+
+
+
+
+
+
+
+
+
+
+<!-- NOTE: sidebar = site.data.sidebars.mydoc_sidebar.entries -->
+<div class="sidebarTitle"><a href="index.html">LoopBack 4</a></div>
+<ul id="mysidebar" class="nav-list">
+  
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="index.html">Overview</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Getting-started.html">Getting started</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Inside-LoopBack-Application.html">Inside a LoopBack Application</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent-expand   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="section-name" href="#">Building LoopBack Applications</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Tutorials.html">Tutorials</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="todo-tutorial.html">Todo Tutorial</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="todo-tutorial-scaffolding.html">Create your app scaffolding</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="todo-tutorial-model.html">Add the Todo model</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="todo-tutorial-datasource.html">Add a Datasource</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="todo-tutorial-repository.html">Add a Repository</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="todo-tutorial-controller.html">Add a Controller</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="todo-tutorial-putting-it-together.html">Putting it all together</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="todo-tutorial-geocoding-service.html">Bonus: Integrate with a geo-coding service</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="todo-list-tutorial.html">TodoList Tutorial</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="todo-list-tutorial-model.html">Add TodoList Model</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="todo-list-tutorial-repository.html">Add TodoList Repository</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="todo-list-tutorial-relations.html">Add Model Relations</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="todo-list-tutorial-has-one-relation.html">Add a HasOne Relation</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="todo-list-tutorial-controller.html">Add TodoList Controller</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="todo-list-tutorial-sqldb.html">Running on relational databases</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Connecting-to-back-end.html">Connecting to Back-end Service Tutorials</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="soap-calculator-tutorial.html">SOAP Web Service Tutorial</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="soap-calculator-tutorial-web-service-overview.html">SOAP Web Service Overview</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="soap-calculator-tutorial-scaffolding.html">App scaffolding</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="soap-calculator-tutorial-add-datasource.html">Add a Datasource</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="soap-calculator-tutorial-add-service.html">Add a Service</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="soap-calculator-tutorial-add-controller.html">Add a Controller</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="soap-calculator-tutorial-run-and-test.html">Run and Test it</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="express-with-lb4-rest-tutorial.html">Creating an Express Application with LoopBack REST API</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Authentication-tutorial.html">How to secure your LoopBack 4 application with JWT authentication</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="core-tutorial.html">Build large scale Node.js projects with LoopBack 4</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="core-tutorial-part1.html">Introduction of the application scenario</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="core-tutorial-part2.html">Architectural challenges</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="core-tutorial-part3.html">Context in action</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="core-tutorial-part4.html">Dependency injection</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="core-tutorial-part5.html">Extension point and extensions</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="core-tutorial-part6.html">Interception</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="core-tutorial-part7.html">Observation of life cycle events</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="core-tutorial-part8.html">Configuration</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="core-tutorial-part9.html">Discover and load artifacts by convention</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="core-tutorial-part10.html">Advanced Recipes</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="core-tutorial-part11.html">Summary</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Examples.html">Examples</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Community-examples.html">Community examples</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="section-name" href="#">How-to guides</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="section-name" href="#">Building REST APIs</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Creating-crud-rest-apis.html">Creating CRUD REST APIs from a model</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Customizing-how-openapi-spec-is-served.html">Customizing how OpenAPI spec is served</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Customizing-routes.html">Customizing routes</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Dynamic-models-repositories-controllers.html">Dynamically adding models, repositories, and controllers</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Self-hosted-rest-api-explorer.html">Self-hosted REST API Explorer</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Serving-static-files.html">Serving Static Files</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Accessing-http-request-response.html">Accessing HTTP Request and Response Objects</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="File-upload-download.html">Uploading and Downloading Files</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Express-middleware.html">Using Express Middleware</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Using-strong-error-handler.html">Using strong-error-handler</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Boot-and-Mount-a-LoopBack-3-application.html">Boot and Mount a LoopBack 3 Application</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Integrating-with-api-connect.html">Integrating with API Connect</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Accepting-messagepack-over-http.html">Accepting MessagePack over HTTP</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="section-name" href="#">Creating Other Forms of APIs</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="GraphQL.html">Creating GraphQL APIs</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Using-openapi-to-graphql.html">Using OpenAPI-to-GraphQL</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Creating-artifacts-runtime.html">Creating Artifacts at Runtime</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Creating-model-runtime.html">Creating Model at Runtime</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Creating-datasource-runtime.html">Creating DataSource at Runtime</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Creating-repository-runtime.html">Creating Repositories at Runtime</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="section-name" href="#">Building frontend applications</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Building-frontend-angular-application.html">Building an Angular Application from OpenAPI Specification</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Customizing-server-configuration.html">Customizing Server configuration</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Migrate-from-legacy-sequence.html">Migrate from Legacy Sequence</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Running-cron-jobs.html">Running cron jobs</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="section-name" href="#">Accessing Databases</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Configuring-datasource.html">Configuring DataSource</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Working-with-data.html">Working with data</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Querying-data.html">Querying data</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Fields-filter.html">Fields filter</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Include-filter.html">Include filter</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Limit-filter.html">Limit filter</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Order-filter.html">Order filter</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Skip-filter.html">Skip filter</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Where-filter.html">Where filter</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Using-database-transactions.html">Using Database Transactions</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Database-migrations.html">Database Migrations</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Executing-database-commands.html">Executing database commands</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="section-name" href="#">Using TypeORM</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Using-typeorm-with-loopback.html">How to use TypeORM with LoopBack</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Accessing-services.html">Accessing Services</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Calling-soap-web-services.html">Calling SOAP Web services</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Calling-rest-apis.html">Calling REST APIs</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Parsing-requests-guide.html">Parsing requests</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Validation.html">Validating Data</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Validation-REST-layer.html">Validation in REST Layer</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Validation-controller-repo-service-layer.html">Validation in the Controller, Repository and Service Layer</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Validation-ORM-layer.html">Validation in ORM Layer</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Configuring-applications.html">Configuring Applications</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Application-setup-tips.html">Tips for Application Setup</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="section-name" href="#">Securing Applications</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Authentication-overview.html">Authentication</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Authentication-tutorial.html">Apply JWT Authentication in Todo Example</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Loopback-component-authentication.html">Authentication Component</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Authentication-component-decorator.html">Authentication Decorator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Authentication-component-action.html">Authentication Action</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Authentication-component-strategy.html">Authentication Strategy</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Authentication-component-options.html">Managing Custom Authentication Strategy Options</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="JWT-authentication-extension.html">JWT Authentication Extension</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Implement-your-own-strategy.html">Implement your own authentication strategy</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Authentication-passport.html">Passport Adapter for Authentication</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Authorization-overview.html">Authorization</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="RBAC-with-authorization.html">RBAC with Authorization System</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Loopback-component-authorization.html">Authorization Component</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Authorization-component-interceptor.html">Interceptor</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Authorization-component-decorator.html">Decorator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Authorization-component-authorizer.html">Authorizer</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Authorization-component-decision-matrix.html">Decision Matrix</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Authorization-component-enforcer.html">Enforcer</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Deployment.html">Deploying Applications</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Enabling-https.html">Enabling HTTPS</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Deploying-to-IBM-Cloud.html">Deploying to IBM Cloud</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="deploying_to_ibm_cloud_kubernetes.html">Deploying to Kubernetes on IBM Cloud</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="deploying-with-pm2-and-nginx.html">Deploying with pm2 and nginx</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Appsody-LoopBack.html">Developing and Deploying LoopBack Applications with Appsody</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Running-cron-jobs.html">Running cron jobs</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Health.html">Health check</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Metrics.html">Metrics for Prometheus</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Pooling.html">Pooling</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Troubleshooting.html">Troubleshooting</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Setting-debug-strings.html">Setting debug strings</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Logging.html">Logging</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Context-explorer.html">Context Explorer</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Debugging-tests-with-mocha.html">Debugging tests with Mocha</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent-expand   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Extending-LoopBack-4.html">Extending LoopBack Framework</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="section-name" href="#">How-to guides</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Creating-components.html">Creating components</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Creating-decorators.html">Creating decorators</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="creating-components-rest-api.html">Contributing REST API</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="creating-components-services.html">Creating services</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Creating-servers.html">Creating servers</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Extending-request-body-parsing.html">Extending request body parsing</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Extension-life-cycle.html">Extension life cycle</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Extending-OpenAPI-specification.html">Extending OpenAPI specification</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Extending-Model-API-builder.html">Extending Model API builder</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Testing-your-extension.html">Testing your extension</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Community-extensions.html">Community extensions</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Concepts.html">Concepts</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Crafting-LoopBack-4.html">Crafting LoopBack 4</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="section-name" href="#">Core</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Application.html">Application</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Component.html">Component</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Context.html">Context</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Binding.html">Binding</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Dependency-injection.html">Dependency Injection</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Interceptor.html">Interceptor</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Life-cycle.html">Life Cycle Event and Observer</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Extension-point-and-extensions.html">Extension point and extensions</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Service.html">Service</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Booting-an-Application.html">Booter</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Decorators.html">Decorators</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Decorators_openapi.html">OpenAPI Decorators</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Decorators_inject.html">Dependency Injection Decorator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Decorators_authenticate.html">Authentication Decorator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Decorators_authorize.html">Authorization Decorators</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Decorators_service.html">Service Decorators</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Decorators_repository.html">Repository Decorators</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Mixin.html">Mixin</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="section-name" href="#">REST APIs</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Server.html">Server</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Sequence.html">Sequence</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="REST-middleware-sequence.html">Middleware based sequence</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="REST-action-sequence.html">Action based sequence</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Advanced-sequence-topics.html">Advanced topics</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Routing-requests.html">Routing requests</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Parsing-requests.html">Parsing requests</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Working-with-express-middleware.html">Working with Express Middleware</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Middleware.html">Middleware</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Route.html">Route</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Controller.html">Controller</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Request-response-cycle.html">Request/response cycle</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="section-name" href="#">Data Access</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Model.html">Model</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Relations.html">Relations</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="HasMany-relation.html">HasMany Relation</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="BelongsTo-relation.html">BelongsTo Relation</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="HasOne-relation.html">HasOne Relation</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="HasManyThrough-relation.html">HasManyThrough Relation</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Repository.html">Repository</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="DataSource.html">DataSource</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Best-practices.html">Best practices</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Defining-the-API-using-code-first-approach.html">Defining the API using code-first approach</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Defining-your-testing-strategy.html">Defining your testing strategy</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Testing-your-application.html">Testing your application</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="section-name" href="#">Reference guides</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Loopback-application-layout.html">LoopBack 4 Application Layout</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="apidocs.index.html">API docs</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Reserved-binding-keys.html">Reserved binding keys</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Error-codes.html">Error codes</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="LoopBack-types.html">LoopBack Types</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Command-line-interface.html">CLI References</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Application-generator.html">Application generator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Controller-generator.html">Controller generator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="DataSource-generator.html">DataSource generator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Importing-LB3-models.html">Import models from LoopBack 3</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Model-generator.html">Model generator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Discovering-models.html">Model discovery</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Relation-generator.html">Relation generator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Repository-generator.html">Repository generator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Rest-Crud-generator.html">REST CRUD model endpoints generator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Service-generator.html">Service generator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="OpenAPI-generator.html">OpenAPI generator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Life-cycle-observer-generator.html">Life cycle observer generator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Interceptor-generator.html">Interceptor generator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Extension-generator.html">Extension generator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Download-examples.html">Download examples</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Update-generator.html">Update project dependencies</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Copyright-generator.html">Generate copyright/license headers</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Connectors-reference.html">Connectors reference</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Memory-connector.html">Memory connector</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Database-connectors.html">Database connectors</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Cassandra-connector.html">Cassandra connector</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Cloudant-connector.html">Cloudant connector</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Couchdb2-connector.html">CouchDB 2.x connector</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="DashDB.html">DashDB connector</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="DB2-connector.html">IBM Db2 (for Linux, Unix, Windows) connector</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="DB2-for-i-connector.html">IBM Db2 for i connector</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="DB2-for-z-OS-connector.html">IBM Db2 for z/OS connector</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Informix.html">Informix connector</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="MongoDB-connector.html">MongoDB connector</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Connecting-to-MongoDB.html">MongoDB Connector Tutorial</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Using-MongoLab.html">Using MongoLab</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="MySQL-connector.html">MySQL connector</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Connecting-to-MySQL.html">MySQL Connector Tutorial</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Oracle-connector.html">Oracle connector</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Installing-the-Oracle-connector.html">Installing the Oracle connector</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Connecting-to-Oracle.html">Oracle connector tutorial</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="PostgreSQL-connector.html">PostgreSQL connector</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Connecting-to-PostgreSQL.html">PostgreSQL connector tutorial</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Redis-connector.html">Redis connector</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="kv-redis-connector.html">Redis key-value connector</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Example-kv-connector.html">KV connector example</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="SQL-Server-connector.html">SQL Server connector</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Connecting-to-Microsoft-SQL-Server.html">SQL Server connector tutorial</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="SQLite3.html">SQLite3 connector</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="zOSconnectEE.html">z/OS Connect Enterprise Edition connector</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Other-connectors.html">Other connectors</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="JSON-RPC-connector.html">JSON RPC connector</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="MQLight-connector.html">MQ Light connector</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="REST-connector.html">REST connector</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="REST-connector-example.html">REST connector example</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="SOAP-connector.html">SOAP connector</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  active">
+    
+    
+      <a class="page-link" href="Strong-soap.html">Strong-soap</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="SOAP-Connector-example.html">SOAP connector example</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Connecting-to-SOAP.html">Connecting to SOAP web services</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="OpenAPI-connector.html">OpenAPI connector</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Community-connectors.html">Community connectors</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="changelog.index.html">Change logs</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Deploy-for-GDPR-readiness.html">Considerations for GDPR readiness</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="code-contrib-lb4.html">Contributing to LoopBack 4</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="submitting_a_pr.html">Submitting a pull request to LoopBack 4</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="FAQ.html">FAQ</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="migration-overview.html">Migration guide</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Understanding-the-differences.html">Understanding the differences</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="LB3-vs-LB4-booting.html">Booting process</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="LB3-vs-LB4-request-response-cycle.html">Request/response cycle</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="migration-mounting-lb3app.html">Mounting a LoopBack 3 application</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="migration-express-middleware.html">Express middleware</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="migration-datasources.html">Datasources</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="migration-models-overview.html">Migrating models</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="migration-models-core.html">Model definitions and built-in APIs</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="migration-models-relations.html">Relations</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="migration-models-methods.html">Custom methods</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="migration-models-remoting-hooks.html">Remoting hooks</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="migration-models-operation-hooks.html">CRUD operation hooks</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="migration-models-mixins.html">Mixins</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="migration-boot-scripts.html">Boot scripts</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="migration-auth-overview.html">Authentication & authorization</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="migration-auth-access-control-example.html">Access control example</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="migration-authentication.html">Built-in models and authentication</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="migration-auth-passport.html">Passport</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="migration-auth-oauth2.html">OAuth2 Provider</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="migration-cli.html">CLI</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="migration-extensions-overview.html">Components and extensions</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="migration-extensions-project-layout.html">Project layout</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="migration-extensions-models.html">Models</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="migration-extensions-current-context.html">Current context</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="migration-extensions-mixins.html">Mixins</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="migration-extensions-rest-api.html">REST API</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="migration-clients.html">Clients (API consumers)</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="migration-not-planned.html">Features not planned</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+
+</ul>
+
+        </nav>
+        <!-- Content Column -->
+        <div class="col-md-9">
+            
+<div class="post-header">
+   <h1 class="post-title-main">SOAP client and server (strong-soap)</h1>
+   
+</div>
+
+<div class="post-content">
+
+
+
+
+
+ 
+
+    <style>
+h1:not(.post-title-main) { display: none; }
+</style>
+
+  
+
+  
+  
+
+  
+  <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i>
+    <b>Note:</b> This page was generated from the
+    <a href="https://github.com/strongloop/strong-soap">strong-soap/README.md</a>.
+  </div>
+
+  
+
+
+  
+  <h1 id="strong-soap">strong-soap</h1>
+
+<p>This module provides a Node.js SOAP client for invoking web services and a mock-up SOAP server capability to create and test your web service. This module is based on <code class="language-plaintext highlighter-rouge">node-soap</code> module.</p>
+
+<!-- Run `npm run toc` to update below section -->
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+<ul>
+  <li><a href="#overview">Overview</a></li>
+  <li><a href="#install">Install</a></li>
+  <li><a href="#client">Client</a>
+    <ul>
+      <li><a href="#extra-headers-optional">Extra headers (optional)</a></li>
+      <li><a href="#clientdescribe">Client.describe()</a></li>
+      <li><a href="#clientsetsecuritysecurity">Client.setSecurity(security)</a></li>
+      <li><a href="#clientmethodargs-callback">Client.<em>method</em>(args, callback)</a></li>
+      <li><a href="#clientserviceportmethodargs-callback-options-extraheaders">Client.<em>service</em>.<em>port</em>.<em>method</em>(args, callback[, options[, extraHeaders]])</a></li>
+      <li><a href="#clientlastrequest">Client.<em>lastRequest</em></a></li>
+      <li><a href="#clientsetendpointurl">Client.setEndpoint(url)</a></li>
+      <li><a href="#client-events">Client Events</a></li>
+      <li><a href="#security">Security</a></li>
+      <li><a href="#basicauthsecurity">BasicAuthSecurity</a></li>
+      <li><a href="#bearersecurity">BearerSecurity</a></li>
+      <li><a href="#clientsslsecurity">ClientSSLSecurity</a></li>
+      <li><a href="#wssecurity">WSSecurity</a></li>
+      <li><a href="#wssecuritycert">WSSecurityCert</a></li>
+    </ul>
+  </li>
+  <li><a href="#xml-attributes">XML Attributes</a>
+    <ul>
+      <li><a href="#handling-xml-attributes-value-and-xml-wsdloptions">Handling XML Attributes, Value and XML (wsdlOptions)</a></li>
+      <li><a href="#overriding-the-value-key">Overriding the value key</a></li>
+      <li><a href="#overriding-the-xml-key">Overriding the xml key</a></li>
+      <li><a href="#overriding-the-attributes-key">Overriding the <code class="language-plaintext highlighter-rouge">attributes</code> key</a></li>
+    </ul>
+  </li>
+  <li><a href="#xmlhandler">XMLHandler</a></li>
+  <li><a href="#wsdl">WSDL</a>
+    <ul>
+      <li><a href="#wsdlopenwsdlurl-options-callbackerr-wsdl">wsdl.open(wsdlURL, options, callback(err, wsdl))</a></li>
+    </ul>
+  </li>
+  <li><a href="#server">Server</a>
+    <ul>
+      <li><a href="#soaplistenserver-path-services-wsdl">soap.listen(<em>server</em>, <em>path</em>, <em>services</em>, <em>wsdl</em>)</a></li>
+      <li><a href="#options">Options</a></li>
+      <li><a href="#server-logging">Server logging</a></li>
+      <li><a href="#server-events">Server events</a></li>
+      <li><a href="#soap-fault">SOAP Fault</a></li>
+      <li><a href="#server-security-example-using-passworddigest">Server security example using PasswordDigest</a></li>
+      <li><a href="#server-connection-authorization">Server connection authorization</a></li>
+    </ul>
+  </li>
+  <li><a href="#soap-headers">SOAP headers</a>
+    <ul>
+      <li><a href="#received-soap-headers">Received SOAP headers</a></li>
+      <li><a href="#outgoing-soap-headers">Outgoing SOAP headers</a></li>
+    </ul>
+  </li>
+  <li><a href="#soap-stub">soap-stub</a>
+    <ul>
+      <li><a href="#example">Example</a></li>
+    </ul>
+  </li>
+  <li><a href="#contributors">Contributors</a></li>
+</ul>
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
+<h2 id="overview">Overview</h2>
+
+<p>Features:</p>
+
+<ul>
+  <li>Full SOAP Client capability and mock-up SOAP server capability</li>
+  <li>Handles both RPC and Document styles</li>
+  <li>Handles both SOAP 1.1 and SOAP 1.2 Fault</li>
+  <li>APIs to parse XML into JSON and JSON into XML</li>
+  <li>API to describe WSDL document</li>
+  <li>Support for both synchronous and asynchronous method handlers</li>
+  <li>WS-Security (currently only UsernameToken and PasswordText encoding is supported)</li>
+</ul>
+
+<h2 id="install">Install</h2>
+
+<p>Node.js version 10, 12, and 14 are officially supported. We dropped version 8
+support in 3.0.0.</p>
+
+<p>Install with <a href="http://github.com/isaacs/npm">npm</a>:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm <span class="nb">install </span>strong-soap
+</code></pre></div></div>
+
+<h2 id="client">Client</h2>
+
+<p>Start with the WSDL for the web service you want to invoke. For example, the stock quote service http://www.webservicex.net/stockquote.asmx and the WSDL is http://www.webservicex.net/stockquote.asmx?WSDL</p>
+
+<p>Create a new SOAP client from WSDL URL using <code class="language-plaintext highlighter-rouge">soap.createClient(url[, options], callback)</code>. Also supports a local file system path. An instance of <code class="language-plaintext highlighter-rouge">Client</code> is passed to the <code class="language-plaintext highlighter-rouge">soap.createClient</code> callback.  It is used to execute methods on the soap service.</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="dl">"</span><span class="s2">use strict</span><span class="dl">"</span><span class="p">;</span>
+
+<span class="kd">var</span> <span class="nx">soap</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">strong-soap</span><span class="dl">'</span><span class="p">).</span><span class="nx">soap</span><span class="p">;</span>
+<span class="c1">// wsdl of the web service this client is going to invoke. For local wsdl you can use, url = './wsdls/stockquote.wsdl'</span>
+<span class="kd">var</span> <span class="nx">url</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">http://www.webservicex.net/stockquote.asmx?WSDL</span><span class="dl">'</span><span class="p">;</span>
+
+<span class="kd">var</span> <span class="nx">requestArgs</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="na">symbol</span><span class="p">:</span> <span class="dl">'</span><span class="s1">IBM</span><span class="dl">'</span>
+<span class="p">};</span>
+
+<span class="kd">var</span> <span class="nx">options</span> <span class="o">=</span> <span class="p">{};</span>
+<span class="nx">soap</span><span class="p">.</span><span class="nx">createClient</span><span class="p">(</span><span class="nx">url</span><span class="p">,</span> <span class="nx">options</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">err</span><span class="p">,</span> <span class="nx">client</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kd">var</span> <span class="nx">method</span> <span class="o">=</span> <span class="nx">client</span><span class="p">[</span><span class="dl">'</span><span class="s1">StockQuote</span><span class="dl">'</span><span class="p">][</span><span class="dl">'</span><span class="s1">StockQuoteSoap</span><span class="dl">'</span><span class="p">][</span><span class="dl">'</span><span class="s1">GetQuote</span><span class="dl">'</span><span class="p">];</span>
+  <span class="nx">method</span><span class="p">(</span><span class="nx">requestArgs</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">err</span><span class="p">,</span> <span class="nx">result</span><span class="p">,</span> <span class="nx">envelope</span><span class="p">,</span> <span class="nx">soapHeader</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">//response envelope</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">Response Envelope: </span><span class="se">\n</span><span class="dl">'</span> <span class="o">+</span> <span class="nx">envelope</span><span class="p">);</span>
+    <span class="c1">//'result' is the response body</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">Result: </span><span class="se">\n</span><span class="dl">'</span> <span class="o">+</span> <span class="nx">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span><span class="nx">result</span><span class="p">));</span>
+  <span class="p">});</span>
+<span class="p">});</span>
+
+</code></pre></div></div>
+
+<p>As well as creating a client via a <code class="language-plaintext highlighter-rouge">url</code>, an existing <a href="#wsdl">WSDL</a> object can be passed in via <code class="language-plaintext highlighter-rouge">options.WSDL_CACHE</code>.</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">soap</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">strong-soap</span><span class="dl">'</span><span class="p">).</span><span class="nx">soap</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">WSDL</span> <span class="o">=</span> <span class="nx">soap</span><span class="p">.</span><span class="nx">WSDL</span><span class="p">;</span>
+
+<span class="kd">var</span> <span class="nx">url</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">http://www.webservicex.net/stockquote.asmx?WSDL</span><span class="dl">'</span><span class="p">;</span>
+
+<span class="c1">// Pass in WSDL options if any</span>
+
+<span class="kd">var</span> <span class="nx">options</span> <span class="o">=</span> <span class="p">{};</span>
+<span class="nx">WSDL</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="nx">url</span><span class="p">,</span><span class="nx">options</span><span class="p">,</span>
+  <span class="kd">function</span><span class="p">(</span><span class="nx">err</span><span class="p">,</span> <span class="nx">wsdl</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// You should be able to get to any information of this WSDL from this object. Traverse</span>
+    <span class="c1">// the WSDL tree to get  bindings, operations, services, portTypes, messages,</span>
+    <span class="c1">// parts, and XSD elements/Attributes.</span>
+
+    <span class="c1">// Set the wsdl object in the cache. The key (e.g. 'stockquotewsdl')</span>
+    <span class="c1">// can be anything, but needs to match the parameter passed into soap.createClient()</span>
+    <span class="kd">var</span> <span class="nx">clientOptions</span> <span class="o">=</span> <span class="p">{</span>
+      <span class="na">WSDL_CACHE</span> <span class="p">:</span> <span class="p">{</span>
+        <span class="na">stockquotewsdl</span><span class="p">:</span> <span class="nx">wsdl</span>
+      <span class="p">}</span>
+    <span class="p">};</span>
+    <span class="nx">soap</span><span class="p">.</span><span class="nx">createClient</span><span class="p">(</span><span class="dl">'</span><span class="s1">stockquotewsdl</span><span class="dl">'</span><span class="p">,</span> <span class="nx">clientOptions</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">err</span><span class="p">,</span> <span class="nx">client</span><span class="p">)</span> <span class="p">{</span>
+      <span class="kd">var</span> <span class="nx">method</span> <span class="o">=</span> <span class="nx">client</span><span class="p">[</span><span class="dl">'</span><span class="s1">StockQuote</span><span class="dl">'</span><span class="p">][</span><span class="dl">'</span><span class="s1">StockQuoteSoap</span><span class="dl">'</span><span class="p">][</span><span class="dl">'</span><span class="s1">GetQuote</span><span class="dl">'</span><span class="p">];</span>
+      <span class="nx">method</span><span class="p">(</span><span class="nx">requestArgs</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">err</span><span class="p">,</span> <span class="nx">result</span><span class="p">,</span> <span class="nx">envelope</span><span class="p">,</span> <span class="nx">soapHeader</span><span class="p">)</span> <span class="p">{</span>
+
+      <span class="c1">//response envelope</span>
+      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">Response Envelope: </span><span class="se">\n</span><span class="dl">'</span> <span class="o">+</span> <span class="nx">envelope</span><span class="p">);</span>
+      <span class="c1">//'result' is the response body</span>
+      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">Result: </span><span class="se">\n</span><span class="dl">'</span> <span class="o">+</span> <span class="nx">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span><span class="nx">result</span><span class="p">));</span>
+    <span class="p">});</span>
+  <span class="p">});</span>
+<span class="p">});</span>
+</code></pre></div></div>
+
+<p>The Request envelope created by above service invocation:</p>
+
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;</span>
+<span class="nt">&lt;soap:Envelope</span> <span class="na">xmlns:soap=</span><span class="s">"http://schemas.xmlsoap.org/soap/envelope/"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;soap:Header/&gt;</span>
+  <span class="nt">&lt;soap:Body&gt;</span>
+    <span class="nt">&lt;ns1:GetQuote</span> <span class="na">xmlns:ns1=</span><span class="s">"http://www.webserviceX.NET/"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;ns1:symbol&gt;</span>IBM<span class="nt">&lt;/ns1:symbol&gt;</span>
+    <span class="nt">&lt;/ns1:GetQuote&gt;</span>
+  <span class="nt">&lt;/soap:Body&gt;</span>
+<span class="nt">&lt;/soap:Envelope&gt;</span>
+</code></pre></div></div>
+
+<p>This WSDL operation is defined as document/literal-wrapped style. Hence the request in soap &lt;Body&gt; is wrapped in operation name. Refer to test cases <a href="https://github.com/strongloop/strong-soap/blob/master/test/server-client-document-test.js">server-client-document-test</a> and  <a href="https://github.com/strongloop/strong-soap/blob/master/test/server-client-rpc-test.js">server-client-rpc-test</a> to understand document and rpc styles and their
+Request, Response and Fault samples.</p>
+
+<p>The <code class="language-plaintext highlighter-rouge">options</code> argument allows you to customize the client with the following properties:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">endpoint</code>: to override the SOAP service’s host specified in the <code class="language-plaintext highlighter-rouge">.wsdl</code> file.</li>
+  <li><code class="language-plaintext highlighter-rouge">request</code>: to override the <a href="https://github.com/request/request">request</a> module.</li>
+  <li><code class="language-plaintext highlighter-rouge">httpClient</code>: to provide your own http client that implements <code class="language-plaintext highlighter-rouge">request(rurl, data, callback, exheaders, exoptions)</code>.</li>
+  <li><code class="language-plaintext highlighter-rouge">envelopeKey</code>: to set specific key instead of &lt;pre&gt;«b&gt;soap&lt;/b&gt;:Body&gt;&lt;/<b>soap</b>:Body&gt;&lt;/pre&gt;</li>
+  <li><code class="language-plaintext highlighter-rouge">wsdl_options</code>: custom options for the request module on WSDL requests.</li>
+  <li><code class="language-plaintext highlighter-rouge">wsdl_headers</code>: custom HTTP headers to be sent on WSDL requests.</li>
+</ul>
+
+<p>Note: for versions of node &gt;0.10.X, you may need to specify <code class="language-plaintext highlighter-rouge">{connection: 'keep-alive'}</code> in SOAP headers to avoid truncation of longer chunked responses.</p>
+
+<h3 id="extra-headers-optional">Extra headers (optional)</h3>
+
+<p>User can define extra HTTP headers to be sent on the request.</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">clientOptions</span> <span class="o">=</span> <span class="p">{};</span>
+<span class="nx">soap</span><span class="p">.</span><span class="nx">createClient</span><span class="p">(</span><span class="nx">url</span><span class="p">,</span> <span class="nx">clientOptions</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">err</span><span class="p">,</span> <span class="nx">client</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kd">var</span> <span class="nx">customRequestHeader</span> <span class="o">=</span> <span class="p">{</span><span class="na">customheader1</span><span class="p">:</span> <span class="dl">'</span><span class="s1">test1</span><span class="dl">'</span><span class="p">};</span>
+  <span class="c1">// Custom request header</span>
+  <span class="nx">client</span><span class="p">.</span><span class="nx">GetQuote</span><span class="p">(</span><span class="nx">requestArgs</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">err</span><span class="p">,</span> <span class="nx">result</span><span class="p">,</span> <span class="nx">envelope</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// Result in SOAP envelope body which is the wrapper element.</span>
+    <span class="c1">// In this case, result object corresponds to GetCityForecastByZIPResponse.</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span><span class="nx">result</span><span class="p">));</span>
+  <span class="p">},</span> <span class="kc">null</span><span class="p">,</span> <span class="nx">customRequestHeader</span><span class="p">);</span>
+<span class="p">});</span>
+</code></pre></div></div>
+
+<h3 id="clientdescribe">Client.describe()</h3>
+
+<p>Describes services, ports and methods as a JavaScript object.</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Describes the entire WSDL in a JSON tree object form.</span>
+<span class="kd">var</span> <span class="nx">description</span> <span class="o">=</span> <span class="nx">client</span><span class="p">.</span><span class="nx">describe</span><span class="p">();</span>
+<span class="c1">// Inspect GetQuote operation. You can inspect Service: {Port: {operation: {</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span><span class="nx">description</span><span class="p">.</span><span class="nx">StockQuote</span><span class="p">.</span><span class="nx">StockQuoteSoap</span><span class="p">.</span><span class="nx">GetQuote</span><span class="p">));</span>
+</code></pre></div></div>
+
+<h3 id="clientsetsecuritysecurity">Client.setSecurity(security)</h3>
+
+<p>Use the specified security protocol.</p>
+
+<p>Refer to test case <a href="https://github.com/strongloop/strong-soap/blob/master/test/ssl-test.js">ssl-test</a> for an example of using this API.</p>
+
+<h3 id="clientmethodargs-callback">Client.<em>method</em>(args, callback)</h3>
+
+<p>Call <em>method</em> on the SOAP service.</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="nx">client</span><span class="p">.</span><span class="nx">MyFunction</span><span class="p">({</span><span class="na">name</span><span class="p">:</span> <span class="dl">'</span><span class="s1">value</span><span class="dl">'</span><span class="p">},</span> <span class="kd">function</span><span class="p">(</span><span class="nx">err</span><span class="p">,</span> <span class="nx">result</span><span class="p">,</span> <span class="nx">envelope</span><span class="p">,</span> <span class="nx">soapHeader</span><span class="p">)</span> <span class="p">{</span>
+      <span class="c1">// Result is a javascript object</span>
+      <span class="c1">// Envelope is the response envelope from the Web Service</span>
+      <span class="c1">// soapHeader is the response soap header as a JavaScript object</span>
+  <span class="p">})</span>
+</code></pre></div></div>
+
+<p>A <em>method</em> can also be called as a promise.</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="nx">client</span><span class="p">.</span><span class="nx">MyFunction</span><span class="p">({</span><span class="na">name</span><span class="p">:</span> <span class="dl">'</span><span class="s1">value</span><span class="dl">'</span><span class="p">}).</span><span class="nx">then</span><span class="p">(</span><span class="kd">function</span><span class="p">({</span><span class="nx">result</span><span class="p">,</span> <span class="nx">envelope</span><span class="p">,</span> <span class="nx">soapHeader</span><span class="p">}){</span>
+    <span class="c1">// ...</span>
+  <span class="p">},</span> <span class="kd">function</span><span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// ...</span>
+  <span class="p">});</span>
+
+  <span class="c1">// in async/await flavor</span>
+  <span class="k">try</span> <span class="p">{</span>
+    <span class="kd">const</span> <span class="p">{</span><span class="nx">result</span><span class="p">,</span> <span class="nx">envelope</span><span class="p">,</span> <span class="nx">soapHeader</span><span class="p">}</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">client</span><span class="p">.</span><span class="nx">MyFunction</span><span class="p">({</span><span class="na">name</span><span class="p">:</span> <span class="dl">'</span><span class="s1">value</span><span class="dl">'</span><span class="p">});</span>
+  <span class="p">}</span> <span class="k">catch</span><span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// handle error</span>
+  <span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="clientserviceportmethodargs-callback-options-extraheaders">Client.<em>service</em>.<em>port</em>.<em>method</em>(args, callback[, options[, extraHeaders]])</h3>
+
+<p>Call a <em>method</em> using a specific <em>service</em> and <em>port</em>.</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="nx">client</span><span class="p">.</span><span class="nx">MyService</span><span class="p">.</span><span class="nx">MyPort</span><span class="p">.</span><span class="nx">MyFunction</span><span class="p">({</span><span class="na">name</span><span class="p">:</span> <span class="dl">'</span><span class="s1">value</span><span class="dl">'</span><span class="p">},</span> <span class="kd">function</span><span class="p">(</span><span class="nx">err</span><span class="p">,</span> <span class="nx">result</span><span class="p">)</span> <span class="p">{</span>
+      <span class="c1">// Result is a JavaScript object</span>
+  <span class="p">})</span>
+</code></pre></div></div>
+
+<h4 id="options-optional">Options (optional)</h4>
+
+<p>Accepts any option that the request module accepts, see <a href="https://github.com/request/request">request</a> module.</p>
+
+<p>For example, you could set a timeout of 5 seconds on the request like this:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="nx">client</span><span class="p">.</span><span class="nx">MyService</span><span class="p">.</span><span class="nx">MyPort</span><span class="p">.</span><span class="nx">MyFunction</span><span class="p">({</span><span class="na">name</span><span class="p">:</span> <span class="dl">'</span><span class="s1">value</span><span class="dl">'</span><span class="p">},</span> <span class="kd">function</span><span class="p">(</span><span class="nx">err</span><span class="p">,</span> <span class="nx">result</span><span class="p">)</span> <span class="p">{</span>
+      <span class="c1">// result is a javascript object</span>
+  <span class="p">},</span> <span class="p">{</span><span class="na">timeout</span><span class="p">:</span> <span class="mi">5000</span><span class="p">})</span>
+</code></pre></div></div>
+
+<p>You can measure the elapsed time on the request by passing the time option:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="nx">client</span><span class="p">.</span><span class="nx">MyService</span><span class="p">.</span><span class="nx">MyPort</span><span class="p">.</span><span class="nx">MyFunction</span><span class="p">({</span><span class="na">name</span><span class="p">:</span> <span class="dl">'</span><span class="s1">value</span><span class="dl">'</span><span class="p">},</span> <span class="kd">function</span><span class="p">(</span><span class="nx">err</span><span class="p">,</span> <span class="nx">result</span><span class="p">)</span> <span class="p">{</span>
+      <span class="c1">// client.lastElapsedTime - the elapsed time of the last request in milliseconds</span>
+  <span class="p">},</span> <span class="p">{</span><span class="na">time</span><span class="p">:</span> <span class="kc">true</span><span class="p">})</span>
+</code></pre></div></div>
+
+<h4 id="alternative-method-call-using-callback-last-pattern">Alternative method call using callback-last pattern</h4>
+
+<p>To align method call signature with Node’s standard callback-last pattern and eventually allow promisification of method calls, the following method signatures are also supported:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">client</span><span class="p">.</span><span class="nx">MyService</span><span class="p">.</span><span class="nx">MyPort</span><span class="p">.</span><span class="nx">MyFunction</span><span class="p">({</span><span class="na">name</span><span class="p">:</span> <span class="dl">'</span><span class="s1">value</span><span class="dl">'</span><span class="p">},</span> <span class="nx">options</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">err</span><span class="p">,</span> <span class="nx">result</span><span class="p">)</span> <span class="p">{</span>
+  <span class="c1">// result is a javascript object</span>
+<span class="p">})</span>
+
+<span class="nx">client</span><span class="p">.</span><span class="nx">MyService</span><span class="p">.</span><span class="nx">MyPort</span><span class="p">.</span><span class="nx">MyFunction</span><span class="p">({</span><span class="na">name</span><span class="p">:</span> <span class="dl">'</span><span class="s1">value</span><span class="dl">'</span><span class="p">},</span> <span class="nx">options</span><span class="p">,</span> <span class="nx">extraHeaders</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">err</span><span class="p">,</span> <span class="nx">result</span><span class="p">)</span> <span class="p">{</span>
+  <span class="c1">// result is a javascript object</span>
+<span class="p">})</span>
+</code></pre></div></div>
+
+<h3 id="clientlastrequest">Client.<em>lastRequest</em></h3>
+
+<p>The property that contains last full soap request for client logging.</p>
+
+<h3 id="clientsetendpointurl">Client.setEndpoint(url)</h3>
+
+<p>Overwrites the SOAP service endpoint address.</p>
+
+<h3 id="client-events">Client events</h3>
+<p>Client instances emit the following events:</p>
+
+<ul>
+  <li>request - Emitted before a request is sent. The event handler receives the
+entire Soap request (Envelope) including headers.</li>
+  <li>message - Emitted before a request is sent. The event handler receives the
+Soap body contents. Useful if you don’t want to log /store Soap headers.</li>
+  <li>soapError - Emitted when an erroneous response is received.
+Useful if you want to globally log errors.</li>
+  <li>response - Emitted after a response is received. The event handler receives
+the SOAP response body as well as the entire <code class="language-plaintext highlighter-rouge">IncomingMessage</code> response object.
+This is emitted for all responses (both success and errors).</li>
+</ul>
+
+<p>For an example of using this API, see  <a href="https://github.com/strongloop/strong-soap/blob/master/test/client-test.js">ssl-test</a>.</p>
+
+<p>Here is an example of ‘soapError’ event</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">soap</span><span class="p">.</span><span class="nx">createClient</span><span class="p">(</span><span class="nx">__dirname</span> <span class="o">+</span> <span class="dl">'</span><span class="s1">/wsdl/default_namespace.wsdl</span><span class="dl">'</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">err</span><span class="p">,</span> <span class="nx">client</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kd">var</span> <span class="nx">didEmitEvent</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
+  <span class="nx">client</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="dl">'</span><span class="s1">soapError</span><span class="dl">'</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">didEmitEvent</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+    <span class="nx">assert</span><span class="p">.</span><span class="nx">ok</span><span class="p">(</span><span class="nx">err</span><span class="p">.</span><span class="nx">root</span><span class="p">.</span><span class="nx">Envelope</span><span class="p">.</span><span class="nx">Body</span><span class="p">.</span><span class="nx">Fault</span><span class="p">);</span>
+  <span class="p">});</span>
+  <span class="nx">client</span><span class="p">.</span><span class="nx">MyOperation</span><span class="p">({},</span> <span class="kd">function</span><span class="p">(</span><span class="nx">err</span><span class="p">,</span> <span class="nx">result</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">assert</span><span class="p">.</span><span class="nx">ok</span><span class="p">(</span><span class="nx">didEmitEvent</span><span class="p">);</span>
+    <span class="nx">done</span><span class="p">();</span>
+  <span class="p">});</span>
+<span class="p">},</span> <span class="nx">baseUrl</span><span class="p">);</span>
+</code></pre></div></div>
+
+<h3 id="security">Security</h3>
+
+<p><code class="language-plaintext highlighter-rouge">strong-soap</code> has several default security protocols.  You can easily add your own
+as well.  The interface is quite simple. Each protocol defines two methods:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">addOptions</code> - Method that accepts an options arg that is eventually passed directly to <code class="language-plaintext highlighter-rouge">request</code></li>
+  <li><code class="language-plaintext highlighter-rouge">toXML</code> - Method that returns a string of XML.</li>
+</ul>
+
+<h3 id="basicauthsecurity">BasicAuthSecurity</h3>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="nx">client</span><span class="p">.</span><span class="nx">setSecurity</span><span class="p">(</span><span class="k">new</span> <span class="nx">soap</span><span class="p">.</span><span class="nx">BasicAuthSecurity</span><span class="p">(</span><span class="dl">'</span><span class="s1">username</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">password</span><span class="dl">'</span><span class="p">));</span>
+</code></pre></div></div>
+
+<h3 id="bearersecurity">BearerSecurity</h3>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="nx">client</span><span class="p">.</span><span class="nx">setSecurity</span><span class="p">(</span><span class="k">new</span> <span class="nx">soap</span><span class="p">.</span><span class="nx">BearerSecurity</span><span class="p">(</span><span class="dl">'</span><span class="s1">token</span><span class="dl">'</span><span class="p">));</span>
+</code></pre></div></div>
+
+<h3 id="clientsslsecurity">ClientSSLSecurity</h3>
+
+<p><em>Note</em>: If you run into issues using this protocol, consider passing these options
+as default request options to the constructor:</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">rejectUnauthorized: false</code></li>
+  <li><code class="language-plaintext highlighter-rouge">strictSSL: false</code></li>
+  <li><code class="language-plaintext highlighter-rouge">secureOptions: constants.SSL_OP_NO_TLSv1_2</code> (this is likely needed for node &gt;= 10.0)</li>
+</ul>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="nx">client</span><span class="p">.</span><span class="nx">setSecurity</span><span class="p">(</span><span class="k">new</span> <span class="nx">soap</span><span class="p">.</span><span class="nx">ClientSSLSecurity</span><span class="p">(</span>
+    <span class="dl">'</span><span class="s1">/path/to/key</span><span class="dl">'</span>
+    <span class="p">,</span> <span class="dl">'</span><span class="s1">/path/to/cert</span><span class="dl">'</span>
+    <span class="p">,</span> <span class="p">{</span><span class="cm">/*default request options*/</span><span class="p">}</span>
+  <span class="p">));</span>
+</code></pre></div></div>
+
+<h3 id="wssecurity">WSSecurity</h3>
+
+<p><code class="language-plaintext highlighter-rouge">WSSecurity</code> implements WS-Security. UsernameToken and PasswordText/PasswordDigest is supported.</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="kd">var</span> <span class="nx">wsSecurity</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">WSSecurity</span><span class="p">(</span><span class="nx">username</span><span class="p">,</span> <span class="nx">password</span><span class="p">,</span> <span class="nx">options</span><span class="p">)</span>
+    <span class="c1">//the 'options' object is optional and contains properties:</span>
+    <span class="c1">//passwordType: 'PasswordDigest' or 'PasswordText' default is PasswordText</span>
+    <span class="c1">//hasTimeStamp: true or false, default is true</span>
+    <span class="c1">//hasTokenCreated: true or false, default is true</span>
+  <span class="nx">client</span><span class="p">.</span><span class="nx">setSecurity</span><span class="p">(</span><span class="nx">wsSecurity</span><span class="p">);</span>
+</code></pre></div></div>
+
+<h3 id="wssecuritycert">WSSecurityCert</h3>
+
+<p>WS-Security X509 Certificate support.</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="kd">var</span> <span class="nx">privateKey</span> <span class="o">=</span> <span class="nx">fs</span><span class="p">.</span><span class="nx">readFileSync</span><span class="p">(</span><span class="nx">privateKeyPath</span><span class="p">);</span>
+  <span class="kd">var</span> <span class="nx">publicKey</span> <span class="o">=</span> <span class="nx">fs</span><span class="p">.</span><span class="nx">readFileSync</span><span class="p">(</span><span class="nx">publicKeyPath</span><span class="p">);</span>
+  <span class="kd">var</span> <span class="nx">password</span> <span class="o">=</span> <span class="dl">''</span><span class="p">;</span> <span class="c1">// optional password</span>
+  <span class="kd">var</span> <span class="nx">wsSecurity</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">soap</span><span class="p">.</span><span class="nx">WSSecurityCert</span><span class="p">(</span><span class="nx">privateKey</span><span class="p">,</span> <span class="nx">publicKey</span><span class="p">,</span> <span class="nx">password</span><span class="p">,</span> <span class="dl">'</span><span class="s1">utf8</span><span class="dl">'</span><span class="p">);</span>
+  <span class="nx">client</span><span class="p">.</span><span class="nx">setSecurity</span><span class="p">(</span><span class="nx">wsSecurity</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p><em>Note</em>: Optional dependency ‘ursa’ is required to be installed successfully when WSSecurityCert is used.</p>
+
+<h2 id="xml-attributes">XML attributes</h2>
+
+<h3 id="handling-xml-attributes-value-and-xml-wsdloptions">Handling XML attributes, value, and XML (wsdlOptions)</h3>
+
+<p>To override the default behavior of <code class="language-plaintext highlighter-rouge">strong-soap</code>, use the <code class="language-plaintext highlighter-rouge">wsdlOptions</code> object, passed in the
+<code class="language-plaintext highlighter-rouge">createClient()</code> method.  The <code class="language-plaintext highlighter-rouge">wsdlOptions</code> has the following properties:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">wsdlOptions</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="na">attributesKey</span><span class="p">:</span> <span class="dl">'</span><span class="s1">theAttrs</span><span class="dl">'</span><span class="p">,</span>
+  <span class="na">valueKey</span><span class="p">:</span> <span class="dl">'</span><span class="s1">theVal</span><span class="dl">'</span><span class="p">,</span>
+  <span class="na">xmlKey</span><span class="p">:</span> <span class="dl">'</span><span class="s1">theXml</span><span class="dl">'</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>If you call <code class="language-plaintext highlighter-rouge">createClient()</code> with no options (or an empty Object <code class="language-plaintext highlighter-rouge">{}</code>),  <code class="language-plaintext highlighter-rouge">strong-soap</code> defaults
+to the following:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">attributesKey</code> : <code class="language-plaintext highlighter-rouge">'$attributes'</code></li>
+  <li><code class="language-plaintext highlighter-rouge">valueKey</code> : <code class="language-plaintext highlighter-rouge">'$value'</code></li>
+  <li><code class="language-plaintext highlighter-rouge">xmlKey</code> : <code class="language-plaintext highlighter-rouge">'$xml'</code></li>
+</ul>
+
+<h3 id="overriding-the-value-key">Overriding the value key</h3>
+
+<p>By default, <code class="language-plaintext highlighter-rouge">strong-soap</code> uses <code class="language-plaintext highlighter-rouge">$value</code> as key for any parsed XML value which may interfere with your other code as it
+could be some reserved word, or the <code class="language-plaintext highlighter-rouge">$</code> in general cannot be used for a key to start with.</p>
+
+<p>You can define your own <code class="language-plaintext highlighter-rouge">valueKey</code> by passing it in the <code class="language-plaintext highlighter-rouge">wsdl_options</code> to the createClient call like so:</p>
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">wsdlOptions</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="na">valueKey</span><span class="p">:</span> <span class="dl">'</span><span class="s1">theVal</span><span class="dl">'</span>
+<span class="p">};</span>
+
+<span class="nx">soap</span><span class="p">.</span><span class="nx">createClient</span><span class="p">(</span><span class="nx">__dirname</span> <span class="o">+</span> <span class="dl">'</span><span class="s1">/wsdl/default_namespace.wsdl</span><span class="dl">'</span><span class="p">,</span> <span class="nx">wsdlOptions</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">err</span><span class="p">,</span> <span class="nx">client</span><span class="p">)</span> <span class="p">{</span>
+  <span class="c1">// your code</span>
+<span class="p">});</span>
+</code></pre></div></div>
+
+<h3 id="overriding-the-xml-key">Overriding the xml key</h3>
+<p>As <code class="language-plaintext highlighter-rouge">valueKey</code>, <code class="language-plaintext highlighter-rouge">strong-soap</code> uses <code class="language-plaintext highlighter-rouge">$xml</code> as key. The xml key is used to pass XML Object without adding namespace or parsing the string.</p>
+
+<p>Example :</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">dom</span> <span class="o">=</span> <span class="p">{</span>
+     <span class="na">$xml</span><span class="p">:</span> <span class="dl">'</span><span class="s1">&lt;parentnode type="type"&gt;&lt;childnode&gt;&lt;/childnode&gt;&lt;/parentnode&gt;</span><span class="dl">'</span>
+<span class="p">};</span>
+</code></pre></div></div>
+
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;tns:dom&gt;</span>
+    <span class="nt">&lt;parentnode</span> <span class="na">type=</span><span class="s">"type"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;childnode&gt;&lt;/childnode&gt;</span>
+    <span class="nt">&lt;/parentnode&gt;</span>
+<span class="nt">&lt;/tns:dom&gt;</span>
+</code></pre></div></div>
+
+<p>You can define your own <code class="language-plaintext highlighter-rouge">xmlKey</code> by passing it in the <code class="language-plaintext highlighter-rouge">wsdl_options</code> to the createClient call like this:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">wsdlOptions</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="na">xmlKey</span><span class="p">:</span> <span class="dl">'</span><span class="s1">theXml</span><span class="dl">'</span>
+<span class="p">};</span>
+
+<span class="nx">soap</span><span class="p">.</span><span class="nx">createClient</span><span class="p">(</span><span class="nx">__dirname</span> <span class="o">+</span> <span class="dl">'</span><span class="s1">/wsdl/default_namespace.wsdl</span><span class="dl">'</span><span class="p">,</span> <span class="nx">wsdlOptions</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">err</span><span class="p">,</span> <span class="nx">client</span><span class="p">)</span> <span class="p">{</span>
+  <span class="c1">// your code</span>
+<span class="p">});</span>
+</code></pre></div></div>
+
+<h3 id="overriding-the-attributes-key">Overriding the attributes key</h3>
+
+<p>You can achieve attributes like:</p>
+
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;parentnode&gt;</span>
+  <span class="nt">&lt;childnode</span> <span class="na">name=</span><span class="s">"childsname"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;/childnode&gt;</span>
+<span class="nt">&lt;/parentnode&gt;</span>
+</code></pre></div></div>
+<p>By attaching an attributes object to a node.</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span>
+  <span class="nl">parentnode</span><span class="p">:</span> <span class="p">{</span>
+    <span class="na">childnode</span><span class="p">:</span> <span class="p">{</span>
+      <span class="na">$attributes</span><span class="p">:</span> <span class="p">{</span>
+        <span class="na">name</span><span class="p">:</span> <span class="dl">'</span><span class="s1">childsname</span><span class="dl">'</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+</code></pre></div></div>
+<p>However, “attributes” may be a reserved key for some systems that actually want a node:</p>
+
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;attributes&gt;</span>
+<span class="nt">&lt;/attributes&gt;</span>
+</code></pre></div></div>
+
+<p>In this case you can configure the attributes key in the <code class="language-plaintext highlighter-rouge">wsdlOptions</code> like this:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">wsdlOptions</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="na">attributesKey</span><span class="p">:</span> <span class="dl">'</span><span class="s1">$attributes</span><span class="dl">'</span>
+<span class="p">};</span>
+</code></pre></div></div>
+
+<p>Adding xsiType</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">soap</span><span class="p">.</span><span class="nx">createClient</span><span class="p">(</span><span class="nx">__dirname</span> <span class="o">+</span> <span class="dl">'</span><span class="s1">/wsdl/default_namespace.wsdl</span><span class="dl">'</span><span class="p">,</span> <span class="nx">wsdlOptions</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">err</span><span class="p">,</span> <span class="nx">client</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">client</span><span class="p">.</span><span class="o">*</span><span class="nx">method</span><span class="o">*</span><span class="p">({</span>
+    <span class="na">parentnode</span><span class="p">:</span> <span class="p">{</span>
+      <span class="na">childnode</span><span class="p">:</span> <span class="p">{</span>
+        <span class="na">$attributes</span><span class="p">:</span> <span class="p">{</span>
+          <span class="na">$xsiType</span><span class="p">:</span> <span class="dl">"</span><span class="s2">{xmlnsTy}Ty</span><span class="dl">"</span>
+        <span class="p">}</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+  <span class="p">});</span>
+<span class="p">});</span>
+</code></pre></div></div>
+
+<p>Removing the xsiType. The resulting Request shouldn’t have the attribute xsiType</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">soap</span><span class="p">.</span><span class="nx">createClient</span><span class="p">(</span><span class="nx">__dirname</span> <span class="o">+</span> <span class="dl">'</span><span class="s1">/wsdl/default_namespace.wsdl</span><span class="dl">'</span><span class="p">,</span> <span class="nx">wsdlOptions</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">err</span><span class="p">,</span> <span class="nx">client</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">client</span><span class="p">.</span><span class="o">*</span><span class="nx">method</span><span class="o">*</span><span class="p">({</span>
+    <span class="na">parentnode</span><span class="p">:</span> <span class="p">{</span>
+      <span class="na">childnode</span><span class="p">:</span> <span class="p">{</span>
+        <span class="na">$attributes</span><span class="p">:</span> <span class="p">{</span>
+
+        <span class="p">}</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+  <span class="p">});</span>
+<span class="p">});</span>
+</code></pre></div></div>
+
+<p>To see it in practice, consider the sample in: <a href="https://github.com/strongloop/strong-soap/tree/master/test/request-response-samples/addPets__force_namespaces">test/request-response-samples/addPets__force_namespaces</a></p>
+
+<h2 id="xmlhandler">XMLHandler</h2>
+
+<p>XMLHandler enables you to to convert a JSON object to XML and XML to a JSON object.  It can also parse an XML string or stream into the XMLBuilder tree.</p>
+
+<p>API to convert JSON object to XML and XML to JSON object:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">soap</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">..</span><span class="dl">'</span><span class="p">).</span><span class="nx">soap</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">XMLHandler</span> <span class="o">=</span> <span class="nx">soap</span><span class="p">.</span><span class="nx">XMLHandler</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">xmlHandler</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">XMLHandler</span><span class="p">();</span>
+<span class="kd">var</span> <span class="nx">util</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">util</span><span class="dl">'</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">url</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">http://www.webservicex.net/stockquote.asmx?WSDL</span><span class="dl">'</span><span class="p">;</span>
+
+<span class="kd">var</span> <span class="nx">requestArgs</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="na">symbol</span><span class="p">:</span> <span class="dl">'</span><span class="s1">IBM</span><span class="dl">'</span>
+<span class="p">};</span>
+
+<span class="kd">var</span> <span class="nx">options</span> <span class="o">=</span> <span class="p">{};</span>
+<span class="kd">var</span> <span class="nx">clientOptions</span> <span class="o">=</span> <span class="p">{};</span>
+<span class="nx">soap</span><span class="p">.</span><span class="nx">createClient</span><span class="p">(</span><span class="nx">url</span><span class="p">,</span> <span class="nx">clientOptions</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">err</span><span class="p">,</span> <span class="nx">client</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kd">var</span> <span class="nx">customRequestHeader</span> <span class="o">=</span> <span class="p">{</span><span class="na">customheader1</span><span class="p">:</span> <span class="dl">'</span><span class="s1">test1</span><span class="dl">'</span><span class="p">};</span>
+  <span class="nx">client</span><span class="p">.</span><span class="nx">GetQuote</span><span class="p">(</span><span class="nx">requestArgs</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">err</span><span class="p">,</span> <span class="nx">result</span><span class="p">,</span> <span class="nx">envelope</span><span class="p">,</span> <span class="nx">soapHeader</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// Convert 'result' JSON object to XML</span>
+    <span class="kd">var</span> <span class="nx">node</span> <span class="o">=</span> <span class="nx">xmlHandler</span><span class="p">.</span><span class="nx">jsonToXml</span><span class="p">(</span><span class="kc">null</span><span class="p">,</span> <span class="kc">null</span><span class="p">,</span>
+      <span class="nx">XMLHandler</span><span class="p">.</span><span class="nx">createSOAPEnvelopeDescriptor</span><span class="p">(</span><span class="dl">'</span><span class="s1">soap</span><span class="dl">'</span><span class="p">),</span> <span class="nx">result</span><span class="p">);</span>
+    <span class="kd">var</span> <span class="nx">xml</span> <span class="o">=</span> <span class="nx">node</span><span class="p">.</span><span class="nx">end</span><span class="p">({</span><span class="na">pretty</span><span class="p">:</span> <span class="kc">true</span><span class="p">});</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">xml</span><span class="p">);</span>
+
+    <span class="c1">// Convert XML to JSON object</span>
+    <span class="kd">var</span> <span class="nx">root</span> <span class="o">=</span> <span class="nx">xmlHandler</span><span class="p">.</span><span class="nx">xmlToJson</span><span class="p">(</span><span class="kc">null</span><span class="p">,</span> <span class="nx">xml</span><span class="p">,</span> <span class="kc">null</span><span class="p">);</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">%s</span><span class="dl">'</span><span class="p">,</span> <span class="nx">util</span><span class="p">.</span><span class="nx">inspect</span><span class="p">(</span><span class="nx">root</span><span class="p">,</span> <span class="p">{</span><span class="na">depth</span><span class="p">:</span> <span class="kc">null</span><span class="p">}));</span>
+
+  <span class="p">},</span> <span class="nx">options</span><span class="p">,</span> <span class="nx">customRequestHeader</span><span class="p">);</span>
+<span class="p">});</span>
+</code></pre></div></div>
+
+<p>Parse XML string or stream into the XMLBuilder tree:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">root</span> <span class="o">=</span> <span class="nx">XMLHandler</span><span class="p">.</span><span class="nx">parseXml</span><span class="p">(</span><span class="kc">null</span><span class="p">,</span> <span class="nx">xmlString</span><span class="p">);</span>
+</code></pre></div></div>
+
+<h2 id="wsdl">WSDL</h2>
+
+<h3 id="wsdlopenwsdlurl-options-callbackerr-wsdl">wsdl.open(wsdlURL, options, callback(err, wsdl))</h3>
+
+<p>Loads WSDL into a tree form. Traverse through WSDL tree to get to bindings, services, ports, operations, and so on.</p>
+
+<p>Parameters:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">wsdlURL</code> WSDL url to load.</li>
+  <li><code class="language-plaintext highlighter-rouge">options</code> WSDL options</li>
+  <li><code class="language-plaintext highlighter-rouge">callback</code> Error and WSDL loaded into object tree.</li>
+</ul>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">soap</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">..</span><span class="dl">'</span><span class="p">).</span><span class="nx">soap</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">WSDL</span> <span class="o">=</span> <span class="nx">soap</span><span class="p">.</span><span class="nx">WSDL</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">path</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">path</span><span class="dl">'</span><span class="p">);</span>
+
+<span class="c1">// Pass in WSDL options if any</span>
+
+<span class="kd">var</span> <span class="nx">options</span> <span class="o">=</span> <span class="p">{};</span>
+<span class="nx">WSDL</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="dl">'</span><span class="s1">./wsdls/stockquote.wsdl</span><span class="dl">'</span><span class="p">,</span><span class="nx">options</span><span class="p">,</span>
+  <span class="kd">function</span><span class="p">(</span><span class="nx">err</span><span class="p">,</span> <span class="nx">wsdl</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// You should be able to get to any information of this WSDL from this object. Traverse</span>
+    <span class="c1">// the WSDL tree to get  bindings, operations, services, portTypes, messages,</span>
+    <span class="c1">// parts, and XSD elements/Attributes.</span>
+
+    <span class="kd">var</span> <span class="nx">getQuoteOp</span> <span class="o">=</span> <span class="nx">wsdl</span><span class="p">.</span><span class="nx">definitions</span><span class="p">.</span><span class="nx">bindings</span><span class="p">.</span><span class="nx">StockQuoteSoap</span><span class="p">.</span><span class="nx">operations</span><span class="p">.</span><span class="nx">GetQuote</span><span class="p">;</span>
+    <span class="c1">// print operation name</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">getQuoteOp</span><span class="p">.</span><span class="nx">$name</span><span class="p">);</span>
+    <span class="kd">var</span> <span class="nx">service</span> <span class="o">=</span> <span class="nx">wsdl</span><span class="p">.</span><span class="nx">definitions</span><span class="p">.</span><span class="nx">services</span><span class="p">[</span><span class="dl">'</span><span class="s1">StockQuote</span><span class="dl">'</span><span class="p">];</span>
+    <span class="c1">//print service name</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">service</span><span class="p">.</span><span class="nx">$name</span><span class="p">);</span>
+<span class="p">});</span>
+</code></pre></div></div>
+
+<h3 id="wsdlopensyncwsdlurl-options">wsdl.openSync(wsdlURL, options)</h3>
+
+<p>Loads WSDL into a tree form directly from memory. It traverses through WSDL tree to get to bindings, services, ports, operations, and so on as long as you have your dependent WSDLs and schemas are loaded and available in the <code class="language-plaintext highlighter-rouge">options.WSDL_CACHE</code>. If any I/O is required to retrieve any dependencies this call will throw an error.</p>
+
+<p>Parameters:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">wsdlURL</code> WSDL url to load as named in the cache.</li>
+  <li><code class="language-plaintext highlighter-rouge">options</code> WSDL options</li>
+</ul>
+
+<p>An example of loading WSDLs into your <code class="language-plaintext highlighter-rouge">options.WSDL_CACHE</code> and calling <code class="language-plaintext highlighter-rouge">wsdl.loadSync()</code> can be found in the test <a href="https://github.com/strongloop/strong-soap/tree/master/test/wsdl-load-from-memory-test.js">test/wsdl-load-from-memory-test</a></p>
+
+<h2 id="server">Server</h2>
+
+<h3 id="soaplistenserver-path-services-wsdl">soap.listen(<em>server</em>, <em>path</em>, <em>services</em>, <em>wsdl</em>)</h3>
+
+<p>Creates a new SOAP server that listens on <em>path</em> and provides <em>services</em>.</p>
+
+<p><em>wsdl</em> is an xml string that defines the service.</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="kd">var</span> <span class="nx">myService</span> <span class="o">=</span> <span class="p">{</span>
+      <span class="na">MyService</span><span class="p">:</span> <span class="p">{</span>
+          <span class="na">MyPort</span><span class="p">:</span> <span class="p">{</span>
+              <span class="na">MyFunction</span><span class="p">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">args</span><span class="p">)</span> <span class="p">{</span>
+                  <span class="k">return</span> <span class="p">{</span>
+                      <span class="na">name</span><span class="p">:</span> <span class="nx">args</span><span class="p">.</span><span class="nx">name</span>
+                  <span class="p">};</span>
+              <span class="p">},</span>
+
+              <span class="c1">// This is how to define an asynchronous function.</span>
+              <span class="na">MyAsyncFunction</span><span class="p">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">args</span><span class="p">,</span> <span class="nx">callback</span><span class="p">)</span> <span class="p">{</span>
+                  <span class="c1">// do some work</span>
+                  <span class="nx">callback</span><span class="p">({</span>
+                      <span class="na">name</span><span class="p">:</span> <span class="nx">args</span><span class="p">.</span><span class="nx">name</span>
+                  <span class="p">});</span>
+              <span class="p">},</span>
+
+              <span class="c1">// This is how to receive incoming headers</span>
+              <span class="na">HeadersAwareFunction</span><span class="p">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">args</span><span class="p">,</span> <span class="nx">cb</span><span class="p">,</span> <span class="nx">headers</span><span class="p">)</span> <span class="p">{</span>
+                  <span class="k">return</span> <span class="p">{</span>
+                      <span class="na">name</span><span class="p">:</span> <span class="nx">headers</span><span class="p">.</span><span class="nx">Token</span>
+                  <span class="p">};</span>
+              <span class="p">},</span>
+
+              <span class="c1">// You can also inspect the original `req`</span>
+              <span class="na">reallyDeatailedFunction</span><span class="p">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">args</span><span class="p">,</span> <span class="nx">cb</span><span class="p">,</span> <span class="nx">headers</span><span class="p">,</span> <span class="nx">req</span><span class="p">)</span> <span class="p">{</span>
+                  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">SOAP `reallyDeatailedFunction` request from </span><span class="dl">'</span> <span class="o">+</span> <span class="nx">req</span><span class="p">.</span><span class="nx">connection</span><span class="p">.</span><span class="nx">remoteAddress</span><span class="p">);</span>
+                  <span class="k">return</span> <span class="p">{</span>
+                      <span class="na">name</span><span class="p">:</span> <span class="nx">headers</span><span class="p">.</span><span class="nx">Token</span>
+                  <span class="p">};</span>
+              <span class="p">}</span>
+          <span class="p">}</span>
+      <span class="p">}</span>
+  <span class="p">};</span>
+
+  <span class="kd">var</span> <span class="nx">xml</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">fs</span><span class="dl">'</span><span class="p">).</span><span class="nx">readFileSync</span><span class="p">(</span><span class="dl">'</span><span class="s1">myservice.wsdl</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">utf8</span><span class="dl">'</span><span class="p">),</span>
+      <span class="nx">server</span> <span class="o">=</span> <span class="nx">http</span><span class="p">.</span><span class="nx">createServer</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">request</span><span class="p">,</span><span class="nx">response</span><span class="p">)</span> <span class="p">{</span>
+          <span class="nx">response</span><span class="p">.</span><span class="nx">end</span><span class="p">(</span><span class="dl">"</span><span class="s2">404: Not Found: </span><span class="dl">"</span> <span class="o">+</span> <span class="nx">request</span><span class="p">.</span><span class="nx">url</span><span class="p">);</span>
+      <span class="p">});</span>
+
+  <span class="nx">server</span><span class="p">.</span><span class="nx">listen</span><span class="p">(</span><span class="mi">8000</span><span class="p">);</span>
+  <span class="nx">soap</span><span class="p">.</span><span class="nx">listen</span><span class="p">(</span><span class="nx">server</span><span class="p">,</span> <span class="dl">'</span><span class="s1">/wsdl</span><span class="dl">'</span><span class="p">,</span> <span class="nx">myService</span><span class="p">,</span> <span class="nx">xml</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>An example of using the SOAP server is in <a href="https://github.com/strongloop/strong-soap/tree/master/test/server-client-document-test.js">test/server-client-document-test</a></p>
+
+<h3 id="options">Options</h3>
+
+<p>You can pass in server and <a href="#handling-xml-attributes-value-and-xml-wsdloptions">WSDL Options</a>
+using an options hash.</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">xml</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">fs</span><span class="dl">'</span><span class="p">).</span><span class="nx">readFileSync</span><span class="p">(</span><span class="dl">'</span><span class="s1">myservice.wsdl</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">utf8</span><span class="dl">'</span><span class="p">);</span>
+
+<span class="nx">soap</span><span class="p">.</span><span class="nx">listen</span><span class="p">(</span><span class="nx">server</span><span class="p">,</span> <span class="p">{</span>
+    <span class="c1">// Server options.</span>
+    <span class="na">path</span><span class="p">:</span> <span class="dl">'</span><span class="s1">/wsdl</span><span class="dl">'</span><span class="p">,</span>
+    <span class="na">services</span><span class="p">:</span> <span class="nx">myService</span><span class="p">,</span>
+    <span class="na">xml</span><span class="p">:</span> <span class="nx">xml</span><span class="p">,</span>
+
+    <span class="c1">// WSDL options.</span>
+    <span class="na">attributesKey</span><span class="p">:</span> <span class="dl">'</span><span class="s1">theAttrs</span><span class="dl">'</span><span class="p">,</span>
+    <span class="na">valueKey</span><span class="p">:</span> <span class="dl">'</span><span class="s1">theVal</span><span class="dl">'</span><span class="p">,</span>
+    <span class="na">xmlKey</span><span class="p">:</span> <span class="dl">'</span><span class="s1">theXml</span><span class="dl">'</span>
+<span class="p">});</span>
+</code></pre></div></div>
+
+<h3 id="server-logging">Server logging</h3>
+
+<p>If the <code class="language-plaintext highlighter-rouge">log</code> method is defined it will be called with ‘received’ and ‘replied’
+along with data.</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="nx">server</span> <span class="o">=</span> <span class="nx">soap</span><span class="p">.</span><span class="nx">listen</span><span class="p">(...)</span>
+  <span class="nx">server</span><span class="p">.</span><span class="nx">log</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">type</span><span class="p">,</span> <span class="nx">data</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// type is 'received' or 'replied'</span>
+  <span class="p">};</span>
+</code></pre></div></div>
+
+<h3 id="server-events">Server events</h3>
+
+<p>Server instances emit the following events:</p>
+
+<ul>
+  <li>request - Emitted for every received messages.
+The signature of the callback is <code class="language-plaintext highlighter-rouge">function(request, methodName)</code>.</li>
+  <li>headers - Emitted when the SOAP Headers are not empty.
+The signature of the callback is <code class="language-plaintext highlighter-rouge">function(headers, methodName)</code>.</li>
+</ul>
+
+<p>The sequence order of the calls is <code class="language-plaintext highlighter-rouge">request</code>, <code class="language-plaintext highlighter-rouge">headers</code> and then the dedicated
+service method.</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="nx">test</span><span class="p">.</span><span class="nx">soapServer</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="dl">'</span><span class="s1">request</span><span class="dl">'</span><span class="p">,</span> <span class="kd">function</span> <span class="nx">requestManager</span><span class="p">(</span><span class="nx">request</span><span class="p">,</span> <span class="nx">methodName</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nx">assert</span><span class="p">.</span><span class="nx">equal</span><span class="p">(</span><span class="nx">methodName</span><span class="p">,</span> <span class="dl">'</span><span class="s1">GetLastTradePrice</span><span class="dl">'</span><span class="p">);</span>
+      <span class="nx">done</span><span class="p">();</span>
+    <span class="p">});</span>
+
+</code></pre></div></div>
+
+<p>An example of using the SOAP server is in <a href="https://github.com/strongloop/strong-soap/tree/master/test/server-test.js">test/server-test</a></p>
+
+<h3 id="soap-fault">SOAP Fault</h3>
+
+<p>A service method can reply with a SOAP Fault to a client by <code class="language-plaintext highlighter-rouge">throw</code>ing an
+object with a <code class="language-plaintext highlighter-rouge">Fault</code> property.</p>
+
+<p>Example SOAP 1.1 Fault:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="nx">test</span><span class="p">.</span><span class="nx">service</span> <span class="o">=</span> <span class="p">{</span>
+      <span class="na">DocLiteralWrappedService</span><span class="p">:</span> <span class="p">{</span>
+        <span class="na">DocLiteralWrappedPort</span><span class="p">:</span> <span class="p">{</span>
+          <span class="na">myMethod</span><span class="p">:</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">args</span><span class="p">,</span> <span class="nx">cb</span><span class="p">,</span> <span class="nx">soapHeader</span><span class="p">)</span> <span class="p">{</span>
+            <span class="k">throw</span> <span class="p">{</span>
+              <span class="na">Fault</span><span class="p">:</span> <span class="p">{</span>
+                  <span class="na">faultcode</span><span class="p">:</span> <span class="dl">"</span><span class="s2">sampleFaultCode</span><span class="dl">"</span><span class="p">,</span>
+                  <span class="na">faultstring</span><span class="p">:</span> <span class="dl">"</span><span class="s2">sampleFaultString</span><span class="dl">"</span><span class="p">,</span>
+                  <span class="na">detail</span><span class="p">:</span>
+                    <span class="p">{</span> <span class="na">myMethodFault</span><span class="p">:</span>
+                      <span class="p">{</span><span class="na">errorMessage</span><span class="p">:</span> <span class="dl">'</span><span class="s1">MyMethod Business Exception message</span><span class="dl">'</span><span class="p">,</span> <span class="na">value</span><span class="p">:</span> <span class="mi">10</span><span class="p">}</span>
+                    <span class="p">}</span>
+                <span class="p">}</span>
+            <span class="p">}</span>
+          <span class="p">}</span>
+        <span class="p">}</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+</code></pre></div></div>
+
+<p>SOAP 1.2 Fault:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="nx">test</span><span class="p">.</span><span class="nx">service</span> <span class="o">=</span> <span class="p">{</span>
+      <span class="na">DocLiteralWrappedService</span><span class="p">:</span> <span class="p">{</span>
+        <span class="na">DocLiteralWrappedPort</span><span class="p">:</span> <span class="p">{</span>
+          <span class="na">myMethod</span><span class="p">:</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">args</span><span class="p">,</span> <span class="nx">cb</span><span class="p">,</span> <span class="nx">soapHeader</span><span class="p">)</span> <span class="p">{</span>
+            <span class="k">throw</span> <span class="p">{</span>
+              <span class="na">Fault</span><span class="p">:</span> <span class="p">{</span>
+                <span class="na">Code</span><span class="p">:</span> <span class="p">{</span>
+                  <span class="na">Value</span><span class="p">:</span> <span class="dl">"</span><span class="s2">soap:Sender</span><span class="dl">"</span><span class="p">,</span>
+                  <span class="na">Subcode</span><span class="p">:</span> <span class="p">{</span> <span class="na">Value</span><span class="p">:</span> <span class="dl">"</span><span class="s2">rpc:BadArguments</span><span class="dl">"</span> <span class="p">}</span>
+                <span class="p">},</span>
+                <span class="na">Reason</span><span class="p">:</span> <span class="p">{</span> <span class="na">Text</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Processing Error</span><span class="dl">"</span> <span class="p">},</span>
+                <span class="na">Detail</span><span class="p">:</span>
+                <span class="p">{</span><span class="na">myMethodFault2</span><span class="p">:</span>
+                   <span class="p">{</span><span class="na">errorMessage2</span><span class="p">:</span> <span class="dl">'</span><span class="s1">MyMethod Business Exception message</span><span class="dl">'</span><span class="p">,</span> <span class="na">value2</span><span class="p">:</span> <span class="mi">10</span><span class="p">}</span>
+                <span class="p">}</span>
+              <span class="p">}</span>
+            <span class="p">}</span>
+          <span class="p">}</span>
+        <span class="p">}</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+</code></pre></div></div>
+
+<p>Examples of  SOAP 1.1/SOAP 1.2 Fault response can be found in test <a href="https://github.com/strongloop/strong-soap/tree/master/test/server-client-document-test.js">test/server-client-document-test</a></p>
+
+<h3 id="server-security-example-using-passworddigest">Server security example using PasswordDigest</h3>
+
+<p>If <code class="language-plaintext highlighter-rouge">server.authenticate</code> is not defined then no authentication will take place.</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="nx">server</span> <span class="o">=</span> <span class="nx">soap</span><span class="p">.</span><span class="nx">listen</span><span class="p">(...)</span>
+  <span class="nx">server</span><span class="p">.</span><span class="nx">authenticate</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">security</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">created</span><span class="p">,</span> <span class="nx">nonce</span><span class="p">,</span> <span class="nx">password</span><span class="p">,</span> <span class="nx">user</span><span class="p">,</span> <span class="nx">token</span><span class="p">;</span>
+    <span class="nx">token</span> <span class="o">=</span> <span class="nx">security</span><span class="p">.</span><span class="nx">UsernameToken</span><span class="p">,</span> <span class="nx">user</span> <span class="o">=</span> <span class="nx">token</span><span class="p">.</span><span class="nx">Username</span><span class="p">,</span>
+            <span class="nx">password</span> <span class="o">=</span> <span class="nx">token</span><span class="p">.</span><span class="nx">Password</span><span class="p">,</span> <span class="nx">nonce</span> <span class="o">=</span> <span class="nx">token</span><span class="p">.</span><span class="nx">Nonce</span><span class="p">,</span> <span class="nx">created</span> <span class="o">=</span> <span class="nx">token</span><span class="p">.</span><span class="nx">Created</span><span class="p">;</span>
+    <span class="k">return</span> <span class="nx">user</span> <span class="o">===</span> <span class="dl">'</span><span class="s1">user</span><span class="dl">'</span> <span class="o">&amp;&amp;</span> <span class="nx">password</span> <span class="o">===</span> <span class="nx">soap</span><span class="p">.</span><span class="nx">passwordDigest</span><span class="p">(</span><span class="nx">nonce</span><span class="p">,</span> <span class="nx">created</span><span class="p">,</span> <span class="dl">'</span><span class="s1">password</span><span class="dl">'</span><span class="p">);</span>
+  <span class="p">};</span>
+</code></pre></div></div>
+
+<h3 id="server-connection-authorization">Server connection authorization</h3>
+
+<p>The <code class="language-plaintext highlighter-rouge">server.authorizeConnection</code> method is called prior to the soap service method.
+If the method is defined and returns <code class="language-plaintext highlighter-rouge">false</code> then the incoming connection is
+terminated.</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="nx">server</span> <span class="o">=</span> <span class="nx">soap</span><span class="p">.</span><span class="nx">listen</span><span class="p">(...)</span>
+  <span class="nx">server</span><span class="p">.</span><span class="nx">authorizeConnection</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">req</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="kc">true</span><span class="p">;</span> <span class="c1">// or false</span>
+  <span class="p">};</span>
+</code></pre></div></div>
+
+<h2 id="soap-headers">SOAP headers</h2>
+
+<h3 id="received-soap-headers">Received SOAP headers</h3>
+
+<p>A service method can look at the SOAP headers by providing a third arguments.</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="p">{</span>
+      <span class="nl">HeadersAwareFunction</span><span class="p">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">args</span><span class="p">,</span> <span class="nx">cb</span><span class="p">,</span> <span class="nx">headers</span><span class="p">)</span> <span class="p">{</span>
+          <span class="k">return</span> <span class="p">{</span>
+              <span class="na">name</span><span class="p">:</span> <span class="nx">headers</span><span class="p">.</span><span class="nx">Token</span>
+          <span class="p">};</span>
+      <span class="p">}</span>
+  <span class="p">}</span>
+</code></pre></div></div>
+
+<p>It is also possible to subscribe to the ‘headers’ event.
+The event is triggered before the service method is called, and only when the
+SOAP Headers are not empty.</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="nx">server</span> <span class="o">=</span> <span class="nx">soap</span><span class="p">.</span><span class="nx">listen</span><span class="p">(...)</span>
+  <span class="nx">server</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="dl">'</span><span class="s1">headers</span><span class="dl">'</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">headers</span><span class="p">,</span> <span class="nx">methodName</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// It is possible to change the value of the headers</span>
+    <span class="c1">// before they are handed to the service method.</span>
+    <span class="c1">// It is also possible to throw a SOAP Fault</span>
+  <span class="p">});</span>
+</code></pre></div></div>
+
+<p>First parameter is the Headers object;
+second parameter is the name of the SOAP method that will called
+(in case you need to handle the headers differently based on the method).</p>
+
+<h3 id="outgoing-soap-headers">Outgoing SOAP headers</h3>
+
+<p>Both client and server can define SOAP headers that will be added to what they send.
+They provide the following methods to manage the headers.</p>
+
+<h4 id="addsoapheadervalue-qname">addSoapHeader(value, qname)</h4>
+
+<p>Adds soapHeader to soap:Header node.</p>
+
+<p>Parameters:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">value</code> JSON object representing {headerName: headerValue} or XML string.</li>
+  <li><code class="language-plaintext highlighter-rouge">qname</code> qname used for the header</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>addSoapHeader(value, qname, options);
+</code></pre></div></div>
+
+<p>Returns the index where the header is inserted.</p>
+
+<h4 id="changesoapheaderindex-value-qname">changeSoapHeader(index, value, qname)</h4>
+
+<p>Changes an existing soapHeader.</p>
+
+<p>Parameters:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">index</code> index of the header to replace with provided new value</li>
+  <li><code class="language-plaintext highlighter-rouge">value</code> JSON object representing {headerName: headerValue} or XML string.</li>
+  <li><code class="language-plaintext highlighter-rouge">qname</code> qname used for the header</li>
+</ul>
+
+<h4 id="getsoapheaders">getSoapHeaders()</h4>
+
+<p>Returns all defined headers.</p>
+
+<h4 id="clearsoapheaders">clearSoapHeaders()</h4>
+
+<p>Removes all defined headers.</p>
+
+<p>Examples of using SOAP header API are in: <a href="https://github.com/strongloop/strong-soap/tree/master/test/server-test.js">test/server-test</a> and  <a href="https://github.com/strongloop/strong-soap/tree/master/test/client-test.js">test/server-test</a></p>
+
+<h2 id="soap-stub">soap-stub</h2>
+
+<p>Unit testing services that use SOAP clients can be very cumbersome.  To get
+around this you can use <code class="language-plaintext highlighter-rouge">soap-stub</code> in conjunction with <code class="language-plaintext highlighter-rouge">sinon</code> to stub soap with
+your clients.</p>
+
+<h3 id="example">Example</h3>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">sinon</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">sinon</span><span class="dl">'</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">soapStub</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">strong-soap/soap-stub</span><span class="dl">'</span><span class="p">);</span>
+
+<span class="kd">var</span> <span class="nx">urlMyApplicationWillUseWithCreateClient</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">./example/stockquote.wsdl</span><span class="dl">'</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">clientStub</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="na">SomeOperation</span><span class="p">:</span> <span class="nx">sinon</span><span class="p">.</span><span class="nx">stub</span><span class="p">()</span>
+<span class="p">};</span>
+
+<span class="nx">clientStub</span><span class="p">.</span><span class="nx">SomeOperation</span><span class="p">.</span><span class="nx">respondWithError</span> <span class="o">=</span> <span class="nx">soapStub</span><span class="p">.</span><span class="nx">createRespondingStub</span><span class="p">({</span><span class="na">error</span><span class="p">:</span> <span class="dl">'</span><span class="s1">error</span><span class="dl">'</span><span class="p">});</span>
+<span class="nx">clientStub</span><span class="p">.</span><span class="nx">SomeOperation</span><span class="p">.</span><span class="nx">respondWithSuccess</span> <span class="o">=</span> <span class="nx">soapStub</span><span class="p">.</span><span class="nx">createRespondingStub</span><span class="p">({</span><span class="na">success</span><span class="p">:</span> <span class="dl">'</span><span class="s1">success</span><span class="dl">'</span><span class="p">});</span>
+<span class="c1">// or if you are using promises</span>
+<span class="nx">clientStub</span><span class="p">.</span><span class="nx">SomeOperation</span><span class="p">.</span><span class="nx">respondWithError</span> <span class="o">=</span> <span class="nx">soapStub</span><span class="p">.</span><span class="nx">createRespondingStubAsync</span><span class="p">({</span><span class="na">error</span><span class="p">:</span> <span class="dl">'</span><span class="s1">error</span><span class="dl">'</span><span class="p">});</span>
+<span class="nx">clientStub</span><span class="p">.</span><span class="nx">SomeOperation</span><span class="p">.</span><span class="nx">respondWithSuccess</span> <span class="o">=</span> <span class="nx">soapStub</span><span class="p">.</span><span class="nx">createRespondingStubAsync</span><span class="p">({</span><span class="na">success</span><span class="p">:</span> <span class="dl">'</span><span class="s1">success</span><span class="dl">'</span><span class="p">});</span>
+
+
+<span class="nx">soapStub</span><span class="p">.</span><span class="nx">registerClient</span><span class="p">(</span><span class="dl">'</span><span class="s1">my client alias</span><span class="dl">'</span><span class="p">,</span> <span class="nx">urlMyApplicationWillUseWithCreateClient</span><span class="p">,</span> <span class="nx">clientStub</span><span class="p">);</span>
+
+
+<span class="kd">var</span> <span class="nx">fs</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">fs</span><span class="dl">'</span><span class="p">),</span>
+  <span class="nx">assert</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">assert</span><span class="dl">'</span><span class="p">),</span>
+  <span class="nx">request</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">request</span><span class="dl">'</span><span class="p">),</span>
+  <span class="nx">http</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">http</span><span class="dl">'</span><span class="p">),</span>
+  <span class="nx">lastReqAddress</span><span class="p">;</span>
+
+<span class="nx">describe</span><span class="p">(</span><span class="dl">'</span><span class="s1">myService</span><span class="dl">'</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+  <span class="kd">var</span> <span class="nx">clientStub</span><span class="p">;</span>
+  <span class="kd">var</span> <span class="nx">myService</span><span class="p">;</span>
+
+  <span class="nx">beforeEach</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">clientStub</span> <span class="o">=</span> <span class="nx">soapStub</span><span class="p">.</span><span class="nx">getStub</span><span class="p">(</span><span class="dl">'</span><span class="s1">my client alias</span><span class="dl">'</span><span class="p">);</span>
+    <span class="nx">soapStub</span><span class="p">.</span><span class="nx">reset</span><span class="p">();</span>
+    <span class="nx">myService</span> <span class="o">=</span> <span class="nx">clientStub</span><span class="p">;</span>
+  <span class="p">});</span>
+
+  <span class="nx">describe</span><span class="p">(</span><span class="dl">'</span><span class="s1">failures</span><span class="dl">'</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">beforeEach</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+      <span class="nx">clientStub</span><span class="p">.</span><span class="nx">SomeOperation</span><span class="p">.</span><span class="nx">respondWithError</span><span class="p">();</span>
+    <span class="p">});</span>
+
+    <span class="nx">it</span><span class="p">(</span><span class="dl">'</span><span class="s1">should handle error responses</span><span class="dl">'</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+      <span class="nx">myService</span><span class="p">.</span><span class="nx">SomeOperation</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">err</span><span class="p">,</span> <span class="nx">response</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">// handle the error response.</span>
+      <span class="p">});</span>
+    <span class="p">});</span>
+  <span class="p">});</span>
+<span class="p">});</span>
+
+</code></pre></div></div>
+
+<h2 id="contributors">Contributors</h2>
+
+<ul>
+  <li><a href="https://github.com/strongloop/strong-soap/graphs/contributors">All Contributors</a></li>
+</ul>
+
+
+
+
+    <div class="tags">
+      
+        <b>Tags: </b>
+        
+        
+          
+            <a href="tag_connectors.html" class="tags-item" role="button">connectors</a>
+            
+        
+          
+            <a href="tag_readme.html" class="tags-item" role="button">readme</a>
+            
+        
+      
+    </div>
+</div>
+
+<hr class="shaded"/>
+
+<footer id="container">
+            <div class="row">
+                <div class="col-md-6 footer-left">
+               &copy;2021 IBM / StrongLoop. All rights reserved. <br />
+ Site last generated: Mar 22, 2021
+              </div>
+              <div class="col-md-6 footer-right">
+                <p><img src="https://loopback.io/images/company_logo.png" alt="Company logo"/></p>
+              </div>
+            </div>
+</footer>
+
+
+        </div>
+        <!-- /.row -->
+</div>
+<!-- /.container -->
+    </div>
+</body>
+
+</html>

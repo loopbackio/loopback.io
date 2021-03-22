@@ -1,0 +1,4369 @@
+<!DOCTYPE html>
+<head>
+    
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A where filter specifies a set of logical conditions to match, similar to a WHERE clause in a SQL query.">
+  <meta name="keywords" content=" LoopBack">
+  <title>Where filter | LoopBack Documentation</title>
+  <link rel="stylesheet" href="/css/syntax.css">
+
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/modern-business.css">
+    <link rel="stylesheet" href="/css/lavish-bootstrap.css">
+    <link rel="stylesheet" href="/css/customstyles.css">
+    <link rel="stylesheet" href="/css/theme-v4.css">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-150726441-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-150726441-2');
+</script>
+
+
+    <!-- github star button -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.3.0/anchor.min.js"></script>
+    <script src="/js/toc.js"></script>
+    <script src="/js/customscripts.js"></script>
+
+    <link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    
+
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-lg navbar-brand no_icon" href="/doc/index.html">
+              <img class="no_icon" style="width:147px;" src="/images/branding/logo/white/loopback.svg">&nbsp;<span class="projectTitle"></span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- entries without drop-downs appear here -->
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">API Docs<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        <!-- page.url is /doc/en/lb2/Where-filter.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://loopback.io/doc/en/lb4/apidocs.index.html" target="_blank">LoopBack 4</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb2/Where-filter.html .... folderitem.url is  -->
+                          
+                            <li><a href="http://apidocs.loopback.io" target="_blank">LoopBack 3.x</a></li>
+                          
+                        
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">View<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        <!-- page.url is /doc/en/lb2/Where-filter.html .... folderitem.url is / -->
+                          
+                            <li><a href="/">LoopBack Overview</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb2/Where-filter.html .... folderitem.url is /doc/en/lb4/ -->
+                          
+                            <li><a href="/doc/en/lb4/">LoopBack 4</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb2/Where-filter.html .... folderitem.url is /doc/en/lb3/ -->
+                          
+                            <li><a href="/doc/en/lb3/">LoopBack 3.x</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb2/Where-filter.html .... folderitem.url is /doc/en/lb2/ -->
+                          
+                            <li class="dropdownActive"><a href="/doc/en/lb2/">LoopBack 2.x</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb2/Where-filter.html .... folderitem.url is /doc/en/community/ -->
+                          
+                            <li><a href="/doc/en/community/">Community projects</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb2/Where-filter.html .... folderitem.url is /doc/en/contrib/ -->
+                          
+                            <li><a href="/doc/en/contrib/">Contributing to LoopBack</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb2/Where-filter.html .... folderitem.url is /doc/en/sec/ -->
+                          
+                            <li><a href="/doc/en/sec/">Security advisories</a></li>
+                          
+                        
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Resources<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        <!-- page.url is /doc/en/lb2/Where-filter.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://github.com/strongloop/loopback.io" target="_blank">Docs Github Repo</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb2/Where-filter.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://groups.google.com/forum/#!forum/loopbackjs-announcements" target="_blank">Announcements Mailing List</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb2/Where-filter.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://groups.google.com/forum/#!forum/loopbackjs" target="_blank">Developer Forum</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb2/Where-filter.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://join.slack.com/t/loopbackio/shared_invite/zt-8lbow73r-SKAKz61Vdao~_rGf91pcsw" target="_blank">LoopBack on Slack</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb2/Where-filter.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://stackoverflow.com/questions/tagged/strongloop+or+loopback4+or+loopbackjs" target="_blank">LoopBack on Stack Overflow</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb2/Where-filter.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://strongloop.com/strongblog/tag_LoopBack.html" target="_blank">StrongLoop Blog - LoopBack</a></li>
+                          
+                        
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Translations<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        <!-- page.url is /doc/en/lb2/Where-filter.html .... folderitem.url is /doc/es/lb2/ -->
+                          
+                            <li><a href="/doc/es/lb2/">Español (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb2/Where-filter.html .... folderitem.url is /doc/es/lb4/ -->
+                          
+                            <li><a href="/doc/es/lb4/">Español (v4)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb2/Where-filter.html .... folderitem.url is /doc/fr/lb2/ -->
+                          
+                            <li><a href="/doc/fr/lb2/">Français (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb2/Where-filter.html .... folderitem.url is /doc/fr/lb4/ -->
+                          
+                            <li><a href="/doc/fr/lb4/">Français (v4)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb2/Where-filter.html .... folderitem.url is /doc/ko/lb2/ -->
+                          
+                            <li><a href="/doc/ko/lb2/">한국어 (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb2/Where-filter.html .... folderitem.url is /doc/ko/lb3/ -->
+                          
+                            <li><a href="/doc/ko/lb3/">한국어 (v3)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb2/Where-filter.html .... folderitem.url is /doc/pt-br/lb2/ -->
+                          
+                            <li><a href="/doc/pt-br/lb2/">Português (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb2/Where-filter.html .... folderitem.url is /doc/pt-br/lb4/ -->
+                          
+                            <li><a href="/doc/pt-br/lb4/">Português (v4)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb2/Where-filter.html .... folderitem.url is /doc/ja/lb2/ -->
+                          
+                            <li><a href="/doc/ja/lb2/">日本語 (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb2/Where-filter.html .... folderitem.url is /doc/ja/lb3/ -->
+                          
+                            <li><a href="/doc/ja/lb3/">日本語 (v3)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb2/Where-filter.html .... folderitem.url is /doc/ja/lb4/ -->
+                          
+                            <li><a href="/doc/ja/lb4/">日本語 (v4)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb2/Where-filter.html .... folderitem.url is /doc/ru/lb2/ -->
+                          
+                            <li><a href="/doc/ru/lb2/">Pусский (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb2/Where-filter.html .... folderitem.url is /doc/zh/lb2/ -->
+                          
+                            <li><a href="/doc/zh/lb2/">中文 (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb2/Where-filter.html .... folderitem.url is /doc/zh/lb4/ -->
+                          
+                            <li><a href="/doc/zh/lb4/">中文 (v4)</a></li>
+                          
+                        
+                    </ul>
+                </li>
+                
+                
+                
+                <li>
+                    <form id="search" name="search" class="input-group lb-search" action="/search" method="GET">
+                        <input type="text" class="form-control search-bar" placeholder="Search (powered by Watson)" name="q">
+                        
+                          <input type="hidden" name="sidebar" value="lb2_sidebar">
+                        
+                        <div class="input-group-btn">
+                            <button type="submit" class="btn btn-default" aria-label="search">
+                              <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                            </button>
+                        </div>
+                      </form>
+                </li>
+            </ul>
+        </div>
+      </div>
+</nav>
+
+<!-- Page Content -->
+<div class="container">
+    <!-- Content Row -->
+    <div class="row">
+        <!-- Sidebar Column -->
+        <nav class="col-md-3 sidebar-col">
+          
+
+
+
+
+
+
+
+
+
+
+
+<!-- NOTE: sidebar = site.data.sidebars.mydoc_sidebar.entries -->
+<div class="sidebarTitle"><a href="index.html">Loopback 2.0</a></div>
+<ul id="mysidebar" class="nav-list">
+  
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Installation.html">Installation</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Installing-IBM-API-Connect.html">Installing IBM API Connect</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Installing-StrongLoop.html">Installing StrongLoop</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Installing-compiler-tools.html">Installing compiler tools</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Installing-on-MacOS.html">Installing on MacOS</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Installing-on-Windows.html">Installing on Windows</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Installing-on-Linux.html">Installing on Linux</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Updating-to-the-latest-version.html">Updating to the latest version</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Installation-troubleshooting.html">Installation troubleshooting</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="LoopBack-core-concepts.html">LoopBack core concepts</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Routing.html">Routing</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="LoopBack-FAQ.html">LoopBack FAQ</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Glossary.html">Glossary</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="StrongLoop-Labs.html">StrongLoop Labs</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Getting-started-with-LoopBack.html">Getting started with LoopBack</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Create-a-simple-API.html">Create a simple API</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Use-API-Explorer.html">Use API Explorer</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Connect-your-API-to-a-data-source.html">Connect your API to a data source</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Extend-your-API.html">Extend your API</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Add-a-static-web-page.html">Add a static web page</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Add-a-custom-Express-route.html">Add a custom Express route</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Next-steps.html">Next steps</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Deploy-for-GDPR-readiness.html">Considerations for GDPR readiness</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Getting-started-part-II.html">Getting started part II</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Introducing-the-Coffee-Shop-Reviews-app.html">Introducing the Coffee Shop Reviews app</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Create-new-data-source.html">Create new data source</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Create-new-models.html">Create new models</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Define-model-relations.html">Define model relations</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Define-access-controls.html">Define access controls</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Define-a-remote-hook.html">Define a remote hook</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Create-AngularJS-client.html">Create AngularJS client</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Learn-more.html">Learn more</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Security-advisories.html">Security advisories</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Security-advisory-08-15-2018.html">08-15-2018</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Security-advisory-08-08-2018.html">08-08-2018</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Security-advisory-01-31-2018.html">01-31-2018</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Security-advisory-03-10-2017.html">03-10-2017</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Security-advisory-08-16a-2016.html">08-16a-2016</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Security-advisory-08-16-2016.html">08-16-2016</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Security-advisory-01-12-2016.html">01-12-2016</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Security-advisory-06-04-2015.html">06-04-2015</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Security-advisory-01-09-2015.html">01-09-2015</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Creating-an-application.html">Creating an application</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Environment-specific-configuration.html">Environment-specific configuration</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Versioning-your-API.html">Versioning your API</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Standard-project-structure.html">Standard project structure</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Tutorials-and-examples.html">Tutorials and examples</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Managing-users.html">Managing users</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Registering-users.html">Registering users</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Logging-in-users.html">Logging in users</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Partitioning-users-with-realms.html">Partitioning users with realms</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="User-management-example.html">User management example</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="AccessToken-invalidation.html">AccessToken invalidation</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Authentication-authorization-and-permissions.html">Authentication, authorization, and permissions</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Introduction-to-User-model-authentication.html">Introduction to User model authentication</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Controlling-data-access.html">Controlling data access</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Making-authenticated-requests.html">Making authenticated requests</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Defining-and-using-roles.html">Defining and using roles</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Accessing-related-models.html">Accessing related models</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Creating-a-default-admin-user.html">Creating a default admin user</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Security-considerations.html">Security considerations</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Tutorial-access-control.html">Tutorial: access control</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Defining-models.html">Defining models</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Creating-models.html">Creating models</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Using-the-model-generator.html">Using the model generator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Discovering-models-from-relational-databases.html">Discovering models from relational databases</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Creating-models-from-unstructured-data.html">Creating models from unstructured data</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Customizing-models.html">Customizing models</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Attaching-models-to-data-sources.html">Attaching models to data sources</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Exposing-models-over-REST.html">Exposing models over REST</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Validating-model-data.html">Validating model data</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Creating-model-relations.html">Creating model relations</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Tutorial-model-relations.html">Tutorial: model relations</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="BelongsTo-relations.html">BelongsTo relations</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="HasOne-relations.html">HasOne relations</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="HasMany-relations.html">HasMany relations</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="HasManyThrough-relations.html">HasManyThrough relations</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="HasAndBelongsToMany-relations.html">HasAndBelongsToMany relations</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Polymorphic-relations.html">Polymorphic relations</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Querying-related-models.html">Querying related models</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Embedded-models-and-relations.html">Embedded models and relations</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Nested-queries.html">Nested queries</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Using-built-in-models.html">Using built-in models</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Extending-built-in-models.html">Extending built-in models</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Adding-remote-methods-to-built-in-models.html">Adding remote methods to built-in models</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Creating-database-tables-for-built-in-models.html">Creating database tables for built-in models</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Model-property-reference.html">Model property reference</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Built-in-models-REST-API.html">Built-in models REST API</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="PersistedModel-REST-API.html">PersistedModel REST API</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Access-token-REST-API.html">Access token REST API</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="ACL-REST-API.html">ACL REST API</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Application-REST-API.html">Application REST API</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Relation-REST-API.html">Relation REST API</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Role-REST-API.html">Role REST API</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="User-REST-API.html">User REST API</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Connecting-models-to-data-sources.html">Connecting models to data sources</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Creating-a-database-schema-from-models.html">Creating a database schema from models</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Advanced-topics-data-sources.html">Understanding data sources</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Using-database-transactions.html">Using database transactions</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Executing-native-SQL.html">Executing native SQL</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Building-a-connector.html">Building a connector</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Implementing-create-retrieve-update-and-delete-methods.html">Implementing create, retrieve, update, and delete methods</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Implementing-model-discovery.html">Implementing model discovery</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Implementing-auto-migration.html">Implementing auto-migration</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Working-with-data.html">Working with data</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Creating-updating-and-deleting-data.html">Creating, updating, and deleting data</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Querying-data.html">Querying data</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Fields-filter.html">Fields filter</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Include-filter.html">Include filter</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Limit-filter.html">Limit filter</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Order-filter.html">Order filter</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Skip-filter.html">Skip filter</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  active">
+    
+    
+      <a class="page-link" href="Where-filter.html">Where filter</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Advanced-topics-data.html">Advanced topics: data</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Realtime-server-sent-events.html">Realtime server-sent events</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="AngularJS-LiveSet.html">AngularJS Live Set</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="AngularJS-LiveSet-Example.html">AngularJS Live Set example</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Realtime-socket-io.html">Real-time apps AngularJS using socket.io</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Adding-application-logic.html">Adding application logic</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Working-with-LoopBack-objects.html">Working with LoopBack objects</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Adding-logic-to-models.html">Adding logic to models</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Remote-methods.html">Remote methods</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Remote-hooks.html">Remote hooks</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Operation-hooks.html">Operation hooks</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Model-hooks.html">Model hooks</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Connector-hooks.html">Connector hooks</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Tutorial-Adding-application-logic.html">Tutorial: Application logic</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Defining-boot-scripts.html">Defining boot scripts</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Defining-mixins.html">Defining mixins</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Defining-middleware.html">Defining middleware</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Middleware-example.html">Middleware example</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Using-current-context.html">Using current context</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Events.html">Events</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Using-promises.html">Using promises</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Running-and-debugging-apps.html">Running and debugging apps</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Setting-debug-strings.html">Setting debug strings</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Using-strong-error-handler.html">Using strong-error-handler</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Preparing-for-deployment.html">Preparing for deployment</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="LoopBack-on-Bluemix.html">Running LoopBack apps on Bluemix</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="LoopBack-components.html">LoopBack components</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="OAuth-2.0.html">OAuth 2.0 component</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Push-notifications.html">Push notification component</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Push-notifications-for-iOS-apps.html">Push notifications for iOS apps</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Push-notifications-for-Android-apps.html">Push notifications for Android apps</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Storage-component.html">Storage component</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Storage-component-REST-API.html">Storage component REST API</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Storage-example.html">Storage component example</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Third-party-login-using-Passport.html">Passport login component</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Configuring-providers.json.html">Configuring providers.json</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Tutorial-third-party-login.html">Tutorial: third-party login</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Synchronization.html">Synchronization component</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Tutorial-Offline-Synchronization.html">Tutorial: Offline Synchronization</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Advanced-topics-sync.html">Advanced topics - sync</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Creating-components.html">Creating components</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Command-line-tools.html">Command-line tools</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="ACL-generator.html">ACL generator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="API-definition-generator.html">API definition generator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Application-generator.html">Application generator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Boot-script-generator.html">Boot script generator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Data-source-generator.html">Data source generator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Middleware-generator.html">Middleware generator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Model-generator.html">Model generator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Property-generator.html">Property generator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Relation-generator.html">Relation generator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Remote-method-generator.html">Remote method generator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Swagger-generator.html">Swagger generator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Refresh-definitions-command.html">Refresh definitions command</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Client-SDKs.html">Client SDKs</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="iOS-SDK.html">iOS SDK</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="IOS-getting-started.html">Getting started with the iOS SDK</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Android-SDK.html">Android SDK</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Tutorial-android-getting-started.html">Getting started with the Android SDK</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Working-with-files-using-the-Android-SDK.html">Working with files using the Android SDK</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Push-notifications-using-Android-SDK.html">Push notifications using Android SDK</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Working-with-the-LocalInstallation-class.html">Working with the LocalInstallation class</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="AngularJS-JavaScript-SDK.html">AngularJS SDK</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Angular-example-app.html">Angular example app</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="AngularJS-Grunt-plugin.html">AngularJS Grunt plugin</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Xamarin-SDK.html">Xamarin SDK</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Xamarin-client-API.html">Xamarin client API</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Xamarin-example-app.html">Xamarin example app</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="LoopBack-in-the-client.html">Isomorphic LoopBack</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Running-LoopBack-in-the-browser.html">Running LoopBack in the browser</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Using-Browserify.html">Using Browserify</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Isomorphic-LoopBack-example.html">Isomorphic example</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Connectors-reference.html">Connectors reference</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Memory-connector.html">Memory connector</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Database-connectors.html">Database connectors</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Cloudant-connector.html">Cloudant connector</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="DashDB.html">DashDB</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="DB2-connector.html">DB2 connector</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="DB2-iSeries-connector.html">DB2 for iSeries connector</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="DB2-for-z-OS.html">DB2 for z/OS</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Informix.html">Informix connector</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="MongoDB-connector.html">MongoDB connector</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Connecting-to-MongoDB.html">MongoDB Connector Tutorial</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Using-MongoLab.html">Using MongoLab</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="MySQL-connector.html">MySQL connector</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Connecting-to-MySQL.html">MySQL Connector Tutorial</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Oracle-connector.html">Oracle connector</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Installing-the-Oracle-connector.html">Installing the Oracle connector</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Connecting-to-Oracle.html">Oracle connector tutorial</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="PostgreSQL-connector.html">PostgreSQL connector</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Connecting-to-PostgreSQL.html">PostgreSQL connector tutorial</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Redis-connector.html">Redis connector</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="kv-redis-connector.html">Redis key-value connector</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Example-kv-connector.html">KV connector example</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="SQL-Server-connector.html">SQL Server connector</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Connecting-to-Microsoft-SQL-Server.html">SQL Server connector tutorial</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="SQLite3.html">SQLite3 connector</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Other-connectors.html">Other connectors</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Email-connector.html">Email connector</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="JSON-RPC-connector.html">JSON RPC connector</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="MQLight-connector.html">MQ Light connector</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Push-connector.html">Push connector</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Remote-connector.html">Remote connector</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Remote-connector-example.html">Remote connector example</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Strong-Remoting.html">Strong Remoting</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="REST-connector.html">REST connector</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="REST-connector-example.html">REST connector example</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="SOAP-connector.html">SOAP connector</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="SOAP-Connector-example.html">SOAP connector example</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Storage-connector.html">Storage connector</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Swagger-connector.html">Swagger connector</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Community-connectors.html">Community connectors</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Project-layout-reference.html">Project layout reference</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="client-directory.html">client directory</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="common-directory.html">common directory</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Model-definition-JSON-file.html">Model definition JSON file</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="package.json.html">package.json</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="server-directory.html">server directory</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="config.json.html">config.json</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="datasources.json.html">datasources.json</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="middleware.json.html">middleware.json</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="model-config.json.html">model-config.json</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="server.js.html">server.js</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Node-reference.html">Node reference</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="LoopBack-types.html">LoopBack types</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Geotype.html">Geopoint type</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Valid-names-in-LoopBack.html">Valid names in LoopBack</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Basic-model-object.html">Basic model object</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Connected-model-object.html">Connected model object</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Error-object.html">Error object</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="LoopBack-middleware.html">LoopBack middleware</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Publish-subscribe-messaging.html">Publish-subscribe messaging</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Strong-pub-sub.html">Strong Pub-sub</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Pub-sub-bridge.html">Pub-sub bridge</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="MQTT-adapter.html">MQTT adapter</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Redis-pub-sub-adapter.html">Redis pub-sub adapter</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Primus-pub-sub-adapter.html">Primus pub-sub adapter</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Pub-sub-example.html">Node pub-sub example app</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Pub-sub-Loopback-example.html">LoopBack pub-sub example app</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="All-tags.html">All tags</a>
+    
+      
+  </li>
+  
+
+
+
+</ul>
+
+        </nav>
+        <!-- Content Column -->
+        <div class="col-md-9">
+            
+  <div class="v3notice">This article is for LoopBack 2.x, which is no longer supported.  Please see the <a href="/doc/en/lb3/Where-filter.html">corresponding article for 3.x</a>.  </div>
+
+
+<div class="post-header">
+   <h1 class="post-title-main">Where filter</h1>
+   
+     
+       <a target="_blank" href="https://github.com/strongloop/loopback.io/blob/gh-pages/pages/en/lb2/Where-filter.md" class="githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit this page</a>
+   
+</div>
+
+<div class="post-content">
+
+
+  
+   <div class="summary">
+     A <i>where</i> filter specifies a set of logical conditions to match, similar to a WHERE clause in a SQL query.
+   </div>
+  
+
+
+
+
+ 
+   
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+;$(function() {
+  var level = parseInt(3, 10);
+  if (level === 1) {level = 'h2'}
+  if (level === 2) {level = 'h2,h3'}
+  if (level === 3) {level = 'h2,h3,h4'}
+  if (level === 4) {level = 'h2,h3,h4,h5'}
+
+  // Add a new level for changelog files which use h1,h2,h3
+  if (level === 0) {level = 'h1,h2,h3,h4,h5'}
+
+  var toc = $('#toc')
+
+  toc.toc({minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: level})
+
+  /* this offset helps with the space taken up by the floating toolbar */
+  toc.on('click', 'a', function() {
+    var target = $(this.getAttribute('href')),
+      scroll_target = target.offset().top
+
+    $(window).scrollTop(scroll_target - 10)
+    return false
+  })
+  .on('click', '.toc-expand-button', function() {
+    toc.find('> ul').slideToggle('fast');
+  })
+})
+</script>
+
+<div id="toc">
+  <span class="toc-title">Page Contents</span>
+  <button type="button" class="btn btn-link toc-expand-button">
+    <i class="fa fa-bars"></i>
+  </button>
+</div>
+
+ 
+
+    <h2 id="rest-api">REST API</h2>
+
+<p>In the first form below, the condition is equivalence, that is, it tests whether <em>property</em> equals <em>value</em>.
+The second form below is for all other conditions.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>filter[where][property]=value
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>filter[where][property][op]=value
+</code></pre></div></div>
+
+<p>For example, if there is a cars model with an <code class="language-plaintext highlighter-rouge">odo</code> property, the following query finds instances where the <code class="language-plaintext highlighter-rouge">odo</code> is greater than 5000:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/cars?filter[where][odo][gt]=5000
+</code></pre></div></div>
+
+<p>For example, here is a query to find cars with <code class="language-plaintext highlighter-rouge">odo</code> is less than 30,000:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/cars?filter[where][odo][lt]=30000
+</code></pre></div></div>
+
+<p>You can also use <a href="Querying-data.html#using-stringified-json-in-rest-queries">stringified JSON format</a> in a REST query.</p>
+
+<h3 id="filter-limit">Filter limit</h3>
+
+<div class="alert alert-warning" role="alert">
+  <p><i class="fa fa-warning"></i>
+  <b>Important:</b>
+  There is a limit of twenty filters (combined with AND or OR) using this format, due to the use of <a href="https://github.com/ljharb/qs#parsing-arrays">qs</a>.  When there are more than twenty, the filter is converted into an <code class="language-plaintext highlighter-rouge">Object</code> where it is expecting
+an <code class="language-plaintext highlighter-rouge">Array</code>. See <a href="https://github.com/strongloop/loopback/issues/2824">LoopBack issue #2824</a> for more details.</p>
+
+</div>
+
+<p>There are two ways to work around the filter limit:</p>
+
+<ul>
+  <li>Encode the large filter object as “stringified JSON.”</li>
+  <li>Override the limit manually in <code class="language-plaintext highlighter-rouge">server/server.js</code>, before boot is called.</li>
+</ul>
+
+<p><strong>Encode filter object as JSON</strong></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>http://localhost:3000/api/Books
+?filter={"where":{"or":[{"id":1},{"id":2},...,{"id":20"},{"id":21}]}}
+</code></pre></div></div>
+
+<p><strong>Override limit in <code class="language-plaintext highlighter-rouge">server.js</code></strong></p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// In `server/server.js`, before boot is called</span>
+<span class="kd">var</span> <span class="nx">loopback</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">loopback</span><span class="dl">'</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">boot</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">loopback-boot</span><span class="dl">'</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">qs</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">qs</span><span class="dl">'</span><span class="p">);</span>
+
+<span class="kd">var</span> <span class="nx">app</span> <span class="o">=</span> <span class="nx">module</span><span class="p">.</span><span class="nx">exports</span> <span class="o">=</span> <span class="nx">loopback</span><span class="p">();</span>
+<span class="nx">app</span><span class="p">.</span><span class="kd">set</span><span class="p">(</span><span class="dl">'</span><span class="s1">query parser</span><span class="dl">'</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">value</span><span class="p">,</span> <span class="nx">option</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="nx">qs</span><span class="p">.</span><span class="nx">parse</span><span class="p">(</span><span class="nx">value</span><span class="p">,</span> <span class="p">{</span><span class="na">arrayLimit</span><span class="p">:</span> <span class="mi">500</span><span class="p">});</span>
+<span class="p">});</span>
+
+<span class="nx">app</span><span class="p">.</span><span class="nx">start</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+  <span class="p">...</span>
+</code></pre></div></div>
+
+<h2 id="node-api">Node API</h2>
+
+<div class="alert alert-danger" role="alert"><i class="fa fa-exclamation-circle"></i>
+<b>Warning:</b>
+Methods of models in the <a href="AngularJS-JavaScript-SDK.html">AngularJS client</a> have a different signature than those of the Node API.
+
+For more information, see <a href="http://apidocs.loopback.io/loopback-sdk-angular/">AngularJS SDK API</a>.
+</div>
+
+<h3 id="where-clause-for-queries">Where clause for queries</h3>
+
+<p>For query methods such as <code class="language-plaintext highlighter-rouge">find()</code>,<code class="language-plaintext highlighter-rouge"> findOrCreate()</code>, or <code class="language-plaintext highlighter-rouge">findOne()</code>, use the first form below to test equivalence, that is, whether <em>property</em> equals <em>value</em>.
+Use the second form below for all other conditions.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="nl">where</span><span class="p">:</span><span class="err"> </span><span class="p">{</span><span class="nl">property</span><span class="p">:</span><span class="err"> </span><span class="nx">value</span><span class="p">}}</span><span class="err"> </span>
+</code></pre></div></div>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="nl">where</span><span class="p">:</span><span class="err"> </span><span class="p">{</span><span class="nl">property</span><span class="p">:</span> <span class="p">{</span><span class="na">op</span><span class="p">:</span><span class="err"> </span><span class="nx">value</span><span class="p">}}}</span>
+</code></pre></div></div>
+
+<p>Where:</p>
+
+<ul>
+  <li><em>property</em> is the name of a property (field) in the model being queried.</li>
+  <li><em>value</em> is a literal value. </li>
+  <li><em>op</em> is one of the <a href="#operators">operators</a> listed below.</li>
+</ul>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">Cars</span><span class="p">.</span><span class="nx">find</span><span class="p">({</span><span class="na">where</span><span class="p">:</span> <span class="p">{</span><span class="na">carClass</span><span class="p">:</span><span class="dl">'</span><span class="s1">fullsize</span><span class="dl">'</span><span class="p">}});</span>
+</code></pre></div></div>
+
+<p>The equivalent REST query would be:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/api/cars?filter[where][carClass]=fullsize
+</code></pre></div></div>
+
+<div class="alert alert-success" role="alert">
+  <p><i class="fa fa-check-square-o"></i>
+  <b>Tip:</b> The above where clause syntax is for queries, and not for <a href="http://apidocs.strongloop.com/loopback/#persistedmodel-count"><code class="language-plaintext highlighter-rouge">count()</code></a>.
+For all other methods, including <code class="language-plaintext highlighter-rouge">count()</code>, omit the <code class="language-plaintext highlighter-rouge">{ where : ... }</code> wrapper; see <a href="#where-clause-for-other-methods">Where clause for other methods</a> below.</p>
+
+</div>
+
+<h3 id="where-clause-for-other-methods">Where clause for other methods</h3>
+
+<div class="alert alert-warning" role="alert">
+  <p><i class="fa fa-warning"></i>
+  <b>Important:</b>
+  When you call the Node APIs <em>for methods other than queries</em>, that is for methods that update and delete
+(and <a href="http://apidocs.strongloop.com/loopback/#persistedmodel-count"><code class="language-plaintext highlighter-rouge">count()</code></a>), don’t wrap the where clause in a <code class="language-plaintext highlighter-rouge">{ where : ... }</code> object, simply use the condition as the argument as shown below. See examples below.</p>
+
+</div>
+
+<p>In the first form below, the condition is equivalence, that is, it tests whether <em>property</em> equals <em>value</em>. The second form is for all other conditions.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="nl">property</span><span class="p">:</span><span class="err"> </span><span class="nx">value</span><span class="p">}</span>
+</code></pre></div></div>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="nl">property</span><span class="p">:</span> <span class="p">{</span><span class="na">op</span><span class="p">:</span><span class="err"> </span><span class="nx">value</span><span class="p">}}</span>
+</code></pre></div></div>
+
+<p>Where:</p>
+
+<ul>
+  <li><em>property</em> is the name of a property (field) in the model being queried.</li>
+  <li><em>value</em> is a literal value. </li>
+  <li><em>op</em> is one of the <a href="#operators">operators</a> listed below.</li>
+</ul>
+
+<p>For example, below shows a where clause in a call to a model’s <a href="http://apidocs.strongloop.com/loopback/#persistedmodel-updateall">updateAll()</a> method.
+Note the lack of <code class="language-plaintext highlighter-rouge">{ where : ... }</code> in the argument.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">myModel</span> <span class="o">=</span> <span class="nx">req</span><span class="p">.</span><span class="nx">app</span><span class="p">.</span><span class="nx">models</span><span class="p">.</span><span class="nx">Thing</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">theId</span> <span class="o">=</span> <span class="mi">12</span><span class="p">;</span>
+<span class="nx">myModel</span><span class="p">.</span><span class="nx">updateAll</span><span class="p">(</span> <span class="p">{</span><span class="na">id</span><span class="p">:</span> <span class="nx">theId</span><span class="p">},</span> <span class="p">{</span><span class="na">regionId</span><span class="p">:</span> <span class="kc">null</span><span class="p">},</span> <span class="kd">function</span><span class="p">(</span><span class="nx">err</span><span class="p">,</span> <span class="nx">results</span><span class="p">)</span> <span class="p">{</span>
+	<span class="k">return</span> <span class="nx">callback</span><span class="p">(</span><span class="nx">err</span><span class="p">,</span> <span class="nx">results</span><span class="p">);</span>
+<span class="p">});</span>
+</code></pre></div></div>
+
+<p>More examples, this time in a call to <a href="http://apidocs.strongloop.com/loopback/#persistedmodel-destroyall">destroyAll()</a>:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">RoleMapping</span> <span class="o">=</span> <span class="nx">app</span><span class="p">.</span><span class="nx">models</span><span class="p">.</span><span class="nx">RoleMapping</span><span class="p">;</span>
+<span class="nx">RoleMapping</span><span class="p">.</span><span class="nx">destroyAll</span><span class="p">(</span> <span class="p">{</span> <span class="na">principalId</span><span class="p">:</span> <span class="nx">userId</span> <span class="p">},</span> <span class="kd">function</span><span class="p">(</span><span class="nx">err</span><span class="p">,</span> <span class="nx">obj</span><span class="p">)</span> <span class="p">{</span> <span class="p">...</span> <span class="p">}</span> <span class="p">);</span>
+</code></pre></div></div>
+
+<p>To delete all records where the cost property is greater than 100:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">productModel</span><span class="p">.</span><span class="nx">destroyAll</span><span class="p">({</span><span class="na">cost</span><span class="p">:</span> <span class="p">{</span><span class="na">gt</span><span class="p">:</span> <span class="mi">100</span><span class="p">}},</span> <span class="kd">function</span><span class="p">(</span><span class="nx">err</span><span class="p">,</span> <span class="nx">obj</span><span class="p">)</span> <span class="p">{</span> <span class="p">...</span> <span class="p">});</span>
+</code></pre></div></div>
+
+<h3 id="default-scopes-with-where-filters">Default scopes with where filters</h3>
+
+<p>Adding a <code class="language-plaintext highlighter-rouge">scope</code> to a model definition (in the <a href="Model-definition-JSON-file.html"><code class="language-plaintext highlighter-rouge">model.json</code> file</a>)
+automatically adds a method to model called <code class="language-plaintext highlighter-rouge">defaultScope()</code>. LoopBack will call this method whenever a model is created, updated, or queried.</p>
+
+<div class="alert alert-success" role="alert">
+  <p><i class="fa fa-check-square-o"></i>
+  <b>Tip:</b> Default scopes with a <code class="language-plaintext highlighter-rouge">where</code> filter may not work as you expect!</p>
+
+</div>
+
+<p>Each time a model instance is created or updated, the generated <code class="language-plaintext highlighter-rouge">defaultScope()</code> method will modify the model’s properties
+matching the <code class="language-plaintext highlighter-rouge">where</code> filter to enforce the values specified.</p>
+
+<p>If you don’t want to have the default scope applied in this way, use named scopes where possible.</p>
+
+<p>If you must use a default scope, but don’t want it to affect <code class="language-plaintext highlighter-rouge">upsert()</code>, for example, simply override the model’s <code class="language-plaintext highlighter-rouge">defaultScope()</code> method prior to calling <code class="language-plaintext highlighter-rouge">upsert()</code>.</p>
+
+<p>For  example:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">defaultScope</span> <span class="o">=</span> <span class="nx">Report</span><span class="p">.</span><span class="nx">defaultScope</span><span class="p">;</span>
+  <span class="nx">Report</span><span class="p">.</span><span class="nx">defaultScope</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(){};</span>
+  <span class="nx">Report</span><span class="p">.</span><span class="nx">upsert</span><span class="p">({</span><span class="na">id</span><span class="p">:</span> <span class="nx">reportId</span><span class="p">,</span> <span class="dl">'</span><span class="s1">deleted</span><span class="dl">'</span><span class="p">:</span> <span class="kc">true</span><span class="p">},</span> <span class="kd">function</span><span class="p">(...)</span> <span class="p">{</span>
+    <span class="nx">Report</span><span class="p">.</span><span class="nx">defaultScope</span> <span class="o">=</span> <span class="nx">defaultScope</span><span class="p">;</span>
+    <span class="p">...</span>
+  <span class="p">});</span>
+</code></pre></div></div>
+
+<h2 id="operators">Operators</h2>
+
+<p>This table describes the operators available in “where” filters. See <a href="#examples">Examples</a> below.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Operator</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>=</td>
+      <td>Equivalence. See <a href="#equivalence">examples</a> below.</td>
+    </tr>
+    <tr>
+      <td>and</td>
+      <td>Logical AND operator. See <a href="#and-and-or-operators">AND and OR operators</a> and <a href="#and--or">examples</a> below.</td>
+    </tr>
+    <tr>
+      <td>or</td>
+      <td>Logical OR operator. See <a href="#and-and-or-operators">AND and OR operators</a> and <a href="#and--or">examples</a> below.</td>
+    </tr>
+    <tr>
+      <td>gt, gte</td>
+      <td>Numerical greater than (&gt;); greater than or equal (&gt;=). Valid only for numerical and date values. See <a href="#gt-and-lt">examples</a> below. <br /><br />  For Geopoint values, the units are in miles by default. See <a href="http://apidocs.strongloop.com/loopback-datasource-juggler/#geopoint">Geopoint</a> for more information.</td>
+    </tr>
+    <tr>
+      <td>lt, lte</td>
+      <td>Numerical less than (&lt;); less than or equal (&lt;=). Valid only for numerical and date values. <br /><br />For geolocation values, the units are in miles by default. See <a href="http://apidocs.strongloop.com/loopback-datasource-juggler/#geopoint">Geopoint</a> for more information.</td>
+    </tr>
+    <tr>
+      <td>between</td>
+      <td>True if the value is between the two specified values: greater than or equal to first value and less than or equal to second value. See <a href="#gt-and-lt">examples</a> below. <br /><br /> For geolocation values, the units are in miles by default. See <a href="http://apidocs.strongloop.com/loopback-datasource-juggler/#geopoint">Geopoint</a> for more information.</td>
+    </tr>
+    <tr>
+      <td>inq, nin</td>
+      <td>In / not in an array of values. See <a href="#inq">examples</a> below.</td>
+    </tr>
+    <tr>
+      <td>near</td>
+      <td>For geolocations, return the closest points, sorted in order of distance. Use with <code class="language-plaintext highlighter-rouge">limit</code> to return the <em>n</em> closest points. See <a href="#near">examples</a> below.</td>
+    </tr>
+    <tr>
+      <td>neq</td>
+      <td>Not equal (!=)</td>
+    </tr>
+    <tr>
+      <td>like, nlike</td>
+      <td>LIKE / NOT LIKE operators for use with regular expressions. The regular expression format depends on the backend data source.  See <a href="#like-and-nlike">examples</a> below.</td>
+    </tr>
+    <tr>
+      <td>like, nlike, options: i</td>
+      <td>LIKE / NOT LIKE operators for use with regular expressions with the case insensitive flag. It is supported by the memory and MongoDB connectors. The options property set to ‘i’ tells LoopBack that it should do case-insensitive matching on the required property.  See <a href="#like-and-nlike-insensitive">examples</a> below.</td>
+    </tr>
+    <tr>
+      <td>ilike, nilike</td>
+      <td>ILIKE / NOT ILIKE operators for use with regular expressions. The operator is supported only by the memory and Postgresql connectors. See <a href="#ilike-and-nilike">examples</a> below.</td>
+    </tr>
+    <tr>
+      <td>regexp</td>
+      <td>Regular expression. See <a href="#regular-expressions">examples</a> below.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="and-and-or-operators">AND and OR operators</h3>
+
+<p>Use the AND and OR operators to create compound logical filters based on simple where filter conditions, using the following syntax.</p>
+
+<div id="Node API" class="code-caption">
+  <p>Node API</p>
+</div>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="nl">where</span><span class="p">:</span> <span class="p">{</span><span class="o">&lt;</span><span class="nx">and</span><span class="o">|</span><span class="nx">or</span><span class="o">&gt;</span><span class="p">:</span> <span class="p">[</span><span class="nx">condition1</span><span class="p">,</span><span class="err"> </span><span class="nx">condition2</span><span class="p">,</span> <span class="p">...]}}</span>
+</code></pre></div></div>
+
+<p><strong>REST</strong></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[where][&lt;and|or&gt;][0]condition1&amp;[where][&lt;and|or&gt;]condition2...
+</code></pre></div></div>
+
+<p>Where <em>condition1</em> and <em>condition2</em> are a filter conditions.</p>
+
+<p>See <a href="#examples">examples</a> below.</p>
+
+<h3 id="regular-expressions">Regular expressions</h3>
+
+<p>You can use regular expressions in a where filter, with the following syntax. You can use a regular expression in a where clause for updates and deletes, as well as queries.</p>
+
+<p>Essentially, <code class="language-plaintext highlighter-rouge">regexp</code> is just like an operator in which you provide a regular expression value as the comparison value.</p>
+
+<div class="alert alert-success" role="alert">
+  <p><i class="fa fa-check-square-o"></i>
+  <b>Tip:</b> A regular expression value can also include one or more <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions#Advanced_searching_with_flags">flags</a>.  For example, append <code class="language-plaintext highlighter-rouge">/i</code> to the regular expression to perform a case-insensitive match.</p>
+
+</div>
+
+<div id="Node API" class="code-caption">
+  <p>Node API</p>
+</div>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="nl">where</span><span class="p">:</span> <span class="p">{</span><span class="na">property</span><span class="p">:</span> <span class="p">{</span><span class="na">regexp</span><span class="p">:</span> <span class="o">&lt;</span><span class="nx">expression</span><span class="o">&gt;</span><span class="p">}}}</span>
+</code></pre></div></div>
+
+<p>Where <code class="language-plaintext highlighter-rouge">&lt;expression&gt;</code> can be a:</p>
+
+<ul>
+  <li>String defining a regular expression (for example, <code class="language-plaintext highlighter-rouge">'^foo'</code> ).</li>
+  <li>Regular expression literal (for example, <code class="language-plaintext highlighter-rouge">/^foo/</code> ).</li>
+  <li>Regular expression object (for example, <code class="language-plaintext highlighter-rouge">new RegExp(/John/)</code>).</li>
+</ul>
+
+<p>Or, in a simpler format:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="nl">where</span><span class="p">:</span> <span class="p">{</span><span class="na">property</span><span class="p">:</span> <span class="o">&lt;</span><span class="nx">expression</span><span class="o">&gt;</span><span class="p">}}}</span>
+</code></pre></div></div>
+
+<p>Where <code class="language-plaintext highlighter-rouge">&lt;expression&gt;</code> can be a:</p>
+
+<ul>
+  <li>Regular expression literal (for example, <code class="language-plaintext highlighter-rouge">/^foo/</code> ).</li>
+  <li>Regular expression object (for example, <code class="language-plaintext highlighter-rouge">new RegExp(/John/)</code>).</li>
+</ul>
+
+<p>For more information on JavaScript regular expressions,
+see <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions">Regular Expressions (Mozilla Developer Network)</a>.</p>
+
+<div class="alert alert-success" role="alert">
+  <p><i class="fa fa-check-square-o"></i>
+  <b>Tip:</b> The above where clause syntax is for queries.
+For updates and deletes, omit the <code class="language-plaintext highlighter-rouge">{ where : ... }</code> wrapper.
+See <a href="#where-clause-for-other-methods">Where clause for other methods</a> below.</p>
+
+</div>
+
+<p>For example, this query returns all cars for which the model starts with a capital “T”:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">Cars</span><span class="p">.</span><span class="nx">find</span><span class="p">(</span> <span class="p">{</span><span class="dl">"</span><span class="s2">where</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span><span class="dl">"</span><span class="s2">model</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span><span class="dl">"</span><span class="s2">regexp</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">^T</span><span class="dl">"</span><span class="p">}}}</span> <span class="p">);</span>
+</code></pre></div></div>
+
+<p>Or, using the simplified form:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">Cars</span><span class="p">.</span><span class="nx">find</span><span class="p">(</span> <span class="p">{</span><span class="dl">"</span><span class="s2">where</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span><span class="dl">"</span><span class="s2">model</span><span class="dl">"</span><span class="p">:</span> <span class="o">/^</span><span class="nx">T</span><span class="o">/</span><span class="p">}</span> <span class="p">}</span> <span class="p">);</span>
+</code></pre></div></div>
+
+<p><strong>REST</strong></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>filter[where][property][regexp]=expression
+</code></pre></div></div>
+
+<p>Where:</p>
+
+<ul>
+  <li><em>property</em> is the name of a property (field) in the model being queried.</li>
+  <li><em>expression</em> is the JavaScript regular expression string.
+See <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions">Regular Expressions (Mozilla Developer Network)</a>.</li>
+</ul>
+
+<p>A regular expression value can also include one or more <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions#Advanced_searching_with_flags">flags</a>.
+For example, append <code class="language-plaintext highlighter-rouge">/i</code> to the regular expression to perform a case-insensitive match.</p>
+
+<div class="alert alert-warning" role="alert">
+  <p><i class="fa fa-warning"></i>
+  <b>Important:</b>
+  When using a regular expression flag with the REST API,
+you <em>must</em> precede the regular expression with a slash character (<code class="language-plaintext highlighter-rouge">/</code>).</p>
+
+</div>
+
+<p>The following REST query returns all cars for which the model starts with a capital “T”::</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/api/cars?filter[where][model][regexp]=^T
+</code></pre></div></div>
+
+<p>The following REST query returns all models that start with either an uppercase “T” or lowercase “t”:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/api/cars?filter[where][model][regexp]=/^t/i
+</code></pre></div></div>
+
+<p>Note that since the regular expression includes a flag, it is preceded by a slash (<code class="language-plaintext highlighter-rouge">/</code>).</p>
+
+<h2 id="examples">Examples</h2>
+
+<h3 id="equivalence">Equivalence</h3>
+
+<p>Weapons with name M1911:</p>
+
+<p><strong>REST</strong></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/weapons?filter[where][name]=M1911
+</code></pre></div></div>
+
+<p>Cars where carClass is “fullsize”:</p>
+
+<p><strong>REST</strong></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/api/cars?filter[where][carClass]=fullsize
+</code></pre></div></div>
+
+<p>Equivalently, in Node:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">Cars</span><span class="p">.</span><span class="nx">find</span><span class="p">({</span> <span class="na">where</span><span class="p">:</span> <span class="p">{</span><span class="na">carClass</span><span class="p">:</span><span class="dl">'</span><span class="s1">fullsize</span><span class="dl">'</span><span class="p">}</span> <span class="p">});</span>
+</code></pre></div></div>
+
+<h3 id="gt-and-lt">gt and lt</h3>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">ONE_MONTH</span> <span class="o">=</span> <span class="mi">30</span> <span class="o">*</span> <span class="mi">24</span> <span class="o">*</span> <span class="mi">60</span> <span class="o">*</span> <span class="mi">60</span> <span class="o">*</span> <span class="mi">1000</span><span class="p">;</span>  <span class="c1">// Month in milliseconds</span>
+<span class="nx">transaction</span><span class="p">.</span><span class="nx">find</span><span class="p">({</span>
+      <span class="na">where</span><span class="p">:</span> <span class="p">{</span>
+        <span class="na">userId</span><span class="p">:</span> <span class="nx">user</span><span class="p">.</span><span class="nx">id</span><span class="p">,</span>
+        <span class="na">time</span><span class="p">:</span> <span class="p">{</span><span class="na">gt</span><span class="p">:</span> <span class="nb">Date</span><span class="p">.</span><span class="nx">now</span><span class="p">()</span> <span class="o">-</span> <span class="nx">ONE_MONTH</span><span class="p">}</span>
+      <span class="p">}</span>
+    <span class="p">})</span>
+</code></pre></div></div>
+
+<p>For example, the following query returns all instances of the employee model using a <em>where</em> filter that specifies a date property after (greater than) the specified date: </p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/employees?filter[where][date][gt]=2014-04-01T18:30:00.000Z
+</code></pre></div></div>
+
+<p>The same query using the Node API:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">Employees</span><span class="p">.</span><span class="nx">find</span><span class="p">({</span>
+  <span class="na">where</span><span class="p">:</span> <span class="p">{</span><span class="err"> </span>
+    <span class="na">date</span><span class="p">:</span> <span class="p">{</span><span class="na">gt</span><span class="p">:</span> <span class="k">new</span> <span class="nb">Date</span><span class="p">(</span><span class="dl">'</span><span class="s1">2014-04-01T18:30:00.000Z</span><span class="dl">'</span><span class="p">)}</span>
+  <span class="p">}</span>
+<span class="p">});</span>
+</code></pre></div></div>
+
+<p>The top three weapons with a range over 900 meters:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/weapons?filter[where][effectiveRange][gt]=900&amp;filter[limit]=3
+</code></pre></div></div>
+
+<p>Weapons with audibleRange less than 10:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/weapons?filter[where][audibleRange][lt]=10
+</code></pre></div></div>
+
+<h3 id="and--or">and / or</h3>
+
+<p>The following code is an example of using the “and” operator to find posts where the title is “My Post” and content is “Hello”.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">Post</span><span class="p">.</span><span class="nx">find</span><span class="p">({</span><span class="na">where</span><span class="p">:</span> <span class="p">{</span><span class="na">and</span><span class="p">:</span> <span class="p">[{</span><span class="na">title</span><span class="p">:</span> <span class="dl">'</span><span class="s1">My Post</span><span class="dl">'</span><span class="p">},</span> <span class="p">{</span><span class="na">content</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Hello</span><span class="dl">'</span><span class="p">}]}},</span><span class="err"> </span>
+          <span class="kd">function</span> <span class="p">(</span><span class="nx">err</span><span class="p">,</span> <span class="nx">posts</span><span class="p">)</span> <span class="p">{</span>
+            <span class="p">...</span>
+<span class="p">});</span>
+</code></pre></div></div>
+
+<p>Equivalent in REST:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>?filter[where][and][0][title]=My%20Post&amp;filter[where][and][1][content]=Hello
+</code></pre></div></div>
+
+<p>Example using the “or” operator to finds posts that either have title of “My Post” or content of “Hello”.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">Post</span><span class="p">.</span><span class="nx">find</span><span class="p">({</span><span class="na">where</span><span class="p">:</span> <span class="p">{</span><span class="na">or</span><span class="p">:</span> <span class="p">[{</span><span class="na">title</span><span class="p">:</span> <span class="dl">'</span><span class="s1">My Post</span><span class="dl">'</span><span class="p">},</span> <span class="p">{</span><span class="na">content</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Hello</span><span class="dl">'</span><span class="p">}]}},</span><span class="err"> </span>
+          <span class="kd">function</span> <span class="p">(</span><span class="nx">err</span><span class="p">,</span> <span class="nx">posts</span><span class="p">)</span> <span class="p">{</span>
+            <span class="p">...</span>
+<span class="p">});</span>
+</code></pre></div></div>
+
+<p>More complex example. The following expresses <code class="language-plaintext highlighter-rouge">(field1= foo and field2=bar) OR field1=morefoo</code>:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span>
+<span class="err">  </span> <span class="nx">or</span><span class="p">:</span> <span class="p">[</span>
+<span class="err">    </span> <span class="p">{</span> <span class="nl">and</span><span class="p">:</span> <span class="p">[{</span> <span class="na">field1</span><span class="p">:</span> <span class="dl">'</span><span class="s1">foo</span><span class="dl">'</span> <span class="p">},</span> <span class="p">{</span> <span class="na">field2</span><span class="p">:</span> <span class="dl">'</span><span class="s1">bar</span><span class="dl">'</span> <span class="p">}]</span> <span class="p">},</span>
+<span class="err">    </span> <span class="p">{</span> <span class="nl">field1</span><span class="p">:</span> <span class="dl">'</span><span class="s1">morefoo</span><span class="dl">'</span> <span class="p">}</span>
+<span class="err">  </span> <span class="p">]</span>
+ <span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="between">between</h3>
+
+<p>Example of between operator:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>filter[where][price][between][0]=0&amp;filter[where][price][between][1]=7
+</code></pre></div></div>
+
+<p>In Node API:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">Shirts</span><span class="p">.</span><span class="nx">find</span><span class="p">({</span><span class="na">where</span><span class="p">:</span> <span class="p">{</span><span class="na">size</span><span class="p">:</span> <span class="p">{</span><span class="na">between</span><span class="p">:</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">7</span><span class="p">]}}},</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">err</span><span class="p">,</span> <span class="nx">posts</span><span class="p">)</span> <span class="p">{</span> <span class="p">...</span> <span class="p">}</span> <span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="near">near</h3>
+
+<p>The <code class="language-plaintext highlighter-rouge">where.&lt;field&gt;.near</code> filter is different from other where filters: most where filters <strong>limit</strong>the number of records returned,
+whereas <code class="language-plaintext highlighter-rouge">near</code> <strong>orders</strong> them, making it more like a SQL <code class="language-plaintext highlighter-rouge">order by</code> clause.
+By combining it with <a href="Limit-filter.html"><code class="language-plaintext highlighter-rouge">limit</code></a>, you can create a query to get, for example, the <strong>three records nearest to a given location</strong>.</p>
+
+<p>For example:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/locations?filter[where][geo][near]=153.536,-28.1&amp;filter[limit]=3
+</code></pre></div></div>
+
+<p>GeoPoints can be expressed in any of the following ways:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">location</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">GeoPoint</span><span class="p">({</span><span class="na">lat</span><span class="p">:</span> <span class="mf">42.266271</span><span class="p">,</span> <span class="na">lng</span><span class="p">:</span> <span class="o">-</span><span class="mf">72.6700016</span><span class="p">});</span> <span class="c1">// GeoPoint</span>
+<span class="nx">location</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">42.266271,-72.6700016</span><span class="dl">'</span><span class="p">;</span>                          <span class="c1">// String</span>
+<span class="nx">location</span> <span class="o">=</span> <span class="p">[</span><span class="mf">42.266271</span><span class="p">,</span> <span class="o">-</span><span class="mf">72.6700016</span><span class="p">];</span>                         <span class="c1">// Array</span>
+<span class="nx">location</span> <span class="o">=</span> <span class="p">{</span><span class="na">lat</span><span class="p">:</span> <span class="mf">42.266271</span><span class="p">,</span> <span class="na">lng</span><span class="p">:</span> <span class="o">-</span><span class="mf">72.6700016</span><span class="p">};</span>               <span class="c1">// Object Literal</span>
+
+<span class="nx">Restaurants</span><span class="p">.</span><span class="nx">find</span><span class="p">({</span><span class="na">where</span><span class="p">:</span> <span class="p">{</span><span class="na">geo</span><span class="p">:</span> <span class="p">{</span><span class="na">near</span><span class="p">:</span> <span class="nx">location</span> <span class="p">}}},</span> <span class="kd">function</span> <span class="nx">callback</span><span class="p">(...</span>
+</code></pre></div></div>
+
+<h3 id="near-ordering-andlimiting-by-distance">near (ordering <em>and limiting by distance</em>)</h3>
+
+<p>The near filter can take two additional properties:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">maxDistance</code></li>
+  <li><code class="language-plaintext highlighter-rouge">unit</code></li>
+</ul>
+
+<p>When <code class="language-plaintext highlighter-rouge">maxDistance</code> is included in the filter, near behaves more like a typical where filter, limiting results to those within a given distance to a location.
+By default, <code class="language-plaintext highlighter-rouge">maxDistance</code> measures distance in <strong>miles</strong>.</p>
+
+<p>Example of finding the all restaurants within two miles of a given GeoPoint:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">userLocation</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">GeoPoint</span><span class="p">({</span>
+  <span class="na">lat</span><span class="p">:</span> <span class="mf">42.266271</span><span class="p">,</span>
+  <span class="na">lng</span><span class="p">:</span> <span class="o">-</span><span class="mf">72.6700016</span>
+<span class="p">});</span>
+<span class="kd">var</span> <span class="nx">resultsPromise</span> <span class="o">=</span> <span class="nx">Restaurants</span><span class="p">.</span><span class="nx">find</span><span class="p">({</span>
+  <span class="na">where</span><span class="p">:</span> <span class="p">{</span>
+    <span class="na">location</span><span class="p">:</span> <span class="p">{</span>
+      <span class="na">near</span><span class="p">:</span> <span class="nx">userLocation</span><span class="p">,</span>
+      <span class="na">maxDistance</span><span class="p">:</span> <span class="mi">2</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">});</span>
+</code></pre></div></div>
+
+<p>To change the units of measurement, specify <code class="language-plaintext highlighter-rouge">unit</code> property to one of the following:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">kilometers</code></li>
+  <li><code class="language-plaintext highlighter-rouge">meters</code></li>
+  <li><code class="language-plaintext highlighter-rouge">miles</code></li>
+  <li><code class="language-plaintext highlighter-rouge">feet</code></li>
+  <li><code class="language-plaintext highlighter-rouge">radians</code></li>
+  <li><code class="language-plaintext highlighter-rouge">degrees</code></li>
+</ul>
+
+<p>For example, to change the query above to use kilometers instead of miles:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">resultsPromise</span> <span class="o">=</span> <span class="nx">Restaurants</span><span class="p">.</span><span class="nx">find</span><span class="p">({</span>
+  <span class="na">where</span><span class="p">:</span> <span class="p">{</span>
+    <span class="na">location</span><span class="p">:</span> <span class="p">{</span>
+      <span class="na">near</span><span class="p">:</span> <span class="nx">userLocation</span><span class="p">,</span>
+      <span class="na">maxDistance</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+      <span class="na">unit</span><span class="p">:</span> <span class="dl">'</span><span class="s1">kilometers</span><span class="dl">'</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">});</span>
+</code></pre></div></div>
+
+<div class="alert alert-danger" role="alert">
+  <p><i class="fa fa-exclamation-circle"></i>
+  <b>Warning:</b> Spell Carefully!</p>
+
+  <p>If <code class="language-plaintext highlighter-rouge">unit</code> value is mistyped, for example <code class="language-plaintext highlighter-rouge">'mile'</code> instead of <code class="language-plaintext highlighter-rouge">'miles'</code>, LoopBack will silently ignore the filter!</p>
+
+</div>
+
+<h3 id="like-and-nlike">like and nlike</h3>
+
+<p>The like and nlike (not like) operators enable you to match SQL regular expressions. The regular expression format depends on the backend data source.</p>
+
+<p>Example of like operator:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">Post</span><span class="p">.</span><span class="nx">find</span><span class="p">({</span><span class="na">where</span><span class="p">:</span> <span class="p">{</span><span class="na">title</span><span class="p">:</span> <span class="p">{</span><span class="na">like</span><span class="p">:</span> <span class="dl">'</span><span class="s1">M.-st</span><span class="dl">'</span><span class="p">}}},</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">err</span><span class="p">,</span> <span class="nx">posts</span><span class="p">)</span> <span class="p">{</span> <span class="p">...</span> <span class="p">});</span>
+</code></pre></div></div>
+
+<p>Example of nlike operator:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">Post</span><span class="p">.</span><span class="nx">find</span><span class="p">({</span><span class="na">where</span><span class="p">:</span> <span class="p">{</span><span class="na">title</span><span class="p">:</span> <span class="p">{</span><span class="na">nlike</span><span class="p">:</span> <span class="dl">'</span><span class="s1">M.-XY</span><span class="dl">'</span><span class="p">}}},</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">err</span><span class="p">,</span> <span class="nx">posts</span><span class="p">)</span> <span class="p">{</span>
+</code></pre></div></div>
+
+<p>When using the memory connector:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">User</span><span class="p">.</span><span class="nx">find</span><span class="p">({</span><span class="na">where</span><span class="p">:</span> <span class="p">{</span><span class="na">name</span><span class="p">:</span> <span class="p">{</span><span class="na">like</span><span class="p">:</span> <span class="dl">'</span><span class="s1">%St%</span><span class="dl">'</span><span class="p">}}},</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">err</span><span class="p">,</span> <span class="nx">posts</span><span class="p">)</span> <span class="p">{</span> <span class="p">...</span> <span class="p">});</span>
+<span class="nx">User</span><span class="p">.</span><span class="nx">find</span><span class="p">({</span><span class="na">where</span><span class="p">:</span> <span class="p">{</span><span class="na">name</span><span class="p">:</span> <span class="p">{</span><span class="na">nlike</span><span class="p">:</span> <span class="dl">'</span><span class="s1">M%XY</span><span class="dl">'</span><span class="p">}}},</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">err</span><span class="p">,</span> <span class="nx">posts</span><span class="p">)</span> <span class="p">{</span> <span class="p">...</span> <span class="p">});</span>
+</code></pre></div></div>
+
+<h3 id="like-and-nlike-insensitive">like and nlike insensitive</h3>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">pattern</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">RegExp</span><span class="p">(</span><span class="dl">'</span><span class="s1">.*</span><span class="dl">'</span><span class="o">+</span><span class="nx">query</span><span class="o">+</span><span class="dl">'</span><span class="s1">.*</span><span class="dl">'</span><span class="p">,</span> <span class="dl">"</span><span class="s2">i</span><span class="dl">"</span><span class="p">);</span> <span class="cm">/* case-insensitive RegExp search */</span>
+<span class="nx">Post</span><span class="p">.</span><span class="nx">find</span><span class="p">({</span> <span class="na">where</span><span class="p">:</span> <span class="p">{</span><span class="na">title</span><span class="p">:</span> <span class="p">{</span> <span class="na">like</span><span class="p">:</span> <span class="nx">pattern</span><span class="p">}</span> <span class="p">}</span> <span class="p">},</span>
+</code></pre></div></div>
+<p>Via the REST API:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>?filter={"where":{"title":{"like":"someth.*","options":"i"}}}
+</code></pre></div></div>
+
+<h3 id="ilike-and-nilike">ilike and nilike</h3>
+
+<p>The ilike and nilike (not ilike) operators enable you to match case insensitive SQL regular expressions. It is supported by the memory and Postgresql connectors.</p>
+
+<p>Example of ilike operator:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">Post</span><span class="p">.</span><span class="nx">find</span><span class="p">({</span><span class="na">where</span><span class="p">:</span> <span class="p">{</span><span class="na">title</span><span class="p">:</span> <span class="p">{</span><span class="na">ilike</span><span class="p">:</span> <span class="dl">'</span><span class="s1">m.-st</span><span class="dl">'</span><span class="p">}}},</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">err</span><span class="p">,</span> <span class="nx">posts</span><span class="p">)</span> <span class="p">{</span> <span class="p">...</span> <span class="p">});</span>
+</code></pre></div></div>
+
+<p>Example of nilike operator:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">Post</span><span class="p">.</span><span class="nx">find</span><span class="p">({</span><span class="na">where</span><span class="p">:</span> <span class="p">{</span><span class="na">title</span><span class="p">:</span> <span class="p">{</span><span class="na">nilike</span><span class="p">:</span> <span class="dl">'</span><span class="s1">m.-xy</span><span class="dl">'</span><span class="p">}}},</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">err</span><span class="p">,</span> <span class="nx">posts</span><span class="p">)</span> <span class="p">{</span>
+</code></pre></div></div>
+
+<p>When using the memory connector:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">User</span><span class="p">.</span><span class="nx">find</span><span class="p">({</span><span class="na">where</span><span class="p">:</span> <span class="p">{</span><span class="na">name</span><span class="p">:</span> <span class="p">{</span><span class="na">ilike</span><span class="p">:</span> <span class="dl">'</span><span class="s1">%st%</span><span class="dl">'</span><span class="p">}}},</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">err</span><span class="p">,</span> <span class="nx">posts</span><span class="p">)</span> <span class="p">{</span> <span class="p">...</span> <span class="p">});</span>
+<span class="nx">User</span><span class="p">.</span><span class="nx">find</span><span class="p">({</span><span class="na">where</span><span class="p">:</span> <span class="p">{</span><span class="na">name</span><span class="p">:</span> <span class="p">{</span><span class="na">nilike</span><span class="p">:</span> <span class="dl">'</span><span class="s1">s%xy</span><span class="dl">'</span><span class="p">}}},</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">err</span><span class="p">,</span> <span class="nx">posts</span><span class="p">)</span> <span class="p">{</span> <span class="p">...</span> <span class="p">});</span>
+</code></pre></div></div>
+<p>When using the Postgresql connector:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">User</span><span class="p">.</span><span class="nx">find</span><span class="p">({</span><span class="na">where</span><span class="p">:</span> <span class="p">{</span><span class="na">name</span><span class="p">:</span> <span class="p">{</span><span class="na">ilike</span><span class="p">:</span> <span class="dl">'</span><span class="s1">john%</span><span class="dl">'</span><span class="p">}}},</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">err</span><span class="p">,</span> <span class="nx">posts</span><span class="p">)</span> <span class="p">{</span> <span class="p">...</span> <span class="p">});</span>
+</code></pre></div></div>
+
+<h3 id="inq">inq</h3>
+
+<p>The inq operator checks whether the value of the specified property matches any of the values provided in an array. The general syntax is:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="nl">where</span><span class="p">:</span> <span class="p">{</span> <span class="na">property</span><span class="p">:</span> <span class="p">{</span> <span class="na">inq</span><span class="p">:</span> <span class="p">[</span><span class="nx">val1</span><span class="p">,</span> <span class="nx">val2</span><span class="p">,</span> <span class="p">...]}}}</span>
+</code></pre></div></div>
+
+<p>Where:</p>
+
+<ul>
+  <li><em>property</em> is the name of a property (field) in the model being queried.</li>
+  <li><em>val1, val2</em>, and so on, are literal values in an array.</li>
+</ul>
+
+<p>Example of inq operator:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">Posts</span><span class="p">.</span><span class="nx">find</span><span class="p">({</span><span class="na">where</span><span class="p">:</span> <span class="p">{</span><span class="na">id</span><span class="p">:</span> <span class="p">{</span><span class="na">inq</span><span class="p">:</span> <span class="p">[</span><span class="mi">123</span><span class="p">,</span> <span class="mi">234</span><span class="p">]}}},</span><span class="err"> </span>
+  <span class="kd">function</span> <span class="p">(</span><span class="nx">err</span><span class="p">,</span> <span class="nx">p</span><span class="p">){...</span> <span class="p">});</span>
+</code></pre></div></div>
+
+<p>REST:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/medias?filter[where][keywords][inq]=foo&amp;filter[where][keywords][inq]=bar
+</code></pre></div></div>
+
+<p>Or </p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>?filter={"where": {"keywords": {"inq": ["foo", "bar"]}}}
+</code></pre></div></div>
+
+
+    <div class="tags">
+      
+    </div>
+</div>
+
+<hr class="shaded"/>
+
+<footer id="container">
+            <div class="row">
+                <div class="col-md-6 footer-left">
+               &copy;2021 IBM / StrongLoop. All rights reserved. <br />
+ Site last generated: Mar 22, 2021
+              </div>
+              <div class="col-md-6 footer-right">
+                <p><img src="https://loopback.io/images/company_logo.png" alt="Company logo"/></p>
+              </div>
+            </div>
+</footer>
+
+
+        </div>
+        <!-- /.row -->
+</div>
+<!-- /.container -->
+    </div>
+</body>
+
+</html>

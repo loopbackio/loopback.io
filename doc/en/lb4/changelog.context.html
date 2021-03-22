@@ -1,0 +1,5409 @@
+<!DOCTYPE html>
+<head>
+    
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="keywords" content=" LoopBack 4.0, LoopBack 4, Node.js, TypeScript, OpenAPI, Node.js, TypeScript, OpenAPI, CHANGELOG">
+  <title>CHANGELOG - @loopback/context | LoopBack Documentation</title>
+  <link rel="stylesheet" href="/css/syntax.css">
+
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/modern-business.css">
+    <link rel="stylesheet" href="/css/lavish-bootstrap.css">
+    <link rel="stylesheet" href="/css/customstyles.css">
+    <link rel="stylesheet" href="/css/theme-v4.css">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-150726441-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-150726441-2');
+</script>
+
+
+    <!-- github star button -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.3.0/anchor.min.js"></script>
+    <script src="/js/toc.js"></script>
+    <script src="/js/customscripts.js"></script>
+
+    <link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    
+
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-lg navbar-brand no_icon" href="/doc/index.html">
+              <img class="no_icon" style="width:147px;" src="/images/branding/logo/white/loopback.svg">&nbsp;<span class="projectTitle"></span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- entries without drop-downs appear here -->
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">API Docs<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        <!-- page.url is /doc/en/lb4/changelog.context.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://loopback.io/doc/en/lb4/apidocs.index.html" target="_blank">LoopBack 4</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb4/changelog.context.html .... folderitem.url is  -->
+                          
+                            <li><a href="http://apidocs.loopback.io" target="_blank">LoopBack 3.x</a></li>
+                          
+                        
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">View<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        <!-- page.url is /doc/en/lb4/changelog.context.html .... folderitem.url is / -->
+                          
+                            <li><a href="/">LoopBack Overview</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb4/changelog.context.html .... folderitem.url is /doc/en/lb4/ -->
+                          
+                            <li class="dropdownActive"><a href="/doc/en/lb4/">LoopBack 4</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb4/changelog.context.html .... folderitem.url is /doc/en/lb3/ -->
+                          
+                            <li><a href="/doc/en/lb3/">LoopBack 3.x</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb4/changelog.context.html .... folderitem.url is /doc/en/lb2/ -->
+                          
+                            <li><a href="/doc/en/lb2/">LoopBack 2.x</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb4/changelog.context.html .... folderitem.url is /doc/en/community/ -->
+                          
+                            <li><a href="/doc/en/community/">Community projects</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb4/changelog.context.html .... folderitem.url is /doc/en/contrib/ -->
+                          
+                            <li><a href="/doc/en/contrib/">Contributing to LoopBack</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb4/changelog.context.html .... folderitem.url is /doc/en/sec/ -->
+                          
+                            <li><a href="/doc/en/sec/">Security advisories</a></li>
+                          
+                        
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Resources<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        <!-- page.url is /doc/en/lb4/changelog.context.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://github.com/strongloop/loopback.io" target="_blank">Docs Github Repo</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb4/changelog.context.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://groups.google.com/forum/#!forum/loopbackjs-announcements" target="_blank">Announcements Mailing List</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb4/changelog.context.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://groups.google.com/forum/#!forum/loopbackjs" target="_blank">Developer Forum</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb4/changelog.context.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://join.slack.com/t/loopbackio/shared_invite/zt-8lbow73r-SKAKz61Vdao~_rGf91pcsw" target="_blank">LoopBack on Slack</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb4/changelog.context.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://stackoverflow.com/questions/tagged/strongloop+or+loopback4+or+loopbackjs" target="_blank">LoopBack on Stack Overflow</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb4/changelog.context.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://strongloop.com/strongblog/tag_LoopBack.html" target="_blank">StrongLoop Blog - LoopBack</a></li>
+                          
+                        
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Translations<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        <!-- page.url is /doc/en/lb4/changelog.context.html .... folderitem.url is /doc/es/lb2/ -->
+                          
+                            <li><a href="/doc/es/lb2/">Español (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb4/changelog.context.html .... folderitem.url is /doc/es/lb4/ -->
+                          
+                            <li><a href="/doc/es/lb4/">Español (v4)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb4/changelog.context.html .... folderitem.url is /doc/fr/lb2/ -->
+                          
+                            <li><a href="/doc/fr/lb2/">Français (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb4/changelog.context.html .... folderitem.url is /doc/fr/lb4/ -->
+                          
+                            <li><a href="/doc/fr/lb4/">Français (v4)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb4/changelog.context.html .... folderitem.url is /doc/ko/lb2/ -->
+                          
+                            <li><a href="/doc/ko/lb2/">한국어 (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb4/changelog.context.html .... folderitem.url is /doc/ko/lb3/ -->
+                          
+                            <li><a href="/doc/ko/lb3/">한국어 (v3)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb4/changelog.context.html .... folderitem.url is /doc/pt-br/lb2/ -->
+                          
+                            <li><a href="/doc/pt-br/lb2/">Português (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb4/changelog.context.html .... folderitem.url is /doc/pt-br/lb4/ -->
+                          
+                            <li><a href="/doc/pt-br/lb4/">Português (v4)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb4/changelog.context.html .... folderitem.url is /doc/ja/lb2/ -->
+                          
+                            <li><a href="/doc/ja/lb2/">日本語 (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb4/changelog.context.html .... folderitem.url is /doc/ja/lb3/ -->
+                          
+                            <li><a href="/doc/ja/lb3/">日本語 (v3)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb4/changelog.context.html .... folderitem.url is /doc/ja/lb4/ -->
+                          
+                            <li><a href="/doc/ja/lb4/">日本語 (v4)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb4/changelog.context.html .... folderitem.url is /doc/ru/lb2/ -->
+                          
+                            <li><a href="/doc/ru/lb2/">Pусский (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb4/changelog.context.html .... folderitem.url is /doc/zh/lb2/ -->
+                          
+                            <li><a href="/doc/zh/lb2/">中文 (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb4/changelog.context.html .... folderitem.url is /doc/zh/lb4/ -->
+                          
+                            <li><a href="/doc/zh/lb4/">中文 (v4)</a></li>
+                          
+                        
+                    </ul>
+                </li>
+                
+                
+                
+                <li>
+                    <form id="search" name="search" class="input-group lb-search" action="/search" method="GET">
+                        <input type="text" class="form-control search-bar" placeholder="Search (powered by Watson)" name="q">
+                        
+                          <input type="hidden" name="sidebar" value="lb4_sidebar">
+                        
+                        <div class="input-group-btn">
+                            <button type="submit" class="btn btn-default" aria-label="search">
+                              <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                            </button>
+                        </div>
+                      </form>
+                </li>
+            </ul>
+        </div>
+      </div>
+</nav>
+
+<!-- Page Content -->
+<div class="container">
+    <!-- Content Row -->
+    <div class="row">
+        <!-- Sidebar Column -->
+        <nav class="col-md-3 sidebar-col">
+          
+
+
+
+
+
+
+
+
+
+
+
+<!-- NOTE: sidebar = site.data.sidebars.mydoc_sidebar.entries -->
+<div class="sidebarTitle"><a href="index.html">LoopBack 4</a></div>
+<ul id="mysidebar" class="nav-list">
+  
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="index.html">Overview</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Getting-started.html">Getting started</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Inside-LoopBack-Application.html">Inside a LoopBack Application</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent-expand   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="section-name" href="#">Building LoopBack Applications</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Tutorials.html">Tutorials</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="todo-tutorial.html">Todo Tutorial</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="todo-tutorial-scaffolding.html">Create your app scaffolding</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="todo-tutorial-model.html">Add the Todo model</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="todo-tutorial-datasource.html">Add a Datasource</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="todo-tutorial-repository.html">Add a Repository</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="todo-tutorial-controller.html">Add a Controller</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="todo-tutorial-putting-it-together.html">Putting it all together</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="todo-tutorial-geocoding-service.html">Bonus: Integrate with a geo-coding service</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="todo-list-tutorial.html">TodoList Tutorial</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="todo-list-tutorial-model.html">Add TodoList Model</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="todo-list-tutorial-repository.html">Add TodoList Repository</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="todo-list-tutorial-relations.html">Add Model Relations</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="todo-list-tutorial-has-one-relation.html">Add a HasOne Relation</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="todo-list-tutorial-controller.html">Add TodoList Controller</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="todo-list-tutorial-sqldb.html">Running on relational databases</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Connecting-to-back-end.html">Connecting to Back-end Service Tutorials</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="soap-calculator-tutorial.html">SOAP Web Service Tutorial</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="soap-calculator-tutorial-web-service-overview.html">SOAP Web Service Overview</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="soap-calculator-tutorial-scaffolding.html">App scaffolding</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="soap-calculator-tutorial-add-datasource.html">Add a Datasource</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="soap-calculator-tutorial-add-service.html">Add a Service</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="soap-calculator-tutorial-add-controller.html">Add a Controller</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="soap-calculator-tutorial-run-and-test.html">Run and Test it</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="express-with-lb4-rest-tutorial.html">Creating an Express Application with LoopBack REST API</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Authentication-tutorial.html">How to secure your LoopBack 4 application with JWT authentication</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="core-tutorial.html">Build large scale Node.js projects with LoopBack 4</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="core-tutorial-part1.html">Introduction of the application scenario</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="core-tutorial-part2.html">Architectural challenges</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="core-tutorial-part3.html">Context in action</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="core-tutorial-part4.html">Dependency injection</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="core-tutorial-part5.html">Extension point and extensions</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="core-tutorial-part6.html">Interception</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="core-tutorial-part7.html">Observation of life cycle events</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="core-tutorial-part8.html">Configuration</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="core-tutorial-part9.html">Discover and load artifacts by convention</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="core-tutorial-part10.html">Advanced Recipes</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="core-tutorial-part11.html">Summary</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Examples.html">Examples</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Community-examples.html">Community examples</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="section-name" href="#">How-to guides</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="section-name" href="#">Building REST APIs</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Creating-crud-rest-apis.html">Creating CRUD REST APIs from a model</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Customizing-how-openapi-spec-is-served.html">Customizing how OpenAPI spec is served</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Customizing-routes.html">Customizing routes</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Dynamic-models-repositories-controllers.html">Dynamically adding models, repositories, and controllers</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Self-hosted-rest-api-explorer.html">Self-hosted REST API Explorer</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Serving-static-files.html">Serving Static Files</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Accessing-http-request-response.html">Accessing HTTP Request and Response Objects</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="File-upload-download.html">Uploading and Downloading Files</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Express-middleware.html">Using Express Middleware</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Using-strong-error-handler.html">Using strong-error-handler</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Boot-and-Mount-a-LoopBack-3-application.html">Boot and Mount a LoopBack 3 Application</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Integrating-with-api-connect.html">Integrating with API Connect</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Accepting-messagepack-over-http.html">Accepting MessagePack over HTTP</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="section-name" href="#">Creating Other Forms of APIs</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="GraphQL.html">Creating GraphQL APIs</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Using-openapi-to-graphql.html">Using OpenAPI-to-GraphQL</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Creating-artifacts-runtime.html">Creating Artifacts at Runtime</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Creating-model-runtime.html">Creating Model at Runtime</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Creating-datasource-runtime.html">Creating DataSource at Runtime</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Creating-repository-runtime.html">Creating Repositories at Runtime</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="section-name" href="#">Building frontend applications</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Building-frontend-angular-application.html">Building an Angular Application from OpenAPI Specification</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Customizing-server-configuration.html">Customizing Server configuration</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Migrate-from-legacy-sequence.html">Migrate from Legacy Sequence</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Running-cron-jobs.html">Running cron jobs</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="section-name" href="#">Accessing Databases</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Configuring-datasource.html">Configuring DataSource</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Working-with-data.html">Working with data</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Querying-data.html">Querying data</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Fields-filter.html">Fields filter</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Include-filter.html">Include filter</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Limit-filter.html">Limit filter</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Order-filter.html">Order filter</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Skip-filter.html">Skip filter</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Where-filter.html">Where filter</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Using-database-transactions.html">Using Database Transactions</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Database-migrations.html">Database Migrations</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Executing-database-commands.html">Executing database commands</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="section-name" href="#">Using TypeORM</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Using-typeorm-with-loopback.html">How to use TypeORM with LoopBack</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Accessing-services.html">Accessing Services</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Calling-soap-web-services.html">Calling SOAP Web services</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Calling-rest-apis.html">Calling REST APIs</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Parsing-requests-guide.html">Parsing requests</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Validation.html">Validating Data</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Validation-REST-layer.html">Validation in REST Layer</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Validation-controller-repo-service-layer.html">Validation in the Controller, Repository and Service Layer</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Validation-ORM-layer.html">Validation in ORM Layer</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Configuring-applications.html">Configuring Applications</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Application-setup-tips.html">Tips for Application Setup</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="section-name" href="#">Securing Applications</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Authentication-overview.html">Authentication</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Authentication-tutorial.html">Apply JWT Authentication in Todo Example</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Loopback-component-authentication.html">Authentication Component</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Authentication-component-decorator.html">Authentication Decorator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Authentication-component-action.html">Authentication Action</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Authentication-component-strategy.html">Authentication Strategy</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Authentication-component-options.html">Managing Custom Authentication Strategy Options</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="JWT-authentication-extension.html">JWT Authentication Extension</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Implement-your-own-strategy.html">Implement your own authentication strategy</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Authentication-passport.html">Passport Adapter for Authentication</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Authorization-overview.html">Authorization</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="RBAC-with-authorization.html">RBAC with Authorization System</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Loopback-component-authorization.html">Authorization Component</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Authorization-component-interceptor.html">Interceptor</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Authorization-component-decorator.html">Decorator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Authorization-component-authorizer.html">Authorizer</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Authorization-component-decision-matrix.html">Decision Matrix</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Authorization-component-enforcer.html">Enforcer</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Deployment.html">Deploying Applications</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Enabling-https.html">Enabling HTTPS</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Deploying-to-IBM-Cloud.html">Deploying to IBM Cloud</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="deploying_to_ibm_cloud_kubernetes.html">Deploying to Kubernetes on IBM Cloud</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="deploying-with-pm2-and-nginx.html">Deploying with pm2 and nginx</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Appsody-LoopBack.html">Developing and Deploying LoopBack Applications with Appsody</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Running-cron-jobs.html">Running cron jobs</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Health.html">Health check</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Metrics.html">Metrics for Prometheus</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Pooling.html">Pooling</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Troubleshooting.html">Troubleshooting</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Setting-debug-strings.html">Setting debug strings</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Logging.html">Logging</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Context-explorer.html">Context Explorer</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Debugging-tests-with-mocha.html">Debugging tests with Mocha</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent-expand   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Extending-LoopBack-4.html">Extending LoopBack Framework</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="section-name" href="#">How-to guides</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Creating-components.html">Creating components</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Creating-decorators.html">Creating decorators</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="creating-components-rest-api.html">Contributing REST API</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="creating-components-services.html">Creating services</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Creating-servers.html">Creating servers</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Extending-request-body-parsing.html">Extending request body parsing</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Extension-life-cycle.html">Extension life cycle</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Extending-OpenAPI-specification.html">Extending OpenAPI specification</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Extending-Model-API-builder.html">Extending Model API builder</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Testing-your-extension.html">Testing your extension</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Community-extensions.html">Community extensions</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Concepts.html">Concepts</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Crafting-LoopBack-4.html">Crafting LoopBack 4</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="section-name" href="#">Core</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Application.html">Application</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Component.html">Component</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Context.html">Context</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Binding.html">Binding</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Dependency-injection.html">Dependency Injection</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Interceptor.html">Interceptor</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Life-cycle.html">Life Cycle Event and Observer</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Extension-point-and-extensions.html">Extension point and extensions</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Service.html">Service</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Booting-an-Application.html">Booter</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Decorators.html">Decorators</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Decorators_openapi.html">OpenAPI Decorators</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Decorators_inject.html">Dependency Injection Decorator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Decorators_authenticate.html">Authentication Decorator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Decorators_authorize.html">Authorization Decorators</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Decorators_service.html">Service Decorators</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Decorators_repository.html">Repository Decorators</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Mixin.html">Mixin</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="section-name" href="#">REST APIs</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Server.html">Server</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Sequence.html">Sequence</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="REST-middleware-sequence.html">Middleware based sequence</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="REST-action-sequence.html">Action based sequence</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Advanced-sequence-topics.html">Advanced topics</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Routing-requests.html">Routing requests</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Parsing-requests.html">Parsing requests</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Working-with-express-middleware.html">Working with Express Middleware</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Middleware.html">Middleware</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Route.html">Route</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Controller.html">Controller</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Request-response-cycle.html">Request/response cycle</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="section-name" href="#">Data Access</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Model.html">Model</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Relations.html">Relations</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="HasMany-relation.html">HasMany Relation</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="BelongsTo-relation.html">BelongsTo Relation</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="HasOne-relation.html">HasOne Relation</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="HasManyThrough-relation.html">HasManyThrough Relation</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Repository.html">Repository</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="DataSource.html">DataSource</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Best-practices.html">Best practices</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Defining-the-API-using-code-first-approach.html">Defining the API using code-first approach</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Defining-your-testing-strategy.html">Defining your testing strategy</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Testing-your-application.html">Testing your application</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="section-name" href="#">Reference guides</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Loopback-application-layout.html">LoopBack 4 Application Layout</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="apidocs.index.html">API docs</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Reserved-binding-keys.html">Reserved binding keys</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Error-codes.html">Error codes</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="LoopBack-types.html">LoopBack Types</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Command-line-interface.html">CLI References</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Application-generator.html">Application generator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Controller-generator.html">Controller generator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="DataSource-generator.html">DataSource generator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Importing-LB3-models.html">Import models from LoopBack 3</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Model-generator.html">Model generator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Discovering-models.html">Model discovery</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Relation-generator.html">Relation generator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Repository-generator.html">Repository generator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Rest-Crud-generator.html">REST CRUD model endpoints generator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Service-generator.html">Service generator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="OpenAPI-generator.html">OpenAPI generator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Life-cycle-observer-generator.html">Life cycle observer generator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Interceptor-generator.html">Interceptor generator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Extension-generator.html">Extension generator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Download-examples.html">Download examples</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Update-generator.html">Update project dependencies</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Copyright-generator.html">Generate copyright/license headers</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Connectors-reference.html">Connectors reference</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Memory-connector.html">Memory connector</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Database-connectors.html">Database connectors</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Cassandra-connector.html">Cassandra connector</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Cloudant-connector.html">Cloudant connector</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Couchdb2-connector.html">CouchDB 2.x connector</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="DashDB.html">DashDB connector</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="DB2-connector.html">IBM Db2 (for Linux, Unix, Windows) connector</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="DB2-for-i-connector.html">IBM Db2 for i connector</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="DB2-for-z-OS-connector.html">IBM Db2 for z/OS connector</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Informix.html">Informix connector</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="MongoDB-connector.html">MongoDB connector</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Connecting-to-MongoDB.html">MongoDB Connector Tutorial</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Using-MongoLab.html">Using MongoLab</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="MySQL-connector.html">MySQL connector</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Connecting-to-MySQL.html">MySQL Connector Tutorial</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Oracle-connector.html">Oracle connector</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Installing-the-Oracle-connector.html">Installing the Oracle connector</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Connecting-to-Oracle.html">Oracle connector tutorial</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="PostgreSQL-connector.html">PostgreSQL connector</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Connecting-to-PostgreSQL.html">PostgreSQL connector tutorial</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Redis-connector.html">Redis connector</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="kv-redis-connector.html">Redis key-value connector</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Example-kv-connector.html">KV connector example</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="SQL-Server-connector.html">SQL Server connector</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Connecting-to-Microsoft-SQL-Server.html">SQL Server connector tutorial</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="SQLite3.html">SQLite3 connector</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="zOSconnectEE.html">z/OS Connect Enterprise Edition connector</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Other-connectors.html">Other connectors</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="JSON-RPC-connector.html">JSON RPC connector</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="MQLight-connector.html">MQ Light connector</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="REST-connector.html">REST connector</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="REST-connector-example.html">REST connector example</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="SOAP-connector.html">SOAP connector</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Strong-soap.html">Strong-soap</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="SOAP-Connector-example.html">SOAP connector example</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Connecting-to-SOAP.html">Connecting to SOAP web services</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="OpenAPI-connector.html">OpenAPI connector</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Community-connectors.html">Community connectors</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="changelog.index.html">Change logs</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Deploy-for-GDPR-readiness.html">Considerations for GDPR readiness</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="code-contrib-lb4.html">Contributing to LoopBack 4</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="submitting_a_pr.html">Submitting a pull request to LoopBack 4</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="FAQ.html">FAQ</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="migration-overview.html">Migration guide</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Understanding-the-differences.html">Understanding the differences</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="LB3-vs-LB4-booting.html">Booting process</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="LB3-vs-LB4-request-response-cycle.html">Request/response cycle</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="migration-mounting-lb3app.html">Mounting a LoopBack 3 application</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="migration-express-middleware.html">Express middleware</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="migration-datasources.html">Datasources</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="migration-models-overview.html">Migrating models</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="migration-models-core.html">Model definitions and built-in APIs</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="migration-models-relations.html">Relations</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="migration-models-methods.html">Custom methods</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="migration-models-remoting-hooks.html">Remoting hooks</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="migration-models-operation-hooks.html">CRUD operation hooks</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="migration-models-mixins.html">Mixins</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="migration-boot-scripts.html">Boot scripts</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="migration-auth-overview.html">Authentication & authorization</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="migration-auth-access-control-example.html">Access control example</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="migration-authentication.html">Built-in models and authentication</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="migration-auth-passport.html">Passport</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="migration-auth-oauth2.html">OAuth2 Provider</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="migration-cli.html">CLI</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="migration-extensions-overview.html">Components and extensions</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="migration-extensions-project-layout.html">Project layout</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="migration-extensions-models.html">Models</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="migration-extensions-current-context.html">Current context</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="migration-extensions-mixins.html">Mixins</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="migration-extensions-rest-api.html">REST API</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="migration-clients.html">Clients (API consumers)</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="migration-not-planned.html">Features not planned</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+
+</ul>
+
+        </nav>
+        <!-- Content Column -->
+        <div class="col-md-9">
+            
+<div class="post-header">
+   <h1 class="post-title-main">CHANGELOG - @loopback/context</h1>
+   
+       <a target="_blank" href="https://github.com/strongloop/loopback-next/blob/master/packages/context/CHANGELOG.md" class="githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Source code</a>
+   
+</div>
+
+<div class="post-content">
+
+
+
+
+
+ 
+   
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+;$(function() {
+  var level = parseInt(0, 10);
+  if (level === 1) {level = 'h2'}
+  if (level === 2) {level = 'h2,h3'}
+  if (level === 3) {level = 'h2,h3,h4'}
+  if (level === 4) {level = 'h2,h3,h4,h5'}
+
+  // Add a new level for changelog files which use h1,h2,h3
+  if (level === 0) {level = 'h1,h2,h3,h4,h5'}
+
+  var toc = $('#toc')
+
+  toc.toc({minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: level})
+
+  /* this offset helps with the space taken up by the floating toolbar */
+  toc.on('click', 'a', function() {
+    var target = $(this.getAttribute('href')),
+      scroll_target = target.offset().top
+
+    $(window).scrollTop(scroll_target - 10)
+    return false
+  })
+  .on('click', '.toc-expand-button', function() {
+    toc.find('> ul').slideToggle('fast');
+  })
+})
+</script>
+
+<div id="toc">
+  <span class="toc-title">Page Contents</span>
+  <button type="button" class="btn btn-link toc-expand-button">
+    <i class="fa fa-bars"></i>
+  </button>
+</div>
+
+ 
+
+    <h1 id="change-log">Change Log</h1>
+
+<p>All notable changes to this project will be documented in this file.
+See <a href="https://conventionalcommits.org">Conventional Commits</a> for commit guidelines.</p>
+
+<h2 id="3141-2021-02-09"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@3.14.0...@loopback/context@3.14.1">3.14.1</a> (2021-02-09)</h2>
+
+<p><strong>Note:</strong> Version bump only for package @loopback/context</p>
+
+<h1 id="3140-2021-01-21"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@3.13.2...@loopback/context@3.14.0">3.14.0</a> (2021-01-21)</h1>
+
+<h3 id="bug-fixes">Bug Fixes</h3>
+
+<ul>
+  <li><strong>context:</strong> make sure subclass is used for create binding from class (<a href="https://github.com/strongloop/loopback-next/commit/befbbcf04bb66b1764291139c2bdd67a869d62d4">befbbcf</a>)</li>
+</ul>
+
+<h3 id="features">Features</h3>
+
+<ul>
+  <li><strong>context:</strong> allow asProxyWithInterceptors to be used for non-class bindings (<a href="https://github.com/strongloop/loopback-next/commit/ebec1228af2ef6afc2377c7a293bab9f698fd4a8">ebec122</a>)</li>
+</ul>
+
+<h2 id="3132-2020-12-07"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@3.13.1...@loopback/context@3.13.2">3.13.2</a> (2020-12-07)</h2>
+
+<p><strong>Note:</strong> Version bump only for package @loopback/context</p>
+
+<h2 id="3131-2020-11-18"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@3.13.0...@loopback/context@3.13.1">3.13.1</a> (2020-11-18)</h2>
+
+<h3 id="bug-fixes-1">Bug Fixes</h3>
+
+<ul>
+  <li>re-export generateUniqueId in index.ts (<a href="https://github.com/strongloop/loopback-next/commit/e392056471cb06c603ed9313e78886fe606e34a9">e392056</a>), closes <a href="https://github.com/strongloop/loopback-next/issues/6767">#6767</a></li>
+</ul>
+
+<h1 id="3130-2020-11-05"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@3.12.0...@loopback/context@3.13.0">3.13.0</a> (2020-11-05)</h1>
+
+<h3 id="features-1">Features</h3>
+
+<ul>
+  <li><strong>context:</strong> add binding.toInjectable shortcut (<a href="https://github.com/strongloop/loopback-next/commit/230923ada9f8d17038bf819a7b9b0615cedbce31">230923a</a>)</li>
+</ul>
+
+<h1 id="3120-2020-10-07"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@3.11.1...@loopback/context@3.12.0">3.12.0</a> (2020-10-07)</h1>
+
+<h3 id="features-2">Features</h3>
+
+<ul>
+  <li><strong>context:</strong> introduce new binding scopes (<a href="https://github.com/strongloop/loopback-next/commit/9916cfd4449a870f7a3378e2e674957aed7c1626">9916cfd</a>)</li>
+</ul>
+
+<h2 id="3111-2020-09-17"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@3.11.0...@loopback/context@3.11.1">3.11.1</a> (2020-09-17)</h2>
+
+<p><strong>Note:</strong> Version bump only for package @loopback/context</p>
+
+<h1 id="3110-2020-09-15"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@3.10.1...@loopback/context@3.11.0">3.11.0</a> (2020-09-15)</h1>
+
+<h3 id="bug-fixes-2">Bug Fixes</h3>
+
+<ul>
+  <li>improve handling of missing design-time type metadata (<a href="https://github.com/strongloop/loopback-next/commit/95b6a2b7ce64e614720df43b905f77a53a54e438">95b6a2b</a>)</li>
+</ul>
+
+<h3 id="features-3">Features</h3>
+
+<ul>
+  <li><strong>context:</strong> add <code class="language-plaintext highlighter-rouge">[@injectable](https://github.com/injectable)</code> as a preferred decorator for <code class="language-plaintext highlighter-rouge">[@bind](https://github.com/bind)</code> (<a href="https://github.com/strongloop/loopback-next/commit/1f75c35937a4190564bdade48b0782c4364f6101">1f75c35</a>)</li>
+  <li>allow dynamic value provider classes and classes with <a href="https://github.com/inject">@inject</a> to be booted (<a href="https://github.com/strongloop/loopback-next/commit/7b85cdf63730ef659a4ee799f05f02eea8a1e3e8">7b85cdf</a>)</li>
+</ul>
+
+<h2 id="3101-2020-08-27"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@3.10.0...@loopback/context@3.10.1">3.10.1</a> (2020-08-27)</h2>
+
+<p><strong>Note:</strong> Version bump only for package @loopback/context</p>
+
+<h1 id="3100-2020-08-19"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@3.9.4...@loopback/context@3.10.0">3.10.0</a> (2020-08-19)</h1>
+
+<h3 id="features-4">Features</h3>
+
+<ul>
+  <li><strong>context:</strong> propagate resolution session to dynamic value factory (<a href="https://github.com/strongloop/loopback-next/commit/60929f1193b3ac0eadc3b70e3e3efc8206e40bab">60929f1</a>)</li>
+</ul>
+
+<h2 id="394-2020-08-05"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@3.9.3...@loopback/context@3.9.4">3.9.4</a> (2020-08-05)</h2>
+
+<p><strong>Note:</strong> Version bump only for package @loopback/context</p>
+
+<h2 id="393-2020-07-20"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@3.9.2...@loopback/context@3.9.3">3.9.3</a> (2020-07-20)</h2>
+
+<h3 id="bug-fixes-3">Bug Fixes</h3>
+
+<ul>
+  <li><strong>context:</strong> destroy debug instances to avoid memory leak (<a href="https://github.com/strongloop/loopback-next/commit/a28d53c8951bf71af62f5238d694662905d1a8f6">a28d53c</a>)</li>
+</ul>
+
+<h2 id="392-2020-06-30"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@3.9.1...@loopback/context@3.9.2">3.9.2</a> (2020-06-30)</h2>
+
+<p><strong>Note:</strong> Version bump only for package @loopback/context</p>
+
+<h2 id="391-2020-06-23"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@3.9.0...@loopback/context@3.9.1">3.9.1</a> (2020-06-23)</h2>
+
+<h3 id="bug-fixes-4">Bug Fixes</h3>
+
+<ul>
+  <li>set node version to &gt;=10.16 to support events.once (<a href="https://github.com/strongloop/loopback-next/commit/e39da1ca47728eafaf83c10ce35b09b03b6a4edc">e39da1c</a>)</li>
+  <li><strong>context:</strong> cache binding value or promise as-is to avoid racing condition (<a href="https://github.com/strongloop/loopback-next/commit/38b9b968e5b0c033d9a1f4a304c4cebbb345fac7">38b9b96</a>)</li>
+</ul>
+
+<h1 id="390-2020-06-11"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@3.8.2...@loopback/context@3.9.0">3.9.0</a> (2020-06-11)</h1>
+
+<h3 id="features-5">Features</h3>
+
+<ul>
+  <li><strong>context:</strong> add <code class="language-plaintext highlighter-rouge">tryCatchFinally</code> helper function for value or promise (<a href="https://github.com/strongloop/loopback-next/commit/c764ac61c3305fba5f8c59357243507e8a940ba6">c764ac6</a>)</li>
+  <li><strong>context:</strong> add strongly typed <code class="language-plaintext highlighter-rouge">on</code> and <code class="language-plaintext highlighter-rouge">once</code> methods (<a href="https://github.com/strongloop/loopback-next/commit/3f14bfa05679fd2642221a9bba0a0e80864b706d">3f14bfa</a>)</li>
+  <li><strong>context:</strong> improve error reporting with more contextual information (<a href="https://github.com/strongloop/loopback-next/commit/2a30484f90b08803f14669524f8eb64c35031da9">2a30484</a>)</li>
+  <li><strong>context:</strong> use a faster UID generator (<a href="https://github.com/strongloop/loopback-next/commit/e5e3d193a182b364a0877dd223be7a0d936a91cd">e5e3d19</a>)</li>
+</ul>
+
+<h2 id="382-2020-05-28"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@3.8.1...@loopback/context@3.8.2">3.8.2</a> (2020-05-28)</h2>
+
+<p><strong>Note:</strong> Version bump only for package @loopback/context</p>
+
+<h2 id="381-2020-05-20"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@3.8.0...@loopback/context@3.8.1">3.8.1</a> (2020-05-20)</h2>
+
+<p><strong>Note:</strong> Version bump only for package @loopback/context</p>
+
+<h1 id="380-2020-05-19"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@3.7.0...@loopback/context@3.8.0">3.8.0</a> (2020-05-19)</h1>
+
+<h3 id="bug-fixes-5">Bug Fixes</h3>
+
+<ul>
+  <li><strong>context:</strong> check parameter design type for method injections (<a href="https://github.com/strongloop/loopback-next/commit/7e81e10f8d5c5c5cd9be0e091fde9bf8c4b1e3b3">7e81e10</a>)</li>
+</ul>
+
+<h3 id="features-6">Features</h3>
+
+<ul>
+  <li><strong>context:</strong> allow bindings to be created from dynamic value provider classes (<a href="https://github.com/strongloop/loopback-next/commit/9e15154dae3a3b51b5e090ecfe4052f416051332">9e15154</a>)</li>
+  <li><strong>context:</strong> pass resolution context to the factory function for toDynamicValue() (<a href="https://github.com/strongloop/loopback-next/commit/6513d3f5e36b90f58501cfbf311b2b26210d44dd">6513d3f</a>)</li>
+  <li><strong>context:</strong> use a <code class="language-plaintext highlighter-rouge">_source</code> to keep the original value provider for bindings (<a href="https://github.com/strongloop/loopback-next/commit/90679f3826a8cf18f06123503a9b96c763b5dc20">90679f3</a>)</li>
+  <li><strong>core:</strong> allow extensionFilter to take a list of extension point names (<a href="https://github.com/strongloop/loopback-next/commit/8f315eb46bee7365da5325a23b948df9d477bfdb">8f315eb</a>)</li>
+</ul>
+
+<h1 id="370-2020-05-07"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@3.6.0...@loopback/context@3.7.0">3.7.0</a> (2020-05-07)</h1>
+
+<h3 id="bug-fixes-6">Bug Fixes</h3>
+
+<ul>
+  <li><strong>context:</strong> allow binding keys to be used with composeInterceptors() (<a href="https://github.com/strongloop/loopback-next/commit/0663c0425b77cbbfa6391e0c4bd92f56b590a548">0663c04</a>)</li>
+</ul>
+
+<h3 id="features-7">Features</h3>
+
+<ul>
+  <li><strong>context:</strong> add registerInterceptor helper function and app.interceptor (<a href="https://github.com/strongloop/loopback-next/commit/c76096684771ffaf535b75b025892ccfb057bff0">c760966</a>)</li>
+  <li><strong>context:</strong> allow composition of intercetors (<a href="https://github.com/strongloop/loopback-next/commit/261e9eb7d197fc480ab241bdd3b70b8a6e272908">261e9eb</a>)</li>
+  <li><strong>context:</strong> allows bindings with singleton/context scopes to be refreshed (<a href="https://github.com/strongloop/loopback-next/commit/8155147ceae756b60a0c9289f94ea8be6199c6d7">8155147</a>)</li>
+  <li><strong>context:</strong> allows default namespace for bindings from classes (<a href="https://github.com/strongloop/loopback-next/commit/ec2da01d766881da1c90dd47c50f8af319e04614">ec2da01</a>)</li>
+  <li><strong>context:</strong> consolidate uuid generation and testing (<a href="https://github.com/strongloop/loopback-next/commit/5abe25ecc2632b0d25140b5e863dfee446c29a01">5abe25e</a>)</li>
+  <li><strong>context:</strong> force interceptor functions to return a value (<a href="https://github.com/strongloop/loopback-next/commit/5663a7642cbbb43fab08020d398393d0aabeed86">5663a76</a>)</li>
+  <li><strong>context:</strong> relax parameter type for isProviderClass() (<a href="https://github.com/strongloop/loopback-next/commit/aafe7d002a3bc0d2a1db5aceb054f25cb4f4f11f">aafe7d0</a>)</li>
+</ul>
+
+<h1 id="360-2020-04-29"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@3.5.1...@loopback/context@3.6.0">3.6.0</a> (2020-04-29)</h1>
+
+<h3 id="features-8">Features</h3>
+
+<ul>
+  <li><strong>context:</strong> add <code class="language-plaintext highlighter-rouge">BindingKey.generate</code> to generate unique binding keys (<a href="https://github.com/strongloop/loopback-next/commit/9478d319a472e1dca4122a29dbb414ce1525bdb0">9478d31</a>)</li>
+</ul>
+
+<h2 id="351-2020-04-23"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@3.5.0...@loopback/context@3.5.1">3.5.1</a> (2020-04-23)</h2>
+
+<p><strong>Note:</strong> Version bump only for package @loopback/context</p>
+
+<h1 id="350-2020-04-22"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@3.4.0...@loopback/context@3.5.0">3.5.0</a> (2020-04-22)</h1>
+
+<h3 id="features-9">Features</h3>
+
+<ul>
+  <li>update package.json and .travis.yml for builds (<a href="https://github.com/strongloop/loopback-next/commit/cb2b8e6a18616dda7783c0193091039d4e608131">cb2b8e6</a>)</li>
+  <li><strong>context:</strong> allow explicit invocation source for proxies (<a href="https://github.com/strongloop/loopback-next/commit/98115f299e250f124791ff211ae686a4d8c964ce">98115f2</a>)</li>
+  <li><strong>context:</strong> improve generic typing for binding inspection (<a href="https://github.com/strongloop/loopback-next/commit/819fabb04390ce8268c1dc7869253b01eafde4cb">819fabb</a>)</li>
+</ul>
+
+<h1 id="340-2020-04-11"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@3.3.0...@loopback/context@3.4.0">3.4.0</a> (2020-04-11)</h1>
+
+<h3 id="features-10">Features</h3>
+
+<ul>
+  <li><strong>context:</strong> expose debug method to subclasses (<a href="https://github.com/strongloop/loopback-next/commit/f651e5be28efe624e83a7139152ed00554580dca">f651e5b</a>)</li>
+</ul>
+
+<h1 id="330-2020-04-08"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@3.2.0...@loopback/context@3.3.0">3.3.0</a> (2020-04-08)</h1>
+
+<h3 id="bug-fixes-7">Bug Fixes</h3>
+
+<ul>
+  <li><strong>context:</strong> fix context observer to catch errors by waitUntilPendingNotificationsDone (<a href="https://github.com/strongloop/loopback-next/commit/3dad6c0c22ef23506daf6f7d7ad28c247e6080c5">3dad6c0</a>)</li>
+</ul>
+
+<h3 id="features-11">Features</h3>
+
+<ul>
+  <li>remove Node.js 8.x polyfill for Symbol.asyncIterator (<a href="https://github.com/strongloop/loopback-next/commit/eeb877276cf62d32856eb7227d78618ab4c93c2e">eeb8772</a>)</li>
+</ul>
+
+<h1 id="320-2020-03-24"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@3.1.0...@loopback/context@3.2.0">3.2.0</a> (2020-03-24)</h1>
+
+<h3 id="features-12">Features</h3>
+
+<ul>
+  <li><strong>context:</strong> emit bind/unbind events on ContextView (<a href="https://github.com/strongloop/loopback-next/commit/65e3d38a34b351929ba422de667bc236e9619ebe">65e3d38</a>)</li>
+  <li><strong>context:</strong> improve context view for bind/unbind events (<a href="https://github.com/strongloop/loopback-next/commit/6a5f90aadb5f5ba213f2da7ea7843f488a09f95d">6a5f90a</a>)</li>
+</ul>
+
+<h1 id="310-2020-03-17"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@3.0.0...@loopback/context@3.1.0">3.1.0</a> (2020-03-17)</h1>
+
+<h3 id="features-13">Features</h3>
+
+<ul>
+  <li><strong>context:</strong> introduce TagValueMatcher for more flexible tag matching (<a href="https://github.com/strongloop/loopback-next/commit/deaf2eda29421e73244d3d27006b502c7dcc25e2">deaf2ed</a>)</li>
+</ul>
+
+<h1 id="300-2020-03-05"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@2.1.1...@loopback/context@3.0.0">3.0.0</a> (2020-03-05)</h1>
+
+<h3 id="chore">chore</h3>
+
+<ul>
+  <li>remove support for Node.js v8.x (<a href="https://github.com/strongloop/loopback-next/commit/4281d9df50f0715d32879e1442a90b643ec8f542">4281d9d</a>)</li>
+</ul>
+
+<h3 id="features-14">Features</h3>
+
+<ul>
+  <li><strong>context:</strong> allow tags to be matched by a given name with any value (<a href="https://github.com/strongloop/loopback-next/commit/7cf053e49f46b93033c6b7c5e80daffe8406b2af">7cf053e</a>)</li>
+  <li><strong>context:</strong> remove generic parameters from <code class="language-plaintext highlighter-rouge">BindingFilter</code> type (<a href="https://github.com/strongloop/loopback-next/commit/1ce33afeefc1c928085ed505adaa32cc06574a0c">1ce33af</a>)</li>
+  <li>add <code class="language-plaintext highlighter-rouge">tslib</code> as dependency (<a href="https://github.com/strongloop/loopback-next/commit/a6e0b4ce7b862764167cefedee14c1115b25e0a4">a6e0b4c</a>), closes <a href="https://github.com/strongloop/loopback-next/issues/4676">#4676</a></li>
+  <li><strong>context:</strong> improve ctx.inspect() to allow classes with colliding names (<a href="https://github.com/strongloop/loopback-next/commit/e7380fc467fe43fd801d8eca05e37745fc922aed">e7380fc</a>)</li>
+</ul>
+
+<h3 id="breaking-changes">BREAKING CHANGES</h3>
+
+<ul>
+  <li><strong>context:</strong> The type <code class="language-plaintext highlighter-rouge">BindingFilter</code> is no longer generic. Please
+update your code and remove any generic arguments provided for the type.</li>
+</ul>
+
+<div class="language-diff highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gd">- BindingFilter&lt;SomeType&gt;
+</span><span class="gi">+ BindingFilter
+</span></code></pre></div></div>
+
+<p>Signed-off-by: Miroslav Bajtoš <a href="mailto:mbajtoss@gmail.com">mbajtoss@gmail.com</a></p>
+<ul>
+  <li>Node.js v8.x is now end of life. Please upgrade to version
+10 and above. See https://nodejs.org/en/about/releases.</li>
+</ul>
+
+<h2 id="211-2020-02-06"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@2.1.0...@loopback/context@2.1.1">2.1.1</a> (2020-02-06)</h2>
+
+<h3 id="bug-fixes-8">Bug Fixes</h3>
+
+<ul>
+  <li><strong>context:</strong> relax checking on instances of BindingKey class (<a href="https://github.com/strongloop/loopback-next/commit/8668eb64b267e2644be87db92aeb86188d7e86f7">8668eb6</a>)</li>
+</ul>
+
+<h1 id="210-2020-02-05"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@2.0.0...@loopback/context@2.1.0">2.1.0</a> (2020-02-05)</h1>
+
+<h3 id="features-15">Features</h3>
+
+<ul>
+  <li><strong>context:</strong> allow more options to inspect context/binding objects (<a href="https://github.com/strongloop/loopback-next/commit/3be32a34a0109e4f4f2eb0fcfa60171bd66743a6">3be32a3</a>)</li>
+  <li><strong>context:</strong> improve context name with the subclass name as prefix (<a href="https://github.com/strongloop/loopback-next/commit/42d2e1b302e4c9f58df864c0ca01cb2ca181060a">42d2e1b</a>)</li>
+  <li><strong>context:</strong> tidy up binding information for inspection (<a href="https://github.com/strongloop/loopback-next/commit/15d698b46841efc0c6bc12bdc89538db77371254">15d698b</a>)</li>
+</ul>
+
+<h1 id="200-2020-01-27"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@1.25.1...@loopback/context@2.0.0">2.0.0</a> (2020-01-27)</h1>
+
+<h3 id="features-16">Features</h3>
+
+<ul>
+  <li><strong>context:</strong> add ContextEventListener and tidy up parent event handling (<a href="https://github.com/strongloop/loopback-next/commit/beb41a7b105cf1aea64982e3f43f4d5a8128581f">beb41a7</a>)</li>
+  <li><strong>context:</strong> index bindings by tag to speed up matching by tag (<a href="https://github.com/strongloop/loopback-next/commit/566b9d9a35ce52d9aeefe17e36f91c9714616b21">566b9d9</a>)</li>
+  <li><strong>context:</strong> keep binding tag pattern for BindingTagFilter (<a href="https://github.com/strongloop/loopback-next/commit/856b62d7053c22ebe0f6acf6a1904e524175429c">856b62d</a>)</li>
+  <li><strong>context:</strong> make bindings as event emitters to report changes (<a href="https://github.com/strongloop/loopback-next/commit/dddddb96fd6908a8d4caad8868e43d3d0bb742f6">dddddb9</a>)</li>
+  <li><strong>context:</strong> refactor context observer subscription into a new class (<a href="https://github.com/strongloop/loopback-next/commit/31ad9a55bbd068cd8e41347fca5caaf0ae5eb6e7">31ad9a5</a>)</li>
+  <li><strong>context:</strong> set max listeners to Infinity by default (<a href="https://github.com/strongloop/loopback-next/commit/0741e3b1293065a04f1ecd9dbda09df074a5dd34">0741e3b</a>)</li>
+  <li><strong>context:</strong> use BindingEvent for binding event listeners (<a href="https://github.com/strongloop/loopback-next/commit/ae5febc35679f4d77b9970ecc26a71938a1c972e">ae5febc</a>)</li>
+</ul>
+
+<h3 id="breaking-changes-1">BREAKING CHANGES</h3>
+
+<ul>
+  <li><strong>context:</strong> Context events are now emitted as <code class="language-plaintext highlighter-rouge">ContextEvent</code> objects
+instead of positional arguments. Context listener functions must switch from
+the old style to new style as follows:</li>
+</ul>
+
+<ol>
+  <li>Old style</li>
+</ol>
+
+<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">ctx</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="dl">'</span><span class="s1">bind</span><span class="dl">'</span><span class="p">,</span> <span class="p">(</span><span class="nx">binding</span><span class="p">,</span> <span class="nx">context</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+<span class="c1">// ...</span>
+<span class="p">});</span>
+</code></pre></div></div>
+
+<ol>
+  <li>New style</li>
+</ol>
+
+<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">ctx</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="dl">'</span><span class="s1">bind</span><span class="dl">'</span><span class="p">,</span> <span class="p">(</span><span class="nx">event</span><span class="p">:</span> <span class="nx">ContextEvent</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+<span class="c1">// ...</span>
+<span class="p">});</span>
+</code></pre></div></div>
+
+<p>Or:</p>
+
+<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">ctx</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="dl">'</span><span class="s1">bind</span><span class="dl">'</span><span class="p">,</span> <span class="p">({</span><span class="nx">binding</span><span class="p">,</span> <span class="nx">context</span><span class="p">,</span> <span class="kd">type</span><span class="p">})</span> <span class="o">=&gt;</span> <span class="p">{</span>
+<span class="c1">// ...</span>
+<span class="p">});</span>
+</code></pre></div></div>
+
+<h2 id="1251-2020-01-07"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@1.25.0...@loopback/context@1.25.1">1.25.1</a> (2020-01-07)</h2>
+
+<p><strong>Note:</strong> Version bump only for package @loopback/context</p>
+
+<h1 id="1250-2019-12-09"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@1.24.0...@loopback/context@1.25.0">1.25.0</a> (2019-12-09)</h1>
+
+<h3 id="features-17">Features</h3>
+
+<ul>
+  <li><strong>context:</strong> allow global interceptors to be applied based on source types (<a href="https://github.com/strongloop/loopback-next/commit/77cbd019027e1441339735326bcfb86a23df8b66">77cbd01</a>)</li>
+  <li><strong>context:</strong> make it possible to set source information for interceptions (<a href="https://github.com/strongloop/loopback-next/commit/2a1ccb409a889d8b30b03ddf3284c9e9d5554e27">2a1ccb4</a>)</li>
+</ul>
+
+<h1 id="1240-2019-11-25"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@1.23.5...@loopback/context@1.24.0">1.24.0</a> (2019-11-25)</h1>
+
+<h3 id="features-18">Features</h3>
+
+<ul>
+  <li><strong>context:</strong> allow current binding to be injected with <code class="language-plaintext highlighter-rouge">[@inject](https://github.com/inject).binding</code> (<a href="https://github.com/strongloop/loopback-next/commit/c01b4c6b4dcc5c7ac79832bda144b1ec0da191b1">c01b4c6</a>)</li>
+  <li><strong>context:</strong> improve context/binding with inspect/toJSON for metadata dumping (<a href="https://github.com/strongloop/loopback-next/commit/ac399f7f105eea402ef1932bd96093baad0a009f">ac399f7</a>)</li>
+  <li><strong>core:</strong> add <a href="https://github.com/service">@service</a> decorator to inject a service by class/interface (<a href="https://github.com/strongloop/loopback-next/commit/1d80904b670724b00cb6a2965b8472f44d23eed0">1d80904</a>)</li>
+</ul>
+
+<h2 id="1235-2019-11-12"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@1.23.4...@loopback/context@1.23.5">1.23.5</a> (2019-11-12)</h2>
+
+<p><strong>Note:</strong> Version bump only for package @loopback/context</p>
+
+<h2 id="1234-2019-10-24"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@1.23.3...@loopback/context@1.23.4">1.23.4</a> (2019-10-24)</h2>
+
+<p><strong>Note:</strong> Version bump only for package @loopback/context</p>
+
+<h2 id="1233-2019-10-07"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@1.23.2...@loopback/context@1.23.3">1.23.3</a> (2019-10-07)</h2>
+
+<p><strong>Note:</strong> Version bump only for package @loopback/context</p>
+
+<h2 id="1232-2019-09-28"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@1.23.1...@loopback/context@1.23.2">1.23.2</a> (2019-09-28)</h2>
+
+<p><strong>Note:</strong> Version bump only for package @loopback/context</p>
+
+<h2 id="1231-2019-09-27"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@1.23.0...@loopback/context@1.23.1">1.23.1</a> (2019-09-27)</h2>
+
+<p><strong>Note:</strong> Version bump only for package @loopback/context</p>
+
+<h1 id="1230-2019-09-17"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@1.22.1...@loopback/context@1.23.0">1.23.0</a> (2019-09-17)</h1>
+
+<h3 id="features-19">Features</h3>
+
+<ul>
+  <li><strong>context:</strong> add more logs to simplify troubleshooting (<a href="https://github.com/strongloop/loopback-next/commit/7752b08">7752b08</a>)</li>
+</ul>
+
+<h2 id="1221-2019-09-06"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@1.22.0...@loopback/context@1.22.1">1.22.1</a> (2019-09-06)</h2>
+
+<h3 id="bug-fixes-9">Bug Fixes</h3>
+
+<ul>
+  <li><strong>context:</strong> allow <code class="language-plaintext highlighter-rouge">inject</code> to be explicitly invoked for class ctor args (<a href="https://github.com/strongloop/loopback-next/commit/6a0d4f2">6a0d4f2</a>)</li>
+</ul>
+
+<h1 id="1220-2019-09-03"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@1.21.4...@loopback/context@1.22.0">1.22.0</a> (2019-09-03)</h1>
+
+<h3 id="features-20">Features</h3>
+
+<ul>
+  <li><strong>context:</strong> add decorator name for <a href="https://github.com/inject">@inject</a>.<em>, <a href="https://github.com/config">@config</a>.</em>, <a href="https://github.com/intercept">@intercept</a> errors (<a href="https://github.com/strongloop/loopback-next/commit/48e3231">48e3231</a>)</li>
+  <li><strong>context:</strong> allow <a href="https://github.com/bind">@bind</a> to be applied on the same class multiple times (<a href="https://github.com/strongloop/loopback-next/commit/ad4d22c">ad4d22c</a>)</li>
+</ul>
+
+<h2 id="1214-2019-08-19"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@1.21.3...@loopback/context@1.21.4">1.21.4</a> (2019-08-19)</h2>
+
+<p><strong>Note:</strong> Version bump only for package @loopback/context</p>
+
+<h2 id="1213-2019-08-15"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@1.21.2...@loopback/context@1.21.3">1.21.3</a> (2019-08-15)</h2>
+
+<p><strong>Note:</strong> Version bump only for package @loopback/context</p>
+
+<h2 id="1212-2019-08-15"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@1.21.1...@loopback/context@1.21.2">1.21.2</a> (2019-08-15)</h2>
+
+<p><strong>Note:</strong> Version bump only for package @loopback/context</p>
+
+<h2 id="1211-2019-07-31"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@1.21.0...@loopback/context@1.21.1">1.21.1</a> (2019-07-31)</h2>
+
+<p><strong>Note:</strong> Version bump only for package @loopback/context</p>
+
+<h1 id="1210-2019-07-26"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@1.20.3...@loopback/context@1.21.0">1.21.0</a> (2019-07-26)</h1>
+
+<h3 id="features-21">Features</h3>
+
+<ul>
+  <li><strong>context:</strong> allow <a href="https://github.com/config">@config</a>.* to specify the target binding key (<a href="https://github.com/strongloop/loopback-next/commit/42b7b98">42b7b98</a>)</li>
+  <li><strong>context:</strong> use invocation context for method dependency injection (<a href="https://github.com/strongloop/loopback-next/commit/a8f326c">a8f326c</a>)</li>
+</ul>
+
+<h2 id="1203-2019-07-17"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@1.20.2...@loopback/context@1.20.3">1.20.3</a> (2019-07-17)</h2>
+
+<p><strong>Note:</strong> Version bump only for package @loopback/context</p>
+
+<h2 id="1202-2019-06-28"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@1.20.1...@loopback/context@1.20.2">1.20.2</a> (2019-06-28)</h2>
+
+<h3 id="bug-fixes-10">Bug Fixes</h3>
+
+<ul>
+  <li>address violations of “no-floating-promises” rule (<a href="https://github.com/strongloop/loopback-next/commit/0947531">0947531</a>)</li>
+</ul>
+
+<h2 id="1201-2019-06-21"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@1.20.0...@loopback/context@1.20.1">1.20.1</a> (2019-06-21)</h2>
+
+<p><strong>Note:</strong> Version bump only for package @loopback/context</p>
+
+<h1 id="1200-2019-06-20"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@1.19.1...@loopback/context@1.20.0">1.20.0</a> (2019-06-20)</h1>
+
+<h3 id="features-22">Features</h3>
+
+<ul>
+  <li><strong>context:</strong> generalize interceptors and chain for invocations (<a href="https://github.com/strongloop/loopback-next/commit/34d31d8">34d31d8</a>)</li>
+</ul>
+
+<h2 id="1191-2019-06-17"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@1.19.0...@loopback/context@1.19.1">1.19.1</a> (2019-06-17)</h2>
+
+<p><strong>Note:</strong> Version bump only for package @loopback/context</p>
+
+<h1 id="1190-2019-06-06"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@1.18.0...@loopback/context@1.19.0">1.19.0</a> (2019-06-06)</h1>
+
+<h3 id="features-23">Features</h3>
+
+<ul>
+  <li><strong>context:</strong> add <code class="language-plaintext highlighter-rouge">[@global](https://github.com/global)Interceptor</code> decorator (<a href="https://github.com/strongloop/loopback-next/commit/1010a37">1010a37</a>)</li>
+</ul>
+
+<h1 id="1180-2019-06-03"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@1.17.1...@loopback/context@1.18.0">1.18.0</a> (2019-06-03)</h1>
+
+<h3 id="features-24">Features</h3>
+
+<ul>
+  <li>replace tslint with eslint (<a href="https://github.com/strongloop/loopback-next/commit/44185a7">44185a7</a>)</li>
+</ul>
+
+<h2 id="1171-2019-05-31"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@1.17.0...@loopback/context@1.17.1">1.17.1</a> (2019-05-31)</h2>
+
+<p><strong>Note:</strong> Version bump only for package @loopback/context</p>
+
+<h1 id="1170-2019-05-30"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@1.16.0...@loopback/context@1.17.0">1.17.0</a> (2019-05-30)</h1>
+
+<h3 id="bug-fixes-11">Bug Fixes</h3>
+
+<ul>
+  <li><strong>context:</strong> allow injection when a class decorator returns a mixin (<a href="https://github.com/strongloop/loopback-next/commit/28cc0a0">28cc0a0</a>)</li>
+  <li><strong>context:</strong> allow optional for a binding without value getter (<a href="https://github.com/strongloop/loopback-next/commit/e211a71">e211a71</a>)</li>
+</ul>
+
+<h3 id="features-25">Features</h3>
+
+<ul>
+  <li><strong>context:</strong> make parent public for invocation context (<a href="https://github.com/strongloop/loopback-next/commit/19856c6">19856c6</a>)</li>
+</ul>
+
+<h3 id="performance-improvements">Performance Improvements</h3>
+
+<ul>
+  <li><strong>context:</strong> cache description of method parameter injections (<a href="https://github.com/strongloop/loopback-next/commit/127f7c2">127f7c2</a>)</li>
+</ul>
+
+<h1 id="1160-2019-05-23"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@1.15.0...@loopback/context@1.16.0">1.16.0</a> (2019-05-23)</h1>
+
+<h3 id="features-26">Features</h3>
+
+<ul>
+  <li><strong>context:</strong> add singleValue to ContextView (<a href="https://github.com/strongloop/loopback-next/commit/22bd57f">22bd57f</a>)</li>
+  <li><strong>context:</strong> leave local bindings and parent unchanged during close (<a href="https://github.com/strongloop/loopback-next/commit/198af88">198af88</a>)</li>
+  <li><strong>context:</strong> support binding config and <a href="https://github.com/inject">@inject</a>.config (<a href="https://github.com/strongloop/loopback-next/commit/a392852">a392852</a>)</li>
+</ul>
+
+<h1 id="1150-2019-05-14"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@1.14.0...@loopback/context@1.15.0">1.15.0</a> (2019-05-14)</h1>
+
+<h3 id="features-27">Features</h3>
+
+<ul>
+  <li><strong>context:</strong> add binding comparator to sort bindings (<a href="https://github.com/strongloop/loopback-next/commit/ae3d61f">ae3d61f</a>)</li>
+</ul>
+
+<h1 id="1140-2019-05-10"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@1.13.0...@loopback/context@1.14.0">1.14.0</a> (2019-05-10)</h1>
+
+<h3 id="bug-fixes-12">Bug Fixes</h3>
+
+<ul>
+  <li><strong>context:</strong> close invocation context only after async is done (<a href="https://github.com/strongloop/loopback-next/commit/e71e990">e71e990</a>)</li>
+</ul>
+
+<h3 id="features-28">Features</h3>
+
+<ul>
+  <li><strong>context:</strong> add more getters for InvocationContext (<a href="https://github.com/strongloop/loopback-next/commit/12a3ecb">12a3ecb</a>)</li>
+</ul>
+
+<h1 id="1130-2019-05-09"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@1.12.1...@loopback/context@1.13.0">1.13.0</a> (2019-05-09)</h1>
+
+<h3 id="features-29">Features</h3>
+
+<ul>
+  <li><strong>context:</strong> add support for method interceptors (<a href="https://github.com/strongloop/loopback-next/commit/293188d">293188d</a>)</li>
+</ul>
+
+<h2 id="1121-2019-05-06"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@1.12.0...@loopback/context@1.12.1">1.12.1</a> (2019-05-06)</h2>
+
+<p><strong>Note:</strong> Version bump only for package @loopback/context</p>
+
+<h1 id="1120-2019-04-20"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@1.11.0...@loopback/context@1.12.0">1.12.0</a> (2019-04-20)</h1>
+
+<h3 id="features-30">Features</h3>
+
+<ul>
+  <li><strong>build:</strong> add more TypeScript “strict” checks (<a href="https://github.com/strongloop/loopback-next/commit/866aa2f">866aa2f</a>)</li>
+  <li><strong>context:</strong> add <code class="language-plaintext highlighter-rouge">[@inject](https://github.com/inject).binding</code> and improve <code class="language-plaintext highlighter-rouge">[@inject](https://github.com/inject).setter</code> (<a href="https://github.com/strongloop/loopback-next/commit/a396274">a396274</a>)</li>
+  <li><strong>context:</strong> fix generic typing for BindingFilter (<a href="https://github.com/strongloop/loopback-next/commit/372b406">372b406</a>)</li>
+</ul>
+
+<h1 id="1110-2019-04-11"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@1.10.0...@loopback/context@1.11.0">1.11.0</a> (2019-04-11)</h1>
+
+<h3 id="bug-fixes-13">Bug Fixes</h3>
+
+<ul>
+  <li><strong>context:</strong> instantiate class with non-injected arguments (<a href="https://github.com/strongloop/loopback-next/commit/6699825">6699825</a>)</li>
+</ul>
+
+<h3 id="features-31">Features</h3>
+
+<ul>
+  <li><strong>context:</strong> make Injection.metadata a required property (<a href="https://github.com/strongloop/loopback-next/commit/dcc9cac">dcc9cac</a>)</li>
+</ul>
+
+<h1 id="1100-2019-04-09"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@1.9.0...@loopback/context@1.10.0">1.10.0</a> (2019-04-09)</h1>
+
+<h3 id="features-32">Features</h3>
+
+<ul>
+  <li><strong>context:</strong> always pass the session to ResolverFunction (<a href="https://github.com/strongloop/loopback-next/commit/bf36532">bf36532</a>)</li>
+</ul>
+
+<h1 id="190-2019-04-05"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@1.8.1...@loopback/context@1.9.0">1.9.0</a> (2019-04-05)</h1>
+
+<h3 id="bug-fixes-14">Bug Fixes</h3>
+
+<ul>
+  <li><strong>context:</strong> clear binding cache upon scope or value getter changes (<a href="https://github.com/strongloop/loopback-next/commit/122fe7b">122fe7b</a>)</li>
+</ul>
+
+<h3 id="features-33">Features</h3>
+
+<ul>
+  <li><strong>context:</strong> add a helper function to create a getter from binding filter (<a href="https://github.com/strongloop/loopback-next/commit/41248f3">41248f3</a>)</li>
+  <li><strong>context:</strong> add binding.toAlias() to resolve values from another binding (<a href="https://github.com/strongloop/loopback-next/commit/15dcd16">15dcd16</a>)</li>
+  <li><strong>context:</strong> pass resolution options into binding.getValue() (<a href="https://github.com/strongloop/loopback-next/commit/705dcd5">705dcd5</a>)</li>
+</ul>
+
+<h2 id="181-2019-03-22"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@1.8.0...@loopback/context@1.8.1">1.8.1</a> (2019-03-22)</h2>
+
+<p><strong>Note:</strong> Version bump only for package @loopback/context</p>
+
+<h1 id="180-2019-03-22"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@1.7.0...@loopback/context@1.8.0">1.8.0</a> (2019-03-22)</h1>
+
+<h3 id="features-34">Features</h3>
+
+<ul>
+  <li><strong>context:</strong> allow namespace tag for createBindingFromClass (<a href="https://github.com/strongloop/loopback-next/commit/f6fe55e">f6fe55e</a>)</li>
+  <li><strong>context:</strong> honor binding scope from <a href="https://github.com/bind">@bind</a> (<a href="https://github.com/strongloop/loopback-next/commit/3b30f01">3b30f01</a>)</li>
+  <li><strong>context:</strong> improve typing for binding related methods (<a href="https://github.com/strongloop/loopback-next/commit/f6cf0c6">f6cf0c6</a>)</li>
+  <li><strong>context:</strong> tidy up context for resolving injections of a singleton binding (<a href="https://github.com/strongloop/loopback-next/commit/f5bf43c">f5bf43c</a>)</li>
+</ul>
+
+<h1 id="170-2019-03-12"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@1.6.0...@loopback/context@1.7.0">1.7.0</a> (2019-03-12)</h1>
+
+<h3 id="features-35">Features</h3>
+
+<ul>
+  <li><strong>context:</strong> add <a href="https://github.com/inject">@inject</a>.view and extend <a href="https://github.com/inject">@inject</a> for multiple bindings (<a href="https://github.com/strongloop/loopback-next/commit/d64268b">d64268b</a>)</li>
+  <li><strong>context:</strong> add events to ContextView (<a href="https://github.com/strongloop/loopback-next/commit/fb10efc">fb10efc</a>)</li>
+  <li><strong>context:</strong> introduce context view to watch bindings by filter (<a href="https://github.com/strongloop/loopback-next/commit/04209f7">04209f7</a>)</li>
+</ul>
+
+<h1 id="160-2019-02-25"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@1.5.1...@loopback/context@1.6.0">1.6.0</a> (2019-02-25)</h1>
+
+<h3 id="features-36">Features</h3>
+
+<ul>
+  <li><strong>context:</strong> introduce async context observers for bind/unbind events (<a href="https://github.com/strongloop/loopback-next/commit/e5e5fc4">e5e5fc4</a>)</li>
+</ul>
+
+<h2 id="151-2019-02-08"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@1.5.0...@loopback/context@1.5.1">1.5.1</a> (2019-02-08)</h2>
+
+<p><strong>Note:</strong> Version bump only for package @loopback/context</p>
+
+<h1 id="150-2019-01-28"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@1.4.1...@loopback/context@1.5.0">1.5.0</a> (2019-01-28)</h1>
+
+<h3 id="features-37">Features</h3>
+
+<ul>
+  <li><strong>context:</strong> add default template argument for BindingAddress (<a href="https://github.com/strongloop/loopback-next/commit/7113105">7113105</a>)</li>
+  <li><strong>context:</strong> binding filters (<a href="https://github.com/strongloop/loopback-next/commit/ff85e74">ff85e74</a>)</li>
+</ul>
+
+<h2 id="141-2019-01-14"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@1.4.0...@loopback/context@1.4.1">1.4.1</a> (2019-01-14)</h2>
+
+<h3 id="bug-fixes-15">Bug Fixes</h3>
+
+<ul>
+  <li>rework tslint comments disabling “no-unused-variable” rule (<a href="https://github.com/strongloop/loopback-next/commit/a18a3d7">a18a3d7</a>)</li>
+</ul>
+
+<h1 id="140-2018-12-20"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@1.3.0...@loopback/context@1.4.0">1.4.0</a> (2018-12-20)</h1>
+
+<h3 id="features-38">Features</h3>
+
+<ul>
+  <li><strong>context:</strong> add <code class="language-plaintext highlighter-rouge">[@bind](https://github.com/bind)</code> to decorate classes with more information (<a href="https://github.com/strongloop/loopback-next/commit/b8f9792">b8f9792</a>)</li>
+</ul>
+
+<h1 id="130-2018-12-13"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@1.2.0...@loopback/context@1.3.0">1.3.0</a> (2018-12-13)</h1>
+
+<h3 id="features-39">Features</h3>
+
+<ul>
+  <li><strong>context:</strong> add binding.apply(templateFn) (<a href="https://github.com/strongloop/loopback-next/commit/f046b30">f046b30</a>)</li>
+</ul>
+
+<h1 id="120-2018-11-26"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@1.1.0...@loopback/context@1.2.0">1.2.0</a> (2018-11-26)</h1>
+
+<h3 id="features-40">Features</h3>
+
+<ul>
+  <li><strong>rest:</strong> allow body parsers to be extended (<a href="https://github.com/strongloop/loopback-next/commit/86bfcbc">86bfcbc</a>)</li>
+</ul>
+
+<h1 id="110-2018-11-14"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@1.0.1...@loopback/context@1.1.0">1.1.0</a> (2018-11-14)</h1>
+
+<h3 id="features-41">Features</h3>
+
+<ul>
+  <li><strong>context:</strong> add support for context.add(binding) (<a href="https://github.com/strongloop/loopback-next/commit/8f77cef">8f77cef</a>)</li>
+  <li><strong>core:</strong> allow components to expose an array of bindings (<a href="https://github.com/strongloop/loopback-next/commit/eae0da3">eae0da3</a>)</li>
+</ul>
+
+<p><a name="1.0.1"></a></p>
+<h2 id="101-2018-11-08"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@1.0.0...@loopback/context@1.0.1">1.0.1</a> (2018-11-08)</h2>
+
+<p><strong>Note:</strong> Version bump only for package @loopback/context</p>
+
+<p><a name="0.13.2"></a></p>
+<h2 id="0132-2018-10-08"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@0.13.1...@loopback/context@0.13.2">0.13.2</a> (2018-10-08)</h2>
+
+<p><strong>Note:</strong> Version bump only for package @loopback/context</p>
+
+<p><a name="0.13.1"></a></p>
+<h2 id="0131-2018-10-05"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@0.13.0...@loopback/context@0.13.1">0.13.1</a> (2018-10-05)</h2>
+
+<p><strong>Note:</strong> Version bump only for package @loopback/context</p>
+
+<p><a name="0.13.0"></a></p>
+<h1 id="0130-2018-10-03"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@0.12.13...@loopback/context@0.13.0">0.13.0</a> (2018-10-03)</h1>
+
+<h3 id="features-42">Features</h3>
+
+<ul>
+  <li><strong>context:</strong> add a helper <code class="language-plaintext highlighter-rouge">Getter.fromValue()</code> (<a href="https://github.com/strongloop/loopback-next/commit/4764166">4764166</a>)</li>
+</ul>
+
+<p><a name="0.12.13"></a></p>
+<h2 id="01213-2018-09-28"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@0.12.12...@loopback/context@0.12.13">0.12.13</a> (2018-09-28)</h2>
+
+<p><strong>Note:</strong> Version bump only for package @loopback/context</p>
+
+<p><a name="0.12.12"></a></p>
+<h2 id="01212-2018-09-27"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@0.12.11...@loopback/context@0.12.12">0.12.12</a> (2018-09-27)</h2>
+
+<p><strong>Note:</strong> Version bump only for package @loopback/context</p>
+
+<p><a name="0.12.11"></a></p>
+<h2 id="01211-2018-09-25"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@0.12.10...@loopback/context@0.12.11">0.12.11</a> (2018-09-25)</h2>
+
+<p><strong>Note:</strong> Version bump only for package @loopback/context</p>
+
+<p><a name="0.12.10"></a></p>
+<h2 id="01210-2018-09-21"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@0.12.9...@loopback/context@0.12.10">0.12.10</a> (2018-09-21)</h2>
+
+<p><strong>Note:</strong> Version bump only for package @loopback/context</p>
+
+<p><a name="0.12.9"></a></p>
+<h2 id="0129-2018-09-19"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@0.12.8...@loopback/context@0.12.9">0.12.9</a> (2018-09-19)</h2>
+
+<p><strong>Note:</strong> Version bump only for package @loopback/context</p>
+
+<p><a name="0.12.8"></a></p>
+<h2 id="0128-2018-09-12"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@0.12.7...@loopback/context@0.12.8">0.12.8</a> (2018-09-12)</h2>
+
+<p><strong>Note:</strong> Version bump only for package @loopback/context</p>
+
+<p><a name="0.12.7"></a></p>
+<h2 id="0127-2018-09-10"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@0.12.6...@loopback/context@0.12.7">0.12.7</a> (2018-09-10)</h2>
+
+<p><strong>Note:</strong> Version bump only for package @loopback/context</p>
+
+<p><a name="0.12.6"></a></p>
+<h2 id="0126-2018-09-08"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@0.12.5...@loopback/context@0.12.6">0.12.6</a> (2018-09-08)</h2>
+
+<p><strong>Note:</strong> Version bump only for package @loopback/context</p>
+
+<p><a name="0.12.5"></a></p>
+<h2 id="0125-2018-08-24"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@0.12.4...@loopback/context@0.12.5">0.12.5</a> (2018-08-24)</h2>
+
+<p><strong>Note:</strong> Version bump only for package @loopback/context</p>
+
+<p><a name="0.12.4"></a></p>
+<h2 id="0124-2018-08-15"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@0.12.3...@loopback/context@0.12.4">0.12.4</a> (2018-08-15)</h2>
+
+<h3 id="bug-fixes-16">Bug Fixes</h3>
+
+<ul>
+  <li><strong>context:</strong> check constructor/method override for <a href="https://github.com/inject">@inject</a> (<a href="https://github.com/strongloop/loopback-next/commit/8c0bdb6">8c0bdb6</a>)</li>
+</ul>
+
+<p><a name="0.12.3"></a></p>
+<h2 id="0123-2018-08-08"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@0.12.2...@loopback/context@0.12.3">0.12.3</a> (2018-08-08)</h2>
+
+<p><strong>Note:</strong> Version bump only for package @loopback/context</p>
+
+<p><a name="0.12.2"></a></p>
+<h2 id="0122-2018-07-21"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@0.12.1...@loopback/context@0.12.2">0.12.2</a> (2018-07-21)</h2>
+
+<p><strong>Note:</strong> Version bump only for package @loopback/context</p>
+
+<p><a name="0.12.1"></a></p>
+<h2 id="0121-2018-07-20"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@0.12.0...@loopback/context@0.12.1">0.12.1</a> (2018-07-20)</h2>
+
+<p><strong>Note:</strong> Version bump only for package @loopback/context</p>
+
+<p><a name="0.12.0"></a></p>
+<h1 id="0120-2018-07-20"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@0.11.11...@loopback/context@0.12.0">0.12.0</a> (2018-07-20)</h1>
+
+<p><strong>Note:</strong> Version bump only for package @loopback/context</p>
+
+<p><a name="0.11.11"></a></p>
+<h2 id="01111-2018-07-11"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@0.11.10...@loopback/context@0.11.11">0.11.11</a> (2018-07-11)</h2>
+
+<p><strong>Note:</strong> Version bump only for package @loopback/context</p>
+
+<p><a name="0.11.10"></a></p>
+<h2 id="01110-2018-07-10"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@0.11.9...@loopback/context@0.11.10">0.11.10</a> (2018-07-10)</h2>
+
+<p><strong>Note:</strong> Version bump only for package @loopback/context</p>
+
+<p><a name="0.11.9"></a></p>
+<h2 id="0119-2018-06-28"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@0.11.8...@loopback/context@0.11.9">0.11.9</a> (2018-06-28)</h2>
+
+<p><strong>Note:</strong> Version bump only for package @loopback/context</p>
+
+<p><a name="0.11.8"></a></p>
+<h2 id="0118-2018-06-27"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@0.11.7...@loopback/context@0.11.8">0.11.8</a> (2018-06-27)</h2>
+
+<p><strong>Note:</strong> Version bump only for package @loopback/context</p>
+
+<p><a name="0.11.7"></a></p>
+<h2 id="0117-2018-06-20"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@0.11.6...@loopback/context@0.11.7">0.11.7</a> (2018-06-20)</h2>
+
+<p><strong>Note:</strong> Version bump only for package @loopback/context</p>
+
+<p><a name="0.11.6"></a></p>
+<h2 id="0116-2018-06-11"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@0.11.5...@loopback/context@0.11.6">0.11.6</a> (2018-06-11)</h2>
+
+<h3 id="bug-fixes-17">Bug Fixes</h3>
+
+<ul>
+  <li><strong>context:</strong> calculate # of method params with default (<a href="https://github.com/strongloop/loopback-next/commit/f5f5bde">f5f5bde</a>)</li>
+</ul>
+
+<p><a name="0.11.5"></a></p>
+<h2 id="0115-2018-06-09"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@0.11.3...@loopback/context@0.11.5">0.11.5</a> (2018-06-09)</h2>
+
+<p><strong>Note:</strong> Version bump only for package @loopback/context</p>
+
+<p><a name="0.11.4"></a></p>
+<h2 id="0114-2018-06-09"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@0.11.3...@loopback/context@0.11.4">0.11.4</a> (2018-06-09)</h2>
+
+<p><strong>Note:</strong> Version bump only for package @loopback/context</p>
+
+<p><a name="0.11.3"></a></p>
+<h2 id="0113-2018-06-08"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@0.11.2...@loopback/context@0.11.3">0.11.3</a> (2018-06-08)</h2>
+
+<h3 id="bug-fixes-18">Bug Fixes</h3>
+
+<ul>
+  <li>make the code compatible with TypeScript 2.9.x (<a href="https://github.com/strongloop/loopback-next/commit/37aba50">37aba50</a>)</li>
+</ul>
+
+<p><a name="0.11.2"></a></p>
+<h2 id="0112-2018-05-20"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@0.11.1...@loopback/context@0.11.2">0.11.2</a> (2018-05-20)</h2>
+
+<p><strong>Note:</strong> Version bump only for package @loopback/context</p>
+
+<p><a name="0.11.1"></a></p>
+<h2 id="0111-2018-05-14"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@0.11.0...@loopback/context@0.11.1">0.11.1</a> (2018-05-14)</h2>
+
+<h3 id="bug-fixes-19">Bug Fixes</h3>
+
+<ul>
+  <li>change index.d.ts files to point to dist8 (<a href="https://github.com/strongloop/loopback-next/commit/42ca42d">42ca42d</a>)</li>
+</ul>
+
+<p><a name="0.11.0"></a></p>
+<h1 id="0110-2018-05-14"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@0.10.1...@loopback/context@0.11.0">0.11.0</a> (2018-05-14)</h1>
+
+<h3 id="features-43">Features</h3>
+
+<ul>
+  <li><strong>context:</strong> add more utils to resolve valueOrPromises (<a href="https://github.com/strongloop/loopback-next/commit/cc55ef5">cc55ef5</a>)</li>
+</ul>
+
+<p><a name="0.10.1"></a></p>
+<h2 id="0101-2018-05-08"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@0.10.0...@loopback/context@0.10.1">0.10.1</a> (2018-05-08)</h2>
+
+<p><strong>Note:</strong> Version bump only for package @loopback/context</p>
+
+<p><a name="0.10.0"></a></p>
+<h1 id="0100-2018-05-03"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@0.8.1...@loopback/context@0.10.0">0.10.0</a> (2018-05-03)</h1>
+
+<h3 id="features-44">Features</h3>
+
+<ul>
+  <li><strong>context:</strong> allow tags to have an optional value (<a href="https://github.com/strongloop/loopback-next/commit/95acd11">95acd11</a>)</li>
+  <li>add helper package “dist-util” (<a href="https://github.com/strongloop/loopback-next/commit/532f153">532f153</a>)</li>
+</ul>
+
+<p><a name="0.9.0"></a></p>
+<h1 id="090-2018-05-03"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@0.8.1...@loopback/context@0.9.0">0.9.0</a> (2018-05-03)</h1>
+
+<h3 id="features-45">Features</h3>
+
+<ul>
+  <li><strong>context:</strong> allow tags to have an optional value (<a href="https://github.com/strongloop/loopback-next/commit/95acd11">95acd11</a>)</li>
+  <li>add helper package “dist-util” (<a href="https://github.com/strongloop/loopback-next/commit/532f153">532f153</a>)</li>
+</ul>
+
+<p><a name="0.8.1"></a></p>
+<h2 id="081-2018-04-25"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@0.8.0...@loopback/context@0.8.1">0.8.1</a> (2018-04-25)</h2>
+
+<p><strong>Note:</strong> Version bump only for package @loopback/context</p>
+
+<p><a name="0.8.0"></a></p>
+<h1 id="080-2018-04-16"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@0.7.0...@loopback/context@0.8.0">0.8.0</a> (2018-04-16)</h1>
+
+<p><strong>Note:</strong> Version bump only for package @loopback/context</p>
+
+<p><a name="0.7.0"></a></p>
+<h1 id="070-2018-04-12"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@0.6.1...@loopback/context@0.7.0">0.7.0</a> (2018-04-12)</h1>
+
+<h3 id="features-46">Features</h3>
+
+<ul>
+  <li><strong>metadata:</strong> add strongly-typed metadata accessors (<a href="https://github.com/strongloop/loopback-next/commit/45f9f80">45f9f80</a>)</li>
+</ul>
+
+<p><a name="0.6.1"></a></p>
+<h2 id="061-2018-04-11"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@0.6.0...@loopback/context@0.6.1">0.6.1</a> (2018-04-11)</h2>
+
+<p><strong>Note:</strong> Version bump only for package @loopback/context</p>
+
+<p><a name="0.6.0"></a></p>
+<h1 id="060-2018-04-11"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@0.5.2...@loopback/context@0.6.0">0.6.0</a> (2018-04-11)</h1>
+
+<h3 id="bug-fixes-20">Bug Fixes</h3>
+
+<ul>
+  <li>change file names to fit advocated naming convention (<a href="https://github.com/strongloop/loopback-next/commit/0331df8">0331df8</a>)</li>
+</ul>
+
+<h3 id="features-47">Features</h3>
+
+<ul>
+  <li><strong>context:</strong> typed binding keys (<a href="https://github.com/strongloop/loopback-next/commit/685195c">685195c</a>)</li>
+</ul>
+
+<p><a name="0.5.3"></a></p>
+<h2 id="053-2018-04-06"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@0.5.2...@loopback/context@0.5.3">0.5.3</a> (2018-04-06)</h2>
+
+<p><strong>Note:</strong> Version bump only for package @loopback/context</p>
+
+<p><a name="0.5.2"></a></p>
+<h2 id="052-2018-04-04"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@0.5.1...@loopback/context@0.5.2">0.5.2</a> (2018-04-04)</h2>
+
+<p><strong>Note:</strong> Version bump only for package @loopback/context</p>
+
+<p><a name="0.5.1"></a></p>
+<h2 id="051-2018-04-02"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@0.5.0...@loopback/context@0.5.1">0.5.1</a> (2018-04-02)</h2>
+
+<p><strong>Note:</strong> Version bump only for package @loopback/context</p>
+
+<p><a name="0.5.0"></a></p>
+<h1 id="050-2018-03-29"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@0.4.0...@loopback/context@0.5.0">0.5.0</a> (2018-03-29)</h1>
+
+<h3 id="bug-fixes-21">Bug Fixes</h3>
+
+<ul>
+  <li><strong>context:</strong> disable deep clone of injection metadata (<a href="https://github.com/strongloop/loopback-next/commit/7d8a84c">7d8a84c</a>)</li>
+</ul>
+
+<h3 id="breaking-changes-2">BREAKING CHANGES</h3>
+
+<ul>
+  <li><strong>context:</strong> the <code class="language-plaintext highlighter-rouge">metadata</code> parameter of <code class="language-plaintext highlighter-rouge">@inject</code> is no longer
+cloned deeply. It’s still cloned shallowly.</li>
+</ul>
+
+<p><a name="0.4.0"></a></p>
+<h1 id="040-2018-03-23"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@0.3.0...@loopback/context@0.4.0">0.4.0</a> (2018-03-23)</h1>
+
+<h3 id="features-48">Features</h3>
+
+<ul>
+  <li><strong>context:</strong> add optional typing for Binding (<a href="https://github.com/strongloop/loopback-next/commit/3c494fa">3c494fa</a>)</li>
+</ul>
+
+<p><a name="0.3.0"></a></p>
+<h1 id="030-2018-03-21"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@0.2.4...@loopback/context@0.3.0">0.3.0</a> (2018-03-21)</h1>
+
+<p><strong>Note:</strong> Version bump only for package @loopback/context</p>
+
+<p><a name="0.2.4"></a></p>
+<h2 id="024-2018-03-14"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@0.2.3...@loopback/context@0.2.4">0.2.4</a> (2018-03-14)</h2>
+
+<p><strong>Note:</strong> Version bump only for package @loopback/context</p>
+
+<p><a name="0.2.3"></a></p>
+<h2 id="023-2018-03-13"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@0.2.2...@loopback/context@0.2.3">0.2.3</a> (2018-03-13)</h2>
+
+<p><strong>Note:</strong> Version bump only for package @loopback/context</p>
+
+<p><a name="0.2.2"></a></p>
+<h2 id="022-2018-03-08"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@0.2.1...@loopback/context@0.2.2">0.2.2</a> (2018-03-08)</h2>
+
+<p><strong>Note:</strong> Version bump only for package @loopback/context</p>
+
+<p><a name="0.2.1"></a></p>
+<h2 id="021-2018-03-06"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@0.2.0...@loopback/context@0.2.1">0.2.1</a> (2018-03-06)</h2>
+
+<h3 id="bug-fixes-22">Bug Fixes</h3>
+
+<ul>
+  <li>fix typo of <code class="language-plaintext highlighter-rouge">additional</code> (<a href="https://github.com/strongloop/loopback-next/commit/2fd7610">2fd7610</a>)</li>
+</ul>
+
+<p><a name="0.2.0"></a></p>
+<h1 id="020-2018-03-01"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@0.1.2...@loopback/context@0.2.0">0.2.0</a> (2018-03-01)</h1>
+
+<p><strong>Note:</strong> Version bump only for package @loopback/context</p>
+
+<p><a name="0.1.2"></a></p>
+<h2 id="012-2018-03-01"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@0.1.1...@loopback/context@0.1.2">0.1.2</a> (2018-03-01)</h2>
+
+<h3 id="features-49">Features</h3>
+
+<ul>
+  <li><strong>context:</strong> add type as a generic parameter to <code class="language-plaintext highlighter-rouge">ctx.get()</code> and friends (<a href="https://github.com/strongloop/loopback-next/commit/24b217d">24b217d</a>)</li>
+  <li><strong>context:</strong> allow context.find by a filter function (<a href="https://github.com/strongloop/loopback-next/commit/9b1e26c">9b1e26c</a>)</li>
+  <li><strong>context:</strong> use Readonly to guard immutable values (<a href="https://github.com/strongloop/loopback-next/commit/871ddef">871ddef</a>)</li>
+</ul>
+
+<h3 id="breaking-changes-3">BREAKING CHANGES</h3>
+
+<ul>
+  <li><strong>context:</strong> <code class="language-plaintext highlighter-rouge">ctx.get()</code> and <code class="language-plaintext highlighter-rouge">ctx.getSync()</code> require a type now.
+See the example below for upgrade instructions:</li>
+</ul>
+
+<div class="language-diff highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gd">- const c: MyController = await ctx.get('MyController');
+</span><span class="gi">+ const c = await ctx.get&lt;MyController&gt;('MyController');
+</span></code></pre></div></div>
+
+<p><code class="language-plaintext highlighter-rouge">isPromise</code> was renamed to <code class="language-plaintext highlighter-rouge">isPromiseLike</code> and acts as a type guard
+for <code class="language-plaintext highlighter-rouge">PromiseLike</code>, not <code class="language-plaintext highlighter-rouge">Promise</code>.  When upgrading affected code, you
+need to determine whether the code was accepting any Promise
+implementation (i.e. <code class="language-plaintext highlighter-rouge">PromiseLike</code>) or only native Promises. In the
+former case, you should use <code class="language-plaintext highlighter-rouge">isPromiseLike</code> and potentially convert the
+userland Promise instance to a native Promise via
+<code class="language-plaintext highlighter-rouge">Promise.resolve(promiseLike)</code>. In the latter case, you can replace
+<code class="language-plaintext highlighter-rouge">isPromise(p)</code> with <code class="language-plaintext highlighter-rouge">p instanceof Promise</code>.</p>
+
+<p><a name="0.1.1"></a></p>
+<h2 id="011-2018-02-23"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@0.1.0...@loopback/context@0.1.1">0.1.1</a> (2018-02-23)</h2>
+
+<h3 id="bug-fixes-23">Bug Fixes</h3>
+
+<ul>
+  <li><strong>context:</strong> fix optional param injection for methods (<a href="https://github.com/strongloop/loopback-next/commit/801a82d">801a82d</a>)</li>
+</ul>
+
+<p><a name="0.1.0"></a></p>
+<h1 id="010-2018-02-21"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@4.0.0-alpha.32...@loopback/context@0.1.0">0.1.0</a> (2018-02-21)</h1>
+
+<p><strong>Note:</strong> Version bump only for package @loopback/context</p>
+
+<p><a name="4.0.0-alpha.32"></a></p>
+<h1 id="400-alpha32-2018-02-15"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@4.0.0-alpha.31...@loopback/context@4.0.0-alpha.32">4.0.0-alpha.32</a> (2018-02-15)</h1>
+
+<h3 id="features-50">Features</h3>
+
+<ul>
+  <li><strong>context:</strong> formalize injection metadata as an interface (<a href="https://github.com/strongloop/loopback-next/commit/7ffc1e5">7ffc1e5</a>)</li>
+</ul>
+
+<p><a name="4.0.0-alpha.31"></a></p>
+<h1 id="400-alpha31-2018-02-07"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@4.0.0-alpha.30...@loopback/context@4.0.0-alpha.31">4.0.0-alpha.31</a> (2018-02-07)</h1>
+
+<h3 id="bug-fixes-24">Bug Fixes</h3>
+
+<ul>
+  <li><strong>build:</strong> fix tslint config and slipped violations (<a href="https://github.com/strongloop/loopback-next/commit/22f8e05">22f8e05</a>)</li>
+  <li><strong>context:</strong> address review comments (<a href="https://github.com/strongloop/loopback-next/commit/3925296">3925296</a>)</li>
+  <li><strong>context:</strong> pass metadata to <code class="language-plaintext highlighter-rouge">[@inject](https://github.com/inject).tag</code> (<a href="https://github.com/strongloop/loopback-next/commit/27e26e9">27e26e9</a>)</li>
+</ul>
+
+<h3 id="build">build</h3>
+
+<ul>
+  <li>drop dist6 related targets (<a href="https://github.com/strongloop/loopback-next/issues/945">#945</a>) (<a href="https://github.com/strongloop/loopback-next/commit/a2368ce">a2368ce</a>)</li>
+</ul>
+
+<h3 id="features-51">Features</h3>
+
+<ul>
+  <li><strong>context:</strong> add <a href="https://github.com/inject">@inject</a>.context for context injection (<a href="https://github.com/strongloop/loopback-next/commit/6e0deaf">6e0deaf</a>)</li>
+  <li><strong>context:</strong> add decorator &amp; optional attrs to injection metadata (<a href="https://github.com/strongloop/loopback-next/commit/3a1c7de">3a1c7de</a>)</li>
+  <li><strong>context:</strong> add name to context (<a href="https://github.com/strongloop/loopback-next/commit/21e1daf">21e1daf</a>)</li>
+  <li><strong>context:</strong> add unbind() to allow remove bindings by key (<a href="https://github.com/strongloop/loopback-next/commit/b9c3893">b9c3893</a>)</li>
+  <li><strong>context:</strong> enhance binding caching to be context aware (<a href="https://github.com/strongloop/loopback-next/commit/7b7eb30">7b7eb30</a>)</li>
+  <li><strong>context:</strong> reports the resolution path for circular deps (<a href="https://github.com/strongloop/loopback-next/commit/bc4ce20">bc4ce20</a>)</li>
+</ul>
+
+<h3 id="breaking-changes-4">BREAKING CHANGES</h3>
+
+<ul>
+  <li>Support for Node.js version lower than 8.0 has been dropped.
+Please upgrade to the latest Node.js 8.x LTS version.</li>
+</ul>
+
+<p>Co-Authored-by: Taranveer Virk <a href="mailto:taranveer@virk.cc">taranveer@virk.cc</a></p>
+
+<p><a name="4.0.0-alpha.30"></a></p>
+<h1 id="400-alpha30-2018-02-04"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@4.0.0-alpha.29...@loopback/context@4.0.0-alpha.30">4.0.0-alpha.30</a> (2018-02-04)</h1>
+
+<h3 id="bug-fixes-25">Bug Fixes</h3>
+
+<ul>
+  <li>remove console output from tests (<a href="https://github.com/strongloop/loopback-next/commit/ff4a320">ff4a320</a>)</li>
+</ul>
+
+<p><a name="4.0.0-alpha.29"></a></p>
+<h1 id="400-alpha29-2018-01-30"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@4.0.0-alpha.28...@loopback/context@4.0.0-alpha.29">4.0.0-alpha.29</a> (2018-01-30)</h1>
+
+<p><strong>Note:</strong> Version bump only for package @loopback/context</p>
+
+<p><a name="4.0.0-alpha.28"></a></p>
+<h1 id="400-alpha28-2018-01-29"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@4.0.0-alpha.27...@loopback/context@4.0.0-alpha.28">4.0.0-alpha.28</a> (2018-01-29)</h1>
+
+<p><strong>Note:</strong> Version bump only for package @loopback/context</p>
+
+<p><a name="4.0.0-alpha.27"></a></p>
+<h1 id="400-alpha27-2018-01-26"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@4.0.0-alpha.26...@loopback/context@4.0.0-alpha.27">4.0.0-alpha.27</a> (2018-01-26)</h1>
+
+<h3 id="bug-fixes-26">Bug Fixes</h3>
+
+<ul>
+  <li>apply source-maps to test errors (<a href="https://github.com/strongloop/loopback-next/commit/76a7f56">76a7f56</a>), closes <a href="https://github.com/strongloop/loopback-next/issues/602">#602</a></li>
+  <li>make mocha self-contained with the source map support (<a href="https://github.com/strongloop/loopback-next/commit/7c6d869">7c6d869</a>)</li>
+</ul>
+
+<p><a name="4.0.0-alpha.26"></a></p>
+<h1 id="400-alpha26-2018-01-19"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@4.0.0-alpha.25...@loopback/context@4.0.0-alpha.26">4.0.0-alpha.26</a> (2018-01-19)</h1>
+
+<h3 id="bug-fixes-27">Bug Fixes</h3>
+
+<ul>
+  <li>address review comments (<a href="https://github.com/strongloop/loopback-next/commit/76d3ec3">76d3ec3</a>)</li>
+  <li><strong>context:</strong> add resolution-session.ts for api docs (<a href="https://github.com/strongloop/loopback-next/commit/25a9e91">25a9e91</a>)</li>
+  <li><strong>context:</strong> allow session to be passed into <a href="https://github.com/inject">@inject</a>.getter (<a href="https://github.com/strongloop/loopback-next/commit/0517ea1">0517ea1</a>)</li>
+  <li><strong>context:</strong> clean up the circular dependency tests (<a href="https://github.com/strongloop/loopback-next/commit/5c35ccd">5c35ccd</a>)</li>
+  <li><strong>context:</strong> fix the test to avoid UnhandledPromiseRejectionWarning (<a href="https://github.com/strongloop/loopback-next/commit/6a82c4d">6a82c4d</a>)</li>
+  <li>make sure TS compiler infer undefined (<a href="https://github.com/strongloop/loopback-next/commit/4c48ece">4c48ece</a>)</li>
+  <li>propagate errors via promises (<a href="https://github.com/strongloop/loopback-next/commit/204c1b7">204c1b7</a>)</li>
+  <li>use version range for <a href="https://github.com/types">@types</a>/debug (<a href="https://github.com/strongloop/loopback-next/commit/3adbc0b">3adbc0b</a>)</li>
+</ul>
+
+<h3 id="features-52">Features</h3>
+
+<ul>
+  <li><strong>context:</strong> add <a href="https://github.com/inject">@inject</a>.tag to allow injection by a tag (<a href="https://github.com/strongloop/loopback-next/commit/fc8f260">fc8f260</a>)</li>
+  <li><strong>context:</strong> add more debug statements (<a href="https://github.com/strongloop/loopback-next/commit/38eab3e">38eab3e</a>)</li>
+  <li><strong>context:</strong> enable detection of circular dependencies (<a href="https://github.com/strongloop/loopback-next/commit/72b4190">72b4190</a>)</li>
+  <li><strong>context:</strong> forbid bind().to() a Promise instance (<a href="https://github.com/strongloop/loopback-next/issues/854">#854</a>) (<a href="https://github.com/strongloop/loopback-next/commit/85ffa8b">85ffa8b</a>)</li>
+  <li><strong>context:</strong> track injections with ResolutionSession (<a href="https://github.com/strongloop/loopback-next/commit/cd4848e">cd4848e</a>)</li>
+  <li><strong>context:</strong> use one stack to track bindings and injections (<a href="https://github.com/strongloop/loopback-next/commit/b2f7eda">b2f7eda</a>)</li>
+</ul>
+
+<h3 id="breaking-changes-5">BREAKING CHANGES</h3>
+
+<ul>
+  <li><strong>context:</strong> It is no longer possible to pass a promise instance
+to <code class="language-plaintext highlighter-rouge">.to()</code> method of a Binding. Use <code class="language-plaintext highlighter-rouge">.toDynamicValue()</code> instead.
+Consider deferring the async computation (that produced the promise
+instance you are binding) into the dynamic value getter function,
+i.e. start the async computation only from the getter function.</li>
+</ul>
+
+<p>An example diff showing how to upgrade your existing code:</p>
+
+<ul>
+  <li>ctx.bind(‘bar’).to(Promise.resolve(‘BAR’));</li>
+  <li>ctx.bind(‘bar’).toDynamicValue(() =&gt; Promise.resolve(‘BAR’));</li>
+</ul>
+
+<p><a name="4.0.0-alpha.25"></a></p>
+<h1 id="400-alpha25-2018-01-11"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@4.0.0-alpha.24...@loopback/context@4.0.0-alpha.25">4.0.0-alpha.25</a> (2018-01-11)</h1>
+
+<h3 id="bug-fixes-28">Bug Fixes</h3>
+
+<ul>
+  <li>resolve injected arguments (<a href="https://github.com/strongloop/loopback-next/issues/821">#821</a>) (<a href="https://github.com/strongloop/loopback-next/commit/ca9e4dd">ca9e4dd</a>)</li>
+</ul>
+
+<h3 id="features-53">Features</h3>
+
+<ul>
+  <li><strong>context:</strong> export function to build binding key with path (<a href="https://github.com/strongloop/loopback-next/commit/fd804a5">fd804a5</a>)</li>
+</ul>
+
+<h3 id="reverts">Reverts</h3>
+
+<ul>
+  <li>revert error message (<a href="https://github.com/strongloop/loopback-next/issues/823">#823</a>) (<a href="https://github.com/strongloop/loopback-next/commit/f83c502">f83c502</a>)</li>
+</ul>
+
+<p><a name="4.0.0-alpha.24"></a></p>
+<h1 id="400-alpha24-2017-12-21"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@4.0.0-alpha.23...@loopback/context@4.0.0-alpha.24">4.0.0-alpha.24</a> (2017-12-21)</h1>
+
+<p><strong>Note:</strong> Version bump only for package @loopback/context</p>
+
+<p><a name="4.0.0-alpha.23"></a></p>
+<h1 id="400-alpha23-2017-12-15"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@4.0.0-alpha.22...@loopback/context@4.0.0-alpha.23">4.0.0-alpha.23</a> (2017-12-15)</h1>
+
+<h3 id="bug-fixes-29">Bug Fixes</h3>
+
+<ul>
+  <li>Improve test coverage for metadata inspector (<a href="https://github.com/strongloop/loopback-next/commit/3b4b552">3b4b552</a>)</li>
+</ul>
+
+<h3 id="features-54">Features</h3>
+
+<ul>
+  <li><strong>context:</strong> Add decorator factories (<a href="https://github.com/strongloop/loopback-next/commit/f517570">f517570</a>)</li>
+  <li>Add metadata inspector (<a href="https://github.com/strongloop/loopback-next/commit/c683019">c683019</a>)</li>
+  <li>Use decorator factories (<a href="https://github.com/strongloop/loopback-next/commit/88ebd21">88ebd21</a>)</li>
+</ul>
+
+<p><a name="4.0.0-alpha.22"></a></p>
+<h1 id="400-alpha22-2017-12-11"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@4.0.0-alpha.21...@loopback/context@4.0.0-alpha.22">4.0.0-alpha.22</a> (2017-12-11)</h1>
+
+<h3 id="bug-fixes-30">Bug Fixes</h3>
+
+<ul>
+  <li>Fix node module names in source code headers (<a href="https://github.com/strongloop/loopback-next/commit/0316f28">0316f28</a>)</li>
+</ul>
+
+<p><a name="4.0.0-alpha.21"></a></p>
+<h1 id="400-alpha21-2017-11-29"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@4.0.0-alpha.20...@loopback/context@4.0.0-alpha.21">4.0.0-alpha.21</a> (2017-11-29)</h1>
+
+<h3 id="features-55">Features</h3>
+
+<ul>
+  <li><strong>context:</strong> Allow patterns to be RegExp (<a href="https://github.com/strongloop/loopback-next/commit/991cf38">991cf38</a>)</li>
+</ul>
+
+<p><a name="4.0.0-alpha.20"></a></p>
+<h1 id="400-alpha20-2017-11-14"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@4.0.0-alpha.19...@loopback/context@4.0.0-alpha.20">4.0.0-alpha.20</a> (2017-11-14)</h1>
+
+<h3 id="features-56">Features</h3>
+
+<ul>
+  <li><strong>context:</strong> Add support for method dependency injection (<a href="https://github.com/strongloop/loopback-next/commit/df1c879">df1c879</a>)</li>
+</ul>
+
+<p><a name="4.0.0-alpha.19"></a></p>
+<h1 id="400-alpha19-2017-11-09"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@4.0.0-alpha.18...@loopback/context@4.0.0-alpha.19">4.0.0-alpha.19</a> (2017-11-09)</h1>
+
+<p><strong>Note:</strong> Version bump only for package @loopback/context</p>
+
+<p><a name="4.0.0-alpha.18"></a></p>
+<h1 id="400-alpha18-2017-11-06"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@4.0.0-alpha.17...@loopback/context@4.0.0-alpha.18">4.0.0-alpha.18</a> (2017-11-06)</h1>
+
+<p><strong>Note:</strong> Version bump only for package @loopback/context</p>
+
+<p><a name="4.0.0-alpha.17"></a></p>
+<h1 id="400-alpha17-2017-10-31"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@4.0.0-alpha.16...@loopback/context@4.0.0-alpha.17">4.0.0-alpha.17</a> (2017-10-31)</h1>
+
+<p><strong>Note:</strong> Version bump only for package @loopback/context</p>
+
+<p><a name="4.0.0-alpha.16"></a></p>
+<h1 id="400-alpha16-2017-10-31"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@4.0.0-alpha.15...@loopback/context@4.0.0-alpha.16">4.0.0-alpha.16</a> (2017-10-31)</h1>
+
+<p><strong>Note:</strong> Version bump only for package @loopback/context</p>
+
+<p><a name="4.0.0-alpha.15"></a></p>
+<h1 id="400-alpha15-2017-10-25"><a href="https://github.com/strongloop/loopback-next/compare/@loopback/context@4.0.0-alpha.12...@loopback/context@4.0.0-alpha.15">4.0.0-alpha.15</a> (2017-10-25)</h1>
+
+<h3 id="bug-fixes-31">Bug Fixes</h3>
+
+<ul>
+  <li><strong>context:</strong> inject nested properties (<a href="https://github.com/strongloop/loopback-next/issues/587">#587</a>) (<a href="https://github.com/strongloop/loopback-next/commit/d53fc57">d53fc57</a>)</li>
+</ul>
+
+<h3 id="features-57">Features</h3>
+
+<ul>
+  <li><strong>context:</strong> Add isBound() and more apidocs to Context (<a href="https://github.com/strongloop/loopback-next/commit/39932be">39932be</a>)</li>
+  <li><strong>context:</strong> Add toJSON() for Context &amp; Binding (<a href="https://github.com/strongloop/loopback-next/commit/b6ce426">b6ce426</a>)</li>
+</ul>
+
+
+
+    <div class="tags">
+      
+    </div>
+</div>
+
+<hr class="shaded"/>
+
+<footer id="container">
+            <div class="row">
+                <div class="col-md-6 footer-left">
+               &copy;2021 IBM / StrongLoop. All rights reserved. <br />
+ Site last generated: Mar 22, 2021
+              </div>
+              <div class="col-md-6 footer-right">
+                <p><img src="https://loopback.io/images/company_logo.png" alt="Company logo"/></p>
+              </div>
+            </div>
+</footer>
+
+
+        </div>
+        <!-- /.row -->
+</div>
+<!-- /.container -->
+    </div>
+</body>
+
+</html>

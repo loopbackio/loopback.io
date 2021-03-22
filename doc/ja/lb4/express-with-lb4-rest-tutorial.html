@@ -1,0 +1,1666 @@
+<!DOCTYPE html>
+<head>
+    
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A simple Express application with LoopBack 4 REST API">
+  <meta name="keywords" content=" LoopBack 4.0, LoopBack 4">
+  <title>Loopback REST APIでExpress Applicationを構築する | LoopBack Documentation</title>
+  <link rel="stylesheet" href="/css/syntax.css">
+
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/modern-business.css">
+    <link rel="stylesheet" href="/css/lavish-bootstrap.css">
+    <link rel="stylesheet" href="/css/customstyles.css">
+    <link rel="stylesheet" href="/css/theme-v4.css">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-150726441-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-150726441-2');
+</script>
+
+
+    <!-- github star button -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.3.0/anchor.min.js"></script>
+    <script src="/js/toc.js"></script>
+    <script src="/js/customscripts.js"></script>
+
+    <link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    
+
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-lg navbar-brand no_icon" href="/doc/index.html">
+              <img class="no_icon" style="width:147px;" src="/images/branding/logo/white/loopback.svg">&nbsp;<span class="projectTitle"></span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- entries without drop-downs appear here -->
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">API Docs<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        <!-- page.url is /doc/ja/lb4/express-with-lb4-rest-tutorial.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://loopback.io/doc/en/lb4/apidocs.index.html" target="_blank">LoopBack 4</a></li>
+                          
+                        
+                        <!-- page.url is /doc/ja/lb4/express-with-lb4-rest-tutorial.html .... folderitem.url is  -->
+                          
+                            <li><a href="http://apidocs.loopback.io" target="_blank">LoopBack 3.x</a></li>
+                          
+                        
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">View<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        <!-- page.url is /doc/ja/lb4/express-with-lb4-rest-tutorial.html .... folderitem.url is / -->
+                          
+                            <li><a href="/">LoopBack Overview</a></li>
+                          
+                        
+                        <!-- page.url is /doc/ja/lb4/express-with-lb4-rest-tutorial.html .... folderitem.url is /doc/en/lb4/ -->
+                          
+                            <li><a href="/doc/en/lb4/">LoopBack 4</a></li>
+                          
+                        
+                        <!-- page.url is /doc/ja/lb4/express-with-lb4-rest-tutorial.html .... folderitem.url is /doc/en/lb3/ -->
+                          
+                            <li><a href="/doc/en/lb3/">LoopBack 3.x</a></li>
+                          
+                        
+                        <!-- page.url is /doc/ja/lb4/express-with-lb4-rest-tutorial.html .... folderitem.url is /doc/en/lb2/ -->
+                          
+                            <li><a href="/doc/en/lb2/">LoopBack 2.x</a></li>
+                          
+                        
+                        <!-- page.url is /doc/ja/lb4/express-with-lb4-rest-tutorial.html .... folderitem.url is /doc/en/community/ -->
+                          
+                            <li><a href="/doc/en/community/">Community projects</a></li>
+                          
+                        
+                        <!-- page.url is /doc/ja/lb4/express-with-lb4-rest-tutorial.html .... folderitem.url is /doc/en/contrib/ -->
+                          
+                            <li><a href="/doc/en/contrib/">Contributing to LoopBack</a></li>
+                          
+                        
+                        <!-- page.url is /doc/ja/lb4/express-with-lb4-rest-tutorial.html .... folderitem.url is /doc/en/sec/ -->
+                          
+                            <li><a href="/doc/en/sec/">Security advisories</a></li>
+                          
+                        
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Resources<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        <!-- page.url is /doc/ja/lb4/express-with-lb4-rest-tutorial.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://github.com/strongloop/loopback.io" target="_blank">Docs Github Repo</a></li>
+                          
+                        
+                        <!-- page.url is /doc/ja/lb4/express-with-lb4-rest-tutorial.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://groups.google.com/forum/#!forum/loopbackjs-announcements" target="_blank">Announcements Mailing List</a></li>
+                          
+                        
+                        <!-- page.url is /doc/ja/lb4/express-with-lb4-rest-tutorial.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://groups.google.com/forum/#!forum/loopbackjs" target="_blank">Developer Forum</a></li>
+                          
+                        
+                        <!-- page.url is /doc/ja/lb4/express-with-lb4-rest-tutorial.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://join.slack.com/t/loopbackio/shared_invite/zt-8lbow73r-SKAKz61Vdao~_rGf91pcsw" target="_blank">LoopBack on Slack</a></li>
+                          
+                        
+                        <!-- page.url is /doc/ja/lb4/express-with-lb4-rest-tutorial.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://stackoverflow.com/questions/tagged/strongloop+or+loopback4+or+loopbackjs" target="_blank">LoopBack on Stack Overflow</a></li>
+                          
+                        
+                        <!-- page.url is /doc/ja/lb4/express-with-lb4-rest-tutorial.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://strongloop.com/strongblog/tag_LoopBack.html" target="_blank">StrongLoop Blog - LoopBack</a></li>
+                          
+                        
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Translations<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        <!-- page.url is /doc/ja/lb4/express-with-lb4-rest-tutorial.html .... folderitem.url is /doc/es/lb2/ -->
+                          
+                            <li><a href="/doc/es/lb2/">Español (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/ja/lb4/express-with-lb4-rest-tutorial.html .... folderitem.url is /doc/es/lb4/ -->
+                          
+                            <li><a href="/doc/es/lb4/">Español (v4)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/ja/lb4/express-with-lb4-rest-tutorial.html .... folderitem.url is /doc/fr/lb2/ -->
+                          
+                            <li><a href="/doc/fr/lb2/">Français (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/ja/lb4/express-with-lb4-rest-tutorial.html .... folderitem.url is /doc/fr/lb4/ -->
+                          
+                            <li><a href="/doc/fr/lb4/">Français (v4)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/ja/lb4/express-with-lb4-rest-tutorial.html .... folderitem.url is /doc/ko/lb2/ -->
+                          
+                            <li><a href="/doc/ko/lb2/">한국어 (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/ja/lb4/express-with-lb4-rest-tutorial.html .... folderitem.url is /doc/ko/lb3/ -->
+                          
+                            <li><a href="/doc/ko/lb3/">한국어 (v3)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/ja/lb4/express-with-lb4-rest-tutorial.html .... folderitem.url is /doc/pt-br/lb2/ -->
+                          
+                            <li><a href="/doc/pt-br/lb2/">Português (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/ja/lb4/express-with-lb4-rest-tutorial.html .... folderitem.url is /doc/pt-br/lb4/ -->
+                          
+                            <li><a href="/doc/pt-br/lb4/">Português (v4)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/ja/lb4/express-with-lb4-rest-tutorial.html .... folderitem.url is /doc/ja/lb2/ -->
+                          
+                            <li><a href="/doc/ja/lb2/">日本語 (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/ja/lb4/express-with-lb4-rest-tutorial.html .... folderitem.url is /doc/ja/lb3/ -->
+                          
+                            <li><a href="/doc/ja/lb3/">日本語 (v3)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/ja/lb4/express-with-lb4-rest-tutorial.html .... folderitem.url is /doc/ja/lb4/ -->
+                          
+                            <li class="dropdownActive"><a href="/doc/ja/lb4/">日本語 (v4)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/ja/lb4/express-with-lb4-rest-tutorial.html .... folderitem.url is /doc/ru/lb2/ -->
+                          
+                            <li><a href="/doc/ru/lb2/">Pусский (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/ja/lb4/express-with-lb4-rest-tutorial.html .... folderitem.url is /doc/zh/lb2/ -->
+                          
+                            <li><a href="/doc/zh/lb2/">中文 (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/ja/lb4/express-with-lb4-rest-tutorial.html .... folderitem.url is /doc/zh/lb4/ -->
+                          
+                            <li><a href="/doc/zh/lb4/">中文 (v4)</a></li>
+                          
+                        
+                    </ul>
+                </li>
+                
+                
+                
+                <li>
+                    <form id="search" name="search" class="input-group lb-search" action="/search" method="GET">
+                        <input type="text" class="form-control search-bar" placeholder="Search (powered by Watson)" name="q">
+                        
+                          <input type="hidden" name="sidebar" value="ja_lb4_sidebar">
+                        
+                        <div class="input-group-btn">
+                            <button type="submit" class="btn btn-default" aria-label="search">
+                              <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                            </button>
+                        </div>
+                      </form>
+                </li>
+            </ul>
+        </div>
+      </div>
+</nav>
+
+<!-- Page Content -->
+<div class="container">
+    <!-- Content Row -->
+    <div class="row">
+        <!-- Sidebar Column -->
+        <nav class="col-md-3 sidebar-col">
+          
+
+
+
+
+
+
+
+
+
+
+
+<!-- NOTE: sidebar = site.data.sidebars.mydoc_sidebar.entries -->
+<div class="sidebarTitle"><a href="/doc/ja/lb4/index.html">LoopBack 4</a></div>
+<ul id="mysidebar" class="nav-list">
+  
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="/doc/ja/lb4/Getting-started.html">はじめに</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="/doc/ja/lb4/Tutorials.html">チュートリアル</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="/doc/ja/lb4/todo-tutorial.html">Todoチュートリアル</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="/doc/ja/lb4/todo-tutorial-scaffolding.html">Create your app scaffolding</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="/doc/ja/lb4/todo-tutorial-model.html">Add the Todo model</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="/doc/ja/lb4/todo-tutorial-datasource.html">Add a Datasource</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="/doc/ja/lb4/todo-tutorial-repository.html">Add a Repository</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="/doc/ja/lb4/todo-tutorial-controller.html">Add a Controller</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="/doc/ja/lb4/todo-tutorial-putting-it-together.html">Putting it all together</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="/doc/ja/lb4/todo-tutorial-geocoding-service.html">Bonus: Integrate with a geo-coding service</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/ja/lb4/todo-list-tutorial.html&title=TodoList Tutorial">TodoList Tutorial</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/ja/lb4/todo-list-tutorial-model.html&title=Add TodoList Model">Add TodoList Model</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/ja/lb4/todo-list-tutorial-repository.html&title=Add TodoList Repository">Add TodoList Repository</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/ja/lb4/todo-list-tutorial-controller.html&title=Add TodoList Controller">Add TodoList Controller</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/ja/lb4/todo-list-tutorial-sqldb.html&title=Running on relational databases">Running on relational databases</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/ja/lb4/soap-calculator-tutorial.html&title=SOAP Web Service Tutorial">SOAP Web Service Tutorial</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/ja/lb4/soap-calculator-tutorial-web-service-overview.html&title=SOAP Web Service Overview">SOAP Web Service Overview</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/ja/lb4/soap-calculator-tutorial-scaffolding.html&title=App scaffolding">App scaffolding</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/ja/lb4/soap-calculator-tutorial-add-datasource.html&title=Add a Datasource">Add a Datasource</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/ja/lb4/soap-calculator-tutorial-add-service.html&title=Add a Service">Add a Service</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/ja/lb4/soap-calculator-tutorial-add-controller.html&title=Add a Controller">Add a Controller</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/ja/lb4/soap-calculator-tutorial-run-and-test.html&title=Run and Test it">Run and Test it</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  active">
+    
+    <a class="page-link" rel="nofollow" href="/doc/ja/lb4/express-with-lb4-rest-tutorial.html">Creating an Express Application with LoopBack REST API</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="/doc/ja/lb4/Examples.html">プロジェクトサンプル</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="/doc/ja/lb4/Concepts.html">キーコンセプト</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/ja/lb4/Application.html&title=Application">Application</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/ja/lb4/Server.html&title=Server">Server</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/ja/lb4/Context.html&title=Context">Context</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/ja/lb4/Binding.html&title=Binding">Binding</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/ja/lb4/Dependency-injection.html&title=Dependency injection">Dependency injection</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/ja/lb4/Reserved-binding-keys.html&title=Reserved binding keys">Reserved binding keys</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/ja/lb4/Controllers.html&title=Controllers">Controllers</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/ja/lb4/Components.html&title=Components">Components</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/ja/lb4/Interceptors.html&title=Interceptors">Interceptors</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/ja/lb4/DataSources.html&title=DataSources">DataSources</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/ja/lb4/Life-cycle.html&title=Life cycle events and observers">Life cycle events and observers</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/ja/lb4/Routes.html&title=Routes">Routes</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/ja/lb4/Sequence.html&title=Sequence">Sequence</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/ja/lb4/Routing-requests.html&title=Routing requests">Routing requests</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/ja/lb4/Parsing-requests.html&title=Parsing requests">Parsing requests</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/ja/lb4/Model.html&title=Model">Model</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/ja/lb4/Repositories.html&title=Repositories">Repositories</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/ja/lb4/Relations.html&title=Relations">Relations</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/ja/lb4/HasMany-relation.html&title=HasMany Relation">HasMany Relation</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/ja/lb4/BelongsTo-relation.html&title=BelongsTo Relation">BelongsTo Relation</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/ja/lb4/hasOne-relation.html&title=HasOne Relation">HasOne Relation</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/ja/lb4/Decorators.html&title=Decorators">Decorators</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/ja/lb4/Decorators_openapi.html&title=OpenAPI Decorators">OpenAPI Decorators</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/ja/lb4/Decorators_inject.html&title=Dependency Injection Decorator">Dependency Injection Decorator</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/ja/lb4/Decorators_authenticate.html&title=Authentication Decorator">Authentication Decorator</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/ja/lb4/Decorators_repository.html&title=Repository Decorators">Repository Decorators</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/ja/lb4/Error-handling.html&title=Error handling">Error handling</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="/doc/ja/lb4/How-tos.html">ハウツー</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="/doc/ja/lb4/exposing-graphql-apis.html">Exposing GraphQL APIs</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/ja/lb4/Deploying-to-IBM-Cloud.html&title=Deploying to IBM Cloud">Deploying to IBM Cloud</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/ja/lb4/deploying_to_ibm_cloud_kubernetes.html&title=Deploying to Kubernetes on IBM Cloud">Deploying to Kubernetes on IBM Cloud</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/ja/lb4/deploying-with-pm2-and-nginx.html&title=Deploying with pm2 and nginx">Deploying with pm2 and nginx</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/ja/lb4/Serving-static-files.html&title=Serving static files">Serving static files</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/ja/lb4/Database-migrations.html&title=Database Migrations">Database Migrations</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/ja/lb4/Booting-an-Application.html&title=Booting an Application">Booting an Application</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="/doc/ja/lb4/Using-components.html">コンポーネントの使用方法</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/ja/lb4/Self-hosted-rest-api-explorer.html&title=Self-hosted REST API Explorer">Self-hosted REST API Explorer</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/ja/lb4/Loopback-component-authorization.html&title=Authorization">Authorization</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/ja/lb4/Boot-and-Mount-a-LoopBack-3-application.html&title=Boot and Mount a LoopBack 3 Application">Boot and Mount a LoopBack 3 Application</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/ja/lb4/Calling-other-APIs-and-web-services.html&title=Calling other APIs">Calling other APIs</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/ja/lb4/LoopBack-3.x.html&title=For LoopBack 3.x users">For LoopBack 3.x users</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="/doc/ja/lb4/Command-line-interface.html">コマンドラインインターフェース</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/ja/lb4/Application-generator.html&title=Application generator">Application generator</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/ja/lb4/Controller-generator.html&title=Controller generator">Controller generator</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/ja/lb4/DataSource-generator.html&title=DataSource generator">DataSource generator</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/ja/lb4/Model-generator.html&title=Model generator">Model generator</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/ja/lb4/Discovering-models.html&title=Model discovery">Model discovery</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/ja/lb4/Repository-generator.html&title=Repository generator">Repository generator</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/ja/lb4/Service-generator.html&title=Service generator">Service generator</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/ja/lb4/OpenAPI-generator.html&title=OpenAPI generator">OpenAPI generator</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/ja/lb4/Life-cycle-observer-generator.html&title=Life cycle observer generator">Life cycle observer generator</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/ja/lb4/Extension-generator.html&title=Extension generator">Extension generator</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/ja/lb4/Download-examples.html&title=Download examples">Download examples</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="/doc/ja/lb4/Best-practices.html">Loopback4のベストプラクティス</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/ja/lb4/Defining-the-API-using-code-first-approach.html&title=Defining the API using code-first approach">Defining the API using code-first approach</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/ja/lb4/Defining-your-testing-strategy.html&title=Defining your testing strategy">Defining your testing strategy</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/ja/lb4/Testing-your-application.html&title=Testing your application">Testing your application</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/ja/lb4/Extending-LoopBack-4.html&title=Extending LoopBack 4">Extending LoopBack 4</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/ja/lb4/Creating-components.html&title=Creating components">Creating components</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/ja/lb4/Creating-decorators.html&title=Creating decorators">Creating decorators</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/ja/lb4/Creating-servers.html&title=Creating servers">Creating servers</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/ja/lb4/Extension-point-and-extensions.html&title=Extension point and extensions">Extension point and extensions</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/ja/lb4/Extending-request-body-parsing.html&title=Extending request body parsing">Extending request body parsing</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/ja/lb4/Extension-life-cycle.html&title=Extension life cycle">Extension life cycle</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/ja/lb4/Testing-your-extension.html&title=Testing your extension">Testing your extension</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="/doc/ja/lb4/Crafting-LoopBack-4.html">Crafting LoopBack 4</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="/doc/ja/lb4/FAQ.html">FAQ</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/ja/lb4/Reference.html&title=Reference">Reference</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/ja/lb4/Glossary.html&title=Glossary">Glossary</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/ja/lb4/Deploy-for-GDPR-readiness.html&title=Considerations for GDPR readiness">Considerations for GDPR readiness</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+
+</ul>
+
+        </nav>
+        <!-- Content Column -->
+        <div class="col-md-9">
+            
+<div class="post-header">
+   <h1 class="post-title-main">Loopback REST APIでExpress Applicationを構築する</h1>
+   
+     
+       <a target="_blank" href="https://github.com/strongloop/loopback.io/blob/gh-pages/pages/ja/lb4/express-with-lb4-rest-tutorial.md" class="githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit this page</a>
+   
+</div>
+
+<div class="post-content">
+
+
+  
+   <div class="summary">
+     A simple Express application with LoopBack 4 REST API
+   </div>
+  
+
+
+
+
+ 
+   
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+;$(function() {
+  var level = parseInt(3, 10);
+  if (level === 1) {level = 'h2'}
+  if (level === 2) {level = 'h2,h3'}
+  if (level === 3) {level = 'h2,h3,h4'}
+  if (level === 4) {level = 'h2,h3,h4,h5'}
+
+  // Add a new level for changelog files which use h1,h2,h3
+  if (level === 0) {level = 'h1,h2,h3,h4,h5'}
+
+  var toc = $('#toc')
+
+  toc.toc({minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: level})
+
+  /* this offset helps with the space taken up by the floating toolbar */
+  toc.on('click', 'a', function() {
+    var target = $(this.getAttribute('href')),
+      scroll_target = target.offset().top
+
+    $(window).scrollTop(scroll_target - 10)
+    return false
+  })
+  .on('click', '.toc-expand-button', function() {
+    toc.find('> ul').slideToggle('fast');
+  })
+})
+</script>
+
+<div id="toc">
+  <span class="toc-title">Page Contents</span>
+  <button type="button" class="btn btn-link toc-expand-button">
+    <i class="fa fa-bars"></i>
+  </button>
+</div>
+
+ 
+
+    
+
+
+
+
+  <div markdown="span" class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i> <b>This is a community translation into Japanese</b>. For the latest information, see the <a href="/doc/en/lb4/express-with-lb4-rest-tutorial.html">English version</a>.
+  </div>
+
+
+<h2 id="overview">Overview</h2>
+
+<p><a href="https://expressjs.com">Express</a> は、特定の形式に固執しないNode.jsのフレームワークです。 LoopBack REST APIは、Expressアプリケーションにマウントして、ミドルウェアとして使用できます。こうして、ユーザーはニーズに合わせて両方のフレームワークの機能を組み合わせることが可能です。</p>
+
+<div class="alert alert-info" role="alert">
+  <p><i class="fa fa-info-circle"></i>
+<b>Note:</b></p>
+
+  <p>ホストとしてLoopBackを使用し、LoopBack4アプリケーションにExpressアプリケーションをマウントする場合は、<a href="Routes.md#mounting-an-express-router">Express Routerのマウント</a>を参照してください 。</p>
+
+</div>
+
+<p>このチュートリアルでは、LoopBack 4アプリケーションの土台・<a href="Model.md">‘モデル’</a>・<a href="DataSources.md">‘データソース’</a>・<a href="Repositories.md">‘レポジトリ’</a>・<a href="Controllers.md">‘コントローラー’</a>の背景知識があることを前提としています。各機能のアプリ内での働きについては、<a href="/doc/ja/lb4/todo-tutorial.html"><code class="language-plaintext highlighter-rouge">Todo</code> チュートリアル</a>をご参照ください.</p>
+
+<h2 id="try-it-out">Try it out</h2>
+
+<p>先に、このチュートリアルの最終結果である、アプリケーション例を見たい場合は、次の手順に従ってください。</p>
+
+<ol>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">lb4 example</code> コマンドを実行、エクスプレス構成リポジトリを選択してクローンを作成します。</p>
+
+    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>lb4 example express-composition
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>ディレクトリを切り替えます。</p>
+
+    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd </span>loopback4-example-express-composition
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>アプリケーションを起動します</p>
+
+    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>npm start
+
+Server is running at http://127.0.0.1:3000
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<h2 id="loopbackアプリケーションを作成する">LoopBackアプリケーションを作成する</h2>
+
+<h3 id="土台の構築">土台の構築</h3>
+
+<p><code class="language-plaintext highlighter-rouge">lb4 app note</code> を実行し、下記のプロンプトを入力してアプリケーションの土台を作成します。</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>lb4 app note
+? Project description: An application <span class="k">for </span>recording notes.
+? Project root directory: <span class="o">(</span>note<span class="o">)</span>
+? Application class name: <span class="o">(</span>NoteApplication<span class="o">)</span>
+ ◉ Enable eslint: add a linter with pre-configured lint rules
+ ◉ Enable prettier: <span class="nb">install </span>prettier to format code conforming to rules
+ ◉ Enable mocha: <span class="nb">install </span>mocha to run tests
+ ◉ Enable loopbackBuild: use @loopback/build helpers <span class="o">(</span>e.g. lb-eslint<span class="o">)</span>
+ ◉ Enable vscode: add VSCode config files
+❯◯ Enable docker: include Dockerfile and .dockerignore
+ ◉ Enable repositories: include repository imports and RepositoryMixin
+ ◉ Enable services: include service-proxy imports and ServiceMixin
+ <span class="c"># npm will install dependencies now</span>
+ Application note was created <span class="k">in </span>note.
+</code></pre></div></div>
+
+<h3 id="note-モデルを追加する">Note モデルを追加する</h3>
+
+<p>プロジェクトフォルダー内で、<code class="language-plaintext highlighter-rouge">lb4 model</code>を実行し、<code class="language-plaintext highlighter-rouge">Note</code>モデルを構築します。<code class="language-plaintext highlighter-rouge">id</code>プロパティのデータ型は<code class="language-plaintext highlighter-rouge">number</code>、<code class="language-plaintext highlighter-rouge">title</code>プロパティは<code class="language-plaintext highlighter-rouge">string</code>、<code class="language-plaintext highlighter-rouge">content</code>プロパティは<code class="language-plaintext highlighter-rouge">string</code>で<code class="language-plaintext highlighter-rouge">Entity</code>を作成します。</p>
+
+<h3 id="データソースを追加する">データソースを追加する</h3>
+
+<p><code class="language-plaintext highlighter-rouge">lb4 datasource ds</code>コマンドと<code class="language-plaintext highlighter-rouge">./data/ds.json</code>ファイルパスを実行して、メモリ内データソースを作成します。</p>
+
+<p><code class="language-plaintext highlighter-rouge">Todo</code> チュートリアルの例と同様、アプリケーションのルート内にデータフォルダを作成し、<code class="language-plaintext highlighter-rouge">ds.json</code>を作成します。　</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">mkdir </span>data
+<span class="nv">$ </span><span class="nb">touch </span>data/ds.json
+</code></pre></div></div>
+
+<p>次に、以下をコピーして<code class="language-plaintext highlighter-rouge">ds.json</code>ファイルに貼り付けます。</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"ids"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"Note"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"models"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"Note"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"1"</span><span class="p">:</span><span class="w"> </span><span class="s2">"{</span><span class="se">\"</span><span class="s2">title</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">Things I need to buy</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">content</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">milk, cereal, and waffles</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">id</span><span class="se">\"</span><span class="s2">:1}"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"2"</span><span class="p">:</span><span class="w"> </span><span class="s2">"{</span><span class="se">\"</span><span class="s2">title</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">Great frameworks</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">content</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">LoopBack is a great framework</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">id</span><span class="se">\"</span><span class="s2">:2}"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<h3 id="note-レポジトリを追加する">Note レポジトリを追加する</h3>
+
+<p><code class="language-plaintext highlighter-rouge">lb4 repository</code>コマンドを実行して、リポジトリを作成します。
+データソースは <code class="language-plaintext highlighter-rouge">DsDataSource</code>、モデルは<code class="language-plaintext highlighter-rouge"> Note</code>モデル、
+リポジトリのベースクラスは<code class="language-plaintext highlighter-rouge">DefaultCrudRepository</code> を選択します。</p>
+
+<h3 id="note-コントローラーを追加する">Note コントローラーを追加する</h3>
+
+<p><code class="language-plaintext highlighter-rouge">lb4 controller note</code>コマンドを実行して、Noteアプリケーションを完了させます。各項目で、<code class="language-plaintext highlighter-rouge">REST Controller with CRUD functions</code> タイプ、<code class="language-plaintext highlighter-rouge">Note</code>モデル、および<code class="language-plaintext highlighter-rouge">NoteRepository</code>リポジトリを選択します。<code class="language-plaintext highlighter-rouge">id</code>タイプのデータ型は<code class="language-plaintext highlighter-rouge">number</code>、ベースHTTPパス名は、デフォルトの<code class="language-plaintext highlighter-rouge">/notes</code>を選択します。</p>
+
+<h2 id="facade-express-アプリケーションを作成する">Facade Express アプリケーションを作成する</h2>
+
+<p>まず、<code class="language-plaintext highlighter-rouge">express</code>モジュールの依存関係をインストールします。</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm <span class="nb">install</span> <span class="nt">--save</span> express
+npm <span class="nb">install</span> <span class="nt">--save-dev</span> @types/express
+</code></pre></div></div>
+
+<p>新しいクラス<strong>src/server.ts</strong>を作成して、Express classを作成します。</p>
+
+<div id="src/server.ts" class="code-caption">
+  <p>src/server.ts</p>
+</div>
+
+<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="nx">express</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">express</span><span class="dl">'</span><span class="p">;</span>
+
+<span class="k">export</span> <span class="kd">class</span> <span class="nx">ExpressServer</span> <span class="p">{</span>
+  <span class="kd">constructor</span><span class="p">()</span> <span class="p">{}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Expressアプリケーションインスタンスと、LoopBackアプリケーションインスタンスの2つのプロパティを作成します。</p>
+
+<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="p">{</span><span class="nx">NoteApplication</span><span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">./application</span><span class="dl">'</span><span class="p">;</span>
+<span class="k">import</span> <span class="p">{</span><span class="nx">ApplicationConfig</span><span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">@loopback/core</span><span class="dl">'</span><span class="p">;</span>
+<span class="k">import</span> <span class="nx">express</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">express</span><span class="dl">'</span><span class="p">;</span>
+
+<span class="k">export</span> <span class="kd">class</span> <span class="nx">ExpressServer</span> <span class="p">{</span>
+  <span class="k">private</span> <span class="nx">app</span><span class="p">:</span> <span class="nx">express</span><span class="p">.</span><span class="nx">Application</span><span class="p">;</span>
+  <span class="k">private</span> <span class="nx">lbApp</span><span class="p">:</span> <span class="nx">NoteApplication</span><span class="p">;</span>
+
+  <span class="kd">constructor</span><span class="p">(</span><span class="nx">options</span><span class="p">:</span> <span class="nx">ApplicationConfig</span> <span class="o">=</span> <span class="p">{})</span> <span class="p">{</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">app</span> <span class="o">=</span> <span class="nx">express</span><span class="p">();</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">lbApp</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">NoteApplication</span><span class="p">(</span><span class="nx">options</span><span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>次に、コンストラクター内でベースパスを追加し、Expressを介してフロントエンドアセットを公開します。</p>
+
+<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">this</span><span class="p">.</span><span class="nx">app</span><span class="p">.</span><span class="nx">use</span><span class="p">(</span><span class="dl">'</span><span class="s1">/api</span><span class="dl">'</span><span class="p">,</span> <span class="k">this</span><span class="p">.</span><span class="nx">lbApp</span><span class="p">.</span><span class="nx">requestHandler</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p><strong>public/index.html</strong> を修正して、base pathを更新します。</p>
+
+<div id="public/index.html" class="code-caption">
+  <p>public/index.html</p>
+</div>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;h3&gt;</span>OpenAPI spec: <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/api/openapi.json"</span><span class="nt">&gt;</span>/openapi.json<span class="nt">&lt;/a&gt;&lt;/h3&gt;</span>
+<span class="nt">&lt;h3&gt;</span>API Explorer: <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/api/explorer"</span><span class="nt">&gt;</span>/explorer<span class="nt">&lt;/a&gt;&lt;/h3&gt;</span>
+</code></pre></div></div>
+
+<p>カスタムExpressルートも、以下の通り追加します。</p>
+
+<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="p">{</span><span class="nx">Request</span><span class="p">,</span> <span class="nx">Response</span><span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">express</span><span class="dl">'</span><span class="p">;</span>
+<span class="k">import</span> <span class="nx">path</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">path</span><span class="dl">'</span><span class="p">;</span>
+
+<span class="k">export</span> <span class="kd">class</span> <span class="nx">ExpressServer</span> <span class="p">{</span>
+  <span class="k">private</span> <span class="nx">app</span><span class="p">:</span> <span class="nx">express</span><span class="p">.</span><span class="nx">Application</span><span class="p">;</span>
+  <span class="k">private</span> <span class="nx">lbApp</span><span class="p">:</span> <span class="nx">NoteApplication</span><span class="p">;</span>
+
+  <span class="kd">constructor</span><span class="p">(</span><span class="nx">options</span><span class="p">:</span> <span class="nx">ApplicationConfig</span> <span class="o">=</span> <span class="p">{})</span> <span class="p">{</span>
+    <span class="c1">// earlier code</span>
+
+    <span class="c1">// Custom Express routes</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">app</span><span class="p">.</span><span class="kd">get</span><span class="p">(</span><span class="dl">'</span><span class="s1">/</span><span class="dl">'</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">_req</span><span class="p">:</span> <span class="nx">Request</span><span class="p">,</span> <span class="nx">res</span><span class="p">:</span> <span class="nx">Response</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nx">res</span><span class="p">.</span><span class="nx">sendFile</span><span class="p">(</span><span class="nx">path</span><span class="p">.</span><span class="nx">resolve</span><span class="p">(</span><span class="dl">'</span><span class="s1">public/express.html</span><span class="dl">'</span><span class="p">));</span>
+    <span class="p">});</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">app</span><span class="p">.</span><span class="kd">get</span><span class="p">(</span><span class="dl">'</span><span class="s1">/hello</span><span class="dl">'</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">_req</span><span class="p">:</span> <span class="nx">Request</span><span class="p">,</span> <span class="nx">res</span><span class="p">:</span> <span class="nx">Response</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nx">res</span><span class="p">.</span><span class="nx">send</span><span class="p">(</span><span class="dl">'</span><span class="s1">Hello world!</span><span class="dl">'</span><span class="p">);</span>
+    <span class="p">});</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>また、<a href="https://github.com/strongloop/loopback-next/blob/master/examples/express-composition/public/express.html">public/express.html</a>
+ファイルをプロジェクトに追加します。</p>
+
+<p><a href="https://www.npmjs.com/package/p-event"><code class="language-plaintext highlighter-rouge">p-event</code></a> をインストールし、サーバーがListenしているか確認しましょう。</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm <span class="nb">install</span> <span class="nt">--save</span> p-event
+</code></pre></div></div>
+
+<p>最後に、 <code class="language-plaintext highlighter-rouge">Note</code> applicationとExpressアプリケーションを起動する機能を追加しましょう。</p>
+
+<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="nx">pEvent</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">p-event</span><span class="dl">'</span><span class="p">;</span>
+
+<span class="k">export</span> <span class="kd">class</span> <span class="nx">ExpressServer</span> <span class="p">{</span>
+  <span class="k">private</span> <span class="nx">app</span><span class="p">:</span> <span class="nx">express</span><span class="p">.</span><span class="nx">Application</span><span class="p">;</span>
+  <span class="k">private</span> <span class="nx">lbApp</span><span class="p">:</span> <span class="nx">NoteApplication</span><span class="p">;</span>
+
+  <span class="kd">constructor</span><span class="p">(</span><span class="nx">options</span><span class="p">:</span> <span class="nx">ApplicationConfig</span> <span class="o">=</span> <span class="p">{})</span> <span class="p">{</span>
+    <span class="c1">//...</span>
+  <span class="p">}</span>
+
+  <span class="k">async</span> <span class="nx">boot</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">await</span> <span class="k">this</span><span class="p">.</span><span class="nx">lbApp</span><span class="p">.</span><span class="nx">boot</span><span class="p">();</span>
+  <span class="p">}</span>
+
+  <span class="k">public</span> <span class="k">async</span> <span class="nx">start</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">await</span> <span class="k">this</span><span class="p">.</span><span class="nx">lbApp</span><span class="p">.</span><span class="nx">start</span><span class="p">();</span>
+    <span class="kd">const</span> <span class="nx">port</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">lbApp</span><span class="p">.</span><span class="nx">restServer</span><span class="p">.</span><span class="nx">config</span><span class="p">.</span><span class="nx">port</span> <span class="o">||</span> <span class="mi">3000</span><span class="p">;</span>
+    <span class="kd">const</span> <span class="nx">host</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">lbApp</span><span class="p">.</span><span class="nx">restServer</span><span class="p">.</span><span class="nx">config</span><span class="p">.</span><span class="nx">host</span> <span class="o">||</span> <span class="dl">'</span><span class="s1">127.0.0.1</span><span class="dl">'</span><span class="p">;</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">server</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">app</span><span class="p">.</span><span class="nx">listen</span><span class="p">(</span><span class="nx">port</span><span class="p">,</span> <span class="nx">host</span><span class="p">);</span>
+    <span class="k">await</span> <span class="nx">pEvent</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">server</span><span class="p">,</span> <span class="dl">'</span><span class="s1">listening</span><span class="dl">'</span><span class="p">);</span>
+  <span class="p">}</span>
+
+  <span class="c1">// For testing purposes</span>
+  <span class="k">public</span> <span class="k">async</span> <span class="nx">stop</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="k">this</span><span class="p">.</span><span class="nx">server</span><span class="p">)</span> <span class="k">return</span><span class="p">;</span>
+    <span class="k">await</span> <span class="k">this</span><span class="p">.</span><span class="nx">lbApp</span><span class="p">.</span><span class="nx">stop</span><span class="p">();</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">server</span><span class="p">.</span><span class="nx">close</span><span class="p">();</span>
+    <span class="k">await</span> <span class="nx">pEvent</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">server</span><span class="p">,</span> <span class="dl">'</span><span class="s1">close</span><span class="dl">'</span><span class="p">);</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">server</span> <span class="o">=</span> <span class="kc">undefined</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p><strong>src/server.ts</strong> ファイルは準備完了しました。<strong>src/index.ts</strong> を修正して、アプリケーションを起動させましょう。</p>
+
+<div id="src/index.ts" class="code-caption">
+  <p>src/index.ts</p>
+</div>
+
+<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="p">{</span><span class="nx">ExpressServer</span><span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">./server</span><span class="dl">'</span><span class="p">;</span>
+<span class="k">import</span> <span class="p">{</span><span class="nx">ApplicationConfig</span><span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">@loopback/core</span><span class="dl">'</span><span class="p">;</span>
+
+<span class="k">export</span> <span class="p">{</span><span class="nx">ExpressServer</span><span class="p">,</span> <span class="nx">NoteApplication</span><span class="p">};</span>
+
+<span class="k">export</span> <span class="k">async</span> <span class="kd">function</span> <span class="nx">main</span><span class="p">(</span><span class="nx">options</span><span class="p">:</span> <span class="nx">ApplicationConfig</span> <span class="o">=</span> <span class="p">{})</span> <span class="p">{</span>
+  <span class="kd">const</span> <span class="nx">server</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">ExpressServer</span><span class="p">(</span><span class="nx">options</span><span class="p">);</span>
+  <span class="k">await</span> <span class="nx">server</span><span class="p">.</span><span class="nx">boot</span><span class="p">();</span>
+  <span class="k">await</span> <span class="nx">server</span><span class="p">.</span><span class="nx">start</span><span class="p">();</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">Server is running at http://127.0.0.1:3000</span><span class="dl">'</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<div id="index.js" class="code-caption">
+  <p>index.js</p>
+</div>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">application</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">./dist</span><span class="dl">'</span><span class="p">);</span>
+
+<span class="nx">module</span><span class="p">.</span><span class="nx">exports</span> <span class="o">=</span> <span class="nx">application</span><span class="p">;</span>
+
+<span class="k">if</span> <span class="p">(</span><span class="nx">require</span><span class="p">.</span><span class="nx">main</span> <span class="o">===</span> <span class="nx">module</span><span class="p">)</span> <span class="p">{</span>
+  <span class="c1">// Run the application</span>
+  <span class="kd">const</span> <span class="nx">config</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="na">rest</span><span class="p">:</span> <span class="p">{</span>
+      <span class="na">port</span><span class="p">:</span> <span class="o">+</span><span class="nx">process</span><span class="p">.</span><span class="nx">env</span><span class="p">.</span><span class="nx">PORT</span> <span class="o">||</span> <span class="mi">3000</span><span class="p">,</span>
+      <span class="na">host</span><span class="p">:</span> <span class="nx">process</span><span class="p">.</span><span class="nx">env</span><span class="p">.</span><span class="nx">HOST</span> <span class="o">||</span> <span class="dl">'</span><span class="s1">localhost</span><span class="dl">'</span><span class="p">,</span>
+      <span class="na">openApiSpec</span><span class="p">:</span> <span class="p">{</span>
+        <span class="c1">// useful when used with OpenAPI-to-GraphQL to locate your application</span>
+        <span class="na">setServersFromRequest</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+      <span class="p">},</span>
+      <span class="c1">// Use the LB4 application as a route. It should not be listening.</span>
+      <span class="na">listenOnStart</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+    <span class="p">},</span>
+  <span class="p">};</span>
+  <span class="nx">application</span><span class="p">.</span><span class="nx">main</span><span class="p">(</span><span class="nx">config</span><span class="p">).</span><span class="k">catch</span><span class="p">(</span><span class="nx">err</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="dl">'</span><span class="s1">Cannot start the application.</span><span class="dl">'</span><span class="p">,</span> <span class="nx">err</span><span class="p">);</span>
+    <span class="nx">process</span><span class="p">.</span><span class="nx">exit</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+  <span class="p">});</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>[注意]Expressサーバーを<code class="language-plaintext highlighter-rouge">Listen</code>させるためにLB4アプリケーションを起動した際、LB4 アプリケーションがHTTPを<code class="language-plaintext highlighter-rouge">Listen</code>しないようにするために、<code class="language-plaintext highlighter-rouge">listenOnStart</code>が <code class="language-plaintext highlighter-rouge">false</code> に設定されていることを確認してください。　</p>
+
+<p>それでは、アプリケーションを起動してhttp://127.0.0.1:3000
+にアクセスしてみましょう。</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm start
+
+Server is running at http://127.0.0.1:3000
+</code></pre></div></div>
+
+<p><a href="http://127.0.0.1:3000/api/explorer">Explorer</a>で、Loopbackアプリケーションへのリクエストを行うことができます。なお、サーバーはhttp://127.0.0.1:3000/api
+であることに注意してください 。</p>
+
+<p><code class="language-plaintext highlighter-rouge">/hello</code>Expressルートを表示するには、<a href="http://127.0.0.1:3000/hello">http://127.0.0.1:3000/hello</a>にアクセスしてください。「Hello world！」が表示されます。</p>
+
+<p>アプリケーションで静的ファイルを提供するには、コンストラクタの最後に次を追加します。</p>
+
+<p><a href="http://127.0.0.1:3000/api/explorer">Explorer</a>を開くと、 Loopbackアプリケーションからリクエストを送ることができます。サーバーは<a href="http://127.0.0.1:3000/api">http://127.0.0.1:3000/api</a>です。</p>
+
+<p>カスタムの<code class="language-plaintext highlighter-rouge">/hello</code> Expressルートを表示するには、<a href="http://127.0.0.1:3000/hello">http://127.0.0.1:3000/hello</a>を開いて’Hello world!’を確認します。</p>
+
+<p>アプリケーションで静的ファイルを提供するには、コンストラクタの最後に次の記述を追加します。</p>
+
+<div id="src/server.ts" class="code-caption">
+  <p>src/server.ts</p>
+</div>
+
+<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">export</span> <span class="kd">class</span> <span class="nx">ExpressServer</span> <span class="p">{</span>
+  <span class="k">private</span> <span class="nx">app</span><span class="p">:</span> <span class="nx">express</span><span class="p">.</span><span class="nx">Application</span><span class="p">;</span>
+  <span class="k">private</span> <span class="nx">lbApp</span><span class="p">:</span> <span class="nx">NoteApplication</span><span class="p">;</span>
+
+  <span class="kd">constructor</span><span class="p">(</span><span class="nx">options</span><span class="p">:</span> <span class="nx">ApplicationConfig</span> <span class="o">=</span> <span class="p">{})</span> <span class="p">{</span>
+    <span class="c1">// earlier code</span>
+
+    <span class="c1">// Serve static files in the public folder</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">app</span><span class="p">.</span><span class="nx">use</span><span class="p">(</span><span class="nx">express</span><span class="p">.</span><span class="k">static</span><span class="p">(</span><span class="dl">'</span><span class="s1">public</span><span class="dl">'</span><span class="p">));</span>
+  <span class="p">}</span>
+
+  <span class="c1">// other functions</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>これで、<strong>public/</strong> フォルダーに静的ファイルをロードできます。
+一例として、<a href="https://github.com/strongloop/loopback-next/blob/master/examples/express-composition/public/notes.html">public/notes.html</a>のファイルをプロジェクトに追加して<code class="language-plaintext highlighter-rouge">npm start</code>し、<a href="http://127.0.0.1:3000/notes.html">http://127.0.0.1:3000/notes.html</a>を開いてみてください。メモを表形式で表示する静的ファイルを確認できます。詳細は、<a href="https://expressjs.com/en/starter/static-files.html">Serving static files in Express</a>をご参照ください。</p>
+
+<p>お疲れ様でした。LoopBack4 REST APIをExpressアプリケーションにマウントできました。</p>
+
+
+
+    <div class="tags">
+      
+    </div>
+</div>
+
+<hr class="shaded"/>
+
+<footer id="container">
+            <div class="row">
+                <div class="col-md-6 footer-left">
+               &copy;2021 IBM / StrongLoop. All rights reserved. <br />
+ Site last generated: Mar 22, 2021
+              </div>
+              <div class="col-md-6 footer-right">
+                <p><img src="https://loopback.io/images/company_logo.png" alt="Company logo"/></p>
+              </div>
+            </div>
+</footer>
+
+
+        </div>
+        <!-- /.row -->
+</div>
+<!-- /.container -->
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,1758 @@
+<!DOCTYPE html>
+<head>
+    
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="These are LoopBack's general coding style guidelines.">
+  <meta name="keywords" content="contributingcommunity,  ">
+  <title>Code style guide | LoopBack Documentation</title>
+  <link rel="stylesheet" href="/css/syntax.css">
+
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/modern-business.css">
+    <link rel="stylesheet" href="/css/lavish-bootstrap.css">
+    <link rel="stylesheet" href="/css/customstyles.css">
+    <link rel="stylesheet" href="/css/theme-v4.css">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-150726441-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-150726441-2');
+</script>
+
+
+    <!-- github star button -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.3.0/anchor.min.js"></script>
+    <script src="/js/toc.js"></script>
+    <script src="/js/customscripts.js"></script>
+
+    <link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    
+
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-lg navbar-brand no_icon" href="/doc/index.html">
+              <img class="no_icon" style="width:147px;" src="/images/branding/logo/white/loopback.svg">&nbsp;<span class="projectTitle"></span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- entries without drop-downs appear here -->
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">API Docs<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        <!-- page.url is /doc/en/contrib/style-guide.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://loopback.io/doc/en/lb4/apidocs.index.html" target="_blank">LoopBack 4</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/contrib/style-guide.html .... folderitem.url is  -->
+                          
+                            <li><a href="http://apidocs.loopback.io" target="_blank">LoopBack 3.x</a></li>
+                          
+                        
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">View<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        <!-- page.url is /doc/en/contrib/style-guide.html .... folderitem.url is / -->
+                          
+                            <li><a href="/">LoopBack Overview</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/contrib/style-guide.html .... folderitem.url is /doc/en/lb4/ -->
+                          
+                            <li><a href="/doc/en/lb4/">LoopBack 4</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/contrib/style-guide.html .... folderitem.url is /doc/en/lb3/ -->
+                          
+                            <li><a href="/doc/en/lb3/">LoopBack 3.x</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/contrib/style-guide.html .... folderitem.url is /doc/en/lb2/ -->
+                          
+                            <li><a href="/doc/en/lb2/">LoopBack 2.x</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/contrib/style-guide.html .... folderitem.url is /doc/en/community/ -->
+                          
+                            <li><a href="/doc/en/community/">Community projects</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/contrib/style-guide.html .... folderitem.url is /doc/en/contrib/ -->
+                          
+                            <li class="dropdownActive"><a href="/doc/en/contrib/">Contributing to LoopBack</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/contrib/style-guide.html .... folderitem.url is /doc/en/sec/ -->
+                          
+                            <li><a href="/doc/en/sec/">Security advisories</a></li>
+                          
+                        
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Resources<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        <!-- page.url is /doc/en/contrib/style-guide.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://github.com/strongloop/loopback.io" target="_blank">Docs Github Repo</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/contrib/style-guide.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://groups.google.com/forum/#!forum/loopbackjs-announcements" target="_blank">Announcements Mailing List</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/contrib/style-guide.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://groups.google.com/forum/#!forum/loopbackjs" target="_blank">Developer Forum</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/contrib/style-guide.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://join.slack.com/t/loopbackio/shared_invite/zt-8lbow73r-SKAKz61Vdao~_rGf91pcsw" target="_blank">LoopBack on Slack</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/contrib/style-guide.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://stackoverflow.com/questions/tagged/strongloop+or+loopback4+or+loopbackjs" target="_blank">LoopBack on Stack Overflow</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/contrib/style-guide.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://strongloop.com/strongblog/tag_LoopBack.html" target="_blank">StrongLoop Blog - LoopBack</a></li>
+                          
+                        
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Translations<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        <!-- page.url is /doc/en/contrib/style-guide.html .... folderitem.url is /doc/es/lb2/ -->
+                          
+                            <li><a href="/doc/es/lb2/">Español (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/contrib/style-guide.html .... folderitem.url is /doc/es/lb4/ -->
+                          
+                            <li><a href="/doc/es/lb4/">Español (v4)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/contrib/style-guide.html .... folderitem.url is /doc/fr/lb2/ -->
+                          
+                            <li><a href="/doc/fr/lb2/">Français (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/contrib/style-guide.html .... folderitem.url is /doc/fr/lb4/ -->
+                          
+                            <li><a href="/doc/fr/lb4/">Français (v4)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/contrib/style-guide.html .... folderitem.url is /doc/ko/lb2/ -->
+                          
+                            <li><a href="/doc/ko/lb2/">한국어 (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/contrib/style-guide.html .... folderitem.url is /doc/ko/lb3/ -->
+                          
+                            <li><a href="/doc/ko/lb3/">한국어 (v3)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/contrib/style-guide.html .... folderitem.url is /doc/pt-br/lb2/ -->
+                          
+                            <li><a href="/doc/pt-br/lb2/">Português (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/contrib/style-guide.html .... folderitem.url is /doc/pt-br/lb4/ -->
+                          
+                            <li><a href="/doc/pt-br/lb4/">Português (v4)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/contrib/style-guide.html .... folderitem.url is /doc/ja/lb2/ -->
+                          
+                            <li><a href="/doc/ja/lb2/">日本語 (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/contrib/style-guide.html .... folderitem.url is /doc/ja/lb3/ -->
+                          
+                            <li><a href="/doc/ja/lb3/">日本語 (v3)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/contrib/style-guide.html .... folderitem.url is /doc/ja/lb4/ -->
+                          
+                            <li><a href="/doc/ja/lb4/">日本語 (v4)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/contrib/style-guide.html .... folderitem.url is /doc/ru/lb2/ -->
+                          
+                            <li><a href="/doc/ru/lb2/">Pусский (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/contrib/style-guide.html .... folderitem.url is /doc/zh/lb2/ -->
+                          
+                            <li><a href="/doc/zh/lb2/">中文 (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/contrib/style-guide.html .... folderitem.url is /doc/zh/lb4/ -->
+                          
+                            <li><a href="/doc/zh/lb4/">中文 (v4)</a></li>
+                          
+                        
+                    </ul>
+                </li>
+                
+                
+                
+                <li>
+                    <form id="search" name="search" class="input-group lb-search" action="/search" method="GET">
+                        <input type="text" class="form-control search-bar" placeholder="Search (powered by Watson)" name="q">
+                        
+                        <div class="input-group-btn">
+                            <button type="submit" class="btn btn-default" aria-label="search">
+                              <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                            </button>
+                        </div>
+                      </form>
+                </li>
+            </ul>
+        </div>
+      </div>
+</nav>
+
+<!-- Page Content -->
+<div class="container">
+    <!-- Content Row -->
+    <div class="row">
+        <!-- Sidebar Column -->
+        <nav class="col-md-3 sidebar-col">
+          
+
+
+
+
+
+
+
+
+
+
+
+<!-- NOTE: sidebar = site.data.sidebars.mydoc_sidebar.entries -->
+<div class="sidebarTitle"><a href="index.html">Contributing to LoopBack</a></div>
+<ul id="mysidebar" class="nav-list">
+  
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Governance.html">Governance</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Reporting-issues.html">Reporting issues</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="code-contrib.html">Contributing code</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="code-contrib-lb2-lb3.html">LoopBack 2.x, 3.x</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="style-guide-es6.html">Code style guide</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="eslint-guide.html">Using ESLint</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="git-commit-messages.html">Git commit message guidelines</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="triaging-pull-requests.html">Triaging pull requests</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="/doc/en/lb4/code-contrib-lb4.html">LoopBack 4</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="/doc/en/lb4/submitting_a_pr.html">Submitting a pull request to LoopBack 4</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="doc-contrib.html">Contributing to docs</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="jekyll_getting_started.html">Using Jekyll</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="content_reuse.html">Content reuse</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Including-READMEs.html">Including READMEs</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="pages.html">Authoring pages</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Markdown-style-guide.html">Markdown style guide</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Doc-style-guide.html">Documentation style guide</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="README-guidelines.html">README guidelines</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="navigation.html">Navigation</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="sidebar_navigation.html">Sidebar navigation</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="tags.html">Tags</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="formatting.html">Formatting</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="alerts.html">Alerts</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="images.html">Images</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="code_samples.html">Code samples</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="adding_tooltips.html">Tooltips</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="icons.html">Icons</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="hyperlinks.html">Links</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="tables.html">Tables</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="layouts.html">Special layouts</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="readmes.html">README layout</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="navgroups.html">Navgroup layout</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="faq_layout.html">FAQ layout</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="translation.html">Translation</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Adding_a_new_language.html">Adding a new language</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Translating_articles.html">Translating articles</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+
+</ul>
+
+        </nav>
+        <!-- Content Column -->
+        <div class="col-md-9">
+            
+<div class="post-header">
+   <h1 class="post-title-main">Code style guide</h1>
+   
+     
+       <a target="_blank" href="https://github.com/strongloop/loopback.io/blob/gh-pages/pages/en/contrib/style-guide.md" class="githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit this page</a>
+   
+</div>
+
+<div class="post-content">
+
+
+  
+   <div class="summary">
+     These are LoopBack's general coding style guidelines.
+   </div>
+  
+
+
+
+
+ 
+
+    <!--
+Style conventions for this document:
+ - Each rule has a level2 heading (##)
+ - For each rule, provide examples of what's good and what's bad - use level4 heading `##### Good` and `##### Bad`
+ - level3 headings are reserved to subsections within rules, e.g. `#### Exceptions`
+-->
+
+<div id="seealso">
+
+  <p><b>See also</b>:</p>
+
+  <ul>
+    <li><a href="style-guide-es5.html">ES5 style guide for LoopBack 2.x</a></li>
+    <li><a href="style-guide-es6.html">ES6 style guide for LoopBack 3.x</a></li>
+    <li><a href="https://google.github.io/styleguide/cppguide.html">Google C++ Style Guide</a></li>
+    <li><a href="https://google.github.io/styleguide/javascriptguide.xml">Google Javascript Style Guide</a></li>
+  </ul>
+
+</div>
+
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+;$(function() {
+  var level = parseInt(2, 10);
+  if (level === 1) {level = 'h2'}
+  if (level === 2) {level = 'h2,h3'}
+  if (level === 3) {level = 'h2,h3,h4'}
+  if (level === 4) {level = 'h2,h3,h4,h5'}
+
+  // Add a new level for changelog files which use h1,h2,h3
+  if (level === 0) {level = 'h1,h2,h3,h4,h5'}
+
+  var toc = $('#toc')
+
+  toc.toc({minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: level})
+
+  /* this offset helps with the space taken up by the floating toolbar */
+  toc.on('click', 'a', function() {
+    var target = $(this.getAttribute('href')),
+      scroll_target = target.offset().top
+
+    $(window).scrollTop(scroll_target - 10)
+    return false
+  })
+  .on('click', '.toc-expand-button', function() {
+    toc.find('> ul').slideToggle('fast');
+  })
+})
+</script>
+
+<div id="toc">
+  <p><span class="toc-title">Page Contents</span>
+  <button type="button" class="btn btn-link toc-expand-button">
+    <i class="fa fa-bars"></i>
+  </button></p>
+</div>
+
+<h2 id="general-guidelines">General guidelines</h2>
+
+<div class="alert alert-warning" role="alert">
+  <p><i class="fa fa-warning"></i>
+  <b>Important:</b>
+  The rules described in this document are evolving, therefore not all of our
+code-base are following them yet. This is expected and OK. Our approach is to
+incrementally improve the parts that are changing most often, i.e. fix the
+coding style only as part of changes needed for a bug fix/new feature.</p>
+
+</div>
+
+<h3 id="variable-declarations">Variable declarations</h3>
+
+<p>Prefer to use immutable variables declared with <code class="language-plaintext highlighter-rouge">const</code> keyword.</p>
+
+<div class="alert alert-info" role="alert">
+  <p><i class="fa fa-info-circle"></i>
+<b>Note:</b>
+<code class="language-plaintext highlighter-rouge">const</code> makes only the reference immutable, the referenced object is still
+mutable.</p>
+
+</div>
+
+<p><strong>Good</strong>:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">User</span> <span class="o">=</span> <span class="nx">app</span><span class="p">.</span><span class="nx">models</span><span class="p">.</span><span class="nx">User</span><span class="p">;</span>
+<span class="kd">const</span> <span class="p">{</span> <span class="nx">saltWorkFactor</span> <span class="p">}</span> <span class="o">=</span> <span class="nx">User</span><span class="p">.</span><span class="nx">settings</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p><strong>Bad</strong>:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">User</span> <span class="o">=</span> <span class="nx">app</span><span class="p">.</span><span class="nx">models</span><span class="p">.</span><span class="nx">User</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">saltWorkFactor</span> <span class="o">=</span> <span class="nx">user</span><span class="p">.</span><span class="nx">settings</span><span class="p">.</span><span class="nx">saltWorkFactor</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>In the rare cases where you need to split variable declaration and
+initialization, prefer to use <code class="language-plaintext highlighter-rouge">let</code> over <code class="language-plaintext highlighter-rouge">var</code>:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">let</span> <span class="nx">discount</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+
+<span class="k">if</span> <span class="p">(</span><span class="nx">customer</span><span class="p">.</span><span class="nx">isPreferred</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">discount</span> <span class="o">=</span> <span class="mf">0.1</span><span class="p">;</span>
+<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">customer</span><span class="p">.</span><span class="nx">address</span><span class="p">.</span><span class="nx">state</span> <span class="o">===</span> <span class="dl">'</span><span class="s1">CA</span><span class="dl">'</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">discount</span> <span class="o">=</span> <span class="mf">0.05</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>In most cases, it’s possible to rewrite such code by extracting the
+conditional logic into a standalone function, which is preferred:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">discount</span> <span class="o">=</span> <span class="nx">customer</span><span class="p">.</span><span class="nx">getDiscount</span><span class="p">();</span>
+
+<span class="c1">// Inside Customer model:</span>
+<span class="nx">customer</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">getDiscount</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+  <span class="k">if</span> <span class="p">(</span><span class="nx">customer</span><span class="p">.</span><span class="nx">isPreferred</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="mf">0.1</span><span class="p">;</span>
+  <span class="p">}</span>
+
+  <span class="k">if</span> <span class="p">(</span><span class="nx">customer</span><span class="p">.</span><span class="nx">address</span><span class="p">.</span><span class="nx">state</span> <span class="o">===</span> <span class="dl">'</span><span class="s1">CA</span><span class="dl">'</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="mf">0.05</span><span class="p">;</span>
+  <span class="p">}</span>
+
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<div class="alert alert-warning" role="alert">
+  <p><i class="fa fa-warning"></i>
+  <b>Important:</b>
+  <code class="language-plaintext highlighter-rouge">let</code> currently has a small caveat in that using it in loop constructs causes
+V8 to deoptimize the function, i.e., for now you should write:</p>
+
+  <div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="mi">42</span><span class="p">;</span> <span class="o">++</span><span class="nx">i</span><span class="p">)</span> <span class="nx">doit</span><span class="p">(</span><span class="nx">i</span><span class="p">);</span>
+</code></pre></div>  </div>
+
+  <p>Instead of:</p>
+
+  <div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="mi">42</span><span class="p">;</span> <span class="o">++</span><span class="nx">i</span><span class="p">)</span> <span class="nx">doit</span><span class="p">(</span><span class="nx">i</span><span class="p">);</span>
+</code></pre></div>  </div>
+
+  <p>This will be fixed in node.js v8.x but probably won’t be fixed in v4.x and v6.x.</p>
+
+</div>
+
+<h3 id="arrow-functions">Arrow functions</h3>
+
+<p>There are two considerations to keep in mind when deciding whether to use an
+arrow function or a regular function:</p>
+
+<ul>
+  <li>
+    <p>Arrow function preserves <code class="language-plaintext highlighter-rouge">this</code> from the outer scope. This is much more
+performant than the usual workaround of storing <code class="language-plaintext highlighter-rouge">this</code> in a <code class="language-plaintext highlighter-rouge">self</code> variable.</p>
+  </li>
+  <li>
+    <p>If you are accessing <code class="language-plaintext highlighter-rouge">this</code> provided by Mocha to your test cases and
+before/after hooks, then you cannot use an arrow function.</p>
+  </li>
+  <li>
+    <p>Arrow functions are anonymous by default, which makes it difficult to
+understand stack traces. The workaround is to assign an arrow function
+to a variable, since V8 does a fairly good job of inferring a name
+in such case.</p>
+  </li>
+</ul>
+
+<p>The rules to follow:</p>
+
+<ul>
+  <li>
+    <p>Always use arrow functions if you need to access <code class="language-plaintext highlighter-rouge">this</code> from outside.</p>
+  </li>
+  <li>
+    <p>Try to structure your code in such way that your callbacks are short
+(can be written using an arrow function) and delegate most of the work
+to named functions (with a descriptive name).</p>
+  </li>
+  <li>
+    <p>Use arrow functions in your Mocha tests, unless you need to access Mocha’s
+<code class="language-plaintext highlighter-rouge">this</code> context.</p>
+  </li>
+</ul>
+
+<p><strong>Good</strong>:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nx">Foo</span> <span class="p">{</span>
+  <span class="nx">bar</span><span class="p">(</span><span class="nx">cb</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">doSomethingElse</span><span class="p">((</span><span class="nx">err</span><span class="p">,</span> <span class="nx">data</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+      <span class="k">if</span> <span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="k">return</span> <span class="nx">cb</span><span class="p">(</span><span class="nx">err</span><span class="p">);</span>
+      <span class="kd">const</span> <span class="nx">result</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">processData</span><span class="p">(</span><span class="nx">data</span><span class="p">);</span>
+      <span class="nx">cb</span><span class="p">(</span><span class="kc">null</span><span class="p">,</span> <span class="nx">result</span><span class="p">);</span>
+    <span class="p">});</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p><strong>Bad</strong>:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nx">Foo</span> <span class="p">{</span>
+  <span class="nx">bar</span><span class="p">(</span><span class="nx">cb</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kd">const</span> <span class="nb">self</span> <span class="o">=</span> <span class="k">this</span><span class="p">;</span>
+    <span class="nx">doSomethingElse</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">err</span><span class="p">,</span> <span class="nx">data</span><span class="p">)</span> <span class="p">{</span>
+      <span class="k">if</span> <span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="k">return</span> <span class="nx">cb</span><span class="p">(</span><span class="nx">err</span><span class="p">);</span>
+      <span class="kd">const</span> <span class="nx">result</span> <span class="o">=</span> <span class="nb">self</span><span class="p">.</span><span class="nx">processData</span><span class="p">(</span><span class="nx">data</span><span class="p">);</span>
+      <span class="nx">cb</span><span class="p">(</span><span class="kc">null</span><span class="p">,</span> <span class="nx">result</span><span class="p">);</span>
+    <span class="p">});</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="classes">Classes</h3>
+
+<p>ES6 introduced syntax-sugar for defining classes. Use this syntax instead of the
+old <code class="language-plaintext highlighter-rouge">require('util').inherits</code> approach.</p>
+
+<p><strong>Good</strong>:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nx">MyConnector</span> <span class="kd">extends</span> <span class="nx">BaseConnector</span> <span class="p">{</span>
+  <span class="kd">constructor</span><span class="p">(</span><span class="nx">settings</span><span class="p">,</span> <span class="nx">dataSource</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// ...</span>
+  <span class="p">}</span>
+
+  <span class="kd">set</span><span class="p">(</span><span class="nx">modelName</span><span class="p">,</span> <span class="nx">key</span><span class="p">,</span> <span class="nx">value</span><span class="p">,</span> <span class="nx">options</span><span class="p">,</span> <span class="nx">callback</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// ...</span>
+   <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p><strong>Bad</strong>:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">MyConnector</span><span class="p">(</span><span class="nx">settings</span><span class="p">,</span> <span class="nx">dataSource</span><span class="p">)</span> <span class="p">{</span>
+  <span class="c1">// ...</span>
+<span class="p">}</span>
+<span class="nx">util</span><span class="p">.</span><span class="nx">inherits</span><span class="p">(</span><span class="nx">MyConnector</span><span class="p">,</span> <span class="nx">BaseConnector</span><span class="p">);</span>
+
+<span class="nx">MyConnector</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="kd">set</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">modelName</span><span class="p">,</span> <span class="nx">key</span><span class="p">,</span> <span class="nx">value</span><span class="p">,</span> <span class="nx">options</span><span class="p">,</span> <span class="nx">callback</span><span class="p">)</span> <span class="p">{</span>
+  <span class="c1">// ...</span>
+<span class="p">};</span>
+</code></pre></div></div>
+
+<h3 id="one-argument-per-line">One argument per line</h3>
+
+<p>Once you cannot fit all arguments into a single line shorter than 80 characterss, it’s better to place each argument on a new line.</p>
+
+<p><strong>Good</strong>:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">TestModel</span><span class="p">.</span><span class="nx">find</span><span class="p">(</span>
+  <span class="p">{</span><span class="na">where</span><span class="p">:</span> <span class="p">{</span><span class="na">id</span><span class="p">:</span> <span class="dl">'</span><span class="s1">1</span><span class="dl">'</span><span class="p">}},</span>
+  <span class="p">{</span><span class="na">notify</span><span class="p">:</span> <span class="kc">false</span><span class="p">},</span>
+  <span class="kd">function</span><span class="p">(</span><span class="nx">err</span><span class="p">,</span> <span class="nx">list</span><span class="p">)</span> <span class="p">{</span>
+    <span class="p">...</span>
+  <span class="p">});</span>
+</code></pre></div></div>
+
+<p><strong>Bad</strong>:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">TestModel</span><span class="p">.</span><span class="nx">find</span><span class="p">(</span>
+  <span class="p">{</span><span class="na">where</span><span class="p">:</span> <span class="p">{</span><span class="na">id</span><span class="p">:</span> <span class="dl">'</span><span class="s1">1</span><span class="dl">'</span><span class="p">}},</span> <span class="p">{</span><span class="na">notify</span><span class="p">:</span> <span class="kc">false</span><span class="p">},</span>
+  <span class="kd">function</span><span class="p">(</span><span class="nx">err</span><span class="p">,</span> <span class="nx">list</span><span class="p">)</span> <span class="p">{</span>
+    <span class="p">...</span>
+  <span class="p">});</span>
+</code></pre></div></div>
+
+<p><strong>Bad</strong>:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">TestModel</span><span class="p">.</span><span class="nx">find</span><span class="p">({</span><span class="na">where</span><span class="p">:</span> <span class="p">{</span><span class="na">id</span><span class="p">:</span> <span class="dl">'</span><span class="s1">1</span><span class="dl">'</span><span class="p">}},</span>
+  <span class="p">{</span><span class="na">notify</span><span class="p">:</span> <span class="kc">false</span><span class="p">},</span>
+  <span class="kd">function</span><span class="p">(</span><span class="nx">err</span><span class="p">,</span> <span class="nx">list</span><span class="p">)</span> <span class="p">{</span>
+    <span class="p">...</span>
+  <span class="p">});</span>
+</code></pre></div></div>
+
+<div class="alert alert-info" role="alert">
+  <p><i class="fa fa-info-circle"></i>
+<b>EXCEPTION:</b></p>
+
+  <p>When the callback function is the only argument that overflows character limit, you can put only this argument on a new line.</p>
+
+</div>
+
+<p>For example:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">TestModel</span><span class="p">.</span><span class="nx">find</span><span class="p">({</span><span class="na">where</span><span class="p">:</span> <span class="p">{</span><span class="na">id</span><span class="p">:</span> <span class="dl">'</span><span class="s1">1</span><span class="dl">'</span><span class="p">}},</span>
+  <span class="kd">function</span><span class="p">(</span><span class="nx">err</span><span class="p">,</span> <span class="nx">list</span><span class="p">)</span> <span class="p">{</span>
+    <span class="p">...</span>
+  <span class="p">});</span>
+</code></pre></div></div>
+
+<div class="alert alert-info" role="alert">
+  <p><i class="fa fa-info-circle"></i>
+<b>EXCEPTION:</b></p>
+
+  <p>When fixing existing code, it’s better to preserve indentation of the inner function body and do not indent the second line.</p>
+
+</div>
+
+<p>For example:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">TestModel</span><span class="p">.</span><span class="nx">find</span><span class="p">({</span><span class="na">where</span><span class="p">:</span> <span class="p">{</span><span class="na">id</span><span class="p">:</span> <span class="dl">'</span><span class="s1">1</span><span class="dl">'</span><span class="p">}},</span>
+<span class="kd">function</span><span class="p">(</span><span class="nx">err</span><span class="p">,</span> <span class="nx">list</span><span class="p">)</span> <span class="p">{</span>
+  <span class="p">...</span>
+<span class="p">});</span>
+</code></pre></div></div>
+
+<div class="alert alert-info" role="alert">
+  <p><i class="fa fa-info-circle"></i>
+<b>EXCEPTION:</b></p>
+
+  <p>When the arguments are only short primitive values (strings, numbers) or short variable/property references, you can collapse them on the same line.</p>
+
+</div>
+
+<p><strong>Good</strong>:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="dl">'</span><span class="s1">Unhandled array of errors for request %s %s</span><span class="se">\n</span><span class="dl">'</span><span class="p">,</span>
+  <span class="nx">req</span><span class="p">.</span><span class="nx">method</span><span class="p">,</span> <span class="nx">req</span><span class="p">.</span><span class="nx">url</span><span class="p">,</span> <span class="nx">errors</span><span class="p">);</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span>
+  <span class="dl">'</span><span class="s1">Unhandled array of errors for request %s %s</span><span class="se">\n</span><span class="dl">'</span><span class="p">,</span>
+  <span class="nx">req</span><span class="p">.</span><span class="nx">method</span><span class="p">,</span> <span class="nx">req</span><span class="p">.</span><span class="nx">url</span><span class="p">,</span> <span class="nx">errors</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p><strong>Bad</strong>:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span>
+  <span class="dl">'</span><span class="s1">Unhandled array of errors for request %s %s</span><span class="se">\n</span><span class="dl">'</span><span class="p">,</span>
+  <span class="nx">req</span><span class="p">.</span><span class="nx">method</span><span class="p">,</span>
+  <span class="nx">req</span><span class="p">.</span><span class="nx">url</span><span class="p">,</span>
+  <span class="nx">errors</span><span class="p">);</span>
+</code></pre></div></div>
+
+<h3 id="indentation-of-multi-line-expressions-in-return">Indentation of multi-line expressions in <code class="language-plaintext highlighter-rouge">return</code></h3>
+
+<p>Indent the second and all next lines by one level.</p>
+
+<p><strong>Good</strong>:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">return</span> <span class="p">(</span><span class="nx">testInEquality</span><span class="p">({</span><span class="na">gte</span><span class="p">:</span> <span class="nx">example</span><span class="p">.</span><span class="nx">between</span><span class="p">[</span><span class="mi">0</span><span class="p">]},</span> <span class="nx">value</span><span class="p">)</span> <span class="o">&amp;&amp;</span>
+  <span class="nx">testInEquality</span><span class="p">({</span><span class="na">lte</span><span class="p">:</span> <span class="nx">example</span><span class="p">.</span><span class="nx">between</span><span class="p">[</span><span class="mi">1</span><span class="p">]},</span> <span class="nx">value</span><span class="p">)</span> <span class="o">&amp;&amp;</span>
+  <span class="nx">testInEquality</span><span class="p">({</span><span class="na">lte</span><span class="p">:</span> <span class="nx">example</span><span class="p">.</span><span class="nx">between</span><span class="p">[</span><span class="mi">2</span><span class="p">]},</span> <span class="nx">value</span><span class="p">));</span>
+</code></pre></div></div>
+
+<p><strong>Bad</strong>:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">return</span> <span class="p">(</span><span class="nx">testInEquality</span><span class="p">({</span><span class="na">gte</span><span class="p">:</span> <span class="nx">example</span><span class="p">.</span><span class="nx">between</span><span class="p">[</span><span class="mi">0</span><span class="p">]},</span> <span class="nx">value</span><span class="p">)</span> <span class="o">&amp;&amp;</span>
+       <span class="nx">testInEquality</span><span class="p">({</span><span class="na">lte</span><span class="p">:</span> <span class="nx">example</span><span class="p">.</span><span class="nx">between</span><span class="p">[</span><span class="mi">1</span><span class="p">]},</span> <span class="nx">value</span><span class="p">)</span> <span class="o">&amp;&amp;</span>
+       <span class="nx">testInEquality</span><span class="p">({</span><span class="na">lte</span><span class="p">:</span> <span class="nx">example</span><span class="p">.</span><span class="nx">between</span><span class="p">[</span><span class="mi">2</span><span class="p">]},</span> <span class="nx">value</span><span class="p">));</span>
+</code></pre></div></div>
+
+<h3 id="indentation-of-multi-line-expressions-in-if">Indentation of multi-line expressions in <code class="language-plaintext highlighter-rouge">if</code></h3>
+
+<p>Prefer to extract the multi-line expression to a variable, as it is easiest to read. Use a good variable name to describe the condition you are building.</p>
+
+<p>When not feasible, then indent the second and next lines by two levels.</p>
+
+<p><strong>Best</strong>:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">matchesInEquality</span> <span class="o">=</span> <span class="nx">testInEquality</span><span class="p">({</span> <span class="na">gte</span><span class="p">:</span> <span class="nx">example</span><span class="p">.</span><span class="nx">between</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="p">},</span> <span class="nx">value</span><span class="p">)</span> <span class="o">&amp;&amp;</span>
+    <span class="nx">testInEquality</span><span class="p">({</span><span class="na">lte</span><span class="p">:</span> <span class="nx">example</span><span class="p">.</span><span class="nx">between</span><span class="p">[</span><span class="mi">1</span><span class="p">]},</span> <span class="nx">value</span><span class="p">)</span> <span class="o">&amp;&amp;</span>
+    <span class="nx">testInEquality</span><span class="p">({</span><span class="na">lte</span><span class="p">:</span> <span class="nx">example</span><span class="p">.</span><span class="nx">between</span><span class="p">[</span><span class="mi">2</span><span class="p">]},</span> <span class="nx">value</span><span class="p">);</span>
+<span class="k">if</span> <span class="p">(</span><span class="nx">matchesInEquality</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">handleInEquality</span><span class="p">();</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p><strong>Still acceptable</strong>:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">if</span> <span class="p">(</span><span class="nx">testInEquality</span><span class="p">({</span><span class="na">gte</span><span class="p">:</span> <span class="nx">example</span><span class="p">.</span><span class="nx">between</span><span class="p">[</span><span class="mi">0</span><span class="p">]},</span> <span class="nx">value</span><span class="p">)</span> <span class="o">&amp;&amp;</span>
+    <span class="nx">testInEquality</span><span class="p">({</span><span class="na">lte</span><span class="p">:</span> <span class="nx">example</span><span class="p">.</span><span class="nx">between</span><span class="p">[</span><span class="mi">1</span><span class="p">]},</span> <span class="nx">value</span><span class="p">)</span> <span class="o">&amp;&amp;</span>
+    <span class="nx">testInEquality</span><span class="p">({</span><span class="na">lte</span><span class="p">:</span> <span class="nx">example</span><span class="p">.</span><span class="nx">between</span><span class="p">[</span><span class="mi">2</span><span class="p">]},</span> <span class="nx">value</span><span class="p">))</span> <span class="p">{</span>
+  <span class="nx">handleInEquality</span><span class="p">();</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p><strong>Bad</strong>:</p>
+
+<p>One level of indentation makes it difficult to tell the difference between the condition and the branch body.</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">if</span> <span class="p">(</span><span class="nx">testInEquality</span><span class="p">({</span><span class="na">gte</span><span class="p">:</span> <span class="nx">example</span><span class="p">.</span><span class="nx">between</span><span class="p">[</span><span class="mi">0</span><span class="p">]},</span> <span class="nx">value</span><span class="p">)</span> <span class="o">&amp;&amp;</span>
+  <span class="nx">testInEquality</span><span class="p">({</span><span class="na">lte</span><span class="p">:</span> <span class="nx">example</span><span class="p">.</span><span class="nx">between</span><span class="p">[</span><span class="mi">1</span><span class="p">]},</span> <span class="nx">value</span><span class="p">)</span> <span class="o">&amp;&amp;</span>
+  <span class="nx">testInEquality</span><span class="p">({</span><span class="na">lte</span><span class="p">:</span> <span class="nx">example</span><span class="p">.</span><span class="nx">between</span><span class="p">[</span><span class="mi">2</span><span class="p">]},</span> <span class="nx">value</span><span class="p">))</span> <span class="p">{</span>
+  <span class="nx">handleInEquality</span><span class="p">();</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="multiline-array">Multiline Array</h3>
+
+<p><strong>Good</strong>:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">titles</span> <span class="o">=</span> <span class="p">[</span>
+  <span class="p">{</span><span class="na">title</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Title A</span><span class="dl">'</span><span class="p">,</span> <span class="na">subject</span><span class="p">:</span> <span class="dl">'</span><span class="s1">B</span><span class="dl">'</span><span class="p">},</span>
+  <span class="p">{</span><span class="na">title</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Title Z</span><span class="dl">'</span><span class="p">,</span> <span class="na">subject</span><span class="p">:</span> <span class="dl">'</span><span class="s1">A</span><span class="dl">'</span><span class="p">},</span>
+  <span class="p">{</span><span class="na">title</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Title M</span><span class="dl">'</span><span class="p">,</span> <span class="na">subject</span><span class="p">:</span> <span class="dl">'</span><span class="s1">C</span><span class="dl">'</span><span class="p">},</span>
+  <span class="p">{</span><span class="na">title</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Title A</span><span class="dl">'</span><span class="p">,</span> <span class="na">subject</span><span class="p">:</span> <span class="dl">'</span><span class="s1">A</span><span class="dl">'</span><span class="p">},</span>
+  <span class="p">{</span><span class="na">title</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Title B</span><span class="dl">'</span><span class="p">,</span> <span class="na">subject</span><span class="p">:</span> <span class="dl">'</span><span class="s1">A</span><span class="dl">'</span><span class="p">},</span>
+  <span class="p">{</span><span class="na">title</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Title C</span><span class="dl">'</span><span class="p">,</span> <span class="na">subject</span><span class="p">:</span> <span class="dl">'</span><span class="s1">D</span><span class="dl">'</span><span class="p">},</span>
+<span class="p">];</span>
+</code></pre></div></div>
+
+<p><strong>Bad</strong>:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">titles</span> <span class="o">=</span> <span class="p">[{</span><span class="na">title</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Title A</span><span class="dl">'</span><span class="p">,</span> <span class="na">subject</span><span class="p">:</span> <span class="dl">'</span><span class="s1">B</span><span class="dl">'</span><span class="p">},</span>
+                <span class="p">{</span><span class="na">title</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Title Z</span><span class="dl">'</span><span class="p">,</span> <span class="na">subject</span><span class="p">:</span> <span class="dl">'</span><span class="s1">A</span><span class="dl">'</span><span class="p">},</span>
+                <span class="p">{</span><span class="na">title</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Title M</span><span class="dl">'</span><span class="p">,</span> <span class="na">subject</span><span class="p">:</span> <span class="dl">'</span><span class="s1">C</span><span class="dl">'</span><span class="p">},</span>
+                <span class="p">{</span><span class="na">title</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Title A</span><span class="dl">'</span><span class="p">,</span> <span class="na">subject</span><span class="p">:</span> <span class="dl">'</span><span class="s1">A</span><span class="dl">'</span><span class="p">},</span>
+                <span class="p">{</span><span class="na">title</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Title B</span><span class="dl">'</span><span class="p">,</span> <span class="na">subject</span><span class="p">:</span> <span class="dl">'</span><span class="s1">A</span><span class="dl">'</span><span class="p">},</span>
+                <span class="p">{</span><span class="na">title</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Title C</span><span class="dl">'</span><span class="p">,</span> <span class="na">subject</span><span class="p">:</span> <span class="dl">'</span><span class="s1">D</span><span class="dl">'</span><span class="p">}];</span>
+</code></pre></div></div>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">titles</span> <span class="o">=</span> <span class="p">[{</span> <span class="na">title</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Title A</span><span class="dl">'</span><span class="p">,</span> <span class="na">subject</span><span class="p">:</span> <span class="dl">'</span><span class="s1">B</span><span class="dl">'</span> <span class="p">},</span>
+  <span class="p">{</span><span class="na">title</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Title Z</span><span class="dl">'</span><span class="p">,</span> <span class="na">subject</span><span class="p">:</span> <span class="dl">'</span><span class="s1">A</span><span class="dl">'</span><span class="p">},</span>
+  <span class="p">{</span><span class="na">title</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Title M</span><span class="dl">'</span><span class="p">,</span> <span class="na">subject</span><span class="p">:</span> <span class="dl">'</span><span class="s1">C</span><span class="dl">'</span><span class="p">},</span>
+  <span class="p">{</span><span class="na">title</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Title A</span><span class="dl">'</span><span class="p">,</span> <span class="na">subject</span><span class="p">:</span> <span class="dl">'</span><span class="s1">A</span><span class="dl">'</span><span class="p">},</span>
+  <span class="p">{</span><span class="na">title</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Title B</span><span class="dl">'</span><span class="p">,</span> <span class="na">subject</span><span class="p">:</span> <span class="dl">'</span><span class="s1">A</span><span class="dl">'</span><span class="p">},</span>
+  <span class="p">{</span><span class="na">title</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Title C</span><span class="dl">'</span><span class="p">,</span> <span class="na">subject</span><span class="p">:</span> <span class="dl">'</span><span class="s1">D</span><span class="dl">'</span><span class="p">}];</span>
+</code></pre></div></div>
+
+<h3 id="line-spacing">Line spacing</h3>
+
+<p>In general, group related lines together (with a single empty line in between groups).</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">if</span> <span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="k">return</span> <span class="nx">done</span><span class="p">(</span><span class="nx">err</span><span class="p">);</span>
+
+<span class="kd">const</span> <span class="nx">cat</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Cat</span><span class="p">();</span>
+<span class="nx">cat</span><span class="p">.</span><span class="nx">eat</span><span class="p">();</span>
+<span class="nx">cat</span><span class="p">.</span><span class="nx">meow</span><span class="p">();</span>
+<span class="nx">cat</span><span class="p">.</span><span class="nx">sleep</span><span class="p">();</span>
+
+<span class="k">return</span> <span class="nx">cat</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>However, if the method is short (3-5 lines) then just group it all together.</p>
+
+<p><strong>Good</strong>:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">if</span> <span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="k">return</span> <span class="nx">done</span><span class="p">(</span><span class="nx">err</span><span class="p">);</span>
+<span class="nx">expect</span><span class="p">(</span><span class="nx">result</span><span class="p">).</span><span class="nx">to</span><span class="p">...;</span>
+<span class="nx">done</span><span class="p">();</span>
+</code></pre></div></div>
+
+<p><strong>Bad</strong>:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">if</span> <span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="k">return</span> <span class="nx">done</span><span class="p">(</span><span class="nx">err</span><span class="p">);</span>
+
+<span class="nx">expect</span><span class="p">(</span><span class="nx">result</span><span class="p">).</span><span class="nx">to</span><span class="p">...;</span>
+
+<span class="nx">done</span><span class="p">();</span>
+</code></pre></div></div>
+
+<h2 id="guidelines-for-async-code">Guidelines for async code</h2>
+
+<h3 id="the-async-function-modifier">The async function modifier</h3>
+
+<p>Always use the <code class="language-plaintext highlighter-rouge">async</code> keyword when defining a function which will return a Promise. (This makes the return type unambiguous, and it also turns any accidental error inside the function into a rejected promise.)</p>
+
+<p>Return values directly, to avoid using <code class="language-plaintext highlighter-rouge">Promise.resolve()</code>. (This reduces visual clutter.)</p>
+
+<p><strong>Good</strong>:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">async</span> <span class="kd">function</span> <span class="nx">getFive</span><span class="p">()</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="mi">5</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p><strong>Bad</strong>:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">getFive</span><span class="p">()</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="nb">Promise</span><span class="p">.</span><span class="nx">resolve</span><span class="p">(</span><span class="mi">5</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="use-throw-instead-of-promisereject">Use throw instead of Promise.reject</h3>
+
+<p>Throw an error instead of using <code class="language-plaintext highlighter-rouge">Promise.reject()</code>. (This reduces visual clutter, and also makes it easier to refactor the code into a deep synchronous function.)</p>
+
+<p><strong>Good</strong>:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">async</span> <span class="kd">function</span> <span class="nx">getDodo</span><span class="p">()</span> <span class="p">{</span>
+  <span class="k">throw</span> <span class="k">new</span> <span class="nb">Error</span><span class="p">(</span><span class="dl">'</span><span class="s1">No dodos available</span><span class="dl">'</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p><strong>Bad</strong>:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">async</span> <span class="kd">function</span> <span class="nx">getDodo</span><span class="p">()</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="nb">Promise</span><span class="p">.</span><span class="nx">reject</span><span class="p">(</span><span class="k">new</span> <span class="nb">Error</span><span class="p">(</span><span class="dl">'</span><span class="s1">No dodos available</span><span class="dl">'</span><span class="p">));</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="when-returning-a-promise-do-not-await-it">When returning a promise, do not await it</h3>
+
+<p>If the last line of a function returns a value in a promise, then return it directly, do not <code class="language-plaintext highlighter-rouge">await</code> it.</p>
+
+<p>Pros:</p>
+
+<ul>
+  <li>This has better performance</li>
+  <li>It uses less code</li>
+</ul>
+
+<p>Cons:</p>
+
+<ul>
+  <li>It is less consistent (all promises in the function are awaited except this last one).</li>
+  <li>If we put a try-catch around the entire function body, it will not catch rejections from that last unawaited promise; they will be passed back to the caller instead.</li>
+  <li>It is ambiguous for historical reasons. (“Was this really intending to return a value, or is this code just using the old way of returning promises?”)</li>
+</ul>
+
+<p><strong>Bad</strong>:</p>
+
+<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">async</span> <span class="kd">function</span> <span class="nx">getAnimal</span><span class="p">():</span> <span class="nb">Promise</span><span class="o">&lt;</span><span class="nx">Animal</span><span class="o">&gt;</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="k">await</span> <span class="nx">getElephant</span><span class="p">();</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p><strong>Good</strong>:</p>
+
+<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">async</span> <span class="kd">function</span> <span class="nx">getAnimal</span><span class="p">():</span> <span class="nb">Promise</span><span class="o">&lt;</span><span class="nx">Animal</span><span class="o">&gt;</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="nx">getElephant</span><span class="p">();</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Conversely, when we do not need to return a value, then use <code class="language-plaintext highlighter-rouge">await</code> instead of <code class="language-plaintext highlighter-rouge">return</code>. (This makes it clear that no value is being returned, we are just waiting for completion.)</p>
+
+<p><strong>Bad</strong>:</p>
+
+<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">async</span> <span class="kd">function</span> <span class="nx">openCircus</span><span class="p">():</span> <span class="nb">Promise</span><span class="o">&lt;</span><span class="k">void</span><span class="o">&gt;</span> <span class="p">{</span>
+  <span class="k">await</span> <span class="nx">openCarPark</span><span class="p">();</span>
+  <span class="k">return</span> <span class="nx">openDoors</span><span class="p">();</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p><strong>Good</strong>:</p>
+
+<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">async</span> <span class="kd">function</span> <span class="nx">openCircus</span><span class="p">():</span> <span class="nb">Promise</span><span class="o">&lt;</span><span class="k">void</span><span class="o">&gt;</span> <span class="p">{</span>
+  <span class="k">await</span> <span class="nx">openCarPark</span><span class="p">();</span>
+  <span class="k">await</span> <span class="nx">openDoors</span><span class="p">();</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="style-guidelines-for-tests">Style guidelines for tests</h2>
+
+<h3 id="sandbox-directories">Sandbox directories</h3>
+
+<ul>
+  <li>All test-related sandbox directories should be inside the <code class="language-plaintext highlighter-rouge">test</code> dir (ie.
+<code class="language-plaintext highlighter-rouge">./test/sandbox</code>)</li>
+  <li>Do not use directories like <code class="language-plaintext highlighter-rouge">/tmp/sandbox</code> as you will run into
+permission issues on CI for directories that are not in the project</li>
+</ul>
+
+<h3 id="email-examples">Email examples</h3>
+
+<ul>
+  <li>All test-related email examples should be of the format <code class="language-plaintext highlighter-rouge">email@example.com</code>.</li>
+  <li>The <code class="language-plaintext highlighter-rouge">example.com</code> domain was created to be used for examples in documents, and could be used without prior coordination or asking for permission.</li>
+</ul>
+
+<p><strong>Good</strong>:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">validCredentials</span> <span class="o">=</span> <span class="p">{</span><span class="na">email</span><span class="p">:</span> <span class="s2">`original@example.com`</span><span class="p">,</span> <span class="na">password</span><span class="p">:</span> <span class="dl">'</span><span class="s1">bar</span><span class="dl">'</span><span class="p">}</span>
+</code></pre></div></div>
+
+<p><strong>Bad</strong>:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">validCredentials</span> <span class="o">=</span> <span class="p">{</span><span class="na">email</span><span class="p">:</span> <span class="s2">`updated@bar.com`</span><span class="p">,</span> <span class="na">password</span><span class="p">:</span> <span class="dl">'</span><span class="s1">bar</span><span class="dl">'</span><span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="hooks">Hooks</h3>
+
+<p>When writing hooks like <code class="language-plaintext highlighter-rouge">before</code> and <code class="language-plaintext highlighter-rouge">after</code>, it’s important to prepare for the
+situation when the hook fails and make troubleshooting easy in such case. There
+are two considerations to keep in mind:</p>
+
+<ul>
+  <li>
+    <p>What is printed by Mocha in the test output. When a test fails, Mocha prints
+the test name. When a hook fails, Mocha prints the hook name, but only if
+there was one provided!</p>
+  </li>
+  <li>
+    <p>What is reported by Node.js/V8 runtime in the stack trace.</p>
+  </li>
+</ul>
+
+<p>Using named functions to implement hook handlers is the best solution that
+yields helpful names in both test output and error stack traces.</p>
+
+<p><strong>Good</strong>:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">beforeEach</span><span class="p">(</span><span class="nx">namedFunction</span><span class="p">);</span>
+
+<span class="nx">beforeEach</span><span class="p">(</span><span class="kd">function</span> <span class="nx">namedFunction</span><span class="p">()</span> <span class="p">{</span>
+  <span class="c1">// ...</span>
+<span class="p">});</span>
+</code></pre></div></div>
+
+<p>Shows both in stack traces and the test output. In the second style, it’s better to move the named function to the bottom of the file and call it using the first style instead (see the next rule below).</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">beforeEach</span><span class="p">(</span><span class="dl">'</span><span class="s1">some description</span><span class="dl">'</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+<span class="p">});</span>
+
+<span class="nx">beforeEach</span><span class="p">(</span><span class="dl">'</span><span class="s1">some description</span><span class="dl">'</span><span class="p">,</span> <span class="nx">namedFunction</span><span class="p">);</span>
+
+<span class="nx">beforeEach</span><span class="p">(</span><span class="dl">'</span><span class="s1">some description</span><span class="dl">'</span><span class="p">,</span> <span class="kd">function</span> <span class="nx">namedFunction</span><span class="p">()</span> <span class="p">{</span>
+  <span class="c1">// ...</span>
+<span class="p">});</span>
+</code></pre></div></div>
+
+<p>The first example shows up in test output, but not stack traces. The second and third example shows up in test output and stack traces, but is a bit redundant to type two descriptions (one in the string and a duplicate in the function name)</p>
+
+<div class="alert alert-success" role="alert">
+  <p><i class="fa fa-check-square-o"></i>
+  <b>Tip:</b> Each of the above styles is acceptable and a decision will be made in the future as to which one is preferred. For now, feel free to pick the one that suits you.</p>
+
+</div>
+
+<p><strong>Bad</strong>:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">beforeEach</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+  <span class="p">...</span>
+<span class="p">});</span>
+</code></pre></div></div>
+
+<h3 id="layout-of-test-files">Layout of test files</h3>
+
+<p>When using hooks like beforeEach/before, it’s best to use named functions that are then defined at the bottom of the test file. The idea is to make it easy to find the meat of a test file, which are the unit-tests. The method names used for hooks should make it clear enough what’s their purpose, allowing most readers to not need to know implementation details and skip directly to unit-tests.</p>
+
+<p><strong>Good</strong>:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">describe</span><span class="p">(</span><span class="dl">'</span><span class="s1">strong-error-handler</span><span class="dl">'</span><span class="p">,</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="nx">before</span><span class="p">(</span><span class="nx">setupHttpServerAndClient</span><span class="p">);</span>
+  <span class="nx">beforeEach</span><span class="p">(</span><span class="nx">resetRequestHandler</span><span class="p">);</span>
+
+  <span class="nx">it</span><span class="p">(</span><span class="dl">'</span><span class="s1">handles error like this</span><span class="dl">'</span><span class="p">);</span>
+  <span class="nx">it</span><span class="p">(</span><span class="dl">'</span><span class="s1">handles error like that</span><span class="dl">'</span><span class="p">);</span>
+
+  <span class="kd">function</span> <span class="nx">setupHttpServerAndClient</span><span class="p">(</span><span class="nx">done</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// long setup</span>
+    <span class="c1">// .</span>
+    <span class="c1">// .</span>
+    <span class="c1">// .</span>
+    <span class="c1">// .</span>
+    <span class="c1">// .</span>
+    <span class="c1">// .</span>
+    <span class="c1">// .</span>
+    <span class="nx">done</span><span class="p">();</span>
+  <span class="p">}</span>
+
+  <span class="kd">function</span> <span class="nx">resetRequestHandler</span><span class="p">(</span><span class="nx">done</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// reset</span>
+  <span class="p">}</span>
+ <span class="p">});</span>
+</code></pre></div></div>
+
+<p>Bad:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">describe</span><span class="p">(</span><span class="dl">'</span><span class="s1">strong-error-handler</span><span class="dl">'</span><span class="p">,</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="nx">before</span><span class="p">(</span><span class="nx">setupHttpServerAndClient</span><span class="p">);</span>
+  <span class="nx">beforeEach</span><span class="p">(</span><span class="nx">resetRequestHandler</span><span class="p">);</span>
+
+  <span class="kd">function</span> <span class="nx">setupHttpServerAndClient</span><span class="p">(</span><span class="nx">done</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// long setup</span>
+    <span class="c1">// .</span>
+    <span class="c1">// .</span>
+    <span class="c1">// .</span>
+    <span class="c1">// .</span>
+    <span class="c1">// .</span>
+    <span class="cm">/** where are the tests, are we there yet? **/</span>
+    <span class="c1">// .</span>
+    <span class="nx">done</span><span class="p">();</span>
+  <span class="p">}</span>
+
+  <span class="cm">/** Another helper... WHERE ARE THE TESTS!? **/</span>
+  <span class="kd">function</span> <span class="nx">resetRequestHandler</span><span class="p">(</span><span class="nx">done</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// reset</span>
+  <span class="p">}</span>
+
+  <span class="nx">it</span><span class="p">(</span><span class="dl">'</span><span class="s1">handles error like this</span><span class="dl">'</span><span class="p">);</span>
+  <span class="nx">it</span><span class="p">(</span><span class="dl">'</span><span class="s1">handles error like that</span><span class="dl">'</span><span class="p">);</span>
+ <span class="p">});</span>
+</code></pre></div></div>
+
+<p>Anonymous functions are even worse</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">describe</span><span class="p">(</span><span class="dl">'</span><span class="s1">strong-error-handler</span><span class="dl">'</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+  <span class="nx">before</span><span class="p">((</span><span class="nx">done</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="c1">// long setup</span>
+    <span class="c1">// .</span>
+    <span class="c1">// .</span>
+    <span class="cm">/** uff, what are we setting up here? and why? **/</span>
+    <span class="c1">// .</span>
+    <span class="c1">// .</span>
+    <span class="c1">// .</span>
+    <span class="cm">/** where are the tests, are we there yet? **/</span>
+    <span class="c1">// .</span>
+    <span class="nx">done</span><span class="p">();</span>
+  <span class="p">});</span>
+
+  <span class="nx">beforeEach</span><span class="p">((</span><span class="nx">done</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="c1">// reset</span>
+  <span class="p">});</span>
+
+  <span class="nx">it</span><span class="p">(</span><span class="dl">'</span><span class="s1">handles error like this</span><span class="dl">'</span><span class="p">);</span>
+  <span class="nx">it</span><span class="p">(</span><span class="dl">'</span><span class="s1">handles error like that</span><span class="dl">'</span><span class="p">);</span>
+ <span class="p">});</span>
+</code></pre></div></div>
+
+<div class="alert alert-info" role="alert">
+  <p><i class="fa fa-info-circle"></i>
+<b>EXCEPTION:</b></p>
+
+  <p>Variables initialized by helpers and used from tests should be declared at the top of the <code class="language-plaintext highlighter-rouge">describe</code> block. Variables shared by multiple <code class="language-plaintext highlighter-rouge">describe</code>
+blocks may be placed in the outer scope.</p>
+
+</div>
+
+<p>For example:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">describe</span><span class="p">(</span><span class="dl">'</span><span class="s1">my class</span><span class="dl">'</span><span class="p">,</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="kd">let</span> <span class="nx">app</span><span class="p">;</span>
+  <span class="nx">beforeEach</span><span class="p">(</span><span class="kd">function</span> <span class="nx">setupApp</span><span class="p">);</span>
+
+  <span class="nx">it</span><span class="p">(</span><span class="dl">'</span><span class="s1">does something</span><span class="dl">'</span><span class="p">);</span>
+
+  <span class="kd">function</span> <span class="nx">setupApp</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">app</span> <span class="o">=</span> <span class="nx">loopback</span><span class="p">();</span>
+    <span class="c1">// ...</span>
+  <span class="p">}</span>
+<span class="p">});</span>
+</code></pre></div></div>
+<h3 id="callback-function-moved-to-the-next-line">Callback function moved to the next line</h3>
+
+<p>The following examples show the preferred style when callback needs to move to the next line due to line length exceeding max line length defined by eslint:</p>
+
+<p><strong>Good</strong>:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">it</span><span class="p">(</span><span class="dl">'</span><span class="s1">my long test description ...</span><span class="dl">'</span><span class="p">,</span>
+<span class="kd">function</span><span class="p">(</span><span class="nx">done</span><span class="p">)</span> <span class="p">{</span>
+  <span class="p">...</span>
+<span class="p">});</span>
+</code></pre></div></div>
+
+<p><strong>Bad</strong>:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">it</span><span class="p">(</span><span class="dl">'</span><span class="s1">my long test description ...</span><span class="dl">'</span><span class="p">,</span>
+  <span class="kd">function</span><span class="p">(</span><span class="nx">done</span><span class="p">)</span> <span class="p">{</span>
+    <span class="err">…</span>
+  <span class="p">});</span>
+</code></pre></div></div>
+
+<p><strong>Bad</strong>:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">it</span><span class="p">(</span><span class="dl">'</span><span class="s1">my long test description ...</span><span class="dl">'</span><span class="p">,</span>
+  <span class="kd">function</span><span class="p">(</span><span class="nx">done</span><span class="p">)</span> <span class="p">{</span>
+    <span class="err">…</span>
+  <span class="p">}</span>
+<span class="p">);</span>
+</code></pre></div></div>
+
+<h3 id="test-naming">Test naming</h3>
+
+<p>Test names should describe the expected outcome under certain conditions. They should read like an English sentence, where <code class="language-plaintext highlighter-rouge">it</code> stands for the subject stated in <code class="language-plaintext highlighter-rouge">describe</code> argument.</p>
+
+<p>Use imperative mood, <strong>do not</strong> start test names with <code class="language-plaintext highlighter-rouge">should</code>.</p>
+
+<p>The test name should make clear:</p>
+
+<ul>
+  <li>What is being tested, and the conditions specific to this test case.</li>
+  <li>Expected outcome.</li>
+</ul>
+
+<p>Run <code class="language-plaintext highlighter-rouge">mocha -R spec</code> to review test names.</p>
+
+<p><strong>Good</strong>:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">describe</span><span class="p">(</span><span class="dl">'</span><span class="s1">strong-error-handler</span><span class="dl">'</span><span class="p">,</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="nx">it</span><span class="p">(</span><span class="dl">'</span><span class="s1">returns status 500 by default</span><span class="dl">'</span><span class="p">);</span>
+  <span class="c1">// reads as: strong-error-handler returns status 500 by default</span>
+ <span class="p">});</span>
+
+<span class="nx">describe</span><span class="p">(</span><span class="dl">'</span><span class="s1">User</span><span class="dl">'</span><span class="p">,</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="nx">describe</span><span class="p">(</span><span class="dl">'</span><span class="s1">login()</span><span class="dl">'</span><span class="p">,</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="nx">it</span><span class="p">(</span><span class="dl">'</span><span class="s1">accepts valid credentials</span><span class="dl">'</span><span class="p">);</span>
+    <span class="c1">// reads as: User login() accepts valid credentials</span>
+    <span class="nx">it</span><span class="p">(</span><span class="dl">'</span><span class="s1">creates an access token</span><span class="dl">'</span><span class="p">);</span>
+    <span class="c1">// reads as: User login() creates an access token</span>
+  <span class="p">});</span>
+<span class="p">);</span>
+</code></pre></div></div>
+
+<p><strong>Bad</strong>:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">describe</span><span class="p">(</span><span class="dl">'</span><span class="s1">strong-error-handler</span><span class="dl">'</span><span class="p">,</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="nx">it</span><span class="p">(</span><span class="dl">'</span><span class="s1">default status</span><span class="dl">'</span><span class="p">);</span>
+  <span class="nx">it</span><span class="p">(</span><span class="dl">'</span><span class="s1">should return status 500 by default</span><span class="dl">'</span><span class="p">);</span>
+<span class="p">});</span>
+
+<span class="nx">describe</span><span class="p">(</span><span class="dl">'</span><span class="s1">User</span><span class="dl">'</span><span class="p">,</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="nx">describe</span><span class="p">(</span><span class="dl">'</span><span class="s1">login()</span><span class="dl">'</span><span class="p">,</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="nx">it</span><span class="p">(</span><span class="dl">'</span><span class="s1">works</span><span class="dl">'</span><span class="p">);</span>
+    <span class="nx">it</span><span class="p">(</span><span class="dl">'</span><span class="s1">should create a token</span><span class="dl">'</span><span class="p">);</span>
+  <span class="p">});</span>
+<span class="p">});</span>
+</code></pre></div></div>
+
+<h3 id="test-block-naming">Test block naming</h3>
+
+<p>Use <code class="language-plaintext highlighter-rouge">describe</code> for the top-level outer blocks and <code class="language-plaintext highlighter-rouge">context</code> for the inner
+blocks. <code class="language-plaintext highlighter-rouge">describe</code> should be used when we are describing the subject - what is
+being tested. In this particular example, both <code class="language-plaintext highlighter-rouge">Model</code> and <code class="language-plaintext highlighter-rouge">find()</code> should use
+<code class="language-plaintext highlighter-rouge">describe</code>. The goal is to create a human readable prefix to stand for <code class="language-plaintext highlighter-rouge">it</code> in the
+test cases.</p>
+
+<p><strong>Good</strong>:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">describe</span><span class="p">(</span><span class="dl">'</span><span class="s1">Model</span><span class="dl">'</span><span class="p">,</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="nx">describe</span><span class="p">(</span><span class="dl">'</span><span class="s1">find()</span><span class="dl">'</span><span class="p">,</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="c1">// Use "context()" to create a logical group of tests</span>
+    <span class="c1">// executing a similar scenario.</span>
+    <span class="nx">context</span><span class="p">(</span><span class="dl">'</span><span class="s1">with "include" filter</span><span class="dl">'</span><span class="p">,</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+      <span class="nx">it</span><span class="p">(</span><span class="dl">'</span><span class="s1">adds related models to the result</span><span class="dl">'</span><span class="p">,</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+        <span class="c1">// Model find() returns filtered results</span>
+      <span class="p">});</span>
+    <span class="p">});</span>
+  <span class="p">});</span>
+
+  <span class="c1">// ...</span>
+<span class="p">});</span>
+</code></pre></div></div>
+
+<p><strong>Bad</strong>:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">describe</span><span class="p">(</span><span class="dl">'</span><span class="s1">Model</span><span class="dl">'</span><span class="p">,</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="nx">describe</span><span class="p">(</span><span class="dl">'</span><span class="s1">find()</span><span class="dl">'</span><span class="p">,</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="c1">// "describe()" is not suitable here, the source code line</span>
+    <span class="c1">// produces a misleading English sentence: "describe with include filter"</span>
+    <span class="nx">describe</span><span class="p">(</span><span class="dl">'</span><span class="s1">with "include" filter</span><span class="dl">'</span><span class="p">,</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+      <span class="nx">it</span><span class="p">(</span><span class="dl">'</span><span class="s1">adds related models to the result</span><span class="dl">'</span><span class="p">,</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+        <span class="c1">// Model find() returns filtered results</span>
+      <span class="p">});</span>
+    <span class="p">});</span>
+  <span class="p">});</span>
+
+  <span class="c1">// ...</span>
+<span class="p">});</span>
+</code></pre></div></div>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Don't overuse "context()", use "describe('Model')" instead</span>
+<span class="nx">context</span><span class="p">(</span><span class="dl">'</span><span class="s1">Model</span><span class="dl">'</span><span class="p">,</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="nx">context</span><span class="p">(</span><span class="dl">'</span><span class="s1">find()</span><span class="dl">'</span><span class="p">,</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="nx">context</span><span class="p">(</span><span class="dl">'</span><span class="s1">with "include" filter</span><span class="dl">'</span><span class="p">,</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+      <span class="nx">it</span><span class="p">(</span><span class="dl">'</span><span class="s1">adds related models to the result</span><span class="dl">'</span><span class="p">,</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+        <span class="c1">// Model find() returns filtered results</span>
+      <span class="p">});</span>
+    <span class="p">});</span>
+  <span class="p">});</span>
+
+  <span class="p">...</span>
+<span class="p">});</span>
+</code></pre></div></div>
+
+<h3 id="asserting-a-rejected-promise">Asserting a rejected Promise</h3>
+
+<p>Checking that a promise was rejected is tricky and makes it easy to introduce
+subtle bugs. Always use the following pattern:</p>
+
+<p><strong>Good</strong></p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// use a different test name, one that's appropriate for your test</span>
+<span class="nx">it</span><span class="p">(</span><span class="dl">'</span><span class="s1">fails when arguments are invalid</span><span class="dl">'</span><span class="p">,</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="nx">doSomethingThatShouldFail</span><span class="p">().</span><span class="nx">then</span><span class="p">(</span>
+    <span class="kd">function</span> <span class="nx">onSuccess</span><span class="p">()</span> <span class="p">{</span>
+      <span class="k">throw</span> <span class="k">new</span> <span class="nb">Error</span><span class="p">(</span><span class="dl">'</span><span class="s1">doSomething() should have failed</span><span class="dl">'</span><span class="p">);</span>
+    <span class="p">},</span>
+    <span class="kd">function</span> <span class="nx">onError</span><span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="p">{</span>
+      <span class="c1">// verify that "err" is the expected error</span>
+    <span class="p">});</span>
+<span class="p">});</span>
+</code></pre></div></div>
+
+<p><strong>Bad</strong></p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">it</span><span class="p">(</span><span class="dl">'</span><span class="s1">fails when arguments are invalid</span><span class="dl">'</span><span class="p">,</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="nx">doSomethingThatShouldFail</span><span class="p">()</span>
+    <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">result</span> <span class="o">=&gt;</span> <span class="p">{</span>
+      <span class="nx">assert</span><span class="p">(</span><span class="kc">false</span><span class="p">);</span>
+    <span class="p">})</span>
+    <span class="p">.</span><span class="k">catch</span><span class="p">(</span><span class="nx">err</span> <span class="o">=&gt;</span> <span class="p">{</span>
+      <span class="c1">// verify that "err" is the expected error</span>
+    <span class="p">});</span>
+<span class="p">});</span>
+</code></pre></div></div>
+
+<p>When <code class="language-plaintext highlighter-rouge">doSomethingThatShouldFail()</code> passes and <code class="language-plaintext highlighter-rouge">assert(false)</code> throws an error,
+this AssertionError is then handled by the <code class="language-plaintext highlighter-rouge">catch</code> block. If the “verify” step
+is written correctly, then the test fails because the AssertionError was not
+the expected error; however the failure message is misleading. If the “verify”
+step is not specific enough (e.g. any <code class="language-plaintext highlighter-rouge">Error</code> is accepted), then the test
+incorrectly passes.</p>
+
+
+    <div class="tags">
+      
+        <b>Tags: </b>
+        
+        
+          
+            <a href="tag_contributing.html" class="tags-item" role="button">contributing</a>
+            
+        
+          
+            <a href="tag_community.html" class="tags-item" role="button">community</a>
+            
+        
+      
+    </div>
+</div>
+
+<hr class="shaded"/>
+
+<footer id="container">
+            <div class="row">
+                <div class="col-md-6 footer-left">
+               &copy;2021 IBM / StrongLoop. All rights reserved. <br />
+ Site last generated: Mar 22, 2021
+              </div>
+              <div class="col-md-6 footer-right">
+                <p><img src="https://loopback.io/images/company_logo.png" alt="Company logo"/></p>
+              </div>
+            </div>
+</footer>
+
+
+        </div>
+        <!-- /.row -->
+</div>
+<!-- /.container -->
+    </div>
+</body>
+
+</html>

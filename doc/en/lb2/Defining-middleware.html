@@ -1,0 +1,4604 @@
+<!DOCTYPE html>
+<head>
+    
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="keywords" content=" LoopBack">
+  <title>Defining middleware | LoopBack Documentation</title>
+  <link rel="stylesheet" href="/css/syntax.css">
+
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/modern-business.css">
+    <link rel="stylesheet" href="/css/lavish-bootstrap.css">
+    <link rel="stylesheet" href="/css/customstyles.css">
+    <link rel="stylesheet" href="/css/theme-v4.css">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-150726441-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-150726441-2');
+</script>
+
+
+    <!-- github star button -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.3.0/anchor.min.js"></script>
+    <script src="/js/toc.js"></script>
+    <script src="/js/customscripts.js"></script>
+
+    <link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    
+
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-lg navbar-brand no_icon" href="/doc/index.html">
+              <img class="no_icon" style="width:147px;" src="/images/branding/logo/white/loopback.svg">&nbsp;<span class="projectTitle"></span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- entries without drop-downs appear here -->
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">API Docs<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        <!-- page.url is /doc/en/lb2/Defining-middleware.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://loopback.io/doc/en/lb4/apidocs.index.html" target="_blank">LoopBack 4</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb2/Defining-middleware.html .... folderitem.url is  -->
+                          
+                            <li><a href="http://apidocs.loopback.io" target="_blank">LoopBack 3.x</a></li>
+                          
+                        
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">View<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        <!-- page.url is /doc/en/lb2/Defining-middleware.html .... folderitem.url is / -->
+                          
+                            <li><a href="/">LoopBack Overview</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb2/Defining-middleware.html .... folderitem.url is /doc/en/lb4/ -->
+                          
+                            <li><a href="/doc/en/lb4/">LoopBack 4</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb2/Defining-middleware.html .... folderitem.url is /doc/en/lb3/ -->
+                          
+                            <li><a href="/doc/en/lb3/">LoopBack 3.x</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb2/Defining-middleware.html .... folderitem.url is /doc/en/lb2/ -->
+                          
+                            <li class="dropdownActive"><a href="/doc/en/lb2/">LoopBack 2.x</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb2/Defining-middleware.html .... folderitem.url is /doc/en/community/ -->
+                          
+                            <li><a href="/doc/en/community/">Community projects</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb2/Defining-middleware.html .... folderitem.url is /doc/en/contrib/ -->
+                          
+                            <li><a href="/doc/en/contrib/">Contributing to LoopBack</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb2/Defining-middleware.html .... folderitem.url is /doc/en/sec/ -->
+                          
+                            <li><a href="/doc/en/sec/">Security advisories</a></li>
+                          
+                        
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Resources<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        <!-- page.url is /doc/en/lb2/Defining-middleware.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://github.com/strongloop/loopback.io" target="_blank">Docs Github Repo</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb2/Defining-middleware.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://groups.google.com/forum/#!forum/loopbackjs-announcements" target="_blank">Announcements Mailing List</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb2/Defining-middleware.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://groups.google.com/forum/#!forum/loopbackjs" target="_blank">Developer Forum</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb2/Defining-middleware.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://join.slack.com/t/loopbackio/shared_invite/zt-8lbow73r-SKAKz61Vdao~_rGf91pcsw" target="_blank">LoopBack on Slack</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb2/Defining-middleware.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://stackoverflow.com/questions/tagged/strongloop+or+loopback4+or+loopbackjs" target="_blank">LoopBack on Stack Overflow</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb2/Defining-middleware.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://strongloop.com/strongblog/tag_LoopBack.html" target="_blank">StrongLoop Blog - LoopBack</a></li>
+                          
+                        
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Translations<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        <!-- page.url is /doc/en/lb2/Defining-middleware.html .... folderitem.url is /doc/es/lb2/ -->
+                          
+                            <li><a href="/doc/es/lb2/">Español (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb2/Defining-middleware.html .... folderitem.url is /doc/es/lb4/ -->
+                          
+                            <li><a href="/doc/es/lb4/">Español (v4)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb2/Defining-middleware.html .... folderitem.url is /doc/fr/lb2/ -->
+                          
+                            <li><a href="/doc/fr/lb2/">Français (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb2/Defining-middleware.html .... folderitem.url is /doc/fr/lb4/ -->
+                          
+                            <li><a href="/doc/fr/lb4/">Français (v4)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb2/Defining-middleware.html .... folderitem.url is /doc/ko/lb2/ -->
+                          
+                            <li><a href="/doc/ko/lb2/">한국어 (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb2/Defining-middleware.html .... folderitem.url is /doc/ko/lb3/ -->
+                          
+                            <li><a href="/doc/ko/lb3/">한국어 (v3)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb2/Defining-middleware.html .... folderitem.url is /doc/pt-br/lb2/ -->
+                          
+                            <li><a href="/doc/pt-br/lb2/">Português (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb2/Defining-middleware.html .... folderitem.url is /doc/pt-br/lb4/ -->
+                          
+                            <li><a href="/doc/pt-br/lb4/">Português (v4)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb2/Defining-middleware.html .... folderitem.url is /doc/ja/lb2/ -->
+                          
+                            <li><a href="/doc/ja/lb2/">日本語 (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb2/Defining-middleware.html .... folderitem.url is /doc/ja/lb3/ -->
+                          
+                            <li><a href="/doc/ja/lb3/">日本語 (v3)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb2/Defining-middleware.html .... folderitem.url is /doc/ja/lb4/ -->
+                          
+                            <li><a href="/doc/ja/lb4/">日本語 (v4)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb2/Defining-middleware.html .... folderitem.url is /doc/ru/lb2/ -->
+                          
+                            <li><a href="/doc/ru/lb2/">Pусский (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb2/Defining-middleware.html .... folderitem.url is /doc/zh/lb2/ -->
+                          
+                            <li><a href="/doc/zh/lb2/">中文 (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb2/Defining-middleware.html .... folderitem.url is /doc/zh/lb4/ -->
+                          
+                            <li><a href="/doc/zh/lb4/">中文 (v4)</a></li>
+                          
+                        
+                    </ul>
+                </li>
+                
+                
+                
+                <li>
+                    <form id="search" name="search" class="input-group lb-search" action="/search" method="GET">
+                        <input type="text" class="form-control search-bar" placeholder="Search (powered by Watson)" name="q">
+                        
+                          <input type="hidden" name="sidebar" value="lb2_sidebar">
+                        
+                        <div class="input-group-btn">
+                            <button type="submit" class="btn btn-default" aria-label="search">
+                              <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                            </button>
+                        </div>
+                      </form>
+                </li>
+            </ul>
+        </div>
+      </div>
+</nav>
+
+<!-- Page Content -->
+<div class="container">
+    <!-- Content Row -->
+    <div class="row">
+        <!-- Sidebar Column -->
+        <nav class="col-md-3 sidebar-col">
+          
+
+
+
+
+
+
+
+
+
+
+
+<!-- NOTE: sidebar = site.data.sidebars.mydoc_sidebar.entries -->
+<div class="sidebarTitle"><a href="index.html">Loopback 2.0</a></div>
+<ul id="mysidebar" class="nav-list">
+  
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Installation.html">Installation</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Installing-IBM-API-Connect.html">Installing IBM API Connect</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Installing-StrongLoop.html">Installing StrongLoop</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Installing-compiler-tools.html">Installing compiler tools</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Installing-on-MacOS.html">Installing on MacOS</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Installing-on-Windows.html">Installing on Windows</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Installing-on-Linux.html">Installing on Linux</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Updating-to-the-latest-version.html">Updating to the latest version</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Installation-troubleshooting.html">Installation troubleshooting</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="LoopBack-core-concepts.html">LoopBack core concepts</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Routing.html">Routing</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="LoopBack-FAQ.html">LoopBack FAQ</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Glossary.html">Glossary</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="StrongLoop-Labs.html">StrongLoop Labs</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Getting-started-with-LoopBack.html">Getting started with LoopBack</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Create-a-simple-API.html">Create a simple API</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Use-API-Explorer.html">Use API Explorer</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Connect-your-API-to-a-data-source.html">Connect your API to a data source</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Extend-your-API.html">Extend your API</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Add-a-static-web-page.html">Add a static web page</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Add-a-custom-Express-route.html">Add a custom Express route</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Next-steps.html">Next steps</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Deploy-for-GDPR-readiness.html">Considerations for GDPR readiness</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Getting-started-part-II.html">Getting started part II</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Introducing-the-Coffee-Shop-Reviews-app.html">Introducing the Coffee Shop Reviews app</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Create-new-data-source.html">Create new data source</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Create-new-models.html">Create new models</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Define-model-relations.html">Define model relations</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Define-access-controls.html">Define access controls</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Define-a-remote-hook.html">Define a remote hook</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Create-AngularJS-client.html">Create AngularJS client</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Learn-more.html">Learn more</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Security-advisories.html">Security advisories</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Security-advisory-08-15-2018.html">08-15-2018</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Security-advisory-08-08-2018.html">08-08-2018</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Security-advisory-01-31-2018.html">01-31-2018</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Security-advisory-03-10-2017.html">03-10-2017</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Security-advisory-08-16a-2016.html">08-16a-2016</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Security-advisory-08-16-2016.html">08-16-2016</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Security-advisory-01-12-2016.html">01-12-2016</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Security-advisory-06-04-2015.html">06-04-2015</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Security-advisory-01-09-2015.html">01-09-2015</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Creating-an-application.html">Creating an application</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Environment-specific-configuration.html">Environment-specific configuration</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Versioning-your-API.html">Versioning your API</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Standard-project-structure.html">Standard project structure</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Tutorials-and-examples.html">Tutorials and examples</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Managing-users.html">Managing users</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Registering-users.html">Registering users</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Logging-in-users.html">Logging in users</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Partitioning-users-with-realms.html">Partitioning users with realms</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="User-management-example.html">User management example</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="AccessToken-invalidation.html">AccessToken invalidation</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Authentication-authorization-and-permissions.html">Authentication, authorization, and permissions</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Introduction-to-User-model-authentication.html">Introduction to User model authentication</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Controlling-data-access.html">Controlling data access</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Making-authenticated-requests.html">Making authenticated requests</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Defining-and-using-roles.html">Defining and using roles</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Accessing-related-models.html">Accessing related models</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Creating-a-default-admin-user.html">Creating a default admin user</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Security-considerations.html">Security considerations</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Tutorial-access-control.html">Tutorial: access control</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Defining-models.html">Defining models</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Creating-models.html">Creating models</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Using-the-model-generator.html">Using the model generator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Discovering-models-from-relational-databases.html">Discovering models from relational databases</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Creating-models-from-unstructured-data.html">Creating models from unstructured data</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Customizing-models.html">Customizing models</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Attaching-models-to-data-sources.html">Attaching models to data sources</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Exposing-models-over-REST.html">Exposing models over REST</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Validating-model-data.html">Validating model data</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Creating-model-relations.html">Creating model relations</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Tutorial-model-relations.html">Tutorial: model relations</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="BelongsTo-relations.html">BelongsTo relations</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="HasOne-relations.html">HasOne relations</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="HasMany-relations.html">HasMany relations</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="HasManyThrough-relations.html">HasManyThrough relations</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="HasAndBelongsToMany-relations.html">HasAndBelongsToMany relations</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Polymorphic-relations.html">Polymorphic relations</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Querying-related-models.html">Querying related models</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Embedded-models-and-relations.html">Embedded models and relations</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Nested-queries.html">Nested queries</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Using-built-in-models.html">Using built-in models</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Extending-built-in-models.html">Extending built-in models</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Adding-remote-methods-to-built-in-models.html">Adding remote methods to built-in models</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Creating-database-tables-for-built-in-models.html">Creating database tables for built-in models</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Model-property-reference.html">Model property reference</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Built-in-models-REST-API.html">Built-in models REST API</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="PersistedModel-REST-API.html">PersistedModel REST API</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Access-token-REST-API.html">Access token REST API</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="ACL-REST-API.html">ACL REST API</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Application-REST-API.html">Application REST API</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Relation-REST-API.html">Relation REST API</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Role-REST-API.html">Role REST API</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="User-REST-API.html">User REST API</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Connecting-models-to-data-sources.html">Connecting models to data sources</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Creating-a-database-schema-from-models.html">Creating a database schema from models</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Advanced-topics-data-sources.html">Understanding data sources</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Using-database-transactions.html">Using database transactions</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Executing-native-SQL.html">Executing native SQL</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Building-a-connector.html">Building a connector</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Implementing-create-retrieve-update-and-delete-methods.html">Implementing create, retrieve, update, and delete methods</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Implementing-model-discovery.html">Implementing model discovery</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Implementing-auto-migration.html">Implementing auto-migration</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Working-with-data.html">Working with data</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Creating-updating-and-deleting-data.html">Creating, updating, and deleting data</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Querying-data.html">Querying data</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Fields-filter.html">Fields filter</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Include-filter.html">Include filter</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Limit-filter.html">Limit filter</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Order-filter.html">Order filter</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Skip-filter.html">Skip filter</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Where-filter.html">Where filter</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Advanced-topics-data.html">Advanced topics: data</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Realtime-server-sent-events.html">Realtime server-sent events</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="AngularJS-LiveSet.html">AngularJS Live Set</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="AngularJS-LiveSet-Example.html">AngularJS Live Set example</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Realtime-socket-io.html">Real-time apps AngularJS using socket.io</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Adding-application-logic.html">Adding application logic</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Working-with-LoopBack-objects.html">Working with LoopBack objects</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Adding-logic-to-models.html">Adding logic to models</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Remote-methods.html">Remote methods</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Remote-hooks.html">Remote hooks</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Operation-hooks.html">Operation hooks</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Model-hooks.html">Model hooks</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Connector-hooks.html">Connector hooks</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Tutorial-Adding-application-logic.html">Tutorial: Application logic</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Defining-boot-scripts.html">Defining boot scripts</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Defining-mixins.html">Defining mixins</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  active">
+    
+    
+      <a class="page-link" href="Defining-middleware.html">Defining middleware</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Middleware-example.html">Middleware example</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Using-current-context.html">Using current context</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Events.html">Events</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Using-promises.html">Using promises</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Running-and-debugging-apps.html">Running and debugging apps</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Setting-debug-strings.html">Setting debug strings</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Using-strong-error-handler.html">Using strong-error-handler</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Preparing-for-deployment.html">Preparing for deployment</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="LoopBack-on-Bluemix.html">Running LoopBack apps on Bluemix</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="LoopBack-components.html">LoopBack components</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="OAuth-2.0.html">OAuth 2.0 component</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Push-notifications.html">Push notification component</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Push-notifications-for-iOS-apps.html">Push notifications for iOS apps</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Push-notifications-for-Android-apps.html">Push notifications for Android apps</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Storage-component.html">Storage component</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Storage-component-REST-API.html">Storage component REST API</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Storage-example.html">Storage component example</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Third-party-login-using-Passport.html">Passport login component</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Configuring-providers.json.html">Configuring providers.json</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Tutorial-third-party-login.html">Tutorial: third-party login</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Synchronization.html">Synchronization component</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Tutorial-Offline-Synchronization.html">Tutorial: Offline Synchronization</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Advanced-topics-sync.html">Advanced topics - sync</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Creating-components.html">Creating components</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Command-line-tools.html">Command-line tools</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="ACL-generator.html">ACL generator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="API-definition-generator.html">API definition generator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Application-generator.html">Application generator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Boot-script-generator.html">Boot script generator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Data-source-generator.html">Data source generator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Middleware-generator.html">Middleware generator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Model-generator.html">Model generator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Property-generator.html">Property generator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Relation-generator.html">Relation generator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Remote-method-generator.html">Remote method generator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Swagger-generator.html">Swagger generator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Refresh-definitions-command.html">Refresh definitions command</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Client-SDKs.html">Client SDKs</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="iOS-SDK.html">iOS SDK</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="IOS-getting-started.html">Getting started with the iOS SDK</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Android-SDK.html">Android SDK</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Tutorial-android-getting-started.html">Getting started with the Android SDK</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Working-with-files-using-the-Android-SDK.html">Working with files using the Android SDK</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Push-notifications-using-Android-SDK.html">Push notifications using Android SDK</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Working-with-the-LocalInstallation-class.html">Working with the LocalInstallation class</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="AngularJS-JavaScript-SDK.html">AngularJS SDK</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Angular-example-app.html">Angular example app</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="AngularJS-Grunt-plugin.html">AngularJS Grunt plugin</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Xamarin-SDK.html">Xamarin SDK</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Xamarin-client-API.html">Xamarin client API</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Xamarin-example-app.html">Xamarin example app</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="LoopBack-in-the-client.html">Isomorphic LoopBack</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Running-LoopBack-in-the-browser.html">Running LoopBack in the browser</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Using-Browserify.html">Using Browserify</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Isomorphic-LoopBack-example.html">Isomorphic example</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Connectors-reference.html">Connectors reference</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Memory-connector.html">Memory connector</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Database-connectors.html">Database connectors</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Cloudant-connector.html">Cloudant connector</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="DashDB.html">DashDB</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="DB2-connector.html">DB2 connector</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="DB2-iSeries-connector.html">DB2 for iSeries connector</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="DB2-for-z-OS.html">DB2 for z/OS</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Informix.html">Informix connector</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="MongoDB-connector.html">MongoDB connector</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Connecting-to-MongoDB.html">MongoDB Connector Tutorial</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Using-MongoLab.html">Using MongoLab</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="MySQL-connector.html">MySQL connector</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Connecting-to-MySQL.html">MySQL Connector Tutorial</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Oracle-connector.html">Oracle connector</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Installing-the-Oracle-connector.html">Installing the Oracle connector</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Connecting-to-Oracle.html">Oracle connector tutorial</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="PostgreSQL-connector.html">PostgreSQL connector</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Connecting-to-PostgreSQL.html">PostgreSQL connector tutorial</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Redis-connector.html">Redis connector</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="kv-redis-connector.html">Redis key-value connector</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Example-kv-connector.html">KV connector example</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="SQL-Server-connector.html">SQL Server connector</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Connecting-to-Microsoft-SQL-Server.html">SQL Server connector tutorial</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="SQLite3.html">SQLite3 connector</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Other-connectors.html">Other connectors</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Email-connector.html">Email connector</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="JSON-RPC-connector.html">JSON RPC connector</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="MQLight-connector.html">MQ Light connector</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Push-connector.html">Push connector</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Remote-connector.html">Remote connector</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Remote-connector-example.html">Remote connector example</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Strong-Remoting.html">Strong Remoting</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="REST-connector.html">REST connector</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="REST-connector-example.html">REST connector example</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="SOAP-connector.html">SOAP connector</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="SOAP-Connector-example.html">SOAP connector example</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Storage-connector.html">Storage connector</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Swagger-connector.html">Swagger connector</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Community-connectors.html">Community connectors</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Project-layout-reference.html">Project layout reference</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="client-directory.html">client directory</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="common-directory.html">common directory</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Model-definition-JSON-file.html">Model definition JSON file</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="package.json.html">package.json</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="server-directory.html">server directory</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="config.json.html">config.json</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="datasources.json.html">datasources.json</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="middleware.json.html">middleware.json</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="model-config.json.html">model-config.json</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="server.js.html">server.js</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Node-reference.html">Node reference</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="LoopBack-types.html">LoopBack types</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Geotype.html">Geopoint type</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Valid-names-in-LoopBack.html">Valid names in LoopBack</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Basic-model-object.html">Basic model object</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Connected-model-object.html">Connected model object</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Error-object.html">Error object</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="LoopBack-middleware.html">LoopBack middleware</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Publish-subscribe-messaging.html">Publish-subscribe messaging</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Strong-pub-sub.html">Strong Pub-sub</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Pub-sub-bridge.html">Pub-sub bridge</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="MQTT-adapter.html">MQTT adapter</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Redis-pub-sub-adapter.html">Redis pub-sub adapter</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Primus-pub-sub-adapter.html">Primus pub-sub adapter</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Pub-sub-example.html">Node pub-sub example app</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Pub-sub-Loopback-example.html">LoopBack pub-sub example app</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="All-tags.html">All tags</a>
+    
+      
+  </li>
+  
+
+
+
+</ul>
+
+        </nav>
+        <!-- Content Column -->
+        <div class="col-md-9">
+            
+  <div class="v3notice">This article is for LoopBack 2.x, which is no longer supported.  Please see the <a href="/doc/en/lb3/Defining-middleware.html">corresponding article for 3.x</a>.  </div>
+
+
+<div class="post-header">
+   <h1 class="post-title-main">Defining middleware</h1>
+   
+     
+       <a target="_blank" href="https://github.com/strongloop/loopback.io/blob/gh-pages/pages/en/lb2/Defining-middleware.md" class="githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit this page</a>
+   
+</div>
+
+<div class="post-content">
+
+
+  
+
+
+
+
+ 
+   
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+;$(function() {
+  var level = parseInt(3, 10);
+  if (level === 1) {level = 'h2'}
+  if (level === 2) {level = 'h2,h3'}
+  if (level === 3) {level = 'h2,h3,h4'}
+  if (level === 4) {level = 'h2,h3,h4,h5'}
+
+  // Add a new level for changelog files which use h1,h2,h3
+  if (level === 0) {level = 'h1,h2,h3,h4,h5'}
+
+  var toc = $('#toc')
+
+  toc.toc({minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: level})
+
+  /* this offset helps with the space taken up by the floating toolbar */
+  toc.on('click', 'a', function() {
+    var target = $(this.getAttribute('href')),
+      scroll_target = target.offset().top
+
+    $(window).scrollTop(scroll_target - 10)
+    return false
+  })
+  .on('click', '.toc-expand-button', function() {
+    toc.find('> ul').slideToggle('fast');
+  })
+})
+</script>
+
+<div id="toc">
+  <span class="toc-title">Page Contents</span>
+  <button type="button" class="btn btn-link toc-expand-button">
+    <i class="fa fa-bars"></i>
+  </button>
+</div>
+
+ 
+
+    <h2 id="overview">Overview</h2>
+
+<p><em>Middleware</em> refers to functions executed when HTTP requests are made to REST endpoints.
+Since LoopBack is based on <a href="http://expressjs.com/">Express</a>, LoopBack middleware is the same as <a href="http://expressjs.com/api.html#middleware">Express middleware</a>.
+However, LoopBack adds the concept of <em>middleware phases</em>, to clearly define the order in which middleware is called.
+Using phases helps to avoid ordering issues that can occur with standard Express middleware.</p>
+
+<p>LoopBack supports the following types of middleware:</p>
+
+<ul>
+  <li><strong>Pre-processing middleware</strong> for custom application logic. See <a href="#static-middleware">example of static middleware</a>. </li>
+  <li><strong>Dynamic request handling middleware</strong> to serve dynamically-generated responses, for example HTML pages rendered from templates and JSON responses to REST API requests.
+See <a href="#pre-processing-middleware">example of pre-processing middleware</a>.</li>
+  <li><strong>Static middleware</strong> to serve static client-side assets.  See <a href="#static-middleware">example of static middleware</a>.</li>
+  <li><strong>Error-handling middleware</strong> to deal with request errors. See <a href="#error-handling-middleware">example of error-handling middleware</a>.</li>
+</ul>
+
+<h3 id="how-to-add-middleware">How to add middleware</h3>
+
+<p>To add middleware to your application:</p>
+
+<ol>
+  <li><strong>Specify the middleware function</strong>:
+    <ol>
+      <li>If using an existing function or package, add the code to your application or install the package. </li>
+      <li>If you are creating a new middleware function, write it. See <a href="#defining-a-new-middleware-handler-function">Defining a new middleware handler function</a>.</li>
+    </ol>
+  </li>
+  <li><strong>Register the middleware</strong>:
+    <ol>
+      <li>Edit <code class="language-plaintext highlighter-rouge">server/middleware.json</code>. This is the recommended way to register middleware. See <a href="#registering-middleware-in-middlewarejson">Registering middleware in middleware.json</a>.</li>
+      <li>Alternatively, register the middleware in application code. See <a href="#registering-middleware-in-javascript">Registering middleware in JavaScript</a>.</li>
+    </ol>
+  </li>
+</ol>
+
+<h3 id="middleware-phases">Middleware phases</h3>
+
+<p>LoopBack defines a number of <em>phases</em>, corresponding to different aspects of application execution.
+When you register middleware, you can specify the phase in which the application will call it.
+See <a href="#registering-middleware-in-middlewarejson">Registering middleware in middleware.json</a> and <a href="#using-the-loopback-api">Using the LoopBack API</a>.
+If you register middleware (or routes) with the Express API, then it is executed at the beginning of the <code class="language-plaintext highlighter-rouge">routes</code> phase.</p>
+
+<p>The predefined phases are:</p>
+
+<ol>
+  <li><strong><code class="language-plaintext highlighter-rouge">initial</code></strong> - The first point at which middleware can run.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">session</code></strong> - Prepare the session object.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">auth</code></strong> - Handle authentication and authorization.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">parse</code></strong> - Parse the request body.</li>
+  <li>
+    <p><strong><code class="language-plaintext highlighter-rouge">routes</code></strong> - HTTP routes implementing your application logic.
+Middleware registered via the Express API <code class="language-plaintext highlighter-rouge">app.use</code>, <code class="language-plaintext highlighter-rouge">app.route</code>, <code class="language-plaintext highlighter-rouge">app.get</code> (and other HTTP verbs) runs at the beginning of this phase.
+Use this phase also for sub-apps like <code class="language-plaintext highlighter-rouge">loopback/server/middleware/rest</code> or <code class="language-plaintext highlighter-rouge">loopback-explorer</code>.</p>
+  </li>
+  <li>
+    <p><strong><code class="language-plaintext highlighter-rouge">files</code></strong> - Serve static assets (requests are hitting the file system here).</p>
+  </li>
+  <li><strong><code class="language-plaintext highlighter-rouge">final</code></strong> - Deal with errors and requests for unknown URLs.</li>
+</ol>
+
+<p>Each phase has “before” and “after” subphases in addition to the main phase, encoded following the phase name, separated by a colon.
+For example, for the “initial” phase, middleware executes in this order:</p>
+
+<ol>
+  <li><code class="language-plaintext highlighter-rouge">initial:before </code></li>
+  <li><code class="language-plaintext highlighter-rouge">initial</code></li>
+  <li><code class="language-plaintext highlighter-rouge">initial:after</code></li>
+</ol>
+
+<p>Middleware within a single subphase executes in the order in which it is registered. However, you should not rely on such order.
+Always explicitly order the middleware using appropriate phases when order matters.</p>
+
+<h2 id="specifying-a-middleware-function">Specifying a middleware function</h2>
+
+<h3 id="using-built-in-middleware">Using built-in middleware</h3>
+
+<p>LoopBack provides convenience middleware for commonly-used Express/Connect middleware, as described in the following table.</p>
+
+<p>When you use this middleware, you don’t have to write any code or install any packages; you just specify in which phase you want it to be called.
+See <a href="#registering-middleware-in-middlewarejson">Registering middleware in middleware.json</a>.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Middleware ID</th>
+      <th>Code accessor</th>
+      <th>External package</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>loopback#favicon</code></td>
+      <td><code>loopback.favicon()</code></td>
+      <td><a href="https://github.com/expressjs/serve-favicon" class="external-link" rel="nofollow">serve-favicon</a></td>
+    </tr>
+    <tr>
+      <td><code>loopback#rest</code></td>
+      <td><code><a href="http://apidocs.strongloop.com/loopback/#loopback-rest" class="external-link" rel="nofollow">loopback.rest()</a></code></td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td><code>loopback#static</code></td>
+      <td><code>loopback.static()</code></td>
+      <td><a href="https://github.com/expressjs/serve-static" class="external-link" rel="nofollow">serve-static</a></td>
+    </tr>
+    <tr>
+      <td><code>loopback#status</code></td>
+      <td><code><a href="http://apidocs.strongloop.com/loopback/#loopback-status" class="external-link" rel="nofollow">loopback.status()</a></code></td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td><code>loopback#token</code></td>
+      <td><code><a href="http://apidocs.strongloop.com/loopback/#loopback-token" class="external-link" rel="nofollow">loopback.token()</a></code></td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td><code>loopback#urlNotFound</code></td>
+      <td><code><a href="http://apidocs.strongloop.com/loopback/#loopback-urlNotFound" class="external-link" rel="nofollow">loopback.urlNotFound()</a></code></td>
+      <td>N/A</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>To simplify migration from LoopBack 1.x and Express 3.x, LoopBack provides middleware that was built-in to in Express 3.x, as shown in the following table.
+Best practice is to load this middleware directly via <code class="language-plaintext highlighter-rouge">require()</code> and not rely on LoopBack’s compatibility layer.</p>
+
+<div class="sl-hidden">
+  <p> </p>
+  <div class="table-wrap">
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;th&gt;
+        &lt;div class="tablesorter-header-inner"&gt;LoopBack middleware&lt;/div&gt;
+      &lt;/th&gt;
+      &lt;th&gt;
+        &lt;div class="tablesorter-header-inner"&gt;Express/Connect middleware&lt;/div&gt;
+      &lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;loopback.body-parser()&lt;/td&gt;
+      &lt;td&gt;&lt;a class="external-link" href="https://github.com/expressjs/body-parser" rel="nofollow"&gt;body-parser&lt;/a&gt;&amp;nbsp;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;loopback.compress()&lt;/td&gt;
+      &lt;td&gt;&lt;a class="external-link" href="https://github.com/expressjs/compression" rel="nofollow"&gt;compression&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;loopback.timeout()&lt;/td&gt;
+      &lt;td&gt;&lt;a class="external-link" href="https://github.com/expressjs/timeout" rel="nofollow"&gt;connect-timeout&lt;/a&gt;&amp;nbsp;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;loopback.cookieParser()&lt;/td&gt;
+      &lt;td&gt;&lt;a class="external-link" href="https://github.com/expressjs/cookie-parser" rel="nofollow"&gt;cookie-parser&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;loopback.cookieSession()&lt;/td&gt;
+      &lt;td&gt;&lt;a class="external-link" href="https://github.com/expressjs/cookie-session" rel="nofollow"&gt;cookie-session&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;loopback.csrf()&lt;/td&gt;
+      &lt;td&gt;&lt;a class="external-link" href="https://github.com/expressjs/csurf" rel="nofollow"&gt;csurf&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;loopback.errorHandler()&lt;/td&gt;
+      &lt;td&gt;&lt;a class="external-link" href="https://github.com/expressjs/errorhandler" rel="nofollow"&gt;errorhandler&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;loopback.session()&lt;/td&gt;
+      &lt;td&gt;&lt;a class="external-link" href="https://github.com/expressjs/session" rel="nofollow"&gt;express-session&lt;/a&gt;&amp;nbsp;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;loopback.methodOverride()&lt;/td&gt;
+      &lt;td&gt;&lt;a class="external-link" href="https://github.com/expressjs/method-override" rel="nofollow"&gt;method-override&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;loopback.logger()&lt;/td&gt;
+      &lt;td&gt;&lt;a class="external-link" href="https://github.com/expressjs/morgan" rel="nofollow"&gt;morgan&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;loopback.responseTime()&lt;/td&gt;
+      &lt;td&gt;&lt;a class="external-link" href="https://github.com/expressjs/response-time" rel="nofollow"&gt;response-time&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;loopback.directory()&lt;/td&gt;
+      &lt;td&gt;&lt;a class="external-link" href="https://github.com/expressjs/serve-index" rel="nofollow"&gt;serve-index&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;loopback.vhost()&lt;/td&gt;
+      &lt;td&gt;&lt;a class="external-link" href="https://github.com/expressjs/vhost" rel="nofollow"&gt;vhost&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+</code></pre></div>    </div>
+  </div>
+</div>
+
+<h3 id="using-other-middleware">Using other middleware</h3>
+
+<p>You can use any middleware compatible with Express; see <a href="http://expressjs.com/resources/middleware.html">Express documentation</a> for a partial list.</p>
+
+<p>Simply install it:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>npm <span class="nb">install</span> <span class="nt">--save</span> &lt;module-name&gt;
+</code></pre></div></div>
+
+<p>Then simply register it so that it is called as needed.
+See <a href="#registering-middleware-in-middlewarejson">Registering middleware in middleware.json</a> 
+and
+<a href="#registering-middleware-in-javascript">Registering middleware in JavaScript</a>.</p>
+
+<h3 id="defining-a-new-middleware-handler-function">Defining a new middleware handler function</h3>
+
+<p>If no existing middleware does what you need, you can easily write your own middleware handler function.
+To register the middleware function in <code class="language-plaintext highlighter-rouge">middleware.json</code>, you need to create a constructor (factory) function that returns the middleware function.</p>
+
+<p>By convention, place middleware functions in the <code class="language-plaintext highlighter-rouge">server/middleware</code> directory.</p>
+
+<p>A middleware handler function accepts three arguments, or four arguments if it is error-handling middleware. The general form is:</p>
+
+<p>xx</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">myMiddlewareFunc</span><span class="p">([</span><span class="nx">err</span><span class="p">,]</span> <span class="nx">req</span><span class="p">,</span> <span class="nx">res</span><span class="p">,</span> <span class="nx">next</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// ...</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<table>
+  <tbody>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Optional?</th>
+      <th>Description</th>
+    </tr>
+    <tr>
+      <td>err</td>
+      <td>Object</td>
+      <td>Required for error-handling middleware.</td>
+      <td>
+        <p>Use <em>only</em> for error-handling middleware.</p>
+        <p>Error object, usually an instance or <code>Error</code>; for more information, see <a href="Error-object.html">Error object</a>.</p>
+      </td>
+    </tr>
+    <tr>
+      <td>req</td>
+      <td>Object</td>
+      <td>No</td>
+      <td>
+        <p>The Express <a href="http://expressjs.com/4x/api.html#request" class="external-link" rel="nofollow">request object</a>.</p>
+      </td>
+    </tr>
+    <tr>
+      <td>res</td>
+      <td>Object</td>
+      <td>No</td>
+      <td>
+        <p>The Express <a href="http://expressjs.com/4x/api.html#response" class="external-link" rel="nofollow">response object</a>.</p>
+      </td>
+    </tr>
+    <tr>
+      <td>next</td>
+      <td>Function</td>
+      <td>No</td>
+      <td>Call <code>next()</code> after your application logic runs to pass control to the next middleware handler.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>An example of a middleware function with three arguments, called to process the request when previous handlers did not report an error:</p>
+
+<div id="Regular middleware" class="code-caption">
+  <p>Regular middleware</p>
+</div>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">return</span> <span class="kd">function</span> <span class="nx">myMiddleware</span><span class="p">(</span><span class="nx">req</span><span class="p">,</span> <span class="nx">res</span><span class="p">,</span> <span class="nx">next</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// ...</span>
+<span class="p">};</span>
+</code></pre></div></div>
+
+<p>Here is a constructor (factory) for this function; use this form when registering it in <code class="language-plaintext highlighter-rouge">middleware.json</code>:</p>
+
+<div id="Regular middleware" class="code-caption">
+  <p>Regular middleware</p>
+</div>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">module</span><span class="p">.</span><span class="nx">exports</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="kd">function</span> <span class="nx">myMiddleware</span><span class="p">(</span><span class="nx">req</span><span class="p">,</span> <span class="nx">res</span><span class="p">,</span> <span class="nx">next</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// ...</span>
+  <span class="p">}</span>
+<span class="p">};</span>
+</code></pre></div></div>
+
+<p>An example a middleware function with four arguments, called only when an error was encountered.</p>
+
+<div id="Error handler middleware" class="code-caption">
+  <p>Error handler middleware</p>
+</div>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">myErrorHandler</span><span class="p">(</span><span class="nx">err</span><span class="p">,</span> <span class="nx">req</span><span class="p">,</span> <span class="nx">res</span><span class="p">,</span> <span class="nx">next</span><span class="p">)</span> <span class="p">{</span>
+  <span class="c1">// ...</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="packaging-a-middleware-function">Packaging a middleware function</h3>
+
+<p>To share middleware across multiple projects, create a package that exports a middleware constructor (factory) function that accepts configuration 
+options and returns a middleware handler function; for example, as shown below.</p>
+
+<p>If you have an existing project created via <code class="language-plaintext highlighter-rouge">apic loopback</code>, to implement a new middleware handler that you can share with other projects,
+place the file with the middleware constructor in the <code class="language-plaintext highlighter-rouge">server/middleware</code> directory, for example, <code class="language-plaintext highlighter-rouge">server/middleware/myhandler.js</code>.</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">module</span><span class="p">.</span><span class="nx">exports</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">options</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="kd">function</span> <span class="nx">customHandler</span><span class="p">(</span><span class="nx">req</span><span class="p">,</span> <span class="nx">res</span><span class="p">,</span> <span class="nx">next</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// use options to control handler's behavior</span>
+  <span class="p">}</span>
+<span class="p">};</span>
+</code></pre></div></div>
+
+<p>For details about the <code class="language-plaintext highlighter-rouge">options</code> object, refer to <a href="#middleware-configuration-properties">Middleware configuration properties</a>.</p>
+
+<h2 id="registering-middleware-in-middlewarejson">Registering middleware in middleware.json</h2>
+
+<p>The easiest way to register middleware is in <code class="language-plaintext highlighter-rouge">server/middleware.json</code>.
+This file specifies all an application’s middleware functions and the phase in which they are called.</p>
+
+<p>When you create an application using the <a href="Application-generator.html">Application generator</a> 
+it creates a default <code class="language-plaintext highlighter-rouge">middleware.json</code> file that looks as follows:</p>
+
+<div id="server/middleware.json" class="code-caption">
+  <p>server/middleware.json</p>
+</div>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span>
+  <span class="dl">"</span><span class="s2">initial:before</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+    <span class="dl">"</span><span class="s2">loopback#favicon</span><span class="dl">"</span><span class="p">:</span> <span class="p">{}</span>
+  <span class="p">},</span>
+  <span class="dl">"</span><span class="s2">initial</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+    <span class="dl">"</span><span class="s2">compression</span><span class="dl">"</span><span class="p">:</span> <span class="p">{}</span>
+  <span class="p">},</span>
+  <span class="dl">"</span><span class="s2">session</span><span class="dl">"</span><span class="p">:</span> <span class="p">{},</span>
+  <span class="dl">"</span><span class="s2">auth</span><span class="dl">"</span><span class="p">:</span> <span class="p">{},</span>
+  <span class="dl">"</span><span class="s2">parse</span><span class="dl">"</span><span class="p">:</span> <span class="p">{},</span>
+  <span class="dl">"</span><span class="s2">routes</span><span class="dl">"</span><span class="p">:</span> <span class="p">{},</span>
+  <span class="dl">"</span><span class="s2">files</span><span class="dl">"</span><span class="p">:</span> <span class="p">{},</span>
+  <span class="dl">"</span><span class="s2">final</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+    <span class="dl">"</span><span class="s2">loopback#urlNotFound</span><span class="dl">"</span><span class="p">:</span> <span class="p">{}</span>
+  <span class="p">},</span>
+  <span class="dl">"</span><span class="s2">final:after</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+    <span class="dl">"</span><span class="s2">errorhandler</span><span class="dl">"</span><span class="p">:</span> <span class="p">{}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Each top-level key in <code class="language-plaintext highlighter-rouge">middleware.json</code> defines a middleware phase or sub-phase, for example “initial”, “session:before”, or “final”.
+Phases run in the order they occur in the file.</p>
+
+<p>Each phase is a JSON object containing a key for each middleware function to be called in that phase.
+For example, “loopback/server/middleware/favicon” or “compression”.</p>
+
+<p>In general, each phase has the following syntax:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">phase</span><span class="p">[:</span><span class="nx">sub</span><span class="o">-</span><span class="nx">phase</span><span class="p">]</span> <span class="p">:</span> <span class="p">{</span>
+ <span class="nl">middlewarePath</span> <span class="p">:</span> <span class="p">{</span>
+   <span class="p">[</span> <span class="na">enabled</span><span class="p">:</span> <span class="p">[</span><span class="kc">true</span> <span class="o">|</span> <span class="kc">false</span><span class="p">]</span> <span class="p">]</span>
+   <span class="p">[,</span> <span class="na">name</span><span class="p">:</span> <span class="nx">nameString</span> <span class="p">]</span>
+   <span class="p">[,</span> <span class="na">params</span> <span class="p">:</span> <span class="nx">paramSpec</span> <span class="p">]</span>
+   <span class="p">[,</span> <span class="na">methods</span><span class="p">:</span> <span class="nx">methodSpec</span> <span class="p">]</span>
+   <span class="p">[</span> <span class="na">paths</span> <span class="p">:</span> <span class="nx">routeSpec</span> <span class="p">]</span>
+ <span class="p">}</span>
+<span class="p">};</span>
+</code></pre></div></div>
+
+<p>Where:</p>
+
+<ul>
+  <li><em>phase</em>:      is one of the predefined phases listed above (initial, session, auth, and so on) or a custom phase; see <a href="#adding-a-custom-phase">Adding a custom phase</a>.</li>
+  <li><em>sub-phase</em>:  (optional) can be <code class="language-plaintext highlighter-rouge">before</code> or <code class="language-plaintext highlighter-rouge">after</code>.</li>
+  <li><em>name</em>:       optional middleware name. See <a href="#middleware-configuration-properties">Middleware configuration properties</a> below.</li>
+  <li><em>middlewarePath</em>: path to the middleware function. See <a href="#path-to-middleware-function">Path to middleware function</a> below.</li>
+  <li><em>paramSpec</em>:  value of the middleware parameters, typically a JSON object. See <a href="#middleware-configuration-properties">Middleware configuration properties</a> below.</li>
+  <li><em>methodSpec</em>: HTTP methods, such as ‘GET’, ‘POST’, and ‘PUT’. If not present, applies to all methods.</li>
+  <li><em>routeSpec</em>:  REST endpoint(s) that trigger the middleware.</li>
+</ul>
+
+<h3 id="path-to-middleware-function">Path to middleware function</h3>
+
+<p>Specify the path to the middleware function (<em>middlewarePath)</em> in the following ways:</p>
+
+<ul>
+  <li>For an external middleware module installed in the project, just use the name of the module; for example <code class="language-plaintext highlighter-rouge">compression</code>.
+See <a href="#using-other-middleware">Using other middleware</a>.</li>
+  <li>For a script in a module installed in the project, use the path to the module; for example <code class="language-plaintext highlighter-rouge">loopback/server/middleware/rest</code>.</li>
+  <li>For a script with a custom middleware function, use the path relative to <code class="language-plaintext highlighter-rouge">middleware.json</code>, for example <code class="language-plaintext highlighter-rouge">./middleware/custom</code>.</li>
+  <li>Absolute path to the script file (not recommended).</li>
+</ul>
+
+<p>Additionally, you can use the shorthand format <code class="language-plaintext highlighter-rouge">{_module_}#{_fragment_}</code>, where <em>fragment</em> is:</p>
+
+<ul>
+  <li>A property exported by <em>module</em>, for example <code class="language-plaintext highlighter-rouge">loopback#favicon</code> is resolved to <code class="language-plaintext highlighter-rouge">require('loopback').favicon</code>.</li>
+  <li>A file in <em>module’s</em> <code class="language-plaintext highlighter-rouge">server/middleware</code> directory, for example <code class="language-plaintext highlighter-rouge">require('loopback/server/middleware/favicon')</code>.</li>
+  <li>A file in <em>modules</em>‘ <code class="language-plaintext highlighter-rouge">middleware</code> directory, for example <code class="language-plaintext highlighter-rouge">require('loopback/middleware/favicon')</code>.</li>
+</ul>
+
+<h3 id="middleware-configuration-properties">Middleware configuration properties</h3>
+
+<p>You can specify the following properties in each middleware section. They are all optional:</p>
+
+<table>
+  <tbody>
+    <tr>
+      <th>Property</th>
+      <th>Type</th>
+      <th>Description</th>
+      <th>Default</th>
+    </tr>
+    <tr>
+      <td>name</td>
+      <td>String</td>
+      <td>An optional name for the entry. It can be used to identify an entry within the same phase/path for the purpose of merging</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>enabled</td>
+      <td>Boolean</td>
+      <td>
+        <p>Whether to register or enable the middleware. You can override this property in environment-specific files, for example to disable certain middleware when running in production. For more information, see <a href="Defining-middleware.html">Environment-specific configuration</a></p>
+      </td>
+      <td>true</td>
+    </tr>
+    <tr>
+      <td>params</td>
+      <td>Object or Array</td>
+      <td>
+        <p>Parameters to pass to the middleware handler (constructor) function. Most middleware constructors take a single "options" object parameter; in that case the&nbsp;<code>params</code>&nbsp;value is that object.</p>
+        <p>To specify a project-relative path (for example, to a directory containing static assets), start the string with the prefix&nbsp;<code>$!</code>. Such values are interpreted as paths relative to the file&nbsp;<code>middleware.json</code>. &nbsp;</p>
+        <p>See examples below.</p>
+      </td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>methods</td>
+      <td>String[]</td>
+      <td>Specifies the HTTP methods, such as 'GET', 'POST', and 'PUT'. If not present, it will apply to all methods.</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>paths</td>
+      <td>String[]</td>
+      <td>Specifies the REST endpoint(s) that trigger the middleware. In addition to a literal string, route can be a path matching pattern, a regular expression, or an array including all these types. For more information, see the&nbsp;<a href="http://expressjs.com/4x/api.html#app.use" class="external-link" rel="nofollow">app.use (Express documentation)</a>.&nbsp;</td>
+      <td>Triggers on all routes</td>
+    </tr>
+    <tr>
+      <td>optional</td>
+      <td>Boolean</td>
+      <td>Specify whether the middleware is optional. Optional middleware do not throw, even if they are not installed or cannot be resolved in the file system.</td>
+      <td>N/A</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Example of a typical middleware function that takes a single “options” object parameter: </p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="dl">"</span><span class="s2">compression</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+   <span class="dl">"</span><span class="s2">params</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+     <span class="dl">"</span><span class="s2">threshold</span><span class="dl">"</span><span class="p">:</span> <span class="mi">512</span>
+   <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Example of a middleware function that takes more than one parameter, where you use an array of arguments: </p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="dl">"</span><span class="s2">morgan</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+   <span class="dl">"</span><span class="s2">params</span><span class="dl">"</span><span class="p">:</span> <span class="p">[</span><span class="dl">"</span><span class="s2">dev</span><span class="dl">"</span><span class="p">,</span> <span class="p">{</span>
+     <span class="dl">"</span><span class="s2">buffer</span><span class="dl">"</span><span class="p">:</span> <span class="kc">true</span>
+   <span class="p">}]</span>
+ <span class="p">}</span>
+</code></pre></div></div>
+
+<p>Example or an entry for static middleware to serve content from the <code class="language-plaintext highlighter-rouge">client</code> directory in the project’s root:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">//...</span>
+<span class="dl">"</span><span class="s2">files</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+  <span class="dl">"</span><span class="s2">loopback#static</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+    <span class="dl">"</span><span class="s2">params</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">$!../client</span><span class="dl">"</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+<span class="c1">//...</span>
+</code></pre></div></div>
+
+<p>Example or an entry for static middleware to serve content from the <code class="language-plaintext highlighter-rouge">multiple</code> directories in the project’s root:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">//...</span>
+<span class="dl">"</span><span class="s2">files</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+  <span class="dl">"</span><span class="s2">loopback#static</span><span class="dl">"</span><span class="p">:</span> <span class="p">[{</span>
+    <span class="dl">"</span><span class="s2">name</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">x</span><span class="dl">"</span><span class="p">,</span>
+    <span class="dl">"</span><span class="s2">paths</span><span class="dl">"</span><span class="p">:</span> <span class="p">[</span><span class="dl">"</span><span class="s2">/x</span><span class="dl">"</span><span class="p">],</span>
+    <span class="dl">"</span><span class="s2">params</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">$!../client/x</span><span class="dl">"</span>
+  <span class="p">},</span>
+  <span class="p">{</span>
+    <span class="dl">"</span><span class="s2">name</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">y</span><span class="dl">"</span><span class="p">,</span>
+    <span class="dl">"</span><span class="s2">paths</span><span class="dl">"</span><span class="p">:</span> <span class="p">[</span><span class="dl">"</span><span class="s2">/y</span><span class="dl">"</span><span class="p">],</span>
+    <span class="dl">"</span><span class="s2">params</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">$!../client/y</span><span class="dl">"</span>
+  <span class="p">}]</span>
+<span class="p">}</span>
+<span class="c1">//...</span>
+</code></pre></div></div>
+
+<h4 id="using-variables-in-values">Using variables in values</h4>
+
+<p>For any middleware configuration property, you can specify a variable in the value using the following syntax:</p>
+
+<p><code class="language-plaintext highlighter-rouge">${_var_}</code></p>
+
+<p>Where <em>var</em> is a property of the <a href="https://apidocs.strongloop.com/loopback/#var-app-loopback"><code class="language-plaintext highlighter-rouge">app</code></a> object. These properties include:</p>
+
+<ul>
+  <li><a href="config.json.html#top-level-properties">Application-wide properties</a> such as those defined in <code class="language-plaintext highlighter-rouge">config.json</code>.</li>
+  <li><a href="http://expressjs.com/4x/api.html#app.settings.table">Express app object properties</a>.</li>
+</ul>
+
+<p>For example, the following <code class="language-plaintext highlighter-rouge">middleware.json</code> configuration will load LoopBack’s built-in rest middleware (loopback.rest)
+during the routes phase at the path resolved by <code class="language-plaintext highlighter-rouge">app.get('restApiRoot')</code>, which defaults to <code class="language-plaintext highlighter-rouge">/api</code>.</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span>
+  <span class="dl">"</span><span class="s2">routes</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+    <span class="dl">"</span><span class="s2">loopback#rest</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+      <span class="dl">"</span><span class="s2">paths</span><span class="dl">"</span><span class="p">:</span> <span class="p">[</span><span class="dl">"</span><span class="s2">${restApiRoot}</span><span class="dl">"</span><span class="p">]</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>The following example loads hypothetical middleware named <code class="language-plaintext highlighter-rouge">environmental</code> during the routes phase at the return value of <code class="language-plaintext highlighter-rouge">app.get(env)</code>,
+typically either <code class="language-plaintext highlighter-rouge">/development</code> or <code class="language-plaintext highlighter-rouge">/production</code>.</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span>
+  <span class="dl">"</span><span class="s2">routes</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+    <span class="dl">"</span><span class="s2">environmental</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+      <span class="dl">"</span><span class="s2">paths</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">${env}</span><span class="dl">"</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="adding-a-custom-phase">Adding a custom phase</h3>
+
+<p>In addition to the predefined phases in <code class="language-plaintext highlighter-rouge">middleware.json</code>, you can add your own custom phase simply by adding a new top-level key.</p>
+
+<p>For example, below is a <code class="language-plaintext highlighter-rouge">middleware.json</code> file defining a new phase “log” that comes after “parse” and before “routes”:</p>
+
+<div id="server/middleware.json" class="code-caption">
+  <p>server/middleware.json</p>
+</div>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span>
+  <span class="p">...</span>
+  <span class="dl">"</span><span class="s2">parse</span><span class="dl">"</span><span class="p">:</span> <span class="p">{},</span>
+  <span class="dl">"</span><span class="s2">log</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span> <span class="p">...</span> <span class="p">},</span>
+  <span class="dl">"</span><span class="s2">routes</span><span class="dl">"</span><span class="p">:</span> <span class="p">{}</span>
+  <span class="p">...</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="environment-specific-configuration">Environment-specific configuration</h3>
+
+<p>You can further customize configuration through <code class="language-plaintext highlighter-rouge">middleware.local.js</code>, <code class="language-plaintext highlighter-rouge">middleware.local.json</code>, and <code class="language-plaintext highlighter-rouge">middleware._env_.js</code> or <code class="language-plaintext highlighter-rouge">middleware._env_.json</code>,
+where <em><code class="language-plaintext highlighter-rouge">env</code></em> is the value of <code class="language-plaintext highlighter-rouge">NODE_ENV</code> environment variable (typically <code class="language-plaintext highlighter-rouge">development</code> or <code class="language-plaintext highlighter-rouge">production</code>).</p>
+
+<p>See <a href="Environment-specific-configuration.html">Environment-specific configuration</a> for more information.</p>
+
+<h2 id="registering-middleware-in-javascript">Registering middleware in JavaScript</h2>
+
+<p>You can register middleware in JavaScript code with: </p>
+
+<ul>
+  <li>LoopBack API; you can specify the phase in which you want the middleware to execute.</li>
+  <li>Express API; the middleware is executed at the beginning of the <code class="language-plaintext highlighter-rouge">routes</code> phase.</li>
+</ul>
+
+<h3 id="using-the-loopback-api">Using the LoopBack API</h3>
+
+<p>To register middleware with the LoopBack phases API, use the following <code class="language-plaintext highlighter-rouge">app</code> methods:</p>
+
+<ul>
+  <li><a href="http://apidocs.strongloop.com/loopback/#app-middleware"><code class="language-plaintext highlighter-rouge">middleware()</code></a>`</li>
+  <li><a href="http://apidocs.strongloop.com/loopback/#app-middlewarefromconfig"><code class="language-plaintext highlighter-rouge">middlewareFromConfig()</code></a>` </li>
+  <li><a href="http://apidocs.strongloop.com/loopback/#app-definemiddlewarephases"><code class="language-plaintext highlighter-rouge">defineMiddlewarePhases()</code></a>`</li>
+</ul>
+
+<p>For example:</p>
+
+<div id="server/server.js" class="code-caption">
+  <p>server/server.js</p>
+</div>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">loopback</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">loopback</span><span class="dl">'</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">morgan</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">morgan</span><span class="dl">'</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">errorhandler</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">error-handler</span><span class="dl">'</span><span class="p">);</span>
+
+<span class="kd">var</span> <span class="nx">app</span> <span class="o">=</span> <span class="nx">loopback</span><span class="p">();</span>
+
+<span class="nx">app</span><span class="p">.</span><span class="nx">middleware</span><span class="p">(</span><span class="dl">'</span><span class="s1">routes:before</span><span class="dl">'</span><span class="p">,</span> <span class="nx">morgan</span><span class="p">(</span><span class="dl">'</span><span class="s1">dev</span><span class="dl">'</span><span class="p">));</span>
+<span class="nx">app</span><span class="p">.</span><span class="nx">middleware</span><span class="p">(</span><span class="dl">'</span><span class="s1">final</span><span class="dl">'</span><span class="p">,</span> <span class="nx">errorhandler</span><span class="p">());</span>
+<span class="nx">app</span><span class="p">.</span><span class="nx">middleware</span><span class="p">(</span><span class="dl">'</span><span class="s1">routes</span><span class="dl">'</span><span class="p">,</span> <span class="nx">loopback</span><span class="p">.</span><span class="nx">rest</span><span class="p">());</span>
+</code></pre></div></div>
+
+<h3 id="using-the-express-api">Using the Express API</h3>
+
+<div class="alert alert-warning" role="alert">
+  <p><i class="fa fa-warning"></i>
+  <b>Important:</b></p>
+
+  <p>When you register middleware with the Express API, it is always executed at the beginning of the <code class="language-plaintext highlighter-rouge">routes</code> phase.</p>
+
+</div>
+
+<p>You can define middleware the “regular way” you do with Express in the main application script file, <code class="language-plaintext highlighter-rouge">/server/server.js</code> by calling 
+<a href="http://expressjs.com/4x/api.html#app.use"><code class="language-plaintext highlighter-rouge">app.use()</code></a> to specify middleware for all HTTP requests to the specified route.
+You can also use <code class="language-plaintext highlighter-rouge">app.get()</code> to specify middleware for only GET requests, <code class="language-plaintext highlighter-rouge">app.post()</code> to specify middleware for only POST requests, and so on.
+For more information, see <a href="http://expressjs.com/4x/api.html#app.METHOD">app.METHOD</a> in Express documentation.</p>
+
+<p>Here is the general signature for <code class="language-plaintext highlighter-rouge">app.use()</code>:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">app</span><span class="p">.</span><span class="nx">use</span><span class="p">([</span><span class="nx">route</span><span class="p">],</span> <span class="kd">function</span><span class="p">([</span><span class="nx">err</span><span class="p">,]</span> <span class="nx">req</span><span class="p">,</span> <span class="nx">res</span><span class="p">,</span> <span class="nx">next</span><span class="p">)</span> <span class="p">{</span>
+  <span class="c1">//...</span>
+  <span class="nx">next</span><span class="p">();</span>
+<span class="p">});</span>
+</code></pre></div></div>
+
+<p>As usual, <a href="http://apidocs.strongloop.com/loopback/#loopback"><code class="language-plaintext highlighter-rouge">app</code></a> is the LoopBack application object: <code class="language-plaintext highlighter-rouge">app = loopback()</code>. </p>
+
+<p>The parameters are:</p>
+
+<ol>
+  <li><em><code class="language-plaintext highlighter-rouge">route</code></em>, an optional parameter that specifies the URI route or “mount path” to which the middleware is bound.
+When the application receives an HTTP request at this route, it calls (or <em>triggers</em>) the handler function.
+See <a href="#specifying-routes">Specifying routes</a>.</li>
+  <li>The middleware handler function (or just “middleware function”).
+See <a href="#defining-a-new-middleware-handler-function">Defining a new middleware handler function</a>.</li>
+</ol>
+
+<p>For example:</p>
+
+<div id="server/server.js" class="code-caption">
+  <p>server/server.js</p>
+</div>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">loopback</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">loopback</span><span class="dl">'</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">boot</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">loopback-boot</span><span class="dl">'</span><span class="p">);</span>
+
+<span class="kd">var</span> <span class="nx">app</span> <span class="o">=</span> <span class="nx">module</span><span class="p">.</span><span class="nx">exports</span> <span class="o">=</span> <span class="nx">loopback</span><span class="p">();</span>
+
+<span class="c1">// Bootstrap the application, configure models, datasources and middleware.</span>
+<span class="c1">// Sub-apps like REST API are mounted via boot scripts.</span>
+<span class="nx">boot</span><span class="p">(</span><span class="nx">app</span><span class="p">,</span> <span class="nx">__dirname</span><span class="p">);</span>
+<span class="c1">// this middleware is invoked in the "routes" phase</span>
+<span class="nx">app</span><span class="p">.</span><span class="nx">use</span><span class="p">(</span><span class="dl">'</span><span class="s1">/status</span><span class="dl">'</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">req</span><span class="p">,</span> <span class="nx">res</span><span class="p">,</span> <span class="nx">next</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">res</span><span class="p">.</span><span class="nx">json</span><span class="p">({</span> <span class="na">running</span><span class="p">:</span> <span class="kc">true</span> <span class="p">});</span>
+<span class="p">});</span>
+</code></pre></div></div>
+
+<h4 id="specifying-routes">Specifying routes</h4>
+
+<p>The <code class="language-plaintext highlighter-rouge">_route_</code> parameter is a string that specifies the REST endpoint that will trigger the middleware.
+If you don’t provide the parameter, then the middleware will trigger on all routes.
+In addition to a literal string, <code class="language-plaintext highlighter-rouge">_route_</code> can be a path matching pattern, a regular expression, or an array including all these types.
+For more information, see the <a href="http://expressjs.com/4x/api.html#app.use">Express documentation for app.use()</a>.</p>
+
+<p>For example, to register middleware for all endpoints that start with “/greet”:</p>
+
+<div id="/server/server.js" class="code-caption">
+  <p>/server/server.js</p>
+</div>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">app</span><span class="p">.</span><span class="nx">use</span><span class="p">(</span><span class="dl">'</span><span class="s1">/greet</span><span class="dl">'</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">req</span><span class="p">,</span> <span class="nx">res</span><span class="p">,</span> <span class="nx">next</span> <span class="p">)</span> <span class="p">{</span><span class="err"> </span>
+  <span class="c1">//...</span>
+<span class="p">});</span>
+</code></pre></div></div>
+
+<div class="alert alert-warning" role="alert">
+  <p><i class="fa fa-warning"></i>
+  <b>Important:</b></p>
+
+  <p>The above middleware is triggered by all routes that begin with “/greet”, so “/greet/you”, “greet/me/and/you” will all trigger it..</p>
+
+</div>
+
+<p>To register middleware for <em>all</em> endpoints:</p>
+
+<div id="server/server.js or server/boot/scripts.js" class="code-caption">
+  <p>server/server.js or server/boot/scripts.js</p>
+</div>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">app</span><span class="p">.</span><span class="nx">use</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">req</span><span class="p">,</span> <span class="nx">res</span><span class="p">,</span> <span class="nx">next</span> <span class="p">)</span> <span class="p">{</span>
+  <span class="c1">//...</span>
+<span class="p">});</span>
+</code></pre></div></div>
+
+<h4 id="caveats">Caveats</h4>
+
+<p>There are some things to look out for when using middleware, mostly to do with middleware declaration order.
+Be aware of the order of your middleware registration when using “catch-all” routes.</p>
+
+<p>For example:</p>
+
+<div id="server/server.js" class="code-caption">
+  <p>server/server.js</p>
+</div>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">//...</span>
+<span class="nx">app</span><span class="p">.</span><span class="kd">get</span><span class="p">(</span><span class="dl">'</span><span class="s1">/</span><span class="dl">'</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">req</span><span class="p">,</span> <span class="nx">res</span><span class="p">,</span> <span class="nx">next</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">res</span><span class="p">.</span><span class="nx">send</span><span class="p">(</span><span class="dl">'</span><span class="s1">hello from `get` route</span><span class="dl">'</span><span class="p">);</span>
+<span class="p">});</span>
+<span class="nx">app</span><span class="p">.</span><span class="nx">use</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">req</span><span class="p">,</span> <span class="nx">res</span><span class="p">,</span> <span class="nx">next</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">hello world from "catch-all" route</span><span class="dl">'</span><span class="p">);</span>
+  <span class="nx">next</span><span class="p">();</span>
+<span class="p">});</span>
+<span class="nx">app</span><span class="p">.</span><span class="nx">post</span><span class="p">(</span><span class="dl">'</span><span class="s1">/</span><span class="dl">'</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">req</span><span class="p">,</span> <span class="nx">res</span><span class="p">,</span> <span class="nx">next</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">res</span><span class="p">.</span><span class="nx">send</span><span class="p">(</span><span class="dl">'</span><span class="s1">hello from `post` route</span><span class="dl">'</span><span class="p">)</span>
+<span class="p">});</span>
+<span class="c1">//...</span>
+</code></pre></div></div>
+
+<p>In this case, since the <code class="language-plaintext highlighter-rouge">GET /</code> middleware ends the response chain, the “catch-all” middleware is never triggered when a get request is made.
+However, when you make a POST request to /, the “catch-all” route is triggered because it is declared <strong>before</strong> the post route.
+Doing a POST will show the console message from both the “catch-all” route and the <code class="language-plaintext highlighter-rouge">POST / </code>route.</p>
+
+<h2 id="examples">Examples</h2>
+
+<h3 id="static-middleware">Static middleware</h3>
+
+<p>Example or an entry for static middleware to serve content from the <code class="language-plaintext highlighter-rouge">client</code> directory in the project’s root:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">//...</span>
+<span class="dl">"</span><span class="s2">files</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+  <span class="dl">"</span><span class="s2">loopback#static</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+    <span class="dl">"</span><span class="s2">params</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">$!../client</span><span class="dl">"</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+<span class="c1">//...</span>
+</code></pre></div></div>
+
+<h3 id="pre-processing-middleware">Pre-processing middleware</h3>
+
+<p>Use pre-processing middleware to apply custom logic for various endpoints in your application.
+Do this by registering handler functions to perform certain operations when HTTP requests are made to specific endpoint or endpoints.</p>
+
+<div class="alert alert-warning" role="alert">
+  <p><i class="fa fa-warning"></i>
+  <b>Important:</b></p>
+
+  <p>Always register pre-processing middleware in a phase before <code class="language-plaintext highlighter-rouge">routes</code>, for example <code class="language-plaintext highlighter-rouge">initial</code> or <code class="language-plaintext highlighter-rouge">parse</code>.</p>
+
+</div>
+
+<p>Pre-processing middleware must call <code class="language-plaintext highlighter-rouge">next()</code> at the end of the handler function to pass control to the next middleware.
+If you don’t do this, your application will essentially “freeze.” Technically, <code class="language-plaintext highlighter-rouge">next()</code> doesn’t have to occur at the end of the function
+(for example, it could occur in an <code class="language-plaintext highlighter-rouge">if</code> /<code class="language-plaintext highlighter-rouge">else</code> block), but the handler function must call it eventually.</p>
+
+<p>For example:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">module</span><span class="p">.</span><span class="nx">exports</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="kd">function</span> <span class="nx">tracker</span><span class="p">(</span><span class="nx">req</span><span class="p">,</span> <span class="nx">res</span><span class="p">,</span> <span class="nx">next</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">Request tracking middleware triggered on %s</span><span class="dl">'</span><span class="p">,</span> <span class="nx">req</span><span class="p">.</span><span class="nx">url</span><span class="p">);</span>
+    <span class="kd">var</span> <span class="nx">start</span> <span class="o">=</span> <span class="nx">process</span><span class="p">.</span><span class="nx">hrtime</span><span class="p">();</span>
+    <span class="nx">res</span><span class="p">.</span><span class="nx">once</span><span class="p">(</span><span class="dl">'</span><span class="s1">finish</span><span class="dl">'</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+      <span class="kd">var</span> <span class="nx">diff</span> <span class="o">=</span> <span class="nx">process</span><span class="p">.</span><span class="nx">hrtime</span><span class="p">(</span><span class="nx">start</span><span class="p">);</span>
+      <span class="kd">var</span> <span class="nx">ms</span> <span class="o">=</span> <span class="nx">diff</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="mi">1</span><span class="nx">e3</span> <span class="o">+</span> <span class="nx">diff</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">*</span> <span class="mi">1</span><span class="nx">e</span><span class="o">-</span><span class="mi">6</span><span class="p">;</span>
+      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">The request processing time is %d ms.</span><span class="dl">'</span><span class="p">,</span> <span class="nx">ms</span><span class="p">);</span>
+    <span class="p">});</span>
+    <span class="nx">next</span><span class="p">();</span>
+  <span class="p">};</span>
+<span class="p">};</span>
+</code></pre></div></div>
+
+<p>This middleware tells the server to display the time it takes to process the incoming HTTP request on all application routes.</p>
+
+<p>You can see this middleware in action in using the basic LoopBack application from Getting started with LoopBack (or any standard LoopBack application):</p>
+
+<ol>
+  <li>Add the code above to <code class="language-plaintext highlighter-rouge">server/middleware/tracker.js</code>.</li>
+  <li>
+    <p>Edit (or create) the file <code class="language-plaintext highlighter-rouge">server/middleware.json</code> and register the new middleware in the “initial” phase:</p>
+
+    <p><strong>server/middleware.json</strong></p>
+
+    <div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span>
+  <span class="dl">"</span><span class="s2">initial</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+    <span class="dl">"</span><span class="s2">./middleware/tracker</span><span class="dl">"</span><span class="p">:</span> <span class="p">{}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Start the application:</p>
+
+    <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>node <span class="nb">.</span>
+</code></pre></div>    </div>
+  </li>
+  <li>Load <a href="http://localhost:3000/">http://localhost:3000/</a> in your browser.</li>
+</ol>
+
+<p>In the console, you will see (for example):</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>...
+Request tracking middleware triggered on /.
+The request processing time is 4.281957 ms. //your results will vary
+</code></pre></div></div>
+
+<h3 id="routing-middleware">Routing middleware</h3>
+
+<p>For routes serving JSON, best practice is to create a new model and implement the routes as <a href="Remote-methods.html">remote methods</a>.
+For routes serving non-JSON responses, best practice is to define them the standard “Express way” in <code class="language-plaintext highlighter-rouge">server.js</code> or a boot script.
+For more information, see <a href="Routing.html">Routing</a> and <a href="http://expressjs.com/guide/routing.html">Routing (Express documentation)</a>.</p>
+
+<div class="alert alert-info" role="alert">
+  <p><i class="fa fa-info-circle"></i>
+<b>Note:</b></p>
+
+  <p>If you add middleware on the <code class="language-plaintext highlighter-rouge">route</code> or <code class="language-plaintext highlighter-rouge">route:after</code> phase, it will not execute <em>after</em> the route is matched.
+Instead, it will be ignored because the route was already matched.</p>
+
+</div>
+
+<h3 id="error-handling-middleware">Error-handling middleware</h3>
+
+<p>Use error-handling middleware to deal with request errors.
+While you are free to register any number of error-handling middleware, be sure to register them in the “final” phase.
+LoopBack registers two error-handling middleware by default:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">urlNotFound</code> middleware converts all requests that reach the middleware into an Error object with status 404,
+so that 404 error responses are consistent with “usual” error responses.</li>
+  <li><code class="language-plaintext highlighter-rouge">errorhandler</code> middleware is from the <a href="https://github.com/expressjs/errorhandler">errorhandler</a> module,
+previously available in Express v.3 as <code class="language-plaintext highlighter-rouge">express.errorHandler</code>. For information on customizing this error handler.
+See <a href="Environment-specific-configuration.html#customizing-rest-error-handling">Customizing REST error handling</a>.</li>
+</ul>
+
+<p>Example of a custom error processing middleware:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">module</span><span class="p">.</span><span class="nx">exports</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span><span class="err"> </span>
+  <span class="k">return</span> <span class="kd">function</span> <span class="nx">logError</span><span class="p">(</span><span class="nx">err</span><span class="p">,</span> <span class="nx">req</span><span class="p">,</span> <span class="nx">res</span><span class="p">,</span> <span class="nx">next</span><span class="p">)</span> <span class="p">{</span><span class="err"> </span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">ERR</span><span class="dl">'</span><span class="p">,</span> <span class="nx">req</span><span class="p">.</span><span class="nx">url</span><span class="p">,</span> <span class="nx">err</span><span class="p">);</span><span class="err"> </span>
+  <span class="p">};</span>
+<span class="p">};</span>
+</code></pre></div></div>
+
+<p>To register this middleware:</p>
+
+<ol>
+  <li>Add the code above to <code class="language-plaintext highlighter-rouge">/server/middleware/log-error.js</code>.</li>
+  <li>
+    <p>Edit <code class="language-plaintext highlighter-rouge">/server/middleware.json</code> and register the new middleware in the “final” phase: </p>
+
+    <div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span>
+  <span class="dl">"</span><span class="s2">final</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+    <span class="dl">"</span><span class="s2">./middleware/log-error</span><span class="dl">"</span><span class="p">:</span> <span class="p">{}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>    </div>
+  </li>
+  <li>Start the application.</li>
+  <li>Load <a href="http://localhost:3000/url-does-not-exist">http://localhost:3000/url-does-not-exist</a> in your browser.</li>
+</ol>
+
+
+    <div class="tags">
+      
+    </div>
+</div>
+
+<hr class="shaded"/>
+
+<footer id="container">
+            <div class="row">
+                <div class="col-md-6 footer-left">
+               &copy;2021 IBM / StrongLoop. All rights reserved. <br />
+ Site last generated: Mar 22, 2021
+              </div>
+              <div class="col-md-6 footer-right">
+                <p><img src="https://loopback.io/images/company_logo.png" alt="Company logo"/></p>
+              </div>
+            </div>
+</footer>
+
+
+        </div>
+        <!-- /.row -->
+</div>
+<!-- /.container -->
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,4226 @@
+<!DOCTYPE html>
+<head>
+    
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="keywords" content="angularjs,  LoopBack">
+  <title>AngularJS JavaScript SDK | LoopBack Documentation</title>
+  <link rel="stylesheet" href="/css/syntax.css">
+
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/modern-business.css">
+    <link rel="stylesheet" href="/css/lavish-bootstrap.css">
+    <link rel="stylesheet" href="/css/customstyles.css">
+    <link rel="stylesheet" href="/css/theme-v4.css">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-150726441-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-150726441-2');
+</script>
+
+
+    <!-- github star button -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.3.0/anchor.min.js"></script>
+    <script src="/js/toc.js"></script>
+    <script src="/js/customscripts.js"></script>
+
+    <link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    
+
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-lg navbar-brand no_icon" href="/doc/index.html">
+              <img class="no_icon" style="width:147px;" src="/images/branding/logo/white/loopback.svg">&nbsp;<span class="projectTitle"></span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- entries without drop-downs appear here -->
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">API Docs<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        <!-- page.url is /doc/en/lb2/AngularJS-JavaScript-SDK.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://loopback.io/doc/en/lb4/apidocs.index.html" target="_blank">LoopBack 4</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb2/AngularJS-JavaScript-SDK.html .... folderitem.url is  -->
+                          
+                            <li><a href="http://apidocs.loopback.io" target="_blank">LoopBack 3.x</a></li>
+                          
+                        
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">View<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        <!-- page.url is /doc/en/lb2/AngularJS-JavaScript-SDK.html .... folderitem.url is / -->
+                          
+                            <li><a href="/">LoopBack Overview</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb2/AngularJS-JavaScript-SDK.html .... folderitem.url is /doc/en/lb4/ -->
+                          
+                            <li><a href="/doc/en/lb4/">LoopBack 4</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb2/AngularJS-JavaScript-SDK.html .... folderitem.url is /doc/en/lb3/ -->
+                          
+                            <li><a href="/doc/en/lb3/">LoopBack 3.x</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb2/AngularJS-JavaScript-SDK.html .... folderitem.url is /doc/en/lb2/ -->
+                          
+                            <li class="dropdownActive"><a href="/doc/en/lb2/">LoopBack 2.x</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb2/AngularJS-JavaScript-SDK.html .... folderitem.url is /doc/en/community/ -->
+                          
+                            <li><a href="/doc/en/community/">Community projects</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb2/AngularJS-JavaScript-SDK.html .... folderitem.url is /doc/en/contrib/ -->
+                          
+                            <li><a href="/doc/en/contrib/">Contributing to LoopBack</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb2/AngularJS-JavaScript-SDK.html .... folderitem.url is /doc/en/sec/ -->
+                          
+                            <li><a href="/doc/en/sec/">Security advisories</a></li>
+                          
+                        
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Resources<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        <!-- page.url is /doc/en/lb2/AngularJS-JavaScript-SDK.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://github.com/strongloop/loopback.io" target="_blank">Docs Github Repo</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb2/AngularJS-JavaScript-SDK.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://groups.google.com/forum/#!forum/loopbackjs-announcements" target="_blank">Announcements Mailing List</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb2/AngularJS-JavaScript-SDK.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://groups.google.com/forum/#!forum/loopbackjs" target="_blank">Developer Forum</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb2/AngularJS-JavaScript-SDK.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://join.slack.com/t/loopbackio/shared_invite/zt-8lbow73r-SKAKz61Vdao~_rGf91pcsw" target="_blank">LoopBack on Slack</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb2/AngularJS-JavaScript-SDK.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://stackoverflow.com/questions/tagged/strongloop+or+loopback4+or+loopbackjs" target="_blank">LoopBack on Stack Overflow</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb2/AngularJS-JavaScript-SDK.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://strongloop.com/strongblog/tag_LoopBack.html" target="_blank">StrongLoop Blog - LoopBack</a></li>
+                          
+                        
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Translations<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        <!-- page.url is /doc/en/lb2/AngularJS-JavaScript-SDK.html .... folderitem.url is /doc/es/lb2/ -->
+                          
+                            <li><a href="/doc/es/lb2/">Español (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb2/AngularJS-JavaScript-SDK.html .... folderitem.url is /doc/es/lb4/ -->
+                          
+                            <li><a href="/doc/es/lb4/">Español (v4)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb2/AngularJS-JavaScript-SDK.html .... folderitem.url is /doc/fr/lb2/ -->
+                          
+                            <li><a href="/doc/fr/lb2/">Français (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb2/AngularJS-JavaScript-SDK.html .... folderitem.url is /doc/fr/lb4/ -->
+                          
+                            <li><a href="/doc/fr/lb4/">Français (v4)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb2/AngularJS-JavaScript-SDK.html .... folderitem.url is /doc/ko/lb2/ -->
+                          
+                            <li><a href="/doc/ko/lb2/">한국어 (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb2/AngularJS-JavaScript-SDK.html .... folderitem.url is /doc/ko/lb3/ -->
+                          
+                            <li><a href="/doc/ko/lb3/">한국어 (v3)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb2/AngularJS-JavaScript-SDK.html .... folderitem.url is /doc/pt-br/lb2/ -->
+                          
+                            <li><a href="/doc/pt-br/lb2/">Português (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb2/AngularJS-JavaScript-SDK.html .... folderitem.url is /doc/pt-br/lb4/ -->
+                          
+                            <li><a href="/doc/pt-br/lb4/">Português (v4)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb2/AngularJS-JavaScript-SDK.html .... folderitem.url is /doc/ja/lb2/ -->
+                          
+                            <li><a href="/doc/ja/lb2/">日本語 (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb2/AngularJS-JavaScript-SDK.html .... folderitem.url is /doc/ja/lb3/ -->
+                          
+                            <li><a href="/doc/ja/lb3/">日本語 (v3)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb2/AngularJS-JavaScript-SDK.html .... folderitem.url is /doc/ja/lb4/ -->
+                          
+                            <li><a href="/doc/ja/lb4/">日本語 (v4)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb2/AngularJS-JavaScript-SDK.html .... folderitem.url is /doc/ru/lb2/ -->
+                          
+                            <li><a href="/doc/ru/lb2/">Pусский (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb2/AngularJS-JavaScript-SDK.html .... folderitem.url is /doc/zh/lb2/ -->
+                          
+                            <li><a href="/doc/zh/lb2/">中文 (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb2/AngularJS-JavaScript-SDK.html .... folderitem.url is /doc/zh/lb4/ -->
+                          
+                            <li><a href="/doc/zh/lb4/">中文 (v4)</a></li>
+                          
+                        
+                    </ul>
+                </li>
+                
+                
+                
+                <li>
+                    <form id="search" name="search" class="input-group lb-search" action="/search" method="GET">
+                        <input type="text" class="form-control search-bar" placeholder="Search (powered by Watson)" name="q">
+                        
+                          <input type="hidden" name="sidebar" value="lb2_sidebar">
+                        
+                        <div class="input-group-btn">
+                            <button type="submit" class="btn btn-default" aria-label="search">
+                              <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                            </button>
+                        </div>
+                      </form>
+                </li>
+            </ul>
+        </div>
+      </div>
+</nav>
+
+<!-- Page Content -->
+<div class="container">
+    <!-- Content Row -->
+    <div class="row">
+        <!-- Sidebar Column -->
+        <nav class="col-md-3 sidebar-col">
+          
+
+
+
+
+
+
+
+
+
+
+
+<!-- NOTE: sidebar = site.data.sidebars.mydoc_sidebar.entries -->
+<div class="sidebarTitle"><a href="index.html">Loopback 2.0</a></div>
+<ul id="mysidebar" class="nav-list">
+  
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Installation.html">Installation</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Installing-IBM-API-Connect.html">Installing IBM API Connect</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Installing-StrongLoop.html">Installing StrongLoop</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Installing-compiler-tools.html">Installing compiler tools</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Installing-on-MacOS.html">Installing on MacOS</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Installing-on-Windows.html">Installing on Windows</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Installing-on-Linux.html">Installing on Linux</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Updating-to-the-latest-version.html">Updating to the latest version</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Installation-troubleshooting.html">Installation troubleshooting</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="LoopBack-core-concepts.html">LoopBack core concepts</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Routing.html">Routing</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="LoopBack-FAQ.html">LoopBack FAQ</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Glossary.html">Glossary</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="StrongLoop-Labs.html">StrongLoop Labs</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Getting-started-with-LoopBack.html">Getting started with LoopBack</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Create-a-simple-API.html">Create a simple API</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Use-API-Explorer.html">Use API Explorer</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Connect-your-API-to-a-data-source.html">Connect your API to a data source</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Extend-your-API.html">Extend your API</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Add-a-static-web-page.html">Add a static web page</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Add-a-custom-Express-route.html">Add a custom Express route</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Next-steps.html">Next steps</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Deploy-for-GDPR-readiness.html">Considerations for GDPR readiness</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Getting-started-part-II.html">Getting started part II</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Introducing-the-Coffee-Shop-Reviews-app.html">Introducing the Coffee Shop Reviews app</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Create-new-data-source.html">Create new data source</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Create-new-models.html">Create new models</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Define-model-relations.html">Define model relations</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Define-access-controls.html">Define access controls</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Define-a-remote-hook.html">Define a remote hook</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Create-AngularJS-client.html">Create AngularJS client</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Learn-more.html">Learn more</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Security-advisories.html">Security advisories</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Security-advisory-08-15-2018.html">08-15-2018</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Security-advisory-08-08-2018.html">08-08-2018</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Security-advisory-01-31-2018.html">01-31-2018</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Security-advisory-03-10-2017.html">03-10-2017</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Security-advisory-08-16a-2016.html">08-16a-2016</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Security-advisory-08-16-2016.html">08-16-2016</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Security-advisory-01-12-2016.html">01-12-2016</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Security-advisory-06-04-2015.html">06-04-2015</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Security-advisory-01-09-2015.html">01-09-2015</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Creating-an-application.html">Creating an application</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Environment-specific-configuration.html">Environment-specific configuration</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Versioning-your-API.html">Versioning your API</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Standard-project-structure.html">Standard project structure</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Tutorials-and-examples.html">Tutorials and examples</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Managing-users.html">Managing users</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Registering-users.html">Registering users</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Logging-in-users.html">Logging in users</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Partitioning-users-with-realms.html">Partitioning users with realms</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="User-management-example.html">User management example</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="AccessToken-invalidation.html">AccessToken invalidation</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Authentication-authorization-and-permissions.html">Authentication, authorization, and permissions</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Introduction-to-User-model-authentication.html">Introduction to User model authentication</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Controlling-data-access.html">Controlling data access</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Making-authenticated-requests.html">Making authenticated requests</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Defining-and-using-roles.html">Defining and using roles</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Accessing-related-models.html">Accessing related models</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Creating-a-default-admin-user.html">Creating a default admin user</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Security-considerations.html">Security considerations</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Tutorial-access-control.html">Tutorial: access control</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Defining-models.html">Defining models</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Creating-models.html">Creating models</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Using-the-model-generator.html">Using the model generator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Discovering-models-from-relational-databases.html">Discovering models from relational databases</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Creating-models-from-unstructured-data.html">Creating models from unstructured data</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Customizing-models.html">Customizing models</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Attaching-models-to-data-sources.html">Attaching models to data sources</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Exposing-models-over-REST.html">Exposing models over REST</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Validating-model-data.html">Validating model data</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Creating-model-relations.html">Creating model relations</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Tutorial-model-relations.html">Tutorial: model relations</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="BelongsTo-relations.html">BelongsTo relations</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="HasOne-relations.html">HasOne relations</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="HasMany-relations.html">HasMany relations</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="HasManyThrough-relations.html">HasManyThrough relations</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="HasAndBelongsToMany-relations.html">HasAndBelongsToMany relations</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Polymorphic-relations.html">Polymorphic relations</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Querying-related-models.html">Querying related models</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Embedded-models-and-relations.html">Embedded models and relations</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Nested-queries.html">Nested queries</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Using-built-in-models.html">Using built-in models</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Extending-built-in-models.html">Extending built-in models</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Adding-remote-methods-to-built-in-models.html">Adding remote methods to built-in models</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Creating-database-tables-for-built-in-models.html">Creating database tables for built-in models</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Model-property-reference.html">Model property reference</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Built-in-models-REST-API.html">Built-in models REST API</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="PersistedModel-REST-API.html">PersistedModel REST API</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Access-token-REST-API.html">Access token REST API</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="ACL-REST-API.html">ACL REST API</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Application-REST-API.html">Application REST API</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Relation-REST-API.html">Relation REST API</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Role-REST-API.html">Role REST API</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="User-REST-API.html">User REST API</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Connecting-models-to-data-sources.html">Connecting models to data sources</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Creating-a-database-schema-from-models.html">Creating a database schema from models</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Advanced-topics-data-sources.html">Understanding data sources</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Using-database-transactions.html">Using database transactions</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Executing-native-SQL.html">Executing native SQL</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Building-a-connector.html">Building a connector</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Implementing-create-retrieve-update-and-delete-methods.html">Implementing create, retrieve, update, and delete methods</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Implementing-model-discovery.html">Implementing model discovery</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Implementing-auto-migration.html">Implementing auto-migration</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Working-with-data.html">Working with data</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Creating-updating-and-deleting-data.html">Creating, updating, and deleting data</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Querying-data.html">Querying data</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Fields-filter.html">Fields filter</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Include-filter.html">Include filter</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Limit-filter.html">Limit filter</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Order-filter.html">Order filter</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Skip-filter.html">Skip filter</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Where-filter.html">Where filter</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Advanced-topics-data.html">Advanced topics: data</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Realtime-server-sent-events.html">Realtime server-sent events</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="AngularJS-LiveSet.html">AngularJS Live Set</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="AngularJS-LiveSet-Example.html">AngularJS Live Set example</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Realtime-socket-io.html">Real-time apps AngularJS using socket.io</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Adding-application-logic.html">Adding application logic</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Working-with-LoopBack-objects.html">Working with LoopBack objects</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Adding-logic-to-models.html">Adding logic to models</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Remote-methods.html">Remote methods</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Remote-hooks.html">Remote hooks</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Operation-hooks.html">Operation hooks</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Model-hooks.html">Model hooks</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Connector-hooks.html">Connector hooks</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Tutorial-Adding-application-logic.html">Tutorial: Application logic</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Defining-boot-scripts.html">Defining boot scripts</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Defining-mixins.html">Defining mixins</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Defining-middleware.html">Defining middleware</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Middleware-example.html">Middleware example</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Using-current-context.html">Using current context</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Events.html">Events</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Using-promises.html">Using promises</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Running-and-debugging-apps.html">Running and debugging apps</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Setting-debug-strings.html">Setting debug strings</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Using-strong-error-handler.html">Using strong-error-handler</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Preparing-for-deployment.html">Preparing for deployment</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="LoopBack-on-Bluemix.html">Running LoopBack apps on Bluemix</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="LoopBack-components.html">LoopBack components</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="OAuth-2.0.html">OAuth 2.0 component</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Push-notifications.html">Push notification component</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Push-notifications-for-iOS-apps.html">Push notifications for iOS apps</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Push-notifications-for-Android-apps.html">Push notifications for Android apps</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Storage-component.html">Storage component</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Storage-component-REST-API.html">Storage component REST API</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Storage-example.html">Storage component example</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Third-party-login-using-Passport.html">Passport login component</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Configuring-providers.json.html">Configuring providers.json</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Tutorial-third-party-login.html">Tutorial: third-party login</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Synchronization.html">Synchronization component</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Tutorial-Offline-Synchronization.html">Tutorial: Offline Synchronization</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Advanced-topics-sync.html">Advanced topics - sync</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Creating-components.html">Creating components</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Command-line-tools.html">Command-line tools</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="ACL-generator.html">ACL generator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="API-definition-generator.html">API definition generator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Application-generator.html">Application generator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Boot-script-generator.html">Boot script generator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Data-source-generator.html">Data source generator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Middleware-generator.html">Middleware generator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Model-generator.html">Model generator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Property-generator.html">Property generator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Relation-generator.html">Relation generator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Remote-method-generator.html">Remote method generator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Swagger-generator.html">Swagger generator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Refresh-definitions-command.html">Refresh definitions command</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Client-SDKs.html">Client SDKs</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="iOS-SDK.html">iOS SDK</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="IOS-getting-started.html">Getting started with the iOS SDK</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Android-SDK.html">Android SDK</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Tutorial-android-getting-started.html">Getting started with the Android SDK</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Working-with-files-using-the-Android-SDK.html">Working with files using the Android SDK</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Push-notifications-using-Android-SDK.html">Push notifications using Android SDK</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Working-with-the-LocalInstallation-class.html">Working with the LocalInstallation class</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   active">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="AngularJS-JavaScript-SDK.html">AngularJS SDK</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Angular-example-app.html">Angular example app</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="AngularJS-Grunt-plugin.html">AngularJS Grunt plugin</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Xamarin-SDK.html">Xamarin SDK</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Xamarin-client-API.html">Xamarin client API</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Xamarin-example-app.html">Xamarin example app</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="LoopBack-in-the-client.html">Isomorphic LoopBack</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Running-LoopBack-in-the-browser.html">Running LoopBack in the browser</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Using-Browserify.html">Using Browserify</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Isomorphic-LoopBack-example.html">Isomorphic example</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Connectors-reference.html">Connectors reference</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Memory-connector.html">Memory connector</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Database-connectors.html">Database connectors</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Cloudant-connector.html">Cloudant connector</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="DashDB.html">DashDB</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="DB2-connector.html">DB2 connector</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="DB2-iSeries-connector.html">DB2 for iSeries connector</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="DB2-for-z-OS.html">DB2 for z/OS</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Informix.html">Informix connector</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="MongoDB-connector.html">MongoDB connector</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Connecting-to-MongoDB.html">MongoDB Connector Tutorial</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Using-MongoLab.html">Using MongoLab</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="MySQL-connector.html">MySQL connector</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Connecting-to-MySQL.html">MySQL Connector Tutorial</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Oracle-connector.html">Oracle connector</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Installing-the-Oracle-connector.html">Installing the Oracle connector</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Connecting-to-Oracle.html">Oracle connector tutorial</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="PostgreSQL-connector.html">PostgreSQL connector</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Connecting-to-PostgreSQL.html">PostgreSQL connector tutorial</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Redis-connector.html">Redis connector</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="kv-redis-connector.html">Redis key-value connector</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Example-kv-connector.html">KV connector example</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="SQL-Server-connector.html">SQL Server connector</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Connecting-to-Microsoft-SQL-Server.html">SQL Server connector tutorial</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="SQLite3.html">SQLite3 connector</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Other-connectors.html">Other connectors</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Email-connector.html">Email connector</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="JSON-RPC-connector.html">JSON RPC connector</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="MQLight-connector.html">MQ Light connector</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Push-connector.html">Push connector</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Remote-connector.html">Remote connector</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Remote-connector-example.html">Remote connector example</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Strong-Remoting.html">Strong Remoting</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="REST-connector.html">REST connector</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="REST-connector-example.html">REST connector example</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="SOAP-connector.html">SOAP connector</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="SOAP-Connector-example.html">SOAP connector example</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Storage-connector.html">Storage connector</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Swagger-connector.html">Swagger connector</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Community-connectors.html">Community connectors</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Project-layout-reference.html">Project layout reference</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="client-directory.html">client directory</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="common-directory.html">common directory</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Model-definition-JSON-file.html">Model definition JSON file</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="package.json.html">package.json</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="server-directory.html">server directory</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="config.json.html">config.json</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="datasources.json.html">datasources.json</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="middleware.json.html">middleware.json</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="model-config.json.html">model-config.json</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="server.js.html">server.js</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Node-reference.html">Node reference</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="LoopBack-types.html">LoopBack types</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Geotype.html">Geopoint type</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Valid-names-in-LoopBack.html">Valid names in LoopBack</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Basic-model-object.html">Basic model object</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Connected-model-object.html">Connected model object</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Error-object.html">Error object</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="LoopBack-middleware.html">LoopBack middleware</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Publish-subscribe-messaging.html">Publish-subscribe messaging</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Strong-pub-sub.html">Strong Pub-sub</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Pub-sub-bridge.html">Pub-sub bridge</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="MQTT-adapter.html">MQTT adapter</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Redis-pub-sub-adapter.html">Redis pub-sub adapter</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Primus-pub-sub-adapter.html">Primus pub-sub adapter</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Pub-sub-example.html">Node pub-sub example app</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Pub-sub-Loopback-example.html">LoopBack pub-sub example app</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="All-tags.html">All tags</a>
+    
+      
+  </li>
+  
+
+
+
+</ul>
+
+        </nav>
+        <!-- Content Column -->
+        <div class="col-md-9">
+            
+  <div class="v3notice">This article is for LoopBack 2.x, which is no longer supported.  Please see the <a href="/doc/en/lb3/AngularJS-JavaScript-SDK.html">corresponding article for 3.x</a>.  </div>
+
+
+<div class="post-header">
+   <h1 class="post-title-main">AngularJS JavaScript SDK</h1>
+   
+     
+       <a target="_blank" href="https://github.com/strongloop/loopback.io/blob/gh-pages/pages/en/lb2/AngularJS-JavaScript-SDK.md" class="githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit this page</a>
+   
+</div>
+
+<div class="post-content">
+
+
+  
+
+
+
+
+ 
+   
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+;$(function() {
+  var level = parseInt(3, 10);
+  if (level === 1) {level = 'h2'}
+  if (level === 2) {level = 'h2,h3'}
+  if (level === 3) {level = 'h2,h3,h4'}
+  if (level === 4) {level = 'h2,h3,h4,h5'}
+
+  // Add a new level for changelog files which use h1,h2,h3
+  if (level === 0) {level = 'h1,h2,h3,h4,h5'}
+
+  var toc = $('#toc')
+
+  toc.toc({minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: level})
+
+  /* this offset helps with the space taken up by the floating toolbar */
+  toc.on('click', 'a', function() {
+    var target = $(this.getAttribute('href')),
+      scroll_target = target.offset().top
+
+    $(window).scrollTop(scroll_target - 10)
+    return false
+  })
+  .on('click', '.toc-expand-button', function() {
+    toc.find('> ul').slideToggle('fast');
+  })
+})
+</script>
+
+<div id="toc">
+  <span class="toc-title">Page Contents</span>
+  <button type="button" class="btn btn-link toc-expand-button">
+    <i class="fa fa-bars"></i>
+  </button>
+</div>
+
+ 
+
+    <div class="alert alert-info" role="alert">
+  <p><i class="fa fa-info-circle"></i>
+<b>Note:</b>
+To install the LoopBack AngularJS SDK, <a href="Installing-StrongLoop.html">install StrongLoop tools</a>.</p>
+
+</div>
+
+<div class="alert alert-warning" role="alert">
+  <p><i class="fa fa-warning"></i>
+  <b>Important:</b>
+  The AngularJS SDK requires Angular version 1.2.0 or newer.</p>
+
+</div>
+
+<h2 id="introduction">Introduction</h2>
+
+<p><a href="http://angularjs.org/">AngularJS</a> is an open-source JavaScript <a href="http://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller">model–view–controller</a>
+(MVC) framework for browser-based applications.</p>
+
+<p>The LoopBack AngularJS SDK has three major components:</p>
+
+<ul>
+  <li>Auto-generated AngularJS services, compatible with <a href="http://docs.angularjs.org/api/ngResource.%24resource"><code class="language-plaintext highlighter-rouge">ngResource.$resource</code></a>,
+that provide client-side representation of the models and remote methods in the LoopBack server application.</li>
+  <li>The <code class="language-plaintext highlighter-rouge">lb-ng</code> command-line tool that generates Angular $resource services for your LoopBack application.</li>
+  <li>A Grunt plugin (<a href="https://github.com/strongloop/grunt-loopback-sdk-angular">grunt-loopback-sdk-angular</a>), if you want to use Grunt instead of <code class="language-plaintext highlighter-rouge">lb-ng</code>.</li>
+</ul>
+
+<p>The client is dynamic, in other words it automatically includes all the LoopBack models and methods you’ve defined.
+You don’t have to manually write any static code.</p>
+
+<p>The SDK fits seamlessly into the workflow of a front-end developer:</p>
+
+<ul>
+  <li>
+    <p>The generated Angular objects and methods have <a href="https://github.com/angular/angular.js/wiki/Writing-AngularJS-Documentation">ngdoc</a> comments.
+Use an ngdoc viewer like <a href="http://grunt-docular.com/">Docular</a> to view documentation of the client available to your AngularJS client.</p>
+  </li>
+  <li>
+    <p>If you wish, you can use the provided Grunt task to generate the client services script,
+which make it easy to include this file in an existing Grunt-based workflow (for example for bundling or “minification”).</p>
+  </li>
+</ul>
+
+<h3 id="how-it-works">How it works</h3>
+
+<p>The code generator (either the <code class="language-plaintext highlighter-rouge">lb-ng</code> tool or a Grunt task) loads your LoopBack server application, walks through all models,
+and generates code registering an AngularJS factory for each model.
+The factory creates an <a href="http://docs.angularjs.org/api/ngResource.%24resource"><code class="language-plaintext highlighter-rouge">ngResource.$resource</code></a> object,
+passing in a description of all public methods the model class exposes.
+This way the resource object provides an API very similar to that of your backend Model class.</p>
+
+<p>The rest of the procedure is standard for AngularJS: configure your client app to include and load the <code class="language-plaintext highlighter-rouge">lbServices</code> module,
+and tell Angular’s injector which models to use in your code.</p>
+
+<div class="alert alert-info" role="alert">
+  <p><i class="fa fa-info-circle"></i>
+<b>Note:</b></p>
+
+  <p>At runtime, the generated lbServices module (<code class="language-plaintext highlighter-rouge">lb-services.js</code>) depends on the Angular resource script (<code class="language-plaintext highlighter-rouge">angular-resource.js</code>), so you must ensure that your client loads this Angular script.</p>
+
+</div>
+
+<h2 id="generating-angular-services">Generating Angular services</h2>
+
+<p>Use the LoopBack Angular command-line tool, <code class="language-plaintext highlighter-rouge">lb-ng</code>, to generate the Angular client library for your LoopBack application.</p>
+
+<div class="alert alert-success" role="alert">
+  <p><i class="fa fa-check-square-o"></i>
+  <b>Tip:</b> 
+Any time you modify or add models to your LoopBack app, you must re-run <code class="language-plaintext highlighter-rouge">lb-ng</code> to re-generate the Angular client library to reflect the changes.</p>
+
+</div>
+
+<p>For example, if your application has the <a href="Project-layout-reference.html">standard LoopBack project layout</a>,
+then in the <code class="language-plaintext highlighter-rouge">/client</code> sub-directory, enter these commands:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">mkdir </span>js
+<span class="nv">$ </span>lb-ng ../server/server.js js/lb-services.js
+</code></pre></div></div>
+
+<p>In this example:</p>
+
+<p><code class="language-plaintext highlighter-rouge">../server/server.js</code> is the relative path to the main LoopBack server script.</p>
+
+<p><code class="language-plaintext highlighter-rouge">js/lb-services.js</code> is the name and path to the JavaScript file that the tool generates.</p>
+
+<div class="alert alert-warning" role="alert">
+  <p><i class="fa fa-warning"></i>
+  <b>Important:</b></p>
+
+  <p>If you want the AngularJS files to be somewhere else at runtime, then after generating the JavaScript file as shown above,
+simply copy it to the desired location and reference that location in your <code class="language-plaintext highlighter-rouge">index.html</code> file or equivalent.</p>
+
+</div>
+
+<p>The SDK also provides a tool to generate API documentation for the AngularJS services;
+see <a href="Generating-Angular-API-docs.html">Generating Angular API docs</a> for more information.</p>
+
+<h3 id="lb-ng-command">lb-ng command</h3>
+
+<p>The general syntax of the lb-ng command is:</p>
+
+<p><code class="language-plaintext highlighter-rouge">lb-ng [options] path-to-server-script [path-to-generated-services]</code></p>
+
+<p><strong>ARGUMENTS:</strong></p>
+
+<p><em><code class="language-plaintext highlighter-rouge">path-to-server-script</code></em>
+Relative path to the LoopBack application main script.
+In the <a href="Project-layout-reference.html">standard project layout</a>, <code class="language-plaintext highlighter-rouge">&lt;_app-dir_&gt;/server/server.js</code>. Required.</p>
+
+<p><em><code class="language-plaintext highlighter-rouge">path-to-generated-services</code></em>
+Relative path to the client JavaScript file to be generated containing the AngularJS $resource services.
+Optional; default is stdout.</p>
+
+<p><strong>OPTIONS</strong>:</p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">-m, --module-name [_name_]</code></strong>  
+The name for generated Angular module. Default is “lbServices”.</p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">-u, --url [_url_]</code></strong>
+URL of the REST API endpoint.</p>
+
+<h2 id="using-the-sdk">Using the SDK</h2>
+
+<p>The SDK creates $resource services that you can use in the same way as you would use hand-written ones.
+See the <a href="http://docs.angularjs.org/api/ngResource.%24resource#example">example</a>  in the AngularJS $resource docs.</p>
+
+<p>There is one service for each model class, with the same name as the model name (for example, <code class="language-plaintext highlighter-rouge">User</code>).
+On top of the standard get/save/query/remove methods, the service includes functions for calling every method exposed by the remote model (for example, <code class="language-plaintext highlighter-rouge">User.login()</code>).</p>
+
+<div class="alert alert-warning" role="alert">
+  <p><i class="fa fa-warning"></i>
+  <b>Important:</b></p>
+
+  <p>AngularJS model names start always with a capital letter, even if your server definition starts with a lower-case letter.</p>
+
+</div>
+
+<h3 id="setup">Setup</h3>
+
+<div class="alert alert-info" role="alert">
+  <p><i class="fa fa-info-circle"></i>
+<b>Note:</b></p>
+
+  <p>The generated lbServices module (<code class="language-plaintext highlighter-rouge">lb-services.js</code>) depends on the Angular resource script (<code class="language-plaintext highlighter-rouge">angular-resource.js</code>) so you must ensure that your page has
+<code class="language-plaintext highlighter-rouge">&lt;script src="angular-resource.js"&gt;&lt;/script&gt;</code> if you don’t have it already.</p>
+
+</div>
+
+<p>Follow these steps to use the generated services inside your AngularJS application:</p>
+
+<ol>
+  <li>
+    <p>Include <code class="language-plaintext highlighter-rouge">js/lb-services.js</code> in your <code class="language-plaintext highlighter-rouge">index.html</code> file</p>
+
+    <p><code class="language-plaintext highlighter-rouge">&lt;script src="js/lb-services.js"&gt;&lt;/script&gt;</code></p>
+
+    <div class="alert alert-info" role="alert">
+      <p><i class="fa fa-info-circle"></i>
+<b>Note:</b>
+You’ll need to set up static middleware to serve the client script.
+See <a href="Defining-middleware.html">Defining middleware</a> for more information.</p>
+
+    </div>
+  </li>
+</ol>
+<p>&lt;/div&gt;</p>
+
+<ol>
+  <li>
+    <p>Register the AngularJS module <code class="language-plaintext highlighter-rouge">lbServices</code> as a dependency of your app.
+Add <code class="language-plaintext highlighter-rouge">'lbServices'</code> to the <code class="language-plaintext highlighter-rouge">angular.module()</code> call in  the main JavaScript file of your Angular (client) app, as follows:</p>
+
+    <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">angular</span><span class="p">.</span><span class="nx">module</span><span class="p">(</span><span class="dl">'</span><span class="s1">my-app-module</span><span class="dl">'</span><span class="p">,</span>
+  <span class="p">[</span><span class="dl">'</span><span class="s1">ngRoute</span><span class="dl">'</span> <span class="cm">/* etc */</span><span class="p">,</span> <span class="dl">'</span><span class="s1">lbServices</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">my-app.controllers</span><span class="dl">'</span><span class="p">])</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>To call a method on a model from your controller, add the model name as a dependency of the controller; for example:</p>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// access User model
+module.controller('LoginCtrl', function($scope, User, $location) {
+  $scope.login = function() {
+    $scope.loginResult = User.login($scope.credentials,
+      function() {
+        // success
+      }, function(res) {
+        // error
+      });
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<h3 id="client-configuration">Client configuration</h3>
+
+<p>You can configure some aspects of the generated services within the AngularJS client application using the 
+<a href="http://apidocs.strongloop.com/loopback-sdk-angular/#loopbackresourceprovider">LoopBackResourceProvider</a> object, as illustrated below.
+This object is available to configuration blocks only; for more information, see
+<a href="https://docs.angularjs.org/guide/module#module-loading-dependencies">Module Loading &amp; Dependencies</a> in the AngularJS documentation.</p>
+
+<div id="app.js" class="code-caption">
+  <p>app.js</p>
+</div>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">angular</span><span class="p">.</span><span class="nx">module</span><span class="p">(</span><span class="dl">'</span><span class="s1">my-app-module</span><span class="dl">'</span><span class="p">)</span>
+  <span class="p">.</span><span class="nx">config</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">LoopBackResourceProvider</span><span class="p">)</span> <span class="p">{</span>
+
+    <span class="c1">// Use a custom auth header instead of the default 'Authorization'</span>
+    <span class="nx">LoopBackResourceProvider</span><span class="p">.</span><span class="nx">setAuthHeader</span><span class="p">(</span><span class="dl">'</span><span class="s1">X-Access-Token</span><span class="dl">'</span><span class="p">);</span>
+
+    <span class="c1">// Change the URL where to access the LoopBack REST API server</span>
+    <span class="nx">LoopBackResourceProvider</span><span class="p">.</span><span class="nx">setUrlBase</span><span class="p">(</span><span class="dl">'</span><span class="s1">http://api.example.com/</span><span class="dl">'</span><span class="p">);</span>
+  <span class="p">});</span>
+</code></pre></div></div>
+
+<p>See <a href="http://apidocs.strongloop.com/loopback-sdk-angular/#loopbackresourceprovider">LoopBackResourceProvider API docs</a> for the list of all available options.</p>
+
+<h3 id="model-resource-api">Model resource API</h3>
+
+<p>Angular’s <code class="language-plaintext highlighter-rouge">$resource</code> objects have a different API compared to LoopBack’s API on the server:</p>
+
+<ul>
+  <li>Method arguments are passed in an object (a key-value map), not positionally.</li>
+  <li>Methods accept two optional callbacks (a success callback and an error callback).</li>
+  <li>All methods return a special object populated with the response data once it arrives.</li>
+  <li>The returned object has a special property <code class="language-plaintext highlighter-rouge">$promise</code> that you can use for promise-based flow control.</li>
+</ul>
+
+<p>See “Returns” section in <a href="https://docs.angularjs.org/api/ngResource/service/$resource#usage">$resource Usage docs</a>
+for more information about the AngularJS API and 
+<a href="http://apidocs.strongloop.com/loopback-sdk-angular/#angular-client-api">AngularJS client API docs</a>
+for a reference of methods available on the built-in loopback models.</p>
+
+<h4 id="example">Example</h4>
+
+<p>Look at the method <code class="language-plaintext highlighter-rouge">Product.find(filter, callback)</code> to illustrate the differences.</p>
+
+<p>On the server, one can write the following code to find all products named ‘Pen’:</p>
+
+<div id="server-code.js" class="code-caption">
+  <p>server-code.js</p>
+</div>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">Product</span><span class="p">.</span><span class="nx">find</span><span class="p">({</span><span class="err"> </span>
+    <span class="na">where</span><span class="p">:</span> <span class="p">{</span>
+      <span class="na">name</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Pen</span><span class="dl">'</span>
+    <span class="p">}</span>
+  <span class="p">},</span>
+  <span class="kd">function</span><span class="p">(</span><span class="nx">err</span><span class="p">,</span> <span class="nx">list</span><span class="p">)</span> <span class="p">{</span> <span class="cm">/*...*/</span> <span class="p">});</span>
+</code></pre></div></div>
+
+<p>The AngularJS code to perform the same operation is:</p>
+
+<div id="angular-code.js" class="code-caption">
+  <p>angular-code.js</p>
+</div>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">$scope</span><span class="p">.</span><span class="nx">products</span> <span class="o">=</span> <span class="nx">Product</span><span class="p">.</span><span class="nx">find</span><span class="p">({</span>
+    <span class="na">filter</span><span class="p">:</span> <span class="p">{</span>
+      <span class="na">where</span><span class="p">:</span> <span class="p">{</span>
+        <span class="na">name</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Pen</span><span class="dl">'</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+  <span class="p">},</span>
+  <span class="kd">function</span><span class="p">(</span><span class="nx">list</span><span class="p">)</span> <span class="p">{</span> <span class="cm">/* success */</span> <span class="p">},</span>
+  <span class="kd">function</span><span class="p">(</span><span class="nx">errorResponse</span><span class="p">)</span> <span class="p">{</span> <span class="cm">/* error */</span> <span class="p">}</span>
+<span class="p">);</span>
+</code></pre></div></div>
+
+<h3 id="crud-operations">CRUD operations</h3>
+
+<p>The API for manipulating model instances is similar to the server-side Node API: it provides methods for standard create, read, update, and delete (CRUD) operations.</p>
+
+<h4 id="create">Create</h4>
+
+<p>The create method takes an object containing a key-value map of values for the model.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">$scope</span><span class="p">.</span><span class="nx">product</span> <span class="o">=</span> <span class="nx">Product</span><span class="p">.</span><span class="nx">create</span><span class="p">({</span><span class="err"> </span><span class="na">name</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Pen</span><span class="dl">'</span> <span class="p">});</span>
+</code></pre></div></div>
+
+<h4 id="read-querying">Read (querying)</h4>
+
+<p>You can fetch model data using the usual methods like <code class="language-plaintext highlighter-rouge">find()</code>, <code class="language-plaintext highlighter-rouge">findOne()</code> or <code class="language-plaintext highlighter-rouge">findById()</code>.
+Just don’t forget to wrap the arguments in a key/value parameters map.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">$scope</span><span class="p">.</span><span class="nx">products</span> <span class="o">=</span> <span class="nx">Product</span><span class="p">.</span><span class="nx">find</span><span class="p">({</span>
+  <span class="na">filter</span><span class="p">:</span> <span class="p">{</span>
+    <span class="na">limit</span><span class="p">:</span> <span class="mi">10</span>
+  <span class="p">}</span>
+<span class="p">});</span><span class="err"> </span>
+<span class="nx">$scope</span><span class="p">.</span><span class="nx">pen</span> <span class="o">=</span> <span class="nx">Product</span><span class="p">.</span><span class="nx">findOne</span><span class="p">({</span><span class="err"> </span>
+  <span class="na">filter</span><span class="p">:</span> <span class="p">{</span>
+    <span class="na">where</span><span class="p">:</span> <span class="p">{</span>
+      <span class="na">name</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Pen</span><span class="dl">'</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">});</span><span class="err"> </span>
+<span class="nx">$scope</span><span class="p">.</span><span class="nx">prod0</span> <span class="o">=</span> <span class="nx">Product</span><span class="p">.</span><span class="nx">findById</span><span class="p">({</span>
+  <span class="na">id</span><span class="p">:</span> <span class="mi">0</span>
+<span class="p">});</span>
+</code></pre></div></div>
+
+<p>Refer to <a href="Querying-data.html">Querying data</a> for a description of all query options.
+The AngularJS client expects the “Node syntax” of arguments, with the differences noted above.</p>
+
+<p>Also, see <a href="Accessing-related-models.html#querying-related-models">Querying related models</a>.</p>
+
+<h4 id="update">Update</h4>
+
+<p>After you obtain an instance of a Model resource using one of the query methods described above, persist changes back to the server by calling <code class="language-plaintext highlighter-rouge">$save</code> method:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">$scope</span><span class="p">.</span><span class="nx">product</span><span class="p">.</span><span class="nx">price</span> <span class="o">=</span> <span class="mf">13.40</span><span class="p">;</span>
+<span class="nx">$scope</span><span class="p">.</span><span class="nx">product</span><span class="p">.</span><span class="nx">$save</span><span class="p">();</span>
+</code></pre></div></div>
+
+<p>Note that the method returns a promise and it also updates the model instance using the data returned by the server.</p>
+
+<p>You can also perform a (partial) update with <code class="language-plaintext highlighter-rouge">prototype$updateAttributes</code> method:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">$scope</span><span class="p">.</span><span class="nx">product</span><span class="p">.</span><span class="nx">price</span> <span class="o">=</span> <span class="mf">13.40</span><span class="p">;</span>
+<span class="nx">Product</span><span class="p">.</span><span class="nx">prototype$updateAttributes</span><span class="p">(</span>
+   <span class="p">{</span><span class="na">id</span><span class="p">:</span>    <span class="nx">$scope</span><span class="p">.</span><span class="nx">product</span><span class="p">.</span><span class="nx">id</span><span class="p">},</span>
+   <span class="p">{</span><span class="na">price</span><span class="p">:</span> <span class="nx">$scope</span><span class="p">.</span><span class="nx">product</span><span class="p">.</span><span class="nx">price</span><span class="p">}</span>
+<span class="p">);</span>
+</code></pre></div></div>
+
+<h4 id="delete">Delete</h4>
+
+<p>Use <code class="language-plaintext highlighter-rouge">deleteById()</code> to remove a model instance with a given ID.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">Product</span><span class="p">.</span><span class="nx">deleteById</span><span class="p">({</span>
+    <span class="na">id</span><span class="p">:</span> <span class="nx">$scope</span><span class="p">.</span><span class="nx">product</span><span class="p">.</span><span class="nx">id</span>
+  <span class="p">})</span>
+  <span class="p">.</span><span class="nx">$promise</span>
+  <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">deleted</span><span class="dl">'</span><span class="p">);</span>
+  <span class="p">});</span>
+</code></pre></div></div>
+
+<h3 id="working-with-related-models">Working with related models</h3>
+
+<p>The AngularJS SDK provides convenient methods for accessing and manipulating related models.</p>
+
+<div class="alert alert-danger" role="alert">
+  <p><i class="fa fa-exclamation-circle"></i>
+  <b>Warning:</b> 
+Currently, the AngularJS SDK does not support polymorphic belongsTo relations; an application with such a relation will display a warning such as this (for example):</p>
+
+  <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Warning: scope Picture.imageable is missing _targetClass property.
+The Angular code for this scope won't be generated. Please upgrade
+to the latest version of loopback-datasource-juggler to fix the problem.
+</code></pre></div>  </div>
+
+</div>
+
+<p>For example, consider the two following model definitions:</p>
+
+<div id="common/models/products.json" class="code-caption">
+  <p>common/models/products.json</p>
+</div>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span>
+  <span class="dl">"</span><span class="s2">name</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Product</span><span class="dl">"</span><span class="p">,</span>
+  <span class="dl">"</span><span class="s2">properties</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span> <span class="cm">/* ... */</span> <span class="p">},</span>
+  <span class="dl">"</span><span class="s2">relations</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+    <span class="dl">"</span><span class="s2">category</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+      <span class="dl">"</span><span class="s2">type</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">belongsTo</span><span class="dl">"</span><span class="p">,</span>
+      <span class="dl">"</span><span class="s2">model</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Category</span><span class="dl">"</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<div id="common/models/categories.json" class="code-caption">
+  <p>common/models/categories.json</p>
+</div>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span>
+  <span class="dl">"</span><span class="s2">name</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Category</span><span class="dl">"</span><span class="p">,</span>
+  <span class="dl">"</span><span class="s2">properties</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span> <span class="cm">/* ... */</span> <span class="p">},</span>
+  <span class="dl">"</span><span class="s2">relations</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+    <span class="dl">"</span><span class="s2">products</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+      <span class="dl">"</span><span class="s2">type</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">hasMany</span><span class="dl">"</span><span class="p">,</span>
+      <span class="dl">"</span><span class="s2">model</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Product</span><span class="dl">"</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h4 id="querying-related-models">Querying related models</h4>
+
+<p>The SDK creates a Category.products() method that can be used to list all products in a given category.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">$scope</span><span class="p">.</span><span class="nx">products</span> <span class="o">=</span> <span class="nx">Category</span><span class="p">.</span><span class="nx">products</span><span class="p">({</span>
+  <span class="na">id</span><span class="p">:</span> <span class="nx">$scope</span><span class="p">.</span><span class="nx">category</span><span class="p">.</span><span class="nx">id</span><span class="p">,</span>
+  <span class="na">filter</span><span class="p">:</span> <span class="p">{</span>
+    <span class="na">where</span><span class="p">:</span> <span class="p">{</span> <span class="na">name</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Pen</span><span class="dl">'</span> <span class="p">},</span>
+    <span class="na">limit</span><span class="p">:</span> <span class="mi">10</span>
+  <span class="p">}</span>
+<span class="p">});</span>
+</code></pre></div></div>
+
+<h4 id="creating-a-related-model">Creating a related model</h4>
+
+<p>To create a new product in a given category, use <code class="language-plaintext highlighter-rouge">Category.products.create()</code>:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">$scope</span><span class="p">.</span><span class="nx">newProduct</span> <span class="o">=</span> <span class="nx">Category</span><span class="p">.</span><span class="nx">products</span><span class="p">.</span><span class="nx">create</span><span class="p">(</span>
+  <span class="p">{</span><span class="na">id</span><span class="p">:</span>   <span class="nx">$scope</span><span class="p">.</span><span class="nx">category</span><span class="p">.</span><span class="nx">id</span><span class="p">},</span>
+  <span class="p">{</span><span class="na">name</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Pen</span><span class="dl">'</span><span class="p">}</span>
+<span class="p">);</span>
+</code></pre></div></div>
+
+<h4 id="removing-related-models">Removing related models</h4>
+
+<p>Last but not least, there is also a method to delete all related models (all products in a given category):</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">Category</span><span class="p">.</span><span class="nx">products</span><span class="p">.</span><span class="nx">destroyAll</span><span class="p">({</span> <span class="na">id</span><span class="p">:</span> <span class="nx">$scope</span><span class="p">.</span><span class="nx">category</span><span class="p">.</span><span class="nx">id</span> <span class="p">});</span>
+</code></pre></div></div>
+
+<h3 id="authentication">Authentication</h3>
+
+<p>The SDK provides first-class support for authenticated requests.</p>
+
+<p>Basic use is simple: Call <a href="http://apidocs.strongloop.com/loopback-sdk-angular/#user-login"><code class="language-plaintext highlighter-rouge">User.login()</code></a>
+with correct credentials and the SDK will handle everything else for you.
+It will store the access token provided in login response and send this token in all subsequent requests.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">User</span><span class="p">.</span><span class="nx">login</span><span class="p">({</span>
+  <span class="na">email</span><span class="p">:</span> <span class="dl">'</span><span class="s1">name@example.com</span><span class="dl">'</span><span class="p">,</span>
+  <span class="na">password</span><span class="p">:</span> <span class="dl">'</span><span class="s1">passwd</span><span class="dl">'</span>
+<span class="p">});</span>
+</code></pre></div></div>
+
+<p>Other useful methods include <a href="http://apidocs.strongloop.com/loopback-sdk-angular/#user-isauthenticated"><code class="language-plaintext highlighter-rouge">User.isAuthenticated()</code></a>,
+to determine if the current user is logged in, and
+<a href="http://apidocs.strongloop.com/loopback-sdk-angular/#user-getcurrentid"><code class="language-plaintext highlighter-rouge">User.getCurrentId()</code></a>, to get the ID of the currently logged-in user.</p>
+
+<h4 id="persisting-the-access-token">Persisting the access token</h4>
+
+<p>By default, the AngularJS SDK stores the access token in the browser’s localStorage, so it is preserved across page reloads and browser (hybrid mobile app) restarts.</p>
+
+<p>While this behavior is useful for hybrid mobile applications, traditional web applications typically need to store the token
+only for the duration of a browsing session, unless the user checked a “remember me” option. Fortunately this is easy to implement too:
+Just add <code class="language-plaintext highlighter-rouge">rememberMe</code> parameter to your <code class="language-plaintext highlighter-rouge">User.login()</code> call.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">User</span><span class="p">.</span><span class="nx">login</span><span class="p">({</span> <span class="na">rememberMe</span><span class="p">:</span> <span class="nx">$scope</span><span class="p">.</span><span class="nx">rememberMe</span> <span class="p">},</span> <span class="nx">credentials</span><span class="p">);</span>
+</code></pre></div></div>
+
+<h4 id="handling-401-unauthorized">Handling 401 Unauthorized</h4>
+
+<p>When there is no user logged in or the access token expires, requests to the LoopBack server fail with 401 errors.
+The application should install a global handler that will allow the user to login and repeat the action.</p>
+
+<p>AngularJS provides HTTP interceptors that can be used to implement this feature.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Inside app config block</span>
+<span class="nx">$httpProvider</span><span class="p">.</span><span class="nx">interceptors</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">$q</span><span class="p">,</span> <span class="nx">$location</span><span class="p">,</span> <span class="nx">LoopBackAuth</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="p">{</span>
+    <span class="na">responseError</span><span class="p">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">rejection</span><span class="p">)</span> <span class="p">{</span>
+      <span class="k">if</span> <span class="p">(</span><span class="nx">rejection</span><span class="p">.</span><span class="nx">status</span> <span class="o">==</span> <span class="mi">401</span><span class="p">)</span> <span class="p">{</span>
+		<span class="c1">//Now clearing the loopback values from client browser for safe logout...</span>
+        <span class="nx">LoopBackAuth</span><span class="p">.</span><span class="nx">clearUser</span><span class="p">();</span>
+        <span class="nx">LoopBackAuth</span><span class="p">.</span><span class="nx">clearStorage</span><span class="p">();</span>
+        <span class="nx">$location</span><span class="p">.</span><span class="nx">nextAfterLogin</span> <span class="o">=</span> <span class="nx">$location</span><span class="p">.</span><span class="nx">path</span><span class="p">();</span>
+        <span class="nx">$location</span><span class="p">.</span><span class="nx">path</span><span class="p">(</span><span class="dl">'</span><span class="s1">/login</span><span class="dl">'</span><span class="p">);</span>
+      <span class="p">}</span>
+      <span class="k">return</span> <span class="nx">$q</span><span class="p">.</span><span class="nx">reject</span><span class="p">(</span><span class="nx">rejection</span><span class="p">);</span>
+    <span class="p">}</span>
+  <span class="p">};</span>
+<span class="p">});</span>
+
+<span class="c1">// In the Login controller</span>
+<span class="nx">User</span><span class="p">.</span><span class="nx">login</span><span class="p">(</span><span class="nx">$scope</span><span class="p">.</span><span class="nx">credentials</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+  <span class="kd">var</span> <span class="nx">next</span> <span class="o">=</span> <span class="nx">$location</span><span class="p">.</span><span class="nx">nextAfterLogin</span> <span class="o">||</span> <span class="dl">'</span><span class="s1">/</span><span class="dl">'</span><span class="p">;</span>
+  <span class="nx">$location</span><span class="p">.</span><span class="nx">nextAfterLogin</span> <span class="o">=</span> <span class="kc">null</span><span class="p">;</span>
+  <span class="nx">$location</span><span class="p">.</span><span class="nx">path</span><span class="p">(</span><span class="nx">next</span><span class="p">);</span>
+<span class="p">});</span>
+</code></pre></div></div>
+
+<p>The <code class="language-plaintext highlighter-rouge">responseError</code> interceptor saves the current location (line 6) and redirects to the login page (line 7).
+The login controller then redirects back to the previous page (lines 16-18) when the login was successful.</p>
+
+
+    <div class="tags">
+      
+        <b>Tags: </b>
+        
+        
+          
+            <a href="tag_angularjs.html" class="tags-item" role="button">angularjs</a>
+            
+        
+      
+    </div>
+</div>
+
+<hr class="shaded"/>
+
+<footer id="container">
+            <div class="row">
+                <div class="col-md-6 footer-left">
+               &copy;2021 IBM / StrongLoop. All rights reserved. <br />
+ Site last generated: Mar 22, 2021
+              </div>
+              <div class="col-md-6 footer-right">
+                <p><img src="https://loopback.io/images/company_logo.png" alt="Company logo"/></p>
+              </div>
+            </div>
+</footer>
+
+
+        </div>
+        <!-- /.row -->
+</div>
+<!-- /.container -->
+    </div>
+</body>
+
+</html>

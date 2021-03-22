@@ -1,0 +1,3690 @@
+<!DOCTYPE html>
+<head>
+    
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="These release notes describe what has changed in LoopBack 3.0.">
+  <meta name="keywords" content=" LoopBack">
+  <title>3.0 Release Notes | LoopBack Documentation</title>
+  <link rel="stylesheet" href="/css/syntax.css">
+
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/modern-business.css">
+    <link rel="stylesheet" href="/css/lavish-bootstrap.css">
+    <link rel="stylesheet" href="/css/customstyles.css">
+    <link rel="stylesheet" href="/css/theme-v4.css">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-150726441-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-150726441-2');
+</script>
+
+
+    <!-- github star button -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.3.0/anchor.min.js"></script>
+    <script src="/js/toc.js"></script>
+    <script src="/js/customscripts.js"></script>
+
+    <link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    
+
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-lg navbar-brand no_icon" href="/doc/index.html">
+              <img class="no_icon" style="width:147px;" src="/images/branding/logo/white/loopback.svg">&nbsp;<span class="projectTitle"></span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- entries without drop-downs appear here -->
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">API Docs<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        <!-- page.url is /doc/ja/lb3/3.0-Release-Notes.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://loopback.io/doc/en/lb4/apidocs.index.html" target="_blank">LoopBack 4</a></li>
+                          
+                        
+                        <!-- page.url is /doc/ja/lb3/3.0-Release-Notes.html .... folderitem.url is  -->
+                          
+                            <li><a href="http://apidocs.loopback.io" target="_blank">LoopBack 3.x</a></li>
+                          
+                        
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">View<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        <!-- page.url is /doc/ja/lb3/3.0-Release-Notes.html .... folderitem.url is / -->
+                          
+                            <li><a href="/">LoopBack Overview</a></li>
+                          
+                        
+                        <!-- page.url is /doc/ja/lb3/3.0-Release-Notes.html .... folderitem.url is /doc/en/lb4/ -->
+                          
+                            <li><a href="/doc/en/lb4/">LoopBack 4</a></li>
+                          
+                        
+                        <!-- page.url is /doc/ja/lb3/3.0-Release-Notes.html .... folderitem.url is /doc/en/lb3/ -->
+                          
+                            <li><a href="/doc/en/lb3/">LoopBack 3.x</a></li>
+                          
+                        
+                        <!-- page.url is /doc/ja/lb3/3.0-Release-Notes.html .... folderitem.url is /doc/en/lb2/ -->
+                          
+                            <li><a href="/doc/en/lb2/">LoopBack 2.x</a></li>
+                          
+                        
+                        <!-- page.url is /doc/ja/lb3/3.0-Release-Notes.html .... folderitem.url is /doc/en/community/ -->
+                          
+                            <li><a href="/doc/en/community/">Community projects</a></li>
+                          
+                        
+                        <!-- page.url is /doc/ja/lb3/3.0-Release-Notes.html .... folderitem.url is /doc/en/contrib/ -->
+                          
+                            <li><a href="/doc/en/contrib/">Contributing to LoopBack</a></li>
+                          
+                        
+                        <!-- page.url is /doc/ja/lb3/3.0-Release-Notes.html .... folderitem.url is /doc/en/sec/ -->
+                          
+                            <li><a href="/doc/en/sec/">Security advisories</a></li>
+                          
+                        
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Resources<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        <!-- page.url is /doc/ja/lb3/3.0-Release-Notes.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://github.com/strongloop/loopback.io" target="_blank">Docs Github Repo</a></li>
+                          
+                        
+                        <!-- page.url is /doc/ja/lb3/3.0-Release-Notes.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://groups.google.com/forum/#!forum/loopbackjs-announcements" target="_blank">Announcements Mailing List</a></li>
+                          
+                        
+                        <!-- page.url is /doc/ja/lb3/3.0-Release-Notes.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://groups.google.com/forum/#!forum/loopbackjs" target="_blank">Developer Forum</a></li>
+                          
+                        
+                        <!-- page.url is /doc/ja/lb3/3.0-Release-Notes.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://join.slack.com/t/loopbackio/shared_invite/zt-8lbow73r-SKAKz61Vdao~_rGf91pcsw" target="_blank">LoopBack on Slack</a></li>
+                          
+                        
+                        <!-- page.url is /doc/ja/lb3/3.0-Release-Notes.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://stackoverflow.com/questions/tagged/strongloop+or+loopback4+or+loopbackjs" target="_blank">LoopBack on Stack Overflow</a></li>
+                          
+                        
+                        <!-- page.url is /doc/ja/lb3/3.0-Release-Notes.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://strongloop.com/strongblog/tag_LoopBack.html" target="_blank">StrongLoop Blog - LoopBack</a></li>
+                          
+                        
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Translations<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        <!-- page.url is /doc/ja/lb3/3.0-Release-Notes.html .... folderitem.url is /doc/es/lb2/ -->
+                          
+                            <li><a href="/doc/es/lb2/">Español (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/ja/lb3/3.0-Release-Notes.html .... folderitem.url is /doc/es/lb4/ -->
+                          
+                            <li><a href="/doc/es/lb4/">Español (v4)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/ja/lb3/3.0-Release-Notes.html .... folderitem.url is /doc/fr/lb2/ -->
+                          
+                            <li><a href="/doc/fr/lb2/">Français (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/ja/lb3/3.0-Release-Notes.html .... folderitem.url is /doc/fr/lb4/ -->
+                          
+                            <li><a href="/doc/fr/lb4/">Français (v4)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/ja/lb3/3.0-Release-Notes.html .... folderitem.url is /doc/ko/lb2/ -->
+                          
+                            <li><a href="/doc/ko/lb2/">한국어 (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/ja/lb3/3.0-Release-Notes.html .... folderitem.url is /doc/ko/lb3/ -->
+                          
+                            <li><a href="/doc/ko/lb3/">한국어 (v3)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/ja/lb3/3.0-Release-Notes.html .... folderitem.url is /doc/pt-br/lb2/ -->
+                          
+                            <li><a href="/doc/pt-br/lb2/">Português (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/ja/lb3/3.0-Release-Notes.html .... folderitem.url is /doc/pt-br/lb4/ -->
+                          
+                            <li><a href="/doc/pt-br/lb4/">Português (v4)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/ja/lb3/3.0-Release-Notes.html .... folderitem.url is /doc/ja/lb2/ -->
+                          
+                            <li><a href="/doc/ja/lb2/">日本語 (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/ja/lb3/3.0-Release-Notes.html .... folderitem.url is /doc/ja/lb3/ -->
+                          
+                            <li class="dropdownActive"><a href="/doc/ja/lb3/">日本語 (v3)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/ja/lb3/3.0-Release-Notes.html .... folderitem.url is /doc/ja/lb4/ -->
+                          
+                            <li><a href="/doc/ja/lb4/">日本語 (v4)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/ja/lb3/3.0-Release-Notes.html .... folderitem.url is /doc/ru/lb2/ -->
+                          
+                            <li><a href="/doc/ru/lb2/">Pусский (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/ja/lb3/3.0-Release-Notes.html .... folderitem.url is /doc/zh/lb2/ -->
+                          
+                            <li><a href="/doc/zh/lb2/">中文 (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/ja/lb3/3.0-Release-Notes.html .... folderitem.url is /doc/zh/lb4/ -->
+                          
+                            <li><a href="/doc/zh/lb4/">中文 (v4)</a></li>
+                          
+                        
+                    </ul>
+                </li>
+                
+                
+                
+                <li>
+                    <form id="search" name="search" class="input-group lb-search" action="/search" method="GET">
+                        <input type="text" class="form-control search-bar" placeholder="Search (powered by Watson)" name="q">
+                        
+                          <input type="hidden" name="sidebar" value="ja_lb3_sidebar">
+                        
+                        <div class="input-group-btn">
+                            <button type="submit" class="btn btn-default" aria-label="search">
+                              <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                            </button>
+                        </div>
+                      </form>
+                </li>
+            </ul>
+        </div>
+      </div>
+</nav>
+
+<!-- Page Content -->
+<div class="container">
+    <!-- Content Row -->
+    <div class="row">
+        <!-- Sidebar Column -->
+        <nav class="col-md-3 sidebar-col">
+          
+
+
+
+
+
+
+
+
+
+
+
+<!-- NOTE: sidebar = site.data.sidebars.mydoc_sidebar.entries -->
+<div class="sidebarTitle"><a href="/doc/ja/lb3/index.html">LoopBack 3.x</a></div>
+<ul id="mysidebar" class="nav-list">
+  
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Installation.html">インストール</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Installation-troubleshooting.html">Installation troubleshooting</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="3.0-Release-Notes.html">3.0 Release Notes</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Migrating-to-3.0.html">Migrating apps to v3</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="LoopBack-core-concepts.html">LoopBackの核となる概念</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Routing.html">ルーティング</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="LoopBack-FAQ.html">LoopBack FAQ</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Glossary.html">用語集</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="StrongLoop-Labs.html">StrongLoop Labs</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Getting-started-with-LoopBack.html">LoopBack を始めよう</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Create-a-simple-API.html">Create a simple API</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Use-API-Explorer.html">Use API Explorer</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Connect-your-API-to-a-data-source.html">Connect your API to a data source</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Extend-your-API.html">Extend your API</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Add-a-static-web-page.html">Add a static web page</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Add-a-custom-Express-route.html">Add a custom Express route</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Next-steps.html">Next steps</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Getting-started-part-II.html">Getting started part II</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Introducing-the-Coffee-Shop-Reviews-app.html">Introducing the Coffee Shop Reviews app</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Create-new-data-source.html">Create new data source</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Create-new-models.html">Create new models</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Define-model-relations.html">Define model relations</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Define-access-controls.html">Define access controls</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Define-a-remote-hook.html">Define a remote hook</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Create-AngularJS-client.html">Create AngularJS client</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Learn-more.html">Learn more</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Tutorials-and-examples.html">Tutorials and examples</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Security-advisories.html">Security advisories</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Security-advisory-10-24-2017.html">10-24-2017</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Security-advisory-09-21-2017.html">09-21-2017</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Security-advisory-03-10-2017.html">03-10-2017</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Creating-an-application.html">アプリケーションの作成</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Environment-specific-configuration.html">環境別の設定</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Versioning-your-API.html">APIのバージョニング</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Standard-project-structure.html">標準的なプロジェクト構成</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Defining-data-sources.html">Defining data sources</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Creating-a-database-schema-from-models.html">Creating a database schema from models</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Advanced-topics-data-sources.html">Data sources: advanced topics</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Using-database-transactions.html">データベースのトランザクションを使用する</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Executing-native-SQL.html">Executing native SQL</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Building-a-connector.html">Building a connector</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Implementing-create-retrieve-update-and-delete-methods.html">Implementing CRUD methods</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Implementing-model-discovery.html">Implementing model discovery</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Implementing-auto-migration.html">Implementing auto-migration</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Defining-models.html">Defining models</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Using-the-model-generator.html">Using the model generator</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Discovering-models-from-relational-databases.html">リレーショナルデータベースからモデルを発見する</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Creating-models-from-unstructured-data.html">Creating models from unstructured data</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Customizing-models.html">モデルのカスタマイズ</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Exposing-models-over-REST.html">REST経由でモデルを公開する</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Validating-model-data.html">モデルのデータを検証する</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Creating-model-relations.html">Creating model relations</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Tutorial-model-relations.html">Tutorial: model relations</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="BelongsTo-relations.html">BelongsTo relations</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="HasOne-relations.html">HasOne relations</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="HasMany-relations.html">HasMany relations</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="HasManyThrough-relations.html">HasManyThrough relations</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="HasAndBelongsToMany-relations.html">HasAndBelongsToMany relations</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Polymorphic-relations.html">Polymorphic relations</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Querying-related-models.html">Querying related models</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Embedded-models-and-relations.html">Embedded models and relations</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Nested-queries.html">Nested queries</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Using-built-in-models.html">Using built-in models</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Extending-built-in-models.html">Extending built-in models</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Adding-remote-methods-to-built-in-models.html">Adding remote methods to built-in models</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Model-property-reference.html">Model property reference</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Built-in-models-REST-API.html">Built-in models REST API</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="PersistedModel-REST-API.html">PersistedModel REST API</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Access-token-REST-API.html">Access token REST API</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="ACL-REST-API.html">ACL REST API</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Application-REST-API.html">Application REST API</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Relation-REST-API.html">Relation REST API</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Role-REST-API.html">Role REST API</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="User-REST-API.html">User REST API</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Attaching-models-to-data-sources.html">Attaching models to data sources</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Managing-users.html">Managing users</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Registering-users.html">Registering users</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Logging-in-users.html">Logging in users</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Partitioning-users-with-realms.html">Partitioning users with realms</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="User-management-example.html">User management example</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Authentication-authorization-and-permissions.html">認証・認可・パーミッション</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Introduction-to-User-model-authentication.html">Introduction to User model authentication</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Controlling-data-access.html">Controlling data access</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Making-authenticated-requests.html">Making authenticated requests</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Defining-and-using-roles.html">Defining and using roles</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Accessing-related-models.html">Accessing related models</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Creating-a-default-admin-user.html">Creating a default admin user</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Security-considerations.html">Security considerations</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Tutorial-access-control.html">Tutorial: access control</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Working-with-data.html">データの操作</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Creating-updating-and-deleting-data.html">データの作成・更新・削除</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Querying-data.html">データの検索</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Fields-filter.html">Fields フィルタ</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Include-filter.html">Include フィルタ</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Limit-filter.html">Limit フィルタ</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Order-filter.html">Order フィルタ</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Skip-filter.html">Skip フィルタ</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Where-filter.html">Where フィルタ</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Advanced-topics-data.html">Advanced topics: data</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Realtime-server-sent-events.html">Realtime server-sent events</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="AngularJS-LiveSet.html">AngularJS Live Set</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="AngularJS-LiveSet-Example.html">AngularJS Live Set example</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Realtime-socket-io.html">Real-time apps AngularJS using socket.io</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Adding-application-logic.html">アプリケーションロジックの追加</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Working-with-LoopBack-objects.html">LoopBackのオブジェクトを扱う</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Adding-logic-to-models.html">モデルにロジックを追加する</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Remote-methods.html">リモートメソッド</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Remote-hooks.html">リモートフック</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Operation-hooks.html">操作フック</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Connector-hooks.html">コネクタフック</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Tutorial-Adding-application-logic.html">Tutorial: Application logic</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Defining-boot-scripts.html">起動スクリプトの定義</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Defining-mixins.html">Defining mixins</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Defining-middleware.html">Defining middleware</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Middleware-example.html">Middleware example</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Using-current-context.html">Using current context</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Events.html">Events</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Using-promises.html">Using promises</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Running-and-debugging-apps.html">アプリケーションの実行とデバッグ</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Setting-debug-strings.html">デバッグ文字列の設定</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Using-strong-error-handler.html">Using strong-error-handler</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Preparing-for-deployment.html">Preparing for deployment</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="LoopBack-on-Bluemix.html">Running LoopBack apps on Bluemix</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="LoopBack-components.html">LoopBack components</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="OAuth-2.0.html">OAuth 2.0 component</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Push-notifications.html">Push notification component</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Push-notifications-for-iOS-apps.html">Push notifications for iOS apps</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Push-notifications-for-Android-apps.html">Push notifications for Android apps</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Storage-component.html">Storage component</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Storage-component-REST-API.html">Storage component REST API</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Storage-example.html">Storage component example</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Third-party-login-using-Passport.html">Passport login component</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Configuring-providers.json.html">Configuring providers.json</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Tutorial-third-party-login.html">Tutorial: third-party login</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Synchronization.html">Synchronization component</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Tutorial-Offline-Synchronization.html">Tutorial: Offline Synchronization</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Advanced-topics-sync.html">Advanced topics - sync</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Creating-components.html">Creating components</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Command-line-tools.html">コマンドラインツール</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="ACL-generator.html">ACL generator</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="API-definition-generator.html">API 定義生成ツール</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Application-generator.html">Application generator</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Bluemix-config-generator.html">Bluemix configuration generator</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Boot-script-generator.html">Boot script generator</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Data-source-generator.html">Data source generator</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Middleware-generator.html">Middleware generator</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Model-generator.html">Model generator</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Oracle-installer-command.html">Oracle installer command</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Property-generator.html">Property generator</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Refresh-definitions-command.html">Refresh definitions command</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Relation-generator.html">Relation generator</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Remote-method-generator.html">Remote method generator</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="SOAP-generator.html">SOAP generator</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Swagger-generator.html">Swagger 生成ツール</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Client-SDKs.html">Client SDKs</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="iOS-SDK.html">iOS SDK</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="IOS-getting-started.html">Getting started with the iOS SDK</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Android-SDK.html">Android SDK</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Tutorial-android-getting-started.html">Getting started with the Android SDK</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Working-with-files-using-the-Android-SDK.html">Working with files using the Android SDK</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Push-notifications-using-Android-SDK.html">Push notifications using Android SDK</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Working-with-the-LocalInstallation-class.html">Working with the LocalInstallation class</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="AngularJS-JavaScript-SDK.html">AngularJS SDK</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Angular-example-app.html">Angular example app</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="AngularJS-Grunt-plugin.html">AngularJS Grunt plugin</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Xamarin-SDK.html">Xamarin SDK</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Xamarin-client-API.html">Xamarin client API</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Xamarin-example-app.html">Xamarin example app</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="LoopBack-in-the-client.html">Isomorphic LoopBack</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Running-LoopBack-in-the-browser.html">Running LoopBack in the browser</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Using-Browserify.html">Using Browserify</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Isomorphic-LoopBack-example.html">Isomorphic example</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Connectors-reference.html">Connectors reference</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Memory-connector.html">Memory connector</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Database-connectors.html">Database connectors</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Cassandra-connector.html">Cassandra connector</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Cloudant-connector.html">Cloudant connector</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="DashDB.html">DashDB</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="DB2-connector.html">DB2 connector</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="DB2-iSeries-connector.html">DB2 for iSeries connector</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="DB2-for-z-OS.html">DB2 for z/OS</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Informix.html">Informix connector</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="MongoDB-connector.html">MongoDB connector</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Connecting-to-MongoDB.html">MongoDB Connector Tutorial</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Using-MongoLab.html">Using MongoLab</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="MySQL-connector.html">MySQL connector</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Connecting-to-MySQL.html">MySQL Connector Tutorial</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Oracle-connector.html">Oracle connector</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Installing-the-Oracle-connector.html">Installing the Oracle connector</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Connecting-to-Oracle.html">Oracle connector tutorial</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="PostgreSQL-connector.html">PostgreSQL connector</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Connecting-to-PostgreSQL.html">PostgreSQL connector tutorial</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Redis-connector.html">Redis connector</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="kv-redis-connector.html">Redis key-value connector</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Example-kv-connector.html">KV connector example</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="SQL-Server-connector.html">SQL Server connector</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Connecting-to-Microsoft-SQL-Server.html">SQL Server connector tutorial</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="SQLite3.html">SQLite3 connector</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Other-connectors.html">Other connectors</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Email-connector.html">Email connector</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="JSON-RPC-connector.html">JSON RPC connector</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="MQLight-connector.html">MQ Light connector</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Push-connector.html">Push connector</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Remote-connector.html">Remote connector</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Remote-connector-example.html">Remote connector example</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Strong-Remoting.html">Strong Remoting</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="REST-connector.html">REST connector</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="REST-connector-example.html">REST connector example</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="SOAP-connector.html">SOAP connector</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Strong-soap.html">Strong-soap</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="SOAP-Connector-example.html">SOAP connector example</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Connecting-to-SOAP.html">Connecting to SOAP web services</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Storage-connector.html">Storage connector</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Swagger-connector.html">Swagger connector</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Community-connectors.html">Community connectors</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Project-layout-reference.html">Project layout reference</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="client-directory.html">client directory</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="common-directory.html">common directory</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Model-definition-JSON-file.html">Model definition JSON file</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Model-extension-file.html">Model extension file</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="package.json.html">package.json</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="server-directory.html">server directory</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="component-config.json.html">component-config.json</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="config.json.html">config.json</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="datasources.json.html">datasources.json</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="middleware.json.html">middleware.json</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="middleware.development.json.html">middleware.development.json</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="model-config.json.html">model-config.json</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="server.js.html">server.js</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Node-reference.html">Node reference</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="LoopBack-types.html">LoopBack types</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Geotype.html">Geopoint type</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Valid-names-in-LoopBack.html">Valid names in LoopBack</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Basic-model-object.html">Basic model object</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Connected-model-object.html">Connected model object</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Error-object.html">Error object</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="LoopBack-middleware.html">LoopBack middleware</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Publish-subscribe-messaging.html">Publish-subscribe messaging</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Strong-pub-sub.html">Strong Pub-sub</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Pub-sub-bridge.html">Pub-sub bridge</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="MQTT-adapter.html">MQTT adapter</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Redis-pub-sub-adapter.html">Redis pub-sub adapter</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Primus-pub-sub-adapter.html">Primus pub-sub adapter</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Pub-sub-example.html">Node pub-sub example app</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Pub-sub-Loopback-example.html">LoopBack pub-sub example app</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="All-tags.html">All tags</a>
+      
+  </li>
+  
+
+
+
+</ul>
+
+        </nav>
+        <!-- Content Column -->
+        <div class="col-md-9">
+            
+<div class="post-header">
+   <h1 class="post-title-main">3.0 Release Notes</h1>
+   
+     
+       <a target="_blank" href="https://github.com/strongloop/loopback.io/blob/gh-pages/pages/ja/lb3/3.0-Release-Notes.md" class="githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit this page</a>
+   
+</div>
+
+<div class="post-content">
+
+
+  
+   <div class="summary">
+     These release notes describe what has changed in LoopBack 3.0.
+   </div>
+  
+
+
+
+
+ 
+
+    <div id="seealso">
+
+  <p><b>See also</b>:</p>
+
+  <ul>
+    <li><a href="Migrating-to-3.0.html">Migrating apps to v3</a></li>
+    <li><a href="http://strongloop.github.io/changelog/">Change log</a> (latest updates)</li>
+  </ul>
+
+</div>
+
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+;$(function() {
+  var level = parseInt(3, 10);
+  if (level === 1) {level = 'h2'}
+  if (level === 2) {level = 'h2,h3'}
+  if (level === 3) {level = 'h2,h3,h4'}
+  if (level === 4) {level = 'h2,h3,h4,h5'}
+
+  // Add a new level for changelog files which use h1,h2,h3
+  if (level === 0) {level = 'h1,h2,h3,h4,h5'}
+
+  var toc = $('#toc')
+
+  toc.toc({minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: level})
+
+  /* this offset helps with the space taken up by the floating toolbar */
+  toc.on('click', 'a', function() {
+    var target = $(this.getAttribute('href')),
+      scroll_target = target.offset().top
+
+    $(window).scrollTop(scroll_target - 10)
+    return false
+  })
+  .on('click', '.toc-expand-button', function() {
+    toc.find('> ul').slideToggle('fast');
+  })
+})
+</script>
+
+<div id="toc">
+  <p><span class="toc-title">Page Contents</span>
+  <button type="button" class="btn btn-link toc-expand-button">
+    <i class="fa fa-bars"></i>
+  </button></p>
+</div>
+
+<p>For instructions on migrating a LoopBack 2.x application, see the <a href="Migrating-to-3.0.html">3.0 Migration Guide</a>.</p>
+
+<h2 id="installation">Installation</h2>
+
+<p>See <a href="Installation.html">Installation</a>.</p>
+
+<h2 id="changes-to-strong-remoting">Changes to strong-remoting</h2>
+
+<h3 id="serialization-of-date-values-in-responses">Serialization of date values in responses</h3>
+
+<p>The format of date values has been changed from the output of <code class="language-plaintext highlighter-rouge">.toString()</code>,
+which produces values in local timezone, to the output of <code class="language-plaintext highlighter-rouge">.toJSON()</code>, which
+produces values in GMT.</p>
+
+<p>For example, consider <code class="language-plaintext highlighter-rouge">new Date(0)</code> returned for <code class="language-plaintext highlighter-rouge">dateArgument</code>.</p>
+
+<p>In strong-remoting 2.x, this value is converted to the following response
+when running on a computer in the Central-European timezone:</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"dateArgument"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"$type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"date"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"$data"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Thu Jan 01 1970 01:00:00 GMT+0100 (CET)"</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<p>In strong-remoting 3.x, the same value is converted to the following response
+regardless of the server timezone settings:</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"dateArgument"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"$type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"date"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"$data"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1970-01-01T00:00:00.000Z"</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<p>For more information, see <a href="https://github.com/strongloop/strong-remoting/pull/344">strong-remoting#344</a>.</p>
+
+<h3 id="cleanup-in-conversion-and-coercion-of-input-arguments">Cleanup in conversion and coercion of input arguments</h3>
+
+<p>We have significantly reworked conversion and coercion of input arguments
+when using the default REST adapter.  The general approach is to make both
+conversion and coercion more strict. When we are not sure how to treat
+an input value, we rather return HTTP error <code class="language-plaintext highlighter-rouge">400 Bad Request</code> than coerce
+the value incorrectly.</p>
+
+<p>Most notable breaking changes:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">null</code> value is accepted only for “object”, “array” and “any”.</li>
+  <li>Empty string is coerced to undefined to support ES6 default arguments.</li>
+  <li>JSON requests providing scalar values for array-typed argument are
+rejected.</li>
+  <li>Empty value is not converted to an empty array.</li>
+  <li>Array values containing items of wrong type are rejected. For
+example, an array containing a string value is rejected when
+the input argument expects an array of numbers.</li>
+  <li>Array items from JSON requests are not coerced. For example,
+<code class="language-plaintext highlighter-rouge">[true]</code> is no longer coerced to <code class="language-plaintext highlighter-rouge">[1]</code> for number arrays,
+and the request is subsequently rejected.</li>
+  <li>Deep members of object arguments are no longer coerced. For example,
+a query like <code class="language-plaintext highlighter-rouge">?arg[count]=42</code> produces <code class="language-plaintext highlighter-rouge">{ count: '42' }</code> now.</li>
+  <li>“any” coercion preserves too large numbers as a string, to prevent
+losing precision.</li>
+  <li>Boolean types accepts only four string values:
+ ‘true’, ‘false’, ‘0’ and ‘1’.
+Values are case-insensitive, i.e. ‘TRUE’ and ‘FaLsE’ work too.</li>
+  <li>Date type detects “Invalid Date” and rejects such requests.</li>
+  <li>When converting a value coming from a string source like querystring
+to a date, and the value is a timestamp (i.e. an integer), we treat
+the value as a number now. That way the value “0” always produces
+“1970-01-01T00:00:00.000Z” instead of some date around 1999/2000/2001
+depending on server timezone.</li>
+  <li>Array values are not allowed for arguments of type object.</li>
+</ul>
+
+<p>Hopefully these changes should leave most LoopBack applications (and clients)
+unaffected. If your start seeing unusual amount of 400 error responses after
+upgrading to LoopBack 3.x, then check the client code and ensure it
+correctly encodes request parameters.</p>
+
+<p>For more information, see the following pull requests:</p>
+
+<ul>
+  <li><a href="https://github.com/strongloop/strong-remoting/pull/343">strong-remoting#343</a></li>
+  <li><a href="https://github.com/strongloop/strong-remoting/pull/347">strong-remoting#347</a></li>
+  <li><a href="https://github.com/strongloop/strong-remoting/pull/349">strong-remoting#349</a></li>
+</ul>
+
+<h3 id="the-name-file-is-reserved-now">The name “file” is reserved now</h3>
+
+<p>The name “file” (and all other casing variations like “File”) is a reserved
+type now and cannot be used for custom user-provided types. The most notable
+result is that LoopBack applications can no longer have a “File” model.</p>
+
+<p>See the following resources for more information:</p>
+
+<ul>
+  <li><a href="https://github.com/strongloop/strong-remoting/pull/379">strong-remoting#379</a></li>
+  <li><a href="https://github.com/strongloop/loopback/issues/2554">loopback#2554</a></li>
+</ul>
+
+<h3 id="new-rest-adapter-error-handler">New REST adapter error handler</h3>
+
+<p>The REST adapter (typically created via <code class="language-plaintext highlighter-rouge">loopback.rest()</code>) uses a new error
+handler implementation that provides more secure configuration out of the box.</p>
+
+<p>In production mode (default):</p>
+
+<ul>
+  <li>HTTP responses never return stack traces.</li>
+  <li>Bad Request errors (4xx) provide the following properties copied from the
+error object: <code class="language-plaintext highlighter-rouge">name</code>, <code class="language-plaintext highlighter-rouge">message</code>, <code class="language-plaintext highlighter-rouge">statusCode</code> and <code class="language-plaintext highlighter-rouge">details</code>.</li>
+  <li>All other errors (including non-Error values like strings or arrays) provide
+only basic information: <code class="language-plaintext highlighter-rouge">statusCode</code> and <code class="language-plaintext highlighter-rouge">message</code> set to status name from
+HTTP specification.</li>
+</ul>
+
+<p>In debug mode (insecure):</p>
+
+<ul>
+  <li>HTTP responses include all properties provided by the error object.</li>
+  <li>For errors that are not an object, their string value is returned in
+<code class="language-plaintext highlighter-rouge">message</code> field.</li>
+</ul>
+
+<p>The default mode is production. Debug mode can be enabled by setting the <code class="language-plaintext highlighter-rouge">debug</code> param to <code class="language-plaintext highlighter-rouge">true</code>
+via middleware configuration. It is recommended to use environment-specific configuration
+to avoid accidentally enabling debug mode in your production environment.</p>
+
+<p>The <code class="language-plaintext highlighter-rouge">error.status</code> is replaced by <code class="language-plaintext highlighter-rouge">error.statusCode</code>, which is more descriptive and avoids ambiguity.<br />
+If your application uses <code class="language-plaintext highlighter-rouge">status</code>, you must change it to <code class="language-plaintext highlighter-rouge">statusCode</code>.</p>
+
+<p>For more information, see:</p>
+
+<ul>
+  <li><a href="Migrating-to-3.0.html#update-use-of-rest-error-handler">How to migrate (new REST error handler)</a></li>
+  <li><a href="https://github.com/strongloop/strong-error-handler/"><code class="language-plaintext highlighter-rouge">strong-error-handler</code></a>.</li>
+  <li><a href="Environment-specific-configuration.html">Environment-specific configuration</a></li>
+  <li><a href="https://github.com/strongloop/loopback/issues/1650#issuecomment-161920555">Rationale behind the new handler</a></li>
+  <li><a href="https://github.com/strongloop/strong-remoting/pull/302">strong-remoting PR #302</a></li>
+</ul>
+
+<h2 id="changes-to-persistedmodel">Changes to PersistedModel</h2>
+
+<h3 id="array-input-for-updateorcreate-function-is-no-longer-allowed">Array input for updateOrCreate function is no longer allowed</h3>
+
+<p>Allowing <code class="language-plaintext highlighter-rouge">updateOrCreate()</code> to accept an array as input would only work when
+creating new model instances (not updating them), so this support has been
+removed. Use the <code class="language-plaintext highlighter-rouge">create()</code> function instead.</p>
+
+<p>For more information, see <a href="https://github.com/strongloop/loopback-datasource-juggler/pull/889">loopback-datasource-juggler PR #889</a>.</p>
+
+<h3 id="full-replace-vs-partial-update">Full replace vs. partial update</h3>
+
+<p>There are two ways to update an existing record (model instance):</p>
+
+<ul>
+  <li>
+    <p>Update (patch) a subset of model properties only, for example
+update the address field while keeping other properties like email intact.</p>
+  </li>
+  <li>
+    <p>Replace the whole instance with the data provided in the request.</p>
+  </li>
+</ul>
+
+<p>This distinction is important when working with NoSQL databases like MongoDB,
+where it’s not possible to unset a property via a partial update.</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// in database</span>
+<span class="p">{</span> <span class="dl">"</span><span class="s2">name</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">ibm</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">twitter</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">@ibm</span><span class="dl">"</span> <span class="p">}</span>
+
+<span class="c1">// patch request (user deleted the twitter field)</span>
+<span class="p">{</span> <span class="dl">"</span><span class="s2">name</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">ibm</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">twitter</span><span class="dl">"</span><span class="p">:</span> <span class="kc">undefined</span> <span class="p">}</span>
+
+<span class="c1">// result</span>
+<span class="p">{</span> <span class="dl">"</span><span class="s2">name</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">ibm</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">twitter</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">@ibm</span><span class="dl">"</span> <span class="p">}</span>
+</code></pre></div></div>
+
+<p>Three new data-access operations perform a full replace:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">PersistedModel.prototype.replaceAttributes(data, options, cb)</code></li>
+  <li><code class="language-plaintext highlighter-rouge">PersistedModel.replaceById(id, data, options, cb)</code></li>
+  <li><code class="language-plaintext highlighter-rouge">PersistedModel.replaceOrCreate(data, options, cb)</code></li>
+</ul>
+
+<p>To clarify their behavior, the following methods were renamed:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">updateAttributes</code> was renamed to <code class="language-plaintext highlighter-rouge">patchAttributes</code>.</li>
+  <li><code class="language-plaintext highlighter-rouge">updateOrCreate</code> was renamed to <code class="language-plaintext highlighter-rouge">patchOrCreate</code>.</li>
+</ul>
+
+<p>The old names are preserved as aliases for backwards compatibility.</p>
+
+<p>The biggest change is in the REST API exposed by LoopBack. By default, <code class="language-plaintext highlighter-rouge">PUT</code>
+endpoints are mapped to replace methods in 3.0 and <code class="language-plaintext highlighter-rouge">PATCH</code> endpoints are
+introduced to expose the old update/patch methods.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>HTTP endpoint</th>
+      <th>3.x method</th>
+      <th>2.x method</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">PUT</code> <code class="language-plaintext highlighter-rouge">/MyModels</code></td>
+      <td>replaceOrCreate()</td>
+      <td>updateOrCreate</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">PUT</code> <code class="language-plaintext highlighter-rouge">/MyModels/:id</code></td>
+      <td>replaceById()</td>
+      <td>prototype.updateAttributes</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">PATCH</code> <code class="language-plaintext highlighter-rouge">/MyModels</code></td>
+      <td>updateOrCreate()</td>
+      <td>updateOrCreate</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">PATCH</code> <code class="language-plaintext highlighter-rouge">/MyModels/:id</code></td>
+      <td>prototype.updateAttributes()</td>
+      <td>prototype.updateAttributes</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Because this change could be disruptive, we implemented several measures
+to simplify the upgrade path:</p>
+
+<ul>
+  <li>A new model-level setting <code class="language-plaintext highlighter-rouge">replaceOnPUT</code> that can be used to opt into
+  the 2.x HTTP mapping.</li>
+  <li>Both new methods and the model-level setting were back-ported to 2.x,
+  allowing applications to opt into the new 3.x behaviour while still
+  running on LoopBack 2.x</li>
+</ul>
+
+<p>For more information, see <a href="https://github.com/strongloop/loopback/pull/2316">loopback#2316</a>,
+<a href="https://github.com/strongloop/loopback-datasource-juggler/pull/788">loopback-datasource-juggler#788</a>,
+<a href="Exposing-models-over-REST.html#replaceonput-flag">replaceOnPUT flag</a>
+and related documentation.</p>
+
+<p>For more information, see <a href="Migrating-to-3.0.html#change-use-of-put-endpoints">Migrating apps to LoopBack 3.0</a>.</p>
+
+<h3 id="persistedmodelfind-provides-ctxdata-in-loaded-hook"><code class="language-plaintext highlighter-rouge">PersistedModel.find</code> provides <code class="language-plaintext highlighter-rouge">ctx.data</code> in “loaded” hook</h3>
+
+<p>In LoopBack 2.x, the “loaded” hook for <code class="language-plaintext highlighter-rouge">DAO.find</code> method mistakenly
+set <code class="language-plaintext highlighter-rouge">ctx.instance</code> instead of <code class="language-plaintext highlighter-rouge">ctx.data</code>. This defeats the purpose of the “loaded”
+hook: to allow hooks to modify the raw data provided by the datasource
+before it’s used to build a model instance.</p>
+
+<p>This has been fixed in 3.0 and the “loaded” hook now consistently provides
+<code class="language-plaintext highlighter-rouge">ctx.data</code> for all operations. If you have a “loaded” hook handler that
+checks <code class="language-plaintext highlighter-rouge">if (ctx.instance)</code> then you can remove this condition together with
+the branch that follows.</p>
+
+<p>For more information, see <a href="https://github.com/strongloop/loopback-datasource-juggler/commit/30283291?w=1">loopback-datasource-juggler@30283291</a>.</p>
+
+<h3 id="persistedmodelcreate-method-no-longer-returns-created-instances"><code class="language-plaintext highlighter-rouge">PersistedModel.create</code> method no longer returns created instances</h3>
+
+<p>While implementing support for promises in <code class="language-plaintext highlighter-rouge">PersistedModel.create()</code>, we found
+that this method returns the instance object synchronously. This is
+inconsistent with the usual convention of accessing the result via
+a callback/promise and it may not work correctly when the data source generates some fields
+(for example the <code class="language-plaintext highlighter-rouge">id</code> property).</p>
+
+<p>In version 3.0, the API has changed to be consistent with other DAO methods:</p>
+
+<ul>
+  <li>When invoked with a callback argument, <code class="language-plaintext highlighter-rouge">PersistedModel.create()</code> does not return anything.</li>
+  <li>When invoked without a callback, <code class="language-plaintext highlighter-rouge">PersistedModel.create()</code> returns a promise.</li>
+</ul>
+
+<p>For more information, see <a href="https://github.com/strongloop/loopback-datasource-juggler/pull/918">loopback-datasource-juggler#918</a>.</p>
+
+<h3 id="models-with-auto-generated-ids-reject-user-provided-id-values">Models with auto-generated IDs reject user-provided ID values</h3>
+
+<p>For security reasons, the default value of the config variable <code class="language-plaintext highlighter-rouge">forceId</code> is set
+to <code class="language-plaintext highlighter-rouge">true</code> whenever a model uses an auto-generated ID. Thus, creating/updating
+an instance with a client-provided ID returns an error message like:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Unhandled rejection ValidationError: The `MyModel` instance is not valid.
+Details: `id` can't be set (value: 1).
+</code></pre></div></div>
+
+<p>To disable the check, set <code class="language-plaintext highlighter-rouge">forceId: false</code> in the model JSON file, for example:</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Product"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"forceId"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<p>For more information, see <a href="https://github.com/strongloop/loopback-datasource-juggler/pull/982">loopback-datasource-juggler#982</a>.</p>
+
+<h2 id="changes-to-loopback-middleware">Changes to LoopBack middleware</h2>
+
+<h3 id="cors-is-no-longer-enabled">CORS is no longer enabled</h3>
+
+<p>Two types of applications are commonly built using LoopBack,
+and each type has different requirements with regard to cross-origin resource sharing (CORS).</p>
+
+<ol>
+  <li>
+    <p>Public-facing API servers with a variety of clients.
+  CORS is enabled to allow third-party sites to access the API server
+  that’s on a different domain.</p>
+  </li>
+  <li>
+    <p>API / single-page application (SPA) sites where both API and the SPA client are on the same domain
+  and the API is locked down to serve only its own browser clients, so CORS is disabled.</p>
+  </li>
+</ol>
+
+<p>By enabling CORS by default, Loopback 2.x made API+SPA sites vulnerable by default.</p>
+
+<p>Strong-remoting 3.x removes the built-in CORS middleware and makes
+the application developer responsible for enabling and configuring CORS.</p>
+
+<div class="alert alert-info" role="alert">
+  <p><i class="fa fa-info-circle"></i>
+<b>Note:</b>
+This change does not affect LoopBack applications scaffolded by a recent version of
+StrongLoop/LoopBack tools, as these applications don’t rely on the built-in CORS middleware and configure CORS explicitly in <code class="language-plaintext highlighter-rouge">server/middleware.json</code>.</p>
+
+</div>
+
+<p>For more information, see:</p>
+
+<ul>
+  <li>Strong-remoting <a href="https://github.com/strongloop/strong-remoting/pull/352">pull request #352</a> and
+<a href="Security-considerations.html">Security considerations</a>.</li>
+  <li><a href="Migrating-to-3.0.html#check-cors-configuration">How to migrate</a>.</li>
+</ul>
+
+<h3 id="current-context-api-and-middleware-removed">Current context API and middleware removed</h3>
+
+<p>The following current-context-related APIs were removed:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">loopback.getCurrentContext()</code></li>
+  <li><code class="language-plaintext highlighter-rouge">loopback.createContext()</code></li>
+  <li><code class="language-plaintext highlighter-rouge">loopback.runInContext()</code></li>
+</ul>
+
+<p>Additionally, <code class="language-plaintext highlighter-rouge">loopback#context</code> middleware and <code class="language-plaintext highlighter-rouge">remoting.context</code> server
+ configuration setting were removed too.</p>
+
+<p>Existing applications using current-context will print the following error message
+when they receive their first HTTP request:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Unhandled error for request GET /api/Users:
+Error: remoting.context option was removed in version 3.0.
+For more information, see https://loopback.io/doc/ja/lb3/Using-current-context.html
+for more details.
+    at restApiHandler (.../node_modules/loopback/server/middleware/rest.js:44:15)
+    at Layer.handle [as handle_request] (.../node_modules/express/lib/router/layer.js:95:5)
+    ...
+</code></pre></div></div>
+
+<p>For more information, see:</p>
+
+<ul>
+  <li><a href="https://github.com/strongloop/loopback/pull/2564">loopback#2564</a></li>
+  <li><a href="Using-current-context.html">Using current context</a>.</li>
+  <li><a href="Migrating-to-3.0.html#remove-use-of-current-context-methods-middleware-and-configuration-settings">Migrating to 3.0</a></li>
+</ul>
+
+<h3 id="removed-getters-for-express-3x-middleware">Removed getters for Express 3.x middleware</h3>
+
+<p>Express 4.x stopped bundling commonly-used middleware. To simplify migration
+of LoopBack 1.x applications (powered by Express 3.x) to LoopBack 2.x (powered
+by Express 4.x), we created getter properties to allow developers to keep using
+the old convention.</p>
+
+<p>We have removed these getters in LoopBack 3.0.  Here is the full list of
+removed properties together with the middleware module name to use instead:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th width="240">Version 2</th>
+      <th>Version 3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>loopback.compress</code></td>
+      <td><code>require('compression')</code></td>
+    </tr>
+    <tr>
+      <td><code>loopback.cookieParser</code></td>
+      <td><code>require('cookie-parser')</code></td>
+    </tr>
+    <tr>
+      <td><code>loopback.cookieSession</code></td>
+      <td><code>require('cookie-session')</code></td>
+    </tr>
+    <tr>
+      <td><code>loopback.csrf</code></td>
+      <td><code>require('csurf')</code></td>
+    </tr>
+    <tr>
+      <td><code>loopback.directory</code></td>
+      <td><code>require('serve-index')</code></td>
+    </tr>
+    <tr>
+      <td><code>loopback.errorHandler</code></td>
+      <td><code>require('errorhandler')</code></td>
+    </tr>
+    <tr>
+      <td><code>loopback.favicon</code></td>
+      <td><code>require('serve-favicon')</code></td>
+    </tr>
+    <tr>
+      <td><code>loopback.logger</code></td>
+      <td><code>require('morgan')</code></td>
+    </tr>
+    <tr>
+      <td><code>loopback.methodOverride</code></td>
+      <td><code>require('method-override')</code></td>
+    </tr>
+    <tr>
+      <td><code>loopback.responseTime</code></td>
+      <td><code>require('response-time')</code></td>
+    </tr>
+    <tr>
+      <td><code>loopback.session</code></td>
+      <td><code>require('express-session')</code></td>
+    </tr>
+    <tr>
+      <td><code>loopback.timeout</code></td>
+      <td><code>require('connect-timeout')</code></td>
+    </tr>
+    <tr>
+      <td><code>loopback.vhost</code></td>
+      <td><code>require('vhost')</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>We have also removed <code class="language-plaintext highlighter-rouge">loopback.mime</code>, which was always set to <code class="language-plaintext highlighter-rouge">undefined</code>.</p>
+
+<p>For more information, see <a href="https://github.com/strongloop/loopback/pull/2394">loopback#2349</a>.</p>
+
+<h3 id="loopbackerrorhandler-was-removed"><code class="language-plaintext highlighter-rouge">loopback.errorhandler</code> was removed</h3>
+
+<p>The <code class="language-plaintext highlighter-rouge">loopback#errorhandler</code> middleware was removed.  Use <code class="language-plaintext highlighter-rouge">strong-error-handler</code> instead.</p>
+
+<p>For more information, see:</p>
+
+<ul>
+  <li><a href="https://github.com/strongloop/loopback/pull/2411">loopback#2411</a>.</li>
+  <li><a href="Migrating-to-3.0.html#update-use-of-rest-error-handler">Migration guide</a></li>
+</ul>
+
+<h2 id="changes-to-remote-methods">Changes to remote methods</h2>
+
+<h3 id="name-indicates-whether-method-is-static">Name indicates whether method is static</h3>
+
+<p>In 2.x, the <code class="language-plaintext highlighter-rouge">isStatic</code> property indicated that a remote methods was a static method
+(not an instance method).</p>
+
+<p>In 3.0, the <code class="language-plaintext highlighter-rouge">isStatic</code> property is no longer used and the method name determines
+whether a remote method is static or an instance method.
+A method name starting with <code class="language-plaintext highlighter-rouge">prototype.</code> indicates an instance method (<code class="language-plaintext highlighter-rouge">isStatic: false</code>),
+otherwise (by default), a remote method is a static method.</p>
+
+<p>For more information, see <a href="https://github.com/strongloop/loopback/pull/2174">loopback#2174</a>.</p>
+
+<h3 id="clean-up-of-api-for-finding-and-disabling-remote-methods">Clean-up of API for finding and disabling remote methods</h3>
+
+<p>The <code class="language-plaintext highlighter-rouge">strong-remoting</code> functions <code class="language-plaintext highlighter-rouge">SharedClass.prototype.find</code> and <code class="language-plaintext highlighter-rouge">SharedClass.prototype.disableMethod</code>  for looking up and disabling remote methods are now deprecated. They are superseded by <code class="language-plaintext highlighter-rouge">SharedClass.prototype.findMethodByName</code> and <code class="language-plaintext highlighter-rouge">SharedClass.prototype.disableMethodByName</code>
+where you can pass in a staticmethod or a prototype method name. These new methods will accept a string in the form of “name” for a static method and “prototype.name” for a prototype method.</p>
+
+<p>To find a static remote method:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">findMethodByName</span><span class="p">(</span><span class="dl">'</span><span class="s1">create</span><span class="dl">'</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>To find a prototype remote method:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">findMethodByName</span><span class="p">(</span><span class="dl">'</span><span class="s1">prototype.updateAttributes</span><span class="dl">'</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>To disable a static remote method:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">disableMethodByName</span><span class="p">(</span><span class="dl">'</span><span class="s1">create</span><span class="dl">'</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>To disable a prototype remote method:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">disableMethodByName</span><span class="p">(</span><span class="dl">'</span><span class="s1">prototype.updateAttributes</span><span class="dl">'</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>There are corresponding <code class="language-plaintext highlighter-rouge">Model</code> methods <a href="http://apidocs.loopback.io/loopback/#model-disableremotemethod">Model.disableRemoteMethod</a> and <a href="http://apidocs.loopback.io/loopback/#model-disableremotemethodbyname">Model.disableRemoteMethodByName</a></p>
+
+<p>To disable a remote method:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>MyModel.disableRemoteMethodByName('my_method');
+</code></pre></div></div>
+
+<h2 id="changes-to-loopback-models">Changes to LoopBack models</h2>
+
+<h3 id="undefined-model-mixins-throw-an-error">Undefined model mixins throw an error</h3>
+
+<p>In version 2.x, applying an undefined mixin to a LoopBack model generated a warning message,
+which you needed to address rather than ignore.
+In 3.0 an undefined mixin applied to a LoopBack model throws an error that
+your application must handle.</p>
+
+<p>For more information, see <a href="https://github.com/strongloop/loopback-datasource-juggler/pull/944">loopback-datasource-juggler#944</a>.</p>
+
+<h3 id="removed-deprecated-model-events">Removed deprecated model events</h3>
+
+<p>Version 3.0 eliminates the following deprecated <code class="language-plaintext highlighter-rouge">PersistedModel</code> events:</p>
+
+<ul>
+  <li>changed</li>
+  <li>deletedAll</li>
+  <li>deleted</li>
+</ul>
+
+<p>Instead of listening for these events, use <a href="Operation-hooks.html">Operation Hooks</a> instead,
+ notably “after save” and “after delete”.</p>
+
+<p>For more information, see <a href="https://github.com/strongloop/loopback-datasource-juggler/pull/965">loopback-datasource-juggler#965</a>.</p>
+
+<h3 id="model-property-name-with-a-dot-generates-an-error">Model property name with a dot generates an error</h3>
+
+<p>When a model property name contains a dot (period) character,
+LoopBack throws an error instead of showing a deprecation warning;
+for example, <code class="language-plaintext highlighter-rouge">customer.name: 'string'</code>.</p>
+
+<p>For more information, see <a href="https://github.com/strongloop/loopback-datasource-juggler/pull/947">loopback-datasource-juggler#947</a>.</p>
+
+<h3 id="settings-strict-validate-and-strict-throw-were-removed">Settings <code class="language-plaintext highlighter-rouge">strict: validate</code> and <code class="language-plaintext highlighter-rouge">strict: throw</code> were removed</h3>
+
+<p>The configuration of <code class="language-plaintext highlighter-rouge">strict</code> mode is now simplified to a simple Boolean.
+These settings are no longer supported:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">strict: 'validate'</code></li>
+  <li><code class="language-plaintext highlighter-rouge">strict: 'throw'</code></li>
+</ul>
+
+<p>Given the following definition of a User model, when a new User instance is
+created with extra (unknown) properties:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">ds</span><span class="p">.</span><span class="nx">define</span><span class="p">(</span><span class="dl">'</span><span class="s1">User</span><span class="dl">'</span><span class="p">,</span> <span class="p">{</span>
+  <span class="na">name</span><span class="p">:</span> <span class="nb">String</span><span class="p">,</span> <span class="na">required</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+  <span class="na">age</span><span class="p">:</span> <span class="nb">Number</span><span class="p">,</span> <span class="na">required</span><span class="p">:</span> <span class="kc">false</span>
+<span class="p">});</span>
+
+<span class="kd">var</span> <span class="nx">johndoe</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">User</span><span class="p">({</span> <span class="na">name</span><span class="p">:</span> <span class="dl">'</span><span class="s1">John doe</span><span class="dl">'</span><span class="p">,</span> <span class="na">age</span><span class="p">:</span> <span class="mi">15</span><span class="p">,</span> <span class="na">gender</span><span class="p">:</span> <span class="dl">'</span><span class="s1">m</span><span class="dl">'</span><span class="p">});</span>
+</code></pre></div></div>
+
+<p>The behavior of <code class="language-plaintext highlighter-rouge">strict: false</code> remains unchanged and unknown properties are saved along with other properties</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// johndoe is created as</span>
+<span class="p">{</span>
+  <span class="nl">id</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+  <span class="nx">name</span><span class="p">:</span> <span class="dl">'</span><span class="s1">John doe</span><span class="dl">'</span><span class="p">,</span>
+  <span class="nx">age</span><span class="p">:</span> <span class="mi">15</span><span class="p">,</span>
+  <span class="nx">gender</span><span class="p">:</span> <span class="dl">'</span><span class="s1">m</span><span class="dl">'</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Because a non-empty string is considered  “truthy”, they share the same
+behavior as <code class="language-plaintext highlighter-rouge">strict: true</code></p>
+
+<p>The behavior of <code class="language-plaintext highlighter-rouge">strict: true</code> changes as follows:</p>
+
+<p><strong>Version 2.x</strong></p>
+
+<p><code class="language-plaintext highlighter-rouge">strict:true</code> was silently removing unknown properties. As a result,
+a User instance is created with unknown properties discarded:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">johndoe</span><span class="p">.</span><span class="nx">isValid</span><span class="p">();</span> <span class="c1">//true</span>
+
+<span class="c1">// johndoe is created as</span>
+<span class="p">{</span>
+  <span class="na">id</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+  <span class="na">name</span><span class="p">:</span> <span class="dl">'</span><span class="s1">John doe</span><span class="dl">'</span><span class="p">,</span>
+  <span class="na">age</span><span class="p">:</span> <span class="mi">15</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p><strong>Version 3.0</strong></p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">johndoe</span><span class="p">.</span><span class="nx">isValid</span><span class="p">();</span> <span class="c1">//false</span>
+</code></pre></div></div>
+<p>In this example, <code class="language-plaintext highlighter-rouge">johndoe</code> is NOT created.  The create operation fails with the following error:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ValidationError: The User instance is not valid.
+Details: gender is not defined in the model (value: 'm').
+</code></pre></div></div>
+
+<p>For more information, see <a href="https://github.com/strongloop/loopback-datasource-juggler/pull/1084">loopback-datasource-juggler#1084</a>.</p>
+
+<h3 id="unused-user-model-properties-removed">Unused User model properties removed</h3>
+
+<p>The following properties are removed from the built-in User model in 3.0:</p>
+
+<ul>
+  <li>credentials</li>
+  <li>challenges</li>
+  <li>status</li>
+  <li>created</li>
+  <li>lastUpdated</li>
+</ul>
+
+<p>If your application uses any of these properties, you must define them in your
+model JSON: see <a href="Migrating-to-3.0.html#explicitly-add-user-model-properties-that-were-removed">Migrating-to-3.0.html</a>
+for instructions.</p>
+
+<p>For more information, see <a href="https://github.com/strongloop/loopback/pull/2299">loopback#2299</a>.</p>
+
+<h2 id="other-changes">Other changes</h2>
+
+<h3 id="nodejs-versions-010-and-012-are-no-longer-supported">Node.js versions 0.10 and 0.12 are no longer supported</h3>
+
+<p>According to <a href="https://github.com/nodejs/LTS/blob/7ab8b0751b568e4af937493a9b94863d00a26be1/README.md">Node.js LTS schedule</a>,
+Node.js v0.10 was supported until October 2016 and Node.js v0.12 until the end of 2016.
+There will be no more OpenSSL security
+fixes coming to these release lines after they drop from the LTS program.</p>
+
+<p>Keeping support for these legacy versions would be too expensive,
+therefore LoopBack 3.0+ supports only Node.js v4 and newer.</p>
+
+<p>See <a href="https://github.com/strongloop/loopback/issues/2807">loopback#2807</a> for
+the discussion that led to this decision.</p>
+
+<h3 id="loopback-datasource-juggler-is-now-a-regular-dependency-of-loopback">loopback-datasource-juggler is now a regular dependency of loopback</h3>
+
+<p>Originally, LoopBack (ab)used peer dependencies to ensure there was only one instance
+of <code class="language-plaintext highlighter-rouge">loopback-datasource-juggler</code> in the dependency tree, so that there would only be
+one singleton instance of the model registry. This was very fragile and problematic in
+some edge cases.</p>
+
+<p>In version 3.0, <code class="language-plaintext highlighter-rouge">loopback-datasource-juggler</code> and data source connectors no longer rely on
+a single <code class="language-plaintext highlighter-rouge">loopback-datasource-juggler</code> instance, which is now a regular
+dependency of <code class="language-plaintext highlighter-rouge">loopback</code>.
+The change from a peer dependency to a regular dependency was a change in the
+other loopback packages that depend on <code class="language-plaintext highlighter-rouge">loopback-datasource-juggler</code>.</p>
+
+<p>For more information, see <a href="https://github.com/strongloop/loopback/issues/275">loopback#275</a>.</p>
+
+<p>For more information, see <a href="Migrating-to-3.0.html#loopback-datasource-juggler-is-a-regular-dependency-now">how to migrate</a></p>
+
+<h3 id="use-bluebird-for-promises">Use bluebird for promises</h3>
+
+<p>LoopBack version 3.0 uses <a href="http://bluebirdjs.com/docs/getting-started.html">bluebird</a> as the promise library instead of <code class="language-plaintext highlighter-rouge">global.Promise</code>.
+Starting with LoopBack 3.0, the Bluebird API is considered a part of the LoopBack API.
+You can use any Bluebird-specific methods in your applications.</p>
+
+<p>For more information, see <a href="https://github.com/strongloop/loopback/pull/1896">loopback#1896</a> and
+<a href="https://github.com/strongloop/loopback-datasource-juggler/pull/790">loopback-datasource-juggler#790</a>.</p>
+
+<p>For more information, see <a href="Migrating-to-3.0.html#no-need-to-polyfill-promise-on-node-v010">how to migrate</a></p>
+
+<h3 id="new-soap-connector">New SOAP connector</h3>
+
+<p>In LoopBack 3.0, the <code class="language-plaintext highlighter-rouge">loopback-soap-connector</code> uses the new <code class="language-plaintext highlighter-rouge">strong-soap</code> module instead of <code class="language-plaintext highlighter-rouge">node-soap</code>.
+<code class="language-plaintext highlighter-rouge">strong-soap</code> provides a SOAP client for invoking web services, APIs to convert JSON to XML,
+XML to JSON, parse XML, load WSDL, and so on.  It provides comprehensive support for different types
+of WSDLs and XSDs and a mock-up SOAP server capability to create and test your web service.</p>
+
+<p>For more information, see the <a href="https://github.com/strongloop/strong-soap/README.md">strong-soap README</a>.</p>
+
+<h3 id="changes-to-loopback-explorer">Changes to LoopBack Explorer</h3>
+
+<p>Version 2.x used a fork of Swagger UI for LoopBack Explorer (<code class="language-plaintext highlighter-rouge">loopback-component-explorer</code>).
+While the fork added several enhancements to the original project, we were not able to keep it
+up to date with upstream changes. As a result, several important fixes and improvements
+made upstream were not available to Explorer users.</p>
+
+<p>LoopBack 3.0 reverts back to using the <a href="http://swagger.io/swagger-ui/">swagger-ui</a> module.</p>
+
+<p>For more information, see:</p>
+
+<ul>
+  <li><a href="https://github.com/strongloop/loopback-component-explorer/pull/182">loopback-component-explorer PR #182</a></li>
+  <li><a href="https://github.com/strongloop/loopback-component-explorer/pull/107">loopback-component-explorer PR #107</a></li>
+</ul>
+
+<h2 id="advanced">Advanced</h2>
+
+<p>This section describes changes that affect only advanced use
+of LoopBack and its internal components. Instructions described in this section
+are not applicable to typical LoopBack applications.</p>
+
+<h3 id="loopbackautoattach-removed"><code class="language-plaintext highlighter-rouge">loopback.autoAttach()</code> removed</h3>
+
+<p>Version 3.0 removes the <code class="language-plaintext highlighter-rouge">loopback.autoAttach()</code> method and the <code class="language-plaintext highlighter-rouge">defaultForType</code> datasource
+option.  Instead of these, use <a href="https://www.npmjs.com/package/loopback-boot">loopback-boot</a>.
+For more information, see <a href="https://github.com/strongloop/loopback/pull/1989">loopback#1989</a>.</p>
+
+<p>Alternatively, modify your code to explicitly attach all models to
+appropriate datasources. For example:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">MyModel</span> <span class="o">=</span> <span class="nx">app</span><span class="p">.</span><span class="nx">registry</span><span class="p">.</span><span class="nx">createModel</span><span class="p">(</span>
+  <span class="dl">'</span><span class="s1">MyModel</span><span class="dl">'</span><span class="p">,</span>
+  <span class="p">{</span><span class="cm">/* properties */</span><span class="p">},</span>
+  <span class="p">{</span><span class="cm">/* options */</span><span class="p">});</span>
+<span class="nx">app</span><span class="p">.</span><span class="nx">model</span><span class="p">(</span><span class="nx">MyModel</span><span class="p">,</span> <span class="p">{</span> <span class="na">dataSource</span><span class="p">:</span> <span class="dl">'</span><span class="s1">db</span><span class="dl">'</span> <span class="p">});</span>
+</code></pre></div></div>
+
+<h3 id="datasourceregistertype-was-removed"><code class="language-plaintext highlighter-rouge">DataSource.registerType()</code> was removed</h3>
+
+<p>Version 3.0 removes the <code class="language-plaintext highlighter-rouge">DataSource.registerType()</code> method, as it was a deprecated wrapper
+for <code class="language-plaintext highlighter-rouge">ModelBuilder.registerType()</code>.  Now use <code class="language-plaintext highlighter-rouge">ModelBuilder.registerType</code> directly.</p>
+
+<p>For more information, see <a href="https://github.com/strongloop/loopback-datasource-juggler/pull/976">loopback-datasource-juggler#976</a>.</p>
+
+<h3 id="type-converters-replace-dynamic-api">Type converters replace <code class="language-plaintext highlighter-rouge">Dynamic</code> API</h3>
+
+<p>In version 3.0, the <code class="language-plaintext highlighter-rouge">Dynamic</code> component was replaced by type converters
+and a type registry.</p>
+
+<p>Specifically, the following methods were removed:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">RemoteObjects</span><span class="p">.</span><span class="nx">convert</span><span class="p">(</span><span class="nx">name</span><span class="p">,</span> <span class="nx">fn</span><span class="p">)</span>
+<span class="nx">remoteObjectsInstance</span><span class="p">.</span><span class="nx">convert</span><span class="p">(</span><span class="nx">name</span><span class="p">,</span> <span class="nx">fn</span><span class="p">)</span>
+<span class="nx">RemoteObjects</span><span class="p">.</span><span class="nx">defineType</span><span class="p">(</span><span class="nx">name</span><span class="p">,</span> <span class="nx">fn</span><span class="p">)</span>
+<span class="nx">remoteObjectsInstance</span><span class="p">.</span><span class="nx">defineType</span><span class="p">(</span><span class="nx">name</span><span class="p">,</span> <span class="nx">fn</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>Two new methods are added as a replacement:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">remoteObjectsInstance</span><span class="p">.</span><span class="nx">defineType</span><span class="p">(</span><span class="nx">name</span><span class="p">,</span> <span class="nx">converter</span><span class="p">)</span>
+<span class="nx">remoteObjectsInstance</span><span class="p">.</span><span class="nx">defineObjectType</span><span class="p">(</span><span class="nx">name</span><span class="p">,</span> <span class="nx">factoryFn</span><span class="p">)</span>
+</code></pre></div></div>
+
+<!--
+  Where are the API docs for these methods?
+--->
+
+<p>For more information, see the API docs and
+<a href="https://github.com/strongloop/strong-remoting/pull/343">pull request #343</a>
+for more details.</p>
+
+<h3 id="changehandleerror-was-removed"><code class="language-plaintext highlighter-rouge">Change.handleError</code> was removed</h3>
+
+<p><code class="language-plaintext highlighter-rouge">Change.handleError()</code> was removed, as it was used inconsistently for a subset of possible
+errors only. All Change methods now report errors via the callback function.</p>
+
+<p>To report change-tracking errors, use
+<code class="language-plaintext highlighter-rouge">[PersistedModel.handleChangeError](http://apidocs.loopback.io/loopback/#persistedmodel-handlechangeerror)</code>. You can customize this method to provide custom error handling for a  model.</p>
+
+<p>For more information, see <a href="https://github.com/strongloop/loopback/pull/2308">loopback#2308</a>.</p>
+
+<h3 id="appmodelmodelname-settings-was-removed"><code class="language-plaintext highlighter-rouge">app.model(modelName, settings)</code> was removed</h3>
+
+<p>Version 3.0 removes the method <code class="language-plaintext highlighter-rouge">app.model(modelName, settings)</code>.  Instead use:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">app.registry.createModel(modelName, properties, options)</code> to create new model.</li>
+  <li><code class="language-plaintext highlighter-rouge">app.model(modelCtor, config)</code> to update existing model and attach it to app.</li>
+</ul>
+
+<p>For more information, see <a href="https://github.com/strongloop/loopback/pull/2401">loopback#2401</a>.</p>
+
+
+    <div class="tags">
+      
+    </div>
+</div>
+
+<hr class="shaded"/>
+
+<footer id="container">
+            <div class="row">
+                <div class="col-md-6 footer-left">
+               &copy;2021 IBM / StrongLoop. All rights reserved. <br />
+ Site last generated: Mar 22, 2021
+              </div>
+              <div class="col-md-6 footer-right">
+                <p><img src="https://loopback.io/images/company_logo.png" alt="Company logo"/></p>
+              </div>
+            </div>
+</footer>
+
+
+        </div>
+        <!-- /.row -->
+</div>
+<!-- /.container -->
+    </div>
+</body>
+
+</html>

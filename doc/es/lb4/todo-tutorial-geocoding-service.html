@@ -1,0 +1,1622 @@
+<!DOCTYPE html>
+<head>
+    
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Tutorial de aplicación de LoopBack 4 Todo - Integrar con un servicio de codificación geográfica.">
+  <meta name="keywords" content=" LoopBack 4.0, LoopBack 4">
+  <title>Integrar con un servicio de codificación geográfica. | LoopBack Documentation</title>
+  <link rel="stylesheet" href="/css/syntax.css">
+
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/modern-business.css">
+    <link rel="stylesheet" href="/css/lavish-bootstrap.css">
+    <link rel="stylesheet" href="/css/customstyles.css">
+    <link rel="stylesheet" href="/css/theme-v4.css">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-150726441-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-150726441-2');
+</script>
+
+
+    <!-- github star button -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.3.0/anchor.min.js"></script>
+    <script src="/js/toc.js"></script>
+    <script src="/js/customscripts.js"></script>
+
+    <link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    
+
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-lg navbar-brand no_icon" href="/doc/index.html">
+              <img class="no_icon" style="width:147px;" src="/images/branding/logo/white/loopback.svg">&nbsp;<span class="projectTitle"></span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- entries without drop-downs appear here -->
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">API Docs<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        <!-- page.url is /doc/es/lb4/todo-tutorial-geocoding-service.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://loopback.io/doc/en/lb4/apidocs.index.html" target="_blank">LoopBack 4</a></li>
+                          
+                        
+                        <!-- page.url is /doc/es/lb4/todo-tutorial-geocoding-service.html .... folderitem.url is  -->
+                          
+                            <li><a href="http://apidocs.loopback.io" target="_blank">LoopBack 3.x</a></li>
+                          
+                        
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">View<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        <!-- page.url is /doc/es/lb4/todo-tutorial-geocoding-service.html .... folderitem.url is / -->
+                          
+                            <li><a href="/">LoopBack Overview</a></li>
+                          
+                        
+                        <!-- page.url is /doc/es/lb4/todo-tutorial-geocoding-service.html .... folderitem.url is /doc/en/lb4/ -->
+                          
+                            <li><a href="/doc/en/lb4/">LoopBack 4</a></li>
+                          
+                        
+                        <!-- page.url is /doc/es/lb4/todo-tutorial-geocoding-service.html .... folderitem.url is /doc/en/lb3/ -->
+                          
+                            <li><a href="/doc/en/lb3/">LoopBack 3.x</a></li>
+                          
+                        
+                        <!-- page.url is /doc/es/lb4/todo-tutorial-geocoding-service.html .... folderitem.url is /doc/en/lb2/ -->
+                          
+                            <li><a href="/doc/en/lb2/">LoopBack 2.x</a></li>
+                          
+                        
+                        <!-- page.url is /doc/es/lb4/todo-tutorial-geocoding-service.html .... folderitem.url is /doc/en/community/ -->
+                          
+                            <li><a href="/doc/en/community/">Community projects</a></li>
+                          
+                        
+                        <!-- page.url is /doc/es/lb4/todo-tutorial-geocoding-service.html .... folderitem.url is /doc/en/contrib/ -->
+                          
+                            <li><a href="/doc/en/contrib/">Contributing to LoopBack</a></li>
+                          
+                        
+                        <!-- page.url is /doc/es/lb4/todo-tutorial-geocoding-service.html .... folderitem.url is /doc/en/sec/ -->
+                          
+                            <li><a href="/doc/en/sec/">Security advisories</a></li>
+                          
+                        
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Resources<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        <!-- page.url is /doc/es/lb4/todo-tutorial-geocoding-service.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://github.com/strongloop/loopback.io" target="_blank">Docs Github Repo</a></li>
+                          
+                        
+                        <!-- page.url is /doc/es/lb4/todo-tutorial-geocoding-service.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://groups.google.com/forum/#!forum/loopbackjs-announcements" target="_blank">Announcements Mailing List</a></li>
+                          
+                        
+                        <!-- page.url is /doc/es/lb4/todo-tutorial-geocoding-service.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://groups.google.com/forum/#!forum/loopbackjs" target="_blank">Developer Forum</a></li>
+                          
+                        
+                        <!-- page.url is /doc/es/lb4/todo-tutorial-geocoding-service.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://join.slack.com/t/loopbackio/shared_invite/zt-8lbow73r-SKAKz61Vdao~_rGf91pcsw" target="_blank">LoopBack on Slack</a></li>
+                          
+                        
+                        <!-- page.url is /doc/es/lb4/todo-tutorial-geocoding-service.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://stackoverflow.com/questions/tagged/strongloop+or+loopback4+or+loopbackjs" target="_blank">LoopBack on Stack Overflow</a></li>
+                          
+                        
+                        <!-- page.url is /doc/es/lb4/todo-tutorial-geocoding-service.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://strongloop.com/strongblog/tag_LoopBack.html" target="_blank">StrongLoop Blog - LoopBack</a></li>
+                          
+                        
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Translations<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        <!-- page.url is /doc/es/lb4/todo-tutorial-geocoding-service.html .... folderitem.url is /doc/es/lb2/ -->
+                          
+                            <li><a href="/doc/es/lb2/">Español (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/es/lb4/todo-tutorial-geocoding-service.html .... folderitem.url is /doc/es/lb4/ -->
+                          
+                            <li class="dropdownActive"><a href="/doc/es/lb4/">Español (v4)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/es/lb4/todo-tutorial-geocoding-service.html .... folderitem.url is /doc/fr/lb2/ -->
+                          
+                            <li><a href="/doc/fr/lb2/">Français (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/es/lb4/todo-tutorial-geocoding-service.html .... folderitem.url is /doc/fr/lb4/ -->
+                          
+                            <li><a href="/doc/fr/lb4/">Français (v4)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/es/lb4/todo-tutorial-geocoding-service.html .... folderitem.url is /doc/ko/lb2/ -->
+                          
+                            <li><a href="/doc/ko/lb2/">한국어 (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/es/lb4/todo-tutorial-geocoding-service.html .... folderitem.url is /doc/ko/lb3/ -->
+                          
+                            <li><a href="/doc/ko/lb3/">한국어 (v3)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/es/lb4/todo-tutorial-geocoding-service.html .... folderitem.url is /doc/pt-br/lb2/ -->
+                          
+                            <li><a href="/doc/pt-br/lb2/">Português (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/es/lb4/todo-tutorial-geocoding-service.html .... folderitem.url is /doc/pt-br/lb4/ -->
+                          
+                            <li><a href="/doc/pt-br/lb4/">Português (v4)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/es/lb4/todo-tutorial-geocoding-service.html .... folderitem.url is /doc/ja/lb2/ -->
+                          
+                            <li><a href="/doc/ja/lb2/">日本語 (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/es/lb4/todo-tutorial-geocoding-service.html .... folderitem.url is /doc/ja/lb3/ -->
+                          
+                            <li><a href="/doc/ja/lb3/">日本語 (v3)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/es/lb4/todo-tutorial-geocoding-service.html .... folderitem.url is /doc/ja/lb4/ -->
+                          
+                            <li><a href="/doc/ja/lb4/">日本語 (v4)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/es/lb4/todo-tutorial-geocoding-service.html .... folderitem.url is /doc/ru/lb2/ -->
+                          
+                            <li><a href="/doc/ru/lb2/">Pусский (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/es/lb4/todo-tutorial-geocoding-service.html .... folderitem.url is /doc/zh/lb2/ -->
+                          
+                            <li><a href="/doc/zh/lb2/">中文 (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/es/lb4/todo-tutorial-geocoding-service.html .... folderitem.url is /doc/zh/lb4/ -->
+                          
+                            <li><a href="/doc/zh/lb4/">中文 (v4)</a></li>
+                          
+                        
+                    </ul>
+                </li>
+                
+                
+                
+                <li>
+                    <form id="search" name="search" class="input-group lb-search" action="/search" method="GET">
+                        <input type="text" class="form-control search-bar" placeholder="Search (powered by Watson)" name="q">
+                        
+                          <input type="hidden" name="sidebar" value="es_lb4_sidebar">
+                        
+                        <div class="input-group-btn">
+                            <button type="submit" class="btn btn-default" aria-label="search">
+                              <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                            </button>
+                        </div>
+                      </form>
+                </li>
+            </ul>
+        </div>
+      </div>
+</nav>
+
+<!-- Page Content -->
+<div class="container">
+    <!-- Content Row -->
+    <div class="row">
+        <!-- Sidebar Column -->
+        <nav class="col-md-3 sidebar-col">
+          
+
+
+
+
+
+
+
+
+
+
+
+<!-- NOTE: sidebar = site.data.sidebars.mydoc_sidebar.entries -->
+<div class="sidebarTitle"><a href="/doc/es/lb4/index.html">LoopBack 4</a></div>
+<ul id="mysidebar" class="nav-list">
+  
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Getting-started.html">Iniciando</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Tutorials.html">Tutoriales</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="todo-tutorial.html">Todo Tutorial</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="todo-tutorial-scaffolding.html">Crear tu aplicación scaffolding</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="todo-tutorial-model.html">Agregar un Modelo</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="todo-tutorial-datasource.html">Agregar un Datasource</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="todo-tutorial-repository.html">Agregar un Repositorio</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="todo-tutorial-controller.html">Agregar un Controlador</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="todo-tutorial-putting-it-together.html">Colocando todo junto</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="todo-tutorial-geocoding-service.html">Bonus: Integrar con un servicio de codificación geográfica.</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=todo-list-tutorial.html&title=Tutorial TodoList">Tutorial TodoList</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=todo-list-tutorial-model.html&title=Agregar TodoList Model">Agregar TodoList Model</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=todo-list-tutorial-repository.html&title=Agregar TodoList Repositorio">Agregar TodoList Repositorio</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=todo-list-tutorial-controller.html&title=Agregar TodoList Controlador">Agregar TodoList Controlador</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=todo-list-tutorial-sqldb.html&title=Ejecutando base de datos relacionales">Ejecutando base de datos relacionales</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=soap-calculator-tutorial.html&title=Tutorial de SOAP Web Service">Tutorial de SOAP Web Service</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=soap-calculator-tutorial-web-service-overview.html&title=Visión General de SOAP Web Service">Visión General de SOAP Web Service</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=soap-calculator-tutorial-scaffolding.html&title=App scaffolding">App scaffolding</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=soap-calculator-tutorial-add-datasource.html&title=Agregar un Datasource">Agregar un Datasource</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=soap-calculator-tutorial-add-service.html&title=Agrega un Servicio">Agrega un Servicio</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=soap-calculator-tutorial-add-controller.html&title=Agregar un Controlador">Agregar un Controlador</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=soap-calculator-tutorial-run-and-test.html&title=Ejecuta y pruébalo">Ejecuta y pruébalo</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=express-with-lb4-rest-tutorial.html&title=Creando una Aplicación Express con LoopBack REST API">Creando una Aplicación Express con LoopBack REST API</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=Examples.html&title=Ejemplos">Ejemplos</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=Concepts.html&title=Conceptos Claves">Conceptos Claves</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=Application.html&title=Aplicación">Aplicación</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=Server.html&title=Server">Server</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=Context.html&title=Contexto">Contexto</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=Binding.html&title=Binding">Binding</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=Dependency-injection.html&title=Inyección de dependencia ">Inyección de dependencia </a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=Reserved-binding-keys.html&title=Reserved binding keys">Reserved binding keys</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=Controllers.html&title=Controladores">Controladores</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=Components.html&title=Componentes">Componentes</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=Interceptors.html&title=Interceptores">Interceptores</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=DataSources.html&title=DataSources">DataSources</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=Life-cycle.html&title=Ciclo de vida de eventos and observadores">Ciclo de vida de eventos and observadores</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=Routes.html&title=Routes">Routes</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=Sequence.html&title=Secuencia">Secuencia</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=Routing-requests.html&title=Solicitudes de enrutamiento">Solicitudes de enrutamiento</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=Parsing-requests.html&title=Solicitudes de análisis">Solicitudes de análisis</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=Model.html&title=Modelo">Modelo</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=Repositories.html&title=Repositorio">Repositorio</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=Relations.html&title=Relationes">Relationes</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=HasMany-relation.html&title=Relación HasMany">Relación HasMany</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=BelongsTo-relation.html&title=Relación BelongsTo">Relación BelongsTo</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=hasOne-relation.html&title=Relación HasOne">Relación HasOne</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=Decorators.html&title=Decoradores">Decoradores</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=Decorators_openapi.html&title=Decoradores OpenAPI">Decoradores OpenAPI</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=Decorators_inject.html&title=Decorador de inyeción de dependencia">Decorador de inyeción de dependencia</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=Decorators_authenticate.html&title=Decorador de Authenticatión">Decorador de Authenticatión</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=Decorators_repository.html&title=Decoradores de repositorio">Decoradores de repositorio</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=Error-handling.html&title=Error handling">Error handling</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=How-tos.html&title=Tutoriales">Tutoriales</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=exposing-graphql-apis.html&title=Exponiendo API de GraphQL">Exponiendo API de GraphQL</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=Deploying-to-IBM-Cloud.html&title=Implementación en IBM Cloud">Implementación en IBM Cloud</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=deploying_to_ibm_cloud_kubernetes.html&title=Implementación de Kubernetes en IBM Cloud">Implementación de Kubernetes en IBM Cloud</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=deploying-with-pm2-and-nginx.html&title=Despliegue con pm2 y nginx">Despliegue con pm2 y nginx</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=Serving-static-files.html&title=Sirviendo archivos estáticos">Sirviendo archivos estáticos</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=Database-migrations.html&title=Migraciones de base de datos">Migraciones de base de datos</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=Booting-an-Application.html&title=Arrancar una aplicación">Arrancar una aplicación</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=Using-components.html&title=Utilizando Componentes">Utilizando Componentes</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=Self-hosted-rest-api-explorer.html&title=Explorador de API REST hospedado">Explorador de API REST hospedado</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=Loopback-component-authorization.html&title=Autorización">Autorización</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=Boot-and-Mount-a-LoopBack-3-application.html&title=Arranque y monte una aplicación LoopBack 3">Arranque y monte una aplicación LoopBack 3</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=Calling-other-APIs-and-web-services.html&title=llamando otras APIs">llamando otras APIs</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=LoopBack-3.x.html&title=Para usuarios de LoopBack 3.x">Para usuarios de LoopBack 3.x</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=Understanding-the-differences.html&title=Entendiendo las diferencias entre LoopBack 3 y LoopBack 4">Entendiendo las diferencias entre LoopBack 3 y LoopBack 4</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=Migrating-from-LoopBack-3.html&title=Migrando desde LoopBack 3">Migrando desde LoopBack 3</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=Command-line-interface.html&title=Interfaz de Command-line">Interfaz de Command-line</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=Application-generator.html&title=Generador de Applicación">Generador de Applicación</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=Controller-generator.html&title=Generador de Controlador">Generador de Controlador</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=DataSource-generator.html&title=Generador de DataSource">Generador de DataSource</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=Model-generator.html&title=Generador de Modelo">Generador de Modelo</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=Discovering-models.html&title=Descubrimiento del modelo">Descubrimiento del modelo</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=Repository-generator.html&title=Repositorio generator">Repositorio generator</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=Service-generator.html&title=Generador de Servicio">Generador de Servicio</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=OpenAPI-generator.html&title=Generador de OpenAPI">Generador de OpenAPI</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=Life-cycle-observer-generator.html&title=Generador de observadores del ciclo de vida">Generador de observadores del ciclo de vida</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=Interceptor-generator.html&title=Global interceptor generator">Global interceptor generator</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=Extension-generator.html&title=Generador de extensión">Generador de extensión</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=Download-examples.html&title=Descarga de ejemplos">Descarga de ejemplos</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=Best-practices.html&title=Mejores practicas">Mejores practicas</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=Defining-the-API-using-code-first-approach.html&title=Definiendo la API usando el enfoque de código primero">Definiendo la API usando el enfoque de código primero</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=Defining-your-testing-strategy.html&title=Definiendo tu estrategia de prueba">Definiendo tu estrategia de prueba</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=Testing-your-application.html&title=Probando tu aplicación">Probando tu aplicación</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=Extending-LoopBack-4.html&title=Extendiendo LoopBack 4">Extendiendo LoopBack 4</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=Creating-components.html&title=Creando componentes">Creando componentes</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=Creating-decorators.html&title=Creando decoradores">Creando decoradores</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=Creating-servers.html&title=Creando servers">Creando servers</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=Extension-point-and-extensions.html&title=Extension point and extensions">Extension point and extensions</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=Extending-request-body-parsing.html&title=Extendiendo request body parsing">Extendiendo request body parsing</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=Extension-life-cycle.html&title=Ciclo de vida de la extensión">Ciclo de vida de la extensión</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=Testing-your-extension.html&title=Probando tu extensión">Probando tu extensión</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=Crafting-LoopBack-4.html&title=Crafting LoopBack 4">Crafting LoopBack 4</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=FAQ.html&title=FAQ">FAQ</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=apidocs.index.html&title=API docs">API docs</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=Reference.html&title=Referencia">Referencia</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=Glossary.html&title=Glosario">Glosario</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=Deploy-for-GDPR-readiness.html&title=Consideraciones para la preparación GDPR">Consideraciones para la preparación GDPR</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+
+</ul>
+
+        </nav>
+        <!-- Content Column -->
+        <div class="col-md-9">
+            
+<div class="post-header">
+   <h1 class="post-title-main">Integrar con un servicio de codificación geográfica.</h1>
+   
+     
+       <a target="_blank" href="https://github.com/strongloop/loopback.io/blob/gh-pages/pages/es/lb4/todo-tutorial-geocoding-service.md" class="githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit this page</a>
+   
+</div>
+
+<div class="post-content">
+
+
+  
+   <div class="summary">
+     Tutorial de aplicación de LoopBack 4 Todo - Integrar con un servicio de codificación geográfica.
+   </div>
+  
+
+
+
+
+ 
+   
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+;$(function() {
+  var level = parseInt(3, 10);
+  if (level === 1) {level = 'h2'}
+  if (level === 2) {level = 'h2,h3'}
+  if (level === 3) {level = 'h2,h3,h4'}
+  if (level === 4) {level = 'h2,h3,h4,h5'}
+
+  // Add a new level for changelog files which use h1,h2,h3
+  if (level === 0) {level = 'h1,h2,h3,h4,h5'}
+
+  var toc = $('#toc')
+
+  toc.toc({minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: level})
+
+  /* this offset helps with the space taken up by the floating toolbar */
+  toc.on('click', 'a', function() {
+    var target = $(this.getAttribute('href')),
+      scroll_target = target.offset().top
+
+    $(window).scrollTop(scroll_target - 10)
+    return false
+  })
+  .on('click', '.toc-expand-button', function() {
+    toc.find('> ul').slideToggle('fast');
+  })
+})
+</script>
+
+<div id="toc">
+  <span class="toc-title">Page Contents</span>
+  <button type="button" class="btn btn-link toc-expand-button">
+    <i class="fa fa-bars"></i>
+  </button>
+</div>
+
+ 
+
+    
+
+
+
+
+  <div markdown="span" class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i> <b>This is a community translation into Spanish</b>. For the latest information, see the <a href="/doc/en/lb4/todo-tutorial-geocoding-service.html">English version</a>.
+  </div>
+
+
+<h3 id="servicios">Servicios</h3>
+
+<p>Para llamar a otras API y servicios web desde aplicaciones LoopBack, recomendamos utilizar Service
+Proxies como patrón de diseño para encapsular detalles de implementación de bajo nivel de
+comunicación con servicios de terceros y proporcionar un API en JavaScript/TypeScript que es fácil de
+consumir, p. de los controladores. Consulte <a href="./Calling-other-APIs-and-Web-Services.md">Llamar a otras API y servicios web</a>
+para más detalles.</p>
+
+<p>En LoopBack, cada proxy de servicio está respaldado por un
+<a href="/doc/es/lb4/todo-tutorial-datasource.html">DataSource</a>, esta fuente de
+datos aprovecha uno de los conectores de servicio para realizar
+solicitudes salientes y analizar respuestas devueltas por el servicio.</p>
+
+<p>En nuestro tutorial, aprovecharemos
+<a href="https://geocoding.geo.census.gov/geocoder/">API del geocodificador del censo de EE. UU.</a>
+para convertir direcciones textuales de EE. UU. en coordenadas GPS, lo que
+permite que las aplicaciones cliente de nuestra API Todo muestren recordatorios
+basados en la ubicación,</p>
+
+<div class="alert alert-success" role="alert">
+  <p><i class="fa fa-check-square-o"></i>
+  <b>Tip:</b> 
+En un proyecto real, es posible que desee utilizar un servicio de geocodificación que
+cubra más países más allá de EE. UU. Y proporcione respuestas más rápidas que la API
+del geocodificador del censo de EE. UU., Por ejemplo, los de IBM 
+<a href="https://console.bluemix.net/catalog/services/weather-company-data">Datos de la empresa meteorológica</a>
+o <a href="https://developers.google.com/maps/documentation/geocoding">La plataforma de google maps</a>.</p>
+
+</div>
+
+<h3 id="configurar-el-respaldo-del-datasource">Configurar el respaldo del datasource</h3>
+
+<p>Ejecute <code class="language-plaintext highlighter-rouge">lb4 datasource</code> para definir un nuevo datasource
+que se conecte al servicio REST Geocoder. Cuando se le solicite que use un conector,
+seleccione “Servicios REST”.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ lb4 datasource
+? Datasource name: geocoder
+? Select the connector for geocoder: REST services (supported by StrongLoop)
+? Base URL for the REST service:
+? Default options for the request:
+? An array of operation templates:
+? Use default CRUD mapping: No
+   create src/datasources/geocoder.datasource.json
+   create src/datasources/geocoder.datasource.ts
+ # npm will install dependencies now
+    update src/datasources/index.ts
+
+Datasource Geocoder was created in src/datasources/
+</code></pre></div></div>
+
+<p>Edite la configuración del origen de datos recién creada para
+configurar los puntos finales de la API de Geocoder. Las opciones de
+configuración proporcionadas por REST Connector se describen en nuestros
+documentos aquí: <a href="/doc/en/lb3/REST-connector.html">conector REST</a>.</p>
+
+<div id="/src/datasources/geocoder.datasource.json" class="code-caption">
+  <p>/src/datasources/geocoder.datasource.json</p>
+</div>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"connector"</span><span class="p">:</span><span class="w"> </span><span class="s2">"rest"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"options"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"headers"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"accept"</span><span class="p">:</span><span class="w"> </span><span class="s2">"application/json"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"content-type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"application/json"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"operations"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"template"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"method"</span><span class="p">:</span><span class="w"> </span><span class="s2">"GET"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://geocoding.geo.census.gov/geocoder/locations/onelineaddress"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"query"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+          </span><span class="nl">"format"</span><span class="p">:</span><span class="w"> </span><span class="s2">"{format=json}"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"benchmark"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Public_AR_Current"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"address"</span><span class="p">:</span><span class="w"> </span><span class="s2">"{address}"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="nl">"responsePath"</span><span class="p">:</span><span class="w"> </span><span class="s2">"$.result.addressMatches[*].coordinates"</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="nl">"functions"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"geocode"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"address"</span><span class="p">]</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<h3 id="implementando-un-proveedor-de-servicio">Implementando un proveedor de servicio</h3>
+
+<p>Cree un nuevo directorio <code class="language-plaintext highlighter-rouge">src/services</code> y agregue los siguientes dos archivos nuevos:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">src/services/geocoder.service.ts</code> que define las interfaces TypeScript para el
+servicio Geocoder e implementa un proveedor de proxy de servicio.</li>
+  <li><code class="language-plaintext highlighter-rouge">src/services/index.ts</code> proporciona un acceso conveniente a todos los servicios
+a través de una sola declaración <code class="language-plaintext highlighter-rouge">import</code>.</li>
+</ul>
+
+<div id="src/services/geocoder.service.ts" class="code-caption">
+  <p>src/services/geocoder.service.ts</p>
+</div>
+
+<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="p">{</span><span class="nx">getService</span><span class="p">,</span> <span class="nx">juggler</span><span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">@loopback/service-proxy</span><span class="dl">'</span><span class="p">;</span>
+<span class="k">import</span> <span class="p">{</span><span class="nx">inject</span><span class="p">,</span> <span class="nx">Provider</span><span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">@loopback/core</span><span class="dl">'</span><span class="p">;</span>
+<span class="k">import</span> <span class="p">{</span><span class="nx">GeocoderDataSource</span><span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">../datasources/geocoder.datasource</span><span class="dl">'</span><span class="p">;</span>
+
+<span class="k">export</span> <span class="kr">interface</span> <span class="nx">GeoPoint</span> <span class="p">{</span>
+  <span class="cm">/**
+   * latitude
+   */</span>
+  <span class="nl">y</span><span class="p">:</span> <span class="kr">number</span><span class="p">;</span>
+
+  <span class="cm">/**
+   * longitude
+   */</span>
+  <span class="nl">x</span><span class="p">:</span> <span class="kr">number</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="k">export</span> <span class="kr">interface</span> <span class="nx">GeocoderService</span> <span class="p">{</span>
+  <span class="nx">geocode</span><span class="p">(</span><span class="nx">address</span><span class="p">:</span> <span class="kr">string</span><span class="p">):</span> <span class="nb">Promise</span><span class="o">&lt;</span><span class="nx">GeoPoint</span><span class="p">[]</span><span class="o">&gt;</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="k">export</span> <span class="kd">class</span> <span class="nx">GeocoderServiceProvider</span> <span class="k">implements</span> <span class="nx">Provider</span><span class="o">&lt;</span><span class="nx">GeocoderService</span><span class="o">&gt;</span> <span class="p">{</span>
+  <span class="kd">constructor</span><span class="p">(</span>
+    <span class="p">@</span><span class="nd">inject</span><span class="p">(</span><span class="dl">'</span><span class="s1">datasources.geocoder</span><span class="dl">'</span><span class="p">)</span>
+    <span class="k">protected</span> <span class="na">dataSource</span><span class="p">:</span> <span class="nx">juggler</span><span class="p">.</span><span class="nx">DataSource</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">GeocoderDataSource</span><span class="p">(),</span>
+  <span class="p">)</span> <span class="p">{}</span>
+
+  <span class="nx">value</span><span class="p">():</span> <span class="nb">Promise</span><span class="o">&lt;</span><span class="nx">GeocoderService</span><span class="o">&gt;</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="nx">getService</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">dataSource</span><span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<div id="src/services/index.ts" class="code-caption">
+  <p>src/services/index.ts</p>
+</div>
+
+<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">export</span> <span class="o">*</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">./geocoder.service</span><span class="dl">'</span><span class="p">;</span>
+</code></pre></div></div>
+
+<h3 id="mejora-el-modelo-todo-con-datos-de-ubicación">Mejora el modelo Todo con datos de ubicación</h3>
+
+<p>Agrega dos nuevas propiedades para nuestro model Todo: <code class="language-plaintext highlighter-rouge">remindAtAddress</code> y <code class="language-plaintext highlighter-rouge">remindAtGeo</code>.</p>
+
+<div id="src/models/todo.model.ts" class="code-caption">
+  <p>src/models/todo.model.ts</p>
+</div>
+
+<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">@</span><span class="nd">model</span><span class="p">()</span>
+<span class="k">export</span> <span class="kd">class</span> <span class="nx">Todo</span> <span class="kd">extends</span> <span class="nx">Entity</span> <span class="p">{</span>
+  <span class="c1">// original code remains unchanged, add the following two properties:</span>
+
+  <span class="p">@</span><span class="nd">property</span><span class="p">({</span>
+    <span class="na">type</span><span class="p">:</span> <span class="dl">'</span><span class="s1">string</span><span class="dl">'</span><span class="p">,</span>
+  <span class="p">})</span>
+  <span class="nx">remindAtAddress</span><span class="p">?:</span> <span class="kr">string</span><span class="p">;</span> <span class="c1">// address,city,zipcode</span>
+
+  <span class="p">@</span><span class="nd">property</span><span class="p">({</span>
+    <span class="na">type</span><span class="p">:</span> <span class="dl">'</span><span class="s1">string</span><span class="dl">'</span><span class="p">,</span>
+  <span class="p">})</span>
+  <span class="nx">remindAtGeo</span><span class="p">?:</span> <span class="kr">string</span><span class="p">;</span> <span class="c1">// latitude,longitude</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="busque-la-ubicación-de-la-dirección-en-el-controlador">Busque la ubicación de la dirección en el controlador</h3>
+
+<p>Finalmente, modifique <code class="language-plaintext highlighter-rouge">TodoController</code> para buscar la dirección y convertirla
+a coordenadas GPS cuando se cree un nuevo elemento de Todo.</p>
+
+<p>Importe la interfaz <code class="language-plaintext highlighter-rouge">GeocodeService</code> al<code class="language-plaintext highlighter-rouge"> TodoController</code> y luego modifique el
+constructor del Controlador para recibir <code class="language-plaintext highlighter-rouge">GeocodeService</code> como una nueva dependencia.</p>
+
+<div id="src/controllers/todo.controller.ts" class="code-caption">
+  <p>src/controllers/todo.controller.ts</p>
+</div>
+
+<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="p">{</span><span class="nx">inject</span><span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">@loopback/core</span><span class="dl">'</span><span class="p">;</span>
+<span class="k">import</span> <span class="p">{</span><span class="nx">GeocoderService</span><span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">../services</span><span class="dl">'</span><span class="p">;</span>
+
+<span class="k">export</span> <span class="kd">class</span> <span class="nx">TodoController</span> <span class="p">{</span>
+  <span class="kd">constructor</span><span class="p">(</span>
+    <span class="p">@</span><span class="nd">repository</span><span class="p">(</span><span class="nx">TodoRepository</span><span class="p">)</span> <span class="k">protected</span> <span class="nx">todoRepo</span><span class="p">:</span> <span class="nx">TodoRepository</span><span class="p">,</span>
+    <span class="p">@</span><span class="nd">inject</span><span class="p">(</span><span class="dl">'</span><span class="s1">services.GeocoderService</span><span class="dl">'</span><span class="p">)</span> <span class="k">protected</span> <span class="nx">geoService</span><span class="p">:</span> <span class="nx">GeocoderService</span><span class="p">,</span>
+  <span class="p">)</span> <span class="p">{}</span>
+
+  <span class="c1">// etc.</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Modifique el método <code class="language-plaintext highlighter-rouge">createTodo</code> para buscar la dirección proporcionada
+en la propiedad<code class="language-plaintext highlighter-rouge"> remindAtAddress</code> y conviértala en coordenadas GPS almacenadas en <code class="language-plaintext highlighter-rouge">remindAtGeo</code>.</p>
+
+<div id="src/controllers/todo.controller.ts" class="code-caption">
+  <p>src/controllers/todo.controller.ts</p>
+</div>
+
+<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">export</span> <span class="kd">class</span> <span class="nx">TodoController</span> <span class="p">{</span>
+  <span class="c1">// constructor, etc.</span>
+
+  <span class="p">@</span><span class="nd">post</span><span class="p">(</span><span class="dl">'</span><span class="s1">/todos</span><span class="dl">'</span><span class="p">)</span>
+  <span class="k">async</span> <span class="nx">createTodo</span><span class="p">(@</span><span class="nd">requestBody</span><span class="p">()</span> <span class="nx">todo</span><span class="p">:</span> <span class="nx">Todo</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nx">todo</span><span class="p">.</span><span class="nx">title</span><span class="p">)</span> <span class="p">{</span>
+      <span class="k">throw</span> <span class="k">new</span> <span class="nx">HttpErrors</span><span class="p">.</span><span class="nx">BadRequest</span><span class="p">(</span><span class="dl">'</span><span class="s1">title is required</span><span class="dl">'</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="k">if</span> <span class="p">(</span><span class="nx">todo</span><span class="p">.</span><span class="nx">remindAtAddress</span><span class="p">)</span> <span class="p">{</span>
+      <span class="c1">// TODO handle "address not found"</span>
+      <span class="kd">const</span> <span class="nx">geo</span> <span class="o">=</span> <span class="k">await</span> <span class="k">this</span><span class="p">.</span><span class="nx">geoService</span><span class="p">.</span><span class="nx">geocode</span><span class="p">(</span><span class="nx">todo</span><span class="p">.</span><span class="nx">remindAtAddress</span><span class="p">);</span>
+      <span class="c1">// Encode the coordinates as "lat,lng"</span>
+      <span class="nx">todo</span><span class="p">.</span><span class="nx">remindAtGeo</span> <span class="o">=</span> <span class="s2">`</span><span class="p">${</span><span class="nx">geo</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="nx">y</span><span class="p">}</span><span class="s2">,</span><span class="p">${</span><span class="nx">geo</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="nx">x</span><span class="p">}</span><span class="s2">`</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="nx">todoRepo</span><span class="p">.</span><span class="nx">create</span><span class="p">(</span><span class="nx">todo</span><span class="p">);</span>
+  <span class="p">}</span>
+
+  <span class="c1">// other endpoints remain unchanged</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>¡Felicidades! Ahora su API Todo facilita ingresar una dirección para un
+recordatorio y hacer que la aplicación cliente muestre el recordatorio
+cuando el dispositivo se acerca a esa dirección en función de la ubicación
+del GPS.</p>
+
+<h3 id="navegación">Navegación</h3>
+
+<p>Paso anterior: <a href="/doc/es/lb4/todo-tutorial-putting-it-together.html">Colocando todo junto</a></p>
+
+
+
+    <div class="tags">
+      
+    </div>
+</div>
+
+<hr class="shaded"/>
+
+<footer id="container">
+            <div class="row">
+                <div class="col-md-6 footer-left">
+               &copy;2021 IBM / StrongLoop. All rights reserved. <br />
+ Site last generated: Mar 22, 2021
+              </div>
+              <div class="col-md-6 footer-right">
+                <p><img src="https://loopback.io/images/company_logo.png" alt="Company logo"/></p>
+              </div>
+            </div>
+</footer>
+
+
+        </div>
+        <!-- /.row -->
+</div>
+<!-- /.container -->
+    </div>
+</body>
+
+</html>

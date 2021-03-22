@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<head>
+    
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="keywords" content="community,  ">
+  <title>How to add a community project | LoopBack Documentation</title>
+  <link rel="stylesheet" href="/css/syntax.css">
+
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/modern-business.css">
+    <link rel="stylesheet" href="/css/lavish-bootstrap.css">
+    <link rel="stylesheet" href="/css/customstyles.css">
+    <link rel="stylesheet" href="/css/theme-v4.css">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-150726441-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-150726441-2');
+</script>
+
+
+    <!-- github star button -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.3.0/anchor.min.js"></script>
+    <script src="/js/toc.js"></script>
+    <script src="/js/customscripts.js"></script>
+
+    <link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    
+
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-lg navbar-brand no_icon" href="/doc/index.html">
+              <img class="no_icon" style="width:147px;" src="/images/branding/logo/white/loopback.svg">&nbsp;<span class="projectTitle"></span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- entries without drop-downs appear here -->
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">API Docs<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        <!-- page.url is /doc/en/community/How-to-add-a-project.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://loopback.io/doc/en/lb4/apidocs.index.html" target="_blank">LoopBack 4</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/community/How-to-add-a-project.html .... folderitem.url is  -->
+                          
+                            <li><a href="http://apidocs.loopback.io" target="_blank">LoopBack 3.x</a></li>
+                          
+                        
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">View<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        <!-- page.url is /doc/en/community/How-to-add-a-project.html .... folderitem.url is / -->
+                          
+                            <li><a href="/">LoopBack Overview</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/community/How-to-add-a-project.html .... folderitem.url is /doc/en/lb4/ -->
+                          
+                            <li><a href="/doc/en/lb4/">LoopBack 4</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/community/How-to-add-a-project.html .... folderitem.url is /doc/en/lb3/ -->
+                          
+                            <li><a href="/doc/en/lb3/">LoopBack 3.x</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/community/How-to-add-a-project.html .... folderitem.url is /doc/en/lb2/ -->
+                          
+                            <li><a href="/doc/en/lb2/">LoopBack 2.x</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/community/How-to-add-a-project.html .... folderitem.url is /doc/en/community/ -->
+                          
+                            <li class="dropdownActive"><a href="/doc/en/community/">Community projects</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/community/How-to-add-a-project.html .... folderitem.url is /doc/en/contrib/ -->
+                          
+                            <li><a href="/doc/en/contrib/">Contributing to LoopBack</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/community/How-to-add-a-project.html .... folderitem.url is /doc/en/sec/ -->
+                          
+                            <li><a href="/doc/en/sec/">Security advisories</a></li>
+                          
+                        
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Resources<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        <!-- page.url is /doc/en/community/How-to-add-a-project.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://github.com/strongloop/loopback.io" target="_blank">Docs Github Repo</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/community/How-to-add-a-project.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://groups.google.com/forum/#!forum/loopbackjs-announcements" target="_blank">Announcements Mailing List</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/community/How-to-add-a-project.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://groups.google.com/forum/#!forum/loopbackjs" target="_blank">Developer Forum</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/community/How-to-add-a-project.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://join.slack.com/t/loopbackio/shared_invite/zt-8lbow73r-SKAKz61Vdao~_rGf91pcsw" target="_blank">LoopBack on Slack</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/community/How-to-add-a-project.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://stackoverflow.com/questions/tagged/strongloop+or+loopback4+or+loopbackjs" target="_blank">LoopBack on Stack Overflow</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/community/How-to-add-a-project.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://strongloop.com/strongblog/tag_LoopBack.html" target="_blank">StrongLoop Blog - LoopBack</a></li>
+                          
+                        
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Translations<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        <!-- page.url is /doc/en/community/How-to-add-a-project.html .... folderitem.url is /doc/es/lb2/ -->
+                          
+                            <li><a href="/doc/es/lb2/">Español (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/community/How-to-add-a-project.html .... folderitem.url is /doc/es/lb4/ -->
+                          
+                            <li><a href="/doc/es/lb4/">Español (v4)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/community/How-to-add-a-project.html .... folderitem.url is /doc/fr/lb2/ -->
+                          
+                            <li><a href="/doc/fr/lb2/">Français (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/community/How-to-add-a-project.html .... folderitem.url is /doc/fr/lb4/ -->
+                          
+                            <li><a href="/doc/fr/lb4/">Français (v4)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/community/How-to-add-a-project.html .... folderitem.url is /doc/ko/lb2/ -->
+                          
+                            <li><a href="/doc/ko/lb2/">한국어 (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/community/How-to-add-a-project.html .... folderitem.url is /doc/ko/lb3/ -->
+                          
+                            <li><a href="/doc/ko/lb3/">한국어 (v3)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/community/How-to-add-a-project.html .... folderitem.url is /doc/pt-br/lb2/ -->
+                          
+                            <li><a href="/doc/pt-br/lb2/">Português (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/community/How-to-add-a-project.html .... folderitem.url is /doc/pt-br/lb4/ -->
+                          
+                            <li><a href="/doc/pt-br/lb4/">Português (v4)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/community/How-to-add-a-project.html .... folderitem.url is /doc/ja/lb2/ -->
+                          
+                            <li><a href="/doc/ja/lb2/">日本語 (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/community/How-to-add-a-project.html .... folderitem.url is /doc/ja/lb3/ -->
+                          
+                            <li><a href="/doc/ja/lb3/">日本語 (v3)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/community/How-to-add-a-project.html .... folderitem.url is /doc/ja/lb4/ -->
+                          
+                            <li><a href="/doc/ja/lb4/">日本語 (v4)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/community/How-to-add-a-project.html .... folderitem.url is /doc/ru/lb2/ -->
+                          
+                            <li><a href="/doc/ru/lb2/">Pусский (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/community/How-to-add-a-project.html .... folderitem.url is /doc/zh/lb2/ -->
+                          
+                            <li><a href="/doc/zh/lb2/">中文 (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/community/How-to-add-a-project.html .... folderitem.url is /doc/zh/lb4/ -->
+                          
+                            <li><a href="/doc/zh/lb4/">中文 (v4)</a></li>
+                          
+                        
+                    </ul>
+                </li>
+                
+                
+                
+                <li>
+                    <form id="search" name="search" class="input-group lb-search" action="/search" method="GET">
+                        <input type="text" class="form-control search-bar" placeholder="Search (powered by Watson)" name="q">
+                        
+                        <div class="input-group-btn">
+                            <button type="submit" class="btn btn-default" aria-label="search">
+                              <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                            </button>
+                        </div>
+                      </form>
+                </li>
+            </ul>
+        </div>
+      </div>
+</nav>
+
+<!-- Page Content -->
+<div class="container">
+    <!-- Content Row -->
+    <div class="row">
+        <!-- Sidebar Column -->
+        <nav class="col-md-3 sidebar-col">
+          
+
+
+
+
+
+
+
+
+
+
+
+<!-- NOTE: sidebar = site.data.sidebars.mydoc_sidebar.entries -->
+<div class="sidebarTitle"><a href="index.html">Community projects</a></div>
+<ul id="mysidebar" class="nav-list">
+  
+
+  
+  
+  <li class=" leaf-node  active">
+    
+    
+      <a class="page-link" href="How-to-add-a-project.html">How to add a project</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="/doc/en/lb4/Community-extensions.html">LoopBack 4 community extensions</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Elasticsearch-connector.html">Elasticsearch connector</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="SDK-builder.html">LoopBack SDK Builder</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="JSON-schemas.html">JSON Schemas</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="dynamo-connector.html">DynamoDB Connector</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="IoT-demo.html">IoT demo</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="SuperTest-models.html">SuperTest models</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Declarative-test-demo.html">Declarative test demo</a>
+    
+      
+  </li>
+  
+
+
+
+</ul>
+
+        </nav>
+        <!-- Content Column -->
+        <div class="col-md-9">
+            
+<div class="post-header">
+   <h1 class="post-title-main">How to add a community project</h1>
+   
+     
+       <a target="_blank" href="https://github.com/strongloop/loopback.io/blob/gh-pages/pages/en/community/How-to-add-a-project.md" class="githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit this page</a>
+   
+</div>
+
+<div class="post-content">
+
+
+  
+
+
+
+
+ 
+
+    <p>To add your community project here, follow these steps:</p>
+
+<p>First, fork the <a href="https://github.com/strongloop/loopback.io.git">strongloop/loopback.io repository</a> (see <a href="https://help.github.com/articles/fork-a-repo/">Fork a repo</a> for instructions).</p>
+
+<p>Now, you have two options:</p>
+
+<ul>
+  <li>If your project repository has a good, detailed README, you can reuse it.  Follow the steps in <a href="#reuse-your-readme">Reuse your README</a>.</li>
+  <li>If your project doesn’t have a complete README, you can create a custom page.  Follow the steps in <a href="#create-a-custom-page">Create a custom project page</a>.</li>
+</ul>
+
+<h2 id="reuse-your-readme">Reuse your README</h2>
+
+<p>This site has tools and processes for incorporating README files from external repositories.
+For a full description, see <a href="/doc/en/contrib/Including-READMEs.html">Including READMEs from other repositories</a>.  In brief, we use a script to pull down READMEs over the network, then incorporate them into the site.  Currently, to update the READMEs, we periodically run the script manually.</p>
+
+<p>To reuse your project README, follow these steps:</p>
+
+<ol>
+  <li>Copy one of the existing project pages that uses a README, for example  <code class="language-plaintext highlighter-rouge">loopback.io/pages/en/community/IoT-demo.md</code>.
+    <ul>
+      <li>Save it into the same directory (<code class="language-plaintext highlighter-rouge">pages/en/community</code>), and name it based on your project name, for example <code class="language-plaintext highlighter-rouge">pages/en/community/My-awesome-project.md</code>.</li>
+    </ul>
+  </li>
+  <li>Edit the front matter at the top of the file (see below):
+    <ul>
+      <li>Change the <code class="language-plaintext highlighter-rouge">title</code> property to be the name of your project.</li>
+      <li>Change the <code class="language-plaintext highlighter-rouge">source</code> property to the name of your repository; in the example below <code class="language-plaintext highlighter-rouge">source: StrongLoop-IoT-Demo</code>.</li>
+      <li>Change the <code class="language-plaintext highlighter-rouge">org</code> property to the name of the organization that contains the repository; for example <code class="language-plaintext highlighter-rouge">org: my-org</code>.</li>
+      <li>Change the <code class="language-plaintext highlighter-rouge">permalink</code> property to match the name of the file, for example <code class="language-plaintext highlighter-rouge">/doc/en/community/My-awesome-project.html</code>.</li>
+      <li>Add any <code class="language-plaintext highlighter-rouge">keywords</code> you want for search-engine optimization (optional).</li>
+      <li>If you don’t want an automatically-generated page TOC, add <code class="language-plaintext highlighter-rouge">toc: false</code>.</li>
+      <li>Add a short summary of the project in the <code class="language-plaintext highlighter-rouge">summary</code> property (optional).</li>
+    </ul>
+  </li>
+  <li>Edit the rest of the page to fill in the information for your project, replacing the sample content and instructions.</li>
+</ol>
+
+<h3 id="front-matter-for-readme-page">Front matter for README page</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---
+title: "Internet of Things demo"
+lang: en
+layout: readme
+source: StrongLoop-IoT-Demo
+org: strongloop-community
+keywords: LoopBack
+tags: [community]
+sidebar: community_sidebar
+permalink: /doc/en/community/IoT-demo.html
+summary: Example application that demonstrates using LoopBack for Internet of Things.
+---
+</code></pre></div></div>
+
+<h3 id="add-your-repo-to-the-list-of-community-readmes">Add your repo to the list of community READMEs</h3>
+
+<p>Of course, you could just copy/paste your README file into  <code class="language-plaintext highlighter-rouge">pages/en/community/readmes</code>, and name it <code class="language-plaintext highlighter-rouge">the-repo-name.md</code>.  But to ensure that the content stays up-to-date with
+changes to the README file in your repo:</p>
+
+<ol>
+  <li>Add your project repo to <code class="language-plaintext highlighter-rouge">_data/repos-community.json</code>; for example:</li>
+</ol>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  { "org": "strongloop-community", "repoName":  "loopback-connector-elastic-search"},
+</code></pre></div></div>
+
+<p>Replace the <code class="language-plaintext highlighter-rouge">org</code> property with your organization name and the <code class="language-plaintext highlighter-rouge">repoName</code> property with
+your repository name.</p>
+
+<p>The <code class="language-plaintext highlighter-rouge">get-readmes</code> script that updates the READMEs reads this JSON file.</p>
+
+<h3 id="test-the-script">Test the script</h3>
+
+<p>Now, follow these steps to run <code class="language-plaintext highlighter-rouge">get-readmes</code>:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/strongloop/get-readmes.git
+cd get-readmes
+npm install
+cd ..
+./update-community-readmes.sh
+</code></pre></div></div>
+
+<h2 id="create-a-custom-page">Create a custom page</h2>
+
+<p>If you don’t want to reuse your README for any reason, follow these steps:</p>
+
+<ol>
+  <li>Copy the <code class="language-plaintext highlighter-rouge">loopback.io/pages/en/community/Sample-project.md</code> file, save it into the same directory (<code class="language-plaintext highlighter-rouge">pages/en/community</code>), and name it based on your project name, for example <code class="language-plaintext highlighter-rouge">pages/en/community/My-awesome-project.md</code>.</li>
+  <li>Edit the front matter at the top of the file (see below):
+    <ul>
+      <li>Change the <code class="language-plaintext highlighter-rouge">title</code> property to be the name of your project.</li>
+      <li>Change the <code class="language-plaintext highlighter-rouge">permalink</code> property to match the name of the file, for example <code class="language-plaintext highlighter-rouge">/doc/en/community/My-awesome-project.html</code>.</li>
+      <li>Add any <code class="language-plaintext highlighter-rouge">keywords</code> you want for search-engine optimization (optional).</li>
+      <li>If you want an automatically-generated page TOC, delete <code class="language-plaintext highlighter-rouge">toc: false</code>.</li>
+    </ul>
+  </li>
+  <li>Edit the rest of the page to fill in the information for your project, replacing the sample content and instructions.</li>
+</ol>
+
+<h3 id="front-matter-for-custom-page">Front matter for custom page</h3>
+
+<p>This is the template front matter in the <a href="Sample-project">Sample project page</a>:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---
+title: Sample community project
+toc: false
+keywords:
+tags: [community]
+sidebar: community_sidebar
+permalink: /doc/en/community/Sample-project.html
+---
+</code></pre></div></div>
+
+<h2 id="add-your-page-to-the-sidebar">Add your page to the sidebar</h2>
+
+<p>Edit the community sidebar navigation file <code class="language-plaintext highlighter-rouge">_data/sidebars/community_sidebar.yml</code> and add an entry for your  file, for example:</p>
+<pre style="margin-left: 30px;">
+- title: 'Sample project'
+  url: /doc/en/community/Sample-project.html
+  output: 'web'
+</pre>
+
+<div class="alert alert-info" role="alert">
+  <p><i class="fa fa-info-circle"></i>
+<b>Note:</b>
+Make sure the <code class="language-plaintext highlighter-rouge">url</code> property in the sidebar matches the page’s <code class="language-plaintext highlighter-rouge">permalink</code> property.</p>
+
+</div>
+
+<h2 id="test-your-change">Test your change</h2>
+
+<p>Follow the instructions in the <a href="https://github.com/strongloop/loopback.io/blob/gh-pages/README.md">README</a> to run the site locally.  Make sure it runs without any errors and you page displays properly in the navigation sidebar.</p>
+
+<h2 id="create-a-pull-request">Create a pull request</h2>
+
+<p><a href="https://help.github.com/articles/creating-a-pull-request/">Create a pull request</a> for your changes.  Someone will review it and either merge it or comment as soon as possible.</p>
+
+
+    <div class="tags">
+      
+        <b>Tags: </b>
+        
+        
+          
+            <a href="tag_community.html" class="tags-item" role="button">community</a>
+            
+        
+      
+    </div>
+</div>
+
+<hr class="shaded"/>
+
+<footer id="container">
+            <div class="row">
+                <div class="col-md-6 footer-left">
+               &copy;2021 IBM / StrongLoop. All rights reserved. <br />
+ Site last generated: Mar 22, 2021
+              </div>
+              <div class="col-md-6 footer-right">
+                <p><img src="https://loopback.io/images/company_logo.png" alt="Company logo"/></p>
+              </div>
+            </div>
+</footer>
+
+
+        </div>
+        <!-- /.row -->
+</div>
+<!-- /.container -->
+    </div>
+</body>
+
+</html>

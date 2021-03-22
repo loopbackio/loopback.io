@@ -1,0 +1,4802 @@
+<!DOCTYPE html>
+<head>
+    
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="keywords" content=" LoopBack 4.0, LoopBack 4, Node.js, TypeScript, OpenAPI, Model Relation">
+  <title>hasManyThrough Relation | LoopBack Documentation</title>
+  <link rel="stylesheet" href="/css/syntax.css">
+
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/modern-business.css">
+    <link rel="stylesheet" href="/css/lavish-bootstrap.css">
+    <link rel="stylesheet" href="/css/customstyles.css">
+    <link rel="stylesheet" href="/css/theme-v4.css">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-150726441-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-150726441-2');
+</script>
+
+
+    <!-- github star button -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.3.0/anchor.min.js"></script>
+    <script src="/js/toc.js"></script>
+    <script src="/js/customscripts.js"></script>
+
+    <link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    
+
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-lg navbar-brand no_icon" href="/doc/index.html">
+              <img class="no_icon" style="width:147px;" src="/images/branding/logo/white/loopback.svg">&nbsp;<span class="projectTitle"></span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- entries without drop-downs appear here -->
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">API Docs<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        <!-- page.url is /doc/en/lb4/HasManyThrough-relation.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://loopback.io/doc/en/lb4/apidocs.index.html" target="_blank">LoopBack 4</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb4/HasManyThrough-relation.html .... folderitem.url is  -->
+                          
+                            <li><a href="http://apidocs.loopback.io" target="_blank">LoopBack 3.x</a></li>
+                          
+                        
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">View<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        <!-- page.url is /doc/en/lb4/HasManyThrough-relation.html .... folderitem.url is / -->
+                          
+                            <li><a href="/">LoopBack Overview</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb4/HasManyThrough-relation.html .... folderitem.url is /doc/en/lb4/ -->
+                          
+                            <li class="dropdownActive"><a href="/doc/en/lb4/">LoopBack 4</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb4/HasManyThrough-relation.html .... folderitem.url is /doc/en/lb3/ -->
+                          
+                            <li><a href="/doc/en/lb3/">LoopBack 3.x</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb4/HasManyThrough-relation.html .... folderitem.url is /doc/en/lb2/ -->
+                          
+                            <li><a href="/doc/en/lb2/">LoopBack 2.x</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb4/HasManyThrough-relation.html .... folderitem.url is /doc/en/community/ -->
+                          
+                            <li><a href="/doc/en/community/">Community projects</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb4/HasManyThrough-relation.html .... folderitem.url is /doc/en/contrib/ -->
+                          
+                            <li><a href="/doc/en/contrib/">Contributing to LoopBack</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb4/HasManyThrough-relation.html .... folderitem.url is /doc/en/sec/ -->
+                          
+                            <li><a href="/doc/en/sec/">Security advisories</a></li>
+                          
+                        
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Resources<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        <!-- page.url is /doc/en/lb4/HasManyThrough-relation.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://github.com/strongloop/loopback.io" target="_blank">Docs Github Repo</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb4/HasManyThrough-relation.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://groups.google.com/forum/#!forum/loopbackjs-announcements" target="_blank">Announcements Mailing List</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb4/HasManyThrough-relation.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://groups.google.com/forum/#!forum/loopbackjs" target="_blank">Developer Forum</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb4/HasManyThrough-relation.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://join.slack.com/t/loopbackio/shared_invite/zt-8lbow73r-SKAKz61Vdao~_rGf91pcsw" target="_blank">LoopBack on Slack</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb4/HasManyThrough-relation.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://stackoverflow.com/questions/tagged/strongloop+or+loopback4+or+loopbackjs" target="_blank">LoopBack on Stack Overflow</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb4/HasManyThrough-relation.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://strongloop.com/strongblog/tag_LoopBack.html" target="_blank">StrongLoop Blog - LoopBack</a></li>
+                          
+                        
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Translations<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        <!-- page.url is /doc/en/lb4/HasManyThrough-relation.html .... folderitem.url is /doc/es/lb2/ -->
+                          
+                            <li><a href="/doc/es/lb2/">Español (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb4/HasManyThrough-relation.html .... folderitem.url is /doc/es/lb4/ -->
+                          
+                            <li><a href="/doc/es/lb4/">Español (v4)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb4/HasManyThrough-relation.html .... folderitem.url is /doc/fr/lb2/ -->
+                          
+                            <li><a href="/doc/fr/lb2/">Français (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb4/HasManyThrough-relation.html .... folderitem.url is /doc/fr/lb4/ -->
+                          
+                            <li><a href="/doc/fr/lb4/">Français (v4)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb4/HasManyThrough-relation.html .... folderitem.url is /doc/ko/lb2/ -->
+                          
+                            <li><a href="/doc/ko/lb2/">한국어 (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb4/HasManyThrough-relation.html .... folderitem.url is /doc/ko/lb3/ -->
+                          
+                            <li><a href="/doc/ko/lb3/">한국어 (v3)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb4/HasManyThrough-relation.html .... folderitem.url is /doc/pt-br/lb2/ -->
+                          
+                            <li><a href="/doc/pt-br/lb2/">Português (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb4/HasManyThrough-relation.html .... folderitem.url is /doc/pt-br/lb4/ -->
+                          
+                            <li><a href="/doc/pt-br/lb4/">Português (v4)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb4/HasManyThrough-relation.html .... folderitem.url is /doc/ja/lb2/ -->
+                          
+                            <li><a href="/doc/ja/lb2/">日本語 (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb4/HasManyThrough-relation.html .... folderitem.url is /doc/ja/lb3/ -->
+                          
+                            <li><a href="/doc/ja/lb3/">日本語 (v3)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb4/HasManyThrough-relation.html .... folderitem.url is /doc/ja/lb4/ -->
+                          
+                            <li><a href="/doc/ja/lb4/">日本語 (v4)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb4/HasManyThrough-relation.html .... folderitem.url is /doc/ru/lb2/ -->
+                          
+                            <li><a href="/doc/ru/lb2/">Pусский (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb4/HasManyThrough-relation.html .... folderitem.url is /doc/zh/lb2/ -->
+                          
+                            <li><a href="/doc/zh/lb2/">中文 (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb4/HasManyThrough-relation.html .... folderitem.url is /doc/zh/lb4/ -->
+                          
+                            <li><a href="/doc/zh/lb4/">中文 (v4)</a></li>
+                          
+                        
+                    </ul>
+                </li>
+                
+                
+                
+                <li>
+                    <form id="search" name="search" class="input-group lb-search" action="/search" method="GET">
+                        <input type="text" class="form-control search-bar" placeholder="Search (powered by Watson)" name="q">
+                        
+                          <input type="hidden" name="sidebar" value="lb4_sidebar">
+                        
+                        <div class="input-group-btn">
+                            <button type="submit" class="btn btn-default" aria-label="search">
+                              <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                            </button>
+                        </div>
+                      </form>
+                </li>
+            </ul>
+        </div>
+      </div>
+</nav>
+
+<!-- Page Content -->
+<div class="container">
+    <!-- Content Row -->
+    <div class="row">
+        <!-- Sidebar Column -->
+        <nav class="col-md-3 sidebar-col">
+          
+
+
+
+
+
+
+
+
+
+
+
+<!-- NOTE: sidebar = site.data.sidebars.mydoc_sidebar.entries -->
+<div class="sidebarTitle"><a href="index.html">LoopBack 4</a></div>
+<ul id="mysidebar" class="nav-list">
+  
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="index.html">Overview</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Getting-started.html">Getting started</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Inside-LoopBack-Application.html">Inside a LoopBack Application</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent-expand   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="section-name" href="#">Building LoopBack Applications</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Tutorials.html">Tutorials</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="todo-tutorial.html">Todo Tutorial</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="todo-tutorial-scaffolding.html">Create your app scaffolding</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="todo-tutorial-model.html">Add the Todo model</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="todo-tutorial-datasource.html">Add a Datasource</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="todo-tutorial-repository.html">Add a Repository</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="todo-tutorial-controller.html">Add a Controller</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="todo-tutorial-putting-it-together.html">Putting it all together</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="todo-tutorial-geocoding-service.html">Bonus: Integrate with a geo-coding service</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="todo-list-tutorial.html">TodoList Tutorial</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="todo-list-tutorial-model.html">Add TodoList Model</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="todo-list-tutorial-repository.html">Add TodoList Repository</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="todo-list-tutorial-relations.html">Add Model Relations</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="todo-list-tutorial-has-one-relation.html">Add a HasOne Relation</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="todo-list-tutorial-controller.html">Add TodoList Controller</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="todo-list-tutorial-sqldb.html">Running on relational databases</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Connecting-to-back-end.html">Connecting to Back-end Service Tutorials</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="soap-calculator-tutorial.html">SOAP Web Service Tutorial</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="soap-calculator-tutorial-web-service-overview.html">SOAP Web Service Overview</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="soap-calculator-tutorial-scaffolding.html">App scaffolding</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="soap-calculator-tutorial-add-datasource.html">Add a Datasource</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="soap-calculator-tutorial-add-service.html">Add a Service</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="soap-calculator-tutorial-add-controller.html">Add a Controller</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="soap-calculator-tutorial-run-and-test.html">Run and Test it</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="express-with-lb4-rest-tutorial.html">Creating an Express Application with LoopBack REST API</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Authentication-tutorial.html">How to secure your LoopBack 4 application with JWT authentication</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="core-tutorial.html">Build large scale Node.js projects with LoopBack 4</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="core-tutorial-part1.html">Introduction of the application scenario</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="core-tutorial-part2.html">Architectural challenges</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="core-tutorial-part3.html">Context in action</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="core-tutorial-part4.html">Dependency injection</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="core-tutorial-part5.html">Extension point and extensions</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="core-tutorial-part6.html">Interception</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="core-tutorial-part7.html">Observation of life cycle events</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="core-tutorial-part8.html">Configuration</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="core-tutorial-part9.html">Discover and load artifacts by convention</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="core-tutorial-part10.html">Advanced Recipes</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="core-tutorial-part11.html">Summary</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Examples.html">Examples</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Community-examples.html">Community examples</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="section-name" href="#">How-to guides</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="section-name" href="#">Building REST APIs</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Creating-crud-rest-apis.html">Creating CRUD REST APIs from a model</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Customizing-how-openapi-spec-is-served.html">Customizing how OpenAPI spec is served</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Customizing-routes.html">Customizing routes</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Dynamic-models-repositories-controllers.html">Dynamically adding models, repositories, and controllers</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Self-hosted-rest-api-explorer.html">Self-hosted REST API Explorer</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Serving-static-files.html">Serving Static Files</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Accessing-http-request-response.html">Accessing HTTP Request and Response Objects</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="File-upload-download.html">Uploading and Downloading Files</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Express-middleware.html">Using Express Middleware</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Using-strong-error-handler.html">Using strong-error-handler</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Boot-and-Mount-a-LoopBack-3-application.html">Boot and Mount a LoopBack 3 Application</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Integrating-with-api-connect.html">Integrating with API Connect</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Accepting-messagepack-over-http.html">Accepting MessagePack over HTTP</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="section-name" href="#">Creating Other Forms of APIs</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="GraphQL.html">Creating GraphQL APIs</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Using-openapi-to-graphql.html">Using OpenAPI-to-GraphQL</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Creating-artifacts-runtime.html">Creating Artifacts at Runtime</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Creating-model-runtime.html">Creating Model at Runtime</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Creating-datasource-runtime.html">Creating DataSource at Runtime</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Creating-repository-runtime.html">Creating Repositories at Runtime</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="section-name" href="#">Building frontend applications</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Building-frontend-angular-application.html">Building an Angular Application from OpenAPI Specification</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Customizing-server-configuration.html">Customizing Server configuration</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Migrate-from-legacy-sequence.html">Migrate from Legacy Sequence</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Running-cron-jobs.html">Running cron jobs</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="section-name" href="#">Accessing Databases</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Configuring-datasource.html">Configuring DataSource</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Working-with-data.html">Working with data</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Querying-data.html">Querying data</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Fields-filter.html">Fields filter</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Include-filter.html">Include filter</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Limit-filter.html">Limit filter</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Order-filter.html">Order filter</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Skip-filter.html">Skip filter</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Where-filter.html">Where filter</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Using-database-transactions.html">Using Database Transactions</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Database-migrations.html">Database Migrations</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Executing-database-commands.html">Executing database commands</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="section-name" href="#">Using TypeORM</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Using-typeorm-with-loopback.html">How to use TypeORM with LoopBack</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Accessing-services.html">Accessing Services</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Calling-soap-web-services.html">Calling SOAP Web services</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Calling-rest-apis.html">Calling REST APIs</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Parsing-requests-guide.html">Parsing requests</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Validation.html">Validating Data</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Validation-REST-layer.html">Validation in REST Layer</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Validation-controller-repo-service-layer.html">Validation in the Controller, Repository and Service Layer</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Validation-ORM-layer.html">Validation in ORM Layer</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Configuring-applications.html">Configuring Applications</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Application-setup-tips.html">Tips for Application Setup</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="section-name" href="#">Securing Applications</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Authentication-overview.html">Authentication</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Authentication-tutorial.html">Apply JWT Authentication in Todo Example</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Loopback-component-authentication.html">Authentication Component</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Authentication-component-decorator.html">Authentication Decorator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Authentication-component-action.html">Authentication Action</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Authentication-component-strategy.html">Authentication Strategy</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Authentication-component-options.html">Managing Custom Authentication Strategy Options</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="JWT-authentication-extension.html">JWT Authentication Extension</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Implement-your-own-strategy.html">Implement your own authentication strategy</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Authentication-passport.html">Passport Adapter for Authentication</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Authorization-overview.html">Authorization</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="RBAC-with-authorization.html">RBAC with Authorization System</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Loopback-component-authorization.html">Authorization Component</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Authorization-component-interceptor.html">Interceptor</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Authorization-component-decorator.html">Decorator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Authorization-component-authorizer.html">Authorizer</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Authorization-component-decision-matrix.html">Decision Matrix</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Authorization-component-enforcer.html">Enforcer</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Deployment.html">Deploying Applications</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Enabling-https.html">Enabling HTTPS</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Deploying-to-IBM-Cloud.html">Deploying to IBM Cloud</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="deploying_to_ibm_cloud_kubernetes.html">Deploying to Kubernetes on IBM Cloud</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="deploying-with-pm2-and-nginx.html">Deploying with pm2 and nginx</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Appsody-LoopBack.html">Developing and Deploying LoopBack Applications with Appsody</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Running-cron-jobs.html">Running cron jobs</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Health.html">Health check</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Metrics.html">Metrics for Prometheus</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Pooling.html">Pooling</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Troubleshooting.html">Troubleshooting</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Setting-debug-strings.html">Setting debug strings</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Logging.html">Logging</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Context-explorer.html">Context Explorer</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Debugging-tests-with-mocha.html">Debugging tests with Mocha</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent-expand   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Extending-LoopBack-4.html">Extending LoopBack Framework</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="section-name" href="#">How-to guides</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Creating-components.html">Creating components</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Creating-decorators.html">Creating decorators</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="creating-components-rest-api.html">Contributing REST API</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="creating-components-services.html">Creating services</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Creating-servers.html">Creating servers</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Extending-request-body-parsing.html">Extending request body parsing</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Extension-life-cycle.html">Extension life cycle</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Extending-OpenAPI-specification.html">Extending OpenAPI specification</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Extending-Model-API-builder.html">Extending Model API builder</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Testing-your-extension.html">Testing your extension</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Community-extensions.html">Community extensions</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Concepts.html">Concepts</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Crafting-LoopBack-4.html">Crafting LoopBack 4</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="section-name" href="#">Core</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Application.html">Application</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Component.html">Component</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Context.html">Context</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Binding.html">Binding</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Dependency-injection.html">Dependency Injection</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Interceptor.html">Interceptor</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Life-cycle.html">Life Cycle Event and Observer</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Extension-point-and-extensions.html">Extension point and extensions</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Service.html">Service</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Booting-an-Application.html">Booter</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Decorators.html">Decorators</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Decorators_openapi.html">OpenAPI Decorators</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Decorators_inject.html">Dependency Injection Decorator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Decorators_authenticate.html">Authentication Decorator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Decorators_authorize.html">Authorization Decorators</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Decorators_service.html">Service Decorators</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Decorators_repository.html">Repository Decorators</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Mixin.html">Mixin</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="section-name" href="#">REST APIs</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Server.html">Server</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Sequence.html">Sequence</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="REST-middleware-sequence.html">Middleware based sequence</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="REST-action-sequence.html">Action based sequence</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Advanced-sequence-topics.html">Advanced topics</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Routing-requests.html">Routing requests</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Parsing-requests.html">Parsing requests</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Working-with-express-middleware.html">Working with Express Middleware</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Middleware.html">Middleware</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Route.html">Route</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Controller.html">Controller</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Request-response-cycle.html">Request/response cycle</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="section-name" href="#">Data Access</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Model.html">Model</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Relations.html">Relations</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="HasMany-relation.html">HasMany Relation</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="BelongsTo-relation.html">BelongsTo Relation</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="HasOne-relation.html">HasOne Relation</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  active">
+    
+    
+      <a class="page-link" href="HasManyThrough-relation.html">HasManyThrough Relation</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Repository.html">Repository</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="DataSource.html">DataSource</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Best-practices.html">Best practices</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Defining-the-API-using-code-first-approach.html">Defining the API using code-first approach</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Defining-your-testing-strategy.html">Defining your testing strategy</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Testing-your-application.html">Testing your application</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="section-name" href="#">Reference guides</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Loopback-application-layout.html">LoopBack 4 Application Layout</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="apidocs.index.html">API docs</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Reserved-binding-keys.html">Reserved binding keys</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Error-codes.html">Error codes</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="LoopBack-types.html">LoopBack Types</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Command-line-interface.html">CLI References</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Application-generator.html">Application generator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Controller-generator.html">Controller generator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="DataSource-generator.html">DataSource generator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Importing-LB3-models.html">Import models from LoopBack 3</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Model-generator.html">Model generator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Discovering-models.html">Model discovery</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Relation-generator.html">Relation generator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Repository-generator.html">Repository generator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Rest-Crud-generator.html">REST CRUD model endpoints generator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Service-generator.html">Service generator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="OpenAPI-generator.html">OpenAPI generator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Life-cycle-observer-generator.html">Life cycle observer generator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Interceptor-generator.html">Interceptor generator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Extension-generator.html">Extension generator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Download-examples.html">Download examples</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Update-generator.html">Update project dependencies</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Copyright-generator.html">Generate copyright/license headers</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Connectors-reference.html">Connectors reference</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Memory-connector.html">Memory connector</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Database-connectors.html">Database connectors</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Cassandra-connector.html">Cassandra connector</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Cloudant-connector.html">Cloudant connector</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Couchdb2-connector.html">CouchDB 2.x connector</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="DashDB.html">DashDB connector</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="DB2-connector.html">IBM Db2 (for Linux, Unix, Windows) connector</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="DB2-for-i-connector.html">IBM Db2 for i connector</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="DB2-for-z-OS-connector.html">IBM Db2 for z/OS connector</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Informix.html">Informix connector</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="MongoDB-connector.html">MongoDB connector</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Connecting-to-MongoDB.html">MongoDB Connector Tutorial</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Using-MongoLab.html">Using MongoLab</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="MySQL-connector.html">MySQL connector</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Connecting-to-MySQL.html">MySQL Connector Tutorial</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Oracle-connector.html">Oracle connector</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Installing-the-Oracle-connector.html">Installing the Oracle connector</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Connecting-to-Oracle.html">Oracle connector tutorial</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="PostgreSQL-connector.html">PostgreSQL connector</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Connecting-to-PostgreSQL.html">PostgreSQL connector tutorial</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Redis-connector.html">Redis connector</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="kv-redis-connector.html">Redis key-value connector</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Example-kv-connector.html">KV connector example</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="SQL-Server-connector.html">SQL Server connector</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Connecting-to-Microsoft-SQL-Server.html">SQL Server connector tutorial</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="SQLite3.html">SQLite3 connector</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="zOSconnectEE.html">z/OS Connect Enterprise Edition connector</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Other-connectors.html">Other connectors</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="JSON-RPC-connector.html">JSON RPC connector</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="MQLight-connector.html">MQ Light connector</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="REST-connector.html">REST connector</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="REST-connector-example.html">REST connector example</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="SOAP-connector.html">SOAP connector</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Strong-soap.html">Strong-soap</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="SOAP-Connector-example.html">SOAP connector example</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Connecting-to-SOAP.html">Connecting to SOAP web services</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="OpenAPI-connector.html">OpenAPI connector</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Community-connectors.html">Community connectors</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="changelog.index.html">Change logs</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Deploy-for-GDPR-readiness.html">Considerations for GDPR readiness</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="code-contrib-lb4.html">Contributing to LoopBack 4</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="submitting_a_pr.html">Submitting a pull request to LoopBack 4</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="FAQ.html">FAQ</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="migration-overview.html">Migration guide</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Understanding-the-differences.html">Understanding the differences</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="LB3-vs-LB4-booting.html">Booting process</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="LB3-vs-LB4-request-response-cycle.html">Request/response cycle</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="migration-mounting-lb3app.html">Mounting a LoopBack 3 application</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="migration-express-middleware.html">Express middleware</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="migration-datasources.html">Datasources</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="migration-models-overview.html">Migrating models</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="migration-models-core.html">Model definitions and built-in APIs</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="migration-models-relations.html">Relations</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="migration-models-methods.html">Custom methods</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="migration-models-remoting-hooks.html">Remoting hooks</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="migration-models-operation-hooks.html">CRUD operation hooks</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="migration-models-mixins.html">Mixins</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="migration-boot-scripts.html">Boot scripts</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="migration-auth-overview.html">Authentication & authorization</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="migration-auth-access-control-example.html">Access control example</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="migration-authentication.html">Built-in models and authentication</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="migration-auth-passport.html">Passport</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="migration-auth-oauth2.html">OAuth2 Provider</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="migration-cli.html">CLI</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="migration-extensions-overview.html">Components and extensions</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="migration-extensions-project-layout.html">Project layout</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="migration-extensions-models.html">Models</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="migration-extensions-current-context.html">Current context</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="migration-extensions-mixins.html">Mixins</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="migration-extensions-rest-api.html">REST API</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="migration-clients.html">Clients (API consumers)</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="migration-not-planned.html">Features not planned</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+
+</ul>
+
+        </nav>
+        <!-- Content Column -->
+        <div class="col-md-9">
+            
+<div class="post-header">
+   <h1 class="post-title-main">hasManyThrough Relation</h1>
+   
+     
+       <a target="_blank" href="https://github.com/strongloop/loopback-next/blob/master/docs/site/HasManyThrough-relation.md" class="githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit this page</a>
+   
+</div>
+
+<div class="post-content">
+
+
+
+
+
+ 
+   
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+;$(function() {
+  var level = parseInt(3, 10);
+  if (level === 1) {level = 'h2'}
+  if (level === 2) {level = 'h2,h3'}
+  if (level === 3) {level = 'h2,h3,h4'}
+  if (level === 4) {level = 'h2,h3,h4,h5'}
+
+  // Add a new level for changelog files which use h1,h2,h3
+  if (level === 0) {level = 'h1,h2,h3,h4,h5'}
+
+  var toc = $('#toc')
+
+  toc.toc({minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: level})
+
+  /* this offset helps with the space taken up by the floating toolbar */
+  toc.on('click', 'a', function() {
+    var target = $(this.getAttribute('href')),
+      scroll_target = target.offset().top
+
+    $(window).scrollTop(scroll_target - 10)
+    return false
+  })
+  .on('click', '.toc-expand-button', function() {
+    toc.find('> ul').slideToggle('fast');
+  })
+})
+</script>
+
+<div id="toc">
+  <span class="toc-title">Page Contents</span>
+  <button type="button" class="btn btn-link toc-expand-button">
+    <i class="fa fa-bars"></i>
+  </button>
+</div>
+
+ 
+
+    <h2 id="overview">Overview</h2>
+
+<div class="alert alert-warning" role="alert">
+  <p><i class="fa fa-warning"></i>
+  <b>Important:</b>
+  Please read <a href="/doc/en/lb4/Relations.html">Relations</a> first.</p>
+</div>
+
+<div class="alert alert-info" role="alert">
+  <p><i class="fa fa-info-circle"></i>
+<b>Note:</b></p>
+
+  <p>This relation best works with databases that support foreign key
+constraints (SQL).
+Using this relation with NoSQL databases will result in unexpected behavior,
+such as the ability to create a relation with a model that does not exist. We are <a href="https://github.com/strongloop/loopback-next/issues/2341">working on a solution</a> to better handle this. It is fine to use this relation with NoSQL databases for purposes such as navigating related models, where the referential integrity is not critical.</p>
+
+</div>
+
+<p>A <code class="language-plaintext highlighter-rouge">hasManyThrough</code> relation denotes a many-to-many connection with another
+model. The referential integrity is enforced by foreign key constraints on the
+through model which usually references primary keys on the source model and the
+target model. This relation indicates that the declaring model can be matched
+with zero or more instances of another model by proceeding through a third
+model. For example, in an application for a medical practice where patients make
+appointments to see doctors, the relevant relation declarations are illustrated
+in the diagram below.</p>
+
+<p><img src="/pages/en/lb4/imgs/hasManyThrough-relation-example.png" alt="hasManyThrough relation illustration" /></p>
+
+<p>The diagram shows through model <strong>Appointment</strong> has a property <strong>doctorId</strong> as
+the foreign key to reference the source model <strong>Doctor</strong>’s primary key <strong>id</strong>
+and a property <strong>patientId</strong> as the foreign key to reference the target model
+<strong>Patient</strong>’s primary key <strong>pid</strong>.</p>
+
+<p>To add a <code class="language-plaintext highlighter-rouge">hasManyThrough</code> relation to your LoopBack application and expose its
+related routes, you need to perform the following steps:</p>
+
+<ol>
+  <li>Add a property to define the relation to your model to access related model
+instances.</li>
+  <li>Add a foreign key property in the through model referring to the <strong>source</strong>
+model’s id.</li>
+  <li>Add a foreign key property in the through model referring to the <strong>target</strong>
+model’s id.</li>
+  <li>Modify the source model repository class to provide access to a constrained
+target model repository.</li>
+  <li>Call the constrained target model repository CRUD APIs in your controller
+methods.</li>
+</ol>
+
+<h2 id="defining-a-hasmanythrough-relation">Defining a hasManyThrough Relation</h2>
+
+<p>This section describes how to define a <code class="language-plaintext highlighter-rouge">hasManyThrough</code> relation at the model
+level using the <code class="language-plaintext highlighter-rouge">@hasMany</code> decorator (in LoopBack, <code class="language-plaintext highlighter-rouge">hasManyThrough</code> is
+considered being part of <code class="language-plaintext highlighter-rouge">hasMany</code>). Instead of constraining the target
+repository by the foreign key property on the target model, it uses a through
+model that has two foreign keys that reference the source model and target
+model, respectively. The following example shows how to define a
+<code class="language-plaintext highlighter-rouge">hasManyThrough</code> relation on a source model <code class="language-plaintext highlighter-rouge">Doctor</code> and a target model
+<code class="language-plaintext highlighter-rouge">Patient</code> through model <code class="language-plaintext highlighter-rouge">Appointment</code>.</p>
+
+<div id="/src/models/doctor.model.ts" class="code-caption">
+  <p>/src/models/doctor.model.ts</p>
+</div>
+
+<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="p">{</span><span class="nx">Patient</span><span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">./patient.model</span><span class="dl">'</span><span class="p">;</span>
+<span class="k">import</span> <span class="p">{</span><span class="nx">Appointment</span><span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">./appointment.model</span><span class="dl">'</span><span class="p">;</span>
+<span class="k">import</span> <span class="p">{</span><span class="nx">Entity</span><span class="p">,</span> <span class="nx">property</span><span class="p">,</span> <span class="nx">hasMany</span><span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">@loopback/repository</span><span class="dl">'</span><span class="p">;</span>
+
+<span class="k">export</span> <span class="kd">class</span> <span class="nx">Doctor</span> <span class="kd">extends</span> <span class="nx">Entity</span> <span class="p">{</span>
+  <span class="p">@</span><span class="nd">property</span><span class="p">({</span>
+    <span class="na">type</span><span class="p">:</span> <span class="dl">'</span><span class="s1">number</span><span class="dl">'</span><span class="p">,</span>
+    <span class="na">id</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+  <span class="p">})</span>
+  <span class="nx">id</span><span class="p">:</span> <span class="kr">number</span><span class="p">;</span>
+
+  <span class="p">@</span><span class="nd">property</span><span class="p">({</span>
+    <span class="na">type</span><span class="p">:</span> <span class="dl">'</span><span class="s1">string</span><span class="dl">'</span><span class="p">,</span>
+    <span class="na">required</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+  <span class="p">})</span>
+  <span class="nx">name</span><span class="p">:</span> <span class="kr">string</span><span class="p">;</span>
+
+  <span class="p">@</span><span class="nd">hasMany</span><span class="p">(()</span> <span class="o">=&gt;</span> <span class="nx">Patient</span><span class="p">,</span> <span class="p">{</span><span class="na">through</span><span class="p">:</span> <span class="p">{</span><span class="na">model</span><span class="p">:</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="nx">Appointment</span><span class="p">}})</span>
+  <span class="nx">patients</span><span class="p">:</span> <span class="nx">Patient</span><span class="p">[];</span>
+
+  <span class="kd">constructor</span><span class="p">(</span><span class="nx">data</span><span class="p">:</span> <span class="nb">Partial</span><span class="o">&lt;</span><span class="nx">Doctor</span><span class="o">&gt;</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">super</span><span class="p">(</span><span class="nx">data</span><span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<div id="/src/models/appointment.model.ts" class="code-caption">
+  <p>/src/models/appointment.model.ts</p>
+</div>
+
+<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="p">{</span><span class="nx">Entity</span><span class="p">,</span> <span class="nx">property</span><span class="p">,</span> <span class="nx">hasMany</span><span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">@loopback/repository</span><span class="dl">'</span><span class="p">;</span>
+
+<span class="k">export</span> <span class="kd">class</span> <span class="nx">Appointment</span> <span class="kd">extends</span> <span class="nx">Entity</span> <span class="p">{</span>
+  <span class="c1">// id property and others</span>
+
+  <span class="p">@</span><span class="nd">property</span><span class="p">({</span>
+    <span class="na">type</span><span class="p">:</span> <span class="dl">'</span><span class="s1">number</span><span class="dl">'</span><span class="p">,</span>
+  <span class="p">})</span>
+  <span class="nx">doctorId</span><span class="p">?:</span> <span class="kr">number</span><span class="p">;</span>
+
+  <span class="p">@</span><span class="nd">property</span><span class="p">({</span>
+    <span class="na">type</span><span class="p">:</span> <span class="dl">'</span><span class="s1">number</span><span class="dl">'</span><span class="p">,</span>
+  <span class="p">})</span>
+  <span class="nx">patientId</span><span class="p">?:</span> <span class="kr">number</span><span class="p">;</span>
+
+  <span class="kd">constructor</span><span class="p">(</span><span class="nx">data</span><span class="p">:</span> <span class="nb">Partial</span><span class="o">&lt;</span><span class="nx">Appointment</span><span class="o">&gt;</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">super</span><span class="p">(</span><span class="nx">data</span><span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<div id="/src/models/patient.model.ts" class="code-caption">
+  <p>/src/models/patient.model.ts</p>
+</div>
+
+<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="p">{</span><span class="nx">Entity</span><span class="p">,</span> <span class="nx">property</span><span class="p">,</span> <span class="nx">hasMany</span><span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">@loopback/repository</span><span class="dl">'</span><span class="p">;</span>
+
+<span class="k">export</span> <span class="kd">class</span> <span class="nx">Patient</span> <span class="kd">extends</span> <span class="nx">Entity</span> <span class="p">{</span>
+  <span class="p">@</span><span class="nd">property</span><span class="p">({</span>
+    <span class="na">type</span><span class="p">:</span> <span class="dl">'</span><span class="s1">number</span><span class="dl">'</span><span class="p">,</span>
+    <span class="na">id</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+  <span class="p">})</span>
+  <span class="nx">pid</span><span class="p">:</span> <span class="kr">number</span><span class="p">;</span>
+  <span class="c1">// other properties</span>
+</code></pre></div></div>
+
+<p>The definition of the <code class="language-plaintext highlighter-rouge">hasManyThrough</code> relation is inferred by using the
+<code class="language-plaintext highlighter-rouge">@hasMany</code> decorator. The decorator takes in a function resolving the relation
+metadata. Except for the target model, you will need to specify the through
+model and optionally foreign keys that infer source and target models.</p>
+
+<p>LB4 also provides an CLI tool <code class="language-plaintext highlighter-rouge">lb4 relation</code> to generate <code class="language-plaintext highlighter-rouge">hasManyThrough</code>
+relation for you. Before you check out the
+<a href="https://loopback.io/doc/en/lb4/Relation-generator.html"><code class="language-plaintext highlighter-rouge">Relation Generator</code></a>
+page, read on to learn how you can define relations to meet your requirements.</p>
+
+<h3 id="relation-metadata">Relation metadata</h3>
+
+<p>There are several fields we care when defining a <code class="language-plaintext highlighter-rouge">hasManyThrough</code>. The decorated
+property name is used as the relation name and stored as part of the source
+model definition’s relation metadata.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th width="95">Field Name</th>
+      <th width="260">Description</th>
+      <th width="260">Default Value</th>
+      <th>Example</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>name</code></td>
+      <td>the name of the relation</td>
+      <td>decorated property name</td>
+      <td><code>Doctor.patients</code></td>
+    </tr>
+    <tr>
+      <td><code>keyFrom</code></td>
+      <td>the primary key of the source model</td>
+      <td>the id property of the source model</td>
+      <td><code>Doctor.id</code></td>
+    </tr>
+    <tr>
+      <td><code>keyTo</code></td>
+      <td>the primary key of the target model</td>
+      <td>the id property of the target model</td>
+      <td><code>Patient.pid</code></td>
+    </tr>
+    <tr>
+      <td><code>through.model</code></td>
+      <td>the name of the through model</td>
+      <td>N/A. The through model name is needed for defining a hasManyThrough relation.</td>
+      <td><code>Appointment</code></td>
+    </tr>
+    <tr>
+      <td><code>through.keyFrom</code></td>
+      <td>the foreign key that references the source model on the through model</td>
+      <td>the source model name appended with <code>Id</code> in camel case</td>
+      <td><code>Appointment.doctorId</code></td>
+    </tr>
+    <tr>
+      <td><code>through.keyTo</code></td>
+      <td>the foreign key of the target model</td>
+      <td>the target model name appended with <code>Id</code> in camel case</td>
+      <td><code>Appointment.patientId</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The two foreign keys on through model can only reference the primary keys of
+source and target models. Customization of <code class="language-plaintext highlighter-rouge">keyFrom</code> and <code class="language-plaintext highlighter-rouge">keyTo</code> is not
+supported yet. However, custom foreign keys on through model is possible. A
+usage of the decorator with custom foreign keys name for the above example is as
+follows:</p>
+
+<div id="/src/models/doctor.model.ts" class="code-caption">
+  <p>/src/models/doctor.model.ts</p>
+</div>
+
+<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// import statements</span>
+<span class="kd">class</span> <span class="nx">Doctor</span> <span class="kd">extends</span> <span class="nx">Entity</span> <span class="p">{</span>
+  <span class="c1">// constructor, properties, etc.</span>
+  <span class="p">@</span><span class="nd">hasMany</span><span class="p">(()</span> <span class="o">=&gt;</span> <span class="nx">Patient</span><span class="p">,</span> <span class="p">{</span>
+    <span class="na">through</span><span class="p">:</span> <span class="p">{</span>
+      <span class="na">model</span><span class="p">:</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="nx">Appointment</span><span class="p">,</span>
+      <span class="na">keyFrom</span><span class="p">:</span> <span class="dl">'</span><span class="s1">myDoctor</span><span class="dl">'</span><span class="p">,</span>
+      <span class="na">keyTo</span><span class="p">:</span> <span class="dl">'</span><span class="s1">myPatient</span><span class="dl">'</span><span class="p">,</span>
+    <span class="p">},</span>
+  <span class="p">})</span>
+  <span class="nx">patients</span><span class="p">:</span> <span class="nx">Patient</span><span class="p">[];</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<div id="/src/models/appointment.model.ts" class="code-caption">
+  <p>/src/models/appointment.model.ts</p>
+</div>
+
+<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="p">{</span><span class="nx">Entity</span><span class="p">,</span> <span class="nx">property</span><span class="p">,</span> <span class="nx">hasMany</span><span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">@loopback/repository</span><span class="dl">'</span><span class="p">;</span>
+
+<span class="k">export</span> <span class="kd">class</span> <span class="nx">Appointment</span> <span class="kd">extends</span> <span class="nx">Entity</span> <span class="p">{</span>
+  <span class="c1">// id property and others</span>
+
+  <span class="p">@</span><span class="nd">property</span><span class="p">({</span>
+    <span class="na">type</span><span class="p">:</span> <span class="dl">'</span><span class="s1">number</span><span class="dl">'</span><span class="p">,</span>
+  <span class="p">})</span>
+  <span class="nx">myDoctor</span><span class="p">?:</span> <span class="kr">number</span><span class="p">;</span> <span class="c1">// custom name, refers to Doctor.id</span>
+
+  <span class="p">@</span><span class="nd">property</span><span class="p">({</span>
+    <span class="na">type</span><span class="p">:</span> <span class="dl">'</span><span class="s1">number</span><span class="dl">'</span><span class="p">,</span>
+  <span class="p">})</span>
+  <span class="nx">myPatient</span><span class="p">?:</span> <span class="kr">number</span><span class="p">;</span> <span class="c1">// custom name, refers to Patient.pid</span>
+  <span class="c1">// ...</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>If you need to use <em>different names for models and database columns</em>, to use
+<code class="language-plaintext highlighter-rouge">my_patients</code> as db column name other than <code class="language-plaintext highlighter-rouge">patients</code> for example, the following
+setting would allow you to do so:</p>
+
+<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// import statements</span>
+<span class="p">@</span><span class="nd">model</span><span class="p">()</span>
+<span class="k">export</span> <span class="kd">class</span> <span class="nx">Doctor</span> <span class="kd">extends</span> <span class="nx">Entity</span> <span class="p">{</span>
+  <span class="c1">// constructor, properties, etc.</span>
+  <span class="p">@</span><span class="nd">hasMany</span><span class="p">(()</span> <span class="o">=&gt;</span> <span class="nx">Patient</span><span class="p">,</span> <span class="p">{</span><span class="nx">_relationMetadata_</span><span class="p">},</span> <span class="p">{</span><span class="na">name</span><span class="p">:</span> <span class="dl">'</span><span class="s1">my_patients</span><span class="dl">'</span><span class="p">})</span>
+  <span class="nx">patients</span><span class="p">:</span> <span class="nx">Patient</span><span class="p">[];</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p><em>Notice: the <code class="language-plaintext highlighter-rouge">name</code> field in the third parameter is not part of the relation
+metadata. It’s part of property definition.</em></p>
+
+<h2 id="configuring-a-hasmanythrough-relation">Configuring a hasManyThrough relation</h2>
+
+<p>The configuration and resolution of a <code class="language-plaintext highlighter-rouge">hasManyThrough</code> relation takes place at
+the repository level. Once the relation is defined on the source model, then
+there are a couple of steps involved to configure it and use it. On the source
+repository, the following are required:</p>
+
+<ul>
+  <li>In the constructor of your source repository class, use
+<a href="/doc/en/lb4/Dependency-injection.html">Dependency Injection</a> to receive getter functions
+for obtaining an instance of the target repository and through repository.</li>
+  <li>Declare a property with the factory function type
+<code class="language-plaintext highlighter-rouge">HasManyThroughRepositoryFactory&lt;targetModel, typeof targetModel.prototype.id, throughModel, typeof sourceModel.prototype.id&gt;</code>
+on the source repository class.</li>
+  <li>call the <code class="language-plaintext highlighter-rouge">createHasManyThroughRepositoryFactoryFor</code> function in the
+constructor of the source repository class with the relation name (decorated
+relation property on the source model), target repository getter, and through
+repository getter.</li>
+</ul>
+
+<p>The following code snippet shows how it would look like:</p>
+
+<div id="/src/repositories/doctor.repository.ts" class="code-caption">
+  <p>/src/repositories/doctor.repository.ts</p>
+</div>
+
+<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="p">{</span><span class="nx">Patient</span><span class="p">,</span> <span class="nx">Doctor</span><span class="p">,</span> <span class="nx">DoctorRelations</span><span class="p">,</span> <span class="nx">Appointment</span><span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">../models</span><span class="dl">'</span><span class="p">;</span>
+<span class="k">import</span> <span class="p">{</span><span class="nx">PatientRepository</span><span class="p">,</span> <span class="nx">AppointmentRepository</span><span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">../repositories</span><span class="dl">'</span><span class="p">;</span>
+<span class="k">import</span> <span class="p">{</span>
+  <span class="nx">DefaultCrudRepository</span><span class="p">,</span>
+  <span class="nx">juggler</span><span class="p">,</span>
+  <span class="nx">HasManyThroughRepositoryFactory</span><span class="p">,</span>
+  <span class="nx">repository</span><span class="p">,</span>
+<span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">@loopback/repository</span><span class="dl">'</span><span class="p">;</span>
+<span class="k">import</span> <span class="p">{</span><span class="nx">inject</span><span class="p">,</span> <span class="nx">Getter</span><span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">@loopback/core</span><span class="dl">'</span><span class="p">;</span>
+
+<span class="k">export</span> <span class="kd">class</span> <span class="nx">DoctorRepository</span> <span class="kd">extends</span> <span class="nx">DefaultCrudRepository</span><span class="o">&lt;</span>
+  <span class="nx">Doctor</span><span class="p">,</span>
+  <span class="k">typeof</span> <span class="nx">Doctor</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">id</span><span class="p">,</span>
+  <span class="nx">DoctorRelations</span>
+<span class="o">&gt;</span> <span class="p">{</span>
+  <span class="k">public</span> <span class="k">readonly</span> <span class="na">patients</span><span class="p">:</span> <span class="nx">HasManyThroughRepositoryFactory</span><span class="o">&lt;</span>
+    <span class="nx">Patient</span><span class="p">,</span>
+    <span class="k">typeof</span> <span class="nx">Patient</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">pid</span><span class="p">,</span>
+    <span class="nx">Appointment</span><span class="p">,</span>
+    <span class="k">typeof</span> <span class="nx">Doctor</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">id</span>
+  <span class="o">&gt;</span><span class="p">;</span>
+  <span class="kd">constructor</span><span class="p">(</span>
+    <span class="p">@</span><span class="nd">inject</span><span class="p">(</span><span class="dl">'</span><span class="s1">datasources.db</span><span class="dl">'</span><span class="p">)</span> <span class="k">protected</span> <span class="na">db</span><span class="p">:</span> <span class="nx">juggler</span><span class="p">.</span><span class="nx">DataSource</span><span class="p">,</span>
+    <span class="p">@</span><span class="nd">repository</span><span class="p">.</span><span class="nx">getter</span><span class="p">(</span><span class="dl">'</span><span class="s1">PatientRepository</span><span class="dl">'</span><span class="p">)</span>
+    <span class="na">patientRepositoryGetter</span><span class="p">:</span> <span class="nx">Getter</span><span class="o">&lt;</span><span class="nx">PatientRepository</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="p">@</span><span class="nd">repository</span><span class="p">.</span><span class="nx">getter</span><span class="p">(</span><span class="dl">'</span><span class="s1">AppointmentRepository</span><span class="dl">'</span><span class="p">)</span>
+    <span class="na">appointmentRepositoryGetter</span><span class="p">:</span> <span class="nx">Getter</span><span class="o">&lt;</span><span class="nx">AppointmentRepository</span><span class="o">&gt;</span><span class="p">,</span>
+  <span class="p">)</span> <span class="p">{</span>
+    <span class="k">super</span><span class="p">(</span><span class="nx">Doctor</span><span class="p">,</span> <span class="nx">db</span><span class="p">);</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">patients</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">createHasManyThroughRepositoryFactoryFor</span><span class="p">(</span>
+      <span class="dl">'</span><span class="s1">patients</span><span class="dl">'</span><span class="p">,</span>
+      <span class="nx">patientRepositoryGetter</span><span class="p">,</span>
+      <span class="nx">appointmentRepositoryGetter</span><span class="p">,</span>
+    <span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="available-crud-apis">Available CRUD APIs</h3>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">create</code> for creating a target model instance belonging to source model
+instance
+(<a href="https://loopback.io/doc/en/lb4/apidocs.repository.defaulthasmanythroughrepository.create.html">API Docs</a>)</li>
+  <li><code class="language-plaintext highlighter-rouge">find</code> finding target model instance(s) belonging to source model instance
+(<a href="https://loopback.io/doc/en/lb4/apidocs.repository.defaulthasmanythroughrepository.find.html">API Docs</a>)</li>
+  <li><code class="language-plaintext highlighter-rouge">delete</code> for deleting target model instance(s) belonging to source model
+instance
+(<a href="https://loopback.io/doc/en/lb4/apidocs.repository.defaulthasmanythroughrepository.delete.html">API Docs</a>)</li>
+  <li><code class="language-plaintext highlighter-rouge">patch</code> for patching target model instance(s) belonging to source model
+instance
+(<a href="https://loopback.io/doc/en/lb4/apidocs.repository.defaulthasmanythroughrepository.patch.html">API Docs</a>)</li>
+  <li><code class="language-plaintext highlighter-rouge">link</code> for linking a target model instance to source model instance
+(<a href="https://loopback.io/doc/en/lb4/apidocs.repository.defaulthasmanythroughrepository.link.html">API Docs</a>)</li>
+  <li><code class="language-plaintext highlighter-rouge">unlink</code> for unlinking a target model instance from source model instance
+(<a href="https://loopback.io/doc/en/lb4/apidocs.repository.defaulthasmanythroughrepository.unlink.html">API Docs</a>)</li>
+</ul>
+
+<p>Here are examples of applying CRUD APIs with constrained target repository
+factory <code class="language-plaintext highlighter-rouge">patients</code> for instances of <code class="language-plaintext highlighter-rouge">doctorRepository</code>:</p>
+
+<ul>
+  <li>creation:</li>
+</ul>
+
+<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">myDoctor</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">doctorRepository</span><span class="p">.</span><span class="nx">create</span><span class="p">({</span><span class="na">id</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="na">name</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Rachael</span><span class="dl">'</span><span class="p">});</span>
+<span class="kd">const</span> <span class="nx">patientData</span> <span class="o">=</span> <span class="p">{</span><span class="na">pid</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="na">name</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Batty</span><span class="dl">'</span><span class="p">};</span>
+<span class="c1">// create the related patient</span>
+<span class="nx">doctorRepository</span><span class="p">.</span><span class="nx">patients</span><span class="p">(</span><span class="nx">myDoctor</span><span class="p">.</span><span class="nx">id</span><span class="p">).</span><span class="nx">create</span><span class="p">(</span><span class="nx">patientData</span><span class="p">);</span>
+</code></pre></div></div>
+
+<div class="alert alert-danger" role="alert">
+  <p><i class="fa fa-exclamation-circle"></i>
+  <b>Warning:</b> <code class="language-plaintext highlighter-rouge">sourceRepository.create()</code> expects a <code class="language-plaintext highlighter-rouge">Source</code> model only, navigational properties are not expected to be included in the target data. For instance, the following request will be rejected:
+<code class="language-plaintext highlighter-rouge">doctorRepository.create({</code>
+`  id: 1,<code class="language-plaintext highlighter-rouge">
+</code>  name:’invalid request’,<code class="language-plaintext highlighter-rouge">
+</code>  patient:[{pid: 1, name: ‘will-be-rejected’}]<code class="language-plaintext highlighter-rouge">
+</code>})`</p>
+</div>
+
+<ul>
+  <li>deletion: <code class="language-plaintext highlighter-rouge">doctorRepository.patients(myDoctor.id).delete()</code> deletes all
+patients relate to <code class="language-plaintext highlighter-rouge">myDoctor</code>.</li>
+  <li>link: <code class="language-plaintext highlighter-rouge">doctorRepository.patients(myDoctor.id).link(anotherPatient.pid)</code> links
+<code class="language-plaintext highlighter-rouge">anotherPatient</code> to <code class="language-plaintext highlighter-rouge">myDoctor</code>.</li>
+</ul>
+
+<h3 id="self-through">Self through</h3>
+
+<p>In some cases, you may want to define a relationship from a model to itself. For
+example, consider a social media application where users can follow other users.
+In this case, a user may follow many other users and may be followed by many
+other users. The setup is mostly the same. Please make sure to define your own
+two foreign key names on the through model to avoid duplicate name errors.</p>
+
+<p>The code below shows how this might be defined in models, along with
+corresponding repository setups:</p>
+
+<div id="/src/models/user.model.ts" class="code-caption">
+  <p>/src/models/user.model.ts</p>
+</div>
+
+<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// import statements</span>
+<span class="kd">class</span> <span class="nx">User</span> <span class="kd">extends</span> <span class="nx">Entity</span> <span class="p">{</span>
+  <span class="p">@</span><span class="nd">property</span><span class="p">(</span>
+    <span class="kd">type</span><span class="p">:</span> <span class="dl">'</span><span class="s1">number</span><span class="dl">'</span><span class="p">,</span>
+    <span class="nx">id</span><span class="p">:</span> <span class="kc">true</span>
+  <span class="p">)</span>
+  <span class="nx">uid</span><span class="p">:</span> <span class="kr">number</span><span class="p">;</span>
+
+  <span class="p">@</span><span class="nd">property</span><span class="p">(</span>
+    <span class="kd">type</span><span class="p">:</span> <span class="dl">'</span><span class="s1">string</span><span class="dl">'</span><span class="p">,</span>
+  <span class="p">)</span>
+  <span class="nx">name</span><span class="p">:</span> <span class="kr">string</span><span class="p">;</span>
+
+  <span class="p">@</span><span class="nd">hasMany</span><span class="p">(()</span> <span class="o">=&gt;</span> <span class="nx">User</span><span class="p">,</span> <span class="p">{</span>
+    <span class="na">through</span><span class="p">:</span> <span class="p">{</span>
+      <span class="na">model</span><span class="p">:</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="nx">UserLink</span><span class="p">,</span>
+      <span class="na">keyFrom</span><span class="p">:</span> <span class="dl">'</span><span class="s1">followerId</span><span class="dl">'</span><span class="p">,</span>
+      <span class="na">keyTo</span><span class="p">:</span> <span class="dl">'</span><span class="s1">followeeId</span><span class="dl">'</span><span class="p">,</span>
+    <span class="p">},</span>
+  <span class="p">})</span>
+  <span class="nx">users</span><span class="p">:</span> <span class="nx">User</span><span class="p">[];</span>
+  <span class="c1">// constructor, properties, etc.</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<div id="/src/models/userLink.model.ts" class="code-caption">
+  <p>/src/models/userLink.model.ts</p>
+</div>
+
+<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// imports</span>
+<span class="k">export</span> <span class="kd">class</span> <span class="nx">UserLink</span> <span class="kd">extends</span> <span class="nx">Entity</span> <span class="p">{</span>
+  <span class="c1">// id property and others</span>
+
+  <span class="p">@</span><span class="nd">property</span><span class="p">({</span>
+    <span class="na">type</span><span class="p">:</span> <span class="dl">'</span><span class="s1">number</span><span class="dl">'</span><span class="p">,</span>
+  <span class="p">})</span>
+  <span class="nx">followerId</span><span class="p">?:</span> <span class="kr">number</span><span class="p">;</span>
+
+  <span class="p">@</span><span class="nd">property</span><span class="p">({</span>
+    <span class="na">type</span><span class="p">:</span> <span class="dl">'</span><span class="s1">number</span><span class="dl">'</span><span class="p">,</span>
+  <span class="p">})</span>
+  <span class="nx">followeeId</span><span class="p">?:</span> <span class="kr">number</span><span class="p">;</span>
+  <span class="c1">// ...</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<div id="/src/repositories/user.repository.ts" class="code-caption">
+  <p>/src/repositories/user.repository.ts</p>
+</div>
+
+<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// imports</span>
+<span class="k">export</span> <span class="kd">class</span> <span class="nx">UserRepository</span> <span class="kd">extends</span> <span class="nx">DefaultCrudRepository</span><span class="o">&lt;</span>
+  <span class="nx">User</span><span class="p">,</span>
+  <span class="k">typeof</span> <span class="nx">User</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">id</span><span class="p">,</span>
+  <span class="nx">UserRelations</span>
+<span class="o">&gt;</span> <span class="p">{</span>
+  <span class="k">public</span> <span class="k">readonly</span> <span class="na">users</span><span class="p">:</span> <span class="nx">HasManyThroughRepositoryFactory</span><span class="o">&lt;</span>
+    <span class="nx">User</span><span class="p">,</span>
+    <span class="k">typeof</span> <span class="nx">User</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">pid</span><span class="p">,</span>
+    <span class="nx">UserLink</span><span class="p">,</span>
+    <span class="k">typeof</span> <span class="nx">User</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">id</span>
+  <span class="o">&gt;</span><span class="p">;</span>
+  <span class="kd">constructor</span><span class="p">(</span>
+    <span class="p">@</span><span class="nd">inject</span><span class="p">(</span><span class="dl">'</span><span class="s1">datasources.db</span><span class="dl">'</span><span class="p">)</span> <span class="k">protected</span> <span class="na">db</span><span class="p">:</span> <span class="nx">juggler</span><span class="p">.</span><span class="nx">DataSource</span><span class="p">,</span>
+    <span class="p">@</span><span class="nd">repository</span><span class="p">.</span><span class="nx">getter</span><span class="p">(</span><span class="dl">'</span><span class="s1">UserLinkRepository</span><span class="dl">'</span><span class="p">)</span>
+    <span class="k">protected</span> <span class="na">userLinkRepositoryGetter</span><span class="p">:</span> <span class="nx">Getter</span><span class="o">&lt;</span><span class="nx">UserLinkRepository</span><span class="o">&gt;</span><span class="p">,</span>
+  <span class="p">)</span> <span class="p">{</span>
+    <span class="k">super</span><span class="p">(</span><span class="nx">User</span><span class="p">,</span> <span class="nx">dataSource</span><span class="p">);</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">users</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">createHasManyThroughRepositoryFactoryFor</span><span class="p">(</span>
+      <span class="dl">'</span><span class="s1">users</span><span class="dl">'</span><span class="p">,</span>
+      <span class="nx">Getter</span><span class="p">.</span><span class="nx">fromValue</span><span class="p">(</span><span class="k">this</span><span class="p">),</span> <span class="c1">// getter for self repository</span>
+      <span class="nx">userLinkRepositoryGetter</span><span class="p">,</span>
+    <span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="querying-related-models">Querying related models</h2>
+
+<p>In contrast with LB3, LB4 creates a different inclusion resolver for each
+relation type to query related models. Each <strong>relation</strong> has its own inclusion
+resolver <code class="language-plaintext highlighter-rouge">inclusionResolver</code>. And each <strong>repository</strong> has a built-in property
+<code class="language-plaintext highlighter-rouge">inclusionResolvers</code> as a registry for its inclusionResolvers.</p>
+
+<p>A <code class="language-plaintext highlighter-rouge">hasManyThrough</code> relation has an <code class="language-plaintext highlighter-rouge">inclusionResolver</code> function as a property.
+It fetches target models for the given list of source model instances via a
+through model.</p>
+
+<p>Using the models from above, a <code class="language-plaintext highlighter-rouge">Doctor</code> has many <code class="language-plaintext highlighter-rouge">Patient</code>s through
+<code class="language-plaintext highlighter-rouge">Appointments</code>.</p>
+
+<p>After setting up the relation in the repository class, the inclusion resolver
+allows users to retrieve all doctors along with their related patients through
+the following code at the repository level:</p>
+
+<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">doctorRepository</span><span class="p">.</span><span class="nx">find</span><span class="p">({</span><span class="na">include</span><span class="p">:</span> <span class="p">[</span><span class="dl">'</span><span class="s1">patients</span><span class="dl">'</span><span class="p">]});</span>
+</code></pre></div></div>
+
+<p>or use APIs with controllers:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET http://localhost:3000/doctors?filter[include][]=patients
+</code></pre></div></div>
+
+<h3 id="enabledisable-the-inclusion-resolvers">Enable/disable the inclusion resolvers</h3>
+
+<ul>
+  <li>Base repository classes have a public property <code class="language-plaintext highlighter-rouge">inclusionResolvers</code>, which
+maintains a map containing inclusion resolvers for each relation.</li>
+  <li>The <code class="language-plaintext highlighter-rouge">inclusionResolver</code> of a certain relation is built when the source
+repository class calls the <code class="language-plaintext highlighter-rouge">createHasManyThroughRepositoryFactoryFor</code> function
+in the constructor with the relation name.</li>
+  <li>Call <code class="language-plaintext highlighter-rouge">registerInclusionResolver</code> to add the resolver of that relation to the
+<code class="language-plaintext highlighter-rouge">inclusionResolvers</code> map. (As we realized in LB3, not all relations are
+allowed to be traversed. Users can decide to which resolvers can be added.)</li>
+</ul>
+
+<p>The following code snippet shows how to register the inclusion resolver for the
+has many through relation ‘patients’:</p>
+
+<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">export</span> <span class="kd">class</span> <span class="nx">DoctorRepository</span> <span class="kd">extends</span> <span class="nx">DefaultCrudRepository</span><span class="o">&lt;</span>
+  <span class="nx">Doctor</span><span class="p">,</span>
+  <span class="k">typeof</span> <span class="nx">Doctor</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">id</span><span class="p">,</span>
+  <span class="nx">DoctorRelations</span>
+<span class="o">&gt;</span> <span class="p">{</span>
+  <span class="k">public</span> <span class="k">readonly</span> <span class="na">patients</span><span class="p">:</span> <span class="nx">HasManyThroughRepositoryFactory</span><span class="o">&lt;</span>
+    <span class="nx">Patient</span><span class="p">,</span>
+    <span class="k">typeof</span> <span class="nx">Patient</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">pid</span><span class="p">,</span>
+    <span class="nx">Appointment</span><span class="p">,</span>
+    <span class="k">typeof</span> <span class="nx">Doctor</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">id</span>
+  <span class="o">&gt;</span><span class="p">;</span>
+  <span class="kd">constructor</span><span class="p">(</span>
+    <span class="p">@</span><span class="nd">inject</span><span class="p">(</span><span class="dl">'</span><span class="s1">datasources.db</span><span class="dl">'</span><span class="p">)</span> <span class="k">protected</span> <span class="na">db</span><span class="p">:</span> <span class="nx">juggler</span><span class="p">.</span><span class="nx">DataSource</span><span class="p">,</span>
+    <span class="p">@</span><span class="nd">repository</span><span class="p">.</span><span class="nx">getter</span><span class="p">(</span><span class="dl">'</span><span class="s1">PatientRepository</span><span class="dl">'</span><span class="p">)</span>
+    <span class="na">patientRepositoryGetter</span><span class="p">:</span> <span class="nx">Getter</span><span class="o">&lt;</span><span class="nx">PatientRepository</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="p">@</span><span class="nd">repository</span><span class="p">.</span><span class="nx">getter</span><span class="p">(</span><span class="dl">'</span><span class="s1">AppointmentRepository</span><span class="dl">'</span><span class="p">)</span>
+    <span class="na">appointmentRepositoryGetter</span><span class="p">:</span> <span class="nx">Getter</span><span class="o">&lt;</span><span class="nx">AppointmentRepository</span><span class="o">&gt;</span><span class="p">,</span>
+  <span class="p">)</span> <span class="p">{</span>
+    <span class="k">super</span><span class="p">(</span><span class="nx">Doctor</span><span class="p">,</span> <span class="nx">db</span><span class="p">);</span>
+    <span class="c1">// we already have this line to create a HasManyThroughRepository factory</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">patients</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">createHasManyThroughRepositoryFactoryFor</span><span class="p">(</span>
+      <span class="dl">'</span><span class="s1">patients</span><span class="dl">'</span><span class="p">,</span>
+      <span class="nx">patientRepositoryGetter</span><span class="p">,</span>
+      <span class="nx">appointmentRepositoryGetter</span><span class="p">,</span>
+    <span class="p">);</span>
+
+    <span class="c1">// add this line to register inclusion resolver</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">registerInclusionResolver</span><span class="p">(</span><span class="dl">'</span><span class="s1">patients</span><span class="dl">'</span><span class="p">,</span> <span class="k">this</span><span class="p">.</span><span class="nx">patients</span><span class="p">.</span><span class="nx">inclusionResolver</span><span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<ul>
+  <li>
+    <p>We can simply include the relation in queries via <code class="language-plaintext highlighter-rouge">find()</code>, <code class="language-plaintext highlighter-rouge">findOne()</code>, and
+<code class="language-plaintext highlighter-rouge">findById()</code> methods. For example, these queries return all doctors with their
+patients:</p>
+
+    <p>if you process data at the repository level:</p>
+
+    <div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">doctorRepository</span><span class="p">.</span><span class="nx">find</span><span class="p">({</span><span class="na">include</span><span class="p">:</span> <span class="p">[</span><span class="dl">'</span><span class="s1">patients</span><span class="dl">'</span><span class="p">]});</span>
+</code></pre></div>    </div>
+
+    <p>this is the same as the url:</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET http://localhost:3000/doctors?filter[include][]=patients
+</code></pre></div>    </div>
+
+    <p>which returns:</p>
+
+    <div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">[</span>
+  <span class="p">{</span>
+    <span class="na">id</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="na">name</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Doctor Mario</span><span class="dl">'</span><span class="p">,</span>
+    <span class="na">patients</span><span class="p">:</span> <span class="p">[{</span><span class="na">name</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Luigi</span><span class="dl">'</span><span class="p">},</span> <span class="p">{</span><span class="na">name</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Peach</span><span class="dl">'</span><span class="p">}],</span>
+  <span class="p">},</span>
+  <span class="p">{</span>
+    <span class="na">id</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+    <span class="na">name</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Doctor Link</span><span class="dl">'</span><span class="p">,</span>
+    <span class="na">patients</span><span class="p">:</span> <span class="p">[{</span><span class="na">name</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Zelda</span><span class="dl">'</span><span class="p">}],</span>
+  <span class="p">},</span>
+<span class="p">];</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>You can delete a relation from <code class="language-plaintext highlighter-rouge">inclusionResolvers</code> to disable the inclusion
+for a certain relation. e.g
+<code class="language-plaintext highlighter-rouge">doctorRepository.inclusionResolvers.delete('patients')</code></p>
+  </li>
+</ul>
+
+<h2 id="using-hasmanythrough-constrained-repository-in-a-controller">Using hasManyThrough constrained repository in a controller</h2>
+
+<p>Once the hasManyThrough relation has been defined and configured, controller
+methods can call the underlying constrained repository CRUD APIs and expose them
+as routes once decorated with
+<a href="/doc/en/lb4/Route.html#using-route-decorators-with-controller-methods">Route decorators</a>. It
+will require the value of the foreign key and, depending on the request method,
+a value for the target model instance as demonstrated below.</p>
+
+<div id="src/controllers/doctor-patient.controller.ts" class="code-caption">
+  <p>src/controllers/doctor-patient.controller.ts</p>
+</div>
+
+<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="p">{</span><span class="nx">post</span><span class="p">,</span> <span class="nx">param</span><span class="p">,</span> <span class="nx">requestBody</span><span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">@loopback/rest</span><span class="dl">'</span><span class="p">;</span>
+<span class="k">import</span> <span class="p">{</span><span class="nx">DoctorRepository</span><span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">../repositories/</span><span class="dl">'</span><span class="p">;</span>
+<span class="k">import</span> <span class="p">{</span><span class="nx">Doctor</span><span class="p">,</span> <span class="nx">Patient</span><span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">../models/</span><span class="dl">'</span><span class="p">;</span>
+<span class="k">import</span> <span class="p">{</span><span class="nx">repository</span><span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">@loopback/repository</span><span class="dl">'</span><span class="p">;</span>
+
+<span class="k">export</span> <span class="kd">class</span> <span class="nx">DoctorPatientController</span> <span class="p">{</span>
+  <span class="kd">constructor</span><span class="p">(</span>
+    <span class="p">@</span><span class="nd">repository</span><span class="p">(</span><span class="nx">DoctorRepository</span><span class="p">)</span>
+    <span class="k">protected</span> <span class="nx">doctorRepository</span><span class="p">:</span> <span class="nx">DoctorRepository</span><span class="p">,</span>
+  <span class="p">)</span> <span class="p">{}</span>
+
+  <span class="p">@</span><span class="nd">post</span><span class="p">(</span><span class="dl">'</span><span class="s1">/doctors/{id}/patient</span><span class="dl">'</span><span class="p">)</span>
+  <span class="k">async</span> <span class="nx">createPatient</span><span class="p">(</span>
+    <span class="p">@</span><span class="nd">param</span><span class="p">.</span><span class="nx">path</span><span class="p">.</span><span class="kr">number</span><span class="p">(</span><span class="dl">'</span><span class="s1">id</span><span class="dl">'</span><span class="p">)</span> <span class="nx">id</span><span class="p">:</span> <span class="k">typeof</span> <span class="nx">Doctor</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">id</span><span class="p">,</span>
+    <span class="p">@</span><span class="nd">requestBody</span><span class="p">()</span> <span class="nx">patientData</span><span class="p">:</span> <span class="nx">Patient</span><span class="p">,</span>
+  <span class="p">):</span> <span class="nb">Promise</span><span class="o">&lt;</span><span class="nx">Patient</span><span class="o">&gt;</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="nx">doctorRepository</span><span class="p">.</span><span class="nx">patients</span><span class="p">(</span><span class="nx">id</span><span class="p">).</span><span class="nx">create</span><span class="p">(</span><span class="nx">patientData</span><span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>We recommend to create a new controller for each relation in LoopBack 4. First,
+it keeps controller classes smaller. Second, it creates a logical separation of
+ordinary repositories and relational repositories and thus the controllers which
+use them. Therefore, as shown above, don’t add patient-related methods to
+<code class="language-plaintext highlighter-rouge">DoctorController</code>, but instead create a new <code class="language-plaintext highlighter-rouge">DoctorPatientController</code> class for
+them.</p>
+
+<div class="alert alert-info" role="alert">
+  <p><i class="fa fa-info-circle"></i>
+<b>Note:</b></p>
+
+  <p>The type of <code class="language-plaintext highlighter-rouge">patientData</code> above will possibly change to <code class="language-plaintext highlighter-rouge">Partial&lt;Patient&gt;</code> to exclude
+certain properties from the JSON/OpenAPI spec schema built for the <code class="language-plaintext highlighter-rouge">requestBody</code>
+payload. See its <a href="https://github.com/strongloop/loopback-next/issues/1179">GitHub
+issue</a> to follow the discussion.</p>
+
+</div>
+
+<h2 id="features-on-the-way">Features on the way</h2>
+
+<p>As an experimental feature, there are some functionalities of <code class="language-plaintext highlighter-rouge">hasManyThrough</code>
+that are not yet being implemented:</p>
+
+<ul>
+  <li>customize <code class="language-plaintext highlighter-rouge">keyFrom</code> and/or <code class="language-plaintext highlighter-rouge">keyTo</code> for hasManyThrough</li>
+</ul>
+
+
+    <div class="tags">
+      
+    </div>
+</div>
+
+<hr class="shaded"/>
+
+<footer id="container">
+            <div class="row">
+                <div class="col-md-6 footer-left">
+               &copy;2021 IBM / StrongLoop. All rights reserved. <br />
+ Site last generated: Mar 22, 2021
+              </div>
+              <div class="col-md-6 footer-right">
+                <p><img src="https://loopback.io/images/company_logo.png" alt="Company logo"/></p>
+              </div>
+            </div>
+</footer>
+
+
+        </div>
+        <!-- /.row -->
+</div>
+<!-- /.container -->
+    </div>
+</body>
+
+</html>

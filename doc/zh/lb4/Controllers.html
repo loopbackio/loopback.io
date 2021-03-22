@@ -1,0 +1,2291 @@
+<!DOCTYPE html>
+<head>
+    
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="keywords" content=" LoopBack 4.0, LoopBack 4">
+  <title>控制器（Controllers） | LoopBack Documentation</title>
+  <link rel="stylesheet" href="/css/syntax.css">
+
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/modern-business.css">
+    <link rel="stylesheet" href="/css/lavish-bootstrap.css">
+    <link rel="stylesheet" href="/css/customstyles.css">
+    <link rel="stylesheet" href="/css/theme-v4.css">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-150726441-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-150726441-2');
+</script>
+
+
+    <!-- github star button -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.3.0/anchor.min.js"></script>
+    <script src="/js/toc.js"></script>
+    <script src="/js/customscripts.js"></script>
+
+    <link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    
+
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-lg navbar-brand no_icon" href="/doc/index.html">
+              <img class="no_icon" style="width:147px;" src="/images/branding/logo/white/loopback.svg">&nbsp;<span class="projectTitle"></span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- entries without drop-downs appear here -->
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">API Docs<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        <!-- page.url is /doc/zh/lb4/Controllers.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://loopback.io/doc/en/lb4/apidocs.index.html" target="_blank">LoopBack 4</a></li>
+                          
+                        
+                        <!-- page.url is /doc/zh/lb4/Controllers.html .... folderitem.url is  -->
+                          
+                            <li><a href="http://apidocs.loopback.io" target="_blank">LoopBack 3.x</a></li>
+                          
+                        
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">View<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        <!-- page.url is /doc/zh/lb4/Controllers.html .... folderitem.url is / -->
+                          
+                            <li><a href="/">LoopBack Overview</a></li>
+                          
+                        
+                        <!-- page.url is /doc/zh/lb4/Controllers.html .... folderitem.url is /doc/en/lb4/ -->
+                          
+                            <li><a href="/doc/en/lb4/">LoopBack 4</a></li>
+                          
+                        
+                        <!-- page.url is /doc/zh/lb4/Controllers.html .... folderitem.url is /doc/en/lb3/ -->
+                          
+                            <li><a href="/doc/en/lb3/">LoopBack 3.x</a></li>
+                          
+                        
+                        <!-- page.url is /doc/zh/lb4/Controllers.html .... folderitem.url is /doc/en/lb2/ -->
+                          
+                            <li><a href="/doc/en/lb2/">LoopBack 2.x</a></li>
+                          
+                        
+                        <!-- page.url is /doc/zh/lb4/Controllers.html .... folderitem.url is /doc/en/community/ -->
+                          
+                            <li><a href="/doc/en/community/">Community projects</a></li>
+                          
+                        
+                        <!-- page.url is /doc/zh/lb4/Controllers.html .... folderitem.url is /doc/en/contrib/ -->
+                          
+                            <li><a href="/doc/en/contrib/">Contributing to LoopBack</a></li>
+                          
+                        
+                        <!-- page.url is /doc/zh/lb4/Controllers.html .... folderitem.url is /doc/en/sec/ -->
+                          
+                            <li><a href="/doc/en/sec/">Security advisories</a></li>
+                          
+                        
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Resources<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        <!-- page.url is /doc/zh/lb4/Controllers.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://github.com/strongloop/loopback.io" target="_blank">Docs Github Repo</a></li>
+                          
+                        
+                        <!-- page.url is /doc/zh/lb4/Controllers.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://groups.google.com/forum/#!forum/loopbackjs-announcements" target="_blank">Announcements Mailing List</a></li>
+                          
+                        
+                        <!-- page.url is /doc/zh/lb4/Controllers.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://groups.google.com/forum/#!forum/loopbackjs" target="_blank">Developer Forum</a></li>
+                          
+                        
+                        <!-- page.url is /doc/zh/lb4/Controllers.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://join.slack.com/t/loopbackio/shared_invite/zt-8lbow73r-SKAKz61Vdao~_rGf91pcsw" target="_blank">LoopBack on Slack</a></li>
+                          
+                        
+                        <!-- page.url is /doc/zh/lb4/Controllers.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://stackoverflow.com/questions/tagged/strongloop+or+loopback4+or+loopbackjs" target="_blank">LoopBack on Stack Overflow</a></li>
+                          
+                        
+                        <!-- page.url is /doc/zh/lb4/Controllers.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://strongloop.com/strongblog/tag_LoopBack.html" target="_blank">StrongLoop Blog - LoopBack</a></li>
+                          
+                        
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Translations<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        <!-- page.url is /doc/zh/lb4/Controllers.html .... folderitem.url is /doc/es/lb2/ -->
+                          
+                            <li><a href="/doc/es/lb2/">Español (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/zh/lb4/Controllers.html .... folderitem.url is /doc/es/lb4/ -->
+                          
+                            <li><a href="/doc/es/lb4/">Español (v4)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/zh/lb4/Controllers.html .... folderitem.url is /doc/fr/lb2/ -->
+                          
+                            <li><a href="/doc/fr/lb2/">Français (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/zh/lb4/Controllers.html .... folderitem.url is /doc/fr/lb4/ -->
+                          
+                            <li><a href="/doc/fr/lb4/">Français (v4)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/zh/lb4/Controllers.html .... folderitem.url is /doc/ko/lb2/ -->
+                          
+                            <li><a href="/doc/ko/lb2/">한국어 (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/zh/lb4/Controllers.html .... folderitem.url is /doc/ko/lb3/ -->
+                          
+                            <li><a href="/doc/ko/lb3/">한국어 (v3)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/zh/lb4/Controllers.html .... folderitem.url is /doc/pt-br/lb2/ -->
+                          
+                            <li><a href="/doc/pt-br/lb2/">Português (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/zh/lb4/Controllers.html .... folderitem.url is /doc/pt-br/lb4/ -->
+                          
+                            <li><a href="/doc/pt-br/lb4/">Português (v4)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/zh/lb4/Controllers.html .... folderitem.url is /doc/ja/lb2/ -->
+                          
+                            <li><a href="/doc/ja/lb2/">日本語 (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/zh/lb4/Controllers.html .... folderitem.url is /doc/ja/lb3/ -->
+                          
+                            <li><a href="/doc/ja/lb3/">日本語 (v3)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/zh/lb4/Controllers.html .... folderitem.url is /doc/ja/lb4/ -->
+                          
+                            <li><a href="/doc/ja/lb4/">日本語 (v4)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/zh/lb4/Controllers.html .... folderitem.url is /doc/ru/lb2/ -->
+                          
+                            <li><a href="/doc/ru/lb2/">Pусский (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/zh/lb4/Controllers.html .... folderitem.url is /doc/zh/lb2/ -->
+                          
+                            <li><a href="/doc/zh/lb2/">中文 (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/zh/lb4/Controllers.html .... folderitem.url is /doc/zh/lb4/ -->
+                          
+                            <li class="dropdownActive"><a href="/doc/zh/lb4/">中文 (v4)</a></li>
+                          
+                        
+                    </ul>
+                </li>
+                
+                
+                
+                <li>
+                    <form id="search" name="search" class="input-group lb-search" action="/search" method="GET">
+                        <input type="text" class="form-control search-bar" placeholder="Search (powered by Watson)" name="q">
+                        
+                          <input type="hidden" name="sidebar" value="zh_lb4_sidebar">
+                        
+                        <div class="input-group-btn">
+                            <button type="submit" class="btn btn-default" aria-label="search">
+                              <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                            </button>
+                        </div>
+                      </form>
+                </li>
+            </ul>
+        </div>
+      </div>
+</nav>
+
+<!-- Page Content -->
+<div class="container">
+    <!-- Content Row -->
+    <div class="row">
+        <!-- Sidebar Column -->
+        <nav class="col-md-3 sidebar-col">
+          
+
+
+
+
+
+
+
+
+
+
+
+<!-- NOTE: sidebar = site.data.sidebars.mydoc_sidebar.entries -->
+<div class="sidebarTitle"><a href="/doc/zh/lb4/index.html">LoopBack 4</a></div>
+<ul id="mysidebar" class="nav-list">
+  
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="/doc/zh/lb4/index.html">总览</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="/doc/zh/lb4/Getting-started.html">入门</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="/doc/zh/lb4/Concepts.html">关键功能</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="/doc/zh/lb4/Application.html">应用（Application）</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="/doc/zh/lb4/Server.html">服务器（Server）</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  active">
+    
+    <a class="page-link" rel="nofollow" href="/doc/zh/lb4/Controllers.html">控制器（Controllers）</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="/doc/zh/lb4/Model.html">数据模型（Models）</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="/doc/zh/lb4/Relations.html">关系（Relations）</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/HasMany-relation.html&title=HasMany（有很多）关系">HasMany（有很多）关系</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/BelongsTo-relation.html&title=BelongsTo（属于）关系">BelongsTo（属于）关系</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/hasOne-relation.html&title=HasOne（有一个）关系">HasOne（有一个）关系</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="/doc/zh/lb4/DataSources.html">数据源（DataSources）</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/Repositories.html&title=存储库（Repositories）">存储库（Repositories）</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/Using-database-transactions.html&title=数据库事务（Database Transactions）">数据库事务（Database Transactions）</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/Interceptors.html&title=拦截器（Interceptors）">拦截器（Interceptors）</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/Life-cycle.html&title=生命周期事件（Life cycle events）和观察器（Observers）">生命周期事件（Life cycle events）和观察器（Observers）</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/Routes.html&title=路由（Routes）">路由（Routes）</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/Sequence.html&title=时序（Sequence）">时序（Sequence）</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/Routing-requests.html&title=路由请求">路由请求</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/Parsing-requests.html&title=解析请求">解析请求</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/Decorators.html&title=修饰符（Decorators）">修饰符（Decorators）</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/Decorators_openapi.html&title=OpenAPI修饰符">OpenAPI修饰符</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/Decorators_inject.html&title=注入依赖（Dependency Injection）修饰符">注入依赖（Dependency Injection）修饰符</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/Decorators_authenticate.html&title=认证（Authentication）修饰符">认证（Authentication）修饰符</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/Decorators_repository.html&title=存储库（Repository）修饰符">存储库（Repository）修饰符</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/Error-handling.html&title=错误处理（Error handling）">错误处理（Error handling）</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/Usage-scenarios.html&title=使用场景">使用场景</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/Create-other-forms-of-apis.html&title=创建其他API表单">创建其他API表单</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/exposing-graphql-apis.html&title=暴露GraphQL API">暴露GraphQL API</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/Access-databases.html&title=访问数据库">访问数据库</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/Database-migrations.html&title=数据库迁移">数据库迁移</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/Calling-other-APIs-and-web-services.html&title=调用其他服务">调用其他服务</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/Integrate-with-infrastructures.html&title=集成基础服务">集成基础服务</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/Loopback-component-authentication.html&title=认证（Authentication）">认证（Authentication）</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/Loopback-component-authorization.html&title=授权（Authorization）">授权（Authorization）</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/Deployment.html&title=部署（Deployment）">部署（Deployment）</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/Deploying-to-IBM-Cloud.html&title=部署到IBM Cloud">部署到IBM Cloud</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/deploying_to_ibm_cloud_kubernetes.html&title=部署到IBM Cloud上的Kubernetes">部署到IBM Cloud上的Kubernetes</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/deploying-with-pm2-and-nginx.html&title=使用pm2和nginx部署">使用pm2和nginx部署</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/Serving-static-files.html&title=提供静态文件">提供静态文件</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/Behind-the-scene.html&title=场景后台">场景后台</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/Context.html&title=上下文（Context）">上下文（Context）</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="/doc/zh/lb4/Binding.html">绑定（Binding）</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/Dependency-injection.html&title=依赖注入（Dependency Injection）">依赖注入（Dependency Injection）</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/Reserved-binding-keys.html&title=保留绑定键">保留绑定键</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/Components.html&title=组件（Components）">组件（Components）</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/Booting-an-Application.html&title=启动应用">启动应用</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/Using-components.html&title=使用组件（Components）">使用组件（Components）</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/Self-hosted-rest-api-explorer.html&title=自托管的REST API Explorer">自托管的REST API Explorer</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/Loopback-component-authentication.html&title=认证（Authentication）">认证（Authentication）</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/Loopback-component-authorization.html&title=授权（Authorization）">授权（Authorization）</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/Boot-and-Mount-a-LoopBack-3-application.html&title=启动和挂载LoopBack 3应用">启动和挂载LoopBack 3应用</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/Extending-LoopBack-4.html&title=扩展LoopBack 4">扩展LoopBack 4</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/Creating-components.html&title=创建组件（Components）">创建组件（Components）</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/Creating-decorators.html&title=创建修饰符（Decorators）">创建修饰符（Decorators）</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/Creating-servers.html&title=创建服务器（Servers）">创建服务器（Servers）</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/Extension-point-and-extensions.html&title=扩展点（Extension point）和扩展(Extensions）">扩展点（Extension point）和扩展(Extensions）</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/Extending-request-body-parsing.html&title=扩展请求体分析（request body parsing）">扩展请求体分析（request body parsing）</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/Extension-life-cycle.html&title=扩展的生命周期">扩展的生命周期</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/Testing-your-extension.html&title=测试你的扩展">测试你的扩展</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/Crafting-LoopBack-4.html&title=LoopBack 4的创意">LoopBack 4的创意</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="/doc/zh/lb4/Tutorials.html">教程</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="/doc/zh/lb4/todo-tutorial.html">Todo教程</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="/doc/zh/lb4/todo-tutorial-scaffolding.html">创建你的应用脚手架</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="/doc/zh/lb4/todo-tutorial-model.html">添加Todo模型</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="/doc/zh/lb4/todo-tutorial-datasource.html">添加一个数据源（Datasource）</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="/doc/zh/lb4/todo-tutorial-repository.html">添加一个存储库（Repository）</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="/doc/zh/lb4/todo-tutorial-controller.html">添加一个控制器（Controller）</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/todo-tutorial-putting-it-together.html&title=把它们放在一起">把它们放在一起</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/todo-tutorial-geocoding-service.html&title=额外：集成地理编码（geo-coding）服务">额外：集成地理编码（geo-coding）服务</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/todo-list-tutorial.html&title=TodoList教程">TodoList教程</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/todo-list-tutorial-model.html&title=添加TodoList模型（Model）">添加TodoList模型（Model）</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/todo-list-tutorial-repository.html&title=添加TodoList存储库（Repository）">添加TodoList存储库（Repository）</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/todo-list-tutorial-controller.html&title=添加TodoList控制器（Controller）">添加TodoList控制器（Controller）</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/todo-list-tutorial-sqldb.html&title=在关系型数据库（Relational Database）上运行">在关系型数据库（Relational Database）上运行</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/soap-calculator-tutorial.html&title=SOAP Web Service教程">SOAP Web Service教程</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/soap-calculator-tutorial-web-service-overview.html&title=SOAP Web Service总览">SOAP Web Service总览</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/soap-calculator-tutorial-scaffolding.html&title=应用脚手架">应用脚手架</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/soap-calculator-tutorial-add-datasource.html&title=添加一个数据源（Datasource）">添加一个数据源（Datasource）</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/soap-calculator-tutorial-add-service.html&title=添加一个服务（Service）">添加一个服务（Service）</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/soap-calculator-tutorial-add-controller.html&title=添加一个控制器（Controller）">添加一个控制器（Controller）</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/soap-calculator-tutorial-run-and-test.html&title=运行和测试">运行和测试</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/express-with-lb4-rest-tutorial.html&title=使用LoopBack REST API建立一个Express Application">使用LoopBack REST API建立一个Express Application</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/Authentication-Tutorial.html&title=如何使用JWT认证（Authentication）确保你的LoopBack 4应用的安全性">如何使用JWT认证（Authentication）确保你的LoopBack 4应用的安全性</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/Examples.html&title=示例代码">示例代码</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/Command-line-interface.html&title=CLI参考">CLI参考</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/Application-generator.html&title=应用（Application）生成器">应用（Application）生成器</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/Controller-generator.html&title=控制器（Controller）生成器">控制器（Controller）生成器</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/DataSource-generator.html&title=数据源（DataSource）生成器">数据源（DataSource）生成器</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/Model-generator.html&title=模型（Model）生成器">模型（Model）生成器</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/Discovering-models.html&title=数据库优先的模型生成/模型发现（Model discovery）">数据库优先的模型生成/模型发现（Model discovery）</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/Relation-generator.html&title=关系（Relation）生成器">关系（Relation）生成器</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/Repository-generator.html&title=存储库（Repository）生成器">存储库（Repository）生成器</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/Service-generator.html&title=服务（Service）生成器">服务（Service）生成器</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/OpenAPI-generator.html&title=OpenAPI生成器">OpenAPI生成器</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/Life-cycle-observer-generator.html&title=Life cycle observer（生命周期观察器）生成器">Life cycle observer（生命周期观察器）生成器</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/Interceptor-generator.html&title=拦截器（Interceptor）生成器">拦截器（Interceptor）生成器</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/Extension-generator.html&title=扩展（Extension）生成器">扩展（Extension）生成器</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/Download-examples.html&title=下载示例代码">下载示例代码</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/Connectors-reference.html&title=连接器（Connectors）参考">连接器（Connectors）参考</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/Memory-connector.html&title=内存（Memory）连接器">内存（Memory）连接器</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/Database-connectors.html&title=数据库（Database）连接器">数据库（Database）连接器</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/Cassandra-connector.html&title=Cassandra连接器">Cassandra连接器</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/Cloudant-connector.html&title=Cloudant连接器">Cloudant连接器</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/DashDB.html&title=DashDB连接器">DashDB连接器</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/DB2-connector.html&title=DB2连接器">DB2连接器</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/DB2-iSeries-connector.html&title=DB2 for iSeries连接器">DB2 for iSeries连接器</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/DB2-for-z-OS.html&title=DB2 for z/OS">DB2 for z/OS</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/Informix.html&title=Informix连接器">Informix连接器</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/MongoDB-connector.html&title=MongoDB连接器">MongoDB连接器</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/Connecting-to-MongoDB.html&title=MongoDB连接器教程">MongoDB连接器教程</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/Using-MongoLab.html&title=使用MongoLab">使用MongoLab</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/MySQL-connector.html&title=MySQL连接器">MySQL连接器</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/Connecting-to-MySQL.html&title=MySQL连接器教程">MySQL连接器教程</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/Oracle-connector.html&title=Oracle连接器">Oracle连接器</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/Installing-the-Oracle-connector.html&title=安装Oracle连接器">安装Oracle连接器</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/Connecting-to-Oracle.html&title=Oracle连接器教程">Oracle连接器教程</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/PostgreSQL-connector.html&title=PostgreSQL连接器">PostgreSQL连接器</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/Connecting-to-PostgreSQL.html&title=PostgreSQL连接器教程">PostgreSQL连接器教程</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/Redis-connector.html&title=Redis连接器">Redis连接器</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/kv-redis-connector.html&title=Redis键值对（key-value）连接器">Redis键值对（key-value）连接器</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/Example-kv-connector.html&title=键值对连接器示例">键值对连接器示例</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/SQL-Server-connector.html&title=微软SQL Server连接器">微软SQL Server连接器</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/Connecting-to-Microsoft-SQL-Server.html&title=微软SQL Server连接器教程">微软SQL Server连接器教程</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/SQLite3.html&title=SQLite3连接器">SQLite3连接器</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/zOSconnectEE.html&title=z/OS企业版连接器">z/OS企业版连接器</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/Other-connectors.html&title=其他连接器">其他连接器</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/Email-connector.html&title=电子邮件（Email）连接器">电子邮件（Email）连接器</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/JSON-RPC-connector.html&title=JSON RPC连接器">JSON RPC连接器</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/MQLight-connector.html&title=MQ Light连接器">MQ Light连接器</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/Push-connector.html&title=Push连接器">Push连接器</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/Remote-connector.html&title=Remote连接器">Remote连接器</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/Remote-connector-example.html&title=Remote连接器教程">Remote连接器教程</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/Strong-Remoting.html&title=Strong Remoting">Strong Remoting</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/REST-connector.html&title=REST连接器">REST连接器</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/REST-connector-example.html&title=REST连接器示例">REST连接器示例</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/SOAP-connector.html&title=SOAP连接器">SOAP连接器</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/Strong-soap.html&title=Strong-soap">Strong-soap</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/SOAP-Connector-example.html&title=SOAP连接器示例">SOAP连接器示例</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/Connecting-to-SOAP.html&title=连接到SOAP web services">连接到SOAP web services</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/Storage-connector.html&title=Storage连接器">Storage连接器</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/Swagger-connector.html&title=Swagger连接器">Swagger连接器</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/Community-connectors.html&title=Community连接器">Community连接器</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/apidocs.index.html&title=API文档">API文档</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/LoopBack-3.x.html&title=LoopBack 3.x用户请读">LoopBack 3.x用户请读</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/Understanding-the-differences.html&title=理解LoopBack 3和LoopBack 4的不同">理解LoopBack 3和LoopBack 4的不同</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/Migrating-from-LoopBack-3.html&title=从LoopBack 3迁移">从LoopBack 3迁移</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/Best-practices.html&title=最佳实践">最佳实践</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/Defining-the-API-using-code-first-approach.html&title=使用代码优先（code-first）方式定义API">使用代码优先（code-first）方式定义API</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/Defining-your-testing-strategy.html&title=定义你的测试策略">定义你的测试策略</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/Testing-your-application.html&title=测试你的应用">测试你的应用</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/code-contrib-lb4.html&title=贡献LoopBack 4">贡献LoopBack 4</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/submitting_a_pr.html&title=提交pull request给LoopBack 4">提交pull request给LoopBack 4</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/Reference.html&title=参考">参考</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb4/Deploy-for-GDPR-readiness.html&title=考虑GDPR准备情况">考虑GDPR准备情况</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+
+</ul>
+
+        </nav>
+        <!-- Content Column -->
+        <div class="col-md-9">
+            
+<div class="post-header">
+   <h1 class="post-title-main">控制器（Controllers）</h1>
+   
+     
+       <a target="_blank" href="https://github.com/strongloop/loopback.io/blob/gh-pages/pages/zh/lb4/Controllers.md" class="githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit this page</a>
+   
+</div>
+
+<div class="post-content">
+
+
+  
+
+
+
+
+ 
+   
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+;$(function() {
+  var level = parseInt(3, 10);
+  if (level === 1) {level = 'h2'}
+  if (level === 2) {level = 'h2,h3'}
+  if (level === 3) {level = 'h2,h3,h4'}
+  if (level === 4) {level = 'h2,h3,h4,h5'}
+
+  // Add a new level for changelog files which use h1,h2,h3
+  if (level === 0) {level = 'h1,h2,h3,h4,h5'}
+
+  var toc = $('#toc')
+
+  toc.toc({minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: level})
+
+  /* this offset helps with the space taken up by the floating toolbar */
+  toc.on('click', 'a', function() {
+    var target = $(this.getAttribute('href')),
+      scroll_target = target.offset().top
+
+    $(window).scrollTop(scroll_target - 10)
+    return false
+  })
+  .on('click', '.toc-expand-button', function() {
+    toc.find('> ul').slideToggle('fast');
+  })
+})
+</script>
+
+<div id="toc">
+  <span class="toc-title">Page Contents</span>
+  <button type="button" class="btn btn-link toc-expand-button">
+    <i class="fa fa-bars"></i>
+  </button>
+</div>
+
+ 
+
+    
+
+
+
+
+  <div markdown="span" class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i> <b>This is a community translation into Chinese</b>. For the latest information, see the <a href="/doc/en/lb4/Controllers.html">English version</a>.
+  </div>
+
+
+<h2 id="总览">总览</h2>
+
+<p>控制器（<code class="language-plaintext highlighter-rouge">Controller</code>）是一个用于实现应用 API 定义的操作的类。它实现一个应用的业务逻辑， 它实现了一个应用的业务逻辑，并作为“HTTP / REST API”和“域 / 数据库模型”之间的桥梁。</p>
+
+<p>添加修饰符到<code class="language-plaintext highlighter-rouge">Controller</code>类及其成员，可以映射应用的 API 操作到对应的 Controller（控制器）操作。
+控制器（<code class="language-plaintext highlighter-rouge">Controller</code>）仅对“已处理的输入”和“后端服务/数据库”的抽象进行操作。</p>
+
+<p>本页面仅涵盖用于 REST API 的控制器（<code class="language-plaintext highlighter-rouge">Controller</code>）。</p>
+
+<h2 id="操作operations">操作（Operations）</h2>
+
+<p>在<a href="Routes.md">路由（Routes）</a>示例的操作（Operation）中，<code class="language-plaintext highlighter-rouge">greet()</code>操作被定义为一个普通的 JavaScript 函数。The</p>
+
+<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// 普通函数Operation</span>
+<span class="kd">function</span> <span class="nx">greet</span><span class="p">(</span><span class="nx">name</span><span class="p">:</span> <span class="kr">string</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="s2">`hello </span><span class="p">${</span><span class="nx">name</span><span class="p">}</span><span class="s2">`</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c1">// 控制器方法Operation</span>
+<span class="kd">class</span> <span class="nx">MyController</span> <span class="p">{</span>
+  <span class="nx">greet</span><span class="p">(</span><span class="nx">name</span><span class="p">:</span> <span class="kr">string</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="s2">`hello </span><span class="p">${</span><span class="nx">name</span><span class="p">}</span><span class="s2">`</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="路由到控制器controller">路由到控制器（Controller）</h2>
+
+<p>下面的示例是一个基本的 API 规范。这是一个<a href="https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#operationObject">操作对象（Operation Object）</a>.</p>
+
+<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">spec</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="na">parameters</span><span class="p">:</span> <span class="p">[{</span> <span class="na">name</span><span class="p">:</span> <span class="dl">"</span><span class="s2">name</span><span class="dl">"</span><span class="p">,</span> <span class="na">schema</span><span class="p">:</span> <span class="p">{</span> <span class="na">type</span><span class="p">:</span> <span class="dl">"</span><span class="s2">string</span><span class="dl">"</span> <span class="p">},</span> <span class="na">in</span><span class="p">:</span> <span class="dl">"</span><span class="s2">query</span><span class="dl">"</span> <span class="p">}],</span>
+  <span class="na">responses</span><span class="p">:</span> <span class="p">{</span>
+    <span class="dl">"</span><span class="s2">200</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+      <span class="na">description</span><span class="p">:</span> <span class="dl">"</span><span class="s2">greeting text</span><span class="dl">"</span><span class="p">,</span>
+      <span class="na">content</span><span class="p">:</span> <span class="p">{</span>
+        <span class="dl">"</span><span class="s2">application/json</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+          <span class="na">schema</span><span class="p">:</span> <span class="p">{</span> <span class="na">type</span><span class="p">:</span> <span class="dl">"</span><span class="s2">string</span><span class="dl">"</span> <span class="p">}</span>
+        <span class="p">}</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">};</span>
+</code></pre></div></div>
+
+<p>定义路由（<code class="language-plaintext highlighter-rouge">Routes</code>）到控制器（Controller）方法，有数种方式。
+第一个示例是普通地定义路由到控制器方法：</p>
+
+<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// ... 在你的application构造函数中</span>
+<span class="k">this</span><span class="p">.</span><span class="nx">route</span><span class="p">(</span><span class="dl">"</span><span class="s2">get</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">/greet</span><span class="dl">"</span><span class="p">,</span> <span class="nx">spec</span><span class="p">,</span> <span class="nx">MyController</span><span class="p">,</span> <span class="dl">"</span><span class="s2">greet</span><span class="dl">"</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>修饰符允许你使用路由元数据描述你的控制器方法，然后 LoopBack 可以替你调用<code class="language-plaintext highlighter-rouge">app.route()</code>函数。</p>
+
+<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="p">{</span> <span class="kd">get</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">"</span><span class="s2">@loopback/rest</span><span class="dl">"</span><span class="p">;</span>
+
+<span class="kd">class</span> <span class="nx">MyController</span> <span class="p">{</span>
+  <span class="p">@</span><span class="nd">get</span><span class="p">(</span><span class="dl">"</span><span class="s2">/greet</span><span class="dl">"</span><span class="p">,</span> <span class="nx">spec</span><span class="p">)</span>
+  <span class="nx">greet</span><span class="p">(</span><span class="nx">name</span><span class="p">:</span> <span class="kr">string</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="s2">`hello </span><span class="p">${</span><span class="nx">name</span><span class="p">}</span><span class="s2">`</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="c1">// ... 在你的application构造函数中</span>
+<span class="k">this</span><span class="p">.</span><span class="nx">controller</span><span class="p">(</span><span class="nx">MyController</span><span class="p">);</span>
+</code></pre></div></div>
+
+<h2 id="指明控制器controller的-api">指明控制器（Controller）的 API</h2>
+
+<p>大型的 LoopBack 应用中，你可以使用 OpenAPI 规范来组织你的路由。
+<code class="language-plaintext highlighter-rouge">@api</code>修饰符会取得一个类型为<code class="language-plaintext highlighter-rouge">ControllerSpec</code>，包含<code class="language-plaintext highlighter-rouge">basePath</code>字符串和<a href="https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#paths-object">Paths Object</a>的规范。
+注意，这<em>不是</em>一个完整的<a href="https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#oasObject">OpenAPI</a>规范。</p>
+
+<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// ... 在你的application构造函数中</span>
+<span class="k">this</span><span class="p">.</span><span class="nx">api</span><span class="p">({</span>
+  <span class="na">openapi</span><span class="p">:</span> <span class="dl">"</span><span class="s2">3.0.0</span><span class="dl">"</span><span class="p">,</span>
+  <span class="na">info</span><span class="p">:</span> <span class="p">{</span>
+    <span class="na">title</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Hello World App</span><span class="dl">"</span><span class="p">,</span>
+    <span class="na">version</span><span class="p">:</span> <span class="dl">"</span><span class="s2">1.0.0</span><span class="dl">"</span>
+  <span class="p">},</span>
+  <span class="na">paths</span><span class="p">:</span> <span class="p">{</span>
+    <span class="dl">"</span><span class="s2">/greet</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+      <span class="na">get</span><span class="p">:</span> <span class="p">{</span>
+        <span class="dl">"</span><span class="s2">x-operation-name</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">greet</span><span class="dl">"</span><span class="p">,</span>
+        <span class="dl">"</span><span class="s2">x-controller-name</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">MyController</span><span class="dl">"</span><span class="p">,</span>
+        <span class="na">parameters</span><span class="p">:</span> <span class="p">[{</span> <span class="na">name</span><span class="p">:</span> <span class="dl">"</span><span class="s2">name</span><span class="dl">"</span><span class="p">,</span> <span class="na">schema</span><span class="p">:</span> <span class="p">{</span> <span class="na">type</span><span class="p">:</span> <span class="dl">"</span><span class="s2">string</span><span class="dl">"</span> <span class="p">},</span> <span class="na">in</span><span class="p">:</span> <span class="dl">"</span><span class="s2">query</span><span class="dl">"</span> <span class="p">}],</span>
+        <span class="na">responses</span><span class="p">:</span> <span class="p">{</span>
+          <span class="dl">"</span><span class="s2">200</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+            <span class="na">description</span><span class="p">:</span> <span class="dl">"</span><span class="s2">greeting text</span><span class="dl">"</span><span class="p">,</span>
+            <span class="na">content</span><span class="p">:</span> <span class="p">{</span>
+              <span class="dl">"</span><span class="s2">application/json</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+                <span class="na">schema</span><span class="p">:</span> <span class="p">{</span> <span class="na">type</span><span class="p">:</span> <span class="dl">"</span><span class="s2">string</span><span class="dl">"</span> <span class="p">}</span>
+              <span class="p">}</span>
+            <span class="p">}</span>
+          <span class="p">}</span>
+        <span class="p">}</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">});</span>
+<span class="k">this</span><span class="p">.</span><span class="nx">controller</span><span class="p">(</span><span class="nx">MyController</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p><code class="language-plaintext highlighter-rouge">@api</code>修饰符允许你使用一个规范来描述你的 Controller（控制器），然后 LoopBack 可以替你调用<code class="language-plaintext highlighter-rouge">app.api()</code> 函数。</p>
+
+<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">@</span><span class="nd">api</span><span class="p">({</span>
+  <span class="na">openapi</span><span class="p">:</span> <span class="dl">"</span><span class="s2">3.0.0</span><span class="dl">"</span><span class="p">,</span>
+  <span class="na">info</span><span class="p">:</span> <span class="p">{</span>
+    <span class="na">title</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Hello World App</span><span class="dl">"</span><span class="p">,</span>
+    <span class="na">version</span><span class="p">:</span> <span class="dl">"</span><span class="s2">1.0.0</span><span class="dl">"</span>
+  <span class="p">},</span>
+  <span class="na">paths</span><span class="p">:</span> <span class="p">{</span>
+    <span class="dl">"</span><span class="s2">/greet</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+      <span class="na">get</span><span class="p">:</span> <span class="p">{</span>
+        <span class="dl">"</span><span class="s2">x-operation-name</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">greet</span><span class="dl">"</span><span class="p">,</span>
+        <span class="dl">"</span><span class="s2">x-controller-name</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">MyController</span><span class="dl">"</span><span class="p">,</span>
+        <span class="na">parameters</span><span class="p">:</span> <span class="p">[{</span> <span class="na">name</span><span class="p">:</span> <span class="dl">"</span><span class="s2">name</span><span class="dl">"</span><span class="p">,</span> <span class="na">schema</span><span class="p">:</span> <span class="p">{</span> <span class="na">type</span><span class="p">:</span> <span class="dl">"</span><span class="s2">string</span><span class="dl">"</span> <span class="p">},</span> <span class="na">in</span><span class="p">:</span> <span class="dl">"</span><span class="s2">query</span><span class="dl">"</span> <span class="p">}],</span>
+        <span class="na">responses</span><span class="p">:</span> <span class="p">{</span>
+          <span class="dl">"</span><span class="s2">200</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+            <span class="na">description</span><span class="p">:</span> <span class="dl">"</span><span class="s2">greeting text</span><span class="dl">"</span><span class="p">,</span>
+            <span class="na">content</span><span class="p">:</span> <span class="p">{</span>
+              <span class="dl">"</span><span class="s2">application/json</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+                <span class="na">schema</span><span class="p">:</span> <span class="p">{</span> <span class="na">type</span><span class="p">:</span> <span class="dl">"</span><span class="s2">string</span><span class="dl">"</span> <span class="p">}</span>
+              <span class="p">}</span>
+            <span class="p">}</span>
+          <span class="p">}</span>
+        <span class="p">}</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">})</span>
+<span class="kd">class</span> <span class="nx">MyController</span> <span class="p">{</span>
+  <span class="nx">greet</span><span class="p">(</span><span class="nx">name</span><span class="p">:</span> <span class="kr">string</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="s2">`hello </span><span class="p">${</span><span class="nx">name</span><span class="p">}</span><span class="s2">`</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+<span class="nx">app</span><span class="p">.</span><span class="nx">controller</span><span class="p">(</span><span class="nx">MyController</span><span class="p">);</span>
+</code></pre></div></div>
+
+<h2 id="编写控制器controller方法">编写控制器（Controller）方法</h2>
+
+<p>下面是一个控制器（Controller）的示例，使用了数种内置的助手（修饰符）。
+这些助手给了 LoopBack 关于控制器（Controller）方法的提示。</p>
+
+<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="p">{</span> <span class="nx">HelloRepository</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">"</span><span class="s2">../repositories</span><span class="dl">"</span><span class="p">;</span>
+<span class="k">import</span> <span class="p">{</span> <span class="nx">HelloMessage</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">"</span><span class="s2">../models</span><span class="dl">"</span><span class="p">;</span>
+<span class="k">import</span> <span class="p">{</span> <span class="kd">get</span><span class="p">,</span> <span class="nx">param</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">"</span><span class="s2">@loopback/rest</span><span class="dl">"</span><span class="p">;</span>
+<span class="k">import</span> <span class="p">{</span> <span class="nx">repository</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">"</span><span class="s2">@loopback/repository</span><span class="dl">"</span><span class="p">;</span>
+
+<span class="k">export</span> <span class="kd">class</span> <span class="nx">HelloController</span> <span class="p">{</span>
+  <span class="kd">constructor</span><span class="p">(</span>
+    <span class="p">@</span><span class="nd">repository</span><span class="p">(</span><span class="nx">HelloRepository</span><span class="p">)</span> <span class="k">protected</span> <span class="nx">repository</span><span class="p">:</span> <span class="nx">HelloRepository</span>
+  <span class="p">)</span> <span class="p">{}</span>
+
+  <span class="c1">// 返回我们的对象的列表</span>
+  <span class="p">@</span><span class="nd">get</span><span class="p">(</span><span class="dl">"</span><span class="s2">/messages</span><span class="dl">"</span><span class="p">)</span>
+  <span class="k">async</span> <span class="nx">list</span><span class="p">(@</span><span class="nd">param</span><span class="p">.</span><span class="nx">query</span><span class="p">.</span><span class="kr">number</span><span class="p">(</span><span class="dl">"</span><span class="s2">limit</span><span class="dl">"</span><span class="p">)</span> <span class="nx">limit</span> <span class="o">=</span> <span class="mi">10</span><span class="p">):</span> <span class="nb">Promise</span><span class="o">&lt;</span><span class="nx">HelloMessage</span><span class="p">[]</span><span class="o">&gt;</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">limit</span> <span class="o">&gt;</span> <span class="mi">100</span><span class="p">)</span> <span class="nx">limit</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span> <span class="c1">// 我们的逻辑</span>
+    <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="nx">repository</span><span class="p">.</span><span class="nx">find</span><span class="p">({</span> <span class="nx">limit</span> <span class="p">});</span> <span class="c1">// 来自我们的存储库的CRUD方法</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">HelloRepository</code>扩展自<code class="language-plaintext highlighter-rouge">Repository</code>（存储库），这是 LoopBack 的一个数据库抽象。
+查阅<a href="./Repositories.md">存储库（Repositories）</a> 获得更多信息。</li>
+  <li><code class="language-plaintext highlighter-rouge">HelloMessage</code> 返回一个随意的对象的<code class="language-plaintext highlighter-rouge">list</code>列表。</li>
+  <li><code class="language-plaintext highlighter-rouge">@get('/messages')</code>为 OpenAPI 规范自动创建<a href="https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#path-item-object">Paths Item Object</a>，同时也处理请求路由。</li>
+  <li><code class="language-plaintext highlighter-rouge">@param.query.number</code>指明了此规范的路由接受一个参数，此参数通过 Query（查询）传递，并且为一个数字。</li>
+</ul>
+
+<h2 id="在控制器controller中处理错误">在控制器（Controller）中处理错误</h2>
+
+<p>为了控制器（Controller）方法抛出异常，需要用到<code class="language-plaintext highlighter-rouge">HttpErrors</code>类。<code class="language-plaintext highlighter-rouge">HttpErrors</code>导出自
+<a href="https://www.npmjs.com/package/http-errors">http-errors</a>，包含在<code class="language-plaintext highlighter-rouge">@loopback/rest</code> 包中。</p>
+
+<p>Listed below are some of the most common error codes. The full list of supported
+codes is found
+<a href="https://github.com/jshttp/http-errors#list-of-all-constructors">here</a>.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Status Code（状态码）</th>
+      <th>错误</th>
+      <th>描述</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>400</td>
+      <td>BadRequest</td>
+      <td>错误请求</td>
+    </tr>
+    <tr>
+      <td>401</td>
+      <td>Unauthorized</td>
+      <td>未授权</td>
+    </tr>
+    <tr>
+      <td>403</td>
+      <td>Forbidden</td>
+      <td>被禁止</td>
+    </tr>
+    <tr>
+      <td>404</td>
+      <td>NotFound</td>
+      <td>未找到</td>
+    </tr>
+    <tr>
+      <td>500</td>
+      <td>InternalServerError</td>
+      <td>内部服务器错误</td>
+    </tr>
+    <tr>
+      <td>502</td>
+      <td>BadGateway</td>
+      <td>错误网关</td>
+    </tr>
+    <tr>
+      <td>503</td>
+      <td>ServiceUnavailable</td>
+      <td>服务不可用</td>
+    </tr>
+    <tr>
+      <td>504</td>
+      <td>GatewayTimeout</td>
+      <td>网关超时</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>下列示例展示了上述示例带有<code class="language-plaintext highlighter-rouge">HttpErrors</code>的改版，并附加了一个测试，以验证错误能够被确实地抛出。</p>
+
+<div id="src/__tests__/integration/controllers/hello.controller.integration.ts" class="code-caption">
+  <p>src/<strong>tests</strong>/integration/controllers/hello.controller.integration.ts</p>
+</div>
+
+<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="p">{</span> <span class="nx">HelloController</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">"</span><span class="s2">../../../controllers</span><span class="dl">"</span><span class="p">;</span>
+<span class="k">import</span> <span class="p">{</span> <span class="nx">HelloRepository</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">"</span><span class="s2">../../../repositories</span><span class="dl">"</span><span class="p">;</span>
+<span class="k">import</span> <span class="p">{</span> <span class="nx">testdb</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">"</span><span class="s2">../../fixtures/datasources/testdb.datasource</span><span class="dl">"</span><span class="p">;</span>
+<span class="k">import</span> <span class="p">{</span> <span class="nx">expect</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">"</span><span class="s2">@loopback/testlab</span><span class="dl">"</span><span class="p">;</span>
+<span class="k">import</span> <span class="p">{</span> <span class="nx">HttpErrors</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">"</span><span class="s2">@loopback/rest</span><span class="dl">"</span><span class="p">;</span>
+
+<span class="kd">const</span> <span class="nx">HttpError</span> <span class="o">=</span> <span class="nx">HttpErrors</span><span class="p">.</span><span class="nx">HttpError</span><span class="p">;</span>
+
+<span class="nx">describe</span><span class="p">(</span><span class="dl">"</span><span class="s2">Hello Controller</span><span class="dl">"</span><span class="p">,</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="nx">it</span><span class="p">(</span><span class="dl">"</span><span class="s2">returns 422 Unprocessable Entity for non-positive limit</span><span class="dl">"</span><span class="p">,</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="kd">const</span> <span class="nx">repo</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">HelloRepository</span><span class="p">(</span><span class="nx">testdb</span><span class="p">);</span>
+    <span class="kd">const</span> <span class="nx">controller</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">HelloController</span><span class="p">(</span><span class="nx">repo</span><span class="p">);</span>
+
+    <span class="k">return</span> <span class="nx">expect</span><span class="p">(</span><span class="nx">controller</span><span class="p">.</span><span class="nx">list</span><span class="p">(</span><span class="mf">0.4</span><span class="p">)).</span><span class="nx">to</span><span class="p">.</span><span class="nx">be</span><span class="p">.</span><span class="nx">rejectedWith</span><span class="p">(</span><span class="nx">HttpError</span><span class="p">,</span> <span class="p">{</span>
+      <span class="na">message</span><span class="p">:</span> <span class="dl">"</span><span class="s2">limit is non-positive</span><span class="dl">"</span><span class="p">,</span>
+      <span class="na">statusCode</span><span class="p">:</span> <span class="mi">422</span>
+    <span class="p">});</span>
+  <span class="p">});</span>
+<span class="p">});</span>
+</code></pre></div></div>
+
+<div id="src/controllers/hello.controller.ts" class="code-caption">
+  <p>src/controllers/hello.controller.ts</p>
+</div>
+
+<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="p">{</span> <span class="nx">HelloRepository</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">"</span><span class="s2">../repositories</span><span class="dl">"</span><span class="p">;</span>
+<span class="k">import</span> <span class="p">{</span> <span class="nx">HelloMessage</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">"</span><span class="s2">../models</span><span class="dl">"</span><span class="p">;</span>
+<span class="k">import</span> <span class="p">{</span> <span class="kd">get</span><span class="p">,</span> <span class="nx">param</span><span class="p">,</span> <span class="nx">HttpErrors</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">"</span><span class="s2">@loopback/rest</span><span class="dl">"</span><span class="p">;</span>
+<span class="k">import</span> <span class="p">{</span> <span class="nx">repository</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">"</span><span class="s2">@loopback/repository</span><span class="dl">"</span><span class="p">;</span>
+
+<span class="k">export</span> <span class="kd">class</span> <span class="nx">HelloController</span> <span class="p">{</span>
+  <span class="kd">constructor</span><span class="p">(@</span><span class="nd">repository</span><span class="p">(</span><span class="nx">HelloRepository</span><span class="p">)</span> <span class="k">protected</span> <span class="nx">repo</span><span class="p">:</span> <span class="nx">HelloRepository</span><span class="p">)</span> <span class="p">{}</span>
+
+  <span class="c1">// returns a list of our objects</span>
+  <span class="p">@</span><span class="nd">get</span><span class="p">(</span><span class="dl">"</span><span class="s2">/messages</span><span class="dl">"</span><span class="p">)</span>
+  <span class="k">async</span> <span class="nx">list</span><span class="p">(@</span><span class="nd">param</span><span class="p">.</span><span class="nx">query</span><span class="p">.</span><span class="kr">number</span><span class="p">(</span><span class="dl">"</span><span class="s2">limit</span><span class="dl">"</span><span class="p">)</span> <span class="nx">limit</span> <span class="o">=</span> <span class="mi">10</span><span class="p">):</span> <span class="nb">Promise</span><span class="o">&lt;</span><span class="nx">HelloMessage</span><span class="p">[]</span><span class="o">&gt;</span> <span class="p">{</span>
+    <span class="c1">// throw an error when the parameter is not a non-positive integer</span>
+    <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nb">Number</span><span class="p">.</span><span class="nx">isInteger</span><span class="p">(</span><span class="nx">limit</span><span class="p">)</span> <span class="o">||</span> <span class="nx">limit</span> <span class="o">&lt;</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+      <span class="k">throw</span> <span class="k">new</span> <span class="nx">HttpErrors</span><span class="p">.</span><span class="nx">UnprocessableEntity</span><span class="p">(</span><span class="dl">"</span><span class="s2">limit is non-positive</span><span class="dl">"</span><span class="p">);</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">limit</span> <span class="o">&gt;</span> <span class="mi">100</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nx">limit</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="nx">repo</span><span class="p">.</span><span class="nx">find</span><span class="p">({</span> <span class="nx">limit</span> <span class="p">});</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+
+
+    <div class="tags">
+      
+    </div>
+</div>
+
+<hr class="shaded"/>
+
+<footer id="container">
+            <div class="row">
+                <div class="col-md-6 footer-left">
+               &copy;2021 IBM / StrongLoop. All rights reserved. <br />
+ Site last generated: Mar 22, 2021
+              </div>
+              <div class="col-md-6 footer-right">
+                <p><img src="https://loopback.io/images/company_logo.png" alt="Company logo"/></p>
+              </div>
+            </div>
+</footer>
+
+
+        </div>
+        <!-- /.row -->
+</div>
+<!-- /.container -->
+    </div>
+</body>
+
+</html>

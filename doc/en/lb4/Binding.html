@@ -1,0 +1,5253 @@
+<!DOCTYPE html>
+<head>
+    
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="keywords" content=" LoopBack 4.0, LoopBack 4, Node.js, TypeScript, OpenAPI">
+  <title>Binding | LoopBack Documentation</title>
+  <link rel="stylesheet" href="/css/syntax.css">
+
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/modern-business.css">
+    <link rel="stylesheet" href="/css/lavish-bootstrap.css">
+    <link rel="stylesheet" href="/css/customstyles.css">
+    <link rel="stylesheet" href="/css/theme-v4.css">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-150726441-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-150726441-2');
+</script>
+
+
+    <!-- github star button -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.3.0/anchor.min.js"></script>
+    <script src="/js/toc.js"></script>
+    <script src="/js/customscripts.js"></script>
+
+    <link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    
+
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-lg navbar-brand no_icon" href="/doc/index.html">
+              <img class="no_icon" style="width:147px;" src="/images/branding/logo/white/loopback.svg">&nbsp;<span class="projectTitle"></span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- entries without drop-downs appear here -->
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">API Docs<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        <!-- page.url is /doc/en/lb4/Binding.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://loopback.io/doc/en/lb4/apidocs.index.html" target="_blank">LoopBack 4</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb4/Binding.html .... folderitem.url is  -->
+                          
+                            <li><a href="http://apidocs.loopback.io" target="_blank">LoopBack 3.x</a></li>
+                          
+                        
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">View<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        <!-- page.url is /doc/en/lb4/Binding.html .... folderitem.url is / -->
+                          
+                            <li><a href="/">LoopBack Overview</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb4/Binding.html .... folderitem.url is /doc/en/lb4/ -->
+                          
+                            <li class="dropdownActive"><a href="/doc/en/lb4/">LoopBack 4</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb4/Binding.html .... folderitem.url is /doc/en/lb3/ -->
+                          
+                            <li><a href="/doc/en/lb3/">LoopBack 3.x</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb4/Binding.html .... folderitem.url is /doc/en/lb2/ -->
+                          
+                            <li><a href="/doc/en/lb2/">LoopBack 2.x</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb4/Binding.html .... folderitem.url is /doc/en/community/ -->
+                          
+                            <li><a href="/doc/en/community/">Community projects</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb4/Binding.html .... folderitem.url is /doc/en/contrib/ -->
+                          
+                            <li><a href="/doc/en/contrib/">Contributing to LoopBack</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb4/Binding.html .... folderitem.url is /doc/en/sec/ -->
+                          
+                            <li><a href="/doc/en/sec/">Security advisories</a></li>
+                          
+                        
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Resources<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        <!-- page.url is /doc/en/lb4/Binding.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://github.com/strongloop/loopback.io" target="_blank">Docs Github Repo</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb4/Binding.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://groups.google.com/forum/#!forum/loopbackjs-announcements" target="_blank">Announcements Mailing List</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb4/Binding.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://groups.google.com/forum/#!forum/loopbackjs" target="_blank">Developer Forum</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb4/Binding.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://join.slack.com/t/loopbackio/shared_invite/zt-8lbow73r-SKAKz61Vdao~_rGf91pcsw" target="_blank">LoopBack on Slack</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb4/Binding.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://stackoverflow.com/questions/tagged/strongloop+or+loopback4+or+loopbackjs" target="_blank">LoopBack on Stack Overflow</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb4/Binding.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://strongloop.com/strongblog/tag_LoopBack.html" target="_blank">StrongLoop Blog - LoopBack</a></li>
+                          
+                        
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Translations<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        <!-- page.url is /doc/en/lb4/Binding.html .... folderitem.url is /doc/es/lb2/ -->
+                          
+                            <li><a href="/doc/es/lb2/">Español (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb4/Binding.html .... folderitem.url is /doc/es/lb4/ -->
+                          
+                            <li><a href="/doc/es/lb4/">Español (v4)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb4/Binding.html .... folderitem.url is /doc/fr/lb2/ -->
+                          
+                            <li><a href="/doc/fr/lb2/">Français (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb4/Binding.html .... folderitem.url is /doc/fr/lb4/ -->
+                          
+                            <li><a href="/doc/fr/lb4/">Français (v4)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb4/Binding.html .... folderitem.url is /doc/ko/lb2/ -->
+                          
+                            <li><a href="/doc/ko/lb2/">한국어 (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb4/Binding.html .... folderitem.url is /doc/ko/lb3/ -->
+                          
+                            <li><a href="/doc/ko/lb3/">한국어 (v3)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb4/Binding.html .... folderitem.url is /doc/pt-br/lb2/ -->
+                          
+                            <li><a href="/doc/pt-br/lb2/">Português (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb4/Binding.html .... folderitem.url is /doc/pt-br/lb4/ -->
+                          
+                            <li><a href="/doc/pt-br/lb4/">Português (v4)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb4/Binding.html .... folderitem.url is /doc/ja/lb2/ -->
+                          
+                            <li><a href="/doc/ja/lb2/">日本語 (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb4/Binding.html .... folderitem.url is /doc/ja/lb3/ -->
+                          
+                            <li><a href="/doc/ja/lb3/">日本語 (v3)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb4/Binding.html .... folderitem.url is /doc/ja/lb4/ -->
+                          
+                            <li><a href="/doc/ja/lb4/">日本語 (v4)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb4/Binding.html .... folderitem.url is /doc/ru/lb2/ -->
+                          
+                            <li><a href="/doc/ru/lb2/">Pусский (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb4/Binding.html .... folderitem.url is /doc/zh/lb2/ -->
+                          
+                            <li><a href="/doc/zh/lb2/">中文 (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb4/Binding.html .... folderitem.url is /doc/zh/lb4/ -->
+                          
+                            <li><a href="/doc/zh/lb4/">中文 (v4)</a></li>
+                          
+                        
+                    </ul>
+                </li>
+                
+                
+                
+                <li>
+                    <form id="search" name="search" class="input-group lb-search" action="/search" method="GET">
+                        <input type="text" class="form-control search-bar" placeholder="Search (powered by Watson)" name="q">
+                        
+                          <input type="hidden" name="sidebar" value="lb4_sidebar">
+                        
+                        <div class="input-group-btn">
+                            <button type="submit" class="btn btn-default" aria-label="search">
+                              <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                            </button>
+                        </div>
+                      </form>
+                </li>
+            </ul>
+        </div>
+      </div>
+</nav>
+
+<!-- Page Content -->
+<div class="container">
+    <!-- Content Row -->
+    <div class="row">
+        <!-- Sidebar Column -->
+        <nav class="col-md-3 sidebar-col">
+          
+
+
+
+
+
+
+
+
+
+
+
+<!-- NOTE: sidebar = site.data.sidebars.mydoc_sidebar.entries -->
+<div class="sidebarTitle"><a href="index.html">LoopBack 4</a></div>
+<ul id="mysidebar" class="nav-list">
+  
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="index.html">Overview</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Getting-started.html">Getting started</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Inside-LoopBack-Application.html">Inside a LoopBack Application</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent-expand   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="section-name" href="#">Building LoopBack Applications</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Tutorials.html">Tutorials</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="todo-tutorial.html">Todo Tutorial</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="todo-tutorial-scaffolding.html">Create your app scaffolding</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="todo-tutorial-model.html">Add the Todo model</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="todo-tutorial-datasource.html">Add a Datasource</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="todo-tutorial-repository.html">Add a Repository</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="todo-tutorial-controller.html">Add a Controller</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="todo-tutorial-putting-it-together.html">Putting it all together</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="todo-tutorial-geocoding-service.html">Bonus: Integrate with a geo-coding service</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="todo-list-tutorial.html">TodoList Tutorial</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="todo-list-tutorial-model.html">Add TodoList Model</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="todo-list-tutorial-repository.html">Add TodoList Repository</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="todo-list-tutorial-relations.html">Add Model Relations</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="todo-list-tutorial-has-one-relation.html">Add a HasOne Relation</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="todo-list-tutorial-controller.html">Add TodoList Controller</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="todo-list-tutorial-sqldb.html">Running on relational databases</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Connecting-to-back-end.html">Connecting to Back-end Service Tutorials</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="soap-calculator-tutorial.html">SOAP Web Service Tutorial</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="soap-calculator-tutorial-web-service-overview.html">SOAP Web Service Overview</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="soap-calculator-tutorial-scaffolding.html">App scaffolding</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="soap-calculator-tutorial-add-datasource.html">Add a Datasource</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="soap-calculator-tutorial-add-service.html">Add a Service</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="soap-calculator-tutorial-add-controller.html">Add a Controller</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="soap-calculator-tutorial-run-and-test.html">Run and Test it</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="express-with-lb4-rest-tutorial.html">Creating an Express Application with LoopBack REST API</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Authentication-tutorial.html">How to secure your LoopBack 4 application with JWT authentication</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="core-tutorial.html">Build large scale Node.js projects with LoopBack 4</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="core-tutorial-part1.html">Introduction of the application scenario</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="core-tutorial-part2.html">Architectural challenges</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="core-tutorial-part3.html">Context in action</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="core-tutorial-part4.html">Dependency injection</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="core-tutorial-part5.html">Extension point and extensions</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="core-tutorial-part6.html">Interception</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="core-tutorial-part7.html">Observation of life cycle events</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="core-tutorial-part8.html">Configuration</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="core-tutorial-part9.html">Discover and load artifacts by convention</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="core-tutorial-part10.html">Advanced Recipes</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="core-tutorial-part11.html">Summary</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Examples.html">Examples</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Community-examples.html">Community examples</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="section-name" href="#">How-to guides</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="section-name" href="#">Building REST APIs</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Creating-crud-rest-apis.html">Creating CRUD REST APIs from a model</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Customizing-how-openapi-spec-is-served.html">Customizing how OpenAPI spec is served</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Customizing-routes.html">Customizing routes</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Dynamic-models-repositories-controllers.html">Dynamically adding models, repositories, and controllers</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Self-hosted-rest-api-explorer.html">Self-hosted REST API Explorer</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Serving-static-files.html">Serving Static Files</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Accessing-http-request-response.html">Accessing HTTP Request and Response Objects</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="File-upload-download.html">Uploading and Downloading Files</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Express-middleware.html">Using Express Middleware</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Using-strong-error-handler.html">Using strong-error-handler</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Boot-and-Mount-a-LoopBack-3-application.html">Boot and Mount a LoopBack 3 Application</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Integrating-with-api-connect.html">Integrating with API Connect</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Accepting-messagepack-over-http.html">Accepting MessagePack over HTTP</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="section-name" href="#">Creating Other Forms of APIs</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="GraphQL.html">Creating GraphQL APIs</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Using-openapi-to-graphql.html">Using OpenAPI-to-GraphQL</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Creating-artifacts-runtime.html">Creating Artifacts at Runtime</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Creating-model-runtime.html">Creating Model at Runtime</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Creating-datasource-runtime.html">Creating DataSource at Runtime</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Creating-repository-runtime.html">Creating Repositories at Runtime</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="section-name" href="#">Building frontend applications</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Building-frontend-angular-application.html">Building an Angular Application from OpenAPI Specification</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Customizing-server-configuration.html">Customizing Server configuration</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Migrate-from-legacy-sequence.html">Migrate from Legacy Sequence</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Running-cron-jobs.html">Running cron jobs</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="section-name" href="#">Accessing Databases</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Configuring-datasource.html">Configuring DataSource</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Working-with-data.html">Working with data</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Querying-data.html">Querying data</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Fields-filter.html">Fields filter</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Include-filter.html">Include filter</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Limit-filter.html">Limit filter</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Order-filter.html">Order filter</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Skip-filter.html">Skip filter</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Where-filter.html">Where filter</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Using-database-transactions.html">Using Database Transactions</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Database-migrations.html">Database Migrations</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Executing-database-commands.html">Executing database commands</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="section-name" href="#">Using TypeORM</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Using-typeorm-with-loopback.html">How to use TypeORM with LoopBack</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Accessing-services.html">Accessing Services</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Calling-soap-web-services.html">Calling SOAP Web services</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Calling-rest-apis.html">Calling REST APIs</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Parsing-requests-guide.html">Parsing requests</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Validation.html">Validating Data</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Validation-REST-layer.html">Validation in REST Layer</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Validation-controller-repo-service-layer.html">Validation in the Controller, Repository and Service Layer</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Validation-ORM-layer.html">Validation in ORM Layer</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Configuring-applications.html">Configuring Applications</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Application-setup-tips.html">Tips for Application Setup</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="section-name" href="#">Securing Applications</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Authentication-overview.html">Authentication</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Authentication-tutorial.html">Apply JWT Authentication in Todo Example</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Loopback-component-authentication.html">Authentication Component</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Authentication-component-decorator.html">Authentication Decorator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Authentication-component-action.html">Authentication Action</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Authentication-component-strategy.html">Authentication Strategy</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Authentication-component-options.html">Managing Custom Authentication Strategy Options</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="JWT-authentication-extension.html">JWT Authentication Extension</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Implement-your-own-strategy.html">Implement your own authentication strategy</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Authentication-passport.html">Passport Adapter for Authentication</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Authorization-overview.html">Authorization</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="RBAC-with-authorization.html">RBAC with Authorization System</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Loopback-component-authorization.html">Authorization Component</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Authorization-component-interceptor.html">Interceptor</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Authorization-component-decorator.html">Decorator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Authorization-component-authorizer.html">Authorizer</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Authorization-component-decision-matrix.html">Decision Matrix</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Authorization-component-enforcer.html">Enforcer</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Deployment.html">Deploying Applications</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Enabling-https.html">Enabling HTTPS</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Deploying-to-IBM-Cloud.html">Deploying to IBM Cloud</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="deploying_to_ibm_cloud_kubernetes.html">Deploying to Kubernetes on IBM Cloud</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="deploying-with-pm2-and-nginx.html">Deploying with pm2 and nginx</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Appsody-LoopBack.html">Developing and Deploying LoopBack Applications with Appsody</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Running-cron-jobs.html">Running cron jobs</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Health.html">Health check</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Metrics.html">Metrics for Prometheus</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Pooling.html">Pooling</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Troubleshooting.html">Troubleshooting</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Setting-debug-strings.html">Setting debug strings</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Logging.html">Logging</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Context-explorer.html">Context Explorer</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Debugging-tests-with-mocha.html">Debugging tests with Mocha</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent-expand   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Extending-LoopBack-4.html">Extending LoopBack Framework</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="section-name" href="#">How-to guides</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Creating-components.html">Creating components</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Creating-decorators.html">Creating decorators</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="creating-components-rest-api.html">Contributing REST API</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="creating-components-services.html">Creating services</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Creating-servers.html">Creating servers</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Extending-request-body-parsing.html">Extending request body parsing</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Extension-life-cycle.html">Extension life cycle</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Extending-OpenAPI-specification.html">Extending OpenAPI specification</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Extending-Model-API-builder.html">Extending Model API builder</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Testing-your-extension.html">Testing your extension</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Community-extensions.html">Community extensions</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Concepts.html">Concepts</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Crafting-LoopBack-4.html">Crafting LoopBack 4</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="section-name" href="#">Core</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Application.html">Application</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Component.html">Component</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Context.html">Context</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  active">
+    
+    
+      <a class="page-link" href="Binding.html">Binding</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Dependency-injection.html">Dependency Injection</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Interceptor.html">Interceptor</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Life-cycle.html">Life Cycle Event and Observer</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Extension-point-and-extensions.html">Extension point and extensions</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Service.html">Service</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Booting-an-Application.html">Booter</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Decorators.html">Decorators</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Decorators_openapi.html">OpenAPI Decorators</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Decorators_inject.html">Dependency Injection Decorator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Decorators_authenticate.html">Authentication Decorator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Decorators_authorize.html">Authorization Decorators</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Decorators_service.html">Service Decorators</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Decorators_repository.html">Repository Decorators</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Mixin.html">Mixin</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="section-name" href="#">REST APIs</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Server.html">Server</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Sequence.html">Sequence</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="REST-middleware-sequence.html">Middleware based sequence</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="REST-action-sequence.html">Action based sequence</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Advanced-sequence-topics.html">Advanced topics</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Routing-requests.html">Routing requests</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Parsing-requests.html">Parsing requests</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Working-with-express-middleware.html">Working with Express Middleware</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Middleware.html">Middleware</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Route.html">Route</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Controller.html">Controller</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Request-response-cycle.html">Request/response cycle</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="section-name" href="#">Data Access</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Model.html">Model</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Relations.html">Relations</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="HasMany-relation.html">HasMany Relation</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="BelongsTo-relation.html">BelongsTo Relation</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="HasOne-relation.html">HasOne Relation</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="HasManyThrough-relation.html">HasManyThrough Relation</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Repository.html">Repository</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="DataSource.html">DataSource</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Best-practices.html">Best practices</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Defining-the-API-using-code-first-approach.html">Defining the API using code-first approach</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Defining-your-testing-strategy.html">Defining your testing strategy</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Testing-your-application.html">Testing your application</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="section-name" href="#">Reference guides</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Loopback-application-layout.html">LoopBack 4 Application Layout</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="apidocs.index.html">API docs</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Reserved-binding-keys.html">Reserved binding keys</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Error-codes.html">Error codes</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="LoopBack-types.html">LoopBack Types</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Command-line-interface.html">CLI References</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Application-generator.html">Application generator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Controller-generator.html">Controller generator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="DataSource-generator.html">DataSource generator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Importing-LB3-models.html">Import models from LoopBack 3</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Model-generator.html">Model generator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Discovering-models.html">Model discovery</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Relation-generator.html">Relation generator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Repository-generator.html">Repository generator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Rest-Crud-generator.html">REST CRUD model endpoints generator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Service-generator.html">Service generator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="OpenAPI-generator.html">OpenAPI generator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Life-cycle-observer-generator.html">Life cycle observer generator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Interceptor-generator.html">Interceptor generator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Extension-generator.html">Extension generator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Download-examples.html">Download examples</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Update-generator.html">Update project dependencies</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Copyright-generator.html">Generate copyright/license headers</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Connectors-reference.html">Connectors reference</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Memory-connector.html">Memory connector</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Database-connectors.html">Database connectors</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Cassandra-connector.html">Cassandra connector</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Cloudant-connector.html">Cloudant connector</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Couchdb2-connector.html">CouchDB 2.x connector</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="DashDB.html">DashDB connector</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="DB2-connector.html">IBM Db2 (for Linux, Unix, Windows) connector</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="DB2-for-i-connector.html">IBM Db2 for i connector</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="DB2-for-z-OS-connector.html">IBM Db2 for z/OS connector</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Informix.html">Informix connector</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="MongoDB-connector.html">MongoDB connector</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Connecting-to-MongoDB.html">MongoDB Connector Tutorial</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Using-MongoLab.html">Using MongoLab</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="MySQL-connector.html">MySQL connector</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Connecting-to-MySQL.html">MySQL Connector Tutorial</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Oracle-connector.html">Oracle connector</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Installing-the-Oracle-connector.html">Installing the Oracle connector</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Connecting-to-Oracle.html">Oracle connector tutorial</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="PostgreSQL-connector.html">PostgreSQL connector</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Connecting-to-PostgreSQL.html">PostgreSQL connector tutorial</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Redis-connector.html">Redis connector</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="kv-redis-connector.html">Redis key-value connector</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Example-kv-connector.html">KV connector example</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="SQL-Server-connector.html">SQL Server connector</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Connecting-to-Microsoft-SQL-Server.html">SQL Server connector tutorial</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="SQLite3.html">SQLite3 connector</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="zOSconnectEE.html">z/OS Connect Enterprise Edition connector</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Other-connectors.html">Other connectors</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="JSON-RPC-connector.html">JSON RPC connector</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="MQLight-connector.html">MQ Light connector</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="REST-connector.html">REST connector</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="REST-connector-example.html">REST connector example</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="SOAP-connector.html">SOAP connector</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Strong-soap.html">Strong-soap</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="SOAP-Connector-example.html">SOAP connector example</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Connecting-to-SOAP.html">Connecting to SOAP web services</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="OpenAPI-connector.html">OpenAPI connector</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Community-connectors.html">Community connectors</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="changelog.index.html">Change logs</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Deploy-for-GDPR-readiness.html">Considerations for GDPR readiness</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="code-contrib-lb4.html">Contributing to LoopBack 4</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="submitting_a_pr.html">Submitting a pull request to LoopBack 4</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="FAQ.html">FAQ</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="migration-overview.html">Migration guide</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Understanding-the-differences.html">Understanding the differences</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="LB3-vs-LB4-booting.html">Booting process</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="LB3-vs-LB4-request-response-cycle.html">Request/response cycle</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="migration-mounting-lb3app.html">Mounting a LoopBack 3 application</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="migration-express-middleware.html">Express middleware</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="migration-datasources.html">Datasources</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="migration-models-overview.html">Migrating models</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="migration-models-core.html">Model definitions and built-in APIs</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="migration-models-relations.html">Relations</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="migration-models-methods.html">Custom methods</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="migration-models-remoting-hooks.html">Remoting hooks</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="migration-models-operation-hooks.html">CRUD operation hooks</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="migration-models-mixins.html">Mixins</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="migration-boot-scripts.html">Boot scripts</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="migration-auth-overview.html">Authentication & authorization</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="migration-auth-access-control-example.html">Access control example</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="migration-authentication.html">Built-in models and authentication</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="migration-auth-passport.html">Passport</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="migration-auth-oauth2.html">OAuth2 Provider</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="migration-cli.html">CLI</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="migration-extensions-overview.html">Components and extensions</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="migration-extensions-project-layout.html">Project layout</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="migration-extensions-models.html">Models</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="migration-extensions-current-context.html">Current context</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="migration-extensions-mixins.html">Mixins</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="migration-extensions-rest-api.html">REST API</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="migration-clients.html">Clients (API consumers)</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="migration-not-planned.html">Features not planned</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+
+</ul>
+
+        </nav>
+        <!-- Content Column -->
+        <div class="col-md-9">
+            
+<div class="post-header">
+   <h1 class="post-title-main">Binding</h1>
+   
+     
+       <a target="_blank" href="https://github.com/strongloop/loopback-next/blob/master/docs/site/Binding.md" class="githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit this page</a>
+   
+</div>
+
+<div class="post-content">
+
+
+
+
+
+ 
+   
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+;$(function() {
+  var level = parseInt(3, 10);
+  if (level === 1) {level = 'h2'}
+  if (level === 2) {level = 'h2,h3'}
+  if (level === 3) {level = 'h2,h3,h4'}
+  if (level === 4) {level = 'h2,h3,h4,h5'}
+
+  // Add a new level for changelog files which use h1,h2,h3
+  if (level === 0) {level = 'h1,h2,h3,h4,h5'}
+
+  var toc = $('#toc')
+
+  toc.toc({minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: level})
+
+  /* this offset helps with the space taken up by the floating toolbar */
+  toc.on('click', 'a', function() {
+    var target = $(this.getAttribute('href')),
+      scroll_target = target.offset().top
+
+    $(window).scrollTop(scroll_target - 10)
+    return false
+  })
+  .on('click', '.toc-expand-button', function() {
+    toc.find('> ul').slideToggle('fast');
+  })
+})
+</script>
+
+<div id="toc">
+  <span class="toc-title">Page Contents</span>
+  <button type="button" class="btn btn-link toc-expand-button">
+    <i class="fa fa-bars"></i>
+  </button>
+</div>
+
+ 
+
+    <h2 id="what-is-binding">What is Binding?</h2>
+
+<p><code class="language-plaintext highlighter-rouge">Binding</code> represents items within a <a href="/doc/en/lb4/Context.html">Context</a> instance. A binding
+connects its value to a unique key as the address to access the entry in a
+context.</p>
+
+<h3 id="attributes-of-a-binding">Attributes of a binding</h3>
+
+<p>A binding typically has the following attributes:</p>
+
+<ul>
+  <li>key: Each binding has a <code class="language-plaintext highlighter-rouge">key</code> to uniquely identify itself within the context</li>
+  <li>scope: The scope controls how the binding value is created and cached within
+the context</li>
+  <li>tags: Tags are names or name/value pairs to describe or annotate a binding</li>
+  <li>value: Each binding must be configured with a type of value provider so that
+it can be resolved to a constant or calculated value</li>
+</ul>
+
+<p><img src="/pages/en/lb4/imgs/binding.png" alt="Binding" /></p>
+
+<h2 id="how-to-create-a-binding">How to create a binding?</h2>
+
+<p>There are a few ways to create a binding:</p>
+
+<ul>
+  <li>
+    <p>Use <code class="language-plaintext highlighter-rouge">Binding</code> constructor:</p>
+
+    <div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="p">{</span><span class="nx">Context</span><span class="p">,</span> <span class="nx">Binding</span><span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">@loopback/core</span><span class="dl">'</span><span class="p">;</span>
+<span class="kd">const</span> <span class="nx">context</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Context</span><span class="p">();</span>
+<span class="kd">const</span> <span class="nx">binding</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Binding</span><span class="p">(</span><span class="dl">'</span><span class="s1">my-key</span><span class="dl">'</span><span class="p">);</span>
+<span class="nx">ctx</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="nx">binding</span><span class="p">);</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Use <code class="language-plaintext highlighter-rouge">Binding.bind()</code></p>
+
+    <div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="p">{</span><span class="nx">Context</span><span class="p">,</span> <span class="nx">Binding</span><span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">@loopback/core</span><span class="dl">'</span><span class="p">;</span>
+<span class="kd">const</span> <span class="nx">context</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Context</span><span class="p">();</span>
+<span class="kd">const</span> <span class="nx">binding</span> <span class="o">=</span> <span class="nx">Binding</span><span class="p">.</span><span class="nx">bind</span><span class="p">(</span><span class="dl">'</span><span class="s1">my-key</span><span class="dl">'</span><span class="p">);</span>
+<span class="nx">ctx</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="nx">binding</span><span class="p">);</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Use <code class="language-plaintext highlighter-rouge">context.bind()</code></p>
+
+    <div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="p">{</span><span class="nx">Context</span><span class="p">,</span> <span class="nx">Binding</span><span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">@loopback/core</span><span class="dl">'</span><span class="p">;</span>
+<span class="kd">const</span> <span class="nx">context</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Context</span><span class="p">();</span>
+<span class="nx">context</span><span class="p">.</span><span class="nx">bind</span><span class="p">(</span><span class="dl">'</span><span class="s1">my-key</span><span class="dl">'</span><span class="p">);</span>
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<div class="alert alert-info" role="alert">
+  <p><i class="fa fa-info-circle"></i>
+<b>Note:</b>
+The <code class="language-plaintext highlighter-rouge">@loopback/core</code> package re-exports all public
+APIs of <code class="language-plaintext highlighter-rouge">@loopback/context</code>. For consistency, we recommend the usage of
+<code class="language-plaintext highlighter-rouge">@loopback/core</code> for imports in LoopBack modules and applications unless they
+depend on <code class="language-plaintext highlighter-rouge">@loopback/context</code> explicitly. The two statements below are
+equivalent:</p>
+
+  <div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="p">{</span><span class="nx">inject</span><span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">@loopback/context</span><span class="dl">'</span><span class="p">;</span>
+<span class="k">import</span> <span class="p">{</span><span class="nx">inject</span><span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">@loopback/core</span><span class="dl">'</span><span class="p">;</span>
+</code></pre></div>  </div>
+
+</div>
+
+<h2 id="how-to-set-up-a-binding">How to set up a binding?</h2>
+
+<p>The <code class="language-plaintext highlighter-rouge">Binding</code> class provides a set of fluent APIs to create and configure a
+binding.</p>
+
+<h3 id="supply-the-value-or-a-way-to-resolve-the-value">Supply the value or a way to resolve the value</h3>
+
+<p>The value can be supplied in one the following forms:</p>
+
+<h4 id="a-constant">A constant</h4>
+
+<p>If binding is always resolved to a fixed value, we can bind it to a constant,
+which can be a string, a function, an object, an array, or any other types.</p>
+
+<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">binding</span><span class="p">.</span><span class="nx">to</span><span class="p">(</span><span class="dl">'</span><span class="s1">my-value</span><span class="dl">'</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>Please note the constant value cannot be a <code class="language-plaintext highlighter-rouge">Promise</code> to avoid confusions.</p>
+
+<h4 id="a-factory-function">A factory function</h4>
+
+<p>Sometimes the value needs to be dynamically calculated, such as the current time
+or a value fetched from a remote service or database.</p>
+
+<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">binding</span><span class="p">.</span><span class="nx">toDynamicValue</span><span class="p">(()</span> <span class="o">=&gt;</span> <span class="dl">'</span><span class="s1">my-value</span><span class="dl">'</span><span class="p">);</span>
+<span class="nx">binding</span><span class="p">.</span><span class="nx">toDynamicValue</span><span class="p">(()</span> <span class="o">=&gt;</span> <span class="k">new</span> <span class="nb">Date</span><span class="p">());</span>
+<span class="nx">binding</span><span class="p">.</span><span class="nx">toDynamicValue</span><span class="p">(()</span> <span class="o">=&gt;</span> <span class="nb">Promise</span><span class="p">.</span><span class="nx">resolve</span><span class="p">(</span><span class="dl">'</span><span class="s1">my-value</span><span class="dl">'</span><span class="p">));</span>
+</code></pre></div></div>
+
+<p>The factory function can receive extra information about the context, binding,
+and resolution options.</p>
+
+<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="p">{</span><span class="nx">ValueFactory</span><span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">@loopback/core</span><span class="dl">'</span><span class="p">;</span>
+
+<span class="c1">// The factory function now have access extra metadata about the resolution</span>
+<span class="kd">const</span> <span class="nx">factory</span><span class="p">:</span> <span class="nx">ValueFactory</span><span class="o">&lt;</span><span class="kr">string</span><span class="o">&gt;</span> <span class="o">=</span> <span class="nx">resolutionCtx</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="s2">`Hello, </span><span class="p">${</span><span class="nx">resolutionCtx</span><span class="p">.</span><span class="nx">context</span><span class="p">.</span><span class="nx">name</span><span class="p">}</span><span class="s2">#</span><span class="p">${</span>
+    <span class="nx">resolutionCtx</span><span class="p">.</span><span class="nx">binding</span><span class="p">.</span><span class="nx">key</span>
+  <span class="p">}</span><span class="s2"> </span><span class="p">${</span><span class="nx">resolutionCtx</span><span class="p">.</span><span class="nx">options</span><span class="p">.</span><span class="nx">session</span><span class="p">?.</span><span class="nx">getBindingPath</span><span class="p">()}</span><span class="s2">`</span><span class="p">;</span>
+<span class="p">};</span>
+<span class="kd">const</span> <span class="nx">b</span> <span class="o">=</span> <span class="nx">ctx</span><span class="p">.</span><span class="nx">bind</span><span class="p">(</span><span class="dl">'</span><span class="s1">msg</span><span class="dl">'</span><span class="p">).</span><span class="nx">toDynamicValue</span><span class="p">(</span><span class="nx">factory</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>Object destructuring can be used to further simplify a value factory function
+that needs to access <code class="language-plaintext highlighter-rouge">context</code>, <code class="language-plaintext highlighter-rouge">binding</code>, or <code class="language-plaintext highlighter-rouge">options</code>.</p>
+
+<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">factory</span><span class="p">:</span> <span class="nx">ValueFactory</span><span class="o">&lt;</span><span class="kr">string</span><span class="o">&gt;</span> <span class="o">=</span> <span class="p">({</span><span class="nx">context</span><span class="p">,</span> <span class="nx">binding</span><span class="p">,</span> <span class="nx">options</span><span class="p">})</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="s2">`Hello, </span><span class="p">${</span><span class="nx">context</span><span class="p">.</span><span class="nx">name</span><span class="p">}</span><span class="s2">#</span><span class="p">${</span>
+    <span class="nx">binding</span><span class="p">.</span><span class="nx">key</span>
+  <span class="p">}</span><span class="s2"> </span><span class="p">${</span><span class="nx">options</span><span class="p">.</span><span class="nx">session</span><span class="p">?.</span><span class="nx">getBindingPath</span><span class="p">()}</span><span class="s2">`</span><span class="p">;</span>
+<span class="p">};</span>
+</code></pre></div></div>
+
+<p>An advanced form of value factory is a class that has a static <code class="language-plaintext highlighter-rouge">value</code> method
+that allows parameter injection.</p>
+
+<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="p">{</span><span class="nx">inject</span><span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">@loopback/core</span><span class="dl">'</span><span class="p">;</span>
+
+<span class="kd">class</span> <span class="nx">GreetingProvider</span> <span class="p">{</span>
+  <span class="k">static</span> <span class="nx">value</span><span class="p">(@</span><span class="nd">inject</span><span class="p">(</span><span class="dl">'</span><span class="s1">user</span><span class="dl">'</span><span class="p">)</span> <span class="nx">user</span><span class="p">:</span> <span class="kr">string</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="s2">`Hello, </span><span class="p">${</span><span class="nx">user</span><span class="p">}</span><span class="s2">`</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">const</span> <span class="nx">b</span> <span class="o">=</span> <span class="nx">ctx</span><span class="p">.</span><span class="nx">bind</span><span class="p">(</span><span class="dl">'</span><span class="s1">msg</span><span class="dl">'</span><span class="p">).</span><span class="nx">toDynamicValue</span><span class="p">(</span><span class="nx">GreetingProvider</span><span class="p">);</span>
+</code></pre></div></div>
+
+<h4 id="a-class">A class</h4>
+
+<p>The binding can represent an instance of a class, for example, a controller. A
+class can be used to instantiate an instance as the resolved value. Dependency
+injection is often leveraged for its members.</p>
+
+<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nx">MyController</span> <span class="p">{</span>
+  <span class="kd">constructor</span><span class="p">(@</span><span class="nd">inject</span><span class="p">(</span><span class="dl">'</span><span class="s1">my-options</span><span class="dl">'</span><span class="p">)</span> <span class="k">private</span> <span class="nx">options</span><span class="p">:</span> <span class="nx">MyOptions</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// ...</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="nx">binding</span><span class="p">.</span><span class="nx">toClass</span><span class="p">(</span><span class="nx">MyController</span><span class="p">);</span>
+</code></pre></div></div>
+
+<h4 id="a-provider">A provider</h4>
+
+<p>A provider is a class with <code class="language-plaintext highlighter-rouge">value()</code> method to calculate the value from its
+instance. The main reason to use a provider class is to leverage dependency
+injection for the factory function.</p>
+
+<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nx">MyValueProvider</span> <span class="k">implements</span> <span class="nx">Provider</span><span class="o">&lt;</span><span class="kr">string</span><span class="o">&gt;</span> <span class="p">{</span>
+  <span class="kd">constructor</span><span class="p">(@</span><span class="nd">inject</span><span class="p">(</span><span class="dl">'</span><span class="s1">my-options</span><span class="dl">'</span><span class="p">)</span> <span class="k">private</span> <span class="na">options</span><span class="p">:</span> <span class="nx">MyOptions</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// ...</span>
+  <span class="p">}</span>
+
+  <span class="nx">value</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="nx">options</span><span class="p">.</span><span class="nx">defaultValue</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="nx">binding</span><span class="p">.</span><span class="nx">toProvider</span><span class="p">(</span><span class="nx">MyValueProvider</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>The provider class serves as the wrapper to declare dependency injections. If
+dependency is not needed, <code class="language-plaintext highlighter-rouge">toDynamicValue</code> can be used instead.</p>
+
+<h4 id="an-injectable-class">An injectable class</h4>
+
+<p>An injectable class is one of the following types of classes optionally
+decorated with <code class="language-plaintext highlighter-rouge">@injectable</code>.</p>
+
+<ul>
+  <li>A class</li>
+  <li>A provider class</li>
+  <li>A dynamic value factory class</li>
+</ul>
+
+<p>The <code class="language-plaintext highlighter-rouge">toInjectable()</code> method is a shortcut to bind such classes using
+<code class="language-plaintext highlighter-rouge">toClass/toProvider/toDynamicValue</code> respectively by introspecting the class,
+including the binding metadata added by <code class="language-plaintext highlighter-rouge">@injectable</code>.</p>
+
+<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">@</span><span class="nd">injectable</span><span class="p">({</span><span class="na">scope</span><span class="p">:</span> <span class="nx">BindingScope</span><span class="p">.</span><span class="nx">SINGLETON</span><span class="p">})</span>
+<span class="kd">class</span> <span class="nx">MyController</span> <span class="p">{</span>
+  <span class="kd">constructor</span><span class="p">(@</span><span class="nd">inject</span><span class="p">(</span><span class="dl">'</span><span class="s1">my-options</span><span class="dl">'</span><span class="p">)</span> <span class="k">private</span> <span class="nx">options</span><span class="p">:</span> <span class="nx">MyOptions</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// ...</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="nx">binding</span><span class="p">.</span><span class="nx">toInjectable</span><span class="p">(</span><span class="nx">MyController</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>The code above is similar as follows:</p>
+
+<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">binding</span> <span class="o">=</span> <span class="nx">createBindingFromClass</span><span class="p">(</span><span class="nx">MyController</span><span class="p">);</span>
+</code></pre></div></div>
+
+<div class="alert alert-info" role="alert">
+  <p><i class="fa fa-info-circle"></i>
+<b>Note:</b></p>
+
+  <p>If <code class="language-plaintext highlighter-rouge">binding.toClass(MyController)</code> is used, the binding scope set by
+<code class="language-plaintext highlighter-rouge">@injectable</code> is NOT honored.</p>
+
+</div>
+
+<h4 id="an-alias">An alias</h4>
+
+<p>An alias is the key with optional path to resolve the value from another
+binding. For example, if we want to get options from RestServer for the API
+explorer, we can configure the <code class="language-plaintext highlighter-rouge">apiExplorer.options</code> to be resolved from
+<code class="language-plaintext highlighter-rouge">servers.RestServer.options#apiExplorer</code>.</p>
+
+<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">ctx</span><span class="p">.</span><span class="nx">bind</span><span class="p">(</span><span class="dl">'</span><span class="s1">servers.RestServer.options</span><span class="dl">'</span><span class="p">).</span><span class="nx">to</span><span class="p">({</span><span class="na">apiExplorer</span><span class="p">:</span> <span class="p">{</span><span class="na">path</span><span class="p">:</span> <span class="dl">'</span><span class="s1">/explorer</span><span class="dl">'</span><span class="p">}});</span>
+<span class="nx">ctx</span>
+  <span class="p">.</span><span class="nx">bind</span><span class="p">(</span><span class="dl">'</span><span class="s1">apiExplorer.options</span><span class="dl">'</span><span class="p">)</span>
+  <span class="p">.</span><span class="nx">toAlias</span><span class="p">(</span><span class="dl">'</span><span class="s1">servers.RestServer.options#apiExplorer</span><span class="dl">'</span><span class="p">);</span>
+<span class="kd">const</span> <span class="nx">apiExplorerOptions</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">ctx</span><span class="p">.</span><span class="kd">get</span><span class="p">(</span><span class="dl">'</span><span class="s1">apiExplorer.options</span><span class="dl">'</span><span class="p">);</span> <span class="c1">// =&gt; {path: '/explorer'}</span>
+</code></pre></div></div>
+
+<h3 id="configure-the-scope">Configure the scope</h3>
+
+<p>A binding provides values for requests such as <code class="language-plaintext highlighter-rouge">ctx.get()</code>, <code class="language-plaintext highlighter-rouge">ctx.getSync()</code>, and
+dependency injections. The binding scope controls whether a binding returns a
+new value or share the same value for multiple requests within the same context
+hierarchy. For example, <code class="language-plaintext highlighter-rouge">value1</code> and <code class="language-plaintext highlighter-rouge">value2</code> in the code below can be different
+or the same depending on the scope of Binding(<code class="language-plaintext highlighter-rouge">my-key</code>).</p>
+
+<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">value1</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">ctx</span><span class="p">.</span><span class="kd">get</span><span class="p">(</span><span class="dl">'</span><span class="s1">my-key</span><span class="dl">'</span><span class="p">);</span>
+<span class="kd">const</span> <span class="nx">value2</span> <span class="o">=</span> <span class="nx">ctx</span><span class="p">.</span><span class="nx">getSync</span><span class="p">(</span><span class="dl">'</span><span class="s1">my-key</span><span class="dl">'</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>We allow a binding to be resolved within a context using one of the following
+scopes:</p>
+
+<ul>
+  <li>BindingScope.TRANSIENT (default)</li>
+  <li>BindingScope.CONTEXT (deprecated to favor APPLICATION/SERVER/REQUEST)</li>
+  <li>BindingScope.SINGLETON</li>
+  <li>BindingScope.APPLICATION</li>
+  <li>BindingScope.SERVER</li>
+  <li>BindingScope.REQUEST</li>
+</ul>
+
+<p>For a complete list of descriptions, please see
+<a href="https://loopback.io/doc/en/lb4/apidocs.context.bindingscope.html">BindingScope</a>.</p>
+
+<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">binding</span><span class="p">.</span><span class="nx">inScope</span><span class="p">(</span><span class="nx">BindingScope</span><span class="p">.</span><span class="nx">SINGLETON</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>The binding scope can be accessed via <code class="language-plaintext highlighter-rouge">binding.scope</code>.</p>
+
+<h3 id="choose-the-right-scope">Choose the right scope</h3>
+
+<p>The binding scope should be determined by answers to the following questions:</p>
+
+<ol>
+  <li>Do you need to have a new value from the binding for each request?</li>
+  <li>Does the resolved value for a binding hold or access states that are request
+specific?</li>
+</ol>
+
+<p>Please note that the binding scope has no effect on bindings created with
+<code class="language-plaintext highlighter-rouge">to()</code>. For example:</p>
+
+<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">ctx</span><span class="p">.</span><span class="nx">bind</span><span class="p">(</span><span class="dl">'</span><span class="s1">my-name</span><span class="dl">'</span><span class="p">).</span><span class="nx">to</span><span class="p">(</span><span class="dl">'</span><span class="s1">John Smith</span><span class="dl">'</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>The <code class="language-plaintext highlighter-rouge">my-name</code> binding will always resolve to <code class="language-plaintext highlighter-rouge">'John Smith'</code>.</p>
+
+<p>The binding scope will impact values provided by <code class="language-plaintext highlighter-rouge">toDynamicValue</code>, <code class="language-plaintext highlighter-rouge">toClass</code>,
+and <code class="language-plaintext highlighter-rouge">toProvider</code>.</p>
+
+<p>Let’s say we need to have a binding that gives us the current date.</p>
+
+<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">ctx</span><span class="p">.</span><span class="nx">bind</span><span class="p">(</span><span class="dl">'</span><span class="s1">current-date</span><span class="dl">'</span><span class="p">).</span><span class="nx">toDynamicValue</span><span class="p">(()</span> <span class="o">=&gt;</span> <span class="k">new</span> <span class="nb">Date</span><span class="p">());</span>
+<span class="kd">const</span> <span class="nx">d1</span> <span class="o">=</span> <span class="nx">ctx</span><span class="p">.</span><span class="nx">getSync</span><span class="p">(</span><span class="dl">'</span><span class="s1">current-date</span><span class="dl">'</span><span class="p">);</span>
+<span class="kd">const</span> <span class="nx">d2</span> <span class="o">=</span> <span class="nx">ctx</span><span class="p">.</span><span class="nx">getSync</span><span class="p">(</span><span class="dl">'</span><span class="s1">current-date</span><span class="dl">'</span><span class="p">);</span>
+<span class="c1">// d1 !== d2</span>
+</code></pre></div></div>
+
+<p>By default, the binding scope is <code class="language-plaintext highlighter-rouge">TRANSIENT</code>. In the code above, <code class="language-plaintext highlighter-rouge">d1</code> and <code class="language-plaintext highlighter-rouge">d2</code>
+are resolved by calling <code class="language-plaintext highlighter-rouge">new Date()</code> for each <code class="language-plaintext highlighter-rouge">getSync('current-date')</code>. Two
+different dates are assigned to <code class="language-plaintext highlighter-rouge">d1</code> and <code class="language-plaintext highlighter-rouge">d2</code> to reflect the corresponding date
+for each resolution.</p>
+
+<p>Now you can guess the code snippet below will produce the same date for <code class="language-plaintext highlighter-rouge">d1</code> and
+<code class="language-plaintext highlighter-rouge">d2</code>, which is not desirable.</p>
+
+<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">ctx</span>
+  <span class="p">.</span><span class="nx">bind</span><span class="p">(</span><span class="dl">'</span><span class="s1">current-date</span><span class="dl">'</span><span class="p">)</span>
+  <span class="p">.</span><span class="nx">toDynamicValue</span><span class="p">(()</span> <span class="o">=&gt;</span> <span class="k">new</span> <span class="nb">Date</span><span class="p">())</span>
+  <span class="p">.</span><span class="nx">inScope</span><span class="p">(</span><span class="nx">BindingScope</span><span class="p">.</span><span class="nx">SINGLETON</span><span class="p">);</span>
+<span class="kd">const</span> <span class="nx">d1</span> <span class="o">=</span> <span class="nx">ctx</span><span class="p">.</span><span class="nx">getSync</span><span class="o">&lt;</span><span class="nb">Date</span><span class="o">&gt;</span><span class="p">(</span><span class="dl">'</span><span class="s1">current-date</span><span class="dl">'</span><span class="p">);</span>
+<span class="kd">const</span> <span class="nx">d2</span> <span class="o">=</span> <span class="nx">ctx</span><span class="p">.</span><span class="nx">getSync</span><span class="o">&lt;</span><span class="nb">Date</span><span class="o">&gt;</span><span class="p">(</span><span class="dl">'</span><span class="s1">current-date</span><span class="dl">'</span><span class="p">);</span>
+<span class="c1">// d1 === d2</span>
+</code></pre></div></div>
+
+<p>The <code class="language-plaintext highlighter-rouge">SINGLETON</code> scope is useful for some use cases, such as:</p>
+
+<ol>
+  <li>
+    <p>Share states in a single instance across multiple consumers of the binding</p>
+
+    <div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">export</span> <span class="kd">class</span> <span class="nx">GlobalCounter</span> <span class="p">{</span>
+  <span class="k">public</span> <span class="nx">count</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nx">ctx</span>
+  <span class="p">.</span><span class="nx">bind</span><span class="p">(</span><span class="dl">'</span><span class="s1">global-counter</span><span class="dl">'</span><span class="p">)</span>
+  <span class="p">.</span><span class="nx">toClass</span><span class="p">(</span><span class="nx">GlobalCounter</span><span class="p">)</span>
+  <span class="p">.</span><span class="nx">inScope</span><span class="p">(</span><span class="nx">BindingScope</span><span class="p">.</span><span class="nx">SINGLETON</span><span class="p">);</span>
+<span class="kd">const</span> <span class="nx">c1</span><span class="p">:</span> <span class="nx">GlobalCounter</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">ctx</span><span class="p">.</span><span class="kd">get</span><span class="p">(</span><span class="dl">'</span><span class="s1">global-counter</span><span class="dl">'</span><span class="p">);</span>
+<span class="nx">c1</span><span class="p">.</span><span class="nx">count</span><span class="o">++</span><span class="p">;</span> <span class="c1">// c1.count is now 1</span>
+<span class="kd">const</span> <span class="nx">c2</span><span class="p">:</span> <span class="nx">GlobalCounter</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">ctx</span><span class="p">.</span><span class="kd">get</span><span class="p">(</span><span class="dl">'</span><span class="s1">global-counter</span><span class="dl">'</span><span class="p">);</span>
+<span class="c1">// c2 is the same instance as c1</span>
+<span class="c1">// c2.count is 1 too</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Prevent creation of multiple instances if one single instance can be shared
+as the consumers do not need to hold or access different states</p>
+
+    <p>For example, the following <code class="language-plaintext highlighter-rouge">GreetingController</code> implementation does not
+access any information beyond the method parameters which are passed in as
+arguments. A shared instance of <code class="language-plaintext highlighter-rouge">GreetingController</code> can invoke <code class="language-plaintext highlighter-rouge">greet</code> with
+different arguments, such as <code class="language-plaintext highlighter-rouge">c1.greet('John')</code> and <code class="language-plaintext highlighter-rouge">c1.greet('Jane')</code>.</p>
+
+    <div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Mark the controller class a candidate for singleton binding</span>
+<span class="p">@</span><span class="nd">injectable</span><span class="p">({</span><span class="na">scope</span><span class="p">:</span> <span class="nx">BindingScope</span><span class="p">.</span><span class="nx">SINGLETON</span><span class="p">})</span>
+<span class="k">export</span> <span class="kd">class</span> <span class="nx">GreetingController</span> <span class="p">{</span>
+  <span class="nx">greet</span><span class="p">(</span><span class="nx">name</span><span class="p">:</span> <span class="kr">string</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="s2">`Hello, </span><span class="p">${</span><span class="nx">name</span><span class="p">}</span><span class="s2">`</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>    </div>
+
+    <p><code class="language-plaintext highlighter-rouge">GreetingController</code> is a good candidate to use <code class="language-plaintext highlighter-rouge">SINGLETON</code> so that only one
+instance is created within the application context and it can be shared by
+all requests. The scope eliminates the overhead to instantiate
+<code class="language-plaintext highlighter-rouge">GreetingController</code> per request.</p>
+
+    <div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// createBindingFromClass() respects `@injectable` and sets the binding scope to `SINGLETON'</span>
+<span class="kd">const</span> <span class="nx">binding</span> <span class="o">=</span> <span class="nx">ctx</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="nx">createBindingFromClass</span><span class="p">(</span><span class="nx">GreetingController</span><span class="p">));</span>
+<span class="kd">const</span> <span class="nx">c1</span> <span class="o">=</span> <span class="nx">ctx</span><span class="p">.</span><span class="nx">getSync</span><span class="p">(</span><span class="nx">binding</span><span class="p">.</span><span class="nx">key</span><span class="p">);</span>
+<span class="kd">const</span> <span class="nx">c2</span> <span class="o">=</span> <span class="nx">ctx</span><span class="p">.</span><span class="nx">getSync</span><span class="p">(</span><span class="nx">binding</span><span class="p">.</span><span class="nx">key</span><span class="p">);</span>
+<span class="c1">// c2 is the same instance as c1</span>
+<span class="nx">c1</span><span class="p">.</span><span class="nx">greet</span><span class="p">(</span><span class="dl">'</span><span class="s1">John</span><span class="dl">'</span><span class="p">);</span> <span class="c1">// invoke c1.greet for 'John' =&gt; 'Hello, John'</span>
+<span class="nx">c2</span><span class="p">.</span><span class="nx">greet</span><span class="p">(</span><span class="dl">'</span><span class="s1">Jane</span><span class="dl">'</span><span class="p">);</span> <span class="c1">// invoke c2.greet for 'Jane' =&gt; 'Hello, Jane'</span>
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<p><strong>Rule of thumb</strong>: Use <code class="language-plaintext highlighter-rouge">TRANSIENT</code> as the safe default and choose <code class="language-plaintext highlighter-rouge">SINGLETON</code> if
+you want to share the same instance for all consumers without breaking
+concurrent requests.</p>
+
+<p>Let’s look at another use case that we need to access the information from the
+current request, such as http url or logged in user:</p>
+
+<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">export</span> <span class="kd">class</span> <span class="nx">GreetingCurrentUserController</span> <span class="p">{</span>
+  <span class="p">@</span><span class="nd">inject</span><span class="p">(</span><span class="nx">SecurityBindings</span><span class="p">.</span><span class="nx">USER</span><span class="p">)</span>
+  <span class="k">private</span> <span class="nx">currentUserProfile</span><span class="p">:</span> <span class="nx">UserProfile</span><span class="p">;</span>
+
+  <span class="nx">greet</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="s2">`Hello, </span><span class="p">${</span><span class="k">this</span><span class="p">.</span><span class="nx">currentUserProfile</span><span class="p">.</span><span class="nx">name</span><span class="p">}</span><span class="s2">`</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Instances of <code class="language-plaintext highlighter-rouge">GreetingCurrentUserController</code> depend on <code class="language-plaintext highlighter-rouge">currentUserProfile</code>,
+which is injected as a property. We have to use <code class="language-plaintext highlighter-rouge">TRANSIENT</code> scope so that a new
+instance is created per request to hold the logged in user for each request.</p>
+
+<p>The constraint of being transient can be lifted by using method parameter
+injection to move the request-specific injection to parameters per method
+invocation.</p>
+
+<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">export</span> <span class="kd">class</span> <span class="nx">SingletonGreetingCurrentUserController</span> <span class="p">{</span>
+  <span class="nx">greet</span><span class="p">(@</span><span class="nd">inject</span><span class="p">(</span><span class="nx">SecurityBindings</span><span class="p">.</span><span class="nx">USER</span><span class="p">)</span> <span class="nx">currentUserProfile</span><span class="p">:</span> <span class="nx">UserProfile</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="s2">`Hello, </span><span class="p">${</span><span class="k">this</span><span class="p">.</span><span class="nx">currentUserProfile</span><span class="p">.</span><span class="nx">name</span><span class="p">}</span><span class="s2">`</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>The new implementation above does not hold request specific states as properties
+in its instances anymore and thus it’s qualified to be in <code class="language-plaintext highlighter-rouge">SINGLETON</code> scope.</p>
+
+<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">ctx</span>
+  <span class="p">.</span><span class="nx">bind</span><span class="p">(</span><span class="dl">'</span><span class="s1">controllers.SingletonGreetingCurrentUserController</span><span class="dl">'</span><span class="p">)</span>
+  <span class="p">.</span><span class="nx">toClass</span><span class="p">(</span><span class="nx">SingletonGreetingCurrentUserController</span><span class="p">)</span>
+  <span class="p">.</span><span class="nx">inScope</span><span class="p">(</span><span class="nx">BindingScope</span><span class="p">.</span><span class="nx">SINGLETON</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>A single instance of <code class="language-plaintext highlighter-rouge">SingletonGreetingCurrentUserController</code> is created within
+the context that contains the binding. But the <code class="language-plaintext highlighter-rouge">greet</code> method can still be
+invoked with different request contexts, each of which has its own logged in
+user. Method parameter injections are fulfilled with the request context, which
+can be different from the context (such as <code class="language-plaintext highlighter-rouge">application</code>) used to instantiate
+the class as a singleton.</p>
+
+<div class="alert alert-info" role="alert">
+  <p><i class="fa fa-info-circle"></i>
+<b>Note:</b></p>
+
+  <p>To understand the difference between <code class="language-plaintext highlighter-rouge">@bind()/@injectable</code> and <code class="language-plaintext highlighter-rouge">ctx.bind()</code>, see
+<a href="#configure-binding-attributes-for-a-class">Configure binding attributes for a class</a>.</p>
+
+</div>
+
+<p>There are some limitation of <code class="language-plaintext highlighter-rouge">SINGLETON</code>, <code class="language-plaintext highlighter-rouge">CONTEXT</code>, and <code class="language-plaintext highlighter-rouge">TRANSIENT</code> scopes.
+Consider the following typical context hierarchy formed by a LoopBack REST
+application:</p>
+
+<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// We have a context chain: invocationCtx -&gt; requestCtx -&gt; serverCtx -&gt; appCtx</span>
+<span class="nx">appCtx</span>
+  <span class="p">.</span><span class="nx">bind</span><span class="p">(</span><span class="dl">'</span><span class="s1">services.MyService</span><span class="dl">'</span><span class="p">)</span>
+  <span class="p">.</span><span class="nx">toClass</span><span class="p">(</span><span class="nx">MyService</span><span class="p">)</span>
+  <span class="p">.</span><span class="nx">inScope</span><span class="p">(</span><span class="nx">BindingScope</span><span class="p">.</span><span class="nx">TRANSIENT</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>We use <code class="language-plaintext highlighter-rouge">TRANSIENT</code> scope for controllers/services so that each request will get
+a new instance. But if a controller/service is resolved within the
+<code class="language-plaintext highlighter-rouge">invocationCtx</code> (by interceptors), a new instance will be created again.</p>
+
+<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// In a middleware</span>
+<span class="kd">const</span> <span class="nx">serviceInst1</span> <span class="o">=</span> <span class="nx">requestCtx</span><span class="p">.</span><span class="kd">get</span><span class="o">&lt;</span><span class="nx">MyService</span><span class="o">&gt;</span><span class="p">(</span><span class="dl">'</span><span class="s1">services.MyService</span><span class="dl">'</span><span class="p">);</span>
+<span class="c1">// In an interceptor</span>
+<span class="kd">const</span> <span class="nx">serviceInst2</span> <span class="o">=</span> <span class="nx">invocationCtx</span><span class="p">.</span><span class="kd">get</span><span class="o">&lt;</span><span class="nx">MyService</span><span class="o">&gt;</span><span class="p">(</span><span class="dl">'</span><span class="s1">services.MyService</span><span class="dl">'</span><span class="p">);</span>
+<span class="c1">// serviceInst2 is a new instance and it's NOT the same as serviceInst1</span>
+</code></pre></div></div>
+
+<p>It can also happen with dependency injections:</p>
+
+<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nx">MyMiddlewareProvider</span> <span class="k">implements</span> <span class="nx">Provider</span><span class="o">&lt;</span><span class="nx">Middleware</span><span class="o">&gt;</span> <span class="p">{</span>
+  <span class="kd">constructor</span><span class="p">(@</span><span class="nd">inject</span><span class="p">(</span><span class="dl">'</span><span class="s1">services.MyService</span><span class="dl">'</span><span class="p">)</span> <span class="k">private</span> <span class="nx">myService</span><span class="p">)</span> <span class="p">{}</span>
+<span class="p">}</span>
+
+<span class="kd">class</span> <span class="nx">MyInterceptor</span> <span class="p">{</span>
+  <span class="kd">constructor</span><span class="p">(@</span><span class="nd">inject</span><span class="p">(</span><span class="dl">'</span><span class="s1">services.MyService</span><span class="dl">'</span><span class="p">)</span> <span class="k">private</span> <span class="nx">myService</span><span class="p">)</span> <span class="p">{}</span>
+<span class="p">}</span>
+
+<span class="c1">// For the same request, the middleware and interceptor will receive two different</span>
+<span class="c1">// instances of `MyService`</span>
+</code></pre></div></div>
+
+<p>Ideally, we should get the same instance at the subtree of the <code class="language-plaintext highlighter-rouge">requestCtx</code>.
+Even worse, resolving a binding twice in the same reqCtx will get two different
+instances too.</p>
+
+<p>Neither <code class="language-plaintext highlighter-rouge">SINGLETON</code> or <code class="language-plaintext highlighter-rouge">CONTEXT</code> can satisfy this requirement. Typically,
+controllers/servers are discovered and loaded into the application context.
+Those from components such as RestComponent also contribute bindings to the
+<code class="language-plaintext highlighter-rouge">appCtx</code> instead of <code class="language-plaintext highlighter-rouge">serverCtx</code>. With <code class="language-plaintext highlighter-rouge">SINGLETON</code> scope, we will get one
+instance at the <code class="language-plaintext highlighter-rouge">appCtx</code> level. With <code class="language-plaintext highlighter-rouge">CONTEXT</code> scope, we will get one instance
+per context. A set of fine-grained scopes has been introduced to allow better
+scoping of binding resolutions.</p>
+
+<ul>
+  <li>BindingScope.APPLICATION</li>
+  <li>BindingScope.SERVER</li>
+  <li>BindingScope.REQUEST</li>
+</ul>
+
+<p>The scopes above are checked against the context hierarchy to find the first
+matching context for a given scope in the chain. Resolved binding values will be
+cached and shared on the scoped context. This ensures a binding to have the same
+value for the scoped context.</p>
+
+<div class="alert alert-info" role="alert">
+  <p><i class="fa fa-info-circle"></i>
+<b>Note:</b>
+In some cases (especially for tests), no context
+with <code class="language-plaintext highlighter-rouge">REQUEST</code> scope exists in the chain. The resolution falls back to the
+current context. This behavior makes it easy to use <code class="language-plaintext highlighter-rouge">REQUEST</code> as the default
+scope for controllers and other artifacts.</p>
+
+</div>
+
+<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// We have a context chain: invocationCtx -&gt; requestCtx -&gt; serverCtx -&gt; appCtx</span>
+<span class="nx">appCtx</span>
+  <span class="p">.</span><span class="nx">bind</span><span class="p">(</span><span class="dl">'</span><span class="s1">services.MyService</span><span class="dl">'</span><span class="p">)</span>
+  <span class="p">.</span><span class="nx">toClass</span><span class="p">(</span><span class="nx">MyService</span><span class="p">)</span>
+  <span class="p">.</span><span class="nx">inScope</span><span class="p">(</span><span class="nx">BindingScope</span><span class="p">.</span><span class="nx">REQUEST</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>Now the same instance of MyService will be resolved in the <code class="language-plaintext highlighter-rouge">MyMiddleware</code> and
+<code class="language-plaintext highlighter-rouge">MyInterceptor</code>.</p>
+
+<h3 id="resolve-a-binding-value-by-key-and-scope-within-a-context-hierarchy">Resolve a binding value by key and scope within a context hierarchy</h3>
+
+<p>Binding resolution happens explicitly with <code class="language-plaintext highlighter-rouge">ctx.get()</code>, <code class="language-plaintext highlighter-rouge">ctx.getSync()</code>, or
+<code class="language-plaintext highlighter-rouge">binding.getValue(ctx)</code>. It may be also triggered with dependency injections
+when a class is instantiated or a method is invoked.</p>
+
+<p>Within a context hierarchy, resolving a binding involves the following context
+objects, which can be the same or different depending on the context chain and
+binding scopes.</p>
+
+<p>Let’s assume we have a context chain configured as follows:</p>
+
+<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="p">{</span><span class="nx">Context</span><span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">@loopback/core</span><span class="dl">'</span><span class="p">;</span>
+
+<span class="kd">const</span> <span class="nx">appCtx</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Context</span><span class="p">(</span><span class="dl">'</span><span class="s1">application</span><span class="dl">'</span><span class="p">);</span>
+<span class="nx">appCtx</span><span class="p">.</span><span class="nx">scope</span> <span class="o">=</span> <span class="nx">BindingScope</span><span class="p">.</span><span class="nx">APPLICATION</span><span class="p">;</span>
+
+<span class="kd">const</span> <span class="nx">serverCtx</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Context</span><span class="p">(</span><span class="nx">appCtx</span><span class="p">,</span> <span class="dl">'</span><span class="s1">server</span><span class="dl">'</span><span class="p">);</span>
+<span class="nx">serverCtx</span><span class="p">.</span><span class="nx">scope</span> <span class="o">=</span> <span class="nx">BindingScope</span><span class="p">.</span><span class="nx">SERVER</span><span class="p">;</span>
+
+<span class="kd">const</span> <span class="nx">reqCtx</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Context</span><span class="p">(</span><span class="nx">serverCtx</span><span class="p">,</span> <span class="dl">'</span><span class="s1">request</span><span class="dl">'</span><span class="p">);</span>
+<span class="nx">reqCtx</span><span class="p">.</span><span class="nx">scope</span> <span class="o">=</span> <span class="nx">BindingScope</span><span class="p">.</span><span class="nx">REQUEST</span><span class="p">;</span>
+</code></pre></div></div>
+
+<ol>
+  <li>
+    <p>The owner context</p>
+
+    <p>The owner context is the context in which a binding is registered by
+<code class="language-plaintext highlighter-rouge">ctx.bind()</code> or <code class="language-plaintext highlighter-rouge">ctx.add()</code> APIs.</p>
+
+    <p>Let’s add some bindings to the context chain.</p>
+
+    <div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">appCtx</span><span class="p">.</span><span class="nx">bind</span><span class="p">(</span><span class="dl">'</span><span class="s1">foo.app</span><span class="dl">'</span><span class="p">).</span><span class="nx">to</span><span class="p">(</span><span class="dl">'</span><span class="s1">app.bar</span><span class="dl">'</span><span class="p">);</span>
+<span class="nx">serverCtx</span><span class="p">.</span><span class="nx">bind</span><span class="p">(</span><span class="dl">'</span><span class="s1">foo.server</span><span class="dl">'</span><span class="p">).</span><span class="nx">to</span><span class="p">(</span><span class="dl">'</span><span class="s1">server.bar</span><span class="dl">'</span><span class="p">);</span>
+</code></pre></div>    </div>
+
+    <p>The owner context for the code snippet above will be:</p>
+
+    <ul>
+      <li>‘foo.app’: appCtx</li>
+      <li>‘foo.server’: serverCtx</li>
+    </ul>
+  </li>
+  <li>
+    <p>The current context</p>
+
+    <p>The current context is either the one that is explicitly passed in APIs that
+starts the resolution or implicitly used to inject dependencies. For
+dependency injections, it will be the resolution context of the owning class
+binding. For example, the current context is <code class="language-plaintext highlighter-rouge">reqCtx</code> for the statement
+below:</p>
+
+    <div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">val</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">reqCtx</span><span class="p">.</span><span class="kd">get</span><span class="p">(</span><span class="dl">'</span><span class="s1">foo.app</span><span class="dl">'</span><span class="p">);</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>The resolution context</p>
+
+    <p>The resolution context is the context in the chain that will be used to find
+bindings by key. Only the resolution context itself and its ancestors are
+visible for the binding resolution.</p>
+
+    <p>The resolution context is determined for a binding key as follows:</p>
+
+    <p>a. Find the first binding with the given key in the current context or its
+ancestors recursively</p>
+
+    <p>b. Use the scope of binding found to locate the resolution context:</p>
+
+    <ul>
+      <li>Use the <code class="language-plaintext highlighter-rouge">current context</code> for <code class="language-plaintext highlighter-rouge">CONTEXT</code> and <code class="language-plaintext highlighter-rouge">TRANSIENT</code> scopes</li>
+      <li>Use the <code class="language-plaintext highlighter-rouge">owner context</code> for <code class="language-plaintext highlighter-rouge">SINGLETON</code> scope</li>
+      <li>Use the first context that matches the binding scope in the chain starting
+from the current context and traversing to its ancestors for
+<code class="language-plaintext highlighter-rouge">APPLICATION</code>, <code class="language-plaintext highlighter-rouge">SERVER</code> and <code class="language-plaintext highlighter-rouge">REQUEST</code> scopes</li>
+    </ul>
+
+    <p>For example:</p>
+
+    <div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="p">{</span><span class="nx">generateUniqueId</span><span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">@loopback/core</span><span class="dl">'</span><span class="p">;</span>
+
+<span class="nx">appCtx</span><span class="p">.</span><span class="nx">bind</span><span class="p">(</span><span class="dl">'</span><span class="s1">foo</span><span class="dl">'</span><span class="p">).</span><span class="nx">to</span><span class="p">(</span><span class="dl">'</span><span class="s1">app.bar</span><span class="dl">'</span><span class="p">);</span>
+<span class="nx">serverCtx</span>
+  <span class="p">.</span><span class="nx">bind</span><span class="p">(</span><span class="dl">'</span><span class="s1">foo</span><span class="dl">'</span><span class="p">)</span>
+  <span class="p">.</span><span class="nx">toDynamicValue</span><span class="p">(()</span> <span class="o">=&gt;</span> <span class="s2">`foo.server.</span><span class="p">${</span><span class="nx">generateUniqueId</span><span class="p">()}</span><span class="s2">`</span><span class="p">)</span>
+  <span class="p">.</span><span class="nx">inScope</span><span class="p">(</span><span class="nx">BindingScope</span><span class="p">.</span><span class="nx">SERVER</span><span class="p">);</span>
+
+<span class="nx">serverCtx</span>
+  <span class="p">.</span><span class="nx">bind</span><span class="p">(</span><span class="dl">'</span><span class="s1">xyz</span><span class="dl">'</span><span class="p">)</span>
+  <span class="p">.</span><span class="nx">toDynamicValue</span><span class="p">(()</span> <span class="o">=&gt;</span> <span class="s2">`abc.server.</span><span class="p">${</span><span class="nx">generateUniqueId</span><span class="p">()}</span><span class="s2">`</span><span class="p">)</span>
+  <span class="p">.</span><span class="nx">inScope</span><span class="p">(</span><span class="nx">BindingScope</span><span class="p">.</span><span class="nx">SINGLETON</span><span class="p">);</span>
+
+<span class="kd">const</span> <span class="nx">val</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">reqCtx</span><span class="p">.</span><span class="kd">get</span><span class="p">(</span><span class="dl">'</span><span class="s1">foo</span><span class="dl">'</span><span class="p">);</span>
+<span class="kd">const</span> <span class="nx">appVal</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">appCtx</span><span class="p">.</span><span class="kd">get</span><span class="p">(</span><span class="dl">'</span><span class="s1">foo</span><span class="dl">'</span><span class="p">);</span>
+<span class="kd">const</span> <span class="nx">xyz</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">reqCtx</span><span class="p">.</span><span class="kd">get</span><span class="p">(</span><span class="dl">'</span><span class="s1">xyz</span><span class="dl">'</span><span class="p">);</span>
+</code></pre></div>    </div>
+
+    <p>For <code class="language-plaintext highlighter-rouge">const val = await reqCtx.get('foo');</code>, the binding will be <code class="language-plaintext highlighter-rouge">foo</code>
+(scope=SERVER) in the <code class="language-plaintext highlighter-rouge">serverCtx</code> and resolution context will be
+<code class="language-plaintext highlighter-rouge">serverCtx</code>.</p>
+
+    <p>For <code class="language-plaintext highlighter-rouge">const appVal = await appCtx.get('foo');</code>, the binding will be <code class="language-plaintext highlighter-rouge">foo</code>
+(scope=TRANSIENT) in the <code class="language-plaintext highlighter-rouge">appCtx</code> and resolution context will be <code class="language-plaintext highlighter-rouge">appCtx</code>.</p>
+
+    <p>For <code class="language-plaintext highlighter-rouge">const xyz = await reqCtx.get('xyz');</code>, the binding will be <code class="language-plaintext highlighter-rouge">xyz</code>
+(scope=SINGLETON) in the <code class="language-plaintext highlighter-rouge">serverCtx</code> and resolution context will be
+<code class="language-plaintext highlighter-rouge">serverCtx</code>.</p>
+
+    <p>For dependency injections, the <code class="language-plaintext highlighter-rouge">current context</code> will be the
+<code class="language-plaintext highlighter-rouge">resolution context</code> of the class binding that declares injections. The
+<code class="language-plaintext highlighter-rouge">resolution context</code> will be located for each injection. If the bindings to
+be injected is NOT visible (either the key does not exist or only exists in
+descendant) to the <code class="language-plaintext highlighter-rouge">resolution context</code>, an error will be reported.</p>
+  </li>
+</ol>
+
+<div class="alert alert-info" role="alert">
+  <p><i class="fa fa-info-circle"></i>
+<b>Note:</b>
+If the owner context happens to be same as the
+resolution context, the <code class="language-plaintext highlighter-rouge">APPLICATION/SERVER/REQUEST</code> scope is equivalent as
+<code class="language-plaintext highlighter-rouge">SINGLETON</code> scope. For example, the following two bindings behave the same way
+as each other.</p>
+
+  <div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">let</span> <span class="nx">count</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="nx">appCtx</span>
+  <span class="p">.</span><span class="nx">bind</span><span class="p">(</span><span class="dl">'</span><span class="s1">app.counter</span><span class="dl">'</span><span class="p">)</span>
+  <span class="p">.</span><span class="nx">toDynamicValue</span><span class="p">(()</span> <span class="o">=&gt;</span> <span class="nx">count</span><span class="o">++</span><span class="p">)</span>
+  <span class="p">.</span><span class="nx">inScope</span><span class="p">(</span><span class="nx">BindingScope</span><span class="p">.</span><span class="nx">APPLICATION</span><span class="p">);</span>
+</code></pre></div>  </div>
+
+  <div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">let</span> <span class="nx">count</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="nx">appCtx</span>
+  <span class="p">.</span><span class="nx">bind</span><span class="p">(</span><span class="dl">'</span><span class="s1">app.counter</span><span class="dl">'</span><span class="p">)</span>
+  <span class="p">.</span><span class="nx">toDynamicValue</span><span class="p">(()</span> <span class="o">=&gt;</span> <span class="nx">count</span><span class="o">++</span><span class="p">)</span>
+  <span class="p">.</span><span class="nx">inScope</span><span class="p">(</span><span class="nx">BindingScope</span><span class="p">.</span><span class="nx">SINGLETON</span><span class="p">);</span>
+</code></pre></div>  </div>
+
+</div>
+
+<h3 id="refresh-a-binding-with-non-transient-scopes">Refresh a binding with non-transient scopes</h3>
+
+<p><code class="language-plaintext highlighter-rouge">SINGLETON</code>/<code class="language-plaintext highlighter-rouge">CONTEXT</code>/<code class="language-plaintext highlighter-rouge">APPLICATION</code>/<code class="language-plaintext highlighter-rouge">SERVER</code> scopes can be used to minimize the
+number of value instances created for a given binding. But sometimes we would
+like to force reloading of a binding when its configuration or dependencies are
+changed. For example, a logging provider can be refreshed to pick up a new
+logging level. The same functionality can be achieved with <code class="language-plaintext highlighter-rouge">TRANSIENT</code> scope but
+with much more overhead.</p>
+
+<p>The <code class="language-plaintext highlighter-rouge">binding.refresh()</code> method invalidates the cache so that its value will be
+reloaded next time.</p>
+
+<p><strong>WARNING: The state held in the cached value will be gone.</strong></p>
+
+<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">let</span> <span class="nx">logLevel</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="c1">// 'info'</span>
+
+<span class="c1">// Logging configuration</span>
+<span class="k">export</span> <span class="kr">interface</span> <span class="nx">LoggingOptions</span> <span class="p">{</span>
+  <span class="nl">level</span><span class="p">:</span> <span class="kr">number</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c1">// A simple logger</span>
+<span class="k">export</span> <span class="kd">class</span> <span class="nx">Logger</span> <span class="p">{</span>
+  <span class="kd">constructor</span><span class="p">(@</span><span class="nd">config</span><span class="p">()</span> <span class="k">private</span> <span class="nx">options</span><span class="p">:</span> <span class="nx">LoggingOptions</span><span class="p">)</span> <span class="p">{}</span>
+
+  <span class="nx">log</span><span class="p">(</span><span class="nx">level</span><span class="p">:</span> <span class="kr">string</span><span class="p">,</span> <span class="nx">message</span><span class="p">:</span> <span class="kr">string</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">options</span><span class="p">.</span><span class="nx">level</span> <span class="o">&gt;=</span> <span class="nx">level</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">[%d] %s</span><span class="dl">'</span><span class="p">,</span> <span class="nx">level</span><span class="p">,</span> <span class="nx">message</span><span class="p">);</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="c1">// Bind the logger</span>
+<span class="kd">const</span> <span class="nx">binding</span> <span class="o">=</span> <span class="nx">ctx</span>
+  <span class="p">.</span><span class="nx">bind</span><span class="p">(</span><span class="dl">'</span><span class="s1">logger</span><span class="dl">'</span><span class="p">)</span>
+  <span class="p">.</span><span class="nx">toClass</span><span class="p">(</span><span class="nx">Logger</span><span class="p">)</span>
+  <span class="p">.</span><span class="nx">inScope</span><span class="p">(</span><span class="nx">BindingScope</span><span class="p">.</span><span class="nx">SINGLETON</span><span class="p">);</span>
+
+<span class="c1">// Start with `info` level logging</span>
+<span class="nx">ctx</span><span class="p">.</span><span class="nx">configure</span><span class="p">(</span><span class="nx">binding</span><span class="p">.</span><span class="nx">key</span><span class="p">).</span><span class="nx">to</span><span class="p">({</span><span class="na">level</span><span class="p">:</span> <span class="mi">1</span><span class="p">});</span>
+<span class="kd">const</span> <span class="nx">logger</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">ctx</span><span class="p">.</span><span class="kd">get</span><span class="o">&lt;</span><span class="nx">Logger</span><span class="o">&gt;</span><span class="p">(</span><span class="dl">'</span><span class="s1">logger</span><span class="dl">'</span><span class="p">);</span>
+<span class="nx">logger</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="dl">'</span><span class="s1">info message</span><span class="dl">'</span><span class="p">);</span> <span class="c1">// Prints to console</span>
+<span class="nx">logger</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="dl">'</span><span class="s1">debug message</span><span class="dl">'</span><span class="p">);</span> <span class="c1">// Does not print to console</span>
+
+<span class="c1">// Now change the configuration to enable debugging</span>
+<span class="nx">ctx</span><span class="p">.</span><span class="nx">configure</span><span class="p">(</span><span class="nx">binding</span><span class="p">.</span><span class="nx">key</span><span class="p">).</span><span class="nx">to</span><span class="p">({</span><span class="na">level</span><span class="p">:</span> <span class="mi">5</span><span class="p">});</span>
+<span class="c1">// Force a refresh on the binding</span>
+<span class="nx">binding</span><span class="p">.</span><span class="nx">refresh</span><span class="p">(</span><span class="nx">ctx</span><span class="p">);</span>
+
+<span class="kd">const</span> <span class="nx">newLogger</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">ctx</span><span class="p">.</span><span class="kd">get</span><span class="o">&lt;</span><span class="nx">Logger</span><span class="o">&gt;</span><span class="p">(</span><span class="dl">'</span><span class="s1">logger</span><span class="dl">'</span><span class="p">);</span>
+<span class="nx">newLogger</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="dl">'</span><span class="s1">info message</span><span class="dl">'</span><span class="p">);</span> <span class="c1">// Prints to console</span>
+<span class="nx">newLogger</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="dl">'</span><span class="s1">debug message</span><span class="dl">'</span><span class="p">);</span> <span class="c1">// Prints to console too!</span>
+</code></pre></div></div>
+
+<h3 id="describe-tags">Describe tags</h3>
+
+<p>Tags can be used to annotate bindings so that they can be grouped or searched.
+For example, we can tag a binding as a <code class="language-plaintext highlighter-rouge">controller</code> or <code class="language-plaintext highlighter-rouge">repository</code>. The tags
+are often introduced by an extension point to mark its extensions contributed by
+other components.</p>
+
+<p>There are two types of tags:</p>
+
+<ul>
+  <li>Simple tag - a tag string, such as <code class="language-plaintext highlighter-rouge">'controller'</code></li>
+  <li>Value tag - a name/value pair, such as <code class="language-plaintext highlighter-rouge">{name: 'MyController'}</code></li>
+</ul>
+
+<p>Internally, we use the tag name as its value for simple tags, for example,
+<code class="language-plaintext highlighter-rouge">{controller: 'controller'}</code>.</p>
+
+<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">binding</span><span class="p">.</span><span class="nx">tag</span><span class="p">(</span><span class="dl">'</span><span class="s1">controller</span><span class="dl">'</span><span class="p">);</span>
+<span class="nx">binding</span><span class="p">.</span><span class="nx">tag</span><span class="p">(</span><span class="dl">'</span><span class="s1">controller</span><span class="dl">'</span><span class="p">,</span> <span class="p">{</span><span class="na">name</span><span class="p">:</span> <span class="dl">'</span><span class="s1">MyController</span><span class="dl">'</span><span class="p">});</span>
+</code></pre></div></div>
+
+<p>The binding tags can be accessed via <code class="language-plaintext highlighter-rouge">binding.tagMap</code> or <code class="language-plaintext highlighter-rouge">binding.tagNames</code>.</p>
+
+<p>Binding tags play an import role in discovering artifacts with matching tags.
+The <code class="language-plaintext highlighter-rouge">filterByTag</code> helper function and <code class="language-plaintext highlighter-rouge">context.findByTag</code> method can be used to
+match/find bindings by tag. The search criteria can be one of the followings:</p>
+
+<ol>
+  <li>A tag name, such as <code class="language-plaintext highlighter-rouge">controller</code></li>
+  <li>A tag name wildcard or regular expression, such as <code class="language-plaintext highlighter-rouge">controller.*</code> or
+<code class="language-plaintext highlighter-rouge">/controller/</code></li>
+  <li>
+    <p>An object contains tag name/value pairs, such as
+<code class="language-plaintext highlighter-rouge">{name: 'my-controller', type: 'controller'}</code>. In addition to exact match,
+the value for a tag name can be a function that determines if a given tag
+value matches. For example,</p>
+
+    <div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="p">{</span>
+  <span class="nx">ANY_TAG_VALUE</span><span class="p">,</span> <span class="c1">// Match any value if it exists</span>
+  <span class="nx">filterByTag</span><span class="p">,</span>
+  <span class="nx">includesTagValue</span><span class="p">,</span> <span class="c1">// Match tag value as an array that includes the item</span>
+  <span class="nx">TagValueMatcher</span><span class="p">,</span>
+<span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">@loopback/core</span><span class="dl">'</span><span class="p">;</span>
+<span class="c1">// Match a binding with a named service</span>
+<span class="nx">ctx</span><span class="p">.</span><span class="nx">find</span><span class="p">(</span><span class="nx">filterByTag</span><span class="p">({</span><span class="na">name</span><span class="p">:</span> <span class="nx">ANY_TAG_VALUE</span><span class="p">,</span> <span class="na">service</span><span class="p">:</span> <span class="dl">'</span><span class="s1">service</span><span class="dl">'</span><span class="p">}));</span>
+
+<span class="c1">// Match a binding as an extension for `my-extension-point`</span>
+<span class="nx">ctx</span><span class="p">.</span><span class="nx">find</span><span class="p">(</span>
+  <span class="nx">filterByTag</span><span class="p">({</span><span class="na">extensionFor</span><span class="p">:</span> <span class="nx">includesTagValue</span><span class="p">(</span><span class="dl">'</span><span class="s1">my-extension-point</span><span class="dl">'</span><span class="p">)}),</span>
+<span class="p">);</span>
+
+<span class="c1">// Match a binding with weight &gt; 100</span>
+<span class="kd">const</span> <span class="nx">weightMatcher</span><span class="p">:</span> <span class="nx">TagValueMatcher</span> <span class="o">=</span> <span class="nx">tagValue</span> <span class="o">=&gt;</span> <span class="nx">tagValue</span> <span class="o">&gt;</span> <span class="mi">100</span><span class="p">;</span>
+<span class="nx">ctx</span><span class="p">.</span><span class="nx">find</span><span class="p">(</span><span class="nx">filterByTag</span><span class="p">({</span><span class="na">weight</span><span class="p">:</span> <span class="nx">weightMatcher</span><span class="p">}));</span>
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<h3 id="chain-multiple-steps">Chain multiple steps</h3>
+
+<p>The <code class="language-plaintext highlighter-rouge">Binding</code> fluent APIs allow us to chain multiple steps as follows:</p>
+
+<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">context</span><span class="p">.</span><span class="nx">bind</span><span class="p">(</span><span class="dl">'</span><span class="s1">my-key</span><span class="dl">'</span><span class="p">).</span><span class="nx">to</span><span class="p">(</span><span class="dl">'</span><span class="s1">my-value</span><span class="dl">'</span><span class="p">).</span><span class="nx">tag</span><span class="p">(</span><span class="dl">'</span><span class="s1">my-tag</span><span class="dl">'</span><span class="p">);</span>
+</code></pre></div></div>
+
+<h3 id="apply-a-template-function">Apply a template function</h3>
+
+<p>It’s common that we want to configure certain bindings with the same attributes
+such as tags and scope. To allow such setting, use <code class="language-plaintext highlighter-rouge">binding.apply()</code>:</p>
+
+<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">export</span> <span class="kd">const</span> <span class="nx">serverTemplate</span> <span class="o">=</span> <span class="p">(</span><span class="nx">binding</span><span class="p">:</span> <span class="nx">Binding</span><span class="p">)</span> <span class="o">=&gt;</span>
+  <span class="nx">binding</span><span class="p">.</span><span class="nx">inScope</span><span class="p">(</span><span class="nx">BindingScope</span><span class="p">.</span><span class="nx">SINGLETON</span><span class="p">).</span><span class="nx">tag</span><span class="p">(</span><span class="dl">'</span><span class="s1">server</span><span class="dl">'</span><span class="p">);</span>
+</code></pre></div></div>
+
+<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">serverBinding</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Binding</span><span class="o">&lt;</span><span class="nx">RestServer</span><span class="o">&gt;</span><span class="p">(</span><span class="dl">'</span><span class="s1">servers.RestServer1</span><span class="dl">'</span><span class="p">);</span>
+<span class="nx">serverBinding</span><span class="p">.</span><span class="nx">apply</span><span class="p">(</span><span class="nx">serverTemplate</span><span class="p">);</span>
+</code></pre></div></div>
+
+<h3 id="configure-binding-attributes-for-a-class">Configure binding attributes for a class</h3>
+
+<p>Classes can be discovered and bound to the application context during <code class="language-plaintext highlighter-rouge">boot</code>. In
+addition to conventions, it’s often desirable to allow certain binding
+attributes, such as scope and tags, to be specified as metadata for the class.
+When the class is bound, these attributes are honored to create a binding. You
+can use <code class="language-plaintext highlighter-rouge">@injectable</code> decorator to configure how to bind a class.</p>
+
+<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="p">{</span><span class="nx">injectable</span><span class="p">,</span> <span class="nx">BindingScope</span><span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">@loopback/core</span><span class="dl">'</span><span class="p">;</span>
+
+<span class="c1">// @injectable() accepts scope and tags</span>
+<span class="p">@</span><span class="nd">injectable</span><span class="p">({</span>
+  <span class="na">scope</span><span class="p">:</span> <span class="nx">BindingScope</span><span class="p">.</span><span class="nx">SINGLETON</span><span class="p">,</span>
+  <span class="na">tags</span><span class="p">:</span> <span class="p">[</span><span class="dl">'</span><span class="s1">service</span><span class="dl">'</span><span class="p">],</span>
+<span class="p">})</span>
+<span class="k">export</span> <span class="kd">class</span> <span class="nx">MyService</span> <span class="p">{}</span>
+
+<span class="c1">// @binding.provider is a shortcut for a provider class</span>
+<span class="p">@</span><span class="nd">injectable</span><span class="p">.</span><span class="nx">provider</span><span class="p">({</span>
+  <span class="na">tags</span><span class="p">:</span> <span class="p">{</span>
+    <span class="na">key</span><span class="p">:</span> <span class="dl">'</span><span class="s1">my-date-provider</span><span class="dl">'</span><span class="p">,</span>
+  <span class="p">},</span>
+<span class="p">})</span>
+<span class="k">export</span> <span class="kd">class</span> <span class="nx">MyDateProvider</span> <span class="k">implements</span> <span class="nx">Provider</span><span class="o">&lt;</span><span class="nb">Date</span><span class="o">&gt;</span> <span class="p">{</span>
+  <span class="nx">value</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="k">new</span> <span class="nb">Date</span><span class="p">();</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="p">@</span><span class="nd">injectable</span><span class="p">({</span>
+  <span class="na">tags</span><span class="p">:</span> <span class="p">[</span><span class="dl">'</span><span class="s1">controller</span><span class="dl">'</span><span class="p">,</span> <span class="p">{</span><span class="na">name</span><span class="p">:</span> <span class="dl">'</span><span class="s1">my-controller</span><span class="dl">'</span><span class="p">}],</span>
+<span class="p">})</span>
+<span class="k">export</span> <span class="kd">class</span> <span class="nx">MyController</span> <span class="p">{}</span>
+
+<span class="c1">// @injectable() can take one or more binding template functions</span>
+<span class="p">@</span><span class="nd">injectable</span><span class="p">(</span><span class="nx">binding</span> <span class="o">=&gt;</span> <span class="nx">binding</span><span class="p">.</span><span class="nx">tag</span><span class="p">(</span><span class="dl">'</span><span class="s1">controller</span><span class="dl">'</span><span class="p">,</span> <span class="p">{</span><span class="na">name</span><span class="p">:</span> <span class="dl">'</span><span class="s1">your-controller</span><span class="dl">'</span><span class="p">})</span>
+<span class="k">export</span> <span class="kd">class</span> <span class="nx">YourController</span> <span class="p">{}</span>
+</code></pre></div></div>
+
+<p>Then a binding can be created by inspecting the class,</p>
+
+<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="p">{</span><span class="nx">createBindingFromClass</span><span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">@loopback/core</span><span class="dl">'</span><span class="p">;</span>
+
+<span class="kd">const</span> <span class="nx">ctx</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Context</span><span class="p">();</span>
+<span class="kd">const</span> <span class="nx">binding</span> <span class="o">=</span> <span class="nx">createBindingFromClass</span><span class="p">(</span><span class="nx">MyService</span><span class="p">);</span>
+<span class="nx">ctx</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="nx">binding</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>Please note <code class="language-plaintext highlighter-rouge">createBindingFromClass</code> also accepts an optional <code class="language-plaintext highlighter-rouge">options</code>
+parameter of <code class="language-plaintext highlighter-rouge">BindingFromClassOptions</code> type with the following settings:</p>
+
+<ul>
+  <li>key: Binding key, such as <code class="language-plaintext highlighter-rouge">controllers.MyController</code></li>
+  <li>type: Artifact type, such as <code class="language-plaintext highlighter-rouge">server</code>, <code class="language-plaintext highlighter-rouge">controller</code>, <code class="language-plaintext highlighter-rouge">repository</code> or <code class="language-plaintext highlighter-rouge">service</code></li>
+  <li>name: Artifact name, such as <code class="language-plaintext highlighter-rouge">my-rest-server</code> and <code class="language-plaintext highlighter-rouge">my-controller</code>, default to
+the name of the bound class</li>
+  <li>namespace: Namespace for the binding key, such as <code class="language-plaintext highlighter-rouge">servers</code> and <code class="language-plaintext highlighter-rouge">controllers</code>.
+If <code class="language-plaintext highlighter-rouge">key</code> does not exist, its value is calculated as <code class="language-plaintext highlighter-rouge">&lt;namespace&gt;.&lt;name&gt;</code>.</li>
+  <li>
+    <p>typeNamespaceMapping: Mapping artifact type to binding key namespaces, such
+as:</p>
+
+    <div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span>
+  <span class="nl">controller</span><span class="p">:</span> <span class="dl">'</span><span class="s1">controllers</span><span class="dl">'</span><span class="p">,</span>
+  <span class="nx">repository</span><span class="p">:</span> <span class="dl">'</span><span class="s1">repositories</span><span class="dl">'</span>
+<span class="p">}</span>
+</code></pre></div>    </div>
+  </li>
+  <li>defaultNamespace: Default namespace if namespace or namespace tag does not
+exist</li>
+  <li>defaultScope: Default scope if the binding does not have an explicit scope
+set. The <code class="language-plaintext highlighter-rouge">scope</code> from <code class="language-plaintext highlighter-rouge">@injectable</code> of the bound class takes precedence.</li>
+</ul>
+
+<div class="alert alert-info" role="alert">
+  <p><i class="fa fa-info-circle"></i>
+<b>Note:</b>
+ The <code class="language-plaintext highlighter-rouge">@injectable</code> decorator only adds metadata to
+the class. It does NOT automatically bind the class to a context. To bind a
+class with <code class="language-plaintext highlighter-rouge">@injectable</code> decoration, the following step needs to happen
+explicitly or implicitly by a <a href="/doc/en/lb4/Booting-an-Application.html#booters">booter</a>.</p>
+
+  <div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">binding</span> <span class="o">=</span> <span class="nx">createBindingFromClass</span><span class="p">(</span><span class="nx">AClassOrProviderWithBindDecoration</span><span class="p">);</span>
+<span class="nx">ctx</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="nx">binding</span><span class="p">);</span>
+</code></pre></div>  </div>
+
+  <p>The metadata added by <code class="language-plaintext highlighter-rouge">@injectable</code> is <strong>NOT</strong> inspected/honored by <code class="language-plaintext highlighter-rouge">toClass</code> or
+<code class="language-plaintext highlighter-rouge">toProvider</code>. Be warned that the example below does NOT set up the binding per
+<code class="language-plaintext highlighter-rouge">@injectable</code> decoration:</p>
+
+  <div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">binding</span> <span class="o">=</span> <span class="nx">ctx</span><span class="p">.</span><span class="nx">bind</span><span class="p">(</span><span class="dl">'</span><span class="s1">my-key</span><span class="dl">'</span><span class="p">).</span><span class="nx">toClass</span><span class="p">(</span><span class="nx">MyService</span><span class="p">);</span>
+<span class="c1">// The binding is NOT configured based on the `@injectable` decoration on MyService.</span>
+<span class="c1">// The scope is BindingScope.TRANSIENT (not BindingScope.SINGLETON).</span>
+<span class="c1">// There is no tag named 'service' for the binding either.</span>
+</code></pre></div>  </div>
+
+</div>
+
+<p>The <code class="language-plaintext highlighter-rouge">createBindingFromClass</code> can be used for three kinds of classes as the value
+provider for bindings.</p>
+
+<ol>
+  <li>
+    <p>The class for <code class="language-plaintext highlighter-rouge">toClass()</code></p>
+
+    <div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">@</span><span class="nd">injectable</span><span class="p">({</span><span class="na">tags</span><span class="p">:</span> <span class="p">{</span><span class="na">greeting</span><span class="p">:</span> <span class="dl">'</span><span class="s1">a</span><span class="dl">'</span><span class="p">}})</span>
+<span class="kd">class</span> <span class="nx">Greeter</span> <span class="p">{</span>
+  <span class="kd">constructor</span><span class="p">(@</span><span class="nd">inject</span><span class="p">(</span><span class="dl">'</span><span class="s1">currentUser</span><span class="dl">'</span><span class="p">)</span> <span class="k">private</span> <span class="nx">user</span><span class="p">:</span> <span class="kr">string</span><span class="p">)</span> <span class="p">{}</span>
+
+  <span class="nx">greet</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="s2">`Hello, </span><span class="p">${</span><span class="k">this</span><span class="p">.</span><span class="nx">user</span><span class="p">}</span><span class="s2">`</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="c1">// toClass() is used internally</span>
+<span class="c1">// A tag `{type: 'class'}` is added</span>
+<span class="kd">const</span> <span class="nx">binding</span> <span class="o">=</span> <span class="nx">createBindingFromClass</span><span class="p">(</span><span class="nx">Greeter</span><span class="p">);</span>
+<span class="nx">ctx</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="nx">binding</span><span class="p">);</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>The class for <code class="language-plaintext highlighter-rouge">toProvider()</code></p>
+  </li>
+</ol>
+
+<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">@</span><span class="nd">injectable</span><span class="p">({</span><span class="na">tags</span><span class="p">:</span> <span class="p">{</span><span class="na">greeting</span><span class="p">:</span> <span class="dl">'</span><span class="s1">b</span><span class="dl">'</span><span class="p">}})</span>
+<span class="kd">class</span> <span class="nx">GreetingProvider</span> <span class="k">implements</span> <span class="nx">Provider</span><span class="o">&lt;</span><span class="kr">string</span><span class="o">&gt;</span> <span class="p">{</span>
+  <span class="kd">constructor</span><span class="p">(@</span><span class="nd">inject</span><span class="p">(</span><span class="dl">'</span><span class="s1">currentUser</span><span class="dl">'</span><span class="p">)</span> <span class="k">private</span> <span class="na">user</span><span class="p">:</span> <span class="kr">string</span><span class="p">)</span> <span class="p">{}</span>
+
+  <span class="nx">value</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="s2">`Hello, </span><span class="p">${</span><span class="k">this</span><span class="p">.</span><span class="nx">user</span><span class="p">}</span><span class="s2">`</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="c1">// toProvider() is used internally</span>
+<span class="c1">// A tag `{type: 'provider'}` is added</span>
+<span class="kd">const</span> <span class="nx">binding</span> <span class="o">=</span> <span class="nx">createBindingFromClass</span><span class="p">(</span><span class="nx">GreetingProvider</span><span class="p">);</span>
+<span class="nx">ctx</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="nx">binding</span><span class="p">);</span>
+</code></pre></div></div>
+
+<ol>
+  <li>The class for <code class="language-plaintext highlighter-rouge">toDynamicValue()</code></li>
+</ol>
+
+<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">@</span><span class="nd">injectable</span><span class="p">({</span><span class="na">tags</span><span class="p">:</span> <span class="p">{</span><span class="na">greeting</span><span class="p">:</span> <span class="dl">'</span><span class="s1">c</span><span class="dl">'</span><span class="p">}})</span>
+<span class="kd">class</span> <span class="nx">DynamicGreetingProvider</span> <span class="p">{</span>
+  <span class="k">static</span> <span class="nx">value</span><span class="p">(@</span><span class="nd">inject</span><span class="p">(</span><span class="dl">'</span><span class="s1">currentUser</span><span class="dl">'</span><span class="p">)</span> <span class="nx">user</span><span class="p">:</span> <span class="kr">string</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="s2">`Hello, </span><span class="p">${</span><span class="k">this</span><span class="p">.</span><span class="nx">user</span><span class="p">}</span><span class="s2">`</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="c1">// toDynamicValue() is used internally</span>
+<span class="c1">// A tag `{type: 'dynamicValueProvider'}` is added</span>
+<span class="kd">const</span> <span class="nx">binding</span> <span class="o">=</span> <span class="nx">createBindingFromClass</span><span class="p">(</span><span class="nx">GreetingProvider</span><span class="p">);</span>
+<span class="nx">ctx</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="nx">binding</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>The <code class="language-plaintext highlighter-rouge">@injectable</code> is optional for such classes. But it’s usually there to
+provide additional metadata such as scope and tags for the binding. Without
+<code class="language-plaintext highlighter-rouge">@injectable</code>, <code class="language-plaintext highlighter-rouge">createFromClass</code> simply calls underlying <code class="language-plaintext highlighter-rouge">toClass</code>,
+<code class="language-plaintext highlighter-rouge">toProvider</code>, or <code class="language-plaintext highlighter-rouge">toDynamicValue</code> based on the class signature.</p>
+
+<h4 id="when-to-call-createbindingfromclass">When to call createBindingFromClass</h4>
+
+<p>Classes that are placed in specific directories such as : <code class="language-plaintext highlighter-rouge">src/datasources</code>,
+<code class="language-plaintext highlighter-rouge">src/controllers</code>, <code class="language-plaintext highlighter-rouge">src/services</code>, <code class="language-plaintext highlighter-rouge">src/repositories</code>, <code class="language-plaintext highlighter-rouge">src/observers</code>,
+<code class="language-plaintext highlighter-rouge">src/interceptors</code>, etc are automatically registered by
+<a href="/doc/en/lb4/Booting-an-Application.html">the boot process</a>, and so it is <strong>not</strong> necessary to
+call</p>
+
+<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">binding</span> <span class="o">=</span> <span class="nx">createBindingFromClass</span><span class="p">(</span><span class="nx">AClassOrProviderWithBindDecoration</span><span class="p">);</span>
+<span class="nx">ctx</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="nx">binding</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>in your application.</p>
+
+<p>If, on the other hand, your classes are placed in different directories expected
+by the boot process, then it is necessary to call the code above in your
+application.</p>
+
+<h5 id="how-the-boot-process-calls-createbindingfromclass-for-you">How the Boot Process Calls createBindingFromClass for you</h5>
+
+<p>A default LoopBack 4 application uses
+<a href="/doc/en/lb4/Booting-an-Application.html#bootmixin">BootMixin</a> which loads the
+<a href="/doc/en/lb4/Booting-an-Application.html#bootcomponent">BootComponent</a>. It declares the main
+<a href="https://github.com/strongloop/loopback-next/blob/a81ce7e1193f7408d30d984d0c3ddcec74f7c316/packages/boot/src/boot.component.ts#L29">booters</a>
+for an application : application metadata, controllers, repositories, services,
+datasources, lifecycle observers, interceptors, and model api. The
+<a href="https://github.com/strongloop/loopback-next/blob/a81ce7e1193f7408d30d984d0c3ddcec74f7c316/packages/boot/src/booters/controller.booter.ts#L23">ControllerBooter</a>,
+for example, calls <code class="language-plaintext highlighter-rouge">this.app.controller(controllerClass)</code> for every controller
+class discovered in the <code class="language-plaintext highlighter-rouge">controllers</code> folder. This
+<a href="https://github.com/strongloop/loopback-next/blob/da9a7e72b12ebb9250214b92dc20a268a8bb7e95/packages/core/src/application.ts#L124">method</a>
+does all the work for you; as shown below:</p>
+
+<div id="loopback-next/packages/core/src/application.ts" class="code-caption">
+  <p>loopback-next/packages/core/src/application.ts</p>
+</div>
+
+<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="nx">controller</span><span class="p">(</span><span class="nx">controllerCtor</span><span class="p">:</span> <span class="nx">ControllerClass</span><span class="p">,</span> <span class="nx">name</span><span class="p">?:</span> <span class="kr">string</span><span class="p">):</span> <span class="nx">Binding</span> <span class="p">{</span>
+    <span class="nx">debug</span><span class="p">(</span><span class="dl">'</span><span class="s1">Adding controller %s</span><span class="dl">'</span><span class="p">,</span> <span class="nx">name</span> <span class="o">??</span> <span class="nx">controllerCtor</span><span class="p">.</span><span class="nx">name</span><span class="p">);</span>
+    <span class="kd">const</span> <span class="nx">binding</span> <span class="o">=</span> <span class="nx">createBindingFromClass</span><span class="p">(</span><span class="nx">controllerCtor</span><span class="p">,</span> <span class="p">{</span>
+      <span class="nx">name</span><span class="p">,</span>
+      <span class="na">namespace</span><span class="p">:</span> <span class="nx">CoreBindings</span><span class="p">.</span><span class="nx">CONTROLLERS</span><span class="p">,</span>
+      <span class="na">type</span><span class="p">:</span> <span class="nx">CoreTags</span><span class="p">.</span><span class="nx">CONTROLLER</span><span class="p">,</span>
+      <span class="na">defaultScope</span><span class="p">:</span> <span class="nx">BindingScope</span><span class="p">.</span><span class="nx">TRANSIENT</span><span class="p">,</span>
+    <span class="p">});</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="nx">binding</span><span class="p">);</span>
+    <span class="k">return</span> <span class="nx">binding</span><span class="p">;</span>
+  <span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="encoding-value-types-in-binding-keys">Encoding value types in binding keys</h3>
+
+<p>String keys for bindings do not help enforce the value type. Consider the
+example from the previous section:</p>
+
+<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">app</span><span class="p">.</span><span class="nx">bind</span><span class="p">(</span><span class="dl">'</span><span class="s1">hello</span><span class="dl">'</span><span class="p">).</span><span class="nx">to</span><span class="p">(</span><span class="dl">'</span><span class="s1">world</span><span class="dl">'</span><span class="p">);</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">app</span><span class="p">.</span><span class="nx">getSync</span><span class="o">&lt;</span><span class="kr">string</span><span class="o">&gt;</span><span class="p">(</span><span class="dl">'</span><span class="s1">hello</span><span class="dl">'</span><span class="p">));</span>
+</code></pre></div></div>
+
+<p>The code obtaining the bound value is explicitly specifying the type of this
+value. Such solution is far from ideal:</p>
+
+<ol>
+  <li>Consumers have to know the exact name of the type that’s associated with
+each binding key and also where to import it from.</li>
+  <li>Consumers must explicitly provide this type to the compiler when calling
+ctx.get in order to benefit from compile-type checks.</li>
+  <li>It’s easy to accidentally provide a wrong type when retrieving the value and
+get a false sense of security.</li>
+</ol>
+
+<p>The third point is important because the bugs can be subtle and difficult to
+spot.</p>
+
+<p>Consider the following REST binding key:</p>
+
+<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">export</span> <span class="kd">const</span> <span class="nx">HOST</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">rest.host</span><span class="dl">'</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>The binding key does not provide any indication that <code class="language-plaintext highlighter-rouge">undefined</code> is a valid
+value for the HOST binding. Without that knowledge, one could write the
+following code and get it accepted by TypeScript compiler, only to learn at
+runtime that HOST may be also undefined and the code needs to find the server’s
+host name using a different way.:</p>
+
+<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">resolve</span> <span class="o">=</span> <span class="nx">promisify</span><span class="p">(</span><span class="nx">dns</span><span class="p">.</span><span class="nx">resolve</span><span class="p">);</span>
+
+<span class="kd">const</span> <span class="nx">host</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">ctx</span><span class="p">.</span><span class="kd">get</span><span class="o">&lt;</span><span class="kr">string</span><span class="o">&gt;</span><span class="p">(</span><span class="nx">RestBindings</span><span class="p">.</span><span class="nx">HOST</span><span class="p">);</span>
+<span class="kd">const</span> <span class="nx">records</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">resolve</span><span class="p">(</span><span class="nx">host</span><span class="p">);</span>
+<span class="c1">// etc.</span>
+</code></pre></div></div>
+
+<p>To address this problem, LoopBack provides a templated wrapper class allowing
+binding keys to encode the value type too. The <code class="language-plaintext highlighter-rouge">HOST</code> binding described above
+can be defined as follows:</p>
+
+<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">export</span> <span class="kd">const</span> <span class="nx">HOST</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">BindingKey</span><span class="o">&lt;</span><span class="kr">string</span> <span class="o">|</span> <span class="kc">undefined</span><span class="o">&gt;</span><span class="p">(</span><span class="dl">'</span><span class="s1">rest.host</span><span class="dl">'</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>Context methods like <code class="language-plaintext highlighter-rouge">.get()</code> and <code class="language-plaintext highlighter-rouge">.getSync()</code> understand this wrapper and use
+the value type from the binding key to describe the type of the value they are
+returning themselves. This allows binding consumers to omit the expected value
+type when calling <code class="language-plaintext highlighter-rouge">.get()</code> and <code class="language-plaintext highlighter-rouge">.getSync()</code>.</p>
+
+<p>When we rewrite the failing snippet resolving HOST names to use the new API, the
+TypeScript compiler immediately tells us about the problem:</p>
+
+<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">host</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">ctx</span><span class="p">.</span><span class="kd">get</span><span class="p">(</span><span class="nx">RestBindings</span><span class="p">.</span><span class="nx">HOST</span><span class="p">);</span>
+<span class="kd">const</span> <span class="nx">records</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">resolve</span><span class="p">(</span><span class="nx">host</span><span class="p">);</span>
+<span class="c1">// Compiler complains:</span>
+<span class="c1">// - cannot convert string | undefined to string</span>
+<span class="c1">//  - cannot convert undefined to string</span>
+</code></pre></div></div>
+
+<h3 id="binding-events">Binding events</h3>
+
+<p>A binding can emit <code class="language-plaintext highlighter-rouge">changed</code> events upon changes triggered by methods such as
+<code class="language-plaintext highlighter-rouge">tag</code>, <code class="language-plaintext highlighter-rouge">inScope</code>, <code class="language-plaintext highlighter-rouge">to</code>, and <code class="language-plaintext highlighter-rouge">toClass</code>.</p>
+
+<p>The binding listener function signature is described as:</p>
+
+<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cm">/**
+ * Information for a binding event
+ */</span>
+<span class="k">export</span> <span class="kd">type</span> <span class="nx">BindingEvent</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="cm">/**
+   * Event type
+   */</span>
+  <span class="na">type</span><span class="p">:</span> <span class="kr">string</span><span class="p">;</span>
+  <span class="cm">/**
+   * Source binding that emits the event
+   */</span>
+  <span class="nl">binding</span><span class="p">:</span> <span class="nb">Readonly</span><span class="o">&lt;</span><span class="nx">Binding</span><span class="o">&lt;</span><span class="nx">unknown</span><span class="o">&gt;&gt;</span><span class="p">;</span>
+  <span class="cm">/**
+   * Operation that triggers the event
+   */</span>
+  <span class="nl">operation</span><span class="p">:</span> <span class="kr">string</span><span class="p">;</span>
+<span class="p">};</span>
+
+<span class="cm">/**
+ * Event listeners for binding events
+ */</span>
+<span class="k">export</span> <span class="kd">type</span> <span class="nx">BindingEventListener</span> <span class="o">=</span> <span class="p">(</span>
+  <span class="cm">/**
+   * Binding event
+   */</span>
+  <span class="nx">event</span><span class="p">:</span> <span class="nx">BindingEvent</span><span class="p">,</span>
+<span class="p">)</span> <span class="o">=&gt;</span> <span class="k">void</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>Now we can register a binding listener to be triggered when tags are changed:</p>
+
+<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">bindingListener</span><span class="p">:</span> <span class="nx">BindingEventListener</span> <span class="o">=</span> <span class="p">({</span><span class="nx">binding</span><span class="p">,</span> <span class="nx">operation</span><span class="p">})</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="k">if</span> <span class="p">(</span><span class="nx">operation</span> <span class="o">===</span> <span class="dl">'</span><span class="s1">tag</span><span class="dl">'</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">Binding tags for %s %j</span><span class="dl">'</span><span class="p">,</span> <span class="nx">binding</span><span class="p">.</span><span class="nx">key</span><span class="p">,</span> <span class="nx">binding</span><span class="p">.</span><span class="nx">tagMap</span><span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">});</span>
+
+<span class="nx">binding</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="dl">'</span><span class="s1">changed</span><span class="dl">'</span><span class="p">,</span> <span class="nx">bindingListener</span><span class="p">);</span>
+</code></pre></div></div>
+
+
+    <div class="tags">
+      
+    </div>
+</div>
+
+<hr class="shaded"/>
+
+<footer id="container">
+            <div class="row">
+                <div class="col-md-6 footer-left">
+               &copy;2021 IBM / StrongLoop. All rights reserved. <br />
+ Site last generated: Mar 22, 2021
+              </div>
+              <div class="col-md-6 footer-right">
+                <p><img src="https://loopback.io/images/company_logo.png" alt="Company logo"/></p>
+              </div>
+            </div>
+</footer>
+
+
+        </div>
+        <!-- /.row -->
+</div>
+<!-- /.container -->
+    </div>
+</body>
+
+</html>

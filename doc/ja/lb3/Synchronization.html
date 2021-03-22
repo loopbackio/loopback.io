@@ -1,0 +1,3503 @@
+<!DOCTYPE html>
+<head>
+    
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Synchronization replicates data between client and server using the LoopBack replication API.">
+  <meta name="keywords" content=" LoopBack">
+  <title>Synchronization | LoopBack Documentation</title>
+  <link rel="stylesheet" href="/css/syntax.css">
+
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/modern-business.css">
+    <link rel="stylesheet" href="/css/lavish-bootstrap.css">
+    <link rel="stylesheet" href="/css/customstyles.css">
+    <link rel="stylesheet" href="/css/theme-v4.css">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-150726441-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-150726441-2');
+</script>
+
+
+    <!-- github star button -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.3.0/anchor.min.js"></script>
+    <script src="/js/toc.js"></script>
+    <script src="/js/customscripts.js"></script>
+
+    <link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    
+
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-lg navbar-brand no_icon" href="/doc/index.html">
+              <img class="no_icon" style="width:147px;" src="/images/branding/logo/white/loopback.svg">&nbsp;<span class="projectTitle"></span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- entries without drop-downs appear here -->
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">API Docs<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        <!-- page.url is /doc/ja/lb3/Synchronization.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://loopback.io/doc/en/lb4/apidocs.index.html" target="_blank">LoopBack 4</a></li>
+                          
+                        
+                        <!-- page.url is /doc/ja/lb3/Synchronization.html .... folderitem.url is  -->
+                          
+                            <li><a href="http://apidocs.loopback.io" target="_blank">LoopBack 3.x</a></li>
+                          
+                        
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">View<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        <!-- page.url is /doc/ja/lb3/Synchronization.html .... folderitem.url is / -->
+                          
+                            <li><a href="/">LoopBack Overview</a></li>
+                          
+                        
+                        <!-- page.url is /doc/ja/lb3/Synchronization.html .... folderitem.url is /doc/en/lb4/ -->
+                          
+                            <li><a href="/doc/en/lb4/">LoopBack 4</a></li>
+                          
+                        
+                        <!-- page.url is /doc/ja/lb3/Synchronization.html .... folderitem.url is /doc/en/lb3/ -->
+                          
+                            <li><a href="/doc/en/lb3/">LoopBack 3.x</a></li>
+                          
+                        
+                        <!-- page.url is /doc/ja/lb3/Synchronization.html .... folderitem.url is /doc/en/lb2/ -->
+                          
+                            <li><a href="/doc/en/lb2/">LoopBack 2.x</a></li>
+                          
+                        
+                        <!-- page.url is /doc/ja/lb3/Synchronization.html .... folderitem.url is /doc/en/community/ -->
+                          
+                            <li><a href="/doc/en/community/">Community projects</a></li>
+                          
+                        
+                        <!-- page.url is /doc/ja/lb3/Synchronization.html .... folderitem.url is /doc/en/contrib/ -->
+                          
+                            <li><a href="/doc/en/contrib/">Contributing to LoopBack</a></li>
+                          
+                        
+                        <!-- page.url is /doc/ja/lb3/Synchronization.html .... folderitem.url is /doc/en/sec/ -->
+                          
+                            <li><a href="/doc/en/sec/">Security advisories</a></li>
+                          
+                        
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Resources<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        <!-- page.url is /doc/ja/lb3/Synchronization.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://github.com/strongloop/loopback.io" target="_blank">Docs Github Repo</a></li>
+                          
+                        
+                        <!-- page.url is /doc/ja/lb3/Synchronization.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://groups.google.com/forum/#!forum/loopbackjs-announcements" target="_blank">Announcements Mailing List</a></li>
+                          
+                        
+                        <!-- page.url is /doc/ja/lb3/Synchronization.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://groups.google.com/forum/#!forum/loopbackjs" target="_blank">Developer Forum</a></li>
+                          
+                        
+                        <!-- page.url is /doc/ja/lb3/Synchronization.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://join.slack.com/t/loopbackio/shared_invite/zt-8lbow73r-SKAKz61Vdao~_rGf91pcsw" target="_blank">LoopBack on Slack</a></li>
+                          
+                        
+                        <!-- page.url is /doc/ja/lb3/Synchronization.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://stackoverflow.com/questions/tagged/strongloop+or+loopback4+or+loopbackjs" target="_blank">LoopBack on Stack Overflow</a></li>
+                          
+                        
+                        <!-- page.url is /doc/ja/lb3/Synchronization.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://strongloop.com/strongblog/tag_LoopBack.html" target="_blank">StrongLoop Blog - LoopBack</a></li>
+                          
+                        
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Translations<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        <!-- page.url is /doc/ja/lb3/Synchronization.html .... folderitem.url is /doc/es/lb2/ -->
+                          
+                            <li><a href="/doc/es/lb2/">Español (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/ja/lb3/Synchronization.html .... folderitem.url is /doc/es/lb4/ -->
+                          
+                            <li><a href="/doc/es/lb4/">Español (v4)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/ja/lb3/Synchronization.html .... folderitem.url is /doc/fr/lb2/ -->
+                          
+                            <li><a href="/doc/fr/lb2/">Français (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/ja/lb3/Synchronization.html .... folderitem.url is /doc/fr/lb4/ -->
+                          
+                            <li><a href="/doc/fr/lb4/">Français (v4)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/ja/lb3/Synchronization.html .... folderitem.url is /doc/ko/lb2/ -->
+                          
+                            <li><a href="/doc/ko/lb2/">한국어 (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/ja/lb3/Synchronization.html .... folderitem.url is /doc/ko/lb3/ -->
+                          
+                            <li><a href="/doc/ko/lb3/">한국어 (v3)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/ja/lb3/Synchronization.html .... folderitem.url is /doc/pt-br/lb2/ -->
+                          
+                            <li><a href="/doc/pt-br/lb2/">Português (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/ja/lb3/Synchronization.html .... folderitem.url is /doc/pt-br/lb4/ -->
+                          
+                            <li><a href="/doc/pt-br/lb4/">Português (v4)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/ja/lb3/Synchronization.html .... folderitem.url is /doc/ja/lb2/ -->
+                          
+                            <li><a href="/doc/ja/lb2/">日本語 (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/ja/lb3/Synchronization.html .... folderitem.url is /doc/ja/lb3/ -->
+                          
+                            <li class="dropdownActive"><a href="/doc/ja/lb3/">日本語 (v3)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/ja/lb3/Synchronization.html .... folderitem.url is /doc/ja/lb4/ -->
+                          
+                            <li><a href="/doc/ja/lb4/">日本語 (v4)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/ja/lb3/Synchronization.html .... folderitem.url is /doc/ru/lb2/ -->
+                          
+                            <li><a href="/doc/ru/lb2/">Pусский (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/ja/lb3/Synchronization.html .... folderitem.url is /doc/zh/lb2/ -->
+                          
+                            <li><a href="/doc/zh/lb2/">中文 (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/ja/lb3/Synchronization.html .... folderitem.url is /doc/zh/lb4/ -->
+                          
+                            <li><a href="/doc/zh/lb4/">中文 (v4)</a></li>
+                          
+                        
+                    </ul>
+                </li>
+                
+                
+                
+                <li>
+                    <form id="search" name="search" class="input-group lb-search" action="/search" method="GET">
+                        <input type="text" class="form-control search-bar" placeholder="Search (powered by Watson)" name="q">
+                        
+                          <input type="hidden" name="sidebar" value="ja_lb3_sidebar">
+                        
+                        <div class="input-group-btn">
+                            <button type="submit" class="btn btn-default" aria-label="search">
+                              <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                            </button>
+                        </div>
+                      </form>
+                </li>
+            </ul>
+        </div>
+      </div>
+</nav>
+
+<!-- Page Content -->
+<div class="container">
+    <!-- Content Row -->
+    <div class="row">
+        <!-- Sidebar Column -->
+        <nav class="col-md-3 sidebar-col">
+          
+
+
+
+
+
+
+
+
+
+
+
+<!-- NOTE: sidebar = site.data.sidebars.mydoc_sidebar.entries -->
+<div class="sidebarTitle"><a href="/doc/ja/lb3/index.html">LoopBack 3.x</a></div>
+<ul id="mysidebar" class="nav-list">
+  
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Installation.html">インストール</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Installation-troubleshooting.html">Installation troubleshooting</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="3.0-Release-Notes.html">3.0 Release Notes</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Migrating-to-3.0.html">Migrating apps to v3</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="LoopBack-core-concepts.html">LoopBackの核となる概念</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Routing.html">ルーティング</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="LoopBack-FAQ.html">LoopBack FAQ</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Glossary.html">用語集</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="StrongLoop-Labs.html">StrongLoop Labs</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Getting-started-with-LoopBack.html">LoopBack を始めよう</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Create-a-simple-API.html">Create a simple API</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Use-API-Explorer.html">Use API Explorer</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Connect-your-API-to-a-data-source.html">Connect your API to a data source</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Extend-your-API.html">Extend your API</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Add-a-static-web-page.html">Add a static web page</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Add-a-custom-Express-route.html">Add a custom Express route</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Next-steps.html">Next steps</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Getting-started-part-II.html">Getting started part II</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Introducing-the-Coffee-Shop-Reviews-app.html">Introducing the Coffee Shop Reviews app</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Create-new-data-source.html">Create new data source</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Create-new-models.html">Create new models</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Define-model-relations.html">Define model relations</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Define-access-controls.html">Define access controls</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Define-a-remote-hook.html">Define a remote hook</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Create-AngularJS-client.html">Create AngularJS client</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Learn-more.html">Learn more</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Tutorials-and-examples.html">Tutorials and examples</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Security-advisories.html">Security advisories</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Security-advisory-10-24-2017.html">10-24-2017</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Security-advisory-09-21-2017.html">09-21-2017</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Security-advisory-03-10-2017.html">03-10-2017</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Creating-an-application.html">アプリケーションの作成</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Environment-specific-configuration.html">環境別の設定</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Versioning-your-API.html">APIのバージョニング</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Standard-project-structure.html">標準的なプロジェクト構成</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Defining-data-sources.html">Defining data sources</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Creating-a-database-schema-from-models.html">Creating a database schema from models</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Advanced-topics-data-sources.html">Data sources: advanced topics</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Using-database-transactions.html">データベースのトランザクションを使用する</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Executing-native-SQL.html">Executing native SQL</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Building-a-connector.html">Building a connector</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Implementing-create-retrieve-update-and-delete-methods.html">Implementing CRUD methods</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Implementing-model-discovery.html">Implementing model discovery</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Implementing-auto-migration.html">Implementing auto-migration</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Defining-models.html">Defining models</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Using-the-model-generator.html">Using the model generator</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Discovering-models-from-relational-databases.html">リレーショナルデータベースからモデルを発見する</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Creating-models-from-unstructured-data.html">Creating models from unstructured data</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Customizing-models.html">モデルのカスタマイズ</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Exposing-models-over-REST.html">REST経由でモデルを公開する</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Validating-model-data.html">モデルのデータを検証する</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Creating-model-relations.html">Creating model relations</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Tutorial-model-relations.html">Tutorial: model relations</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="BelongsTo-relations.html">BelongsTo relations</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="HasOne-relations.html">HasOne relations</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="HasMany-relations.html">HasMany relations</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="HasManyThrough-relations.html">HasManyThrough relations</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="HasAndBelongsToMany-relations.html">HasAndBelongsToMany relations</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Polymorphic-relations.html">Polymorphic relations</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Querying-related-models.html">Querying related models</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Embedded-models-and-relations.html">Embedded models and relations</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Nested-queries.html">Nested queries</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Using-built-in-models.html">Using built-in models</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Extending-built-in-models.html">Extending built-in models</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Adding-remote-methods-to-built-in-models.html">Adding remote methods to built-in models</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Model-property-reference.html">Model property reference</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Built-in-models-REST-API.html">Built-in models REST API</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="PersistedModel-REST-API.html">PersistedModel REST API</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Access-token-REST-API.html">Access token REST API</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="ACL-REST-API.html">ACL REST API</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Application-REST-API.html">Application REST API</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Relation-REST-API.html">Relation REST API</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Role-REST-API.html">Role REST API</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="User-REST-API.html">User REST API</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Attaching-models-to-data-sources.html">Attaching models to data sources</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Managing-users.html">Managing users</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Registering-users.html">Registering users</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Logging-in-users.html">Logging in users</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Partitioning-users-with-realms.html">Partitioning users with realms</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="User-management-example.html">User management example</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Authentication-authorization-and-permissions.html">認証・認可・パーミッション</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Introduction-to-User-model-authentication.html">Introduction to User model authentication</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Controlling-data-access.html">Controlling data access</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Making-authenticated-requests.html">Making authenticated requests</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Defining-and-using-roles.html">Defining and using roles</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Accessing-related-models.html">Accessing related models</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Creating-a-default-admin-user.html">Creating a default admin user</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Security-considerations.html">Security considerations</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Tutorial-access-control.html">Tutorial: access control</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Working-with-data.html">データの操作</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Creating-updating-and-deleting-data.html">データの作成・更新・削除</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Querying-data.html">データの検索</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Fields-filter.html">Fields フィルタ</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Include-filter.html">Include フィルタ</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Limit-filter.html">Limit フィルタ</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Order-filter.html">Order フィルタ</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Skip-filter.html">Skip フィルタ</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Where-filter.html">Where フィルタ</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Advanced-topics-data.html">Advanced topics: data</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Realtime-server-sent-events.html">Realtime server-sent events</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="AngularJS-LiveSet.html">AngularJS Live Set</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="AngularJS-LiveSet-Example.html">AngularJS Live Set example</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Realtime-socket-io.html">Real-time apps AngularJS using socket.io</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Adding-application-logic.html">アプリケーションロジックの追加</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Working-with-LoopBack-objects.html">LoopBackのオブジェクトを扱う</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Adding-logic-to-models.html">モデルにロジックを追加する</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Remote-methods.html">リモートメソッド</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Remote-hooks.html">リモートフック</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Operation-hooks.html">操作フック</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Connector-hooks.html">コネクタフック</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Tutorial-Adding-application-logic.html">Tutorial: Application logic</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Defining-boot-scripts.html">起動スクリプトの定義</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Defining-mixins.html">Defining mixins</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Defining-middleware.html">Defining middleware</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Middleware-example.html">Middleware example</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Using-current-context.html">Using current context</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Events.html">Events</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Using-promises.html">Using promises</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Running-and-debugging-apps.html">アプリケーションの実行とデバッグ</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Setting-debug-strings.html">デバッグ文字列の設定</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Using-strong-error-handler.html">Using strong-error-handler</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Preparing-for-deployment.html">Preparing for deployment</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="LoopBack-on-Bluemix.html">Running LoopBack apps on Bluemix</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="LoopBack-components.html">LoopBack components</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="OAuth-2.0.html">OAuth 2.0 component</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Push-notifications.html">Push notification component</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Push-notifications-for-iOS-apps.html">Push notifications for iOS apps</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Push-notifications-for-Android-apps.html">Push notifications for Android apps</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Storage-component.html">Storage component</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Storage-component-REST-API.html">Storage component REST API</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Storage-example.html">Storage component example</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Third-party-login-using-Passport.html">Passport login component</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Configuring-providers.json.html">Configuring providers.json</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Tutorial-third-party-login.html">Tutorial: third-party login</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Synchronization.html">Synchronization component</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Tutorial-Offline-Synchronization.html">Tutorial: Offline Synchronization</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Advanced-topics-sync.html">Advanced topics - sync</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Creating-components.html">Creating components</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Command-line-tools.html">コマンドラインツール</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="ACL-generator.html">ACL generator</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="API-definition-generator.html">API 定義生成ツール</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Application-generator.html">Application generator</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Bluemix-config-generator.html">Bluemix configuration generator</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Boot-script-generator.html">Boot script generator</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Data-source-generator.html">Data source generator</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Middleware-generator.html">Middleware generator</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Model-generator.html">Model generator</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Oracle-installer-command.html">Oracle installer command</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Property-generator.html">Property generator</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Refresh-definitions-command.html">Refresh definitions command</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Relation-generator.html">Relation generator</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Remote-method-generator.html">Remote method generator</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="SOAP-generator.html">SOAP generator</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Swagger-generator.html">Swagger 生成ツール</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Client-SDKs.html">Client SDKs</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="iOS-SDK.html">iOS SDK</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="IOS-getting-started.html">Getting started with the iOS SDK</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Android-SDK.html">Android SDK</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Tutorial-android-getting-started.html">Getting started with the Android SDK</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Working-with-files-using-the-Android-SDK.html">Working with files using the Android SDK</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Push-notifications-using-Android-SDK.html">Push notifications using Android SDK</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Working-with-the-LocalInstallation-class.html">Working with the LocalInstallation class</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="AngularJS-JavaScript-SDK.html">AngularJS SDK</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Angular-example-app.html">Angular example app</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="AngularJS-Grunt-plugin.html">AngularJS Grunt plugin</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Xamarin-SDK.html">Xamarin SDK</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Xamarin-client-API.html">Xamarin client API</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Xamarin-example-app.html">Xamarin example app</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="LoopBack-in-the-client.html">Isomorphic LoopBack</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Running-LoopBack-in-the-browser.html">Running LoopBack in the browser</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Using-Browserify.html">Using Browserify</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Isomorphic-LoopBack-example.html">Isomorphic example</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Connectors-reference.html">Connectors reference</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Memory-connector.html">Memory connector</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Database-connectors.html">Database connectors</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Cassandra-connector.html">Cassandra connector</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Cloudant-connector.html">Cloudant connector</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="DashDB.html">DashDB</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="DB2-connector.html">DB2 connector</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="DB2-iSeries-connector.html">DB2 for iSeries connector</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="DB2-for-z-OS.html">DB2 for z/OS</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Informix.html">Informix connector</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="MongoDB-connector.html">MongoDB connector</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Connecting-to-MongoDB.html">MongoDB Connector Tutorial</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Using-MongoLab.html">Using MongoLab</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="MySQL-connector.html">MySQL connector</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Connecting-to-MySQL.html">MySQL Connector Tutorial</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Oracle-connector.html">Oracle connector</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Installing-the-Oracle-connector.html">Installing the Oracle connector</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Connecting-to-Oracle.html">Oracle connector tutorial</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="PostgreSQL-connector.html">PostgreSQL connector</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Connecting-to-PostgreSQL.html">PostgreSQL connector tutorial</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Redis-connector.html">Redis connector</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="kv-redis-connector.html">Redis key-value connector</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Example-kv-connector.html">KV connector example</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="SQL-Server-connector.html">SQL Server connector</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Connecting-to-Microsoft-SQL-Server.html">SQL Server connector tutorial</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="SQLite3.html">SQLite3 connector</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Other-connectors.html">Other connectors</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Email-connector.html">Email connector</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="JSON-RPC-connector.html">JSON RPC connector</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="MQLight-connector.html">MQ Light connector</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Push-connector.html">Push connector</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Remote-connector.html">Remote connector</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Remote-connector-example.html">Remote connector example</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Strong-Remoting.html">Strong Remoting</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="REST-connector.html">REST connector</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="REST-connector-example.html">REST connector example</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="SOAP-connector.html">SOAP connector</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Strong-soap.html">Strong-soap</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="SOAP-Connector-example.html">SOAP connector example</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Connecting-to-SOAP.html">Connecting to SOAP web services</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Storage-connector.html">Storage connector</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Swagger-connector.html">Swagger connector</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Community-connectors.html">Community connectors</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Project-layout-reference.html">Project layout reference</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="client-directory.html">client directory</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="common-directory.html">common directory</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Model-definition-JSON-file.html">Model definition JSON file</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Model-extension-file.html">Model extension file</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="package.json.html">package.json</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="server-directory.html">server directory</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="component-config.json.html">component-config.json</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="config.json.html">config.json</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="datasources.json.html">datasources.json</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="middleware.json.html">middleware.json</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="middleware.development.json.html">middleware.development.json</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="model-config.json.html">model-config.json</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="server.js.html">server.js</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Node-reference.html">Node reference</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="LoopBack-types.html">LoopBack types</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Geotype.html">Geopoint type</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Valid-names-in-LoopBack.html">Valid names in LoopBack</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Basic-model-object.html">Basic model object</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Connected-model-object.html">Connected model object</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Error-object.html">Error object</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="LoopBack-middleware.html">LoopBack middleware</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Publish-subscribe-messaging.html">Publish-subscribe messaging</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Strong-pub-sub.html">Strong Pub-sub</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Pub-sub-bridge.html">Pub-sub bridge</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="MQTT-adapter.html">MQTT adapter</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Redis-pub-sub-adapter.html">Redis pub-sub adapter</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Primus-pub-sub-adapter.html">Primus pub-sub adapter</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Pub-sub-example.html">Node pub-sub example app</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Pub-sub-Loopback-example.html">LoopBack pub-sub example app</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="All-tags.html">All tags</a>
+      
+  </li>
+  
+
+
+
+</ul>
+
+        </nav>
+        <!-- Content Column -->
+        <div class="col-md-9">
+            
+<div class="post-header">
+   <h1 class="post-title-main">Synchronization</h1>
+   
+     
+       <a target="_blank" href="https://github.com/strongloop/loopback.io/blob/gh-pages/pages/ja/lb3/Synchronization.md" class="githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit this page</a>
+   
+</div>
+
+<div class="post-content">
+
+
+  
+   <div class="summary">
+     Synchronization replicates data between client and server using the LoopBack replication API.
+   </div>
+  
+
+
+
+
+ 
+
+    <div style="font-size: 11pt; border: 1px solid #cccccc; background-color: #EBF5EB; padding: 10px; border-radius: 3px; margin: 10px auto 20px auto; width: 680px; padding: 10px;">
+  <div style="float:right;">
+    <figure>
+      <p><img class="docimage" src="/images/9830552.png" alt="StrongLoop Labs" style="max-width: 150px" />&lt;/figure&gt;
+&lt;/div&gt;</p>
+
+      <p>This project provides early access to advanced or experimental functionality. It may lack usability, completeness, documentation, and robustness, and may be outdated.</p>
+
+      <p>However, StrongLoop supports this project. Community users, please report bugs on GitHub.</p>
+
+      <p>For more information, see <a href="StrongLoop-Labs.html">StrongLoop Labs</a>.
+&lt;/div&gt;</p>
+
+      <div id="seealso">
+
+        <p><b>See also</b>:</p>
+
+        <ul>
+          <li><a href="LoopBack-in-the-client.html">LoopBack in the client</a></li>
+          <li><a href="Tutorial-Offline-Synchronization.html">Tutorial: Offline Synchronization</a></li>
+        </ul>
+
+      </div>
+
+      <!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+      <script>
+;$(function() {
+  var level = parseInt(1, 10);
+  if (level === 1) {level = 'h2'}
+  if (level === 2) {level = 'h2,h3'}
+  if (level === 3) {level = 'h2,h3,h4'}
+  if (level === 4) {level = 'h2,h3,h4,h5'}
+
+  // Add a new level for changelog files which use h1,h2,h3
+  if (level === 0) {level = 'h1,h2,h3,h4,h5'}
+
+  var toc = $('#toc')
+
+  toc.toc({minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: level})
+
+  /* this offset helps with the space taken up by the floating toolbar */
+  toc.on('click', 'a', function() {
+    var target = $(this.getAttribute('href')),
+      scroll_target = target.offset().top
+
+    $(window).scrollTop(scroll_target - 10)
+    return false
+  })
+  .on('click', '.toc-expand-button', function() {
+    toc.find('> ul').slideToggle('fast');
+  })
+})
+</script>
+
+      <div id="toc">
+        <p><span class="toc-title">Page Contents</span>
+  <button type="button" class="btn btn-link toc-expand-button">
+    <i class="fa fa-bars"></i>
+  </button></p>
+      </div>
+
+      <h2 id="overview">Overview</h2>
+
+      <p>In general, mobile applications need to be able to operate without constant network connectivity.
+This means the client app must synchronize data with the server application after a disconnected period. To do this:</p>
+
+      <ul>
+        <li>The client (browser) app replicates changes made in the server application.</li>
+        <li>The server application replicates changes made in the client (browser) app.</li>
+      </ul>
+
+      <p>This process is called <em>synchronization</em> (abbreviated as <em>sync</em>).
+Sync replicates data from the <em>source</em> to the <em>target</em>, and the target calls the LoopBack replication API.</p>
+
+      <div class="alert alert-info" role="alert">
+        <p><i class="fa fa-info-circle"></i>
+<b>Note:</b>
+The LoopBack replication API is a JavaScript API, and thus (currently, at least) works only with a JavaScript client. </p>
+
+      </div>
+
+      <p><em>Replication</em> means intelligently copying data from one location to another.
+LoopBack copies data that has changed from source to target, but does not overwrite data that was modified on the target since the last replication.
+So, sync is just bi-directional replication.</p>
+
+      <p>In general there may be conflicts when performing replication.
+So, for example, while disconnected, a user may make changes on the client that conflict with changes made on the server.
+What happens when an object or field is modified both locally and remotely?
+LoopBack handles conflict resolution for you, and enables you to easily present a user interface to allow the end user to make informed decisions to resolve conflicts when they occur.
+See <a href="#conflict-resolution">Resolving conflicts</a> below.</p>
+
+      <div class="alert alert-info" role="alert">
+        <p><i class="fa fa-info-circle"></i>
+<b>Note:</b></p>
+
+        <p>Currently synchronization is built-in to LoopBack, but will be refactored into a component in the future.</p>
+
+      </div>
+
+      <h3 id="loopback-in-the-browser">LoopBack in the browser</h3>
+
+      <p>LoopBack implements synchronization using the LoopBack browser API, that provides the same client JavaScript API as for Node.
+Thus, LoopBack in the browser is sometimes referred to as <em>isomorphic</em>, because you can call exactly the same APIs on client and server.</p>
+
+      <p>LoopBack in the browser uses <a href="http://browserify.org/">Browserify</a> to handle dependencies.
+If you wish, you can use build tools such as <a href="http://gulpjs.com/">Gulp</a> or Grunt to generate the client API based on the back-end models and REST API.
+For example, <a href="https://github.com/strongloop/loopback-example-full-stack">loopback-example-full-stack</a> uses Grunt.</p>
+
+      <p>Synchronization as described above to handle offline operation is called <em>offline sync</em>.
+LoopBack also provides the ability to consolidate (or “batch”) data changes the user makes on the device and send them to the server in a single HTTP request.
+This is called <em>online sync</em>.</p>
+
+      <h3 id="terminology">Terminology </h3>
+
+      <p>In addition to <a href="Glossary.html">standard terminology</a>, conflict resolution uses a number of specific terms.</p>
+
+      <p><strong>Change list</strong></p>
+
+      <p>A list of the current and previous revisions of all models. Each data source has a unique change list.</p>
+
+      <p><strong>Checkpoint</strong></p>
+
+      <p>An order-able identifier for tracking the last time a source completed replication. Used for filtering the change list during replication.</p>
+
+      <p><strong>Checkpoint list</strong></p>
+
+      <p>An ordered list of replication checkpoints used by clients to filter out old changes. </p>
+
+      <p><strong>Conflict</strong></p>
+
+      <p>When replicating a change made to a source model, a conflict occurs when the source’s previous revision differs from the target’s current revision. </p>
+
+      <p><strong>Rebasing</strong></p>
+
+      <p>Conflicts can only be resolved by changing the revision they are based on.
+Once a source model is “rebased” on the current target version of a model, it is no longer a conflict and can be replicated normally.</p>
+
+      <p><strong>Revision</strong></p>
+
+      <p>A string that uniquely identifies the state of a model.</p>
+
+      <h2 id="setup">Setup</h2>
+
+      <p>Setup involves three steps:</p>
+
+      <ol>
+        <li>Enable change tracking in the LoopBack app.</li>
+        <li>Create a client app that uses the LoopBack API.</li>
+        <li>Run the client app in the browser</li>
+      </ol>
+
+      <h3 id="enable-change-tracking">Enable change tracking</h3>
+
+      <p>You must enable change tracking for each model that you want to be able to access offline.
+Make the following change to the <a href="Model-definition-JSON-file.html">Model definition JSON file</a>:</p>
+
+      <ul>
+        <li>Set <code class="language-plaintext highlighter-rouge">trackChanges</code> to <code class="language-plaintext highlighter-rouge">true</code>.</li>
+        <li>Change the <code class="language-plaintext highlighter-rouge">id</code> property to an auto-generated GUID; for information on GUIDs,
+see <a href="Model-definition-JSON-file.html#general-property-properties">Model definition JSON file reference</a>.</li>
+        <li>Set <code class="language-plaintext highlighter-rouge">strict</code> property to <code class="language-plaintext highlighter-rouge">validate</code>.</li>
+        <li>Set the <code class="language-plaintext highlighter-rouge">persistUndefinedAsNull</code> property to <code class="language-plaintext highlighter-rouge">true</code>.</li>
+      </ul>
+
+      <p>For example:</p>
+
+      <div id="common/models/todo.json" class="code-caption">
+        <p>common/models/todo.json</p>
+      </div>
+
+      <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span>
+  <span class="dl">"</span><span class="s2">name</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Todo</span><span class="dl">"</span><span class="p">,</span>
+  <span class="dl">"</span><span class="s2">base</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">PersistedModel</span><span class="dl">"</span><span class="p">,</span>
+  <span class="dl">"</span><span class="s2">strict</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">validate</span><span class="dl">"</span><span class="p">,</span>
+  <span class="dl">"</span><span class="s2">trackChanges</span><span class="dl">"</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+  <span class="dl">"</span><span class="s2">persistUndefinedAsNull</span><span class="dl">"</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+  <span class="dl">"</span><span class="s2">properties</span><span class="dl">"</span> <span class="p">:</span> <span class="p">{</span>
+    <span class="dl">"</span><span class="s2">id</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+      <span class="dl">"</span><span class="s2">id</span><span class="dl">"</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+      <span class="dl">"</span><span class="s2">type</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">string</span><span class="dl">"</span><span class="p">,</span>
+      <span class="dl">"</span><span class="s2">defaultFn</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">guid</span><span class="dl">"</span>
+    <span class="p">},</span>
+    <span class="dl">"</span><span class="s2">title</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+      <span class="dl">"</span><span class="s2">type</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">string</span><span class="dl">"</span><span class="p">,</span>
+      <span class="dl">"</span><span class="s2">required</span><span class="dl">"</span><span class="p">:</span> <span class="kc">true</span>
+    <span class="p">},</span>
+    <span class="dl">"</span><span class="s2">description</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+      <span class="dl">"</span><span class="s2">type</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">string</span><span class="dl">"</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>      </div>
+
+      <p>For each change-tracked model, a new model (database table) is created to contain change-tracking records.
+In the example above, a <code class="language-plaintext highlighter-rouge">Todo-Change</code> model will be created. The change model is attached to the same data source as the model being tracked.
+Therefore, you will need to migrate your database schema after you have enabled change tracking. </p>
+
+      <p>The change-tracking records are updated in background. Any errors are reported via the static model method <code class="language-plaintext highlighter-rouge">handleChangeError</code>.
+It is recommended to provide a custom error handler in your models, as the default behavior is to throw an error.</p>
+
+      <div id="common/models/todo.js" class="code-caption">
+        <p>common/models/todo.js</p>
+      </div>
+
+      <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">module</span><span class="p">.</span><span class="nx">exports</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">Todo</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">Todo</span><span class="p">.</span><span class="nx">handleChangeError</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">warn</span><span class="p">(</span><span class="dl">'</span><span class="s1">Cannot update change records for Todo:</span><span class="dl">'</span><span class="p">,</span> <span class="nx">err</span><span class="p">);</span>
+  <span class="p">};</span>
+<span class="p">}</span>
+</code></pre></div>      </div>
+
+      <h3 id="create-a-client-app">Create a client app</h3>
+
+      <p>The next step is to create client-side LoopBack app. For each replicated model, create two new client-only subclasses:</p>
+
+      <ul>
+        <li>A local model that will use local storage to persist the changes offline</li>
+        <li>A remote model that will be connected to the server and used as a target for replication.
+This model will have change tracking disabled (because the server is already handling it) and enable only the replication REST API.</li>
+      </ul>
+
+      <p>For example, for the To Do example, here is the JSON file that defines the client local model:</p>
+
+      <div id="client/models/local-todo.json" class="code-caption">
+        <p>client/models/local-todo.json</p>
+      </div>
+
+      <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span>
+  <span class="dl">"</span><span class="s2">name</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">LocalTodo</span><span class="dl">"</span><span class="p">,</span>
+  <span class="dl">"</span><span class="s2">base</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Todo</span><span class="dl">"</span>
+<span class="p">}</span>
+</code></pre></div>      </div>
+
+      <p>Here is the JSON file that defines the client remote local model:</p>
+
+      <div id="client/models/remote-todo.json" class="code-caption">
+        <p>client/models/remote-todo.json</p>
+      </div>
+
+      <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span>
+  <span class="dl">"</span><span class="s2">name</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">RemoteTodo</span><span class="dl">"</span><span class="p">,</span>
+  <span class="dl">"</span><span class="s2">base</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Todo</span><span class="dl">"</span><span class="p">,</span>
+  <span class="dl">"</span><span class="s2">plural</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Todos</span><span class="dl">"</span><span class="p">,</span>
+  <span class="dl">"</span><span class="s2">trackChanges</span><span class="dl">"</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+  <span class="dl">"</span><span class="s2">enableRemoteReplication</span><span class="dl">"</span><span class="p">:</span> <span class="kc">true</span>
+<span class="p">}</span>
+</code></pre></div>      </div>
+
+      <p>And here is the client model configuration JSON file:</p>
+
+      <div id="client/model-config.json" class="code-caption">
+        <p>client/model-config.json</p>
+      </div>
+
+      <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span>
+  <span class="dl">"</span><span class="s2">_meta</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+    <span class="dl">"</span><span class="s2">sources</span><span class="dl">"</span><span class="p">:</span> <span class="p">[</span><span class="dl">"</span><span class="s2">../../common/models</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">./models</span><span class="dl">"</span><span class="p">]</span>
+  <span class="p">},</span>
+  <span class="dl">"</span><span class="s2">RemoteTodo</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+    <span class="dl">"</span><span class="s2">dataSource</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">remote</span><span class="dl">"</span>
+  <span class="p">},</span>
+  <span class="dl">"</span><span class="s2">LocalTodo</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+    <span class="dl">"</span><span class="s2">dataSource</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">local</span><span class="dl">"</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>      </div>
+
+      <p>Here is the JSON file that defines the client datasources:</p>
+
+      <div id="client/datasources.json" class="code-caption">
+        <p>client/datasources.json</p>
+      </div>
+
+      <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span>
+  <span class="dl">"</span><span class="s2">remote</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+    <span class="dl">"</span><span class="s2">connector</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">remote</span><span class="dl">"</span><span class="p">,</span>
+    <span class="dl">"</span><span class="s2">url</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">/api</span><span class="dl">"</span>
+  <span class="p">},</span>
+  <span class="dl">"</span><span class="s2">local</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+    <span class="dl">"</span><span class="s2">connector</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">memory</span><span class="dl">"</span><span class="p">,</span>
+    <span class="dl">"</span><span class="s2">localStorage</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">todo-db</span><span class="dl">"</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>      </div>
+
+      <p>Now that you have all models in place, you can set up bi-directional replication between <code class="language-plaintext highlighter-rouge">LocalTodo </code>and <code class="language-plaintext highlighter-rouge">RemoteTodo</code>, for example in a client boot script:</p>
+
+      <div id="client/boot/replication.js" class="code-caption">
+        <p>client/boot/replication.js</p>
+      </div>
+
+      <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">module</span><span class="p">.</span><span class="nx">exports</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">client</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kd">var</span> <span class="nx">LocalTodo</span> <span class="o">=</span> <span class="nx">client</span><span class="p">.</span><span class="nx">models</span><span class="p">.</span><span class="nx">LocalTodo</span><span class="p">;</span>
+  <span class="kd">var</span> <span class="nx">RemoteTodo</span> <span class="o">=</span> <span class="nx">client</span><span class="p">.</span><span class="nx">models</span><span class="p">.</span><span class="nx">RemoteTodo</span><span class="p">;</span>
+
+  <span class="kd">var</span> <span class="nx">since</span> <span class="o">=</span> <span class="p">{</span> <span class="na">push</span><span class="p">:</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="na">pull</span><span class="p">:</span> <span class="o">-</span><span class="mi">1</span> <span class="p">};</span>
+
+  <span class="kd">function</span> <span class="nx">sync</span><span class="p">()</span> <span class="p">{</span>
+    <span class="c1">// It is important to push local changes first,</span>
+    <span class="c1">// that way any conflicts are resolved at the client</span>
+    <span class="nx">LocalTodo</span><span class="p">.</span><span class="nx">replicate</span><span class="p">(</span>
+      <span class="nx">RemoteTodo</span><span class="p">,</span>
+      <span class="nx">since</span><span class="p">.</span><span class="nx">push</span><span class="p">,</span>
+      <span class="kd">function</span> <span class="nx">pushed</span><span class="p">(</span><span class="nx">err</span><span class="p">,</span> <span class="nx">conflicts</span><span class="p">,</span> <span class="nx">cps</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">// TODO: handle err</span>
+        <span class="k">if</span> <span class="p">(</span><span class="nx">conflicts</span><span class="p">.</span><span class="nx">length</span><span class="p">)</span><span class="err"> </span>
+          <span class="nx">handleConflicts</span><span class="p">(</span><span class="nx">conflicts</span><span class="p">);</span>
+
+        <span class="nx">since</span><span class="p">.</span><span class="nx">push</span> <span class="o">=</span> <span class="nx">cps</span><span class="p">;</span>
+
+        <span class="nx">RemoteTodo</span><span class="p">.</span><span class="nx">replicate</span><span class="p">(</span>
+          <span class="nx">LocalTodo</span><span class="p">,</span>
+          <span class="nx">since</span><span class="p">.</span><span class="nx">pull</span><span class="p">,</span>
+          <span class="kd">function</span> <span class="nx">pulled</span><span class="p">(</span><span class="nx">err</span><span class="p">,</span> <span class="nx">conflicts</span><span class="p">,</span> <span class="nx">cps</span><span class="p">)</span> <span class="p">{</span>
+            <span class="c1">// TODO: handle err</span>
+            <span class="k">if</span> <span class="p">(</span><span class="nx">conflicts</span><span class="p">)</span>
+              <span class="nx">handleConflicts</span><span class="p">(</span><span class="nx">conflicts</span><span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">c</span><span class="p">)</span> <span class="p">{</span> <span class="k">return</span> <span class="nx">c</span><span class="p">.</span><span class="nx">swapParties</span><span class="p">();</span> <span class="p">}));</span>
+            <span class="nx">since</span><span class="p">.</span><span class="nx">pull</span> <span class="o">=</span> <span class="nx">cps</span><span class="p">;</span>
+          <span class="p">});</span>
+      <span class="p">});</span>
+  <span class="p">}</span>
+
+  <span class="nx">LocalTodo</span><span class="p">.</span><span class="nx">observe</span><span class="p">(</span><span class="dl">'</span><span class="s1">after save</span><span class="dl">'</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">ctx</span><span class="p">,</span> <span class="nx">next</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">next</span><span class="p">();</span>
+    <span class="nx">sync</span><span class="p">();</span> <span class="c1">// in background</span>
+  <span class="p">});</span>
+
+  <span class="nx">LocalTodo</span><span class="p">.</span><span class="nx">observe</span><span class="p">(</span><span class="dl">'</span><span class="s1">after delete</span><span class="dl">'</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">ctx</span><span class="p">,</span> <span class="nx">next</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">next</span><span class="p">();</span>
+    <span class="nx">sync</span><span class="p">();</span> <span class="c1">// in background</span>
+  <span class="p">});</span>
+
+  <span class="kd">function</span> <span class="nx">handleConflicts</span><span class="p">(</span><span class="nx">conflicts</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// TODO notify user about the conflicts</span>
+  <span class="p">}</span>
+<span class="p">};</span>
+</code></pre></div>      </div>
+
+      <h3 id="run-the-client-app-in-the-browser">Run the client app in the browser</h3>
+
+      <p>The loopback-boot module provides a build tool for adding all application metadata and model files to a Browserify bundle.
+<a href="http://browserify.org/">Browserify</a> is a tool that packages Node.js scripts into a single file that runs in a browser.</p>
+
+      <p>Below is a simplified example packaging the client application into a browser “module” that can be loaded via <code class="language-plaintext highlighter-rouge">require('lbclient')</code>.
+Consult <a href="https://github.com/strongloop/loopback-example-full-stack/blob/master/client/lbclient/build.js">build.js</a> 
+in loopback-example-full-stack for a full implementation that includes source-maps and error handling.</p>
+
+      <div id="client/build.js" class="code-caption">
+        <p>client/build.js</p>
+      </div>
+
+      <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">b</span> <span class="o">=</span> <span class="nx">browserify</span><span class="p">({</span> <span class="na">basedir</span><span class="p">:</span> <span class="nx">__dirname</span> <span class="p">});</span>
+<span class="nx">b</span><span class="p">.</span><span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">./client.js</span><span class="dl">'</span><span class="p">,</span> <span class="p">{</span> <span class="na">expose</span><span class="p">:</span> <span class="dl">'</span><span class="s1">lbclient </span><span class="dl">'</span><span class="p">});</span>
+
+<span class="nx">boot</span><span class="p">.</span><span class="nx">compileToBrowserify</span><span class="p">({</span> <span class="na">appRootDir</span><span class="p">:</span> <span class="nx">__dirname</span> <span class="p">},</span> <span class="nx">b</span><span class="p">);</span>
+
+<span class="kd">var</span> <span class="nx">bundlePath</span> <span class="o">=</span> <span class="nx">path</span><span class="p">.</span><span class="nx">resolve</span><span class="p">(</span><span class="nx">__dirname</span><span class="p">,</span> <span class="dl">'</span><span class="s1">browser.bundle.js</span><span class="dl">'</span><span class="p">);</span>
+<span class="nx">b</span><span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">fs</span><span class="p">.</span><span class="nx">createWriteStream</span><span class="p">(</span><span class="nx">bundlePath</span><span class="p">));</span>
+</code></pre></div>      </div>
+
+      <h2 id="access-control">Access control</h2>
+
+      <p>Because the sync algorithm calls the REST API, it honors model access control settings.</p>
+
+      <p>However, when replicating changes only from the server (read-only replication), the client needs to create a new checkpoint value, which requires write permissions.
+The “REPLICATE” permission type supports this use case: it grants limited write access to the checkpoint-related methods only.
+For a certain user (a role, a group) to be able to pull changes from the server, they need both READ and REPLICATE permissions.
+Users with WRITE permissions are automatically granted REPLICATE permission too.</p>
+
+      <p>Example ACL configuration:</p>
+
+      <div id="common/models/car.json" class="code-caption">
+        <p>common/models/car.json</p>
+      </div>
+
+      <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span>
+  <span class="dl">"</span><span class="s2">acls</span><span class="dl">"</span><span class="p">:</span> <span class="p">[</span>
+    <span class="c1">// disable anonymous access</span>
+    <span class="p">{</span>
+      <span class="dl">"</span><span class="s2">principalType</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">ROLE</span><span class="dl">"</span><span class="p">,</span>
+      <span class="dl">"</span><span class="s2">principalId</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">$everyone</span><span class="dl">"</span><span class="p">,</span>
+      <span class="dl">"</span><span class="s2">permission</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">DENY</span><span class="dl">"</span>
+    <span class="p">},</span>
+    <span class="c1">// allow all authenticated users to read data</span>
+    <span class="p">{</span>
+      <span class="dl">"</span><span class="s2">principalType</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">ROLE</span><span class="dl">"</span><span class="p">,</span>
+      <span class="dl">"</span><span class="s2">principalId</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">$authenticated</span><span class="dl">"</span><span class="p">,</span>
+      <span class="dl">"</span><span class="s2">permission</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">ALLOW</span><span class="dl">"</span><span class="p">,</span>
+      <span class="dl">"</span><span class="s2">accessType</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">READ</span><span class="dl">"</span>
+    <span class="p">},</span>
+    <span class="c1">// allow all authenticated users to pull changes</span>
+    <span class="p">{</span>
+      <span class="dl">"</span><span class="s2">principalType</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">ROLE</span><span class="dl">"</span><span class="p">,</span>
+      <span class="dl">"</span><span class="s2">principalId</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">$authenticated</span><span class="dl">"</span><span class="p">,</span>
+      <span class="dl">"</span><span class="s2">permission</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">ALLOW</span><span class="dl">"</span><span class="p">,</span>
+      <span class="dl">"</span><span class="s2">accessType</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">REPLICATE</span><span class="dl">"</span>
+    <span class="p">},</span>
+    <span class="c1">// allow the user with id 0 to perform full sync</span>
+    <span class="p">{</span>
+      <span class="dl">"</span><span class="s2">principalType</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">USER</span><span class="dl">"</span><span class="p">,</span>
+      <span class="dl">"</span><span class="s2">principalId</span><span class="dl">"</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+      <span class="dl">"</span><span class="s2">permission</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">ALLOW</span><span class="dl">"</span><span class="p">,</span>
+      <span class="dl">"</span><span class="s2">accessType</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">WRITE</span><span class="dl">"</span>
+    <span class="p">}</span>
+  <span class="p">]</span>
+<span class="p">}</span>
+</code></pre></div>      </div>
+
+      <h2 id="understanding-replication">Understanding replication</h2>
+
+      <p>Offline data access and synchronization has three components:</p>
+
+      <ul>
+        <li>Change tracking</li>
+        <li>Replication of changes</li>
+        <li>Browser version of LoopBack</li>
+      </ul>
+
+      <h3 id="change-model">Change model</h3>
+
+      <p>As explained above, a new change model is created for each change-tracked model, e.g. <code class="language-plaintext highlighter-rouge">Todo-Change</code>.
+This model can be accessed using the method <code class="language-plaintext highlighter-rouge">getChangeModel</code>, for example, <code class="language-plaintext highlighter-rouge">Todo.getChangeModel()</code>.</p>
+
+      <p>The change model has several properties:</p>
+
+      <ul>
+        <li>
+          <p><code class="language-plaintext highlighter-rouge">modelId</code> links a change instance (record) with a tracked model instance</p>
+        </li>
+        <li>
+          <p><code class="language-plaintext highlighter-rouge">prev</code> and <code class="language-plaintext highlighter-rouge">rev</code> are hash values generated from the model class the Change model is representing.
+The <code class="language-plaintext highlighter-rouge">rev</code> property stands for Revision, while <code class="language-plaintext highlighter-rouge">prev</code> is the hash of the previous revision.
+When a model instance is deleted, the value <code class="language-plaintext highlighter-rouge">null</code> is used instead of a hash.</p>
+        </li>
+        <li>
+          <p><code class="language-plaintext highlighter-rouge">checkpoint</code> associates a change record with a Checkpoint, more on this later.</p>
+        </li>
+      </ul>
+
+      <p>Additionally, there is a method <code class="language-plaintext highlighter-rouge">type()</code> that can be used to determine the kind of change being made: <code class="language-plaintext highlighter-rouge">Change.CREATE</code>, <code class="language-plaintext highlighter-rouge">Change.UPDATE</code>, <code class="language-plaintext highlighter-rouge">Change.DELETE</code> or <code class="language-plaintext highlighter-rouge">Change.UNKNOWN</code>.</p>
+
+      <p>The current implementation of the change tracking algorithm keeps only one change record for each model instance - the last change made.</p>
+
+      <h3 id="checkpoints">Checkpoints</h3>
+
+      <p>A checkpoint represents a point in time that you can use to filter the changes to only those made after the checkpoint was created.
+A checkpoint is typically created whenever a replication is performed, this allows subsequent replication runs to ignore changes that were already replicated.</p>
+
+      <p>While in theory the replication algorithm should work without checkpoints, in practice it’s important to use correct checkpoint values because the current implementation keeps the last change only.</p>
+
+      <p>If you don’t pass correct values in the <code class="language-plaintext highlighter-rouge">since</code> argument of <code class="language-plaintext highlighter-rouge">replicate</code> method, then you may</p>
+
+      <ul>
+        <li>
+          <p>Get false conflicts if the “since” value is omitted or points to an older, already replicated checkpoint.</p>
+        </li>
+        <li>
+          <p>Incorrectly override newer changes with old data if the “since” value points to a future checkpoint that was not replicated yet.</p>
+        </li>
+      </ul>
+
+      <h3 id="replication-algorithm">Replication algorithm</h3>
+
+      <p>A single iteration of the replication algorithm consists of the following steps:</p>
+
+      <ol>
+        <li>Create new checkpoints (both source and target)</li>
+        <li>Get list of changes made at the source since the given source checkpoint</li>
+        <li>Find out differences between source and target changes since the given target checkpoint, detect any conflicts.</li>
+        <li>Create a set of instructions - what to change at target</li>
+        <li>Perform a “bulk update” operation using these instructions</li>
+        <li>Return the new checkpoints to the callback</li>
+      </ol>
+
+      <p>It is important to create the new checkpoints as the first step of the replication algorithm.
+Otherwise any changes made while the replication is in progress would be associated with the checkpoint being replicated,
+and thus they would not be picked up by the next replication run.</p>
+
+      <p>The consequence is that the “bulk update” operation will associate replicated changes with the new checkpoint,
+and thus these changes will be considered during the next replication run, which may cause false conflicts.</p>
+
+      <p>In order to prevent this problem, the method <code class="language-plaintext highlighter-rouge">replicate</code> runs several iterations of the replication algorithm,
+until either there is nothing left to replicate, or a maximum number of iterations is reached.</p>
+
+      <h4 id="conflict-detection">Conflict detection</h4>
+
+      <p>Conflicts are detected in the third step. The list of source changes are sent to the target model, which compares them to change made to target model instances.
+Whenever both source and target modified the same model instance (the same model id),
+the algorithm checks the current and previous revision of both source and target models to decide whether there is a conflict.</p>
+
+      <p>A conflict is reported when both of these conditions are met:</p>
+
+      <ul>
+        <li>
+          <p>The current revisions are different, i.e. the model instances have different property values.</p>
+        </li>
+        <li>
+          <p>The <em>current</em> target revision is different from the <em>previous</em> source revision.
+In other words, if the source change is in sequence after the target change, then there is no conflict.</p>
+        </li>
+      </ul>
+
+      <h4 id="conflict-resolution">Conflict resolution</h4>
+
+      <p>Conflict resolution can be complex. Fortunately, LoopBack handles the complexity for you, and provides an API to resolve conflicts intelligently. </p>
+
+      <p>The callback of <code class="language-plaintext highlighter-rouge">Model.replicate()</code> takes <code class="language-plaintext highlighter-rouge">err</code> and <code class="language-plaintext highlighter-rouge">conflict[]</code>. Each <code class="language-plaintext highlighter-rouge">conflict</code> represents a change that was not replicated and must be manually resolved.
+You can fetch the current versions of the local and remote models by calling <code class="language-plaintext highlighter-rouge">conflict.models()</code>.
+You can manually merge the conflict by modifying both models.</p>
+
+      <p>Calling <code class="language-plaintext highlighter-rouge">conflict.resolve()</code> will set the source change’s previous revision to the current revision of the (conflicting) target change.
+Since the changes are no longer conflicting and appear as if the source change was based on the target, they will be replicated normally as part of the next <code class="language-plaintext highlighter-rouge">replicate()</code> call.</p>
+
+      <p>The conflict class provides methods implementing three most common resolution scenarios, consider using these methods instead of <code class="language-plaintext highlighter-rouge">conflict.resolve()</code>:</p>
+
+      <ul>
+        <li><code class="language-plaintext highlighter-rouge">conflict.resolveUsingSource()</code></li>
+        <li><code class="language-plaintext highlighter-rouge">conflict.resolveUsingTarget()</code></li>
+        <li><code class="language-plaintext highlighter-rouge">conflict.resolveManually()</code></li>
+      </ul>
+
+      <h4 id="bulk-update">Bulk update</h4>
+
+      <p>The bulk update operation expects a list of instructions - changes to perform.
+Each instructions contains a <code class="language-plaintext highlighter-rouge">Change</code> instance describing the change, a change type, and model <code class="language-plaintext highlighter-rouge">data</code> to use.</p>
+
+      <p>In order to prevent race conditions when third parties are modifying the replicated instances while the replication is in progress,
+the <code class="language-plaintext highlighter-rouge">bulkUpdate</code> function is implementing a robust checks to ensure it modifies only those model instances that have their expected revision.</p>
+
+      <p>The “diff” step returns the current target revision of each model instances that needs an update, this revision is stored as the <code class="language-plaintext highlighter-rouge">change.rev</code> property.</p>
+
+      <p>The “bulkUpdate” method loads the model instance from the database, verifies that the current revision matched the expected revision in the instruction,
+and then performs a conditional update/delete specifying all model properties as the condition.</p>
+
+      <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Example: apply an update of an existing instance</span>
+<span class="kd">var</span> <span class="nx">current</span> <span class="o">=</span> <span class="nx">findById</span><span class="p">(</span><span class="nx">data</span><span class="p">.</span><span class="nx">id</span><span class="p">);</span>
+<span class="k">if</span> <span class="p">(</span><span class="nx">revisionOf</span><span class="p">(</span><span class="nx">current</span><span class="p">)</span> <span class="o">!=</span> <span class="nx">expectedRev</span><span class="p">)</span>
+  <span class="k">return</span> <span class="nx">conflict</span><span class="p">();</span>
+<span class="kd">var</span> <span class="nx">c</span> <span class="o">=</span> <span class="nx">Model</span><span class="p">.</span><span class="nx">updateAll</span><span class="p">(</span><span class="nx">current</span><span class="p">,</span> <span class="nx">data</span><span class="p">);</span>
+<span class="k">if</span> <span class="p">(</span><span class="nx">c</span> <span class="o">!=</span> <span class="mi">1</span><span class="p">)</span> <span class="nx">conflict</span><span class="p">();</span>
+</code></pre></div>      </div>
+
+      <h2 id="sync-methods">Sync methods</h2>
+
+      <div class="sl-hidden">
+        <p><strong>REVIEW COMMENT from $paramName</strong><br />Need to order or categorize the methods below.&lt;/div&gt;</p>
+
+        <p>The LoopBack Model object provides a number of methods to support sync, mixed in via the DataModel object:</p>
+
+        <ul>
+          <li><strong>bulkUpdate</strong> - Apply an update list.</li>
+          <li><strong>changes</strong> - Get the changes to a model since a given checkpoint. Provide a filter object to reduce the number of results returned.</li>
+          <li><strong>checkpoint</strong> - Create a checkpoint.</li>
+          <li>
+            <p><strong>createUpdates</strong> - Create an update list for <code class="language-plaintext highlighter-rouge">Model.bulkUpdate()</code> from a delta list from <code class="language-plaintext highlighter-rouge">Change.diff()</code>.</p>
+          </li>
+          <li><strong>currentCheckpoint</strong> - Get the current checkpoint ID.</li>
+          <li>
+            <p><strong>diff</strong> - Get a set of deltas and conflicts since the given checkpoint.</p>
+          </li>
+          <li>
+            <p><strong>enableChangeTracking</strong> - Start tracking changes made to the model.</p>
+          </li>
+          <li><strong>getChangeModel</strong> - Get the <code class="language-plaintext highlighter-rouge">Change</code> model.</li>
+          <li><strong>getSourceId</strong> - Get the source identifier for this model / dataSource.</li>
+          <li><strong>handleChangeError</strong> - Handle a change error. Override this method in a subclassing model to customize change error handling.</li>
+          <li><strong>rectifyChange</strong> - Tell LoopBack that a change to the model with the given ID has occurred.</li>
+          <li>
+            <p><strong>replicate</strong> - Replicate changes since the given checkpoint to the given target model.</p>
+          </li>
+          <li><strong>findLastChange</strong> - Get the last (current) Change object for a given model instance.</li>
+          <li><strong>updateLastChange</strong> - Update the last (current) Change object associated with the given model instance.</li>
+        </ul>
+
+        <h2 id="frequently-asked-questions">Frequently asked questions</h2>
+
+        <h3 id="does-loopback-support-continuous-replication">Does LoopBack support continuous replication?</h3>
+
+        <p>Yes: with continuous replication, the client immediately triggers a replication when local data changes and the server pushes changes when then occur.</p>
+
+        <p>Here is a basic example that relies on a <code class="language-plaintext highlighter-rouge">socket.io</code> style <code class="language-plaintext highlighter-rouge">EventEmitter</code>.</p>
+
+        <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// psuedo-server.js</span>
+<span class="nx">MyModel</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="dl">'</span><span class="s1">changed</span><span class="dl">'</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">obj</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">socket</span><span class="p">.</span><span class="nx">emit</span><span class="p">(</span><span class="dl">'</span><span class="s1">changed</span><span class="dl">'</span><span class="p">);</span>
+<span class="p">});</span>
+
+<span class="c1">// psuedo-client.js</span>
+<span class="nx">socket</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="dl">'</span><span class="s1">changed</span><span class="dl">'</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">obj</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">LocalModel</span><span class="p">.</span><span class="nx">replicate</span><span class="p">(</span><span class="nx">RemoteModel</span><span class="p">);</span>
+<span class="p">});</span>
+</code></pre></div>        </div>
+
+        <h3 id="how-do-you-trigger-immediate-replication">How do you trigger immediate replication?</h3>
+
+        <div class="sl-hidden">
+          <p><strong>REVIEW COMMENT from $paramName</strong><br />Can below be done on either client or server?&lt;/div&gt;</p>
+
+          <p>Call <code class="language-plaintext highlighter-rouge">Model.replicate()</code> to trigger immediate replication.</p>
+
+          <h2 id="known-issues">Known issues</h2>
+
+          <ul>
+            <li>
+              <p>The size of the browser bundle is over 1.4MB, which is too large for mobile clients.
+See <a href="https://github.com/strongloop/loopback/issues/989">https://github.com/strongloop/loopback/issues/989</a>.</p>
+            </li>
+            <li>
+              <p>It’s not possible to set a model property to <code class="language-plaintext highlighter-rouge">undefined</code> via the replication.
+When a property is undefined at the source but defined at the target, “bulk update” will not set it to undefined it at the target.
+This can be mitigated by using <code class="language-plaintext highlighter-rouge">strict</code> model and enabling <code class="language-plaintext highlighter-rouge">persistUndefinedAsNull</code>.</p>
+            </li>
+            <li>
+              <p>Browser’s localStorage limits the size of stored data to about 5MB (depending on the browser).
+If your application needs to store more data in offline mode, then you need to use IndexedDB instead of localStorage.
+LoopBack does not provide a connector for IndexedDB yet.
+See <a href="https://github.com/strongloop/loopback/issues/858">https://github.com/strongloop/loopback/issues/858</a>.</p>
+            </li>
+            <li>
+              <p>Not all connectors were updated to report the number of rows affected by <code class="language-plaintext highlighter-rouge">updateAll</code> and <code class="language-plaintext highlighter-rouge">deleteAll</code>, which is needed by “bulkUpdate”.
+As a result, the replication fails when the target model is persisted using one of these unsupported connectors.</p>
+            </li>
+            <li>
+              <p>LoopBack does not fully support fine-grained access control to a selected subset of model instances,
+therefore it is not possible to replicate models where the user can access only a subset of instances (for example only the instances the user has created).</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </figure>
+  </div>
+</div>
+
+
+    <div class="tags">
+      
+    </div>
+</div>
+
+<hr class="shaded"/>
+
+<footer id="container">
+            <div class="row">
+                <div class="col-md-6 footer-left">
+               &copy;2021 IBM / StrongLoop. All rights reserved. <br />
+ Site last generated: Mar 22, 2021
+              </div>
+              <div class="col-md-6 footer-right">
+                <p><img src="https://loopback.io/images/company_logo.png" alt="Company logo"/></p>
+              </div>
+            </div>
+</footer>
+
+
+        </div>
+        <!-- /.row -->
+</div>
+<!-- /.container -->
+    </div>
+</body>
+
+</html>

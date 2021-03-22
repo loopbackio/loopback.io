@@ -1,0 +1,4389 @@
+<!DOCTYPE html>
+<head>
+    
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="keywords" content=" ">
+  <title>loopback-connector-oracle | LoopBack Documentation</title>
+  <link rel="stylesheet" href="/css/syntax.css">
+
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/modern-business.css">
+    <link rel="stylesheet" href="/css/lavish-bootstrap.css">
+    <link rel="stylesheet" href="/css/customstyles.css">
+    <link rel="stylesheet" href="/css/theme-v4.css">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-150726441-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-150726441-2');
+</script>
+
+
+    <!-- github star button -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.3.0/anchor.min.js"></script>
+    <script src="/js/toc.js"></script>
+    <script src="/js/customscripts.js"></script>
+
+    <link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    
+
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-lg navbar-brand no_icon" href="/doc/index.html">
+              <img class="no_icon" style="width:147px;" src="/images/branding/logo/white/loopback.svg">&nbsp;<span class="projectTitle"></span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- entries without drop-downs appear here -->
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">API Docs<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        <!-- page.url is /pages/en/lb4/readmes/loopback-connector-oracle.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://loopback.io/doc/en/lb4/apidocs.index.html" target="_blank">LoopBack 4</a></li>
+                          
+                        
+                        <!-- page.url is /pages/en/lb4/readmes/loopback-connector-oracle.html .... folderitem.url is  -->
+                          
+                            <li><a href="http://apidocs.loopback.io" target="_blank">LoopBack 3.x</a></li>
+                          
+                        
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">View<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        <!-- page.url is /pages/en/lb4/readmes/loopback-connector-oracle.html .... folderitem.url is / -->
+                          
+                            <li><a href="/">LoopBack Overview</a></li>
+                          
+                        
+                        <!-- page.url is /pages/en/lb4/readmes/loopback-connector-oracle.html .... folderitem.url is /doc/en/lb4/ -->
+                          
+                            <li><a href="/doc/en/lb4/">LoopBack 4</a></li>
+                          
+                        
+                        <!-- page.url is /pages/en/lb4/readmes/loopback-connector-oracle.html .... folderitem.url is /doc/en/lb3/ -->
+                          
+                            <li><a href="/doc/en/lb3/">LoopBack 3.x</a></li>
+                          
+                        
+                        <!-- page.url is /pages/en/lb4/readmes/loopback-connector-oracle.html .... folderitem.url is /doc/en/lb2/ -->
+                          
+                            <li><a href="/doc/en/lb2/">LoopBack 2.x</a></li>
+                          
+                        
+                        <!-- page.url is /pages/en/lb4/readmes/loopback-connector-oracle.html .... folderitem.url is /doc/en/community/ -->
+                          
+                            <li><a href="/doc/en/community/">Community projects</a></li>
+                          
+                        
+                        <!-- page.url is /pages/en/lb4/readmes/loopback-connector-oracle.html .... folderitem.url is /doc/en/contrib/ -->
+                          
+                            <li><a href="/doc/en/contrib/">Contributing to LoopBack</a></li>
+                          
+                        
+                        <!-- page.url is /pages/en/lb4/readmes/loopback-connector-oracle.html .... folderitem.url is /doc/en/sec/ -->
+                          
+                            <li><a href="/doc/en/sec/">Security advisories</a></li>
+                          
+                        
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Resources<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        <!-- page.url is /pages/en/lb4/readmes/loopback-connector-oracle.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://github.com/strongloop/loopback.io" target="_blank">Docs Github Repo</a></li>
+                          
+                        
+                        <!-- page.url is /pages/en/lb4/readmes/loopback-connector-oracle.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://groups.google.com/forum/#!forum/loopbackjs-announcements" target="_blank">Announcements Mailing List</a></li>
+                          
+                        
+                        <!-- page.url is /pages/en/lb4/readmes/loopback-connector-oracle.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://groups.google.com/forum/#!forum/loopbackjs" target="_blank">Developer Forum</a></li>
+                          
+                        
+                        <!-- page.url is /pages/en/lb4/readmes/loopback-connector-oracle.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://join.slack.com/t/loopbackio/shared_invite/zt-8lbow73r-SKAKz61Vdao~_rGf91pcsw" target="_blank">LoopBack on Slack</a></li>
+                          
+                        
+                        <!-- page.url is /pages/en/lb4/readmes/loopback-connector-oracle.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://stackoverflow.com/questions/tagged/strongloop+or+loopback4+or+loopbackjs" target="_blank">LoopBack on Stack Overflow</a></li>
+                          
+                        
+                        <!-- page.url is /pages/en/lb4/readmes/loopback-connector-oracle.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://strongloop.com/strongblog/tag_LoopBack.html" target="_blank">StrongLoop Blog - LoopBack</a></li>
+                          
+                        
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Translations<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        <!-- page.url is /pages/en/lb4/readmes/loopback-connector-oracle.html .... folderitem.url is /doc/es/lb2/ -->
+                          
+                            <li><a href="/doc/es/lb2/">Español (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /pages/en/lb4/readmes/loopback-connector-oracle.html .... folderitem.url is /doc/es/lb4/ -->
+                          
+                            <li><a href="/doc/es/lb4/">Español (v4)</a></li>
+                          
+                        
+                        <!-- page.url is /pages/en/lb4/readmes/loopback-connector-oracle.html .... folderitem.url is /doc/fr/lb2/ -->
+                          
+                            <li><a href="/doc/fr/lb2/">Français (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /pages/en/lb4/readmes/loopback-connector-oracle.html .... folderitem.url is /doc/fr/lb4/ -->
+                          
+                            <li><a href="/doc/fr/lb4/">Français (v4)</a></li>
+                          
+                        
+                        <!-- page.url is /pages/en/lb4/readmes/loopback-connector-oracle.html .... folderitem.url is /doc/ko/lb2/ -->
+                          
+                            <li><a href="/doc/ko/lb2/">한국어 (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /pages/en/lb4/readmes/loopback-connector-oracle.html .... folderitem.url is /doc/ko/lb3/ -->
+                          
+                            <li><a href="/doc/ko/lb3/">한국어 (v3)</a></li>
+                          
+                        
+                        <!-- page.url is /pages/en/lb4/readmes/loopback-connector-oracle.html .... folderitem.url is /doc/pt-br/lb2/ -->
+                          
+                            <li><a href="/doc/pt-br/lb2/">Português (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /pages/en/lb4/readmes/loopback-connector-oracle.html .... folderitem.url is /doc/pt-br/lb4/ -->
+                          
+                            <li><a href="/doc/pt-br/lb4/">Português (v4)</a></li>
+                          
+                        
+                        <!-- page.url is /pages/en/lb4/readmes/loopback-connector-oracle.html .... folderitem.url is /doc/ja/lb2/ -->
+                          
+                            <li><a href="/doc/ja/lb2/">日本語 (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /pages/en/lb4/readmes/loopback-connector-oracle.html .... folderitem.url is /doc/ja/lb3/ -->
+                          
+                            <li><a href="/doc/ja/lb3/">日本語 (v3)</a></li>
+                          
+                        
+                        <!-- page.url is /pages/en/lb4/readmes/loopback-connector-oracle.html .... folderitem.url is /doc/ja/lb4/ -->
+                          
+                            <li><a href="/doc/ja/lb4/">日本語 (v4)</a></li>
+                          
+                        
+                        <!-- page.url is /pages/en/lb4/readmes/loopback-connector-oracle.html .... folderitem.url is /doc/ru/lb2/ -->
+                          
+                            <li><a href="/doc/ru/lb2/">Pусский (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /pages/en/lb4/readmes/loopback-connector-oracle.html .... folderitem.url is /doc/zh/lb2/ -->
+                          
+                            <li><a href="/doc/zh/lb2/">中文 (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /pages/en/lb4/readmes/loopback-connector-oracle.html .... folderitem.url is /doc/zh/lb4/ -->
+                          
+                            <li><a href="/doc/zh/lb4/">中文 (v4)</a></li>
+                          
+                        
+                    </ul>
+                </li>
+                
+                
+                
+                <li>
+                    <form id="search" name="search" class="input-group lb-search" action="/search" method="GET">
+                        <input type="text" class="form-control search-bar" placeholder="Search (powered by Watson)" name="q">
+                        
+                          <input type="hidden" name="sidebar" value="lb3_sidebar">
+                        
+                        <div class="input-group-btn">
+                            <button type="submit" class="btn btn-default" aria-label="search">
+                              <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                            </button>
+                        </div>
+                      </form>
+                </li>
+            </ul>
+        </div>
+      </div>
+</nav>
+
+<!-- Page Content -->
+<div class="container">
+    <!-- Content Row -->
+    <div class="row">
+        <!-- Sidebar Column -->
+        <nav class="col-md-3 sidebar-col">
+          
+
+
+
+
+
+
+
+
+
+
+
+<!-- NOTE: sidebar = site.data.sidebars.mydoc_sidebar.entries -->
+<div class="sidebarTitle"><a href="index.html">LoopBack 3.x</a></div>
+<ul id="mysidebar" class="nav-list">
+  
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Installation.html">Installation</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Installation-troubleshooting.html">Installation troubleshooting</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="3.0-Release-Notes.html">3.0 Release Notes</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Migrating-to-3.0.html">Migrating apps to v3</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="LoopBack-core-concepts.html">LoopBack core concepts</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Routing.html">Routing</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="LoopBack-FAQ.html">LoopBack FAQ</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Glossary.html">Glossary</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="StrongLoop-Labs.html">StrongLoop Labs</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Getting-started-with-LoopBack.html">Getting started with LoopBack</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Create-a-simple-API.html">Create a simple API</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Use-API-Explorer.html">Use API Explorer</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Connect-your-API-to-a-data-source.html">Connect your API to a data source</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Extend-your-API.html">Extend your API</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Add-a-static-web-page.html">Add a static web page</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Add-a-custom-Express-route.html">Add a custom Express route</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Next-steps.html">Next steps</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Deploy-for-GDPR-readiness.html">Considerations for GDPR readiness</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Getting-started-part-II.html">Getting started part II</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Introducing-the-Coffee-Shop-Reviews-app.html">Introducing the Coffee Shop Reviews app</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Create-new-data-source.html">Create new data source</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Create-new-models.html">Create new models</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Define-model-relations.html">Define model relations</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Define-access-controls.html">Define access controls</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Define-a-remote-hook.html">Define a remote hook</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Create-AngularJS-client.html">Create AngularJS client</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Learn-more.html">Learn more</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Tutorials-and-examples.html">Tutorials and examples</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Creating-an-application.html">Creating an application</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Environment-specific-configuration.html">Environment-specific configuration</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Versioning-your-API.html">Versioning your API</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Standard-project-structure.html">Standard project structure</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Defining-data-sources.html">Defining data sources</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Creating-a-database-schema-from-models.html">Creating a database schema from models</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Advanced-topics-data-sources.html">Data sources: advanced topics</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Using-database-transactions.html">Using database transactions</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Executing-native-SQL.html">Executing native SQL</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Building-a-connector.html">Building a connector</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Implementing-create-retrieve-update-and-delete-methods.html">Implementing CRUD methods</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Implementing-model-discovery.html">Implementing model discovery</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Implementing-auto-migration.html">Implementing auto-migration</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Defining-models.html">Defining models</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Using-the-model-generator.html">Using the model generator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Discovering-models-from-relational-databases.html">Discovering models from relational databases</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Creating-models-from-unstructured-data.html">Creating models from unstructured data</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Customizing-models.html">Customizing models</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Exposing-models-over-REST.html">Exposing models over REST</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Validating-model-data.html">Validating model data</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Creating-model-relations.html">Creating model relations</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Tutorial-model-relations.html">Tutorial: model relations</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="BelongsTo-relations.html">BelongsTo relations</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="HasOne-relations.html">HasOne relations</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="HasMany-relations.html">HasMany relations</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="HasManyThrough-relations.html">HasManyThrough relations</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="HasAndBelongsToMany-relations.html">HasAndBelongsToMany relations</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Polymorphic-relations.html">Polymorphic relations</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Querying-related-models.html">Querying related models</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Embedded-models-and-relations.html">Embedded models and relations</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Nested-queries.html">Nested queries</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Using-built-in-models.html">Using built-in models</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Extending-built-in-models.html">Extending built-in models</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Adding-remote-methods-to-built-in-models.html">Adding remote methods to built-in models</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Model-property-reference.html">Model property reference</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Built-in-models-REST-API.html">Built-in models REST API</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="PersistedModel-REST-API.html">PersistedModel REST API</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Access-token-REST-API.html">Access token REST API</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="ACL-REST-API.html">ACL REST API</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Application-REST-API.html">Application REST API</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Relation-REST-API.html">Relation REST API</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Role-REST-API.html">Role REST API</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="User-REST-API.html">User REST API</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Attaching-models-to-data-sources.html">Attaching models to data sources</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Managing-users.html">Managing users</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Registering-users.html">Registering users</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Logging-in-users.html">Logging in users</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Partitioning-users-with-realms.html">Partitioning users with realms</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="User-management-example.html">User management example</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Authentication-authorization-and-permissions.html">Authentication, authorization, and permissions</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Introduction-to-User-model-authentication.html">Introduction to User model authentication</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Controlling-data-access.html">Controlling data access</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Making-authenticated-requests.html">Making authenticated requests</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Defining-and-using-roles.html">Defining and using roles</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Accessing-related-models.html">Accessing related models</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Creating-a-default-admin-user.html">Creating a default admin user</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Security-considerations.html">Security considerations</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Tutorial-access-control.html">Tutorial: access control</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Working-with-data.html">Working with data</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Creating-updating-and-deleting-data.html">Creating, updating, and deleting data</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Querying-data.html">Querying data</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Fields-filter.html">Fields filter</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Include-filter.html">Include filter</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Limit-filter.html">Limit filter</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Order-filter.html">Order filter</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Skip-filter.html">Skip filter</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Where-filter.html">Where filter</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Advanced-topics-data.html">Advanced topics: data</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Realtime-server-sent-events.html">Realtime server-sent events</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="AngularJS-LiveSet.html">AngularJS Live Set</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="AngularJS-LiveSet-Example.html">AngularJS Live Set example</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Realtime-socket-io.html">Real-time apps AngularJS using socket.io</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Adding-application-logic.html">Adding application logic</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Working-with-LoopBack-objects.html">Working with LoopBack objects</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Adding-logic-to-models.html">Adding logic to models</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Remote-methods.html">Remote methods</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Remote-hooks.html">Remote hooks</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Operation-hooks.html">Operation hooks</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Connector-hooks.html">Connector hooks</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Tutorial-Adding-application-logic.html">Tutorial: Application logic</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Defining-boot-scripts.html">Defining boot scripts</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Defining-mixins.html">Defining mixins</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Defining-middleware.html">Defining middleware</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Middleware-example.html">Middleware example</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Using-current-context.html">Using current context</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Events.html">Events</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Using-promises.html">Using promises</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Running-and-debugging-apps.html">Running and debugging apps</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Setting-debug-strings.html">Setting debug strings</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Using-strong-error-handler.html">Using strong-error-handler</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Preparing-for-deployment.html">Preparing for deployment</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="LoopBack-on-Bluemix.html">Running LoopBack apps on Bluemix</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="LoopBack-components.html">LoopBack components</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="OAuth-2.0.html">OAuth 2.0 component</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Push-notifications.html">Push notification component</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Push-notifications-for-iOS-apps.html">Push notifications for iOS apps</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Push-notifications-for-Android-apps.html">Push notifications for Android apps</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Storage-component.html">Storage component</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Storage-component-REST-API.html">Storage component REST API</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Storage-example.html">Storage component example</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Third-party-login-using-Passport.html">Passport login component</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Configuring-providers.json.html">Configuring providers.json</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Tutorial-third-party-login.html">Tutorial: third-party login</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Synchronization.html">Synchronization component</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Tutorial-Offline-Synchronization.html">Tutorial: Offline Synchronization</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Advanced-topics-sync.html">Advanced topics - sync</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Creating-components.html">Creating components</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Command-line-tools.html">Command-line tools</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="ACL-generator.html">ACL generator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="API-definition-generator.html">API definition generator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Application-generator.html">Application generator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Bluemix-config-generator.html">Bluemix configuration generator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Boot-script-generator.html">Boot script generator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Data-source-generator.html">Data source generator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Middleware-generator.html">Middleware generator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Model-generator.html">Model generator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Oracle-installer-command.html">Oracle installer command</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Property-generator.html">Property generator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Refresh-definitions-command.html">Refresh definitions command</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Relation-generator.html">Relation generator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Remote-method-generator.html">Remote method generator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="SOAP-generator.html">SOAP generator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Swagger-generator.html">Swagger generator</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Client-SDKs.html">Client SDKs</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="iOS-SDK.html">iOS SDK</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="IOS-getting-started.html">Getting started with the iOS SDK</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Android-SDK.html">Android SDK</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Tutorial-android-getting-started.html">Getting started with the Android SDK</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Working-with-files-using-the-Android-SDK.html">Working with files using the Android SDK</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Push-notifications-using-Android-SDK.html">Push notifications using Android SDK</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Working-with-the-LocalInstallation-class.html">Working with the LocalInstallation class</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="AngularJS-JavaScript-SDK.html">AngularJS SDK</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Angular-example-app.html">Angular example app</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="AngularJS-Grunt-plugin.html">AngularJS Grunt plugin</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Xamarin-SDK.html">Xamarin SDK</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Xamarin-client-API.html">Xamarin client API</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Xamarin-example-app.html">Xamarin example app</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="LoopBack-in-the-client.html">Isomorphic LoopBack</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Running-LoopBack-in-the-browser.html">Running LoopBack in the browser</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Using-Browserify.html">Using Browserify</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Isomorphic-LoopBack-example.html">Isomorphic example</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Connectors-reference.html">Connectors reference</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Memory-connector.html">Memory connector</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Database-connectors.html">Database connectors</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Cassandra-connector.html">Cassandra connector</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Cloudant-connector.html">Cloudant connector</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Couchdb2-connector.html">CouchDB 2.x connector</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="DashDB.html">DashDB</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="DB2-connector.html">DB2 connector</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="DB2-iSeries-connector.html">DB2 for iSeries connector</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="DB2-for-z-OS.html">DB2 for z/OS</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="gRPC-connector.html">gRPC connector</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Informix.html">Informix connector</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="MongoDB-connector.html">MongoDB connector</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Connecting-to-MongoDB.html">MongoDB Connector Tutorial</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Using-MongoLab.html">Using MongoLab</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="MySQL-connector.html">MySQL connector</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Connecting-to-MySQL.html">MySQL Connector Tutorial</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="OpenAPI-connector.html">OpenAPI connector</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Oracle-connector.html">Oracle connector</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Installing-the-Oracle-connector.html">Installing the Oracle connector</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Connecting-to-Oracle.html">Oracle connector tutorial</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="PostgreSQL-connector.html">PostgreSQL connector</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Connecting-to-PostgreSQL.html">PostgreSQL connector tutorial</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Redis-connector.html">Redis connector</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="kv-redis-connector.html">Redis key-value connector</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Example-kv-connector.html">KV connector example</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="SQL-Server-connector.html">SQL Server connector</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Connecting-to-Microsoft-SQL-Server.html">SQL Server connector tutorial</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="SQLite3.html">SQLite3 connector</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="zOSconnectEE.html">z/OS Connect Enterprise Edition connector</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Other-connectors.html">Other connectors</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Email-connector.html">Email connector</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="JSON-RPC-connector.html">JSON RPC connector</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="MQLight-connector.html">MQ Light connector</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Push-connector.html">Push connector</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Remote-connector.html">Remote connector</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Remote-connector-example.html">Remote connector example</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Strong-Remoting.html">Strong Remoting</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="REST-connector.html">REST connector</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="REST-connector-example.html">REST connector example</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="SOAP-connector.html">SOAP connector</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Strong-soap.html">Strong-soap</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="SOAP-Connector-example.html">SOAP connector example</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Connecting-to-SOAP.html">Connecting to SOAP web services</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Storage-connector.html">Storage connector</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Swagger-connector.html">Swagger connector</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Community-connectors.html">Community connectors</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Project-layout-reference.html">Project layout reference</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="client-directory.html">client directory</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="common-directory.html">common directory</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Model-definition-JSON-file.html">Model definition JSON file</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Model-extension-file.html">Model extension file</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="package.json.html">package.json</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="server-directory.html">server directory</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="component-config.json.html">component-config.json</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="config.json.html">config.json</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="datasources.json.html">datasources.json</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="middleware.json.html">middleware.json</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="middleware.development.json.html">middleware.development.json</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="model-config.json.html">model-config.json</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="server.js.html">server.js</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Node-reference.html">Node reference</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="LoopBack-types.html">LoopBack types</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Geotype.html">Geopoint type</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Valid-names-in-LoopBack.html">Valid names in LoopBack</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Basic-model-object.html">Basic model object</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Connected-model-object.html">Connected model object</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Error-object.html">Error object</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="LoopBack-middleware.html">LoopBack middleware</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Publish-subscribe-messaging.html">Publish-subscribe messaging</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Strong-pub-sub.html">Strong Pub-sub</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Pub-sub-bridge.html">Pub-sub bridge</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="MQTT-adapter.html">MQTT adapter</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Redis-pub-sub-adapter.html">Redis pub-sub adapter</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Primus-pub-sub-adapter.html">Primus pub-sub adapter</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Pub-sub-example.html">Node pub-sub example app</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Pub-sub-Loopback-example.html">LoopBack pub-sub example app</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="All-tags.html">All tags</a>
+    
+      
+  </li>
+  
+
+
+
+</ul>
+
+        </nav>
+        <!-- Content Column -->
+        <div class="col-md-9">
+            
+  <div class="v3notice">
+LoopBack 3 has reached end of life. We are no longer accepting pull requests or providing 
+support for community users. The only exception is fixes for critical bugs and security 
+vulnerabilities provided as part of support for IBM API Connect customers.
+We urge all LoopBack 3 users to migrate their applications to LoopBack 4 as soon as possible. 
+Learn more about
+<a href="https://loopback.io/doc/en/contrib/Long-term-support.html">LoopBack's long term support policy.</a>
+</div>
+
+
+<div class="post-header">
+   <h1 class="post-title-main">loopback-connector-oracle</h1>
+   
+     
+       <a target="_blank" href="https://github.com/strongloop/loopback.io/blob/gh-pages/pages/pages/en/lb4/readmes/loopback-connector-oracle.md" class="githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit this page</a>
+   
+</div>
+
+<div class="post-content">
+
+
+  
+
+
+
+
+ 
+   
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+;$(function() {
+  var level = parseInt(3, 10);
+  if (level === 1) {level = 'h2'}
+  if (level === 2) {level = 'h2,h3'}
+  if (level === 3) {level = 'h2,h3,h4'}
+  if (level === 4) {level = 'h2,h3,h4,h5'}
+
+  // Add a new level for changelog files which use h1,h2,h3
+  if (level === 0) {level = 'h1,h2,h3,h4,h5'}
+
+  var toc = $('#toc')
+
+  toc.toc({minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: level})
+
+  /* this offset helps with the space taken up by the floating toolbar */
+  toc.on('click', 'a', function() {
+    var target = $(this.getAttribute('href')),
+      scroll_target = target.offset().top
+
+    $(window).scrollTop(scroll_target - 10)
+    return false
+  })
+  .on('click', '.toc-expand-button', function() {
+    toc.find('> ul').slideToggle('fast');
+  })
+})
+</script>
+
+<div id="toc">
+  <span class="toc-title">Page Contents</span>
+  <button type="button" class="btn btn-link toc-expand-button">
+    <i class="fa fa-bars"></i>
+  </button>
+</div>
+
+ 
+
+    <h1 id="loopback-connector-oracle">loopback-connector-oracle</h1>
+
+<p><a href="https://www.oracle.com/database/index.html">Oracle</a> is an object-relational database management system produced by Oracle Corporation. The <code class="language-plaintext highlighter-rouge">loopback-connector-oracle</code> module is the Oracle connector for the LoopBack framework based on the <a href="https://github.com/oracle/node-oracledb">node-oracledb</a> module.</p>
+
+<h2 id="prerequisites">Prerequisites</h2>
+
+<p><strong>Node.js</strong>: The Oracle connector requires Node.js version 6.x and up.</p>
+
+<p><strong>Windows</strong>: On 32-bit Windows systems, you must use the 32-bit version of Node.js. On 64-bit Windows systems, you must use the 64-bit version of Node.js. For more information, see <a href="https://github.com/oracle/node-oracledb/blob/master/INSTALL.md#-7-node-oracledb-installation-on-windows">Node-oracledb Installation on Windows</a>.</p>
+
+<p><strong>Oracle</strong>: The Oracle connector requires Oracle client libraries 11.2+ and can connect to Oracle Database Server 9.2+.</p>
+
+<h2 id="installation">Installation</h2>
+
+<p>Before installing this module, please follow instructions at <a href="https://oracle.github.io/node-oracledb/INSTALL">https://oracle.github.io/node-oracledb/INSTALL.html</a>
+to make sure all the prerequisites are satisfied.</p>
+
+<p>In your application root directory, enter this command to install the connector:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>npm <span class="nb">install </span>loopback-connector-oracle <span class="nt">--save</span>
+</code></pre></div></div>
+
+<p>If you create a Oracle data source using the data source generator as described below, you don’t have to do this, since the generator will run <code class="language-plaintext highlighter-rouge">npm install</code> for you.</p>
+
+<p>The <code class="language-plaintext highlighter-rouge">libaio</code> library is required on Linux systems:</p>
+
+<p>On Ubuntu/Debian, get it with this command:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt-get install libaio1
+</code></pre></div></div>
+
+<p>On Fedora/CentOS/RHEL, get it with this command:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo yum install libaio
+</code></pre></div></div>
+
+<h2 id="creating-an-oracle-data-source">Creating an Oracle data source</h2>
+
+<p>For LoopBack 4 users, use the LoopBack 4
+<a href="https://loopback.io/doc/en/lb4/Command-line-interface.html">Command-line interface</a>
+to generate a DataSource with Oracle connector to your LB4 application. Run
+<a href="https://loopback.io/doc/en/lb4/DataSource-generator.html"><code class="language-plaintext highlighter-rouge">lb4 datasource</code></a>, it
+will prompt for configurations such as host, post, etc. that are required to
+connect to an Oracle database.</p>
+
+<p>After setting it up, the configuration can be found under
+<code class="language-plaintext highlighter-rouge">src/datasources/&lt;DataSourceName&gt;.datasource.ts</code>, which would look like this:</p>
+
+<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">config</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="na">name</span><span class="p">:</span> <span class="dl">"</span><span class="s2">db</span><span class="dl">"</span><span class="p">,</span>
+  <span class="na">connector</span><span class="p">:</span> <span class="dl">"</span><span class="s2">oracle</span><span class="dl">"</span><span class="p">,</span>
+  <span class="na">tns</span><span class="p">:</span> <span class="dl">""</span><span class="p">,</span>
+  <span class="na">host</span><span class="p">:</span> <span class="dl">"</span><span class="s2">localhost</span><span class="dl">"</span><span class="p">,</span>
+  <span class="na">port</span><span class="p">:</span> <span class="mi">1521</span><span class="p">,</span>
+  <span class="na">user</span><span class="p">:</span> <span class="dl">"</span><span class="s2">admin</span><span class="dl">"</span><span class="p">,</span>
+  <span class="na">password</span><span class="p">:</span> <span class="dl">"</span><span class="s2">pass</span><span class="dl">"</span><span class="p">,</span>
+  <span class="na">database</span><span class="p">:</span> <span class="dl">"</span><span class="s2">XE</span><span class="dl">"</span><span class="p">,</span>
+<span class="p">};</span>
+</code></pre></div></div>
+
+<details>
+  <summary><strong>For LoopBack 3 users</strong></summary>
+
+  <p>Use the <a href="http://loopback.io/doc/en/lb3/Data-source-generator.html">Data source generator</a> to add a Oracle data source to your application.
+The generator will prompt for the database server hostname, port, and other settings
+required to connect to a Oracle database. It will also run the <code class="language-plaintext highlighter-rouge">npm install</code> command above for you.</p>
+
+  <p>The entry in the application’s <code class="language-plaintext highlighter-rouge">/server/datasources.json</code> will look like this:</p>
+
+  <div id="/server/datasources.json" class="code-caption">
+    <p>/server/datasources.json</p>
+  </div>
+
+  <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="dl">"</span><span class="s2">mydb</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+  <span class="dl">"</span><span class="s2">name</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">mydb</span><span class="dl">"</span><span class="p">,</span>
+  <span class="dl">"</span><span class="s2">connector</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">oracle</span><span class="dl">"</span><span class="p">,</span>
+  <span class="dl">"</span><span class="s2">tns</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">demo</span><span class="dl">"</span><span class="p">,</span>
+  <span class="dl">"</span><span class="s2">host</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">myserver</span><span class="dl">"</span><span class="p">,</span>
+  <span class="dl">"</span><span class="s2">port</span><span class="dl">"</span><span class="p">:</span> <span class="mi">1521</span><span class="p">,</span>
+  <span class="dl">"</span><span class="s2">database</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">mydb</span><span class="dl">"</span><span class="p">,</span>
+  <span class="dl">"</span><span class="s2">password</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">mypassword</span><span class="dl">"</span><span class="p">,</span>
+  <span class="dl">"</span><span class="s2">user</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">admin</span><span class="dl">"</span>
+ <span class="p">}</span>
+</code></pre></div>  </div>
+
+</details>
+
+<p>Edit <code class="language-plaintext highlighter-rouge">&lt;DataSourceName&gt;.datasources.ts</code> to add any other additional properties
+that you require.</p>
+
+<h2 id="connector-properties">Connector properties</h2>
+
+<p>The connector properties depend on <a href="http://docs.oracle.com/cd/E11882_01/network.112/e10836/naming.htm#NETAG008">naming methods</a> you use for the Oracle database.
+LoopBack supports three naming methods:</p>
+
+<ul>
+  <li>Easy connect: host/port/database.</li>
+  <li>Local naming (TNS): alias to a full connection string that can specify all the attributes that Oracle supports.</li>
+  <li>Directory naming (LDAP): directory for looking up the full connection string that can specify all the attributes that Oracle supports.</li>
+</ul>
+
+<h3 id="easy-connect">Easy Connect</h3>
+
+<p>Easy Connect is the simplest form that provides out-of-the-box TCP/IP connectivity to databases.
+The data source then has the following settings.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th width="200">Property</th>
+      <th width="200">Type</th>
+      <th width="150">Default</th>
+      <th width="350">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>host or hostname</td>
+      <td>String</td>
+      <td>localhost</td>
+      <td>Host name or IP address of the Oracle database server</td>
+    </tr>
+    <tr>
+      <td>port</td>
+      <td>Number</td>
+      <td>1521</td>
+      <td>Port number of the Oracle database server</td>
+    </tr>
+    <tr>
+      <td>username or user</td>
+      <td>String</td>
+      <td>&nbsp;</td>
+      <td>User name to connect to the Oracle database server</td>
+    </tr>
+    <tr>
+      <td>password</td>
+      <td>String</td>
+      <td>&nbsp;</td>
+      <td>Password to connect to the Oracle database server</td>
+    </tr>
+    <tr>
+      <td>database</td>
+      <td>String</td>
+      <td>XE</td>
+      <td>Oracle database listener name</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>For example (LB4 form):</p>
+
+<div id="src/datasources/db.datasource.ts" class="code-caption">
+  <p>src/datasources/db.datasource.ts</p>
+</div>
+
+<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">config</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="na">name</span><span class="p">:</span> <span class="dl">"</span><span class="s2">db</span><span class="dl">"</span><span class="p">,</span>
+  <span class="na">connector</span><span class="p">:</span> <span class="dl">"</span><span class="s2">oracle</span><span class="dl">"</span><span class="p">,</span>
+  <span class="na">host</span><span class="p">:</span> <span class="dl">"</span><span class="s2">oracle-demo.strongloop.com</span><span class="dl">"</span><span class="p">,</span>
+  <span class="na">port</span><span class="p">:</span> <span class="mi">1521</span><span class="p">,</span>
+  <span class="na">user</span><span class="p">:</span> <span class="dl">"</span><span class="s2">admin</span><span class="dl">"</span><span class="p">,</span>
+  <span class="na">password</span><span class="p">:</span> <span class="dl">"</span><span class="s2">pass</span><span class="dl">"</span><span class="p">,</span>
+  <span class="na">database</span><span class="p">:</span> <span class="dl">"</span><span class="s2">XE</span><span class="dl">"</span><span class="p">,</span>
+<span class="p">};</span>
+</code></pre></div></div>
+
+<h3 id="local-and-directory-naming">Local and directory naming</h3>
+
+<p>Both local and directory naming require that you place configuration files in a TNS admin directory, such as <code class="language-plaintext highlighter-rouge">/oracle/admin</code>.</p>
+
+<p><strong>sqlnet.ora</strong></p>
+
+<p>This specifies the supported naming methods; for example:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>NAMES.DIRECTORY_PATH=(LDAP,TNSNAMES,EZCONNECT)
+</code></pre></div></div>
+
+<p><strong>nsnames.ora</strong></p>
+
+<p>This maps aliases to connection stringsl for example:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>demo1=(DESCRIPTION=(CONNECT_DATA=(SERVICE_NAME=))(ADDRESS=(PROTOCOL=TCP)(HOST=demo.strongloop.com)(PORT=1521)))
+</code></pre></div></div>
+
+<p><strong>ldap.ora</strong></p>
+
+<p>This configures the LDAP server.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>DIRECTORY_SERVERS=(localhost:1389)
+DEFAULT_ADMIN_CONTEXT="dc=strongloop,dc=com"
+DIRECTORY_SERVER_TYPE=OID
+</code></pre></div></div>
+
+<h4 id="set-up-tns_admin-environment-variable">Set up TNS_ADMIN environment variable</h4>
+
+<p>For the Oracle connector to pick up the configurations, you must set the environment variable ‘TNS_ADMIN’ to the directory containing the <code class="language-plaintext highlighter-rouge">.ora</code> files.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>export TNS_ADMIN=&lt;directory containing .ora files&gt;
+</code></pre></div></div>
+
+<p>Now you can use either the TNS alias or LDAP service name to configure a data source:</p>
+
+<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">config</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="na">name</span><span class="p">:</span> <span class="dl">"</span><span class="s2">db</span><span class="dl">"</span><span class="p">,</span>
+  <span class="na">connector</span><span class="p">:</span> <span class="dl">"</span><span class="s2">oracle</span><span class="dl">"</span><span class="p">,</span>
+  <span class="na">tns</span><span class="p">:</span> <span class="dl">"</span><span class="s2">demo</span><span class="dl">"</span><span class="p">,</span> <span class="c1">// The tns property can be a tns name or LDAP service name</span>
+  <span class="na">username</span><span class="p">:</span> <span class="dl">"</span><span class="s2">demo</span><span class="dl">"</span><span class="p">,</span>
+  <span class="na">password</span><span class="p">:</span> <span class="dl">"</span><span class="s2">L00pBack</span><span class="dl">"</span><span class="p">,</span>
+<span class="p">});</span>
+</code></pre></div></div>
+
+<h3 id="connection-pooling-options">Connection pooling options</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Property name</th>
+      <th>Description</th>
+      <th>Default value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>minConn</td>
+      <td>Minimum number of connections in the connection pool</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>maxConn</td>
+      <td>Maximum number of connections in the connection pool</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>incrConn</td>
+      <td>
+        <p>Incremental number of connections for the connection pool.</p>
+      </td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>timeout</td>
+      <td>
+        Time-out period in seconds for a connection in the connection pool.
+          The Oracle connector
+          will terminate connections in this
+          connection pool that are idle longer than the time-out period.
+      </td>
+      <td>10</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>For example,</p>
+
+<div id="src/datasources/db.datasource.ts" class="code-caption">
+  <p>src/datasources/db.datasource.ts</p>
+</div>
+
+<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">config</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="na">name</span><span class="p">:</span> <span class="dl">"</span><span class="s2">db</span><span class="dl">"</span><span class="p">,</span>
+  <span class="na">connector</span><span class="p">:</span> <span class="dl">"</span><span class="s2">oracle</span><span class="dl">"</span><span class="p">,</span>
+  <span class="na">minConn</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span>
+  <span class="na">maxConn</span><span class="p">:</span><span class="mi">5</span><span class="p">,</span>
+  <span class="na">incrConn</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span>
+  <span class="na">timeout</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span>
+  <span class="p">...</span>
+<span class="p">};</span>
+</code></pre></div></div>
+
+<h3 id="connection-troubleshooting">Connection troubleshooting</h3>
+
+<p>If you encounter this error:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Error: ORA-24408: could not generate unique server group name
+</code></pre></div></div>
+
+<p>Then the Oracle 11g client requires an entry with your hostname pointing to
+<code class="language-plaintext highlighter-rouge">127.0.0.1</code>.</p>
+
+<p>To resolve:</p>
+
+<p>Get your hostname. Check your hostname by running this command (for example, if your machine’s name is “earth”):</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ hostname
+earth
+</code></pre></div></div>
+
+<p>Update <code class="language-plaintext highlighter-rouge">/etc/hosts</code> and map <code class="language-plaintext highlighter-rouge">127.0.0.1</code> to your hostname “earth”:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>...
+127.0.0.1 localhost earth
+...
+</code></pre></div></div>
+
+<p>Verify the fix. Run the app:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ npm start
+</code></pre></div></div>
+
+<p>For more information, see <a href="http://stackoverflow.com/questions/10484231/ora-24408-could-not-generate-unique-server-group-name">StackOverflow question</a>.</p>
+
+<h2 id="how-loopback-models-map-to-oracle-tables">How LoopBack models map to Oracle tables</h2>
+
+<p>There are several properties you can specify to map the LoopBack models to the existing tables in the Oracle database:</p>
+
+<p><strong>Model definition</strong> maps to Oracle schema/table</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">oracle.schema</code>: the schema name of the table</li>
+  <li><code class="language-plaintext highlighter-rouge">oracle.table</code>: the table name of the model</li>
+</ul>
+
+<p><strong>Property definition</strong> maps to Oracle column</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">oracle.columnName</code>: the column name of the property</li>
+  <li><code class="language-plaintext highlighter-rouge">oracle.dataType</code>: the type of the column</li>
+</ul>
+
+<p>(Check out more available database settings in the section <a href="https://loopback.io/doc/en/lb4/Model.html#data-mapping-properties">Data mapping properties</a>.)</p>
+
+<p>The following example model <code class="language-plaintext highlighter-rouge">User</code> maps to the table <code class="language-plaintext highlighter-rouge">USER</code> under schema <code class="language-plaintext highlighter-rouge">XE</code> in the database with its columns:</p>
+
+<div id="/models/user.model.ts" class="code-caption">
+  <p>/models/user.model.ts</p>
+</div>
+
+<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">@</span><span class="nd">model</span><span class="p">({</span>
+  <span class="na">settings</span><span class="p">:</span> <span class="p">{</span>
+    <span class="na">oracle</span><span class="p">:</span> <span class="p">{</span>
+      <span class="na">schema</span><span class="p">:</span> <span class="dl">'</span><span class="s1">XE</span><span class="dl">'</span><span class="p">,</span>
+      <span class="na">table</span><span class="p">:</span> <span class="dl">'</span><span class="s1">USER</span><span class="dl">'</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">})</span>
+<span class="k">export</span> <span class="kd">class</span> <span class="nx">User</span> <span class="kd">extends</span> <span class="nx">Entity</span> <span class="p">{</span>
+  <span class="p">@</span><span class="nd">property</span><span class="p">({</span>
+    <span class="na">type</span><span class="p">:</span> <span class="dl">'</span><span class="s1">number</span><span class="dl">'</span><span class="p">,</span>
+    <span class="na">required</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="na">id</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="na">oracle</span><span class="p">:</span> <span class="p">{</span>
+      <span class="na">columnName</span><span class="p">:</span> <span class="dl">'</span><span class="s1">ID</span><span class="dl">'</span><span class="p">,</span>
+      <span class="na">dataType</span><span class="p">:</span> <span class="dl">'</span><span class="s1">NUMBER</span><span class="dl">'</span><span class="p">,</span>
+      <span class="na">nullable</span><span class="p">:</span> <span class="dl">'</span><span class="s1">N</span><span class="dl">'</span>
+    <span class="p">},</span>
+  <span class="p">})</span>
+  <span class="nx">id</span><span class="p">:</span> <span class="kr">number</span><span class="p">;</span>
+
+  <span class="p">@</span><span class="nd">property</span><span class="p">({</span>
+    <span class="na">type</span><span class="p">:</span> <span class="dl">'</span><span class="s1">string</span><span class="dl">'</span><span class="p">,</span>
+    <span class="na">required</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="na">oracle</span><span class="p">:{</span>
+      <span class="na">columnName</span><span class="p">:</span> <span class="dl">'</span><span class="s1">LOCALTIONID</span><span class="dl">'</span><span class="p">,</span>
+      <span class="na">dataType</span><span class="p">:</span> <span class="dl">'</span><span class="s1">VARCHAR2</span><span class="dl">'</span><span class="p">,</span>
+      <span class="na">nullable</span><span class="p">:</span> <span class="dl">'</span><span class="s1">N</span><span class="dl">'</span>
+    <span class="p">}</span>
+  <span class="p">})</span>
+  <span class="nx">locationId</span><span class="p">:</span> <span class="kr">string</span><span class="p">;</span>
+</code></pre></div></div>
+
+<details>
+  <summary><strong>For LoopBack 3 users</strong></summary>
+
+  <div id="/common/models/model.json" class="code-caption">
+    <p>/common/models/model.json</p>
+  </div>
+
+  <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span>
+    <span class="dl">"</span><span class="s2">name</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">User</span><span class="dl">"</span><span class="p">,</span>
+    <span class="dl">"</span><span class="s2">options</span><span class="dl">"</span><span class="p">:{</span>
+      <span class="dl">"</span><span class="s2">idInjection</span><span class="dl">"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span>
+      <span class="dl">"</span><span class="s2">oracle</span><span class="dl">"</span><span class="p">:{</span>
+        <span class="dl">"</span><span class="s2">schema</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">XE</span><span class="dl">"</span><span class="p">,</span>
+        <span class="dl">"</span><span class="s2">table</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">USER</span><span class="dl">"</span>
+      <span class="p">}</span>
+    <span class="p">},</span>
+    <span class="dl">"</span><span class="s2">properties</span><span class="dl">"</span><span class="p">:{</span>
+      <span class="dl">"</span><span class="s2">myId</span><span class="dl">"</span><span class="p">:{</span>
+        <span class="dl">"</span><span class="s2">type</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">number</span><span class="dl">"</span><span class="p">,</span>
+        <span class="dl">"</span><span class="s2">required</span><span class="dl">"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span>
+        <span class="dl">"</span><span class="s2">id</span><span class="dl">"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span>
+        <span class="dl">"</span><span class="s2">oracle</span><span class="dl">"</span><span class="p">:{</span>
+          <span class="dl">"</span><span class="s2">columnName</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">MYID</span><span class="dl">"</span><span class="p">,</span>
+          <span class="dl">"</span><span class="s2">dataType</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">NUMBER</span><span class="dl">"</span><span class="p">,</span>
+        <span class="p">}</span>
+      <span class="p">},</span>
+      <span class="dl">"</span><span class="s2">locationId</span><span class="dl">"</span><span class="p">:{</span>
+        <span class="dl">"</span><span class="s2">type</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">String</span><span class="dl">"</span><span class="p">,</span>
+        <span class="dl">"</span><span class="s2">required</span><span class="dl">"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span>
+        <span class="dl">"</span><span class="s2">length</span><span class="dl">"</span><span class="p">:</span><span class="mi">20</span><span class="p">,</span>
+        <span class="dl">"</span><span class="s2">id</span><span class="dl">"</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span>
+        <span class="dl">"</span><span class="s2">oracle</span><span class="dl">"</span><span class="p">:{</span>
+          <span class="dl">"</span><span class="s2">columnName</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">LOCATION_ID</span><span class="dl">"</span><span class="p">,</span>
+          <span class="dl">"</span><span class="s2">dataType</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">VARCHAR2</span><span class="dl">"</span><span class="p">,</span>
+          <span class="dl">"</span><span class="s2">dataLength</span><span class="dl">"</span><span class="p">:</span><span class="mi">20</span><span class="p">,</span>
+          <span class="dl">"</span><span class="s2">nullable</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">N</span><span class="dl">"</span>
+        <span class="p">}</span>
+      <span class="p">},</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+</code></pre></div>  </div>
+
+</details>
+
+<p><strong>Notice</strong>: the Oracle database default type is UPPERCASE. If the oracle settings are not specified in the model, for example:</p>
+
+<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">export</span> <span class="kd">class</span> <span class="nx">Demo</span> <span class="kd">extends</span> <span class="nx">Entity</span> <span class="p">{</span>
+  <span class="p">@</span><span class="nd">property</span><span class="p">({</span>
+    <span class="na">type</span><span class="p">:</span> <span class="dl">'</span><span class="s1">number</span><span class="dl">'</span><span class="p">,</span>
+    <span class="na">required</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="na">id</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+  <span class="p">})</span>
+  <span class="nx">id</span><span class="p">:</span> <span class="kr">number</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>the connector would look for a table named <code class="language-plaintext highlighter-rouge">DEMO</code> under the default schema in the database and also map the id property to a column named <code class="language-plaintext highlighter-rouge">ID</code> in that table. This might cause errors if the default table/colum name doesn’t exist. Please do specify the settings if needed.</p>
+
+<h3 id="configure-a-custom-tablecolumn-name">Configure a custom table/column name</h3>
+
+<p>On the other hand, such settings would also allow you to have different names for models and tables. Take the <code class="language-plaintext highlighter-rouge">User</code> model as an example, we can map the <code class="language-plaintext highlighter-rouge">User</code> model to the table <code class="language-plaintext highlighter-rouge">MYUSER</code> and map the <code class="language-plaintext highlighter-rouge">id</code> property to column <code class="language-plaintext highlighter-rouge">MY_ID</code>as long as they are specified correctly:</p>
+
+<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">@</span><span class="nd">model</span><span class="p">({</span>
+  <span class="na">settings</span><span class="p">:</span> <span class="p">{</span>
+    <span class="na">oracle</span><span class="p">:</span> <span class="p">{</span>
+      <span class="na">schema</span><span class="p">:</span> <span class="dl">'</span><span class="s1">XE</span><span class="dl">'</span><span class="p">,</span>
+      <span class="na">table</span><span class="p">:</span> <span class="dl">'</span><span class="s1">MYUSER</span><span class="dl">'</span> <span class="c1">// customized name</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">})</span>
+<span class="k">export</span> <span class="kd">class</span> <span class="nx">User</span> <span class="kd">extends</span> <span class="nx">Entity</span> <span class="p">{</span>
+  <span class="p">@</span><span class="nd">property</span><span class="p">({</span>
+    <span class="na">type</span><span class="p">:</span> <span class="dl">'</span><span class="s1">number</span><span class="dl">'</span><span class="p">,</span>
+    <span class="na">required</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="na">id</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="na">oracle</span><span class="p">:</span> <span class="p">{</span>
+      <span class="na">columnName</span><span class="p">:</span> <span class="dl">'</span><span class="s1">MYID</span><span class="dl">'</span> <span class="c1">// customized name</span>
+    <span class="p">},</span>
+  <span class="p">})</span>
+  <span class="nx">id</span><span class="p">:</span> <span class="kr">number</span><span class="p">;</span>
+  <span class="c1">//...</span>
+</code></pre></div></div>
+
+<details>
+  <summary><strong>For LoopBack 3 users</strong></summary>
+
+  <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span>
+    <span class="dl">"</span><span class="s2">name</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">User</span><span class="dl">"</span><span class="p">,</span>
+    <span class="dl">"</span><span class="s2">options</span><span class="dl">"</span><span class="p">:{</span>
+      <span class="dl">"</span><span class="s2">idInjection</span><span class="dl">"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span>
+      <span class="dl">"</span><span class="s2">oracle</span><span class="dl">"</span><span class="p">:{</span>
+        <span class="dl">"</span><span class="s2">schema</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">XE</span><span class="dl">"</span><span class="p">,</span>
+        <span class="dl">"</span><span class="s2">table</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">MYUSER</span><span class="dl">"</span> <span class="c1">// customized name</span>
+      <span class="p">}</span>
+    <span class="p">},</span>
+    <span class="dl">"</span><span class="s2">properties</span><span class="dl">"</span><span class="p">:{</span>
+      <span class="dl">"</span><span class="s2">id</span><span class="dl">"</span><span class="p">:{</span>
+        <span class="dl">"</span><span class="s2">type</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">number</span><span class="dl">"</span><span class="p">,</span>
+        <span class="dl">"</span><span class="s2">required</span><span class="dl">"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span>
+        <span class="dl">"</span><span class="s2">id</span><span class="dl">"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span>
+        <span class="dl">"</span><span class="s2">oracle</span><span class="dl">"</span><span class="p">:{</span>
+          <span class="dl">"</span><span class="s2">columnName</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">MYID</span><span class="dl">"</span><span class="p">,</span> <span class="c1">// customized name</span>
+          <span class="dl">"</span><span class="s2">dataType</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">NUMBER</span><span class="dl">"</span><span class="p">,</span>
+        <span class="p">}</span>
+      <span class="p">},</span>
+      <span class="c1">//...</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+</code></pre></div>  </div>
+
+</details>
+
+<h3 id="type-mapping">Type mapping</h3>
+
+<p>See <a href="http://loopback.io/doc/en/lb4/LoopBack-types.html">LoopBack 4 types</a> (or <a href="http://loopback.io/doc/en/lb3/LoopBack-types.html">LoopBack 3 types</a>) for
+details on LoopBack’s data types.</p>
+
+<h4 id="json-to-oracle-types">JSON to Oracle Types</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th width="450">LoopBack Type</th>
+      <th width="450">Oracle Type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>String<br />JSON<br />Text<br />default</td>
+      <td>VARCHAR2
+      <br />Default length is 1024
+      </td>
+    </tr>
+    <tr>
+      <td>Number</td>
+      <td>NUMBER</td>
+    </tr>
+    <tr>
+      <td>Date</td>
+      <td>DATE</td>
+    </tr>
+    <tr>
+      <td>Timestamp</td>
+      <td>TIMESTAMP(3)</td>
+    </tr>
+    <tr>
+      <td>Boolean</td>
+      <td>CHAR(1)</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="oracle-types-to-json">Oracle Types to JSON</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th width="450">Oracle Type</th>
+      <th width="450">LoopBack Type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CHAR(1)</td>
+      <td>Boolean</td>
+    </tr>
+    <tr>
+      <td>CHAR(n)<br />VARCHAR<br />VARCHAR2,<br />LONG VARCHAR<br />NCHAR<br />NVARCHAR2</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>LONG, BLOB, CLOB, NCLOB</td>
+      <td>Node.js <a class="external-link" href="http://nodejs.org/api/buffer.html">Buffer object</a></td>
+    </tr>
+    <tr>
+      <td>NUMBER<br />INTEGER<br />DECIMAL<br />DOUBLE<br />FLOAT<br />BIGINT<br />SMALLINT<br />REAL<br />NUMERIC<br />BINARY_FLOAT<br />BINARY_DOUBLE<br />UROWID<br />ROWID</td>
+      <td>Number</td>
+    </tr>
+    <tr>
+      <td>DATE<br />TIMESTAMP</td>
+      <td>Date</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="discovery-and-auto-migration">Discovery and auto-migration</h2>
+
+<h3 id="model-discovery">Model discovery</h3>
+
+<p>The Oracle connector supports <em>model discovery</em> that enables you to create LoopBack models based on an existing database schema. Once you defined your datasource:</p>
+
+<ul>
+  <li>LoopBack 4 users could use the commend
+<a href="https://loopback.io/doc/en/lb4/Discovering-models.html"><code class="language-plaintext highlighter-rouge">lb4 discover</code></a> to
+discover models.</li>
+  <li>For LB3 users, please check
+<a href="https://loopback.io/doc/en/lb3/Discovering-models-from-relational-databases.html">Discovering models from relational databases</a>.
+(See
+<a href="http://apidocs.strongloop.com/loopback-datasource-juggler/#datasource-prototype-discoverandbuildmodels">database discovery API</a>
+for related APIs information)</li>
+</ul>
+
+<h3 id="auto-migration">Auto-migration</h3>
+
+<p>The Oracle connector also supports <em>auto-migration</em> that enables you to create a database schema
+from LoopBack models.</p>
+
+<p>For example, based on the following model, the auto-migration method would create/alter existing <code class="language-plaintext highlighter-rouge">CUSTOMER</code> table under <code class="language-plaintext highlighter-rouge">XE</code> schema in the database. Table <code class="language-plaintext highlighter-rouge">CUSTOMER</code> would have two columns: <code class="language-plaintext highlighter-rouge">NAME</code> and <code class="language-plaintext highlighter-rouge">ID</code>, where <code class="language-plaintext highlighter-rouge">ID</code> is also the primary key, and its value would be generated by the database as it has <code class="language-plaintext highlighter-rouge">type: 'Number'</code> and <code class="language-plaintext highlighter-rouge">generated: true</code> set:</p>
+
+<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">@</span><span class="nd">model</span><span class="p">()</span>
+<span class="k">export</span> <span class="kd">class</span> <span class="nx">Customer</span> <span class="kd">extends</span> <span class="nx">Entity</span> <span class="p">{</span>
+  <span class="p">@</span><span class="nd">property</span><span class="p">({</span>
+    <span class="na">id</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="na">type</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Number</span><span class="dl">'</span><span class="p">,</span>
+    <span class="na">generated</span><span class="p">:</span> <span class="kc">true</span>
+  <span class="p">})</span>
+  <span class="nx">id</span><span class="p">:</span> <span class="kr">number</span><span class="p">;</span>
+
+  <span class="p">@</span><span class="nd">property</span><span class="p">({</span>
+    <span class="na">type</span><span class="p">:</span> <span class="dl">'</span><span class="s1">string</span><span class="dl">'</span>
+  <span class="p">})</span>
+  <span class="nx">name</span><span class="p">:</span> <span class="kr">string</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<details>
+  <summary><strong>For LoopBack 3 users</strong></summary>
+
+  <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span>
+    <span class="dl">"</span><span class="s2">name</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">Customer</span><span class="dl">"</span><span class="p">,</span>
+    <span class="dl">"</span><span class="s2">options</span><span class="dl">"</span><span class="p">:{</span>
+      <span class="dl">"</span><span class="s2">idInjection</span><span class="dl">"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span>
+    <span class="p">},</span>
+    <span class="dl">"</span><span class="s2">properties</span><span class="dl">"</span><span class="p">:{</span>
+      <span class="dl">"</span><span class="s2">id</span><span class="dl">"</span><span class="p">:{</span>
+        <span class="dl">"</span><span class="s2">type</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">number</span><span class="dl">"</span><span class="p">,</span>
+        <span class="dl">"</span><span class="s2">required</span><span class="dl">"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span>
+        <span class="dl">"</span><span class="s2">id</span><span class="dl">"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span>
+      <span class="p">},</span>
+      <span class="dl">"</span><span class="s2">name</span><span class="dl">"</span><span class="p">:{</span>
+        <span class="dl">"</span><span class="s2">type</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">string</span><span class="dl">"</span><span class="p">,</span>
+        <span class="dl">"</span><span class="s2">required</span><span class="dl">"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span>
+      <span class="p">},</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+</code></pre></div>  </div>
+
+</details>
+
+<p>LoopBack Oracle connector creates the following schema objects for a given model:</p>
+
+<ul>
+  <li>A table, for example, PRODUCT</li>
+  <li>A sequence for the primary key, for example, PRODUCT_ID_SEQUENCE</li>
+  <li>A trigger to generate the primary key from the sequence, for example, PRODUCT_ID_TRIGGER</li>
+</ul>
+
+<h4 id="specifying-database-schema-definition-via-model">Specifying database schema definition via model</h4>
+
+<p>By default, table and column names are generated in uppercase.</p>
+
+<p>Besides the basic model metadata, you can also to specify part of the database schema definition via the
+property definition then run the migration script. They will be mapped to the database. The setting is the same as what we introduced in the section <a href="#configure-a-custom-table/column-name">Configure a custom table/column name</a>. One just needs to create models first, then run the migration script.</p>
+
+<p>For how to run the script and more details:</p>
+
+<ul>
+  <li>For LB4 users, please check <a href="https://loopback.io/doc/en/lb4/Database-migrations.html">Database Migration</a></li>
+  <li>For LB3 users, please check <a href="https://loopback.io/doc/en/lb3/Creating-a-database-schema-from-models.html">Creating a database schema from models</a></li>
+  <li>Check discovery/migration section the Oracle tutorial</li>
+</ul>
+
+<p>(See <a href="http://apidocs.strongloop.com/loopback-datasource-juggler/#datasource-prototype-automigrate">LoopBack auto-migrate method</a> for related APIs information)</p>
+
+<p>Here are some limitations and tips:</p>
+
+<ul>
+  <li>If you defined <code class="language-plaintext highlighter-rouge">generated: true</code> in the id property, it generates <strong>integers</strong> by default. The Oracle connector does not support other auto-generated id types yet. Please check the <a href="#auto-generated-ids">Auto-generated ids</a> section below if you would like use auto-generated id in different types such as uuid.</li>
+  <li>Only the id property supports the auto-generation setting <code class="language-plaintext highlighter-rouge">generated: true</code> for now</li>
+  <li>Destroying models may result in errors due to foreign key integrity. First delete any related models by calling delete on models with relationships.</li>
+</ul>
+
+<h4 id="auto-generated-ids">Auto-generated ids</h4>
+
+<p>Auto-migrate supports the automatic generation of property values for the id property. For Oracle, the default id type is <strong>integer</strong>. Thus if you have <code class="language-plaintext highlighter-rouge">generated: true</code> set in the id property definition, it generates integers by default:</p>
+
+<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span>
+  <span class="nl">id</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+  <span class="kd">type</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Number</span><span class="dl">'</span><span class="p">,</span>
+  <span class="nx">required</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+  <span class="nx">generated</span><span class="p">:</span> <span class="kc">true</span> <span class="c1">// enables auto-generation</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>It might be a case to use UUIDs as the primary key in Oracle instead of integers. You can enable it with either the following ways:</p>
+
+<ul>
+  <li>use uuid that is <strong>generated by your LB application</strong> by setting <a href="https://loopback.io/doc/en/lb4/Model.html#property-decorator"><code class="language-plaintext highlighter-rouge">defaultFn: uuid</code></a>:</li>
+</ul>
+
+<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="p">@</span><span class="nd">property</span><span class="p">({</span>
+    <span class="na">id</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="na">type</span><span class="p">:</span> <span class="dl">'</span><span class="s1">string</span><span class="dl">'</span>
+    <span class="na">defaultFn</span><span class="p">:</span> <span class="dl">'</span><span class="s1">uuid</span><span class="dl">'</span><span class="p">,</span>
+    <span class="c1">// generated: true,  -&gt; not needed</span>
+  <span class="p">})</span>
+  <span class="nx">id</span><span class="p">:</span> <span class="kr">string</span><span class="p">;</span>
+</code></pre></div></div>
+
+<ul>
+  <li>alter the table to use Oracle built-in uuid functions (<code class="language-plaintext highlighter-rouge">SYS_GUID()</code> for example):</li>
+</ul>
+
+<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="p">@</span><span class="nd">property</span><span class="p">({</span>
+  <span class="na">id</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+  <span class="na">type</span><span class="p">:</span> <span class="dl">'</span><span class="s1">String</span><span class="dl">'</span><span class="p">,</span>
+  <span class="na">required</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+  <span class="c1">// settings below are needed</span>
+  <span class="na">generated</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+  <span class="na">useDefaultIdType</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+<span class="p">})</span>
+  <span class="nx">id</span><span class="p">:</span> <span class="kr">string</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>Then you will need to alter the table manually.</p>
+
+<h2 id="running-tests">Running tests</h2>
+
+<h3 id="own-instance">Own instance</h3>
+
+<p>If you have a local or remote Oracle instance and would like to use that to run the test suite, use the following command:</p>
+
+<ul>
+  <li>Linux</li>
+</ul>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">ORACLE_HOST</span><span class="o">=</span>&lt;HOST&gt; <span class="nv">ORACLE_PORT</span><span class="o">=</span>&lt;PORT&gt; <span class="nv">ORACLE_USER</span><span class="o">=</span>&lt;USER&gt; <span class="nv">ORACLE_PASSWORD</span><span class="o">=</span>&lt;PASSWORD&gt; <span class="nv">ORACLE_DATABASE</span><span class="o">=</span>&lt;DATABASE&gt; npm <span class="nb">test</span>
+</code></pre></div></div>
+
+<ul>
+  <li>Windows</li>
+</ul>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>SET <span class="nv">ORACLE_HOST</span><span class="o">=</span>&lt;HOST&gt;
+SET <span class="nv">ORACLE_PORT</span><span class="o">=</span>&lt;PORT&gt;
+SET <span class="nv">ORACLE_USER</span><span class="o">=</span>&lt;USER&gt;
+SET <span class="nv">ORACLE_PASSWORD</span><span class="o">=</span>&lt;PASSWORD&gt;
+SET <span class="nv">ORACLE_DATABASE</span><span class="o">=</span>&lt;DATABASE&gt;
+npm <span class="nb">test</span>
+</code></pre></div></div>
+
+<h3 id="docker">Docker</h3>
+
+<p>If you do not have a local Oracle instance, you can also run the test suite with very minimal requirements.</p>
+
+<ul>
+  <li>Assuming you have <a href="https://docs.docker.com/engine/installation/">Docker</a> installed, run the following script which would spawn an Oracle instance on your local machine:</li>
+</ul>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">source </span>setup.sh &lt;HOST&gt; &lt;PORT&gt;
+</code></pre></div></div>
+
+<p>where <code class="language-plaintext highlighter-rouge">&lt;HOST&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;PORT&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;USER&gt;</code>, and <code class="language-plaintext highlighter-rouge">PASSWORD</code> are optional parameters. The default values are <code class="language-plaintext highlighter-rouge">localhost</code>, <code class="language-plaintext highlighter-rouge">1521</code>, <code class="language-plaintext highlighter-rouge">admin</code>, and <code class="language-plaintext highlighter-rouge">0raclep4ss</code> respectively. The <code class="language-plaintext highlighter-rouge">DATABASE</code> setting is always <code class="language-plaintext highlighter-rouge">XE</code>.</p>
+
+<ul>
+  <li>Run the test:</li>
+</ul>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm <span class="nb">test</span>
+</code></pre></div></div>
+
+
+    <div class="tags">
+      
+    </div>
+</div>
+
+<hr class="shaded"/>
+
+<footer id="container">
+            <div class="row">
+                <div class="col-md-6 footer-left">
+               &copy;2021 IBM / StrongLoop. All rights reserved. <br />
+ Site last generated: Mar 22, 2021
+              </div>
+              <div class="col-md-6 footer-right">
+                <p><img src="https://loopback.io/images/company_logo.png" alt="Company logo"/></p>
+              </div>
+            </div>
+</footer>
+
+
+        </div>
+        <!-- /.row -->
+</div>
+<!-- /.container -->
+    </div>
+</body>
+
+</html>

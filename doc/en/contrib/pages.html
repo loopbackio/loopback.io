@@ -1,0 +1,1170 @@
+<!DOCTYPE html>
+<head>
+    
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="This theme primarily uses pages. You need to make sure your pages have the appropriate frontmatter. One frontmatter tag your users might find helpful is the ...">
+  <meta name="keywords" content="contributing,  pages, authoring, exclusion, frontmatter">
+  <title>Authoring Pages | LoopBack Documentation</title>
+  <link rel="stylesheet" href="/css/syntax.css">
+
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/modern-business.css">
+    <link rel="stylesheet" href="/css/lavish-bootstrap.css">
+    <link rel="stylesheet" href="/css/customstyles.css">
+    <link rel="stylesheet" href="/css/theme-v4.css">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-150726441-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-150726441-2');
+</script>
+
+
+    <!-- github star button -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.3.0/anchor.min.js"></script>
+    <script src="/js/toc.js"></script>
+    <script src="/js/customscripts.js"></script>
+
+    <link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    
+
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-lg navbar-brand no_icon" href="/doc/index.html">
+              <img class="no_icon" style="width:147px;" src="/images/branding/logo/white/loopback.svg">&nbsp;<span class="projectTitle"></span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- entries without drop-downs appear here -->
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">API Docs<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        <!-- page.url is /doc/en/contrib/pages.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://loopback.io/doc/en/lb4/apidocs.index.html" target="_blank">LoopBack 4</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/contrib/pages.html .... folderitem.url is  -->
+                          
+                            <li><a href="http://apidocs.loopback.io" target="_blank">LoopBack 3.x</a></li>
+                          
+                        
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">View<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        <!-- page.url is /doc/en/contrib/pages.html .... folderitem.url is / -->
+                          
+                            <li><a href="/">LoopBack Overview</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/contrib/pages.html .... folderitem.url is /doc/en/lb4/ -->
+                          
+                            <li><a href="/doc/en/lb4/">LoopBack 4</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/contrib/pages.html .... folderitem.url is /doc/en/lb3/ -->
+                          
+                            <li><a href="/doc/en/lb3/">LoopBack 3.x</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/contrib/pages.html .... folderitem.url is /doc/en/lb2/ -->
+                          
+                            <li><a href="/doc/en/lb2/">LoopBack 2.x</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/contrib/pages.html .... folderitem.url is /doc/en/community/ -->
+                          
+                            <li><a href="/doc/en/community/">Community projects</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/contrib/pages.html .... folderitem.url is /doc/en/contrib/ -->
+                          
+                            <li class="dropdownActive"><a href="/doc/en/contrib/">Contributing to LoopBack</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/contrib/pages.html .... folderitem.url is /doc/en/sec/ -->
+                          
+                            <li><a href="/doc/en/sec/">Security advisories</a></li>
+                          
+                        
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Resources<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        <!-- page.url is /doc/en/contrib/pages.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://github.com/strongloop/loopback.io" target="_blank">Docs Github Repo</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/contrib/pages.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://groups.google.com/forum/#!forum/loopbackjs-announcements" target="_blank">Announcements Mailing List</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/contrib/pages.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://groups.google.com/forum/#!forum/loopbackjs" target="_blank">Developer Forum</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/contrib/pages.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://join.slack.com/t/loopbackio/shared_invite/zt-8lbow73r-SKAKz61Vdao~_rGf91pcsw" target="_blank">LoopBack on Slack</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/contrib/pages.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://stackoverflow.com/questions/tagged/strongloop+or+loopback4+or+loopbackjs" target="_blank">LoopBack on Stack Overflow</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/contrib/pages.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://strongloop.com/strongblog/tag_LoopBack.html" target="_blank">StrongLoop Blog - LoopBack</a></li>
+                          
+                        
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Translations<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        <!-- page.url is /doc/en/contrib/pages.html .... folderitem.url is /doc/es/lb2/ -->
+                          
+                            <li><a href="/doc/es/lb2/">Español (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/contrib/pages.html .... folderitem.url is /doc/es/lb4/ -->
+                          
+                            <li><a href="/doc/es/lb4/">Español (v4)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/contrib/pages.html .... folderitem.url is /doc/fr/lb2/ -->
+                          
+                            <li><a href="/doc/fr/lb2/">Français (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/contrib/pages.html .... folderitem.url is /doc/fr/lb4/ -->
+                          
+                            <li><a href="/doc/fr/lb4/">Français (v4)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/contrib/pages.html .... folderitem.url is /doc/ko/lb2/ -->
+                          
+                            <li><a href="/doc/ko/lb2/">한국어 (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/contrib/pages.html .... folderitem.url is /doc/ko/lb3/ -->
+                          
+                            <li><a href="/doc/ko/lb3/">한국어 (v3)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/contrib/pages.html .... folderitem.url is /doc/pt-br/lb2/ -->
+                          
+                            <li><a href="/doc/pt-br/lb2/">Português (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/contrib/pages.html .... folderitem.url is /doc/pt-br/lb4/ -->
+                          
+                            <li><a href="/doc/pt-br/lb4/">Português (v4)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/contrib/pages.html .... folderitem.url is /doc/ja/lb2/ -->
+                          
+                            <li><a href="/doc/ja/lb2/">日本語 (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/contrib/pages.html .... folderitem.url is /doc/ja/lb3/ -->
+                          
+                            <li><a href="/doc/ja/lb3/">日本語 (v3)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/contrib/pages.html .... folderitem.url is /doc/ja/lb4/ -->
+                          
+                            <li><a href="/doc/ja/lb4/">日本語 (v4)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/contrib/pages.html .... folderitem.url is /doc/ru/lb2/ -->
+                          
+                            <li><a href="/doc/ru/lb2/">Pусский (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/contrib/pages.html .... folderitem.url is /doc/zh/lb2/ -->
+                          
+                            <li><a href="/doc/zh/lb2/">中文 (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/contrib/pages.html .... folderitem.url is /doc/zh/lb4/ -->
+                          
+                            <li><a href="/doc/zh/lb4/">中文 (v4)</a></li>
+                          
+                        
+                    </ul>
+                </li>
+                
+                
+                
+                <li>
+                    <form id="search" name="search" class="input-group lb-search" action="/search" method="GET">
+                        <input type="text" class="form-control search-bar" placeholder="Search (powered by Watson)" name="q">
+                        
+                        <div class="input-group-btn">
+                            <button type="submit" class="btn btn-default" aria-label="search">
+                              <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                            </button>
+                        </div>
+                      </form>
+                </li>
+            </ul>
+        </div>
+      </div>
+</nav>
+
+<!-- Page Content -->
+<div class="container">
+    <!-- Content Row -->
+    <div class="row">
+        <!-- Sidebar Column -->
+        <nav class="col-md-3 sidebar-col">
+          
+
+
+
+
+
+
+
+
+
+
+
+<!-- NOTE: sidebar = site.data.sidebars.mydoc_sidebar.entries -->
+<div class="sidebarTitle"><a href="index.html">Contributing to LoopBack</a></div>
+<ul id="mysidebar" class="nav-list">
+  
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Governance.html">Governance</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Reporting-issues.html">Reporting issues</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="code-contrib.html">Contributing code</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="code-contrib-lb2-lb3.html">LoopBack 2.x, 3.x</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="style-guide-es6.html">Code style guide</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="eslint-guide.html">Using ESLint</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="git-commit-messages.html">Git commit message guidelines</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="triaging-pull-requests.html">Triaging pull requests</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="/doc/en/lb4/code-contrib-lb4.html">LoopBack 4</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="/doc/en/lb4/submitting_a_pr.html">Submitting a pull request to LoopBack 4</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="doc-contrib.html">Contributing to docs</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="jekyll_getting_started.html">Using Jekyll</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="content_reuse.html">Content reuse</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Including-READMEs.html">Including READMEs</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   active">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="pages.html">Authoring pages</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Markdown-style-guide.html">Markdown style guide</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Doc-style-guide.html">Documentation style guide</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="README-guidelines.html">README guidelines</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="navigation.html">Navigation</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="sidebar_navigation.html">Sidebar navigation</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="tags.html">Tags</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="formatting.html">Formatting</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="alerts.html">Alerts</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="images.html">Images</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="code_samples.html">Code samples</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="adding_tooltips.html">Tooltips</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="icons.html">Icons</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="hyperlinks.html">Links</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="tables.html">Tables</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="layouts.html">Special layouts</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="readmes.html">README layout</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="navgroups.html">Navgroup layout</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="faq_layout.html">FAQ layout</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="translation.html">Translation</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Adding_a_new_language.html">Adding a new language</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Translating_articles.html">Translating articles</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+
+</ul>
+
+        </nav>
+        <!-- Content Column -->
+        <div class="col-md-9">
+            
+<div class="post-header">
+   <h1 class="post-title-main">Authoring Pages</h1>
+   
+     
+       <a target="_blank" href="https://github.com/strongloop/loopback.io/blob/gh-pages/pages/en/contrib/pages.md" class="githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit this page</a>
+   
+</div>
+
+<div class="post-content">
+
+
+  
+   <div class="summary">
+     This theme primarily uses pages. You need to make sure your pages have the appropriate frontmatter. One frontmatter tag your users might find helpful is the summary tag. This functions similar in purpose to the shortdesc element in DITA.
+   </div>
+  
+
+
+
+
+ 
+   
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+;$(function() {
+  var level = parseInt(3, 10);
+  if (level === 1) {level = 'h2'}
+  if (level === 2) {level = 'h2,h3'}
+  if (level === 3) {level = 'h2,h3,h4'}
+  if (level === 4) {level = 'h2,h3,h4,h5'}
+
+  // Add a new level for changelog files which use h1,h2,h3
+  if (level === 0) {level = 'h1,h2,h3,h4,h5'}
+
+  var toc = $('#toc')
+
+  toc.toc({minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: level})
+
+  /* this offset helps with the space taken up by the floating toolbar */
+  toc.on('click', 'a', function() {
+    var target = $(this.getAttribute('href')),
+      scroll_target = target.offset().top
+
+    $(window).scrollTop(scroll_target - 10)
+    return false
+  })
+  .on('click', '.toc-expand-button', function() {
+    toc.find('> ul').slideToggle('fast');
+  })
+})
+</script>
+
+<div id="toc">
+  <span class="toc-title">Page Contents</span>
+  <button type="button" class="btn btn-link toc-expand-button">
+    <i class="fa fa-bars"></i>
+  </button>
+</div>
+
+ 
+
+    <h2 id="how-to-author-content">How to author content</h2>
+<p>Use a text editor such as Sublime Text, WebStorm, IntelliJ, or Atom to create pages. Atom is recommended because it’s created by Github, which is driving some of the Jekyll development through Github Pages.</p>
+
+<h2 id="where-pages-are-kept">Where pages are kept</h2>
+
+<p>Some of the documentation is in the <code class="language-plaintext highlighter-rouge">/pages</code> folder under the <code class="language-plaintext highlighter-rouge">loopback.io</code> repository.  In that folder, English documentation is in <code class="language-plaintext highlighter-rouge">en</code>, and other languages are in folders with the name of the ISO language code (for example, <code class="language-plaintext highlighter-rouge">fr</code> for French).</p>
+
+<p>Under English, the sub-folders are:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">lb2</code> - LoopBack 2.x</li>
+  <li><code class="language-plaintext highlighter-rouge">lb3</code> - LoopBack 3.0</li>
+  <li><code class="language-plaintext highlighter-rouge">lb4</code> - LoopBack 4</li>
+  <li><code class="language-plaintext highlighter-rouge">contrib</code> - Information on contributing to the project, published at <a href="http://loopback.io/doc/en/contrib/">http://loopback.io/doc/en/contrib/</a>.</li>
+  <li><code class="language-plaintext highlighter-rouge">community</code> - Area where community members can put information about their LoopBack-related projects.</li>
+</ul>
+
+<p>However, for LoopBack 4, the documentation is sourced from the <a href="https://github.com/strongloop/loopback-next/tree/master/docs/site"><code class="language-plaintext highlighter-rouge">/docs/site</code></a> folder in the <a href="https://github.com/strongloop/loopback-next"><code class="language-plaintext highlighter-rouge">loopback-next</code></a> repository.</p>
+
+<h3 id="overview-content">Overview content</h3>
+
+<p>The site includes some non-documentation “technical overview” information that
+pre-dates the move of the documentation to the site.  For the most part, we don’t expect community
+members to edit this information, though anyone is welcome to report inaccuracies or problems.
+This content includes:</p>
+
+<ul>
+  <li>The home page, <code class="language-plaintext highlighter-rouge">index.html</code></li>
+  <li>Other “overview” content pages:
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">contributing/index.html</code></li>
+      <li><code class="language-plaintext highlighter-rouge">examples/index.html</code></li>
+      <li><code class="language-plaintext highlighter-rouge">getting-started/index.html</code></li>
+      <li><code class="language-plaintext highlighter-rouge">resources/index.html</code></li>
+      <li><code class="language-plaintext highlighter-rouge">users/index.html</code></li>
+    </ul>
+  </li>
+  <li>Overview layout in <code class="language-plaintext highlighter-rouge">_layouts/overview.html</code></li>
+  <li>Include files in <code class="language-plaintext highlighter-rouge">_includes/overview/</code></li>
+</ul>
+
+<h2 id="frontmatter">Frontmatter</h2>
+
+<p>Make sure each page has frontmatter at the top like this:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nn">---</span>
+<span class="na">title</span><span class="pi">:</span> <span class="s">Alerts</span>
+<span class="na">tags</span><span class="pi">:</span> <span class="pi">[</span><span class="nv">formatting</span><span class="pi">]</span>
+<span class="na">keywords</span><span class="pi">:</span> <span class="s">notes, tips, cautions, warnings, admonitions</span>
+
+<span class="na">summary</span><span class="pi">:</span> <span class="s2">"</span><span class="s">You</span><span class="nv"> </span><span class="s">can</span><span class="nv"> </span><span class="s">insert</span><span class="nv"> </span><span class="s">notes,</span><span class="nv"> </span><span class="s">tips,</span><span class="nv"> </span><span class="s">warnings,</span><span class="nv"> </span><span class="s">and</span><span class="nv"> </span><span class="s">important</span><span class="nv"> </span><span class="s">alerts</span><span class="nv"> </span><span class="s">in</span><span class="nv"> </span><span class="s">your</span><span class="nv"> </span><span class="s">content."</span>
+<span class="na">sidebar</span><span class="pi">:</span> <span class="s">contrib_sidebar</span>
+<span class="na">permalink</span><span class="pi">:</span> <span class="s">/doc/en/contrib/alerts.html</span>
+<span class="nn">---</span>
+</code></pre></div></div>
+
+<p>Front matter is always formatted with three hyphens at the top and bottom. Your front matter must have a <code class="language-plaintext highlighter-rouge">title</code> and <code class="language-plaintext highlighter-rouge">permalink</code> value. All the other values are optional.</p>
+
+<p>Note that you cannot use variables in front matter.</p>
+
+<p>The following table describes each of the front matter that you can use with this theme:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Frontmatter</th>
+      <th>Required?</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>title</strong></td>
+      <td>Required</td>
+      <td>The title for the page</td>
+    </tr>
+    <tr>
+      <td><strong>tags</strong></td>
+      <td>Optional</td>
+      <td>Tags for the page. Make all tags single words, with underscores if needed (rather than spaces). Separate them with commas. Enclose the whole list within brackets. Also, note that tags must be added to <code class="language-plaintext highlighter-rouge">_data/tags_doc.yml</code> to be allowed entrance into the page. This prevents tags from becoming somewhat random and unstructured. You must create a tag page for each one of your tags following the pattern shown in the tags folder. (Tag pages aren’t automatically created.)</td>
+    </tr>
+    <tr>
+      <td><strong>keywords</strong></td>
+      <td>Optional</td>
+      <td>Synonyms and other keywords for the page. This information gets stuffed into the page’s metadata to increase SEO. The user won’t see the keywords, but if you search for one of the keywords, it will be picked up by the search engine.</td>
+    </tr>
+    <tr>
+      <td><strong>last_updated</strong></td>
+      <td>Optional</td>
+      <td>The date the page was last updated. This information could helpful for readers trying to evaluate how current and authoritative information is. If included, the last_updated date appears in the footer of the page in rather small font.</td>
+    </tr>
+    <tr>
+      <td><strong>summary</strong></td>
+      <td>Optional</td>
+      <td>A 1-2 word sentence summarizing the content on the page. This gets formatted into the summary section in the page layout. Adding summaries is a key way to make your content more scannable by users (check out <a href="http://www.nngroup.com/articles/corporate-blogs-front-page-structure/">Jakob Nielsen’s site</a> for a great example of page summaries.) The only drawback with summaries is that you can’t use variables in them.</td>
+    </tr>
+    <tr>
+      <td><strong>permalink</strong></td>
+      <td>Required</td>
+      <td>The permalink <em>must</em> match the filename in order for automated links to work. Additionally, you must include the “.html” in the filename. Do not put forward slashes around the permalink (this makes Jekyll put the file inside a folder in the output). When Jekyll builds the site, it will put the page into the root directory rather than leaving it in a subdirectory or putting it inside a folder and naming the file index.html. Having all files flattened in the root directory is essential for relative linking to work and for all paths to JS and CSS files to be valid. <br /> <strong>NOTE</strong>: For LoopBack, we’ve changed this to use subdirectories, and adjusted how the CSS and JS files are referred to so it works correctly, regardless of how many subdirectories you use.</td>
+    </tr>
+    <tr>
+      <td><strong>datatable</strong></td>
+      <td>Optional</td>
+      <td>‘true’. If you add <code class="language-plaintext highlighter-rouge">datatable: true</code> in the frontmatter, scripts for the <a href="https://www.datatables.net/">jQuery Datatables plugin</a> get included on the page. You can see the scripts that conditionally appear by looking in the <code class="language-plaintext highlighter-rouge">_layouts/default.html</code> page.</td>
+    </tr>
+    <tr>
+      <td><strong>toc</strong></td>
+      <td>Optional</td>
+      <td>If you specify <code class="language-plaintext highlighter-rouge">toc: false</code> in the frontmatter, the page won’t have the table of contents that appears below the title. The toc refers to the list of jump links below the page title, not the sidebar navigation. You probably want to hide the TOC on the homepage and product landing pages.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="colons-in-page-titles">Colons in page titles</h2>
+
+<p>If you want to use a colon in your page title, you must enclose the title’s value in quotation marks.</p>
+
+<h2 id="page-names-and-excluding-files-from-outputs">Page names and excluding files from outputs</h2>
+
+<p>By default, everything in your project is included in the output. To exclude files that don’t belong to that project, specify the file name, the folder name, or use wildcards in the <code class="language-plaintext highlighter-rouge">_config.yml</code> configuration file:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">exclude</span><span class="pi">:</span>
+
+<span class="pi">-</span> <span class="s">filename.md</span>
+<span class="pi">-</span> <span class="s">subfolder_name/</span>
+<span class="pi">-</span> <span class="s">mydoc_*</span>
+<span class="pi">-</span> <span class="s">gitignore</span>
+</code></pre></div></div>
+
+<p>Wildcards will exclude every match after the <code class="language-plaintext highlighter-rouge">*</code>.</p>
+
+<h2 id="saving-pages-as-drafts">Saving pages as drafts</h2>
+
+<p>If you add <code class="language-plaintext highlighter-rouge">published: false</code> in the front matter, your page won’t be published. You can also move draft pages into the <code class="language-plaintext highlighter-rouge">_drafts</code> folder to exclude them from the build. With posts, you can also keep them as drafts by omitting the date in the title.</p>
+
+<h2 id="markdown-or-html-format">Markdown or HTML format</h2>
+
+<p>Pages can be either Markdown or HTML format (specified through either an <code class="language-plaintext highlighter-rouge">.md</code> or <code class="language-plaintext highlighter-rouge">.html</code> file extension).</p>
+
+<p>If you use Markdown, you can also include HTML formatting where needed. But if you’re format is HTML, you must add a <code class="language-plaintext highlighter-rouge">markdown="1"</code> attribute to the element in order to use Markdown inside that HTML element:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;div markdown="1"&gt;This is a [link](http://exmaple.com).&lt;/div&gt;
+</code></pre></div></div>
+
+<p>For your Markdown files, note that a space or two indent will set text off as code or blocks, so avoid spacing indents unless intentional.</p>
+
+<p>If you have a lot of HTML, as long as the top and bottom tags of the HTML are flush left in a Markdown file, all the tags inside those bookend HTML tags will render as HTML, regardless of their indentation. (This can be especially useful for tables.)</p>
+
+<h2 id="kramdown-markdown">Kramdown Markdown</h2>
+
+<p>This theme uses <a href="http://kramdown.gettalong.org/">kramdown markdown</a>.</p>
+
+<p>This mostly aligns with Github-flavored Markdown, with a few differences.</p>
+
+<p>The configuration file shows the Markdown processor and extension:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">highlighter</span><span class="pi">:</span> <span class="s">rouge</span>
+<span class="na">markdown</span><span class="pi">:</span> <span class="s">kramdown</span>
+<span class="na">kramdown</span><span class="pi">:</span>
+ <span class="na">input</span><span class="pi">:</span> <span class="s">GFM</span>
+ <span class="na">auto_ids</span><span class="pi">:</span> <span class="no">true</span>
+ <span class="na">hard_wrap</span><span class="pi">:</span> <span class="no">false</span>
+ <span class="na">syntax_highlighter</span><span class="pi">:</span> <span class="s">rouge</span>
+</code></pre></div></div>
+
+<h3 id="list-item-formatting">List item formatting</h3>
+
+<p>Kramdown requires you to line up the indent between list items with the first starting character after the space in your list item numbering.</p>
+
+<p>The spacing of the intercepting text must align with the spacing of the first character after the space of a numbered list item. Basically, with your list item numbering, use two spaces after the dot in the number, like this:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1.  First item
+2.  Second item
+3.  Third item
+</code></pre></div></div>
+
+<p>See this <a href="http://idratherbewriting.com/2016/02/21/bug-with-kramdown-and-rouge-with-github-pages/">blog post on Kramdown and Rouge</a> for more details.</p>
+
+<p>When you want to insert paragraphs, notes, code snippets, or other matter in between the list items, use four spaces to indent. The four spaces will line up with the first letter of the list item (the <b>F</b>irst or <b>S</b>econd or <b>T</b>hird).</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1.  First item
+
+    ```
+    alert("hello");
+    ```
+
+2.  Second item
+
+    Some pig!
+
+3.  Third item
+</code></pre></div></div>
+
+<p>You can use standard Multi-markdown syntax for tables. You can also use fenced code blocks with lexers specifying the type of code.</p>
+
+<h2 id="automatic-mini-tocs">Automatic mini-TOCs</h2>
+
+<p>By default, a TOC appears at the top of your pages and posts. If you don’t want the TOC to appear for a specific page, such as for a landing page or other homepage, add <code class="language-plaintext highlighter-rouge">toc: false</code> in the front matter of the page.</p>
+
+<p>The mini-TOC requires you to use the <code class="language-plaintext highlighter-rouge">##</code> Markdown syntax for headings. If you use <code class="language-plaintext highlighter-rouge">&lt;h2&gt;</code> elements, you must add an ID attribute for the heading element in order for it to appear in the mini-TOC (for example, <code class="language-plaintext highlighter-rouge">&lt;h2 id="mysampleid"&gt;Heading&lt;/h2&gt;</code>.</p>
+
+<p>By default, the table of contents will include all heading levels.  To limit the level of  headings included, use either the <code class="language-plaintext highlighter-rouge">toc_level</code> property in page frontmatter or, if using the <code class="language-plaintext highlighter-rouge">{% include toc.html %}</code> include directly, use the <code class="language-plaintext highlighter-rouge">level</code> property.</p>
+
+<p>For example, to display <em>only</em> top-level headings (head2s or <code class="language-plaintext highlighter-rouge">##</code> headings), use:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">toc_level: 1</code> in frontmatter</li>
+  <li><code class="language-plaintext highlighter-rouge">{% include toc.html level=1 %}</code> inline</li>
+</ul>
+
+<p>In both cases, the level can be from 1 to 4.</p>
+
+<h2 id="headings">Headings</h2>
+
+<p>Use pound signs before the heading title to designate the level. Note that kramdown requires headings to have one space before and after the heading. Without this space above and below, the heading won’t render into HTML.</p>
+
+<p>Since the page title is considered the “top-level” heading, highest-level headings in a page are “second-level” headings.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## Second-level heading
+</code></pre></div></div>
+
+<p><strong>Result:</strong></p>
+
+<h2 id="second-level-heading">Second-level heading</h2>
+
+<hr />
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>### Third-level heading
+</code></pre></div></div>
+<p><strong>Result:</strong></p>
+
+<h3 id="third-level-heading">Third-level heading</h3>
+
+<hr />
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#### Fourth-level heading
+</code></pre></div></div>
+
+<p><strong>Result:</strong></p>
+
+<h4 id="fourth-level-heading">Fourth-level heading</h4>
+
+<h2 id="someIdTag">Headings with ID Tags</h2>
+
+<p>If you want to use a specific ID tag with your heading, add it like this:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## Headings with ID Tags {#someIdTag}
+</code></pre></div></div>
+
+<p>Then you can reference it with a link like this on the same page:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[Some link](#someIdTag)
+</code></pre></div></div>
+
+<p><strong>Result:</strong></p>
+
+<p><a href="#someIdTag">Some link</a></p>
+
+<h2 id="specify-a-particular-page-layout">Specify a particular page layout</h2>
+
+<p>The default layout for pages is “page” layout.</p>
+
+<p>To specify a different layout, use the <code class="language-plaintext highlighter-rouge">layout</code> property in the page’s frontmatter.</p>
+
+<h2 id="comments">Comments</h2>
+
+<p>Disqus, a commenting system, is integrated into the theme. In the configuration file, specify the Disqus code for the universal code, and Disqus will appear. If you don’t add a Disqus value, the Disqus form isn’t included.</p>
+
+<div class="alert alert-info" role="alert">
+  <p><i class="fa fa-info-circle"></i>
+<b>Note:</b>
+The site is not currently using Disqus.</p>
+
+</div>
+
+
+
+    <div class="tags">
+      
+        <b>Tags: </b>
+        
+        
+          
+            <a href="tag_contributing.html" class="tags-item" role="button">contributing</a>
+            
+        
+      
+    </div>
+</div>
+
+<hr class="shaded"/>
+
+<footer id="container">
+            <div class="row">
+                <div class="col-md-6 footer-left">
+               &copy;2021 IBM / StrongLoop. All rights reserved. <br />
+ Site last generated: Mar 22, 2021
+              </div>
+              <div class="col-md-6 footer-right">
+                <p><img src="https://loopback.io/images/company_logo.png" alt="Company logo"/></p>
+              </div>
+            </div>
+</footer>
+
+
+        </div>
+        <!-- /.row -->
+</div>
+<!-- /.container -->
+    </div>
+</body>
+
+</html>

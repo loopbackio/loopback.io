@@ -1,0 +1,1098 @@
+<!DOCTYPE html>
+<head>
+    
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="This article explains the process and guidelines for contributing code to the LoopBack project.">
+  <meta name="keywords" content="communitycontributinggetting_started,  LoopBack, open-source">
+  <title>Contributing code | LoopBack Documentation</title>
+  <link rel="stylesheet" href="/css/syntax.css">
+
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/modern-business.css">
+    <link rel="stylesheet" href="/css/lavish-bootstrap.css">
+    <link rel="stylesheet" href="/css/customstyles.css">
+    <link rel="stylesheet" href="/css/theme-v4.css">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-150726441-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-150726441-2');
+</script>
+
+
+    <!-- github star button -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.3.0/anchor.min.js"></script>
+    <script src="/js/toc.js"></script>
+    <script src="/js/customscripts.js"></script>
+
+    <link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    
+
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-lg navbar-brand no_icon" href="/doc/index.html">
+              <img class="no_icon" style="width:147px;" src="/images/branding/logo/white/loopback.svg">&nbsp;<span class="projectTitle"></span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- entries without drop-downs appear here -->
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">API Docs<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        <!-- page.url is /doc/en/contrib/code-contrib.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://loopback.io/doc/en/lb4/apidocs.index.html" target="_blank">LoopBack 4</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/contrib/code-contrib.html .... folderitem.url is  -->
+                          
+                            <li><a href="http://apidocs.loopback.io" target="_blank">LoopBack 3.x</a></li>
+                          
+                        
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">View<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        <!-- page.url is /doc/en/contrib/code-contrib.html .... folderitem.url is / -->
+                          
+                            <li><a href="/">LoopBack Overview</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/contrib/code-contrib.html .... folderitem.url is /doc/en/lb4/ -->
+                          
+                            <li><a href="/doc/en/lb4/">LoopBack 4</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/contrib/code-contrib.html .... folderitem.url is /doc/en/lb3/ -->
+                          
+                            <li><a href="/doc/en/lb3/">LoopBack 3.x</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/contrib/code-contrib.html .... folderitem.url is /doc/en/lb2/ -->
+                          
+                            <li><a href="/doc/en/lb2/">LoopBack 2.x</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/contrib/code-contrib.html .... folderitem.url is /doc/en/community/ -->
+                          
+                            <li><a href="/doc/en/community/">Community projects</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/contrib/code-contrib.html .... folderitem.url is /doc/en/contrib/ -->
+                          
+                            <li class="dropdownActive"><a href="/doc/en/contrib/">Contributing to LoopBack</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/contrib/code-contrib.html .... folderitem.url is /doc/en/sec/ -->
+                          
+                            <li><a href="/doc/en/sec/">Security advisories</a></li>
+                          
+                        
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Resources<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        <!-- page.url is /doc/en/contrib/code-contrib.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://github.com/strongloop/loopback.io" target="_blank">Docs Github Repo</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/contrib/code-contrib.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://groups.google.com/forum/#!forum/loopbackjs-announcements" target="_blank">Announcements Mailing List</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/contrib/code-contrib.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://groups.google.com/forum/#!forum/loopbackjs" target="_blank">Developer Forum</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/contrib/code-contrib.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://join.slack.com/t/loopbackio/shared_invite/zt-8lbow73r-SKAKz61Vdao~_rGf91pcsw" target="_blank">LoopBack on Slack</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/contrib/code-contrib.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://stackoverflow.com/questions/tagged/strongloop+or+loopback4+or+loopbackjs" target="_blank">LoopBack on Stack Overflow</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/contrib/code-contrib.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://strongloop.com/strongblog/tag_LoopBack.html" target="_blank">StrongLoop Blog - LoopBack</a></li>
+                          
+                        
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Translations<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        <!-- page.url is /doc/en/contrib/code-contrib.html .... folderitem.url is /doc/es/lb2/ -->
+                          
+                            <li><a href="/doc/es/lb2/">Español (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/contrib/code-contrib.html .... folderitem.url is /doc/es/lb4/ -->
+                          
+                            <li><a href="/doc/es/lb4/">Español (v4)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/contrib/code-contrib.html .... folderitem.url is /doc/fr/lb2/ -->
+                          
+                            <li><a href="/doc/fr/lb2/">Français (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/contrib/code-contrib.html .... folderitem.url is /doc/fr/lb4/ -->
+                          
+                            <li><a href="/doc/fr/lb4/">Français (v4)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/contrib/code-contrib.html .... folderitem.url is /doc/ko/lb2/ -->
+                          
+                            <li><a href="/doc/ko/lb2/">한국어 (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/contrib/code-contrib.html .... folderitem.url is /doc/ko/lb3/ -->
+                          
+                            <li><a href="/doc/ko/lb3/">한국어 (v3)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/contrib/code-contrib.html .... folderitem.url is /doc/pt-br/lb2/ -->
+                          
+                            <li><a href="/doc/pt-br/lb2/">Português (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/contrib/code-contrib.html .... folderitem.url is /doc/pt-br/lb4/ -->
+                          
+                            <li><a href="/doc/pt-br/lb4/">Português (v4)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/contrib/code-contrib.html .... folderitem.url is /doc/ja/lb2/ -->
+                          
+                            <li><a href="/doc/ja/lb2/">日本語 (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/contrib/code-contrib.html .... folderitem.url is /doc/ja/lb3/ -->
+                          
+                            <li><a href="/doc/ja/lb3/">日本語 (v3)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/contrib/code-contrib.html .... folderitem.url is /doc/ja/lb4/ -->
+                          
+                            <li><a href="/doc/ja/lb4/">日本語 (v4)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/contrib/code-contrib.html .... folderitem.url is /doc/ru/lb2/ -->
+                          
+                            <li><a href="/doc/ru/lb2/">Pусский (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/contrib/code-contrib.html .... folderitem.url is /doc/zh/lb2/ -->
+                          
+                            <li><a href="/doc/zh/lb2/">中文 (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/contrib/code-contrib.html .... folderitem.url is /doc/zh/lb4/ -->
+                          
+                            <li><a href="/doc/zh/lb4/">中文 (v4)</a></li>
+                          
+                        
+                    </ul>
+                </li>
+                
+                
+                
+                <li>
+                    <form id="search" name="search" class="input-group lb-search" action="/search" method="GET">
+                        <input type="text" class="form-control search-bar" placeholder="Search (powered by Watson)" name="q">
+                        
+                        <div class="input-group-btn">
+                            <button type="submit" class="btn btn-default" aria-label="search">
+                              <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                            </button>
+                        </div>
+                      </form>
+                </li>
+            </ul>
+        </div>
+      </div>
+</nav>
+
+<!-- Page Content -->
+<div class="container">
+    <!-- Content Row -->
+    <div class="row">
+        <!-- Sidebar Column -->
+        <nav class="col-md-3 sidebar-col">
+          
+
+
+
+
+
+
+
+
+
+
+
+<!-- NOTE: sidebar = site.data.sidebars.mydoc_sidebar.entries -->
+<div class="sidebarTitle"><a href="index.html">Contributing to LoopBack</a></div>
+<ul id="mysidebar" class="nav-list">
+  
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Governance.html">Governance</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Reporting-issues.html">Reporting issues</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   active">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="code-contrib.html">Contributing code</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="code-contrib-lb2-lb3.html">LoopBack 2.x, 3.x</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="style-guide-es6.html">Code style guide</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="eslint-guide.html">Using ESLint</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="git-commit-messages.html">Git commit message guidelines</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="triaging-pull-requests.html">Triaging pull requests</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="/doc/en/lb4/code-contrib-lb4.html">LoopBack 4</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="/doc/en/lb4/submitting_a_pr.html">Submitting a pull request to LoopBack 4</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="doc-contrib.html">Contributing to docs</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="jekyll_getting_started.html">Using Jekyll</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="content_reuse.html">Content reuse</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Including-READMEs.html">Including READMEs</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="pages.html">Authoring pages</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Markdown-style-guide.html">Markdown style guide</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Doc-style-guide.html">Documentation style guide</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="README-guidelines.html">README guidelines</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="navigation.html">Navigation</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="sidebar_navigation.html">Sidebar navigation</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="tags.html">Tags</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="formatting.html">Formatting</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="alerts.html">Alerts</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="images.html">Images</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="code_samples.html">Code samples</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="adding_tooltips.html">Tooltips</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="icons.html">Icons</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="hyperlinks.html">Links</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="tables.html">Tables</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="layouts.html">Special layouts</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="readmes.html">README layout</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="navgroups.html">Navgroup layout</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="faq_layout.html">FAQ layout</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="translation.html">Translation</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Adding_a_new_language.html">Adding a new language</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Translating_articles.html">Translating articles</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+
+</ul>
+
+        </nav>
+        <!-- Content Column -->
+        <div class="col-md-9">
+            
+<div class="post-header">
+   <h1 class="post-title-main">Contributing code</h1>
+   
+     
+       <a target="_blank" href="https://github.com/strongloop/loopback.io/blob/gh-pages/pages/en/contrib/code-contrib.md" class="githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit this page</a>
+   
+</div>
+
+<div class="post-content">
+
+
+  
+   <div class="summary">
+     This article explains the process and guidelines for contributing code to the LoopBack project.
+   </div>
+  
+
+
+
+
+ 
+   
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+;$(function() {
+  var level = parseInt(3, 10);
+  if (level === 1) {level = 'h2'}
+  if (level === 2) {level = 'h2,h3'}
+  if (level === 3) {level = 'h2,h3,h4'}
+  if (level === 4) {level = 'h2,h3,h4,h5'}
+
+  // Add a new level for changelog files which use h1,h2,h3
+  if (level === 0) {level = 'h1,h2,h3,h4,h5'}
+
+  var toc = $('#toc')
+
+  toc.toc({minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: level})
+
+  /* this offset helps with the space taken up by the floating toolbar */
+  toc.on('click', 'a', function() {
+    var target = $(this.getAttribute('href')),
+      scroll_target = target.offset().top
+
+    $(window).scrollTop(scroll_target - 10)
+    return false
+  })
+  .on('click', '.toc-expand-button', function() {
+    toc.find('> ul').slideToggle('fast');
+  })
+})
+</script>
+
+<div id="toc">
+  <span class="toc-title">Page Contents</span>
+  <button type="button" class="btn btn-link toc-expand-button">
+    <i class="fa fa-bars"></i>
+  </button>
+</div>
+
+ 
+
+    <h2 id="how-to-contribute-to-the-code">How to contribute to the code</h2>
+
+<p>You can contribute in a number of ways:</p>
+
+<ul>
+  <li><a href="#reporting-an-issue">Report an issue</a>.   Reporting it first will ensure that it is
+in fact an issue, and there is not already a fix in the works.</li>
+  <li>After reporting a bug, go one step further and fix it.</li>
+  <li>Ensure that your effort is aligned with the project’s roadmap by
+talking to the maintainers, especially if you are going to spend a
+lot of time on it.</li>
+  <li>Adhere to code style outlined in the <a href="style-guide.html">style guide</a>.</li>
+  <li>Agree to the <a href="#agreeing-to-the-cla">Contributor License Agreement</a>.</li>
+  <li><a href="#submitting-a-pull-request">Submit a pull request</a> through Github.</li>
+  <li>Run tests; see <a href="#running-tests">Running tests</a>.</li>
+</ul>
+
+<h2 id="where-to-start">Where to start</h2>
+
+<p>If you are looking to contribute, but aren’t sure where to start, review open pull requests for the module.  For example, LoopBack open pull requests for <a href="https://github.com/strongloop/loopback/pulls">2.x and 3.x</a> and that for <a href="https://github.com/strongloop/loopback-next/pulls">4.x</a>.</p>
+
+<p>Also, please read the source code before contributing. If something is confusing, poorly documented, poorly commented, or could otherwise be improved: open a GitHub issue and link to the file and line of code with a useful description of what you would like to see or think is missing.</p>
+
+<p>Another place to look is to find our issues on GitHub with <code class="language-plaintext highlighter-rouge">good first issue</code> tag.  See 
+<a href="https://github.com/issues?utf8=%E2%9C%93&amp;q=is%3Aissue+label%3A%22good+first+issue%22+user%3Astrongloop">good first issue in our repositories</a>.</p>
+
+<h3 id="loopback-versions">LoopBack versions</h3>
+
+<p>LoopBack maintains a current version, a long-term support (LTS) version, and a maintenance version.  New features go into the current version; bug fixes can go into the active LTS and maintenance LTS versions, depending on the nature of the bug.  For more information, see <a href="Long-term-support.html">Long-term support</a>.</p>
+
+<p>Note that we are no longer accepting features for LoopBack versions that are in either LTS versions.  If you are in doubt, please open an issue to discuss first with the maintainers before spending too much time on implementation.</p>
+
+<h2 id="submitting-a-pull-request">Submitting a pull request</h2>
+
+<p>Follow the <a href="http://scottchacon.com/2011/08/31/github-flow.html">GitHub Flow</a>.  If you are new to GitHub, it is recommended to take a look at this <a href="https://www.nearform.com/blog/getting-into-open-source-for-the-first-time/">Getting into open source for the first time article</a>.</p>
+
+<ol>
+  <li>Create a GitHub issue for large changes and discuss the change there before
+coding. You can skip this step and submit the pull request for minor
+changes.</li>
+  <li>Fork the repository on GitHub.</li>
+  <li>Create a branch for you change/feature off of the master branch.</li>
+  <li>Make your change. Remember to update tests as well as code! Always
+run all the tests to assure nothing else was accidentally broken. For bugs, adding a failing test and submitting a pull request usually leads to the bug being fixed quickly. For features, include tests that cover the entire feature. For remote / client facing features, include integration tests in the [loopback-example-app](](https://github.com/strongloop/loopback-example-app).</li>
+  <li>Check for unnecessary whitespace with <code class="language-plaintext highlighter-rouge">git diff --check</code> before committing.</li>
+  <li>Make commits of logical units and push them to Github.</li>
+  <li>Use a descriptive commit message, and follow
+<a href="http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html">50/72 format</a>.</li>
+  <li>Use GitHub’s pull requests to submit the patch. Feel free to issue the pull
+request as soon as you have something partial to show and get reviewed.
+You can add more commits to your pull request as you are progressing
+on the implementation.  The title of the pull request should start
+with “WIP” for “work in progress” when the pull request is not complete
+yet.</li>
+  <li>Request a code review. Add a specific committer to speed up this process. (for example, <code class="language-plaintext highlighter-rouge">@bajtos</code>, <code class="language-plaintext highlighter-rouge">@raymondfeng</code>).</li>
+  <li>Make any requested changes and push to your fork. Make sure your changes are still based on the latest code (use <code class="language-plaintext highlighter-rouge">git rebase upstream/master</code>).</li>
+</ol>
+
+<h3 id="how-to-rebase-your-branch">How to rebase your branch</h3>
+
+<p>Our code base is always getting updated and being able to successfully rebase your PR is very important. Here are some simple steps to rebase your code:</p>
+<ul>
+  <li>Checkout your branch which you are submitting the pull request against <code class="language-plaintext highlighter-rouge">git checkout &lt;my_branch&gt;</code></li>
+  <li>Add an upstream remote from your fork <code class="language-plaintext highlighter-rouge">git remote add upstream &lt;upstream_repo&gt;</code></li>
+  <li>Fetch the latest from the <strong><em>upstream</em></strong> remote <code class="language-plaintext highlighter-rouge">git fetch upstream</code></li>
+  <li>Rebase your code using the interactive mode <code class="language-plaintext highlighter-rouge">git rebase -i upstream/master</code></li>
+  <li>If you are happy with the changes and there are no merge conflicts, push the code to your remote branch <code class="language-plaintext highlighter-rouge">git push --force-with-lease origin &lt;my_branch&gt;</code></li>
+</ul>
+
+<h2 id="running-tests">Running tests</h2>
+
+<p>All LoopBack projects follow the same convention for running tests. To run a projects test suite, change to the project’s directory and run:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm <span class="nb">test</span>
+</code></pre></div></div>
+
+<h2 id="create-example-repositories">Create example repositories</h2>
+
+<p>If you create an example repository for any usage demo, the name of repository should follow the following convention:</p>
+
+<p><code class="language-plaintext highlighter-rouge">loopback{major_version}-example-{example_name}</code></p>
+
+<p>Usually the <code class="language-plaintext highlighter-rouge">{major_version}</code> is the latest major version under development.
+If the example aims at a specific version of LoopBack, then use that number as the <code class="language-plaintext highlighter-rouge">{major_version}</code>.
+The <code class="language-plaintext highlighter-rouge">{example_name}</code> is a few words which briefly describes the functionality of the example,
+and joined with <code class="language-plaintext highlighter-rouge">-</code>.</p>
+
+<p>For example, we build an example app for LoopBack 4 and name it as
+<a href="https://github.com/strongloop/loopback4-example-shopping"><code class="language-plaintext highlighter-rouge">loopback4-example-shopping</code></a>.</p>
+
+<p>If a test is failing, open an issue on the appropriate repositories GitHub issues page.</p>
+
+<h2 id="contribution-methods">Contribution Methods</h2>
+
+<p>To simplify the contribution process and encourage community contribution, we are gradually switching the contribution method from Contributor License Agreement (CLA) to Developer Certificate of Origin (DCO). See <a href="https://strongloop.com/strongblog/switching-to-dco/">our blog about switching to DCO</a>.</p>
+
+<p>Over time, most of the LoopBack repositories will be using DCO. The best way to find out is to check the <code class="language-plaintext highlighter-rouge">Contributing</code> section of the README in the repository that you want to contribute.</p>
+
+<h3 id="developer-certificate-of-origin-dco">Developer Certificate of Origin (DCO)</h3>
+<p>As an alternative to CLA, a Developer Ceritifcate of Origin (DCO) is a more lightweight contribution method. According to <a href="https://en.wikipedia.org/wiki/Developer_Certificate_of_Origin">Wikipedia</a>:</p>
+
+<blockquote>
+  <p>Instead a signed legal contract, a DCO is an affirmation that the source code being submitted originated from the developer, or that the developer has permission to submit the code.</p>
+</blockquote>
+
+<p>The full text of DCO:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Developer Certificate of Origin
+Version 1.1
+
+Copyright (C) 2004, 2006 The Linux Foundation and its contributors.
+1 Letterman Drive
+Suite D4700
+San Francisco, CA, 94129
+
+Everyone is permitted to copy and distribute verbatim copies of this
+license document, but changing it is not allowed.
+
+
+Developer's Certificate of Origin 1.1
+
+By making a contribution to this project, I certify that:
+
+(a) The contribution was created in whole or in part by me and I
+    have the right to submit it under the open source license
+    indicated in the file; or
+
+(b) The contribution is based upon previous work that, to the best
+    of my knowledge, is covered under an appropriate open source
+    license and I have the right under that license to submit that
+    work with modifications, whether created in whole or in part
+    by me, under the same open source license (unless I am
+    permitted to submit under a different license), as indicated
+    in the file; or
+
+(c) The contribution was provided directly to me by some other
+    person who certified (a), (b) or (c) and I have not modified
+    it.
+
+(d) I understand and agree that this project and the contribution
+    are public and that a record of the contribution (including all
+    personal information I submit with it, including my sign-off) is
+    maintained indefinitely and may be redistributed consistent with
+    this project or the open source license(s) involved.
+</code></pre></div></div>
+<p>It can also be found: <a href="https://developercertificate.org/">https://developercertificate.org/</a>.</p>
+
+<h4 id="signing-off-commits-using-dco">Signing off commits using DCO</h4>
+<p>For GitHub repositories using DCO, you need to sign off each commit. To sign off, you can use the <code class="language-plaintext highlighter-rouge">-s</code> flag or adding <code class="language-plaintext highlighter-rouge">Signed-off-By: Name&lt;Email&gt;</code> in the commit message. For example,</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git commit <span class="nt">-s</span> <span class="nt">-m</span> <span class="s2">"feat: my commit message"</span>
+</code></pre></div></div>
+
+<p>You can also set up alias in <code class="language-plaintext highlighter-rouge">.gitconfig</code> to sign off automatically. To do that, you can:</p>
+<ul>
+  <li>Open the file <code class="language-plaintext highlighter-rouge">~/.gitconfig</code></li>
+  <li>Add the following:
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  [alias]
+  cm = commit -s -m
+</code></pre></div>    </div>
+  </li>
+  <li>When committing a change, instead of using <code class="language-plaintext highlighter-rouge">git commit</code> command, use <code class="language-plaintext highlighter-rouge">git cm</code>.</li>
+</ul>
+
+<p>To amend the commit message to include the sign off, you can run:</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git commit <span class="nt">--amend</span> <span class="nt">-s</span>
+</code></pre></div></div>
+
+<h3 id="contributor-license-agreement-cla">Contributor License Agreement (CLA)</h3>
+
+<p><em>Note: Some repositories were not migrated from CLA to DCO yet,
+the information below applies only to those repositories that are still
+using CLA.</em></p>
+
+<p>Like many open source projects, you must agree to the contributor license agreement (CLA)
+before we can accept (merge) your changes. See the <a href="https://cla.strongloop.com/agreements/strongloop/loopback-connector">loopback-connector CLA</a>.</p>
+
+<p>In summary, by submitting your code or doc contributions, you are granting us a right to use
+that code/content under the terms of this agreement, including providing it to
+others. You are also certifying that you wrote it, and that you are
+allowed to license it to us. You are not giving up your copyright in
+your work. The license does not change your rights to use your own
+contributions for any other purpose.</p>
+
+<p>Contributor License Agreements are important because they define the
+chain of ownership of a piece of software. Some companies won’t allow
+the use of free software without clear agreements around code ownership.
+That’s why many open source projects collect similar agreements from
+contributors. The LoopBack CLA is based on the Apache CLA.</p>
+
+<h2 id="additional-information">Additional information</h2>
+
+<p>Since LoopBack 2.x and 3.x have different codebase as LoopBack 4, there are some information that are specific to those versions.  Please see:</p>
+<ul>
+  <li><a href="code-contrib-lb2-lb3.html">Contributing code to LoopBack 2.x and 3.x</a></li>
+  <li><a href="code-contrib-lb4.html">Contributing code to LoopBack 4</a></li>
+</ul>
+
+
+    <div class="tags">
+      
+        <b>Tags: </b>
+        
+        
+          
+            <a href="tag_community.html" class="tags-item" role="button">community</a>
+            
+        
+          
+            <a href="tag_contributing.html" class="tags-item" role="button">contributing</a>
+            
+        
+          
+            <a href="tag_getting_started.html" class="tags-item" role="button">getting_started</a>
+            
+        
+      
+    </div>
+</div>
+
+<hr class="shaded"/>
+
+<footer id="container">
+            <div class="row">
+                <div class="col-md-6 footer-left">
+               &copy;2021 IBM / StrongLoop. All rights reserved. <br />
+ Site last generated: Mar 22, 2021
+              </div>
+              <div class="col-md-6 footer-right">
+                <p><img src="https://loopback.io/images/company_logo.png" alt="Company logo"/></p>
+              </div>
+            </div>
+</footer>
+
+
+        </div>
+        <!-- /.row -->
+</div>
+<!-- /.container -->
+    </div>
+</body>
+
+</html>

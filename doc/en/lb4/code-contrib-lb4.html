@@ -1,0 +1,5185 @@
+<!DOCTYPE html>
+<head>
+    
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="keywords" content=" LoopBack 4.0, LoopBack 4, Node.js, TypeScript, OpenAPI, contributing, community">
+  <title>Contributing code in LoopBack 4 | LoopBack Documentation</title>
+  <link rel="stylesheet" href="/css/syntax.css">
+
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/modern-business.css">
+    <link rel="stylesheet" href="/css/lavish-bootstrap.css">
+    <link rel="stylesheet" href="/css/customstyles.css">
+    <link rel="stylesheet" href="/css/theme-v4.css">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-150726441-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-150726441-2');
+</script>
+
+
+    <!-- github star button -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.3.0/anchor.min.js"></script>
+    <script src="/js/toc.js"></script>
+    <script src="/js/customscripts.js"></script>
+
+    <link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    
+
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-lg navbar-brand no_icon" href="/doc/index.html">
+              <img class="no_icon" style="width:147px;" src="/images/branding/logo/white/loopback.svg">&nbsp;<span class="projectTitle"></span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- entries without drop-downs appear here -->
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">API Docs<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        <!-- page.url is /doc/en/lb4/code-contrib-lb4.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://loopback.io/doc/en/lb4/apidocs.index.html" target="_blank">LoopBack 4</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb4/code-contrib-lb4.html .... folderitem.url is  -->
+                          
+                            <li><a href="http://apidocs.loopback.io" target="_blank">LoopBack 3.x</a></li>
+                          
+                        
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">View<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        <!-- page.url is /doc/en/lb4/code-contrib-lb4.html .... folderitem.url is / -->
+                          
+                            <li><a href="/">LoopBack Overview</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb4/code-contrib-lb4.html .... folderitem.url is /doc/en/lb4/ -->
+                          
+                            <li class="dropdownActive"><a href="/doc/en/lb4/">LoopBack 4</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb4/code-contrib-lb4.html .... folderitem.url is /doc/en/lb3/ -->
+                          
+                            <li><a href="/doc/en/lb3/">LoopBack 3.x</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb4/code-contrib-lb4.html .... folderitem.url is /doc/en/lb2/ -->
+                          
+                            <li><a href="/doc/en/lb2/">LoopBack 2.x</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb4/code-contrib-lb4.html .... folderitem.url is /doc/en/community/ -->
+                          
+                            <li><a href="/doc/en/community/">Community projects</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb4/code-contrib-lb4.html .... folderitem.url is /doc/en/contrib/ -->
+                          
+                            <li><a href="/doc/en/contrib/">Contributing to LoopBack</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb4/code-contrib-lb4.html .... folderitem.url is /doc/en/sec/ -->
+                          
+                            <li><a href="/doc/en/sec/">Security advisories</a></li>
+                          
+                        
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Resources<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        <!-- page.url is /doc/en/lb4/code-contrib-lb4.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://github.com/strongloop/loopback.io" target="_blank">Docs Github Repo</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb4/code-contrib-lb4.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://groups.google.com/forum/#!forum/loopbackjs-announcements" target="_blank">Announcements Mailing List</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb4/code-contrib-lb4.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://groups.google.com/forum/#!forum/loopbackjs" target="_blank">Developer Forum</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb4/code-contrib-lb4.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://join.slack.com/t/loopbackio/shared_invite/zt-8lbow73r-SKAKz61Vdao~_rGf91pcsw" target="_blank">LoopBack on Slack</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb4/code-contrib-lb4.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://stackoverflow.com/questions/tagged/strongloop+or+loopback4+or+loopbackjs" target="_blank">LoopBack on Stack Overflow</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb4/code-contrib-lb4.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://strongloop.com/strongblog/tag_LoopBack.html" target="_blank">StrongLoop Blog - LoopBack</a></li>
+                          
+                        
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Translations<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        <!-- page.url is /doc/en/lb4/code-contrib-lb4.html .... folderitem.url is /doc/es/lb2/ -->
+                          
+                            <li><a href="/doc/es/lb2/">Español (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb4/code-contrib-lb4.html .... folderitem.url is /doc/es/lb4/ -->
+                          
+                            <li><a href="/doc/es/lb4/">Español (v4)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb4/code-contrib-lb4.html .... folderitem.url is /doc/fr/lb2/ -->
+                          
+                            <li><a href="/doc/fr/lb2/">Français (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb4/code-contrib-lb4.html .... folderitem.url is /doc/fr/lb4/ -->
+                          
+                            <li><a href="/doc/fr/lb4/">Français (v4)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb4/code-contrib-lb4.html .... folderitem.url is /doc/ko/lb2/ -->
+                          
+                            <li><a href="/doc/ko/lb2/">한국어 (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb4/code-contrib-lb4.html .... folderitem.url is /doc/ko/lb3/ -->
+                          
+                            <li><a href="/doc/ko/lb3/">한국어 (v3)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb4/code-contrib-lb4.html .... folderitem.url is /doc/pt-br/lb2/ -->
+                          
+                            <li><a href="/doc/pt-br/lb2/">Português (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb4/code-contrib-lb4.html .... folderitem.url is /doc/pt-br/lb4/ -->
+                          
+                            <li><a href="/doc/pt-br/lb4/">Português (v4)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb4/code-contrib-lb4.html .... folderitem.url is /doc/ja/lb2/ -->
+                          
+                            <li><a href="/doc/ja/lb2/">日本語 (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb4/code-contrib-lb4.html .... folderitem.url is /doc/ja/lb3/ -->
+                          
+                            <li><a href="/doc/ja/lb3/">日本語 (v3)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb4/code-contrib-lb4.html .... folderitem.url is /doc/ja/lb4/ -->
+                          
+                            <li><a href="/doc/ja/lb4/">日本語 (v4)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb4/code-contrib-lb4.html .... folderitem.url is /doc/ru/lb2/ -->
+                          
+                            <li><a href="/doc/ru/lb2/">Pусский (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb4/code-contrib-lb4.html .... folderitem.url is /doc/zh/lb2/ -->
+                          
+                            <li><a href="/doc/zh/lb2/">中文 (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/en/lb4/code-contrib-lb4.html .... folderitem.url is /doc/zh/lb4/ -->
+                          
+                            <li><a href="/doc/zh/lb4/">中文 (v4)</a></li>
+                          
+                        
+                    </ul>
+                </li>
+                
+                
+                
+                <li>
+                    <form id="search" name="search" class="input-group lb-search" action="/search" method="GET">
+                        <input type="text" class="form-control search-bar" placeholder="Search (powered by Watson)" name="q">
+                        
+                          <input type="hidden" name="sidebar" value="lb4_sidebar">
+                        
+                        <div class="input-group-btn">
+                            <button type="submit" class="btn btn-default" aria-label="search">
+                              <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                            </button>
+                        </div>
+                      </form>
+                </li>
+            </ul>
+        </div>
+      </div>
+</nav>
+
+<!-- Page Content -->
+<div class="container">
+    <!-- Content Row -->
+    <div class="row">
+        <!-- Sidebar Column -->
+        <nav class="col-md-3 sidebar-col">
+          
+
+
+
+
+
+
+
+
+
+
+
+<!-- NOTE: sidebar = site.data.sidebars.mydoc_sidebar.entries -->
+<div class="sidebarTitle"><a href="index.html">LoopBack 4</a></div>
+<ul id="mysidebar" class="nav-list">
+  
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="index.html">Overview</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Getting-started.html">Getting started</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Inside-LoopBack-Application.html">Inside a LoopBack Application</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent-expand   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="section-name" href="#">Building LoopBack Applications</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Tutorials.html">Tutorials</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="todo-tutorial.html">Todo Tutorial</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="todo-tutorial-scaffolding.html">Create your app scaffolding</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="todo-tutorial-model.html">Add the Todo model</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="todo-tutorial-datasource.html">Add a Datasource</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="todo-tutorial-repository.html">Add a Repository</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="todo-tutorial-controller.html">Add a Controller</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="todo-tutorial-putting-it-together.html">Putting it all together</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="todo-tutorial-geocoding-service.html">Bonus: Integrate with a geo-coding service</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="todo-list-tutorial.html">TodoList Tutorial</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="todo-list-tutorial-model.html">Add TodoList Model</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="todo-list-tutorial-repository.html">Add TodoList Repository</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="todo-list-tutorial-relations.html">Add Model Relations</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="todo-list-tutorial-has-one-relation.html">Add a HasOne Relation</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="todo-list-tutorial-controller.html">Add TodoList Controller</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="todo-list-tutorial-sqldb.html">Running on relational databases</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Connecting-to-back-end.html">Connecting to Back-end Service Tutorials</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="soap-calculator-tutorial.html">SOAP Web Service Tutorial</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="soap-calculator-tutorial-web-service-overview.html">SOAP Web Service Overview</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="soap-calculator-tutorial-scaffolding.html">App scaffolding</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="soap-calculator-tutorial-add-datasource.html">Add a Datasource</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="soap-calculator-tutorial-add-service.html">Add a Service</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="soap-calculator-tutorial-add-controller.html">Add a Controller</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="soap-calculator-tutorial-run-and-test.html">Run and Test it</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="express-with-lb4-rest-tutorial.html">Creating an Express Application with LoopBack REST API</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Authentication-tutorial.html">How to secure your LoopBack 4 application with JWT authentication</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="core-tutorial.html">Build large scale Node.js projects with LoopBack 4</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="core-tutorial-part1.html">Introduction of the application scenario</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="core-tutorial-part2.html">Architectural challenges</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="core-tutorial-part3.html">Context in action</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="core-tutorial-part4.html">Dependency injection</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="core-tutorial-part5.html">Extension point and extensions</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="core-tutorial-part6.html">Interception</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="core-tutorial-part7.html">Observation of life cycle events</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="core-tutorial-part8.html">Configuration</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="core-tutorial-part9.html">Discover and load artifacts by convention</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="core-tutorial-part10.html">Advanced Recipes</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="core-tutorial-part11.html">Summary</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Examples.html">Examples</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Community-examples.html">Community examples</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="section-name" href="#">How-to guides</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="section-name" href="#">Building REST APIs</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Creating-crud-rest-apis.html">Creating CRUD REST APIs from a model</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Customizing-how-openapi-spec-is-served.html">Customizing how OpenAPI spec is served</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Customizing-routes.html">Customizing routes</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Dynamic-models-repositories-controllers.html">Dynamically adding models, repositories, and controllers</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Self-hosted-rest-api-explorer.html">Self-hosted REST API Explorer</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Serving-static-files.html">Serving Static Files</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Accessing-http-request-response.html">Accessing HTTP Request and Response Objects</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="File-upload-download.html">Uploading and Downloading Files</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Express-middleware.html">Using Express Middleware</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Using-strong-error-handler.html">Using strong-error-handler</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Boot-and-Mount-a-LoopBack-3-application.html">Boot and Mount a LoopBack 3 Application</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Integrating-with-api-connect.html">Integrating with API Connect</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Accepting-messagepack-over-http.html">Accepting MessagePack over HTTP</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="section-name" href="#">Creating Other Forms of APIs</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="GraphQL.html">Creating GraphQL APIs</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Using-openapi-to-graphql.html">Using OpenAPI-to-GraphQL</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Creating-artifacts-runtime.html">Creating Artifacts at Runtime</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Creating-model-runtime.html">Creating Model at Runtime</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Creating-datasource-runtime.html">Creating DataSource at Runtime</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Creating-repository-runtime.html">Creating Repositories at Runtime</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="section-name" href="#">Building frontend applications</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Building-frontend-angular-application.html">Building an Angular Application from OpenAPI Specification</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Customizing-server-configuration.html">Customizing Server configuration</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Migrate-from-legacy-sequence.html">Migrate from Legacy Sequence</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Running-cron-jobs.html">Running cron jobs</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="section-name" href="#">Accessing Databases</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Configuring-datasource.html">Configuring DataSource</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Working-with-data.html">Working with data</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Querying-data.html">Querying data</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Fields-filter.html">Fields filter</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Include-filter.html">Include filter</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Limit-filter.html">Limit filter</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Order-filter.html">Order filter</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Skip-filter.html">Skip filter</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Where-filter.html">Where filter</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Using-database-transactions.html">Using Database Transactions</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Database-migrations.html">Database Migrations</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Executing-database-commands.html">Executing database commands</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="section-name" href="#">Using TypeORM</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Using-typeorm-with-loopback.html">How to use TypeORM with LoopBack</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Accessing-services.html">Accessing Services</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Calling-soap-web-services.html">Calling SOAP Web services</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Calling-rest-apis.html">Calling REST APIs</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Parsing-requests-guide.html">Parsing requests</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Validation.html">Validating Data</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Validation-REST-layer.html">Validation in REST Layer</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Validation-controller-repo-service-layer.html">Validation in the Controller, Repository and Service Layer</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Validation-ORM-layer.html">Validation in ORM Layer</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Configuring-applications.html">Configuring Applications</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Application-setup-tips.html">Tips for Application Setup</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="section-name" href="#">Securing Applications</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Authentication-overview.html">Authentication</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Authentication-tutorial.html">Apply JWT Authentication in Todo Example</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Loopback-component-authentication.html">Authentication Component</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Authentication-component-decorator.html">Authentication Decorator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Authentication-component-action.html">Authentication Action</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Authentication-component-strategy.html">Authentication Strategy</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Authentication-component-options.html">Managing Custom Authentication Strategy Options</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="JWT-authentication-extension.html">JWT Authentication Extension</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Implement-your-own-strategy.html">Implement your own authentication strategy</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Authentication-passport.html">Passport Adapter for Authentication</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Authorization-overview.html">Authorization</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="RBAC-with-authorization.html">RBAC with Authorization System</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Loopback-component-authorization.html">Authorization Component</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Authorization-component-interceptor.html">Interceptor</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Authorization-component-decorator.html">Decorator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Authorization-component-authorizer.html">Authorizer</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Authorization-component-decision-matrix.html">Decision Matrix</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Authorization-component-enforcer.html">Enforcer</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Deployment.html">Deploying Applications</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Enabling-https.html">Enabling HTTPS</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Deploying-to-IBM-Cloud.html">Deploying to IBM Cloud</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="deploying_to_ibm_cloud_kubernetes.html">Deploying to Kubernetes on IBM Cloud</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="deploying-with-pm2-and-nginx.html">Deploying with pm2 and nginx</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Appsody-LoopBack.html">Developing and Deploying LoopBack Applications with Appsody</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Running-cron-jobs.html">Running cron jobs</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Health.html">Health check</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Metrics.html">Metrics for Prometheus</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Pooling.html">Pooling</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Troubleshooting.html">Troubleshooting</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Setting-debug-strings.html">Setting debug strings</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Logging.html">Logging</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Context-explorer.html">Context Explorer</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Debugging-tests-with-mocha.html">Debugging tests with Mocha</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent-expand   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Extending-LoopBack-4.html">Extending LoopBack Framework</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="section-name" href="#">How-to guides</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Creating-components.html">Creating components</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Creating-decorators.html">Creating decorators</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="creating-components-rest-api.html">Contributing REST API</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="creating-components-services.html">Creating services</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Creating-servers.html">Creating servers</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Extending-request-body-parsing.html">Extending request body parsing</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Extension-life-cycle.html">Extension life cycle</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Extending-OpenAPI-specification.html">Extending OpenAPI specification</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Extending-Model-API-builder.html">Extending Model API builder</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Testing-your-extension.html">Testing your extension</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Community-extensions.html">Community extensions</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Concepts.html">Concepts</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Crafting-LoopBack-4.html">Crafting LoopBack 4</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="section-name" href="#">Core</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Application.html">Application</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Component.html">Component</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Context.html">Context</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Binding.html">Binding</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Dependency-injection.html">Dependency Injection</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Interceptor.html">Interceptor</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Life-cycle.html">Life Cycle Event and Observer</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Extension-point-and-extensions.html">Extension point and extensions</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Service.html">Service</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Booting-an-Application.html">Booter</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Decorators.html">Decorators</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Decorators_openapi.html">OpenAPI Decorators</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Decorators_inject.html">Dependency Injection Decorator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Decorators_authenticate.html">Authentication Decorator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Decorators_authorize.html">Authorization Decorators</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Decorators_service.html">Service Decorators</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Decorators_repository.html">Repository Decorators</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Mixin.html">Mixin</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="section-name" href="#">REST APIs</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Server.html">Server</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Sequence.html">Sequence</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="REST-middleware-sequence.html">Middleware based sequence</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="REST-action-sequence.html">Action based sequence</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Advanced-sequence-topics.html">Advanced topics</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Routing-requests.html">Routing requests</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Parsing-requests.html">Parsing requests</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Working-with-express-middleware.html">Working with Express Middleware</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Middleware.html">Middleware</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Route.html">Route</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Controller.html">Controller</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Request-response-cycle.html">Request/response cycle</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="section-name" href="#">Data Access</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Model.html">Model</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Relations.html">Relations</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="HasMany-relation.html">HasMany Relation</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="BelongsTo-relation.html">BelongsTo Relation</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="HasOne-relation.html">HasOne Relation</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="HasManyThrough-relation.html">HasManyThrough Relation</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Repository.html">Repository</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="DataSource.html">DataSource</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Best-practices.html">Best practices</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Defining-the-API-using-code-first-approach.html">Defining the API using code-first approach</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Defining-your-testing-strategy.html">Defining your testing strategy</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Testing-your-application.html">Testing your application</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="section-name" href="#">Reference guides</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Loopback-application-layout.html">LoopBack 4 Application Layout</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="apidocs.index.html">API docs</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Reserved-binding-keys.html">Reserved binding keys</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Error-codes.html">Error codes</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="LoopBack-types.html">LoopBack Types</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Command-line-interface.html">CLI References</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Application-generator.html">Application generator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Controller-generator.html">Controller generator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="DataSource-generator.html">DataSource generator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Importing-LB3-models.html">Import models from LoopBack 3</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Model-generator.html">Model generator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Discovering-models.html">Model discovery</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Relation-generator.html">Relation generator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Repository-generator.html">Repository generator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Rest-Crud-generator.html">REST CRUD model endpoints generator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Service-generator.html">Service generator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="OpenAPI-generator.html">OpenAPI generator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Life-cycle-observer-generator.html">Life cycle observer generator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Interceptor-generator.html">Interceptor generator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Extension-generator.html">Extension generator</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Download-examples.html">Download examples</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Update-generator.html">Update project dependencies</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Copyright-generator.html">Generate copyright/license headers</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Connectors-reference.html">Connectors reference</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Memory-connector.html">Memory connector</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Database-connectors.html">Database connectors</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Cassandra-connector.html">Cassandra connector</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Cloudant-connector.html">Cloudant connector</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Couchdb2-connector.html">CouchDB 2.x connector</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="DashDB.html">DashDB connector</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="DB2-connector.html">IBM Db2 (for Linux, Unix, Windows) connector</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="DB2-for-i-connector.html">IBM Db2 for i connector</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="DB2-for-z-OS-connector.html">IBM Db2 for z/OS connector</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Informix.html">Informix connector</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="MongoDB-connector.html">MongoDB connector</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Connecting-to-MongoDB.html">MongoDB Connector Tutorial</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Using-MongoLab.html">Using MongoLab</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="MySQL-connector.html">MySQL connector</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Connecting-to-MySQL.html">MySQL Connector Tutorial</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Oracle-connector.html">Oracle connector</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Installing-the-Oracle-connector.html">Installing the Oracle connector</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Connecting-to-Oracle.html">Oracle connector tutorial</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="PostgreSQL-connector.html">PostgreSQL connector</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Connecting-to-PostgreSQL.html">PostgreSQL connector tutorial</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Redis-connector.html">Redis connector</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="kv-redis-connector.html">Redis key-value connector</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Example-kv-connector.html">KV connector example</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="SQL-Server-connector.html">SQL Server connector</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Connecting-to-Microsoft-SQL-Server.html">SQL Server connector tutorial</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="SQLite3.html">SQLite3 connector</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="zOSconnectEE.html">z/OS Connect Enterprise Edition connector</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="Other-connectors.html">Other connectors</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="JSON-RPC-connector.html">JSON RPC connector</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="MQLight-connector.html">MQ Light connector</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="REST-connector.html">REST connector</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="REST-connector-example.html">REST connector example</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="SOAP-connector.html">SOAP connector</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Strong-soap.html">Strong-soap</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="SOAP-Connector-example.html">SOAP connector example</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Connecting-to-SOAP.html">Connecting to SOAP web services</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="OpenAPI-connector.html">OpenAPI connector</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Community-connectors.html">Community connectors</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="changelog.index.html">Change logs</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Deploy-for-GDPR-readiness.html">Considerations for GDPR readiness</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   active">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="code-contrib-lb4.html">Contributing to LoopBack 4</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="submitting_a_pr.html">Submitting a pull request to LoopBack 4</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="FAQ.html">FAQ</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="migration-overview.html">Migration guide</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="Understanding-the-differences.html">Understanding the differences</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="LB3-vs-LB4-booting.html">Booting process</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="LB3-vs-LB4-request-response-cycle.html">Request/response cycle</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="migration-mounting-lb3app.html">Mounting a LoopBack 3 application</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="migration-express-middleware.html">Express middleware</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="migration-datasources.html">Datasources</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="migration-models-overview.html">Migrating models</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="migration-models-core.html">Model definitions and built-in APIs</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="migration-models-relations.html">Relations</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="migration-models-methods.html">Custom methods</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="migration-models-remoting-hooks.html">Remoting hooks</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="migration-models-operation-hooks.html">CRUD operation hooks</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="migration-models-mixins.html">Mixins</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="migration-boot-scripts.html">Boot scripts</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="migration-auth-overview.html">Authentication & authorization</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="migration-auth-access-control-example.html">Access control example</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="migration-authentication.html">Built-in models and authentication</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="migration-auth-passport.html">Passport</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="migration-auth-oauth2.html">OAuth2 Provider</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="migration-cli.html">CLI</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class="  tree-parent   ">
+     <a class="show-hide" href="#"></span> 
+    
+      <a class="page-link" href="migration-extensions-overview.html">Components and extensions</a>
+    
+      
+      <ul class="nav-list">
+          
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="migration-extensions-project-layout.html">Project layout</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="migration-extensions-models.html">Models</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="migration-extensions-current-context.html">Current context</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="migration-extensions-mixins.html">Mixins</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="migration-extensions-rest-api.html">REST API</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="migration-clients.html">Clients (API consumers)</a>
+    
+      
+  </li>
+  
+
+
+  
+  
+  <li class=" leaf-node  ">
+    
+    
+      <a class="page-link" href="migration-not-planned.html">Features not planned</a>
+    
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+
+</ul>
+
+        </nav>
+        <!-- Content Column -->
+        <div class="col-md-9">
+            
+<div class="post-header">
+   <h1 class="post-title-main">Contributing code in LoopBack 4</h1>
+   
+     
+       <a target="_blank" href="https://github.com/strongloop/loopback-next/blob/master/docs/site/DEVELOPING.md" class="githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit this page</a>
+   
+</div>
+
+<div class="post-content">
+
+
+
+
+
+ 
+
+    <h1 id="developing-loopback">Developing LoopBack</h1>
+
+<p>This document describes how to develop modules living in loopback-next monorepo.
+See <a href="/pages/en/lb4/MONOREPO.html">Monorepo overview</a> for a list of all packages.</p>
+
+<ul>
+  <li><a href="#setting-up-development-environment">Setting up development environment</a></li>
+  <li><a href="#building-the-project">Building the project</a></li>
+  <li><a href="#utilizing-the-monorepo">Utilizing the monorepo</a></li>
+  <li><a href="#running-tests">Running tests</a></li>
+  <li><a href="#coding-rules">Coding rules</a></li>
+  <li><a href="#working-with-dependencies">Working with dependencies</a></li>
+  <li><a href="#file-naming-convention">File naming convention</a></li>
+  <li><a href="#documentation">Documentation</a></li>
+  <li><a href="#api-documentation">API documentation</a></li>
+  <li><a href="#commit-message-guidelines">Commit message guidelines</a></li>
+  <li><a href="#making-breaking-changes">Making breaking changes</a></li>
+  <li><a href="#releasing-new-versions">Releasing new versions</a></li>
+  <li><a href="#adding-a-new-package">Adding a new package</a></li>
+  <li><a href="#upgrading-typescripteslint">Upgrading TypeScript/eslint</a></li>
+  <li><a href="#how-to-test-infrastructure-changes">How to test infrastructure changes</a></li>
+  <li><a href="#renovate-bot">Renovate bot</a></li>
+</ul>
+
+<h2 id="setting-up-development-environment">Setting up development environment</h2>
+
+<p>Before you can start developing LoopBack, you need to install and configure few
+dependencies.</p>
+
+<ul>
+  <li><a href="https://git-scm.com/">git</a>: Github’s
+<a href="https://help.github.com/articles/set-up-git/">Set Up Git</a> guide is a good
+source of information.</li>
+  <li><a href="https://nodejs.org/en/download/">Node.js 10.x (LTS)</a></li>
+</ul>
+
+<p>You may want to configure your IDE or editor to get better support for
+TypeScript too.</p>
+
+<ul>
+  <li><a href="/doc/en/lb4/Developing-with-vscode.html">Visual Studio Code</a></li>
+  <li><a href="/doc/en/lb4/Developing-with-webstorm.html">WebStorm</a></li>
+  <li><em>Missing your favorite IDE/editor here? We would love to have documentation
+for more IDEs/editors! Please send a pull request to add recommended setup for
+your tool.</em></li>
+</ul>
+
+<p>Before getting started, it is recommended to configure <code class="language-plaintext highlighter-rouge">git</code> so that it knows
+who you are:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git config <span class="nt">--global</span> user.name <span class="s2">"J. Random User"</span>
+git config <span class="nt">--global</span> user.email <span class="s2">"j.random.user@example.com"</span>
+</code></pre></div></div>
+
+<p>Please make sure this local email is also added to your
+<a href="https://github.com/settings/emails">GitHub email list</a> so that your commits
+will be properly associated with your account and you will be promoted to
+Contributor once your first commit is landed.</p>
+
+<h2 id="building-the-project">Building the project</h2>
+
+<p>Whenever you pull updates from GitHub or switch between feature branches, make
+sure to update installed dependencies in all monorepo packages. The following
+command will install npm dependencies for all packages and create symbolic links
+for intra-dependencies:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm ci
+</code></pre></div></div>
+
+<p>As part of <code class="language-plaintext highlighter-rouge">npm ci</code> or <code class="language-plaintext highlighter-rouge">npm i</code>, TypeScript project references are automatically
+updated for each package with in the monorepo.</p>
+
+<p>The next step is to compile all packages from TypeScript to JavaScript:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm run build
+</code></pre></div></div>
+
+<p>To force a clean build:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm run clean <span class="o">&amp;&amp;</span> npm run build
+</code></pre></div></div>
+
+<p>Please note that <code class="language-plaintext highlighter-rouge">npm run clean</code> removes <code class="language-plaintext highlighter-rouge">dist</code>, <code class="language-plaintext highlighter-rouge">*.tsbuildinfo</code>, and other
+generated files from each package to clean the state for builds.</p>
+
+<p>To build an individual package:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd</span> &lt;package-dir&gt; // For example, <span class="nb">cd</span> <span class="sb">`</span>packages/context<span class="sb">`</span><span class="nb">.</span>
+npm run build
+</code></pre></div></div>
+
+<p>Please note that we are automatically running the build from <code class="language-plaintext highlighter-rouge">pretest</code> script,
+therefore you should not need to run this command as part of your
+<a href="http://www.jamesshore.com/Blog/Red-Green-Refactor.html">red-green-refactor cycle</a>.</p>
+
+<h2 id="utilizing-the-monorepo">Utilizing the monorepo</h2>
+
+<p>Source code from the monorepo can be utilized as LoopBack 4 packages that are
+not published to npm registry yet. This is useful to test or debug your
+applications or extensions with project dependencies on LoopBack 4 against a
+local git repo and branch of <code class="language-plaintext highlighter-rouge">loopback-next</code>.</p>
+
+<h3 id="using-monorepo-packages-as-dependencies">Using monorepo packages as dependencies</h3>
+
+<p>The <code class="language-plaintext highlighter-rouge">/sandbox</code> directory in the monorepo can be used to utilize the source code
+as symbolically-linked dependencies. See the
+<a href="https://github.com/strongloop/loopback-next/blob/master/sandbox/README.md">README</a>
+for usage instructions.</p>
+
+<h3 id="using-the-cli-via-the-monorepo">Using the CLI via the monorepo</h3>
+
+<p>The
+<a href="https://github.com/strongloop/loopback-next/blob/master/packages/cli/bin/cli-main.js">CLI</a>
+can be invoked from the local <code class="language-plaintext highlighter-rouge">loopback-next</code> git repository:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./loopback-next/packages/cli/bin/cli-main.js
+</code></pre></div></div>
+
+<p>The arguments are the same as <code class="language-plaintext highlighter-rouge">lb4</code>. For example,
+<code class="language-plaintext highlighter-rouge">./loopback-next/packages/cli/bin/cli-main.js model</code> is the same as <code class="language-plaintext highlighter-rouge">lb4 model</code>.</p>
+
+<div class="alert alert-warning" role="alert">
+  <p><i class="fa fa-warning"></i>
+  <b>Important:</b>
+  The LoopBack 4 packages must be built. See
+<a href="#building-the-project">Building the project</a></p>
+</div>
+
+<h2 id="running-tests">Running tests</h2>
+
+<p>This is the only command you should need while developing LoopBack:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm <span class="nb">test</span>
+</code></pre></div></div>
+
+<p>It does all you need:</p>
+
+<ul>
+  <li>Compile TypeScript (full rebuild)</li>
+  <li>Run all tests</li>
+  <li>Check code formatting using <a href="https://prettier.io/">Prettier</a></li>
+  <li>Lint the code using <a href="https://typescript-eslint.io/">ESLint</a></li>
+</ul>
+
+<p>Please note some heavy tests are only run when the <code class="language-plaintext highlighter-rouge">CI</code> environment variable is
+set. Such tests are always executed with our CI builds. To run such tests
+locally:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npx cross-env <span class="nv">CI</span><span class="o">=</span>1 npm <span class="nb">test</span>
+</code></pre></div></div>
+
+<p>Or use a simpler form on Mac and Linux.</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">CI</span><span class="o">=</span>1 npm <span class="nb">test</span>
+</code></pre></div></div>
+
+<p>Running the full test suite after each small change is not very effective. You
+can use the following commands to run a subset of checks:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">npm run build</code> for a fast incremental build</li>
+  <li><code class="language-plaintext highlighter-rouge">npm run mocha</code> to (re)run the test suite</li>
+</ul>
+
+<p>We are running tests in parallel, use the Mocha option <code class="language-plaintext highlighter-rouge">-j</code> (<code class="language-plaintext highlighter-rouge">--jobs</code>) to
+control the number of worker processes or disable parallel execution entirely by
+using a single job only:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ npm run mocha -- -j 1
+</code></pre></div></div>
+
+<p>When working in a single package, it’s possible to limit the compilation to this
+package &amp; its dependencies and then run only package tests.</p>
+
+<p>For example, run the following Unix command in <code class="language-plaintext highlighter-rouge">loopback-next</code> root directory to
+build and test changes made in <code class="language-plaintext highlighter-rouge">@loopback/rest</code> only:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ (cd packages/rest &amp;&amp; npm t)
+</code></pre></div></div>
+
+<p>On Windows, you have to change the working directory once and then you can
+repeatedly run <code class="language-plaintext highlighter-rouge">npm t</code> inside the package.</p>
+
+<div class="language-bat highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">rem Run this only once</span>
+<span class="nb">cd</span> <span class="kd">packages</span><span class="na">/rest
+</span><span class="c">rem Run this to build &amp; test your changes</span>
+<span class="kd">npm</span> <span class="kd">t</span>
+</code></pre></div></div>
+
+<h2 id="coding-rules">Coding rules</h2>
+
+<ul>
+  <li>
+    <p>All features and bug fixes must be covered by one or more automated tests.</p>
+  </li>
+  <li>
+    <p>All public methods must be documented with typedoc comments (see
+<a href="#api-documentation">API Documentation</a> below).</p>
+  </li>
+  <li>
+    <p>Follow our style guide as documented on loopback.io:
+<a href="http://loopback.io/doc/en/contrib/style-guide.html">Code style guide</a>.</p>
+  </li>
+</ul>
+
+<h3 id="linting-and-formatting">Linting and formatting</h3>
+
+<p>We use two tools to keep our codebase healthy:</p>
+
+<ul>
+  <li><a href="https://typescript-eslint.io/">ESLint</a> to statically analyse our source code
+and detect common problems.</li>
+  <li><a href="https://prettier.io/">Prettier</a> to keep our code always formatted the same
+way, avoid style discussions in code reviews, and save everybody’s time an
+energy.</li>
+</ul>
+
+<p>You can run both linters via the following npm script, just keep in mind that
+<code class="language-plaintext highlighter-rouge">npm test</code> is already running them for you.</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm run lint
+</code></pre></div></div>
+
+<p>Many problems (especially formatting) can be automatically fixed by running the
+npm script <code class="language-plaintext highlighter-rouge">lint:fix</code>.</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm run lint:fix
+</code></pre></div></div>
+
+<p>Files staged for commit are linted automatically. If necessary, pre-commit
+linting can be bypassed by setting the environment variable <code class="language-plaintext highlighter-rouge">LINT_STAGED=0</code>.</p>
+
+<h2 id="working-with-dependencies">Working with dependencies</h2>
+
+<p>We use npm’s
+<a href="https://docs.npmjs.com/files/package-lock.json">package-lock feature</a> to speed
+up our development workflow and CI builds.</p>
+
+<p>For individual packages within the monorepo, <code class="language-plaintext highlighter-rouge">lerna bootstrap</code> calls <code class="language-plaintext highlighter-rouge">npm ci</code> in
+a CI environment or with <code class="language-plaintext highlighter-rouge">--ci</code> to install (deep) dependencies as specified in
+<code class="language-plaintext highlighter-rouge">package-lock.json</code> file. Otherwise, <code class="language-plaintext highlighter-rouge">npm install</code> is run with the corresponding
+<code class="language-plaintext highlighter-rouge">package.json</code>.</p>
+
+<p>Top-level (<code class="language-plaintext highlighter-rouge">loopback-next</code>) dependencies are installed either from
+<code class="language-plaintext highlighter-rouge">package-lock.json</code> (when you run <code class="language-plaintext highlighter-rouge">npm ci</code>), or resolved freshly from the npm
+registry (when you run <code class="language-plaintext highlighter-rouge">npm install</code>).</p>
+
+<p><strong>IMPORTANT: Dependencies resolved locally within the monorepo must be excluded
+from package-lock files.</strong></p>
+
+<h3 id="updating-package-locks">Updating package locks</h3>
+
+<p>If you ever end up with corrupted or out-of-date package locks, run the
+following commands to fix the problem:</p>
+
+<p>To rebuild <code class="language-plaintext highlighter-rouge">package-lock.json</code> for all packages.</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm update-package-locks
+</code></pre></div></div>
+
+<p>To update <code class="language-plaintext highlighter-rouge">package-lock.json</code> for a list of packages:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm update-package-locks <span class="nt">--</span> <span class="nt">--scope</span> &lt;package-name-1&gt; <span class="nt">--scope</span> &lt;package-name-2&gt;
+</code></pre></div></div>
+
+<h3 id="adding-dependencies">Adding dependencies</h3>
+
+<p>Use the following command to add or update dependency <code class="language-plaintext highlighter-rouge">dep</code> in a package <code class="language-plaintext highlighter-rouge">name</code>:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>npx lerna add <span class="nt">--scope</span> <span class="k">${</span><span class="nv">name</span><span class="k">}</span> <span class="k">${</span><span class="nv">dep</span><span class="k">}</span>
+</code></pre></div></div>
+
+<p>For example:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>npx lerna add <span class="nt">--scope</span> @loopback/rest debug
+</code></pre></div></div>
+
+<p>See <a href="https://github.com/lerna/lerna/blob/master/commands/add#readme">lerna add</a>
+for more details.</p>
+
+<p><strong>NOTE</strong>: At the moment, <code class="language-plaintext highlighter-rouge">lerna</code> does not update <code class="language-plaintext highlighter-rouge">package-lock.json</code> files when
+adding a dependency to a scope, see
+<a href="https://github.com/lerna/lerna/issues/1989">lerna#1989</a>. You have to re-create
+package locks manually, see <a href="#updating-package-locks">Updating package locks</a>
+above.</p>
+
+<h3 id="updating-dependencies">Updating dependencies</h3>
+
+<p>To update dependencies to their latest compatible versions:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm run update-all-deps
+</code></pre></div></div>
+
+<h3 id="limitation-of-lerna-monorepo">Limitation of Lerna Monorepo</h3>
+
+<p>If an application inside the <code class="language-plaintext highlighter-rouge">loopback-next</code> monorepo connects to a datasource
+like <code class="language-plaintext highlighter-rouge">loopback-connector-mongodb</code>, you need to require the module directly in
+the configuration as follow:</p>
+
+<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">config</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="na">name</span><span class="p">:</span> <span class="dl">'</span><span class="s1">mongo</span><span class="dl">'</span><span class="p">,</span>
+  <span class="c1">// Note the connector should be required directly here.</span>
+  <span class="na">connector</span><span class="p">:</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">loopback-connector-mongodb</span><span class="dl">'</span><span class="p">),</span>
+  <span class="na">url</span><span class="p">:</span> <span class="dl">''</span><span class="p">,</span>
+  <span class="na">host</span><span class="p">:</span> <span class="dl">'</span><span class="s1">127.0.0.1</span><span class="dl">'</span><span class="p">,</span>
+  <span class="na">port</span><span class="p">:</span> <span class="mi">27017</span><span class="p">,</span>
+  <span class="na">user</span><span class="p">:</span> <span class="dl">'</span><span class="s1">test</span><span class="dl">'</span><span class="p">,</span>
+  <span class="na">password</span><span class="p">:</span> <span class="dl">'</span><span class="s1">test</span><span class="dl">'</span><span class="p">,</span>
+<span class="p">};</span>
+</code></pre></div></div>
+
+<p>This is caused by the way how lerna installs local package dependencies as
+symbolic links. The code loading connectors is executed from
+<code class="language-plaintext highlighter-rouge">loopback-next/packages/repository/node_modules/loopback-datasource-juggler/lib/datasource.js</code>.
+While the connector is installed in examples like
+<code class="language-plaintext highlighter-rouge">loopback-next/examples/todo/node_modules/loopback-connector-mongodb</code>.
+Specifying a string name like “mongodb” will result in the code looking for
+connectors installed under the package <code class="language-plaintext highlighter-rouge">repository</code> instead of the example.
+Therefore you must explicitly specify the datasource’s path in the
+configuration.</p>
+
+<h2 id="file-naming-convention">File naming convention</h2>
+
+<p>For consistency, we follow
+<a href="https://angular.io/guide/styleguide#separate-file-names-with-dots-and-dashes">Angular’s file naming convention</a>.
+It helps to derive the usage of files by inspecting the names. Besides the
+LoopBack 4 codebase, we also follow this naming convention in our generated
+artifacts from the CLI tooling: <code class="language-plaintext highlighter-rouge">{name}</code>.<code class="language-plaintext highlighter-rouge">{artifact-type}</code>.ts</p>
+
+<p>Examples are:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>src/decorators/authenticate.decorator.ts
+src/boot.component.ts
+</code></pre></div></div>
+
+<p>In addition, files under <code class="language-plaintext highlighter-rouge">test</code> folder are categorized according to the type of
+tests (unit, acceptance and integration), with the convention
+<code class="language-plaintext highlighter-rouge">{name}.{test-type}.ts</code>.</p>
+
+<p>Examples are:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>src/__tests__/acceptance/application.acceptance.ts
+src/__tests__/integration/user.controller.integration.ts
+src/__tests__/unit/application.unit.ts
+</code></pre></div></div>
+
+<h2 id="documentation">Documentation</h2>
+
+<p>The documentation available at <a href="loopback.io">http://loopback.io/doc/en/lb4</a>
+website is powered by Jekyll and Markdown. The main site content and Jekyll
+configuration is hosted in
+<a href="https://github.com/strongloop/loopback.io">loopback.io</a> repository on GitHub.</p>
+
+<p>LoopBack 4 documentation is hosted inside this monorepo in the
+<a href="https://github.com/strongloop/loopback-next/tree/master/docs">/docs</a> directory.
+This allows us to change both implementation and the documentation in a single
+pull request.</p>
+
+<h3 id="organization-of-content">Organization of content</h3>
+
+<p>LoopBack 4 has a highly modular design, the codebase is organized into dozens of
+packages. This arrangement provides great flexibility for package consumers,
+supporting many different ways how to compose individual packages into larger
+blocks. However, the growing number of packages also increases the complexity
+for LoopBack users, as they need to know which packages to choose and how to use
+them. As a result, the learning curve becomes very steep for new developers
+coming to LoopBack. Newcomers get quickly overwhelmed by the amount of concepts
+they need to understand and the different packages they need to know about.</p>
+
+<p>To prevent cognitive overload, we have categorized all monorepo packages into
+two groups:</p>
+
+<ol>
+  <li>
+    <p>Foundation-level packages are lower-level packages that are typically not
+consumed by LoopBack applications directly. Instead, there are higher-level
+packages exposing the functionality and/or the public API of these building
+blocks.</p>
+
+    <p>Examples:</p>
+
+    <ul>
+      <li>
+        <p><code class="language-plaintext highlighter-rouge">@loopback/core</code> is re-exporting all public API provided by
+<code class="language-plaintext highlighter-rouge">@loopback/context</code>.</p>
+      </li>
+      <li>
+        <p><code class="language-plaintext highlighter-rouge">@loopback/rest</code> is internally using <code class="language-plaintext highlighter-rouge">@loopback/http-server</code> to manage the
+life cycle of an HTTP server.</p>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p>Framework-level packages are used directly by LoopBack applications and
+provide API that LoopBack consumers use.</p>
+  </li>
+</ol>
+
+<p>The rule of thumb: a lower-level package is considered as foundation-level if</p>
+
+<ul>
+  <li>
+    <p>a higher-level package is re-exporting all public APIs of the lower-level
+package (e.g. <code class="language-plaintext highlighter-rouge">@loopback/core</code> re-exports <code class="language-plaintext highlighter-rouge">@loopback/context</code>); or</p>
+  </li>
+  <li>
+    <p>another package is using the lower-level package as a implementation building
+block (e.g. <code class="language-plaintext highlighter-rouge">@loopback/rest</code> uses <code class="language-plaintext highlighter-rouge">@loopback/express</code>).</p>
+  </li>
+</ul>
+
+<p>In our documentation, CLI templates and example applications, you should always
+refer to framework-level packages.</p>
+
+<p>Foundation-level packages should have their own documentation describing how to
+use the package independently of LoopBack, for example in their <code class="language-plaintext highlighter-rouge">README.md</code> file
+or in a dedicated section of <a href="https://loopback.io">loopback.io</a>.</p>
+
+<h4 id="foundation-level-packages">Foundation-level packages</h4>
+
+<p>List of packages that are considered as building blocks:</p>
+
+<ul>
+  <li><a href="https://github.com/strongloop/loopback-next/tree/master/packages/context">packages/context</a></li>
+  <li><a href="https://github.com/strongloop/loopback-next/tree/master/packages/express">packages/express</a></li>
+  <li><a href="https://github.com/strongloop/loopback-next/tree/master/packages/http-server">packages/http-server</a></li>
+  <li><a href="https://github.com/strongloop/loopback-next/tree/master/packages/metadata">packages/metadata</a></li>
+  <li><a href="https://github.com/strongloop/loopback-next/tree/master/packages/openapi-v3">packages/openapi-v3</a></li>
+  <li><a href="https://github.com/strongloop/loopback-next/tree/master/packages/repository-json-schema">packages/repository-json-schema</a></li>
+</ul>
+
+<h4 id="framework-level-packages">Framework-level packages</h4>
+
+<p>All packages not listed above are considered as framework-level.</p>
+
+<p>We consider utilities like <code class="language-plaintext highlighter-rouge">@loopback/testlab</code> and example projects like
+<code class="language-plaintext highlighter-rouge">@loopback/todo</code> as framework-level too.</p>
+
+<h3 id="publishing-changes">Publishing changes</h3>
+
+<p>To prevent documentation changes going live before the changes in the
+implementation have been published, we have set up the following build pipeline:</p>
+
+<ol>
+  <li>
+    <p>As part of the LoopBack 4 release process, the content of <code class="language-plaintext highlighter-rouge">docs</code> directory is
+bundled and published to npmjs.org as <code class="language-plaintext highlighter-rouge">@loopback/docs</code> package.</p>
+  </li>
+  <li>
+    <p>We have a CI/CD pipeline to pick a new <code class="language-plaintext highlighter-rouge">@loopback/docs</code> version and commit
+the updated content to <code class="language-plaintext highlighter-rouge">loopback.io</code> repository. The job is run every night.</p>
+  </li>
+</ol>
+
+<h3 id="previewing-loopback-next-docs-only">Previewing loopback-next docs only</h3>
+
+<blockquote>
+  <p>This workflow is not available on Windows (unless you use Windows Subsystem
+for Linux).</p>
+</blockquote>
+
+<p>When making change to our documentation, it’s useful to quickly check how is the
+updated markdown content going to be rendered on the website. To make this flow
+as fast as possible, we have a script to prepare a subset of our website with
+LoopBack 4 content only. This provides the fastest feedback loop possible, at
+the cost of occasional breakage when the script is not updated to accommodate
+changes made in the <code class="language-plaintext highlighter-rouge">loopback.io</code> repository.</p>
+
+<p>As the initial setup, run the following command once, before you start making
+documentation changes:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>npm run docs:prepare
+</code></pre></div></div>
+
+<p>This command will create <code class="language-plaintext highlighter-rouge">docs/_preview</code> directory with a Jekyll project and
+configure symlinks to let Jekyll automatically pick any changes made in
+<code class="language-plaintext highlighter-rouge">docs/site</code> files.</p>
+
+<p>Whenever you want to (re)render documentation, just (re)start the following
+command:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>npm run docs:start
+</code></pre></div></div>
+
+<p>The first run will be slightly longer because Jekyll has to render all doc
+pages. Subsequent runs should be very fast because only changed files are
+re-rendered thanks to Jekyll <code class="language-plaintext highlighter-rouge">incremental</code> mode.</p>
+
+<h3 id="viewing-the-full-website">Viewing the full website</h3>
+
+<blockquote>
+  <p>This workflow is not available on Windows (unless you use Windows Subsystem
+for Linux).</p>
+</blockquote>
+
+<p>It is also possible to verify the full build setup, including validation of
+Markdown &amp; Jekyll (liquid) syntax.</p>
+
+<p>Run the following command to clone <code class="language-plaintext highlighter-rouge">loopback.io</code> repository to
+<code class="language-plaintext highlighter-rouge">sandbox/loopback.io</code> and get the current documentation from loopback-next
+copied in the right places in the Jekyll project:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm run build:site
+</code></pre></div></div>
+
+<p>You can also run the documentation tests exactly as our CI pipeline does:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm run verify:docs
+</code></pre></div></div>
+
+<h2 id="api-documentation">API Documentation</h2>
+
+<p>We use
+<a href="https://github.com/strongloop/loopback-next/tree/master/packages/tsdocs">@loopback/tsdocs</a>
+to generate API documentation for all our packages. This documentation is
+generated when publishing new releases to npmjs.org and it’s picked up by
+https://loopback.io/doc/en/lb4/apidocs.index.html.</p>
+
+<h3 id="preview-the-api-documentation-changes">Preview the API Documentation Changes</h3>
+
+<p>To modify the API documentation and preview the changes, you should rebuild the
+package and run <code class="language-plaintext highlighter-rouge">npm run tsdocs</code>. For example, if some API documentation changes
+have occurred in <code class="language-plaintext highlighter-rouge">/loopback-next/packages/core</code>, and you wish to preview them,
+perform the following steps:</p>
+
+<h4 id="step-1---rebuild-package">Step 1 - Rebuild package</h4>
+
+<p>Run the following commands within <code class="language-plaintext highlighter-rouge">/loopback-next/packages/core</code>:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Remove the old compiled files.</span>
+npm run clean
+<span class="c"># Rebuild the package, so that the compiled dist files contain</span>
+<span class="c"># the new API documentation.</span>
+npm run build
+</code></pre></div></div>
+
+<h4 id="step-2---npm-run-tsdocs">Step 2 - npm run tsdocs</h4>
+
+<p>Run the following commands within the root directory <code class="language-plaintext highlighter-rouge">/loopback-next</code>:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Generate new tsdocs from the updated package dist files.</span>
+npm run tsdocs
+</code></pre></div></div>
+
+<h4 id="step-3---preview-the-api-documentation-in-a-browser">Step 3 - Preview the API documentation in a browser</h4>
+
+<p>Stay in the root directory and run the following commands:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Fetch the new API documentation into `/docs/_preview`</span>
+npm run docs:prepare
+<span class="c"># Start the documentation preview server</span>
+npm run docs:start
+</code></pre></div></div>
+
+<p>Go to http://127.0.0.1:4001 in a browser and you will see the new API
+documentation.</p>
+
+<h2 id="commit-message-guidelines">Commit message guidelines</h2>
+
+<p><em>Note: we have recently changed our commit message conventions. Most of other
+LoopBack repositories (e.g.
+<a href="https://github.com/strongloop/loopback.io">strongloop/loopback.io</a>) use the
+older convention as described on
+<a href="https://loopback.io/doc/en/contrib/git-commit-messages.html">loopback.io</a>.</em></p>
+
+<p>A good commit message should describe what changed and why.</p>
+
+<p>Our commit messages are formatted according to
+<a href="https://conventionalcommits.org/">Conventional Commits</a>, we use
+<a href="https://github.com/marionebl/commitlint">commitlint</a> to verify and enforce this
+convention. These rules lead to more readable messages that are easy to follow
+when looking through the project history. But also, we use the git commit
+messages to generate change logs when publishing new versions.</p>
+
+<h3 id="commit-message-format">Commit Message Format</h3>
+
+<p>Each commit message consists of a <strong>header</strong>, a <strong>body</strong> and a <strong>footer</strong>. The
+header has a special format that includes a <strong>type</strong>, an optional <strong>scope</strong> and
+a <strong>subject</strong>:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;type&gt;(&lt;scope&gt;): &lt;subject&gt;
+&lt;BLANK LINE&gt;
+&lt;body&gt;
+&lt;BLANK LINE&gt;
+&lt;footer&gt;
+</code></pre></div></div>
+
+<h4 id="type">type</h4>
+
+<p>The <strong>type</strong> must be one of the following:</p>
+
+<ul>
+  <li><strong>feat</strong>: A new feature</li>
+  <li><strong>fix</strong>: A bug fix</li>
+  <li><strong>docs</strong>: Documentation only changes</li>
+  <li><strong>style</strong>: Changes that do not affect the meaning of the code (white-space,
+formatting, missing semi-colons, etc)</li>
+  <li><strong>refactor</strong>: A code change that neither fixes a bug nor adds a feature</li>
+  <li><strong>perf</strong>: A code change that improves performance</li>
+  <li><strong>test</strong>: Adding missing or correcting existing tests</li>
+  <li><strong>build</strong>: Changes that affect the build system or external dependencies</li>
+  <li><strong>ci</strong>: Changes to our CI configuration files and scripts</li>
+  <li><strong>chore</strong>: Changes to the auxiliary tools and libraries such as documentation
+generation</li>
+  <li><strong>revert</strong>: Reverts a previous commit</li>
+</ul>
+
+<h4 id="scope">scope</h4>
+
+<p>The <strong>scope</strong> must be a list of one or more packages contained in this monorepo.
+Each scope name must match a directory name in
+<a href="https://github.com/strongloop/loopback-next/tree/master/packages">packages/</a>,
+e.g. <code class="language-plaintext highlighter-rouge">core</code> or <code class="language-plaintext highlighter-rouge">context</code>.</p>
+
+<p><em>Note: If multiple packages are affected by a pull request, don’t list the
+scopes as the commit linter currently only supports only one scope being listed
+at most. The <code class="language-plaintext highlighter-rouge">CHANGELOG</code> for each affected package will still show the commit.
+Commit linter will be updated to allow listing of multiple affected scopes, see
+<a href="https://github.com/strongloop/loopback-next/issues/581">issue #581</a></em></p>
+
+<h4 id="subject">subject</h4>
+
+<p>The <strong>subject</strong> contains succinct description of the change:</p>
+
+<ul>
+  <li>use the imperative, present tense: “change” not “changed” nor “changes”</li>
+  <li>don’t capitalize first letter</li>
+  <li>no dot (.) at the end</li>
+</ul>
+
+<h4 id="body">body</h4>
+
+<p>The <strong>body</strong> provides more details, it should include the motivation for the
+change and contrast this with previous behavior.</p>
+
+<p>Just as in the subject, use the imperative, present tense: “change” not
+“changed” nor “changes”a</p>
+
+<p>Paragraphs or bullet points are ok (must not exceed 100 characters per line).
+Typically a hyphen or asterisk is used for the bullet, followed by a single
+space, with blank lines in between.</p>
+
+<h4 id="footer-optional">footer (optional)</h4>
+
+<p>The <strong>footer</strong> should contain any information about Breaking Changes introduced
+by this commit.</p>
+
+<p>This section must start with the upper case text <code class="language-plaintext highlighter-rouge">BREAKING CHANGE</code> followed by a
+colon (<code class="language-plaintext highlighter-rouge">:</code>) and a space (``). A description must be provided, describing what
+has changed and how to migrate from older versions.</p>
+
+<h3 id="tools-to-help-generate-a-commit-message">Tools to help generate a commit message</h3>
+
+<p>This repository has <a href="https://github.com/commitizen/cz-cli">commitizen</a> support
+enabled. Commitizen can help you generate your commit messages automatically.
+You must install it globally as follows:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm i <span class="nt">-g</span> commitizen
+</code></pre></div></div>
+
+<p>And to use it, simply call <code class="language-plaintext highlighter-rouge">git cz</code> instead of <code class="language-plaintext highlighter-rouge">git commit</code>. The tool will help
+you generate a commit message that follows the above guidelines.</p>
+
+<h2 id="making-breaking-changes">Making breaking changes</h2>
+
+<p>LoopBack is following <a href="https://semver.org">Semantic Versioning</a>. Any change
+that’s not fully backward compatible with previous versions has to increase the
+major version number, e.g. <code class="language-plaintext highlighter-rouge">1.4.2 -&gt; 2.0.0</code>.</p>
+
+<p>In general, we try to avoid breaking backward compatibility too often and strive
+to limit the frequency of major releases to about once or twice a year.</p>
+
+<ul>
+  <li>Breaking changes make it difficult for our users to always stay at the latest
+version of the framework.</li>
+  <li>Every additional major version we have to support adds extra maintenance
+overhead.</li>
+  <li>In our
+<a href="https://loopback.io/doc/en/contrib/Long-term-support.html">Long Term Support policy</a>,
+we are committing to support every major module version for at least 12 months
+after it entered LTS mode and also support it for the entire LTS lifetime of
+the connected Node.js major version. If we release major versions too often,
+we can end up with a long list of versions we have to keep supporting for long
+time.</li>
+</ul>
+
+<p>Whenever possible, consider implementing a feature flag that allows users to
+decide when to migrate to the new behavior. Make this flag disabled by default
+to preserve backward compatibility.</p>
+
+<p>However, we do recognize that often a breaking change is the most sensible thing
+to do. When that time comes:</p>
+
+<ul>
+  <li>Describe incompatibilites for release notes</li>
+  <li>Look for more breaking changes to include in the release: search for comments
+containing <code class="language-plaintext highlighter-rouge">TODO(semver-major)</code> and <code class="language-plaintext highlighter-rouge">@deprecated</code>.</li>
+  <li>Update list of supported versions</li>
+</ul>
+
+<h3 id="describe-incompatibilites-for-release-notes">Describe incompatibilites for release notes</h3>
+
+<p>In the pull request introducing the breaking change, provide a descriptive
+<a href="#footer-optional">footer</a> explaining the breaking change to our users. This
+content will be used by release tooling to compile comprehensive release notes.</p>
+
+<p>Put yourself in the shoes of module users and try to answer the following
+questions:</p>
+
+<ul>
+  <li>
+    <p>How can I find if my project is affected by this change?</p>
+  </li>
+  <li>
+    <p>What does this change mean for my project? What is going to change?</p>
+  </li>
+  <li>
+    <p>How can I migrate my project to the new major version? What steps do I need to
+make?</p>
+  </li>
+</ul>
+
+<h3 id="look-for-more-breaking-changes">Look for more breaking changes</h3>
+
+<p>Look for other features or fixes that require a breaking change. Consider
+grouping multiple backward incompatible changes into a single semver major
+release.</p>
+
+<p>Few examples of changes that are usually easy to make:</p>
+
+<ul>
+  <li>
+    <p>Change the default value of a feature flag from “false” (backward-compatible
+behavior) to “true” (the new behavior).</p>
+  </li>
+  <li>
+    <p>Deprecate a compatibility feature flag that’s already enabled by default.</p>
+  </li>
+  <li>
+    <p>Remove a deprecated feature flag.</p>
+  </li>
+  <li>
+    <p>Drop support for a major version of Node.js that has already reached it’s end
+of life or that will reach it soon (in the next 4-8 weeks).</p>
+  </li>
+</ul>
+
+<h3 id="update-list-of-supported-versions">Update list of supported versions</h3>
+
+<p>Make sure the package’s README has an up-to-date section about the supported
+versions. Read our
+<a href="https://loopback.io/doc/en/contrib/Long-term-support.html">Long Term Support policy</a>
+to understand the rules governing transition between different support levels.</p>
+
+<ul>
+  <li>
+    <p>There should be at most one version in Active LTS mode. This version moves to
+Maintenance LTS.</p>
+  </li>
+  <li>
+    <p>The version listed as Current is entering Active LTS mode.</p>
+  </li>
+  <li>
+    <p>The new major version is becoming Current.</p>
+  </li>
+</ul>
+
+<p>It is important to make these updates <em>before</em> publishing the new major version,
+so that new content is included on the package page provided by
+<a href="https://www.npmjs.com/">npmjs.com</a>.</p>
+
+<h2 id="releasing-new-versions">Releasing new versions</h2>
+
+<p>When we are ready to tag and publish a release, run the following commands:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd </span>loopback-next
+git checkout master
+git pull
+npm run release
+</code></pre></div></div>
+
+<p>The <code class="language-plaintext highlighter-rouge">release</code> script will automatically perform the tasks for all packages:</p>
+
+<ul>
+  <li>Clean up <code class="language-plaintext highlighter-rouge">node_modules</code></li>
+  <li>Install/link dependencies</li>
+  <li>Transpile TypeScript files into JavaScript</li>
+  <li>Run mocha tests</li>
+  <li>Check lint (eslint and prettier) issues</li>
+</ul>
+
+<p>If all steps are successful, it prompts you to publish packages into npm
+repository.</p>
+
+<h2 id="adding-a-new-package">Adding a new package</h2>
+
+<h3 id="create-a-new-package">Create a new package</h3>
+
+<p>Please run the following command:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd </span>loopback-next
+node bin/create-package.js
+</code></pre></div></div>
+
+<p>The script does the following steps:</p>
+
+<ol>
+  <li>
+    <p>Determine the parentDir and package name.</p>
+
+    <p>The first argument can be one of the following:</p>
+
+    <ul>
+      <li>package-name</li>
+      <li>@loopback/package-name</li>
+      <li>extensions/package-name</li>
+      <li>packages/package-name</li>
+    </ul>
+  </li>
+</ol>
+
+<p>If the parentDir is not specified, it tries to guess by the current directory
+and falls back to <code class="language-plaintext highlighter-rouge">extensions</code>.</p>
+
+<ol>
+  <li>
+    <p>Run <code class="language-plaintext highlighter-rouge">lb4 extension</code> to scaffold the project without <code class="language-plaintext highlighter-rouge">npm install</code>. If
+<code class="language-plaintext highlighter-rouge">--interactive</code> or <code class="language-plaintext highlighter-rouge">-i</code> is NOT provided by the command, interactive prompts
+are skipped.</p>
+  </li>
+  <li>
+    <p>Fix up the project</p>
+
+    <ul>
+      <li>Remove unused files</li>
+      <li>Improve <code class="language-plaintext highlighter-rouge">package.json</code></li>
+    </ul>
+  </li>
+  <li>
+    <p>Run <code class="language-plaintext highlighter-rouge">lb4 copyright</code> to update <code class="language-plaintext highlighter-rouge">LICENSE</code> and copyright headers for <code class="language-plaintext highlighter-rouge">*.ts</code> and
+<code class="language-plaintext highlighter-rouge">*.js</code>.</p>
+  </li>
+  <li>
+    <p>Run <code class="language-plaintext highlighter-rouge">lerna bootstrap --scope &lt;full-package-name&gt;</code> to link its local
+dependencies.</p>
+  </li>
+  <li>
+    <p>Run <code class="language-plaintext highlighter-rouge">update-ts-project-refs</code> to update TypeScript project references</p>
+  </li>
+  <li>
+    <p>Run <code class="language-plaintext highlighter-rouge">update-monorepo-file</code> to update <code class="language-plaintext highlighter-rouge">docs/site/MONOREPO.md</code></p>
+  </li>
+  <li>
+    <p>Remind to update <code class="language-plaintext highlighter-rouge">CODEOWNERS</code>. If you would like to do it manually, follow
+steps below:</p>
+  </li>
+</ol>
+
+<p>To add a new package by hand, create a folder in
+<a href="https://github.com/strongloop/loopback-next/tree/master/packages"><code class="language-plaintext highlighter-rouge">packages</code></a>
+as the root directory of your module. For example,</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd </span>loopback-next/packages
+<span class="nb">mkdir</span> &lt;a-new-package&gt;
+</code></pre></div></div>
+
+<p>The package follows the node/npm module layout. You can use <code class="language-plaintext highlighter-rouge">npm init</code> or
+<code class="language-plaintext highlighter-rouge">lb4 extension</code> command to scaffold the module, copy/paste from an existing
+package, or manually add files including <code class="language-plaintext highlighter-rouge">package.json</code>.</p>
+
+<p>Make sure you add LICENSE file properly and all source code files have the
+correct copyright header.</p>
+
+<h3 id="keep-shared-configuration-in-root">Keep shared configuration in root</h3>
+
+<p>We have some configuration files at the top level (<strong>loopback-next/</strong>):</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">.gitignore</code></li>
+  <li><code class="language-plaintext highlighter-rouge">.prettierignore</code></li>
+  <li><code class="language-plaintext highlighter-rouge">.nycrc.yml</code></li>
+</ul>
+
+<p>For consistency across all packages, do not add them at package level unless
+specific customization is needed.</p>
+
+<h3 id="make-a-scoped-package-public">Make a scoped package public</h3>
+
+<p>By default, npm publishes scoped packages with private access. There are two
+options to make a new scoped package with public access.</p>
+
+<p>Either add the following section to <code class="language-plaintext highlighter-rouge">package.json</code>:</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="w">  </span><span class="nl">"publishConfig"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"access"</span><span class="p">:</span><span class="w"> </span><span class="s2">"public"</span><span class="w">
+  </span><span class="p">}</span><span class="err">,</span><span class="w">
+</span></code></pre></div></div>
+
+<p>Or explicitly publish the package with <code class="language-plaintext highlighter-rouge">--access=public</code>:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd </span>packages/&lt;a-new-package&gt;
+npm publish <span class="nt">--access</span><span class="o">=</span>public
+</code></pre></div></div>
+
+<h3 id="register-the-new-package">Register the new package</h3>
+
+<p>Please register the new package in the following files:</p>
+
+<ul>
+  <li>Update <a href="/pages/en/lb4/MONOREPO.html">MONOREPO.md</a> - insert a new table row to describe the
+new package, please keep the rows sorted by package name.</li>
+  <li>Update <a href="/doc/en/lb4/Reserved-binding-keys.html">Reserved-binding-keys.md</a> - add
+a link to the apidocs on Binding Keys if the new package has any.</li>
+  <li>Update
+<a href="https://github.com/strongloop/loopback-next/blob/master/CODEOWNERS">CODEOWNERS</a> -
+add a new entry listing the primary maintainers (owners) of the new package.</li>
+</ul>
+
+<h2 id="upgrading-typescripteslint">Upgrading TypeScript/eslint</h2>
+
+<p>In order to support eslint extensions with a peer dependency on eslint, we have
+to specify <code class="language-plaintext highlighter-rouge">typescript</code> and <code class="language-plaintext highlighter-rouge">eslint</code> dependency in multiple places in our
+monorepo.</p>
+
+<p>Steps to upgrade <code class="language-plaintext highlighter-rouge">typescript</code> or <code class="language-plaintext highlighter-rouge">eslint</code> to a newer version:</p>
+
+<ol>
+  <li>
+    <p>Update the dependencies in <code class="language-plaintext highlighter-rouge">@loopback/build</code>, this is the source of truth for
+the rest of the monorepo.</p>
+
+    <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="o">(</span><span class="nb">cd </span>packages/build <span class="o">&amp;&amp;</span> npm update typescript eslint<span class="o">)</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Propagate the change to other places to keep everything consistent.</p>
+
+    <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>node bin/sync-dev-deps
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<h2 id="how-to-test-infrastructure-changes">How to test infrastructure changes</h2>
+
+<p>When making changes to project infrastructure, e.g. modifying <code class="language-plaintext highlighter-rouge">tsc</code> or <code class="language-plaintext highlighter-rouge">eslint</code>
+configuration, it’s important to verify that all usage scenarios keep working.</p>
+
+<h3 id="verify-typescript-setup">Verify TypeScript setup</h3>
+
+<ol>
+  <li>
+    <p>Open any existing TypeScript file, e.g. <code class="language-plaintext highlighter-rouge">packages/core/src/index.ts</code></p>
+  </li>
+  <li>
+    <p>Add a small bit of code to break TypeScript’s type checks, for example:</p>
+
+    <div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">foo</span><span class="p">:</span> <span class="kr">number</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">bar</span><span class="dl">'</span><span class="p">;</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Run <code class="language-plaintext highlighter-rouge">npm test</code></p>
+  </li>
+  <li>
+    <p>Verify that the build failed and the compiler error message shows a path
+relative to monorepo root, e.g. <code class="language-plaintext highlighter-rouge">packages/src/index.ts</code>.</p>
+  </li>
+  <li>
+    <p>Test integration with supported IDEs:</p>
+    <ul>
+      <li><a href="/doc/en/lb4/Developing-with-vscode.html#how-to-verify-typescript-setup">Visual Studio Code</a></li>
+      <li><a href="/doc/en/lb4/Developing-with-webstorm.html#how-to-verify-typescript-setup">WebStorm</a></li>
+    </ul>
+  </li>
+</ol>
+
+<h3 id="verify-eslint-setup">Verify ESLint setup</h3>
+
+<ol>
+  <li>
+    <p>Open any existing TypeScript file, e.g. <code class="language-plaintext highlighter-rouge">packages/src/index.ts</code></p>
+  </li>
+  <li>
+    <p>Introduce two kinds of linting problems - one that does and another that
+does not require type information to be detected. For example, you can add
+the following line at the end of the opened <code class="language-plaintext highlighter-rouge">index.ts</code>:</p>
+
+    <div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">foo</span><span class="p">:</span> <span class="kr">any</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">bar</span><span class="dl">'</span><span class="p">;</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Run <code class="language-plaintext highlighter-rouge">npm test</code></p>
+  </li>
+  <li>
+    <p>Verify that the build failed and both linting problems are reported:</p>
+
+    <div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ERROR: /Users/(...)/packages/core/src/index.ts[16, 7]: 'foo' is declared but its value is never read.
+ERROR: /Users/(...)/packages/core/src/index.ts[16, 12]: Type declaration of 'any' loses type-safety. Consider replacing it with a more precise type.
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Test integration with supported IDEs:</p>
+
+    <ul>
+      <li><a href="/doc/en/lb4/Developing-with-vscode.html#how-to-verify-eslint-setup">Visual Studio Code</a></li>
+      <li><a href="/doc/en/lb4/Developing-with-webstorm.html#how-to-verify-eslint-setup">WebStorm</a></li>
+    </ul>
+  </li>
+</ol>
+
+<h3 id="tsconfig-files">tsconfig files</h3>
+
+<p>In the <a href="https://github.com/strongloop/loopback-next"><code class="language-plaintext highlighter-rouge">loopback-next</code></a> monorepo,
+<code class="language-plaintext highlighter-rouge">TypeScript</code> is set up in two places:</p>
+
+<ol>
+  <li>
+    <p>When using VS Code, the <code class="language-plaintext highlighter-rouge">TypeScript</code> engine views <code class="language-plaintext highlighter-rouge">loopback-next</code> as a single
+big project.</p>
+
+    <p>This enables the “refactor - rename” command to change all places using the
+renamed symbol, and also makes “go to definition” command jump to <code class="language-plaintext highlighter-rouge">.ts</code> files
+containing the original source code. Otherwise “refactor - rename” works
+within the same package only and “go to definition” jumps to <code class="language-plaintext highlighter-rouge">.d.ts</code> files.</p>
+  </li>
+  <li>
+    <p>When building the monorepo, we need to build the packages individually, so
+that one <code class="language-plaintext highlighter-rouge">dist</code> directory is created for each package.</p>
+  </li>
+</ol>
+
+<p>This is why we have two sets of <code class="language-plaintext highlighter-rouge">tsconfig</code> files:</p>
+
+<ul>
+  <li>At monorepo root, there is <code class="language-plaintext highlighter-rouge">tsconfig.json</code> used by VS Code and
+<code class="language-plaintext highlighter-rouge">tsconfig.build.json</code> used by <code class="language-plaintext highlighter-rouge">eslint</code>.</li>
+  <li>Inside each package, there is <code class="language-plaintext highlighter-rouge">tsconfig.json</code> used by <code class="language-plaintext highlighter-rouge">npm run build</code> command.</li>
+</ul>
+
+<h2 id="renovate-bot">Renovate bot</h2>
+
+<p>In loopback-next, we use package-lock files to speed up <code class="language-plaintext highlighter-rouge">npm install</code> times and
+<a href="http://renovatebot.com">Renovate bot</a> to keep our lock files up to date.</p>
+
+<p>The bot is configured to maintain a special issue called
+<code class="language-plaintext highlighter-rouge">Update Dependencies (Renovate Bot)</code> where it lists all pull requests in
+progress and in queue:</p>
+
+<ul>
+  <li><a href="https://github.com/strongloop/loopback-next/issues/3042">loopback-next#3042</a></li>
+  <li><a href="https://github.com/strongloop/loopback4-example-shopping/issues/94">loopback4-example-shopping#94</a></li>
+</ul>
+
+<p>Pull requests opened by RenovateBot can be merged by pressing GitHub’s big green
+button once all checks are green (all CI builds finished).</p>
+
+<p>RenovateBot periodically checks for changes on <code class="language-plaintext highlighter-rouge">master</code> and rebases pull request
+in progress when new commits were added. If GitHub complains that RenovateBot’s
+pull request is out of date, then just wait until it’s rebased and checks are
+green. The bot usually updates pull requests every hour. Alternatively, tick the
+check-box in the pull request description or in “Update Dependencies” issue.</p>
+
+
+    <div class="tags">
+      
+    </div>
+</div>
+
+<hr class="shaded"/>
+
+<footer id="container">
+            <div class="row">
+                <div class="col-md-6 footer-left">
+               &copy;2021 IBM / StrongLoop. All rights reserved. <br />
+ Site last generated: Mar 22, 2021
+              </div>
+              <div class="col-md-6 footer-right">
+                <p><img src="https://loopback.io/images/company_logo.png" alt="Company logo"/></p>
+              </div>
+            </div>
+</footer>
+
+
+        </div>
+        <!-- /.row -->
+</div>
+<!-- /.container -->
+    </div>
+</body>
+
+</html>

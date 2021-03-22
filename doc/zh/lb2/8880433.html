@@ -1,0 +1,3424 @@
+<!DOCTYPE html>
+<head>
+    
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="keywords" content=" LoopBack">
+  <title>操作钩子 | LoopBack Documentation</title>
+  <link rel="stylesheet" href="/css/syntax.css">
+
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/modern-business.css">
+    <link rel="stylesheet" href="/css/lavish-bootstrap.css">
+    <link rel="stylesheet" href="/css/customstyles.css">
+    <link rel="stylesheet" href="/css/theme-v4.css">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-150726441-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-150726441-2');
+</script>
+
+
+    <!-- github star button -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.3.0/anchor.min.js"></script>
+    <script src="/js/toc.js"></script>
+    <script src="/js/customscripts.js"></script>
+
+    <link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    
+
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-lg navbar-brand no_icon" href="/doc/index.html">
+              <img class="no_icon" style="width:147px;" src="/images/branding/logo/white/loopback.svg">&nbsp;<span class="projectTitle"></span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- entries without drop-downs appear here -->
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">API Docs<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        <!-- page.url is /doc/zh/lb2/8880433.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://loopback.io/doc/en/lb4/apidocs.index.html" target="_blank">LoopBack 4</a></li>
+                          
+                        
+                        <!-- page.url is /doc/zh/lb2/8880433.html .... folderitem.url is  -->
+                          
+                            <li><a href="http://apidocs.loopback.io" target="_blank">LoopBack 3.x</a></li>
+                          
+                        
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">View<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        <!-- page.url is /doc/zh/lb2/8880433.html .... folderitem.url is / -->
+                          
+                            <li><a href="/">LoopBack Overview</a></li>
+                          
+                        
+                        <!-- page.url is /doc/zh/lb2/8880433.html .... folderitem.url is /doc/en/lb4/ -->
+                          
+                            <li><a href="/doc/en/lb4/">LoopBack 4</a></li>
+                          
+                        
+                        <!-- page.url is /doc/zh/lb2/8880433.html .... folderitem.url is /doc/en/lb3/ -->
+                          
+                            <li><a href="/doc/en/lb3/">LoopBack 3.x</a></li>
+                          
+                        
+                        <!-- page.url is /doc/zh/lb2/8880433.html .... folderitem.url is /doc/en/lb2/ -->
+                          
+                            <li><a href="/doc/en/lb2/">LoopBack 2.x</a></li>
+                          
+                        
+                        <!-- page.url is /doc/zh/lb2/8880433.html .... folderitem.url is /doc/en/community/ -->
+                          
+                            <li><a href="/doc/en/community/">Community projects</a></li>
+                          
+                        
+                        <!-- page.url is /doc/zh/lb2/8880433.html .... folderitem.url is /doc/en/contrib/ -->
+                          
+                            <li><a href="/doc/en/contrib/">Contributing to LoopBack</a></li>
+                          
+                        
+                        <!-- page.url is /doc/zh/lb2/8880433.html .... folderitem.url is /doc/en/sec/ -->
+                          
+                            <li><a href="/doc/en/sec/">Security advisories</a></li>
+                          
+                        
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Resources<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        <!-- page.url is /doc/zh/lb2/8880433.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://github.com/strongloop/loopback.io" target="_blank">Docs Github Repo</a></li>
+                          
+                        
+                        <!-- page.url is /doc/zh/lb2/8880433.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://groups.google.com/forum/#!forum/loopbackjs-announcements" target="_blank">Announcements Mailing List</a></li>
+                          
+                        
+                        <!-- page.url is /doc/zh/lb2/8880433.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://groups.google.com/forum/#!forum/loopbackjs" target="_blank">Developer Forum</a></li>
+                          
+                        
+                        <!-- page.url is /doc/zh/lb2/8880433.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://join.slack.com/t/loopbackio/shared_invite/zt-8lbow73r-SKAKz61Vdao~_rGf91pcsw" target="_blank">LoopBack on Slack</a></li>
+                          
+                        
+                        <!-- page.url is /doc/zh/lb2/8880433.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://stackoverflow.com/questions/tagged/strongloop+or+loopback4+or+loopbackjs" target="_blank">LoopBack on Stack Overflow</a></li>
+                          
+                        
+                        <!-- page.url is /doc/zh/lb2/8880433.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://strongloop.com/strongblog/tag_LoopBack.html" target="_blank">StrongLoop Blog - LoopBack</a></li>
+                          
+                        
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Translations<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        <!-- page.url is /doc/zh/lb2/8880433.html .... folderitem.url is /doc/es/lb2/ -->
+                          
+                            <li><a href="/doc/es/lb2/">Español (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/zh/lb2/8880433.html .... folderitem.url is /doc/es/lb4/ -->
+                          
+                            <li><a href="/doc/es/lb4/">Español (v4)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/zh/lb2/8880433.html .... folderitem.url is /doc/fr/lb2/ -->
+                          
+                            <li><a href="/doc/fr/lb2/">Français (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/zh/lb2/8880433.html .... folderitem.url is /doc/fr/lb4/ -->
+                          
+                            <li><a href="/doc/fr/lb4/">Français (v4)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/zh/lb2/8880433.html .... folderitem.url is /doc/ko/lb2/ -->
+                          
+                            <li><a href="/doc/ko/lb2/">한국어 (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/zh/lb2/8880433.html .... folderitem.url is /doc/ko/lb3/ -->
+                          
+                            <li><a href="/doc/ko/lb3/">한국어 (v3)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/zh/lb2/8880433.html .... folderitem.url is /doc/pt-br/lb2/ -->
+                          
+                            <li><a href="/doc/pt-br/lb2/">Português (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/zh/lb2/8880433.html .... folderitem.url is /doc/pt-br/lb4/ -->
+                          
+                            <li><a href="/doc/pt-br/lb4/">Português (v4)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/zh/lb2/8880433.html .... folderitem.url is /doc/ja/lb2/ -->
+                          
+                            <li><a href="/doc/ja/lb2/">日本語 (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/zh/lb2/8880433.html .... folderitem.url is /doc/ja/lb3/ -->
+                          
+                            <li><a href="/doc/ja/lb3/">日本語 (v3)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/zh/lb2/8880433.html .... folderitem.url is /doc/ja/lb4/ -->
+                          
+                            <li><a href="/doc/ja/lb4/">日本語 (v4)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/zh/lb2/8880433.html .... folderitem.url is /doc/ru/lb2/ -->
+                          
+                            <li><a href="/doc/ru/lb2/">Pусский (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/zh/lb2/8880433.html .... folderitem.url is /doc/zh/lb2/ -->
+                          
+                            <li class="dropdownActive"><a href="/doc/zh/lb2/">中文 (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/zh/lb2/8880433.html .... folderitem.url is /doc/zh/lb4/ -->
+                          
+                            <li><a href="/doc/zh/lb4/">中文 (v4)</a></li>
+                          
+                        
+                    </ul>
+                </li>
+                
+                
+                
+                <li>
+                    <form id="search" name="search" class="input-group lb-search" action="/search" method="GET">
+                        <input type="text" class="form-control search-bar" placeholder="Search (powered by Watson)" name="q">
+                        
+                          <input type="hidden" name="sidebar" value="zh_lb2_sidebar">
+                        
+                        <div class="input-group-btn">
+                            <button type="submit" class="btn btn-default" aria-label="search">
+                              <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                            </button>
+                        </div>
+                      </form>
+                </li>
+            </ul>
+        </div>
+      </div>
+</nav>
+
+<!-- Page Content -->
+<div class="container">
+    <!-- Content Row -->
+    <div class="row">
+        <!-- Sidebar Column -->
+        <nav class="col-md-3 sidebar-col">
+          
+
+
+
+
+
+
+
+
+
+
+
+<!-- NOTE: sidebar = site.data.sidebars.mydoc_sidebar.entries -->
+<div class="sidebarTitle"><a href="/doc/zh/lb2/index.html">Loopback 中文</a></div>
+<ul id="mysidebar" class="nav-list">
+  
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="/doc/zh/lb2/6095101.html">安装 StrongLoop</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/Updating-to-the-latest-version.html&title=Updating to the latest version">Updating to the latest version</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/StrongLoop-Labs.html&title=StrongLoop Labs">StrongLoop Labs</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="/doc/zh/lb2/6095111.html">LoopBack 核心概念</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/LoopBack-FAQ.html&title=LoopBack FAQ">LoopBack FAQ</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="/doc/zh/lb2/Security-advisories.html">安全性建议</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/Security-advisory-01-09-2015.html&title=Security advisory 01-09-2015">Security advisory 01-09-2015</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="/doc/zh/lb2/6095006.html">LoopBack 初级教程</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="/doc/zh/lb2/6095007.html">创建一个简单的API</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="/doc/zh/lb2/6095009.html">使用API浏览器</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="/doc/zh/lb2/Connect-your-API-to-a-data-source.html">Connect your API to a data source</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/Extend-your-API.html&title=Extend your API">Extend your API</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/Add-a-static-web-page.html&title=Add a static web page">Add a static web page</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="/doc/zh/lb2/Add-a-custom-Express-route.html">Add a custom Express route</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/Next-steps.html&title=Next steps">Next steps</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/Getting-started-part-II.html&title=Getting started part II">Getting started part II</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/Introducing-the-Coffee-Shop-Reviews-app.html&title=Introducing the Coffee Shop Reviews app">Introducing the Coffee Shop Reviews app</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/Create-new-data-source.html&title=Create new data source">Create new data source</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/Create-new-models.html&title=Create new models">Create new models</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/Define-model-relations.html&title=Define model relations">Define model relations</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/Define-access-controls.html&title=Define access controls">Define access controls</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/Define-a-remote-hook.html&title=Define a remote hook">Define a remote hook</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/Create-AngularJS-client.html&title=Create AngularJS client">Create AngularJS client</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="/doc/zh/lb2/Learn-more.html">Learn more</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/Creating-an-application.html&title=Creating an application">Creating an application</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/Using-LoopBack-tools.html&title=Using LoopBack tools">Using LoopBack tools</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/Environment-specific-configuration.html&title=Environment-specific configuration">Environment-specific configuration</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/Versioning-your-API.html&title=Versioning your API">Versioning your API</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/Managing-users.html&title=Managing users">Managing users</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/Registering-users.html&title=Registering users">Registering users</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/Logging-in-users.html&title=Logging in users">Logging in users</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/Partitioning-users-with-realms.html&title=Partitioning users with realms">Partitioning users with realms</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="/doc/zh/lb2/6094988.html">用户认证和授权</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/Controlling-data-access.html&title=Controlling data access">Controlling data access</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/Making-authenticated-requests.html&title=Making authenticated requests">Making authenticated requests</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/Defining-and-using-roles.html&title=Defining and using roles">Defining and using roles</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="/doc/zh/lb2/Accessing-related-models.html">Accessing related models</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/Creating-a-default-admin-user.html&title=Creating a default admin user">Creating a default admin user</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/Security-considerations.html&title=Security considerations">Security considerations</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/Tutorial-access-control.html&title=Tutorial: access control">Tutorial: access control</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/Defining-models.html&title=Defining models">Defining models</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/Creating-models.html&title=Creating models">Creating models</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/Using-the-model-generator.html&title=Using the model generator">Using the model generator</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/Discovering-models-from-relational-databases.html&title=Discovering models from relational databases">Discovering models from relational databases</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/Database-discovery-API.html&title=Database discovery API">Database discovery API</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/Creating-models-from-unstructured-data.html&title=Creating models from unstructured data">Creating models from unstructured data</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/Customizing-models.html&title=Customizing models">Customizing models</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/Attaching-models-to-data-sources.html&title=Attaching models to data sources">Attaching models to data sources</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/Exposing-models-over-REST.html&title=Exposing models over REST">Exposing models over REST</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/Validating-model-data.html&title=Validating model data">Validating model data</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/Creating-model-relations.html&title=Creating model relations">Creating model relations</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/6094931.html&title=Tutorial: model relations">Tutorial: model relations</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/BelongsTo-relations.html&title=BelongsTo relations">BelongsTo relations</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/HasOne-relations.html&title=HasOne relations">HasOne relations</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/HasMany-relations.html&title=HasMany relations">HasMany relations</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/HasManyThrough-relations.html&title=HasManyThrough relations">HasManyThrough relations</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/HasAndBelongsToMany-relations.html&title=HasAndBelongsToMany relations">HasAndBelongsToMany relations</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/Polymorphic-relations.html&title=Polymorphic relations">Polymorphic relations</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/Querying-related-models.html&title=Querying related models">Querying related models</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/Embedded-models-and-relations.html&title=Embedded models and relations">Embedded models and relations</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/Connecting-models-to-data-sources.html&title=Connecting models to data sources">Connecting models to data sources</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/6094961.html&title=Tutorial: Connecting to databases">Tutorial: Connecting to databases</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/Connecting-to-MongoDB.html&title=Connecting to MongoDB">Connecting to MongoDB</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/Creating-a-database-schema-from-models.html&title=Creating a database schema from models">Creating a database schema from models</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/Executing-native-SQL.html&title=Executing native SQL">Executing native SQL</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/Database-connectors.html&title=Database connectors">Database connectors</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/Memory-connector.html&title=Memory connector">Memory connector</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/MongoDB-connector.html&title=MongoDB connector">MongoDB connector</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/Using-MongoLab.html&title=Using MongoLab">Using MongoLab</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/MySQL-connector.html&title=MySQL connector">MySQL connector</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/Oracle-connector.html&title=Oracle connector">Oracle connector</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/Installing-the-Oracle-connector.html&title=Installing the Oracle connector">Installing the Oracle connector</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/PostgreSQL-connector.html&title=PostgreSQL connector">PostgreSQL connector</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/Redis-connector.html&title=Redis connector">Redis connector</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/SQL-Server-connector.html&title=SQL Server connector">SQL Server connector</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/Non-database-connectors.html&title=Non-database connectors">Non-database connectors</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/ATG-connector.html&title=ATG connector">ATG connector</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/Email-connector.html&title=Email connector">Email connector</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/Push-connector.html&title=Push connector">Push connector</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/Remote-connector.html&title=Remote connector">Remote connector</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/REST-connector.html&title=REST connector">REST connector</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/SOAP-connector.html&title=SOAP connector">SOAP connector</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/Storage-connector.html&title=Storage connector">Storage connector</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/Community-connectors.html&title=Community connectors">Community connectors</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/6094959.html&title=Advanced topics: data sources">Advanced topics: data sources</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/Building-a-connector.html&title=Building a connector">Building a connector</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/Using-built-in-models.html&title=Using built-in models">Using built-in models</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/Extending-built-in-models.html&title=Extending built-in models">Extending built-in models</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/Creating-database-tables-for-built-in-models.html&title=Creating database tables for built-in models">Creating database tables for built-in models</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/Model-property-reference.html&title=Model property reference">Model property reference</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/Built-in-models-REST-API.html&title=Built-in models REST API">Built-in models REST API</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/PersistedModel-REST-API.html&title=PersistedModel REST API">PersistedModel REST API</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="/doc/zh/lb2/Access-token-REST-API.html">Access token REST API</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="/doc/zh/lb2/ACL-REST-API.html">ACL REST API</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/Application-REST-API.html&title=Application REST API">Application REST API</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/Email-REST-API.html&title=Email REST API">Email REST API</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/Installation-REST-API.html&title=Installation REST API">Installation REST API</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/Push-Notification-REST-API.html&title=Push Notification REST API">Push Notification REST API</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/Relation-REST-API.html&title=Relation REST API">Relation REST API</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/Role-REST-API.html&title=Role REST API">Role REST API</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/User-REST-API.html&title=User REST API">User REST API</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/Working-with-data.html&title=Working with data">Working with data</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="/doc/zh/lb2/6095120.html">创建，更新，删除数据</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/Querying-data.html&title=Querying data">Querying data</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="/doc/zh/lb2/6095114.html">fields（字段）过滤器</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="/doc/zh/lb2/6095115.html">Include（加载导航属性）过滤器</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="/doc/zh/lb2/6095117.html">Limit（返回结果数限制）过滤器</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="/doc/zh/lb2/6095116.html">Order（排序）过滤器</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="/doc/zh/lb2/6095119.html">Skip过滤器</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="/doc/zh/lb2/6095118.html">Where过滤器</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="/doc/zh/lb2/8880487.html">使用数据库事务</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="/doc/zh/lb2/6095037.html">添加应用逻辑</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="/doc/zh/lb2/6095039.html">给model添加业务逻辑</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="/doc/zh/lb2/6095040.html">远程方法（Remote methods）</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="/doc/zh/lb2/6095041.html">远程钩子</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="/doc/zh/lb2/6095042.html">模型钩子</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  active">
+    
+    <a class="page-link" rel="nofollow" href="/doc/zh/lb2/8880433.html">操作钩子</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="/doc/zh/lb2/6095038.html">定义启动脚本（boot script）</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/Defining-middleware.html&title=Defining middleware">Defining middleware</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/Upgrading-applications-to-use-phases.html&title=Upgrading applications to use phases">Upgrading applications to use phases</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="/doc/zh/lb2/6095045.html">使用LoopBack对象</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/Prototype-versus-instance-methods.html&title=Prototype versus instance methods">Prototype versus instance methods</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="/doc/zh/lb2/6095047.html">使用当前上下文</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/Events.html&title=Events">Events</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="/doc/zh/lb2/8880469.html">事件</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/Running-and-debugging-apps.html&title=Running and debugging apps">Running and debugging apps</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/Running-apps.html&title=Running apps">Running apps</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/Setting-debug-strings.html&title=Setting debug strings">Setting debug strings</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/LoopBack-components.html&title=LoopBack components">LoopBack components</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/Push-notifications.html&title=Push notifications">Push notifications</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/Push-notifications-for-iOS-apps.html&title=Push notifications for iOS apps">Push notifications for iOS apps</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/Push-notifications-for-Android-apps.html&title=Push notifications for Android apps">Push notifications for Android apps</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/6095028.html&title=Tutorial: Push notifications">Tutorial: Push notifications</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/6095029.html&title=Tutorial: push notifications - LoopBack app">Tutorial: push notifications - LoopBack app</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/6095030.html&title=Tutorial: push notifications - Android client">Tutorial: push notifications - Android client</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/6095031.html&title=Tutorial: push notifications - iOS client">Tutorial: push notifications - iOS client</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/6095032.html&title=Tutorial: push notifications - putting it all together">Tutorial: push notifications - putting it all together</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/Storage-service.html&title=Storage service">Storage service</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/Storage-service-API.html&title=Storage service API">Storage service API</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/Storage-service-REST-API.html&title=Storage service REST API">Storage service REST API</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/6095015.html&title=Third-party login (Passport)">Third-party login (Passport)</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/Configuring-providers.json.html&title=Configuring providers.json">Configuring providers.json</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/6095016.html&title=Tutorial: third-party login">Tutorial: third-party login</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/Synchronization.html&title=Synchronization">Synchronization</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/Sync-example-app.html&title=Sync example app">Sync example app</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/Advanced-topics-sync.html&title=Advanced topics - sync">Advanced topics - sync</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/OAuth-2.0.html&title=OAuth 2.0">OAuth 2.0</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/Client-SDKs.html&title=Client SDKs">Client SDKs</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/Android-SDK.html&title=Android SDK">Android SDK</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/Working-with-files-using-the-Android-SDK.html&title=Working with files using the Android SDK">Working with files using the Android SDK</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/Push-notifications-using-Android-SDK.html&title=Push notifications using Android SDK">Push notifications using Android SDK</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/Working-with-the-LocalInstallation-class.html&title=Working with the LocalInstallation class">Working with the LocalInstallation class</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/iOS-SDK.html&title=iOS SDK">iOS SDK</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/6094913.html&title=iOS SDK (version 1.3)">iOS SDK (version 1.3)</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/6094912.html&title=Creating a LoopBack iOS app: part one">Creating a LoopBack iOS app: part one</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/6094911.html&title=Creating a LoopBack iOS app: part two">Creating a LoopBack iOS app: part two</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/AngularJS-JavaScript-SDK.html&title=AngularJS JavaScript SDK">AngularJS JavaScript SDK</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/AngularJS-Grunt-plugin.html&title=AngularJS Grunt plugin">AngularJS Grunt plugin</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/Generating-Angular-API-docs.html&title=Generating Angular API docs">Generating Angular API docs</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/LoopBack-Angular-Starter-example.html&title=LoopBack Angular Starter example">LoopBack Angular Starter example</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/LoopBack-in-the-client.html&title=LoopBack in the client">LoopBack in the client</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/Running-LoopBack-in-the-browser.html&title=Running LoopBack in the browser">Running LoopBack in the browser</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/Using-Browserify.html&title=Using Browserify">Using Browserify</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/Tutorials-and-examples.html&title=Tutorials and examples">Tutorials and examples</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/LoopBack-example-app.html&title=LoopBack example app">LoopBack example app</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/LoopBack-example-app-extra-material.html&title=LoopBack example app extra material">LoopBack example app extra material</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/Blog-posts.html&title=Blog posts">Blog posts</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/Reference.html&title=Reference">Reference</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/6095063.html&title=Command-line reference (slc loopback)">Command-line reference (slc loopback)</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="/doc/zh/lb2/ACL-generator.html">ACL generator</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/Application-generator.html&title=Application generator">Application generator</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/Data-source-generator.html&title=Data source generator">Data source generator</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/Example-generator.html&title=Example generator">Example generator</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/Model-generator.html&title=Model generator">Model generator</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/Property-generator.html&title=Property generator">Property generator</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/Relation-generator.html&title=Relation generator">Relation generator</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/Swagger-generator.html&title=Swagger generator">Swagger generator</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="/doc/zh/lb2/6095052.html">项目结构参考</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/package.json.html&title=package.json">package.json</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="/doc/zh/lb2/6095054.html">server 文件夹</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/config.json.html&title=config.json">config.json</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/datasources.json.html&title=datasources.json">datasources.json</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/middleware.json.html&title=middleware.json">middleware.json</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/model-config.json.html&title=model-config.json">model-config.json</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/server.js.html&title=server.js">server.js</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/common-directory.html&title=common directory">common directory</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/Model-definition-JSON-file.html&title=Model definition JSON file">Model definition JSON file</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/client-directory.html&title=client directory">client directory</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/LoopBack-API-reference.html&title=LoopBack API reference">LoopBack API reference</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/LoopBack-reference.html&title=LoopBack reference">LoopBack reference</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/app-class.html&title=app class">app class</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/PersistedModel-class.html&title=PersistedModel class">PersistedModel class</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/loopback-class.html&title=loopback class">loopback class</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/Model-class.html&title=Model class">Model class</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/Built-in-models-reference.html&title=Built-in models reference">Built-in models reference</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/ACL.html&title=ACL">ACL</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/AccessToken.html&title=AccessToken">AccessToken</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/Application.html&title=Application">Application</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/Email.html&title=Email">Email</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/RoleMapping-and-Role.html&title=RoleMapping and Role">RoleMapping and Role</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/User.html&title=User">User</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/LoopBack-middleware.html&title=LoopBack middleware">LoopBack middleware</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/Basic-model-object.html&title=Basic model object">Basic model object</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/Connected-model-class.html&title=Connected model class">Connected model class</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/LoopBack-types.html&title=LoopBack types">LoopBack types</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/Valid-names-in-LoopBack.html&title=Valid names in LoopBack">Valid names in LoopBack</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/6095050.html&title=LoopBack Definition Language (LDL)">LoopBack Definition Language (LDL)</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Not-yet-translated.html?url=/doc/zh/lb2/Error-object.html&title=Error object">Error object</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+
+</ul>
+
+        </nav>
+        <!-- Content Column -->
+        <div class="col-md-9">
+            
+<div class="post-header">
+   <h1 class="post-title-main">操作钩子</h1>
+   
+     
+       <a target="_blank" href="https://github.com/strongloop/loopback.io/blob/gh-pages/pages/zh/lb2/8880433.md" class="githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit this page</a>
+   
+</div>
+
+<div class="post-content">
+
+
+  
+
+
+
+
+ 
+   
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+;$(function() {
+  var level = parseInt(3, 10);
+  if (level === 1) {level = 'h2'}
+  if (level === 2) {level = 'h2,h3'}
+  if (level === 3) {level = 'h2,h3,h4'}
+  if (level === 4) {level = 'h2,h3,h4,h5'}
+
+  // Add a new level for changelog files which use h1,h2,h3
+  if (level === 0) {level = 'h1,h2,h3,h4,h5'}
+
+  var toc = $('#toc')
+
+  toc.toc({minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: level})
+
+  /* this offset helps with the space taken up by the floating toolbar */
+  toc.on('click', 'a', function() {
+    var target = $(this.getAttribute('href')),
+      scroll_target = target.offset().top
+
+    $(window).scrollTop(scroll_target - 10)
+    return false
+  })
+  .on('click', '.toc-expand-button', function() {
+    toc.find('> ul').slideToggle('fast');
+  })
+})
+</script>
+
+<div id="toc">
+  <span class="toc-title">Page Contents</span>
+  <button type="button" class="btn btn-link toc-expand-button">
+    <i class="fa fa-bars"></i>
+  </button>
+</div>
+
+ 
+
+    
+
+
+
+
+  <div markdown="span" class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i> <b>This is a community translation into Chinese</b>. For the latest information, see the <a href="/doc/en/lb2/8880433.html">English version</a>.
+  </div>
+
+
+<p><strong>Related articles</strong>:</p>
+
+<h2 id="overview">Overview</h2>
+
+<p>操作钩子不和一个具体分方法挂钩， 而是被所有指定创建，读取，更新，删除的方法所触发。 这些方法都是继承自<a href="https://apidocs.strongloop.com/loopback/#persistedmodel">PersistedModel</a>的方法。 使用操作钩子你可以拦截CRUD操作。</p>
+
+<div class="alert alert-info" role="alert">
+  <p><i class="fa fa-info-circle"></i>
+<b>Note:</b></p>
+
+  <p>使用操作钩子代理使用过时的<a href="https://docs.strongloop.com/display/LB/Model+hooks">模型钩子</a>。</p>
+
+</div>
+
+<p>API非常简单：方法是<code class="language-plaintext highlighter-rouge">Model.observe(_name_, _observer_)</code>, <em><code class="language-plaintext highlighter-rouge">name</code></em> 是操作钩子的名字，例如”before save”， <em><code class="language-plaintext highlighter-rouge">observer</code></em> 是一个函数，它有两个参数（<code class="language-plaintext highlighter-rouge">context, callback）。</code>  Child models inherit observers，你可以为一个hook注册多个observers。</p>
+
+<p> 下面的表格概括了被PersistedModel CRUD方法触发的操作钩子。（打叉的代表支持）</p>
+
+<table>
+  <tbody>
+    <tr>
+      <th>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Method&nbsp;→<br />&nbsp;</p>
+        <p>Operation hook ↓</p>
+      </th>
+      <th>find<br />findOne<br />findById&nbsp;</th>
+      <th>exists</th>
+      <th>count</th>
+      <th>create</th>
+      <th>upsert</th>
+      <th>findOrCreate</th>
+      <th>deleteAll<br />deleteById&nbsp;</th>
+      <th>updateAll</th>
+      <th>prototype<br />.save</th>
+      <th>prototype<br />.delete</th>
+      <th>prototype<br />.updateAttributes</th>
+    </tr>
+    <tr>
+      <th>access</th>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>&nbsp;</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <th>before save</th>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>&nbsp;</td>
+      <td>X</td>
+      <td>X</td>
+      <td>&nbsp;</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <th>after save</th>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>&nbsp;</td>
+      <td>X</td>
+      <td>X</td>
+      <td>&nbsp;</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <th>before delete</th>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>X</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>X</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <th>after delete</th>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>X</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>X</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <th>loaded</th>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>X</td>
+      <td>&nbsp;</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <th>persist</th>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>&nbsp;</td>
+      <td>X</td>
+      <td>X</td>
+      <td>&nbsp;</td>
+      <td>X</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="操作钩子的上下文对象context">操作钩子的上下文对象（context）</h3>
+
+<p>操作钩子的上下文对象和通过 <code class="language-plaintext highlighter-rouge">Model.beforeRemote、</code> <code class="language-plaintext highlighter-rouge">Model.afterRemote注册给远程钩子的上下文对象没有任何关系。</code> 关于远程钩子更多信息请见<a href="https://docs.strongloop.com/display/LB/Remote+hooks">Remote hooks</a>。注意了操作钩子的上下文对象和 <code class="language-plaintext highlighter-rouge">loopback.getCurrentContext()提供的上下文对象完全不相关。</code></p>
+
+<h4 id="操作和钩子的共同属性">操作和钩子的共同属性</h4>
+
+<h5 id="目标模型">目标模型</h5>
+
+<p><code class="language-plaintext highlighter-rouge">context.Model是操作相关的Model。例如</code><code class="language-plaintext highlighter-rouge">Product.find()</code>  <code class="language-plaintext highlighter-rouge">context.Model = Product。</code></p>
+
+<h5 id="操作选项">操作选项</h5>
+
+<p>上下文对象有一个options属性， 通过它钩子可以获取到调用者设置的options。例如：</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">FILTERED_PROPERTIES</span> <span class="o">=</span> <span class="p">[</span><span class="dl">'</span><span class="s1">immutable</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">birthday</span><span class="dl">'</span><span class="p">];</span>
+<span class="nx">MyModel</span><span class="p">.</span><span class="nx">observe</span><span class="p">(</span><span class="dl">'</span><span class="s1">before save</span><span class="dl">'</span><span class="p">,</span> <span class="kd">function</span> <span class="nx">filterProperties</span><span class="p">(</span><span class="nx">ctx</span><span class="p">,</span> <span class="nx">next</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">if</span> <span class="p">(</span><span class="nx">ctx</span><span class="p">.</span><span class="nx">options</span> <span class="o">&amp;&amp;</span> <span class="nx">ctx</span><span class="p">.</span><span class="nx">options</span><span class="p">.</span><span class="nx">skipPropertyFilter</span><span class="p">)</span> <span class="k">return</span> <span class="nx">next</span><span class="p">();</span>
+  <span class="k">if</span> <span class="p">(</span><span class="nx">ctx</span><span class="p">.</span><span class="nx">instance</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">FILTERED_PROPERTIES</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">p</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nx">ctx</span><span class="p">.</span><span class="nx">instance</span><span class="p">.</span><span class="nx">unsetAttribute</span><span class="p">(</span><span class="nx">p</span><span class="p">);</span>
+    <span class="p">});</span>
+  <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+    <span class="nx">FILTERED_PROPERTIES</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">p</span><span class="p">)</span> <span class="p">{</span>
+      <span class="k">delete</span> <span class="nx">ctx</span><span class="p">.</span><span class="nx">data</span><span class="p">[</span><span class="nx">p</span><span class="p">];</span>
+    <span class="p">});</span>
+  <span class="p">}</span>
+  <span class="nx">next</span><span class="p">();</span>
+<span class="p">});</span>
+
+<span class="c1">// 不会更新到</span>
+<span class="nx">MyModel</span><span class="p">.</span><span class="nx">updateOrCreate</span><span class="p">({</span>
+  <span class="na">id</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+  <span class="na">immutable</span><span class="p">:</span> <span class="dl">'</span><span class="s1">new value</span><span class="dl">'</span>
+<span class="p">},</span> <span class="nx">cb</span><span class="p">);</span>
+
+<span class="c1">// 会更新到</span>
+<span class="nx">MyModel</span><span class="p">.</span><span class="nx">updateOrCreate</span><span class="p">({</span>
+  <span class="na">id</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+  <span class="na">immutable</span><span class="p">:</span> <span class="dl">'</span><span class="s1">new value</span><span class="dl">'</span>
+<span class="p">},</span> <span class="p">{</span>
+  <span class="na">skipPropertyFilter</span><span class="p">:</span> <span class="kc">true</span>
+<span class="p">},</span> <span class="nx">cb</span><span class="p">);</span>
+</code></pre></div></div>
+
+<h5 id="sharedhookstateproperty">Shared hookState property</h5>
+
+<p>The <code class="language-plaintext highlighter-rouge">ctx.hookState</code> property is preserved across all hooks invoked for a single operation.</p>
+
+<p>For example, both “access”, “before save” and “after save” invoked for <code class="language-plaintext highlighter-rouge">Model.create()</code> have the same object passed in <code class="language-plaintext highlighter-rouge">ctx.hookState</code>.</p>
+
+<p>This way the hooks can pass state date between “before” and “after” hook.</p>
+
+<h4 id="hook-and-operation-specific-properties">Hook and operation specific properties</h4>
+
+<p>Besides the common properties listed above, each hook provides additional properties identifying the model instance(s) affected by the operation and the changes applied. The general rule is that the context provides either an <code class="language-plaintext highlighter-rouge">instance</code> property or a pair of <code class="language-plaintext highlighter-rouge">data</code> and <code class="language-plaintext highlighter-rouge">where</code> properties.</p>
+
+<h5 id="instance">instance</h5>
+
+<p>当操作作用于单个实例，对模型所有的属性执行update/create/delete的时候就会存在这个属性。例如 <code class="language-plaintext highlighter-rouge">PersistedModel.create()</code>.</p>
+
+<h5 id="where--data">where + data</h5>
+
+<p>当操作作用于多个实例（例如 PersistedModel.updateAll()）或者执行一个针对模型的部分属性进行的更新操作（例如 PersistedModel.prototype.updateAttributes()）,上下文会提供一个where用来显示哪些纪录会受到影响，另外还会提供一个data简单对象，它包含了要修改的数据。</p>
+
+<h5 id="isnewinstance">isNewInstance</h5>
+
+<p>这个属性用来区分是创建操作还是更新操作。</p>
+
+<div class="alert alert-warning" role="alert">
+  <p><i class="fa fa-warning"></i>
+  <b>Important:</b></p>
+
+  <p>只有某些connector支持<code class="language-plaintext highlighter-rouge">ctx.isNewInstance。有些connector没有定义。详见</code><a href="8880433.html">检查是否支持ctx.isNewInstance</a>。</p>
+
+</div>
+
+<h5 id="currentinstance">currentInstance</h5>
+
+<p>这个属性被针对单个实例进行的一些修改的操作提供。它包含了受影响的模型实例，它时只读的，你不应该去修改它。</p>
+
+<h3 id="检查是否支持ctxisnewinstance">检查是否支持ctx.isNewInstance</h3>
+
+<p><code class="language-plaintext highlighter-rouge">ctx.isNewInstance</code> 只支持memory, MongoDB, 和MySQL connectors。你可以在”after save”钩子中测试你的connector是否支持isNewInstance。</p>
+
+<p>例如：</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">MyModel</span><span class="p">.</span><span class="nx">observe</span><span class="p">(</span><span class="dl">'</span><span class="s1">after save</span><span class="dl">'</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">ctx</span><span class="p">,</span> <span class="nx">next</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">supports isNewInstance?</span><span class="dl">'</span><span class="p">,</span> <span class="nx">ctx</span><span class="p">.</span><span class="nx">isNewInstance</span> <span class="o">!==</span> <span class="kc">undefined</span><span class="p">);</span>
+  <span class="nx">next</span><span class="p">();</span>
+<span class="p">});</span>
+<span class="c1">// It's important to provide a value for the id property</span>
+<span class="c1">// Include also values for any required properties</span>
+<span class="nx">MyModel</span><span class="p">.</span><span class="nx">updateOrCreate</span><span class="p">({</span>
+  <span class="na">id</span><span class="p">:</span> <span class="mi">123</span>
+<span class="p">},</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">);</span>
+</code></pre></div></div>
+
+<h3 id="进入受影响的实例">进入受影响的实例</h3>
+
+<p>只作用于单个实例的操作(例如，所有的CRUD操作，除了 <code class="language-plaintext highlighter-rouge">PersistedModel.deleteAll</code> 和 <code class="language-plaintext highlighter-rouge">PersistedModel.updateAll</code>) 通常在上下文对象中提供了受影响的实例。然而，针对不同的操作这个实例被不同的属性提供，一个是可以修改的ctx.instance，一个是只读的ctx.currentInstance：</p>
+
+<table>
+  <tbody>
+    <tr>
+      <th>&nbsp;</th>
+      <th>before save</th>
+      <th>persist</th>
+      <th>after save</th>
+      <th>before delete</th>
+      <th>after delete</th>
+    </tr>
+    <tr>
+      <td><code>create</code></td>
+      <td><code>ctx.instance</code></td>
+      <td><code>ctx.currentInstance</code></td>
+      <td><code>ctx.instance</code></td>
+      <td>---</td>
+      <td>---</td>
+    </tr>
+    <tr>
+      <td><code>findOrCreate</code></td>
+      <td><code>ctx.instance</code></td>
+      <td><code>ctx.currentInstance</code></td>
+      <td><code>ctx.instance</code></td>
+      <td>---</td>
+      <td>---</td>
+    </tr>
+    <tr>
+      <td><code>updateOrCreate</code></td>
+      <td><em>n/a*</em></td>
+      <td><code>ctx.currentInstance</code></td>
+      <td><code>ctx.instance</code></td>
+      <td>---</td>
+      <td>---</td>
+    </tr>
+    <tr>
+      <td><code>updateAll</code></td>
+      <td><em>n/a</em></td>
+      <td><em>n/a</em></td>
+      <td><em>n/a</em></td>
+      <td>---</td>
+      <td>---</td>
+    </tr>
+    <tr>
+      <td><code>prototype.save</code></td>
+      <td><code>ctx.instance</code></td>
+      <td><code>ctx.currentInstance</code></td>
+      <td><code>ctx.instance</code></td>
+      <td>---</td>
+      <td>---</td>
+    </tr>
+    <tr>
+      <td><code>prototype.updateAttributes</code></td>
+      <td><code>ctx.currentInstance</code></td>
+      <td><code>ctx.currentInstance</code></td>
+      <td><code>ctx.instance</code></td>
+      <td>---</td>
+      <td>---</td>
+    </tr>
+    <tr>
+      <td>
+        <p><code>prototype.delete</code></p>
+      </td>
+      <td>---</td>
+      <td>---</td>
+      <td>---</td>
+      <td><code>ctx.instance</code></td>
+      <td><code>ctx.instance</code></td>
+    </tr>
+    <tr>
+      <td><code>deleteAll</code></td>
+      <td>---</td>
+      <td>---</td>
+      <td>---</td>
+      <td><em>n/a</em></td>
+      <td><em>n/a</em></td>
+    </tr>
+  </tbody>
+</table>
+
+<p> <code class="language-plaintext highlighter-rouge">updateOrCreate</code> 在before save钩子中不提供任何任何实例。因为我们不知道这个到底是更新还是创建。 we cannot tell whether there is any existing “currentInstance” affected by the operation.</p>
+
+<h2 id="钩子">钩子</h2>
+
+<p>LoopBack提供下面几种操作钩子：</p>
+
+<ul>
+  <li><a href="https://docs.strongloop.com/display/LB/Operation+hooks#Operationhooks-access">access</a></li>
+  <li><a href="https://docs.strongloop.com/display/LB/Operation+hooks#Operationhooks-beforesave">before save</a></li>
+  <li><a href="https://docs.strongloop.com/display/LB/Operation+hooks#Operationhooks-aftersave">after save</a></li>
+  <li><a href="https://docs.strongloop.com/display/LB/Operation+hooks#Operationhooks-beforedelete">before delete</a></li>
+  <li><a href="https://docs.strongloop.com/display/LB/Operation+hooks#Operationhooks-afterdelete">after delete</a></li>
+  <li><a href="https://docs.strongloop.com/display/LB/Operation+hooks#Operationhooks-loaded">loaded</a></li>
+  <li><a href="https://docs.strongloop.com/display/LB/Operation+hooks#Operationhooks-persist">persist</a></li>
+</ul>
+
+<p>下面的表格力列出了PersistedModel方法会触发哪些钩子。</p>
+
+<table>
+  <tbody>
+    <tr>
+      <th>Method name</th>
+      <th>Hooks invoked</th>
+    </tr>
+    <tr>
+      <td>
+        <p>all<br />find<br />findOne&nbsp;<br />findById&nbsp;&nbsp;<br />exists<br />count&nbsp;</p>
+      </td>
+      <td>access, loaded</td>
+    </tr>
+    <tr>
+      <td>create</td>
+      <td>before save, after save, loaded, persist</td>
+    </tr>
+    <tr>
+      <td>upsert (aka updateOrCreate)</td>
+      <td>access, before save, after save, loaded, persist</td>
+    </tr>
+    <tr>
+      <td>findOrCreate</td>
+      <td>access, before save*, after save*, loaded, persist</td>
+    </tr>
+    <tr>
+      <td>deleteAll (aka destroyAll)<br />deleteById&nbsp;(aka destroyById)</td>
+      <td>access, before delete, after delete</td>
+    </tr>
+    <tr>
+      <td>updateAll</td>
+      <td>access, before save, after save, persist</td>
+    </tr>
+    <tr>
+      <td>prototype.save</td>
+      <td>before save, after save, persist, loaded</td>
+    </tr>
+    <tr>
+      <td>prototype.delete</td>
+      <td>before delete, after delete</td>
+    </tr>
+    <tr>
+      <td>prototype.updateAttributes</td>
+      <td>before save, after save, loaded, persist</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><sup>*</sup> 当<code class="language-plaintext highlighter-rouge">findOrCreate</code> 找到了一个存在的模型，save钩子不会被触发。However, connectors providing atomic implementation may trigger <code class="language-plaintext highlighter-rouge">before save</code> hook even when the model is not created, since they cannot determine in advance whether the model will be created or not.</p>
+
+<h3 id="access">access</h3>
+
+<p>当查询模型的时候<code class="language-plaintext highlighter-rouge">access</code>钩子会被触发。 Observers可以修改查询，例如添加额外的查询条件。</p>
+
+<div class="alert alert-info" role="alert">
+  <p><i class="fa fa-info-circle"></i>
+<b>Note:</b></p>
+
+  <p>实例方法不会触发access钩子，因为这个钩子已经被从数据库加载模型实例的方法触发了。</p>
+
+  <p>例如，当你通过REST AP调用实例方法的时候，会调用两个命令：静态方法findById()（出发access钩子），另外一个是真正请求的实例方法。</p>
+
+</div>
+
+<p>上下文对象的属性</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">Model</code> - 是查询的那个模型</li>
+  <li><code class="language-plaintext highlighter-rouge">query</code> - 查询包含的字段，如<code class="language-plaintext highlighter-rouge">where，</code><code class="language-plaintext highlighter-rouge">include，</code><code class="language-plaintext highlighter-rouge">order</code>等。</li>
+</ul>
+
+<p>例子：</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">MyModel</span><span class="p">.</span><span class="nx">observe</span><span class="p">(</span><span class="dl">'</span><span class="s1">access</span><span class="dl">'</span><span class="p">,</span> <span class="kd">function</span> <span class="nx">logQuery</span><span class="p">(</span><span class="nx">ctx</span><span class="p">,</span> <span class="nx">next</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">Accessing %s matching %s</span><span class="dl">'</span><span class="p">,</span> <span class="nx">ctx</span><span class="p">.</span><span class="nx">Model</span><span class="p">.</span><span class="nx">modelName</span><span class="p">,</span> <span class="nx">ctx</span><span class="p">.</span><span class="nx">query</span><span class="p">.</span><span class="nx">where</span><span class="p">);</span>
+  <span class="nx">next</span><span class="p">();</span>
+<span class="p">});</span>
+
+<span class="nx">MyModel</span><span class="p">.</span><span class="nx">observe</span><span class="p">(</span><span class="dl">'</span><span class="s1">access</span><span class="dl">'</span><span class="p">,</span> <span class="kd">function</span> <span class="nx">limitToTenant</span><span class="p">(</span><span class="nx">ctx</span><span class="p">,</span> <span class="nx">next</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">ctx</span><span class="p">.</span><span class="nx">query</span><span class="p">.</span><span class="nx">where</span><span class="p">.</span><span class="nx">tenantId</span> <span class="o">=</span> <span class="nx">loopback</span><span class="p">.</span><span class="nx">getCurrentContext</span><span class="p">().</span><span class="nx">tenantId</span><span class="p">;</span>
+  <span class="nx">next</span><span class="p">();</span>
+<span class="p">});</span>
+</code></pre></div></div>
+
+<h3 id="before-save">before save</h3>
+
+<p>before save钩子在一个模型实例被创建或更新前触发。当下面的方法调用的时候会触发before save钩子：</p>
+
+<ul>
+  <li><a href="https://apidocs.strongloop.com/loopback/#persistedmodel-create">create()</a></li>
+  <li><a href="https://apidocs.strongloop.com/loopback/#persistedmodel-upsert">upsert()</a></li>
+  <li><a href="https://apidocs.strongloop.com/loopback/#persistedmodel-findorcreate">findOrCreate()</a>*</li>
+  <li><a href="https://apidocs.strongloop.com/loopback/#persistedmodel-updateall">updateAll()</a></li>
+  <li><a href="https://apidocs.strongloop.com/loopback/#persistedmodel-prototype-save">prototype.save()</a></li>
+  <li><a href="https://apidocs.strongloop.com/loopback/#persistedmodel-prototype-updateattributes">prototype.updateAttributes()</a></li>
+</ul>
+
+<p><sup>*</sup> 当<code class="language-plaintext highlighter-rouge">findOrCreate找到了存在的模型，before save钩子不会被触发。</code>
+However, connectors providing atomic implementation may trigger <code class="language-plaintext highlighter-rouge">before save</code> hook even when the model is not created, since they cannot determine in advance whether the model will be created or not.</p>
+
+<p>这个before save钩子在<a href="Validating-model-data.html">模型验证</a>函数前被触发。</p>
+
+<div class="alert alert-success" role="alert">
+  <p><i class="fa fa-check-square-o"></i>
+  <b>Tip:</b></p>
+
+  <p>因为before save钩子在验证起被调用前触发，所以你可以使用它给一些属性当值是空的时候赋上默认值。</p>
+
+</div>
+
+<p>取决于不同的方法触发before save钩子，上下文会有下面不同的属性：</p>
+
+<ul>
+  <li>所有针对单个模型的save
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">Model</code> - 哪个模型被保存</li>
+      <li><code class="language-plaintext highlighter-rouge">instance</code> - 哪个模型实例被保存</li>
+    </ul>
+  </li>
+  <li>可能对多个模型实例进行更新的操作
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">Model</code> - 哪个模型被保存</li>
+      <li><code class="language-plaintext highlighter-rouge">where</code> - 描述哪些实例会受到影响的where过滤器</li>
+      <li><code class="language-plaintext highlighter-rouge">data</code> - 应用于更新的数据</li>
+      <li><code class="language-plaintext highlighter-rouge">currentInstance</code> - 受影响的实例, 更多信息见<a href="8880433.html">Triggering with prototype.updateAttributes</a>。</li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="ctxisnewinstance">ctx.isNewInstance</h4>
+
+<p>当ctx.instance是存的时候，before save钩子提供了ctx.isNewInstance，它的值如下：</p>
+
+<ul>
+  <li>为true 表示是创建操作</li>
+  <li>为false 表示是更新操作</li>
+  <li>如果是<code class="language-plaintext highlighter-rouge">updateOrCreate</code>, <code class="language-plaintext highlighter-rouge">prototype.save</code>,  <code class="language-plaintext highlighter-rouge">prototype.updateAttributes</code>, 和 <code class="language-plaintext highlighter-rouge">updateAll </code>operations它的值是undefined</li>
+</ul>
+
+<h4 id="在before-save钩子中操纵模型数据">在“before save”钩子中操纵模型数据</h4>
+
+<p>上面讲到了，上下文对象提供了instance属性，data属性和where属性。在ctx.instance中暴露出一个完整的模型实例，能让我们调用这个模型实例的人和方法（包括自定义方法，例如可以在钩子里面调用oreder.recalculateShippingAndTaxes()）。That’s why LoopBack CRUD operation provide the instance in as many cases as possible.</p>
+
+<p>There are two notable exception when it is not feasible to provide the instance object:</p>
+
+<ol>
+  <li><code class="language-plaintext highlighter-rouge">PersistedModel.updateAll</code> 更新匹配查询条件的多个实例。LoopBack不需要从数据里面加载他们的数据， it’s up to the database to find these instances and apply necessary changes. </li>
+  <li><code class="language-plaintext highlighter-rouge">PersistedModel.updateAttributes</code> 执行部分更新，只修改模型的部分属性。LoopBack会有一个模型实例，它需要知道哪些模型属性要被修改并且持续化到数据库里面去。Passing the operation payload in <code class="language-plaintext highlighter-rouge">ctx.data</code> - 是一个包含了哪些要修改的属性的简单对象 - 这样就很容易在钩子里面实现对要修改属性的添加／删除。可以通过ctx.curerntInstance获得这个要修改的模型实例，注意了ctx.currentInstance是只读的。</li>
+</ol>
+
+<h4 id="examples">Examples</h4>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">MyModel</span><span class="p">.</span><span class="nx">observe</span><span class="p">(</span><span class="dl">'</span><span class="s1">before save</span><span class="dl">'</span><span class="p">,</span> <span class="kd">function</span> <span class="nx">updateTimestamp</span><span class="p">(</span><span class="nx">ctx</span><span class="p">,</span> <span class="nx">next</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">if</span> <span class="p">(</span><span class="nx">ctx</span><span class="p">.</span><span class="nx">instance</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">ctx</span><span class="p">.</span><span class="nx">instance</span><span class="p">.</span><span class="nx">updated</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Date</span><span class="p">();</span>
+  <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+    <span class="nx">ctx</span><span class="p">.</span><span class="nx">data</span><span class="p">.</span><span class="nx">updated</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Date</span><span class="p">();</span>
+  <span class="p">}</span>
+  <span class="nx">next</span><span class="p">();</span>
+<span class="p">});</span>
+
+<span class="nx">MyModel</span><span class="p">.</span><span class="nx">observe</span><span class="p">(</span><span class="dl">'</span><span class="s1">before save</span><span class="dl">'</span><span class="p">,</span> <span class="kd">function</span> <span class="nx">computePercentage</span><span class="p">(</span><span class="nx">ctx</span><span class="p">,</span> <span class="nx">next</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">if</span> <span class="p">(</span><span class="nx">ctx</span><span class="p">.</span><span class="nx">instance</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">ctx</span><span class="p">.</span><span class="nx">instance</span><span class="p">.</span><span class="nx">percentage</span> <span class="o">=</span> <span class="mi">100</span> <span class="o">*</span> <span class="nx">ctx</span><span class="p">.</span><span class="nx">instance</span><span class="p">.</span><span class="nx">part</span> <span class="o">/</span> <span class="nx">ctx</span><span class="p">.</span><span class="nx">instance</span><span class="p">.</span><span class="nx">total</span><span class="p">;</span>
+  <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">ctx</span><span class="p">.</span><span class="nx">data</span><span class="p">.</span><span class="nx">part</span> <span class="o">&amp;&amp;</span> <span class="nx">ctx</span><span class="p">.</span><span class="nx">data</span><span class="p">.</span><span class="nx">total</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">ctx</span><span class="p">.</span><span class="nx">data</span><span class="p">.</span><span class="nx">percentage</span> <span class="o">=</span> <span class="mi">100</span> <span class="o">*</span> <span class="nx">ctx</span><span class="p">.</span><span class="nx">data</span><span class="p">.</span><span class="nx">part</span> <span class="o">/</span> <span class="nx">ctx</span><span class="p">.</span><span class="nx">data</span><span class="p">.</span><span class="nx">total</span><span class="p">;</span>
+  <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">ctx</span><span class="p">.</span><span class="nx">data</span><span class="p">.</span><span class="nx">part</span> <span class="o">||</span> <span class="nx">ctx</span><span class="p">.</span><span class="nx">data</span><span class="p">.</span><span class="nx">total</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// either report an error or fetch the missing properties from DB</span>
+  <span class="p">}</span>
+  <span class="nx">next</span><span class="p">();</span>
+<span class="p">});</span>
+</code></pre></div></div>
+
+<h4 id="删除不需要的属性">删除不需要的属性</h4>
+
+<p>删除（unset）一个模型实例的属性，, it is not enough the set its value to undefined and/or delete the property. One has to call <code class="language-plaintext highlighter-rouge">unsetAttribute(name)</code> instead. However, don’t forget to handle the case where the context has a data property instead! Since the data object is a plain object, you can remove properties the usual way via delete operator.</p>
+
+<p>Example:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">MyModel</span><span class="p">.</span><span class="nx">observe</span><span class="p">(</span><span class="dl">'</span><span class="s1">before save</span><span class="dl">'</span><span class="p">,</span> <span class="kd">function</span> <span class="nx">removeUnwantedField</span><span class="p">(</span><span class="nx">ctx</span><span class="p">,</span> <span class="nx">next</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">if</span> <span class="p">(</span><span class="nx">ctx</span><span class="p">.</span><span class="nx">instance</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">ctx</span><span class="p">.</span><span class="nx">instance</span><span class="p">.</span><span class="nx">unsetAttribute</span><span class="p">(</span><span class="dl">'</span><span class="s1">unwantedField</span><span class="dl">'</span><span class="p">);</span>
+  <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+    <span class="k">delete</span> <span class="nx">ctx</span><span class="p">.</span><span class="nx">data</span><span class="p">.</span><span class="nx">unwantedField</span><span class="p">;</span><span class="err"> </span>
+  <span class="p">}</span>
+  <span class="nx">next</span><span class="p">();</span>
+<span class="p">});</span>
+</code></pre></div></div>
+
+<p>This completely removes the field and prevents inserting spurious data into the database.</p>
+
+<h3 id="after-save">after save</h3>
+
+<p>after save钩子在模型修改成功并 持续化到数据库后触发，下面的方法会触发after save钩子：</p>
+
+<ul>
+  <li><a href="https://apidocs.strongloop.com/loopback/#persistedmodel-create">create()</a></li>
+  <li><a href="https://apidocs.strongloop.com/loopback/#persistedmodel-upsert">upsert()</a></li>
+  <li><a href="https://apidocs.strongloop.com/loopback/#persistedmodel-findorcreate">findOrCreate()</a>*</li>
+  <li><a href="https://apidocs.strongloop.com/loopback/#persistedmodel-updateall">updateAll()</a></li>
+  <li><a href="https://apidocs.strongloop.com/loopback/#persistedmodel-prototype-save">prototype.save()</a></li>
+  <li><a href="https://apidocs.strongloop.com/loopback/#persistedmodel-prototype-updateattributes">prototype.updateAttributes()</a></li>
+</ul>
+
+<p><sup>*</sup> 当<code class="language-plaintext highlighter-rouge">findOrCreate</code>找到了存在的模型，after save钩子不会被触发。However, connectors providing atomic implementation may trigger <code class="language-plaintext highlighter-rouge">before save</code> hook even when the model is not created, since they cannot determine in advance whether the model will be created or not.</p>
+
+<p>依赖于触发这个钩子的不同方法，上下文对象提供不同的属性：</p>
+
+<ul>
+  <li>对单个模型的更新：
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">Model</code> - 要被保存的模型的构造函数</li>
+      <li>
+        <p><code class="language-plaintext highlighter-rouge">instance</code> - 要被保存的模型实例。The value is an instance of <code class="language-plaintext highlighter-rouge">Model</code> class and contains updated values computed by datastore (for example, auto-generated ID).</p>
+
+        <div class="alert alert-info" role="alert">
+          <p><i class="fa fa-info-circle"></i>
+<b>Note:</b></p>
+
+          <p>The after save hook returns the changes made to <code class="language-plaintext highlighter-rouge">ctx.instance</code> to the caller (REST client), but does not persist them to the database!</p>
+
+        </div>
+      </li>
+    </ul>
+  </li>
+</ul>
+<p>&lt;/div&gt;</p>
+
+<ul>
+  <li>通过Model.updateAll对多个模型实例进行更新：
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">Model</code> - 要被保存的模型的构造函数</li>
+      <li><code class="language-plaintext highlighter-rouge">where</code> - 描述哪些模型实例要被更新的where过滤器</li>
+      <li>
+        <p><code class="language-plaintext highlighter-rouge">data</code>- 要被应用于更新的那部分数据</p>
+
+        <div class="alert alert-warning" role="alert">
+          <p><i class="fa fa-warning"></i>
+  <b>Important:</b></p>
+
+          <p>你不能完全依据 “where”来判断哪些模型实例受到了影响。想想下面这个调用：</p>
+
+          <p><code class="language-plaintext highlighter-rouge">MyModel.updateAll({ color: 'yellow' }, { color: 'red' }, cb);</code></p>
+
+          <p>“after save”被触发饿，但是可能没有纪录会匹配到<code class="language-plaintext highlighter-rouge">{ color: 'yellow' }</code>.</p>
+
+        </div>
+      </li>
+    </ul>
+  </li>
+</ul>
+<p>&lt;/div&gt;</p>
+
+<p>after save钩子提供<code class="language-plaintext highlighter-rouge">ctx.isNewInstance</code>属性 whenever <code class="language-plaintext highlighter-rouge">ctx.instance</code> is set, with the following values:</p>
+
+<ul>
+  <li>ture代表是创建操作</li>
+  <li>false代表是更新操作</li>
+  <li><code class="language-plaintext highlighter-rouge">updateOrCreate</code>, <code class="language-plaintext highlighter-rouge">prototype.save</code>, 和 <code class="language-plaintext highlighter-rouge">prototype.updateAttributes需要connector告知这是一个新建模型实例的操作还是一个针对已经存在的模型实例的操作。当connector提供这个信息的时候，</code><code class="language-plaintext highlighter-rouge">ctx.isNewInstance</code>的值是true或者false。当connector不支持isNewInstance的时候它的值是undefined。</li>
+</ul>
+
+<div class="alert alert-warning" role="alert">
+  <p><i class="fa fa-warning"></i>
+  <b>Important:</b></p>
+
+  <p>只有某些connector支持<code class="language-plaintext highlighter-rouge">ctx.isNewInstance。有些connector没有定义。详见</code><a href="8880433.html">检查是否支持ctx.isNewInstance</a>。</p>
+
+</div>
+
+<p>Examples:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">MyModel</span><span class="p">.</span><span class="nx">observe</span><span class="p">(</span><span class="dl">'</span><span class="s1">after save</span><span class="dl">'</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">ctx</span><span class="p">,</span> <span class="nx">next</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">if</span> <span class="p">(</span><span class="nx">ctx</span><span class="p">.</span><span class="nx">instance</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">Saved %s#%s</span><span class="dl">'</span><span class="p">,</span> <span class="nx">ctx</span><span class="p">.</span><span class="nx">Model</span><span class="p">.</span><span class="nx">modelName</span><span class="p">,</span> <span class="nx">ctx</span><span class="p">.</span><span class="nx">instance</span><span class="p">.</span><span class="nx">id</span><span class="p">);</span>
+  <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">Updated %s matching %j</span><span class="dl">'</span><span class="p">,</span>
+      <span class="nx">ctx</span><span class="p">.</span><span class="nx">Model</span><span class="p">.</span><span class="nx">pluralModelName</span><span class="p">,</span>
+      <span class="nx">ctx</span><span class="p">.</span><span class="nx">where</span><span class="p">);</span>
+  <span class="p">}</span>
+  <span class="nx">next</span><span class="p">();</span>
+<span class="p">});</span>
+</code></pre></div></div>
+
+<h3 id="before-delete">before delete</h3>
+
+<p>before delete钩子在模型被从一个数据源中删除之前触发，在下面的命令执行后会触发这个钩子：</p>
+
+<ul>
+  <li><a href="https://apidocs.strongloop.com/loopback/#persistedmodel-destroyall">destroyAll()</a> (<code class="language-plaintext highlighter-rouge">deleteAll()</code>)</li>
+  <li><a href="https://apidocs.strongloop.com/loopback/#persistedmodel-destroybyid">destroyById() </a>(<code class="language-plaintext highlighter-rouge">deleteById()</code>)</li>
+  <li><a href="https://apidocs.strongloop.com/loopback/#persistedmodel-prototype-destroy">prototype.destroy()</a> (<code class="language-plaintext highlighter-rouge">prototype.delete()</code>)</li>
+</ul>
+
+<div class="alert alert-warning" role="alert">
+  <p><i class="fa fa-warning"></i>
+  <b>Important:</b></p>
+
+  <p>before delete钩子不会收到一个要被删除的实例的id列表，因为有些数据库不提供这样的信息。然而，当你只是删除一个模型实例的时候，这个钩子会有一个ctx.instance，它的值就是被删除的那个模型实例。</p>
+
+</div>
+
+<p>上下文属性</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">Model</code> - 模型的构造函数</li>
+  <li><code class="language-plaintext highlighter-rouge">where</code> - 描述哪些实例要被删除的where过滤器</li>
+</ul>
+
+<p>例子：</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">MyModel</span><span class="p">.</span><span class="nx">observe</span><span class="p">(</span><span class="dl">'</span><span class="s1">before delete</span><span class="dl">'</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">ctx</span><span class="p">,</span> <span class="nx">next</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">Going to delete %s matching %j</span><span class="dl">'</span><span class="p">,</span>
+    <span class="nx">ctx</span><span class="p">.</span><span class="nx">Model</span><span class="p">.</span><span class="nx">pluralModelName</span><span class="p">,</span>
+    <span class="nx">ctx</span><span class="p">.</span><span class="nx">where</span><span class="p">);</span>
+  <span class="nx">next</span><span class="p">();</span>
+<span class="p">});</span>
+</code></pre></div></div>
+
+<p>可以基于某些条件拒绝删除，通过调用有error参数的next()可以放弃删除操作。例如：</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">if</span> <span class="p">(</span><span class="nx">subscriptions</span><span class="p">.</span><span class="nx">length</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+  <span class="c1">//Stop the deletion of this Client</span>
+  <span class="kd">var</span> <span class="nx">err</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Error</span><span class="p">(</span><span class="dl">"</span><span class="s2">Client has an active subscription, cannot delete</span><span class="dl">"</span><span class="p">);</span>
+  <span class="nx">err</span><span class="p">.</span><span class="nx">statusCode</span> <span class="o">=</span> <span class="mi">400</span><span class="p">;</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">err</span><span class="p">.</span><span class="nx">toString</span><span class="p">());</span>
+  <span class="nx">next</span><span class="p">(</span><span class="nx">err</span><span class="p">);</span>
+<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+  <span class="nx">next</span><span class="p">();</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="after-delete">after delete</h3>
+
+<div class="alert alert-warning" role="alert">
+  <p><i class="fa fa-warning"></i>
+  <b>Important:</b></p>
+
+  <p>after delete钩子不会收到一个要被删除的实例的id列表，因为有些数据库不提供这样的信息。然而，当你只是删除一个模型实例的时候，这个钩子会有一个ctx.instance，它的值就是被删除的那个模型实例。</p>
+
+</div>
+
+<p>after delete钩子在模型被从一个数据源中删除之后触发，在下面的命令执行后会触发这个钩子：</p>
+
+<ul>
+  <li><a href="https://apidocs.strongloop.com/loopback/#persistedmodel-destroyall">destroyAll()</a> (<code class="language-plaintext highlighter-rouge">deleteAll()</code>)</li>
+  <li><a href="https://apidocs.strongloop.com/loopback/#persistedmodel-destroybyid">destroyById() </a>(<code class="language-plaintext highlighter-rouge">deleteById()</code>)</li>
+  <li><a href="https://apidocs.strongloop.com/loopback/#persistedmodel-prototype-destroy">prototype.destroy()</a> (<code class="language-plaintext highlighter-rouge">prototype.delete()</code>)</li>
+</ul>
+
+<p>上下文属性</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">Model</code> - 模型的构造函数</li>
+  <li><code class="language-plaintext highlighter-rouge">where</code> - 描述哪些实例要被删除的where过滤器</li>
+</ul>
+
+<p>例子：</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">MyModel</span><span class="p">.</span><span class="nx">observe</span><span class="p">(</span><span class="dl">'</span><span class="s1">after delete</span><span class="dl">'</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">ctx</span><span class="p">,</span> <span class="nx">next</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">Deleted %s matching %j</span><span class="dl">'</span><span class="p">,</span>
+    <span class="nx">ctx</span><span class="p">.</span><span class="nx">Model</span><span class="p">.</span><span class="nx">pluralModelName</span><span class="p">,</span>
+    <span class="nx">ctx</span><span class="p">.</span><span class="nx">where</span><span class="p">);</span>
+  <span class="nx">next</span><span class="p">();</span>
+<span class="p">});</span>
+</code></pre></div></div>
+
+<h3 id="loaded">loaded</h3>
+
+<p>这个钩子被下面的PersistedModel所触发：</p>
+
+<ul>
+  <li><a href="https://apidocs.strongloop.com/loopback/#persistedmodel-find">find()</a></li>
+  <li><a href="https://apidocs.strongloop.com/loopback/#persistedmodel-findone">findOne() </a></li>
+  <li><a href="https://apidocs.strongloop.com/loopback/#persistedmodel-findbyid">findById() </a></li>
+  <li><a href="https://apidocs.strongloop.com/loopback/#persistedmodel-exists">exists()</a></li>
+  <li><a href="https://apidocs.strongloop.com/loopback/#persistedmodel-count">count() </a></li>
+  <li><a href="https://apidocs.strongloop.com/loopback/#persistedmodel-create">create()</a></li>
+  <li><a href="https://apidocs.strongloop.com/loopback/#persistedmodel-upsert">upsert()</a> (same as <code class="language-plaintext highlighter-rouge">updateOrCreate()</code>)</li>
+  <li><a href="https://apidocs.strongloop.com/loopback/#persistedmodel-findorcreate">findOrCreate()</a>*</li>
+  <li><a href="https://apidocs.strongloop.com/loopback/#persistedmodel-prototype-save">prototype.save()</a></li>
+  <li><a href="https://apidocs.strongloop.com/loopback/#persistedmodel-prototype-updateattributes">prototype.updateAttributes()</a></li>
+</ul>
+
+<div class="alert alert-warning" role="alert">
+  <p><i class="fa fa-warning"></i>
+  <b>Important:</b></p>
+
+  <p>By default, <code class="language-plaintext highlighter-rouge">create</code> and <code class="language-plaintext highlighter-rouge">updateAttributes</code> do not apply database updates to the model instance returned to the callback, therefore any changes made by “loaded” hooks are discarded. To change this behavior, set a per-model option <code class="language-plaintext highlighter-rouge">updateOnLoad: true</code>.</p>
+
+</div>
+
+<p>这个钩子在connector获取数据之后，通过这些数据创建模型实例之前发生。因此可以使用这个钩子解密数据。注意：这个钩子是被真正的数据库数据所触发的，不是一个模型实例。</p>
+
+<p>上下文属性</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">data</code> - data被connector返回（是从数据中加载到的）</li>
+</ul>
+
+<h3 id="persist">persist</h3>
+
+<p>持续化数据到数据库的方法都会触发这个钩子，方法如下：</p>
+
+<ul>
+  <li><a href="https://apidocs.strongloop.com/loopback/#persistedmodel-create">create()</a></li>
+  <li><a href="https://apidocs.strongloop.com/loopback/#persistedmodel-upsert">upsert()</a> (same as <code class="language-plaintext highlighter-rouge">updateOrCreate()</code>)</li>
+  <li><a href="https://apidocs.strongloop.com/loopback/#persistedmodel-findorcreate">findOrCreate()</a>*</li>
+  <li><a href="https://apidocs.strongloop.com/loopback/#persistedmodel-prototype-save">prototype.save()</a></li>
+  <li><a href="https://apidocs.strongloop.com/loopback/#persistedmodel-prototype-updateattributes">prototype.updateAttributes()</a></li>
+  <li><a href="https://apidocs.strongloop.com/loopback/#persistedmodel-updateall">updateAll()</a></li>
+</ul>
+
+<p>不要把这个钩子和before save钩子混淆了：</p>
+
+<ul>
+  <li><strong>before save</strong> – 使用这个钩子观察（操作）模型实例 （例如，当设置了国家代码但是没有设置国家名，那么添加业务逻辑去设置国家名，也就是在这你能修改模型的任何字段）。</li>
+  <li><strong>persist</strong> – 使用这个钩子观察（操作）即将要持续化到数据库里面去的数据（例如，在一个值被持续化到数据库的时候加密它，也就是你这能操作这些即将持续化去数据库的数据，不能添加任何其他属性及其值）。</li>
+</ul>
+
+<p>During <code class="language-plaintext highlighter-rouge">create</code> the updates applied through <code class="language-plaintext highlighter-rouge">persist</code> hook are reflected into the database, but the same updates are NOT reflected in the <code class="language-plaintext highlighter-rouge">instance</code> object obtained in callback of <code class="language-plaintext highlighter-rouge">create</code>.</p>
+
+<p>Secondly, for connectors implementing atomic <code class="language-plaintext highlighter-rouge">findOrCreate</code>, a new instance of the object  is created every time, even if an existing record is later found in the database. So:</p>
+
+<ul>
+  <li><a href="http://ctx.data.id/"><code class="language-plaintext highlighter-rouge">ctx.data.id</code></a> 和 <a href="http://ctx.currentinstance.id/"><code class="language-plaintext highlighter-rouge">ctx.currentInstance.id</code></a> 都设置成一个new ID.</li>
+  <li><code class="language-plaintext highlighter-rouge">ctx.isNewInstance</code> 的值为true</li>
+</ul>
+
+<p>上下文属性</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">data</code> - 即将要被发送至connector的数据（即将要保存到数据里面去的数据）</li>
+  <li><code class="language-plaintext highlighter-rouge">currentInstance</code> - 受影响的模型实例</li>
+  <li><code class="language-plaintext highlighter-rouge">isNewInstance</code> - 如下.</li>
+</ul>
+
+<p><code class="language-plaintext highlighter-rouge">ctx.isNewInstance的值如下：</code></p>
+
+<ul>
+  <li>True表示是创建操作</li>
+  <li>False表示是更新操作</li>
+  <li>操作为updateOrCreate, prototype.save, prototype.updateAttributes, 和 updateAll operations时值为undefined</li>
+</ul>
+
+<h2 id="afterinitialize钩子">afterInitialize钩子</h2>
+
+<div class="alert alert-warning" role="alert">
+  <p><i class="fa fa-warning"></i>
+  <b>Important:</b></p>
+
+  <p><code class="language-plaintext highlighter-rouge">afterInitialize严格来说不是一个操作钩子。事实上它是唯一一个没有过时的</code><a href="https://docs.strongloop.com/display/LB/Model+hooks">模型钩子</a>。</p>
+
+  <p>它是一个同步方法没有对应的callback函数：你不需要在你的逻辑代码之后调用next()。</p>
+
+</div>
+
+<p>这个钩子在模型被初始化之后触发。</p>
+
+<h3 id="例子">例子</h3>
+
+<p><strong>/common/models/coffee-shop.js</strong></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>...
+CoffeeShop.afterInitialize = function() {
+  //your logic goes here
+};
+...
+</code></pre></div></div>
+
+<p>大多数的操作会在真正是想一个操作之前初始化一个模型，但是也有少数的操作不会触发这个初始化事件，例如HTTP请求exists，count，批量更新。</p>
+
+<h2 id="迁移指南">迁移指南</h2>
+
+<p>下面的表格列出了哪个新的钩子用来替代过时了的<a href="https://docs.strongloop.com/display/LB/Model+hooks">模型钩子</a>：</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Model hook</th>
+      <th>Operation hook to use instead</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>beforeValidate</td>
+      <td>
+        <p>before save</p>
+      </td>
+    </tr>
+    <tr>
+      <td>afterValidate</td>
+      <td>persist</td>
+    </tr>
+    <tr>
+      <td>beforeCreate</td>
+      <td>before save</td>
+    </tr>
+    <tr>
+      <td>afterCreate</td>
+      <td>after save</td>
+    </tr>
+    <tr>
+      <td>beforeSave</td>
+      <td>before save</td>
+    </tr>
+    <tr>
+      <td>afterSave</td>
+      <td>after save</td>
+    </tr>
+    <tr>
+      <td>beforeUpdate</td>
+      <td>before save</td>
+    </tr>
+    <tr>
+      <td>afterUpdate</td>
+      <td>after save</td>
+    </tr>
+    <tr>
+      <td>beforeDestroy</td>
+      <td>before delete</td>
+    </tr>
+    <tr>
+      <td>afterDestroy</td>
+      <td>after delete</td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+    <div class="tags">
+      
+    </div>
+</div>
+
+<hr class="shaded"/>
+
+<footer id="container">
+            <div class="row">
+                <div class="col-md-6 footer-left">
+               &copy;2021 IBM / StrongLoop. All rights reserved. <br />
+ Site last generated: Mar 22, 2021
+              </div>
+              <div class="col-md-6 footer-right">
+                <p><img src="https://loopback.io/images/company_logo.png" alt="Company logo"/></p>
+              </div>
+            </div>
+</footer>
+
+
+        </div>
+        <!-- /.row -->
+</div>
+<!-- /.container -->
+    </div>
+</body>
+
+</html>

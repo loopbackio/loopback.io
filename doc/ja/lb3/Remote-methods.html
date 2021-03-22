@@ -1,0 +1,3578 @@
+<!DOCTYPE html>
+<head>
+    
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="リモートメソッドは、独自のRESTエンドポイントを通じて公開される、モデルの静的メソッドです。">
+  <meta name="keywords" content="modelsapplication_logic,  LoopBack">
+  <title>リモートメソッド | LoopBack Documentation</title>
+  <link rel="stylesheet" href="/css/syntax.css">
+
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/modern-business.css">
+    <link rel="stylesheet" href="/css/lavish-bootstrap.css">
+    <link rel="stylesheet" href="/css/customstyles.css">
+    <link rel="stylesheet" href="/css/theme-v4.css">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-150726441-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-150726441-2');
+</script>
+
+
+    <!-- github star button -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.3.0/anchor.min.js"></script>
+    <script src="/js/toc.js"></script>
+    <script src="/js/customscripts.js"></script>
+
+    <link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    
+
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-lg navbar-brand no_icon" href="/doc/index.html">
+              <img class="no_icon" style="width:147px;" src="/images/branding/logo/white/loopback.svg">&nbsp;<span class="projectTitle"></span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- entries without drop-downs appear here -->
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">API Docs<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        <!-- page.url is /doc/ja/lb3/Remote-methods.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://loopback.io/doc/en/lb4/apidocs.index.html" target="_blank">LoopBack 4</a></li>
+                          
+                        
+                        <!-- page.url is /doc/ja/lb3/Remote-methods.html .... folderitem.url is  -->
+                          
+                            <li><a href="http://apidocs.loopback.io" target="_blank">LoopBack 3.x</a></li>
+                          
+                        
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">View<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        <!-- page.url is /doc/ja/lb3/Remote-methods.html .... folderitem.url is / -->
+                          
+                            <li><a href="/">LoopBack Overview</a></li>
+                          
+                        
+                        <!-- page.url is /doc/ja/lb3/Remote-methods.html .... folderitem.url is /doc/en/lb4/ -->
+                          
+                            <li><a href="/doc/en/lb4/">LoopBack 4</a></li>
+                          
+                        
+                        <!-- page.url is /doc/ja/lb3/Remote-methods.html .... folderitem.url is /doc/en/lb3/ -->
+                          
+                            <li><a href="/doc/en/lb3/">LoopBack 3.x</a></li>
+                          
+                        
+                        <!-- page.url is /doc/ja/lb3/Remote-methods.html .... folderitem.url is /doc/en/lb2/ -->
+                          
+                            <li><a href="/doc/en/lb2/">LoopBack 2.x</a></li>
+                          
+                        
+                        <!-- page.url is /doc/ja/lb3/Remote-methods.html .... folderitem.url is /doc/en/community/ -->
+                          
+                            <li><a href="/doc/en/community/">Community projects</a></li>
+                          
+                        
+                        <!-- page.url is /doc/ja/lb3/Remote-methods.html .... folderitem.url is /doc/en/contrib/ -->
+                          
+                            <li><a href="/doc/en/contrib/">Contributing to LoopBack</a></li>
+                          
+                        
+                        <!-- page.url is /doc/ja/lb3/Remote-methods.html .... folderitem.url is /doc/en/sec/ -->
+                          
+                            <li><a href="/doc/en/sec/">Security advisories</a></li>
+                          
+                        
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Resources<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        <!-- page.url is /doc/ja/lb3/Remote-methods.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://github.com/strongloop/loopback.io" target="_blank">Docs Github Repo</a></li>
+                          
+                        
+                        <!-- page.url is /doc/ja/lb3/Remote-methods.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://groups.google.com/forum/#!forum/loopbackjs-announcements" target="_blank">Announcements Mailing List</a></li>
+                          
+                        
+                        <!-- page.url is /doc/ja/lb3/Remote-methods.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://groups.google.com/forum/#!forum/loopbackjs" target="_blank">Developer Forum</a></li>
+                          
+                        
+                        <!-- page.url is /doc/ja/lb3/Remote-methods.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://join.slack.com/t/loopbackio/shared_invite/zt-8lbow73r-SKAKz61Vdao~_rGf91pcsw" target="_blank">LoopBack on Slack</a></li>
+                          
+                        
+                        <!-- page.url is /doc/ja/lb3/Remote-methods.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://stackoverflow.com/questions/tagged/strongloop+or+loopback4+or+loopbackjs" target="_blank">LoopBack on Stack Overflow</a></li>
+                          
+                        
+                        <!-- page.url is /doc/ja/lb3/Remote-methods.html .... folderitem.url is  -->
+                          
+                            <li><a href="https://strongloop.com/strongblog/tag_LoopBack.html" target="_blank">StrongLoop Blog - LoopBack</a></li>
+                          
+                        
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Translations<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        <!-- page.url is /doc/ja/lb3/Remote-methods.html .... folderitem.url is /doc/es/lb2/ -->
+                          
+                            <li><a href="/doc/es/lb2/">Español (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/ja/lb3/Remote-methods.html .... folderitem.url is /doc/es/lb4/ -->
+                          
+                            <li><a href="/doc/es/lb4/">Español (v4)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/ja/lb3/Remote-methods.html .... folderitem.url is /doc/fr/lb2/ -->
+                          
+                            <li><a href="/doc/fr/lb2/">Français (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/ja/lb3/Remote-methods.html .... folderitem.url is /doc/fr/lb4/ -->
+                          
+                            <li><a href="/doc/fr/lb4/">Français (v4)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/ja/lb3/Remote-methods.html .... folderitem.url is /doc/ko/lb2/ -->
+                          
+                            <li><a href="/doc/ko/lb2/">한국어 (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/ja/lb3/Remote-methods.html .... folderitem.url is /doc/ko/lb3/ -->
+                          
+                            <li><a href="/doc/ko/lb3/">한국어 (v3)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/ja/lb3/Remote-methods.html .... folderitem.url is /doc/pt-br/lb2/ -->
+                          
+                            <li><a href="/doc/pt-br/lb2/">Português (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/ja/lb3/Remote-methods.html .... folderitem.url is /doc/pt-br/lb4/ -->
+                          
+                            <li><a href="/doc/pt-br/lb4/">Português (v4)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/ja/lb3/Remote-methods.html .... folderitem.url is /doc/ja/lb2/ -->
+                          
+                            <li><a href="/doc/ja/lb2/">日本語 (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/ja/lb3/Remote-methods.html .... folderitem.url is /doc/ja/lb3/ -->
+                          
+                            <li class="dropdownActive"><a href="/doc/ja/lb3/">日本語 (v3)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/ja/lb3/Remote-methods.html .... folderitem.url is /doc/ja/lb4/ -->
+                          
+                            <li><a href="/doc/ja/lb4/">日本語 (v4)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/ja/lb3/Remote-methods.html .... folderitem.url is /doc/ru/lb2/ -->
+                          
+                            <li><a href="/doc/ru/lb2/">Pусский (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/ja/lb3/Remote-methods.html .... folderitem.url is /doc/zh/lb2/ -->
+                          
+                            <li><a href="/doc/zh/lb2/">中文 (v2)</a></li>
+                          
+                        
+                        <!-- page.url is /doc/ja/lb3/Remote-methods.html .... folderitem.url is /doc/zh/lb4/ -->
+                          
+                            <li><a href="/doc/zh/lb4/">中文 (v4)</a></li>
+                          
+                        
+                    </ul>
+                </li>
+                
+                
+                
+                <li>
+                    <form id="search" name="search" class="input-group lb-search" action="/search" method="GET">
+                        <input type="text" class="form-control search-bar" placeholder="Search (powered by Watson)" name="q">
+                        
+                          <input type="hidden" name="sidebar" value="ja_lb3_sidebar">
+                        
+                        <div class="input-group-btn">
+                            <button type="submit" class="btn btn-default" aria-label="search">
+                              <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                            </button>
+                        </div>
+                      </form>
+                </li>
+            </ul>
+        </div>
+      </div>
+</nav>
+
+<!-- Page Content -->
+<div class="container">
+    <!-- Content Row -->
+    <div class="row">
+        <!-- Sidebar Column -->
+        <nav class="col-md-3 sidebar-col">
+          
+
+
+
+
+
+
+
+
+
+
+
+<!-- NOTE: sidebar = site.data.sidebars.mydoc_sidebar.entries -->
+<div class="sidebarTitle"><a href="/doc/ja/lb3/index.html">LoopBack 3.x</a></div>
+<ul id="mysidebar" class="nav-list">
+  
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Installation.html">インストール</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Installation-troubleshooting.html">Installation troubleshooting</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="3.0-Release-Notes.html">3.0 Release Notes</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Migrating-to-3.0.html">Migrating apps to v3</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="LoopBack-core-concepts.html">LoopBackの核となる概念</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Routing.html">ルーティング</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="LoopBack-FAQ.html">LoopBack FAQ</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Glossary.html">用語集</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="StrongLoop-Labs.html">StrongLoop Labs</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Getting-started-with-LoopBack.html">LoopBack を始めよう</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Create-a-simple-API.html">Create a simple API</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Use-API-Explorer.html">Use API Explorer</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Connect-your-API-to-a-data-source.html">Connect your API to a data source</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Extend-your-API.html">Extend your API</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Add-a-static-web-page.html">Add a static web page</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Add-a-custom-Express-route.html">Add a custom Express route</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Next-steps.html">Next steps</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Getting-started-part-II.html">Getting started part II</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Introducing-the-Coffee-Shop-Reviews-app.html">Introducing the Coffee Shop Reviews app</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Create-new-data-source.html">Create new data source</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Create-new-models.html">Create new models</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Define-model-relations.html">Define model relations</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Define-access-controls.html">Define access controls</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Define-a-remote-hook.html">Define a remote hook</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Create-AngularJS-client.html">Create AngularJS client</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Learn-more.html">Learn more</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Tutorials-and-examples.html">Tutorials and examples</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Security-advisories.html">Security advisories</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Security-advisory-10-24-2017.html">10-24-2017</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Security-advisory-09-21-2017.html">09-21-2017</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Security-advisory-03-10-2017.html">03-10-2017</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Creating-an-application.html">アプリケーションの作成</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Environment-specific-configuration.html">環境別の設定</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Versioning-your-API.html">APIのバージョニング</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Standard-project-structure.html">標準的なプロジェクト構成</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Defining-data-sources.html">Defining data sources</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Creating-a-database-schema-from-models.html">Creating a database schema from models</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Advanced-topics-data-sources.html">Data sources: advanced topics</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Using-database-transactions.html">データベースのトランザクションを使用する</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Executing-native-SQL.html">Executing native SQL</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Building-a-connector.html">Building a connector</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Implementing-create-retrieve-update-and-delete-methods.html">Implementing CRUD methods</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Implementing-model-discovery.html">Implementing model discovery</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Implementing-auto-migration.html">Implementing auto-migration</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Defining-models.html">Defining models</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Using-the-model-generator.html">Using the model generator</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Discovering-models-from-relational-databases.html">リレーショナルデータベースからモデルを発見する</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Creating-models-from-unstructured-data.html">Creating models from unstructured data</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Customizing-models.html">モデルのカスタマイズ</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Exposing-models-over-REST.html">REST経由でモデルを公開する</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Validating-model-data.html">モデルのデータを検証する</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Creating-model-relations.html">Creating model relations</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Tutorial-model-relations.html">Tutorial: model relations</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="BelongsTo-relations.html">BelongsTo relations</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="HasOne-relations.html">HasOne relations</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="HasMany-relations.html">HasMany relations</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="HasManyThrough-relations.html">HasManyThrough relations</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="HasAndBelongsToMany-relations.html">HasAndBelongsToMany relations</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Polymorphic-relations.html">Polymorphic relations</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Querying-related-models.html">Querying related models</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Embedded-models-and-relations.html">Embedded models and relations</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Nested-queries.html">Nested queries</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Using-built-in-models.html">Using built-in models</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Extending-built-in-models.html">Extending built-in models</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Adding-remote-methods-to-built-in-models.html">Adding remote methods to built-in models</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Model-property-reference.html">Model property reference</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Built-in-models-REST-API.html">Built-in models REST API</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="PersistedModel-REST-API.html">PersistedModel REST API</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Access-token-REST-API.html">Access token REST API</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="ACL-REST-API.html">ACL REST API</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Application-REST-API.html">Application REST API</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Relation-REST-API.html">Relation REST API</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Role-REST-API.html">Role REST API</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="User-REST-API.html">User REST API</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Attaching-models-to-data-sources.html">Attaching models to data sources</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Managing-users.html">Managing users</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Registering-users.html">Registering users</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Logging-in-users.html">Logging in users</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Partitioning-users-with-realms.html">Partitioning users with realms</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="User-management-example.html">User management example</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Authentication-authorization-and-permissions.html">認証・認可・パーミッション</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Introduction-to-User-model-authentication.html">Introduction to User model authentication</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Controlling-data-access.html">Controlling data access</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Making-authenticated-requests.html">Making authenticated requests</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Defining-and-using-roles.html">Defining and using roles</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Accessing-related-models.html">Accessing related models</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Creating-a-default-admin-user.html">Creating a default admin user</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Security-considerations.html">Security considerations</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Tutorial-access-control.html">Tutorial: access control</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Working-with-data.html">データの操作</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Creating-updating-and-deleting-data.html">データの作成・更新・削除</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Querying-data.html">データの検索</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Fields-filter.html">Fields フィルタ</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Include-filter.html">Include フィルタ</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Limit-filter.html">Limit フィルタ</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Order-filter.html">Order フィルタ</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Skip-filter.html">Skip フィルタ</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Where-filter.html">Where フィルタ</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Advanced-topics-data.html">Advanced topics: data</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Realtime-server-sent-events.html">Realtime server-sent events</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="AngularJS-LiveSet.html">AngularJS Live Set</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="AngularJS-LiveSet-Example.html">AngularJS Live Set example</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Realtime-socket-io.html">Real-time apps AngularJS using socket.io</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Adding-application-logic.html">アプリケーションロジックの追加</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Working-with-LoopBack-objects.html">LoopBackのオブジェクトを扱う</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Adding-logic-to-models.html">モデルにロジックを追加する</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Remote-methods.html">リモートメソッド</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Remote-hooks.html">リモートフック</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Operation-hooks.html">操作フック</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Connector-hooks.html">コネクタフック</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Tutorial-Adding-application-logic.html">Tutorial: Application logic</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Defining-boot-scripts.html">起動スクリプトの定義</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Defining-mixins.html">Defining mixins</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Defining-middleware.html">Defining middleware</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Middleware-example.html">Middleware example</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Using-current-context.html">Using current context</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Events.html">Events</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Using-promises.html">Using promises</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Running-and-debugging-apps.html">アプリケーションの実行とデバッグ</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Setting-debug-strings.html">デバッグ文字列の設定</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Using-strong-error-handler.html">Using strong-error-handler</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Preparing-for-deployment.html">Preparing for deployment</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="LoopBack-on-Bluemix.html">Running LoopBack apps on Bluemix</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="LoopBack-components.html">LoopBack components</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="OAuth-2.0.html">OAuth 2.0 component</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Push-notifications.html">Push notification component</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Push-notifications-for-iOS-apps.html">Push notifications for iOS apps</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Push-notifications-for-Android-apps.html">Push notifications for Android apps</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Storage-component.html">Storage component</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Storage-component-REST-API.html">Storage component REST API</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Storage-example.html">Storage component example</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Third-party-login-using-Passport.html">Passport login component</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Configuring-providers.json.html">Configuring providers.json</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Tutorial-third-party-login.html">Tutorial: third-party login</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Synchronization.html">Synchronization component</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Tutorial-Offline-Synchronization.html">Tutorial: Offline Synchronization</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Advanced-topics-sync.html">Advanced topics - sync</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Creating-components.html">Creating components</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Command-line-tools.html">コマンドラインツール</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="ACL-generator.html">ACL generator</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="API-definition-generator.html">API 定義生成ツール</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Application-generator.html">Application generator</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Bluemix-config-generator.html">Bluemix configuration generator</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Boot-script-generator.html">Boot script generator</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Data-source-generator.html">Data source generator</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Middleware-generator.html">Middleware generator</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Model-generator.html">Model generator</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Oracle-installer-command.html">Oracle installer command</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Property-generator.html">Property generator</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Refresh-definitions-command.html">Refresh definitions command</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Relation-generator.html">Relation generator</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Remote-method-generator.html">Remote method generator</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="SOAP-generator.html">SOAP generator</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Swagger-generator.html">Swagger 生成ツール</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Client-SDKs.html">Client SDKs</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="iOS-SDK.html">iOS SDK</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="IOS-getting-started.html">Getting started with the iOS SDK</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Android-SDK.html">Android SDK</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Tutorial-android-getting-started.html">Getting started with the Android SDK</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Working-with-files-using-the-Android-SDK.html">Working with files using the Android SDK</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Push-notifications-using-Android-SDK.html">Push notifications using Android SDK</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Working-with-the-LocalInstallation-class.html">Working with the LocalInstallation class</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="AngularJS-JavaScript-SDK.html">AngularJS SDK</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Angular-example-app.html">Angular example app</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="AngularJS-Grunt-plugin.html">AngularJS Grunt plugin</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Xamarin-SDK.html">Xamarin SDK</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Xamarin-client-API.html">Xamarin client API</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Xamarin-example-app.html">Xamarin example app</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="LoopBack-in-the-client.html">Isomorphic LoopBack</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Running-LoopBack-in-the-browser.html">Running LoopBack in the browser</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Using-Browserify.html">Using Browserify</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Isomorphic-LoopBack-example.html">Isomorphic example</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Connectors-reference.html">Connectors reference</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Memory-connector.html">Memory connector</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Database-connectors.html">Database connectors</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Cassandra-connector.html">Cassandra connector</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Cloudant-connector.html">Cloudant connector</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="DashDB.html">DashDB</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="DB2-connector.html">DB2 connector</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="DB2-iSeries-connector.html">DB2 for iSeries connector</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="DB2-for-z-OS.html">DB2 for z/OS</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Informix.html">Informix connector</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="MongoDB-connector.html">MongoDB connector</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Connecting-to-MongoDB.html">MongoDB Connector Tutorial</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Using-MongoLab.html">Using MongoLab</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="MySQL-connector.html">MySQL connector</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Connecting-to-MySQL.html">MySQL Connector Tutorial</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Oracle-connector.html">Oracle connector</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Installing-the-Oracle-connector.html">Installing the Oracle connector</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Connecting-to-Oracle.html">Oracle connector tutorial</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="PostgreSQL-connector.html">PostgreSQL connector</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Connecting-to-PostgreSQL.html">PostgreSQL connector tutorial</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Redis-connector.html">Redis connector</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="kv-redis-connector.html">Redis key-value connector</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Example-kv-connector.html">KV connector example</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="SQL-Server-connector.html">SQL Server connector</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Connecting-to-Microsoft-SQL-Server.html">SQL Server connector tutorial</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="SQLite3.html">SQLite3 connector</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Other-connectors.html">Other connectors</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Email-connector.html">Email connector</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="JSON-RPC-connector.html">JSON RPC connector</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="MQLight-connector.html">MQ Light connector</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Push-connector.html">Push connector</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Remote-connector.html">Remote connector</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Remote-connector-example.html">Remote connector example</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Strong-Remoting.html">Strong Remoting</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="REST-connector.html">REST connector</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="REST-connector-example.html">REST connector example</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="SOAP-connector.html">SOAP connector</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Strong-soap.html">Strong-soap</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="SOAP-Connector-example.html">SOAP connector example</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Connecting-to-SOAP.html">Connecting to SOAP web services</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Storage-connector.html">Storage connector</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Swagger-connector.html">Swagger connector</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Community-connectors.html">Community connectors</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Project-layout-reference.html">Project layout reference</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="client-directory.html">client directory</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="common-directory.html">common directory</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Model-definition-JSON-file.html">Model definition JSON file</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Model-extension-file.html">Model extension file</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="package.json.html">package.json</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="server-directory.html">server directory</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="component-config.json.html">component-config.json</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="config.json.html">config.json</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="datasources.json.html">datasources.json</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="middleware.json.html">middleware.json</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="middleware.development.json.html">middleware.development.json</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="model-config.json.html">model-config.json</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="server.js.html">server.js</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Node-reference.html">Node reference</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="LoopBack-types.html">LoopBack types</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Geotype.html">Geopoint type</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Valid-names-in-LoopBack.html">Valid names in LoopBack</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Basic-model-object.html">Basic model object</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Connected-model-object.html">Connected model object</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Error-object.html">Error object</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="LoopBack-middleware.html">LoopBack middleware</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" tree-parent  ">
+     <a class="show-hide" href="#"></span> 
+    <a class="page-link" rel="nofollow" href="Publish-subscribe-messaging.html">Publish-subscribe messaging</a>
+      
+      <ul class="nav-list">
+          
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Strong-pub-sub.html">Strong Pub-sub</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Pub-sub-bridge.html">Pub-sub bridge</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="MQTT-adapter.html">MQTT adapter</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Redis-pub-sub-adapter.html">Redis pub-sub adapter</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Primus-pub-sub-adapter.html">Primus pub-sub adapter</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Pub-sub-example.html">Node pub-sub example app</a>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="Pub-sub-Loopback-example.html">LoopBack pub-sub example app</a>
+      
+  </li>
+  
+
+
+
+      </ul>
+      
+  </li>
+  
+
+
+  
+  <li class=" leaf-node  ">
+    
+    <a class="page-link" rel="nofollow" href="All-tags.html">All tags</a>
+      
+  </li>
+  
+
+
+
+</ul>
+
+        </nav>
+        <!-- Content Column -->
+        <div class="col-md-9">
+            
+<div class="post-header">
+   <h1 class="post-title-main">リモートメソッド</h1>
+   
+     
+       <a target="_blank" href="https://github.com/strongloop/loopback.io/blob/gh-pages/pages/ja/lb3/Remote-methods.md" class="githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit this page</a>
+   
+</div>
+
+<div class="post-content">
+
+
+  
+   <div class="summary">
+     リモートメソッドは、独自のRESTエンドポイントを通じて公開される、モデルの静的メソッドです。
+   </div>
+  
+
+
+
+  
+  
+<div id="seealso">
+
+  <p><b>See also</b>:</p>
+
+  <ul>
+    <li>
+      <p><a href="Remote-hooks.html">Remote hooks</a></p>
+    </li>
+    <li>
+      <p><a href="Operation-hooks.html">Operation hooks</a></p>
+    </li>
+    <li>
+      <p><a href="Connector-hooks.html">Connector hooks</a></p>
+    </li>
+    <li>
+      <p><a href="Tutorial-Adding-application-logic.html">Tutorial: Adding application logic</a></p>
+    </li>
+  </ul>
+
+</div>
+
+
+
+
+ 
+   
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+;$(function() {
+  var level = parseInt(2, 10);
+  if (level === 1) {level = 'h2'}
+  if (level === 2) {level = 'h2,h3'}
+  if (level === 3) {level = 'h2,h3,h4'}
+  if (level === 4) {level = 'h2,h3,h4,h5'}
+
+  // Add a new level for changelog files which use h1,h2,h3
+  if (level === 0) {level = 'h1,h2,h3,h4,h5'}
+
+  var toc = $('#toc')
+
+  toc.toc({minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: level})
+
+  /* this offset helps with the space taken up by the floating toolbar */
+  toc.on('click', 'a', function() {
+    var target = $(this.getAttribute('href')),
+      scroll_target = target.offset().top
+
+    $(window).scrollTop(scroll_target - 10)
+    return false
+  })
+  .on('click', '.toc-expand-button', function() {
+    toc.find('> ul').slideToggle('fast');
+  })
+})
+</script>
+
+<div id="toc">
+  <span class="toc-title">Page Contents</span>
+  <button type="button" class="btn btn-link toc-expand-button">
+    <i class="fa fa-bars"></i>
+  </button>
+</div>
+
+ 
+
+    
+  <h2 id="概要">概要</h2>
+
+<p><em>リモートメソッド</em> は、独自のRESTエンドポイントを通じて公開される、モデルのメソッドです。
+LoopBackの<a href="PersistedModel-REST-API.html">標準モデルREST API</a>で提供されていない操作を行うには、リモートメソッドを使います。</p>
+
+<div class="alert alert-info" role="alert">
+  <p><i class="fa fa-info-circle"></i>
+<b>Note:</b>
+リモートメソッドを定義する最も簡単な方法は、コマンドラインで<a href="Remote-method-generator.html">リモートメソッド生成ツール</a>を使うことです。リモートメソッドを定義することの導入的なサンプルは、はじめににある<a href="Extend-your-API.html">APIを拡張する</a> を参照してください。</p>
+
+</div>
+
+<h2 id="モデルにリモートメソッドを追加する方法">モデルにリモートメソッドを追加する方法</h2>
+
+<p>モデルにリモートメソッドを追加するには、以下のようにします。</p>
+
+<ol>
+  <li>
+    <p><a href="Model-extension-file.html">モデル拡張ファイル</a> に関数を作成します。メソッド名によってリモートメソッドが静的メソッドかインスタンスメソッドか決まります。メソッド名が<code class="language-plaintext highlighter-rouge">prototype.</code>で始まるものは、インスタンスメソッドになります。さもなくば、静的メソッドになります。<strong>注</strong>：既定では、リモートメソッドは静的です。インスタンスメソッドを作るには、メソッド名の先頭に<code class="language-plaintext highlighter-rouge">prototype.</code>を指定しなければなりません。</p>
+  </li>
+  <li>
+    <p>以下の方法のいずれかで、リモートメソッドを登録します。</p>
+    <ul>
+      <li><a href="Model-definition-JSON-file.html">モデル定義JSONファイル</a>で、JSONを使って登録する。
+   詳しくは <a href="#registering-a-remote-method-in-json">JSONにリモートメソッドを登録する</a>を参照してください。</li>
+      <li><a href="Model-extension-file.html">モデル拡張ファイル</a> で、JavaScriptを使って <a href="http://apidocs.loopback.io/loopback/#model-remotemethod"><code class="language-plaintext highlighter-rouge">remoteMethod()</code></a> を呼出して登録する。
+   詳しくは、<a href="#registering-a-remote-method-in-code">リモートメソッドをコードで登録する</a> を参照してください。</li>
+    </ul>
+  </li>
+</ol>
+
+<h3 id="例">例</h3>
+
+<div class="alert alert-success" role="alert">
+  <p><i class="fa fa-check-square-o"></i>
+  <b>Tip:</b> リモートメソッドのその他の例は<a href="Extend-your-API.html">APIを拡張する</a>を参照してください。</p>
+
+</div>
+
+<p>Perosonモデルが既に存在し、<code class="language-plaintext highlighter-rouge">/greet</code> というエンドポイントを追加して、リクエストで与えられた名前に対して挨拶を返すようにしたいとします。
+<code class="language-plaintext highlighter-rouge">/common/models/person.js</code>に以下のようなコードを追加してください。</p>
+
+<div id="/common/models/person.js" class="code-caption">
+  <p>/common/models/person.js</p>
+</div>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">module</span><span class="p">.</span><span class="nx">exports</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">Person</span><span class="p">){</span>
+
+    <span class="nx">Person</span><span class="p">.</span><span class="nx">greet</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">msg</span><span class="p">,</span> <span class="nx">cb</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nx">cb</span><span class="p">(</span><span class="kc">null</span><span class="p">,</span> <span class="dl">'</span><span class="s1">Greetings... </span><span class="dl">'</span> <span class="o">+</span> <span class="nx">msg</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="nx">Person</span><span class="p">.</span><span class="nx">remoteMethod</span><span class="p">(</span><span class="dl">'</span><span class="s1">greet</span><span class="dl">'</span><span class="p">,</span> <span class="p">{</span>
+          <span class="na">accepts</span><span class="p">:</span> <span class="p">{</span><span class="na">arg</span><span class="p">:</span> <span class="dl">'</span><span class="s1">msg</span><span class="dl">'</span><span class="p">,</span> <span class="na">type</span><span class="p">:</span> <span class="dl">'</span><span class="s1">string</span><span class="dl">'</span><span class="p">},</span>
+          <span class="na">returns</span><span class="p">:</span> <span class="p">{</span><span class="na">arg</span><span class="p">:</span> <span class="dl">'</span><span class="s1">greeting</span><span class="dl">'</span><span class="p">,</span> <span class="na">type</span><span class="p">:</span> <span class="dl">'</span><span class="s1">string</span><span class="dl">'</span><span class="p">}</span>
+    <span class="p">});</span>
+<span class="p">};</span>
+</code></pre></div></div>
+
+<p>そして、例えば、以下のURLに対して、</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>POST /api/people/greet
+</code></pre></div></div>
+
+<p><code class="language-plaintext highlighter-rouge">{"msg": "John"}</code> というデータを送信すると、以下のような応答が得られるはずです。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Greetings... John!
+</code></pre></div></div>
+
+<div class="alert alert-info" role="alert">
+  <p><i class="fa fa-info-circle"></i>
+<b>Note:</b>
+上述のとおり、REST API は”person”の代わりに”people”という複数形を使うように要求します。LoopBackは <a href="Exposing-models-over-REST.html#REST-paths">REST APIルートとしてモデル名の複数形</a>を公開します。</p>
+
+</div>
+
+<h2 id="リモートメソッドを登録する">リモートメソッドを登録する</h2>
+
+<p>リモートメソッドを登録する方法は２つあります。</p>
+<ul>
+  <li><a href="Model-extension-file.html">モデル拡張ファイル</a>  (<code class="language-plaintext highlighter-rouge">modelName.js</code>) に <a href="#registering-a-remote-method-in-code">コードで</a>。</li>
+  <li><a href="Model-definition-JSON-file.html#methods">モデル定義JSONファイル</a> (<code class="language-plaintext highlighter-rouge">modelName.json</code>) に<a href="#registering-a-remote-method-in-json">JSONで</a>。</li>
+</ul>
+
+<h3 id="コードでリモートメソッドを登録する">コードでリモートメソッドを登録する</h3>
+
+<p>LoopBack のモデルは<a href="http://apidocs.loopback.io/loopback/#model-remotemethod"><code class="language-plaintext highlighter-rouge">remoteMethod()</code></a> という、リモートメソッドを登録する静的メソッドを持っています。</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">Model</span><span class="p">.</span><span class="nx">remoteMethod</span><span class="p">(</span><span class="nx">requestHandlerFunctionName</span><span class="p">,</span> <span class="p">[</span><span class="nx">options</span><span class="p">])</span>
+</code></pre></div></div>
+
+<p>ここで、</p>
+
+<ul>
+  <li><em><code class="language-plaintext highlighter-rouge">model</code></em> は、リモートメソッドを追加したいモデルオブジェクトです。例えば <code class="language-plaintext highlighter-rouge">Person</code> などです。</li>
+  <li><em><code class="language-plaintext highlighter-rouge">requestHandlerFunctionName</code></em> はリモートメソッドの名前を指定する文字列です。例えば <code class="language-plaintext highlighter-rouge">'greet'</code> などです。</li>
+  <li><em><code class="language-plaintext highlighter-rouge">options</code></em> は、RESTエンドポイントを設定するパラメータを指定するオブジェクトです。以下の <a href="#options">オプション</a> を参照してください。</li>
+</ul>
+
+<h3 id="jsonでリモートメソッドを登録する">JSONでリモートメソッドを登録する</h3>
+
+<p><a href="Model-definition-JSON-file.html#methods">モデル定義JSONファイル</a> でリモートメソッドを登録するには、
+<code class="language-plaintext highlighter-rouge">methods</code> キーの下にメソッド名を追加します。インスタンスメソッドを定義するには、メソッド名の前に<code class="language-plaintext highlighter-rouge">prototype.</code>をつけてください。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>"methods": {
+    "prototype.getProfile": {
+      "accepts": [],
+      "returns": { "arg": "data", "type": "User", "root": true},
+      "http": {"verb": "get", "path": "/profile"},
+      "accessScopes": ["read", "read:profile"]
+    },
+    "someStaticMethod" : { ... }
+</code></pre></div></div>
+
+<p><code class="language-plaintext highlighter-rouge">methods</code>のは以下にあるそれぞれのキーの値は、以下で説明するオプションオブジェクトです。</p>
+
+<h2 id="オプション">オプション</h2>
+
+<p>オプション引数は、リモートメソッドがどのように動作するかを定義するJavaScriptオブジェクトです。</p>
+
+<div class="alert alert-warning" role="alert">
+  <p><i class="fa fa-warning"></i>
+  <b>Important:</b>
+  All of the options properties are optional. However, if the remote method requires arguments, you must specify <code class="language-plaintext highlighter-rouge">accepts</code>; if the remote method returns a value, you must specify <code class="language-plaintext highlighter-rouge">returns</code>.</p>
+
+</div>
+
+<table width="800">
+  <thead>
+    <tr>
+      <th width="120">オプション</th>
+      <th>説明</th>
+      <th width="280">例</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>accepts</td>
+      <td>
+        リモートメソッドが受け付けて、静的メソッドに渡す引数を定義する。上の例では、関数のシグネチャは<pre>Person.greet(name, age, callback)...</pre>であるため、<code>name</code>が最初の引数、<code>age</code>が２つ目の引数、そしてコールバックが自動的にLoopBackによって提供される（<code>accepts</code>配列には指定しないこと）。詳細は、<a href="Remote-methods.html#argument-descriptions">引数の説明</a>を参照ください。<br /><br />
+        既定値は空の配列 <code>[ ]</code> です。
+      </td>
+      <td>
+        <pre style="font-size: 80%;">{  ...
+accepts: [
+ {arg: 'name', type: 'string'},
+ {arg: 'age',  type: 'number'},
+ ...],
+... }</pre>
+      </td>
+    </tr>
+    <tr>
+      <td>accessScopes</td>
+      <td>
+        ユーザーは、自身のアクセストークンが `accessScopes` リストで定義されたスコープの内、どれか１つ以上で許可されているときのみ、
+        このリモートメソッドを呼び出すことができる。
+        <a href="/doc/en/lb3/Controlling-data-access.html#authorization-scopes">認証スコープ</a>を参照ください。
+        <br /><br />
+        既定値は <code>DEFAULT</code> という単一の値を持つリストです。
+      </td>
+      <td>
+        <pre>accessScopes: [
+  'read',
+  'read:user'
+]</pre>
+      </td>
+    </tr>
+    <tr>
+      <td>description</td>
+      <td>
+        メソッドを説明する文章。OpenAPI（旧 Swagger）のような APIドキュメント生成ツールによって使われる。
+        必要に応じて、長い文字列を配列に入れることもできる（以下参照）。
+      </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>http</td>
+      <td>
+        メソッドが公開されるルートを指定する。
+        下にある<a href="#http-property">http プロパティ</a> を参照ください。
+      </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>notes</td>
+      <td>
+        OpenAPI（旧Swagger）によって使われる追加の注記。
+        必要に応じて、長い文字列を配列に入れることもできる（以下参照）。
+      </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>documented</td>
+      <td>
+        <code>false</code>にした場合、このメソッドはOpenAPI（旧Swagger）が生成した文書には登場しなくなる。
+      </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>returns</td>
+      <td>
+        リモートメソッドのコールバック引数を指定する。<a href="Remote-methods.html#argument-descriptions">引数の説明</a>を参照ください。
+        <code>err</code>引数は暗黙のうちに指定されるので、記述しないこと。
+        既定では、空の配列 <code>[]</code> です。
+      </td>
+      <td>
+        <pre>returns: {arg: 'greeting',
+          type: 'string'}</pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="alert alert-success" role="alert">
+  <p><i class="fa fa-check-square-o"></i>
+  <b>Tip:</b> <code class="language-plaintext highlighter-rouge">description</code> と <code class="language-plaintext highlighter-rouge">notes</code> オプションでは、長い文字列を文字列の配列に分割して、行の長さを制御できます。例えば以下のようにします。</p>
+
+  <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">[</span>
+ <span class="dl">"</span><span class="s2">Lorem ipsum dolor sit amet, consectetur adipiscing elit,</span><span class="dl">"</span><span class="p">,</span>
+ <span class="dl">"</span><span class="s2">sed do eiusmod tempor incididunt ut labore et dolore</span><span class="dl">"</span><span class="p">,</span>
+ <span class="dl">"</span><span class="s2">magna aliqua.</span><span class="dl">"</span>
+<span class="p">]</span>
+</code></pre></div>  </div>
+
+</div>
+
+<h3 id="http-プロパティ">http プロパティ</h3>
+
+<p><code class="language-plaintext highlighter-rouge">http</code> プロパティは、リモートメソッドが公開されるHTTPルートについての情報を提供します。</p>
+
+<table width="800">
+  <thead>
+    <tr>
+      <th width="120">オプション</th>
+      <th>説明</th>
+      <th width="280">例</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>path</td>
+      <td>
+        HTTP path (relative to the model) at which the method is exposed.
+        モデルが公開される HTTP パス (モデルに対する相対パス)
+      </td>
+      <td>
+        <pre>http: {path: '/sayhi'}</pre>
+      </td>
+    </tr>
+    <tr>
+      <td><a name="http.verb"></a>verb</td>
+      <td>
+        メソッドを呼び出せる HTTP メソッド（動詞）。以下のいずれか一つ。
+        <ul>
+          <li>get</li>
+          <li>post (既定)</li>
+          <li>patch</li>
+          <li>put</li>
+          <li>del</li>
+          <li>all</li>
+        </ul>
+      </td>
+      <td>
+     <pre>http: {path: '/sayhi',
+       verb: 'get'}</pre>
+      </td>
+    </tr>
+    <tr>
+      <td>status</td>
+      <td>エラーなしにコールバックが呼び出された時の、既定の HTTP ステータス。</td>
+      <td>
+      <pre>http: {status: 201}</pre>
+      </td>
+    </tr>
+    <tr>
+      <td>errorStatus</td>
+      <td>エラー時にコールバックが呼び出された時の、既定の HTTP ステータス。</td>
+      <td>
+        <pre>http: {errorStatus: 400}</pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="引数の説明">引数の説明</h3>
+
+<p><code class="language-plaintext highlighter-rouge">accepts</code>と<code class="language-plaintext highlighter-rouge"> returns</code>オプションのプロパティは、単一の引数をオブジェクトとして、または順序付けされた引数のセットを配列として定義します。
+次の表は、個々の引数のプロパティを示しています。</p>
+
+<table>
+  <thead>
+    <tr>
+      <th width="100">プロパティ (キー)</th>
+      <th width="100">型</th>
+      <th>説明</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>arg</td>
+      <td>String</td>
+      <td>引数の名前</td>
+    </tr>
+    <tr>
+      <td>description</td>
+      <td>String または Array</td>
+      <td>
+        引数を説明する文章。OpenAPI（旧Swagger）のようなAPI文書生成ツールによって使われる。
+        必要に応じて、長い文字列を配列に入れることもできる（上の注記参照）。
+      </td>
+    </tr>
+    <tr>
+      <td>http</td>
+      <td>オブジェクトまたは関数</td>
+      <td>引数について： HTTPリクエストと引数の値を紐付けを記述する関数またはオブジェクト。下にある<a href="#http-mapping-of-input-arguments">入力引数とHTTPのマッピング</a>を参照ください。</td>
+    </tr>
+    <tr>
+      <td>http.target</td>
+      <td>String</td>
+      <td>
+        コールバック引数の値と、HTTPレスポンスオブジェクトを紐付ける。以下の値がサポートされている。
+        <ul>
+          <li><code>status</code> は <code>res.statusCode</code> にセットする値を指定する</li>
+          <li><code>header</code> は <code>http.header</code> または <code>arg</code> という名前のヘッダにセットする値を指定する</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>required</td>
+      <td>Boolean</td>
+      <td>引数が必須の場合は、true にする。さもなくば false にする。</td>
+    </tr>
+    <tr>
+      <td>root</td>
+      <td>Boolean</td>
+      <td>コールバックの引数として： 関数が、単一のコールバック引数を取り、リモートの呼び出し側に返却する大本のオブジェクトとして使いたい場合、
+         このプロパティを <code>true</code>にする。
+        さもなくば、大本のオブジェクトはマップ（引数の名前と値）になる。
+      </td>
+    </tr>
+    <tr>
+      <td>type</td>
+      <td>String</td>
+      <td>引数のデータ型。 <a href="LoopBack-types.html">Loopbackの型</a>のいずれかでなければならない。 加えて、コールバック引数は、特別な型として「file」を指定できる。以下を参照。</td>
+    </tr>
+    <tr>
+      <td>default</td>
+      <td>String</td>
+      <td>loopback-explorer の入力フィールドやswaggerの文書を作るために使われる既定値。
+        <strong>注</strong>： この値は、引数が存在しない場合は、リモートメソッドに渡されることはない。
+      </td>
+    </tr>
+    <tr>
+      <td>documented</td>
+      <td>Boolean</td>
+      <td><code>false</code>にすると、このパラメータは OpenAPI（旧Swagger）が生成する文書には登場しなくなる。</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>例えば、単一の引数はオブジェクトで以下のように指定できる。</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="nl">arg</span><span class="p">:</span> <span class="dl">'</span><span class="s1">myArg</span><span class="dl">'</span><span class="p">,</span> <span class="nx">type</span><span class="p">:</span> <span class="dl">'</span><span class="s1">number</span><span class="dl">'</span><span class="p">}</span>
+</code></pre></div></div>
+
+<p>複数の引数は、配列で指定する。</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">[</span>
+  <span class="p">{</span><span class="na">arg</span><span class="p">:</span> <span class="dl">'</span><span class="s1">arg1</span><span class="dl">'</span><span class="p">,</span> <span class="na">type</span><span class="p">:</span> <span class="dl">'</span><span class="s1">number</span><span class="dl">'</span><span class="p">,</span> <span class="na">required</span><span class="p">:</span> <span class="kc">true</span><span class="p">},</span>
+  <span class="p">{</span><span class="na">arg</span><span class="p">:</span> <span class="dl">'</span><span class="s1">arg2</span><span class="dl">'</span><span class="p">,</span> <span class="na">type</span><span class="p">:</span> <span class="dl">'</span><span class="s1">array</span><span class="dl">'</span><span class="p">}</span>
+<span class="p">]</span>
+</code></pre></div></div>
+
+<h4 id="ファイルストリームレスポンスを返す">ファイル(ストリーム)レスポンスを返す。</h4>
+
+<p>コールバック引数として、<code class="language-plaintext highlighter-rouge">{ type: 'file', root: true }</code>を指定すると、レスポンスボディを直接送信できる。
+ファイル引数は以下のいずれかの値に設定できる。</p>
+
+<ul>
+  <li>String</li>
+  <li><a href="https://nodejs.org/api/buffer.html">Buffer</a></li>
+  <li><a href="https://nodejs.org/api/stream.html#stream_class_stream_readable">ReadableStream</a> (<code class="language-plaintext highlighter-rouge">.pipe()</code> メソッドがあるものなら何でも可)</li>
+</ul>
+
+<p>例：</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">module</span><span class="p">.</span><span class="nx">exports</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">MyModel</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">MyModel</span><span class="p">.</span><span class="nx">download</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">cb</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// getTheStreamBody() can be implemented by calling http.request() or fs.readFile() for example</span>
+    <span class="nx">getTheStreamBody</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">err</span><span class="p">,</span> <span class="nx">stream</span><span class="p">)</span> <span class="p">{</span>
+      <span class="k">if</span> <span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="k">return</span> <span class="nx">cb</span><span class="p">(</span><span class="nx">err</span><span class="p">);</span>
+      <span class="c1">// stream can be any of: string, buffer, ReadableStream (e.g. http.IncomingMessage)</span>
+      <span class="nx">cb</span><span class="p">(</span><span class="kc">null</span><span class="p">,</span> <span class="nx">stream</span><span class="p">,</span> <span class="dl">'</span><span class="s1">application/octet-stream</span><span class="dl">'</span><span class="p">);</span>
+    <span class="p">});</span>
+  <span class="p">};</span>
+
+  <span class="nx">MyModel</span><span class="p">.</span><span class="nx">remoteMethod</span><span class="p">(</span><span class="dl">'</span><span class="s1">download</span><span class="dl">'</span><span class="p">,</span> <span class="p">{</span>
+    <span class="na">returns</span><span class="p">:</span> <span class="p">[</span>
+      <span class="p">{</span><span class="na">arg</span><span class="p">:</span> <span class="dl">'</span><span class="s1">body</span><span class="dl">'</span><span class="p">,</span> <span class="na">type</span><span class="p">:</span> <span class="dl">'</span><span class="s1">file</span><span class="dl">'</span><span class="p">,</span> <span class="na">root</span><span class="p">:</span> <span class="kc">true</span><span class="p">},</span>
+      <span class="p">{</span><span class="na">arg</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Content-Type</span><span class="dl">'</span><span class="p">,</span> <span class="na">type</span><span class="p">:</span> <span class="dl">'</span><span class="s1">string</span><span class="dl">'</span><span class="p">,</span> <span class="na">http</span><span class="p">:</span> <span class="p">{</span> <span class="na">target</span><span class="p">:</span> <span class="dl">'</span><span class="s1">header</span><span class="dl">'</span> <span class="p">}}</span>
+    <span class="p">]</span>
+  <span class="p">});</span>
+<span class="p">};</span>
+</code></pre></div></div>
+
+<h3 id="入力引数と-http-の紐付け">入力引数と HTTP の紐付け</h3>
+
+<p>There are two ways to specify HTTP mapping for input parameters (what the method accepts):
+HTTPと（メソッドが受け付ける）入力パラメータの紐付けを指定する方法が２つあります。</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">source</code> プロパティを持つオブジェクトを提供する。</li>
+  <li>独自のマッピング関数を指定する。</li>
+</ul>
+
+<p><strong>sourceプロパティを持つオブジェクトを指定する</strong></p>
+
+<p>入力パラメータとHTTPの紐付けに最初の方法を使うには、以下の表に示す値の一つを持つ<code class="language-plaintext highlighter-rouge">source</code>プロパティのあるオブジェクトを提供します。</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>source プロパティの値</th>
+      <th>説明</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>body</td>
+      <td>リクエストボディ全体が値として使われます。</td>
+    </tr>
+    <tr>
+      <td>form<br />query<br />path </td>
+      <td>
+        値は、ルート引数・リクエストボディ・クエリ文字列を検索する<code> req.param </code>を使用して参照されます。
+        <code>query</code>や<code>path</code>は<code>form</code>の別名ですので注意してください。
+      </td>
+    </tr>
+    <tr>
+      <td>req</td>
+      <td><a href="http://expressjs.com/4x/api.html#req" class="external-link" rel="nofollow">ExpressのHTTPリクエストオブジェクト</a>。</td>
+    </tr>
+    <tr>
+      <td>res</td>
+      <td><a href="http://expressjs.com/4x/api.html#res" class="external-link" rel="nofollow">ExpressのHTTPレスポンスオブジェクト</a>。</td>
+    </tr>
+    <tr>
+      <td>context</td>
+      <td>リクエストとレスポンスオブジェクトを保持する、context オブジェクト全体。</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>例えば、リクエストボディ全体を受け取る引数は以下のように指定します。</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span> <span class="nl">arg</span><span class="p">:</span> <span class="dl">'</span><span class="s1">data</span><span class="dl">'</span><span class="p">,</span> <span class="nx">type</span><span class="p">:</span> <span class="dl">'</span><span class="s1">object</span><span class="dl">'</span><span class="p">,</span> <span class="nx">http</span><span class="p">:</span> <span class="p">{</span> <span class="nl">source</span><span class="p">:</span> <span class="dl">'</span><span class="s1">body</span><span class="dl">'</span> <span class="p">}</span> <span class="p">}</span>
+</code></pre></div></div>
+
+<p>ExpressのHTTPリクエストとレスポンスオブジェクトを使用する例は以下のとおりです。</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">[</span>
+ <span class="p">{</span><span class="na">arg</span><span class="p">:</span> <span class="dl">'</span><span class="s1">req</span><span class="dl">'</span><span class="p">,</span> <span class="na">type</span><span class="p">:</span> <span class="dl">'</span><span class="s1">object</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">http</span><span class="dl">'</span><span class="p">:</span> <span class="p">{</span><span class="na">source</span><span class="p">:</span> <span class="dl">'</span><span class="s1">req</span><span class="dl">'</span><span class="p">}},</span>
+ <span class="p">{</span><span class="na">arg</span><span class="p">:</span> <span class="dl">'</span><span class="s1">res</span><span class="dl">'</span><span class="p">,</span> <span class="na">type</span><span class="p">:</span> <span class="dl">'</span><span class="s1">object</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">http</span><span class="dl">'</span><span class="p">:</span> <span class="p">{</span><span class="na">source</span><span class="p">:</span> <span class="dl">'</span><span class="s1">res</span><span class="dl">'</span><span class="p">}}</span>
+<span class="p">]</span>
+</code></pre></div></div>
+
+<p><strong>独自のマッピング関数を使う</strong></p>
+
+<p>入力パラメータとHTTPの紐付けを指定する２つ目の方法は、独自のマッピング関数を指定するものです。例えば、以下のようにします。</p>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span>
+  <span class="nl">arg</span><span class="p">:</span> <span class="dl">'</span><span class="s1">custom</span><span class="dl">'</span><span class="p">,</span>
+  <span class="nx">type</span><span class="p">:</span> <span class="dl">'</span><span class="s1">number</span><span class="dl">'</span><span class="p">,</span>
+  <span class="nx">http</span><span class="p">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">ctx</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// ctx is LoopBack Context object</span>
+
+    <span class="c1">// 1\. Get the HTTP request object as provided by Express</span>
+    <span class="kd">var</span> <span class="nx">req</span> <span class="o">=</span> <span class="nx">ctx</span><span class="p">.</span><span class="nx">req</span><span class="p">;</span>
+
+    <span class="c1">// 2\. Get 'a' and 'b' from query string or form data and return their sum.</span>
+    <span class="k">return</span> <span class="o">-</span><span class="nx">req</span><span class="p">.</span><span class="nx">param</span><span class="p">(</span><span class="dl">'</span><span class="s1">a</span><span class="dl">'</span><span class="p">)</span> <span class="o">-</span> <span class="nx">req</span><span class="p">.</span><span class="nx">param</span><span class="p">(</span><span class="dl">'</span><span class="s1">b</span><span class="dl">'</span><span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>マッピングを指定しない場合、LoopBackは値を以下のようにさばきます。（<code class="language-plaintext highlighter-rouge">name</code>は、解決すべき入力パラメータに名前とします）</p>
+
+<ol>
+  <li>HTTPリクエストパラメータ <code class="language-plaintext highlighter-rouge">args</code> がJSONの中にある場合、それは、<code class="language-plaintext highlighter-rouge">args['name']</code> として扱います。</li>
+  <li>さもなくば、<code class="language-plaintext highlighter-rouge">req.param('name')</code>として使います。</li>
+</ol>
+
+<h3 id="jsonフィールドにないデータを返す">JSONフィールドにないデータを返す。</h3>
+<p><em>arg</em> プロパティのある return 引数を指定すると、自動的に 同じ名前のフィールドにデータが格納されたJSONオブジェクトを返します。</p>
+
+<p>メインのレスポンスとして、例えば配列のようなデータを返したい場合、 <em>root</em> プロパティを持つオブジェクトを設定し、<em>arg</em> を消去することで可能です。</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">returns</span><span class="p">:</span> <span class="p">{</span><span class="nl">type</span><span class="p">:</span> <span class="dl">'</span><span class="s1">array</span><span class="dl">'</span><span class="p">,</span> <span class="nx">root</span><span class="p">:</span> <span class="kc">true</span><span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="リモートメソッドルートを指定する">リモートメソッドルートを指定する</h2>
+
+<p>既定では、リモートメソッドは以下のURLで公開されます。</p>
+
+<pre><code>POST http://<i>apiRoot</i>/<i>modelName</i>/<i>methodName</i></code></pre>
+
+<p>ここで、</p>
+
+<ul>
+  <li><em>apiRoot</em>  はアプリケーションのAPI最上位パスです。</li>
+  <li><em>modelName</em> はモデル名の複数形です。</li>
+  <li><em>methodName</em> は関数の名前です。</li>
+</ul>
+
+<p>上の例に従うと、リモートメソッドは以下のように公開されます。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>POST /api/people/greet
+</code></pre></div></div>
+
+<p>ルートを変更するには、<code class="language-plaintext highlighter-rouge">remoteMethod()</code> に渡すオプションの <code class="language-plaintext highlighter-rouge">http.path</code> と <code class="language-plaintext highlighter-rouge">http.verb</code> プロパティを使います。例えば以下のようにします。</p>
+
+<div id="/common/models/model.js" class="code-caption">
+  <p>/common/models/model.js</p>
+</div>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">Person</span><span class="p">.</span><span class="nx">remoteMethod</span><span class="p">(</span><span class="dl">'</span><span class="s1">greet</span><span class="dl">'</span><span class="p">,{</span>
+  <span class="na">accepts</span><span class="p">:</span> <span class="p">{</span><span class="na">arg</span><span class="p">:</span> <span class="dl">'</span><span class="s1">msg</span><span class="dl">'</span><span class="p">,</span> <span class="na">type</span><span class="p">:</span> <span class="dl">'</span><span class="s1">string</span><span class="dl">'</span><span class="p">},</span>
+  <span class="na">returns</span><span class="p">:</span> <span class="p">{</span><span class="na">arg</span><span class="p">:</span> <span class="dl">'</span><span class="s1">greeting</span><span class="dl">'</span><span class="p">,</span> <span class="na">type</span><span class="p">:</span> <span class="dl">'</span><span class="s1">string</span><span class="dl">'</span><span class="p">},</span>
+  <span class="na">http</span><span class="p">:</span> <span class="p">{</span><span class="na">path</span><span class="p">:</span> <span class="dl">'</span><span class="s1">/sayhi</span><span class="dl">'</span><span class="p">,</span> <span class="na">verb</span><span class="p">:</span> <span class="dl">'</span><span class="s1">get</span><span class="dl">'</span><span class="p">}</span>
+<span class="p">});</span>
+</code></pre></div></div>
+
+<p>こうすることで、ルートが以下のように変更されます。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET /api/people/sayhi
+</code></pre></div></div>
+
+<p>すると、 <code class="language-plaintext highlighter-rouge">http://localhost:3000/api/people/sayhi?msg=LoopBack%20developer</code> への GETリクエストは、以下のような値を返します。</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="dl">"</span><span class="s2">greeting</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Greetings... LoopBack developer</span><span class="dl">"</span><span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="リモートメソッドにaclを追加する">リモートメソッドにACLを追加する</h2>
+
+<p>独自のリモートメソッドへのアクセスを制限するには、他のAPIへのアクセス制御と同様に、<a href="ACL-generator.html">ACL生成ツール</a>を使います。
+独自のリモートメソッドをアクセス種別は「Execute」です。</p>
+
+<h3 id="基本的な使い方">基本的な使い方</h3>
+
+<p>たとえば、上の例で使った <code class="language-plaintext highlighter-rouge">greet</code> メソッドの呼出しを禁止する場合、以下のようにします。</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>lb acl
+<span class="o">[</span>?] Select the model to apply the ACL entry to: Person
+<span class="o">[</span>?] Select the ACL scope: A single method
+<span class="o">[</span>?] Enter the method name: greet
+<span class="o">[</span>?] Select the access <span class="nb">type</span>: Execute
+<span class="o">[</span>?] Select the role: All <span class="nb">users</span>
+<span class="o">[</span>?] Select the permission to apply: Explicitly deny access
+</code></pre></div></div>
+
+<p>これで、以下のようなアクセス制御設定が作成されます。</p>
+
+<div id="/common/models/person.json" class="code-caption">
+  <p>/common/models/person.json</p>
+</div>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">...</span>
+<span class="dl">"</span><span class="s2">acls</span><span class="dl">"</span><span class="p">:</span> <span class="p">[{</span>
+  <span class="dl">"</span><span class="s2">principalType</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">ROLE</span><span class="dl">"</span><span class="p">,</span>
+  <span class="dl">"</span><span class="s2">principalId</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">$everyone</span><span class="dl">"</span><span class="p">,</span>  <span class="c1">// 全員にACLを適用する</span>
+  <span class="dl">"</span><span class="s2">permission</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">DENY</span><span class="dl">"</span><span class="p">,</span>        <span class="c1">// メソッド呼び出しを拒否する</span>
+  <span class="dl">"</span><span class="s2">property</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">greet</span><span class="dl">"</span>          <span class="c1">// greet() メソッドにアクセス制御を適用する</span>
+<span class="p">}],</span>
+<span class="p">...</span>
+</code></pre></div></div>
+
+<h3 id="進んだ使い方">進んだ使い方</h3>
+
+<p>他の例として、リモートメソッドの呼出しをモデルの <code class="language-plaintext highlighter-rouge">$owner</code> に限定するには以下のようにします。</p>
+
+<div id="/common/models/YourModel.js" class="code-caption">
+  <p>/common/models/YourModel.js</p>
+</div>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">module</span><span class="p">.</span><span class="nx">exports</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">YourModel</span><span class="p">)</span> <span class="p">{</span>
+  <span class="c1">//...</span>
+  <span class="nx">YourModel</span><span class="p">.</span><span class="nx">remoteMethod</span><span class="p">(</span>
+    <span class="dl">'</span><span class="s1">someRemoteMethod</span><span class="dl">'</span><span class="p">,</span>
+    <span class="p">{</span>
+      <span class="na">accepts</span><span class="p">:</span> <span class="p">[</span>
+        <span class="p">{</span><span class="na">arg</span><span class="p">:</span> <span class="dl">'</span><span class="s1">id</span><span class="dl">'</span><span class="p">,</span> <span class="na">type</span><span class="p">:</span> <span class="dl">'</span><span class="s1">number</span><span class="dl">'</span><span class="p">,</span> <span class="na">required</span><span class="p">:</span> <span class="kc">true</span><span class="p">}</span>
+      <span class="p">],</span>
+      <span class="c1">// ':id' を RESTのURLに入れることで、 $owner を判断してアクセス制御が行えるようにする</span>
+      <span class="na">http</span><span class="p">:</span> <span class="p">{</span><span class="na">path</span><span class="p">:</span> <span class="dl">'</span><span class="s1">/:id/some-remote-method</span><span class="dl">'</span><span class="p">,</span> <span class="na">verb</span><span class="p">:</span> <span class="dl">'</span><span class="s1">get</span><span class="dl">'</span><span class="p">}</span>
+    <span class="p">}</span>
+  <span class="p">);</span>
+<span class="p">};</span>
+</code></pre></div></div>
+
+<h2 id="リモートメソッドのレスポンスを整形する">リモートメソッドのレスポンスを整形する</h2>
+
+<p><a href="Defining-boot-scripts.html">起動スクリプト</a>に<a href="http://apidocs.loopback.io/loopback/#app-remotes"><code class="language-plaintext highlighter-rouge">app.remotes()</code></a>が
+返すオブジェクトを修正する処理を追加することで、全てのリモートメソッドの戻り値を整形することができます。</p>
+
+<div id="/server/boot/hook.js" class="code-caption">
+  <p>/server/boot/hook.js</p>
+</div>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">module</span><span class="p">.</span><span class="nx">exports</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">app</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kd">var</span> <span class="nx">remotes</span> <span class="o">=</span> <span class="nx">app</span><span class="p">.</span><span class="nx">remotes</span><span class="p">();</span>
+  <span class="c1">// 全ての戻り値を修正する</span>
+  <span class="nx">remotes</span><span class="p">.</span><span class="nx">after</span><span class="p">(</span><span class="dl">'</span><span class="s1">**</span><span class="dl">'</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">ctx</span><span class="p">,</span> <span class="nx">next</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">ctx</span><span class="p">.</span><span class="nx">result</span> <span class="o">=</span> <span class="p">{</span>
+      <span class="na">data</span><span class="p">:</span> <span class="nx">ctx</span><span class="p">.</span><span class="nx">result</span>
+    <span class="p">};</span>
+
+    <span class="nx">next</span><span class="p">();</span>
+  <span class="p">});</span>
+<span class="p">};</span>
+</code></pre></div></div>
+
+<h2 id="リモートメソッドを無効化する">リモートメソッドを無効化する</h2>
+
+<p>リモートメソッドを無効化するには、<code class="language-plaintext highlighter-rouge">Model.disableRemoteMethod(name, isStatic)</code> と <code class="language-plaintext highlighter-rouge">Model.disableRemoteMethodByName(name)</code> を使います。詳細は以下を参照してください。</p>
+
+<ul>
+  <li><a href="http://apidocs.loopback.io/loopback/#model-disableremotemethod">Model.disableRemoteMethod</a></li>
+  <li><a href="http://apidocs.loopback.io/loopback/#model-disableremotemethodbyname">Model.disableRemoteMethodByName</a></li>
+</ul>
+
+
+
+
+    <div class="tags">
+      
+        <b>Tags: </b>
+        
+        
+          
+            <a href="tag_models.html" class="tags-item" role="button">models</a>
+            
+        
+          
+            <a href="tag_application_logic.html" class="tags-item" role="button">application_logic</a>
+            
+        
+      
+    </div>
+</div>
+
+<hr class="shaded"/>
+
+<footer id="container">
+            <div class="row">
+                <div class="col-md-6 footer-left">
+               &copy;2021 IBM / StrongLoop. All rights reserved. <br />
+ Site last generated: Mar 22, 2021
+              </div>
+              <div class="col-md-6 footer-right">
+                <p><img src="https://loopback.io/images/company_logo.png" alt="Company logo"/></p>
+              </div>
+            </div>
+</footer>
+
+
+        </div>
+        <!-- /.row -->
+</div>
+<!-- /.container -->
+    </div>
+</body>
+
+</html>
