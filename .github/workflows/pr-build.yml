@@ -24,10 +24,3 @@ jobs:
         uses: actions/setup-ruby@v1
         with:
           ruby-version: 2.7
-
-      - name: Install and Build 🔧
-        run: |
-          bundle install
-          npm install
-          npm ls @loopback/docs 2>/dev/null || true
-          npm run build
