@@ -1,0 +1,524 @@
+## definition of `menuitem`===========
+# title: string
+# url: string
+# output: [ enum{web, pdf} ] (expressed as comma separated string in YAML)
+# children?: [ menuitem ]
+
+## top level property=================
+# entries: [ menuitem ]
+
+title: LoopBack 4
+url: /doc/es/lb4/index.html
+translated: true
+children:
+
+- title: 'Iniciando'
+  url: Getting-started.html
+  output: 'web, pdf'
+  translated: true
+
+- title: 'Tutoriales'
+  url: Tutorials.html
+  output: 'web, pdf'
+  translated: true
+  children:
+
+  - title: 'Todo Tutorial'
+    url: todo-tutorial.html
+    output: 'web, pdf'
+    translated: true
+    children:
+
+    - title: 'Crear tu aplicación scaffolding'
+      url: todo-tutorial-scaffolding.html
+      output: 'web, pdf'
+      translated: true
+
+    - title: 'Agregar un Modelo'
+      url: todo-tutorial-model.html
+      output: 'web, pdf'
+      translated: true
+
+    - title: 'Agregar un Datasource'
+      url: todo-tutorial-datasource.html
+      output: 'web, pdf'
+      translated: true
+
+    - title: 'Agregar un Repositorio'
+      url: todo-tutorial-repository.html
+      output: 'web, pdf'
+      translated: true
+
+    - title: 'Agregar un Controlador'
+      url: todo-tutorial-controller.html
+      output: 'web, pdf'
+      translated: true
+
+    - title: 'Colocando todo junto'
+      url: todo-tutorial-putting-it-together.html
+      output: 'web, pdf'
+      translated: true
+
+    - title: 'Bonus: Integrar con un servicio de codificación geográfica.'
+      url: todo-tutorial-geocoding-service.html
+      output: 'web, pdf'
+      translated: true
+
+  - title: 'Tutorial TodoList'
+    url: todo-list-tutorial.html
+    output: 'web, pdf'
+    translated: false
+    children:
+
+    - title: 'Agregar TodoList Model'
+      url: todo-list-tutorial-model.html
+      output: 'web, pdf'
+      translated: false
+
+    - title: 'Agregar TodoList Repositorio'
+      url: todo-list-tutorial-repository.html
+      output: 'web, pdf'
+      translated: false
+
+    - title: 'Agregar TodoList Controlador'
+      url: todo-list-tutorial-controller.html
+      output: 'web, pdf'
+      translated: false
+
+    - title: 'Ejecutando base de datos relacionales'
+      url: todo-list-tutorial-sqldb.html
+      output: 'web, pdf'
+      translated: false
+
+  - title: 'Tutorial de SOAP Web Service'
+    url: soap-calculator-tutorial.html
+    output: 'web, pdf'
+    translated: false
+    children:
+
+    - title: 'Visión General de SOAP Web Service'
+      url: soap-calculator-tutorial-web-service-overview.html
+      output: 'web, pdf'
+      translated: false
+
+    - title: 'App scaffolding'
+      url: soap-calculator-tutorial-scaffolding.html
+      output: 'web, pdf'
+      translated: false
+
+    - title: 'Agregar un Datasource'
+      url: soap-calculator-tutorial-add-datasource.html
+      output: 'web, pdf'
+      translated: false
+
+    - title: 'Agrega un Servicio'
+      url: soap-calculator-tutorial-add-service.html
+      output: 'web, pdf'
+      translated: false
+
+    - title: 'Agregar un Controlador'
+      url: soap-calculator-tutorial-add-controller.html
+      output: 'web, pdf'
+      translated: false
+
+    - title: 'Ejecuta y pruébalo'
+      url: soap-calculator-tutorial-run-and-test.html
+      output: 'web, pdf'
+      translated: false
+
+  - title: 'Creando una Aplicación Express con LoopBack REST API'
+    url: express-with-lb4-rest-tutorial.html
+    output: 'web, pdf'
+    translated: false
+
+- title: 'Ejemplos'
+  url: Examples.html
+  output: 'web, pdf'
+  translated: false
+
+- title: 'Conceptos Claves'
+  url: Concepts.html
+  output: 'web, pdf'
+  translated: false
+  children:
+
+  - title: 'Aplicación'
+    url: Application.html
+    output: 'web, pdf'
+    translated: false
+
+  - title: 'Server'
+    url: Server.html
+    output: 'web, pdf'
+    translated: false
+
+  - title: 'Contexto'
+    url: Context.html
+    output: 'web, pdf'
+    translated: false
+
+  - title: 'Binding'
+    url: Binding.html
+    output: 'web, pdf'
+    translated: false
+
+  - title: 'Inyección de dependencia '
+    url: Dependency-injection.html
+    output: 'web, pdf'
+    translated: false
+    children:
+
+    - title: 'Reserved binding keys'
+      url: Reserved-binding-keys.html
+      output: 'web, pdf'
+      translated: false
+
+  - title: 'Controladores'
+    url: Controllers.html
+    output: 'web, pdf'
+    translated: false
+
+  - title: 'Componentes'
+    url: Components.html
+    output: 'web, pdf'
+    translated: false
+
+  - title: 'Interceptores'
+    url: Interceptors.html
+    output: 'web, pdf'
+    translated: false
+
+  - title: 'DataSources'
+    url: DataSources.html
+    output: 'web, pdf'
+    translated: false
+
+  - title: 'Ciclo de vida de eventos and observadores'
+    url: Life-cycle.html
+    output: 'web, pdf'
+    translated: false
+
+  - title: 'Routes'
+    url: Routes.html
+    output: 'web, pdf'
+    translated: false
+
+  - title: 'Secuencia'
+    url: Sequence.html
+    output: 'web, pdf'
+    translated: false
+    children:
+
+    - title: 'Solicitudes de enrutamiento'
+      url: Routing-requests.html
+      output: 'web, pdf'
+      translated: false
+
+    - title: 'Solicitudes de análisis'
+      url: Parsing-requests.html
+      output: 'web, pdf'
+      translated: false
+
+  - title: 'Modelo'
+    url: Model.html
+    output: 'web, pdf'
+    translated: false
+
+  - title: 'Repositorio'
+    url: Repositories.html
+    output: 'web, pdf'
+    translated: false
+
+  - title: 'Relationes'
+    url: Relations.html
+    output: 'web, pdf'
+    translated: false
+    children:
+
+    - title: 'Relación HasMany'
+      url: HasMany-relation.html
+      output: 'web, pdf'
+      translated: false
+
+    - title: 'Relación BelongsTo'
+      url: BelongsTo-relation.html
+      output: 'web, pdf'
+      translated: false
+
+    - title: 'Relación HasOne'
+      url: hasOne-relation.html
+      output: 'web, pdf'
+      translated: false
+
+  - title: 'Decoradores'
+    url: Decorators.html
+    output: 'web, pdf'
+    translated: false
+    children:
+
+    - title: 'Decoradores OpenAPI'
+      url: Decorators_openapi.html
+      output: 'web, pdf'
+      translated: false
+
+    - title: 'Decorador de inyeción de dependencia'
+      url: Decorators_inject.html
+      output: 'web, pdf'
+      translated: false
+
+    - title: 'Decorador de Authenticatión'
+      url: Decorators_authenticate.html
+      output: 'web, pdf'
+      translated: false
+
+    - title: 'Decoradores de repositorio'
+      url: Decorators_repository.html
+      output: 'web, pdf'
+      translated: false
+
+  - title: 'Error handling'
+    url: Error-handling.html
+    output: 'web, pdf'
+    translated: false
+
+- title: 'Tutoriales'
+  url: How-tos.html
+  output: 'web, pdf'
+  translated: false
+  children:
+
+    - title: 'Exponiendo API de GraphQL'
+      url: exposing-graphql-apis.html
+      output: 'web, pdf'
+      translated: false
+
+    - title: 'Implementación en IBM Cloud'
+      url: Deploying-to-IBM-Cloud.html
+      output: 'web, pdf'
+      translated: false
+
+    - title: 'Implementación de Kubernetes en IBM Cloud'
+      url: deploying_to_ibm_cloud_kubernetes.html
+      output: 'web, pdf'
+      translated: false
+
+    - title: 'Despliegue con pm2 y nginx'
+      url: deploying-with-pm2-and-nginx.html
+      output: 'web, pdf'
+      translated: false
+
+    - title: 'Sirviendo archivos estáticos'
+      url: Serving-static-files.html
+      output: 'web, pdf'
+      translated: false
+
+    - title: 'Migraciones de base de datos'
+      url: Database-migrations.html
+      output: 'web, pdf'
+      translated: false
+
+- title: 'Arrancar una aplicación'
+  url: Booting-an-Application.html
+  output: 'web, pdf'
+  translated: false
+
+- title: 'Utilizando Componentes'
+  url: Using-components.html
+  output: 'web, pdf'
+  translated: false
+  children:
+
+  - title: 'Explorador de API REST hospedado'
+    url: Self-hosted-rest-api-explorer.html
+    output: 'web, pdf'
+    translated: false
+
+  - title: 'Autorización'
+    url: Loopback-component-authorization.html
+    output: 'web, pdf'
+    translated: false
+
+  - title: 'Arranque y monte una aplicación LoopBack 3'
+    url: Boot-and-Mount-a-LoopBack-3-application.html
+    output: 'web, pdf'
+    translated: false
+
+- title: 'llamando otras APIs'
+  url: Calling-other-APIs-and-web-services.html
+  output: 'web, pdf'
+  translated: false
+
+- title: 'Para usuarios de LoopBack 3.x'
+  url: LoopBack-3.x.html
+  output: 'web, pdf'
+  translated: false
+  children:
+
+  - title: 'Entendiendo las diferencias entre LoopBack 3 y LoopBack 4'
+    url: Understanding-the-differences.html
+    output: 'web, pdf'
+    translated: false
+
+  - title: 'Migrando desde LoopBack 3'
+    url: Migrating-from-LoopBack-3.html
+    output: 'web, pdf'
+    translated: false
+
+- title: 'Interfaz de Command-line'
+  url: Command-line-interface.html
+  output: 'web, pdf'
+  translated: false
+  children:
+
+  - title: 'Generador de Applicación'
+    url: Application-generator.html
+    output: 'web, pdf'
+    translated: false
+
+  - title: 'Generador de Controlador'
+    url: Controller-generator.html
+    output: 'web, pdf'
+    translated: false
+
+  - title: 'Generador de DataSource'
+    url: DataSource-generator.html
+    output: 'web, pdf'
+    translated: false
+
+  - title: 'Generador de Modelo'
+    url: Model-generator.html
+    output: 'web, pdf'
+    translated: false
+
+  - title: 'Descubrimiento del modelo'
+    url: Discovering-models.html
+    output: 'web, pdf'
+    translated: false
+
+  - title: 'Repositorio generator'
+    url: Repository-generator.html
+    output: 'web, pdf'
+    translated: false
+
+  - title: 'Generador de Servicio'
+    url: Service-generator.html
+    output: 'web, pdf'
+    translated: false
+
+  - title: 'Generador de OpenAPI'
+    url: OpenAPI-generator.html
+    output: 'web, pdf'
+    translated: false
+
+  - title: 'Generador de observadores del ciclo de vida'
+    url: Life-cycle-observer-generator.html
+    output: 'web, pdf'
+    translated: false
+
+  - title: 'Global interceptor generator'
+    url: Interceptor-generator.html
+    output: 'web, pdf'
+    translated: false
+
+  - title: 'Generador de extensión'
+    url: Extension-generator.html
+    output: 'web, pdf'
+    translated: false
+
+  - title: 'Descarga de ejemplos'
+    url: Download-examples.html
+    output: 'web, pdf'
+    translated: false
+
+- title: 'Mejores practicas'
+  url: Best-practices.html
+  output: 'web, pdf'
+  translated: false
+  children:
+
+  - title: 'Definiendo la API usando el enfoque de código primero'
+    url: Defining-the-API-using-code-first-approach.html
+    output: 'web, pdf'
+    translated: false
+
+  - title: 'Definiendo tu estrategia de prueba'
+    url: Defining-your-testing-strategy.html
+    output: 'web, pdf'
+    translated: false
+
+  - title: 'Probando tu aplicación'
+    url: Testing-your-application.html
+    output: 'web, pdf'
+    translated: false
+
+- title: 'Extendiendo LoopBack 4'
+  url: Extending-LoopBack-4.html
+  output: 'web, pdf'
+  translated: false
+  children:
+
+  - title: 'Creando componentes'
+    url: Creating-components.html
+    output: 'web, pdf'
+    translated: false
+
+  - title: 'Creando decoradores'
+    url: Creating-decorators.html
+    output: 'web, pdf'
+    translated: false
+
+  - title: 'Creando servers'
+    url: Creating-servers.html
+    output: 'web, pdf'
+    translated: false
+
+  - title: 'Extension point and extensions'
+    url: Extension-point-and-extensions.html
+    output: 'web, pdf'
+    translated: false
+
+  - title: 'Extendiendo request body parsing'
+    url: Extending-request-body-parsing.html
+    output: 'web, pdf'
+    translated: false
+
+  - title: 'Ciclo de vida de la extensión'
+    url: Extension-life-cycle.html
+    output: 'web, pdf'
+    translated: false
+
+  - title: 'Probando tu extensión'
+    url: Testing-your-extension.html
+    output: 'web, pdf'
+    translated: false
+
+- title: 'Crafting LoopBack 4'
+  url: Crafting-LoopBack-4.html
+  output: 'web, pdf'
+  translated: false
+
+- title: 'FAQ'
+  url: FAQ.html
+  output: 'web, pdf'
+  translated: false
+
+- title: 'API docs'
+  url: apidocs.index.html
+  output: 'web, pdf'
+  translated: false
+
+- title: 'Referencia'
+  url: Reference.html
+  output: 'web, pdf'
+  translated: false
+  children:
+
+  - title: 'Glosario'
+    url: Glossary.html
+    output: 'web, pdf'
+    translated: false
+
+  - title: 'Consideraciones para la preparación GDPR'
+    url: Deploy-for-GDPR-readiness.html
+    output: 'web, pdf'
+    translated: false

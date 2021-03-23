@@ -1,0 +1,30 @@
+---
+layout: page
+toc: false
+---
+{% include custom/langconfigs.html %}
+
+<div markdown="span" class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i>
+  <b>This page has not yet been translated into {{language}}</b> </div>
+<p><b>In the meantime, see the <a id="en_article">English article</a></b>.</p>
+
+<script>
+var getQueryString = function ( field, url ) {
+    var href = url ? url : window.location.href;
+    var reg = new RegExp( '[?&]' + field + '=([^&#]*)', 'i' );
+    var string = reg.exec(href);
+    return string ? string[1] : null;
+};
+var en_url = getQueryString('url').replace( "{{page.lang}}", "en" );
+var en_title = decodeURI( getQueryString('title') );
+console.log("Title is " + en_title);
+// document.write("See the <a target='blank' href='" + en_url + "'>English page</a>");
+$(function(){
+   $("#en_article").attr("href", en_url);
+   var domtitle = $("h1.post-title-main").text();
+   console.log("DOM TITLE IS " + domtitle);
+   $("h1.post-title-main").text( domtitle + ": " + en_title );
+});
+</script>
+
+{{content}}

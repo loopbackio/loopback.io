@@ -1,0 +1,157 @@
+title: Contributing to LoopBack
+url: index.html
+children:
+
+- title: Governance
+  url: Governance.html
+  output: web, pdf
+
+- title: Reporting issues
+  url: Reporting-issues.html
+  output: web, pdf
+
+- title: Contributing code
+  url: code-contrib.html
+  output: web, pdf
+  children:
+
+  - title: LoopBack 2.x, 3.x
+    url: code-contrib-lb2-lb3.html
+    output: web, pdf
+    children: 
+
+    - title: Code style guide
+      url: style-guide-es6.html
+      output: web, pdf
+
+    - title: Using ESLint
+      url: eslint-guide.html
+      output: web, pdf
+
+    - title: Git commit message guidelines
+      url: git-commit-messages.html
+      output: web, pdf
+
+    - title: Triaging pull requests
+      url: triaging-pull-requests.html
+      output: web, pdf
+  
+  - title: LoopBack 4
+    url: /doc/en/lb4/code-contrib-lb4.html
+    output: web, pdf
+    children:
+
+    - title: Submitting a pull request to LoopBack 4
+      url: /doc/en/lb4/submitting_a_pr.html
+      output: web, pdf
+    
+- title: Contributing to docs
+  url: doc-contrib.html
+  output: web, pdf
+  children:
+
+  - title: Using Jekyll
+    url: jekyll_getting_started.html
+    output: web, pdf
+    children:
+
+    - title: Content reuse
+      url: content_reuse.html
+      output: web, pdf
+
+    - title: Including READMEs
+      url: Including-READMEs.html
+      output: web, pdf
+
+  - title: Authoring pages
+    url: pages.html
+    output: web, pdf
+
+    children:
+    - title: Markdown style guide
+      url: Markdown-style-guide.html
+      output: web, pdf
+
+    - title: Documentation style guide
+      url: Doc-style-guide.html
+      output: web, pdf
+
+    - title: README guidelines
+      url: README-guidelines.html
+      output: web, pdf
+
+  - title: Navigation
+    url: navigation.html
+    output: web, pdf
+
+    children:
+    - title: Sidebar navigation
+      url: sidebar_navigation.html
+      output: web, pdf
+
+    - title: Tags
+      url: tags.html
+      output: web, pdf
+
+  - title: Formatting
+    url: formatting.html
+    output: web, pdf
+
+    children:
+    - title: Alerts
+      url: alerts.html
+      output: web, pdf
+
+    - title: Images
+      url: images.html
+      output: web, pdf
+
+    - title: Code samples
+      url: code_samples.html
+      output: web, pdf
+
+    - title: Tooltips
+      url: adding_tooltips.html
+      output: web, pdf
+
+    - title: Icons
+      url: icons.html
+      output: web, pdf
+
+    - title: Links
+      url: hyperlinks.html
+      output: web, pdf
+
+    - title: Tables
+      url: tables.html
+      output: web, pdf
+
+  - title: Special layouts
+    url: layouts.html
+    output: web, pdf
+
+    children:
+    - title: README layout
+      url: readmes.html
+      output: web, pdf
+
+    - title: Navgroup layout
+      url: navgroups.html
+      output: web, pdf
+
+    - title: FAQ layout
+      url: faq_layout.html
+      output: web, pdf
+
+  - title: Translation
+    url: translation.html
+    output: web, pdf
+
+    children:
+    - title: Adding a new language
+      url: Adding_a_new_language.html
+      output: web, pdf
+
+    - title: Translating articles
+      url: Translating_articles.html
+      output: web, pdf

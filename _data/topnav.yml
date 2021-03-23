@@ -1,0 +1,70 @@
+#Topnav dropdowns
+topnav_dropdowns:
+- title: Topnav dropdowns
+  folders:
+    - title: API Docs
+      folderitems:
+        - title: LoopBack 4
+          external_url: https://loopback.io/doc/en/lb4/apidocs.index.html
+        - title: LoopBack 3.x
+          external_url: http://apidocs.loopback.io
+    - title: View
+      folderitems:
+        - title: LoopBack Overview
+          url: /
+        - title: LoopBack 4
+          url: /doc/en/lb4/
+        - title: LoopBack 3.x
+          url: /doc/en/lb3/
+        - title: LoopBack 2.x
+          url: /doc/en/lb2/
+        - title: Community projects
+          url: /doc/en/community/
+        - title: Contributing to LoopBack
+          url: /doc/en/contrib/
+        - title: Security advisories
+          url: /doc/en/sec/
+    - title: Resources
+      folderitems:
+        - title: Docs Github Repo
+          external_url: https://github.com/strongloop/loopback.io
+        - title: Announcements Mailing List
+          external_url: https://groups.google.com/forum/#!forum/loopbackjs-announcements
+        - title: Developer Forum
+          external_url: https://groups.google.com/forum/#!forum/loopbackjs
+        - title: LoopBack on Slack
+          external_url: https://join.slack.com/t/loopbackio/shared_invite/zt-8lbow73r-SKAKz61Vdao~_rGf91pcsw
+        - title: LoopBack on Stack Overflow
+          external_url: https://stackoverflow.com/questions/tagged/strongloop+or+loopback4+or+loopbackjs
+        - title: StrongLoop Blog - LoopBack
+          external_url: https://strongloop.com/strongblog/tag_LoopBack.html
+    - title: Translations
+      folderitems:
+        - title: "Español (v2)"
+          url: /doc/es/lb2/
+        - title: "Español (v4)"
+          url: /doc/es/lb4/
+        - title: "Français (v2)"
+          url: /doc/fr/lb2/
+        - title: "Français (v4)"
+          url: /doc/fr/lb4/
+        - title: "한국어 (v2)"
+          url: /doc/ko/lb2/
+        - title: "한국어 (v3)"
+          url: /doc/ko/lb3/
+        - title: "Português (v2)"
+          url: /doc/pt-br/lb2/
+        - title: "Português (v4)"
+          url: /doc/pt-br/lb4/
+        - title: "日本語 (v2)"
+          url: /doc/ja/lb2/
+        - title: "日本語 (v3)"
+          url: /doc/ja/lb3/
+        - title: "日本語 (v4)"
+          url: /doc/ja/lb4/
+        - title: "Pусский (v2)"
+          url: /doc/ru/lb2/
+        - title: "中文 (v2)"
+          url: /doc/zh/lb2/
+        - title: "中文 (v4)"
+          url: /doc/zh/lb4/

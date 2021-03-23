@@ -1,0 +1,71 @@
+{% if jekyll.environment == "production" %}
+  {% assign base = site.url %}
+{% endif %}
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-lg navbar-brand no_icon" href="{{base}}/doc/index.html">
+              <img class="no_icon" style="width:147px;" src="{{base}}/images/branding/logo/white/loopback.svg">&nbsp;<span class="projectTitle"></span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- entries without drop-downs appear here -->
+                {% for entry in site.data.topnav.topnav %}
+                  {% for item in entry.items %}
+                    {% if item.external_url %}
+                    <li><a href="{{item.external_url}}" target="_blank">{{item.title}}</a></li>
+                    {% elsif page.url contains item.url %}
+                    <li class="active"><a href="{{item.url }}">{{item.title}}</a></li>
+                    {% else %}
+                    <li><a href="{{item.url }}">{{item.title}}</a></li>
+                    {% endif %}
+                  {% endfor %}
+                {% endfor %}
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                {% for entry in site.data.topnav.topnav_dropdowns %}
+                {% for folder in entry.folders %}
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{ folder.title }}<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        {% for folderitem in folder.folderitems %}
+                        <!-- page.url is {{page.url}} .... folderitem.url is {{folderitem.url}} -->
+                          {% if folderitem.external_url %}
+                            <li><a href="{{folderitem.external_url}}" target="_blank">{{folderitem.title}}</a></li>
+                          {% elsif page.url contains folderitem.url and folderitem.title != 'LoopBack Overview' %}
+                            <li class="dropdownActive"><a href="{{folderitem.url }}">{{folderitem.title}}</a></li>
+                          {% else %}
+                            <li><a href="{{folderitem.url }}">{{folderitem.title}}</a></li>
+                          {% endif %}
+                        {% endfor %}
+                    </ul>
+                </li>
+                {% endfor %}
+                {% endfor %}
+                {% if site.feedback_disable == null or site.feedback_disable == false %}
+			{% include feedback.html %}
+    {% endif %}
+                <li>
+                    <form id="search" name="search" class="input-group lb-search" action="/search" method="GET">
+                        <input type="text" class="form-control search-bar" placeholder="Search (powered by Watson)" name="q">
+                        {% if page.sidebar contains "lb" %}
+                          <input type="hidden" name="sidebar" value="{{page.sidebar}}">
+                        {% endif %}
+                        <div class="input-group-btn">
+                            <button type="submit" class="btn btn-default" aria-label="search">
+                              <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                            </button>
+                        </div>
+                      </form>
+                </li>
+            </ul>
+        </div>
+      </div>
+</nav>

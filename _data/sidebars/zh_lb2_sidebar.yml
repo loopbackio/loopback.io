@@ -1,0 +1,930 @@
+## definition of `menuitem`===========
+# title: string
+# url: string
+# output: [ enum{web, pdf} ] (expressed as comma separated string in YAML)
+# children?: [ menuitem ]
+
+## top level property=================
+# entries: [ menuitem ]
+
+
+title: Loopback 中文
+url: '/doc/zh/lb2/index.html'
+translated: true
+children:
+
+  - title: '安装 StrongLoop'
+    url: '/doc/zh/lb2/6095101.html'
+    translated: true
+    output: 'web, pdf'
+    children:
+
+    - title: 'Updating to the latest version'
+      url: '/doc/zh/lb2/Updating-to-the-latest-version.html'
+      output: 'web, pdf'
+
+    - title: 'StrongLoop Labs'
+      url: '/doc/zh/lb2/StrongLoop-Labs.html'
+      output: 'web, pdf'
+
+  - title: 'LoopBack 核心概念'
+    translated: true
+    url: '/doc/zh/lb2/6095111.html'
+    output: 'web, pdf'
+
+  - title: 'LoopBack FAQ'
+    url: '/doc/zh/lb2/LoopBack-FAQ.html'
+    output: 'web, pdf'
+
+  - title: '安全性建议'
+    translated: true
+    url: '/doc/zh/lb2/Security-advisories.html'
+    output: 'web, pdf'
+    children:
+
+    - title: 'Security advisory 01-09-2015'
+      url: '/doc/zh/lb2/Security-advisory-01-09-2015.html'
+      output: 'web, pdf'
+
+  - title: 'LoopBack 初级教程'
+    translated: true
+    url: '/doc/zh/lb2/6095006.html'
+    output: 'web, pdf'
+    children:
+
+    - title: '创建一个简单的API'
+      translated: true
+      url: '/doc/zh/lb2/6095007.html'
+      output: 'web, pdf'
+
+    - title: '使用API浏览器'
+      translated: true
+      url: '/doc/zh/lb2/6095009.html'
+      output: 'web, pdf'
+
+    - title: 'Connect your API to a data source'
+      translated: true
+      url: '/doc/zh/lb2/Connect-your-API-to-a-data-source.html'
+      output: 'web, pdf'
+
+    - title: 'Extend your API'
+      url: '/doc/zh/lb2/Extend-your-API.html'
+      output: 'web, pdf'
+
+    - title: 'Add a static web page'
+      url: '/doc/zh/lb2/Add-a-static-web-page.html'
+      output: 'web, pdf'
+
+    - title: 'Add a custom Express route'
+      url: '/doc/zh/lb2/Add-a-custom-Express-route.html'
+      output: 'web, pdf'
+      translated: true
+
+    - title: 'Next steps'
+      url: '/doc/zh/lb2/Next-steps.html'
+      output: 'web, pdf'
+
+  - title: 'Getting started part II'
+    url: '/doc/zh/lb2/Getting-started-part-II.html'
+    output: 'web, pdf'
+    children:
+
+    - title: 'Introducing the Coffee Shop Reviews app'
+      url: '/doc/zh/lb2/Introducing-the-Coffee-Shop-Reviews-app.html'
+      output: 'web, pdf'
+
+    - title: 'Create new data source'
+      url: '/doc/zh/lb2/Create-new-data-source.html'
+      output: 'web, pdf'
+
+    - title: 'Create new models'
+      url: '/doc/zh/lb2/Create-new-models.html'
+      output: 'web, pdf'
+
+    - title: 'Define model relations'
+      url: '/doc/zh/lb2/Define-model-relations.html'
+      output: 'web, pdf'
+
+    - title: 'Define access controls'
+      url: '/doc/zh/lb2/Define-access-controls.html'
+      output: 'web, pdf'
+
+    - title: 'Define a remote hook'
+      url: '/doc/zh/lb2/Define-a-remote-hook.html'
+      output: 'web, pdf'
+
+    - title: 'Create AngularJS client'
+      url: '/doc/zh/lb2/Create-AngularJS-client.html'
+      output: 'web, pdf'
+
+    - title: 'Learn more'
+      url: '/doc/zh/lb2/Learn-more.html'
+      translated: true
+      output: 'web, pdf'
+
+  - title: 'Creating an application'
+    url: '/doc/zh/lb2/Creating-an-application.html'
+    output: 'web, pdf'
+    children:
+
+    - title: 'Using LoopBack tools'
+      url: '/doc/zh/lb2/Using-LoopBack-tools.html'
+      output: 'web, pdf'
+
+    - title: 'Environment-specific configuration'
+      url: '/doc/zh/lb2/Environment-specific-configuration.html'
+      output: 'web, pdf'
+
+    - title: 'Versioning your API'
+      url: '/doc/zh/lb2/Versioning-your-API.html'
+      output: 'web, pdf'
+
+  - title: 'Managing users'
+    url: '/doc/zh/lb2/Managing-users.html'
+    output: 'web, pdf'
+    children:
+
+    - title: 'Registering users'
+      url: '/doc/zh/lb2/Registering-users.html'
+      output: 'web, pdf'
+
+    - title: 'Logging in users'
+      url: '/doc/zh/lb2/Logging-in-users.html'
+      output: 'web, pdf'
+
+    - title: 'Partitioning users with realms'
+      url: '/doc/zh/lb2/Partitioning-users-with-realms.html'
+      output: 'web, pdf'
+
+  - title: '用户认证和授权'
+    url: '/doc/zh/lb2/6094988.html'
+    translated: true
+    output: 'web, pdf'
+    children:
+
+    - title: 'Controlling data access'
+      url: '/doc/zh/lb2/Controlling-data-access.html'
+      output: 'web, pdf'
+
+    - title: 'Making authenticated requests'
+      url: '/doc/zh/lb2/Making-authenticated-requests.html'
+      output: 'web, pdf'
+
+    - title: 'Defining and using roles'
+      url: '/doc/zh/lb2/Defining-and-using-roles.html'
+      output: 'web, pdf'
+
+    - title: 'Accessing related models'
+      url: '/doc/zh/lb2/Accessing-related-models.html'
+      output: 'web, pdf'
+      translated: true
+
+    - title: 'Creating a default admin user'
+      url: '/doc/zh/lb2/Creating-a-default-admin-user.html'
+      output: 'web, pdf'
+
+    - title: 'Security considerations'
+      url: '/doc/zh/lb2/Security-considerations.html'
+      output: 'web, pdf'
+
+    - title: 'Tutorial: access control'
+      url: '/doc/zh/lb2/Tutorial-access-control.html'
+      output: 'web, pdf'
+
+  - title: 'Defining models'
+    url: '/doc/zh/lb2/Defining-models.html'
+    output: 'web, pdf'
+    children:
+
+    - title: 'Creating models'
+      url: '/doc/zh/lb2/Creating-models.html'
+      output: 'web, pdf'
+      children:
+
+      - title: 'Using the model generator'
+        url: '/doc/zh/lb2/Using-the-model-generator.html'
+        output: 'web, pdf'
+
+      - title: 'Discovering models from relational databases'
+        url: '/doc/zh/lb2/Discovering-models-from-relational-databases.html'
+        output: 'web, pdf'
+        children:
+
+        - title: 'Database discovery API'
+          url: '/doc/zh/lb2/Database-discovery-API.html'
+          output: 'web, pdf'
+
+      - title: 'Creating models from unstructured data'
+        url: '/doc/zh/lb2/Creating-models-from-unstructured-data.html'
+        output: 'web, pdf'
+
+    - title: 'Customizing models'
+      url: '/doc/zh/lb2/Customizing-models.html'
+      output: 'web, pdf'
+
+    - title: 'Attaching models to data sources'
+      url: '/doc/zh/lb2/Attaching-models-to-data-sources.html'
+      output: 'web, pdf'
+
+    - title: 'Exposing models over REST'
+      url: '/doc/zh/lb2/Exposing-models-over-REST.html'
+      output: 'web, pdf'
+
+    - title: 'Validating model data'
+      url: '/doc/zh/lb2/Validating-model-data.html'
+      output: 'web, pdf'
+
+    - title: 'Creating model relations'
+      url: '/doc/zh/lb2/Creating-model-relations.html'
+      output: 'web, pdf'
+      children:
+
+      - title: 'Tutorial: model relations'
+        url: '/doc/zh/lb2/6094931.html'
+        output: 'web, pdf'
+
+      - title: 'BelongsTo relations'
+        url: '/doc/zh/lb2/BelongsTo-relations.html'
+        output: 'web, pdf'
+
+      - title: 'HasOne relations'
+        url: '/doc/zh/lb2/HasOne-relations.html'
+        output: 'web, pdf'
+
+      - title: 'HasMany relations'
+        url: '/doc/zh/lb2/HasMany-relations.html'
+        output: 'web, pdf'
+
+      - title: 'HasManyThrough relations'
+        url: '/doc/zh/lb2/HasManyThrough-relations.html'
+        output: 'web, pdf'
+
+      - title: 'HasAndBelongsToMany relations'
+        url: '/doc/zh/lb2/HasAndBelongsToMany-relations.html'
+        output: 'web, pdf'
+
+      - title: 'Polymorphic relations'
+        url: '/doc/zh/lb2/Polymorphic-relations.html'
+        output: 'web, pdf'
+
+      - title: 'Querying related models'
+        url: '/doc/zh/lb2/Querying-related-models.html'
+        output: 'web, pdf'
+
+      - title: 'Embedded models and relations'
+        url: '/doc/zh/lb2/Embedded-models-and-relations.html'
+        output: 'web, pdf'
+
+  - title: 'Connecting models to data sources'
+    url: '/doc/zh/lb2/Connecting-models-to-data-sources.html'
+    output: 'web, pdf'
+    children:
+
+    - title: 'Tutorial: Connecting to databases'
+      url: '/doc/zh/lb2/6094961.html'
+      output: 'web, pdf'
+      children:
+
+      - title: 'Connecting to MongoDB'
+        url: '/doc/zh/lb2/Connecting-to-MongoDB.html'
+        output: 'web, pdf'
+
+    - title: 'Creating a database schema from models'
+      url: '/doc/zh/lb2/Creating-a-database-schema-from-models.html'
+      output: 'web, pdf'
+
+    - title: 'Executing native SQL'
+      url: '/doc/zh/lb2/Executing-native-SQL.html'
+      output: 'web, pdf'
+
+    - title: 'Database connectors'
+      url: '/doc/zh/lb2/Database-connectors.html'
+      output: 'web, pdf'
+      children:
+
+      - title: 'Memory connector'
+        url: '/doc/zh/lb2/Memory-connector.html'
+        output: 'web, pdf'
+
+      - title: 'MongoDB connector'
+        url: '/doc/zh/lb2/MongoDB-connector.html'
+        output: 'web, pdf'
+        children:
+
+          - title: 'Using MongoLab'
+            url: '/doc/zh/lb2/Using-MongoLab.html'
+            output: 'web, pdf'
+
+      - title: 'MySQL connector'
+        url: '/doc/zh/lb2/MySQL-connector.html'
+        output: 'web, pdf'
+
+      - title: 'Oracle connector'
+        url: '/doc/zh/lb2/Oracle-connector.html'
+        output: 'web, pdf'
+        children:
+
+          - title: 'Installing the Oracle connector'
+            url: '/doc/zh/lb2/Installing-the-Oracle-connector.html'
+            output: 'web, pdf'
+
+      - title: 'PostgreSQL connector'
+        url: '/doc/zh/lb2/PostgreSQL-connector.html'
+        output: 'web, pdf'
+
+      - title: 'Redis connector'
+        url: '/doc/zh/lb2/Redis-connector.html'
+        output: 'web, pdf'
+
+      - title: 'SQL Server connector'
+        url: '/doc/zh/lb2/SQL-Server-connector.html'
+        output: 'web, pdf'
+
+    - title: 'Non-database connectors'
+      url: '/doc/zh/lb2/Non-database-connectors.html'
+      output: 'web, pdf'
+      children:
+
+      - title: 'ATG connector'
+        url: '/doc/zh/lb2/ATG-connector.html'
+        output: 'web, pdf'
+
+      - title: 'Email connector'
+        url: '/doc/zh/lb2/Email-connector.html'
+        output: 'web, pdf'
+
+      - title: 'Push connector'
+        url: '/doc/zh/lb2/Push-connector.html'
+        output: 'web, pdf'
+
+      - title: 'Remote connector'
+        url: '/doc/zh/lb2/Remote-connector.html'
+        output: 'web, pdf'
+
+      - title: 'REST connector'
+        url: '/doc/zh/lb2/REST-connector.html'
+        output: 'web, pdf'
+
+      - title: 'SOAP connector'
+        url: '/doc/zh/lb2/SOAP-connector.html'
+        output: 'web, pdf'
+
+      - title: 'Storage connector'
+        url: '/doc/zh/lb2/Storage-connector.html'
+        output: 'web, pdf'
+
+    - title: 'Community connectors'
+      url: '/doc/zh/lb2/Community-connectors.html'
+      output: 'web, pdf'
+
+    - title: 'Advanced topics: data sources'
+      url: '/doc/zh/lb2/6094959.html'
+      output: 'web, pdf'
+      children:
+
+      - title: 'Building a connector'
+        url: '/doc/zh/lb2/Building-a-connector.html'
+        output: 'web, pdf'
+
+  - title: 'Using built-in models'
+    url: '/doc/zh/lb2/Using-built-in-models.html'
+    output: 'web, pdf'
+    children:
+
+    - title: 'Extending built-in models'
+      url: '/doc/zh/lb2/Extending-built-in-models.html'
+      output: 'web, pdf'
+
+    - title: 'Creating database tables for built-in models'
+      url: '/doc/zh/lb2/Creating-database-tables-for-built-in-models.html'
+      output: 'web, pdf'
+
+    - title: 'Model property reference'
+      url: '/doc/zh/lb2/Model-property-reference.html'
+      output: 'web, pdf'
+
+    - title: 'Built-in models REST API'
+      url: '/doc/zh/lb2/Built-in-models-REST-API.html'
+      output: 'web, pdf'
+      children:
+
+      - title: 'PersistedModel REST API'
+        url: '/doc/zh/lb2/PersistedModel-REST-API.html'
+        output: 'web, pdf'
+
+      - title: 'Access token REST API'
+        url: '/doc/zh/lb2/Access-token-REST-API.html'
+        output: 'web, pdf'
+        translated: true
+
+      - title: 'ACL REST API'
+        url: '/doc/zh/lb2/ACL-REST-API.html'
+        output: 'web, pdf'
+        translated: true
+
+      - title: 'Application REST API'
+        url: '/doc/zh/lb2/Application-REST-API.html'
+        output: 'web, pdf'
+
+      - title: 'Email REST API'
+        url: '/doc/zh/lb2/Email-REST-API.html'
+        output: 'web, pdf'
+
+      - title: 'Installation REST API'
+        url: '/doc/zh/lb2/Installation-REST-API.html'
+        output: 'web, pdf'
+
+      - title: 'Push Notification REST API'
+        url: '/doc/zh/lb2/Push-Notification-REST-API.html'
+        output: 'web, pdf'
+
+      - title: 'Relation REST API'
+        url: '/doc/zh/lb2/Relation-REST-API.html'
+        output: 'web, pdf'
+
+      - title: 'Role REST API'
+        url: '/doc/zh/lb2/Role-REST-API.html'
+        output: 'web, pdf'
+
+      - title: 'User REST API'
+        url: '/doc/zh/lb2/User-REST-API.html'
+        output: 'web, pdf'
+
+  - title: 'Working with data'
+    url: '/doc/zh/lb2/Working-with-data.html'
+    output: 'web, pdf'
+    children:
+
+    - title: '创建，更新，删除数据'
+      url: '/doc/zh/lb2/6095120.html'
+      translated: true
+      output: 'web, pdf'
+
+    - title: 'Querying data'
+      url: '/doc/zh/lb2/Querying-data.html'
+      output: 'web, pdf'
+      children:
+
+      - title: 'fields（字段）过滤器'
+        url: '/doc/zh/lb2/6095114.html'
+        translated: true
+        output: 'web, pdf'
+
+      - title: 'Include（加载导航属性）过滤器'
+        url: '/doc/zh/lb2/6095115.html'
+        translated: true
+        output: 'web, pdf'
+
+      - title: 'Limit（返回结果数限制）过滤器'
+        url: '/doc/zh/lb2/6095117.html'
+        translated: true
+        output: 'web, pdf'
+
+      - title: 'Order（排序）过滤器'
+        url: '/doc/zh/lb2/6095116.html'
+        translated: true
+        output: 'web, pdf'
+
+      - title: 'Skip过滤器'
+        url: '/doc/zh/lb2/6095119.html'
+        translated: true
+        output: 'web, pdf'
+
+      - title: 'Where过滤器'
+        url: '/doc/zh/lb2/6095118.html'
+        translated: true
+        output: 'web, pdf'
+
+    - title: '使用数据库事务'
+      url: '/doc/zh/lb2/8880487.html'
+      translated: true
+      output: 'web, pdf'
+
+  - title: '添加应用逻辑'
+    url: '/doc/zh/lb2/6095037.html'
+    translated: true
+    output: 'web, pdf'
+    children:
+
+    - title: '给model添加业务逻辑'
+      url: '/doc/zh/lb2/6095039.html'
+      translated: true
+      output: 'web, pdf'
+      children:
+
+      - title: '远程方法（Remote methods）'
+        url: '/doc/zh/lb2/6095040.html'
+        translated: true
+        output: 'web, pdf'
+
+      - title: '远程钩子'
+        url: '/doc/zh/lb2/6095041.html'
+        translated: true
+        output: 'web, pdf'
+
+      - title: '模型钩子'
+        url: '/doc/zh/lb2/6095042.html'
+        translated: true
+        output: 'web, pdf'
+
+      - title: '操作钩子'
+        url: '/doc/zh/lb2/8880433.html'
+        translated: true
+        output: 'web, pdf'
+
+    - title: '定义启动脚本（boot script）'
+      url: '/doc/zh/lb2/6095038.html'
+      translated: true
+      output: 'web, pdf'
+
+    - title: 'Defining middleware'
+      url: '/doc/zh/lb2/Defining-middleware.html'
+      output: 'web, pdf'
+      children:
+
+      - title: 'Upgrading applications to use phases'
+        url: '/doc/zh/lb2/Upgrading-applications-to-use-phases.html'
+        output: 'web, pdf'
+
+    - title: '使用LoopBack对象'
+      url: '/doc/zh/lb2/6095045.html'
+      translated: true
+      output: 'web, pdf'
+      children:
+
+      - title: 'Prototype versus instance methods'
+        url: '/doc/zh/lb2/Prototype-versus-instance-methods.html'
+        output: 'web, pdf'
+
+    - title: '使用当前上下文'
+      url: '/doc/zh/lb2/6095047.html'
+      translated: true
+      output: 'web, pdf'
+
+    - title: Events
+      url: '/doc/zh/lb2/Events.html'
+      output: 'web, pdf'
+
+    - title: '事件'
+      url: '/doc/zh/lb2/8880469.html'
+      translated: true
+      output: 'web, pdf'
+
+  - title: 'Running and debugging apps'
+    url: '/doc/zh/lb2/Running-and-debugging-apps.html'
+    output: 'web, pdf'
+    children:
+
+    - title: 'Running apps'
+      url: '/doc/zh/lb2/Running-apps.html'
+      output: 'web, pdf'
+
+    - title: 'Setting debug strings'
+      url: '/doc/zh/lb2/Setting-debug-strings.html'
+      output: 'web, pdf'
+
+  - title: 'LoopBack components'
+    url: '/doc/zh/lb2/LoopBack-components.html'
+    output: 'web, pdf'
+    children:
+
+    - title: 'Push notifications'
+      url: '/doc/zh/lb2/Push-notifications.html'
+      output: 'web, pdf'
+      children:
+
+      - title: 'Push notifications for iOS apps'
+        url: '/doc/zh/lb2/Push-notifications-for-iOS-apps.html'
+        output: 'web, pdf'
+
+      - title: 'Push notifications for Android apps'
+        url: '/doc/zh/lb2/Push-notifications-for-Android-apps.html'
+        output: 'web, pdf'
+
+      - title: 'Tutorial: Push notifications'
+        url: '/doc/zh/lb2/6095028.html'
+        output: 'web, pdf'
+        children:
+
+        - title: 'Tutorial: push notifications - LoopBack app'
+          url: '/doc/zh/lb2/6095029.html'
+          output: 'web, pdf'
+
+        - title: 'Tutorial: push notifications - Android client'
+          url: '/doc/zh/lb2/6095030.html'
+          output: 'web, pdf'
+
+        - title: 'Tutorial: push notifications - iOS client'
+          url: '/doc/zh/lb2/6095031.html'
+          output: 'web, pdf'
+
+        - title: 'Tutorial: push notifications - putting it all together'
+          url: '/doc/zh/lb2/6095032.html'
+          output: 'web, pdf'
+
+    - title: 'Storage service'
+      url: '/doc/zh/lb2/Storage-service.html'
+      output: 'web, pdf'
+      children:
+
+      - title: 'Storage service API'
+        url: '/doc/zh/lb2/Storage-service-API.html'
+        output: 'web, pdf'
+
+      - title: 'Storage service REST API'
+        url: '/doc/zh/lb2/Storage-service-REST-API.html'
+        output: 'web, pdf'
+
+    - title: 'Third-party login (Passport)'
+      url: '/doc/zh/lb2/6095015.html'
+      output: 'web, pdf'
+      children:
+
+      - title: 'Configuring providers.json'
+        url: '/doc/zh/lb2/Configuring-providers.json.html'
+        output: 'web, pdf'
+
+      - title: 'Tutorial: third-party login'
+        url: '/doc/zh/lb2/6095016.html'
+        output: 'web, pdf'
+
+    - title: Synchronization
+      url: '/doc/zh/lb2/Synchronization.html'
+      output: 'web, pdf'
+      children:
+
+      - title: 'Sync example app'
+        url: '/doc/zh/lb2/Sync-example-app.html'
+        output: 'web, pdf'
+
+      - title: 'Advanced topics - sync'
+        url: '/doc/zh/lb2/Advanced-topics-sync.html'
+        output: 'web, pdf'
+
+    - title: 'OAuth 2.0'
+      url: '/doc/zh/lb2/OAuth-2.0.html'
+      output: 'web, pdf'
+
+  - title: 'Client SDKs'
+    url: '/doc/zh/lb2/Client-SDKs.html'
+    output: 'web, pdf'
+    children:
+
+    - title: 'Android SDK'
+      url: '/doc/zh/lb2/Android-SDK.html'
+      output: 'web, pdf'
+      children:
+
+      - title: 'Working with files using the Android SDK'
+        url: '/doc/zh/lb2/Working-with-files-using-the-Android-SDK.html'
+        output: 'web, pdf'
+
+      - title: 'Push notifications using Android SDK'
+        url: '/doc/zh/lb2/Push-notifications-using-Android-SDK.html'
+        output: 'web, pdf'
+
+      - title: 'Working with the LocalInstallation class'
+        url: '/doc/zh/lb2/Working-with-the-LocalInstallation-class.html'
+        output: 'web, pdf'
+
+    - title: 'iOS SDK'
+      url: '/doc/zh/lb2/iOS-SDK.html'
+      output: 'web, pdf'
+      children:
+
+      - title: 'iOS SDK (version 1.3)'
+        url: '/doc/zh/lb2/6094913.html'
+        output: 'web, pdf'
+
+      - title: 'Creating a LoopBack iOS app: part one'
+        url: '/doc/zh/lb2/6094912.html'
+        output: 'web, pdf'
+
+      - title: 'Creating a LoopBack iOS app: part two'
+        url: '/doc/zh/lb2/6094911.html'
+        output: 'web, pdf'
+
+    - title: 'AngularJS JavaScript SDK'
+      url: '/doc/zh/lb2/AngularJS-JavaScript-SDK.html'
+      output: 'web, pdf'
+      children:
+
+      - title: 'AngularJS Grunt plugin'
+        url: '/doc/zh/lb2/AngularJS-Grunt-plugin.html'
+        output: 'web, pdf'
+
+      - title: 'Generating Angular API docs'
+        url: '/doc/zh/lb2/Generating-Angular-API-docs.html'
+        output: 'web, pdf'
+
+      - title: 'LoopBack Angular Starter example'
+        url: '/doc/zh/lb2/LoopBack-Angular-Starter-example.html'
+        output: 'web, pdf'
+
+    - title: 'LoopBack in the client'
+      url: '/doc/zh/lb2/LoopBack-in-the-client.html'
+      output: 'web, pdf'
+      children:
+
+      - title: 'Running LoopBack in the browser'
+        url: '/doc/zh/lb2/Running-LoopBack-in-the-browser.html'
+        output: 'web, pdf'
+
+      - title: 'Using Browserify'
+        url: '/doc/zh/lb2/Using-Browserify.html'
+        output: 'web, pdf'
+
+  - title: 'Tutorials and examples'
+    url: '/doc/zh/lb2/Tutorials-and-examples.html'
+    output: 'web, pdf'
+    children:
+
+    - title: 'LoopBack example app'
+      url: '/doc/zh/lb2/LoopBack-example-app.html'
+      output: 'web, pdf'
+      children:
+
+      - title: 'LoopBack example app extra material'
+        url: '/doc/zh/lb2/LoopBack-example-app-extra-material.html'
+        output: 'web, pdf'
+
+    - title: 'Blog posts'
+      url: '/doc/zh/lb2/Blog-posts.html'
+      output: 'web, pdf'
+
+
+  - title: Reference
+    url: '/doc/zh/lb2/Reference.html'
+    output: 'web, pdf'
+    children:
+
+    - title: 'Command-line reference (slc loopback)'
+      url: '/doc/zh/lb2/6095063.html'
+      output: 'web, pdf'
+      children:
+
+      - title: 'ACL generator'
+        url: '/doc/zh/lb2/ACL-generator.html'
+        output: 'web, pdf'
+        translated: true
+
+
+      - title: 'Application generator'
+        url: '/doc/zh/lb2/Application-generator.html'
+        output: 'web, pdf'
+
+      - title: 'Data source generator'
+        url: '/doc/zh/lb2/Data-source-generator.html'
+        output: 'web, pdf'
+
+      - title: 'Example generator'
+        url: '/doc/zh/lb2/Example-generator.html'
+        output: 'web, pdf'
+
+      - title: 'Model generator'
+        url: '/doc/zh/lb2/Model-generator.html'
+        output: 'web, pdf'
+
+      - title: 'Property generator'
+        url: '/doc/zh/lb2/Property-generator.html'
+        output: 'web, pdf'
+
+      - title: 'Relation generator'
+        url: '/doc/zh/lb2/Relation-generator.html'
+        output: 'web, pdf'
+
+      - title: 'Swagger generator'
+        url: '/doc/zh/lb2/Swagger-generator.html'
+        output: 'web, pdf'
+
+    - title: '项目结构参考'
+      url: '/doc/zh/lb2/6095052.html'
+      translated: true
+      output: 'web, pdf'
+      children:
+
+      - title: package.json
+        url: '/doc/zh/lb2/package.json.html'
+        output: 'web, pdf'
+
+      - title: 'server 文件夹'
+        url: '/doc/zh/lb2/6095054.html'
+        translated: true
+        output: 'web, pdf'
+        children:
+
+        - title: config.json
+          url: '/doc/zh/lb2/config.json.html'
+          output: 'web, pdf'
+
+        - title: datasources.json
+          url: '/doc/zh/lb2/datasources.json.html'
+          output: 'web, pdf'
+
+        - title: middleware.json
+          url: '/doc/zh/lb2/middleware.json.html'
+          output: 'web, pdf'
+
+        - title: model-config.json
+          url: '/doc/zh/lb2/model-config.json.html'
+          output: 'web, pdf'
+
+        - title: server.js
+          url: '/doc/zh/lb2/server.js.html'
+          output: 'web, pdf'
+
+      - title: 'common directory'
+        url: '/doc/zh/lb2/common-directory.html'
+        output: 'web, pdf'
+        children:
+
+        - title: 'Model definition JSON file'
+          url: '/doc/zh/lb2/Model-definition-JSON-file.html'
+          output: 'web, pdf'
+
+      - title: 'client directory'
+        url: '/doc/zh/lb2/client-directory.html'
+        output: 'web, pdf'
+
+    - title: 'LoopBack API reference'
+      url: '/doc/zh/lb2/LoopBack-API-reference.html'
+      output: 'web, pdf'
+      children:
+
+      - title: 'LoopBack reference'
+        url: '/doc/zh/lb2/LoopBack-reference.html'
+        output: 'web, pdf'
+        children:
+
+        - title: 'app class'
+          url: '/doc/zh/lb2/app-class.html'
+          output: 'web, pdf'
+
+        - title: 'PersistedModel class'
+          url: '/doc/zh/lb2/PersistedModel-class.html'
+          output: 'web, pdf'
+
+        - title: 'loopback class'
+          url: '/doc/zh/lb2/loopback-class.html'
+          output: 'web, pdf'
+
+        - title: 'Model class'
+          url: '/doc/zh/lb2/Model-class.html'
+          output: 'web, pdf'
+
+        - title: 'Built-in models reference'
+          url: '/doc/zh/lb2/Built-in-models-reference.html'
+          output: 'web, pdf'
+          children:
+
+          - title: ACL
+            url: '/doc/zh/lb2/ACL.html'
+            output: 'web, pdf'
+
+          - title: AccessToken
+            url: '/doc/zh/lb2/AccessToken.html'
+            output: 'web, pdf'
+
+          - title: Application
+            url: '/doc/zh/lb2/Application.html'
+            output: 'web, pdf'
+
+          - title: Email
+            url: '/doc/zh/lb2/Email.html'
+            output: 'web, pdf'
+
+          - title: 'RoleMapping and Role'
+            url: '/doc/zh/lb2/RoleMapping-and-Role.html'
+            output: 'web, pdf'
+
+          - title: User
+            url: '/doc/zh/lb2/User.html'
+            output: 'web, pdf'
+
+        - title: 'LoopBack middleware'
+          url: '/doc/zh/lb2/LoopBack-middleware.html'
+          output: 'web, pdf'
+
+      - title: 'Basic model object'
+        url: '/doc/zh/lb2/Basic-model-object.html'
+        output: 'web, pdf'
+
+      - title: 'Connected model class'
+        url: '/doc/zh/lb2/Connected-model-class.html'
+        output: 'web, pdf'
+
+    - title: 'LoopBack types'
+      url: '/doc/zh/lb2/LoopBack-types.html'
+      output: 'web, pdf'
+
+    - title: 'Valid names in LoopBack'
+      url: '/doc/zh/lb2/Valid-names-in-LoopBack.html'
+      output: 'web, pdf'
+
+    - title: 'LoopBack Definition Language (LDL)'
+      url: '/doc/zh/lb2/6095050.html'
+      output: 'web, pdf'
+
+    - title: 'Error object'
+      url: '/doc/zh/lb2/Error-object.html'
+      output: 'web, pdf'

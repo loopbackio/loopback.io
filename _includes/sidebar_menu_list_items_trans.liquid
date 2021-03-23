@@ -1,0 +1,15 @@
+{% assign stub_page = "Not-yet-translated.html" %}
+{% for item in include.menuitems %}
+  {% if item.output contains "web" %}
+  <li class="{% if item.children.size > 0 %} tree-parent {%else%} leaf-node {% endif %} {% if page.url == item.url %}active{% endif %}">
+    {% if item.children.size > 0 %} <a class="show-hide" href="#"></span> {% endif %}
+    <a class="page-link" rel="nofollow" href="{% if item.translated %}{{item.url}}{% else %}{{stub_page}}?url={{item.url}}&title={{item.title}}{% endif %}">{{item.title}}</a>
+      {% if item.children.size > 0 %}
+      <ul class="nav-list">
+          {% include sidebar_menu_list_items_trans.liquid menuitems=item.children %}
+      </ul>
+      {% endif %}
+  </li>
+  {% endif %}{% comment %} /"if web" {% endcomment %}
+
+{% endfor %}{% comment %} /each item {% endcomment %}

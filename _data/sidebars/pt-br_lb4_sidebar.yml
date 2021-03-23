@@ -1,0 +1,169 @@
+## definition of `menuitem`===========
+# title: string
+# url: string
+# output: [ enum{web, pdf} ] (expressed as comma separated string in YAML)
+# children?: [ menuitem ]
+
+## top level property=================
+# entries: [ menuitem ]
+
+
+title: LoopBack 4
+url: /doc/pt-br/lb4/index.html
+translated: true
+children:
+
+- title: 'Instalação'
+  url: /doc/pt-br/lb4/Installation.html
+  output: 'web, pdf'
+
+- title: 'Primeiros passos'
+  url: /doc/pt-br/lb4/Getting-started.html
+  output: 'web, pdf'
+  children:
+
+  - title: 'Exemplos e tutoriais'
+    url: /doc/pt-br/lb4/Examples-and-tutorials.html
+    output: 'web, pdf'
+
+  - title: 'FAQ'
+    url: /doc/pt-br/lb4/FAQ.html
+    output: 'web, pdf'
+
+- title: 'Conceitos principais'
+  url: /doc/pt-br/lb4/Concepts.html
+  output: 'web, pdf'
+  children:
+
+  - title: 'Aplicação'
+    url: /doc/pt-br/lb4/Application.html
+    output: 'web, pdf'
+    
+  - title: 'Servidor'
+    url: /doc/pt-br/lb4/Server.html
+    output: 'web, pdf'
+
+  - title: 'Context'
+    url: /doc/pt-br/lb4/Context.html
+    output: 'web, pdf'
+
+  - title: 'Dependency injection'
+    url: /doc/pt-br/lb4/Dependency-injection.html
+    output: 'web, pdf'
+
+  - title: 'Controllers'
+    url: /doc/pt-br/lb4/Controllers.html
+    output: 'web, pdf'
+
+  - title: 'Routes'
+    url: /doc/pt-br/lb4/Routes.html
+    output: 'web, pdf'
+
+  - title: 'Sequence'
+    url: /doc/pt-br/lb4/Sequence.html
+    output: 'web, pdf'
+
+  - title: 'Schemas'
+    url: /doc/pt-br/lb4/Schemas.html
+    output: 'web, pdf'
+
+  - title: 'Repositories'
+    url: /doc/pt-br/lb4/Repositories.html
+    output: 'web, pdf'
+
+  - title: 'Decorators'
+    url: /doc/pt-br/lb4/Decorators.html
+    output: 'web, pdf'
+
+- title: 'Using Components'
+  url: /doc/pt-br/lb4/Using-components.html
+  output: 'web, pdf'
+
+- title: 'Calling other APIs'
+  url: /doc/pt-br/lb4/Calling-other-APIs-and-web-services.html
+  output: 'web, pdf'
+
+- title: 'Testing your application'
+  url: /doc/pt-br/lb4/Testing-your-application.html
+  output: 'web, pdf'
+
+- title: 'For current LoopBack users'
+  url: /doc/pt-br/lb4/LoopBack-3.x.html
+  output: 'web, pdf'
+
+- title: 'Command-line interface'
+  url: /doc/pt-br/lb4/Command-line-interface.html
+  output: 'web, pdf'
+  children:
+
+  - title: 'Application generator'
+    url: /doc/pt-br/lb4/Application-generator.html
+    output: 'web, pdf'
+    
+  - title: 'Controller generator'
+    url: /doc/pt-br/lb4/Controller-generator.html
+    output: 'web, pdf'
+
+- title: 'Best practices with Loopback 4'
+  url: /doc/pt-br/lb4/Best-practices-with-Loopback-4.html
+  output: 'web, pdf'
+  children:
+
+  - title: 'Defining and validating the API'
+    url: /doc/pt-br/lb4/Defining-and-validating-the-API.html
+    output: 'web, pdf'
+
+  - title: 'Testing the API'
+    url: /doc/pt-br/lb4/Testing-the-API.html
+    output: 'web, pdf'
+
+  - title: 'Defining your testing strategy'
+    url: /doc/pt-br/lb4/Defining-your-testing-strategy.html
+    output: 'web, pdf'
+
+  - title: 'Implementing features'
+    url: /doc/pt-br/lb4/Implementing-features.html
+    output: 'web, pdf'
+
+  - title: 'Preparing the API for consumption'
+    url: /doc/pt-br/lb4/Preparing-the-API-for-consumption.html
+    output: 'web, pdf'
+
+- title: 'Extending LoopBack 4'
+  url: /doc/pt-br/lb4/Extending-LoopBack-4.html
+  output: 'web, pdf'
+  children:
+
+  - title: 'Creating Components'
+    url: /doc/pt-br/lb4/Creating-components.html
+    output: 'web, pdf'
+
+  - title: 'Testing your extension'
+    url: /doc/pt-br/lb4/Testing-your-extension.html
+    output: 'web, pdf'
+
+- title: 'Crafting LoopBack 4'
+  url: /doc/pt-br/lb4/Crafting-LoopBack-4.html
+  output: 'web, pdf'
+
+- title: 'Language-related concepts'
+  url: /doc/pt-br/lb4/Language-related-concepts.html
+  output: 'web, pdf'
+  children:
+
+  - title: 'Mixin'
+    url: /doc/pt-br/lb4/Mixin.html
+    output: 'web, pdf'
+
+- title: 'Reference'
+  url: /doc/pt-br/lb4/Reference.html
+  output: 'web, pdf'
+  children:
+
+  - title: 'Reserved binding keys'
+    url: /doc/pt-br/lb4/Reserved-binding-keys.html
+    output: 'web, pdf'
+
+  - title: 'Glossary'
+    url: /doc/pt-br/lb4/Glossary.html
+    output: 'web, pdf'

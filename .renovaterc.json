@@ -1,0 +1,47 @@
+{
+    "extends": [
+      ":gitSignOff",
+      "group:recommended",
+      "helpers:disableTypesNodeMajor"
+    ],
+
+    "automerge": false,
+    "branchPrefix": "renovate/",
+    "ignoreUnstable": true,
+    "rangeStrategy": "bump",
+    "statusCheckVerify": true,
+    "updateNotScheduled": true,
+
+    "lockFileMaintenance": {
+      "enabled": true,
+      "schedule": "before 5am on monday"
+    },
+
+    "prConcurrentLimit": 5,
+    "prCreation": "immediate",
+    "prHourlyLimit": 2,
+
+    "semanticCommits": false,
+    "commitMessageTopic": "{{depName}}",
+
+    "separateMajorMinor": true,
+    "separateMinorPatch": false,
+    "packageRules": [
+      {
+        "updateTypes": ["minor", "patch"],
+        "automerge": true
+      },
+      {
+        "depTypeList": ["devDependencies"],
+        "automerge": true
+      }
+    ],
+    "travis": {
+      "enabled": true,
+      "supportPolicy": ["lts", "current"]
+    },
+
+    "masterIssue": true,
+    "masterIssueApproval": false,
+    "masterIssueAutoclose": true
+  }

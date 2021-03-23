@@ -1,0 +1,22 @@
+      <footer class="c-footer x-green">
+        <div class="c-container -padded">
+          <nav class="_nav">
+            <ul class="_nav-list js-nav-list">
+              <li class="_nav-item {% if page.item == 'getting-started' %}-active{% endif %}">
+                <a href="/getting-started">Getting started</a></li>
+              <li class="_nav-item {% if page.item == 'examples' %}-active{% endif %}">
+                <a href="/lb3/examples">Examples</a></li>
+              <li class="_nav-item {% if page.item == 'docs' %}-active{% endif %}">
+                <a href="/doc">Docs</a></li>
+              <li class="_nav-item {% if page.item == 'resources' %}-active{% endif %}">
+                <a href="/resources">Resources</a></li>
+              <li class="_nav-item {% if page.item == 'contributing' %}-active{% endif %}">
+                <a href="/contributing">Contributing</a></li>
+            </ul>
+          </nav>
+          <p class="_copyright">© Copyright 2020 StrongLoop, an IBM company</p>
+          <iframe src="https://ghbtns.com/github-btn.html?user=strongloop&amp;repo=loopback&amp;type=follow" class="c-github-follow"></iframe>
+        </div>
+      </footer>
+    </div>
+    {% include analytics.html %}

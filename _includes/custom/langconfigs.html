@@ -1,0 +1,18 @@
+{% case page.lang %}
+  {% when 'es' %}
+    {% assign language = "Spanish" %}
+  {% when 'fr' %}
+    {% assign language = "French" %}
+  {% when 'ja' %}
+    {% assign language = "Japanese" %}
+  {% when 'ko' %}
+    {% assign language = "Korean" %}
+  {% when 'pt-br' %}
+    {% assign language = "Portuguese" %}
+  {% when 'ru' %}
+    {% assign language = "Russian" %}
+  {% when 'zh' %}
+    {% assign language = "Chinese" %}
+  {% else %}
+    {% assign language = "(unknown language)" %}
+{% endcase %}

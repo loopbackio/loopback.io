@@ -1,0 +1,39 @@
+title: Community projects
+url: index.html
+children:
+
+  - title: 'How to add a project'
+    url: How-to-add-a-project.html
+    output: 'web'
+
+  - title: 'LoopBack 4 community extensions'
+    url: /doc/en/lb4/Community-extensions.html
+    output: 'web'
+
+  - title: 'Elasticsearch connector'
+    url: Elasticsearch-connector.html
+    output: 'web'
+
+  - title: 'LoopBack SDK Builder'
+    url: SDK-builder.html
+    output: 'web'
+
+  - title: 'JSON Schemas'
+    url: JSON-schemas.html
+    output: 'web'
+
+  - title: 'DynamoDB Connector'
+    url: dynamo-connector.html
+    output: 'web'
+
+  - title: 'IoT demo'
+    url: IoT-demo.html
+    output: 'web'
+
+  - title: 'SuperTest models'
+    url: SuperTest-models.html
+    output: 'web'
+
+  - title: 'Declarative test demo'
+    url: Declarative-test-demo.html
+    output: 'web'

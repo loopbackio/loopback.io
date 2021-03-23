@@ -1,0 +1,20 @@
+{% assign pageurl = page.url | split: "/" %}
+{% for item in include.menuitems %}
+  {% comment %} Is this supposed to be output on the `web`site?{% endcomment %}
+  {% if item.output contains "web" %}
+  <li class="{% if item.children.size > 0 %} {% if item.expand == 'true' %} tree-parent-expand {%else%} tree-parent {% endif %} {%else%} leaf-node {% endif %} {% if pageurl.last == item.url %}active{% endif %}">
+    {% if item.children.size > 0 %} <a class="show-hide" href="#"></span> {% endif %}
+    {% if item.url %}
+      <a class="page-link" href="{{item.url}}">{{ item.title }}</a>
+    {% else %}
+      <a class="section-name" href="#">{{ item.title }}</a>
+    {% endif %}
+      {% if item.children.size > 0 %}
+      <ul class="nav-list">
+          {% include sidebar_menu_list_items.liquid menuitems=item.children %}
+      </ul>
+      {% endif %}
+  </li>
+  {% endif %}{% comment %} /"if web" {% endcomment %}
+
+{% endfor %}{% comment %} /each item {% endcomment %}

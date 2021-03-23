@@ -1,0 +1,20 @@
+allowed-tags:
+  - android
+  - angularjs
+  - application_logic
+  - authentication
+  - connectors
+  - contributing
+  - community
+  - data_sources
+  - example_app
+  - getting_started
+  - installation
+  - ios
+  - messaging
+  - models
+  - readme
+  - reference
+  - security
+  - tools
+  - troubleshooting

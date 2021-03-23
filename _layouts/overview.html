@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<!---
+ Copyright (c) 2016  IBM
+ License: MIT
+-->
+<html>
+  {% include overview/head.html %}
+
+  <body class="l-page-{{page.item}} -{{page.item}}-index js-body">
+
+    {% include overview/top.html %}
+    {% if page.item == "index" %}
+      {% include overview/install.html %}
+    {% endif %}
+      </header>
+      {{ content }}
+
+    {% include overview/footer.html %}
+
+  </body>
+</html>
