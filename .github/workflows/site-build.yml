@@ -28,15 +28,13 @@ jobs:
       - name: Install and Build 🔧
         run: |
           bundle install
-          npm ci
+          npm install
           npm ls @loopback/docs 2>/dev/null || true
           npm run build
-
-#     - name: Deploy 🚀
-#       uses: JamesIves/github-pages-deploy-action@3.6.2
-#       with:
-#         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-#         BRANCH: gh-pages
-#         FOLDER: _site
-#         GIT_CONFIG_EMAIL: slnode@ca.ibm.com
-#         GIT_CONFIG_NAME: StrongLoop Bot
+      
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@4.1.0
+        with:
+          ssh-key: ${{ secrets.DEPLOY_KEY }}
+          branch: gh-pages
+          folder: .
