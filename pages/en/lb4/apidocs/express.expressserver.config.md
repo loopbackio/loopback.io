@@ -16,12 +16,6 @@ permalink: /doc/en/lb4/apidocs.express.expressserver.config.html
 <b>Signature:</b>
 
 ```typescript
-protected readonly config?: (HttpOptions & {
-        basePath?: string | undefined;
-        settings?: Record<string, unknown> | undefined;
-    }) | (HttpsOptions & {
-        basePath?: string | undefined;
-        settings?: Record<string, unknown> | undefined;
-    }) | undefined;
+protected readonly config?: ExpressServerConfig | undefined;
 ```
 

@@ -13,6 +13,30 @@ permalink: /doc/en/lb4/changelog.http-server.html
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.3.5](https://github.com/strongloop/loopback-next/compare/@loopback/http-server@2.3.4...@loopback/http-server@2.3.5) (2021-02-09)
+
+**Note:** Version bump only for package @loopback/http-server
+
+
+
+
+
+## [2.3.4](https://github.com/strongloop/loopback-next/compare/@loopback/http-server@2.3.3...@loopback/http-server@2.3.4) (2021-01-21)
+
+**Note:** Version bump only for package @loopback/http-server
+
+
+
+
+
+## [2.3.3](https://github.com/strongloop/loopback-next/compare/@loopback/http-server@2.3.2...@loopback/http-server@2.3.3) (2020-12-07)
+
+**Note:** Version bump only for package @loopback/http-server
+
+
+
+
+
 ## [2.3.2](https://github.com/strongloop/loopback-next/compare/@loopback/http-server@2.3.1...@loopback/http-server@2.3.2) (2020-11-18)
 
 **Note:** Version bump only for package @loopback/http-server

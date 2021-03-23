@@ -16,6 +16,6 @@ permalink: /doc/en/lb4/apidocs.context.binding.source.html
 <b>Signature:</b>
 
 ```typescript
-get source(): ConstantBindingSource<T> | DynamicValueBindingSource<T> | ClassBindingSource<T> | ProviderBindingSource<T> | AliasBindingSource<T> | undefined;
+get source(): BindingSource<T> | undefined;
 ```
 

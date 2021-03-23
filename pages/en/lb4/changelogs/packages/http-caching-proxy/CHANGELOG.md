@@ -13,6 +13,22 @@ permalink: /doc/en/lb4/changelog.http-caching-proxy.html
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.1.21](https://github.com/strongloop/loopback-next/compare/@loopback/http-caching-proxy@2.1.20...@loopback/http-caching-proxy@2.1.21) (2021-02-09)
+
+**Note:** Version bump only for package @loopback/http-caching-proxy
+
+
+
+
+
+## [2.1.20](https://github.com/strongloop/loopback-next/compare/@loopback/http-caching-proxy@2.1.19...@loopback/http-caching-proxy@2.1.20) (2021-01-21)
+
+**Note:** Version bump only for package @loopback/http-caching-proxy
+
+
+
+
+
 ## [2.1.19](https://github.com/strongloop/loopback-next/compare/@loopback/http-caching-proxy@2.1.18...@loopback/http-caching-proxy@2.1.19) (2020-12-07)
 
 **Note:** Version bump only for package @loopback/http-caching-proxy

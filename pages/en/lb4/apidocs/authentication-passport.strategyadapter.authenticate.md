@@ -18,7 +18,7 @@ The function to invoke the contained passport strategy. 1. Create an instance of
 <b>Signature:</b>
 
 ```typescript
-authenticate(request: Request): Promise<UserProfile | RedirectRoute>;
+authenticate(request: Request, options?: AuthenticateOptions): Promise<UserProfile | RedirectRoute>;
 ```
 
 ## Parameters
@@ -26,6 +26,7 @@ authenticate(request: Request): Promise<UserProfile | RedirectRoute>;
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  request | Request | The incoming request. |
+|  options | AuthenticateOptions | Options passed through to strategy.authenticate. |
 
 <b>Returns:</b>
 

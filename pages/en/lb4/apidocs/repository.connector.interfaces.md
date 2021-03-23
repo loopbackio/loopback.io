@@ -16,6 +16,6 @@ permalink: /doc/en/lb4/apidocs.repository.connector.interfaces.html
 <b>Signature:</b>
 
 ```typescript
-interfaces?: string[];
+interfaces?: (string | ConnectorInterfaces.StrongRelation | ConnectorInterfaces.StrongJoins)[];
 ```
 

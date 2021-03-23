@@ -13,6 +13,30 @@ permalink: /doc/en/lb4/changelog.example-soap-calculator.html
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.4.10](https://github.com/strongloop/loopback-next/compare/@loopback/example-soap-calculator@2.4.9...@loopback/example-soap-calculator@2.4.10) (2021-02-09)
+
+**Note:** Version bump only for package @loopback/example-soap-calculator
+
+
+
+
+
+## [2.4.9](https://github.com/strongloop/loopback-next/compare/@loopback/example-soap-calculator@2.4.8...@loopback/example-soap-calculator@2.4.9) (2021-01-21)
+
+**Note:** Version bump only for package @loopback/example-soap-calculator
+
+
+
+
+
+## [2.4.8](https://github.com/strongloop/loopback-next/compare/@loopback/example-soap-calculator@2.4.7...@loopback/example-soap-calculator@2.4.8) (2020-12-07)
+
+**Note:** Version bump only for package @loopback/example-soap-calculator
+
+
+
+
+
 ## [2.4.7](https://github.com/strongloop/loopback-next/compare/@loopback/example-soap-calculator@2.4.6...@loopback/example-soap-calculator@2.4.7) (2020-11-18)
 
 **Note:** Version bump only for package @loopback/example-soap-calculator

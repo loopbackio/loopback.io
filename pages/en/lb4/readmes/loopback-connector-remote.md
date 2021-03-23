@@ -1,5 +1,14 @@
 # loopback-connector-remote
 
+**THIS CONNECTOR DOES NOT SUPPORT LOOPBACK 4**
+
+**⚠️ LoopBack 3 has reached end of life. We are no longer accepting pull requests or providing 
+support for community users. The only exception is fixes for critical bugs and security 
+vulnerabilities provided as part of support for IBM API Connect customers.
+We urge all LoopBack 3 users to migrate their applications to LoopBack 4 as soon as possible. 
+Learn more about
+<a href="https://loopback.io/doc/en/contrib/Long-term-support.html">LoopBack's long term support policy.</a>**
+
 The remote connector enables you to use a LoopBack application as a data source via REST.
 You can use the remote connector with a LoopBack application, a Node application, or a browser-based application that uses [LoopBack in the client](LoopBack-in-the-client.html).
 The connector uses [Strong Remoting](Strong-Remoting.html).
@@ -7,6 +16,7 @@ The connector uses [Strong Remoting](Strong-Remoting.html).
 In general, using the remote connector is more convenient than calling into REST API, and enables you to switch the transport later if you need to.
 
 Use loopback-connector-remote:
+
 - Version 3.x with LoopBack v3 and later.
 - Prior versions with LoopBack v2.
 

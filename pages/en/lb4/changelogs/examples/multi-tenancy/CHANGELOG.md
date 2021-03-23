@@ -13,6 +13,30 @@ permalink: /doc/en/lb4/changelog.example-multi-tenancy.html
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.7.5](https://github.com/strongloop/loopback-next/compare/@loopback/example-multi-tenancy@0.7.4...@loopback/example-multi-tenancy@0.7.5) (2021-02-09)
+
+**Note:** Version bump only for package @loopback/example-multi-tenancy
+
+
+
+
+
+## [0.7.4](https://github.com/strongloop/loopback-next/compare/@loopback/example-multi-tenancy@0.7.3...@loopback/example-multi-tenancy@0.7.4) (2021-01-21)
+
+**Note:** Version bump only for package @loopback/example-multi-tenancy
+
+
+
+
+
+## [0.7.3](https://github.com/strongloop/loopback-next/compare/@loopback/example-multi-tenancy@0.7.2...@loopback/example-multi-tenancy@0.7.3) (2020-12-07)
+
+**Note:** Version bump only for package @loopback/example-multi-tenancy
+
+
+
+
+
 ## [0.7.2](https://github.com/strongloop/loopback-next/compare/@loopback/example-multi-tenancy@0.7.1...@loopback/example-multi-tenancy@0.7.2) (2020-11-18)
 
 **Note:** Version bump only for package @loopback/example-multi-tenancy

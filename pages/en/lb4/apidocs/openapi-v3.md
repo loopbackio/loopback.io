@@ -87,6 +87,7 @@ Functions for more artifacts will be added when needed.
 |  [asSpecEnhancer](./openapi-v3.asspecenhancer.md) | A binding template for spec contributor extensions |
 |  [DEFAULT\_OPENAPI\_SPEC\_INFO](./openapi-v3.default_openapi_spec_info.md) |  |
 |  [oas](./openapi-v3.oas.md) |  |
+|  [PARAMETER\_INDEX](./openapi-v3.parameter_index.md) |  |
 |  [REQUEST\_BODY\_INDEX](./openapi-v3.request_body_index.md) |  |
 |  [TS\_TYPE\_KEY](./openapi-v3.ts_type_key.md) |  |
 

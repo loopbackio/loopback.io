@@ -36,7 +36,7 @@ export declare class Binding<T = BoundValue> extends EventEmitter
 |  [key](./context.binding.key.md) |  | string | Key of the binding |
 |  [providerConstructor](./context.binding.providerconstructor.md) |  | [Constructor](./context.constructor.md)<!-- -->&lt;[Provider](./context.provider.md)<!-- -->&lt;T&gt;&gt; \| undefined | For bindings bound via <code>toProvider()</code>, this property contains the constructor function of the provider class |
 |  [scope](./context.binding.scope.md) |  | [BindingScope](./context.bindingscope.md) | Scope of the binding to control how the value is cached/shared |
-|  [source](./context.binding.source.md) |  | [ConstantBindingSource](./context.constantbindingsource.md)<!-- -->&lt;T&gt; \| [DynamicValueBindingSource](./context.dynamicvaluebindingsource.md)<!-- -->&lt;T&gt; \| [ClassBindingSource](./context.classbindingsource.md)<!-- -->&lt;T&gt; \| [ProviderBindingSource](./context.providerbindingsource.md)<!-- -->&lt;T&gt; \| [AliasBindingSource](./context.aliasbindingsource.md)<!-- -->&lt;T&gt; \| undefined |  |
+|  [source](./context.binding.source.md) |  | [BindingSource](./context.bindingsource.md)<!-- -->&lt;T&gt; \| undefined |  |
 |  [tagMap](./context.binding.tagmap.md) |  | [TagMap](./context.tagmap.md) | Map for tag name/value pairs |
 |  [tagNames](./context.binding.tagnames.md) |  | string\[\] | Get an array of tag names |
 |  [type](./context.binding.type.md) |  | [BindingType](./context.bindingtype.md) \| undefined | Type of the binding value getter |

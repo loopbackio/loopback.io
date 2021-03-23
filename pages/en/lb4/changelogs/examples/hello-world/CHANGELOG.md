@@ -13,6 +13,30 @@ permalink: /doc/en/lb4/changelog.example-hello-world.html
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.1.17](https://github.com/strongloop/loopback-next/compare/@loopback/example-hello-world@2.1.16...@loopback/example-hello-world@2.1.17) (2021-02-09)
+
+**Note:** Version bump only for package @loopback/example-hello-world
+
+
+
+
+
+## [2.1.16](https://github.com/strongloop/loopback-next/compare/@loopback/example-hello-world@2.1.15...@loopback/example-hello-world@2.1.16) (2021-01-21)
+
+**Note:** Version bump only for package @loopback/example-hello-world
+
+
+
+
+
+## [2.1.15](https://github.com/strongloop/loopback-next/compare/@loopback/example-hello-world@2.1.14...@loopback/example-hello-world@2.1.15) (2020-12-07)
+
+**Note:** Version bump only for package @loopback/example-hello-world
+
+
+
+
+
 ## [2.1.14](https://github.com/strongloop/loopback-next/compare/@loopback/example-hello-world@2.1.13...@loopback/example-hello-world@2.1.14) (2020-11-18)
 
 **Note:** Version bump only for package @loopback/example-hello-world

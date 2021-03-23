@@ -13,6 +13,25 @@ permalink: /doc/en/lb4/changelog.metadata.html
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.1.1](https://github.com/strongloop/loopback-next/compare/@loopback/metadata@3.1.0...@loopback/metadata@3.1.1) (2021-02-09)
+
+**Note:** Version bump only for package @loopback/metadata
+
+
+
+
+
+# [3.1.0](https://github.com/strongloop/loopback-next/compare/@loopback/metadata@3.0.5...@loopback/metadata@3.1.0) (2021-01-21)
+
+
+### Features
+
+* fix eslint violations ([062de9c](https://github.com/strongloop/loopback-next/commit/062de9c5f908332f58f54ddf13798a22ca21f1e7))
+
+
+
+
+
 ## [3.0.5](https://github.com/strongloop/loopback-next/compare/@loopback/metadata@3.0.4...@loopback/metadata@3.0.5) (2020-12-07)
 
 **Note:** Version bump only for package @loopback/metadata

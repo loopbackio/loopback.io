@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.express.middleware_context.html
 
 ## MIDDLEWARE\_CONTEXT variable
 
-A symbol to store `MiddlewareContext` on the request object
+A symbol to store `MiddlewareContext` on the request object. This symbol can be referenced by name, before it is created.
 
 <b>Signature:</b>
 

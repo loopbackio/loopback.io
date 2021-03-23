@@ -44,8 +44,15 @@ this.configure(MetricsBindings.COMPONENT).to({
   defaultMetrics: {
     timeout: 5000,
   },
+  defaultLabels: {
+    service: 'api',
+    version: '1.0.0',
+  },
 });
 ```
+
+{% include note.html content="this.configure() must be called before
+this.component() to take effect." %}
 
 It also has to be noted, that by default the OpenAPI spec is disabled and
 therefore the metrics endpoint will not be visible in the API explorer. The spec
@@ -70,12 +77,12 @@ There are three types of metrics being collected by this component:
 
 Prometheus supports two modes to collect metrics:
 
-- pull - scraping from metrics http endpoint exposed by the system being
-  monitored
-- push - pushing metrics from the system being monitored to a push gateway
-
-See
-https://prometheus.io/docs/introduction/faq/#why-do-you-pull-rather-than-push
+- **pull** - scraping from metrics http endpoint exposed by the system being
+  monitored. This is the usual mode of operation. See
+  [Why do you pull rather than push?](https://prometheus.io/docs/introduction/faq/#why-do-you-pull-rather-than-push)
+- **push** - pushing metrics from the system being monitored to a push gateway.
+  Generally used for ephemeral jobs - see
+  [When to use the Pushgateway](https://prometheus.io/docs/practices/pushing/)
 
 ## Try it out
 
@@ -172,13 +179,37 @@ nodejs_heap_space_size_available_bytes{space="new_large_object"} 1047952 1564508
 nodejs_version_info{version="v12.4.0",major="12",minor="4",patch="0"} 1
 # HELP loopback_invocation_duration_seconds method invocation
 # TYPE loopback_invocation_duration_seconds gauge
+loopback_invocation_duration_seconds{targetName="MockController.prototype.success",method="GET",path="/success",statusCode="204"} 0.0002056
 # HELP loopback_invocation_duration_histogram method invocation histogram
 # TYPE loopback_invocation_duration_histogram histogram
-# HELP loopback_invocation_total method invocation counts
+loopback_invocation_duration_histogram_bucket{le="0.005",targetName="MockController.prototype.success",method="GET",path="/success",statusCode="204"} 1
+loopback_invocation_duration_histogram_bucket{le="0.01",targetName="MockController.prototype.success",method="GET",path="/success",statusCode="204"} 1
+loopback_invocation_duration_histogram_bucket{le="0.025",targetName="MockController.prototype.success",method="GET",path="/success",statusCode="204"} 1
+loopback_invocation_duration_histogram_bucket{le="0.05",targetName="MockController.prototype.success",method="GET",path="/success",statusCode="204"} 1
+loopback_invocation_duration_histogram_bucket{le="0.1",targetName="MockController.prototype.success",method="GET",path="/success",statusCode="204"} 1
+loopback_invocation_duration_histogram_bucket{le="0.25",targetName="MockController.prototype.success",method="GET",path="/success",statusCode="204"} 1
+loopback_invocation_duration_histogram_bucket{le="0.5",targetName="MockController.prototype.success",method="GET",path="/success",statusCode="204"} 1
+loopback_invocation_duration_histogram_bucket{le="1",targetName="MockController.prototype.success",method="GET",path="/success",statusCode="204"} 1
+loopback_invocation_duration_histogram_bucket{le="2.5",targetName="MockController.prototype.success",method="GET",path="/success",statusCode="204"} 1
+loopback_invocation_duration_histogram_bucket{le="5",targetName="MockController.prototype.success",method="GET",path="/success",statusCode="204"} 1
+loopback_invocation_duration_histogram_bucket{le="10",targetName="MockController.prototype.success",method="GET",path="/success",statusCode="204"} 1
+loopback_invocation_duration_histogram_bucket{le="+Inf",targetName="MockController.prototype.success",method="GET",path="/success",statusCode="204"} 1
+loopback_invocation_duration_histogram_sum{targetName="MockController.prototype.success",method="GET",path="/success",statusCode="204"} 0.0002112
+loopback_invocation_duration_histogram_count{targetName="MockController.prototype.success",method="GET",path="/success",statusCode="204"} 1
+# HELP loopback_invocation_total method invocation count
 # TYPE loopback_invocation_total counter
-loopback_invocation_total 1
+loopback_invocation_total{targetName="MockController.prototype.success",method="GET",path="/success",statusCode="204"} 1
 # HELP loopback_invocation_duration_summary method invocation summary
 # TYPE loopback_invocation_duration_summary summary
+loopback_invocation_duration_summary{quantile="0.01",targetName="MockController.prototype.success",method="GET",path="/success",statusCode="204"} 0.0002363
+loopback_invocation_duration_summary{quantile="0.05",targetName="MockController.prototype.success",method="GET",path="/success",statusCode="204"} 0.0002363
+loopback_invocation_duration_summary{quantile="0.5",targetName="MockController.prototype.success",method="GET",path="/success",statusCode="204"} 0.0002363
+loopback_invocation_duration_summary{quantile="0.9",targetName="MockController.prototype.success",method="GET",path="/success",statusCode="204"} 0.0002363
+loopback_invocation_duration_summary{quantile="0.95",targetName="MockController.prototype.success",method="GET",path="/success",statusCode="204"} 0.0002363
+loopback_invocation_duration_summary{quantile="0.99",targetName="MockController.prototype.success",method="GET",path="/success",statusCode="204"} 0.0002363
+loopback_invocation_duration_summary{quantile="0.999",targetName="MockController.prototype.success",method="GET",path="/success",statusCode="204"} 0.0002363
+loopback_invocation_duration_summary_sum{targetName="MockController.prototype.success",method="GET",path="/success",statusCode="204"} 0.0002363
+loopback_invocation_duration_summary_count{targetName="MockController.prototype.success",method="GET",path="/success",statusCode="204"} 1
 </pre>
 
 </details>

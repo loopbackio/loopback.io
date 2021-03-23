@@ -18,10 +18,10 @@ Load all interceptors for the given invocation context. It adds interceptors fro
 <b>Signature:</b>
 
 ```typescript
-loadInterceptors(): GenericInterceptorOrKey<InvocationContext>[];
+loadInterceptors(): InterceptorOrKey[];
 ```
 <b>Returns:</b>
 
-[GenericInterceptorOrKey](./context.genericinterceptororkey.md)<!-- -->&lt;[InvocationContext](./context.invocationcontext.md)<!-- -->&gt;\[\]
+[InterceptorOrKey](./context.interceptororkey.md)<!-- -->\[\]
 
 

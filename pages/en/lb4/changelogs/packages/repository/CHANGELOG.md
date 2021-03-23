@@ -13,6 +13,43 @@ permalink: /doc/en/lb4/changelog.repository.html
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.4.1](https://github.com/strongloop/loopback-next/compare/@loopback/repository@3.4.0...@loopback/repository@3.4.1) (2021-02-09)
+
+**Note:** Version bump only for package @loopback/repository
+
+
+
+
+
+# [3.4.0](https://github.com/strongloop/loopback-next/compare/@loopback/repository@3.3.0...@loopback/repository@3.4.0) (2021-01-21)
+
+
+### Bug Fixes
+
+* **repository:** unwanted object param manipulation ([8171744](https://github.com/strongloop/loopback-next/commit/8171744f473ab5a05e8f0758630a73c00ea8e7cf)), closes [#5814](https://github.com/strongloop/loopback-next/issues/5814)
+
+
+### Features
+
+* add connector interface enums ([763bf72](https://github.com/strongloop/loopback-next/commit/763bf720ae1031f8eba2f4a24f9a3bbc855d7781))
+* normalize debug scopes in relations ([b3c52c1](https://github.com/strongloop/loopback-next/commit/b3c52c191fc98cc6fc2b304c838d5b15b62ddcb5))
+
+
+
+
+
+# [3.3.0](https://github.com/strongloop/loopback-next/compare/@loopback/repository@3.2.1...@loopback/repository@3.3.0) (2020-12-07)
+
+
+### Features
+
+* leverage simpler syntax for inclusion ([3bcc61c](https://github.com/strongloop/loopback-next/commit/3bcc61c420672b81e4639e0e0fc7e92035e41219))
+* **filter:** introduce simpler syntax for inclusion ([2fe32ac](https://github.com/strongloop/loopback-next/commit/2fe32ac0f9c820ff1df242ea6e32c972a4dee383))
+
+
+
+
+
 ## [3.2.1](https://github.com/strongloop/loopback-next/compare/@loopback/repository@3.2.0...@loopback/repository@3.2.1) (2020-11-18)
 
 

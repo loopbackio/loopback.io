@@ -87,7 +87,7 @@ This module also serves as a standalone extension to Express to provide extensib
 |  [DEFAULT\_MIDDLEWARE\_CHAIN](./express.default_middleware_chain.md) | Default extension point name for middleware |
 |  [DEFAULT\_MIDDLEWARE\_GROUP](./express.default_middleware_group.md) | Default order group name for Express middleware based global interceptors |
 |  [GLOBAL\_MIDDLEWARE\_INTERCEPTOR\_NAMESPACE](./express.global_middleware_interceptor_namespace.md) | Default namespace for Express middleware based global interceptors |
-|  [MIDDLEWARE\_CONTEXT](./express.middleware_context.md) | A symbol to store <code>MiddlewareContext</code> on the request object |
+|  [MIDDLEWARE\_CONTEXT](./express.middleware_context.md) | A symbol to store <code>MiddlewareContext</code> on the request object. This symbol can be referenced by name, before it is created. |
 |  [MIDDLEWARE\_INTERCEPTOR\_NAMESPACE](./express.middleware_interceptor_namespace.md) | Default namespace for Express middleware based local interceptors |
 |  [MIDDLEWARE\_NAMESPACE](./express.middleware_namespace.md) | Default namespaces for middleware |
 

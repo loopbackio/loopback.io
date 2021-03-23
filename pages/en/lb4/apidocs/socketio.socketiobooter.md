@@ -13,9 +13,7 @@ permalink: /doc/en/lb4/apidocs.socketio.socketiobooter.html
 
 ## SocketIoBooter class
 
-A class that extends BaseArtifactBooter to boot the 'SocketIoController' artifact type. Discovered controllers are bound using `app.controller()`<!-- -->.
-
-Supported phases: configure, discover, load
+A class that extends [BaseArtifactBooter](./boot.baseartifactbooter.md) to boot the  artifact type.
 
 <b>Signature:</b>
 
@@ -23,6 +21,12 @@ Supported phases: configure, discover, load
 export declare class SocketIoBooter extends BaseArtifactBooter 
 ```
 <b>Extends:</b> [BaseArtifactBooter](./boot.baseartifactbooter.md)
+
+## Remarks
+
+Discovered controllers are bound using [Application.controller()](./core.application.controller.md)<!-- -->.
+
+Supported phases: `configure`<!-- -->, `discover`<!-- -->, `load`
 
 ## Constructors
 

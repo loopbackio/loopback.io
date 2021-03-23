@@ -35,7 +35,7 @@ export declare class ExpressServer extends BaseMiddlewareRegistry implements Ser
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
 |  [basePath](./express.expressserver.basepath.md) |  | string | Base path to mount middleware |
-|  [config?](./express.expressserver.config.md) |  | ([HttpOptions](./http-server.httpoptions.md) &amp; { basePath?: string \| undefined; settings?: Record&lt;string, unknown&gt; \| undefined; }) \| ([HttpsOptions](./http-server.httpsoptions.md) &amp; { basePath?: string \| undefined; settings?: Record&lt;string, unknown&gt; \| undefined; }) \| undefined | <i>(Optional)</i> |
+|  [config?](./express.expressserver.config.md) |  | [ExpressServerConfig](./express.expressserverconfig.md) \| undefined | <i>(Optional)</i> |
 |  [expressApp](./express.expressserver.expressapp.md) |  | express.Application | Embedded Express application |
 |  [httpServer](./express.expressserver.httpserver.md) |  | [HttpServer](./http-server.httpserver.md) | HTTP/HTTPS server |
 |  [listening](./express.expressserver.listening.md) |  | boolean | Some of the methods below are copied from RestServer TODO(rfeng): We might want to refactor some methods from RestServer into the base ExpressServer. |

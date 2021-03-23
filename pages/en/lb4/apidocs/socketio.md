@@ -21,7 +21,7 @@ permalink: /doc/en/lb4/apidocs.socketio.html
 |  --- | --- |
 |  [DefaultSocketIoSequence](./socketio.defaultsocketiosequence.md) |  |
 |  [SocketIoApplication](./socketio.socketioapplication.md) |  |
-|  [SocketIoBooter](./socketio.socketiobooter.md) | A class that extends BaseArtifactBooter to boot the 'SocketIoController' artifact type. Discovered controllers are bound using <code>app.controller()</code>.<!-- -->Supported phases: configure, discover, load |
+|  [SocketIoBooter](./socketio.socketiobooter.md) | A class that extends [BaseArtifactBooter](./boot.baseartifactbooter.md) to boot the  artifact type. |
 |  [SocketIoComponent](./socketio.socketiocomponent.md) |  |
 |  [SocketIoConnectionContext](./socketio.socketioconnectioncontext.md) | Request context for a socket.io request |
 |  [SocketIoControllerFactory](./socketio.socketiocontrollerfactory.md) | A factory to instantiate socket.io controllers |
@@ -35,13 +35,7 @@ permalink: /doc/en/lb4/apidocs.socketio.html
 |  Function | Description |
 |  --- | --- |
 |  [getSocketIoMetadata(controllerClass)](./socketio.getsocketiometadata.md) |  |
-|  [socketio(spec)](./socketio.socketio.md) | Decorate a socketio controller class to specify the namespace For example,
-```ts
-@socketio({namespace: '/chats'})
-export class SocketIoController {}
-
-```
- |
+|  [socketio(spec)](./socketio.socketio.md) | Decorate a socketio controller class to specify the namespace. |
 
 ## Interfaces
 

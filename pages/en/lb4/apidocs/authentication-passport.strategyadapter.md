@@ -38,6 +38,6 @@ export declare class StrategyAdapter<U> implements AuthenticationStrategy
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [authenticate(request)](./authentication-passport.strategyadapter.authenticate.md) |  | The function to invoke the contained passport strategy. 1. Create an instance of the strategy 2. add success and failure state handlers 3. authenticate using the strategy |
+|  [authenticate(request, options)](./authentication-passport.strategyadapter.authenticate.md) |  | The function to invoke the contained passport strategy. 1. Create an instance of the strategy 2. add success and failure state handlers 3. authenticate using the strategy |
 
 

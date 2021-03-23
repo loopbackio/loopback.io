@@ -26,7 +26,7 @@ export interface Connector
 |  Property | Type | Description |
 |  --- | --- | --- |
 |  [configModel?](./repository.connector.configmodel.md) | [Model](./repository.model.md) | <i>(Optional)</i> |
-|  [interfaces?](./repository.connector.interfaces.md) | string\[\] | <i>(Optional)</i> |
+|  [interfaces?](./repository.connector.interfaces.md) | (string \| [ConnectorInterfaces.StrongRelation](./repository.connectorinterfaces.strongrelation.md) \| [ConnectorInterfaces.StrongJoins](./repository.connectorinterfaces.strongjoins.md)<!-- -->)\[\] | <i>(Optional)</i> |
 |  [name](./repository.connector.name.md) | string |  |
 
 ## Methods

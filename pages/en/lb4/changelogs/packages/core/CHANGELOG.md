@@ -13,6 +13,36 @@ permalink: /doc/en/lb4/changelog.core.html
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.14.1](https://github.com/strongloop/loopback-next/compare/@loopback/core@2.14.0...@loopback/core@2.14.1) (2021-02-09)
+
+**Note:** Version bump only for package @loopback/core
+
+
+
+
+
+# [2.14.0](https://github.com/strongloop/loopback-next/compare/@loopback/core@2.13.1...@loopback/core@2.14.0) (2021-01-21)
+
+
+### Features
+
+* fix eslint violations ([062de9c](https://github.com/strongloop/loopback-next/commit/062de9c5f908332f58f54ddf13798a22ca21f1e7))
+
+
+
+
+
+## [2.13.1](https://github.com/strongloop/loopback-next/compare/@loopback/core@2.13.0...@loopback/core@2.13.1) (2020-12-07)
+
+
+### Bug Fixes
+
+* **core:** fix compilation error reported by tsc with typescript@4.1.x ([c538c1b](https://github.com/strongloop/loopback-next/commit/c538c1b6ad6270516abff190364d8bfce6111f91))
+
+
+
+
+
 # [2.13.0](https://github.com/strongloop/loopback-next/compare/@loopback/core@2.12.0...@loopback/core@2.13.0) (2020-11-18)
 
 

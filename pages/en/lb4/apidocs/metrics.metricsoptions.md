@@ -25,9 +25,10 @@ export interface MetricsOptions
 
 |  Property | Type | Description |
 |  --- | --- | --- |
+|  [defaultLabels?](./metrics.metricsoptions.defaultlabels.md) | { \[labelName: string\]: string; } | <i>(Optional)</i> |
 |  [defaultMetrics?](./metrics.metricsoptions.defaultmetrics.md) | { disabled?: boolean; } &amp; DefaultMetricsCollectorConfiguration | <i>(Optional)</i> |
 |  [endpoint?](./metrics.metricsoptions.endpoint.md) | { disabled?: boolean; basePath?: string; } | <i>(Optional)</i> |
 |  [openApiSpec?](./metrics.metricsoptions.openapispec.md) | boolean | <i>(Optional)</i> |
-|  [pushGateway?](./metrics.metricsoptions.pushgateway.md) | { disabled?: boolean; url: string; interval?: number; } | <i>(Optional)</i> |
+|  [pushGateway?](./metrics.metricsoptions.pushgateway.md) | { disabled?: boolean; url: string; interval?: number; jobName?: string; groupingKey?: { \[key: string\]: string; }; replaceAll?: boolean; } | <i>(Optional)</i> |
 
 

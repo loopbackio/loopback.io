@@ -18,20 +18,14 @@ Constructs a new instance of the `ExpressServer` class
 <b>Signature:</b>
 
 ```typescript
-constructor(config?: (HttpOptions & {
-        basePath?: string | undefined;
-        settings?: Record<string, unknown> | undefined;
-    }) | (HttpsOptions & {
-        basePath?: string | undefined;
-        settings?: Record<string, unknown> | undefined;
-    }) | undefined, parent?: Context);
+constructor(config?: ExpressServerConfig | undefined, parent?: Context);
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  config | ([HttpOptions](./http-server.httpoptions.md) &amp; { basePath?: string \| undefined; settings?: Record&lt;string, unknown&gt; \| undefined; }) \| ([HttpsOptions](./http-server.httpsoptions.md) &amp; { basePath?: string \| undefined; settings?: Record&lt;string, unknown&gt; \| undefined; }) \| undefined |  |
+|  config | [ExpressServerConfig](./express.expressserverconfig.md) \| undefined |  |
 |  parent | [Context](./context.context.md) |  |
 
 

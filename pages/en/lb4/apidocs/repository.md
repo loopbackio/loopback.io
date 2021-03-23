@@ -164,6 +164,7 @@ This module provides data access facilities to various databases and services as
 
 |  Namespace | Description |
 |  --- | --- |
+|  [ConnectorInterfaces](./repository.connectorinterfaces.md) | Interfaces adopted by a [Connector](./repository.connector.md)<!-- -->. |
 |  [juggler](./repository.juggler.md) |  |
 |  [property](./repository.property.md) |  |
 |  [repository](./repository.repository.md) |  |

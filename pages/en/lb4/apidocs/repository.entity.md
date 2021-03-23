@@ -18,7 +18,7 @@ Base class for entities which have unique ids
 <b>Signature:</b>
 
 ```typescript
-export declare abstract class Entity extends Model implements Persistable 
+export declare class Entity extends Model implements Persistable 
 ```
 <b>Extends:</b> [Model](./repository.model.md)
 

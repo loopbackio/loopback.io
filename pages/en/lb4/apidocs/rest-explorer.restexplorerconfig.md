@@ -22,6 +22,7 @@ export declare type RestExplorerConfig = {
     path?: string;
     useSelfHostedSpec?: false;
     swaggerThemeFile?: string;
+    indexTemplatePath?: string;
 };
 ```
 

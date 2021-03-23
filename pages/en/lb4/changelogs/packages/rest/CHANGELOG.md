@@ -13,6 +13,33 @@ permalink: /doc/en/lb4/changelog.rest.html
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.1.3](https://github.com/strongloop/loopback-next/compare/@loopback/rest@9.1.2...@loopback/rest@9.1.3) (2021-02-09)
+
+**Note:** Version bump only for package @loopback/rest
+
+
+
+
+
+## [9.1.2](https://github.com/strongloop/loopback-next/compare/@loopback/rest@9.1.1...@loopback/rest@9.1.2) (2021-01-21)
+
+**Note:** Version bump only for package @loopback/rest
+
+
+
+
+
+## [9.1.1](https://github.com/strongloop/loopback-next/compare/@loopback/rest@9.1.0...@loopback/rest@9.1.1) (2020-12-07)
+
+
+### Bug Fixes
+
+* **rest:** fix incomplete hostname in regexp ([dd5c210](https://github.com/strongloop/loopback-next/commit/dd5c210c6ce1c74f27b3ac4a95d3a311ffcfe582))
+
+
+
+
+
 # [9.1.0](https://github.com/strongloop/loopback-next/compare/@loopback/rest@9.0.0...@loopback/rest@9.1.0) (2020-11-18)
 
 

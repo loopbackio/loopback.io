@@ -37,6 +37,7 @@ permalink: /doc/en/lb4/changelog.index.html
 - [@loopback/security](changelogs/packages/security/CHANGELOG.md)
 - [@loopback/service-proxy](changelogs/packages/service-proxy/CHANGELOG.md)
 - [@loopback/testlab](changelogs/packages/testlab/CHANGELOG.md)
+- [@loopback/tsdocs](changelogs/packages/tsdocs/CHANGELOG.md)
 
 ### fixtures
 
