@@ -26,5 +26,6 @@ export interface AuthenticationOptions
 |  Property | Type | Description |
 |  --- | --- | --- |
 |  [defaultMetadata?](./authentication.authenticationoptions.defaultmetadata.md) | [AuthenticationMetadata](./authentication.authenticationmetadata.md)<!-- -->\[\] | <i>(Optional)</i> Default authentication metadata if a method or class is not decorated with <code>@authenticate</code>. If not set, no default authentication will be enforced for those methods without authentication metadata. |
+|  [failOnError?](./authentication.authenticationoptions.failonerror.md) | boolean | <i>(Optional)</i> This flag allows an authentication strategy to abort the authentication by throwing an error if <code>failOnError</code> is set to <code>true</code>. By default, the authentication process continues to the next one even when a strategy throws an error. If one of other strategies succeed, the error will be discarded. |
 
 

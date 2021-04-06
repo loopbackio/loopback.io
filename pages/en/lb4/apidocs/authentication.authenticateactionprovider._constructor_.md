@@ -18,7 +18,7 @@ Constructs a new instance of the `AuthenticateActionProvider` class
 <b>Signature:</b>
 
 ```typescript
-constructor(getStrategies: Getter<AuthenticationStrategy | AuthenticationStrategy[] | undefined>, setCurrentUser: Setter<UserProfile>, setRedirectUrl: Setter<string>, setRedirectStatus: Setter<number>);
+constructor(getStrategies: Getter<AuthenticationStrategy | AuthenticationStrategy[] | undefined>, setCurrentUser: Setter<UserProfile>, setRedirectUrl: Setter<string>, setRedirectStatus: Setter<number>, options?: AuthenticationOptions);
 ```
 
 ## Parameters
@@ -29,5 +29,6 @@ constructor(getStrategies: Getter<AuthenticationStrategy | AuthenticationStrateg
 |  setCurrentUser | [Setter](./context.setter.md)<!-- -->&lt;[UserProfile](./security.userprofile.md)<!-- -->&gt; |  |
 |  setRedirectUrl | [Setter](./context.setter.md)<!-- -->&lt;string&gt; |  |
 |  setRedirectStatus | [Setter](./context.setter.md)<!-- -->&lt;number&gt; |  |
+|  options | [AuthenticationOptions](./authentication.authenticationoptions.md) |  |
 
 

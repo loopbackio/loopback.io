@@ -24,13 +24,17 @@ export declare class AuthenticateActionProvider implements Provider<Authenticate
 
 ## Example
 
-`context.bind('authentication.actions.authenticate').toProvider(AuthenticateActionProvider)`
+
+```ts
+context.bind('authentication.actions.authenticate').toProvider(AuthenticateActionProvider)
+
+```
 
 ## Constructors
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)(getStrategies, setCurrentUser, setRedirectUrl, setRedirectStatus)](./authentication.authenticateactionprovider._constructor_.md) |  | Constructs a new instance of the <code>AuthenticateActionProvider</code> class |
+|  [(constructor)(getStrategies, setCurrentUser, setRedirectUrl, setRedirectStatus, options)](./authentication.authenticateactionprovider._constructor_.md) |  | Constructs a new instance of the <code>AuthenticateActionProvider</code> class |
 
 ## Properties
 

@@ -13,6 +13,25 @@ permalink: /doc/en/lb4/changelog.rest-crud.html
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.9.1](https://github.com/strongloop/loopback-next/compare/@loopback/rest-crud@0.9.0...@loopback/rest-crud@0.9.1) (2021-04-06)
+
+**Note:** Version bump only for package @loopback/rest-crud
+
+
+
+
+
+# [0.9.0](https://github.com/strongloop/loopback-next/compare/@loopback/rest-crud@0.8.21...@loopback/rest-crud@0.9.0) (2021-03-18)
+
+
+### Features
+
+* update package-lock.json to v2 consistently ([dfc3fbd](https://github.com/strongloop/loopback-next/commit/dfc3fbdae0c9ca9f34c64154a471bef22d5ac6b7))
+
+
+
+
+
 ## [0.8.21](https://github.com/strongloop/loopback-next/compare/@loopback/rest-crud@0.8.20...@loopback/rest-crud@0.8.21) (2021-02-09)
 
 **Note:** Version bump only for package @loopback/rest-crud

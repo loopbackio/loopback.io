@@ -13,6 +13,26 @@ permalink: /doc/en/lb4/changelog.authentication-jwt.html
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.8.1](https://github.com/strongloop/loopback-next/compare/@loopback/authentication-jwt@0.8.0...@loopback/authentication-jwt@0.8.1) (2021-04-06)
+
+**Note:** Version bump only for package @loopback/authentication-jwt
+
+
+
+
+
+# [0.8.0](https://github.com/strongloop/loopback-next/compare/@loopback/authentication-jwt@0.7.7...@loopback/authentication-jwt@0.8.0) (2021-03-18)
+
+
+### Features
+
+* update package-lock.json to v2 consistently ([dfc3fbd](https://github.com/strongloop/loopback-next/commit/dfc3fbdae0c9ca9f34c64154a471bef22d5ac6b7))
+* upgrade to TypeScript 4.2.x ([05930bc](https://github.com/strongloop/loopback-next/commit/05930bc0cece3909dd66f75ad91eeaa2d365a480))
+
+
+
+
+
 ## [0.7.7](https://github.com/strongloop/loopback-next/compare/@loopback/authentication-jwt@0.7.6...@loopback/authentication-jwt@0.7.7) (2021-02-09)
 
 **Note:** Version bump only for package @loopback/authentication-jwt

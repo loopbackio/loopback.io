@@ -13,6 +13,28 @@ permalink: /doc/en/lb4/changelog.authentication.html
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.2.0](https://github.com/strongloop/loopback-next/compare/@loopback/authentication@7.1.0...@loopback/authentication@7.2.0) (2021-04-06)
+
+
+### Features
+
+* allow one strategy to fail the authentication process ([adbbf24](https://github.com/strongloop/loopback-next/commit/adbbf2439ffff42e5e6e3078d479e9c2031c196b))
+
+
+
+
+
+# [7.1.0](https://github.com/strongloop/loopback-next/compare/@loopback/authentication@7.0.7...@loopback/authentication@7.1.0) (2021-03-18)
+
+
+### Features
+
+* update package-lock.json to v2 consistently ([dfc3fbd](https://github.com/strongloop/loopback-next/commit/dfc3fbdae0c9ca9f34c64154a471bef22d5ac6b7))
+
+
+
+
+
 ## [7.0.7](https://github.com/strongloop/loopback-next/compare/@loopback/authentication@7.0.6...@loopback/authentication@7.0.7) (2021-02-09)
 
 **Note:** Version bump only for package @loopback/authentication

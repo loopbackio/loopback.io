@@ -13,6 +13,26 @@ permalink: /doc/en/lb4/changelog.express.html
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.2.1](https://github.com/strongloop/loopback-next/compare/@loopback/express@3.2.0...@loopback/express@3.2.1) (2021-04-06)
+
+**Note:** Version bump only for package @loopback/express
+
+
+
+
+
+# [3.2.0](https://github.com/strongloop/loopback-next/compare/@loopback/express@3.1.3...@loopback/express@3.2.0) (2021-03-18)
+
+
+### Features
+
+* update package-lock.json to v2 consistently ([dfc3fbd](https://github.com/strongloop/loopback-next/commit/dfc3fbdae0c9ca9f34c64154a471bef22d5ac6b7))
+* upgrade to TypeScript 4.2.x ([05930bc](https://github.com/strongloop/loopback-next/commit/05930bc0cece3909dd66f75ad91eeaa2d365a480))
+
+
+
+
+
 ## [3.1.3](https://github.com/strongloop/loopback-next/compare/@loopback/express@3.1.2...@loopback/express@3.1.3) (2021-02-09)
 
 
