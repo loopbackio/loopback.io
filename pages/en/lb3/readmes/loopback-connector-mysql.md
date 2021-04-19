@@ -583,7 +583,14 @@ type, you can:
 Foreign key constraints can be defined in the model definition.
 
 **Note**: The order of table creation is important. A referenced table must
-exist before creating a foreign key constraint.
+exist before creating a foreign key constraint. The order can be specified 
+using the optional <a href="https://loopback.io/doc/en/lb4/apidocs.repository.schemamigrationoptions.html">`SchemaMigrationOptions`</a> argument of `migrateSchema`:
+
+```
+await app.migrateSchema({
+	models: [ 'Customer', 'Order' ]
+});
+```
 
 Define your models and the foreign key constraints as follows:
 
