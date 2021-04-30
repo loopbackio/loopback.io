@@ -713,6 +713,8 @@ export class Customer extends Entity {
         entity: 'Customer',
         entityKey: 'id',
         foreignKey: 'customerId',
+        onDelete: 'CASCADE',
+        onUpdate: 'SET NULL'
       },
     },
   })
@@ -764,7 +766,9 @@ export class Order extends Entity {
         "name": "fk_order_customerId",
         "entity": "Customer",
         "entityKey": "id",
-        "foreignKey": "customerId"
+        "foreignKey": "customerId",
+        "onDelete": "CASCADE",
+        "onUpdate": "SET NULL"
       }
     }
   },
@@ -787,7 +791,7 @@ export class Order extends Entity {
 </details>
 <br>
 {% include tip.html content="
-Removing or updating the value of `foreignKeys` will be updated or delete or update the constraints in the db tables. If there is a reference to an object being deleted then the `DELETE` will fail. Likewise if there is a create with an invalid FK id then the `POST` will fail.
+Removing or updating the value of `foreignKeys` will be updated or delete or update the constraints in the db tables. If there is a reference to an object being deleted then the `DELETE` will fail. Likewise if there is a create with an invalid FK id then the `POST` will fail. The `onDelete` and `onUpdate` properties are optional and will default to `NO ACTION`.
 " %}
 
 ### Auto-generated ids
