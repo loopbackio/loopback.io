@@ -29,5 +29,6 @@ export interface GraphQLServerOptions extends HttpOptions
 |  [apollo?](./graphql.graphqlserveroptions.apollo.md) | ApolloServerExpressConfig | <i>(Optional)</i> ApolloServerExpress related configuration |
 |  [asMiddlewareOnly?](./graphql.graphqlserveroptions.asmiddlewareonly.md) | boolean | <i>(Optional)</i> Use as a middleware for RestServer instead of a standalone server |
 |  [expressSettings?](./graphql.graphqlserveroptions.expresssettings.md) | Record&lt;string, unknown&gt; | <i>(Optional)</i> Express settings |
+|  [middlewareOptions?](./graphql.graphqlserveroptions.middlewareoptions.md) | GetMiddlewareOptions | <i>(Optional)</i> Middleware options for GraphQL |
 
 
