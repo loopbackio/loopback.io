@@ -931,12 +931,6 @@ span.soft {
     background-color: whitesmoke;
 }
 
-@media (max-width: 767px) {
-    .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
-        color: #444;
-    }
-}
-
 @media (max-width: 990px) {
     #mysidebar {
         position: relative;
