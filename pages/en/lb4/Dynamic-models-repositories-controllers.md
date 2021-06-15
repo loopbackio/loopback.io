@@ -155,7 +155,7 @@ repository as the base class.
 class MyRepoBase<
   E extends Entity,
   IdType,
-  Relations extends object
+  Relations extends object,
 > extends DefaultCrudRepository<E, IdType, Relations> {
   // Custom implementation
 }

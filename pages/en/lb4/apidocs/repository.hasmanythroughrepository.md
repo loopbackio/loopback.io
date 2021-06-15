@@ -33,5 +33,6 @@ export interface HasManyThroughRepository<Target extends Entity, TargetID, Throu
 |  [link(targetModelId, options)](./repository.hasmanythroughrepository.link.md) | Creates a new many-to-many association to an existing target model instance |
 |  [patch(dataObject, where, options)](./repository.hasmanythroughrepository.patch.md) | Patch multiple target model instances |
 |  [unlink(targetModelId, options)](./repository.hasmanythroughrepository.unlink.md) | Removes an association to an existing target model instance |
+|  [unlinkAll(options)](./repository.hasmanythroughrepository.unlinkall.md) | Remove all association to an existing target model instance |
 
 

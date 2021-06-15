@@ -52,5 +52,6 @@ export declare class DefaultHasManyThroughRepository<TargetEntity extends Entity
 |  [link(targetId, options)](./repository.defaulthasmanythroughrepository.link.md) |  |  |
 |  [patch(dataObject, where, options)](./repository.defaulthasmanythroughrepository.patch.md) |  |  |
 |  [unlink(targetId, options)](./repository.defaulthasmanythroughrepository.unlink.md) |  |  |
+|  [unlinkAll(options)](./repository.defaulthasmanythroughrepository.unlinkall.md) |  |  |
 
 
