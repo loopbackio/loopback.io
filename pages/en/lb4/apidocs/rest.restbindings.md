@@ -3,7 +3,7 @@ lang: en
 title: 'API docs: rest.restbindings'
 keywords: LoopBack 4.0, LoopBack 4, Node.js, TypeScript, OpenAPI
 sidebar: lb4_sidebar
-editurl: https://github.com/strongloop/loopback-next/tree/master/packages/rest
+editurl: https://github.com/loopbackio/loopback-next/tree/master/packages/rest
 permalink: /doc/en/lb4/apidocs.rest.restbindings.html
 ---
 
@@ -37,7 +37,7 @@ export declare namespace RestBindings
 |  [API\_SPEC](./rest.restbindings.api_spec.md) | Binding key for setting and injecting an OpenAPI spec |
 |  [BASE\_PATH](./rest.restbindings.base_path.md) | Internal binding key for basePath |
 |  [CONFIG](./rest.restbindings.config.md) | Binding key for setting and injecting RestComponentConfig |
-|  [ERROR\_WRITER\_OPTIONS](./rest.restbindings.error_writer_options.md) | Binding key for setting and injecting Reject action's error handling options.<!-- -->See https://github.com/strongloop/strong-error-handler\#options for the list of available options. Please note that the flag <code>log</code> is not used by <code>@loopback/rest</code>. |
+|  [ERROR\_WRITER\_OPTIONS](./rest.restbindings.error_writer_options.md) | Binding key for setting and injecting Reject action's error handling options.<!-- -->See https://github.com/loopbackio/strong-error-handler\#options for the list of available options. Please note that the flag <code>log</code> is not used by <code>@loopback/rest</code>. |
 |  [HANDLER](./rest.restbindings.handler.md) | Internal binding key for http-handler |
 |  [HOST](./rest.restbindings.host.md) | Binding key for setting and injecting the host name of RestServer |
 |  [HTTPS\_OPTIONS](./rest.restbindings.https_options.md) | Binding key for HTTPS options |

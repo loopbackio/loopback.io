@@ -3,7 +3,7 @@ lang: en
 title: 'API docs: booter-lb3app'
 keywords: LoopBack 4.0, LoopBack 4, Node.js, TypeScript, OpenAPI
 sidebar: lb4_sidebar
-editurl: https://github.com/strongloop/loopback-next/tree/master/packages/booter-lb3app
+editurl: https://github.com/loopbackio/loopback-next/tree/master/packages/booter-lb3app
 permalink: /doc/en/lb4/apidocs.booter-lb3app.html
 ---
 
@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.booter-lb3app.html
 
 ## booter-lb3app package
 
-[@loopback/booter-lb3app](https://github.com/strongloop/loopback-next/tree/master/packages/booter-lb3app)
+[@loopback/booter-lb3app](https://github.com/loopbackio/loopback-next/tree/master/packages/booter-lb3app)
 
 ## Classes
 

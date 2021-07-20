@@ -3,7 +3,7 @@ lang: en
 title: 'API docs: rest.validationoptions.ajvfactory'
 keywords: LoopBack 4.0, LoopBack 4, Node.js, TypeScript, OpenAPI
 sidebar: lb4_sidebar
-editurl: https://github.com/strongloop/loopback-next/tree/master/packages/rest
+editurl: https://github.com/loopbackio/loopback-next/tree/master/packages/rest
 permalink: /doc/en/lb4/apidocs.rest.validationoptions.ajvfactory.html
 ---
 
@@ -18,6 +18,6 @@ A factory to create Ajv instance
 <b>Signature:</b>
 
 ```typescript
-ajvFactory?: (options: ajv.Options) => Ajv;
+ajvFactory?: (options: AjvOptions) => Ajv;
 ```
 

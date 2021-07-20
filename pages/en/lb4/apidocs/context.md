@@ -3,7 +3,7 @@ lang: en
 title: 'API docs: context'
 keywords: LoopBack 4.0, LoopBack 4, Node.js, TypeScript, OpenAPI
 sidebar: lb4_sidebar
-editurl: https://github.com/strongloop/loopback-next/tree/master/packages/context
+editurl: https://github.com/loopbackio/loopback-next/tree/master/packages/context
 permalink: /doc/en/lb4/apidocs.context.html
 ---
 
@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.context.html
 
 ## context package
 
-[@loopback/context](https://github.com/strongloop/loopback-next/tree/master/packages/context)
+[@loopback/context](https://github.com/loopbackio/loopback-next/tree/master/packages/context)
 
 ## Classes
 

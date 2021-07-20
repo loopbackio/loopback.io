@@ -3,7 +3,7 @@ lang: en
 title: 'API docs: rest.validationoptions.ajverrors'
 keywords: LoopBack 4.0, LoopBack 4, Node.js, TypeScript, OpenAPI
 sidebar: lb4_sidebar
-editurl: https://github.com/strongloop/loopback-next/tree/master/packages/rest
+editurl: https://github.com/loopbackio/loopback-next/tree/master/packages/rest
 permalink: /doc/en/lb4/apidocs.rest.validationoptions.ajverrors.html
 ---
 
@@ -18,6 +18,6 @@ Enable custom error messages in JSON-Schema for AJV validator from https://githu
 <b>Signature:</b>
 
 ```typescript
-ajvErrors?: true | AjvErrorOptions;
+ajvErrors?: AjvErrorOptions;
 ```
 

@@ -3,7 +3,7 @@ lang: en
 title: 'API docs: rest-msgpack.msgpackbodyparser'
 keywords: LoopBack 4.0, LoopBack 4, Node.js, TypeScript, OpenAPI
 sidebar: lb4_sidebar
-editurl: https://github.com/strongloop/loopback-next/tree/master/bodyparsers/rest-msgpack
+editurl: https://github.com/loopbackio/loopback-next/tree/master/bodyparsers/rest-msgpack
 permalink: /doc/en/lb4/apidocs.rest-msgpack.msgpackbodyparser.html
 ---
 

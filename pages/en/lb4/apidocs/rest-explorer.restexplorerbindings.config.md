@@ -3,7 +3,7 @@ lang: en
 title: 'API docs: rest-explorer.restexplorerbindings.config'
 keywords: LoopBack 4.0, LoopBack 4, Node.js, TypeScript, OpenAPI
 sidebar: lb4_sidebar
-editurl: https://github.com/strongloop/loopback-next/tree/master/packages/rest-explorer
+editurl: https://github.com/loopbackio/loopback-next/tree/master/packages/rest-explorer
 permalink: /doc/en/lb4/apidocs.rest-explorer.restexplorerbindings.config.html
 ---
 

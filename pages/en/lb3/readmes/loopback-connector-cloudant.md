@@ -46,7 +46,7 @@ ds.updateOrCreate('User', {
 
 *Please note how property `prop2` was completely dropped upon update.*
 
-We have some discussion on update methods, the issue link can be found in [Feature Backlog](https://github.com/strongloop/loopback-connector-cloudant#feature-backlog) section
+We have some discussion on update methods, the issue link can be found in [Feature Backlog](https://github.com/loopbackio/loopback-connector-cloudant#feature-backlog) section
 
 ### Frequent Modification
 
@@ -54,7 +54,7 @@ Cloudant is not designed to change same document frequently and multiple times. 
 
 By modeling the data in separate documents that are only written once, we can reduce the chance of concurrent access to the same document by separate processes.
 
-And by properly controlling the conflict, developer can still do a safe modify. For details, refer to [Conflict Control](https://github.com/strongloop/loopback-connector-cloudant#conflict-control)
+And by properly controlling the conflict, developer can still do a safe modify. For details, refer to [Conflict Control](https://github.com/loopbackio/loopback-connector-cloudant#conflict-control)
 
 ### Conflict Control
 
@@ -92,7 +92,7 @@ index: {
 },
 ```
 
-By default, `modelIndex` is 'loopback__model__name', and `modelSelector` is {[modelIndex]: modelName}. User can customize `modelSelector` and `modelIndex` in datasource's json file, for details please check [model-specific configuration](https://github.com/strongloop/loopback-connector-cloudant#model-specific-configuration)
+By default, `modelIndex` is 'loopback__model__name', and `modelSelector` is {[modelIndex]: modelName}. User can customize `modelSelector` and `modelIndex` in datasource's json file, for details please check [model-specific configuration](https://github.com/loopbackio/loopback-connector-cloudant#model-specific-configuration)
 
 To create a model instance, the connector creates a non-design document with value of property 'loopback__model__name' equals to `modelName`. 
 
@@ -600,7 +600,7 @@ db.once('connected', function() {
 });
 ```
 
-- Use different DB instances per model definition. Refer to https://github.com/strongloop/loopback-connector-cloudant/blob/master/doc/multiple-db-instances.md
+- Use different DB instances per model definition. Refer to https://github.com/loopbackio/loopback-connector-cloudant/blob/master/doc/multiple-db-instances.md
 
 # CRUD
 
@@ -610,7 +610,7 @@ We are still in progress of refactoring some methods, more details to be updated
 
 ## Update
 
-Currently `update` does the same thing as `replace`, for details, refer to https://github.com/strongloop/loopback-connector-cloudant#no-partial-update
+Currently `update` does the same thing as `replace`, for details, refer to https://github.com/loopbackio/loopback-connector-cloudant#no-partial-update
 
 # Migration
 
@@ -669,13 +669,13 @@ module.export = function migrateData(app) {
 
 # Discovery
 
-Not implemented yet, track it in story https://github.com/strongloop/loopback-connector-cloudant/issues/118 
+Not implemented yet, track it in story https://github.com/loopbackio/loopback-connector-cloudant/issues/118 
 
 # Query
 
 -  Uses Cloudant Query (Lucene) to support ad-hoc searching.
 -  [LoopBack query](http://loopback.io/doc/en/lb3/Querying-data.html) support for: fields, limit, order, skip and where filters.
-- Please check [Advanced Queries](https://github.com/strongloop/loopback-connector-cloudant/blob/master/doc/advanced-queries.md) for details about regex filter, nested filter and order.
+- Please check [Advanced Queries](https://github.com/loopbackio/loopback-connector-cloudant/blob/master/doc/advanced-queries.md) for details about regex filter, nested filter and order.
 
 # View
 
@@ -805,7 +805,7 @@ module.exports = function(app) {
 
 # Partitioned database
 
-If you're using partitioned database, see details on how to configure your model and make use of the partitioned search in https://github.com/strongloop/loopback-connector-cloudant/blob/master/doc/partitioned-db.md
+If you're using partitioned database, see details on how to configure your model and make use of the partitioned search in https://github.com/loopbackio/loopback-connector-cloudant/blob/master/doc/partitioned-db.md
 
 # Testing
 
@@ -868,15 +868,15 @@ source cloudant-config.sh && npm run mocha
 
 # More Info
 For more detailed information regarding connector-specific functions and behaviour,
-see the [docs section](https://github.com/strongloop/loopback-connector-cloudant/tree/master/doc).
+see the [docs section](https://github.com/loopbackio/loopback-connector-cloudant/tree/master/doc).
 
 # Feature backlog
 
-* [Partial update](https://github.com/strongloop/loopback-connector-cloudant/issues/35)
-* [Discovery](https://github.com/strongloop/loopback-connector-cloudant/issues/118)
+* [Partial update](https://github.com/loopbackio/loopback-connector-cloudant/issues/35)
+* [Discovery](https://github.com/loopbackio/loopback-connector-cloudant/issues/118)
 * Index-only model properties marked with index=true
 * Configurable "view based" or JSON indexes. [More Info>>](https://cloudant.com/blog/mango-json-vs-text-indexes)
-* [Support uuid](https://github.com/strongloop/loopback-connector-cloudant/issues/104)
+* [Support uuid](https://github.com/loopbackio/loopback-connector-cloudant/issues/104)
 
 ## Index
 

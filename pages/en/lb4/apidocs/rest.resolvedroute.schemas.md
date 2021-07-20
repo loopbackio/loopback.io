@@ -3,7 +3,7 @@ lang: en
 title: 'API docs: rest.resolvedroute.schemas'
 keywords: LoopBack 4.0, LoopBack 4, Node.js, TypeScript, OpenAPI
 sidebar: lb4_sidebar
-editurl: https://github.com/strongloop/loopback-next/tree/master/packages/rest
+editurl: https://github.com/loopbackio/loopback-next/tree/master/packages/rest
 permalink: /doc/en/lb4/apidocs.rest.resolvedroute.schemas.html
 ---
 
@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest.resolvedroute.schemas.html
 
 ## ResolvedRoute.schemas property
 
-Server/application wide schemas shared by multiple routes, e.g. model schemas. This is a temporary workaround for missing support for $ref references, see https://github.com/strongloop/loopback-next/issues/435
+Server/application wide schemas shared by multiple routes, e.g. model schemas. This is a temporary workaround for missing support for $ref references, see https://github.com/loopbackio/loopback-next/issues/435
 
 <b>Signature:</b>
 

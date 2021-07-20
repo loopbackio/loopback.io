@@ -3,7 +3,7 @@ lang: en
 title: 'API docs: apiconnect.apiconnectcomponent'
 keywords: LoopBack 4.0, LoopBack 4, Node.js, TypeScript, OpenAPI
 sidebar: lb4_sidebar
-editurl: https://github.com/strongloop/loopback-next/tree/master/extensions/apiconnect
+editurl: https://github.com/loopbackio/loopback-next/tree/master/extensions/apiconnect
 permalink: /doc/en/lb4/apidocs.apiconnect.apiconnectcomponent.html
 ---
 

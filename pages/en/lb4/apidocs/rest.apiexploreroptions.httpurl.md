@@ -3,7 +3,7 @@ lang: en
 title: 'API docs: rest.apiexploreroptions.httpurl'
 keywords: LoopBack 4.0, LoopBack 4, Node.js, TypeScript, OpenAPI
 sidebar: lb4_sidebar
-editurl: https://github.com/strongloop/loopback-next/tree/master/packages/rest
+editurl: https://github.com/loopbackio/loopback-next/tree/master/packages/rest
 permalink: /doc/en/lb4/apidocs.rest.apiexploreroptions.httpurl.html
 ---
 
@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest.apiexploreroptions.httpurl.html
 
 ## ApiExplorerOptions.httpUrl property
 
-URL for the API explorer served over `http` protocol to deal with mixed content security imposed by browsers as the spec is exposed over `http` by default. See https://github.com/strongloop/loopback-next/issues/1603
+URL for the API explorer served over `http` protocol to deal with mixed content security imposed by browsers as the spec is exposed over `http` by default. See https://github.com/loopbackio/loopback-next/issues/1603
 
 <b>Signature:</b>
 

@@ -3,7 +3,7 @@ lang: en
 title: 'API docs: pooling.poolfactory.release'
 keywords: LoopBack 4.0, LoopBack 4, Node.js, TypeScript, OpenAPI
 sidebar: lb4_sidebar
-editurl: https://github.com/strongloop/loopback-next/tree/master/extensions/pooling
+editurl: https://github.com/loopbackio/loopback-next/tree/master/extensions/pooling
 permalink: /doc/en/lb4/apidocs.pooling.poolfactory.release.html
 ---
 

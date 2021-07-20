@@ -3,7 +3,7 @@ lang: en
 title: 'API docs: context.contextview.on_2'
 keywords: LoopBack 4.0, LoopBack 4, Node.js, TypeScript, OpenAPI
 sidebar: lb4_sidebar
-editurl: https://github.com/strongloop/loopback-next/tree/master/packages/context
+editurl: https://github.com/loopbackio/loopback-next/tree/master/packages/context
 permalink: /doc/en/lb4/apidocs.context.contextview.on_2.html
 ---
 

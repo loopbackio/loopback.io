@@ -3,7 +3,7 @@ lang: en
 title: 'API docs: tsdocs'
 keywords: LoopBack 4.0, LoopBack 4, Node.js, TypeScript, OpenAPI
 sidebar: lb4_sidebar
-editurl: https://github.com/strongloop/loopback-next/tree/master/packages/tsdocs
+editurl: https://github.com/loopbackio/loopback-next/tree/master/packages/tsdocs
 permalink: /doc/en/lb4/apidocs.tsdocs.html
 ---
 
@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.tsdocs.html
 
 ## tsdocs package
 
-The `@loopback/tsdocs` package is an internal module to generate [tsdoc](https://github.com/Microsoft/tsdoc) based API docs for `@loopback/*` packages within [loopback-next](https://github.com/strongloop/loopback-next) monorepo managed by [Lerna](https://github.com/lerna/lerna)<!-- -->.
+The `@loopback/tsdocs` package is an internal module to generate [tsdoc](https://github.com/Microsoft/tsdoc) based API docs for `@loopback/*` packages within [loopback-next](https://github.com/loopbackio/loopback-next) monorepo managed by [Lerna](https://github.com/lerna/lerna)<!-- -->.
 
 ## Remarks
 

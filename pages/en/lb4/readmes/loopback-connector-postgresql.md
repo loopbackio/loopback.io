@@ -470,7 +470,7 @@ Besides the basic LoopBack types, as we introduced above, you can also specify t
 </details>
 
 {% include warning.html content="
-Not all database types are supported for operating CRUD operations and queries with filters. For example, type Array cannot be filtered correctly, see GitHub issues: [# 441](https://github.com/strongloop/loopback-connector-postgresql/issues/441) and [# 342](https://github.com/strongloop/loopback-connector-postgresql/issues/342).
+Not all database types are supported for operating CRUD operations and queries with filters. For example, type Array cannot be filtered correctly, see GitHub issues: [# 441](https://github.com/loopbackio/loopback-connector-postgresql/issues/441) and [# 342](https://github.com/loopbackio/loopback-connector-postgresql/issues/342).
 " %}
 
 ### PostgreSQL types to LoopBack

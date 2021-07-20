@@ -3,7 +3,7 @@ lang: en
 title: 'API docs: rest-crud.crudrestapibuilder.pattern'
 keywords: LoopBack 4.0, LoopBack 4, Node.js, TypeScript, OpenAPI
 sidebar: lb4_sidebar
-editurl: https://github.com/strongloop/loopback-next/tree/master/packages/rest-crud
+editurl: https://github.com/loopbackio/loopback-next/tree/master/packages/rest-crud
 permalink: /doc/en/lb4/apidocs.rest-crud.crudrestapibuilder.pattern.html
 ---
 

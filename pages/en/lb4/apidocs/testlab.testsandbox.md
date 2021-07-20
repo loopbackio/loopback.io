@@ -3,7 +3,7 @@ lang: en
 title: 'API docs: testlab.testsandbox'
 keywords: LoopBack 4.0, LoopBack 4, Node.js, TypeScript, OpenAPI
 sidebar: lb4_sidebar
-editurl: https://github.com/strongloop/loopback-next/tree/master/packages/testlab
+editurl: https://github.com/loopbackio/loopback-next/tree/master/packages/testlab
 permalink: /doc/en/lb4/apidocs.testlab.testsandbox.html
 ---
 

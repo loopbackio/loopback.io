@@ -3,7 +3,7 @@ lang: en
 title: 'API docs: rest.validationoptions.ajvkeywords'
 keywords: LoopBack 4.0, LoopBack 4, Node.js, TypeScript, OpenAPI
 sidebar: lb4_sidebar
-editurl: https://github.com/strongloop/loopback-next/tree/master/packages/rest
+editurl: https://github.com/loopbackio/loopback-next/tree/master/packages/rest
 permalink: /doc/en/lb4/apidocs.rest.validationoptions.ajvkeywords.html
 ---
 
@@ -13,11 +13,11 @@ permalink: /doc/en/lb4/apidocs.rest.validationoptions.ajvkeywords.html
 
 ## ValidationOptions.ajvKeywords property
 
-Enable additional AJV keywords from https://github.com/epoberezkin/ajv-keywords - `true`<!-- -->: Add all keywords from `ajv-keywords` - `string[]`<!-- -->: Add an array of keywords from `ajv-keywords`
+Enable additional AJV keywords from https://github.com/epoberezkin/ajv-keywords - `string[]`<!-- -->: Add an array of keywords from `ajv-keywords`
 
 <b>Signature:</b>
 
 ```typescript
-ajvKeywords?: true | string[];
+ajvKeywords?: string[];
 ```
 

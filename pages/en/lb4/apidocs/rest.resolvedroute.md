@@ -3,7 +3,7 @@ lang: en
 title: 'API docs: rest.resolvedroute'
 keywords: LoopBack 4.0, LoopBack 4, Node.js, TypeScript, OpenAPI
 sidebar: lb4_sidebar
-editurl: https://github.com/strongloop/loopback-next/tree/master/packages/rest
+editurl: https://github.com/loopbackio/loopback-next/tree/master/packages/rest
 permalink: /doc/en/lb4/apidocs.rest.resolvedroute.html
 ---
 
@@ -27,6 +27,6 @@ export interface ResolvedRoute extends RouteEntry
 |  Property | Type | Description |
 |  --- | --- | --- |
 |  [pathParams](./rest.resolvedroute.pathparams.md) | [PathParameterValues](./rest.pathparametervalues.md) |  |
-|  [schemas](./rest.resolvedroute.schemas.md) | SchemasObject | Server/application wide schemas shared by multiple routes, e.g. model schemas. This is a temporary workaround for missing support for $ref references, see https://github.com/strongloop/loopback-next/issues/435 |
+|  [schemas](./rest.resolvedroute.schemas.md) | SchemasObject | Server/application wide schemas shared by multiple routes, e.g. model schemas. This is a temporary workaround for missing support for $ref references, see https://github.com/loopbackio/loopback-next/issues/435 |
 
 

@@ -3,7 +3,7 @@ lang: en
 title: 'API docs: rest.validationoptions.ajverrortransformer'
 keywords: LoopBack 4.0, LoopBack 4, Node.js, TypeScript, OpenAPI
 sidebar: lb4_sidebar
-editurl: https://github.com/strongloop/loopback-next/tree/master/packages/rest
+editurl: https://github.com/loopbackio/loopback-next/tree/master/packages/rest
 permalink: /doc/en/lb4/apidocs.rest.validationoptions.ajverrortransformer.html
 ---
 
@@ -18,6 +18,6 @@ A function that transform the `ErrorObject`<!-- -->s reported by AJV. This could
 <b>Signature:</b>
 
 ```typescript
-ajvErrorTransformer?: (errors: ajv.ErrorObject[]) => ajv.ErrorObject[];
+ajvErrorTransformer?: (errors: ErrorObject[]) => ErrorObject[];
 ```
 

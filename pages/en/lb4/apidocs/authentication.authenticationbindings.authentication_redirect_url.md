@@ -3,7 +3,7 @@ lang: en
 title: 'API docs: authentication.authenticationbindings.authentication_redirect_url'
 keywords: LoopBack 4.0, LoopBack 4, Node.js, TypeScript, OpenAPI
 sidebar: lb4_sidebar
-editurl: https://github.com/strongloop/loopback-next/tree/master/packages/authentication
+editurl: https://github.com/loopbackio/loopback-next/tree/master/packages/authentication
 permalink: /doc/en/lb4/apidocs.authentication.authenticationbindings.authentication_redirect_url.html
 ---
 

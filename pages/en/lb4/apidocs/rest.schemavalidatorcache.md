@@ -3,7 +3,7 @@ lang: en
 title: 'API docs: rest.schemavalidatorcache'
 keywords: LoopBack 4.0, LoopBack 4, Node.js, TypeScript, OpenAPI
 sidebar: lb4_sidebar
-editurl: https://github.com/strongloop/loopback-next/tree/master/packages/rest
+editurl: https://github.com/loopbackio/loopback-next/tree/master/packages/rest
 permalink: /doc/en/lb4/apidocs.rest.schemavalidatorcache.html
 ---
 
@@ -19,6 +19,6 @@ Cache for AJV schema validators
 
 ```typescript
 export declare type SchemaValidatorCache = WeakMap<SchemaObject | ReferenceObject, // First keyed by schema object
-Map<string, ajv.ValidateFunction>>;
+Map<string, ValidateFunction>>;
 ```
 

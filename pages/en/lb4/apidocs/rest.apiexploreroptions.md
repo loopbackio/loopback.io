@@ -3,7 +3,7 @@ lang: en
 title: 'API docs: rest.apiexploreroptions'
 keywords: LoopBack 4.0, LoopBack 4, Node.js, TypeScript, OpenAPI
 sidebar: lb4_sidebar
-editurl: https://github.com/strongloop/loopback-next/tree/master/packages/rest
+editurl: https://github.com/loopbackio/loopback-next/tree/master/packages/rest
 permalink: /doc/en/lb4/apidocs.rest.apiexploreroptions.html
 ---
 
@@ -24,7 +24,7 @@ export interface ApiExplorerOptions
 |  Property | Type | Description |
 |  --- | --- | --- |
 |  [disabled?](./rest.apiexploreroptions.disabled.md) | true | <i>(Optional)</i> Set this flag to disable the built-in redirect to externally hosted API Explorer UI. |
-|  [httpUrl?](./rest.apiexploreroptions.httpurl.md) | string | <i>(Optional)</i> URL for the API explorer served over <code>http</code> protocol to deal with mixed content security imposed by browsers as the spec is exposed over <code>http</code> by default. See https://github.com/strongloop/loopback-next/issues/1603 |
+|  [httpUrl?](./rest.apiexploreroptions.httpurl.md) | string | <i>(Optional)</i> URL for the API explorer served over <code>http</code> protocol to deal with mixed content security imposed by browsers as the spec is exposed over <code>http</code> by default. See https://github.com/loopbackio/loopback-next/issues/1603 |
 |  [url?](./rest.apiexploreroptions.url.md) | string | <i>(Optional)</i> URL for the hosted API explorer UI default to https://loopback.io/api-explorer |
 
 

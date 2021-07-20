@@ -3,7 +3,7 @@ lang: en
 title: 'API docs: tsdocs.apidocsoptions.apidocsextractionpath'
 keywords: LoopBack 4.0, LoopBack 4, Node.js, TypeScript, OpenAPI
 sidebar: lb4_sidebar
-editurl: https://github.com/strongloop/loopback-next/tree/master/packages/tsdocs
+editurl: https://github.com/loopbackio/loopback-next/tree/master/packages/tsdocs
 permalink: /doc/en/lb4/apidocs.tsdocs.apidocsoptions.apidocsextractionpath.html
 ---
 

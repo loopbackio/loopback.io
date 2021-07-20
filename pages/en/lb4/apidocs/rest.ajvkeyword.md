@@ -3,7 +3,7 @@ lang: en
 title: 'API docs: rest.ajvkeyword'
 keywords: LoopBack 4.0, LoopBack 4, Node.js, TypeScript, OpenAPI
 sidebar: lb4_sidebar
-editurl: https://github.com/strongloop/loopback-next/tree/master/packages/rest
+editurl: https://github.com/loopbackio/loopback-next/tree/master/packages/rest
 permalink: /doc/en/lb4/apidocs.rest.ajvkeyword.html
 ---
 
@@ -18,8 +18,6 @@ Ajv keyword definition with a name
 <b>Signature:</b>
 
 ```typescript
-export declare type AjvKeyword = KeywordDefinition & {
-    name: string;
-};
+export declare type AjvKeyword = KeywordDefinition;
 ```
 

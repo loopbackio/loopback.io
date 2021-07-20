@@ -3,7 +3,7 @@ lang: en
 title: 'API docs: rest.ajverroroptions'
 keywords: LoopBack 4.0, LoopBack 4, Node.js, TypeScript, OpenAPI
 sidebar: lb4_sidebar
-editurl: https://github.com/strongloop/loopback-next/tree/master/packages/rest
+editurl: https://github.com/loopbackio/loopback-next/tree/master/packages/rest
 permalink: /doc/en/lb4/apidocs.rest.ajverroroptions.html
 ---
 
@@ -18,9 +18,6 @@ Options for AJV errors
 <b>Signature:</b>
 
 ```typescript
-export declare type AjvErrorOptions = {
-    keepErrors?: boolean;
-    singleError?: boolean;
-};
+export declare type AjvErrorOptions = ErrorMessageOptions;
 ```
 

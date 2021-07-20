@@ -3,7 +3,7 @@ lang: en
 title: 'API docs: model-api-builder.model_api_builder_plugins'
 keywords: LoopBack 4.0, LoopBack 4, Node.js, TypeScript, OpenAPI
 sidebar: lb4_sidebar
-editurl: https://github.com/strongloop/loopback-next/tree/master/packages/model-api-builder
+editurl: https://github.com/loopbackio/loopback-next/tree/master/packages/model-api-builder
 permalink: /doc/en/lb4/apidocs.model-api-builder.model_api_builder_plugins.html
 ---
 

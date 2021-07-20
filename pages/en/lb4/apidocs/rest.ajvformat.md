@@ -3,7 +3,7 @@ lang: en
 title: 'API docs: rest.ajvformat'
 keywords: LoopBack 4.0, LoopBack 4, Node.js, TypeScript, OpenAPI
 sidebar: lb4_sidebar
-editurl: https://github.com/strongloop/loopback-next/tree/master/packages/rest
+editurl: https://github.com/loopbackio/loopback-next/tree/master/packages/rest
 permalink: /doc/en/lb4/apidocs.rest.ajvformat.html
 ---
 
@@ -18,7 +18,7 @@ Ajv format definition with a name
 <b>Signature:</b>
 
 ```typescript
-export declare type AjvFormat = FormatDefinition & {
+export declare type AjvFormat<T extends string | number = string> = FormatDefinition<T> & {
     name: string;
 };
 ```

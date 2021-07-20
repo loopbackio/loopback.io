@@ -3,7 +3,7 @@ lang: en
 title: 'API docs: rest.restbindings.error_writer_options'
 keywords: LoopBack 4.0, LoopBack 4, Node.js, TypeScript, OpenAPI
 sidebar: lb4_sidebar
-editurl: https://github.com/strongloop/loopback-next/tree/master/packages/rest
+editurl: https://github.com/loopbackio/loopback-next/tree/master/packages/rest
 permalink: /doc/en/lb4/apidocs.rest.restbindings.error_writer_options.html
 ---
 
@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.restbindings.error_writer_options.html
 
 Binding key for setting and injecting Reject action's error handling options.
 
-See https://github.com/strongloop/strong-error-handler\#options for the list of available options. Please note that the flag `log` is not used by `@loopback/rest`<!-- -->.
+See https://github.com/loopbackio/strong-error-handler\#options for the list of available options. Please note that the flag `log` is not used by `@loopback/rest`<!-- -->.
 
 <b>Signature:</b>
 

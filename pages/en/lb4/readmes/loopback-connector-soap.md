@@ -243,7 +243,7 @@ security: {
   </tbody>
 </table>
 
-1 **currently unsupported**, use `"wsdl_headers": { "Authorization": "Basic …" },` instead, details: <a href="https://github.com/strongloop/loopback-connector-soap/issues/92" target="_blank">issue #92</a>.
+1 **currently unsupported**, use `"wsdl_headers": { "Authorization": "Basic …" },` instead, details: <a href="https://github.com/loopbackio/loopback-connector-soap/issues/92" target="_blank">issue #92</a>.
 
 ## Creating a model from a SOAP data source
 
@@ -324,4 +324,4 @@ ds.once('connected', function () {
 
 ## Example
 
-For a complete example using the LoopBack SOAP connector, see [loopback-example-connector](https://github.com/strongloop/loopback-example-connector/tree/soap).  The repository provides examples in the `soap` branch.
+For a complete example using the LoopBack SOAP connector in LoopBack 4, see [SOAP calculator tutorial](https://loopback.io/doc/en/lb4/soap-calculator-tutorial.html).

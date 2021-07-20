@@ -3,7 +3,7 @@ lang: en
 title: 'API docs: filter.wherebuilder.eq'
 keywords: LoopBack 4.0, LoopBack 4, Node.js, TypeScript, OpenAPI
 sidebar: lb4_sidebar
-editurl: https://github.com/strongloop/loopback-next/tree/master/packages/filter
+editurl: https://github.com/loopbackio/loopback-next/tree/master/packages/filter
 permalink: /doc/en/lb4/apidocs.filter.wherebuilder.eq.html
 ---
 

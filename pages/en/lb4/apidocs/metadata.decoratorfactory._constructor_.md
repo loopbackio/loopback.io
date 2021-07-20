@@ -3,7 +3,7 @@ lang: en
 title: 'API docs: metadata.decoratorfactory._constructor_'
 keywords: LoopBack 4.0, LoopBack 4, Node.js, TypeScript, OpenAPI
 sidebar: lb4_sidebar
-editurl: https://github.com/strongloop/loopback-next/tree/master/packages/metadata
+editurl: https://github.com/loopbackio/loopback-next/tree/master/packages/metadata
 permalink: /doc/en/lb4/apidocs.metadata.decoratorfactory._constructor_.html
 ---
 

@@ -3,7 +3,7 @@ lang: en
 title: 'API docs: repository-json-schema.getfilterjsonschemafor'
 keywords: LoopBack 4.0, LoopBack 4, Node.js, TypeScript, OpenAPI
 sidebar: lb4_sidebar
-editurl: https://github.com/strongloop/loopback-next/tree/master/packages/repository-json-schema
+editurl: https://github.com/loopbackio/loopback-next/tree/master/packages/repository-json-schema
 permalink: /doc/en/lb4/apidocs.repository-json-schema.getfilterjsonschemafor.html
 ---
 

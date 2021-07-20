@@ -3,7 +3,7 @@ lang: en
 title: 'API docs: http-server.httpoptions'
 keywords: LoopBack 4.0, LoopBack 4, Node.js, TypeScript, OpenAPI
 sidebar: lb4_sidebar
-editurl: https://github.com/strongloop/loopback-next/tree/master/packages/http-server
+editurl: https://github.com/loopbackio/loopback-next/tree/master/packages/http-server
 permalink: /doc/en/lb4/apidocs.http-server.httpoptions.html
 ---
 

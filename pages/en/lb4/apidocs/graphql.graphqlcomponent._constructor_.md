@@ -3,7 +3,7 @@ lang: en
 title: 'API docs: graphql.graphqlcomponent._constructor_'
 keywords: LoopBack 4.0, LoopBack 4, Node.js, TypeScript, OpenAPI
 sidebar: lb4_sidebar
-editurl: https://github.com/strongloop/loopback-next/tree/master/extensions/graphql
+editurl: https://github.com/loopbackio/loopback-next/tree/master/extensions/graphql
 permalink: /doc/en/lb4/apidocs.graphql.graphqlcomponent._constructor_.html
 ---
 

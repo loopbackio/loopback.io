@@ -3,7 +3,7 @@ lang: en
 title: 'API docs: authentication-passport.strategyadapter.authenticate'
 keywords: LoopBack 4.0, LoopBack 4, Node.js, TypeScript, OpenAPI
 sidebar: lb4_sidebar
-editurl: https://github.com/strongloop/loopback-next/tree/master/extensions/authentication-passport
+editurl: https://github.com/loopbackio/loopback-next/tree/master/extensions/authentication-passport
 permalink: /doc/en/lb4/apidocs.authentication-passport.strategyadapter.authenticate.html
 ---
 

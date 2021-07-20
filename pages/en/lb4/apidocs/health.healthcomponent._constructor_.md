@@ -3,7 +3,7 @@ lang: en
 title: 'API docs: health.healthcomponent._constructor_'
 keywords: LoopBack 4.0, LoopBack 4, Node.js, TypeScript, OpenAPI
 sidebar: lb4_sidebar
-editurl: https://github.com/strongloop/loopback-next/tree/master/extensions/health
+editurl: https://github.com/loopbackio/loopback-next/tree/master/extensions/health
 permalink: /doc/en/lb4/apidocs.health.healthcomponent._constructor_.html
 ---
 

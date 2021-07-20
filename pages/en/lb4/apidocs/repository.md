@@ -3,7 +3,7 @@ lang: en
 title: 'API docs: repository'
 keywords: LoopBack 4.0, LoopBack 4, Node.js, TypeScript, OpenAPI
 sidebar: lb4_sidebar
-editurl: https://github.com/strongloop/loopback-next/tree/master/packages/repository
+editurl: https://github.com/loopbackio/loopback-next/tree/master/packages/repository
 permalink: /doc/en/lb4/apidocs.repository.html
 ---
 
@@ -151,7 +151,7 @@ This module provides data access facilities to various databases and services as
 |  [ModelSettings](./repository.modelsettings.md) | Defining the settings for a model See https://loopback.io/doc/en/lb4/Model.html\#supported-entries-of-model-definition |
 |  [Persistable](./repository.persistable.md) |  |
 |  [PropertyDefinition](./repository.propertydefinition.md) | Property definition for a model |
-|  [PropertyForm](./repository.propertyform.md) | See https://github.com/strongloop/loopback-datasource-juggler/issues/432 |
+|  [PropertyForm](./repository.propertyform.md) | See https://github.com/loopbackio/loopback-datasource-juggler/issues/432 |
 |  [RelationDefinitionBase](./repository.relationdefinitionbase.md) |  |
 |  [Repository](./repository.repository.md) |  |
 |  [RepositoryComponent](./repository.repositorycomponent.md) | This interface describes additional Component properties allowing components to contribute Repository-related artifacts. |

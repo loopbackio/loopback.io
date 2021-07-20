@@ -173,4 +173,4 @@ This pattern of the schema name is important for database **cleanup** and **seed
 
 ### Docker
 - DashDB has a docker image which could be signed up for a trial version and be used for testing. For more information, please visit: [DashDB Docker](https://hub.docker.com/r/dashdb/local/)
-- Once the instance is ready, please follow the above information on how to run tests using your [own instance](https://github.com/strongloop/loopback-connector-dashdb/tree/master#own-instance)
+- Once the instance is ready, please follow the above information on how to run tests using your [own instance](https://github.com/loopbackio/loopback-connector-dashdb/tree/master#own-instance)

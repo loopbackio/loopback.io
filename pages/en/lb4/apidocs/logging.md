@@ -3,7 +3,7 @@ lang: en
 title: 'API docs: logging'
 keywords: LoopBack 4.0, LoopBack 4, Node.js, TypeScript, OpenAPI
 sidebar: lb4_sidebar
-editurl: https://github.com/strongloop/loopback-next/tree/master/extensions/logging
+editurl: https://github.com/loopbackio/loopback-next/tree/master/extensions/logging
 permalink: /doc/en/lb4/apidocs.logging.html
 ---
 
@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.logging.html
 
 ## logging package
 
-[@loopback/logging](https://github.com/strongloop/loopback-next/tree/master/extensions/logging)
+[@loopback/logging](https://github.com/loopbackio/loopback-next/tree/master/extensions/logging)
 
 ## Classes
 

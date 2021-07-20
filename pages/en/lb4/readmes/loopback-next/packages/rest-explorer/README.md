@@ -44,6 +44,23 @@ this.bind(RestExplorerBindings.CONFIG).to({
 });
 ```
 
+Similarly, the index page title for the explorer can be customized via
+RestExplorer configuration as follows:
+
+```ts
+this.configure(RestExplorerBindings.COMPONENT).to({
+  indexTitle: 'My LoopBack API Explorer',
+});
+```
+
+Or:
+
+```ts
+this.bind(RestExplorerBindings.CONFIG).to({
+  indexTitle: 'My LoopBack API Explorer',
+});
+```
+
 ### Advanced Configuration and Reverse Proxies
 
 By default, the component will add an additional OpenAPI spec endpoint, in the
@@ -138,7 +155,7 @@ The Explorer UI’s visual style can be customized by configuring the
 
 First, provide your own Swagger-UI theme file in a public folder. For example,
 in the
-[Todo example](https://github.com/strongloop/loopback-next/tree/master/examples/todo)
+[Todo example](https://github.com/loopbackio/loopback-next/tree/master/examples/todo)
 application:
 
 Its `/public` folder is set up as the default home page with url `/`. Copy a
@@ -181,7 +198,7 @@ customization of
 `indexTemplatePath` should be an absolute path to a .html.ejs template.
 
 To get started,
-[download the default index.html.ejs](https://github.com/strongloop/loopback-next/blob/master/packages/rest-explorer/templates/index.html.ejs),
+[download the default index.html.ejs](https://github.com/loopbackio/loopback-next/blob/master/packages/rest-explorer/templates/index.html.ejs),
 add /explorer/index.html.ejs to your project, and update the configuration:
 
 ```ts
@@ -194,8 +211,8 @@ this.configure(RestExplorerBindings.COMPONENT).to({
 
 ## Contributions
 
-- [Guidelines](https://github.com/strongloop/loopback-next/blob/master/docs/CONTRIBUTING.md)
-- [Join the team](https://github.com/strongloop/loopback-next/issues/110)
+- [Guidelines](https://github.com/loopbackio/loopback-next/blob/master/docs/CONTRIBUTING.md)
+- [Join the team](https://github.com/loopbackio/loopback-next/issues/110)
 
 ## Tests
 
@@ -204,7 +221,7 @@ Run `npm test` from the root folder.
 ## Contributors
 
 See
-[all contributors](https://github.com/strongloop/loopback-next/graphs/contributors).
+[all contributors](https://github.com/loopbackio/loopback-next/graphs/contributors).
 
 ## License
 

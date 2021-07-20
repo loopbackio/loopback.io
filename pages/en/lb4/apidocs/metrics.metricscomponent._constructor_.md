@@ -3,7 +3,7 @@ lang: en
 title: 'API docs: metrics.metricscomponent._constructor_'
 keywords: LoopBack 4.0, LoopBack 4, Node.js, TypeScript, OpenAPI
 sidebar: lb4_sidebar
-editurl: https://github.com/strongloop/loopback-next/tree/master/extensions/metrics
+editurl: https://github.com/loopbackio/loopback-next/tree/master/extensions/metrics
 permalink: /doc/en/lb4/apidocs.metrics.metricscomponent._constructor_.html
 ---
 
