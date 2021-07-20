@@ -8,31 +8,31 @@
 #   from the given github repo. If that branch is NOT master, then the
 #   branch name will be appended to the local readme file name.
 (cat <<LIST_END
-strongloop loopback-connector-mysql master
-strongloop loopback-connector-cassandra master
-strongloop loopback-connector-cloudant master
-strongloop loopback-connector-couchdb2 master
-strongloop loopback-connector-dashdb master
-strongloop loopback-connector-db2 master
+loopbackio loopback-connector-mysql master
+loopbackio loopback-connector-cassandra master
+loopbackio loopback-connector-cloudant master
+loopbackio loopback-connector-couchdb2 master
+loopbackio loopback-connector-dashdb master
+loopbackio loopback-connector-db2 master
 strongloop loopback-connector-db2iseries master
-strongloop loopback-connector-ibmi master
+loopbackio loopback-connector-ibmi master
 strongloop loopback-connector-db2z master
-strongloop loopback-connector-grpc master
+loopbackio loopback-connector-grpc master
 strongloop loopback-connector-informix master
 strongloop loopback-connector-jsonrpc master
-strongloop loopback-connector-kv-redis master
-strongloop loopback-connector-mongodb master
+loopbackio loopback-connector-kv-redis master
+loopbackio loopback-connector-mongodb master
 strongloop loopback-connector-mqlight master
-strongloop loopback-connector-mssql master
+loopbackio loopback-connector-mssql master
 strongloop loopback-connector-zosconnectee master
-strongloop loopback-connector-openapi master
-strongloop loopback-connector-oracle master
+loopbackio loopback-connector-openapi master
+loopbackio loopback-connector-oracle master
 strongloop loopback-oracle-installer master
-strongloop loopback-connector-postgresql master
+loopbackio loopback-connector-postgresql master
 strongloop loopback-connector-remote master
-strongloop loopback-connector-rest master
-strongloop loopback-connector-soap master
-strongloop strong-soap master
+loopbackio loopback-connector-rest master
+loopbackio loopback-connector-soap master
+loopbackio strong-soap master
 strongloop-community loopback-android-getting-started master
 strongloop loopback-example-angular master
 strongloop loopback-example-app-logic master
@@ -51,7 +51,7 @@ strongloop loopback-example-relations master
 strongloop loopback-example-storage master
 strongloop loopback-example-user-management master
 strongloop-community loopback-ios-getting-started master
-strongloop strong-error-handler master
+loopbackio strong-error-handler master
 strongloop strong-remoting master
 strongloop angular-live-set
 strongloop loopback-component-storage master

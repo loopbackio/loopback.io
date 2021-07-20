@@ -16,7 +16,7 @@ To preview the website locally:
 2.  Clone this repo (you might use the SSH URL instead of HTTPS).:
 
 ```
-git clone https://github.com/strongloop/loopback.io.git
+git clone https://github.com/loopbackio/loopback.io.git
 ```
 
 3.  `cd` to the repository directory and run the following command:
@@ -83,11 +83,11 @@ for LoopBack 4 content. The changes are then picked up as part of Travis CI's
 builds along with README update scripts and deployed to GitHub Pages once
 successful. The `upgrade-swagger-ui.js` script is also run as part of the
 builds. If you'd like to make documentation changes for LoopBack 4, please do so
-on its own [repository](https://github.com/strongloop/loopback-next/).
+on its own [repository](https://github.com/loopbackio/loopback-next/).
 
 ### Linting Readmes
 
-There is an additional `npm script` that "lints" the readmes for markdown formatting problems. It is currently "experimental", see [this issue](https://github.com/strongloop/loopback.io/issues/49#issuecomment-253672668) for more info.
+There is an additional `npm script` that "lints" the readmes for markdown formatting problems. It is currently "experimental", see [this issue](https://github.com/loopbackio/loopback.io/issues/49#issuecomment-253672668) for more info.
 
 You can run this script thus:
 
@@ -129,7 +129,7 @@ reviews. Credentials for accessing the Cloud Function can be obtained from Diana
 #### Your own version
 
 You can deploy the code on your own IBM Cloud account and upload the URL for
-Discovery in [search.html](https://github.com/strongloop/loopback.io/blob/gh-pages/_layouts/search.html).
+Discovery in [search.html](https://github.com/loopbackio/loopback.io/blob/gh-pages/_layouts/search.html).
 
 
 ## Contributing 
