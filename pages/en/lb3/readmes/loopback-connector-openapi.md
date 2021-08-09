@@ -26,7 +26,7 @@ To interact with OpenAPI spec:
 
 3. Create a controller that calls the service created in the above step using `lb4 controller` command.
 
-For details, refer to the [Calling other APIs and web services documentation page](https://loopback.io/doc/en/lb4/Calling-other-APIs-and-web-services.html).
+For details, refer to the [Calling REST APIs documentation page](https://loopback.io/doc/en/lb4/Calling-rest-apis.html).
 
 ### LoopBack 3 Usage
 
