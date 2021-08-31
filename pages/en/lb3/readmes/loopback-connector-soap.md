@@ -1,5 +1,9 @@
 # loopback-connector-soap
 
+[![CI](https://github.com/loopbackio/loopback-connector-soap/actions/workflows/continuous-integration.yaml/badge.svg)](https://github.com/loopbackio/loopback-connector-soap/actions/workflows/continuous-integration.yaml)
+[![Build Status](https://app.travis-ci.com/loopbackio/loopback-connector-soap.svg?branch=master)](https://app.travis-ci.com/loopbackio/loopback-connector-soap)
+[![Coverage Status](https://coveralls.io/repos/github/loopbackio/loopback-connector-soap/badge.svg?branch=master)](https://coveralls.io/github/loopbackio/loopback-connector-soap?branch=master)
+
 The SOAP connector enables LoopBack applications to interact with
 [SOAP](http://www.w3.org/TR/soap)-based web services described using
 [WSDL](http://www.w3.org/TR/wsdl).
