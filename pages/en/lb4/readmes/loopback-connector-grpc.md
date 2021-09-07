@@ -1,4 +1,9 @@
 # loopback-connector-grpc
+
+[![CI](https://github.com/loopbackio/loopback-connector-grpc/actions/workflows/ci.yaml/badge.svg)](https://github.com/loopbackio/loopback-connector-grpc/actions/workflows/ci.yaml)
+[![Build Status](https://app.travis-ci.com/loopbackio/loopback-connector-grpc.svg?branch=master)](https://app.travis-ci.com/loopbackio/loopback-connector-grpc)
+[![Coverage Status](https://coveralls.io/repos/github/loopbackio/loopback-connector-grpc/badge.svg?branch=master)](https://coveralls.io/github/loopbackio/loopback-connector-grpc?branch=master)
+
 The gRPC connector enables LoopBack applications to interact with [gRPC](http://www.grpc.io/) services.
 
 ## Installation 
