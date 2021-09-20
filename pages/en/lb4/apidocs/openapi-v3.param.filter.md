@@ -43,7 +43,6 @@ async find(
 ): Promise<(T & Relations)[]> {
   // ...
 }
-
 ```
 
 

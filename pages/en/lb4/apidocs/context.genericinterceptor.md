@@ -41,7 +41,6 @@ const myInterceptor: Interceptor = async (ctx, next) {
   // either return `result` or another value if the interceptor decides to
   // have its own response
 }
-
 ```
 
 

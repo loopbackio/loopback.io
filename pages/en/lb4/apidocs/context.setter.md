@@ -26,7 +26,6 @@ export declare type Setter<T> = (value: T) => void;
 
 ```ts
 setterFn('my-value');
-
 ```
 
 

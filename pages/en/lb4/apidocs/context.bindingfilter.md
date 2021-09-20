@@ -31,7 +31,6 @@ Ideally, `BindingFilter` should be declared as a type guard as follows:
 export type BindingFilterGuard<ValueType = unknown> = (
   binding: Readonly<Binding<unknown>>,
 ) => binding is Readonly<Binding<ValueType>>;
-
 ```
 But TypeScript treats the following types as incompatible and does not accept type 1 for type 2.
 

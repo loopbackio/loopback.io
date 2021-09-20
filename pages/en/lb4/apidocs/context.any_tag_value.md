@@ -27,7 +27,6 @@ The following code matches bindings with tag `{controller: 'A'}` or `{controller
 
 ```ts
 ctx.findByTag({controller: ANY_TAG_VALUE})
-
 ```
 
 

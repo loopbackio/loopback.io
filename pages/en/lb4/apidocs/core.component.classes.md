@@ -28,7 +28,6 @@ classes?: ClassMap;
 {
   'rest.body-parsers.xml': XmlBodyParser
 }
-
 ```
 
 

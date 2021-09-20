@@ -52,7 +52,6 @@ const schemaRef1 = getModelSchemaRef(Customer, {partial: true});
 // The following schema allows properties of `customer` and
 // `customer.address` optional
 const schemaRef2 = getModelSchemaRef(Customer, {partial: 'deep'});
-
 ```
 
 

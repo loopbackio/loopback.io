@@ -28,7 +28,6 @@ export interface OrClause<MT extends object>
 {
   or: [...],
 }
-
 ```
 
 ## Properties

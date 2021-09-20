@@ -32,7 +32,6 @@ class MyController
     return true;
   }
 }
-
 ```
 The `myMethod` above has design-time metadata as follows:
 
@@ -42,7 +41,6 @@ The `myMethod` above has design-time metadata as follows:
   parameterTypes: [String, Number, MyClass],
   returnType: Boolean
 }
-
 ```
 
 ## Properties

@@ -38,7 +38,6 @@ export declare function defineKeyValueRepositoryClass<M extends Model>(modelClas
 
 ```ts
 const ProductKeyValueRepository = defineKeyValueRepositoryClass(Product);
-
 ```
 
 

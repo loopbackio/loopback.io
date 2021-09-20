@@ -37,7 +37,6 @@ export declare function defineModelClass<BaseCtor extends typeof Model, Props ex
 
 ```ts
 const Product = defineModelClass(Entity, new ModelDefinition('Product'));
-
 ```
 To enable type safety, you should describe properties of your model:
 
@@ -46,7 +45,6 @@ const Product = defineModelClass<
  typeof Entity,
  {id: number, name: string}
 >(Entity, new ModelDefinition('Product'));
-
 ```
 If your model allows arbitrary (free-form) properties, then add `AnyObject` to the type describing model properties.
 
@@ -55,7 +53,6 @@ const Product = defineModelClass<
  typeof Entity,
  AnyObject & {id: number},
 >(Entity, new ModelDefinition('Product'));
-
 ```
 
 

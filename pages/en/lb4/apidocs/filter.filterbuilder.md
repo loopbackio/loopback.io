@@ -33,7 +33,6 @@ const filter = filterBuilder
   .order(['a ASC', 'b DESC'])
   .where({id: 1})
   .build();
-
 ```
 
 ## Constructors

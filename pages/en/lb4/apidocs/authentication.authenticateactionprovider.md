@@ -27,7 +27,6 @@ export declare class AuthenticateActionProvider implements Provider<Authenticate
 
 ```ts
 context.bind('authentication.actions.authenticate').toProvider(AuthenticateActionProvider)
-
 ```
 
 ## Constructors

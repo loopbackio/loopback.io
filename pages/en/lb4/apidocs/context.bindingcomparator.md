@@ -26,7 +26,6 @@ export interface BindingComparator
 
 ```ts
 const compareByKey: BindingComparator = (a, b) => a.key.localeCompare(b.key);
-
 ```
 
 

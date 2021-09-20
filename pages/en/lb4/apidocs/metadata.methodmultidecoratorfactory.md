@@ -32,7 +32,6 @@ export declare class MethodMultiDecoratorFactory<T> extends MethodDecoratorFacto
  @response(404, NotFoundTwo)
  @response(409, {schema: {}})
  public async myMethod() {}
-
 ```
 In the case that a ResponseObject is passed, it becomes the default for description/content, and if possible, further Models are incorporated as a `oneOf: []` array.
 

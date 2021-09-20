@@ -32,7 +32,6 @@ const where = whereBuilder
   .and({b: 'b'}, {c: {lt: 1}})
   .or({d: 'd'}, {e: {neq: 1}})
   .build();
-
 ```
 
 ## Constructors

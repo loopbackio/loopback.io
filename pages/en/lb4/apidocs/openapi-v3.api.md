@@ -41,7 +41,6 @@ ClassDecorator
 class MyController {
   // ...
 }
-
 ```
 
 

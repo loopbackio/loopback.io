@@ -40,7 +40,6 @@ function greet(name: string) {
 }
 const route = new Route('get', '/', operationSpec, greet);
 app.route(route);
-
 ```
 
 

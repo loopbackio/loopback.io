@@ -34,7 +34,6 @@ User can bind their own Sequence to app as shown below
 
 ```ts
 app.bind(CoreBindings.SEQUENCE).toClass(MySequence);
-
 ```
 
 ## Constructors

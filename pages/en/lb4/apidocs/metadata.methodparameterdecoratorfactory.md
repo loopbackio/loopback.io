@@ -32,7 +32,6 @@ class MyController {
   @param('msg')  // Parameter 1
   greet() {}
 }
-
 ```
 
 ## Methods

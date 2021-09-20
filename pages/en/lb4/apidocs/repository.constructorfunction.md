@@ -29,7 +29,6 @@ function Foo(x) {
   if (!(this instanceof Foo)) { return new Foo(x); }
   this.x = x;
 }
-
 ```
 
 

@@ -50,7 +50,6 @@ const log: Middleware = async (requestCtx, next) => {
     throw err;
   }
 }
-
 ```
 
 

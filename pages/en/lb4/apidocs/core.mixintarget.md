@@ -33,7 +33,6 @@ export function MyMixin<T extends MixinTarget<Application>>(superClass: T) {
     // contribute new class members
   }
 };
-
 ```
 TypeScript does not allow class mixins to access protected members from the base class. You can use the following approach as a workaround:
 
@@ -41,7 +40,6 @@ TypeScript does not allow class mixins to access protected members from the base
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
 (this as unknown as {YourBaseClass}).protectedMember
-
 ```
 The directive `@ts-ignore` suppresses compiler error about accessing a protected member from outside. Unfortunately, it also disables other compile-time checks (e.g. to verify that a protected method was invoked with correct arguments, and so on). This is the same behavior you would get by using `Constructor<any>` instead of `MixinTarget<Application>`<!-- -->. The major improvement is that TypeScript can still infer the return type of the protected member, therefore `any` is NOT introduced to subsequent code.
 
@@ -62,7 +60,6 @@ superClass: T,
      return binding;
    }
 }
-
 ```
 
 

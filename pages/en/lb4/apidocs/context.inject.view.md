@@ -29,7 +29,6 @@ class MyControllerWithView {
   @inject.view(filterByTag('foo'))
   view: ContextView<string[]>;
 }
-
 ```
 
 

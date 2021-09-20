@@ -36,7 +36,6 @@ class MyPassportStrategyProvider implements Provider<Strategy | undefined> {
     }
   }
 }
-
 ```
 
 

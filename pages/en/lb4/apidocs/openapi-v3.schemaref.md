@@ -38,7 +38,6 @@ const spec: SchemaRef = {
     }
   }
 }
-
 ```
 
 

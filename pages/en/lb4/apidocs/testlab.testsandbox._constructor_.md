@@ -42,7 +42,6 @@ const sandbox = new TestSandbox(rootPath, {subdir: false});
 
 // Create a sandbox in the `test1` subdirectory of the root path
 const sandbox = new TestSandbox(rootPath, {subdir: 'test1'});
-
 ```
 
 

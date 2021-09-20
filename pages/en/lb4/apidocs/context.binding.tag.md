@@ -46,7 +46,6 @@ binding.tag('controller', 'rest');
 // `{name: 'my-controller'}` (name = 'name', value = 'my-controller')
 binding.tag('controller', {name: 'my-controller'});
 
-
 ```
 
 

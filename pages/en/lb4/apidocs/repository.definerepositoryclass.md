@@ -48,7 +48,6 @@ const AddressRepository = defineRepositoryClass<
    AddressRelations
   >,
 >(Address, DefaultCrudRepository);
-
 ```
 
 

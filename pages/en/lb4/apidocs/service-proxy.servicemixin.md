@@ -125,7 +125,6 @@ A new class that extends the super class with service proxy related methods
 
 ```ts
 class MyApplication extends ServiceMixin(Application) {}
-
 ```
 Please note: the members in the mixin function are documented in a dummy class called <a href="#ServiceMixinDoc">ServiceMixinDoc</a>
 

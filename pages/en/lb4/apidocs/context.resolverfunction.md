@@ -28,7 +28,6 @@ export interface ResolverFunction
 const resolver: ResolverFunction = (ctx, injection, session) {
   return session.currentBinding?.key;
 }
-
 ```
 
 

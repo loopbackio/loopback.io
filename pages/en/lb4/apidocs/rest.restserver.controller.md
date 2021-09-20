@@ -40,7 +40,6 @@ The newly created binding, you can use the reference to further modify the bindi
 class MyController {
 }
 app.controller(MyController).lock();
-
 ```
 
 

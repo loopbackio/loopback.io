@@ -44,7 +44,6 @@ verifyCredentials(credentials: C): Promise<U> {
   // throw a JS error, agnostic of the client type
   throw new Error('authentication failed');
 };
-
 ```
 A pseudo code for 3rd party authentication:
 
@@ -62,7 +61,6 @@ verifyCredentials(credentials: C): Promise<U> {
     throw e;
   }
 };
-
 ```
 
 

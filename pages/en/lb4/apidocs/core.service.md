@@ -50,7 +50,6 @@ export class MyController {
 
 ctx.bind('my-controller').toClass(MyController);
 await myController = ctx.get<MyController>('my-controller');
-
 ```
 
 

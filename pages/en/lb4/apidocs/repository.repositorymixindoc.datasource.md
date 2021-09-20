@@ -48,7 +48,6 @@ app.dataSource(ds);
 constructor(@inject('datasources.db') dataSource: DataSourceType) {
 
 }
-
 ```
 
 

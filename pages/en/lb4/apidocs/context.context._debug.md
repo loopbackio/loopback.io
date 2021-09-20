@@ -31,7 +31,6 @@ export class Application extends Context {
   super('application');
   this._debug = debug;
 }
-
 ```
 
 

@@ -42,7 +42,6 @@ app.server(RestServer);
 // This server constructor will be bound under "servers.RestServer".
 app.server(RestServer, "v1API");
 // This server instance will be bound under "servers.v1API".
-
 ```
 
 

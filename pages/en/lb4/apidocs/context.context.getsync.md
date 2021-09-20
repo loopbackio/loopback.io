@@ -45,7 +45,6 @@ const app = ctx.getSync<Application>('application.instance');
 
 // get "rest" property from the value bound to "config"
 const config = await ctx.getSync<RestComponentConfig>('config#rest');
-
 ```
 
 

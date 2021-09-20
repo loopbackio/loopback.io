@@ -43,7 +43,6 @@ A promise of the bound value, or a promise of undefined when the optional bindin
 const config = await ctx.get<RestComponentConfig>('config#rest', {
   optional: true
 });
-
 ```
 
 

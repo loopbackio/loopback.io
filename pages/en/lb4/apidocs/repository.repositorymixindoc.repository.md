@@ -54,7 +54,6 @@ class NoteRepo {
 };
 
 app.repository(NoteRepo);
-
 ```
 
 

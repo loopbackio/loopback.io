@@ -39,7 +39,6 @@ static create<V>(key: string, propertyPath?: string): BindingKey<V>;
 BindingKey.create<string>('application.name');
 BindingKey.create<number>('config', 'rest.port);
 BindingKey.create<number>('config#rest.port');
-
 ```
 
 

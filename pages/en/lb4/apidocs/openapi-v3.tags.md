@@ -47,7 +47,6 @@ class MyController {
     return 'Hello world!';
   }
 }
-
 ```
 or
 
@@ -64,7 +63,6 @@ class MyController {
     return 'Hello world!';
   }
 }
-
 ```
 
 

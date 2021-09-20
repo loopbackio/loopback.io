@@ -28,7 +28,6 @@ providers?: ProviderMap;
 {
   'authentication.strategies.ldap': LdapStrategyProvider
 }
-
 ```
 
 

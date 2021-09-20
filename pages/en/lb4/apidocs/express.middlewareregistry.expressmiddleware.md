@@ -43,7 +43,6 @@ const myExpressMiddleware = myExpressMiddlewareFactory(myExpressMiddlewareConfig
 server.expressMiddleware('middleware.express.my', myExpressMiddleware);
 // Or
 server.expressMiddleware('middleware.express.my', [myExpressMiddleware]);
-
 ```
 
 

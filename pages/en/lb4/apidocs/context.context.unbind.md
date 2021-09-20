@@ -40,7 +40,6 @@ If you need to unbind a binding owned by a parent context, use the code below:
 ```ts
 const ownerCtx = ctx.getOwnerContext(key);
 return ownerCtx != null && ownerCtx.unbind(key);
-
 ```
 
 

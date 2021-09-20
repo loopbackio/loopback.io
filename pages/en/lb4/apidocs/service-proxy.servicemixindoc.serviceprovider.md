@@ -51,7 +51,6 @@ export class GeocoderServiceProvider implements Provider<GeocoderService> {
 }
 
 app.serviceProvider(GeocoderServiceProvider);
-
 ```
 
 

@@ -41,7 +41,6 @@ import myExpressMiddlewareFactory from 'my-express-middleware';
 const myExpressMiddlewareConfig= {};
 const myExpressMiddleware = myExpressMiddlewareFactory(myExpressMiddlewareConfig);
 server.expressMiddleware('middleware.express.my', myExpressMiddleware);
-
 ```
 
 

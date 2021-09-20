@@ -36,7 +36,6 @@ export class HelloController {
     return `Hello, ${name}`;
   }
 }
-
 ```
 
 

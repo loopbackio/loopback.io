@@ -31,7 +31,6 @@ export class MyController {
     return `Hello, ${names}`;
   }
 }
-
 ```
 
 

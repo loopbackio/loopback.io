@@ -46,7 +46,6 @@ export class ProductComponent {
 };
 
 app.component(ProductComponent);
-
 ```
 
 

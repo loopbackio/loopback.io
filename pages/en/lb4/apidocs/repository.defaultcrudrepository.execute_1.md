@@ -48,7 +48,6 @@ const result = await repo.execute('MyCollection', 'aggregate', [
   {$unwind: '$data'},
   {$out: 'tempData'}
 ]);
-
 ```
 
 

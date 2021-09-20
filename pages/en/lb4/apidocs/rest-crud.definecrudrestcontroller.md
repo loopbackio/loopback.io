@@ -53,7 +53,6 @@ inject('repositories.ProductRepository')(
 );
 
 app.controller(ProductController);
-
 ```
 
 

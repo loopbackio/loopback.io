@@ -30,7 +30,6 @@ class AuthenticationManager {
     @inject.tag('authentication.strategy') public strategies: Strategy[],
   ) {}
 }
-
 ```
 
 

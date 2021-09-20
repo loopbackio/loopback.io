@@ -32,7 +32,6 @@ app.component(RestComponent);
 const restServer = await app.getServer(RestServer);
 const httpServer = http.createServer(restServer.requestHandler);
 httpServer.listen(3000);
-
 ```
 
 

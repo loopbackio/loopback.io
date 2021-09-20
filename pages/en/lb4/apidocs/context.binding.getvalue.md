@@ -46,7 +46,6 @@ if (isPromiseLike(result)) {
 } else {
   doSomething(result);
 }
-
 ```
 
 

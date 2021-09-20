@@ -35,7 +35,6 @@ class MyAuthAction {
     this.userBinding.toDynamicValue(() => {...});
   }
 }
-
 ```
 
 

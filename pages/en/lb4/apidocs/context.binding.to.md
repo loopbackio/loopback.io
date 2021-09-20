@@ -36,7 +36,6 @@ this
 
 ```ts
 ctx.bind('appName').to('CodeHub');
-
 ```
 
 

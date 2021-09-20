@@ -40,7 +40,6 @@ expressMiddleware<CFG>(middlewareFactory: ExpressMiddlewareFactory<CFG>, middlew
 import myExpressMiddlewareFactory from 'my-express-middleware';
 const myExpressMiddlewareConfig= {};
 server.expressMiddleware(myExpressMiddlewareFactory, myExpressMiddlewareConfig);
-
 ```
 
 

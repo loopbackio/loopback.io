@@ -37,7 +37,6 @@ ctx.bind('provider_key').toProvider(DateProvider);
 
 const value = ctx.getAsync('provider_key');
 // value is a Date instance
-
 ```
 
 ## Methods

@@ -18,6 +18,7 @@ permalink: /doc/en/lb4/apidocs.core.lifecycleobserveroptions.html
 ```typescript
 export declare type LifeCycleObserverOptions = {
     orderedGroups: string[];
+    disabledGroups?: string[];
     parallel?: boolean;
 };
 ```

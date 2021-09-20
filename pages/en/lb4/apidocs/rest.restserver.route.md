@@ -46,7 +46,6 @@ class MyController {
   }
 }
 app.route('get', '/greet', operationSpec, MyController, 'greet');
-
 ```
 
 

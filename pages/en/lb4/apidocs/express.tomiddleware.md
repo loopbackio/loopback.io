@@ -40,7 +40,6 @@ A LoopBack middleware function that wraps the list of Express middleware
 ```ts
 toMiddleware(fn);
 toMiddleware(fn1, fn2, fn3);
-
 ```
 
 

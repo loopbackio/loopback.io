@@ -33,7 +33,6 @@ export class DynamicGreetingProvider {
     return `Hello, ${user}`;
   }
 }
-
 ```
 
 ## Properties

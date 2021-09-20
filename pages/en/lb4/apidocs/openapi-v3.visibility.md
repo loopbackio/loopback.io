@@ -57,7 +57,6 @@ class MyOtherController {
     return 'Echo!'
   }
 }
-
 ```
 
 

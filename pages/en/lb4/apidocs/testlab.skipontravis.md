@@ -42,7 +42,6 @@ RETVAL
 skipOnTravis(it, 'does something when some condition', async () => {
   // the test
 });
-
 ```
 
 

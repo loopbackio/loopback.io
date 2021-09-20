@@ -47,7 +47,6 @@ const config = await ctx.get<RestComponentConfig>('config#rest');
 // get "a" property of "numbers" property from the value bound to "data"
 ctx.bind('data').to({numbers: {a: 1, b: 2}, port: 3000});
 const a = await ctx.get<number>('data#numbers.a');
-
 ```
 
 

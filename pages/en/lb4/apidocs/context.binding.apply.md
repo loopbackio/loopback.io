@@ -40,7 +40,6 @@ const serverTemplate = (binding: Binding) =>
 
 const serverBinding = new Binding<RestServer>('servers.RestServer1');
 serverBinding.apply(serverTemplate);
-
 ```
 
 

@@ -43,7 +43,6 @@ class MyController {
     return `Hello, ${name}`;
   }
 }
-
 ```
 
 

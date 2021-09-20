@@ -49,7 +49,6 @@ class MySequence implements SequenceHandler {
     }
   }
 }
-
 ```
 
 

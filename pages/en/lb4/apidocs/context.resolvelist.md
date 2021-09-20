@@ -38,7 +38,6 @@ export declare function resolveList<T, V>(list: T[], resolver: (val: T, index: n
 
 ```ts
 const result = resolveList(['a', 'b'], v => v.toUpperCase());
-
 ```
 The `result` will be `['A', 'B']`<!-- -->.
 
@@ -48,7 +47,6 @@ The `result` will be `['A', 'B']`<!-- -->.
 const result = resolveList(['a', 'b'], v =>
   Promise.resolve(v.toUpperCase()),
 );
-
 ```
 The `result` will be a promise of `['A', 'B']`<!-- -->.
 

@@ -130,7 +130,6 @@ A new class that extends the super class with repository related methods
 
 ```ts
 class MyApplication extends RepositoryMixin(Application) {}
-
 ```
 Please note: the members in the mixin function are documented in a dummy class called <a href="#RepositoryMixinDoc">RepositoryMixinDoc</a>
 

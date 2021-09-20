@@ -36,7 +36,6 @@ type Props = Optional<Props>;
 
 // Expect: { name: string; age?: number; visible?: boolean; }
 type Props = Optional<Props, 'age' | 'visible'>;
-
 ```
 
 

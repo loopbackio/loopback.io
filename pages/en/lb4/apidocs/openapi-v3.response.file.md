@@ -38,7 +38,6 @@ class MyController {
     // use response.download(...);
   }
 }
-
 ```
 
 

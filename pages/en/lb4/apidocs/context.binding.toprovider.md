@@ -43,7 +43,6 @@ export class DateProvider implements Provider<Date> {
     return new Date(param);
   }
 }
-
 ```
 
 

@@ -56,7 +56,6 @@ if (finished) {
 } else {
   // Http response is yet to be produced
 }
-
 ```
 
 

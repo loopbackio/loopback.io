@@ -45,7 +45,6 @@ The bound value, or undefined when an optional binding is not found.
 const config = await ctx.getSync<RestComponentConfig>('config#rest', {
   optional: true
 });
-
 ```
 
 

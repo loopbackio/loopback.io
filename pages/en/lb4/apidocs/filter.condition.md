@@ -33,7 +33,6 @@ export declare type Condition<MT extends object> = {
   status: 'ACTIVE',
   age: {gte: 40}
 }
-
 ```
 
 

@@ -56,7 +56,6 @@ class CustomerRepository extends DefaultCrudRepository<
     );
   }
 }
-
 ```
 
 

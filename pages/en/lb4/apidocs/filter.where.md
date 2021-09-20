@@ -32,7 +32,6 @@ export declare type Where<MT extends object = AnyObject> = Condition<MT> | AndCl
   and: [...],
   or: [...],
 }
-
 ```
 
 

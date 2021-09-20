@@ -35,7 +35,6 @@ export class Application extends Context {
 protected getDebugNamespace() {
   return 'loopback:context:application';
 }
-
 ```
 
 

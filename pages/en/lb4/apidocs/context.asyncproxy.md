@@ -39,7 +39,6 @@ class MyController {
     return `Hello, ${name}`;
   }
 }
-
 ```
 `AsyncProxy<MyController>` will be:
 
@@ -49,7 +48,6 @@ class MyController {
   greet(name: string): ValueOrPromise<string>; // the return type becomes `ValueOrPromise<string>`
   hello(name: string): Promise<string>; // the same as MyController
 }
-
 ```
 
 

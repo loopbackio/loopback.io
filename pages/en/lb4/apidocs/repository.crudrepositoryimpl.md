@@ -39,7 +39,6 @@ export class TestRepository extends CrudRepositoryImpl<Test> {
     return Promise.reject(new Error('deleteAll is disabled'));
   }
 }
-
 ```
 
 ## Constructors

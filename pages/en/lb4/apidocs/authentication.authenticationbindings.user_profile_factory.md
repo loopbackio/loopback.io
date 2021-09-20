@@ -28,7 +28,6 @@ USER_PROFILE_FACTORY: BindingKey<UserProfileFactory<any>>
 server
   .bind(AuthenticationBindings.USER_PROFILE_FACTORY)
   .to(myUserProfileFactory);
-
 ```
 
 

@@ -42,7 +42,6 @@ const ProductRepository = defineCrudRepositoryClass<
   typeof Product.prototype.id,
   ProductRelations
 >(Product);
-
 ```
 
 

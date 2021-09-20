@@ -44,7 +44,6 @@ class MyService {
 
 const ctx = new Context();
 ctx.bind('services.MyService').toInjectable(MyService);
-
 ```
 
 

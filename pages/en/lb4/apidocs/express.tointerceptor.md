@@ -38,7 +38,6 @@ export declare function toInterceptor<CTX extends Context = InvocationContext>(f
 ```ts
 toInterceptor(fn);
 toInterceptor(fn1, fn2, fn3);
-
 ```
 
 

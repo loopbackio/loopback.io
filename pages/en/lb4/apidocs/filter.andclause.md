@@ -28,7 +28,6 @@ export interface AndClause<MT extends object>
 {
   and: [...],
 }
-
 ```
 
 ## Properties

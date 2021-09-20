@@ -42,7 +42,6 @@ import {extensionPoint} from '@loopback/core';
 export class GreetingService {
   // ...
 }
-
 ```
 
 

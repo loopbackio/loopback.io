@@ -38,7 +38,6 @@ redirect(fromPath: string, toPathOrUrl: string, statusCode?: number): Binding;
 
 ```ts
 server.redirect('/explorer', '/explorer/');
-
 ```
 
 

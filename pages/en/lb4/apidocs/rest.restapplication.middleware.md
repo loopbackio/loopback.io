@@ -40,7 +40,6 @@ const log: Middleware = async (requestCtx, next) {
   // ...
 }
 server.middleware(log);
-
 ```
 
 

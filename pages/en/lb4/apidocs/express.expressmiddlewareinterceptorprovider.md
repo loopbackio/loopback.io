@@ -34,7 +34,6 @@ class SpyInterceptorProvider extends ExpressMiddlewareInterceptorProvider<
       super(spy, spyConfig);
     }
 }
-
 ```
 To inject the configuration without automatic reloading:
 
@@ -46,7 +45,6 @@ class SpyInterceptorProvider extends ExpressMiddlewareInterceptorProvider<
     super(spy, configView);
   }
 }
-
 ```
 
 ## Constructors

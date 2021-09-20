@@ -42,7 +42,6 @@ ctx.bind('now').toDynamicValue(() => Date.now());
 ctx.bind('something').toDynamicValue(
  async () => Promise.delay(10).then(doSomething)
 );
-
 ```
 
 

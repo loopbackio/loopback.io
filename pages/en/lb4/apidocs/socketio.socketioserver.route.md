@@ -18,7 +18,7 @@ Register a socketio controller
 <b>Signature:</b>
 
 ```typescript
-route(controllerClass: Constructor<object>, meta?: SocketIoMetadata | string | RegExp): SocketIO.Server | SocketIO.Namespace;
+route(controllerClass: Constructor<object>, meta?: SocketIoMetadata | string | RegExp): Server<import("socket.io/dist/typed-events").DefaultEventsMap, import("socket.io/dist/typed-events").DefaultEventsMap, import("socket.io/dist/typed-events").DefaultEventsMap> | import("socket.io").Namespace<import("socket.io/dist/typed-events").DefaultEventsMap, import("socket.io/dist/typed-events").DefaultEventsMap, import("socket.io/dist/typed-events").DefaultEventsMap>;
 ```
 
 ## Parameters
@@ -30,6 +30,6 @@ route(controllerClass: Constructor<object>, meta?: SocketIoMetadata | string | R
 
 <b>Returns:</b>
 
-SocketIO.Server \| SocketIO.Namespace
+Server&lt;import("socket.io/dist/typed-events").DefaultEventsMap, import("socket.io/dist/typed-events").DefaultEventsMap, import("socket.io/dist/typed-events").DefaultEventsMap&gt; \| import("socket.io").Namespace&lt;import("socket.io/dist/typed-events").DefaultEventsMap, import("socket.io/dist/typed-events").DefaultEventsMap, import("socket.io/dist/typed-events").DefaultEventsMap&gt;
 
 

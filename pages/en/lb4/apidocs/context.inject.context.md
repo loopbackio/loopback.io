@@ -28,7 +28,6 @@ context: () => (target: Object, member: string | undefined, methodDescriptorOrPa
 class MyProvider {
  constructor(@inject.context() private ctx: Context) {}
 }
-
 ```
 
 

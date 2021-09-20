@@ -44,7 +44,6 @@ const appCtx = new Context('application');
 // Create a new child context called "request" and inheriting bindings
 // from `appCtx`
 const reqCtx = new Context(appCtx, 'request');
-
 ```
 
 

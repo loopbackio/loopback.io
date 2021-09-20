@@ -38,7 +38,6 @@ export declare function resolveMap<T, V>(map: MapObject<T>, resolver: (val: T, k
 
 ```ts
 const result = resolveMap({a: 'x', b: 'y'}, v => v.toUpperCase());
-
 ```
 The `result` will be `{a: 'X', b: 'Y'}`<!-- -->.
 
@@ -48,7 +47,6 @@ The `result` will be `{a: 'X', b: 'Y'}`<!-- -->.
 const result = resolveMap({a: 'x', b: 'y'}, v =>
   Promise.resolve(v.toUpperCase()),
 );
-
 ```
 The `result` will be a promise of `{a: 'X', b: 'Y'}`<!-- -->.
 

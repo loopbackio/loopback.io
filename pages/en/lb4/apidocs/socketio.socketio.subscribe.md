@@ -19,7 +19,6 @@ Decorate a method to subscribe to socketio events. For example,
 @socketio.subscribe('chat message')
 async function onChat(msg: string) {
 }
-
 ```
 
 <b>Signature:</b>

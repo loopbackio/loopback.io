@@ -30,7 +30,6 @@ D extends DecoratorType>
 function classDecorator(spec: MySpec): ClassDecorator {
   return ClassDecoratorFactory.createDecorator('my-key', spec);
 }
-
 ```
 or
 
@@ -39,14 +38,12 @@ function classDecorator(spec: MySpec): ClassDecorator {
   const factory: ClassDecoratorFactory<MySpec>('my-key', spec);
   return factory.create();
 }
-
 ```
 These functions above declare `@classDecorator` that can be used as follows:
 
 ```
 @classDecorator({x: 1})
 class MyController {}
-
 ```
 
 ## Constructors

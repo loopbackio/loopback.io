@@ -42,7 +42,6 @@ function greet(name: string) {
  return `hello ${name}`;
 }
 app.route('get', '/', operationSpec, greet);
-
 ```
 
 

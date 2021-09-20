@@ -44,7 +44,6 @@ app.servers([
 ]);
 // Creates a binding for "servers.RestServer" and a binding for
 // "servers.GRPCServer";
-
 ```
 
 

@@ -38,7 +38,6 @@ void
 app.handler(({request, response}, sequence) => {
   sequence.send(response, 'hello world');
 });
-
 ```
 
 

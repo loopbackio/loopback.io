@@ -30,7 +30,6 @@ const app = new RestApplication();
 
 const server = http.createServer(app.requestHandler);
 server.listen(3000);
-
 ```
 
 

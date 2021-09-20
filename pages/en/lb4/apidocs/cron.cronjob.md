@@ -42,7 +42,6 @@ class CronJobProvider implements Provider<CronJob> {
     // ...
   }
 }
-
 ```
 
 

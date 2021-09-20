@@ -30,13 +30,11 @@ export declare class RestServer extends BaseMiddlewareRegistry implements Server
 ```ts
 const app = new MyApplication();
 app.component(RestComponent);
-
 ```
 To add additional instances of RestServer to your application, use the `.server` function:
 
 ```ts
 app.server(RestServer, 'nameOfYourServer');
-
 ```
 By default, one instance of RestServer will be created when the RestComponent is bootstrapped. This instance can be retrieved with `app.getServer(RestServer)`<!-- -->, or by calling `app.get('servers.RestServer')` Note that retrieving other instances of RestServer must be done using the server's name:
 
@@ -44,7 +42,6 @@ By default, one instance of RestServer will be created when the RestComponent is
 const server = await app.getServer('foo')
 // OR
 const server = await app.get('servers.foo');
-
 ```
 
 ## Constructors

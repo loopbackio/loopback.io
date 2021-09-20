@@ -41,7 +41,6 @@ async count(
 ): Promise<Count> {
   // ...
 }
-
 ```
 
 

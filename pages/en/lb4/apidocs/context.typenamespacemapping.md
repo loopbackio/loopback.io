@@ -30,7 +30,6 @@ export declare type TypeNamespaceMapping = {
 {
   repository: 'repositories'
 }
-
 ```
 
 

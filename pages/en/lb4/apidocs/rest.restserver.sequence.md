@@ -44,7 +44,6 @@ class MySequence implements SequenceHandler {
     send(response, 'hello world');
   }
 }
-
 ```
 
 

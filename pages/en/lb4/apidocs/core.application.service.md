@@ -68,7 +68,6 @@ export class MyController {
     return `${this.uuid}: ${name}`;
   }
 }
-
 ```
 
 

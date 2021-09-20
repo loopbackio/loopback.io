@@ -28,7 +28,6 @@ STRATEGY: BindingKey<AuthenticationStrategy | AuthenticationStrategy[] | undefin
 server
   .bind(AuthenticationBindings.STRATEGY)
   .toProvider(MyAuthenticationStrategy);
-
 ```
 
 

@@ -33,7 +33,6 @@ export declare namespace socketio
 @socketio.subscribe('chat message')
 async function onChat(msg: string) {
 }
-
 ```
  |
 

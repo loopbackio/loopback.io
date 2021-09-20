@@ -52,7 +52,6 @@ const result = await repo.execute(
   'SELECT * FROM Products WHERE size > $1',
   [42]
 );
-
 ```
 
 

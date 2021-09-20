@@ -37,7 +37,6 @@ static configure<V = unknown>(key: BindingAddress): Binding<V>;
 ```ts
 const configBinding = Binding.configure('servers.RestServer.server1')
   .to({port: 3000});
-
 ```
 
 

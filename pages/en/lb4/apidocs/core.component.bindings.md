@@ -27,7 +27,6 @@ bindings?: Binding[];
 ```ts
 const bindingX = Binding.bind('x').to('Value X');
 this.bindings = [bindingX]
-
 ```
 
 
