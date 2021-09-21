@@ -550,6 +550,7 @@ CustomerRepository.find({
 PostgreSQL supports the following PostgreSQL-specific operators:
 
 - [`contains`](#operator-contains)
+- [`match`](#operator-match)
 
 Please note extended operators are disabled by default, you must enable
 them at datasource level or model level by setting `allowExtendedOperators` to
@@ -591,6 +592,36 @@ const posts = await postRepository.find({
   where: {
     {
       categories: {'contains': ['AA']},
+    }
+  }
+});
+```
+
+### Operator `match`
+
+The `match` operator allows you to perform a [full text search using the `@@` operator](https://www.postgresql.org/docs/10/textsearch-tables.html#TEXTSEARCH-TABLES-SEARCH) in PostgreSQL.
+
+Assuming a model such as this:
+```ts
+@model({
+  settings: {
+    allowExtendedOperators: true,
+  }
+})
+class Post {
+  @property({
+    type: 'string',
+  })
+  content: string;
+}
+```
+You can query the content field as follows:
+
+```ts
+const posts = await postRepository.find({
+  where: {
+    {
+      content: {match: 'someString'},
     }
   }
 });
