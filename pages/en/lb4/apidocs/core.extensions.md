@@ -23,7 +23,7 @@ export declare namespace extensions
 
 |  Function | Description |
 |  --- | --- |
-|  [list(extensionPointName)](./core.extensions.list.md) | Inject an array of resolved extension instances for the extension point. The list is a snapshot of registered extensions when the injection is fulfilled. Extensions added or removed afterward won't impact the list. |
-|  [view(extensionPointName)](./core.extensions.view.md) | Inject a <code>ContextView</code> for extensions of the extension point. The view can then be listened on events such as <code>bind</code>, <code>unbind</code>, or <code>refresh</code> to react on changes of extensions. |
+|  [list(extensionPointName, metadata)](./core.extensions.list.md) | Inject an array of resolved extension instances for the extension point. The list is a snapshot of registered extensions when the injection is fulfilled. Extensions added or removed afterward won't impact the list. |
+|  [view(extensionPointName, metadata)](./core.extensions.view.md) | Inject a <code>ContextView</code> for extensions of the extension point. The view can then be listened on events such as <code>bind</code>, <code>unbind</code>, or <code>refresh</code> to react on changes of extensions. |
 
 

@@ -18,9 +18,9 @@ An object to provide metadata for `@inject`
 <b>Signature:</b>
 
 ```typescript
-export interface InjectionMetadata extends ResolutionOptions 
+export interface InjectionMetadata extends Omit<ResolutionOptions, 'session'> 
 ```
-<b>Extends:</b> [ResolutionOptions](./context.resolutionoptions.md)
+<b>Extends:</b> Omit&lt;[ResolutionOptions](./context.resolutionoptions.md)<!-- -->, 'session'&gt;
 
 ## Properties
 

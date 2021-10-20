@@ -384,13 +384,60 @@ export class GraphqlDemoApplication extends BootMixin(
   constructor(options: ApplicationConfig = {}) {
     super(options);
 
+    const server = this.getSync(GraphQLBindings.GRAPHQL_SERVER);
+    this.expressMiddleware('middleware.express.GraphQL', server.expressApp);
+
     // Register a GraphQL middleware
-    this.middleware((resolverData, next) => {
+    server.middleware((resolverData, next) => {
       // It's invoked for each field resolver, query and mutation operations
       return next();
     });
   }
 }
+```
+
+## Export GraphQL Schema as a file
+
+Exporting the generated GraphQL schema file can be done by calling
+`exportGraphQLSchema` on the `GraphQLServer`:
+
+```ts
+import {Application} from '@loopback/core';
+import {GraphQLServer} from '@loopback/graphql';
+
+const app = new Application();
+const serverBinding = app.server(GraphQLServer);
+app.configure(serverBinding.key).to({host: '127.0.0.1', port: 0});
+server = await app.getServer(GraphQLServer);
+// set up your resolvers
+await server.exportGraphQLSchema(pathToFile);
+```
+
+For applications using `GraphQLComponent` to discover resolvers, exporting the
+schema file is similar to `exportOpenApiSpec` on `RestServer`:
+
+```ts
+// export-graphql-schema.ts, sibling to application.ts
+import {MyApplication, MyApplicationConfig} from './application';
+
+async function exportGraphQLSchema(): Promise<void> {
+  const config: MyApplicationConfig = {
+    rest: {
+      port: +(process.env.PORT ?? 3000),
+      host: process.env.HOST ?? 'localhost',
+    },
+  };
+  const outFile = process.argv[2] ?? '';
+  const app = new MyApplication(config);
+  await app.boot();
+  const server = await app.getServer(GraphQLServer);
+  await server.exportGraphQLSchema(outFile);
+}
+
+exportGraphQLSchema().catch(err => {
+  console.error('Fail to export GraphQL spec from the application.', err);
+  process.exit(1);
+});
 ```
 
 ## Try it out

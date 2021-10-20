@@ -18,14 +18,14 @@ Resolve values for the matching bindings
 <b>Signature:</b>
 
 ```typescript
-resolve(session?: ResolutionSession): ValueOrPromise<T[]>;
+resolve(session?: ResolutionOptionsOrSession): ValueOrPromise<T[]>;
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  session | [ResolutionSession](./context.resolutionsession.md) | Resolution session |
+|  session | [ResolutionOptionsOrSession](./context.resolutionoptionsorsession.md) | Resolution session |
 
 <b>Returns:</b>
 

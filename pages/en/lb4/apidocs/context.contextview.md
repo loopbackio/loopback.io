@@ -32,7 +32,7 @@ export declare class ContextView<T = unknown> extends EventEmitter implements Co
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)(context, filter, comparator)](./context.contextview._constructor_.md) |  | Create a context view |
+|  [(constructor)(context, filter, comparator, resolutionOptions)](./context.contextview._constructor_.md) |  | Create a context view |
 
 ## Properties
 

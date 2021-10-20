@@ -18,14 +18,14 @@ Get the single value
 <b>Signature:</b>
 
 ```typescript
-singleValue(session?: ResolutionSession): Promise<T | undefined>;
+singleValue(session?: ResolutionOptionsOrSession): Promise<T | undefined>;
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  session | [ResolutionSession](./context.resolutionsession.md) |  |
+|  session | [ResolutionOptionsOrSession](./context.resolutionoptionsorsession.md) |  |
 
 <b>Returns:</b>
 

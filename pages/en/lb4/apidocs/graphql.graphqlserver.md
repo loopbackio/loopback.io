@@ -42,6 +42,7 @@ export declare class GraphQLServer extends Context implements Server
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
+|  [exportGraphQLSchema(outFile, log)](./graphql.graphqlserver.exportgraphqlschema.md) |  |  |
 |  [getMiddlewareList()](./graphql.graphqlserver.getmiddlewarelist.md) |  | Get a list of middleware |
 |  [getResolverClasses()](./graphql.graphqlserver.getresolverclasses.md) |  | Get a list of resolver classes |
 |  [middleware(middleware)](./graphql.graphqlserver.middleware.md) |  | Register a GraphQL middleware |

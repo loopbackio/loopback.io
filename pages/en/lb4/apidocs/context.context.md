@@ -52,7 +52,7 @@ export declare class Context extends EventEmitter
 |  [close()](./context.context.close.md) |  | Close the context: clear observers, stop notifications, and remove event listeners from its parent context. |
 |  [configure(key)](./context.context.configure.md) |  | Create a corresponding binding for configuration of the target bound by the given key in the context.<!-- -->For example, <code>ctx.configure('controllers.MyController').to({x: 1})</code> will create binding <code>controllers.MyController:$config</code> with value <code>{x: 1}</code>. |
 |  [contains(key)](./context.context.contains.md) |  | Check if a binding exists with the given key in the local context without delegating to the parent context |
-|  [createView(filter, comparator)](./context.context.createview.md) |  | Create a view of the context chain with the given binding filter |
+|  [createView(filter, comparator, options)](./context.context.createview.md) |  | Create a view of the context chain with the given binding filter |
 |  [debug(args)](./context.context.debug.md) |  | Wrap the debug statement so that it always print out the context name as the prefix |
 |  [emitError(err)](./context.context.emiterror.md) |  | Emit an <code>error</code> event |
 |  [emitEvent(type, event)](./context.context.emitevent.md) |  | A strongly-typed method to emit context events |

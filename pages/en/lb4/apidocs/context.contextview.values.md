@@ -18,14 +18,14 @@ Get the list of resolved values. If they are not cached, it tries to find and re
 <b>Signature:</b>
 
 ```typescript
-values(session?: ResolutionSession): Promise<T[]>;
+values(session?: ResolutionOptionsOrSession): Promise<T[]>;
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  session | [ResolutionSession](./context.resolutionsession.md) |  |
+|  session | [ResolutionOptionsOrSession](./context.resolutionoptionsorsession.md) |  |
 
 <b>Returns:</b>
 

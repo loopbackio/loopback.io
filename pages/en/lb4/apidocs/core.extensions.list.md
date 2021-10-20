@@ -18,7 +18,7 @@ Inject an array of resolved extension instances for the extension point. The lis
 <b>Signature:</b>
 
 ```typescript
-function list(extensionPointName?: string): (target: Object, member: string | undefined, methodDescriptorOrParameterIndex?: number | TypedPropertyDescriptor<any> | undefined) => void;
+function list(extensionPointName?: string, metadata?: InjectionMetadata): (target: Object, member: string | undefined, methodDescriptorOrParameterIndex?: number | TypedPropertyDescriptor<any> | undefined) => void;
 ```
 
 ## Parameters
@@ -26,6 +26,7 @@ function list(extensionPointName?: string): (target: Object, member: string | un
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  extensionPointName | string | Name of the extension point. If not supplied, we use the <code>name</code> tag from the extension point binding or the class name of the extension point class. If a class needs to inject extensions from multiple extension points, use different <code>extensionPointName</code> for different types of extensions. |
+|  metadata | [InjectionMetadata](./context.injectionmetadata.md) | Optional injection metadata |
 
 <b>Returns:</b>
 

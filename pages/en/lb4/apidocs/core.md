@@ -37,7 +37,7 @@ For examples of how to leverage `@loopback/core` to build composable and extensi
 |  [extensionFilter(extensionPointNames)](./core.extensionfilter.md) | A factory function to create binding filter for extensions of a named extension point |
 |  [extensionFor(extensionPointNames)](./core.extensionfor.md) | A factory function to create binding template for extensions of the given extension point |
 |  [extensionPoint(name, specs)](./core.extensionpoint.md) | Decorate a class as a named extension point. If the decoration is not present, the name of the class will be used. |
-|  [extensions(extensionPointName)](./core.extensions.md) | Shortcut to inject extensions for the given extension point. |
+|  [extensions(extensionPointName, metadata)](./core.extensions.md) | Shortcut to inject extensions for the given extension point. |
 |  [filterByServiceInterface(serviceInterface)](./core.filterbyserviceinterface.md) | Create a binding filter by service class |
 |  [isLifeCycleObserver(obj)](./core.islifecycleobserver.md) | Test if an object implements LifeCycleObserver |
 |  [isLifeCycleObserverClass(ctor)](./core.islifecycleobserverclass.md) | Test if a class implements LifeCycleObserver |

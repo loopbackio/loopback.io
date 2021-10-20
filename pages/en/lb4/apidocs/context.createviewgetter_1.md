@@ -18,7 +18,7 @@ Create a context view as a getter with the given filter and sort matched binding
 <b>Signature:</b>
 
 ```typescript
-export declare function createViewGetter<T = unknown>(ctx: Context, bindingFilter: BindingFilter, bindingComparator?: BindingComparator, session?: ResolutionSession): Getter<T[]>;
+export declare function createViewGetter<T = unknown>(ctx: Context, bindingFilter: BindingFilter, bindingComparator?: BindingComparator, session?: ResolutionOptionsOrSession): Getter<T[]>;
 ```
 
 ## Parameters
@@ -28,7 +28,7 @@ export declare function createViewGetter<T = unknown>(ctx: Context, bindingFilte
 |  ctx | [Context](./context.context.md) | Context object |
 |  bindingFilter | [BindingFilter](./context.bindingfilter.md) | A function to match bindings |
 |  bindingComparator | [BindingComparator](./context.bindingcomparator.md) | A function to compare two bindings |
-|  session | [ResolutionSession](./context.resolutionsession.md) | Resolution session |
+|  session | [ResolutionOptionsOrSession](./context.resolutionoptionsorsession.md) | Resolution session |
 
 <b>Returns:</b>
 

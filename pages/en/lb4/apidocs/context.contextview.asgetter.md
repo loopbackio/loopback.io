@@ -18,14 +18,14 @@ As a `Getter` function
 <b>Signature:</b>
 
 ```typescript
-asGetter(session?: ResolutionSession): Getter<T[]>;
+asGetter(session?: ResolutionOptionsOrSession): Getter<T[]>;
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  session | [ResolutionSession](./context.resolutionsession.md) |  |
+|  session | [ResolutionOptionsOrSession](./context.resolutionoptionsorsession.md) |  |
 
 <b>Returns:</b>
 

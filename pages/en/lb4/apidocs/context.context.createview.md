@@ -18,7 +18,7 @@ Create a view of the context chain with the given binding filter
 <b>Signature:</b>
 
 ```typescript
-createView<T = unknown>(filter: BindingFilter, comparator?: BindingComparator): ContextView<T>;
+createView<T = unknown>(filter: BindingFilter, comparator?: BindingComparator, options?: Omit<ResolutionOptions, 'session'>): ContextView<T>;
 ```
 
 ## Parameters
@@ -27,6 +27,7 @@ createView<T = unknown>(filter: BindingFilter, comparator?: BindingComparator): 
 |  --- | --- | --- |
 |  filter | [BindingFilter](./context.bindingfilter.md) | A function to match bindings |
 |  comparator | [BindingComparator](./context.bindingcomparator.md) | A function to sort matched bindings |
+|  options | Omit&lt;[ResolutionOptions](./context.resolutionoptions.md)<!-- -->, 'session'&gt; | Resolution options |
 
 <b>Returns:</b>
 

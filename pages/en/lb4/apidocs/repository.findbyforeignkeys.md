@@ -18,7 +18,9 @@ Finds model instances that contain any of the provided foreign key values.
 <b>Signature:</b>
 
 ```typescript
-export declare function findByForeignKeys<Target extends Entity, TargetRelations extends object, ForeignKey extends StringKeyOf<Target>>(targetRepository: EntityCrudRepository<Target, unknown, TargetRelations>, fkName: ForeignKey, fkValues: Target[ForeignKey][] | Target[ForeignKey], scope?: Filter<Target>, options?: Options): Promise<(Target & TargetRelations)[]>;
+export declare function findByForeignKeys<Target extends Entity, TargetRelations extends object, ForeignKey extends StringKeyOf<Target>>(targetRepository: EntityCrudRepository<Target, unknown, TargetRelations>, fkName: ForeignKey, fkValues: Target[ForeignKey][] | Target[ForeignKey], scope?: Filter<Target> & {
+    totalLimit?: number;
+}, options?: Options): Promise<(Target & TargetRelations)[]>;
 ```
 
 ## Parameters
@@ -28,7 +30,7 @@ export declare function findByForeignKeys<Target extends Entity, TargetRelations
 |  targetRepository | [EntityCrudRepository](./repository.entitycrudrepository.md)<!-- -->&lt;Target, unknown, TargetRelations&gt; | The target repository where the related model instances are found |
 |  fkName | ForeignKey | Name of the foreign key |
 |  fkValues | Target\[ForeignKey\]\[\] \| Target\[ForeignKey\] | One value or array of values of the foreign key to be included |
-|  scope | [Filter](./filter.filter.md)<!-- -->&lt;Target&gt; | Additional scope constraints |
+|  scope | [Filter](./filter.filter.md)<!-- -->&lt;Target&gt; &amp; { totalLimit?: number; } | Additional scope constraints |
 |  options | [Options](./repository.options.md) | Options for the operations |
 
 <b>Returns:</b>

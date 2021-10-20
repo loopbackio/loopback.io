@@ -16,6 +16,8 @@ permalink: /doc/en/lb4/apidocs.filter.inclusion.scope.html
 <b>Signature:</b>
 
 ```typescript
-scope?: Filter<AnyObject>;
+scope?: Filter<AnyObject> & {
+        totalLimit?: number;
+    };
 ```
 
