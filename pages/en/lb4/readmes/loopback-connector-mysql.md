@@ -150,6 +150,14 @@ that you require.
       <td>String</td>
       <td>Username to connect to database</td>
     </tr>
+    <tr>
+      <td>allowExtendedOperators</td>
+      <td>Boolean</td>
+      <td>Set to <code>true</code> to enable MySQL-specific operators
+          such as <code>match</code>. Learn more in
+          <a href="#extended-operators">Extended operators</a> below.
+      </td>
+    </tr>
   </tbody>
 </table>
 
@@ -497,6 +505,55 @@ last_modified: Date;
 - TEXT
 - GEOMETRY
 - JSON
+
+## Extended operators
+MySQL connector supports the following MySQL-specific operators:
+- [`match`](#operator-match)
+Please note extended operators are disabled by default, you must enable
+them at datasource level or model level by setting `allowExtendedOperators` to
+`true`.
+### Operator `match`
+The `match` operator allows you to perform a full text search using the [MATCH() .. AGAINST()](https://dev.mysql.com/doc/refman/8.0/en/fulltext-search.html) operator in MySQL.
+
+Three different modes of the `MATCH` clause are also available in the form of operators - 
+
+- `matchbool` for [Boolean Full Text Search](https://dev.mysql.com/doc/refman/8.0/en/fulltext-boolean.html)
+- `matchnl` for [Natural Language Full Text Search](https://dev.mysql.com/doc/refman/8.0/en/fulltext-natural-language.html)
+- `matchqe` for [Full-Text Searches with Query Expansion](https://dev.mysql.com/doc/refman/8.0/en/fulltext-query-expansion.html)
+- `matchnlqe` for [Full-Text Searches with Query Expansion](https://dev.mysql.com/doc/refman/8.0/en/fulltext-query-expansion.html) with the `IN NATURAL LANGUAGE MODE WITH QUERY EXPANSION` modifier.
+
+By default, the `match` operator works in Natural Language mode.
+
+**Note** The fields you are querying must be setup with a `FULLTEXT` index to perform full text search on them.
+Assuming a model such as this:
+```ts
+@model({
+  settings: {
+    allowExtendedOperators: true,
+  }
+})
+class Post {
+  @property({
+    type: 'string',
+    mysql: {
+      index: {
+        kind: 'FULLTEXT'
+      }
+    },
+  })
+  content: string;
+}
+```
+You can query the content field as follows:
+```ts
+const posts = await postRepository.find({
+  where: {
+    {
+      content: {match: 'someString'},
+    }
+  }
+});
+```
 
 ## Discovery and auto-migration
 
