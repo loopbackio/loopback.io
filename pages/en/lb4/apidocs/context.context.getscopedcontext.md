@@ -25,7 +25,7 @@ getScopedContext(scope: BindingScope.APPLICATION | BindingScope.SERVER | Binding
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  scope | [BindingScope.APPLICATION](./context.bindingscope.application.md) \| [BindingScope.SERVER](./context.bindingscope.server.md) \| [BindingScope.REQUEST](./context.bindingscope.request.md) | Binding scope |
+|  scope | [BindingScope.APPLICATION](./context.bindingscope.md) \| [BindingScope.SERVER](./context.bindingscope.md) \| [BindingScope.REQUEST](./context.bindingscope.md) | Binding scope |
 
 <b>Returns:</b>
 

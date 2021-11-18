@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.core.application.state.html
 
 Get the state of the application. The initial state is `created` and it can transition as follows by `start` and `stop`<!-- -->:
 
-1. start - !started -<!-- -->&gt; starting -<!-- -->&gt; started - started -<!-- -->&gt; started (no-op) 2. stop - started -<!-- -->&gt; stopping -<!-- -->&gt; stopped - !started -<!-- -->&gt; stopped (no-op)
+1. start - !started -<!-- -->&gt; starting -<!-- -->&gt; started - started -<!-- -->&gt; started (no-op) 2. stop - (started \| initialized) -<!-- -->&gt; stopping -<!-- -->&gt; stopped - ! (started \|\| initialized) -<!-- -->&gt; stopped (no-op)
 
 Two types of states are expected: - stable, such as `started` and `stopped` - in process, such as `booting` and `starting`
 

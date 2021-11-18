@@ -23,6 +23,6 @@ export declare type ConstantBindingSource<T> = {
     value: T;
 };
 ```
-<b>References:</b> [BindingType.CONSTANT](./context.bindingtype.constant.md)
+<b>References:</b> [BindingType.CONSTANT](./context.bindingtype.md)
 
 

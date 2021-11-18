@@ -13,6 +13,14 @@ permalink: /doc/en/lb4/changelog.service-proxy.html
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.2.4](https://github.com/loopbackio/loopback-next/compare/@loopback/service-proxy@3.2.3...@loopback/service-proxy@3.2.4) (2021-10-18)
+
+**Note:** Version bump only for package @loopback/service-proxy
+
+
+
+
+
 ## [3.2.3](https://github.com/loopbackio/loopback-next/compare/@loopback/service-proxy@3.2.2...@loopback/service-proxy@3.2.3) (2021-09-16)
 
 **Note:** Version bump only for package @loopback/service-proxy

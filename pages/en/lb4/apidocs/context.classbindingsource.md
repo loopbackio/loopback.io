@@ -23,6 +23,6 @@ export declare type ClassBindingSource<T> = {
     value: Constructor<T>;
 };
 ```
-<b>References:</b> [BindingType.CLASS](./context.bindingtype.class.md)<!-- -->, [Constructor](./context.constructor.md)
+<b>References:</b> [BindingType.CLASS](./context.bindingtype.md)<!-- -->, [Constructor](./context.constructor.md)
 
 

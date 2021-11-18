@@ -23,6 +23,6 @@ export declare type AliasBindingSource<T> = {
     value: BindingAddress<T>;
 };
 ```
-<b>References:</b> [BindingType.ALIAS](./context.bindingtype.alias.md)<!-- -->, [BindingAddress](./context.bindingaddress.md)
+<b>References:</b> [BindingType.ALIAS](./context.bindingtype.md)<!-- -->, [BindingAddress](./context.bindingaddress.md)
 
 
