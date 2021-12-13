@@ -22,7 +22,7 @@ This module adopts the [Module Long Term Support (LTS)](http://github.com/CloudN
 
 | Version    | Status               | Published | EOL                  | LoopBack | Juggler  |
 | ---------- | -------------------- | --------- | -------------------- | ---------|----------|
-| 6.x        | Current              | Mar 2021  | Apr 2023 _(minimum)_ | 4        | 4.x      |
+| 6.x        | Current              | Mar 2021  | Apr 2024 _(minimum)_ | 4        | 4.x      |
 | 5.x        | Active LTS           | Jun 2019  | Apr 2023             | 3, 4     | 3.x, 4.x |
 | 4.x        | Maintenance LTS      | Nov 2018  | Apr 2021             | 3, 4     | 3.x, 4.x |
 
