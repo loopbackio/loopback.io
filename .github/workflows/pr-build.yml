@@ -4,7 +4,10 @@ on:
   pull_request:
     branches:
       - gh-pages
-
+  workflow_dispatch:
+    branches:
+      - gh-pages
+      
 jobs:
   build:
     runs-on: ubuntu-latest
