@@ -16,10 +16,7 @@ permalink: /doc/en/lb4/apidocs.graphql.graphqlserver.exportgraphqlschema.html
 <b>Signature:</b>
 
 ```typescript
-exportGraphQLSchema(outFile?: string, log?: {
-        (...data: any[]): void;
-        (message?: any, ...optionalParams: any[]): void;
-    }): Promise<void>;
+exportGraphQLSchema(outFile?: string, log?: (message?: any, ...optionalParams: any[]) => void): Promise<void>;
 ```
 
 ## Parameters
@@ -27,7 +24,7 @@ exportGraphQLSchema(outFile?: string, log?: {
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  outFile | string |  |
-|  log | { (...data: any\[\]): void; (message?: any, ...optionalParams: any\[\]): void; } |  |
+|  log | (message?: any, ...optionalParams: any\[\]) =&gt; void |  |
 
 <b>Returns:</b>
 
