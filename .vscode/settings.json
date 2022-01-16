@@ -1,0 +1,10 @@
+{
+    "json.schemas": [
+        {
+            "fileMatch": [
+                "pages/en/sec/*.csaf.json"
+            ],
+            "url": "https://docs.oasis-open.org/csaf/csaf/v2.0/csaf_json_schema.json"
+        }
+    ]
+}

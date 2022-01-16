@@ -1,0 +1,200 @@
+{
+  "document": {
+    "acknowledgments": [
+      {
+        "names": [
+          "Olivier Beg",
+          "Samuel Erb"
+        ]
+      }
+    ],
+    "category": "security_advisory",
+    "csaf_version": "2.0",
+    "distribution": {
+      "text": "Disclosure is not limited.",
+      "tlp": {
+        "label": "WHITE"
+      }
+    },
+    "lang": "en",
+    "notes": [
+      {
+        "audience": "all",
+        "category": "description",
+        "text": "It's a similar issue as https://snyk.io/vuln/SNYK-JS-LODASH-73638, where the following description is quoted from.\n\n> Prototype Pollution is a vulnerability affecting JavaScript. Prototype Pollution refers to the ability to inject properties into existing JavaScript language construct prototypes, such as objects. JavaScript allows all Object attributes to be altered, including their magical attributes such as `_proto_`, `constructor` and `prototype`. An attacker manipulates these attributes to overwrite, or pollute, a JavaScript application object prototype of the base object by injecting other values. Properties on the Object.prototype are then inherited by all the JavaScript objects through the prototype chain. When that happens, this leads to either denial of service by triggering JavaScript exceptions, or it tampers with the application source code to force the code path that the attacker injects, thereby leading to remote code execution.\n>\n> There are two main ways in which the pollution of prototypes occurs:\n>\n> - Unsafe Object recursive merge\n> - Property definition by path"
+      },
+      {
+        "audience": "all",
+        "category": "summary",
+        "text": "`@loopback/rest` allows REST APIs to have `constructor` in the JSON payload, which is vulnerable to prototype pollution."
+      }
+    ],
+    "publisher": {
+      "category": "vendor",
+      "name": "The LoopBack Maintainers",
+      "namespace": "https://loopback.io"
+    },
+    "references": [
+      {
+        "category": "self",
+        "summary": "Security Advisory 11-30-2020 CSAF document",
+        "url": "https://loopback.io/doc/en/sec/lbsa-2020-11-30.csaf.json"
+      },
+      {
+        "category": "self",
+        "summary": "Security Advisory 11-30-2020 HTML document",
+        "url": "https://loopback.io/doc/en/sec/Security-advisory-11-30-2020.html"
+      },
+      {
+        "summary": "X-Force Vulnerability Report",
+        "url": "https://exchange.xforce.ibmcloud.com/vulnerabilities/192706"
+      }
+    ],
+    "title": "Security Advisory 11-30-2020",
+    "tracking": {
+      "current_release_date": "2022-01-17T00:00:00.000Z",
+      "id": "lbsa-20201130",
+      "initial_release_date": "2022-01-17T00:00:00.000Z",
+      "revision_history": [
+        {
+          "date": "2022-01-17T00:00:00.000Z",
+          "number": "1.0.0",
+          "summary": "Initial version."
+        }
+      ],
+      "status": "final",
+      "version": "1.0.0"
+    }
+  },
+  "product_tree": {
+    "branches": [
+      {
+        "branches": [
+          {
+            "branches": [
+              {
+                "branches": [
+                  {
+                    "branches": [
+                      {
+                        "category": "product_version",
+                        "name": "Version 8.0.0",
+                        "product": {
+                          "name": "@loopback/rest - Version8.0.0",
+                          "product_id": "1",
+                          "product_identification_helper": {
+                            "cpe": "cpe:2.3:a:loopback:loopback_rest:8.0.0",
+                            "purl": "pkg:npm/%40loopback/rest@8.0.0"
+                          }
+                        }
+                      },
+                      {
+                        "category": "product_version",
+                        "name": "Version 9.0.0",
+                        "product": {
+                          "name": "@loopback/rest - Version 9.0.0",
+                          "product_id": "2",
+                          "product_identification_helper": {
+                            "cpe": "cpe:2.3:a:loopback:loopback_rest:9.0.0",
+                            "purl": "pkg:npm/%40loopback/rest@9.0.0"
+                          }
+                        }
+                      }
+                    ],
+                    "category": "product_name",
+                    "name": "@loopback/rest"
+                  }
+                ],
+                "category": "product_family",
+                "name": "LoopBack 4"
+              }
+            ],
+            "category": "product_family",
+            "name": "LoopBack"
+          }
+        ],
+        "category": "vendor",
+        "name": "The LoopBack Maintainers"
+      }
+    ]
+  },
+  "vulnerabilities": [
+    {
+      "cve": "CVE-2020-4988",
+      "cwe": {
+        "id": "CWE-1321",
+        "name": "Improperly Controlled Modification of Object Prototype Attributes ('Prototype Pollution')"
+      },
+      "id": {
+        "system_name": "IBM X-Force ID",
+        "text": "192706"
+      },
+      "notes": [
+        {
+          "audience": "all",
+          "category": "description",
+          "text": "It's a similar issue as https://snyk.io/vuln/SNYK-JS-LODASH-73638, where the following description is quoted from.\n\n> Prototype Pollution is a vulnerability affecting JavaScript. Prototype Pollution refers to the ability to inject properties into existing JavaScript language construct prototypes, such as objects. JavaScript allows all Object attributes to be altered, including their magical attributes such as `_proto_`, `constructor` and `prototype`. An attacker manipulates these attributes to overwrite, or pollute, a JavaScript application object prototype of the base object by injecting other values. Properties on the Object.prototype are then inherited by all the JavaScript objects through the prototype chain. When that happens, this leads to either denial of service by triggering JavaScript exceptions, or it tampers with the application source code to force the code path that the attacker injects, thereby leading to remote code execution.\n>\n> There are two main ways in which the pollution of prototypes occurs:\n>\n> - Unsafe Object recursive merge\n> - Property definition by path"
+        },
+        {
+          "audience": "all",
+          "category": "summary",
+          "text": "`@loopback/rest` allows REST APIs to have `constructor` in the JSON payload, which is vulnerable to prototype pollution."
+        }
+      ],
+      "product_status": {
+        "first_affected": [
+          "1"
+        ],
+        "fixed": [
+          "2"
+        ]
+      },
+      "references": [
+        {
+          "summary": "GitHub pull request",
+          "url": "https://github.com/loopbackio/loopback-next/pull/6676"
+        },
+        {
+          "summary": "X-Force Vulnerability Report",
+          "url": "https://exchange.xforce.ibmcloud.com/vulnerabilities/192706"
+        }
+      ],
+      "remediations": [
+        {
+          "category": "vendor_fix",
+          "date": "2020-05-11T08:22:42.000Z",
+          "details": "Upgrade to `@loopback/rest` 9.0.0 or later.",
+          "product_ids": [
+            "1"
+          ]
+        }
+      ],
+      "scores": [
+        {
+          "cvss_v3": {
+            "attackComplexity": "LOW",
+            "attackVector": "NETWORK",
+            "availabilityImpact": "LOW",
+            "baseScore": 7.3,
+            "baseSeverity": "HIGH",
+            "confidentialityImpact": "LOW",
+            "exploitCodeMaturity": "UNPROVEN",
+            "integrityImpact": "LOW",
+            "privilegesRequired": "NONE",
+            "remediationLevel": "OFFICIAL_FIX",
+            "reportConfidence": "CONFIRMED",
+            "scope": "UNCHANGED",
+            "temporalScore": 6.4,
+            "temporalSeverity": "MEDIUM",
+            "userInteraction": "NONE",
+            "vectorString": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L/RL:O/E:U/RC:C",
+            "version": "3.0"
+          },
+          "products": [
+            "1"
+          ]
+        }
+      ]
+    }
+  ]
+}

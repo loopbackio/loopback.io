@@ -11,6 +11,7 @@ permalink: /doc/en/sec/Security-advisory-11-30-2020.html
 
 - **Security risk**: High (CVSS: 7.3), [CVE link](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-4988)
 - **Vulnerability**: `@loopback/rest` allows REST APIs to have `constructor` in the JSON payload, which is vulnerable to prototype pollution.
+- **CSAF 2.0**: https://loopback.io/doc/en/sec/lbsa-20201130.csaf.json
 
 ### Description
 
