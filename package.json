@@ -26,7 +26,7 @@
     "chalk": "^5.0.0",
     "fs-extra": "^10.0.0",
     "ibm-watson": "^6.2.2",
-    "markdownlint-cli": "^0.31.0",
+    "markdownlint-cli": "^0.31.1",
     "retry": "^0.13.1",
     "swagger-ui-dist": "^4.5.0",
     "xml2js": "^0.4.23"
