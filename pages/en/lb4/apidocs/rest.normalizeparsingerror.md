@@ -18,7 +18,7 @@ Normalize parsing errors as `4xx`
 <b>Signature:</b>
 
 ```typescript
-export declare function normalizeParsingError(err: HttpError): HttpError;
+export declare function normalizeParsingError(err: HttpError): HttpError<number>;
 ```
 
 ## Parameters
@@ -29,6 +29,6 @@ export declare function normalizeParsingError(err: HttpError): HttpError;
 
 <b>Returns:</b>
 
-HttpError
+HttpError&lt;number&gt;
 
 

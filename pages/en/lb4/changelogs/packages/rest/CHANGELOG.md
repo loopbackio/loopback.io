@@ -13,6 +13,14 @@ permalink: /doc/en/lb4/changelog.rest.html
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [11.0.1](https://github.com/loopbackio/loopback-next/compare/@loopback/rest@11.0.0...@loopback/rest@11.0.1) (2022-01-11)
+
+**Note:** Version bump only for package @loopback/rest
+
+
+
+
+
 # [11.0.0](https://github.com/loopbackio/loopback-next/compare/@loopback/rest@10.1.0...@loopback/rest@11.0.0) (2021-11-18)
 
 
