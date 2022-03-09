@@ -65,7 +65,7 @@ We take security vulnerabilities in LoopBack very seriously for our users.
 
 In production, do not enable debug logs that may contain sensitive data; for example, the payload of `PersistedModel.create` should not be exposed in production. Logging this type of information is acceptable in development, but not in production.
 
-Do not report security vulnerabilities using GitHub issues. Please send an email to [`reachsl@us.ibm.com`](mailto:reachsl@us.ibm.com) with:
+Do not report security vulnerabilities using GitHub issues. Please send an email to [`security@loopback.io`](mailto:security@loopback.io) with:
 
 - Description of the vulnerability.
 - Steps to reproduce the issue.
