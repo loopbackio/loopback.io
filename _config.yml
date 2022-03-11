@@ -45,6 +45,7 @@ exclude:
   - node_modules
   - Jenkinsfile
   - update-readmes.sh
+  - update-blog.sh
   - update-community-readmes.sh
   - update-lb4-docs.js
   - vendor
