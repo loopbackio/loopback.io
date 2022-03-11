@@ -4,9 +4,10 @@
   "description": "This file: Node-dependant workflow scripts for the jekyll-based site",
   "private": true,
   "scripts": {
-    "build": "npm run fetch-readmes && bundle exec jekyll build",
+    "build": "npm run fetch-blog && npm run fetch-readmes && bundle exec jekyll build",
     "postbuild": "npm run sitemap-transform",
     "start": "bundle exec jekyll serve --incremental",
+    "fetch-blog": "./update-blog.sh",
     "fetch-readmes": "./update-readmes.sh --repos=./_data --out=./_includes/readmes && ./update-community-readmes.sh",
     "lint-readmes": "markdownlint _includes/readmes/",
     "postinstall": "npm run swagger-ui && npm run copydocs",
