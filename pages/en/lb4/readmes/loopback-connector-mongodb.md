@@ -134,6 +134,26 @@ const config = {
 
 Note: the port is not specified when using the `mongodb+srv` protocol and will be ignored if given.
 
+### TLS/SSL Connections
+
+Note: SSL options deprecated since MongoDB 4.2
+
+```ts
+const config = {
+  name: 'db',
+  connector: 'mongodb',
+  url: '',
+  host: 'localhost',
+  port: 27017,
+  user: '',
+  password: '',
+  database: 'testdb',
+  tls: true,
+  tlsCertificateKeyFile: '/local/path/to/pem-file',
+  tlsCAFile: '/local/path/to/ca-file',
+};
+```
+
 ## Security Considerations
 
 MongoDB Driver allows the `$where` operator to pass in JavaScript to execute on the Driver which can be used for NoSQL Injection. See [MongoDB: Server-side JavaScript](https://docs.mongodb.com/manual/core/server-side-javascript/) for more on this MongoDB feature.
