@@ -236,64 +236,7 @@ Controller Hello was now created in src/controllers/
 
     <!-- footer -->
     <footer>
-        <div class="container">
-            <div class="row text-center">
-                <div class="col-md-3">
-                    <img src="images/global/loopback-mark-frame-white.svg" width=40px/>
-                </div>
-                <div class="col-md-3">
-                    <p class="label text-uppercase">Product</p>
-                    <p class="regular">
-                        <a href="getting-started.html">Getting Started</a>
-                    </p>
-                    <p class="regular">
-                        <a href="doc/en/lb4/Tutorials.html">Tutorials</a>
-                    </p>
-                </div>
-                <div class="col-md-3">
-                    <p class="label text-uppercase" >Documentation</p>
-                    <p class="regular">
-                        <a href="/doc">Docs</a>
-                    </p>
-                    <p class="regular">
-                        <a href="resources.html">Resources</a>
-                    </p>
-                    <p class="regular">
-                        <a href="contribute.html">Contribute</a>
-                    </p>
-                </div>
-                <div class="col-md-3">
-                    <p class="label text-uppercase">Support</p>
-                    <p class="regular">
-                        <a href="/doc/en/lb4">LoopBack 4 Documentation</a>
-                    </p>
-                    <p class="regular">
-                        <a href="https://loopback.io/doc/en/lb4/apidocs.index.html" target="_blank" rel="noopener noreferrer">API Docs</a>
-                    </p>
-                    <p class="regular">
-                        <a href="https://strongloop.com/strongblog/" target="_blank" rel="noopener noreferrer">StrongLoop Blog</a>
-                    </p>
-                    <p class="regular">
-                        <a href="https://www.ibm.com/marketplace/api-management" target="_blank" rel="noopener noreferrer">API Connect</a>
-                    </p>
-                </div>
-            </div>
-            <hr class="hairline-footer">
-            <div class="row text-center">
-                <div class="col-md-6">
-                    <p class="regular"> &copy; Copyright 2020 StrongLoop, an IBM company</p>
-                </div>
-                <div class="col-md-6">
-                    <p style="float:right">
-                        <a class="twitter-share-button"
-                            href="https://twitter.com/intent/tweet?text=Creating APIs has never been easier using %23LoopBack 4 by %40StrongLoop. Check it out at loopback.io.&url=loopback.io">
-                          Tweet</a>
-                        <a href="https://twitter.com/intent/tweet?screen_name=StrongLoop&ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="true">Tweet to @StrongLoop</a>
-                        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                    </p>
-                </div>
-            </div>
-        </div>
+        <div id="footer-template"></div>
     </footer>
 
     <script src="/dist/jquery/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
@@ -307,6 +250,7 @@ Controller Hello was now created in src/controllers/
     <script>
         $(function(){
             $("#navbar-template").load("navbar-template.html");
+            $("#footer-template").load("footer-template.html");
         });
     </script>
 
