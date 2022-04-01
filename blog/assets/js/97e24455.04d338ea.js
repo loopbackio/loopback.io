@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmy_blog=self.webpackChunkmy_blog||[]).push([[6054],{2983:function(e){e.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"/blog/tags/hacktoberfest","name":"hacktoberfest","count":1,"permalink":"/blog/tags/hacktoberfest"}')}}]);
