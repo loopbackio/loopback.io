@@ -26,7 +26,7 @@ create(targetModelData: DataObject<Target>, options?: Options): Promise<Target>;
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  targetModelData | [DataObject](./repository.dataobject.md)<!-- -->&lt;Target&gt; | The target model data |
-|  options | [Options](./repository.options.md) | Options for the operation |
+|  options | [Options](./repository.options.md) | <i>(Optional)</i> Options for the operation |
 
 <b>Returns:</b>
 

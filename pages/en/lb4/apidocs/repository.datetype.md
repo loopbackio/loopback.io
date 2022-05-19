@@ -20,7 +20,7 @@ Date type
 ```typescript
 export declare class DateType implements Type<Date> 
 ```
-<b>Implements:</b> [Type](./repository.type.md)<!-- -->&lt;Date&gt;
+<b>Implements:</b> [Type](./repository.type.md)<!-- -->&lt;Date
 
 ## Properties
 

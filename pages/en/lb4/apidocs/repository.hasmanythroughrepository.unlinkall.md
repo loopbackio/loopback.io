@@ -27,7 +27,7 @@ unlinkAll(options?: Options & {
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  options | [Options](./repository.options.md) &amp; { throughOptions?: [Options](./repository.options.md)<!-- -->; } |  A promise which resolves to void |
+|  options | [Options](./repository.options.md) &amp; { throughOptions?: [Options](./repository.options.md)<!-- -->; } | <i>(Optional)</i>  A promise which resolves to void |
 
 <b>Returns:</b>
 

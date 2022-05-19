@@ -26,7 +26,7 @@ service<S>(cls: ServiceOrProviderClass<S>, nameOrOptions?: string | ServiceOptio
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  cls | [ServiceOrProviderClass](./core.serviceorproviderclass.md)<!-- -->&lt;S&gt; | The service or provider class |
-|  nameOrOptions | string \| [ServiceOptions](./core.serviceoptions.md) |  |
+|  nameOrOptions | string \| [ServiceOptions](./core.serviceoptions.md) | <i>(Optional)</i> |
 
 <b>Returns:</b>
 

@@ -25,8 +25,8 @@ constructor(context?: Context, session?: ResolutionSession | undefined, source?:
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  context | [Context](./context.context.md) |  |
-|  session | [ResolutionSession](./context.resolutionsession.md) \| undefined |  |
-|  source | [InvocationSource](./context.invocationsource.md)<!-- -->&lt;unknown&gt; \| undefined |  |
+|  context | [Context](./context.context.md) | <i>(Optional)</i> |
+|  session | [ResolutionSession](./context.resolutionsession.md) \| undefined | <i>(Optional)</i> |
+|  source | [InvocationSource](./context.invocationsource.md)<!-- -->&lt;unknown&gt; \| undefined | <i>(Optional)</i> |
 
 

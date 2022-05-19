@@ -24,7 +24,7 @@ delete(entity: T, options?: Options): Promise<void>;
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  entity | T |  |
-|  options | [Options](./repository.options.md) |  |
+|  options | [Options](./repository.options.md) | <i>(Optional)</i> |
 
 <b>Returns:</b>
 

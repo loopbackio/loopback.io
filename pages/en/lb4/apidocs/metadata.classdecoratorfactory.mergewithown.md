@@ -25,8 +25,8 @@ protected mergeWithOwn(ownMetadata: T, target: Object, member?: string, descript
 |  --- | --- | --- |
 |  ownMetadata | T |  |
 |  target | Object |  |
-|  member | string |  |
-|  descriptorOrIndex | TypedPropertyDescriptor&lt;any&gt; \| number |  |
+|  member | string | <i>(Optional)</i> |
+|  descriptorOrIndex | TypedPropertyDescriptor&lt;any&gt; \| number | <i>(Optional)</i> |
 
 <b>Returns:</b>
 

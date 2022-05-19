@@ -26,7 +26,7 @@ export declare function createBindingFromClass<T>(cls: Constructor<T | Provider<
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  cls | [Constructor](./context.constructor.md)<!-- -->&lt;T \| [Provider](./context.provider.md)<!-- -->&lt;T&gt;&gt; \| [DynamicValueProviderClass](./context.dynamicvalueproviderclass.md)<!-- -->&lt;T&gt; | A class. It can be either a plain class, a value provider class, or a dynamic value provider class |
-|  options | [BindingFromClassOptions](./context.bindingfromclassoptions.md) | Options to customize the binding key |
+|  options | [BindingFromClassOptions](./context.bindingfromclassoptions.md) | <i>(Optional)</i> Options to customize the binding key |
 
 <b>Returns:</b>
 

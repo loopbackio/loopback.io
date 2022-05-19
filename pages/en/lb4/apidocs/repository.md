@@ -33,10 +33,12 @@ This module provides data access facilities to various databases and services as
 |  [DefaultHasManyThroughRepository](./repository.defaulthasmanythroughrepository.md) | a class for CRUD operations for hasManyThrough relation.<!-- -->Warning: The hasManyThrough interface is experimental and is subject to change. If backwards-incompatible changes are made, a new major version may not be released. |
 |  [DefaultHasOneRepository](./repository.defaulthasonerepository.md) |  |
 |  [DefaultKeyValueRepository](./repository.defaultkeyvaluerepository.md) | An implementation of KeyValueRepository based on loopback-datasource-juggler |
+|  [DefaultReferencesManyRepository](./repository.defaultreferencesmanyrepository.md) |  |
 |  [DefaultTransactionalRepository](./repository.defaulttransactionalrepository.md) | Default implementation of CRUD repository using legacy juggler model and data source with beginTransaction() method for connectors which support Transactions |
 |  [Entity](./repository.entity.md) | Base class for entities which have unique ids |
 |  [EntityNotFoundError](./repository.entitynotfounderror.md) |  |
 |  [Event](./repository.event.md) | Domain events |
+|  [InvalidPolymorphismError](./repository.invalidpolymorphismerror.md) |  |
 |  [InvalidRelationError](./repository.invalidrelationerror.md) |  |
 |  [Model](./repository.model.md) | Base class for models |
 |  [ModelDefinition](./repository.modeldefinition.md) | Definition for a model |
@@ -71,13 +73,15 @@ This module provides data access facilities to various databases and services as
 |  [constrainFilter(originalFilter, constraint)](./repository.constrainfilter.md) | A utility function which takes a filter and enforces constraint(s) on it |
 |  [constrainWhere(originalWhere, constraint)](./repository.constrainwhere.md) | A utility function which takes a where filter and enforces constraint(s) on it |
 |  [constrainWhereOr(originalWhere, constraint)](./repository.constrainwhereor.md) | A utility function which takes a where filter and enforces constraint(s) on it with OR clause |
-|  [createBelongsToAccessor(belongsToMetadata, targetRepoGetter, sourceRepository)](./repository.createbelongstoaccessor.md) | Enforces a BelongsTo constraint on a repository |
-|  [createBelongsToInclusionResolver(meta, getTargetRepo)](./repository.createbelongstoinclusionresolver.md) | Creates InclusionResolver for BelongsTo relation. Notice that this function only generates the inclusionResolver. It doesn't register it for the source repository.<!-- -->Notice: scope field for inclusion is not supported yet |
+|  [createBelongsToAccessor(belongsToMetadata, targetRepositoryGetter, sourceRepository)](./repository.createbelongstoaccessor.md) | Enforces a BelongsTo constraint on a repository If the target model is polymorphic, i.e. stored within different repositories, supply the targetRepositoryGetter with a dictionary in the form of {<!-- -->\[typeName: string\]: repositoryGetter<!-- -->} |
+|  [createBelongsToInclusionResolver(meta, getTargetRepoDict)](./repository.createbelongstoinclusionresolver.md) | Creates InclusionResolver for BelongsTo relation. Notice that this function only generates the inclusionResolver. It doesn't register it for the source repository.<!-- -->Notice: scope field for inclusion is not supported yet |
 |  [createHasManyInclusionResolver(meta, getTargetRepo)](./repository.createhasmanyinclusionresolver.md) | Creates InclusionResolver for HasMany relation. Notice that this function only generates the inclusionResolver. It doesn't register it for the source repository.<!-- -->Notice: scope field for inclusion is not supported yet. |
 |  [createHasManyRepositoryFactory(relationMetadata, targetRepositoryGetter)](./repository.createhasmanyrepositoryfactory.md) | Enforces a constraint on a repository based on a relationship contract between models. For example, if a Customer model is related to an Order model via a HasMany relation, then, the relational repository returned by the factory function would be constrained by a Customer model instance's id(s). |
 |  [createHasManyThroughRepositoryFactory(relationMetadata, targetRepositoryGetter, throughRepositoryGetter)](./repository.createhasmanythroughrepositoryfactory.md) |  |
-|  [createHasOneRepositoryFactory(relationMetadata, targetRepositoryGetter)](./repository.createhasonerepositoryfactory.md) | Enforces a constraint on a repository based on a relationship contract between models. For example, if a Customer model is related to an Address model via a HasOne relation, then, the relational repository returned by the factory function would be constrained by a Customer model instance's id(s). |
+|  [createHasOneRepositoryFactory(relationMetadata, targetRepositoryGetter)](./repository.createhasonerepositoryfactory.md) | Enforces a constraint on a repository based on a relationship contract between models. For example, if a Customer model is related to an Address model via a HasOne relation, then, the relational repository returned by the factory function would be constrained by a Customer model instance's id(s).<!-- -->If the target model is polymorphic, i.e. stored within different repositories, supply the targetRepositoryGetter with a dictionary in the form of {<!-- -->\[typeName: string\]: repositoryGetter<!-- -->} |
 |  [createModelClassBinding(modelClass)](./repository.createmodelclassbinding.md) | Create a binding for the given model class |
+|  [createReferencesManyAccessor(referencesManyMetadata, targetRepoGetter, sourceRepository)](./repository.createreferencesmanyaccessor.md) | Enforces a ReferencesMany constraint on a repository |
+|  [createReferencesManyInclusionResolver(meta, getTargetRepo)](./repository.createreferencesmanyinclusionresolver.md) | Creates InclusionResolver for ReferencesMany relation. Notice that this function only generates the inclusionResolver. It doesn't register it for the source repository.<!-- -->Notice: scope field for inclusion is not supported yet |
 |  [deduplicate(input)](./repository.deduplicate.md) | Dedupe an array |
 |  [defineCrudRepositoryClass(entityClass)](./repository.definecrudrepositoryclass.md) | Create (define) an entity CRUD repository class for the given model. This function always uses <code>DefaultCrudRepository</code> as the base class, use <code>defineRepositoryClass</code> if you want to use your own base repository. |
 |  [defineKeyValueRepositoryClass(modelClass)](./repository.definekeyvaluerepositoryclass.md) | Create (define) a KeyValue repository class for the given entity. This function always uses <code>DefaultKeyValueRepository</code> as the base class, use <code>defineRepositoryClass</code> if you want to use your own base repository. |
@@ -94,10 +98,12 @@ This module provides data access facilities to various databases and services as
 |  [getModelRelations(modelCtor)](./repository.getmodelrelations.md) | Get metadata of all relations defined on a given model class. |
 |  [hasMany(targetResolver, definition)](./repository.hasmany.md) | Decorator for hasMany Calls property.array decorator underneath the hood and infers foreign key name from target model name unless explicitly specified |
 |  [hasOne(targetResolver, definition)](./repository.hasone.md) |  |
+|  [includeFieldIfNot(fields, fieldToInclude)](./repository.includefieldifnot.md) |  |
 |  [includeRelatedModels(targetRepository, entities, include, options)](./repository.includerelatedmodels.md) | Returns model instances that include related models that have a registered resolver. |
 |  [isBsonType(value)](./repository.isbsontype.md) | Checks if the value is BsonType (mongodb) It uses a general way to check the type ,so that it can detect different versions of bson that might be used in the code base. Might need to update in the future. |
 |  [isBuiltinType(fn)](./repository.isbuiltintype.md) | Check if the provided function is a built-in type provided by JavaScript and/or Node.js. E.g. <code>Number</code>, <code>Array</code>, <code>Buffer</code>, etc. |
 |  [isEntityNotFoundError(e)](./repository.isentitynotfounderror.md) |  |
+|  [isInvalidPolymorphismError(e)](./repository.isinvalidpolymorphismerror.md) |  |
 |  [isInvalidRelationError(e)](./repository.isinvalidrelationerror.md) |  |
 |  [isTypeResolver(fn)](./repository.istyperesolver.md) | A function that checks whether a function is a TypeResolver or not. |
 |  [model(definition)](./repository.model.md) | Decorator for model definitions |
@@ -106,7 +112,7 @@ This module provides data access facilities to various databases and services as
 |  [property(definition)](./repository.property.md) | Decorator for model properties |
 |  [reduceAsArray(acc, it)](./repository.reduceasarray.md) | Returns an array of instances. For HasMany relation usage. |
 |  [reduceAsSingleItem(\_acc, it)](./repository.reduceassingleitem.md) | Returns a single of an instance. For HasOne and BelongsTo relation usage. |
-|  [referencesMany(definition)](./repository.referencesmany.md) | Decorator for referencesMany |
+|  [referencesMany(targetResolver, definition, propertyDefinition)](./repository.referencesmany.md) | Decorator for referencesMany |
 |  [referencesOne(definition)](./repository.referencesone.md) | Decorator for referencesOne |
 |  [rejectNavigationalPropertiesInData(modelClass, data)](./repository.rejectnavigationalpropertiesindata.md) | Check model data for navigational properties linking to related models. Throw a descriptive error if any such property is found. |
 |  [relation(definition)](./repository.relation.md) | Decorator for relations |
@@ -152,6 +158,9 @@ This module provides data access facilities to various databases and services as
 |  [Persistable](./repository.persistable.md) |  |
 |  [PropertyDefinition](./repository.propertydefinition.md) | Property definition for a model |
 |  [PropertyForm](./repository.propertyform.md) | See https://github.com/loopbackio/loopback-datasource-juggler/issues/432 |
+|  [ReferencesManyAccessor](./repository.referencesmanyaccessor.md) |  |
+|  [ReferencesManyDefinition](./repository.referencesmanydefinition.md) |  |
+|  [ReferencesManyRepository](./repository.referencesmanyrepository.md) | CRUD operations for a target repository of a ReferencesMany relation |
 |  [RelationDefinitionBase](./repository.relationdefinitionbase.md) |  |
 |  [Repository](./repository.repository.md) |  |
 |  [RepositoryComponent](./repository.repositorycomponent.md) | This interface describes additional Component properties allowing components to contribute Repository-related artifacts. |

@@ -24,7 +24,7 @@ getMetadataKeys(target: Object, propertyKey?: string): string[];
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  target | Object |  |
-|  propertyKey | string |  |
+|  propertyKey | string | <i>(Optional)</i> |
 
 <b>Returns:</b>
 

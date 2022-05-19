@@ -25,8 +25,8 @@ protected mergeWithOwn(ownMetadata: MetadataMap<T>, target: Object, propertyName
 |  --- | --- | --- |
 |  ownMetadata | [MetadataMap](./metadata.metadatamap.md)<!-- -->&lt;T&gt; |  |
 |  target | Object |  |
-|  propertyName | string |  |
-|  descriptorOrParameterIndex | TypedPropertyDescriptor&lt;any&gt; \| number |  |
+|  propertyName | string | <i>(Optional)</i> |
+|  descriptorOrParameterIndex | TypedPropertyDescriptor&lt;any&gt; \| number | <i>(Optional)</i> |
 
 <b>Returns:</b>
 

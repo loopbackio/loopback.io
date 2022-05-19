@@ -25,7 +25,7 @@ acquire(requestCtx?: Context): Promise<T>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  requestCtx | [Context](./context.context.md) | Optional request context, default to the owning context |
+|  requestCtx | [Context](./context.context.md) | <i>(Optional)</i> Optional request context, default to the owning context |
 
 <b>Returns:</b>
 

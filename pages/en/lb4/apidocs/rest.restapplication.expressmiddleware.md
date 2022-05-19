@@ -27,7 +27,7 @@ expressMiddleware(key: BindingAddress, middleware: ExpressRequestHandler | Expre
 |  --- | --- | --- |
 |  key | [BindingAddress](./context.bindingaddress.md) | Middleware binding key |
 |  middleware | [ExpressRequestHandler](./express.expressrequesthandler.md) \| [ExpressRequestHandler](./express.expressrequesthandler.md)<!-- -->\[\] | Express middleware handler function(s) |
-|  options | [MiddlewareBindingOptions](./express.middlewarebindingoptions.md) |  |
+|  options | [MiddlewareBindingOptions](./express.middlewarebindingoptions.md) | <i>(Optional)</i> |
 
 <b>Returns:</b>
 

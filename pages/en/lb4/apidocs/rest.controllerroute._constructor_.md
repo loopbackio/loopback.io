@@ -29,7 +29,7 @@ constructor(verb: string, path: string, spec: OperationObject, controllerCtor: C
 |  path | string | http request path |
 |  spec | OperationObject | OpenAPI operation spec |
 |  controllerCtor | [ControllerClass](./rest.controllerclass.md)<!-- -->&lt;T&gt; | Controller class |
-|  controllerFactory | [ControllerFactory](./rest.controllerfactory.md)<!-- -->&lt;T&gt; | A factory function to create a controller instance |
-|  methodName | string | Controller method name, default to <code>x-operation-name</code> |
+|  controllerFactory | [ControllerFactory](./rest.controllerfactory.md)<!-- -->&lt;T&gt; | <i>(Optional)</i> A factory function to create a controller instance |
+|  methodName | string | <i>(Optional)</i> Controller method name, default to <code>x-operation-name</code> |
 
 

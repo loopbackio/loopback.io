@@ -25,6 +25,6 @@ constructor(options?: RequestBodyParserOptions);
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  options | [RequestBodyParserOptions](./rest.requestbodyparseroptions.md) |  |
+|  options | [RequestBodyParserOptions](./rest.requestbodyparseroptions.md) | <i>(Optional)</i> |
 
 

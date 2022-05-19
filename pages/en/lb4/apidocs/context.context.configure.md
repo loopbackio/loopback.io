@@ -27,7 +27,7 @@ configure<ConfigValueType = BoundValue>(key?: BindingAddress): Binding<ConfigVal
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  key | [BindingAddress](./context.bindingaddress.md) | The key for the binding to be configured |
+|  key | [BindingAddress](./context.bindingaddress.md) | <i>(Optional)</i> The key for the binding to be configured |
 
 <b>Returns:</b>
 

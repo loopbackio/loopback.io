@@ -26,9 +26,9 @@ export declare function createProxyWithInterceptors<T extends object>(target: T,
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  target | T | Target class or object |
-|  context | [Context](./context.context.md) | Context object |
-|  session | [ResolutionSession](./context.resolutionsession.md) | Resolution session |
-|  source | [InvocationSource](./context.invocationsource.md) | Invocation source |
+|  context | [Context](./context.context.md) | <i>(Optional)</i> Context object |
+|  session | [ResolutionSession](./context.resolutionsession.md) | <i>(Optional)</i> Resolution session |
+|  source | [InvocationSource](./context.invocationsource.md) | <i>(Optional)</i> Invocation source |
 
 <b>Returns:</b>
 

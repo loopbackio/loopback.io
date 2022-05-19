@@ -25,6 +25,6 @@ constructor(namespace?: string | undefined);
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  namespace | string \| undefined | Namespace to bind this reflect context |
+|  namespace | string \| undefined | <i>(Optional)</i> Namespace to bind this reflect context |
 
 

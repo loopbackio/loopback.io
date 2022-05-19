@@ -25,7 +25,7 @@ export declare function getPackages(rootDir?: string): Promise<LernaPackage[]>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  rootDir | string | Root directory to find lerna.json |
+|  rootDir | string | <i>(Optional)</i> Root directory to find lerna.json |
 
 <b>Returns:</b>
 

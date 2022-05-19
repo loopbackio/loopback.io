@@ -26,7 +26,7 @@ export declare function hasMany<T extends Entity>(targetResolver: EntityResolver
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  targetResolver | [EntityResolver](./repository.entityresolver.md)<!-- -->&lt;T&gt; | Target model for hasMany relation |
-|  definition | Partial&lt;[HasManyDefinition](./repository.hasmanydefinition.md)<!-- -->&gt; | Optional metadata for setting up hasMany relation |
+|  definition | Partial&lt;[HasManyDefinition](./repository.hasmanydefinition.md)<!-- -->&gt; | <i>(Optional)</i> Optional metadata for setting up hasMany relation |
 
 <b>Returns:</b>
 

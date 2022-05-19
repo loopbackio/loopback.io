@@ -26,7 +26,7 @@ lifeCycleObserver<T extends LifeCycleObserver>(ctor: Constructor<T>, nameOrOptio
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  ctor | [Constructor](./context.constructor.md)<!-- -->&lt;T&gt; | A class implements LifeCycleObserver |
-|  nameOrOptions | string \| [BindingFromClassOptions](./context.bindingfromclassoptions.md) | Optional name or options for the life cycle observer |
+|  nameOrOptions | string \| [BindingFromClassOptions](./context.bindingfromclassoptions.md) | <i>(Optional)</i> Optional name or options for the life cycle observer |
 
 <b>Returns:</b>
 

@@ -26,8 +26,8 @@ createView<T = unknown>(filter: BindingFilter, comparator?: BindingComparator, o
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  filter | [BindingFilter](./context.bindingfilter.md) | A function to match bindings |
-|  comparator | [BindingComparator](./context.bindingcomparator.md) | A function to sort matched bindings |
-|  options | Omit&lt;[ResolutionOptions](./context.resolutionoptions.md)<!-- -->, 'session'&gt; | Resolution options |
+|  comparator | [BindingComparator](./context.bindingcomparator.md) | <i>(Optional)</i> A function to sort matched bindings |
+|  options | Omit&lt;[ResolutionOptions](./context.resolutionoptions.md)<!-- -->, 'session'&gt; | <i>(Optional)</i> Resolution options |
 
 <b>Returns:</b>
 

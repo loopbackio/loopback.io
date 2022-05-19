@@ -27,7 +27,7 @@ withOperationReturningString(verb: string, path: string, operationName?: string)
 |  --- | --- | --- |
 |  verb | string | The HTTP verb. |
 |  path | string | The path relative to basePath. |
-|  operationName | string | The name of the controller method implementing this operation (<code>x-operation-name</code> field). |
+|  operationName | string | <i>(Optional)</i> The name of the controller method implementing this operation (<code>x-operation-name</code> field). |
 
 <b>Returns:</b>
 

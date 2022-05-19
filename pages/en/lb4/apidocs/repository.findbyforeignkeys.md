@@ -30,8 +30,8 @@ export declare function findByForeignKeys<Target extends Entity, TargetRelations
 |  targetRepository | [EntityCrudRepository](./repository.entitycrudrepository.md)<!-- -->&lt;Target, unknown, TargetRelations&gt; | The target repository where the related model instances are found |
 |  fkName | ForeignKey | Name of the foreign key |
 |  fkValues | Target\[ForeignKey\]\[\] \| Target\[ForeignKey\] | One value or array of values of the foreign key to be included |
-|  scope | [Filter](./filter.filter.md)<!-- -->&lt;Target&gt; &amp; { totalLimit?: number; } | Additional scope constraints |
-|  options | [Options](./repository.options.md) | Options for the operations |
+|  scope | [Filter](./filter.filter.md)<!-- -->&lt;Target&gt; &amp; { totalLimit?: number; } | <i>(Optional)</i> Additional scope constraints |
+|  options | [Options](./repository.options.md) | <i>(Optional)</i> Options for the operations |
 
 <b>Returns:</b>
 

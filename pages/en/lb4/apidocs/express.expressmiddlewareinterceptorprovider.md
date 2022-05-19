@@ -20,7 +20,7 @@ Base class for MiddlewareInterceptor provider classes
 ```typescript
 export declare abstract class ExpressMiddlewareInterceptorProvider<CFG, CTX extends Context = InvocationContext> implements Provider<GenericInterceptor<CTX>> 
 ```
-<b>Implements:</b> [Provider](./context.provider.md)<!-- -->&lt;[GenericInterceptor](./context.genericinterceptor.md)<!-- -->&lt;CTX&gt;&gt;
+<b>Implements:</b> [Provider](./context.provider.md)<!-- -->&lt;[GenericInterceptor](./context.genericinterceptor.md)
 
 ## Example
 

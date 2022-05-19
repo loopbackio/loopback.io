@@ -18,20 +18,22 @@ permalink: /doc/en/lb4/apidocs.repository.defaultbelongstorepository.html
 ```typescript
 export declare class DefaultBelongsToRepository<TargetEntity extends Entity, TargetId, TargetRepository extends EntityCrudRepository<TargetEntity, TargetId>> implements BelongsToRepository<TargetEntity> 
 ```
-<b>Implements:</b> [BelongsToRepository](./repository.belongstorepository.md)<!-- -->&lt;TargetEntity&gt;
+<b>Implements:</b> [BelongsToRepository](./repository.belongstorepository.md)
 
 ## Constructors
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)(getTargetRepository, constraint)](./repository.defaultbelongstorepository._constructor_.md) |  | Constructor of DefaultBelongsToEntityCrudRepository |
+|  [(constructor)(getTargetRepository, constraint, targetResolver)](./repository.defaultbelongstorepository._constructor_.md) |  | Constructor of DefaultBelongsToEntityCrudRepository |
 
 ## Properties
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
 |  [constraint](./repository.defaultbelongstorepository.constraint.md) |  | [DataObject](./repository.dataobject.md)<!-- -->&lt;TargetEntity&gt; |  |
-|  [getTargetRepository](./repository.defaultbelongstorepository.gettargetrepository.md) |  | [Getter](./context.getter.md)<!-- -->&lt;TargetRepository&gt; |  |
+|  [getTargetRepository](./repository.defaultbelongstorepository.gettargetrepository.md) |  | [Getter](./context.getter.md)<!-- -->&lt;TargetRepository&gt; \| { \[repoType: string\]: [Getter](./context.getter.md)<!-- -->&lt;TargetRepository&gt;; } |  |
+|  [getTargetRepositoryDict](./repository.defaultbelongstorepository.gettargetrepositorydict.md) |  | { \[repoType: string\]: [Getter](./context.getter.md)<!-- -->&lt;TargetRepository&gt;; } |  |
+|  [targetResolver](./repository.defaultbelongstorepository.targetresolver.md) |  | [TypeResolver](./repository.typeresolver.md)<!-- -->&lt;[Entity](./repository.entity.md)<!-- -->, typeof [Entity](./repository.entity.md)<!-- -->&gt; |  |
 
 ## Methods
 

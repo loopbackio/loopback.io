@@ -24,7 +24,7 @@ coerce(value: any, options?: Options): any;
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  value | any |  |
-|  options | [Options](./repository.options.md) |  |
+|  options | [Options](./repository.options.md) | <i>(Optional)</i> |
 
 <b>Returns:</b>
 

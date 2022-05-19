@@ -25,6 +25,6 @@ constructor(options?: AuthorizationOptions);
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  options | [AuthorizationOptions](./authorization.authorizationoptions.md) |  |
+|  options | [AuthorizationOptions](./authorization.authorizationoptions.md) | <i>(Optional)</i> |
 
 

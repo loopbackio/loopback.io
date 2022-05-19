@@ -27,6 +27,6 @@ constructor(app: Application, projectRoot: string, observerConfig?: ArtifactOpti
 |  --- | --- | --- |
 |  app | [Application](./core.application.md) |  |
 |  projectRoot | string |  |
-|  observerConfig | [ArtifactOptions](./boot.artifactoptions.md) |  |
+|  observerConfig | [ArtifactOptions](./boot.artifactoptions.md) | <i>(Optional)</i> |
 
 

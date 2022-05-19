@@ -47,5 +47,6 @@ export declare class ModelDefinition
 |  [hasMany(name, definition)](./repository.modeldefinition.hasmany.md) |  | Define a new hasMany relation. |
 |  [hasOne(name, definition)](./repository.modeldefinition.hasone.md) |  | Define a new hasOne relation. |
 |  [idProperties()](./repository.modeldefinition.idproperties.md) |  | Get an array of names of ID properties, which are specified in the model settings or properties with <code>id</code> attribute. |
+|  [referencesMany(name, definition)](./repository.modeldefinition.referencesmany.md) |  | Define a new referencesMany relation. |
 
 

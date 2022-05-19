@@ -24,7 +24,7 @@ serviceProvider<S>(provider: Constructor<Provider<S>>, name?: string): Binding<S
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  provider | [Constructor](./context.constructor.md)<!-- -->&lt;[Provider](./context.provider.md)<!-- -->&lt;S&gt;&gt; |  |
-|  name | string |  |
+|  name | string | <i>(Optional)</i> |
 
 <b>Returns:</b>
 

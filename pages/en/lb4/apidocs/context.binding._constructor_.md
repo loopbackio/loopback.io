@@ -26,6 +26,6 @@ constructor(key: BindingAddress<T>, isLocked?: boolean);
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  key | [BindingAddress](./context.bindingaddress.md)<!-- -->&lt;T&gt; |  |
-|  isLocked | boolean |  |
+|  isLocked | boolean | <i>(Optional)</i> |
 
 

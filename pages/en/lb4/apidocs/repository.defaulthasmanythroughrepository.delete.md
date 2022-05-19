@@ -17,7 +17,11 @@ permalink: /doc/en/lb4/apidocs.repository.defaulthasmanythroughrepository.delete
 
 ```typescript
 delete(where?: Where<TargetEntity>, options?: Options & {
-        throughOptions?: Options;
+        throughOptions?: Options & {
+            discriminator?: string;
+        };
+    } & {
+        polymorphicType?: string | string[];
     }): Promise<Count>;
 ```
 
@@ -25,8 +29,8 @@ delete(where?: Where<TargetEntity>, options?: Options & {
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  where | [Where](./filter.where.md)<!-- -->&lt;TargetEntity&gt; |  |
-|  options | [Options](./repository.options.md) &amp; { throughOptions?: [Options](./repository.options.md)<!-- -->; } |  |
+|  where | [Where](./filter.where.md)<!-- -->&lt;TargetEntity&gt; | <i>(Optional)</i> |
+|  options | [Options](./repository.options.md) &amp; { throughOptions?: [Options](./repository.options.md) &amp; { discriminator?: string; }; } &amp; { polymorphicType?: string \| string\[\]; } | <i>(Optional)</i> |
 
 <b>Returns:</b>
 

@@ -18,8 +18,14 @@ Patch multiple target model instances
 <b>Signature:</b>
 
 ```typescript
-patch(dataObject: DataObject<Target>, where?: Where<Target>, options?: Options & {
-        throughOptions?: Options;
+patch(dataObject: DataObject<Target> | {
+        [polymorphicType: string]: DataObject<Target>;
+    }, where?: Where<Target>, options?: Options & {
+        throughOptions?: Options & {
+            discriminator?: string;
+        };
+    } & {
+        isPolymorphic?: boolean;
     }): Promise<Count>;
 ```
 
@@ -27,9 +33,9 @@ patch(dataObject: DataObject<Target>, where?: Where<Target>, options?: Options &
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  dataObject | [DataObject](./repository.dataobject.md)<!-- -->&lt;Target&gt; | The fields and their new values to patch |
-|  where | [Where](./filter.where.md)<!-- -->&lt;Target&gt; | Instances within the where scope are patched |
-|  options | [Options](./repository.options.md) &amp; { throughOptions?: [Options](./repository.options.md)<!-- -->; } |  |
+|  dataObject | [DataObject](./repository.dataobject.md)<!-- -->&lt;Target&gt; \| { \[polymorphicType: string\]: [DataObject](./repository.dataobject.md)<!-- -->&lt;Target&gt;; } | The fields and their new values to patch |
+|  where | [Where](./filter.where.md)<!-- -->&lt;Target&gt; | <i>(Optional)</i> Instances within the where scope are patched |
+|  options | [Options](./repository.options.md) &amp; { throughOptions?: [Options](./repository.options.md) &amp; { discriminator?: string; }; } &amp; { isPolymorphic?: boolean; } | <i>(Optional)</i> options.throughOptions.discriminator - target discriminator field on through options.isPolymorphic - whether dataObject is a dictionary |
 
 <b>Returns:</b>
 

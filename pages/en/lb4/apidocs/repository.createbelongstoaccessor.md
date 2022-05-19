@@ -13,12 +13,14 @@ permalink: /doc/en/lb4/apidocs.repository.createbelongstoaccessor.html
 
 ## createBelongsToAccessor() function
 
-Enforces a BelongsTo constraint on a repository
+Enforces a BelongsTo constraint on a repository If the target model is polymorphic, i.e. stored within different repositories, supply the targetRepositoryGetter with a dictionary in the form of {<!-- -->\[typeName: string\]: repositoryGetter<!-- -->}
 
 <b>Signature:</b>
 
 ```typescript
-export declare function createBelongsToAccessor<Target extends Entity, TargetId, Source extends Entity, SourceId>(belongsToMetadata: BelongsToDefinition, targetRepoGetter: Getter<EntityCrudRepository<Target, TargetId>>, sourceRepository: EntityCrudRepository<Source, SourceId>): BelongsToAccessor<Target, SourceId>;
+export declare function createBelongsToAccessor<Target extends Entity, TargetId, Source extends Entity, SourceId>(belongsToMetadata: BelongsToDefinition, targetRepositoryGetter: Getter<EntityCrudRepository<Target, TargetId>> | {
+    [repoType: string]: Getter<EntityCrudRepository<Target, TargetId>>;
+}, sourceRepository: EntityCrudRepository<Source, SourceId>): BelongsToAccessor<Target, SourceId>;
 ```
 
 ## Parameters
@@ -26,7 +28,7 @@ export declare function createBelongsToAccessor<Target extends Entity, TargetId,
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  belongsToMetadata | [BelongsToDefinition](./repository.belongstodefinition.md) |  |
-|  targetRepoGetter | [Getter](./context.getter.md)<!-- -->&lt;[EntityCrudRepository](./repository.entitycrudrepository.md)<!-- -->&lt;Target, TargetId&gt;&gt; |  |
+|  targetRepositoryGetter | [Getter](./context.getter.md)<!-- -->&lt;[EntityCrudRepository](./repository.entitycrudrepository.md)<!-- -->&lt;Target, TargetId&gt;&gt; \| { \[repoType: string\]: [Getter](./context.getter.md)<!-- -->&lt;[EntityCrudRepository](./repository.entitycrudrepository.md)<!-- -->&lt;Target, TargetId&gt;&gt;; } |  |
 |  sourceRepository | [EntityCrudRepository](./repository.entitycrudrepository.md)<!-- -->&lt;Source, SourceId&gt; |  |
 
 <b>Returns:</b>

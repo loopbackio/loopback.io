@@ -21,6 +21,8 @@ Create a target model instance
 create(targetModelData: DataObject<Target>, options?: Options & {
         throughData?: DataObject<Through>;
         throughOptions?: Options;
+    } & {
+        polymorphicType?: string;
     }): Promise<Target>;
 ```
 
@@ -29,7 +31,7 @@ create(targetModelData: DataObject<Target>, options?: Options & {
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  targetModelData | [DataObject](./repository.dataobject.md)<!-- -->&lt;Target&gt; | The target model data |
-|  options | [Options](./repository.options.md) &amp; { throughData?: [DataObject](./repository.dataobject.md)<!-- -->&lt;Through&gt;; throughOptions?: [Options](./repository.options.md)<!-- -->; } | Options for the operation |
+|  options | [Options](./repository.options.md) &amp; { throughData?: [DataObject](./repository.dataobject.md)<!-- -->&lt;Through&gt;; throughOptions?: [Options](./repository.options.md)<!-- -->; } &amp; { polymorphicType?: string; } | <i>(Optional)</i> Options for the operation options.polymorphicType a string or a string array of polymorphic type names specify of which concrete model the created instance should be |
 
 <b>Returns:</b>
 

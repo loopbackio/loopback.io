@@ -26,7 +26,7 @@ export declare function createMiddleware<CFG>(middlewareFactory: ExpressMiddlewa
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  middlewareFactory | [ExpressMiddlewareFactory](./express.expressmiddlewarefactory.md)<!-- -->&lt;CFG&gt; | Express middleware factory function |
-|  middlewareConfig | CFG | Express middleware config |
+|  middlewareConfig | CFG | <i>(Optional)</i> Express middleware config |
 
 <b>Returns:</b>
 

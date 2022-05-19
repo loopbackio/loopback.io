@@ -20,7 +20,7 @@ Default implementation of CRUD repository using legacy juggler model and data so
 ```typescript
 export declare class DefaultCrudRepository<T extends Entity, ID, Relations extends object = {}> implements EntityCrudRepository<T, ID, Relations> 
 ```
-<b>Implements:</b> [EntityCrudRepository](./repository.entitycrudrepository.md)<!-- -->&lt;T, ID, Relations&gt;
+<b>Implements:</b> [EntityCrudRepository](./repository.entitycrudrepository.md)
 
 ## Constructors
 
@@ -41,16 +41,18 @@ export declare class DefaultCrudRepository<T extends Entity, ID, Relations exten
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [\_createBelongsToAccessorFor(relationName, targetRepoGetter)](./repository.defaultcrudrepository._createbelongstoaccessorfor.md) |  |  |
-|  [\_createHasManyRepositoryFactoryFor(relationName, targetRepoGetter)](./repository.defaultcrudrepository._createhasmanyrepositoryfactoryfor.md) |  |  |
-|  [\_createHasOneRepositoryFactoryFor(relationName, targetRepoGetter)](./repository.defaultcrudrepository._createhasonerepositoryfactoryfor.md) |  |  |
+|  [\_createBelongsToAccessorFor(relationName, targetRepositoryGetter)](./repository.defaultcrudrepository._createbelongstoaccessorfor.md) |  |  |
+|  [\_createHasManyRepositoryFactoryFor(relationName, targetRepositoryGetter)](./repository.defaultcrudrepository._createhasmanyrepositoryfactoryfor.md) |  |  |
+|  [\_createHasOneRepositoryFactoryFor(relationName, targetRepositoryGetter)](./repository.defaultcrudrepository._createhasonerepositoryfactoryfor.md) |  |  |
+|  [\_createReferencesManyAccessorFor(relationName, targetRepoGetter)](./repository.defaultcrudrepository._createreferencesmanyaccessorfor.md) |  |  |
 |  [count(where, options)](./repository.defaultcrudrepository.count.md) |  |  |
 |  [create(entity, options)](./repository.defaultcrudrepository.create.md) |  |  |
 |  [createAll(entities, options)](./repository.defaultcrudrepository.createall.md) |  |  |
-|  [createBelongsToAccessorFor(relationName, targetRepoGetter)](./repository.defaultcrudrepository.createbelongstoaccessorfor.md) |  | Function to create a belongs to accessor |
-|  [createHasManyRepositoryFactoryFor(relationName, targetRepoGetter)](./repository.defaultcrudrepository.createhasmanyrepositoryfactoryfor.md) |  | Function to create a constrained relation repository factory |
-|  [createHasManyThroughRepositoryFactoryFor(relationName, targetRepoGetter, throughRepoGetter)](./repository.defaultcrudrepository.createhasmanythroughrepositoryfactoryfor.md) |  | Function to create a constrained hasManyThrough relation repository factory |
-|  [createHasOneRepositoryFactoryFor(relationName, targetRepoGetter)](./repository.defaultcrudrepository.createhasonerepositoryfactoryfor.md) |  | Function to create a constrained hasOne relation repository factory |
+|  [createBelongsToAccessorFor(relationName, targetRepositoryGetter)](./repository.defaultcrudrepository.createbelongstoaccessorfor.md) |  | Function to create a belongs to accessor |
+|  [createHasManyRepositoryFactoryFor(relationName, targetRepositoryGetter)](./repository.defaultcrudrepository.createhasmanyrepositoryfactoryfor.md) |  | Function to create a constrained relation repository factory |
+|  [createHasManyThroughRepositoryFactoryFor(relationName, targetRepositoryGetter, throughRepositoryGetter)](./repository.defaultcrudrepository.createhasmanythroughrepositoryfactoryfor.md) |  | Function to create a constrained hasManyThrough relation repository factory |
+|  [createHasOneRepositoryFactoryFor(relationName, targetRepositoryGetter)](./repository.defaultcrudrepository.createhasonerepositoryfactoryfor.md) |  | Function to create a constrained hasOne relation repository factory |
+|  [createReferencesManyAccessorFor(relationName, targetRepoGetter)](./repository.defaultcrudrepository.createreferencesmanyaccessorfor.md) |  | Function to create a references many accessor |
 |  [definePersistedModel(entityClass)](./repository.defaultcrudrepository.definepersistedmodel.md) |  | Creates a legacy persisted model class, attaches it to the datasource and returns it. This method can be overriden in sub-classes to acess methods and properties in the generated model class. |
 |  [delete(entity, options)](./repository.defaultcrudrepository.delete.md) |  |  |
 |  [deleteAll(where, options)](./repository.defaultcrudrepository.deleteall.md) |  |  |

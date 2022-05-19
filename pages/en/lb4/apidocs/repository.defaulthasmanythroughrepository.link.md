@@ -27,7 +27,7 @@ link(targetId: TargetID, options?: Options & {
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  targetId | TargetID |  |
-|  options | [Options](./repository.options.md) &amp; { throughData?: [DataObject](./repository.dataobject.md)<!-- -->&lt;ThroughEntity&gt;; throughOptions?: [Options](./repository.options.md)<!-- -->; } |  |
+|  options | [Options](./repository.options.md) &amp; { throughData?: [DataObject](./repository.dataobject.md)<!-- -->&lt;ThroughEntity&gt;; throughOptions?: [Options](./repository.options.md)<!-- -->; } | <i>(Optional)</i> |
 
 <b>Returns:</b>
 

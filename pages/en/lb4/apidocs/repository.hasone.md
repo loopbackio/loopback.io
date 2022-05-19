@@ -24,7 +24,7 @@ export declare function hasOne<T extends Entity>(targetResolver: EntityResolver<
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  targetResolver | [EntityResolver](./repository.entityresolver.md)<!-- -->&lt;T&gt; |  |
-|  definition | Partial&lt;[HasOneDefinition](./repository.hasonedefinition.md)<!-- -->&gt; |  |
+|  definition | Partial&lt;[HasOneDefinition](./repository.hasonedefinition.md)<!-- -->&gt; | <i>(Optional)</i> |
 
 <b>Returns:</b>
 

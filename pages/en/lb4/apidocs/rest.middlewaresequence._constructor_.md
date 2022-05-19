@@ -27,6 +27,6 @@ constructor(context: Context, invokeMiddleware: InvokeMiddleware, options?: Invo
 |  --- | --- | --- |
 |  context | [Context](./context.context.md) |  |
 |  invokeMiddleware | [InvokeMiddleware](./express.invokemiddleware.md) | invoker for registered middleware in a chain. To be injected via RestBindings.INVOKE\_MIDDLEWARE\_SERVICE. |
-|  options | [InvokeMiddlewareOptions](./express.invokemiddlewareoptions.md) |  |
+|  options | [InvokeMiddlewareOptions](./express.invokemiddlewareoptions.md) | <i>(Optional)</i> |
 
 

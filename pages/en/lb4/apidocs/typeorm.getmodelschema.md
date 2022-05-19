@@ -28,7 +28,7 @@ export declare function getModelSchema<T extends object>(modelCtor: Function & {
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  modelCtor | Function &amp; { prototype: T; } | The entity constructor (e.g. <code>Product</code>) |
-|  options | [JsonSchemaOptions](./repository-json-schema.jsonschemaoptions.md)<!-- -->&lt;T&gt; | Additional options |
+|  options | [JsonSchemaOptions](./repository-json-schema.jsonschemaoptions.md)<!-- -->&lt;T&gt; | <i>(Optional)</i> Additional options |
 
 <b>Returns:</b>
 

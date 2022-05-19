@@ -27,7 +27,7 @@ export declare function registerInterceptor(ctx: Context, interceptor: Intercept
 |  --- | --- | --- |
 |  ctx | [Context](./context.context.md) | Context object |
 |  interceptor | [Interceptor](./context.interceptor.md) \| [Constructor](./context.constructor.md)<!-- -->&lt;[Provider](./context.provider.md)<!-- -->&lt;[Interceptor](./context.interceptor.md)<!-- -->&gt;&gt; | An interceptor function or provider class |
-|  options | [InterceptorBindingOptions](./context.interceptorbindingoptions.md) | Options for the interceptor binding |
+|  options | [InterceptorBindingOptions](./context.interceptorbindingoptions.md) | <i>(Optional)</i> Options for the interceptor binding |
 
 <b>Returns:</b>
 

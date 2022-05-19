@@ -24,7 +24,7 @@ get(key: string, options?: Options): Promise<T>;
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  key | string |  |
-|  options | [Options](./repository.options.md) |  |
+|  options | [Options](./repository.options.md) | <i>(Optional)</i> |
 
 <b>Returns:</b>
 

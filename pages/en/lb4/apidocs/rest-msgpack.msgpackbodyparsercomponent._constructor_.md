@@ -25,6 +25,6 @@ constructor(rawBodyParser?: RawBodyParser);
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  rawBodyParser | [RawBodyParser](./rest.rawbodyparser.md) |  |
+|  rawBodyParser | [RawBodyParser](./rest.rawbodyparser.md) | <i>(Optional)</i> |
 
 

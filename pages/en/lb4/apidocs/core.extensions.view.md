@@ -25,8 +25,8 @@ function view(extensionPointName?: string, metadata?: InjectionMetadata): (targe
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  extensionPointName | string | Name of the extension point. If not supplied, we use the <code>name</code> tag from the extension point binding or the class name of the extension point class. If a class needs to inject extensions from multiple extension points, use different <code>extensionPointName</code> for different types of extensions. |
-|  metadata | [InjectionMetadata](./context.injectionmetadata.md) | Optional injection metadata |
+|  extensionPointName | string | <i>(Optional)</i> Name of the extension point. If not supplied, we use the <code>name</code> tag from the extension point binding or the class name of the extension point class. If a class needs to inject extensions from multiple extension points, use different <code>extensionPointName</code> for different types of extensions. |
+|  metadata | [InjectionMetadata](./context.injectionmetadata.md) | <i>(Optional)</i> Optional injection metadata |
 
 <b>Returns:</b>
 

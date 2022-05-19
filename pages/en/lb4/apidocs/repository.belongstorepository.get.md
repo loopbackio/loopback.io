@@ -18,14 +18,16 @@ Gets the target model instance
 <b>Signature:</b>
 
 ```typescript
-get(options?: Options): Promise<Target>;
+get(options?: Options & {
+        polymorphicType?: string | string[];
+    }): Promise<Target>;
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  options | [Options](./repository.options.md) |  |
+|  options | [Options](./repository.options.md) &amp; { polymorphicType?: string \| string\[\]; } | <i>(Optional)</i> options.polymorphicType - a string or a string array of polymorphic type names to specify which repositories should are expected to be searched It is highly recommended to contain this param especially for datasources using deplicated ids across tables |
 
 <b>Returns:</b>
 

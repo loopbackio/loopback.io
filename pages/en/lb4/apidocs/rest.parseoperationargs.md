@@ -27,8 +27,8 @@ export declare function parseOperationArgs(request: Request, route: ResolvedRout
 |  --- | --- | --- |
 |  request | Request | Incoming HTTP request |
 |  route | [ResolvedRoute](./rest.resolvedroute.md) | Resolved Route |
-|  requestBodyParser | [RequestBodyParser](./rest.requestbodyparser.md) |  |
-|  options | [ValidationOptions](./rest.validationoptions.md) |  |
+|  requestBodyParser | [RequestBodyParser](./rest.requestbodyparser.md) | <i>(Optional)</i> |
+|  options | [ValidationOptions](./rest.validationoptions.md) | <i>(Optional)</i> |
 
 <b>Returns:</b>
 

@@ -20,6 +20,6 @@ Base interface for a repository of entities
 ```typescript
 export interface EntityRepository<T extends Entity, ID> extends ExecutableRepository<T> 
 ```
-<b>Extends:</b> [ExecutableRepository](./repository.executablerepository.md)<!-- -->&lt;T&gt;
+<b>Extends:</b> [ExecutableRepository](./repository.executablerepository.md)
 
 

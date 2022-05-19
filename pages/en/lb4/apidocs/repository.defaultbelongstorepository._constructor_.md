@@ -18,14 +18,17 @@ Constructor of DefaultBelongsToEntityCrudRepository
 <b>Signature:</b>
 
 ```typescript
-constructor(getTargetRepository: Getter<TargetRepository>, constraint: DataObject<TargetEntity>);
+constructor(getTargetRepository: Getter<TargetRepository> | {
+        [repoType: string]: Getter<TargetRepository>;
+    }, constraint: DataObject<TargetEntity>, targetResolver: TypeResolver<Entity, typeof Entity>);
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  getTargetRepository | [Getter](./context.getter.md)<!-- -->&lt;TargetRepository&gt; | the getter of the related target model repository instance |
+|  getTargetRepository | [Getter](./context.getter.md)<!-- -->&lt;TargetRepository&gt; \| { \[repoType: string\]: [Getter](./context.getter.md)<!-- -->&lt;TargetRepository&gt;; } | either a dictionary of target model type - target repository instance or a single target repository instance e.g. if the target is of a non-polymorphic type "Student", put the studentRepositoryGetterInstance if the target is of a polymorphic type "Person" which can be either a "Student" or a "Teacher" then put "<!-- -->{<!-- -->Student: studentRepositoryGetterInstance, Teacher: teacherRepositoryGetterInstance<!-- -->}<!-- -->" |
 |  constraint | [DataObject](./repository.dataobject.md)<!-- -->&lt;TargetEntity&gt; | the key value pair representing foreign key name to constrain the target repository instance |
+|  targetResolver | [TypeResolver](./repository.typeresolver.md)<!-- -->&lt;[Entity](./repository.entity.md)<!-- -->, typeof [Entity](./repository.entity.md)<!-- -->&gt; | () =<!-- -->&gt; Target to resolve the target class e.g. if the target is of type "Student", then put "() =<!-- -->&gt; Student" |
 
 

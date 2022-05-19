@@ -18,7 +18,7 @@ permalink: /doc/en/lb4/apidocs.rest.findroutemiddlewareprovider.html
 ```typescript
 export declare class FindRouteMiddlewareProvider implements Provider<Middleware> 
 ```
-<b>Implements:</b> [Provider](./context.provider.md)<!-- -->&lt;[Middleware](./express.middleware.md)<!-- -->&gt;
+<b>Implements:</b> [Provider](./context.provider.md)<!-- -->&lt;[Middleware](./express.middleware.md)
 
 ## Methods
 

@@ -27,6 +27,6 @@ constructor(context: C, filter: BindingFilter, comparator?: BindingComparator);
 |  --- | --- | --- |
 |  context | C | Context object |
 |  filter | [BindingFilter](./context.bindingfilter.md) | A binding filter function to select interceptors |
-|  comparator | [BindingComparator](./context.bindingcomparator.md) | An optional comparator to sort matched interceptor bindings |
+|  comparator | [BindingComparator](./context.bindingcomparator.md) | <i>(Optional)</i> An optional comparator to sort matched interceptor bindings |
 
 

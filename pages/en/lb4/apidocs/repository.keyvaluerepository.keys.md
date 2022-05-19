@@ -25,8 +25,8 @@ keys?(filter?: KeyValueFilter, options?: Options): AsyncIterable<string>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  filter | [KeyValueFilter](./repository.keyvaluefilter.md) | Filter for keys |
-|  options | [Options](./repository.options.md) | Options for the operation |
+|  filter | [KeyValueFilter](./repository.keyvaluefilter.md) | <i>(Optional)</i> Filter for keys |
+|  options | [Options](./repository.options.md) | <i>(Optional)</i> Options for the operation |
 
 <b>Returns:</b>
 

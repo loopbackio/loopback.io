@@ -26,6 +26,6 @@ constructor(app: Application, options?: SocketIoServerOptions);
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  app | [Application](./core.application.md) |  |
-|  options | [SocketIoServerOptions](./socketio.socketioserveroptions.md) |  |
+|  options | [SocketIoServerOptions](./socketio.socketioserveroptions.md) | <i>(Optional)</i> |
 
 

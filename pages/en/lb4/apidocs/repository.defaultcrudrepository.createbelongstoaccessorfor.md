@@ -18,7 +18,9 @@ Function to create a belongs to accessor
 <b>Signature:</b>
 
 ```typescript
-protected createBelongsToAccessorFor<Target extends Entity, TargetId>(relationName: string, targetRepoGetter: Getter<EntityCrudRepository<Target, TargetId>>): BelongsToAccessor<Target, ID>;
+protected createBelongsToAccessorFor<Target extends Entity, TargetId>(relationName: string, targetRepositoryGetter: Getter<EntityCrudRepository<Target, TargetId>> | {
+        [repoType: string]: Getter<EntityCrudRepository<Target, TargetId>>;
+    }): BelongsToAccessor<Target, ID>;
 ```
 
 ## Parameters
@@ -26,7 +28,7 @@ protected createBelongsToAccessorFor<Target extends Entity, TargetId>(relationNa
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  relationName | string | Name of the relation defined on the source model |
-|  targetRepoGetter | [Getter](./context.getter.md)<!-- -->&lt;[EntityCrudRepository](./repository.entitycrudrepository.md)<!-- -->&lt;Target, TargetId&gt;&gt; |  |
+|  targetRepositoryGetter | [Getter](./context.getter.md)<!-- -->&lt;[EntityCrudRepository](./repository.entitycrudrepository.md)<!-- -->&lt;Target, TargetId&gt;&gt; \| { \[repoType: string\]: [Getter](./context.getter.md)<!-- -->&lt;[EntityCrudRepository](./repository.entitycrudrepository.md)<!-- -->&lt;Target, TargetId&gt;&gt;; } |  |
 
 <b>Returns:</b>
 

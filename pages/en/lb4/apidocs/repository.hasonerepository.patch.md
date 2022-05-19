@@ -18,15 +18,19 @@ Patch the related target model instance
 <b>Signature:</b>
 
 ```typescript
-patch(dataObject: DataObject<Target>, options?: Options): Promise<Count>;
+patch(dataObject: DataObject<Target> | {
+        [polymorphicType: string]: DataObject<Target>;
+    }, options?: Options & {
+        isPolymorphic?: boolean;
+    }): Promise<Count>;
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  dataObject | [DataObject](./repository.dataobject.md)<!-- -->&lt;Target&gt; | The target model fields and their new values to patch |
-|  options | [Options](./repository.options.md) |  |
+|  dataObject | [DataObject](./repository.dataobject.md)<!-- -->&lt;Target&gt; \| { \[polymorphicType: string\]: [DataObject](./repository.dataobject.md)<!-- -->&lt;Target&gt;; } | The target model fields and their new values to patch If the target models are of different types, this should be a dictionary |
+|  options | [Options](./repository.options.md) &amp; { isPolymorphic?: boolean; } | <i>(Optional)</i> options.isPolymorphic - whether dataObject is a dictionary |
 
 <b>Returns:</b>
 

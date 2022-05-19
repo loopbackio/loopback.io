@@ -26,6 +26,6 @@ constructor(modelOrRepo: string | typeof Entity, dataSource?: string | juggler.D
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  modelOrRepo | string \| typeof [Entity](./repository.entity.md) | Name or class of the model. If the value is a string and <code>dataSource</code> is not present, it will treated as the name of a predefined repository |
-|  dataSource | string \| juggler.DataSource \| [DataSource](./repository.datasource.md) | Name or instance of the data source<!-- -->For example:<!-- -->- new RepositoryMetadata(repoName); - new RepositoryMetadata(modelName, dataSourceName); - new RepositoryMetadata(modelClass, dataSourceInstance); - new RepositoryMetadata(modelName, dataSourceInstance); - new RepositoryMetadata(modelClass, dataSourceName); |
+|  dataSource | string \| juggler.DataSource \| [DataSource](./repository.datasource.md) | <i>(Optional)</i> Name or instance of the data source<!-- -->For example:<!-- -->- new RepositoryMetadata(repoName); - new RepositoryMetadata(modelName, dataSourceName); - new RepositoryMetadata(modelClass, dataSourceInstance); - new RepositoryMetadata(modelName, dataSourceInstance); - new RepositoryMetadata(modelClass, dataSourceName); |
 
 

@@ -16,7 +16,9 @@ permalink: /doc/en/lb4/apidocs.repository.defaulthasonerepository.create.html
 <b>Signature:</b>
 
 ```typescript
-create(targetModelData: DataObject<TargetEntity>, options?: Options): Promise<TargetEntity>;
+create(targetModelData: DataObject<TargetEntity>, options?: Options & {
+        polymorphicType?: string;
+    }): Promise<TargetEntity>;
 ```
 
 ## Parameters
@@ -24,7 +26,7 @@ create(targetModelData: DataObject<TargetEntity>, options?: Options): Promise<Ta
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  targetModelData | [DataObject](./repository.dataobject.md)<!-- -->&lt;TargetEntity&gt; |  |
-|  options | [Options](./repository.options.md) |  |
+|  options | [Options](./repository.options.md) &amp; { polymorphicType?: string; } | <i>(Optional)</i> |
 
 <b>Returns:</b>
 

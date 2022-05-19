@@ -15,10 +15,14 @@ permalink: /doc/en/lb4/apidocs.repository.createhasonerepositoryfactory.html
 
 Enforces a constraint on a repository based on a relationship contract between models. For example, if a Customer model is related to an Address model via a HasOne relation, then, the relational repository returned by the factory function would be constrained by a Customer model instance's id(s).
 
+If the target model is polymorphic, i.e. stored within different repositories, supply the targetRepositoryGetter with a dictionary in the form of {<!-- -->\[typeName: string\]: repositoryGetter<!-- -->}
+
 <b>Signature:</b>
 
 ```typescript
-export declare function createHasOneRepositoryFactory<Target extends Entity, TargetID, ForeignKeyType>(relationMetadata: HasOneDefinition, targetRepositoryGetter: Getter<EntityCrudRepository<Target, TargetID>>): HasOneRepositoryFactory<Target, ForeignKeyType>;
+export declare function createHasOneRepositoryFactory<Target extends Entity, TargetID, ForeignKeyType>(relationMetadata: HasOneDefinition, targetRepositoryGetter: Getter<EntityCrudRepository<Target, TargetID>> | {
+    [repoType: string]: Getter<EntityCrudRepository<Target, TargetID>>;
+}): HasOneRepositoryFactory<Target, ForeignKeyType>;
 ```
 
 ## Parameters
@@ -26,7 +30,7 @@ export declare function createHasOneRepositoryFactory<Target extends Entity, Tar
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  relationMetadata | [HasOneDefinition](./repository.hasonedefinition.md) | The relation metadata used to describe the relationship and determine how to apply the constraint. |
-|  targetRepositoryGetter | [Getter](./context.getter.md)<!-- -->&lt;[EntityCrudRepository](./repository.entitycrudrepository.md)<!-- -->&lt;Target, TargetID&gt;&gt; | The repository which represents the target model of a relation attached to a datasource. |
+|  targetRepositoryGetter | [Getter](./context.getter.md)<!-- -->&lt;[EntityCrudRepository](./repository.entitycrudrepository.md)<!-- -->&lt;Target, TargetID&gt;&gt; \| { \[repoType: string\]: [Getter](./context.getter.md)<!-- -->&lt;[EntityCrudRepository](./repository.entitycrudrepository.md)<!-- -->&lt;Target, TargetID&gt;&gt;; } | The repository or a dictionary of classname - repository, which represents the target model of a relation attached to a datasource. For the dictionary, the key is the class name of the concrete class the the polymorphic model. |
 
 <b>Returns:</b>
 

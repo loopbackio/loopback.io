@@ -28,6 +28,6 @@ constructor(app: ApplicationWithRepositories, projectRoot: string, getModelApiBu
 |  app | [ApplicationWithRepositories](./repository.applicationwithrepositories.md) |  |
 |  projectRoot | string |  |
 |  getModelApiBuilders | [Getter](./context.getter.md)<!-- -->&lt;[ModelApiBuilder](./model-api-builder.modelapibuilder.md)<!-- -->\[\]&gt; |  |
-|  booterConfig | [ArtifactOptions](./boot.artifactoptions.md) |  |
+|  booterConfig | [ArtifactOptions](./boot.artifactoptions.md) | <i>(Optional)</i> |
 
 

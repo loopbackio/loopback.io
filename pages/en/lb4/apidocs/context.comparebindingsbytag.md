@@ -25,8 +25,8 @@ export declare function compareBindingsByTag(phaseTagName?: string, orderOfPhase
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  phaseTagName | string | Name of the binding tag for phase |
-|  orderOfPhases | (string \| symbol)\[\] | An array of phase names as the predefined order |
+|  phaseTagName | string | <i>(Optional)</i> Name of the binding tag for phase |
+|  orderOfPhases | (string \| symbol)\[\] | <i>(Optional)</i> An array of phase names as the predefined order |
 
 <b>Returns:</b>
 

@@ -28,6 +28,9 @@ through?: {
         model: TypeResolver<Entity, typeof Entity>;
         keyFrom?: string;
         keyTo?: string;
+        polymorphic?: boolean | {
+            discriminator: string;
+        };
     };
 ```
 

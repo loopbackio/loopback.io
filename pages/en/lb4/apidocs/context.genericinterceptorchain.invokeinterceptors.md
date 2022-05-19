@@ -25,7 +25,7 @@ invokeInterceptors(finalHandler?: Next): ValueOrPromise<InvocationResult>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  finalHandler | [Next](./context.next.md) |  |
+|  finalHandler | [Next](./context.next.md) | <i>(Optional)</i> |
 
 <b>Returns:</b>
 

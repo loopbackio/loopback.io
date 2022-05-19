@@ -30,6 +30,6 @@ constructor(
 |  --- | --- | --- |
 |  transports | [Getter](./context.getter.md)<!-- -->&lt;Transport\[\]&gt; |  |
 |  formats | [Getter](./context.getter.md)<!-- -->&lt;Format\[\]&gt; |  |
-|  options | LoggerOptions |  |
+|  options | LoggerOptions | <i>(Optional)</i> |
 
 

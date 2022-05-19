@@ -26,7 +26,7 @@ export declare function createMiddlewareInterceptorBinding(middlewareProviderCla
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  middlewareProviderClass | [Constructor](./context.constructor.md)<!-- -->&lt;[Provider](./context.provider.md)<!-- -->&lt;[Interceptor](./context.interceptor.md)<!-- -->&gt;&gt; | Middleware provider class |
-|  options | [MiddlewareInterceptorBindingOptions](./express.middlewareinterceptorbindingoptions.md) | Options to create middlewareFactory interceptor binding |
+|  options | [MiddlewareInterceptorBindingOptions](./express.middlewareinterceptorbindingoptions.md) | <i>(Optional)</i> Options to create middlewareFactory interceptor binding |
 
 <b>Returns:</b>
 

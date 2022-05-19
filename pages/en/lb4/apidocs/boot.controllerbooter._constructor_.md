@@ -27,6 +27,6 @@ constructor(app: Application, projectRoot: string, controllerConfig?: ArtifactOp
 |  --- | --- | --- |
 |  app | [Application](./core.application.md) |  |
 |  projectRoot | string |  |
-|  controllerConfig | [ArtifactOptions](./boot.artifactoptions.md) |  |
+|  controllerConfig | [ArtifactOptions](./boot.artifactoptions.md) | <i>(Optional)</i> |
 
 

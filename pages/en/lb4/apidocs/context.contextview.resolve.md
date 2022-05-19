@@ -25,7 +25,7 @@ resolve(session?: ResolutionOptionsOrSession): ValueOrPromise<T[]>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  session | [ResolutionOptionsOrSession](./context.resolutionoptionsorsession.md) | Resolution session |
+|  session | [ResolutionOptionsOrSession](./context.resolutionoptionsorsession.md) | <i>(Optional)</i> Resolution session |
 
 <b>Returns:</b>
 

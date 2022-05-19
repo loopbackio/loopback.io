@@ -26,7 +26,7 @@ interceptor(interceptor: Interceptor | Constructor<Provider<Interceptor>>, nameO
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  interceptor | [Interceptor](./context.interceptor.md) \| [Constructor](./context.constructor.md)<!-- -->&lt;[Provider](./context.provider.md)<!-- -->&lt;[Interceptor](./context.interceptor.md)<!-- -->&gt;&gt; | An interceptor function or provider class |
-|  nameOrOptions | string \| [InterceptorBindingOptions](./context.interceptorbindingoptions.md) | Binding name or options |
+|  nameOrOptions | string \| [InterceptorBindingOptions](./context.interceptorbindingoptions.md) | <i>(Optional)</i> Binding name or options |
 
 <b>Returns:</b>
 

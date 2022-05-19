@@ -24,7 +24,7 @@ createAll(entities: DataObject<T>[], options?: Options): Promise<T[]>;
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  entities | [DataObject](./repository.dataobject.md)<!-- -->&lt;T&gt;\[\] |  |
-|  options | [Options](./repository.options.md) |  |
+|  options | [Options](./repository.options.md) | <i>(Optional)</i> |
 
 <b>Returns:</b>
 

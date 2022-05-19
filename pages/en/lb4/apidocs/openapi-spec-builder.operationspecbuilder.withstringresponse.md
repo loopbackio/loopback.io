@@ -23,7 +23,7 @@ withStringResponse(status?: number | 'default'): this;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  status | number \| 'default' |  |
+|  status | number \| 'default' | <i>(Optional)</i> |
 
 <b>Returns:</b>
 

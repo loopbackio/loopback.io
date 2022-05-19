@@ -20,7 +20,7 @@ CRUD operations for a repository of entities
 ```typescript
 export interface EntityCrudRepository<T extends Entity, ID, Relations extends object = {}> extends EntityRepository<T, ID>, CrudRepository<T, Relations> 
 ```
-<b>Extends:</b> [EntityRepository](./repository.entityrepository.md)<!-- -->&lt;T, ID&gt;, [CrudRepository](./repository.crudrepository.md)<!-- -->&lt;T, Relations&gt;
+<b>Extends:</b> [EntityRepository](./repository.entityrepository.md)<!-- -->&lt;T, ID&gt;, [CrudRepository](./repository.crudrepository.md)
 
 ## Properties
 

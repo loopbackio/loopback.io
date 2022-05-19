@@ -25,7 +25,7 @@ export declare function validateApiPath(path?: string): string;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  path | string |  |
+|  path | string | <i>(Optional)</i> |
 
 <b>Returns:</b>
 

@@ -26,7 +26,7 @@ export declare function httpsGetAsync(urlString: string, agent?: https.Agent): P
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  urlString | string |  |
-|  agent | https.Agent |  |
+|  agent | https.Agent | <i>(Optional)</i> |
 
 <b>Returns:</b>
 

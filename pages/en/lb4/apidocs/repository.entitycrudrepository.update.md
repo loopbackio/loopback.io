@@ -26,7 +26,7 @@ update(entity: DataObject<T>, options?: Options): Promise<void>;
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  entity | [DataObject](./repository.dataobject.md)<!-- -->&lt;T&gt; | Entity to be updated |
-|  options | [Options](./repository.options.md) | Options for the operations |
+|  options | [Options](./repository.options.md) | <i>(Optional)</i> Options for the operations |
 
 <b>Returns:</b>
 

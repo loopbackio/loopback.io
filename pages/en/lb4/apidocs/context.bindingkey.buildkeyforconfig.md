@@ -25,7 +25,7 @@ static buildKeyForConfig<T>(key?: BindingAddress): BindingAddress<T>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  key | [BindingAddress](./context.bindingaddress.md) | Key of the target binding to be configured |
+|  key | [BindingAddress](./context.bindingaddress.md) | <i>(Optional)</i> Key of the target binding to be configured |
 
 <b>Returns:</b>
 

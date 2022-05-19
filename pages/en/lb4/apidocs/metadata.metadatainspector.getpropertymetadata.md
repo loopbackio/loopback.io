@@ -28,7 +28,7 @@ static getPropertyMetadata<T>(key: MetadataKey<T, PropertyDecorator>, target: Ob
 |  key | [MetadataKey](./metadata.metadatakey.md)<!-- -->&lt;T, PropertyDecorator&gt; | Metadata key |
 |  target | Object | Class for static properties or prototype for instance properties |
 |  propertyName | string | Property name |
-|  options | [InspectionOptions](./metadata.inspectionoptions.md) | Options for inspection |
+|  options | [InspectionOptions](./metadata.inspectionoptions.md) | <i>(Optional)</i> Options for inspection |
 
 <b>Returns:</b>
 

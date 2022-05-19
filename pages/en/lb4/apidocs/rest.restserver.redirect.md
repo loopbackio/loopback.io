@@ -27,7 +27,7 @@ redirect(fromPath: string, toPathOrUrl: string, statusCode?: number): Binding;
 |  --- | --- | --- |
 |  fromPath | string | URL path of the redirect endpoint |
 |  toPathOrUrl | string | Location (URL path or full URL) where to redirect to. If your server is configured with a custom <code>basePath</code>, then the base path is prepended to the target location. |
-|  statusCode | number | HTTP status code to respond with, defaults to 303 (See Other). |
+|  statusCode | number | <i>(Optional)</i> HTTP status code to respond with, defaults to 303 (See Other). |
 
 <b>Returns:</b>
 

@@ -27,7 +27,7 @@ protected notifyGroups(events: (keyof LifeCycleObserver)[], groups: LifeCycleObs
 |  --- | --- | --- |
 |  events | (keyof [LifeCycleObserver](./core.lifecycleobserver.md)<!-- -->)\[\] | Event names |
 |  groups | [LifeCycleObserverGroup](./core.lifecycleobservergroup.md)<!-- -->\[\] | Observer groups |
-|  reverse | boolean |  |
+|  reverse | boolean | <i>(Optional)</i> |
 
 <b>Returns:</b>
 

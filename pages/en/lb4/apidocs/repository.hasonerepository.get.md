@@ -18,15 +18,17 @@ Find the only target model instance that belongs to the declaring model.
 <b>Signature:</b>
 
 ```typescript
-get(filter?: Pick<Filter<Target>, Exclude<keyof Filter<Target>, 'where'>>, options?: Options): Promise<Target>;
+get(filter?: Pick<Filter<Target>, Exclude<keyof Filter<Target>, 'where'>>, options?: Options & {
+        polymorphicType?: string | string[];
+    }): Promise<Target>;
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  filter | Pick&lt;[Filter](./filter.filter.md)<!-- -->&lt;Target&gt;, Exclude&lt;keyof [Filter](./filter.filter.md)<!-- -->&lt;Target&gt;, 'where'&gt;&gt; | Query filter without a Where condition |
-|  options | [Options](./repository.options.md) | Options for the operations |
+|  filter | Pick&lt;[Filter](./filter.filter.md)<!-- -->&lt;Target&gt;, Exclude&lt;keyof [Filter](./filter.filter.md)<!-- -->&lt;Target&gt;, 'where'&gt;&gt; | <i>(Optional)</i> Query filter without a Where condition |
+|  options | [Options](./repository.options.md) &amp; { polymorphicType?: string \| string\[\]; } | <i>(Optional)</i> Options for the operations options.polymorphicType - a string or a string array of polymorphic type names to specify which repositories should are expected to be searched It is highly recommended to contain this param especially for datasources using deplicated ids across tables |
 
 <b>Returns:</b>
 

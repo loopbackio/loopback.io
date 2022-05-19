@@ -23,7 +23,7 @@ migrateSchema(options?: SchemaMigrationOptions): Promise<void>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  options | [SchemaMigrationOptions](./repository.schemamigrationoptions.md) |  |
+|  options | [SchemaMigrationOptions](./repository.schemamigrationoptions.md) | <i>(Optional)</i> |
 
 <b>Returns:</b>
 

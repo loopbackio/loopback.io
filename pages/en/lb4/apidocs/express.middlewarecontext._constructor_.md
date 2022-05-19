@@ -27,7 +27,7 @@ constructor(request: Request, response: Response, parent?: Context, name?: strin
 |  --- | --- | --- |
 |  request | Request | Express request object |
 |  response | Response | Express response object |
-|  parent | [Context](./context.context.md) | Parent context |
-|  name | string | Name of the middleware context |
+|  parent | [Context](./context.context.md) | <i>(Optional)</i> Parent context |
+|  name | string | <i>(Optional)</i> Name of the middleware context |
 
 

@@ -24,8 +24,8 @@ getConfigAsValueOrPromise<ConfigValueType>(key: BindingAddress<unknown>, propert
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  key | [BindingAddress](./context.bindingaddress.md)<!-- -->&lt;unknown&gt; |  |
-|  propertyPath | string |  |
-|  resolutionOptions | [ResolutionOptions](./context.resolutionoptions.md) |  |
+|  propertyPath | string | <i>(Optional)</i> |
+|  resolutionOptions | [ResolutionOptions](./context.resolutionoptions.md) | <i>(Optional)</i> |
 
 <b>Returns:</b>
 

@@ -27,6 +27,6 @@ constructor(key: string, spec: T, options?: DecoratorOptions);
 |  --- | --- | --- |
 |  key | string | Metadata key |
 |  spec | T | Metadata object from the decorator function |
-|  options | [DecoratorOptions](./metadata.decoratoroptions.md) | Options for the decorator. Default to <code>{allowInheritance: true}</code> if not provided |
+|  options | [DecoratorOptions](./metadata.decoratoroptions.md) | <i>(Optional)</i> Options for the decorator. Default to <code>{allowInheritance: true}</code> if not provided |
 
 

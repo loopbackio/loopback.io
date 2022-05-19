@@ -29,7 +29,7 @@ export declare function resolveInjectedProperties(constructor: Function, ctx: Co
 |  --- | --- | --- |
 |  constructor | Function | The class for which properties should be resolved. |
 |  ctx | [Context](./context.context.md) | The context containing values for <code>@inject</code> resolution |
-|  session | [ResolutionSession](./context.resolutionsession.md) | Optional session for binding and dependency resolution |
+|  session | [ResolutionSession](./context.resolutionsession.md) | <i>(Optional)</i> Optional session for binding and dependency resolution |
 
 <b>Returns:</b>
 

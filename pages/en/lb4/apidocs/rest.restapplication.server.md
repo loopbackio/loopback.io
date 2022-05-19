@@ -24,7 +24,7 @@ server(server: Constructor<Server>, name?: string): Binding;
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  server | [Constructor](./context.constructor.md)<!-- -->&lt;[Server](./core.server.md)<!-- -->&gt; |  |
-|  name | string |  |
+|  name | string | <i>(Optional)</i> |
 
 <b>Returns:</b>
 

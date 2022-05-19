@@ -29,8 +29,8 @@ protected mergeWithOwn(ownMetadata: M, target: Object, member?: string | symbol,
 |  --- | --- | --- |
 |  ownMetadata | M | Own Metadata exists locally on the target |
 |  target | Object | Decoration target |
-|  member | string \| symbol | Optional property or method |
-|  descriptorOrIndex | TypedPropertyDescriptor&lt;any&gt; \| number | Optional parameter index or method descriptor |
+|  member | string \| symbol | <i>(Optional)</i> Optional property or method |
+|  descriptorOrIndex | TypedPropertyDescriptor&lt;any&gt; \| number | <i>(Optional)</i> Optional parameter index or method descriptor |
 
 <b>Returns:</b>
 

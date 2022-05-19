@@ -16,8 +16,14 @@ permalink: /doc/en/lb4/apidocs.repository.defaulthasmanythroughrepository.patch.
 <b>Signature:</b>
 
 ```typescript
-patch(dataObject: DataObject<TargetEntity>, where?: Where<TargetEntity>, options?: Options & {
-        throughOptions?: Options;
+patch(dataObject: DataObject<TargetEntity> | {
+        [polymorphicType: string]: DataObject<TargetEntity>;
+    }, where?: Where<TargetEntity>, options?: Options & {
+        throughOptions?: Options & {
+            discriminator?: string;
+        };
+    } & {
+        isPolymorphic?: boolean;
     }): Promise<Count>;
 ```
 
@@ -25,9 +31,9 @@ patch(dataObject: DataObject<TargetEntity>, where?: Where<TargetEntity>, options
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  dataObject | [DataObject](./repository.dataobject.md)<!-- -->&lt;TargetEntity&gt; |  |
-|  where | [Where](./filter.where.md)<!-- -->&lt;TargetEntity&gt; |  |
-|  options | [Options](./repository.options.md) &amp; { throughOptions?: [Options](./repository.options.md)<!-- -->; } |  |
+|  dataObject | [DataObject](./repository.dataobject.md)<!-- -->&lt;TargetEntity&gt; \| { \[polymorphicType: string\]: [DataObject](./repository.dataobject.md)<!-- -->&lt;TargetEntity&gt;; } |  |
+|  where | [Where](./filter.where.md)<!-- -->&lt;TargetEntity&gt; | <i>(Optional)</i> |
+|  options | [Options](./repository.options.md) &amp; { throughOptions?: [Options](./repository.options.md) &amp; { discriminator?: string; }; } &amp; { isPolymorphic?: boolean; } | <i>(Optional)</i> |
 
 <b>Returns:</b>
 

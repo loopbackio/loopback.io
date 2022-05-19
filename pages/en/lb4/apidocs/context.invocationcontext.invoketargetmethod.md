@@ -25,7 +25,7 @@ invokeTargetMethod(options?: InvocationOptions): any;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  options | [InvocationOptions](./context.invocationoptions.md) | Options for the invocation |
+|  options | [InvocationOptions](./context.invocationoptions.md) | <i>(Optional)</i> Options for the invocation |
 
 <b>Returns:</b>
 

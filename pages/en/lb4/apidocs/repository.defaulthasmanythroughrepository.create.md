@@ -19,6 +19,8 @@ permalink: /doc/en/lb4/apidocs.repository.defaulthasmanythroughrepository.create
 create(targetModelData: DataObject<TargetEntity>, options?: Options & {
         throughData?: DataObject<ThroughEntity>;
         throughOptions?: Options;
+    } & {
+        polymorphicType?: string;
     }): Promise<TargetEntity>;
 ```
 
@@ -27,7 +29,7 @@ create(targetModelData: DataObject<TargetEntity>, options?: Options & {
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  targetModelData | [DataObject](./repository.dataobject.md)<!-- -->&lt;TargetEntity&gt; |  |
-|  options | [Options](./repository.options.md) &amp; { throughData?: [DataObject](./repository.dataobject.md)<!-- -->&lt;ThroughEntity&gt;; throughOptions?: [Options](./repository.options.md)<!-- -->; } |  |
+|  options | [Options](./repository.options.md) &amp; { throughData?: [DataObject](./repository.dataobject.md)<!-- -->&lt;ThroughEntity&gt;; throughOptions?: [Options](./repository.options.md)<!-- -->; } &amp; { polymorphicType?: string; } | <i>(Optional)</i> |
 
 <b>Returns:</b>
 

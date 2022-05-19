@@ -25,8 +25,8 @@ decorate(decorators: (PropertyDecorator | MethodDecorator)[], target: Object, ta
 |  --- | --- | --- |
 |  decorators | (PropertyDecorator \| MethodDecorator)\[\] |  |
 |  target | Object |  |
-|  targetKey | string \| symbol |  |
-|  descriptor | PropertyDescriptor |  |
+|  targetKey | string \| symbol | <i>(Optional)</i> |
+|  descriptor | PropertyDescriptor | <i>(Optional)</i> |
 
 <b>Returns:</b>
 

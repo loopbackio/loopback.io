@@ -25,8 +25,8 @@ count(where?: Where<T>, options?: Options): Promise<Count>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  where | [Where](./filter.where.md)<!-- -->&lt;T&gt; | Matching criteria |
-|  options | [Options](./repository.options.md) | Options for the operations |
+|  where | [Where](./filter.where.md)<!-- -->&lt;T&gt; | <i>(Optional)</i> Matching criteria |
+|  options | [Options](./repository.options.md) | <i>(Optional)</i> Options for the operations |
 
 <b>Returns:</b>
 

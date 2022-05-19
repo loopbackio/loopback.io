@@ -25,7 +25,7 @@ registerController<T>(spec: ControllerSpec, controllerCtor: ControllerClass<T>, 
 |  --- | --- | --- |
 |  spec | [ControllerSpec](./openapi-v3.controllerspec.md) |  |
 |  controllerCtor | [ControllerClass](./rest.controllerclass.md)<!-- -->&lt;T&gt; |  |
-|  controllerFactory | [ControllerFactory](./rest.controllerfactory.md)<!-- -->&lt;T&gt; |  |
+|  controllerFactory | [ControllerFactory](./rest.controllerfactory.md)<!-- -->&lt;T&gt; | <i>(Optional)</i> |
 
 <b>Returns:</b>
 

@@ -25,7 +25,7 @@ constructor(config?: ExpressServerConfig | undefined, parent?: Context);
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  config | [ExpressServerConfig](./express.expressserverconfig.md) \| undefined |  |
-|  parent | [Context](./context.context.md) |  |
+|  config | [ExpressServerConfig](./express.expressserverconfig.md) \| undefined | <i>(Optional)</i> |
+|  parent | [Context](./context.context.md) | <i>(Optional)</i> |
 
 

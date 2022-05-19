@@ -24,7 +24,7 @@ component(component: Constructor<{}>, name?: string): Binding;
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  component | [Constructor](./context.constructor.md)<!-- -->&lt;{}&gt; |  |
-|  name | string |  |
+|  name | string | <i>(Optional)</i> |
 
 <b>Returns:</b>
 

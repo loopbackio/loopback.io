@@ -26,8 +26,8 @@ export declare function buildName<CFG>(middlewareFactory: ExpressMiddlewareFacto
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  middlewareFactory | [ExpressMiddlewareFactory](./express.expressmiddlewarefactory.md)<!-- -->&lt;CFG&gt; | Express middleware factory function |
-|  providedName | string | Provided name |
-|  suffix | string | Suffix |
+|  providedName | string | <i>(Optional)</i> Provided name |
+|  suffix | string | <i>(Optional)</i> Suffix |
 
 <b>Returns:</b>
 

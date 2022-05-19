@@ -27,6 +27,6 @@ constructor(app: Application & Bootable, projectRoot: string, bootOptions?: Boot
 |  --- | --- | --- |
 |  app | [Application](./core.application.md) &amp; [Bootable](./boot.bootable.md) |  |
 |  projectRoot | string |  |
-|  bootOptions | [BootOptions](./boot.bootoptions.md) |  |
+|  bootOptions | [BootOptions](./boot.bootoptions.md) | <i>(Optional)</i> |
 
 

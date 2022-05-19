@@ -25,7 +25,7 @@ beginTransaction(options?: IsolationLevel | Options): Promise<Transaction>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  options | [IsolationLevel](./repository.isolationlevel.md) \| [Options](./repository.options.md) | Options for the operations |
+|  options | [IsolationLevel](./repository.isolationlevel.md) \| [Options](./repository.options.md) | <i>(Optional)</i> Options for the operations |
 
 <b>Returns:</b>
 

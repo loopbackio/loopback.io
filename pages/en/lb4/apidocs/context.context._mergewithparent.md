@@ -24,7 +24,7 @@ protected _mergeWithParent<ValueType>(childList: Readonly<Binding<ValueType>>[],
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  childList | Readonly&lt;[Binding](./context.binding.md)<!-- -->&lt;ValueType&gt;&gt;\[\] |  |
-|  parentList | Readonly&lt;[Binding](./context.binding.md)<!-- -->&lt;ValueType&gt;&gt;\[\] |  |
+|  parentList | Readonly&lt;[Binding](./context.binding.md)<!-- -->&lt;ValueType&gt;&gt;\[\] | <i>(Optional)</i> |
 
 <b>Returns:</b>
 

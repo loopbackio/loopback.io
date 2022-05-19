@@ -27,6 +27,6 @@ constructor(strategy: Strategy, name: string, userProfileFactory?: UserProfileFa
 |  --- | --- | --- |
 |  strategy | Strategy | instance of a class which implements a [passport-strategy](http://passportjs.org/)<!-- -->. |
 |  name | string |  |
-|  userProfileFactory | [UserProfileFactory](./authentication.userprofilefactory.md)<!-- -->&lt;U&gt; |  |
+|  userProfileFactory | [UserProfileFactory](./authentication.userprofilefactory.md)<!-- -->&lt;U&gt; | <i>(Optional)</i> |
 
 

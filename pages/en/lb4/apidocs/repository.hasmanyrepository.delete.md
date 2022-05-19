@@ -25,8 +25,8 @@ delete(where?: Where<Target>, options?: Options): Promise<Count>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  where | [Where](./filter.where.md)<!-- -->&lt;Target&gt; | Instances within the where scope are deleted |
-|  options | [Options](./repository.options.md) |  |
+|  where | [Where](./filter.where.md)<!-- -->&lt;Target&gt; | <i>(Optional)</i> Instances within the where scope are deleted |
+|  options | [Options](./repository.options.md) | <i>(Optional)</i> |
 
 <b>Returns:</b>
 

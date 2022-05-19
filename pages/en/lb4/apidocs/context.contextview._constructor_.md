@@ -27,7 +27,7 @@ constructor(context: Context, filter: BindingFilter, comparator?: BindingCompara
 |  --- | --- | --- |
 |  context | [Context](./context.context.md) | Context object to watch |
 |  filter | [BindingFilter](./context.bindingfilter.md) | Binding filter to match bindings of interest |
-|  comparator | [BindingComparator](./context.bindingcomparator.md) \| undefined | Comparator to sort the matched bindings |
-|  resolutionOptions | Omit&lt;[ResolutionOptions](./context.resolutionoptions.md)<!-- -->, "session"&gt; \| undefined |  |
+|  comparator | [BindingComparator](./context.bindingcomparator.md) \| undefined | <i>(Optional)</i> Comparator to sort the matched bindings |
+|  resolutionOptions | Omit&lt;[ResolutionOptions](./context.resolutionoptions.md)<!-- -->, "session"&gt; \| undefined | <i>(Optional)</i> |
 
 

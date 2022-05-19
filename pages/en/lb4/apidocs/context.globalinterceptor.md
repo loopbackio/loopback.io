@@ -25,7 +25,7 @@ export declare function globalInterceptor(group?: string, ...specs: BindingSpec[
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  group | string | Group for ordering the interceptor |
+|  group | string | <i>(Optional)</i> Group for ordering the interceptor |
 |  specs | [BindingSpec](./context.bindingspec.md)<!-- -->\[\] | Extra binding specs |
 
 <b>Returns:</b>

@@ -24,7 +24,7 @@ component(component: Class<unknown>, name?: string): Binding;
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  component | [Class](./repository.class.md)<!-- -->&lt;unknown&gt; |  |
-|  name | string |  |
+|  name | string | <i>(Optional)</i> |
 
 <b>Returns:</b>
 

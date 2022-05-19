@@ -27,7 +27,7 @@ static generate<T>(namespace?: string): BindingKey<T>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  namespace | string | Namespace for the binding |
+|  namespace | string | <i>(Optional)</i> Namespace for the binding |
 
 <b>Returns:</b>
 

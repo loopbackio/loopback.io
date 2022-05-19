@@ -26,7 +26,7 @@ middleware(middleware: Middleware | Constructor<Provider<Middleware>>, options?:
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  middleware | [Middleware](./express.middleware.md) \| [Constructor](./context.constructor.md)<!-- -->&lt;[Provider](./context.provider.md)<!-- -->&lt;[Middleware](./express.middleware.md)<!-- -->&gt;&gt; | Middleware function or provider class |
-|  options | [MiddlewareBindingOptions](./express.middlewarebindingoptions.md) | Middleware binding options |
+|  options | [MiddlewareBindingOptions](./express.middlewarebindingoptions.md) | <i>(Optional)</i> Middleware binding options |
 
 <b>Returns:</b>
 

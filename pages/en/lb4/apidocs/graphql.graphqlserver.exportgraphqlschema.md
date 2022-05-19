@@ -23,8 +23,8 @@ exportGraphQLSchema(outFile?: string, log?: (message?: any, ...optionalParams: a
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  outFile | string |  |
-|  log | (message?: any, ...optionalParams: any\[\]) =&gt; void |  |
+|  outFile | string | <i>(Optional)</i> |
+|  log | (message?: any, ...optionalParams: any\[\]) =&gt; void | <i>(Optional)</i> |
 
 <b>Returns:</b>
 

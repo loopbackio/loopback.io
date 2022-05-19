@@ -27,6 +27,6 @@ constructor(context: Context, observersView: ContextView<LifeCycleObserver>, opt
 |  --- | --- | --- |
 |  context | [Context](./context.context.md) |  |
 |  observersView | [ContextView](./context.contextview.md)<!-- -->&lt;[LifeCycleObserver](./core.lifecycleobserver.md)<!-- -->&gt; |  |
-|  options | [LifeCycleObserverOptions](./core.lifecycleobserveroptions.md) |  |
+|  options | [LifeCycleObserverOptions](./core.lifecycleobserveroptions.md) | <i>(Optional)</i> |
 
 

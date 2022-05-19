@@ -23,8 +23,8 @@ count(where?: Where<T>, options?: Options): Promise<Count>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  where | [Where](./filter.where.md)<!-- -->&lt;T&gt; |  |
-|  options | [Options](./repository.options.md) |  |
+|  where | [Where](./filter.where.md)<!-- -->&lt;T&gt; | <i>(Optional)</i> |
+|  options | [Options](./repository.options.md) | <i>(Optional)</i> |
 
 <b>Returns:</b>
 

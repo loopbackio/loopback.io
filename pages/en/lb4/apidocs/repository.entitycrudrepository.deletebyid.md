@@ -26,7 +26,7 @@ deleteById(id: ID, options?: Options): Promise<void>;
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  id | ID | Value for the entity id |
-|  options | [Options](./repository.options.md) | Options for the operations |
+|  options | [Options](./repository.options.md) | <i>(Optional)</i> Options for the operations |
 
 <b>Returns:</b>
 

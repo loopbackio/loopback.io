@@ -28,7 +28,7 @@ static defineMetadata<T>(key: MetadataKey<T, DecoratorType>, value: T, target: O
 |  key | [MetadataKey](./metadata.metadatakey.md)<!-- -->&lt;T, [DecoratorType](./metadata.decoratortype.md)<!-- -->&gt; | Metadata key |
 |  value | T | Metadata value |
 |  target | Object | Target for the metadata |
-|  member | string | Optional property or method name |
+|  member | string | <i>(Optional)</i> Optional property or method name |
 
 <b>Returns:</b>
 

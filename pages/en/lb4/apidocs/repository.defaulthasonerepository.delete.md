@@ -16,14 +16,16 @@ permalink: /doc/en/lb4/apidocs.repository.defaulthasonerepository.delete.html
 <b>Signature:</b>
 
 ```typescript
-delete(options?: Options): Promise<Count>;
+delete(options?: Options & {
+        polymorphicType?: string | string[];
+    }): Promise<Count>;
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  options | [Options](./repository.options.md) |  |
+|  options | [Options](./repository.options.md) &amp; { polymorphicType?: string \| string\[\]; } | <i>(Optional)</i> |
 
 <b>Returns:</b>
 

@@ -27,7 +27,7 @@ set(key: string, value: DataObject<T>, options?: Options): Promise<void>;
 |  --- | --- | --- |
 |  key | string | Key for the entry |
 |  value | [DataObject](./repository.dataobject.md)<!-- -->&lt;T&gt; | Value for the entry |
-|  options | [Options](./repository.options.md) | Options for the operation |
+|  options | [Options](./repository.options.md) | <i>(Optional)</i> Options for the operation |
 
 <b>Returns:</b>
 

@@ -18,20 +18,22 @@ permalink: /doc/en/lb4/apidocs.repository.defaulthasonerepository.html
 ```typescript
 export declare class DefaultHasOneRepository<TargetEntity extends Entity, TargetID, TargetRepository extends EntityCrudRepository<TargetEntity, TargetID>> implements HasOneRepository<TargetEntity> 
 ```
-<b>Implements:</b> [HasOneRepository](./repository.hasonerepository.md)<!-- -->&lt;TargetEntity&gt;
+<b>Implements:</b> [HasOneRepository](./repository.hasonerepository.md)
 
 ## Constructors
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)(getTargetRepository, constraint)](./repository.defaulthasonerepository._constructor_.md) |  | Constructor of DefaultHasOneEntityCrudRepository |
+|  [(constructor)(getTargetRepository, constraint, targetResolver)](./repository.defaulthasonerepository._constructor_.md) |  | Constructor of DefaultHasOneEntityCrudRepository |
 
 ## Properties
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
 |  [constraint](./repository.defaulthasonerepository.constraint.md) |  | [DataObject](./repository.dataobject.md)<!-- -->&lt;TargetEntity&gt; |  |
-|  [getTargetRepository](./repository.defaulthasonerepository.gettargetrepository.md) |  | [Getter](./context.getter.md)<!-- -->&lt;TargetRepository&gt; |  |
+|  [getTargetRepository](./repository.defaulthasonerepository.gettargetrepository.md) |  | [Getter](./context.getter.md)<!-- -->&lt;TargetRepository&gt; \| { \[repoType: string\]: [Getter](./context.getter.md)<!-- -->&lt;TargetRepository&gt;; } |  |
+|  [getTargetRepositoryDict](./repository.defaulthasonerepository.gettargetrepositorydict.md) |  | { \[repoType: string\]: [Getter](./context.getter.md)<!-- -->&lt;TargetRepository&gt;; } |  |
+|  [targetResolver](./repository.defaulthasonerepository.targetresolver.md) |  | [TypeResolver](./repository.typeresolver.md)<!-- -->&lt;[Entity](./repository.entity.md)<!-- -->, typeof [Entity](./repository.entity.md)<!-- -->&gt; |  |
 
 ## Methods
 

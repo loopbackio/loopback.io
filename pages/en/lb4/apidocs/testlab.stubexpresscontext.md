@@ -23,7 +23,7 @@ export declare function stubExpressContext(requestOptions?: ShotRequestOptions):
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  requestOptions | ShotRequestOptions |  |
+|  requestOptions | ShotRequestOptions | <i>(Optional)</i> |
 
 <b>Returns:</b>
 

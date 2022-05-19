@@ -25,7 +25,7 @@ export declare function isBindingTagFilter(filter?: BindingFilter): filter is Bi
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  filter | [BindingFilter](./context.bindingfilter.md) | A BindingFilter function |
+|  filter | [BindingFilter](./context.bindingfilter.md) | <i>(Optional)</i> A BindingFilter function |
 
 <b>Returns:</b>
 

@@ -26,7 +26,7 @@ static value(
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  binding | [Binding](./context.binding.md)<!-- -->&lt;[InvokeMiddleware](./express.invokemiddleware.md)<!-- -->&gt; |  |
-|  defaultOptions | [InvokeMiddlewareOptions](./express.invokemiddlewareoptions.md) |  |
+|  defaultOptions | [InvokeMiddlewareOptions](./express.invokemiddlewareoptions.md) | <i>(Optional)</i> |
 
 <b>Returns:</b>
 

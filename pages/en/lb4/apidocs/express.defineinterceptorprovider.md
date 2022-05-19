@@ -26,8 +26,8 @@ export declare function defineInterceptorProvider<CFG, CTX extends Context = Inv
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  middlewareFactory | [ExpressMiddlewareFactory](./express.expressmiddlewarefactory.md)<!-- -->&lt;CFG&gt; | Express middleware factory function |
-|  defaultMiddlewareConfig | CFG | Default middleware config |
-|  options | [MiddlewareCreationOptions](./express.middlewarecreationoptions.md) |  |
+|  defaultMiddlewareConfig | CFG | <i>(Optional)</i> Default middleware config |
+|  options | [MiddlewareCreationOptions](./express.middlewarecreationoptions.md) | <i>(Optional)</i> |
 
 <b>Returns:</b>
 

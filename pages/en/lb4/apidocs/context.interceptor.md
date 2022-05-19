@@ -20,6 +20,6 @@ Interceptor function to intercept method invocations
 ```typescript
 export interface Interceptor extends GenericInterceptor<InvocationContext> 
 ```
-<b>Extends:</b> [GenericInterceptor](./context.genericinterceptor.md)<!-- -->&lt;[InvocationContext](./context.invocationcontext.md)<!-- -->&gt;
+<b>Extends:</b> [GenericInterceptor](./context.genericinterceptor.md)<!-- -->&lt;[InvocationContext](./context.invocationcontext.md)
 
 

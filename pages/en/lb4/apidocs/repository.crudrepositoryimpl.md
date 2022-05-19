@@ -20,7 +20,7 @@ Repository implementation
 ```typescript
 export declare class CrudRepositoryImpl<T extends Entity, ID> implements EntityCrudRepository<T, ID> 
 ```
-<b>Implements:</b> [EntityCrudRepository](./repository.entitycrudrepository.md)<!-- -->&lt;T, ID&gt;
+<b>Implements:</b> [EntityCrudRepository](./repository.entitycrudrepository.md)
 
 ## Example
 

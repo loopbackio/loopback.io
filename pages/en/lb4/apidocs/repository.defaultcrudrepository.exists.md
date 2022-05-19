@@ -24,7 +24,7 @@ exists(id: ID, options?: Options): Promise<boolean>;
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  id | ID |  |
-|  options | [Options](./repository.options.md) |  |
+|  options | [Options](./repository.options.md) | <i>(Optional)</i> |
 
 <b>Returns:</b>
 

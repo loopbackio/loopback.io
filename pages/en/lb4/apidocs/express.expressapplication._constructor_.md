@@ -25,6 +25,6 @@ constructor(config?: ApplicationConfig | undefined);
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  config | [ApplicationConfig](./core.applicationconfig.md) \| undefined |  |
+|  config | [ApplicationConfig](./core.applicationconfig.md) \| undefined | <i>(Optional)</i> |
 
 

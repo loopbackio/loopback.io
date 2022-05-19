@@ -25,7 +25,7 @@ deleteAll(options?: Options): Promise<void>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  options | [Options](./repository.options.md) | Options for the operation |
+|  options | [Options](./repository.options.md) | <i>(Optional)</i> Options for the operation |
 
 <b>Returns:</b>
 

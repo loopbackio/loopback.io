@@ -26,6 +26,7 @@ export interface BelongsToDefinition extends RelationDefinitionBase
 |  --- | --- | --- |
 |  [keyFrom?](./repository.belongstodefinition.keyfrom.md) | string | <i>(Optional)</i> |
 |  [keyTo?](./repository.belongstodefinition.keyto.md) | string | <i>(Optional)</i> |
+|  [polymorphic?](./repository.belongstodefinition.polymorphic.md) | boolean \| { discriminator: string; } | <i>(Optional)</i> The polymorphism of the target model. The discriminator is a key of source model. If the target model is not polymorphic, then the value should be left undefined or false; If the key on source model indicating the concrete class of the target instance is default i.e. camelCase(classNameOf(throughModelInstance)) + "Id" Then the discriminator field can be undefined |
 |  [targetsMany](./repository.belongstodefinition.targetsmany.md) | false |  |
 |  [type](./repository.belongstodefinition.type.md) | [RelationType.belongsTo](./repository.relationtype.md) |  |
 

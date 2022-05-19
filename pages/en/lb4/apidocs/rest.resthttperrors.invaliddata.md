@@ -25,7 +25,7 @@ function invalidData<T, Props extends object = {}>(data: T, name: string, extraP
 |  --- | --- | --- |
 |  data | T |  |
 |  name | string |  |
-|  extraProperties | Props |  |
+|  extraProperties | Props | <i>(Optional)</i> |
 
 <b>Returns:</b>
 

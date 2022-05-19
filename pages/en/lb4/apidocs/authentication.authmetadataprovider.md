@@ -20,7 +20,7 @@ Provides authentication metadata of a controller method
 ```typescript
 export declare class AuthMetadataProvider implements Provider<AuthenticationMetadata[] | undefined> 
 ```
-<b>Implements:</b> [Provider](./context.provider.md)<!-- -->&lt;[AuthenticationMetadata](./authentication.authenticationmetadata.md)<!-- -->\[\] \| undefined&gt;
+<b>Implements:</b> [Provider](./context.provider.md)<!-- -->&lt;[AuthenticationMetadata](./authentication.authenticationmetadata.md)
 
 ## Example
 

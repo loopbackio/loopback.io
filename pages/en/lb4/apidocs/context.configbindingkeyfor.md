@@ -26,7 +26,7 @@ export declare function configBindingKeyFor<ConfigValueType = unknown>(key: Bind
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  key | [BindingAddress](./context.bindingaddress.md) | Binding key for the target binding |
-|  propertyPath | string | Property path for the configuration |
+|  propertyPath | string | <i>(Optional)</i> Property path for the configuration |
 
 <b>Returns:</b>
 

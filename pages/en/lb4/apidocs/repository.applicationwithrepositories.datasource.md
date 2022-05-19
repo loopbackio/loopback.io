@@ -24,7 +24,7 @@ dataSource<D extends juggler.DataSource>(dataSource: Class<D> | D, name?: string
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  dataSource | [Class](./repository.class.md)<!-- -->&lt;D&gt; \| D |  |
-|  name | string |  |
+|  name | string | <i>(Optional)</i> |
 
 <b>Returns:</b>
 

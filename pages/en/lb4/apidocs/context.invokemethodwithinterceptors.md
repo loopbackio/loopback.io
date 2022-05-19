@@ -29,7 +29,7 @@ export declare function invokeMethodWithInterceptors(context: Context, target: o
 |  target | object | Target class (for static methods) or object (for instance methods) |
 |  methodName | string | Method name |
 |  args | [InvocationArgs](./context.invocationargs.md) | An array of argument values |
-|  options | [InvocationOptions](./context.invocationoptions.md) | Options for the invocation |
+|  options | [InvocationOptions](./context.invocationoptions.md) | <i>(Optional)</i> Options for the invocation |
 
 <b>Returns:</b>
 

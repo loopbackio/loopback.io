@@ -74,6 +74,7 @@ permalink: /doc/en/lb4/changelog.index.html
 - [@loopback/example-metrics-prometheus](changelogs/examples/metrics-prometheus/CHANGELOG.md)
 - [@loopback/example-multi-tenancy](changelogs/examples/multi-tenancy/CHANGELOG.md)
 - [@loopback/example-passport-login](changelogs/examples/passport-login/CHANGELOG.md)
+- [@loopback/example-references-many](changelogs/examples/references-many/CHANGELOG.md)
 - [@loopback/example-rest-crud](changelogs/examples/rest-crud/CHANGELOG.md)
 - [@loopback/example-rpc-server](changelogs/examples/rpc-server/CHANGELOG.md)
 - [@loopback/example-soap-calculator](changelogs/examples/soap-calculator/CHANGELOG.md)

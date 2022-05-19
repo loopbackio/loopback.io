@@ -27,8 +27,8 @@ export declare function registerExpressMiddlewareInterceptor<CFG>(ctx: Context, 
 |  --- | --- | --- |
 |  ctx | [Context](./context.context.md) | Context object |
 |  middlewareFactory | [ExpressMiddlewareFactory](./express.expressmiddlewarefactory.md)<!-- -->&lt;CFG&gt; | Express middleware factory function |
-|  middlewareConfig | CFG | Express middleware config |
-|  options | [MiddlewareInterceptorBindingOptions](./express.middlewareinterceptorbindingoptions.md) | Options for registration |
+|  middlewareConfig | CFG | <i>(Optional)</i> Express middleware config |
+|  options | [MiddlewareInterceptorBindingOptions](./express.middlewareinterceptorbindingoptions.md) | <i>(Optional)</i> Options for registration |
 
 <b>Returns:</b>
 

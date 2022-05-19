@@ -29,7 +29,7 @@ export declare function renderGraph(graph: string, options?: {
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  graph | string | A graph in dot format |
-|  options | { engine?: string; format?: string; } | Options for the rendering |
+|  options | { engine?: string; format?: string; } | <i>(Optional)</i> Options for the rendering |
 
 <b>Returns:</b>
 

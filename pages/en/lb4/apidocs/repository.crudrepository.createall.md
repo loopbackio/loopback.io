@@ -26,7 +26,7 @@ createAll(dataObjects: DataObject<T>[], options?: Options): Promise<T[]>;
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  dataObjects | [DataObject](./repository.dataobject.md)<!-- -->&lt;T&gt;\[\] | An array of data to be created |
-|  options | [Options](./repository.options.md) | Options for the operations |
+|  options | [Options](./repository.options.md) | <i>(Optional)</i> Options for the operations |
 
 <b>Returns:</b>
 

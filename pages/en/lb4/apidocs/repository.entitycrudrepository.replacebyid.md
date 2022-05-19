@@ -27,7 +27,7 @@ replaceById(id: ID, data: DataObject<T>, options?: Options): Promise<void>;
 |  --- | --- | --- |
 |  id | ID | Value for the entity id |
 |  data | [DataObject](./repository.dataobject.md)<!-- -->&lt;T&gt; | Data attributes to be replaced |
-|  options | [Options](./repository.options.md) | Options for the operations |
+|  options | [Options](./repository.options.md) | <i>(Optional)</i> Options for the operations |
 
 <b>Returns:</b>
 

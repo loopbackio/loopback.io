@@ -26,7 +26,7 @@ export declare function getPooledValue<T>(poolingService: PoolingService<T> | Po
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  poolingService | [PoolingService](./pooling.poolingservice.md)<!-- -->&lt;T&gt; \| Pool&lt;T&gt; | Pooling service or pool |
-|  requestCtx | [Context](./context.context.md) | Request context |
+|  requestCtx | [Context](./context.context.md) | <i>(Optional)</i> Request context |
 
 <b>Returns:</b>
 

@@ -25,8 +25,8 @@ protected mergeWithInherited(inheritedMetadata: MetadataMap<T>, target: Object, 
 |  --- | --- | --- |
 |  inheritedMetadata | [MetadataMap](./metadata.metadatamap.md)<!-- -->&lt;T&gt; |  |
 |  target | Object |  |
-|  propertyName | string |  |
-|  descriptorOrIndex | TypedPropertyDescriptor&lt;any&gt; \| number |  |
+|  propertyName | string | <i>(Optional)</i> |
+|  descriptorOrIndex | TypedPropertyDescriptor&lt;any&gt; \| number | <i>(Optional)</i> |
 
 <b>Returns:</b>
 

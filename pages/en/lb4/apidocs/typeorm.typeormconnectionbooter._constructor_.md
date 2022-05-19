@@ -27,6 +27,6 @@ constructor(app: ApplicationUsingTypeOrm, projectRoot: string, entityConfig?: Ar
 |  --- | --- | --- |
 |  app | [ApplicationUsingTypeOrm](./typeorm.applicationusingtypeorm.md) |  |
 |  projectRoot | string |  |
-|  entityConfig | [ArtifactOptions](./boot.artifactoptions.md) |  |
+|  entityConfig | [ArtifactOptions](./boot.artifactoptions.md) | <i>(Optional)</i> |
 
 

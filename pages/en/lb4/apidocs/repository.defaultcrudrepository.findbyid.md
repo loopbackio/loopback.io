@@ -24,8 +24,8 @@ findById(id: ID, filter?: FilterExcludingWhere<T>, options?: Options): Promise<T
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  id | ID |  |
-|  filter | [FilterExcludingWhere](./filter.filterexcludingwhere.md)<!-- -->&lt;T&gt; |  |
-|  options | [Options](./repository.options.md) |  |
+|  filter | [FilterExcludingWhere](./filter.filterexcludingwhere.md)<!-- -->&lt;T&gt; | <i>(Optional)</i> |
+|  options | [Options](./repository.options.md) | <i>(Optional)</i> |
 
 <b>Returns:</b>
 

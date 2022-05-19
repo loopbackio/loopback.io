@@ -24,7 +24,7 @@ repository<R extends Repository<any>>(repo: Class<R>, name?: string): Binding<R>
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  repo | [Class](./repository.class.md)<!-- -->&lt;R&gt; |  |
-|  name | string |  |
+|  name | string | <i>(Optional)</i> |
 
 <b>Returns:</b>
 

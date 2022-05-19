@@ -28,7 +28,7 @@ export declare function getFilterSchemaFor(modelCtor: typeof Model, options?: Fi
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  modelCtor | typeof [Model](./repository.model.md) | The model constructor to build the filter schema for. |
-|  options | [FilterSchemaOptions](./repository-json-schema.filterschemaoptions.md) | Options to build the filter schema. |
+|  options | [FilterSchemaOptions](./repository-json-schema.filterschemaoptions.md) | <i>(Optional)</i> Options to build the filter schema. |
 
 <b>Returns:</b>
 

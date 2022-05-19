@@ -26,7 +26,7 @@ delete(key: string, options?: Options): Promise<void>;
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  key | string | Key for the entry |
-|  options | [Options](./repository.options.md) | Options for the operation |
+|  options | [Options](./repository.options.md) | <i>(Optional)</i> Options for the operation |
 
 <b>Returns:</b>
 

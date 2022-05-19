@@ -22,7 +22,7 @@ It declares an extension point to which all authentication strategy implementati
 ```typescript
 export declare class AuthenticationStrategyProvider implements Provider<AuthenticationStrategy[] | undefined> 
 ```
-<b>Implements:</b> [Provider](./context.provider.md)<!-- -->&lt;[AuthenticationStrategy](./authentication.authenticationstrategy.md)<!-- -->\[\] \| undefined&gt;
+<b>Implements:</b> [Provider](./context.provider.md)<!-- -->&lt;[AuthenticationStrategy](./authentication.authenticationstrategy.md)
 
 ## Example
 

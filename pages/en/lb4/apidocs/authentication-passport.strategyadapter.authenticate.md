@@ -26,7 +26,7 @@ authenticate(request: Request, options?: AuthenticateOptions): Promise<UserProfi
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  request | Request | The incoming request. |
-|  options | AuthenticateOptions | Options passed through to strategy.authenticate. |
+|  options | AuthenticateOptions | <i>(Optional)</i> Options passed through to strategy.authenticate. |
 
 <b>Returns:</b>
 

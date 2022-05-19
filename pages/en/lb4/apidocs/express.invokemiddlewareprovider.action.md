@@ -24,7 +24,7 @@ static action(middlewareCtx: MiddlewareContext, optionsOrHandlers?: InvokeMiddle
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  middlewareCtx | [MiddlewareContext](./express.middlewarecontext.md) |  |
-|  optionsOrHandlers | [InvokeMiddlewareOptions](./express.invokemiddlewareoptions.md) \| [ExpressRequestHandler](./express.expressrequesthandler.md)<!-- -->\[\] |  |
+|  optionsOrHandlers | [InvokeMiddlewareOptions](./express.invokemiddlewareoptions.md) \| [ExpressRequestHandler](./express.expressrequesthandler.md)<!-- -->\[\] | <i>(Optional)</i> |
 
 <b>Returns:</b>
 

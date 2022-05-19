@@ -16,14 +16,16 @@ permalink: /doc/en/lb4/apidocs.repository.defaultbelongstorepository.get.html
 <b>Signature:</b>
 
 ```typescript
-get(options?: Options): Promise<TargetEntity>;
+get(options?: Options & {
+        polymorphicType?: string | string[];
+    }): Promise<TargetEntity>;
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  options | [Options](./repository.options.md) |  |
+|  options | [Options](./repository.options.md) &amp; { polymorphicType?: string \| string\[\]; } | <i>(Optional)</i> |
 
 <b>Returns:</b>
 

@@ -26,7 +26,7 @@ export declare function httpGetAsync(urlString: string, agent?: http.Agent): Pro
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  urlString | string |  |
-|  agent | http.Agent |  |
+|  agent | http.Agent | <i>(Optional)</i> |
 
 <b>Returns:</b>
 

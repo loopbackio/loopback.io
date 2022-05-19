@@ -30,8 +30,8 @@ export declare function resolveInjectedArguments(target: object, method: string,
 |  target | object | The class for constructor injection or prototype for method injection |
 |  method | string | The method name. If set to '', the constructor will be used. |
 |  ctx | [Context](./context.context.md) | The context containing values for <code>@inject</code> resolution |
-|  session | [ResolutionSession](./context.resolutionsession.md) | Optional session for binding and dependency resolution |
-|  nonInjectedArgs | any\[\] | Optional array of args for non-injected parameters |
+|  session | [ResolutionSession](./context.resolutionsession.md) | <i>(Optional)</i> Optional session for binding and dependency resolution |
+|  nonInjectedArgs | any\[\] | <i>(Optional)</i> Optional array of args for non-injected parameters |
 
 <b>Returns:</b>
 

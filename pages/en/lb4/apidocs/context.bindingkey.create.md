@@ -26,7 +26,7 @@ static create<V>(key: string, propertyPath?: string): BindingKey<V>;
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  key | string | The binding key. When propertyPath is not provided, the key is allowed to contain propertyPath as encoded via <code>BindingKey#toString()</code> |
-|  propertyPath | string | Optional path to a deep property of the bound value. |
+|  propertyPath | string | <i>(Optional)</i> Optional path to a deep property of the bound value. |
 
 <b>Returns:</b>
 

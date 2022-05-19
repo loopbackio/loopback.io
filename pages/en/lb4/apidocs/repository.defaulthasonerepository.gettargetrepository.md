@@ -16,6 +16,8 @@ permalink: /doc/en/lb4/apidocs.repository.defaulthasonerepository.gettargetrepos
 <b>Signature:</b>
 
 ```typescript
-getTargetRepository: Getter<TargetRepository>;
+getTargetRepository: Getter<TargetRepository> | {
+        [repoType: string]: Getter<TargetRepository>;
+    };
 ```
 

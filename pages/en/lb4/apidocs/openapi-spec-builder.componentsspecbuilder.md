@@ -20,7 +20,7 @@ A builder for creating ComponentsObject specifications.
 ```typescript
 export declare class ComponentsSpecBuilder extends BuilderBase<ComponentsObject> 
 ```
-<b>Extends:</b> [BuilderBase](./openapi-spec-builder.builderbase.md)<!-- -->&lt;ComponentsObject&gt;
+<b>Extends:</b> [BuilderBase](./openapi-spec-builder.builderbase.md)<!-- -->&lt;ComponentsObject
 
 ## Constructors
 

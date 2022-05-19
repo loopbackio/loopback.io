@@ -27,7 +27,7 @@ execute(command: Command, parameters: NamedParameters | PositionalParameters, op
 |  --- | --- | --- |
 |  command | [Command](./repository.command.md) | The query string or command object |
 |  parameters | [NamedParameters](./repository.namedparameters.md) \| [PositionalParameters](./repository.positionalparameters.md) | The object with name/value pairs or an array of parameter values |
-|  options | [Options](./repository.options.md) | Options |
+|  options | [Options](./repository.options.md) | <i>(Optional)</i> Options |
 
 <b>Returns:</b>
 

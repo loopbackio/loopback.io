@@ -26,7 +26,7 @@ controller<T>(controllerCtor: ControllerClass<T>, nameOrOptions?: string | Bindi
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  controllerCtor | [ControllerClass](./core.controllerclass.md)<!-- -->&lt;T&gt; | The controller class (constructor function). |
-|  nameOrOptions | string \| [BindingFromClassOptions](./context.bindingfromclassoptions.md) |  |
+|  nameOrOptions | string \| [BindingFromClassOptions](./context.bindingfromclassoptions.md) | <i>(Optional)</i> |
 
 <b>Returns:</b>
 

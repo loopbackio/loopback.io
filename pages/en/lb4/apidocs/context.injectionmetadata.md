@@ -20,7 +20,7 @@ An object to provide metadata for `@inject`
 ```typescript
 export interface InjectionMetadata extends Omit<ResolutionOptions, 'session'> 
 ```
-<b>Extends:</b> Omit&lt;[ResolutionOptions](./context.resolutionoptions.md)<!-- -->, 'session'&gt;
+<b>Extends:</b> Omit&lt;[ResolutionOptions](./context.resolutionoptions.md)
 
 ## Properties
 

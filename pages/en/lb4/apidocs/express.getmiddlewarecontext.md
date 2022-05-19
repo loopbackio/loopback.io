@@ -25,7 +25,7 @@ export declare function getMiddlewareContext<T extends MiddlewareContext = Middl
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  request | Request | Express request object |
+|  request | Request | <i>(Optional)</i> Express request object |
 
 <b>Returns:</b>
 

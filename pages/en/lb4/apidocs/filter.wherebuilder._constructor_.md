@@ -25,6 +25,6 @@ constructor(w?: Where<MT>);
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  w | [Where](./filter.where.md)<!-- -->&lt;MT&gt; |  |
+|  w | [Where](./filter.where.md)<!-- -->&lt;MT&gt; | <i>(Optional)</i> |
 
 

@@ -29,6 +29,6 @@ constructor(parent: Context, target: object, methodName: string, args: Invocatio
 |  target | object | Target class (for static methods) or prototype/object (for instance methods) |
 |  methodName | string | Method name |
 |  args | [InvocationArgs](./context.invocationargs.md) | An array of arguments |
-|  source | [InvocationSource](./context.invocationsource.md)<!-- -->&lt;unknown&gt; \| undefined |  |
+|  source | [InvocationSource](./context.invocationsource.md)<!-- -->&lt;unknown&gt; \| undefined | <i>(Optional)</i> |
 
 

@@ -28,7 +28,7 @@ export declare function buildModelDefinition(target: Function & {
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  target | Function &amp; { definition?: [ModelDefinition](./repository.modeldefinition.md) \| undefined; } | Target model class |
-|  def | [ModelDefinitionSyntax](./repository.modeldefinitionsyntax.md) | Model definition spec |
+|  def | [ModelDefinitionSyntax](./repository.modeldefinitionsyntax.md) | <i>(Optional)</i> Model definition spec |
 
 <b>Returns:</b>
 

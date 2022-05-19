@@ -20,7 +20,9 @@ Notice: scope field for inclusion is not supported yet
 <b>Signature:</b>
 
 ```typescript
-export declare function createBelongsToInclusionResolver<Target extends Entity, TargetID, TargetRelations extends object>(meta: BelongsToDefinition, getTargetRepo: Getter<EntityCrudRepository<Target, TargetID, TargetRelations>>): InclusionResolver<Entity, Target>;
+export declare function createBelongsToInclusionResolver<Target extends Entity, TargetID, TargetRelations extends object>(meta: BelongsToDefinition, getTargetRepoDict: {
+    [repoType: string]: Getter<EntityCrudRepository<Target, TargetID, TargetRelations>>;
+}): InclusionResolver<Entity, Target>;
 ```
 
 ## Parameters
@@ -28,7 +30,7 @@ export declare function createBelongsToInclusionResolver<Target extends Entity, 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  meta | [BelongsToDefinition](./repository.belongstodefinition.md) | resolved BelongsToMetadata |
-|  getTargetRepo | [Getter](./context.getter.md)<!-- -->&lt;[EntityCrudRepository](./repository.entitycrudrepository.md)<!-- -->&lt;Target, TargetID, TargetRelations&gt;&gt; | target repository i.e where related instances are |
+|  getTargetRepoDict | { \[repoType: string\]: [Getter](./context.getter.md)<!-- -->&lt;[EntityCrudRepository](./repository.entitycrudrepository.md)<!-- -->&lt;Target, TargetID, TargetRelations&gt;&gt;; } | dictionary of target model type - target repository i.e where related instances for different types are |
 
 <b>Returns:</b>
 

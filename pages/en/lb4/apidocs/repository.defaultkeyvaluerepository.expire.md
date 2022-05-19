@@ -25,7 +25,7 @@ expire(key: string, ttl: number, options?: Options): Promise<void>;
 |  --- | --- | --- |
 |  key | string |  |
 |  ttl | number |  |
-|  options | [Options](./repository.options.md) |  |
+|  options | [Options](./repository.options.md) | <i>(Optional)</i> |
 
 <b>Returns:</b>
 

@@ -23,7 +23,9 @@ permalink: /doc/en/lb4/apidocs.repository.defaultcrudrepository._createbelongsto
 <b>Signature:</b>
 
 ```typescript
-protected _createBelongsToAccessorFor<Target extends Entity, TargetId>(relationName: string, targetRepoGetter: Getter<EntityCrudRepository<Target, TargetId>>): BelongsToAccessor<Target, ID>;
+protected _createBelongsToAccessorFor<Target extends Entity, TargetId>(relationName: string, targetRepositoryGetter: Getter<EntityCrudRepository<Target, TargetId>> | {
+        [repoType: string]: Getter<EntityCrudRepository<Target, TargetId>>;
+    }): BelongsToAccessor<Target, ID>;
 ```
 
 ## Parameters
@@ -31,7 +33,7 @@ protected _createBelongsToAccessorFor<Target extends Entity, TargetId>(relationN
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  relationName | string | Name of the relation defined on the source model |
-|  targetRepoGetter | [Getter](./context.getter.md)<!-- -->&lt;[EntityCrudRepository](./repository.entitycrudrepository.md)<!-- -->&lt;Target, TargetId&gt;&gt; |  |
+|  targetRepositoryGetter | [Getter](./context.getter.md)<!-- -->&lt;[EntityCrudRepository](./repository.entitycrudrepository.md)<!-- -->&lt;Target, TargetId&gt;&gt; \| { \[repoType: string\]: [Getter](./context.getter.md)<!-- -->&lt;[EntityCrudRepository](./repository.entitycrudrepository.md)<!-- -->&lt;Target, TargetId&gt;&gt;; } |  |
 
 <b>Returns:</b>
 

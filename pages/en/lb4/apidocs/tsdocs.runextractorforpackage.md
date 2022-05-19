@@ -23,8 +23,8 @@ export declare function runExtractorForPackage(pkgDir?: string, options?: Extrac
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  pkgDir | string |  |
-|  options | [ExtractorOptions](./tsdocs.extractoroptions.md) |  |
+|  pkgDir | string | <i>(Optional)</i> |
+|  options | [ExtractorOptions](./tsdocs.extractoroptions.md) | <i>(Optional)</i> |
 
 <b>Returns:</b>
 

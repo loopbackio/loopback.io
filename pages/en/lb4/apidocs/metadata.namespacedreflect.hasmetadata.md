@@ -27,7 +27,7 @@ hasMetadata(metadataKey: string, target: Object, propertyKey?: string): boolean;
 |  --- | --- | --- |
 |  metadataKey | string | Key |
 |  target | Object | Target |
-|  propertyKey | string | Optional property key |
+|  propertyKey | string | <i>(Optional)</i> Optional property key |
 
 <b>Returns:</b>
 

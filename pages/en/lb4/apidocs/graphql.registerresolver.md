@@ -27,7 +27,7 @@ export declare function registerResolver(ctx: Context, resolverClass: Constructo
 |  --- | --- | --- |
 |  ctx | [Context](./context.context.md) | Context object |
 |  resolverClass | [Constructor](./context.constructor.md)<!-- -->&lt;object&gt; | Resolver class |
-|  nameOrOptions | string \| [BindingFromClassOptions](./context.bindingfromclassoptions.md) | Resolver name or binding options |
+|  nameOrOptions | string \| [BindingFromClassOptions](./context.bindingfromclassoptions.md) | <i>(Optional)</i> Resolver name or binding options |
 
 <b>Returns:</b>
 

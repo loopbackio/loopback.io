@@ -24,7 +24,7 @@ function repository(entity: Function, connectionName?: string): (target: Object,
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  entity | Function |  |
-|  connectionName | string |  |
+|  connectionName | string | <i>(Optional)</i> |
 
 <b>Returns:</b>
 

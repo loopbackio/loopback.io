@@ -26,7 +26,7 @@ coerce(value: any, options?: Options): T | null | undefined;
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  value | any | The value to be coerced |
-|  options | [Options](./repository.options.md) | Options for coercion |
+|  options | [Options](./repository.options.md) | <i>(Optional)</i> Options for coercion |
 
 <b>Returns:</b>
 

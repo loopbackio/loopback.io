@@ -26,7 +26,7 @@ protected ensurePersistable<R extends T>(entity: R | DataObject<R>, options?: {}
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  entity | R \| [DataObject](./repository.dataobject.md)<!-- -->&lt;R&gt; | The entity passed from CRUD operations' caller. |
-|  options | {} |  |
+|  options | {} | <i>(Optional)</i> |
 
 <b>Returns:</b>
 

@@ -28,7 +28,7 @@ defineMetadata(metadataKey: string, metadataValue: any, target: Object, property
 |  metadataKey | string |  |
 |  metadataValue | any |  |
 |  target | Object |  |
-|  propertyKey | string |  |
+|  propertyKey | string | <i>(Optional)</i> |
 
 <b>Returns:</b>
 

@@ -24,7 +24,7 @@ serialize(value: Buffer | null | undefined, options?: Options): string | null | 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  value | Buffer \| null \| undefined |  |
-|  options | [Options](./repository.options.md) |  |
+|  options | [Options](./repository.options.md) | <i>(Optional)</i> |
 
 <b>Returns:</b>
 

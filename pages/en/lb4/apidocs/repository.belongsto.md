@@ -26,8 +26,8 @@ export declare function belongsTo<T extends Entity>(targetResolver: EntityResolv
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  targetResolver | [EntityResolver](./repository.entityresolver.md)<!-- -->&lt;T&gt; | A resolver function that returns the target model for a belongsTo relation |
-|  definition | Partial&lt;[BelongsToDefinition](./repository.belongstodefinition.md)<!-- -->&gt; | Optional metadata for setting up a belongsTo relation |
-|  propertyDefinition | Partial&lt;[PropertyDefinition](./repository.propertydefinition.md)<!-- -->&gt; | Optional metadata for setting up the property |
+|  definition | Partial&lt;[BelongsToDefinition](./repository.belongstodefinition.md)<!-- -->&gt; | <i>(Optional)</i> Optional metadata for setting up a belongsTo relation |
+|  propertyDefinition | Partial&lt;[PropertyDefinition](./repository.propertydefinition.md)<!-- -->&gt; | <i>(Optional)</i> Optional metadata for setting up the property |
 
 <b>Returns:</b>
 

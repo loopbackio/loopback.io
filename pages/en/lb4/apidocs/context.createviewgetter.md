@@ -27,7 +27,7 @@ export declare function createViewGetter<T = unknown>(ctx: Context, bindingFilte
 |  --- | --- | --- |
 |  ctx | [Context](./context.context.md) | Context object |
 |  bindingFilter | [BindingFilter](./context.bindingfilter.md) | A function to match bindings |
-|  session | [ResolutionSession](./context.resolutionsession.md) | Resolution session |
+|  session | [ResolutionSession](./context.resolutionsession.md) | <i>(Optional)</i> Resolution session |
 
 <b>Returns:</b>
 

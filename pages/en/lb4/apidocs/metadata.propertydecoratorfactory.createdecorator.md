@@ -27,7 +27,7 @@ static createDecorator<S>(key: MetadataKey<S, PropertyDecorator>, spec: S, optio
 |  --- | --- | --- |
 |  key | [MetadataKey](./metadata.metadatakey.md)<!-- -->&lt;S, PropertyDecorator&gt; | Metadata key |
 |  spec | S | Metadata object from the decorator function |
-|  options | [DecoratorOptions](./metadata.decoratoroptions.md) | Options for the decorator |
+|  options | [DecoratorOptions](./metadata.decoratoroptions.md) | <i>(Optional)</i> Options for the decorator |
 
 <b>Returns:</b>
 

@@ -20,7 +20,7 @@ Model type
 ```typescript
 export declare class ModelType<T extends Model> extends ObjectType<T> 
 ```
-<b>Extends:</b> [ObjectType](./repository.objecttype.md)<!-- -->&lt;T&gt;
+<b>Extends:</b> [ObjectType](./repository.objecttype.md)
 
 ## Constructors
 

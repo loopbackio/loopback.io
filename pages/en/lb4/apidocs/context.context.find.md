@@ -25,7 +25,7 @@ find<ValueType = BoundValue>(pattern?: string | RegExp | BindingFilter): Readonl
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  pattern | string \| RegExp \| [BindingFilter](./context.bindingfilter.md) | A filter function, a regexp or a wildcard pattern with optional <code>*</code> and <code>?</code>. Find returns such bindings where the key matches the provided pattern.<!-- -->For a wildcard: - <code>*</code> matches zero or more characters except <code>.</code> and <code>:</code> - <code>?</code> matches exactly one character except <code>.</code> and <code>:</code>For a filter function: - return <code>true</code> to include the binding in the results - return <code>false</code> to exclude it. |
+|  pattern | string \| RegExp \| [BindingFilter](./context.bindingfilter.md) | <i>(Optional)</i> A filter function, a regexp or a wildcard pattern with optional <code>*</code> and <code>?</code>. Find returns such bindings where the key matches the provided pattern.<!-- -->For a wildcard: - <code>*</code> matches zero or more characters except <code>.</code> and <code>:</code> - <code>?</code> matches exactly one character except <code>.</code> and <code>:</code>For a filter function: - return <code>true</code> to include the binding in the results - return <code>false</code> to exclude it. |
 
 <b>Returns:</b>
 

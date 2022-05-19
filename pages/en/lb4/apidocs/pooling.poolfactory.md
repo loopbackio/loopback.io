@@ -20,7 +20,7 @@ Factory for the pooling service
 ```typescript
 export interface PoolFactory<T> extends Factory<T> 
 ```
-<b>Extends:</b> Factory&lt;T&gt;
+<b>Extends:</b> Factory
 
 ## Methods
 

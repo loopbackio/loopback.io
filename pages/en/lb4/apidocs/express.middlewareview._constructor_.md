@@ -26,6 +26,6 @@ constructor(ctx: Context, options?: InvokeMiddlewareOptions);
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  ctx | [Context](./context.context.md) |  |
-|  options | [InvokeMiddlewareOptions](./express.invokemiddlewareoptions.md) |  |
+|  options | [InvokeMiddlewareOptions](./express.invokemiddlewareoptions.md) | <i>(Optional)</i> |
 
 

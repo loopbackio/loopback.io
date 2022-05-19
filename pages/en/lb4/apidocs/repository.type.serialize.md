@@ -26,7 +26,7 @@ serialize(value: T | null | undefined, options?: Options): any;
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  value | T \| null \| undefined | The value of this type |
-|  options | [Options](./repository.options.md) | Options for serialization |
+|  options | [Options](./repository.options.md) | <i>(Optional)</i> Options for serialization |
 
 <b>Returns:</b>
 

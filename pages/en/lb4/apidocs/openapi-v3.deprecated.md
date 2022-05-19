@@ -27,7 +27,7 @@ export declare function deprecated(isDeprecated?: boolean): (target: any, method
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  isDeprecated | boolean | whether or not the path should be marked as deprecated. This is useful for marking a class as deprecated, but a method as not deprecated. |
+|  isDeprecated | boolean | <i>(Optional)</i> whether or not the path should be marked as deprecated. This is useful for marking a class as deprecated, but a method as not deprecated. |
 
 <b>Returns:</b>
 

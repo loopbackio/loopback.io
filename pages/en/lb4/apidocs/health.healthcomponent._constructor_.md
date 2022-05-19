@@ -26,6 +26,6 @@ constructor(application: Application, healthConfig?: HealthConfig);
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  application | [Application](./core.application.md) |  |
-|  healthConfig | [HealthConfig](./health.healthconfig.md) |  |
+|  healthConfig | [HealthConfig](./health.healthconfig.md) | <i>(Optional)</i> |
 
 

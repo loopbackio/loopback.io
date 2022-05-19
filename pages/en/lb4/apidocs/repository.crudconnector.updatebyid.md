@@ -28,7 +28,7 @@ updateById?<IdType>(modelClass: Class<Entity>, id: IdType, data: EntityData, opt
 |  modelClass | [Class](./repository.class.md)<!-- -->&lt;[Entity](./repository.entity.md)<!-- -->&gt; | The model class |
 |  id | IdType | The entity id value |
 |  data | [EntityData](./repository.entitydata.md) | The data attributes to be updated |
-|  options | [Options](./repository.options.md) | Options for the operation |
+|  options | [Options](./repository.options.md) | <i>(Optional)</i> Options for the operation |
 
 <b>Returns:</b>
 

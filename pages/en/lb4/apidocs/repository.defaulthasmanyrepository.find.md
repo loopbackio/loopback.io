@@ -23,8 +23,8 @@ find(filter?: Filter<TargetEntity>, options?: Options): Promise<TargetEntity[]>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  filter | [Filter](./filter.filter.md)<!-- -->&lt;TargetEntity&gt; |  |
-|  options | [Options](./repository.options.md) |  |
+|  filter | [Filter](./filter.filter.md)<!-- -->&lt;TargetEntity&gt; | <i>(Optional)</i> |
+|  options | [Options](./repository.options.md) | <i>(Optional)</i> |
 
 <b>Returns:</b>
 

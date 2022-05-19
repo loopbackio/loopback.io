@@ -25,7 +25,7 @@ inspect(options?: ContextInspectOptions): JSONObject;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  options | [ContextInspectOptions](./context.contextinspectoptions.md) | Options for inspect |
+|  options | [ContextInspectOptions](./context.contextinspectoptions.md) | <i>(Optional)</i> Options for inspect |
 
 <b>Returns:</b>
 

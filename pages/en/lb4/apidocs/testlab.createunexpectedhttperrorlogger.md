@@ -25,7 +25,7 @@ export declare function createUnexpectedHttpErrorLogger(expectedStatusCode?: num
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  expectedStatusCode | number | HTTP status code that is expected |
+|  expectedStatusCode | number | <i>(Optional)</i> HTTP status code that is expected |
 
 <b>Returns:</b>
 

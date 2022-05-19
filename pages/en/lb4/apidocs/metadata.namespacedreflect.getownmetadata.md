@@ -27,7 +27,7 @@ getOwnMetadata(metadataKey: string, target: Object, propertyKey?: string): any;
 |  --- | --- | --- |
 |  metadataKey | string |  |
 |  target | Object |  |
-|  propertyKey | string |  |
+|  propertyKey | string | <i>(Optional)</i> |
 
 <b>Returns:</b>
 

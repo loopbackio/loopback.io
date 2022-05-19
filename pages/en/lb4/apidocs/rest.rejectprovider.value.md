@@ -24,7 +24,7 @@ static value(logError: LogError, errorWriterOptions?: ErrorWriterOptions): Rejec
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  logError | [LogError](./rest.logerror.md) |  |
-|  errorWriterOptions | ErrorWriterOptions |  |
+|  errorWriterOptions | ErrorWriterOptions | <i>(Optional)</i> |
 
 <b>Returns:</b>
 

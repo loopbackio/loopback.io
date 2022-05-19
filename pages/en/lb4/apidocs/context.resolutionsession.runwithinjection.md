@@ -27,7 +27,7 @@ static runWithInjection(action: ResolutionAction, injection: Readonly<Injection>
 |  --- | --- | --- |
 |  action | [ResolutionAction](./context.resolutionaction.md) | A function to do some work with the resolution session |
 |  injection | Readonly&lt;[Injection](./context.injection.md)<!-- -->&gt; |  |
-|  session | [ResolutionSession](./context.resolutionsession.md) | The current resolution session |
+|  session | [ResolutionSession](./context.resolutionsession.md) | <i>(Optional)</i> The current resolution session |
 
 <b>Returns:</b>
 

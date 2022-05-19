@@ -29,8 +29,8 @@ export declare function instantiateClass<T>(ctor: Constructor<T>, ctx: Context, 
 |  --- | --- | --- |
 |  ctor | [Constructor](./context.constructor.md)<!-- -->&lt;T&gt; | The class constructor to call. |
 |  ctx | [Context](./context.context.md) | The context containing values for <code>@inject</code> resolution |
-|  session | [ResolutionSession](./context.resolutionsession.md) | Optional session for binding and dependency resolution |
-|  nonInjectedArgs | any\[\] | Optional array of args for non-injected parameters |
+|  session | [ResolutionSession](./context.resolutionsession.md) | <i>(Optional)</i> Optional session for binding and dependency resolution |
+|  nonInjectedArgs | any\[\] | <i>(Optional)</i> Optional array of args for non-injected parameters |
 
 <b>Returns:</b>
 

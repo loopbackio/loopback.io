@@ -28,8 +28,8 @@ export declare function invokeMethod(target: object, method: string, ctx: Contex
 |  target | object | Target of the method, it will be the class for a static method, and instance or class prototype for a prototype method |
 |  method | string | Name of the method |
 |  ctx | [Context](./context.context.md) | Context object |
-|  nonInjectedArgs | [InvocationArgs](./context.invocationargs.md) | Optional array of args for non-injected parameters |
-|  options | [InvocationOptions](./context.invocationoptions.md) | Options for the invocation |
+|  nonInjectedArgs | [InvocationArgs](./context.invocationargs.md) | <i>(Optional)</i> Optional array of args for non-injected parameters |
+|  options | [InvocationOptions](./context.invocationoptions.md) | <i>(Optional)</i> Options for the invocation |
 
 <b>Returns:</b>
 

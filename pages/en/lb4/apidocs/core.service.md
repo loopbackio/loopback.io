@@ -25,8 +25,8 @@ export declare function service(serviceInterface?: ServiceInterface, metadata?: 
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  serviceInterface | [ServiceInterface](./core.serviceinterface.md) | Interface for the service. It can be in one of the following forms:<!-- -->- A class, such as MyService - A string that identifies the interface, such as <code>'MyService'</code> - A symbol that identifies the interface, such as <code>Symbol('MyService')</code>If not provided, the value is inferred from the design:type of the parameter or property |
-|  metadata | [InjectionMetadata](./context.injectionmetadata.md) |  |
+|  serviceInterface | [ServiceInterface](./core.serviceinterface.md) | <i>(Optional)</i> Interface for the service. It can be in one of the following forms:<!-- -->- A class, such as MyService - A string that identifies the interface, such as <code>'MyService'</code> - A symbol that identifies the interface, such as <code>Symbol('MyService')</code>If not provided, the value is inferred from the design:type of the parameter or property |
+|  metadata | [InjectionMetadata](./context.injectionmetadata.md) | <i>(Optional)</i> |
 
 <b>Returns:</b>
 

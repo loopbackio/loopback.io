@@ -28,7 +28,7 @@ getSync<ValueType>(keyWithPath: BindingAddress<ValueType>, options?: ResolutionO
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  keyWithPath | [BindingAddress](./context.bindingaddress.md)<!-- -->&lt;ValueType&gt; | The binding key, optionally suffixed with a path to the (deeply) nested property to retrieve. |
-|  options | [ResolutionOptions](./context.resolutionoptions.md) | Options for resolution. |
+|  options | [ResolutionOptions](./context.resolutionoptions.md) | <i>(Optional)</i> Options for resolution. |
 
 <b>Returns:</b>
 

@@ -17,7 +17,11 @@ permalink: /doc/en/lb4/apidocs.repository.defaulthasmanythroughrepository.find.h
 
 ```typescript
 find(filter?: Filter<TargetEntity>, options?: Options & {
-        throughOptions?: Options;
+        throughOptions?: Options & {
+            discriminator?: string;
+        };
+    } & {
+        polymorphicType?: string | string[];
     }): Promise<TargetEntity[]>;
 ```
 
@@ -25,8 +29,8 @@ find(filter?: Filter<TargetEntity>, options?: Options & {
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  filter | [Filter](./filter.filter.md)<!-- -->&lt;TargetEntity&gt; |  |
-|  options | [Options](./repository.options.md) &amp; { throughOptions?: [Options](./repository.options.md)<!-- -->; } |  |
+|  filter | [Filter](./filter.filter.md)<!-- -->&lt;TargetEntity&gt; | <i>(Optional)</i> |
+|  options | [Options](./repository.options.md) &amp; { throughOptions?: [Options](./repository.options.md) &amp; { discriminator?: string; }; } &amp; { polymorphicType?: string \| string\[\]; } | <i>(Optional)</i> |
 
 <b>Returns:</b>
 

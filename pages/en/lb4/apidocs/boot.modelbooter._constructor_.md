@@ -27,6 +27,6 @@ constructor(app: ApplicationWithRepositories, projectRoot: string, modelConfig?:
 |  --- | --- | --- |
 |  app | [ApplicationWithRepositories](./repository.applicationwithrepositories.md) |  |
 |  projectRoot | string |  |
-|  modelConfig | [ArtifactOptions](./boot.artifactoptions.md) |  |
+|  modelConfig | [ArtifactOptions](./boot.artifactoptions.md) | <i>(Optional)</i> |
 
 

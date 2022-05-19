@@ -29,7 +29,7 @@ static getParameterMetadata<T>(key: MetadataKey<T, ParameterDecorator>, target: 
 |  target | Object | Class for static methods or prototype for instance methods |
 |  methodName | string | Method name. If not present, default to '' to use the constructor |
 |  index | number | Index of the parameter, starting with 0 |
-|  options | [InspectionOptions](./metadata.inspectionoptions.md) | Options for inspection |
+|  options | [InspectionOptions](./metadata.inspectionoptions.md) | <i>(Optional)</i> Options for inspection |
 
 <b>Returns:</b>
 

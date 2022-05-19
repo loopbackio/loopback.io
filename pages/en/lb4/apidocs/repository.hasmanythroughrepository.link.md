@@ -29,7 +29,7 @@ link(targetModelId: TargetID, options?: Options & {
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  targetModelId | TargetID | The target model ID to link |
-|  options | [Options](./repository.options.md) &amp; { throughData?: [DataObject](./repository.dataobject.md)<!-- -->&lt;Through&gt;; throughOptions?: [Options](./repository.options.md)<!-- -->; } |  |
+|  options | [Options](./repository.options.md) &amp; { throughData?: [DataObject](./repository.dataobject.md)<!-- -->&lt;Through&gt;; throughOptions?: [Options](./repository.options.md)<!-- -->; } | <i>(Optional)</i> |
 
 <b>Returns:</b>
 

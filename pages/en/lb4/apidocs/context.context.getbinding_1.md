@@ -28,7 +28,7 @@ getBinding<ValueType>(key: BindingAddress<ValueType>, options?: {
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  key | [BindingAddress](./context.bindingaddress.md)<!-- -->&lt;ValueType&gt; | Binding key |
-|  options | { optional?: boolean; } | Options to control if the binding is optional. If <code>options.optional</code> is set to true, the method will return <code>undefined</code> instead of throwing an error if the binding key is not found. |
+|  options | { optional?: boolean; } | <i>(Optional)</i> Options to control if the binding is optional. If <code>options.optional</code> is set to true, the method will return <code>undefined</code> instead of throwing an error if the binding key is not found. |
 
 <b>Returns:</b>
 

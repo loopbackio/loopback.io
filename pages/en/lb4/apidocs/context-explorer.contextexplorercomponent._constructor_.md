@@ -26,6 +26,6 @@ constructor(application: RestApplication, explorerConfig?: ContextExplorerConfig
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  application | [RestApplication](./rest.restapplication.md) |  |
-|  explorerConfig | [ContextExplorerConfig](./context-explorer.contextexplorerconfig.md) |  |
+|  explorerConfig | [ContextExplorerConfig](./context-explorer.contextexplorerconfig.md) | <i>(Optional)</i> |
 
 

@@ -27,6 +27,6 @@ constructor(_rootContext: Context, _serverConfig: RestServerResolvedConfig, _rou
 |  --- | --- | --- |
 |  \_rootContext | [Context](./context.context.md) |  |
 |  \_serverConfig | [RestServerResolvedConfig](./rest.restserverresolvedconfig.md) |  |
-|  \_routes | [RoutingTable](./rest.routingtable.md) |  |
+|  \_routes | [RoutingTable](./rest.routingtable.md) | <i>(Optional)</i> |
 
 

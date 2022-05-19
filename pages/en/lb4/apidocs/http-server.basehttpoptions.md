@@ -20,7 +20,7 @@ Base options that are common to http and https servers
 ```typescript
 export interface BaseHttpOptions extends ListenOptions, Partial<HttpServerProperties> 
 ```
-<b>Extends:</b> ListenOptions, Partial&lt;[HttpServerProperties](./http-server.httpserverproperties.md)<!-- -->&gt;
+<b>Extends:</b> ListenOptions, Partial&lt;[HttpServerProperties](./http-server.httpserverproperties.md)
 
 ## Properties
 

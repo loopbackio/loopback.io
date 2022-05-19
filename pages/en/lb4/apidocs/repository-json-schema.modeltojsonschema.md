@@ -28,7 +28,7 @@ export declare function modelToJsonSchema<T extends object>(ctor: Function & {
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  ctor | Function &amp; { prototype: T; } | Constructor of class to convert from |
-|  jsonSchemaOptions | [JsonSchemaOptions](./repository-json-schema.jsonschemaoptions.md)<!-- -->&lt;T&gt; |  |
+|  jsonSchemaOptions | [JsonSchemaOptions](./repository-json-schema.jsonschemaoptions.md)<!-- -->&lt;T&gt; | <i>(Optional)</i> |
 
 <b>Returns:</b>
 

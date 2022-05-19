@@ -26,7 +26,7 @@ export declare function createComponentApplicationBooterBinding(componentApp: Ap
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  componentApp | [Application](./core.application.md) &amp; [Bootable](./boot.bootable.md) | The application exposing a component |
-|  filter | [BindingFilter](./context.bindingfilter.md) | Binding filter to selected bindings to be added |
+|  filter | [BindingFilter](./context.bindingfilter.md) | <i>(Optional)</i> Binding filter to selected bindings to be added |
 
 <b>Returns:</b>
 

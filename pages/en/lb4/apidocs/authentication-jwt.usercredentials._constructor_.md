@@ -25,6 +25,6 @@ constructor(data?: Partial<UserCredentials>);
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  data | Partial&lt;[UserCredentials](./authentication-jwt.usercredentials.md)<!-- -->&gt; |  |
+|  data | Partial&lt;[UserCredentials](./authentication-jwt.usercredentials.md)<!-- -->&gt; | <i>(Optional)</i> |
 
 

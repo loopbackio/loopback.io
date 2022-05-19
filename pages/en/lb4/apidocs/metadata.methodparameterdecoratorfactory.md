@@ -20,7 +20,7 @@ Factory for method level parameter decorator.
 ```typescript
 export declare class MethodParameterDecoratorFactory<T> extends DecoratorFactory<T, MetadataMap<T[]>, MethodDecorator> 
 ```
-<b>Extends:</b> [DecoratorFactory](./metadata.decoratorfactory.md)<!-- -->&lt;T, [MetadataMap](./metadata.metadatamap.md)<!-- -->&lt;T\[\]&gt;, MethodDecorator&gt;
+<b>Extends:</b> [DecoratorFactory](./metadata.decoratorfactory.md)<!-- -->&lt;T, [MetadataMap](./metadata.metadatamap.md)<!-- -->&lt;T\[\]&gt;, MethodDecorator
 
 ## Example
 

@@ -25,7 +25,7 @@ hasOwnMetadata(metadataKey: string, target: Object, propertyKey?: string): boole
 |  --- | --- | --- |
 |  metadataKey | string |  |
 |  target | Object |  |
-|  propertyKey | string |  |
+|  propertyKey | string | <i>(Optional)</i> |
 
 <b>Returns:</b>
 

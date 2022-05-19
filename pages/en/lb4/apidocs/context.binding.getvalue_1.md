@@ -26,7 +26,7 @@ getValue(ctx: Context, options?: ResolutionOptions): ValueOrPromise<T | undefine
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  ctx | [Context](./context.context.md) | Context for the resolution |
-|  options | [ResolutionOptions](./context.resolutionoptions.md) | Optional options for binding and dependency resolution |
+|  options | [ResolutionOptions](./context.resolutionoptions.md) | <i>(Optional)</i> Optional options for binding and dependency resolution |
 
 <b>Returns:</b>
 

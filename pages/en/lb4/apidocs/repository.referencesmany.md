@@ -18,18 +18,20 @@ Decorator for referencesMany
 <b>Signature:</b>
 
 ```typescript
-export declare function referencesMany(definition?: Object): PropertyDecorator;
+export declare function referencesMany<T extends Entity>(targetResolver: EntityResolver<T>, definition?: Partial<ReferencesManyDefinition>, propertyDefinition?: Partial<PropertyDefinition>): (decoratedTarget: Entity, decoratedKey: string) => void;
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  definition | Object |  |
+|  targetResolver | [EntityResolver](./repository.entityresolver.md)<!-- -->&lt;T&gt; | A resolver function that returns the target model for a referencesMany relation |
+|  definition | Partial&lt;[ReferencesManyDefinition](./repository.referencesmanydefinition.md)<!-- -->&gt; | <i>(Optional)</i> Optional metadata for setting up a referencesMany relation |
+|  propertyDefinition | Partial&lt;[PropertyDefinition](./repository.propertydefinition.md)<!-- -->&gt; | <i>(Optional)</i> Optional metadata for setting up the property |
 
 <b>Returns:</b>
 
-PropertyDecorator
+(decoratedTarget: [Entity](./repository.entity.md)<!-- -->, decoratedKey: string) =&gt; void
 
 A property decorator
 

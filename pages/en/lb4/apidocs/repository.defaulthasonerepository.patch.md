@@ -16,15 +16,19 @@ permalink: /doc/en/lb4/apidocs.repository.defaulthasonerepository.patch.html
 <b>Signature:</b>
 
 ```typescript
-patch(dataObject: DataObject<TargetEntity>, options?: Options): Promise<Count>;
+patch(dataObject: DataObject<TargetEntity> | {
+        [polymorphicType: string]: DataObject<TargetEntity>;
+    }, options?: Options & {
+        isPolymorphic?: boolean;
+    }): Promise<Count>;
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  dataObject | [DataObject](./repository.dataobject.md)<!-- -->&lt;TargetEntity&gt; |  |
-|  options | [Options](./repository.options.md) |  |
+|  dataObject | [DataObject](./repository.dataobject.md)<!-- -->&lt;TargetEntity&gt; \| { \[polymorphicType: string\]: [DataObject](./repository.dataobject.md)<!-- -->&lt;TargetEntity&gt;; } |  |
+|  options | [Options](./repository.options.md) &amp; { isPolymorphic?: boolean; } | <i>(Optional)</i> |
 
 <b>Returns:</b>
 

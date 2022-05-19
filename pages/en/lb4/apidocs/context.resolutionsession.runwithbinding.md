@@ -27,7 +27,7 @@ static runWithBinding(action: ResolutionAction, binding: Readonly<Binding>, sess
 |  --- | --- | --- |
 |  action | [ResolutionAction](./context.resolutionaction.md) | A function to do some work with the resolution session |
 |  binding | Readonly&lt;[Binding](./context.binding.md)<!-- -->&gt; | The current binding |
-|  session | [ResolutionSession](./context.resolutionsession.md) | The current resolution session |
+|  session | [ResolutionSession](./context.resolutionsession.md) | <i>(Optional)</i> The current resolution session |
 
 <b>Returns:</b>
 

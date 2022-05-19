@@ -18,7 +18,7 @@ permalink: /doc/en/lb4/apidocs.authorization.authorizemethoddecoratorfactory.htm
 ```typescript
 export declare class AuthorizeMethodDecoratorFactory extends MethodDecoratorFactory<AuthorizationMetadata> 
 ```
-<b>Extends:</b> [MethodDecoratorFactory](./metadata.methoddecoratorfactory.md)<!-- -->&lt;[AuthorizationMetadata](./authorization.authorizationmetadata.md)<!-- -->&gt;
+<b>Extends:</b> [MethodDecoratorFactory](./metadata.methoddecoratorfactory.md)<!-- -->&lt;[AuthorizationMetadata](./authorization.authorizationmetadata.md)
 
 ## Methods
 

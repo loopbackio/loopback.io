@@ -18,7 +18,7 @@ permalink: /doc/en/lb4/apidocs.socketio.socketioinvokemethodprovider.html
 ```typescript
 export declare class SocketIoInvokeMethodProvider implements Provider<SocketIoInvokeMethod> 
 ```
-<b>Implements:</b> [Provider](./context.provider.md)<!-- -->&lt;[SocketIoInvokeMethod](./socketio.socketioinvokemethod.md)<!-- -->&gt;
+<b>Implements:</b> [Provider](./context.provider.md)<!-- -->&lt;[SocketIoInvokeMethod](./socketio.socketioinvokemethod.md)
 
 ## Constructors
 

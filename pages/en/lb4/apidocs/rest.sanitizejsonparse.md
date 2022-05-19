@@ -25,8 +25,8 @@ export declare function sanitizeJsonParse(reviver?: (key: any, value: any) => an
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  reviver | (key: any, value: any) =&gt; any | Reviver function |
-|  prohibitedKeys | string\[\] | An array of keys to be rejected |
+|  reviver | (key: any, value: any) =&gt; any | <i>(Optional)</i> Reviver function |
+|  prohibitedKeys | string\[\] | <i>(Optional)</i> An array of keys to be rejected |
 
 <b>Returns:</b>
 

@@ -16,15 +16,17 @@ permalink: /doc/en/lb4/apidocs.repository.defaulthasonerepository.get.html
 <b>Signature:</b>
 
 ```typescript
-get(filter?: Pick<Filter<TargetEntity>, Exclude<keyof Filter<TargetEntity>, 'where'>>, options?: Options): Promise<TargetEntity>;
+get(filter?: Pick<Filter<TargetEntity>, Exclude<keyof Filter<TargetEntity>, 'where'>>, options?: Options & {
+        polymorphicType?: string | string[];
+    }): Promise<TargetEntity>;
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  filter | Pick&lt;[Filter](./filter.filter.md)<!-- -->&lt;TargetEntity&gt;, Exclude&lt;keyof [Filter](./filter.filter.md)<!-- -->&lt;TargetEntity&gt;, 'where'&gt;&gt; |  |
-|  options | [Options](./repository.options.md) |  |
+|  filter | Pick&lt;[Filter](./filter.filter.md)<!-- -->&lt;TargetEntity&gt;, Exclude&lt;keyof [Filter](./filter.filter.md)<!-- -->&lt;TargetEntity&gt;, 'where'&gt;&gt; | <i>(Optional)</i> |
+|  options | [Options](./repository.options.md) &amp; { polymorphicType?: string \| string\[\]; } | <i>(Optional)</i> |
 
 <b>Returns:</b>
 

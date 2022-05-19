@@ -25,7 +25,7 @@ export declare function givenHttpServerConfig<T extends HttpOptions | HttpsOptio
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  customConfig | T | Additional configuration options to apply. |
+|  customConfig | T | <i>(Optional)</i> Additional configuration options to apply. |
 
 <b>Returns:</b>
 

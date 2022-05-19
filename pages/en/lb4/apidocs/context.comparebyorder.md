@@ -27,7 +27,7 @@ export declare function compareByOrder(a: string | symbol | undefined | null, b:
 |  --- | --- | --- |
 |  a | string \| symbol \| undefined \| null | First value |
 |  b | string \| symbol \| undefined \| null | Second value |
-|  order | (string \| symbol)\[\] | An array of values as the predefined order |
+|  order | (string \| symbol)\[\] | <i>(Optional)</i> An array of values as the predefined order |
 
 <b>Returns:</b>
 

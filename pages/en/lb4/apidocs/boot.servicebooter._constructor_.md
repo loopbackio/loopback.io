@@ -27,6 +27,6 @@ constructor(app: ApplicationWithServices, projectRoot: string, serviceConfig?: A
 |  --- | --- | --- |
 |  app | [ApplicationWithServices](./service-proxy.applicationwithservices.md) |  |
 |  projectRoot | string |  |
-|  serviceConfig | [ArtifactOptions](./boot.artifactoptions.md) |  |
+|  serviceConfig | [ArtifactOptions](./boot.artifactoptions.md) | <i>(Optional)</i> |
 
 

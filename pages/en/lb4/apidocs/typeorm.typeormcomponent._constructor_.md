@@ -25,6 +25,6 @@ constructor(options?: TypeOrmComponentOptions);
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  options | [TypeOrmComponentOptions](./typeorm.typeormcomponentoptions.md) |  |
+|  options | [TypeOrmComponentOptions](./typeorm.typeormcomponentoptions.md) | <i>(Optional)</i> |
 
 

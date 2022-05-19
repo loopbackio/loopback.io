@@ -26,7 +26,7 @@ findOrCreateBinding<T>(key: BindingAddress<T>, policy?: BindingCreationPolicy): 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  key | [BindingAddress](./context.bindingaddress.md)<!-- -->&lt;T&gt; | Binding address |
-|  policy | [BindingCreationPolicy](./context.bindingcreationpolicy.md) | Binding creation policy |
+|  policy | [BindingCreationPolicy](./context.bindingcreationpolicy.md) | <i>(Optional)</i> Binding creation policy |
 
 <b>Returns:</b>
 

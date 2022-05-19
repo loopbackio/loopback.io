@@ -25,7 +25,7 @@ replaceById(id: ID, data: DataObject<T>, options?: Options): Promise<void>;
 |  --- | --- | --- |
 |  id | ID |  |
 |  data | [DataObject](./repository.dataobject.md)<!-- -->&lt;T&gt; |  |
-|  options | [Options](./repository.options.md) |  |
+|  options | [Options](./repository.options.md) | <i>(Optional)</i> |
 
 <b>Returns:</b>
 

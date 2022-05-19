@@ -26,7 +26,7 @@ exists<K extends KeyOf<MT>>(key: K, val?: boolean): this;
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  key | K | Property name |
-|  val | boolean | Exists or not |
+|  val | boolean | <i>(Optional)</i> Exists or not |
 
 <b>Returns:</b>
 

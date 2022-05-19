@@ -27,7 +27,7 @@ static(path: PathParams, rootDir: string, options?: ServeStaticOptions): void;
 |  --- | --- | --- |
 |  path | PathParams | The path(s) to serve the asset. See examples at https://expressjs.com/en/4x/api.html\#path-examples |
 |  rootDir | string | The root directory from which to serve static assets |
-|  options | ServeStaticOptions | Options for serve-static |
+|  options | ServeStaticOptions | <i>(Optional)</i> Options for serve-static |
 
 <b>Returns:</b>
 

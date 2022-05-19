@@ -26,7 +26,7 @@ route(controllerClass: Constructor<object>, meta?: SocketIoMetadata | string | R
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  controllerClass | [Constructor](./context.constructor.md)<!-- -->&lt;object&gt; |  |
-|  meta | [SocketIoMetadata](./socketio.socketiometadata.md) \| string \| RegExp |  |
+|  meta | [SocketIoMetadata](./socketio.socketiometadata.md) \| string \| RegExp | <i>(Optional)</i> |
 
 <b>Returns:</b>
 

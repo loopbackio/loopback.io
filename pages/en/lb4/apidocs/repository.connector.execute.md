@@ -25,7 +25,7 @@ execute?(command: Command, parameters: NamedParameters | PositionalParameters, o
 |  --- | --- | --- |
 |  command | [Command](./repository.command.md) |  |
 |  parameters | [NamedParameters](./repository.namedparameters.md) \| [PositionalParameters](./repository.positionalparameters.md) |  |
-|  options | [Options](./repository.options.md) |  |
+|  options | [Options](./repository.options.md) | <i>(Optional)</i> |
 
 <b>Returns:</b>
 

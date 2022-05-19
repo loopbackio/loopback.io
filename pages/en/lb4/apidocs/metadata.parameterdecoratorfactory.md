@@ -20,7 +20,7 @@ Factory for parameter decorators
 ```typescript
 export declare class ParameterDecoratorFactory<T> extends DecoratorFactory<T, MetadataMap<T[]>, ParameterDecorator> 
 ```
-<b>Extends:</b> [DecoratorFactory](./metadata.decoratorfactory.md)<!-- -->&lt;T, [MetadataMap](./metadata.metadatamap.md)<!-- -->&lt;T\[\]&gt;, ParameterDecorator&gt;
+<b>Extends:</b> [DecoratorFactory](./metadata.decoratorfactory.md)<!-- -->&lt;T, [MetadataMap](./metadata.metadatamap.md)<!-- -->&lt;T\[\]&gt;, ParameterDecorator
 
 ## Methods
 

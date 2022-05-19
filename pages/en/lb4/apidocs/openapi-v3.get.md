@@ -26,7 +26,7 @@ export declare function get(path: string, spec?: OperationObject): MethodDecorat
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  path | string | The URL path of this operation, e.g. <code>/product/{id}</code> |
-|  spec | OperationObject | The OpenAPI specification describing parameters and responses of this operation. |
+|  spec | OperationObject | <i>(Optional)</i> The OpenAPI specification describing parameters and responses of this operation. |
 
 <b>Returns:</b>
 

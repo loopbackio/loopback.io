@@ -28,7 +28,7 @@ function unsupportedMediaType(contentType: string, allowedTypes?: string[]): Htt
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  contentType | string |  |
-|  allowedTypes | string\[\] |  |
+|  allowedTypes | string\[\] | <i>(Optional)</i> |
 
 <b>Returns:</b>
 

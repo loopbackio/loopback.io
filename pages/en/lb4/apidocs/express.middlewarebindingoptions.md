@@ -20,7 +20,7 @@ Options to bind middleware as a request context based interceptor within an `Inv
 ```typescript
 export interface MiddlewareBindingOptions extends BaseMiddlewareBindingOptions<MiddlewareContext> 
 ```
-<b>Extends:</b> [BaseMiddlewareBindingOptions](./express.basemiddlewarebindingoptions.md)<!-- -->&lt;[MiddlewareContext](./express.middlewarecontext.md)<!-- -->&gt;
+<b>Extends:</b> [BaseMiddlewareBindingOptions](./express.basemiddlewarebindingoptions.md)<!-- -->&lt;[MiddlewareContext](./express.middlewarecontext.md)
 
 ## Properties
 

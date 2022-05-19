@@ -18,7 +18,9 @@ Create a target model instance
 <b>Signature:</b>
 
 ```typescript
-create(targetModelData: DataObject<Target>, options?: Options): Promise<Target>;
+create(targetModelData: DataObject<Target>, options?: Options & {
+        polymorphicType?: string;
+    }): Promise<Target>;
 ```
 
 ## Parameters
@@ -26,7 +28,7 @@ create(targetModelData: DataObject<Target>, options?: Options): Promise<Target>;
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  targetModelData | [DataObject](./repository.dataobject.md)<!-- -->&lt;Target&gt; | The target model data |
-|  options | [Options](./repository.options.md) | Options for the operation |
+|  options | [Options](./repository.options.md) &amp; { polymorphicType?: string; } | <i>(Optional)</i> Options for the operation options.polymorphicType - If polymorphic target model, specify of which concrete model the created instance should be |
 
 <b>Returns:</b>
 

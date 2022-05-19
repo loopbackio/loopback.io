@@ -26,7 +26,7 @@ protected notifyObservers(event: ContextEvent, observers?: Set<ContextEventObser
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  event | [ContextEvent](./context.contextevent.md) | Context event |
-|  observers | Set&lt;[ContextEventObserver](./context.contexteventobserver.md)<!-- -->&gt; \| undefined | Current set of context observers |
+|  observers | Set&lt;[ContextEventObserver](./context.contexteventobserver.md)<!-- -->&gt; \| undefined | <i>(Optional)</i> Current set of context observers |
 
 <b>Returns:</b>
 

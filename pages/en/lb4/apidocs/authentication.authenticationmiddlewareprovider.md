@@ -18,7 +18,7 @@ permalink: /doc/en/lb4/apidocs.authentication.authenticationmiddlewareprovider.h
 ```typescript
 export declare class AuthenticationMiddlewareProvider implements Provider<Middleware> 
 ```
-<b>Implements:</b> [Provider](./context.provider.md)<!-- -->&lt;[Middleware](./express.middleware.md)<!-- -->&gt;
+<b>Implements:</b> [Provider](./context.provider.md)<!-- -->&lt;[Middleware](./express.middleware.md)
 
 ## Constructors
 

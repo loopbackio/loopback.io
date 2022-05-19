@@ -25,7 +25,7 @@ static fork(session?: ResolutionSession): ResolutionSession | undefined;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  session | [ResolutionSession](./context.resolutionsession.md) | The current session |
+|  session | [ResolutionSession](./context.resolutionsession.md) | <i>(Optional)</i> The current session |
 
 <b>Returns:</b>
 

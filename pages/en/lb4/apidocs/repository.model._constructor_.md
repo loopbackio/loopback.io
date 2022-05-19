@@ -25,6 +25,6 @@ constructor(data?: DataObject<Model>);
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  data | [DataObject](./repository.dataobject.md)<!-- -->&lt;[Model](./repository.model.md)<!-- -->&gt; |  |
+|  data | [DataObject](./repository.dataobject.md)<!-- -->&lt;[Model](./repository.model.md)<!-- -->&gt; | <i>(Optional)</i> |
 
 

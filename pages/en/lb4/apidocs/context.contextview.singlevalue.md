@@ -25,7 +25,7 @@ singleValue(session?: ResolutionOptionsOrSession): Promise<T | undefined>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  session | [ResolutionOptionsOrSession](./context.resolutionoptionsorsession.md) |  |
+|  session | [ResolutionOptionsOrSession](./context.resolutionoptionsorsession.md) | <i>(Optional)</i> |
 
 <b>Returns:</b>
 

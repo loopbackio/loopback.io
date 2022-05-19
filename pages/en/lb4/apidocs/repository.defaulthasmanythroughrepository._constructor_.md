@@ -18,19 +18,23 @@ Constructs a new instance of the `DefaultHasManyThroughRepository` class
 <b>Signature:</b>
 
 ```typescript
-constructor(getTargetRepository: Getter<TargetRepository>, getThroughRepository: Getter<ThroughRepository>, getTargetConstraintFromThroughModels: (throughInstances: ThroughEntity[]) => DataObject<TargetEntity>, getTargetKeys: (throughInstances: ThroughEntity[]) => TargetID[], getThroughConstraintFromSource: () => DataObject<ThroughEntity>, getTargetIds: (targetInstances: TargetEntity[]) => TargetID[], getThroughConstraintFromTarget: (targetID: TargetID[]) => DataObject<ThroughEntity>);
+constructor(getTargetRepository: Getter<TargetRepository> | {
+        [repoType: string]: Getter<TargetRepository>;
+    }, getThroughRepository: Getter<ThroughRepository>, getTargetConstraintFromThroughModels: (throughInstances: ThroughEntity[]) => DataObject<TargetEntity>, getTargetKeys: (throughInstances: ThroughEntity[]) => TargetID[], getThroughConstraintFromSource: () => DataObject<ThroughEntity>, getTargetIds: (targetInstances: TargetEntity[]) => TargetID[], getThroughConstraintFromTarget: (targetID: TargetID[]) => DataObject<ThroughEntity>, targetResolver: TypeResolver<Entity, typeof Entity>, throughResolver: TypeResolver<Entity, typeof Entity>);
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  getTargetRepository | [Getter](./context.getter.md)<!-- -->&lt;TargetRepository&gt; |  |
+|  getTargetRepository | [Getter](./context.getter.md)<!-- -->&lt;TargetRepository&gt; \| { \[repoType: string\]: [Getter](./context.getter.md)<!-- -->&lt;TargetRepository&gt;; } |  |
 |  getThroughRepository | [Getter](./context.getter.md)<!-- -->&lt;ThroughRepository&gt; |  |
 |  getTargetConstraintFromThroughModels | (throughInstances: ThroughEntity\[\]) =&gt; [DataObject](./repository.dataobject.md)<!-- -->&lt;TargetEntity&gt; |  |
 |  getTargetKeys | (throughInstances: ThroughEntity\[\]) =&gt; TargetID\[\] |  |
 |  getThroughConstraintFromSource | () =&gt; [DataObject](./repository.dataobject.md)<!-- -->&lt;ThroughEntity&gt; |  |
 |  getTargetIds | (targetInstances: TargetEntity\[\]) =&gt; TargetID\[\] |  |
 |  getThroughConstraintFromTarget | (targetID: TargetID\[\]) =&gt; [DataObject](./repository.dataobject.md)<!-- -->&lt;ThroughEntity&gt; |  |
+|  targetResolver | [TypeResolver](./repository.typeresolver.md)<!-- -->&lt;[Entity](./repository.entity.md)<!-- -->, typeof [Entity](./repository.entity.md)<!-- -->&gt; |  |
+|  throughResolver | [TypeResolver](./repository.typeresolver.md)<!-- -->&lt;[Entity](./repository.entity.md)<!-- -->, typeof [Entity](./repository.entity.md)<!-- -->&gt; |  |
 
 

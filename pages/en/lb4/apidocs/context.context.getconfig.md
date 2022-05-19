@@ -26,8 +26,8 @@ getConfig<ConfigValueType>(key: BindingAddress, propertyPath?: string, resolutio
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  key | [BindingAddress](./context.bindingaddress.md) | Binding key |
-|  propertyPath | string | Property path for the option. For example, <code>x.y</code> requests for <code>&lt;config&gt;.x.y</code>. If not set, the <code>&lt;config&gt;</code> object will be returned. |
-|  resolutionOptions | [ResolutionOptions](./context.resolutionoptions.md) | Options for the resolution. |
+|  propertyPath | string | <i>(Optional)</i> Property path for the option. For example, <code>x.y</code> requests for <code>&lt;config&gt;.x.y</code>. If not set, the <code>&lt;config&gt;</code> object will be returned. |
+|  resolutionOptions | [ResolutionOptions](./context.resolutionoptions.md) | <i>(Optional)</i> Options for the resolution. |
 
 <b>Returns:</b>
 

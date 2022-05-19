@@ -25,7 +25,7 @@ inspect(options?: BindingInspectOptions): JSONObject;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  options | [BindingInspectOptions](./context.bindinginspectoptions.md) | Options to control what information should be included |
+|  options | [BindingInspectOptions](./context.bindinginspectoptions.md) | <i>(Optional)</i> Options to control what information should be included |
 
 <b>Returns:</b>
 

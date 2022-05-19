@@ -27,6 +27,6 @@ constructor(controllerClass: Constructor<{}>, methodName: string, options?: Auth
 |  --- | --- | --- |
 |  controllerClass | [Constructor](./context.constructor.md)<!-- -->&lt;{}&gt; |  |
 |  methodName | string |  |
-|  options | [AuthenticationOptions](./authentication.authenticationoptions.md) |  |
+|  options | [AuthenticationOptions](./authentication.authenticationoptions.md) | <i>(Optional)</i> |
 
 

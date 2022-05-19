@@ -26,7 +26,7 @@ static getNumberOfParameters(target: Object, member?: string): number;
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  target | Object | Class or the prototype |
-|  member | string | Method name |
+|  member | string | <i>(Optional)</i> Method name |
 
 <b>Returns:</b>
 

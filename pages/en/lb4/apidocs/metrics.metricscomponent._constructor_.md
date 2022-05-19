@@ -26,6 +26,6 @@ constructor(application: Application, metricsConfig?: MetricsConfig);
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  application | [Application](./core.application.md) |  |
-|  metricsConfig | [MetricsConfig](./metrics.metricsconfig.md) |  |
+|  metricsConfig | [MetricsConfig](./metrics.metricsconfig.md) | <i>(Optional)</i> |
 
 

@@ -29,6 +29,6 @@ constructor(getStrategies: Getter<AuthenticationStrategy | AuthenticationStrateg
 |  setCurrentUser | [Setter](./context.setter.md)<!-- -->&lt;[UserProfile](./security.userprofile.md)<!-- -->&gt; |  |
 |  setRedirectUrl | [Setter](./context.setter.md)<!-- -->&lt;string&gt; |  |
 |  setRedirectStatus | [Setter](./context.setter.md)<!-- -->&lt;number&gt; |  |
-|  options | [AuthenticationOptions](./authentication.authenticationoptions.md) |  |
+|  options | [AuthenticationOptions](./authentication.authenticationoptions.md) | <i>(Optional)</i> |
 
 

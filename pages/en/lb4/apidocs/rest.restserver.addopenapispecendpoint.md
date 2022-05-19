@@ -27,7 +27,7 @@ addOpenApiSpecEndpoint(path: string, form: OpenApiSpecForm, router?: express.Rou
 |  --- | --- | --- |
 |  path | string | Path at which to host the copy of the OpenAPI |
 |  form | [OpenApiSpecForm](./rest.openapispecform.md) | Form that should be rendered from that path |
-|  router | express.Router |  |
+|  router | express.Router | <i>(Optional)</i> |
 
 <b>Returns:</b>
 

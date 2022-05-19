@@ -26,7 +26,7 @@ export declare function createInterceptor<CFG, CTX extends Context = InvocationC
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  middlewareFactory | [ExpressMiddlewareFactory](./express.expressmiddlewarefactory.md)<!-- -->&lt;CFG&gt; | Express middleware factory function. A wrapper can be created if the Express middleware module does not conform to the factory pattern and signature. |
-|  middlewareConfig | CFG | Configuration for the Express middleware |
+|  middlewareConfig | CFG | <i>(Optional)</i> Configuration for the Express middleware |
 
 <b>Returns:</b>
 

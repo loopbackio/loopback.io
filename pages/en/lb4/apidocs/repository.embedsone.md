@@ -25,7 +25,7 @@ export declare function embedsOne(definition?: Object): PropertyDecorator;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  definition | Object |  |
+|  definition | Object | <i>(Optional)</i> |
 
 <b>Returns:</b>
 

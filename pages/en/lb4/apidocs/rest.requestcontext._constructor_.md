@@ -29,6 +29,6 @@ constructor(request: Request, response: Response, parent: Context, serverConfig:
 |  response | Response |  |
 |  parent | [Context](./context.context.md) |  |
 |  serverConfig | [RestServerResolvedConfig](./rest.restserverresolvedconfig.md) |  |
-|  name | string |  |
+|  name | string | <i>(Optional)</i> |
 
 

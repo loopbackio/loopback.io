@@ -28,7 +28,7 @@ set(modelClass: Class<Entity>, key: string, value: EntityData, options?: Options
 |  modelClass | [Class](./repository.class.md)<!-- -->&lt;[Entity](./repository.entity.md)<!-- -->&gt; | Model class |
 |  key | string | Key for the entry |
 |  value | [EntityData](./repository.entitydata.md) | Value for the entry |
-|  options | [Options](./repository.options.md) | Options for the operation |
+|  options | [Options](./repository.options.md) | <i>(Optional)</i> Options for the operation |
 
 <b>Returns:</b>
 

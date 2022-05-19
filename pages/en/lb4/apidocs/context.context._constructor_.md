@@ -25,8 +25,8 @@ constructor(_parent?: Context | string, name?: string);
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  \_parent | [Context](./context.context.md) \| string | The optional parent context |
-|  name | string | Name of the context. If not provided, a unique identifier will be generated as the name. |
+|  \_parent | [Context](./context.context.md) \| string | <i>(Optional)</i> The optional parent context |
+|  name | string | <i>(Optional)</i> Name of the context. If not provided, a unique identifier will be generated as the name. |
 
 ## Example
 

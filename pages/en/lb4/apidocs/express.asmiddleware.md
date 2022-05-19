@@ -25,7 +25,7 @@ export declare function asMiddleware(options?: MiddlewareBindingOptions): Bindin
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  options | [MiddlewareBindingOptions](./express.middlewarebindingoptions.md) | Options to configure the binding |
+|  options | [MiddlewareBindingOptions](./express.middlewarebindingoptions.md) | <i>(Optional)</i> Options to configure the binding |
 
 <b>Returns:</b>
 

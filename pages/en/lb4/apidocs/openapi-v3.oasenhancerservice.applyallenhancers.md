@@ -25,7 +25,7 @@ applyAllEnhancers(options?: {}): Promise<OpenApiSpec>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  options | {} |  |
+|  options | {} | <i>(Optional)</i> |
 
 <b>Returns:</b>
 

@@ -25,7 +25,7 @@ constructor(parsers?: BodyParser[], ctx?: Context | undefined);
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  parsers | [BodyParser](./rest.bodyparser.md)<!-- -->\[\] |  |
-|  ctx | [Context](./context.context.md) \| undefined |  |
+|  parsers | [BodyParser](./rest.bodyparser.md)<!-- -->\[\] | <i>(Optional)</i> |
+|  ctx | [Context](./context.context.md) \| undefined | <i>(Optional)</i> |
 
 

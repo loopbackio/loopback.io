@@ -20,7 +20,7 @@ Boolean type
 ```typescript
 export declare class BooleanType implements Type<boolean> 
 ```
-<b>Implements:</b> [Type](./repository.type.md)<!-- -->&lt;boolean&gt;
+<b>Implements:</b> [Type](./repository.type.md)
 
 ## Properties
 

@@ -26,8 +26,8 @@ iterateKeys?(modelClass: Class<Entity>, filter?: Filter, options?: Options): Pro
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  modelClass | [Class](./repository.class.md)<!-- -->&lt;[Entity](./repository.entity.md)<!-- -->&gt; | Model class |
-|  filter | [Filter](./filter.filter.md) | Matching filter |
-|  options | [Options](./repository.options.md) | Options for the operation |
+|  filter | [Filter](./filter.filter.md) | <i>(Optional)</i> Matching filter |
+|  options | [Options](./repository.options.md) | <i>(Optional)</i> Options for the operation |
 
 <b>Returns:</b>
 

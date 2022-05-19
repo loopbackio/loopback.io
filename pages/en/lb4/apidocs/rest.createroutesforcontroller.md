@@ -27,7 +27,7 @@ export declare function createRoutesForController<T>(spec: ControllerSpec, contr
 |  --- | --- | --- |
 |  spec | [ControllerSpec](./openapi-v3.controllerspec.md) | Controller spec |
 |  controllerCtor | [ControllerClass](./rest.controllerclass.md)<!-- -->&lt;T&gt; | Controller class |
-|  controllerFactory | [ControllerFactory](./rest.controllerfactory.md)<!-- -->&lt;T&gt; | Controller factory |
+|  controllerFactory | [ControllerFactory](./rest.controllerfactory.md)<!-- -->&lt;T&gt; | <i>(Optional)</i> Controller factory |
 
 <b>Returns:</b>
 

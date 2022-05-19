@@ -27,8 +27,8 @@ static getAllParameterMetadata<T>(key: MetadataKey<T, ParameterDecorator>, targe
 |  --- | --- | --- |
 |  key | [MetadataKey](./metadata.metadatakey.md)<!-- -->&lt;T, ParameterDecorator&gt; | Metadata key |
 |  target | Object | Class for static methods or prototype for instance methods |
-|  methodName | string | Method name. If not present, default to '' to use the constructor |
-|  options | [InspectionOptions](./metadata.inspectionoptions.md) | Options for inspection |
+|  methodName | string | <i>(Optional)</i> Method name. If not present, default to '' to use the constructor |
+|  options | [InspectionOptions](./metadata.inspectionoptions.md) | <i>(Optional)</i> Options for inspection |
 
 <b>Returns:</b>
 

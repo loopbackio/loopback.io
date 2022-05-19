@@ -25,7 +25,7 @@ export declare function filterByKey(keyPattern?: string | RegExp | BindingFilter
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  keyPattern | string \| RegExp \| [BindingFilter](./context.bindingfilter.md) | Binding key/wildcard, regexp, or a filter function |
+|  keyPattern | string \| RegExp \| [BindingFilter](./context.bindingfilter.md) | <i>(Optional)</i> Binding key/wildcard, regexp, or a filter function |
 
 <b>Returns:</b>
 

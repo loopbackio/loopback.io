@@ -26,7 +26,7 @@ isCoercible(value: any, options?: Options): boolean;
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  value | any | The value to to be coerced |
-|  options | [Options](./repository.options.md) |  |
+|  options | [Options](./repository.options.md) | <i>(Optional)</i> |
 
 <b>Returns:</b>
 

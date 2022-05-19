@@ -25,7 +25,7 @@ basePath(path?: string): void;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  path | string | Base path |
+|  path | string | <i>(Optional)</i> Base path |
 
 <b>Returns:</b>
 

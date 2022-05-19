@@ -31,5 +31,6 @@ export interface Inclusion
 |  --- | --- | --- |
 |  [relation](./filter.inclusion.relation.md) | string |  |
 |  [scope?](./filter.inclusion.scope.md) | [Filter](./filter.filter.md)<!-- -->&lt;AnyObject&gt; &amp; { totalLimit?: number; } | <i>(Optional)</i> |
+|  [targetType?](./filter.inclusion.targettype.md) | string | <i>(Optional)</i> |
 
 

@@ -25,7 +25,7 @@ export declare function asResolutionOptions(optionsOrSession?: ResolutionOptions
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  optionsOrSession | [ResolutionOptionsOrSession](./context.resolutionoptionsorsession.md) | resolution options or session |
+|  optionsOrSession | [ResolutionOptionsOrSession](./context.resolutionoptionsorsession.md) | <i>(Optional)</i> resolution options or session |
 
 <b>Returns:</b>
 

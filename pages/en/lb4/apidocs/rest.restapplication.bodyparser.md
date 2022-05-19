@@ -26,7 +26,7 @@ bodyParser(bodyParserClass: Constructor<BodyParser>, address?: BindingAddress<Bo
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  bodyParserClass | [Constructor](./context.constructor.md)<!-- -->&lt;[BodyParser](./rest.bodyparser.md)<!-- -->&gt; |  |
-|  address | [BindingAddress](./context.bindingaddress.md)<!-- -->&lt;[BodyParser](./rest.bodyparser.md)<!-- -->&gt; | Optional binding address |
+|  address | [BindingAddress](./context.bindingaddress.md)<!-- -->&lt;[BodyParser](./rest.bodyparser.md)<!-- -->&gt; | <i>(Optional)</i> Optional binding address |
 
 <b>Returns:</b>
 

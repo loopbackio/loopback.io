@@ -20,7 +20,7 @@ Null type
 ```typescript
 export declare class NullType implements Type<null> 
 ```
-<b>Implements:</b> [Type](./repository.type.md)<!-- -->&lt;null&gt;
+<b>Implements:</b> [Type](./repository.type.md)
 
 ## Properties
 

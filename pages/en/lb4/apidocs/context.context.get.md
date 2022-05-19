@@ -26,7 +26,7 @@ get<ValueType>(keyWithPath: BindingAddress<ValueType>, session?: ResolutionSessi
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  keyWithPath | [BindingAddress](./context.bindingaddress.md)<!-- -->&lt;ValueType&gt; | The binding key, optionally suffixed with a path to the (deeply) nested property to retrieve. |
-|  session | [ResolutionSession](./context.resolutionsession.md) | Optional session for resolution (accepted for backward compatibility) |
+|  session | [ResolutionSession](./context.resolutionsession.md) | <i>(Optional)</i> Optional session for resolution (accepted for backward compatibility) |
 
 <b>Returns:</b>
 

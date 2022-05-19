@@ -26,7 +26,7 @@ run(task: (resource: T) => ValueOrPromise<void>, requestCtx?: Context): Promise<
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  task | (resource: T) =&gt; [ValueOrPromise](./context.valueorpromise.md)<!-- -->&lt;void&gt; | A function that accepts a resource and returns a Promise. |
-|  requestCtx | [Context](./context.context.md) |  |
+|  requestCtx | [Context](./context.context.md) | <i>(Optional)</i> |
 
 <b>Returns:</b>
 
