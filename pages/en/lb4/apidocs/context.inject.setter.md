@@ -22,6 +22,6 @@ See also `Setter<T>`<!-- -->.
 <b>Signature:</b>
 
 ```typescript
-setter: (bindingKey: BindingAddress, metadata?: InjectBindingMetadata | undefined) => (target: Object, member: string | undefined, methodDescriptorOrParameterIndex?: number | TypedPropertyDescriptor<any> | undefined) => void
+setter: (bindingKey: BindingAddress, metadata?: InjectBindingMetadata) => (target: Object, member: string | undefined, methodDescriptorOrParameterIndex?: number | TypedPropertyDescriptor<any> | undefined) => void
 ```
 

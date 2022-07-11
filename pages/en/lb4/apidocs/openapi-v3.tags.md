@@ -18,7 +18,7 @@ Add tags for an endpoint. When applied to a class, this decorator adds the tags 
 <b>Signature:</b>
 
 ```typescript
-export declare function tags(...tagNames: string[]): (target: any, method?: string | undefined, methodDescriptor?: TypedPropertyDescriptor<any> | undefined) => any;
+export declare function tags(...tagNames: string[]): (target: any, method?: string, methodDescriptor?: TypedPropertyDescriptor<any>) => any;
 ```
 
 ## Parameters
@@ -29,7 +29,7 @@ export declare function tags(...tagNames: string[]): (target: any, method?: stri
 
 <b>Returns:</b>
 
-(target: any, method?: string \| undefined, methodDescriptor?: TypedPropertyDescriptor&lt;any&gt; \| undefined) =&gt; any
+(target: any, method?: string, methodDescriptor?: TypedPropertyDescriptor&lt;any&gt;) =&gt; any
 
 ## Example
 

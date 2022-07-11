@@ -20,7 +20,7 @@ You can optionally mark all controllers in a class with `@visibility('undocument
 <b>Signature:</b>
 
 ```typescript
-export declare function visibility(visibilityType: OperationVisibility): (target: any, method?: string | undefined, methodDescriptor?: TypedPropertyDescriptor<any> | undefined) => any;
+export declare function visibility(visibilityType: OperationVisibility): (target: any, method?: string, methodDescriptor?: TypedPropertyDescriptor<any>) => any;
 ```
 
 ## Parameters
@@ -31,7 +31,7 @@ export declare function visibility(visibilityType: OperationVisibility): (target
 
 <b>Returns:</b>
 
-(target: any, method?: string \| undefined, methodDescriptor?: TypedPropertyDescriptor&lt;any&gt; \| undefined) =&gt; any
+(target: any, method?: string, methodDescriptor?: TypedPropertyDescriptor&lt;any&gt;) =&gt; any
 
 ## Example
 

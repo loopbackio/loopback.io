@@ -31,7 +31,7 @@ query: {
         date: (name: string, spec?: Partial<ParameterObject> | undefined) => (target: object, member: string, index: number) => void;
         dateTime: (name: string, spec?: Partial<ParameterObject> | undefined) => (target: object, member: string, index: number) => void;
         password: (name: string, spec?: Partial<ParameterObject> | undefined) => (target: object, member: string, index: number) => void;
-        object: (name: string, schema?: SchemaObject | ReferenceObject, spec?: Partial<ParameterObject> | undefined) => (target: object, member: string, index: number) => void;
+        object: (name: string, schema?: SchemaObject | ReferenceObject, spec?: Partial<ParameterObject>) => (target: object, member: string, index: number) => void;
     }
 ```
 

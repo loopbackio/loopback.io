@@ -31,6 +31,6 @@ export interface CrudRestController<T extends Entity, IdType, IdName extends key
 
 |  Method | Description |
 |  --- | --- |
-|  [create(data)](./rest-crud.crudrestcontroller.create.md) | Implementation of the endpoint <code>POST /</code>. |
+|  [find(filter)](./rest-crud.crudrestcontroller.find.md) | Implementation of the endpoint <code>GET /</code>. |
 
 

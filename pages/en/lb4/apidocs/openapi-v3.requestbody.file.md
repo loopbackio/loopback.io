@@ -21,9 +21,9 @@ Define a requestBody of `file` type. This is used to support multipart/form-data
 
 ```typescript
 file: (properties?: {
-        description?: string | undefined;
-        required?: boolean | undefined;
-    } | undefined) => (target: object, member: string, index: number) => void
+        description?: string;
+        required?: boolean;
+    }) => (target: object, member: string, index: number) => void
 ```
 
 ## Example

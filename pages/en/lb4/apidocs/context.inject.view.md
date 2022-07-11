@@ -18,7 +18,7 @@ Inject matching bound values by the filter function
 <b>Signature:</b>
 
 ```typescript
-view: (bindingFilter: BindingFilter, metadata?: InjectionMetadata | undefined) => (target: Object, member: string | undefined, methodDescriptorOrParameterIndex?: number | TypedPropertyDescriptor<any> | undefined) => void
+view: (bindingFilter: BindingFilter, metadata?: InjectionMetadata) => (target: Object, member: string | undefined, methodDescriptorOrParameterIndex?: number | TypedPropertyDescriptor<any> | undefined) => void
 ```
 
 ## Example

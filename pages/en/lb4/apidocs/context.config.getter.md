@@ -18,6 +18,6 @@ permalink: /doc/en/lb4/apidocs.context.config.getter.html
 <b>Signature:</b>
 
 ```typescript
-getter: (propertyPath?: string | ConfigInjectionMetadata | undefined, metadata?: ConfigInjectionMetadata | undefined) => (target: Object, member: string | undefined, methodDescriptorOrParameterIndex?: number | TypedPropertyDescriptor<any> | undefined) => void
+getter: (propertyPath?: string | ConfigInjectionMetadata, metadata?: ConfigInjectionMetadata) => (target: Object, member: string | undefined, methodDescriptorOrParameterIndex?: number | TypedPropertyDescriptor<any> | undefined) => void
 ```
 

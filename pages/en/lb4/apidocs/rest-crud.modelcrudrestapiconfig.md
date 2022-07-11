@@ -25,5 +25,6 @@ export interface ModelCrudRestApiConfig extends ModelApiConfig
 |  Property | Type | Description |
 |  --- | --- | --- |
 |  [basePath](./rest-crud.modelcrudrestapiconfig.basepath.md) | string |  |
+|  [readonly?](./rest-crud.modelcrudrestapiconfig.readonly.md) | boolean | <i>(Optional)</i> If true, the generated controller only has find and count APIs |
 
 

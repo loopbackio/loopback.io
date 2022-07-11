@@ -26,5 +26,6 @@ export interface CrudRestControllerOptions
 |  Property | Type | Description |
 |  --- | --- | --- |
 |  [basePath](./rest-crud.crudrestcontrolleroptions.basepath.md) | string | The base path where to "mount" the controller. |
+|  [readonly?](./rest-crud.crudrestcontrolleroptions.readonly.md) | boolean | <i>(Optional)</i> Whether to generate readonly APIs |
 
 

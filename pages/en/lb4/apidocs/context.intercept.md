@@ -18,7 +18,7 @@ Decorator function `@intercept` for classes/methods to apply interceptors. It ca
 <b>Signature:</b>
 
 ```typescript
-export declare function intercept(...interceptorOrKeys: InterceptorOrKey[]): (target: any, method?: string | undefined, methodDescriptor?: TypedPropertyDescriptor<any> | undefined) => any;
+export declare function intercept(...interceptorOrKeys: InterceptorOrKey[]): (target: any, method?: string, methodDescriptor?: TypedPropertyDescriptor<any>) => any;
 ```
 
 ## Parameters
@@ -29,7 +29,7 @@ export declare function intercept(...interceptorOrKeys: InterceptorOrKey[]): (ta
 
 <b>Returns:</b>
 
-(target: any, method?: string \| undefined, methodDescriptor?: TypedPropertyDescriptor&lt;any&gt; \| undefined) =&gt; any
+(target: any, method?: string, methodDescriptor?: TypedPropertyDescriptor&lt;any&gt;) =&gt; any
 
 ## Example
 

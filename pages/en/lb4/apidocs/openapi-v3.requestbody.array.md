@@ -19,9 +19,9 @@ Define a requestBody of `array` type.
 
 ```typescript
 array: (itemSpec: SchemaObject | ReferenceObject, properties?: {
-        description?: string | undefined;
-        required?: boolean | undefined;
-    } | undefined) => (target: object, member: string, index: number) => void
+        description?: string;
+        required?: boolean;
+    }) => (target: object, member: string, index: number) => void
 ```
 
 ## Example
