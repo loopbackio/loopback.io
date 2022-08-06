@@ -79,7 +79,7 @@ Now you run the scripts, such as:
     }
     ```
 
-  - Set options explicity for the script
+  - Set options explicitly for the script
 
     ```sh
     lb-tsc -p tsconfig.json --target es2017 --outDir dist
@@ -98,7 +98,7 @@ Now you run the scripts, such as:
 
     ### Stability: ⚠️Experimental⚠️
 
-    If you would like to use `ttypescript` and its availalbe plugins, you can
+    If you would like to use `ttypescript` and its available plugins, you can
     substitute `lb-tsc` with `lb-ttsc`, or pass the option
     `lb-tsc --use-ttypescript`. If `ttypescript` is not installed, the default
     TypeScript compiler `tsc` will be used instead.

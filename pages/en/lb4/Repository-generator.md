@@ -62,7 +62,7 @@ model already created in their respective directories.
 
 ### Arguments
 
-`<name>` - Optional argument specifyng the respository name to be generated. In
+`<name>` - Optional argument specifying the repository name to be generated. In
 case you select multiple models, the first model will take this argument for its
 repository file name.
 
@@ -91,7 +91,7 @@ The tool will prompt you for:
 - **Please select the repository base class.** _(repository)_ if the name of a
   valid base class has been supplied from the command line, the prompt is
   skipped, otherwise it will present you a list of repositories. The default
-  repository is infered from the datasource type.
+  repository is inferred from the datasource type.
 
   Any repository in the `src/repository` folder with the file format
   `*.repository.base.ts` will be added to the list too.

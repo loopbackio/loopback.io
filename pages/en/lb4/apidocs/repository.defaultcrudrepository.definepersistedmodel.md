@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.defaultcrudrepository.definepersistedm
 
 ## DefaultCrudRepository.definePersistedModel() method
 
-Creates a legacy persisted model class, attaches it to the datasource and returns it. This method can be overriden in sub-classes to acess methods and properties in the generated model class.
+Creates a legacy persisted model class, attaches it to the datasource and returns it. This method can be overridden in sub-classes to acess methods and properties in the generated model class.
 
 <b>Signature:</b>
 

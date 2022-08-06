@@ -13,7 +13,7 @@ the APIs that create the endpoints on the server. We will then follow the path
 taken by a request, to see how it makes its way through the various parts of the
 framework to return a result.
 
-### Setting up the request/response infrastruture
+### Setting up the request/response infrastructure
 
 The endpoints on a LoopBack app can be categorized into controller endpoints and
 non-controller endpoints. Controller endpoints are those that are created by
@@ -30,7 +30,7 @@ controller method.
 {% include tip.html content="Apart from controller files in the `controllers` directory,
 controllers may be added to the app by [components](https://loopback.io/doc/en/lb4/Components.html)." %}
 
-In the request/response cycle section we will see how implemenation details
+In the request/response cycle section we will see how implementation details
 determine the course of a request to these endpoints - they may or may not
 actually interact with a model.
 
@@ -116,7 +116,7 @@ route for invocation.
 ##### 2. ParseParams
 
 [ParseParams](https://loopback.io/doc/en/lb4/apidocs.rest.parseparamsprovider.html)
-parses LoopBack-relevant request paremeters from the request body, URL segment,
+parses LoopBack-relevant request parameters from the request body, URL segment,
 and query parameters.
 
 It is also responsible for validating the property types of the request body, as
@@ -127,7 +127,7 @@ HTTP 422 error.
 
 [InvokeMethod](https://loopback.io/doc/en/lb4/apidocs.rest.invokemethodprovider.html)
 is responsible for calling the endpoint handler, passing in the route found by
-`FindRoute` and the paremeters found by `ParseParams`.
+`FindRoute` and the parameters found by `ParseParams`.
 
 For non-controller endpoints, control is passed on to the respective handlers at
 this stage, which may then handle the response sending process themselves. For
@@ -234,8 +234,8 @@ use them.
 between controllers and the data. They use an underlying datasource and a
 connector to interact with the data.
 
-Controller methods can call corresponding methods in the respository to read
-from or write to the database.
+Controller methods can call corresponding methods in the repository to read from
+or write to the database.
 
 Repositories can be injected in the controller constructor so controller methods
 may use them.

@@ -13,6 +13,22 @@ permalink: /doc/en/lb4/changelog.openapi-spec-builder.html
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.0.2](https://github.com/loopbackio/loopback-next/compare/@loopback/openapi-spec-builder@5.0.1...@loopback/openapi-spec-builder@5.0.2) (2022-07-14)
+
+**Note:** Version bump only for package @loopback/openapi-spec-builder
+
+
+
+
+
+## [5.0.1](https://github.com/loopbackio/loopback-next/compare/@loopback/openapi-spec-builder@5.0.0...@loopback/openapi-spec-builder@5.0.1) (2022-06-13)
+
+**Note:** Version bump only for package @loopback/openapi-spec-builder
+
+
+
+
+
 ## [5.0.0](https://github.com/loopbackio/loopback-next/compare/@loopback/openapi-spec-builder@4.1.2...@loopback/openapi-spec-builder@5.0.0) (2022-05-05)
 
 

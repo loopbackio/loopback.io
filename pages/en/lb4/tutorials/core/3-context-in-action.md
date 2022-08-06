@@ -92,7 +92,7 @@ Artifacts can be services, repositories, configuration, etc.
 
    Since plain functions do not accept injections, you can create a wrapper
    class that has the ability to accept injection. For example, you can create a
-   provider class that recevies injection of a HTTP request.
+   provider class that receives injection of a HTTP request.
 
 5. As an alias to another binding
 
@@ -134,7 +134,7 @@ For details, see [Configure the scope](../../Binding.md#configure-the-scope).
 
 ## Watching artifacts
 
-The context view gives us control when a binding is being added or moreved. This
+The context view gives us control when a binding is being added or removed. This
 also allows the support of dynamic extension points. For the
 [greeting-app example](https://github.com/loopbackio/loopback-next/tree/master/examples/greeting-app),
 after the application has started, more greeters can be added, and there is no
@@ -148,7 +148,7 @@ for more details.
 
 [Components](../../Component.md) can be considered as a collection of binding
 added to the context. For example, for an authentication component, an
-authentication stategy and an authentication action can be added to the
+authentication strategy and an authentication action can be added to the
 component.
 
 See the

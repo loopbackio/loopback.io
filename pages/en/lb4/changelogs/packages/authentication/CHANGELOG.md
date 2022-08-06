@@ -13,6 +13,14 @@ permalink: /doc/en/lb4/changelog.authentication.html
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.0.1](https://github.com/loopbackio/loopback-next/compare/@loopback/authentication@9.0.0...@loopback/authentication@9.0.1) (2022-06-13)
+
+**Note:** Version bump only for package @loopback/authentication
+
+
+
+
+
 ## [9.0.0](https://github.com/loopbackio/loopback-next/compare/@loopback/authentication@8.1.2...@loopback/authentication@9.0.0) (2022-05-05)
 
 

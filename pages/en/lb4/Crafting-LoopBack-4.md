@@ -50,7 +50,7 @@ LoopBack fits into a typical end-to-end API processing flow.
 ![loopback-overview](./imgs/loopback-overview.png)
 
 LoopBack has grown significantly in features and users with many years of
-development and multiple releases. LoopBack has been well-recieved by the
+development and multiple releases. LoopBack has been well-received by the
 developer community. As an indication, the community has developed
 [many extensions](https://github.com/pasindud/awesome-loopback). The core team
 has also learned a lot from what we have done as well as great feedback from the
@@ -434,8 +434,8 @@ its vast ecosystem.
 Some of the gaps between what Express offers and LoopBack's needs are:
 
 - Lack of extensibility
-  > Express is only extensibile via middleware. It neither exposes a registry
-  > nor provides APIs to manage artifacts such as middleware or routers.
+  > Express is only extensible via middleware. It neither exposes a registry nor
+  > provides APIs to manage artifacts such as middleware or routers.
 - Lack of composability
   > Express is not composable. For example, `app.use()` is the only way to
   > register a middleware. The order of middleware is determined by the order of

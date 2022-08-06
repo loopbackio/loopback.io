@@ -53,7 +53,7 @@ export declare class DefaultCrudRepository<T extends Entity, ID, Relations exten
 |  [createHasManyThroughRepositoryFactoryFor(relationName, targetRepositoryGetter, throughRepositoryGetter)](./repository.defaultcrudrepository.createhasmanythroughrepositoryfactoryfor.md) |  | Function to create a constrained hasManyThrough relation repository factory |
 |  [createHasOneRepositoryFactoryFor(relationName, targetRepositoryGetter)](./repository.defaultcrudrepository.createhasonerepositoryfactoryfor.md) |  | Function to create a constrained hasOne relation repository factory |
 |  [createReferencesManyAccessorFor(relationName, targetRepoGetter)](./repository.defaultcrudrepository.createreferencesmanyaccessorfor.md) |  | Function to create a references many accessor |
-|  [definePersistedModel(entityClass)](./repository.defaultcrudrepository.definepersistedmodel.md) |  | Creates a legacy persisted model class, attaches it to the datasource and returns it. This method can be overriden in sub-classes to acess methods and properties in the generated model class. |
+|  [definePersistedModel(entityClass)](./repository.defaultcrudrepository.definepersistedmodel.md) |  | Creates a legacy persisted model class, attaches it to the datasource and returns it. This method can be overridden in sub-classes to acess methods and properties in the generated model class. |
 |  [delete(entity, options)](./repository.defaultcrudrepository.delete.md) |  |  |
 |  [deleteAll(where, options)](./repository.defaultcrudrepository.deleteall.md) |  |  |
 |  [deleteById(id, options)](./repository.defaultcrudrepository.deletebyid.md) |  |  |
