@@ -2,6 +2,14 @@ title: Security advisories
 url: index.html
 children:
 
+  - title: '08-06-2022'
+    url: Security-advisory-08-06-2022.html
+    output: 'web'
+
+  - title: '11-30-2020'
+    url: Security-advisory-11-30-2020.html
+    output: 'web'
+
   - title: '08-15-2018'
     url: Security-advisory-08-15-2018.html
     output: 'web'
