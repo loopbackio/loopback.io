@@ -14,17 +14,17 @@ jobs:
 
     steps:
       - name: Checkout 🛎️
-        uses: actions/checkout@v3.0.2
+        uses: actions/checkout@2541b1294d2704b0964813337f33b291d3f8596b # tag=v3.0.2
         with:
           persist-credentials: false
 
       - name: Use Node.js 16
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@2fddd8803e2f5c9604345a0b591c3020ee971a93 # tag=v3.4.1
         with:
           node-version: 16
 
       - name: Set up Ruby 2.7
-        uses: actions/setup-ruby@v1
+        uses: ruby/setup-ruby@0a29871fe2b0200a17a4497bae54fe5df0d973aa # tag=v1.115.3
         with:
           ruby-version: 2.7
 
